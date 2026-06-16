@@ -49,16 +49,54 @@ export const Route = createFileRoute("/")({
 const img = (id: string, w = 1200) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
 
-const quickShop = [
-  { name: "National Parks", icon: Mountain, image: img("photo-1506905925346-21bda4d32df4", 600) },
-  { name: "Glamping", icon: Tent, image: img("photo-1517824806704-9040b037703b", 600) },
-  { name: "RV Travel", icon: Truck, image: img("photo-1469854523086-cc02fe5d8800", 600) },
-  { name: "Cabins", icon: Leaf, image: img("photo-1464822759023-fed622ff2c3b", 600) },
-  { name: "Road Trips", icon: Compass, image: img("photo-1533873984035-25970ab07461", 600) },
-  { name: "Water", icon: Waves, image: img("photo-1463693396721-8ca0cfa2b3b5", 600) },
-  { name: "Biking", icon: Bike, image: img("photo-1485965120184-e220f721d03e", 600) },
-  { name: "Gear Rentals", icon: Backpack, image: img("photo-1504280390367-361c6d9f38f4", 600) },
+const heroCards = [
+  {
+    eyebrow: "National Parks",
+    title: "For every trail ahead",
+    blurb: "Discover the most breathtaking parks and plan your next escape.",
+    cta: "Explore parks",
+    image: img("photo-1506905925346-21bda4d32df4", 1200),
+    href: "#destinations",
+  },
+  {
+    eyebrow: "Camping & Glamping",
+    title: "Camp, solved.",
+    blurb: "From canvas tents to cliffside cabins — stays that make the trip.",
+    cta: "Shop stays",
+    image: img("photo-1504280390367-361c6d9f38f4", 1200),
+    href: "#stay-types",
+  },
+  {
+    eyebrow: "RV & Campervan",
+    title: "Roll out, anywhere.",
+    blurb: "Rent a fully-equipped RV or campervan and hit the open road.",
+    cta: "Browse rentals",
+    image: img("photo-1469854523086-cc02fe5d8800", 1200),
+    href: "#rentals",
+  },
+  {
+    eyebrow: "Field Journal",
+    title: "Outside is calling.",
+    blurb: "Stories, route guides and gear notes from real trips.",
+    cta: "Read stories",
+    image: img("photo-1455156218388-5e61b526818b", 1200),
+    href: "#stories",
+  },
 ];
+
+const topCategories = [
+  { name: "National Parks", image: img("photo-1506905925346-21bda4d32df4", 600) },
+  { name: "Camping", image: img("photo-1504280390367-361c6d9f38f4", 600) },
+  { name: "Glamping", image: img("photo-1517824806704-9040b037703b", 600) },
+  { name: "RV Travel", image: img("photo-1469854523086-cc02fe5d8800", 600) },
+  { name: "Campervans", image: img("photo-1532274402911-5a369e4c4bb5", 600) },
+  { name: "Cabins", image: img("photo-1464822759023-fed622ff2c3b", 600) },
+  { name: "Tiny Houses", image: img("photo-1518780664697-55e3ad937233", 600) },
+  { name: "Road Trips", image: img("photo-1533873984035-25970ab07461", 600) },
+  { name: "Hiking", image: img("photo-1551632811-561732d1e306", 600) },
+  { name: "Watersports", image: img("photo-1463693396721-8ca0cfa2b3b5", 600) },
+];
+
 
 const stayTypes = [
   { name: "Campgrounds", image: img("photo-1504280390367-361c6d9f38f4") },
