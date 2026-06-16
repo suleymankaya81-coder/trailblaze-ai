@@ -18,8 +18,10 @@ import {
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { SearchBar } from "@/components/site/SearchBar";
+import { HeroCarousel } from "@/components/site/HeroCarousel";
 import { Button } from "@/components/ui/button";
 import { destinations } from "@/data/destinations";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -57,6 +59,7 @@ const heroCards = [
     cta: "Explore parks",
     image: img("photo-1506905925346-21bda4d32df4", 1200),
     href: "#destinations",
+    badge: "Light terrain",
   },
   {
     eyebrow: "Camping & Glamping",
@@ -82,7 +85,33 @@ const heroCards = [
     image: img("photo-1455156218388-5e61b526818b", 1200),
     href: "#stories",
   },
+  {
+    eyebrow: "Cabins & Tiny Houses",
+    title: "Sleep in the trees.",
+    blurb: "Hand-picked cabins and tiny escapes far from the noise.",
+    cta: "See cabins",
+    image: img("photo-1464822759023-fed622ff2c3b", 1200),
+    href: "#stay-types",
+    badge: "New",
+  },
+  {
+    eyebrow: "Adventure Travel",
+    title: "Go further, with help.",
+    blurb: "Guided hikes, paddles and golden-hour drives — locally vetted.",
+    cta: "Find adventures",
+    image: img("photo-1551632811-561732d1e306", 1200),
+    href: "#destinations",
+  },
+  {
+    eyebrow: "Plan With Us",
+    title: "Your trip, sorted.",
+    blurb: "One destination, one plan: stays, rentals, packing and budget.",
+    cta: "Start planning",
+    image: img("photo-1510328329472-4cf06fc20a36", 1200),
+    href: "#how",
+  },
 ];
+
 
 const topCategories = [
   { name: "National Parks", image: img("photo-1506905925346-21bda4d32df4", 600) },
@@ -146,50 +175,16 @@ function HomePage() {
     <div className="bg-background">
       <Header />
 
-      {/* HERO — REI-style 4-card promo grid */}
-      <section className="bg-background pt-6 md:pt-8">
-        <div className="container-page">
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {heroCards.map((card) => (
-              <article
-                key={card.title}
-                className="flex flex-col overflow-hidden rounded-lg bg-beige"
-              >
-                <div className="relative aspect-[4/5] w-full overflow-hidden">
-                  <img
-                    src={card.image}
-                    alt={card.title}
-                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-105"
-                  />
-                  <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink/60 to-transparent" />
-                  <p className="absolute left-5 right-5 bottom-5 font-serif text-2xl font-bold leading-tight text-off-white md:text-3xl">
-                    {card.title}
-                  </p>
-                </div>
-                <div className="flex flex-1 flex-col p-5">
-                  <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-forest">
-                    {card.eyebrow}
-                  </p>
-                  <p className="mt-3 flex-1 text-sm text-foreground/80">{card.blurb}</p>
-                  <a
-                    href={card.href}
-                    className="mt-5 inline-flex w-fit items-center justify-center rounded-sm bg-forest px-5 py-2.5 text-sm font-semibold text-off-white hover:bg-forest/90"
-                  >
-                    {card.cta}
-                  </a>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
+      {/* HERO — REI-style horizontal carousel with arrow nav */}
+      <HeroCarousel slides={heroCards} />
 
-        {/* Floating search */}
-        <div className="container-page relative z-20 mt-8">
-          <div className="rounded-2xl border border-border bg-background p-5 shadow-lift md:p-6">
-            <SearchBar />
-          </div>
+      {/* Floating search */}
+      <div className="container-page relative z-20 -mt-8">
+        <div className="rounded-2xl border border-border bg-background p-5 shadow-lift md:p-6">
+          <SearchBar />
         </div>
-      </section>
+      </div>
+
 
       {/* SHOP TOP CATEGORIES — REI-style category cards */}
       <section className="bg-background py-20">
