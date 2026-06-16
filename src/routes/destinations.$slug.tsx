@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { useQuery, useServerFn } from "@tanstack/react-query";
-import { useServerFn as useSF } from "@tanstack/react-start";
+import { useQuery } from "@tanstack/react-query";
+import { useServerFn } from "@tanstack/react-start";
 import {
   ArrowRight,
   Calendar,
@@ -25,7 +25,7 @@ import { Footer } from "@/components/site/Footer";
 import { Header } from "@/components/site/Header";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import { getDestination, destinations } from "@/data/destinations";
+import { getDestination, type Destination } from "@/data/destinations";
 import { enrichDestination, type EnrichResult } from "@/lib/ai/enrich.functions";
 
 export const Route = createFileRoute("/destinations/$slug")({
@@ -56,7 +56,7 @@ export const Route = createFileRoute("/destinations/$slug")({
 
 function DestinationPage() {
   const { dest } = Route.useLoaderData();
-  const enrich = useSF(enrichDestination);
+  const enrich = useServerFn(enrichDestination);
 
   const { data: ai, isLoading: aiLoading } = useQuery({
     queryKey: ["enrich", dest.slug],
@@ -286,10 +286,10 @@ function StatChip({ icon, label, value }: { icon: React.ReactNode; label: string
   );
 }
 
-function StaysGrid({ dest }: { dest: ReturnType<typeof getDestination> & {} }) {
-  const cats = useMemo(() => Array.from(new Set(dest!.stays.map((s) => s.category))), [dest]);
+function StaysGrid({ dest }: { dest: Destination }) {
+  const cats = useMemo(() => Array.from(new Set(dest.stays.map((s) => s.category))), [dest]);
   const [tab, setTab] = useState<string>("All");
-  const filtered = tab === "All" ? dest!.stays : dest!.stays.filter((s) => s.category === tab);
+  const filtered = tab === "All" ? dest.stays : dest.stays.filter((s) => s.category === tab);
   return (
     <>
       <div className="mb-8 flex flex-wrap gap-2">
