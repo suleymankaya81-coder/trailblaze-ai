@@ -57,6 +57,7 @@ const heroCards = [
     cta: "Explore parks",
     image: img("photo-1506905925346-21bda4d32df4", 1200),
     href: "#destinations",
+    badge: "Light terrain",
   },
   {
     eyebrow: "Camping & Glamping",
@@ -82,7 +83,33 @@ const heroCards = [
     image: img("photo-1455156218388-5e61b526818b", 1200),
     href: "#stories",
   },
+  {
+    eyebrow: "Cabins & Tiny Houses",
+    title: "Sleep in the trees.",
+    blurb: "Hand-picked cabins and tiny escapes far from the noise.",
+    cta: "See cabins",
+    image: img("photo-1464822759023-fed622ff2c3b", 1200),
+    href: "#stay-types",
+    badge: "New",
+  },
+  {
+    eyebrow: "Adventure Travel",
+    title: "Go further, with help.",
+    blurb: "Guided hikes, paddles and golden-hour drives — locally vetted.",
+    cta: "Find adventures",
+    image: img("photo-1551632811-561732d1e306", 1200),
+    href: "#destinations",
+  },
+  {
+    eyebrow: "Plan With Us",
+    title: "Your trip, sorted.",
+    blurb: "One destination, one plan: stays, rentals, packing and budget.",
+    cta: "Start planning",
+    image: img("photo-1510328329472-4cf06fc20a36", 1200),
+    href: "#how",
+  },
 ];
+
 
 const topCategories = [
   { name: "National Parks", image: img("photo-1506905925346-21bda4d32df4", 600) },
