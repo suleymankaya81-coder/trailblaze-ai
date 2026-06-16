@@ -29,7 +29,7 @@ import { getDestination, type Destination } from "@/data/destinations";
 import { enrichDestination, type EnrichResult } from "@/lib/ai/enrich.functions";
 
 export const Route = createFileRoute("/destinations/$slug")({
-  loader: ({ params }) => {
+  loader: ({ params }): { dest: Destination } => {
     const dest = getDestination(params.slug);
     if (!dest) throw notFound();
     return { dest };
