@@ -10,10 +10,6 @@ export const Route = createFileRoute("/search")({
   loaderDeps: ({ search }) => ({ q: search.q ?? "" }),
   loader: ({ deps }) => {
     const slug = findDestinationSlug(deps.q) ?? destinations[0]!.slug;
-    throw redirect({
-      to: "/destinations/$slug",
-      params: { slug },
-      search: deps.q ? { from: deps.q } : undefined,
-    });
+    throw redirect({ to: "/destinations/$slug", params: { slug } });
   },
 });
