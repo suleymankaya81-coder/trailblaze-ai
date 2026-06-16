@@ -1,5 +1,5 @@
 import { createServerFn } from "@tanstack/react-start";
-import { generateObject } from "ai";
+import { generateText } from "ai";
 import { z } from "zod";
 
 import { createLovableAiGatewayProvider } from "@/lib/ai-gateway.server";
@@ -54,9 +54,8 @@ export const enrichDestination = createServerFn({ method: "POST" })
 
     const gateway = createLovableAiGatewayProvider(key);
 
-    const { object } = await generateObject({
+    const { text } = await generateText({
       model: gateway("google/gemini-3-flash-preview"),
-      schema: EnrichSchema,
       prompt: `You are writing for a premium outdoor-travel guide for ${dest.name} (${dest.region}).
 
 Context:
@@ -65,14 +64,47 @@ Context:
 - Avg daily budget per person: $${dest.avgDailyBudget}
 - Tagline: ${dest.tagline}
 
-Write:
-1. A 2-3 sentence cinematic summary that makes someone want to book a trip tonight. No hype, no clichés.
-2. 8 destination insights (each 1 short sentence): best time, weather, crowds, wildlife, cell coverage, safety, family-friendliness, pet-friendliness.
-3. A packing checklist grouped by camping, clothing, cooking, photography, kids, pets. 4-6 items per group. Concise item names only.
-4. A trip budget breakdown for a 4-day trip for 2 people in USD across accommodation, activities, food, fuel, rental, equipment. Realistic for this destination. Plus a 1-sentence note.
+Return ONLY valid JSON (no markdown, no prose) matching exactly this shape:
+{
+  "summary": "2-3 sentence cinematic, emotive overview",
+  "insights": {
+    "bestTimeToVisit": "1 sentence",
+    "weather": "1 sentence",
+    "crowdLevels": "1 sentence",
+    "wildlife": "1 sentence",
+    "cellCoverage": "1 sentence",
+    "safety": "1 sentence",
+    "familyFriendly": "1 sentence",
+    "petFriendly": "1 sentence"
+  },
+  "packing": {
+    "camping": ["4-6 short items"],
+    "clothing": ["4-6 short items"],
+    "cooking": ["4-6 short items"],
+    "photography": ["4-6 short items"],
+    "kids": ["4-6 short items"],
+    "pets": ["4-6 short items"]
+  },
+  "budget": {
+    "accommodation": 0,
+    "activities": 0,
+    "food": 0,
+    "fuel": 0,
+    "rental": 0,
+    "equipment": 0,
+    "note": "1 sentence"
+  }
+}
 
-Be specific to ${dest.name}. Never invent operator/lodging names.`,
+Budget is USD for a 4-day trip for 2 people, realistic for ${dest.name}. Be specific to ${dest.name}. Never invent operator/lodging names.`,
     });
+
+    const cleaned = text.replace(/```json\s*/gi, "").replace(/```\s*/g, "").trim();
+    const start = cleaned.indexOf("{");
+    const end = cleaned.lastIndexOf("}");
+    if (start === -1 || end === -1) throw new Error("AI did not return JSON");
+    const parsed = JSON.parse(cleaned.slice(start, end + 1));
+    const object = EnrichSchema.parse(parsed);
 
     cache.set(data.slug, object);
     return object;
