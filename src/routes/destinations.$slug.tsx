@@ -25,7 +25,7 @@ import {
   Star,
   Sun,
   Tent,
-  Ticket,
+  
   Trees,
   Users,
   Wifi,
