@@ -1,5 +1,5 @@
 import { createServerFn } from "@tanstack/react-start";
-import { generateText, Output } from "ai";
+import { generateObject } from "ai";
 import { z } from "zod";
 
 import { createLovableAiGatewayProvider } from "@/lib/ai-gateway.server";
@@ -54,9 +54,9 @@ export const enrichDestination = createServerFn({ method: "POST" })
 
     const gateway = createLovableAiGatewayProvider(key);
 
-    const { experimental_output } = await generateText({
+    const { object } = await generateObject({
       model: gateway("google/gemini-3-flash-preview"),
-      experimental_output: Output.object({ schema: EnrichSchema }),
+      schema: EnrichSchema,
       prompt: `You are writing for a premium outdoor-travel guide for ${dest.name} (${dest.region}).
 
 Context:
@@ -74,6 +74,6 @@ Write:
 Be specific to ${dest.name}. Never invent operator/lodging names.`,
     });
 
-    cache.set(data.slug, experimental_output);
-    return experimental_output;
+    cache.set(data.slug, object);
+    return object;
   });
