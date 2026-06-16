@@ -55,7 +55,7 @@ export const Route = createFileRoute("/destinations/$slug")({
 });
 
 function DestinationPage() {
-  const { dest } = Route.useLoaderData();
+  const { dest } = Route.useLoaderData() as { dest: Destination };
   const enrich = useServerFn(enrichDestination);
 
   const { data: ai, isLoading: aiLoading } = useQuery({
