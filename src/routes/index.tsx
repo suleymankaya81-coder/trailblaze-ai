@@ -146,85 +146,91 @@ function HomePage() {
     <div className="bg-background">
       <Header />
 
-      {/* HERO — REI-style: clean, single bold headline + green CTA */}
-      <section className="relative">
-        <div className="relative h-[78vh] min-h-[560px] w-full overflow-hidden">
-          <img
-            src={img("photo-1506905925346-21bda4d32df4", 2000)}
-            alt="Mountain lake at golden hour"
-            className="absolute inset-0 h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-ink/55 via-ink/25 to-transparent" />
-          <div className="container-page relative z-10 flex h-full flex-col justify-center">
-            <div className="max-w-2xl">
-              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-off-white/90">
-                Outdoor travel, planned for you
-              </p>
-              <h1 className="text-5xl font-bold leading-[1.02] tracking-tight text-off-white md:text-7xl">
-                Find the trip.<br />Skip the planning.
-              </h1>
-              <p className="mt-5 max-w-lg text-base text-off-white/90 md:text-lg">
-                One destination. One complete guide. Stays, rentals, activities, packing
-                and budget — all in one place.
-              </p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <Button asChild variant="hero" size="xl">
-                  <a href="#destinations">
-                    Explore destinations <ArrowRight className="h-4 w-4" />
+      {/* HERO — REI-style 4-card promo grid */}
+      <section className="bg-background pt-6 md:pt-8">
+        <div className="container-page">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {heroCards.map((card) => (
+              <article
+                key={card.title}
+                className="flex flex-col overflow-hidden rounded-lg bg-beige"
+              >
+                <div className="relative aspect-[4/5] w-full overflow-hidden">
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink/60 to-transparent" />
+                  <p className="absolute left-5 right-5 bottom-5 font-serif text-2xl font-bold leading-tight text-off-white md:text-3xl">
+                    {card.title}
+                  </p>
+                </div>
+                <div className="flex flex-1 flex-col p-5">
+                  <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-forest">
+                    {card.eyebrow}
+                  </p>
+                  <p className="mt-3 flex-1 text-sm text-foreground/80">{card.blurb}</p>
+                  <a
+                    href={card.href}
+                    className="mt-5 inline-flex w-fit items-center justify-center rounded-sm bg-forest px-5 py-2.5 text-sm font-semibold text-off-white hover:bg-forest/90"
+                  >
+                    {card.cta}
                   </a>
-                </Button>
-                <a
-                  href="#how"
-                  className="inline-flex items-center gap-2 rounded-full border border-off-white/40 px-6 py-3 text-sm font-semibold text-off-white hover:bg-off-white hover:text-forest"
-                >
-                  How it works
-                </a>
-              </div>
-            </div>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
 
         {/* Floating search */}
-        <div className="container-page relative z-20 -mt-10">
+        <div className="container-page relative z-20 mt-8">
           <div className="rounded-2xl border border-border bg-background p-5 shadow-lift md:p-6">
             <SearchBar />
           </div>
         </div>
       </section>
 
-      {/* QUICK SHOP — REI-style circular category row */}
-      <section className="bg-background py-16">
+      {/* SHOP TOP CATEGORIES — REI-style category cards */}
+      <section className="bg-background py-20">
         <div className="container-page">
-          <div className="mb-8 flex items-end justify-between">
-            <h2 className="text-2xl font-bold tracking-tight text-foreground md:text-3xl">
-              Shop the outdoor life
-            </h2>
-            <a href="#destinations" className="hidden text-sm font-semibold text-forest hover:underline md:block">
-              See all categories <ArrowRight className="ml-1 inline h-3.5 w-3.5" />
-            </a>
-          </div>
-          <div className="grid grid-cols-4 gap-x-4 gap-y-8 md:grid-cols-8">
-            {quickShop.map((c) => (
+          <h2 className="mb-8 font-serif text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+            Shop top categories
+          </h2>
+          <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+            {topCategories.map((c) => (
               <a
                 key={c.name}
                 href="#destinations"
                 className="group flex flex-col items-center text-center"
               >
-                <div className="relative h-20 w-20 overflow-hidden rounded-full ring-1 ring-border md:h-24 md:w-24">
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-md bg-beige">
                   <img
                     src={c.image}
                     alt={c.name}
-                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                <span className="mt-3 text-xs font-semibold text-foreground/90 group-hover:text-forest md:text-sm">
+                <span className="mt-3 text-sm font-semibold text-foreground group-hover:text-forest">
                   {c.name}
                 </span>
               </a>
             ))}
           </div>
+          <div className="mt-10 flex items-center justify-end gap-4 border-t border-border pt-6">
+            <span className="text-sm font-semibold text-foreground">
+              Looking for something specific?
+            </span>
+            <a
+              href="#destinations"
+              className="inline-flex items-center justify-center rounded-sm bg-ember px-5 py-2.5 text-sm font-semibold text-off-white hover:bg-ember/90"
+            >
+              Browse all destinations
+            </a>
+          </div>
         </div>
       </section>
+
 
       {/* PROMO SPLIT — REI-style member/promo banner */}
       <section className="bg-beige py-16">
