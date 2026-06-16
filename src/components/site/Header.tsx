@@ -1,26 +1,41 @@
 import { Link } from "@tanstack/react-router";
-import { Mountain } from "lucide-react";
+import { Mountain, Search, User } from "lucide-react";
 
 export function Header() {
   return (
-    <header className="absolute inset-x-0 top-0 z-30">
-      <div className="container-page flex h-20 items-center justify-between">
+    <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur">
+      <div className="container-page flex h-16 items-center justify-between gap-6">
         <Link to="/" className="flex items-center gap-2 text-foreground">
-          <Mountain className="h-5 w-5" />
-          <span className="font-display text-xl tracking-tight">Minialife</span>
+          <Mountain className="h-5 w-5 text-forest" />
+          <span className="text-lg font-bold tracking-tight">Minialife</span>
         </Link>
-        <nav className="hidden items-center gap-8 text-sm md:flex">
-          <Link to="/" className="text-foreground/80 hover:text-foreground">Destinations</Link>
-          <a href="#stay-types" className="text-foreground/80 hover:text-foreground">Stays</a>
-          <a href="#rentals" className="text-foreground/80 hover:text-foreground">Rentals</a>
-          <a href="#how" className="text-foreground/80 hover:text-foreground">How it works</a>
+        <nav className="hidden flex-1 items-center gap-7 text-sm font-medium md:flex">
+          <Link to="/" className="text-foreground/80 hover:text-forest">Destinations</Link>
+          <a href="#stay-types" className="text-foreground/80 hover:text-forest">Stays</a>
+          <a href="#rentals" className="text-foreground/80 hover:text-forest">Rentals</a>
+          <a href="#stories" className="text-foreground/80 hover:text-forest">Stories</a>
+          <a href="#how" className="text-foreground/80 hover:text-forest">How it works</a>
         </nav>
-        <Link
-          to="/"
-          className="hidden rounded-full border border-foreground/15 px-4 py-2 text-sm text-foreground/90 backdrop-blur transition hover:bg-background/60 md:inline-block"
-        >
-          Start Planning
-        </Link>
+        <div className="flex items-center gap-2">
+          <button
+            aria-label="Search"
+            className="hidden h-9 w-9 items-center justify-center rounded-full text-foreground/70 hover:bg-muted md:inline-flex"
+          >
+            <Search className="h-4 w-4" />
+          </button>
+          <button
+            aria-label="Account"
+            className="hidden h-9 w-9 items-center justify-center rounded-full text-foreground/70 hover:bg-muted md:inline-flex"
+          >
+            <User className="h-4 w-4" />
+          </button>
+          <Link
+            to="/"
+            className="rounded-full bg-forest px-4 py-2 text-xs font-semibold uppercase tracking-wider text-off-white hover:bg-ink"
+          >
+            Plan a trip
+          </Link>
+        </div>
       </div>
     </header>
   );

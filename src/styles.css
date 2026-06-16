@@ -14,7 +14,7 @@
   --radius-4xl: calc(var(--radius) + 16px);
 
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -43,6 +43,7 @@
   --color-beige: var(--beige);
   --color-off-white: var(--off-white);
   --color-ink: var(--ink);
+  --color-ember: var(--ember);
 
   --shadow-soft: 0 1px 2px oklch(0.2 0.02 80 / 0.04), 0 8px 30px oklch(0.2 0.02 80 / 0.06);
   --shadow-lift: 0 2px 4px oklch(0.2 0.02 80 / 0.05), 0 20px 50px oklch(0.2 0.02 80 / 0.12);
@@ -51,16 +52,17 @@
 :root {
   --radius: 1rem;
 
-  /* Earth-tone palette */
-  --off-white: oklch(0.985 0.008 85);
-  --beige: oklch(0.94 0.018 80);
-  --sand: oklch(0.88 0.04 75);
-  --sage: oklch(0.78 0.04 145);
-  --sage-deep: oklch(0.55 0.06 150);
-  --forest: oklch(0.38 0.05 155);
-  --ink: oklch(0.22 0.015 80);
+  /* REI-inspired outdoor palette */
+  --off-white: oklch(0.985 0.005 90);
+  --beige: oklch(0.96 0.012 85);
+  --sand: oklch(0.91 0.025 80);
+  --sage: oklch(0.82 0.045 150);
+  --sage-deep: oklch(0.48 0.08 152);
+  --forest: oklch(0.30 0.055 155);
+  --ember: oklch(0.62 0.16 45);
+  --ink: oklch(0.18 0.012 80);
 
-  --background: var(--off-white);
+  --background: oklch(1 0 0);
   --foreground: var(--ink);
   --card: oklch(1 0 0);
   --card-foreground: var(--ink);
@@ -68,18 +70,17 @@
   --popover-foreground: var(--ink);
   --primary: var(--forest);
   --primary-foreground: var(--off-white);
-  --secondary: var(--sand);
+  --secondary: var(--beige);
   --secondary-foreground: var(--ink);
   --muted: var(--beige);
-  --muted-foreground: oklch(0.45 0.02 80);
+  --muted-foreground: oklch(0.42 0.015 80);
   --accent: var(--sage);
   --accent-foreground: var(--forest);
   --destructive: oklch(0.55 0.18 28);
   --destructive-foreground: var(--off-white);
-  --border: oklch(0.9 0.012 80);
-  --input: oklch(0.92 0.012 80);
-  --ring: var(--sage-deep);
-}
+  --border: oklch(0.91 0.008 85);
+  --input: oklch(0.93 0.008 85);
+  --ring: var(--forest);
 
 .dark {
   --background: oklch(0.22 0.015 80);
@@ -118,8 +119,8 @@
 
   h1, h2, h3 {
     font-family: var(--font-display);
-    font-weight: 500;
-    letter-spacing: -0.02em;
+    font-weight: 700;
+    letter-spacing: -0.025em;
   }
 }
 
