@@ -377,7 +377,7 @@ function ThingsToDoAndBudget({
         right={<Button size="sm" variant="outline">View all activities</Button>}
       >
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {dest.activities.slice(0, 4).concat(dest.activities.slice(0, 1)).slice(0, 4).map((a) => (
+          {dest.activities.slice(0, 4).map((a) => (
             <article
               key={a.id}
               className="group overflow-hidden rounded-xl border border-border bg-card"
