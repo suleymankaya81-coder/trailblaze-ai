@@ -159,7 +159,7 @@ function DestinationPage() {
         <RoadTrip dest={dest} />
 
         {/* 8 + 9 */}
-        <div className="grid gap-6 lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)] lg:items-start">
+        <div className="grid gap-6 lg:grid-cols-[minmax(0,480px)_minmax(0,1fr)] lg:items-start">
           <PackForTrip dest={dest} ai={ai} loading={aiLoading} />
           <Essentials dest={dest} />
         </div>
@@ -454,7 +454,7 @@ function TopStays({ dest }: { dest: DestinationView }) {
   const [tab, setTab] = useState("All");
   const filtered = tab === "All" ? dest.stays : dest.stays.filter((s) => s.subcategory === tab);
   const pick = filtered[0];
-  const rest = filtered.slice(1, 5);
+  const rest = filtered.slice(1, 4);
 
   return (
     <section id="stays" className="scroll-mt-24">
@@ -483,7 +483,7 @@ function TopStays({ dest }: { dest: DestinationView }) {
       {filtered.length === 0 ? (
         <EmptyState message="No stays listed for this filter yet." />
       ) : (
-        <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {pick && <StayCard offer={pick} destinationSlug={dest.slug} featured />}
           {rest.map((s) => (
             <StayCard key={s.id} offer={s} destinationSlug={dest.slug} />
@@ -971,7 +971,7 @@ function PackForTrip({
         </button>
       </div>
 
-      <div className="grid grid-cols-4 gap-2 sm:grid-cols-7">
+      <div className="grid grid-cols-4 gap-2 sm:grid-cols-7 md:grid-cols-4 lg:grid-cols-7">
         {PACK_CATEGORIES.map((c) => (
           <button
             key={c.key}
@@ -1034,7 +1034,7 @@ function Essentials({ dest }: { dest: DestinationView }) {
       {items.length === 0 ? (
         <EmptyState message="No gear recommendations for this destination yet." />
       ) : (
-        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
+        <div className="grid gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {items.map((e) => (
             <article
               key={e.id}
