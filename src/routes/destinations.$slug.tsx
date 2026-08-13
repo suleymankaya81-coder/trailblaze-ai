@@ -36,12 +36,16 @@ import { Footer } from "@/components/site/Footer";
 import { Header } from "@/components/site/Header";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import { getDestination, type Destination } from "@/data/destinations";
+import {
+  getDestinationPageData,
+  type DestinationView,
+  type OfferView,
+} from "@/lib/data/destinations.functions";
 import { enrichDestination, type EnrichResult } from "@/lib/ai/enrich.functions";
 
 export const Route = createFileRoute("/destinations/$slug")({
-  loader: ({ params }): { dest: Destination } => {
-    const dest = getDestination(params.slug);
+  loader: async ({ params }): Promise<{ dest: DestinationView }> => {
+    const dest = await getDestinationPageData({ data: { slug: params.slug } });
     if (!dest) throw notFound();
     return { dest };
   },
@@ -66,7 +70,7 @@ export const Route = createFileRoute("/destinations/$slug")({
 });
 
 function DestinationPage() {
-  const { dest } = Route.useLoaderData() as { dest: Destination };
+  const { dest } = Route.useLoaderData() as { dest: DestinationView };
   const enrich = useServerFn(enrichDestination);
 
   const { data: ai, isLoading: aiLoading } = useQuery({
@@ -99,8 +103,37 @@ function DestinationPage() {
 /* =========================================================
    HERO
 ========================================================= */
-function Hero({ dest }: { dest: Destination }) {
+function Hero({ dest }: { dest: DestinationView }) {
   const [region, sub] = dest.region.split(",").map((s) => s.trim());
+  const stats = [
+    dest.bestSeason && { icon: <Sun className="h-4 w-4" />, label: "Best season", value: dest.bestSeason },
+    dest.scenicScore != null && {
+      icon: <Star className="h-4 w-4" />,
+      label: "Scenic score",
+      value: `${dest.scenicScore}/10`,
+    },
+    dest.campingScore != null && {
+      icon: <Tent className="h-4 w-4" />,
+      label: "Camping score",
+      value: `${dest.campingScore}/10`,
+    },
+    dest.avgDailyBudget != null && {
+      icon: <DollarSign className="h-4 w-4" />,
+      label: "Budget",
+      value: `$${dest.avgDailyBudget} / day`,
+    },
+    dest.tripDurationDays && { icon: <Calendar className="h-4 w-4" />, label: "Ideal duration", value: dest.tripDurationDays },
+  ].filter((s): s is { icon: React.ReactNode; label: string; value: string } => Boolean(s));
+
+  const snapshotItems = [
+    "Best for first-time campers",
+    "RV & pet friendly",
+    "Great for families",
+    "Excellent photography",
+    "Moderate budget",
+    ...(dest.bestSeason ? [`Best in ${dest.bestSeason.split("–")[0].trim()}`] : []),
+  ];
+
   return (
     <section className="relative overflow-hidden rounded-2xl">
       <img
@@ -129,11 +162,9 @@ function Hero({ dest }: { dest: Destination }) {
           </div>
 
           <div className="mt-10 grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-3 lg:grid-cols-5">
-            <HeroStat icon={<Sun className="h-4 w-4" />} label="Best season" value={dest.bestSeason} />
-            <HeroStat icon={<Star className="h-4 w-4" />} label="Scenic score" value={`${dest.scenicScore}/10`} />
-            <HeroStat icon={<Tent className="h-4 w-4" />} label="Camping score" value={`${dest.campingScore}/10`} />
-            <HeroStat icon={<DollarSign className="h-4 w-4" />} label="Budget" value={`$${dest.avgDailyBudget} / day`} />
-            <HeroStat icon={<Calendar className="h-4 w-4" />} label="Ideal duration" value={dest.tripDurationDays} />
+            {stats.map((s) => (
+              <HeroStat key={s.label} icon={s.icon} label={s.label} value={s.value} />
+            ))}
           </div>
         </div>
 
@@ -149,14 +180,7 @@ function Hero({ dest }: { dest: Destination }) {
             </span>
           </div>
           <ul className="mt-5 space-y-3 text-sm">
-            {[
-              "Best for first-time campers",
-              "RV & pet friendly",
-              "Great for families",
-              "Excellent photography",
-              "Moderate budget",
-              `Best in ${dest.bestSeason.split("–")[0].trim()}`,
-            ].map((t) => (
+            {snapshotItems.map((t) => (
               <li key={t} className="flex items-start gap-2">
                 <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-ember" />
                 <span className="text-off-white/90">{t}</span>
@@ -227,15 +251,77 @@ function BeforeYouGo() {
 }
 
 /* =========================================================
+   OFFER HELPERS (price + CTA shared by Stays / Rentals / Essentials)
+========================================================= */
+function PriceTag({
+  offer,
+  fallbackUnit,
+  className = "text-sm font-semibold text-foreground",
+}: {
+  offer: OfferView;
+  fallbackUnit: string;
+  className?: string;
+}) {
+  if (offer.priceValue != null) {
+    const unit = offer.priceUnit ?? fallbackUnit;
+    return (
+      <span className={className}>
+        ${offer.priceValue}
+        <span className="text-xs font-normal text-muted-foreground"> / {unit}</span>
+      </span>
+    );
+  }
+  if (offer.priceDisplay) return <span className={className}>{offer.priceDisplay}</span>;
+  return <span className="text-xs font-normal text-muted-foreground">Price on request</span>;
+}
+
+function OfferCta({
+  offer,
+  label,
+  size = "md",
+}: {
+  offer: OfferView;
+  label: string;
+  size?: "sm" | "md";
+}) {
+  const padding = size === "sm" ? "px-3 py-1" : "px-3 py-1.5";
+  if (offer.externalUrl) {
+    return (
+      <a
+        href={offer.externalUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`rounded-md bg-forest ${padding} text-xs font-semibold text-off-white hover:bg-forest/90`}
+      >
+        {label}
+      </a>
+    );
+  }
+  return (
+    <button
+      type="button"
+      disabled
+      title="Coming soon"
+      className={`cursor-not-allowed rounded-md border border-border bg-muted ${padding} text-xs font-semibold text-muted-foreground/70`}
+    >
+      Coming soon
+    </button>
+  );
+}
+
+/* =========================================================
    TOP STAYS
 ========================================================= */
-function TopStays({ dest }: { dest: Destination }) {
+function TopStays({ dest }: { dest: DestinationView }) {
   const cats = useMemo(
-    () => Array.from(new Set(dest.stays.map((s) => s.category))),
+    () =>
+      Array.from(
+        new Set(dest.stays.map((s) => s.subcategory).filter((c): c is string => Boolean(c))),
+      ),
     [dest],
   );
   const [tab, setTab] = useState<string>("All");
-  const filtered = tab === "All" ? dest.stays : dest.stays.filter((s) => s.category === tab);
+  const filtered = tab === "All" ? dest.stays : dest.stays.filter((s) => s.subcategory === tab);
   const aiPicks = ["AI Pick · Best Overall", "AI Pick · Best Glamping", "AI Pick · Best Cabin", "AI Pick · Best RV"];
 
   return (
@@ -272,8 +358,8 @@ function TopStays({ dest }: { dest: Destination }) {
           >
             <div className="relative aspect-[4/3] overflow-hidden">
               <img
-                src={s.image}
-                alt={s.name}
+                src={s.image ?? ""}
+                alt={s.title}
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <span className="absolute left-3 top-3 rounded-sm bg-ink/80 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-off-white">
@@ -287,19 +373,17 @@ function TopStays({ dest }: { dest: Destination }) {
               </button>
             </div>
             <div className="flex flex-1 flex-col p-4">
-              <h3 className="font-display text-base text-foreground">{s.name}</h3>
+              <h3 className="font-display text-base text-foreground">{s.title}</h3>
               <p className="mt-1 text-xs text-muted-foreground">{s.description}</p>
-              <p className="mt-3 flex items-start gap-1.5 text-xs text-foreground/80">
-                <Sparkles className="mt-0.5 h-3 w-3 text-ember" />
-                <span><span className="font-semibold text-forest">Why we recommend it. </span>{s.why}</span>
-              </p>
+              {s.whyRecommended && (
+                <p className="mt-3 flex items-start gap-1.5 text-xs text-foreground/80">
+                  <Sparkles className="mt-0.5 h-3 w-3 text-ember" />
+                  <span><span className="font-semibold text-forest">Why we recommend it. </span>{s.whyRecommended}</span>
+                </p>
+              )}
               <div className="mt-4 flex items-center justify-between border-t border-border pt-3">
-                <span className="text-sm font-semibold text-foreground">
-                  ${s.pricePerNight}<span className="text-xs font-normal text-muted-foreground"> / night</span>
-                </span>
-                <button className="rounded-md bg-forest px-3 py-1.5 text-xs font-semibold text-off-white hover:bg-forest/90">
-                  Check availability
-                </button>
+                <PriceTag offer={s} fallbackUnit="night" />
+                <OfferCta offer={s} label="Check availability" size="md" />
               </div>
             </div>
           </article>
@@ -312,7 +396,7 @@ function TopStays({ dest }: { dest: Destination }) {
 /* =========================================================
    RENTALS
 ========================================================= */
-function RentBeforeYouGo({ dest }: { dest: Destination }) {
+function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
   return (
     <SectionCard
       title="Rent Before You Go"
@@ -327,8 +411,8 @@ function RentBeforeYouGo({ dest }: { dest: Destination }) {
           >
             <div className="relative aspect-[4/3] overflow-hidden">
               <img
-                src={r.image}
-                alt={r.name}
+                src={r.image ?? ""}
+                alt={r.title}
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <button
@@ -339,15 +423,11 @@ function RentBeforeYouGo({ dest }: { dest: Destination }) {
               </button>
             </div>
             <div className="flex flex-1 flex-col p-4">
-              <h3 className="text-sm font-semibold text-foreground">{r.name}</h3>
-              <p className="mt-2 text-xs text-muted-foreground">{r.blurb}</p>
+              <h3 className="text-sm font-semibold text-foreground">{r.title}</h3>
+              <p className="mt-2 text-xs text-muted-foreground">{r.description}</p>
               <div className="mt-4 flex items-center justify-between border-t border-border pt-3">
-                <span className="text-xs font-semibold text-foreground">
-                  ${r.pricePerDay}<span className="font-normal text-muted-foreground"> / day</span>
-                </span>
-                <button className="rounded-md bg-forest px-3 py-1 text-xs font-semibold text-off-white hover:bg-forest/90">
-                  Reserve
-                </button>
+                <PriceTag offer={r} fallbackUnit="day" className="text-xs font-semibold text-foreground" />
+                <OfferCta offer={r} label="Reserve" size="sm" />
               </div>
             </div>
           </article>
@@ -365,7 +445,7 @@ function ThingsToDoAndBudget({
   ai,
   loading,
 }: {
-  dest: Destination;
+  dest: DestinationView;
   ai?: EnrichResult;
   loading: boolean;
 }) {
@@ -384,15 +464,15 @@ function ThingsToDoAndBudget({
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img
-                  src={a.image}
-                  alt={a.name}
+                  src={a.image ?? ""}
+                  alt={a.title}
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
               <div className="p-4">
                 <p className="text-[10px] uppercase tracking-wider text-sage-deep">{a.duration}</p>
-                <h3 className="mt-1 text-sm font-semibold text-foreground">{a.name}</h3>
-                <p className="mt-2 text-xs text-muted-foreground">{a.blurb}</p>
+                <h3 className="mt-1 text-sm font-semibold text-foreground">{a.title}</h3>
+                <p className="mt-2 text-xs text-muted-foreground">{a.description}</p>
               </div>
             </article>
           ))}
@@ -491,12 +571,12 @@ function BudgetCard({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
 /* =========================================================
    ROAD TRIP INFO
 ========================================================= */
-function RoadTripInfo({ dest }: { dest: Destination }) {
+function RoadTripInfo({ dest }: { dest: DestinationView }) {
   const stops = [
-    { name: "The Groveland Hotel", sub: "Coffee & pastries · Groveland, CA", img: dest.stays[0]?.image },
+    { name: "The Groveland Hotel", sub: "Coffee & pastries · Groveland, CA", img: dest.stays[0]?.image ?? dest.heroImage },
     { name: "Hetch Hetchy View", sub: "Scenic viewpoint · CA-120", img: dest.activities[1]?.image ?? dest.heroImage },
-    { name: "Tuolumne Gas & Mart", sub: "Fuel stop · Groveland, CA", img: dest.rentals[0]?.image },
-    { name: "The Red Apple Grill", sub: "Great burgers · Groveland, CA", img: dest.stays[2]?.image },
+    { name: "Tuolumne Gas & Mart", sub: "Fuel stop · Groveland, CA", img: dest.rentals[0]?.image ?? dest.heroImage },
+    { name: "The Red Apple Grill", sub: "Great burgers · Groveland, CA", img: dest.stays[2]?.image ?? dest.heroImage },
   ];
   return (
     <section className="rounded-2xl border border-border bg-card p-6 shadow-soft">
@@ -583,7 +663,7 @@ function PackingSeasonalEssentials({
   ai,
   loading,
 }: {
-  dest: Destination;
+  dest: DestinationView;
   ai?: EnrichResult;
   loading: boolean;
 }) {
@@ -767,7 +847,7 @@ function Stars({ n, size = 3.5 }: { n: number; size?: number }) {
   );
 }
 
-function EssentialsList({ dest }: { dest: Destination }) {
+function EssentialsList({ dest }: { dest: DestinationView }) {
   return (
     <section className="rounded-2xl border border-border bg-card p-6 shadow-soft">
       <div className="flex items-start justify-between">
@@ -781,13 +861,13 @@ function EssentialsList({ dest }: { dest: Destination }) {
         {dest.essentials.slice(0, 5).map((e) => (
           <li key={e.id} className="flex items-center gap-4 py-3">
             <div className="h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-beige">
-              <img src={e.image} alt={e.name} className="h-full w-full object-cover" />
+              <img src={e.image ?? ""} alt={e.title} className="h-full w-full object-cover" />
             </div>
             <div className="min-w-0 flex-1">
-              <p className="truncate text-sm font-semibold text-foreground">{e.name}</p>
-              <p className="truncate text-xs text-muted-foreground">{e.blurb}</p>
+              <p className="truncate text-sm font-semibold text-foreground">{e.title}</p>
+              <p className="truncate text-xs text-muted-foreground">{e.description}</p>
             </div>
-            <span className="text-sm font-semibold text-foreground">${e.price}</span>
+            <PriceTag offer={e} fallbackUnit="item" />
           </li>
         ))}
       </ul>
@@ -798,11 +878,8 @@ function EssentialsList({ dest }: { dest: Destination }) {
 /* =========================================================
    SHARE + SIMILAR
 ========================================================= */
-function ShareAndSimilar({ dest }: { dest: Destination }) {
-  const similar = dest.similar
-    .map((s) => getDestination(s))
-    .filter((d): d is NonNullable<typeof d> => Boolean(d))
-    .slice(0, 4);
+function ShareAndSimilar({ dest }: { dest: DestinationView }) {
+  const similar = dest.similar.slice(0, 4);
 
   return (
     <div className="grid gap-6 lg:grid-cols-[1fr_2fr]">
@@ -823,11 +900,11 @@ function ShareAndSimilar({ dest }: { dest: Destination }) {
               </div>
               <div>
                 <p className="uppercase tracking-wider">Stay</p>
-                <p className="truncate text-foreground">{dest.stays[0]?.name.split(" ").slice(0, 2).join(" ")}</p>
+                <p className="truncate text-foreground">{dest.stays[0]?.title.split(" ").slice(0, 2).join(" ")}</p>
               </div>
               <div>
                 <p className="uppercase tracking-wider">Scenic</p>
-                <p className="text-foreground">{dest.scenicScore}/10</p>
+                <p className="text-foreground">{dest.scenicScore != null ? `${dest.scenicScore}/10` : "—"}</p>
               </div>
             </div>
           </div>
