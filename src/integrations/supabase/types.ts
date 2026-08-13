@@ -128,6 +128,7 @@ export type Database = {
           external_url: string | null
           id: string
           image: string | null
+          partner: string | null
           price_display: string | null
           price_unit: string | null
           price_value: number | null
@@ -145,6 +146,7 @@ export type Database = {
           external_url?: string | null
           id?: string
           image?: string | null
+          partner?: string | null
           price_display?: string | null
           price_unit?: string | null
           price_value?: number | null
@@ -162,6 +164,7 @@ export type Database = {
           external_url?: string | null
           id?: string
           image?: string | null
+          partner?: string | null
           price_display?: string | null
           price_unit?: string | null
           price_value?: number | null
