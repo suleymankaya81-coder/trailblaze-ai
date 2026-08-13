@@ -42,6 +42,8 @@ import {
   type OfferView,
 } from "@/lib/data/destinations.functions";
 import { enrichDestination, type EnrichResult } from "@/lib/ai/enrich.functions";
+import { trackAndRedirect } from "@/lib/affiliates/track.functions";
+import { getOrCreateSessionId } from "@/lib/affiliates/session";
 
 export const Route = createFileRoute("/destinations/$slug")({
   loader: async ({ params }): Promise<{ dest: DestinationView }> => {
@@ -279,33 +281,70 @@ function OfferCta({
   offer,
   label,
   size = "md",
+  destinationSlug,
 }: {
   offer: OfferView;
   label: string;
   size?: "sm" | "md";
+  destinationSlug: string;
 }) {
   const padding = size === "sm" ? "px-3 py-1" : "px-3 py-1.5";
-  if (offer.externalUrl) {
+  const track = useServerFn(trackAndRedirect);
+  const [pending, setPending] = useState(false);
+
+  if (!offer.externalUrl) {
     return (
-      <a
-        href={offer.externalUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`rounded-md bg-forest ${padding} text-xs font-semibold text-off-white hover:bg-forest/90`}
+      <button
+        type="button"
+        disabled
+        title="Coming soon"
+        className={`cursor-not-allowed rounded-md border border-border bg-muted ${padding} text-xs font-semibold text-muted-foreground/70`}
       >
-        {label}
-      </a>
+        Coming soon
+      </button>
     );
   }
+
+  const externalUrl = offer.externalUrl;
+
+  const handleClick = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (pending) return;
+    setPending(true);
+
+    // Open synchronously, inside the click's call stack, so popup blockers
+    // don't kill the tab while we wait on the tracking round-trip.
+    const newTab = window.open("", "_blank");
+
+    try {
+      const { redirectUrl } = await track({
+        data: {
+          offerId: offer.id,
+          destinationSlug,
+          sessionId: getOrCreateSessionId(),
+          referrerPage: window.location.pathname,
+        },
+      });
+      if (newTab) newTab.location.href = redirectUrl;
+    } catch (err) {
+      console.error("[OfferCta] trackAndRedirect failed", err);
+      if (newTab) newTab.location.href = externalUrl;
+    } finally {
+      setPending(false);
+    }
+  };
+
   return (
-    <button
-      type="button"
-      disabled
-      title="Coming soon"
-      className={`cursor-not-allowed rounded-md border border-border bg-muted ${padding} text-xs font-semibold text-muted-foreground/70`}
+    <a
+      href={externalUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={handleClick}
+      aria-disabled={pending}
+      className={`rounded-md bg-forest ${padding} text-xs font-semibold text-off-white hover:bg-forest/90 ${pending ? "pointer-events-none opacity-70" : ""}`}
     >
-      Coming soon
-    </button>
+      {label}
+    </a>
   );
 }
 
@@ -383,7 +422,7 @@ function TopStays({ dest }: { dest: DestinationView }) {
               )}
               <div className="mt-4 flex items-center justify-between border-t border-border pt-3">
                 <PriceTag offer={s} fallbackUnit="night" />
-                <OfferCta offer={s} label="Check availability" size="md" />
+                <OfferCta offer={s} label="Check availability" size="md" destinationSlug={dest.slug} />
               </div>
             </div>
           </article>
@@ -427,7 +466,7 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
               <p className="mt-2 text-xs text-muted-foreground">{r.description}</p>
               <div className="mt-4 flex items-center justify-between border-t border-border pt-3">
                 <PriceTag offer={r} fallbackUnit="day" className="text-xs font-semibold text-foreground" />
-                <OfferCta offer={r} label="Reserve" size="sm" />
+                <OfferCta offer={r} label="Reserve" size="sm" destinationSlug={dest.slug} />
               </div>
             </div>
           </article>
