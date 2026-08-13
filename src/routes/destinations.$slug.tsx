@@ -310,14 +310,24 @@ function CardImg({
   className?: string;
 }) {
   const [failed, setFailed] = useState(false);
+  const ref = useRef<HTMLImageElement>(null);
+
+  // An image streamed during SSR can already have errored before React
+  // attaches onError, so re-check the decoded state once on mount.
+  useEffect(() => {
+    const el = ref.current;
+    if (el?.complete && el.naturalWidth === 0) setFailed(true);
+  }, [src]);
+
   if (!src || failed) {
     return <div className={`${className ?? ""} bg-beige`} aria-hidden />;
   }
   return (
     <img
+      ref={ref}
       src={src}
       alt={alt}
-
+      loading="lazy"
       onError={() => setFailed(true)}
       className={className}
     />
