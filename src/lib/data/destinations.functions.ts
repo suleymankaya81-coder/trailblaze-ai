@@ -45,6 +45,7 @@ export type DestinationView = {
   rentals: OfferView[];
   activities: OfferView[];
   essentials: OfferView[];
+  globalServices: OfferView[];
   similar: SimilarDestination[];
 };
 
