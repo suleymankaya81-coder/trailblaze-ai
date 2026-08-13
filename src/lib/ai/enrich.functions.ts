@@ -46,7 +46,22 @@ export const enrichDestination = createServerFn({ method: "POST" })
     const cached = cache.get(data.slug);
     if (cached) return cached;
 
-    const dest = getDestination(data.slug);
+    const { data: row } = await supabase
+      .from("destinations")
+      .select("name, region, tagline, best_season, trip_duration_days, avg_daily_budget")
+      .eq("slug", data.slug)
+      .maybeSingle();
+
+    const dest = row
+      ? {
+          name: row.name,
+          region: row.region ?? "",
+          tagline: row.tagline ?? "",
+          bestSeason: row.best_season ?? "",
+          tripDurationDays: row.trip_duration_days ?? "",
+          avgDailyBudget: row.avg_daily_budget ?? 0,
+        }
+      : getDestination(data.slug);
     if (!dest) throw new Error("Destination not found");
 
     const key = process.env.LOVABLE_API_KEY;
