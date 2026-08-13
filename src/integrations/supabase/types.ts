@@ -186,12 +186,39 @@ export type Database = {
           },
         ]
       }
+      saved_plans: {
+        Row: {
+          created_at: string
+          destination_slug: string
+          email: string
+          id: string
+        }
+        Insert: {
+          created_at?: string
+          destination_slug: string
+          email: string
+          id?: string
+        }
+        Update: {
+          created_at?: string
+          destination_slug?: string
+          email?: string
+          id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      save_trip_plan: {
+        Args: {
+          p_destination_slug: string
+          p_email: string
+        }
+        Returns: undefined
+      }
     }
     Enums: {
       offer_category:

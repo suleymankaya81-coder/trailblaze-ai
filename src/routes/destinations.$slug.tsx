@@ -25,7 +25,6 @@ import {
   Star,
   Sun,
   Tent,
-  
   Trees,
   Users,
   Wifi,
@@ -37,11 +36,24 @@ import { Header } from "@/components/site/Header";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import {
+  Drawer,
+  DrawerContent,
+  DrawerDescription,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+import {
   getDestinationPageData,
   type DestinationView,
   type OfferView,
 } from "@/lib/data/destinations.functions";
 import { enrichDestination, type EnrichResult } from "@/lib/ai/enrich.functions";
+import { trackAndRedirect } from "@/lib/affiliates/track.functions";
+import { getOrCreateSessionId } from "@/lib/affiliates/session";
+import { buildDestinationJsonLd } from "@/lib/seo/destinationJsonLd";
+import { saveTripPlan } from "@/lib/plans/savePlan.functions";
+import { getCapturedEmail, setCapturedEmail } from "@/lib/plans/session";
 
 export const Route = createFileRoute("/destinations/$slug")({
   loader: async ({ params }): Promise<{ dest: DestinationView }> => {
@@ -54,6 +66,7 @@ export const Route = createFileRoute("/destinations/$slug")({
     if (!d) return { meta: [{ title: "Destination — Minialife" }] };
     const title = `${d.name} Travel Guide — Minialife`;
     const description = d.tagline;
+    const jsonLd = buildDestinationJsonLd(d, `/destinations/${d.slug}`);
     return {
       meta: [
         { title },
@@ -63,11 +76,49 @@ export const Route = createFileRoute("/destinations/$slug")({
         { property: "og:image", content: d.heroImage },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:image", content: d.heroImage },
+        { "script:ld+json": jsonLd },
       ],
     };
   },
   component: DestinationPage,
+  notFoundComponent: DestinationNotFound,
 });
+
+function DestinationNotFound() {
+  const { slug } = Route.useParams();
+  return (
+    <div className="bg-beige/30">
+      <Header />
+      <main className="container-page flex min-h-[60vh] flex-col items-center justify-center py-16 text-center">
+        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sage-deep">
+          Destination not found
+        </p>
+        <h1 className="mt-3 font-display text-4xl text-foreground md:text-5xl">
+          We couldn't find "{slug}"
+        </h1>
+        <p className="mt-4 max-w-md text-sm text-muted-foreground">
+          That destination isn't in our guide yet — it may have been renamed, or the link might be
+          off. Try searching again or explore our other destinations.
+        </p>
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+          <Link
+            to="/"
+            className="inline-flex items-center justify-center rounded-full bg-forest px-5 py-2.5 text-sm font-semibold text-off-white hover:bg-ink"
+          >
+            Explore destinations
+          </Link>
+          <Link
+            to="/contact"
+            className="inline-flex items-center justify-center rounded-full border border-border bg-background px-5 py-2.5 text-sm font-medium text-foreground hover:bg-muted"
+          >
+            Report a broken link
+          </Link>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+}
 
 function DestinationPage() {
   const { dest } = Route.useLoaderData() as { dest: DestinationView };
@@ -83,15 +134,22 @@ function DestinationPage() {
     <div className="bg-beige/30">
       <Header />
 
-      <main className="container-page py-6 space-y-6">
+      {/*
+        Section order is deliberate and load-bearing for conversion:
+        Hero -> stat strip -> first offer block (Stays), nothing else
+        between them. Every offer section (Stays/Rentals/Things To
+        Do/Essentials) stays within one section of another offer
+        section. Every planning-tool block (Toolkit, Insights) renders
+        after all offer sections, never above them.
+      */}
+      <main className="container-page space-y-6 py-6 pb-24 lg:pb-6">
         <Hero dest={dest} />
-        <BeforeYouGo services={dest.globalServices} />
-        <TopStays dest={dest} />
+        <StaysWithBudget dest={dest} ai={ai} loading={aiLoading} />
         <RentBeforeYouGo dest={dest} />
-        <ThingsToDoAndBudget dest={dest} ai={ai} loading={aiLoading} />
-        <RoadTripInfo dest={dest} />
+        <ThingsToDo dest={dest} />
+        <EssentialsStrip dest={dest} />
+        <Toolkit dest={dest} ai={ai} loading={aiLoading} />
         <DestinationInsights ai={ai} loading={aiLoading} />
-        <PackingSeasonalEssentials dest={dest} ai={ai} loading={aiLoading} />
         <ShareAndSimilar dest={dest} />
       </main>
 
@@ -101,7 +159,7 @@ function DestinationPage() {
 }
 
 /* =========================================================
-   HERO
+   HERO (image, title, tagline, stat strip — nothing else)
 ========================================================= */
 function Hero({ dest }: { dest: DestinationView }) {
   const [region, sub] = dest.region.split(",").map((s) => s.trim());
@@ -109,23 +167,29 @@ function Hero({ dest }: { dest: DestinationView }) {
   if (dest.bestSeason)
     stats.push({ icon: <Sun className="h-4 w-4" />, label: "Best season", value: dest.bestSeason });
   if (dest.scenicScore != null)
-    stats.push({ icon: <Star className="h-4 w-4" />, label: "Scenic score", value: `${dest.scenicScore}/10` });
+    stats.push({
+      icon: <Star className="h-4 w-4" />,
+      label: "Scenic score",
+      value: `${dest.scenicScore}/10`,
+    });
   if (dest.campingScore != null)
-    stats.push({ icon: <Tent className="h-4 w-4" />, label: "Camping score", value: `${dest.campingScore}/10` });
+    stats.push({
+      icon: <Tent className="h-4 w-4" />,
+      label: "Camping score",
+      value: `${dest.campingScore}/10`,
+    });
   if (dest.avgDailyBudget != null)
-    stats.push({ icon: <DollarSign className="h-4 w-4" />, label: "Budget", value: `$${dest.avgDailyBudget} / day` });
+    stats.push({
+      icon: <DollarSign className="h-4 w-4" />,
+      label: "Budget",
+      value: `$${dest.avgDailyBudget} / day`,
+    });
   if (dest.tripDurationDays)
-    stats.push({ icon: <Calendar className="h-4 w-4" />, label: "Ideal duration", value: dest.tripDurationDays });
-
-
-  const snapshotItems = [
-    "Best for first-time campers",
-    "RV & pet friendly",
-    "Great for families",
-    "Excellent photography",
-    "Moderate budget",
-    ...(dest.bestSeason ? [`Best in ${dest.bestSeason.split("–")[0].trim()}`] : []),
-  ];
+    stats.push({
+      icon: <Calendar className="h-4 w-4" />,
+      label: "Ideal duration",
+      value: dest.tripDurationDays,
+    });
 
   return (
     <section className="relative overflow-hidden rounded-2xl">
@@ -134,129 +198,151 @@ function Hero({ dest }: { dest: DestinationView }) {
         alt={dest.name}
         className="absolute inset-0 h-full w-full object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/55 to-ink/30" />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/45 to-ink/10" />
 
-      <div className="relative grid gap-8 p-8 md:p-12 lg:grid-cols-[1.4fr_1fr] lg:gap-10 lg:p-14">
-        {/* Left */}
-        <div className="flex min-h-[480px] flex-col justify-between text-off-white">
-          <p className="flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-off-white/80">
-            {sub ?? region}
-            <span className="opacity-50">›</span>
-            <span className="opacity-90">{region}</span>
-          </p>
+      <div className="relative flex min-h-[360px] flex-col justify-end p-8 text-off-white md:p-12 lg:p-14">
+        <p className="flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-off-white/80">
+          {sub ?? region}
+          <span className="opacity-50">›</span>
+          <span className="opacity-90">{region}</span>
+        </p>
 
-          <div className="mt-6">
-            <h1 className="font-display text-4xl leading-[1.05] md:text-6xl lg:text-7xl">
-              {dest.name}
-            </h1>
-            <p className="mt-5 max-w-xl text-base text-off-white/90 md:text-lg">
-              {dest.tagline}
-            </p>
-          </div>
+        <h1 className="mt-4 font-display text-4xl leading-[1.05] md:text-6xl lg:text-7xl">
+          {dest.name}
+        </h1>
+        <p className="mt-5 max-w-2xl text-base text-off-white/90 md:text-lg">{dest.tagline}</p>
 
-          <div className="mt-10 grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-3 lg:grid-cols-5">
+        {stats.length > 0 && (
+          <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-3 lg:grid-cols-5">
             {stats.map((s) => (
               <HeroStat key={s.label} icon={s.icon} label={s.label} value={s.value} />
             ))}
           </div>
-        </div>
-
-        {/* AI Trip Snapshot */}
-        <aside className="self-start rounded-2xl bg-ink/70 p-6 text-off-white shadow-lift backdrop-blur-md ring-1 ring-off-white/15">
-          <div className="flex items-center gap-2">
-            <Sparkles className="h-4 w-4 text-ember" />
-            <h2 className="text-sm font-semibold uppercase tracking-[0.16em]">
-              AI Trip Snapshot
-            </h2>
-            <span className="ml-auto rounded-sm bg-ember px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider">
-              Beta
-            </span>
-          </div>
-          <ul className="mt-5 space-y-3 text-sm">
-            {snapshotItems.map((t) => (
-              <li key={t} className="flex items-start gap-2">
-                <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-ember" />
-                <span className="text-off-white/90">{t}</span>
-              </li>
-            ))}
-          </ul>
-          <button className="mt-6 flex w-full items-center justify-center gap-2 rounded-md bg-ember px-4 py-2.5 text-sm font-semibold text-off-white hover:bg-ember/90">
-            <Sparkles className="h-4 w-4" /> Customize my trip
-          </button>
-        </aside>
+        )}
       </div>
     </section>
   );
 }
 
-function HeroStat({
-  icon,
-  label,
-  value,
-}: {
-  icon: ReactNode;
-  label: string;
-  value: string;
-}) {
+function HeroStat({ icon, label, value }: { icon: ReactNode; label: string; value: string }) {
   return (
     <div>
-      <div className="flex items-center gap-1.5 text-ember">{icon}<span className="text-[11px] uppercase tracking-[0.14em] text-off-white/70">{label}</span></div>
+      <div className="flex items-center gap-1.5 text-ember">
+        {icon}
+        <span className="text-[11px] uppercase tracking-[0.14em] text-off-white/70">{label}</span>
+      </div>
       <p className="mt-1 text-sm font-medium text-off-white">{value}</p>
     </div>
   );
 }
 
 /* =========================================================
-   BEFORE YOU GO
+   AFFILIATE NOTE (rendered inline inside Top Stays — nothing
+   stands between the Hero stat strip and the first offer block)
 ========================================================= */
+function AffiliateNote() {
+  return (
+    <p className="text-xs text-muted-foreground">
+      Minialife may earn a commission when you book or purchase through links below, at no extra
+      cost to you.{" "}
+      <Link to="/affiliate-disclosure" className="underline underline-offset-2 hover:text-copper">
+        Learn more
+      </Link>
+    </p>
+  );
+}
+
 const SERVICE_META: Record<string, { icon: ReactNode; sub: string; cta: string }> = {
-  insurance: { icon: <ShieldCheck className="h-6 w-6" />, sub: "Stay protected", cta: "Compare plans" },
+  insurance: {
+    icon: <ShieldCheck className="h-6 w-6" />,
+    sub: "Stay protected",
+    cta: "Compare plans",
+  },
   esim: { icon: <Wifi className="h-6 w-6" />, sub: "Stay connected", cta: "View plans" },
-  offline_maps: { icon: <Map className="h-6 w-6" />, sub: "Download & explore", cta: "View options" },
-  car_rental: { icon: <Navigation className="h-6 w-6" />, sub: "Explore beyond", cta: "Compare cars" },
-  travel_card: { icon: <CreditCard className="h-6 w-6" />, sub: "No foreign fees", cta: "Learn more" },
-  park_pass: { icon: <Trees className="h-6 w-6" />, sub: "America the Beautiful", cta: "Official NPS page" },
+  offline_maps: {
+    icon: <Map className="h-6 w-6" />,
+    sub: "Download & explore",
+    cta: "View options",
+  },
+  car_rental: {
+    icon: <Navigation className="h-6 w-6" />,
+    sub: "Explore beyond",
+    cta: "Compare cars",
+  },
+  travel_card: {
+    icon: <CreditCard className="h-6 w-6" />,
+    sub: "No foreign fees",
+    cta: "Learn more",
+  },
+  park_pass: {
+    icon: <Trees className="h-6 w-6" />,
+    sub: "America the Beautiful",
+    cta: "Official NPS page",
+  },
 };
 
-function BeforeYouGo({ services }: { services: OfferView[] }) {
-  if (services.length === 0) return null;
-  return (
-    <SectionCard
-      title="Before you go"
-      eyebrow="Everything you need for a smooth trip."
-    >
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-        {services.map((s) => {
-          const meta = SERVICE_META[s.category] ?? {
-            icon: <Shield className="h-6 w-6" />,
-            sub: "",
-            cta: "Learn more",
-          };
-          return (
-            <a
-              key={s.id}
-              href={s.externalUrl ?? "#"}
-              target={s.externalUrl ? "_blank" : undefined}
-              rel={s.externalUrl ? "noopener noreferrer sponsored" : undefined}
-              title={s.whyRecommended ?? undefined}
-              className="group flex flex-col gap-2 rounded-xl border border-border bg-beige/40 p-4 transition hover:border-forest/40 hover:bg-beige"
-            >
-              <div className="text-forest">{meta.icon}</div>
-              <p className="text-sm font-semibold text-foreground">{s.title}</p>
-              <p className="text-xs text-muted-foreground">{s.priceDisplay ?? meta.sub}</p>
-              {!s.commissionable && (
-                <span className="w-fit rounded-full border border-border px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
-                  Official link
-                </span>
-              )}
-              <p className="mt-auto text-xs font-medium text-forest group-hover:underline">
-                {meta.cta}
-              </p>
-            </a>
-          );
-        })}
+// Commissionable services (insurance, esim, car rental, travel card, ...) route
+// through the same tracked-redirect flow as every other offer on the page.
+// Non-commissionable ones (Park Pass -> official NPS page) link straight
+// through untracked, since there's no affiliate relationship to attribute.
+function ServiceCard({
+  service,
+  destinationSlug,
+}: {
+  service: OfferView;
+  destinationSlug: string;
+}) {
+  const meta = SERVICE_META[service.category] ?? {
+    icon: <Shield className="h-6 w-6" />,
+    sub: "",
+    cta: "Learn more",
+  };
+  const { handleClick, pending } = useTrackedRedirect(service, destinationSlug);
+  const cardClass =
+    "group flex flex-col gap-2 rounded-xl border border-border bg-beige/40 p-4 transition hover:border-copper/40 hover:bg-beige";
+
+  if (!service.externalUrl) {
+    return (
+      <div
+        title="Coming soon"
+        className="flex cursor-not-allowed flex-col gap-2 rounded-xl border border-border bg-beige/20 p-4 opacity-60"
+      >
+        <div className="text-foreground/70">{meta.icon}</div>
+        <p className="text-sm font-semibold text-foreground">{service.title}</p>
+        <p className="text-xs text-muted-foreground">{meta.sub}</p>
+        <p className="mt-auto text-xs font-medium text-muted-foreground">Coming soon</p>
       </div>
-    </SectionCard>
+    );
+  }
+
+  if (!service.commissionable) {
+    return (
+      <a href={service.externalUrl} target="_blank" rel="noopener noreferrer" className={cardClass}>
+        <div className="text-foreground/70">{meta.icon}</div>
+        <p className="text-sm font-semibold text-foreground">{service.title}</p>
+        <p className="text-xs text-muted-foreground">{meta.sub}</p>
+        <span className="w-fit rounded-full border border-border px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
+          Official link
+        </span>
+        <p className="mt-auto text-xs font-medium text-copper group-hover:underline">{meta.cta}</p>
+      </a>
+    );
+  }
+
+  return (
+    <a
+      href={service.externalUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={handleClick}
+      aria-disabled={pending}
+      className={`${cardClass} ${pending ? "pointer-events-none opacity-70" : ""}`}
+    >
+      <div className="text-foreground/70">{meta.icon}</div>
+      <p className="text-sm font-semibold text-foreground">{service.title}</p>
+      <p className="text-xs text-muted-foreground">{service.priceDisplay ?? meta.sub}</p>
+      <p className="mt-auto text-xs font-medium text-copper group-hover:underline">{meta.cta}</p>
+    </a>
   );
 }
 
@@ -266,7 +352,7 @@ function BeforeYouGo({ services }: { services: OfferView[] }) {
 function PriceTag({
   offer,
   fallbackUnit,
-  className = "text-sm font-semibold text-foreground",
+  className = "font-serif text-base font-semibold text-foreground",
 }: {
   offer: OfferView;
   fallbackUnit: string;
@@ -285,43 +371,141 @@ function PriceTag({
   return <span className="text-xs font-normal text-muted-foreground">Price on request</span>;
 }
 
+// Neutral note + copper label, shared by Stays/Rentals/Essentials cards so
+// the only accent color on any offer card is the CTA button itself.
+function WhyRecommendedNote({ text }: { text: string }) {
+  return (
+    <p className="mt-3 flex items-start gap-1.5 text-xs text-foreground/80">
+      <Sparkles className="mt-0.5 h-3 w-3 text-copper" />
+      <span>
+        <span className="font-semibold text-copper">Why we recommend it. </span>
+        {text}
+      </span>
+    </p>
+  );
+}
+
+// Shared by OfferCta and the "Before you go" service cards: opens a tab
+// synchronously (so popup blockers don't kill it while we await the
+// tracking round-trip), then points it at the tracked redirect URL, falling
+// back to the raw external URL if the tracking call fails.
+function useTrackedRedirect(offer: OfferView, destinationSlug: string) {
+  const track = useServerFn(trackAndRedirect);
+  const [pending, setPending] = useState(false);
+
+  const handleClick = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (pending || !offer.externalUrl) return;
+    const externalUrl = offer.externalUrl;
+    setPending(true);
+
+    const newTab = window.open("", "_blank");
+
+    try {
+      const { redirectUrl } = await track({
+        data: {
+          offerId: offer.id,
+          destinationSlug,
+          sessionId: getOrCreateSessionId(),
+          referrerPage: window.location.pathname,
+        },
+      });
+      if (newTab) newTab.location.href = redirectUrl;
+    } catch (err) {
+      console.error("[useTrackedRedirect] trackAndRedirect failed", err);
+      if (newTab) newTab.location.href = externalUrl;
+    } finally {
+      setPending(false);
+    }
+  };
+
+  return { handleClick, pending };
+}
+
+// Copper is reserved exclusively for this button across the whole page —
+// every other accent on an offer card (badges, ratings, tabs) stays neutral
+// ink so the CTA is the only thing competing for the eye.
 function OfferCta({
   offer,
   label,
   size = "md",
+  destinationSlug,
 }: {
   offer: OfferView;
   label: string;
   size?: "sm" | "md";
+  destinationSlug: string;
 }) {
   const padding = size === "sm" ? "px-3 py-1" : "px-3 py-1.5";
-  if (offer.externalUrl) {
+  const { handleClick, pending } = useTrackedRedirect(offer, destinationSlug);
+
+  if (!offer.externalUrl) {
     return (
-      <a
-        href={offer.externalUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`rounded-md bg-forest ${padding} text-xs font-semibold text-off-white hover:bg-forest/90`}
+      <button
+        type="button"
+        disabled
+        title="Coming soon"
+        className={`cursor-not-allowed rounded-md border border-border bg-muted ${padding} text-xs font-semibold text-muted-foreground/70`}
       >
-        {label}
-      </a>
+        Coming soon
+      </button>
     );
   }
+
   return (
-    <button
-      type="button"
-      disabled
-      title="Coming soon"
-      className={`cursor-not-allowed rounded-md border border-border bg-muted ${padding} text-xs font-semibold text-muted-foreground/70`}
+    <a
+      href={offer.externalUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={handleClick}
+      aria-disabled={pending}
+      className={`rounded-md bg-copper ${padding} text-xs font-semibold text-off-white hover:bg-copper/90 ${pending ? "pointer-events-none opacity-70" : ""}`}
     >
-      Coming soon
-    </button>
+      {label}
+    </a>
   );
 }
 
 /* =========================================================
-   TOP STAYS
+   "BEST FOR" — derived from an offer's own subcategory, no
+   schema change required.
 ========================================================= */
+const BEST_FOR_BY_SUBCATEGORY: Record<string, string> = {
+  campground: "families, easy in/out access",
+  glamping: "comfort seekers, low-effort camping",
+  cabin: "privacy, colder-weather trips",
+  "rv park": "RV travelers, full hookups",
+  rv_park: "RV travelers, full hookups",
+  hotel: "no-fuss stays, walkable amenities",
+  lodge: "groups, on-site amenities",
+};
+
+function bestForLine(offer: OfferView): string {
+  const key = offer.subcategory?.trim().toLowerCase();
+  if (key && BEST_FOR_BY_SUBCATEGORY[key]) return BEST_FOR_BY_SUBCATEGORY[key];
+  return "most travelers, easy booking";
+}
+
+/* =========================================================
+   TOP STAYS + STICKY BUDGET RAIL
+========================================================= */
+function StaysWithBudget({
+  dest,
+  ai,
+  loading,
+}: {
+  dest: DestinationView;
+  ai?: EnrichResult;
+  loading: boolean;
+}) {
+  return (
+    <div className="grid gap-6 lg:grid-cols-[1fr_320px]">
+      <TopStays dest={dest} />
+      <BudgetCard ai={ai} loading={loading} />
+    </div>
+  );
+}
+
 function TopStays({ dest }: { dest: DestinationView }) {
   const cats = useMemo(
     () =>
@@ -332,7 +516,11 @@ function TopStays({ dest }: { dest: DestinationView }) {
   );
   const [tab, setTab] = useState<string>("All");
   const filtered = tab === "All" ? dest.stays : dest.stays.filter((s) => s.subcategory === tab);
-  const aiPicks = ["AI Pick · Best Overall", "AI Pick · Best Glamping", "AI Pick · Best Cabin", "AI Pick · Best RV"];
+
+  const showPick = tab === "All" && filtered.length > 0;
+  const pick = showPick ? filtered[0] : null;
+  const rest = showPick ? filtered.slice(1, 4) : filtered.slice(0, 4);
+  const aiPicks = ["AI Pick · Best Glamping", "AI Pick · Best Cabin", "AI Pick · Best RV"];
 
   return (
     <SectionCard
@@ -347,7 +535,7 @@ function TopStays({ dest }: { dest: DestinationView }) {
               className={
                 "rounded-full px-3 py-1.5 text-xs transition " +
                 (tab === c
-                  ? "bg-forest text-off-white"
+                  ? "bg-ink text-off-white"
                   : "border border-border bg-background text-foreground/70 hover:bg-muted")
               }
             >
@@ -360,140 +548,112 @@ function TopStays({ dest }: { dest: DestinationView }) {
         </div>
       }
     >
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {filtered.slice(0, 4).map((s, i) => (
-          <article
-            key={s.id}
-            className="group flex flex-col overflow-hidden rounded-xl border border-border bg-card"
-          >
-            <div className="relative aspect-[4/3] overflow-hidden">
-              <img
-                src={s.image ?? ""}
-                alt={s.title}
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <span className="absolute left-3 top-3 rounded-sm bg-ink/80 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-off-white">
-                {aiPicks[i] ?? "AI Pick"}
-              </span>
-              <button
-                aria-label="Save"
-                className="absolute right-3 top-3 grid h-8 w-8 place-items-center rounded-full bg-off-white/90 text-forest hover:bg-off-white"
-              >
-                <Heart className="h-4 w-4" />
-              </button>
-            </div>
-            <div className="flex flex-1 flex-col p-4">
-              <h3 className="font-display text-base text-foreground">{s.title}</h3>
-              <p className="mt-1 text-xs text-muted-foreground">{s.description}</p>
-              {s.whyRecommended && (
-                <p className="mt-3 flex items-start gap-1.5 text-xs text-foreground/80">
-                  <Sparkles className="mt-0.5 h-3 w-3 text-ember" />
-                  <span><span className="font-semibold text-forest">Why we recommend it. </span>{s.whyRecommended}</span>
-                </p>
-              )}
-              <div className="mt-4 flex items-center justify-between border-t border-border pt-3">
-                <PriceTag offer={s} fallbackUnit="night" />
-                <OfferCta offer={s} label="Check availability" size="md" />
-              </div>
-            </div>
-          </article>
-        ))}
-      </div>
-    </SectionCard>
-  );
-}
+      <AffiliateNote />
 
-/* =========================================================
-   RENTALS
-========================================================= */
-function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
-  return (
-    <SectionCard
-      title="Rent Before You Go"
-      eyebrow="The right gear and ride for the right adventure."
-      right={<Button size="sm" variant="outline">View all rentals</Button>}
-    >
-      <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-        {dest.rentals.slice(0, 5).map((r) => (
-          <article
-            key={r.id}
-            className="group flex flex-col overflow-hidden rounded-xl border border-border bg-card"
-          >
-            <div className="relative aspect-[4/3] overflow-hidden">
-              <img
-                src={r.image ?? ""}
-                alt={r.title}
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <button
-                aria-label="Save"
-                className="absolute right-2 top-2 grid h-7 w-7 place-items-center rounded-full bg-off-white/90 text-forest hover:bg-off-white"
-              >
-                <Heart className="h-3.5 w-3.5" />
-              </button>
-            </div>
-            <div className="flex flex-1 flex-col p-4">
-              <h3 className="text-sm font-semibold text-foreground">{r.title}</h3>
-              <p className="mt-2 text-xs text-muted-foreground">{r.description}</p>
-              <div className="mt-4 flex items-center justify-between border-t border-border pt-3">
-                <PriceTag offer={r} fallbackUnit="day" className="text-xs font-semibold text-foreground" />
-                <OfferCta offer={r} label="Reserve" size="sm" />
-              </div>
-            </div>
-          </article>
-        ))}
-      </div>
-    </SectionCard>
-  );
-}
+      <div className="mt-5 space-y-5">
+        {pick && <EditorsPickCard offer={pick} destinationSlug={dest.slug} />}
 
-/* =========================================================
-   THINGS TO DO + BUDGET
-========================================================= */
-function ThingsToDoAndBudget({
-  dest,
-  ai,
-  loading,
-}: {
-  dest: DestinationView;
-  ai?: EnrichResult;
-  loading: boolean;
-}) {
-  return (
-    <div className="grid gap-6 lg:grid-cols-[1.7fr_1fr]">
-      <SectionCard
-        title="Things to Do"
-        eyebrow={`Unforgettable experiences in ${dest.name.split(" ")[0]}.`}
-        right={<Button size="sm" variant="outline">View all activities</Button>}
-      >
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {dest.activities.slice(0, 4).map((a) => (
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {rest.map((s, i) => (
             <article
-              key={a.id}
-              className="group overflow-hidden rounded-xl border border-border bg-card"
+              key={s.id}
+              className="group flex flex-col overflow-hidden rounded-xl border border-border bg-card"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img
-                  src={a.image ?? ""}
-                  alt={a.title}
+                  src={s.image ?? ""}
+                  alt={s.title}
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
+                <span className="absolute left-3 top-3 rounded-sm bg-ink/80 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-off-white">
+                  {aiPicks[i] ?? "AI Pick"}
+                </span>
+                <button
+                  aria-label="Save"
+                  className="absolute right-3 top-3 grid h-8 w-8 place-items-center rounded-full bg-off-white/90 text-foreground/70 hover:bg-off-white hover:text-foreground"
+                >
+                  <Heart className="h-4 w-4" />
+                </button>
               </div>
-              <div className="p-4">
-                <p className="text-[10px] uppercase tracking-wider text-sage-deep">{a.duration}</p>
-                <h3 className="mt-1 text-sm font-semibold text-foreground">{a.title}</h3>
-                <p className="mt-2 text-xs text-muted-foreground">{a.description}</p>
+              <div className="flex flex-1 flex-col p-4">
+                <h3 className="font-display text-base text-foreground">{s.title}</h3>
+                <p className="mt-1 text-xs text-muted-foreground">{s.description}</p>
+                {s.whyRecommended && <WhyRecommendedNote text={s.whyRecommended} />}
+                <div className="mt-4 flex items-center justify-between border-t border-border pt-3">
+                  <PriceTag offer={s} fallbackUnit="night" />
+                  <OfferCta
+                    offer={s}
+                    label="Check availability"
+                    size="md"
+                    destinationSlug={dest.slug}
+                  />
+                </div>
               </div>
             </article>
           ))}
         </div>
-      </SectionCard>
-
-      <BudgetCard ai={ai} loading={loading} />
-    </div>
+      </div>
+    </SectionCard>
   );
 }
 
+function EditorsPickCard({
+  offer,
+  destinationSlug,
+}: {
+  offer: OfferView;
+  destinationSlug: string;
+}) {
+  return (
+    <article className="group flex flex-col overflow-hidden rounded-xl border border-border bg-card md:flex-row">
+      <div className="relative aspect-[4/3] overflow-hidden md:aspect-auto md:w-2/5">
+        <img
+          src={offer.image ?? ""}
+          alt={offer.title}
+          className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+        />
+        <span className="absolute left-3 top-3 rounded-sm bg-ink/80 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-off-white">
+          Editor's Pick
+        </span>
+        <button
+          aria-label="Save"
+          className="absolute right-3 top-3 grid h-8 w-8 place-items-center rounded-full bg-off-white/90 text-foreground/70 hover:bg-off-white hover:text-foreground"
+        >
+          <Heart className="h-4 w-4" />
+        </button>
+      </div>
+      <div className="flex flex-1 flex-col justify-between p-5 md:p-6">
+        <div>
+          <h3 className="font-display text-xl text-foreground md:text-2xl">{offer.title}</h3>
+          <p className="mt-1.5 text-sm text-muted-foreground">{offer.description}</p>
+          <p className="mt-3 text-xs font-medium text-foreground/80">
+            Best for:{" "}
+            <span className="font-normal text-muted-foreground">{bestForLine(offer)}</span>
+          </p>
+          {offer.whyRecommended && <WhyRecommendedNote text={offer.whyRecommended} />}
+        </div>
+        <div className="mt-5 flex items-center justify-between border-t border-border pt-4">
+          <PriceTag
+            offer={offer}
+            fallbackUnit="night"
+            className="font-serif text-lg font-semibold text-foreground"
+          />
+          <OfferCta
+            offer={offer}
+            label="Check availability"
+            size="md"
+            destinationSlug={destinationSlug}
+          />
+        </div>
+      </div>
+    </article>
+  );
+}
+
+/* =========================================================
+   TRIP BUDGET — sticky rail (desktop) / collapsed bottom
+   bar + drawer (mobile), never inline with offer cards
+========================================================= */
 function BudgetCard({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
   const items = ai
     ? [
@@ -507,49 +667,115 @@ function BudgetCard({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
     : [];
   const total = items.reduce((s, i) => s + i.value, 0);
 
+  return (
+    <>
+      <aside className="hidden lg:block lg:sticky lg:top-24 lg:self-start">
+        <BudgetBreakdown items={items} total={total} loading={loading} ai={ai} />
+      </aside>
+
+      <div className="lg:hidden">
+        <Drawer>
+          <DrawerTrigger asChild>
+            <button
+              type="button"
+              className="fixed inset-x-0 bottom-0 z-40 flex items-center justify-between border-t border-border bg-card px-5 py-3 shadow-lift"
+            >
+              <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                Estimated trip budget
+              </span>
+              {loading || !ai ? (
+                <Skeleton className="h-6 w-20" />
+              ) : (
+                <span className="font-serif text-lg font-semibold text-foreground">
+                  ${total.toLocaleString()}
+                </span>
+              )}
+            </button>
+          </DrawerTrigger>
+          <DrawerContent>
+            <DrawerHeader>
+              <DrawerTitle>Trip Budget</DrawerTitle>
+              <DrawerDescription>4-day trip · 2 travelers</DrawerDescription>
+            </DrawerHeader>
+            <div className="px-4 pb-8">
+              <BudgetBreakdown items={items} total={total} loading={loading} ai={ai} bare />
+            </div>
+          </DrawerContent>
+        </Drawer>
+      </div>
+    </>
+  );
+}
+
+function BudgetBreakdown({
+  items,
+  total,
+  loading,
+  ai,
+  bare = false,
+}: {
+  items: { label: string; value: number; color: string }[];
+  total: number;
+  loading: boolean;
+  ai?: EnrichResult;
+  bare?: boolean;
+}) {
   // donut math
   let cumulative = 0;
   const radius = 42;
   const circ = 2 * Math.PI * radius;
 
   return (
-    <section className="rounded-2xl border border-border bg-card p-6 shadow-soft">
-      <div className="flex items-start justify-between">
-        <div>
-          <h2 className="font-display text-xl text-foreground">Trip Budget</h2>
-          <p className="text-xs text-muted-foreground">4-day trip · 2 travelers</p>
+    <div className={bare ? "" : "rounded-2xl border border-border bg-card p-6 shadow-soft"}>
+      {!bare && (
+        <div className="flex items-start justify-between">
+          <div>
+            <h2 className="font-display text-xl text-foreground">Trip Budget</h2>
+            <p className="text-xs text-muted-foreground">4-day trip · 2 travelers</p>
+          </div>
+          {!loading && total > 0 && (
+            <svg viewBox="0 0 100 100" className="h-20 w-20 -rotate-90">
+              <circle
+                cx="50"
+                cy="50"
+                r={radius}
+                fill="none"
+                stroke="var(--color-beige)"
+                strokeWidth="14"
+              />
+              {items.map((it) => {
+                const frac = it.value / total;
+                const dash = frac * circ;
+                const el = (
+                  <circle
+                    key={it.label}
+                    cx="50"
+                    cy="50"
+                    r={radius}
+                    fill="none"
+                    stroke={it.color}
+                    strokeWidth="14"
+                    strokeDasharray={`${dash} ${circ - dash}`}
+                    strokeDashoffset={-cumulative}
+                  />
+                );
+                cumulative += dash;
+                return el;
+              })}
+            </svg>
+          )}
         </div>
-        {!loading && total > 0 && (
-          <svg viewBox="0 0 100 100" className="h-20 w-20 -rotate-90">
-            <circle cx="50" cy="50" r={radius} fill="none" stroke="var(--color-beige)" strokeWidth="14" />
-            {items.map((it) => {
-              const frac = it.value / total;
-              const dash = frac * circ;
-              const el = (
-                <circle
-                  key={it.label}
-                  cx="50"
-                  cy="50"
-                  r={radius}
-                  fill="none"
-                  stroke={it.color}
-                  strokeWidth="14"
-                  strokeDasharray={`${dash} ${circ - dash}`}
-                  strokeDashoffset={-cumulative}
-                />
-              );
-              cumulative += dash;
-              return el;
-            })}
-          </svg>
-        )}
-      </div>
+      )}
 
-      <p className="mt-5 text-xs uppercase tracking-wider text-muted-foreground">Estimated total</p>
+      <p className={`text-xs uppercase tracking-wider text-muted-foreground ${bare ? "" : "mt-5"}`}>
+        Estimated total
+      </p>
       {loading || !ai ? (
         <Skeleton className="mt-1 h-9 w-32" />
       ) : (
-        <p className="font-display text-3xl text-foreground">${total.toLocaleString()}</p>
+        <p className="font-serif text-3xl font-semibold text-foreground">
+          ${total.toLocaleString()}
+        </p>
       )}
 
       <ul className="mt-5 space-y-2.5 text-sm">
@@ -574,101 +800,158 @@ function BudgetCard({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
       <button className="mt-4 w-full rounded-md border border-border py-2 text-xs font-semibold text-foreground hover:bg-muted">
         Adjust budget
       </button>
-    </section>
+    </div>
   );
 }
 
 /* =========================================================
-   ROAD TRIP INFO
+   RENTALS
 ========================================================= */
-function RoadTripInfo({ dest }: { dest: DestinationView }) {
-  const stops = [
-    { name: "The Groveland Hotel", sub: "Coffee & pastries · Groveland, CA", img: dest.stays[0]?.image ?? dest.heroImage },
-    { name: "Hetch Hetchy View", sub: "Scenic viewpoint · CA-120", img: dest.activities[1]?.image ?? dest.heroImage },
-    { name: "Tuolumne Gas & Mart", sub: "Fuel stop · Groveland, CA", img: dest.rentals[0]?.image ?? dest.heroImage },
-    { name: "The Red Apple Grill", sub: "Great burgers · Groveland, CA", img: dest.stays[2]?.image ?? dest.heroImage },
-  ];
+function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
   return (
-    <section className="rounded-2xl border border-border bg-card p-6 shadow-soft">
-      <div className="grid gap-6 lg:grid-cols-[1fr_2.2fr]">
-        <div>
-          <h2 className="font-display text-xl text-foreground">Road Trip Info</h2>
-          <p className="mt-4 flex items-center gap-2 text-sm font-medium text-foreground">
-            <MapPin className="h-4 w-4 text-forest" /> San Francisco → {dest.name.split(" ")[0]}
-          </p>
-          <p className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
-            <Calendar className="h-3.5 w-3.5" /> 4h 15m
-            <span className="mx-2 h-1 w-1 rounded-full bg-muted-foreground/40" />
-            <Navigation className="h-3.5 w-3.5" /> 189 miles
-          </p>
-          <p className="mt-3 text-xs text-muted-foreground">Best route: CA-120 E</p>
-          <Button variant="outline" size="sm" className="mt-5">View full route</Button>
-        </div>
-        <div>
-          <p className="text-sm font-semibold text-foreground">Top Stops Along the Way</p>
-          <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {stops.map((s) => (
-              <article key={s.name} className="overflow-hidden rounded-xl border border-border">
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <img src={s.img} alt={s.name} className="absolute inset-0 h-full w-full object-cover" />
-                </div>
-                <div className="p-3">
-                  <p className="text-xs font-semibold text-foreground">{s.name}</p>
-                  <p className="mt-0.5 text-[11px] text-muted-foreground">{s.sub}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* =========================================================
-   DESTINATION INSIGHTS
-========================================================= */
-function DestinationInsights({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
-  const rows: { icon: ReactNode; label: string; key: keyof EnrichResult["insights"] }[] = [
-    { icon: <Sun className="h-4 w-4" />, label: "Weather", key: "weather" },
-    { icon: <Users className="h-4 w-4" />, label: "Crowd levels", key: "crowdLevels" },
-    { icon: <PawPrint className="h-4 w-4" />, label: "Wildlife", key: "wildlife" },
-    { icon: <Signal className="h-4 w-4" />, label: "Cell coverage", key: "cellCoverage" },
-    { icon: <Shield className="h-4 w-4" />, label: "Safety", key: "safety" },
-    { icon: <Heart className="h-4 w-4" />, label: "Family friendly", key: "familyFriendly" },
-    { icon: <PawPrint className="h-4 w-4" />, label: "Pet friendly", key: "petFriendly" },
-  ];
-  return (
-    <section className="rounded-2xl border border-border bg-gradient-to-b from-card to-beige/60 p-6 shadow-soft">
-      <div className="grid gap-6 lg:grid-cols-[1fr_3fr] lg:items-start">
-        <div>
-          <h2 className="font-display text-xl text-foreground">Destination Insights</h2>
-          <p className="mt-2 text-xs text-muted-foreground">Everything you should know before you go.</p>
-        </div>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7">
-          {rows.map((r) => (
-            <div key={r.label} className="rounded-xl border border-border bg-card/80 p-3">
-              <div className="flex items-center gap-1.5 text-forest">
-                {r.icon}
-                <span className="text-[11px] font-semibold uppercase tracking-wide">{r.label}</span>
-              </div>
-              {loading || !ai ? (
-                <Skeleton className="mt-2 h-3 w-full" />
-              ) : (
-                <p className="mt-1.5 text-[11px] text-foreground/80 line-clamp-3">{ai.insights[r.key]}</p>
-              )}
+    <SectionCard
+      title="Rent Before You Go"
+      eyebrow="The right gear and ride for the right adventure."
+      right={
+        <Button size="sm" variant="outline">
+          View all rentals
+        </Button>
+      }
+    >
+      <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+        {dest.rentals.slice(0, 5).map((r) => (
+          <article
+            key={r.id}
+            className="group flex flex-col overflow-hidden rounded-xl border border-border bg-card"
+          >
+            <div className="relative aspect-[4/3] overflow-hidden">
+              <img
+                src={r.image ?? ""}
+                alt={r.title}
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <button
+                aria-label="Save"
+                className="absolute right-2 top-2 grid h-7 w-7 place-items-center rounded-full bg-off-white/90 text-foreground/70 hover:bg-off-white hover:text-foreground"
+              >
+                <Heart className="h-3.5 w-3.5" />
+              </button>
             </div>
-          ))}
-        </div>
+            <div className="flex flex-1 flex-col p-4">
+              <h3 className="text-sm font-semibold text-foreground">{r.title}</h3>
+              <p className="mt-2 text-xs text-muted-foreground">{r.description}</p>
+              {r.whyRecommended && <WhyRecommendedNote text={r.whyRecommended} />}
+              <div className="mt-4 flex items-center justify-between border-t border-border pt-3">
+                <PriceTag
+                  offer={r}
+                  fallbackUnit="day"
+                  className="font-serif text-sm font-semibold text-foreground"
+                />
+                <OfferCta offer={r} label="Reserve" size="sm" destinationSlug={dest.slug} />
+              </div>
+            </div>
+          </article>
+        ))}
       </div>
-    </section>
+    </SectionCard>
   );
 }
 
 /* =========================================================
-   PACKING + SEASONAL + ESSENTIALS
+   THINGS TO DO
 ========================================================= */
-function PackingSeasonalEssentials({
+function ThingsToDo({ dest }: { dest: DestinationView }) {
+  return (
+    <SectionCard
+      title="Things to Do"
+      eyebrow={`Unforgettable experiences in ${dest.name.split(" ")[0]}.`}
+      right={
+        <Button size="sm" variant="outline">
+          View all activities
+        </Button>
+      }
+    >
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {dest.activities.slice(0, 4).map((a) => (
+          <article
+            key={a.id}
+            className="group overflow-hidden rounded-xl border border-border bg-card"
+          >
+            <div className="relative aspect-[4/3] overflow-hidden">
+              <img
+                src={a.image ?? ""}
+                alt={a.title}
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </div>
+            <div className="p-4">
+              <p className="text-[10px] uppercase tracking-wider text-sage-deep">{a.duration}</p>
+              <h3 className="mt-1 text-sm font-semibold text-foreground">{a.title}</h3>
+              <p className="mt-2 text-xs text-muted-foreground">{a.description}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </SectionCard>
+  );
+}
+
+/* =========================================================
+   ESSENTIALS — full-width, photo-forward strip (same visual
+   weight as Stays/Rentals, not a buried 3-column tool row)
+========================================================= */
+function EssentialsStrip({ dest }: { dest: DestinationView }) {
+  return (
+    <SectionCard
+      title="Essentials"
+      eyebrow="Gear worth packing before you leave."
+      right={
+        <Button size="sm" variant="outline">
+          View all gear
+        </Button>
+      }
+    >
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {dest.essentials.slice(0, 4).map((e) => (
+          <article
+            key={e.id}
+            className="group flex flex-col overflow-hidden rounded-xl border border-border bg-card"
+          >
+            <div className="relative aspect-[4/3] overflow-hidden">
+              <img
+                src={e.image ?? ""}
+                alt={e.title}
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </div>
+            <div className="flex flex-1 flex-col p-4">
+              <h3 className="text-sm font-semibold text-foreground">{e.title}</h3>
+              <p className="mt-2 text-xs text-muted-foreground">{e.description}</p>
+              {e.whyRecommended && <WhyRecommendedNote text={e.whyRecommended} />}
+              <div className="mt-4 flex items-center justify-between border-t border-border pt-3">
+                <PriceTag
+                  offer={e}
+                  fallbackUnit="item"
+                  className="font-serif text-sm font-semibold text-foreground"
+                />
+                <OfferCta offer={e} label="Buy" size="sm" destinationSlug={dest.slug} />
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </SectionCard>
+  );
+}
+
+/* =========================================================
+   TRIP TOOLKIT — Packing / Seasonal / Road Trip / Before You
+   Go, consolidated into one block, always after every offer
+   section.
+========================================================= */
+type ToolkitTab = "packing" | "seasonal" | "road" | "before";
+
+function Toolkit({
   dest,
   ai,
   loading,
@@ -677,16 +960,49 @@ function PackingSeasonalEssentials({
   ai?: EnrichResult;
   loading: boolean;
 }) {
+  const tabs: { key: ToolkitTab; label: string }[] = [
+    { key: "packing", label: "Packing Checklist" },
+    { key: "seasonal", label: "Seasonal Guide" },
+    { key: "road", label: "Road Trip Info" },
+    { key: "before", label: "Before You Go" },
+  ];
+  const [tab, setTab] = useState<ToolkitTab>("packing");
+
   return (
-    <div className="grid gap-6 lg:grid-cols-3">
-      <PackingChecklist dest={dest.name} ai={ai} loading={loading} />
-      <SeasonalGuide />
-      <EssentialsList dest={dest} />
-    </div>
+    <section className="rounded-2xl border border-border bg-card p-6 shadow-soft">
+      <div>
+        <h2 className="font-display text-xl text-foreground">Trip Toolkit</h2>
+        <p className="mt-1 text-xs text-muted-foreground">
+          Pack right, time it right, and get there — everything else for planning this trip.
+        </p>
+      </div>
+
+      <div className="mt-5 flex flex-wrap gap-1.5 border-b border-border pb-5">
+        {tabs.map((t) => (
+          <button
+            key={t.key}
+            onClick={() => setTab(t.key)}
+            className={
+              "rounded-md px-3 py-1.5 text-xs font-medium transition " +
+              (tab === t.key ? "bg-ink text-off-white" : "text-foreground/70 hover:bg-muted")
+            }
+          >
+            {t.label}
+          </button>
+        ))}
+      </div>
+
+      <div className="mt-5">
+        {tab === "packing" && <PackingPanel dest={dest.name} ai={ai} loading={loading} />}
+        {tab === "seasonal" && <SeasonalPanel />}
+        {tab === "road" && <RoadTripPanel dest={dest} />}
+        {tab === "before" && <BeforeYouGoPanel dest={dest} />}
+      </div>
+    </section>
   );
 }
 
-function PackingChecklist({
+function PackingPanel({
   dest,
   ai,
   loading,
@@ -726,18 +1042,15 @@ function PackingChecklist({
   const mid = Math.ceil(items.length / 2);
 
   return (
-    <section className="rounded-2xl border border-border bg-card p-6 shadow-soft">
+    <div>
       <div className="flex items-start justify-between gap-3">
-        <div>
-          <h2 className="font-display text-xl text-foreground">Packing Checklist</h2>
-          <p className="text-xs text-muted-foreground">Bring exactly what you'll use.</p>
-        </div>
+        <p className="text-xs text-muted-foreground">Bring exactly what you'll use.</p>
         <Button variant="outline" size="sm" onClick={download} disabled={!ai}>
           <Download className="h-3.5 w-3.5" /> Download full list
         </Button>
       </div>
 
-      <div className="mt-5 flex flex-wrap gap-1.5">
+      <div className="mt-4 flex flex-wrap gap-1.5">
         {groups.map((g) => (
           <button
             key={g}
@@ -745,7 +1058,7 @@ function PackingChecklist({
             className={
               "rounded-md px-3 py-1.5 text-xs capitalize transition " +
               (tab === g
-                ? "bg-forest text-off-white"
+                ? "bg-ink text-off-white"
                 : "bg-beige text-foreground/70 hover:bg-beige/70")
             }
           >
@@ -756,7 +1069,9 @@ function PackingChecklist({
 
       {loading || !ai ? (
         <div className="mt-5 space-y-2">
-          {[0, 1, 2, 3, 4].map((i) => <Skeleton key={i} className="h-4 w-full" />)}
+          {[0, 1, 2, 3, 4].map((i) => (
+            <Skeleton key={i} className="h-4 w-full" />
+          ))}
         </div>
       ) : (
         <div className="mt-5 grid grid-cols-1 gap-x-6 sm:grid-cols-2">
@@ -765,7 +1080,7 @@ function PackingChecklist({
               {col.map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm text-foreground/90">
                   <span className="mt-0.5 grid h-4 w-4 shrink-0 place-items-center rounded-sm border border-border bg-beige/60">
-                    {ci === 0 && <CheckCircle2 className="h-3 w-3 text-forest" />}
+                    {ci === 0 && <CheckCircle2 className="h-3 w-3 text-copper" />}
                   </span>
                   {item}
                 </li>
@@ -777,18 +1092,18 @@ function PackingChecklist({
 
       <div className="mt-6 rounded-xl bg-beige/60 p-4">
         <p className="flex items-start gap-2 text-xs text-foreground/80">
-          <Sparkles className="mt-0.5 h-3.5 w-3.5 text-ember" />
+          <Sparkles className="mt-0.5 h-3.5 w-3.5 text-copper" />
           <span>
-            <span className="font-semibold text-forest">Tip from AI. </span>
+            <span className="font-semibold text-copper">Tip from AI. </span>
             Even in summer, nights can drop below 40°F in the high country. Pack layers.
           </span>
         </p>
       </div>
-    </section>
+    </div>
   );
 }
 
-function SeasonalGuide() {
+function SeasonalPanel() {
   const seasons = [
     { name: "Spring (May – Jun)", note: "Great waterfalls, cool temps", rating: 5 },
     { name: "Summer (Jul – Aug)", note: "Warm days, busy trails", rating: 5 },
@@ -802,44 +1117,49 @@ function SeasonalGuide() {
     { type: "RV Park", cost: "$$", comfort: 4, nature: 3 },
   ];
   return (
-    <section className="rounded-2xl border border-border bg-card p-6 shadow-soft">
-      <h2 className="font-display text-xl text-foreground">Seasonal Guide</h2>
-      <p className="text-xs text-muted-foreground">Which season is right for you?</p>
-
-      <ul className="mt-5 space-y-3">
-        {seasons.map((s) => (
-          <li key={s.name} className="rounded-lg border border-border p-3">
-            <div className="flex items-center justify-between">
-              <p className="text-sm font-semibold text-foreground">{s.name}</p>
-              <Stars n={s.rating} />
-            </div>
-            <p className="mt-1 text-xs text-muted-foreground">{s.note}</p>
-          </li>
-        ))}
-      </ul>
-
-      <h3 className="mt-6 text-sm font-semibold text-foreground">Compare Stay Types</h3>
-      <table className="mt-3 w-full text-xs">
-        <thead>
-          <tr className="border-b border-border text-left text-muted-foreground">
-            <th className="py-2 font-normal">Type</th>
-            <th className="py-2 font-normal">Cost</th>
-            <th className="py-2 font-normal">Comfort</th>
-            <th className="py-2 font-normal">Nature</th>
-          </tr>
-        </thead>
-        <tbody>
-          {types.map((t) => (
-            <tr key={t.type} className="border-b border-border/60 last:border-0">
-              <td className="py-2 font-medium text-foreground">{t.type}</td>
-              <td className="py-2 text-foreground/70">{t.cost}</td>
-              <td className="py-2"><Stars n={t.comfort} size={3} /></td>
-              <td className="py-2"><Stars n={t.nature} size={3} /></td>
-            </tr>
+    <div className="grid gap-6 lg:grid-cols-2">
+      <div>
+        <p className="text-xs text-muted-foreground">Which season is right for you?</p>
+        <ul className="mt-4 space-y-3">
+          {seasons.map((s) => (
+            <li key={s.name} className="rounded-lg border border-border p-3">
+              <div className="flex items-center justify-between">
+                <p className="text-sm font-semibold text-foreground">{s.name}</p>
+                <Stars n={s.rating} />
+              </div>
+              <p className="mt-1 text-xs text-muted-foreground">{s.note}</p>
+            </li>
           ))}
-        </tbody>
-      </table>
-    </section>
+        </ul>
+      </div>
+      <div>
+        <h3 className="text-sm font-semibold text-foreground">Compare Stay Types</h3>
+        <table className="mt-3 w-full text-xs">
+          <thead>
+            <tr className="border-b border-border text-left text-muted-foreground">
+              <th className="py-2 font-normal">Type</th>
+              <th className="py-2 font-normal">Cost</th>
+              <th className="py-2 font-normal">Comfort</th>
+              <th className="py-2 font-normal">Nature</th>
+            </tr>
+          </thead>
+          <tbody>
+            {types.map((t) => (
+              <tr key={t.type} className="border-b border-border/60 last:border-0">
+                <td className="py-2 font-medium text-foreground">{t.type}</td>
+                <td className="py-2 text-foreground/70">{t.cost}</td>
+                <td className="py-2">
+                  <Stars n={t.comfort} size={3} />
+                </td>
+                <td className="py-2">
+                  <Stars n={t.nature} size={3} />
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
   );
 }
 
@@ -857,30 +1177,126 @@ function Stars({ n, size = 3.5 }: { n: number; size?: number }) {
   );
 }
 
-function EssentialsList({ dest }: { dest: DestinationView }) {
+function RoadTripPanel({ dest }: { dest: DestinationView }) {
+  const stops = [
+    {
+      name: "The Groveland Hotel",
+      sub: "Coffee & pastries · Groveland, CA",
+      img: dest.stays[0]?.image ?? dest.heroImage,
+    },
+    {
+      name: "Hetch Hetchy View",
+      sub: "Scenic viewpoint · CA-120",
+      img: dest.activities[1]?.image ?? dest.heroImage,
+    },
+    {
+      name: "Tuolumne Gas & Mart",
+      sub: "Fuel stop · Groveland, CA",
+      img: dest.rentals[0]?.image ?? dest.heroImage,
+    },
+    {
+      name: "The Red Apple Grill",
+      sub: "Great burgers · Groveland, CA",
+      img: dest.stays[2]?.image ?? dest.heroImage,
+    },
+  ];
   return (
-    <section className="rounded-2xl border border-border bg-card p-6 shadow-soft">
-      <div className="flex items-start justify-between">
-        <div>
-          <h2 className="font-display text-xl text-foreground">Essentials</h2>
-          <p className="text-xs text-muted-foreground">Five things worth packing.</p>
-        </div>
-        <Button variant="outline" size="sm">View all gear</Button>
+    <div className="grid gap-6 lg:grid-cols-[1fr_2.2fr]">
+      <div>
+        <p className="flex items-center gap-2 text-sm font-medium text-foreground">
+          <MapPin className="h-4 w-4 text-copper" /> San Francisco → {dest.name.split(" ")[0]}
+        </p>
+        <p className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
+          <Calendar className="h-3.5 w-3.5" /> 4h 15m
+          <span className="mx-2 h-1 w-1 rounded-full bg-muted-foreground/40" />
+          <Navigation className="h-3.5 w-3.5" /> 189 miles
+        </p>
+        <p className="mt-3 text-xs text-muted-foreground">Best route: CA-120 E</p>
+        <Button variant="outline" size="sm" className="mt-5">
+          View full route
+        </Button>
       </div>
-      <ul className="mt-5 divide-y divide-border">
-        {dest.essentials.slice(0, 5).map((e) => (
-          <li key={e.id} className="flex items-center gap-4 py-3">
-            <div className="h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-beige">
-              <img src={e.image ?? ""} alt={e.title} className="h-full w-full object-cover" />
-            </div>
-            <div className="min-w-0 flex-1">
-              <p className="truncate text-sm font-semibold text-foreground">{e.title}</p>
-              <p className="truncate text-xs text-muted-foreground">{e.description}</p>
-            </div>
-            <PriceTag offer={e} fallbackUnit="item" />
-          </li>
+      <div>
+        <p className="text-sm font-semibold text-foreground">Top Stops Along the Way</p>
+        <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {stops.map((s) => (
+            <article key={s.name} className="overflow-hidden rounded-xl border border-border">
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <img
+                  src={s.img}
+                  alt={s.name}
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+              </div>
+              <div className="p-3">
+                <p className="text-xs font-semibold text-foreground">{s.name}</p>
+                <p className="mt-0.5 text-[11px] text-muted-foreground">{s.sub}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function BeforeYouGoPanel({ dest }: { dest: DestinationView }) {
+  const services = dest.globalServices;
+  if (services.length === 0) {
+    return <p className="text-sm text-muted-foreground">Nothing here yet — check back soon.</p>;
+  }
+  return (
+    <div>
+      <p className="text-xs text-muted-foreground">Everything you need for a smooth trip.</p>
+      <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+        {services.map((s) => (
+          <ServiceCard key={s.id} service={s} destinationSlug={dest.slug} />
         ))}
-      </ul>
+      </div>
+    </div>
+  );
+}
+
+/* =========================================================
+   DESTINATION INSIGHTS (planning-tool block — after all offers)
+========================================================= */
+function DestinationInsights({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
+  const rows: { icon: ReactNode; label: string; key: keyof EnrichResult["insights"] }[] = [
+    { icon: <Sun className="h-4 w-4" />, label: "Weather", key: "weather" },
+    { icon: <Users className="h-4 w-4" />, label: "Crowd levels", key: "crowdLevels" },
+    { icon: <PawPrint className="h-4 w-4" />, label: "Wildlife", key: "wildlife" },
+    { icon: <Signal className="h-4 w-4" />, label: "Cell coverage", key: "cellCoverage" },
+    { icon: <Shield className="h-4 w-4" />, label: "Safety", key: "safety" },
+    { icon: <Heart className="h-4 w-4" />, label: "Family friendly", key: "familyFriendly" },
+    { icon: <PawPrint className="h-4 w-4" />, label: "Pet friendly", key: "petFriendly" },
+  ];
+  return (
+    <section className="rounded-2xl border border-border bg-gradient-to-b from-card to-beige/60 p-6 shadow-soft">
+      <div className="grid gap-6 lg:grid-cols-[1fr_3fr] lg:items-start">
+        <div>
+          <h2 className="font-display text-xl text-foreground">Destination Insights</h2>
+          <p className="mt-2 text-xs text-muted-foreground">
+            Everything you should know before you go.
+          </p>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7">
+          {rows.map((r) => (
+            <div key={r.label} className="rounded-xl border border-border bg-card/80 p-3">
+              <div className="flex items-center gap-1.5 text-foreground/70">
+                {r.icon}
+                <span className="text-[11px] font-semibold uppercase tracking-wide">{r.label}</span>
+              </div>
+              {loading || !ai ? (
+                <Skeleton className="mt-2 h-3 w-full" />
+              ) : (
+                <p className="mt-1.5 text-[11px] text-foreground/80 line-clamp-3">
+                  {ai.insights[r.key]}
+                </p>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }
@@ -888,39 +1304,117 @@ function EssentialsList({ dest }: { dest: DestinationView }) {
 /* =========================================================
    SHARE + SIMILAR
 ========================================================= */
-function ShareAndSimilar({ dest }: { dest: DestinationView }) {
-  const similar = dest.similar.slice(0, 4);
+type SaveState = "idle" | "prompt" | "saving" | "saved" | "error";
+
+function SharePlanCard({ dest }: { dest: DestinationView }) {
+  const save = useServerFn(saveTripPlan);
+  const [state, setState] = useState<SaveState>("idle");
+  const [email, setEmail] = useState("");
+
+  const doSave = async (candidateEmail: string) => {
+    setState("saving");
+    try {
+      await save({ data: { email: candidateEmail, destinationSlug: dest.slug } });
+      setCapturedEmail(candidateEmail);
+      setState("saved");
+    } catch (err) {
+      console.error("[SharePlanCard] saveTripPlan failed", err);
+      setState("error");
+    }
+  };
+
+  const handleShareClick = () => {
+    const captured = getCapturedEmail();
+    if (captured) {
+      void doSave(captured);
+      return;
+    }
+    setState("prompt");
+  };
+
+  const handleEmailSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    void doSave(email.trim());
+  };
 
   return (
-    <div className="grid gap-6 lg:grid-cols-[1fr_2fr]">
-      <section className="rounded-2xl border border-border bg-card p-6 shadow-soft">
-        <h2 className="font-display text-xl text-foreground">Share Your Trip Plan</h2>
-        <p className="text-xs text-muted-foreground">Inspire others. Save your plan.</p>
-        <div className="mt-5 flex gap-4">
-          <div className="h-24 w-24 shrink-0 overflow-hidden rounded-xl">
-            <img src={dest.heroImage} alt={dest.name} className="h-full w-full object-cover" />
-          </div>
-          <div className="min-w-0">
-            <p className="text-sm font-semibold text-foreground">{dest.name.split(" ")[0]} Adventure</p>
-            <p className="mt-1 text-xs text-muted-foreground">4 Days · 2 Travelers</p>
-            <div className="mt-2 grid grid-cols-3 gap-2 text-[10px] text-muted-foreground">
-              <div>
-                <p className="uppercase tracking-wider">Budget</p>
-                <p className="text-foreground">$1,400</p>
-              </div>
-              <div>
-                <p className="uppercase tracking-wider">Stay</p>
-                <p className="truncate text-foreground">{dest.stays[0]?.title.split(" ").slice(0, 2).join(" ")}</p>
-              </div>
-              <div>
-                <p className="uppercase tracking-wider">Scenic</p>
-                <p className="text-foreground">{dest.scenicScore != null ? `${dest.scenicScore}/10` : "—"}</p>
-              </div>
+    <section className="rounded-2xl border border-border bg-card p-6 shadow-soft">
+      <h2 className="font-display text-xl text-foreground">Share Your Trip Plan</h2>
+      <p className="text-xs text-muted-foreground">Inspire others. Save your plan.</p>
+      <div className="mt-5 flex gap-4">
+        <div className="h-24 w-24 shrink-0 overflow-hidden rounded-xl">
+          <img src={dest.heroImage} alt={dest.name} className="h-full w-full object-cover" />
+        </div>
+        <div className="min-w-0">
+          <p className="text-sm font-semibold text-foreground">
+            {dest.name.split(" ")[0]} Adventure
+          </p>
+          <p className="mt-1 text-xs text-muted-foreground">4 Days · 2 Travelers</p>
+          <div className="mt-2 grid grid-cols-3 gap-2 text-[10px] text-muted-foreground">
+            <div>
+              <p className="uppercase tracking-wider">Budget</p>
+              <p className="text-foreground">$1,400</p>
+            </div>
+            <div>
+              <p className="uppercase tracking-wider">Stay</p>
+              <p className="truncate text-foreground">
+                {dest.stays[0]?.title.split(" ").slice(0, 2).join(" ")}
+              </p>
+            </div>
+            <div>
+              <p className="uppercase tracking-wider">Scenic</p>
+              <p className="text-foreground">
+                {dest.scenicScore != null ? `${dest.scenicScore}/10` : "—"}
+              </p>
             </div>
           </div>
         </div>
+      </div>
+
+      {state === "saved" ? (
+        <p className="mt-5 flex items-center gap-2 rounded-md bg-forest/10 px-4 py-2.5 text-xs font-semibold text-forest">
+          <CheckCircle2 className="h-4 w-4" /> Saved — we'll keep this plan tied to your email.
+        </p>
+      ) : state === "prompt" || state === "saving" || state === "error" ? (
+        <form onSubmit={handleEmailSubmit} className="mt-5">
+          <label
+            htmlFor={`share-plan-email-${dest.slug}`}
+            className="text-xs font-medium text-foreground"
+          >
+            Enter your email to save this trip plan
+          </label>
+          <div className="mt-2 flex gap-2">
+            <input
+              id={`share-plan-email-${dest.slug}`}
+              type="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="you@example.com"
+              disabled={state === "saving"}
+              className="min-w-0 flex-1 rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground disabled:opacity-60"
+            />
+            <button
+              type="submit"
+              disabled={state === "saving"}
+              className="shrink-0 rounded-md bg-forest px-4 py-2 text-xs font-semibold text-off-white hover:bg-forest/90 disabled:opacity-60"
+            >
+              {state === "saving" ? "Saving…" : "Save plan"}
+            </button>
+          </div>
+          {state === "error" && (
+            <p className="mt-2 text-xs text-destructive">
+              Something went wrong saving your plan. Please try again.
+            </p>
+          )}
+        </form>
+      ) : (
         <div className="mt-5 flex items-center justify-between">
-          <button className="rounded-md bg-forest px-4 py-2 text-xs font-semibold text-off-white hover:bg-forest/90">
+          <button
+            type="button"
+            onClick={handleShareClick}
+            className="rounded-md bg-forest px-4 py-2 text-xs font-semibold text-off-white hover:bg-forest/90"
+          >
             Share this plan
           </button>
           <div className="flex items-center gap-3 text-muted-foreground">
@@ -931,12 +1425,26 @@ function ShareAndSimilar({ dest }: { dest: DestinationView }) {
             <Mountain className="h-4 w-4" />
           </div>
         </div>
-      </section>
+      )}
+    </section>
+  );
+}
+
+function ShareAndSimilar({ dest }: { dest: DestinationView }) {
+  const similar = dest.similar.slice(0, 4);
+
+  return (
+    <div className="grid gap-6 lg:grid-cols-[1fr_2fr]">
+      <SharePlanCard dest={dest} />
 
       <SectionCard
         title="Similar Destinations"
         eyebrow="More places you'll love."
-        right={<Button size="sm" variant="outline">View all destinations</Button>}
+        right={
+          <Button size="sm" variant="outline">
+            View all destinations
+          </Button>
+        }
       >
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {similar.map((d) => (
@@ -955,7 +1463,9 @@ function ShareAndSimilar({ dest }: { dest: DestinationView }) {
               </div>
               <div className="flex items-center justify-between p-3">
                 <div className="min-w-0">
-                  <p className="truncate text-sm font-semibold text-foreground">{d.name.split(" ")[0]}</p>
+                  <p className="truncate text-sm font-semibold text-foreground">
+                    {d.name.split(" ")[0]}
+                  </p>
                   <p className="truncate text-[11px] text-muted-foreground">{d.region}</p>
                 </div>
                 <ArrowRight className="h-4 w-4 shrink-0 text-foreground/60" />

@@ -45,7 +45,7 @@ export function HeroCarousel({ slides }: { slides: HeroSlide[] }) {
             <ChevronLeft className="h-5 w-5" />
           </button>
           <p className="flex-1 text-center text-xs font-semibold md:text-sm">
-            Free shipping on most orders over $60. Plan a trip — everything in one place.
+            Free trip planning, no account needed. Plan a trip — everything in one place.
           </p>
           <div className="flex items-center gap-1">
             <button
