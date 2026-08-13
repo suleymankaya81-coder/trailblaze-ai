@@ -18,7 +18,7 @@ export type Database = {
         Row: {
           destination_slug: string | null
           id: string
-          offer_id: string | null
+          offer_id: string
           outcome: string | null
           referrer_page: string | null
           session_id: string | null
@@ -27,7 +27,7 @@ export type Database = {
         Insert: {
           destination_slug?: string | null
           id?: string
-          offer_id?: string | null
+          offer_id: string
           outcome?: string | null
           referrer_page?: string | null
           session_id?: string | null
@@ -36,7 +36,7 @@ export type Database = {
         Update: {
           destination_slug?: string | null
           id?: string
-          offer_id?: string | null
+          offer_id?: string
           outcome?: string | null
           referrer_page?: string | null
           session_id?: string | null
