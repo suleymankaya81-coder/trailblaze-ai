@@ -4,6 +4,7 @@ import { z } from "zod";
 
 import { createLovableAiGatewayProvider } from "@/lib/ai-gateway.server";
 import { getDestination } from "@/data/destinations";
+import { supabase } from "@/integrations/supabase/client";
 
 const EnrichSchema = z.object({
   summary: z.string().describe("2-3 sentence cinematic, emotive overview written like a luxury travel magazine."),
