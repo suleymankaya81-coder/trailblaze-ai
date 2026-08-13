@@ -62,8 +62,19 @@ function toOfferView(row: Tables<"offers">): OfferView {
     description: row.description,
     duration: row.duration,
     partner: row.partner,
+    category: row.category,
+    commissionable: row.commissionable,
   };
 }
+
+export const GLOBAL_SERVICE_CATEGORIES = [
+  "insurance",
+  "esim",
+  "offline_maps",
+  "car_rental",
+  "travel_card",
+  "park_pass",
+] as const;
 
 export const getDestinationPageData = createServerFn({ method: "GET" })
   .inputValidator((input: unknown) => z.object({ slug: z.string() }).parse(input))
