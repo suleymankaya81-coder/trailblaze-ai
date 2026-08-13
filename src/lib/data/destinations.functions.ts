@@ -100,7 +100,7 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       .from("offers")
       .select("*")
       .is("destination_id", null)
-      .in("category", GLOBAL_SERVICE_CATEGORIES as unknown as string[]);
+      .in("category", [...GLOBAL_SERVICE_CATEGORIES]);
 
     if (globalError) throw globalError;
 
