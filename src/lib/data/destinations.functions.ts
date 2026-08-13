@@ -148,6 +148,7 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       rentals: byCategory(["rv_rental", "gear_rental"]),
       activities: byCategory(["activity"]),
       essentials: byCategory(["gear_purchase"]),
+      globalServices,
       similar,
     };
   });
