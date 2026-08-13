@@ -315,7 +315,7 @@ function PriceTag({
     return (
       <span className={className}>
         ${offer.priceValue}
-        <span className="text-xs font-normal text-muted-foreground"> / {unit}</span>
+        <span className="whitespace-nowrap text-xs font-normal text-muted-foreground"> / {unit}</span>
       </span>
     );
   }
