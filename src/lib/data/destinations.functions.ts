@@ -17,6 +17,8 @@ export type OfferView = {
   description: string | null;
   duration: string | null;
   partner: string | null;
+  category: Tables<"offers">["category"];
+  commissionable: boolean;
 };
 
 export type SimilarDestination = {
