@@ -96,6 +96,21 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
 
     if (offersError) throw offersError;
 
+    const { data: globalRows, error: globalError } = await supabase
+      .from("offers")
+      .select("*")
+      .is("destination_id", null)
+      .in("category", GLOBAL_SERVICE_CATEGORIES as unknown as string[]);
+
+    if (globalError) throw globalError;
+
+    const order = GLOBAL_SERVICE_CATEGORIES as readonly string[];
+    const globalServices = (globalRows ?? [])
+      .slice()
+      .sort((a, b) => order.indexOf(a.category) - order.indexOf(b.category))
+      .map(toOfferView);
+
+
     const byCategory = (categories: Tables<"offers">["category"][]) =>
       (offers ?? []).filter((o) => categories.includes(o.category)).map(toOfferView);
 
