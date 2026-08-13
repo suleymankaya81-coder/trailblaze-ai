@@ -44,6 +44,7 @@ import {
 import { enrichDestination, type EnrichResult } from "@/lib/ai/enrich.functions";
 import { trackAndRedirect } from "@/lib/affiliates/track.functions";
 import { getOrCreateSessionId } from "@/lib/affiliates/session";
+import { buildDestinationJsonLd } from "@/lib/seo/destinationJsonLd";
 
 export const Route = createFileRoute("/destinations/$slug")({
   loader: async ({ params }): Promise<{ dest: DestinationView }> => {
@@ -56,6 +57,7 @@ export const Route = createFileRoute("/destinations/$slug")({
     if (!d) return { meta: [{ title: "Destination — Minialife" }] };
     const title = `${d.name} Travel Guide — Minialife`;
     const description = d.tagline;
+    const jsonLd = buildDestinationJsonLd(d, `/destinations/${d.slug}`);
     return {
       meta: [
         { title },
@@ -65,11 +67,49 @@ export const Route = createFileRoute("/destinations/$slug")({
         { property: "og:image", content: d.heroImage },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:image", content: d.heroImage },
+        { "script:ld+json": jsonLd },
       ],
     };
   },
   component: DestinationPage,
+  notFoundComponent: DestinationNotFound,
 });
+
+function DestinationNotFound() {
+  const { slug } = Route.useParams();
+  return (
+    <div className="bg-beige/30">
+      <Header />
+      <main className="container-page flex min-h-[60vh] flex-col items-center justify-center py-16 text-center">
+        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sage-deep">
+          Destination not found
+        </p>
+        <h1 className="mt-3 font-display text-4xl text-foreground md:text-5xl">
+          We couldn't find "{slug}"
+        </h1>
+        <p className="mt-4 max-w-md text-sm text-muted-foreground">
+          That destination isn't in our guide yet — it may have been renamed, or the link might be
+          off. Try searching again or explore our other destinations.
+        </p>
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+          <Link
+            to="/"
+            className="inline-flex items-center justify-center rounded-full bg-forest px-5 py-2.5 text-sm font-semibold text-off-white hover:bg-ink"
+          >
+            Explore destinations
+          </Link>
+          <Link
+            to="/contact"
+            className="inline-flex items-center justify-center rounded-full border border-border bg-background px-5 py-2.5 text-sm font-medium text-foreground hover:bg-muted"
+          >
+            Report a broken link
+          </Link>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+}
 
 function DestinationPage() {
   const { dest } = Route.useLoaderData() as { dest: DestinationView };
@@ -88,6 +128,7 @@ function DestinationPage() {
       <main className="container-page py-6 space-y-6">
         <Hero dest={dest} />
         <BeforeYouGo />
+        <AffiliateNote />
         <TopStays dest={dest} />
         <RentBeforeYouGo dest={dest} />
         <ThingsToDoAndBudget dest={dest} ai={ai} loading={aiLoading} />
@@ -249,6 +290,21 @@ function BeforeYouGo() {
         ))}
       </div>
     </SectionCard>
+  );
+}
+
+/* =========================================================
+   AFFILIATE NOTE
+========================================================= */
+function AffiliateNote() {
+  return (
+    <p className="text-center text-xs text-muted-foreground">
+      Minialife may earn a commission when you book or purchase through links below, at no extra
+      cost to you.{" "}
+      <Link to="/affiliate-disclosure" className="underline underline-offset-2 hover:text-forest">
+        Learn more
+      </Link>
+    </p>
   );
 }
 
