@@ -26,6 +26,11 @@ export type SimilarDestination = {
   heroImage: string;
 };
 
+export type FeaturedGearOffer = OfferView & {
+  destinationSlug: string;
+  destinationName: string;
+};
+
 export type DestinationView = {
   slug: string;
   name: string;
@@ -122,3 +127,54 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       similar,
     };
   });
+
+// Homepage module: a handful of real rv_rental/gear_rental/gear_purchase
+// offers spanning different destinations. The seed data reuses a shared
+// catalog per category across every destination, so we dedupe by title —
+// otherwise a naive limit() surfaces the same handful of items repeated.
+export const getFeaturedGearOffers = createServerFn({ method: "GET" }).handler(
+  async (): Promise<FeaturedGearOffer[]> => {
+    const { data: offers, error: offersError } = await supabase
+      .from("offers")
+      .select("*")
+      .in("category", ["rv_rental", "gear_rental", "gear_purchase"])
+      .order("title", { ascending: true })
+      .limit(60);
+
+    if (offersError) {
+      console.error("[getFeaturedGearOffers] offers query failed", offersError);
+      return [];
+    }
+    if (!offers || offers.length === 0) return [];
+
+    const seenTitles = new Set<string>();
+    const distinctOffers: Tables<"offers">[] = [];
+    for (const offer of offers) {
+      if (seenTitles.has(offer.title)) continue;
+      seenTitles.add(offer.title);
+      distinctOffers.push(offer);
+      if (distinctOffers.length >= 8) break;
+    }
+
+    const destinationIds = [...new Set(distinctOffers.map((o) => o.destination_id))];
+    const { data: destRows, error: destError } = await supabase
+      .from("destinations")
+      .select("id, slug, name")
+      .in("id", destinationIds);
+
+    if (destError) {
+      console.error("[getFeaturedGearOffers] destinations query failed", destError);
+      return [];
+    }
+
+    const destById = new Map((destRows ?? []).map((d) => [d.id, d]));
+
+    return distinctOffers
+      .map((offer) => {
+        const dest = destById.get(offer.destination_id);
+        if (!dest) return null;
+        return { ...toOfferView(offer), destinationSlug: dest.slug, destinationName: dest.name };
+      })
+      .filter((o): o is FeaturedGearOffer => o !== null);
+  },
+);

@@ -3,7 +3,6 @@ import {
   ArrowRight,
   Backpack,
   Bike,
-  Calendar,
   Compass,
   Leaf,
   MapPin,
@@ -21,9 +20,21 @@ import { SearchBar } from "@/components/site/SearchBar";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
 import { Button } from "@/components/ui/button";
 import { destinations } from "@/data/destinations";
+import { getFeaturedGearOffers, type FeaturedGearOffer } from "@/lib/data/destinations.functions";
 
 
 export const Route = createFileRoute("/")({
+  loader: async (): Promise<{ gearOffers: FeaturedGearOffer[] }> => {
+    // Defensive: this module is a homepage nice-to-have, so a Supabase
+    // hiccup should hide the section, never take down the whole homepage.
+    try {
+      const gearOffers = await getFeaturedGearOffers();
+      return { gearOffers };
+    } catch (err) {
+      console.error("[/] getFeaturedGearOffers failed", err);
+      return { gearOffers: [] };
+    }
+  },
   head: () => ({
     meta: [
       { title: "Minialife — Plan Your Next Outdoor Escape" },
@@ -171,6 +182,8 @@ const stories = [
 ];
 
 function HomePage() {
+  const { gearOffers } = Route.useLoaderData();
+
   return (
     <div className="bg-background">
       <Header />
@@ -447,42 +460,54 @@ function HomePage() {
         </div>
       </section>
 
-      {/* TRENDING TRIPS */}
-      <section className="bg-beige py-20">
-        <div className="container-page">
-          <div className="mb-10">
-            <p className="text-xs font-bold uppercase tracking-[0.22em] text-forest">Trending trips</p>
-            <h2 className="mt-2 max-w-2xl text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              Plans other travelers are loving this week
-            </h2>
+      {/* GEAR & RENTALS — real Supabase offers, not a category preview */}
+      {gearOffers.length > 0 && (
+        <section className="bg-beige py-20">
+          <div className="container-page">
+            <div className="mb-10 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.22em] text-forest">Live inventory</p>
+                <h2 className="mt-2 max-w-2xl text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+                  Gear and rentals ready at the trailhead
+                </h2>
+              </div>
+              <p className="max-w-xs text-sm text-muted-foreground">
+                Real listings pulled from the destinations below — pick one to see the full plan.
+              </p>
+            </div>
+            <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+              {gearOffers.map((offer) => (
+                <Link
+                  key={offer.id}
+                  to="/destinations/$slug"
+                  params={{ slug: offer.destinationSlug }}
+                  className="group block overflow-hidden rounded-2xl border border-border bg-card"
+                >
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <img
+                      src={offer.image ?? ""}
+                      alt={offer.title}
+                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="p-5">
+                    <p className="text-xs uppercase tracking-wider text-muted-foreground">
+                      {offer.destinationName}
+                    </p>
+                    <h3 className="mt-1 text-base font-bold text-foreground">{offer.title}</h3>
+                    <p className="mt-1 text-sm font-semibold text-forest">
+                      {offer.priceDisplay ??
+                        (offer.priceValue != null
+                          ? `$${offer.priceValue}${offer.priceUnit ? ` / ${offer.priceUnit}` : ""}`
+                          : "Price on request")}
+                    </p>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
-          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-            {destinations.slice(0, 4).map((d) => (
-              <Link
-                key={d.slug}
-                to="/destinations/$slug"
-                params={{ slug: d.slug }}
-                className="group block overflow-hidden rounded-2xl border border-border bg-card"
-              >
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <img
-                    src={d.heroImage}
-                    alt={d.name}
-                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <div className="p-5">
-                  <p className="text-xs uppercase tracking-wider text-muted-foreground">
-                    <Calendar className="mr-1 inline h-3 w-3" /> {d.tripDurationDays}
-                  </p>
-                  <h3 className="mt-1 text-base font-bold text-foreground">{d.name}</h3>
-                  <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">{d.tagline}</p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* FINAL CTA */}
       <section className="relative overflow-hidden">

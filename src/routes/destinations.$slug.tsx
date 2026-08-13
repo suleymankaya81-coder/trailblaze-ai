@@ -6,29 +6,23 @@ import {
   Calendar,
   Camera,
   CheckCircle2,
-  CreditCard,
   DollarSign,
   Download,
   Facebook,
   Heart,
   Instagram,
   Link2,
-  Map,
   MapPin,
   Mountain,
   Navigation,
   PawPrint,
   Shield,
-  ShieldCheck,
   Signal,
   Sparkles,
   Star,
   Sun,
   Tent,
-  
-  Trees,
   Users,
-  Wifi,
 } from "lucide-react";
 import { useMemo, useState } from "react";
 
@@ -127,7 +121,6 @@ function DestinationPage() {
 
       <main className="container-page py-6 space-y-6">
         <Hero dest={dest} />
-        <BeforeYouGo />
         <AffiliateNote />
         <TopStays dest={dest} />
         <RentBeforeYouGo dest={dest} />
@@ -253,43 +246,6 @@ function HeroStat({
       <div className="flex items-center gap-1.5 text-ember">{icon}<span className="text-[11px] uppercase tracking-[0.14em] text-off-white/70">{label}</span></div>
       <p className="mt-1 text-sm font-medium text-off-white">{value}</p>
     </div>
-  );
-}
-
-/* =========================================================
-   BEFORE YOU GO
-========================================================= */
-function BeforeYouGo() {
-  const items = [
-    { icon: <ShieldCheck className="h-6 w-6" />, title: "Travel Insurance", sub: "Stay protected", cta: "Compare plans" },
-    { icon: <Wifi className="h-6 w-6" />, title: "eSIM Data Plans", sub: "Stay connected", cta: "From $4.50" },
-    { icon: <Navigation className="h-6 w-6" />, title: "Car Rental", sub: "Explore beyond", cta: "From $29/day" },
-    { icon: <Trees className="h-6 w-6" />, title: "Park Pass", sub: "America the Beautiful", cta: "Learn more" },
-    { icon: <Map className="h-6 w-6" />, title: "Offline Maps", sub: "Download & explore", cta: "View options" },
-    { icon: <CreditCard className="h-6 w-6" />, title: "Travel Card", sub: "No foreign fees", cta: "Learn more" },
-  ];
-  return (
-    <SectionCard
-      title="Before you go"
-      eyebrow="Everything you need for a smooth trip."
-    >
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-        {items.map((i) => (
-          <a
-            key={i.title}
-            href="#"
-            className="group flex flex-col gap-2 rounded-xl border border-border bg-beige/40 p-4 transition hover:border-forest/40 hover:bg-beige"
-          >
-            <div className="text-forest">{i.icon}</div>
-            <p className="text-sm font-semibold text-foreground">{i.title}</p>
-            <p className="text-xs text-muted-foreground">{i.sub}</p>
-            <p className="mt-auto text-xs font-medium text-forest group-hover:underline">
-              {i.cta}
-            </p>
-          </a>
-        ))}
-      </div>
-    </SectionCard>
   );
 }
 
@@ -962,7 +918,10 @@ function EssentialsList({ dest }: { dest: DestinationView }) {
               <p className="truncate text-sm font-semibold text-foreground">{e.title}</p>
               <p className="truncate text-xs text-muted-foreground">{e.description}</p>
             </div>
-            <PriceTag offer={e} fallbackUnit="item" />
+            <div className="flex shrink-0 flex-col items-end gap-1.5">
+              <PriceTag offer={e} fallbackUnit="item" />
+              <OfferCta offer={e} label="Buy" size="sm" destinationSlug={dest.slug} />
+            </div>
           </li>
         ))}
       </ul>
