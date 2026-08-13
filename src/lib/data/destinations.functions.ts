@@ -17,6 +17,8 @@ export type OfferView = {
   description: string | null;
   duration: string | null;
   partner: string | null;
+  category: Tables<"offers">["category"];
+  commissionable: boolean;
 };
 
 export type SimilarDestination = {
@@ -43,6 +45,7 @@ export type DestinationView = {
   rentals: OfferView[];
   activities: OfferView[];
   essentials: OfferView[];
+  globalServices: OfferView[];
   similar: SimilarDestination[];
 };
 
@@ -60,8 +63,19 @@ function toOfferView(row: Tables<"offers">): OfferView {
     description: row.description,
     duration: row.duration,
     partner: row.partner,
+    category: row.category,
+    commissionable: row.commissionable,
   };
 }
+
+export const GLOBAL_SERVICE_CATEGORIES = [
+  "insurance",
+  "esim",
+  "offline_maps",
+  "car_rental",
+  "travel_card",
+  "park_pass",
+] as const;
 
 export const getDestinationPageData = createServerFn({ method: "GET" })
   .inputValidator((input: unknown) => z.object({ slug: z.string() }).parse(input))
@@ -81,6 +95,21 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       .eq("destination_id", dest.id);
 
     if (offersError) throw offersError;
+
+    const { data: globalRows, error: globalError } = await supabase
+      .from("offers")
+      .select("*")
+      .is("destination_id", null)
+      .in("category", [...GLOBAL_SERVICE_CATEGORIES]);
+
+    if (globalError) throw globalError;
+
+    const order = GLOBAL_SERVICE_CATEGORIES as readonly string[];
+    const globalServices = (globalRows ?? [])
+      .slice()
+      .sort((a, b) => order.indexOf(a.category) - order.indexOf(b.category))
+      .map(toOfferView);
+
 
     const byCategory = (categories: Tables<"offers">["category"][]) =>
       (offers ?? []).filter((o) => categories.includes(o.category)).map(toOfferView);
@@ -119,6 +148,7 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       rentals: byCategory(["rv_rental", "gear_rental"]),
       activities: byCategory(["activity"]),
       essentials: byCategory(["gear_purchase"]),
+      globalServices,
       similar,
     };
   });

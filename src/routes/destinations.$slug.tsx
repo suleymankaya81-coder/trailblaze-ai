@@ -85,7 +85,7 @@ function DestinationPage() {
 
       <main className="container-page py-6 space-y-6">
         <Hero dest={dest} />
-        <BeforeYouGo />
+        <BeforeYouGo services={dest.globalServices} />
         <TopStays dest={dest} />
         <RentBeforeYouGo dest={dest} />
         <ThingsToDoAndBudget dest={dest} ai={ai} loading={aiLoading} />
@@ -209,35 +209,52 @@ function HeroStat({
 /* =========================================================
    BEFORE YOU GO
 ========================================================= */
-function BeforeYouGo() {
-  const items = [
-    { icon: <ShieldCheck className="h-6 w-6" />, title: "Travel Insurance", sub: "Stay protected", cta: "Compare plans" },
-    { icon: <Wifi className="h-6 w-6" />, title: "eSIM Data Plans", sub: "Stay connected", cta: "From $4.50" },
-    { icon: <Navigation className="h-6 w-6" />, title: "Car Rental", sub: "Explore beyond", cta: "From $29/day" },
-    { icon: <Trees className="h-6 w-6" />, title: "Park Pass", sub: "America the Beautiful", cta: "Learn more" },
-    { icon: <Map className="h-6 w-6" />, title: "Offline Maps", sub: "Download & explore", cta: "View options" },
-    { icon: <CreditCard className="h-6 w-6" />, title: "Travel Card", sub: "No foreign fees", cta: "Learn more" },
-  ];
+const SERVICE_META: Record<string, { icon: ReactNode; sub: string; cta: string }> = {
+  insurance: { icon: <ShieldCheck className="h-6 w-6" />, sub: "Stay protected", cta: "Compare plans" },
+  esim: { icon: <Wifi className="h-6 w-6" />, sub: "Stay connected", cta: "View plans" },
+  offline_maps: { icon: <Map className="h-6 w-6" />, sub: "Download & explore", cta: "View options" },
+  car_rental: { icon: <Navigation className="h-6 w-6" />, sub: "Explore beyond", cta: "Compare cars" },
+  travel_card: { icon: <CreditCard className="h-6 w-6" />, sub: "No foreign fees", cta: "Learn more" },
+  park_pass: { icon: <Trees className="h-6 w-6" />, sub: "America the Beautiful", cta: "Official NPS page" },
+};
+
+function BeforeYouGo({ services }: { services: OfferView[] }) {
+  if (services.length === 0) return null;
   return (
     <SectionCard
       title="Before you go"
       eyebrow="Everything you need for a smooth trip."
     >
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-        {items.map((i) => (
-          <a
-            key={i.title}
-            href="#"
-            className="group flex flex-col gap-2 rounded-xl border border-border bg-beige/40 p-4 transition hover:border-forest/40 hover:bg-beige"
-          >
-            <div className="text-forest">{i.icon}</div>
-            <p className="text-sm font-semibold text-foreground">{i.title}</p>
-            <p className="text-xs text-muted-foreground">{i.sub}</p>
-            <p className="mt-auto text-xs font-medium text-forest group-hover:underline">
-              {i.cta}
-            </p>
-          </a>
-        ))}
+        {services.map((s) => {
+          const meta = SERVICE_META[s.category] ?? {
+            icon: <Shield className="h-6 w-6" />,
+            sub: "",
+            cta: "Learn more",
+          };
+          return (
+            <a
+              key={s.id}
+              href={s.externalUrl ?? "#"}
+              target={s.externalUrl ? "_blank" : undefined}
+              rel={s.externalUrl ? "noopener noreferrer sponsored" : undefined}
+              title={s.whyRecommended ?? undefined}
+              className="group flex flex-col gap-2 rounded-xl border border-border bg-beige/40 p-4 transition hover:border-forest/40 hover:bg-beige"
+            >
+              <div className="text-forest">{meta.icon}</div>
+              <p className="text-sm font-semibold text-foreground">{s.title}</p>
+              <p className="text-xs text-muted-foreground">{s.priceDisplay ?? meta.sub}</p>
+              {!s.commissionable && (
+                <span className="w-fit rounded-full border border-border px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
+                  Official link
+                </span>
+              )}
+              <p className="mt-auto text-xs font-medium text-forest group-hover:underline">
+                {meta.cta}
+              </p>
+            </a>
+          );
+        })}
       </div>
     </SectionCard>
   );
