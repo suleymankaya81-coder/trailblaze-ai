@@ -194,7 +194,7 @@ function HeroStat({
   label,
   value,
 }: {
-  icon: React.ReactNode;
+  icon: ReactNode;
   label: string;
   value: string;
 }) {
@@ -612,7 +612,7 @@ function RoadTripInfo({ dest }: { dest: DestinationView }) {
    DESTINATION INSIGHTS
 ========================================================= */
 function DestinationInsights({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
-  const rows: { icon: React.ReactNode; label: string; key: keyof EnrichResult["insights"] }[] = [
+  const rows: { icon: ReactNode; label: string; key: keyof EnrichResult["insights"] }[] = [
     { icon: <Sun className="h-4 w-4" />, label: "Weather", key: "weather" },
     { icon: <Users className="h-4 w-4" />, label: "Crowd levels", key: "crowdLevels" },
     { icon: <PawPrint className="h-4 w-4" />, label: "Wildlife", key: "wildlife" },
@@ -962,8 +962,8 @@ function SectionCard({
 }: {
   title: string;
   eyebrow?: string;
-  right?: React.ReactNode;
-  children: React.ReactNode;
+  right?: ReactNode;
+  children: ReactNode;
 }) {
   return (
     <section className="rounded-2xl border border-border bg-card p-6 shadow-soft">
