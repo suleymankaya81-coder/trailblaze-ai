@@ -520,7 +520,7 @@ function StayCard({
           : "border-border")
       }
     >
-      <div className={"relative overflow-hidden " + (featured ? "aspect-[16/9]" : "aspect-[4/3]")}>
+      <div className={"relative overflow-hidden " + (featured ? "aspect-[4/3]" : "aspect-[4/3]")}>
         <img
           src={offer.image ?? ""}
           alt={offer.title}
