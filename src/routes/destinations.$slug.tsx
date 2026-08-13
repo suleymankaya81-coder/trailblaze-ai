@@ -6,25 +6,30 @@ import {
   Calendar,
   Camera,
   CheckCircle2,
+  CreditCard,
   DollarSign,
   Download,
   Facebook,
   Heart,
   Instagram,
   Link2,
+  Map,
   MapPin,
   Mountain,
   Navigation,
   PawPrint,
   Shield,
+  ShieldCheck,
   Signal,
   Sparkles,
   Star,
   Sun,
   Tent,
+  Trees,
   Users,
+  Wifi,
 } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 
 import { Footer } from "@/components/site/Footer";
 import { Header } from "@/components/site/Header";
@@ -122,6 +127,7 @@ function DestinationPage() {
       <main className="container-page py-6 space-y-6">
         <Hero dest={dest} />
         <AffiliateNote />
+        <BeforeYouGo dest={dest} />
         <TopStays dest={dest} />
         <RentBeforeYouGo dest={dest} />
         <ThingsToDoAndBudget dest={dest} ai={ai} loading={aiLoading} />
@@ -141,25 +147,18 @@ function DestinationPage() {
 ========================================================= */
 function Hero({ dest }: { dest: DestinationView }) {
   const [region, sub] = dest.region.split(",").map((s) => s.trim());
-  const stats = [
-    dest.bestSeason && { icon: <Sun className="h-4 w-4" />, label: "Best season", value: dest.bestSeason },
-    dest.scenicScore != null && {
-      icon: <Star className="h-4 w-4" />,
-      label: "Scenic score",
-      value: `${dest.scenicScore}/10`,
-    },
-    dest.campingScore != null && {
-      icon: <Tent className="h-4 w-4" />,
-      label: "Camping score",
-      value: `${dest.campingScore}/10`,
-    },
-    dest.avgDailyBudget != null && {
-      icon: <DollarSign className="h-4 w-4" />,
-      label: "Budget",
-      value: `$${dest.avgDailyBudget} / day`,
-    },
-    dest.tripDurationDays && { icon: <Calendar className="h-4 w-4" />, label: "Ideal duration", value: dest.tripDurationDays },
-  ].filter((s): s is { icon: React.ReactNode; label: string; value: string } => Boolean(s));
+  const stats: { icon: ReactNode; label: string; value: string }[] = [];
+  if (dest.bestSeason)
+    stats.push({ icon: <Sun className="h-4 w-4" />, label: "Best season", value: dest.bestSeason });
+  if (dest.scenicScore != null)
+    stats.push({ icon: <Star className="h-4 w-4" />, label: "Scenic score", value: `${dest.scenicScore}/10` });
+  if (dest.campingScore != null)
+    stats.push({ icon: <Tent className="h-4 w-4" />, label: "Camping score", value: `${dest.campingScore}/10` });
+  if (dest.avgDailyBudget != null)
+    stats.push({ icon: <DollarSign className="h-4 w-4" />, label: "Budget", value: `$${dest.avgDailyBudget} / day` });
+  if (dest.tripDurationDays)
+    stats.push({ icon: <Calendar className="h-4 w-4" />, label: "Ideal duration", value: dest.tripDurationDays });
+
 
   const snapshotItems = [
     "Best for first-time campers",
@@ -237,7 +236,7 @@ function HeroStat({
   label,
   value,
 }: {
-  icon: React.ReactNode;
+  icon: ReactNode;
   label: string;
   value: string;
 }) {
@@ -261,6 +260,94 @@ function AffiliateNote() {
         Learn more
       </Link>
     </p>
+  );
+}
+
+const SERVICE_META: Record<string, { icon: ReactNode; sub: string; cta: string }> = {
+  insurance: { icon: <ShieldCheck className="h-6 w-6" />, sub: "Stay protected", cta: "Compare plans" },
+  esim: { icon: <Wifi className="h-6 w-6" />, sub: "Stay connected", cta: "View plans" },
+  offline_maps: { icon: <Map className="h-6 w-6" />, sub: "Download & explore", cta: "View options" },
+  car_rental: { icon: <Navigation className="h-6 w-6" />, sub: "Explore beyond", cta: "Compare cars" },
+  travel_card: { icon: <CreditCard className="h-6 w-6" />, sub: "No foreign fees", cta: "Learn more" },
+  park_pass: { icon: <Trees className="h-6 w-6" />, sub: "America the Beautiful", cta: "Official NPS page" },
+};
+
+function BeforeYouGo({ dest }: { dest: DestinationView }) {
+  const services = dest.globalServices;
+  if (services.length === 0) return null;
+  return (
+    <SectionCard title="Before you go" eyebrow="Everything you need for a smooth trip.">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+        {services.map((s) => (
+          <ServiceCard key={s.id} service={s} destinationSlug={dest.slug} />
+        ))}
+      </div>
+    </SectionCard>
+  );
+}
+
+// Commissionable services (insurance, esim, car rental, travel card, ...) route
+// through the same tracked-redirect flow as every other offer on the page.
+// Non-commissionable ones (Park Pass -> official NPS page) link straight
+// through untracked, since there's no affiliate relationship to attribute.
+function ServiceCard({
+  service,
+  destinationSlug,
+}: {
+  service: OfferView;
+  destinationSlug: string;
+}) {
+  const meta = SERVICE_META[service.category] ?? {
+    icon: <Shield className="h-6 w-6" />,
+    sub: "",
+    cta: "Learn more",
+  };
+  const { handleClick, pending } = useTrackedRedirect(service, destinationSlug);
+  const cardClass =
+    "group flex flex-col gap-2 rounded-xl border border-border bg-beige/40 p-4 transition hover:border-forest/40 hover:bg-beige";
+
+  if (!service.externalUrl) {
+    return (
+      <div
+        title="Coming soon"
+        className="flex cursor-not-allowed flex-col gap-2 rounded-xl border border-border bg-beige/20 p-4 opacity-60"
+      >
+        <div className="text-forest">{meta.icon}</div>
+        <p className="text-sm font-semibold text-foreground">{service.title}</p>
+        <p className="text-xs text-muted-foreground">{meta.sub}</p>
+        <p className="mt-auto text-xs font-medium text-muted-foreground">Coming soon</p>
+      </div>
+    );
+  }
+
+  if (!service.commissionable) {
+    return (
+      <a href={service.externalUrl} target="_blank" rel="noopener noreferrer" className={cardClass}>
+        <div className="text-forest">{meta.icon}</div>
+        <p className="text-sm font-semibold text-foreground">{service.title}</p>
+        <p className="text-xs text-muted-foreground">{meta.sub}</p>
+        <span className="w-fit rounded-full border border-border px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
+          Official link
+        </span>
+        <p className="mt-auto text-xs font-medium text-forest group-hover:underline">{meta.cta}</p>
+      </a>
+    );
+  }
+
+  return (
+    <a
+      href={service.externalUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={handleClick}
+      aria-disabled={pending}
+      className={`${cardClass} ${pending ? "pointer-events-none opacity-70" : ""}`}
+    >
+      <div className="text-forest">{meta.icon}</div>
+      <p className="text-sm font-semibold text-foreground">{service.title}</p>
+      <p className="text-xs text-muted-foreground">{service.priceDisplay ?? meta.sub}</p>
+      <p className="mt-auto text-xs font-medium text-forest group-hover:underline">{meta.cta}</p>
+    </a>
   );
 }
 
@@ -289,6 +376,43 @@ function PriceTag({
   return <span className="text-xs font-normal text-muted-foreground">Price on request</span>;
 }
 
+// Shared by OfferCta and the "Before you go" service cards: opens a tab
+// synchronously (so popup blockers don't kill it while we await the
+// tracking round-trip), then points it at the tracked redirect URL, falling
+// back to the raw external URL if the tracking call fails.
+function useTrackedRedirect(offer: OfferView, destinationSlug: string) {
+  const track = useServerFn(trackAndRedirect);
+  const [pending, setPending] = useState(false);
+
+  const handleClick = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (pending || !offer.externalUrl) return;
+    const externalUrl = offer.externalUrl;
+    setPending(true);
+
+    const newTab = window.open("", "_blank");
+
+    try {
+      const { redirectUrl } = await track({
+        data: {
+          offerId: offer.id,
+          destinationSlug,
+          sessionId: getOrCreateSessionId(),
+          referrerPage: window.location.pathname,
+        },
+      });
+      if (newTab) newTab.location.href = redirectUrl;
+    } catch (err) {
+      console.error("[useTrackedRedirect] trackAndRedirect failed", err);
+      if (newTab) newTab.location.href = externalUrl;
+    } finally {
+      setPending(false);
+    }
+  };
+
+  return { handleClick, pending };
+}
+
 function OfferCta({
   offer,
   label,
@@ -301,8 +425,7 @@ function OfferCta({
   destinationSlug: string;
 }) {
   const padding = size === "sm" ? "px-3 py-1" : "px-3 py-1.5";
-  const track = useServerFn(trackAndRedirect);
-  const [pending, setPending] = useState(false);
+  const { handleClick, pending } = useTrackedRedirect(offer, destinationSlug);
 
   if (!offer.externalUrl) {
     return (
@@ -317,38 +440,9 @@ function OfferCta({
     );
   }
 
-  const externalUrl = offer.externalUrl;
-
-  const handleClick = async (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    if (pending) return;
-    setPending(true);
-
-    // Open synchronously, inside the click's call stack, so popup blockers
-    // don't kill the tab while we wait on the tracking round-trip.
-    const newTab = window.open("", "_blank");
-
-    try {
-      const { redirectUrl } = await track({
-        data: {
-          offerId: offer.id,
-          destinationSlug,
-          sessionId: getOrCreateSessionId(),
-          referrerPage: window.location.pathname,
-        },
-      });
-      if (newTab) newTab.location.href = redirectUrl;
-    } catch (err) {
-      console.error("[OfferCta] trackAndRedirect failed", err);
-      if (newTab) newTab.location.href = externalUrl;
-    } finally {
-      setPending(false);
-    }
-  };
-
   return (
     <a
-      href={externalUrl}
+      href={offer.externalUrl}
       target="_blank"
       rel="noopener noreferrer"
       onClick={handleClick}
@@ -670,7 +764,7 @@ function RoadTripInfo({ dest }: { dest: DestinationView }) {
    DESTINATION INSIGHTS
 ========================================================= */
 function DestinationInsights({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
-  const rows: { icon: React.ReactNode; label: string; key: keyof EnrichResult["insights"] }[] = [
+  const rows: { icon: ReactNode; label: string; key: keyof EnrichResult["insights"] }[] = [
     { icon: <Sun className="h-4 w-4" />, label: "Weather", key: "weather" },
     { icon: <Users className="h-4 w-4" />, label: "Crowd levels", key: "crowdLevels" },
     { icon: <PawPrint className="h-4 w-4" />, label: "Wildlife", key: "wildlife" },
@@ -1023,8 +1117,8 @@ function SectionCard({
 }: {
   title: string;
   eyebrow?: string;
-  right?: React.ReactNode;
-  children: React.ReactNode;
+  right?: ReactNode;
+  children: ReactNode;
 }) {
   return (
     <section className="rounded-2xl border border-border bg-card p-6 shadow-soft">

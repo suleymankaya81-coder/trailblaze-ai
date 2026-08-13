@@ -17,6 +17,8 @@ export type OfferView = {
   description: string | null;
   duration: string | null;
   partner: string | null;
+  category: Tables<"offers">["category"];
+  commissionable: boolean;
 };
 
 export type SimilarDestination = {
@@ -48,6 +50,7 @@ export type DestinationView = {
   rentals: OfferView[];
   activities: OfferView[];
   essentials: OfferView[];
+  globalServices: OfferView[];
   similar: SimilarDestination[];
 };
 
@@ -65,8 +68,19 @@ function toOfferView(row: Tables<"offers">): OfferView {
     description: row.description,
     duration: row.duration,
     partner: row.partner,
+    category: row.category,
+    commissionable: row.commissionable,
   };
 }
+
+export const GLOBAL_SERVICE_CATEGORIES = [
+  "insurance",
+  "esim",
+  "offline_maps",
+  "car_rental",
+  "travel_card",
+  "park_pass",
+] as const;
 
 export const getDestinationPageData = createServerFn({ method: "GET" })
   .inputValidator((input: unknown) => z.object({ slug: z.string() }).parse(input))
@@ -86,6 +100,21 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       .eq("destination_id", dest.id);
 
     if (offersError) throw offersError;
+
+    const { data: globalRows, error: globalError } = await supabase
+      .from("offers")
+      .select("*")
+      .is("destination_id", null)
+      .in("category", [...GLOBAL_SERVICE_CATEGORIES]);
+
+    if (globalError) throw globalError;
+
+    const order = GLOBAL_SERVICE_CATEGORIES as readonly string[];
+    const globalServices = (globalRows ?? [])
+      .slice()
+      .sort((a, b) => order.indexOf(a.category) - order.indexOf(b.category))
+      .map(toOfferView);
+
 
     const byCategory = (categories: Tables<"offers">["category"][]) =>
       (offers ?? []).filter((o) => categories.includes(o.category)).map(toOfferView);
@@ -124,6 +153,7 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       rentals: byCategory(["rv_rental", "gear_rental"]),
       activities: byCategory(["activity"]),
       essentials: byCategory(["gear_purchase"]),
+      globalServices,
       similar,
     };
   });
@@ -156,7 +186,13 @@ export const getFeaturedGearOffers = createServerFn({ method: "GET" }).handler(
       if (distinctOffers.length >= 8) break;
     }
 
-    const destinationIds = [...new Set(distinctOffers.map((o) => o.destination_id))];
+    const destinationIds = [
+      ...new Set(
+        distinctOffers
+          .map((o) => o.destination_id)
+          .filter((id): id is string => id !== null),
+      ),
+    ];
     const { data: destRows, error: destError } = await supabase
       .from("destinations")
       .select("id, slug, name")
@@ -167,11 +203,13 @@ export const getFeaturedGearOffers = createServerFn({ method: "GET" }).handler(
       return [];
     }
 
-    const destById = new Map((destRows ?? []).map((d) => [d.id, d]));
+    const destById = new Map<string, { id: string; slug: string; name: string }>(
+      (destRows ?? []).map((d) => [d.id, d]),
+    );
 
     return distinctOffers
       .map((offer) => {
-        const dest = destById.get(offer.destination_id);
+        const dest = offer.destination_id ? destById.get(offer.destination_id) : undefined;
         if (!dest) return null;
         return { ...toOfferView(offer), destinationSlug: dest.slug, destinationName: dest.name };
       })

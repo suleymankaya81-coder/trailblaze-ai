@@ -18,7 +18,7 @@ export type Database = {
         Row: {
           destination_slug: string | null
           id: string
-          offer_id: string | null
+          offer_id: string
           outcome: string | null
           referrer_page: string | null
           session_id: string | null
@@ -27,7 +27,7 @@ export type Database = {
         Insert: {
           destination_slug?: string | null
           id?: string
-          offer_id?: string | null
+          offer_id: string
           outcome?: string | null
           referrer_page?: string | null
           session_id?: string | null
@@ -36,7 +36,7 @@ export type Database = {
         Update: {
           destination_slug?: string | null
           id?: string
-          offer_id?: string | null
+          offer_id?: string
           outcome?: string | null
           referrer_page?: string | null
           session_id?: string | null
@@ -121,9 +121,10 @@ export type Database = {
       offers: {
         Row: {
           category: Database["public"]["Enums"]["offer_category"]
+          commissionable: boolean
           created_at: string
           description: string | null
-          destination_id: string
+          destination_id: string | null
           duration: string | null
           external_url: string | null
           id: string
@@ -139,9 +140,10 @@ export type Database = {
         }
         Insert: {
           category: Database["public"]["Enums"]["offer_category"]
+          commissionable?: boolean
           created_at?: string
           description?: string | null
-          destination_id: string
+          destination_id?: string | null
           duration?: string | null
           external_url?: string | null
           id?: string
@@ -157,9 +159,10 @@ export type Database = {
         }
         Update: {
           category?: Database["public"]["Enums"]["offer_category"]
+          commissionable?: boolean
           created_at?: string
           description?: string | null
-          destination_id?: string
+          destination_id?: string | null
           duration?: string | null
           external_url?: string | null
           id?: string
@@ -197,6 +200,12 @@ export type Database = {
         | "gear_rental"
         | "gear_purchase"
         | "activity"
+        | "insurance"
+        | "esim"
+        | "offline_maps"
+        | "car_rental"
+        | "travel_card"
+        | "park_pass"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -330,6 +339,12 @@ export const Constants = {
         "gear_rental",
         "gear_purchase",
         "activity",
+        "insurance",
+        "esim",
+        "offline_maps",
+        "car_rental",
+        "travel_card",
+        "park_pass",
       ],
     },
   },
