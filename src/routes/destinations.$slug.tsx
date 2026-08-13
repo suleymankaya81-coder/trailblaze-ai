@@ -298,6 +298,32 @@ function Hero({ dest }: { dest: DestinationView }) {
   );
 }
 
+// Card imagery comes from remote sources that can 404; fall back to a neutral
+// surface instead of showing a broken-image glyph inside a premium card.
+function CardImg({
+  src,
+  alt,
+  className,
+}: {
+  src: string;
+  alt: string;
+  className?: string;
+}) {
+  const [failed, setFailed] = useState(false);
+  if (!src || failed) {
+    return <div className={`${className ?? ""} bg-beige`} aria-hidden />;
+  }
+  return (
+    <img
+      src={src}
+      alt={alt}
+
+      onError={() => setFailed(true)}
+      className={className}
+    />
+  );
+}
+
 /* =========================================================
    SHARED — offer helpers
 ========================================================= */
@@ -521,10 +547,10 @@ function StayCard({
       }
     >
       <div className={"relative overflow-hidden " + (featured ? "aspect-[4/3]" : "aspect-[4/3]")}>
-        <img
+        <CardImg
           src={offer.image ?? ""}
           alt={offer.title}
-          loading="lazy"
+
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
         {featured && (
@@ -675,10 +701,10 @@ function RentalTile({ offer, destinationSlug }: { offer: OfferView; destinationS
   return (
     <article className="group relative overflow-hidden rounded-2xl border border-border bg-card">
       <div className="relative aspect-[4/3] overflow-hidden">
-        <img
+        <CardImg
           src={offer.image ?? ""}
           alt={offer.title}
-          loading="lazy"
+
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/20 to-transparent" />
@@ -728,10 +754,10 @@ function ThingsToDo({ dest }: { dest: DestinationView }) {
               className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition hover:shadow-lift"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
-                <img
+                <CardImg
                   src={a.image ?? ""}
                   alt={a.title}
-                  loading="lazy"
+
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
@@ -1041,10 +1067,10 @@ function Essentials({ dest }: { dest: DestinationView }) {
               className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition hover:shadow-lift"
             >
               <div className="relative aspect-square overflow-hidden bg-beige/50">
-                <img
+                <CardImg
                   src={e.image ?? ""}
                   alt={e.title}
-                  loading="lazy"
+
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
@@ -1129,10 +1155,10 @@ function Toolkit({
             className="group relative overflow-hidden rounded-2xl border border-border text-left"
           >
             <div className="relative aspect-[4/3]">
-              <img
+              <CardImg
                 src={c.img}
                 alt={c.title}
-                loading="lazy"
+
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/50 to-ink/10" />
@@ -1305,10 +1331,10 @@ function SimilarDestinations({ dest }: { dest: DestinationView }) {
               className="group relative overflow-hidden rounded-2xl border border-border"
             >
               <div className="relative aspect-[3/4]">
-                <img
+                <CardImg
                   src={d.heroImage}
                   alt={d.name}
-                  loading="lazy"
+
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/25 to-transparent" />
