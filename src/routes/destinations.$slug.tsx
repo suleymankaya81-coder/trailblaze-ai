@@ -30,7 +30,7 @@ import {
   Users,
   Wifi,
 } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 
 import { Footer } from "@/components/site/Footer";
 import { Header } from "@/components/site/Header";
@@ -105,25 +105,18 @@ function DestinationPage() {
 ========================================================= */
 function Hero({ dest }: { dest: DestinationView }) {
   const [region, sub] = dest.region.split(",").map((s) => s.trim());
-  const stats = [
-    dest.bestSeason && { icon: <Sun className="h-4 w-4" />, label: "Best season", value: dest.bestSeason },
-    dest.scenicScore != null && {
-      icon: <Star className="h-4 w-4" />,
-      label: "Scenic score",
-      value: `${dest.scenicScore}/10`,
-    },
-    dest.campingScore != null && {
-      icon: <Tent className="h-4 w-4" />,
-      label: "Camping score",
-      value: `${dest.campingScore}/10`,
-    },
-    dest.avgDailyBudget != null && {
-      icon: <DollarSign className="h-4 w-4" />,
-      label: "Budget",
-      value: `$${dest.avgDailyBudget} / day`,
-    },
-    dest.tripDurationDays && { icon: <Calendar className="h-4 w-4" />, label: "Ideal duration", value: dest.tripDurationDays },
-  ].filter((s): s is { icon: React.ReactNode; label: string; value: string } => Boolean(s));
+  const stats: { icon: ReactNode; label: string; value: string }[] = [];
+  if (dest.bestSeason)
+    stats.push({ icon: <Sun className="h-4 w-4" />, label: "Best season", value: dest.bestSeason });
+  if (dest.scenicScore != null)
+    stats.push({ icon: <Star className="h-4 w-4" />, label: "Scenic score", value: `${dest.scenicScore}/10` });
+  if (dest.campingScore != null)
+    stats.push({ icon: <Tent className="h-4 w-4" />, label: "Camping score", value: `${dest.campingScore}/10` });
+  if (dest.avgDailyBudget != null)
+    stats.push({ icon: <DollarSign className="h-4 w-4" />, label: "Budget", value: `$${dest.avgDailyBudget} / day` });
+  if (dest.tripDurationDays)
+    stats.push({ icon: <Calendar className="h-4 w-4" />, label: "Ideal duration", value: dest.tripDurationDays });
+
 
   const snapshotItems = [
     "Best for first-time campers",
@@ -201,7 +194,7 @@ function HeroStat({
   label,
   value,
 }: {
-  icon: React.ReactNode;
+  icon: ReactNode;
   label: string;
   value: string;
 }) {
@@ -619,7 +612,7 @@ function RoadTripInfo({ dest }: { dest: DestinationView }) {
    DESTINATION INSIGHTS
 ========================================================= */
 function DestinationInsights({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
-  const rows: { icon: React.ReactNode; label: string; key: keyof EnrichResult["insights"] }[] = [
+  const rows: { icon: ReactNode; label: string; key: keyof EnrichResult["insights"] }[] = [
     { icon: <Sun className="h-4 w-4" />, label: "Weather", key: "weather" },
     { icon: <Users className="h-4 w-4" />, label: "Crowd levels", key: "crowdLevels" },
     { icon: <PawPrint className="h-4 w-4" />, label: "Wildlife", key: "wildlife" },
@@ -969,8 +962,8 @@ function SectionCard({
 }: {
   title: string;
   eyebrow?: string;
-  right?: React.ReactNode;
-  children: React.ReactNode;
+  right?: ReactNode;
+  children: ReactNode;
 }) {
   return (
     <section className="rounded-2xl border border-border bg-card p-6 shadow-soft">
