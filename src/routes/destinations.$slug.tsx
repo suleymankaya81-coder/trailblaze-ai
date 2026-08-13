@@ -44,6 +44,8 @@ import { enrichDestination, type EnrichResult } from "@/lib/ai/enrich.functions"
 import { trackAndRedirect } from "@/lib/affiliates/track.functions";
 import { getOrCreateSessionId } from "@/lib/affiliates/session";
 import { buildDestinationJsonLd } from "@/lib/seo/destinationJsonLd";
+import { saveTripPlan } from "@/lib/plans/savePlan.functions";
+import { getCapturedEmail, setCapturedEmail } from "@/lib/plans/session";
 
 export const Route = createFileRoute("/destinations/$slug")({
   loader: async ({ params }): Promise<{ dest: DestinationView }> => {
@@ -1026,39 +1028,108 @@ function EssentialsList({ dest }: { dest: DestinationView }) {
 /* =========================================================
    SHARE + SIMILAR
 ========================================================= */
-function ShareAndSimilar({ dest }: { dest: DestinationView }) {
-  const similar = dest.similar.slice(0, 4);
+type SaveState = "idle" | "prompt" | "saving" | "saved" | "error";
+
+function SharePlanCard({ dest }: { dest: DestinationView }) {
+  const save = useServerFn(saveTripPlan);
+  const [state, setState] = useState<SaveState>("idle");
+  const [email, setEmail] = useState("");
+
+  const doSave = async (candidateEmail: string) => {
+    setState("saving");
+    try {
+      await save({ data: { email: candidateEmail, destinationSlug: dest.slug } });
+      setCapturedEmail(candidateEmail);
+      setState("saved");
+    } catch (err) {
+      console.error("[SharePlanCard] saveTripPlan failed", err);
+      setState("error");
+    }
+  };
+
+  const handleShareClick = () => {
+    const captured = getCapturedEmail();
+    if (captured) {
+      void doSave(captured);
+      return;
+    }
+    setState("prompt");
+  };
+
+  const handleEmailSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    void doSave(email.trim());
+  };
 
   return (
-    <div className="grid gap-6 lg:grid-cols-[1fr_2fr]">
-      <section className="rounded-2xl border border-border bg-card p-6 shadow-soft">
-        <h2 className="font-display text-xl text-foreground">Share Your Trip Plan</h2>
-        <p className="text-xs text-muted-foreground">Inspire others. Save your plan.</p>
-        <div className="mt-5 flex gap-4">
-          <div className="h-24 w-24 shrink-0 overflow-hidden rounded-xl">
-            <img src={dest.heroImage} alt={dest.name} className="h-full w-full object-cover" />
-          </div>
-          <div className="min-w-0">
-            <p className="text-sm font-semibold text-foreground">{dest.name.split(" ")[0]} Adventure</p>
-            <p className="mt-1 text-xs text-muted-foreground">4 Days · 2 Travelers</p>
-            <div className="mt-2 grid grid-cols-3 gap-2 text-[10px] text-muted-foreground">
-              <div>
-                <p className="uppercase tracking-wider">Budget</p>
-                <p className="text-foreground">$1,400</p>
-              </div>
-              <div>
-                <p className="uppercase tracking-wider">Stay</p>
-                <p className="truncate text-foreground">{dest.stays[0]?.title.split(" ").slice(0, 2).join(" ")}</p>
-              </div>
-              <div>
-                <p className="uppercase tracking-wider">Scenic</p>
-                <p className="text-foreground">{dest.scenicScore != null ? `${dest.scenicScore}/10` : "—"}</p>
-              </div>
+    <section className="rounded-2xl border border-border bg-card p-6 shadow-soft">
+      <h2 className="font-display text-xl text-foreground">Share Your Trip Plan</h2>
+      <p className="text-xs text-muted-foreground">Inspire others. Save your plan.</p>
+      <div className="mt-5 flex gap-4">
+        <div className="h-24 w-24 shrink-0 overflow-hidden rounded-xl">
+          <img src={dest.heroImage} alt={dest.name} className="h-full w-full object-cover" />
+        </div>
+        <div className="min-w-0">
+          <p className="text-sm font-semibold text-foreground">{dest.name.split(" ")[0]} Adventure</p>
+          <p className="mt-1 text-xs text-muted-foreground">4 Days · 2 Travelers</p>
+          <div className="mt-2 grid grid-cols-3 gap-2 text-[10px] text-muted-foreground">
+            <div>
+              <p className="uppercase tracking-wider">Budget</p>
+              <p className="text-foreground">$1,400</p>
+            </div>
+            <div>
+              <p className="uppercase tracking-wider">Stay</p>
+              <p className="truncate text-foreground">{dest.stays[0]?.title.split(" ").slice(0, 2).join(" ")}</p>
+            </div>
+            <div>
+              <p className="uppercase tracking-wider">Scenic</p>
+              <p className="text-foreground">{dest.scenicScore != null ? `${dest.scenicScore}/10` : "—"}</p>
             </div>
           </div>
         </div>
+      </div>
+
+      {state === "saved" ? (
+        <p className="mt-5 flex items-center gap-2 rounded-md bg-forest/10 px-4 py-2.5 text-xs font-semibold text-forest">
+          <CheckCircle2 className="h-4 w-4" /> Saved — we'll keep this plan tied to your email.
+        </p>
+      ) : state === "prompt" || state === "saving" || state === "error" ? (
+        <form onSubmit={handleEmailSubmit} className="mt-5">
+          <label htmlFor={`share-plan-email-${dest.slug}`} className="text-xs font-medium text-foreground">
+            Enter your email to save this trip plan
+          </label>
+          <div className="mt-2 flex gap-2">
+            <input
+              id={`share-plan-email-${dest.slug}`}
+              type="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="you@example.com"
+              disabled={state === "saving"}
+              className="min-w-0 flex-1 rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground disabled:opacity-60"
+            />
+            <button
+              type="submit"
+              disabled={state === "saving"}
+              className="shrink-0 rounded-md bg-forest px-4 py-2 text-xs font-semibold text-off-white hover:bg-forest/90 disabled:opacity-60"
+            >
+              {state === "saving" ? "Saving…" : "Save plan"}
+            </button>
+          </div>
+          {state === "error" && (
+            <p className="mt-2 text-xs text-destructive">
+              Something went wrong saving your plan. Please try again.
+            </p>
+          )}
+        </form>
+      ) : (
         <div className="mt-5 flex items-center justify-between">
-          <button className="rounded-md bg-forest px-4 py-2 text-xs font-semibold text-off-white hover:bg-forest/90">
+          <button
+            type="button"
+            onClick={handleShareClick}
+            className="rounded-md bg-forest px-4 py-2 text-xs font-semibold text-off-white hover:bg-forest/90"
+          >
             Share this plan
           </button>
           <div className="flex items-center gap-3 text-muted-foreground">
@@ -1069,7 +1140,17 @@ function ShareAndSimilar({ dest }: { dest: DestinationView }) {
             <Mountain className="h-4 w-4" />
           </div>
         </div>
-      </section>
+      )}
+    </section>
+  );
+}
+
+function ShareAndSimilar({ dest }: { dest: DestinationView }) {
+  const similar = dest.similar.slice(0, 4);
+
+  return (
+    <div className="grid gap-6 lg:grid-cols-[1fr_2fr]">
+      <SharePlanCard dest={dest} />
 
       <SectionCard
         title="Similar Destinations"
