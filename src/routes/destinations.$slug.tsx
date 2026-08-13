@@ -1053,7 +1053,7 @@ function Essentials({ dest }: { dest: DestinationView }) {
                 <p className="mt-1.5 line-clamp-3 text-[11px] leading-relaxed text-muted-foreground">
                   {e.whyRecommended ?? e.description}
                 </p>
-                <div className="mt-3 flex items-center justify-between gap-2 border-t border-border pt-3">
+                <div className="mt-auto flex flex-col items-start gap-2 border-t border-border pt-3">
                   <PriceTag
                     offer={e}
                     fallbackUnit="item"
