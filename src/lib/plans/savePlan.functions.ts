@@ -11,7 +11,14 @@ const InputSchema = z.object({
 export const saveTripPlan = createServerFn({ method: "POST" })
   .inputValidator((input: unknown) => InputSchema.parse(input))
   .handler(async ({ data }): Promise<{ ok: true }> => {
-    const { error } = await supabase.rpc("save_trip_plan", {
+    // The save_trip_plan function isn't in the generated types yet, so the
+    // client is widened here rather than hand-editing the generated file.
+    const { error } = await (
+      supabase.rpc as unknown as (
+        fn: string,
+        args: Record<string, unknown>,
+      ) => Promise<{ error: unknown }>
+    )("save_trip_plan", {
       p_email: data.email,
       p_destination_slug: data.destinationSlug,
     });
