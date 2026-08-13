@@ -85,7 +85,7 @@ function DestinationPage() {
 
       <main className="container-page py-6 space-y-6">
         <Hero dest={dest} />
-        <BeforeYouGo />
+        <BeforeYouGo services={dest.globalServices} />
         <TopStays dest={dest} />
         <RentBeforeYouGo dest={dest} />
         <ThingsToDoAndBudget dest={dest} ai={ai} loading={aiLoading} />
