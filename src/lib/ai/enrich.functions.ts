@@ -3,11 +3,12 @@ import { generateText } from "ai";
 import { z } from "zod";
 
 import { createLovableAiGatewayProvider } from "@/lib/ai-gateway.server";
-import { getDestination } from "@/data/destinations";
 import { supabase } from "@/integrations/supabase/client";
 
 const EnrichSchema = z.object({
-  summary: z.string().describe("2-3 sentence cinematic, emotive overview written like a luxury travel magazine."),
+  summary: z
+    .string()
+    .describe("2-3 sentence cinematic, emotive overview written like a luxury travel magazine."),
   insights: z.object({
     bestTimeToVisit: z.string(),
     weather: z.string(),
@@ -47,22 +48,13 @@ export const enrichDestination = createServerFn({ method: "POST" })
     const cached = cache.get(data.slug);
     if (cached) return cached;
 
-    const { data: row } = await supabase
+    const { data: dest, error } = await supabase
       .from("destinations")
-      .select("name, region, tagline, best_season, trip_duration_days, avg_daily_budget")
+      .select("name, region, best_season, trip_duration_days, avg_daily_budget, tagline")
       .eq("slug", data.slug)
       .maybeSingle();
 
-    const dest = row
-      ? {
-          name: row.name,
-          region: row.region ?? "",
-          tagline: row.tagline ?? "",
-          bestSeason: row.best_season ?? "",
-          tripDurationDays: row.trip_duration_days ?? "",
-          avgDailyBudget: row.avg_daily_budget ?? 0,
-        }
-      : getDestination(data.slug);
+    if (error) throw error;
     if (!dest) throw new Error("Destination not found");
 
     const key = process.env.LOVABLE_API_KEY;
@@ -75,9 +67,9 @@ export const enrichDestination = createServerFn({ method: "POST" })
       prompt: `You are writing for a premium outdoor-travel guide for ${dest.name} (${dest.region}).
 
 Context:
-- Best season: ${dest.bestSeason}
-- Trip length: ${dest.tripDurationDays}
-- Avg daily budget per person: $${dest.avgDailyBudget}
+- Best season: ${dest.best_season}
+- Trip length: ${dest.trip_duration_days}
+- Avg daily budget per person: $${dest.avg_daily_budget}
 - Tagline: ${dest.tagline}
 
 Return ONLY valid JSON (no markdown, no prose) matching exactly this shape:
@@ -115,7 +107,10 @@ Return ONLY valid JSON (no markdown, no prose) matching exactly this shape:
 Budget is USD for a 4-day trip for 2 people, realistic for ${dest.name}. Be specific to ${dest.name}. Never invent operator/lodging names.`,
     });
 
-    const cleaned = text.replace(/```json\s*/gi, "").replace(/```\s*/g, "").trim();
+    const cleaned = text
+      .replace(/```json\s*/gi, "")
+      .replace(/```\s*/g, "")
+      .trim();
     const start = cleaned.indexOf("{");
     const end = cleaned.lastIndexOf("}");
     if (start === -1 || end === -1) throw new Error("AI did not return JSON");

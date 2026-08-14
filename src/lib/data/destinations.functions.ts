@@ -254,3 +254,42 @@ export const getHomepageDestinations = createServerFn({ method: "GET" }).handler
     }));
   },
 );
+
+// Site-search matching against the live catalog: exact slug, then
+// alias/name substring match, both case-insensitive. Returns null rather
+// than guessing when nothing matches — callers must not fall back to an
+// arbitrary destination on a miss.
+export const findDestinationSlugByQuery = createServerFn({ method: "GET" })
+  .inputValidator((input: unknown) => z.object({ query: z.string() }).parse(input))
+  .handler(async ({ data }): Promise<{ slug: string | null }> => {
+    const q = data.query.trim().toLowerCase();
+    if (!q) return { slug: null };
+
+    const { data: rows, error } = await supabase
+      .from("destinations")
+      .select("slug, name, aliases")
+      .eq("status", "published");
+
+    if (error) {
+      console.error("[findDestinationSlugByQuery] query failed", error);
+      return { slug: null };
+    }
+    if (!rows || rows.length === 0) return { slug: null };
+
+    const bySlug = rows.find((d) => d.slug.toLowerCase() === q);
+    if (bySlug) return { slug: bySlug.slug };
+
+    const byAlias = rows.find((d) => {
+      const name = d.name.toLowerCase();
+      return (
+        name.includes(q) ||
+        d.aliases.some((a) => {
+          const alias = a.toLowerCase();
+          return alias === q || alias.includes(q) || q.includes(alias);
+        })
+      );
+    });
+    if (byAlias) return { slug: byAlias.slug };
+
+    return { slug: null };
+  });
