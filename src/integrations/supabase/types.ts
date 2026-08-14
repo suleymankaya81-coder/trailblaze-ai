@@ -54,67 +54,118 @@ export type Database = {
       }
       destinations: {
         Row: {
+          affiliate_potential: Json
           aliases: string[]
           avg_daily_budget: number | null
           best_season: string | null
+          best_seasons: string[]
           camping_score: number | null
           created_at: string
+          destination_type: string | null
+          experience_tags: string[]
           gallery: string[]
+          gateway_cities: string[]
           hero_image: string | null
+          homepage_eligible: boolean
           id: string
+          inventory_priority: string | null
           name: string
+          notes: string | null
+          parent_slug: string | null
+          plan_builder_eligible: boolean
+          primary_keyword: string | null
+          recommended_duration: string | null
           region: string | null
+          relevance: Json
           scenic_score: number | null
+          secondary_keywords: string[]
           seo_description: string | null
+          seo_eligible: boolean
           seo_title: string | null
           similar_slugs: string[]
           slug: string
+          state: string | null
           status: string
           tagline: string | null
+          tier: string | null
           trip_duration_days: string | null
           trip_tags: string[]
           updated_at: string
         }
         Insert: {
+          affiliate_potential?: Json
           aliases?: string[]
           avg_daily_budget?: number | null
           best_season?: string | null
+          best_seasons?: string[]
           camping_score?: number | null
           created_at?: string
+          destination_type?: string | null
+          experience_tags?: string[]
           gallery?: string[]
+          gateway_cities?: string[]
           hero_image?: string | null
+          homepage_eligible?: boolean
           id?: string
+          inventory_priority?: string | null
           name: string
+          notes?: string | null
+          parent_slug?: string | null
+          plan_builder_eligible?: boolean
+          primary_keyword?: string | null
+          recommended_duration?: string | null
           region?: string | null
+          relevance?: Json
           scenic_score?: number | null
+          secondary_keywords?: string[]
           seo_description?: string | null
+          seo_eligible?: boolean
           seo_title?: string | null
           similar_slugs?: string[]
           slug: string
+          state?: string | null
           status?: string
           tagline?: string | null
+          tier?: string | null
           trip_duration_days?: string | null
           trip_tags?: string[]
           updated_at?: string
         }
         Update: {
+          affiliate_potential?: Json
           aliases?: string[]
           avg_daily_budget?: number | null
           best_season?: string | null
+          best_seasons?: string[]
           camping_score?: number | null
           created_at?: string
+          destination_type?: string | null
+          experience_tags?: string[]
           gallery?: string[]
+          gateway_cities?: string[]
           hero_image?: string | null
+          homepage_eligible?: boolean
           id?: string
+          inventory_priority?: string | null
           name?: string
+          notes?: string | null
+          parent_slug?: string | null
+          plan_builder_eligible?: boolean
+          primary_keyword?: string | null
+          recommended_duration?: string | null
           region?: string | null
+          relevance?: Json
           scenic_score?: number | null
+          secondary_keywords?: string[]
           seo_description?: string | null
+          seo_eligible?: boolean
           seo_title?: string | null
           similar_slugs?: string[]
           slug?: string
+          state?: string | null
           status?: string
           tagline?: string | null
+          tier?: string | null
           trip_duration_days?: string | null
           trip_tags?: string[]
           updated_at?: string
