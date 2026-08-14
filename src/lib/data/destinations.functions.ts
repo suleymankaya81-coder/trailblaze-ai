@@ -115,7 +115,6 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       .sort((a, b) => order.indexOf(a.category) - order.indexOf(b.category))
       .map(toOfferView);
 
-
     const byCategory = (categories: Tables<"offers">["category"][]) =>
       (offers ?? []).filter((o) => categories.includes(o.category)).map(toOfferView);
 
@@ -188,9 +187,7 @@ export const getFeaturedGearOffers = createServerFn({ method: "GET" }).handler(
 
     const destinationIds = [
       ...new Set(
-        distinctOffers
-          .map((o) => o.destination_id)
-          .filter((id): id is string => id !== null),
+        distinctOffers.map((o) => o.destination_id).filter((id): id is string => id !== null),
       ),
     ];
     const { data: destRows, error: destError } = await supabase
@@ -214,5 +211,46 @@ export const getFeaturedGearOffers = createServerFn({ method: "GET" }).handler(
         return { ...toOfferView(offer), destinationSlug: dest.slug, destinationName: dest.name };
       })
       .filter((o): o is FeaturedGearOffer => o !== null);
+  },
+);
+
+export type HomepageDestination = {
+  id: string;
+  slug: string;
+  name: string;
+  region: string;
+  heroImage: string;
+  bestSeason: string | null;
+  tripDurationDays: string | null;
+};
+
+// Homepage module: a handful of published destinations for the "3 large +
+// 3 compact" grid. Ranked by scenic_score (the closest honest proxy for
+// "featured" the schema has — there's no real popularity metric) with name
+// as a stable tiebreaker.
+export const getHomepageDestinations = createServerFn({ method: "GET" }).handler(
+  async (): Promise<HomepageDestination[]> => {
+    const { data, error } = await supabase
+      .from("destinations")
+      .select("id, slug, name, region, hero_image, best_season, trip_duration_days")
+      .eq("status", "published")
+      .order("scenic_score", { ascending: false, nullsFirst: false })
+      .order("name", { ascending: true })
+      .limit(6);
+
+    if (error) {
+      console.error("[getHomepageDestinations] query failed", error);
+      return [];
+    }
+
+    return (data ?? []).map((d) => ({
+      id: d.id,
+      slug: d.slug,
+      name: d.name,
+      region: d.region ?? "",
+      heroImage: d.hero_image ?? "",
+      bestSeason: d.best_season,
+      tripDurationDays: d.trip_duration_days,
+    }));
   },
 );

@@ -5,20 +5,32 @@ import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { SearchBar } from "@/components/site/SearchBar";
 import { Button } from "@/components/ui/button";
-import { destinations } from "@/data/destinations";
-import { getFeaturedGearOffers, type FeaturedGearOffer } from "@/lib/data/destinations.functions";
+import {
+  getFeaturedGearOffers,
+  getHomepageDestinations,
+  type FeaturedGearOffer,
+  type HomepageDestination,
+} from "@/lib/data/destinations.functions";
 
 export const Route = createFileRoute("/")({
-  loader: async (): Promise<{ gearOffers: FeaturedGearOffer[] }> => {
-    // Defensive: this module is a homepage nice-to-have, so a Supabase
-    // hiccup should hide the section, never take down the whole homepage.
-    try {
-      const gearOffers = await getFeaturedGearOffers();
-      return { gearOffers };
-    } catch (err) {
-      console.error("[/] getFeaturedGearOffers failed", err);
-      return { gearOffers: [] };
-    }
+  loader: async (): Promise<{
+    gearOffers: FeaturedGearOffer[];
+    homeDestinations: HomepageDestination[];
+  }> => {
+    // Defensive: both of these are homepage nice-to-haves, so a Supabase
+    // hiccup on either should just hide that section, never take down the
+    // whole homepage.
+    const [gearOffers, homeDestinations] = await Promise.all([
+      getFeaturedGearOffers().catch((err) => {
+        console.error("[/] getFeaturedGearOffers failed", err);
+        return [];
+      }),
+      getHomepageDestinations().catch((err) => {
+        console.error("[/] getHomepageDestinations failed", err);
+        return [];
+      }),
+    ]);
+    return { gearOffers, homeDestinations };
   },
   head: () => ({
     meta: [
@@ -108,9 +120,9 @@ const stories = [
 ];
 
 function HomePage() {
-  const { gearOffers } = Route.useLoaderData();
-  const largeDestinations = destinations.slice(0, 3);
-  const compactDestinations = destinations.slice(3, 6);
+  const { gearOffers, homeDestinations } = Route.useLoaderData();
+  const largeDestinations = homeDestinations.slice(0, 3);
+  const compactDestinations = homeDestinations.slice(3, 6);
 
   return (
     <div className="bg-background">
@@ -119,38 +131,42 @@ function HomePage() {
       <HomeHero />
 
       {/* DESTINATIONS — one grid: three large + three compact */}
-      <section id="destinations" className="bg-background py-20">
-        <div className="container-page">
-          <div className="mb-10 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-foreground/60">
-                Popular right now
-              </p>
-              <h2 className="mt-2 font-serif text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-                Where travelers are headed
-              </h2>
+      {homeDestinations.length > 0 && (
+        <section id="destinations" className="bg-background py-20">
+          <div className="container-page">
+            <div className="mb-10 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.22em] text-foreground/60">
+                  Popular right now
+                </p>
+                <h2 className="mt-2 font-serif text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+                  Where travelers are headed
+                </h2>
+              </div>
+              <a
+                href="#"
+                className="text-sm font-semibold text-foreground/80 hover:text-foreground hover:underline"
+              >
+                View all destinations <ArrowRight className="ml-1 inline h-3.5 w-3.5" />
+              </a>
             </div>
-            <a
-              href="#"
-              className="text-sm font-semibold text-foreground/80 hover:text-foreground hover:underline"
-            >
-              View all destinations <ArrowRight className="ml-1 inline h-3.5 w-3.5" />
-            </a>
-          </div>
 
-          <div className="grid gap-5 md:grid-cols-3">
-            {largeDestinations.map((d) => (
-              <DestinationCard key={d.slug} d={d} aspect="aspect-[4/5]" titleClass="text-2xl" />
-            ))}
-          </div>
+            <div className="grid gap-5 md:grid-cols-3">
+              {largeDestinations.map((d) => (
+                <DestinationCard key={d.slug} d={d} aspect="aspect-[4/5]" titleClass="text-2xl" />
+              ))}
+            </div>
 
-          <div className="mt-5 grid gap-4 sm:grid-cols-3">
-            {compactDestinations.map((d) => (
-              <DestinationCard key={d.slug} d={d} aspect="aspect-[4/3]" titleClass="text-lg" />
-            ))}
+            {compactDestinations.length > 0 && (
+              <div className="mt-5 grid gap-4 sm:grid-cols-3">
+                {compactDestinations.map((d) => (
+                  <DestinationCard key={d.slug} d={d} aspect="aspect-[4/3]" titleClass="text-lg" />
+                ))}
+              </div>
+            )}
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* RENTALS & GEAR — real Supabase offers, single section (no static placeholders) */}
       {gearOffers.length > 0 && (
@@ -384,10 +400,14 @@ function DestinationCard({
   aspect,
   titleClass,
 }: {
-  d: (typeof destinations)[number];
+  d: HomepageDestination;
   aspect: string;
   titleClass: string;
 }) {
+  const meta = [d.tripDurationDays, d.bestSeason]
+    .filter((v): v is string => Boolean(v))
+    .join(" · ");
+
   return (
     <Link to="/destinations/$slug" params={{ slug: d.slug }} className="group block">
       <div className={`relative ${aspect} overflow-hidden rounded-2xl`}>
@@ -403,9 +423,7 @@ function DestinationCard({
         </div>
       </div>
       <div className="mt-3 flex items-center justify-between text-sm">
-        <span className="text-foreground/70">
-          {d.tripDurationDays} · {d.bestSeason}
-        </span>
+        <span className="text-foreground/70">{meta}</span>
         <span className="font-semibold text-foreground/80 group-hover:text-foreground group-hover:underline">
           Plan a trip <ArrowRight className="ml-0.5 inline h-3.5 w-3.5" />
         </span>
