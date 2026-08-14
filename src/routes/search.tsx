@@ -21,6 +21,25 @@ export const Route = createFileRoute("/search")({
     // instead of guessing at a destination.
     return { q };
   },
+  head: () => ({
+    meta: [
+      { title: "Search Destinations — Minialife" },
+      {
+        name: "description",
+        content:
+          "Search Minialife for a national park, lake, desert or road-trip destination and open its full travel guide.",
+      },
+      // Query-driven, thin result page — kept out of search indexes.
+      { name: "robots", content: "noindex, follow" },
+      { property: "og:title", content: "Search Destinations — Minialife" },
+      {
+        property: "og:description",
+        content: "Find the outdoor destination you're planning and open its full guide.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
+    ],
+  }),
   component: NoSearchMatch,
 });
 
