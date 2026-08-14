@@ -297,12 +297,15 @@ export const findDestinationSlugByQuery = createServerFn({ method: "GET" })
 // Plan Builder categories on the homepage — value must match a trip_tags
 // entry written by the migration; label is what's shown on the card.
 export const TRIP_TAG_OPTIONS = [
-  { value: "weekend-escape", label: "Weekend Escape" },
-  { value: "rv-road-trip", label: "RV Road Trip" },
-  { value: "glamping-getaway", label: "Glamping Getaway" },
-  { value: "family-camping", label: "Family Camping" },
-  { value: "mountain-escape", label: "Mountain Escape" },
-  { value: "desert-adventure", label: "Desert Adventure" },
+  { value: "weekend", label: "Weekend Escape" },
+  { value: "rv_road_trip", label: "RV Road Trip" },
+  { value: "glamping", label: "Glamping Getaway" },
+  { value: "family", label: "Family Camping" },
+  { value: "mountain", label: "Mountain Escape" },
+  { value: "desert", label: "Desert Adventure" },
+  { value: "lake", label: "Lakeside" },
+  { value: "coastal", label: "Coastal" },
+  { value: "national_park", label: "National Parks" },
 ] as const;
 
 // Full destinations list (for /destinations), optionally filtered by a
