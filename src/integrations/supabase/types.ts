@@ -72,6 +72,7 @@ export type Database = {
           status: string
           tagline: string | null
           trip_duration_days: string | null
+          trip_tags: string[]
           updated_at: string
         }
         Insert: {
@@ -93,6 +94,7 @@ export type Database = {
           status?: string
           tagline?: string | null
           trip_duration_days?: string | null
+          trip_tags?: string[]
           updated_at?: string
         }
         Update: {
@@ -114,6 +116,7 @@ export type Database = {
           status?: string
           tagline?: string | null
           trip_duration_days?: string | null
+          trip_tags?: string[]
           updated_at?: string
         }
         Relationships: []
