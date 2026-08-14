@@ -1,8 +1,10 @@
 import { createServerFn } from "@tanstack/react-start";
+import { getRequestHeader } from "@tanstack/react-start/server";
 import { z } from "zod";
 
 import { supabase } from "@/integrations/supabase/client";
 import { getAffiliateAdapter } from "@/lib/affiliates";
+import { isBotUserAgent, hasAfsrcParam } from "@/lib/affiliates/compliance";
 
 const InputSchema = z.object({
   offerId: z.string(),
@@ -25,16 +27,29 @@ export const trackAndRedirect = createServerFn({ method: "POST" })
       throw new Error("Offer is not bookable yet");
     }
 
+    // Sovrn Code of Conduct: links already carrying afsrc=1 belong to another
+    // affiliate — pass them through untouched, never re-affiliate them.
+    if (hasAfsrcParam(offer.external_url)) {
+      return { redirectUrl: offer.external_url };
+    }
+
     const sessionId = data.sessionId ?? crypto.randomUUID();
 
-    const { error: insertError } = await supabase.from("click_events").insert({
-      offer_id: offer.id,
-      destination_slug: data.destinationSlug,
-      session_id: sessionId,
-      referrer_page: data.referrerPage ?? null,
-    });
-    // A tracking hiccup should never block the user's booking flow.
-    if (insertError) console.error("[trackAndRedirect] click_events insert failed", insertError);
+    // Bot click filter: automated traffic must never be recorded as a
+    // Reader click.
+    const userAgent = getRequestHeader("user-agent") ?? "";
+    const isBot = isBotUserAgent(userAgent);
+
+    if (!isBot) {
+      const { error: insertError } = await supabase.from("click_events").insert({
+        offer_id: offer.id,
+        destination_slug: data.destinationSlug,
+        session_id: sessionId,
+        referrer_page: data.referrerPage ?? null,
+      });
+      // A tracking hiccup should never block the user's booking flow.
+      if (insertError) console.error("[trackAndRedirect] click_events insert failed", insertError);
+    }
 
     const adapter = getAffiliateAdapter(offer.partner);
     const redirectUrl = adapter.buildDeepLink(
