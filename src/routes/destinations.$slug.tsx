@@ -76,6 +76,8 @@ export const Route = createFileRoute("/destinations/$slug")({
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:image", content: d.heroImage },
         { "script:ld+json": jsonLd },
+        // Thin pages (no tagline or hero yet) stay out of search indexes.
+        ...(d.tagline && d.heroImage ? [] : [{ name: "robots", content: "noindex, follow" }]),
       ],
     };
   },
