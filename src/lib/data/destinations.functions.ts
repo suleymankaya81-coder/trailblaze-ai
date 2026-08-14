@@ -115,7 +115,6 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       .sort((a, b) => order.indexOf(a.category) - order.indexOf(b.category))
       .map(toOfferView);
 
-
     const byCategory = (categories: Tables<"offers">["category"][]) =>
       (offers ?? []).filter((o) => categories.includes(o.category)).map(toOfferView);
 
@@ -188,9 +187,7 @@ export const getFeaturedGearOffers = createServerFn({ method: "GET" }).handler(
 
     const destinationIds = [
       ...new Set(
-        distinctOffers
-          .map((o) => o.destination_id)
-          .filter((id): id is string => id !== null),
+        distinctOffers.map((o) => o.destination_id).filter((id): id is string => id !== null),
       ),
     ];
     const { data: destRows, error: destError } = await supabase
@@ -216,3 +213,126 @@ export const getFeaturedGearOffers = createServerFn({ method: "GET" }).handler(
       .filter((o): o is FeaturedGearOffer => o !== null);
   },
 );
+
+export type HomepageDestination = {
+  id: string;
+  slug: string;
+  name: string;
+  region: string;
+  heroImage: string;
+  bestSeason: string | null;
+  tripDurationDays: string | null;
+};
+
+// Homepage module: a handful of published destinations for the "3 large +
+// 3 compact" grid. Ranked by scenic_score (the closest honest proxy for
+// "featured" the schema has — there's no real popularity metric) with name
+// as a stable tiebreaker.
+export const getHomepageDestinations = createServerFn({ method: "GET" }).handler(
+  async (): Promise<HomepageDestination[]> => {
+    const { data, error } = await supabase
+      .from("destinations")
+      .select("id, slug, name, region, hero_image, best_season, trip_duration_days")
+      .eq("status", "published")
+      .order("scenic_score", { ascending: false, nullsFirst: false })
+      .order("name", { ascending: true })
+      .limit(6);
+
+    if (error) {
+      console.error("[getHomepageDestinations] query failed", error);
+      return [];
+    }
+
+    return (data ?? []).map((d) => ({
+      id: d.id,
+      slug: d.slug,
+      name: d.name,
+      region: d.region ?? "",
+      heroImage: d.hero_image ?? "",
+      bestSeason: d.best_season,
+      tripDurationDays: d.trip_duration_days,
+    }));
+  },
+);
+
+// Site-search matching against the live catalog: exact slug, then
+// alias/name substring match, both case-insensitive. Returns null rather
+// than guessing when nothing matches — callers must not fall back to an
+// arbitrary destination on a miss.
+export const findDestinationSlugByQuery = createServerFn({ method: "GET" })
+  .inputValidator((input: unknown) => z.object({ query: z.string() }).parse(input))
+  .handler(async ({ data }): Promise<{ slug: string | null }> => {
+    const q = data.query.trim().toLowerCase();
+    if (!q) return { slug: null };
+
+    const { data: rows, error } = await supabase
+      .from("destinations")
+      .select("slug, name, aliases")
+      .eq("status", "published");
+
+    if (error) {
+      console.error("[findDestinationSlugByQuery] query failed", error);
+      return { slug: null };
+    }
+    if (!rows || rows.length === 0) return { slug: null };
+
+    const bySlug = rows.find((d) => d.slug.toLowerCase() === q);
+    if (bySlug) return { slug: bySlug.slug };
+
+    const byAlias = rows.find((d) => {
+      const name = d.name.toLowerCase();
+      return (
+        name.includes(q) ||
+        d.aliases.some((a) => {
+          const alias = a.toLowerCase();
+          return alias === q || alias.includes(q) || q.includes(alias);
+        })
+      );
+    });
+    if (byAlias) return { slug: byAlias.slug };
+
+    return { slug: null };
+  });
+
+// Plan Builder categories on the homepage — value must match a trip_tags
+// entry written by the migration; label is what's shown on the card.
+export const TRIP_TAG_OPTIONS = [
+  { value: "weekend-escape", label: "Weekend Escape" },
+  { value: "rv-road-trip", label: "RV Road Trip" },
+  { value: "glamping-getaway", label: "Glamping Getaway" },
+  { value: "family-camping", label: "Family Camping" },
+  { value: "mountain-escape", label: "Mountain Escape" },
+  { value: "desert-adventure", label: "Desert Adventure" },
+] as const;
+
+// Full destinations list (for /destinations), optionally filtered by a
+// single trip_tags value. Same shape as HomepageDestination — both are
+// "just enough to render a destination card."
+export const getDestinationsList = createServerFn({ method: "GET" })
+  .inputValidator((input: unknown) => z.object({ tag: z.string().optional() }).parse(input))
+  .handler(async ({ data }): Promise<HomepageDestination[]> => {
+    let query = supabase
+      .from("destinations")
+      .select("id, slug, name, region, hero_image, best_season, trip_duration_days, trip_tags")
+      .eq("status", "published")
+      .order("name", { ascending: true });
+
+    if (data.tag) query = query.contains("trip_tags", [data.tag]);
+
+    const { data: rows, error } = await query;
+
+    if (error) {
+      console.error("[getDestinationsList] query failed", error);
+      return [];
+    }
+
+    return (rows ?? []).map((d) => ({
+      id: d.id,
+      slug: d.slug,
+      name: d.name,
+      region: d.region ?? "",
+      heroImage: d.hero_image ?? "",
+      bestSeason: d.best_season,
+      tripDurationDays: d.trip_duration_days,
+    }));
+  });

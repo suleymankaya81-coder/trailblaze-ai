@@ -199,7 +199,11 @@ function Hero({ dest }: { dest: DestinationView }) {
     { icon: <MapPin className="h-4 w-4" />, label: "Location", value: dest.region || "—" },
   ];
   if (dest.bestSeason)
-    glance.push({ icon: <Sun className="h-4 w-4" />, label: "Best season", value: dest.bestSeason });
+    glance.push({
+      icon: <Sun className="h-4 w-4" />,
+      label: "Best season",
+      value: dest.bestSeason,
+    });
   if (dest.tripDurationDays)
     glance.push({
       icon: <Calendar className="h-4 w-4" />,
@@ -300,15 +304,7 @@ function Hero({ dest }: { dest: DestinationView }) {
 
 // Card imagery comes from remote sources that can 404; fall back to a neutral
 // surface instead of showing a broken-image glyph inside a premium card.
-function CardImg({
-  src,
-  alt,
-  className,
-}: {
-  src: string;
-  alt: string;
-  className?: string;
-}) {
+function CardImg({ src, alt, className }: { src: string; alt: string; className?: string }) {
   const [failed, setFailed] = useState(false);
   const ref = useRef<HTMLImageElement>(null);
 
@@ -351,7 +347,10 @@ function PriceTag({
     return (
       <span className={className}>
         ${offer.priceValue}
-        <span className="whitespace-nowrap text-xs font-normal text-muted-foreground"> / {unit}</span>
+        <span className="whitespace-nowrap text-xs font-normal text-muted-foreground">
+          {" "}
+          / {unit}
+        </span>
       </span>
     );
   }
@@ -435,15 +434,7 @@ function OfferCta({
   );
 }
 
-function SectionHeader({
-  title,
-  action,
-  id,
-}: {
-  title: string;
-  action?: ReactNode;
-  id?: string;
-}) {
+function SectionHeader({ title, action, id }: { title: string; action?: ReactNode; id?: string }) {
   return (
     <div className="mb-5 flex flex-wrap items-end justify-between gap-3" id={id}>
       <h2 className="font-display text-2xl text-foreground md:text-[28px]">{title}</h2>
@@ -498,6 +489,9 @@ function TopStays({ dest }: { dest: DestinationView }) {
         title="Where you'll want to sleep"
         action={<TextLink>View all stays</TextLink>}
       />
+      <p className="-mt-3 mb-4 text-[11px] text-muted-foreground">
+        Checks availability with the partner directly — not a confirmed booking on our end.
+      </p>
 
       <div className="flex flex-wrap items-center gap-2">
         {["All", ...cats].map((c) => (
@@ -560,7 +554,6 @@ function StayCard({
         <CardImg
           src={offer.image ?? ""}
           alt={offer.title}
-
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
         {featured && (
@@ -616,11 +609,19 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
 
   const items = ai
     ? [
-        { icon: <Hotel className="h-4 w-4" />, label: "Accommodation", value: ai.budget.accommodation },
+        {
+          icon: <Hotel className="h-4 w-4" />,
+          label: "Accommodation",
+          value: ai.budget.accommodation,
+        },
         { icon: <Truck className="h-4 w-4" />, label: "Rental", value: ai.budget.rental },
         { icon: <UtensilsCrossed className="h-4 w-4" />, label: "Food", value: ai.budget.food },
         { icon: <Fuel className="h-4 w-4" />, label: "Fuel", value: ai.budget.fuel },
-        { icon: <Mountain className="h-4 w-4" />, label: "Activities", value: ai.budget.activities },
+        {
+          icon: <Mountain className="h-4 w-4" />,
+          label: "Activities",
+          value: ai.budget.activities,
+        },
         {
           icon: <ShoppingBasket className="h-4 w-4" />,
           label: "Gear & essentials",
@@ -694,6 +695,9 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
         title="Don't bring everything — rent what makes sense here"
         action={<TextLink>View all rentals</TextLink>}
       />
+      <p className="-mt-3 mb-4 text-[11px] text-muted-foreground">
+        Checks availability with the partner directly — not a confirmed booking on our end.
+      </p>
       {rentals.length === 0 ? (
         <EmptyState message="No rental partners listed for this destination yet." />
       ) : (
@@ -714,7 +718,6 @@ function RentalTile({ offer, destinationSlug }: { offer: OfferView; destinationS
         <CardImg
           src={offer.image ?? ""}
           alt={offer.title}
-
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/20 to-transparent" />
@@ -767,7 +770,6 @@ function ThingsToDo({ dest }: { dest: DestinationView }) {
                 <CardImg
                   src={a.image ?? ""}
                   alt={a.title}
-
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
@@ -812,7 +814,10 @@ const SERVICE_META: Record<string, { icon: ReactNode; sub: string }> = {
   esim: { icon: <Wifi className="h-4 w-4" />, sub: "Stay connected anywhere" },
   park_pass: { icon: <Trees className="h-4 w-4" />, sub: "Official park passes & info" },
   travel_card: { icon: <CreditCard className="h-4 w-4" />, sub: "Spend without foreign fees" },
-  offline_maps: { icon: <Map className="h-4 w-4" />, sub: "Download trails before you lose signal" },
+  offline_maps: {
+    icon: <Map className="h-4 w-4" />,
+    sub: "Download trails before you lose signal",
+  },
 };
 
 function TravelServices({ dest }: { dest: DestinationView }) {
@@ -947,14 +952,24 @@ type PackKey = keyof EnrichResult["packing"] | "hiking";
 const PACK_CATEGORIES: { key: PackKey; label: string; icon: ReactNode; hint: string }[] = [
   { key: "clothing", label: "Clothing", icon: <Shirt className="h-5 w-5" />, hint: "Layer up" },
   { key: "camping", label: "Camping", icon: <Tent className="h-5 w-5" />, hint: "Sleep system" },
-  { key: "cooking", label: "Cooking", icon: <Flame className="h-5 w-5" />, hint: "Stove & cookware" },
+  {
+    key: "cooking",
+    label: "Cooking",
+    icon: <Flame className="h-5 w-5" />,
+    hint: "Stove & cookware",
+  },
   {
     key: "photography",
     label: "Photography",
     icon: <Camera className="h-5 w-5" />,
     hint: "Capture it",
   },
-  { key: "hiking", label: "Hiking", icon: <Footprints className="h-5 w-5" />, hint: "Boots & poles" },
+  {
+    key: "hiking",
+    label: "Hiking",
+    icon: <Footprints className="h-5 w-5" />,
+    hint: "Boots & poles",
+  },
   { key: "kids", label: "Kids", icon: <Baby className="h-5 w-5" />, hint: "Family must-haves" },
   { key: "pets", label: "Pets", icon: <PawPrint className="h-5 w-5" />, hint: "Travel with pets" },
 ];
@@ -1080,7 +1095,6 @@ function Essentials({ dest }: { dest: DestinationView }) {
                 <CardImg
                   src={e.image ?? ""}
                   alt={e.title}
-
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
@@ -1168,7 +1182,6 @@ function Toolkit({
               <CardImg
                 src={c.img}
                 alt={c.title}
-
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/50 to-ink/10" />
@@ -1344,7 +1357,6 @@ function SimilarDestinations({ dest }: { dest: DestinationView }) {
                 <CardImg
                   src={d.heroImage}
                   alt={d.name}
-
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/25 to-transparent" />
@@ -1423,9 +1435,7 @@ function FinalCta({ dest }: { dest: DestinationView }) {
             Save my trip plan
           </button>
           {state === "error" && (
-            <p className="text-[11px] text-off-white/80">
-              Something went wrong. Please try again.
-            </p>
+            <p className="text-[11px] text-off-white/80">Something went wrong. Please try again.</p>
           )}
         </form>
       ) : state === "saved" ? (
@@ -1439,7 +1449,7 @@ function FinalCta({ dest }: { dest: DestinationView }) {
           disabled={state === "saving"}
           className="mt-5 inline-flex w-full items-center justify-center gap-1.5 rounded-full bg-off-white px-4 py-2.5 text-xs font-semibold text-forest transition hover:bg-off-white/90 disabled:opacity-70"
         >
-          {state === "saving" ? "Saving…" : "Start planning my trip"}
+          {state === "saving" ? "Saving…" : "Build my trip"}
           <ArrowRight className="h-3.5 w-3.5" />
         </button>
       )}

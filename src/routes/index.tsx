@@ -1,24 +1,49 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Backpack, Compass, MapPin, Sparkles, Tent, Wallet } from "lucide-react";
+import {
+  ArrowRight,
+  Backpack,
+  Compass,
+  MapPin,
+  Mountain,
+  Sparkles,
+  Sun,
+  Tent,
+  Truck,
+  Users,
+  Wallet,
+} from "lucide-react";
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { SearchBar } from "@/components/site/SearchBar";
 import { Button } from "@/components/ui/button";
-import { destinations } from "@/data/destinations";
-import { getFeaturedGearOffers, type FeaturedGearOffer } from "@/lib/data/destinations.functions";
+import {
+  getFeaturedGearOffers,
+  getHomepageDestinations,
+  TRIP_TAG_OPTIONS,
+  type FeaturedGearOffer,
+  type HomepageDestination,
+} from "@/lib/data/destinations.functions";
 
 export const Route = createFileRoute("/")({
-  loader: async (): Promise<{ gearOffers: FeaturedGearOffer[] }> => {
-    // Defensive: this module is a homepage nice-to-have, so a Supabase
-    // hiccup should hide the section, never take down the whole homepage.
-    try {
-      const gearOffers = await getFeaturedGearOffers();
-      return { gearOffers };
-    } catch (err) {
-      console.error("[/] getFeaturedGearOffers failed", err);
-      return { gearOffers: [] };
-    }
+  loader: async (): Promise<{
+    gearOffers: FeaturedGearOffer[];
+    homeDestinations: HomepageDestination[];
+  }> => {
+    // Defensive: both of these are homepage nice-to-haves, so a Supabase
+    // hiccup on either should just hide that section, never take down the
+    // whole homepage.
+    const [gearOffers, homeDestinations] = await Promise.all([
+      getFeaturedGearOffers().catch((err) => {
+        console.error("[/] getFeaturedGearOffers failed", err);
+        return [];
+      }),
+      getHomepageDestinations().catch((err) => {
+        console.error("[/] getHomepageDestinations failed", err);
+        return [];
+      }),
+    ]);
+    return { gearOffers, homeDestinations };
   },
   head: () => ({
     meta: [
@@ -46,6 +71,14 @@ export const Route = createFileRoute("/")({
 
 const img = (id: string, w = 1200) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
+
+// Icon-forward, not photo-forward — deliberately: this site already has
+// one image-mismatch incident behind it, and there's no real per-tag
+// photography to source without risking another one.
+const planBuilderCards = TRIP_TAG_OPTIONS.map((t, i) => ({
+  ...t,
+  icon: [Tent, Truck, Sparkles, Users, Mountain, Sun][i] ?? Tent,
+}));
 
 const stayTypes = [
   { name: "Campgrounds", image: img("photo-1504280390367-361c6d9f38f4") },
@@ -108,9 +141,9 @@ const stories = [
 ];
 
 function HomePage() {
-  const { gearOffers } = Route.useLoaderData();
-  const largeDestinations = destinations.slice(0, 3);
-  const compactDestinations = destinations.slice(3, 6);
+  const { gearOffers, homeDestinations } = Route.useLoaderData();
+  const largeDestinations = homeDestinations.slice(0, 3);
+  const compactDestinations = homeDestinations.slice(3, 6);
 
   return (
     <div className="bg-background">
@@ -119,34 +152,75 @@ function HomePage() {
       <HomeHero />
 
       {/* DESTINATIONS — one grid: three large + three compact */}
-      <section id="destinations" className="bg-background py-20">
-        <div className="container-page">
-          <div className="mb-10 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-foreground/60">
-                Popular right now
-              </p>
-              <h2 className="mt-2 font-serif text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-                Where travelers are headed
-              </h2>
+      {homeDestinations.length > 0 && (
+        <section id="destinations" className="bg-background py-20">
+          <div className="container-page">
+            <div className="mb-10 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.22em] text-foreground/60">
+                  Popular right now
+                </p>
+                <h2 className="mt-2 font-serif text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+                  Where travelers are headed
+                </h2>
+              </div>
+              <Link
+                to="/destinations"
+                className="text-sm font-semibold text-foreground/80 hover:text-foreground hover:underline"
+              >
+                View all destinations <ArrowRight className="ml-1 inline h-3.5 w-3.5" />
+              </Link>
             </div>
-            <a
-              href="#"
-              className="text-sm font-semibold text-foreground/80 hover:text-foreground hover:underline"
-            >
-              View all destinations <ArrowRight className="ml-1 inline h-3.5 w-3.5" />
-            </a>
-          </div>
 
-          <div className="grid gap-5 md:grid-cols-3">
-            {largeDestinations.map((d) => (
-              <DestinationCard key={d.slug} d={d} aspect="aspect-[4/5]" titleClass="text-2xl" />
-            ))}
-          </div>
+            <div className="grid gap-5 md:grid-cols-3">
+              {largeDestinations.map((d) => (
+                <DestinationCard key={d.slug} d={d} aspect="aspect-[4/5]" titleClass="text-2xl" />
+              ))}
+            </div>
 
-          <div className="mt-5 grid gap-4 sm:grid-cols-3">
-            {compactDestinations.map((d) => (
-              <DestinationCard key={d.slug} d={d} aspect="aspect-[4/3]" titleClass="text-lg" />
+            {compactDestinations.length > 0 && (
+              <div className="mt-5 grid gap-4 sm:grid-cols-3">
+                {compactDestinations.map((d) => (
+                  <DestinationCard key={d.slug} d={d} aspect="aspect-[4/3]" titleClass="text-lg" />
+                ))}
+              </div>
+            )}
+
+            {/* 6 featured cards are "currently highlighted," not "all we have." */}
+            <div className="mt-10 text-center">
+              <Link
+                to="/destinations"
+                className="inline-flex items-center gap-1.5 rounded-full border border-border px-6 py-2.5 text-sm font-semibold text-foreground transition hover:bg-muted"
+              >
+                Explore all destinations <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* PLAN BUILDER — trip-tag shortcuts into the filtered destinations list */}
+      <section className="bg-background py-16">
+        <div className="container-page">
+          <div className="mb-8">
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-foreground/60">
+              Plan Builder
+            </p>
+            <h2 className="mt-2 font-serif text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+              What kind of trip are you after?
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+            {planBuilderCards.map((c) => (
+              <Link
+                key={c.value}
+                to="/destinations"
+                search={{ tag: c.value }}
+                className="group flex flex-col items-center gap-2 rounded-2xl border border-border bg-card px-4 py-6 text-center transition hover:border-foreground/30 hover:shadow-soft"
+              >
+                <c.icon className="h-6 w-6 text-foreground/70 transition group-hover:text-foreground" />
+                <span className="text-sm font-semibold text-foreground">{c.label}</span>
+              </Link>
             ))}
           </div>
         </div>
@@ -300,7 +374,7 @@ function HomePage() {
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
                 >
-                  Start Planning <ArrowRight className="h-4 w-4" />
+                  Build my trip <ArrowRight className="h-4 w-4" />
                 </a>
               </Button>
             </div>
@@ -379,15 +453,19 @@ function HomeHero() {
 /* =========================================================
    SHARED
 ========================================================= */
-function DestinationCard({
+export function DestinationCard({
   d,
   aspect,
   titleClass,
 }: {
-  d: (typeof destinations)[number];
+  d: HomepageDestination;
   aspect: string;
   titleClass: string;
 }) {
+  const meta = [d.tripDurationDays, d.bestSeason]
+    .filter((v): v is string => Boolean(v))
+    .join(" · ");
+
   return (
     <Link to="/destinations/$slug" params={{ slug: d.slug }} className="group block">
       <div className={`relative ${aspect} overflow-hidden rounded-2xl`}>
@@ -403,9 +481,7 @@ function DestinationCard({
         </div>
       </div>
       <div className="mt-3 flex items-center justify-between text-sm">
-        <span className="text-foreground/70">
-          {d.tripDurationDays} · {d.bestSeason}
-        </span>
+        <span className="text-foreground/70">{meta}</span>
         <span className="font-semibold text-foreground/80 group-hover:text-foreground group-hover:underline">
           Plan a trip <ArrowRight className="ml-0.5 inline h-3.5 w-3.5" />
         </span>
