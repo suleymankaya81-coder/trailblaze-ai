@@ -31,10 +31,28 @@ function AffiliateDisclosurePage() {
           and tour operators (including RVshare, Hipcamp, Glamping Hub, Arrive Outdoors, REI, and
           Viator). When you click a "Check availability," "Reserve," or "Buy" link on this site and
           go on to book or purchase with one of these partners, we may earn a small commission.
+          Some of these relationships are managed through affiliate networks, including Sovrn
+          Commerce, which tracks the referral on the partner's behalf.
         </p>
         <p>
           This commission is paid by the partner out of their own marketing budget. It does not
           change the price you pay, and it is never added to a listing to make it more expensive.
+        </p>
+      </section>
+
+      <section>
+        <h2>How partner links are labelled</h2>
+        <p>
+          Every page that contains partner links carries a visible notice at the top, and each
+          outbound button is labelled with the partner it opens (for example "Partner link ·
+          Hipcamp"). Links open in a new tab and are marked as sponsored for search engines. We
+          never hide, cloak, or redirect a link through a page that disguises where you are going,
+          and clicks are only recorded when you actively click a button yourself.
+        </p>
+        <p>
+          Prices and availability shown on Minialife are estimates gathered at the time of
+          research. The partner's own site is always the source of truth for current pricing,
+          availability, and cancellation terms.
         </p>
       </section>
 

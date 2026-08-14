@@ -88,7 +88,9 @@ function PrivacyPage() {
         <h2>Third-party links and partners</h2>
         <p>
           The Site links to third-party booking and retail partners (such as RVshare, Hipcamp,
-          Glamping Hub, Arrive Outdoors, REI, and Viator). Once you leave Minialife, that partner's
+          Glamping Hub, Arrive Outdoors, REI, and Viator). Some of these links are managed through
+          affiliate networks, including Sovrn Commerce, which may receive the click and referral
+          information described above in order to attribute a referral and pay a commission. Once you leave Minialife, that partner's
           own privacy policy governs how they handle your information. We encourage you to review
           it before booking or purchasing.
         </p>
@@ -115,15 +117,18 @@ function PrivacyPage() {
       <section>
         <h2>Children's privacy</h2>
         <p>
-          The Site is not directed at children under 13, and we do not knowingly collect
-          information from children under 13.
+          The Site is not directed at children under 16, and we do not knowingly collect
+          information from children under 16. Our content and partner links are intended for
+          adults planning their own travel.
         </p>
       </section>
 
       <section>
         <h2>Your choices</h2>
         <p>
-          You can use most of the Site without providing any personal information. If you've
+          You can use most of the Site without providing any personal information. You can opt out
+          of click attribution at any time by clearing your browser's local storage or by contacting
+          us to request deletion of records tied to your session identifier. If you've
           contacted us and want your message or details removed, reach out through the{" "}
           <Link to="/contact">Contact</Link> page and we'll take care of it.
         </p>
