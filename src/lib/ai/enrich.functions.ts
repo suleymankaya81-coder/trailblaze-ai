@@ -104,7 +104,8 @@ Return ONLY valid JSON (no markdown, no prose) matching exactly this shape:
   }
 }
 
-Budget is USD for a 4-day trip for 2 people, realistic for ${dest.name}. Be specific to ${dest.name}. Never invent operator/lodging names.`,
+Budget is USD for a 4-day trip for 2 people, realistic for ${dest.name}. Be specific to ${dest.name}. Never invent operator/lodging names.
+Compliance rules for all text: never guarantee prices or availability, never claim to be the cheapest/best deal, never give medical, health or safety guarantees, never use urgency or discount language, and never use partner or merchant brand names in a promotional way. Frame prices and conditions as estimates that can change.`,
     });
 
     const cleaned = text

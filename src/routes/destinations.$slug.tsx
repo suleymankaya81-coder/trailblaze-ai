@@ -49,6 +49,7 @@ import {
 import { enrichDestination, type EnrichResult } from "@/lib/ai/enrich.functions";
 import { trackAndRedirect } from "@/lib/affiliates/track.functions";
 import { getOrCreateSessionId } from "@/lib/affiliates/session";
+import { outboundLinkTitle, partnerLabel } from "@/lib/affiliates/compliance";
 import { buildDestinationJsonLd } from "@/lib/seo/destinationJsonLd";
 import { saveTripPlan } from "@/lib/plans/savePlan.functions";
 import { getCapturedEmail, setCapturedEmail } from "@/lib/plans/session";
@@ -75,6 +76,8 @@ export const Route = createFileRoute("/destinations/$slug")({
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:image", content: d.heroImage },
         { "script:ld+json": jsonLd },
+        // Thin pages (no tagline or hero yet) stay out of search indexes.
+        ...(d.tagline && d.heroImage ? [] : [{ name: "robots", content: "noindex, follow" }]),
       ],
     };
   },
@@ -140,6 +143,8 @@ function DestinationPage() {
       <Hero dest={dest} />
 
       <main className="container-page space-y-14 py-12 md:space-y-16">
+        <AffiliateNotice />
+
         {/* 2 + 3 — Stays with the budget rail beside them on desktop */}
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
           <TopStays dest={dest} />
@@ -176,6 +181,21 @@ function DestinationPage() {
 
       <Footer />
     </div>
+  );
+}
+
+// Visible, above-the-fold disclosure required before any commercial link.
+function AffiliateNotice() {
+  return (
+    <aside className="flex flex-wrap items-center gap-x-2 gap-y-1 rounded-xl border border-border bg-card px-4 py-3 text-xs text-muted-foreground">
+      <span>
+        This page contains partner links. If you book or buy through them we may earn a commission,
+        at no extra cost to you. Prices shown are estimates and are set by the partner.
+      </span>
+      <Link to="/affiliate-disclosure" className="font-semibold text-forest underline underline-offset-2">
+        Affiliate disclosure
+      </Link>
+    </aside>
   );
 }
 
@@ -418,19 +438,27 @@ function OfferCta({
   }
 
   return (
-    <a
-      href={offer.externalUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      onClick={handleClick}
-      aria-disabled={pending}
-      className={`inline-flex items-center gap-1.5 rounded-full bg-copper ${pad} font-semibold text-off-white transition hover:bg-copper/90 ${
-        pending ? "pointer-events-none opacity-70" : ""
-      }`}
-    >
-      {label}
-      <ArrowRight className="h-3.5 w-3.5" />
-    </a>
+    <span className="inline-flex flex-col items-start gap-1">
+      <a
+        href={offer.externalUrl}
+        target="_blank"
+        rel="sponsored nofollow noopener noreferrer"
+        title={outboundLinkTitle(offer.partner, offer.externalUrl)}
+        onClick={handleClick}
+        aria-disabled={pending}
+        className={`inline-flex items-center gap-1.5 rounded-full bg-copper ${pad} font-semibold text-off-white transition hover:bg-copper/90 ${
+          pending ? "pointer-events-none opacity-70" : ""
+        }`}
+      >
+        {label}
+        <ArrowRight className="h-3.5 w-3.5" />
+      </a>
+      <span className="text-[10px] leading-tight text-muted-foreground">
+        {partnerLabel(offer.partner)
+          ? `Partner link · ${partnerLabel(offer.partner)}`
+          : "Partner link"}
+      </span>
+    </span>
   );
 }
 
@@ -881,7 +909,8 @@ function ServiceRow({ service, destinationSlug }: { service: OfferView; destinat
     <a
       href={service.externalUrl}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="sponsored nofollow noopener noreferrer"
+      title={outboundLinkTitle(service.partner, service.externalUrl)}
       onClick={service.commissionable ? handleClick : undefined}
       aria-disabled={pending}
       className={`${rowClass} ${pending ? "pointer-events-none opacity-70" : ""}`}

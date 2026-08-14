@@ -97,6 +97,19 @@ function AboutPage() {
               </p>
             </section>
             <section>
+              <h2 className="mb-2 font-display text-xl text-foreground">Who publishes Minialife</h2>
+              <p>
+                Minialife is an independent outdoor-travel publisher, run by a small editorial team
+                based in the United States. We write and edit every destination guide ourselves and
+                are solely responsible for the content on this site. Editorial questions, corrections,
+                and partner or affiliate-network enquiries all reach us at{" "}
+                <a href="mailto:hello@minialife.com" className="text-forest underline underline-offset-2">
+                  hello@minialife.com
+                </a>
+                ; we reply within a few business days.
+              </p>
+            </section>
+            <section>
               <h2 className="mb-2 font-display text-xl text-foreground">Get in touch</h2>
               <p>
                 Found a broken link, a wrong detail, or have a destination you'd like to see
