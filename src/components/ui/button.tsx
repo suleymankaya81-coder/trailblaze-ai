@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground shadow-soft hover:bg-primary/90",
-        hero: "bg-forest text-off-white shadow-lift hover:translate-y-[-1px] hover:shadow-lift",
+        hero: "bg-copper text-off-white shadow-lift hover:translate-y-[-1px] hover:bg-copper/90 hover:shadow-lift",
         sage: "bg-sage-deep text-off-white hover:bg-forest",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:

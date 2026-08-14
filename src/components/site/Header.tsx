@@ -10,11 +10,24 @@ export function Header() {
           <span className="text-lg font-bold tracking-tight">Minialife</span>
         </Link>
         <nav className="hidden flex-1 items-center gap-7 text-sm font-medium md:flex">
-          <Link to="/" className="text-foreground/80 hover:text-forest">Destinations</Link>
-          <a href="#stay-types" className="text-foreground/80 hover:text-forest">Stays</a>
-          <a href="#rentals" className="text-foreground/80 hover:text-forest">Rentals</a>
-          <a href="#stories" className="text-foreground/80 hover:text-forest">Stories</a>
-          <a href="#how" className="text-foreground/80 hover:text-forest">How it works</a>
+          <Link to="/" className="text-foreground/80 hover:text-foreground">
+            Destinations
+          </Link>
+          <a href="#stay-types" className="text-foreground/80 hover:text-foreground">
+            Stays
+          </a>
+          <a href="#rentals-gear" className="text-foreground/80 hover:text-foreground">
+            Rentals
+          </a>
+          <a href="#rentals-gear" className="text-foreground/80 hover:text-foreground">
+            Gear
+          </a>
+          <a href="#stories" className="text-foreground/80 hover:text-foreground">
+            Stories
+          </a>
+          <a href="#how" className="text-foreground/80 hover:text-foreground">
+            How it works
+          </a>
         </nav>
         <div className="flex items-center gap-2">
           <button
@@ -31,7 +44,7 @@ export function Header() {
           </button>
           <Link
             to="/"
-            className="rounded-full bg-forest px-4 py-2 text-xs font-semibold uppercase tracking-wider text-off-white hover:bg-ink"
+            className="rounded-full bg-copper px-4 py-2 text-xs font-semibold uppercase tracking-wider text-off-white hover:bg-copper/90"
           >
             Plan a trip
           </Link>
