@@ -69,7 +69,11 @@ function ContactPage() {
               <div>
                 <p className="text-sm font-semibold text-foreground">Response time</p>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  We typically reply within a few business days.
+                  We reply within a few business days — and within one business day for partner,
+                  merchant, or affiliate-network enquiries.
+                </p>
+                <p className="mt-2 text-xs text-muted-foreground">
+                  Minialife is an independent outdoor-travel publisher based in the United States.
                 </p>
               </div>
             </div>
