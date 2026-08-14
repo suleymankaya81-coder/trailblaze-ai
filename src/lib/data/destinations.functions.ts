@@ -305,34 +305,50 @@ export const TRIP_TAG_OPTIONS = [
   { value: "desert-adventure", label: "Desert Adventure" },
 ] as const;
 
+// Fixed page size for /destinations — 446 published rows and growing, so
+// this can never be an unbounded fetch. Divides evenly into the grid's
+// sm:grid-cols-2 lg:grid-cols-3 layout.
+export const DESTINATIONS_PAGE_SIZE = 24;
+
 // Full destinations list (for /destinations), optionally filtered by a
-// single trip_tags value. Same shape as HomepageDestination — both are
-// "just enough to render a destination card."
+// single trip_tags value and paginated. Same per-row shape as
+// HomepageDestination — both are "just enough to render a destination card."
 export const getDestinationsList = createServerFn({ method: "GET" })
-  .inputValidator((input: unknown) => z.object({ tag: z.string().optional() }).parse(input))
-  .handler(async ({ data }): Promise<HomepageDestination[]> => {
+  .inputValidator((input: unknown) =>
+    z.object({ tag: z.string().optional(), page: z.number().int().min(1).optional() }).parse(input),
+  )
+  .handler(async ({ data }): Promise<{ destinations: HomepageDestination[]; total: number }> => {
+    const page = data.page ?? 1;
+    const from = (page - 1) * DESTINATIONS_PAGE_SIZE;
+    const to = from + DESTINATIONS_PAGE_SIZE - 1;
+
     let query = supabase
       .from("destinations")
-      .select("id, slug, name, region, hero_image, best_season, trip_duration_days, trip_tags")
+      .select("id, slug, name, region, hero_image, best_season, trip_duration_days, trip_tags", {
+        count: "exact",
+      })
       .eq("status", "published")
       .order("name", { ascending: true });
 
     if (data.tag) query = query.contains("trip_tags", [data.tag]);
 
-    const { data: rows, error } = await query;
+    const { data: rows, error, count } = await query.range(from, to);
 
     if (error) {
       console.error("[getDestinationsList] query failed", error);
-      return [];
+      return { destinations: [], total: 0 };
     }
 
-    return (rows ?? []).map((d) => ({
-      id: d.id,
-      slug: d.slug,
-      name: d.name,
-      region: d.region ?? "",
-      heroImage: d.hero_image ?? "",
-      bestSeason: d.best_season,
-      tripDurationDays: d.trip_duration_days,
-    }));
+    return {
+      destinations: (rows ?? []).map((d) => ({
+        id: d.id,
+        slug: d.slug,
+        name: d.name,
+        region: d.region ?? "",
+        heroImage: d.hero_image ?? "",
+        bestSeason: d.best_season,
+        tripDurationDays: d.trip_duration_days,
+      })),
+      total: count ?? 0,
+    };
   });
