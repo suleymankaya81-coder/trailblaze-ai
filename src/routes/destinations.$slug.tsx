@@ -269,7 +269,7 @@ function Hero({ dest }: { dest: DestinationView }) {
           <div className="mt-9 flex flex-wrap gap-3">
             <a
               href="#stays"
-              className="inline-flex items-center justify-center rounded-full bg-forest px-6 py-3 text-sm font-semibold text-off-white transition hover:bg-forest/90"
+              className="inline-flex items-center justify-center rounded-full bg-copper px-6 py-3 text-sm font-semibold text-off-white transition hover:bg-copper/90"
             >
               See places to stay
             </a>
@@ -336,7 +336,7 @@ function CardImg({ src, alt, className }: { src: string; alt: string; className?
 function PriceTag({
   offer,
   fallbackUnit,
-  className = "text-lg font-semibold text-foreground",
+  className = "font-serif text-lg font-semibold text-foreground",
 }: {
   offer: OfferView;
   fallbackUnit: string;
@@ -424,7 +424,7 @@ function OfferCta({
       rel="noopener noreferrer"
       onClick={handleClick}
       aria-disabled={pending}
-      className={`inline-flex items-center gap-1.5 rounded-full bg-forest ${pad} font-semibold text-off-white transition hover:bg-forest/90 ${
+      className={`inline-flex items-center gap-1.5 rounded-full bg-copper ${pad} font-semibold text-off-white transition hover:bg-copper/90 ${
         pending ? "pointer-events-none opacity-70" : ""
       }`}
     >
@@ -501,7 +501,7 @@ function TopStays({ dest }: { dest: DestinationView }) {
             className={
               "rounded-full px-4 py-1.5 text-xs font-medium transition " +
               (tab === c
-                ? "bg-forest text-off-white"
+                ? "bg-ink text-off-white"
                 : "border border-border bg-card text-foreground/70 hover:bg-muted")
             }
           >
@@ -557,7 +557,7 @@ function StayCard({
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
         {featured && (
-          <span className="absolute left-0 top-4 rounded-r-full bg-ember px-3 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-off-white">
+          <span className="absolute left-0 top-4 rounded-r-full bg-ink/80 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-off-white">
             Minialife's pick
           </span>
         )}
@@ -644,7 +644,9 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
         </p>
       ) : (
         <>
-          <p className="mt-5 text-3xl font-semibold text-foreground">${total.toLocaleString()}</p>
+          <p className="mt-5 font-serif text-3xl font-semibold text-foreground">
+            ${total.toLocaleString()}
+          </p>
           <p className="text-xs text-muted-foreground">Estimated total</p>
 
           <ul className="mt-5 space-y-3 text-sm">
@@ -787,7 +789,7 @@ function ThingsToDo({ dest }: { dest: DestinationView }) {
                   <PriceTag
                     offer={a}
                     fallbackUnit="person"
-                    className="text-base font-semibold text-foreground"
+                    className="font-serif text-base font-semibold text-foreground"
                   />
                   <OfferCta
                     offer={a}
@@ -1107,7 +1109,7 @@ function Essentials({ dest }: { dest: DestinationView }) {
                   <PriceTag
                     offer={e}
                     fallbackUnit="item"
-                    className="text-sm font-semibold text-foreground"
+                    className="font-serif text-sm font-semibold text-foreground"
                   />
                   <OfferCta offer={e} label="View" size="sm" destinationSlug={dest.slug} />
                 </div>
@@ -1405,7 +1407,7 @@ function FinalCta({ dest }: { dest: DestinationView }) {
   };
 
   return (
-    <aside className="rounded-2xl bg-forest p-6 text-off-white shadow-lift">
+    <aside className="rounded-2xl bg-ink p-6 text-off-white shadow-lift">
       <Sparkles className="h-6 w-6 text-off-white/70" />
       <h2 className="mt-4 font-display text-xl">Ready to build your trip?</h2>
       <p className="mt-2 text-xs leading-relaxed text-off-white/80">
@@ -1430,7 +1432,7 @@ function FinalCta({ dest }: { dest: DestinationView }) {
           />
           <button
             type="submit"
-            className="w-full rounded-full bg-off-white px-4 py-2.5 text-xs font-semibold text-forest"
+            className="w-full rounded-full bg-off-white px-4 py-2.5 text-xs font-semibold text-copper"
           >
             Save my trip plan
           </button>
@@ -1447,7 +1449,7 @@ function FinalCta({ dest }: { dest: DestinationView }) {
           type="button"
           onClick={start}
           disabled={state === "saving"}
-          className="mt-5 inline-flex w-full items-center justify-center gap-1.5 rounded-full bg-off-white px-4 py-2.5 text-xs font-semibold text-forest transition hover:bg-off-white/90 disabled:opacity-70"
+          className="mt-5 inline-flex w-full items-center justify-center gap-1.5 rounded-full bg-off-white px-4 py-2.5 text-xs font-semibold text-copper transition hover:bg-off-white/90 disabled:opacity-70"
         >
           {state === "saving" ? "Saving…" : "Build my trip"}
           <ArrowRight className="h-3.5 w-3.5" />
