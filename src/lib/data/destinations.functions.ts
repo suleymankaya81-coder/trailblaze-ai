@@ -293,3 +293,46 @@ export const findDestinationSlugByQuery = createServerFn({ method: "GET" })
 
     return { slug: null };
   });
+
+// Plan Builder categories on the homepage — value must match a trip_tags
+// entry written by the migration; label is what's shown on the card.
+export const TRIP_TAG_OPTIONS = [
+  { value: "weekend-escape", label: "Weekend Escape" },
+  { value: "rv-road-trip", label: "RV Road Trip" },
+  { value: "glamping-getaway", label: "Glamping Getaway" },
+  { value: "family-camping", label: "Family Camping" },
+  { value: "mountain-escape", label: "Mountain Escape" },
+  { value: "desert-adventure", label: "Desert Adventure" },
+] as const;
+
+// Full destinations list (for /destinations), optionally filtered by a
+// single trip_tags value. Same shape as HomepageDestination — both are
+// "just enough to render a destination card."
+export const getDestinationsList = createServerFn({ method: "GET" })
+  .inputValidator((input: unknown) => z.object({ tag: z.string().optional() }).parse(input))
+  .handler(async ({ data }): Promise<HomepageDestination[]> => {
+    let query = supabase
+      .from("destinations")
+      .select("id, slug, name, region, hero_image, best_season, trip_duration_days, trip_tags")
+      .eq("status", "published")
+      .order("name", { ascending: true });
+
+    if (data.tag) query = query.contains("trip_tags", [data.tag]);
+
+    const { data: rows, error } = await query;
+
+    if (error) {
+      console.error("[getDestinationsList] query failed", error);
+      return [];
+    }
+
+    return (rows ?? []).map((d) => ({
+      id: d.id,
+      slug: d.slug,
+      name: d.name,
+      region: d.region ?? "",
+      heroImage: d.hero_image ?? "",
+      bestSeason: d.best_season,
+      tripDurationDays: d.trip_duration_days,
+    }));
+  });

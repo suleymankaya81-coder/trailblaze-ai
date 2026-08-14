@@ -43,7 +43,7 @@ export function SearchBar({ size = "lg" }: { size?: "lg" | "md" }) {
           className="flex-1 bg-transparent px-2 py-3 text-base text-foreground placeholder:text-muted-foreground focus:outline-none"
         />
         <Button type="submit" variant="hero" size={size === "lg" ? "lg" : "default"}>
-          Start Planning
+          Build my trip
         </Button>
       </form>
       <div className="mt-5 flex flex-wrap gap-2">
