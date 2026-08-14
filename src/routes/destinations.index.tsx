@@ -27,16 +27,29 @@ export const Route = createFileRoute("/destinations/")({
     });
     return { ...result, tag: deps.tag ?? null, page: deps.page };
   },
-  head: () => ({
-    meta: [
-      { title: "All Destinations — Minialife" },
-      {
-        name: "description",
-        content:
-          "Every destination Minialife covers — camping, glamping, RV travel, cabins and national parks.",
-      },
-    ],
-  }),
+  head: ({ loaderData }) => {
+    const isFiltered = Boolean(loaderData?.tag) || (loaderData?.page ?? 1) > 1;
+    return {
+      meta: [
+        { title: "All Destinations — Minialife" },
+        {
+          name: "description",
+          content:
+            "Every destination Minialife covers — camping, glamping, RV travel, cabins and national parks.",
+        },
+        { property: "og:title", content: "All Destinations — Minialife" },
+        {
+          property: "og:description",
+          content:
+            "Browse every outdoor destination we cover: camping, glamping, RV travel, cabins and national parks.",
+        },
+        { property: "og:type", content: "website" },
+        { name: "twitter:card", content: "summary" },
+        // Filtered and paginated variants are duplicates of the main list.
+        ...(isFiltered ? [{ name: "robots", content: "noindex, follow" }] : []),
+      ],
+    };
+  },
   component: DestinationsIndexPage,
 });
 
