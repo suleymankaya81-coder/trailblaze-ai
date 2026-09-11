@@ -79,7 +79,10 @@ export const Route = createFileRoute("/destinations/$slug")({
         { "script:ld+json": jsonLd },
         // Thin pages (no tagline or hero yet) stay out of search indexes.
         ...(d.tagline && d.heroImage ? [] : [{ name: "robots", content: "noindex, follow" }]),
+        { property: "og:url", content: pageUrl },
+        { property: "og:type", content: "article" },
       ],
+      links: [{ rel: "canonical", href: pageUrl }],
     };
   },
   component: DestinationPage,
