@@ -65,7 +65,8 @@ export const Route = createFileRoute("/destinations/$slug")({
     if (!d) return { meta: [{ title: "Destination — Minialife" }] };
     const title = `${d.name} Travel Guide — Minialife`;
     const description = d.tagline;
-    const jsonLd = buildDestinationJsonLd(d, `/destinations/${d.slug}`);
+    const pageUrl = `https://minialife.com/destinations/${d.slug}`;
+    const jsonLd = buildDestinationJsonLd(d, pageUrl);
     return {
       meta: [
         { title },
