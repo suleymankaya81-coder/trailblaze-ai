@@ -10,7 +10,9 @@ export const Route = createFileRoute("/terms")({
         name: "description",
         content: "The terms that govern your use of Minialife's destination guides and outbound booking links.",
       },
+      { property: "og:url", content: "https://minialife.com/terms" },
     ],
+    links: [{ rel: "canonical", href: "https://minialife.com/terms" }],
   }),
   component: TermsPage,
 });
