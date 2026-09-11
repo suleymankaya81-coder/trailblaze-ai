@@ -19,7 +19,9 @@ export const Route = createFileRoute("/contact")({
         name: "description",
         content: "Get in touch with the Minialife team — broken links, destination requests, or partnership questions.",
       },
+      { property: "og:url", content: "https://minialife.com/contact" },
     ],
+    links: [{ rel: "canonical", href: "https://minialife.com/contact" }],
   }),
   component: ContactPage,
 });

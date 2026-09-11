@@ -65,7 +65,8 @@ export const Route = createFileRoute("/destinations/$slug")({
     if (!d) return { meta: [{ title: "Destination — Minialife" }] };
     const title = `${d.name} Travel Guide — Minialife`;
     const description = d.tagline;
-    const jsonLd = buildDestinationJsonLd(d, `/destinations/${d.slug}`);
+    const pageUrl = `https://minialife.com/destinations/${d.slug}`;
+    const jsonLd = buildDestinationJsonLd(d, pageUrl);
     return {
       meta: [
         { title },
@@ -78,7 +79,10 @@ export const Route = createFileRoute("/destinations/$slug")({
         { "script:ld+json": jsonLd },
         // Thin pages (no tagline or hero yet) stay out of search indexes.
         ...(d.tagline && d.heroImage ? [] : [{ name: "robots", content: "noindex, follow" }]),
+        { property: "og:url", content: pageUrl },
+        { property: "og:type", content: "article" },
       ],
+      links: [{ rel: "canonical", href: pageUrl }],
     };
   },
   component: DestinationPage,

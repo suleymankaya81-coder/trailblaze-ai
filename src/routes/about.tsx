@@ -13,7 +13,9 @@ export const Route = createFileRoute("/about")({
         content:
           "Minialife is a destination-first outdoor travel guide — where to stay, what to rent, what to do, and what to pack, in one place.",
       },
+      { property: "og:url", content: "https://minialife.com/about" },
     ],
+    links: [{ rel: "canonical", href: "https://minialife.com/about" }],
   }),
   component: AboutPage,
 });

@@ -37,18 +37,22 @@ function xmlEscape(value: string): string {
     .replace(/'/g, "&apos;");
 }
 
-export async function buildSitemapResponse(origin: string): Promise<Response> {
-  const now = new Date().toISOString();
-  const urls: { loc: string; lastmod: string }[] = STATIC_PATHS.map((path) => ({
-    loc: `${origin}${path}`,
-    lastmod: now,
+// Canonical public origin — the sitemap always advertises the real site,
+// never the preview/request host.
+const BASE_URL = "https://minialife.com";
+
+export async function buildSitemapResponse(_origin?: string): Promise<Response> {
+  // No lastmod on static pages: we have no page-specific change timestamp,
+  // and a build-time date would be fabricated.
+  const urls: { loc: string; lastmod?: string }[] = STATIC_PATHS.map((path) => ({
+    loc: `${BASE_URL}${path}`,
   }));
 
   try {
     const destinations = await fetchPublishedDestinations();
     for (const d of destinations) {
       urls.push({
-        loc: `${origin}/destinations/${d.slug}`,
+        loc: `${BASE_URL}/destinations/${d.slug}`,
         lastmod: new Date(d.updated_at).toISOString(),
       });
     }
@@ -61,7 +65,8 @@ export async function buildSitemapResponse(origin: string): Promise<Response> {
     '<?xml version="1.0" encoding="UTF-8"?>',
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
     ...urls.map(
-      (u) => `  <url><loc>${xmlEscape(u.loc)}</loc><lastmod>${u.lastmod}</lastmod></url>`,
+      (u) =>
+        `  <url><loc>${xmlEscape(u.loc)}</loc>${u.lastmod ? `<lastmod>${u.lastmod}</lastmod>` : ""}</url>`,
     ),
     "</urlset>",
   ].join("\n");

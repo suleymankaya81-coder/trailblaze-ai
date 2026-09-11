@@ -11,7 +11,9 @@ export const Route = createFileRoute("/affiliate-disclosure")({
         content:
           "How Minialife makes money: affiliate commissions on bookings and gear purchases, at no extra cost to you.",
       },
+      { property: "og:url", content: "https://minialife.com/affiliate-disclosure" },
     ],
+    links: [{ rel: "canonical", href: "https://minialife.com/affiliate-disclosure" }],
   }),
   component: AffiliateDisclosurePage,
 });

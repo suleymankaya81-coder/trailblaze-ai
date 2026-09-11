@@ -47,7 +47,9 @@ export const Route = createFileRoute("/destinations/")({
         { name: "twitter:card", content: "summary" },
         // Filtered and paginated variants are duplicates of the main list.
         ...(isFiltered ? [{ name: "robots", content: "noindex, follow" }] : []),
+        { property: "og:url", content: "https://minialife.com/destinations" },
       ],
+      links: [{ rel: "canonical", href: "https://minialife.com/destinations" }],
     };
   },
   component: DestinationsIndexPage,

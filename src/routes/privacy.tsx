@@ -11,7 +11,9 @@ export const Route = createFileRoute("/privacy")({
         content:
           "How Minialife collects, uses, and protects your information — including analytics and click tracking on affiliate links.",
       },
+      { property: "og:url", content: "https://minialife.com/privacy" },
     ],
+    links: [{ rel: "canonical", href: "https://minialife.com/privacy" }],
   }),
   component: PrivacyPage,
 });
