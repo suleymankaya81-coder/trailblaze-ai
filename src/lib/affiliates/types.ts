@@ -13,3 +13,5 @@ export interface AffiliateAdapter {
   partner: string;
   buildDeepLink(offer: AffiliateOffer, context: AffiliateContext): string;
 }
+
+export type AwinOffer = AffiliateOffer & { networkMid: number | null };

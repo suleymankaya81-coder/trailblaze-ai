@@ -4,6 +4,7 @@ import { z } from "zod";
 
 import { supabase } from "@/integrations/supabase/client";
 import { getAffiliateAdapter } from "@/lib/affiliates";
+import { buildAwinLink } from "@/lib/affiliates/awin";
 import { isBotUserAgent, hasAfsrcParam } from "@/lib/affiliates/compliance";
 
 const InputSchema = z.object({
@@ -18,7 +19,7 @@ export const trackAndRedirect = createServerFn({ method: "POST" })
   .handler(async ({ data }): Promise<{ redirectUrl: string }> => {
     const { data: offer, error: offerError } = await supabase
       .from("offers")
-      .select("id, external_url, partner")
+      .select("id, external_url, partner, network, network_mid")
       .eq("id", data.offerId)
       .maybeSingle();
 
@@ -49,6 +50,15 @@ export const trackAndRedirect = createServerFn({ method: "POST" })
       });
       // A tracking hiccup should never block the user's booking flow.
       if (insertError) console.error("[trackAndRedirect] click_events insert failed", insertError);
+    }
+
+    if (offer.network === "awin") {
+      return {
+        redirectUrl: buildAwinLink(
+          { id: offer.id, externalUrl: offer.external_url, partner: offer.partner, networkMid: offer.network_mid },
+          sessionId,
+        ),
+      };
     }
 
     const adapter = getAffiliateAdapter(offer.partner);
