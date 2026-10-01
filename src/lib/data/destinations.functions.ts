@@ -83,6 +83,10 @@ function toOfferView(row: Tables<"offers">): OfferView {
   };
 }
 
+// Destination pages show only Awin offers (plus plain info links such as the
+// official NPS park pass page). Other networks stay stored but hidden.
+const SHOWN_NETWORKS = ["awin", "info"] as const;
+
 export const GLOBAL_SERVICE_CATEGORIES = [
   "insurance",
   "esim",
@@ -107,7 +111,8 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
     const { data: offers, error: offersError } = await supabase
       .from("offers")
       .select("*")
-      .eq("destination_id", dest.id);
+      .eq("destination_id", dest.id)
+      .in("network", [...SHOWN_NETWORKS]);
 
     if (offersError) throw offersError;
 
@@ -115,6 +120,7 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       .from("offers")
       .select("*")
       .is("destination_id", null)
+      .in("network", [...SHOWN_NETWORKS])
       .in("category", [...GLOBAL_SERVICE_CATEGORIES]);
 
     if (globalError) throw globalError;

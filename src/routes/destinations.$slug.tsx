@@ -1,4 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { GetYourGuideWidget } from "@/components/destination/PartnerWidget";
 import { useQuery } from "@tanstack/react-query";
 import { useServerFn } from "@tanstack/react-start";
 import {
@@ -859,6 +860,7 @@ function ThingsToDo({ dest }: { dest: DestinationView }) {
           ))}
         </div>
       )}
+      <GetYourGuideWidget query={dest.name} />
     </section>
   );
 }
@@ -1042,14 +1044,14 @@ function RoadTrip({ dest }: { dest: DestinationView }) {
 function parkTag(o: OfferView): "inside" | "outside" | null {
   const url = (o.externalUrl ?? "").toLowerCase();
   if (url.includes("recreation.gov") || url.includes("nps.gov")) return "inside";
-  if (o.partner === "hipcamp" || o.partner === "glamping_hub" || o.partner === "rvshare")
+  if (o.partner === "campspot" || o.partner === "roverpass" || o.partner === "harvest_hosts")
     return "outside";
   return null;
 }
 
 function PlanBAlternatives({ dest }: { dest: DestinationView }) {
   const alts = dest.stays
-    .filter((s) => s.partner === "hipcamp" || s.partner === "glamping_hub")
+    .filter((s) => s.partner === "campspot" || s.partner === "roverpass")
     .slice(0, 2);
   if (alts.length === 0) {
     return (
