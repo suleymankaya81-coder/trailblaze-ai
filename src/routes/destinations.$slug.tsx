@@ -145,38 +145,43 @@ function DestinationPage() {
       <Header />
 
       <Hero dest={dest} />
+      <JumpBar />
 
-      <main className="container-page space-y-14 py-12 md:space-y-16">
-        <AffiliateNotice />
+      <main className="container-page space-y-14 py-10 md:space-y-16">
+        <div className="space-y-5">
+          <TripRadar dest={dest} />
+          <PlanB dest={dest} alternatives={<PlanBAlternatives dest={dest} />} />
+          <AffiliateNotice />
+        </div>
 
-        {/* 2 + 3 — Stays with the budget rail beside them on desktop */}
+        {/* Stays + budget rail (compact bar on mobile) */}
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
           <TopStays dest={dest} />
           <TripBudget ai={ai} loading={aiLoading} />
         </div>
 
-        {/* 4 */}
         <RentBeforeYouGo dest={dest} />
 
-        {/* 5 + 6 */}
-        <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
-          <ThingsToDo dest={dest} />
-          <TravelServices dest={dest} />
-        </div>
+        {/* Tours & services — one section */}
+        <section id="tours" className="scroll-mt-24">
+          <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
+            <ThingsToDo dest={dest} />
+            <TravelServices dest={dest} />
+          </div>
+        </section>
 
-        {/* 7 */}
         <RoadTrip dest={dest} />
 
-        {/* 8 + 9 */}
-        <div className="grid gap-6 lg:grid-cols-[minmax(0,480px)_minmax(0,1fr)] lg:items-start">
+        <div id="checklist" className="grid scroll-mt-24 gap-6 lg:grid-cols-[minmax(0,480px)_minmax(0,1fr)] lg:items-start">
           <PackForTrip dest={dest} ai={ai} loading={aiLoading} />
-          <Essentials dest={dest} />
+          <div className="space-y-6">
+            <Essentials dest={dest} />
+            <PackLead dest={dest} />
+          </div>
         </div>
 
-        {/* 10 */}
         <Toolkit dest={dest} ai={ai} loading={aiLoading} />
 
-        {/* 11 + 12 */}
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
           <SimilarDestinations dest={dest} />
           <FinalCta dest={dest} />
