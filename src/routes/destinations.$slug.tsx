@@ -199,20 +199,6 @@ function DestinationPage() {
   );
 }
 
-// Visible, above-the-fold disclosure required before any commercial link.
-function AffiliateNotice() {
-  return (
-    <aside className="flex flex-wrap items-center gap-x-2 gap-y-1 rounded-xl border border-border bg-card px-4 py-3 text-xs text-muted-foreground">
-      <span>
-        This page contains partner links. If you book or buy through them we may earn a commission,
-        at no extra cost to you. Prices shown are estimates and are set by the partner.
-      </span>
-      <Link to="/affiliate-disclosure" className="font-semibold text-forest underline underline-offset-2">
-        Affiliate disclosure
-      </Link>
-    </aside>
-  );
-}
 
 /* =========================================================
    1 — HERO
