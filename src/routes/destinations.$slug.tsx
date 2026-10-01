@@ -1,4 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { GetYourGuideWidget } from "@/components/destination/PartnerWidget";
 import { useQuery } from "@tanstack/react-query";
 import { useServerFn } from "@tanstack/react-start";
 import {
@@ -859,6 +860,7 @@ function ThingsToDo({ dest }: { dest: DestinationView }) {
           ))}
         </div>
       )}
+      <GetYourGuideWidget query={dest.name} />
     </section>
   );
 }
