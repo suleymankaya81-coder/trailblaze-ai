@@ -2,7 +2,7 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 
 import { supabase } from "@/integrations/supabase/client";
-import type { Tables } from "@/integrations/supabase/types";
+import type { Json, Tables } from "@/integrations/supabase/types";
 
 // SEO landing pages (e.g. /yellowstone-camping) live in seo_landing_pages and
 // link to a destination by FK — destination core data is never copied here.
@@ -20,9 +20,9 @@ export type LandingPageView = {
   seoTitle: string | null;
   seoDescription: string | null;
   introContent: string | null;
-  contentSections: unknown[];
-  inventoryFilter: Record<string, unknown> | null;
-  inventoryRequirements: Record<string, unknown>;
+  contentSections: Json[];
+  inventoryFilter: Json | null;
+  inventoryRequirements: Json;
   indexable: boolean;
   noindexReason: string | null;
   canonicalUrl: string | null;
@@ -33,7 +33,13 @@ export type LandingPageView = {
 const PATH_RE = /^\/[a-z0-9]+(-[a-z0-9]+)*$/;
 
 export function normalizeLandingPath(input: string): string | null {
-  const p = ("/" + input.trim().toLowerCase().replace(/^\/+|\/+$/g, "")).replace(/\/+/g, "/");
+  const p = (
+    "/" +
+    input
+      .trim()
+      .toLowerCase()
+      .replace(/^\/+|\/+$/g, "")
+  ).replace(/\/+/g, "/");
   return PATH_RE.test(p) ? p : null;
 }
 
@@ -47,9 +53,9 @@ function toView(r: Tables<"seo_landing_pages">): LandingPageView {
     seoTitle: r.seo_title,
     seoDescription: r.seo_description,
     introContent: r.intro_content,
-    contentSections: Array.isArray(r.content_sections) ? (r.content_sections as unknown[]) : [],
-    inventoryFilter: (r.inventory_filter as Record<string, unknown> | null) ?? null,
-    inventoryRequirements: (r.inventory_requirements as Record<string, unknown>) ?? {},
+    contentSections: Array.isArray(r.content_sections) ? r.content_sections : [],
+    inventoryFilter: r.inventory_filter,
+    inventoryRequirements: r.inventory_requirements,
     indexable: r.indexable,
     noindexReason: r.noindex_reason,
     canonicalUrl: r.canonical_url,
