@@ -103,6 +103,7 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       .from("destinations")
       .select("*")
       .eq("slug", data.slug)
+      .eq("status", "published")
       .maybeSingle();
 
     if (destError) throw destError;
@@ -139,7 +140,8 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       const { data: similarRows, error: similarError } = await supabase
         .from("destinations")
         .select("slug, name, region, hero_image")
-        .in("slug", dest.similar_slugs);
+        .in("slug", dest.similar_slugs)
+        .eq("status", "published");
 
       if (similarError) throw similarError;
 
@@ -219,6 +221,7 @@ export const getFeaturedGearOffers = createServerFn({ method: "GET" }).handler(
     const { data: destRows, error: destError } = await supabase
       .from("destinations")
       .select("id, slug, name")
+      .eq("status", "published")
       .in("id", destinationIds);
 
     if (destError) {

@@ -52,6 +52,7 @@ export const enrichDestination = createServerFn({ method: "POST" })
       .from("destinations")
       .select("name, region, best_season, trip_duration_days, avg_daily_budget, tagline")
       .eq("slug", data.slug)
+      .eq("status", "published")
       .maybeSingle();
 
     if (error) throw error;
