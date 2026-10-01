@@ -28,7 +28,7 @@ export const ROWS: Row[] = [
   ["zion", "high", "SGU", "St. George Regional Airport", 37.0364, -113.5103, 37.2002, -112.9870],
 ];
 
-function simplify(coords: [number, number][], max = 150): [number, number][] {
+function simplify(coords: [number, number][], max = 40): [number, number][] {
   if (coords.length <= max) return coords;
   const step = Math.ceil(coords.length / max);
   const out = coords.filter((_, i) => i % step === 0);
