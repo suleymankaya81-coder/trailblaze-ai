@@ -36,7 +36,14 @@ import {
   UtensilsCrossed,
   Wifi,
 } from "lucide-react";
-import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { lazy, Suspense, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { ClientOnly } from "@tanstack/react-router";
+import { JumpBar, PlanB, TripRadar, formatDrive } from "@/components/destination/TripRadar";
+import { captureLead } from "@/lib/leads/leads.functions";
+import routes from "@/data/routes.json";
+
+const RoadTripMap = lazy(() => import("@/components/destination/RoadTripMap"));
+const ROUTES = routes as unknown as Record<string, [number, number][]>;
 
 import { Footer } from "@/components/site/Footer";
 import { Header } from "@/components/site/Header";
@@ -593,6 +600,16 @@ function StayCard({
           alt={offer.title}
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
+        {parkTag(offer) && (
+          <span
+            className={
+              "absolute bottom-3 left-3 rounded-full px-2.5 py-1 text-[10px] font-bold text-off-white " +
+              (parkTag(offer) === "inside" ? "bg-copper" : "bg-forest")
+            }
+          >
+            {parkTag(offer) === "inside" ? "Inside the park · books up fast" : "Outside the park · easier to book"}
+          </span>
+        )}
         {featured && (
           <span className="absolute left-0 top-4 rounded-r-full bg-ink/80 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-off-white">
             Minialife's pick
@@ -669,7 +686,14 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
   const total = items.reduce((s, i) => s + i.value, 0);
 
   return (
-    <aside className="rounded-2xl border border-border bg-card p-6 shadow-soft lg:sticky lg:top-24">
+    <>
+    {ai && (
+      <a href="#checklist" className="flex items-center justify-between rounded-2xl border border-border bg-card px-4 py-3 shadow-soft lg:hidden">
+        <span className="text-xs text-muted-foreground">Est. trip budget · 4 days, 2 people</span>
+        <span className="font-serif text-lg font-semibold text-foreground">${total.toLocaleString()}</span>
+      </a>
+    )}
+    <aside className="hidden rounded-2xl border border-border bg-card p-6 shadow-soft lg:sticky lg:top-16 lg:block">
       <h2 className="font-display text-lg text-foreground">Your trip budget</h2>
       <p className="mt-0.5 text-xs text-muted-foreground">Estimated for 4 days · 2 travelers</p>
 
@@ -719,6 +743,7 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
         Prices are averages and may vary based on season and preferences.
       </p>
     </aside>
+    </>
   );
 }
 
@@ -726,17 +751,26 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
    4 — RENT BEFORE YOU GO
 ========================================================= */
 function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
-  const rentals = dest.rentals.slice(0, 5);
+  const rv = dest.rentals.filter((r) => r.category === "rv_rental");
+  const rentals = (rv.length ? rv : dest.rentals).slice(0, 5);
+  const prices = rv.map((r) => r.priceValue).filter((v): v is number => v != null);
+  const avg = prices.length ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : null;
 
   return (
-    <section>
+    <section id="rentals" className="scroll-mt-24">
       <SectionHeader
-        title="Don't bring everything — rent what makes sense here"
+        title={dest.airportCode ? `RVs & campervans near ${dest.airportCode}` : "RVs & campervans for this trip"}
         action={<TextLink>View all rentals</TextLink>}
       />
       <p className="-mt-3 mb-4 text-[11px] text-muted-foreground">
         Checks availability with the partner directly — not a confirmed booking on our end.
       </p>
+      {avg != null && (
+        <p className="mb-4 rounded-xl bg-sand/50 px-4 py-2.5 text-xs text-foreground/85">
+          <span className="font-semibold">About ${avg} a day on average.</span> Your stay and your
+          ride in one — compare it with a hotel plus a rental car. Rates are set by the partner.
+        </p>
+      )}
       {rentals.length === 0 ? (
         <EmptyState message="No rental partners listed for this destination yet." />
       ) : (
@@ -788,7 +822,7 @@ function RentalTile({ offer, destinationSlug }: { offer: OfferView; destinationS
    5 — THINGS TO DO
 ========================================================= */
 function ThingsToDo({ dest }: { dest: DestinationView }) {
-  const activities = dest.activities.slice(0, 6);
+  const activities = dest.activities.slice(0, 4);
 
   return (
     <section>
@@ -1117,15 +1151,15 @@ function PackForTrip({
    9 — ESSENTIALS WORTH HAVING
 ========================================================= */
 function Essentials({ dest }: { dest: DestinationView }) {
-  const items = dest.essentials.slice(0, 5);
+  const items = dest.essentials.slice(0, 3);
 
   return (
     <section>
-      <SectionHeader title="Essentials worth having" action={<TextLink>View all gear</TextLink>} />
+      <SectionHeader title="3 things you should not skip" action={<TextLink>View all gear</TextLink>} />
       {items.length === 0 ? (
         <EmptyState message="No gear recommendations for this destination yet." />
       ) : (
-        <div className="grid gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="grid gap-4 grid-cols-2 sm:grid-cols-3">
           {items.map((e) => (
             <article
               key={e.id}
