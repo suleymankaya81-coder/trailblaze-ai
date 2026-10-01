@@ -50,7 +50,7 @@ export default function RoadTripMap({
       });
     });
     return () => map.remove();
-  }, [route, from, to]);
+  }, [route, fromJson, toJson]);
 
   return <div ref={ref} className="h-full min-h-[300px] w-full" />;
 }
