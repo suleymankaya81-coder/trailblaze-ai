@@ -242,6 +242,8 @@ export type Database = {
           external_url: string | null
           id: string
           image: string | null
+          network: string | null
+          network_mid: number | null
           partner: string | null
           price_display: string | null
           price_unit: string | null
@@ -261,6 +263,8 @@ export type Database = {
           external_url?: string | null
           id?: string
           image?: string | null
+          network?: string | null
+          network_mid?: number | null
           partner?: string | null
           price_display?: string | null
           price_unit?: string | null
@@ -280,6 +284,8 @@ export type Database = {
           external_url?: string | null
           id?: string
           image?: string | null
+          network?: string | null
+          network_mid?: number | null
           partner?: string | null
           price_display?: string | null
           price_unit?: string | null
