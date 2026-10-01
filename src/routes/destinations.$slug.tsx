@@ -965,55 +965,200 @@ function ServiceRow({ service, destinationSlug }: { service: OfferView; destinat
 
 /* =========================================================
    7 — ROAD TRIP
-   No routing/map provider is connected, so we show a clearly
-   labelled fallback instead of inventing stops or distances.
+   Free stack: OpenFreeMap tiles + routes precomputed once with OSRM
+   (src/data/routes.json). Visitors never trigger a paid map API.
 ========================================================= */
-const ON_THE_WAY = [
-  { icon: <Fuel className="h-4 w-4" />, label: "Fuel & EV charging" },
-  { icon: <Coffee className="h-4 w-4" />, label: "Coffee & food" },
-  { icon: <Tent className="h-4 w-4" />, label: "Rest stops" },
-  { icon: <Hotel className="h-4 w-4" />, label: "Hotels & lodging" },
-  { icon: <Truck className="h-4 w-4" />, label: "RV services" },
-  { icon: <ShoppingBasket className="h-4 w-4" />, label: "Grocery stores" },
-];
-
 function RoadTrip({ dest }: { dest: DestinationView }) {
+  const hasGeo =
+    dest.lat != null && dest.lng != null && dest.airportLat != null && dest.airportLng != null;
+  const from: [number, number] | null = hasGeo ? [dest.airportLng!, dest.airportLat!] : null;
+  const to: [number, number] | null = hasGeo ? [dest.lng!, dest.lat!] : null;
+  const route = ROUTES[dest.slug] ?? null;
+  const directions = hasGeo
+    ? `https://www.google.com/maps/dir/?api=1&origin=${dest.airportLat},${dest.airportLng}&destination=${dest.lat},${dest.lng}&travelmode=driving`
+    : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(dest.name)}`;
+  const nearbyStays = dest.stays.slice(0, 3);
+
   return (
     <section id="road-trip" className="scroll-mt-24">
       <SectionHeader title="Plan your road trip" />
       <div className="grid gap-6 rounded-2xl border border-border bg-card p-6 shadow-soft lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
-        <div className="relative overflow-hidden rounded-xl border border-border bg-beige/60">
-          <div className="flex min-h-[260px] flex-col items-center justify-center gap-3 p-8 text-center">
-            <Map className="h-7 w-7 text-foreground/40" />
-            <p className="text-sm font-semibold text-foreground">
-              Route map for {dest.name} is coming soon
-            </p>
-            <p className="max-w-sm text-xs leading-relaxed text-muted-foreground">
-              We only show driving routes, stops and distances once they come from a live mapping
-              provider — we won't estimate them for you.
-            </p>
-          </div>
+        <div className="relative min-h-[300px] overflow-hidden rounded-xl border border-border bg-beige/60">
+          {from && to ? (
+            <ClientOnly fallback={<Skeleton className="h-[300px] w-full" />}>
+              <Suspense fallback={<Skeleton className="h-[300px] w-full" />}>
+                <RoadTripMap route={route} from={from} to={to} />
+              </Suspense>
+            </ClientOnly>
+          ) : (
+            <div className="flex min-h-[300px] flex-col items-center justify-center gap-3 p-8 text-center">
+              <Map className="h-7 w-7 text-foreground/40" />
+              <p className="text-sm font-semibold text-foreground">Route map coming soon</p>
+            </div>
+          )}
         </div>
 
-        <div>
-          <p className="text-xs font-semibold text-foreground">On the way you'll find</p>
-          <ul className="mt-3 space-y-2.5">
-            {ON_THE_WAY.map((o) => (
-              <li
-                key={o.label}
-                className="flex items-center gap-3 rounded-xl border border-border bg-beige/40 px-3 py-2.5"
-              >
-                <span className="text-foreground/50">{o.icon}</span>
-                <span className="text-xs text-foreground/80">{o.label}</span>
-              </li>
-            ))}
-          </ul>
-          <p className="mt-4 flex items-center gap-2 text-[11px] text-muted-foreground">
-            <MapPin className="h-3.5 w-3.5" />
-            {dest.region || dest.name}
+        <div className="flex flex-col">
+          {dest.airportCode && (
+            <div className="rounded-xl bg-beige/50 p-4">
+              <p className="text-[11px] uppercase tracking-wider text-muted-foreground">
+                From {dest.airportName}
+              </p>
+              <p className="mt-1 font-serif text-2xl font-semibold text-foreground">
+                {dest.driveMinutes != null ? formatDrive(dest.driveMinutes) : "—"}
+              </p>
+              {dest.driveMiles != null && (
+                <p className="text-xs text-muted-foreground">
+                  about {Math.round(dest.driveMiles)} miles by car · times vary with traffic and
+                  road closures
+                </p>
+              )}
+            </div>
+          )}
+          <a
+            href={directions}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-forest px-5 py-2.5 text-sm font-semibold text-off-white transition hover:bg-ink"
+          >
+            <Navigation className="h-4 w-4" /> Get directions
+          </a>
+          <p className="mt-2 text-center text-[11px] text-muted-foreground">
+            Download offline maps before you go — signal drops near the park.
           </p>
+          {nearbyStays.length > 0 && (
+            <>
+              <p className="mt-5 text-xs font-semibold text-foreground">Stays near the end of your drive</p>
+              <ul className="mt-2 space-y-2">
+                {nearbyStays.map((s) => (
+                  <li key={s.id}>
+                    <a
+                      href="#stays"
+                      className="flex items-center gap-3 rounded-xl border border-border bg-beige/40 px-3 py-2.5 text-xs text-foreground/80 hover:bg-muted"
+                    >
+                      <Tent className="h-4 w-4 text-foreground/50" />
+                      <span className="truncate">{s.title}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
         </div>
       </div>
+    </section>
+  );
+}
+
+/* =========================================================
+   PARK TAG / PLAN B / LEAD MAGNET helpers
+========================================================= */
+// Only label stays we can classify honestly; otherwise show no tag.
+function parkTag(o: OfferView): "inside" | "outside" | null {
+  const url = (o.externalUrl ?? "").toLowerCase();
+  if (url.includes("recreation.gov") || url.includes("nps.gov")) return "inside";
+  if (o.partner === "hipcamp" || o.partner === "glamping_hub" || o.partner === "rvshare")
+    return "outside";
+  return null;
+}
+
+function PlanBAlternatives({ dest }: { dest: DestinationView }) {
+  const alts = dest.stays
+    .filter((s) => s.partner === "hipcamp" || s.partner === "glamping_hub")
+    .slice(0, 2);
+  if (alts.length === 0) {
+    return (
+      <a
+        href="#stays"
+        className="mt-4 inline-flex items-center gap-1.5 rounded-full bg-copper px-5 py-2.5 text-xs font-semibold text-off-white hover:bg-copper/90"
+      >
+        See stays outside the park <ArrowRight className="h-3.5 w-3.5" />
+      </a>
+    );
+  }
+  return (
+    <div className="mt-4 grid gap-3 sm:grid-cols-2">
+      {alts.map((s) => (
+        <div
+          key={s.id}
+          className="flex items-center justify-between gap-3 rounded-xl border border-border bg-card p-3"
+        >
+          <div className="min-w-0">
+            <p className="truncate text-sm font-semibold text-foreground">{s.title}</p>
+            <PriceTag offer={s} fallbackUnit="night" />
+          </div>
+          <OfferCta offer={s} label="Check dates" size="sm" destinationSlug={dest.slug} />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function PackLead({ dest }: { dest: DestinationView }) {
+  const send = useServerFn(captureLead);
+  const [email, setEmail] = useState("");
+  const [hp, setHp] = useState("");
+  const [state, setState] = useState<"idle" | "sending" | "done" | "error">("idle");
+
+  const submit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setState("sending");
+    try {
+      await send({
+        data: { email, destinationId: dest.id, sessionId: getOrCreateSessionId(), website: hp },
+      });
+      setState("done");
+    } catch {
+      setState("error");
+    }
+  };
+
+  return (
+    <section className="rounded-2xl border border-border bg-forest p-6 text-off-white">
+      <h3 className="font-display text-xl">Take the full {dest.name.split(" ")[0]} guide offline</h3>
+      <p className="mt-1 text-sm text-off-white/80">
+        The complete packing list, offline GPS points and an emergency guide — sent to your inbox.
+      </p>
+      {state === "done" ? (
+        <p className="mt-4 rounded-xl bg-off-white/10 p-3 text-sm">
+          Thanks — you're on the list. We'll send your guide soon.
+        </p>
+      ) : (
+        <form onSubmit={submit} className="mt-4 flex flex-col gap-2 sm:flex-row">
+          <input
+            type="text"
+            tabIndex={-1}
+            autoComplete="off"
+            aria-hidden="true"
+            value={hp}
+            onChange={(e) => setHp(e.target.value)}
+            className="hidden"
+          />
+          <input
+            type="email"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="you@email.com"
+            aria-label="Email address"
+            className="min-w-0 flex-1 rounded-full border border-off-white/30 bg-off-white px-4 py-2.5 text-sm text-foreground"
+          />
+          <button
+            type="submit"
+            disabled={state === "sending"}
+            className="rounded-full bg-copper px-5 py-2.5 text-sm font-semibold text-off-white hover:bg-copper/90 disabled:opacity-60"
+          >
+            {state === "sending" ? "Sending…" : "Send my guide"}
+          </button>
+        </form>
+      )}
+      {state === "error" && (
+        <p className="mt-2 text-xs text-off-white/80">Something went wrong. Please try again.</p>
+      )}
+      <p className="mt-3 text-[11px] text-off-white/60">
+        No spam. Unsubscribe anytime. See our{" "}
+        <Link to="/privacy" className="underline">privacy policy</Link>.
+      </p>
     </section>
   );
 }
