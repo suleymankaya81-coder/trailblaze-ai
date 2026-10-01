@@ -1,4 +1,4 @@
-// Shared affiliate-compliance helpers (Sovrn Commerce Publisher Code of Conduct).
+// Shared affiliate-compliance helpers (affiliate network best practices).
 // Kept free of server-only imports so both client and server code can use it.
 
 const BOT_PATTERNS = [
