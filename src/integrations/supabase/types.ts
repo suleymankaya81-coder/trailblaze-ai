@@ -55,6 +55,8 @@ export type Database = {
       destinations: {
         Row: {
           affiliate_potential: Json
+          airport_lat: number | null
+          airport_lng: number | null
           aliases: string[]
           avg_daily_budget: number | null
           best_season: string | null
@@ -62,6 +64,8 @@ export type Database = {
           camping_score: number | null
           created_at: string
           destination_type: string | null
+          drive_miles: number | null
+          drive_minutes: number | null
           experience_tags: string[]
           gallery: string[]
           gateway_cities: string[]
@@ -69,14 +73,20 @@ export type Database = {
           homepage_eligible: boolean
           id: string
           inventory_priority: string | null
+          lat: number | null
+          lng: number | null
           name: string
+          nearest_airport_code: string | null
+          nearest_airport_name: string | null
           notes: string | null
           parent_slug: string | null
+          permit_level: Database["public"]["Enums"]["permit_level"] | null
           plan_builder_eligible: boolean
           primary_keyword: string | null
           recommended_duration: string | null
           region: string | null
           relevance: Json
+          route_geojson: Json | null
           scenic_score: number | null
           secondary_keywords: string[]
           seo_description: string | null
@@ -94,6 +104,8 @@ export type Database = {
         }
         Insert: {
           affiliate_potential?: Json
+          airport_lat?: number | null
+          airport_lng?: number | null
           aliases?: string[]
           avg_daily_budget?: number | null
           best_season?: string | null
@@ -101,6 +113,8 @@ export type Database = {
           camping_score?: number | null
           created_at?: string
           destination_type?: string | null
+          drive_miles?: number | null
+          drive_minutes?: number | null
           experience_tags?: string[]
           gallery?: string[]
           gateway_cities?: string[]
@@ -108,14 +122,20 @@ export type Database = {
           homepage_eligible?: boolean
           id?: string
           inventory_priority?: string | null
+          lat?: number | null
+          lng?: number | null
           name: string
+          nearest_airport_code?: string | null
+          nearest_airport_name?: string | null
           notes?: string | null
           parent_slug?: string | null
+          permit_level?: Database["public"]["Enums"]["permit_level"] | null
           plan_builder_eligible?: boolean
           primary_keyword?: string | null
           recommended_duration?: string | null
           region?: string | null
           relevance?: Json
+          route_geojson?: Json | null
           scenic_score?: number | null
           secondary_keywords?: string[]
           seo_description?: string | null
@@ -133,6 +153,8 @@ export type Database = {
         }
         Update: {
           affiliate_potential?: Json
+          airport_lat?: number | null
+          airport_lng?: number | null
           aliases?: string[]
           avg_daily_budget?: number | null
           best_season?: string | null
@@ -140,6 +162,8 @@ export type Database = {
           camping_score?: number | null
           created_at?: string
           destination_type?: string | null
+          drive_miles?: number | null
+          drive_minutes?: number | null
           experience_tags?: string[]
           gallery?: string[]
           gateway_cities?: string[]
@@ -147,14 +171,20 @@ export type Database = {
           homepage_eligible?: boolean
           id?: string
           inventory_priority?: string | null
+          lat?: number | null
+          lng?: number | null
           name?: string
+          nearest_airport_code?: string | null
+          nearest_airport_name?: string | null
           notes?: string | null
           parent_slug?: string | null
+          permit_level?: Database["public"]["Enums"]["permit_level"] | null
           plan_builder_eligible?: boolean
           primary_keyword?: string | null
           recommended_duration?: string | null
           region?: string | null
           relevance?: Json
+          route_geojson?: Json | null
           scenic_score?: number | null
           secondary_keywords?: string[]
           seo_description?: string | null
@@ -171,6 +201,38 @@ export type Database = {
           updated_at?: string
         }
         Relationships: []
+      }
+      email_leads: {
+        Row: {
+          created_at: string
+          destination_id: string | null
+          email: string
+          id: string
+          session_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          destination_id?: string | null
+          email: string
+          id?: string
+          session_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          destination_id?: string | null
+          email?: string
+          id?: string
+          session_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "email_leads_destination_id_fkey"
+            columns: ["destination_id"]
+            isOneToOne: false
+            referencedRelation: "destinations"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       offers: {
         Row: {
@@ -284,6 +346,7 @@ export type Database = {
         | "car_rental"
         | "travel_card"
         | "park_pass"
+      permit_level: "high" | "moderate" | "none"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -424,6 +487,7 @@ export const Constants = {
         "travel_card",
         "park_pass",
       ],
+      permit_level: ["high", "moderate", "none"],
     },
   },
 } as const
