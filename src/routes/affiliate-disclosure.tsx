@@ -33,7 +33,7 @@ function AffiliateDisclosurePage() {
           and tour operators (including RVshare, Hipcamp, Glamping Hub, Arrive Outdoors, REI, and
           Viator). When you click a "Check availability," "Reserve," or "Buy" link on this site and
           go on to book or purchase with one of these partners, we may earn a small commission.
-          Some of these relationships are managed through affiliate networks, including Sovrn
+          Some of these relationships are managed through affiliate networks, including Awin
           Commerce, which tracks the referral on the partner's behalf.
         </p>
         <p>

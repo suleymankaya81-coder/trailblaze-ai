@@ -27,7 +27,7 @@ export const trackAndRedirect = createServerFn({ method: "POST" })
       throw new Error("Offer is not bookable yet");
     }
 
-    // Sovrn Code of Conduct: links already carrying afsrc=1 belong to another
+    // Affiliate best practice: links already carrying afsrc=1 belong to another
     // affiliate — pass them through untouched, never re-affiliate them.
     if (hasAfsrcParam(offer.external_url)) {
       return { redirectUrl: offer.external_url };

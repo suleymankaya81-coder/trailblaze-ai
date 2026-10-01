@@ -91,7 +91,7 @@ function PrivacyPage() {
         <p>
           The Site links to third-party booking and retail partners (such as RVshare, Hipcamp,
           Glamping Hub, Arrive Outdoors, REI, and Viator). Some of these links are managed through
-          affiliate networks, including Sovrn Commerce, which may receive the click and referral
+          affiliate networks, including Awin, which may receive the click and referral
           information described above in order to attribute a referral and pay a commission. Once you leave Minialife, that partner's
           own privacy policy governs how they handle your information. We encourage you to review
           it before booking or purchasing.
