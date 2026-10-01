@@ -326,6 +326,95 @@ export type Database = {
         }
         Relationships: []
       }
+      seo_landing_pages: {
+        Row: {
+          canonical_url: string | null
+          content_sections: Json
+          content_status: Database["public"]["Enums"]["landing_content_status"]
+          created_at: string
+          destination_id: string
+          id: string
+          indexable: boolean
+          intro_content: string | null
+          inventory_filter: Json | null
+          inventory_requirements: Json
+          keyword_difficulty: number | null
+          last_content_reviewed_at: string | null
+          noindex_reason: string | null
+          page_type: Database["public"]["Enums"]["landing_page_type"]
+          path: string
+          priority: number
+          published_at: string | null
+          schema_version: number
+          search_volume: number | null
+          seo_description: string | null
+          seo_title: string | null
+          status: Database["public"]["Enums"]["landing_publication_status"]
+          target_keyword: string | null
+          updated_at: string
+        }
+        Insert: {
+          canonical_url?: string | null
+          content_sections?: Json
+          content_status?: Database["public"]["Enums"]["landing_content_status"]
+          created_at?: string
+          destination_id: string
+          id?: string
+          indexable?: boolean
+          intro_content?: string | null
+          inventory_filter?: Json | null
+          inventory_requirements?: Json
+          keyword_difficulty?: number | null
+          last_content_reviewed_at?: string | null
+          noindex_reason?: string | null
+          page_type: Database["public"]["Enums"]["landing_page_type"]
+          path: string
+          priority?: number
+          published_at?: string | null
+          schema_version?: number
+          search_volume?: number | null
+          seo_description?: string | null
+          seo_title?: string | null
+          status?: Database["public"]["Enums"]["landing_publication_status"]
+          target_keyword?: string | null
+          updated_at?: string
+        }
+        Update: {
+          canonical_url?: string | null
+          content_sections?: Json
+          content_status?: Database["public"]["Enums"]["landing_content_status"]
+          created_at?: string
+          destination_id?: string
+          id?: string
+          indexable?: boolean
+          intro_content?: string | null
+          inventory_filter?: Json | null
+          inventory_requirements?: Json
+          keyword_difficulty?: number | null
+          last_content_reviewed_at?: string | null
+          noindex_reason?: string | null
+          page_type?: Database["public"]["Enums"]["landing_page_type"]
+          path?: string
+          priority?: number
+          published_at?: string | null
+          schema_version?: number
+          search_volume?: number | null
+          seo_description?: string | null
+          seo_title?: string | null
+          status?: Database["public"]["Enums"]["landing_publication_status"]
+          target_keyword?: string | null
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "seo_landing_pages_destination_id_fkey"
+            columns: ["destination_id"]
+            isOneToOne: false
+            referencedRelation: "destinations"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: {
       [_ in never]: never
@@ -337,6 +426,18 @@ export type Database = {
       }
     }
     Enums: {
+      landing_content_status: "draft" | "ready" | "published"
+      landing_page_type:
+        | "destination"
+        | "camping"
+        | "rv_rental"
+        | "glamping"
+        | "trip_planner"
+        | "lodging"
+        | "activities"
+        | "transportation"
+        | "other"
+      landing_publication_status: "draft" | "published" | "archived"
       offer_category:
         | "stay"
         | "rv_rental"
@@ -477,6 +578,19 @@ export type CompositeTypes<
 export const Constants = {
   public: {
     Enums: {
+      landing_content_status: ["draft", "ready", "published"],
+      landing_page_type: [
+        "destination",
+        "camping",
+        "rv_rental",
+        "glamping",
+        "trip_planner",
+        "lodging",
+        "activities",
+        "transportation",
+        "other",
+      ],
+      landing_publication_status: ["draft", "published", "archived"],
       offer_category: [
         "stay",
         "rv_rental",
