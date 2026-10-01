@@ -46,6 +46,16 @@ export type DestinationView = {
   campingScore: number | null;
   avgDailyBudget: number | null;
   tripDurationDays: string | null;
+  id: string;
+  permitLevel: "high" | "moderate" | "none" | null;
+  airportCode: string | null;
+  airportName: string | null;
+  airportLat: number | null;
+  airportLng: number | null;
+  lat: number | null;
+  lng: number | null;
+  driveMinutes: number | null;
+  driveMiles: number | null;
   stays: OfferView[];
   rentals: OfferView[];
   activities: OfferView[];
@@ -148,6 +158,16 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       campingScore: dest.camping_score,
       avgDailyBudget: dest.avg_daily_budget,
       tripDurationDays: dest.trip_duration_days,
+      id: dest.id,
+      permitLevel: dest.permit_level,
+      airportCode: dest.nearest_airport_code,
+      airportName: dest.nearest_airport_name,
+      airportLat: dest.airport_lat,
+      airportLng: dest.airport_lng,
+      lat: dest.lat,
+      lng: dest.lng,
+      driveMinutes: dest.drive_minutes,
+      driveMiles: dest.drive_miles,
       stays: byCategory(["stay"]),
       rentals: byCategory(["rv_rental", "gear_rental"]),
       activities: byCategory(["activity"]),

@@ -1,0 +1,2 @@
+- Destination page sections live in `src/components/destination/*`; the route file composes them. Why: the single route file grew too large to maintain.
+- Road trip maps use MapLibre + OpenFreeMap tiles with routes precomputed once by `scripts/content-pipeline/compute-routes.ts` into `src/data/routes.json`; never call a paid/runtime map or routing API per visit. Why: zero per-visitor map cost.
