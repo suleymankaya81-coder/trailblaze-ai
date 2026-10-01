@@ -10,13 +10,20 @@ export default function RoadTripMap({
   to,
 }: {
   route: [number, number][] | null;
+  // Primitives, not arrays: array literals get a new identity on every parent
+  // render (e.g. when the AI snapshot loads), which would tear down and
+  // rebuild the map, discarding the visitor's pan/zoom.
   from: [number, number];
   to: [number, number];
 }) {
+  const fromJson = JSON.stringify(from);
+  const toJson = JSON.stringify(to);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!ref.current) return;
+    const from = JSON.parse(fromJson) as [number, number];
+    const to = JSON.parse(toJson) as [number, number];
     const map = new maplibregl.Map({
       container: ref.current,
       style: "https://tiles.openfreemap.org/styles/liberty",
