@@ -86,7 +86,6 @@ export type Database = {
           recommended_duration: string | null
           region: string | null
           relevance: Json
-          route_geojson: Json | null
           scenic_score: number | null
           secondary_keywords: string[]
           seo_description: string | null
@@ -135,7 +134,6 @@ export type Database = {
           recommended_duration?: string | null
           region?: string | null
           relevance?: Json
-          route_geojson?: Json | null
           scenic_score?: number | null
           secondary_keywords?: string[]
           seo_description?: string | null
@@ -184,7 +182,6 @@ export type Database = {
           recommended_duration?: string | null
           region?: string | null
           relevance?: Json
-          route_geojson?: Json | null
           scenic_score?: number | null
           secondary_keywords?: string[]
           seo_description?: string | null
