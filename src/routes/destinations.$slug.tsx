@@ -158,7 +158,6 @@ function DestinationPage() {
         <div className="space-y-5">
           <TripRadar dest={dest} />
           <PlanB dest={dest} alternatives={<PlanBAlternatives dest={dest} />} />
-          <AffiliateNotice />
         </div>
 
         {/* Stays + budget rail (compact bar on mobile) */}
