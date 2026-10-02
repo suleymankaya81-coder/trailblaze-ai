@@ -7,6 +7,7 @@ import { LandingOfferCard } from "@/components/landing/LandingOfferCard";
 import { getLandingBundle, type LandingBundle } from "@/lib/data/landingPages.functions";
 import { getDestinationPageData, type OfferView } from "@/lib/data/destinations.functions";
 import { LANDING_TYPE_LABEL, LANDING_TYPE_OFFERS } from "@/lib/data/landingTypes";
+import { landingCoverAssets } from "@/lib/data/landingCoverAssets";
 
 const BASE = "https://minialife.com";
 
@@ -31,13 +32,14 @@ export const Route = createFileRoute("/$landing")({
     const title = page.seoTitle ?? h1;
     const description = page.seoDescription ?? page.introContent ?? "";
     const url = page.canonicalUrl ?? `${BASE}${page.path}`;
+    const coverImage = landingCoverAssets[page.path] ? `${BASE}${landingCoverAssets[page.path]}` : page.coverImage;
     const jsonLd = JSON.stringify([
       {
         "@context": "https://schema.org",
         "@type": "Article",
         headline: h1,
         description,
-        image: page.coverImage || undefined,
+        image: coverImage || undefined,
         dateModified: page.updatedAt,
         mainEntityOfPage: url,
         publisher: { "@type": "Organization", name: "Minialife" },
@@ -62,10 +64,10 @@ export const Route = createFileRoute("/$landing")({
         { property: "og:type", content: "article" },
         { property: "og:url", content: url },
         { name: "twitter:card", content: "summary_large_image" },
-        ...(page.coverImage?.startsWith("https://")
+        ...(coverImage?.startsWith("https://")
           ? [
-              { property: "og:image", content: page.coverImage },
-              { name: "twitter:image", content: page.coverImage },
+              { property: "og:image", content: coverImage },
+              { name: "twitter:image", content: coverImage },
             ]
           : []),
         ...(page.indexable ? [] : [{ name: "robots", content: "noindex, follow" }]),
@@ -100,16 +102,17 @@ function LandingPage() {
   const { bundle, offers } = Route.useLoaderData() as { bundle: LandingBundle; offers: OfferView[] };
   const { page, h1, sections, destination, siblings } = bundle;
   const label = LANDING_TYPE_LABEL[page.pageType] ?? "Guide";
+  const coverImage = landingCoverAssets[page.path] ?? page.coverImage;
 
   return (
     <div className="bg-beige/40">
       <Header />
-      <section className={`relative ${page.coverImage ? "min-h-[340px] md:min-h-[420px]" : "bg-forest py-16 md:py-20"}`}>
-        {page.coverImage && (
-          <img src={page.coverImage} alt={`${destination.name} landscape`} className="absolute inset-0 h-full w-full object-cover" />
+      <section className={`relative ${coverImage ? "min-h-[340px] md:min-h-[420px]" : "bg-forest py-16 md:py-20"}`}>
+        {coverImage && (
+          <img src={coverImage} alt={`${destination.name} landscape`} className="absolute inset-0 h-full w-full object-cover" />
         )}
-        {page.coverImage && <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-transparent" />}
-        <div className={`container-page relative ${page.coverImage ? "flex min-h-[340px] flex-col justify-end pb-8 md:min-h-[420px]" : ""}`}>
+        {coverImage && <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-transparent" />}
+        <div className={`container-page relative ${coverImage ? "flex min-h-[340px] flex-col justify-end pb-8 md:min-h-[420px]" : ""}`}>
           <nav className="mb-3 flex flex-wrap items-center gap-1 text-xs text-off-white/80">
             <Link to="/" className="hover:underline">Home</Link>
             <ChevronRight className="h-3 w-3" />
@@ -122,7 +125,7 @@ function LandingPage() {
           <h1 className="max-w-3xl font-display text-3xl text-off-white md:text-5xl">{h1}</h1>
         </div>
       </section>
-      {page.coverImage && page.coverPhotoCredit && page.coverPhotoSource && (
+      {coverImage && page.coverPhotoCredit && page.coverPhotoSource && (
         <p className="container-page pt-2 text-[10px] text-muted-foreground">
           Photo: <a href={page.coverPhotoSource} target="_blank" rel="noopener noreferrer" className="underline">{page.coverPhotoCredit}</a>{page.coverPhotoLicense ? ` · ${page.coverPhotoLicense}` : ""}
         </p>
