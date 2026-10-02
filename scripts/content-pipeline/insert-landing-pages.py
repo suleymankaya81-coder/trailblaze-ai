@@ -13,6 +13,10 @@ TYPES = {  # key -> (page_type, path suffix, priority, keyword template)
 SEMRUSH = {("yellowstone", "best_time"): (6600, 29), ("yellowstone", "things_to_do"): (4400, 23),
            ("yellowstone", "itinerary"): (1000, 13), ("yellowstone", "glamping"): (590, 13)}
 DB = os.environ["SUPABASE_DB_URL"]
+import requests, datetime
+URL = os.environ["SUPABASE_URL"]; SK = os.environ["SUPABASE_SERVICE_ROLE_KEY"]
+H = {"apikey": SK, "Authorization": f"Bearer {SK}", "Prefer": "resolution=merge-duplicates"}
+NOW = datetime.datetime.now(datetime.timezone.utc).isoformat()
 
 
 def q(sql):
@@ -32,6 +36,7 @@ docs = [json.load(open(f)) for f in sorted(glob.glob("/tmp/landing/*.json"))]
 glamping_ok = set(q("""select distinct d.slug from offers o join destinations d on d.id=o.destination_id
   where o.category='stay' and o.network in ('awin','info')""").split())
 
+dest_ids = dict(l.split("|") for l in q("select slug,id from destinations where status='published'").split())
 rows = []
 for d in docs:
     for key, p in d["pages"].items():
@@ -55,15 +60,13 @@ for d, key, p, text, sh in rows:
     sections = [{"type": "h1", "text": p["h1"]}] + [
         {"type": "text", "heading": s["heading"], "body": s["body"]} for s in p["sections"]]
     path = f"/{d['slug']}-{suffix}"
-    sql = f"""insert into seo_landing_pages (destination_id,path,page_type,target_keyword,search_volume,
-      keyword_difficulty,priority,seo_title,seo_description,intro_content,content_sections,inventory_filter,
-      content_status,status,indexable,noindex_reason,canonical_url,published_at,last_content_reviewed_at)
-      select id,{lit(path)},'{ptype}',{lit(kw.format(n=d['short'].lower()))},{vol or 'NULL'},{kd or 'NULL'},{prio},
-      {lit(p['seo_title'])},{lit(p['seo_description'])},{lit(p['intro'])},{lit(json.dumps(sections))}::jsonb,
-      {lit(json.dumps({'type': ptype}))}::jsonb,'ready','published',{'false' if reason else 'true'},{lit(reason)},
-      {lit('https://minialife.com' + path)},now(),now() from destinations where slug={lit(d['slug'])}
-      on conflict (path) do update set seo_title=excluded.seo_title,seo_description=excluded.seo_description,
-      intro_content=excluded.intro_content,content_sections=excluded.content_sections,indexable=excluded.indexable,
-      noindex_reason=excluded.noindex_reason,last_content_reviewed_at=now()"""
-    q(sql)
+    row = {"destination_id": dest_ids[d["slug"]], "path": path, "page_type": ptype,
+           "target_keyword": kw.format(n=d["short"].lower()), "search_volume": vol, "keyword_difficulty": kd,
+           "priority": prio, "seo_title": p["seo_title"], "seo_description": p["seo_description"],
+           "intro_content": p["intro"], "content_sections": sections, "inventory_filter": {"type": ptype},
+           "content_status": "ready", "status": "published", "indexable": not reason, "noindex_reason": reason,
+           "canonical_url": "https://minialife.com" + path, "published_at": "now()", "last_content_reviewed_at": "now()"}
+    row["published_at"] = row["last_content_reviewed_at"] = NOW
+    r = requests.post(f"{URL}/rest/v1/seo_landing_pages?on_conflict=path", json=row, headers=H)
+    r.raise_for_status()
     print(path, words, reason or "indexable")
