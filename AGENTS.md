@@ -2,3 +2,4 @@
 - Road trip maps use MapLibre + OpenFreeMap tiles with routes precomputed once by `scripts/content-pipeline/compute-routes.ts` into `src/data/routes.json`; never call a paid/runtime map or routing API per visit. Why: zero per-visitor map cost.
 - Destination pages show only offers with `offers.network` in (awin, info); other networks stay stored but filtered out, and Awin clicks redirect via `src/lib/affiliates/awin.ts`. Why: only Awin partnerships are being pursued for now.
 - Search-page records live in their own table linked to destinations; resolver in src/lib/data/landingPages.functions.ts is not routed yet (a root catch-all would collide with fixed routes). Why: keep /destinations/$slug and fixed routes unambiguous.
+- Destination photos come from Wikimedia Commons with credits in destinations.photo_credit; a published cover photo is required and must be unique (DB index). Why: stock photos were reused across places and showed the wrong scenery.
