@@ -61,6 +61,8 @@ import { outboundLinkTitle, partnerLabel } from "@/lib/affiliates/compliance";
 import { buildDestinationJsonLd } from "@/lib/seo/destinationJsonLd";
 import { saveTripPlan } from "@/lib/plans/savePlan.functions";
 import { getCapturedEmail, setCapturedEmail } from "@/lib/plans/session";
+import { getPublicLandingPagesForDestination } from "@/lib/data/landingPages.functions";
+import { LANDING_TYPE_LABEL } from "@/lib/data/landingTypes";
 
 export const Route = createFileRoute("/destinations/$slug")({
   loader: async ({ params }): Promise<{ dest: DestinationView }> => {
@@ -188,6 +190,8 @@ function DestinationPage() {
         </div>
 
         <Toolkit dest={dest} ai={ai} loading={aiLoading} />
+
+        <PlanDeeper dest={dest} />
 
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
           <SimilarDestinations dest={dest} />
@@ -1665,5 +1669,34 @@ function FinalCta({ dest }: { dest: DestinationView }) {
         Free — no account needed
       </p>
     </aside>
+  );
+}
+
+// Links to this destination's search pages (best time, things to do, ...).
+function PlanDeeper({ dest }: { dest: DestinationView }) {
+  const fetchPages = useServerFn(getPublicLandingPagesForDestination);
+  const { data } = useQuery({
+    queryKey: ["landing-pages", dest.id],
+    queryFn: () => fetchPages({ data: { destinationId: dest.id } }),
+    staleTime: 5 * 60 * 1000,
+  });
+  if (!data || data.length === 0) return null;
+  return (
+    <section className="rounded-2xl border border-border bg-card p-6">
+      <h2 className="font-display text-2xl text-foreground">Plan deeper</h2>
+      <div className="mt-4 flex flex-wrap gap-3">
+        {data.map((p) => (
+          <Link
+            key={p.id}
+            to="/$landing"
+            params={{ landing: p.path.slice(1) }}
+            className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground hover:bg-muted"
+          >
+            {dest.name.replace(" National Park", "")}: {LANDING_TYPE_LABEL[p.pageType] ?? p.pageType}
+            <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
+        ))}
+      </div>
+    </section>
   );
 }

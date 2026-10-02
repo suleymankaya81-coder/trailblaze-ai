@@ -56,6 +56,23 @@ export async function buildSitemapResponse(_origin?: string): Promise<Response> 
         lastmod: new Date(d.updated_at).toISOString(),
       });
     }
+    // Search pages: published + indexable only (RLS also hides pages whose
+    // destination is unpublished).
+    const SUPABASE_URL = process.env.SUPABASE_URL;
+    const KEY = process.env.SUPABASE_PUBLISHABLE_KEY;
+    if (SUPABASE_URL && KEY) {
+      const headers: Record<string, string> = { apikey: KEY };
+      if (!isNewSupabaseApiKey(KEY)) headers.Authorization = `Bearer ${KEY}`;
+      const res = await fetch(
+        `${SUPABASE_URL}/rest/v1/seo_landing_pages?select=path,updated_at&status=eq.published&indexable=eq.true&order=path.asc`,
+        { headers },
+      );
+      if (res.ok) {
+        for (const p of (await res.json()) as { path: string; updated_at: string }[]) {
+          urls.push({ loc: `${BASE_URL}${p.path}`, lastmod: new Date(p.updated_at).toISOString() });
+        }
+      }
+    }
   } catch (err) {
     // Degrade gracefully — a stale/partial sitemap beats a 500 for crawlers.
     console.error("[sitemap] failed to load destinations, serving static pages only", err);
