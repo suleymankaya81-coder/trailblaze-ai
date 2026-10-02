@@ -1,7 +1,7 @@
 // Manually verified location-specific guide covers, mirrored to our asset CDN.
 // The database retains Commons source, photographer, and license attribution.
 export const landingCoverAssets: Record<string, string> = {
-  "/acadia-things-to-do": "/__l5e/assets-v1/df93d19a-07be-4607-9ffd-cdd7fd422315/acadia-things_to_do.jpg",
+  "/acadia-things-to-do": "/__l5e/assets-v1/ca555e64-2ff7-4191-9a70-17e37d0055b4/acadia-things-to-do-coast.jpg",
   "/bryce-canyon-things-to-do": "/__l5e/assets-v1/8d751719-e7b6-4114-a2ea-f82d45c1394e/bryce-canyon-things_to_do.jpg",
   "/grand-canyon-best-time-to-visit": "/__l5e/assets-v1/402e248d-1271-4494-bff4-2ada76c6b5a3/grand-canyon-best_time.jpg",
   "/joshua-tree-things-to-do": "/__l5e/assets-v1/f818457a-44bd-49ed-92fd-b92d6c6a27ca/joshua-tree-things_to_do.jpg",
