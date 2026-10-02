@@ -334,6 +334,10 @@ export type Database = {
           canonical_url: string | null
           content_sections: Json
           content_status: Database["public"]["Enums"]["landing_content_status"]
+          cover_image: string | null
+          cover_photo_credit: string | null
+          cover_photo_license: string | null
+          cover_photo_source: string | null
           created_at: string
           destination_id: string
           id: string
@@ -360,6 +364,10 @@ export type Database = {
           canonical_url?: string | null
           content_sections?: Json
           content_status?: Database["public"]["Enums"]["landing_content_status"]
+          cover_image?: string | null
+          cover_photo_credit?: string | null
+          cover_photo_license?: string | null
+          cover_photo_source?: string | null
           created_at?: string
           destination_id: string
           id?: string
@@ -386,6 +394,10 @@ export type Database = {
           canonical_url?: string | null
           content_sections?: Json
           content_status?: Database["public"]["Enums"]["landing_content_status"]
+          cover_image?: string | null
+          cover_photo_credit?: string | null
+          cover_photo_license?: string | null
+          cover_photo_source?: string | null
           created_at?: string
           destination_id?: string
           id?: string
