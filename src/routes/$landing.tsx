@@ -37,7 +37,7 @@ export const Route = createFileRoute("/$landing")({
         "@type": "Article",
         headline: h1,
         description,
-        image: destination.heroImage || undefined,
+        image: page.coverImage || undefined,
         dateModified: page.updatedAt,
         mainEntityOfPage: url,
         publisher: { "@type": "Organization", name: "Minialife" },
@@ -62,10 +62,10 @@ export const Route = createFileRoute("/$landing")({
         { property: "og:type", content: "article" },
         { property: "og:url", content: url },
         { name: "twitter:card", content: "summary_large_image" },
-        ...(destination.heroImage
+        ...(page.coverImage?.startsWith("https://")
           ? [
-              { property: "og:image", content: destination.heroImage },
-              { name: "twitter:image", content: destination.heroImage },
+              { property: "og:image", content: page.coverImage },
+              { name: "twitter:image", content: page.coverImage },
             ]
           : []),
         ...(page.indexable ? [] : [{ name: "robots", content: "noindex, follow" }]),
@@ -104,13 +104,13 @@ function LandingPage() {
   return (
     <div className="bg-beige/40">
       <Header />
-      <section className="relative">
-        {destination.heroImage && (
-          <img src={destination.heroImage} alt={destination.name} className="h-[340px] w-full object-cover md:h-[420px]" />
+      <section className={`relative ${page.coverImage ? "min-h-[340px] md:min-h-[420px]" : "bg-forest py-16 md:py-20"}`}>
+        {page.coverImage && (
+          <img src={page.coverImage} alt={`${destination.name} landscape`} className="absolute inset-0 h-full w-full object-cover" />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-transparent" />
-        <div className="container-page absolute inset-x-0 bottom-0 pb-8">
-          <nav className="mb-3 flex items-center gap-1 text-xs text-off-white/80">
+        {page.coverImage && <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-transparent" />}
+        <div className={`container-page relative ${page.coverImage ? "flex min-h-[340px] flex-col justify-end pb-8 md:min-h-[420px]" : ""}`}>
+          <nav className="mb-3 flex flex-wrap items-center gap-1 text-xs text-off-white/80">
             <Link to="/" className="hover:underline">Home</Link>
             <ChevronRight className="h-3 w-3" />
             <Link to="/destinations/$slug" params={{ slug: destination.slug }} className="hover:underline">
@@ -122,8 +122,10 @@ function LandingPage() {
           <h1 className="max-w-3xl font-display text-3xl text-off-white md:text-5xl">{h1}</h1>
         </div>
       </section>
-      {destination.photoCredit && (
-        <p className="container-page pt-2 text-[10px] text-muted-foreground">Photo: {destination.photoCredit}</p>
+      {page.coverImage && page.coverPhotoCredit && page.coverPhotoSource && (
+        <p className="container-page pt-2 text-[10px] text-muted-foreground">
+          Photo: <a href={page.coverPhotoSource} target="_blank" rel="noopener noreferrer" className="underline">{page.coverPhotoCredit}</a>{page.coverPhotoLicense ? ` · ${page.coverPhotoLicense}` : ""}
+        </p>
       )}
 
       <main className="container-page grid gap-10 py-10 lg:grid-cols-[minmax(0,1fr)_300px]">
@@ -143,7 +145,7 @@ function LandingPage() {
               <h2 className="mb-4 font-display text-2xl text-foreground">Book it for {destination.name}</h2>
               <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
                 {offers.map((o) => (
-                  <LandingOfferCard key={o.id} offer={o} destinationSlug={destination.slug} />
+                  <LandingOfferCard key={o.id} offer={o} destinationSlug={destination.slug} destinationHero={destination.heroImage} />
                 ))}
               </div>
             </section>

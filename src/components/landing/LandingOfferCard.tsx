@@ -7,7 +7,7 @@ import { trackAndRedirect } from "@/lib/affiliates/track.functions";
 import { getOrCreateSessionId } from "@/lib/affiliates/session";
 import { outboundLinkTitle, partnerLabel } from "@/lib/affiliates/compliance";
 
-export function LandingOfferCard({ offer, destinationSlug }: { offer: OfferView; destinationSlug: string }) {
+export function LandingOfferCard({ offer, destinationSlug, destinationHero }: { offer: OfferView; destinationSlug: string; destinationHero: string }) {
   const track = useServerFn(trackAndRedirect);
   const [pending, setPending] = useState(false);
   const label = partnerLabel(offer.partner);
@@ -37,7 +37,7 @@ export function LandingOfferCard({ offer, destinationSlug }: { offer: OfferView;
 
   return (
     <article className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card">
-      {offer.image && (
+      {offer.image && offer.image !== destinationHero && (
         <img src={offer.image} alt={offer.title} loading="lazy" className="h-36 w-full object-cover" />
       )}
       <div className="flex flex-1 flex-col gap-2 p-4">

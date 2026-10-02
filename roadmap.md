@@ -1,0 +1,3 @@
+- [ ] Select and verify distinct licensed photos for 80 published search guides; record source, author, license, and any unmatched pages.
+- [ ] Remove misleading duplicated destination-cover images from partner cards on guide and destination pages.
+- [ ] Verify guide metadata, image fallback, responsive display, and hidden Lovable badge on published site.
