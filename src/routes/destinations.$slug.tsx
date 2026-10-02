@@ -828,7 +828,7 @@ function ThingsToDo({ dest }: { dest: DestinationView }) {
               className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition hover:shadow-lift"
             >
                <div className="relative aspect-[4/3] bg-beige/30">
-                 <CardImg src={offerPhoto(dest.slug, "activity", index)?.url ?? ""} alt={`${dest.name} landscape, illustrative activity photo`} className="h-full w-full object-cover" />
+                  <CardImg src={offerPhoto(dest.slug, "activity", index)?.url ?? ""} alt={offerPhoto(dest.slug, "activity", index) ? `${offerPhoto(dest.slug, "activity", index)?.subject}, illustrative activity photo` : ""} className="h-full w-full object-cover" />
                  {offerPhoto(dest.slug, "activity", index) && <PhotoCredit photo={offerPhoto(dest.slug, "activity", index)} />}
                </div>
               <div className="flex flex-1 flex-col p-4">
@@ -1297,7 +1297,7 @@ function Essentials({ dest }: { dest: DestinationView }) {
               className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition hover:shadow-lift"
             >
                <div className="relative aspect-[4/3] bg-beige/30">
-                 <CardImg src={offerPhoto(dest.slug, "gear", index)?.url ?? ""} alt={`${e.title}, illustrative gear photo`} className="h-full w-full object-cover" />
+                  <CardImg src={offerPhoto(dest.slug, "gear", index)?.url ?? ""} alt={offerPhoto(dest.slug, "gear", index) ? `${offerPhoto(dest.slug, "gear", index)?.subject}, illustrative gear photo` : ""} className="h-full w-full object-cover" />
                  {offerPhoto(dest.slug, "gear", index) && <PhotoCredit photo={offerPhoto(dest.slug, "gear", index)} />}
                </div>
               <div className="flex flex-1 flex-col p-3.5">

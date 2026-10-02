@@ -1,4 +1,4 @@
 - [ ] Select and verify distinct licensed photos for 80 published search guides; 32 credited covers saved, 48 guides remain photo-free pending a location-and-rights-verified photo.
 - [x] Remove misleading duplicated destination-cover images from partner cards on guide and destination pages.
 - [x] Verify all 80 guides' metadata, image fallback, and desktop/phone layout; published Lovable badge was confirmed hidden.
-- [ ] Restore distinct credited images to stay, rental, activity, gear and information cards on all 20 published destination pages; verify links, RVshare/REI labels, mobile and desktop.
+- [x] Restore distinct credited illustrative images to stay, rental, activity, gear and information cards on all 20 published destination pages; verify RVshare/REI labels and desktop/mobile rendering. Brand-specific listing photos are not available; these images are illustrative, not actual partner inventory.
