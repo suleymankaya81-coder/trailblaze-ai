@@ -26,6 +26,10 @@ export type LandingPageView = {
   indexable: boolean;
   noindexReason: string | null;
   canonicalUrl: string | null;
+  coverImage: string | null;
+  coverPhotoCredit: string | null;
+  coverPhotoSource: string | null;
+  coverPhotoLicense: string | null;
   priority: number;
   updatedAt: string;
 };
@@ -59,6 +63,10 @@ function toView(r: Tables<"seo_landing_pages">): LandingPageView {
     indexable: r.indexable,
     noindexReason: r.noindex_reason,
     canonicalUrl: r.canonical_url,
+    coverImage: r.cover_image,
+    coverPhotoCredit: r.cover_photo_credit,
+    coverPhotoSource: r.cover_photo_source,
+    coverPhotoLicense: r.cover_photo_license,
     priority: r.priority,
     updatedAt: r.updated_at,
   };

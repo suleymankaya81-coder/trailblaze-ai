@@ -37,9 +37,6 @@ export function LandingOfferCard({ offer, destinationSlug }: { offer: OfferView;
 
   return (
     <article className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card">
-      {offer.image && (
-        <img src={offer.image} alt={offer.title} loading="lazy" className="h-36 w-full object-cover" />
-      )}
       <div className="flex flex-1 flex-col gap-2 p-4">
         <h3 className="font-semibold text-foreground">{offer.title}</h3>
         {offer.whyRecommended && (
