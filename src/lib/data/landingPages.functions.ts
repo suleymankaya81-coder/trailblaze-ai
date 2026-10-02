@@ -93,3 +93,64 @@ export const getPublicLandingPagesForDestination = createServerFn({ method: "GET
     if (error) throw error;
     return (rows ?? []).map(toView);
   });
+
+export type LandingBundle = {
+  page: LandingPageView;
+  h1: string;
+  sections: { heading: string; body: string }[];
+  destination: { slug: string; name: string; heroImage: string; photoCredit: string | null };
+  siblings: { path: string; pageType: string }[];
+};
+
+// Everything the /$landing route needs in one call. Null → 404.
+export const getLandingBundle = createServerFn({ method: "GET" })
+  .inputValidator((input: unknown) => z.object({ path: z.string().max(200) }).parse(input))
+  .handler(async ({ data }): Promise<LandingBundle | null> => {
+    const path = normalizeLandingPath(data.path);
+    if (!path) return null;
+    const { data: row, error } = await supabase
+      .from("seo_landing_pages")
+      .select("*")
+      .eq("path", path)
+      .eq("status", "published")
+      .maybeSingle();
+    if (error) throw error;
+    if (!row) return null;
+    const { data: dest, error: dErr } = await supabase
+      .from("destinations")
+      .select("slug, name, hero_image, photo_credit")
+      .eq("id", row.destination_id)
+      .eq("status", "published")
+      .maybeSingle();
+    if (dErr) throw dErr;
+    if (!dest) return null;
+    const { data: sib } = await supabase
+      .from("seo_landing_pages")
+      .select("path, page_type")
+      .eq("destination_id", row.destination_id)
+      .eq("status", "published")
+      .neq("id", row.id)
+      .order("priority", { ascending: false });
+    const raw = Array.isArray(row.content_sections) ? row.content_sections : [];
+    let h1 = row.seo_title ?? dest.name;
+    const sections: { heading: string; body: string }[] = [];
+    for (const s of raw) {
+      if (!s || typeof s !== "object" || Array.isArray(s)) continue;
+      const o = s as Record<string, Json | undefined>;
+      if (o.type === "h1" && typeof o.text === "string") h1 = o.text;
+      else if (typeof o.heading === "string" && typeof o.body === "string")
+        sections.push({ heading: o.heading, body: o.body });
+    }
+    return {
+      page: toView(row),
+      h1,
+      sections,
+      destination: {
+        slug: dest.slug,
+        name: dest.name,
+        heroImage: dest.hero_image ?? "",
+        photoCredit: dest.photo_credit,
+      },
+      siblings: (sib ?? []).map((s) => ({ path: s.path, pageType: s.page_type })),
+    };
+  });
