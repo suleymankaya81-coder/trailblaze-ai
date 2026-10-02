@@ -363,7 +363,7 @@ function PhotoCredit({ photo }: { photo?: Photo }) {
     <a href={photo.source} target="_blank" rel="noopener noreferrer" title={`${photo.subject} · ${photo.credit} · ${photo.license}`}
       onClick={(event) => event.stopPropagation()}
       className="absolute bottom-1 right-1 z-10 max-w-[85%] truncate bg-ink/80 px-1.5 py-0.5 text-[9px] text-off-white">
-      Photo: {photo.credit} · {photo.license}
+       Illustrative · {photo.credit} · {photo.license}
     </a>
   );
 }
