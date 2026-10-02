@@ -1,3 +1,3 @@
-- [ ] Select and verify distinct licensed photos for 80 published search guides; 8 credited covers saved, remaining guides use a photo-free cover until reviewed.
+- [ ] Select and verify distinct licensed photos for 80 published search guides; 24 credited covers saved, 56 guides remain photo-free pending a location-and-rights-verified photo.
 - [x] Remove misleading duplicated destination-cover images from partner cards on guide and destination pages.
-- [ ] Verify guide metadata, image fallback, responsive display, and hidden Lovable badge on published site.
+- [x] Verify all 80 guides' metadata, image fallback, and desktop/phone layout; published Lovable badge was confirmed hidden.
