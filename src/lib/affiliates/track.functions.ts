@@ -61,6 +61,11 @@ export const trackAndRedirect = createServerFn({ method: "POST" })
       };
     }
 
+    // RVshare and REI are plain, non-affiliate links until a real partnership exists.
+    if (offer.partner === "rvshare" || offer.partner === "rei") {
+      return { redirectUrl: offer.external_url };
+    }
+
     const adapter = getAffiliateAdapter(offer.partner);
     const redirectUrl = adapter.buildDeepLink(
       { id: offer.id, externalUrl: offer.external_url, partner: offer.partner },

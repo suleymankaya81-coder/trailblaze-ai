@@ -17,6 +17,7 @@ export type OfferView = {
   description: string | null;
   duration: string | null;
   partner: string | null;
+  network: string | null;
   category: Tables<"offers">["category"];
   commissionable: boolean;
 };
@@ -78,13 +79,14 @@ function toOfferView(row: Tables<"offers">): OfferView {
     description: row.description,
     duration: row.duration,
     partner: row.partner,
+    network: row.network,
     category: row.category,
     commissionable: row.commissionable,
   };
 }
 
-// Destination pages show only Awin offers (plus plain info links such as the
-// official NPS park pass page). Other networks stay stored but hidden.
+// Awin and informational offers remain the default. RVshare rentals and REI
+// gear are explicit non-affiliate exceptions requested for destination pages.
 const SHOWN_NETWORKS = ["awin", "info"] as const;
 
 export const GLOBAL_SERVICE_CATEGORIES = [
@@ -112,8 +114,7 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
     const { data: offers, error: offersError } = await supabase
       .from("offers")
       .select("*")
-      .eq("destination_id", dest.id)
-      .in("network", [...SHOWN_NETWORKS]);
+      .eq("destination_id", dest.id);
 
     if (offersError) throw offersError;
 
@@ -133,7 +134,15 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       .map(toOfferView);
 
     const byCategory = (categories: Tables<"offers">["category"][]) =>
-      (offers ?? []).filter((o) => categories.includes(o.category)).map(toOfferView);
+      (offers ?? [])
+        .filter((o) => categories.includes(o.category))
+        .filter(
+          (o) =>
+            SHOWN_NETWORKS.some((network) => network === o.network) ||
+            (o.partner === "rvshare" && o.category === "rv_rental") ||
+            (o.partner === "rei" && o.category === "gear_purchase"),
+        )
+        .map(toOfferView);
 
     let similar: SimilarDestination[] = [];
     if (dest.similar_slugs.length > 0) {

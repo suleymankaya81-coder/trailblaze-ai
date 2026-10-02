@@ -63,6 +63,7 @@ import { saveTripPlan } from "@/lib/plans/savePlan.functions";
 import { getCapturedEmail, setCapturedEmail } from "@/lib/plans/session";
 import { getPublicLandingPagesForDestination } from "@/lib/data/landingPages.functions";
 import { LANDING_TYPE_LABEL } from "@/lib/data/landingTypes";
+import { cardPhoto, offerPhoto, type Photo } from "@/lib/data/destinationCardPhotos";
 
 export const Route = createFileRoute("/destinations/$slug")({
   loader: async ({ params }): Promise<{ dest: DestinationView }> => {
@@ -356,6 +357,17 @@ function CardImg({ src, alt, className }: { src: string; alt: string; className?
   );
 }
 
+function PhotoCredit({ photo }: { photo?: Photo }) {
+  if (!photo) return null;
+  return (
+    <a href={photo.source} target="_blank" rel="noopener noreferrer" title={`${photo.subject} · ${photo.credit} · ${photo.license}`}
+      onClick={(event) => event.stopPropagation()}
+      className="absolute bottom-1 right-1 z-10 max-w-[85%] truncate bg-ink/80 px-1.5 py-0.5 text-[9px] text-off-white">
+       Illustrative · {photo.credit} · {photo.license}
+    </a>
+  );
+}
+
 /* =========================================================
    SHARED — offer helpers
 ========================================================= */
@@ -448,8 +460,8 @@ function OfferCta({
       <a
         href={offer.externalUrl}
         target="_blank"
-        rel="sponsored nofollow noopener noreferrer"
-        title={outboundLinkTitle(offer.partner, offer.externalUrl)}
+        rel={offer.network === "awin" ? "sponsored nofollow noopener noreferrer" : "noopener noreferrer"}
+        title={outboundLinkTitle(offer.partner, offer.externalUrl, offer.network === "awin")}
         onClick={handleClick}
         aria-disabled={pending}
         className={`inline-flex items-center gap-1.5 rounded-full bg-copper ${pad} font-semibold text-off-white transition hover:bg-copper/90 ${
@@ -460,9 +472,9 @@ function OfferCta({
         <ArrowRight className="h-3.5 w-3.5" />
       </a>
       <span className="text-[10px] leading-tight text-muted-foreground">
-        {partnerLabel(offer.partner)
-          ? `Partner link · ${partnerLabel(offer.partner)}`
-          : "Partner link"}
+        {offer.network === "awin"
+          ? `Partner link · ${partnerLabel(offer.partner) ?? "External partner"}`
+          : `Direct link · ${partnerLabel(offer.partner) ?? "External site"}`}
       </span>
     </span>
   );
@@ -548,9 +560,9 @@ function TopStays({ dest }: { dest: DestinationView }) {
         <EmptyState message="No stays listed for this filter yet." />
       ) : (
         <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-          {pick && <StayCard offer={pick} destinationSlug={dest.slug} featured />}
-          {rest.map((s) => (
-            <StayCard key={s.id} offer={s} destinationSlug={dest.slug} />
+           {pick && <StayCard offer={pick} destinationSlug={dest.slug} featured photo={offerPhoto(dest.slug, "stay", 0)} />}
+           {rest.map((s, index) => (
+             <StayCard key={s.id} offer={s} destinationSlug={dest.slug} photo={offerPhoto(dest.slug, "stay", index + 1)} />
           ))}
         </div>
       )}
@@ -570,10 +582,12 @@ function StayCard({
   offer,
   destinationSlug,
   featured = false,
+  photo,
 }: {
   offer: OfferView;
   destinationSlug: string;
   featured?: boolean;
+  photo?: Photo;
 }) {
   return (
     <article
@@ -584,7 +598,9 @@ function StayCard({
           : "border-border")
       }
     >
-      <div className="relative min-h-11 bg-beige/50">
+      <div className="relative aspect-[4/3] bg-beige/50">
+        <CardImg src={photo?.url ?? ""} alt={photo ? `${photo.subject}, illustrative accommodation photo` : ""} className="h-full w-full object-cover" />
+        {photo && <PhotoCredit photo={photo} />}
         {parkTag(offer) && (
           <span
             className={
@@ -736,32 +752,23 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
    4 — RENT BEFORE YOU GO
 ========================================================= */
 function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
-  const rv = dest.rentals.filter((r) => r.category === "rv_rental");
-  const rentals = (rv.length ? rv : dest.rentals).slice(0, 5);
-  const prices = rv.map((r) => r.priceValue).filter((v): v is number => v != null);
-  const avg = prices.length ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : null;
+  const rentals = [...dest.rentals.filter((r) => r.partner === "rvshare"), ...dest.rentals.filter((r) => r.partner !== "rvshare")].slice(0, 5);
 
   return (
     <section id="rentals" className="scroll-mt-24">
       <SectionHeader
-        title={dest.airportCode ? `RVs & campervans near ${dest.airportCode}` : "RVs & campervans for this trip"}
+        title={dest.airportCode ? `RVs, campervans & cars near ${dest.airportCode}` : "RVs, campervans & cars for this trip"}
         action={<TextLink>View all rentals</TextLink>}
       />
       <p className="-mt-3 mb-4 text-[11px] text-muted-foreground">
         Checks availability with the partner directly — not a confirmed booking on our end.
       </p>
-      {avg != null && (
-        <p className="mb-4 rounded-xl bg-sand/50 px-4 py-2.5 text-xs text-foreground/85">
-          <span className="font-semibold">About ${avg} a day on average.</span> Your stay and your
-          ride in one — compare it with a hotel plus a rental car. Rates are set by the partner.
-        </p>
-      )}
       {rentals.length === 0 ? (
         <EmptyState message="No rental partners listed for this destination yet." />
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-          {rentals.map((r) => (
-            <RentalTile key={r.id} offer={r} destinationSlug={dest.slug} />
+           {rentals.map((r, index) => (
+             <RentalTile key={r.id} offer={r} destinationSlug={dest.slug} photo={offerPhoto(dest.slug, "rental", index)} />
           ))}
         </div>
       )}
@@ -769,11 +776,15 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
   );
 }
 
-function RentalTile({ offer, destinationSlug }: { offer: OfferView; destinationSlug: string }) {
+function RentalTile({ offer, destinationSlug, photo }: { offer: OfferView; destinationSlug: string; photo?: Photo }) {
   return (
     <article className="group relative overflow-hidden rounded-2xl border border-border bg-card">
+      <div className="relative aspect-[4/3] bg-beige/30">
+        <CardImg src={photo?.url ?? ""} alt={photo ? `${photo.subject}, illustrative rental photo` : ""} className="h-full w-full object-cover" />
+        {photo && <PhotoCredit photo={photo} />}
+      </div>
       <div className="border-b border-border bg-beige/30 p-4">
-          <p className="text-sm font-semibold text-foreground">{offer.title}</p>
+          <p className="text-sm font-semibold text-foreground">{offer.partner === "rentcars" ? `Car rental · ${offer.title}` : offer.title}</p>
           <p className="mt-1 text-[11px] text-muted-foreground">
             {offer.priceValue != null
               ? `From $${offer.priceValue} / ${offer.priceUnit ?? "day"}`
@@ -811,11 +822,15 @@ function ThingsToDo({ dest }: { dest: DestinationView }) {
         <EmptyState message="No activities listed for this destination yet." />
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-          {activities.map((a) => (
+           {activities.map((a, index) => (
             <article
               key={a.id}
               className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition hover:shadow-lift"
             >
+               <div className="relative aspect-[4/3] bg-beige/30">
+                  <CardImg src={offerPhoto(dest.slug, "activity", index)?.url ?? ""} alt={offerPhoto(dest.slug, "activity", index) ? `${offerPhoto(dest.slug, "activity", index)?.subject}, illustrative activity photo` : ""} className="h-full w-full object-cover" />
+                 {offerPhoto(dest.slug, "activity", index) && <PhotoCredit photo={offerPhoto(dest.slug, "activity", index)} />}
+               </div>
               <div className="flex flex-1 flex-col p-4">
                 <h3 className="text-sm font-semibold text-foreground">{a.title}</h3>
                 {a.duration && (
@@ -1267,20 +1282,24 @@ function PackForTrip({
    9 — ESSENTIALS WORTH HAVING
 ========================================================= */
 function Essentials({ dest }: { dest: DestinationView }) {
-  const items = dest.essentials.slice(0, 3);
+  const items = [...dest.essentials.filter((e) => e.partner === "jackery"), ...dest.essentials.filter((e) => e.partner === "rei")].slice(0, 6);
 
   return (
     <section>
-      <SectionHeader title="3 things you should not skip" action={<TextLink>View all gear</TextLink>} />
+      <SectionHeader title="Gear worth bringing" action={<TextLink>View all gear</TextLink>} />
       {items.length === 0 ? (
         <EmptyState message="No gear recommendations for this destination yet." />
       ) : (
-        <div className="grid gap-4 grid-cols-2 sm:grid-cols-3">
-          {items.map((e) => (
+         <div className="grid gap-4 grid-cols-2 sm:grid-cols-3">
+           {items.map((e, index) => (
             <article
               key={e.id}
               className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition hover:shadow-lift"
             >
+               <div className="relative aspect-[4/3] bg-beige/30">
+                  <CardImg src={offerPhoto(dest.slug, "gear", index)?.url ?? ""} alt={offerPhoto(dest.slug, "gear", index) ? `${offerPhoto(dest.slug, "gear", index)?.subject}, illustrative gear photo` : ""} className="h-full w-full object-cover" />
+                 {offerPhoto(dest.slug, "gear", index) && <PhotoCredit photo={offerPhoto(dest.slug, "gear", index)} />}
+               </div>
               <div className="flex flex-1 flex-col p-3.5">
                 <h3 className="text-xs font-semibold text-foreground">{e.title}</h3>
                 <p className="mt-1.5 line-clamp-3 text-[11px] leading-relaxed text-muted-foreground">
@@ -1325,28 +1344,28 @@ function Toolkit({
       title: "Destination insights",
       sub: "Weather, crowds, wildlife, cell service & safety.",
       cta: "Read guide",
-      img: dest.gallery[0] && dest.gallery[0] !== dest.heroImage ? dest.gallery[0] : "",
+       img: cardPhoto(dest.slug, 0)?.url ?? "",
     },
     {
       key: "seasonal",
       title: "Seasonal guide",
       sub: "Best times to visit and what to expect each season.",
       cta: "See seasons",
-      img: dest.gallery[1] && dest.gallery[1] !== dest.heroImage ? dest.gallery[1] : "",
+       img: cardPhoto(dest.slug, 1)?.url ?? "",
     },
     {
       key: "checklist",
       title: "Packing checklist",
       sub: "Everything to bring, grouped by category.",
       cta: "Get checklist",
-      img: dest.gallery[2] && dest.gallery[2] !== dest.heroImage ? dest.gallery[2] : "",
+       img: cardPhoto(dest.slug, 2)?.url ?? "",
     },
     {
       key: "before",
       title: "Before you go",
       sub: "Passes, reservations and rules to sort out early.",
       cta: "See guide",
-      img: dest.gallery[3] && dest.gallery[3] !== dest.heroImage ? dest.gallery[3] : "",
+       img: cardPhoto(dest.slug, 3)?.url ?? "",
     },
   ];
 
@@ -1367,7 +1386,8 @@ function Toolkit({
                 alt={c.title}
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/50 to-ink/10" />
+               {cardPhoto(dest.slug, ["insights", "seasonal", "checklist", "before"].indexOf(c.key)) && <PhotoCredit photo={cardPhoto(dest.slug, ["insights", "seasonal", "checklist", "before"].indexOf(c.key))} />}
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/50 to-ink/10" />
               <div className="absolute inset-x-0 bottom-0 p-4">
                 <p className="text-sm font-semibold text-off-white">{c.title}</p>
                 <p className="mt-1 text-[11px] leading-relaxed text-off-white/75">{c.sub}</p>
