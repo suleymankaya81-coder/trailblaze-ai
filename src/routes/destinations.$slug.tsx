@@ -784,7 +784,7 @@ function RentalTile({ offer, destinationSlug, photo }: { offer: OfferView; desti
         {photo && <PhotoCredit photo={photo} />}
       </div>
       <div className="border-b border-border bg-beige/30 p-4">
-          <p className="text-sm font-semibold text-foreground">{offer.title}</p>
+          <p className="text-sm font-semibold text-foreground">{offer.partner === "rentcars" ? `Car rental · ${offer.title}` : offer.title}</p>
           <p className="mt-1 text-[11px] text-muted-foreground">
             {offer.priceValue != null
               ? `From $${offer.priceValue} / ${offer.priceUnit ?? "day"}`
@@ -1387,7 +1387,7 @@ function Toolkit({
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
                {cardPhoto(dest.slug, ["insights", "seasonal", "checklist", "before"].indexOf(c.key)) && <PhotoCredit photo={cardPhoto(dest.slug, ["insights", "seasonal", "checklist", "before"].indexOf(c.key))} />}
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/50 to-ink/10" />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/50 to-ink/10" />
               <div className="absolute inset-x-0 bottom-0 p-4">
                 <p className="text-sm font-semibold text-off-white">{c.title}</p>
                 <p className="mt-1 text-[11px] leading-relaxed text-off-white/75">{c.sub}</p>
