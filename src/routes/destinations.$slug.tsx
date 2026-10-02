@@ -584,12 +584,7 @@ function StayCard({
           : "border-border")
       }
     >
-      <div className={"relative overflow-hidden " + (featured ? "aspect-[4/3]" : "aspect-[4/3]")}>
-        <CardImg
-          src=""
-          alt={offer.title}
-          className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-        />
+      <div className="relative min-h-11 bg-beige/50">
         {parkTag(offer) && (
           <span
             className={
@@ -777,21 +772,13 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
 function RentalTile({ offer, destinationSlug }: { offer: OfferView; destinationSlug: string }) {
   return (
     <article className="group relative overflow-hidden rounded-2xl border border-border bg-card">
-      <div className="relative aspect-[4/3] overflow-hidden">
-        <CardImg
-          src=""
-          alt={offer.title}
-          className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/20 to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 p-4">
-          <p className="text-sm font-semibold text-off-white">{offer.title}</p>
-          <p className="mt-1 text-[11px] text-off-white/80">
+      <div className="border-b border-border bg-beige/30 p-4">
+          <p className="text-sm font-semibold text-foreground">{offer.title}</p>
+          <p className="mt-1 text-[11px] text-muted-foreground">
             {offer.priceValue != null
               ? `From $${offer.priceValue} / ${offer.priceUnit ?? "day"}`
               : (offer.priceDisplay ?? "Price on request")}
           </p>
-        </div>
       </div>
       <div className="flex items-center justify-between gap-2 p-3">
         <span className="truncate text-[11px] text-muted-foreground">
@@ -829,13 +816,6 @@ function ThingsToDo({ dest }: { dest: DestinationView }) {
               key={a.id}
               className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition hover:shadow-lift"
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <CardImg
-                  src=""
-                  alt={a.title}
-                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
               <div className="flex flex-1 flex-col p-4">
                 <h3 className="text-sm font-semibold text-foreground">{a.title}</h3>
                 {a.duration && (
@@ -1301,13 +1281,6 @@ function Essentials({ dest }: { dest: DestinationView }) {
               key={e.id}
               className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition hover:shadow-lift"
             >
-              <div className="relative aspect-square overflow-hidden bg-beige/50">
-                <CardImg
-                  src=""
-                  alt={e.title}
-                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
               <div className="flex flex-1 flex-col p-3.5">
                 <h3 className="text-xs font-semibold text-foreground">{e.title}</h3>
                 <p className="mt-1.5 line-clamp-3 text-[11px] leading-relaxed text-muted-foreground">
