@@ -148,7 +148,7 @@ function LandingPage() {
               <h2 className="mb-4 font-display text-2xl text-foreground">Book it for {destination.name}</h2>
               <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
                 {offers.map((o) => (
-                  <LandingOfferCard key={o.id} offer={o} destinationSlug={destination.slug} destinationHero={destination.heroImage} />
+                  <LandingOfferCard key={o.id} offer={o} destinationSlug={destination.slug} />
                 ))}
               </div>
             </section>

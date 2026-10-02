@@ -1,4 +1,4 @@
-// A small, manually verified set of location-specific guide covers.
+// Manually verified location-specific guide covers, mirrored to our asset CDN.
 // The database retains Commons source, photographer, and license attribution.
 export const landingCoverAssets: Record<string, string> = {
   "/acadia-things-to-do": "/__l5e/assets-v1/df93d19a-07be-4607-9ffd-cdd7fd422315/acadia-things_to_do.jpg",

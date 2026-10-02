@@ -588,7 +588,7 @@ function StayCard({
     >
       <div className={"relative overflow-hidden " + (featured ? "aspect-[4/3]" : "aspect-[4/3]")}>
         <CardImg
-          src={offer.image && offer.image !== destinationHero ? offer.image : ""}
+          src=""
           alt={offer.title}
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
@@ -781,7 +781,7 @@ function RentalTile({ offer, destinationSlug, destinationHero }: { offer: OfferV
     <article className="group relative overflow-hidden rounded-2xl border border-border bg-card">
       <div className="relative aspect-[4/3] overflow-hidden">
         <CardImg
-          src={offer.image && offer.image !== destinationHero ? offer.image : ""}
+          src=""
           alt={offer.title}
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
@@ -833,7 +833,7 @@ function ThingsToDo({ dest }: { dest: DestinationView }) {
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <CardImg
-                  src={a.image && a.image !== dest.heroImage ? a.image : ""}
+                  src=""
                   alt={a.title}
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -1305,7 +1305,7 @@ function Essentials({ dest }: { dest: DestinationView }) {
             >
               <div className="relative aspect-square overflow-hidden bg-beige/50">
                 <CardImg
-                  src={e.image && e.image !== dest.heroImage ? e.image : ""}
+                  src=""
                   alt={e.title}
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
