@@ -548,9 +548,9 @@ function TopStays({ dest }: { dest: DestinationView }) {
         <EmptyState message="No stays listed for this filter yet." />
       ) : (
         <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-          {pick && <StayCard offer={pick} destinationSlug={dest.slug} featured />}
+          {pick && <StayCard offer={pick} destinationSlug={dest.slug} destinationHero={dest.heroImage} featured />}
           {rest.map((s) => (
-            <StayCard key={s.id} offer={s} destinationSlug={dest.slug} />
+            <StayCard key={s.id} offer={s} destinationSlug={dest.slug} destinationHero={dest.heroImage} />
           ))}
         </div>
       )}
@@ -768,7 +768,7 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {rentals.map((r) => (
-            <RentalTile key={r.id} offer={r} destinationSlug={dest.slug} />
+            <RentalTile key={r.id} offer={r} destinationSlug={dest.slug} destinationHero={dest.heroImage} />
           ))}
         </div>
       )}
