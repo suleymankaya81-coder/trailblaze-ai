@@ -569,10 +569,12 @@ function TopStays({ dest }: { dest: DestinationView }) {
 function StayCard({
   offer,
   destinationSlug,
+  destinationHero,
   featured = false,
 }: {
   offer: OfferView;
   destinationSlug: string;
+  destinationHero: string;
   featured?: boolean;
 }) {
   return (
@@ -586,7 +588,7 @@ function StayCard({
     >
       <div className={"relative overflow-hidden " + (featured ? "aspect-[4/3]" : "aspect-[4/3]")}>
         <CardImg
-          src={offer.image ?? ""}
+          src={offer.image && offer.image !== destinationHero ? offer.image : ""}
           alt={offer.title}
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
@@ -774,12 +776,12 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
   );
 }
 
-function RentalTile({ offer, destinationSlug }: { offer: OfferView; destinationSlug: string }) {
+function RentalTile({ offer, destinationSlug, destinationHero }: { offer: OfferView; destinationSlug: string; destinationHero: string }) {
   return (
     <article className="group relative overflow-hidden rounded-2xl border border-border bg-card">
       <div className="relative aspect-[4/3] overflow-hidden">
         <CardImg
-          src={offer.image ?? ""}
+          src={offer.image && offer.image !== destinationHero ? offer.image : ""}
           alt={offer.title}
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
@@ -831,7 +833,7 @@ function ThingsToDo({ dest }: { dest: DestinationView }) {
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <CardImg
-                  src={a.image ?? ""}
+                  src={a.image && a.image !== dest.heroImage ? a.image : ""}
                   alt={a.title}
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -1303,7 +1305,7 @@ function Essentials({ dest }: { dest: DestinationView }) {
             >
               <div className="relative aspect-square overflow-hidden bg-beige/50">
                 <CardImg
-                  src={e.image ?? ""}
+                  src={e.image && e.image !== dest.heroImage ? e.image : ""}
                   alt={e.title}
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -1352,28 +1354,28 @@ function Toolkit({
       title: "Destination insights",
       sub: "Weather, crowds, wildlife, cell service & safety.",
       cta: "Read guide",
-      img: dest.gallery[0] ?? dest.heroImage,
+      img: dest.gallery[0] && dest.gallery[0] !== dest.heroImage ? dest.gallery[0] : "",
     },
     {
       key: "seasonal",
       title: "Seasonal guide",
       sub: "Best times to visit and what to expect each season.",
       cta: "See seasons",
-      img: dest.gallery[1] ?? dest.heroImage,
+      img: dest.gallery[1] && dest.gallery[1] !== dest.heroImage ? dest.gallery[1] : "",
     },
     {
       key: "checklist",
       title: "Packing checklist",
       sub: "Everything to bring, grouped by category.",
       cta: "Get checklist",
-      img: dest.gallery[2] ?? dest.heroImage,
+      img: dest.gallery[2] && dest.gallery[2] !== dest.heroImage ? dest.gallery[2] : "",
     },
     {
       key: "before",
       title: "Before you go",
       sub: "Passes, reservations and rules to sort out early.",
       cta: "See guide",
-      img: dest.gallery[3] ?? dest.heroImage,
+      img: dest.gallery[3] && dest.gallery[3] !== dest.heroImage ? dest.gallery[3] : "",
     },
   ];
 
