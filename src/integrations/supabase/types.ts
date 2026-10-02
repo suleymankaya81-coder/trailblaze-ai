@@ -81,6 +81,7 @@ export type Database = {
           notes: string | null
           parent_slug: string | null
           permit_level: Database["public"]["Enums"]["permit_level"] | null
+          photo_credit: string | null
           plan_builder_eligible: boolean
           primary_keyword: string | null
           recommended_duration: string | null
@@ -129,6 +130,7 @@ export type Database = {
           notes?: string | null
           parent_slug?: string | null
           permit_level?: Database["public"]["Enums"]["permit_level"] | null
+          photo_credit?: string | null
           plan_builder_eligible?: boolean
           primary_keyword?: string | null
           recommended_duration?: string | null
@@ -177,6 +179,7 @@ export type Database = {
           notes?: string | null
           parent_slug?: string | null
           permit_level?: Database["public"]["Enums"]["permit_level"] | null
+          photo_credit?: string | null
           plan_builder_eligible?: boolean
           primary_keyword?: string | null
           recommended_duration?: string | null
@@ -437,6 +440,13 @@ export type Database = {
         | "activities"
         | "transportation"
         | "other"
+        | "cabins"
+        | "rv_parks"
+        | "hotels"
+        | "things_to_do"
+        | "hiking"
+        | "best_time"
+        | "near_city"
       landing_publication_status: "draft" | "published" | "archived"
       offer_category:
         | "stay"
@@ -589,6 +599,13 @@ export const Constants = {
         "activities",
         "transportation",
         "other",
+        "cabins",
+        "rv_parks",
+        "hotels",
+        "things_to_do",
+        "hiking",
+        "best_time",
+        "near_city",
       ],
       landing_publication_status: ["draft", "published", "archived"],
       offer_category: [
