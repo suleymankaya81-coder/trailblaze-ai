@@ -25,4 +25,12 @@ export const landingCoverAssets: Record<string, string> = {
   "/shenandoah-itinerary": "/__l5e/assets-v1/b493b6da-a67d-4f63-bfd5-88b1a8830220/shenandoah-trip_planner.jpg",
   "/yosemite-things-to-do": "/__l5e/assets-v1/1d7d51aa-80ee-42f2-8dca-4ed59dd4d5ca/yosemite-things_to_do.jpg",
   "/zion-things-to-do": "/__l5e/assets-v1/ccb7ffc2-9326-4743-98cb-d76719d93d94/zion-things_to_do.jpg",
+  "/bryce-canyon-itinerary": "/__l5e/assets-v1/34d89ec6-7968-43df-9d46-348e690a6336/bryce-canyon-itinerary.jpg",
+  "/grand-canyon-itinerary": "/__l5e/assets-v1/9c505663-fb7f-472a-8e30-be58c5fb5668/grand-canyon-itinerary.jpg",
+  "/grand-teton-itinerary": "/__l5e/assets-v1/135be89d-3423-474b-a636-a229077e1de8/grand-teton-itinerary.jpg",
+  "/mount-rainier-things-to-do": "/__l5e/assets-v1/bf0254d1-a202-4e62-b3c9-934a3f0c8989/mount-rainier-things-to-do.jpg",
+  "/olympic-things-to-do": "/__l5e/assets-v1/a5671f90-8ea6-44ce-9e05-7a6c9a512835/olympic-things-to-do.jpg",
+  "/yellowstone-itinerary": "/__l5e/assets-v1/d5049404-c2e7-48c1-95a4-8b412d6714e6/yellowstone-itinerary.jpg",
+  "/yellowstone-things-to-do": "/__l5e/assets-v1/7e463463-37a0-465a-b734-dd464c8ea05f/yellowstone-things-to-do.jpg",
+  "/zion-itinerary": "/__l5e/assets-v1/5d071fbd-48f4-4864-a31c-8e07871a0d3c/zion-itinerary.jpg",
 };
