@@ -548,9 +548,9 @@ function TopStays({ dest }: { dest: DestinationView }) {
         <EmptyState message="No stays listed for this filter yet." />
       ) : (
         <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-          {pick && <StayCard offer={pick} destinationSlug={dest.slug} destinationHero={dest.heroImage} featured />}
+          {pick && <StayCard offer={pick} destinationSlug={dest.slug} featured />}
           {rest.map((s) => (
-            <StayCard key={s.id} offer={s} destinationSlug={dest.slug} destinationHero={dest.heroImage} />
+            <StayCard key={s.id} offer={s} destinationSlug={dest.slug} />
           ))}
         </div>
       )}
@@ -569,12 +569,10 @@ function TopStays({ dest }: { dest: DestinationView }) {
 function StayCard({
   offer,
   destinationSlug,
-  destinationHero,
   featured = false,
 }: {
   offer: OfferView;
   destinationSlug: string;
-  destinationHero: string;
   featured?: boolean;
 }) {
   return (
@@ -768,7 +766,7 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {rentals.map((r) => (
-            <RentalTile key={r.id} offer={r} destinationSlug={dest.slug} destinationHero={dest.heroImage} />
+            <RentalTile key={r.id} offer={r} destinationSlug={dest.slug} />
           ))}
         </div>
       )}
@@ -776,7 +774,7 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
   );
 }
 
-function RentalTile({ offer, destinationSlug, destinationHero }: { offer: OfferView; destinationSlug: string; destinationHero: string }) {
+function RentalTile({ offer, destinationSlug }: { offer: OfferView; destinationSlug: string }) {
   return (
     <article className="group relative overflow-hidden rounded-2xl border border-border bg-card">
       <div className="relative aspect-[4/3] overflow-hidden">
