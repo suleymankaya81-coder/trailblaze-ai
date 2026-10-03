@@ -8,6 +8,9 @@ import { getLandingBundle, type LandingBundle } from "@/lib/data/landingPages.fu
 import { getDestinationPageData, type OfferView } from "@/lib/data/destinations.functions";
 import { LANDING_TYPE_LABEL, LANDING_TYPE_OFFERS } from "@/lib/data/landingTypes";
 import { landingCoverAssets } from "@/lib/data/landingCoverAssets";
+import { offerPhoto, type Photo } from "@/lib/data/destinationCardPhotos";
+import { InlineOfferCta } from "@/components/landing/LandingOfferCard";
+import { factItems, QuickFacts, SeasonPicker, SectionBlock, seasonOf, type LandingFacts } from "@/components/landing/DecisionBlocks";
 
 const BASE = "https://minialife.com";
 
@@ -19,10 +22,26 @@ export const Route = createFileRoute("/$landing")({
     if (!bundle) throw notFound();
     const dest = await getDestinationPageData({ data: { slug: bundle.destination.slug } });
     const cats = LANDING_TYPE_OFFERS[bundle.page.pageType] ?? [];
-    const offers: OfferView[] = dest
-      ? [...dest.stays, ...dest.rentals, ...dest.activities].filter((o) => cats.includes(o.category)).slice(0, 6)
+    const slug = bundle.destination.slug;
+    const tagged = dest
+      ? [
+          ...dest.stays.map((o, i) => ({ o, photo: offerPhoto(slug, "stay", i) })),
+          ...dest.rentals.map((o, i) => ({ o, photo: offerPhoto(slug, "rental", i) })),
+          ...dest.activities.map((o, i) => ({ o, photo: offerPhoto(slug, "activity", i) })),
+        ]
       : [];
-    return { bundle, offers };
+    const picked = tagged.filter((t) => cats.includes(t.o.category)).slice(0, 6);
+    const offers: OfferView[] = picked.map((t) => t.o);
+    const photos: (Photo | null)[] = picked.map((t) => t.photo ?? null);
+    const facts: LandingFacts = {
+      bestSeason: dest?.bestSeason ?? null,
+      tripDays: dest?.tripDurationDays ?? null,
+      airport: dest?.airportCode ?? null,
+      driveMinutes: dest?.driveMinutes ?? null,
+      permitLevel: dest?.permitLevel ?? null,
+      dailyBudget: dest?.avgDailyBudget ?? null,
+    };
+    return { bundle, offers, photos, facts };
   },
   head: ({ loaderData }) => {
     if (!loaderData) {
