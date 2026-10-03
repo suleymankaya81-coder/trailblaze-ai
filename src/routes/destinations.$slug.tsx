@@ -1063,11 +1063,11 @@ function PlanBAlternatives({ dest }: { dest: DestinationView }) {
     );
   }
   return (
-    <div className="mt-4 grid gap-3 sm:grid-cols-2">
+    <div className="mt-4 grid min-w-0 grid-cols-[minmax(0,1fr)] gap-3 sm:grid-cols-2">
       {alts.map((s) => (
         <div
           key={s.id}
-          className="flex items-center justify-between gap-3 rounded-xl border border-border bg-card p-3"
+          className="flex min-w-0 flex-col items-start gap-3 rounded-xl border border-border bg-card p-3 sm:flex-row sm:items-center sm:justify-between"
         >
           <div className="min-w-0">
             <p className="truncate text-sm font-semibold text-foreground">{s.title}</p>

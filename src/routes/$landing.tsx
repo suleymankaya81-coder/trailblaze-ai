@@ -161,8 +161,8 @@ function LandingPage() {
 
       <QuickFacts facts={facts} />
 
-      <main className="container-page grid gap-10 py-10 lg:grid-cols-[minmax(0,1fr)_300px]">
-        <article className="space-y-8">
+      <main className="container-page grid grid-cols-[minmax(0,1fr)] gap-10 py-10 lg:grid-cols-[minmax(0,1fr)_300px]">
+        <article className="min-w-0 space-y-8 [overflow-wrap:anywhere]">
           {page.introContent && <p className="text-lg leading-relaxed text-foreground">{page.introContent}</p>}
           {page.pageType === "best_time" && <SeasonPicker sections={sections} />}
           {sections.map((s, i) => {
@@ -191,7 +191,7 @@ function LandingPage() {
           )}
         </article>
 
-        <aside className="space-y-4 lg:sticky lg:top-24 lg:self-start">
+        <aside className="min-w-0 space-y-4 lg:sticky lg:top-24 lg:self-start">
           <div className="rounded-2xl border border-border bg-forest p-5 text-off-white">
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-off-white/70">Your trip planner</p>
             <ul className="mt-3 space-y-2.5">
