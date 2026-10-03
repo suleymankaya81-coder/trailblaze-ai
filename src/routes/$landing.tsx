@@ -51,7 +51,9 @@ export const Route = createFileRoute("/$landing")({
     const title = page.seoTitle ?? h1;
     const description = page.seoDescription ?? page.introContent ?? "";
     const url = page.canonicalUrl ?? `${BASE}${page.path}`;
-    const coverImage = landingCoverAssets[page.path] ? `${BASE}${landingCoverAssets[page.path]}` : page.coverImage;
+    const coverImage = landingCoverAssets[page.path]
+      ? `${BASE}${landingCoverAssets[page.path]}`
+      : page.coverImage ?? destination.heroImage;
     const jsonLd = JSON.stringify([
       {
         "@context": "https://schema.org",
@@ -130,7 +132,13 @@ function LandingPage() {
   const rest = offers.slice(bundle.sections.length);
   const { page, h1, sections, destination, siblings } = bundle;
   const label = LANDING_TYPE_LABEL[page.pageType] ?? "Guide";
-  const coverImage = landingCoverAssets[page.path] ?? page.coverImage;
+  const coverImage = landingCoverAssets[page.path] ?? page.coverImage ?? destination.heroImage;
+  const usesDestinationPhoto = !landingCoverAssets[page.path] && !page.coverImage;
+  const photoCredit = usesDestinationPhoto
+    ? destination.photoCredit?.split(" · Gallery:")[0]?.replace(/^Hero:\s*/, "")
+    : page.coverPhotoCredit;
+  const photoSource = usesDestinationPhoto ? destination.heroImage : page.coverPhotoSource;
+  const photoLicense = usesDestinationPhoto ? null : page.coverPhotoLicense;
 
   return (
     <div className="bg-beige/40">
@@ -153,9 +161,9 @@ function LandingPage() {
           <h1 className="max-w-3xl font-display text-3xl text-off-white md:text-5xl">{h1}</h1>
         </div>
       </section>
-      {coverImage && page.coverPhotoCredit && page.coverPhotoSource && (
+      {coverImage && photoCredit && photoSource && (
         <p className="container-page pt-2 text-[10px] text-muted-foreground">
-          Photo: <a href={page.coverPhotoSource} target="_blank" rel="noopener noreferrer" className="underline">{page.coverPhotoCredit}</a>{page.coverPhotoLicense ? ` · ${page.coverPhotoLicense}` : ""}
+          Photo: <a href={photoSource} target="_blank" rel="noopener noreferrer" className="underline">{photoCredit}</a>{photoLicense ? ` · ${photoLicense}` : ""}
         </p>
       )}
 
