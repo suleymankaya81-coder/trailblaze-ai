@@ -33,7 +33,7 @@ export function QuickFacts({ facts }: { facts: LandingFacts }) {
   const items = factItems(facts);
   if (!items.length) return null;
   return (
-    <div className="container-page -mt-8 relative z-10">
+    <div className="container-page relative z-10 mt-4">
       <div className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border bg-border shadow-soft sm:grid-cols-3 lg:grid-cols-5">
         {items.map((i) => (
           <div key={i.label} className="bg-card p-4">
