@@ -968,7 +968,7 @@ function RoadTrip({ dest }: { dest: DestinationView }) {
   return (
     <section id="road-trip" className="scroll-mt-24">
       <SectionHeader title="Plan your road trip" />
-      <div className="grid gap-6 rounded-2xl border border-border bg-card p-6 shadow-soft lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
+      <div className="grid grid-cols-[minmax(0,1fr)] gap-6 rounded-2xl border border-border bg-card p-4 shadow-soft sm:p-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
         <div className="relative min-h-[300px] overflow-hidden rounded-xl border border-border bg-beige/60">
           {from && to ? (
             <ClientOnly fallback={<Skeleton className="h-[300px] w-full" />}>
@@ -984,7 +984,7 @@ function RoadTrip({ dest }: { dest: DestinationView }) {
           )}
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex min-w-0 flex-col">
           {dest.airportCode && (
             <div className="rounded-xl bg-beige/50 p-4">
               <p className="text-[11px] uppercase tracking-wider text-muted-foreground">
@@ -1067,9 +1067,9 @@ function PlanBAlternatives({ dest }: { dest: DestinationView }) {
       {alts.map((s) => (
         <div
           key={s.id}
-          className="flex min-w-0 flex-col items-start gap-3 rounded-xl border border-border bg-card p-3 sm:flex-row sm:items-center sm:justify-between"
+          className="flex min-w-0 flex-col gap-3 rounded-xl border border-border bg-card p-3 sm:flex-row sm:items-center sm:justify-between"
         >
-          <div className="min-w-0">
+          <div className="min-w-0 w-full sm:w-auto">
             <p className="truncate text-sm font-semibold text-foreground">{s.title}</p>
             <PriceTag offer={s} fallbackUnit="night" />
           </div>
