@@ -8,4 +8,6 @@
 - [x] Remove packing and extra-information panels from all destination plans; stop generating packing text and toolkit photos in future waves.
 - [x] Wave 2: 21 places published with 84 guides (sitemap 346)
 - [ ] Wave 2 held: atchafalaya-basin, beartooth-highway, blue-ridge-parkway (no coordinates found); skipped duplicates badlands, beartooth-highway-wyoming, blue-ridge
-- [ ] Waves 3–7: remaining ~133 Tier 1 places
+- [x] Wave 3: collect and cache credited photos, coordinates, nearest-airport drives, and route lines for all 133 new Tier 1 places; verify unique cover photos.
+- [x] Wave 3 first release: 5 complete places published (Bozeman, Breckenridge, Broken Bow Lake, Bryce Canyon Region, Buffalo National River), with 20 indexable guides; verify preview pages and sitemap.
+- [ ] Wave 3 remaining: 128 places need AI destination plans and four guides each, then the existing apply/publish gates. Blocked by available AI credits; do not generate unfinished public pages or automatically resume spending.
