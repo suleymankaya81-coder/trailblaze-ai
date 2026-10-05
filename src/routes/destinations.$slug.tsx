@@ -4,15 +4,11 @@ import { useQuery } from "@tanstack/react-query";
 import { useServerFn } from "@tanstack/react-start";
 import {
   ArrowRight,
-  Baby,
   Calendar,
-  Camera,
   ChevronRight,
   Coffee,
   CreditCard,
   DollarSign,
-  Flame,
-  Footprints,
   Fuel,
   Heart,
   Hotel,
@@ -20,17 +16,12 @@ import {
   MapPin,
   Mountain,
   Navigation,
-  PawPrint,
   Ruler,
-  Shield,
   ShieldCheck,
   ShoppingBasket,
-  Shirt,
-  Signal,
   Sparkles,
   Star,
   Sun,
-  Tent,
   Trees,
   Truck,
   Users,
@@ -40,7 +31,6 @@ import {
 import { lazy, Suspense, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { ClientOnly } from "@tanstack/react-router";
 import { JumpBar, PlanB, TripRadar, formatDrive } from "@/components/destination/TripRadar";
-import { captureLead } from "@/lib/leads/leads.functions";
 import routes from "@/data/routes.json";
 
 const RoadTripMap = lazy(() => import("@/components/destination/RoadTripMap"));
@@ -63,7 +53,7 @@ import { saveTripPlan } from "@/lib/plans/savePlan.functions";
 import { getCapturedEmail, setCapturedEmail } from "@/lib/plans/session";
 import { getPublicLandingPagesForDestination } from "@/lib/data/landingPages.functions";
 import { LANDING_TYPE_LABEL } from "@/lib/data/landingTypes";
-import { cardPhoto, offerPhoto, type Photo } from "@/lib/data/destinationCardPhotos";
+import { offerPhoto, type Photo } from "@/lib/data/destinationCardPhotos";
 
 export const Route = createFileRoute("/destinations/$slug")({
   loader: async ({ params }): Promise<{ dest: DestinationView }> => {
@@ -182,15 +172,9 @@ function DestinationPage() {
 
         <RoadTrip dest={dest} />
 
-        <div id="checklist" className="grid scroll-mt-24 gap-6 lg:grid-cols-[minmax(0,480px)_minmax(0,1fr)] lg:items-start">
-          <PackForTrip dest={dest} ai={ai} loading={aiLoading} />
-          <div className="space-y-6">
-            <Essentials dest={dest} />
-            <PackLead dest={dest} />
-          </div>
+        <div id="gear" className="scroll-mt-24">
+          <Essentials dest={dest} />
         </div>
-
-        <Toolkit dest={dest} ai={ai} loading={aiLoading} />
 
         <PlanDeeper dest={dest} />
 
@@ -689,10 +673,10 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
   return (
     <>
     {ai && (
-      <a href="#checklist" className="flex items-center justify-between rounded-2xl border border-border bg-card px-4 py-3 shadow-soft lg:hidden">
+      <div className="flex items-center justify-between rounded-2xl border border-border bg-card px-4 py-3 shadow-soft lg:hidden">
         <span className="text-xs text-muted-foreground">Est. trip budget · 4 days, 2 people</span>
         <span className="font-serif text-lg font-semibold text-foreground">${total.toLocaleString()}</span>
-      </a>
+      </div>
     )}
     <aside className="hidden rounded-2xl border border-border bg-card p-6 shadow-soft lg:sticky lg:top-16 lg:block">
       <h2 className="font-display text-lg text-foreground">Your trip budget</h2>
