@@ -5,4 +5,6 @@
 ## Tier 1 rollout (187 places, waves)
 - [x] Wave 1: 27 national parks published with 108 guides (sitemap 241)
 - [ ] Trip budget + packing list panels show "not available" on all destination pages (pre-existing, also on the original 20)
-- [ ] Waves 2–7: remaining ~160 Tier 1 places (after you review Wave 1)
+- [x] Wave 2: 21 places published with 84 guides (sitemap 346)
+- [ ] Wave 2 held: atchafalaya-basin, beartooth-highway, blue-ridge-parkway (no coordinates found); skipped duplicates badlands, beartooth-highway-wyoming, blue-ridge
+- [ ] Waves 3–7: remaining ~133 Tier 1 places
