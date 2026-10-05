@@ -32,6 +32,7 @@ def shingles(t, k=5):
     return {" ".join(w[i:i + k]) for i in range(len(w) - k)}
 
 
+MIN_WORDS = int(os.environ.get("MIN_WORDS", "600"))
 docs = [json.load(open(f)) for f in sorted(glob.glob("/tmp/landing/*.json"))]
 glamping_ok = set(q("""select distinct d.slug from offers o join destinations d on d.id=o.destination_id
   where o.category='stay' and o.network in ('awin','info')""").split())
@@ -47,7 +48,7 @@ for d, key, p, text, sh in rows:
     ptype, suffix, prio, kw = TYPES[key]
     words = len(text.split())
     reason = None
-    if words < 450:
+    if words < MIN_WORDS:
         reason = f"thin: {words} words"
     else:
         for d2, k2, _, _, sh2 in rows:
