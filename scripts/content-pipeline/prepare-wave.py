@@ -20,6 +20,9 @@ BAD = re.compile(r"map|logo|seal|sign|diagram|chart|plan|stamp|coin|flag|icon|sv
 # These are map anchors, not claims that a region has one exact point.
 WIKI_ANCHORS = {
     "bryce-canyon-region": "Bryce Canyon National Park",
+    "atchafalaya-basin": "Henderson, Louisiana",
+    "beartooth-highway": "Beartooth Pass",
+    "blue-ridge-parkway": "Blowing Rock, North Carolina",
     "california-coast": "Big Sur",
     "colorado-rockies": "Rocky Mountain National Park",
     "columbia-river-gorge-washington": "Columbia River Gorge",
