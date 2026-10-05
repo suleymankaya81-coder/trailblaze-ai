@@ -1,4 +1,5 @@
 /** Credited Commons photos mirrored locally. All partner photos are illustrative, not listing/product photography. */
+import wavePhotos from "@/data/destinationCardPhotos.wave.json";
 export type Photo = { url: string; source: string; credit: string; license: string; subject: string };
 type CardCategory = "stay" | "rental" | "activity" | "gear" | "toolkit";
 const photos: Record<string, Record<CardCategory, Photo[]>> = {
@@ -143,5 +144,12 @@ const photos: Record<string, Record<CardCategory, Photo[]>> = {
     toolkit: [{"subject": "Cross-bedded Navajo Sandstone, Canyon Overlook Trail, Zion National Park, Utah", "url": "/images/destination-cards/a6563ca475b52ece.jpg", "source": "https://commons.wikimedia.org/wiki/File:Cross-bedded_Navajo_Sandstone,_Canyon_Overlook_Trail,_Zion_National_Park,_Utah.jpg", "credit": "\nChristian David", "license": "CC BY-SA 4.0"}, {"subject": "Hiking in Zion National Park SW02", "url": "/images/destination-cards/5651ab071c9e3075.jpg", "source": "https://commons.wikimedia.org/wiki/File:Hiking_in_Zion_National_Park_SW02.jpg", "credit": "Scotwriter21", "license": "CC BY-SA 4.0"}, {"subject": "Mountains in Zion National Park, Utah", "url": "/images/destination-cards/effdd739e87b8570.jpg", "source": "https://commons.wikimedia.org/wiki/File:Mountains_in_Zion_National_Park,_Utah.jpg", "credit": "“Jon Zander(digon3)”", "license": "CC BY-SA 3.0"}, {"subject": "End of the road (Zion National Park)", "url": "/images/destination-cards/45a6af558f367256.jpg", "source": "https://commons.wikimedia.org/wiki/File:End_of_the_road_(Zion_National_Park).jpg", "credit": "Kirt Edblom", "license": "CC BY-SA 2.0"}],
   },
 };
+// Tier rollout waves (scripts/content-pipeline/apply-wave.py) add place-specific
+// activity/toolkit photos; stay/rental/gear photos are the shared illustrative set.
+for (const [slug, p] of Object.entries(wavePhotos as Record<string, { activity: Photo[]; toolkit: Photo[] }>)) {
+  if (photos[slug]) continue;
+  const base = photos["acadia"];
+  photos[slug] = { stay: base.stay, rental: base.rental, gear: base.gear, activity: p.activity, toolkit: p.toolkit };
+}
 export const offerPhoto = (slug: string, category: Exclude<CardCategory, "toolkit">, index: number): Photo | undefined => photos[slug]?.[category]?.[index];
 export const cardPhoto = (slug: string, index: number): Photo | undefined => photos[slug]?.toolkit?.[index];

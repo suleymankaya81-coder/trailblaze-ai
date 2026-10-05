@@ -36,7 +36,7 @@ docs = [json.load(open(f)) for f in sorted(glob.glob("/tmp/landing/*.json"))]
 glamping_ok = set(q("""select distinct d.slug from offers o join destinations d on d.id=o.destination_id
   where o.category='stay' and o.network in ('awin','info')""").split())
 
-dest_ids = dict(l.split("|") for l in q("select slug,id from destinations where status='published'").split())
+dest_ids = dict(l.split("|") for l in q("select slug,id from destinations").split())
 rows = []
 for d in docs:
     for key, p in d["pages"].items():
