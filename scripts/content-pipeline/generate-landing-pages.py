@@ -37,7 +37,7 @@ itinerary="{name} itinerary", glamping="{name} glamping".
 best_time: season by season, crowds, weather, reservations timing.
 things_to_do: top experiences, hikes/scenic drives, wildlife or water, with kids, rainy day.
 itinerary: day-by-day plan (Day 1, Day 2, Day 3 ...) using the airport/drive facts, plus tips.
-glamping: what glamping looks like near here, where in the area (towns/gateway areas, not invented businesses), season, what to pack, glamping vs camping vs RV."""
+glamping: what glamping looks like near here, where in the area (towns/gateway areas, not invented businesses), season, glamping vs camping vs RV."""
 
 
 def facts(slug):

@@ -10,14 +10,35 @@ Next: apply-wave.py, then generate/insert-landing-pages.py, then publish-wave.py
 import csv, html, json, math, os, re, subprocess, sys, time, urllib.parse
 import requests
 
-sys.path.insert(0, "/tmp")
-from lovable_ai import call_ai_json  # copied from the ai-gateway skill
-
 OUT = "/tmp/wave"
 os.makedirs(OUT, exist_ok=True)
+FACTS_OUT = "scripts/content-pipeline/wave3-facts"
 DB = os.environ["SUPABASE_DB_URL"]
 UA = {"User-Agent": "minialife-content-pipeline/1.0 (https://minialife.com)"}
 BAD = re.compile(r"map|logo|seal|sign|diagram|chart|plan|stamp|coin|flag|icon|svg|locator|poster|brochure|aerial view of", re.I)
+# Use an explicitly named, verifiable landmark for broad regions or catalog aliases.
+# These are map anchors, not claims that a region has one exact point.
+WIKI_ANCHORS = {
+    "bryce-canyon-region": "Bryce Canyon National Park",
+    "california-coast": "Big Sur",
+    "colorado-rockies": "Rocky Mountain National Park",
+    "columbia-river-gorge-washington": "Columbia River Gorge",
+    "devil-s-lake": "Devil's Lake State Park (Wisconsin)",
+    "eastern-sierra": "Bishop, California",
+    "flaming-gorge": "Flaming Gorge National Recreation Area",
+    "grand-teton-region": "Grand Teton National Park",
+    "lake-george": "Lake George (New York)",
+    "lake-powell-utah": "Lake Powell",
+    "lake-tahoe-nevada": "Lake Tahoe",
+    "north-shore-oahu": "North Shore (Oʻahu)",
+    "north-shore-lake-superior": "North Shore (Lake Superior)",
+    "ozark-mountains-missouri": "Ozarks",
+    "sawtooth-mountains": "Sawtooth Range (Idaho)",
+    "smith-rock": "Smith Rock State Park",
+    "white-mountains": "White Mountains (New England)",
+    "wisconsin-northwoods": "Eagle River, Wisconsin",
+    "yellowstone-montana-gateway": "West Yellowstone, Montana",
+}
 
 
 def q(sql):
@@ -140,23 +161,57 @@ Return JSON:
  "seo_title": max 60 chars like "<Name> Camping, Stays & Trip Guide"}}"""
 
 
-def run(slug):
+def run(slug, facts_only=False):
     path = f"{OUT}/{slug}.json"
     if os.path.exists(path):
         return "cached"
+    facts_path = f"{FACTS_OUT}/{slug}.json"
+    if os.path.exists(facts_path):
+        prepared = json.load(open(facts_path))
+        if facts_only:
+            return "facts cached"
+    else:
+        prepared = prepare_facts(slug)
+        os.makedirs(FACTS_OUT, exist_ok=True)
+        json.dump(prepared, open(facts_path, "w"), indent=1)
+    if facts_only:
+        return f"facts ready airport={prepared['airport']['code']}"
+    sys.path.insert(0, "/tmp")
+    from lovable_ai import call_ai_json  # temporary, server-side streaming helper
+    d = prepared["destination"]
+    published = q("select string_agg(slug, ',') from destinations where status='published'")
+    facts = {**d, "lat": prepared["lat"], "lng": prepared["lng"],
+             "nearest_airport": prepared["airport"]["name"],
+             "drive_minutes": prepared["route"]["minutes"]}
+    ai = call_ai_json(PROMPT.format(facts=json.dumps(facts), pool=published), system=SYSTEM)
+    if isinstance(ai, str):
+        ai = json.loads(ai)
+    if isinstance(ai, list):
+        ai = ai[0]
+    pub = set(published.split(","))
+    ai["similar_slugs"] = [s for s in ai["similar_slugs"] if s in pub][:3]
+    json.dump({k: v for k, v in prepared.items() if k != "destination"} | {"ai": ai},
+              open(path, "w"), indent=1)
+    return f"ok airport={prepared['airport']['code']} drive={prepared['route']['minutes']}min"
+
+
+def prepare_facts(slug):
     d = json.loads(q(f"select row_to_json(t) from (select slug,name,state,destination_type,trip_tags,"
                      f"experience_tags from destinations where slug='{slug}') t"))
     used = set(q("select hero_image from destinations where hero_image is not null").split("\n"))
     used_cards = set(q("select coalesce(string_agg(array_to_string(gallery, E'\\n'), E'\\n'),'') from destinations").split("\n"))
 
-    pimg, lat, lng = wiki(d["name"])
+    pimg, lat, lng = wiki(WIKI_ANCHORS.get(slug, d["name"]))
     if lat is None:
         pimg2, lat, lng = wiki(f"{d['name']}, {d['state']}")
         pimg = pimg or pimg2
     if lat is None:
         raise RuntimeError("no coordinates")
 
-    pool = commons_search(d["name"]) + commons_search(f"{d['name']} {d['state']}")
+    terms = [d["name"], f"{d['name']} {d['state']}"]
+    if slug == "flagstaff":
+        terms = ["Flagstaff Arizona landscape", "Flagstaff San Francisco Peaks"]
+    pool = commons_search(terms[0]) + commons_search(terms[1])
     seen, photos = set(), []
     hero = file_info(pimg) if pimg and not BAD.search(pimg) else None
     if hero and (hero["url"] in used or hero["w"] < hero["h"]):
@@ -182,27 +237,18 @@ def run(slug):
         best.append((r["minutes"] if r else 10**6, cand, r))
         time.sleep(1)
     _, ap, rt = min(best, key=lambda b: b[0])
-    published = q("select string_agg(slug, ',') from destinations where status='published'")
-    facts = {**d, "lat": lat, "lng": lng, "nearest_airport": ap["name"],
-             "drive_minutes": rt and rt["minutes"]}
-    ai = call_ai_json(PROMPT.format(facts=json.dumps(facts), pool=published), system=SYSTEM)
-    if isinstance(ai, str):
-        ai = json.loads(ai)
-    if isinstance(ai, list):
-        ai = ai[0]
-    pub = set(published.split(","))
-    ai["similar_slugs"] = [s for s in ai["similar_slugs"] if s in pub][:3]
-    json.dump({"slug": slug, "name": d["name"], "state": d["state"], "lat": lat, "lng": lng,
-               "airport": ap, "route": rt, "hero": hero, "gallery": photos[:2],
-               "activity": photos[2:5], "ai": ai},
-              open(path, "w"), indent=1)
-    return f"ok airport={ap['code']} drive={rt and rt['minutes']}min"
+    if rt is None:
+        raise RuntimeError("no drivable airport route")
+    return {"slug": slug, "name": d["name"], "state": d["state"], "destination": d,
+            "lat": lat, "lng": lng, "airport": ap, "route": rt, "hero": hero,
+            "gallery": photos[:2], "activity": photos[2:5]}
 
 
 if __name__ == "__main__":
-    for s in sys.argv[1:]:
+    facts_only = "--facts-only" in sys.argv
+    for s in (arg for arg in sys.argv[1:] if arg != "--facts-only"):
         try:
-            print(s, run(s), flush=True)
+            print(s, run(s, facts_only=facts_only), flush=True)
         except Exception as e:  # noqa
             print(s, "ERR", e, flush=True)
         time.sleep(1)

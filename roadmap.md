@@ -8,4 +8,4 @@
 - [x] Remove packing and extra-information panels from all destination plans; stop generating packing text and toolkit photos in future waves.
 - [x] Wave 2: 21 places published with 84 guides (sitemap 346)
 - [ ] Wave 2 held: atchafalaya-basin, beartooth-highway, blue-ridge-parkway (no coordinates found); skipped duplicates badlands, beartooth-highway-wyoming, blue-ridge
-- [ ] Waves 3–7: remaining ~133 Tier 1 places
+- [ ] Wave 3: prepare all 133 remaining new Tier 1 places with destination plans and four guides each; publish only those passing checks. Blocked by available AI credits if projected generation cost exceeds balance.
