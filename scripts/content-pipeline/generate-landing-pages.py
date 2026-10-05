@@ -44,7 +44,7 @@ def facts(slug):
     sql = f"""select row_to_json(t) from (select slug,name,region,state,tagline,best_season,
       best_seasons,experience_tags,trip_tags,gateway_cities,recommended_duration,
       nearest_airport_name,nearest_airport_code,drive_minutes,drive_miles,permit_level,
-      avg_daily_budget from destinations where slug='{slug}' and status='published') t"""
+      avg_daily_budget from destinations where slug='{slug}') t"""
     return subprocess.check_output(["psql", os.environ["SUPABASE_DB_URL"], "-Atc", sql], text=True).strip()
 
 
