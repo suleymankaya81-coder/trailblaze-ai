@@ -12,4 +12,4 @@
 - [x] Wave 3 first release: 5 complete places published (Bozeman, Breckenridge, Broken Bow Lake, Bryce Canyon Region, Buffalo National River), with 20 indexable guides; verify preview pages and sitemap.
 - [x] Wave 3 batch 2: 25 places published (incl. Buena Vista), 100 guides, all 600+ words (avg 789), sitemap 496.
 - [x] Wave 3 batch 3: 59 places published, 236 guides (min 732, avg 787 words), sitemap 791.
-- [ ] Wave 3 remaining: 44 places. Blocked by the monthly AI spending cap (150) reached; resume only after the user raises it, by re-running /tmp/wave3-gen1.sh on unfinished slugs.
+- [x] Wave 3 remaining: 44 places published with Gemini 3 Flash, 176 guides (min 786, avg 931 words), sitemap 1011.

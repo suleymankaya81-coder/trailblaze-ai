@@ -8,3 +8,4 @@
 - Destination plans omit packing and extra-information panels; AI enrichment excludes packing and wave preparation collects only activity card photos. Why: avoid unnecessary generation credits and image sourcing for unused content.
 - Tier 1 wave preparation saves reusable non-AI photo, coordinate and route facts before paid AI generation; publish only after the existing completeness checks. Why: a credit limit must not waste repeated fact collection or expose incomplete places.
 - New search-guide pages must be at least 600 words (generator rewrites once, insert marks shorter pages noindex); earlier pages keep their original review. Why: thin pages rank poorly.
+- Bulk guide generation (generate-landing-pages.py) uses google/gemini-3-flash-preview via streamed chat completions. Why: user chose it for lower cost with the same 600+ word checks.
