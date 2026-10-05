@@ -67,7 +67,7 @@ const JUMPS = [
   { href: "#stays", label: "Stays" },
   { href: "#rentals", label: "RV & Car Rentals" },
   { href: "#tours", label: "Tours" },
-  { href: "#checklist", label: "Checklist" },
+  { href: "#gear", label: "Gear" },
   { href: "#road-trip", label: "Route" },
 ];
 

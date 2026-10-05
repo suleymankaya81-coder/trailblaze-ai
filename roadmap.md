@@ -4,7 +4,8 @@
 - [x] Restore distinct credited illustrative images to stay, rental, activity, gear and information cards on all 20 published destination pages; verify RVshare/REI labels and desktop/mobile rendering. Brand-specific listing photos are not available; these images are illustrative, not actual partner inventory.
 ## Tier 1 rollout (187 places, waves)
 - [x] Wave 1: 27 national parks published with 108 guides (sitemap 241)
-- [ ] Trip budget + packing list panels show "not available" on all destination pages (pre-existing, also on the original 20)
+- [ ] Trip budget panel shows "not available" on destination pages (pre-existing, also on the original 20)
+- [x] Remove packing and extra-information panels from all destination plans; stop generating packing text and toolkit photos in future waves.
 - [x] Wave 2: 21 places published with 84 guides (sitemap 346)
 - [ ] Wave 2 held: atchafalaya-basin, beartooth-highway, blue-ridge-parkway (no coordinates found); skipped duplicates badlands, beartooth-highway-wyoming, blue-ridge
 - [ ] Waves 3–7: remaining ~133 Tier 1 places
