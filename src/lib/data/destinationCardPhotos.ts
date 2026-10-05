@@ -146,10 +146,10 @@ const photos: Record<string, Record<CardCategory, Photo[]>> = {
 };
 // Tier rollout waves (scripts/content-pipeline/apply-wave.py) add place-specific
 // activity/toolkit photos; stay/rental/gear photos are the shared illustrative set.
-for (const [slug, p] of Object.entries(wavePhotos as Record<string, { activity: Photo[]; toolkit: Photo[] }>)) {
+for (const [slug, p] of Object.entries(wavePhotos as Record<string, { activity: Photo[]; toolkit?: Photo[] }>)) {
   if (photos[slug]) continue;
   const base = photos["acadia"];
-  photos[slug] = { stay: base.stay, rental: base.rental, gear: base.gear, activity: p.activity, toolkit: p.toolkit };
+  photos[slug] = { stay: base.stay, rental: base.rental, gear: base.gear, activity: p.activity, toolkit: p.toolkit ?? [] };
 }
 export const offerPhoto = (slug: string, category: Exclude<CardCategory, "toolkit">, index: number): Photo | undefined => photos[slug]?.[category]?.[index];
 export const cardPhoto = (slug: string, index: number): Photo | undefined => photos[slug]?.toolkit?.[index];
