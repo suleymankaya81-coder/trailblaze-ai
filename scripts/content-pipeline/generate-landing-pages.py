@@ -3,7 +3,7 @@ glamping) for every published destination with the AI gateway and save them
 to /tmp/landing/<slug>.json. Insert step: insert-landing-pages.py.
 Run: python scripts/content-pipeline/generate-landing-pages.py [slug ...]
 """
-import json, os, subprocess, sys
+import json, os, subprocess, sys, time
 from concurrent.futures import ThreadPoolExecutor
 
 sys.path.insert(0, "/tmp")
@@ -11,6 +11,11 @@ from lovable_ai import call_ai_json  # copied from the ai-gateway skill
 
 MODEL = "openai/gpt-6-astra"
 OUT = "/tmp/landing"
+MIN_WORDS = 600
+
+
+def words(p):
+    return len((p["intro"] + " " + " ".join(x["body"] for x in p["sections"])).split())
 os.makedirs(OUT, exist_ok=True)
 
 SYSTEM = """You write practical US outdoor travel guide pages for Minialife.
@@ -31,7 +36,8 @@ where P = {{"seo_title": <= 60 chars, includes the target keyword,
  "seo_description": 140-160 chars,
  "h1": page heading,
  "intro": 2-3 sentences (60-90 words),
- "sections": [{{"heading": str, "body": 90-160 words, paragraphs separated by \\n\\n}}] x 5}}
+ "sections": [{{"heading": str, "body": 125-170 words, paragraphs separated by \\n\\n}}] x 5}}
+Each page MUST total at least 650 words (intro + all section bodies). Never pad with filler; add concrete, place-specific detail.
 Target keywords: best_time="best time to visit {name}", things_to_do="things to do in {name}",
 itinerary="{name} itinerary", glamping="{name} glamping".
 best_time: season by season, crowds, weather, reservations timing.
@@ -55,10 +61,24 @@ def run(slug):
     f = facts(slug)
     name = json.loads(f)["name"]
     short = name.replace(" National Park", "")
-    data = call_ai_json(PROMPT.format(facts=f, name=short), model=MODEL, system=SYSTEM)
-    if isinstance(data, str):
-        data = json.loads(data)
-    assert set(data["pages"]) == {"best_time", "things_to_do", "itinerary", "glamping"}
+    data = None
+    for attempt in range(3):  # 1 normal + 1 rewrite for short pages; transient errors retried with backoff
+        try:
+            d = call_ai_json(PROMPT.format(facts=f, name=short), model=MODEL, system=SYSTEM)
+        except Exception as e:
+            code = getattr(e, "status", None) or getattr(e, "code", None)
+            if code in (402, 403) or attempt == 2:
+                raise
+            time.sleep(10 * (attempt + 1)); continue
+        if isinstance(d, str):
+            d = json.loads(d)
+        assert set(d["pages"]) == {"best_time", "things_to_do", "itinerary", "glamping"}
+        short_pages = [k for k, p in d["pages"].items() if words(p) < MIN_WORDS]
+        data = d
+        if not short_pages:
+            break
+    if [k for k, p in data["pages"].items() if words(p) < MIN_WORDS]:
+        raise ValueError("pages under %d words after rewrite" % MIN_WORDS)
     json.dump({"slug": slug, "short": short, **data}, open(path, "w"), indent=1)
     return slug, "ok"
 

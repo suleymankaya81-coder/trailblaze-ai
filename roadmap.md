@@ -10,4 +10,5 @@
 - [ ] Wave 2 held: atchafalaya-basin, beartooth-highway, blue-ridge-parkway (no coordinates found); skipped duplicates badlands, beartooth-highway-wyoming, blue-ridge
 - [x] Wave 3: collect and cache credited photos, coordinates, nearest-airport drives, and route lines for all 133 new Tier 1 places; verify unique cover photos.
 - [x] Wave 3 first release: 5 complete places published (Bozeman, Breckenridge, Broken Bow Lake, Bryce Canyon Region, Buffalo National River), with 20 indexable guides; verify preview pages and sitemap.
-- [ ] Wave 3 remaining: 128 places need AI destination plans and four guides each, then the existing apply/publish gates. Blocked by available AI credits; do not generate unfinished public pages or automatically resume spending.
+- [x] Wave 3 batch 2: 25 places published (incl. Buena Vista), 100 guides, all 600+ words (avg 789), sitemap 496.
+- [ ] Wave 3 remaining: 103 places. Blocked by the workspace monthly AI spending cap (90 credits, reached); resume only after the user raises it. Re-run /tmp/wave3-gen1.sh (skips finished places).
