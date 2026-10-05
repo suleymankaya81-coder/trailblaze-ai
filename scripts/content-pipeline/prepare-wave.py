@@ -21,7 +21,7 @@ BAD = re.compile(r"map|logo|seal|sign|diagram|chart|plan|stamp|coin|flag|icon|sv
 WIKI_ANCHORS = {
     "bryce-canyon-region": "Bryce Canyon National Park",
     "atchafalaya-basin": "Henderson, Louisiana",
-    "beartooth-highway": "Beartooth Pass",
+    "beartooth-highway": "Red Lodge, Montana",
     "blue-ridge-parkway": "Blowing Rock, North Carolina",
     "california-coast": "Big Sur",
     "colorado-rockies": "Rocky Mountain National Park",
