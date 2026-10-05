@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor
 sys.path.insert(0, "/tmp")
 from lovable_ai import call_ai_json  # copied from the ai-gateway skill
 
-MODEL = "openai/gpt-6-astra"
+MODEL = "google/gemini-3-flash-preview"
 OUT = "/tmp/landing"
 MIN_WORDS = 600
 
