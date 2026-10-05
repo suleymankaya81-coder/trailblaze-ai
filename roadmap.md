@@ -7,7 +7,7 @@
 - [ ] Trip budget panel shows "not available" on destination pages (pre-existing, also on the original 20)
 - [x] Remove packing and extra-information panels from all destination plans; stop generating packing text and toolkit photos in future waves.
 - [x] Wave 2: 21 places published with 84 guides (sitemap 346)
-- [ ] Wave 2 held: atchafalaya-basin, beartooth-highway, blue-ridge-parkway (no coordinates found); skipped duplicates badlands, beartooth-highway-wyoming, blue-ridge
+- [x] Wave 2 held places published via gateway-town anchors (Henderson LA, Red Lodge MT, Blowing Rock NC); sitemap 1026
 - [x] Wave 3: collect and cache credited photos, coordinates, nearest-airport drives, and route lines for all 133 new Tier 1 places; verify unique cover photos.
 - [x] Wave 3 first release: 5 complete places published (Bozeman, Breckenridge, Broken Bow Lake, Bryce Canyon Region, Buffalo National River), with 20 indexable guides; verify preview pages and sitemap.
 - [x] Wave 3 batch 2: 25 places published (incl. Buena Vista), 100 guides, all 600+ words (avg 789), sitemap 496.
