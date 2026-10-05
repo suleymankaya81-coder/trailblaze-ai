@@ -3,7 +3,7 @@ the database and the app's bundled data. Destinations stay unpublished here.
   - destinations row: photos + credits, location, airport, drive, trip summary
   - offers: the same partner set every live destination has (Awin + RVshare/REI direct)
   - src/data/routes.json: precomputed airport -> destination line
-  - src/data/destinationCardPhotos.wave.json + public/images/destination-cards/*: activity/toolkit photos
+  - src/data/destinationCardPhotos.wave.json + public/images/destination-cards/*: activity photos
 Re-running is safe: offers for the slug are replaced, everything else is overwritten.
 Run: python scripts/content-pipeline/apply-wave.py slug [slug ...]
 """
@@ -127,7 +127,7 @@ def apply(slug):
         routes[slug] = rt["coords"]
     json.dump(routes, open(ROUTES, "w"), separators=(",", ":"))
     cards = json.load(open(CARDS)) if os.path.exists(CARDS) else {}
-    cards[slug] = {"activity": [mirror(p) for p in d["activity"]], "toolkit": [mirror(p) for p in d["toolkit"]]}
+    cards[slug] = {"activity": [mirror(p) for p in d["activity"]]}
     json.dump(cards, open(CARDS, "w"), indent=1, ensure_ascii=False)
     return "applied"
 

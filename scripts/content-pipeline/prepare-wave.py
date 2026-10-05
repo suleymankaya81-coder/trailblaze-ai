@@ -1,6 +1,6 @@
 """Tier rollout step 1: gather everything a catalog destination needs before it
 can go live, and save it to /tmp/wave/<slug>.json for review.
-  - Wikimedia Commons photos (hero, 2 gallery, 3 activity, 4 toolkit) with credits
+  - Wikimedia Commons photos (hero, 2 gallery, 3 activity) with credits
   - coordinates (Wikipedia), nearest US airport with scheduled flights (OurAirports)
   - airport -> destination drive computed once with the free OSRM demo server
   - trip summary written by the AI gateway from saved facts only
@@ -172,7 +172,7 @@ def run(slug):
         if not photos:
             raise RuntimeError("no photos")
         hero = file_info(photos.pop(0)["file"].removeprefix("File:"))
-    if len(photos) < 9:
+    if len(photos) < 5:
         raise RuntimeError(f"only {len(photos)} extra photos")
 
     # Straight-line nearest can be across mountains or water: keep the shortest drive of the 4 nearest.
@@ -194,7 +194,7 @@ def run(slug):
     ai["similar_slugs"] = [s for s in ai["similar_slugs"] if s in pub][:3]
     json.dump({"slug": slug, "name": d["name"], "state": d["state"], "lat": lat, "lng": lng,
                "airport": ap, "route": rt, "hero": hero, "gallery": photos[:2],
-               "activity": photos[2:5], "toolkit": photos[5:9], "ai": ai},
+               "activity": photos[2:5], "ai": ai},
               open(path, "w"), indent=1)
     return f"ok airport={ap['code']} drive={rt and rt['minutes']}min"
 

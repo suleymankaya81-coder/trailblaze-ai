@@ -217,7 +217,7 @@ function LandingPage() {
             >
               Build my {destination.name} plan <ArrowRight className="h-3.5 w-3.5" />
             </Link>
-            <p className="mt-2 text-center text-[10px] text-off-white/60">Stays, rentals, budget, road trip map & packing list</p>
+            <p className="mt-2 text-center text-[10px] text-off-white/60">Stays, rentals, budget, road trip map & gear</p>
           </div>
           {siblings.length > 0 && (
             <div className="rounded-2xl border border-border bg-card p-5">

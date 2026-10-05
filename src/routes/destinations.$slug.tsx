@@ -4,15 +4,11 @@ import { useQuery } from "@tanstack/react-query";
 import { useServerFn } from "@tanstack/react-start";
 import {
   ArrowRight,
-  Baby,
   Calendar,
-  Camera,
   ChevronRight,
   Coffee,
   CreditCard,
   DollarSign,
-  Flame,
-  Footprints,
   Fuel,
   Heart,
   Hotel,
@@ -20,13 +16,10 @@ import {
   MapPin,
   Mountain,
   Navigation,
-  PawPrint,
   Ruler,
   Shield,
   ShieldCheck,
   ShoppingBasket,
-  Shirt,
-  Signal,
   Sparkles,
   Star,
   Sun,
@@ -40,7 +33,6 @@ import {
 import { lazy, Suspense, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { ClientOnly } from "@tanstack/react-router";
 import { JumpBar, PlanB, TripRadar, formatDrive } from "@/components/destination/TripRadar";
-import { captureLead } from "@/lib/leads/leads.functions";
 import routes from "@/data/routes.json";
 
 const RoadTripMap = lazy(() => import("@/components/destination/RoadTripMap"));
@@ -63,7 +55,7 @@ import { saveTripPlan } from "@/lib/plans/savePlan.functions";
 import { getCapturedEmail, setCapturedEmail } from "@/lib/plans/session";
 import { getPublicLandingPagesForDestination } from "@/lib/data/landingPages.functions";
 import { LANDING_TYPE_LABEL } from "@/lib/data/landingTypes";
-import { cardPhoto, offerPhoto, type Photo } from "@/lib/data/destinationCardPhotos";
+import { offerPhoto, type Photo } from "@/lib/data/destinationCardPhotos";
 
 export const Route = createFileRoute("/destinations/$slug")({
   loader: async ({ params }): Promise<{ dest: DestinationView }> => {
@@ -182,15 +174,9 @@ function DestinationPage() {
 
         <RoadTrip dest={dest} />
 
-        <div id="checklist" className="grid scroll-mt-24 gap-6 lg:grid-cols-[minmax(0,480px)_minmax(0,1fr)] lg:items-start">
-          <PackForTrip dest={dest} ai={ai} loading={aiLoading} />
-          <div className="space-y-6">
-            <Essentials dest={dest} />
-            <PackLead dest={dest} />
-          </div>
+        <div id="gear" className="scroll-mt-24">
+          <Essentials dest={dest} />
         </div>
-
-        <Toolkit dest={dest} ai={ai} loading={aiLoading} />
 
         <PlanDeeper dest={dest} />
 
@@ -689,10 +675,10 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
   return (
     <>
     {ai && (
-      <a href="#checklist" className="flex items-center justify-between rounded-2xl border border-border bg-card px-4 py-3 shadow-soft lg:hidden">
+      <div className="flex items-center justify-between rounded-2xl border border-border bg-card px-4 py-3 shadow-soft lg:hidden">
         <span className="text-xs text-muted-foreground">Est. trip budget · 4 days, 2 people</span>
         <span className="font-serif text-lg font-semibold text-foreground">${total.toLocaleString()}</span>
-      </a>
+      </div>
     )}
     <aside className="hidden rounded-2xl border border-border bg-card p-6 shadow-soft lg:sticky lg:top-16 lg:block">
       <h2 className="font-display text-lg text-foreground">Your trip budget</h2>
@@ -1080,204 +1066,6 @@ function PlanBAlternatives({ dest }: { dest: DestinationView }) {
   );
 }
 
-function PackLead({ dest }: { dest: DestinationView }) {
-  const send = useServerFn(captureLead);
-  const [email, setEmail] = useState("");
-  const [hp, setHp] = useState("");
-  const [state, setState] = useState<"idle" | "sending" | "done" | "error">("idle");
-
-  const submit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setState("sending");
-    try {
-      await send({
-        data: { email, destinationId: dest.id, sessionId: getOrCreateSessionId(), website: hp },
-      });
-      setState("done");
-    } catch {
-      setState("error");
-    }
-  };
-
-  return (
-    <section className="rounded-2xl border border-border bg-forest p-6 text-off-white">
-      <h3 className="font-display text-xl">Take the full {dest.name.split(" ")[0]} guide offline</h3>
-      <p className="mt-1 text-sm text-off-white/80">
-        The complete packing list, offline GPS points and an emergency guide — sent to your inbox.
-      </p>
-      {state === "done" ? (
-        <p className="mt-4 rounded-xl bg-off-white/10 p-3 text-sm">
-          Thanks — you're on the list. We'll send your guide soon.
-        </p>
-      ) : (
-        <form onSubmit={submit} className="mt-4 flex flex-col gap-2 sm:flex-row">
-          <input
-            type="text"
-            tabIndex={-1}
-            autoComplete="off"
-            aria-hidden="true"
-            value={hp}
-            onChange={(e) => setHp(e.target.value)}
-            className="hidden"
-          />
-          <input
-            type="email"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="you@email.com"
-            aria-label="Email address"
-            className="min-w-0 flex-1 rounded-full border border-off-white/30 bg-off-white px-4 py-2.5 text-sm text-foreground"
-          />
-          <button
-            type="submit"
-            disabled={state === "sending"}
-            className="rounded-full bg-copper px-5 py-2.5 text-sm font-semibold text-off-white hover:bg-copper/90 disabled:opacity-60"
-          >
-            {state === "sending" ? "Sending…" : "Send my guide"}
-          </button>
-        </form>
-      )}
-      {state === "error" && (
-        <p className="mt-2 text-xs text-off-white/80">Something went wrong. Please try again.</p>
-      )}
-      <p className="mt-3 text-[11px] text-off-white/60">
-        No spam. Unsubscribe anytime. See our{" "}
-        <Link to="/privacy" className="underline">privacy policy</Link>.
-      </p>
-    </section>
-  );
-}
-
-/* =========================================================
-   8 — PACK FOR THE TRIP
-========================================================= */
-type PackKey = keyof EnrichResult["packing"] | "hiking";
-
-const PACK_CATEGORIES: { key: PackKey; label: string; icon: ReactNode; hint: string }[] = [
-  { key: "clothing", label: "Clothing", icon: <Shirt className="h-5 w-5" />, hint: "Layer up" },
-  { key: "camping", label: "Camping", icon: <Tent className="h-5 w-5" />, hint: "Sleep system" },
-  {
-    key: "cooking",
-    label: "Cooking",
-    icon: <Flame className="h-5 w-5" />,
-    hint: "Stove & cookware",
-  },
-  {
-    key: "photography",
-    label: "Photography",
-    icon: <Camera className="h-5 w-5" />,
-    hint: "Capture it",
-  },
-  {
-    key: "hiking",
-    label: "Hiking",
-    icon: <Footprints className="h-5 w-5" />,
-    hint: "Boots & poles",
-  },
-  { key: "kids", label: "Kids", icon: <Baby className="h-5 w-5" />, hint: "Family must-haves" },
-  { key: "pets", label: "Pets", icon: <PawPrint className="h-5 w-5" />, hint: "Travel with pets" },
-];
-
-function PackForTrip({
-  dest,
-  ai,
-  loading,
-}: {
-  dest: DestinationView;
-  ai?: EnrichResult;
-  loading: boolean;
-}) {
-  const [active, setActive] = useState<PackKey>("clothing");
-  const items =
-    ai && active !== "hiking" ? ai.packing[active as keyof EnrichResult["packing"]] : undefined;
-
-  const download = () => {
-    if (!ai) return;
-    const lines = Object.entries(ai.packing).flatMap(([group, list]) => [
-      group.toUpperCase(),
-      ...list.map((i) => `  [ ] ${i}`),
-      "",
-    ]);
-    const blob = new Blob([`Packing list — ${dest.name}\n\n${lines.join("\n")}`], {
-      type: "text/plain",
-    });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `${dest.slug}-packing-list.txt`;
-    a.click();
-    URL.revokeObjectURL(url);
-  };
-
-  return (
-    <section className="rounded-2xl border border-border bg-card p-6 shadow-soft">
-      <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
-        <h2 className="font-display text-2xl text-foreground">
-          Pack for {dest.name.split(" ")[0]}
-        </h2>
-        <button
-          type="button"
-          onClick={download}
-          disabled={!ai}
-          className="inline-flex items-center gap-1 text-xs font-semibold text-foreground/70 disabled:opacity-40"
-        >
-          Download checklist
-          <ArrowRight className="h-3.5 w-3.5" />
-        </button>
-      </div>
-
-      <div className="grid grid-cols-4 gap-2 sm:grid-cols-7 lg:grid-cols-4">
-        {PACK_CATEGORIES.map((c) => (
-          <button
-            key={c.key}
-            type="button"
-            onClick={() => setActive(c.key)}
-            className={
-              "flex flex-col items-center gap-1.5 rounded-xl border px-1.5 py-3 text-center transition " +
-              (active === c.key
-                ? "border-foreground/25 bg-beige/70"
-                : "border-border hover:bg-beige/40")
-            }
-          >
-            <span className="text-foreground/60">{c.icon}</span>
-            <span className="text-[10px] font-semibold text-foreground">{c.label}</span>
-            <span className="text-[9px] leading-tight text-muted-foreground">{c.hint}</span>
-          </button>
-        ))}
-      </div>
-
-      <div className="mt-5 rounded-xl bg-beige/50 p-4">
-        {loading ? (
-          <div className="space-y-2">
-            {[0, 1, 2, 3].map((i) => (
-              <Skeleton key={i} className="h-3 w-full" />
-            ))}
-          </div>
-        ) : active === "hiking" ? (
-          <p className="text-xs text-muted-foreground">
-            Boots, trekking poles, daypack, 2L water and a printed trail map — check conditions at
-            the ranger station before heading out.
-          </p>
-        ) : items && items.length > 0 ? (
-          <ul className="grid gap-2 sm:grid-cols-2">
-            {items.map((i) => (
-              <li key={i} className="flex items-start gap-2 text-xs text-foreground/80">
-                <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/30" />
-                {i}
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <p className="text-xs text-muted-foreground">
-            The packing list for this destination isn't ready yet.
-          </p>
-        )}
-      </div>
-    </section>
-  );
-}
-
 /* =========================================================
    9 — ESSENTIALS WORTH HAVING
 ========================================================= */
@@ -1319,218 +1107,6 @@ function Essentials({ dest }: { dest: DestinationView }) {
         </div>
       )}
     </section>
-  );
-}
-
-/* =========================================================
-   10 — DESTINATION INFORMATION TOOLKIT
-========================================================= */
-type ToolkitKey = "insights" | "seasonal" | "checklist" | "before";
-
-function Toolkit({
-  dest,
-  ai,
-  loading,
-}: {
-  dest: DestinationView;
-  ai?: EnrichResult;
-  loading: boolean;
-}) {
-  const [open, setOpen] = useState<ToolkitKey | null>(null);
-
-  const cards: { key: ToolkitKey; title: string; sub: string; cta: string; img: string }[] = [
-    {
-      key: "insights",
-      title: "Destination insights",
-      sub: "Weather, crowds, wildlife, cell service & safety.",
-      cta: "Read guide",
-       img: cardPhoto(dest.slug, 0)?.url ?? "",
-    },
-    {
-      key: "seasonal",
-      title: "Seasonal guide",
-      sub: "Best times to visit and what to expect each season.",
-      cta: "See seasons",
-       img: cardPhoto(dest.slug, 1)?.url ?? "",
-    },
-    {
-      key: "checklist",
-      title: "Packing checklist",
-      sub: "Everything to bring, grouped by category.",
-      cta: "Get checklist",
-       img: cardPhoto(dest.slug, 2)?.url ?? "",
-    },
-    {
-      key: "before",
-      title: "Before you go",
-      sub: "Passes, reservations and rules to sort out early.",
-      cta: "See guide",
-       img: cardPhoto(dest.slug, 3)?.url ?? "",
-    },
-  ];
-
-  return (
-    <section>
-      <SectionHeader title="Everything else you need to know" />
-      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-        {cards.map((c) => (
-          <button
-            key={c.key}
-            type="button"
-            onClick={() => setOpen(open === c.key ? null : c.key)}
-            className="group relative overflow-hidden rounded-2xl border border-border text-left"
-          >
-            <div className="relative aspect-[4/3]">
-              <CardImg
-                src={c.img}
-                alt={c.title}
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-               {cardPhoto(dest.slug, ["insights", "seasonal", "checklist", "before"].indexOf(c.key)) && <PhotoCredit photo={cardPhoto(dest.slug, ["insights", "seasonal", "checklist", "before"].indexOf(c.key))} />}
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/50 to-ink/10" />
-              <div className="absolute inset-x-0 bottom-0 p-4">
-                <p className="text-sm font-semibold text-off-white">{c.title}</p>
-                <p className="mt-1 text-[11px] leading-relaxed text-off-white/75">{c.sub}</p>
-                <span className="mt-3 inline-flex items-center gap-1 text-[11px] font-semibold text-off-white">
-                  {open === c.key ? "Close" : c.cta}
-                  <ArrowRight className="h-3.5 w-3.5" />
-                </span>
-              </div>
-            </div>
-          </button>
-        ))}
-      </div>
-
-      {open && (
-        <div className="mt-4 rounded-2xl border border-border bg-card p-6 shadow-soft">
-          {open === "insights" && <InsightsPanel ai={ai} loading={loading} />}
-          {open === "seasonal" && <SeasonalPanel ai={ai} loading={loading} dest={dest} />}
-          {open === "checklist" && <ChecklistPanel ai={ai} loading={loading} />}
-          {open === "before" && <BeforeYouGoPanel dest={dest} />}
-        </div>
-      )}
-    </section>
-  );
-}
-
-function InsightsPanel({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
-  const rows: { icon: ReactNode; label: string; key: keyof EnrichResult["insights"] }[] = [
-    { icon: <Sun className="h-4 w-4" />, label: "Weather", key: "weather" },
-    { icon: <Users className="h-4 w-4" />, label: "Crowd levels", key: "crowdLevels" },
-    { icon: <PawPrint className="h-4 w-4" />, label: "Wildlife", key: "wildlife" },
-    { icon: <Signal className="h-4 w-4" />, label: "Cell coverage", key: "cellCoverage" },
-    { icon: <Shield className="h-4 w-4" />, label: "Safety", key: "safety" },
-    { icon: <Heart className="h-4 w-4" />, label: "Family friendly", key: "familyFriendly" },
-    { icon: <PawPrint className="h-4 w-4" />, label: "Pet friendly", key: "petFriendly" },
-  ];
-
-  if (loading) return <Skeleton className="h-24 w-full" />;
-  if (!ai)
-    return (
-      <p className="text-xs text-muted-foreground">
-        Destination insights aren't available right now.
-      </p>
-    );
-
-  return (
-    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-      {rows.map((r) => (
-        <div key={r.label} className="rounded-xl border border-border bg-beige/40 p-3">
-          <div className="flex items-center gap-1.5 text-foreground/60">
-            {r.icon}
-            <span className="text-[10px] font-semibold uppercase tracking-wide">{r.label}</span>
-          </div>
-          <p className="mt-1.5 text-[11px] leading-relaxed text-foreground/80">
-            {ai.insights[r.key]}
-          </p>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function SeasonalPanel({
-  ai,
-  loading,
-  dest,
-}: {
-  ai?: EnrichResult;
-  loading: boolean;
-  dest: DestinationView;
-}) {
-  if (loading) return <Skeleton className="h-20 w-full" />;
-  return (
-    <div className="grid gap-4 sm:grid-cols-2">
-      <div className="rounded-xl border border-border bg-beige/40 p-4">
-        <p className="text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">
-          Best season
-        </p>
-        <p className="mt-1 text-sm font-semibold text-foreground">{dest.bestSeason ?? "—"}</p>
-      </div>
-      <div className="rounded-xl border border-border bg-beige/40 p-4">
-        <p className="text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">
-          Best time to visit
-        </p>
-        <p className="mt-1 text-xs leading-relaxed text-foreground/80">
-          {ai?.insights.bestTimeToVisit ?? "Not available yet."}
-        </p>
-      </div>
-      <div className="rounded-xl border border-border bg-beige/40 p-4 sm:col-span-2">
-        <p className="text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">
-          What the weather does
-        </p>
-        <p className="mt-1 text-xs leading-relaxed text-foreground/80">
-          {ai?.insights.weather ?? "Not available yet."}
-        </p>
-      </div>
-    </div>
-  );
-}
-
-function ChecklistPanel({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
-  if (loading) return <Skeleton className="h-20 w-full" />;
-  if (!ai)
-    return <p className="text-xs text-muted-foreground">The checklist isn't available yet.</p>;
-  return (
-    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {Object.entries(ai.packing).map(([group, list]) => (
-        <div key={group}>
-          <p className="text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">
-            {group}
-          </p>
-          <ul className="mt-2 space-y-1.5">
-            {list.map((i) => (
-              <li key={i} className="flex items-start gap-2 text-xs text-foreground/80">
-                <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/30" />
-                {i}
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function BeforeYouGoPanel({ dest }: { dest: DestinationView }) {
-  if (dest.globalServices.length === 0)
-    return <p className="text-xs text-muted-foreground">Nothing here yet.</p>;
-  return (
-    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-      {dest.globalServices.map((s) => (
-        <div key={s.id} className="rounded-xl border border-border bg-beige/40 p-4">
-          <p className="text-xs font-semibold text-foreground">{s.title}</p>
-          <p className="mt-1.5 text-[11px] leading-relaxed text-muted-foreground">
-            {s.whyRecommended ?? s.description ?? SERVICE_META[s.category]?.sub}
-          </p>
-          {!s.commissionable && (
-            <span className="mt-2 inline-block rounded-full border border-border px-2 py-0.5 text-[10px] text-muted-foreground">
-              Official link
-            </span>
-          )}
-        </div>
-      ))}
-    </div>
   );
 }
 

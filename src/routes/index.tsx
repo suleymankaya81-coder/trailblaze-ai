@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   ArrowRight,
-  Backpack,
   Compass,
   MapPin,
   Mountain,
@@ -109,11 +108,6 @@ const planIncludes = [
     icon: Sparkles,
     title: "Local experiences",
     blurb: "Hand-picked tours, hikes and golden-hour drives.",
-  },
-  {
-    icon: Backpack,
-    title: "Smart packing list",
-    blurb: "Trip-specific, downloadable, no second-guessing.",
   },
   {
     icon: Wallet,
@@ -367,7 +361,7 @@ function HomePage() {
               A complete trip plan, free.
             </h2>
             <p className="mt-5 text-off-white/80">
-              Pick any destination — we put together the stays, rentals, things to do, packing list
+              Pick any destination — we put together the stays, rentals, things to do, gear
               and budget for you.
             </p>
             <div className="mt-8">

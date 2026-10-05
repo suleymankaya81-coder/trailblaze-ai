@@ -19,14 +19,6 @@ const EnrichSchema = z.object({
     familyFriendly: z.string(),
     petFriendly: z.string(),
   }),
-  packing: z.object({
-    camping: z.array(z.string()),
-    clothing: z.array(z.string()),
-    cooking: z.array(z.string()),
-    photography: z.array(z.string()),
-    kids: z.array(z.string()),
-    pets: z.array(z.string()),
-  }),
   budget: z.object({
     accommodation: z.number(),
     activities: z.number(),
@@ -85,14 +77,6 @@ Return ONLY valid JSON (no markdown, no prose) matching exactly this shape:
     "safety": "1 sentence",
     "familyFriendly": "1 sentence",
     "petFriendly": "1 sentence"
-  },
-  "packing": {
-    "camping": ["4-6 short items"],
-    "clothing": ["4-6 short items"],
-    "cooking": ["4-6 short items"],
-    "photography": ["4-6 short items"],
-    "kids": ["4-6 short items"],
-    "pets": ["4-6 short items"]
   },
   "budget": {
     "accommodation": 0,

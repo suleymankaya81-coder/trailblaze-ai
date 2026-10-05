@@ -1,7 +1,7 @@
 """Tier rollout step 4: publish a wave only where every check passes.
 Checks per destination: cover photo + credit, location + airport + drive,
 at least 15 partner offers, 4 guide pages, a precomputed route line and
-activity/toolkit card photos. Failures stay unpublished and are listed.
+activity card photos. Failures stay unpublished and are listed.
 Run: python scripts/content-pipeline/publish-wave.py slug [slug ...]
 """
 import json, os, sys
@@ -32,7 +32,7 @@ for slug in sys.argv[1:]:
         (len(offers) >= 15, f"offers {len(offers)}"),
         (len(pages) == 4, f"guides {len(pages)}"),
         (slug in routes, "route line"),
-        (len(c.get("activity", [])) >= 3 and len(c.get("toolkit", [])) >= 4, "card photos"),
+        (len(c.get("activity", [])) >= 3, "activity card photos"),
     ] if not ok]
     if problems:
         held.append((slug, problems))
