@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logoStacked from "@/assets/logos/minialife-stacked-bold-trimmed.png";
+import logoStacked from "@/assets/logos/minialife-stacked-mixedcase-trimmed.png";
 
 const footerLinks = [
   { to: "/about", label: "About" },
@@ -18,8 +18,8 @@ export function Footer() {
             <img
               src={logoStacked}
               alt="MiniaLife"
-              width={837}
-              height={617}
+              width={598}
+              height={737}
               className="h-24 w-auto"
             />
           </div>
