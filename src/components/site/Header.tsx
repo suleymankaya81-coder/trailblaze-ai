@@ -1,18 +1,18 @@
 import { Link } from "@tanstack/react-router";
 import { Search, User } from "lucide-react";
-import logoHorizontal from "@/assets/logos/minialife-horizontal.png";
+import logoStacked from "@/assets/logos/minialife-stacked-bold-trimmed.png";
 
 export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur">
-      <div className="container-page flex h-16 items-center justify-between gap-6">
+      <div className="container-page flex h-20 items-center justify-between gap-6">
         <Link to="/" className="flex items-center text-foreground" aria-label="MiniaLife home">
           <img
-            src={logoHorizontal}
+            src={logoStacked}
             alt="MiniaLife"
-            width={1498}
-            height={581}
-            className="h-11 w-auto"
+            width={837}
+            height={617}
+            className="h-16 w-auto"
           />
         </Link>
         <nav className="hidden flex-1 items-center gap-7 text-sm font-medium md:flex">

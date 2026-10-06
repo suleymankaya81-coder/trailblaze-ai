@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logoHorizontal from "@/assets/logos/minialife-horizontal.png";
+import logoStacked from "@/assets/logos/minialife-stacked-bold-trimmed.png";
 
 const footerLinks = [
   { to: "/about", label: "About" },
