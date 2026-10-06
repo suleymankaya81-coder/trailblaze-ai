@@ -15,4 +15,7 @@
 - [x] Wave 3 remaining: 44 places published with Gemini 3 Flash, 176 guides (min 786, avg 931 words), sitemap 1011.
 ## Tier 2 (200 places, Gemini)
 - [x] Tier 2: 191 places published with 764 guides (min 773, avg 944 words)
-- [ ] 9 Tier 2 places held: helen, lost-maples, allagash-wilderness, natchez-trace, maah-daah-hey-trail, chequamegon-nicolet-national-forest (not enough credited photos / no location); blue-ridge-foothills, jean-lafitte-national-historical-park, tallgrass-prairie (cover photo already used by another place)
+- [x] 6 held Tier 2 places published with alternative Commons photos (Helen, Allagash, Natchez Trace, Maah Daah Hey, Chequamegon-Nicolet, Blue Ridge Foothills)
+- [ ] Lost Maples held: no relevant licensed landscape photos on Commons
+- [ ] Jean Lafitte, Tallgrass Prairie held: cover photo already used by another place (not requested)
+- [x] Tier 2 SEO: guide titles ≤60 / descriptions ≤160 chars (auto-trimmed on insert); destination descriptions include season + guide topics; sitemap auto-lists published guides

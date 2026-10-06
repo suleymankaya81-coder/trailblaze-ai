@@ -57,6 +57,19 @@ import { getPublicLandingPagesForDestination } from "@/lib/data/landingPages.fun
 import { LANDING_TYPE_LABEL } from "@/lib/data/landingTypes";
 import { offerPhoto, type Photo } from "@/lib/data/destinationCardPhotos";
 
+// Search snippet: tagline plus the matching guide topics, kept within ~160 chars.
+function seoDescription(name: string, tagline: string | null, bestSeason: string | null): string {
+  const base = (tagline ?? "").trim().replace(/[.!]?$/, ".");
+  const extras = [
+    bestSeason ? ` Best time: ${bestSeason}.` : "",
+    ` Things to do, itinerary & glamping in ${name}.`,
+    " Stays, RV rentals & road trip map.",
+  ];
+  let out = base;
+  for (const e of extras) if ((out + e).length <= 160) out += e;
+  return out.trim();
+}
+
 export const Route = createFileRoute("/destinations/$slug")({
   loader: async ({ params }): Promise<{ dest: DestinationView }> => {
     const dest = await getDestinationPageData({ data: { slug: params.slug } });
@@ -67,7 +80,7 @@ export const Route = createFileRoute("/destinations/$slug")({
     const d = loaderData?.dest;
     if (!d) return { meta: [{ title: "Destination — Minialife" }] };
     const title = `${d.name} Travel Guide — Minialife`;
-    const description = d.tagline;
+    const description = seoDescription(d.name, d.tagline, d.bestSeason);
     const pageUrl = `https://minialife.com/destinations/${d.slug}`;
     const jsonLd = buildDestinationJsonLd(d, pageUrl);
     return {

@@ -9,3 +9,4 @@
 - Tier 1 wave preparation saves reusable non-AI photo, coordinate and route facts before paid AI generation; publish only after the existing completeness checks. Why: a credit limit must not waste repeated fact collection or expose incomplete places.
 - New search-guide pages must be at least 600 words (generator rewrites once, insert marks shorter pages noindex); earlier pages keep their original review. Why: thin pages rank poorly.
 - Bulk guide generation (generate-landing-pages.py) uses google/gemini-3-flash-preview via streamed chat completions. Why: user chose it for lower cost with the same 600+ word checks.
+- Search titles are trimmed to ~60 chars and meta descriptions to 160 by insert-landing-pages.py; destination meta descriptions are composed from tagline, best season and guide topics. Why: Google truncates longer snippets.
