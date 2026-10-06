@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Search, User } from "lucide-react";
-import logoStacked from "@/assets/logos/minialife-stacked-bold-trimmed.png";
+import logoStacked from "@/assets/logos/minialife-stacked-mixedcase-trimmed.png";
 
 export function Header() {
   return (
@@ -10,8 +10,8 @@ export function Header() {
           <img
             src={logoStacked}
             alt="MiniaLife"
-            width={837}
-            height={617}
+            width={598}
+            height={737}
             className="h-16 w-auto"
           />
         </Link>
