@@ -23,6 +23,28 @@ def q(sql):
     return subprocess.check_output(["psql", DB, "-v", "ON_ERROR_STOP=1", "-Atc", sql], text=True)
 
 
+def fit_title(t):
+    """Keep search titles within ~60 chars (Google truncates longer ones)."""
+    if len(t) <= 60:
+        return t
+    for sep in (" | ", ": ", " – ", " - "):
+        head = t.split(sep)[0]
+        if sep in t and 20 <= len(head) <= 60:
+            return head
+    t2 = re.sub(r"^(\d+ Best|Top|The Ultimate|The Best)\s+", "", t)
+    t2 = t2[0].upper() + t2[1:]
+    return t2 if len(t2) <= 60 else t2[:57].rsplit(" ", 1)[0] + "…"
+
+
+def fit_desc(s):
+    """Keep meta descriptions within 160 chars, ending on a sentence when possible."""
+    if len(s) <= 160:
+        return s
+    cut = s[:160]
+    i = max(cut.rfind(". "), cut.rfind("! "))
+    return cut[:i + 1] if i >= 110 else cut[:157].rsplit(" ", 1)[0].rstrip(",;:") + "…"
+
+
 def lit(s):
     return "NULL" if s is None else "'" + str(s).replace("'", "''") + "'"
 
@@ -63,7 +85,7 @@ for d, key, p, text, sh in rows:
     path = f"/{d['slug']}-{suffix}"
     row = {"destination_id": dest_ids[d["slug"]], "path": path, "page_type": ptype,
            "target_keyword": kw.format(n=d["short"].lower()), "search_volume": vol, "keyword_difficulty": kd,
-           "priority": prio, "seo_title": p["seo_title"], "seo_description": p["seo_description"],
+           "priority": prio, "seo_title": fit_title(p["seo_title"]), "seo_description": fit_desc(p["seo_description"]),
            "intro_content": p["intro"], "content_sections": sections, "inventory_filter": {"type": ptype},
            "content_status": "ready", "status": "published", "indexable": not reason, "noindex_reason": reason,
            "canonical_url": "https://minialife.com" + path, "published_at": "now()", "last_content_reviewed_at": "now()"}
