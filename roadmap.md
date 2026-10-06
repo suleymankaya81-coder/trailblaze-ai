@@ -13,3 +13,6 @@
 - [x] Wave 3 batch 2: 25 places published (incl. Buena Vista), 100 guides, all 600+ words (avg 789), sitemap 496.
 - [x] Wave 3 batch 3: 59 places published, 236 guides (min 732, avg 787 words), sitemap 791.
 - [x] Wave 3 remaining: 44 places published with Gemini 3 Flash, 176 guides (min 786, avg 931 words), sitemap 1011.
+## Tier 2 (200 places, Gemini)
+- [x] Tier 2: 191 places published with 764 guides (min 773, avg 944 words)
+- [ ] 9 Tier 2 places held: helen, lost-maples, allagash-wilderness, natchez-trace, maah-daah-hey-trail, chequamegon-nicolet-national-forest (not enough credited photos / no location); blue-ridge-foothills, jean-lafitte-national-historical-park, tallgrass-prairie (cover photo already used by another place)
