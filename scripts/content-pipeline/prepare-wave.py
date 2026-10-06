@@ -41,6 +41,27 @@ WIKI_ANCHORS = {
     "white-mountains": "White Mountains (New England)",
     "wisconsin-northwoods": "Eagle River, Wisconsin",
     "yellowstone-montana-gateway": "West Yellowstone, Montana",
+    # Tier 2 anchors
+    "allagash-wilderness": "Allagash Wilderness Waterway",
+    "assateague-region": "Assateague Island National Seashore",
+    "big-south-fork": "Big South Fork National River and Recreation Area",
+    "blue-ridge-foothills": "Dahlonega, Georgia",
+    "chaco-culture": "Chaco Culture National Historical Park",
+    "chequamegon-nicolet-national-forest": "Chequamegon–Nicolet National Forest",
+    "craters-of-the-moon": "Craters of the Moon National Monument and Preserve",
+    "fort-myers-sanibel": "Sanibel, Florida",
+    "gulf-coast-mississippi": "Biloxi, Mississippi",
+    "helen": "Helen, Georgia",
+    "inside-passage": "Juneau, Alaska",
+    "lake-erie-shores": "Presque Isle State Park",
+    "lost-maples": "Lost Maples State Natural Area",
+    "maah-daah-hey-trail": "Medora, North Dakota",
+    "natchez-trace": "Natchez Trace Parkway",
+    "needles-highway": "Custer State Park",
+    "pine-barrens": "Wharton State Forest",
+    "sandhills": "Valentine, Nebraska",
+    "tallgrass-prairie": "Tallgrass Prairie National Preserve",
+    "white-mountains-maine": "Bethel, Maine",
 }
 
 
@@ -186,7 +207,8 @@ def run(slug, facts_only=False):
     facts = {**d, "lat": prepared["lat"], "lng": prepared["lng"],
              "nearest_airport": prepared["airport"]["name"],
              "drive_minutes": prepared["route"]["minutes"]}
-    ai = call_ai_json(PROMPT.format(facts=json.dumps(facts), pool=published), system=SYSTEM)
+    ai = call_ai_json(PROMPT.format(facts=json.dumps(facts), pool=published),
+                      model="google/gemini-3-flash-preview", system=SYSTEM)
     if isinstance(ai, str):
         ai = json.loads(ai)
     if isinstance(ai, list):
@@ -208,6 +230,13 @@ def prepare_facts(slug):
     if lat is None:
         pimg2, lat, lng = wiki(f"{d['name']}, {d['state']}")
         pimg = pimg or pimg2
+    if lat is None:  # free OpenStreetMap geocoder fallback for the same named anchor
+        anchor = WIKI_ANCHORS.get(slug, f"{d['name']}, {d['state']}")
+        r = requests.get("https://nominatim.openstreetmap.org/search", headers=UA, timeout=30,
+                         params={"q": anchor, "format": "json", "limit": 1, "countrycodes": "us"}).json()
+        time.sleep(1)
+        if r:
+            lat, lng = float(r[0]["lat"]), float(r[0]["lon"])
     if lat is None:
         raise RuntimeError("no coordinates")
 
