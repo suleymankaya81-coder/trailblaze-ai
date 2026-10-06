@@ -1,13 +1,19 @@
 import { Link } from "@tanstack/react-router";
-import { Mountain, Search, User } from "lucide-react";
+import { Search, User } from "lucide-react";
+import logoHorizontal from "@/assets/logos/minialife-horizontal.png";
 
 export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between gap-6">
-        <Link to="/" className="flex items-center gap-2 text-foreground">
-          <Mountain className="h-5 w-5 text-forest" />
-          <span className="text-lg font-bold tracking-tight">Minialife</span>
+        <Link to="/" className="flex items-center text-foreground" aria-label="MiniaLife home">
+          <img
+            src={logoHorizontal}
+            alt="MiniaLife"
+            width={1498}
+            height={581}
+            className="h-11 w-auto"
+          />
         </Link>
         <nav className="hidden flex-1 items-center gap-7 text-sm font-medium md:flex">
           <Link to="/" className="text-foreground/80 hover:text-foreground">

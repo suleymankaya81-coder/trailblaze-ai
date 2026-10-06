@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mountain } from "lucide-react";
+import logoHorizontal from "@/assets/logos/minialife-horizontal.png";
 
 const footerLinks = [
   { to: "/about", label: "About" },
@@ -14,9 +14,14 @@ export function Footer() {
     <footer className="border-t border-border bg-beige/50">
       <div className="container-page py-16">
         <div className="flex flex-col items-start justify-between gap-10 md:flex-row md:items-center">
-          <div className="flex items-center gap-2">
-            <Mountain className="h-5 w-5" />
-            <span className="font-display text-xl">Minialife</span>
+          <div>
+            <img
+              src={logoHorizontal}
+              alt="MiniaLife"
+              width={1498}
+              height={581}
+              className="h-12 w-auto"
+            />
           </div>
           <p className="max-w-md text-sm text-muted-foreground">
             A modern outdoor-travel guide. Tell us where you want to go and we'll show you where to
