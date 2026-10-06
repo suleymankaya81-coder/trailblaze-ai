@@ -63,6 +63,23 @@ WIKI_ANCHORS = {
     "tallgrass-prairie": "Tallgrass Prairie National Preserve",
     "white-mountains-maine": "Bethel, Maine",
 }
+# Fallback anchor coordinates when Wikipedia/OSM lookups return nothing (town or visitor center).
+COORDS = {
+    "helen": (34.7012, -83.7271),               # Helen, GA
+    "natchez-trace": (34.3326, -88.7036),       # Parkway Visitor Center, Tupelo MS
+    "chequamegon-nicolet-national-forest": (45.9344, -90.4416),  # Park Falls, WI
+}
+# Alternative Commons search terms for places with too few usable photos.
+SEARCH_TERMS = {
+    "flagstaff": ["Flagstaff Arizona landscape", "Flagstaff San Francisco Peaks"],
+    "helen": ["Helen Georgia", "Unicoi State Park", "Anna Ruby Falls", "Chattahoochee River Helen"],
+    "lost-maples": ["Lost Maples State Natural Area", "Sabinal River", "Lost Maples Texas", "Vanderpool Texas"],
+    "allagash-wilderness": ["Allagash River", "Allagash Wilderness Waterway", "Allagash Lake", "Chamberlain Lake Maine"],
+    "natchez-trace": ["Natchez Trace Parkway", "Natchez Trace", "Natchez Trace Mississippi", "Natchez Trace Tennessee"],
+    "maah-daah-hey-trail": ["Maah Daah Hey Trail", "Little Missouri National Grassland", "Little Missouri River North Dakota", "Medora North Dakota badlands"],
+    "chequamegon-nicolet-national-forest": ["Chequamegon National Forest", "Nicolet National Forest", "Chequamegon-Nicolet National Forest", "Park Falls Wisconsin"],
+    "blue-ridge-foothills": ["Dahlonega Georgia", "Blue Ridge Mountains Georgia", "Amicalola", "Lumpkin County Georgia"],
+}
 
 
 def q(sql):
@@ -237,13 +254,13 @@ def prepare_facts(slug):
         time.sleep(1)
         if r:
             lat, lng = float(r[0]["lat"]), float(r[0]["lon"])
+    if lat is None and slug in COORDS:  # verified town/visitor-center anchor
+        lat, lng = COORDS[slug]
     if lat is None:
         raise RuntimeError("no coordinates")
 
-    terms = [d["name"], f"{d['name']} {d['state']}"]
-    if slug == "flagstaff":
-        terms = ["Flagstaff Arizona landscape", "Flagstaff San Francisco Peaks"]
-    pool = commons_search(terms[0]) + commons_search(terms[1])
+    terms = SEARCH_TERMS.get(slug, [d["name"], f"{d['name']} {d['state']}"])
+    pool = [p for t in terms for p in commons_search(t)]
     seen, photos = set(), []
     hero = file_info(pimg) if pimg and not BAD.search(pimg) else None
     if hero and (hero["url"] in used or hero["w"] < hero["h"]):
