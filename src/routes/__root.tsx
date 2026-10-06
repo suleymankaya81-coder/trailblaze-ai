@@ -102,6 +102,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { rel: "stylesheet", href: appCss },
     ],
+    scripts: [
+      {
+        src: "https://tp-em.com/NTgyMTU3.js?t=582157",
+        async: true,
+        "data-cmp-ab": "2",
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
