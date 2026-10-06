@@ -12,7 +12,7 @@ export function Header() {
             alt="MiniaLife"
             width={1498}
             height={581}
-            className="h-9 w-auto"
+            className="h-11 w-auto"
           />
         </Link>
         <nav className="hidden flex-1 items-center gap-7 text-sm font-medium md:flex">

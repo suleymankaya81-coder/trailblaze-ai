@@ -20,7 +20,7 @@ export function Footer() {
               alt="MiniaLife"
               width={1498}
               height={581}
-              className="h-10 w-auto"
+              className="h-12 w-auto"
             />
           </div>
           <p className="max-w-md text-sm text-muted-foreground">
