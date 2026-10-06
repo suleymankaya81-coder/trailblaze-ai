@@ -5,14 +5,14 @@ import logoStacked from "@/assets/logos/minialife-stacked-mixedcase-trimmed.png"
 export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur">
-      <div className="container-page flex h-20 items-center justify-between gap-6">
+      <div className="container-page flex h-24 items-center justify-between gap-6">
         <Link to="/" className="flex items-center text-foreground" aria-label="MiniaLife home">
           <img
             src={logoStacked}
             alt="MiniaLife"
             width={598}
             height={737}
-            className="h-16 w-auto"
+            className="h-20 w-auto"
           />
         </Link>
         <nav className="hidden flex-1 items-center gap-7 text-sm font-medium md:flex">
