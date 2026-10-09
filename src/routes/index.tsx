@@ -16,6 +16,7 @@ import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { SearchBar } from "@/components/site/SearchBar";
 import { Button } from "@/components/ui/button";
+import { offerPhoto } from "@/lib/data/destinationCardPhotos";
 import {
   getFeaturedGearOffers,
   getHomepageDestinations,
@@ -243,17 +244,40 @@ function HomePage() {
               </p>
             </div>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-              {gearOffers.map((offer) => (
+              {gearOffers.map((offer) => {
+                // Offers without listing photography use the same credited,
+                // explicitly illustrative photos as the destination cards.
+                const rentalIndex = /car rental/i.test(offer.title) ? 2 : /van/i.test(offer.title) ? 1 : 0;
+                const gearIndex = /bottle|water/i.test(offer.title) ? 1
+                  : /wool|layer/i.test(offer.title) ? 2
+                  : /lamp|light/i.test(offer.title) ? 3
+                  : /first.?aid/i.test(offer.title) ? 4
+                  : /jacket/i.test(offer.title) ? 5 : 0;
+                const photo = offerPhoto(
+                  offer.destinationSlug,
+                  offer.category === "rv_rental" ? "rental" : "gear",
+                  offer.category === "rv_rental" ? rentalIndex : gearIndex,
+                );
+                const image = offer.image?.trim() || photo?.url;
+                if (!image) return null;
+                return (
+                <figure key={offer.id}>
                 <Link
-                  key={offer.id}
                   to="/destinations/$slug"
                   params={{ slug: offer.destinationSlug }}
                   className="group block overflow-hidden rounded-2xl border border-border bg-card"
                 >
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img
-                      src={offer.image ?? ""}
-                      alt={offer.title}
+                      src={image}
+                      alt={offer.image ? offer.title : `${photo?.subject ?? offer.title} — illustrative photo`}
+                      loading="lazy"
+                      onError={(event) => {
+                        if (photo && event.currentTarget.getAttribute("src") !== photo.url) {
+                          event.currentTarget.src = photo.url;
+                          event.currentTarget.alt = `${photo.subject} — illustrative photo`;
+                        }
+                      }}
                       className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
@@ -270,7 +294,14 @@ function HomePage() {
                     </p>
                   </div>
                 </Link>
-              ))}
+                {photo && !offer.image && (
+                  <figcaption className="mt-2 text-xs text-muted-foreground">
+                    Illustrative photo · <a href={photo.source} target="_blank" rel="noopener noreferrer" className="underline">{photo.credit} · {photo.license}</a>
+                  </figcaption>
+                )}
+                </figure>
+                );
+              })}
             </div>
           </div>
         </section>
