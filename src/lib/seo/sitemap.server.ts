@@ -1,31 +1,33 @@
-// Server-only: builds sitemap.xml from the Supabase destinations table
-// (status = 'published') plus the site's static pages. Never edit by hand —
-// every published destination shows up automatically, no manual step.
+// Server-only: sitemap index at /sitemap.xml plus child sitemaps under
+// /sitemaps/*.xml, built live from published rows — never edited by hand.
 
-const STATIC_PATHS = ["/", "/about", "/contact", "/privacy", "/terms", "/affiliate-disclosure"];
+const STATIC_PATHS = ["/", "/destinations", "/about", "/contact", "/privacy", "/terms", "/affiliate-disclosure"];
+const BASE_URL = "https://minialife.com";
+const GUIDE_TYPES = ["best-time-to-visit", "things-to-do", "itinerary", "glamping"] as const;
 
-type DestinationRow = { slug: string; updated_at: string };
+type Url = { loc: string; lastmod?: string };
 
 function isNewSupabaseApiKey(value: string): boolean {
   return value.startsWith("sb_publishable_") || value.startsWith("sb_secret_");
 }
 
-async function fetchPublishedDestinations(): Promise<DestinationRow[]> {
+async function fetchAll<T>(query: string): Promise<T[]> {
   const SUPABASE_URL = process.env.SUPABASE_URL;
-  const SUPABASE_KEY = process.env.SUPABASE_PUBLISHABLE_KEY;
-  if (!SUPABASE_URL || !SUPABASE_KEY) {
-    throw new Error("Missing SUPABASE_URL / SUPABASE_PUBLISHABLE_KEY for sitemap generation");
+  const KEY = process.env.SUPABASE_PUBLISHABLE_KEY;
+  if (!SUPABASE_URL || !KEY) throw new Error("Missing SUPABASE_URL / SUPABASE_PUBLISHABLE_KEY");
+  const headers: Record<string, string> = { apikey: KEY };
+  if (!isNewSupabaseApiKey(KEY)) headers.Authorization = `Bearer ${KEY}`;
+  // The API caps each response at 1000 rows, so page through all of them.
+  const PAGE = 1000;
+  const out: T[] = [];
+  for (let offset = 0; ; offset += PAGE) {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/${query}&limit=${PAGE}&offset=${offset}`, { headers });
+    if (!res.ok) throw new Error(`sitemap fetch failed: ${res.status}`);
+    const rows = (await res.json()) as T[];
+    out.push(...rows);
+    if (rows.length < PAGE) break;
   }
-
-  const headers: Record<string, string> = { apikey: SUPABASE_KEY };
-  if (!isNewSupabaseApiKey(SUPABASE_KEY)) headers.Authorization = `Bearer ${SUPABASE_KEY}`;
-
-  const url = `${SUPABASE_URL}/rest/v1/destinations?select=slug,updated_at&status=eq.published&order=slug.asc`;
-  const res = await fetch(url, { headers });
-  if (!res.ok) {
-    throw new Error(`Failed to fetch destinations for sitemap: ${res.status} ${res.statusText}`);
-  }
-  return (await res.json()) as DestinationRow[];
+  return out;
 }
 
 function xmlEscape(value: string): string {
@@ -37,66 +39,58 @@ function xmlEscape(value: string): string {
     .replace(/'/g, "&apos;");
 }
 
-// Canonical public origin — the sitemap always advertises the real site,
-// never the preview/request host.
-const BASE_URL = "https://minialife.com";
+function xml(body: string): Response {
+  return new Response(body, {
+    headers: { "content-type": "application/xml; charset=utf-8", "cache-control": "public, max-age=3600" },
+  });
+}
+
+function urlset(urls: Url[]): Response {
+  return xml(
+    [
+      '<?xml version="1.0" encoding="UTF-8"?>',
+      '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+      ...urls.map(
+        (u) => `  <url><loc>${xmlEscape(u.loc)}</loc>${u.lastmod ? `<lastmod>${u.lastmod}</lastmod>` : ""}</url>`,
+      ),
+      "</urlset>",
+    ].join("\n"),
+  );
+}
+
+const CHILDREN = ["pages", "destinations", ...GUIDE_TYPES.map((t) => `guides-${t}`)];
 
 export async function buildSitemapResponse(_origin?: string): Promise<Response> {
-  // No lastmod on static pages: we have no page-specific change timestamp,
-  // and a build-time date would be fabricated.
-  const urls: { loc: string; lastmod?: string }[] = STATIC_PATHS.map((path) => ({
-    loc: `${BASE_URL}${path}`,
-  }));
+  return xml(
+    [
+      '<?xml version="1.0" encoding="UTF-8"?>',
+      '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+      ...CHILDREN.map((c) => `  <sitemap><loc>${BASE_URL}/sitemaps/${c}.xml</loc></sitemap>`),
+      "</sitemapindex>",
+    ].join("\n"),
+  );
+}
 
+// Returns null for unknown child names (caller falls through to 404).
+export async function buildChildSitemap(name: string): Promise<Response | null> {
+  if (!CHILDREN.includes(name)) return null;
+  if (name === "pages") return urlset(STATIC_PATHS.map((p) => ({ loc: `${BASE_URL}${p}` })));
   try {
-    const destinations = await fetchPublishedDestinations();
-    for (const d of destinations) {
-      urls.push({
-        loc: `${BASE_URL}/destinations/${d.slug}`,
-        lastmod: new Date(d.updated_at).toISOString(),
-      });
+    if (name === "destinations") {
+      const rows = await fetchAll<{ slug: string; updated_at: string }>(
+        "destinations?select=slug,updated_at&status=eq.published&order=slug.asc",
+      );
+      return urlset(
+        rows.map((d) => ({ loc: `${BASE_URL}/destinations/${d.slug}`, lastmod: new Date(d.updated_at).toISOString() })),
+      );
     }
-    // Search pages: published + indexable only (RLS also hides pages whose
-    // destination is unpublished).
-    const SUPABASE_URL = process.env.SUPABASE_URL;
-    const KEY = process.env.SUPABASE_PUBLISHABLE_KEY;
-    if (SUPABASE_URL && KEY) {
-      const headers: Record<string, string> = { apikey: KEY };
-      if (!isNewSupabaseApiKey(KEY)) headers.Authorization = `Bearer ${KEY}`;
-      // The API caps each response at 1000 rows, so page through all of them.
-      const PAGE = 1000;
-      for (let offset = 0; ; offset += PAGE) {
-        const res = await fetch(
-          `${SUPABASE_URL}/rest/v1/seo_landing_pages?select=path,updated_at&status=eq.published&indexable=eq.true&order=path.asc&limit=${PAGE}&offset=${offset}`,
-          { headers },
-        );
-        if (!res.ok) break;
-        const rows = (await res.json()) as { path: string; updated_at: string }[];
-        for (const p of rows) {
-          urls.push({ loc: `${BASE_URL}${p.path}`, lastmod: new Date(p.updated_at).toISOString() });
-        }
-        if (rows.length < PAGE) break;
-      }
-    }
+    const suffix = name.slice("guides-".length);
+    const rows = await fetchAll<{ path: string; updated_at: string }>(
+      `seo_landing_pages?select=path,updated_at&status=eq.published&indexable=eq.true&path=like.*-${suffix}&order=path.asc`,
+    );
+    return urlset(rows.map((p) => ({ loc: `${BASE_URL}${p.path}`, lastmod: new Date(p.updated_at).toISOString() })));
   } catch (err) {
-    // Degrade gracefully — a stale/partial sitemap beats a 500 for crawlers.
-    console.error("[sitemap] failed to load destinations, serving static pages only", err);
+    console.error("[sitemap]", err);
+    return urlset([]);
   }
-
-  const body = [
-    '<?xml version="1.0" encoding="UTF-8"?>',
-    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-    ...urls.map(
-      (u) =>
-        `  <url><loc>${xmlEscape(u.loc)}</loc>${u.lastmod ? `<lastmod>${u.lastmod}</lastmod>` : ""}</url>`,
-    ),
-    "</urlset>",
-  ].join("\n");
-
-  return new Response(body, {
-    headers: {
-      "content-type": "application/xml; charset=utf-8",
-      "cache-control": "public, max-age=3600",
-    },
-  });
 }

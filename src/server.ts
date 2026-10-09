@@ -2,7 +2,8 @@ import "./lib/error-capture";
 
 import { consumeLastCapturedError } from "./lib/error-capture";
 import { renderErrorPage } from "./lib/error-page";
-import { buildSitemapResponse } from "./lib/seo/sitemap.server";
+import { legacyResponse } from "./lib/seo/legacy";
+import { buildChildSitemap, buildSitemapResponse } from "./lib/seo/sitemap.server";
 
 type ServerEntry = {
   fetch: (request: Request, env: unknown, ctx: unknown) => Promise<Response> | Response;
@@ -45,6 +46,13 @@ export default {
       if (url.pathname === "/sitemap.xml") {
         return await buildSitemapResponse(url.origin);
       }
+      const child = url.pathname.match(/^\/sitemaps\/([a-z-]+)\.xml$/);
+      if (child) {
+        const res = await buildChildSitemap(child[1]);
+        if (res) return res;
+      }
+      const legacy = legacyResponse(url);
+      if (legacy) return legacy;
 
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
