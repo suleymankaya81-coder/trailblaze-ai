@@ -200,12 +200,17 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
 // otherwise a naive limit() surfaces the same handful of items repeated.
 export const getFeaturedGearOffers = createServerFn({ method: "GET" }).handler(
   async (): Promise<FeaturedGearOffer[]> => {
-    const { data: offers, error: offersError } = await supabase
-      .from("offers")
-      .select("*")
-      .in("category", ["rv_rental", "gear_rental", "gear_purchase"])
-      .order("title", { ascending: true })
-      .limit(60);
+    // Query each rental type separately: an alphabetical car-only limit
+    // otherwise crowds every RV and bicycle out of the homepage.
+    const results = await Promise.all([
+      supabase.from("offers").select("*").eq("category", "rv_rental").eq("subcategory", "RV").limit(4),
+      supabase.from("offers").select("*").eq("category", "rv_rental").eq("subcategory", "Campervan").limit(4),
+      supabase.from("offers").select("*").eq("category", "gear_rental").order("title").limit(40),
+      supabase.from("offers").select("*").eq("category", "rv_rental").eq("subcategory", "Car rental").order("title").limit(2),
+      supabase.from("offers").select("*").eq("category", "gear_purchase").order("title").limit(4),
+    ]);
+    const offersError = results.find((result) => result.error)?.error;
+    const offers = results.flatMap((result) => result.data ?? []);
 
     if (offersError) {
       console.error("[getFeaturedGearOffers] offers query failed", offersError);
