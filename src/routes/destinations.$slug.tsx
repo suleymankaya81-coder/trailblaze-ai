@@ -693,7 +693,7 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
         <span className="font-serif text-lg font-semibold text-foreground">${total.toLocaleString()}</span>
       </div>
     )}
-    <aside className="hidden rounded-2xl border border-border bg-card p-6 shadow-soft lg:sticky lg:top-16 lg:block">
+    <aside className="hidden rounded-2xl border border-border bg-card p-6 shadow-soft lg:sticky lg:top-24 lg:block">
       <h2 className="font-display text-lg text-foreground">Your trip budget</h2>
       <p className="mt-0.5 text-xs text-muted-foreground">Estimated for 4 days · 2 travelers</p>
 
