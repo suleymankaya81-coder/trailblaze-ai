@@ -17,6 +17,14 @@ import { Footer } from "@/components/site/Footer";
 import { SearchBar } from "@/components/site/SearchBar";
 import { Button } from "@/components/ui/button";
 import { offerPhoto } from "@/lib/data/destinationCardPhotos";
+import rental1 from "@/assets/home-rental-1.jpg";
+import rental2 from "@/assets/home-rental-2.jpg";
+import rental3 from "@/assets/home-rental-3.jpg";
+import rental4 from "@/assets/home-rental-4.jpg";
+import rental5 from "@/assets/home-rental-5.jpg";
+import rental6 from "@/assets/home-rental-6.jpg";
+import rental7 from "@/assets/home-rental-7.jpg";
+import rental8 from "@/assets/home-rental-8.jpg";
 import {
   getFeaturedGearOffers,
   getHomepageDestinations,
@@ -76,6 +84,8 @@ export const Route = createFileRoute("/")({
 
 const img = (id: string, w = 1200) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
+
+const homepageRentalImages = [rental1, rental2, rental3, rental4, rental5, rental6, rental7, rental8];
 
 // Icon-forward, not photo-forward — deliberately: this site already has
 // one image-mismatch incident behind it, and there's no real per-tag
@@ -244,7 +254,7 @@ function HomePage() {
               </p>
             </div>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-              {gearOffers.map((offer) => {
+              {gearOffers.map((offer, index) => {
                 // Offers without listing photography use the same credited,
                 // explicitly illustrative photos as the destination cards.
                 const rentalIndex = /car rental/i.test(offer.title) ? 2 : /van/i.test(offer.title) ? 1 : 0;
@@ -258,7 +268,8 @@ function HomePage() {
                   offer.category === "rv_rental" ? "rental" : "gear",
                   offer.category === "rv_rental" ? rentalIndex : gearIndex,
                 );
-                const image = offer.image?.trim() || photo?.url;
+                const generatedImage = /car rental/i.test(offer.title) ? homepageRentalImages[index] : undefined;
+                const image = generatedImage || offer.image?.trim() || photo?.url;
                 if (!image) return null;
                 return (
                 <figure key={offer.id}>
@@ -270,10 +281,10 @@ function HomePage() {
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img
                       src={image}
-                      alt={offer.image ? offer.title : `${photo?.subject ?? offer.title} — illustrative photo`}
+                      alt={generatedImage ? `${offer.title} — AI-generated illustrative vehicle image` : offer.image ? offer.title : `${photo?.subject ?? offer.title} — illustrative photo`}
                       loading="lazy"
                       onError={(event) => {
-                        if (photo && event.currentTarget.getAttribute("src") !== photo.url) {
+                        if (!generatedImage && photo && event.currentTarget.getAttribute("src") !== photo.url) {
                           event.currentTarget.src = photo.url;
                           event.currentTarget.alt = `${photo.subject} — illustrative photo`;
                         }
@@ -294,7 +305,11 @@ function HomePage() {
                     </p>
                   </div>
                 </Link>
-                {photo && !offer.image && (
+                {generatedImage ? (
+                  <figcaption className="mt-2 text-xs text-muted-foreground">
+                    AI-generated illustration · Not an actual rental listing
+                  </figcaption>
+                ) : photo && !offer.image && (
                   <figcaption className="mt-2 text-xs text-muted-foreground">
                     Illustrative photo · <a href={photo.source} target="_blank" rel="noopener noreferrer" className="underline">{photo.credit} · {photo.license}</a>
                   </figcaption>
