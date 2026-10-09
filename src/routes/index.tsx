@@ -28,6 +28,7 @@ import rental8 from "@/assets/home-rental-8.jpg";
 import rvImage from "@/assets/home-rv.jpg";
 import campervanImage from "@/assets/home-campervan.jpg";
 import bikeImage from "@/assets/home-bike.jpg";
+import kayakImage from "@/assets/home-kayak.jpg";
 import {
   getFeaturedGearOffers,
   getHomepageDestinations,
@@ -272,6 +273,7 @@ function HomePage() {
                   offer.category === "rv_rental" ? rentalIndex : gearIndex,
                 );
                 const generatedImage = /bike|bicycle/i.test(offer.title) ? bikeImage
+                  : /kayak/i.test(offer.title) ? kayakImage
                   : offer.subcategory === "RV" ? rvImage
                   : offer.subcategory === "Campervan" ? campervanImage
                   : /car rental/i.test(offer.title) ? homepageRentalImages[index] : undefined;
