@@ -25,6 +25,9 @@ import rental5 from "@/assets/home-rental-5.jpg";
 import rental6 from "@/assets/home-rental-6.jpg";
 import rental7 from "@/assets/home-rental-7.jpg";
 import rental8 from "@/assets/home-rental-8.jpg";
+import rvImage from "@/assets/home-rv.jpg";
+import campervanImage from "@/assets/home-campervan.jpg";
+import bikeImage from "@/assets/home-bike.jpg";
 import {
   getFeaturedGearOffers,
   getHomepageDestinations,
@@ -250,7 +253,7 @@ function HomePage() {
                 </h2>
               </div>
               <p className="max-w-xs text-sm text-muted-foreground">
-                Real listings pulled from the destinations below — pick one to see the full plan.
+                RVs, campervans, bikes, cars and outdoor gear — explore options for your next escape.
               </p>
             </div>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -268,7 +271,10 @@ function HomePage() {
                   offer.category === "rv_rental" ? "rental" : "gear",
                   offer.category === "rv_rental" ? rentalIndex : gearIndex,
                 );
-                const generatedImage = /car rental/i.test(offer.title) ? homepageRentalImages[index] : undefined;
+                const generatedImage = /bike|bicycle/i.test(offer.title) ? bikeImage
+                  : offer.subcategory === "RV" ? rvImage
+                  : offer.subcategory === "Campervan" ? campervanImage
+                  : /car rental/i.test(offer.title) ? homepageRentalImages[index] : undefined;
                 const image = generatedImage || offer.image?.trim() || photo?.url;
                 if (!image) return null;
                 return (
