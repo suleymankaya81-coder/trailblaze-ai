@@ -1,53 +1,76 @@
-import { ArrowUpRight, Home, Mountain, Trees } from "lucide-react";
+import { ArrowUpRight, BedDouble, Home, MapPin, Mountain, Plane, Trees } from "lucide-react";
 import { buildVrboSearchUrl } from "@/lib/affiliates/vrbo";
+import { buildExpediaHotelSearchUrl } from "@/lib/affiliates/expedia";
 
-const POINTS = [
-  { icon: Mountain, title: "Cabins & mountain lodges", text: "Whole-home stays close to the park." },
-  { icon: Trees, title: "Room for the whole crew", text: "Kitchens, fire pits and space to spread out." },
-  { icon: Home, title: "Live prices & dates", text: "Pick your dates on Vrbo to see what's open." },
-];
+type Point = { icon: typeof Home; text: string };
 
-/** Vrbo cabins card — links to a tracked Vrbo search for this destination. */
-export function VrboSearchWidget({ destinationName }: { destinationName: string }) {
-  const href = buildVrboSearchUrl(destinationName);
+function StayCard({
+  brand,
+  title,
+  href,
+  cta,
+  points,
+}: {
+  brand: string;
+  title: string;
+  href: string;
+  cta: string;
+  points: Point[];
+}) {
   return (
-    <div className="mt-6 rounded-2xl border border-border bg-card p-5 sm:p-6">
-      <div className="flex flex-wrap items-start justify-between gap-4">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-wider text-primary">Vrbo</p>
-          <h3 className="mt-1 text-lg font-semibold text-foreground">
-            Cabins & vacation homes near {destinationName}
-          </h3>
-        </div>
-        <a
-          href={href}
-          target="_blank"
-          rel="sponsored noopener noreferrer"
-          className="inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90"
-        >
-          See stays on Vrbo <ArrowUpRight className="h-4 w-4" />
-        </a>
-      </div>
-      <ul className="mt-5 grid gap-3 sm:grid-cols-3">
-        {POINTS.map(({ icon: Icon, title, text }) => (
-          <li key={title}>
-            <a
-              href={href}
-              target="_blank"
-              rel="sponsored noopener noreferrer"
-              className="flex h-full gap-3 rounded-xl border border-border bg-background p-4 hover:border-primary"
-            >
-              <Icon className="h-5 w-5 shrink-0 text-primary" />
-              <span>
-                <span className="block text-sm font-semibold text-foreground">{title}</span>
-                <span className="mt-0.5 block text-xs text-muted-foreground">{text}</span>
-              </span>
-            </a>
+    <div className="flex flex-col rounded-2xl border border-border bg-card p-5 sm:p-6">
+      <p className="text-xs font-semibold uppercase tracking-wider text-primary">{brand}</p>
+      <h3 className="mt-1 text-lg font-semibold text-foreground">{title}</h3>
+      <ul className="mt-4 flex-1 space-y-2.5">
+        {points.map(({ icon: Icon, text }) => (
+          <li key={text} className="flex gap-2.5 text-sm text-muted-foreground">
+            <Icon className="h-4 w-4 shrink-0 text-primary" />
+            {text}
           </li>
         ))}
       </ul>
-      <p className="mt-4 text-[11px] text-muted-foreground">
-        Opens Vrbo's own search. Minialife may earn a commission on bookings, at no extra cost to you.
+      <a
+        href={href}
+        target="_blank"
+        rel="sponsored noopener noreferrer"
+        className="mt-5 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90"
+      >
+        {cta} <ArrowUpRight className="h-4 w-4" />
+      </a>
+    </div>
+  );
+}
+
+/** Vrbo (cabins) + Expedia (hotels) side by side, both tracked searches for this destination. */
+export function VrboSearchWidget({ destinationName }: { destinationName: string }) {
+  return (
+    <div className="mt-6">
+      <div className="grid gap-4 md:grid-cols-2">
+        <StayCard
+          brand="Vrbo"
+          title={`Cabins & vacation rentals near ${destinationName}`}
+          href={buildVrboSearchUrl(destinationName)}
+          cta="See cabins on Vrbo"
+          points={[
+            { icon: Mountain, text: "Whole-home cabins and mountain lodges" },
+            { icon: Trees, text: "Kitchens, fire pits and room for the crew" },
+            { icon: Home, text: "Pick dates on Vrbo for live prices" },
+          ]}
+        />
+        <StayCard
+          brand="Expedia"
+          title={`Hotels & lodges near ${destinationName}`}
+          href={buildExpediaHotelSearchUrl(destinationName)}
+          cta="See hotels on Expedia"
+          points={[
+            { icon: MapPin, text: "Hotels in nearby gateway towns" },
+            { icon: BedDouble, text: "Resorts, inns and last-minute rooms" },
+            { icon: Plane, text: "Easy to pair with flights and cars" },
+          ]}
+        />
+      </div>
+      <p className="mt-3 text-[11px] text-muted-foreground">
+        Opens Vrbo's or Expedia's own search. Minialife may earn a commission on bookings, at no extra cost to you.
       </p>
     </div>
   );
