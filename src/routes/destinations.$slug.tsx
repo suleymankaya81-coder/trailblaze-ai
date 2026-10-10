@@ -1,4 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { VrboSearchWidget } from "@/components/destination/VrboSearchWidget";
 import { GetYourGuideWidget } from "@/components/destination/PartnerWidget";
 import { useQuery } from "@tanstack/react-query";
 import { useServerFn } from "@tanstack/react-start";
@@ -565,6 +566,8 @@ function TopStays({ dest }: { dest: DestinationView }) {
           ))}
         </div>
       )}
+
+      <VrboSearchWidget destinationName={dest.name} />
 
       <p className="mt-5 text-[11px] text-muted-foreground">
         Minialife may earn a commission when you book through links on this page, at no extra cost
