@@ -46,7 +46,7 @@ export function legacyResponse(url: URL): Response | null {
         status: 410,
         headers: {
           "content-type": "text/html; charset=utf-8",
-          "x-robots-tag": "noindex",
+          "x-robots-tag": "noindex, nofollow",
           "cache-control": "public, max-age=86400",
         },
       },
