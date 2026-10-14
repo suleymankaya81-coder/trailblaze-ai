@@ -6,7 +6,29 @@ const REDIRECTS: Record<string, string> = {
   "/guides": "/destinations",
 };
 
-const GONE_PREFIXES = ["/plans", "/blog", "/curated-plans", "/returns"];
+const GONE_PREFIXES = [
+  "/plans",
+  "/blog",
+  "/curated-plans",
+  "/returns",
+  // Old e-commerce era
+  "/product-category",
+  "/product",
+  "/products",
+  "/shop",
+  "/cart",
+  "/checkout",
+  "/my-account",
+  "/list-example",
+  "/item",
+  "/category",
+  "/tag",
+  "/author",
+  "/feed",
+  "/collections",
+  "/wp-content",
+  "/wp-json",
+];
 
 export function legacyResponse(url: URL): Response | null {
   const path = url.pathname.replace(/\/+$/, "") || "/";
@@ -24,7 +46,7 @@ export function legacyResponse(url: URL): Response | null {
         status: 410,
         headers: {
           "content-type": "text/html; charset=utf-8",
-          "x-robots-tag": "noindex",
+          "x-robots-tag": "noindex, nofollow",
           "cache-control": "public, max-age=86400",
         },
       },
