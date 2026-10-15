@@ -105,9 +105,9 @@ function AboutPage() {
             <section>
               <h2 className="mb-2 font-display text-xl text-foreground">Who publishes Minialife</h2>
               <p>
-                Minialife is an independent outdoor-travel publisher, run by a small editorial team
-                based in the United States. We write and edit every destination guide ourselves and
-                are solely responsible for the content on this site. Editorial questions, corrections,
+                Minialife is an independent outdoor-travel publisher founded and edited by
+                Süleyman Kaya, who oversees every destination guide and is responsible for the
+                content on this site. Editorial questions, corrections,
                 and partner or affiliate-network enquiries all reach us at{" "}
                 <a href="mailto:hello@minialife.com" className="text-forest underline underline-offset-2">
                   hello@minialife.com

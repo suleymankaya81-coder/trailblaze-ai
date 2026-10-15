@@ -247,14 +247,15 @@ function HomePage() {
             <div className="mb-10 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
               <div>
                 <p className="text-xs font-bold uppercase tracking-[0.22em] text-foreground/60">
-                  Live inventory
+                  Rental ideas
                 </p>
                 <h2 className="mt-2 max-w-2xl font-serif text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-                  Rentals and gear ready at the trailhead
+                  Rentals and gear worth considering
                 </h2>
               </div>
               <p className="max-w-xs text-sm text-muted-foreground">
-                RVs, campervans, bikes, cars and outdoor gear — explore options for your next escape.
+                RVs, campervans, bikes, cars and outdoor gear. Photos are illustrative and prices are
+                estimates — check the partner site for current availability and pricing.
               </p>
             </div>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -363,46 +364,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* STORIES — editorial trio */}
-      <section id="stories" className="bg-beige py-20">
-        <div className="container-page">
-          <div className="mb-10 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-foreground/60">
-                Field journal
-              </p>
-              <h2 className="mt-2 font-serif text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-                Stories from the trail
-              </h2>
-            </div>
-            <a
-              href="#"
-              className="text-sm font-semibold text-foreground/80 hover:text-foreground hover:underline"
-            >
-              Read the journal <ArrowRight className="ml-1 inline h-3.5 w-3.5" />
-            </a>
-          </div>
-          <div className="grid gap-6 md:grid-cols-3">
-            {stories.map((s) => (
-              <a key={s.title} href="#" className="group block">
-                <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-                  <img
-                    src={s.image}
-                    alt={s.title}
-                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                </div>
-                <p className="mt-4 text-xs font-bold uppercase tracking-wider text-foreground/60">
-                  {s.tag}
-                </p>
-                <h3 className="mt-2 text-xl font-bold leading-snug text-foreground group-hover:underline">
-                  {s.title}
-                </h3>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CLOSING — single dark band: trip-plan pitch + closing CTA merged */}
       <section id="how" className="bg-ink py-24 text-off-white">
