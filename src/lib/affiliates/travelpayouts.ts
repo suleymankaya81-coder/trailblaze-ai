@@ -14,6 +14,14 @@ export const TP_LINKS = {
 
 export type TpBrand = keyof typeof TP_LINKS;
 
+/** Approved providers for the existing before-road service rows. */
+export const ROAD_PREPARATION_PARTNERS = {
+  insurance: "ekta",
+  esim: "airalo",
+  offline_maps: "radicalstorage",
+  car_rental: "economybookings",
+} as const satisfies Record<string, TpBrand>;
+
 /** Adds sub_id (destination slug) so Travelpayouts reports show which page earned the click. */
 export function tpLink(brand: TpBrand, subId?: string): string {
   const url = new URL(TP_LINKS[brand]);

@@ -15,6 +15,7 @@ import {
   Fuel,
   Heart,
   Hotel,
+  Luggage,
   Map,
   MapPin,
   Mountain,
@@ -59,6 +60,7 @@ import { getCapturedEmail, setCapturedEmail } from "@/lib/plans/session";
 import { getPublicLandingPagesForDestination } from "@/lib/data/landingPages.functions";
 import { LANDING_TYPE_LABEL } from "@/lib/data/landingTypes";
 import { offerPhoto, type Photo } from "@/lib/data/destinationCardPhotos";
+import { ROAD_PREPARATION_PARTNERS, tpLink } from "@/lib/affiliates/travelpayouts";
 
 // Search snippet: tagline plus the matching guide topics, kept within ~160 chars.
 function seoDescription(name: string, tagline: string | null, bestSeason: string | null): string {
@@ -880,13 +882,19 @@ const SERVICE_META: Record<string, { icon: ReactNode; sub: string }> = {
   park_pass: { icon: <Trees className="h-4 w-4" />, sub: "Official park passes & info" },
   travel_card: { icon: <CreditCard className="h-4 w-4" />, sub: "Spend without foreign fees" },
   offline_maps: {
-    icon: <Map className="h-4 w-4" />,
-    sub: "Download trails before you lose signal",
+    icon: <Luggage className="h-4 w-4" />,
+    sub: "Drop bags in the gateway city for the day",
   },
 };
 
 function TravelServices({ dest }: { dest: DestinationView }) {
-  const services = dest.globalServices;
+  const services = dest.globalServices.filter((service) => !(service.category in ROAD_PREPARATION_PARTNERS));
+  const preparationDetails = {
+    insurance: { title: "Travel insurance", brand: "EKTA", sub: "Medical cover for international visitors" },
+    esim: { title: "US eSIM data", brand: "Airalo", sub: "Get online on landing, no SIM swap" },
+    offline_maps: { title: "Luggage storage", brand: "Radical Storage", sub: "Drop bags in the gateway city for the day" },
+    car_rental: { title: "Car Rental", brand: "EconomyBookings", sub: "Compare prices from top rental brands" },
+  };
 
   return (
     <aside className="rounded-2xl border border-border bg-card p-6 shadow-soft">
@@ -895,17 +903,37 @@ function TravelServices({ dest }: { dest: DestinationView }) {
         The few things worth sorting out in advance.
       </p>
 
-      {services.length === 0 ? (
-        <p className="mt-5 text-xs text-muted-foreground">No travel services available yet.</p>
-      ) : (
-        <ul className="mt-4 divide-y divide-border">
+      <ul className="mt-4 divide-y divide-border">
+          {Object.entries(ROAD_PREPARATION_PARTNERS).map(([category, brand]) => {
+            const detail = preparationDetails[category as keyof typeof preparationDetails];
+            const href = tpLink(brand, dest.slug);
+            return (
+              <li key={category}>
+                <a href={href} target="_blank" rel="sponsored nofollow noopener noreferrer"
+                  title={`Opens ${detail.brand} in a new tab — partner link`}
+                  className="flex items-start gap-3 py-3.5 transition hover:opacity-80"
+                  onClick={(event) => {
+                    event.preventDefault();
+                    window.open(href, "_blank", "noopener,noreferrer");
+                  }}>
+                  <span className="mt-0.5 text-foreground/50">{SERVICE_META[category]?.icon}</span>
+                  <span className="min-w-0 flex-1">
+                    <span className="block text-xs font-semibold text-foreground">{detail.title}</span>
+                    <span className="block text-[11px] text-muted-foreground">{detail.sub}</span>
+                    <span className="mt-1 block text-[10px] text-muted-foreground">Partner link · {detail.brand}</span>
+                  </span>
+                  <ChevronRight className="mt-1 h-4 w-4 shrink-0 text-foreground/30" />
+                </a>
+              </li>
+            );
+          })}
           {services.map((s) => (
             <li key={s.id}>
               <ServiceRow service={s} destinationSlug={dest.slug} />
             </li>
           ))}
-        </ul>
-      )}
+      </ul>
+      <p className="mt-3 text-[11px] text-muted-foreground">Partner links via Travelpayouts. Minialife may earn a commission at no extra cost to you.</p>
     </aside>
   );
 }
