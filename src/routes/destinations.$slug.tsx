@@ -1,3 +1,4 @@
+import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { VrboSearchWidget } from "@/components/destination/VrboSearchWidget";
 import { HarvestHostsCard } from "@/components/destination/HarvestHostsCard";
