@@ -33,12 +33,16 @@ function AffiliateDisclosurePage() {
       <section>
         <h2>How this works</h2>
         <p>
-          Minialife partners with campgrounds, RV and gear rental marketplaces, outdoor retailers,
-          and tour operators (including RVshare, Hipcamp, Glamping Hub, Arrive Outdoors, REI, and
-          Viator). When you click a "Check availability," "Reserve," or "Buy" link on this site and
-          go on to book or purchase with one of these partners, we may earn a small commission.
-          Some of these relationships are managed through affiliate networks, including Awin,
-          which tracks the referral on the partner's behalf.
+          Minialife currently earns commissions through Harvest Hosts (via Awin), Vrbo and Expedia
+          (via the Expedia Group Travel Creator Program), and selected travel brands available
+          through Travelpayouts. When you click one of these partner links and go on to book or
+          purchase, we may earn a small commission. Links marked as partner links are tracked by
+          the network on the partner's behalf.
+        </p>
+        <p>
+          Some buttons — for example RVshare rentals and REI gear — are ordinary direct links to
+          brands we are not paid by. They are labelled so you can tell the difference, and we earn
+          nothing from them.
         </p>
         <p>
           This commission is paid by the partner out of their own marketing budget. It does not
