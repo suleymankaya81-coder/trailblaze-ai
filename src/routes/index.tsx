@@ -161,6 +161,10 @@ function HomePage() {
   const { gearOffers, homeDestinations } = Route.useLoaderData();
   const largeDestinations = homeDestinations.slice(0, 3);
   const compactDestinations = homeDestinations.slice(3, 6);
+  const usedRentalPhotos = new Set([
+    servicePhoto("bike", "homepage-partners")?.url,
+    servicePhoto("car", "homepage-partners")?.url,
+  ]);
 
   return (
     <div className="bg-background">
@@ -275,12 +279,16 @@ function HomePage() {
                   : /lamp|light/i.test(offer.title) ? 3
                   : /first.?aid/i.test(offer.title) ? 4
                   : /jacket/i.test(offer.title) ? 5 : 0;
-                const photo = offerPhoto(
+                let photo = offerPhoto(
                   offer.destinationSlug,
                   offer.category === "rv_rental" ? "rental" : "gear",
                   offer.category === "rv_rental" ? rentalIndex : gearIndex,
                   `${offer.title} ${offer.subcategory ?? ""}`,
                 );
+                for (let offset = 1; photo && usedRentalPhotos.has(photo.url) && offset < 20; offset++) {
+                  photo = offerPhoto(offer.destinationSlug, offer.category === "rv_rental" ? "rental" : "gear", index + offset, `${offer.title} ${offer.subcategory ?? ""}`);
+                }
+                if (photo) usedRentalPhotos.add(photo.url);
                 const generatedImage = /bike|bicycle/i.test(offer.title) ? bikeImage
                   : /kayak/i.test(offer.title) ? kayakImage
                   : offer.subcategory === "RV" ? rvImage
