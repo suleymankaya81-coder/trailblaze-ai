@@ -4,7 +4,12 @@ import type { Photo } from "@/lib/data/destinationCardPhotos";
 export function PartnerPhotoCard({ brand, title, href, photo, detail }: { brand: string; title: string; href: string; photo: Photo; detail?: string }) {
   return (
     <figure className="flex min-w-0 flex-col overflow-hidden rounded-lg border border-border bg-card transition hover:shadow-soft">
-      <a href={href} target="_blank" rel="sponsored nofollow noopener noreferrer" title={`Opens ${brand} in a new tab — partner link`} className="group flex flex-1 flex-col">
+      <a href={href} target="_blank" rel="sponsored nofollow noopener noreferrer" title={`Opens ${brand} in a new tab — partner link`} className="group flex flex-1 flex-col"
+        onClick={(event) => {
+          // The existing Drive script rewrites short-link hrefs; retain the supplied tracked destination.
+          event.preventDefault();
+          window.open(href, "_blank", "noopener,noreferrer");
+        }}>
         <div className="relative aspect-[4/3] overflow-hidden bg-muted">
           <img src={photo.url} alt={`${photo.subject} — illustrative photo, not partner inventory`} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 motion-safe:group-hover:scale-105" />
         </div>
