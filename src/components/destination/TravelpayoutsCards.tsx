@@ -10,7 +10,7 @@ type Item = { brand: TpBrand; name: string; title: string; sub: string; icon: ty
 
 function Card({ item, slug }: { item: Item; slug: string }) {
   const Icon = item.icon;
-  const categories: Partial<Record<TpBrand, ServicePhotoCategory>> = { aviasales: "flight", economybookings: "car", qeeq: "car", bikesbooking: "bike", klook: "tour", tiqets: "attraction", gocity: "attraction" };
+  const categories: Partial<Record<TpBrand, ServicePhotoCategory>> = { aviasales: "flight", economybookings: "car", qeeq: "car", bikesbooking: "bike", klook: "tour", tiqets: "parkentry", gocity: "attraction" };
   const category = categories[item.brand];
   const photo = item.brand === "klook" ? offerPhoto(slug, "activity", 0) ?? servicePhoto("tour", slug) : category ? servicePhoto(category, slug, item.brand === "qeeq" || item.brand === "gocity" ? 1 : 0) : undefined;
   if (photo) return <PartnerPhotoCard brand={item.name} title={item.title} href={tpLink(item.brand, slug)} photo={photo} detail={item.brand === "aviasales" && item.sub.startsWith("Recent fares") ? item.sub : undefined} />;
