@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { ArrowUpRight, Bike, Car, Luggage, Plane, Shield, Smartphone, Ticket, Building2 } from "lucide-react";
+import { ArrowUpRight, Bike, Car, Plane, Ticket, Building2 } from "lucide-react";
 import { tpLink, nearGoCity, type TpBrand } from "@/lib/affiliates/travelpayouts";
 import { getFlightPrice } from "@/lib/affiliates/flights.functions";
 import { servicePhoto, type ServicePhotoCategory } from "@/lib/data/servicePhotos";
@@ -69,17 +69,10 @@ export function TravelpayoutsCards({ slug, name, airportCode }: { slug: string; 
     { brand: "tiqets", name: "Tiqets", title: "Tickets & attractions", sub: "Instant mobile tickets for nearby sights", icon: Ticket },
     ...(nearGoCity(slug) ? [{ brand: "gocity" as const, name: "Go City", title: "City attraction pass", sub: "One pass for the gateway city's top sights", icon: Building2 }] : []),
   ];
-  const prep: Item[] = [
-    { brand: "ekta", name: "EKTA", title: "Travel insurance", sub: "Medical cover for international visitors", icon: Shield },
-    { brand: "airalo", name: "Airalo", title: "US eSIM data", sub: "Get online on landing, no SIM swap", icon: Smartphone },
-    { brand: "radicalstorage", name: "Radical Storage", title: "Luggage storage", sub: "Drop bags in the gateway city for the day", icon: Luggage },
-  ];
-
   return (
     <div className="mt-8">
       <Group title="Getting there & getting around" items={getThere} slug={slug} />
       <Group title="Tours & tickets" items={doIt} slug={slug} />
-      <Group title="Sort before you go" items={prep} slug={slug} />
       <p className="mt-3 text-[11px] text-muted-foreground">
         Partner links via Travelpayouts. Prices are estimates; the partner's site shows live prices. Minialife may earn a commission at no extra cost to you.
       </p>
