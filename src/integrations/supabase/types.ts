@@ -234,6 +234,27 @@ export type Database = {
           },
         ]
       }
+      flight_price_cache: {
+        Row: {
+          airport_code: string
+          fetched_at: string
+          origin: string | null
+          price: number | null
+        }
+        Insert: {
+          airport_code: string
+          fetched_at?: string
+          origin?: string | null
+          price?: number | null
+        }
+        Update: {
+          airport_code?: string
+          fetched_at?: string
+          origin?: string | null
+          price?: number | null
+        }
+        Relationships: []
+      }
       offers: {
         Row: {
           category: Database["public"]["Enums"]["offer_category"]
