@@ -25,8 +25,8 @@ export const Route = createFileRoute("/$landing")({
     const slug = bundle.destination.slug;
     const tagged = dest
       ? [
-          ...dest.stays.map((o, i) => ({ o, photo: offerPhoto(slug, "stay", i) })),
-          ...dest.rentals.map((o, i) => ({ o, photo: offerPhoto(slug, "rental", i) })),
+          ...dest.stays.map((o, i) => ({ o, photo: offerPhoto(slug, "stay", i, `${o.title} ${o.subcategory ?? ""} ${o.partner ?? ""}`) })),
+          ...dest.rentals.map((o, i) => ({ o, photo: offerPhoto(slug, "rental", i, `${o.title} ${o.subcategory ?? ""} ${o.partner ?? ""}`) })),
           ...dest.activities.map((o, i) => ({ o, photo: offerPhoto(slug, "activity", i) })),
         ]
       : [];

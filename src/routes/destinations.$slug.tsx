@@ -562,9 +562,9 @@ function TopStays({ dest }: { dest: DestinationView }) {
         <EmptyState message="No stays listed for this filter yet." />
       ) : (
         <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-           {pick && <StayCard offer={pick} destinationSlug={dest.slug} featured photo={offerPhoto(dest.slug, "stay", 0)} />}
+           {pick && <StayCard offer={pick} destinationSlug={dest.slug} featured photo={offerPhoto(dest.slug, "stay", 0, `${pick.title} ${pick.subcategory ?? ""} ${pick.partner ?? ""}`)} />}
            {rest.map((s, index) => (
-             <StayCard key={s.id} offer={s} destinationSlug={dest.slug} photo={offerPhoto(dest.slug, "stay", index + 1)} />
+             <StayCard key={s.id} offer={s} destinationSlug={dest.slug} photo={offerPhoto(dest.slug, "stay", index + 1, `${s.title} ${s.subcategory ?? ""} ${s.partner ?? ""}`)} />
           ))}
         </div>
       )}
@@ -773,7 +773,7 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
            {rentals.map((r, index) => (
-             <RentalTile key={r.id} offer={r} destinationSlug={dest.slug} photo={offerPhoto(dest.slug, "rental", index)} />
+             <RentalTile key={r.id} offer={r} destinationSlug={dest.slug} photo={offerPhoto(dest.slug, "rental", index, `${r.title} ${r.subcategory ?? ""} ${r.partner ?? ""}`)} />
           ))}
         </div>
       )}
@@ -1105,8 +1105,8 @@ function Essentials({ dest }: { dest: DestinationView }) {
               className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition hover:shadow-lift"
             >
                <div className="relative aspect-[4/3] bg-beige/30">
-                  <CardImg src={offerPhoto(dest.slug, "gear", index)?.url ?? ""} alt={offerPhoto(dest.slug, "gear", index) ? `${offerPhoto(dest.slug, "gear", index)?.subject}, illustrative gear photo` : ""} className="h-full w-full object-cover" />
-                 {offerPhoto(dest.slug, "gear", index) && <PhotoCredit photo={offerPhoto(dest.slug, "gear", index)} />}
+                  <CardImg src={offerPhoto(dest.slug, "gear", index, e.title)?.url ?? ""} alt={`${e.title} — illustrative gear photo, not actual product inventory`} className="h-full w-full object-cover" />
+                 <PhotoCredit photo={offerPhoto(dest.slug, "gear", index, e.title)} />
                </div>
               <div className="flex flex-1 flex-col p-3.5">
                 <h3 className="text-xs font-semibold text-foreground">{e.title}</h3>
