@@ -1,3 +1,4 @@
+import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   ArrowRight,
@@ -326,7 +327,7 @@ function HomePage() {
                       {offer.priceDisplay ??
                         (offer.priceValue != null
                           ? `$${offer.priceValue}${offer.priceUnit ? ` / ${offer.priceUnit}` : ""}`
-                          : "Price on request")}
+                          : `${estimatedFrom(`${offer.title} ${offer.subcategory ?? ""}`)} · estimate`)}
                     </p>
                   </div>
                 </Link>

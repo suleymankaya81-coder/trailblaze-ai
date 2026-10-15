@@ -397,7 +397,7 @@ function PriceTag({
     );
   }
   if (offer.priceDisplay) return <span className={className}>{offer.priceDisplay}</span>;
-  return <span className="text-xs font-normal text-muted-foreground">Price on request</span>;
+  return <span className="text-xs font-normal text-muted-foreground">{estimatedFrom(`${offer.title ?? ""} ${offer.subcategory ?? ""} ${offer.partner ?? ""}`)} · estimate</span>;
 }
 
 function useTrackedRedirect(offer: OfferView, destinationSlug: string) {
@@ -796,7 +796,7 @@ function RentalTile({ offer, destinationSlug, photo }: { offer: OfferView; desti
           <p className="mt-1 text-[11px] text-muted-foreground">
             {offer.priceValue != null
               ? `From $${offer.priceValue} / ${offer.priceUnit ?? "day"}`
-              : (offer.priceDisplay ?? "Price on request")}
+              : (offer.priceDisplay ?? `${estimatedFrom(`${offer.title} ${offer.subcategory ?? ""} ${offer.partner ?? ""}`)} · estimate`)}
           </p>
       </div>
       <div className="flex items-center justify-between gap-2 p-3">

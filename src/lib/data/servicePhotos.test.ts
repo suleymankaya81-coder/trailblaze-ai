@@ -26,3 +26,9 @@ describe("service photo matching", () => {
     expect(offerPhoto("unknown-place", "activity", 0)).toBeUndefined();
   });
 });
+import { estimatedFrom } from "./servicePhotos";
+describe("estimatedFrom", () => {
+  it("campground estimate", () => expect(estimatedFrom("Riverside campground")).toBe("Est. from $35/night"));
+  it("cabin estimate", () => expect(estimatedFrom("Lakeside cabin")).toBe("Est. from $120/night"));
+  it("RV estimate", () => expect(estimatedFrom("Class C RV")).toBe("Est. from $150/day"));
+});
