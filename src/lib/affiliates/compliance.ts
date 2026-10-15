@@ -58,6 +58,16 @@ const PARTNER_LABELS: Record<string, string> = {
   bnesim: "BNESIM",
   outdooractive: "Outdooractive",
   getyourguide: "GetYourGuide",
+  airalo: "Airalo",
+  economybookings: "EconomyBookings",
+  bikesbooking: "BikesBooking",
+  klook: "Klook",
+  ekta: "EKTA",
+  tiqets: "Tiqets",
+  gocity: "Go City",
+  radicalstorage: "Radical Storage",
+  aviasales: "Aviasales",
+  qeeq: "QEEQ",
 };
 
 export function partnerLabel(partner: string | null): string | null {
