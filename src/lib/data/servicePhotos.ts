@@ -1,7 +1,7 @@
 import library from "@/data/servicePhotos.json";
 import type { Photo } from "./destinationCardPhotos";
 
-export type ServicePhotoCategory = "flight" | "car" | "bike" | "rv" | "campervan" | "tour" | "attraction" | "tent" | "rvpark" | "cabin" | "hotel" | "glamping" | "tinyhouse" | "kayak" | "bottle" | "headlamp" | "jacket" | "firstaid" | "layers" | "power";
+export type ServicePhotoCategory = "flight" | "car" | "bike" | "rv" | "campervan" | "tour" | "attraction" | "tent" | "rvpark" | "cabin" | "hotel" | "glamping" | "tinyhouse" | "kayak" | "bottle" | "headlamp" | "jacket" | "firstaid" | "layers" | "power" | "parkentry";
 const pools = library as Partial<Record<ServicePhotoCategory, Photo[]>>;
 
 export function photoHash(value: string): number {
@@ -47,4 +47,18 @@ export function serviceCategory(text: string, category: "stay" | "rental" | "gea
     if (/bike|bicycle/.test(t)) return "bike";
   }
   return undefined;
+}
+// Typical entry-level prices shown only when a partner gives no price; always labelled as estimates.
+const ESTIMATES: Array<[RegExp, string]> = [
+  [/glamp|yurt/, "Est. from $90/night"],
+  [/cabin|vacation|tiny|home/, "Est. from $120/night"],
+  [/hotel|lodge|inn|resort/, "Est. from $110/night"],
+  [/motorhome|\brv\b|rvshare|class [abc]|campervan|\bvan\b/, "Est. from $150/day"],
+  [/car|suv|sedan/, "Est. from $45/day"],
+  [/bike|bicycle|kayak|canoe/, "Est. from $35/day"],
+  [/camp|tent|site|harvest|roverpass/, "Est. from $35/night"],
+];
+export function estimatedFrom(text: string): string {
+  const t = text.toLowerCase();
+  return ESTIMATES.find(([re]) => re.test(t))?.[1] ?? "Check live price";
 }
