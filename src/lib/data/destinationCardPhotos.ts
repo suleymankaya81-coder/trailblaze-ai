@@ -1,5 +1,6 @@
 /** Credited Commons photos mirrored locally. All partner photos are illustrative, not listing/product photography. */
 import wavePhotos from "@/data/destinationCardPhotos.wave.json";
+import { servicePhoto, serviceCategory } from "./servicePhotos";
 export type Photo = { url: string; source: string; credit: string; license: string; subject: string };
 type CardCategory = "stay" | "rental" | "activity" | "gear" | "toolkit";
 const photos: Record<string, Record<CardCategory, Photo[]>> = {
@@ -151,5 +152,15 @@ for (const [slug, p] of Object.entries(wavePhotos as Record<string, { activity: 
   const base = photos["acadia"];
   photos[slug] = { stay: base.stay, rental: base.rental, gear: base.gear, activity: p.activity, toolkit: p.toolkit ?? [] };
 }
-export const offerPhoto = (slug: string, category: Exclude<CardCategory, "toolkit">, index: number): Photo | undefined => photos[slug]?.[category]?.[index];
+export const offerPhoto = (slug: string, category: Exclude<CardCategory, "toolkit">, index: number, serviceText?: string): Photo | undefined => {
+  // Keep place-specific activity photos tied to their own destination.
+  if (category === "activity") return photos[slug]?.activity?.[index];
+  const defaults = { stay: ["tent", "rvpark", "tent"], rental: ["rv", "campervan", "car"], gear: ["power", "bottle", "layers", "headlamp", "firstaid", "jacket"] } as const;
+  const type = serviceText ? serviceCategory(serviceText, category) : defaults[category][index];
+  if (!type) return undefined;
+  const selected = servicePhoto(type, `${slug}:${category}`, index);
+  if (selected) return selected;
+  // Only retain a fallback when its subject actually matches the requested service.
+  return photos[slug]?.[category]?.find((photo) => serviceCategory(photo.subject, category) === type);
+};
 export const cardPhoto = (slug: string, index: number): Photo | undefined => photos[slug]?.toolkit?.[index];

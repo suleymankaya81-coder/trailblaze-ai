@@ -1,6 +1,7 @@
 import { ArrowUpRight, BedDouble, Home, MapPin, Mountain, Plane, Trees } from "lucide-react";
 import { buildVrboSearchUrl } from "@/lib/affiliates/vrbo";
 import { buildExpediaHotelSearchUrl } from "@/lib/affiliates/expedia";
+import { servicePhoto } from "@/lib/data/servicePhotos";
 
 type Point = { icon: typeof Home; text: string };
 type Pic = { url: string; source: string; credit: string; license: string };
@@ -87,7 +88,7 @@ export function VrboSearchWidget({ destinationName }: { destinationName: string 
           title={`Cabins & vacation rentals near ${destinationName}`}
           href={buildVrboSearchUrl(destinationName)}
           cta="See cabins on Vrbo"
-          pic={CABINS[h % CABINS.length]}
+          pic={servicePhoto("cabin", destinationName + ":vrbo") ?? CABINS[0]}
           points={[
             { icon: Mountain, text: "Whole-home cabins and mountain lodges" },
             { icon: Trees, text: "Kitchens, fire pits and room for the crew" },
@@ -99,7 +100,7 @@ export function VrboSearchWidget({ destinationName }: { destinationName: string 
           title={`Hotels & lodges near ${destinationName}`}
           href={buildExpediaHotelSearchUrl(destinationName)}
           cta="See hotels on Expedia"
-          pic={HOTELS[h % HOTELS.length]}
+          pic={servicePhoto("hotel", destinationName + ":expedia") ?? HOTELS[1]}
           points={[
             { icon: MapPin, text: "Hotels in nearby gateway towns" },
             { icon: BedDouble, text: "Resorts, inns and last-minute rooms" },

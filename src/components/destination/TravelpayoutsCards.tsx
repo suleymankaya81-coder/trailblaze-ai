@@ -2,11 +2,18 @@ import { useQuery } from "@tanstack/react-query";
 import { ArrowUpRight, Bike, Car, Luggage, Plane, Shield, Smartphone, Ticket, Building2 } from "lucide-react";
 import { tpLink, nearGoCity, type TpBrand } from "@/lib/affiliates/travelpayouts";
 import { getFlightPrice } from "@/lib/affiliates/flights.functions";
+import { servicePhoto, type ServicePhotoCategory } from "@/lib/data/servicePhotos";
+import { PartnerPhotoCard } from "./PartnerPhotoCard";
+import { offerPhoto } from "@/lib/data/destinationCardPhotos";
 
 type Item = { brand: TpBrand; name: string; title: string; sub: string; icon: typeof Plane };
 
 function Card({ item, slug }: { item: Item; slug: string }) {
   const Icon = item.icon;
+  const categories: Partial<Record<TpBrand, ServicePhotoCategory>> = { aviasales: "flight", economybookings: "car", qeeq: "car", bikesbooking: "bike", klook: "tour", tiqets: "attraction", gocity: "attraction" };
+  const category = categories[item.brand];
+  const photo = item.brand === "klook" ? offerPhoto(slug, "activity", 0) ?? servicePhoto("tour", slug) : category ? servicePhoto(category, slug, item.brand === "qeeq" || item.brand === "gocity" ? 1 : 0) : undefined;
+  if (photo) return <PartnerPhotoCard brand={item.name} title={item.title} href={tpLink(item.brand, slug)} photo={photo} detail={item.brand === "aviasales" && item.sub.startsWith("Recent fares") ? item.sub : undefined} />;
   return (
     <a
       href={tpLink(item.brand, slug)}
@@ -42,7 +49,7 @@ function Group({ title, items, slug }: { title: string; items: Item[]; slug: str
 export function TravelpayoutsCards({ slug, name, airportCode }: { slug: string; name: string; airportCode: string | null }) {
   const { data: fare } = useQuery({
     queryKey: ["flight-price", airportCode],
-    queryFn: () => getFlightPrice({ data: { airport: airportCode! } }),
+    queryFn: () => airportCode ? getFlightPrice({ data: { airport: airportCode } }) : Promise.resolve(null),
     enabled: !!airportCode,
     staleTime: 60 * 60 * 1000,
   });

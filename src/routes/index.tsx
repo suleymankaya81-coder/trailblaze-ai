@@ -17,6 +17,9 @@ import { Footer } from "@/components/site/Footer";
 import { SearchBar } from "@/components/site/SearchBar";
 import { Button } from "@/components/ui/button";
 import { offerPhoto } from "@/lib/data/destinationCardPhotos";
+import { servicePhoto, type ServicePhotoCategory } from "@/lib/data/servicePhotos";
+import { PartnerPhotoCard } from "@/components/destination/PartnerPhotoCard";
+import { tpLink } from "@/lib/affiliates/travelpayouts";
 import rental1 from "@/assets/home-rental-1.jpg";
 import rental2 from "@/assets/home-rental-2.jpg";
 import rental3 from "@/assets/home-rental-3.jpg";
@@ -99,13 +102,13 @@ const planBuilderCards = TRIP_TAG_OPTIONS.map((t, i) => ({
   icon: [Tent, Truck, Sparkles, Users, Mountain, Sun][i] ?? Tent,
 }));
 
-const stayTypes = [
-  { name: "Campgrounds", image: img("photo-1504280390367-361c6d9f38f4") },
-  { name: "Glamping", image: img("photo-1517824806704-9040b037703b") },
-  { name: "RV Parks", image: img("photo-1533873984035-25970ab07461") },
-  { name: "Tiny Houses", image: img("photo-1518780664697-55e3ad937233") },
-  { name: "Cabins", image: img("photo-1464822759023-fed622ff2c3b") },
-  { name: "Lodges", image: img("photo-1510798831971-661eb04b3739") },
+const stayTypes: { name: string; category: ServicePhotoCategory }[] = [
+  { name: "Campgrounds", category: "tent" },
+  { name: "Glamping", category: "glamping" },
+  { name: "RV Parks", category: "rvpark" },
+  { name: "Tiny Houses", category: "tinyhouse" },
+  { name: "Cabins", category: "cabin" },
+  { name: "Lodges", category: "hotel" },
 ];
 
 const planIncludes = [
@@ -158,6 +161,10 @@ function HomePage() {
   const { gearOffers, homeDestinations } = Route.useLoaderData();
   const largeDestinations = homeDestinations.slice(0, 3);
   const compactDestinations = homeDestinations.slice(3, 6);
+  const usedRentalPhotos = new Set([
+    servicePhoto("bike", "homepage-partners")?.url,
+    servicePhoto("car", "homepage-partners")?.url,
+  ]);
 
   return (
     <div className="bg-background">
@@ -259,6 +266,10 @@ function HomePage() {
               </p>
             </div>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+              {([{ brand: "bikesbooking" as const, name: "BikesBooking", category: "bike" as const, title: "Bike & e-bike rentals" }, { brand: "economybookings" as const, name: "EconomyBookings", category: "car" as const, title: "Compare road-trip rental cars" }]).map((item) => {
+                const photo = servicePhoto(item.category, "homepage-partners");
+                return photo ? <PartnerPhotoCard key={item.brand} brand={item.name} title={item.title} href={tpLink(item.brand, "homepage")} photo={photo} /> : null;
+              })}
               {gearOffers.map((offer, index) => {
                 // Offers without listing photography use the same credited,
                 // explicitly illustrative photos as the destination cards.
@@ -268,17 +279,22 @@ function HomePage() {
                   : /lamp|light/i.test(offer.title) ? 3
                   : /first.?aid/i.test(offer.title) ? 4
                   : /jacket/i.test(offer.title) ? 5 : 0;
-                const photo = offerPhoto(
+                let photo = offerPhoto(
                   offer.destinationSlug,
                   offer.category === "rv_rental" ? "rental" : "gear",
                   offer.category === "rv_rental" ? rentalIndex : gearIndex,
+                  `${offer.title} ${offer.subcategory ?? ""}`,
                 );
+                for (let offset = 1; photo && usedRentalPhotos.has(photo.url) && offset < 20; offset++) {
+                  photo = offerPhoto(offer.destinationSlug, offer.category === "rv_rental" ? "rental" : "gear", index + offset, `${offer.title} ${offer.subcategory ?? ""}`);
+                }
+                if (photo) usedRentalPhotos.add(photo.url);
                 const generatedImage = /bike|bicycle/i.test(offer.title) ? bikeImage
                   : /kayak/i.test(offer.title) ? kayakImage
                   : offer.subcategory === "RV" ? rvImage
                   : offer.subcategory === "Campervan" ? campervanImage
                   : /car rental/i.test(offer.title) ? homepageRentalImages[index] : undefined;
-                const image = generatedImage || offer.image?.trim() || photo?.url;
+                const image = photo?.url || generatedImage;
                 if (!image) return null;
                 return (
                 <figure key={offer.id}>
@@ -290,7 +306,7 @@ function HomePage() {
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img
                       src={image}
-                      alt={generatedImage ? `${offer.title} — AI-generated illustrative vehicle image` : offer.image ? offer.title : `${photo?.subject ?? offer.title} — illustrative photo`}
+                      alt={photo ? `${photo.subject} — illustrative photo, not actual partner inventory` : `${offer.title} — AI-generated illustration`}
                       loading="lazy"
                       onError={(event) => {
                         if (!generatedImage && photo && event.currentTarget.getAttribute("src") !== photo.url) {
@@ -314,11 +330,11 @@ function HomePage() {
                     </p>
                   </div>
                 </Link>
-                {generatedImage ? (
+                {!photo && generatedImage ? (
                   <figcaption className="mt-2 text-xs text-muted-foreground">
                     AI-generated illustration · Not an actual rental listing
                   </figcaption>
-                ) : photo && !offer.image && (
+                ) : photo && (
                   <figcaption className="mt-2 text-xs text-muted-foreground">
                     Illustrative photo · <a href={photo.source} target="_blank" rel="noopener noreferrer" className="underline">{photo.credit} · {photo.license}</a>
                   </figcaption>
@@ -343,15 +359,19 @@ function HomePage() {
             </h2>
           </div>
           <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
-            {stayTypes.map((s) => (
+            {stayTypes.map((s) => {
+              const photo = servicePhoto(s.category, "homepage-stays");
+              if (!photo) return null;
+              return (
+              <figure key={s.name}>
               <a
-                key={s.name}
                 href="#destinations"
-                className="group relative aspect-[4/5] overflow-hidden rounded-2xl"
+                className="group relative block aspect-[4/5] overflow-hidden rounded-lg"
               >
                 <img
-                  src={s.image}
-                  alt={s.name}
+                  src={photo.url}
+                  alt={`${photo.subject} — illustrative ${s.name.toLowerCase()} photo`}
+                  loading="lazy"
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/75 via-transparent to-transparent" />
@@ -359,7 +379,9 @@ function HomePage() {
                   {s.name}
                 </h3>
               </a>
-            ))}
+              <figcaption className="mt-2 text-[10px] text-muted-foreground">Illustrative · <a href={photo.source} target="_blank" rel="noopener noreferrer" className="underline">{photo.credit} · {photo.license}</a></figcaption>
+              </figure>
+            );})}
           </div>
         </div>
       </section>
