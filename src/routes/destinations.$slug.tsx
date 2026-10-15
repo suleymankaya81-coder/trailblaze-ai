@@ -1,6 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { VrboSearchWidget } from "@/components/destination/VrboSearchWidget";
 import { HarvestHostsCard } from "@/components/destination/HarvestHostsCard";
+import { TravelpayoutsCards } from "@/components/destination/TravelpayoutsCards";
 import { GetYourGuideWidget } from "@/components/destination/PartnerWidget";
 import { useQuery } from "@tanstack/react-query";
 import { useServerFn } from "@tanstack/react-start";
@@ -776,6 +777,7 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
           ))}
         </div>
       )}
+      <TravelpayoutsCards slug={dest.slug} name={dest.name} airportCode={dest.airportCode} />
     </section>
   );
 }

@@ -1,0 +1,81 @@
+import { useQuery } from "@tanstack/react-query";
+import { ArrowUpRight, Bike, Car, Luggage, Plane, Shield, Smartphone, Ticket, Building2 } from "lucide-react";
+import { tpLink, nearGoCity, type TpBrand } from "@/lib/affiliates/travelpayouts";
+import { getFlightPrice } from "@/lib/affiliates/flights.functions";
+
+type Item = { brand: TpBrand; name: string; title: string; sub: string; icon: typeof Plane };
+
+function Card({ item, slug }: { item: Item; slug: string }) {
+  const Icon = item.icon;
+  return (
+    <a
+      href={tpLink(item.brand, slug)}
+      target="_blank"
+      rel="sponsored nofollow noopener noreferrer"
+      title={`Opens ${item.name} in a new tab — partner link, we may earn a commission`}
+      className="group flex flex-col rounded-2xl border border-border bg-card p-5 transition hover:shadow-soft"
+    >
+      <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-primary">
+        <Icon className="h-4 w-4" />
+      </span>
+      <p className="mt-3 text-[10px] uppercase tracking-wider text-muted-foreground">Partner link · {item.name}</p>
+      <p className="mt-1 text-sm font-semibold text-foreground">{item.title}</p>
+      <p className="mt-1 flex-1 text-xs text-muted-foreground">{item.sub}</p>
+      <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-primary">
+        Check on {item.name} <ArrowUpRight className="h-3.5 w-3.5" />
+      </span>
+    </a>
+  );
+}
+
+function Group({ title, items, slug }: { title: string; items: Item[]; slug: string }) {
+  return (
+    <div className="mt-6">
+      <h3 className="mb-3 text-sm font-semibold text-foreground">{title}</h3>
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        {items.map((i) => <Card key={i.brand} item={i} slug={slug} />)}
+      </div>
+    </div>
+  );
+}
+
+export function TravelpayoutsCards({ slug, name, airportCode }: { slug: string; name: string; airportCode: string | null }) {
+  const { data: fare } = useQuery({
+    queryKey: ["flight-price", airportCode],
+    queryFn: () => getFlightPrice({ data: { airport: airportCode! } }),
+    enabled: !!airportCode,
+    staleTime: 60 * 60 * 1000,
+  });
+  const at = airportCode ? ` ${airportCode}` : "";
+  const flightSub = fare?.price
+    ? `Recent fares from ~$${Math.round(fare.price)}${fare.origin ? ` (from ${fare.origin})` : ""} · estimate, check live price`
+    : `Compare fares into${at || " the nearest airport"}`;
+
+  const getThere: Item[] = [
+    { brand: "aviasales", name: "Aviasales", title: `Flights to${at || ` ${name}`}`, sub: flightSub, icon: Plane },
+    { brand: "economybookings", name: "EconomyBookings", title: `Rental cars at${at || " the airport"}`, sub: "Compares major rental brands in one search", icon: Car },
+    { brand: "qeeq", name: "QEEQ", title: "SUVs & road-trip cars", sub: "A second price check for bigger cars", icon: Car },
+    { brand: "bikesbooking", name: "BikesBooking", title: "Bike & e-bike rentals", sub: "Cruise scenic roads and town trails", icon: Bike },
+  ];
+  const doIt: Item[] = [
+    { brand: "klook", name: "Klook", title: `Tours near ${name}`, sub: "Guided tours, day trips and attraction deals", icon: Ticket },
+    { brand: "tiqets", name: "Tiqets", title: "Tickets & attractions", sub: "Instant mobile tickets for nearby sights", icon: Ticket },
+    ...(nearGoCity(slug) ? [{ brand: "gocity" as const, name: "Go City", title: "City attraction pass", sub: "One pass for the gateway city's top sights", icon: Building2 }] : []),
+  ];
+  const prep: Item[] = [
+    { brand: "ekta", name: "EKTA", title: "Travel insurance", sub: "Medical cover for international visitors", icon: Shield },
+    { brand: "airalo", name: "Airalo", title: "US eSIM data", sub: "Get online on landing, no SIM swap", icon: Smartphone },
+    { brand: "radicalstorage", name: "Radical Storage", title: "Luggage storage", sub: "Drop bags in the gateway city for the day", icon: Luggage },
+  ];
+
+  return (
+    <div className="mt-8">
+      <Group title="Getting there & getting around" items={getThere} slug={slug} />
+      <Group title="Tours & tickets" items={doIt} slug={slug} />
+      <Group title="Sort before you go" items={prep} slug={slug} />
+      <p className="mt-3 text-[11px] text-muted-foreground">
+        Partner links via Travelpayouts. Prices are estimates; the partner's site shows live prices. Minialife may earn a commission at no extra cost to you.
+      </p>
+    </div>
+  );
+}
