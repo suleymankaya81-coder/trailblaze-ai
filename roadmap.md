@@ -3,9 +3,9 @@
 - [x] Verify all 80 guides' metadata, image fallback, and desktop/phone layout; published Lovable badge was confirmed hidden.
 - [x] Restore distinct credited illustrative images to stay, rental, activity, gear and information cards on all 20 published destination pages; verify RVshare/REI labels and desktop/mobile rendering. Brand-specific listing photos are not available; these images are illustrative, not actual partner inventory.
 ## Service card photography
-- [ ] Add real credited photos to Travelpayouts cards and BikesBooking/EconomyBookings to homepage rentals.
-- [ ] Audit shared card photo matching, expand licensed Commons choices and reduce repeats across destination/guide/home cards.
-- [ ] Test image selection and verify desktop/mobile card images and partner links.
+- [x] Add real credited photos to Travelpayouts cards and BikesBooking/EconomyBookings to homepage rentals.
+- [x] Audit shared card photo matching, add 50 licensed Commons choices and reduce repeats across destination/guide/home cards; photos remain illustrative, not verified partner inventory.
+- [x] Test image selection and verify desktop/mobile card images and partner links on homepage, Grand Teton, Yosemite, Moab and a search guide.
 ## Tier 1 rollout (187 places, waves)
 - [x] Wave 1: 27 national parks published with 108 guides (sitemap 241)
 - [ ] Trip budget panel shows "not available" on destination pages (pre-existing, also on the original 20)
