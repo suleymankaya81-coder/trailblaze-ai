@@ -351,15 +351,19 @@ function HomePage() {
             </h2>
           </div>
           <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
-            {stayTypes.map((s) => (
+            {stayTypes.map((s) => {
+              const photo = servicePhoto(s.category, "homepage-stays");
+              if (!photo) return null;
+              return (
+              <figure key={s.name}>
               <a
-                key={s.name}
                 href="#destinations"
-                className="group relative aspect-[4/5] overflow-hidden rounded-2xl"
+                className="group relative block aspect-[4/5] overflow-hidden rounded-lg"
               >
                 <img
-                  src={s.image}
-                  alt={s.name}
+                  src={photo.url}
+                  alt={`${photo.subject} — illustrative ${s.name.toLowerCase()} photo`}
+                  loading="lazy"
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/75 via-transparent to-transparent" />
@@ -367,7 +371,9 @@ function HomePage() {
                   {s.name}
                 </h3>
               </a>
-            ))}
+              <figcaption className="mt-2 text-[10px] text-muted-foreground">Illustrative · <a href={photo.source} target="_blank" rel="noopener noreferrer" className="underline">{photo.credit} · {photo.license}</a></figcaption>
+              </figure>
+            );})}
           </div>
         </div>
       </section>

@@ -14,3 +14,4 @@
 - Old-design addresses (/plans, /blog, /curated-plans, /returns, …) are answered in `src/lib/seo/legacy.ts` with 410 Gone or a 301 to a clear modern equivalent, never blocked in robots.txt. Why: Google drops 410s faster and must be able to see them.
 - `/sitemap.xml` is a sitemap index whose children (`/sitemaps/*.xml`: pages, destinations, one per guide type) are built live in `sitemap.server.ts`. Why: per-file indexing counts in Search Console.
 - Travelpayouts brands render as our own link cards (tpm.lv links + sub_id per destination), never iframe widgets; Aviasales fares are cached 24h per airport in flight_price_cache. Why: fast pages and no per-visit API cost.
+- Service-card photography uses a shared credited manifest and subject-based selector across home, destination, guide and partner cards; place-specific activities retain their own photos. Why: grid position must not substitute a car for a campervan or a landscape for lodging.

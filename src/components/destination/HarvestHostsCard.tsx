@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ArrowRight, Check, Copy, Tent } from "lucide-react";
+import { servicePhoto } from "@/lib/data/servicePhotos";
 
 export const HARVEST_HOSTS_CODE = "MINIALIFE20";
 // Awin tracked link supplied by Harvest Hosts (advertiser 111454); applies the code automatically.
@@ -24,7 +25,7 @@ function hash(s: string) {
 
 export function HarvestHostsCard({ destinationName }: { destinationName: string }) {
   const [copied, setCopied] = useState(false);
-  const pic = RV_PICS[hash(destinationName) % RV_PICS.length];
+  const pic = servicePhoto("rvpark", destinationName + ":harvest-hosts") ?? RV_PICS[0];
   const copy = async () => {
     try {
       await navigator.clipboard.writeText(HARVEST_HOSTS_CODE);
@@ -37,7 +38,7 @@ export function HarvestHostsCard({ destinationName }: { destinationName: string 
   return (
     <div className="mt-6 flex flex-col overflow-hidden rounded-2xl border border-border bg-card md:flex-row">
       <div className="relative aspect-[16/9] bg-muted md:aspect-auto md:w-64 md:shrink-0">
-        <img src={pic.url} alt="Illustrative RV stay photo" loading="lazy" className="h-full w-full object-cover" />
+        <img src={pic.url} alt="Illustrative RV overnight stop — not an actual Harvest Hosts location" loading="lazy" className="h-full w-full object-cover" />
         <a
           href={pic.source}
           target="_blank"
