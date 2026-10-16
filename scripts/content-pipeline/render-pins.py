@@ -95,6 +95,8 @@ def fetch(src):
     r.raise_for_status()
     im = Image.open(io.BytesIO(r.content)).convert("RGB")
     s = max(W / im.width, H / im.height)
+    if s > 1.6:  # too small: upscaling would look blurry on Pinterest
+        raise ValueError(f"low-res source {im.width}x{im.height}")
     im = im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)
     l, t = (im.width - W) // 2, (im.height - H) // 2
     return im.crop((l, t, l + W, t + H))
@@ -218,8 +220,10 @@ def main():
             if seen.get(it["kind"], 0) < 2 and it["name"] not in {p["name"] for p in picks}:
                 picks.append(it); seen[it["kind"]] = seen.get(it["kind"], 0) + 1
         for it in picks:
+            try: data = render(it)
+            except ValueError as e: print("skip", it["key"], e); continue
             fn = f"{OUT}/{it['kind']}-{re.sub('[^a-z0-9]+','-',it['name'].lower())}.jpg"
-            open(fn, "wb").write(render(it)); print(fn)
+            open(fn, "wb").write(data); print(fn)
         return
     done = set(q(f"select key from pin_assets where template_version={VERSION}").split()) if "--force" not in sys.argv else set()
     todo = [it for it in all_items if it["key"] not in done]
