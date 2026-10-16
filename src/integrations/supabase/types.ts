@@ -329,6 +329,39 @@ export type Database = {
           },
         ]
       }
+      pin_assets: {
+        Row: {
+          created_at: string
+          feed: string
+          image_url: string
+          key: string
+          kind: string
+          release_at: string
+          template_version: number
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          feed: string
+          image_url: string
+          key: string
+          kind: string
+          release_at?: string
+          template_version?: number
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          feed?: string
+          image_url?: string
+          key?: string
+          kind?: string
+          release_at?: string
+          template_version?: number
+          updated_at?: string
+        }
+        Relationships: []
+      }
       saved_plans: {
         Row: {
           created_at: string
