@@ -29,4 +29,6 @@
 - [x] Tier 3: 39 places + 156 guides published (min 774 words); sitemap 2206
 ## Approved Pinterest rollout
 - [x] Verified official RSS allowance: up to 200/day; implemented account-wide UTC releases with tests and retry-safe scheduling.
-- [ ] Render and upload all eligible branded pins; recover failures and validate images, copy, schedule and feeds.
+- [x] Rendered/uploaded 2,139 branded 1000×1500 JPEG pins; tested 2,200 names, RSS/copy and UTC daily limits; three stored images open publicly. Five satellite-image cards excluded.
+- [ ] Remaining 56 cards blocked by unavailable/insufficient-resolution source photographs; see scripts/content-pipeline/pin-photo-blockers.json. Do not publish blurry substitutes.
+- [ ] Publish the approved RSS updates: current live feed still returns old items; preview honors releases from October 17 UTC. Publishing requires the owner's request.
