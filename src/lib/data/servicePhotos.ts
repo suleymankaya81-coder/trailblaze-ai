@@ -24,7 +24,7 @@ export function serviceCategory(text: string, category: "stay" | "rental" | "gea
     if (/kayak|canoe/.test(t)) return "kayak";
     if (/car rental|rentcars|sedan|suv|economybookings|qeeq/.test(t)) return "car";
     if (/campervan|sprinter|\bvan\b/.test(t)) return "campervan";
-    if (/motorhome|class [abc]|\brv\b|rvshare/.test(t)) return "rv";
+    if (/motorhome|class [abc]|\brv\b/.test(t)) return "rv";
     if (/tent/.test(t)) return "tent";
   }
   if (category === "stay") {
@@ -53,7 +53,7 @@ const ESTIMATES: Array<[RegExp, string]> = [
   [/glamp|yurt/, "Est. from $90/night"],
   [/cabin|vacation|tiny|home/, "Est. from $120/night"],
   [/hotel|lodge|inn|resort/, "Est. from $110/night"],
-  [/motorhome|\brv\b|rvshare|class [abc]|campervan|\bvan\b/, "Est. from $150/day"],
+  [/motorhome|\brv\b|class [abc]|campervan|\bvan\b/, "Est. from $150/day"],
   [/car|suv|sedan/, "Est. from $45/day"],
   [/bike|bicycle|kayak|canoe/, "Est. from $35/day"],
   [/camp|tent|site|harvest|roverpass/, "Est. from $35/night"],

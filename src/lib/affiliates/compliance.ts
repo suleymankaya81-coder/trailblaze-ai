@@ -43,7 +43,7 @@ export function hasAfsrcParam(url: string): boolean {
 // Human-readable partner names used in visible outbound-link labels, so the
 // Reader always knows where a click takes them.
 const PARTNER_LABELS: Record<string, string> = {
-  rvshare: "RVshare",
+  motorhome_republic: "Motorhome Republic",
   hipcamp: "Hipcamp",
   glamping_hub: "Glamping Hub",
   arrive_outdoors: "Arrive Outdoors",

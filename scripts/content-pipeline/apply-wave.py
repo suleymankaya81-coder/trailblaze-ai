@@ -1,7 +1,7 @@
 """Tier rollout step 2: write /tmp/wave/<slug>.json (from prepare-wave.py) into
 the database and the app's bundled data. Destinations stay unpublished here.
   - destinations row: photos + credits, location, airport, drive, trip summary
-  - offers: the same partner set every live destination has (Awin + RVshare/REI direct)
+  - offers: the same partner set every live destination has (Awin + Motorhome Republic/REI direct)
   - src/data/routes.json: precomputed airport -> destination line
   - src/data/destinationCardPhotos.wave.json + public/images/destination-cards/*: activity photos
 Re-running is safe: offers for the slug are replaced, everything else is overwritten.
@@ -69,12 +69,12 @@ def offers(d, dest_id):
         ("rv_rental", "rentcars", "awin", 18808, "Car rental", f"Car rentals at {code}",
          "https://www.rentcars.com/en/", None, None, None,
          "Compare rental companies at the nearest airport in one search.", None, None),
-        ("rv_rental", "rvshare", None, None, "RV", "Class C Motorhome — Sleeps 4",
-         f"https://rvshare.com/rv-rental/{state}", "$245/day", 245, "day",
+        ("rv_rental", "motorhome_republic", None, None, "RV", "Class C Motorhome — Sleeps 4",
+         f"https://www.motorhomerepublic.com/usa/", "$245/day", 245, "day",
          "Wake up wherever the view is best — no check-in desk, no curfew.",
          "Full kitchen, queen bed, fits scenic byways without stress.", None),
-        ("rv_rental", "rvshare", None, None, "Campervan", "Sprinter Adventure Van",
-         f"https://rvshare.com/rv-rental/{state}", "$189/day", 189, "day",
+        ("rv_rental", "motorhome_republic", None, None, "Campervan", "Sprinter Adventure Van",
+         f"https://www.motorhomerepublic.com/usa/", "$189/day", 189, "day",
          "Small enough to park at the trailhead, comfy enough to sleep in.",
          "Off-grid solar, fold-out bed, parks almost anywhere.", None),
     ]

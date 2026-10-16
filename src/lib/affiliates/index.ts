@@ -1,5 +1,4 @@
 import type { AffiliateAdapter } from "./types";
-import { rvshareAdapter } from "./rvshare";
 import { hipcampAdapter } from "./hipcamp";
 import { glampingHubAdapter } from "./glamping_hub";
 import { arriveOutdoorsAdapter } from "./arrive_outdoors";
@@ -9,7 +8,6 @@ import { viatorAdapter } from "./viator";
 export type { AffiliateAdapter, AffiliateContext, AffiliateOffer } from "./types";
 
 const adapters: Record<string, AffiliateAdapter> = {
-  rvshare: rvshareAdapter,
   hipcamp: hipcampAdapter,
   glamping_hub: glampingHubAdapter,
   arrive_outdoors: arriveOutdoorsAdapter,

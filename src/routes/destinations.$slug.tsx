@@ -760,7 +760,7 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
    4 — RENT BEFORE YOU GO
 ========================================================= */
 function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
-  const rentals = [...dest.rentals.filter((r) => r.partner === "rvshare"), ...dest.rentals.filter((r) => r.partner !== "rvshare")].slice(0, 5);
+  const rentals = [...dest.rentals.filter((r) => r.partner === "motorhome_republic"), ...dest.rentals.filter((r) => r.partner !== "motorhome_republic")].slice(0, 5);
 
   return (
     <section id="rentals" className="scroll-mt-24">
