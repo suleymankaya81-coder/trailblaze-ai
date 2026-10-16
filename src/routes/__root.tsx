@@ -90,6 +90,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "Camping, glamping, RV travel, cabins and national parks — your complete outdoor trip in one place.",
       },
+      { name: "p:domain_verify", content: "aa60b4c89a7a633826f7c87a6fe468b9" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
