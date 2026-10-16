@@ -6,10 +6,11 @@ Usage:
   python3 render-pins.py --all [--force]   # render + upload every missing pin
 Fonts: Fraunces + Inter TTFs in /tmp/pins/fonts (Google Fonts, OFL).
 """
-import datetime, io, json, os, re, subprocess, sys
+import datetime, hashlib, io, json, os, re, subprocess, sys, threading, time
 from concurrent.futures import ThreadPoolExecutor
 import requests
 from PIL import Image, ImageDraw, ImageFont, ImageStat
+from pin_schedule import release_schedule
 
 VERSION = 1
 W, H, PAD = 1000, 1500, 64
@@ -19,7 +20,9 @@ DB = os.environ["SUPABASE_DB_URL"]
 URL = os.environ["SUPABASE_URL"]; SK = os.environ["SUPABASE_SERVICE_ROLE_KEY"]
 AUTH = {"apikey": SK, "Authorization": f"Bearer {SK}"}
 FOREST, SAGE, OFF, SAND = (29, 59, 43), (185, 207, 189), (251, 250, 246), (232, 224, 210)
-PER_DAY = 8  # new pins per board per day (drip, avoids spam flags)
+CACHE = "/tmp/pins/photo-cache"
+PHOTO_LOCKS = {}
+PHOTO_LOCK_GUARD = threading.Lock()
 
 KICKER = {"destination": "ROAD TRIP GUIDE", "best_time": "BEST TIME TO VISIT", "things_to_do": "THINGS TO DO",
           "glamping": "GLAMPING & RV STAYS", "trip_planner": "ITINERARY"}
@@ -91,15 +94,43 @@ def parse_credit(raw, license_=None):
 
 
 def fetch(src):
-    r = requests.get(src, headers={"User-Agent": "MiniaLifePinRenderer/1.0 (https://minialife.com; hello@minialife.com)"}, timeout=60)
-    r.raise_for_status()
-    im = Image.open(io.BytesIO(r.content)).convert("RGB")
-    s = max(W / im.width, H / im.height)
-    if s > 1.6:  # too small: upscaling would look blurry on Pinterest
-        raise ValueError(f"low-res source {im.width}x{im.height}")
-    im = im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)
-    l, t = (im.width - W) // 2, (im.height - H) // 2
-    return im.crop((l, t, l + W, t + H))
+    os.makedirs(CACHE, exist_ok=True)
+    key = hashlib.sha256(src.encode()).hexdigest()
+    path = f"{CACHE}/{key}.jpg"
+    with PHOTO_LOCK_GUARD:
+        lock = PHOTO_LOCKS.setdefault(key, threading.Lock())
+    with lock:
+        if not os.path.exists(path):
+            for attempt in range(4):
+                r = requests.get(src, headers={"User-Agent": "MiniaLifePinRenderer/1.0 (https://minialife.com; hello@minialife.com)"}, timeout=60)
+                if r.status_code not in (429, 502, 503, 504) or attempt == 3:
+                    break
+                time.sleep(2 ** (attempt + 1))
+            r.raise_for_status()
+            im = Image.open(io.BytesIO(r.content)).convert("RGB")
+            s = max(W / im.width, H / im.height)
+            # A thumbnail may conceal a sufficiently detailed original.
+            if s > 1.6 and "/commons/thumb/" in src:
+                original = src.replace("thumb.wikimedia.org", "upload.wikimedia.org").replace("/commons/thumb/", "/commons/").rsplit("/", 1)[0]
+                full = requests.get(original, headers={"User-Agent": "MiniaLifePinRenderer/1.0 (https://minialife.com; hello@minialife.com)"}, timeout=60)
+                if full.ok:
+                    im = Image.open(io.BytesIO(full.content)).convert("RGB")
+                    s = max(W / im.width, H / im.height)
+            if s > 1.6:
+                # Preserve the complete landscape rather than heavily enlarging
+                # a narrow crop. Text remains on the same branded lower field.
+                if W / im.width > 1.6:
+                    raise ValueError("source too small even for landscape layout")
+                im = im.resize((W, round(im.height * W / im.width)), Image.LANCZOS)
+                card = Image.new("RGB", (W, H), FOREST)
+                card.paste(im, (0, 0))
+            else:
+                im = im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)
+                l, t = (im.width - W) // 2, (im.height - H) // 2
+                card = im.crop((l, t, l + W, t + H))
+            card.save(path, "JPEG", quality=95)
+        with Image.open(path) as im:
+            return im.convert("RGB")
 
 
 def render(item):
@@ -183,7 +214,7 @@ def items():
         k = r["kind"]
         use_cover = bool(r["cover"]) and k != "destination"
         image = r["cover"] if use_cover else r["hero_image"]
-        if not image or not image.startswith("https://"):
+        if not image or not image.startswith("https://") or "Landsat_mosaic" in image:
             continue
         credit = parse_credit(r["cc"], r["cl"] or "") if use_cover else parse_credit(r["photo_credit"])
         season = r["best_season"]; dur = r["dur"]
@@ -228,18 +259,19 @@ def main():
     done = set(q(f"select key from pin_assets where template_version={VERSION}").split()) if "--force" not in sys.argv else set()
     todo = [it for it in all_items if it["key"] not in done]
     now = datetime.datetime.now(datetime.timezone.utc)
-    # Drip schedule per board: best-scored places first, PER_DAY per day.
-    by_feed = {}
-    for it in sorted(all_items, key=lambda x: (-x["score"], x["key"])):
-        by_feed.setdefault(it["feed"], []).append(it["key"])
-    release = {k: now + datetime.timedelta(days=i // PER_DAY) for keys in by_feed.values() for i, k in enumerate(keys)}
+    # Re-runs preserve assigned dates and account for existing daily capacity.
+    assigned = json.loads(q("select coalesce(json_object_agg(key,release_at),'{}') from pin_assets"))
+    existing = {k: datetime.datetime.fromisoformat(v.replace("Z", "+00:00")) for k, v in assigned.items()}
+    start_arg = next((x.split("=", 1)[1] for x in sys.argv if x.startswith("--release-start=")), None)
+    start = datetime.datetime.fromisoformat(start_arg.replace("Z", "+00:00")) if start_arg else now
+    release = release_schedule(all_items, start, existing)
 
     def work(it):
         try:
             url = upload(it)
             return it, url, None
         except Exception as e:  # noqa
-            return it, None, str(e)
+            return it, None, type(e).__name__
 
     batch, fails = [], 0
     with ThreadPoolExecutor(8) as ex:
