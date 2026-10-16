@@ -28,5 +28,5 @@
 - [x] Tier 2 SEO: guide titles ≤60 / descriptions ≤160 chars (auto-trimmed on insert); destination descriptions include season + guide topics; sitemap auto-lists published guides
 - [x] Tier 3: 39 places + 156 guides published (min 774 words); sitemap 2206
 ## Approved Pinterest rollout
-- [ ] Verify Pinterest's daily RSS allowance and replace the eight-per-board release schedule with an account-wide maximum.
+- [x] Verified official RSS allowance: up to 200/day; implemented account-wide UTC releases with tests and retry-safe scheduling.
 - [ ] Render and upload all eligible branded pins; recover failures and validate images, copy, schedule and feeds.
