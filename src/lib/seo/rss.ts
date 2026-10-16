@@ -29,7 +29,7 @@ export function withUtm(link: string): string {
 
 export function selectItems(items: FeedItem[], feed: Feed, limit = 200, now = new Date().toISOString()): FeedItem[] {
   return items
-    .filter((i) => i.published && i.indexable && !!i.image && /^https:\/\//.test(i.image!))
+    .filter((i) => i.published && i.indexable && typeof i.image === "string" && /^https:\/\//.test(i.image))
     .filter((i) => !i.releaseAt || i.releaseAt <= now)
     .filter((i) => feed === "all" || i.feed === feed)
     .sort((a, b) => (b.releaseAt ?? b.date).localeCompare(a.releaseAt ?? a.date))
@@ -50,7 +50,8 @@ export function renderRss(items: FeedItem[], feed: Feed): string {
     `<atom:link href="${self}" rel="self" type="application/rss+xml"/>`,
     "<description>Road trip guides, scenic routes and outdoor travel plans.</description>",
     ...items.map((i) => {
-      const img = i.image!;
+      const img = i.image;
+      if (!img) return "";
       return [
         "<item>",
         `<title>${esc(i.title.slice(0, 100))}</title>`,
