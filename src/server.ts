@@ -51,6 +51,12 @@ export default {
         const res = await buildChildSitemap(child[1]);
         if (res) return res;
       }
+      const rss = url.pathname === "/rss.xml" ? "all" : url.pathname.match(/^\/rss\/([a-z-]+)\.xml$/)?.[1];
+      if (rss) {
+        const { buildRss } = await import("./lib/seo/rss.server");
+        const res = await buildRss(rss);
+        if (res) return res;
+      }
       const legacy = legacyResponse(url);
       if (legacy) return legacy;
 
