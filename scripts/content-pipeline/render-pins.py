@@ -111,7 +111,7 @@ def fetch(src):
             s = max(W / im.width, H / im.height)
             # A thumbnail may conceal a sufficiently detailed original.
             if s > 1.6 and "/commons/thumb/" in src:
-                original = src.replace("/commons/thumb/", "/commons/").rsplit("/", 1)[0]
+                original = src.replace("thumb.wikimedia.org", "upload.wikimedia.org").replace("/commons/thumb/", "/commons/").rsplit("/", 1)[0]
                 full = requests.get(original, headers={"User-Agent": "MiniaLifePinRenderer/1.0 (https://minialife.com; hello@minialife.com)"}, timeout=60)
                 if full.ok:
                     im = Image.open(io.BytesIO(full.content)).convert("RGB")
@@ -214,7 +214,7 @@ def items():
         k = r["kind"]
         use_cover = bool(r["cover"]) and k != "destination"
         image = r["cover"] if use_cover else r["hero_image"]
-        if not image or not image.startswith("https://"):
+        if not image or not image.startswith("https://") or "Landsat_mosaic" in image:
             continue
         credit = parse_credit(r["cc"], r["cl"] or "") if use_cover else parse_credit(r["photo_credit"])
         season = r["best_season"]; dur = r["dur"]
