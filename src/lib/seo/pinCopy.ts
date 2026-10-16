@@ -116,7 +116,7 @@ export function pinDescription(p: PinInput): string {
   // Too long: drop facts from the end, then nothing else (CTA always stays).
   while (fit(body).length > DESC_MAX && body.length > 2) body.splice(body.length - 2, 1);
   // Too short: add a second real sentence, then a factual filler line.
-  for (const extra of [source[1], FILLER[p.kind]]) {
+  for (const extra of [source[1], FILLER[p.kind], "Every guide is free and written for road trippers.", "Save this pin for your next outdoor trip."]) {
     if (fit(body).length >= DESC_MIN || !extra) continue;
     const next = [...body.slice(0, -1), extra, body[body.length - 1]];
     if (fit(next).length <= DESC_MAX) body = next;
