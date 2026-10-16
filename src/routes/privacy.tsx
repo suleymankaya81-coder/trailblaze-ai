@@ -93,7 +93,7 @@ function PrivacyPage() {
       <section>
         <h2>Third-party links and partners</h2>
         <p>
-          The Site links to third-party booking and retail partners (such as RVshare, Hipcamp,
+          The Site links to third-party booking and retail partners (such as Motorhome Republic, Hipcamp,
           Glamping Hub, Arrive Outdoors, REI, and Viator). Some of these links are managed through
           affiliate networks, including Awin, which may receive the click and referral
           information described above in order to attribute a referral and pay a commission. Once you leave Minialife, that partner's

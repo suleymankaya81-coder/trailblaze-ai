@@ -65,7 +65,7 @@ function TermsPage() {
       <section>
         <h2>Third-party bookings and purchases</h2>
         <p>
-          Links on the Site take you to third-party partners (such as RVshare, Hipcamp, Glamping
+          Links on the Site take you to third-party partners (such as Motorhome Republic, Hipcamp, Glamping
           Hub, Arrive Outdoors, REI, and Viator) to complete a booking or purchase. Any transaction
           you enter into with a partner is solely between you and that partner, governed by their
           own terms, pricing, cancellation policies, and privacy practices. Minialife is not a

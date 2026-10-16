@@ -61,8 +61,8 @@ export const trackAndRedirect = createServerFn({ method: "POST" })
       };
     }
 
-    // RVshare and REI are plain, non-affiliate links until a real partnership exists.
-    if (offer.partner === "rvshare" || offer.partner === "rei") {
+    // Motorhome Republic and REI are plain, non-affiliate links until a real partnership exists.
+    if (offer.partner === "motorhome_republic" || offer.partner === "rei") {
       return { redirectUrl: offer.external_url };
     }
 

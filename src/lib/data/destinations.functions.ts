@@ -85,7 +85,7 @@ function toOfferView(row: Tables<"offers">): OfferView {
   };
 }
 
-// Awin and informational offers remain the default. RVshare rentals and REI
+// Awin and informational offers remain the default. Motorhome Republic rentals and REI
 // gear are explicit non-affiliate exceptions requested for destination pages.
 const SHOWN_NETWORKS = ["awin", "info"] as const;
 
@@ -139,7 +139,7 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
         .filter(
           (o) =>
             SHOWN_NETWORKS.some((network) => network === o.network) ||
-            (o.partner === "rvshare" && o.category === "rv_rental") ||
+            (o.partner === "motorhome_republic" && o.category === "rv_rental") ||
             (o.partner === "rei" && o.category === "gear_purchase"),
         )
         .map(toOfferView);

@@ -41,7 +41,7 @@ function AffiliateDisclosurePage() {
           the network on the partner's behalf.
         </p>
         <p>
-          Some buttons — for example RVshare rentals and REI gear — are ordinary direct links to
+          Some buttons — for example Motorhome Republic rentals and REI gear — are ordinary direct links to
           brands we are not paid by. They are labelled so you can tell the difference, and we earn
           nothing from them.
         </p>
