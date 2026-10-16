@@ -1,12 +1,19 @@
 import { useState } from "react";
 import { ArrowRight, Check, Copy, Tent } from "lucide-react";
 import { servicePhoto } from "@/lib/data/servicePhotos";
+import { buildAwinLink } from "@/lib/affiliates/awin";
 
 export const HARVEST_HOSTS_CODE = "MINIALIFE20";
 // Awin tracked link supplied by Harvest Hosts (advertiser 111454); applies the code automatically.
-export const HARVEST_HOSTS_URL =
-  "https://www.awin1.com/cread.php?awinmid=111454&awinaffid=3100034&ued=" +
-  encodeURIComponent(`https://www.harvesthosts.com/?utm_content=${HARVEST_HOSTS_CODE}&show_code=true`);
+export const HARVEST_HOSTS_URL = buildAwinLink(
+  {
+    id: "harvest-hosts-membership",
+    partner: "harvest_hosts",
+    networkMid: 111454,
+    externalUrl: `https://www.harvesthosts.com/?utm_content=${HARVEST_HOSTS_CODE}&show_code=true`,
+  },
+  "harvest-hosts-membership",
+);
 
 type Pic = { url: string; source: string; credit: string; license: string };
 

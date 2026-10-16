@@ -1,7 +1,7 @@
 import type { AwinOffer } from "./types";
 
-// Awin publisher account (LaunchLoopio). Public — appears in every Awin link.
-export const AWIN_PUBLISHER_ID = "3100034";
+// MiniaLife publisher account. Public — appears in every Awin link.
+export const AWIN_PUBLISHER_ID = "3115962";
 
 // Awin tracked deep link. Until a programme approves us, Awin still forwards
 // the click to `ued`, so the button keeps working (just without commission).
