@@ -33,7 +33,8 @@ function AffiliateDisclosurePage() {
       <section>
         <h2>How this works</h2>
         <p>
-          Minialife currently earns commissions through Harvest Hosts (via Awin), Vrbo and Expedia
+          Minialife currently earns commissions through Harvest Hosts and RoverPass
+          (via Awin), Vrbo and Expedia
           (via the Expedia Group Travel Creator Program), and travel brands available through
           Travelpayouts: Aviasales, EconomyBookings, QEEQ, BikesBooking, Klook, Tiqets, Go City,
           EKTA, Airalo and Radical Storage. When you click one of these partner links and go on to book or
@@ -64,6 +65,17 @@ function AffiliateDisclosurePage() {
           Prices and availability shown on Minialife are estimates gathered at the time of
           research. The partner's own site is always the source of truth for current pricing,
           availability, and cancellation terms.
+        </p>
+        <p>
+          For a plain-English overview of what paid-for advertising on websites means, see{" "}
+          <a
+            href="https://paidforadvertising.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            paidforadvertising.com
+          </a>
+          .
         </p>
       </section>
 
