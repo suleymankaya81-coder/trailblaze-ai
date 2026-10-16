@@ -107,7 +107,7 @@ export function pinDescription(p: PinInput): string {
   const source = p.kind === "destination" ? [...sentences(p.tagline), ...sentences(p.seoDescription)] : [...sentences(p.seoDescription), ...sentences(p.tagline)];
   const facts: string[] = [];
   if (p.bestSeason && p.kind !== "glamping") facts.push(`Best time: ${clean(p.bestSeason)}.`);
-  if (p.duration && (p.kind === "destination" || p.kind === "trip_planner")) facts.push(`Plan ${clean(p.duration)}.`);
+  if (p.duration && p.kind === "destination") facts.push(`Plan ${clean(p.duration)}.`);
   if (p.airport && p.kind !== "best_time") facts.push(`Nearest airport: ${p.airport}.`);
   const tags = pinTags(p).join(" ");
   const fit = (parts: string[]) => clean(parts.join(" ")) + " " + tags;
@@ -118,7 +118,7 @@ export function pinDescription(p: PinInput): string {
   // Too short: add a second real sentence, then a factual filler line.
   for (const extra of [source[1], FILLER[p.kind], "Every guide is free and written for road trippers.", "Save this pin for your next outdoor trip."]) {
     if (fit(body).length >= DESC_MIN || !extra) continue;
-    const next = [...body.slice(0, -1), extra, body[body.length - 1]];
+    const next = [body[0], extra, ...body.slice(1)];
     if (fit(next).length <= DESC_MAX) body = next;
   }
   return fit(body);
