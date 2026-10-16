@@ -1,4 +1,5 @@
-// Server-only: Pinterest RSS feeds built live from published rows.
+// Server-only: Pinterest RSS feeds built live from published rows + branded pin cards.
+import { type PinKind, isBroken, pinDescription, pinTitle } from "./pinCopy";
 import { FEEDS, type Feed, type FeedItem, feedForPath, renderRss, selectItems } from "./rss";
 
 const BASE = "https://minialife.com";
@@ -20,46 +21,38 @@ async function rest<T>(query: string): Promise<T[]> {
   return out;
 }
 
-type D = { id: string; slug: string; name: string; tagline: string | null; best_season: string | null; recommended_duration: string | null; hero_image: string | null; photo_credit: string | null; updated_at: string };
-type L = { path: string; seo_title: string | null; seo_description: string | null; cover_image: string | null; cover_photo_credit: string | null; destination_id: string; published_at: string | null; updated_at: string; indexable: boolean };
+type D = { id: string; slug: string; name: string; tagline: string | null; best_season: string | null; recommended_duration: string | null; nearest_airport_code: string | null; updated_at: string };
+type L = { path: string; page_type: string; seo_title: string | null; seo_description: string | null; destination_id: string; published_at: string | null; updated_at: string; indexable: boolean };
+type P = { key: string; image_url: string; release_at: string };
 
 export async function buildRss(feed: string): Promise<Response | null> {
   if (!(FEEDS as readonly string[]).includes(feed)) return null;
   let items: FeedItem[] = [];
   try {
-    const [dests, pages] = await Promise.all([
-      rest<D>("destinations?select=id,slug,name,tagline,best_season,recommended_duration,hero_image,photo_credit,updated_at&status=eq.published&order=slug.asc"),
-      rest<L>("seo_landing_pages?select=path,seo_title,seo_description,cover_image,cover_photo_credit,destination_id,published_at,updated_at,indexable&status=eq.published&order=path.asc"),
+    const [dests, pages, pins] = await Promise.all([
+      rest<D>("destinations?select=id,slug,name,tagline,best_season,recommended_duration,nearest_airport_code,updated_at&status=eq.published&order=slug.asc"),
+      rest<L>("seo_landing_pages?select=path,page_type,seo_title,seo_description,destination_id,published_at,updated_at,indexable&status=eq.published&order=path.asc"),
+      rest<P>("pin_assets?select=key,image_url,release_at&order=key.asc"),
     ]);
+    const pinBy = new Map(pins.map((p) => [p.key, p]));
     const byId = new Map(dests.map((d) => [d.id, d]));
-    const credit = (c: string | null) => (c ? ` Photo: ${c.replace(/<[^>]+>/g, "")}.` : "");
-    items = dests.map((d) => ({
-      title: `${d.name} Road Trip Guide`,
-      description: [d.tagline, d.best_season && `Best time: ${d.best_season}.`, d.recommended_duration && `Plan ${d.recommended_duration}.`, "Free trip plan with route map, stays and gear on MiniaLife."].filter(Boolean).join(" ") + credit(d.photo_credit),
-      link: `${BASE}/destinations/${d.slug}`,
-      image: d.hero_image,
-      date: d.updated_at,
-      feed: "parks",
-      indexable: true,
-      published: true,
-    }));
+    const push = (kind: PinKind, d: D, key: string, link: string, extra: Partial<L>, feedName: FeedItem["feed"], date: string, indexable: boolean) => {
+      const pin = pinBy.get(key);
+      const input = { kind, name: d.name, tagline: d.tagline, seoTitle: extra.seo_title, seoDescription: extra.seo_description, bestSeason: d.best_season, duration: d.recommended_duration, airport: d.nearest_airport_code };
+      const title = pinTitle(input);
+      const description = pinDescription(input);
+      if (isBroken(title) || isBroken(description)) return;
+      items.push({ title, description, link, image: pin?.image_url ?? null, releaseAt: pin?.release_at, date, feed: feedName, indexable, published: true });
+    };
+    for (const d of dests) push("destination", d, `d:${d.slug}`, `${BASE}/destinations/${d.slug}`, {}, "parks", d.updated_at, true);
     for (const p of pages) {
       const d = byId.get(p.destination_id);
-      if (!d) continue; // destination not published
-      const useCover = !!p.cover_image;
-      items.push({
-        title: p.seo_title ?? d.name,
-        description: (p.seo_description ?? d.tagline ?? "") + credit(useCover ? p.cover_photo_credit : d.photo_credit),
-        link: `${BASE}${p.path}`,
-        image: useCover ? p.cover_image : d.hero_image,
-        date: p.published_at ?? p.updated_at,
-        feed: feedForPath(p.path),
-        indexable: p.indexable,
-        published: true,
-      });
+      if (!d) continue;
+      push(p.page_type as PinKind, d, `p:${p.path}`, `${BASE}${p.path}`, p, feedForPath(p.path), p.published_at ?? p.updated_at, p.indexable);
     }
   } catch (err) {
     console.error("[rss]", err);
+    items = [];
   }
   return new Response(renderRss(selectItems(items, feed as Feed), feed as Feed), {
     headers: { "content-type": "application/rss+xml; charset=utf-8", "cache-control": "public, max-age=3600" },
