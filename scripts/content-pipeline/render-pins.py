@@ -91,10 +91,13 @@ def parse_credit(raw, license_=None):
 
 
 def fetch(src):
-    clean = re.sub(r"^https?://", "", src)
-    r = requests.get("https://images.weserv.nl/", params={"url": clean, "w": W, "h": H, "fit": "cover", "output": "jpg", "q": 92}, timeout=60)
+    r = requests.get(src, headers={"User-Agent": "MiniaLifePinRenderer/1.0 (https://minialife.com; hello@minialife.com)"}, timeout=60)
     r.raise_for_status()
-    return Image.open(io.BytesIO(r.content)).convert("RGB").resize((W, H))
+    im = Image.open(io.BytesIO(r.content)).convert("RGB")
+    s = max(W / im.width, H / im.height)
+    im = im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)
+    l, t = (im.width - W) // 2, (im.height - H) // 2
+    return im.crop((l, t, l + W, t + H))
 
 
 def render(item):
