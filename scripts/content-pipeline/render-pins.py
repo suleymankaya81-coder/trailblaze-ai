@@ -109,11 +109,26 @@ def fetch(src):
             r.raise_for_status()
             im = Image.open(io.BytesIO(r.content)).convert("RGB")
             s = max(W / im.width, H / im.height)
+            # A thumbnail may conceal a sufficiently detailed original.
+            if s > 1.6 and "/commons/thumb/" in src:
+                original = src.replace("/commons/thumb/", "/commons/").rsplit("/", 1)[0]
+                full = requests.get(original, headers={"User-Agent": "MiniaLifePinRenderer/1.0 (https://minialife.com; hello@minialife.com)"}, timeout=60)
+                if full.ok:
+                    im = Image.open(io.BytesIO(full.content)).convert("RGB")
+                    s = max(W / im.width, H / im.height)
             if s > 1.6:
-                raise ValueError(f"low-res source {im.width}x{im.height}")
-            im = im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)
-            l, t = (im.width - W) // 2, (im.height - H) // 2
-            im.crop((l, t, l + W, t + H)).save(path, "JPEG", quality=95)
+                # Preserve the complete landscape rather than heavily enlarging
+                # a narrow crop. Text remains on the same branded lower field.
+                if W / im.width > 1.6:
+                    raise ValueError("source too small even for landscape layout")
+                im = im.resize((W, round(im.height * W / im.width)), Image.LANCZOS)
+                card = Image.new("RGB", (W, H), FOREST)
+                card.paste(im, (0, 0))
+            else:
+                im = im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)
+                l, t = (im.width - W) // 2, (im.height - H) // 2
+                card = im.crop((l, t, l + W, t + H))
+            card.save(path, "JPEG", quality=95)
         with Image.open(path) as im:
             return im.convert("RGB")
 
