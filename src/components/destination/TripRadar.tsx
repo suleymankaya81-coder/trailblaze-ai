@@ -3,6 +3,7 @@ import { ArrowUpRight, Plane, ShieldAlert } from "lucide-react";
 import type { DestinationView } from "@/lib/data/destinations.functions";
 import { getFlightPrice } from "@/lib/affiliates/flights.functions";
 import { tpLink } from "@/lib/affiliates/travelpayouts";
+import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 
 const PERMIT_COPY = {
   high: { label: "High demand", tone: "border-copper/40 bg-copper/5", badge: "bg-copper/15 text-copper" },
@@ -41,7 +42,10 @@ export function TripRadar({ dest }: { dest: DestinationView }) {
   if (!dest.permitLevel && !dest.airportCode) return null;
   const permit = dest.permitLevel ? PERMIT_COPY[dest.permitLevel] : null;
   const flightsHref = dest.airportCode ? tpLink("aviasales", dest.slug) : null;
+  const reviewedReservation = getDestinationAnswers(dest.slug)?.reservation;
+  const sourceUrl = reviewedReservation?.sourceUrl ?? dest.permitSourceUrl;
   const note =
+    reviewedReservation?.note ??
     dest.permitNote ??
     (dest.permitLevel ? permitFallback(dest.name, dest.permitLevel, dest.bestSeason) : "");
 
@@ -58,14 +62,14 @@ export function TripRadar({ dest }: { dest: DestinationView }) {
                 Reservations · {permit.label}
               </p>
               <p className="font-display text-xl font-semibold leading-tight text-foreground">
-                {dest.permitHeadline ?? `Planning ${dest.name}`}
+                {reviewedReservation?.headline ?? dest.permitHeadline ?? `Planning ${dest.name}`}
               </p>
             </div>
           </div>
           <p className="mt-4 text-[15px] leading-relaxed text-foreground/80">{note}</p>
-          {dest.permitSourceUrl && (
+          {sourceUrl && (
             <a
-              href={dest.permitSourceUrl}
+              href={sourceUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-semibold text-primary hover:underline"
