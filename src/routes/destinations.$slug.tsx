@@ -40,6 +40,7 @@ import { ClientOnly } from "@tanstack/react-router";
 import { JumpBar, TripRadar, formatDrive } from "@/components/destination/TripRadar";
 import routes from "@/data/routes.json";
 import { TravelFlow, LocalIntel } from "@/components/destination/TravelFlow";
+import { DestinationAnswers } from "@/components/destination/DestinationAnswers";
 
 const RoadTripMap = lazy(() => import("@/components/destination/RoadTripMap"));
 const ROUTES = routes as unknown as Record<string, [number, number][]>;
@@ -99,13 +100,13 @@ export const Route = createFileRoute("/destinations/$slug")({
         { property: "og:image", content: d.heroImage },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:image", content: d.heroImage },
-        { "script:ld+json": jsonLd },
         // Thin pages (no tagline or hero yet) stay out of search indexes.
         ...(d.tagline && d.heroImage ? [] : [{ name: "robots", content: "noindex, follow" }]),
         { property: "og:url", content: pageUrl },
         { property: "og:type", content: "article" },
       ],
       links: [{ rel: "canonical", href: pageUrl }],
+      scripts: [{ type: "application/ld+json", children: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }],
     };
   },
   component: DestinationPage,
@@ -172,6 +173,7 @@ function DestinationPage() {
 
       <main className="container-page space-y-14 py-10 md:space-y-16">
         <TripRadar dest={dest} />
+        <DestinationAnswers slug={dest.slug} />
 
         {/* Stays + budget rail (compact bar on mobile) */}
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
