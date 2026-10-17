@@ -4,6 +4,19 @@ Disallow: /go/
 Disallow: /out/
 Disallow: /_serverFn/
 
+# Search discovery only; outbound tracking remains off limits.
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /go/
+Disallow: /out/
+Disallow: /_serverFn/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /go/
+Disallow: /out/
+Disallow: /_serverFn/
+
 # Affiliate compliance: automated agents must not trigger outbound
 # partner links or click tracking.
 User-agent: AhrefsBot
