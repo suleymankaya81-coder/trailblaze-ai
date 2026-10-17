@@ -2,6 +2,7 @@
 // OpenFreeMap/OpenStreetMap tiles — no API key, no per-request cost.
 import { useEffect, useRef } from "react";
 import * as maplibregl from "maplibre-gl";
+import mapWorkerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?url";
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { TravelMarker } from "@/lib/data/travelPlan";
 
@@ -44,6 +45,8 @@ export default function RoadTripMap({
     const startColor = tokenColor("--sage-deep");
     const endColor = tokenColor("--copper");
     const routeColor = tokenColor("--forest");
+    // Vite's dependency bundle cannot resolve the library's relative worker URL.
+    maplibregl.setWorkerUrl(mapWorkerUrl);
     const map = new maplibregl.Map({
       container: ref.current,
       style: "https://tiles.openfreemap.org/styles/liberty",

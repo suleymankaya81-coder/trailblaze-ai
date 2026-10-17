@@ -3,3 +3,4 @@
 - Bulk guide generation (generate-landing-pages.py) uses google/gemini-3-flash-preview via streamed chat completions. Why: user chose it for lower cost with the same 600+ word checks.
 - Search titles are trimmed to ~60 chars and meta descriptions to 160 by insert-landing-pages.py; destination meta descriptions are composed from tagline, best season and guide topics. Why: Google truncates longer snippets.
 - Travel content is generated in bounded sequential Gemini batches with cached outputs, database lease and pause status; validation rejects incomplete days/local notes and changing rules link to official sources. Why: reruns preserve work and credit/policy blocks stop the whole pipeline.
+- Marker generation applies the dated travel review ledger through travel_review_rules.py, withholding wrong identities and unverified parent-feature points. Why: title matching and a regional bounding box cannot establish a sightseeing location.

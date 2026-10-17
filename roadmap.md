@@ -36,3 +36,8 @@
 - [x] Prepare reservation notes and stored daily itineraries/local tips for all 446 destinations, with source links, database lease and credit/policy pause guard; 1,350 daily plans and 2,230 tips.
 - [x] Replace generic day flow/field tips with stored local content; add 633 source-coordinate sightseeing markers across 324 destinations without changing airport-drive geometry. No guessed markers for unmatched places.
 - [x] Validate all stored structures and sample Yellowstone, Acadia, Adirondacks, Zion and Florida Keys pages; phone layout, downloaded trip and marker popup verified. Future releases require local travel content. Full independent factual review of every generated sentence is not claimed.
+## Independent destination content review
+- [x] Visit all 440 published destinations: all render 3–4 day plans with no page errors; recheck every map using successful terrain-tile responses after fixing worker loading. Catalog-only pages cannot be visited publicly.
+- [x] Read all 446 cached travel texts; apply 148 distinct field corrections across 96 destinations with a dated source ledger. Read back 146 public field changes successfully; two catalog-only Tallgrass Prairie fields checked through the database.
+- [x] Screen all 631 public marker records; exclude 14 wrong-identity and 33 unverified-location candidates and correct two official coordinates. Remaining 586 stored markers are not all independently coordinate-verified.
+- [ ] Complete claim-by-claim independent verification for every remaining sentence and every retained marker. Evidence gap: external source verification currently covers targeted findings, not every assertion; prose reading, page visits and working maps do not establish factual accuracy.
