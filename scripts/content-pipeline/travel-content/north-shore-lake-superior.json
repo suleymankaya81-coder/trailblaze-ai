@@ -1,0 +1,95 @@
+{
+  "slug": "north-shore-lake-superior",
+  "headline": "Minnesota State Park Vehicle Permits Required",
+  "reservation": "Entry to the chain of North Shore state parks requires a daily or annual vehicle permit, purchasable at park offices or kiosks. While entry reservations aren't standard, campsites and popular lodges like those at Split Rock Lighthouse fill months in advance. Verify current availability on the MN DNR portal.",
+  "source_url": "https://www.dnr.state.mn.us/state_parks/reservations.html",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Rivers and Lighthouses",
+        "start": "Suggested: 9:00 AM from Two Harbors",
+        "stops": [
+          {
+            "name": "Gooseberry Falls State Park",
+            "detail": "Explore the Upper, Middle, and Lower falls as the Gooseberry River tumbles toward Lake Superior."
+          },
+          {
+            "name": "Split Rock Lighthouse",
+            "detail": "Tour the historic 1910 light station perched on a sheer cliff above the lake; reservations for tours are recommended."
+          }
+        ],
+        "driving": "Allow 1.5 hours for shoreline transit on Highway 61; conditions vary by lake wind.",
+        "note": "Expect cooler temperatures near the water; bring an extra layer even in July."
+      },
+      {
+        "title": "Canyons and Coastal Cliffs",
+        "start": "Suggested: 8:30 AM from Lutsen",
+        "stops": [
+          {
+            "name": "Tettegouche State Park",
+            "detail": "Visit Shovel Point for dramatic cliff-side views or hike to the High Falls of the Baptism River."
+          },
+          {
+            "name": "Temperance River State Park",
+            "detail": "Walk the gorge trail to see the river carve deep potholes into the ancient volcanic rock."
+          }
+        ],
+        "driving": "Allow 2 hours for regional transit; watch for deer crossing the highway at dusk.",
+        "note": "The Superior Hiking Trail intersects these parks; ensure you are on the correct marked path for day use."
+      },
+      {
+        "title": "Harbor Towns and Grand Vistas",
+        "start": "Suggested: 9:00 AM from Grand Marais",
+        "stops": [
+          {
+            "name": "Grand Marais Harbor",
+            "detail": "Walk the breakwater to the lighthouse and explore the local arts community and harbor shops."
+          },
+          {
+            "name": "Pincushion Mountain Overlook",
+            "detail": "Drive up the Gunflint Trail for a panoramic view of the harbor and the vast expanse of the lake."
+          }
+        ],
+        "driving": "Allow 1 hour for local Grand Marais exploration; transit times depend on weather.",
+        "note": "Check the MN DNR fall color report if visiting in late September for the best ridge views."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "State Park Capacity",
+        "text": "Gooseberry Falls and Tettegouche lots often reach capacity by midday on summer Saturdays. Arrive before 10 AM to secure a space near the primary trailheads."
+      },
+      {
+        "kind": "signal",
+        "title": "Highway 61 Reliability",
+        "text": "Signal is generally stable along the shoreline highway but vanishes quickly once you head inland toward the Superior Hiking Trail. Print your hiking maps before arrival."
+      },
+      {
+        "kind": "fuel",
+        "title": "Strategic Stops",
+        "text": "Gas stations are spaced out between Two Harbors and Grand Marais. Ensure you have enough fuel before heading up the Gunflint Trail or into remote forest roads."
+      },
+      {
+        "kind": "timing",
+        "title": "Waterfall Volume",
+        "text": "Peak flow occurs during the spring thaw in May and June. Late summer visits may see reduced water volume but offer better conditions for shoreline rock scrambling."
+      },
+      {
+        "kind": "access",
+        "title": "Lake Superior Fog",
+        "text": "Rapid temperature changes can cause sudden, dense fog that obscures Highway 61. Reduce speeds and use headlights when moving through shoreline weather fronts."
+      }
+    ],
+    "arrival": "Pick up your rental at Duluth International (DLH). Visit the Canal Park district for a lakeside lunch before driving 30 minutes northeast to Two Harbors.",
+    "vehicle": "Standard vehicles are excellent for the scenic Highway 61. If exploring unpaved forest roads inland, a vehicle with higher clearance is advised; check rental terms for gravel road usage.",
+    "goldenHour": "Shovel Point in Tettegouche State Park offers spectacular sunrise views over the lake's horizon, subject to seasonal cloud cover.",
+    "sources": [
+      {
+        "label": "Minnesota DNR State Parks",
+        "url": "https://www.dnr.state.mn.us/state_parks/index.html"
+      }
+    ]
+  }
+}

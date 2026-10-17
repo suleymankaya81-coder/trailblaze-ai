@@ -1,0 +1,95 @@
+{
+  "slug": "colorado-rockies",
+  "headline": "Timed Entry and High Elevation Planning",
+  "reservation": "Rocky Mountain National Park currently requires a timed-entry permit system during the peak season to manage congestion. Permits are distinct from park entrance fees and camping reservations, which often sell out months in advance. Check the official NPS reservation site for the specific requirements of your visit dates.",
+  "source_url": "https://www.nps.gov/romo/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Alpine Lakes and Glacial Valleys",
+        "start": "Suggested: 7 AM from Estes Park",
+        "stops": [
+          {
+            "name": "Bear Lake",
+            "detail": "Begin at this subalpine lake, serving as a hub for several forested trails including the route to Nymph Lake."
+          },
+          {
+            "name": "Dream Lake",
+            "detail": "Continue past Nymph Lake for views of jagged peaks reflected in the clear water, a classic Rockies vista."
+          }
+        ],
+        "driving": "Allow 45 minutes; conditions vary by seasonal shuttle availability and traffic.",
+        "note": "High demand makes the park shuttle a necessary alternative to driving during summer weekends."
+      },
+      {
+        "title": "Tundra and High Passes",
+        "start": "Suggested: 8:30 AM from Grand Lake",
+        "stops": [
+          {
+            "name": "Trail Ridge Road",
+            "detail": "Drive the highest continuous paved road in the U.S., reaching elevations above 12,000 feet."
+          },
+          {
+            "name": "Alpine Visitor Center",
+            "detail": "Explore exhibits on the fragile alpine tundra ecosystem and the animals that survive above the treeline."
+          }
+        ],
+        "driving": "Allow 3–5 hours for the full crossing; conditions vary by wind and weather.",
+        "note": "Trail Ridge Road is seasonal and typically closes from late autumn through late spring."
+      },
+      {
+        "title": "Mountain Town Heritage",
+        "start": "Suggested: 9 AM from Breckenridge",
+        "stops": [
+          {
+            "name": "Main Street Breckenridge",
+            "detail": "Walk the historic district to see preserved Victorian architecture from the mining era."
+          },
+          {
+            "name": "Blue River Trail",
+            "detail": "Enjoy a gentle creekside walk that offers mountain views without significant elevation gain."
+          }
+        ],
+        "driving": "Allow 1 hour for local exploration; conditions vary by snow levels.",
+        "note": "Pace your walking to allow for altitude adjustment if you have just arrived from sea level."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Early Starts Required",
+        "text": "Trailhead lots at Bear Lake and Glacier Gorge often fill completely before 8 AM during summer. Use the park shuttle system from the Estes Park Fairgrounds to avoid parking delays."
+      },
+      {
+        "kind": "signal",
+        "title": "Mountain Dead Zones",
+        "text": "Cellular coverage is non-existent in many high-altitude valleys and along the western side of the continental divide. Carry paper maps or download digital versions for use in remote areas."
+      },
+      {
+        "kind": "fuel",
+        "title": "Strategic Refueling",
+        "text": "Fuel is not available within Rocky Mountain National Park. Top off your tank in Estes Park, Grand Lake, or Silverthorne before heading into the high-country corridors."
+      },
+      {
+        "kind": "timing",
+        "title": "Afternoon Storms",
+        "text": "Summer lightning storms frequently develop by early afternoon above the treeline. Plan to be off high ridges and peaks by noon to minimize exposure to severe weather."
+      },
+      {
+        "kind": "access",
+        "title": "Winter Road Closures",
+        "text": "Major routes like Trail Ridge Road and the Old Fall River Road are closed for the winter season due to heavy snow. Check current status via CDOT or the NPS before planning a cross-park route."
+      }
+    ],
+    "arrival": "Pick up your vehicle at Rocky Mountain Metropolitan Airport (BJC) or DIA and drive toward Estes Park, stopping for mountain-grade supplies in Boulder or Lyons.",
+    "vehicle": "A 4WD or AWD vehicle is strongly recommended for winter visits; check rental companies for specific mountain-traction compliance during storm periods.",
+    "goldenHour": "Many photographers favor Forest Canyon Overlook for sunset views, though snow can restrict access to this area late in the season.",
+    "sources": [
+      {
+        "label": "Rocky Mountain National Park",
+        "url": "https://www.nps.gov/romo/index.htm"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "gates-of-the-arctic-national-park",
+  "headline": "Remote Wilderness Backcountry Orientation",
+  "reservation": "While there are no entry permits for the park itself, all visitors should participate in a voluntary backcountry orientation at a visitor center. Commercial air taxis and private lodges require independent bookings months in advance. Always check with the National Park Service for the latest regarding bear-resistant containers and flight accessibility.",
+  "source_url": "https://www.nps.gov/gaar/planyourvisit/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Arctic Foothills Flight",
+        "start": "Suggested: 9 AM from Bettles",
+        "stops": [
+          {
+            "name": "Bettles Lodge",
+            "detail": "Finalize gear and coordinate with bush pilots at this historic aviation hub before departing for the park."
+          },
+          {
+            "name": "Walker Lake",
+            "detail": "Explore the shores of this large alpine lake, a designated National Natural Landmark surrounded by spruce forests."
+          }
+        ],
+        "driving": "Walking or local bush plane transfer only; no road access to park",
+        "note": "Flight schedules are entirely weather-dependent; allow for significant delays in the Arctic."
+      },
+      {
+        "title": "Granite Spires and Tundra",
+        "start": "Suggested: 8 AM from Backcountry Camp",
+        "stops": [
+          {
+            "name": "Arrigetch Peaks",
+            "detail": "View the dramatic, jagged granite spires that rise sharply above the Alatna River valley."
+          },
+          {
+            "name": "Alatna River",
+            "detail": "Float or hike along this Wild and Scenic River to observe the diverse Brooks Range landscape."
+          }
+        ],
+        "driving": "Cross-country walking or paddling; conditions vary by terrain",
+        "note": "Expect slow travel across muskeg and tussocks; five miles is a full day for many hikers."
+      },
+      {
+        "title": "Nunamiut Culture",
+        "start": "Suggested: 10 AM from Anaktuvuk Pass",
+        "stops": [
+          {
+            "name": "Simon Paneak Memorial Museum",
+            "detail": "Learn about the Inland Iñupiat culture and their deep connection to the caribou herds."
+          },
+          {
+            "name": "Anaktuvuk River Valley",
+            "detail": "Walk the surroundings of this remote village to experience the scale of the Brooks Range."
+          }
+        ],
+        "driving": "Local walking; accessible only by scheduled air service from Fairbanks",
+        "note": "Anaktuvuk Pass is a private community; stay on public land and respect resident privacy."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Air Hub Staging",
+        "text": "There is no parking within the park; long-term staging occurs at air taxi bases in Fairbanks or Bettles. Confirm storage policies with your flight operator before arriving."
+      },
+      {
+        "kind": "signal",
+        "title": "Total Disconnection",
+        "text": "Cellular and GPS signals are non-existent in the park interior. A satellite communication device and physical topographic maps are essential for wilderness navigation."
+      },
+      {
+        "kind": "fuel",
+        "title": "Camp Stove Supplies",
+        "text": "Liquid fuel and canisters must be purchased in Fairbanks or gateway hubs before boarding bush planes. Air taxis have strict regulations regarding the transport of hazardous materials."
+      },
+      {
+        "kind": "timing",
+        "title": "Midnight Sun Window",
+        "text": "Mid-summer offers 24-hour daylight, allowing for flexible travel hours. By late August, the return of darkness increases the chance of seeing the aurora borealis."
+      },
+      {
+        "kind": "access",
+        "title": "Roadless Wilderness",
+        "text": "Gates of the Arctic has no roads or maintained trails. Access is strictly by air taxi or strenuous cross-country hiking from the Dalton Highway corridor."
+      }
+    ],
+    "arrival": "Arrival in Fairbanks for final supply acquisition followed by a scheduled flight to Bettles for park orientation and bush plane departure.",
+    "vehicle": "No vehicles allowed in the park; 4WD is required only for those staging from the Dalton Highway via Coldfoot.",
+    "goldenHour": "The Arrigetch Peaks provide a dramatic silhouette during the extended arctic summer sunset.",
+    "sources": [
+      {
+        "label": "National Park Service",
+        "url": "https://www.nps.gov/gaar/index.htm"
+      }
+    ]
+  }
+}

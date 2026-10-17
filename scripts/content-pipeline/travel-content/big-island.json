@@ -1,0 +1,99 @@
+{
+  "slug": "big-island",
+  "headline": "Hawaii National and State Park Booking Requirements",
+  "reservation": "Reservations are required for Hā‘ena State Park and certain high-demand areas, while Hawai‘i Volcanoes National Park generally uses a standard entry fee without pre-booked time slots. Backcountry camping and certain guided programs require separate permits through the NPS or DLNR systems. Systems are subject to change; verify current requirements on official agency websites before arrival.",
+  "source_url": "https://www.nps.gov/havo/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Volcanic Landscapes of Kīlauea",
+        "start": "Suggested: 8 AM from Volcano Village",
+        "stops": [
+          {
+            "name": "Kīlauea Iki Trail",
+            "detail": "Hike across a solidified lava lake that still vents steam, experiencing the raw power of the 1959 eruption."
+          },
+          {
+            "name": "Chain of Craters Road",
+            "detail": "Drive toward the coast through distinct lava flows, stopping at the Puna Coast Trailhead for expansive ocean views."
+          }
+        ],
+        "driving": "Allow 3 to 4 hours for the park interior; roads are well-maintained but winding.",
+        "note": "Weather at 4,000 feet is significantly cooler and wetter than the coast; pack accordingly."
+      },
+      {
+        "title": "Waterfalls and Tropical Valleys",
+        "start": "Suggested: 9 AM from Hilo",
+        "stops": [
+          {
+            "name": "‘Akaka Falls State Park",
+            "detail": "Walk the paved loop through lush rainforest to view two spectacular waterfalls plunging into stream-eroded gorges."
+          },
+          {
+            "name": "Rainbow Falls",
+            "detail": "Visit this easily accessible Hilo landmark where morning light often creates prisms in the mist."
+          }
+        ],
+        "driving": "Allow 2 hours for the Hilo area and the drive north toward Honomū.",
+        "note": "Expect frequent rain showers on the windward side; paths can be slippery."
+      },
+      {
+        "title": "West Coast Shores and Culture",
+        "start": "Suggested: 8:30 AM from Kailua-Kona",
+        "stops": [
+          {
+            "name": "Pu‘uhonua o Hōnaunau National Historical Park",
+            "detail": "Explore this sacred site of refuge to learn about traditional Hawaiian law and culture amidst ancient stone walls."
+          },
+          {
+            "name": "Kealakekua Bay",
+            "detail": "View the marine sanctuary and historic monument from the shore or via a managed boat excursion."
+          }
+        ],
+        "driving": "Allow 2.5 hours for travel along the Kona coast; traffic can be heavy near Kailua-Kona.",
+        "note": "Observe all posted signs regarding marine life; maintain respectful distances from sea turtles."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "National Park Access",
+        "text": "The Kīlauea Visitor Center lot often fills by 10 AM during peak seasons. Utilize secondary lots like Steam Vents if the main area is congested."
+      },
+      {
+        "kind": "signal",
+        "title": "Island Connectivity",
+        "text": "Reliable signals exist in Hilo and Kona, but gaps are frequent on Saddle Road and throughout the national park. Carry offline navigation for cross-island travel."
+      },
+      {
+        "kind": "fuel",
+        "title": "Saddle Road Safety",
+        "text": "There are no gas stations on the interior Daniel K. Inouye Highway (Saddle Road). Refuel in Hilo or Waimea before crossing the island's center."
+      },
+      {
+        "kind": "timing",
+        "title": "Volcanic Gas Awareness",
+        "text": "Sulfur dioxide levels can fluctuate; check the daily air quality forecast at the visitor center, especially if you have respiratory sensitivities."
+      },
+      {
+        "kind": "access",
+        "title": "Shoreline Entry",
+        "text": "Many black sand beaches have sharp volcanic rock underfoot. Wear sturdy footwear and check local surf reports as conditions change rapidly."
+      }
+    ],
+    "arrival": "Pick up your rental at ITO or KOA. Stop in Hilo or Kailua-Kona for groceries and reef-safe sunscreen before heading to your regional base.",
+    "vehicle": "Standard cars suit most paved highways. Check rental policies before attempting the unpaved summit access road of Mauna Kea.",
+    "goldenHour": "Kīlauea Overlook provides views of the caldera; visibility is highly dependent on daily volcanic emissions and cloud cover.",
+    "sources": [
+      {
+        "label": "National Park Service",
+        "url": "https://www.nps.gov/havo/index.htm"
+      },
+      {
+        "label": "Hawaii State Parks",
+        "url": "https://dlnr.hawaii.gov/dsp/"
+      }
+    ]
+  }
+}

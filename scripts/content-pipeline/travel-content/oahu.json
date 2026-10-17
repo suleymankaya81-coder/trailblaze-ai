@@ -1,0 +1,95 @@
+{
+  "slug": "oahu",
+  "headline": "Advance Reservations for Landmarks and Parks",
+  "reservation": "Entry to Diamond Head State Monument and Hanauma Bay requires advance online reservations for all non-residents, often opening weeks ahead. Pearl Harbor National Memorial (USS Arizona) operates via a specific ticketing portal; these are separate from general island access. Changing systems mean you must verify the official booking window on each agency's site before your travel dates.",
+  "source_url": "https://dlnr.hawaii.gov/dsp/announcements/reservations-now-required-for-diamond-head-state-monument/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Monarchy History and Waikiki Sands",
+        "start": "Suggested: 9 AM from Downtown Honolulu",
+        "stops": [
+          {
+            "name": "Iolani Palace",
+            "detail": "Tour the official residence of the Hawaiian monarchs to understand the island’s political history."
+          },
+          {
+            "name": "Kapiolani Park",
+            "detail": "Walk the historic green space at the end of Waikiki for views of Diamond Head away from the crowds."
+          }
+        ],
+        "driving": "Allow 20–40 minutes; Honolulu traffic is dense during morning and afternoon peaks.",
+        "note": "Reserve palace tours in advance as walk-in availability is not guaranteed."
+      },
+      {
+        "title": "Volcanic Craters and Coastal Vistas",
+        "start": "Suggested: 7:30 AM from Diamond Head",
+        "stops": [
+          {
+            "name": "Diamond Head Summit Trail",
+            "detail": "Ascend the volcanic tuff cone for 360-degree views of the Pacific and the Honolulu skyline."
+          },
+          {
+            "name": "Makapuu Point Lighthouse Trail",
+            "detail": "Walk the paved path for whale watching opportunities during winter and views of the Windward Coast."
+          }
+        ],
+        "driving": "Allow 40–60 minutes; parking at Makapuu is limited and does not use a reservation system.",
+        "note": "Diamond Head requires a pre-booked entry slot; check the DLNR site for your specific arrival window."
+      },
+      {
+        "title": "Pacific Remembrance and Heritage",
+        "start": "Suggested: 8 AM from Pearl Harbor",
+        "stops": [
+          {
+            "name": "Pearl Harbor National Memorial",
+            "detail": "Visit the museums and the USS Arizona Memorial to reflect on the events of December 1941."
+          },
+          {
+            "name": "Bishop Museum",
+            "detail": "Explore the premier natural and cultural history institution of the Pacific in the Kalihi neighborhood."
+          }
+        ],
+        "driving": "Allow 30–50 minutes; use H-1 highway but prepare for frequent congestion near the airport.",
+        "note": "Strict bag policies are in effect at Pearl Harbor; lockers are available for a fee near the entrance."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Urban Parking Constraints",
+        "text": "Waikiki street parking is extremely rare; use hotel garages or the public lot at Kapiolani Park. Most major trailheads like Diamond Head require pre-paid parking as part of your reservation."
+      },
+      {
+        "kind": "signal",
+        "title": "City and Mountain Coverage",
+        "text": "Signal is excellent in Honolulu but can be spotty in the interior valleys or along the Ka Iwi coastline. Rely on downloaded maps for the H-3 and Pali Highway mountain corridors."
+      },
+      {
+        "kind": "fuel",
+        "title": "Honolulu Refueling",
+        "text": "Gas prices are highest in Waikiki; look for stations in Kalihi or Aiea for better rates. Ensure you have a full tank before driving the long loop to the North Shore."
+      },
+      {
+        "kind": "timing",
+        "title": "Peak Hour Planning",
+        "text": "Avoid the H-1 freeway westbound between 3 PM and 6 PM to miss the heaviest local commuter traffic. Plan your trans-island drives for mid-morning to maximize sightseeing time."
+      },
+      {
+        "kind": "access",
+        "title": "Managed Entry Sites",
+        "text": "Hanauma Bay is closed on Tuesdays for ecosystem rest; other state monuments may have rotating maintenance days. Always cross-reference the official city and county calendars."
+      }
+    ],
+    "arrival": "Pick up your rental at HNL and head to a grocery hub in Iwilei or Ala Moana before navigating to your Waikiki or North Shore base.",
+    "vehicle": "A compact car is best for navigating narrow Honolulu streets and tight parking garages; RVs are highly restricted on Oahu roads.",
+    "goldenHour": "Tantalus Lookout (Puu Ualakaa) provides a panoramic sunset view over the city, though the gate closes strictly at dusk.",
+    "sources": [
+      {
+        "label": "National Park Service",
+        "url": "https://www.nps.gov/perl/index.htm"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "pinnacles-national-park",
+  "headline": "Managing Seasonal Volcanic Trail Access and Shuttle Requirements",
+  "reservation": "Entry permits are not currently required, but parking at Bear Gulch and Old Pinnacles often reaches capacity by early morning. The park is split into East and West sides with no connecting road; verify which gateway matches your destination. Peak spring weekends may implement a mandatory shuttle system to manage traffic flow from the visitor center to trailheads.",
+  "source_url": "https://www.nps.gov/pinn/planyourvisit/conditions.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "East Side Talus Caves and Condor Crags",
+        "start": "Suggested: 8 AM from Hollister",
+        "stops": [
+          {
+            "name": "Bear Gulch Cave",
+            "detail": "Navigate the lower and upper sections of this rare talus cave formed by fallen volcanic monoliths."
+          },
+          {
+            "name": "High Peaks Trail",
+            "detail": "Ascend the steep volcanic breccia formations to spot resident California condors riding thermals."
+          }
+        ],
+        "driving": "Allow 45 minutes to the East Entrance; conditions vary by season.",
+        "note": "Check cave status on the official website; seasonal closures for bat hibernation or flooding are common."
+      },
+      {
+        "title": "West Side Wilderness and Vistas",
+        "start": "Suggested: 8:30 AM from Soledad",
+        "stops": [
+          {
+            "name": "Balconies Cave",
+            "detail": "Explore the rugged western talus passages that provide a cool reprieve from the Salinas Valley sun."
+          },
+          {
+            "name": "Machete Ridge",
+            "detail": "View the massive rock face popular with climbers from the Chaparral trailhead."
+          }
+        ],
+        "driving": "Allow 20 minutes from Soledad to the Chaparral parking area.",
+        "note": "The West Entrance is day-use only and closes its gate at dusk; plan departure accordingly."
+      },
+      {
+        "title": "Riparian Corridors and Historic Ruins",
+        "start": "Suggested: 9 AM from Pinnacles Campground",
+        "stops": [
+          {
+            "name": "Old Pinnacles Trail",
+            "detail": "Follow the gentler valley floor path through oak woodlands to the West Side transition."
+          },
+          {
+            "name": "Moses Spring Trail",
+            "detail": "A family-friendly route featuring rock tunnels and views of the Bear Gulch Reservoir."
+          }
+        ],
+        "driving": "Local transfer within the East Side park boundary via shuttle or car.",
+        "note": "Wildflower displays peak between March and May, dramatically slowing pace on narrow trails."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Early Arrival Strategy",
+        "text": "Parking lots at Bear Gulch typically fill before 9 AM during spring wildflower season and holiday weekends. Use the shuttle from the East Side Visitor Center if lots are closed."
+      },
+      {
+        "kind": "signal",
+        "title": "Cellular Dead Zones",
+        "text": "Expect zero cellular reception once you enter the volcanic canyons on either side of the Gabilan Range. Download offline maps in Hollister or Soledad before arrival."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Supply Points",
+        "text": "No fuel is available inside the park boundaries on either the East or West sides. Gas up in Soledad or Hollister before heading toward the wilderness entrances."
+      },
+      {
+        "kind": "timing",
+        "title": "Summer Heat Safety",
+        "text": "Daytime temperatures regularly exceed 100 degrees Fahrenheit from June through September. Complete all strenuous hiking by 10 AM to avoid peak thermal exposure."
+      },
+      {
+        "kind": "access",
+        "title": "Divided Entrances",
+        "text": "The East and West entrances are not connected by a vehicle road; driving between them takes roughly 90 minutes. Ensure your accommodation matches your intended trailhead side."
+      }
+    ],
+    "arrival": "Pick up rental at Monterey (MRY), stock up on water and supplies in Salinas or Soledad, then proceed to your chosen park gateway.",
+    "vehicle": "Standard vehicles are sufficient for paved access roads, but check rental contracts for restrictions on unpaved trailhead spurs.",
+    "goldenHour": "High Peaks Trail offers expansive sunset views of the Gabilan Range, though descent requires a headlamp.",
+    "sources": [
+      {
+        "label": "Pinnacles National Park Official Site",
+        "url": "https://www.nps.gov/pinn/index.htm"
+      }
+    ]
+  }
+}

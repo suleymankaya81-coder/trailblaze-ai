@@ -1,0 +1,95 @@
+{
+  "slug": "palm-springs",
+  "headline": "Seasonal Aerial Tramway and Canyon Entry",
+  "reservation": "Palm Springs Aerial Tramway tickets frequently sell out during peak winter weekends; advanced booking is strongly suggested. Entry to Indian Canyons requires a daily fee paid at the gate, and hiking trails may close during high heat or flood events. Always check official state park and tribal sites for the latest access protocols.",
+  "source_url": "https://pstramway.com/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Mid-Century Modern and Mountain Peaks",
+        "start": "Suggested: 9 AM from Palm Canyon Drive",
+        "stops": [
+          {
+            "name": "Palm Springs Visitor Center",
+            "detail": "View the Albert Frey-designed architecture and collect maps for a self-guided tour of the historic districts."
+          },
+          {
+            "name": "Palm Springs Aerial Tramway",
+            "detail": "Ascend 8,500 feet to Mount San Jacinto State Park for cooler temperatures and panoramic valley views."
+          }
+        ],
+        "driving": "Allow 40 minutes; tram wait times can add significant duration",
+        "note": "Temperature at the mountain summit is typically 30 degrees cooler than the desert floor."
+      },
+      {
+        "title": "Palm Oases and Desert Botany",
+        "start": "Suggested: 8 AM from South Palm Springs",
+        "stops": [
+          {
+            "name": "Indian Canyons",
+            "detail": "Hike the Andreas Canyon trail to see a massive grove of native California Fan Palms along a year-round stream."
+          },
+          {
+            "name": "Moorten Botanical Garden",
+            "detail": "Walk through a private 'cactarium' featuring thousands of desert plant species in an intimate setting."
+          }
+        ],
+        "driving": "Allow 30 minutes; sites are located on the southern edge of town",
+        "note": "Indian Canyons are tribal land; check seasonal closing times which are strictly enforced."
+      },
+      {
+        "title": "High Desert Day Trip",
+        "start": "Suggested: 8 AM from Uptown Design District",
+        "stops": [
+          {
+            "name": "Joshua Tree National Park",
+            "detail": "Explore the Hidden Valley trail and view the unique rock formations and namesake Yucca trees."
+          },
+          {
+            "name": "Keys View",
+            "detail": "Drive to the ridge for a staggering vista of the San Andreas Fault and the Coachella Valley."
+          }
+        ],
+        "driving": "Allow 2-3 hours; travel depends heavily on park entrance station queues",
+        "note": "Check the NPS dashboard for live parking availability at popular Joshua Tree trailheads."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "timing",
+        "title": "Seasonal Heat Safety",
+        "text": "Hiking is discouraged after 10 AM from June to September due to extreme heat. Plan all strenuous outdoor activity for early morning or stay at higher elevations."
+      },
+      {
+        "kind": "parking",
+        "title": "Downtown Accessibility",
+        "text": "Public parking structures in downtown Palm Springs are generally free and abundant. Valet is common at luxury resorts but street parking is easy to find in residential areas."
+      },
+      {
+        "kind": "access",
+        "title": "Tribal Land Guidelines",
+        "text": "Tahquitz and Indian Canyons are managed by the Agua Caliente Band of Cahuilla Indians. Specific entry fees and rules apply; stay on trails to protect cultural sites."
+      },
+      {
+        "kind": "fuel",
+        "title": "Coachella Valley Transit",
+        "text": "Fuel and electric charging stations are plentiful within the city. However, refill before heading into Joshua Tree, as no fuel is available inside the national park."
+      },
+      {
+        "kind": "signal",
+        "title": "Urban vs Wilderness Connectivity",
+        "text": "Cell service is excellent throughout Palm Springs but becomes spotty in the canyons and vanishes in much of the Mt. San Jacinto backcountry."
+      }
+    ],
+    "arrival": "Fly into Palm Springs International Airport (PSP); rental car agencies are located on-site, and most hotels are within a 10-minute drive.",
+    "vehicle": "Standard vehicles are ideal for the city and paved park roads. RVs are permitted but check for length restrictions at the Palm Springs Aerial Tramway parking lot.",
+    "goldenHour": "Keys View in Joshua Tree or the valley floor looking west toward the San Jacinto mountains as they turn purple.",
+    "sources": [
+      {
+        "label": "Palm Springs Bureau of Tourism",
+        "url": "https://visitpalmsprings.com/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "yellowstone-montana-gateway",
+  "headline": "Manage Entry and Snowcoach Quotas for Montana Gates",
+  "reservation": "Entry through West Yellowstone or Gardiner requires an official park pass; distinguish this from the separate reservations needed for in-park lodging or private glamping sites. During winter, the West Yellowstone gate is restricted to authorized over-snow transport, requiring advance booking with commercial snowcoach or snowmobile operators. Always verify the current vehicle reservation status and road opening dates on the official National Park Service website before travel.",
+  "source_url": "https://www.nps.gov/yell/planyourvisit/conditions.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Northern Range Wildlife and Hot Springs",
+        "start": "Suggested: 7 AM from Gardiner",
+        "stops": [
+          {
+            "name": "Lamar Valley",
+            "detail": "Observe the high concentration of grizzly bears, wolves, and bison in this wide glacial valley often called the Serengeti of North America."
+          },
+          {
+            "name": "Mammoth Hot Springs",
+            "detail": "Walk the boardwalks to view the travertine terraces formed by hot water bubbling through ancient limestone."
+          }
+        ],
+        "driving": "Allow 3 to 5 hours for the loop; conditions and animal crossings vary",
+        "note": "The North Entrance at Gardiner is the only gate providing year-round wheeled vehicle access to the interior."
+      },
+      {
+        "title": "Madison River and Thermal Basins",
+        "start": "Suggested: 8 AM from West Yellowstone",
+        "stops": [
+          {
+            "name": "Madison River Drive",
+            "detail": "Follow the scenic river corridor favored by fly anglers and elk herds."
+          },
+          {
+            "name": "Grand Prismatic Spring",
+            "detail": "View the largest hot spring in the United States, famous for its vibrant rings of thermophilic bacteria."
+          }
+        ],
+        "driving": "Allow 4 to 6 hours for transit and thermal walks; traffic is heavy near the West Gate",
+        "note": "Entering before 8 AM is suggested to mitigate vehicle congestion during the peak summer months."
+      },
+      {
+        "title": "High Desert Views and Paradise Valley",
+        "start": "Suggested: 9 AM from Livingston",
+        "stops": [
+          {
+            "name": "Yellowstone River",
+            "detail": "Trace the free-flowing river through Paradise Valley for views of the Absaroka Range."
+          },
+          {
+            "name": "Boiling River Area",
+            "detail": "Observe the hydrothermal junction near the 45th Parallel Bridge where hot water enters the cold river flow."
+          }
+        ],
+        "driving": "Allow 2 to 3 hours for the valley transit; seasonal roadwork is common",
+        "note": "Check official status for specific hydrothermal soaking areas as access is frequently suspended for safety."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Gateway Hub Parking",
+        "text": "West Yellowstone and Gardiner have municipal lots, but in-park thermal basin lots frequently reach capacity by mid-morning. Use the North Entrance for easier access to the oversized parking near Mammoth."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Limits",
+        "text": "Cellular service is reliable in West Yellowstone and Gardiner but drops significantly once inside the park gates. Download offline maps for the Lamar Valley and Madison areas before departing your gateway town."
+      },
+      {
+        "kind": "fuel",
+        "title": "Strategic Refueling",
+        "text": "Fuel is readily available in all Montana gateway towns and at select interior service stations like Mammoth and Old Faithful. Ensure you have at least a half-tank before entering the Lamar Valley due to the distance from services."
+      },
+      {
+        "kind": "timing",
+        "title": "Wildlife Windows",
+        "text": "Plan for early morning or late evening for the best wildlife visibility in the northern range. Midday hours are best reserved for indoor visitor centers or driving the Paradise Valley scenic route."
+      },
+      {
+        "kind": "access",
+        "title": "Seasonal Road Gates",
+        "text": "The road between Gardiner and Cooke City is the only route maintained for cars throughout the winter. All other Montana gates transition to specialized over-snow travel typically from November through April."
+      }
+    ],
+    "arrival": "Collect rentals at Yellowstone Airport (WYS) or Bozeman (BZN); stock supplies in West Yellowstone or Livingston before park entry.",
+    "vehicle": "Standard vehicles are suitable for summer roads, but high-clearance 4WD is recommended for shoulder seasons; check rental restrictions for gravel roads.",
+    "goldenHour": "Lamar Valley overlooks provide exceptional light for wildlife viewing, with timing shifting significantly between the summer solstice and autumn.",
+    "sources": [
+      {
+        "label": "National Park Service Yellowstone",
+        "url": "https://www.nps.gov/yell/index.htm"
+      }
+    ]
+  }
+}

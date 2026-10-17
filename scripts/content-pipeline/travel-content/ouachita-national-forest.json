@@ -1,0 +1,95 @@
+{
+  "slug": "ouachita-national-forest",
+  "headline": "Recreation and Campground Booking",
+  "reservation": "Developed campgrounds like Charlton or Cedar Lake can be reserved through Recreation.gov, while dispersed camping is generally allowed without a permit. Some special interest areas may have day-use fees collected on-site. Check the official Forest Service site for current seasonal closures and fire restrictions.",
+  "source_url": "https://www.fs.usda.gov/ouachita",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Skyline Vistas",
+        "start": "Suggested: 9 AM from Mena",
+        "stops": [
+          {
+            "name": "Talimena National Scenic Byway",
+            "detail": "Drive along the ridge tops for expansive views of the Ouachita Mountains from multiple overlooks."
+          },
+          {
+            "name": "Queen Wilhelmina State Park",
+            "detail": "Visit the 'Castle in the Clouds' and walk the short trails around Rich Mountain."
+          }
+        ],
+        "driving": "Allow 3 hours for the full drive to Oklahoma border and back; conditions vary.",
+        "note": "Heavy fog can occur on the byway; check visibility before beginning the ascent."
+      },
+      {
+        "title": "Crystal Waters and Lakes",
+        "start": "Suggested: 8:30 AM from Hot Springs",
+        "stops": [
+          {
+            "name": "Lake Ouachita State Park",
+            "detail": "Explore the clear waters by boat or hike the Caddo Bend Trail for peninsula views."
+          },
+          {
+            "name": "Charlton Recreation Area",
+            "detail": "Cool off in the historic CCC-era swimming hole fed by cold mountain springs."
+          }
+        ],
+        "driving": "Allow 2 hours for travel between the lake and recreation areas; conditions vary.",
+        "note": "The Charlton swimming area is seasonal; check official status for summer operation."
+      },
+      {
+        "title": "Ancient Ridges",
+        "start": "Suggested: 8 AM from Mount Ida",
+        "stops": [
+          {
+            "name": "Ouachita National Recreation Trail",
+            "detail": "Hike a segment of this 223-mile trail for deep immersion in the pine-hardwood forest."
+          },
+          {
+            "name": "Winding Stair Mountain",
+            "detail": "Explore the rocky outcrops and hardwood forests of this designated National Recreation Area."
+          }
+        ],
+        "driving": "Allow 2.5 hours for forest road navigation; conditions vary by rainfall.",
+        "note": "Trailheads can be remote; ensure you have a physical map as digital navigation may fail."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead Access",
+        "text": "Parking at the Ouachita National Recreation Trail access points is often just a small gravel pull-off. Arrive early during peak fall foliage."
+      },
+      {
+        "kind": "signal",
+        "title": "Deep Forest Dead Zones",
+        "text": "Cellular coverage is highly unreliable in the valleys between Rich Mountain and Hot Springs. Download regional topographic maps for offline use."
+      },
+      {
+        "kind": "fuel",
+        "title": "Ridge Supply Gap",
+        "text": "There are no gas stations on the Talimena Byway ridge. Refuel in Mena or Talihina before starting the climb."
+      },
+      {
+        "kind": "timing",
+        "title": "Peak Foliage",
+        "text": "Late October to early November is the primary window for autumn colors. Expect significant weekend traffic on the scenic byway during this time."
+      },
+      {
+        "kind": "access",
+        "title": "Forest Road Conditions",
+        "text": "Unpaved forest service roads may be impassable for low-clearance vehicles after heavy rains. Check the Ranger District for current road status."
+      }
+    ],
+    "arrival": "Fly into FSM or LIT, pick up your rental, and stock up on supplies in Mena or Hot Springs before heading into the forest.",
+    "vehicle": "SUV recommended for unpaved forest roads; standard cars are fine for the Talimena Byway.",
+    "goldenHour": "Panorama Vista on the Talimena Byway provides expansive west-facing views; conditions are weather dependent.",
+    "sources": [
+      {
+        "label": "U.S. Forest Service",
+        "url": "https://www.fs.usda.gov/ouachita"
+      }
+    ]
+  }
+}

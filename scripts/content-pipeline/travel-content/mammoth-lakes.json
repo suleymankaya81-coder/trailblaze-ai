@@ -1,0 +1,95 @@
+{
+  "slug": "mammoth-lakes",
+  "headline": "High Sierra Seasonal Access and Permits",
+  "reservation": "Devils Postpile and Reds Meadow require a shuttle during peak summer; check NPS for operating dates. Wilderness permits are mandatory for overnight stays and must be reserved through recreation.gov well in advance.",
+  "source_url": "https://www.fs.usda.gov/inyo",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "The Lakes Basin",
+        "start": "Suggested: 8:30 AM from Mammoth Town",
+        "stops": [
+          {
+            "name": "Lake Mary",
+            "detail": "Enjoy the largest lake in the basin for shoreline walking and views of Crystal Crag."
+          },
+          {
+            "name": "Twin Lakes",
+            "detail": "See the dramatic waterfall that connects the upper and lower lakes near the base of the mountain."
+          }
+        ],
+        "driving": "Allow 20–30 minutes; parking is limited at Lake George and Lake Mary",
+        "note": "Altitude adjustment is necessary; the basin sits above 8,000 feet."
+      },
+      {
+        "title": "Volcanic Geology and Waterfalls",
+        "start": "Suggested: 9 AM from Adventure Center",
+        "stops": [
+          {
+            "name": "Devils Postpile National Monument",
+            "detail": "Marvel at the rare 60-foot basalt columns formed by cooling lava thousands of years ago."
+          },
+          {
+            "name": "Rainbow Falls",
+            "detail": "Follow the trail from the Postpile to see the 101-foot drop of the San Joaquin River."
+          }
+        ],
+        "driving": "Allow 45–60 minutes via mandatory shuttle during peak summer months",
+        "note": "Check the NPS website for Reds Meadow Road reconstruction schedules which may impact access."
+      },
+      {
+        "title": "Eastern Sierra Scenic Loop",
+        "start": "Suggested: 9 AM from Mammoth Lakes",
+        "stops": [
+          {
+            "name": "Convict Lake",
+            "detail": "Walk the loop trail around this bright blue lake framed by the steep peaks of the Sierra."
+          },
+          {
+            "name": "June Lake Loop",
+            "detail": "Drive the scenic horseshoe-shaped canyon to view Grant, Silver, and Gull Lakes."
+          }
+        ],
+        "driving": "Allow 1.5–2 hours for the full loop; conditions vary with mountain weather",
+        "note": "Fall color usually peaks in late September or October depending on elevation."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Lakes Basin Demand",
+        "text": "Parking lots at Lake George and Horseshoe Lake often fill by 10 AM on summer weekends. Use the free town trolley to access popular trailheads without a car."
+      },
+      {
+        "kind": "signal",
+        "title": "High Elevation Service",
+        "text": "Service is reliable in town but vanishes once you enter the Lakes Basin or Reds Meadow. Carry paper maps for any hiking beyond the paved lake paths."
+      },
+      {
+        "kind": "fuel",
+        "title": "Mountain Town Supplies",
+        "text": "Mammoth Lakes has several stations, but prices are typically lower in Bishop. Refuel before heading north toward Lee Vining or the remote backcountry."
+      },
+      {
+        "kind": "timing",
+        "title": "Summer Shuttle Window",
+        "text": "The mandatory Reds Meadow shuttle typically runs from late June through Labor Day. Outside these dates, verify if the road is open to private vehicles."
+      },
+      {
+        "kind": "access",
+        "title": "Bear Country Protocol",
+        "text": "Black bears are active in all residential and recreation areas. Use bear-proof lockers for all scented items and never leave food in your vehicle."
+      }
+    ],
+    "arrival": "Arrive via US-395; if flying into MMH, arrange a shuttle or rental in advance as local taxi services are limited.",
+    "vehicle": "High-clearance vehicles are not required for main roads, but winter travel requires snow chains or 4WD per Caltrans regulations.",
+    "goldenHour": "Minaret Vista offers a premier sunset view of the Ritter Range, though afternoon thunderstorms can obscure the peaks in summer.",
+    "sources": [
+      {
+        "label": "Inyo National Forest",
+        "url": "https://www.fs.usda.gov/main/inyo/home"
+      }
+    ]
+  }
+}

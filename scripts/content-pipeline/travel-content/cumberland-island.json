@@ -1,0 +1,95 @@
+{
+  "slug": "cumberland-island",
+  "headline": "Strict Ferry and Wilderness Camping Quotas",
+  "reservation": "Access requires a ferry reservation through the official concessionaire, which can book up weeks in advance. Camping permits are managed by the National Park Service and are strictly limited by site capacity; distinguish between Sea Camp and primitive wilderness sites. Always check the official NPS site for current ferry schedules and permit availability.",
+  "source_url": "https://www.nps.gov/cuis/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Gilded Age Ruins and Wild Horses",
+        "start": "Suggested: 9 AM from St. Marys Ferry Dock",
+        "stops": [
+          {
+            "name": "Dungeness Mansion Ruins",
+            "detail": "Walk the skeletal remains of the Carnegie estate where feral horses often graze on the historic lawns."
+          },
+          {
+            "name": "Greene-Miller Cemetery",
+            "detail": "Visit the final resting place of Revolutionary War figures and island residents amidst the live oaks."
+          }
+        ],
+        "driving": "Walking or cycling only; no public vehicle access",
+        "note": "The ferry is the only public transport; do not miss the final departure time."
+      },
+      {
+        "title": "Maritime Forest and Wilderness Shores",
+        "start": "Suggested: 8:30 AM from Sea Camp",
+        "stops": [
+          {
+            "name": "Parallel Trail",
+            "detail": "Hike under a dense canopy of ancient live oaks and saw palmettos to experience the interior ecosystem."
+          },
+          {
+            "name": "Cumberland Island Beach",
+            "detail": "Explore miles of undeveloped Atlantic coastline for shell collecting and birdwatching."
+          }
+        ],
+        "driving": "Walking or cycling only; conditions vary with sand depth",
+        "note": "Bring all water and food as no concessions exist on the island."
+      },
+      {
+        "title": "North End History",
+        "start": "Suggested: 9 AM via Rental Bicycle",
+        "stops": [
+          {
+            "name": "Plum Orchard Mansion",
+            "detail": "Tour a fully preserved Gilded Age manor (check tour times at the dock) located mid-island."
+          },
+          {
+            "name": "First African Baptist Church",
+            "detail": "Visit The Settlement at the north end, a site of significant post-Civil War African American history."
+          }
+        ],
+        "driving": "Walking or cycling only; allow 4-6 hours for a round trip to the north end",
+        "note": "The 14-mile round trip to Plum Orchard is strenuous on sandy roads; pace accordingly."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Mainland Gateway Parking",
+        "text": "Complimentary parking is provided near the St. Marys Visitor Center for ferry passengers. Overnight campers must use designated long-term zones."
+      },
+      {
+        "kind": "signal",
+        "title": "Island-Wide Connectivity Gap",
+        "text": "Cellular service is unreliable and often non-existent once you leave the Dungeness area. Carry a physical map provided by the National Park Service."
+      },
+      {
+        "kind": "fuel",
+        "title": "Self-Sufficiency Requirement",
+        "text": "There are no fuel stations, grocery stores, or restaurants on the island. You must pack all necessary supplies from the mainland town of St. Marys."
+      },
+      {
+        "kind": "timing",
+        "title": "Ferry Departure Deadlines",
+        "text": "The ferry operates on a strict seasonal schedule; late arrivals will be stranded on the mainland or island. Arrive 30 minutes before your booked departure."
+      },
+      {
+        "kind": "access",
+        "title": "Wilderness Permit Boundaries",
+        "text": "Access to the northern wilderness areas for camping requires specific permits distinct from the ferry ticket. Only bicycles and foot traffic are permitted."
+      }
+    ],
+    "arrival": "Fly to JAX, drive one hour north to St. Marys, and check in at the NPS Visitor Center before boarding the scheduled ferry.",
+    "vehicle": "Private vehicles are prohibited on the island; mainland parking is for standard vehicles only.",
+    "goldenHour": "Dungeness Dock provides a viewpoint for the salt marshes at sunset, though evening visitors must be overnight permit holders.",
+    "sources": [
+      {
+        "label": "National Park Service",
+        "url": "https://www.nps.gov/cuis"
+      }
+    ]
+  }
+}

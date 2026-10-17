@@ -1,0 +1,95 @@
+{
+  "slug": "port-aransas",
+  "headline": "Beach Parking Permits and Mustang Island Access Rules",
+  "reservation": "Most public beaches in Port Aransas require a small annual vehicle parking permit, obtainable at local vendors and convenience stores. While general beach access is open, specific activities like large group events or camping at Mustang Island State Park require separate official permits. Check the official city and state park websites for changing local ordinances.",
+  "source_url": "https://portaransas.org/play/beaches/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Island Orientation and Gulf Views",
+        "start": "Suggested: 9 AM from Roberts Point Park",
+        "stops": [
+          {
+            "name": "Horace Caldwell Pier",
+            "detail": "Walk the elevated pier for views of the Gulf surf and local fishing activity."
+          },
+          {
+            "name": "Port Aransas Beach",
+            "detail": "Experience the unique drive-on beach culture and the vast sandy stretches of the Gulf Coast."
+          }
+        ],
+        "driving": "Allow 20 minutes; local transit via golf cart is highly recommended for town navigation.",
+        "note": "Ensure you have a beach parking permit displayed before driving onto the sand."
+      },
+      {
+        "title": "Wetlands and Marine Wildlife",
+        "start": "Suggested: 8 AM from Leonabelle Turnbull Center",
+        "stops": [
+          {
+            "name": "Leonabelle Turnbull Birding Center",
+            "detail": "Walk the boardwalk to spot roseate spoonbills and resident alligators in the freshwater marsh."
+          },
+          {
+            "name": "Lydia Ann Channel",
+            "detail": "Take a local boat transfer to view the historic Lydia Ann Lighthouse and watch for dolphins."
+          }
+        ],
+        "driving": "Allow 30 minutes; boat transfer times vary by local operator schedules.",
+        "note": "Bird activity is highest in the early morning; bring binoculars for the boardwalk."
+      },
+      {
+        "title": "Dunes and Undeveloped Coast",
+        "start": "Suggested: 9:30 AM from Alister Street",
+        "stops": [
+          {
+            "name": "Mustang Island State Park",
+            "detail": "Explore the protected dunes and paddling trails for a quieter, more natural coastal experience."
+          },
+          {
+            "name": "Port Aransas Museum",
+            "detail": "Learn about the island's history from the Karankawa people to the era of sport-fishing."
+          }
+        ],
+        "driving": "Allow 45 minutes; the state park is a short drive south of the main town center.",
+        "note": "State park entry is separate from city beach permits; verify capacity during holidays."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Beach Vehicle Rules",
+        "text": "Driving on the beach is permitted in designated zones but requires a visible city permit. Avoid soft sand areas to prevent vehicle recovery issues; stay on the hard-packed surface."
+      },
+      {
+        "kind": "signal",
+        "title": "Coastal Coverage",
+        "text": "Reception is generally reliable in the town of Port Aransas. Signal may drop significantly when heading south toward the undeveloped stretches of the State Park."
+      },
+      {
+        "kind": "fuel",
+        "title": "Island Services",
+        "text": "Fuel and basic supplies are concentrated along Alister Street and Hwy 361 in town. Prices on the island may be higher than in Aransas Pass or Corpus Christi."
+      },
+      {
+        "kind": "timing",
+        "title": "Ferry Wait Times",
+        "text": "The Aransas Pass ferry can have wait times exceeding two hours during peak summer weekends. Check the official TxDOT ferry camera feed before deciding on your route."
+      },
+      {
+        "kind": "access",
+        "title": "Jetties and Tides",
+        "text": "The South Jetty offers foot access for fishing and viewing, but rocks can be slippery and hazardous during high swells. Monitor local tide tables for safe beach driving conditions."
+      }
+    ],
+    "arrival": "Arrive at CRP, drive through Corpus Christi or take the Aransas Pass ferry, then rent a golf cart in town for local mobility.",
+    "vehicle": "Golf carts are standard for town; high-clearance vehicles are better for beach driving to avoid sand traps.",
+    "goldenHour": "Roberts Point Park for sunset views over the ship channel and harbor.",
+    "sources": [
+      {
+        "label": "City of Port Aransas Official",
+        "url": "https://cityofportaransas.org/"
+      }
+    ]
+  }
+}

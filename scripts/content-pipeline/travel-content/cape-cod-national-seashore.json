@@ -1,0 +1,95 @@
+{
+  "slug": "cape-cod-national-seashore",
+  "headline": "Official Beach Fees and Seasonal Access Procedures",
+  "reservation": "The National Seashore charges a daily vehicle fee or requires a valid federal lands pass from late spring through early autumn. Overnight camping is not permitted within the park boundaries; all accommodations must be reserved through private or municipal providers in neighboring towns. Check the official NPS website for the latest updates on beach stairs, shuttle operations, and shark activity advisories.",
+  "source_url": "https://www.nps.gov/caco/planyourvisit/fees.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Eastham Marshes and Atlantic Bluffs",
+        "start": "Suggested: 8:30 AM from Salt Pond",
+        "stops": [
+          {
+            "name": "Nauset Marsh Trail",
+            "detail": "Walk this loop from the visitor center to see how the landscape transitions from forest to a sheltered salt pond."
+          },
+          {
+            "name": "Nauset Light",
+            "detail": "View the iconic red-and-white lighthouse and learn about the ongoing efforts to protect it from coastal erosion."
+          }
+        ],
+        "driving": "Allow 20 minutes for local park roads; parking is strictly enforced in designated lots.",
+        "note": "The stairs to the beach at Nauset Light can be steep; check current access status."
+      },
+      {
+        "title": "Marconi History and Deep Woods",
+        "start": "Suggested: 9 AM from Wellfleet",
+        "stops": [
+          {
+            "name": "Marconi Station Site",
+            "detail": "Visit the location of the first transatlantic wireless message and enjoy panoramic views from the high bluffs."
+          },
+          {
+            "name": "Atlantic White Cedar Swamp Trail",
+            "detail": "Experience a unique boardwalk trail through a rare swamp environment sheltered from the Atlantic winds."
+          }
+        ],
+        "driving": "Allow 15 minutes between sights; road conditions are generally stable but narrow.",
+        "note": "The swamp trail can be humid and attracts insects; seasonal precautions are suggested."
+      },
+      {
+        "title": "Provincetown Dunes and Forests",
+        "start": "Suggested: 9 AM from Province Lands",
+        "stops": [
+          {
+            "name": "Beech Forest Trail",
+            "detail": "Walk through a shaded hardwood forest that offers a quiet contrast to the nearby coastal dunes."
+          },
+          {
+            "name": "Race Point Beach",
+            "detail": "Explore the remote feeling of the Cape's northernmost tip where the Atlantic meets the bay."
+          }
+        ],
+        "driving": "Allow 40 minutes if traveling from the Mid-Cape; traffic is heavy on summer weekends.",
+        "note": "Province Lands Visitor Center offers an elevated observation deck for 360-degree views."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Mandatory Shuttle Usage",
+        "text": "During peak season, Coast Guard Beach parking is restricted to a satellite lot with a required shuttle transfer. Plan for extra time during the midday peak when shuttle queues are longest."
+      },
+      {
+        "kind": "signal",
+        "title": "Visitor Center Hotspots",
+        "text": "Connectivity is strongest near Salt Pond and Province Lands Visitor Centers. Expect signal drop-offs on the interior woodland trails and at the base of the Marconi bluffs."
+      },
+      {
+        "kind": "fuel",
+        "title": "Route 6 Supply Points",
+        "text": "There are no fuel stations inside the National Seashore boundaries. Refill in the commercial areas of Wellfleet or Orleans before entering the park's protected zones."
+      },
+      {
+        "kind": "timing",
+        "title": "Program Schedules",
+        "text": "Ranger-led walks and lighthouse tours are seasonal and subject to staffing availability. Verify the daily schedule at a visitor center rather than relying on general seasonal brochures."
+      },
+      {
+        "kind": "access",
+        "title": "Shark Awareness",
+        "text": "Great white sharks are seasonal inhabitants of these waters; follow all Purple Flag warnings and lifeguard instructions. Avoid swimming near seals, which are a primary food source for sharks."
+      }
+    ],
+    "arrival": "Upon arrival at the Outer Cape, stop at the Salt Pond Visitor Center to obtain the latest park maps and inquire about any recent trail closures or weather advisories.",
+    "vehicle": "Standard vehicles are suitable for all paved park roads; off-road vehicle (ORV) permits are highly regulated and require specific equipment and orientation.",
+    "goldenHour": "The Marconi Overlook is a named viewpoint for watching the light shift over the Atlantic, though morning hours often provide the clearest views.",
+    "sources": [
+      {
+        "label": "Official NPS Park Website",
+        "url": "https://www.nps.gov/caco/index.htm"
+      }
+    ]
+  }
+}

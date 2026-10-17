@@ -1,0 +1,99 @@
+{
+  "slug": "jackson",
+  "headline": "Check Official Teton Campground and Backcountry Portals",
+  "reservation": "Grand Teton National Park requires advanced reservations for all campgrounds, which typically fill months in advance during the peak summer window. While general vehicle entry does not currently require a permit, specific popular trailheads or boat shuttles operate on independent systems. Check the official park service portal for the most current access policies and backcountry permits.",
+  "source_url": "https://www.nps.gov/grte/planyourvisit/conditions.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Town Orientation and Antler Arches",
+        "start": "Suggested: 2 PM from Jackson Hole Airport",
+        "stops": [
+          {
+            "name": "Jackson Town Square",
+            "detail": "Walk beneath the four elk-antler arches and explore the surrounding galleries to acclimate to the valley's elevation."
+          },
+          {
+            "name": "National Museum of Wildlife Art",
+            "detail": "Visit the hillside galleries overlooking the National Elk Refuge to see historical and contemporary interpretations of regional fauna."
+          }
+        ],
+        "driving": "Allow 30–60 minutes for local town transit; conditions vary",
+        "note": "Parking in downtown Jackson is strictly monitored; check posted time limits."
+      },
+      {
+        "title": "The Glacial Lakes of the Teton Front",
+        "start": "Suggested: 7:30 AM from downtown Jackson",
+        "stops": [
+          {
+            "name": "Jenny Lake",
+            "detail": "Choose between a shoreline hike or a seasonal shuttle boat across the water to reach the trailheads for Hidden Falls."
+          },
+          {
+            "name": "Inspiration Point",
+            "detail": "Ascend the rocky trail for an elevated view of the lake and the expanse of Jackson Hole to the east."
+          },
+          {
+            "name": "Moose Visitor Center",
+            "detail": "Review exhibits on the park's unique geology and speak with staff about current wildlife activity and trail alerts."
+          }
+        ],
+        "driving": "Allow 2 hours total for park loop driving; conditions vary",
+        "note": "Jenny Lake parking often fills by mid-morning during summer; have a secondary trailhead like String Lake in mind."
+      },
+      {
+        "title": "River Overlooks and Historic Sites",
+        "start": "Suggested: 8:30 AM from Jackson",
+        "stops": [
+          {
+            "name": "Snake River Overlook",
+            "detail": "Stand at the site made famous by Ansel Adams to see the river curve beneath the central Teton peaks."
+          },
+          {
+            "name": "Mormon Row Historic District",
+            "detail": "Photograph the preserved barns of the early 20th-century homesteaders with the mountain range as a backdrop."
+          }
+        ],
+        "driving": "Allow 2.5 hours for the northern loop; conditions vary",
+        "note": "Remain at least 100 yards from bears and wolves and 25 yards from all other wildlife."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead Congestion",
+        "text": "Parking lots at Taggart Lake and Jenny Lake are highly competitive from July through August. Arriving before 8 AM is a common suggestion, but availability depends on daily volume and seasonal staff management."
+      },
+      {
+        "kind": "signal",
+        "title": "Variable Connectivity",
+        "text": "Cellular reception is generally reliable in the town of Jackson but drops significantly upon entering Grand Teton National Park. Download offline maps for use near the Inner Park Road and the northern canyons."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Supply",
+        "text": "Fuel stations are located in Jackson and at specific park villages like Colter Bay or Moose. Ensure your tank is sufficient before heading toward the more remote northern boundaries or the Teton Park Road."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Road Closures",
+        "text": "The Teton Park Road and Moose-Wilson Road undergo significant winter closures typically starting in November. Always verify opening dates on the official NPS site if visiting in May or June."
+      },
+      {
+        "kind": "access",
+        "title": "Boat Shuttle Operations",
+        "text": "The Jenny Lake boat shuttle is a seasonal service that reduces hiking mileage but is subject to weather delays. Confirm the last return trip time with the operator before heading into the backcountry."
+      }
+    ],
+    "arrival": "Collect your rental vehicle at Jackson Hole Airport and drive 20-30 minutes into Jackson to stock up on bear spray and trailhead snacks before checking into your lodging.",
+    "vehicle": "Standard passenger cars are suitable for the main park loops, but ensure any rental agreement allows for driving on unpaved roads if visiting Mormon Row.",
+    "goldenHour": "Schwabacher Landing is a preferred sunrise location for still reflections of the peaks, though light quality varies by month.",
+    "sources": [
+      {
+        "label": "Grand Teton National Park",
+        "url": "https://www.nps.gov/grte/index.htm"
+      }
+    ]
+  }
+}

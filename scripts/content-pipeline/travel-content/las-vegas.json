@@ -1,0 +1,95 @@
+{
+  "slug": "las-vegas",
+  "headline": "Timed Entry Reservations for Red Rock Canyon",
+  "reservation": "Red Rock Canyon National Conservation Area requires timed-entry reservations for the Scenic Drive during peak months (typically October through May). This is separate from any backcountry or camping permits. Valley of Fire and Lake Mead have entrance fees but currently operate without timed reservations; always check official BLM and NPS sites for system changes before driving.",
+  "source_url": "https://www.redrockcanyonlv.org/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Sandstone and Scenic Drives",
+        "start": "Suggested: 8:00 AM from the Strip",
+        "stops": [
+          {
+            "name": "Red Rock Canyon Visitor Center",
+            "detail": "View the desert tortoise habitat and obtain the current day's trail conditions."
+          },
+          {
+            "name": "Calico Hills",
+            "detail": "Walk along the base of the vibrant red sandstone formations near the start of the Scenic Drive."
+          }
+        ],
+        "driving": "Allow 45 minutes; city traffic and park entry queues vary.",
+        "note": "Timed entry is strictly enforced; arriving without a slot may result in being turned away."
+      },
+      {
+        "title": "Lake and Dam Exploration",
+        "start": "Suggested: 9:00 AM toward Boulder City",
+        "stops": [
+          {
+            "name": "Hoover Dam",
+            "detail": "Visit the Mike O'Callaghan–Pat Tillman Memorial Bridge for an overlook of the dam and Colorado River."
+          },
+          {
+            "name": "Lake Mead Overlook",
+            "detail": "Stop at established viewpoints like Lakeview Point to see the reservoir's scale and surrounding mountains."
+          }
+        ],
+        "driving": "Allow 1 hour; security checkpoints at the dam can add significant time.",
+        "note": "Check the Bureau of Reclamation site for current security restrictions and tour access."
+      },
+      {
+        "title": "High Elevation Contrast",
+        "start": "Suggested: 8:30 AM toward Mt. Charleston",
+        "stops": [
+          {
+            "name": "Spring Mountains Visitor Gateway",
+            "detail": "Learn about the unique biodiversity of this 'sky island' before exploring forested trails."
+          },
+          {
+            "name": "Mary Jane Falls Trailhead",
+            "detail": "Hike toward the seasonal waterfall, noting that water flow is highly dependent on recent snowmelt."
+          }
+        ],
+        "driving": "Allow 1.5 hours; the climb involves significant elevation gain.",
+        "note": "Temperatures at Mt. Charleston are often 20 degrees cooler than the Las Vegas valley."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "Flash Flood Risk",
+        "text": "Rain can cause immediate flash floods in desert washes and slot canyons. Avoid low-lying areas if storms are forecast for the region."
+      },
+      {
+        "kind": "timing",
+        "title": "Heat Management",
+        "text": "During summer, outdoor activity should be concluded by 10 AM. Carry significantly more water than you expect to need for even short walks."
+      },
+      {
+        "kind": "parking",
+        "title": "Hoover Dam Logistics",
+        "text": "Parking garages at the dam fill quickly; oversized vehicles must use designated lots on the Arizona side."
+      },
+      {
+        "kind": "fuel",
+        "title": "Remote Road Prep",
+        "text": "Ensure your tank is full before heading to Valley of Fire or Mt. Charleston; services are non-existent once you leave the main highways."
+      },
+      {
+        "kind": "signal",
+        "title": "Canyon Connectivity",
+        "text": "Cell service is unreliable inside Red Rock Canyon and the Spring Mountains. Download trail maps and reservation QR codes for offline access."
+      }
+    ],
+    "arrival": "Arrive at Harry Reid International Airport (LAS), pick up rental car, and stop in Summerlin or Henderson for water and supplies.",
+    "vehicle": "Standard cars are fine for main park roads; check rental terms for 'off-road' exclusions even on graded dirt paths.",
+    "goldenHour": "Red Rock Canyon's sandstone cliffs are most vibrant in the hour before sunset; check seasonal gate closing times.",
+    "sources": [
+      {
+        "label": "Bureau of Land Management - Red Rock",
+        "url": "https://www.blm.gov/programs/national-conservation-lands/nevada/red-rock-canyon"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "louisville",
+  "headline": "Distillery Tour and Racing Event Reservation Guide",
+  "reservation": "Distillery tours and Churchill Downs racing events require separate advanced bookings; bourbon tours often fill weeks in advance. During the Kentucky Derby period, accommodation and event access are severely restricted and require official ticketing via Churchill Downs.",
+  "source_url": "https://www.churchilldowns.com/visit/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Bluegrass Racing and Main Street History",
+        "start": "Suggested: 8:30 AM from Downtown",
+        "stops": [
+          {
+            "name": "Churchill Downs",
+            "detail": "Visit the Kentucky Derby Museum to explore the history of the legendary thoroughbred races."
+          },
+          {
+            "name": "Louisville Slugger Museum & Factory",
+            "detail": "See the production of iconic wooden bats on Museum Row, marked by the world's largest steel bat."
+          }
+        ],
+        "driving": "Allow 45 minutes; city traffic conditions vary",
+        "note": "Check the racing calendar; the track is active during specific Spring, September, and Fall meets."
+      },
+      {
+        "title": "Whiskey Row and Victorian Architecture",
+        "start": "Suggested: 10 AM from Whiskey Row",
+        "stops": [
+          {
+            "name": "Old Forester Distillery",
+            "detail": "Experience a guided tour of an active urban distillery located in a restored 19th-century building."
+          },
+          {
+            "name": "Old Louisville",
+            "detail": "Walk the gas-lit streets of St. James Court to view one of the largest concentrations of Victorian mansions in the US."
+          }
+        ],
+        "driving": "Allow 30 minutes; local street parking varies",
+        "note": "Walking is the best way to see Old Louisville's intricate brickwork and gardens."
+      },
+      {
+        "title": "Limestone Caverns and River Views",
+        "start": "Suggested: 9:30 AM from Highlands",
+        "stops": [
+          {
+            "name": "Louisville Mega Cavern",
+            "detail": "Explore the man-made underground space via tram to learn about the region's geological history."
+          },
+          {
+            "name": "Big Four Bridge",
+            "detail": "Walk this converted railway pedestrian bridge for elevated views over the Ohio River and city skyline."
+          }
+        ],
+        "driving": "Allow 40 minutes; bridge access is pedestrian only",
+        "note": "The Mega Cavern maintains a consistent temperature; a light jacket is suggested for the underground tour."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Downtown Garages",
+        "text": "Ample parking is available in the West Main District garages, though street parking is metered. Check local signs for game-day restrictions near the arena."
+      },
+      {
+        "kind": "signal",
+        "title": "Urban Coverage",
+        "text": "Reliable 5G/LTE is available throughout the metropolitan area. Signal may drop within the deep limestone recesses of the Mega Cavern."
+      },
+      {
+        "kind": "fuel",
+        "title": "Regional Access",
+        "text": "Fuel stations are frequent throughout the city and near SDF airport. If heading to the Bourbon Trail, refuel in the metropolitan area."
+      },
+      {
+        "kind": "timing",
+        "title": "Derby Congestion",
+        "text": "The two weeks leading up to the first Saturday in May see extreme congestion and surge pricing. Plan museum visits outside of this window for a quieter experience."
+      },
+      {
+        "kind": "access",
+        "title": "Distillery Availability",
+        "text": "Most urban distilleries on Whiskey Row require reservations for interior tours. Walk-in retail access is usually available during business hours."
+      }
+    ],
+    "arrival": "Pick up rental at SDF; it is a 15-minute drive to the West Main District hotels. NuLu and the Highlands are the primary supply hubs.",
+    "vehicle": "Compact or standard cars are ideal for city navigation; RVs should use designated peripheral lots for Churchill Downs.",
+    "goldenHour": "Big Four Bridge for sunset over the Ohio River, noting visibility varies by season.",
+    "sources": [
+      {
+        "label": "Kentucky Bourbon Trail",
+        "url": "https://kybourbontrail.com/"
+      }
+    ]
+  }
+}

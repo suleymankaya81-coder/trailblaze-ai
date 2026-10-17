@@ -1,0 +1,95 @@
+{
+  "slug": "mackinac-island",
+  "headline": "Ferries and Victorian Lodging Logistics",
+  "reservation": "Access to the island requires a ferry ticket, while the island itself is a state park with no entry fee. The bottleneck is overnight accommodation; Victorian hotels and B&Bs often book a year in advance for summer weekends. Ferry schedules vary by season and weather; check official operators like Shepler's or Star Line for current departures.",
+  "source_url": "https://www.mackinacisland.org/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Coastal Perimeter and Harbor Life",
+        "start": "Suggested: 9 AM from Mackinaw City Ferry Dock",
+        "stops": [
+          {
+            "name": "M-185 Shoreline Loop",
+            "detail": "Cycle the only motor-free state highway in the US, an 8-mile paved path encircling the island."
+          },
+          {
+            "name": "Arch Rock",
+            "detail": "View the 146-foot natural limestone span from the shoreline road and the upper bluff stairs."
+          }
+        ],
+        "driving": "Local transfer by ferry (20 mins) followed by walking or cycling.",
+        "note": "Bicycle rentals are high-volume; arriving before 10 AM ensures the best selection of specialized equipment."
+      },
+      {
+        "title": "Fortifications and Interior Forests",
+        "start": "Suggested: 10 AM from Main Street",
+        "stops": [
+          {
+            "name": "Fort Mackinac",
+            "detail": "Explore the 14 original historic buildings and watch live rifle demonstrations overlooking the Straits."
+          },
+          {
+            "name": "Sugar Loaf",
+            "detail": "Hike to this 75-foot limestone breccia stack located in the island's wooded interior."
+          }
+        ],
+        "driving": "No motorized vehicles; allow time for horse-drawn taxi transit if not walking.",
+        "note": "The walk to the fort is a steep uphill climb; horse carriages are available for those with mobility concerns."
+      },
+      {
+        "title": "High Bluffs and Historic Homes",
+        "start": "Suggested: 9:30 AM from Market Street",
+        "stops": [
+          {
+            "name": "Biddle House",
+            "detail": "Learn about the island's fur trading history at one of the oldest residential structures in Michigan."
+          },
+          {
+            "name": "Grand Hotel West Bluff",
+            "detail": "Stroll past the iconic Victorian cottages for views of the Mackinac Bridge."
+          }
+        ],
+        "driving": "Walking or horse-drawn carriage; conditions vary by weather.",
+        "note": "Non-guest access to the Grand Hotel porch typically requires a separate admission fee."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "Ferry Weather Impacts",
+        "text": "High winds on Lake Huron can cause ferry delays or cancellations. Monitor the official ferry social media channels for real-time straits conditions."
+      },
+      {
+        "kind": "fuel",
+        "title": "Mainland Refueling",
+        "text": "Fuel is only available in Mackinaw City or St. Ignace before boarding the ferry. There are no gas stations for public use on the island."
+      },
+      {
+        "kind": "signal",
+        "title": "Downtown Connectivity",
+        "text": "Signal is generally strong in the harbor area but can drop in the interior cedar forests. Download offline maps for the 70 miles of interior trails."
+      },
+      {
+        "kind": "timing",
+        "title": "Day Tripper Flux",
+        "text": "The island is quietest before 10 AM and after 5 PM. Plan your Main Street shopping outside of the peak ferry arrival window."
+      },
+      {
+        "kind": "parking",
+        "title": "Mainland Staging",
+        "text": "Large secure parking lots are available at the ferry terminals in Mackinaw City. Overnight guests should utilize the designated long-term valet or shuttle lots."
+      }
+    ],
+    "arrival": "Fly into Pellston (PLN), take a shuttle to Mackinaw City, and board the ferry; your luggage is typically transferred directly to island hotels.",
+    "vehicle": "Cars are prohibited on the island; leave your vehicle in a secure mainland ferry lot.",
+    "goldenHour": "The West Bluff offers elevated views of the Mackinac Bridge at sunset, subject to evening cloud cover.",
+    "sources": [
+      {
+        "label": "Mackinac Island State Park",
+        "url": "https://www.mackinacparks.com/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "colorado-springs",
+  "headline": "Pikes Peak and Incline Reservation Logistics",
+  "reservation": "Timed reservations are currently required for the Pikes Peak Highway and the Manitou Incline to manage visitor volume. These systems are managed by the City of Colorado Springs and are separate from any hotel bookings. Verify specific reservation windows and permit availability on official municipal or railway sites before your arrival.",
+  "source_url": "https://coloradosprings.gov/pikes-peak-americas-mountain",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Red Rocks and Foothills",
+        "start": "Suggested: 8 AM from Downtown Colorado Springs",
+        "stops": [
+          {
+            "name": "Garden of the Gods",
+            "detail": "Walk the Perkins Central Garden Trail to see the towering red sandstone formations against a Pikes Peak backdrop."
+          },
+          {
+            "name": "Old Colorado City",
+            "detail": "Explore the historic 1859 territorial capital, now a district with local galleries and history."
+          }
+        ],
+        "driving": "Allow 1 hour for local transfers; conditions vary by seasonal park crowds.",
+        "note": "Garden of the Gods is a city park with high midday visitation; early arrivals are suggested."
+      },
+      {
+        "title": "The High Alpine Summit",
+        "start": "Suggested: 9 AM from Manitou Springs",
+        "stops": [
+          {
+            "name": "Pikes Peak Summit",
+            "detail": "Reach the 14,115-foot peak via the Cog Railway or the scenic Pikes Peak Highway."
+          },
+          {
+            "name": "Summit Visitor Center",
+            "detail": "Experience the high-altitude environment and view the surrounding Front Range from the new observation deck."
+          }
+        ],
+        "driving": "Allow 3–4 hours for a full round trip; conditions vary by weather and vehicle cooling stops.",
+        "note": "Rapid elevation gain can cause altitude sickness; limit physical exertion at the summit."
+      },
+      {
+        "title": "Canyons and Cascades",
+        "start": "Suggested: 8:30 AM from Southwest Springs",
+        "stops": [
+          {
+            "name": "North Cheyenne Cañon Park",
+            "detail": "Drive through the granite-walled canyon to reach Helen Hunt Falls for a short walk."
+          },
+          {
+            "name": "Starsmore Visitor and Nature Center",
+            "detail": "Learn about the local geology and bird species that inhabit the shaded canyon ecosystem."
+          }
+        ],
+        "driving": "Allow 45 minutes; conditions vary by narrow canyon road traffic.",
+        "note": "Canyon areas remain significantly cooler than the city; bring an extra layer for shaded walks."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Manitou Congestion",
+        "text": "Parking in Manitou Springs for the Incline or Cog Railway is extremely limited and often requires a paid shuttle from satellite lots. Plan for at least 30 extra minutes for shuttle transfers."
+      },
+      {
+        "kind": "signal",
+        "title": "Canyon Outages",
+        "text": "Signal strength drops significantly within North Cheyenne Cañon and on the higher reaches of the Pikes Peak Highway. Ensure your reservation QR codes are saved offline before heading up."
+      },
+      {
+        "kind": "fuel",
+        "title": "Brake Safety",
+        "text": "While fuel is available in town, the Pikes Peak Highway requires a brake check at the Glen Cove station on the descent. Use low gears to prevent brake overheating during the long downhill drive."
+      },
+      {
+        "kind": "timing",
+        "title": "Morning Clearances",
+        "text": "Pikes Peak visibility is often best in the early morning before convective clouds build in the afternoon. Aim for an early ascent to maximize the chances of a clear view to the horizon."
+      },
+      {
+        "kind": "access",
+        "title": "Strenuous Routes",
+        "text": "The Manitou Incline is an advanced hiking route with over 2,000 feet of elevation gain in less than a mile. It is not recommended for those with health conditions or who are unaccustomed to the altitude."
+      }
+    ],
+    "arrival": "Arrive at Colorado Springs Municipal Airport (COS) and pick up a rental car; grocery stops are available along Highway 24 before checking into Manitou Springs lodgings.",
+    "vehicle": "A vehicle with manual gear selection (low gears) is mandatory for the Pikes Peak Highway; rental cars must be checked for mountain road compliance.",
+    "goldenHour": "Garden of the Gods offers views of the red rocks glowing at sunset, though shadows in the canyon fall early due to the western peaks.",
+    "sources": [
+      {
+        "label": "City of Colorado Springs Parks",
+        "url": "https://coloradosprings.gov/parks"
+      }
+    ]
+  }
+}

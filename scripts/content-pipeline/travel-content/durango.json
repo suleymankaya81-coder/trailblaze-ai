@@ -1,0 +1,95 @@
+{
+  "slug": "durango",
+  "headline": "Historic Rail and Mesa Verde Tour Requirements",
+  "reservation": "The Durango & Silverton Narrow Gauge Railroad and Mesa Verde cliff dwelling tours are the primary bottlenecks; both require independent advance reservations. Entering Mesa Verde NP requires a standard park pass, but ranger-led tours must be booked through Recreation.gov. Check official sites for seasonal changes to train routes and park accessibility.",
+  "source_url": "https://www.nps.gov/meve",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Historic Town and River",
+        "start": "Suggested: 9:30 AM from Main Avenue",
+        "stops": [
+          {
+            "name": "Animas River Trail",
+            "detail": "Walk or bike this paved path for views of the river and local wildlife."
+          },
+          {
+            "name": "Powerhouse Science Center",
+            "detail": "Visit this unique museum housed in a coal-fired power plant along the riverbank."
+          }
+        ],
+        "driving": "Walking or local transfer; conditions vary",
+        "note": "Keep children away from the river edge during the high-velocity spring runoff."
+      },
+      {
+        "title": "The Narrow Gauge Journey",
+        "start": "Suggested: 8 AM from the Durango Depot",
+        "stops": [
+          {
+            "name": "Durango & Silverton Narrow Gauge Railroad",
+            "detail": "Ride the historic steam train through the remote wilderness of the Animas Canyon."
+          },
+          {
+            "name": "D&SNG Railroad Museum",
+            "detail": "Explore the history of railroading in the San Juan Mountains after your return."
+          }
+        ],
+        "driving": "Full day train travel; conditions vary",
+        "note": "Train routes vary by season; verify if your trip goes to Silverton or Cascade Canyon."
+      },
+      {
+        "title": "Ancestral Puebloan Heritage",
+        "start": "Suggested: 8 AM from West Durango",
+        "stops": [
+          {
+            "name": "Mesa Verde National Park",
+            "detail": "Observe the architectural wonders of the Ancestral Puebloan cliff dwellings from canyon overlooks."
+          },
+          {
+            "name": "Chapin Mesa Archeological Museum",
+            "detail": "Deepen your understanding of the region's history through local artifacts and exhibits."
+          }
+        ],
+        "driving": "Allow 3-4 hours round trip including park roads; conditions vary",
+        "note": "Driving within Mesa Verde takes longer than expected due to steep, winding grades."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Downtown Metering",
+        "text": "Main Avenue parking is metered and has strict time limits. Use the public lots near the Transit Center if you have a full-day train excursion booked."
+      },
+      {
+        "kind": "signal",
+        "title": "Mountain Road Gaps",
+        "text": "Cellular coverage is non-existent within the Animas Canyon and parts of Mesa Verde. Do not rely on digital navigation for travel between Silverton and Durango."
+      },
+      {
+        "kind": "fuel",
+        "title": "Mountain Gateway Logistics",
+        "text": "Durango is the primary supply hub for the San Juans. Fuel up before heading west to Mesa Verde, as services within the park are seasonally limited."
+      },
+      {
+        "kind": "timing",
+        "title": "Tour Check-in Window",
+        "text": "Mesa Verde tours require checking in at the visitor center at least 15 minutes prior to your window. Allow an extra hour for the drive from the park gate to the sites."
+      },
+      {
+        "kind": "access",
+        "title": "Ladder and Step Hazards",
+        "text": "Access to specific cliff dwellings involves climbing steep ladders and uneven stone steps. Check the official NPS physical requirements before booking specific tours."
+      }
+    ],
+    "arrival": "Fly into Durango–La Plata County Airport (DRO). Arrange your rental car in advance for the 20-minute drive into the city center.",
+    "vehicle": "A standard car is fine for town and Mesa Verde, but a 4WD is safer for US 550 during sudden autumn snowstorms.",
+    "goldenHour": "Molas Pass offers an expansive view of the Needle Mountains, best viewed during the soft light of a summer evening.",
+    "sources": [
+      {
+        "label": "Mesa Verde National Park",
+        "url": "https://www.nps.gov/meve"
+      }
+    ]
+  }
+}

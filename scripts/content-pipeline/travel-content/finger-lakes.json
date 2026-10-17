@@ -1,0 +1,95 @@
+{
+  "slug": "finger-lakes",
+  "headline": "Check New York State Park Gorge and Swimming Status",
+  "reservation": "Major state parks like Watkins Glen and Taughannock Falls require vehicle entry fees, typically collected seasonally at the gate. While general entry is not reserved, popular gorge trails are seasonal and may close for maintenance or weather; swimming access is strictly managed via official water quality checks. Accommodation during peak wine and harvest seasons requires booking months in advance through private or state park portals.",
+  "source_url": "https://parks.ny.gov/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Ithaca Gorges and Cayuga Lake",
+        "start": "Suggested: 8:30 AM from Ithaca",
+        "stops": [
+          {
+            "name": "Taughannock Falls State Park",
+            "detail": "Visit the 215-foot waterfall via the flat gorge trail or the upper overlook."
+          },
+          {
+            "name": "Buttermilk Falls State Park",
+            "detail": "Explore the cascading falls and natural swimming area at the base of the park."
+          }
+        ],
+        "driving": "Allow 40 minutes round trip between Ithaca and Trumansburg; traffic varies by season.",
+        "note": "Gorge trails involve stairs and wet surfaces; check for seasonal opening dates."
+      },
+      {
+        "title": "Watkins Glen and Seneca Shores",
+        "start": "Suggested: 9 AM from Watkins Glen",
+        "stops": [
+          {
+            "name": "Watkins Glen State Park",
+            "detail": "Walk the stone-carved Gorge Trail through 19 waterfalls and deep rock chambers."
+          },
+          {
+            "name": "Seneca Lake Pier",
+            "detail": "Stroll the public waterfront for expansive views of the deepest of the Finger Lakes."
+          }
+        ],
+        "driving": "Allow 60 minutes for the transfer between Ithaca and Watkins Glen; conditions vary.",
+        "note": "Watkins Glen parking fills rapidly; arrive early to secure a spot in the main lot."
+      },
+      {
+        "title": "Museums and Keuka Heritage",
+        "start": "Suggested: 10 AM from Hammondsport",
+        "stops": [
+          {
+            "name": "Corning Museum of Glass",
+            "detail": "Witness live glass-blowing demonstrations and explore 3,500 years of glass history."
+          },
+          {
+            "name": "Glenn H. Curtiss Museum",
+            "detail": "Discover the local history of aviation and early motorcycle engineering."
+          }
+        ],
+        "driving": "Allow 30 minutes between Corning and Hammondsport; check local traffic.",
+        "note": "Corning Museum tickets are best purchased in advance to secure specific demonstration times."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "State Park Capacity",
+        "text": "Parking at Watkins Glen is highly competitive on weekends; use the shuttle service if the main lot is full. Taughannock Falls has separate lots for the overlook and the gorge trail."
+      },
+      {
+        "kind": "signal",
+        "title": "Lakeside Connectivity",
+        "text": "Cellular reception is generally good in Ithaca and Corning but can be spotty along the steep hillsides of Keuka Lake. Download maps for rural vineyard roads."
+      },
+      {
+        "kind": "fuel",
+        "title": "Rural Supply Lines",
+        "text": "Gas stations are plentiful in towns like Geneva and Ithaca but are rare on the scenic roads between lakes. Refill in town before starting a full loop of Seneca or Cayuga Lake."
+      },
+      {
+        "kind": "timing",
+        "title": "Waterfront Activity",
+        "text": "Swimming areas only open when lifeguards are present and water quality is verified. Check the NY State Parks website for algal bloom advisories before visiting beaches."
+      },
+      {
+        "kind": "access",
+        "title": "Seasonal Closures",
+        "text": "Most gorge trails close in late autumn and remain inaccessible until spring due to ice hazards. Official overlooks usually remain open year-round for sightseeing."
+      }
+    ],
+    "arrival": "Arrive at ITH and drive into Ithaca to check into your base. Stock up on regional supplies and local produce at the Farmers Market before heading to your first trailhead.",
+    "vehicle": "Standard passenger cars are ideal for the paved lake roads. If traveling in winter, ensure the vehicle has appropriate tires for potential lake-effect snow.",
+    "goldenHour": "Taughannock Falls Overlook provides a dramatic viewpoint for evening light hitting the falls.",
+    "sources": [
+      {
+        "label": "New York State Parks",
+        "url": "https://parks.ny.gov/parks/watkinsglen/"
+      }
+    ]
+  }
+}

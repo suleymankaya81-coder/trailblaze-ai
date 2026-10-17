@@ -1,0 +1,95 @@
+{
+  "slug": "lake-chelan",
+  "headline": "Advance Ferry and Stehekin Lodging Coordination Required",
+  "reservation": "Stehekin is only accessible by boat or floatplane, making transportation the primary bottleneck. You must book the Lady of the Lake or Chelan Jet Boat separately from any camping or lodge reservations. National Park Service camping permits for the Stehekin area are managed via a changing system; verify current windows on the official North Cascades NP site.",
+  "source_url": "https://www.nps.gov/noca/planyourvisit/stehekin.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Lower Lake and Manson Exploration",
+        "start": "Suggested: 9 AM from Chelan",
+        "stops": [
+          {
+            "name": "Chelan Riverwalk Park",
+            "detail": "Enjoy a gentle loop trail through the town center along the water's edge to get oriented."
+          },
+          {
+            "name": "Lake Chelan State Park",
+            "detail": "Spend the afternoon at the beach or utilizing the launch facilities for a short paddle."
+          }
+        ],
+        "driving": "Allow 45 minutes; conditions vary near popular marinas",
+        "note": "Summer weekends bring high vessel traffic; stay within designated swimming zones."
+      },
+      {
+        "title": "Journey to the Upper Lake",
+        "start": "Suggested: 8 AM from Field's Point Landing",
+        "stops": [
+          {
+            "name": "Stehekin Landing",
+            "detail": "Arrive via passenger ferry at this roadless community nestled in the North Cascades."
+          },
+          {
+            "name": "Rainbow Falls",
+            "detail": "Take the local shuttle or hike to view the 312-foot waterfall cascading into the valley."
+          }
+        ],
+        "driving": "Walking or local shuttle only; ferry takes 1.5 to 4 hours depending on vessel",
+        "note": "Verify shuttle schedules at the landing as they may not meet every boat arrival."
+      },
+      {
+        "title": "North Shore Vistas",
+        "start": "Suggested: 10 AM from Manson",
+        "stops": [
+          {
+            "name": "Manson Bay Park",
+            "detail": "Visit this north shore hub for swimming or to explore the surrounding orchard landscape."
+          },
+          {
+            "name": "Chelan Butte",
+            "detail": "Drive or hike the access routes for an expansive view of the lake's full 50-mile length."
+          }
+        ],
+        "driving": "Allow 1 hour for local Manson roads; conditions vary on steep Butte paths",
+        "note": "Check road restrictions on the Butte if driving an RV or large vehicle."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Ferry Terminal Parking",
+        "text": "Long-term parking for Stehekin trips is available at Field's Point Landing or Chelan. These lots often require a fee and fill early during the peak summer season."
+      },
+      {
+        "kind": "signal",
+        "title": "Remote Communication",
+        "text": "Cell service is generally reliable in the towns of Chelan and Manson. There is no cell service in Stehekin; plan for offline navigation and pre-arranged meetups."
+      },
+      {
+        "kind": "fuel",
+        "title": "Lower Lake Supplies",
+        "text": "Full services including fuel and groceries are located in Chelan and Manson. No fuel is available for public road vehicles in Stehekin as there is no road connection."
+      },
+      {
+        "kind": "timing",
+        "title": "Ferry Schedule Reliance",
+        "text": "Your entire itinerary depends on ferry departure times which vary by season. Arrival at the dock at least 45 minutes prior to departure is suggested to handle luggage."
+      },
+      {
+        "kind": "access",
+        "title": "Upper Lake Transit",
+        "text": "Access to Rainbow Falls and the Stehekin Bakery relies on the valley shuttle or bicycle rentals. Service levels drop significantly outside of the June to September window."
+      }
+    ],
+    "arrival": "Arrive at Pangborn Memorial Airport (EAT), rent a vehicle, and drive 1 hour north to Chelan to check into local lodging before evening ferry planning.",
+    "vehicle": "A standard vehicle is fine for the lower lake; Stehekin is pedestrian/shuttle only. Check rental agreements for driving on unpaved Butte roads.",
+    "goldenHour": "Chelan Butte, with a seasonal caveat for smoke conditions during summer wildfire season.",
+    "sources": [
+      {
+        "label": "North Cascades National Park",
+        "url": "https://www.nps.gov/noca/index.htm"
+      }
+    ]
+  }
+}

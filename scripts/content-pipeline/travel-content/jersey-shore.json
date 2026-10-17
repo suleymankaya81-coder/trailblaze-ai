@@ -1,0 +1,95 @@
+{
+  "slug": "jersey-shore",
+  "headline": "Beach Tags and State Park Entry Systems",
+  "reservation": "Most Jersey Shore beaches require daily or seasonal 'beach tags' for access during the summer months; these are sold locally by each municipality. State parks like Island Beach require a vehicle entry fee, and capacity limits may apply during peak weekends. Accommodations should be booked months in advance for July and August stays.",
+  "source_url": "https://nj.gov/dep/parksandforests/parks/islandbeachstatepark.html",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "North Shore Music and Victorian Architecture",
+        "start": "Suggested: 10 AM from Asbury Park",
+        "stops": [
+          {
+            "name": "Asbury Park Boardwalk",
+            "detail": "Walk the historic waterfront to see the Convention Hall and vibrant murals that define this musical hub."
+          },
+          {
+            "name": "Ocean Grove Tent City",
+            "detail": "Explore the unique Victorian cottages and the Great Auditorium in this historic religious retreat."
+          }
+        ],
+        "driving": "Walking within towns; 15-minute local drives between hubs",
+        "note": "Parking in Asbury Park uses a metered app system; check signage for zone details."
+      },
+      {
+        "title": "Maritime Forests and Barnegat Views",
+        "start": "Suggested: 9 AM from Seaside Park",
+        "stops": [
+          {
+            "name": "Island Beach State Park",
+            "detail": "Traverse self-guided nature trails through the last remaining undeveloped barrier island dunes in the state."
+          },
+          {
+            "name": "Barnegat Lighthouse State Park",
+            "detail": "Climb the historic 'Old Barney' for views of the Atlantic and the commercial fishing fleet at Viking Village."
+          }
+        ],
+        "driving": "Allow 1.5 hours; traffic on Route 72 can be heavy during peak summer hours",
+        "note": "Island Beach State Park often reaches vehicle capacity by mid-morning on sunny weekends."
+      },
+      {
+        "title": "Southern Tip History and Nature",
+        "start": "Suggested: 8:30 AM from Ocean City",
+        "stops": [
+          {
+            "name": "Cape May Point State Park",
+            "detail": "Visit the lighthouse and walk the freshwater marsh boardwalks popular for migratory bird watching."
+          },
+          {
+            "name": "Sunset Beach",
+            "detail": "Search for 'Cape May Diamonds' near the concrete remains of the SS Atlantus, a WWI-era shipwreck."
+          }
+        ],
+        "driving": "Allow 1 hour; conditions vary on the Garden State Parkway",
+        "note": "Cape May is a National Historic Landmark; many streets are narrow and best explored on foot or by trolley."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Seasonal Beach Parking",
+        "text": "Public lots in towns like Ocean City fill quickly by 10 AM in summer. Many municipalities require the use of mobile payment apps for street parking near the boardwalk."
+      },
+      {
+        "kind": "signal",
+        "title": "Reliable Coastal Coverage",
+        "text": "Cellular service is generally excellent throughout the developed shore towns. You may experience slight drops in the interior trails of the Pine Barrens or remote marsh areas."
+      },
+      {
+        "kind": "fuel",
+        "title": "Parkway Service Areas",
+        "text": "Fuel stations are frequent along the Garden State Parkway, but New Jersey law prohibits self-service. Wait for an attendant to pump your gas at all stations."
+      },
+      {
+        "kind": "timing",
+        "title": "Summer Weekend Traffic",
+        "text": "Southbound traffic on Friday afternoons and northbound on Sunday evenings is extreme. Allow double the estimated travel time when using the Parkway during these windows."
+      },
+      {
+        "kind": "access",
+        "title": "Local Beach Tags",
+        "text": "Unlike most states, NJ beaches are often not free; you must purchase a tag from a booth or roving inspector. Prices and requirements vary significantly between adjacent towns."
+      }
+    ],
+    "arrival": "Collect your rental at Newark (EWR) and take the Garden State Parkway south; stop in Toms River for major supplies before entering barrier islands.",
+    "vehicle": "Standard sedans are ideal for shore towns; high-clearance vehicles are not required for paved coastal roads.",
+    "goldenHour": "Sunset Beach in Cape May for its namesake views over the Delaware Bay.",
+    "sources": [
+      {
+        "label": "Visit NJ Official Tourism",
+        "url": "https://visitnj.org/city/cape-may"
+      }
+    ]
+  }
+}

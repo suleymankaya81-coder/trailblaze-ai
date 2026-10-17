@@ -1,0 +1,95 @@
+{
+  "slug": "lake-arrowhead",
+  "headline": "Private Lake Access and Forest Adventure Passes",
+  "reservation": "Lake Arrowhead is a private lake; water access is restricted to property owners and their guests or commercial tour passengers. Public recreation requires a San Bernardino National Forest Adventure Pass for parking at designated trailheads. Accommodations in the Tudor-style village should be secured months in advance for winter holidays or summer weekends.",
+  "source_url": "https://www.fs.usda.gov/sbnf",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Alpine Village and Waterfront",
+        "start": "Suggested: 10 AM from Lake Arrowhead Village",
+        "stops": [
+          {
+            "name": "Arrowhead Queen Tour Boat",
+            "detail": "Take a narrated tour to view the private shoreline and historic architecture of the mountain estates."
+          },
+          {
+            "name": "Lake Arrowhead Village Boardwalk",
+            "detail": "Walk the waterfront shops and enjoy the Tudor-inspired mountain atmosphere."
+          }
+        ],
+        "driving": "Allow 1 hour from San Bernardino; steep grades on Highway 18",
+        "note": "Winter travel frequently requires snow chains; check Caltrans R-levels before departing."
+      },
+      {
+        "title": "San Bernardino Forest Canopy",
+        "start": "Suggested: 9 AM from Blue Jay",
+        "stops": [
+          {
+            "name": "Heaps Peak Arboretum",
+            "detail": "Follow the Sequoia Trail loop to learn about native mountain flora and bird species in a protected grove."
+          },
+          {
+            "name": "Rim of the World Scenic Byway",
+            "detail": "Drive the ridge-top highway for expansive views of the San Bernardino Valley and distant peaks."
+          }
+        ],
+        "driving": "Allow 45 minutes of local driving; conditions vary with weather",
+        "note": "Adventure Passes are required for parking at Heaps Peak and other forest trailheads."
+      },
+      {
+        "title": "Mountain History and Peaks",
+        "start": "Suggested: 9:30 AM from Rimforest",
+        "stops": [
+          {
+            "name": "Mountain History Museum",
+            "detail": "Explore exhibits on the logging, ranching, and early tourism history of the San Bernardino Mountains."
+          },
+          {
+            "name": "Strawberry Peak Lookout",
+            "detail": "Visit the historic fire lookout tower for a 360-degree view of the surrounding national forest."
+          }
+        ],
+        "driving": "Allow 30 minutes; some access roads are narrow and unpaved",
+        "note": "Lookout towers may have restricted access during active fire monitoring; check local status."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Village and Trailhead Limits",
+        "text": "Village parking is plentiful but fills during the summer concert series. Forest trailheads like Splinters Cabin have very limited space and require an Adventure Pass displayed."
+      },
+      {
+        "kind": "signal",
+        "title": "Mountain Topography",
+        "text": "Expect frequent signal loss along the Rim of the World Highway and inside deep forest canyons. Offline maps are essential for navigating the residential mountain roads."
+      },
+      {
+        "kind": "fuel",
+        "title": "Rim Area Refueling",
+        "text": "Fuel is available in Blue Jay and Lake Arrowhead, but prices are typically higher than in the valley. Fill your tank in San Bernardino before starting the steep ascent."
+      },
+      {
+        "kind": "timing",
+        "title": "Weekend Traffic Patterns",
+        "text": "Highway 18 experiences significant congestion on Friday evenings (upbound) and Sunday afternoons (downbound). Schedule travel during midweek or early mornings to avoid delays."
+      },
+      {
+        "kind": "access",
+        "title": "Winter Road Controls",
+        "text": "Snowfall can trigger mandatory chain requirements even for 4WD vehicles. Carry a set of chains and know how to install them, as mountain weather changes rapidly."
+      }
+    ],
+    "arrival": "Arrive at SBD airport and collect a vehicle capable of mountain grades. Stop in San Bernardino for major supplies, then ascend the 'Rim of the World' toward your cabin.",
+    "vehicle": "A vehicle with high clearance or 4WD is recommended for winter or unpaved forest roads; check rental terms for mountain driving and chain installation policies.",
+    "goldenHour": "Keller Peak Fire Lookout; sunset views are highly dependent on seasonal visibility and smog levels from the valley below.",
+    "sources": [
+      {
+        "label": "San Bernardino National Forest",
+        "url": "https://www.fs.usda.gov/sbnf"
+      }
+    ]
+  }
+}

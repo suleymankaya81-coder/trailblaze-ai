@@ -1,0 +1,95 @@
+{
+  "slug": "bryce-canyon",
+  "headline": "Timed Entry and Shuttle Coordination for Bryce Amphitheater",
+  "reservation": "Access to Bryce Canyon requires an entrance fee separate from any lodging or camping costs. While specific timed entry is not currently required for every vehicle, peak season shuttles and campground stays require planning through official portals; changing systems require checking the National Park Service site directly for current pilot programs.",
+  "source_url": "https://www.nps.gov/brca/planyourvisit/fees.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Rim Perspectives and High Elevation Entry",
+        "start": "Suggested: 2 PM from Cedar City Regional Airport",
+        "stops": [
+          {
+            "name": "Sunrise Point",
+            "detail": "Begin with an accessible introduction to the hoodoo formations from the rim's edge."
+          },
+          {
+            "name": "Sunset Point",
+            "detail": "Walk a short stretch of the Rim Trail to observe the shifting shadows across the Bryce Amphitheater."
+          }
+        ],
+        "driving": "Allow 2 hours from CDC; conditions vary by weather.",
+        "note": "Stay at the rim for your first day to adjust to the 8,000-foot elevation."
+      },
+      {
+        "title": "Descending the Silent City",
+        "start": "Suggested: 8 AM from Bryce Canyon City",
+        "stops": [
+          {
+            "name": "Queen's Garden Trail",
+            "detail": "Walk below the rim among the spires; this is often considered the least strenuous descent into the canyon."
+          },
+          {
+            "name": "Navajo Loop Trail",
+            "detail": "Connect to the switchbacks of Wall Street, checking for seasonal closures of this narrow canyon section."
+          }
+        ],
+        "driving": "Local shuttle transfer suggested; allow 30 minutes for parking cycles.",
+        "note": "Always carry more water than expected for the uphill return to the rim."
+      },
+      {
+        "title": "The Southern High Forest Drive",
+        "start": "Suggested: 9 AM from the Visitor Center",
+        "stops": [
+          {
+            "name": "Natural Bridge",
+            "detail": "View the massive arch formed from Pliocene-age sedimentary rock from a designated overlook."
+          },
+          {
+            "name": "Rainbow Point",
+            "detail": "Reach the park's highest elevations for views that extend toward the Grand Staircase."
+          }
+        ],
+        "driving": "Allow 3 hours for the full out-and-back drive; road conditions vary.",
+        "note": "Temperatures at Rainbow Point are often significantly lower than at the Visitor Center."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Amphitheater Congestion",
+        "text": "Parking lots at popular points like Inspiration Point often reach capacity by mid-morning during summer months. Use the park shuttle from the transit hub to avoid circling for spaces."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Limits",
+        "text": "Mobile service is extremely limited below the rim and along the southern scenic drive. Download all maps and reservation confirmations before leaving the Bryce Canyon City area."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Supplies",
+        "text": "Refuel in Bryce Canyon City or Panguitch before entering the park's southern reaches. No fuel services exist along the 18-mile scenic road to Rainbow Point."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Trail Access",
+        "text": "Portions of the Navajo Loop and the Rim Trail may close due to ice or rockfall throughout the spring. Check the morning report at the Visitor Center for current daily status."
+      },
+      {
+        "kind": "access",
+        "title": "Elevation and Mobility",
+        "text": "Many viewpoints are paved but have steep grades that may affect wheelchair access. Consult the official accessibility guide for grades at Sunrise and Sunset Points."
+      }
+    ],
+    "arrival": "Pick up your rental vehicle at Cedar City (CDC), stock up on water and high-altitude supplies in Panguitch, and check into your lodging near the park entrance.",
+    "vehicle": "Standard vehicles are suitable for the main roads, but check rental agreements for restrictions on unpaved roads outside the park.",
+    "goldenHour": "Bryce Point offers a sweeping view of the amphitheater at sunrise; check seasonal charts for the exact solar window.",
+    "sources": [
+      {
+        "label": "Bryce Canyon National Park Official Site",
+        "url": "https://www.nps.gov/brca/index.htm"
+      }
+    ]
+  }
+}

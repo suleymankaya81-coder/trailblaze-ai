@@ -1,0 +1,95 @@
+{
+  "slug": "hill-country",
+  "headline": "Texas State Park Day-Pass and Foliage Reservations",
+  "reservation": "Entry to popular sites like Enchanted Rock and Lost Maples requires a pre-booked Day Use Reservation, often weeks in advance for weekends. These are separate from camping permits, which must be secured via the Texas State Parks official portal. Check the official site for real-time capacity closures that can occur even with a reservation.",
+  "source_url": "https://tpwd.texas.gov/state-parks/enchanted-rock",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Granite Domes and German Heritage",
+        "start": "Suggested: 8 AM from Fredericksburg",
+        "stops": [
+          {
+            "name": "Enchanted Rock State Natural Area",
+            "detail": "Ascend the Summit Trail, a massive pink granite dome offering views of the Llano Uplift."
+          },
+          {
+            "name": "Main Street Fredericksburg",
+            "detail": "Explore the historic district and the National Museum of the Pacific War in the afternoon."
+          }
+        ],
+        "driving": "Allow 1 hour total; conditions vary with local traffic",
+        "note": "Summit trails at Enchanted Rock may close due to rain for safety on slippery granite."
+      },
+      {
+        "title": "River Valleys and Cypress Groves",
+        "start": "Suggested: 9 AM from Johnson City",
+        "stops": [
+          {
+            "name": "Pedernales Falls State Park",
+            "detail": "Observe the river as it flows over tilted limestone stairs from the designated overlook."
+          },
+          {
+            "name": "Lyndon B. Johnson National Historical Park",
+            "detail": "Visit the LBJ Ranch to see the 'Texas White House' and historic cattle operations."
+          }
+        ],
+        "driving": "Allow 1.5 hours; conditions vary",
+        "note": "River swimming is restricted in the Falls area due to rapid current risks."
+      },
+      {
+        "title": "Western Hills and Maple Canyons",
+        "start": "Suggested: 8:30 AM from Kerrville",
+        "stops": [
+          {
+            "name": "Lost Maples State Natural Area",
+            "detail": "Hike the canyon trails to see rare Uvalde bigtooth maples along the Sabinal River."
+          },
+          {
+            "name": "Bandera Historic District",
+            "detail": "Visit the 'Cowboy Capital of the World' for local ranching history and heritage sites."
+          }
+        ],
+        "driving": "Allow 2.5 hours; conditions vary on winding rural roads",
+        "note": "Lost Maples foliage peaks are weather-dependent and typically occur in late autumn."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "Private Property Boundaries",
+        "text": "Most land surrounding scenic loops like Willow City is private. Do not cross fences for photos and stay on public right-of-ways."
+      },
+      {
+        "kind": "fuel",
+        "title": "Rural Gaps",
+        "text": "Refuel in hub towns like Fredericksburg or Kerrville. Gas stations are sparse on the smaller ranch roads connecting Leakey and Vanderpool."
+      },
+      {
+        "kind": "timing",
+        "title": "Heat Management",
+        "text": "Plan strenuous hikes for before 10 AM during warmer months. Exposed granite and limestone surfaces radiate significant heat by midday."
+      },
+      {
+        "kind": "signal",
+        "title": "Topographic Interference",
+        "text": "Cellular reception is unreliable in deep canyons like those found in Lost Maples. Download park maps and trail guides in advance."
+      },
+      {
+        "kind": "parking",
+        "title": "Reservation Checkpoints",
+        "text": "State park staff check reservations at the gate. Arrival without a pre-purchased pass will likely result in turned-away entry during peak periods."
+      }
+    ],
+    "arrival": "Arrive via San Antonio International (SAT), pick up a car, and drive 90 minutes to a base in Fredericksburg to settle in.",
+    "vehicle": "Standard passenger cars are suitable for most paved state routes, but beware of low-water crossings after heavy rain.",
+    "goldenHour": "The summit of Enchanted Rock is a notable sunset location, provided you exit the park before the designated closing hour.",
+    "sources": [
+      {
+        "label": "Texas State Parks",
+        "url": "https://tpwd.texas.gov/state-parks/"
+      }
+    ]
+  }
+}

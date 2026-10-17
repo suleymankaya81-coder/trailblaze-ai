@@ -1,0 +1,95 @@
+{
+  "slug": "sequoia-national-park",
+  "headline": "Park Entry and Giant Forest Parking",
+  "reservation": "Sequoia National Park requires an entrance fee per vehicle; while general entry reservations are not currently standard, they may be implemented during high-use periods or road construction. Lodging at Wuksachi Lodge and in-park campgrounds must be reserved months in advance via the official NPS portal or authorized concessionaire. Check the official NPS website for the latest vehicle length restrictions on Generals Highway.",
+  "source_url": "https://www.nps.gov/sequ/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "The World's Largest Trees",
+        "start": "Suggested: 7:30 AM from Three Rivers",
+        "stops": [
+          {
+            "name": "General Sherman Tree",
+            "detail": "Visit the world’s largest living tree by volume, allowing time for the steep paved return walk."
+          },
+          {
+            "name": "Congress Trail",
+            "detail": "Walk this 2-mile loop from the Sherman Tree to see famous sequoia clusters like the Senate and House Groups."
+          }
+        ],
+        "driving": "Allow 1 hour for the winding climb from Three Rivers; conditions vary",
+        "note": "The parking lot for General Sherman is separated from the tree by a half-mile trail with elevation change."
+      },
+      {
+        "title": "Granite Domes and Meadows",
+        "start": "Suggested: 8 AM from Lodgepole",
+        "stops": [
+          {
+            "name": "Moro Rock",
+            "detail": "Ascend over 300 stone steps for a 360-degree view of the Great Western Divide and the San Joaquin Valley."
+          },
+          {
+            "name": "Crescent Meadow",
+            "detail": "Follow the trail around this high-sierra meadow, often called the 'Gem of the Sierras' by early naturalists."
+          }
+        ],
+        "driving": "Allow 45 minutes for local park roads; conditions vary with shuttle traffic",
+        "note": "Moro Rock is highly exposed; avoid the stairway during high winds or any lightning threat."
+      },
+      {
+        "title": "Canyon Hikes and Museums",
+        "start": "Suggested: 9 AM from Giant Forest",
+        "stops": [
+          {
+            "name": "Tokopah Falls Trail",
+            "detail": "Hike the 1.7-mile trail from Lodgepole along the Marble Fork of the Kaweah River toward the towering glacial canyon."
+          },
+          {
+            "name": "Giant Forest Museum",
+            "detail": "Stop here to understand the ecology of the giant sequoias and the history of the park's preservation."
+          }
+        ],
+        "driving": "Allow 30 minutes between trailheads; conditions vary",
+        "note": "Waterfall flow is highest in late spring and may be a trickle by late summer."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Giant Forest Congestion",
+        "text": "Parking lots at General Sherman and Moro Rock typically fill by 10 AM during summer weekends. Utilize the free park shuttle from Lodgepole or the Giant Forest Museum to avoid searching for spots."
+      },
+      {
+        "kind": "signal",
+        "title": "Sparse Mountain Coverage",
+        "text": "Expect no cellular service throughout most of the park's interior and trails. Emergency phones are located at visitor centers and the Lodgepole area; carry a physical map for navigation."
+      },
+      {
+        "kind": "fuel",
+        "title": "No In-Park Fuel",
+        "text": "There are no gas stations within Sequoia National Park. Fill your tank in Three Rivers or Foothills before starting the 5,000-foot elevation gain into the Giant Forest."
+      },
+      {
+        "kind": "timing",
+        "title": "Winding Road Transit",
+        "text": "Generals Highway is extremely winding and narrow; driving times are often double what mileage suggests. Allow a full hour for the 16-mile stretch between the Foothills Visitor Center and the Giant Forest."
+      },
+      {
+        "kind": "access",
+        "title": "Vehicle Length Limits",
+        "text": "Vehicles over 22 feet are strongly discouraged on the steep switchbacks between Hospital Rock and Giant Forest. Check official NPS advisories if you are driving a large SUV or RV."
+      }
+    ],
+    "arrival": "Pick up your rental at Fresno Yosemite International Airport and drive two hours to the Three Rivers gateway to check in and verify current road conditions at the visitor center.",
+    "vehicle": "Small to mid-size cars are best for the park's tight hairpins; rental RVs should check for specific length prohibitions on the southern entrance road.",
+    "goldenHour": "Moro Rock provides an exceptional sunset view of the peaks to the east, though the descent in the twilight requires care on the stone steps.",
+    "sources": [
+      {
+        "label": "National Park Service - Sequoia",
+        "url": "https://www.nps.gov/sequ"
+      }
+    ]
+  }
+}

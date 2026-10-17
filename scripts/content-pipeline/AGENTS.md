@@ -2,3 +2,4 @@
 - New search-guide pages must be at least 600 words (generator rewrites once, insert marks shorter pages noindex); earlier pages keep their original review. Why: thin pages rank poorly.
 - Bulk guide generation (generate-landing-pages.py) uses google/gemini-3-flash-preview via streamed chat completions. Why: user chose it for lower cost with the same 600+ word checks.
 - Search titles are trimmed to ~60 chars and meta descriptions to 160 by insert-landing-pages.py; destination meta descriptions are composed from tagline, best season and guide topics. Why: Google truncates longer snippets.
+- Travel content is generated in bounded sequential Gemini batches with cached outputs, database lease and pause status; validation rejects incomplete days/local notes and changing rules link to official sources. Why: reruns preserve work and credit/policy blocks stop the whole pipeline.

@@ -1,0 +1,95 @@
+{
+  "slug": "monongahela-national-forest",
+  "headline": "Multi-Agency Booking for Wilderness and Campgrounds",
+  "reservation": "Different sites within the forest require distinct booking methods; Spruce Knob-Seneca Rocks NRA sites use federal portals while Cranberry Glades has no entry fee but requires specific use permits for groups. Accommodation varies from primitive dispersed sites to developed lodges in nearby towns; always verify current Forest Service road status.",
+  "source_url": "https://www.fs.usda.gov/mnf",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Quartzite Fins and Valley Floors",
+        "start": "Suggested: 8 AM from Seneca Rocks",
+        "stops": [
+          {
+            "name": "Seneca Rocks Trail",
+            "detail": "Hike the 1.5-mile uphill trail to the observation platform for views of the vertical rock fins."
+          },
+          {
+            "name": "Seneca Rocks Discovery Center",
+            "detail": "Learn about the geological formation and local history through interpretive exhibits."
+          }
+        ],
+        "driving": "Allow for walking time; the rocks are the primary focus with minimal driving once parked.",
+        "note": "Stay on the developed platform; the rocks beyond are for technical climbers only."
+      },
+      {
+        "title": "High Peaks and Heathlands",
+        "start": "Suggested: 9 AM from Riverton",
+        "stops": [
+          {
+            "name": "Spruce Knob Tower",
+            "detail": "Visit West Virginia's highest point for a 360-degree view of the Allegheny Mountains."
+          },
+          {
+            "name": "Whispering Spruce Trail",
+            "detail": "Walk the easy loop through wind-stunted spruce trees and rocky outcrops."
+          }
+        ],
+        "driving": "Allow 1 hour for the winding mountain road ascent; conditions vary with fog and ice.",
+        "note": "Temperatures at the summit are significantly cooler than the valley; carry a windproof layer."
+      },
+      {
+        "title": "Botanical Wonders and Waterfalls",
+        "start": "Suggested: 9:30 AM from Marlinton",
+        "stops": [
+          {
+            "name": "Cranberry Glades Botanical Area",
+            "detail": "Walk the boardwalk through a high-altitude bog featuring plants usually found in northern climates."
+          },
+          {
+            "name": "Falls of Hills Creek",
+            "detail": "Descend a series of stairs to view three distinct waterfalls in a lush mountain ravine."
+          }
+        ],
+        "driving": "Allow 1.5–2 hours to navigate the Highland Scenic Highway between sites.",
+        "note": "The Highland Scenic Highway is not maintained in winter; check road status for spring snow."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "fuel",
+        "title": "Mountain Gateway Logistics",
+        "text": "Fill up in Elkins or Marlinton. The central forest regions, including the Highland Scenic Highway, have no fuel services for long stretches."
+      },
+      {
+        "kind": "signal",
+        "title": "National Radio Quiet Zone",
+        "text": "Cell service is largely unavailable due to the Radio Quiet Zone. GPS units may function, but do not rely on streaming maps or emergency calls."
+      },
+      {
+        "kind": "access",
+        "title": "Dolly Sods Ordnance",
+        "text": "In the Dolly Sods Wilderness, remain on established trails to avoid potential unexploded ordnance from historic training. Check trailhead notices for safety updates."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Road Gates",
+        "text": "High-elevation roads like FR 112 are gated in winter. Verify opening dates with the Gauley or Potomac Ranger Districts before planning early spring trips."
+      },
+      {
+        "kind": "parking",
+        "title": "Trailhead Capacity",
+        "text": "Dolly Sods and Seneca Rocks trailheads experience high volume on autumn weekends. Plan mid-week visits to ensure access to smaller wilderness entries."
+      }
+    ],
+    "arrival": "Pick up rental at Clarksburg (CKB); stop in Elkins for groceries and physical topo maps before heading to Seneca Rocks area.",
+    "vehicle": "Standard vehicles suit main highways, but high-clearance is advised for Forest Service secondary roads.",
+    "goldenHour": "Spruce Knob Whispering Spruce Trail; visibility depends on mountain fog and cloud deck height.",
+    "sources": [
+      {
+        "label": "Monongahela National Forest Official Site",
+        "url": "https://www.fs.usda.gov/mnf"
+      }
+    ]
+  }
+}

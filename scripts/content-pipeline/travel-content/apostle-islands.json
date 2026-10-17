@@ -1,0 +1,95 @@
+{
+  "slug": "apostle-islands",
+  "headline": "Camping Permits and Boat Departure Reservations",
+  "reservation": "Overnight island camping requires a permit via Recreation.gov, while mainland lodging in Bayfield should be booked 4–6 months ahead for summer weekends. Boat tours and water taxis are the primary bottleneck; always verify your transportation booking matches your permit dates. Systems are subject to change; check the NPS site for current water safety status.",
+  "source_url": "https://www.nps.gov/apis",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Mainland Cliffs and Shores",
+        "start": "Suggested: 8:30 AM from Bayfield",
+        "stops": [
+          {
+            "name": "Meyers Beach",
+            "detail": "Begin your visit at this primary mainland access point for the Lakeshore Trail."
+          },
+          {
+            "name": "Lakeshore Trail",
+            "detail": "Hike the forested path toward the cliff-tops for a bird's-eye view of the sandstone sea caves."
+          }
+        ],
+        "driving": "Allow 45 minutes; conditions on secondary roads near the lakeshore vary seasonally.",
+        "note": "The trail features uneven footing and steep drop-offs; stay on marked paths and away from cliff edges."
+      },
+      {
+        "title": "Island Lighthouses and History",
+        "start": "Suggested: 9 AM from Bayfield City Dock",
+        "stops": [
+          {
+            "name": "Raspberry Island",
+            "detail": "View the historic lighthouse and meticulously kept gardens, often accessible via guided boat tours."
+          },
+          {
+            "name": "Manitou Island",
+            "detail": "Explore the historic fish camp to see how early settlers lived and worked on Lake Superior."
+          }
+        ],
+        "driving": "Local transfer via boat; allow 2–4 hours for water transit depending on the route.",
+        "note": "Lake Superior stays cold year-round; bring a windproof layer even if the mainland forecast is warm."
+      },
+      {
+        "title": "Gateway Peninsula Exploration",
+        "start": "Suggested: 10 AM from Washburn",
+        "stops": [
+          {
+            "name": "Big Bay State Park",
+            "detail": "Take the ferry to Madeline Island to walk the boardwalks and sandy beaches of this non-NPS island."
+          },
+          {
+            "name": "Houghton Falls State Natural Area",
+            "detail": "Walk through a sandstone gorge to a viewpoint overlooking the islands in Chequamegon Bay."
+          }
+        ],
+        "driving": "Allow 1.5 hours including ferry wait times; check local schedules for Madeline Island ferry.",
+        "note": "Madeline Island is the only island accessible by car ferry; all other islands require private boats or water taxis."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Bayfield and Meyers Beach",
+        "text": "Meyers Beach has a dedicated lot that serves the Lakeshore Trail, though it can reach capacity by mid-morning. In Bayfield, multi-day parking is available for island campers near the ferry and cruise docks."
+      },
+      {
+        "kind": "signal",
+        "title": "Remote Island Connectivity",
+        "text": "Expect limited to no cell service once you leave the mainland docks. Download all maps and reservation confirmations before departing Bayfield, as signals are blocked by high cliffs and distance."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Fuel Stations",
+        "text": "Fuel up in Ashland or Bayfield before heading to the northern peninsula trailheads. There is no fuel available for vehicles on the islands, and marinas for boat fuel have variable seasonal hours."
+      },
+      {
+        "kind": "timing",
+        "title": "Summer and Fall Transitions",
+        "text": "July and August offer the most stable paddling conditions, though Lake Superior wind can change at any time. September provides cooler hiking weather and vibrant foliage but fewer boat departure options."
+      },
+      {
+        "kind": "access",
+        "title": "Water Safety and Kayaking",
+        "text": "Reaching sea caves by kayak requires a sea kayak and experience due to cold water and sudden waves. Check the official NPS marine forecast daily and consider a guided trip for safety."
+      }
+    ],
+    "arrival": "Collect your rental at Duluth (DLH) and drive east through Superior. Stop in Ashland for groceries and water supplies before continuing to your Bayfield-area base for check-in.",
+    "vehicle": "A standard vehicle is fine for mainland roads; high-clearance is not required for the main trailheads. RVs should confirm campsite length at mainland campgrounds; most islands are inaccessible to vehicles.",
+    "goldenHour": "Sunset views from the Meyers Beach overlook provide a dramatic silhouette of the sea caves against Lake Superior.",
+    "sources": [
+      {
+        "label": "National Park Service",
+        "url": "https://www.nps.gov/apis/planyourvisit/conditions.htm"
+      }
+    ]
+  }
+}

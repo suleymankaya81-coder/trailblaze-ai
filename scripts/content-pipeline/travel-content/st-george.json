@@ -1,0 +1,99 @@
+{
+  "slug": "st-george",
+  "headline": "Permits and Shuttles Required for Zion and Angels Landing",
+  "reservation": "Zion National Park requires a shuttle for the main canyon drive for most of the year; tickets or boarding systems change seasonally. Permits for hiking Angels Landing are issued via a lottery system months in advance. State Parks like Snow Canyon have separate day-use fees; always check official NPS and Utah State Park sites for current access protocols.",
+  "source_url": "https://www.nps.gov/zion",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Lava Tubes and Red Sandstone",
+        "start": "Suggested: 7:30 AM from downtown St. George",
+        "stops": [
+          {
+            "name": "Snow Canyon State Park",
+            "detail": "Walk the Lava Flow Overlook trail to see ancient basalt and explore hidden volcanic tubes."
+          },
+          {
+            "name": "Jenny’s Canyon",
+            "detail": "Hike this short, family-friendly slot canyon that leads to a scenic overlook."
+          }
+        ],
+        "driving": "Allow 20 minutes to the park entrance; conditions vary with seasonal wind.",
+        "note": "Carry a headlamp if you plan to peer into the lava tubes."
+      },
+      {
+        "title": "Canyon Heights and River Trails",
+        "start": "Suggested: 6 AM to reach Springdale gateway",
+        "stops": [
+          {
+            "name": "Temple of Sinawava",
+            "detail": "Access the gateway to The Narrows and walk along the Virgin River within Zion."
+          },
+          {
+            "name": "Emerald Pools",
+            "detail": "Follow the trail to see desert oases and hanging gardens against red rock walls."
+          }
+        ],
+        "driving": "Allow 1 hour to reach Zion; use the mandatory park shuttle within the canyon.",
+        "note": "Parking at the Zion Visitor Center often fills by 8 AM; arrive early."
+      },
+      {
+        "title": "Desert Waters and Ancient Tracks",
+        "start": "Suggested: 9 AM from St. George",
+        "stops": [
+          {
+            "name": "Sand Hollow State Park",
+            "detail": "Experience the contrast of blue water against orange sand dunes at the reservoir."
+          },
+          {
+            "name": "Dinosaur Discovery Site",
+            "detail": "See prehistoric tracks preserved in situ at this local paleontological museum."
+          }
+        ],
+        "driving": "Allow 30 minutes to Sand Hollow; local traffic in St. George is moderate.",
+        "note": "Sand Hollow sand can be extremely hot; wear appropriate footwear on the dunes."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Zion and State Park Caps",
+        "text": "Zion National Park parking is a major bottleneck; use the Springdale shuttle if the main lot is full. Snow Canyon lots are smaller; early morning arrival is advised to secure trail access."
+      },
+      {
+        "kind": "signal",
+        "title": "Remote Desert Gaps",
+        "text": "Expect strong signals in St. George city limits, but connectivity drops significantly inside Zion Canyon and remote areas of the Red Cliffs Reserve. Download offline navigation tools for hiking."
+      },
+      {
+        "kind": "fuel",
+        "title": "Southwestern Hubs",
+        "text": "St. George and Hurricane are the primary fuel stops for this region. Do not enter the Kolob Canyons or Arizona Strip without a full tank, as services are non-existent."
+      },
+      {
+        "kind": "timing",
+        "title": "Heat and Flash Floods",
+        "text": "Monsoon season in late summer brings flash flood risks to slot canyons and The Narrows. Check the National Weather Service forecast daily before entering any narrow drainage."
+      },
+      {
+        "kind": "access",
+        "title": "Permit Constraints",
+        "text": "Angels Landing access requires a specific permit through a lottery system; check the NPS site for seasonal deadlines. State parks may have temporary closures for trail maintenance or events."
+      }
+    ],
+    "arrival": "Fly into St. George Regional Airport (SGU) for a 24-minute drive to the city center, or arrive from Las Vegas (2 hours) for more rental options.",
+    "vehicle": "A standard car is perfect for paved park roads, but an OHV is required for exploring the dunes at Sand Hollow; check rental rules for off-road use.",
+    "goldenHour": "Dixie Rock (Sugarloaf) in Pioneer Park provides a 360-degree view of the city and red cliffs at sunset.",
+    "sources": [
+      {
+        "label": "Zion National Park (NPS)",
+        "url": "https://www.nps.gov/zion"
+      },
+      {
+        "label": "Utah State Parks",
+        "url": "https://stateparks.utah.gov"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "provincetown",
+  "headline": "National Seashore Entry and Parking Verification",
+  "reservation": "Entry to the town is public, but parking at Cape Cod National Seashore beaches like Race Point requires a daily fee or pass during the summer season. Ferries from Boston and local guesthouses often sell out months in advance; always check the official NPS site for changing access to the Province Lands Visitor Center.",
+  "source_url": "https://www.nps.gov/caco/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Maritime History and Town Heights",
+        "start": "Suggested: 9:30 AM from MacMillan Pier",
+        "stops": [
+          {
+            "name": "Pilgrim Monument",
+            "detail": "Climb the granite tower for a 360-degree view of the Cape's 'hook' and the surrounding Atlantic."
+          },
+          {
+            "name": "Commercial Street",
+            "detail": "Walk the vibrant center of town to explore historic art galleries, seafood markets, and 19th-century architecture."
+          }
+        ],
+        "driving": "Local walking; no vehicle needed for town center.",
+        "note": "Commercial Street is extremely narrow; biking or walking is the most efficient way to navigate during the day."
+      },
+      {
+        "title": "Dunes and Atlantic Surf",
+        "start": "Suggested: 9 AM from the Bike Barn",
+        "stops": [
+          {
+            "name": "Province Lands Bike Trail",
+            "detail": "Cycle the 5.5-mile loop through the sand dunes and pine forests of the National Seashore."
+          },
+          {
+            "name": "Race Point Beach",
+            "detail": "Visit the tip of the Cape to watch for seals and explore the historic Life-Saving Station."
+          }
+        ],
+        "driving": "Allow 20 minutes by bike or shuttle; conditions vary.",
+        "note": "Biking the dunes involves steep grades; check your rental's brakes and carry plenty of water for the sun-exposed route."
+      },
+      {
+        "title": "Marine Giants and Forest Trails",
+        "start": "Suggested: 8:30 AM from the Harbor",
+        "stops": [
+          {
+            "name": "Stellwagen Bank National Marine Sanctuary",
+            "detail": "Join a sanctioned whale watching tour to spot humpback and fin whales in their primary feeding grounds."
+          },
+          {
+            "name": "Beech Forest Trail",
+            "detail": "Walk the shaded freshwater pond loop, a prime location for birdwatching and a contrast to the salt marshes."
+          }
+        ],
+        "driving": "Allow 15 minutes to the trailhead; conditions vary.",
+        "note": "Whale watch tours are weather-dependent; check for cancellations at the pier on the morning of departure."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Town vs. Seashore Lots",
+        "text": "Municipal lots at MacMillan Pier use a kiosk system and fill by 11 AM in summer. National Seashore lots at Herring Cove and Race Point require a separate federal fee collected at the gate."
+      },
+      {
+        "kind": "signal",
+        "title": "Harbor and Dune Coverage",
+        "text": "Cell service is reliable within the town limits but can be intermittent among the high dunes of the Province Lands. Download the NPS Cape Cod app for offline trail navigation."
+      },
+      {
+        "kind": "fuel",
+        "title": "Outer Cape Logistics",
+        "text": "Fuel stations are located along Route 6 in North Truro and Wellfleet; services within Provincetown proper are limited and can be difficult to access with an RV. Stock up on mainland supplies before crossing the Canal."
+      },
+      {
+        "kind": "timing",
+        "title": "Ferry and Bridge Traffic",
+        "text": "The high-speed ferry from Boston takes 90 minutes but is prone to sea-state delays. Driving Route 6 on summer Fridays can double the travel time from Hyannis due to heavy bridge traffic."
+      },
+      {
+        "kind": "access",
+        "title": "Seasonal Shuttle Services",
+        "text": "A seasonal shuttle connects the town center to the beaches and North Truro campgrounds, reducing the need for a car. Check the current season's schedule for the latest stop locations and hours."
+      }
+    ],
+    "arrival": "Arrive via ferry or Route 6; park in the long-term municipal lot and use the local shuttle or a bike to reach your guesthouse.",
+    "vehicle": "A car is often a liability in the narrow town streets; a bicycle is the preferred regional transport. RVs should be parked at designated North Truro campgrounds rather than driven into the town center.",
+    "goldenHour": "Herring Cove Beach is the rare East Coast location where the sun appears to set over the water; check seasonal angles for the best view.",
+    "sources": [
+      {
+        "label": "National Park Service - Cape Cod",
+        "url": "https://www.nps.gov/caco/planyourvisit/provincelands.htm"
+      }
+    ]
+  }
+}

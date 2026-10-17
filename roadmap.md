@@ -32,3 +32,7 @@
 - [x] Rendered/uploaded 2,139 branded 1000×1500 JPEG pins; tested 2,200 names, RSS/copy and UTC daily limits; three stored images open publicly. Five satellite-image cards excluded.
 - [ ] Remaining 56 cards blocked by unavailable/insufficient-resolution source photographs; see scripts/content-pipeline/pin-photo-blockers.json. Do not publish blurry substitutes.
 - [ ] Publish the approved RSS updates: current live feed still returns old items; preview honors releases from October 17 UTC. Publishing requires the owner's request.
+## Destination-specific travel content
+- [ ] Prepare missing reservation notes and stored daily itineraries/local tips for all 446 destinations, with source links and a credit-limit circuit breaker.
+- [ ] Replace generic day flow/field tips with stored local content and add verified sightseeing markers without changing airport-drive geometry.
+- [ ] Validate all stored content and sample destination pages on desktop/phone; require complete travel content for future releases.

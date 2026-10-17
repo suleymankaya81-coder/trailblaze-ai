@@ -1,0 +1,95 @@
+{
+  "slug": "flaming-gorge",
+  "headline": "Reservoir Access and Shoreline Camping Check",
+  "reservation": "Campgrounds managed by Ashley National Forest often require advance booking via Recreation.gov, especially for peak summer weekends. River flow rates and dam tour availability are subject to Bureau of Reclamation scheduling; verify current status on official agency pages.",
+  "source_url": "https://www.fs.usda.gov/ashley",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Red Canyon Overlooks",
+        "start": "Suggested: 9 AM from Manila",
+        "stops": [
+          {
+            "name": "Red Canyon Visitor Center",
+            "detail": "View the dramatic 1,300-foot drop to the green waters of the reservoir from the rim overlooks."
+          },
+          {
+            "name": "Sheep Creek Geological Loop",
+            "detail": "Drive through twisted rock layers and limestone towers that showcase the area's complex tectonic history."
+          }
+        ],
+        "driving": "Allow 2 hours for the loop and rim drive; conditions vary.",
+        "note": "Sheep Creek Loop may be closed in winter or after heavy rain due to debris; check local status."
+      },
+      {
+        "title": "Dam History and River Floats",
+        "start": "Suggested: 8:30 AM from Dutch John",
+        "stops": [
+          {
+            "name": "Flaming Gorge Dam",
+            "detail": "Learn about the engineering of this massive concrete arch dam at the official visitor center."
+          },
+          {
+            "name": "Green River (Below Dam)",
+            "detail": "Observe the crystal-clear tailwaters popular for floating and blue-ribbon trout fishing."
+          }
+        ],
+        "driving": "Allow 1 hour for local transfers; conditions vary.",
+        "note": "Water temperatures in the Green River remain cold year-round; appropriate insulation is suggested for all water activities."
+      },
+      {
+        "title": "Wyoming Shorelines and Wildlife",
+        "start": "Suggested: 9 AM from Green River, WY",
+        "stops": [
+          {
+            "name": "Buckboard Crossing",
+            "detail": "Explore the expansive northern reach of the reservoir where the landscape transitions to high desert plains."
+          },
+          {
+            "name": "Firehole Canyon",
+            "detail": "Marvel at the chimney-like rock formations and red cliffs reflecting in the Wyoming waters."
+          }
+        ],
+        "driving": "Allow 2.5 hours for the north-south traverse; conditions vary.",
+        "note": "This region is highly exposed to wind; avoid small watercraft outings when whitecaps are visible."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "State Boundary Regulations",
+        "text": "The recreation area spans Utah and Wyoming. Ensure you have the correct state permits for fishing or boating depending on your specific location on the water."
+      },
+      {
+        "kind": "fuel",
+        "title": "Sparse Services",
+        "text": "Fuel is available in Manila and Dutch John, but large stretches between viewpoints lack services. Fill your tank before entering the Geological Loop."
+      },
+      {
+        "kind": "parking",
+        "title": "Boat Launch Logistics",
+        "text": "Parking at popular ramps like Cedar Springs can fill during holiday weekends. Arrive early if towing a trailer to secure a legal oversized stall."
+      },
+      {
+        "kind": "signal",
+        "title": "Topographic Interference",
+        "text": "Signal is often lost at the base of the dam and within the deeper canyons. Carry physical maps for navigation between the Wyoming and Utah sections."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Road Closures",
+        "text": "High-elevation forest roads typically open in late May and close by November. Always verify mountain pass status if traveling in the shoulder seasons."
+      }
+    ],
+    "arrival": "Fly into Vernal Regional Airport (VEL) and rent a vehicle. Manila serves as a primary gateway for supplies before heading to southern reservoir camps.",
+    "vehicle": "A high-clearance vehicle is recommended for exploring unpaved spurs near Firehole Canyon; check rental terms for gravel road travel.",
+    "goldenHour": "Red Canyon Rim offers spectacular westward views, but cliff-side safety requires departing before full darkness.",
+    "sources": [
+      {
+        "label": "US Bureau of Reclamation",
+        "url": "https://www.usbr.gov/uc/rm/crsp/fg/index.html"
+      }
+    ]
+  }
+}

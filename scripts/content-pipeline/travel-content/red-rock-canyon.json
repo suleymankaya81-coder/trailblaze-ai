@@ -1,0 +1,95 @@
+{
+  "slug": "red-rock-canyon",
+  "headline": "Timed Entry Reservations Required for Scenic Drive",
+  "reservation": "A timed entry reservation is mandatory for the 13-Mile Scenic Drive from October through May. Reservations open in blocks on Recreation.gov; entry is separate from the America the Beautiful pass, and you must verify the specific hour on your digital confirmation at the ranger station.",
+  "source_url": "https://www.redrockcanyonlv.org/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Sandstone Scrambles and Colors",
+        "start": "Suggested: 7:30 AM from Las Vegas",
+        "stops": [
+          {
+            "name": "Visitor Center Tortoise Habitat",
+            "detail": "View the protected Mojave Desert tortoises and learn about desert conservation before entering the loop."
+          },
+          {
+            "name": "Calico Hills",
+            "detail": "Explore the brilliant red Aztec Sandstone mounds and natural water tinajas via the base trail."
+          }
+        ],
+        "driving": "Allow 1 hour for the one-way loop drive; traffic moves slowly.",
+        "note": "Reservations are strictly enforced; arrive within your designated time slot."
+      },
+      {
+        "title": "High Desert Overlooks",
+        "start": "Suggested: 8 AM from Summerlin",
+        "stops": [
+          {
+            "name": "High Point Overlook",
+            "detail": "Stand at 4,800 feet for a panoramic view of the Keystone Thrust and the distant Las Vegas valley."
+          },
+          {
+            "name": "Petroglyph Wall",
+            "detail": "Take a short walk to view ancient rock art protected within the limestone cliffs."
+          }
+        ],
+        "driving": "30-minute transit to the park; 45 minutes on the interior loop.",
+        "note": "The scenic drive is a one-way loop; you cannot backtrack to missed stops."
+      },
+      {
+        "title": "Hidden Canyons and Water",
+        "start": "Suggested: 7 AM from Blue Diamond",
+        "stops": [
+          {
+            "name": "Icebox Canyon",
+            "detail": "Hike into a deep, shaded canyon that remains significantly cooler and may hold seasonal waterfalls."
+          },
+          {
+            "name": "Lost Creek Discovery Trail",
+            "detail": "Navigate this shorter, interpretive path to see desert flora and a small seasonal falls."
+          }
+        ],
+        "driving": "Allow 2 hours for hiking time and loop completion.",
+        "note": "Flash flood risks exist in canyons during late summer monsoon season."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead Limits",
+        "text": "Sandstone Quarry and Calico Hills lots often reach capacity by mid-morning. If a lot is full, proceed to the next available pull-off; do not park on the one-way road."
+      },
+      {
+        "kind": "signal",
+        "title": "Red Rock Dead Zones",
+        "text": "Cellular signal drops significantly once inside the canyon loop. Download your timed entry QR code and maps before leaving the city limits of Summerlin."
+      },
+      {
+        "kind": "fuel",
+        "title": "Last City Supplies",
+        "text": "There is no fuel or food available within the National Conservation Area. The final services are located in the Summerlin area or at the small store in Blue Diamond."
+      },
+      {
+        "kind": "timing",
+        "title": "Heat Awareness",
+        "text": "Summer temperatures regularly exceed 100°F; all strenuous activity should be completed before 10 AM. In winter, shaded canyons can be 15 degrees cooler than the visitor center."
+      },
+      {
+        "kind": "access",
+        "title": "Rock Fragility",
+        "text": "Sandstone is highly porous and fragile when wet. Technical climbing and off-trail scrambling are prohibited for 24-48 hours following any rain to prevent stone breakage."
+      }
+    ],
+    "arrival": "Pick up rental vehicle at Boulder City (BLD) or Las Vegas; proceed to Summerlin for hydration supplies and sun protection before the park entrance.",
+    "vehicle": "Standard cars are fine for the paved 13-mile loop; high clearance is only necessary for the unpaved Rocky Gap Road which has strict rental restrictions.",
+    "goldenHour": "High Point Overlook offers the most expansive view for sunset, though the park gates close at specific seasonal times.",
+    "sources": [
+      {
+        "label": "Bureau of Land Management - Red Rock",
+        "url": "https://www.blm.gov/programs/national-conservation-lands/nevada/red-rock-canyon"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "mccall",
+  "headline": "Timed Vehicle Entry and Campground Planning for Payette Lake",
+  "reservation": "Ponderosa State Park requires a motor vehicle entry fee, and peak summer campsites often fill months in advance via the official Idaho State Parks system. While the town and national forest trails are generally accessible, boat rentals and lakeside lodging require separate advance arrangements. Always verify the latest reservation windows and fee structures via official Idaho state sources before traveling.",
+  "source_url": "https://parksandrecreation.idaho.gov/parks/ponderosa/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Lakefront Vistas and Alpine Waterways",
+        "start": "Suggested: 9 AM from Downtown McCall",
+        "stops": [
+          {
+            "name": "Legacy Park",
+            "detail": "Begin at the lakefront boardwalk to acclimate to the 5,000-foot elevation and view the surrounding peaks."
+          },
+          {
+            "name": "Payette Lake",
+            "detail": "Explore the shoreline by kayak or paddleboard to see the granite-lined coves and clear mountain water."
+          }
+        ],
+        "driving": "Allow 15 minutes for local town transfers; conditions vary.",
+        "note": "Parking at lake access points fills quickly during summer weekends."
+      },
+      {
+        "title": "Ponderosa Pine Peninsula",
+        "start": "Suggested: 8:30 AM from Ponderosa State Park Entrance",
+        "stops": [
+          {
+            "name": "Osprey Point",
+            "detail": "Hike to this elevated viewpoint for panoramic views of the Payette Lake peninsula and rugged backcountry."
+          },
+          {
+            "name": "North Beach",
+            "detail": "Visit the shallow sandy shores at the north end of the park, ideal for a picnic in the 'no-wake' zone."
+          }
+        ],
+        "driving": "Allow 30 minutes for forest road transit; conditions vary.",
+        "note": "State park vehicle fees apply and are checked at the entry kiosk."
+      },
+      {
+        "title": "High Desert Mountains and River Canyons",
+        "start": "Suggested: 9 AM from Brundage Mountain",
+        "stops": [
+          {
+            "name": "Brundage Mountain Resort",
+            "detail": "Ride the summer chairlift for 360-degree views stretching to the Seven Devils Wilderness."
+          },
+          {
+            "name": "McCall Fish Hatchery",
+            "detail": "Learn about regional conservation efforts and the lifecycle of native Idaho trout species."
+          }
+        ],
+        "driving": "Allow 60 minutes for mountain road circuits; conditions vary.",
+        "note": "Mountain weather can change rapidly; carry layers even in July."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Park and Beach Capacity",
+        "text": "Lot capacity at North Beach and popular trailheads is limited; arriving before mid-morning is suggested during peak summer. If lots are full, park staff may restrict further entry until spaces open."
+      },
+      {
+        "kind": "signal",
+        "title": "Backcountry Connectivity",
+        "text": "Cellular service is reliable in downtown McCall but drops significantly once entering Payette National Forest. Download offline maps for navigation on forest service roads."
+      },
+      {
+        "kind": "fuel",
+        "title": "Mountain Service Gaps",
+        "text": "Refill tanks in McCall or Donnelly before heading toward the Frank Church Wilderness. Beyond the main town hubs, services like fuel and water are extremely sparse."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Road Access",
+        "text": "High-elevation roads and trails like those near Goose Lake may remain snow-covered through June. Check US Forest Service alerts for gate openings in late spring."
+      },
+      {
+        "kind": "access",
+        "title": "Watercraft Regulations",
+        "text": "Ensure all watercraft, including kayaks, have the required invasive species stickers. Local inspectors may check boats at the state park ramp or public docks."
+      }
+    ],
+    "arrival": "Pick up your rental in Boise for the 2.5-hour drive via the Payette River Scenic Byway. Stop in McCall for supplies before heading to lakeside cabins or forest campsites.",
+    "vehicle": "A standard car suffices for town and park roads, but an SUV is recommended for unpaved USFS roads; check rental contracts for off-pavement restrictions.",
+    "goldenHour": "Osprey Point for sunset views over the water, with timing varying by season.",
+    "sources": [
+      {
+        "label": "Idaho Department of Parks and Recreation",
+        "url": "https://parksandrecreation.idaho.gov/"
+      }
+    ]
+  }
+}

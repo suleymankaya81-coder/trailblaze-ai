@@ -1,0 +1,95 @@
+{
+  "slug": "mount-rainier",
+  "headline": "Mandatory Timed Entry Reservations for Paradise and Sunrise",
+  "reservation": "Mount Rainier National Park now requires timed entry reservations for the Paradise and Sunrise corridors during peak summer months. These must be booked in advance via Recreation.gov; a separate park entrance fee or pass is also required. Check the official NPS site for exact dates, as requirements change seasonally and reservations do not guarantee parking.",
+  "source_url": "https://www.nps.gov/mora",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Glaciers and Wildflower Meadows",
+        "start": "Suggested: 7:30 AM from Ashford",
+        "stops": [
+          {
+            "name": "Paradise / Skyline Trail",
+            "detail": "Walk through subalpine meadows toward the glaciated peaks, selecting an out-and-back distance suited to your group's stamina."
+          },
+          {
+            "name": "Myrtle Falls",
+            "detail": "Follow the short paved path from Paradise for a view of the falls with the mountain backdrop, staying on designated trails."
+          }
+        ],
+        "driving": "Allow 90 minutes from the Nisqually Entrance; winding park roads with strict limits",
+        "note": "Reservations for the Paradise corridor are checked at the Nisqually and Stevens Canyon entrances."
+      },
+      {
+        "title": "High Elevation Vistas and Basins",
+        "start": "Suggested: 7 AM from Packwood",
+        "stops": [
+          {
+            "name": "Sunrise Point",
+            "detail": "Stop at this overlook for panoramic views of the Cascades and the Emmons Glacier before reaching the visitor center."
+          },
+          {
+            "name": "Reflection Lakes",
+            "detail": "Pause for photos of the mountain's mirrored image, but check for seasonal road closures that affect access to this area."
+          }
+        ],
+        "driving": "Allow 2.5 hours; significant elevation gain and slow curves",
+        "note": "Sunrise is the highest point reachable by car and opens later in the season than Paradise."
+      },
+      {
+        "title": "Ancient Forests and Waterfalls",
+        "start": "Suggested: 8:30 AM from Longmire",
+        "stops": [
+          {
+            "name": "Trail of the Shadows",
+            "detail": "Circumnavigate the meadow at Longmire to see historic park structures and old-growth trees on this level loop."
+          },
+          {
+            "name": "Narada Falls",
+            "detail": "Walk down the steep, often wet trail for a full view of the falls; use caution as mist makes the path slippery."
+          }
+        ],
+        "driving": "Allow 1 hour; conditions vary with weather and construction",
+        "note": "Longmire is generally accessible year-round, serving as a base when higher roads are snowed in."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Congestion Management",
+        "text": "Paradise and Sunrise parking lots often fill by mid-morning despite reservations. Have a secondary lower-elevation forest walk ready if lots are closed."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Limits",
+        "text": "Cell service is nearly nonexistent inside park boundaries. Save your Recreation.gov reservation QR code as a screenshot before leaving Ashford or Packwood."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Stops",
+        "text": "There are no gas stations inside the park. Fuel up in Ashford, Packwood, or Enumclaw before beginning the ascent."
+      },
+      {
+        "kind": "timing",
+        "title": "Snow Clearance",
+        "text": "Upper roads to Sunrise and Paradise can remain closed due to snow late into June or July. Verify current road status on the NPS alerts page."
+      },
+      {
+        "kind": "access",
+        "title": "Entry Windows",
+        "text": "Timed entry reservations apply only to specific hours; if you arrive outside your window, you may be denied entry. Review the official NPS policy for early/late access."
+      }
+    ],
+    "arrival": "Fly into Seattle-Tacoma International (SEA) and rent an SUV; stop in Puyallup or Enumclaw for groceries before the final drive to the park gates.",
+    "vehicle": "An RV is feasible but faces length restrictions on winding roads like Sunrise; check the NPS website for specific vehicle length limits per corridor.",
+    "goldenHour": "Sunrise Point is the premier location for first light, but ensure your reservation or entry time aligns with the seasonal gate opening hours.",
+    "sources": [
+      {
+        "label": "Mount Rainier National Park (NPS)",
+        "url": "https://www.nps.gov/mora/planyourvisit/timed-entry-reservations.htm"
+      }
+    ]
+  }
+}

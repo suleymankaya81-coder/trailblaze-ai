@@ -1,0 +1,95 @@
+{
+  "slug": "tybee-island",
+  "headline": "Digital Parking Permits and Maritime History Reservations",
+  "reservation": "Tybee Island requires paid parking throughout the entire island, managed via physical kiosks or a mobile app. While general beach access is open, specific historical tours or lighthouse climbs may have capacity limits; check the official Tybee Island Light Station website for current entry protocols and potential closures.",
+  "source_url": "https://www.cityoftybee.org/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Maritime Landmarks",
+        "start": "Suggested: 9 AM from the North End",
+        "stops": [
+          {
+            "name": "Tybee Island Light Station",
+            "detail": "Climb the 178 steps of Georgia’s oldest and tallest lighthouse for panoramic views of the Savannah River."
+          },
+          {
+            "name": "Tybee Museum at Battery Garland",
+            "detail": "Explore 400 years of history housed within a former coastal defense battery across from the lighthouse."
+          }
+        ],
+        "driving": "Allow 10 minutes between sites; cycling is recommended to avoid parking transitions.",
+        "note": "The lighthouse has strict weight and clothing rules for climbing; check official guidelines before arrival."
+      },
+      {
+        "title": "Estuary and Marsh Ecology",
+        "start": "Suggested: 8 AM from Lazaretto Creek",
+        "stops": [
+          {
+            "name": "Salt Marsh Kayaking",
+            "detail": "Paddle through tidal creeks to spot bottlenose dolphins and migratory shorebirds in the Spartina grass."
+          },
+          {
+            "name": "Tybee Island Marine Science Center",
+            "detail": "Visit the interactive exhibits near the North Beach to learn about loggerhead sea turtle nesting habits."
+          }
+        ],
+        "driving": "Allow 15 minutes for travel; conditions vary with seasonal traffic on US-80.",
+        "note": "Check local tide charts before kayaking, as low tides can expose impassable mudflats."
+      },
+      {
+        "title": "Atlantic Breezes and Piers",
+        "start": "Suggested: 10 AM from South Beach",
+        "stops": [
+          {
+            "name": "Tybee Island Pier and Pavilion",
+            "detail": "Walk the iconic wooden pier for views of the Atlantic or watch local saltwater fishing."
+          },
+          {
+            "name": "Back River Fishing Pier",
+            "detail": "Experience the quieter side of the island facing the marsh and Little Tybee Island."
+          }
+        ],
+        "driving": "Allow 15 minutes; parking is most competitive in the South Beach district.",
+        "note": "Alcohol and glass are prohibited on all beaches; park rangers enforce local ordinances strictly."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Island-Wide Paid Parking",
+        "text": "All public parking on Tybee is paid from 8 AM to 8 PM daily. Utilize the parking app to avoid citations, as enforcement is frequent near the North and South beach lots."
+      },
+      {
+        "kind": "signal",
+        "title": "Coastal Connectivity",
+        "text": "Cellular service is generally robust across the island. Public Wi-Fi is available near the Pier, but speeds may vary during peak summer weekends."
+      },
+      {
+        "kind": "fuel",
+        "title": "Mainland Transition",
+        "text": "Fuel stations are located along US-80 before crossing the bridge. It is advisable to refuel in Thunderbolt or Savannah where prices and availability are more consistent."
+      },
+      {
+        "kind": "timing",
+        "title": "Tidal Planning",
+        "text": "Beach width changes dramatically between high and low tide. Plan beach walks during receding tides to access more hard-packed sand and avoid being cut off by water."
+      },
+      {
+        "kind": "access",
+        "title": "Fort Pulaski Gateway",
+        "text": "Access to the nearby Fort Pulaski National Monument is via the bridge to Cockspur Island. Check NPS hours as the gate closes promptly in the evening."
+      }
+    ],
+    "arrival": "Fly into SAV and pick up a rental for the 45-minute drive via the Islands Expressway. Stock up on supplies in Savannah before crossing the bridge onto Tybee.",
+    "vehicle": "Compact cars are ideal for navigating tight island streets and limited parking spots; check rental rules regarding beach driving, which is strictly prohibited.",
+    "goldenHour": "The Back River Pier is the premier spot for sunset views over the coastal marshes, varying seasonally.",
+    "sources": [
+      {
+        "label": "City of Tybee Island Official Site",
+        "url": "https://www.cityoftybee.org/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "daniel-boone-national-forest",
+  "headline": "Official Forest Alerts and Gorge Parking Reservations",
+  "reservation": "Red River Gorge requires an official Forest Service permit for overnight parking between 10 PM and 6 AM. While day-use entry is generally open, individual developed campgrounds and popular cabin rentals require separate reservations through official platforms. Seasonal demand is high; check the Daniel Boone National Forest website for the latest access changes and facility closures.",
+  "source_url": "https://www.fs.usda.gov/dbnf",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Sandstone Arches and Deep Ravines",
+        "start": "Suggested: 8:30 AM from Slade",
+        "stops": [
+          {
+            "name": "Sky Bridge",
+            "detail": "Walk the high sandstone ridge for panoramic views of the Clifty Wilderness before descending the stairs to see the arch from below."
+          },
+          {
+            "name": "Gray’s Arch",
+            "detail": "Hike through dense rhododendron to reach one of the forest's most iconic and massive natural spans."
+          }
+        ],
+        "driving": "Allow 1 hour for local navigation; roads are winding and narrow.",
+        "note": "Nada Tunnel has strict height and width limits; verify vehicle dimensions before approaching."
+      },
+      {
+        "title": "State Park Peaks and Creekside Trails",
+        "start": "Suggested: 9 AM from Natural Bridge State Resort Park",
+        "stops": [
+          {
+            "name": "Natural Bridge",
+            "detail": "Visit this separate state-managed landmark via trail or skylift to see the 78-foot span."
+          },
+          {
+            "name": "Rock Bridge Trail",
+            "detail": "Follow the loop to see a rare water-spanning arch and the cascades of Creation Falls."
+          }
+        ],
+        "driving": "Allow 45 minutes; conditions vary by rainfall.",
+        "note": "Natural Bridge is state-run; check Kentucky State Parks for specific seasonal facility hours."
+      },
+      {
+        "title": "Lake Vistas and Northern Forest Quiet",
+        "start": "Suggested: 9:30 AM from Morehead",
+        "stops": [
+          {
+            "name": "Cave Run Lake",
+            "detail": "Explore the Twin Knobs area for lakeside walking or managed swimming access."
+          },
+          {
+            "name": "Zilpo Scenic Byway",
+            "detail": "Drive the wooded peninsula for views of the 8,000-acre reservoir and diverse birdwatching."
+          }
+        ],
+        "driving": "Allow 1.5 hours between the Gorge and Morehead area.",
+        "note": "Developed beach access and boat ramps at Cave Run have specific seasonal operating dates."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "Nada Tunnel Clearance",
+        "text": "The historic Nada Tunnel is a single-lane passage with a 12-foot height limit. Large RVs or trailers should use KY-715 to avoid this bottleneck."
+      },
+      {
+        "kind": "parking",
+        "title": "Trailhead Congestion",
+        "text": "Popular Gorge trailheads like Auxier Ridge fill early on weekends. Have a secondary destination planned as roadside parking is strictly prohibited in many zones."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Supply Points",
+        "text": "Stanton and Slade serve as the primary fuel and grocery hubs for the northern forest districts. Services are sparse once you enter the Clifty Wilderness area."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Waterfall Flow",
+        "text": "Waterfalls like Van Hook Falls are highly dependent on recent precipitation. Aim for spring months for active flows; summer heat may reduce falls to a trickle."
+      },
+      {
+        "kind": "signal",
+        "title": "Offline Map Necessity",
+        "text": "Cellular reception is unreliable in deep sandstone ravines. Download maps for the Slade and London districts before leaving gateway towns."
+      }
+    ],
+    "arrival": "Pick up your rental at Blue Grass Airport (LEX) and stop in Lexington or Stanton for full groceries before checking into a Slade-area cabin.",
+    "vehicle": "A standard passenger car suits most paved roads, but high-clearance vehicles are recommended for gravel forest service roads; check rental terms for unpaved surfaces.",
+    "goldenHour": "Chimney Top Rock provides an unobstructed westward view of the gorge, though cliff-edge safety is critical as light fades.",
+    "sources": [
+      {
+        "label": "Daniel Boone National Forest Official Site",
+        "url": "https://www.fs.usda.gov/dbnf"
+      }
+    ]
+  }
+}

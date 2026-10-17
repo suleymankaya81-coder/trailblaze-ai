@@ -1,0 +1,95 @@
+{
+  "slug": "estes-park",
+  "headline": "Timed-Entry Permits Required for Park Access",
+  "reservation": "Access to Rocky Mountain National Park from Estes Park requires a specific timed-entry permit for most of the year. This is distinct from the park entrance pass and applies to both the Bear Lake Road corridor and the rest of the park. Systems are subject to change annually; verify current release schedules and vehicle requirements on the official National Park Service website.",
+  "source_url": "https://www.nps.gov/romo/planyourvisit/timed-entry-permit-system.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Lakeside Vistas and Alpine Transitions",
+        "start": "Suggested: 8 AM from Downtown Estes Park",
+        "stops": [
+          {
+            "name": "Bear Lake",
+            "detail": "Walk the accessible lakeside loop to view Hallett Peak reflected in the water before crowds peak."
+          },
+          {
+            "name": "Emerald Lake Trail",
+            "detail": "Ascend past Nymph and Dream Lakes for a classic subalpine hiking experience featuring jagged granite backdrops."
+          }
+        ],
+        "driving": "Allow 1 hour for park transit; conditions and shuttle frequency vary",
+        "note": "High elevation may cause fatigue; prioritize hydration and monitor for rapid afternoon thunderstorms."
+      },
+      {
+        "title": "High Tundra and Continental Divide",
+        "start": "Suggested: 9 AM from Fall River Entrance",
+        "stops": [
+          {
+            "name": "Trail Ridge Road",
+            "detail": "Drive the highest continuous paved highway in the United States, crossing the tundra above the treeline."
+          },
+          {
+            "name": "Alpine Visitor Center",
+            "detail": "Visit the highest facility of its kind for exhibits on the fragile tundra ecosystem and sweeping western views."
+          }
+        ],
+        "driving": "Allow 3–4 hours for a return scenic trip; conditions vary by snowpack",
+        "note": "Route is seasonal and typically closed from late autumn through late spring."
+      },
+      {
+        "title": "Valley Wildlife and River Walks",
+        "start": "Suggested: 9:30 AM from Lake Estes",
+        "stops": [
+          {
+            "name": "Lake Estes Trail",
+            "detail": "Walk the paved perimeter path for birdwatching and views of the Continental Divide across the water."
+          },
+          {
+            "name": "Estes Park Riverwalk",
+            "detail": "Follow the Fall River through the town center to explore local galleries and the historic confluence."
+          }
+        ],
+        "driving": "Local walking and minimal town driving; conditions vary",
+        "note": "Maintain significant distance from elk, particularly during the autumn breeding season."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Bear Lake Corridor",
+        "text": "Parking at Bear Lake often reaches capacity early in the morning during peak summer months. Utilize the park shuttle from the Hiker Shuttle Lot to ensure access without a dedicated parking space."
+      },
+      {
+        "kind": "signal",
+        "title": "Mountain Connectivity",
+        "text": "Cellular reception is unreliable once inside the National Park boundaries and on high-elevation passes. Download navigation maps for the Estes Valley and Trail Ridge Road before departing town."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Provisions",
+        "text": "Estes Park serves as the primary supply hub with several stations along US-34 and US-36. No fuel is available within the National Park interior or along the high-elevation scenic drive."
+      },
+      {
+        "kind": "timing",
+        "title": "Afternoon Weather",
+        "text": "Summer weather patterns frequently involve lightning and heavy rain above the treeline by early afternoon. Plan to be off high-altitude trails and overlooks before mid-day storms develop."
+      },
+      {
+        "kind": "access",
+        "title": "Seasonal Road Closures",
+        "text": "Trail Ridge Road and Old Fall River Road are subject to seasonal closures based on snow accumulation. Check the official NPS road status page for real-time updates during shoulder seasons."
+      }
+    ],
+    "arrival": "First two hours: Pickup rental at BJC or Denver, drive toward Lyons for mountain supplies, and check into Estes Park lodging.",
+    "vehicle": "Standard vehicles suit paved roads, but check rental contracts for restrictions on unpaved routes like Old Fall River Road.",
+    "goldenHour": "Manypoint Curve Overlook offers expansive valley views, though evening light varies significantly by season.",
+    "sources": [
+      {
+        "label": "Rocky Mountain National Park",
+        "url": "https://www.nps.gov/romo/index.htm"
+      }
+    ]
+  }
+}

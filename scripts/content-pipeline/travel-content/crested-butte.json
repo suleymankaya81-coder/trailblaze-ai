@@ -1,0 +1,95 @@
+{
+  "slug": "crested-butte",
+  "headline": "Wildflower and Winter Peak Capacity Reservations",
+  "reservation": "While the town of Crested Butte does not require an entry permit, overnight accommodation during the July wildflower peak or winter holiday weeks frequently reaches capacity six to nine months out. Campsites in the surrounding Gunnison National Forest require separate booking through official channels, and some trailheads may implement parking management systems; verify current status with the Forest Service.",
+  "source_url": "https://www.crestedbutte-co.gov/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Historic Town and Lowland Loops",
+        "start": "Suggested: 9 AM from Elk Avenue",
+        "stops": [
+          {
+            "name": "Crested Butte Mountain Heritage Museum",
+            "detail": "Understand the transition from coal mining to technical skiing through local artifacts and historic buildings."
+          },
+          {
+            "name": "Lower Loop Trail",
+            "detail": "A gentle introductory ride or walk along the Slate River that provides high-altitude acclimation with valley views."
+          }
+        ],
+        "driving": "Allow 1 hour for local town transit; conditions vary",
+        "note": "Stay on designated paths to protect fragile alpine tundra species."
+      },
+      {
+        "title": "High Alpine Peaks and Meadows",
+        "start": "Suggested: 8 AM from Gothic Road",
+        "stops": [
+          {
+            "name": "Snodgrass Mountain",
+            "detail": "Famous for mid-summer wildflower displays and panoramic views of the Mount Crested Butte peak."
+          },
+          {
+            "name": "Rocky Mountain Biological Laboratory",
+            "detail": "Observe active high-altitude research fields near the historic Gothic townsite."
+          }
+        ],
+        "driving": "Allow 1.5 hours round trip; dirt roads may be muddy after storms",
+        "note": "Gothic Road beyond the lab can be narrow; check vehicle clearance."
+      },
+      {
+        "title": "Aspen Groves and Mountain Passes",
+        "start": "Suggested: 8:30 AM from Whiterock Avenue",
+        "stops": [
+          {
+            "name": "Kebler Pass",
+            "detail": "Traverse one of the world's largest living organisms via a massive, interconnected aspen grove."
+          },
+          {
+            "name": "Lost Lake Slough",
+            "detail": "A high-alpine lake perfect for photography and short lakeside strolls under the Ruby Range."
+          }
+        ],
+        "driving": "Allow 2-3 hours for the mountain pass loop; conditions vary",
+        "note": "Passes are seasonally closed by snow; check Forest Service road status."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Town and Trailhead Limits",
+        "text": "Parking in the historic district is strictly regulated to preserve the town atmosphere. Popular trailheads like West Maroon often reach capacity before mid-morning during July."
+      },
+      {
+        "kind": "signal",
+        "title": "Remote Alpine Deadzones",
+        "text": "Expect total cellular loss once you depart the town perimeter toward Kebler Pass or Gothic. Offline maps are essential for navigating the Gunnison National Forest trails."
+      },
+      {
+        "kind": "fuel",
+        "title": "Valley Supply Points",
+        "text": "Gunnison serves as the primary regional hub for fuel and bulk supplies before heading north. Ensure your tank is full before exploring the remote Forest Service roads."
+      },
+      {
+        "kind": "timing",
+        "title": "Afternoon Storm Safety",
+        "text": "High country thunderstorms typically develop by mid-afternoon in summer. Plan to be below the tree line before 1 PM to avoid lightning hazards on exposed ridges."
+      },
+      {
+        "kind": "access",
+        "title": "Seasonal Mud Closures",
+        "text": "Many trails are closed during late spring (April/May) and late autumn (November) to prevent erosion. Respect local signage during 'mud season' transitions."
+      }
+    ],
+    "arrival": "Arrive via GUC airport, pick up a vehicle in Gunnison for grocery stocking, then drive 30 miles north to Crested Butte for check-in.",
+    "vehicle": "High-clearance 4WD is recommended for Kebler Pass and remote trailheads; check rental contracts for unpaved road restrictions.",
+    "goldenHour": "Paradise Divide offers a dramatic sunset vista of the Elk Mountains, subject to seasonal road accessibility.",
+    "sources": [
+      {
+        "label": "US Forest Service - Gunnison",
+        "url": "https://www.fs.usda.gov/gmug"
+      }
+    ]
+  }
+}

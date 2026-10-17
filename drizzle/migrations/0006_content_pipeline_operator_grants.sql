@@ -1,0 +1,2 @@
+GRANT SELECT, INSERT, UPDATE ON public.content_pipeline_jobs TO sandbox_exec;
+CREATE POLICY "Sandbox content operator" ON public.content_pipeline_jobs FOR ALL TO sandbox_exec USING (true) WITH CHECK (true);

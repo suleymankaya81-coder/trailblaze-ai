@@ -1,0 +1,95 @@
+{
+  "slug": "glacier-bay-national-park",
+  "headline": "Glacier Bay Vessel Permits and Excursion Booking",
+  "reservation": "A daily boat excursion is the primary bottleneck and requires separate booking from lodging. While entry permits for private vessels are highly restricted and require a lottery system, visitors arriving by air or ferry only need to coordinate their stay at Bartlett Cove or Gustavus. Always check the official NPS site for current excursion schedules and Huna Tribal House program dates.",
+  "source_url": "https://www.nps.gov/glba/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Rainforest Canopy and Coastal Orientation",
+        "start": "Suggested: 1 PM from Gustavus Airport",
+        "stops": [
+          {
+            "name": "Bartlett Cove Forest Trail",
+            "detail": "Walk through the moss-draped coastal rainforest to observe the transition from sea to forest."
+          },
+          {
+            "name": "Huna Tribal House (Xunaa Shuká Hít)",
+            "detail": "View the traditional Tlingit architecture and carved totems that represent the park's cultural heritage."
+          }
+        ],
+        "driving": "Allow 25 minutes for the local transfer from Gustavus to Bartlett Cove; conditions vary.",
+        "note": "Arrival depends on flight times; coordinate airport pickups with your lodging provider in advance."
+      },
+      {
+        "title": "Deep Fjord and Tidewater Glacier Exploration",
+        "start": "Suggested: 7:30 AM from Bartlett Cove Dock",
+        "stops": [
+          {
+            "name": "Grand Pacific and Margerie Glaciers",
+            "detail": "Observe active tidewater glaciers and listen for the 'white thunder' of calving ice from a safe distance."
+          },
+          {
+            "name": "South Marble Island",
+            "detail": "View Steller sea lions, puffins, and other seabirds on this protected rocky sanctuary."
+          }
+        ],
+        "driving": "Local transfer to dock; allow a full 8-hour day for the boat excursion into the bay.",
+        "note": "Glacier viewing is subject to ice conditions and safety regulations; pack warm layers for time on deck."
+      },
+      {
+        "title": "Shoreline Paddling and Wilderness Departure",
+        "start": "Suggested: 9 AM from Bartlett Cove",
+        "stops": [
+          {
+            "name": "Bartlett Cove Waterfront",
+            "detail": "Explore the shoreline by kayak or on foot to look for sea otters and bald eagles in the kelp beds."
+          },
+          {
+            "name": "Gustavus Community Vistas",
+            "detail": "Briefly visit the gateway town for a local perspective on life in Southeast Alaska before your flight."
+          }
+        ],
+        "driving": "Allow 25 minutes for the return transfer to Gustavus Airport; conditions vary.",
+        "note": "Leave flexibility in your schedule for weather-related flight delays, which are common in the region."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "No Road Access",
+        "text": "Gustavus is not connected to the mainland highway system. Access is only via the Alaska Marine Highway ferry or flights from Juneau."
+      },
+      {
+        "kind": "parking",
+        "title": "Dock Logistics",
+        "text": "There is no public parking for private cars at the main excursion dock. Use provided lodging shuttles to reach the waterfront for boat departures."
+      },
+      {
+        "kind": "fuel",
+        "title": "Isolated Services",
+        "text": "Gasoline is available in limited quantities in Gustavus but is unnecessary for most visitors relying on shuttles. Confirm all local transport needs early."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Limits",
+        "text": "Reliable cell signal exists in parts of Gustavus but fails immediately upon entering the bay. Do not rely on digital navigation beyond Bartlett Cove."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Boat Window",
+        "text": "Full-day boat excursions typically operate only from late May through early September. Outside this window, viewing the glaciers requires independent charter."
+      }
+    ],
+    "arrival": "Fly into Gustavus Airport (GST) from Juneau; pre-arrange a shuttle to Bartlett Cove lodging as there are no on-demand taxi apps.",
+    "vehicle": "Car rentals are extremely limited in Gustavus; most visitors use bicycle rentals or pre-arranged lodging shuttles.",
+    "goldenHour": "The Bartlett Cove waterfront offers dramatic views of the Fairweather Range at dusk; clear views are weather-dependent.",
+    "sources": [
+      {
+        "label": "Glacier Bay National Park & Preserve",
+        "url": "https://www.nps.gov/glba"
+      }
+    ]
+  }
+}

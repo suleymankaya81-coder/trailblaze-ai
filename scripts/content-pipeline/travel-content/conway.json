@@ -1,0 +1,95 @@
+{
+  "slug": "conway",
+  "headline": "Regional Parking Passes Required for National Forest Access",
+  "reservation": "Conway is the gateway to the White Mountain National Forest; while town entry is free, specific sites like Diana's Baths require a daily recreation pass or an Interagency pass displayed in your vehicle. Private glamping and lodge bookings are independent of forest access and should be secured months in advance for autumn. Always verify the latest fee stations and pass requirements with the U.S. Forest Service before arrival.",
+  "source_url": "https://www.fs.usda.gov/whitemountain",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Scenic Byways and River Bends",
+        "start": "Suggested: 8:30 AM from North Conway",
+        "stops": [
+          {
+            "name": "Kancamagus Highway (Route 112)",
+            "detail": "Drive this 34-mile National Scenic Byway to view the Swift River and granite peaks from the Hancock Overlook."
+          },
+          {
+            "name": "Albany Covered Bridge",
+            "detail": "Visit this 19th-century timber bridge for a classic New England aesthetic and access to nearby forest trails."
+          }
+        ],
+        "driving": "Allow 2-3 hours for the full loop; conditions vary by season",
+        "note": "There are no gas stations or services along the 34-mile Kancamagus stretch."
+      },
+      {
+        "title": "Cascades and Granite Ledges",
+        "start": "Suggested: 9 AM from West Conway",
+        "stops": [
+          {
+            "name": "Diana’s Baths",
+            "detail": "Walk the 0.6-mile flat trail to explore a series of natural potholes and cascading waterfalls in the woods."
+          },
+          {
+            "name": "Echo Lake State Park",
+            "detail": "Swim in the clear waters at the base of White Horse Ledge or drive to the summit of Cathedral Ledge for valley views."
+          }
+        ],
+        "driving": "Local transfers under 30 minutes; allow for parking delays",
+        "note": "Diana's Baths parking frequently reaches capacity; have a secondary trailhead planned."
+      },
+      {
+        "title": "Historic Rails and Valley Views",
+        "start": "Suggested: 10 AM at the Conway Scenic Railroad",
+        "stops": [
+          {
+            "name": "Conway Scenic Railroad",
+            "detail": "Depart from the 1874 Victorian station for a vintage train excursion through the Mount Washington Valley."
+          },
+          {
+            "name": "Saco River",
+            "detail": "Launch a canoe or tube for a gentle float through the floodplain forests surrounding the town."
+          }
+        ],
+        "driving": "Minimal driving; walking between downtown sites is common",
+        "note": "Train schedules vary by season; check official departures for the Crawford Notch vs. Valley routes."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Recreation Pass Requirements",
+        "text": "Self-service fee tubes are available at most National Forest trailheads like Rocky Gorge. Ensure your pass is visible on the dashboard to avoid citations in these designated areas."
+      },
+      {
+        "kind": "signal",
+        "title": "White Mountain Dead Zones",
+        "text": "Cellular service is notoriously unreliable once you enter the Kancamagus Highway or high-elevation notches. Download offline navigation and trail maps before leaving the town of Conway."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Supply Logic",
+        "text": "Conway serves as the final major hub for fuel and groceries before heading west into the National Forest. Top off your tank here to ensure enough fuel for mountain passes and back-road exploration."
+      },
+      {
+        "kind": "timing",
+        "title": "Autumn Foliage Congestion",
+        "text": "During peak leaf-peeping season in October, travel times through North Conway can double. Allow significant extra time for the main artery roads and plan for early arrivals at popular trailheads."
+      },
+      {
+        "kind": "access",
+        "title": "Seasonal Road Closures",
+        "text": "While Route 112 is generally plowed, many side roads and forest service access points close with the first snow. Check the Forest Service road status map if traveling between November and May."
+      }
+    ],
+    "arrival": "Pick up your rental at Portland (PWM) and drive 90 minutes north. Stock up on supplies in North Conway before checking into your glamping site or lodge.",
+    "vehicle": "A standard sedan is sufficient for the Kancamagus, but an AWD may be preferred for gravel forest roads; check rental contracts for unpaved road exclusions.",
+    "goldenHour": "Cathedral Ledge summit offers a dramatic westward view for sunset, though shadows fall early in the deep mountain notches.",
+    "sources": [
+      {
+        "label": "White Mountain National Forest",
+        "url": "https://www.fs.usda.gov/whitemountain"
+      }
+    ]
+  }
+}

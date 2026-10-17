@@ -1,0 +1,95 @@
+{
+  "slug": "townsend",
+  "headline": "National Park Vehicle Tags and Cades Cove Access",
+  "reservation": "Great Smoky Mountains National Park requires a valid parking tag for any vehicle stopping for more than 15 minutes; these must be purchased via official portals or local kiosks. Cades Cove vehicle-free days vary by season, typically affecting Wednesday access during summer months. Lodging in the valley requires a separate reservation through the official park concessionaire.",
+  "source_url": "https://www.nps.gov/grsm/planyourvisit/fees.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Valley History and Wildlife",
+        "start": "Suggested: 7 AM from Townsend",
+        "stops": [
+          {
+            "name": "Cades Cove Loop Road",
+            "detail": "An 11-mile one-way loop featuring 19th-century cabins, churches, and frequent bear sightings."
+          },
+          {
+            "name": "Abrams Falls Trail",
+            "detail": "A 5-mile round-trip hike through pine-oak forest leading to a high-volume waterfall."
+          }
+        ],
+        "driving": "Allow 45–60 minutes for the loop road; traffic often moves at a crawl.",
+        "note": "Arrive before 8 AM to avoid the heaviest vehicle congestion."
+      },
+      {
+        "title": "River Rapids and Heritage",
+        "start": "Suggested: 10 AM from Little River Road",
+        "stops": [
+          {
+            "name": "Great Smoky Mountains Heritage Center",
+            "detail": "View relocated historic buildings and learn the traditions of the Appalachian settlers."
+          },
+          {
+            "name": "Little River",
+            "detail": "Participate in seasonal tubing or fly fishing in the clear, mountain-fed waters."
+          }
+        ],
+        "driving": "Local transfers under 15 minutes; river flow varies by recent rainfall.",
+        "note": "Check local water levels; tubing may be suspended during low flow."
+      },
+      {
+        "title": "Underground Wonders and Ridge Views",
+        "start": "Suggested: 9 AM from Cavern Road",
+        "stops": [
+          {
+            "name": "Tuckaleechee Caverns",
+            "detail": "Tour a massive underground cave system featuring ancient stalagmites and a 58-degree constant climate."
+          },
+          {
+            "name": "Foothills Parkway",
+            "detail": "Drive the 'Missing Link' section for elevated panoramas of the highest Smokies peaks."
+          }
+        ],
+        "driving": "Allow 30 minutes for parkway overlooks; conditions vary with mountain fog.",
+        "note": "Caverns require stairs and walking over damp, uneven surfaces."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Park Entry Requirements",
+        "text": "Display a valid park parking tag on your dashboard at all trailheads. Compliance is checked regularly by rangers at popular spots like Abrams Falls."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Supplies",
+        "text": "Townsend is the last reliable stop for fuel before entering the Cades Cove area. There are no gas stations within the national park boundaries."
+      },
+      {
+        "kind": "signal",
+        "title": "Mountain Topography",
+        "text": "Expect total loss of cellular signal once you pass the Townsend park entrance. Download offline maps for Cades Cove and Tremont navigation."
+      },
+      {
+        "kind": "timing",
+        "title": "Vehicle-Free Access",
+        "text": "The Cades Cove loop is closed to cars on specific summer Wednesdays for cyclists. Check the official NPS calendar to avoid being turned away at the gate."
+      },
+      {
+        "kind": "access",
+        "title": "Secondary Roads",
+        "text": "Gravel roads like Rich Mountain Road are one-way and subject to seasonal closure. Always verify current road status at the Townsend Visitor Center."
+      }
+    ],
+    "arrival": "Collect vehicle at TYS airport and stop in Maryville for groceries before checking into Townsend cabins or riverside campgrounds.",
+    "vehicle": "Standard passenger cars are suitable for the main loop, though high-clearance helps on Tremont gravel spurs.",
+    "goldenHour": "Sunset from the Foothills Parkway overlooks provides the clearest views of the blue mountain ridges.",
+    "sources": [
+      {
+        "label": "Great Smoky Mountains NPS",
+        "url": "https://www.nps.gov/grsm/index.htm"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "big-bend-ranch-state-park",
+  "headline": "Texas State Park Entry and Camping Reservations",
+  "reservation": "Daily entry permits and specific campsites should be booked through the Texas Parks and Wildlife Department system. While the park is vast, specific riverside sites and interior lodging are limited and often fill months in advance for spring break and holidays. A confirmed reservation for lodging does not automatically include a vehicle permit if daily capacity is reached; always check the official portal.",
+  "source_url": "https://tpwd.texas.gov/state-parks/big-bend-ranch",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Rio Grande Corridor Vistas",
+        "start": "Suggested: 8:30 AM from Presidio",
+        "stops": [
+          {
+            "name": "The Hoodoos",
+            "detail": "Walk among balanced rock formations and eroded spires near the riverbank for a tactile introduction to the park's geology."
+          },
+          {
+            "name": "Closed Canyon",
+            "detail": "Navigate a narrow slot canyon with towering walls; verify current moisture levels as standing water and slick rock are common."
+          }
+        ],
+        "driving": "Allow 2 to 3 hours for the scenic FM 170 corridor; grades are steep and curves are sharp.",
+        "note": "Stay on the paved River Road if you do not have a high-clearance vehicle for the interior."
+      },
+      {
+        "title": "High Desert Plateaus",
+        "start": "Suggested: 9 AM from Sauceda Ranger Station",
+        "stops": [
+          {
+            "name": "Cinque Tinaja",
+            "detail": "Visit these critical desert water pockets to see how the landscape sustains wildlife in a volcanic environment."
+          },
+          {
+            "name": "Ojito Adentro",
+            "detail": "Follow a trail that transitions from open desert to a lush riparian oasis tucked against a canyon wall."
+          }
+        ],
+        "driving": "Allow 3 to 4 hours; interior unpaved roads are slow and require careful navigation.",
+        "note": "Check current road conditions at the ranger station before leaving the main track."
+      },
+      {
+        "title": "Western Gateway and History",
+        "start": "Suggested: 9:30 AM from Fort Leaton",
+        "stops": [
+          {
+            "name": "Fort Leaton State Historic Site",
+            "detail": "Explore one of the largest adobe structures in Texas to understand the 19th-century trade history of the region."
+          },
+          {
+            "name": "Contrabando Movie Set",
+            "detail": "Stop at this riverside film site for views of the Rio Grande and a look at regional cinematic history."
+          }
+        ],
+        "driving": "Allow 1.5 to 2 hours for local exploration near the western entrance.",
+        "note": "Supplies are most reliable in Presidio; stock up fully before entering the park interior."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead Capacity",
+        "text": "Pullouts at Closed Canyon are small and can fill during peak spring weeks. Park only in designated gravel areas to avoid damaging desert crust."
+      },
+      {
+        "kind": "signal",
+        "title": "Communication Gaps",
+        "text": "Cellular service is non-existent in the canyon depths and most of the interior. Download offline maps and carry a physical backup before leaving the gateway towns."
+      },
+      {
+        "kind": "fuel",
+        "title": "Boundary Supply Points",
+        "text": "Fuel is available in Presidio and Lajitas, but there are no pumps within the park's 300,000 acres. Ensure a full tank before attempting any route to the Sauceda interior."
+      },
+      {
+        "kind": "timing",
+        "title": "Summer Heat Adjustments",
+        "text": "From May through September, finish all hiking by 10 AM to avoid extreme exposure. Use the midday hours for the air-conditioned visitor centers or scenic driving."
+      },
+      {
+        "kind": "access",
+        "title": "Road Surface Requirements",
+        "text": "The FM 170 River Road is paved and accessible to most cars. However, 'high clearance' and 'four-wheel drive' are distinct requirements for many interior roads; check your rental contract."
+      }
+    ],
+    "arrival": "Arrive in Presidio for local supplies and fuel. Visit Fort Leaton to collect your physical permits and current backcountry road reports before heading east.",
+    "vehicle": "A standard car is fine for River Road; a high-clearance 4WD is essential for the interior. Check rental terms for off-pavement restrictions.",
+    "goldenHour": "Big Hill on FM 170 offers expansive river views; lighting varies significantly by season and cloud cover.",
+    "sources": [
+      {
+        "label": "Texas Parks and Wildlife Department",
+        "url": "https://tpwd.texas.gov/state-parks/big-bend-ranch"
+      }
+    ]
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "slug": "santa-cruz",
+  "headline": "State Park Parking and Boardwalk Reservation Check",
+  "reservation": "Day-use fees apply at state beaches and redwood parks; a single daily pass may cover multiple locations. Some peak holiday weekends involve capacity limits, so check the official California State Parks portal before arrival. Lodging and camping require separate, often long-lead, bookings.",
+  "source_url": "https://www.parks.ca.gov/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Coastal Cliffs and Surf Culture",
+        "start": "Suggested: 9 AM from West Cliff Drive",
+        "stops": [
+          {
+            "name": "Santa Cruz Surfing Museum",
+            "detail": "Located in a lighthouse, this site overlooks the Steamer Lane surf break and documents local maritime history."
+          },
+          {
+            "name": "Natural Bridges State Beach",
+            "detail": "View the iconic sandstone arch and seasonal monarch butterfly groves in the eucalyptus trees."
+          }
+        ],
+        "driving": "Allow 45 minutes for coastal transit; conditions vary",
+        "note": "West Cliff Drive is a popular walking route; allow extra time for pedestrian traffic."
+      },
+      {
+        "title": "Ancient Redwoods and Steam Trains",
+        "start": "Suggested: 8:30 AM from Felton",
+        "stops": [
+          {
+            "name": "Henry Cowell Redwoods State Park",
+            "detail": "Walk the Redwood Grove Loop to see old-growth trees, including the giant Fremont Tree."
+          },
+          {
+            "name": "Roaring Camp Railroads",
+            "detail": "Experience a narrow-gauge steam train ride through steep mountain grades and redwood stands."
+          }
+        ],
+        "driving": "Allow 1 hour for mountain roads; conditions vary",
+        "note": "Mountain temperatures are cooler than the coast; carry layers for shaded forest sections."
+      },
+      {
+        "title": "Boardwalk Thrills and Marine Life",
+        "start": "Suggested: 10 AM from Beach Street",
+        "stops": [
+          {
+            "name": "Santa Cruz Beach Boardwalk",
+            "detail": "Visit the historic seaside amusement park featuring the 1924 Giant Dipper wooden coaster."
+          },
+          {
+            "name": "Santa Cruz Wharf",
+            "detail": "Observe barking sea lions from the pier beams and enjoy panoramic views of Monterey Bay."
+          }
+        ],
+        "driving": "Allow 1.5 hours due to beach traffic; conditions vary",
+        "note": "Parking near the Boardwalk is high-demand; consider arriving early or using local shuttles."
+      },
+      {
+        "title": "Hidden Coves and Agricultural History",
+        "start": "Suggested: 9 AM from Highway 1 North",
+        "stops": [
+          {
+            "name": "Shark Fin Cove",
+            "detail": "Descend to a rugged beach featuring a unique rock formation resembling a shark's fin."
+          },
+          {
+            "name": "Wilder Ranch State Park",
+            "detail": "Explore historic ranch buildings and coastal bluff trails overlooking the Pacific."
+          }
+        ],
+        "driving": "Allow 1 hour for Highway 1 travel; conditions vary",
+        "note": "The trail to Shark Fin Cove is steep and unpaved; use caution on the descent."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "State Park Pass Utility",
+        "text": "A day-use fee paid at Henry Cowell is typically valid at Natural Bridges on the same day. Keep your receipt visible on the dashboard as required by park staff."
+      },
+      {
+        "kind": "signal",
+        "title": "Highway 17 Dead Zones",
+        "text": "Cellular service is intermittent on the winding sections of Highway 17 between San Jose and the coast. Ensure navigation is set before leaving the urban corridor."
+      },
+      {
+        "kind": "fuel",
+        "title": "Coastal vs Mountain Supply",
+        "text": "Fuel is abundant in central Santa Cruz and Felton, but sparse on the rugged Highway 1 stretch toward Davenport. Check levels before exploring the northern coves."
+      },
+      {
+        "kind": "timing",
+        "title": "The June Gloom Factor",
+        "text": "Summer mornings often feature thick marine layer fog that may not clear until the afternoon. Plan indoor museum visits or forest hikes during the mistiest hours."
+      },
+      {
+        "kind": "access",
+        "title": "Highway 17 Traffic",
+        "text": "Commuter and weekend beach traffic can double travel times to San Jose. Allow significant buffers for airport returns on Sunday afternoons."
+      }
+    ],
+    "arrival": "Pick up rental at SJC and allow 45-60 minutes to cross the Santa Cruz Mountains via Highway 17 to reach coastal accommodations.",
+    "vehicle": "Standard cars are ideal for the winding mountain passes; RVs should check for length restrictions on smaller state park roads.",
+    "goldenHour": "The Santa Cruz Wharf provides a 360-degree view of the bay, ideal for sunset photography in the autumn months.",
+    "sources": [
+      {
+        "label": "California State Parks",
+        "url": "https://www.parks.ca.gov/"
+      }
+    ]
+  }
+}

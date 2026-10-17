@@ -52,6 +52,33 @@ export type Database = {
           },
         ]
       }
+      content_pipeline_jobs: {
+        Row: {
+          completed: number
+          job_key: string
+          lease_until: string | null
+          pause_reason: string | null
+          status: string
+          updated_at: string
+        }
+        Insert: {
+          completed?: number
+          job_key: string
+          lease_until?: string | null
+          pause_reason?: string | null
+          status?: string
+          updated_at?: string
+        }
+        Update: {
+          completed?: number
+          job_key?: string
+          lease_until?: string | null
+          pause_reason?: string | null
+          status?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       destinations: {
         Row: {
           affiliate_potential: Json
@@ -101,6 +128,7 @@ export type Database = {
           status: string
           tagline: string | null
           tier: string | null
+          travel_plan: Json | null
           trip_duration_days: string | null
           trip_tags: string[]
           updated_at: string
@@ -153,6 +181,7 @@ export type Database = {
           status?: string
           tagline?: string | null
           tier?: string | null
+          travel_plan?: Json | null
           trip_duration_days?: string | null
           trip_tags?: string[]
           updated_at?: string
@@ -205,6 +234,7 @@ export type Database = {
           status?: string
           tagline?: string | null
           tier?: string | null
+          travel_plan?: Json | null
           trip_duration_days?: string | null
           trip_tags?: string[]
           updated_at?: string

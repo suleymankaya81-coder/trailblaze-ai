@@ -1,0 +1,95 @@
+{
+  "slug": "katmai-national-park",
+  "headline": "Remote Lodge and Bear Viewing Access",
+  "reservation": "Brooks Camp facilities require reservations up to 18 months in advance via recreation.gov. Most lodging is handled through private lottery or authorized park partners; day-use floatplane trips must be booked with licensed air taxis. Check official NPS advisories for changing bear-management protocols and boardwalk closures.",
+  "source_url": "https://www.nps.gov/katm/planyourvisit/permitsandreservations.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Brown Bear Observation",
+        "start": "Suggested: 9:00 AM from Brooks Camp",
+        "stops": [
+          {
+            "name": "Brooks Falls Platform",
+            "detail": "Watch brown bears fish for salmon from the safety of elevated boardwalks managed by park rangers."
+          },
+          {
+            "name": "Brooks River Lower Platform",
+            "detail": "Observe bears and cubs in the slower waters near the mouth of the river."
+          }
+        ],
+        "driving": "Walking only within Brooks Camp; floatplane arrival from King Salmon is required",
+        "note": "Bear jams can delay walking between platforms; allow extra time for all movements."
+      },
+      {
+        "title": "Volcanic History",
+        "start": "Suggested: 8:30 AM from Brooks Lodge",
+        "stops": [
+          {
+            "name": "Valley of Ten Thousand Smokes",
+            "detail": "Take the official bus tour to witness the site of the 1912 Novarupta eruption."
+          },
+          {
+            "name": "Three Forks Overlook",
+            "detail": "View the vast ash-filled valley and the Ukak River gorge from this high vantage point."
+          }
+        ],
+        "driving": "Allow 4 hours for the round-trip bus excursion on the park's only road",
+        "note": "The bus tour is weather-dependent and requires advance booking."
+      },
+      {
+        "title": "Cultural and Lake Exploration",
+        "start": "Suggested: 10:00 AM from Brooks Camp Visitor Center",
+        "stops": [
+          {
+            "name": "Cultural Museum",
+            "detail": "Learn about the Alutiiq history and view the reconstructed traditional banya (sod house)."
+          },
+          {
+            "name": "Naknek Lake Shoreline",
+            "detail": "Walk the designated beach areas for views of the surrounding Aleutian Range peaks."
+          }
+        ],
+        "driving": "Local transfer by air or water; allow 30 minutes for floatplane staging",
+        "note": "Stay alert for bears even in the camp vicinity; always follow ranger safety guidelines."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Air Taxi Staging",
+        "text": "There are no car parking lots; floatplanes dock at the Naknek Lake beach. Visitors must clear all gear from the landing area immediately upon arrival."
+      },
+      {
+        "kind": "signal",
+        "title": "Communication Realities",
+        "text": "Cellular and Wi-Fi services are effectively non-existent in the park. Handheld satellite devices are recommended for those venturing into the backcountry."
+      },
+      {
+        "kind": "fuel",
+        "title": "Supplies and Calories",
+        "text": "There are no grocery stores or gas stations in the park. All food must be purchased at the lodge or brought in bear-resistant containers."
+      },
+      {
+        "kind": "timing",
+        "title": "Platform Waiting Lists",
+        "text": "During peak July salmon runs, the Falls Platform uses a pager system with wait times up to several hours. Plan to spend time at the lower platforms or visitor center while waiting."
+      },
+      {
+        "kind": "access",
+        "title": "Mandatory Orientation",
+        "text": "All visitors must attend 'Bear School' at the visitor center immediately upon landing. You will not be permitted to access the trails or platforms without this safety briefing."
+      }
+    ],
+    "arrival": "Fly into King Salmon (AKN) then transfer to a floatplane; check in for Bear School immediately upon landing at Brooks Camp.",
+    "vehicle": "No road access for cars or RVs; travel is strictly by aircraft, boat, or foot within camp boundaries.",
+    "goldenHour": "Dusk at the Brooks River mouth offers sightings of bears, though visibility depends on summer cloud cover.",
+    "sources": [
+      {
+        "label": "National Park Service",
+        "url": "https://www.nps.gov/katm"
+      }
+    ]
+  }
+}

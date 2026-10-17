@@ -1,0 +1,95 @@
+{
+  "slug": "voyageurs-national-park",
+  "headline": "Water-Access Campsite and Tour Reservations",
+  "reservation": "All campsites are located on islands and require a boat for access; reservations must be made via Recreation.gov. Ranger-led boat tours and kettle falls excursions depart from specific visitor centers and should be booked weeks in advance. Always check the official NPS site for lake ice conditions or dock repairs.",
+  "source_url": "https://www.nps.gov/voya/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Rainy Lake Orientation",
+        "start": "Suggested: 9 AM from International Falls",
+        "stops": [
+          {
+            "name": "Rainy Lake Visitor Center",
+            "detail": "Review the day's lake conditions and explore exhibits on the region's Ojibwe and voyageur history."
+          },
+          {
+            "name": "Oberholtzer Trail",
+            "detail": "Walk this mainland path through deciduous and coniferous forests to view the Rainy Lake shoreline."
+          }
+        ],
+        "driving": "Allow 30 minutes from town to the visitor center; primarily water travel thereafter.",
+        "note": "Mainland walking is limited; the park's core experience requires getting onto the water."
+      },
+      {
+        "title": "The Interior Waterways",
+        "start": "Suggested: 8:30 AM from Kabetogama",
+        "stops": [
+          {
+            "name": "Ellsworth Rock Gardens",
+            "detail": "Visit this unique artistic site on the shores of Lake Kabetogama, accessible only by boat."
+          },
+          {
+            "name": "Kettle Falls Hotel",
+            "detail": "Take a boat tour to this historic remote outpost situated between Namakan and Rainy Lakes."
+          }
+        ],
+        "driving": "Allow 1 hour between gateways by road; water transit times vary by vessel speed.",
+        "note": "Lake conditions can change rapidly; monitor wind speeds if using a rental boat or paddle craft."
+      },
+      {
+        "title": "Ash River Vistas",
+        "start": "Suggested: 9:30 AM from Ash River",
+        "stops": [
+          {
+            "name": "Blind Ash Bay Trail",
+            "detail": "Hike this rocky loop for elevated views of the narrow waterways and boreal forest."
+          },
+          {
+            "name": "Ash River Visitor Center",
+            "detail": "Inquire about bald eagle nesting sites and recent wildlife sightings in the central park area."
+          }
+        ],
+        "driving": "Allow 1 hour from International Falls; the final approach is a winding forest road.",
+        "note": "Fall visitors should be prepared for early freezes and reduced seasonal visitor center hours."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "Boat-Only Interior",
+        "text": "The park interior is inaccessible by car. Visitors must use their own boat, rent a craft, or join a NPS-guided tour to see the islands."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Supply Points",
+        "text": "Gas stations are located in International Falls, Orr, and Ash River. Marinas offer fuel for boaters, but hours vary seasonally."
+      },
+      {
+        "kind": "parking",
+        "title": "Visitor Center Launches",
+        "text": "Parking at Rainy Lake and Kabetogama is generally adequate for day use but can fill during peak fishing weekends. Overnight parking requires a permit."
+      },
+      {
+        "kind": "signal",
+        "title": "Intermittent Lake Coverage",
+        "text": "Cell service is spotty once you leave the mainland gateways. Carry a marine radio or satellite device if navigating the larger lake basins."
+      },
+      {
+        "kind": "timing",
+        "title": "Ice-Out Uncertainty",
+        "text": "Spring access depends entirely on lake ice melting, which can occur anytime from late April to mid-May. Check official NPS reports before May trips."
+      }
+    ],
+    "arrival": "Pick up rental at Falls International Airport (INL). Buy all groceries in International Falls before the 20–60 minute drive to your chosen gateway resort.",
+    "vehicle": "Cars are fine for reaching gateways; however, a boat is the true 'vehicle' of the park. Check rental boat restrictions regarding night operation.",
+    "goldenHour": "Rainy Lake overlooks provide vistas of the boreal canopy, with the best colors typically appearing in late September.",
+    "sources": [
+      {
+        "label": "National Park Service",
+        "url": "https://www.nps.gov/voya/planyourvisit/conditions.htm"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "gettysburg",
+  "headline": "Museum Tickets and Battlefield Tour Reservations",
+  "reservation": "While the National Military Park grounds are free to enter, the Museum, Film, and Cyclorama require timed tickets. Licensed Battlefield Guide tours are highly popular and should be booked weeks in advance through the official foundation site to ensure availability for your preferred date.",
+  "source_url": "https://www.nps.gov/gett/planyourvisit/fees.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "The Turning Point and Landscapes",
+        "start": "Suggested: 8:30 AM from downtown Gettysburg",
+        "stops": [
+          {
+            "name": "Museum and Visitor Center",
+            "detail": "View the massive 360-degree Cyclorama painting to understand the scale and intensity of the 1863 conflict."
+          },
+          {
+            "name": "Little Round Top",
+            "detail": "Observe the strategic high ground and stone breastworks while looking out over the Valley of Death."
+          }
+        ],
+        "driving": "Allow 15–30 minutes between sites; the auto tour route is one-way in many sections.",
+        "note": "Check the NPS website for ongoing monument restoration projects that may temporarily limit access to specific overlooks."
+      },
+      {
+        "title": "Town History and Memorial Groves",
+        "start": "Suggested: 9:00 AM from Lincoln Square",
+        "stops": [
+          {
+            "name": "David Wills House",
+            "detail": "Explore the room where President Lincoln refined the Gettysburg Address in the center of the historic town."
+          },
+          {
+            "name": "Gettysburg National Cemetery",
+            "detail": "Walk the hallowed grounds dedicated to those who fell, noted for its solemn atmosphere and mature trees."
+          }
+        ],
+        "driving": "Walking is feasible within the town; allow 10 minutes to drive to the cemetery outskirts.",
+        "note": "The cemetery has specific closing hours that differ from the general battlefield roads; check official signage."
+      },
+      {
+        "title": "High Ridges and Rural Meadows",
+        "start": "Suggested: 8:00 AM from Gettysburg",
+        "stops": [
+          {
+            "name": "Eternal Light Peace Memorial",
+            "detail": "Visit this hilltop monument on Oak Ridge for expansive views of the first day's battlefield."
+          },
+          {
+            "name": "Big Round Top",
+            "detail": "Hike the wooded trail to the park's highest point for a contrast to the more open, cleared areas of the park."
+          }
+        ],
+        "driving": "Allow 45 minutes for the full loop; agricultural traffic can slow travel on boundary roads.",
+        "note": "Big Round Top is heavily forested and can be significantly cooler and shadier than the open meadows."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Visitor Center Hub",
+        "text": "The main visitor center has ample parking, but satellite lots at landmarks like Devil's Den fill early on summer weekends. Use the park's seasonal shuttle if available to reduce parking searches."
+      },
+      {
+        "kind": "signal",
+        "title": "Reliable Valley Coverage",
+        "text": "Cellular signal is generally strong throughout the park due to its proximity to the town. You can reliably use the official NPS app for GPS-enabled auto tour narration."
+      },
+      {
+        "kind": "fuel",
+        "title": "Local Convenience",
+        "text": "Ample gas stations are located immediately surrounding the park borders on Steinwehr Avenue and York Road. There is no need to carry extra fuel for the 16-mile auto tour."
+      },
+      {
+        "kind": "timing",
+        "title": "Living History Schedules",
+        "text": "Ranger programs and living history demonstrations are most frequent from June through August. Check the daily schedule posted at the visitor center for specific times and locations."
+      },
+      {
+        "kind": "access",
+        "title": "Accessibility and Pavement",
+        "text": "Most major monuments are accessible via paved paths, though reaching the summit of Big Round Top requires a steep walk on uneven terrain. The auto tour remains the most accessible way to see the park."
+      }
+    ],
+    "arrival": "Arrive at Hagerstown Regional Airport and drive one hour east to Gettysburg. Check into your inn or hotel before exploring the shops near Lincoln Square to avoid the evening rush.",
+    "vehicle": "A standard passenger vehicle is ideal for the paved 16-mile auto tour; large RVs may find some monument pullouts narrow.",
+    "goldenHour": "The Pennsylvania Memorial offers an elevated platform for viewing the sunset over the battlefield, dependent on park gate closing times.",
+    "sources": [
+      {
+        "label": "Gettysburg National Military Park",
+        "url": "https://www.nps.gov/gett/index.htm"
+      }
+    ]
+  }
+}

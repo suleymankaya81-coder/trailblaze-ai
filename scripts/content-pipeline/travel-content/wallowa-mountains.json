@@ -1,0 +1,95 @@
+{
+  "slug": "wallowa-mountains",
+  "headline": "Eagle Cap Wilderness Permits and Trail Access",
+  "reservation": "Wilderness entry typically requires a self-issued permit at the trailhead for day use and many overnight trips. Specialized camping at Wallowa Lake State Park should be secured months in advance through the Oregon State Parks booking system.",
+  "source_url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=20",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "High Alpine Vistas",
+        "start": "Suggested: 9 AM from Joseph",
+        "stops": [
+          {
+            "name": "Wallowa Lake Tramway",
+            "detail": "Ride the gondola to the summit of Mount Howard for views spanning the Seven Devils range."
+          },
+          {
+            "name": "Mount Howard Loop",
+            "detail": "Walk the high-altitude ridgeline trails to observe alpine flora and soaring eagles."
+          }
+        ],
+        "driving": "Allow 45 minutes for local transit; conditions vary on mountain access roads.",
+        "note": "The tramway is seasonal; check official operating dates for spring and autumn visits."
+      },
+      {
+        "title": "Glacial Waters and Wilderness Gateways",
+        "start": "Suggested: 8 AM from Wallowa Lake State Park",
+        "stops": [
+          {
+            "name": "West Fork Wallowa River Trail",
+            "detail": "Hike into the Eagle Cap Wilderness following a glacial river through old-growth forest."
+          },
+          {
+            "name": "Wallowa Lake Marina",
+            "detail": "Launch a kayak to see the terminal moraines from the water's perspective."
+          }
+        ],
+        "driving": "Allow 30 minutes for transit; gravel road sections may be present.",
+        "note": "Mornings on the lake offer the calmest waters for paddling."
+      },
+      {
+        "title": "Arts and Local Heritage",
+        "start": "Suggested: 10 AM from Enterprise",
+        "stops": [
+          {
+            "name": "Wallowa County Museum",
+            "detail": "Learn about the history of the Nez Perce and the region's early ranching pioneers."
+          },
+          {
+            "name": "Joseph Bronze Art Walk",
+            "detail": "Tour the main street to see world-class bronze sculptures produced in local foundries."
+          }
+        ],
+        "driving": "Allow 1 hour for transit between towns; livestock may be on the road.",
+        "note": "Museum hours vary by season; check local listings during the shoulder months."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead Capacity",
+        "text": "Primary trailheads at the south end of Wallowa Lake can reach capacity during peak summer weekends. Arrive early or utilize local shuttle options if available."
+      },
+      {
+        "kind": "signal",
+        "title": "Wilderness Dead Zones",
+        "text": "Cellular service is reliable in Joseph and Enterprise but vanishes quickly once entering the Eagle Cap Wilderness. Carry a physical map and offline navigation for all hikes."
+      },
+      {
+        "kind": "fuel",
+        "title": "Valley Services",
+        "text": "The towns of Joseph and Enterprise are the final reliable fuel stops before heading into the mountains. Ensure tanks are full before exploring remote Forest Service roads."
+      },
+      {
+        "kind": "timing",
+        "title": "Snowpack Constraints",
+        "text": "High mountain passes often remain snow-covered until mid-July. Consult the Wallowa-Whitman National Forest ranger station for the latest trail clearing reports."
+      },
+      {
+        "kind": "access",
+        "title": "Backcountry Food Storage",
+        "text": "This region is active bear country. Hard-sided bear canisters or proper hanging techniques are necessary for all overnight wilderness stays."
+      }
+    ],
+    "arrival": "Arrive at PDT and drive roughly 3 hours east; pick up groceries in Enterprise before reaching the Wallowa Lake basin.",
+    "vehicle": "High-clearance vehicles are recommended for reaching more remote trailheads; RVs should stick to paved valley roads.",
+    "goldenHour": "Sunset from the East Moraine provides an expansive view of the lake framed by the peaks of the Eagle Cap.",
+    "sources": [
+      {
+        "label": "Wallowa-Whitman National Forest",
+        "url": "https://www.fs.usda.gov/wallowa-whitman"
+      }
+    ]
+  }
+}

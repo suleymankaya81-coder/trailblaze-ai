@@ -1,0 +1,95 @@
+{
+  "slug": "mount-bachelor",
+  "headline": "Alpine Access and Parking Permits",
+  "reservation": "Mount Bachelor operates under a special use permit from the Deschutes National Forest. While lift tickets are the primary requirement for skiing, certain peak periods may implement parking reservations or shuttle requirements to manage congestion. Always verify current resort policies and Sno-Park permit needs for backcountry access through official USFS or resort channels.",
+  "source_url": "https://www.fs.usda.gov/deschutes",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Volcanic Slopes and Vistas",
+        "start": "Suggested: 8 AM from Bend",
+        "stops": [
+          {
+            "name": "Pine Marten Lodge",
+            "detail": "Ascend via the chairlift to this mid-mountain lodge for panoramic views of the Three Sisters Wilderness."
+          },
+          {
+            "name": "Summit Express",
+            "detail": "When conditions allow, ride to the top of the volcano for 360-degree views and alpine terrain."
+          }
+        ],
+        "driving": "Allow 45–60 minutes for the climb from Bend; conditions vary with snow and ice.",
+        "note": "Summit access is highly dependent on wind speeds and visibility; check the lift status board."
+      },
+      {
+        "title": "High Desert Pine Trails",
+        "start": "Suggested: 9 AM from Sunriver",
+        "stops": [
+          {
+            "name": "Mt. Bachelor Nordic Center",
+            "detail": "Explore the groomed cross-country trails that wind through the old-growth ponderosa pines."
+          },
+          {
+            "name": "Sun-Country Snowshoe Tours",
+            "detail": "Join a guided walk to learn about the winter ecology and volcanic geology of the Deschutes forest."
+          }
+        ],
+        "driving": "Allow 30 minutes from Sunriver; conditions vary on Century Drive.",
+        "note": "Stay on marked trails to avoid tree wells and sensitive alpine vegetation."
+      },
+      {
+        "title": "Lava Flows and Lakes",
+        "start": "Suggested: 9 AM from Bend",
+        "stops": [
+          {
+            "name": "Elk Lake",
+            "detail": "Visit the nearby high-mountain lake for a perspective of the mountain's west face."
+          },
+          {
+            "name": "Devils Garden",
+            "detail": "Observe the jagged volcanic rock formations and lava flows that define the base of the mountain."
+          }
+        ],
+        "driving": "Allow 1 hour for the Cascade Lakes Highway; road is seasonally closed in winter.",
+        "note": "Verify that the Cascade Lakes Scenic Byway has been plowed before attempting this route."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "West Village Base",
+        "text": "The main parking area at West Village fills quickly on weekend mornings. Arrive early or use the park-and-ride shuttle from Bend to avoid long walks from overflow lots."
+      },
+      {
+        "kind": "signal",
+        "title": "Mountain Top Connectivity",
+        "text": "Signal is usually strong at the lodges but can be blocked by topography in the back bowls. Do not rely on cellular service for navigation in the backcountry areas."
+      },
+      {
+        "kind": "fuel",
+        "title": "Bend Gateway Station",
+        "text": "There is no fuel available on the mountain itself. Fill your tank in Bend or Sunriver before beginning the ascent up Century Drive."
+      },
+      {
+        "kind": "timing",
+        "title": "Bachelor Fog Patterns",
+        "text": "A localized fog often settles mid-mountain in winter. Suggested skiing times are best focused on the morning when visibility is typically highest before afternoon clouds build."
+      },
+      {
+        "kind": "access",
+        "title": "Winter Road Requirements",
+        "text": "Carry traction devices or ensure your vehicle has winter-rated tires for the drive from Bend. State law may require chains during active storm cycles on the mountain highway."
+      }
+    ],
+    "arrival": "Collect your vehicle at Roberts Field (RDM) and secure groceries in Bend before ascending to the mountain or Sunriver.",
+    "vehicle": "A 4WD or AWD vehicle with snow tires is highly recommended for winter visits; check rental company policies on snow chain usage.",
+    "goldenHour": "Mt. Bachelor summit looking toward Broken Top; views are seasonal and subject to early lift closures.",
+    "sources": [
+      {
+        "label": "Deschutes National Forest",
+        "url": "https://www.fs.usda.gov/deschutes"
+      }
+    ]
+  }
+}

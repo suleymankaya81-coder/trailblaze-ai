@@ -1,0 +1,99 @@
+{
+  "slug": "maui",
+  "headline": "Haleakala and Waianapanapa Reservation Requirements",
+  "reservation": "National Park sunrise access and entry to Waianapanapa State Park require advance reservations for out-of-state visitors. These systems are independent and often book weeks in advance; check official NPS and Hawaii State Parks websites for current release schedules and permit availability.",
+  "source_url": "https://www.nps.gov/hale",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Volcanic Summits and High Elevation",
+        "start": "Suggested: 8 AM from Kahului",
+        "stops": [
+          {
+            "name": "Haleakala Visitor Center",
+            "detail": "Ascend to nearly 10,000 feet to view the vast volcanic basin and unique alpine ecosystem."
+          },
+          {
+            "name": "Hosmer Grove",
+            "detail": "Walk the short nature trail to see native honeycreepers and high-altitude flora."
+          }
+        ],
+        "driving": "Allow 2 hours for the ascent; steep grades and switchbacks require cautious driving.",
+        "note": "Temperatures at the summit are significantly lower than the coast; bring warm layers."
+      },
+      {
+        "title": "The Windward Rainforest Journey",
+        "start": "Suggested: 7:30 AM from Paia",
+        "stops": [
+          {
+            "name": "Waianapanapa State Park",
+            "detail": "Explore the black sand beach and volcanic sea arches; ensure you have a confirmed reservation."
+          },
+          {
+            "name": "Hana Town",
+            "detail": "Stop for local provisions and appreciate the quiet pace of this remote coastal community."
+          }
+        ],
+        "driving": "Allow 3 to 5 hours for the Road to Hana; travel time depends on stops and bridge traffic.",
+        "note": "Flash floods can occur in windward valleys; check weather before entering stream beds."
+      },
+      {
+        "title": "Coastal Heritage and Marine Life",
+        "start": "Suggested: 9 AM from Kihei",
+        "stops": [
+          {
+            "name": "Maui Ocean Center",
+            "detail": "Learn about Hawaii's coral reefs and marine conservation in an established educational setting."
+          },
+          {
+            "name": "Kapalua Coastal Trail",
+            "detail": "Walk the rocky shoreline path for views of Molokai and seasonal whale watching from the cliffs."
+          }
+        ],
+        "driving": "Allow 1.5 hours; traffic between South and West Maui can be heavy during commute times.",
+        "note": "Whale sightings are seasonal, typically peaking between December and April."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Park Entry Constraints",
+        "text": "Parking at Haleakala summit overlooks and Waianapanapa is strictly controlled. Arriving without a reservation during restricted hours will result in turned-away entry."
+      },
+      {
+        "kind": "signal",
+        "title": "Hana Highway Dead Zones",
+        "text": "Cellular service is non-existent along large stretches of the Road to Hana and within Haleakala's backcountry. Offline GPS data is necessary for navigation."
+      },
+      {
+        "kind": "fuel",
+        "title": "Strategic Refueling",
+        "text": "Gas is readily available in Central Maui and Kihei but limited to a single station in Hana. Fill your tank in Kahului or Paia before starting long mountain or coastal drives."
+      },
+      {
+        "kind": "timing",
+        "title": "Early Starts",
+        "text": "Trade winds and cloud cover typically increase in the afternoon. Schedule summit visits and snorkeling for the early morning hours for the best visibility."
+      },
+      {
+        "kind": "access",
+        "title": "Regional Weather",
+        "text": "Conditions can be sunny in Kihei while heavy rain falls in Hana. Consult the Hawaii Department of Transportation for road closures due to landslides or high surf."
+      }
+    ],
+    "arrival": "Collect your rental at OGG and stock up on supplies in Kahului before heading to your regional base in Kihei or Lahaina.",
+    "vehicle": "A standard car is suitable for main roads; check rental contracts for restrictions on the 'back road' from Hana.",
+    "goldenHour": "The Haleakala summit provides a vantage point for sunset above the clouds, though wind-chill is severe after dark.",
+    "sources": [
+      {
+        "label": "National Park Service - Haleakala",
+        "url": "https://www.nps.gov/hale"
+      },
+      {
+        "label": "Hawaii State Parks - Waianapanapa",
+        "url": "https://dlnr.hawaii.gov/dsp/parks/maui/waianapanapa-state-park/"
+      }
+    ]
+  }
+}

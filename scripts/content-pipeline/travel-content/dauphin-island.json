@@ -1,0 +1,95 @@
+{
+  "slug": "dauphin-island",
+  "headline": "Island Campground and Ferry Reservations",
+  "reservation": "Dauphin Island Campground and the Mobile Bay Ferry operate on independent booking systems. While beach access is open, overnight stays and ferry vehicle spots require advance coordination. Check the Town of Dauphin Island official site for current beach permits and the ferry schedule as weather frequently alters operations.",
+  "source_url": "https://www.townofdauphinisland.org",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "History and Marine Science",
+        "start": "Suggested: 9 AM from The Estuarium",
+        "stops": [
+          {
+            "name": "Fort Gaines",
+            "detail": "Explore the well-preserved Civil War bastions and tunnels overlooking the entrance to Mobile Bay."
+          },
+          {
+            "name": "The Estuarium at Dauphin Island Sea Lab",
+            "detail": "Walk the Living Marsh boardwalk and view exhibits showcasing the unique ecosystems of the Mobile River Delta."
+          }
+        ],
+        "driving": "Walking or cycling is recommended on the East End; minimal driving required.",
+        "note": "Fort Gaines holds periodic demonstrations; check the official historic site calendar for events."
+      },
+      {
+        "title": "Maritime Forests and Migratory Birds",
+        "start": "Suggested: 8 AM from Audubon Sanctuary",
+        "stops": [
+          {
+            "name": "Audubon Bird Sanctuary",
+            "detail": "Trek the pine and oak woodland trails where Gaillard Lake provides a habitat for alligators and herons."
+          },
+          {
+            "name": "West End Beach",
+            "detail": "Spend the afternoon at the island's primary public beach for shelling and swimming."
+          }
+        ],
+        "driving": "Allow 15 minutes for local transfer; conditions vary by seasonal beach traffic.",
+        "note": "Bird sanctuary trails are shaded but can be humid; bring water and verify trail conditions after storms."
+      },
+      {
+        "title": "Coastal Exploration by Water",
+        "start": "Suggested: 9:30 AM from Isle Dauphine",
+        "stops": [
+          {
+            "name": "Mississippi Sound",
+            "detail": "Paddle the calmer northern waters to observe coastal geography away from the Gulf surf."
+          },
+          {
+            "name": "Bienville Boulevard Bike Path",
+            "detail": "Cycle the length of the island to view the colorful stilt-house architecture and Gulf vistas."
+          }
+        ],
+        "driving": "Local transfer only; parking at West End Beach may involve a fee.",
+        "note": "Kayak launches are subject to tidal conditions; check local tide charts before setting out."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "Mobile Bay Ferry Bridge Alternative",
+        "text": "The ferry connects the island to Fort Morgan. If weather closes the ferry, the only mainland access is the AL-193 bridge via Theodore."
+      },
+      {
+        "kind": "timing",
+        "title": "Migration Peaks",
+        "text": "Spring and Fall are critical for birders. During these times, the Audubon Sanctuary trails become extremely active with neotropical migrants."
+      },
+      {
+        "kind": "parking",
+        "title": "West End Beach Capacity",
+        "text": "Public parking at the West End fills quickly on summer weekends. Arrive before mid-morning to secure a legal spot near the dunes."
+      },
+      {
+        "kind": "fuel",
+        "title": "Island Services",
+        "text": "Limited fuel is available on the island. For significant supplies or hardware, stop in Theodore or Mobile before crossing the bridge."
+      },
+      {
+        "kind": "signal",
+        "title": "Mobile Connectivity",
+        "text": "Signal is generally strong near the East End but can fluctuate near the marshy bird sanctuary trails. Offline maps are helpful for navigation."
+      }
+    ],
+    "arrival": "Land at Mobile Regional Airport (MOB), drive south through Theodore for supplies, and cross the high-span bridge to the East End.",
+    "vehicle": "Standard vehicles are suitable for all island roads; check rental agreements for restrictions on driving or parking near sandy areas.",
+    "goldenHour": "The West End Beach is the primary location for sunset views over the Gulf, though seasonal cloud cover varies.",
+    "sources": [
+      {
+        "label": "Town of Dauphin Island Official Website",
+        "url": "https://www.townofdauphinisland.org"
+      }
+    ]
+  }
+}

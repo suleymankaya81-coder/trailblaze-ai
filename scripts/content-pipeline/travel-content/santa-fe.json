@@ -1,0 +1,95 @@
+{
+  "slug": "santa-fe",
+  "headline": "Bandelier Entry and Museum Hill Reservation Info",
+  "reservation": "Bandelier National Monument may require timed entry or shuttle use during peak seasons; check the official NPS site for current mandates. Museum entry is generally separate from forest permits. High-demand dining and specialized art tours require checking official business sites for seasonal availability.",
+  "source_url": "https://www.nps.gov/band/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Historic Plaza and Art Districts",
+        "start": "Suggested: 9 AM from Santa Fe Plaza",
+        "stops": [
+          {
+            "name": "Palace of the Governors",
+            "detail": "Visit the oldest continuously occupied public building in the U.S. to see local artisan jewelry."
+          },
+          {
+            "name": "Canyon Road",
+            "detail": "Walk this half-mile stretch featuring over a hundred galleries, sculptures, and historic adobe studios."
+          }
+        ],
+        "driving": "Allow 30 minutes for local transit; conditions vary",
+        "note": "The Plaza area is highly walkable; parking is best found in peripheral city lots."
+      },
+      {
+        "title": "Ancient Dwellings and High Desert Flora",
+        "start": "Suggested: 8:30 AM from Bandelier National Monument",
+        "stops": [
+          {
+            "name": "Bandelier National Monument",
+            "detail": "Climb wooden ladders into Ancestral Puebloan cliff dwellings carved into volcanic tuff."
+          },
+          {
+            "name": "Santa Fe Botanical Garden",
+            "detail": "Learn about sustainable desert gardening and plants native to the Northern New Mexico high-altitude environment."
+          }
+        ],
+        "driving": "Allow 2 hours round-trip to Bandelier; conditions vary",
+        "note": "Bandelier is at a different elevation; prepare for variable weather and steep trail sections."
+      },
+      {
+        "title": "Mountain Vistas and Immersive Art",
+        "start": "Suggested: 9 AM from Aspen Vista Trailhead",
+        "stops": [
+          {
+            "name": "Aspen Vista Trail",
+            "detail": "Hike through the Santa Fe National Forest, especially vibrant during the autumn leaf change."
+          },
+          {
+            "name": "Meow Wolf",
+            "detail": "Explore the 'House of Eternal Return,' a massive, interactive art installation featuring secret passages."
+          }
+        ],
+        "driving": "Allow 1 hour for mountain road ascent; conditions vary",
+        "note": "Altitude at the ski basin exceeds 10,000 feet; monitor for signs of altitude fatigue."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Plaza Perimeter Strategy",
+        "text": "Street parking near the Plaza is metered and limited in duration. Use the municipal garages on Sandoval or San Francisco Street for longer stays."
+      },
+      {
+        "kind": "signal",
+        "title": "National Forest Dead Zones",
+        "text": "Reception is stable in the Railyard District but often vanishes on the drive toward the Santa Fe Ski Basin. Offline maps are recommended for all mountain trailheads."
+      },
+      {
+        "kind": "fuel",
+        "title": "High Desert Range",
+        "text": "Fuel up in Santa Fe before departing for Bandelier or the High Road to Taos. Services are infrequent once you enter the volcanic canyons and forest boundaries."
+      },
+      {
+        "kind": "timing",
+        "title": "Monsoon Awareness",
+        "text": "Summer afternoons often bring sudden, intense thunderstorms between 2 PM and 4 PM. Schedule high-elevation hikes for the morning to avoid lightning risks."
+      },
+      {
+        "kind": "access",
+        "title": "Bandelier Shuttle System",
+        "text": "During peak summer months, private vehicle access to Frijoles Canyon is often restricted to early or late hours. Official shuttles typically depart from nearby White Rock."
+      }
+    ],
+    "arrival": "Arrive at SAF and take a 20-minute transfer to the historic district. Check into your inn and hydrate immediately to adjust to the 7,000-foot elevation.",
+    "vehicle": "Standard vehicles are fine for the city and Bandelier; 4WD may be necessary for specific forest service roads in winter.",
+    "goldenHour": "Cross of the Martyrs offers a panoramic sunset view over the city's adobe rooftops and the Jemez Mountains.",
+    "sources": [
+      {
+        "label": "National Park Service - Bandelier",
+        "url": "https://www.nps.gov/band/index.htm"
+      }
+    ]
+  }
+}

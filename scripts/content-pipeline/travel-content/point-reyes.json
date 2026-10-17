@@ -1,0 +1,99 @@
+{
+  "slug": "point-reyes",
+  "headline": "Official Shuttle and Parking Checks for Point Reyes Coastal Access",
+  "reservation": "Entry to the Seashore is generally open, but specialized permits are required for backcountry camping and specific group activities. During peak winter weekends, a mandatory shuttle system typically manages access to the Lighthouse and Chimney Rock areas to mitigate congestion. Always verify current seasonal transit schedules and permit availability via the National Park Service official portal before traveling.",
+  "source_url": "https://www.nps.gov/pore/planyourvisit/permits.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Headlands, Marine Life, and Maritime History",
+        "start": "Suggested: 8:30 AM from Point Reyes Station",
+        "stops": [
+          {
+            "name": "Point Reyes Lighthouse",
+            "detail": "Descend the historic stairs to the 1870s light station for expansive Pacific views and seasonal whale watching."
+          },
+          {
+            "name": "Elephant Seal Overlook",
+            "detail": "Observe the resident colony of massive marine mammals from a safe distance near the Chimney Rock trailhead."
+          },
+          {
+            "name": "Cypress Tree Tunnel",
+            "detail": "Walk through the interlocking Monterey cypress canopy leading to the historic maritime radio station."
+          }
+        ],
+        "driving": "Allow 90 minutes total; narrow, winding roads require cautious speeds.",
+        "note": "Fog can significantly reduce visibility on Sir Francis Drake Boulevard at any time."
+      },
+      {
+        "title": "Coastal Bluffs and Tule Elk Wilderness",
+        "start": "Suggested: 9 AM from Inverness",
+        "stops": [
+          {
+            "name": "Tomales Point Trail",
+            "detail": "Hike through the Tule Elk Preserve to see herds grazing against the backdrop of Bodega Bay."
+          },
+          {
+            "name": "Pierce Point Ranch",
+            "detail": "Explore the well-preserved 19th-century dairy complex that highlights the region's agricultural heritage."
+          }
+        ],
+        "driving": "Allow 60 minutes; the northern peninsula involves paved but rural stretches.",
+        "note": "Bring water as the Tomales Point area is exposed with no shade or potable sources."
+      },
+      {
+        "title": "Tidefalls and Fault Lines",
+        "start": "Suggested: 8 AM from Olema",
+        "stops": [
+          {
+            "name": "Alamere Falls",
+            "detail": "Trek to the rare coastal tidefall where freshwater drops directly onto the beach sands."
+          },
+          {
+            "name": "Earthquake Trail",
+            "detail": "View the 1906 San Andreas Fault displacement at the Bear Valley Visitor Center interpretive walk."
+          }
+        ],
+        "driving": "Allow 45 minutes to trailheads; parking at Palomarin is limited and fills quickly.",
+        "note": "The Alamere Falls hike is a strenuous 13-mile round trip; monitor tide levels for beach safety."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead Capacity",
+        "text": "Lots at Palomarin and Bear Valley often reach capacity on weekends; have a secondary destination in mind. Use the designated overflow areas only if permitted by local signage."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Gaps",
+        "text": "Cellular service is non-existent in most western valley and coastal areas. Download all navigation maps and digital permits before leaving Point Reyes Station."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Supplies",
+        "text": "Point Reyes Station and Olema serve as the final locations for fuel and groceries. No gasoline or prepared food services exist within the Seashore boundaries."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Transit",
+        "text": "Winter whale-watching months often trigger road closures to private vehicles at the South Beach junction. Check for the Sir Francis Drake shuttle operation dates usually starting in late December."
+      },
+      {
+        "kind": "access",
+        "title": "Coastal Weather",
+        "text": "Temperatures can drop sharply when the marine layer moves in, regardless of inland heat. Layered clothing is essential for the variable conditions at the Lighthouse cliffs."
+      }
+    ],
+    "arrival": "Collect rental at STS, then stock up on local provisions in Point Reyes Station before heading to park visitor centers for orientation.",
+    "vehicle": "Standard vehicles are suitable for main roads; check rental contracts for restrictions on unpaved trailhead access.",
+    "goldenHour": "Mount Wittenberg for sunset, though cloud cover often dictates visibility.",
+    "sources": [
+      {
+        "label": "National Park Service: Point Reyes",
+        "url": "https://www.nps.gov/pore/index.htm"
+      }
+    ]
+  }
+}

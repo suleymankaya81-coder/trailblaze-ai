@@ -1,0 +1,95 @@
+{
+  "slug": "stowe",
+  "headline": "Official Vermont Trail and Seasonal Road Access",
+  "reservation": "Access to Mount Mansfield is generally open, but the Auto Toll Road and Gondola SkyRide require separate seasonal tickets. Parking at Smugglers' Notch and popular trailheads often reaches capacity; check the Vermont State Parks official site for any newly implemented weekend vehicle reservations or closure updates.",
+  "source_url": "https://vtstateparks.com/smugglers.html",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Village Heritage and Valley Views",
+        "start": "Suggested: 9 AM from Stowe Village",
+        "stops": [
+          {
+            "name": "Stowe Recreation Path",
+            "detail": "A 5.3-mile paved route offering views of the West Branch River and the iconic mountain profile."
+          },
+          {
+            "name": "Vermont Ski and Snowboard Museum",
+            "detail": "Explore the regional history of winter sports in a historic 1818 meeting house."
+          }
+        ],
+        "driving": "Allow 30 minutes for local village transits; conditions vary.",
+        "note": "The village is highly pedestrian-friendly but parking is limited near the community church."
+      },
+      {
+        "title": "High Alpine Peaks and Notch Curves",
+        "start": "Suggested: 8 AM from Mountain Road",
+        "stops": [
+          {
+            "name": "Mount Mansfield Chin",
+            "detail": "Ascend the highest point in Vermont via the Long Trail for 360-degree views of the Green Mountains."
+          },
+          {
+            "name": "Smugglers' Notch State Park",
+            "detail": "Drive the narrow, winding mountain pass on Route 108 between boulders and towering cliffs."
+          }
+        ],
+        "driving": "Allow 1 hour for mountain road navigation; conditions vary.",
+        "note": "Smugglers' Notch road is closed to all vehicles in winter and strictly prohibits trailers year-round."
+      },
+      {
+        "title": "Gorges and Rural Artisans",
+        "start": "Suggested: 9 AM from North Stowe",
+        "stops": [
+          {
+            "name": "Bingham Falls",
+            "detail": "A series of cascading waterfalls and deep turquoise pools within a dramatic rock gorge."
+          },
+          {
+            "name": "Moss Glen Falls",
+            "detail": "A short walk leads to one of the most photographed and tallest waterfalls in the state."
+          }
+        ],
+        "driving": "Allow 45 minutes for rural road stretches; conditions vary.",
+        "note": "Trail surfaces near falls are often slick; avoid visiting during active heavy rainfall."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Village and Trailhead Capacity",
+        "text": "Parking in Stowe Village is limited during peak autumn weeks. Trailheads for Mount Mansfield often reach capacity by mid-morning on weekends; verify overflow options with the Green Mountain Club."
+      },
+      {
+        "kind": "signal",
+        "title": "Mountain Connectivity",
+        "text": "Cellular service is unreliable within the Smugglers' Notch pass and high on the Long Trail. Download offline maps before departing the main village area."
+      },
+      {
+        "kind": "fuel",
+        "title": "Waterbury Supply Hub",
+        "text": "Refuel in Waterbury or Stowe Village before heading north on Route 108. Fuel options are non-existent once you enter the Smugglers' Notch mountain pass area."
+      },
+      {
+        "kind": "timing",
+        "title": "Notch Seasonal Closure",
+        "text": "Route 108 through the Notch is generally closed from late October to May depending on snowfall. Check VTrans reports for official opening dates each spring."
+      },
+      {
+        "kind": "access",
+        "title": "Fragile Alpine Tundra",
+        "text": "The summit of Mount Mansfield hosts rare alpine vegetation. Stay strictly on marked rocks to prevent irreversible damage to this sensitive ecosystem."
+      }
+    ],
+    "arrival": "Pick up rental at BTV, stop in South Burlington for groceries, and drive 45-60 minutes to Stowe Village for check-in.",
+    "vehicle": "A standard car suffices for paved roads, but check rental agreements if planning to use dirt backroads; RVs are banned in the Notch.",
+    "goldenHour": "Sunset Ridge Trail offers expansive evening views, though hikers must allow time to descend before full darkness.",
+    "sources": [
+      {
+        "label": "Vermont State Parks",
+        "url": "https://vtstateparks.com"
+      }
+    ]
+  }
+}

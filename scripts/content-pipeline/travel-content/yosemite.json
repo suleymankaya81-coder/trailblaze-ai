@@ -1,0 +1,95 @@
+{
+  "slug": "yosemite",
+  "headline": "Vehicle Entry Reservations and Seasonal Pass Requirements",
+  "reservation": "Yosemite frequently implements a Peak Hours Plus vehicle reservation system during summer and for specific events like the February Firefall; this is separate from camping or lodging bookings. Check the official NPS website to see if your dates require a timed-entry permit, and distinguish this from the standard park entrance fee. Reservations for in-park lodging and campgrounds are managed through separate official portals and typically fill months in advance.",
+  "source_url": "https://www.nps.gov/yose/planyourvisit/reservations.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Introduction to the Granite Cathedral",
+        "start": "Suggested: 8 AM from Oakhurst",
+        "stops": [
+          {
+            "name": "Tunnel View",
+            "detail": "Capture the classic vista of El Capitan, Half Dome, and Bridalveil Fall from this historic viewpoint."
+          },
+          {
+            "name": "Mariposa Grove",
+            "detail": "Walk among over 500 mature giant sequoias, including the Grizzly Giant and California Tunnel Tree."
+          }
+        ],
+        "driving": "Allow 3 to 4 hours including the Wawona Road transit; traffic may delay arrival",
+        "note": "Access to Mariposa Grove requires a seasonal shuttle from the Welcome Center; check operations before heading to the grove."
+      },
+      {
+        "title": "Waterfalls and Valley Vistas",
+        "start": "Suggested: 7:30 AM from Yosemite Valley",
+        "stops": [
+          {
+            "name": "Mist Trail",
+            "detail": "Climb the stone stairs to the brink of Vernal Fall for close-up views of the powerful Merced River descent."
+          },
+          {
+            "name": "Lower Yosemite Fall",
+            "detail": "Take the easy loop trail to stand at the base of North America's tallest waterfall system."
+          }
+        ],
+        "driving": "Use the Valley Shuttle; allow 5 to 7 hours for hiking and transit",
+        "note": "The Mist Trail is extremely wet in spring; footwear with good traction is essential for the granite steps."
+      },
+      {
+        "title": "High Country and Alpine Meadows",
+        "start": "Suggested: 8:30 AM from Yosemite Village",
+        "stops": [
+          {
+            "name": "Glacier Point",
+            "detail": "Look down 3,200 feet into Yosemite Valley for an aerial perspective of the High Sierra and Half Dome."
+          },
+          {
+            "name": "Olmsted Point",
+            "detail": "View the northern side of Half Dome and Tenaya Lake from the boulders along Tioga Road."
+          }
+        ],
+        "driving": "Allow 5 to 6 hours round trip; these roads are seasonal and weather-dependent",
+        "note": "Glacier Point and Tioga Roads typically open in late May or June and close with the first significant snow in autumn."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Valley Floor Congestion",
+        "text": "Parking in Yosemite Valley often fills by 9 AM during peak season. Park once at Yosemite Village or Curry Village and utilize the free shuttle to move between trailheads."
+      },
+      {
+        "kind": "signal",
+        "title": "Disconnected Wilderness",
+        "text": "Expect very limited to no cellular service throughout the park, including the High Country. Print or download essential maps and reservation QR codes before leaving gateway towns like Oakhurst or Groveland."
+      },
+      {
+        "kind": "fuel",
+        "title": "High Country Fuel",
+        "text": "No fuel is available in Yosemite Valley; the only in-park stations are at Wawona, Crane Flat, and Tuolumne Meadows (seasonal). Ensure your tank is full before beginning the ascent from El Portal or Mariposa."
+      },
+      {
+        "kind": "timing",
+        "title": "Waterfall Peak",
+        "text": "Waterfall volume peaks in May and June with the spring snowmelt. By late August, Yosemite Falls may be a trickle or completely dry depending on the previous winter's snowpack."
+      },
+      {
+        "kind": "access",
+        "title": "Winter Chains",
+        "text": "Tire chains may be required on any park road at any time during the winter months, regardless of vehicle type. Check the current chain control status via the official park road line before entering the mountains."
+      }
+    ],
+    "arrival": "Pick up rental at Fresno Yosemite International (FAT); purchase groceries in Oakhurst before the final 90-minute climb into the park.",
+    "vehicle": "Standard cars are fine for summer, but check rental contracts for restrictions on the steep, winding mountain passes; RVs over 40 feet have restricted access to certain roads.",
+    "goldenHour": "Sentinel Dome provides a 360-degree sunset view, though hikers must bring headlamps for the return walk in twilight.",
+    "sources": [
+      {
+        "label": "Yosemite National Park Official Site",
+        "url": "https://www.nps.gov/yose/index.htm"
+      }
+    ]
+  }
+}

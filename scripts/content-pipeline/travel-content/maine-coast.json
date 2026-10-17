@@ -1,0 +1,111 @@
+{
+  "slug": "maine-coast",
+  "headline": "Acadia Vehicle Reservations and Coastal Access",
+  "reservation": "Acadia National Park requires a park entrance pass year-round. From May through October, Cadillac Summit Road requires a separate vehicle reservation, which must be booked online in advance. Coastal state parks and private ferries to Casco Bay islands operate on independent schedules; always verify the official NPS and Maine State Park sites for current seasonal changes.",
+  "source_url": "https://www.nps.gov/acad/planyourvisit/fees.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Portland Waterfront and Headlights",
+        "start": "Suggested: 9 AM from Portland",
+        "stops": [
+          {
+            "name": "Old Port District",
+            "detail": "Walk the cobblestone streets and working waterfront to see the historic maritime architecture."
+          },
+          {
+            "name": "Portland Head Light",
+            "detail": "Visit the iconic lighthouse at Fort Williams Park for coastal cliff walks and Atlantic views."
+          }
+        ],
+        "driving": "Allow 1 hour for local Portland and Cape Elizabeth travel; traffic is heavy in July.",
+        "note": "Parking at Fort Williams Park is limited; arrive early to secure a spot near the lighthouse."
+      },
+      {
+        "title": "Midcoast Harbors and Peninsulas",
+        "start": "Suggested: 8:30 AM from Portland",
+        "stops": [
+          {
+            "name": "Maine Maritime Museum",
+            "detail": "Explore the historic shipyard in Bath to understand the region's wooden boat-building heritage."
+          },
+          {
+            "name": "Camden Hills State Park",
+            "detail": "Hike or drive to the summit of Mount Battie for a bird's-eye view of Camden Harbor."
+          }
+        ],
+        "driving": "Allow 2.5-3 hours; Route 1 congestion is frequent through Wiscasset.",
+        "note": "Coastal detours to peninsulas like Pemaquid Point add significant time; choose one major detour per day."
+      },
+      {
+        "title": "Mount Desert Island Exploration",
+        "start": "Suggested: 8 AM from Camden",
+        "stops": [
+          {
+            "name": "Ocean Path",
+            "detail": "Walk the scenic coastline from Sand Beach to Otter Cliff to see the granite formations."
+          },
+          {
+            "name": "Jordan Pond",
+            "detail": "Follow the loop trail around the clear glacial water with views of the North and South Bubbles."
+          }
+        ],
+        "driving": "Allow 2 hours from Camden to Bar Harbor; conditions vary by season.",
+        "note": "Park Loop Road is one-way in many sections; plan your stops sequentially to avoid long loops."
+      },
+      {
+        "title": "Acadia Peaks and Carriage Roads",
+        "start": "Suggested: 8 AM from Bar Harbor",
+        "stops": [
+          {
+            "name": "Cadillac Mountain",
+            "detail": "Access the highest point on the US North Atlantic coast for expansive bay views."
+          },
+          {
+            "name": "Eagle Lake Carriage Roads",
+            "detail": "Walk or cycle the motor-free gravel paths designed by Rockefeller for a quiet forest experience."
+          }
+        ],
+        "driving": "Local island travel; allow 30-45 minutes for parking at popular trailheads.",
+        "note": "Cadillac Mountain requires a timed vehicle reservation; check the NPS site for the 90-day and 2-day booking windows."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "Park Loop Road Capacity",
+        "text": "Parking lots at Sand Beach and Jordan Pond often fill by 9 AM in summer. Utilize the Island Explorer shuttle to bypass parking bottlenecks."
+      },
+      {
+        "kind": "fuel",
+        "title": "Island Provisioning",
+        "text": "Ellsworth is the last major town for standard grocery prices before crossing onto Mount Desert Island. Fuel is available in Bar Harbor but at a premium."
+      },
+      {
+        "kind": "signal",
+        "title": "Topographic Signal Loss",
+        "text": "Cell service is unreliable on the western side of Mount Desert Island and within deep valleys. Download the official NPS app for offline use."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Fog",
+        "text": "Dense coastal fog can appear suddenly, obscuring views at Cadillac Mountain and Pemaquid Point. Keep your itinerary flexible to swap viewpoints for museums."
+      },
+      {
+        "kind": "parking",
+        "title": "Coastal Town Constraints",
+        "text": "Camden and Bar Harbor have strictly enforced metered parking and residential zones. Use designated satellite lots and walk into the historic centers."
+      }
+    ],
+    "arrival": "Fly into Portland (PWM) or Bangor (BGR), pick up a rental car, and head to your first coastal base in Portland or Bar Harbor.",
+    "vehicle": "A standard car is sufficient for the Maine coast; check for height restrictions if driving an RV on Acadia’s historic stone bridges.",
+    "goldenHour": "Bass Harbor Head Light is a popular sunset location, though parking is extremely limited and requires arriving well in advance.",
+    "sources": [
+      {
+        "label": "Acadia National Park (NPS)",
+        "url": "https://www.nps.gov/acad"
+      }
+    ]
+  }
+}

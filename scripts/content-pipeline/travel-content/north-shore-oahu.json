@@ -1,0 +1,95 @@
+{
+  "slug": "north-shore-oahu",
+  "headline": "Manage Entry for Waimea Valley and State Park Access",
+  "reservation": "Waimea Valley operates as a managed cultural and botanical site; check their official portal for current entry hours and waterfall swimming status. State park areas like Kaena Point do not typically require entry reservations for hikers, but nearby popular beach parks may have specific parking regulations. Always verify the latest access policies via the Hawaii Department of Land and Natural Resources before arrival.",
+  "source_url": "https://dlnr.hawaii.gov/dsp/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Haleiwa Heritage and Coastal Views",
+        "start": "Suggested: 8:30 AM from Haleiwa",
+        "stops": [
+          {
+            "name": "Haleiwa Town",
+            "detail": "Walk through the historic surf hub to visit local art galleries and secure supplies for the day."
+          },
+          {
+            "name": "Laniakea Beach",
+            "detail": "Observe the shoreline where green sea turtles occasionally rest, ensuring you maintain the legally required distance from wildlife."
+          }
+        ],
+        "driving": "Allow 30–60 minutes; coastal traffic near two-lane bridges is highly variable.",
+        "note": "Parking in Haleiwa is limited; use designated lots and avoid blocking residential driveways."
+      },
+      {
+        "title": "Botanical Vistas and North Shore Surf",
+        "start": "Suggested: 9 AM from Waimea Bay",
+        "stops": [
+          {
+            "name": "Waimea Valley",
+            "detail": "Explore the world-class botanical collections and learn about Hawaiian history along the paved valley path."
+          },
+          {
+            "name": "Ehukai Beach Park",
+            "detail": "Watch skilled surfers tackle the Banzai Pipeline from the safety of the sand during winter swell months."
+          }
+        ],
+        "driving": "Allow 20–40 minutes; short distances can take longer during high surf events.",
+        "note": "Waterfall swimming at Waimea is conditional based on recent rainfall and water quality tests."
+      },
+      {
+        "title": "Eastern Corridor and Kahuku Flavors",
+        "start": "Suggested: 8 AM from Pupukea",
+        "stops": [
+          {
+            "name": "Sunset Beach Park",
+            "detail": "Walk the wide stretch of sand famous for its expansive horizon and professional surf contests."
+          },
+          {
+            "name": "Kahuku Farms",
+            "detail": "Visit the agricultural area for local produce and a glimpse into the region’s farming heritage."
+          }
+        ],
+        "driving": "Allow 45–75 minutes; traffic often bottlenecks near the food trucks in Kahuku.",
+        "note": "Ocean entry at Pupukea is rocky and only recommended during calm summer conditions."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Beach Lot Strategy",
+        "text": "Lots at Waimea Bay and Ehukai fill very early during peak surf season; have a backup plan to visit Haleiwa town if access is blocked. Illegal roadside parking often results in heavy fines or towing by local authorities."
+      },
+      {
+        "kind": "signal",
+        "title": "Coastal Connectivity",
+        "text": "Cellular reception is generally stable along Kamehameha Highway but can drop near the cliffs of Waimea or remote parts of Mokuleia. Download offline maps if you plan to explore the western reaches toward Kaena Point."
+      },
+      {
+        "kind": "fuel",
+        "title": "Haleiwa Supply Hub",
+        "text": "Gas stations are concentrated in Haleiwa and Waialua; fuel becomes scarce as you move east toward the windward coast. Top off your tank before heading toward the more rural Kahuku stretch."
+      },
+      {
+        "kind": "timing",
+        "title": "Surf Traffic Awareness",
+        "text": "During major surf competitions, travel times between Haleiwa and Sunset Beach can triple. Check local surf reports to anticipate heavy spectator crowds on weekends."
+      },
+      {
+        "kind": "access",
+        "title": "Kaena Point Limits",
+        "text": "The paved road ends at Mokuleia; the remaining path to the point is a natural area trail for foot traffic only. Check the state park website for seasonal nesting bird protection closures."
+      }
+    ],
+    "arrival": "Collect your rental at HNL and stop in Kapolei or Mililani for major grocery supplies before the final drive to Haleiwa check-in.",
+    "vehicle": "A standard car is sufficient for the paved Kamehameha Highway; check rental agreements for restrictions on unpaved roads near Mokuleia.",
+    "goldenHour": "Sunset Beach Park offers a classic namesake view, though winter clouds can obscure the horizon rapidly.",
+    "sources": [
+      {
+        "label": "Hawaii State Parks",
+        "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/"
+      }
+    ]
+  }
+}

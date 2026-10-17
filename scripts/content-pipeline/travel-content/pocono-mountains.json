@@ -1,0 +1,95 @@
+{
+  "slug": "pocono-mountains",
+  "headline": "Securing Seasonal Permits for Pennsylvania Highlands",
+  "reservation": "Most state parks are free to enter, but specific activities like whitewater releases on the Lehigh River or camping at Promised Land require advance bookings. National Recreation Area sites like Dingmans Falls have parking-limited access; check the NPS site for temporary closures.",
+  "source_url": "https://www.dcnr.pa.gov/StateParks/FindAPark/PromisedLandStatePark/Pages/default.aspx",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Delaware Water Gap Vistas",
+        "start": "Suggested: 8 AM from Stroudsburg",
+        "stops": [
+          {
+            "name": "Mount Tammany",
+            "detail": "Climb the red-dot trail for the most famous view of the Delaware River carving through the mountains."
+          },
+          {
+            "name": "Dingmans Falls",
+            "detail": "Walk the accessible boardwalk to see Pennsylvania's second-highest waterfall in a lush hemlock ravine."
+          }
+        ],
+        "driving": "Allow 30 minutes for transit between the Gap and Dingmans Ferry.",
+        "note": "The Dingmans Falls visitor center is seasonal; the boardwalk remains accessible during daylight hours."
+      },
+      {
+        "title": "Historic Valleys and Gorge Trails",
+        "start": "Suggested: 9 AM from Jim Thorpe",
+        "stops": [
+          {
+            "name": "Lehigh Gorge State Park",
+            "detail": "Cycle or walk the rail-trail along the river to see abandoned locks and mountain scenery."
+          },
+          {
+            "name": "Old Jail Museum",
+            "detail": "Explore the local history of the Molly Maguires in the heart of the Victorian mountain town."
+          }
+        ],
+        "driving": "Allow for walking or local shuttle transfers within the historic district.",
+        "note": "Parking in Jim Thorpe is severely limited on weekends; use the designated municipal lots early."
+      },
+      {
+        "title": "Glacial Lakes and High Plateaus",
+        "start": "Suggested: 8:30 AM from Scranton",
+        "stops": [
+          {
+            "name": "Hickory Run Boulder Field",
+            "detail": "Visit this National Natural Landmark to see a massive field of stones left by receding glaciers."
+          },
+          {
+            "name": "Lake Wallenpaupack",
+            "detail": "Enjoy the expansive shoreline of Pennsylvania's third-largest lake for boating and scenic overlooks."
+          }
+        ],
+        "driving": "Allow 50 minutes between Hickory Run and the Lake Wallenpaupack region.",
+        "note": "Boat rentals at Wallenpaupack are seasonal and require advance check for availability."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead Congestion",
+        "text": "Mount Tammany lots often fill by 7:30 AM on autumn weekends. Consider the McDade Trail as a secondary option if the main Gap lots are at capacity."
+      },
+      {
+        "kind": "signal",
+        "title": "Mixed Connectivity",
+        "text": "Signal is generally strong in towns but drops significantly within the Lehigh Gorge and deep forest areas. Download trail maps before leaving Stroudsburg."
+      },
+      {
+        "kind": "fuel",
+        "title": "Regional Hubs",
+        "text": "Fuel is plentiful along the I-80 and I-476 corridors but scarce on secondary mountain roads. Top off in Jim Thorpe or Stroudsburg before exploring the state parks."
+      },
+      {
+        "kind": "timing",
+        "title": "Peak Foliage Window",
+        "text": "Autumn colors typically peak in the second week of October, bringing heavy traffic to Route 209. Plan for extra travel time during these weekends."
+      },
+      {
+        "kind": "access",
+        "title": "River Safety",
+        "text": "Lehigh River rafting is dependent on scheduled dam releases from the Francis E. Walter Dam. Check the Army Corps of Engineers schedule for release dates."
+      }
+    ],
+    "arrival": "Fly into Wilkes-Barre/Scranton (AVP), pick up a car, and reach the Jim Thorpe or Stroudsburg hubs within an hour.",
+    "vehicle": "A vehicle with high clearance or AWD is beneficial for winter travel and accessing remote state park trailheads.",
+    "goldenHour": "The overlook at Mount Minsi provides a dramatic sunrise perspective over the Delaware Water Gap.",
+    "sources": [
+      {
+        "label": "PA DCNR State Parks",
+        "url": "https://www.dcnr.pa.gov/StateParks"
+      }
+    ]
+  }
+}

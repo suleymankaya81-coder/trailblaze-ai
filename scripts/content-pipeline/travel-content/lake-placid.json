@@ -1,0 +1,95 @@
+{
+  "slug": "lake-placid",
+  "headline": "Adirondack Trail Permits and Olympic Venue Booking",
+  "reservation": "While the Adirondack Park has no central entry fee, specific high-demand areas like the Adirondack Loj trailhead may require parking fees or advanced permits. Olympic venues and the Whiteface Memorial Highway require separate tickets; check the Olympic Authority website for current seasonal schedules.",
+  "source_url": "https://dec.ny.gov/places/high-peaks-wilderness",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Village Heritage and Mirror Lake",
+        "start": "Suggested: 9 AM from Main Street",
+        "stops": [
+          {
+            "name": "Mirror Lake Loop",
+            "detail": "A paved 2.7-mile circuit providing panoramic views of the high peaks without leaving town."
+          },
+          {
+            "name": "Lake Placid Olympic Museum",
+            "detail": "Explore the history of the 1932 and 1980 Winter Games through interactive exhibits."
+          }
+        ],
+        "driving": "Walking within village; minimal driving",
+        "note": "Mirror Lake is electric-motor only, providing a quieter environment for morning paddling."
+      },
+      {
+        "title": "Mountain Summits and River Corridors",
+        "start": "Suggested: 8 AM from Lake Placid",
+        "stops": [
+          {
+            "name": "Whiteface Veterans' Memorial Highway",
+            "detail": "Drive to the summit of the fifth-highest peak in NY for 360-degree Adirondack views."
+          },
+          {
+            "name": "High Falls Gorge",
+            "detail": "Walk the bridge system to see four waterfalls along the West Branch of the Ausable River."
+          }
+        ],
+        "driving": "Allow 60 minutes for the mountain drive; conditions vary",
+        "note": "The highway is seasonal and closes during high winds or early snow; verify status online."
+      },
+      {
+        "title": "Wilderness Gateways",
+        "start": "Suggested: 7 AM from Adirondack Loj Road",
+        "stops": [
+          {
+            "name": "Heart Lake",
+            "detail": "Enjoy a lakeside walk at the base of the High Peaks Wilderness area."
+          },
+          {
+            "name": "Mount Jo",
+            "detail": "A steep but manageable climb for views of Mount Marcy and the MacIntyre Range."
+          }
+        ],
+        "driving": "Allow 30 minutes; conditions vary",
+        "note": "Parking at the Loj fills very early on summer weekends; have a backup plan in Wilmington."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "High Peaks Trailheads",
+        "text": "Trailhead parking along Route 73 is strictly enforced; vehicles parked outside designated white lines will be ticketed. The Loj lot often fills by 7 AM in peak season."
+      },
+      {
+        "kind": "signal",
+        "title": "Mountain Shadows",
+        "text": "Cellular coverage is reliable in Lake Placid village but non-existent once you enter the High Peaks Wilderness. Always carry a physical map for hiking."
+      },
+      {
+        "kind": "fuel",
+        "title": "Village Supplies",
+        "text": "Fuel and large supermarkets are concentrated on the south end of Lake Placid village. Beyond Wilmington, services become scarce in the mountain passes."
+      },
+      {
+        "kind": "timing",
+        "title": "Mud Season Constraints",
+        "text": "High-elevation trails are often closed in April and May to prevent erosion. Stick to paved village paths or lower valley trails during the spring thaw."
+      },
+      {
+        "kind": "access",
+        "title": "Waterfront Rights",
+        "text": "Much of Lake Placid's shoreline is private; use the public launch at the north end of Mirror Lake Drive for legal access. Mirror Lake is closed to gas motors."
+      }
+    ],
+    "arrival": "Fly into Adirondack Regional Airport (SLK); pick up your vehicle and drive 30 minutes to Lake Placid to secure supplies before village check-in.",
+    "vehicle": "Standard vehicles are fine for village roads; winter travelers must verify the presence of snow tires or AWD for mountain passes.",
+    "goldenHour": "Mirror Lake Public Beach offers sunset views behind the village skyline and mountain peaks.",
+    "sources": [
+      {
+        "label": "Lake Placid Olympic Authority",
+        "url": "https://lakeplacidolympiccenter.com/"
+      }
+    ]
+  }
+}

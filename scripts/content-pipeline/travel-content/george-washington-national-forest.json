@@ -1,0 +1,95 @@
+{
+  "slug": "george-washington-national-forest",
+  "headline": "National Forest Recreation and Campground Booking",
+  "reservation": "General entry to the forest is open without a permit, but developed campgrounds like Sherando Lake or Todd Lake require reservations via Recreation.gov. Some day-use areas charge a small amenity fee onsite; always check the official Forest Service site for current seasonal road closures and fire restrictions.",
+  "source_url": "https://www.fs.usda.gov/gwj/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "High Peaks and Limestone Ridges",
+        "start": "Suggested: 8:00 AM from Harrisonburg",
+        "stops": [
+          {
+            "name": "Reddish Knob",
+            "detail": "Drive to one of the highest points in Virginia for a 360-degree view of the Ridge-and-Valley province."
+          },
+          {
+            "name": "North River Ranger District",
+            "detail": "Explore the rugged backcountry trails characterized by steep climbs and limestone outcrops."
+          }
+        ],
+        "driving": "Allow 1.5 hours to reach the summit; mountain roads are narrow and winding.",
+        "note": "The road to Reddish Knob can be impassable in winter; check Forest Service alerts for ice."
+      },
+      {
+        "title": "Mountain Waters and Valley Rec",
+        "start": "Suggested: 9:00 AM from Staunton",
+        "stops": [
+          {
+            "name": "Sherando Lake Recreation Area",
+            "detail": "Visit the 'Jewel of the Blue Ridge' for lakeside walking trails and forested picnic spots."
+          },
+          {
+            "name": "Blue Ridge Parkway Access",
+            "detail": "Join the scenic motorway at the forest boundary for vistas overlooking the Shenandoah Valley."
+          }
+        ],
+        "driving": "Allow 45–60 minutes; local transfer times depend on specific recreation area access points.",
+        "note": "Day-use fees may apply at Sherando Lake; carry small denominations for self-pay stations."
+      },
+      {
+        "title": "Southern Gorges and Historic Gaps",
+        "start": "Suggested: 8:30 AM from Lexington",
+        "stops": [
+          {
+            "name": "James River Face Wilderness",
+            "detail": "Observe the dramatic water gap where the James River carves through the Blue Ridge Mountains."
+          },
+          {
+            "name": "Locher Tract",
+            "detail": "Walk the gentle loop trails near the river to see diverse birdlife and riparian forest health."
+          }
+        ],
+        "driving": "Allow 1 hour for regional travel; conditions vary based on forest road maintenance.",
+        "note": "Wilderness areas have stricter regulations; group sizes are limited and mechanical transport is prohibited."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead Etiquette",
+        "text": "Parking is generally available at designated trailheads, but avoid blocking forest service gates. Do not park on soft shoulders during spring thaw to prevent road damage."
+      },
+      {
+        "kind": "signal",
+        "title": "Rugged Terrain Disconnect",
+        "text": "Expect total loss of signal in deep valleys and wilderness areas like Ramsey's Draft. Paper maps or pre-loaded offline GPS data are essential for navigating the forest service road network."
+      },
+      {
+        "kind": "fuel",
+        "title": "Valley Gateway Supply",
+        "text": "Gas and services are only available in gateway towns like Harrisonburg, Staunton, or Lexington. Ensure your tank is full before entering the forest, as mountain driving consumes more fuel."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Road Access",
+        "text": "Many secondary forest roads are gated seasonally from January to March. Check the official MVUM (Motor Vehicle Use Map) for the most stable information on which routes remain open."
+      },
+      {
+        "kind": "access",
+        "title": "Multi-Use Awareness",
+        "text": "Be aware that certain areas are open to hunting during specific seasons, usually in autumn. Wearing blaze orange is a standard local precaution when visiting during these times."
+      }
+    ],
+    "arrival": "After arriving at Shenandoah Valley Regional Airport, head to Staunton or Harrisonburg to secure supplies. Check the Forest Service office for the latest maps before heading to your campsite or yurt.",
+    "vehicle": "A vehicle with high clearance is recommended for forest service roads; check rental contracts for restrictions on unpaved surfaces.",
+    "goldenHour": "Woodstock Tower provides a panoramic sunset view of the Seven Bends of the Shenandoah River, subject to seasonal foliage density.",
+    "sources": [
+      {
+        "label": "U.S. Forest Service",
+        "url": "https://www.fs.usda.gov/main/gwj/home"
+      }
+    ]
+  }
+}

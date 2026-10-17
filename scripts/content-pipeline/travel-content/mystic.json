@@ -1,0 +1,99 @@
+{
+  "slug": "mystic",
+  "headline": "Plan Your Seaport Visit: Timed Entries and Seasonal Charms",
+  "reservation": "Entry to the Mystic Seaport Museum and Mystic Aquarium are separate ticketing processes; both often sell out during summer weekends and the December holiday parade. While the town itself is open access, dining at waterfront spots requires advance booking through third-party platforms. Always check official institution websites for current seasonal hours and maintenance closures for the Bascule Bridge.",
+  "source_url": "https://www.mysticseaport.org",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Maritime History and River Views",
+        "start": "Suggested: 9 AM from Downtown Mystic",
+        "stops": [
+          {
+            "name": "Mystic Seaport Museum",
+            "detail": "Explore the 19th-century seafaring village and board the Charles W. Morgan, the world’s last wooden whaling ship."
+          },
+          {
+            "name": "Mystic Bascule Bridge",
+            "detail": "Observe the unique counterweighted drawbridge in action as it rises to allow local sailboat traffic through the channel."
+          }
+        ],
+        "driving": "Allow 15 minutes; primarily walking within the historic district.",
+        "note": "Bridge lifts typically occur at 40 minutes past the hour during daylight; verify current schedules."
+      },
+      {
+        "title": "Marine Life and Colonial Strolls",
+        "start": "Suggested: 9:30 AM from Coogan Blvd",
+        "stops": [
+          {
+            "name": "Mystic Aquarium",
+            "detail": "View the outdoor beluga whale habitat and learn about Atlantic ecosystem conservation efforts."
+          },
+          {
+            "name": "Olde Mistick Village",
+            "detail": "Walk through the recreated 1720s-style colonial village for artisanal food and specialty boutique shopping."
+          }
+        ],
+        "driving": "Allow 10 minutes between the Aquarium area and the Riverfront.",
+        "note": "Aquarium visits are best on weekday mornings to avoid school holiday peaks."
+      },
+      {
+        "title": "Coastal Nature and Nearby Boroughs",
+        "start": "Suggested: 10 AM from Denison Avenue",
+        "stops": [
+          {
+            "name": "Denison Pequotsepos Nature Center",
+            "detail": "Hike trails through oak-hickory forests and past historic stone walls in this coastal preserve."
+          },
+          {
+            "name": "Stonington Borough",
+            "detail": "Take a short drive to see the lighthouse and grand sea captains' homes overlooking the Atlantic."
+          }
+        ],
+        "driving": "Allow 30-45 minutes for the scenic loop; conditions vary with coastal traffic.",
+        "note": "Nature trails can be muddy after seasonal rains; check local center alerts."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Downtown Mystic Parking",
+        "text": "Paid street parking and municipal lots are available near the Bascule Bridge but fill rapidly on summer Saturdays. Arrive before 10 AM or use the Seaport Museum’s dedicated visitor lots if visiting that site."
+      },
+      {
+        "kind": "signal",
+        "title": "Cellular Service",
+        "text": "Signal is generally robust throughout Mystic and Stonington Borough. Remote sections of the Denison Pequotsepos trails may experience occasional interference from terrain."
+      },
+      {
+        "kind": "fuel",
+        "title": "Regional Fueling",
+        "text": "Service stations are plentiful along the Route 1 corridor and near I-95. Ensure you refuel before heading into the smaller residential streets of Stonington."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Planning",
+        "text": "Summer offers full museum operations, while late October provides peak foliage along the Mystic River. Many outdoor boat tours cease operation after October; check official providers for exact season dates."
+      },
+      {
+        "kind": "access",
+        "title": "Bridge Maintenance",
+        "text": "The Bascule Bridge is a critical transport link; occasional maintenance can cause temporary vehicle detours. Check the Connecticut Department of Transportation for scheduled bridge closures."
+      }
+    ],
+    "arrival": "Arrive at Westerly State Airport (WST) for a 20-minute drive, or via Amtrak to the Mystic station. Pick up rental vehicles at the airport or New London before checking into village inns.",
+    "vehicle": "Standard sedans are ideal for the narrow historic streets; RVs should use designated museum parking as village maneuvering is restricted.",
+    "goldenHour": "The Mystic River boardwalk offers a classic sunset view of the shipyard; fall colors deepen the effect in October.",
+    "sources": [
+      {
+        "label": "Mystic Seaport Museum Official",
+        "url": "https://www.mysticseaport.org"
+      },
+      {
+        "label": "Mystic Aquarium Visitor Info",
+        "url": "https://www.mysticaquarium.org"
+      }
+    ]
+  }
+}

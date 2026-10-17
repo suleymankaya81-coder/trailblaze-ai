@@ -1,0 +1,99 @@
+{
+  "slug": "hudson-valley",
+  "headline": "Verify State Park and Historic Site Entry Requirements",
+  "reservation": "Access to Minnewaska State Park Preserve and Mohonk Preserve typically requires daily fees or specific passes, with parking capacity acting as the primary bottleneck. Historic sites like the Vanderbilt Mansion or Home of FDR often require timed tour tickets purchased through the official NPS portal. Always check the official agency websites for seasonal updates and capacity alerts.",
+  "source_url": "https://parks.ny.gov/parks/minnewaska/details.aspx",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Highlands Art and River Towns",
+        "start": "Suggested: 10 AM from Beacon Station",
+        "stops": [
+          {
+            "name": "Dia Beacon",
+            "detail": "Explore large-scale contemporary art installations in a converted industrial space near the river."
+          },
+          {
+            "name": "Mount Beacon Park",
+            "detail": "Hike the steep stairs and switchbacks for a panoramic view of the Hudson River and the Newburgh-Beacon Bridge."
+          }
+        ],
+        "driving": "Allow 15-20 minutes between Beacon and Cold Spring; traffic varies on Route 9D",
+        "note": "Dia Beacon requires advanced timed-entry tickets; check their official calendar."
+      },
+      {
+        "title": "Shawangunk Ridges and Sky Lakes",
+        "start": "Suggested: 8:30 AM from New Paltz",
+        "stops": [
+          {
+            "name": "Lake Minnewaska",
+            "detail": "Walk the relatively level carriage roads circling the glacial lake and white conglomerate cliffs."
+          },
+          {
+            "name": "Awosting Falls",
+            "detail": "A short walk from the main parking area leads to this 60-foot drop over the Peters Kill."
+          }
+        ],
+        "driving": "Allow 25 minutes from New Paltz; parking lots often reach capacity by mid-morning",
+        "note": "Verify if the swimming area is open at Lake Minnewaska during your visit."
+      },
+      {
+        "title": "Historic Estates and Elevated Walks",
+        "start": "Suggested: 9 AM from Poughkeepsie",
+        "stops": [
+          {
+            "name": "Walkway Over the Hudson",
+            "detail": "Cross the world's longest elevated pedestrian bridge for views extending to the Catskill Mountains."
+          },
+          {
+            "name": "Home of Franklin D. Roosevelt",
+            "detail": "Tour the residential grounds and library to learn about the 32nd President's connection to the valley."
+          }
+        ],
+        "driving": "Allow 20 minutes between the Walkway and Hyde Park; Route 9 can be congested",
+        "note": "The Walkway is highly exposed; bring a windbreaker or sun protection depending on the season."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "State Park Capacity",
+        "text": "Minnewaska and Mount Beacon lots fill very early on pleasant weekends. Have a secondary plan or a local town walk prepared if entry is restricted."
+      },
+      {
+        "kind": "signal",
+        "title": "Gunks and Rural Corridors",
+        "text": "Expect intermittent signal in the Shawangunk Mountains and rural parts of Route 44/55. Offline maps are recommended for navigating to remote trailheads."
+      },
+      {
+        "kind": "fuel",
+        "title": "Town-Based Services",
+        "text": "Fuel and electric charging are concentrated in hubs like Kingston, New Paltz, and Poughkeepsie. Services are sparse within the state park boundaries."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Trail Access",
+        "text": "Carriage roads in Minnewaska may be reserved for skiing or snowshoeing in winter. Spring mud season can lead to temporary closures of fragile footpaths."
+      },
+      {
+        "kind": "access",
+        "title": "Regional Bridge Crossings",
+        "text": "Moving between the east and west banks requires using the Mid-Hudson, Beacon-Newburgh, or Kingston-Rhinecliff bridges. Allow extra time for toll queues and traffic."
+      }
+    ],
+    "arrival": "Pickup rental at Stewart International (SWF) and drive 20 minutes to New Paltz or 30 minutes to Beacon to check in before the first regional stop.",
+    "vehicle": "Standard vehicles are suitable for the region; check height clearances if driving an RV near historic arched bridges in the parkways.",
+    "goldenHour": "The Walkway Over the Hudson offers clear views for sunset, though the park closes shortly after dusk; check official seasonal hours.",
+    "sources": [
+      {
+        "label": "NY State Parks - Minnewaska",
+        "url": "https://parks.ny.gov/parks/minnewaska/details.aspx"
+      },
+      {
+        "label": "NPS - Home of FDR",
+        "url": "https://www.nps.gov/hofr/index.htm"
+      }
+    ]
+  }
+}

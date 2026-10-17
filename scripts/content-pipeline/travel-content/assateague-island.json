@@ -1,0 +1,99 @@
+{
+  "slug": "assateague-island",
+  "headline": "Coordinate Separate Maryland State and National Park Entry",
+  "reservation": "Assateague Island is divided into a Maryland State Park and a National Seashore, each requiring separate entry fees and camping reservations. Beach parking fills early during summer months, and reservations do not guarantee a specific space if you leave and return. Verify current booking windows on the official Recreation.gov and Maryland DNR sites.",
+  "source_url": "https://www.nps.gov/asis/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Atlantic Shoreline and Wild Horses",
+        "start": "Suggested: 8:30 AM from Berlin",
+        "stops": [
+          {
+            "name": "Life of the Dunes Trail",
+            "detail": "Walk through the varied stages of barrier island succession and look for horses grazing in the swales."
+          },
+          {
+            "name": "North Beach",
+            "detail": "Enjoy the expansive Atlantic coastline for shorebird watching and beach walking."
+          }
+        ],
+        "driving": "Allow 40 minutes for island entry and parking; conditions vary",
+        "note": "Maintain a distance of at least 40 feet from all wild horses for safety."
+      },
+      {
+        "title": "Coastal Forests and Salt Marshes",
+        "start": "Suggested: 9 AM from the Visitor Center",
+        "stops": [
+          {
+            "name": "Life of the Forest Trail",
+            "detail": "Explore the loblolly pine forest and the edge of the Sinepuxent Bay."
+          },
+          {
+            "name": "Life of the Marsh Trail",
+            "detail": "Follow the boardwalk over the wetlands to observe herons and egrets."
+          }
+        ],
+        "driving": "Allow 20 minutes for local park road transit; conditions vary",
+        "note": "Insect repellent is highly recommended for all marsh-adjacent trails."
+      },
+      {
+        "title": "Bayside Paddling and Barrier History",
+        "start": "Suggested: 8 AM from Bayside Drive",
+        "stops": [
+          {
+            "name": "Sinepuxent Bay",
+            "detail": "Launch a kayak to view the island's western shoreline and aquatic life."
+          },
+          {
+            "name": "Assateague Island Visitor Center",
+            "detail": "Review the geological history of the island and current ecological protections."
+          }
+        ],
+        "driving": "Allow 30 minutes for bay access; conditions vary",
+        "note": "Check tide charts and wind speeds before planning any bayside water activities."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Beach Lot Capacity",
+        "text": "Parking at the North Beach and State Park areas often reaches capacity by mid-morning in summer. Arrive early to secure a spot within walking distance of the Atlantic."
+      },
+      {
+        "kind": "signal",
+        "title": "Island Dead Zones",
+        "text": "Cellular reception is generally available near the bridge but fades quickly in the southern dunes. Do not rely on digital navigation for remote sections of the Over-Sand Vehicle zones."
+      },
+      {
+        "kind": "fuel",
+        "title": "Mainland Supply Only",
+        "text": "There are no fuel stations located on Assateague Island itself. Fill your tank in Berlin or West Ocean City before crossing the Verrazzano Bridge."
+      },
+      {
+        "kind": "timing",
+        "title": "Insect Activity Windows",
+        "text": "Biting flies and mosquitoes are most active near the marshes during warm, calm summer days. Coastal breezes on the ocean-facing beaches can offer some relief."
+      },
+      {
+        "kind": "access",
+        "title": "Maryland-Virginia Separation",
+        "text": "There is no public road connecting the Maryland and Virginia ends of the island. Travelers must drive back to the mainland to reach Chincoteague, which takes over an hour."
+      }
+    ],
+    "arrival": "Fly into SBY and drive through Berlin to stock up on beach supplies and groceries. Check into your mainland lodging before heading to the island bridge.",
+    "vehicle": "Standard cars are fine for paved park roads, but Over-Sand Vehicle (OSV) zones require a specific permit and 4WD equipment.",
+    "goldenHour": "The Life of the Marsh boardwalk offers expansive sunset views over Sinepuxent Bay, subject to seasonal gate closures.",
+    "sources": [
+      {
+        "label": "Assateague Island National Seashore",
+        "url": "https://www.nps.gov/asis"
+      },
+      {
+        "label": "Maryland State Parks",
+        "url": "https://dnr.maryland.gov/publiclands/pages/eastern/assateague.aspx"
+      }
+    ]
+  }
+}
