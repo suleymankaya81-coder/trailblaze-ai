@@ -37,7 +37,7 @@ import {
 } from "lucide-react";
 import { lazy, Suspense, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { ClientOnly } from "@tanstack/react-router";
-import { JumpBar, PlanB, TripRadar, formatDrive } from "@/components/destination/TripRadar";
+import { JumpBar, TripRadar, formatDrive } from "@/components/destination/TripRadar";
 import routes from "@/data/routes.json";
 
 const RoadTripMap = lazy(() => import("@/components/destination/RoadTripMap"));
@@ -170,10 +170,7 @@ function DestinationPage() {
       <JumpBar />
 
       <main className="container-page space-y-14 py-10 md:space-y-16">
-        <div className="space-y-5">
-          <TripRadar dest={dest} />
-          <PlanB dest={dest} alternatives={<PlanBAlternatives dest={dest} />} />
-        </div>
+        <TripRadar dest={dest} />
 
         {/* Stays + budget rail (compact bar on mobile) */}
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
@@ -183,6 +180,10 @@ function DestinationPage() {
 
         <RentBeforeYouGo dest={dest} />
 
+        <TripFlow dest={dest} />
+
+        <RoadTrip dest={dest} ai={ai} />
+
         {/* Tours & services — one section */}
         <section id="tours" className="scroll-mt-24">
           <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
@@ -190,12 +191,6 @@ function DestinationPage() {
             <TravelServices dest={dest} />
           </div>
         </section>
-
-        <RoadTrip dest={dest} />
-
-        <div id="gear" className="scroll-mt-24">
-          <Essentials dest={dest} />
-        </div>
 
         <PlanDeeper dest={dest} />
 
