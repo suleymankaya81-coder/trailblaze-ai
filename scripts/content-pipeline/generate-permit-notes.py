@@ -27,7 +27,7 @@ for d in rows:
     prompt = f"""Write the "Reservation needed" note for a road-trip guide page about {d['name']} ({d['region'] or d['state']}), type: {d['destination_type']}.
 Known: permit pressure {d['permit_level']}, best season {d['best_season']}, nearest airport {d['nearest_airport_code']}.
 Return JSON: {{"headline": "max 40 chars, specific (e.g. 'Timed entry late May–Oct')", "note": "2-3 sentences, 220-340 chars, specific to this place: which reservations matter (entry, campsites, lodges, shuttles, tours), roughly how far ahead, and one practical tip", "source_url": "official https URL (nps.gov, recreation.gov, state park site) or empty string"}}
-Rules: only well-known facts about this place; say systems 'may' change and to check the official site; no exact prices, no guarantees, no urgency or discount language, no business names except official agencies."""
+Rules: only well-known facts about this place; say systems 'may' change and to check the official site; no exact prices, no guarantees, no urgency or discount language, no business names except official agencies; never mention specific years."""
     try:
         r = call_ai_json(prompt, model="google/gemini-3-flash-preview")
         if isinstance(r, str):
