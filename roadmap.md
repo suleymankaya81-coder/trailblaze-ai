@@ -42,6 +42,6 @@
 - [x] Screen all 631 public marker records; exclude 14 wrong-identity and 33 unverified-location candidates and correct two official coordinates. Remaining 586 stored markers are not all independently coordinate-verified.
 - [ ] Complete claim-by-claim independent verification for every remaining sentence and every retained marker. Evidence gap: external source verification currently covers targeted findings, not every assertion; prose reading, page visits and working maps do not establish factual accuracy.
 ## AI search readiness
-- [ ] Add a public-only llms.txt and explicit search-crawler access without permitting affiliate tracking paths.
-- [ ] Model visible daily plans as TouristTrip structured data, without unsupported availability claims.
-- [ ] Add sourced direct answers for Yellowstone, Grand Canyon and Moab; verify rendered content and structured data.
+- [x] Add a curated public-only llms.txt and explicit OAI-SearchBot/PerplexityBot access while retaining affiliate-tracking exclusions; verify both files return 200. Existing training-bot policy unchanged; llms.txt is not a ranking guarantee.
+- [x] Model visible daily plans as ordered TouristTrip structured data with BreadcrumbList; remove inferred inventory availability and emit real JSON-LD scripts. Seven related tests pass.
+- [x] Add three sourced direct answers each for Yellowstone, Grand Canyon and Moab plus matching dated reservation overrides; verify all nine answers and trip stop order in SSR HTML, desktop and phone. Correct Arches' 2026 entry rule from NPS. No claim of external AI citations or full-site fact verification.
