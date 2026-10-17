@@ -41,3 +41,7 @@
 - [x] Read all 446 cached travel texts; apply 148 distinct field corrections across 96 destinations with a dated source ledger. Read back 146 public field changes successfully; two catalog-only Tallgrass Prairie fields checked through the database.
 - [x] Screen all 631 public marker records; exclude 14 wrong-identity and 33 unverified-location candidates and correct two official coordinates. Remaining 586 stored markers are not all independently coordinate-verified.
 - [ ] Complete claim-by-claim independent verification for every remaining sentence and every retained marker. Evidence gap: external source verification currently covers targeted findings, not every assertion; prose reading, page visits and working maps do not establish factual accuracy.
+## AI search readiness
+- [ ] Add a public-only llms.txt and explicit search-crawler access without permitting affiliate tracking paths.
+- [ ] Model visible daily plans as TouristTrip structured data, without unsupported availability claims.
+- [ ] Add sourced direct answers for Yellowstone, Grand Canyon and Moab; verify rendered content and structured data.
