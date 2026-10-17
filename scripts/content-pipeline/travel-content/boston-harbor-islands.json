@@ -2,7 +2,7 @@
   "slug": "boston-harbor-islands",
   "headline": "Ferry and Camping Reservation Check",
   "reservation": "Public-ferry tickets are separate from camping reservations. Check current Peddocks camping availability; camping and visitor services are not currently offered on Grape Island. Confirm transport and permitted access for each island before travel.",
-  "source_url": "https://www.nps.gov/boha/index.htm",
+  "source_url": "https://www.nps.gov/boha/learn/historyculture/facts-grap.htm",
   "plan": {
     "version": 1,
     "days": [
@@ -24,7 +24,7 @@
       },
       {
         "title": "Outer Island Solitude",
-        "start": "Suggested: 10 AM from Hingham",
+        "start": "Choose one island and confirm your transport operator’s departure time and pier.",
         "stops": [
           {
             "name": "Peddocks Island",
@@ -35,7 +35,7 @@
             "detail": "Discover a quieter setting with slate beaches and remains of a stone farmhouse."
           }
         ],
-        "driving": "Walking and ferry only; conditions vary based on sea state.",
+        "driving": "These are alternative island outings, not connected public-ferry stops; book or confirm permitted transport to your selected island.",
         "note": "Treat these islands as separate options, not a connected public-ferry itinerary. No inter-island ferry service is currently operating; confirm authorized transport to each island before departure."
       },
       {
@@ -44,15 +44,15 @@
         "stops": [
           {
             "name": "Grape Island",
-            "detail": "Enjoy a rustic walk through wooded trails and berry bushes near the shoreline."
+            "detail": "Grape Island has no current camping or visitor services; consider a visit only after confirming authorized boat access and current island conditions."
           },
           {
             "name": "Hull Peninsula",
             "detail": "Explore the maritime history of the gateway town and its views of the Atlantic."
           }
         ],
-        "driving": "Allow 30 minutes for local Hull transit; ferry times vary by season.",
-        "note": "Weekday ferry service is significantly reduced after Labor Day; confirm current dates."
+        "driving": "Treat Hull as the mainland outing; add Grape Island only with separately confirmed authorized boat transport, not an assumed public-ferry connection.",
+        "note": "Do not rely on a scheduled public ferry to Grape Island. Confirm seasonal island access and return transport before leaving the mainland."
       }
     ],
     "intel": [
@@ -74,7 +74,7 @@
       {
         "kind": "timing",
         "title": "Ferry Boarding",
-        "text": "Arrive at least 30 minutes before your scheduled departure. Popular summer weekend slots can sell out despite having a reservation."
+        "text": "Arrive before your operator’s stated boarding deadline and carry a valid ticket. Buy or reserve the correct sailing; a reservation is not interchangeable with another departure."
       },
       {
         "kind": "access",
@@ -93,6 +93,14 @@
       {
         "label": "Official planning update",
         "url": "https://www.nps.gov/boha/faqs.htm"
+      },
+      {
+        "label": "Official planning update",
+        "url": "https://www.nps.gov/boha/learn/historyculture/facts-grap.htm"
+      },
+      {
+        "label": "Official planning update",
+        "url": "https://www.nps.gov/boha/planyourvisit/hours.htm"
       }
     ]
   }

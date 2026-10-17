@@ -1127,6 +1127,118 @@
       "new": "2026 Entry and Separate Stay Reservations",
       "source": "https://www.nps.gov/yose/planyourvisit/reservations.htm",
       "reason": "Correct misleading entry-reservation heading"
+    },
+    {
+      "slug": "traverse-city",
+      "path": "reservation",
+      "old": "Visiting Sleeping Bear Dunes requires a National Park Entrance Pass, which must be displayed at the Dune Climb and Pierce Stocking Drive. Wine tasting rooms on the peninsulas often require advance reservations for groups during the busy July harvest season. Campground sites at D.H. Day are highly competitive and require booking via the Recreation.gov portal.",
+      "new": "Visiting Sleeping Bear Dunes requires a National Park Entrance Pass displayed as instructed at fee areas. Wine tasting rooms may require advance reservations, especially during the busy July festival period; do not assume July is the grape harvest. Book D.H. Day camping separately through Recreation.gov.",
+      "source": "https://www.nps.gov/slbe/planyourvisit/fees.htm",
+      "reason": "Independent sibling correction"
+    },
+    {
+      "slug": "wayne-national-forest",
+      "path": "reservation",
+      "old": "While entry to Wayne National Forest is generally free, specific permits are required for motorized trail use and dispersed camping in certain management areas. Developed campgrounds are seasonally managed and may require advance booking through the official federal portal; always verify current opening dates before arrival.",
+      "new": "Primitive dispersed camping is free and generally requires no check-in; groups larger than 25 need a permit and prior coordination. A 14-day stay limit applies. Motorized trail use has separate permit rules; check current closures, campground arrangements, and local restrictions.",
+      "source": "https://www.fs.usda.gov/activity/wayne/recreation/camping-cabins/?actid=34&recid=6203",
+      "reason": "Independent sibling correction"
+    },
+    {
+      "slug": "wichita-mountains",
+      "path": "reservation",
+      "old": "Entrance to the Wichita Mountains Wildlife Refuge is generally open, but camping at Doris Campground requires advance booking through official federal systems. Guided wildlife tours and specific backcountry access points may use a lottery or seasonal reservation window; check the U.S. Fish and Wildlife Service site for current protocols. Medicine Park accommodation is private and often requires booking months in advance for peak spring and fall periods.",
+      "new": "Doris Campground camping is reservation-based; check the current U.S. Fish and Wildlife Service campground page and its linked booking options before travel. Refuge activities and private lodging have separate arrangements; verify availability with their operators.",
+      "source": "https://www.fws.gov/refuge/wichita-mountains/visit-us/activities/camping",
+      "reason": "Independent sibling correction"
+    },
+    {
+      "slug": "waikiki",
+      "path": "reservation",
+      "old": "Diamond Head State Monument and Hanauma Bay Nature Preserve require advance online reservations for all non-residents. These systems operate independently from hotel bookings; visitors must verify current booking windows on the official Hawaii State Parks and Honolulu Parks websites.",
+      "new": "Diamond Head and Hanauma Bay have separate reservation systems. Hanauma Bay reservations apply to non-Hawai‘i residents; Hawai‘i residents with valid photo ID may enter without a reservation during public hours. Check each attraction’s current booking rules independently.",
+      "source": "https://www.honolulu.gov/dpr/hanauma-bay-nature-preserve/",
+      "reason": "Independent sibling correction"
+    },
+    {
+      "slug": "woodstock",
+      "path": "plan.arrival",
+      "old": "Pick up your rental at SWF or Burlington; stop for groceries in White River Junction before check-in at village inns.",
+      "new": "For Woodstock, Vermont, consider Burlington or Lebanon for rental pickup. Check scheduled flight availability and drive time before booking, and collect groceries before checking into village lodging.",
+      "source": "https://www.woodstockvt.com/plan-your-visit/",
+      "reason": "Independent sibling correction"
+    },
+    {
+      "slug": "boston-harbor-islands",
+      "path": "plan.days.1.start",
+      "old": "Suggested: 10 AM from Hingham",
+      "new": "Choose one island and confirm your transport operator’s departure time and pier.",
+      "source": "https://www.nps.gov/boha/faqs.htm",
+      "reason": "Independent sibling correction"
+    },
+    {
+      "slug": "boston-harbor-islands",
+      "path": "plan.days.1.driving",
+      "old": "Walking and ferry only; conditions vary based on sea state.",
+      "new": "These are alternative island outings, not connected public-ferry stops; book or confirm permitted transport to your selected island.",
+      "source": "https://www.nps.gov/boha/faqs.htm",
+      "reason": "Independent sibling correction"
+    },
+    {
+      "slug": "boston-harbor-islands",
+      "path": "plan.days.2.stops.0.detail",
+      "old": "Enjoy a rustic walk through wooded trails and berry bushes near the shoreline.",
+      "new": "Grape Island has no current camping or visitor services; consider a visit only after confirming authorized boat access and current island conditions.",
+      "source": "https://www.nps.gov/boha/learn/historyculture/facts-grap.htm",
+      "reason": "Independent sibling correction"
+    },
+    {
+      "slug": "boston-harbor-islands",
+      "path": "plan.days.2.driving",
+      "old": "Allow 30 minutes for local Hull transit; ferry times vary by season.",
+      "new": "Treat Hull as the mainland outing; add Grape Island only with separately confirmed authorized boat transport, not an assumed public-ferry connection.",
+      "source": "https://www.nps.gov/boha/faqs.htm",
+      "reason": "Independent sibling correction"
+    },
+    {
+      "slug": "boston-harbor-islands",
+      "path": "plan.days.2.note",
+      "old": "Weekday ferry service is significantly reduced after Labor Day; confirm current dates.",
+      "new": "Do not rely on a scheduled public ferry to Grape Island. Confirm seasonal island access and return transport before leaving the mainland.",
+      "source": "https://www.nps.gov/boha/planyourvisit/hours.htm",
+      "reason": "Independent sibling correction"
+    },
+    {
+      "slug": "boston-harbor-islands",
+      "path": "plan.intel.3.text",
+      "old": "Arrive at least 30 minutes before your scheduled departure. Popular summer weekend slots can sell out despite having a reservation.",
+      "new": "Arrive before your operator’s stated boarding deadline and carry a valid ticket. Buy or reserve the correct sailing; a reservation is not interchangeable with another departure.",
+      "source": "https://www.nps.gov/boha/faqs.htm",
+      "reason": "Independent sibling correction"
+    },
+    {
+      "slug": "taos-ski-valley",
+      "path": "plan.goldenHour",
+      "old": "Do not plan a lift-served sunset on Kachina Peak. Winter mountain operations end before evening, and summer summit hiking is a separate strenuous outing requiring daylight, suitable weather, and route planning.",
+      "new": "Do not count on lift access for sunset. Kachina Chair winter use is ski/snowboard terrain; summer scenic Lift 4 has separate dates and hours, weather permitting. Summit hiking is a separate high-elevation outing requiring daylight and current route checks.",
+      "source": "https://taosskivalley.com/member/kachina-basin-activities/",
+      "reason": "Independent sibling correction"
+    },
+    {
+      "slug": "taos-ski-valley",
+      "path": "plan.days.1.stops.1.detail",
+      "old": "Access rugged trails bordering the resort for high-altitude wildlife viewing.",
+      "new": "Treat wilderness hiking as a separate outing from winter lift-served skiing; check the Williams Lake approach, wilderness boundary, snow conditions, and route requirements before departure.",
+      "source": "https://www.fs.usda.gov/r03/carson/recreation/trails/williams-lake-trail",
+      "reason": "Independent sibling correction"
+    },
+    {
+      "slug": "taos-ski-valley",
+      "path": "plan.days.1.note",
+      "old": "Check wind speeds as lifts may close during high-velocity weather events.",
+      "new": "Choose activities for the season and your ability: Kachina Chair is advanced winter ski terrain; wilderness hiking needs independent route and weather checks. Do not combine them as a routine sightseeing circuit.",
+      "source": "https://taosskivalley.com/play/winter-activities/ski-snowboard/",
+      "reason": "Independent sibling correction"
     }
   ],
   "markerCorrections": [
