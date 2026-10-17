@@ -1,0 +1,95 @@
+{
+  "slug": "zion",
+  "headline": "Advance Permit Planning for Angels Landing and Canyon Access",
+  "reservation": "Entry requires a standard park pass, but specific high-demand activities require separate seasonal lotteries. The Angels Landing hike requires a permit for the chained section, and wilderness permits are necessary for overnight stays or top-down Narrows trips. Systems change frequently; verify current lottery windows and shuttle requirements on the official NPS website before travel.",
+  "source_url": "https://www.nps.gov/zion/planyourvisit/permitsandreservations.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Canyon Floor and River Corridors",
+        "start": "Suggested: 8 AM from Springdale",
+        "stops": [
+          {
+            "name": "Riverside Walk",
+            "detail": "Follow this paved path to the Temple of Sinawava to see the canyon walls narrow toward the Virgin River."
+          },
+          {
+            "name": "Court of the Patriarchs",
+            "detail": "A brief walk leads to a viewpoint for the three towering sandstone peaks."
+          }
+        ],
+        "driving": "Allow 30-60 minutes for shuttle transfers; conditions vary.",
+        "note": "During shuttle season, private vehicles are restricted in the main canyon; use the Springdale and Park shuttle systems."
+      },
+      {
+        "title": "High Desert Elevations",
+        "start": "Suggested: 7:30 AM from Zion Canyon Visitor Center",
+        "stops": [
+          {
+            "name": "Angels Landing",
+            "detail": "If you hold a required permit, ascend this strenuous ridge for panoramic views of the canyon floor."
+          },
+          {
+            "name": "Scout Lookout",
+            "detail": "A turnaround point for those without permits, offering a steep climb and broad vistas."
+          }
+        ],
+        "driving": "Allow 45 minutes for shuttle and staging; conditions vary.",
+        "note": "Check the official flash flood potential rating daily, as rain upstream impacts canyon safety."
+      },
+      {
+        "title": "East Side and Slickrock Views",
+        "start": "Suggested: 9 AM from Springdale",
+        "stops": [
+          {
+            "name": "Zion-Mount Carmel Tunnel",
+            "detail": "Drive this historic engineering feat to access the park's eastern high country."
+          },
+          {
+            "name": "Canyon Overlook Trail",
+            "detail": "A moderate walk providing an expansive view of the Pine Creek Canyon and the lower switchbacks."
+          }
+        ],
+        "driving": "Allow 1-2 hours for mountain road transit and tunnel queuing; conditions vary.",
+        "note": "Parking near the tunnel is extremely limited; have an alternative plan if spots are full."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "Shuttle Requirements",
+        "text": "The Zion Canyon Scenic Drive is primarily accessed via shuttle for much of the year. Check the official seasonal schedule as private vehicle access is prohibited during operation hours."
+      },
+      {
+        "kind": "parking",
+        "title": "Springdale Staging",
+        "text": "Parking at the Visitor Center often fills early in the morning. Utilize the Springdale town shuttle to reach the pedestrian entrance if park lots are at capacity."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Supplies",
+        "text": "Refuel in Springdale or La Verkin before entering the park's interior. No fuel is available within the Zion Canyon Scenic Drive or on the East side toward Mount Carmel."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Limits",
+        "text": "Cellular service is unreliable within the deep canyons and near the tunnel. Download official maps and permit confirmations for offline use before leaving Springdale."
+      },
+      {
+        "kind": "timing",
+        "title": "Midday Heat",
+        "text": "Exposed trails like the Watchman can reach high temperatures by noon. Plan strenuous uphill segments for early morning and use the shuttle for shaded sightseeing later."
+      }
+    ],
+    "arrival": "Collect your vehicle at St. George Regional Airport (SGU), then stop in St. George for major supplies before the 70-minute drive to Springdale. Check-in logic depends on shuttle timing, so aim to drop bags early.",
+    "vehicle": "Standard cars are suitable for paved roads, but RVs face strict size restrictions and escort fees at the Zion-Mount Carmel Tunnel. Check rental agreements for off-pavement restrictions.",
+    "goldenHour": "Canyon Overlook for sunset, though actual lighting on the sandstone varies by season.",
+    "sources": [
+      {
+        "label": "Zion National Park Official Site",
+        "url": "https://www.nps.gov/zion/index.htm"
+      }
+    ]
+  }
+}
