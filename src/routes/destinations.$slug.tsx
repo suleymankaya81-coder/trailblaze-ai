@@ -1078,78 +1078,80 @@ function parkTag(o: OfferView): "inside" | "outside" | null {
   return null;
 }
 
-function PlanBAlternatives({ dest }: { dest: DestinationView }) {
-  const alts = dest.stays
-    .filter((s) => s.partner === "campspot" || s.partner === "roverpass")
-    .slice(0, 2);
-  if (alts.length === 0) {
-    return (
-      <a
-        href="#stays"
-        className="mt-4 inline-flex items-center gap-1.5 rounded-full bg-copper px-5 py-2.5 text-xs font-semibold text-off-white hover:bg-copper/90"
-      >
-        See stays outside the park <ArrowRight className="h-3.5 w-3.5" />
-      </a>
-    );
-  }
-  return (
-    <div className="mt-4 grid min-w-0 grid-cols-[minmax(0,1fr)] gap-3 sm:grid-cols-2">
-      {alts.map((s) => (
-        <div
-          key={s.id}
-          className="flex min-w-0 flex-col gap-3 rounded-xl border border-border bg-card p-3 sm:flex-row sm:items-center sm:justify-between"
-        >
-          <div className="min-w-0 w-full sm:w-auto">
-            <p className="truncate text-sm font-semibold text-foreground">{s.title}</p>
-            <PriceTag offer={s} fallbackUnit="night" />
-          </div>
-          <OfferCta offer={s} label="Check dates" size="sm" destinationSlug={dest.slug} />
-        </div>
-      ))}
-    </div>
-  );
+/* =========================================================
+   9 — CURATED 3–4 DAY FLOW
+   Deterministic day-by-day flow built from data we already
+   store (trip duration, airport, drive time, activities).
+   No AI generation, no invented place names.
+========================================================= */
+function parseTripDays(raw: string | null): number {
+  if (!raw) return 3;
+  const nums = (raw.match(/\d+/g) ?? []).map(Number);
+  if (nums.length === 0) return 3;
+  return Math.min(4, Math.max(2, Math.round(nums.reduce((a, b) => a + b, 0) / nums.length)));
 }
 
-/* =========================================================
-   9 — ESSENTIALS WORTH HAVING
-========================================================= */
-function Essentials({ dest }: { dest: DestinationView }) {
-  const items = [...dest.essentials.filter((e) => e.partner === "jackery"), ...dest.essentials.filter((e) => e.partner === "rei")].slice(0, 6);
+function TripFlow({ dest }: { dest: DestinationView }) {
+  const days = parseTripDays(dest.tripDurationDays);
+  const stops = dest.activities.map((a) => a.title).filter(Boolean);
+
+  const plan: { day: string; title: string; detail: string; start: string }[] = [];
+  plan.push({
+    day: "Day 1",
+    title: "Arrive & settle in",
+    detail: dest.airportCode
+      ? `Land at ${dest.airportCode}, pick up your rental, and take the ${dest.driveMinutes != null ? formatDrive(dest.driveMinutes) : "scenic"} drive in. Stock up on groceries and fuel in the gateway town before prices rise near the park.`
+      : "Arrive, pick up your rental, and stock up on groceries and fuel in the gateway town before heading in.",
+    start: "Start: midday arrival",
+  });
+  const middleDays = days - 2;
+  for (let i = 0; i < middleDays; i++) {
+    const anchor = stops[i];
+    plan.push({
+      day: `Day ${i + 2}`,
+      title: i === 0 ? "The iconic core" : "Beyond the crowds",
+      detail: anchor
+        ? `Head out early for ${anchor}. ${i === 0 ? "The headline sights are quietest before 9 AM — save the flexible stops for the afternoon." : "Use today for the stops most day-trippers skip; afternoons are yours to slow down."}`
+        : i === 0
+          ? "Head out early for the headline sights — they are quietest before 9 AM. Save flexible stops for the afternoon."
+          : "Use today for the stops most day-trippers skip; afternoons are yours to slow down.",
+      start: "Start: before 8 AM",
+    });
+  }
+  plan.push({
+    day: `Day ${days}`,
+    title: "Golden hour & departure",
+    detail:
+      "Keep the last morning light for one final viewpoint, then loop back at your own pace. Leave buffer for the drive out — weekend traffic builds after lunch.",
+    start: "Start: sunrise",
+  });
 
   return (
-    <section>
-      <SectionHeader title="Gear worth bringing" action={<TextLink>View all gear</TextLink>} />
-      {items.length === 0 ? (
-        <EmptyState message="No gear recommendations for this destination yet." />
-      ) : (
-         <div className="grid gap-4 grid-cols-2 sm:grid-cols-3">
-           {items.map((e, index) => (
-            <article
-              key={e.id}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition hover:shadow-lift"
-            >
-               <div className="relative aspect-[4/3] bg-beige/30">
-                  <CardImg src={offerPhoto(dest.slug, "gear", index, e.title)?.url ?? ""} alt={`${e.title} — illustrative gear photo, not actual product inventory`} className="h-full w-full object-cover" />
-                 <PhotoCredit photo={offerPhoto(dest.slug, "gear", index, e.title)} />
-               </div>
-              <div className="flex flex-1 flex-col p-3.5">
-                <h3 className="text-xs font-semibold text-foreground">{e.title}</h3>
-                <p className="mt-1.5 line-clamp-3 text-[11px] leading-relaxed text-muted-foreground">
-                  {e.whyRecommended ?? e.description}
-                </p>
-                <div className="mt-auto flex flex-col items-start gap-2 border-t border-border pt-3">
-                  <PriceTag
-                    offer={e}
-                    fallbackUnit="item"
-                    className="font-serif text-sm font-semibold text-foreground"
-                  />
-                  <OfferCta offer={e} label="View" size="sm" destinationSlug={dest.slug} />
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-      )}
+    <section id="flow" className="scroll-mt-24">
+      <SectionHeader title={`Your ${days}-day ${dest.name.split(" ")[0]} flow`} />
+      <p className="-mt-3 mb-5 text-[11px] text-muted-foreground">
+        A suggested rhythm, not a fixed schedule — swap days around the weather and your energy.
+      </p>
+      <ol className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        {plan.map((p, i) => (
+          <li
+            key={p.day}
+            className="relative flex flex-col rounded-2xl border border-border bg-card p-5 shadow-soft"
+          >
+            <span className="inline-flex w-fit items-center rounded-full bg-forest/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-forest">
+              {p.day}
+            </span>
+            <h3 className="mt-3 font-display text-lg text-foreground">{p.title}</h3>
+            <p className="mt-2 flex-1 text-xs leading-relaxed text-muted-foreground">{p.detail}</p>
+            <p className="mt-4 border-t border-border pt-3 text-[11px] font-semibold text-foreground/70">
+              {p.start}
+            </p>
+            {i < plan.length - 1 && (
+              <ArrowRight className="absolute -right-3 top-1/2 hidden h-4 w-4 -translate-y-1/2 text-foreground/30 xl:block" />
+            )}
+          </li>
+        ))}
+      </ol>
     </section>
   );
 }
