@@ -1,0 +1,1391 @@
+{
+  "reviewDate": "2026-10-17",
+  "coverage": {
+    "destinationsProseRead": 446,
+    "publishedPagesVisited": 440,
+    "markerRecordsScreened": 631,
+    "markerSourcePagesFetched": 560,
+    "allClaimsIndependentlyVerified": false
+  },
+  "textCorrections": [
+    {
+      "slug": "dauphin-island",
+      "path": "reservation",
+      "old": "Dauphin Island Campground and the Mobile Bay Ferry operate on independent booking systems. While beach access is open, overnight stays and ferry vehicle spots require advance coordination. Check the Town of Dauphin Island official site for current beach permits and the ferry schedule as weather frequently alters operations.",
+      "new": "Reserve Dauphin Island Campground separately. Mobile Bay Ferry operates first come, first served and does not sell tickets online or in advance; buy tickets at either landing and check current sailing and weather updates.",
+      "source": "https://mobilebayferry.com/pricing/",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "death-valley-national-park",
+      "path": "reservation",
+      "old": "Park entry requires a valid pass obtainable at visitor centers or kiosks. Most campgrounds, especially Furnace Creek, require advance booking through Recreation.gov for the winter season; backcountry permits have separate requirements. Check the official NPS site for current system status.",
+      "new": "Pay the park entrance fee at a visitor center or kiosk. Furnace Creek is the only NPS campground that accepts reservations, for October 15–April 15; reservations are strongly recommended. Other NPS campgrounds operate first come, first served when open. Backcountry camping has separate requirements.",
+      "source": "https://nps.gov/deva/planyourvisit/furnace-creek-campground.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "denali-national-park",
+      "path": "plan.days.0.start",
+      "old": "Suggested: 7:30 AM from Denali Visitor Center",
+      "new": "Suggested: 7:30 AM from Denali Bus Depot; confirm your ticket’s boarding location.",
+      "source": "https://www.nps.gov/dena/planyourvisit/bus-depot.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "denali-national-park",
+      "path": "plan.intel.0.text",
+      "old": "The main visitor center lot is the primary hub for bus departures; arrive 30 minutes before your boarding time.",
+      "new": "All transit buses and some narrated tours depart from Denali Bus Depot. Use its parking or a lodging shuttle and follow the check-in time and departure location on your ticket.",
+      "source": "https://www.nps.gov/dena/planyourvisit/bus-depot.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "durango",
+      "path": "plan.intel.3.text",
+      "old": "Mesa Verde tours require checking in at the visitor center at least 15 minutes prior to your window. Allow an extra hour for the drive from the park gate to the sites.",
+      "new": "Arrive at your reserved cliff-dwelling tour’s meeting location at least 15 minutes before departure, not at the entrance visitor center. Allow about 1 hour from the park entrance to Cliff Palace or Balcony House and 1.5 hours to Long House.",
+      "source": "https://www.nps.gov/meve/planyourvisit/gettingaround.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "gila-wilderness",
+      "path": "reservation",
+      "old": "The Gila Wilderness itself requires no entry permit for day use or backpacking. However, the Gila Cliff Dwellings National Monument has specific operating hours and a vehicle entry fee; these systems operate independently and are subject to seasonal changes. Always verify current monument access and any potential fire-related forest closures on the official US Forest Service and NPS websites.",
+      "new": "The Gila Wilderness requires no entry permit for day use or backpacking. Gila Cliff Dwellings National Monument also has free entrance, but follows specific trail operating hours. Check official Forest Service and NPS alerts for closures and current access.",
+      "source": "https://www.nps.gov/gicl/planyourvisit/fees.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "girdwood",
+      "path": "plan.days.1.note",
+      "old": "The hand tram across the gorge is subject to seasonal operation and maintenance closures.",
+      "new": "The Winner Creek hand tram is closed. Plan an out-and-back walk and do not rely on it to cross the gorge; check Forest Service updates before hiking.",
+      "source": "https://www.fs.usda.gov/r10/chugach/recreation/winner-creek-gorge-inht",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "estes-park",
+      "path": "reservation",
+      "old": "Access to Rocky Mountain National Park from Estes Park requires a specific timed-entry permit for most of the year. This is distinct from the park entrance pass and applies to both the Bear Lake Road corridor and the rest of the park. Systems are subject to change annually; verify current release schedules and vehicle requirements on the official National Park Service website.",
+      "new": "Rocky Mountain National Park timed entry is seasonal, not required for most of the year. For 2026, regular Timed Entry applies May 22–October 12 from 9 AM to 2 PM and excludes Bear Lake Road. Bear Lake Road requires the separate Timed Entry + Bear Lake Road option during its posted seasonal hours. Entrance fees or a valid pass are separate; check the current NPS schedule and exceptions.",
+      "source": "https://www.nps.gov/romo/planyourvisit/timed-entry-permit-system.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "guadalupe-mountains-national-park",
+      "path": "reservation",
+      "old": "Wilderness permits are required for all overnight stays and must be obtained via the official Recreation.gov portal. Front-country campsites at Pine Springs and Dog Canyon frequently book months in advance; check the National Park Service website for the current release window and specific site availability.",
+      "new": "A wilderness permit is required year-round for overnight wilderness camping. Reserve available sites through Recreation.gov, then obtain the permit in person at Pine Springs Visitor Center before departure. Walk-up permits for unreserved sites may be issued there from 8 AM to noon, up to 24 hours in advance. Front-country campground reservations are separate.",
+      "source": "https://www.nps.gov/gumo/planyourvisit/backcountry-use-permits.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "gates-of-the-arctic-national-park",
+      "path": "plan.intel.1.text",
+      "old": "Cellular and GPS signals are non-existent in the park interior. A satellite communication device and physical topographic maps are essential for wilderness navigation.",
+      "new": "Cellular service is not available in the park interior. Carry a satellite communicator, offline GPS navigation, physical topographic maps and a compass, and know how to use them.",
+      "source": "https://www.nps.gov/gaar/planyourvisit/backcountry-trip-plan.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "dry-tortugas-national-park",
+      "path": "reservation",
+      "old": "Access requires a reservation with the official ferry or seaplane concessionaire, often booked months in advance. Camping permits are extremely limited and must be secured via the official ferry provider's booking system. Direct park entry fees are separate from transport; check the official NPS site for current fee structures.",
+      "new": "Reach the park by reserved concession ferry or seaplane, private vessel, or permitted tour operator. Campers cannot travel by seaplane; reserve limited ferry camping transport well ahead. Regular Garden Key campsites for up to six people are first come, first served on arrival, with camping fees paid on the island; large groups of 10–20 require advance park reservations.",
+      "source": "https://www.nps.gov/drto/planyourvisit/camping.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "katmai-national-park",
+      "path": "reservation",
+      "old": "Brooks Camp facilities require reservations up to 18 months in advance via recreation.gov. Most lodging is handled through private lottery or authorized park partners; day-use floatplane trips must be booked with licensed air taxis. Check official NPS advisories for changing bear-management protocols and boardwalk closures.",
+      "new": "Book Brooks Camp Campground through Recreation.gov using the current annual release schedule; it is separate from Brooks Lodge reservations and transportation bookings. For 2026, campground nights are released in three blocks on January 7, February 7 and March 7 at 8 AM Alaska Standard Time. Check NPS for future-year dates and current bear-management rules.",
+      "source": "https://www.nps.gov/katm/planyourvisit/campingbcdv.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "katmai-national-park",
+      "path": "plan.days.1.driving",
+      "old": "Allow 4 hours for the round-trip bus excursion on the park's only road",
+      "new": "Allow about 7 hours for the guided Valley of Ten Thousand Smokes bus excursion, including stops and the optional hike; reserve in advance.",
+      "source": "https://www.nps.gov/thingstodo/valley-of-ten-thousand-smokes-guided-tour.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "katmai-national-park",
+      "path": "plan.days.2.stops.0.name",
+      "old": "Cultural Museum",
+      "new": "Reconstructed Alutiiq/Sugpiaq Home",
+      "source": "https://www.nps.gov/katm/planyourvisit/rangerguided.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "katmai-national-park",
+      "path": "plan.days.2.stops.0.detail",
+      "old": "Learn about the Alutiiq history and view the reconstructed traditional banya (sod house).",
+      "new": "Follow the cultural trail to a reconstructed traditional Alutiiq/Sugpiaq home to learn about the human history of Brooks River.",
+      "source": "https://www.nps.gov/katm/planyourvisit/rangerguided.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "kiawah-island",
+      "path": "reservation",
+      "old": "Kiawah Island is a private gated community; visitors require a guest pass via lodging or a reservation at the public Beachwalker Park. While the island is private, surrounding glamping sites on Johns Island operate independently. Always verify gate access policies with your host.",
+      "new": "Kiawah’s gated residential and resort areas require appropriate guest access arranged with your host. Public Kiawah Beachwalker Park has separate county-park admission and capacity-limited parking, not a reserved beach-entry slot. If full, follow the county’s virtual-line procedure; public beach access does not provide access to private island amenities.",
+      "source": "https://www.ccprc.com/parks/beach-parks/",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "bandelier-national-monument",
+      "path": "plan.days.2.stops.0.detail",
+      "old": "Descend toward the Rio Grande to see the Upper and Lower Falls along Frijoles Creek.",
+      "new": "Hike the Falls Trail to Upper Falls and return the same way; do not attempt to continue down the canyon to Lower Falls or the Rio Grande.",
+      "source": "https://www.nps.gov/band/planyourvisit/falls-trail.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "bandelier-national-monument",
+      "path": "plan.days.2.note",
+      "old": "The lower portion of the Falls Trail is subject to flash flood damage; check trail status at the visitor center.",
+      "new": "The maintained Falls Trail ends at Upper Falls because of flood erosion; do not continue downstream. Check current trail conditions at the visitor center.",
+      "source": "https://www.nps.gov/band/learn/photosmultimedia/vtft18.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "boston-harbor-islands",
+      "path": "plan.days.0.driving",
+      "old": "Walking and ferry only; allow 45 minutes for ferry transit between hubs.",
+      "new": "Walking and ferry only. No inter-island public ferry is currently operating; choose Georges or Spectacle for the day, or return to Boston and purchase a separate round-trip ticket for the second island.",
+      "source": "https://www.nps.gov/boha/faqs.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "boston-harbor-islands",
+      "path": "plan.days.1.note",
+      "old": "Inter-island shuttles have limited frequency; plan your connections carefully.",
+      "new": "Treat these islands as separate options, not a connected public-ferry itinerary. No inter-island ferry service is currently operating; confirm authorized transport to each island before departure.",
+      "source": "https://www.nps.gov/boha/faqs.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "boston-harbor-islands",
+      "path": "reservation",
+      "old": "Access requires ferry tickets which must be booked separately from camping or yurt permits. Camping on islands like Peddocks or Grape is seasonal and highly competitive, often booking months in advance through official state or federal systems; check current status before travel.",
+      "new": "Public-ferry tickets are separate from camping reservations. Check current Peddocks camping availability; camping and visitor services are not currently offered on Grape Island. Confirm transport and permitted access for each island before travel.",
+      "source": "https://www.nps.gov/boha/learn/historyculture/facts-grap.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "boundary-waters",
+      "path": "reservation",
+      "old": "A quota-based permit system is strictly enforced for all overnight and day-use entries. Permits must be secured via Recreation.gov and picked up at a designated station; this is separate from any outfitter or lodging booking you may have.",
+      "new": "A permit is required year-round. From May 1 through September 30, overnight trips and motorized day trips require quota permits; non-motorized day visits use self-issued permits. Outside that season, overnight visits also use self-issued permits. Confirm requirements for your entry point and travel mode.",
+      "source": "https://www.fs.usda.gov/r09/superior/passes/boundary-waters-canoe-area-wilderness-permits",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "bighorn-canyon",
+      "path": "reservation",
+      "old": "While general entry does not require a permit, all boat-in and developed campsites require advance booking through official systems. Marinas and boat rentals are the primary bottleneck during peak summer; check the NPS website for seasonal water levels which may impact ramp access and vessel launch ability.",
+      "new": "Many Bighorn Canyon campsites are first come, first served; only a small number of South District sites are reservable through Horseshoe Bend Marina. Check the rules for your specific campground and current lake levels before arranging boat access.",
+      "source": "https://www.nps.gov/bica/planyourvisit/campgrounds.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "albuquerque",
+      "path": "plan.days.1.stops.0.detail",
+      "old": "Ascend 10,378 feet for a panoramic view of the Rio Grande Valley; check wind speeds for potential closures.",
+      "new": "Ride the tram to an elevation of 10,378 feet for panoramic views of the Rio Grande Valley; check operating status for weather-related closures.",
+      "source": "https://sandiapeak.com/wp-content/uploads/2022/12/Tram-Press-Media-Kit-2022-2023.pdf",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "bar-harbor",
+      "path": "headline",
+      "old": "Cadilla Summit Road and Acadia Entry Requirements",
+      "new": "Cadillac Summit Road and Acadia Entry Requirements",
+      "source": "https://www.nps.gov/acad/planyourvisit/vehicle-reservations.htm",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "lake-havasu-city",
+      "path": "plan.arrival",
+      "old": "Pick up rental at Lake Havasu City Airport; stock up on groceries in the city center before heading to outlying glamping sites or Lake Havasu State Park.",
+      "new": "For scheduled airline travel, arrive via Las Vegas (LAS) or Phoenix (PHX), rent a vehicle, and drive to Lake Havasu City. Lake Havasu City Airport has rental cars but no commercial airline service.",
+      "source": "https://www.lhcaz.gov/295/Airport",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "naples",
+      "path": "plan.arrival",
+      "old": "Arrive via RSW or RKD; pick up your rental car and stock up on supplies in Fort Myers or Naples before heading to your coastal hotel.",
+      "new": "Arrive via Southwest Florida International Airport (RSW); pick up your rental car and stock up on supplies in Fort Myers or Naples before heading to your coastal hotel.",
+      "source": "https://knoxcountymaine.gov/county_departments/knox_county_regional_airport/passengers.php",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "north-cascades-national-park",
+      "path": "plan.days.1.stops.1.detail",
+      "old": "Visit this isolated community accessible only by water, air, or foot for a slower pace of Cascadian life.",
+      "new": "Treat Stehekin as a separate excursion, not an additional stop after a Cascade Pass day hike. The route from Cascade Pass parking to High Bridge is a 23-mile one-way hike; alternatively arrange passenger-boat access from Lake Chelan.",
+      "source": "https://www.nps.gov/noca/planyourvisit/cascade-pass-trail.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "north-cascades-national-park",
+      "path": "plan.days.1.note",
+      "old": "Cascade River Road often remains snowed-in until late June or July; verify opening dates.",
+      "new": "Choose Cascade Pass as the main day hike. Stehekin requires a separately planned boat trip or extended backcountry journey, not a routine transfer between these two stops.",
+      "source": "https://www.nps.gov/noca/planyourvisit/cascade-pass-trail.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "leavenworth",
+      "path": "plan.goldenHour",
+      "old": "Icicle Ridge offers an expansive vantage point for sunset, though mountain shadows arrive early in the deep valleys.",
+      "new": "Icicle Ridge is a substantial hike, not a roadside sunset stop: the initial viewpoint outing is about 6 miles round trip. Prefer a daylight return and allow enough time for the descent.",
+      "source": "https://www.fs.usda.gov/r06/okanogan-wenatchee/recreation/trails/icicle-ridge-trail",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "mount-bachelor",
+      "path": "plan.days.0.stops.1.detail",
+      "old": "When conditions allow, ride to the top of the volcano for 360-degree views and alpine terrain.",
+      "new": "Do not assume Summit Express provides pedestrian sightseeing access. The advertised summer scenic chairlift uses Pine Marten and ends at Pine Marten Lodge, 7,775 feet; confirm activity-specific access with the resort.",
+      "source": "https://shop.mtbachelor.com/category/products?categoryId=130",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "mount-bachelor",
+      "path": "plan.goldenHour",
+      "old": "Mt. Bachelor summit looking toward Broken Top; views are seasonal and subject to early lift closures.",
+      "new": "For lift-assisted evening views, use Pine Marten Lodge only when the resort explicitly schedules evening operations, and confirm the final downhill ride. A scenic ticket does not provide summit access or guarantee sunset service.",
+      "source": "https://shop.mtbachelor.com/category/products?categoryId=130",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "long-island",
+      "path": "plan.intel.4.text",
+      "old": "The Shelter Island Ferry connects the North and South Forks, bypassing mainland traffic. This is a vehicle ferry service requiring on-board payment.",
+      "new": "Travel between the forks via Shelter Island requires two separate vehicle ferries: South Ferry between North Haven and Shelter Island, then North Ferry between Shelter Island and Greenport. Tickets are not interchangeable; allow for both queues and check each operator’s departures and accepted payment.",
+      "source": "https://www.southferry.com/faq",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "land-between-the-lakes",
+      "path": "plan.intel.0.text",
+      "old": "There are no gas stations within the recreation area boundaries; fill tanks in Grand Rivers or Cadiz. Ensure you have sufficient fuel before entering the 15-mile Woodlands Trace.",
+      "new": "Fill tanks in Grand Rivers or Cadiz before exploring the recreation area, and plan fuel for the 43-mile Woodlands Trace plus side trips. Check local service hours before departure.",
+      "source": "https://fhwaapps.fhwa.dot.gov/bywaysp/byway/2345",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "lake-mead",
+      "path": "plan.days.1.note",
+      "old": "Black Canyon kayak launches below the dam require a pre-arranged outfitter permit.",
+      "new": "Launching at the base of Hoover Dam requires a permit and an approved access vendor. Willow Beach is a separate public launch option and does not require that Hoover Dam launch permit; follow park admission and applicable boating requirements.",
+      "source": "https://www.nps.gov/lake/planyourvisit/black-canyon-water-trail.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "lake-erie",
+      "path": "reservation",
+      "old": "Presque Isle State Park generally does not require an entry permit for day use, but internal camping is restricted to specific designated areas. Nearby private glamping and RV sites often require booking several months in advance for the June–September window. Always verify current site-specific permit needs via the Pennsylvania Department of Conservation and Natural Resources.",
+      "new": "Presque Isle State Park is a day-use park, with no overnight camping inside the park. Arrange camping or other overnight accommodation nearby, and check Pennsylvania DCNR for current park access and beach advisories.",
+      "source": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/presque-isle-state-park",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "lake-clark-national-park",
+      "path": "reservation",
+      "old": "There are no roads to Lake Clark; all access is via air taxi from Anchorage or Kenai. While the park does not charge an entry fee, you must coordinate flights and lodge stays months in advance. Backcountry camping requires a voluntary registration and a bear-resistant food container, available at the Port Alsworth visitor center.",
+      "new": "There is no road connection to Lake Clark; arrange suitable air or boat access and lodging in advance. NPS does not require a permit or reservation for ordinary backcountry camping, and registration is voluntary. Follow applicable bear-resistant food-storage requirements; the two public-use cabins require reservations.",
+      "source": "https://www.nps.gov/lacl/planyourvisit/permitsandreservations.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "mount-washington",
+      "path": "reservation",
+      "old": "Reaching the summit via the Cog Railway or the Auto Road requires separate, timed reservations that often sell out weeks in advance. Mount Washington State Park does not charge for pedestrian entry, but summit facilities have specific seasonal operating hours. Always check the Higher Summits Forecast and official transport sites for daily weather-related cancellations.",
+      "new": "Book Cog Railway tickets separately. Driving your own eligible vehicle on the Mount Washington Auto Road does not require a reservation; pay at the Toll House. Check current road hours, vehicle restrictions, summit-facility hours, and the Higher Summits Forecast before departure.",
+      "source": "https://mt-washington.com/drive-yourself/",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "mount-rainier",
+      "path": "headline",
+      "old": "Mandatory Timed Entry Reservations for Paradise and Sunrise",
+      "new": "2026 Entry and Seasonal Road Access",
+      "source": "https://www.nps.gov/mora/learn/news/mount-rainier-national-park-will-not-require-timed-entry-reservations-in-2026.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "mount-rainier",
+      "path": "reservation",
+      "old": "Mount Rainier National Park now requires timed entry reservations for the Paradise and Sunrise corridors during peak summer months. These must be booked in advance via Recreation.gov; a separate park entrance fee or pass is also required. Check the official NPS site for exact dates, as requirements change seasonally and reservations do not guarantee parking.",
+      "new": "Mount Rainier National Park will not require timed-entry reservations anywhere in the park in 2026. An entrance fee or valid pass is still required. Parking management, congestion, and road closures can affect access; check current NPS conditions and requirements for future seasons.",
+      "source": "https://www.nps.gov/mora/learn/news/mount-rainier-national-park-will-not-require-timed-entry-reservations-in-2026.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "mount-rainier",
+      "path": "plan.days.0.note",
+      "old": "Reservations for the Paradise corridor are checked at the Nisqually and Stevens Canyon entrances.",
+      "new": "No timed-entry reservation is required in 2026; check current entrance, road, and parking conditions before driving to Paradise.",
+      "source": "https://www.nps.gov/mora/learn/news/mount-rainier-national-park-will-not-require-timed-entry-reservations-in-2026.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "mount-rainier",
+      "path": "plan.intel.0.text",
+      "old": "Paradise and Sunrise parking lots often fill by mid-morning despite reservations. Have a secondary lower-elevation forest walk ready if lots are closed.",
+      "new": "Paradise and Sunrise parking can reach capacity during busy periods. No timed-entry reservation is required in 2026; have a lower-elevation alternative ready and follow parking-management instructions.",
+      "source": "https://www.nps.gov/mora/learn/news/mount-rainier-national-park-will-not-require-timed-entry-reservations-in-2026.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "mount-rainier",
+      "path": "plan.intel.1.text",
+      "old": "Cell service is nearly nonexistent inside park boundaries. Save your Recreation.gov reservation QR code as a screenshot before leaving Ashford or Packwood.",
+      "new": "Cell service can be limited in mountainous areas. Download maps and current road information before leaving Ashford or Packwood; a timed-entry reservation QR code is not required in 2026.",
+      "source": "https://www.nps.gov/mora/learn/news/mount-rainier-national-park-will-not-require-timed-entry-reservations-in-2026.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "mount-rainier",
+      "path": "plan.intel.4.text",
+      "old": "Timed entry reservations apply only to specific hours; if you arrive outside your window, you may be denied entry. Review the official NPS policy for early/late access.",
+      "new": "No timed-entry windows apply in 2026. Consider a weekday visit or an early or late arrival to reduce congestion, while allowing enough daylight and checking seasonal road hours.",
+      "source": "https://www.nps.gov/mora/learn/news/mount-rainier-national-park-will-not-require-timed-entry-reservations-in-2026.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "mount-rainier",
+      "path": "plan.goldenHour",
+      "old": "Sunrise Point is the premier location for first light, but ensure your reservation or entry time aligns with the seasonal gate opening hours.",
+      "new": "Sunrise Point offers views in early light when the road is open. Check seasonal road access and weather before departure; no timed-entry reservation is required in 2026.",
+      "source": "https://www.nps.gov/mora/learn/news/mount-rainier-national-park-will-not-require-timed-entry-reservations-in-2026.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "oahu",
+      "path": "plan.intel.4.text",
+      "old": "Hanauma Bay is closed on Tuesdays for ecosystem rest; other state monuments may have rotating maintenance days. Always cross-reference the official city and county calendars.",
+      "new": "Hanauma Bay Nature Preserve is closed on Mondays and Tuesdays. Check the official City and County of Honolulu page for current opening hours and reservation requirements.",
+      "source": "https://www.honolulu.gov/dpr/park-closure-hours/",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "moosehead-lake",
+      "path": "plan.days.2.stops.0.detail",
+      "old": "Learn about the region's logging heritage and the grand hotel era at the Eveleth-漂亮 House.",
+      "new": "Learn about local family history and Victorian life at the Eveleth-Crafts-Sheridan Historical House.",
+      "source": "https://www.mooseheadhistory.org/museum/eveleth-crafts-sheridan-historic-house/",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "manchester",
+      "path": "plan.days.1.title",
+      "old": "Tactonic Range Summits",
+      "new": "Taconic Range Summits",
+      "source": "",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "ozark-mountains-missouri",
+      "path": "plan.days.0.stops.1.detail",
+      "old": "Observe the Black River as it rushes through narrow channels of resistant volcanic rock, creating natural pools and shoots.",
+      "new": "Observe the Black River as it rushes through narrow channels of resistant volcanic rock, creating natural pools and chutes.",
+      "source": "",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "taos-ski-valley",
+      "path": "plan.goldenHour",
+      "old": "Kachina Peak for sunset views, accessible via lift in winter or strenuous hike in summer.",
+      "new": "Do not plan a lift-served sunset on Kachina Peak. Winter mountain operations end before evening, and summer summit hiking is a separate strenuous outing requiring daylight, suitable weather, and route planning.",
+      "source": "https://www.skitaos.com/lifts",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "taos-ski-valley",
+      "path": "plan.days.1.stops.0.detail",
+      "old": "Ascend to over 12,000 feet for panoramic views spanning into Colorado.",
+      "new": "In winter, qualified advanced and expert skiers and snowboarders can use the Kachina chair when open; it is not a general pedestrian sightseeing lift.",
+      "source": "https://taosskivalley.com/play/winter-activities/ski-snowboard/",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "taos-ski-valley",
+      "path": "plan.days.2.note",
+      "old": "Winter driving requires snow tires or chains as mandated by local road conditions.",
+      "new": "Check NMDOT advisories for NM 150 before winter travel, follow posted restrictions, and avoid travel during severe driving conditions.",
+      "source": "https://nmroads.com/mobIndex.html",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "taos",
+      "path": "plan.days.2.title",
+      "old": "The Enchanted Circle Loop",
+      "new": "Wild Rivers and Red River Side Trip",
+      "source": "https://taos.org/discover/enchanted-circle-driving-tour/",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "taos",
+      "path": "plan.days.2.driving",
+      "old": "Allow 3-4 hours for the full loop; conditions vary by weather.",
+      "new": "Plan this as a Wild Rivers and Red River excursion. Completing the separate 84-mile Enchanted Circle adds travel through Eagle Nest and Angel Fire, with additional time needed for stops.",
+      "source": "https://taos.org/discover/enchanted-circle-driving-tour/",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "telluride",
+      "path": "reservation",
+      "old": "Telluride Town Park camping and high-end glamping sites require reservations 6–12 months in advance. The gondola is free and requires no ticket, but peak festival weekends cause significant wait times at all transit points.",
+      "new": "Book Telluride Town Park camping through the town’s announced seasonal reservation windows; festival camping is managed separately by the relevant festival. Private accommodation booking policies vary. Check the gondola’s operating calendar before travel.",
+      "source": "https://www.telluride-co.gov/181/Campground",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "telluride",
+      "path": "plan.intel.0.text",
+      "old": "Parking in the historic core is strictly metered and limited; use the Carbondale lot or Mountain Village parking for longer stays. Town Park fills early for all trail access.",
+      "new": "Check posted parking restrictions in the historic core. For longer daytime visits, consult the town’s parking map for the lot at 700 West Pacific Avenue, associated with the Carhenge redevelopment; overnight parking is not allowed there.",
+      "source": "https://www.telluride.gov/159/Parking",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "tallgrass-prairie-national-preserve",
+      "path": "reservation",
+      "old": "There is no fee to enter the preserve, but ranger-led bus tours to the bison backcountry require advance booking through the official NPS site. These seasonal tours fill quickly during spring and autumn; check current schedules before arrival.",
+      "new": "The preserve is free to visit and individual visits do not require advance reservations. Group and school tours must be scheduled at least two weeks ahead. Check current guided-tour availability rather than assuming a bookable seasonal bus tour.",
+      "source": "https://www.nps.gov/tapr/planyourvisit/guidedtours.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "tallgrass-prairie",
+      "path": "reservation",
+      "old": "The The Nature Conservancy's Tallgrass Prairie Preserve and the National Park Service site generally do not require entry reservations for individuals. However, lodging in Pawhuska is limited and should be booked months in advance for peak spring calving and autumn seasons.",
+      "new": "This itinerary concerns The Nature Conservancy’s Joseph H. Williams Tallgrass Prairie Preserve near Pawhuska, Oklahoma, not the National Park Service’s Tallgrass Prairie National Preserve in Kansas. Consult the Oklahoma preserve’s official visitor information when planning access.",
+      "source": "https://www.nature.org/content/dam/tnc/nature/en/documents/tallgrass-trails-brochure-1.pdf",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "tallgrass-prairie",
+      "path": "source_url",
+      "old": "https://www.nps.gov/tapr/index.htm",
+      "new": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/tallgrass-prairie-preserve/",
+      "source": "https://www.nature.org/content/dam/tnc/nature/en/documents/tallgrass-trails-brochure-1.pdf",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "white-mountains-maine",
+      "path": "plan.days.1.stops.0.detail",
+      "old": "Climb Maine’s third-highest peak for 360-degree views from the summit fire tower.",
+      "new": "Climb 4,180-foot Old Speck to its summit observation tower; the state guide describes the outing as a challenging 7.6-mile hike taking about seven hours.",
+      "source": "https://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/graftonmahoosucmap.pdf",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "white-mountains-maine",
+      "path": "plan.days.1.note",
+      "old": "The terrain is exceptionally rocky; allow more time than mileage suggests for mountain safety.",
+      "new": "Choose Old Speck or Table Rock as the main hike rather than treating both as routine consecutive stops; Old Speck alone is listed as a challenging seven-hour outing.",
+      "source": "https://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/graftonmahoosucmap.pdf",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "white-mountains-maine",
+      "path": "plan.goldenHour",
+      "old": "Table Rock offers a prime viewpoint for watching the sunset over the Mahoosuc Range, with fall being the peak season.",
+      "new": "Visit Table Rock with enough daylight for the return hike and comply with the park’s posted operating hours; do not assume that a sunset stay is permitted.",
+      "source": "https://www.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=1",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "point-reyes",
+      "path": "reservation",
+      "old": "Entry to the Seashore is generally open, but specialized permits are required for backcountry camping and specific group activities. During peak winter weekends, a mandatory shuttle system typically manages access to the Lighthouse and Chimney Rock areas to mitigate congestion. Always verify current seasonal transit schedules and permit availability via the National Park Service official portal before traveling.",
+      "new": "Backcountry camping and certain group activities require permits. The former winter shuttle to the Lighthouse and Chimney Rock has been indefinitely suspended; plan private-vehicle access subject to current road conditions, parking availability, and closures.",
+      "source": "https://www.nps.gov/pore/planyourvisit/shuttle.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "pinnacles-national-park",
+      "path": "plan.intel.0.text",
+      "old": "Parking lots at Bear Gulch typically fill before 9 AM during spring wildflower season and holiday weekends. Use the shuttle from the East Side Visitor Center if lots are closed.",
+      "new": "Parking can fill early on spring weekends and holidays. Check current transportation information before arrival: NPS currently reports no shuttle service, so do not rely on a shuttle when trailhead lots are full.",
+      "source": "https://www.nps.gov/pinn/planyourvisit/gettingaround.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "pinnacles-national-park",
+      "path": "plan.days.1.note",
+      "old": "The West Entrance is day-use only and closes its gate at dusk; plan departure accordingly.",
+      "new": "The West Entrance is day-use only; NPS currently lists gate hours of 7:30 AM to 8 PM. Recheck hours before visiting and leave before the gate closes.",
+      "source": "https://www.nps.gov/pinn/planyourvisit/hours.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "white-sands-national-park",
+      "path": "plan.days.1.stops.0.detail",
+      "old": "Hike this two-mile loop to see animal tracks and desert vegetation at the dune edge.",
+      "new": "Hike this moderate one-mile loop to see animal tracks and desert vegetation at the dune edge; expect soft sand and steep dune climbs.",
+      "source": "https://www.nps.gov/whsa/planyourvisit/dune-life-nature-trail.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "white-sands-national-park",
+      "path": "plan.days.2.stops.0.detail",
+      "old": "Follow the trail markers across the dunes to the edge of the ancient Lake Lucero lakebed.",
+      "new": "Follow the red diamond trail markers across strenuous dunes toward Alkali Flat, the dry bed of ancient Lake Otero; this is not a route to Lake Lucero.",
+      "source": "https://www.nps.gov/whsa/planyourvisit/alkali-flat-trail.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "pine-barrens",
+      "path": "plan.days.1.stops.1.detail",
+      "old": "Climb the fire tower for a 360-degree view of the vast million-acre canopy.",
+      "new": "Visit Apple Pie Hill, but climb the fire tower only when NJDEP explicitly opens it to visitors; confirm access and hours beforehand.",
+      "source": "https://dep.nj.gov/event/open-tower-day/",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "pine-barrens",
+      "path": "plan.goldenHour",
+      "old": "Apple Pie Hill fire tower for sunset, providing views that can reach the Philadelphia skyline on clear evenings.",
+      "new": "Do not assume Apple Pie Hill fire tower is open at sunset; use only an explicitly authorized opening and its stated hours.",
+      "source": "https://dep.nj.gov/event/open-tower-day/",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "pigeon-forge",
+      "path": "plan.days.1.stops.1.detail",
+      "old": "Hike the paved path to an 80-foot cascade, ideal for families and casual walkers.",
+      "new": "Check the current Laurel Falls closure notice before planning this hike. NPS announced rehabilitation beginning January 6, 2025; an estimated reopening date is not confirmation that the trail has reopened.",
+      "source": "https://www.nps.gov/grsm/planyourvisit/conditions.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "pigeon-forge",
+      "path": "plan.intel.0.text",
+      "old": "Display your mandatory parking tag clearly on the dashboard when stopping at any trailhead or overlook. Purchase these at Sugarlands Visitor Center or authorized machines in town.",
+      "new": "A physical parking tag is generally required when parking longer than 15 minutes; vehicles displaying valid state-issued disability placards or plates are exempt. Purchase a tag before reaching a trailhead, since most trailheads have no tag machine.",
+      "source": "https://www.nps.gov/grsm/planyourvisit/fees.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "whitefish",
+      "path": "plan.goldenHour",
+      "old": "Big Mountain Summit offers expansive sunset views, though late-season clouds may obscure the horizon.",
+      "new": "Big Mountain offers expansive daytime summit views, but do not assume sunset lift service. Check the dated operating schedule and arrange any hiking descent in accordance with resort access rules.",
+      "source": "https://skiwhitefish.com/hours-and-dates/",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "snoqualmie-pass",
+      "path": "plan.goldenHour",
+      "old": "Kendall Katwalk offers expansive views for sunset, though hikers must be prepared for a descent in darkness.",
+      "new": "Visit Kendall Katwalk as a daylight hike, allowing enough time to return to the trailhead before dark; do not make sunset at this exposed section the default itinerary. Check snow, ice, and trail closures before departure.",
+      "source": "https://www.fs.usda.gov/r06/mbs/recreation/trails/pacific-crest-trail-2000-snoqualmie-pass-north-snoqualmie-and-cle-elum",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "scotts-bluff",
+      "path": "plan.goldenHour",
+      "old": "North Bluff Trail at sunset for views of the Gering Valley, with the bluff's layers glowing orange depending on summer dust levels.",
+      "new": "Visit North Bluff Trail in late-afternoon light, leaving time to exit the grounds before sunset and complying with the separately posted Summit Road gate hours.",
+      "source": "https://www.nps.gov/scbl/planyourvisit/hours.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "starved-rock",
+      "path": "plan.goldenHour",
+      "old": "Eagle Cliff Overlook provides a high vantage point for the sunset over the Illinois River, subject to seasonal park closing times.",
+      "new": "Visit Eagle Cliff Overlook in late-afternoon light and return before sunset, when park trails close; do not plan an after-dark return hike.",
+      "source": "https://dnr.illinois.gov/parks/park.starvedrock.html",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "rock-creek-park",
+      "path": "plan.goldenHour",
+      "old": "Boulder Bridge provides a classic stone-and-water scene for sunset, though shadows deepen early in the creek valley.",
+      "new": "Photograph Boulder Bridge in late-afternoon light and finish your park walk before sunset; most park areas are open only from sunrise to sunset.",
+      "source": "https://www.nps.gov/rocr/planyourvisit/rules-and-regulations.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "vail",
+      "path": "plan.goldenHour",
+      "old": "Top of the Eagle Bahn Gondola for sunset views; check seasonal lift closing times to ensure a safe return.",
+      "new": "Enjoy Eagle Bahn Gondola summit views during scheduled scenic operating hours and confirm the last downhill ride before boarding; do not assume the gondola operates through sunset.",
+      "source": "https://vail.zendesk.com/hc/en-us/articles/29312388332955-What-dates-will-the-gondola-be-open-for-scenic-rides-at-my-local-resort",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "vermilion-cliffs",
+      "path": "plan.goldenHour",
+      "old": "White Pocket offers dramatic textures at sunset, though shadows deepen quickly in the surrounding basins.",
+      "new": "Explore White Pocket with enough daylight for the return drive on deep-sand access roads; if you lack the vehicle or experience, hire an authorized guide and agree on return timing rather than treating sunset as a routine self-drive outing.",
+      "source": "https://www.blm.gov/visit/white-pocket-trailhead",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "wind-cave-national-park",
+      "path": "plan.days.0.stops.1.detail",
+      "old": "View representative cave features including flowstone and popcorn in a shorter, accessible route.",
+      "new": "View representative cave features on a shorter walking tour that still involves stairs; visitors needing a step-free option should arrange the separate Accessibility Cave Tour.",
+      "source": "https://www.nps.gov/wica/planyourvisit/accessibility.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "tahoe-national-forest",
+      "path": "reservation",
+      "old": "Entry to the forest generally does not require a reservation, but developed campgrounds frequently reach capacity months in advance. Overnight wilderness permits are mandatory for specific areas like the Granite Chief Wilderness; verify current permit systems via the official Forest Service website as policies are subject to seasonal changes.",
+      "new": "Entry to the forest generally does not require a reservation, but developed campgrounds frequently reach capacity months in advance. Wilderness permits are not currently required for day or overnight use in Granite Chief Wilderness; check Forest Service camping restrictions, fire rules, and any updates before visiting.",
+      "source": "https://www.fs.usda.gov/r05/laketahoebasin/recreation/granite-chief-wilderness",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "yosemite",
+      "path": "plan.intel.2.text",
+      "old": "No fuel is available in Yosemite Valley; the only in-park stations are at Wawona, Crane Flat, and Tuolumne Meadows (seasonal). Ensure your tank is full before beginning the ascent from El Portal or Mariposa.",
+      "new": "No fuel is available in Yosemite Valley or Tuolumne Meadows. Refuel before entering the high country; check current service information for Crane Flat and Wawona before relying on either station.",
+      "source": "https://www.nps.gov/yose/planyourvisit/tm.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "rock-creek-park",
+      "path": "reservation",
+      "old": "General park entry and hiking trails are open without permits, but all 30 picnic groves require advance booking through the official federal reservation portal. Planetarium shows and indoor ranger programs at the Nature Center have limited seating and require checking the daily schedule upon arrival. The National Zoo, while adjacent, operates under a separate timed-entry system which must be checked independently.",
+      "new": "General park entry and hiking trails do not require reservations; picnic groves 1, 6, 7, 8, 9, 10, 13, and 24 require reservations for events from April 1 through November 30. Planetarium shows and indoor ranger programs at the Nature Center have limited seating and require checking the daily schedule upon arrival. The National Zoo, while adjacent, operates under a separate timed-entry system which must be checked independently.",
+      "source": "https://www.nps.gov/rocr/planyourvisit/permitsandreservations.htm",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "yellowstone-montana-gateway",
+      "path": "plan.days.2.stops.1.detail",
+      "old": "Observe the hydrothermal junction near the 45th Parallel Bridge where hot water enters the cold river flow.",
+      "new": "Do not plan a visit or soak at Boiling River: NPS lists the site as not open to the public following the 2022 flood impacts. Choose an open stop instead and recheck official conditions.",
+      "source": "https://www.nps.gov/places/000/boiling-river.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "yosemite",
+      "path": "reservation",
+      "old": "Yosemite frequently implements a Peak Hours Plus vehicle reservation system during summer and for specific events like the February Firefall; this is separate from camping or lodging bookings. Check the official NPS website to see if your dates require a timed-entry permit, and distinguish this from the standard park entrance fee. Reservations for in-park lodging and campgrounds are managed through separate official portals and typically fill months in advance.",
+      "new": "Yosemite does not require an entrance reservation in 2026; the standard entrance fee still applies. Check NPS for requirements in other years and for separate activity permits. Reservations for in-park lodging and campgrounds are managed through separate official portals and typically fill months in advance.",
+      "source": "https://www.nps.gov/yose/planyourvisit/reservations.htm",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "yosemite-valley",
+      "path": "reservation",
+      "old": "Securing a spot in Yosemite Valley requires navigating the high-demand Recreation.gov system for campgrounds or the Aramark portal for lodges; distinguish between these and the peak-hour vehicle entry permit. Entry reservations are often mandatory for day visitors during the busiest seasons and are checked at the park gates. Always confirm current permit windows on the official NPS website to ensure entry is granted for your specific dates.",
+      "new": "Yosemite does not require an entrance reservation in 2026, but the entrance fee still applies. Book Valley campsites and lodging separately through the providers linked by NPS, and check official requirements for other years and activities.",
+      "source": "https://www.nps.gov/yose/planyourvisit/reservations.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "rock-creek-park",
+      "path": "plan.days.1.stops.1.detail",
+      "old": "Photographs this iconic 1902 stone arch bridge which serves as a landmark for the park's early design.",
+      "new": "Photograph this iconic 1902 stone arch bridge, a landmark of the park's early design.",
+      "source": "",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "vermilion-cliffs",
+      "path": "plan.days.1.note",
+      "old": "Check flash flood warnings religiously before entering any slot canyon.",
+      "new": "Check the regional forecast and flash-flood warnings before entering any slot canyon; postpone the outing if conditions are unsafe.",
+      "source": "",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "traverse-city",
+      "path": "reservation",
+      "old": "Visiting Sleeping Bear Dunes requires a National Park Entrance Pass, which must be displayed at the Dune Climb and Pierce Stocking Drive. Wine tasting rooms on the peninsulas often require advanced reservations for groups during the busy July harvest season. Campground sites at D.H. Day are highly competitive and require booking via the Recreation.gov portal.",
+      "new": "Visiting Sleeping Bear Dunes requires a National Park Entrance Pass, which must be displayed at the Dune Climb and Pierce Stocking Drive. Wine tasting rooms on the peninsulas often require advance reservations for groups during the busy July harvest season. Campground sites at D.H. Day are highly competitive and require booking via the Recreation.gov portal.",
+      "source": "",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "waikiki",
+      "path": "reservation",
+      "old": "Diamond Head State Monument and Hanauma Bay Nature Preserve require advanced online reservations for all non-residents. These systems operate independently from hotel bookings; visitors must verify current booking windows on the official Hawaii State Parks and Honolulu Parks websites.",
+      "new": "Diamond Head State Monument and Hanauma Bay Nature Preserve require advance online reservations for all non-residents. These systems operate independently from hotel bookings; visitors must verify current booking windows on the official Hawaii State Parks and Honolulu Parks websites.",
+      "source": "",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "wasatch-mountains",
+      "path": "reservation",
+      "old": "Timpanogos Cave National Monument requires advanced reservations for guided tours, which often sell out weeks in advance. While general canyon entry is open, specific campgrounds and high-traffic areas may implement seasonal fee or access systems via Recreation.gov.",
+      "new": "Timpanogos Cave National Monument requires advance reservations for guided tours, which often sell out weeks in advance. While general canyon entry is open, specific campgrounds and high-traffic areas may implement seasonal fee or access systems via Recreation.gov.",
+      "source": "",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "wayne-national-forest",
+      "path": "reservation",
+      "old": "While entry to Wayne National Forest is generally free, specific permits are required for motorized trail use and dispersed camping in certain management areas. Developed campgrounds are seasonally managed and may require advanced booking through the official federal portal; always verify current opening dates before arrival.",
+      "new": "While entry to Wayne National Forest is generally free, specific permits are required for motorized trail use and dispersed camping in certain management areas. Developed campgrounds are seasonally managed and may require advance booking through the official federal portal; always verify current opening dates before arrival.",
+      "source": "",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "wichita-mountains",
+      "path": "reservation",
+      "old": "Entrance to the Wichita Mountains Wildlife Refuge is generally open, but camping at Doris Campground requires advanced booking through official federal systems. Guided wildlife tours and specific backcountry access points may use a lottery or seasonal reservation window; check the U.S. Fish and Wildlife Service site for current protocols. Medicine Park accommodation is private and often requires booking months in advance for peak spring and fall periods.",
+      "new": "Entrance to the Wichita Mountains Wildlife Refuge is generally open, but camping at Doris Campground requires advance booking through official federal systems. Guided wildlife tours and specific backcountry access points may use a lottery or seasonal reservation window; check the U.S. Fish and Wildlife Service site for current protocols. Medicine Park accommodation is private and often requires booking months in advance for peak spring and fall periods.",
+      "source": "",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "wrangell-st-elias-national-park",
+      "path": "reservation",
+      "old": "The park does not require an entry fee or permit for day hiking, but the primary bottleneck is McCarthy Road access and deep-park lodging. Shuttles, guided glacier treks, and Kennecott Mill tours require advanced booking due to the extremely short summer season. Always verify road status and flightseeing availability with official operators before departure.",
+      "new": "The park does not require an entry fee or permit for day hiking, but the primary bottleneck is McCarthy Road access and deep-park lodging. Shuttles, guided glacier treks, and Kennecott Mill tours require advance booking due to the extremely short summer season. Always verify road status and flightseeing availability with official operators before departure.",
+      "source": "",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "woodstock",
+      "path": "plan.arrival",
+      "old": "Pickup rental at SWF or Burlington; stop for groceries in White River Junction before check-in at village inns.",
+      "new": "Pick up your rental at SWF or Burlington; stop for groceries in White River Junction before check-in at village inns.",
+      "source": "",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "rock-creek-park",
+      "path": "plan.days.1.note",
+      "old": "Beach Drive sections are frequently closed to motorized vehicles for recreation; check official NPS schedules.",
+      "new": "Upper Beach Drive is closed to motorized vehicles year-round; use open approach roads and explore the closed section on foot or by bicycle.",
+      "source": "https://www.nps.gov/rocr/learn/news/upper-beach-drive-will-remain-closed-to-vehicles-year-round.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "snow-canyon",
+      "path": "plan.days.2.stops.1.detail",
+      "old": "Drive to the viewpoint off Highway 18 for a panoramic aerial look at the ancient lava flows.",
+      "new": "Drive to the Red Mountain trailhead off Highway 18, then hike to Snow Canyon Overlook; this is a 4.8-mile round-trip outing, not a roadside viewpoint.",
+      "source": "https://www.visitutah.com/places-to-go/parks-outdoors/red-cliffs-national-conservation-area/western-red-mountain",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "snow-canyon",
+      "path": "plan.days.2.note",
+      "old": "The Overlook is outside the main fee booths but requires a short walk from the highway parking.",
+      "new": "Allow time, water, and suitable footwear for the rocky and sandy 4.8-mile round-trip overlook hike; avoid scheduling it during intense summer heat.",
+      "source": "https://www.visitutah.com/places-to-go/parks-outdoors/red-cliffs-national-conservation-area/western-red-mountain",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "silverton",
+      "path": "plan.arrival",
+      "old": "Pickup your vehicle at Durango La Plata County Airport (DRO), gather supplies in Durango, and allow approximately 90 minutes for the climb to Silverton.",
+      "new": "Pick up your vehicle at Durango La Plata County Airport (DRO), gather supplies in Durango, and allow approximately 90 minutes for the climb to Silverton.",
+      "source": "",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "wilmington",
+      "path": "plan.arrival",
+      "old": "Pickup your vehicle at ILM and drive 15–20 minutes to the historic riverfront. Use the downtown markets for boutique supplies or Leland for larger grocery hauls before checking into coastal glamping sites.",
+      "new": "Pick up your vehicle at ILM and drive 15–20 minutes to the historic riverfront. Use the downtown markets for boutique supplies or Leland for larger grocery hauls before checking into coastal glamping sites.",
+      "source": "",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "everglades-national-park",
+      "path": "plan.days.2.title",
+      "old": "The Northern Corridor and Tundra",
+      "new": "The Northern Corridor and Sawgrass Marshes",
+      "source": "",
+      "reason": "Everglades ecosystem wording, not Arctic tundra"
+    },
+    {
+      "slug": "gulf-islands-national-seashore",
+      "path": "plan.days.0.stops.0.detail",
+      "old": "Iterate through the arched brick tunnels of this 1830s fortification to see Civil War-era coastal defenses.",
+      "new": "Explore the arched brick tunnels of this 1830s fortification to see Civil War-era coastal defenses.",
+      "source": "",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "big-island",
+      "path": "reservation",
+      "old": "Reservations are required for Hā‘ena State Park and certain high-demand areas, while Hawai‘i Volcanoes National Park generally uses a standard entry fee without pre-booked time slots. Backcountry camping and certain guided programs require separate permits through the NPS or DLNR systems. Systems are subject to change; verify current requirements on official agency websites before arrival.",
+      "new": "Hā‘ena State Park is on Kauaʻi, not the Big Island; Hawai‘i Volcanoes National Park generally uses a standard entry fee without pre-booked time slots. Backcountry camping and certain guided programs require separate permits through the NPS or DLNR systems. Systems are subject to change; verify current requirements on official agency websites before arrival.",
+      "source": "https://dlnr.hawaii.gov/dsp/parks/kauai/haena-state-park/",
+      "reason": "Source-backed correction"
+    },
+    {
+      "slug": "california-coast",
+      "path": "reservation",
+      "old": "Entry to California State Parks along the coast typically requires a daily vehicle fee, while the Monterey Bay Aquarium and Hearst Castle require timed-entry tickets purchased well in advance. Popular campgrounds like those in Big Sur or Point Lobos require reservations months ahead via ReserveCalifornia; always check the official site for changing access policies due to road repairs.",
+      "new": "Entry to California State Parks along the coast typically requires a daily vehicle fee, while the Monterey Bay Aquarium and Hearst Castle require timed-entry tickets purchased well in advance. Popular campgrounds in Big Sur require reservations months ahead via ReserveCalifornia; Point Lobos is a day-use reserve, not a campground; always check the official site for changing access policies due to road repairs.",
+      "source": "https://www.parks.ca.gov/?page_id=571",
+      "reason": "Source-backed correction"
+    },
+    {
+      "slug": "cherokee-national-forest",
+      "path": "plan.days.1.stops.0.name",
+      "old": "Parksville Lake",
+      "new": "McKamy Lake",
+      "source": "https://www.fs.usda.gov/r08/cherokee/recreation/mckamy-lake",
+      "reason": "Source-backed correction"
+    },
+    {
+      "slug": "catskills",
+      "path": "plan.days.2.stops.0.detail",
+      "old": "Cycle or walk this flat, paved path along the reservoir for unobstructed views of the high peaks.",
+      "new": "Cycle or walk this flat, compacted-crushed-stone path along the reservoir for unobstructed views of the high peaks.",
+      "source": "https://ashokanrailtrail.com/about/",
+      "reason": "Source-backed correction"
+    },
+    {
+      "slug": "berkshires",
+      "path": "plan.days.0.stops.1.detail",
+      "old": "Hike the Squaw Peak trail for a view of the Housatonic River Valley from quartzite cliffs.",
+      "new": "Hike to Peeskawso Peak for a view of the Housatonic River Valley from quartzite cliffs.",
+      "source": "https://thetrustees.org/press-release/the-trustees-changes-names-of-a-trail-peak-at-monument-mountain/",
+      "reason": "Source-backed correction"
+    },
+    {
+      "slug": "black-rock-desert",
+      "path": "plan.days.1.note",
+      "old": "Access to High Rock Canyon is typically closed from late autumn through early spring to protect the historic trail.",
+      "new": "High Rock Canyon Road typically closes from around February 1 through the second weekend in May to reduce disturbance to nesting raptors and lambing bighorn sheep; check the annual closure notice.",
+      "source": "https://www.blm.gov/visit/high-rock-canyon",
+      "reason": "Source-backed correction"
+    },
+    {
+      "slug": "black-canyon-of-the-gunnison",
+      "path": "reservation",
+      "old": "General entry does not currently require a timed permit, but all inner-canyon hiking requires a wilderness permit obtained on-site. Developed campgrounds on the South and North Rims are high-demand and often book six months out. Systems are subject to change, so verify current status on the official NPS site before arrival.",
+      "new": "General entry does not currently require a timed permit, but all inner-canyon hiking requires a wilderness permit obtained on-site. South Rim campsites require reservations; North Rim campsites are first-come, first-served, with payment through Recreation.gov Scan & Pay. Systems are subject to change, so verify current status on the official NPS site before arrival.",
+      "source": "https://www.nps.gov/blca/planyourvisit/camping.htm",
+      "reason": "Source-backed correction"
+    },
+    {
+      "slug": "big-bend-national-park",
+      "path": "reservation",
+      "old": "Reservations for the Chisos Mountains Lodge and developed campgrounds must be made months in advance via Recreation.gov. Backcountry camping requires a separate permit obtained in person or online depending on the specific zone. Entry fees are per vehicle and valid for seven days; always check the official NPS site for changing river crossing statuses and trail closures due to heat or maintenance.",
+      "new": "Book Chisos Mountains Lodge through the lodge concessioner and reservable NPS campgrounds through Recreation.gov; check current closures and availability before planning a stay. Backcountry camping requires a separate permit obtained in person or online depending on the specific zone. Entry fees are per vehicle and valid for seven days; always check the official NPS site for changing river crossing statuses and trail closures due to heat or maintenance.",
+      "source": "https://www.nps.gov/bibe/planyourvisit/lodging.htm",
+      "reason": "Source-backed correction"
+    },
+    {
+      "slug": "big-bend-national-park",
+      "path": "plan.intel.4.text",
+      "old": "High-clearance 4WD is required for Old Maverick and River Road tracks. Do not attempt these in standard rentals, especially after rain.",
+      "new": "Old Maverick Road is an improved dirt road usually passable for most vehicles when dry, but it can become impassable after rain. Check current conditions, separate River Road requirements, and rental restrictions before driving either route.",
+      "source": "https://www.nps.gov/bibe/planyourvisit/campsites_oldmaverickroad.htm",
+      "reason": "Source-backed correction"
+    },
+    {
+      "slug": "cape-cod-national-seashore",
+      "path": "reservation",
+      "old": "The National Seashore charges a daily vehicle fee or requires a valid federal lands pass from late spring through early autumn. Overnight camping is not permitted within the park boundaries; all accommodations must be reserved through private or municipal providers in neighboring towns. Check the official NPS website for the latest updates on beach stairs, shuttle operations, and shark activity advisories.",
+      "new": "The National Seashore charges a daily vehicle fee or requires a valid federal lands pass from late spring through early autumn. The park operates no campgrounds, but qualifying self-contained vehicles may camp in designated Race Point Beach areas with the required SCV permit, subject to closures; other visitors should arrange mainland accommodations. Check the official NPS website for the latest updates on beach stairs, shuttle operations, and shark activity advisories.",
+      "source": "https://www.nps.gov/caco/planyourvisit/self-contained-vehicle-scv-camping.htm",
+      "reason": "Source-backed correction"
+    },
+    {
+      "slug": "colorado-rockies",
+      "path": "plan.intel.0.text",
+      "old": "Trailhead lots at Bear Lake and Glacier Gorge often fill completely before 8 AM during summer. Use the park shuttle system from the Estes Park Fairgrounds to avoid parking delays.",
+      "new": "Trailhead lots at Bear Lake and Glacier Gorge often fill completely before 8 AM during summer. Reserve the seasonal Hiker Shuttle from the Estes Park Visitor Center, then transfer at the park’s Park & Ride to the Bear Lake or Moraine Park shuttle.",
+      "source": "https://www.recreation.gov/timed-entry/10088647",
+      "reason": "Source-backed correction"
+    },
+    {
+      "slug": "craters-of-the-moon",
+      "path": "plan.days.1.stops.1.name",
+      "old": "Boy Scout Cave",
+      "new": "Dewdrop Cave",
+      "source": "https://www.nps.gov/crmo/planyourvisit/conditions.htm",
+      "reason": "Source-backed correction"
+    },
+    {
+      "slug": "craters-of-the-moon",
+      "path": "plan.days.1.stops.1.detail",
+      "old": "Navigate this more rugged cave that retains ice year-round, requiring a permit and sturdy footwear.",
+      "new": "Visit Dewdrop Cave only when open, with the required free cave permit; check current conditions at the visitor center.",
+      "source": "https://www.nps.gov/crmo/planyourvisit/conditions.htm",
+      "reason": "Source-backed correction"
+    },
+    {
+      "slug": "cumberland-island",
+      "path": "plan.days.2.start",
+      "old": "Suggested: 9 AM via Rental Bicycle",
+      "new": "Suggested: 9 AM via your own bicycle, with ferry bike space arranged in advance",
+      "source": "https://nps.gov/cuis/planyourvisit/biking.htm",
+      "reason": "Source-backed correction"
+    },
+    {
+      "slug": "cumberland-island",
+      "path": "plan.intel.4.text",
+      "old": "Access to the northern wilderness areas for camping requires specific permits distinct from the ferry ticket. Only bicycles and foot traffic are permitted.",
+      "new": "Access to the northern wilderness areas for camping requires specific permits distinct from the ferry ticket. Travel wilderness trails on foot; bicycles are prohibited on trails and may be ridden only where permitted on roads and the designated beach segment.",
+      "source": "https://home.nps.gov/cuis/planyourvisit/biking.htm",
+      "reason": "Source-backed correction"
+    },
+    {
+      "slug": "coeur-d-alene",
+      "path": "plan.days.1.start",
+      "old": "Suggested: 8:30 AM from Higgens Point",
+      "new": "Suggested: 8:30 AM from Higgins Point",
+      "source": "https://www.cdaid.org/794",
+      "reason": "Source-backed correction"
+    },
+    {
+      "slug": "coeur-d-alene",
+      "path": "plan.goldenHour",
+      "old": "Higgens Point for sunset views over the eastern arm of the lake, dependent on seasonal smoke levels.",
+      "new": "Higgins Point for sunset views over the eastern arm of the lake, dependent on seasonal smoke levels.",
+      "source": "https://www.cdaid.org/794",
+      "reason": "Source-backed correction"
+    },
+    {
+      "slug": "cody",
+      "path": "plan.days.2.stops.0.detail",
+      "old": "Ascent to the overlook for panoramic views of the Sunlight Basin and the Absaroka Mountains.",
+      "new": "Ascend to the overlook for panoramic views of the Sunlight Basin and the Absaroka Mountains.",
+      "source": "",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "chickasaw-national-recreation-area",
+      "path": "plan.goldenHour",
+      "old": "Bromide Hill offers a scenic vista for sunset, though the park forest canopy densens quickly as light fades.",
+      "new": "Bromide Hill offers a scenic vista for sunset, though visibility beneath the forest canopy diminishes quickly as light fades.",
+      "source": "",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "albuquerque",
+      "path": "plan.arrival",
+      "old": "Pickup your rental at ABQ Sunport, stock up on water and supplies in the Northeast Heights, and check into your Old Town or valley lodging.",
+      "new": "Pick up your rental at ABQ Sunport, stock up on water and supplies in the Northeast Heights, and check into your Old Town or valley lodging.",
+      "source": "",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "berkshires",
+      "path": "plan.arrival",
+      "old": "Pickup rental at BDL, drive 70 minutes north to Lenox, and check in before exploring the Stockbridge village center.",
+      "new": "Pick up rental at BDL, drive 70 minutes north to Lenox, and check in before exploring the Stockbridge village center.",
+      "source": "",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "blue-ridge-parkway",
+      "path": "plan.intel.0.text",
+      "old": "Parking at the Linn Cove Visitor Center is limited and often fills during peak foliage. Arrive early to walk the tanawha trail section that views the bridge structure.",
+      "new": "Parking at the Linn Cove Visitor Center is limited and often fills during peak foliage. Arrive early to walk the Tanawha Trail section that views the bridge structure.",
+      "source": "",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "boise-national-forest",
+      "path": "plan.intel.4.title",
+      "old": "Permit Moderate",
+      "new": "Permits and Fees",
+      "source": "",
+      "reason": "Language correction"
+    },
+    {
+      "slug": "mammoth-mountain",
+      "path": "plan.intel.1.text",
+      "old": "Cellular service is unreliable in the Lye Brook Wilderness and deep within the Lakes Basin canyons. Download offline maps and mountain trail guides before leaving the town of Mammoth Lakes.",
+      "new": "Download maps for the Mammoth Lakes Basin before leaving town. Mountain terrain can interrupt mobile reception; do not rely on a live connection while exploring the basin.",
+      "source": "https://www.fs.usda.gov/r09/gmfl/recreation/lye-brook-wilderness",
+      "reason": "Remove contradictory or unrelated claim"
+    },
+    {
+      "slug": "martha-s-vineyard",
+      "path": "plan.days.2.stops.0.detail",
+      "old": "Explore the collection of 'tuberous' plants and historic stone walls in this pastoral setting.",
+      "new": "Explore the arboretum’s plant collections and grounds; check the official visitor information for seasonal hours and access.",
+      "source": "https://www.pollyhillarboretum.org/",
+      "reason": "Remove contradictory or unrelated claim"
+    },
+    {
+      "slug": "padre-island-national-seashore",
+      "path": "reservation",
+      "old": "Malaquite Campground operates via a mix of reservation and first-come systems; check Recreation.gov for the latest policy. Primitive beach camping requires an on-site permit obtained at the entrance station; always verify current tide and nesting closures on the official NPS site.",
+      "new": "Camping is first come, first served; NPS does not accept camping reservations. Check the current camping page for site-specific registration, fees, beach access, tides, and nesting closures before arrival.",
+      "source": "https://www.nps.gov/pais/planyourvisit/camping.htm",
+      "reason": "Remove contradictory or unrelated claim"
+    },
+    {
+      "slug": "glacier",
+      "path": "headline",
+      "old": "Manage Glacier Vehicle Entry and Corridor Permits",
+      "new": "2026 Vehicle Access and Ticketed Shuttle Check",
+      "source": "https://www.nps.gov/glac/planyourvisit/vehicle-reservations2026.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "glacier",
+      "path": "reservation",
+      "old": "Entry frequently requires specific vehicle reservations for corridors like Going-to-the-Sun Road and North Fork during peak months. These are separate from the standard park pass and must be secured via the official Recreation.gov system; always check the National Park Service site for current seasonal dates and release schedules.",
+      "new": "Vehicle reservations are not required anywhere in Glacier National Park in 2026; standard entrance fees still apply. The 2026 Logan Pass shuttle uses a ticketed-only system. Seasonal parking controls and road conditions can affect access; check the current NPS schedule for your travel dates.",
+      "source": "https://www.nps.gov/glac/planyourvisit/visiting-loganpass-2026.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "glacier",
+      "path": "source_url",
+      "old": "https://www.nps.gov/glac/planyourvisit/vehicle-reservations.htm",
+      "new": "https://www.nps.gov/glac/planyourvisit/vehicle-reservations2026.htm",
+      "source": "https://www.nps.gov/glac/planyourvisit/vehicle-reservations2026.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "glacier",
+      "path": "plan.days.2.note",
+      "old": "Many Glacier is a separate entrance; confirm if a specific corridor reservation is required.",
+      "new": "Many Glacier is a separate entrance; no vehicle reservation is required in 2026. Check current road conditions and requirements for other seasons before travel.",
+      "source": "https://www.nps.gov/glac/planyourvisit/vehicle-reservations2026.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "denali-national-park",
+      "path": "plan.goldenHour",
+      "old": "Stony Hill Overlook is a classic viewpoint for the mountain, provided cloud cover allows; season-dependent.",
+      "new": "Stony Hill Overlook at Mile 62 is not reachable by standard park bus in 2026; buses turn around at East Fork near Mile 43. Plan a viewpoint reachable on your booked service and confirm return transport.",
+      "source": "https://www.nps.gov/dena/blogs/august-28-2026.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "kenai-fjords-national-park",
+      "path": "plan.goldenHour",
+      "old": "Mariner Park at the start of the Seward Spit offers views of Resurrection Bay, though timing is highly dependent on seasonal cloud cover.",
+      "new": "Waterfront Park in Seward offers views of Resurrection Bay, though timing is highly dependent on seasonal cloud cover.",
+      "source": "https://www.cityofseward.us/departments/parks-recreation/parks-trails-open-space-2",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "dubois",
+      "path": "plan.intel.1.text",
+      "old": "Cellular reception is highly unreliable once you leave the US-286 corridor toward the mountains. Download offline maps and notify others of your route before departing town.",
+      "new": "Cellular reception is highly unreliable once you leave the US-26/287 corridor toward the mountains. Download offline maps and notify others of your route before departing town.",
+      "source": "https://www.dot.state.wy.us/news/chip-sealing-is-scheduled-to-begin-monday-east-of-dubois",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "daytona-beach",
+      "path": "plan.intel.3.text",
+      "old": "Fuel and groceries are abundant along US-1 and I-92. Barrier island services are more expensive and limited to small markets.",
+      "new": "Fuel and groceries are abundant along US-1 and US-92. Barrier island services are more expensive and limited to small markets.",
+      "source": "https://www.cflroads.com/projects/City/DaytonaBeach",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "deep-creek-lake",
+      "path": "plan.intel.3.text",
+      "old": "Peak colors typically arrive in early to mid-October, earlier than the Maryland coast. Expect increased traffic on MD-219 during these weekends and book lodging months in advance.",
+      "new": "Peak colors typically arrive in early to mid-October, earlier than the Maryland coast. Expect increased traffic on US-219 during these weekends and book lodging months in advance.",
+      "source": "https://roads.maryland.gov/mdotsha/pages/pressreleasedetails.aspx?PageId=818&newsId=1622",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "duluth",
+      "path": "plan.goldenHour",
+      "old": "Brightorton Beach offers a clear eastern horizon for sunrise over the open water of Lake Superior.",
+      "new": "Brighton Beach offers a clear eastern horizon for sunrise over the open water of Lake Superior.",
+      "source": "https://duluthmn.gov/parks/parks-trails/parks-listing/brighton-beach-park-kitchi-gammi/",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "estes-park",
+      "path": "plan.goldenHour",
+      "old": "Manypoint Curve Overlook offers expansive valley views, though evening light varies significantly by season.",
+      "new": "Many Parks Curve offers expansive valley views, though evening light varies significantly by season.",
+      "source": "https://www.nps.gov/places/romo_manyparkscurve.htm",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "franconia-notch",
+      "path": "plan.days.1.stops.1.detail",
+      "old": "Visit the Old Man of the Mountain Experimental Viewing Plaza to learn the history of the fallen stone icon.",
+      "new": "Visit the Old Man of the Mountain Profiler Plaza to learn the history of the fallen stone icon.",
+      "source": "https://www.nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/Profile-Lake-Trail_Public-Meeting-Presentation.pdf",
+      "reason": "Official-source correction"
+    },
+    {
+      "slug": "yosemite",
+      "path": "headline",
+      "old": "Vehicle Entry Reservations and Seasonal Pass Requirements",
+      "new": "2026 Entry and Separate Stay Reservations",
+      "source": "https://www.nps.gov/yose/planyourvisit/reservations.htm",
+      "reason": "Correct misleading entry-reservation heading"
+    }
+  ],
+  "markerCorrections": [
+    {
+      "slug": "flaming-gorge",
+      "name": "Red Canyon Visitor Center",
+      "replacement": {
+        "name": "Red Canyon Visitor Center",
+        "lat": 40.89091,
+        "lng": -109.560855,
+        "sourceUrl": "https://www.fs.usda.gov/r04/ashley/recreation/red-canyon-visitor-center"
+      }
+    },
+    {
+      "slug": "columbia-river-gorge-washington",
+      "name": "Catherine Creek",
+      "replacement": {
+        "name": "Catherine Creek Trailhead",
+        "lat": 45.710501,
+        "lng": -121.362052,
+        "sourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/catherine-creek-trailhead"
+      }
+    }
+  ],
+  "markerExclusions": [
+    {
+      "slug": "linville-gorge",
+      "name": "Hawksbill Mountain",
+      "status": "wrong_identity"
+    },
+    {
+      "slug": "snow-canyon",
+      "name": "Petrified Dunes",
+      "status": "wrong_identity"
+    },
+    {
+      "slug": "chequamegon-nicolet-national-forest",
+      "name": "Butternut Lake",
+      "status": "wrong_identity"
+    },
+    {
+      "slug": "bryce-canyon-region",
+      "name": "Red Canyon Visitor Center",
+      "status": "wrong_identity"
+    },
+    {
+      "slug": "north-cascades-national-park",
+      "name": "Rainy Pass",
+      "status": "wrong_identity"
+    },
+    {
+      "slug": "hoosier-national-forest",
+      "name": "Hemlock Cliffs",
+      "status": "wrong_identity"
+    },
+    {
+      "slug": "lassen-volcanic-national-park",
+      "name": "Devastated Area",
+      "status": "wrong_identity"
+    },
+    {
+      "slug": "biscayne-national-park",
+      "name": "Dante Fascell Visitor Center",
+      "status": "wrong_identity"
+    },
+    {
+      "slug": "new-orleans",
+      "name": "Barataria Preserve",
+      "status": "wrong_identity"
+    },
+    {
+      "slug": "new-river-gorge-national-park",
+      "name": "Sandstone Falls",
+      "status": "wrong_identity"
+    },
+    {
+      "slug": "pictured-rocks",
+      "name": "Miners Castle",
+      "status": "wrong_identity"
+    },
+    {
+      "slug": "upper-peninsula",
+      "name": "Miners Castle",
+      "status": "wrong_identity"
+    },
+    {
+      "slug": "pictured-rocks",
+      "name": "Grand Sable Dunes",
+      "status": "wrong_identity"
+    },
+    {
+      "slug": "pine-barrens",
+      "name": "Whitesbog Village",
+      "status": "wrong_identity"
+    },
+    {
+      "slug": "allegheny-national-forest",
+      "name": "Allegheny River",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "conway",
+      "name": "Saco River",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "mark-twain-national-forest",
+      "name": "Eleven Point River",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "scotts-bluff",
+      "name": "North Platte River",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "tahoe-national-forest",
+      "name": "Yuba River",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "gallatin-national-forest",
+      "name": "Gallatin River",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "austin",
+      "name": "Ann and Roy Butler Hike-and-Bike Trail",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "harpers-ferry",
+      "name": "C&O Canal Towpath",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "wisconsin-northwoods",
+      "name": "Eagle River Chain of Lakes",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "yellowstone-montana-gateway",
+      "name": "Lamar Valley",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "atchafalaya-basin",
+      "name": "Atchafalaya Welcome Center",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "cocoa-beach",
+      "name": "Cocoa Beach Pier",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "san-juan-mountains",
+      "name": "Ouray Hot Springs",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "martha-s-vineyard",
+      "name": "Gay Head Cliffs",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "montauk",
+      "name": "Deep Hollow Ranch",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "bandelier-national-monument",
+      "name": "Alcove House",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "bryce-canyon",
+      "name": "Navajo Loop Trail",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "beavers-bend",
+      "name": "Forest Heritage Center",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "broken-bow-lake",
+      "name": "Forest Heritage Center",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "dry-tortugas-national-park",
+      "name": "Bush Key",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "ely",
+      "name": "Lehman Caves",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "great-basin-national-park",
+      "name": "Lehman Caves",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "great-sand-dunes-national-park",
+      "name": "Medano Creek",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "sequoia-national-park",
+      "name": "Crescent Meadow",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "itasca-state-park",
+      "name": "Mississippi Headwaters",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "priest-lake",
+      "name": "Upper Priest Lake",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "seneca-rocks",
+      "name": "Spruce Knob",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "starved-rock",
+      "name": "St. Louis Canyon",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "st-george",
+      "name": "Temple of Sinawava",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "mammoth-lakes",
+      "name": "June Lake Loop",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "mammoth-mountain",
+      "name": "June Lake Loop",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "arches-national-park",
+      "name": "Landscape Arch",
+      "status": "unverified_specific_location"
+    },
+    {
+      "slug": "eureka-springs",
+      "name": "Blue Spring Heritage Center",
+      "status": "unverified_specific_location"
+    }
+  ]
+}

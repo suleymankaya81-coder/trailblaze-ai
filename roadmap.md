@@ -36,3 +36,8 @@
 - [x] Prepare reservation notes and stored daily itineraries/local tips for all 446 destinations, with source links, database lease and credit/policy pause guard; 1,350 daily plans and 2,230 tips.
 - [x] Replace generic day flow/field tips with stored local content; add 633 source-coordinate sightseeing markers across 324 destinations without changing airport-drive geometry. No guessed markers for unmatched places.
 - [x] Validate all stored structures and sample Yellowstone, Acadia, Adirondacks, Zion and Florida Keys pages; phone layout, downloaded trip and marker popup verified. Future releases require local travel content. Full independent factual review of every generated sentence is not claimed.
+## Independent destination content review
+- [ ] Visit every published destination and check itinerary, local notes and map rendering; catalog-only pages cannot be visited publicly.
+- [ ] Read all 446 cached travel texts, correct evidence-backed factual and language defects, and persist corrections with source evidence.
+- [ ] Audit all map stop identities/coordinates against their named sources and remove unsupported or unrelated points.
+- [ ] Complete claim-by-claim independent verification for all destination text; source availability and structural checks alone do not count as factual verification.
