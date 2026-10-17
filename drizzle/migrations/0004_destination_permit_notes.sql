@@ -1,0 +1,1 @@
+ALTER TABLE public.destinations ADD COLUMN IF NOT EXISTS permit_headline text, ADD COLUMN IF NOT EXISTS permit_note text, ADD COLUMN IF NOT EXISTS permit_source_url text;

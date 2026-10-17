@@ -80,7 +80,10 @@ export type Database = {
           nearest_airport_name: string | null
           notes: string | null
           parent_slug: string | null
+          permit_headline: string | null
           permit_level: Database["public"]["Enums"]["permit_level"] | null
+          permit_note: string | null
+          permit_source_url: string | null
           photo_credit: string | null
           plan_builder_eligible: boolean
           primary_keyword: string | null
@@ -129,7 +132,10 @@ export type Database = {
           nearest_airport_name?: string | null
           notes?: string | null
           parent_slug?: string | null
+          permit_headline?: string | null
           permit_level?: Database["public"]["Enums"]["permit_level"] | null
+          permit_note?: string | null
+          permit_source_url?: string | null
           photo_credit?: string | null
           plan_builder_eligible?: boolean
           primary_keyword?: string | null
@@ -178,7 +184,10 @@ export type Database = {
           nearest_airport_name?: string | null
           notes?: string | null
           parent_slug?: string | null
+          permit_headline?: string | null
           permit_level?: Database["public"]["Enums"]["permit_level"] | null
+          permit_note?: string | null
+          permit_source_url?: string | null
           photo_credit?: string | null
           plan_builder_eligible?: boolean
           primary_keyword?: string | null
