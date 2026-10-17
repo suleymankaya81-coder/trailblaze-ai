@@ -32,9 +32,18 @@ export default function RoadTripMap({
     const bounds = new maplibregl.LngLatBounds(from, from).extend(to);
     localStops.forEach(stop => bounds.extend([stop.lng, stop.lat]));
     const colors = getComputedStyle(document.documentElement);
-    const startColor = colors.getPropertyValue("--sage-deep").trim();
-    const endColor = colors.getPropertyValue("--copper").trim();
-    const routeColor = colors.getPropertyValue("--forest").trim();
+    // MapLibre's parser needs sRGB; resolve semantic OKLCH tokens through the browser.
+    const tokenColor = (token: string) => {
+      const canvas = document.createElement("canvas"); canvas.width = 1; canvas.height = 1;
+      const context = canvas.getContext("2d");
+      if (!context) return colors.getPropertyValue(token).trim();
+      context.fillStyle = colors.getPropertyValue(token).trim(); context.fillRect(0, 0, 1, 1);
+      const [r, g, b] = context.getImageData(0, 0, 1, 1).data;
+      return `rgb(${r}, ${g}, ${b})`;
+    };
+    const startColor = tokenColor("--sage-deep");
+    const endColor = tokenColor("--copper");
+    const routeColor = tokenColor("--forest");
     const map = new maplibregl.Map({
       container: ref.current,
       style: "https://tiles.openfreemap.org/styles/liberty",

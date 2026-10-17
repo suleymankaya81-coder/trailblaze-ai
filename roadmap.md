@@ -33,6 +33,6 @@
 - [ ] Remaining 56 cards blocked by unavailable/insufficient-resolution source photographs; see scripts/content-pipeline/pin-photo-blockers.json. Do not publish blurry substitutes.
 - [ ] Publish the approved RSS updates: current live feed still returns old items; preview honors releases from October 17 UTC. Publishing requires the owner's request.
 ## Destination-specific travel content
-- [ ] Prepare missing reservation notes and stored daily itineraries/local tips for all 446 destinations, with source links and a credit-limit circuit breaker.
-- [ ] Replace generic day flow/field tips with stored local content and add verified sightseeing markers without changing airport-drive geometry.
-- [ ] Validate all stored content and sample destination pages on desktop/phone; require complete travel content for future releases.
+- [x] Prepare reservation notes and stored daily itineraries/local tips for all 446 destinations, with source links, database lease and credit/policy pause guard; 1,350 daily plans and 2,230 tips.
+- [x] Replace generic day flow/field tips with stored local content; add 633 source-coordinate sightseeing markers across 324 destinations without changing airport-drive geometry. No guessed markers for unmatched places.
+- [x] Validate all stored structures and sample Yellowstone, Acadia, Adirondacks, Zion and Florida Keys pages; phone layout, downloaded trip and marker popup verified. Future releases require local travel content. Full independent factual review of every generated sentence is not claimed.
