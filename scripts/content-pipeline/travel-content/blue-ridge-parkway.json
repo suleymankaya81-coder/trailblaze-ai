@@ -1,0 +1,111 @@
+{
+  "slug": "blue-ridge-parkway",
+  "headline": "Regional Campground and Historic Lodge Reservations",
+  "reservation": "Public campgrounds and historic lodges like the Pisgah Inn require separate booking through federal systems or private portals. High-demand autumn weekends typically book out six months in advance. The motor road itself is free to enter, but facilities have specific seasonal operating windows that must be verified on the official NPS site.",
+  "source_url": "https://www.nps.gov/blri/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "High Meadows and History",
+        "start": "Suggested: 8:30 AM from Boone",
+        "stops": [
+          {
+            "name": "Mabry Mill",
+            "detail": "Observe the century-old water-powered gristmill and enjoy traditional mountain heritage demonstrations."
+          },
+          {
+            "name": "Doughton Park",
+            "detail": "Explore open meadows and the historic Brinegar Cabin to see early mountain life."
+          }
+        ],
+        "driving": "Allow 3 hours for scenic transit; conditions vary.",
+        "note": "Fuel is not available on the motor road; exit at major intersections for services."
+      },
+      {
+        "title": "Viaducts and Valleys",
+        "start": "Suggested: 9 AM from Blowing Rock",
+        "stops": [
+          {
+            "name": "Linn Cove Viaduct",
+            "detail": "View the engineering marvel that hugs the slopes of Grandfather Mountain to protect the ecosystem."
+          },
+          {
+            "name": "Linville Falls",
+            "detail": "Walk to the chimneys and overlooks to see the river drop into the rugged Linville Gorge."
+          }
+        ],
+        "driving": "Allow 2.5 hours; heavy traffic possible near Grandfather Mountain.",
+        "note": "Grandfather Mountain is a private attraction requiring separate admission if exiting the Parkway."
+      },
+      {
+        "title": "The Highest Peaks",
+        "start": "Suggested: 8:30 AM from Asheville",
+        "stops": [
+          {
+            "name": "Mount Mitchell",
+            "detail": "Drive to the highest summit east of the Mississippi for panoramic views from the observation deck."
+          },
+          {
+            "name": "Craggy Gardens",
+            "detail": "Walk through the high-altitude heath bald, particularly vibrant during the rhododendron bloom."
+          }
+        ],
+        "driving": "Allow 2 hours due to steep grades and sharp turns; conditions vary.",
+        "note": "Temperatures at the summit are significantly lower than in Asheville; bring layers."
+      },
+      {
+        "title": "Balsams and Waterfalls",
+        "start": "Suggested: 9 AM from Asheville South",
+        "stops": [
+          {
+            "name": "Graveyard Fields",
+            "detail": "Hike to Second Falls in this unique high-valley landscape known for wild blueberries."
+          },
+          {
+            "name": "Richland Balsam Overlook",
+            "detail": "Stop at the highest point on the Parkway motor road at 6,053 feet elevation."
+          }
+        ],
+        "driving": "Allow 3 hours to the southern terminus; conditions vary.",
+        "note": "Expect frequent tunnels in this section; ensure headlights are operational."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Viaduct Access",
+        "text": "Parking at the Linn Cove Visitor Center is limited and often fills during peak foliage. Arrive early to walk the tanawha trail section that views the bridge structure."
+      },
+      {
+        "kind": "signal",
+        "title": "Digital Dead Zones",
+        "text": "Expect total signal loss in the tunnels and deep valleys of the Balsam Mountains. Use a physical road atlas or pre-loaded navigation for the Cherokee terminus."
+      },
+      {
+        "kind": "fuel",
+        "title": "Strategic Refueling",
+        "text": "The Parkway has no gas stations. Plan to exit into gateway towns like Asheville, Boone, or Spruce Pine for fuel every 100 miles."
+      },
+      {
+        "kind": "timing",
+        "title": "Slow Pace",
+        "text": "The speed limit is strictly 45 mph and lower in developed areas. Allow twice the time suggested by standard GPS apps for a safe mountain transit."
+      },
+      {
+        "kind": "access",
+        "title": "Seasonal Gating",
+        "text": "Higher sections near Mount Mitchell often close during freeze-thaw cycles in late spring. Check the real-time NPS road status map before daily departure."
+      }
+    ],
+    "arrival": "Fly into Asheville or Tri-Cities, pick up a rental, and stock up on water and supplies in town before heading to the ridge.",
+    "vehicle": "Standard cars are fine; RVs must check tunnel height charts as some southern tunnels have low clearances.",
+    "goldenHour": "Craggy Pinnacle offers a 360-degree sunset view, provided the afternoon mountain mist has cleared.",
+    "sources": [
+      {
+        "label": "NPS Road Status Map",
+        "url": "https://www.nps.gov/blri/planyourvisit/roadclosures.htm"
+      }
+    ]
+  }
+}

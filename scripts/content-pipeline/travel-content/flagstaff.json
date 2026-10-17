@@ -1,0 +1,95 @@
+{
+  "slug": "flagstaff",
+  "headline": "Advance Lodging and Dark Sky Program Reservations",
+  "reservation": "High-altitude lodging and developed campsites near the San Francisco Peaks require early booking for summer and autumn leaf-peeping weekends. Official access for skiing at Arizona Snowbowl or evening programs at Lowell Observatory varies by season; check official agency sites for specific entry requirements and capacity limits.",
+  "source_url": "https://www.nps.gov/wupa/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Ancient Canyons and Celestial Views",
+        "start": "Suggested: 9 AM from Downtown Flagstaff",
+        "stops": [
+          {
+            "name": "Walnut Canyon National Monument",
+            "detail": "Walk the Rim Trail for perspectives on ancient cliff dwellings carved into the limestone walls."
+          },
+          {
+            "name": "Lowell Observatory",
+            "detail": "Explore the history of Pluto's discovery and view the night sky through historic telescopes, weather permitting."
+          }
+        ],
+        "driving": "Allow 1 hour total driving; conditions vary by weather.",
+        "note": "The Island Trail at Walnut Canyon involves 240 stairs; assess physical comfort before descending."
+      },
+      {
+        "title": "Volcanic Peaks and Lava Flows",
+        "start": "Suggested: 8:30 AM from Route 66",
+        "stops": [
+          {
+            "name": "Sunset Crater Volcano National Monument",
+            "detail": "Witness the stark contrast of cinder cones and hardened lava flows along the paved accessible trails."
+          },
+          {
+            "name": "Wupatki National Monument",
+            "detail": "Visit the multi-story ancestral Puebloan dwellings that stand as a testament to desert engineering."
+          }
+        ],
+        "driving": "Allow 2 hours for the scenic loop drive; conditions vary.",
+        "note": "Stay on designated paths at all monuments to protect fragile volcanic cinders and archeological sites."
+      },
+      {
+        "title": "Mountain Slopes and Forested Trails",
+        "start": "Suggested: 8 AM from Milton Road",
+        "stops": [
+          {
+            "name": "Arizona Snowbowl Scenic Gondola",
+            "detail": "Ascend the San Francisco Peaks for panoramic views of Northern Arizona and the distant Grand Canyon."
+          },
+          {
+            "name": "Kachina Trail",
+            "detail": "Hike through high-altitude aspen groves and ponderosa pine forests on the slopes of Agassiz Peak."
+          }
+        ],
+        "driving": "Allow 1.5 hours round trip to the mountain; conditions vary.",
+        "note": "Afternoon monsoons are common in summer; descend from high elevation before storms arrive."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "High Elevation Precautions",
+        "text": "Flagstaff sits at 7,000 feet, where oxygen levels are lower than at sea level. Pace your physical activities and allow time to adjust before attempting strenuous summit hikes."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Supply Points",
+        "text": "Full services are concentrated in Flagstaff and Williams. Ensure your tank is sufficient before heading north toward the remote monument loops."
+      },
+      {
+        "kind": "parking",
+        "title": "Trailhead Capacity",
+        "text": "Popular spots like the Humphreys Peak trailhead fill quickly during autumn color changes. Use designated lots only to avoid forest service citations."
+      },
+      {
+        "kind": "signal",
+        "title": "Canyon Dead Zones",
+        "text": "Cellular reception is unreliable within the deep cuts of Walnut Canyon. Download maps for offline use before leaving the city center."
+      },
+      {
+        "kind": "timing",
+        "title": "Monsoon Awareness",
+        "text": "Summer afternoon thunderstorms bring lightning risks to the peaks. Plan high-elevation stops for the morning hours to avoid sudden weather shifts."
+      }
+    ],
+    "arrival": "Pick up your rental at Flagstaff Pulliam Airport (FLG). Stock up on groceries and water in downtown Flagstaff before checking into mountain cabins or glamping sites.",
+    "vehicle": "A standard car is suitable for main roads and monuments, but a 4WD is recommended for unpaved forest service roads; check rental restrictions for off-pavement driving.",
+    "goldenHour": "Sunset Crater viewpoints offer dramatic shadows on the lava fields, though accessibility depends on park closing hours.",
+    "sources": [
+      {
+        "label": "Coconino National Forest",
+        "url": "https://www.fs.usda.gov/coconino"
+      }
+    ]
+  }
+}

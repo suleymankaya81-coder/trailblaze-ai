@@ -1,0 +1,99 @@
+{
+  "slug": "daytona-beach",
+  "headline": "Beach Driving Zones and State Park Reservations",
+  "reservation": "Driving on the beach requires a daily or seasonal permit purchased at designated ramps; access is strictly tide-dependent. Regional state parks like Blue Spring require separate entry fees and often reach capacity early during manatee season. Check the Volusia County Beach Safety site for daily ramp status and closure updates.",
+  "source_url": "https://www.volusia.org/services/public-protection/beach-safety/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Lighthouses and Coastal Heritage",
+        "start": "Suggested: 9 AM from Ponce Inlet",
+        "stops": [
+          {
+            "name": "Ponce de Leon Inlet Lighthouse",
+            "detail": "Climb Florida's tallest lighthouse for views of the Atlantic and the inland waterways."
+          },
+          {
+            "name": "Marine Science Center",
+            "detail": "Visit the sea turtle and seabird rehabilitation facilities to learn about local conservation efforts."
+          }
+        ],
+        "driving": "Allow 30 minutes from the main boardwalk to Ponce Inlet.",
+        "note": "Lighthouse climb involves over 200 steps; ensure all members are comfortable with steep spiral stairs."
+      },
+      {
+        "title": "Inland Springs and River Paddling",
+        "start": "Suggested: 8:30 AM from Blue Spring",
+        "stops": [
+          {
+            "name": "Blue Spring State Park",
+            "detail": "Walk the boardwalks to view manatees in winter or clear spring waters in summer."
+          },
+          {
+            "name": "Tomoka State Park",
+            "detail": "Paddle the Tomoka River through ancient live oak hammocks and salt marshes."
+          }
+        ],
+        "driving": "Allow 1 hour; park entry queues can be significant on weekends.",
+        "note": "Blue Spring often hits capacity by 9 AM during manatee season; check official park status before driving."
+      },
+      {
+        "title": "Scenic Loops and Atlantic Sands",
+        "start": "Suggested: 9:30 AM from Ormond Beach",
+        "stops": [
+          {
+            "name": "Ormond Scenic Loop and Trail",
+            "detail": "Drive the 30-mile corridor under a natural canopy of oaks, passing marshes and dunes."
+          },
+          {
+            "name": "Daytona Beach Boardwalk",
+            "detail": "Walk the historic pier and explore the classic seaside amusements and entertainment district."
+          }
+        ],
+        "driving": "Allow 1.5 hours for the full scenic loop including stops.",
+        "note": "Beach driving is restricted to specific zones; follow all posted speed limits and pedestrian right-of-way."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "Tide-Dependent Driving",
+        "text": "Beach ramps close to vehicles during high tide or heavy surf. Check the Volusia County app for real-time gate openings."
+      },
+      {
+        "kind": "parking",
+        "title": "Ponce Inlet Limitations",
+        "text": "Parking near the lighthouse and jetty is limited and strictly enforced. Use designated public lots to avoid fines."
+      },
+      {
+        "kind": "timing",
+        "title": "Manatee Observation",
+        "text": "Manatees congregate at Blue Spring from November to March when river temperatures drop. Summer visits focus on swimming and paddling."
+      },
+      {
+        "kind": "fuel",
+        "title": "Highway vs Coastal Services",
+        "text": "Fuel and groceries are abundant along US-1 and I-92. Barrier island services are more expensive and limited to small markets."
+      },
+      {
+        "kind": "signal",
+        "title": "Urban vs Park Coverage",
+        "text": "Strong signal exists throughout Daytona, but it may drop significantly within the deeper hammocks of Tomoka State Park."
+      }
+    ],
+    "arrival": "Fly into Daytona Beach International (DAB), pick up a rental, and head to the beachside via International Speedway Blvd for check-in.",
+    "vehicle": "Standard cars are sufficient for beach driving on the hard-packed sand; however, check rental contracts for 'off-road' or beach exclusions.",
+    "goldenHour": "The Ponce Inlet Jetty offers views of the sun setting over the Halifax River, though the ocean horizon is better for sunrise.",
+    "sources": [
+      {
+        "label": "Volusia County Beach Safety",
+        "url": "https://www.volusia.org/services/public-protection/beach-safety/"
+      },
+      {
+        "label": "Florida State Parks - Blue Spring",
+        "url": "https://www.floridastateparks.org/parks-and-trails/blue-spring-state-park"
+      }
+    ]
+  }
+}

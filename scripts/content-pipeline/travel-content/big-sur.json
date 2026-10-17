@@ -1,0 +1,99 @@
+{
+  "slug": "big-sur",
+  "headline": "Highway 1 Access and State Park Reservations",
+  "reservation": "Overnight stays in Big Sur require booking months in advance through the official state portal or private lodging sites. Day-use at Pfeiffer Beach is managed via a separate fee system and parking is not guaranteed. Always check Caltrans for Highway 1 closures, as landslides frequently disrupt through-traffic.",
+  "source_url": "https://www.parks.ca.gov/?page_id=570",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Redwoods and Iconic Vistas",
+        "start": "Suggested: 8:30 AM from Monterey",
+        "stops": [
+          {
+            "name": "Bixby Creek Bridge",
+            "detail": "Observe the historic arch bridge from designated northern pullouts; never stop on the bridge itself."
+          },
+          {
+            "name": "Pfeiffer Big Sur State Park",
+            "detail": "Walk the Valley View Trail for a look at the Big Sur River and ancient coastal redwoods."
+          }
+        ],
+        "driving": "Allow 1.5 to 2 hours; traffic and fog significantly impact travel times",
+        "note": "Fog is frequent in summer mornings; stay within designated viewpoints for safety."
+      },
+      {
+        "title": "Coastal Bluffs and Falls",
+        "start": "Suggested: 9 AM from Big Sur Village",
+        "stops": [
+          {
+            "name": "Julia Pfeiffer Burns State Park",
+            "detail": "View McWay Falls dropping into the ocean from the established overlook trail."
+          },
+          {
+            "name": "Pfeiffer Beach",
+            "detail": "Visit the shoreline to see Keyhole Rock; check for parking availability before descending Sycamore Canyon Road."
+          }
+        ],
+        "driving": "Allow 1 hour; Sycamore Canyon Road is narrow and steep",
+        "note": "The beach below McWay Falls is strictly closed to the public; remain on the Overlook Trail."
+      },
+      {
+        "title": "Northern Headlands",
+        "start": "Suggested: 8 AM from Big Sur Village",
+        "stops": [
+          {
+            "name": "Andrew Molera State Park",
+            "detail": "Explore the Creamery Meadow Trail for a more open, meadow-to-beach hiking experience."
+          },
+          {
+            "name": "Point Sur State Historic Park",
+            "detail": "View the volcanic rock and lighthouse from the highway or check for official guided tour availability."
+          }
+        ],
+        "driving": "Allow 1 hour; check for seasonal river crossings at Andrew Molera",
+        "note": "Ocean temperatures are cold with dangerous rip currents; avoid swimming."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Legal Pullouts",
+        "text": "Parking is strictly enforced; use only gravel turnouts that allow your vehicle to be fully clear of the white line. Pfeiffer Beach parking often fills by 10 AM on weekends."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Limits",
+        "text": "Expect no cellular service between Carmel and San Simeon. Download all reservation confirmations and navigation data for offline use before departing Monterey."
+      },
+      {
+        "kind": "fuel",
+        "title": "Strategic Refueling",
+        "text": "Fuel prices in Big Sur Village are significantly higher than in Monterey or Carmel. Fill your tank before entering the coastal corridor to ensure coverage for return trips."
+      },
+      {
+        "kind": "timing",
+        "title": "Peak Season Traffic",
+        "text": "Travel during spring and fall midweek periods to avoid the heaviest congestion. Saturday traffic can double the transit time between Bixby Bridge and McWay Falls."
+      },
+      {
+        "kind": "access",
+        "title": "Highway 1 Status",
+        "text": "Major sections of Highway 1 can close for months due to winter storm damage. Consult the Caltrans QuickMap for real-time road status before starting your drive."
+      }
+    ],
+    "arrival": "Pick up your vehicle at Monterey Regional Airport (MRY) and secure supplies in Carmel-by-the-Sea. Drive south while it is light to navigate the winding coastal cliffs safely.",
+    "vehicle": "Standard cars are ideal for Highway 1; large RVs face length restrictions on specific curves and limited parking at viewpoints.",
+    "goldenHour": "The cliffs near Bixby Bridge offer classic sunset views, though marine layers may obscure the horizon seasonally.",
+    "sources": [
+      {
+        "label": "California State Parks",
+        "url": "https://www.parks.ca.gov/?page_id=570"
+      },
+      {
+        "label": "Caltrans Highway 1 Status",
+        "url": "https://quickmap.dot.ca.gov/"
+      }
+    ]
+  }
+}

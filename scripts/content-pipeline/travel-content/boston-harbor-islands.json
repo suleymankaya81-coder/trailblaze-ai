@@ -1,0 +1,95 @@
+{
+  "slug": "boston-harbor-islands",
+  "headline": "Ferry and Camping Reservation Check",
+  "reservation": "Access requires ferry tickets which must be booked separately from camping or yurt permits. Camping on islands like Peddocks or Grape is seasonal and highly competitive, often booking months in advance through official state or federal systems; check current status before travel.",
+  "source_url": "https://www.nps.gov/boha/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Harbor History and Views",
+        "start": "Suggested: 9:30 AM from Long Wharf",
+        "stops": [
+          {
+            "name": "Georges Island",
+            "detail": "Explore the granite corridors and dark tunnels of the historic Fort Warren."
+          },
+          {
+            "name": "Spectacle Island",
+            "detail": "Walk the perimeter trails for the highest elevation in the harbor and skyline views."
+          }
+        ],
+        "driving": "Walking and ferry only; allow 45 minutes for ferry transit between hubs.",
+        "note": "Last ferries depart early; check the daily schedule at the dock to avoid being stranded."
+      },
+      {
+        "title": "Outer Island Solitude",
+        "start": "Suggested: 10 AM from Hingham",
+        "stops": [
+          {
+            "name": "Peddocks Island",
+            "detail": "Visit the ruins of Fort Andrews and walk the unique sand spit during low tide."
+          },
+          {
+            "name": "Bumpkin Island",
+            "detail": "Discover a quieter setting with slate beaches and remains of a stone farmhouse."
+          }
+        ],
+        "driving": "Walking and ferry only; conditions vary based on sea state.",
+        "note": "Inter-island shuttles have limited frequency; plan your connections carefully."
+      },
+      {
+        "title": "Coastal Gateway Exploration",
+        "start": "Suggested: 9 AM from Hull",
+        "stops": [
+          {
+            "name": "Grape Island",
+            "detail": "Enjoy a rustic walk through wooded trails and berry bushes near the shoreline."
+          },
+          {
+            "name": "Hull Peninsula",
+            "detail": "Explore the maritime history of the gateway town and its views of the Atlantic."
+          }
+        ],
+        "driving": "Allow 30 minutes for local Hull transit; ferry times vary by season.",
+        "note": "Weekday ferry service is significantly reduced after Labor Day; confirm current dates."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Urban Ferry Terminals",
+        "text": "Parking at Long Wharf is expensive and limited. Consider public transit or designated lots in Hingham or Hull for more predictable access."
+      },
+      {
+        "kind": "signal",
+        "title": "Island Connectivity",
+        "text": "Signal is generally available near the city but drops significantly on the outer islands. Do not rely on digital maps for navigation between trail markers."
+      },
+      {
+        "kind": "fuel",
+        "title": "Supplies and Water",
+        "text": "There are no stores or reliable potable water sources on most islands. Carry all necessary food and water from the mainland."
+      },
+      {
+        "kind": "timing",
+        "title": "Ferry Boarding",
+        "text": "Arrive at least 30 minutes before your scheduled departure. Popular summer weekend slots can sell out despite having a reservation."
+      },
+      {
+        "kind": "access",
+        "title": "Maritime Weather",
+        "text": "Fog or heavy swells can cause sudden ferry cancellations. Always have a mainland backup plan in case harbor transit is suspended."
+      }
+    ],
+    "arrival": "Pick up your rental at BOS and head to a waterfront hotel or gateway town. Verify ferry departure piers for your specific island itinerary.",
+    "vehicle": "Cars are for mainland travel only; islands are strictly pedestrian or bicycle (where allowed) via ferry.",
+    "goldenHour": "Spectacle Island offers prime sunset views of the Boston skyline, subject to ferry return schedules.",
+    "sources": [
+      {
+        "label": "Boston Harbor Islands NPS",
+        "url": "https://www.nps.gov/boha/planyourvisit/basicinfo.htm"
+      }
+    ]
+  }
+}

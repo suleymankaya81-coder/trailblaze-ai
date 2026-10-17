@@ -1,0 +1,95 @@
+{
+  "slug": "taos-ski-valley",
+  "headline": "Alpine Resort Logistics and High Peak Access",
+  "reservation": "Ski lift tickets and equipment rentals should be secured via the official resort portal in advance. Accommodation within the valley is distinct from the town of Taos; winter visitors must verify mountain transit availability if not driving.",
+  "source_url": "https://www.skitaos.com/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Alpine Acclimatization and Village Orientation",
+        "start": "Suggested: 10:00 AM from the Village Base",
+        "stops": [
+          {
+            "name": "Rio Hondo Stream Walk",
+            "detail": "A gentle introductory path to stretch legs at 9,000 feet elevation."
+          },
+          {
+            "name": "Village Base Area",
+            "detail": "Explore the B-Corp certified resort center and orient yourself with the lift systems."
+          }
+        ],
+        "driving": "Minimal; local transfers or walking within the village.",
+        "note": "Prioritize hydration and rest on day one to mitigate altitude symptoms."
+      },
+      {
+        "title": "Summit Challenges and Ridge Views",
+        "start": "Suggested: 8:00 AM from Kachina Basin",
+        "stops": [
+          {
+            "name": "Kachina Peak Lift",
+            "detail": "Ascend to over 12,000 feet for panoramic views spanning into Colorado."
+          },
+          {
+            "name": "Wheeler Peak Wilderness",
+            "detail": "Access rugged trails bordering the resort for high-altitude wildlife viewing."
+          }
+        ],
+        "driving": "Allow 15 minutes for internal valley shuttles; conditions vary.",
+        "note": "Check wind speeds as lifts may close during high-velocity weather events."
+      },
+      {
+        "title": "Canyon Descent and Gateway Culture",
+        "start": "Suggested: 9:00 AM from TSV",
+        "stops": [
+          {
+            "name": "Arroyo Seco Village",
+            "detail": "Visit this artistic gateway community for local cafes and mountain crafts."
+          },
+          {
+            "name": "Hondo Canyon Overlooks",
+            "detail": "Stop at designated pull-outs to view the granite walls of the canyon."
+          }
+        ],
+        "driving": "Allow 1 hour round trip; steep grades require engine braking.",
+        "note": "Winter driving requires snow tires or chains as mandated by local road conditions."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Resort Lot Management",
+        "text": "Primary resort parking is tiered; arriving before 8:30 AM is recommended for closer access during ski season. Summer parking is generally available at the base."
+      },
+      {
+        "kind": "signal",
+        "title": "Village Connectivity",
+        "text": "WiFi is available in most lodges, but cellular service is non-existent in the deep Hondo Canyon approach. Reliable signal returns once you reach the mesa floor."
+      },
+      {
+        "kind": "fuel",
+        "title": "Mountain Fuel Availability",
+        "text": "There are no gas stations within the Ski Valley itself. Refuel in the town of Taos or near the turn-off to Highway 150 before ascending."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Lift Operations",
+        "text": "Scenic summer lift hours are limited and usually end by 4:00 PM. Winter operations follow strict light and safety schedules; check daily mountain reports."
+      },
+      {
+        "kind": "access",
+        "title": "Wilderness Boundary Rules",
+        "text": "Entry into the Wheeler Peak Wilderness from the resort requires adherence to Leave No Trace principles. Some high-altitude trails remain snow-blocked until late June."
+      }
+    ],
+    "arrival": "Rental pickup at TSM followed by a 70-minute canyon drive; check in and remain at the base to adjust to the 9,000+ foot elevation.",
+    "vehicle": "A 4WD or AWD vehicle is strongly advised for winter canyon travel; check local tire requirements before starting the climb.",
+    "goldenHour": "Kachina Peak for sunset views, accessible via lift in winter or strenuous hike in summer.",
+    "sources": [
+      {
+        "label": "Taos Ski Valley Resort",
+        "url": "https://www.skitaos.com"
+      }
+    ]
+  }
+}

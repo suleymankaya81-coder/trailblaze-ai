@@ -1,0 +1,95 @@
+{
+  "slug": "clearwater",
+  "headline": "State Park Capacity and Ferry Reservations",
+  "reservation": "State Parks like Honeymoon Island and Caladesi Island have strict daily capacity limits and may close once reached. The ferry to Caladesi Island operates on a first-come, first-served basis but has set return times that require monitoring. Official park websites should be checked for the latest vessel schedules and island access updates.",
+  "source_url": "https://www.floridastateparks.org",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Coastal Promenades and Pier Views",
+        "start": "Suggested: 9 AM from Clearwater Beach Walk",
+        "stops": [
+          {
+            "name": "Beach Walk",
+            "detail": "Stroll the winding promenade to explore the local shoreline and access various Gulf-front shops."
+          },
+          {
+            "name": "Pier 60",
+            "detail": "Walk the iconic wooden pier to observe local anglers and visit the evening artisan market."
+          }
+        ],
+        "driving": "Allow 30 minutes; local congestion varies",
+        "note": "Pier 60 activities typically increase two hours before sunset."
+      },
+      {
+        "title": "Barrier Islands and Mangrove Trails",
+        "start": "Suggested: 8:30 AM from Honeymoon Island",
+        "stops": [
+          {
+            "name": "Honeymoon Island State Park",
+            "detail": "Explore the nature trails to spot nesting ospreys and enjoy the rugged, uncrowded northern beaches."
+          },
+          {
+            "name": "Caladesi Island State Park",
+            "detail": "Take the ferry to this undeveloped island for kayaking through mangrove tunnels and pristine shelling."
+          }
+        ],
+        "driving": "Allow 1 hour including ferry wait times; conditions vary",
+        "note": "Verify the last ferry return time from Caladesi to avoid being stranded."
+      },
+      {
+        "title": "Marine Conservation and Gateway Charm",
+        "start": "Suggested: 9 AM from Clearwater Marine Aquarium",
+        "stops": [
+          {
+            "name": "Clearwater Marine Aquarium",
+            "detail": "Learn about the rehabilitation of injured sea turtles and native Gulf species at this working marine hospital."
+          },
+          {
+            "name": "Dunedin Main Street",
+            "detail": "Visit the nearby gateway town for a walk through its historic district and a ride on the Pinellas Trail."
+          }
+        ],
+        "driving": "Allow 45 minutes for regional travel; conditions vary",
+        "note": "Parking in Dunedin can be limited during weekend festivals."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Beachfront Parking Constraints",
+        "text": "Public lots near Pier 60 fill early, especially on weekends and holidays. Consider using the Clearwater Ferry or local trolley systems to reach the beach from mainland parking garages."
+      },
+      {
+        "kind": "signal",
+        "title": "Reliable Coastal Signal",
+        "text": "Cellular service is excellent throughout the Clearwater and Dunedin areas. Connectivity may be slightly weaker on the outer edges of Honeymoon Island's nature trails."
+      },
+      {
+        "kind": "fuel",
+        "title": "Mainland Services",
+        "text": "Fuel stations are abundant along the Hwy 60 corridor and in nearby St. Petersburg. Pricing is generally consistent across the Clearwater metro area."
+      },
+      {
+        "kind": "timing",
+        "title": "Tide and Storm Cycles",
+        "text": "Afternoon thunderstorms are common in summer; plan outdoor island visits for the morning hours. Consult tide charts if planning to walk the remote sandbars off Honeymoon Island."
+      },
+      {
+        "kind": "access",
+        "title": "Island Transit",
+        "text": "Caladesi Island is accessible only by boat; there is no road access from the mainland. Pedestrian access to Honeymoon Island is via the Dunedin Causeway."
+      }
+    ],
+    "arrival": "Land at St. Pete-Clearwater (PIE), secure rental, and drive 20 minutes west across the causeway to settle in near the Gulf.",
+    "vehicle": "Standard vehicles are ideal; check rental agreements for restrictions on driving across sand or off-road beach areas.",
+    "goldenHour": "The end of Pier 60 is the premier location for sunsets, though autumn brings the clearest horizons for photography.",
+    "sources": [
+      {
+        "label": "Florida State Parks - Caladesi Island",
+        "url": "https://www.floridastateparks.org/parks-and-trails/caladesi-island-state-park"
+      }
+    ]
+  }
+}

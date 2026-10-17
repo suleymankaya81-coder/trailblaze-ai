@@ -1,0 +1,99 @@
+{
+  "slug": "austin",
+  "headline": "State Park and Swimming Hole Reservations",
+  "reservation": "Entry to popular outdoor spots like Hamilton Pool Preserve and McKinney Falls State Park requires advance booking, often weeks ahead for weekends. Barton Springs Pool operates on a city-managed schedule with specific cleaning closures; verify entry fees and capacity limits on the official Austin Parks and Recreation site before visiting.",
+  "source_url": "https://www.austintexas.gov/department/parks-and-recreation",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Downtown Waterways and Urban Parks",
+        "start": "Suggested: 8:30 AM from Downtown Austin",
+        "stops": [
+          {
+            "name": "Ann and Roy Butler Hike-and-Bike Trail",
+            "detail": "Walk the boardwalk section for skyline views and observe the turtles along the Lady Bird Lake shoreline."
+          },
+          {
+            "name": "Zilker Metropolitan Park",
+            "detail": "Spread out on the Great Lawn or visit the Austin Nature & Science Center's outdoor exhibits."
+          },
+          {
+            "name": "Barton Springs Pool",
+            "detail": "Swim in the natural spring-fed waters that maintain a consistent temperature year-round."
+          }
+        ],
+        "driving": "Allow 30 minutes for city transit; conditions vary with traffic.",
+        "note": "Swimming is strictly prohibited in Lady Bird Lake; use Barton Springs for water recreation."
+      },
+      {
+        "title": "Hill Country Limestone and Creeks",
+        "start": "Suggested: 8 AM from South Austin",
+        "stops": [
+          {
+            "name": "Barton Creek Greenbelt",
+            "detail": "Hike the limestone trails to Twin Falls or Sculpture Falls, checking water flow status beforehand."
+          },
+          {
+            "name": "McKinney Falls State Park",
+            "detail": "View the upper and lower falls where Onion Creek flows over shelf-like limestone formations."
+          }
+        ],
+        "driving": "Allow 45 minutes; conditions vary.",
+        "note": "Trails can be slippery and muddy after rain; check Texas Parks and Wildlife alerts for trail closures."
+      },
+      {
+        "title": "Vistas and Evening Wildlife",
+        "start": "Suggested: 9 AM from Central Austin",
+        "stops": [
+          {
+            "name": "Mount Bonnell",
+            "detail": "Climb the stairs at Covert Park for a classic vista of the Colorado River and the surrounding hills."
+          },
+          {
+            "name": "Congress Avenue Bridge",
+            "detail": "Wait at the designated observation area at dusk to see the seasonal emergence of the Mexican free-tailed bat colony."
+          }
+        ],
+        "driving": "Allow 1 hour total; conditions vary.",
+        "note": "Bat emergence is seasonal (typically March–October) and timing depends on local weather conditions."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Zilker and Trail Access",
+        "text": "Parking near Lady Bird Lake and Zilker Park is often fee-based and fills rapidly on weekends. Use designated lots and avoid residential streets to prevent towing."
+      },
+      {
+        "kind": "signal",
+        "title": "Greenbelt Dead Zones",
+        "text": "Cell service can be spotty in the deeper limestone canyons of the Barton Creek Greenbelt. Map your entry and exit points before descending into the trail system."
+      },
+      {
+        "kind": "fuel",
+        "title": "Urban Availability",
+        "text": "Fuel is plentiful within the city, but stations become sparse once you drive west into the Hill Country toward Hamilton Pool. Fill up before leaving the main suburban fringes."
+      },
+      {
+        "kind": "access",
+        "title": "Water Quality Alerts",
+        "text": "Creek and lake access may be restricted due to algae blooms or high bacteria levels after storms. Always check the 'Austin Water' or local park social feeds for current safety advisories."
+      },
+      {
+        "kind": "timing",
+        "title": "Beat the Heat",
+        "text": "During summer months, plan outdoor activities before 10 AM or after 6 PM. Midday temperatures frequently exceed 95 degrees, making exposed trails hazardous."
+      }
+    ],
+    "arrival": "Pick up rental at Austin-Bergstrom (AUS), grab supplies in the Riverside area, and check into your base.",
+    "vehicle": "A standard car is sufficient for city and state park access; check rental rules if planning to drive on unpaved ranch roads in the Hill Country.",
+    "goldenHour": "Mount Bonnell is a premier sunset viewpoint, though clouds and seasonal haze affect the view of the 360 Bridge.",
+    "sources": [
+      {
+        "label": "Texas Parks and Wildlife",
+        "url": "https://tpwd.texas.gov/state-parks/mckinney-falls"
+      }
+    ]
+  }
+}

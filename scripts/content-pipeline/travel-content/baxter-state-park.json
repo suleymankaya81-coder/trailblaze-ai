@@ -1,0 +1,111 @@
+{
+  "slug": "baxter-state-park",
+  "headline": "Katahdin Parking and Camping Reservations",
+  "reservation": "Baxter State Park requires specific Day Use Parking Reservations (DUPR) for popular trailheads like Roaring Brook. Camping must be booked well in advance through the park's own reservation system; check the official site as rules for Maine residents and non-residents differ.",
+  "source_url": "https://baxterstatepark.org/reservation-info/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "The Ponds of the North Woods",
+        "start": "Suggested: 8 AM from Millinocket",
+        "stops": [
+          {
+            "name": "Sandy Stream Pond",
+            "detail": "Visit this iconic pond for a chance to see moose against the backdrop of the Katahdin massif."
+          },
+          {
+            "name": "Daicey Pond",
+            "detail": "Explore the Nature Trail and view the historic library at one of the park's most scenic campsites."
+          }
+        ],
+        "driving": "Allow 1.5 to 2 hours; the Park Tote Road is unpaved and limited to low speeds.",
+        "note": "Moose sightings are frequent but never guaranteed; maintain a safe distance at all times."
+      },
+      {
+        "title": "Waterfalls and Forested Paths",
+        "start": "Suggested: 9 AM from Abol Campground",
+        "stops": [
+          {
+            "name": "Big Niagara Falls",
+            "detail": "Take a moderate walk through the woods to reach these powerful falls on Nesowadnehunk Stream."
+          },
+          {
+            "name": "Little Niagara Falls",
+            "detail": "A short distance from its larger neighbor, offering a different perspective of the rushing mountain water."
+          }
+        ],
+        "driving": "Allow 45 minutes; road conditions vary with recent weather and maintenance.",
+        "note": "Rocks near the falls are slippery; stay on designated paths for viewing."
+      },
+      {
+        "title": "The Great North Peak",
+        "start": "Suggested: 6 AM from Roaring Brook",
+        "stops": [
+          {
+            "name": "Baxter Peak",
+            "detail": "The northern terminus of the Appalachian Trail, reached via strenuous and technical hiking routes."
+          },
+          {
+            "name": "South Turner Mountain",
+            "detail": "A shorter but steep alternative providing one of the best views of Katahdin's Great Basin."
+          }
+        ],
+        "driving": "Minimal if parked at the trailhead; allow 10-12 hours for a full Katahdin hike.",
+        "note": "A summit attempt is a major undertaking; check weather and turn back if conditions deteriorate."
+      },
+      {
+        "title": "North Park Wilderness",
+        "start": "Suggested: 8 AM from Nesowadnehunk Field",
+        "stops": [
+          {
+            "name": "Trout Brook Farm",
+            "detail": "Explore the quieter northern end of the park, known for its rolling hills and remote feel."
+          },
+          {
+            "name": "South Branch Pond",
+            "detail": "Enjoy the dramatic scenery where the mountains drop directly into the water."
+          }
+        ],
+        "driving": "Allow 2-3 hours to traverse the length of the Park Tote Road; conditions vary.",
+        "note": "The northern gates are far from Millinocket; ensure you have enough fuel for the return trip."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Mandatory DUPR System",
+        "text": "Parking at Roaring Brook, Abol, and Katahdin Stream is managed by a reservation system. Without a pre-booked slot, you may be turned away at the gate during peak summer months."
+      },
+      {
+        "kind": "signal",
+        "title": "Total Wilderness Disconnect",
+        "text": "There is no cellular service or Wi-Fi within the park boundaries. Communications are limited to ranger stations for emergencies only; carry paper maps."
+      },
+      {
+        "kind": "fuel",
+        "title": "Last Service Points",
+        "text": "No fuel, food, or supplies are sold inside Baxter State Park. You must fully stock up in Millinocket or Patten before passing through the entry gates."
+      },
+      {
+        "kind": "timing",
+        "title": "Strict Gate Hours",
+        "text": "The park gates open and close at specific times; arriving after hours may prevent access to your campsite. Check the official seasonal schedule before your travel day."
+      },
+      {
+        "kind": "access",
+        "title": "Vehicle Size Restrictions",
+        "text": "Large RVs and trailers are restricted on the Park Tote Road due to narrow dimensions and sharp turns. Verify your vehicle's length and width against park regulations."
+      }
+    ],
+    "arrival": "Fly into PQI and allow at least 3.5 hours for the drive to the park's northern gate; buy all food and camping fuel in Patten or Millinocket.",
+    "vehicle": "A vehicle with high clearance is recommended for the unpaved Park Tote Road, though not strictly required; check rental terms for gravel road use.",
+    "goldenHour": "Sandy Stream Pond offers a classic view of Katahdin's peaks, though evening shadows fall early in the deep basins.",
+    "sources": [
+      {
+        "label": "Baxter State Park Authority",
+        "url": "https://baxterstatepark.org/"
+      }
+    ]
+  }
+}

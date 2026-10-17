@@ -137,3 +137,13 @@
     padding-inline: 2.5rem;
   }
 }
+.map-sight-marker {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--background);
+  background: var(--forest);
+  color: var(--off-white);
+  font-weight: 700;
+  cursor: pointer;
+}

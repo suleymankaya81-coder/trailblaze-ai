@@ -1,0 +1,95 @@
+{
+  "slug": "umpqua-national-forest",
+  "headline": "Wilderness Permit and Campground Availability Check",
+  "reservation": "Most trails and sites do not require day-use permits, but Northwest Forest Passes are required at designated trailheads. Reservations for popular campgrounds like Diamond Lake or North Umpqua should be made via Recreation.gov well in advance; verify current fire restrictions and road closures with the Forest Service.",
+  "source_url": "https://www.fs.usda.gov/umpqua",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "The Highway of Waterfalls",
+        "start": "Suggested: 8:30 AM from Glide",
+        "stops": [
+          {
+            "name": "Toketee Falls",
+            "detail": "View the two-tiered fall pouring through a natural basalt column doorway via a short forest trail."
+          },
+          {
+            "name": "Watson Falls",
+            "detail": "Hike to the base of one of Oregon's highest plunges, standing at 272 feet amidst a misty canyon."
+          }
+        ],
+        "driving": "Allow 60 minutes for travel along OR-138; mountain roads can be narrow.",
+        "note": "Expect wet and slippery boardwalks near waterfall viewpoints; sturdy footwear is recommended."
+      },
+      {
+        "title": "High Cascade Peaks",
+        "start": "Suggested: 9 AM from Diamond Lake",
+        "stops": [
+          {
+            "name": "Diamond Lake",
+            "detail": "Engage in water activities or cycle the 11-mile paved loop with views of Mt. Bailey and Mt. Thielsen."
+          },
+          {
+            "name": "Clearwater Falls",
+            "detail": "Observe the unique spring-fed falls that emerge directly from mossy rocks rather than a traditional stream."
+          }
+        ],
+        "driving": "Allow 30 minutes; check for seasonal snow closures on higher elevation spurs.",
+        "note": "Mosquito activity is significant near the lake from June through early August."
+      },
+      {
+        "title": "Old Growth and River Confluences",
+        "start": "Suggested: 9 AM from Idleyld Park",
+        "stops": [
+          {
+            "name": "Colliding Rivers",
+            "detail": "Witness the rare geological phenomenon where the North Umpqua and Little Rivers meet head-on."
+          },
+          {
+            "name": "Susan Creek Falls",
+            "detail": "Walk the accessible 1.5-mile trail through old-growth Douglas fir to a 50-foot moss-lined cascade."
+          }
+        ],
+        "driving": "Allow 45 minutes; transit between lower forest sites is generally straightforward.",
+        "note": "Check the Forest Service website for local alerts regarding the North Umpqua Trail segments."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead Pass Requirements",
+        "text": "Many waterfall trailheads require a Northwest Forest Pass or daily fee. Parking lots at Toketee and Watson Falls can fill by midday during summer weekends."
+      },
+      {
+        "kind": "signal",
+        "title": "Corridor Dead Zones",
+        "text": "Cellular service is nonexistent for most of OR-138 between Glide and Diamond Lake. Download offline maps and emergency contact info before leaving Roseburg."
+      },
+      {
+        "kind": "fuel",
+        "title": "Glide to Diamond Lake Gap",
+        "text": "Fuel is available in Glide and at the Diamond Lake Resort, but there are no stations in the 60-mile stretch between them. Always start the day with a full tank."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Road Access",
+        "text": "Higher elevation roads near Mt. Thielsen may remain snow-covered until late June. Check the ODOT TripCheck service for real-time mountain pass conditions."
+      },
+      {
+        "kind": "access",
+        "title": "Fire and Trail Closures",
+        "text": "Wildfire activity can lead to sudden forest closures in late summer. Verify air quality and trail status on the official Umpqua National Forest alerts page."
+      }
+    ],
+    "arrival": "Fly into MFR and drive two hours north to Roseburg for supplies. Proceed east to Glide for park check-in or campsite setup.",
+    "vehicle": "High-clearance vehicles are recommended for forest service roads; check rental agreements for restrictions on unpaved surfaces.",
+    "goldenHour": "Watch the sunset over Diamond Lake to see the reflection of Mt. Thielsen, depending on cloud cover and season.",
+    "sources": [
+      {
+        "label": "U.S. Forest Service - Umpqua",
+        "url": "https://www.fs.usda.gov/umpqua"
+      }
+    ]
+  }
+}

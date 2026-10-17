@@ -1,0 +1,95 @@
+{
+  "slug": "long-island",
+  "headline": "Regional Beach Access and Vehicle Permit System Overview",
+  "reservation": "Access to specific beaches and state parks often requires a regional permit or daily parking pass, distinct from overnight accommodation bookings. During peak summer months, popular locations like Robert Moses or Montauk may reach capacity; check official New York State Parks and local township portals for the latest entry requirements.",
+  "source_url": "https://parks.ny.gov/parks/robertmoses/details.aspx",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Maritime Sentinels and South Shore Dunes",
+        "start": "Suggested: 9 AM from Islip",
+        "stops": [
+          {
+            "name": "Fire Island Lighthouse",
+            "detail": "Walk from Field 5 at Robert Moses State Park to explore this historic beacon and its surrounding boardwalks through rare coastal dunes."
+          },
+          {
+            "name": "Southampton Village",
+            "detail": "Visit for a stroll through historic colonial architecture and local maritime heritage sites."
+          }
+        ],
+        "driving": "Allow 2 hours; conditions vary significantly with seasonal traffic",
+        "note": "The 'Trade Parade' traffic can impact travel times; plan movements between 10 AM and 2 PM when possible."
+      },
+      {
+        "title": "Rugged Bluffs of The End",
+        "start": "Suggested: 8:30 AM from Southampton",
+        "stops": [
+          {
+            "name": "Montauk Point Lighthouse",
+            "detail": "Explore the oldest lighthouse in New York State, commissioned by George Washington, situated at the island's easternmost tip."
+          },
+          {
+            "name": "Camp Hero State Park",
+            "detail": "Hike the dramatic bluffs where the glacial moraine meets the Atlantic Ocean for rugged coastal views."
+          }
+        ],
+        "driving": "Allow 1.5 hours; conditions vary on Montauk Highway",
+        "note": "Coastal winds are frequent; carry layers even in mid-summer."
+      },
+      {
+        "title": "North Fork Pastoral Heritage",
+        "start": "Suggested: 9 AM from Montauk via Shelter Island Ferry",
+        "stops": [
+          {
+            "name": "Greenport Village",
+            "detail": "Wander the historic seaport, visit the maritime museum, and see the 1920s antique carousel."
+          },
+          {
+            "name": "North Fork Wineries",
+            "detail": "Drive Route 25 to see the region's agricultural roots and family-owned vineyards."
+          }
+        ],
+        "driving": "Allow 2.5 hours including ferry transfers; conditions vary",
+        "note": "Ferry wait times vary; check the North Ferry schedule for current crossing frequency."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Beach Permits",
+        "text": "Many beaches require township-specific stickers; non-resident daily passes are available at Robert Moses and Montauk Point State Parks. Check for mobile payment app availability at local town lots."
+      },
+      {
+        "kind": "signal",
+        "title": "Coastal Connectivity",
+        "text": "Cellular reception is generally stable, though remote sections of the Hither Hills and Sunken Forest may experience gaps. Download maps for the eastern bluffs."
+      },
+      {
+        "kind": "fuel",
+        "title": "East End Supply",
+        "text": "Station density decreases significantly east of Amagansett on the South Fork. Ensure adequate supply before entering the more remote park areas of Montauk."
+      },
+      {
+        "kind": "timing",
+        "title": "Peak Season Crowds",
+        "text": "Weekends in July and August see the highest visitation. Early morning arrivals are suggested for popular state park beach parking."
+      },
+      {
+        "kind": "access",
+        "title": "Island Transfers",
+        "text": "The Shelter Island Ferry connects the North and South Forks, bypassing mainland traffic. This is a vehicle ferry service requiring on-board payment."
+      }
+    ],
+    "arrival": "Pick up rental at ISP and drive 20 minutes to the south shore; stock up on coastal essentials in Babylon or Bay Shore.",
+    "vehicle": "Standard vehicles are suitable for all paved routes; check rental contracts for restrictions on unpaved beach access roads.",
+    "goldenHour": "Navy Beach on Fort Pond Bay for sunset, noting that visibility is season-dependent.",
+    "sources": [
+      {
+        "label": "New York State Parks",
+        "url": "https://parks.ny.gov/"
+      }
+    ]
+  }
+}

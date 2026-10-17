@@ -1,0 +1,99 @@
+{
+  "slug": "moab",
+  "headline": "Arches National Park Timed Entry Reservations",
+  "reservation": "Arches National Park frequently requires timed-entry reservations for vehicle access during peak months; this is separate from any camping or glamping permits. Systems are subject to seasonal change, and visitors must check the official NPS website and Recreation.gov for the exact release schedule and entry window requirements.",
+  "source_url": "https://www.nps.gov/arch/planyourvisit/timed-entry-pilot.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Arches Icons and Slickrock Hikes",
+        "start": "Suggested: 7 AM from Moab",
+        "stops": [
+          {
+            "name": "Delicate Arch",
+            "detail": "Hike the exposed sandstone slopes early to reach the park's most famous natural span before the midday heat."
+          },
+          {
+            "name": "The Windows Section",
+            "detail": "Explore North Window, South Window, and Turret Arch via a relatively short loop trail."
+          }
+        ],
+        "driving": "Allow 60–90 minutes for park roads and entry queues; conditions vary",
+        "note": "There is no shade on the Delicate Arch trail; carry at least two liters of water per person."
+      },
+      {
+        "title": "Canyonlands Island in the Sky",
+        "start": "Suggested: 8 AM from Moab",
+        "stops": [
+          {
+            "name": "Mesa Arch",
+            "detail": "Walk the short loop to see this arch perched on the edge of a sheer cliff face."
+          },
+          {
+            "name": "Grand View Point Overlook",
+            "detail": "Observe the vast white rim and canyon system carved by the Colorado and Green rivers."
+          }
+        ],
+        "driving": "Allow 90–120 minutes for the round trip from Moab; conditions vary",
+        "note": "Fuel and food are not available inside the park; supply in Moab before departure."
+      },
+      {
+        "title": "River Corridors and Red Rock Panoramas",
+        "start": "Suggested: 9 AM from Moab",
+        "stops": [
+          {
+            "name": "Utah State Route 128",
+            "detail": "Drive the scenic byway along the Colorado River to view the Fisher Towers and massive red rock cliffs."
+          },
+          {
+            "name": "Dead Horse Point State Park",
+            "detail": "Visit this separate state park for a high-altitude perspective of the gooseneck curves in the river."
+          }
+        ],
+        "driving": "Allow 60–90 minutes for scenic driving; conditions vary",
+        "note": "Dead Horse Point requires a separate admission fee from National Park passes."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead Congestion",
+        "text": "Lots at Devils Garden and Delicate Arch often fill by mid-morning. If a lot is full, move to a secondary viewpoint rather than waiting on the roadway."
+      },
+      {
+        "kind": "signal",
+        "title": "Desert Dead Zones",
+        "text": "Cell service is reliable in downtown Moab but virtually non-existent inside the deep canyons and many areas of Arches. Download all maps for offline use before entering the park."
+      },
+      {
+        "kind": "fuel",
+        "title": "Last Supply Point",
+        "text": "Moab is the primary hub for fuel and water. Heading north or south toward the parks requires a full tank as services are non-existent on the mesas."
+      },
+      {
+        "kind": "timing",
+        "title": "Flash Flood Awareness",
+        "text": "Afternoon thunderstorms in late summer can cause sudden flooding in washes. Check the NOAA forecast and park visitor center updates daily."
+      },
+      {
+        "kind": "access",
+        "title": "Road Restrictions",
+        "text": "High-clearance four-wheel-drive vehicles are required for backcountry routes like Shafer Trail. Standard rentals are strictly limited to paved park roads."
+      }
+    ],
+    "arrival": "Fly into Canyonlands Regional Airport (CNY) and drive approximately 45 minutes to Moab to secure water, groceries, and sun protection.",
+    "vehicle": "A standard vehicle works for all main park sights; check rental contracts for prohibitions against driving on unpaved 'slickrock' or 'wash' roads.",
+    "goldenHour": "Balanced Rock is a notable evening viewpoint; the sandstone glow changes rapidly as the sun dips below the horizon.",
+    "sources": [
+      {
+        "label": "National Park Service - Arches",
+        "url": "https://www.nps.gov/arch"
+      },
+      {
+        "label": "National Park Service - Canyonlands",
+        "url": "https://www.nps.gov/cany"
+      }
+    ]
+  }
+}

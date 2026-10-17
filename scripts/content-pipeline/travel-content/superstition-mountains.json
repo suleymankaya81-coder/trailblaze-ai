@@ -1,0 +1,95 @@
+{
+  "slug": "superstition-mountains",
+  "headline": "Tonto National Forest Permits and Desert Access",
+  "reservation": "A Tonto Daily Pass is required for parking at many trailheads like Peralta; these must be purchased at off-site retailers before arrival. Overnight wilderness permits are not required for small groups, but Arizona State Parks require separate entrance fees for Lost Dutchman. Check official agency sites for seasonal heat closures.",
+  "source_url": "https://www.fs.usda.gov/tonto",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Volcanic Cliffs and Ghost Towns",
+        "start": "Suggested: 8 AM from Apache Junction",
+        "stops": [
+          {
+            "name": "Lost Dutchman State Park",
+            "detail": "Walk the Treasure Loop Trail for views of the towering western face of the Superstition Mountains."
+          },
+          {
+            "name": "Goldfield Ghost Town",
+            "detail": "A reconstructed 1890s mining town offering historical tours and views of the surrounding desert."
+          }
+        ],
+        "driving": "Allow 30 minutes for local park roads; conditions vary.",
+        "note": "State park entry fees are per vehicle and are separate from National Forest passes."
+      },
+      {
+        "title": "Wilderness Spires and Rugged Canyons",
+        "start": "Suggested: 7 AM from Gold Canyon",
+        "stops": [
+          {
+            "name": "Peralta Trailhead",
+            "detail": "Hike to Fremont Saddle to view Weaver's Needle, a massive volcanic plug and local landmark."
+          },
+          {
+            "name": "Siphon Draw Trail",
+            "detail": "A strenuous route leading toward the Flatiron formation with dramatic elevation gains."
+          }
+        ],
+        "driving": "Allow 1 hour for unpaved trailhead access; conditions vary.",
+        "note": "Peralta Road is gravel; while usually car-accessible, it can wash out after desert storms."
+      },
+      {
+        "title": "The Apache Trail and Desert Waters",
+        "start": "Suggested: 9 AM from Apache Junction",
+        "stops": [
+          {
+            "name": "Canyon Lake",
+            "detail": "Explore the narrow salt river canyons by boat, surrounded by steep volcanic cliffs."
+          },
+          {
+            "name": "Tortilla Flat",
+            "detail": "The last remaining stagecoach stop along the historic Apache Trail, home to a unique desert post office."
+          }
+        ],
+        "driving": "Allow 2 hours for winding canyon roads; conditions vary.",
+        "note": "Parts of Highway 88 (Apache Trail) may be subject to long-term closures; check ADOT status before heading east of Tortilla Flat."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Peralta Trailhead Congestion",
+        "text": "The Peralta parking lot frequently fills before 8 AM on winter weekends. Have a backup plan or arrive extremely early to secure a legal spot within the designated area."
+      },
+      {
+        "kind": "signal",
+        "title": "Deep Canyon Dead Zones",
+        "text": "Expect zero cellular reception once you descend into the canyons along the Apache Trail. Always notify a third party of your route and expected return time."
+      },
+      {
+        "kind": "fuel",
+        "title": "Apache Junction Supply Point",
+        "text": "Apache Junction is the final location for full services, water, and fuel. There are no gas stations along the Apache Trail or at the wilderness trailheads."
+      },
+      {
+        "kind": "timing",
+        "title": "Summer Heat Hazards",
+        "text": "Hiking is not recommended when temperatures exceed 100°F (38°C), typically from May to September. Plan all physical activity for the earliest hours of the morning."
+      },
+      {
+        "kind": "access",
+        "title": "Tonto Pass Requirements",
+        "text": "Many Forest Service areas require a Tonto Daily Pass displayed on the dashboard. These are not sold at the trailheads; verify current vendor locations in Apache Junction."
+      }
+    ],
+    "arrival": "Pick up rental at AZA, stock up on essential water in Mesa, and drive 30 minutes to Apache Junction for park access.",
+    "vehicle": "A vehicle with moderate clearance is helpful for the Peralta Trailhead road; check rental terms for gravel road usage.",
+    "goldenHour": "Sunset at Lost Dutchman State Park illuminates the cliffs in vibrant orange; exact color varies by seasonal atmospheric dust.",
+    "sources": [
+      {
+        "label": "Tonto National Forest",
+        "url": "https://www.fs.usda.gov/tonto"
+      }
+    ]
+  }
+}

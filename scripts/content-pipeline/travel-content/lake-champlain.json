@@ -1,0 +1,95 @@
+{
+  "slug": "lake-champlain",
+  "headline": "Monitor Vermont State Park Windows for Seasonal Shoreline Stays",
+  "reservation": "Overnight stays at popular Vermont state parks like Sand Bar or North Hero require advance booking through the official state reservation system. While park entry generally does not require a day-use permit, specialized camping or furnished glamping units have limited inventory and high demand during foliage season. Always verify changing access policies and beach water quality advisories at official Vermont government portals before travel.",
+  "source_url": "https://vtstateparks.com/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Burlington Waterfront and Island Introduction",
+        "start": "Suggested: 9 AM from Burlington Waterfront",
+        "stops": [
+          {
+            "name": "Burlington Greenway",
+            "detail": "Walk or cycle the paved path along the shoreline for views of the Adirondack Mountains across the water."
+          },
+          {
+            "name": "ECHO, Leahy Center for Lake Champlain",
+            "detail": "Explore the lake's ecology and maritime history through indoor exhibits, useful for variable morning weather."
+          }
+        ],
+        "driving": "Allow 1 hour for local transfers; conditions vary by pedestrian traffic",
+        "note": "Check the seasonal bike ferry schedule if planning to cross the Colchester Causeway to the islands."
+      },
+      {
+        "title": "Champlain Islands and Northern Shores",
+        "start": "Suggested: 8:30 AM from South Hero",
+        "stops": [
+          {
+            "name": "Sand Bar State Park",
+            "detail": "Visit for a day of swimming or picnicking on a sandy stretch of the lake’s eastern shore."
+          },
+          {
+            "name": "Missisquoi National Wildlife Refuge",
+            "detail": "Observe migratory birds and explore wetland trails at the northern tip of the lake near the Canadian border."
+          }
+        ],
+        "driving": "Allow 2 hours for island circuit; conditions vary by agricultural traffic",
+        "note": "Stay on designated refuge paths to protect sensitive wetland habitats."
+      },
+      {
+        "title": "Valley Views and Maritime Heritage",
+        "start": "Suggested: 9 AM from Charlotte",
+        "stops": [
+          {
+            "name": "Mount Philo State Park",
+            "detail": "Ascend the small peak for an expansive overlook of the Champlain Valley and the lake's broader scale."
+          },
+          {
+            "name": "Lake Champlain Maritime Museum",
+            "detail": "Examine historic shipwrecks and wooden boat building traditions near Vergennes."
+          }
+        ],
+        "driving": "Allow 1.5 hours; conditions vary on rural valley roads",
+        "note": "Mount Philo parking is limited; early arrival is suggested during fall color periods."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Burlington and State Parks",
+        "text": "Parking in downtown Burlington uses metered street spots or garages near the waterfront. State parks like Sand Bar have defined lots that may reach capacity on summer weekends; have a secondary park in mind."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Gaps",
+        "text": "Cellular service is reliable in Burlington but can become intermittent in the rural Champlain Islands. Download offline maps for navigation between South Hero and Swanton."
+      },
+      {
+        "kind": "fuel",
+        "title": "Regional Refueling",
+        "text": "Fuel is readily available in Burlington, Milton, and Shelburne. Stations are less frequent once you travel north of Grand Isle, so plan accordingly before long drives."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Fluctuations",
+        "text": "Many island amenities and the Lake Champlain Maritime Museum operate seasonally, typically closing for winter. Swimming is best suggested for July and August when water temperatures are at their highest."
+      },
+      {
+        "kind": "access",
+        "title": "Public vs Private Shores",
+        "text": "Much of the lakefront is private property; restrict water access to established state parks or municipal boat launches. Always check current cyanobacteria advisories at the Vermont Department of Health site before swimming."
+      }
+    ],
+    "arrival": "Collect rental at BTV airport, then proceed 15 minutes to Burlington to stock up on supplies at local markets before heading to island campsites.",
+    "vehicle": "A standard car is suitable for the paved routes of the Champlain Valley; check rental terms if planning to use ferries.",
+    "goldenHour": "Mount Philo Summit, with a seasonal caveat for early autumn sunsets over the Adirondacks.",
+    "sources": [
+      {
+        "label": "Vermont State Parks",
+        "url": "https://vtstateparks.com/"
+      }
+    ]
+  }
+}

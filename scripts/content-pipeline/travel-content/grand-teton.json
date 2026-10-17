@@ -1,0 +1,95 @@
+{
+  "slug": "grand-teton",
+  "headline": "Advance Park Entry and Activity Reservations",
+  "reservation": "While Grand Teton National Park does not currently require a general vehicle entry reservation, standard park entrance fees apply. The primary bottlenecks are popular trailheads like Jenny Lake and developed campgrounds, which require booking months in advance via Recreation.gov. Changes to access policies can occur seasonally; always verify current entry and permit requirements on the official National Park Service website.",
+  "source_url": "https://www.nps.gov/grte/planyourvisit/fees.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Introduction to the Teton Range",
+        "start": "Suggested: 8:30 AM from Jackson",
+        "stops": [
+          {
+            "name": "Mormon Row Historic District",
+            "detail": "Visit the iconic Moulton Barns to see 19th-century homesteads framed against the Grand Teton peaks."
+          },
+          {
+            "name": "Craig Thomas Discovery and Visitor Center",
+            "detail": "Browse natural history exhibits and obtain current trail maps and bear safety information near Moose."
+          }
+        ],
+        "driving": "Allow 1-2 hours; conditions vary with wildlife and seasonal traffic.",
+        "note": "Early arrivals are suggested for the best light on the barns and fewer crowds."
+      },
+      {
+        "title": "Glacial Lakes and Canyons",
+        "start": "Suggested: 7:30 AM from Moose",
+        "stops": [
+          {
+            "name": "Jenny Lake",
+            "detail": "Walk the lakeshore trail or take the seasonal shuttle boat toward the base of the mountains."
+          },
+          {
+            "name": "Hidden Falls",
+            "detail": "A short, tiered waterfall located on the west side of Jenny Lake, accessible via a moderate trail."
+          }
+        ],
+        "driving": "Allow 45-60 minutes; parking at Jenny Lake often fills by mid-morning.",
+        "note": "Check the seasonal shuttle boat schedule and weather forecast before crossing the lake."
+      },
+      {
+        "title": "Northern Valley Vistas",
+        "start": "Suggested: 9 AM from Jackson Lake Lodge",
+        "stops": [
+          {
+            "name": "Oxbow Bend",
+            "detail": "Watch for wildlife and reflections of Mount Moran in a calm meander of the Snake River."
+          },
+          {
+            "name": "Colter Bay Village",
+            "detail": "Explore the northern shores of Jackson Lake and visit the local visitor center for lake ecology exhibits."
+          }
+        ],
+        "driving": "Allow 2-3 hours; this route covers the northern reaches of the park road.",
+        "note": "Stay at least 100 yards from bears and wolves at all times."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead Capacity",
+        "text": "Parking lots at Jenny Lake and Taggart Lake are known to reach capacity daily during summer months. Arriving early or late in the day is suggested to increase the likelihood of finding a space."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Limits",
+        "text": "Cellular service is inconsistent and often unavailable in the northern valley and backcountry canyons. Download offline maps and park information before leaving gateway towns like Jackson."
+      },
+      {
+        "kind": "fuel",
+        "title": "Valley Supply Points",
+        "text": "Fuel is available at seasonal stations in Moose, Colter Bay, and Jackson Lake Lodge. Distances between services are significant; monitor your levels when traveling toward the park's northern boundaries."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Operations",
+        "text": "Teton Park Road and Moose-Wilson Road have winter closures to vehicle traffic. Most visitor services and lodges operate only from late May through September."
+      },
+      {
+        "kind": "access",
+        "title": "Permit Requirements",
+        "text": "All overnight backcountry stays require a permit obtained through the park’s official reservation system. Boating on park lakes requires a separate park permit and a state aquatic invasive species decal."
+      }
+    ],
+    "arrival": "Upon landing at JAC, pick up your rental and head to Jackson to stock up on groceries and bear spray. Check into your valley lodging before exploring nearby Mormon Row.",
+    "vehicle": "Standard cars are suitable for main park roads; check rental agreements for restrictions on unpaved routes like Moose-Wilson Road.",
+    "goldenHour": "Schwabacher Landing is a notable viewpoint for sunrise light, subject to seasonal water levels and cloud cover.",
+    "sources": [
+      {
+        "label": "Grand Teton National Park Official Site",
+        "url": "https://www.nps.gov/grte/index.htm"
+      }
+    ]
+  }
+}

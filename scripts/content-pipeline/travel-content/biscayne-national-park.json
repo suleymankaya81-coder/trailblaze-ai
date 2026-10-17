@@ -1,0 +1,95 @@
+{
+  "slug": "biscayne-national-park",
+  "headline": "Vessel Access and Guided Tour Reservations",
+  "reservation": "Since 95% of the park is water, tours for snorkeling and island transport are the primary bottleneck and require booking weeks in advance. Camping on Elliott or Boca Chita Key is primitive and fee-based; always check the park concessioner for boat schedules and availability.",
+  "source_url": "https://www.nps.gov/bisc/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Mangroves and Mainland Shorelines",
+        "start": "Suggested: 9 AM from Homestead",
+        "stops": [
+          {
+            "name": "Dante Fascell Visitor Center",
+            "detail": "Explore the museum and boardwalk to understand the park's four distinct ecosystems."
+          },
+          {
+            "name": "Convoy Point",
+            "detail": "Launch a kayak to explore the fringe mangrove forests along the shoreline."
+          }
+        ],
+        "driving": "Walking or local transfer; minimal vehicle use within the park.",
+        "note": "Paddling is tide-dependent; check local charts at the visitor center."
+      },
+      {
+        "title": "Island History and Tropical Keys",
+        "start": "Suggested: 8:30 AM by Boat from Convoy Point",
+        "stops": [
+          {
+            "name": "Boca Chita Key",
+            "detail": "Visit the iconic 1930s lighthouse and walk the trail through the tropical hardwood hammock."
+          },
+          {
+            "name": "Elliott Key",
+            "detail": "Explore the park's largest island, featuring a mile-long hiking trail and a swim area."
+          }
+        ],
+        "driving": "Vessel transport only; allow 45-60 minutes for boat transit.",
+        "note": "Islands have no potable water or shops; all supplies must be carried in."
+      },
+      {
+        "title": "Submerged History and Coral Reefs",
+        "start": "Suggested: 8 AM by Boat from Convoy Point",
+        "stops": [
+          {
+            "name": "Maritime Heritage Trail",
+            "detail": "Snorkel over historic shipwrecks such as the Mandalay, resting in shallow waters."
+          },
+          {
+            "name": "Biscayne Reefs",
+            "detail": "Observe vibrant coral colonies and tropical fish in the outer reef tract."
+          }
+        ],
+        "driving": "Vessel transport only; conditions vary with sea state.",
+        "note": "Reef visibility is highly dependent on wind and recent weather systems."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Visitor Center Arrival",
+        "text": "Parking at Convoy Point is limited and fills quickly on winter weekends. Arrive early to ensure you don't miss scheduled boat tour departures."
+      },
+      {
+        "kind": "signal",
+        "title": "Open Water Coverage",
+        "text": "Cell signal is generally available near the mainland but becomes unreliable once you reach the outer keys or reefs. Do not rely on digital maps while on the water."
+      },
+      {
+        "kind": "fuel",
+        "title": "Vessel Logistics",
+        "text": "Public fuel for private boats is not available within the park. Refuel at marinas in Homestead or Black Point before entering park waters."
+      },
+      {
+        "kind": "timing",
+        "title": "Hurricane Season awareness",
+        "text": "From June through November, tropical systems can cause sudden park closures. Monitor NOAA forecasts and the NPS alert page for storm warnings."
+      },
+      {
+        "kind": "access",
+        "title": "Boat-Only Destinations",
+        "text": "95% of the park is only accessible by water. Visitors without their own vessel must arrange commercial transport or rentals to see the reefs and keys."
+      }
+    ],
+    "arrival": "Fly into Miami International (MIA), drive 35 miles south to Homestead for lodging, and proceed to Convoy Point for boat departures.",
+    "vehicle": "A car is necessary to reach the mainland visitor center; however, all primary sights require boat access. Verify rental parking at marinas.",
+    "goldenHour": "The Boca Chita Key harbor offers views of the Miami skyline at dusk; visibility varies by season and haze.",
+    "sources": [
+      {
+        "label": "Biscayne National Park",
+        "url": "https://www.nps.gov/bisc/planyourvisit/index.htm"
+      }
+    ]
+  }
+}

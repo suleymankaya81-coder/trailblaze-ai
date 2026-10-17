@@ -1,0 +1,95 @@
+{
+  "slug": "hoosier-national-forest",
+  "headline": "Campground Bookings and Wilderness Access",
+  "reservation": "Developed campgrounds like Hardin Ridge and Tipsaw Lake utilize a central federal booking system; these often fill months in advance for summer and fall weekends. Dispersed camping in the Charles C. Deam Wilderness requires no permit but mandates following specific setback rules from trails and water. Always verify current burn bans and seasonal road closures via the official Forest Service alerts before travel.",
+  "source_url": "https://www.fs.usda.gov/hoosier",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Hardwood Ridges and Wilderness Vistas",
+        "start": "Suggested: 8:30 AM from Bloomington",
+        "stops": [
+          {
+            "name": "Charles C. Deam Wilderness",
+            "detail": "Hike the Peninsula Trail through Indiana's only designated wilderness to reach the shores of Lake Monroe."
+          },
+          {
+            "name": "Hickory Ridge Lookout Tower",
+            "detail": "Climb the historic 110-step stairs for a panoramic view above the hardwood canopy."
+          }
+        ],
+        "driving": "Allow 1-2 hours; conditions vary on gravel forest roads",
+        "note": "Autumn foliage peaks in October, causing high traffic on narrow ridge routes."
+      },
+      {
+        "title": "Limestone Bluffs and Hidden Valleys",
+        "start": "Suggested: 9 AM from Bedford",
+        "stops": [
+          {
+            "name": "Hemlock Cliffs",
+            "detail": "Explore a box canyon featuring seasonal waterfalls, sandstone rock shelters, and unique hemlock trees."
+          },
+          {
+            "name": "Wesley Chapel Gulf",
+            "detail": "Observe a massive eight-acre collapsed sinkhole that provides a window into the Lost River subterranean system."
+          }
+        ],
+        "driving": "Allow 2 hours for regional transit between southern units",
+        "note": "Spring rains make limestone steps slippery; monitor local weather for flash flood risks."
+      },
+      {
+        "title": "Lakeside Recreation and Rolling Hills",
+        "start": "Suggested: 9:30 AM from French Lick",
+        "stops": [
+          {
+            "name": "Patoka Lake",
+            "detail": "Visit the southern reservoir for birdwatching or boat rentals to see the forest from the water."
+          },
+          {
+            "name": "Pioneer Mothers Memorial Forest",
+            "detail": "Walk through an 88-acre old-growth oak grove that represents the region's pre-settlement landscape."
+          }
+        ],
+        "driving": "Allow 1 hour for local transfers; roads are winding",
+        "note": "Summer humidity is significant; early starts are suggested for uphill hiking."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead Capacity",
+        "text": "Popular spots like the Deam Wilderness trailheads have limited gravel lots that reach capacity during fall weekends. Have a secondary trail mapped in the Tell City unit as a backup."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Gaps",
+        "text": "Cellular service is highly unreliable in the deep ravines near Hemlock Cliffs and the southern forest blocks. Download offline maps and notify others of your planned return time."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Supplies",
+        "text": "Refuel in Bloomington, Bedford, or French Lick before entering the forest interior. Service stations are sparse once you transition onto the county roads serving the recreation areas."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Planning",
+        "text": "Spring wildflower blooms are ephemeral and weather-dependent in April. Fall colors typically transition from late September through October."
+      },
+      {
+        "kind": "access",
+        "title": "Forest Road Conditions",
+        "text": "Many interior forest roads are unpaved and may become impassable for low-clearance vehicles after heavy snow or rain. Check the Forest Service website for active logging or maintenance closures."
+      }
+    ],
+    "arrival": "Pick up rental at SDF; drive 90 minutes to Bloomington for groceries and supplies before heading to forest trailheads.",
+    "vehicle": "A standard car suffices for main roads; an AWD vehicle is recommended for reaching remote trailheads during wet seasons. Check rental contracts for gravel road restrictions.",
+    "goldenHour": "Hickory Ridge Lookout Tower for sunset; timing varies significantly between summer and winter solstice.",
+    "sources": [
+      {
+        "label": "US Forest Service - Hoosier",
+        "url": "https://www.fs.usda.gov/main/hoosier/home"
+      }
+    ]
+  }
+}

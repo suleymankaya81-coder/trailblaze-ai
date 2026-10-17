@@ -1,0 +1,97 @@
+{
+  "slug": "yellowstone",
+  "headline": "Regional Lodging and Backcountry Permit Verification",
+  "reservation": "In-park lodging and most campground sites require advance reservations through the providers linked by NPS; campground booking systems differ. Backcountry overnight stays require a separate permit. Check official reservation instructions, seasonal exceptions and road access before choosing your dates.",
+  "source_url": "https://www.nps.gov/yell/planyourvisit/conditions.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Geothermal Wonders of the West",
+        "start": "Suggested: 8 AM from West Yellowstone Gateway",
+        "stops": [
+          {
+            "name": "Old Faithful and Upper Geyser Basin",
+            "detail": "Observe predictable geothermal activity from the boardwalks; plan for waiting time between eruptions."
+          },
+          {
+            "name": "Grand Prismatic Spring",
+            "detail": "View the vivid thermal colors from the Midway Geyser Basin boardwalk or the higher Fairy Falls overlook."
+          }
+        ],
+        "driving": "Allow several hours for these west-central stops; add substantial time for the full Lower Loop, and check road conditions.",
+        "note": "Stay on designated boardwalks; thermal ground is fragile and dangerous."
+      },
+      {
+        "title": "Canyons and High Valleys",
+        "start": "Suggested: 8 AM from Canyon Village",
+        "stops": [
+          {
+            "name": "Grand Canyon of the Yellowstone",
+            "detail": "Visit Artist Point for views of the Lower Falls and the distinct yellow rhyolite canyon walls."
+          },
+          {
+            "name": "Hayden Valley",
+            "detail": "Scan for bison and water birds in the open meadows using established roadside pullouts."
+          }
+        ],
+        "driving": "Allow 2–4 hours; slow down for frequent animal crossings and sightseeing stops.",
+        "note": "Maintain 100 yards from bears and wolves; 25 yards from all other wildlife."
+      },
+      {
+        "title": "Northern Range Wildlife and Springs",
+        "start": "Suggested: 8 AM from Gardiner Gateway",
+        "stops": [
+          {
+            "name": "Mammoth Hot Springs",
+            "detail": "Walk the terraces to see evolving travertine formations created by hot water and limestone."
+          },
+          {
+            "name": "Lamar Valley",
+            "detail": "Explore the park’s 'Serengeti' for broad landscape views and early morning wildlife activity."
+          }
+        ],
+        "driving": "Allow several hours for Mammoth and Lamar; the Northeast Entrance road is typically open year-round, weather permitting. Check current road status.",
+        "note": "Check seasonal road closures for the Dunraven Pass if traveling between Canyon and Mammoth."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Geyser Basin Congestion",
+        "text": "Lots at Old Faithful and Midway Geyser Basin fill early during peak summer months. Consider visiting these areas in the early morning or late afternoon to avoid the busiest periods."
+      },
+      {
+        "kind": "signal",
+        "title": "Limited Connectivity",
+        "text": "Cellular service is concentrated near developed areas like Mammoth and Old Faithful but is absent in most park corridors. Download offline maps and official NPS apps before entering the park boundaries."
+      },
+      {
+        "kind": "fuel",
+        "title": "Internal Service Stations",
+        "text": "NPS lists gas stations at Canyon Village, Fishing Bridge, Grant Village, Mammoth Hot Springs, Old Faithful and Tower Junction. Check operating dates before relying on any station."
+      },
+      {
+        "kind": "timing",
+        "title": "Wildlife Traffic",
+        "text": "Animal-related delays can significantly lengthen transit times, especially in Hayden and Lamar Valleys. Do not stop in the roadway; use designated pullouts to keep the flow of traffic moving safely."
+      },
+      {
+        "kind": "access",
+        "title": "Seasonal Road Stages",
+        "text": "Interior roads close to wheeled vehicles in late autumn and reopen in stages starting in April. Verify current gate status and construction delays on the official park road report before departure."
+      }
+    ],
+    "arrival": "Upon landing at BZN, collect your vehicle and stock up on supplies in Bozeman before the two-hour drive to Gardiner or West Yellowstone. Check into your gateway lodging to confirm local park conditions.",
+    "vehicle": "Standard cars are suitable for the Grand Loop; check rental contracts for restrictions on unpaved secondary roads or winter tires.",
+    "goldenHour": "Lamar Valley offers vast horizons for low-light landscape viewing; visibility varies by season and smoke levels.",
+    "sources": [
+      {
+        "label": "NPS Yellowstone Official Site",
+        "url": "https://www.nps.gov/yell/index.htm"
+      }
+    ],
+    "markers": [],
+    "reviewedAt": "2026-10-17T15:43:00Z"
+  }
+}

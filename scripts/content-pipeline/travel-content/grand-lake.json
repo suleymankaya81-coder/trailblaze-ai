@@ -1,0 +1,95 @@
+{
+  "slug": "grand-lake",
+  "headline": "Rocky Mountain West Gateway and Alpine Lake Access",
+  "reservation": "Rocky Mountain National Park entry requires a timed-entry reservation during peak months; check the official NPS site for the Kawuneeche Valley entrance. Campsites and boat rentals are separate systems. Always verify current park policies before departure.",
+  "source_url": "https://www.nps.gov/romo/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Glacial Waters and Historic Boardwalks",
+        "start": "Suggested: 9 AM from Grand Lake Village",
+        "stops": [
+          {
+            "name": "Grand Lake Shoreline",
+            "detail": "Explore the deep sapphire waters by boat to see historic summer cabins only accessible by water."
+          },
+          {
+            "name": "Grand Lake Historic Boardwalk",
+            "detail": "Walk the wooden planks to experience the 19th-century western atmosphere and local shops."
+          }
+        ],
+        "driving": "Local village walking; allow 15 mins for marina transfers",
+        "note": "Morning water is typically calmest for small craft; afternoon winds are common."
+      },
+      {
+        "title": "Kawuneeche Valley Wilderness",
+        "start": "Suggested: 8 AM from the RMNP West Entrance",
+        "stops": [
+          {
+            "name": "Adams Falls",
+            "detail": "A short hike leads to a powerful waterfall set within a narrow stone canyon."
+          },
+          {
+            "name": "East Inlet Trail",
+            "detail": "Trek through massive meadows where moose are frequently spotted grazing in the willows."
+          }
+        ],
+        "driving": "Allow 30 mins from town; conditions vary by park traffic",
+        "note": "The West Side is generally less crowded than the Estes Park side but requires park entry permits."
+      },
+      {
+        "title": "High Tundra and Continental Divide",
+        "start": "Suggested: 8:30 AM from Grand Lake",
+        "stops": [
+          {
+            "name": "Trail Ridge Road",
+            "detail": "Ascend above the tree line to 12,000 feet for panoramic views of the Rockies."
+          },
+          {
+            "name": "Holzwarth Historic Site",
+            "detail": "Tour a 1920s trout ranch to learn about early alpine tourism and homesteading."
+          }
+        ],
+        "driving": "Allow 2-3 hours for round-trip scenic driving with stops",
+        "note": "Trail Ridge Road is seasonal; check NPS status for snow closures."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead and Village Staging",
+        "text": "Village parking near the beach fills early in summer; utilize peripheral lots for longer stays. Trailhead lots in the Kawuneeche Valley have limited capacity."
+      },
+      {
+        "kind": "signal",
+        "title": "High Alpine Reception",
+        "text": "Signal is strong in Grand Lake village but non-existent inside the National Park and on Trail Ridge Road. Download offline maps for all hiking routes."
+      },
+      {
+        "kind": "fuel",
+        "title": "Mountain Gateway Services",
+        "text": "Fuel is available in Grand Lake and Granby; there are no services once you enter the National Park. Ensure a full tank before heading up Trail Ridge Road."
+      },
+      {
+        "kind": "timing",
+        "title": "Wildlife and Weather Windows",
+        "text": "Dawn and dusk are best for moose sightings in the valley marshes. High altitude storms frequently arrive by 2 PM; plan to be below the tree line by then."
+      },
+      {
+        "kind": "access",
+        "title": "Seasonal Road Restrictions",
+        "text": "Snow closes high-elevation passes from late autumn through late spring. Some town streets allow snowmobiles in winter; check local winter traffic rules."
+      }
+    ],
+    "arrival": "Pick up rental at EGE or DEN; Denver offers the most supply options. Granby is the last major town for large-scale grocery needs before entering the lake area.",
+    "vehicle": "Standard vehicles are fine for paved roads, but high-altitude performance varies. Check rental agreements for restrictions on unpaved forest service roads.",
+    "goldenHour": "Point Park offers a sunset view across the lake toward the Never Summer Range, subject to mountain cloud cover.",
+    "sources": [
+      {
+        "label": "Rocky Mountain National Park",
+        "url": "https://www.nps.gov/romo"
+      }
+    ]
+  }
+}

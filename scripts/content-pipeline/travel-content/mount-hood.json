@@ -1,0 +1,95 @@
+{
+  "slug": "mount-hood",
+  "headline": "Verify Timberline and Sno-Park Permit Requirements",
+  "reservation": "Mount Hood National Forest does not currently use a general entry reservation system, but specific areas like Sno-Parks in winter or certain campgrounds require permits or fees. Timberline Lodge and ski areas have independent booking systems; check the official Forest Service site to distinguish between parking fees and recreational permits.",
+  "source_url": "https://www.fs.usda.gov/mthood",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Historic Timberline and Southern Slopes",
+        "start": "Suggested: 8:30 AM from Government Camp",
+        "stops": [
+          {
+            "name": "Timberline Lodge",
+            "detail": "Examine the 1930s craftsmanship and stonework of this National Historic Landmark situated at the tree line."
+          },
+          {
+            "name": "Trillium Lake",
+            "detail": "Walk the shoreline trail for the classic view of the summit reflected in the water, following posted signs for kayak launch areas."
+          }
+        ],
+        "driving": "Allow 1 hour; frequent stops for photography and grades",
+        "note": "US 26 can experience heavy traffic on weekends; weekdays offer a quieter pace."
+      },
+      {
+        "title": "Orchards and Northern Vistas",
+        "start": "Suggested: 9 AM from Hood River",
+        "stops": [
+          {
+            "name": "Fruit Loop Orchards",
+            "detail": "Drive through the valley for mountain views framed by pear and apple trees, stopping at seasonal farm stands."
+          },
+          {
+            "name": "Lost Lake",
+            "detail": "Visit this northern-side destination for a different perspective of the peak and old-growth forest surroundings."
+          }
+        ],
+        "driving": "Allow 2.5 hours; winding rural roads with varied surfaces",
+        "note": "Check OR 35 road conditions if traveling during the spring or fall shoulder seasons."
+      },
+      {
+        "title": "River Valleys and Alpine Air",
+        "start": "Suggested: 8 AM from Sandy",
+        "stops": [
+          {
+            "name": "Salmon River Trail",
+            "detail": "Follow the lower elevation path through ancient cedar and Douglas fir forests along the designated Wild and Scenic river."
+          },
+          {
+            "name": "Mount Hood Meadows",
+            "detail": "Visit for seasonal summer hiking or winter snow sports, checking their official site for lift operating schedules."
+          }
+        ],
+        "driving": "Allow 2 hours; conditions vary with mountain weather",
+        "note": "Traction tires or chains may be required by law on mountain passes from November through April."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Lake Access",
+        "text": "Trillium Lake parking fills early on summer days; arrive before peak hours or have a secondary forest site planned. Designated parking passes must be displayed."
+      },
+      {
+        "kind": "signal",
+        "title": "Dead Zones",
+        "text": "Cell coverage is spotty along OR 35 and nonexistent at many trailheads like Lost Lake. Carry physical maps for navigation beyond the main highways."
+      },
+      {
+        "kind": "fuel",
+        "title": "Corridor Services",
+        "text": "Sandy and Government Camp provide fuel and food on the south side, while Hood River serves the north. Plan fuel stops before entering forest service roads."
+      },
+      {
+        "kind": "timing",
+        "title": "Ski vs Hiking",
+        "text": "Timberline offers summer skiing, but hiking trails near the lodge remain snow-covered until late July. Confirm trail readiness with ranger reports."
+      },
+      {
+        "kind": "access",
+        "title": "Permit Checks",
+        "text": "Digital permits are often required for specific backcountry zones; verify current requirements at the Zigzag Ranger Station or official website."
+      }
+    ],
+    "arrival": "Arrive at Portland International Airport (PDX) and pick up your vehicle; Sandy is the primary supply town for groceries and gear before entering the Zigzag area.",
+    "vehicle": "A standard vehicle is fine for US 26, but high-clearance is better for the Lost Lake approach; check rental policies regarding snow chain use.",
+    "goldenHour": "Trillium Lake is a renowned sunrise location, though morning mist and seasonal cloud cover often obscure the mountain face.",
+    "sources": [
+      {
+        "label": "Mount Hood National Forest",
+        "url": "https://www.fs.usda.gov/mthood"
+      }
+    ]
+  }
+}

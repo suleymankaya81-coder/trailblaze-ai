@@ -1,0 +1,95 @@
+{
+  "slug": "beavers-bend",
+  "headline": "Oklahoma State Park Parking and Lodging Permits",
+  "reservation": "Beavers Bend requires a paid parking permit for all vehicles, which can be purchased via a mobile app on-site or online. Lodge and cabin reservations frequently sell out months in advance; verify current booking windows on the Oklahoma State Parks portal.",
+  "source_url": "https://www.travelok.com/state-parks/beavers-bend-state-park",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Rivers and Pines",
+        "start": "Suggested: 9 AM from Broken Bow",
+        "stops": [
+          {
+            "name": "Mountain Fork River",
+            "detail": "Observe the trout-rich waters below the dam where the river winds through tall pines."
+          },
+          {
+            "name": "Forest Heritage Center",
+            "detail": "Learn about the history of the forest and the specific timber ecology of southeastern Oklahoma."
+          }
+        ],
+        "driving": "Allow 20 minutes from Broken Bow; park roads are paved but narrow.",
+        "note": "Water levels in the river fluctuate based on scheduled dam releases; check local notices."
+      },
+      {
+        "title": "Broken Bow Lake Vistas",
+        "start": "Suggested: 8:30 AM from Hochatown",
+        "stops": [
+          {
+            "name": "Stephens Gap",
+            "detail": "Access the shoreline for views of the deep water and islands within the reservoir."
+          },
+          {
+            "name": "Skyline Trail",
+            "detail": "Hike a portion of this challenging trail for elevated views of the Lower Mountain Fork."
+          }
+        ],
+        "driving": "Local driving between Hochatown and lake access points takes roughly 15 minutes.",
+        "note": "Trails can be rocky and steep; allow more time than mileage suggests for hiking."
+      },
+      {
+        "title": "Cedar Creek and Spills",
+        "start": "Suggested: 10 AM from park entrance",
+        "stops": [
+          {
+            "name": "Cedar Creek Golf Course Views",
+            "detail": "Enjoy the manicured landscape bordering the lake’s edge for a different perspective of the water."
+          },
+          {
+            "name": "Spillway Area",
+            "detail": "Visit the site where the lake transforms back into the river for dramatic rock formations."
+          }
+        ],
+        "driving": "Driving between the lodge and northern lake areas takes approximately 20 minutes.",
+        "note": "Parking at the spillway is limited during peak summer weekends."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Paid Parking Compliance",
+        "text": "Vehicle parking is managed through the Premium Parking app at all state park trailheads. Ensure you have the app downloaded before entering areas with limited signal."
+      },
+      {
+        "kind": "signal",
+        "title": "Forest Coverage",
+        "text": "Cellular reception is spotty within the deeper canyons of the Mountain Fork River. Use the Forest Heritage Center as a reliable point for emergency landline access."
+      },
+      {
+        "kind": "fuel",
+        "title": "Hochatown Services",
+        "text": "The town of Hochatown serves as the primary hub for fuel and groceries. There are no fueling stations within the state park boundaries."
+      },
+      {
+        "kind": "timing",
+        "title": "Autumn Foliage",
+        "text": "Peak colors typically occur in early to mid-November. Summer visits should account for high humidity and heat indexes often exceeding 95 degrees."
+      },
+      {
+        "kind": "access",
+        "title": "Dam Release Safety",
+        "text": "Sirens indicate water release from the Broken Bow Dam. Waders and swimmers must exit the river immediately when these signals are heard."
+      }
+    ],
+    "arrival": "Arrive via Texarkana (TXK), rent a vehicle, and drive two hours northwest. Broken Bow is the primary stop for groceries before entering Hochatown lodging.",
+    "vehicle": "Standard vehicles are suitable for the main park loop; high-clearance is only necessary for specific forestry roads outside the state park.",
+    "goldenHour": "The Mountain Fork River overlooks at sunset provide soft lighting through the loblolly pines, though canopy density varies.",
+    "sources": [
+      {
+        "label": "Oklahoma State Parks",
+        "url": "https://www.travelok.com/state-parks/beavers-bend-state-park"
+      }
+    ]
+  }
+}

@@ -39,6 +39,7 @@ import { lazy, Suspense, useEffect, useMemo, useRef, useState, type ReactNode } 
 import { ClientOnly } from "@tanstack/react-router";
 import { JumpBar, TripRadar, formatDrive } from "@/components/destination/TripRadar";
 import routes from "@/data/routes.json";
+import { TravelFlow, LocalIntel } from "@/components/destination/TravelFlow";
 
 const RoadTripMap = lazy(() => import("@/components/destination/RoadTripMap"));
 const ROUTES = routes as unknown as Record<string, [number, number][]>;
@@ -180,7 +181,7 @@ function DestinationPage() {
 
         <RentBeforeYouGo dest={dest} />
 
-        <TripFlow dest={dest} />
+        {dest.travelPlan ? <TravelFlow name={dest.name} plan={dest.travelPlan} /> : <TripFlow dest={dest} />}
 
         <RoadTrip dest={dest} ai={ai} />
 
@@ -987,8 +988,8 @@ function ServiceRow({ service, destinationSlug }: { service: OfferView; destinat
 function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
   const hasGeo =
     dest.lat != null && dest.lng != null && dest.airportLat != null && dest.airportLng != null;
-  const from: [number, number] | null = hasGeo ? [dest.airportLng!, dest.airportLat!] : null;
-  const to: [number, number] | null = hasGeo ? [dest.lng!, dest.lat!] : null;
+  const from: [number, number] | null = dest.airportLng != null && dest.airportLat != null ? [dest.airportLng, dest.airportLat] : null;
+  const to: [number, number] | null = dest.lng != null && dest.lat != null ? [dest.lng, dest.lat] : null;
   const route = ROUTES[dest.slug] ?? null;
   const directions = hasGeo
     ? `https://www.google.com/maps/dir/?api=1&origin=${dest.airportLat},${dest.airportLng}&destination=${dest.lat},${dest.lng}&travelmode=driving`
@@ -1003,7 +1004,7 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
           {from && to ? (
             <ClientOnly fallback={<Skeleton className="h-[300px] w-full" />}>
               <Suspense fallback={<Skeleton className="h-[300px] w-full" />}>
-                <RoadTripMap route={route} from={from} to={to} />
+                <RoadTripMap route={route} from={from} to={to} stops={dest.travelPlan?.markers} />
               </Suspense>
             </ClientOnly>
           ) : (
@@ -1040,7 +1041,7 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
             <Navigation className="h-4 w-4" /> Get directions
           </a>
           <p className="mt-2 text-center text-[11px] text-muted-foreground">
-            Download offline maps before you go — signal drops near the park.
+            Airport-to-destination drive; sightseeing stops are separate markers.
           </p>
           {nearbyStays.length > 0 && (
             <>
@@ -1063,7 +1064,7 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
         </div>
       </div>
 
-      <FieldIntel dest={dest} ai={ai} />
+      {dest.travelPlan ? <LocalIntel plan={dest.travelPlan} /> : <FieldIntel dest={dest} ai={ai} />}
     </section>
   );
 }

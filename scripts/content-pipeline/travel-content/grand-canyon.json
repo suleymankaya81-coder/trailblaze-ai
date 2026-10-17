@@ -1,0 +1,95 @@
+{
+  "slug": "grand-canyon",
+  "headline": "South Rim Entry and Shuttle Requirements",
+  "reservation": "While the park is open year-round, lodging inside the park and popular campgrounds like Mather require booking up to 15 months in advance. During peak seasons, vehicle access to Hermit Road is restricted to the park's shuttle bus system; check official schedules for current operational dates.",
+  "source_url": "https://www.nps.gov/grca/planyourvisit/reservations.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "The Vast Horizon",
+        "start": "Suggested: 8 AM from Tusayan",
+        "stops": [
+          {
+            "name": "Mather Point",
+            "detail": "Witness the classic expansive view near the main visitor center to orient yourself to the canyon's scale."
+          },
+          {
+            "name": "Yavapai Geology Museum",
+            "detail": "Learn about the distinct rock layers and the carving of the canyon through panoramic windows."
+          }
+        ],
+        "driving": "Allow 1 hour for park entry and parking; conditions vary with gate queues.",
+        "note": "Use the free shuttle buses to move between South Rim overlooks and avoid parking congestion."
+      },
+      {
+        "title": "Beneath the Rim",
+        "start": "Suggested: 7 AM from Grand Canyon Village",
+        "stops": [
+          {
+            "name": "Bright Angel Trail",
+            "detail": "Hike down to the 1.5-mile or 3-mile rest house for a perspective from within the canyon walls."
+          },
+          {
+            "name": "Trail of Time",
+            "detail": "Walk this paved rim section where every meter represents one million years of geologic history."
+          }
+        ],
+        "driving": "Minimal driving if staying in the village; shuttle transfers take roughly 20 minutes.",
+        "note": "Always allow twice as much time for the hike up as it took to hike down."
+      },
+      {
+        "title": "The Desert View Drive",
+        "start": "Suggested: 9 AM from Grand Canyon Village",
+        "stops": [
+          {
+            "name": "Grandview Point",
+            "detail": "Stop here for a view of the canyon's historic mining era and sweeping vistas of the eastern rim."
+          },
+          {
+            "name": "Desert View Watchtower",
+            "detail": "Examine the Mary Colter-designed architecture and see the Colorado River turning north."
+          }
+        ],
+        "driving": "Allow 3–4 hours for the round-trip drive to Desert View; conditions vary.",
+        "note": "Desert View Drive is the only road providing a view of the river from the South Rim without hiking."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Visitor Center Congestion",
+        "text": "Lots 1 through 4 near the visitor center typically fill by 10 AM during the summer. Use the Tusayan Lookout Studio parking if staying outside the park and take the shuttle in."
+      },
+      {
+        "kind": "signal",
+        "title": "Village vs. Rim Connectivity",
+        "text": "Wi-Fi and cellular signals are strongest near the lodges in Grand Canyon Village but fade rapidly on the trails. Do not rely on digital maps once you descend below the rim."
+      },
+      {
+        "kind": "fuel",
+        "title": "Strategic Fueling",
+        "text": "Gas is available in Tusayan and at Desert View, but not within the main Village residential area. Check your levels before starting the 25-mile Desert View Drive."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Trail Hazards",
+        "text": "Upper sections of the Bright Angel Trail can remain icy through April despite warm temperatures at the bottom. Check the Backcountry Information Center for current trail conditions."
+      },
+      {
+        "kind": "access",
+        "title": "Hermit Road Restrictions",
+        "text": "Private vehicles are prohibited on Hermit Road from March 1 to November 30. During this window, visitors must use the Red Route shuttle or walk/cycle the greenway."
+      }
+    ],
+    "arrival": "Fly into Flagstaff (FLG) or Phoenix (PHX), rent a car, and stop for major supplies in Flagstaff or Williams before the final drive north.",
+    "vehicle": "Standard vehicles are perfect for the South Rim; large RVs should verify parking limitations at specific scenic overlooks like Lipan Point.",
+    "goldenHour": "Hopi Point is a traditional favorite for sunset, though crowds are significant; Yaki Point offers a quieter alternative.",
+    "sources": [
+      {
+        "label": "Grand Canyon National Park",
+        "url": "https://www.nps.gov/grca/index.htm"
+      }
+    ]
+  }
+}

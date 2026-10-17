@@ -1,0 +1,95 @@
+{
+  "slug": "denali-national-park",
+  "headline": "Park Road Transit and Kennel Demonstration Bookings",
+  "reservation": "Access beyond Mile 15 of the Park Road is restricted to official transit and tour buses; reservations should be made months in advance. Campground stays and backcountry permits require specific orientations and official check-ins at the Visitor Center; verify current road construction limits via NPS.",
+  "source_url": "https://www.nps.gov/dena",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Interior Transit",
+        "start": "Suggested: 7:30 AM from Denali Visitor Center",
+        "stops": [
+          {
+            "name": "Park Road Transit Bus",
+            "detail": "Take the official bus into the park interior to scan for grizzly bears, moose, and caribou."
+          },
+          {
+            "name": "Savage River",
+            "detail": "Walk the loop trail at Mile 15, the furthest point accessible by private vehicle."
+          }
+        ],
+        "driving": "Allow 4–8 hours for bus transit; road conditions and wildlife sightings dictate the pace.",
+        "note": "Pack all food and water as there are no concessions deep inside the park."
+      },
+      {
+        "title": "Tundra and History",
+        "start": "Suggested: 9 AM from Healy",
+        "stops": [
+          {
+            "name": "Denali Sled Dog Kennels",
+            "detail": "Attend a ranger-led demonstration of the only working sled dog team in a US National Park."
+          },
+          {
+            "name": "Horseshoe Lake Trail",
+            "detail": "Hike through the boreal forest to a lake frequently visited by local beaver colonies."
+          }
+        ],
+        "driving": "Allow 40–60 minutes; wildlife crossings frequently slow traffic near the entrance.",
+        "note": "Kennel demonstrations are seasonal; confirm the daily schedule at the visitor center."
+      },
+      {
+        "title": "Alpine Perspectives",
+        "start": "Suggested: 8:30 AM from Entrance Area",
+        "stops": [
+          {
+            "name": "Mount Healy Overlook",
+            "detail": "Trek upwards for a bird's-eye view of the Nenana River valley and the outer ridges."
+          },
+          {
+            "name": "Murie Science and Learning Center",
+            "detail": "Explore exhibits on subarctic ecology and the park's ongoing biological research."
+          }
+        ],
+        "driving": "Allow 20–30 minutes local travel; road closures may affect access to specific trailheads.",
+        "note": "Uphill trails can be strenuous; allow extra time for weather-related pace changes."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Visitor Center Hub",
+        "text": "The main visitor center lot is the primary hub for bus departures; arrive 30 minutes before your boarding time."
+      },
+      {
+        "kind": "signal",
+        "title": "Extreme Disconnection",
+        "text": "Cell service ends shortly after the park entrance; satellite communication is recommended for backcountry travelers."
+      },
+      {
+        "kind": "fuel",
+        "title": "Healy Supply Point",
+        "text": "Healy is the last reliable source for fuel and groceries north of the park; plan your tank accordingly."
+      },
+      {
+        "kind": "timing",
+        "title": "The 30 Percent Club",
+        "text": "The mountain is often obscured by clouds; stay multiple days to increase your chances of a sighting."
+      },
+      {
+        "kind": "access",
+        "title": "Road Landslides",
+        "text": "Check official updates for the Pretty Rocks landslide status, which affects access to the park's western reaches."
+      }
+    ],
+    "arrival": "Pick up rental in Fairbanks and drive south on the Parks Highway; stock up on bear-safe food storage in town.",
+    "vehicle": "Standard vehicles are limited to the first 15 miles of the road; RVs should check height clearances for campgrounds.",
+    "goldenHour": "Stony Hill Overlook is a classic viewpoint for the mountain, provided cloud cover allows; season-dependent.",
+    "sources": [
+      {
+        "label": "National Park Service",
+        "url": "https://www.nps.gov/dena"
+      }
+    ]
+  }
+}

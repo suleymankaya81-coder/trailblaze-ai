@@ -1,0 +1,95 @@
+{
+  "slug": "dry-tortugas-national-park",
+  "headline": "Mandatory Ferry and Seaplane Transportation Booking",
+  "reservation": "Access requires a reservation with the official ferry or seaplane concessionaire, often booked months in advance. Camping permits are extremely limited and must be secured via the official ferry provider's booking system. Direct park entry fees are separate from transport; check the official NPS site for current fee structures.",
+  "source_url": "https://www.nps.gov/drto/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Fortress in the Gulf",
+        "start": "Suggested: 7 AM at the Key West Ferry Terminal",
+        "stops": [
+          {
+            "name": "Fort Jefferson",
+            "detail": "Tour the massive 19th-century coastal fortress and learn about its role as a Civil War prison."
+          },
+          {
+            "name": "Moat Wall Walk",
+            "detail": "Walk the perimeter of the fort to see the engineering of the sea wall and clear turquoise waters."
+          }
+        ],
+        "driving": "Allow 2.5 hours by ferry or 40 minutes by seaplane; maritime conditions vary.",
+        "note": "There are no stores or water on the island; you must bring all food and drink."
+      },
+      {
+        "title": "Coral Reefs and Marine Life",
+        "start": "Suggested: 9 AM from the Garden Key Dock",
+        "stops": [
+          {
+            "name": "South Coaling Dock Ruins",
+            "detail": "Snorkel around the submerged pilings to see vibrant corals and schools of tropical fish."
+          },
+          {
+            "name": "Garden Key Beaches",
+            "detail": "Swim in the protected shallow waters or relax on the remote white sands near the fort walls."
+          }
+        ],
+        "driving": "Walking only; the entire developed area of Garden Key is accessible on foot.",
+        "note": "Use only reef-safe sunscreen to protect the delicate marine ecosystem."
+      },
+      {
+        "title": "Avian Observation and Isolation",
+        "start": "Suggested: 8 AM from the Fort Jefferson Parade Ground",
+        "stops": [
+          {
+            "name": "Bush Key",
+            "detail": "Observe nesting Sooty Terns and Brown Noddies from the boundary line (seasonal closures apply)."
+          },
+          {
+            "name": "Fort Jefferson Ramparts",
+            "detail": "Walk the upper level for bird's-eye views of the surrounding keys and the vast Gulf of Mexico."
+          }
+        ],
+        "driving": "Walking only; Bush Key access is strictly limited to the shoreline path when open.",
+        "note": "Bush Key is seasonally closed for nesting; check current status at the Visitor Center."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Key West Terminal Logistics",
+        "text": "Parking in downtown Key West is expensive and limited. Use long-term municipal lots or hotel parking and arrive at the ferry terminal at least 60 minutes before departure."
+      },
+      {
+        "kind": "signal",
+        "title": "Complete Digital Disconnection",
+        "text": "There is no cell service or public Wi-Fi on Garden Key. Inform others of your itinerary before leaving the mainland and carry physical copies of permits."
+      },
+      {
+        "kind": "fuel",
+        "title": "Personal Hydration Requirements",
+        "text": "The park provides no fresh water. Day visitors must utilize ferry supplies; campers must carry a minimum of two gallons per person per day."
+      },
+      {
+        "kind": "timing",
+        "title": "Transportation Windows",
+        "text": "Ferry and seaplane schedules are strictly fixed. Missing the afternoon departure requires an emergency stay; check-in times at Key West are firm."
+      },
+      {
+        "kind": "access",
+        "title": "Marine Weather Impact",
+        "text": "High winds and rough seas can lead to same-day cancellations of all transport. Winter cold fronts and summer tropical systems frequently alter the schedule."
+      }
+    ],
+    "arrival": "Fly into Key West International Airport (EYW). Stay in Key West the night before your trip to ensure an on-time morning arrival at the dock.",
+    "vehicle": "No vehicles are permitted in the park; transportation is by boat or seaplane only.",
+    "goldenHour": "The fort's western ramparts for sunset, available exclusively to permitted overnight campers after the ferry departs.",
+    "sources": [
+      {
+        "label": "National Park Service - Dry Tortugas",
+        "url": "https://www.nps.gov/drto/planyourvisit/index.htm"
+      }
+    ]
+  }
+}

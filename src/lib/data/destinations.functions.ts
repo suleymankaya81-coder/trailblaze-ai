@@ -3,6 +3,7 @@ import { z } from "zod";
 
 import { supabase } from "@/integrations/supabase/client";
 import type { Tables } from "@/integrations/supabase/types";
+import { parseTravelPlan, type TravelPlan } from "./travelPlan";
 
 export type OfferView = {
   id: string;
@@ -52,6 +53,7 @@ export type DestinationView = {
   permitHeadline: string | null;
   permitNote: string | null;
   permitSourceUrl: string | null;
+  travelPlan: TravelPlan | null;
   airportCode: string | null;
   airportName: string | null;
   airportLat: number | null;
@@ -183,6 +185,7 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       permitHeadline: dest.permit_headline,
       permitNote: dest.permit_note,
       permitSourceUrl: dest.permit_source_url,
+      travelPlan: parseTravelPlan(dest.travel_plan),
       airportCode: dest.nearest_airport_code,
       airportName: dest.nearest_airport_name,
       airportLat: dest.airport_lat,

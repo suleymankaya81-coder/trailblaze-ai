@@ -1,0 +1,99 @@
+{
+  "slug": "niagara-falls",
+  "headline": "Coordinate State Park Access and Seasonal Boat Tickets",
+  "reservation": "Niagara Falls State Park entry is generally open, but specific attractions like Maid of the Mist and Cave of the Winds require timed tickets; check official New York State Park sites for current seasonal availability. Lodging within the city or nearby Lewiston should be secured well in advance for summer visits. Parking at major overlooks is a separate fee-based system with fluctuating demand.",
+  "source_url": "https://www.niagarafallsstatepark.com",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Waterfalls and Island Walkways",
+        "start": "Suggested: 8:30 AM from Niagara Falls, NY",
+        "stops": [
+          {
+            "name": "Prospect Point",
+            "detail": "Experience the classic view of the American Falls and the primary boarding area for the Maid of the Mist."
+          },
+          {
+            "name": "Goat Island",
+            "detail": "Walk the paths to Terrapin Point for views of the Horseshoe Falls and Luna Island for the Bridal Veil Falls."
+          }
+        ],
+        "driving": "Walking destination; allow 15 minutes for local transfers between parking lots.",
+        "note": "Expect significant mist at Terrapin Point; waterproof layers are recommended even without a boat tour."
+      },
+      {
+        "title": "The Niagara Gorge and Rapids",
+        "start": "Suggested: 9 AM from the Visitor Center",
+        "stops": [
+          {
+            "name": "Cave of the Winds",
+            "detail": "Descend via elevator to the 'Hurricane Deck' for a close-up experience near the base of the Bridal Veil Falls."
+          },
+          {
+            "name": "Whirlpool State Park",
+            "detail": "View the dramatic river bend and class VI rapids from the gorge rim overlooks."
+          }
+        ],
+        "driving": "Allow 20 minutes for the drive downstream to the Whirlpool area; conditions vary.",
+        "note": "Gorge trails involve steep stairs and can be slippery; check current trail status at the trailhead."
+      },
+      {
+        "title": "History and Lake Ontario Views",
+        "start": "Suggested: 9 AM from Lewiston",
+        "stops": [
+          {
+            "name": "Old Fort Niagara",
+            "detail": "Explore the 18th-century stone fortress situated where the Niagara River meets Lake Ontario."
+          },
+          {
+            "name": "Devil's Hole State Park",
+            "detail": "Stop for a final look at the lower gorge and the river’s path toward the Great Lakes."
+          }
+        ],
+        "driving": "Allow 40 minutes for the return trip from Youngstown to the main park area.",
+        "note": "Fort Niagara is a separate admission site; verify daily operating hours before arrival."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Park Lot Availability",
+        "text": "Lot 1 near Prospect Point fills early; use Lot 2 on Goat Island or the Niagara Scenic Trolley for easier access. Street parking in the city is metered and strictly enforced."
+      },
+      {
+        "kind": "signal",
+        "title": "Border Roaming",
+        "text": "Cellular devices often connect to Canadian towers near the falls, potentially incurring roaming charges. Check your carrier plan before using data along the river gorge."
+      },
+      {
+        "kind": "fuel",
+        "title": "City Services",
+        "text": "Gas stations are plentiful in the city of Niagara Falls and along the route to Buffalo. Options become fewer once you enter the immediate State Park boundaries."
+      },
+      {
+        "kind": "timing",
+        "title": "Attraction Queues",
+        "text": "Mid-morning is the peak arrival time for the Maid of the Mist. Consider early morning or late afternoon slots to reduce wait times at the elevator banks."
+      },
+      {
+        "kind": "access",
+        "title": "Seasonal Walkways",
+        "text": "The seasonal decks at Cave of the Winds are partially dismantled in winter. Always check the official park website for the exact dates these attractions fully open."
+      }
+    ],
+    "arrival": "Fly into Buffalo Niagara (BUF) or Niagara Falls (IAG); collect your vehicle and stock up on supplies in the suburban commercial districts before entering the park zone.",
+    "vehicle": "Standard passenger cars are ideal; RVs must use designated oversized parking in Lot 3, which is limited.",
+    "goldenHour": "Terrapin Point offers a view of the mist catching the light at sunset, though visibility depends on spray density.",
+    "sources": [
+      {
+        "label": "New York State Parks",
+        "url": "https://parks.ny.gov"
+      },
+      {
+        "label": "Old Fort Niagara Official Site",
+        "url": "https://www.oldfortniagara.org"
+      }
+    ]
+  }
+}

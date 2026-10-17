@@ -1,0 +1,95 @@
+{
+  "slug": "jackson-hole",
+  "headline": "Distinguish Town Lodging from National Park Camping",
+  "reservation": "Reservations for lodging in Teton Village or Jackson are separate from National Park Service campground bookings. Grand Teton campgrounds utilize a rolling window on a centralized federal platform, while private resorts manage their own inventories. Always verify if your specific dates require a backcountry permit for overnight stays.",
+  "source_url": "https://www.nps.gov/grte/planyourvisit/permits.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Valley Scenic Corridor",
+        "start": "Suggested: 8 AM from Teton Village",
+        "stops": [
+          {
+            "name": "Taggart Lake",
+            "detail": "Hike through sagebrush flats and aspen groves to reach a clear glacial lake at the foot of the Grand Teton."
+          },
+          {
+            "name": "Oxbow Bend",
+            "detail": "Observe the slow-moving section of the Snake River where Mount Moran reflects in the water and wildlife may be present near the banks."
+          }
+        ],
+        "driving": "Allow 3 hours for the valley traverse; conditions vary",
+        "note": "Expect slower speeds near the Moose-Wilson road due to narrow lanes and potential wildlife sightings."
+      },
+      {
+        "title": "High Elevation Views",
+        "start": "Suggested: 9:30 AM from Teton Village",
+        "stops": [
+          {
+            "name": "Jackson Hole Mountain Resort Aerial Tram",
+            "detail": "Ride to the summit of Rendezvous Mountain for 360-degree views of the valley and the southern Tetons."
+          },
+          {
+            "name": "Corbet's Cabin",
+            "detail": "Visit this high-altitude landmark at the tram summit for a unique perspective on the surrounding granite peaks."
+          }
+        ],
+        "driving": "Minimal driving if staying in Teton Village; allow for walking to base",
+        "note": "Tram operations are seasonal and highly dependent on wind and weather conditions."
+      },
+      {
+        "title": "Historical Vistas and River Flats",
+        "start": "Suggested: 8:30 AM from Jackson",
+        "stops": [
+          {
+            "name": "Menors Ferry Historic District",
+            "detail": "Learn about 19th-century river crossings and visit the Chapel of the Transfiguration for its framed mountain view."
+          },
+          {
+            "name": "Blacktail Ponds Overlook",
+            "detail": "Scan the marshy bottomlands for moose or waterfowl during the quieter morning hours."
+          }
+        ],
+        "driving": "Allow 1.5 hours for local stops; conditions vary",
+        "note": "Check official maps for the seasonal closure status of any secondary gravel access roads."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Village and Park Limits",
+        "text": "Teton Village offers structured parking but can fill during peak event weekends or winter ski days. In the park, parking in non-designated roadside areas is strictly prohibited to protect vegetation."
+      },
+      {
+        "kind": "signal",
+        "title": "Digital Preparedness",
+        "text": "Expect total loss of signal in the canyons and near the base of the peaks. Use GPS-enabled maps that do not require data to navigate the trail networks."
+      },
+      {
+        "kind": "fuel",
+        "title": "Valley Logistics",
+        "text": "The distance between the town of Jackson and the northern park boundary at Signal Mountain is significant. Top off your fuel in Jackson or Wilson before starting a full day of park exploration."
+      },
+      {
+        "kind": "timing",
+        "title": "Mountain Weather Pacing",
+        "text": "Afternoon thunderstorms are common in July and August. Plan to be off high ridges and open water before midday to avoid lightning risks."
+      },
+      {
+        "kind": "access",
+        "title": "Moose-Wilson Road Restrictions",
+        "text": "This corridor is often subject to construction or wildlife-related closures. Check the current status at the Moose Entrance Station before attempting to use it as a throughway."
+      }
+    ],
+    "arrival": "Land at JAC and pick up your vehicle; stop in the town of Jackson for bear spray and groceries before heading to Teton Village or park lodges.",
+    "vehicle": "SUVs are popular but not required for paved park roads; check with rental agencies regarding the use of 4WD on Forest Service access routes.",
+    "goldenHour": "Signal Mountain Summit offers a panoramic sunset view of the entire range, provided the road is clear of snow.",
+    "sources": [
+      {
+        "label": "Grand Teton National Park Official Site",
+        "url": "https://www.nps.gov/grte/index.htm"
+      }
+    ]
+  }
+}

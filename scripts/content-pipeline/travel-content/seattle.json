@@ -1,0 +1,95 @@
+{
+  "slug": "seattle",
+  "headline": "Ferry Reservations and Park Passes",
+  "reservation": "Vehicle reservations are highly recommended for the Washington State Ferry routes to the San Juan Islands and Sidney, B.C.; the Bainbridge ferry is first-come, first-served. Discovery Park and other urban green spaces do not require entry permits, but regional state parks require a Discover Pass. Check the official WSDOT site for real-time ferry terminal wait times.",
+  "source_url": "https://wsdot.wa.gov/travel/washington-state-ferries",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Puget Sound and Urban Islands",
+        "start": "Suggested: 9 AM from Downtown",
+        "stops": [
+          {
+            "name": "Pike Place Market",
+            "detail": "Wander the historic multi-level market to see the fishmongers and local artisan stalls."
+          },
+          {
+            "name": "Bainbridge Island Ferry",
+            "detail": "Board at Pier 52 for a crossing that offers a classic view of the Seattle skyline and Olympic Mountains."
+          }
+        ],
+        "driving": "Walking and local ferry transfer; allow 4 hours total.",
+        "note": "Ferry schedules vary by season and day of the week; check the terminal monitors."
+      },
+      {
+        "title": "Coastal Forests and Locks",
+        "start": "Suggested: 8:30 AM from Downtown",
+        "stops": [
+          {
+            "name": "Discovery Park",
+            "detail": "Hike the loop trail through meadows to the West Point Lighthouse for saltwater views."
+          },
+          {
+            "name": "Ballard Locks",
+            "detail": "Watch boats transition between fresh and salt water and observe salmon in the fish ladder."
+          }
+        ],
+        "driving": "Allow 1 hour for city traffic; conditions vary.",
+        "note": "The walk to the lighthouse involves a significant elevation change back to the parking lot."
+      },
+      {
+        "title": "Mountain Foothills and Lakes",
+        "start": "Suggested: 8 AM from Downtown",
+        "stops": [
+          {
+            "name": "Snoqualmie Falls",
+            "detail": "View the powerful 268-foot waterfall from the upper and lower observation decks."
+          },
+          {
+            "name": "Lake Union",
+            "detail": "Explore the urban waterway by kayak to see floating homes and seaplanes."
+          }
+        ],
+        "driving": "Allow 1.5 to 2 hours for the I-90 corridor; conditions vary.",
+        "note": "Snoqualmie Falls parking can be limited on weekends; use the overflow lots if necessary."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Urban Trailhead Constraints",
+        "text": "Parking at Discovery Park's visitor center is limited; the lower beach lot requires a special permit for those with mobility needs. Pike Place Market parking is expensive; consider public transit or nearby garage structures."
+      },
+      {
+        "kind": "signal",
+        "title": "City and Sound Coverage",
+        "text": "Signal is excellent throughout Seattle and on the ferry routes to Bainbridge. However, if driving east into the Cascade foothills toward Snoqualmie, expect intermittent coverage in deep river valleys."
+      },
+      {
+        "kind": "fuel",
+        "title": "Urban Refueling Stations",
+        "text": "Fuel is widely available throughout the city, though stations are fewer in the dense downtown core. Fill up in neighborhoods like Ballard or SoDo before heading out on longer day trips to the mountains."
+      },
+      {
+        "kind": "timing",
+        "title": "Salmon Migration Windows",
+        "text": "The fish ladder at the Ballard Locks is most active from July through September. Check the visitor center for daily migration counts during the peak summer months."
+      },
+      {
+        "kind": "access",
+        "title": "Regional Park Passes",
+        "text": "A Discover Pass is required for vehicle access to Washington State Parks like Bridle Trails or Saint Edward. City-managed parks like Discovery Park are free to enter but have strictly enforced closing times at dusk."
+      }
+    ],
+    "arrival": "Pick up rental at BFI or SEA; drive into the city for hotel check-in before exploring the waterfront on foot.",
+    "vehicle": "A standard car is sufficient for city and foothill travel; check ferry height restrictions if using a high-roof van.",
+    "goldenHour": "Elliott Bay Park for sunset, looking across the Sound toward the Olympic Peninsula, with lighting dependent on Pacific cloud cover.",
+    "sources": [
+      {
+        "label": "City of Seattle Parks",
+        "url": "https://www.seattle.gov/parks"
+      }
+    ]
+  }
+}

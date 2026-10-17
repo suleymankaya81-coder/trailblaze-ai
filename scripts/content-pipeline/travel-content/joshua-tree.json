@@ -1,0 +1,95 @@
+{
+  "slug": "joshua-tree",
+  "headline": "Campground Reservations and Entry Fee Details",
+  "reservation": "Joshua Tree National Park requires a park pass for entry, which can be purchased at stations or online. Most campgrounds require reservations through Recreation.gov months in advance during the October–May peak season; first-come, first-served sites are extremely limited and typically fill by Thursday for the weekend.",
+  "source_url": "https://www.nps.gov/jotr/planyourvisit/fees.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Boulders and High Desert Overlooks",
+        "start": "Suggested: 8 AM from Joshua Tree Village",
+        "stops": [
+          {
+            "name": "Hidden Valley Loop",
+            "detail": "Walk the one-mile trail enclosed by massive rock walls to see a variety of desert plants and monzogranite formations."
+          },
+          {
+            "name": "Keys View",
+            "detail": "Drive to the crest of the Little San Bernardino Mountains for a view of the San Andreas Fault and Coachella Valley."
+          }
+        ],
+        "driving": "Allow 1.5 hours for park transit; roads are paved but speed limits are low",
+        "note": "Hidden Valley parking is often at capacity by 10 AM; have a backup stop like Quail Springs ready."
+      },
+      {
+        "title": "Historical Water and Desert Peaks",
+        "start": "Suggested: 7:30 AM from Twentynine Palms",
+        "stops": [
+          {
+            "name": "Barker Dam",
+            "detail": "Observe the seasonal water tank and petroglyphs on a 1.1-mile loop; water levels depend entirely on recent rainfall."
+          },
+          {
+            "name": "Ryan Mountain",
+            "detail": "Climb 1,000 feet for a central view of the park's rock piles; this trail offers no shade and requires significant water."
+          }
+        ],
+        "driving": "Allow 1 hour total travel; focus on the Park Boulevard corridor",
+        "note": "Do not attempt Ryan Mountain if temperatures exceed 90°F (32°C); there is high risk of heat exhaustion."
+      },
+      {
+        "title": "The Transition Zone and Cholla Gardens",
+        "start": "Suggested: 9 AM from Yucca Valley",
+        "stops": [
+          {
+            "name": "Cholla Cactus Garden",
+            "detail": "Walk the boardwalk through a dense stand of 'jumping' cholla; stay on the path to avoid painful spines."
+          },
+          {
+            "name": "Arch Rock",
+            "detail": "A short hike from the Twin Tanks or White Tank area to view a natural granite span and surrounding boulders."
+          }
+        ],
+        "driving": "Allow 2 hours; the drive to the southern Cottonwood area is longer than the northern loops",
+        "note": "Bee activity can be high near moisture sources and certain flowering plants; use caution if allergic."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead Congestion",
+        "text": "Parking at popular spots like Skull Rock and Barker Dam is extremely limited. If a lot is full, move to the next destination rather than parking on fragile desert vegetation."
+      },
+      {
+        "kind": "signal",
+        "title": "No In-Park Connectivity",
+        "text": "Cell service ends shortly after passing the entrance stations. Do not rely on GPS apps that require a live data connection for navigation."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Supply Only",
+        "text": "No gasoline, food, or water is available within the park. Refill all supplies in Yucca Valley or Twentynine Palms before entering."
+      },
+      {
+        "kind": "timing",
+        "title": "Stargazing and Dark Skies",
+        "text": "The park is an International Dark Sky Park; parking lots remain open for stargazing. Use red-filtered flashlights to preserve your night vision and that of others."
+      },
+      {
+        "kind": "access",
+        "title": "Entrance Station Queues",
+        "text": "The West Entrance (Joshua Tree) can have wait times exceeding one hour on spring weekends. Consider using the North Entrance in Twentynine Palms for faster access."
+      }
+    ],
+    "arrival": "Fly into Palm Springs (PSP), rent a vehicle, and purchase at least one gallon of water per person per day at a grocery store in Yucca Valley.",
+    "vehicle": "Standard vehicles are fine for paved roads; check rental contracts before driving on unpaved routes like Geology Tour Road.",
+    "goldenHour": "Keys View for sunset, looking across the Coachella Valley toward Mount San Jacinto.",
+    "sources": [
+      {
+        "label": "Joshua Tree National Park Official Site",
+        "url": "https://www.nps.gov/jotr/index.htm"
+      }
+    ]
+  }
+}

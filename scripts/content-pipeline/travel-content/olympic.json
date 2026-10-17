@@ -1,0 +1,95 @@
+{
+  "slug": "olympic",
+  "headline": "Manage Entry and Wilderness Stays via Official Park Windows",
+  "reservation": "Entry to popular corridors like the Hoh Rain Forest and Hurricane Ridge does not require a reservation, but visitor volume often leads to significant queues at entrance stations. Overnight stays at park lodges or campgrounds are a separate process, frequently requiring bookings months in advance during the peak summer season. Changing access systems for high-traffic areas are managed by the National Park Service; check the official site for current vehicle management policies and wilderness permit release dates.",
+  "source_url": "https://www.nps.gov/olym/planyourvisit/conditions.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Northern Peaks and Glacial Waters",
+        "start": "Suggested: 8 AM from Port Angeles",
+        "stops": [
+          {
+            "name": "Hurricane Ridge",
+            "detail": "Drive the winding mountain road for alpine meadows and views of the Olympic peaks, checking the visitor center for current trail snow levels."
+          },
+          {
+            "name": "Lake Crescent",
+            "detail": "Visit this deep, glacially carved lake for shoreline walks and the forested path toward the tiered Marymere Falls."
+          }
+        ],
+        "driving": "Allow 2 to 3 hours total driving; mountain road conditions vary significantly by weather.",
+        "note": "Mountain visibility can change rapidly; have a lowland forest plan ready as a backup."
+      },
+      {
+        "title": "Rainforest Moss and River Valleys",
+        "start": "Suggested: 7:30 AM from Forks",
+        "stops": [
+          {
+            "name": "Hoh Rain Forest",
+            "detail": "Walk the Hall of Mosses to see massive Sitka spruces and Western hemlocks draped in club moss and licorice ferns."
+          },
+          {
+            "name": "Hoh River Trail",
+            "detail": "Follow the flat river valley path to observe the scale of this temperate ecosystem and look for Roosevelt elk near the gravel bars."
+          }
+        ],
+        "driving": "Allow 2 hours for the round trip from Forks; entrance station delays may occur.",
+        "note": "Arrive early at the Hoh entrance to minimize time spent in vehicle queues during peak summer months."
+      },
+      {
+        "title": "Rugged Shores and Sea Stacks",
+        "start": "Suggested: 9 AM from Forks",
+        "stops": [
+          {
+            "name": "Rialto Beach",
+            "detail": "Witness the power of the Pacific among giant driftwood logs and sea stacks, keeping a safe distance from the surf."
+          },
+          {
+            "name": "Ruby Beach",
+            "detail": "Explore the tide pools and iconic rock formations where Cedar Creek meets the ocean at the park's western edge."
+          }
+        ],
+        "driving": "Allow 1.5 to 2 hours of transit; coastal roads are subject to seasonal fog.",
+        "note": "Check official tide tables before walking toward Hole-in-the-Wall; stay off driftwood when waves are high."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Corridor Constraints",
+        "text": "Parking lots at the Hoh Rain Forest and Hurricane Ridge frequently reach capacity by mid-morning in July and August. Staff may meter vehicle entry at the park boundary until spaces become available."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Gaps",
+        "text": "Cellular reception is extremely limited or non-existent in the Hoh valley and along remote coastal stretches. Download offline maps and official park documents before leaving Port Angeles or Forks."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Supplies",
+        "text": "Full service stations are concentrated in Port Angeles and Forks, with limited options as you move south toward Kalaloch. Ensure your tank is sufficient for the long, winding spur roads into the park interior."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Window",
+        "text": "Summer offers the most reliable access to high-elevation trails, though snow often persists on the ridges into late June. Spring and fall are ideal for rainforest walks when the moss is most vibrant and waterfalls are full."
+      },
+      {
+        "kind": "access",
+        "title": "Coastal Hazards",
+        "text": "Beach access can be restricted by high tides or storm-driven swells that move heavy logs unpredictably. Consult the official park site for trail damage reports after winter storms."
+      }
+    ],
+    "arrival": "Pick up your vehicle at Seattle-Tacoma International Airport (SEA) and allow for a 3-hour journey to Port Angeles, accounting for potential ferry wait times or Tacoma traffic. Stop in Port Angeles to stock up on groceries and visit the Wilderness Information Center before checking into your base.",
+    "vehicle": "Standard passenger cars are suitable for paved park roads, but check rental agreements for restrictions on unpaved forest service roads. RVs should verify length limits for the winding Hurricane Ridge Road and Hoh entrance.",
+    "goldenHour": "Hurricane Ridge offers expansive vistas for sunset, though mountain cloud cover is seasonal and unpredictable.",
+    "sources": [
+      {
+        "label": "Olympic National Park Official Site",
+        "url": "https://www.nps.gov/olym/index.htm"
+      }
+    ]
+  }
+}

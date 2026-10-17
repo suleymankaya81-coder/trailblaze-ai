@@ -1,0 +1,95 @@
+{
+  "slug": "channel-islands-national-park",
+  "headline": "Ferry and Camping Reservations Essential",
+  "reservation": "Entry to the park is free, but boat transportation via the official concessionaire, Island Packers, requires advance booking as seats are limited. Primitive camping permits must be secured through Recreation.gov prior to arrival. Systems vary by island; check the official NPS site for current pier closures and landing restrictions.",
+  "source_url": "https://www.nps.gov/chis/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Santa Cruz Sea Caves",
+        "start": "Suggested: 8 AM from Ventura Harbor",
+        "stops": [
+          {
+            "name": "Scorpion Anchorage",
+            "detail": "Landing point for kayaking the famous basalt sea caves and snorkeling through protected giant kelp forests."
+          },
+          {
+            "name": "Cavern Point",
+            "detail": "Hike the cliffside trail for expansive views of the Santa Barbara Channel and potential whale sightings."
+          }
+        ],
+        "driving": "Allow 1 hour for ferry crossing; sea conditions vary. No vehicles on the islands.",
+        "note": "Marine layer fog is common in spring; bring moisture-wicking layers for the boat ride."
+      },
+      {
+        "title": "Anacapa Ridges and Lighthouse",
+        "start": "Suggested: 9 AM from Oxnard",
+        "stops": [
+          {
+            "name": "Inspiration Point",
+            "detail": "Walk the iconic figure-eight loop to view the dramatic sea stacks and rugged western cliffs of the island."
+          },
+          {
+            "name": "Anacapa Island Lighthouse",
+            "detail": "View the historic 1932 beacon, which remains an active aid to navigation in the busy shipping channel."
+          }
+        ],
+        "driving": "Allow 1 hour for ferry crossing; local transfers by boat only.",
+        "note": "Access to the island requires climbing a steep ladder from the boat to the landing dock."
+      },
+      {
+        "title": "Wildlife and Endemic Species",
+        "start": "Suggested: 8:30 AM from Ventura",
+        "stops": [
+          {
+            "name": "Potato Harbor",
+            "detail": "A scenic overlook on Santa Cruz Island perfect for spotting the endemic Island Fox in the coastal sage scrub."
+          },
+          {
+            "name": "Santa Cruz Island Visitor Center",
+            "detail": "Learn about the complex restoration efforts and the history of the Chumash people at the Scorpion Ranch house."
+          }
+        ],
+        "driving": "Allow 1.5 hours for ferry return; dolphins are frequently spotted during the transit.",
+        "note": "Pack out all trash; there are no waste facilities or water sources on most island landing sites."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "Mandatory Boat Transport",
+        "text": "There are no bridges to the islands; you must use the official concessionaire or a private vessel. Check the NPS site for pier status, as winter swells frequently cause landing closures."
+      },
+      {
+        "kind": "fuel",
+        "title": "Zero Island Services",
+        "text": "No fuel, food, or water is sold on the islands. You must carry all necessary supplies, including potable water, from the mainland for the duration of your visit."
+      },
+      {
+        "kind": "parking",
+        "title": "Mainland Harbor Parking",
+        "text": "Free overnight parking is available at the Ventura and Oxnard harbors for ferry passengers. Arrive 45 minutes before departure to secure a spot during busy summer weekends."
+      },
+      {
+        "kind": "signal",
+        "title": "Island Isolation",
+        "text": "Cellular service is unreliable on the islands and non-existent in the sea caves. Inform a mainland contact of your return time before boarding the ferry."
+      },
+      {
+        "kind": "timing",
+        "title": "Whale Migration Windows",
+        "text": "Gray whales migrate between December and April, while Blue whales are seen in summer. Adjust your ferry transit expectations to allow for wildlife viewing stops."
+      }
+    ],
+    "arrival": "Pick up your rental at Santa Barbara Municipal Airport, drive 45-60 minutes to Ventura, and check in at the ferry office 45 minutes before departure.",
+    "vehicle": "Cars are for mainland use only; the islands are strictly pedestrian and require hiking between sites.",
+    "goldenHour": "Inspiration Point, Anacapa; best viewed during the clear skies of autumn after the marine layer dissipates.",
+    "sources": [
+      {
+        "label": "National Park Service",
+        "url": "https://www.nps.gov/chis/planyourvisit/island-transportation.htm"
+      }
+    ]
+  }
+}

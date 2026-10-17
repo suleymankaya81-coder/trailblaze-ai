@@ -1,0 +1,95 @@
+{
+  "slug": "delaware-beaches",
+  "headline": "Plan for State Park Entry and Coastal Parking Reservations",
+  "reservation": "Delaware State Parks require vehicle entrance fees; specific drive-on surf fishing permits are limited and managed via a seasonal lottery or cap. Popular beach towns like Rehoboth utilize metered parking systems that fluctuate in demand; always verify current access policies and permit requirements on the official Delaware State Parks website before arrival.",
+  "source_url": "https://destateparks.com",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Maritime History and Dunes",
+        "start": "Suggested: 9 AM from Lewes",
+        "stops": [
+          {
+            "name": "Cape Henlopen State Park",
+            "detail": "Visit the WWII observation tower for panoramic views and explore the Great Dune, the highest sand dune in the state."
+          },
+          {
+            "name": "Zwaanendael Museum",
+            "detail": "Learn about the region's Dutch colonial roots and maritime heritage in a building modeled after the Hoorn town hall."
+          }
+        ],
+        "driving": "Allow 30–60 minutes for local transit; conditions vary with summer congestion.",
+        "note": "State park entry points may reach capacity on holiday weekends."
+      },
+      {
+        "title": "Boardwalk Culture and Bays",
+        "start": "Suggested: 8:30 AM from Rehoboth Beach",
+        "stops": [
+          {
+            "name": "Rehoboth Beach Boardwalk",
+            "detail": "Walk the mile-long traditional wooden boardwalk for ocean views and local boutiques."
+          },
+          {
+            "name": "Rehoboth Bay",
+            "detail": "Access the calmer inland waters for kayaking or paddleboarding away from the Atlantic surf."
+          }
+        ],
+        "driving": "Allow 20–40 minutes; expect significant parking search times in town centers.",
+        "note": "Check local ordinances for seasonal dog and bicycle restrictions on the boardwalk."
+      },
+      {
+        "title": "Quiet Resorts and Inlet Views",
+        "start": "Suggested: 9 AM from Bethany Beach",
+        "stops": [
+          {
+            "name": "Delaware Seashore State Park",
+            "detail": "Walk the Indian River Inlet Bridge for views of the Atlantic meeting the inland bays."
+          },
+          {
+            "name": "Bethany Beach Nature Center",
+            "detail": "Explore forested wetlands and inland trails to see the local coastal ecology."
+          }
+        ],
+        "driving": "Allow 45–60 minutes; Highway 1 traffic varies significantly by time of day.",
+        "note": "Inlet areas can have high winds; check weather forecasts for bridge walking safety."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Metered Beach Access",
+        "text": "Rehoboth and Bethany utilize mobile-app based metering; expect lots to fill by mid-morning during peak summer months."
+      },
+      {
+        "kind": "signal",
+        "title": "Coastal Connectivity",
+        "text": "Cellular service is generally stable in towns but may become intermittent in the deep marsh areas of Prime Hook."
+      },
+      {
+        "kind": "fuel",
+        "title": "Highway 1 Services",
+        "text": "Fuel stations are frequent along the main Highway 1 corridor; services are more limited once inside State Park boundaries."
+      },
+      {
+        "kind": "timing",
+        "title": "Second Summer",
+        "text": "September offers warm water with fewer crowds; many seasonal concessions begin reducing hours after Labor Day."
+      },
+      {
+        "kind": "access",
+        "title": "State Park Permits",
+        "text": "Vehicle access to specific beach strands requires a surf fishing permit; pedestrians can access most areas via designated crossovers."
+      }
+    ],
+    "arrival": "Pick up rental at Ocean City (OCE) or arrive via Highway 1; Lewes offers a central base for historic district check-ins.",
+    "vehicle": "Standard cars are suitable for paved roads; check rental agreements for restrictions on unpaved park access or sand.",
+    "goldenHour": "The Point at Cape Henlopen offers expansive sunset views; specific timing varies by season.",
+    "sources": [
+      {
+        "label": "Delaware State Parks",
+        "url": "https://destateparks.com"
+      }
+    ]
+  }
+}

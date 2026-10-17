@@ -1,0 +1,99 @@
+{
+  "slug": "bear-lake",
+  "headline": "Regional Water and Camping Reservations",
+  "reservation": "State park entry and camping systems are managed by separate agencies in Utah and Idaho. Boat slip rentals and North Beach access often require advance booking during the summer Raspberry Days festival; check official state park sites for current vehicle entry systems.",
+  "source_url": "https://stateparks.utah.gov/parks/bear-lake/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Garden City and The Overlook",
+        "start": "Suggested: 9 AM from Logan",
+        "stops": [
+          {
+            "name": "Bear Lake Overlook",
+            "detail": "Pause at the summit of Highway 89 for the first elevated view of the lake's distinct turquoise water."
+          },
+          {
+            "name": "Garden City Bike Path",
+            "detail": "Walk or cycle the local path to get oriented with the town's small shops and famous raspberry shake stands."
+          }
+        ],
+        "driving": "Allow 1 hour from Logan; conditions in the canyon vary significantly with weather.",
+        "note": "Logan Canyon involves steep grades; ensure vehicle cooling systems are functional."
+      },
+      {
+        "title": "North Beach and Aquatic Exploration",
+        "start": "Suggested: 8:30 AM from Garden City",
+        "stops": [
+          {
+            "name": "North Beach State Park",
+            "detail": "Visit the Idaho side for its two-mile stretch of sandy shoreline and shallow wading areas."
+          },
+          {
+            "name": "Bear Lake Marina",
+            "detail": "Rent watercraft to view the limestone cliffs from the water where the color is most vibrant."
+          }
+        ],
+        "driving": "Local transfers between north and south shores take roughly 30 minutes.",
+        "note": "Afternoon winds can create choppy conditions; plan motorized boating for the morning."
+      },
+      {
+        "title": "Caves and Canyons",
+        "start": "Suggested: 9 AM from St. Charles",
+        "stops": [
+          {
+            "name": "Minnetonka Cave",
+            "detail": "Explore nine rooms of stalactites in this high-elevation cavern; bring a jacket for the constant 40-degree temperature."
+          },
+          {
+            "name": "Bear Lake National Wildlife Refuge",
+            "detail": "Observe migratory birds and local waterfowl in the marshlands at the north end of the lake."
+          }
+        ],
+        "driving": "Allow 45 minutes for the winding road into St. Charles Canyon.",
+        "note": "Closed-toe shoes are required for the cave's metal stairs and damp floors."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Beach Lot Capacity",
+        "text": "Parking at North Beach and Rendezvous Beach fills quickly on summer weekends. Arrive before mid-morning or utilize mid-week timing to avoid lot closures."
+      },
+      {
+        "kind": "signal",
+        "title": "Logan Canyon Connectivity",
+        "text": "Cellular service is unreliable along the Highway 89 corridor between Logan and Garden City. Download navigation maps before leaving the valley floor."
+      },
+      {
+        "kind": "fuel",
+        "title": "Summit Supply Check",
+        "text": "Garden City and Montpelier offer fuel, but no services exist within the 40-mile Logan Canyon stretch. Verify levels before beginning the mountain ascent."
+      },
+      {
+        "kind": "timing",
+        "title": "Raspberry Harvest",
+        "text": "Fresh local berries are typically only available in early August. Outside this window, shops use frozen stock for the famous shakes."
+      },
+      {
+        "kind": "access",
+        "title": "Seasonal Road Closures",
+        "text": "High-elevation roads like the route to Minnetonka Cave are typically inaccessible from November through May. Check Idaho forest service status for spring openings."
+      }
+    ],
+    "arrival": "Pick up rental at Ogden Hinckley (OGD), stock up on supplies in Logan, and proceed through Logan Canyon to Garden City.",
+    "vehicle": "A standard car is sufficient for paved highways, but an SUV is recommended for exploring canyon side roads; check rental terms for unpaved forest routes.",
+    "goldenHour": "Bear Lake Overlook at sunset offers the best light for capturing the water's transition to deep purple, depending on seasonal cloud cover.",
+    "sources": [
+      {
+        "label": "Utah State Parks",
+        "url": "https://stateparks.utah.gov/parks/bear-lake/"
+      },
+      {
+        "label": "Idaho State Parks",
+        "url": "https://parksandrecreation.idaho.gov/parks/bear-lake/"
+      }
+    ]
+  }
+}

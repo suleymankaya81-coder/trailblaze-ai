@@ -1,0 +1,95 @@
+{
+  "slug": "aspen",
+  "headline": "Plan Your Seasonal Mountain Access and Landmark Reservations",
+  "reservation": "Maroon Bells access requires advance shuttle or parking reservations during the peak season; this system is separate from local lodging. While the downtown area is open year-round, mountain lift operations and Independence Pass have specific seasonal windows. Check the White River National Forest and Roaring Fork Transportation Authority sites for the latest permit release dates.",
+  "source_url": "https://www.fs.usda.gov/whiteriver",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Maroon Bells and High Alpine Vistas",
+        "start": "Suggested: 8 AM from Downtown Aspen",
+        "stops": [
+          {
+            "name": "Maroon Lake",
+            "detail": "View the iconic twin peaks reflected in the water and access the surrounding trail network."
+          },
+          {
+            "name": "Silver Queen Gondola",
+            "detail": "Ascend Aspen Mountain for panoramic views of the Elk Range and high-altitude walking paths."
+          }
+        ],
+        "driving": "Allow 45–60 minutes including shuttle transfers; conditions vary by season",
+        "note": "Maroon Bells shuttles typically operate from late spring through autumn foliage."
+      },
+      {
+        "title": "River Valleys and Historic Corridors",
+        "start": "Suggested: 9:30 AM from Roaring Fork River",
+        "stops": [
+          {
+            "name": "Rio Grande Trail",
+            "detail": "Follow this gentle riverside path for sightings of local waterfowl and mountain scenery."
+          },
+          {
+            "name": "Ashcroft Ghost Town",
+            "detail": "Explore the preserved silver mining ruins located in the scenic Castle Creek Valley."
+          }
+        ],
+        "driving": "Allow 1 hour for local valley transit; conditions vary",
+        "note": "The Rio Grande Trail is multi-use; remain aware of cyclists and local wildlife."
+      },
+      {
+        "title": "Continental Divide and Downvalley Exploration",
+        "start": "Suggested: 9 AM from Independence Pass",
+        "stops": [
+          {
+            "name": "Independence Pass Overlook",
+            "detail": "Stand at the Continental Divide for views of the Sawatch Range at over 12,000 feet."
+          },
+          {
+            "name": "Grottos Trail",
+            "detail": "Visit the ice caves and erratic boulders along the Roaring Fork River."
+          }
+        ],
+        "driving": "Allow 2 hours for winding mountain roads; conditions vary",
+        "note": "Independence Pass is subject to seasonal closure; check road status before departure."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Downtown and Trailhead Limits",
+        "text": "Paid parking is standard in the Aspen core, while Maroon Bells requires a pre-booked permit. Use the free local shuttle service to reach popular trailheads when lots are full."
+      },
+      {
+        "kind": "signal",
+        "title": "Canyon and Pass Connectivity",
+        "text": "Cellular service is reliable in town but drops significantly on Independence Pass and deep within the Hunter Creek area. Download offline maps before leaving the Roaring Fork Valley floor."
+      },
+      {
+        "kind": "fuel",
+        "title": "Mountain Valley Supply",
+        "text": "Fuel is readily available in Aspen and Basalt, but no services exist on the long stretch over Independence Pass toward Twin Lakes. Ensure your tank is full before beginning high-elevation climbs."
+      },
+      {
+        "kind": "timing",
+        "title": "Afternoon Weather Patterns",
+        "text": "Summer afternoon thunderstorms are frequent above the treeline near the Elk Mountains. Aim to complete high-altitude hikes by midday to avoid lightning risks."
+      },
+      {
+        "kind": "access",
+        "title": "Seasonal Road Gates",
+        "text": "Independence Pass vehicle length is restricted to 35 feet; larger RVs must use alternative routes. Winter access to many trails requires snowshoes or skis as snow persists into June."
+      }
+    ],
+    "arrival": "Pick up your rental at Sardy Field (ASE) for a 5-minute drive into town. Basalt or Glenwood Springs serve as practical supply hubs for outdoor stays.",
+    "vehicle": "A standard vehicle is sufficient for town, but check rental agreements for unpaved mountain road restrictions.",
+    "goldenHour": "Independence Pass Overlook offers dramatic light, though high-altitude temperatures drop rapidly after sunset.",
+    "sources": [
+      {
+        "label": "White River National Forest",
+        "url": "https://www.fs.usda.gov/whiteriver"
+      }
+    ]
+  }
+}

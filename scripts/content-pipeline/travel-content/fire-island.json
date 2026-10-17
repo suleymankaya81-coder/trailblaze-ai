@@ -1,0 +1,95 @@
+{
+  "slug": "fire-island",
+  "headline": "Monitor National Seashore Ferry and Camping Schedules",
+  "reservation": "There are no general entry fees for Fire Island National Seashore, but ferries are privately operated and require tickets. Watch Hill camping and Otis Pike High Dunes wilderness permits must be reserved through Recreation.gov, often opening six months in advance. Because the island is car-free, all logistical planning must center on ferry schedules which vary by season and weather.",
+  "source_url": "https://www.nps.gov/fiis/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Sunken Forest and Sailors Haven",
+        "start": "Suggested: 9 AM from Sayville Ferry Terminal",
+        "stops": [
+          {
+            "name": "Sunken Forest",
+            "detail": "Walk the elevated boardwalk through a rare maritime holly forest protected by the dunes."
+          },
+          {
+            "name": "Sailors Haven Beach",
+            "detail": "Enjoy the Atlantic surf and the visitor center exhibits on barrier island ecology."
+          }
+        ],
+        "driving": "Walking and ferry only; allow 30 minutes for the ferry crossing.",
+        "note": "Sunken Forest boardwalk is narrow; stay on the path to protect fragile vegetation."
+      },
+      {
+        "title": "Lighthouse and Wilderness",
+        "start": "Suggested: 8:30 AM from Bay Shore Ferry Terminal",
+        "stops": [
+          {
+            "name": "Fire Island Lighthouse",
+            "detail": "Climb the historic tower for views stretching from the ocean to the New York City skyline."
+          },
+          {
+            "name": "Otis Pike High Dunes Wilderness",
+            "detail": "Explore the only federally designated wilderness in New York State via sandy trails."
+          }
+        ],
+        "driving": "Local transfer by water taxi or walking; check seasonal water taxi frequency.",
+        "note": "The wilderness area has no facilities; bring all necessary water and sun protection."
+      },
+      {
+        "title": "Watch Hill and Great South Bay",
+        "start": "Suggested: 10 AM from Patchogue Ferry Terminal",
+        "stops": [
+          {
+            "name": "Watch Hill Nature Trail",
+            "detail": "Observe migratory birds and local wildlife in the salt marshes and tidal flats."
+          },
+          {
+            "name": "Watch Hill Marina",
+            "detail": "Watch the sunset over the Great South Bay from the boardwalk at the island's widest point."
+          }
+        ],
+        "driving": "Walking only; allow 20 minutes to transition from ferry to trails.",
+        "note": "Ferry services to Watch Hill are strictly seasonal; verify the current schedule before travel."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Mainland Ferry Lots",
+        "text": "Parking at Bay Shore and Sayville ferry terminals is paid and fills early on summer weekends. Consider arriving by train to avoid long waits for parking spots."
+      },
+      {
+        "kind": "signal",
+        "title": "Island Connectivity",
+        "text": "Cell service is generally reliable near residential communities but can be weak in the High Dunes Wilderness. Carry a physical map when exploring remote beach sections."
+      },
+      {
+        "kind": "fuel",
+        "title": "Island Supplies",
+        "text": "There are no cars or gas stations on Fire Island. Groceries and supplies are significantly more expensive on the island; pack essentials before boarding the ferry."
+      },
+      {
+        "kind": "timing",
+        "title": "Last Ferry Awareness",
+        "text": "Missing the last ferry to the mainland will result in an expensive water taxi trip or an unplanned overnight stay. Always double-check the daily return schedule at the dock."
+      },
+      {
+        "kind": "access",
+        "title": "Pedestrian Boardwalks",
+        "text": "Bicycles are restricted in many areas and prohibited in the Sunken Forest. Most travel between communities is by foot on sandy paths or elevated wooden boardwalks."
+      }
+    ],
+    "arrival": "Arrive at ISP or the LIRR station and take a shuttle to the ferry terminal. Purchase ferry tickets and ensure all gear is manageable for a walk from the island dock to your stay.",
+    "vehicle": "Vehicles are prohibited on most of the island. Park your car at the mainland terminal and rely on ferries, water taxis, and walking for the duration of your visit.",
+    "goldenHour": "Fire Island Lighthouse offers a classic coastal sunset view, subject to seasonal tower access hours.",
+    "sources": [
+      {
+        "label": "National Park Service",
+        "url": "https://www.nps.gov/fiis/planyourvisit/index.htm"
+      }
+    ]
+  }
+}

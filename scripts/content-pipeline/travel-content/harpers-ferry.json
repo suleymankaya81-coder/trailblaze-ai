@@ -1,0 +1,95 @@
+{
+  "slug": "harpers-ferry",
+  "headline": "Check NPS Parking and Seasonal Shuttle Status",
+  "reservation": "Park entry requires a valid pass; visitors typically park at the Cavalier Heights Visitor Center to use the shuttle. While the town is accessible, specific glamping and historic lodging sites often book three to four months in advance. Always check the official National Park Service site for changing trail access or river conditions.",
+  "source_url": "https://www.nps.gov/hafe/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Rivers and Ridges",
+        "start": "Suggested: 8:30 AM from the Cavalier Heights Visitor Center",
+        "stops": [
+          {
+            "name": "Maryland Heights Overlook",
+            "detail": "Cross the Potomac footbridge for a strenuous climb that yields the most famous view of the river confluence."
+          },
+          {
+            "name": "C&O Canal Towpath",
+            "detail": "Enjoy a flat, shaded walk along the historic canal to decompress after the morning's steep ascent."
+          }
+        ],
+        "driving": "Allow 15 minutes for local transfers; conditions vary",
+        "note": "The footbridge shares space with active railroad tracks; remain within pedestrian barriers."
+      },
+      {
+        "title": "Heritage and Heights",
+        "start": "Suggested: 9 AM from Lower Town",
+        "stops": [
+          {
+            "name": "John Brown's Fort",
+            "detail": "Visit this pivotal Civil War landmark located in the heart of the 19th-century historic district."
+          },
+          {
+            "name": "Bolivar Heights Battlefield",
+            "detail": "Walk the grassy trails of this higher-elevation site for expansive views and military history."
+          }
+        ],
+        "driving": "Allow 20 minutes for shuttle or local driving; conditions vary",
+        "note": "Lower Town parking is extremely restricted; use the official park shuttle system."
+      },
+      {
+        "title": "Valley Vistas",
+        "start": "Suggested: 10 AM from Bolivar",
+        "stops": [
+          {
+            "name": "Murphy-Chambers Farm",
+            "detail": "Explore a quieter section of the park featuring river gorge views and layers of Civil War history."
+          },
+          {
+            "name": "Jefferson Rock",
+            "detail": "Follow the Appalachian Trail steps to the rock formation Thomas Jefferson described as worth a voyage across the Atlantic."
+          }
+        ],
+        "driving": "Allow 1 hour for the return trip to Hagerstown; conditions vary",
+        "note": "Stone steps near St. Peter’s Church can be slippery in humid or wet weather."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Cavalier Heights Hub",
+        "text": "Primary parking is located at the main visitor center; Lower Town spaces are largely reserved for residents. Shuttles run frequently but check seasonal schedules for the last return trip."
+      },
+      {
+        "kind": "signal",
+        "title": "Gap Coverage",
+        "text": "Cellular reception is often lost in the deep mountain gaps and along the river banks. Download navigation maps offline before leaving the Hagerstown or Frederick areas."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Service",
+        "text": "Fill your tank in Charles Town or Frederick before entering the immediate park vicinity. While local stations exist, options are more limited within the winding mountain roads."
+      },
+      {
+        "kind": "timing",
+        "title": "Midweek Advantage",
+        "text": "Weekends in spring and fall see high visitation at Maryland Heights; Tuesdays and Wednesdays offer quieter trails. Aim to arrive at the visitor center before 10 AM on Saturdays."
+      },
+      {
+        "kind": "access",
+        "title": "Uneven Terrain",
+        "text": "Historic Lower Town features original stone steps and steep grades that require stable footwear. Accessibility to certain river-level ruins may change based on Potomac water levels."
+      }
+    ],
+    "arrival": "Pick up your rental at Hagerstown (HGR) and stop in Frederick for supplies before the 60-minute drive to Harpers Ferry.",
+    "vehicle": "Standard vehicles are ideal for the paved roads; check rental agreements for restrictions on narrow mountain lanes.",
+    "goldenHour": "Jefferson Rock offers a historic perspective for sunset, though shadows fall early in the gorge during autumn.",
+    "sources": [
+      {
+        "label": "National Park Service",
+        "url": "https://www.nps.gov/hafe/planyourvisit/index.htm"
+      }
+    ]
+  }
+}

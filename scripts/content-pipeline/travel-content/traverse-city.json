@@ -1,0 +1,95 @@
+{
+  "slug": "traverse-city",
+  "headline": "Dune Permits and Peninsula Parking Constraints",
+  "reservation": "Visiting Sleeping Bear Dunes requires a National Park Entrance Pass, which must be displayed at the Dune Climb and Pierce Stocking Drive. Wine tasting rooms on the peninsulas often require advanced reservations for groups during the busy July harvest season. Campground sites at D.H. Day are highly competitive and require booking via the Recreation.gov portal.",
+  "source_url": "https://www.nps.gov/slbe/planyourvisit/fees.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Sand Bluffs and Lakeshore Views",
+        "start": "Suggested: 8 AM from Front Street",
+        "stops": [
+          {
+            "name": "The Dune Climb",
+            "detail": "Scale the massive sand hills for a view of Glen Lake; a physically demanding trek."
+          },
+          {
+            "name": "Pierce Stocking Scenic Drive",
+            "detail": "A 7-mile loop with designated overlooks providing the best vantage of Lake Michigan's bluffs."
+          }
+        ],
+        "driving": "Allow 45 minutes to reach the dunes; heavy traffic on M-22 is common.",
+        "note": "Stay on marked paths to prevent dune erosion and avoid the steep lake drop-off."
+      },
+      {
+        "title": "Peninsula Orchards and Vineyards",
+        "start": "Suggested: 10 AM from Grand Traverse Bay",
+        "stops": [
+          {
+            "name": "Mission Point Lighthouse",
+            "detail": "Located at the tip of Old Mission Peninsula, this historic site offers beach trails and lake views."
+          },
+          {
+            "name": "Old Mission Peninsula",
+            "detail": "Drive the rolling hills to visit local cherry stands and sample the region's agricultural output."
+          }
+        ],
+        "driving": "Allow 1 hour for the full peninsula loop; roads are narrow and winding.",
+        "note": "Cherry blossom peak is mid-May; harvest occurs in July."
+      },
+      {
+        "title": "Bay Navigation and Heritage",
+        "start": "Suggested: 9 AM from Downtown",
+        "stops": [
+          {
+            "name": "TART Trail",
+            "detail": "A paved multi-use trail perfect for cycling between the East and West Bay waterfronts."
+          },
+          {
+            "name": "Clinch Park",
+            "detail": "The city's central beach and marina area, offering swimming and a splash pad."
+          }
+        ],
+        "driving": "Allow 20 minutes for city transit; parking is the primary constraint.",
+        "note": "Walking is recommended within the downtown district to avoid garage wait times."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Downtown Capacity",
+        "text": "Front Street parking meters have strict time limits. Use the Larry C. Hardy or Old Town parking garages for long-duration stays."
+      },
+      {
+        "kind": "access",
+        "title": "National Lakeshore Fees",
+        "text": "Entry to the Dune Climb and Pierce Stocking Drive requires a park pass. Purchase these digitally or at the Philip A. Hart Visitor Center in Empire."
+      },
+      {
+        "kind": "timing",
+        "title": "The Cherry Window",
+        "text": "The National Cherry Festival in early July creates extreme demand for all local services. Visit in late August for the warmest lake temperatures and thinner crowds."
+      },
+      {
+        "kind": "signal",
+        "title": "Peninsula Shadows",
+        "text": "Cellular coverage is generally strong downtown but can drop significantly in the valleys of the Leelanau Peninsula. Download trails before leaving the city center."
+      },
+      {
+        "kind": "fuel",
+        "title": "Route Planning",
+        "text": "Fuel is widely available in Traverse City. Options become sparse once you travel north onto the tips of the peninsulas or deep into the National Lakeshore."
+      }
+    ],
+    "arrival": "Pick up rental at TVC and secure dining reservations downtown before driving to lakeside rentals or the Empire gateway.",
+    "vehicle": "Compact cars are easiest for peninsula parking; RVs may find M-22 turns and winery lots challenging.",
+    "goldenHour": "Sunset from the Lake Michigan Overlook on Pierce Stocking Drive is a seasonal highlight, requiring a park pass.",
+    "sources": [
+      {
+        "label": "Sleeping Bear Dunes NPS",
+        "url": "https://www.nps.gov/slbe/index.htm"
+      }
+    ]
+  }
+}

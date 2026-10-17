@@ -1,0 +1,95 @@
+{
+  "slug": "lake-george",
+  "headline": "State Campground and Island Use Permits",
+  "reservation": "New York State DEC manages most island camping and public beaches, requiring reservations months in advance for peak summer. Distinguish between mainland hotel bookings and specific permits needed for island day-use or dockage. Verify current site requirements through official DEC portals.",
+  "source_url": "https://www.dec.ny.gov/outdoor/24487.html",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Village Waterfront and Beach",
+        "start": "Suggested: 9:30 AM from Lake George Village",
+        "stops": [
+          {
+            "name": "Shepard Park",
+            "detail": "Walk the southern basin waterfront to orient yourself with the lake's scale."
+          },
+          {
+            "name": "Million Dollar Beach",
+            "detail": "Visit this state-managed beach for swimming and lakeside relaxation."
+          }
+        ],
+        "driving": "Local walking; conditions vary",
+        "note": "Parking at Million Dollar Beach is limited; arrive early during summer holidays."
+      },
+      {
+        "title": "Mountain Views and History",
+        "start": "Suggested: 8 AM from the Village",
+        "stops": [
+          {
+            "name": "Prospect Mountain",
+            "detail": "Hike the challenging trail or drive the seasonal highway for panoramic summit views."
+          },
+          {
+            "name": "Fort William Henry",
+            "detail": "Explore the reconstructed 18th-century fort to learn about regional colonial history."
+          }
+        ],
+        "driving": "Allow 30 minutes; conditions vary by mode",
+        "note": "Check seasonal road opening dates for the Prospect Mountain Veterans Memorial Highway."
+      },
+      {
+        "title": "Adirondack Slopes and Trails",
+        "start": "Suggested: 9 AM from Bolton Landing",
+        "stops": [
+          {
+            "name": "Buck Mountain",
+            "detail": "Summit this eastern-shore peak for rewarding views of the lake's many islands."
+          },
+          {
+            "name": "Lake George Battlefield State Park",
+            "detail": "Walk the historic grounds to see monuments from the French and Indian War."
+          }
+        ],
+        "driving": "Allow 1 hour; conditions vary on Route 9N",
+        "note": "Buck Mountain requires sturdy footwear for uneven terrain and significant elevation."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Village Congestion",
+        "text": "Street parking in Lake George Village is often metered and limited during summer weekends. Utilize designated public lots or stay within walking distance to avoid delays."
+      },
+      {
+        "kind": "signal",
+        "title": "Highland Reception",
+        "text": "Cell service is generally reliable in the village but often fails on the slopes of Buck Mountain. Download offline trail maps for any Adirondack hiking."
+      },
+      {
+        "kind": "fuel",
+        "title": "Village Services",
+        "text": "Fuel and supplies are abundant in Lake George Village and Glens Falls. Services become much sparser as you drive north toward Ticonderoga."
+      },
+      {
+        "kind": "timing",
+        "title": "Hiking Seasons",
+        "text": "Spring trails can be muddy and prone to erosion; early fall offers peak foliage views without the summer heat. Some attractions reduce hours after Labor Day."
+      },
+      {
+        "kind": "access",
+        "title": "Water Navigation",
+        "text": "Boaters must follow specific Lake George Park Commission regulations regarding invasive species and speed. Ensure your vessel is registered and inspected before launching."
+      }
+    ],
+    "arrival": "Pick up rental at Rutland (RUT) and drive approximately 65 minutes to Lake George Village for orientation.",
+    "vehicle": "Standard vehicles are suitable for main roads; some trailhead access may be easier with higher clearance.",
+    "goldenHour": "Sunset from the summit of Prospect Mountain; check highway closure times for evening access.",
+    "sources": [
+      {
+        "label": "NY DEC Lake George Islands",
+        "url": "https://www.dec.ny.gov/outdoor/24487.html"
+      }
+    ]
+  }
+}

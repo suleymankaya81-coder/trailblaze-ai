@@ -1,0 +1,99 @@
+{
+  "slug": "green-mountains",
+  "headline": "Managing Vermont Peak Season and Trail Access",
+  "reservation": "Vermont State Parks and Green Mountain National Forest operate separate booking systems; high-demand sites in Stowe and Waterbury require advance planning. Most hiking trails are open-access, but campsites and parking at popular trailheads like Mount Mansfield may have seasonal fees or occupancy limits. Always verify the specific land manager’s official page as systems for foliage and summer peak periods frequently update.",
+  "source_url": "https://vtstateparks.com/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Northern Peaks and Summit Views",
+        "start": "Suggested: 8 AM from Stowe",
+        "stops": [
+          {
+            "name": "Mount Mansfield",
+            "detail": "Ascend Vermont's highest peak via trails that transition from dense forest to fragile alpine tundra."
+          },
+          {
+            "name": "Smugglers' Notch State Park",
+            "detail": "Explore the narrow mountain pass flanked by 1,000-foot cliffs, offering unique geological formations and bouldering opportunities."
+          }
+        ],
+        "driving": "Allow 1-2 hours; conditions vary by weather and mountain road congestion",
+        "note": "Stick to marked paths in alpine zones to protect endangered plant species."
+      },
+      {
+        "title": "Reservoir Waters and Forested Shores",
+        "start": "Suggested: 9 AM from Waterbury",
+        "stops": [
+          {
+            "name": "Waterbury Center State Park",
+            "detail": "Access the reservoir for shoreline relaxation or water-based recreation with views of the surrounding ridges."
+          },
+          {
+            "name": "Little River State Park",
+            "detail": "Walk the history-rich trails through former settlement sites and managed hardwood forests."
+          }
+        ],
+        "driving": "Allow 45 minutes; local roads are generally paved but narrow",
+        "note": "Check official water quality advisories before swimming or paddling."
+      },
+      {
+        "title": "Mad River Valley Scenic Corridor",
+        "start": "Suggested: 8:30 AM from Waitsfield",
+        "stops": [
+          {
+            "name": "Warren Falls",
+            "detail": "Visit this natural series of pools and waterfalls on the Mad River for photography and short woodland walks."
+          },
+          {
+            "name": "Sunset Ledge via Long Trail",
+            "detail": "A moderate hike providing westward views over Lake Champlain toward the Adirondacks."
+          }
+        ],
+        "driving": "Allow 1.5 hours; Route 100 travel times vary by season",
+        "note": "Avoid dirt roads during 'mud season' in early spring when surfaces are unstable."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead Capacity",
+        "text": "Parking at popular trailheads near Stowe often reaches capacity early on summer weekends. Have a secondary lower-elevation trail in mind if primary lots are closed to further entry."
+      },
+      {
+        "kind": "signal",
+        "title": "Mountain Connectivity",
+        "text": "Cellular service is unreliable in deep notches and higher elevations. Download offline topographic maps before leaving your base in Waterbury or Stowe."
+      },
+      {
+        "kind": "fuel",
+        "title": "Village Services",
+        "text": "Fuel is readily available in major hubs like Waterbury, but becomes sparse as you head into the Mad River Valley. Refill before starting long scenic loops through the gaps."
+      },
+      {
+        "kind": "timing",
+        "title": "Mud Season Constraints",
+        "text": "High-elevation trails typically close from mid-April to Memorial Day to prevent erosion. Consult the Green Mountain Club for current trail status before hiking in late spring."
+      },
+      {
+        "kind": "access",
+        "title": "Notch Road Closures",
+        "text": "Route 108 through Smugglers' Notch is closed to all vehicles in winter. In summer, the road is extremely narrow and restricted for large vehicles like RVs."
+      }
+    ],
+    "arrival": "After landing at BTV, collect your rental and stop in Burlington or Williston for supplies before the drive to your Stowe or Waterbury base.",
+    "vehicle": "A standard car is suitable for most paved routes, but high-clearance vehicles are recommended for unpaved forest roads. Check rental agreements for off-pavement restrictions.",
+    "goldenHour": "Sunset Ledge provides a westward orientation ideal for evening light, though foliage thickness affects visibility.",
+    "sources": [
+      {
+        "label": "Vermont State Parks",
+        "url": "https://vtstateparks.com/"
+      },
+      {
+        "label": "Green Mountain National Forest",
+        "url": "https://www.fs.usda.gov/gmfl"
+      }
+    ]
+  }
+}

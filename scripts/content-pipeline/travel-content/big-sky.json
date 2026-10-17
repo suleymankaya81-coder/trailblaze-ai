@@ -1,0 +1,99 @@
+{
+  "slug": "big-sky",
+  "headline": "Resort Activity and National Park Reservations",
+  "reservation": "Big Sky Resort requires advanced booking for lift tickets, lessons, and specific summer activities like the Lone Peak Expedition. If planning a day trip to Yellowstone, check the NPS site for vehicle reservation requirements which vary by season and entrance. Lodging in the mountain village is separate from park entry permits.",
+  "source_url": "https://bigskyresort.com/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Alpine Heights and Forest Trails",
+        "start": "Suggested: 9 AM from Big Sky Town Center",
+        "stops": [
+          {
+            "name": "Ousel Falls Park Trail",
+            "detail": "Walk the well-graded path to a thunderous waterfall; it is an ideal introduction to the local Gallatin National Forest."
+          },
+          {
+            "name": "Lone Mountain Lookout",
+            "detail": "Utilize the resort lift system to reach high-altitude viewpoints for panoramic vistas of the Madison Range."
+          }
+        ],
+        "driving": "Allow 30 to 45 minutes for local transfers between the Meadow and Mountain villages.",
+        "note": "Afternoon thunderstorms are common in summer; descend from high ridges by midday."
+      },
+      {
+        "title": "Gallatin River Canyon",
+        "start": "Suggested: 8:30 AM from the Meadow Village",
+        "stops": [
+          {
+            "name": "Gallatin River Pullouts",
+            "detail": "Observe the river's path through the narrow canyon where 'A River Runs Through It' was filmed."
+          },
+          {
+            "name": "Storm Castle Peak Trailhead",
+            "detail": "Consider this nearby hike for views of the canyon winding toward Bozeman, checking for seasonal mud closures."
+          }
+        ],
+        "driving": "Allow 1.5 hours for round-trip travel along US 191; watch for wildlife and heavy truck traffic.",
+        "note": "River levels vary significantly with spring snowmelt; check with local outfitters for safety."
+      },
+      {
+        "title": "Yellowstone Gateway Exploration",
+        "start": "Suggested: 7:30 AM from Big Sky",
+        "stops": [
+          {
+            "name": "West Yellowstone Grizzly & Wolf Discovery Center",
+            "detail": "Visit this accredited facility to learn about regional apex predators before heading toward the park."
+          },
+          {
+            "name": "Madison River Valley",
+            "detail": "Drive into the park's west entrance to view the meadows where elk and bison are frequently spotted."
+          }
+        ],
+        "driving": "Allow 2 to 3 hours for the round trip to the West Entrance, plus time for park lines.",
+        "note": "Check the NPS website for road closures; the West Entrance is closed to cars in early winter."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Mountain Village Access",
+        "text": "Paid parking applies at the resort base during winter. Free shuttle services connect the Meadow Village to the mountain to alleviate peak congestion."
+      },
+      {
+        "kind": "signal",
+        "title": "Mountain Topography Effects",
+        "text": "Reception is generally good in the town center but drops off immediately in the Gallatin Canyon and high basins. Do not rely on GPS for backcountry trail navigation."
+      },
+      {
+        "kind": "fuel",
+        "title": "Canyon Corridor Services",
+        "text": "Fuel stations are located in the Meadow Village and West Yellowstone, but not along the 45-mile stretch of US 191 between them. Plan your tank accordingly for day trips."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Transitions",
+        "text": "Late May and June are 'mud season' when many high trails are impassable and some businesses close briefly. July through September offers the most stable hiking weather."
+      },
+      {
+        "kind": "access",
+        "title": "Wildlife Safety",
+        "text": "This is active grizzly bear country. Carry bear spray in an accessible holster and know how to use it, even on popular trails like Ousel Falls."
+      }
+    ],
+    "arrival": "Fly into BZN, pick up your rental, and stop in Belgrade or Bozeman for mountain supplies. The 60-minute drive to Big Sky is scenic but dark at night.",
+    "vehicle": "An AWD vehicle with winter tires is strongly recommended from October through May. Check rental policies for towing or off-road use.",
+    "goldenHour": "The Beehive Basin trailhead offers views of Lone Peak; the best light depends on the angle of the sun and seasonal snow cover.",
+    "sources": [
+      {
+        "label": "Custer Gallatin National Forest",
+        "url": "https://www.fs.usda.gov/custergallatin"
+      },
+      {
+        "label": "National Park Service - Yellowstone",
+        "url": "https://www.nps.gov/yell/index.htm"
+      }
+    ]
+  }
+}

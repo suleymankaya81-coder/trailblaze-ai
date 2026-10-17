@@ -1,0 +1,99 @@
+{
+  "slug": "chicago",
+  "headline": "Museum and High-Rise Observation Deck Entry",
+  "reservation": "Access to high-demand cultural institutions like the Art Institute or Skydeck at Willis Tower often requires timed-entry tickets booked through official venue portals. While the 18-mile Lakefront Trail is open access, special exhibitions and guided architectural boat tours maintain strict capacity limits. Systems frequently update; check official museum websites for the most current entry protocols.",
+  "source_url": "https://www.choosechicago.com",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Architectural Canyons and High-Altitude Views",
+        "start": "Suggested: 9 AM from The Loop",
+        "stops": [
+          {
+            "name": "Chicago River Architecture Tour",
+            "detail": "Board a vessel at the Michigan Avenue bridge to view the city's 'canyon' of steel and glass, featuring works by Mies van der Rohe."
+          },
+          {
+            "name": "Skydeck Chicago at Willis Tower",
+            "detail": "Stand on 'The Ledge' for a 103rd-floor perspective of the metro area and Lake Michigan."
+          }
+        ],
+        "driving": "Allow 1 hour for local transit or walking; conditions vary",
+        "note": "Expect higher wind speeds and cooler temperatures on observation decks."
+      },
+      {
+        "title": "Artistic Landmarks and Lakefront Leisure",
+        "start": "Suggested: 10 AM from Millennium Park",
+        "stops": [
+          {
+            "name": "Cloud Gate",
+            "detail": "Visit the interactive sculpture in Millennium Park, also known as 'The Bean,' for skyline reflections."
+          },
+          {
+            "name": "Art Institute of Chicago",
+            "detail": "Explore one of the world's largest collections of Impressionist and Post-Impressionist masterpieces."
+          }
+        ],
+        "driving": "Allow 45 minutes for walking and local transfers; conditions vary",
+        "note": "The Lakefront Trail is multi-use; stay to the right when walking near cyclists."
+      },
+      {
+        "title": "Neighborhood Greenways and Industrial History",
+        "start": "Suggested: 9:30 AM from Wicker Park",
+        "stops": [
+          {
+            "name": "The 606 (Bloomingdale Trail)",
+            "detail": "Walk this 2.7-mile elevated rail-trail for bird's-eye views of local murals and neighborhood backyards."
+          },
+          {
+            "name": "Pullman National Historical Park",
+            "detail": "Tour the planned industrial community to learn about the labor history that shaped the American workforce."
+          }
+        ],
+        "driving": "Allow 1.5 hours total for regional driving; conditions vary",
+        "note": "Pullman is located on the South Side; check official NPS hours for the Visitor Center."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Urban Garage Logistics",
+        "text": "Parking in the Loop is primarily available in multi-level garages; use official apps to verify space availability in high-traffic areas like Millennium Park. Rates are significantly higher for street parking which is often time-limited."
+      },
+      {
+        "kind": "signal",
+        "title": "City Connectivity",
+        "text": "Cellular signal is robust throughout the downtown core and neighborhoods, though tall buildings in the Loop can occasionally cause GPS drift. Public Wi-Fi is available in most major museums and transit hubs."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Supply Points",
+        "text": "Fuel stations are less frequent in the central Loop area; refuel in gateway cities like Evanston or Oak Park before heading into the city center. Charging stations for electric vehicles are common in downtown parking structures."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Pedway Access",
+        "text": "The underground Pedway system is useful during winter or rain but has variable hours depending on individual building access. Suggested exploration times for museums should allow at least three hours per major institution."
+      },
+      {
+        "kind": "access",
+        "title": "Transit Alternatives",
+        "text": "The 'L' train system serves as the primary artery for moving between neighborhoods without a vehicle. Check the official CTA site for scheduled maintenance that may affect weekend travel to the Museum Campus."
+      }
+    ],
+    "arrival": "Pick up rental at Midway (MDW), drive 25-30 minutes to The Loop for check-in, then utilize local transit for downtown sights.",
+    "vehicle": "Compact cars are preferred for navigating city traffic and narrow parking garages; check rental contracts for urban driving restrictions.",
+    "goldenHour": "Adler Planetarium Skyline Walk offers a classic sunset view of the city silhouette, subject to seasonal weather visibility.",
+    "sources": [
+      {
+        "label": "City of Chicago Official Site",
+        "url": "https://www.chicago.gov"
+      },
+      {
+        "label": "Pullman National Historical Park",
+        "url": "https://www.nps.gov/pull"
+      }
+    ]
+  }
+}

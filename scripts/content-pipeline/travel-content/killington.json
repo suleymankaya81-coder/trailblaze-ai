@@ -1,0 +1,95 @@
+{
+  "slug": "killington",
+  "headline": "Green Mountain Trail Access and Peak Operations",
+  "reservation": "Killington Resort uses a dynamic reservation system for winter lift tickets, while Gifford Woods State Park requires day-use fees or camping bookings. Hiking on the Long Trail or Appalachian Trail is generally open, but seasonal mud-season closures are common; check the Green Mountain Club for current status.",
+  "source_url": "https://www.killington.com/plan-your-trip/tickets-passes",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Forest Canopy and Mountain Lakes",
+        "start": "Suggested: 10 AM from Rutland (RUT)",
+        "stops": [
+          {
+            "name": "Gifford Woods State Park",
+            "detail": "Walk through one of Vermont's few remaining old-growth hardwood forests."
+          },
+          {
+            "name": "Kent Pond",
+            "detail": "Visit for a quiet shoreline break or to observe waterbirds in the shadow of the peaks."
+          }
+        ],
+        "driving": "Allow 40 minutes from RUT; mountain road conditions vary",
+        "note": "Trails may be muddy in spring; stick to gravel paths to prevent erosion."
+      },
+      {
+        "title": "Green Mountain Summits",
+        "start": "Suggested: 8 AM from Killington Road",
+        "stops": [
+          {
+            "name": "Bucklin Trail",
+            "detail": "Ascend the western slope of Killington Peak for a challenging hike with significant elevation gain."
+          },
+          {
+            "name": "Killington Peak",
+            "detail": "Reach the summit for 360-degree views of the Adirondacks and White Mountains."
+          }
+        ],
+        "driving": "Short local drive to trailhead; parking is limited to small roadside lots",
+        "note": "The final summit push is steep and rocky; carry adequate water and navigation."
+      },
+      {
+        "title": "Scenic Ridges and Village Stops",
+        "start": "Suggested: 9 AM from the K-1 Base Area",
+        "stops": [
+          {
+            "name": "K-1 Scenic Gondola",
+            "detail": "Ride to the upper ridge for high-altitude views without the full day's hike."
+          },
+          {
+            "name": "Vermont Route 100 North",
+            "detail": "Drive this scenic corridor toward Pittsfield for classic New England valley landscapes."
+          }
+        ],
+        "driving": "Allow 1 hour for scenic loop; winding roads require focus",
+        "note": "Gondola operations are seasonal and weather-dependent; check resort status daily."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "Mud Season Closures",
+        "text": "High-elevation trails typically close during the spring thaw to protect soil. Check the Green Mountain National Forest site for current trail status."
+      },
+      {
+        "kind": "timing",
+        "title": "Gondola Windows",
+        "text": "Scenic gondola rides often end earlier than sunset. Confirm the last cabin down to avoid an unplanned hike."
+      },
+      {
+        "kind": "fuel",
+        "title": "Killington Road Services",
+        "text": "Fuel and supplies are concentrated at the base of Killington Road and in nearby Rutland. Options are sparse once you head deep into the National Forest."
+      },
+      {
+        "kind": "signal",
+        "title": "Deep Valley Dropouts",
+        "text": "Cellular service is unreliable on the Bucklin Trail and lower-elevation forest notches. Do not rely on streaming maps for mountain navigation."
+      },
+      {
+        "kind": "parking",
+        "title": "Trailhead Congestion",
+        "text": "Popular spots like the Bucklin trailhead fill early on autumn weekends. Have a backup plan at Gifford Woods if parking is unavailable."
+      }
+    ],
+    "arrival": "Pick up your vehicle in Rutland, stock up on mountain snacks, and check the latest weather forecast before heading up US-4.",
+    "vehicle": "A car with good clearance is helpful for trailhead access; check winter rental policies for snow tires or AWD.",
+    "goldenHour": "Killington Peak offers panoramic views, but check the gondola schedule or prepare for a hike down in low light.",
+    "sources": [
+      {
+        "label": "Vermont State Parks",
+        "url": "https://vtstateparks.com/gifford.html"
+      }
+    ]
+  }
+}

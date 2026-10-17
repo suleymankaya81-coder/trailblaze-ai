@@ -1,0 +1,111 @@
+{
+  "slug": "boundary-waters",
+  "headline": "Wilderness Entry Permit Mandatory",
+  "reservation": "A quota-based permit system is strictly enforced for all overnight and day-use entries. Permits must be secured via Recreation.gov and picked up at a designated station; this is separate from any outfitter or lodging booking you may have.",
+  "source_url": "https://www.fs.usda.gov/main/superior/passes-permits",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Wilderness Orientation",
+        "start": "Suggested: 8 AM from Ely",
+        "stops": [
+          {
+            "name": "International Wolf Center",
+            "detail": "Learn about local ecology and the role of apex predators in the northern forest."
+          },
+          {
+            "name": "Kawishiwi Falls Trail",
+            "detail": "A short, land-based hike to view the falls and acclimate to the local terrain."
+          }
+        ],
+        "driving": "Allow 1 hour for local Ely transit; forest roads vary by weather.",
+        "note": "Ensure all gear is organized and permits are in hand before heading to the launch."
+      },
+      {
+        "title": "Paddle and Portage Entry",
+        "start": "Suggested: 7:30 AM from Entry Point",
+        "stops": [
+          {
+            "name": "Designated Lake Campsite",
+            "detail": "Paddle to your permitted area and secure a site early as they are first-come, first-served."
+          },
+          {
+            "name": "Lakeshore Exploring",
+            "detail": "Observe the shoreline for loons and bald eagles from the seat of your canoe."
+          }
+        ],
+        "driving": "Canoe travel only; allow ample time for loading and portaging gear over land.",
+        "note": "Wind can change rapidly; avoid large open-water crossings if whitecaps appear."
+      },
+      {
+        "title": "Base Camp and Interior Lakes",
+        "start": "Suggested: 9 AM from Base Camp",
+        "stops": [
+          {
+            "name": "Interior Portage Trail",
+            "detail": "Take a day trip to a neighboring lake to experience different scenery without moving camp."
+          },
+          {
+            "name": "Shoreline Fishing Spot",
+            "detail": "Spend time on the water following local regulations for a quiet afternoon."
+          }
+        ],
+        "driving": "Canoe travel only; distance depends on group stamina and wind conditions.",
+        "note": "Always carry navigation tools and rain gear even on short day-trips from camp."
+      },
+      {
+        "title": "Wilderness Exit and Gateway",
+        "start": "Suggested: 8 AM from Campsite",
+        "stops": [
+          {
+            "name": "Grand Marais Harbor",
+            "detail": "If using an eastern exit, explore the coastal shops and Lake Superior views."
+          },
+          {
+            "name": "Gunflint Trail",
+            "detail": "Drive this scenic route to view interior forests from a paved roadway."
+          }
+        ],
+        "driving": "Allow 2.5 hours for the drive from Ely to Grand Marais; conditions vary.",
+        "note": "Confirm all rental gear is returned and checked according to your outfitter's schedule."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Entry Point Lots",
+        "text": "Parking at wilderness entry points is limited and often involves narrow forest roads. Ensure your vehicle is within designated spaces to avoid blocking emergency access."
+      },
+      {
+        "kind": "signal",
+        "title": "Total Disconnect",
+        "text": "Expect zero cellular service once you enter the wilderness boundaries. Satellite messengers are suggested for emergency use, but do not rely on them for routine navigation."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Fuel Stations",
+        "text": "Ely and Grand Marais are the final reliable fuel stops before heading into the forest. Top off your tank before driving to remote entry points like the Gunflint Trail."
+      },
+      {
+        "kind": "timing",
+        "title": "Daylight Constraints",
+        "text": "Setting up camp in the dark is hazardous in the wilderness. Plan to be off the water and have your shelter established at least two hours before sunset."
+      },
+      {
+        "kind": "access",
+        "title": "Ice and Mud Season",
+        "text": "Spring access is highly dependent on ice-out dates which vary annually. Check the official Superior National Forest alerts before planning an early May trip."
+      }
+    ],
+    "arrival": "Fly into HIB and allow nearly 2.5 hours to reach Ely. Use the first afternoon to meet your outfitter, finalize gear, and verify permit pickup location.",
+    "vehicle": "A high-clearance vehicle is recommended for unpaved forest access roads; check rental contracts for gravel road restrictions.",
+    "goldenHour": "A calm lake shoreline offers the best vantage for evening light, though clarity depends on seasonal forest fire smoke or humidity.",
+    "sources": [
+      {
+        "label": "Superior National Forest BWCAW",
+        "url": "https://www.fs.usda.gov/detail/superior/specialplaces/?cid=fseprd887093"
+      }
+    ]
+  }
+}

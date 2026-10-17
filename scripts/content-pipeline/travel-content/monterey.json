@@ -1,0 +1,95 @@
+{
+  "slug": "monterey",
+  "headline": "Aquarium and State Park Entry Management",
+  "reservation": "The Monterey Bay Aquarium requires specific date-based entry; check their official site for current ticketing requirements. Point Lobos State Natural Reserve uses a capacity-based parking system that fills early; verify if a reservation or specific arrival window is required before visiting.",
+  "source_url": "https://www.parks.ca.gov/?page_id=571",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Marine Life and Historic Cannery Row",
+        "start": "Suggested: 9:30 AM at Cannery Row",
+        "stops": [
+          {
+            "name": "Monterey Bay Aquarium",
+            "detail": "Explore deep-sea kelp forest exhibits and local marine life in this world-renowned research facility."
+          },
+          {
+            "name": "Monterey Bay Coastal Recreation Trail",
+            "detail": "Walk the waterfront path toward Fisherman's Wharf to spot sea otters in the kelp beds."
+          }
+        ],
+        "driving": "Allow walking for the day; local transfers vary by traffic",
+        "note": "Pedestrians and cyclists share the trail; stay to the designated lanes."
+      },
+      {
+        "title": "Wildflowers and Coastal Overlooks",
+        "start": "Suggested: 8:30 AM at Point Lobos",
+        "stops": [
+          {
+            "name": "Point Lobos State Natural Reserve",
+            "detail": "Hike through Monterey cypress groves and scan the coves for harbor seals."
+          },
+          {
+            "name": "Lovers Point Park",
+            "detail": "Relax at this Pacific Grove landmark known for its unique east-facing coastal views."
+          }
+        ],
+        "driving": "Allow 45 minutes; Highway 1 traffic fluctuates near Carmel",
+        "note": "Arrive at Point Lobos early; parking frequently reaches capacity before noon."
+      },
+      {
+        "title": "Adobe History and Bay Views",
+        "start": "Suggested: 10 AM at Monterey State Historic Park",
+        "stops": [
+          {
+            "name": "Monterey State Historic Park",
+            "detail": "Tour the collection of historic adobe buildings that served as California's first capital."
+          },
+          {
+            "name": "Old Fisherman's Wharf",
+            "detail": "Visit the pier for views of the harbor and to watch sea lions congregating on the structures."
+          }
+        ],
+        "driving": "Allow 10 minutes; walking within the historic district is recommended",
+        "note": "Check official park schedules for specific adobe building tour times."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Aquarium and Wharf Garages",
+        "text": "Use the Cannery Row parking garage for aquarium visits to avoid street meters. Point Lobos parking is extremely limited; have a backup plan if the lot is closed."
+      },
+      {
+        "kind": "signal",
+        "title": "Coastal Dead Zones",
+        "text": "Expect limited signal along sections of Highway 1 south of Carmel. Download trail maps for Point Lobos and 17-Mile Drive in advance."
+      },
+      {
+        "kind": "fuel",
+        "title": "Peninsula Services",
+        "text": "Fuel is widely available in Monterey and Seaside but becomes expensive and rare as you head south toward Big Sur. Refill before departing the Monterey city limits."
+      },
+      {
+        "kind": "timing",
+        "title": "Fog and Visibility",
+        "text": "Marine layers often obscure coastal views until midday during summer months. Schedule indoor activities like the aquarium for misty mornings."
+      },
+      {
+        "kind": "access",
+        "title": "Trail Safety",
+        "text": "Keep back from cliff edges and stay on designated paths at Point Lobos to protect sensitive flora. Never approach or feed the sea otters or seals."
+      }
+    ],
+    "arrival": "Pick up rental at Monterey Regional Airport (MRY); check into waterfront lodging before walking the recreation trail.",
+    "vehicle": "Standard cars are ideal for the peninsula; check for parking height restrictions in Cannery Row garages if using an RV.",
+    "goldenHour": "Lovers Point for sunrise or Asilomar State Beach for sunset; seasonal fog may impact visibility.",
+    "sources": [
+      {
+        "label": "Monterey Bay Aquarium",
+        "url": "https://www.montereybayaquarium.org/visit"
+      }
+    ]
+  }
+}

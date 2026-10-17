@@ -1,0 +1,95 @@
+{
+  "slug": "starved-rock",
+  "headline": "Mandatory Parking Capacity Alerts at Starved Rock State Park",
+  "reservation": "Starved Rock State Park does not currently require a permit for general trail entry, but parking is strictly limited by lot size. During peak autumn and spring weekends, the park gates close to all incoming vehicles once capacity is reached; visitors must check the official IDNR Facebook or website for real-time closure status. Accommodation at the Starved Rock Lodge is a separate commercial reservation and does not guarantee park entry if gates are closed.",
+  "source_url": "https://www2.illinois.gov/dnr/Parks/Pages/StarvedRock.aspx",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Canyons and River Vistas",
+        "start": "Suggested: 8 AM from Utica",
+        "stops": [
+          {
+            "name": "Starved Rock Overlook",
+            "detail": "Climb the boardwalk stairs to the summit of the iconic sandstone butte for views of the Plum Island Eagle Sanctuary."
+          },
+          {
+            "name": "French Canyon",
+            "detail": "Explore one of the most accessible canyons featuring intricate moss-covered sandstone walls just a short walk from the Visitor Center."
+          }
+        ],
+        "driving": "Walking itinerary within the park; allow 10 minutes to drive from Utica to the main lot.",
+        "note": "Sandstone steps can be slippery when wet; maintain contact with handrails."
+      },
+      {
+        "title": "Waterfalls and Interior Trails",
+        "start": "Suggested: 8:30 AM from the Visitor Center",
+        "stops": [
+          {
+            "name": "St. Louis Canyon",
+            "detail": "Hike to see one of the tallest waterfalls in the park, which is most active following seasonal spring rains."
+          },
+          {
+            "name": "Lover's Leap Overlook",
+            "detail": "Walk the river-view boardwalks to observe the Starved Rock Lock and Dam operations from above."
+          }
+        ],
+        "driving": "Allow 15 minutes to reach the St. Louis Canyon trailhead parking; conditions vary by season.",
+        "note": "Waterfall flow is highly dependent on recent precipitation; summer visits may find canyons dry."
+      },
+      {
+        "title": "River History and Regional Towns",
+        "start": "Suggested: 9 AM from Ottawa",
+        "stops": [
+          {
+            "name": "Illinois River Waterway Visitor Center",
+            "detail": "Located across from the park, this center offers a close-up look at the lock and dam system and river ecology."
+          },
+          {
+            "name": "Ottawa Historic District",
+            "detail": "Visit the site of the first Lincoln-Douglas debate and explore the architecture of the Illinois River valley."
+          }
+        ],
+        "driving": "Allow 30 minutes for the regional loop between Ottawa and Utica.",
+        "note": "The Waterway Visitor Center has independent operating hours from the State Park."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Lot Capacity Logic",
+        "text": "The main Visitor Center lot typically fills by 10 AM on summer and autumn weekends. Once full, Illinois State Police may divert traffic away from the entrance road until spaces become available."
+      },
+      {
+        "kind": "signal",
+        "title": "Canyon Dead Zones",
+        "text": "Cellular service is reliable at the overlooks but frequently drops to zero within the deep sandstone canyons. Download offline maps before entering the trail system at the Starved Rock Lodge trailhead."
+      },
+      {
+        "kind": "fuel",
+        "title": "Regional Gateway Services",
+        "text": "Full services including fuel and grocery stores are located in Utica and Ottawa, just minutes from the park boundary. There are no refueling facilities within the state park interior."
+      },
+      {
+        "kind": "timing",
+        "title": "Winter Eagle Activity",
+        "text": "Bald eagle viewing at the Starved Rock Lock and Dam is most consistent in January and February when river ice forces birds to open water. Use binoculars from the Eagle Cliff overlook for the best viewing."
+      },
+      {
+        "kind": "access",
+        "title": "Trail Surfaces",
+        "text": "Many trails consist of wooden boardwalks and stairs that can become icy in winter or muddy in spring. Stay on marked paths to prevent erosion of the fragile St. Peter Sandstone formations."
+      }
+    ],
+    "arrival": "Arrive at RFD and drive south for approximately 90 minutes. Check in to your Utica-area base before heading to the park Visitor Center for updated trail maps.",
+    "vehicle": "Standard passenger cars are sufficient for all access roads; RVs should use the designated oversized parking lanes near the overflow lots.",
+    "goldenHour": "Eagle Cliff Overlook provides a high vantage point for the sunset over the Illinois River, subject to seasonal park closing times.",
+    "sources": [
+      {
+        "label": "Illinois Department of Natural Resources",
+        "url": "https://www2.illinois.gov/dnr/Parks/Pages/StarvedRock.aspx"
+      }
+    ]
+  }
+}

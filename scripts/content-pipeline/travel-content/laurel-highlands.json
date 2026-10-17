@@ -1,0 +1,95 @@
+{
+  "slug": "laurel-highlands",
+  "headline": "Advance Booking for Architecture and River Activities",
+  "reservation": "Fallingwater requires timed-entry reservations months in advance through the Western Pennsylvania Conservancy. Pennsylvania State Parks manage camping and cabin bookings via a central system; holiday weekends reach capacity early. Always verify tour availability before arriving at historic sites.",
+  "source_url": "https://www.dcnr.pa.gov/StateParks/FindAPark/OhiopyleStatePark/Pages/default.aspx",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Waterfalls and Rail Trails",
+        "start": "Suggested: 9 AM from Ohiopyle",
+        "stops": [
+          {
+            "name": "Cucumber Falls",
+            "detail": "Visit this 30-foot drop via a short descent from the parking area near the Youghiogheny River."
+          },
+          {
+            "name": "Great Allegheny Passage",
+            "detail": "Walk or cycle a flat section of this former rail corridor for river views and forest scenery."
+          }
+        ],
+        "driving": "Walking or short local transfers within Ohiopyle; allow for weekend congestion.",
+        "note": "Waterfall steps are often wet and slippery; use handrails where provided."
+      },
+      {
+        "title": "Mountain Ridges and Bogs",
+        "start": "Suggested: 8:30 AM from Ligonier",
+        "stops": [
+          {
+            "name": "Laurel Summit State Park",
+            "detail": "Walk the boardwalk at Spruce Flats Bog to see unique high-altitude wetland plants."
+          },
+          {
+            "name": "Laurel Highlands Hiking Trail",
+            "detail": "Experience a segment of the 70-mile ridge trail for expansive forest views and rocky terrain."
+          }
+        ],
+        "driving": "Allow 1.5 hours for ridge road travel; conditions vary on narrow mountain routes.",
+        "note": "Spruce Flats Bog is a sensitive environment; stay strictly on the designated boardwalk."
+      },
+      {
+        "title": "Architectural Icons and History",
+        "start": "Suggested: 10 AM from Mill Run",
+        "stops": [
+          {
+            "name": "Fallingwater",
+            "detail": "Tour Frank Lloyd Wright’s masterpiece built over Bear Run, noting specific tour requirements and age limits."
+          },
+          {
+            "name": "Fort Necessity National Battlefield",
+            "detail": "Explore the site of the opening action of the French and Indian War and the nearby visitor center."
+          }
+        ],
+        "driving": "Allow 1 hour total for travel between Mill Run and Farmington.",
+        "note": "Reserve architecture tours well in advance; photography rules vary by tour type."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Ohiopyle Congestion",
+        "text": "Central Ohiopyle parking fills rapidly on summer Saturdays. Arrive early or visit during weekdays to ensure access to falls viewing areas."
+      },
+      {
+        "kind": "signal",
+        "title": "Remote Ridge Gaps",
+        "text": "Mobile coverage is non-existent in deep river valleys and parts of Laurel Ridge. Download regional maps and attraction directions before leaving Ligonier."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Supplies",
+        "text": "Fuel services are concentrated in Ligonier, Somerset, and Uniontown. Monitor levels before traversing the forested corridors of Route 381."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Water Flow",
+        "text": "Waterfall volume at Cucumber Falls varies with rainfall; peak flow is common in spring but not guaranteed. Check local gauges for rafting conditions."
+      },
+      {
+        "kind": "access",
+        "title": "Trail Surfaces",
+        "text": "The Great Allegheny Passage is crushed stone, while the Laurel Highlands Hiking Trail is rugged and rocky. Match footwear to the specific trail type."
+      }
+    ],
+    "arrival": "Pickup rental at Arnold Palmer Regional Airport, stock supplies in Ligonier, and check-in to regional lodging or cabins.",
+    "vehicle": "Standard vehicles are suitable for main roads; check rental terms for driving on unpaved state forest access routes.",
+    "goldenHour": "Youghiogheny River Overlook, subject to morning fog and seasonal foliage density.",
+    "sources": [
+      {
+        "label": "Pennsylvania DCNR State Parks",
+        "url": "https://www.dcnr.pa.gov/StateParks/Pages/default.aspx"
+      }
+    ]
+  }
+}

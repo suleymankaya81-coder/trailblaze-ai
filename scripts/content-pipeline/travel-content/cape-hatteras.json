@@ -1,0 +1,99 @@
+{
+  "slug": "cape-hatteras",
+  "headline": "Lighthouse Access and Off-Road Permit Information",
+  "reservation": "Climbing the Cape Hatteras Lighthouse is seasonal and requires a specific timed ticket, which may be unavailable during restoration projects. Off-Road Vehicle (ORV) permits are mandatory for beach driving and must be obtained through the official government portal after a safety orientation. Accommodations on Hatteras Island range from NPS campgrounds to private rentals; check individual systems for their specific booking windows.",
+  "source_url": "https://www.nps.gov/caha/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Northern Entry and Wildlife Refuge",
+        "start": "Suggested: 9 AM from Nags Head",
+        "stops": [
+          {
+            "name": "Pea Island National Wildlife Refuge",
+            "detail": "Stop at the North Pond Trail to observe migratory waterfowl and enjoy the serene marsh landscape."
+          },
+          {
+            "name": "Oregon Inlet",
+            "detail": "View the massive bridge and the churning waters where the sound meets the ocean, a hub for local maritime activity."
+          }
+        ],
+        "driving": "Allow 1 hour for the drive south; Highway 12 is subject to sand overwash and wind-driven delays.",
+        "note": "Check NCDOT for road conditions if high winds or storm surges are forecasted."
+      },
+      {
+        "title": "Maritime History and Maritime Forests",
+        "start": "Suggested: 9 AM from Buxton",
+        "stops": [
+          {
+            "name": "Cape Hatteras Lighthouse Grounds",
+            "detail": "Explore the history of the nation's tallest brick lighthouse and see the marks from its historic 1999 relocation."
+          },
+          {
+            "name": "Buxton Woods Trail",
+            "detail": "Walk through one of the largest remaining maritime forests on the coast, providing a shaded break from the beach."
+          }
+        ],
+        "driving": "Allow 20 minutes for local village travel; Buxton is the island's primary hub.",
+        "note": "Climbing the lighthouse is subject to weather-related closures, particularly for high winds."
+      },
+      {
+        "title": "Southern Village and Soundside Views",
+        "start": "Suggested: 9:30 AM from Hatteras Village",
+        "stops": [
+          {
+            "name": "Graveyard of the Atlantic Museum",
+            "detail": "Examine artifacts from the hundreds of shipwrecks that occurred along this treacherous stretch of coastline."
+          },
+          {
+            "name": "Hatteras Inlet",
+            "detail": "Observe the ferry operations to Ocracoke and look for seals or dolphins in the moving waters of the inlet."
+          }
+        ],
+        "driving": "Allow 30 minutes; village speed limits are strictly enforced to protect pedestrians.",
+        "note": "Ferry boarding is first-come, first-served and wait times vary significantly by season."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "ORV and Public Access",
+        "text": "Paved parking lots are available at major beach ramps and lighthouses. If driving on the beach, you must have a valid ORV permit and follow designated entry ramps to protect dune vegetation."
+      },
+      {
+        "kind": "signal",
+        "title": "Island Connectivity",
+        "text": "Signal is consistent in villages like Avon and Buxton but can be weak in the central stretches of the Cape Hatteras National Seashore. Do not rely on streaming GPS while driving between villages."
+      },
+      {
+        "kind": "fuel",
+        "title": "Strategic Refueling",
+        "text": "Fuel is available in Avon, Buxton, and Hatteras Village. Ensure you have a full tank before exploring the long, undeveloped stretches of the northern seashore or boarding the ferry."
+      },
+      {
+        "kind": "timing",
+        "title": "Wind and Water Safety",
+        "text": "Conditions on the Atlantic side can change rapidly; check lifeguard stands for flag warnings. The sound side offers calmer water, but tides still impact navigation for kayaks and small boats."
+      },
+      {
+        "kind": "access",
+        "title": "Wildlife Closures",
+        "text": "Sections of the beach may be temporarily closed to pedestrians and vehicles for nesting sea turtles or shorebirds. Look for official rope-and-stake boundaries and signage."
+      }
+    ],
+    "arrival": "After the long drive from Norfolk (ORF), stop in Nags Head or Manteo to stock up on groceries and water before crossing onto the more remote Hatteras Island.",
+    "vehicle": "A 4WD vehicle with high clearance is required for beach driving; standard cars are perfectly suitable for the paved Highway 12 corridor.",
+    "goldenHour": "The Canadian Hole on the Pamlico Sound is a named viewpoint for evening light, popular for its wide, unobstructed horizon.",
+    "sources": [
+      {
+        "label": "Cape Hatteras National Seashore",
+        "url": "https://www.nps.gov/caha/index.htm"
+      },
+      {
+        "label": "NCDOT Road Conditions",
+        "url": "https://drivenc.gov"
+      }
+    ]
+  }
+}

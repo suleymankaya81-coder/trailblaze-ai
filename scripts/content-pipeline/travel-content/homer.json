@@ -1,0 +1,111 @@
+{
+  "slug": "homer",
+  "headline": "Water Taxi and Charter Reservations in Kachemak Bay",
+  "reservation": "While the town of Homer is open-access, wilderness activities across Kachemak Bay State Park require pre-arranged water taxis. Charter fishing and peak-season glamping on the Spit often sell out six months in advance; verify all state park fees and vessel safety certifications through official Alaska Department of Fish and Game or State Park channels.",
+  "source_url": "https://dnr.alaska.gov/parks/aspunits/kenai/kachemakbaysp.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "The Spit and Sky Views",
+        "start": "Suggested: 9 AM from Homer Airport",
+        "stops": [
+          {
+            "name": "Homer Spit",
+            "detail": "Walk the four-mile gravel bar to observe the boat harbor, local art galleries, and the ‘End of the Road’ atmosphere."
+          },
+          {
+            "name": "Skyline Drive",
+            "detail": "Drive the ridge above town for a panoramic view of Kachemak Bay, the Spit, and distant glaciers."
+          }
+        ],
+        "driving": "Allow 40 minutes; local transfers on the Spit are brief but can be congested",
+        "note": "Parking on the Spit is limited during the summer halibut fishing peak."
+      },
+      {
+        "title": "Wilderness Across the Bay",
+        "start": "Suggested: 8 AM from Homer Harbor",
+        "stops": [
+          {
+            "name": "Grewingk Glacier Lake",
+            "detail": "Take a water taxi to the Glacier Spit trailhead for a hike toward the iceberg-filled lake at the foot of the glacier."
+          },
+          {
+            "name": "Gull Island",
+            "detail": "Observe thousands of nesting seabirds from a marine tour boat on the return trip to the harbor."
+          }
+        ],
+        "driving": "Walking and local water taxi only; transit times vary by sea state",
+        "note": "Bear safety protocols are essential in the state park; pack out all trash and food."
+      },
+      {
+        "title": "Coastal Culture and Tides",
+        "start": "Suggested: 10 AM from Old Town",
+        "stops": [
+          {
+            "name": "Islands and Ocean Visitor Center",
+            "detail": "Learn about the Alaska Maritime National Wildlife Refuge through interactive exhibits and naturalist programs."
+          },
+          {
+            "name": "Bishop’s Beach",
+            "detail": "Explore tide pools at low tide and walk the shoreline beneath the dramatic bluffs west of town."
+          }
+        ],
+        "driving": "Allow 20 minutes total; town roads are well-maintained",
+        "note": "Check local tide tables before visiting Bishop’s Beach to ensure safe access to pools."
+      },
+      {
+        "title": "Isolated Boardwalks",
+        "start": "Suggested: 9 AM from Seldovia Ferry Terminal",
+        "stops": [
+          {
+            "name": "Seldovia",
+            "detail": "Take a ferry or bush plane to this remote village to walk the historic boardwalks and visit the Russian Orthodox church."
+          },
+          {
+            "name": "Otter Beach",
+            "detail": "A quiet spot in Seldovia for beachcombing and views of the Cook Inlet volcanoes."
+          }
+        ],
+        "driving": "Ferry or flight transfer; allow full day for round trip",
+        "note": "Check ferry schedules carefully as services may be limited outside of peak summer."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Harbor Area Congestion",
+        "text": "The Homer Spit can become extremely crowded in July. Use the designated long-term parking lots if you are heading out on a full-day fishing charter."
+      },
+      {
+        "kind": "signal",
+        "title": "Remote Areas",
+        "text": "Signal is generally strong in Homer but disappears completely once you cross the bay into Kachemak Bay State Park. Coordinate water taxi pickups clearly before leaving the harbor."
+      },
+      {
+        "kind": "fuel",
+        "title": "Mainland Supply",
+        "text": "Fuel and full-service groceries are available in the main town area of Homer. Prices typically reflect the remote coastal location."
+      },
+      {
+        "kind": "timing",
+        "title": "Tidal Shifts",
+        "text": "Homer experiences some of the world's largest tidal ranges. Do not leave vehicles parked on beach flats and monitor water levels during shoreline walks."
+      },
+      {
+        "kind": "access",
+        "title": "Water Taxis",
+        "text": "Access to the most famous glacier hikes is by boat only. These operations are weather-dependent; have a town-based alternative ready if seas are too high."
+      }
+    ],
+    "arrival": "Landing at HOM, a rental car is recommended for exploring Skyline Drive and the bluffs; check in to your Spit or hillside lodging before dinner.",
+    "vehicle": "Standard cars are fine for town; RVs are popular on the Spit but require advanced site reservations.",
+    "goldenHour": "Skyline Drive offers the premier sunset vantage point over the bay, subject to coastal cloud cover.",
+    "sources": [
+      {
+        "label": "Alaska State Parks",
+        "url": "https://dnr.alaska.gov/parks/aspunits/kenai/kachemakbaysp.htm"
+      }
+    ]
+  }
+}

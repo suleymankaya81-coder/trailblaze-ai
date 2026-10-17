@@ -1,0 +1,95 @@
+{
+  "slug": "itasca-state-park",
+  "headline": "Mississippi Headwaters Lodging and Entry Planning",
+  "reservation": "Daily vehicle permits are required for entry and can be purchased at the gate or online. For the Douglas Lodge or park campgrounds, reservations open 120 days in advance and are highly recommended for summer weekends. Always check the Minnesota DNR website for seasonal facility hours and road maintenance updates.",
+  "source_url": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00181",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "The Mighty Mississippi's Start",
+        "start": "Suggested: 8:30 AM from Park Rapids",
+        "stops": [
+          {
+            "name": "Mississippi Headwaters",
+            "detail": "Walk across the legendary stepping stones where Lake Itasca flows into the infant river."
+          },
+          {
+            "name": "Mary Gibbs Visitor Center",
+            "detail": "Learn about the history of the river's discovery and explore the interactive exhibits."
+          }
+        ],
+        "driving": "Allow 30 minutes for the drive from Park Rapids; conditions vary.",
+        "note": "The Headwaters area is most crowded between 11 AM and 3 PM."
+      },
+      {
+        "title": "Old-Growth Pines and Vistas",
+        "start": "Suggested: 9 AM from Douglas Lodge",
+        "stops": [
+          {
+            "name": "Wilderness Drive",
+            "detail": "Take the scenic one-way loop through massive stands of old-growth red and white pines."
+          },
+          {
+            "name": "Aiton Heights Fire Tower",
+            "detail": "Climb the historic tower for a view above the forest canopy and surrounding lakes."
+          }
+        ],
+        "driving": "Allow 1 hour to complete the loop with stops; check for road closures.",
+        "note": "Watch for cyclists sharing the one-way road."
+      },
+      {
+        "title": "Lakeside Recreation and History",
+        "start": "Suggested: 9 AM from the North Gateway",
+        "stops": [
+          {
+            "name": "Prewitt’s Fishing Pier",
+            "detail": "Enjoy a quiet morning of fishing or birdwatching at the edge of Lake Itasca."
+          },
+          {
+            "name": "Itasca Indian Mounds",
+            "detail": "Observe the ancient burial sites and learn about the indigenous history of the region."
+          }
+        ],
+        "driving": "Roughly 20 minutes between lakeside stops.",
+        "note": "Check seasonal boat rental availability at the park's marina."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "One-Way Wilderness Drive",
+        "text": "Wilderness Drive is a one-way loop; once you begin, you must complete the circuit to return to the main hub. The road may close seasonally during heavy snow months."
+      },
+      {
+        "kind": "fuel",
+        "title": "Regional Gateway Services",
+        "text": "Gas stations are located in Park Rapids and Bemidji, roughly 20-30 miles away. No fuel is sold within the park boundaries."
+      },
+      {
+        "kind": "timing",
+        "title": "Headwaters Congestion",
+        "text": "Visit the Headwaters before 10 AM or after 5 PM to avoid large tour groups. Summer midday periods see the highest foot traffic at the stepping stones."
+      },
+      {
+        "kind": "parking",
+        "title": "Visitor Center Hubs",
+        "text": "Large paved lots are available at Mary Gibbs and Douglas Lodge. During peak fall color weekends, secondary lots may be required for overflow."
+      },
+      {
+        "kind": "signal",
+        "title": "Northwoods Coverage",
+        "text": "Cell service is generally reliable at the main visitor centers but can be spotty along the back half of Wilderness Drive. Offline maps are recommended for hiking."
+      }
+    ],
+    "arrival": "Pick up rental vehicle at Thief River Falls (TVF), stop for supplies in Park Rapids, and check in at the Douglas Lodge or nearby gateway cabin.",
+    "vehicle": "Standard passenger cars are ideal for the paved loops; RVs are permitted but should check height clearances on Wilderness Drive.",
+    "goldenHour": "Lake Itasca shoreline near the lodge for sunset views, dependent on seasonal cloud cover.",
+    "sources": [
+      {
+        "label": "Minnesota Department of Natural Resources",
+        "url": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00181"
+      }
+    ]
+  }
+}

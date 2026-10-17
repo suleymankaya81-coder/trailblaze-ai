@@ -1,0 +1,95 @@
+{
+  "slug": "hilton-head",
+  "headline": "Sea Pines Access and Beach Parking Management",
+  "reservation": "Entrance to the Sea Pines Forest Preserve requires a daily vehicle gate fee paid at the Sea Pines Resort community entrance. Most beach access is public, but parking at Coligny and Folly Field fills early; no reservations exist for public spots. Verify seasonal beach trolley schedules for alternative transit to the shore.",
+  "source_url": "https://www.hiltonheadislandsc.gov/beach/parking/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Atlantic Shoreline and Maritime Forest",
+        "start": "Suggested: 8 AM from Coligny Plaza",
+        "stops": [
+          {
+            "name": "Coligny Beach Park",
+            "detail": "Rent a beach cruiser to ride on the hard-packed sand at low tide along the Atlantic coast."
+          },
+          {
+            "name": "Sea Pines Forest Preserve",
+            "detail": "Walk the boardwalks to view the 4,000-year-old Sea Pines Shell Ring and local wetlands."
+          }
+        ],
+        "driving": "Walking or cycling is primary; local transfers take 15-20 mins",
+        "note": "Always check the tide chart before biking on the beach to ensure the sand is firm."
+      },
+      {
+        "title": "Salt Marsh Ecology and Gullah Culture",
+        "start": "Suggested: 9 AM from Honey Horn",
+        "stops": [
+          {
+            "name": "Coastal Discovery Museum",
+            "detail": "Explore the 68-acre historic property featuring ancient cedars and Gullah heritage exhibits."
+          },
+          {
+            "name": "Pinckney Island National Wildlife Refuge",
+            "detail": "Observe migratory birds and alligators along the gravel trails of this former plantation."
+          }
+        ],
+        "driving": "Allow 30 mins; conditions vary with bridge traffic",
+        "note": "Pinckney Island has no potable water; bring adequate supplies for the sun-exposed trails."
+      },
+      {
+        "title": "Harbor Vistas and Lowcountry Waterways",
+        "start": "Suggested: 9:30 AM from Shelter Cove",
+        "stops": [
+          {
+            "name": "Shelter Cove Marina",
+            "detail": "Join a guided kayak tour through the salt marshes to look for resident bottlenose dolphins."
+          },
+          {
+            "name": "Harbour Town Lighthouse",
+            "detail": "Climb the iconic striped tower for a view across the Calibogue Sound toward Daufuskie Island."
+          }
+        ],
+        "driving": "Allow 20 mins; conditions vary",
+        "note": "Harbour Town is within a gated community; factor in the entry fee and pedestrian-only zones."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Morning Beach Rush",
+        "text": "Public beach lots at Folly Field and Coligny often fill by 10 AM in summer. Utilize the Breeze Trolley to avoid parking shortages at major hubs."
+      },
+      {
+        "kind": "access",
+        "title": "Gated Community Nuances",
+        "text": "Many island areas, including Sea Pines and Shipyard, are private resorts. Pedestrian or bike access may be restricted to guests or those paying a daily fee."
+      },
+      {
+        "kind": "timing",
+        "title": "Sea Turtle Season",
+        "text": "From May through October, beach lighting is restricted at night to protect nesting turtles. Avoid disturbing marked nests along the dunes."
+      },
+      {
+        "kind": "signal",
+        "title": "Reliable Urban Coverage",
+        "text": "Cellular signal is generally strong across the island. Digital navigation is reliable for locating hidden public beach access points."
+      },
+      {
+        "kind": "fuel",
+        "title": "Island vs. Mainland",
+        "text": "Fuel is available on-island but is often more accessible along Highway 278 in Bluffton before crossing the bridge."
+      }
+    ],
+    "arrival": "Arrive at Hilton Head Airport (HHH), pick up your vehicle, and take the 15-minute drive to your rental to drop bags before heading to Coligny.",
+    "vehicle": "Standard cars are ideal; bicycle rentals are the most efficient way to navigate the island's extensive path network.",
+    "goldenHour": "The Harbour Town pier provides a classic sunset view over the Calibogue Sound, depending on seasonal atmospheric clarity.",
+    "sources": [
+      {
+        "label": "Town of Hilton Head Island",
+        "url": "https://www.hiltonheadislandsc.gov/"
+      }
+    ]
+  }
+}

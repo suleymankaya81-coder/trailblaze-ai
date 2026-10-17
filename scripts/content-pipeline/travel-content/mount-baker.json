@@ -1,0 +1,95 @@
+{
+  "slug": "mount-baker",
+  "headline": "Check Forest Service status for Mount Baker Highway access",
+  "reservation": "Mount Baker is managed by the Mount Baker-Snoqualmie National Forest. While general entry does not currently require a timed reservation, specific developed sites like Artist Point and Heather Meadows require a Northwest Forest Pass or equivalent. Campsites and winter ski products must be booked through official operators; changing access systems require a check of the Forest Service website before arrival.",
+  "source_url": "https://www.fs.usda.gov/mbs",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Glacial Peaks and Alpine Meadows",
+        "start": "Suggested: 8 AM from Glacier",
+        "stops": [
+          {
+            "name": "Picture Lake",
+            "detail": "View the reflection of Mount Shuksan from this developed path, ensuring you stay on the boardwalk to protect fragile lakeside vegetation."
+          },
+          {
+            "name": "Artist Point",
+            "detail": "Walk the ridge for 360-degree views of Mount Baker and Shuksan; this area is only accessible when the seasonal upper highway is cleared of snow."
+          }
+        ],
+        "driving": "Allow 2 hours for the mountain corridor; conditions vary by snow level",
+        "note": "The final section of State Route 542 is seasonal and often opens only in late summer."
+      },
+      {
+        "title": "Substantial High-Country Hiking",
+        "start": "Suggested: 7:30 AM from Maple Falls",
+        "stops": [
+          {
+            "name": "Chain Lakes Loop",
+            "detail": "Navigate this varied circuit for perspectives of alpine lakes and volcanic slopes, checking trail reports for lingering snow patches."
+          },
+          {
+            "name": "Heather Meadows Visitor Center",
+            "detail": "Explore the stone building and learn about the area's volcanic history before embarking on shorter nearby trails."
+          }
+        ],
+        "driving": "Allow 90 minutes; logging and recreational traffic varies",
+        "note": "Carry layers even in August as weather shifts rapidly at 5,000 feet."
+      },
+      {
+        "title": "Nooksack River Valley Exploration",
+        "start": "Suggested: 9 AM from Bellingham",
+        "stops": [
+          {
+            "name": "Nooksack Falls",
+            "detail": "Observe the powerful drop into a narrow gorge from the official fenced overlook for safety."
+          },
+          {
+            "name": "Heliotrope Ridge",
+            "detail": "Choose this trail for a glaciated landscape experience, but be prepared to turn back at creek crossings if water levels are high."
+          }
+        ],
+        "driving": "Allow 3 hours total; unhurried pace recommended for forest curves",
+        "note": "Avoid the Heliotrope approach road in low-clearance vehicles without checking recent reports."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead Capacity",
+        "text": "Parking lots at Artist Point and popular trailheads have limited capacity and may require a secondary plan. Use only designated spaces rather than roadside shoulders to protect habitat."
+      },
+      {
+        "kind": "signal",
+        "title": "Communication Gaps",
+        "text": "Cellular reception is unavailable in most of the Nooksack Valley and upper highway reaches. Download all maps and reservation confirmations before leaving Glacier."
+      },
+      {
+        "kind": "fuel",
+        "title": "Last Services",
+        "text": "Glacier is the final gateway for fuel and basic snacks before the climb into the national forest. Bellingham offers full grocery services for multi-day supplies."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Window",
+        "text": "High-elevation trails typically remain under snow until July. Suggested times reflect a summer window; winter visits are limited to ski area operations and lower valley access."
+      },
+      {
+        "kind": "access",
+        "title": "Road Restrictions",
+        "text": "State Route 542 terminates at Artist Point; check WSDOT for seasonal closure dates. Forest roads off the main highway may be impassable for standard rental cars due to washouts."
+      }
+    ],
+    "arrival": "Pick up your rental at Bellingham International Airport (BLI), then stock up on regional supplies in Bellingham before the 45-minute drive to your base in Glacier.",
+    "vehicle": "A standard car suits the paved Mount Baker Highway, but an SUV is recommended for forest service roads; check rental contracts for unpaved road exclusions.",
+    "goldenHour": "Artist Point offers a dramatic sunset view toward Mount Shuksan, though visibility depends on summer wildfire smoke and cloud cover.",
+    "sources": [
+      {
+        "label": "Mount Baker-Snoqualmie National Forest",
+        "url": "https://www.fs.usda.gov/recarea/mbs/recarea/?recid=17522"
+      }
+    ]
+  }
+}

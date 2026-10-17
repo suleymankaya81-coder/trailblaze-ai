@@ -1,0 +1,95 @@
+{
+  "slug": "pigeon-forge",
+  "headline": "Great Smoky Mountains Vehicle Pass and Cades Cove Planning",
+  "reservation": "Great Smoky Mountains National Park requires a valid parking tag for any vehicle stopping for more than 15 minutes. While park entry remains free, these tags are mandatory and must be purchased via official channels. High-demand dinner theaters and mountain-themed park tickets should be secured weeks in advance; check official sites for specific seasonal availability.",
+  "source_url": "https://www.nps.gov/grsm/planyourvisit/fees.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Gateway Sights and Observation Heights",
+        "start": "Suggested: 10 AM from central Pigeon Forge",
+        "stops": [
+          {
+            "name": "The Island in Pigeon Forge",
+            "detail": "Ride the 200-foot tall observation wheel for a 360-degree orientation of the Smokies skyline."
+          },
+          {
+            "name": "The Old Mill",
+            "detail": "Visit this 1830s grist mill to see traditional corn grinding and Appalachian craftsmanship."
+          }
+        ],
+        "driving": "Allow 20 minutes for local transit; conditions vary with Parkway congestion",
+        "note": "Use the local trolley to bypass heavy Parkway traffic during peak afternoon hours."
+      },
+      {
+        "title": "Cades Cove and Forest Falls",
+        "start": "Suggested: 7 AM from Pigeon Forge",
+        "stops": [
+          {
+            "name": "Cades Cove",
+            "detail": "Drive the 11-mile loop to spot black bears and explore preserved 19th-century churches."
+          },
+          {
+            "name": "Laurel Falls Trail",
+            "detail": "Hike the paved path to an 80-foot cascade, ideal for families and casual walkers."
+          }
+        ],
+        "driving": "Allow 2-3 hours for the loop; traffic often slows for wildlife sightings",
+        "note": "Cades Cove vehicle access may be restricted on specific days for bicycle use; check the NPS calendar."
+      },
+      {
+        "title": "High Ridges and Quiet Valleys",
+        "start": "Suggested: 9 AM from Wears Valley",
+        "stops": [
+          {
+            "name": "Newfound Gap",
+            "detail": "Stand on the Tennessee-North Carolina border at the park's lowest drivable pass."
+          },
+          {
+            "name": "Foothills Parkway",
+            "detail": "Experience a quieter scenic drive with unobstructed views of the highest mountain peaks."
+          }
+        ],
+        "driving": "Allow 3 hours for regional loops; conditions vary with mountain weather",
+        "note": "Higher elevation roads like Clingmans Dome Road close seasonally for winter conditions."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "National Park Tags",
+        "text": "Display your mandatory parking tag clearly on the dashboard when stopping at any trailhead or overlook. Purchase these at Sugarlands Visitor Center or authorized machines in town."
+      },
+      {
+        "kind": "signal",
+        "title": "Mountain Connectivity",
+        "text": "Cellular service is virtually non-existent once you enter the national park boundaries. Download offline maps and save trail descriptions before leaving your Pigeon Forge accommodation."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gas Availability",
+        "text": "There are no gas stations located within the Great Smoky Mountains National Park. Ensure your tank is full in Pigeon Forge or Townsend before beginning the Cades Cove or Newfound Gap drives."
+      },
+      {
+        "kind": "timing",
+        "title": "Wildlife Traffic",
+        "text": "Expect significant delays in Cades Cove when bears or deer are visible near the road. Arrive before 8 AM to experience the valley during its quietest and most active wildlife hours."
+      },
+      {
+        "kind": "access",
+        "title": "Linear Parkway Flow",
+        "text": "The town is built along a single main thoroughfare that experiences heavy congestion during dinner show exit times. Plan your movements to avoid the Parkway between 5 PM and 7 PM."
+      }
+    ],
+    "arrival": "Pick up your rental at McGhee Tyson Airport and stop in Sevierville for groceries before checking into your Pigeon Forge cabin.",
+    "vehicle": "Standard cars are sufficient for most paved park roads, but check rental agreements if planning to use unpaved forest service routes.",
+    "goldenHour": "Clingmans Dome for sunset, noting that temperatures drop significantly as the sun dips below the ridge.",
+    "sources": [
+      {
+        "label": "National Park Service - Great Smoky Mountains",
+        "url": "https://www.nps.gov/grsm/index.htm"
+      }
+    ]
+  }
+}

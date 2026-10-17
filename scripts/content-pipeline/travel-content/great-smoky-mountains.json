@@ -1,0 +1,95 @@
+{
+  "slug": "great-smoky-mountains",
+  "headline": "Parking Tag and Campground Booking Official Check",
+  "reservation": "Great Smoky Mountains National Park requires a valid parking tag for any vehicle parked for more than 15 minutes. While there is no entry fee or timed reservation for general driving, all campgrounds require advance booking via Recreation.gov. Popular areas like Cades Cove may have seasonal vehicle-free hours that require checking the official NPS schedule before your visit.",
+  "source_url": "https://www.nps.gov/grsm/planyourvisit/fees.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "High-Elevation Ridges and Overlooks",
+        "start": "Suggested: 8 AM from Gatlinburg",
+        "stops": [
+          {
+            "name": "Newfound Gap",
+            "detail": "Stand at the state line where the Appalachian Trail crosses the road to observe dramatic elevation-based forest changes."
+          },
+          {
+            "name": "Kuwohi",
+            "detail": "Walk the steep paved path to the observation tower for panoramic views, though clouds frequently obscure the horizon."
+          }
+        ],
+        "driving": "Allow 2–3 hours for mountain passes; conditions vary by weather and traffic",
+        "note": "Expect temperatures to be 10–15 degrees cooler on the ridges than in the gateway towns."
+      },
+      {
+        "title": "Cove History and Wildlife Habitats",
+        "start": "Suggested: 7:30 AM from Townsend",
+        "stops": [
+          {
+            "name": "Cades Cove Loop Road",
+            "detail": "Drive the 11-mile scenic loop to view historic churches, log cabins, and potential sightings of black bears or deer."
+          },
+          {
+            "name": "Abrams Falls Trail",
+            "detail": "A woodland hike leading to a high-volume waterfall; the trail features uneven terrain and slippery rocks near the water."
+          }
+        ],
+        "driving": "Allow 4 hours for the loop; wildlife sightings often cause significant traffic delays",
+        "note": "Check for vehicle-free days if planning to drive the loop during the summer season."
+      },
+      {
+        "title": "Riverside Walks and Farm History",
+        "start": "Suggested: 9 AM from Cherokee",
+        "stops": [
+          {
+            "name": "Oconaluftee Visitor Center",
+            "detail": "Tour the Mountain Farm Museum’s historic buildings and watch for the resident elk herd in the nearby fields."
+          },
+          {
+            "name": "Mingus Mill",
+            "detail": "Observe a historic water-powered grist mill located just a short drive from the main visitor center area."
+          }
+        ],
+        "driving": "Allow 1 hour for local transfers; roads are generally paved and wider in this section",
+        "note": "Stay at least 50 yards from elk; these animals are large and unpredictable during the rut."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Mandatory Parking Tags",
+        "text": "Display a daily, weekly, or annual tag in your windshield when stopping at trailheads or overlooks. Tags are sold at visitor centers and automated machines, but a tag does not guarantee a physical space."
+      },
+      {
+        "kind": "signal",
+        "title": "Limited Cellular Service",
+        "text": "Expect total signal loss in deep valleys and along large sections of Newfound Gap Road. Download offline maps and park brochures before leaving your gateway accommodation."
+      },
+      {
+        "kind": "fuel",
+        "title": "No In-Park Fuel Stations",
+        "text": "Gasoline is not sold within the national park boundaries. Fill your tank in Gatlinburg, Townsend, or Cherokee before starting high-elevation drives."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Road Access",
+        "text": "Secondary roads like Roaring Fork Motor Nature Trail and the road to Kuwohi close during winter months. Always verify current road status on the NPS website during shoulder seasons."
+      },
+      {
+        "kind": "access",
+        "title": "Cades Cove Vehicle Restrictions",
+        "text": "The loop road is sometimes restricted to bicycles and pedestrians only on specific mornings. Check the official park calendar to ensure the road is open to motorized vehicles during your visit."
+      }
+    ],
+    "arrival": "Pick up your rental at McGhee Tyson Airport and stock up on groceries in Maryville or Sevierville before heading to your mountain lodging.",
+    "vehicle": "Standard vehicles are suitable for main roads; check rental agreements for restrictions on unpaved gravel secondary routes.",
+    "goldenHour": "Clingmans Dome (Kuwohi) for sunset, though evening fog is common in autumn.",
+    "sources": [
+      {
+        "label": "National Park Service",
+        "url": "https://www.nps.gov/grsm/index.htm"
+      }
+    ]
+  }
+}

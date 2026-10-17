@@ -1,0 +1,95 @@
+{
+  "slug": "glacier",
+  "headline": "Manage Glacier Vehicle Entry and Corridor Permits",
+  "reservation": "Entry frequently requires specific vehicle reservations for corridors like Going-to-the-Sun Road and North Fork during peak months. These are separate from the standard park pass and must be secured via the official Recreation.gov system; always check the National Park Service site for current seasonal dates and release schedules.",
+  "source_url": "https://www.nps.gov/glac/planyourvisit/vehicle-reservations.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Lowland Forests and Glacial Waters",
+        "start": "Suggested: 8 AM from Whitefish",
+        "stops": [
+          {
+            "name": "Lake McDonald",
+            "detail": "View the colorful submerged stones at the shore and consider the historic lodge architecture."
+          },
+          {
+            "name": "Trail of the Cedars",
+            "detail": "Walk the accessible boardwalk through ancient hemlock and cedar groves near Avalanche Creek."
+          }
+        ],
+        "driving": "Allow 2 hours for gateway transit; conditions vary with seasonal traffic.",
+        "note": "Early arrivals are suggested for parking near the Avalanche Creek trailhead."
+      },
+      {
+        "title": "The Alpine Continental Divide",
+        "start": "Suggested: 7 AM from West Glacier",
+        "stops": [
+          {
+            "name": "Logan Pass",
+            "detail": "Visit the highest point reachable by car to observe alpine meadows and the Hidden Lake Overlook trail."
+          },
+          {
+            "name": "Big Bend",
+            "detail": "Stop at this iconic curve for expansive views of the Weeping Wall and valley peaks."
+          }
+        ],
+        "driving": "Allow 4–5 hours for the full mountain road; conditions vary by weather.",
+        "note": "Check vehicle length and width restrictions before attempting the full mountain transit."
+      },
+      {
+        "title": "Eastern Glacial Valleys",
+        "start": "Suggested: 8 AM from St. Mary",
+        "stops": [
+          {
+            "name": "Wild Goose Island Lookout",
+            "detail": "Photograph the tiny island set against the massive backdrop of St. Mary Lake."
+          },
+          {
+            "name": "Many Glacier Valley",
+            "detail": "Search for wildlife on the slopes surrounding Swiftcurrent Lake in this distinct north-eastern drainage."
+          }
+        ],
+        "driving": "Allow 3 hours for eastern valley exploration; conditions vary.",
+        "note": "Many Glacier is a separate entrance; confirm if a specific corridor reservation is required."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Logan Pass Congestion",
+        "text": "Lots at high-elevation trailheads often reach capacity early in the morning during summer months. Consider using the park shuttle system from lower transit hubs to avoid parking delays."
+      },
+      {
+        "kind": "signal",
+        "title": "Limited Corridor Connectivity",
+        "text": "Cellular service is largely unavailable along the Going-to-the-Sun Road and in remote valleys like Many Glacier. Download navigation data and park maps before leaving gateway towns like Columbia Falls."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Supply Points",
+        "text": "Gasoline is not sold within the park boundaries or along the main scenic drive. Ensure your tank is full in West Glacier or St. Mary before beginning the mountain crossing."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Road Openings",
+        "text": "The central alpine section of the park typically opens in late June or early July depending on snowpack. Check the official road status page for real-time updates on plow progress."
+      },
+      {
+        "kind": "access",
+        "title": "Vehicle Size Limits",
+        "text": "Vehicles exceeding 21 feet in length or 8 feet in width are prohibited on the narrowest sections of the mountain road. Measure your rental RV carefully to ensure it meets these safety requirements."
+      }
+    ],
+    "arrival": "Collect your rental at Glacier Park International Airport (FCA), then stock up on groceries in Kalispell or Whitefish before heading to your gateway lodging.",
+    "vehicle": "A standard car is sufficient for paved roads, but high-clearance is better for North Fork; verify RV length limits for the Sun Road.",
+    "goldenHour": "Wild Goose Island Overlook is a premier location for sunrise, though mountain shadows vary by month.",
+    "sources": [
+      {
+        "label": "Glacier National Park Official Site",
+        "url": "https://www.nps.gov/glac/index.htm"
+      }
+    ]
+  }
+}

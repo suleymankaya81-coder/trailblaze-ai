@@ -1,0 +1,95 @@
+{
+  "slug": "virginia-beach",
+  "headline": "Advance Coastal Lodging and Marine Excursions",
+  "reservation": "Standard hotel and vacation rental bookings are necessary, with a 4–6 month lead time suggested for summer oceanfront stays. Campsites at First Landing State Park fill rapidly for holiday weekends. Whale watching and boat tours require separate tickets through private operators; check official park pages for seasonal tram or tour schedules.",
+  "source_url": "https://www.visitvirginiabeach.com/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Resort Core and Coastal History",
+        "start": "Suggested: 9 AM from Atlantic Avenue",
+        "stops": [
+          {
+            "name": "Virginia Beach Boardwalk",
+            "detail": "Stroll or cycle the three-mile concrete path, passing the 24-foot bronze King Neptune statue."
+          },
+          {
+            "name": "Cape Henry Lighthouse",
+            "detail": "Climb the 1792 structure for views of the Chesapeake Bay mouth; located on the Fort Story military base."
+          }
+        ],
+        "driving": "Allow 30–40 minutes for local transit; summer traffic on Atlantic Avenue can be heavy.",
+        "note": "Cape Henry Lighthouse requires valid ID for base entry; check military access status before visiting."
+      },
+      {
+        "title": "Swamps and Shorelines",
+        "start": "Suggested: 8:30 AM from Shore Drive",
+        "stops": [
+          {
+            "name": "First Landing State Park",
+            "detail": "Hike the Bald Cypress Trail through prehistoric-looking wetlands draped in Spanish moss."
+          },
+          {
+            "name": "Virginia Aquarium & Marine Science Center",
+            "detail": "View sharks and rays in glass tunnels and explore local marsh habitats featuring river otters."
+          }
+        ],
+        "driving": "Allow 45 minutes; sights are clustered on the northern end of the city.",
+        "note": "First Landing is the state's most-visited park; parking lots may reach capacity on summer weekends."
+      },
+      {
+        "title": "Wild Southern Reaches",
+        "start": "Suggested: 8 AM from Sandbridge",
+        "stops": [
+          {
+            "name": "Back Bay National Wildlife Refuge",
+            "detail": "Observe migratory birds and wild pigs among the freshwater marshes and dunes."
+          },
+          {
+            "name": "False Cape State Park",
+            "detail": "Access this remote beach only by foot, bike, or boat for a look at the untouched Virginia coast."
+          }
+        ],
+        "driving": "Allow 1 hour to reach Sandbridge; transit into False Cape is non-vehicular.",
+        "note": "Prepare for a long walk or bike ride as False Cape has no vehicle access for the general public."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Oceanfront Metering",
+        "text": "City parking garages and meters are concentrated between 2nd and 40th streets. Rates and availability fluctuate significantly during summer festivals."
+      },
+      {
+        "kind": "access",
+        "title": "Military Base Entry",
+        "text": "Access to the historic Cape Henry Lighthouse requires passing through a military security checkpoint. Check official Fort Story visitor requirements for current ID mandates."
+      },
+      {
+        "kind": "signal",
+        "title": "Southern Refuge Connectivity",
+        "text": "Cellular service is reliable in the resort area but may drop in the remote marshes of Back Bay. Download trail maps for False Cape before heading south."
+      },
+      {
+        "kind": "fuel",
+        "title": "Sandbridge Logistics",
+        "text": "Fuel stations are plentiful in the main city but sparse once you enter the Sandbridge residential area. Refill near Nimmo Parkway before heading to the refuges."
+      },
+      {
+        "kind": "timing",
+        "title": "Whale Migration Windows",
+        "text": "Humpback whale tours typically operate from December through February. Sightings are weather-dependent and boat capacities are limited."
+      }
+    ],
+    "arrival": "Pick up rental at Norfolk International Airport (ORF). Drive 18 miles east on I-264 to reach the oceanfront resort hotels for check-in.",
+    "vehicle": "Standard passenger cars are ideal; RVs face strict parking restrictions in the resort area and narrow streets in Sandbridge.",
+    "goldenHour": "The Cape Henry Lighthouse area provides excellent low-light views of the bay, though sunset occurs over land, not the ocean.",
+    "sources": [
+      {
+        "label": "Virginia State Parks",
+        "url": "https://www.dcr.virginia.gov/state-parks/first-landing"
+      }
+    ]
+  }
+}

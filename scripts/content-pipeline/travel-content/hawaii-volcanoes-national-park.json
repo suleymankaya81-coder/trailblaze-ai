@@ -1,0 +1,95 @@
+{
+  "slug": "hawaii-volcanoes-national-park",
+  "headline": "Monitor Volcanic Activity and Backcountry Permits",
+  "reservation": "Standard entry requires a park pass; however, all backcountry camping requires a specific permit through the official NPS system. Volcanic conditions change rapidly, potentially closing areas; check the official USGS and NPS alerts daily before heading to the summit.",
+  "source_url": "https://www.nps.gov/havo/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "The Smoking Summit",
+        "start": "Suggested: 8 AM from Volcano Village",
+        "stops": [
+          {
+            "name": "Kilauea Overlook",
+            "detail": "Observe the massive scale of the caldera from the rim; visibility is typically highest in the early morning."
+          },
+          {
+            "name": "Nahuku (Thurston Lava Tube)",
+            "detail": "Walk through a massive underground passage formed by ancient lava flows, surrounded by lush fern forest."
+          }
+        ],
+        "driving": "Allow 30 minutes for summit area travel; conditions vary",
+        "note": "High altitude and sulfur gases can affect breathing; stay on marked paths to avoid steam vents."
+      },
+      {
+        "title": "Lava Lake Descent",
+        "start": "Suggested: 7:30 AM from the Kilauea Iki Trailhead",
+        "stops": [
+          {
+            "name": "Kilauea Iki Trail",
+            "detail": "Hike down through rainforest onto the solidified floor of a former lava lake, a landscape of cracked basalt."
+          },
+          {
+            "name": "Pu‘upua‘i Overlook",
+            "detail": "View the cinder cone formed during the 1959 eruption and see the contrast of regenerating life."
+          }
+        ],
+        "driving": "Allow 20 minutes for trailhead access; conditions vary",
+        "note": "Lava rock is abrasive and holds heat; sturdy footwear and sun protection are essential for the crater floor."
+      },
+      {
+        "title": "The Coastal Descent",
+        "start": "Suggested: 9 AM from the Visitor Center",
+        "stops": [
+          {
+            "name": "Chain of Craters Road",
+            "detail": "Drive the scenic 19-mile route that drops 3,700 feet to the sea, passing numerous historic lava flows."
+          },
+          {
+            "name": "Hōlei Sea Arch",
+            "detail": "Witness the power of the Pacific at this dramatic basalt arch located at the road's end."
+          }
+        ],
+        "driving": "Allow 3 hours for the round trip drive and stops; conditions vary",
+        "note": "There is no fuel or food along this road; ensure your tank is full before leaving the summit."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead Congestion",
+        "text": "Parking at Kilauea Iki and Nahuku often fills by mid-morning during peak seasons. Use the early morning hours for these popular spots to ensure access."
+      },
+      {
+        "kind": "signal",
+        "title": "Summit Only",
+        "text": "While the visitor center has basic coverage, signal drops entirely as you descend Chain of Craters Road. Do not rely on streaming GPS for the coastal section."
+      },
+      {
+        "kind": "fuel",
+        "title": "Village Supplies",
+        "text": "Volcano Village is the last reliable stop for fuel and groceries before entering the park. Hilo offers more expansive options for those arriving from the airport."
+      },
+      {
+        "kind": "timing",
+        "title": "Elevation Weather",
+        "text": "The summit is often 15 degrees cooler than the coast and frequently wet. Suggested hiking times prioritize early starts to beat the midday tropical heat."
+      },
+      {
+        "kind": "access",
+        "title": "Lava Stability",
+        "text": "Coastal cliffs and lava benches are inherently unstable and subject to collapse. Always respect official barriers and never enter closed zones for photography."
+      }
+    ],
+    "arrival": "Land at Hilo (ITO), pick up your rental car, and shop for supplies in town before the 45-minute drive to the park.",
+    "vehicle": "Standard cars are suitable for paved roads; check rental contracts regarding restrictions for off-road or unpaved tracks.",
+    "goldenHour": "The Kilauea rim offers dramatic lighting at sunset, though cloud cover is frequent; check the Kilauea webcam for current visibility.",
+    "sources": [
+      {
+        "label": "National Park Service",
+        "url": "https://www.nps.gov/havo/planyourvisit/index.htm"
+      }
+    ]
+  }
+}

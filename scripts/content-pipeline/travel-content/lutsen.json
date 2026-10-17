@@ -1,0 +1,95 @@
+{
+  "slug": "lutsen",
+  "headline": "Superior National Forest and Resort Access Protocols",
+  "reservation": "Daily vehicle permits are required for Minnesota State Parks like Temperance River; Lutsen Mountains lift tickets and gondola rides require separate seasonal bookings. Official checks of the Superior Hiking Trail Association site are recommended for trail status.",
+  "source_url": "https://www.dnr.state.mn.us/state_parks/temperance_river/index.html",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Sawtooth Mountain Summits",
+        "start": "Suggested: 8:30 AM from Lutsen",
+        "stops": [
+          {
+            "name": "Moose Mountain Gondola",
+            "detail": "Take the scenic tram to the summit for panoramic views of Lake Superior and the boreal forest canopy."
+          },
+          {
+            "name": "Oberg Mountain Loop",
+            "detail": "Hike the Superior Hiking Trail segment for multiple overlooks of Oberg Lake and the rolling Sawtooth range."
+          }
+        ],
+        "driving": "Allow 1 hour; gravel forest roads require cautious speeds",
+        "note": "The gondola operation is weather-dependent; check resort status for wind closures."
+      },
+      {
+        "title": "North Shore Cascades and Canyons",
+        "start": "Suggested: 9 AM from Tofte",
+        "stops": [
+          {
+            "name": "Temperance River State Park",
+            "detail": "View the dramatic potholes and deep river gorges carved into ancient volcanic rock."
+          },
+          {
+            "name": "Ray Berglund State Wayside",
+            "detail": "Access the mouth of the Onion River for agate hunting on the basalt pebble beaches of Lake Superior."
+          }
+        ],
+        "driving": "Allow 1 hour; conditions vary on Highway 61",
+        "note": "Waterfall volume peaks during the spring thaw, typically in late April and May."
+      },
+      {
+        "title": "Boreal Forest and Maritime History",
+        "start": "Suggested: 10 AM from Lutsen",
+        "stops": [
+          {
+            "name": "North Shore Commercial Fishing Museum",
+            "detail": "Learn about the Scandinavian pioneers and the history of commercial fishing in Tofte."
+          },
+          {
+            "name": "Caribou Lake",
+            "detail": "Drive inland for a quiet look at the freshwater lakes of the Superior National Forest."
+          }
+        ],
+        "driving": "Allow 1.5 hours; conditions vary with forest road maintenance",
+        "note": "Inland forest roads may be impassable in early spring due to mud; check local conditions."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "State Park Permits",
+        "text": "Daily or annual Minnesota State Park permits must be displayed at Temperance River. Trailhead parking at Oberg Mountain fills quickly on autumn weekends."
+      },
+      {
+        "kind": "signal",
+        "title": "Wilderness Connectivity",
+        "text": "Signal is generally reliable along Highway 61 but drops significantly once you travel inland toward the Superior Hiking Trail. Offline maps are essential."
+      },
+      {
+        "kind": "fuel",
+        "title": "Highway 61 Services",
+        "text": "Fuel is available in Tofte and Grand Marais. Ensure a full tank before exploring remote forest roads inland from the lake."
+      },
+      {
+        "kind": "timing",
+        "title": "Fall Foliage Peak",
+        "text": "Peak colors typically occur late September to early October. Mid-week visits are suggested to avoid heavy leaf-peeping traffic."
+      },
+      {
+        "kind": "access",
+        "title": "Trail Conditions",
+        "text": "Spring 'mud season' can lead to temporary trail closures to prevent erosion. Check the Superior Hiking Trail Association for current status."
+      }
+    ],
+    "arrival": "Pick up rental at DLH for the 2.5-hour drive north; stop in Duluth for major supplies as local options in Lutsen are limited.",
+    "vehicle": "All-wheel drive is suggested for winter visits; standard vehicles are fine for Highway 61 in summer. Check rental rules for forest roads.",
+    "goldenHour": "Oberg Mountain Overlook for sunrise over Lake Superior, with visibility subject to morning lake mist.",
+    "sources": [
+      {
+        "label": "Minnesota Department of Natural Resources",
+        "url": "https://www.dnr.state.mn.us/"
+      }
+    ]
+  }
+}

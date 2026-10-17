@@ -1,0 +1,95 @@
+{
+  "slug": "california-coast",
+  "headline": "Regional State Park and Landmark Reservations",
+  "reservation": "Entry to California State Parks along the coast typically requires a daily vehicle fee, while the Monterey Bay Aquarium and Hearst Castle require timed-entry tickets purchased well in advance. Popular campgrounds like those in Big Sur or Point Lobos require reservations months ahead via ReserveCalifornia; always check the official site for changing access policies due to road repairs.",
+  "source_url": "https://www.parks.ca.gov/?page_id=571",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Monterey Peninsula Waterfront",
+        "start": "Suggested: 9 AM from Monterey",
+        "stops": [
+          {
+            "name": "Monterey Bay Aquarium",
+            "detail": "Explore the world-class kelp forest and sea otter exhibits located on historic Cannery Row."
+          },
+          {
+            "name": "17-Mile Drive",
+            "detail": "Follow the scenic toll road to see the Lone Cypress and the rugged Pebble Beach coastline."
+          }
+        ],
+        "driving": "Allow 1 hour for the loop drive; expect heavy traffic near Cannery Row.",
+        "note": "Marine fog (June Gloom) is common in summer and may obscure views until late morning."
+      },
+      {
+        "title": "Point Lobos and Carmel Bluffs",
+        "start": "Suggested: 8 AM from Carmel-by-the-Sea",
+        "stops": [
+          {
+            "name": "Point Lobos State Natural Reserve",
+            "detail": "Walk the Cypress Grove Trail to see rare Monterey Cypress trees and hidden turquoise coves."
+          },
+          {
+            "name": "Carmel Mission Basilica",
+            "detail": "Visit this 18th-century Spanish mission and its peaceful gardens for a break from the coastal wind."
+          }
+        ],
+        "driving": "Allow 30 minutes for local transfers; parking at Point Lobos is extremely limited.",
+        "note": "Stay on marked trails at Point Lobos to protect fragile bluff ecosystems and avoid poison oak."
+      },
+      {
+        "title": "Big Sur Gateway and Redwoods",
+        "start": "Suggested: 8:30 AM from Big Sur Station",
+        "stops": [
+          {
+            "name": "Pfeiffer Big Sur State Park",
+            "detail": "Hike through ancient redwood groves along the Big Sur River away from the ocean spray."
+          },
+          {
+            "name": "Bixby Creek Bridge",
+            "detail": "Stop at the designated pullouts to view one of the most photographed concrete spans in the world."
+          }
+        ],
+        "driving": "Allow 3 hours for the return trip to Monterey; Highway 1 is narrow with many curves.",
+        "note": "Check Caltrans for current Highway 1 closures, as landslides frequently block access south of Big Sur."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "State Park Capacity",
+        "text": "Lots at Point Lobos and Pfeiffer Falls often fill by 9:00 AM on weekends. Have a backup plan or use local shuttles where available to avoid being turned away."
+      },
+      {
+        "kind": "signal",
+        "title": "Big Sur Dead Zones",
+        "text": "Expect total loss of cellular service once you travel south of Carmel Highlands. Download your maps and lodging confirmations before leaving the Monterey area."
+      },
+      {
+        "kind": "fuel",
+        "title": "Central Coast Pricing",
+        "text": "Fuel is available in Monterey, Carmel, and at limited stations in Big Sur where prices are significantly higher. Refill in Monterey or Carmel to avoid high costs and limited availability."
+      },
+      {
+        "kind": "timing",
+        "title": "Whale Watching Seasons",
+        "text": "Gray whales migrate from December to April, while Blue and Humpback whales are common in summer and fall. Suggested times for boat tours are morning hours when the sea is typically calmer."
+      },
+      {
+        "kind": "access",
+        "title": "Highway 1 Reliability",
+        "text": "Major winter storms often cause road closures in the Big Sur region that can last for months. Check the Caltrans QuickMap app for real-time status before attempting a through-drive."
+      }
+    ],
+    "arrival": "Pick up your vehicle at Monterey Regional Airport (MRY) and stop in Carmel for groceries and layers before heading to coastal lodging.",
+    "vehicle": "A standard vehicle is ideal; RVs larger than 20 feet are not recommended for the narrow, winding sections of Highway 1 and may be restricted on some segments.",
+    "goldenHour": "Lone Cypress on 17-Mile Drive offers a classic sunset view, though coastal fog can move in rapidly at dusk depending on the season.",
+    "sources": [
+      {
+        "label": "California State Parks",
+        "url": "https://www.parks.ca.gov/"
+      }
+    ]
+  }
+}

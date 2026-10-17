@@ -1,0 +1,95 @@
+{
+  "slug": "gatlinburg",
+  "headline": "Great Smoky Mountains Parking Tag and Activity Reservations",
+  "reservation": "A valid parking tag is required for all vehicles stopping for more than 15 minutes within the national park. While entry to the park is not ticketed, popular activities like Mount Le Conte lodging or backcountry camping require separate permits. Check the official NPS site for the latest parking fee structures and seasonal road status, as systems are subject to change.",
+  "source_url": "https://www.nps.gov/grsm/planyourvisit/fees.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Riverside Woods and Mountain Gateways",
+        "start": "Suggested: 8:30 AM from downtown Gatlinburg",
+        "stops": [
+          {
+            "name": "Sugarlands Visitor Center",
+            "detail": "Gather essential topographical maps and speak with staff about current trail water levels and seasonal wildlife activity."
+          },
+          {
+            "name": "Gatlinburg Trail",
+            "detail": "Walk this relatively flat riverside path that serves as a rare dog-friendly and bicycle-accessible route into the forest."
+          }
+        ],
+        "driving": "Allow 20–40 minutes; traffic through the main Parkway varies significantly.",
+        "note": "Secure your mandatory parking tag at the visitor center or automated kiosks before leaving your vehicle."
+      },
+      {
+        "title": "High Elevation Vistas and Geological Formations",
+        "start": "Suggested: 7:30 AM from Gatlinburg",
+        "stops": [
+          {
+            "name": "Newfound Gap",
+            "detail": "Visit the state line at nearly 5,000 feet for panoramic views and a segment of the Appalachian Trail."
+          },
+          {
+            "name": "Alum Cave Bluffs",
+            "detail": "Trek to this massive concave shale overhang, noting the transition from hardwood forest to high-altitude firs."
+          }
+        ],
+        "driving": "Allow 1.5–2 hours for the round trip on Newfound Gap Road; conditions vary with weather.",
+        "note": "Temperature drops of 10-15 degrees are common at these elevations; carry layers even if town is warm."
+      },
+      {
+        "title": "Mountain History and Valley Scenery",
+        "start": "Suggested: 9:00 AM from Gatlinburg",
+        "stops": [
+          {
+            "name": "Little River Road",
+            "detail": "Drive this winding route following the water to appreciate the park's lush valley flora and stone bridges."
+          },
+          {
+            "name": "Great Smoky Arts & Crafts Community",
+            "detail": "Explore the historic 8-mile loop of independent studios featuring local pottery, weaving, and woodworking."
+          }
+        ],
+        "driving": "Allow 1 hour for the scenic drive; expect slower speeds near water access points.",
+        "note": "Avoid stopping in traffic if wildlife is visible; use designated pullouts only."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Mandatory Park Tags",
+        "text": "Every vehicle parked within Great Smoky Mountains National Park must display a valid tag. These are available as daily, weekly, or annual passes at visitor centers and several local kiosks."
+      },
+      {
+        "kind": "signal",
+        "title": "High Elevation Dead Zones",
+        "text": "Cellular service is unreliable once you pass the Sugarlands area heading uphill toward Newfound Gap. Download all necessary trail maps and parking confirmations for offline use before leaving Gatlinburg."
+      },
+      {
+        "kind": "fuel",
+        "title": "Town Supply Strategy",
+        "text": "There are no gas stations located inside the National Park boundaries. Refuel in Gatlinburg or Pigeon Forge before embarking on the climb toward the Tennessee-North Carolina border."
+      },
+      {
+        "kind": "timing",
+        "title": "Early Departure Benefits",
+        "text": "Trailhead parking at Alum Cave and other popular spots frequently reaches capacity by mid-morning. Arriving before 8 AM is recommended during summer and the October leaf season."
+      },
+      {
+        "kind": "access",
+        "title": "Seasonal Road Closures",
+        "text": "Higher altitude roads like Clingmans Dome Road typically close from December through late March. Always check the NPS current conditions page for temporary weather-related closures on Newfound Gap Road."
+      }
+    ],
+    "arrival": "Upon landing at McGhee Tyson Airport, pick up your rental vehicle and head to Sevierville for groceries. Check into your Gatlinburg base before the evening traffic peak on Highway 441.",
+    "vehicle": "Standard cars are suitable for main paved roads, but check rental agreements for restrictions on steep, unpaved cabin access roads common in East Tennessee.",
+    "goldenHour": "Morton Overlook offers a classic sunset view toward the valley, though fog and cloud cover frequently alter visibility seasonally.",
+    "sources": [
+      {
+        "label": "National Park Service",
+        "url": "https://www.nps.gov/grsm/index.htm"
+      }
+    ]
+  }
+}

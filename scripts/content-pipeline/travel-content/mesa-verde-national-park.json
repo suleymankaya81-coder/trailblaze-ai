@@ -1,0 +1,95 @@
+{
+  "slug": "mesa-verde-national-park",
+  "headline": "Mandatory Timed Tour Tickets for Cliff Dwellings",
+  "reservation": "Entry to iconic sites like Cliff Palace and Balcony House requires a ranger-led tour ticket, booked via Recreation.gov. Tickets are released on a rolling window and frequently sell out minutes after launch; this is separate from the park entry fee. Always check the official NPS site for seasonal site closures and road construction updates.",
+  "source_url": "https://www.nps.gov/meve/planyourvisit/tour_tickets.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "The Great Alcoves",
+        "start": "Suggested: 8 AM from Visitor Center",
+        "stops": [
+          {
+            "name": "Cliff Palace",
+            "detail": "Join a scheduled tour to explore North America's largest cliff dwelling with over 150 rooms."
+          },
+          {
+            "name": "Balcony House",
+            "detail": "Experience a more adventurous tour involving ladder climbs and crawling through a stone tunnel."
+          }
+        ],
+        "driving": "Allow 60 minutes for the winding climb to Chapin Mesa; conditions vary.",
+        "note": "Tours involve steep elevation changes; check physical requirements before booking."
+      },
+      {
+        "title": "Mesa Top History",
+        "start": "Suggested: 9 AM from Chapin Mesa",
+        "stops": [
+          {
+            "name": "Mesa Top Loop Road",
+            "detail": "Drive this 6-mile route to see pithouses and the development of Ancestral Puebloan architecture."
+          },
+          {
+            "name": "Sun Temple",
+            "detail": "Visit this D-shaped ceremonial structure located across the canyon from Cliff Palace."
+          }
+        ],
+        "driving": "Allow 45 minutes for loop transit and overlooks; conditions vary.",
+        "note": "Afternoon monsoons in July can lead to temporary site evacuations."
+      },
+      {
+        "title": "Wetherill Mesa and Rock Art",
+        "start": "Suggested: 8:30 AM from Park Entrance",
+        "stops": [
+          {
+            "name": "Step House",
+            "detail": "Take a self-guided walk to see both a pithouse and a cliff dwelling in one alcove."
+          },
+          {
+            "name": "Petroglyph Point Trail",
+            "detail": "Hike the 2.4-mile loop to view ancient rock art panels along the canyon walls."
+          }
+        ],
+        "driving": "Allow 75 minutes for the transit to Wetherill Mesa; conditions vary.",
+        "note": "The road to Wetherill Mesa is seasonal and has vehicle length restrictions."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Mesa Top Lot Limitations",
+        "text": "Parking at Cliff Palace and the Museum is limited; carpooling from the Far View area is encouraged. Arrive at least 20 minutes before your tour time to secure a space."
+      },
+      {
+        "kind": "signal",
+        "title": "High Plateau Dead Zones",
+        "text": "Cell service is nearly non-existent once you leave the park entrance area. Download the official NPS app and maps for offline use before ascending the mesa."
+      },
+      {
+        "kind": "fuel",
+        "title": "Park Boundary Services",
+        "text": "The only fuel station inside the park is seasonal at Morefield Campground. Refill in Cortez or Mancos before entering the park for the day."
+      },
+      {
+        "kind": "timing",
+        "title": "Transit Time Buffer",
+        "text": "The drive from the park entrance to the cliff dwellings takes nearly an hour due to steep grades and switchbacks. Do not schedule tours within 90 minutes of your arrival at the gate."
+      },
+      {
+        "kind": "access",
+        "title": "Seasonal Site Availability",
+        "text": "Wetherill Mesa and guided cliff dwelling tours typically close from late October through April. During winter, the park remains open for rim-viewing only."
+      }
+    ],
+    "arrival": "Arrive via Cortez (CEZ) or Durango and stop for water and snacks. Check in at the Visitor and Research Center to confirm tour departure locations before the long climb.",
+    "vehicle": "A standard car is fine for paved loops, but ensure brakes are in good condition for the steep descent; check for vehicle length limits on Wetherill Mesa Road.",
+    "goldenHour": "Park Point Overlook for 360-degree views of the Four Corners, with timing varying by season.",
+    "sources": [
+      {
+        "label": "National Park Service",
+        "url": "https://www.nps.gov/meve/"
+      }
+    ]
+  }
+}

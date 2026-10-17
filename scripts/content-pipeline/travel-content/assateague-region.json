@@ -1,0 +1,99 @@
+{
+  "slug": "assateague-region",
+  "headline": "Monitor Entrance Gate Queues and Seasonal Pony Swim Impacts",
+  "reservation": "Entry to the Chincoteague National Wildlife Refuge requires a specific pass, while camping reservations on the Maryland side must be secured months in advance via recreation.gov. Neither a refuge pass nor a campsite guarantees parking during peak summer weekends. Changing seasonal entry systems require verification on the official NPS or FWS websites before arrival.",
+  "source_url": "https://www.fws.gov/refuge/chincoteague",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Maritime Forests and Marshland Discovery",
+        "start": "Suggested: 8 AM from Chincoteague Gateway",
+        "stops": [
+          {
+            "name": "Woodland Trail",
+            "detail": "Walk through loblolly pine forests to look for the rare Delmarva Peninsula fox squirrel."
+          },
+          {
+            "name": "Assateague Lighthouse",
+            "detail": "Climb the historic red-and-white striped tower for panoramic views of the barrier islands and Atlantic coastline."
+          }
+        ],
+        "driving": "Allow 20-40 minutes within the refuge; conditions vary by wildlife activity.",
+        "note": "Stay at least 40 feet away from wild horses as per federal regulations."
+      },
+      {
+        "title": "Aquatic Wildlife and Salt Marsh Paddling",
+        "start": "Suggested: 9 AM from the Town Dock",
+        "stops": [
+          {
+            "name": "Herbert H. Bateman Education Center",
+            "detail": "Learn about barrier island geology and migratory flyway ecology through interactive exhibits."
+          },
+          {
+            "name": "Swan Cove Trail",
+            "detail": "Cycle or hike toward the beach to spot ospreys and snowy egrets in the freshwater pools."
+          }
+        ],
+        "driving": "Walking or cycling preferred; allow 1-2 hours for paddling transfers.",
+        "note": "Mosquito activity is high in summer; choose breezy days for marsh visits."
+      },
+      {
+        "title": "Atlantic Coastline and Bayside Culture",
+        "start": "Suggested: 8:30 AM from Tom's Cove",
+        "stops": [
+          {
+            "name": "Wild Beach",
+            "detail": "Experience the undeveloped Atlantic shoreline for shell hunting and birdwatching."
+          },
+          {
+            "name": "Chincoteague Main Street",
+            "detail": "Visit local oyster museums and galleries to understand the region's working waterfront history."
+          }
+        ],
+        "driving": "Allow 30 minutes for gateway travel; congestion is high during July pony events.",
+        "note": "Check beach access status for shorebird nesting season restrictions."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Refuge Lot Availability",
+        "text": "Parking near popular trailheads and beach access often reaches capacity by mid-morning in summer. Arriving before 9 AM or after 4 PM is suggested to avoid the longest entrance queues."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Limits",
+        "text": "Cellular reception is generally stable in Chincoteague but becomes unreliable within the deep loblolly pine forests. Download offline maps for navigating the back-bay marsh trails."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Service Hubs",
+        "text": "Full services including fuel and groceries are located in Chincoteague and Oak Hall. No fuel is available once you cross the bridge into the National Wildlife Refuge or Seashore."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Biting Insects",
+        "text": "The salt marsh mosquitoes and biting flies are most active from June through August. Late spring and autumn offer a more comfortable climate for hiking without extreme humidity."
+      },
+      {
+        "kind": "access",
+        "title": "Bridge and Trail Conditions",
+        "text": "Coastal storms can lead to temporary closures of the overwash sand trails or beach access points. Always verify current road conditions at the visitor center or via official social media alerts."
+      }
+    ],
+    "arrival": "Pick up rental at SBY airport and drive approximately 45 minutes to Chincoteague. Stock up on supplies in Salisbury or Chincoteague before checking into local inns or campgrounds.",
+    "vehicle": "Standard vehicles are suitable for paved refuge roads; check rental contracts for restrictions on unpaved or sand-access routes.",
+    "goldenHour": "Sunset from the Marsh Island overlook, though exact lighting varies by season and coastal fog.",
+    "sources": [
+      {
+        "label": "Chincoteague National Wildlife Refuge",
+        "url": "https://www.fws.gov/refuge/chincoteague"
+      },
+      {
+        "label": "Assateague Island National Seashore",
+        "url": "https://www.nps.gov/asis/index.htm"
+      }
+    ]
+  }
+}

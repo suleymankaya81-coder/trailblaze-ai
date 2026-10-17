@@ -1,0 +1,95 @@
+{
+  "slug": "chattanooga",
+  "headline": "Attraction and State Park Reservation Requirements",
+  "reservation": "While the city is open, popular attractions like the Tennessee Aquarium and specific glamping sites require advance booking. State parks near the city, such as Cloudland Canyon, manage their own camping and yurt systems; verify official state or NPS portals for your specific dates, especially for holiday weekends.",
+  "source_url": "https://www.nps.gov/chch",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Mountain History and Heights",
+        "start": "Suggested: 9 AM from Downtown",
+        "stops": [
+          {
+            "name": "Point Park",
+            "detail": "Explore this section of the Chickamauga and Chattanooga National Military Park for Civil War history and views of the Moccasin Bend."
+          },
+          {
+            "name": "Sunset Rock",
+            "detail": "Walk the bluff-side trail on Lookout Mountain for a perspective on the Tennessee River valley."
+          }
+        ],
+        "driving": "Allow 45 minutes for the ascent to Lookout Mountain; parking at trailheads is limited.",
+        "note": "NPS sites may require entrance fees; check the official site for current pass requirements."
+      },
+      {
+        "title": "Riverfront and Urban Nature",
+        "start": "Suggested: 10 AM from Riverfront",
+        "stops": [
+          {
+            "name": "Tennessee Riverwalk",
+            "detail": "Walk or bike this paved path connecting the downtown district to the surrounding riverside parks."
+          },
+          {
+            "name": "Tennessee Aquarium",
+            "detail": "Visit the River and Ocean journeys to understand the biodiversity of the Tennessee River watershed."
+          }
+        ],
+        "driving": "Walking or local shuttle is recommended for the downtown core.",
+        "note": "Aquarium tickets are often timed; plan your arrival window accordingly."
+      },
+      {
+        "title": "Gorges and Plateaus",
+        "start": "Suggested: 8:30 AM from North Shore",
+        "stops": [
+          {
+            "name": "Signal Point",
+            "detail": "Start at this Signal Mountain overlook for views into the Tennessee River Gorge and access to the Cumberland Trail."
+          },
+          {
+            "name": "Rainbow Falls Trail",
+            "detail": "Hike the wooded terrain toward the Edward’s Point area for a rugged look at the plateau landscape."
+          }
+        ],
+        "driving": "Allow 1 hour for the drive to Signal Mountain and trailhead parking; conditions vary with weather.",
+        "note": "Trails on the Cumberland Plateau are rocky and can be slippery after rain."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Downtown vs. Mountain",
+        "text": "Utilize city garages for aquarium visits to avoid street parking limits. Lookout Mountain trailheads often fill by 10 AM on pleasant spring days."
+      },
+      {
+        "kind": "signal",
+        "title": "Gorge Connectivity",
+        "text": "Signal is generally strong in the city but drops significantly once entering the Tennessee River Gorge or deep plateau trails. Map your return route before leaving town."
+      },
+      {
+        "kind": "fuel",
+        "title": "Urban Infrastructure",
+        "text": "Fuel and electric charging are widely available in the downtown and Hixson areas. Options decrease as you head toward the more rural Signal Mountain or Prentice Cooper areas."
+      },
+      {
+        "kind": "timing",
+        "title": "Early Peak Hours",
+        "text": "Summer humidity makes early morning the best window for mountain hiking. Afternoon thunderstorms are common in July and may affect river activities."
+      },
+      {
+        "kind": "access",
+        "title": "State Line Navigation",
+        "text": "Lookout Mountain spans Tennessee and Georgia; ensure your navigation distinguishes between the two to avoid unnecessary circuitous driving."
+      }
+    ],
+    "arrival": "Pick up rental at CHA and head downtown for check-in. Use the North Shore or Southside districts for initial supplies and dining before mountain excursions.",
+    "vehicle": "Standard vehicles are sufficient for all primary roads; verify parking clearance if driving a high-roof van in downtown garages.",
+    "goldenHour": "Sunset Rock on Lookout Mountain is a popular named viewpoint for evening light, contingent on clear skies.",
+    "sources": [
+      {
+        "label": "Visit Chattanooga",
+        "url": "https://www.visitchattanooga.com"
+      }
+    ]
+  }
+}

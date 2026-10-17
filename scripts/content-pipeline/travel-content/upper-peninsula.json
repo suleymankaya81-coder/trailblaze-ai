@@ -1,0 +1,115 @@
+{
+  "slug": "upper-peninsula",
+  "headline": "Advance Lodging and Ferry Bookings for Michigan's North",
+  "reservation": "While day entry to the peninsula is free, specific sites like Pictured Rocks boat tours and Mackinac Island ferries require separate ticketing. State Park camping and popular Marquette hotels often fill months in advance; always verify the latest reservation windows on the official Michigan DNR or NPS websites.",
+  "source_url": "https://www.nps.gov/piro/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Island Transit and Historic Shores",
+        "start": "Suggested: 8:30 AM from St. Ignace",
+        "stops": [
+          {
+            "name": "Mackinac Island State Park",
+            "detail": "Tour the historic Fort Mackinac and cycle the 8-mile coastal perimeter where motor vehicles are prohibited."
+          },
+          {
+            "name": "Arch Rock",
+            "detail": "View this natural limestone formation rising high above the Lake Huron shoreline via horse-drawn carriage or bicycle."
+          }
+        ],
+        "driving": "Allow 20-30 minutes for ferry transfers; conditions vary by lake state",
+        "note": "Ferry schedules are seasonal; check morning departures to maximize island time."
+      },
+      {
+        "title": "Shipwrecks and Amber Cascades",
+        "start": "Suggested: 9 AM from Newberry",
+        "stops": [
+          {
+            "name": "Great Lakes Shipwreck Museum",
+            "detail": "Explore maritime history at Whitefish Point, the site of the oldest active lighthouse on Lake Superior."
+          },
+          {
+            "name": "Tahquamenon Falls State Park",
+            "detail": "Witness the Upper Falls, one of the largest waterfalls east of the Mississippi, famous for its tannin-rich amber color."
+          }
+        ],
+        "driving": "Allow 2 hours for regional transit; conditions vary",
+        "note": "Park trails can be slippery; allow extra time for the walk between Upper and Lower falls."
+      },
+      {
+        "title": "Sandstone Cliffs and Pasty Traditions",
+        "start": "Suggested: 8 AM from Munising",
+        "stops": [
+          {
+            "name": "Miners Castle",
+            "detail": "Observe the iconic rock architecture of Pictured Rocks National Lakeshore from accessible cliff-top overlooks."
+          },
+          {
+            "name": "Sand Point Beach",
+            "detail": "Relax on the white sands of Lake Superior or visit nearby Munising Falls for a quick forest walk."
+          }
+        ],
+        "driving": "Allow 1 hour for local park roads; conditions vary",
+        "note": "Boat tours for cliff viewing are weather-dependent; confirm sailing status locally."
+      },
+      {
+        "title": "Port City Heritage and Iron Peaks",
+        "start": "Suggested: 9 AM from Marquette",
+        "stops": [
+          {
+            "name": "Presque Isle Park",
+            "detail": "Drive the forested peninsula loop to see the Black Rocks and the massive iron ore docks."
+          },
+          {
+            "name": "Sugarloaf Mountain",
+            "detail": "Ascend the stairs for a 360-degree view of the Marquette harbor and the vast interior wilderness."
+          }
+        ],
+        "driving": "Allow 45 minutes for local exploration; conditions vary",
+        "note": "Lake Superior temperatures remain low year-round; shoreline winds can be brisk even in summer."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Popular Trailhead Limits",
+        "text": "Parking at Miners Castle and Chapel Road fills during peak summer weekends. Arrive before mid-morning or use local shuttle services where available."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Gaps",
+        "text": "Cellular reception is unreliable within the Seney National Wildlife Refuge and along H-58. Download offline maps at your gateway city before departing."
+      },
+      {
+        "kind": "fuel",
+        "title": "Interior Supply Runs",
+        "text": "Fuel stations are frequent in Munising and Marquette but sparse along the Black River Harbor Scenic Byway. Monitor gauges when traveling between Lake Superior and Lake Michigan shores."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Transitions",
+        "text": "Many lighthouse museums and seasonal kiosks close by mid-October. Verify specific operational dates for boat tours and historical sites directly."
+      },
+      {
+        "kind": "access",
+        "title": "Mackinac Bridge Crossings",
+        "text": "High winds can lead to vehicle restrictions on the Mackinac Bridge. Check the Mackinac Bridge Authority for real-time status during inclement weather."
+      }
+    ],
+    "arrival": "Collect rental at Marquette Sawyer Regional (MQT), stock up on regional pasties and supplies in Marquette, and check-in to your central Munising hub.",
+    "vehicle": "A standard vehicle is suitable for main highways; check rental contracts for restrictions on unpaved forest roads.",
+    "goldenHour": "Miners Castle Overlook for a lake sunset; color intensity varies with seasonal haze and cloud cover.",
+    "sources": [
+      {
+        "label": "National Park Service",
+        "url": "https://www.nps.gov/piro/index.htm"
+      },
+      {
+        "label": "Michigan Department of Natural Resources",
+        "url": "https://www.michigan.gov/dnr"
+      }
+    ]
+  }
+}

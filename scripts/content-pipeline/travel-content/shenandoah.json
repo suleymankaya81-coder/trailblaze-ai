@@ -1,0 +1,95 @@
+{
+  "slug": "shenandoah",
+  "headline": "Secure Old Rag Tickets and Skyline Drive Entrance Information",
+  "reservation": "Shenandoah National Park requires a standard entrance fee or pass. A separate, specific ticket is required for hiking Old Rag Mountain during the peak season to manage trail volume; these must be obtained via Recreation.gov. In-park lodging at Skyland or Big Meadows should be booked well in advance through the official concessionaire, especially for October foliage.",
+  "source_url": "https://www.nps.gov/shen/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "The High Ridges of Skyline Drive",
+        "start": "Suggested: 9 AM from Charlottesville",
+        "stops": [
+          {
+            "name": "Rockfish Gap Entrance",
+            "detail": "Begin your journey at the southern end of the park and stop at the first few overlooks for valley views."
+          },
+          {
+            "name": "Byrd Visitor Center",
+            "detail": "Explore the history of the park's creation and check current mountain weather forecasts at Big Meadows."
+          }
+        ],
+        "driving": "Allow 2 to 3 hours including stops on the winding drive; conditions vary",
+        "note": "Skyline Drive has a strictly enforced speed limit of 35 mph to protect wildlife and visitors."
+      },
+      {
+        "title": "Waterfalls and Central Summits",
+        "start": "Suggested: 8 AM from Big Meadows",
+        "stops": [
+          {
+            "name": "Dark Hollow Falls",
+            "detail": "Hike down to the park’s most famous waterfall; remember the return trip is a steep uphill climb."
+          },
+          {
+            "name": "Stony Man Trail",
+            "detail": "Follow the Appalachian Trail section to a rocky outcrop offering views of the Shenandoah Valley and Luray."
+          }
+        ],
+        "driving": "Allow 1 hour for transit between central trailheads; conditions vary",
+        "note": "Parking lots for popular trails like Dark Hollow Falls often reach capacity by mid-morning."
+      },
+      {
+        "title": "Northern Peaks and Wilderness",
+        "start": "Suggested: 8:30 AM from Skyland",
+        "stops": [
+          {
+            "name": "Hawksbill Summit",
+            "detail": "Reach the highest point in the park for a 360-degree view of the Blue Ridge Mountains."
+          },
+          {
+            "name": "Limberlost Trail",
+            "detail": "Walk the accessible circuit through greenstone forests and mountain laurel thickets."
+          }
+        ],
+        "driving": "Allow 1.5 hours to traverse toward the Thornton Gap exit; conditions vary",
+        "note": "Fog can significantly reduce visibility and slow travel times on the ridge without warning."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Skyline Drive Overlooks",
+        "text": "Use designated paved pull-outs for all sightseeing; stopping in the travel lane is prohibited and dangerous on curves. Trailhead lots are small and do not accommodate oversized vehicles or RVs effectively."
+      },
+      {
+        "kind": "signal",
+        "title": "Mountain Topography Effects",
+        "text": "Cell service is intermittent along Skyline Drive and typically fails in the hollows near waterfalls. A physical park map from the entrance station is essential for navigating trail junctions."
+      },
+      {
+        "kind": "fuel",
+        "title": "In-Park Service Stations",
+        "text": "Fuel is only available at Big Meadows (Mile 51) and seasonally at other locations; confirm current hours before heading to the north or south ends. Gateway towns like Luray and Front Royal offer full services."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Foliage Peaks",
+        "text": "October brings heavy traffic and full parking lots; midweek visits are suggested to avoid the longest delays. Spring wildflower blooms vary by elevation, starting in the valleys and moving up the ridge."
+      },
+      {
+        "kind": "access",
+        "title": "Winter Road Closures",
+        "text": "Skyline Drive may close due to snow, ice, or high winds at any time during the winter months. Check the official NPS automated road phone line or website before attempting a winter visit."
+      }
+    ],
+    "arrival": "Pick up your vehicle at Charlottesville–Albemarle Airport (CHO); stock up on groceries in Charlottesville or Elkton before entering through Swift Run or Rockfish Gap.",
+    "vehicle": "Cars are ideal for the tight curves of Skyline Drive; RVs must check clearance for Marys Rock Tunnel (12'8\") and verify campground length limits.",
+    "goldenHour": "Little Stony Man Overlook for sunset views over the Page Valley, depending on mountain haze.",
+    "sources": [
+      {
+        "label": "National Park Service: Shenandoah",
+        "url": "https://www.nps.gov/shen/planyourvisit/index.htm"
+      }
+    ]
+  }
+}

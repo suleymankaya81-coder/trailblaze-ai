@@ -1,0 +1,95 @@
+{
+  "slug": "reno",
+  "headline": "Dining and Seasonal Event Reservation Guide",
+  "reservation": "While the city parks and the Truckee Riverwalk are open access, popular farm-to-table venues in the Midtown District frequently reach capacity; advance dining bookings are recommended. Major events like the Reno Air Races or Hot August Nights require lodging reservations months in advance. Regional state park systems and wildlife sanctuaries maintain their own entry protocols; always check official agency sites for current capacity updates.",
+  "source_url": "https://www.reno.gov/community/parks-recreation",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "River Culture and Heritage",
+        "start": "Suggested: 9 AM from Downtown Reno",
+        "stops": [
+          {
+            "name": "Truckee Riverwalk District",
+            "detail": "Walk the paved paths through the city center to observe kayakers at the whitewater park and explore local galleries."
+          },
+          {
+            "name": "National Automobile Museum",
+            "detail": "View an extensive collection of historic vehicles once belonging to Bill Harrah, located a short walk from the river."
+          }
+        ],
+        "driving": "Allow 15 minutes for local transfers; conditions vary by event traffic.",
+        "note": "Pedestrian areas are well-paved, but high-desert sun exposure is significant."
+      },
+      {
+        "title": "Sierra Nevada Peaks and Shores",
+        "start": "Suggested: 8 AM from Downtown Reno",
+        "stops": [
+          {
+            "name": "Galena Creek Visitor Center",
+            "detail": "Explore transition-zone trails where high desert meets pine forest at the base of the Mount Rose Highway."
+          },
+          {
+            "name": "Sand Harbor",
+            "detail": "Visit the eastern shore of Lake Tahoe for granite boulders and boardwalks; parking here typically fills before mid-morning in summer."
+          }
+        ],
+        "driving": "Allow 60–90 minutes round trip; mountain road conditions vary significantly by season.",
+        "note": "Altitude changes can be rapid; ensure adequate hydration when ascending the Mount Rose Highway."
+      },
+      {
+        "title": "Wildlife and High-Desert Ecology",
+        "start": "Suggested: 9 AM from Midtown",
+        "stops": [
+          {
+            "name": "Animal Ark",
+            "detail": "Observe non-releasable predators like cheetahs and bears in a naturalistic Great Basin setting north of the city."
+          },
+          {
+            "name": "Rancho San Rafael Regional Park",
+            "detail": "Stroll the Wilbur D. May Arboretum to see plant species adapted to the Northern Nevada climate."
+          }
+        ],
+        "driving": "Allow 45 minutes for northern rural transit; conditions vary.",
+        "note": "Animal Ark is best visited during morning hours when animals are most active."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Downtown and Midtown Access",
+        "text": "Midtown street parking fills quickly on weekend evenings; utilize larger casino garages downtown for more reliable vehicle storage. Most garages are within walking distance of the Reno Arch and Riverwalk."
+      },
+      {
+        "kind": "signal",
+        "title": "Mountain Connectivity",
+        "text": "Cellular service is reliable in the Reno-Sparks urban core but becomes intermittent on the higher reaches of Mount Rose. Download trail maps for Galena Creek before departing the city."
+      },
+      {
+        "kind": "fuel",
+        "title": "Highway Transitions",
+        "text": "Fill tanks in Reno before heading south on US-395 or toward the Sierra passes. Fuel options are concentrated in the valley rather than on the high-elevation scenic highways."
+      },
+      {
+        "kind": "timing",
+        "title": "Lake Tahoe Day Trips",
+        "text": "Aim to arrive at alpine trailheads or Lake Tahoe state parks by 8:30 AM on weekends to secure access. Afternoon departures from the mountains may face congestion on the Mount Rose Highway."
+      },
+      {
+        "kind": "access",
+        "title": "Winter Road Restrictions",
+        "text": "Winter travel on the passes toward Truckee or Incline Village may require traction devices or 4WD. Check Nevada Department of Transportation (NDOT) for real-time mountain gate statuses."
+      }
+    ],
+    "arrival": "Collect rental at RNO and drive 11 minutes to downtown for check-in. Stock up on supplies at local markets in the Midtown area before heading to mountain trailheads.",
+    "vehicle": "Standard cars are sufficient for city and main highways; check rental contracts for restrictions on unpaved mountain tracks.",
+    "goldenHour": "Mount Rose Highway Overlook offers views of the Truckee Meadows, best viewed as light shifts seasonally.",
+    "sources": [
+      {
+        "label": "Nevada State Parks",
+        "url": "https://parks.nv.gov/"
+      }
+    ]
+  }
+}

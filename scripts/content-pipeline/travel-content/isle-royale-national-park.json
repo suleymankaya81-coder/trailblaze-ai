@@ -1,0 +1,111 @@
+{
+  "slug": "isle-royale-national-park",
+  "headline": "Advance Ferry and Wilderness Permit Reservations",
+  "reservation": "Isle Royale requires two separate reservations: one for transportation (ferry or seaplane) and one for park entry/camping. Overnight camping permits for groups under seven are obtained on the island, but the Rock Harbor Lodge and ferry seats must be booked many months in advance due to strict capacity. All visitors must check the official NPS schedule for seasonal closure dates.",
+  "source_url": "https://www.nps.gov/isro/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Arrival and Boreal Introduction",
+        "start": "Suggested: 9 AM from Houghton Wharf",
+        "stops": [
+          {
+            "name": "Rock Harbor Visitor Center",
+            "detail": "Check in for required ranger orientation and finalize your backcountry itinerary."
+          },
+          {
+            "name": "Stoll Trail to Scoville Point",
+            "detail": "Walk the 4.2-mile loop for dramatic views of Lake Superior waves crashing against basalt cliffs."
+          }
+        ],
+        "driving": "None; 6-hour ferry crossing from Houghton to the island.",
+        "note": "Lake Superior dictates travel; fog can delay departures."
+      },
+      {
+        "title": "The Spine of the Island",
+        "start": "Suggested: 8 AM from Rock Harbor",
+        "stops": [
+          {
+            "name": "Greenstone Ridge Trail",
+            "detail": "Hike the highest ridge on the island for views stretching toward the Canadian coastline."
+          },
+          {
+            "name": "Mount Ojibway Fire Tower",
+            "detail": "Climb the fire tower for a 360-degree panoramic view of the archipelago's interior lakes."
+          }
+        ],
+        "driving": "Walking only; allow a full day for the ridge trek.",
+        "note": "Carry ample water as ridges are exposed and dry."
+      },
+      {
+        "title": "Lakeside History and Wildlife",
+        "start": "Suggested: 9 AM from Daisy Farm",
+        "stops": [
+          {
+            "name": "Edisen Fishery",
+            "detail": "Tour the historic commercial fishing camp to learn about 19th-century island life."
+          },
+          {
+            "name": "Rock Harbor Lighthouse",
+            "detail": "Visit the oldest lighthouse on the island, reachable by trail or water taxi."
+          }
+        ],
+        "driving": "Walking or local boat transfer; conditions vary by wind.",
+        "note": "Moose are frequently seen in the marshy areas near Daisy Farm at dusk."
+      },
+      {
+        "title": "Tobin Harbor Waters",
+        "start": "Suggested: 8:30 AM from Rock Harbor Lodge",
+        "stops": [
+          {
+            "name": "Tobin Harbor",
+            "detail": "Rent a canoe to paddle the calm, protected waters between hidden coves and small islands."
+          },
+          {
+            "name": "Hidden Lake Trail",
+            "detail": "Paddle to the trailhead and hike to a mineral lick where moose sightings are common."
+          }
+        ],
+        "driving": "Paddling/Walking; allow 4 hours for water exploration.",
+        "note": "Ensure your return to the harbor before afternoon winds increase."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "Strict Seasonal Closure",
+        "text": "The park is entirely closed from November through mid-April to all visitors. Always verify ferry startup dates as ice can linger in Lake Superior until late May."
+      },
+      {
+        "kind": "fuel",
+        "title": "Limited Marina Service",
+        "text": "Fuel for private vessels is only available at Rock Harbor and Windigo marinas during peak summer hours. There are no gas stations for land vehicles on the island."
+      },
+      {
+        "kind": "timing",
+        "title": "Ferry Departure Window",
+        "text": "Ferries depart promptly; missing a boat can mean a multi-day wait for the next available seat. Arrive at the wharf at least one hour before scheduled departure."
+      },
+      {
+        "kind": "parking",
+        "title": "Mainland Long-term Lots",
+        "text": "Long-term parking is provided at ferry terminals in Houghton and Copper Harbor. These lots are secure but can fill during peak summer weeks."
+      },
+      {
+        "kind": "signal",
+        "title": "Remote Wilderness Blackout",
+        "text": "Cellular service and Wi-Fi are virtually non-existent on the island. Do not rely on digital maps; carry physical topographic maps and a compass."
+      }
+    ],
+    "arrival": "Drive to Houghton or Copper Harbor, utilize long-term ferry parking, and prepare for a 3-6 hour water crossing before reaching the Rock Harbor hub.",
+    "vehicle": "No cars or bikes are permitted on the island; travel is restricted to foot, canoe, or seasonal water taxi.",
+    "goldenHour": "Scoville Point for sunrise over the open lake, depending on morning fog levels.",
+    "sources": [
+      {
+        "label": "National Park Service",
+        "url": "https://www.nps.gov/isro/index.htm"
+      }
+    ]
+  }
+}

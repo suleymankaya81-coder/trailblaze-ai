@@ -1,0 +1,95 @@
+{
+  "slug": "oregon-coast",
+  "headline": "State Park Yurt and Campground Reservations",
+  "reservation": "Oregon State Parks require advance booking for yurts, cabins, and campsites via the official portal; popular sites fill months ahead. While beach access is generally open, specific headlands or parking areas may have seasonal fees or closures. Changing administrative systems require an official check of the Oregon State Parks website before arrival.",
+  "source_url": "https://stateparks.oregon.gov/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "North Coast Icons",
+        "start": "Suggested: 9 AM from Cannon Beach",
+        "stops": [
+          {
+            "name": "Haystack Rock",
+            "detail": "Walk the shoreline to view this 235-foot monolith and explore tide pools at its base during low tide."
+          },
+          {
+            "name": "Ecola State Park",
+            "detail": "Drive to the viewpoints for panoramic vistas of the Tillamook Rock Lighthouse and the jagged coastline."
+          }
+        ],
+        "driving": "Allow 1 hour for local North Coast movements; conditions vary by fog.",
+        "note": "Check local tide tables; tide pool access is strictly dependent on low water cycles."
+      },
+      {
+        "title": "Forested Capes and Sands",
+        "start": "Suggested: 8:30 AM from Cannon Beach",
+        "stops": [
+          {
+            "name": "Oswald West State Park",
+            "detail": "Hike the forested paths to Short Sand Beach, a secluded cove popular with local surfers."
+          },
+          {
+            "name": "Cape Meares State Scenic Viewpoint",
+            "detail": "Visit the historic lighthouse and the unusual multi-trunked Octopus Tree sitka spruce."
+          }
+        ],
+        "driving": "Allow 2.5 hours for travel to Tillamook area; conditions vary on Highway 101.",
+        "note": "Park trails can be muddy year-round; sturdy waterproof footwear is recommended."
+      },
+      {
+        "title": "Central Coast Marine Life",
+        "start": "Suggested: 9 AM from Newport",
+        "stops": [
+          {
+            "name": "Yaquina Head Outstanding Natural Area",
+            "detail": "Observe the tallest lighthouse in Oregon and scan the offshore rocks for harbor seals."
+          },
+          {
+            "name": "Cape Perpetua Scenic Area",
+            "detail": "Witness the power of the Pacific at Thor's Well and the Spouting Horn during high surf."
+          }
+        ],
+        "driving": "Allow 2 hours for Central Coast exploration; conditions vary near Yachats.",
+        "note": "Thor's Well is best viewed near high tide, but maintain a safe distance from the surf."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Beach Access Strategy",
+        "text": "Lots at Cannon Beach and Cape Kiwanda fill rapidly during summer weekends. Seek alternative access points in residential areas where permitted or arrive early."
+      },
+      {
+        "kind": "signal",
+        "title": "Coastal Topography Gaps",
+        "text": "Cellular reception is frequently lost between major towns along Highway 101. Download offline maps for navigation between Manzanita and Newport."
+      },
+      {
+        "kind": "fuel",
+        "title": "Supply Intervals",
+        "text": "Gas stations are concentrated in gateway towns like Astoria, Tillamook, and Newport. Ensure your tank is sufficient before entering the longer stretches of the Siuslaw National Forest."
+      },
+      {
+        "kind": "timing",
+        "title": "Tidal Planning",
+        "text": "Marine wildlife viewing at Haystack Rock requires visiting within an hour of low tide. Schedule these stops before town-based meals to ensure access."
+      },
+      {
+        "kind": "access",
+        "title": "Roadway Constraints",
+        "text": "Highway 101 is subject to seasonal construction and landslide repairs. Check Oregon Department of Transportation alerts for delays near Hug Point or Wheeler."
+      }
+    ],
+    "arrival": "Pick up your rental at OTH or PDX, stock up on rain gear and groceries in Astoria or Newport, and check into your park yurt before dusk.",
+    "vehicle": "Standard vehicles are suitable for Highway 101; check rental agreements for restrictions on driving onto sand at designated beaches.",
+    "goldenHour": "Ecola State Park viewpoints offer dramatic light on Haystack Rock; access is weather and season dependent.",
+    "sources": [
+      {
+        "label": "Oregon State Parks",
+        "url": "https://stateparks.oregon.gov/"
+      }
+    ]
+  }
+}

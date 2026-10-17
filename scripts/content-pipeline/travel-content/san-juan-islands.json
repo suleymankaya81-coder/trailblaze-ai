@@ -1,0 +1,95 @@
+{
+  "slug": "san-juan-islands",
+  "headline": "Washington State Ferry and Island Glamping Reservations",
+  "reservation": "Vehicle space on the Washington State Ferry is the primary bottleneck and requires booking weeks in advance during peak months. Glamping units and yurts on Orcas and San Juan Island are seasonal and frequently sell out six months ahead. Always verify current sailing schedules and site-specific deposit policies through official Washington State Department of Transportation and park portals.",
+  "source_url": "https://wsdot.wa.gov/travel/washington-state-ferries",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Coastal Heritage and Whales",
+        "start": "Suggested: 8:30 AM from Friday Harbor",
+        "stops": [
+          {
+            "name": "Lime Kiln Point State Park",
+            "detail": "Visit this iconic lighthouse, often cited as one of the best land-based whale-watching spots in the world."
+          },
+          {
+            "name": "San Juan Island National Historical Park",
+            "detail": "Explore the American and English Camps to learn about the 19th-century Pig War boundary dispute."
+          }
+        ],
+        "driving": "Allow 1 hour for island loops; conditions vary by ferry arrivals",
+        "note": "Check the daily whale report at the park visitor center."
+      },
+      {
+        "title": "Summit Views and Village Life",
+        "start": "Suggested: 9 AM from Eastsound",
+        "stops": [
+          {
+            "name": "Moran State Park",
+            "detail": "Drive or hike to the summit of Mount Constitution for a 360-degree view of the archipelago and Mount Baker."
+          },
+          {
+            "name": "Cascade Falls",
+            "detail": "Take a short walk through old-growth Douglas firs to reach the largest waterfall in the islands."
+          }
+        ],
+        "driving": "Allow 45 minutes for winding mountain roads; conditions vary",
+        "note": "The stone tower at the summit has narrow stairs and limited capacity."
+      },
+      {
+        "title": "Paddles and Pastoral Valleys",
+        "start": "Suggested: 10 AM from Roche Harbor",
+        "stops": [
+          {
+            "name": "Roche Harbor Resort & Marina",
+            "detail": "Stroll the historic gardens and docks of this former lime kiln company town."
+          },
+          {
+            "name": "San Juan Island Sculpture Park",
+            "detail": "Walk through 20 acres of outdoor art installations adjacent to Westcott Bay."
+          }
+        ],
+        "driving": "Allow 30 minutes for rural transit; conditions vary",
+        "note": "Kayaking departures depend on tide cycles and local wind speeds."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "Inter-Island Transit",
+        "text": "Travel between islands requires using the ferry system or private water taxis. Foot passengers generally do not need ferry reservations, but vehicle spots are strictly limited."
+      },
+      {
+        "kind": "timing",
+        "title": "Ferry Arrival Logic",
+        "text": "Arrive at the Anacortes terminal at least 45 to 60 minutes before your scheduled departure. Failure to check in by the official cutoff time will result in the forfeiture of your reservation."
+      },
+      {
+        "kind": "fuel",
+        "title": "Island Supplies",
+        "text": "Fuel stations are located in the main hubs of Friday Harbor and Eastsound. Remote areas of the islands have no services, so monitor levels before exploring the outer coast."
+      },
+      {
+        "kind": "signal",
+        "title": "Marine Coverage",
+        "text": "Cellular reception is reliable in towns but drops significantly in the shadow of Mount Constitution and remote coves. Download offline navigation for rural island roads."
+      },
+      {
+        "kind": "parking",
+        "title": "Trailhead Limits",
+        "text": "Small lots at Cattle Point and Lime Kiln Point fill during summer weekends. Consider using the seasonal island shuttle if staying in Friday Harbor to avoid parking congestion."
+      }
+    ],
+    "arrival": "Pick up your rental at Seattle or Anacortes, stock up on supplies at a mainland grocer, and arrive at the ferry terminal one hour before your reserved sailing.",
+    "vehicle": "Standard cars are ideal; large RVs face high ferry surcharges and tight turns on Orcas Island mountain roads.",
+    "goldenHour": "Lime Kiln Point lighthouse for sunset, with seasonal shifts in light over the Haro Strait.",
+    "sources": [
+      {
+        "label": "Washington State Parks",
+        "url": "https://parks.wa.gov/find-parks/state-parks/lime-kiln-point-state-park"
+      }
+    ]
+  }
+}

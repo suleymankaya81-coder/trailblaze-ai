@@ -1,0 +1,95 @@
+{
+  "slug": "illinois-beach-state-park",
+  "headline": "Capacity Limits and Campground Reservations",
+  "reservation": "Day-use entry is free, but the park may temporarily close gates if parking capacity is reached during peak summer weekends. Camping reservations for the South Unit must be made through the official IDNR system, typically well in advance for holiday periods. The Illinois Beach Hotel offers a separate indoor lodging option that requires its own booking; always check the official state park website for current beach health advisories and swimming status.",
+  "source_url": "https://dnr.illinois.gov/parks/park.illinoisbeach.html",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Coastal Dunes and Ridges",
+        "start": "Suggested: 9 AM from the South Unit Visitor Center",
+        "stops": [
+          {
+            "name": "Beach Ridge Trail",
+            "detail": "Walk through the stabilized dunes and oak savannas to see the unique shoreline geology."
+          },
+          {
+            "name": "Dead River Overlook",
+            "detail": "Observe the rare interdunal wetland where the river flow is often blocked by sand bars."
+          }
+        ],
+        "driving": "Allow 20 minutes; local park roads only.",
+        "note": "Lake Michigan water levels can significantly alter the width of the hiking path along the shore."
+      },
+      {
+        "title": "North Unit Wilderness and Birding",
+        "start": "Suggested: 8:30 AM from the North Unit Entrance",
+        "stops": [
+          {
+            "name": "North Unit Hiking Trails",
+            "detail": "Explore the less-crowded northern marshes, a critical stop for migratory raptors and songbirds."
+          },
+          {
+            "name": "Camp Logan Historic Site",
+            "detail": "View the remnants of the former military site now integrated into the park's natural recovery areas."
+          }
+        ],
+        "driving": "Allow 30 minutes; transfer between separate park units via Sheridan Road.",
+        "note": "Trails in the North Unit can be sandy and soft; supportive footwear is recommended."
+      },
+      {
+        "title": "Shoreline Heritage and Sunset",
+        "start": "Suggested: 10 AM from Zion",
+        "stops": [
+          {
+            "name": "Adeline Jay Geo-Karis Shoreline",
+            "detail": "Spend the morning beachcombing for smooth lake stones and driftwood along the 6-mile coast."
+          },
+          {
+            "name": "Zion Bike Path",
+            "detail": "Cycle the paved routes connecting the community to the park's dunes and savanna edges."
+          }
+        ],
+        "driving": "Allow 15 minutes; easy access from local gateway roads.",
+        "note": "Check the official swim status daily; strong currents can result in swimming restrictions."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Weekend Fill Times",
+        "text": "The South Unit parking lots frequently reach capacity by 11 AM on warm summer Saturdays. Arrive early or plan to visit the quieter North Unit as an alternative."
+      },
+      {
+        "kind": "signal",
+        "title": "Urban Connectivity",
+        "text": "Cellular signal is generally strong throughout the park due to its proximity to Zion and Waukegan. Most areas allow for real-time map updates."
+      },
+      {
+        "kind": "fuel",
+        "title": "Local Services",
+        "text": "Full services including fuel and groceries are located immediately west in Zion. No fuel is available within the park boundaries."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Gate Hours",
+        "text": "Park gates typically close at sunset, with differing hours for campers and hotel guests. Verify the current seasonal closing time posted at the main entrance."
+      },
+      {
+        "kind": "access",
+        "title": "ADA Accessibility",
+        "text": "The South Unit features accessible boardwalk segments and picnic areas near the Lodge. The North Unit is more rugged with primarily sandy footpaths."
+      }
+    ],
+    "arrival": "Pickup rental at MKE; stop in Kenosha or Zion for beach supplies before entering the South Unit for check-in.",
+    "vehicle": "Standard sedans are suitable for all paved park roads. No off-road vehicle use is permitted on the dunes.",
+    "goldenHour": "The South Unit shoreline for views across Lake Michigan; sunset colors reflect best over the Dead River marshes.",
+    "sources": [
+      {
+        "label": "Illinois Department of Natural Resources",
+        "url": "https://dnr.illinois.gov"
+      }
+    ]
+  }
+}

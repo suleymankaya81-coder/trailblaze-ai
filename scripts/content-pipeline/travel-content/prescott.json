@@ -1,0 +1,95 @@
+{
+  "slug": "prescott",
+  "headline": "Regional Forest & Waterfront Recreation Access Check",
+  "reservation": "While the city itself has no entry permit, specific recreation areas like Watson Lake and Granite Dells require daily parking fees collected on-site. Overnight stays in the Prescott National Forest or local glamping sites require advance booking through official platforms; always verify current fire restrictions with the U.S. Forest Service before arrival.",
+  "source_url": "https://www.fs.usda.gov/prescott/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Granite Dells and Ancient Waters",
+        "start": "Suggested: 8:30 AM from Courthouse Plaza",
+        "stops": [
+          {
+            "name": "Watson Lake Park",
+            "detail": "Explore the surreal landscape of the Granite Dells by kayak or follow the Peavine National Recreation Trail for elevated views of the boulders."
+          },
+          {
+            "name": "Heritage Park Zoological Sanctuary",
+            "detail": "Visit this rescue-focused facility to see native Southwest species like mountain lions and black bears overlooking the Dells."
+          }
+        ],
+        "driving": "Allow 30–45 minutes for local transfers; conditions vary.",
+        "note": "Water levels at Watson Lake fluctuate; check local city recreation reports for seasonal rental availability."
+      },
+      {
+        "title": "Ponderosa Pines and Peaks",
+        "start": "Suggested: 9 AM from West Prescott",
+        "stops": [
+          {
+            "name": "Thumb Butte Trail",
+            "detail": "Hike the paved loop to a local landmark ridge for panoramic views of the Central Arizona Highlands and distant peaks."
+          },
+          {
+            "name": "Goldwater Lake",
+            "detail": "Relax in the high-elevation pine forest at this serene lake, ideal for fishing or a shaded picnic away from the desert heat."
+          }
+        ],
+        "driving": "Allow 1 hour for forest access and return; conditions vary.",
+        "note": "High elevation hiking requires extra hydration; pace yourself to adjust to the mountain air."
+      },
+      {
+        "title": "Territorial History and Mountain Vistas",
+        "start": "Suggested: 10 AM from Whiskey Row",
+        "stops": [
+          {
+            "name": "Sharlot Hall Museum",
+            "detail": "Walk through the original Governor's Mansion and open-air exhibits detailing the pioneer history of the Arizona Territory."
+          },
+          {
+            "name": "Iron Springs Road",
+            "detail": "Drive northwest to witness the dramatic transition from dense Ponderosa forest to the open grasslands of Skull Valley."
+          }
+        ],
+        "driving": "Allow 2 hours for the scenic loop; conditions vary.",
+        "note": "Museum hours are consistent, but scenic pull-outs can be limited during peak autumn color weekends."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Downtown and Dells Fees",
+        "text": "The Courthouse Plaza offers street parking with time limits, while Watson and Willow Lakes require a flat daily vehicle fee. Arrive early at lake trailheads during spring weekends to secure a spot near the water."
+      },
+      {
+        "kind": "signal",
+        "title": "Forest Connectivity",
+        "text": "Cellular reception is generally strong in the city center but drops quickly once you enter the deep canyons of the Prescott National Forest. Download offline navigation maps before heading out on Senator Highway or Iron Springs Road."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Supply Points",
+        "text": "Prescott and Prescott Valley serve as the primary hubs for fuel and supplies in the Highlands. Ensure your tank is full before exploring the Bradshaw Mountains, as services are non-existent in the high backcountry."
+      },
+      {
+        "kind": "timing",
+        "title": "Monsoon Weather Patterns",
+        "text": "In July and August, afternoon thunderstorms are common and can lead to rapid temperature drops or flash flooding in rocky terrain. Plan strenuous hikes for the early morning to avoid lightning risks on exposed ridges."
+      },
+      {
+        "kind": "access",
+        "title": "Unpaved Forest Roads",
+        "text": "While main roads are paved, routes like Senator Highway transition to dirt and may require high-clearance vehicles. Always check the official Forest Service road status for seasonal winter closures or mud restrictions."
+      }
+    ],
+    "arrival": "Pick up your vehicle at PRC airport or drive up from Phoenix; settle into your downtown guesthouse before grabbing supplies at a local market.",
+    "vehicle": "A standard sedan is sufficient for the city and main lakes, but consider a high-clearance 4WD for exploring the Bradshaw Mountain forest roads; check rental agreements for off-pavement restrictions.",
+    "goldenHour": "Watson Lake Overlook offers a classic sunset view of the Granite Dells; colors depend heavily on seasonal cloud cover.",
+    "sources": [
+      {
+        "label": "City of Prescott Recreation",
+        "url": "https://www.prescott-az.gov/recreation-area/watson-lake-park/"
+      }
+    ]
+  }
+}

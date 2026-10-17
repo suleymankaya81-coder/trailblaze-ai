@@ -1,0 +1,95 @@
+{
+  "slug": "death-valley-national-park",
+  "headline": "National Park Entry and Camping Reservations",
+  "reservation": "Park entry requires a valid pass obtainable at visitor centers or kiosks. Most campgrounds, especially Furnace Creek, require advance booking through Recreation.gov for the winter season; backcountry permits have separate requirements. Check the official NPS site for current system status.",
+  "source_url": "https://www.nps.gov/deva",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Salt Flats and Painted Hills",
+        "start": "Suggested: 8 AM from Furnace Creek",
+        "stops": [
+          {
+            "name": "Badwater Basin",
+            "detail": "Walk onto the vast salt flats at the lowest point in North America."
+          },
+          {
+            "name": "Artists Palette",
+            "detail": "Drive the one-way loop to see volcanic hills colored by mineral oxidation."
+          }
+        ],
+        "driving": "Allow 3 hours for driving and stops; conditions vary with heat",
+        "note": "Avoid walking on salt flats after 10 AM if temperatures are high."
+      },
+      {
+        "title": "Canyons and High Overlooks",
+        "start": "Suggested: 8 AM from Zabriskie Point",
+        "stops": [
+          {
+            "name": "Golden Canyon",
+            "detail": "Hike through towering yellow cathedral-like walls and mudstone hills."
+          },
+          {
+            "name": "Dante's View",
+            "detail": "Ascend to the ridge of the Black Mountains for a bird's-eye view of the valley floor."
+          }
+        ],
+        "driving": "Allow 4 hours total; steep mountain grades to Dante's View",
+        "note": "Dante's View is significantly cooler and windier than the valley floor."
+      },
+      {
+        "title": "Sand Dunes and Ghost Towns",
+        "start": "Suggested: 8:30 AM from Stovepipe Wells",
+        "stops": [
+          {
+            "name": "Mesquite Flat Sand Dunes",
+            "detail": "Explore the shifting sands early in the day to see animal tracks and ripple patterns."
+          },
+          {
+            "name": "Rhyolite Ghost Town",
+            "detail": "Visit the preserved ruins and art installations just outside the park boundary near Beatty."
+          }
+        ],
+        "driving": "Allow 3-4 hours; involves crossing the park boundary",
+        "note": "Walking in sand is strenuous; carry double the water you think you need."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead Capacity",
+        "text": "Lots at Badwater Basin and Mesquite Flat Sand Dunes are paved but fill during peak winter weekends. Arrive early at Zabriskie Point to ensure a spot for sunrise views."
+      },
+      {
+        "kind": "signal",
+        "title": "Extreme Dead Zones",
+        "text": "Expect no cellular service throughout the vast majority of the park, including most canyons and dunes. Emergency satellite devices and offline maps are highly recommended."
+      },
+      {
+        "kind": "fuel",
+        "title": "Remote Pumping",
+        "text": "Fuel is only available at Furnace Creek, Stovepipe Wells, and Panamint Springs within the park. Prices are typically much higher than in gateway towns like Beatty or Pahrump."
+      },
+      {
+        "kind": "timing",
+        "title": "Heat Constraints",
+        "text": "From May through September, outdoor activity is discouraged after mid-morning due to extreme heat. Winter daylight is short, so plan to be off backcountry roads before dark."
+      },
+      {
+        "kind": "access",
+        "title": "Flash Flood Road Damage",
+        "text": "Desert roads are frequently closed for months following seasonal storms due to debris and washouts. Always check the 'Plan Your Visit' section of the NPS website for daily road reports."
+      }
+    ],
+    "arrival": "Pickup rental at Las Vegas (LAS) or Boulder City (BLD). Stop in Pahrump for groceries and water before entering the park via Death Valley Junction.",
+    "vehicle": "High-clearance 4WD is essential for backcountry roads like Titus Canyon; check rental terms as many prohibit off-pavement use.",
+    "goldenHour": "Zabriskie Point; colors change rapidly on the badlands based on the sun's angle and seasonal dust.",
+    "sources": [
+      {
+        "label": "National Park Service",
+        "url": "https://www.nps.gov/deva"
+      }
+    ]
+  }
+}
