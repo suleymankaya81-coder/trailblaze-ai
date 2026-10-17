@@ -984,7 +984,7 @@ function ServiceRow({ service, destinationSlug }: { service: OfferView; destinat
    Free stack: OpenFreeMap tiles + routes precomputed once with OSRM
    (src/data/routes.json). Visitors never trigger a paid map API.
 ========================================================= */
-function RoadTrip({ dest }: { dest: DestinationView }) {
+function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
   const hasGeo =
     dest.lat != null && dest.lng != null && dest.airportLat != null && dest.airportLng != null;
   const from: [number, number] | null = hasGeo ? [dest.airportLng!, dest.airportLat!] : null;
@@ -1062,7 +1062,63 @@ function RoadTrip({ dest }: { dest: DestinationView }) {
           )}
         </div>
       </div>
+
+      <FieldIntel dest={dest} ai={ai} />
     </section>
+  );
+}
+
+/* =========================================================
+   FIELD INTEL — bite-size local know-how under the map.
+   Uses the AI insight snapshot when loaded; static tips
+   cover signal, fuel and timing either way.
+========================================================= */
+function FieldIntel({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
+  const tips: { icon: ReactNode; label: string; text: string }[] = [
+    {
+      icon: <Wifi className="h-4 w-4" />,
+      label: "Signal",
+      text:
+        ai?.insights.cellCoverage ??
+        "Cell signal drops inside and around the park — download offline maps before you leave the gateway town.",
+    },
+    {
+      icon: <Fuel className="h-4 w-4" />,
+      label: "Last fuel",
+      text: dest.airportName
+        ? `Fill up in the gateway town after leaving ${dest.airportName} — fuel near the entrance is pricier and stations are sparse.`
+        : "Fill up in the gateway town — fuel near the entrance is pricier and stations are sparse.",
+    },
+    {
+      icon: <Sun className="h-4 w-4" />,
+      label: "Beat the crowds",
+      text:
+        ai?.insights.crowdLevels ??
+        "Arrive at headline sights before 9 AM; parking lots at the popular trailheads fill first.",
+    },
+    {
+      icon: <Mountain className="h-4 w-4" />,
+      label: "Wildlife",
+      text:
+        ai?.insights.wildlife ??
+        "Dawn and dusk are prime wildlife hours — drive slowly and never approach animals for a photo.",
+    },
+  ];
+
+  return (
+    <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      {tips.map((t) => (
+        <div key={t.label} className="rounded-2xl border border-border bg-card p-4 shadow-soft">
+          <span className="grid h-8 w-8 place-items-center rounded-full bg-sage/20 text-forest">
+            {t.icon}
+          </span>
+          <p className="mt-2.5 text-[10px] font-bold uppercase tracking-[0.14em] text-muted-foreground">
+            {t.label}
+          </p>
+          <p className="mt-1 text-xs leading-relaxed text-foreground/80">{t.text}</p>
+        </div>
+      ))}
+    </div>
   );
 }
 
