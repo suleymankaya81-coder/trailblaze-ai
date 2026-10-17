@@ -22,7 +22,7 @@ def get(path):
 
 held = []
 for slug in sys.argv[1:]:
-    d = get(f"destinations?slug=eq.{slug}&select=id,hero_image,photo_credit,lat,nearest_airport_code,drive_minutes")[0]
+    d = get(f"destinations?slug=eq.{slug}&select=id,hero_image,photo_credit,lat,nearest_airport_code,drive_minutes,permit_note")[0]
     offers = get(f"offers?destination_id=eq.{d['id']}&select=id")
     pages = get(f"seo_landing_pages?destination_id=eq.{d['id']}&select=id")
     c = cards.get(slug, {})
@@ -32,6 +32,7 @@ for slug in sys.argv[1:]:
         (len(offers) >= 15, f"offers {len(offers)}"),
         (len(pages) == 4, f"guides {len(pages)}"),
         (slug in routes, "route line"),
+        (d["permit_note"], "reservation note"),
         (len(c.get("activity", [])) >= 3, "activity card photos"),
     ] if not ok]
     if problems:
