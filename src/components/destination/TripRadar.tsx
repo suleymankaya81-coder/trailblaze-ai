@@ -1,5 +1,8 @@
-import { CalendarClock, Plane, ShieldAlert, Tent } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
+import { ArrowUpRight, Plane, ShieldAlert } from "lucide-react";
 import type { DestinationView } from "@/lib/data/destinations.functions";
+import { getFlightPrice } from "@/lib/affiliates/flights.functions";
+import { tpLink } from "@/lib/affiliates/travelpayouts";
 
 const PERMIT_COPY = {
   high: { label: "High", note: "Campsites & entry permits sell out months ahead" },
@@ -13,10 +16,24 @@ export function formatDrive(mins: number) {
   return h ? `${h} h ${m ? `${m} min` : ""}`.trim() : `${m} min`;
 }
 
-/** Permit pressure + nearest airport strip shown right under the hero. */
+/** Permit pressure + nearest airport strip shown right under the hero.
+ *  The airport cell is a flight-search gateway: it links to Aviasales
+ *  (tracked partner link) and shows the cached fare estimate when available. */
 export function TripRadar({ dest }: { dest: DestinationView }) {
+  const { data: fare } = useQuery({
+    queryKey: ["flight-price", dest.airportCode],
+    queryFn: () =>
+      dest.airportCode
+        ? getFlightPrice({ data: { airport: dest.airportCode } })
+        : Promise.resolve(null),
+    enabled: !!dest.airportCode,
+    staleTime: 60 * 60 * 1000,
+  });
+
   if (!dest.permitLevel && !dest.airportCode) return null;
   const permit = dest.permitLevel ? PERMIT_COPY[dest.permitLevel] : null;
+  const flightsHref = dest.airportCode ? tpLink("aviasales", dest.slug) : null;
+
   return (
     <div className="grid gap-3 rounded-2xl border border-border bg-card p-4 shadow-soft sm:grid-cols-2">
       {permit && (
@@ -42,12 +59,18 @@ export function TripRadar({ dest }: { dest: DestinationView }) {
           </div>
         </div>
       )}
-      {dest.airportCode && (
-        <div className="flex items-start gap-3">
+      {dest.airportCode && flightsHref && (
+        <a
+          href={flightsHref}
+          target="_blank"
+          rel="sponsored nofollow noopener noreferrer"
+          title="Opens Aviasales flight search in a new tab — partner link, we may earn a commission"
+          className="group flex items-start gap-3 rounded-xl p-2 -m-2 transition hover:bg-muted"
+        >
           <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-sage/20 text-forest">
             <Plane className="h-4 w-4" />
           </span>
-          <div>
+          <div className="min-w-0 flex-1">
             <p className="text-[11px] uppercase tracking-wider text-muted-foreground">
               Nearest airport
             </p>
@@ -56,8 +79,18 @@ export function TripRadar({ dest }: { dest: DestinationView }) {
               {dest.driveMinutes != null && ` · ${formatDrive(dest.driveMinutes)} drive`}
             </p>
             <p className="text-xs text-muted-foreground">{dest.airportName}</p>
+            <p className="mt-1.5 inline-flex items-center gap-1 text-xs font-semibold text-primary">
+              Find flights to {dest.airportCode}
+              {fare?.price != null && (
+                <span className="font-normal text-muted-foreground">
+                  · recent fares from ~${Math.round(fare.price)} (estimate)
+                </span>
+              )}
+              <ArrowUpRight className="h-3.5 w-3.5 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </p>
+            <p className="text-[10px] text-muted-foreground">Partner link · Aviasales</p>
           </div>
-        </div>
+        </a>
       )}
     </div>
   );
@@ -66,9 +99,9 @@ export function TripRadar({ dest }: { dest: DestinationView }) {
 const JUMPS = [
   { href: "#stays", label: "Stays" },
   { href: "#rentals", label: "RV & Car Rentals" },
-  { href: "#tours", label: "Tours" },
-  { href: "#gear", label: "Gear" },
+  { href: "#flow", label: "3-Day Flow" },
   { href: "#road-trip", label: "Route" },
+  { href: "#tours", label: "Tours" },
 ];
 
 export function JumpBar() {
@@ -86,71 +119,5 @@ export function JumpBar() {
         ))}
       </div>
     </nav>
-  );
-}
-
-const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-const FULL = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
-
-function firstMonth(season: string | null): number | null {
-  if (!season) return null;
-  const s = season.toLowerCase();
-  let best: { i: number; pos: number } | null = null;
-  FULL.forEach((m, i) => {
-    const pos = Math.min(
-      ...[s.indexOf(m), s.indexOf(MONTHS[i].toLowerCase())].filter((p) => p >= 0),
-      Infinity,
-    );
-    if (pos !== Infinity && (!best || pos < best.pos)) best = { i, pos };
-  });
-  if (best) return (best as { i: number }).i;
-  if (s.includes("summer")) return 6;
-  if (s.includes("spring")) return 3;
-  if (s.includes("fall") || s.includes("autumn")) return 8;
-  if (s.includes("winter")) return 11;
-  return null;
-}
-
-/** "Sold out?" Plan B box: points to private campsites/glamping near the park. */
-export function PlanB({
-  dest,
-  alternatives,
-}: {
-  dest: DestinationView;
-  alternatives: React.ReactNode;
-}) {
-  const m = firstMonth(dest.bestSeason);
-  const at = (back: number) => MONTHS[(((m ?? 0) - back) % 12 + 12) % 12];
-  const showSoldOut = dest.permitLevel === "high" || dest.permitLevel === "moderate";
-
-  return (
-    <section className="min-w-0 rounded-2xl border border-copper/30 bg-copper/5 p-4 sm:p-6">
-      <div className="flex items-start gap-3">
-        <Tent className="mt-0.5 h-5 w-5 shrink-0 text-copper" />
-        <div className="min-w-0 flex-1">
-          <h2 className="font-display text-xl text-foreground">
-            {showSoldOut
-              ? `${dest.name.split(" ")[0]} campgrounds sold out? You still have options.`
-              : `Book your ${dest.name.split(" ")[0]} stay without the stress`}
-          </h2>
-          <p className="mt-1 text-sm text-muted-foreground">
-            Private campsites and glamping just outside the park often stay open when park
-            campgrounds are full. Availability is set by each partner.
-          </p>
-          {alternatives}
-        </div>
-      </div>
-
-      {m != null && (
-        <div className="mt-5 flex items-start gap-3 border-t border-copper/20 pt-4">
-          <CalendarClock className="mt-0.5 h-5 w-5 shrink-0 text-forest" />
-          <p className="text-sm text-foreground/85">
-            <span className="font-semibold">Going in {MONTHS[m]}?</span> Book campsites around{" "}
-            {at(6)}, any entry permit around {at(4)}, and your RV or car around {at(2)}. Always
-            check official park rules for exact release dates.
-          </p>
-        </div>
-      )}
-    </section>
   );
 }
