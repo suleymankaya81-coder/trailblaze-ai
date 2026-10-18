@@ -28,6 +28,7 @@ describe("fly & drive structured itinerary", () => {
     const url = `${SITE}/fly-and-drive/bozeman-bzn-yellowstone`;
     const schema = flyDriveJsonLd({ ...ys, heroImage: "https://example.com/yellowstone.jpg", faqs: [] }, url);
     const trip = schema["@graph"][0];
+    if (!("itinerary" in trip)) throw new Error("Missing TouristTrip itinerary");
     expect(trip.url).toBe(url);
     expect(trip.itinerary?.itemListElement.map((stop) => stop.position)).toEqual([1, 2]);
     expect(trip.itinerary?.itemListElement[0].item.iataCode).toBe("BZN");
