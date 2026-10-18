@@ -1,7 +1,6 @@
 // Pure helpers for /fly-and-drive/{airport-city}-{iata}-{destination} pages.
 // Built only from stored destination data — no AI generation per page.
 
-export const FLY_DRIVE_PILOTS = ["yellowstone", "zion", "moab"] as const;
 export const SITE = "https://minialife.com";
 
 export type FlyDriveInput = {

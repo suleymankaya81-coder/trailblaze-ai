@@ -7,7 +7,10 @@ import type { DestinationView } from "@/lib/data/destinations.functions";
 import type { FlyDriveSibling } from "@/lib/data/flyDrive.functions";
 import { getFlightPrice } from "@/lib/affiliates/flights.functions";
 import { tpLink } from "@/lib/affiliates/travelpayouts";
-import { InlineOfferCta } from "@/components/landing/LandingOfferCard";
+import { buildExpediaHotelSearchUrl } from "@/lib/affiliates/expedia";
+import { buildVrboSearchUrl } from "@/lib/affiliates/vrbo";
+import { servicePhoto } from "@/lib/data/servicePhotos";
+import type { Photo } from "@/lib/data/destinationCardPhotos";
 import { permitFallback } from "@/components/destination/TripRadar";
 import { formatDriveShort, type Faq } from "@/lib/seo/flyDrive";
 
@@ -77,25 +80,33 @@ export function RouteCard({ dest }: { dest: DestinationView }) {
   );
 }
 
-function StepCard({ n, icon, title, body, href, cta, brand }: { n: number; icon: ReactNode; title: string; body: string; href: string; cta: string; brand: string }) {
+function StepCard({ n, icon, title, body, href, cta, brand, photo }: { n: number; icon: ReactNode; title: string; body: string; href: string; cta: string; brand: string; photo?: Photo }) {
   return (
     <a
       href={href}
       target="_blank"
       rel="sponsored nofollow noopener noreferrer"
       title={`Opens ${brand} in a new tab — partner link, we may earn a commission`}
-      className="group flex flex-col rounded-3xl border border-border bg-card p-6 shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg"
+      className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg"
     >
-      <div className="flex items-center justify-between">
-        <span className="grid h-12 w-12 place-items-center rounded-2xl bg-sage/20 text-forest">{icon}</span>
-        <span className="font-display text-3xl font-bold text-foreground/10">0{n}</span>
+      <div className="relative aspect-[4/3] overflow-hidden bg-muted">
+        {photo && (
+          <img src={photo.url} alt={`${photo.subject} — illustrative photo`} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 motion-safe:group-hover:scale-105" />
+        )}
+        <span className="absolute left-4 top-4 grid h-11 w-11 place-items-center rounded-2xl bg-card/90 text-forest shadow-soft backdrop-blur">{icon}</span>
+        <span className="absolute right-4 top-3 font-display text-3xl font-bold text-off-white drop-shadow">0{n}</span>
       </div>
-      <h3 className="mt-5 font-display text-lg font-semibold text-foreground">{title}</h3>
-      <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{body}</p>
-      <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition group-hover:gap-2.5">
-        {cta} <ArrowUpRight className="h-4 w-4" />
-      </span>
-      <p className="mt-2 text-[10px] text-muted-foreground">Partner link · {brand}</p>
+      <div className="flex flex-1 flex-col p-6">
+        <h3 className="font-display text-lg font-semibold text-foreground">{title}</h3>
+        <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{body}</p>
+        <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition group-hover:gap-2.5">
+          {cta} <ArrowUpRight className="h-4 w-4" />
+        </span>
+        <p className="mt-2 text-[10px] text-muted-foreground">
+          Partner link · {brand}
+          {photo && <> · Photo: {photo.credit} · {photo.license}</>}
+        </p>
+      </div>
     </a>
   );
 }
@@ -108,55 +119,71 @@ export function ArrivalPlan({ dest }: { dest: DestinationView }) {
     staleTime: 60 * 60 * 1000,
   });
   const sub = `fly-drive-${dest.slug}`;
-  const firstStay = dest.stays.find((s) => s.externalUrl);
   return (
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 [&>*]:min-w-0">
-      <StepCard
-        n={1}
-        icon={<Plane className="h-6 w-6" />}
-        title={`Flights to ${dest.airportCode}`}
-        body={fare?.price != null ? `Recent fares from ~$${Math.round(fare.price)} (estimate). Compare dates and airlines.` : `Compare fares into ${dest.airportName}.`}
-        href={tpLink("aviasales", sub)}
-        cta="Find flights"
-        brand="Aviasales"
-      />
-      <StepCard
-        n={2}
-        icon={<Car className="h-6 w-6" />}
-        title={`Car at ${dest.airportCode}`}
-        body={`Pick up at the airport and drive straight to ${dest.name}. Compare rental companies in one search.`}
-        href={tpLink("economybookings", sub)}
-        cta="Compare rentals"
-        brand="EconomyBookings"
-      />
-      <StepCard
-        n={3}
-        icon={<Luggage className="h-6 w-6" />}
-        title="Store extra bags"
-        body="Early arrival or late flight home? Drop luggage nearby and keep the car light for the park."
-        href={tpLink("radicalstorage", sub)}
-        cta="Find storage"
-        brand="Radical Storage"
-      />
-      {firstStay ? (
-        <div className="flex flex-col rounded-3xl border border-border bg-card p-6 shadow-soft">
-          <div className="flex items-center justify-between">
-            <span className="grid h-12 w-12 place-items-center rounded-2xl bg-sage/20 text-forest"><BedDouble className="h-6 w-6" /></span>
-            <span className="font-display text-3xl font-bold text-foreground/10">04</span>
-          </div>
-          <h3 className="mt-5 font-display text-lg font-semibold text-foreground">First night</h3>
-          <p className="mt-2 text-sm text-muted-foreground">Sleep close after the drive so day one starts in the park.</p>
-          <div className="mt-auto pt-5">
-            <InlineOfferCta offer={firstStay} destinationSlug={dest.slug} lead="Near the park" />
+    <div className="space-y-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 [&>*]:min-w-0">
+        <StepCard
+          n={1}
+          icon={<Plane className="h-5 w-5" />}
+          title={`Flights to ${dest.airportCode}`}
+          body={fare?.price != null ? `Recent fares from ~$${Math.round(fare.price)} (estimate). Compare dates and airlines.` : `Compare fares into ${dest.airportName}.`}
+          href={tpLink("aviasales", sub)}
+          cta="Find flights"
+          brand="Aviasales"
+          photo={servicePhoto("flight", dest.slug)}
+        />
+        <StepCard
+          n={2}
+          icon={<Car className="h-5 w-5" />}
+          title={`Car at ${dest.airportCode}`}
+          body={`Pick up at the airport and drive straight to ${dest.name}. Compare rental companies in one search.`}
+          href={tpLink("economybookings", sub)}
+          cta="Compare rentals"
+          brand="EconomyBookings"
+          photo={servicePhoto("car", dest.slug)}
+        />
+        <StepCard
+          n={3}
+          icon={<Luggage className="h-5 w-5" />}
+          title="Store extra bags"
+          body="Early arrival or late flight home? Drop luggage nearby and keep the car light for the park."
+          href={tpLink("radicalstorage", sub)}
+          cta="Find storage"
+          brand="Radical Storage"
+          photo={servicePhoto("flight", dest.slug, 1)}
+        />
+      </div>
+      <div className="rounded-3xl border border-border bg-sand/30 p-4 md:p-6">
+        <div className="mb-4 flex items-center gap-3">
+          <span className="grid h-11 w-11 place-items-center rounded-2xl bg-sage/20 text-forest"><BedDouble className="h-5 w-5" /></span>
+          <div>
+            <p className="font-display text-lg font-semibold text-foreground">04 · First night near {dest.name}</p>
+            <p className="text-sm text-muted-foreground">Sleep close after the drive so day one starts in the park.</p>
           </div>
         </div>
-      ) : (
-        <Link to="/destinations/$slug" params={{ slug: dest.slug }} hash="stays" className="flex flex-col rounded-3xl border border-border bg-card p-6 shadow-soft">
-          <span className="grid h-12 w-12 place-items-center rounded-2xl bg-sage/20 text-forest"><BedDouble className="h-6 w-6" /></span>
-          <h3 className="mt-5 font-display text-lg font-semibold text-foreground">First night</h3>
-          <p className="mt-2 text-sm text-muted-foreground">See stays near {dest.name}.</p>
-        </Link>
-      )}
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 [&>*]:min-w-0">
+          <StepCard
+            n={4}
+            icon={<BedDouble className="h-5 w-5" />}
+            title={`Hotels near ${dest.name}`}
+            body="Compare hotels and lodges on the way in, with free-cancellation filters."
+            href={buildExpediaHotelSearchUrl(dest.name)}
+            cta="Search Expedia"
+            brand="Expedia"
+            photo={servicePhoto("hotel", dest.slug)}
+          />
+          <StepCard
+            n={4}
+            icon={<BedDouble className="h-5 w-5" />}
+            title={`Cabins & homes near ${dest.name}`}
+            body="Whole homes and cabins for families or groups who want a kitchen and space."
+            href={buildVrboSearchUrl(dest.name)}
+            cta="Search Vrbo"
+            brand="Vrbo"
+            photo={servicePhoto("cabin", dest.slug)}
+          />
+        </div>
+      </div>
     </div>
   );
 }

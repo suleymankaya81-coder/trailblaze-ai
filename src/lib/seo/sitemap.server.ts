@@ -3,6 +3,7 @@
 
 import { landingCoverAssets } from "@/lib/data/landingCoverAssets";
 import { toAbsoluteImageUrl } from "./imageCredit";
+import { flyDriveSlug } from "./flyDrive";
 
 const STATIC_PATHS = ["/", "/destinations", "/about", "/contact", "/privacy", "/terms", "/affiliate-disclosure"];
 const BASE_URL = "https://minialife.com";
@@ -84,7 +85,7 @@ function urlset(urls: Url[]): Response {
   return xml(urlsetXml(urls));
 }
 
-const CHILDREN = ["pages", "destinations", ...GUIDE_TYPES.map((t) => `guides-${t}`)];
+const CHILDREN = ["pages", "destinations", "fly-and-drive", ...GUIDE_TYPES.map((t) => `guides-${t}`)];
 
 export async function buildSitemapResponse(_origin?: string): Promise<Response> {
   return xml(
@@ -113,6 +114,17 @@ export async function buildChildSitemap(name: string): Promise<Response | null> 
           images: uniqueImages([d.hero_image, ...(d.gallery ?? [])]),
         })),
       );
+    }
+    if (name === "fly-and-drive") {
+      const rows = await fetchAll<{ slug: string; name: string; updated_at: string; hero_image: string | null; nearest_airport_code: string | null; nearest_airport_name: string | null; drive_minutes: number | null; drive_miles: number | null }>(
+        "destinations?select=slug,name,updated_at,hero_image,nearest_airport_code,nearest_airport_name,drive_minutes,drive_miles&status=eq.published&order=slug.asc",
+      );
+      const urls: Url[] = [];
+      for (const d of rows) {
+        const slug = flyDriveSlug({ slug: d.slug, name: d.name, airportCode: d.nearest_airport_code, airportName: d.nearest_airport_name, driveMinutes: d.drive_minutes, driveMiles: d.drive_miles });
+        if (slug) urls.push({ loc: `${BASE_URL}/fly-and-drive/${slug}`, lastmod: new Date(d.updated_at).toISOString(), images: uniqueImages([d.hero_image]) });
+      }
+      return urlset(urls);
     }
     const suffix = name.slice("guides-".length);
     const rows = await fetchAll<{ path: string; updated_at: string; cover_image: string | null; destinations: { hero_image: string | null } | null }>(
