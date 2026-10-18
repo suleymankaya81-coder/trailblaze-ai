@@ -45,3 +45,8 @@
 - [x] Add a curated public-only llms.txt and explicit OAI-SearchBot/PerplexityBot access while retaining affiliate-tracking exclusions; verify both files return 200. Existing training-bot policy unchanged; llms.txt is not a ranking guarantee.
 - [x] Model visible daily plans as ordered TouristTrip structured data with BreadcrumbList; remove inferred inventory availability and emit real JSON-LD scripts. Seven related tests pass.
 - [x] Add three sourced direct answers each for Yellowstone, Grand Canyon and Moab plus matching dated reservation overrides; verify all nine answers and trip stop order in SSR HTML, desktop and phone. Correct Arches' 2026 entry rule from NPS. No claim of external AI citations or full-site fact verification.
+
+## Fly & Drive (pSEO)
+- [x] Step 1: template + 3 noindex pilots (Yellowstone, Zion, Moab)
+- [ ] Step 2: open all 440 + sitemap (waits on user design approval)
+- [ ] Step 3: indexable + GSC resubmit after publish
