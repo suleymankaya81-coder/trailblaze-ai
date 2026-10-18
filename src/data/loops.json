@@ -4,20 +4,348 @@
     "title": "Utah Mighty 5 Road Trip Loop",
     "region": "Southern Utah",
     "intro": "All five of Utah's national parks in one drive: Zion's canyon walls, Bryce Canyon's hoodoos, Capitol Reef's orchards and slickrock, then Arches and Canyonlands near Moab.",
-    "stops": ["zion", "bryce-canyon", "capitol-reef-national-park", "arches-national-park", "canyonlands-national-park"]
+    "stops": [
+      "zion",
+      "bryce-canyon",
+      "capitol-reef-national-park",
+      "arches-national-park",
+      "canyonlands-national-park"
+    ]
   },
   {
     "slug": "grand-canyon-northern-arizona-loop",
     "title": "Grand Canyon & Northern Arizona Loop",
     "region": "Northern Arizona",
     "intro": "The Grand Canyon's South Rim, then north to Horseshoe Bend and Antelope Canyon near Page, finishing among the sandstone buttes of Monument Valley.",
-    "stops": ["grand-canyon", "horseshoe-bend", "antelope-canyon", "monument-valley"]
+    "stops": [
+      "grand-canyon",
+      "horseshoe-bend",
+      "antelope-canyon",
+      "monument-valley"
+    ]
   },
   {
     "slug": "california-sierra-parks-loop",
     "title": "California Sierra Parks Loop",
     "region": "Sierra Nevada, California",
     "intro": "Yosemite's granite valley, then south to the giant sequoias and deep canyons of Kings Canyon and Sequoia national parks.",
-    "stops": ["yosemite", "kings-canyon-national-park", "sequoia-national-park"]
+    "stops": [
+      "yosemite",
+      "kings-canyon-national-park",
+      "sequoia-national-park"
+    ]
+  },
+  {
+    "slug": "yellowstone-grand-teton-loop",
+    "title": "Yellowstone & Grand Teton Loop",
+    "region": "Northwest Wyoming",
+    "intro": "Geysers and wildlife in Yellowstone, then the jagged Teton Range and the town of Jackson just to the south.",
+    "stops": [
+      "yellowstone",
+      "grand-teton",
+      "jackson"
+    ]
+  },
+  {
+    "slug": "colorado-rockies-loop",
+    "title": "Colorado Rockies Loop",
+    "region": "Central Colorado",
+    "intro": "Rocky Mountain National Park's alpine roads, then mountain towns along the Continental Divide.",
+    "stops": [
+      "rocky-mountain",
+      "breckenridge",
+      "vail",
+      "aspen"
+    ]
+  },
+  {
+    "slug": "black-hills-badlands-loop",
+    "title": "Black Hills & Badlands Loop",
+    "region": "Western South Dakota",
+    "intro": "Badlands formations, Mount Rushmore, Custer State Park's wildlife loop and Wind Cave.",
+    "stops": [
+      "badlands-national-park",
+      "mount-rushmore",
+      "custer-state-park",
+      "wind-cave-national-park"
+    ]
+  },
+  {
+    "slug": "pacific-northwest-parks-loop",
+    "title": "Pacific Northwest Parks Loop",
+    "region": "Western Washington",
+    "intro": "Seattle to Mount Rainier and the rainforests and coast of the Olympic Peninsula.",
+    "stops": [
+      "seattle",
+      "mount-rainier",
+      "olympic"
+    ]
+  },
+  {
+    "slug": "north-cascades-loop",
+    "title": "North Cascades Loop",
+    "region": "Northern Washington",
+    "intro": "Mount Baker, North Cascades National Park, Lake Chelan and Bavarian-style Leavenworth.",
+    "stops": [
+      "mount-baker",
+      "north-cascades-national-park",
+      "lake-chelan",
+      "leavenworth"
+    ]
+  },
+  {
+    "slug": "oregon-cascades-loop",
+    "title": "Oregon Cascades Loop",
+    "region": "Central Oregon",
+    "intro": "Crater Lake's deep blue caldera, then Bend, Smith Rock and Mount Hood.",
+    "stops": [
+      "crater-lake-national-park",
+      "bend",
+      "smith-rock",
+      "mount-hood"
+    ]
+  },
+  {
+    "slug": "california-coast-loop",
+    "title": "California Central Coast Loop",
+    "region": "Central California",
+    "intro": "Santa Cruz, Monterey and Big Sur's cliff-top highway, ending in San Luis Obispo.",
+    "stops": [
+      "santa-cruz",
+      "monterey",
+      "big-sur",
+      "san-luis-obispo"
+    ]
+  },
+  {
+    "slug": "southern-california-desert-loop",
+    "title": "Southern California Desert Loop",
+    "region": "Southern California",
+    "intro": "Palm Springs, Joshua Tree's boulder fields and the open desert of Death Valley.",
+    "stops": [
+      "palm-springs",
+      "joshua-tree",
+      "death-valley-national-park"
+    ]
+  },
+  {
+    "slug": "eastern-sierra-loop",
+    "title": "Eastern Sierra Loop",
+    "region": "Eastern California",
+    "intro": "Lake Tahoe down Highway 395 to Mammoth Lakes and the Eastern Sierra.",
+    "stops": [
+      "lake-tahoe",
+      "mammoth-lakes",
+      "eastern-sierra"
+    ]
+  },
+  {
+    "slug": "las-vegas-desert-parks-loop",
+    "title": "Las Vegas Desert Parks Loop",
+    "region": "Southern Nevada & Utah",
+    "intro": "Red Rock Canyon and Valley of Fire near Las Vegas, then on to Zion.",
+    "stops": [
+      "las-vegas",
+      "red-rock-canyon",
+      "valley-of-fire",
+      "zion"
+    ]
+  },
+  {
+    "slug": "southern-utah-scenic-byway-loop",
+    "title": "Utah Highway 12 Loop",
+    "region": "South-central Utah",
+    "intro": "Bryce Canyon, Escalante and Capitol Reef along one of America's most scenic byways.",
+    "stops": [
+      "bryce-canyon",
+      "escalante",
+      "capitol-reef-national-park"
+    ]
+  },
+  {
+    "slug": "arizona-red-rock-loop",
+    "title": "Arizona Red Rock Loop",
+    "region": "Central Arizona",
+    "intro": "Sedona's red rocks, Flagstaff's pines and the Grand Canyon's South Rim.",
+    "stops": [
+      "sedona",
+      "flagstaff",
+      "grand-canyon"
+    ]
+  },
+  {
+    "slug": "new-mexico-enchantment-loop",
+    "title": "New Mexico Enchantment Loop",
+    "region": "Northern New Mexico",
+    "intro": "Albuquerque, Bandelier's cliff dwellings, Santa Fe and Taos.",
+    "stops": [
+      "albuquerque",
+      "bandelier-national-monument",
+      "santa-fe",
+      "taos"
+    ]
+  },
+  {
+    "slug": "southern-new-mexico-loop",
+    "title": "Southern New Mexico Loop",
+    "region": "Southern New Mexico & West Texas",
+    "intro": "White Sands, Carlsbad Caverns and Guadalupe Mountains.",
+    "stops": [
+      "white-sands-national-park",
+      "carlsbad-caverns-national-park",
+      "guadalupe-mountains-national-park"
+    ]
+  },
+  {
+    "slug": "big-bend-loop",
+    "title": "Big Bend Country Loop",
+    "region": "West Texas",
+    "intro": "Marfa, Big Bend National Park, Terlingua and Big Bend Ranch State Park.",
+    "stops": [
+      "marfa",
+      "big-bend-national-park",
+      "terlingua",
+      "big-bend-ranch-state-park"
+    ]
+  },
+  {
+    "slug": "texas-hill-country-loop",
+    "title": "Texas Hill Country Loop",
+    "region": "Central Texas",
+    "intro": "Austin, Lake Travis, Fredericksburg and the Hill Country.",
+    "stops": [
+      "austin",
+      "lake-travis",
+      "fredericksburg",
+      "hill-country"
+    ]
+  },
+  {
+    "slug": "great-smoky-blue-ridge-loop",
+    "title": "Smokies & Blue Ridge Loop",
+    "region": "Tennessee & North Carolina",
+    "intro": "Great Smoky Mountains, Asheville, the Blue Ridge Parkway and Boone.",
+    "stops": [
+      "gatlinburg",
+      "great-smoky-mountains",
+      "asheville",
+      "boone"
+    ]
+  },
+  {
+    "slug": "shenandoah-loop",
+    "title": "Shenandoah & Virginia Mountains Loop",
+    "region": "Virginia & West Virginia",
+    "intro": "Harpers Ferry, Shenandoah's Skyline Drive and the New River Gorge.",
+    "stops": [
+      "harpers-ferry",
+      "shenandoah",
+      "new-river-gorge-national-park"
+    ]
+  },
+  {
+    "slug": "new-england-mountains-loop",
+    "title": "New England Mountains Loop",
+    "region": "New Hampshire & Vermont",
+    "intro": "White Mountains, Franconia Notch, Stowe and the Green Mountains.",
+    "stops": [
+      "north-conway",
+      "franconia-notch",
+      "stowe",
+      "green-mountains"
+    ]
+  },
+  {
+    "slug": "maine-coast-loop",
+    "title": "Maine Coast & Acadia Loop",
+    "region": "Coastal Maine",
+    "intro": "Kennebunkport up the coast to Bar Harbor and Acadia National Park.",
+    "stops": [
+      "kennebunkport",
+      "maine-coast",
+      "bar-harbor",
+      "acadia"
+    ]
+  },
+  {
+    "slug": "upper-peninsula-loop",
+    "title": "Michigan Upper Peninsula Loop",
+    "region": "Northern Michigan",
+    "intro": "Mackinac Island, Pictured Rocks and the Porcupine Mountains.",
+    "stops": [
+      "mackinac-island",
+      "pictured-rocks",
+      "porcupine-mountains"
+    ]
+  },
+  {
+    "slug": "florida-keys-everglades-loop",
+    "title": "Everglades & Florida Keys Loop",
+    "region": "South Florida",
+    "intro": "Everglades National Park, Islamorada and the Keys down to Key West.",
+    "stops": [
+      "everglades-national-park",
+      "islamorada",
+      "florida-keys",
+      "key-west"
+    ]
+  },
+  {
+    "slug": "glacier-flathead-loop",
+    "title": "Glacier & Flathead Loop",
+    "region": "Northwest Montana",
+    "intro": "Glacier National Park, Whitefish, Flathead Lake and Missoula.",
+    "stops": [
+      "glacier",
+      "whitefish",
+      "flathead-lake",
+      "missoula"
+    ]
+  },
+  {
+    "slug": "idaho-sawtooth-loop",
+    "title": "Idaho Sawtooth Loop",
+    "region": "Central Idaho",
+    "intro": "Sun Valley, the Sawtooth Mountains, McCall and Craters of the Moon.",
+    "stops": [
+      "craters-of-the-moon",
+      "sun-valley",
+      "sawtooth-national-recreation-area",
+      "mccall"
+    ]
+  },
+  {
+    "slug": "alaska-kenai-denali-loop",
+    "title": "Alaska Kenai & Denali Loop",
+    "region": "Southcentral Alaska",
+    "intro": "Anchorage, Seward and Kenai Fjords, then north to Talkeetna and Denali.",
+    "stops": [
+      "seward",
+      "anchorage",
+      "talkeetna",
+      "denali-national-park"
+    ]
+  },
+  {
+    "slug": "hawaii-big-island-loop",
+    "title": "Big Island Loop",
+    "region": "Hawaii",
+    "intro": "Kona's coast and Hawaii Volcanoes National Park around the Big Island.",
+    "stops": [
+      "kona",
+      "big-island",
+      "hawaii-volcanoes-national-park"
+    ]
+  },
+  {
+    "slug": "ozarks-loop",
+    "title": "Arkansas Ozarks Loop",
+    "region": "Arkansas",
+    "intro": "Hot Springs, Buffalo National River and Eureka Springs.",
+    "stops": [
+      "hot-springs-national-park",
+      "buffalo-national-river",
+      "eureka-springs"
+    ]
   }
 ]
