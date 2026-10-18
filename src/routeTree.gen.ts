@@ -20,6 +20,9 @@ import { Route as TermsRouteImport } from './routes/terms'
 import { Route as DestinationsIndexRouteImport } from './routes/destinations.index'
 import { Route as DestinationsSlugRouteImport } from './routes/destinations.$slug'
 import { Route as FlyAndDriveSlugRouteImport } from './routes/fly-and-drive.$slug'
+import { Route as NoReservationSlugRouteImport } from './routes/no-reservation.$slug'
+import { Route as RoadTripsSlugRouteImport } from './routes/road-trips.$slug'
+import { Route as RvCampingSlugRouteImport } from './routes/rv-camping.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -76,6 +79,21 @@ const FlyAndDriveSlugRoute = FlyAndDriveSlugRouteImport.update({
   path: '/fly-and-drive/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const NoReservationSlugRoute = NoReservationSlugRouteImport.update({
+  id: '/no-reservation/$slug',
+  path: '/no-reservation/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RoadTripsSlugRoute = RoadTripsSlugRouteImport.update({
+  id: '/road-trips/$slug',
+  path: '/road-trips/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RvCampingSlugRoute = RvCampingSlugRouteImport.update({
+  id: '/rv-camping/$slug',
+  path: '/rv-camping/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -88,6 +106,9 @@ export interface FileRoutesByFullPath {
   '/terms': typeof TermsRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
+  '/no-reservation/$slug': typeof NoReservationSlugRoute
+  '/road-trips/$slug': typeof RoadTripsSlugRoute
+  '/rv-camping/$slug': typeof RvCampingSlugRoute
   '/destinations/': typeof DestinationsIndexRoute
 }
 export interface FileRoutesByTo {
@@ -101,6 +122,9 @@ export interface FileRoutesByTo {
   '/terms': typeof TermsRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
+  '/no-reservation/$slug': typeof NoReservationSlugRoute
+  '/road-trips/$slug': typeof RoadTripsSlugRoute
+  '/rv-camping/$slug': typeof RvCampingSlugRoute
   '/destinations': typeof DestinationsIndexRoute
 }
 export interface FileRoutesById {
@@ -115,6 +139,9 @@ export interface FileRoutesById {
   '/terms': typeof TermsRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
+  '/no-reservation/$slug': typeof NoReservationSlugRoute
+  '/road-trips/$slug': typeof RoadTripsSlugRoute
+  '/rv-camping/$slug': typeof RvCampingSlugRoute
   '/destinations/': typeof DestinationsIndexRoute
 }
 export interface FileRouteTypes {
@@ -130,6 +157,9 @@ export interface FileRouteTypes {
     | '/terms'
     | '/destinations/$slug'
     | '/fly-and-drive/$slug'
+    | '/no-reservation/$slug'
+    | '/road-trips/$slug'
+    | '/rv-camping/$slug'
     | '/destinations/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -143,6 +173,9 @@ export interface FileRouteTypes {
     | '/terms'
     | '/destinations/$slug'
     | '/fly-and-drive/$slug'
+    | '/no-reservation/$slug'
+    | '/road-trips/$slug'
+    | '/rv-camping/$slug'
     | '/destinations'
   id:
     | '__root__'
@@ -156,6 +189,9 @@ export interface FileRouteTypes {
     | '/terms'
     | '/destinations/$slug'
     | '/fly-and-drive/$slug'
+    | '/no-reservation/$slug'
+    | '/road-trips/$slug'
+    | '/rv-camping/$slug'
     | '/destinations/'
   fileRoutesById: FileRoutesById
 }
@@ -170,6 +206,9 @@ export interface RootRouteChildren {
   TermsRoute: typeof TermsRoute
   DestinationsSlugRoute: typeof DestinationsSlugRoute
   FlyAndDriveSlugRoute: typeof FlyAndDriveSlugRoute
+  NoReservationSlugRoute: typeof NoReservationSlugRoute
+  RoadTripsSlugRoute: typeof RoadTripsSlugRoute
+  RvCampingSlugRoute: typeof RvCampingSlugRoute
   DestinationsIndexRoute: typeof DestinationsIndexRoute
 }
 
@@ -252,6 +291,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FlyAndDriveSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/no-reservation/$slug': {
+      id: '/no-reservation/$slug'
+      path: '/no-reservation/$slug'
+      fullPath: '/no-reservation/$slug'
+      preLoaderRoute: typeof NoReservationSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/road-trips/$slug': {
+      id: '/road-trips/$slug'
+      path: '/road-trips/$slug'
+      fullPath: '/road-trips/$slug'
+      preLoaderRoute: typeof RoadTripsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/rv-camping/$slug': {
+      id: '/rv-camping/$slug'
+      path: '/rv-camping/$slug'
+      fullPath: '/rv-camping/$slug'
+      preLoaderRoute: typeof RvCampingSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -266,6 +326,9 @@ const rootRouteChildren: RootRouteChildren = {
   TermsRoute: TermsRoute,
   DestinationsSlugRoute: DestinationsSlugRoute,
   FlyAndDriveSlugRoute: FlyAndDriveSlugRoute,
+  NoReservationSlugRoute: NoReservationSlugRoute,
+  RoadTripsSlugRoute: RoadTripsSlugRoute,
+  RvCampingSlugRoute: RvCampingSlugRoute,
   DestinationsIndexRoute: DestinationsIndexRoute,
 }
 export const routeTree = rootRouteImport

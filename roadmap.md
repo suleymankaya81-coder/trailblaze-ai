@@ -51,3 +51,8 @@
 - [x] Step 2: open all 440 + sitemap; illustrated booking cards, first-night lodging limited to Expedia and Vrbo.
 - [x] Step 3: verified all 440 preview pages' unique titles, metadata, canonical URLs, indexability, structured data and visible FAQs against the sitemap; added destination-guide links and shared reviewed reservation notes. Yellowstone navigation verified; 17 tests passed, build OK.
 - [ ] Fly & Drive publish + GSC sitemap resubmit: deferred by owner; wait for explicit publishing request.
+
+## Programmatic SEO Phase B (no-reservation, loops, RV/camping)
+- [x] Step 1: noindex pilots (3 per family) — awaiting design review
+- [ ] Step 2: open all eligible pages, internal links, child sitemaps
+- [ ] Step 3: SEO validation pass
