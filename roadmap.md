@@ -53,6 +53,6 @@
 - [ ] Fly & Drive publish + GSC sitemap resubmit: deferred by owner; wait for explicit publishing request.
 
 ## Programmatic SEO Phase B (no-reservation, loops, RV/camping)
-- [x] Step 1: noindex pilots (3 per family) — awaiting design review
-- [ ] Step 2: open all eligible pages, internal links, child sitemaps
-- [ ] Step 3: SEO validation pass
+- [x] Step 1: noindex pilots (3 per family)
+- [x] Step 2: open all eligible pages, internal links, child sitemaps
+- [x] Step 3: SEO validation pass (584 pages OK)
