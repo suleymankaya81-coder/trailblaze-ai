@@ -19,3 +19,4 @@
 - AI discovery uses curated public-only llms.txt and search-crawler rules retaining outbound exclusions, not ranking guarantees. Why: file support is not standardized.
 - Destination JSON-LD mirrors visible plans as ordered TouristTrip stops, never inferred availability; pilot answers/reservation overrides share dated sources. Why: machine-readable and visible guidance must agree.
 - Image JSON-LD/sitemaps list only displayed absolute-URL photos; credits only when parsed; no invented stop photos. Why: avoid misleading image search.
+- Fly & Drive pages (/fly-and-drive/{city}-{iata}-{destination}) are built from stored destination fields only, no AI per page; incomplete airport/drive data means no page. Why: no AI cost or thin pages.
