@@ -19,4 +19,4 @@
 - Subdirectories may have their own `AGENTS.md` (e.g. `scripts/content-pipeline/`); read it before changing files there.
 - AI discovery uses curated public-only llms.txt and search-crawler rules retaining outbound exclusions, not ranking guarantees. Why: file support is not standardized.
 - Destination JSON-LD mirrors visible plans as ordered TouristTrip stops, never inferred availability; pilot answers/reservation overrides share dated sources. Why: machine-readable and visible guidance must agree.
-- Image structured data and image sitemaps describe only displayed, absolute-URL Commons photos, adding creator/license only when the stored credit parses; never invent per-stop photos. Why: wrong scenery or credits would mislead image search.
+- Image JSON-LD/sitemaps list only displayed absolute-URL photos; credits only when parsed; no invented stop photos. Why: avoid misleading image search.
