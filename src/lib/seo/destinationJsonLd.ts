@@ -1,4 +1,33 @@
 import type { DestinationView } from "@/lib/data/destinations.functions";
+import { commonsFilePage, parsePhotoCredit, toAbsoluteImageUrl, type ImageCredit } from "./imageCredit";
+
+function imageObject(url: string, caption: string, credit: ImageCredit | null): Record<string, unknown> {
+  const obj: Record<string, unknown> = { "@type": "ImageObject", contentUrl: url, url, caption, name: caption };
+  if (credit) {
+    obj.creator = { "@type": "Person", name: credit.creator };
+    obj.creditText = `${credit.creator} / ${credit.license} via Wikimedia Commons`;
+    if (credit.licenseUrl) obj.license = credit.licenseUrl;
+    const page = commonsFilePage(url);
+    if (page) obj.acquireLicensePage = page;
+  }
+  return obj;
+}
+
+export function buildDestinationImages(dest: Pick<DestinationView, "name" | "region" | "heroImage" | "gallery" | "photoCredit">): Record<string, unknown>[] {
+  const credits = parsePhotoCredit(dest.photoCredit);
+  const place = dest.region ? `${dest.name}, ${dest.region}` : dest.name;
+  const seen = new Set<string>();
+  const out: Record<string, unknown>[] = [];
+  const add = (raw: string | undefined, caption: string, credit: ImageCredit | null) => {
+    const url = toAbsoluteImageUrl(raw);
+    if (!url || seen.has(url)) return;
+    seen.add(url);
+    out.push(imageObject(url, caption, credit));
+  };
+  add(dest.heroImage, `${place} — scenery`, credits.hero);
+  (dest.gallery ?? []).forEach((g, i) => add(g, `${place} — photo ${i + 2}`, credits.gallery[i] ?? null));
+  return out;
+}
 
 // Describe the visible guide, not unverified live inventory or a bookable tour.
 export function buildDestinationJsonLd(dest: DestinationView, pageUrl: string): Record<string, unknown> {
@@ -9,7 +38,8 @@ export function buildDestinationJsonLd(dest: DestinationView, pageUrl: string): 
     url: pageUrl,
   };
   if (dest.tagline) destination.description = dest.tagline;
-  if (dest.heroImage) destination.image = dest.heroImage;
+  const images = buildDestinationImages(dest);
+  if (images.length) destination.image = images;
   if (dest.region) destination.address = dest.region;
   const graph: Record<string, unknown>[] = [destination, {
     "@type": "BreadcrumbList",

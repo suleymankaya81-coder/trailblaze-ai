@@ -42,6 +42,7 @@ export type DestinationView = {
   tagline: string;
   heroImage: string;
   gallery: string[];
+  photoCredit: string | null;
   aliases: string[];
   bestSeason: string | null;
   scenicScore: number | null;
@@ -174,6 +175,7 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       tagline: dest.tagline ?? "",
       heroImage: dest.hero_image ?? "",
       gallery: dest.gallery,
+      photoCredit: dest.photo_credit,
       aliases: dest.aliases,
       bestSeason: dest.best_season,
       scenicScore: dest.scenic_score,
