@@ -110,7 +110,7 @@ export function ArrivalPlan({ dest }: { dest: DestinationView }) {
   const sub = `fly-drive-${dest.slug}`;
   const firstStay = dest.stays.find((s) => s.externalUrl);
   return (
-    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 [&>*]:min-w-0">
       <StepCard
         n={1}
         icon={<Plane className="h-6 w-6" />}
