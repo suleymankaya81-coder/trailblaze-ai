@@ -14,16 +14,16 @@ export const Route = createFileRoute("/fly-and-drive/$slug")({
     const dest = await getDestinationPageData({ data: { slug: parsed.destinationSlug } }).catch(() => null);
     if (!dest) throw notFound();
     const canonical = flyDriveSlug(dest);
-    if (!canonical) throw notFound();
+    if (!canonical || !dest.airportCode || dest.driveMinutes == null) throw notFound();
     if (canonical !== params.slug) throw redirect({ to: "/fly-and-drive/$slug", params: { slug: canonical }, statusCode: 301 });
-    const siblings = await getAirportSiblings({ data: { airport: dest.airportCode!, exclude: dest.slug } });
-    return { dest, siblings, faqs: flyDriveFaqs(dest), url: `${SITE}/fly-and-drive/${canonical}` };
+    const siblings = await getAirportSiblings({ data: { airport: dest.airportCode, exclude: dest.slug } });
+    return { dest, driveMinutes: dest.driveMinutes, siblings, faqs: flyDriveFaqs(dest), url: `${SITE}/fly-and-drive/${canonical}` };
   },
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
-    const { dest, faqs, url } = loaderData;
+    const { dest, driveMinutes, faqs, url } = loaderData;
     const title = `Fly into ${dest.airportCode}, Drive to ${dest.name} — MiniaLife`;
-    const description = `Flights to ${dest.airportCode}, airport car rental, luggage storage and a first night near ${dest.name}. ${formatDriveShort(dest.driveMinutes!)} drive, reservation notes included.`;
+    const description = `Flights to ${dest.airportCode}, airport car rental, luggage storage and a first night near ${dest.name}. ${formatDriveShort(driveMinutes)} drive, reservation notes included.`;
     const img = dest.heroImage.startsWith("https://") ? dest.heroImage : null;
     return {
       meta: [
@@ -37,7 +37,7 @@ export const Route = createFileRoute("/fly-and-drive/$slug")({
         ...(img ? [{ property: "og:image", content: img }, { name: "twitter:image", content: img }] : []),
       ],
       links: [{ rel: "canonical", href: url }],
-      scripts: [{ type: "application/ld+json", children: JSON.stringify(flyDriveJsonLd({ ...dest, faqs }, url)) }],
+      scripts: [{ type: "application/ld+json", children: JSON.stringify(flyDriveJsonLd({ ...dest, faqs }, url)).replace(/</g, "\\u003c") }],
     };
   },
   component: FlyDrivePage,

@@ -1,5 +1,6 @@
 // Pure helpers for /fly-and-drive/{airport-city}-{iata}-{destination} pages.
 // Built only from stored destination data — no AI generation per page.
+import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 
 export const SITE = "https://minialife.com";
 
@@ -50,15 +51,11 @@ export function formatDriveShort(mins: number): string {
 
 export type Faq = { q: string; a: string };
 
-export function flyDriveFaqs(d: FlyDriveInput & { permitHeadline: string | null; permitLevel: string | null }): Faq[] {
+export function flyDriveFaqs(d: FlyDriveInput & { permitHeadline: string | null; permitLevel: string | null; permitNote?: string | null }): Faq[] {
   if (!d.airportCode || !d.airportName || d.driveMinutes == null) return [];
   const miles = d.driveMiles != null ? ` (about ${Math.round(d.driveMiles)} miles)` : "";
-  const permit =
-    d.permitLevel === "high"
-      ? `Yes, plan ahead. ${d.permitHeadline ? `${d.permitHeadline}. ` : ""}Check the official park site before booking flights.`
-      : d.permitLevel === "moderate"
-        ? `Usually no entry permit, but campsites and stays near ${d.name} fill early in peak season.`
-        : `Usually not. Booking your first night a little ahead is still the safest move.`;
+  const permit = getDestinationAnswers(d.slug)?.reservation.note ?? d.permitNote ??
+    `Check the official reservation rules for ${d.name} for your travel dates. Entry, overnight stays and activities may have separate booking requirements.`;
   return [
     { q: `What is the closest airport to ${d.name}?`, a: `${d.airportName} (${d.airportCode}) is the nearest commercial airport we route from.` },
     { q: `How long is the drive from ${d.airportCode} to ${d.name}?`, a: `Roughly ${formatDriveShort(d.driveMinutes)}${miles} by car, without stops. Times are estimates.` },

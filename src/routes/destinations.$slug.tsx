@@ -58,6 +58,7 @@ import { trackAndRedirect } from "@/lib/affiliates/track.functions";
 import { getOrCreateSessionId } from "@/lib/affiliates/session";
 import { outboundLinkTitle, partnerLabel } from "@/lib/affiliates/compliance";
 import { buildDestinationJsonLd } from "@/lib/seo/destinationJsonLd";
+import { flyDriveSlug } from "@/lib/seo/flyDrive";
 import { saveTripPlan } from "@/lib/plans/savePlan.functions";
 import { getCapturedEmail, setCapturedEmail } from "@/lib/plans/session";
 import { getPublicLandingPagesForDestination } from "@/lib/data/landingPages.functions";
@@ -1348,18 +1349,25 @@ function FinalCta({ dest }: { dest: DestinationView }) {
 
 // Links to this destination's search pages (best time, things to do, ...).
 function PlanDeeper({ dest }: { dest: DestinationView }) {
+  const arrivalSlug = flyDriveSlug(dest);
   const fetchPages = useServerFn(getPublicLandingPagesForDestination);
   const { data } = useQuery({
     queryKey: ["landing-pages", dest.id],
     queryFn: () => fetchPages({ data: { destinationId: dest.id } }),
     staleTime: 5 * 60 * 1000,
   });
-  if (!data || data.length === 0) return null;
+  if (!arrivalSlug && (!data || data.length === 0)) return null;
   return (
     <section className="rounded-2xl border border-border bg-card p-6">
       <h2 className="font-display text-2xl text-foreground">Plan deeper</h2>
       <div className="mt-4 flex flex-wrap gap-3">
-        {data.map((p) => (
+        {arrivalSlug && (
+          <Link to="/fly-and-drive/$slug" params={{ slug: arrivalSlug }} className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground hover:bg-muted">
+            Fly into {dest.airportCode}: flights, car & first night
+            <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
+        )}
+        {(data ?? []).map((p) => (
           <Link
             key={p.id}
             to="/$landing"

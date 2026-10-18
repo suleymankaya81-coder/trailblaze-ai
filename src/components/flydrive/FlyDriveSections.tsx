@@ -13,6 +13,7 @@ import { servicePhoto } from "@/lib/data/servicePhotos";
 import type { Photo } from "@/lib/data/destinationCardPhotos";
 import { permitFallback } from "@/components/destination/TripRadar";
 import { formatDriveShort, type Faq } from "@/lib/seo/flyDrive";
+import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 
 const PERMIT_LABEL = { high: "Reservations: high demand", moderate: "Reservations: moderate", none: "No entry permit" } as const;
 
@@ -114,7 +115,7 @@ function StepCard({ n, icon, title, body, href, cta, brand, photo }: { n: number
 export function ArrivalPlan({ dest }: { dest: DestinationView }) {
   const { data: fare } = useQuery({
     queryKey: ["flight-price", dest.airportCode],
-    queryFn: () => getFlightPrice({ data: { airport: dest.airportCode! } }),
+    queryFn: () => dest.airportCode ? getFlightPrice({ data: { airport: dest.airportCode } }) : Promise.resolve(null),
     enabled: !!dest.airportCode,
     staleTime: 60 * 60 * 1000,
   });
@@ -189,17 +190,19 @@ export function ArrivalPlan({ dest }: { dest: DestinationView }) {
 }
 
 export function BeforeYouLand({ dest }: { dest: DestinationView }) {
-  const note = dest.permitNote ?? (dest.permitLevel ? permitFallback(dest.name, dest.permitLevel, dest.bestSeason) : null);
+  const reviewed = getDestinationAnswers(dest.slug)?.reservation;
+  const note = reviewed?.note ?? dest.permitNote ?? (dest.permitLevel ? permitFallback(dest.name, dest.permitLevel, dest.bestSeason) : null);
+  const sourceUrl = reviewed?.sourceUrl ?? dest.permitSourceUrl;
   if (!note && !dest.bestSeason) return null;
   return (
     <div className="grid gap-4 md:grid-cols-3">
       {note && (
         <div className="rounded-3xl border border-border bg-sand/40 p-6 md:col-span-2 md:p-8">
           <p className="text-xs uppercase tracking-wider text-muted-foreground">Reservations</p>
-          <p className="mt-2 font-display text-xl font-semibold text-foreground">{dest.permitHeadline ?? `Planning ${dest.name}`}</p>
+          <p className="mt-2 font-display text-xl font-semibold text-foreground">{reviewed?.headline ?? dest.permitHeadline ?? `Planning ${dest.name}`}</p>
           <p className="mt-3 leading-relaxed text-foreground/80">{note}</p>
-          {dest.permitSourceUrl && (
-            <a href={dest.permitSourceUrl} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary hover:underline">
+          {sourceUrl && (
+            <a href={sourceUrl} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary hover:underline">
               Official reservation info <ArrowUpRight className="h-4 w-4" />
             </a>
           )}
