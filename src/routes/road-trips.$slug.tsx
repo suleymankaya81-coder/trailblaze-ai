@@ -36,7 +36,6 @@ export const Route = createFileRoute("/road-trips/$slug")({
         { property: "og:type", content: "article" },
         { property: "og:url", content: url },
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "robots", content: "noindex" },
         ...(img ? [{ property: "og:image", content: img }, { name: "twitter:image", content: img }] : []),
       ],
       links: [{ rel: "canonical", href: url }],
@@ -59,7 +58,7 @@ function Page() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <GuideHero image={first.heroImage} kicker={`Road trip · ${loop.region}`} title={loop.title} crumbs={<><Link to="/" className="hover:underline">Home</Link> / Road trips</>}>
+        <GuideHero image={first.heroImage} kicker={`Road trip · ${loop.region}`} title={loop.title} crumbs={<><Link to="/" className="hover:underline">Home</Link> / <Link to="/road-trips" className="hover:underline">Road trips</Link></>}>
           <HeroChip icon={<MapPin className="h-4 w-4" />}>{stops.length} stops</HeroChip>
           <HeroChip icon={<CalendarDays className="h-4 w-4" />}>About {totalDays} days</HeroChip>
         </GuideHero>

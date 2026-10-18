@@ -9,14 +9,12 @@ import { getDestinationPageData } from "@/lib/data/destinations.functions";
 import { getGuideAlternatives } from "@/lib/data/guides.functions";
 import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 import { SITE, formatDriveShort } from "@/lib/seo/flyDrive";
-import { PILOT, destGuideJsonLd, isNoReservationEligible, jsonLdScript, noReservationFaqs, reservationNote } from "@/lib/seo/guides";
+import { destGuideJsonLd, isNoReservationEligible, jsonLdScript, noReservationFaqs, reservationNote } from "@/lib/seo/guides";
 
 export const Route = createFileRoute("/no-reservation/$slug")({
   loader: async ({ params }) => {
     const dest = await getDestinationPageData({ data: { slug: params.slug } }).catch(() => null);
     if (!dest || !isNoReservationEligible(dest)) throw notFound();
-    // Pilot phase: only reviewed pilot pages render; all stay noindex.
-    if (!(PILOT.noReservation as readonly string[]).includes(dest.slug)) throw notFound();
     const altSlugs = dest.similar.map((s) => s.slug);
     const alts = altSlugs.length ? (await getGuideAlternatives({ data: { slugs: altSlugs } })).filter((a) => a.permitLevel === "none") : [];
     return { dest, alts, faqs: noReservationFaqs(dest), url: `${SITE}/no-reservation/${dest.slug}` };
@@ -36,7 +34,6 @@ export const Route = createFileRoute("/no-reservation/$slug")({
         { property: "og:type", content: "article" },
         { property: "og:url", content: url },
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "robots", content: "noindex" },
         ...(img ? [{ property: "og:image", content: img }, { name: "twitter:image", content: img }] : []),
       ],
       links: [{ rel: "canonical", href: url }],
