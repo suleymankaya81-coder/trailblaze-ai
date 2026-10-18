@@ -5,12 +5,12 @@ import { Footer } from "@/components/site/Footer";
 import { ArrivalPlan, BeforeYouLand, FlyDriveFaq, FlyDriveHero, RelatedLinks, RouteCard } from "@/components/flydrive/FlyDriveSections";
 import { getDestinationPageData } from "@/lib/data/destinations.functions";
 import { getAirportSiblings } from "@/lib/data/flyDrive.functions";
-import { FLY_DRIVE_PILOTS, SITE, flyDriveFaqs, flyDriveJsonLd, flyDriveSlug, formatDriveShort, parseFlyDriveSlug } from "@/lib/seo/flyDrive";
+import { SITE, flyDriveFaqs, flyDriveJsonLd, flyDriveSlug, formatDriveShort, parseFlyDriveSlug } from "@/lib/seo/flyDrive";
 
 export const Route = createFileRoute("/fly-and-drive/$slug")({
   loader: async ({ params }) => {
     const parsed = parseFlyDriveSlug(params.slug);
-    if (!parsed || !(FLY_DRIVE_PILOTS as readonly string[]).includes(parsed.destinationSlug)) throw notFound();
+    if (!parsed) throw notFound();
     const dest = await getDestinationPageData({ data: { slug: parsed.destinationSlug } }).catch(() => null);
     if (!dest) throw notFound();
     const canonical = flyDriveSlug(dest);
@@ -29,7 +29,6 @@ export const Route = createFileRoute("/fly-and-drive/$slug")({
       meta: [
         { title },
         { name: "description", content: description },
-        { name: "robots", content: "noindex, follow" }, // pilot phase
         { property: "og:title", content: title },
         { property: "og:description", content: description },
         { property: "og:type", content: "article" },
