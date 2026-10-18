@@ -49,5 +49,5 @@
 ## Fly & Drive (pSEO)
 - [x] Step 1: template + 3 noindex pilots (Yellowstone, Zion, Moab)
 - [x] Step 2: open all 440 + sitemap; illustrated booking cards, first-night lodging limited to Expedia and Vrbo.
-- [ ] Step 3: verify preview metadata, canonical URLs, structured data and sitemap; link eligible destination guides and align reservation answers with reviewed notes.
+- [x] Step 3: verified all 440 preview pages' unique titles, metadata, canonical URLs, indexability, structured data and visible FAQs against the sitemap; added destination-guide links and shared reviewed reservation notes. Yellowstone navigation verified; 17 tests passed, build OK.
 - [ ] Fly & Drive publish + GSC sitemap resubmit: deferred by owner; wait for explicit publishing request.
