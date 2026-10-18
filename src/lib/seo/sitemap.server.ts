@@ -4,8 +4,9 @@
 import { landingCoverAssets } from "@/lib/data/landingCoverAssets";
 import { toAbsoluteImageUrl } from "./imageCredit";
 import { flyDriveSlug } from "./flyDrive";
+import { LOOPS, isNoReservationEligible, isRvEligible } from "./guides";
 
-const STATIC_PATHS = ["/", "/destinations", "/about", "/contact", "/privacy", "/terms", "/affiliate-disclosure"];
+const STATIC_PATHS = ["/", "/destinations", "/about", "/contact", "/privacy", "/terms", "/affiliate-disclosure", "/road-trips"];
 const BASE_URL = "https://minialife.com";
 const GUIDE_TYPES = ["best-time-to-visit", "things-to-do", "itinerary", "glamping"] as const;
 
@@ -85,7 +86,7 @@ function urlset(urls: Url[]): Response {
   return xml(urlsetXml(urls));
 }
 
-const CHILDREN = ["pages", "destinations", "fly-and-drive", ...GUIDE_TYPES.map((t) => `guides-${t}`)];
+const CHILDREN = ["pages", "destinations", "fly-and-drive", "no-reservation", "rv-camping", "road-trips", ...GUIDE_TYPES.map((t) => `guides-${t}`)];
 
 export async function buildSitemapResponse(_origin?: string): Promise<Response> {
   return xml(
@@ -125,6 +126,18 @@ export async function buildChildSitemap(name: string): Promise<Response | null> 
         if (slug) urls.push({ loc: `${BASE_URL}/fly-and-drive/${slug}`, lastmod: new Date(d.updated_at).toISOString(), images: uniqueImages([d.hero_image]) });
       }
       return urlset(urls);
+    }
+    if (name === "road-trips") return urlset(LOOPS.map((l) => ({ loc: `${BASE_URL}/road-trips/${l.slug}` })));
+    if (name === "no-reservation" || name === "rv-camping") {
+      const rows = await fetchAll<{ slug: string; name: string; updated_at: string; hero_image: string | null; nearest_airport_code: string | null; nearest_airport_name: string | null; drive_minutes: number | null; permit_level: "high" | "moderate" | "none" | null; permit_note: string | null; permit_headline: string | null; camping_score: number | null; best_season: string | null }>(
+        "destinations?select=slug,name,updated_at,hero_image,nearest_airport_code,nearest_airport_name,drive_minutes,permit_level,permit_note,permit_headline,camping_score,best_season&status=eq.published&order=slug.asc",
+      );
+      const ok = name === "no-reservation" ? isNoReservationEligible : isRvEligible;
+      return urlset(
+        rows
+          .filter((d) => ok({ slug: d.slug, name: d.name, airportCode: d.nearest_airport_code, airportName: d.nearest_airport_name, driveMinutes: d.drive_minutes, permitLevel: d.permit_level, permitNote: d.permit_note, permitHeadline: d.permit_headline, campingScore: d.camping_score, bestSeason: d.best_season }))
+          .map((d) => ({ loc: `${BASE_URL}/${name}/${d.slug}`, lastmod: new Date(d.updated_at).toISOString(), images: uniqueImages([d.hero_image]) })),
+      );
     }
     const suffix = name.slice("guides-".length);
     const rows = await fetchAll<{ path: string; updated_at: string; cover_image: string | null; destinations: { hero_image: string | null } | null }>(
