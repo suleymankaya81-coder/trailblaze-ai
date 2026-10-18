@@ -19,7 +19,9 @@ const slugify = (s: string) =>
 /** City part of the URL: a parenthetical city wins ("… (Knoxville)"), else the first word. */
 export function airportCity(airportName: string): string {
   const paren = airportName.match(/\(([^)]+)\)/);
-  const base = paren ? paren[1] : airportName.split(/[\s–-]+/)[0];
+  const words = airportName.split(/[\s–-]+/);
+  // "St. George" / "Ft. Myers": keep the abbreviation with the next word.
+  const base = paren ? paren[1] : /\.$/.test(words[0]) ? `${words[0]} ${words[1] ?? ""}` : words[0];
   return slugify(base);
 }
 

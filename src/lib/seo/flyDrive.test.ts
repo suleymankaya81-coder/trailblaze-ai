@@ -13,6 +13,8 @@ describe("fly & drive slugs", () => {
   });
   it("prefers a parenthetical city", () => {
     expect(airportCity("McGhee Tyson Airport (Knoxville)")).toBe("knoxville");
+    expect(airportCity("St. George Regional Airport")).toBe("st-george");
+    expect(parseFlyDriveSlug("st-george-sgu-zion")).toEqual({ iata: "sgu", destinationSlug: "zion" });
   });
   it("returns null when drive time or airport is missing", () => {
     expect(flyDriveSlug({ ...ys, driveMinutes: null })).toBeNull();
