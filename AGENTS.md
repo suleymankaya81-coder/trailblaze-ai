@@ -20,3 +20,4 @@
 - Destination JSON-LD mirrors visible plans as ordered TouristTrip stops, never inferred availability; pilot answers/reservation overrides share dated sources. Why: machine-readable and visible guidance must agree.
 - Image JSON-LD/sitemaps list only displayed absolute-URL photos; credits only when parsed; no invented stop photos. Why: avoid misleading image search.
 - Fly & Drive uses stored airport/drive data, no per-page AI; reject incomplete data. Guides link to canonical arrivals; FAQs/notes prefer shared reviewed rules. Why: crawlability, consistent facts, no AI cost.
+- Phase B guides (/no-reservation, /road-trips, /rv-camping) use guides.ts eligibility rules, stored data and reviewed src/data/loops.json; PILOT lists gate rendering until scale-out. Why: no thin pages or per-visit AI.
