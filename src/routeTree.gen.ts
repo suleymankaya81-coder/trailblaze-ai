@@ -20,6 +20,7 @@ import { Route as TermsRouteImport } from './routes/terms'
 import { Route as DestinationsIndexRouteImport } from './routes/destinations.index'
 import { Route as DestinationsSlugRouteImport } from './routes/destinations.$slug'
 import { Route as FlyAndDriveSlugRouteImport } from './routes/fly-and-drive.$slug'
+import { Route as NoReservationSlugRouteImport } from './routes/no-reservation.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -76,6 +77,11 @@ const FlyAndDriveSlugRoute = FlyAndDriveSlugRouteImport.update({
   path: '/fly-and-drive/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const NoReservationSlugRoute = NoReservationSlugRouteImport.update({
+  id: '/no-reservation/$slug',
+  path: '/no-reservation/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -88,6 +94,7 @@ export interface FileRoutesByFullPath {
   '/terms': typeof TermsRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
+  '/no-reservation/$slug': typeof NoReservationSlugRoute
   '/destinations/': typeof DestinationsIndexRoute
 }
 export interface FileRoutesByTo {
@@ -101,6 +108,7 @@ export interface FileRoutesByTo {
   '/terms': typeof TermsRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
+  '/no-reservation/$slug': typeof NoReservationSlugRoute
   '/destinations': typeof DestinationsIndexRoute
 }
 export interface FileRoutesById {
@@ -115,6 +123,7 @@ export interface FileRoutesById {
   '/terms': typeof TermsRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
+  '/no-reservation/$slug': typeof NoReservationSlugRoute
   '/destinations/': typeof DestinationsIndexRoute
 }
 export interface FileRouteTypes {
@@ -130,6 +139,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/destinations/$slug'
     | '/fly-and-drive/$slug'
+    | '/no-reservation/$slug'
     | '/destinations/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -143,6 +153,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/destinations/$slug'
     | '/fly-and-drive/$slug'
+    | '/no-reservation/$slug'
     | '/destinations'
   id:
     | '__root__'
@@ -156,6 +167,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/destinations/$slug'
     | '/fly-and-drive/$slug'
+    | '/no-reservation/$slug'
     | '/destinations/'
   fileRoutesById: FileRoutesById
 }
@@ -170,6 +182,7 @@ export interface RootRouteChildren {
   TermsRoute: typeof TermsRoute
   DestinationsSlugRoute: typeof DestinationsSlugRoute
   FlyAndDriveSlugRoute: typeof FlyAndDriveSlugRoute
+  NoReservationSlugRoute: typeof NoReservationSlugRoute
   DestinationsIndexRoute: typeof DestinationsIndexRoute
 }
 
@@ -252,6 +265,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FlyAndDriveSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/no-reservation/$slug': {
+      id: '/no-reservation/$slug'
+      path: '/no-reservation/$slug'
+      fullPath: '/no-reservation/$slug'
+      preLoaderRoute: typeof NoReservationSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -266,6 +286,7 @@ const rootRouteChildren: RootRouteChildren = {
   TermsRoute: TermsRoute,
   DestinationsSlugRoute: DestinationsSlugRoute,
   FlyAndDriveSlugRoute: FlyAndDriveSlugRoute,
+  NoReservationSlugRoute: NoReservationSlugRoute,
   DestinationsIndexRoute: DestinationsIndexRoute,
 }
 export const routeTree = rootRouteImport

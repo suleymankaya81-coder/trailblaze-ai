@@ -15,14 +15,15 @@ export const Route = createFileRoute("/no-reservation/$slug")({
   loader: async ({ params }) => {
     const dest = await getDestinationPageData({ data: { slug: params.slug } }).catch(() => null);
     if (!dest || !isNoReservationEligible(dest)) throw notFound();
+    // Pilot phase: only reviewed pilot pages render; all stay noindex.
+    if (!(PILOT.noReservation as readonly string[]).includes(dest.slug)) throw notFound();
     const altSlugs = dest.similar.map((s) => s.slug);
     const alts = altSlugs.length ? (await getGuideAlternatives({ data: { slugs: altSlugs } })).filter((a) => a.permitLevel === "none") : [];
-    const pilot = (PILOT.noReservation as readonly string[]).includes(dest.slug);
-    return { dest, alts, pilot, faqs: noReservationFaqs(dest), url: `${SITE}/no-reservation/${dest.slug}` };
+    return { dest, alts, faqs: noReservationFaqs(dest), url: `${SITE}/no-reservation/${dest.slug}` };
   },
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
-    const { dest, faqs, url, pilot } = loaderData;
+    const { dest, faqs, url } = loaderData;
     const title = `${dest.name} Without a Reservation: Entry Rules & Backup Plans — MiniaLife`;
     const description = `Missed a booking for ${dest.name}? What needs a reservation, timing tips to get in, nearby places with no entry booking, and flights, car and first night.`;
     const img = dest.heroImage.startsWith("https://") ? dest.heroImage : null;
@@ -35,7 +36,6 @@ export const Route = createFileRoute("/no-reservation/$slug")({
         { property: "og:type", content: "article" },
         { property: "og:url", content: url },
         { name: "twitter:card", content: "summary_large_image" },
-        ...(pilot ? [] : [{ name: "robots", content: "noindex" }]),
         { name: "robots", content: "noindex" },
         ...(img ? [{ property: "og:image", content: img }, { name: "twitter:image", content: img }] : []),
       ],
