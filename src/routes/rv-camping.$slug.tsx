@@ -12,7 +12,7 @@ import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 import { servicePhoto } from "@/lib/data/servicePhotos";
 import { partnerLabel } from "@/lib/affiliates/compliance";
 import { SITE, formatDriveShort } from "@/lib/seo/flyDrive";
-import { PILOT, destGuideJsonLd, isRvEligible, jsonLdScript, reservationNote, rvFaqs } from "@/lib/seo/guides";
+import { destGuideJsonLd, isRvEligible, jsonLdScript, reservationNote, rvFaqs } from "@/lib/seo/guides";
 
 const CAMP_PARTNERS = new Set(["campspot", "roverpass"]);
 
@@ -20,8 +20,6 @@ export const Route = createFileRoute("/rv-camping/$slug")({
   loader: async ({ params }) => {
     const dest = await getDestinationPageData({ data: { slug: params.slug } }).catch(() => null);
     if (!dest || !isRvEligible(dest)) throw notFound();
-    // Pilot phase: only reviewed pilot pages render; all stay noindex.
-    if (!(PILOT.rvCamping as readonly string[]).includes(dest.slug)) throw notFound();
     return { dest, faqs: rvFaqs(dest), url: `${SITE}/rv-camping/${dest.slug}` };
   },
   head: ({ loaderData }) => {
@@ -39,7 +37,6 @@ export const Route = createFileRoute("/rv-camping/$slug")({
         { property: "og:type", content: "article" },
         { property: "og:url", content: url },
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "robots", content: "noindex" },
         ...(img ? [{ property: "og:image", content: img }, { name: "twitter:image", content: img }] : []),
       ],
       links: [{ rel: "canonical", href: url }],

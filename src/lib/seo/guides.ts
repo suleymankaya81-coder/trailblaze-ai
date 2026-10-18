@@ -18,13 +18,6 @@ export type GuideDest = {
   bestSeason: string | null;
 };
 
-/** Pilot pages stay noindex and out of sitemaps until the design is approved. */
-export const PILOT = {
-  noReservation: ["yellowstone", "zion", "moab"],
-  rvCamping: ["yellowstone", "zion", "moab"],
-  loops: loops.map((l) => l.slug),
-} as const;
-
 export const RV_MIN_CAMPING_SCORE = 7;
 /** Straight-line cap between consecutive loop stops (~5 h of driving). */
 export const LOOP_MAX_LEG_MILES = 250;
@@ -70,6 +63,7 @@ export function rvFaqs(d: GuideDest): Faq[] {
 // ---------- Loops ----------
 export type Loop = (typeof loops)[number];
 export const LOOPS: Loop[] = loops;
+export const loopsForDestination = (slug: string) => LOOPS.filter((l) => l.stops.includes(slug));
 export const getLoop = (slug: string) => LOOPS.find((l) => l.slug === slug) ?? null;
 
 export function haversineMiles(a: [number, number], b: [number, number]): number {
@@ -150,7 +144,7 @@ export function loopJsonLd(loop: Loop, stops: LoopStop[], faqs: Faq[], url: stri
           itemListElement: stops.map((s, i) => ({ "@type": "ListItem", position: i + 1, item: { "@type": "TouristDestination", name: s.name, url: `${SITE}/destinations/${s.slug}` } })),
         },
       },
-      breadcrumb([["Home", SITE], ["Road trips", `${SITE}/road-trips/${loop.slug}`], [loop.title, url]]),
+      breadcrumb([["Home", SITE], ["Road trips", `${SITE}/road-trips`], [loop.title, url]]),
       faqPage(faqs),
     ],
   };

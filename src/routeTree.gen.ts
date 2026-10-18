@@ -21,6 +21,7 @@ import { Route as DestinationsIndexRouteImport } from './routes/destinations.ind
 import { Route as DestinationsSlugRouteImport } from './routes/destinations.$slug'
 import { Route as FlyAndDriveSlugRouteImport } from './routes/fly-and-drive.$slug'
 import { Route as NoReservationSlugRouteImport } from './routes/no-reservation.$slug'
+import { Route as RoadTripsIndexRouteImport } from './routes/road-trips.index'
 import { Route as RoadTripsSlugRouteImport } from './routes/road-trips.$slug'
 import { Route as RvCampingSlugRouteImport } from './routes/rv-camping.$slug'
 
@@ -84,6 +85,11 @@ const NoReservationSlugRoute = NoReservationSlugRouteImport.update({
   path: '/no-reservation/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RoadTripsIndexRoute = RoadTripsIndexRouteImport.update({
+  id: '/road-trips/',
+  path: '/road-trips/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RoadTripsSlugRoute = RoadTripsSlugRouteImport.update({
   id: '/road-trips/$slug',
   path: '/road-trips/$slug',
@@ -110,6 +116,7 @@ export interface FileRoutesByFullPath {
   '/road-trips/$slug': typeof RoadTripsSlugRoute
   '/rv-camping/$slug': typeof RvCampingSlugRoute
   '/destinations/': typeof DestinationsIndexRoute
+  '/road-trips/': typeof RoadTripsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -126,6 +133,7 @@ export interface FileRoutesByTo {
   '/road-trips/$slug': typeof RoadTripsSlugRoute
   '/rv-camping/$slug': typeof RvCampingSlugRoute
   '/destinations': typeof DestinationsIndexRoute
+  '/road-trips': typeof RoadTripsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -143,6 +151,7 @@ export interface FileRoutesById {
   '/road-trips/$slug': typeof RoadTripsSlugRoute
   '/rv-camping/$slug': typeof RvCampingSlugRoute
   '/destinations/': typeof DestinationsIndexRoute
+  '/road-trips/': typeof RoadTripsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -161,6 +170,7 @@ export interface FileRouteTypes {
     | '/road-trips/$slug'
     | '/rv-camping/$slug'
     | '/destinations/'
+    | '/road-trips/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -177,6 +187,7 @@ export interface FileRouteTypes {
     | '/road-trips/$slug'
     | '/rv-camping/$slug'
     | '/destinations'
+    | '/road-trips'
   id:
     | '__root__'
     | '/'
@@ -193,6 +204,7 @@ export interface FileRouteTypes {
     | '/road-trips/$slug'
     | '/rv-camping/$slug'
     | '/destinations/'
+    | '/road-trips/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -210,6 +222,7 @@ export interface RootRouteChildren {
   RoadTripsSlugRoute: typeof RoadTripsSlugRoute
   RvCampingSlugRoute: typeof RvCampingSlugRoute
   DestinationsIndexRoute: typeof DestinationsIndexRoute
+  RoadTripsIndexRoute: typeof RoadTripsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -298,6 +311,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NoReservationSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/road-trips/': {
+      id: '/road-trips/'
+      path: '/road-trips'
+      fullPath: '/road-trips/'
+      preLoaderRoute: typeof RoadTripsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/road-trips/$slug': {
       id: '/road-trips/$slug'
       path: '/road-trips/$slug'
@@ -330,6 +350,7 @@ const rootRouteChildren: RootRouteChildren = {
   RoadTripsSlugRoute: RoadTripsSlugRoute,
   RvCampingSlugRoute: RvCampingSlugRoute,
   DestinationsIndexRoute: DestinationsIndexRoute,
+  RoadTripsIndexRoute: RoadTripsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
