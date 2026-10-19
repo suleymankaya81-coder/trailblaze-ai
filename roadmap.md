@@ -56,3 +56,8 @@
 - [x] Step 1: noindex pilots (3 per family)
 - [x] Step 2: open all eligible pages, internal links, child sitemaps
 - [x] Step 3: SEO validation pass (584 pages OK)
+
+## ROCKBROS sample gear guide and site palette
+- [x] Build /gear/7-bikepacking-essentials with seven actual catalog products, mobile swipeable recommendations, comparison and FAQs.
+- [x] Apply beige backgrounds, white cards and dark-green CTAs site-wide; add header/footer guide links.
+- [x] Verify all seven product images, catalog prices, publisher/advertiser IDs, new-tab tracking, desktop/mobile layout, previous/next controls and FAQ interaction; five tests pass, build OK. Publishing remains deferred.

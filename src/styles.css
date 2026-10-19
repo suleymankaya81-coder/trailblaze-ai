@@ -54,19 +54,19 @@
 :root {
   --radius: 1rem;
 
-  /* REI-inspired outdoor palette */
+  /* MiniaLife outdoor palette: quiet beige, white cards, forest actions. */
   --off-white: oklch(0.985 0.005 90);
-  --beige: oklch(0.96 0.012 85);
+  --beige: oklch(0.965 0.014 85);
   --sand: oklch(0.91 0.025 80);
   --sage: oklch(0.82 0.045 150);
   --sage-deep: oklch(0.48 0.08 152);
-  --forest: oklch(0.30 0.055 155);
-  --ember: oklch(0.62 0.16 45);
+  --forest: oklch(0.32 0.055 155);
+  --ember: var(--forest);
   --ink: oklch(0.18 0.012 80);
-  /* Reserved exclusively for offer CTAs, so it reads as "the button color". */
-  --copper: oklch(0.5 0.13 42);
+  /* Compatibility aliases keep every existing action in the green palette. */
+  --copper: var(--forest);
 
-  --background: oklch(1 0 0);
+  --background: var(--beige);
   --foreground: var(--ink);
   --card: oklch(1 0 0);
   --card-foreground: var(--ink);
@@ -125,8 +125,28 @@
   h1, h2, h3 {
     font-family: var(--font-display);
     font-weight: 700;
-    letter-spacing: -0.025em;
+    letter-spacing: 0;
   }
+}
+
+@utility gear-carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 86%;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: var(--sage) transparent;
+  padding-bottom: 1rem;
+  & > * { scroll-snap-align: start; }
+  @media (min-width: 768px) {
+    grid-auto-columns: calc((100% - 2rem) / 3);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; }
 }
 
 @utility container-page {

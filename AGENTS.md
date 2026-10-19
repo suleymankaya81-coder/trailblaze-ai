@@ -15,7 +15,7 @@
 - Pinterest RSS uses published/indexable pages and pre-rendered `pin_assets`; `pin_schedule.py` assigns account-wide UTC releases, preserving dates on retries. Cards use private storage, signed URLs, shared pinCopy and image credits. Why: no per-visit rendering or duplicate scheduling.
 - Destination reservation notes (destinations.permit_headline/note/source_url) are generated once by `scripts/content-pipeline/generate-permit-notes.py` and required by publish-wave.py; pages fall back to a named, season-aware sentence. Why: no generic copy and no per-visit AI cost.
 - Travel plans use destinations.travel_plan, travelPlan.ts and leased/pausable generation; TravelFlow/LocalIntel render them. A dated review ledger records sourced corrections and marker exclusions, applied on regeneration; sightseeing pins never change airport geometry. Prose screening is not complete fact verification. Why: reusable content without recurring map errors or false review claims.
-- Subdirectories may have their own `AGENTS.md` (e.g. `scripts/content-pipeline/`); read it before changing files there.
+- Read nested AGENTS.md before editing (including scripts/content-pipeline and src/components/gear).
 - AI discovery uses curated public-only llms.txt and search-crawler rules retaining outbound exclusions, not ranking guarantees. Why: file support is not standardized.
 - Destination JSON-LD mirrors visible plans as ordered TouristTrip stops, never inferred availability; pilot answers/reservation overrides share dated sources. Why: machine-readable and visible guidance must agree.
 - Image JSON-LD/sitemaps list only displayed absolute-URL photos; credits only when parsed; no invented stop photos. Why: avoid misleading image search.

@@ -25,9 +25,9 @@ export function Header() {
           <a href="#rentals-gear" className="text-foreground/80 hover:text-foreground">
             Rentals
           </a>
-          <a href="#rentals-gear" className="text-foreground/80 hover:text-foreground">
+          <Link to="/gear/7-bikepacking-essentials" className="text-foreground/80 hover:text-foreground">
             Gear
-          </a>
+          </Link>
           <a href="#stories" className="text-foreground/80 hover:text-foreground">
             Stories
           </a>
