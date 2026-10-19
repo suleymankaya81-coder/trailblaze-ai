@@ -58,6 +58,6 @@
 - [x] Step 3: SEO validation pass (584 pages OK)
 
 ## ROCKBROS sample gear guide and site palette
-- [ ] Build /gear/7-bikepacking-essentials with seven actual catalog products, mobile swipeable recommendations, comparison and FAQs.
-- [ ] Apply beige backgrounds, white cards and dark-green CTAs site-wide; add a visible guide link.
-- [ ] Verify catalog provenance, tracked links, product images and desktop/mobile interaction; publishing remains deferred.
+- [x] Build /gear/7-bikepacking-essentials with seven actual catalog products, mobile swipeable recommendations, comparison and FAQs.
+- [x] Apply beige backgrounds, white cards and dark-green CTAs site-wide; add header/footer guide links.
+- [x] Verify all seven product images, catalog prices, publisher/advertiser IDs, new-tab tracking, desktop/mobile layout, previous/next controls and FAQ interaction; five tests pass, build OK. Publishing remains deferred.
