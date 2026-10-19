@@ -3,6 +3,7 @@ import logoStacked from "@/assets/logos/minialife-stacked-mixedcase-trimmed.png"
 
 const footerLinks = [
   { to: "/road-trips", label: "Road Trip Loops" },
+  { to: "/gear/7-bikepacking-essentials", label: "Bikepacking Gear" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
   { to: "/affiliate-disclosure", label: "Affiliate Disclosure" },

@@ -20,6 +20,7 @@ import { Route as TermsRouteImport } from './routes/terms'
 import { Route as DestinationsIndexRouteImport } from './routes/destinations.index'
 import { Route as DestinationsSlugRouteImport } from './routes/destinations.$slug'
 import { Route as FlyAndDriveSlugRouteImport } from './routes/fly-and-drive.$slug'
+import { Route as Gear7BikepackingEssentialsRouteImport } from './routes/gear.7-bikepacking-essentials'
 import { Route as NoReservationSlugRouteImport } from './routes/no-reservation.$slug'
 import { Route as RoadTripsIndexRouteImport } from './routes/road-trips.index'
 import { Route as RoadTripsSlugRouteImport } from './routes/road-trips.$slug'
@@ -80,6 +81,12 @@ const FlyAndDriveSlugRoute = FlyAndDriveSlugRouteImport.update({
   path: '/fly-and-drive/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const Gear7BikepackingEssentialsRoute =
+  Gear7BikepackingEssentialsRouteImport.update({
+    id: '/gear/7-bikepacking-essentials',
+    path: '/gear/7-bikepacking-essentials',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const NoReservationSlugRoute = NoReservationSlugRouteImport.update({
   id: '/no-reservation/$slug',
   path: '/no-reservation/$slug',
@@ -112,6 +119,7 @@ export interface FileRoutesByFullPath {
   '/terms': typeof TermsRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
+  '/gear/7-bikepacking-essentials': typeof Gear7BikepackingEssentialsRoute
   '/no-reservation/$slug': typeof NoReservationSlugRoute
   '/road-trips/$slug': typeof RoadTripsSlugRoute
   '/rv-camping/$slug': typeof RvCampingSlugRoute
@@ -129,6 +137,7 @@ export interface FileRoutesByTo {
   '/terms': typeof TermsRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
+  '/gear/7-bikepacking-essentials': typeof Gear7BikepackingEssentialsRoute
   '/no-reservation/$slug': typeof NoReservationSlugRoute
   '/road-trips/$slug': typeof RoadTripsSlugRoute
   '/rv-camping/$slug': typeof RvCampingSlugRoute
@@ -147,6 +156,7 @@ export interface FileRoutesById {
   '/terms': typeof TermsRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
+  '/gear/7-bikepacking-essentials': typeof Gear7BikepackingEssentialsRoute
   '/no-reservation/$slug': typeof NoReservationSlugRoute
   '/road-trips/$slug': typeof RoadTripsSlugRoute
   '/rv-camping/$slug': typeof RvCampingSlugRoute
@@ -166,6 +176,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/destinations/$slug'
     | '/fly-and-drive/$slug'
+    | '/gear/7-bikepacking-essentials'
     | '/no-reservation/$slug'
     | '/road-trips/$slug'
     | '/rv-camping/$slug'
@@ -183,6 +194,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/destinations/$slug'
     | '/fly-and-drive/$slug'
+    | '/gear/7-bikepacking-essentials'
     | '/no-reservation/$slug'
     | '/road-trips/$slug'
     | '/rv-camping/$slug'
@@ -200,6 +212,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/destinations/$slug'
     | '/fly-and-drive/$slug'
+    | '/gear/7-bikepacking-essentials'
     | '/no-reservation/$slug'
     | '/road-trips/$slug'
     | '/rv-camping/$slug'
@@ -218,6 +231,7 @@ export interface RootRouteChildren {
   TermsRoute: typeof TermsRoute
   DestinationsSlugRoute: typeof DestinationsSlugRoute
   FlyAndDriveSlugRoute: typeof FlyAndDriveSlugRoute
+  Gear7BikepackingEssentialsRoute: typeof Gear7BikepackingEssentialsRoute
   NoReservationSlugRoute: typeof NoReservationSlugRoute
   RoadTripsSlugRoute: typeof RoadTripsSlugRoute
   RvCampingSlugRoute: typeof RvCampingSlugRoute
@@ -304,6 +318,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FlyAndDriveSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/gear/7-bikepacking-essentials': {
+      id: '/gear/7-bikepacking-essentials'
+      path: '/gear/7-bikepacking-essentials'
+      fullPath: '/gear/7-bikepacking-essentials'
+      preLoaderRoute: typeof Gear7BikepackingEssentialsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/no-reservation/$slug': {
       id: '/no-reservation/$slug'
       path: '/no-reservation/$slug'
@@ -346,6 +367,7 @@ const rootRouteChildren: RootRouteChildren = {
   TermsRoute: TermsRoute,
   DestinationsSlugRoute: DestinationsSlugRoute,
   FlyAndDriveSlugRoute: FlyAndDriveSlugRoute,
+  Gear7BikepackingEssentialsRoute: Gear7BikepackingEssentialsRoute,
   NoReservationSlugRoute: NoReservationSlugRoute,
   RoadTripsSlugRoute: RoadTripsSlugRoute,
   RvCampingSlugRoute: RvCampingSlugRoute,

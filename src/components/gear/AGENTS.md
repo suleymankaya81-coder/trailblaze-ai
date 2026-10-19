@@ -1,0 +1,3 @@
+- Gear guides compose small typed selections from the stored affiliate catalog; never bundle the full catalog. Why: fast pages with traceable product details.
+- Merchant images use asset pointers and outbound Awin links use buildAwinLink. Why: reliable images and consistent attribution.
+- Global semantic tokens, including copper/ember compatibility aliases, control action colors. Why: one palette across old and new screens.
