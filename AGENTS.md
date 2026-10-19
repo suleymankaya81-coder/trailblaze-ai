@@ -20,3 +20,4 @@
 - Destination JSON-LD mirrors visible plans as ordered TouristTrip stops, never inferred availability; pilot answers/reservation overrides share dated sources. Why: machine-readable and visible guidance must agree.
 - Image JSON-LD/sitemaps list only displayed absolute-URL photos; credits only when parsed; no invented stop photos. Why: avoid misleading image search.
 - pSEO guides (Fly & Drive, /no-reservation, /road-trips, /rv-camping) use stored data, reviewed loops.json and eligibility rules in flyDrive.ts/guides.ts; incomplete data 404s, PILOT lists gate scale-out, FAQs prefer reviewed notes. Why: no thin pages or per-visit AI.
+- Affiliate product feeds are stored raw in data/affiliate-feeds/<brand>/raw and normalized by scripts/content-pipeline/import-<brand>-feed.py into products.json (models with variants). Why: product guides are built from one reviewable, re-importable catalog.
