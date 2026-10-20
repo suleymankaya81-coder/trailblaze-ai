@@ -71,7 +71,7 @@ export function GearShopPage() {
                 { icon: Mountain, a: "Adventure Ready", b: "For Every Terrain" },
                 { icon: MousePointerClick, a: "Fast & Easy", b: "Shop Direct Links" },
               ].map(({ icon: Icon, a, b }, i) => (
-                <li key={a} className={`flex items-center gap-3 pr-6 ${i ? "border-l border-off-white/30 pl-6" : ""}`}>
+                <li key={a} className={`flex w-full items-center gap-3 pr-6 sm:w-auto ${i ? "sm:border-l sm:border-off-white/30 sm:pl-6" : ""}`}>
                   <Icon className="h-7 w-7 shrink-0 text-amber" />
                   <span className="leading-tight"><strong className="block font-semibold">{a}</strong><span className="text-off-white/80">{b}</span></span>
                 </li>
@@ -111,7 +111,7 @@ export function GearShopPage() {
               {shopPicks.map(({ product, activity }) => (
                 <article key={product.id} className="flex flex-col rounded-xl border border-border bg-card p-3 shadow-soft">
                   <span className={`self-start rounded px-2 py-0.5 text-[10px] font-semibold ${activityTone[activity]}`}>{activityLabel[activity]}</span>
-                  <img src={product.image} alt={product.catalogTitle} loading="lazy" width={300} height={300} className="mx-auto my-3 aspect-square w-full object-contain" />
+                  <img src={product.image} alt={product.catalogTitle} loading="lazy" width={300} height={300} className="mx-auto my-3 aspect-square w-full max-w-44 object-contain md:max-w-none" />
                   <h3 className="line-clamp-2 text-sm font-semibold text-foreground">ROCKBROS {product.name}</h3>
                   <p className="mt-1 text-xs text-muted-foreground">{product.purpose}</p>
                   <p className="mt-2 text-lg font-bold text-foreground">{catalogPrice(product)}</p>
