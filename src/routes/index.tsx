@@ -2,8 +2,11 @@ import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   ArrowRight,
+  Bike,
   Compass,
+  Glasses,
   MapPin,
+  Moon,
   Mountain,
   Sparkles,
   Sun,
@@ -12,6 +15,8 @@ import {
   Users,
   Wallet,
 } from "lucide-react";
+
+import { LOOPS } from "@/lib/seo/guides";
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
@@ -221,6 +226,48 @@ function HomePage() {
         </section>
       )}
 
+      {/* ROAD TRIP LOOPS — routes are the heart of MiniaLife */}
+      <section className="bg-beige py-20">
+        <div className="container-page">
+          <div className="mb-10 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.22em] text-foreground/60">
+                Road trip loops
+              </p>
+              <h2 className="mt-2 font-serif text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+                Multi-park routes, planned for you
+              </h2>
+            </div>
+            <Link
+              to="/road-trips"
+              className="text-sm font-semibold text-foreground/80 hover:text-foreground hover:underline"
+            >
+              View all loops <ArrowRight className="ml-1 inline h-3.5 w-3.5" />
+            </Link>
+          </div>
+          <div className="grid gap-5 md:grid-cols-3">
+            {LOOPS.slice(0, 3).map((l) => (
+              <Link
+                key={l.slug}
+                to="/road-trips/$slug"
+                params={{ slug: l.slug }}
+                className="group flex flex-col rounded-3xl border border-border bg-card p-6 shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg"
+              >
+                <p className="flex items-center gap-1.5 text-xs uppercase tracking-wider text-muted-foreground">
+                  <MapPin className="h-3.5 w-3.5" />
+                  {l.region} · {l.stops.length} stops
+                </p>
+                <h3 className="mt-2 font-display text-xl font-semibold text-foreground">{l.title}</h3>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{l.intro}</p>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">
+                  See the loop <ArrowRight className="h-4 w-4" />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* PLAN BUILDER — trip-tag shortcuts into the filtered destinations list */}
       <section className="bg-background py-16">
         <div className="container-page">
@@ -266,6 +313,39 @@ function HomePage() {
                 estimates — check the partner site for current availability and pricing.
               </p>
             </div>
+
+            {/* Motorhome Republic is the hero for RV & campervan rentals */}
+            <Link
+              to="/destinations"
+              className="group mb-5 grid overflow-hidden rounded-3xl border border-border bg-card shadow-soft transition hover:shadow-lg md:grid-cols-2"
+            >
+              <div className="relative aspect-[16/9] overflow-hidden md:aspect-auto md:min-h-[280px]">
+                <img
+                  src={rvImage}
+                  alt="Campervan on a scenic road — AI-generated illustration"
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="flex flex-col justify-center p-6 md:p-10">
+                <p className="text-xs font-bold uppercase tracking-[0.22em] text-foreground/60">
+                  RV & campervan rentals
+                </p>
+                <h3 className="mt-2 font-serif text-2xl font-bold text-foreground md:text-3xl">
+                  Compare motorhomes from established fleet providers
+                </h3>
+                <p className="mt-3 max-w-md text-sm leading-relaxed text-muted-foreground">
+                  We point you to Motorhome Republic for motorhomes and campervans from professional
+                  rental fleets. Pick a destination to see options near the parks.
+                </p>
+                <span className="mt-5 inline-flex w-fit items-center gap-1.5 rounded-full bg-forest px-5 py-2.5 text-sm font-semibold text-off-white transition group-hover:bg-forest/90">
+                  Find RV rentals <ArrowRight className="h-4 w-4" />
+                </span>
+                <span className="mt-3 text-xs text-muted-foreground">
+                  AI-generated illustration · Not an actual rental listing
+                </span>
+              </div>
+            </Link>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
               {([{ brand: "bikesbooking" as const, name: "BikesBooking", category: "bike" as const, title: "Bike & e-bike rentals" }, { brand: "economybookings" as const, name: "EconomyBookings", category: "car" as const, title: "Compare road-trip rental cars" }]).map((item) => {
                 const photo = servicePhoto(item.category, "homepage-partners");
@@ -347,6 +427,52 @@ function HomePage() {
           </div>
         </section>
       )}
+
+      {/* CURATED TRIP ESSENTIALS — gear framed as route support, not a store */}
+      <section className="bg-background py-16">
+        <div className="container-page">
+          <div className="mb-8 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.22em] text-foreground/60">
+                Curated Trip Essentials
+              </p>
+              <h2 className="mt-2 font-serif text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+                Gear picked by MiniaLife for the road
+              </h2>
+            </div>
+            <Link
+              to="/gear"
+              className="text-sm font-semibold text-foreground/80 hover:text-foreground hover:underline"
+            >
+              Browse the Gear Shop <ArrowRight className="ml-1 inline h-3.5 w-3.5" />
+            </Link>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { icon: Bike, title: "7 Bikepacking Essentials", blurb: "Bags, tools and kit for self-supported rides.", to: "/gear/7-bikepacking-essentials" as const },
+              { icon: Glasses, title: "Best Cycling Accessories", blurb: "Everyday upgrades for comfort and safety.", to: "/gear/best-cycling-accessories" as const },
+              { icon: Moon, title: "Night Vision Spotlight", blurb: "WILDGUARDER binoculars for wildlife after dark.", to: "/gear" as const, hash: "night-vision" },
+              { icon: Tent, title: "All Gear Categories", blurb: "Camping, hiking, optics, apparel and more.", to: "/gear" as const },
+            ].map((c) => (
+              <Link
+                key={c.title}
+                to={c.to}
+                hash={"hash" in c ? c.hash : undefined}
+                className="group flex flex-col rounded-2xl border border-border bg-card p-6 transition hover:border-foreground/30 hover:shadow-soft"
+              >
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-muted text-foreground/70 transition group-hover:text-foreground">
+                  <c.icon className="h-5 w-5" />
+                </div>
+                <h3 className="mt-4 text-base font-bold text-foreground">{c.title}</h3>
+                <p className="mt-1.5 flex-1 text-sm text-muted-foreground">{c.blurb}</p>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">
+                  Explore <ArrowRight className="h-4 w-4" />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* STAY TYPES — the one category-tile grid */}
       <section id="stay-types" className="bg-background py-20">
@@ -474,12 +600,12 @@ function HomeHero() {
               RV Rentals
             </a>
             <span className="h-1 w-1 rounded-full bg-off-white/40" />
-            <a
-              href="#rentals-gear"
+            <Link
+              to="/gear"
               className="font-medium text-off-white/80 hover:text-off-white hover:underline"
             >
-              Gear
-            </a>
+              Curated Gear Picks
+            </Link>
           </div>
         </div>
       </div>
