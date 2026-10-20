@@ -1,45 +1,83 @@
 import { Link } from "@tanstack/react-router";
-import {
-  ArrowRight,
-  Award,
-  BadgeDollarSign,
-  Bike,
-  Layers,
-  Map,
-  Mountain,
-  MousePointerClick,
-  ShieldCheck,
-  Wrench,
-} from "lucide-react";
+import { ArrowRight, Check, ChevronRight, Handshake, Sparkles } from "lucide-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
-import { catalogPrice, CATALOG_REVIEW_DATE, gearShopLink } from "@/lib/data/rockbrosGear";
-import { activityLabel, activityTone, shopPicks, type GearActivity } from "@/lib/data/gearShop";
-import hero from "@/assets/gear/shop-hero.jpg";
-import actBike from "@/assets/gear/act-bikepacking.jpg";
+import { gearCategories, GEAR_COUNTS_REVIEW_DATE, wildguarderProducts, wildguarderPrice, wildguarderStoreUrl, WILDGUARDER_REVIEW_DATE } from "@/lib/data/gearCategories";
+import hero from "@/assets/gear/cats-hero.jpg";
+import catCamping from "@/assets/gear/cat-camping.jpg";
+import catHiking from "@/assets/gear/cat-hiking.jpg";
+import catOptics from "@/assets/gear/cat-optics.jpg";
+import catCycling from "@/assets/gear/cat-cycling.jpg";
+import catLights from "@/assets/gear/cat-lights.jpg";
+import catApparel from "@/assets/gear/cat-apparel.jpg";
+import catEyewear from "@/assets/gear/cat-eyewear.jpg";
+import catBags from "@/assets/gear/cat-bags.jpg";
+import spotlightNight from "@/assets/gear/spotlight-night.jpg";
+import tripCamping from "@/assets/gear/trip-camping.jpg";
+import tripRoad from "@/assets/gear/trip-road.jpg";
+import tripNight from "@/assets/gear/trip-night.jpg";
+import brandWildguarder from "@/assets/gear/brand-wildguarder.jpg";
 import actCycling from "@/assets/gear/act-cycling.jpg";
 import actRepair from "@/assets/gear/act-repair.jpg";
-import actRoad from "@/assets/gear/act-roadtrip.jpg";
-import why from "@/assets/gear/why-rockbros.jpg";
 import guideBike from "@/assets/gear/bikepacking-hero.jpg";
 
-const activities: Array<{ key: GearActivity; img: string; text: string; icon: typeof Bike; iconTone: string }> = [
-  { key: "bikepacking", img: actBike, text: "Go further, carry more.", icon: Mountain, iconTone: "text-sage" },
-  { key: "cycling", img: actCycling, text: "Comfort, safety, performance.", icon: Bike, iconTone: "text-sky-soft" },
-  { key: "repair", img: actRepair, text: "Be ready for the unexpected.", icon: Wrench, iconTone: "text-clay-soft" },
-  { key: "roadtrip", img: actRoad, text: "Gear for the long haul.", icon: Map, iconTone: "text-amber" },
+const categoryImages: Record<string, string> = {
+  camping: catCamping,
+  hiking: catHiking,
+  optics: catOptics,
+  cycling: catCycling,
+  lights: catLights,
+  apparel: catApparel,
+  eyewear: catEyewear,
+  bags: catBags,
+};
+
+const chips = ["All", "Camping", "Hiking", "Optics & Night Vision", "Cycling", "Lights & Power", "Apparel & Cold Weather", "Travel Bags"];
+
+const countsReviewed = new Date(GEAR_COUNTS_REVIEW_DATE).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
+const wgReviewed = new Date(WILDGUARDER_REVIEW_DATE).toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
+
+const tripTypes = [
+  { img: tripCamping, title: "Camping Weekend", items: ["Tent & sleep system", "Camp kitchen gear", "Lighting & power"], href: "#categories" },
+  { img: tripRoad, title: "National Park Road Trip", items: ["Daypacks & hiking gear", "Travel bags & organizers", "Cameras & optics"], href: "#categories" },
+  { img: tripNight, title: "Night Wildlife Watching", items: ["Night vision binoculars", "Warm layers", "Field guides & accessories"], href: "#night-vision" },
 ];
 
-const reviewed = new Date(CATALOG_REVIEW_DATE).toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
+const destinationCards = [
+  {
+    name: "Moab, Utah",
+    text: "Desert trails, epic rides and starry skies.",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Delicate_arch_sunset.jpg/1920px-Delicate_arch_sunset.jpg",
+    credit: "Palacemusic / CC BY-SA 3.0 via Wikimedia Commons",
+    to: "/destinations/moab",
+  },
+  {
+    name: "Yellowstone",
+    text: "Wildlife, geothermal wonders and endless trails.",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Aerial_image_of_Grand_Prismatic_Spring_%28view_from_the_south%29.jpg/1920px-Aerial_image_of_Grand_Prismatic_Spring_%28view_from_the_south%29.jpg",
+    credit: "Carsten Steger / CC BY-SA 4.0 via Wikimedia Commons",
+    to: "/destinations/yellowstone",
+  },
+  {
+    name: "Lake Tahoe",
+    text: "Alpine adventures year round.",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Emerald_Bay%2C_Lake_Tahoe%2C_California._2015.jpg/1920px-Emerald_Bay%2C_Lake_Tahoe%2C_California._2015.jpg",
+    credit: "Eric Philbin / CC0 via Wikimedia Commons",
+    to: "/destinations/lake-tahoe",
+  },
+];
 
-function SectionHead({ eyebrow, title, sub, link }: { eyebrow: string; title: string; sub?: string; link?: { label: string; href: string } }) {
+const guides = [
+  { img: guideBike, t: "7 Bikepacking Essentials", s: "Must-have gear for your next adventure.", to: "/gear/7-bikepacking-essentials" },
+  { img: actCycling, t: "Best Cycling Accessories", s: "Upgrade your ride, go further.", to: "/gear/best-cycling-accessories" },
+  { img: actRepair, t: "Bike Repair Kit Essentials", s: "Be prepared on any trail.", to: "/gear/bike-repair-kit-essentials" },
+  { img: spotlightNight, t: "Night Vision Binoculars Guide", s: "Coming soon", to: undefined as string | undefined },
+];
+
+function SectionHead({ title, link }: { title: string; link?: { label: string; href: string } }) {
   return (
-    <div className="grid grid-cols-[minmax(0,1fr)_auto] items-end gap-4">
-      <div className="min-w-0">
-        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-foreground/70">{eyebrow}</p>
-        <h2 className="mt-2 text-2xl text-forest md:text-3xl">{title}</h2>
-        {sub && <p className="mt-2 text-muted-foreground">{sub}</p>}
-      </div>
+    <div className="flex items-end justify-between gap-4">
+      <h2 className="text-2xl text-forest md:text-3xl">{title}</h2>
       {link && (
         <a href={link.href} className="hidden shrink-0 items-center gap-1 text-xs font-semibold text-forest hover:underline sm:inline-flex">
           {link.label} <ArrowRight className="h-3.5 w-3.5" />
@@ -56,124 +94,192 @@ export function GearShopPage() {
       <main>
         {/* Hero */}
         <section className="relative isolate overflow-hidden">
-          <img src={hero} alt="Cyclist with a loaded bikepacking bike above a canyon river at sunset" width={1920} height={800} className="absolute inset-0 -z-10 h-full w-full object-cover object-right" />
-          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink/85 via-ink/55 to-transparent" />
-          <div className="container-page relative py-16 text-off-white md:py-20">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-off-white/85">Outdoor Gear &amp; Accessories</p>
-            <h1 className="mt-3 text-5xl text-off-white md:text-6xl">Gear Shop</h1>
-            <p className="mt-4 text-xl font-medium">The right gear makes every adventure better.</p>
-            <p className="mt-3 max-w-xl text-off-white/85">
-              From bikepacking essentials to everyday cycling gear, explore our handpicked recommendations from trusted brands like ROCKBROS. Get ready for your next journey.
-            </p>
-            <ul className="mt-8 flex flex-wrap gap-y-4 text-sm">
-              {[
-                { icon: ShieldCheck, a: "Quality Gear", b: "Trusted Brands" },
-                { icon: Mountain, a: "Adventure Ready", b: "For Every Terrain" },
-                { icon: MousePointerClick, a: "Fast & Easy", b: "Shop Direct Links" },
-              ].map(({ icon: Icon, a, b }, i) => (
-                <li key={a} className={`flex w-full items-center gap-3 pr-6 sm:w-auto ${i ? "sm:border-l sm:border-off-white/30 sm:pl-6" : ""}`}>
-                  <Icon className="h-7 w-7 shrink-0 text-amber" />
-                  <span className="leading-tight"><strong className="block font-semibold">{a}</strong><span className="text-off-white/80">{b}</span></span>
-                </li>
+          <img src={hero} alt="Campsite with a glowing tent and an SUV carrying bikes by an alpine lake at sunset" width={1920} height={1024} className="absolute inset-0 -z-10 h-full w-full object-cover" />
+          <div className="absolute inset-0 -z-10 bg-ink/45" />
+          <div className="container-page flex min-h-[26rem] flex-col items-center justify-center py-16 text-center text-off-white">
+            <p className="text-xs font-medium text-off-white/85">Gear Shop <span className="mx-1">/</span> All Categories</p>
+            <h1 className="mt-3 text-4xl text-off-white md:text-5xl">All Gear Categories</h1>
+            <p className="mt-3 max-w-xl text-off-white/90">Outdoor gear for every trip — from camp to trail to night sky.</p>
+            <nav aria-label="Gear category shortcuts" className="mt-8 flex max-w-3xl flex-wrap justify-center gap-2">
+              {chips.map((chip) => (
+                <a
+                  key={chip}
+                  href="#categories"
+                  className={`rounded-full px-4 py-1.5 text-xs font-semibold transition-colors ${
+                    chip === "All" ? "bg-forest text-primary-foreground" : "bg-off-white text-ink hover:bg-sand"
+                  }`}
+                >
+                  {chip}
+                </a>
               ))}
-            </ul>
-            <p className="pointer-events-none absolute bottom-16 right-10 hidden -rotate-12 font-hand text-4xl leading-tight text-off-white lg:block">
-              Better Gear,<br />Bigger Adventures
-            </p>
+            </nav>
           </div>
         </section>
 
-        {/* Activities */}
-        <section id="categories" className="container-page py-14">
-          <SectionHead eyebrow="Shop by activity" title="Find the Gear for Your Next Adventure" sub="Browse our curated gear collections, designed for every type of outdoor explorer." link={{ label: "View All Gear Categories", href: "#picks" }} />
+        {/* Shop by Category */}
+        <section id="categories" className="container-page scroll-mt-24 py-14">
+          <SectionHead title="Shop by Category" link={{ label: "View all gear", href: "#categories" }} />
           <div className="mt-8 gear-carousel md:!grid md:!grid-flow-row md:grid-cols-2 lg:grid-cols-4">
-            {activities.map(({ key, img, text, icon: Icon, iconTone }) => (
-              <a key={key} href="#picks" className="group relative block aspect-[6/5] overflow-hidden rounded-xl shadow-soft">
-                <img src={img} alt={`${activityLabel[key]} illustration`} loading="lazy" width={912} height={736} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-forest via-forest/85 to-transparent p-4 pt-14 text-off-white">
-                  <p className="flex items-center gap-2 font-semibold"><Icon className={`h-5 w-5 ${iconTone}`} />{activityLabel[key]}</p>
-                  <div className="mt-2 flex items-center justify-between gap-2 text-sm text-off-white/85">
-                    <span>{text}</span>
-                    <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-off-white/20"><ArrowRight className="h-4 w-4" /></span>
+            {gearCategories.map(({ key, label, items, icon: Icon, tone, href }) => {
+              const body = (
+                <>
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <img src={categoryImages[key]} alt={`${label} illustration`} loading="lazy" width={1024} height={768} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <span className={`absolute -bottom-4 left-4 grid h-9 w-9 place-items-center rounded-full ${tone}`}>
+                      <Icon className="h-4.5 w-4.5" />
+                    </span>
+                  </div>
+                  <div className="p-4 pt-6">
+                    <h3 className="text-sm font-semibold text-foreground">{label}</h3>
+                    <p className="mt-0.5 text-xs text-muted-foreground">{items.toLocaleString("en-US")} items</p>
+                    <p className="mt-1.5 inline-flex items-center gap-1 text-xs font-semibold text-forest">
+                      {href ? (<>Explore <ArrowRight className="h-3 w-3" /></>) : "Coming soon"}
+                    </p>
+                  </div>
+                </>
+              );
+              return href ? (
+                href.startsWith("#") ? (
+                  <a key={key} href={href} className="group block overflow-hidden rounded-xl border border-border bg-card shadow-soft hover:shadow-lift">{body}</a>
+                ) : (
+                  <Link key={key} to={href} className="group block overflow-hidden rounded-xl border border-border bg-card shadow-soft hover:shadow-lift">{body}</Link>
+                )
+              ) : (
+                <div key={key} className="overflow-hidden rounded-xl border border-border bg-card shadow-soft">{body}</div>
+              );
+            })}
+          </div>
+          <p className="mt-2 text-xs text-muted-foreground">
+            Item counts from the ROCKBROS catalog, checked {countsReviewed}; Optics &amp; Night Vision lists our WILDGUARDER partner models. Category photos are illustrative.
+          </p>
+        </section>
+
+        {/* Featured Brands */}
+        <section className="container-page py-6">
+          <SectionHead title="Featured Brands" />
+          <div className="mt-6 grid gap-4 md:grid-cols-3">
+            <a href="/gear/7-bikepacking-essentials" className="group flex items-center gap-4 rounded-xl border border-border bg-card p-4 shadow-soft hover:shadow-lift">
+              <div className="min-w-0 flex-1">
+                <p className="text-lg font-extrabold tracking-tight text-foreground">ROCKBROS</p>
+                <p className="mt-1 text-xs text-muted-foreground">Cycling, camping &amp; outdoor accessories</p>
+                <p className="mt-1 text-xs text-muted-foreground">2,010 catalog products</p>
+              </div>
+              <img src={actCycling} alt="Cyclist riding a mountain road at sunset" loading="lazy" width={1024} height={768} className="h-20 w-28 shrink-0 rounded-lg object-cover" />
+            </a>
+            <a href="#night-vision" className="group flex items-center gap-4 rounded-xl border border-border bg-card p-4 shadow-soft hover:shadow-lift">
+              <div className="min-w-0 flex-1">
+                <p className="text-lg font-extrabold tracking-tight text-foreground">WILDGUARDER</p>
+                <p className="mt-1 text-xs text-muted-foreground">Night vision binoculars &amp; optics</p>
+                <p className="mt-1 text-xs text-muted-foreground">3 featured models</p>
+              </div>
+              <img src={brandWildguarder} alt="Great horned owl perched on a pine branch at night" loading="lazy" width={1024} height={768} className="h-20 w-28 shrink-0 rounded-lg object-cover" />
+            </a>
+            <div className="flex flex-col items-center justify-center gap-2 rounded-xl border border-dashed border-border bg-card p-4 text-center shadow-soft">
+              <Handshake className="h-7 w-7 text-sage-deep" />
+              <p className="text-sm font-semibold text-foreground">More partner brands</p>
+              <p className="text-xs text-muted-foreground">coming soon</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Spotlight: Night Vision */}
+        <section id="night-vision" className="container-page scroll-mt-24 py-10">
+          <div className="grid overflow-hidden rounded-2xl border border-border bg-card shadow-soft lg:grid-cols-2">
+            <div className="relative min-h-72">
+              <img src={spotlightNight} alt="Person looking through night vision binoculars under the Milky Way" loading="lazy" width={1024} height={1024} className="absolute inset-0 h-full w-full object-cover" />
+              <p className="absolute bottom-6 left-6 font-hand text-3xl leading-tight text-off-white">Explore a wilder,<br />darker world.</p>
+            </div>
+            <div className="p-6 md:p-8">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-foreground/70">Spotlight: See the Night</p>
+              <h2 className="mt-2 text-2xl text-forest md:text-3xl">Night Vision for Wildlife &amp; Stargazing</h2>
+              <p className="mt-2 text-sm text-muted-foreground">Get closer to nature after dark with WILDGUARDER night vision optics.</p>
+              <div className="mt-6 grid gap-3 sm:grid-cols-3">
+                {wildguarderProducts.map((p) => (
+                  <a key={p.id} href={p.url} target="_blank" rel="sponsored nofollow noopener" className="rounded-xl border border-border bg-background p-3 hover:shadow-lift">
+                    <img src={p.image} alt={`WILDGUARDER ${p.name}`} loading="lazy" width={300} height={300} className="aspect-square w-full rounded-lg bg-off-white object-contain" />
+                    <h3 className="mt-2 line-clamp-2 text-xs font-semibold text-foreground">WILDGUARDER {p.name}</h3>
+                    <p className="mt-0.5 line-clamp-2 text-[10px] text-muted-foreground">{p.spec}</p>
+                    <p className="mt-1.5 text-sm font-bold text-foreground">{wildguarderPrice(p)}</p>
+                    <p className="text-[10px] text-muted-foreground">Official store price, checked {wgReviewed}</p>
+                  </a>
+                ))}
+              </div>
+              <a href={wildguarderStoreUrl} target="_blank" rel="sponsored nofollow noopener" className="mt-6 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90">
+                Shop WILDGUARDER <ArrowRight className="h-4 w-4" />
+              </a>
+              <p className="mt-3 text-[10px] text-muted-foreground">Links go to the official WILDGUARDER store.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Trip types + destinations */}
+        <section className="container-page grid gap-10 py-10 lg:grid-cols-2">
+          <div>
+            <SectionHead title="Gear by Trip Type" link={{ label: "View all trip types", href: "#categories" }} />
+            <div className="mt-6 space-y-4">
+              {tripTypes.map((t) => (
+                <div key={t.title} className="flex gap-4 rounded-xl border border-border bg-card p-3 shadow-soft">
+                  <img src={t.img} alt={`${t.title} illustration`} loading="lazy" width={1024} height={768} className="h-28 w-32 shrink-0 rounded-lg object-cover" />
+                  <div className="min-w-0">
+                    <h3 className="text-sm font-semibold text-foreground">{t.title}</h3>
+                    <ul className="mt-1.5 space-y-0.5 text-xs text-muted-foreground">
+                      {t.items.map((item) => (
+                        <li key={item} className="flex items-center gap-1.5"><Check className="h-3 w-3 shrink-0 text-forest" />{item}</li>
+                      ))}
+                    </ul>
+                    <a href={t.href} className="mt-1.5 inline-flex items-center gap-1 text-xs font-semibold text-forest hover:underline">
+                      See matching gear <ArrowRight className="h-3 w-3" />
+                    </a>
                   </div>
                 </div>
-              </a>
-            ))}
+              ))}
+            </div>
           </div>
-          <p className="mt-2 text-xs text-muted-foreground">Activity photos are illustrative.</p>
-        </section>
-
-        {/* Picks */}
-        <section id="picks" className="bg-beige/60 py-14">
-          <div className="container-page">
-            <SectionHead eyebrow="Featured products" title="Popular Gear Picks" link={{ label: "View All Products", href: "/gear/7-bikepacking-essentials" }} />
-            <div className="mt-8 gear-carousel md:!grid md:!grid-flow-row md:grid-cols-3 xl:grid-cols-6">
-              {shopPicks.map(({ product, activity }) => (
-                <article key={product.id} className="flex flex-col rounded-xl border border-border bg-card p-3 shadow-soft">
-                  <span className={`self-start rounded px-2 py-0.5 text-[10px] font-semibold ${activityTone[activity]}`}>{activityLabel[activity]}</span>
-                  <img src={product.image} alt={product.catalogTitle} loading="lazy" width={300} height={300} className="mx-auto my-3 aspect-square w-full max-w-44 object-contain md:max-w-none" />
-                  <h3 className="line-clamp-2 text-sm font-semibold text-foreground">ROCKBROS {product.name}</h3>
-                  <p className="mt-1 text-xs text-muted-foreground">{product.purpose}</p>
-                  <p className="mt-2 text-lg font-bold text-foreground">{catalogPrice(product)}</p>
-                  <p className="text-[10px] text-muted-foreground">Catalog price, checked {reviewed}</p>
-                  <a href={gearShopLink(product)} target="_blank" rel="sponsored nofollow noopener" className="mt-3 inline-flex items-center justify-center gap-1 rounded-md bg-primary px-3 py-2 text-xs font-semibold text-primary-foreground hover:bg-primary/90">
-                    View on ROCKBROS <ArrowRight className="h-3.5 w-3.5" />
-                  </a>
-                </article>
+          <div>
+            <SectionHead title="Gear for your next destination" link={{ label: "View all destinations", href: "/destinations" }} />
+            <div className="mt-6 space-y-4">
+              {destinationCards.map((d) => (
+                <Link key={d.name} to={d.to} className="group flex gap-4 rounded-xl border border-border bg-card p-3 shadow-soft hover:shadow-lift">
+                  <img src={d.img} alt={`${d.name} scenery`} loading="lazy" width={1920} height={1280} className="h-28 w-32 shrink-0 rounded-lg object-cover" />
+                  <div className="min-w-0">
+                    <h3 className="text-sm font-semibold text-foreground">{d.name}</h3>
+                    <p className="mt-1 text-xs text-muted-foreground">{d.text}</p>
+                    <p className="mt-1.5 inline-flex items-center gap-1 text-xs font-semibold text-forest group-hover:underline">
+                      See the trip plan <ArrowRight className="h-3 w-3" />
+                    </p>
+                    <p className="mt-1 text-[10px] text-muted-foreground/80">Photo: {d.credit}</p>
+                  </div>
+                </Link>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Why ROCKBROS */}
-        <section className="container-page grid gap-5 py-14 lg:grid-cols-[5fr_7fr]">
-          <div className="relative min-h-64 overflow-hidden rounded-xl">
-            <img src={why} alt="Mountain biker riding a ridge trail at sunset" loading="lazy" width={1024} height={640} className="absolute inset-0 h-full w-full object-cover" />
-            <p className="absolute bottom-8 left-6 -rotate-12 font-hand text-3xl leading-tight text-off-white">Right Gear,<br />Better Rides</p>
-          </div>
-          <div className="rounded-xl bg-sand-warm p-6 md:p-8">
-            <h2 className="text-2xl text-forest">Why Choose ROCKBROS?</h2>
-            <p className="mt-3 max-w-xl text-sm text-foreground/80">
-              ROCKBROS offers affordable gear designed for real adventures. From bikepacking bags to cycling accessories, their range helps you go further, ride safer and enjoy the journey.
-            </p>
-            <ul className="mt-6 grid grid-cols-2 gap-5 text-sm md:grid-cols-4">
-              {[
-                { icon: Wrench, t: "Durable & Reliable", c: "text-forest" },
-                { icon: BadgeDollarSign, t: "Great Value", c: "text-clay" },
-                { icon: Layers, t: "Wide Range", c: "text-forest" },
-                { icon: Award, t: "Popular with Cyclists", c: "text-clay" },
-              ].map(({ icon: Icon, t, c }) => (
-                <li key={t} className="flex items-center gap-2"><Icon className={`h-7 w-7 shrink-0 ${c}`} /><span className="leading-tight">{t}</span></li>
-              ))}
-            </ul>
-            <Link to="/gear/7-bikepacking-essentials" className="mt-7 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90">
-              Explore ROCKBROS Gear <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
-        </section>
-
-        {/* Guides */}
+        {/* Buying Guides */}
         <section className="bg-forest py-14 text-off-white">
           <div className="container-page">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-off-white/80">Gear guides</p>
-            <h2 className="mt-2 text-2xl text-off-white md:text-3xl">Expert Guides &amp; Buying Advice</h2>
-            <p className="mt-2 max-w-md text-sm text-off-white/80">Not sure what you need? Check out our detailed guides to help you find the right gear for your next adventure.</p>
+            <div className="flex items-end justify-between gap-4">
+              <h2 className="text-2xl text-off-white md:text-3xl">Buying Guides</h2>
+              <span className="hidden items-center gap-1 text-xs font-semibold text-off-white/80 sm:inline-flex">
+                View all guides <ArrowRight className="h-3.5 w-3.5" />
+              </span>
+            </div>
             <div className="mt-8 gear-carousel md:!grid md:!grid-flow-row md:grid-cols-2 lg:grid-cols-4">
-              {[
-                { img: guideBike, badge: "Buying Guide", tone: "bg-amber text-ink", t: "7 Bikepacking Essentials", s: "Everything you need for your first trip.", to: "/gear/7-bikepacking-essentials" },
-                { img: actCycling, badge: "Buying Guide", tone: "bg-amber text-ink", t: "Best Cycling Accessories", s: "Seven small upgrades for safer rides.", to: "/gear/best-cycling-accessories" },
-                { img: actRepair, badge: "Buying Guide", tone: "bg-amber text-ink", t: "Bike Repair Kit Essentials", s: "Be ready for the unexpected.", to: "/gear/bike-repair-kit-essentials" },
-                { img: actRoad, badge: "Travel Guide", tone: "bg-sky text-primary-foreground", t: "US Road Trip Loops", s: "Multi-park routes for every skill level.", to: "/road-trips" },
-              ].map((g) => {
+              {guides.map((g) => {
                 const body = (
                   <>
                     <div className="relative">
-                      <img src={g.img} alt="" loading="lazy" width={912} height={736} className="h-28 w-full object-cover" />
-                      <span className={`absolute -bottom-2 left-3 rounded-full px-2 py-0.5 text-[10px] font-bold uppercase ${g.tone}`}>{g.badge}</span>
+                      <img src={g.img} alt="" loading="lazy" width={1024} height={768} className="h-32 w-full object-cover" />
+                      {!g.to && <span className="absolute -bottom-2 left-3 rounded-full bg-amber px-2 py-0.5 text-[10px] font-bold uppercase text-ink">Coming soon</span>}
                     </div>
-                    <div className="flex items-center justify-between gap-2 p-4 pt-5">
-                      <div className="min-w-0"><h3 className="text-sm font-semibold text-foreground">{g.t}</h3><p className="mt-1 text-xs text-muted-foreground">{g.s}</p></div>
-                      {g.to && <ArrowRight className="h-4 w-4 shrink-0 text-forest" />}
+                    <div className="flex items-center justify-between gap-2 p-4">
+                      <div className="min-w-0">
+                        <h3 className="text-sm font-semibold text-foreground">{g.t}</h3>
+                        <p className="mt-1 text-xs text-muted-foreground">{g.s}</p>
+                      </div>
+                      <span className={`grid h-8 w-8 shrink-0 place-items-center rounded-full border ${g.to ? "border-forest text-forest" : "border-border text-muted-foreground"}`}>
+                        <ArrowRight className="h-4 w-4" />
+                      </span>
                     </div>
                   </>
                 );
@@ -188,7 +294,7 @@ export function GearShopPage() {
         </section>
 
         <p className="container-page py-6 text-xs text-muted-foreground">
-          Product links are affiliate links: MiniaLife may earn a commission at no extra cost to you. Prices come from the ROCKBROS catalog and may change. See our <Link to="/affiliate-disclosure" className="underline">affiliate disclosure</Link>.
+          Partner links via Awin. We may earn a commission at no extra cost to you. Prices come from the partner catalogs and may change. Some photos are illustrative. See our <Link to="/affiliate-disclosure" className="underline">affiliate disclosure</Link>.
         </p>
       </main>
       <Footer />

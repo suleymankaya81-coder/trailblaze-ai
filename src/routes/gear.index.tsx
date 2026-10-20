@@ -1,10 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { GearShopPage } from "@/components/gear/GearShopPage";
-import { shopPicks } from "@/lib/data/gearShop";
+import { wildguarderProducts } from "@/lib/data/gearCategories";
 
-const title = "Gear Shop: Bikepacking & Cycling Picks | MiniaLife";
+const title = "All Gear Categories: Outdoor Gear Shop | MiniaLife";
 const description =
-  "Handpicked ROCKBROS bikepacking bags, lights and cycling accessories with catalog prices, plus buying guides for your next outdoor adventure.";
+  "Browse outdoor gear by category — camping, cycling, optics, apparel and more — with handpicked picks from partner brands like ROCKBROS and WILDGUARDER.";
 
 export const Route = createFileRoute("/gear/")({
   head: () => ({
@@ -24,12 +24,12 @@ export const Route = createFileRoute("/gear/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ItemList",
-          name: "Popular Gear Picks",
-          itemListElement: shopPicks.map(({ product }, i) => ({
+          name: "WILDGUARDER Night Vision Spotlight",
+          itemListElement: wildguarderProducts.map((p, i) => ({
             "@type": "ListItem",
             position: i + 1,
-            name: `ROCKBROS ${product.name}`,
-            url: product.productUrl,
+            name: `WILDGUARDER ${p.name}`,
+            url: p.url,
           })),
         }).replace(/</g, "\\u003c"),
       },
