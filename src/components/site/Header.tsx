@@ -19,6 +19,9 @@ export function Header() {
           <Link to="/" className="text-foreground/80 hover:text-foreground">
             Destinations
           </Link>
+          <Link to="/road-trips" className="text-foreground/80 hover:text-foreground" activeProps={{ className: "text-foreground underline decoration-forest decoration-2 underline-offset-8" }}>
+            Road Trips
+          </Link>
           <a href="#stay-types" className="text-foreground/80 hover:text-foreground">
             Stays
           </a>
