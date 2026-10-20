@@ -313,6 +313,36 @@ function HomePage() {
                 estimates — check the partner site for current availability and pricing.
               </p>
             </div>
+
+            {/* Motorhome Republic is the hero for RV & campervan rentals */}
+            <Link
+              to="/destinations"
+              className="group mb-5 grid overflow-hidden rounded-3xl border border-border bg-card shadow-soft transition hover:shadow-lg md:grid-cols-2"
+            >
+              <div className="relative aspect-[16/9] overflow-hidden md:aspect-auto md:min-h-[280px]">
+                <img
+                  src={rvImage}
+                  alt="Campervan on a scenic road — AI-generated illustration"
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="flex flex-col justify-center p-6 md:p-10">
+                <p className="text-xs font-bold uppercase tracking-[0.22em] text-foreground/60">
+                  RV & campervan rentals
+                </p>
+                <h3 className="mt-2 font-serif text-2xl font-bold text-foreground md:text-3xl">
+                  Compare motorhomes from established fleet providers
+                </h3>
+                <p className="mt-3 max-w-md text-sm leading-relaxed text-muted-foreground">
+                  We point you to Motorhome Republic for motorhomes and campervans from professional
+                  rental fleets. Pick a destination to see options near the parks.
+                </p>
+                <span className="mt-5 inline-flex w-fit items-center gap-1.5 rounded-full bg-forest px-5 py-2.5 text-sm font-semibold text-off-white transition group-hover:bg-forest/90">
+                  Find RV rentals <ArrowRight className="h-4 w-4" />
+                </span>
+              </div>
+            </Link>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
               {([{ brand: "bikesbooking" as const, name: "BikesBooking", category: "bike" as const, title: "Bike & e-bike rentals" }, { brand: "economybookings" as const, name: "EconomyBookings", category: "car" as const, title: "Compare road-trip rental cars" }]).map((item) => {
                 const photo = servicePhoto(item.category, "homepage-partners");
