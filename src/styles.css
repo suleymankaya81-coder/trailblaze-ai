@@ -46,6 +46,13 @@
   --color-ink: var(--ink);
   --color-ember: var(--ember);
   --color-copper: var(--copper);
+  --color-sky: var(--sky);
+  --color-sky-soft: var(--sky-soft);
+  --color-clay: var(--clay);
+  --color-clay-soft: var(--clay-soft);
+  --color-amber: var(--amber);
+  --color-sand-warm: var(--sand-warm);
+  --font-hand: "Caveat", cursive;
 
   --shadow-soft: 0 1px 2px oklch(0.2 0.02 80 / 0.04), 0 8px 30px oklch(0.2 0.02 80 / 0.06);
   --shadow-lift: 0 2px 4px oklch(0.2 0.02 80 / 0.05), 0 20px 50px oklch(0.2 0.02 80 / 0.12);
@@ -65,6 +72,13 @@
   --ink: oklch(0.18 0.012 80);
   /* Compatibility aliases keep every existing action in the green palette. */
   --copper: var(--forest);
+  /* Secondary accents so pages are not green-only (never for main buttons). */
+  --sky: oklch(0.52 0.1 235);
+  --sky-soft: oklch(0.8 0.08 230);
+  --clay: oklch(0.56 0.12 40);
+  --clay-soft: oklch(0.8 0.08 45);
+  --amber: oklch(0.8 0.14 80);
+  --sand-warm: oklch(0.95 0.03 80);
 
   --background: oklch(0.987 0.003 100);
   --foreground: var(--ink);
