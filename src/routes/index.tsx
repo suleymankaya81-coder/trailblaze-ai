@@ -2,8 +2,11 @@ import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   ArrowRight,
+  Bike,
   Compass,
+  Glasses,
   MapPin,
+  Moon,
   Mountain,
   Sparkles,
   Sun,
@@ -12,6 +15,8 @@ import {
   Users,
   Wallet,
 } from "lucide-react";
+
+import { LOOPS } from "@/lib/seo/guides";
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
@@ -474,12 +479,12 @@ function HomeHero() {
               RV Rentals
             </a>
             <span className="h-1 w-1 rounded-full bg-off-white/40" />
-            <a
-              href="#rentals-gear"
+            <Link
+              to="/gear"
               className="font-medium text-off-white/80 hover:text-off-white hover:underline"
             >
-              Gear
-            </a>
+              Curated Gear Picks
+            </Link>
           </div>
         </div>
       </div>
