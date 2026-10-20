@@ -226,6 +226,48 @@ function HomePage() {
         </section>
       )}
 
+      {/* ROAD TRIP LOOPS — routes are the heart of MiniaLife */}
+      <section className="bg-beige py-20">
+        <div className="container-page">
+          <div className="mb-10 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.22em] text-foreground/60">
+                Road trip loops
+              </p>
+              <h2 className="mt-2 font-serif text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+                Multi-park routes, planned for you
+              </h2>
+            </div>
+            <Link
+              to="/road-trips"
+              className="text-sm font-semibold text-foreground/80 hover:text-foreground hover:underline"
+            >
+              View all loops <ArrowRight className="ml-1 inline h-3.5 w-3.5" />
+            </Link>
+          </div>
+          <div className="grid gap-5 md:grid-cols-3">
+            {LOOPS.slice(0, 3).map((l) => (
+              <Link
+                key={l.slug}
+                to="/road-trips/$slug"
+                params={{ slug: l.slug }}
+                className="group flex flex-col rounded-3xl border border-border bg-card p-6 shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg"
+              >
+                <p className="flex items-center gap-1.5 text-xs uppercase tracking-wider text-muted-foreground">
+                  <MapPin className="h-3.5 w-3.5" />
+                  {l.region} · {l.stops.length} stops
+                </p>
+                <h3 className="mt-2 font-display text-xl font-semibold text-foreground">{l.title}</h3>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{l.intro}</p>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">
+                  See the loop <ArrowRight className="h-4 w-4" />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* PLAN BUILDER — trip-tag shortcuts into the filtered destinations list */}
       <section className="bg-background py-16">
         <div className="container-page">
