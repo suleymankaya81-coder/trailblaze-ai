@@ -20,6 +20,7 @@ import { Route as TermsRouteImport } from './routes/terms'
 import { Route as DestinationsIndexRouteImport } from './routes/destinations.index'
 import { Route as DestinationsSlugRouteImport } from './routes/destinations.$slug'
 import { Route as FlyAndDriveSlugRouteImport } from './routes/fly-and-drive.$slug'
+import { Route as GearIndexRouteImport } from './routes/gear.index'
 import { Route as Gear7BikepackingEssentialsRouteImport } from './routes/gear.7-bikepacking-essentials'
 import { Route as NoReservationSlugRouteImport } from './routes/no-reservation.$slug'
 import { Route as RoadTripsIndexRouteImport } from './routes/road-trips.index'
@@ -81,6 +82,11 @@ const FlyAndDriveSlugRoute = FlyAndDriveSlugRouteImport.update({
   path: '/fly-and-drive/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GearIndexRoute = GearIndexRouteImport.update({
+  id: '/gear/',
+  path: '/gear/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const Gear7BikepackingEssentialsRoute =
   Gear7BikepackingEssentialsRouteImport.update({
     id: '/gear/7-bikepacking-essentials',
@@ -124,6 +130,7 @@ export interface FileRoutesByFullPath {
   '/road-trips/$slug': typeof RoadTripsSlugRoute
   '/rv-camping/$slug': typeof RvCampingSlugRoute
   '/destinations/': typeof DestinationsIndexRoute
+  '/gear/': typeof GearIndexRoute
   '/road-trips/': typeof RoadTripsIndexRoute
 }
 export interface FileRoutesByTo {
@@ -142,6 +149,7 @@ export interface FileRoutesByTo {
   '/road-trips/$slug': typeof RoadTripsSlugRoute
   '/rv-camping/$slug': typeof RvCampingSlugRoute
   '/destinations': typeof DestinationsIndexRoute
+  '/gear': typeof GearIndexRoute
   '/road-trips': typeof RoadTripsIndexRoute
 }
 export interface FileRoutesById {
@@ -161,6 +169,7 @@ export interface FileRoutesById {
   '/road-trips/$slug': typeof RoadTripsSlugRoute
   '/rv-camping/$slug': typeof RvCampingSlugRoute
   '/destinations/': typeof DestinationsIndexRoute
+  '/gear/': typeof GearIndexRoute
   '/road-trips/': typeof RoadTripsIndexRoute
 }
 export interface FileRouteTypes {
@@ -181,6 +190,7 @@ export interface FileRouteTypes {
     | '/road-trips/$slug'
     | '/rv-camping/$slug'
     | '/destinations/'
+    | '/gear/'
     | '/road-trips/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -199,6 +209,7 @@ export interface FileRouteTypes {
     | '/road-trips/$slug'
     | '/rv-camping/$slug'
     | '/destinations'
+    | '/gear'
     | '/road-trips'
   id:
     | '__root__'
@@ -217,6 +228,7 @@ export interface FileRouteTypes {
     | '/road-trips/$slug'
     | '/rv-camping/$slug'
     | '/destinations/'
+    | '/gear/'
     | '/road-trips/'
   fileRoutesById: FileRoutesById
 }
@@ -236,6 +248,7 @@ export interface RootRouteChildren {
   RoadTripsSlugRoute: typeof RoadTripsSlugRoute
   RvCampingSlugRoute: typeof RvCampingSlugRoute
   DestinationsIndexRoute: typeof DestinationsIndexRoute
+  GearIndexRoute: typeof GearIndexRoute
   RoadTripsIndexRoute: typeof RoadTripsIndexRoute
 }
 
@@ -318,6 +331,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FlyAndDriveSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/gear/': {
+      id: '/gear/'
+      path: '/gear'
+      fullPath: '/gear/'
+      preLoaderRoute: typeof GearIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/gear/7-bikepacking-essentials': {
       id: '/gear/7-bikepacking-essentials'
       path: '/gear/7-bikepacking-essentials'
@@ -372,6 +392,7 @@ const rootRouteChildren: RootRouteChildren = {
   RoadTripsSlugRoute: RoadTripsSlugRoute,
   RvCampingSlugRoute: RvCampingSlugRoute,
   DestinationsIndexRoute: DestinationsIndexRoute,
+  GearIndexRoute: GearIndexRoute,
   RoadTripsIndexRoute: RoadTripsIndexRoute,
 }
 export const routeTree = rootRouteImport
