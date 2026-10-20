@@ -425,6 +425,52 @@ function HomePage() {
         </section>
       )}
 
+      {/* CURATED TRIP ESSENTIALS — gear framed as route support, not a store */}
+      <section className="bg-background py-16">
+        <div className="container-page">
+          <div className="mb-8 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.22em] text-foreground/60">
+                Curated Trip Essentials
+              </p>
+              <h2 className="mt-2 font-serif text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+                Gear picked by MiniaLife for the road
+              </h2>
+            </div>
+            <Link
+              to="/gear"
+              className="text-sm font-semibold text-foreground/80 hover:text-foreground hover:underline"
+            >
+              Browse the Gear Shop <ArrowRight className="ml-1 inline h-3.5 w-3.5" />
+            </Link>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { icon: Bike, title: "7 Bikepacking Essentials", blurb: "Bags, tools and kit for self-supported rides.", to: "/gear/7-bikepacking-essentials" as const },
+              { icon: Glasses, title: "Best Cycling Accessories", blurb: "Everyday upgrades for comfort and safety.", to: "/gear/best-cycling-accessories" as const },
+              { icon: Moon, title: "Night Vision Spotlight", blurb: "WILDGUARDER binoculars for wildlife after dark.", to: "/gear" as const, hash: "night-vision" },
+              { icon: Tent, title: "All Gear Categories", blurb: "Camping, hiking, optics, apparel and more.", to: "/gear" as const },
+            ].map((c) => (
+              <Link
+                key={c.title}
+                to={c.to}
+                hash={"hash" in c ? c.hash : undefined}
+                className="group flex flex-col rounded-2xl border border-border bg-card p-6 transition hover:border-foreground/30 hover:shadow-soft"
+              >
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-muted text-foreground/70 transition group-hover:text-foreground">
+                  <c.icon className="h-5 w-5" />
+                </div>
+                <h3 className="mt-4 text-base font-bold text-foreground">{c.title}</h3>
+                <p className="mt-1.5 flex-1 text-sm text-muted-foreground">{c.blurb}</p>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">
+                  Explore <ArrowRight className="h-4 w-4" />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* STAY TYPES — the one category-tile grid */}
       <section id="stay-types" className="bg-background py-20">
         <div className="container-page">
