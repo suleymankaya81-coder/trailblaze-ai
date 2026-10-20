@@ -37,7 +37,7 @@ function ProductCard({ product, index }: { product: GearProduct; index: number }
         />
       </div>
       <div className="flex flex-1 flex-col p-6 pt-2">
-        <p className={`text-xs font-semibold uppercase ${["text-sage-deep","text-sky","text-clay","text-amber-foreground text-[oklch(0.55_0.12_70)]"][index % 4]}`}>{product.purpose}</p>
+        <p className={`text-xs font-semibold uppercase ${["text-sage-deep","text-sky","text-clay","text-[oklch(0.55_0.12_70)]"][index % 4]}`}>{product.purpose}</p>
         <h3 className="mt-2 text-xl text-foreground">{product.name}</h3>
         <p className="mt-2 text-sm font-medium text-foreground">{product.spec}</p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{product.description}</p>
