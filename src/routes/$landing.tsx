@@ -1,4 +1,4 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2, ChevronRight } from "lucide-react";
 
 import { Footer } from "@/components/site/Footer";
@@ -19,7 +19,15 @@ const BASE = "https://minialife.com";
 export const Route = createFileRoute("/$landing")({
   loader: async ({ params }) => {
     const bundle = await getLandingBundle({ data: { path: `/${params.landing}` } });
-    if (!bundle) throw notFound();
+    if (!bundle) {
+      // Short park addresses (e.g. /rocky-mountain) permanently redirect to the guide.
+      const slug = params.landing.toLowerCase();
+      if (/^[a-z0-9-]+$/.test(slug)) {
+        const dest = await getDestinationPageData({ data: { slug } });
+        if (dest) throw redirect({ to: "/destinations/$slug", params: { slug }, statusCode: 301 });
+      }
+      throw notFound();
+    }
     const dest = await getDestinationPageData({ data: { slug: bundle.destination.slug } });
     const cats = LANDING_TYPE_OFFERS[bundle.page.pageType] ?? [];
     const slug = bundle.destination.slug;
