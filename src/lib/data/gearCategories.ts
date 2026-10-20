@@ -1,4 +1,5 @@
 import type { LucideIcon } from "lucide-react";
+import { buildAwinLink } from "@/lib/affiliates/awin";
 import { Bike, Binoculars, Glasses, Lamp, Mountain, Shirt, Tent, Briefcase } from "lucide-react";
 import wg9801 from "@/assets/gear/wildguarder-wg9801.jpg.asset.json";
 import hawknite1 from "@/assets/gear/wildguarder-hawknite1.jpg.asset.json";
@@ -73,6 +74,13 @@ export const wildguarderProducts: WildguarderProduct[] = [
 ];
 
 export const wildguarderStoreUrl = "https://store.wildguarder.com/night-vision-binoculars/";
+
+// WILDGUARDER Awin advertiser ID (approval email, 2026-10-20).
+export const WILDGUARDER_AWIN_MID = 126831;
+
+export function wildguarderLink(url: string, clickref: string): string {
+  return buildAwinLink({ id: clickref, partner: "wildguarder", networkMid: WILDGUARDER_AWIN_MID, externalUrl: url }, clickref);
+}
 
 export function wildguarderPrice(p: WildguarderProduct): string {
   return `$${p.price.toFixed(2)}`;

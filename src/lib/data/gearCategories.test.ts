@@ -18,3 +18,13 @@ describe("gear categories", () => {
     }
   });
 });
+
+import { wildguarderLink as wgLink } from "./gearCategories";
+describe("WILDGUARDER Awin links", () => {
+  it("use advertiser 126831 and publisher 3115962", () => {
+    const u = new URL(wgLink("https://store.wildguarder.com/x/", "gear-wildguarder-wg9801"));
+    expect(u.searchParams.get("awinmid")).toBe("126831");
+    expect(u.searchParams.get("awinaffid")).toBe("3115962");
+    expect(u.searchParams.get("ued")).toBe("https://store.wildguarder.com/x/");
+  });
+});
