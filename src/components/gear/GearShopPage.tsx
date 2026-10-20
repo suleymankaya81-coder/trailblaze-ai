@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check, ChevronRight, Handshake, Sparkles } from "lucide-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
-import { gearCategories, GEAR_COUNTS_REVIEW_DATE, wildguarderProducts, wildguarderPrice, wildguarderStoreUrl, WILDGUARDER_REVIEW_DATE } from "@/lib/data/gearCategories";
+import { gearCategories, GEAR_COUNTS_REVIEW_DATE, wildguarderProducts, wildguarderPrice, wildguarderStoreUrl, wildguarderLink, WILDGUARDER_REVIEW_DATE } from "@/lib/data/gearCategories";
 import hero from "@/assets/gear/cats-hero.jpg";
 import catCamping from "@/assets/gear/cat-camping.jpg";
 import catHiking from "@/assets/gear/cat-hiking.jpg";
@@ -195,7 +195,7 @@ export function GearShopPage() {
               <p className="mt-2 text-sm text-muted-foreground">Get closer to nature after dark with WILDGUARDER night vision optics.</p>
               <div className="mt-6 grid gap-3 sm:grid-cols-3">
                 {wildguarderProducts.map((p) => (
-                  <a key={p.id} href={p.url} target="_blank" rel="sponsored nofollow noopener" className="rounded-xl border border-border bg-background p-3 hover:shadow-lift">
+                  <a key={p.id} href={wildguarderLink(p.url, `gear-wildguarder-${p.id}`)} target="_blank" rel="sponsored nofollow noopener" className="rounded-xl border border-border bg-background p-3 hover:shadow-lift">
                     <img src={p.image} alt={`WILDGUARDER ${p.name}`} loading="lazy" width={300} height={300} className="aspect-square w-full rounded-lg bg-off-white object-contain" />
                     <h3 className="mt-2 line-clamp-2 text-xs font-semibold text-foreground">WILDGUARDER {p.name}</h3>
                     <p className="mt-0.5 line-clamp-2 text-[10px] text-muted-foreground">{p.spec}</p>
@@ -204,7 +204,7 @@ export function GearShopPage() {
                   </a>
                 ))}
               </div>
-              <a href={wildguarderStoreUrl} target="_blank" rel="sponsored nofollow noopener" className="mt-6 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90">
+              <a href={wildguarderLink(wildguarderStoreUrl, "gear-wildguarder-store")} target="_blank" rel="sponsored nofollow noopener" className="mt-6 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90">
                 Shop WILDGUARDER <ArrowRight className="h-4 w-4" />
               </a>
               <p className="mt-3 text-[10px] text-muted-foreground">Links go to the official WILDGUARDER store.</p>
