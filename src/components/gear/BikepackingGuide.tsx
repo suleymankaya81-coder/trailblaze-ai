@@ -12,6 +12,10 @@ import {
   type GearProduct,
 } from "@/lib/data/rockbrosGear";
 import hero from "@/assets/gear/bikepacking-hero.jpg";
+import routeBanner from "@/assets/gear/why-rockbros.jpg";
+
+const tones = ["bg-forest text-primary-foreground", "bg-sky text-primary-foreground", "bg-clay text-primary-foreground", "bg-amber text-ink"];
+const cautionTones = ["border-sage bg-sage/15", "border-sky bg-sky-soft/25", "border-clay bg-clay-soft/25", "border-amber bg-amber/20"];
 
 function ProductCard({ product, index }: { product: GearProduct; index: number }) {
   return (
@@ -20,7 +24,7 @@ function ProductCard({ product, index }: { product: GearProduct; index: number }
       className="flex h-full min-w-0 scroll-mt-28 flex-col overflow-hidden rounded-lg border border-border bg-card shadow-soft"
     >
       <div className="relative aspect-square bg-card p-6">
-        <span className="absolute left-4 top-4 z-10 text-xs font-semibold text-muted-foreground">
+        <span className={`absolute left-4 top-4 z-10 rounded-full px-2.5 py-0.5 text-[10px] font-bold ${tones[index % 4]}`}>
           {String(index + 1).padStart(2, "0")} / THE EDIT
         </span>
         <img
@@ -33,11 +37,11 @@ function ProductCard({ product, index }: { product: GearProduct; index: number }
         />
       </div>
       <div className="flex flex-1 flex-col p-6 pt-2">
-        <p className="text-xs font-semibold uppercase text-sage-deep">{product.purpose}</p>
+        <p className={`text-xs font-semibold uppercase ${["text-sage-deep","text-sky","text-clay","text-[oklch(0.55_0.12_70)]"][index % 4]}`}>{product.purpose}</p>
         <h3 className="mt-2 text-xl text-foreground">{product.name}</h3>
         <p className="mt-2 text-sm font-medium text-foreground">{product.spec}</p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{product.description}</p>
-        <div className="my-4 border-l-2 border-sage pl-3 text-xs leading-relaxed text-muted-foreground">
+        <div className={`my-4 rounded-r-md border-l-2 py-2 pl-3 pr-2 text-xs leading-relaxed text-foreground/75 ${cautionTones[index % 4]}`}>
           {product.caution}
         </div>
         <div className="mt-auto">
@@ -146,7 +150,7 @@ export function BikepackingGuide() {
               </p>
             </div>
           </div>
-          <div className="mt-10 border-y border-border py-6">
+          <div className="mt-10 rounded-xl bg-sand-warm px-6 py-5">
             <div className="flex flex-wrap items-center gap-x-8 gap-y-4 text-sm text-foreground">
               {[
                 "Actual catalog product photos",
@@ -154,7 +158,7 @@ export function BikepackingGuide() {
                 "No hands-on testing claims",
               ].map((text) => (
                 <span key={text} className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-sage-deep" />
+                  <Check className={`h-4 w-4 ${text.startsWith("Actual") ? "text-sage-deep" : text.startsWith("Fit") ? "text-sky" : "text-clay"}`} />
                   {text}
                 </span>
               ))}
@@ -222,6 +226,19 @@ export function BikepackingGuide() {
             in USD, not live quotes. Verify variants, current pricing, stock, shipping, taxes and
             returns on the retailer’s site.
           </p>
+        </section>
+        <section className="container-page pb-14 md:pb-20">
+          <Link to="/road-trips" className="group relative isolate block overflow-hidden rounded-2xl">
+            <img src={routeBanner} alt="Mountain biker on a ridge trail at sunset — AI-generated illustration" loading="lazy" width={1024} height={640} className="absolute inset-0 -z-20 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink/85 via-ink/50 to-transparent" />
+            <div className="max-w-lg p-8 text-off-white md:p-12">
+              <span className="rounded-full bg-amber px-3 py-1 text-[10px] font-bold uppercase text-ink">Where to ride next</span>
+              <h2 className="mt-4 font-serif text-3xl leading-tight text-off-white md:text-4xl">Packed and ready? Pick your route.</h2>
+              <p className="mt-3 text-sm text-off-white/85">Explore multi-park road trip loops across the US, with day-by-day plans and maps.</p>
+              <span className="mt-6 inline-flex items-center gap-2 rounded-md bg-off-white px-5 py-2.5 text-sm font-semibold text-forest">Browse road trip loops <ArrowRight className="h-4 w-4" /></span>
+              <p className="mt-5 text-[10px] text-off-white/70">Illustrative image.</p>
+            </div>
+          </Link>
         </section>
         <section className="border-y border-border bg-card py-14 md:py-20">
           <div className="container-page">
