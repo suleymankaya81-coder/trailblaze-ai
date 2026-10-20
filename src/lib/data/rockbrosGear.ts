@@ -135,10 +135,22 @@ export const gearProducts = [
     },
     image: image6.url,
   },
-] as const;
+] satisfies GearProduct[];
 
-export type GearProduct = (typeof gearProducts)[number];
-export function gearShopLink(product: GearProduct) {
+export interface GearProduct {
+  id: string;
+  catalogTitle: string;
+  price: number;
+  currency: string;
+  productUrl: string;
+  name: string;
+  purpose: string;
+  spec: string;
+  description: string;
+  caution: string;
+  image: string;
+}
+export function gearShopLink(product: GearProduct, guide = "bikepacking") {
   return buildAwinLink(
     {
       id: product.id,
@@ -146,7 +158,7 @@ export function gearShopLink(product: GearProduct) {
       partner: "awin",
       networkMid: ROCKBROS_ADVERTISER_ID,
     },
-    `gear-bikepacking-${product.id}`,
+    `gear-${guide}-${product.id}`,
   );
 }
 export function catalogPrice(product: GearProduct) {

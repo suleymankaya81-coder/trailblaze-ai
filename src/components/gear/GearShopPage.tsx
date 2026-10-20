@@ -161,8 +161,8 @@ export function GearShopPage() {
             <div className="mt-8 gear-carousel md:!grid md:!grid-flow-row md:grid-cols-2 lg:grid-cols-4">
               {[
                 { img: guideBike, badge: "Buying Guide", tone: "bg-amber text-ink", t: "7 Bikepacking Essentials", s: "Everything you need for your first trip.", to: "/gear/7-bikepacking-essentials" },
-                { img: actCycling, badge: "Buying Guide", tone: "bg-amber text-ink", t: "Best Cycling Accessories", s: "Coming soon." },
-                { img: actRepair, badge: "Buying Guide", tone: "bg-amber text-ink", t: "Bike Repair Kit Essentials", s: "Coming soon." },
+                { img: actCycling, badge: "Buying Guide", tone: "bg-amber text-ink", t: "Best Cycling Accessories", s: "Seven small upgrades for safer rides.", to: "/gear/best-cycling-accessories" },
+                { img: actRepair, badge: "Buying Guide", tone: "bg-amber text-ink", t: "Bike Repair Kit Essentials", s: "Be ready for the unexpected.", to: "/gear/bike-repair-kit-essentials" },
                 { img: actRoad, badge: "Travel Guide", tone: "bg-sky text-primary-foreground", t: "US Road Trip Loops", s: "Multi-park routes for every skill level.", to: "/road-trips" },
               ].map((g) => {
                 const body = (

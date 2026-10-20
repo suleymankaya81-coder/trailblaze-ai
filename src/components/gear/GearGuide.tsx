@@ -4,20 +4,14 @@ import { ArrowDown, ArrowRight, ChevronLeft, ChevronRight, Check, Compass } from
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
-import {
-  catalogPrice,
-  gearFaqs,
-  gearProducts,
-  gearShopLink,
-  type GearProduct,
-} from "@/lib/data/rockbrosGear";
-import hero from "@/assets/gear/bikepacking-hero.jpg";
+import { catalogPrice, gearShopLink, type GearProduct } from "@/lib/data/rockbrosGear";
+import type { GearGuideConfig } from "@/lib/data/gearGuides";
 import routeBanner from "@/assets/gear/why-rockbros.jpg";
 
 const tones = ["bg-forest text-primary-foreground", "bg-sky text-primary-foreground", "bg-clay text-primary-foreground", "bg-amber text-ink"];
 const cautionTones = ["border-sage bg-sage/15", "border-sky bg-sky-soft/25", "border-clay bg-clay-soft/25", "border-amber bg-amber/20"];
 
-function ProductCard({ product, index }: { product: GearProduct; index: number }) {
+function ProductCard({ product, index, guide }: { product: GearProduct; index: number; guide: string }) {
   return (
     <article
       id={`pick-${index + 1}`}
@@ -51,7 +45,7 @@ function ProductCard({ product, index }: { product: GearProduct; index: number }
           </p>
           <Button asChild className="w-full rounded-md">
             <a
-              href={gearShopLink(product)}
+              href={gearShopLink(product, guide)}
               target="_blank"
               rel="sponsored nofollow noopener noreferrer"
               title={`Check current price for ${product.name} on ROCKBROS`}
@@ -65,7 +59,9 @@ function ProductCard({ product, index }: { product: GearProduct; index: number }
   );
 }
 
-export function BikepackingGuide() {
+export function GearGuide({ config: c }: { config: GearGuideConfig }) {
+  const gearProducts = c.products;
+  const last = gearProducts.length - 1;
   const track = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
   const move = (direction: number) => {
@@ -83,7 +79,7 @@ export function BikepackingGuide() {
     const first = container?.firstElementChild;
     if (!container || !first) return;
     setActive(
-      Math.min(6, Math.round(container.scrollLeft / (first.getBoundingClientRect().width + 16))),
+      Math.min(last, Math.round(container.scrollLeft / (first.getBoundingClientRect().width + 16))),
     );
   };
   return (
@@ -92,10 +88,10 @@ export function BikepackingGuide() {
       <main>
         <section className="relative isolate flex min-h-[470px] items-end overflow-hidden md:min-h-[540px]">
           <img
-            src={hero}
+            src={c.hero}
             width={1600}
             height={1008}
-            alt="Bikepackers on a mountain road — AI-generated editorial illustration"
+            alt={c.heroAlt}
             fetchPriority="high"
             className="absolute inset-0 -z-20 h-full w-full object-cover object-center"
           />
@@ -103,15 +99,14 @@ export function BikepackingGuide() {
           <div className="container-page w-full pb-12 pt-20 text-off-white md:pb-14">
             <p className="text-xs font-semibold uppercase">MiniaLife / The gear edit</p>
             <h1 className="mt-4 max-w-3xl font-serif text-4xl leading-tight md:text-6xl">
-              7 Bikepacking Essentials
+              {c.title}
             </h1>
             <p className="mt-5 max-w-lg text-base leading-relaxed text-off-white/90">
-              Thoughtful storage, light and little comforts for your next overnight ride. A
-              catalog-based ROCKBROS edit.
+              {c.lede}
             </p>
             <Button asChild className="mt-7 rounded-md" size="lg">
               <a href="#the-edit">
-                Explore the seven picks <ArrowDown />
+                Explore the {c.countWord} picks <ArrowDown />
               </a>
             </Button>
             <p className="mt-6 text-[10px] text-off-white/70">
@@ -121,7 +116,7 @@ export function BikepackingGuide() {
         </section>
         <div className="border-b border-border">
           <div className="container-page flex flex-wrap items-center justify-between gap-3 py-4 text-xs text-muted-foreground">
-            <span>By Süleyman Kaya · Catalog reviewed October 19, 2026</span>
+            <span>Catalog reviewed October 19, 2026</span>
             <Link to="/affiliate-disclosure" className="underline underline-offset-4">
               Partner links · We may earn a commission at no extra cost to you
             </Link>
@@ -131,23 +126,16 @@ export function BikepackingGuide() {
           <div className="grid gap-8 md:grid-cols-[1fr_1.4fr] md:gap-16">
             <div>
               <p className="text-xs font-semibold uppercase text-sage-deep">
-                Less bulk. More outside.
+                {c.introEyebrow}
               </p>
               <h2 className="mt-3 font-serif text-3xl leading-tight">
-                Build a setup that fits your ride.
+                {c.introTitle}
               </h2>
             </div>
             <div className="space-y-4 text-sm leading-relaxed text-muted-foreground">
-              <p>
-                A weekend ride does not need a shopping list as long as the route. These seven
-                options cover different jobs: carrying luggage, keeping small items close, lighting
-                the road and settling in at camp.
-              </p>
-              <p>
-                Choose the pieces that suit your bike and plans. The saddle bag and rack bag are
-                alternative luggage setups, not compulsory companions. This selection is based on
-                the supplied product catalog, not hands-on testing.
-              </p>
+              {c.intro.map((t) => (
+                <p key={t}>{t}</p>
+              ))}
             </div>
           </div>
           <div className="mt-10 rounded-xl bg-sand-warm px-6 py-5">
@@ -170,7 +158,7 @@ export function BikepackingGuide() {
             <div className="w-full md:w-auto">
               <p className="text-xs font-semibold uppercase text-sage-deep">The shortlist</p>
               <h2 className="mt-2 font-serif text-3xl md:text-4xl">
-                Seven picks. Different purposes.
+                {c.shortlistTitle}
               </h2>
             </div>
             <div className="ml-auto flex shrink-0 items-center gap-1 md:hidden">
@@ -190,7 +178,7 @@ export function BikepackingGuide() {
                 size="icon"
                 className="rounded-md"
                 onClick={() => move(1)}
-                disabled={active === 6}
+                disabled={active === last}
                 aria-label="Next product"
                 title="Next product"
               >
@@ -202,17 +190,17 @@ export function BikepackingGuide() {
             ref={track}
             onScroll={onScroll}
             role="region"
-            aria-label="Seven bikepacking product recommendations"
+            aria-label={`${c.title} product recommendations`}
             tabIndex={0}
             className="gear-carousel md:grid md:grid-flow-row md:grid-cols-2 md:overflow-visible lg:grid-cols-3"
           >
             {gearProducts.map((product, index) => (
-              <ProductCard key={product.id} product={product} index={index} />
+              <ProductCard key={product.id} product={product} index={index} guide={c.slug} />
             ))}
           </div>
           <div
             className="mt-3 flex justify-center gap-1.5 md:hidden"
-            aria-label={`Product ${active + 1} of 7`}
+            aria-label={`Product ${active + 1} of ${gearProducts.length}`}
           >
             {gearProducts.map((product, index) => (
               <span
@@ -254,7 +242,7 @@ export function BikepackingGuide() {
             >
               <table className="w-full min-w-[680px] text-left text-sm">
                 <caption className="sr-only">
-                  Seven catalog products compared by use, listed specification and recorded price
+                  Catalog products compared by use, listed specification and recorded price
                 </caption>
                 <thead className="bg-secondary text-foreground">
                   <tr>
@@ -297,8 +285,7 @@ export function BikepackingGuide() {
               </table>
             </div>
             <p className="mt-4 text-xs text-muted-foreground">
-              Specifications are retailer-stated. Water-resistant and waterproof are different
-              claims; neither has been independently tested here.
+              {c.tableNote}
             </p>
           </div>
         </section>
@@ -309,7 +296,7 @@ export function BikepackingGuide() {
               <h2 className="mt-2 font-serif text-3xl">A few useful answers.</h2>
             </div>
             <div className="divide-y divide-border border-y border-border">
-              {gearFaqs.map((faq) => (
+              {c.faqs.map((faq) => (
                 <details key={faq.question} className="group py-5">
                   <summary className="cursor-pointer pr-4 text-base font-semibold text-foreground">
                     {faq.question}

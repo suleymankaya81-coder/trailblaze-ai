@@ -22,6 +22,8 @@ import { Route as DestinationsSlugRouteImport } from './routes/destinations.$slu
 import { Route as FlyAndDriveSlugRouteImport } from './routes/fly-and-drive.$slug'
 import { Route as GearIndexRouteImport } from './routes/gear.index'
 import { Route as Gear7BikepackingEssentialsRouteImport } from './routes/gear.7-bikepacking-essentials'
+import { Route as GearBestCyclingAccessoriesRouteImport } from './routes/gear.best-cycling-accessories'
+import { Route as GearBikeRepairKitEssentialsRouteImport } from './routes/gear.bike-repair-kit-essentials'
 import { Route as NoReservationSlugRouteImport } from './routes/no-reservation.$slug'
 import { Route as RoadTripsIndexRouteImport } from './routes/road-trips.index'
 import { Route as RoadTripsSlugRouteImport } from './routes/road-trips.$slug'
@@ -93,6 +95,18 @@ const Gear7BikepackingEssentialsRoute =
     path: '/gear/7-bikepacking-essentials',
     getParentRoute: () => rootRouteImport,
   } as any)
+const GearBestCyclingAccessoriesRoute =
+  GearBestCyclingAccessoriesRouteImport.update({
+    id: '/gear/best-cycling-accessories',
+    path: '/gear/best-cycling-accessories',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const GearBikeRepairKitEssentialsRoute =
+  GearBikeRepairKitEssentialsRouteImport.update({
+    id: '/gear/bike-repair-kit-essentials',
+    path: '/gear/bike-repair-kit-essentials',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const NoReservationSlugRoute = NoReservationSlugRouteImport.update({
   id: '/no-reservation/$slug',
   path: '/no-reservation/$slug',
@@ -126,6 +140,8 @@ export interface FileRoutesByFullPath {
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
   '/gear/7-bikepacking-essentials': typeof Gear7BikepackingEssentialsRoute
+  '/gear/best-cycling-accessories': typeof GearBestCyclingAccessoriesRoute
+  '/gear/bike-repair-kit-essentials': typeof GearBikeRepairKitEssentialsRoute
   '/no-reservation/$slug': typeof NoReservationSlugRoute
   '/road-trips/$slug': typeof RoadTripsSlugRoute
   '/rv-camping/$slug': typeof RvCampingSlugRoute
@@ -145,6 +161,8 @@ export interface FileRoutesByTo {
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
   '/gear/7-bikepacking-essentials': typeof Gear7BikepackingEssentialsRoute
+  '/gear/best-cycling-accessories': typeof GearBestCyclingAccessoriesRoute
+  '/gear/bike-repair-kit-essentials': typeof GearBikeRepairKitEssentialsRoute
   '/no-reservation/$slug': typeof NoReservationSlugRoute
   '/road-trips/$slug': typeof RoadTripsSlugRoute
   '/rv-camping/$slug': typeof RvCampingSlugRoute
@@ -165,6 +183,8 @@ export interface FileRoutesById {
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
   '/gear/7-bikepacking-essentials': typeof Gear7BikepackingEssentialsRoute
+  '/gear/best-cycling-accessories': typeof GearBestCyclingAccessoriesRoute
+  '/gear/bike-repair-kit-essentials': typeof GearBikeRepairKitEssentialsRoute
   '/no-reservation/$slug': typeof NoReservationSlugRoute
   '/road-trips/$slug': typeof RoadTripsSlugRoute
   '/rv-camping/$slug': typeof RvCampingSlugRoute
@@ -186,6 +206,8 @@ export interface FileRouteTypes {
     | '/destinations/$slug'
     | '/fly-and-drive/$slug'
     | '/gear/7-bikepacking-essentials'
+    | '/gear/best-cycling-accessories'
+    | '/gear/bike-repair-kit-essentials'
     | '/no-reservation/$slug'
     | '/road-trips/$slug'
     | '/rv-camping/$slug'
@@ -205,6 +227,8 @@ export interface FileRouteTypes {
     | '/destinations/$slug'
     | '/fly-and-drive/$slug'
     | '/gear/7-bikepacking-essentials'
+    | '/gear/best-cycling-accessories'
+    | '/gear/bike-repair-kit-essentials'
     | '/no-reservation/$slug'
     | '/road-trips/$slug'
     | '/rv-camping/$slug'
@@ -224,6 +248,8 @@ export interface FileRouteTypes {
     | '/destinations/$slug'
     | '/fly-and-drive/$slug'
     | '/gear/7-bikepacking-essentials'
+    | '/gear/best-cycling-accessories'
+    | '/gear/bike-repair-kit-essentials'
     | '/no-reservation/$slug'
     | '/road-trips/$slug'
     | '/rv-camping/$slug'
@@ -244,6 +270,8 @@ export interface RootRouteChildren {
   DestinationsSlugRoute: typeof DestinationsSlugRoute
   FlyAndDriveSlugRoute: typeof FlyAndDriveSlugRoute
   Gear7BikepackingEssentialsRoute: typeof Gear7BikepackingEssentialsRoute
+  GearBestCyclingAccessoriesRoute: typeof GearBestCyclingAccessoriesRoute
+  GearBikeRepairKitEssentialsRoute: typeof GearBikeRepairKitEssentialsRoute
   NoReservationSlugRoute: typeof NoReservationSlugRoute
   RoadTripsSlugRoute: typeof RoadTripsSlugRoute
   RvCampingSlugRoute: typeof RvCampingSlugRoute
@@ -345,6 +373,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof Gear7BikepackingEssentialsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/gear/best-cycling-accessories': {
+      id: '/gear/best-cycling-accessories'
+      path: '/gear/best-cycling-accessories'
+      fullPath: '/gear/best-cycling-accessories'
+      preLoaderRoute: typeof GearBestCyclingAccessoriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gear/bike-repair-kit-essentials': {
+      id: '/gear/bike-repair-kit-essentials'
+      path: '/gear/bike-repair-kit-essentials'
+      fullPath: '/gear/bike-repair-kit-essentials'
+      preLoaderRoute: typeof GearBikeRepairKitEssentialsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/no-reservation/$slug': {
       id: '/no-reservation/$slug'
       path: '/no-reservation/$slug'
@@ -388,6 +430,8 @@ const rootRouteChildren: RootRouteChildren = {
   DestinationsSlugRoute: DestinationsSlugRoute,
   FlyAndDriveSlugRoute: FlyAndDriveSlugRoute,
   Gear7BikepackingEssentialsRoute: Gear7BikepackingEssentialsRoute,
+  GearBestCyclingAccessoriesRoute: GearBestCyclingAccessoriesRoute,
+  GearBikeRepairKitEssentialsRoute: GearBikeRepairKitEssentialsRoute,
   NoReservationSlugRoute: NoReservationSlugRoute,
   RoadTripsSlugRoute: RoadTripsSlugRoute,
   RvCampingSlugRoute: RvCampingSlugRoute,
