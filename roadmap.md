@@ -61,3 +61,8 @@
 - [x] Build /gear/7-bikepacking-essentials with seven actual catalog products, mobile swipeable recommendations, comparison and FAQs.
 - [x] Apply beige backgrounds, white cards and dark-green CTAs site-wide; add header/footer guide links.
 - [x] Verify all seven product images, catalog prices, publisher/advertiser IDs, new-tab tracking, desktop/mobile layout, previous/next controls and FAQ interaction; five tests pass, build OK. Publishing remains deferred.
+
+## Direct Viator activity integration
+- [x] Record confirmed direct affiliate parameters and review the supplied API licence conditions and sandbox/production status.
+- [ ] Securely connect and verify production API access; blocked until the owner completes Viator contact details and creates a production key. The first connector approval was cancelled before execution; no connection was created.
+- [ ] Replace generic activity recommendations with provider-sourced listings after access verification; comply with Viator content indexing and own-domain restrictions.
