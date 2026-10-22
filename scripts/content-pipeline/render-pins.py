@@ -210,35 +210,80 @@ def render(item):
     return buf.getvalue()
 
 
+def gallery_credit(raw, i):
+    """Credit for gallery[i] from 'Hero: … · Gallery: a / LIC via …; b / LIC via …'."""
+    m = re.search(r"Gallery:\s*(.+)$", re.sub(r"<[^>]+>", "", raw or ""))
+    if not m:
+        return None
+    parts = [p.strip() for p in m.group(1).split(";")]
+    if i >= len(parts):
+        return None
+    pm = re.match(r"(.+?)\s*/\s*(.+?)\s+via", parts[i])
+    return parse_credit(pm.group(1), pm.group(2)) if pm else None
+
+
+def alt_photo(d, i=0):
+    """A credited gallery photo, so CSV pins don't repeat the destination pin's cover."""
+    g = d.get("gallery") or []
+    if len(g) > i and g[i].startswith("https://"):
+        c = gallery_credit(d.get("photo_credit"), i)
+        if c:
+            return g[i], c
+    return d["hero_image"], parse_credit(d.get("photo_credit"))
+
+
 def items():
-    rows = json.loads(q("""select coalesce(json_agg(x),'[]') from (
-      select d.slug, d.name, d.best_season, d.recommended_duration as dur, d.hero_image, d.photo_credit, d.scenic_score,
-        null::text as path, 'destination' as kind, null::text as cover, null::text as cc, null::text as cl
-      from destinations d where d.status='published' and d.hero_image like 'https://%'
-      union all
-      select d.slug, d.name, d.best_season, d.recommended_duration, d.hero_image, d.photo_credit, d.scenic_score,
-        p.path, p.page_type::text, p.cover_image, p.cover_photo_credit, p.cover_photo_license
+    dests = json.loads(q("""select coalesce(json_agg(d),'[]') from (select slug, name, best_season,
+      recommended_duration as dur, hero_image, photo_credit, scenic_score, gallery, camping_score,
+      nearest_airport_code as airport, nearest_airport_name, drive_minutes, permit_level
+      from destinations where status='published' and hero_image like 'https://%') d"""))
+    by = {d["slug"]: d for d in dests}
+    pages = json.loads(q("""select coalesce(json_agg(x),'[]') from (select d.slug, p.path, p.page_type::text as kind,
+      p.cover_image as cover, p.cover_photo_credit as cc, p.cover_photo_license as cl
       from seo_landing_pages p join destinations d on d.id=p.destination_id
-      where p.status='published' and d.status='published' and p.indexable
-    ) x"""))
+      where p.status='published' and d.status='published' and p.indexable) x"""))
     out = []
-    for r in rows:
-        k = r["kind"]
-        use_cover = bool(r["cover"]) and k != "destination"
-        image = r["cover"] if use_cover else r["hero_image"]
+
+    def add(key, kind, name, d, image, credit, link, extra=None):
         if not image or not image.startswith("https://") or "Landsat_mosaic" in image:
+            return
+        sub, info = pin_copy_v2.card(kind, d, extra)
+        out.append(dict(key=key, kind=kind, name=name, sub=sub, info=info or "", image=image, credit=credit,
+                        feed=FEED[kind], score=d.get("scenic_score") or 0, link=link, extra=extra,
+                        channel="csv" if kind in CSV_KINDS else "rss"))
+
+    for d in dests:
+        add(f"d:{d['slug']}", "destination", d["name"], d, d["hero_image"], parse_credit(d["photo_credit"]),
+            f"{BASE}/destinations/{d['slug']}")
+    for p in pages:
+        d = by.get(p["slug"])
+        if not d:
             continue
-        credit = parse_credit(r["cc"], r["cl"] or "") if use_cover else parse_credit(r["photo_credit"])
-        season = r["best_season"]; dur = r["dur"]
-        sub = {"destination": "Free route map & trip plan", "best_time": "Month-by-month guide",
-               "things_to_do": "Top outdoor activities", "glamping": "Where to stay near nature",
-               "trip_planner": dur_label(dur)}[k]
-        info = {"destination": " · ".join(x for x in [season and f"Best: {season}", dur] if x),
-                "best_time": season and f"Peak season: {season}", "things_to_do": "Hikes · scenic drives · family ideas",
-                "glamping": "Cabins · glamping · RV campgrounds", "trip_planner": season and f"Best: {season}"}[k]
-        key = f"d:{r['slug']}" if k == "destination" else f"p:{r['path']}"
-        out.append(dict(key=key, kind=k, name=r["name"], sub=sub, info=info or "", image=image, credit=credit,
-                        feed=FEED[k], score=r["scenic_score"] or 0))
+        use_cover = bool(p["cover"])
+        add(f"p:{p['path']}", p["kind"], d["name"], d, p["cover"] if use_cover else d["hero_image"],
+            parse_credit(p["cc"], p["cl"] or "") if use_cover else parse_credit(d["photo_credit"]), f"{BASE}{p['path']}")
+    # RV & camping guides: same eligibility as the live /rv-camping pages.
+    for d in dests:
+        if (d.get("camping_score") or 0) >= 7 and d.get("airport") and d.get("nearest_airport_name") and d.get("drive_minutes") is not None:
+            img, cr = alt_photo(d, 0)
+            add(f"rv:{d['slug']}", "rv_camping", d["name"], d, img, cr, f"{BASE}/rv-camping/{d['slug']}")
+    # Multi-park loops and gateway corridors.
+    routes = [("loop", l["slug"], re.sub(r"\s+Road Trip Loop$|\s+Loop$", "", l["title"]), l["stops"], f"/road-trips/{l['slug']}")
+              for l in json.load(open(os.path.join(os.path.dirname(__file__), "../../src/data/loops.json")))]
+    routes.append(("corridor", "grand-circle-from-las-vegas", "Grand Circle from Las Vegas",
+                   ["las-vegas", "zion", "bryce-canyon", "antelope-canyon", "horseshoe-bend", "grand-canyon"],
+                   "/corridors/grand-circle-from-las-vegas"))
+    for kind, slug, name, stops, path in routes:
+        ss = [by[s] for s in stops if s in by]
+        if len(ss) < 2:
+            continue
+        first = ss[0]
+        extra = {"stops": len(ss), "days": sum(pin_copy_v2.days_from(s["dur"]) for s in ss),
+                 "stop_names": " → ".join(s["name"] for s in ss),
+                 "info": pin_copy_v2.join(pin_copy_v2.arrival(first.get("airport"), None), "free map with every stop")}
+        pic = ss[1]
+        img, cr = alt_photo(pic, 1 if len(pic.get("gallery") or []) > 1 else 0)
+        add(f"{kind}:{slug}", kind, name, {**pic, "scenic_score": 10}, img, cr, f"{BASE}{path}", extra)
     return out
 
 
@@ -253,9 +298,52 @@ def upload(item):
     return f"{URL}/storage/v1{s.json()['signedURL']}"
 
 
+def csv_schedule(keys, rss_dates, start):
+    """CSV pins go out only on days with no RSS release, at most CSV_DAILY per day."""
+    busy = {d.date() for d in rss_dates}
+    day, used, out = start.date(), 0, {}
+    for k in keys:
+        while day in busy or used >= CSV_DAILY:
+            day += datetime.timedelta(days=1); used = 0
+        out[k] = datetime.datetime.combine(day, datetime.time(15), datetime.timezone.utc)  # 15:00 UTC = US morning
+        used += 1
+    return out
+
+
+def write_csv(all_items):
+    """Pinterest bulk-upload files (max 200 rows each), one per publish day."""
+    import csv
+    rows = json.loads(q("select coalesce(json_agg(x order by release_at, key),'[]') from (select key, image_url, release_at from pin_assets where channel='csv') x"))
+    meta = {it["key"]: it for it in all_items}
+    os.makedirs(CSV_DIR, exist_ok=True)
+    for f in os.listdir(CSV_DIR):
+        if f.endswith(".csv"):
+            os.remove(os.path.join(CSV_DIR, f))
+    by_day = {}
+    for r in rows:
+        it = meta.get(r["key"])
+        if it:
+            by_day.setdefault(r["release_at"][:10], []).append((r, it))
+    for i, (day, group) in enumerate(sorted(by_day.items()), 1):
+        with open(f"{CSV_DIR}/minialife-pins-{i:02d}-{day}.csv", "w", newline="", encoding="utf-8") as fh:
+            w = csv.writer(fh)
+            w.writerow(["Title", "Media URL", "Pinterest board", "Thumbnail", "Description", "Link", "Publish date", "Keywords"])
+            for r, it in group:
+                k = it["kind"]
+                title = pin_copy_v2.csv_title(k, it["name"], it["extra"])
+                desc = pin_copy_v2.csv_description(k, it["name"], it["sub"], it["info"], it["extra"])
+                kw = {"rv_camping": f"{it['name']} RV camping, RV road trip, campgrounds",
+                      }.get(k, f"{it['name']} road trip, national park road trip, US road trip itinerary")
+                link = f"{it['link']}?utm_source=pinterest&utm_medium=csv"
+                w.writerow([title, r["image_url"], BOARD[it["feed"]], "", desc, link, r["release_at"][:19], kw])
+        print("csv", day, len(group))
+
+
 def main():
     all_items = items()
     print(len(all_items), "eligible pins")
+    if "--csv-only" in sys.argv:
+        write_csv(all_items); return
     if "--sample" in sys.argv:
         os.makedirs(OUT, exist_ok=True)
         picks, seen = [], {}
@@ -268,15 +356,20 @@ def main():
             fn = f"{OUT}/{it['kind']}-{re.sub('[^a-z0-9]+','-',it['name'].lower())}.jpg"
             open(fn, "wb").write(data); print(fn)
         return
-    done = set(q(f"select key from pin_assets where template_version={VERSION}").split()) if "--force" not in sys.argv else set()
+    # Existing cards (any version) are never re-rendered or re-dated.
+    done = set(q("select key from pin_assets").split()) if "--force" not in sys.argv else set()
     todo = [it for it in all_items if it["key"] not in done]
     now = datetime.datetime.now(datetime.timezone.utc)
-    # Re-runs preserve assigned dates and account for existing daily capacity.
-    assigned = json.loads(q("select coalesce(json_object_agg(key,release_at),'{}') from pin_assets"))
+    assigned = json.loads(q("select coalesce(json_object_agg(key,release_at),'{}') from pin_assets where channel='rss'"))
     existing = {k: datetime.datetime.fromisoformat(v.replace("Z", "+00:00")) for k, v in assigned.items()}
     start_arg = next((x.split("=", 1)[1] for x in sys.argv if x.startswith("--release-start=")), None)
     start = datetime.datetime.fromisoformat(start_arg.replace("Z", "+00:00")) if start_arg else now
-    release = release_schedule(all_items, start, existing)
+    rss_items = [it for it in all_items if it["channel"] == "rss"]
+    release = release_schedule(rss_items, start, existing)
+    csv_assigned = json.loads(q("select coalesce(json_object_agg(key,release_at),'{}') from pin_assets where channel='csv'"))
+    csv_todo = sorted((it for it in todo if it["channel"] == "csv"), key=lambda x: (x["kind"] == "rv_camping", -x["score"], x["key"]))
+    last_csv = max([datetime.datetime.fromisoformat(v.replace("Z", "+00:00")) for v in csv_assigned.values()], default=start)
+    release.update(csv_schedule([it["key"] for it in csv_todo], release.values(), max(start, last_csv)))
 
     def work(it):
         try:
@@ -291,12 +384,13 @@ def main():
             if err:
                 fails += 1; print("FAIL", it["key"], err[:120]); continue
             batch.append({"key": it["key"], "kind": it["kind"], "image_url": url, "template_version": VERSION,
-                          "feed": it["feed"], "release_at": release[it["key"]].isoformat(),
+                          "feed": it["feed"], "release_at": release[it["key"]].isoformat(), "channel": it["channel"],
                           "updated_at": now.isoformat()})
             if len(batch) >= 100:
                 flush(batch); batch = []
     flush(batch)
     print("done", len(todo) - fails, "fails", fails)
+    write_csv(all_items)
 
 
 def flush(batch):
