@@ -17,6 +17,7 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as SearchRouteImport } from './routes/search'
 import { Route as TermsRouteImport } from './routes/terms'
+import { Route as CorridorsIndexRouteImport } from './routes/corridors.index'
 import { Route as CorridorsSlugRouteImport } from './routes/corridors.$slug'
 import { Route as DestinationsIndexRouteImport } from './routes/destinations.index'
 import { Route as DestinationsSlugRouteImport } from './routes/destinations.$slug'
@@ -70,6 +71,11 @@ const SearchRoute = SearchRouteImport.update({
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
   path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CorridorsIndexRoute = CorridorsIndexRouteImport.update({
+  id: '/corridors/',
+  path: '/corridors/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CorridorsSlugRoute = CorridorsSlugRouteImport.update({
@@ -165,6 +171,7 @@ export interface FileRoutesByFullPath {
   '/no-reservation/$slug': typeof NoReservationSlugRoute
   '/road-trips/$slug': typeof RoadTripsSlugRoute
   '/rv-camping/$slug': typeof RvCampingSlugRoute
+  '/corridors/': typeof CorridorsIndexRoute
   '/destinations/': typeof DestinationsIndexRoute
   '/gear/': typeof GearIndexRoute
   '/road-trips/': typeof RoadTripsIndexRoute
@@ -189,6 +196,7 @@ export interface FileRoutesByTo {
   '/no-reservation/$slug': typeof NoReservationSlugRoute
   '/road-trips/$slug': typeof RoadTripsSlugRoute
   '/rv-camping/$slug': typeof RvCampingSlugRoute
+  '/corridors': typeof CorridorsIndexRoute
   '/destinations': typeof DestinationsIndexRoute
   '/gear': typeof GearIndexRoute
   '/road-trips': typeof RoadTripsIndexRoute
@@ -214,6 +222,7 @@ export interface FileRoutesById {
   '/no-reservation/$slug': typeof NoReservationSlugRoute
   '/road-trips/$slug': typeof RoadTripsSlugRoute
   '/rv-camping/$slug': typeof RvCampingSlugRoute
+  '/corridors/': typeof CorridorsIndexRoute
   '/destinations/': typeof DestinationsIndexRoute
   '/gear/': typeof GearIndexRoute
   '/road-trips/': typeof RoadTripsIndexRoute
@@ -240,6 +249,7 @@ export interface FileRouteTypes {
     | '/no-reservation/$slug'
     | '/road-trips/$slug'
     | '/rv-camping/$slug'
+    | '/corridors/'
     | '/destinations/'
     | '/gear/'
     | '/road-trips/'
@@ -264,6 +274,7 @@ export interface FileRouteTypes {
     | '/no-reservation/$slug'
     | '/road-trips/$slug'
     | '/rv-camping/$slug'
+    | '/corridors'
     | '/destinations'
     | '/gear'
     | '/road-trips'
@@ -288,6 +299,7 @@ export interface FileRouteTypes {
     | '/no-reservation/$slug'
     | '/road-trips/$slug'
     | '/rv-camping/$slug'
+    | '/corridors/'
     | '/destinations/'
     | '/gear/'
     | '/road-trips/'
@@ -313,6 +325,7 @@ export interface RootRouteChildren {
   NoReservationSlugRoute: typeof NoReservationSlugRoute
   RoadTripsSlugRoute: typeof RoadTripsSlugRoute
   RvCampingSlugRoute: typeof RvCampingSlugRoute
+  CorridorsIndexRoute: typeof CorridorsIndexRoute
   DestinationsIndexRoute: typeof DestinationsIndexRoute
   GearIndexRoute: typeof GearIndexRoute
   RoadTripsIndexRoute: typeof RoadTripsIndexRoute
@@ -375,6 +388,13 @@ declare module '@tanstack/react-router' {
       path: '/terms'
       fullPath: '/terms'
       preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/corridors/': {
+      id: '/corridors/'
+      path: '/corridors'
+      fullPath: '/corridors/'
+      preLoaderRoute: typeof CorridorsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/corridors/$slug': {
@@ -497,6 +517,7 @@ const rootRouteChildren: RootRouteChildren = {
   NoReservationSlugRoute: NoReservationSlugRoute,
   RoadTripsSlugRoute: RoadTripsSlugRoute,
   RvCampingSlugRoute: RvCampingSlugRoute,
+  CorridorsIndexRoute: CorridorsIndexRoute,
   DestinationsIndexRoute: DestinationsIndexRoute,
   GearIndexRoute: GearIndexRoute,
   RoadTripsIndexRoute: RoadTripsIndexRoute,
