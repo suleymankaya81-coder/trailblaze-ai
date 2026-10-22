@@ -17,6 +17,7 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as SearchRouteImport } from './routes/search'
 import { Route as TermsRouteImport } from './routes/terms'
+import { Route as TripGuidesRouteImport } from './routes/trip-guides'
 import { Route as CorridorsIndexRouteImport } from './routes/corridors.index'
 import { Route as CorridorsSlugRouteImport } from './routes/corridors.$slug'
 import { Route as DestinationsIndexRouteImport } from './routes/destinations.index'
@@ -28,7 +29,6 @@ import { Route as GearIndexRouteImport } from './routes/gear.index'
 import { Route as Gear7BikepackingEssentialsRouteImport } from './routes/gear.7-bikepacking-essentials'
 import { Route as GearBestCyclingAccessoriesRouteImport } from './routes/gear.best-cycling-accessories'
 import { Route as GearBikeRepairKitEssentialsRouteImport } from './routes/gear.bike-repair-kit-essentials'
-import { Route as GuidesIndexRouteImport } from './routes/guides.index'
 import { Route as NoReservationIndexRouteImport } from './routes/no-reservation.index'
 import { Route as NoReservationSlugRouteImport } from './routes/no-reservation.$slug'
 import { Route as RoadTripsIndexRouteImport } from './routes/road-trips.index'
@@ -75,6 +75,11 @@ const SearchRoute = SearchRouteImport.update({
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
   path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TripGuidesRoute = TripGuidesRouteImport.update({
+  id: '/trip-guides',
+  path: '/trip-guides',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CorridorsIndexRoute = CorridorsIndexRouteImport.update({
@@ -135,11 +140,6 @@ const GearBikeRepairKitEssentialsRoute =
     path: '/gear/bike-repair-kit-essentials',
     getParentRoute: () => rootRouteImport,
   } as any)
-const GuidesIndexRoute = GuidesIndexRouteImport.update({
-  id: '/guides/',
-  path: '/guides/',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const NoReservationIndexRoute = NoReservationIndexRouteImport.update({
   id: '/no-reservation/',
   path: '/no-reservation/',
@@ -185,6 +185,7 @@ export interface FileRoutesByFullPath {
   '/privacy': typeof PrivacyRoute
   '/search': typeof SearchRoute
   '/terms': typeof TermsRoute
+  '/trip-guides': typeof TripGuidesRoute
   '/corridors/$slug': typeof CorridorsSlugRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/experiences/$corridor': typeof ExperiencesCorridorRoute
@@ -199,7 +200,6 @@ export interface FileRoutesByFullPath {
   '/destinations/': typeof DestinationsIndexRoute
   '/fly-and-drive/': typeof FlyAndDriveIndexRoute
   '/gear/': typeof GearIndexRoute
-  '/guides/': typeof GuidesIndexRoute
   '/no-reservation/': typeof NoReservationIndexRoute
   '/road-trips/': typeof RoadTripsIndexRoute
   '/rv-camping/': typeof RvCampingIndexRoute
@@ -214,6 +214,7 @@ export interface FileRoutesByTo {
   '/privacy': typeof PrivacyRoute
   '/search': typeof SearchRoute
   '/terms': typeof TermsRoute
+  '/trip-guides': typeof TripGuidesRoute
   '/corridors/$slug': typeof CorridorsSlugRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/experiences/$corridor': typeof ExperiencesCorridorRoute
@@ -228,7 +229,6 @@ export interface FileRoutesByTo {
   '/destinations': typeof DestinationsIndexRoute
   '/fly-and-drive': typeof FlyAndDriveIndexRoute
   '/gear': typeof GearIndexRoute
-  '/guides': typeof GuidesIndexRoute
   '/no-reservation': typeof NoReservationIndexRoute
   '/road-trips': typeof RoadTripsIndexRoute
   '/rv-camping': typeof RvCampingIndexRoute
@@ -244,6 +244,7 @@ export interface FileRoutesById {
   '/privacy': typeof PrivacyRoute
   '/search': typeof SearchRoute
   '/terms': typeof TermsRoute
+  '/trip-guides': typeof TripGuidesRoute
   '/corridors/$slug': typeof CorridorsSlugRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/experiences/$corridor': typeof ExperiencesCorridorRoute
@@ -258,7 +259,6 @@ export interface FileRoutesById {
   '/destinations/': typeof DestinationsIndexRoute
   '/fly-and-drive/': typeof FlyAndDriveIndexRoute
   '/gear/': typeof GearIndexRoute
-  '/guides/': typeof GuidesIndexRoute
   '/no-reservation/': typeof NoReservationIndexRoute
   '/road-trips/': typeof RoadTripsIndexRoute
   '/rv-camping/': typeof RvCampingIndexRoute
@@ -275,6 +275,7 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/search'
     | '/terms'
+    | '/trip-guides'
     | '/corridors/$slug'
     | '/destinations/$slug'
     | '/experiences/$corridor'
@@ -289,7 +290,6 @@ export interface FileRouteTypes {
     | '/destinations/'
     | '/fly-and-drive/'
     | '/gear/'
-    | '/guides/'
     | '/no-reservation/'
     | '/road-trips/'
     | '/rv-camping/'
@@ -304,6 +304,7 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/search'
     | '/terms'
+    | '/trip-guides'
     | '/corridors/$slug'
     | '/destinations/$slug'
     | '/experiences/$corridor'
@@ -318,7 +319,6 @@ export interface FileRouteTypes {
     | '/destinations'
     | '/fly-and-drive'
     | '/gear'
-    | '/guides'
     | '/no-reservation'
     | '/road-trips'
     | '/rv-camping'
@@ -333,6 +333,7 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/search'
     | '/terms'
+    | '/trip-guides'
     | '/corridors/$slug'
     | '/destinations/$slug'
     | '/experiences/$corridor'
@@ -347,7 +348,6 @@ export interface FileRouteTypes {
     | '/destinations/'
     | '/fly-and-drive/'
     | '/gear/'
-    | '/guides/'
     | '/no-reservation/'
     | '/road-trips/'
     | '/rv-camping/'
@@ -363,6 +363,7 @@ export interface RootRouteChildren {
   PrivacyRoute: typeof PrivacyRoute
   SearchRoute: typeof SearchRoute
   TermsRoute: typeof TermsRoute
+  TripGuidesRoute: typeof TripGuidesRoute
   CorridorsSlugRoute: typeof CorridorsSlugRoute
   DestinationsSlugRoute: typeof DestinationsSlugRoute
   ExperiencesCorridorRoute: typeof ExperiencesCorridorRoute
@@ -377,7 +378,6 @@ export interface RootRouteChildren {
   DestinationsIndexRoute: typeof DestinationsIndexRoute
   FlyAndDriveIndexRoute: typeof FlyAndDriveIndexRoute
   GearIndexRoute: typeof GearIndexRoute
-  GuidesIndexRoute: typeof GuidesIndexRoute
   NoReservationIndexRoute: typeof NoReservationIndexRoute
   RoadTripsIndexRoute: typeof RoadTripsIndexRoute
   RvCampingIndexRoute: typeof RvCampingIndexRoute
@@ -440,6 +440,13 @@ declare module '@tanstack/react-router' {
       path: '/terms'
       fullPath: '/terms'
       preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/trip-guides': {
+      id: '/trip-guides'
+      path: '/trip-guides'
+      fullPath: '/trip-guides'
+      preLoaderRoute: typeof TripGuidesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/corridors/': {
@@ -519,13 +526,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GearBikeRepairKitEssentialsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/guides/': {
-      id: '/guides/'
-      path: '/guides'
-      fullPath: '/guides/'
-      preLoaderRoute: typeof GuidesIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/no-reservation/': {
       id: '/no-reservation/'
       path: '/no-reservation'
@@ -587,6 +587,7 @@ const rootRouteChildren: RootRouteChildren = {
   PrivacyRoute: PrivacyRoute,
   SearchRoute: SearchRoute,
   TermsRoute: TermsRoute,
+  TripGuidesRoute: TripGuidesRoute,
   CorridorsSlugRoute: CorridorsSlugRoute,
   DestinationsSlugRoute: DestinationsSlugRoute,
   ExperiencesCorridorRoute: ExperiencesCorridorRoute,
@@ -601,7 +602,6 @@ const rootRouteChildren: RootRouteChildren = {
   DestinationsIndexRoute: DestinationsIndexRoute,
   FlyAndDriveIndexRoute: FlyAndDriveIndexRoute,
   GearIndexRoute: GearIndexRoute,
-  GuidesIndexRoute: GuidesIndexRoute,
   NoReservationIndexRoute: NoReservationIndexRoute,
   RoadTripsIndexRoute: RoadTripsIndexRoute,
   RvCampingIndexRoute: RvCampingIndexRoute,
