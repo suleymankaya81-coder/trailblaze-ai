@@ -11,6 +11,7 @@ from concurrent.futures import ThreadPoolExecutor
 import requests
 from PIL import Image, ImageDraw, ImageFont, ImageStat
 from pin_schedule import release_schedule
+import pin_copy_v2
 
 # v1 = approved 2026-10-16 batch (never re-rendered). v2 = "Design the Exit" copy:
 # intent-first kicker, concrete next step (days, airport, drive, booking) on the card.
