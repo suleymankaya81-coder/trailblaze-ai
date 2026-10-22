@@ -1,0 +1,95 @@
+{
+  "slug": "philadelphia",
+  "headline": "Timed Entry for Independence Hall and Federal Sites",
+  "reservation": "Independence Hall requires timed entry tickets for most of the year, which can sell out weeks in advance. While the Liberty Bell Center does not require tickets, security lines vary in length. Visitors should check the official NPS site for current permit requirements and seasonal maintenance closures affecting the historic district.",
+  "source_url": "https://www.nps.gov/inde/planyourvisit/procedures-independencehall.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Foundations of Liberty",
+        "start": "Suggested: 8:30 AM from Old City",
+        "stops": [
+          {
+            "name": "Independence Hall",
+            "detail": "Tour the site where the Declaration of Independence was signed, ensuring you have secured the required timed ticket."
+          },
+          {
+            "name": "Elfreth's Alley",
+            "detail": "Walk the nation's oldest continuously inhabited residential street to see 18th-century colonial architecture."
+          }
+        ],
+        "driving": "Walking regional focus; allow 15 minutes between sights",
+        "note": "Cobblestone streets require sturdy footwear; allow extra time for security at federal buildings."
+      },
+      {
+        "title": "Artistic Inclinations and Riverside Trails",
+        "start": "Suggested: 9 AM from Benjamin Franklin Parkway",
+        "stops": [
+          {
+            "name": "Philadelphia Museum of Art",
+            "detail": "View world-class collections and the iconic exterior steps overlooking the city's cultural boulevard."
+          },
+          {
+            "name": "Schuylkill River Trail",
+            "detail": "Stroll or cycle along the riverfront to see the historic Boathouse Row and modern skyline vistas."
+          }
+        ],
+        "driving": "Allow 20–30 minutes for transit; conditions vary by Parkway events",
+        "note": "The river trail can be busy with local commuters during weekday mornings."
+      },
+      {
+        "title": "Wooded Escapes and Market Flavors",
+        "start": "Suggested: 9:30 AM from Center City",
+        "stops": [
+          {
+            "name": "Reading Terminal Market",
+            "detail": "Sample local Amish baked goods and diverse international cuisines in one of America's oldest public markets."
+          },
+          {
+            "name": "Wissahickon Valley Park",
+            "detail": "Hike the wooded trails and creek-side paths in this rugged section of the Fairmount Park system."
+          }
+        ],
+        "driving": "Allow 40–50 minutes to reach the trailhead; conditions vary by traffic",
+        "note": "Natural surface trails in the Wissahickon may close temporarily after heavy rain to prevent erosion."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Historic District Congestion",
+        "text": "Parking near Independence National Historical Park is largely restricted to expensive private garages. Use the AutoPark at Independence Mall for central access, though it often fills during summer festival weekends."
+      },
+      {
+        "kind": "signal",
+        "title": "Parkway Connectivity",
+        "text": "Strong 5G coverage exists along the Benjamin Franklin Parkway and Center City. Expect intermittent reception in the deeper ravines of Wissahickon Valley Park near Forbidden Drive."
+      },
+      {
+        "kind": "fuel",
+        "title": "Turnpike Access Points",
+        "text": "Fuel is readily available along the I-95 corridor and near the airport, but scarce within the cobblestoned Old City. Plan to refuel in South Philadelphia or near University City before long regional drives."
+      },
+      {
+        "kind": "timing",
+        "title": "Early Entry Advantages",
+        "text": "The Liberty Bell Center is best visited immediately upon opening to avoid long outdoor security queues. Afternoon visits to museums like the Barnes Foundation are often quieter than morning slots."
+      },
+      {
+        "kind": "access",
+        "title": "Museum Row Connectivity",
+        "text": "The PHLASH downtown loop provides seasonal bus service between major cultural sites. Check the official schedule for winter service suspensions and late-evening availability."
+      }
+    ],
+    "arrival": "Arrive at Philadelphia International Airport (PHL) and take a 20-minute transfer to Center City. Use Reading Terminal Market as a primary supply stop for fresh local goods before checking in.",
+    "vehicle": "A car is unnecessary for the central historic district but helpful for visiting the Laurel Highlands or Wissahickon; check for narrow-street parking restrictions.",
+    "goldenHour": "The Schuylkill Banks Boardwalk for a sunset view of the river and skyscrapers, dependent on seasonal haze.",
+    "sources": [
+      {
+        "label": "Independence National Historical Park",
+        "url": "https://www.nps.gov/inde/index.htm"
+      }
+    ]
+  }
+}

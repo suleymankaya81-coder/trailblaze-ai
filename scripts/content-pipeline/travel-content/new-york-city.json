@@ -1,0 +1,95 @@
+{
+  "slug": "new-york-city",
+  "headline": "Timed Access for Statue of Liberty and Major Landmarks",
+  "reservation": "Access to the Statue of Liberty pedestal and crown requires reservations made months in advance via the official ferry concessionaire. While the city itself is open, specific federal sites like Governors Island have seasonal dates, and popular museums often utilize timed-entry slots. Always verify current entry protocols on the official National Park Service and museum websites to ensure access during peak travel windows.",
+  "source_url": "https://www.nps.gov/stli/planyourvisit/fees.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Manhattan Waterways and Greenways",
+        "start": "Suggested: 8:30 AM from Midtown Manhattan",
+        "stops": [
+          {
+            "name": "Central Park North Woods",
+            "detail": "Explore the rugged, forest-like paths of the Ramble and North Woods to experience the city's designed wilderness."
+          },
+          {
+            "name": "The High Line",
+            "detail": "Walk this elevated linear park built on a historic freight rail line for unique architectural views and Hudson River breezes."
+          }
+        ],
+        "driving": "Allow 45–60 minutes for local transfers; conditions vary by subway density",
+        "note": "Expect higher visitor volumes at the High Line during midday summer peaks."
+      },
+      {
+        "title": "Harbor History and Brooklyn Heights",
+        "start": "Suggested: 9 AM from Battery Park",
+        "stops": [
+          {
+            "name": "Statue of Liberty National Monument",
+            "detail": "Take the official ferry to Liberty Island to view the copper icon and explore the history of Ellis Island."
+          },
+          {
+            "name": "Brooklyn Bridge Park",
+            "detail": "Walk across the historic suspension bridge to explore reconstructed piers featuring pebble beaches and skyline views."
+          }
+        ],
+        "driving": "Allow 30 minutes via NYC Ferry; conditions vary by harbor traffic",
+        "note": "Ferry boarding times vary; arrive early for security screenings at Battery Park."
+      },
+      {
+        "title": "Ecological Retreats and Cultural Halls",
+        "start": "Suggested: 9:30 AM from Upper West Side",
+        "stops": [
+          {
+            "name": "American Museum of Natural History",
+            "detail": "Navigate the vast halls of natural wonders and biodiversity, ideal for avoiding midday heat or rain."
+          },
+          {
+            "name": "Jamaica Bay Wildlife Refuge",
+            "detail": "Visit the salt marshes in Queens for birdwatching along the Atlantic Flyway, a contrast to the urban core."
+          }
+        ],
+        "driving": "Allow 60–90 minutes for the trip to Queens; conditions vary significantly",
+        "note": "Trail conditions in Jamaica Bay may be muddy after spring rain showers."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Urban Garage Logistics",
+        "text": "Street parking in Lower Manhattan and Midtown is extremely limited and subject to strict alternate-side regulations. Most visitors utilize pre-booked commercial garages near major hubs like Penn Station, though availability is not guaranteed."
+      },
+      {
+        "kind": "signal",
+        "title": "High-Rise Interference",
+        "text": "Cellular signals are generally strong throughout the five boroughs, though 'canyon effects' in the Financial District can disrupt GPS accuracy. Public Wi-Fi is available in many larger parks like Bryant Park and Central Park."
+      },
+      {
+        "kind": "fuel",
+        "title": "Outer Borough Stations",
+        "text": "Fuel stations are virtually non-existent in central Manhattan; travelers should refuel in New Jersey or the outer edges of Queens and Brooklyn. Check for actual station locations before returning rentals to LaGuardia or JFK."
+      },
+      {
+        "kind": "timing",
+        "title": "Midweek Advantage",
+        "text": "Visiting iconic sites like the Empire State Building on Tuesday or Wednesday often results in shorter queues than weekends. Early morning starts are suggested for the Brooklyn Bridge pedestrian promenade to avoid peak foot traffic."
+      },
+      {
+        "kind": "access",
+        "title": "Seasonal Island Transit",
+        "text": "Governors Island access is dependent on seasonal ferry schedules, typically expanding in late spring. Always check the official trust website for the latest boarding locations and winter service limitations."
+      }
+    ],
+    "arrival": "Pick up rentals at LaGuardia (LGA) and head to Long Island City for supplies before crossing into Manhattan. Most hotels allow luggage drop-off before the standard afternoon check-in.",
+    "vehicle": "Compact cars are highly recommended for navigating tight city streets; check rental agreements for specific tolls and Manhattan tunnel restrictions.",
+    "goldenHour": "Brooklyn Heights Promenade for a sunset view of the Financial District skyline, subject to seasonal cloud cover.",
+    "sources": [
+      {
+        "label": "National Park Service - Statue of Liberty",
+        "url": "https://www.nps.gov/stli/index.htm"
+      }
+    ]
+  }
+}

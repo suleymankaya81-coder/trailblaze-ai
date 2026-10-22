@@ -1,0 +1,95 @@
+{
+  "slug": "nashville",
+  "headline": "Music Venue Reservations and Park Access",
+  "reservation": "Iconic listening rooms like the Bluebird Cafe and the Grand Ole Opry require specific advance ticketing, often weeks or months ahead. While state parks like Radnor Lake do not charge for entry, parking is strictly limited and monitored. Official reservation systems for tours and shows are managed by individual venues and should be verified at the time of planning.",
+  "source_url": "https://tnstateparks.com/parks/radnor-lake",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Music Row and Skyline Views",
+        "start": "Suggested: 9 AM from Lower Broadway",
+        "stops": [
+          {
+            "name": "Country Music Hall of Fame",
+            "detail": "Examine the evolution of American music through extensive artifact galleries."
+          },
+          {
+            "name": "John Seigenthaler Pedestrian Bridge",
+            "detail": "Walk across the Cumberland River for the city's most photographed skyline vista."
+          }
+        ],
+        "driving": "Mostly walking; allow 20 minutes for local parking if moving between districts.",
+        "note": "Broadway is busiest in the evenings; visit museums early for smaller crowds."
+      },
+      {
+        "title": "Classical Architecture and Quiet Trails",
+        "start": "Suggested: 8:30 AM from Radnor Lake",
+        "stops": [
+          {
+            "name": "Radnor Lake State Park",
+            "detail": "Hike the Lake Trail to spot deer and migratory birds in a protected natural area."
+          },
+          {
+            "name": "The Parthenon at Centennial Park",
+            "detail": "View the full-scale replica of the Greek monument and the statue of Athena."
+          }
+        ],
+        "driving": "Allow 45 minutes for transit between Radnor Lake and Centennial Park due to local traffic.",
+        "note": "Radnor Lake has strict 'no jogging' and 'no pet' rules on specific trails to protect wildlife."
+      },
+      {
+        "title": "Historic Vistas and Scenic Drives",
+        "start": "Suggested: 9:30 AM from Franklin",
+        "stops": [
+          {
+            "name": "Natchez Trace Parkway Bridge",
+            "detail": "Drive across the architectural double-arch bridge for views of the Tennessee valley."
+          },
+          {
+            "name": "Carnton",
+            "detail": "Tour the historic plantation house and grounds to learn about Civil War history."
+          }
+        ],
+        "driving": "Allow 1.5 hours for the loop including the Parkway; conditions vary on two-lane roads.",
+        "note": "Natchez Trace has a lower speed limit; allow more time for scenic stops."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Radnor Lake Capacity",
+        "text": "Parking at Radnor Lake fills extremely quickly on weekends; park rangers manage capacity and may close lots. Downtown garages are expensive, so consider peripheral lots near the Gulch."
+      },
+      {
+        "kind": "signal",
+        "title": "Natchez Trace Connectivity",
+        "text": "Cell service can be intermittent along the Natchez Trace Parkway and within the deeper hollows of Middle Tennessee. Download maps before leaving the city center."
+      },
+      {
+        "kind": "fuel",
+        "title": "Rural Refueling",
+        "text": "Gas stations are frequent in Nashville and Franklin, but sparse directly on the Natchez Trace Parkway. Refuel in Fairview or Franklin before starting the scenic drive."
+      },
+      {
+        "kind": "timing",
+        "title": "Event Congestion",
+        "text": "Check the schedule for Nissan Stadium or Bridgestone Arena; downtown traffic triples during home games or major concerts. Plan arrivals for non-peak commute hours."
+      },
+      {
+        "kind": "access",
+        "title": "State Park Hours",
+        "text": "Tennessee State Parks generally open at 6:00 AM and close at dark. Some trails at Radnor Lake close earlier for wildlife protection; check signs at the trailhead."
+      }
+    ],
+    "arrival": "Pick up car at BNA Airport; drive 15-20 minutes west to downtown Nashville for checking into accommodations and local grocery runs.",
+    "vehicle": "Standard vehicles are suitable for the region; check rental terms if you plan to tow or use unpaved access roads in rural counties.",
+    "goldenHour": "The Natchez Trace Parkway Bridge offers elevated valley views, with light quality changing by season.",
+    "sources": [
+      {
+        "label": "Tennessee State Parks",
+        "url": "https://tnstateparks.com/"
+      }
+    ]
+  }
+}
