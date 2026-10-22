@@ -370,6 +370,7 @@ export type Database = {
       }
       pin_assets: {
         Row: {
+          channel: string
           created_at: string
           feed: string
           image_url: string
@@ -380,6 +381,7 @@ export type Database = {
           updated_at: string
         }
         Insert: {
+          channel?: string
           created_at?: string
           feed: string
           image_url: string
@@ -390,6 +392,7 @@ export type Database = {
           updated_at?: string
         }
         Update: {
+          channel?: string
           created_at?: string
           feed?: string
           image_url?: string

@@ -1,0 +1,2 @@
+ALTER TABLE public.pin_assets ADD COLUMN IF NOT EXISTS channel text NOT NULL DEFAULT 'rss';
+COMMENT ON COLUMN public.pin_assets.channel IS 'rss = auto-published via RSS feeds; csv = uploaded manually via Pinterest bulk CSV, never in RSS';
