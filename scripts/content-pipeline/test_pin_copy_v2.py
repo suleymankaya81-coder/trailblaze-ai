@@ -25,5 +25,13 @@ class CsvScheduleTests(unittest.TestCase):
         self.assertEqual(sum(d.date() == days[0] for d in out.values()), 100)
 
 
+class CsvRerunTests(unittest.TestCase):
+    def test_rerun_fills_gaps_without_overbooking(self):
+        s = datetime.datetime(2026, 10, 30, 15, tzinfo=datetime.timezone.utc)
+        out = rp.csv_schedule(["a", "b"], [], s, [s] * 99)
+        self.assertEqual(out["a"].date(), s.date())
+        self.assertEqual(out["b"].date(), (s + datetime.timedelta(days=1)).date())
+
+
 if __name__ == "__main__":
     unittest.main()
