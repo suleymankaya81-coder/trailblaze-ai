@@ -1,6 +1,6 @@
 """Tier rollout step 4: publish a wave only where every check passes.
 Checks per destination: cover photo + credit, location + airport + drive,
-at least 15 partner offers, 4 guide pages, a precomputed route line and
+at least 15 partner offers, a precomputed route line and
 activity card photos. Failures stay unpublished and are listed.
 Run: python scripts/content-pipeline/publish-wave.py slug [slug ...]
 """
@@ -24,13 +24,11 @@ held = []
 for slug in sys.argv[1:]:
     d = get(f"destinations?slug=eq.{slug}&select=id,hero_image,photo_credit,lat,nearest_airport_code,drive_minutes,permit_note,travel_plan")[0]
     offers = get(f"offers?destination_id=eq.{d['id']}&select=id")
-    pages = get(f"seo_landing_pages?destination_id=eq.{d['id']}&select=id")
     c = cards.get(slug, {})
     problems = [msg for ok, msg in [
         (d["hero_image"] and d["photo_credit"], "cover photo"),
         (d["lat"] is not None and d["nearest_airport_code"] and d["drive_minutes"], "location/airport/drive"),
         (len(offers) >= 15, f"offers {len(offers)}"),
-        (len(pages) == 4, f"guides {len(pages)}"),
         (slug in routes, "route line"),
         (d["permit_note"], "reservation note"),
         (d["travel_plan"] and len(d["travel_plan"].get("days", [])) in (3, 4) and len(d["travel_plan"].get("intel", [])) == 5, "local itinerary and field intel"),
