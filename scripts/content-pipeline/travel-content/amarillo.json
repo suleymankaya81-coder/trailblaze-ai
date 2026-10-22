@@ -1,0 +1,95 @@
+{
+  "slug": "amarillo",
+  "headline": "Regional State Park Day-Use and Group Tour Reservations",
+  "reservation": "While the city itself requires no entry permits, Palo Duro Canyon State Park frequently reaches capacity; day-pass reservations are highly recommended and often necessary for guaranteed entry. Specialized tours for nearby historic sites may require advance booking through official interpretive partners. Check the Texas Parks and Wildlife Department portal for current availability and seasonal closures.",
+  "source_url": "https://tpwd.texas.gov/state-parks/palo-duro-canyon",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Canyons and Public Art",
+        "start": "Suggested: 8 AM from Downtown Amarillo",
+        "stops": [
+          {
+            "name": "Palo Duro Canyon State Park",
+            "detail": "Explore the second-largest canyon in the United States, focusing on the Lighthouse Trail or the scenic park loop drive."
+          },
+          {
+            "name": "Cadillac Ranch",
+            "detail": "Visit the world-famous public art installation featuring ten half-buried cars, located along the historic Route 66 corridor."
+          }
+        ],
+        "driving": "Allow 1 to 2 hours; conditions vary based on park entry lines.",
+        "note": "Wind speeds in the Panhandle can impact high-profile vehicles on open plains."
+      },
+      {
+        "title": "Route 66 and Historic Landmarks",
+        "start": "Suggested: 9 AM from the Route 66 Sixth Street District",
+        "stops": [
+          {
+            "name": "Route 66 Historic District",
+            "detail": "Walk through six blocks of historic buildings including old service stations and local antique galleries."
+          },
+          {
+            "name": "US Route 66-Sixth Street Historic District",
+            "detail": "Examine the architecture of the San Jacinto neighborhood, showcasing the city's growth during the peak of cross-country travel."
+          }
+        ],
+        "driving": "Allow 30 to 60 minutes; local traffic is generally light.",
+        "note": "Most historic sites are best explored on foot within the specific district blocks."
+      },
+      {
+        "title": "Natural History and High Plains Heritage",
+        "start": "Suggested: 8:30 AM from Canyon, Texas",
+        "stops": [
+          {
+            "name": "Panhandle-Plains Historical Museum",
+            "detail": "View extensive exhibits on regional paleontology and the history of the petroleum industry in the Texas Panhandle."
+          },
+          {
+            "name": "Wildcat Bluff Nature Center",
+            "detail": "Traverse rolling hills and shortgrass prairie to observe local bird life and indigenous flora."
+          }
+        ],
+        "driving": "Allow 1 hour; conditions vary near the university campus in Canyon.",
+        "note": "Ensure water supplies are replenished before heading to exposed prairie trails."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Downtown and Park Staging",
+        "text": "Street parking is typically available in the Sixth Street district, while Palo Duro Canyon utilizes designated lots at trailheads. Peak weekend periods may result in overflow at popular canyon overlooks."
+      },
+      {
+        "kind": "signal",
+        "title": "Canyon Connectivity",
+        "text": "Cellular reception is generally reliable in Amarillo but becomes inconsistent at the floor of Palo Duro Canyon. Download maps before departing the city center for rural excursions."
+      },
+      {
+        "kind": "fuel",
+        "title": "Panhandle Supply Points",
+        "text": "Fuel stations are frequent along I-40 and in the town of Canyon. Availability decreases significantly when traveling south toward rural park boundaries."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Canyon Entry",
+        "text": "Early morning arrivals are suggested to avoid midday heat and potential park closures due to capacity. Check official alerts for heat-related trail closures during summer months."
+      },
+      {
+        "kind": "access",
+        "title": "ADA and Trail Limits",
+        "text": "The Visitor Center at Palo Duro offers accessible viewing, though many canyon trails are natural surface and uneven. Cadillac Ranch is located in a dirt field and may be muddy after rain."
+      }
+    ],
+    "arrival": "Pick up your vehicle at AMA airport, drive 15 minutes to downtown Amarillo for supplies, and check into local lodging.",
+    "vehicle": "Standard vehicles are suitable for the city and paved park roads; check rental agreements for off-road restrictions.",
+    "goldenHour": "Palo Duro Canyon Rim at sunset, though shadows deepen quickly in the basin.",
+    "sources": [
+      {
+        "label": "Texas Parks and Wildlife",
+        "url": "https://tpwd.texas.gov/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "mount-shasta",
+  "headline": "Climbing Permits and Seasonal Road Access in High Country",
+  "reservation": "While the town of Mount Shasta requires no entry fee, specialized permits are mandatory for any travel above 10,000 feet on the mountain. Wilderness permits for the day are available at trailheads, but summit passes and specific overnight zones require checking current Forest Service quotas. Access to the Everitt Memorial Highway is seasonally limited by snowpack, and reservations for developed campgrounds often fill months in advance during the short summer window.",
+  "source_url": "https://www.fs.usda.gov/stnf",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Glacial Vistas and High Alpine Slopes",
+        "start": "Suggested: 8:30 AM from Mount Shasta City",
+        "stops": [
+          {
+            "name": "Bunny Flat Trailhead",
+            "detail": "The primary access point for the mountain's southern slopes, offering immediate views of the volcanic peak and the base of the climbing routes."
+          },
+          {
+            "name": "Old Ski Bowl",
+            "detail": "Drive to the highest road-accessible point on the mountain to observe the dramatic timberline ecology and sprawling views of the Trinity Alps."
+          }
+        ],
+        "driving": "Allow 1 hour for mountain road ascent; conditions vary with snowmelt.",
+        "note": "Roads above Bunny Flat typically remain closed until July."
+      },
+      {
+        "title": "Waters of the Sacramento Headwaters",
+        "start": "Suggested: 9 AM from Dunsmuir",
+        "stops": [
+          {
+            "name": "Mount Shasta City Park",
+            "detail": "Visit the Big Springs area where the headwaters of the Sacramento River emerge directly from the volcanic rock."
+          },
+          {
+            "name": "Mossbrae Falls",
+            "detail": "Observe the unique spring-fed waterfalls cascading down the canyon walls near the Sacramento River corridor."
+          }
+        ],
+        "driving": "Allow 45 minutes for local transit; pedestrian access to falls involves specific railway safety considerations.",
+        "note": "Check local signage regarding private property boundaries near the river."
+      },
+      {
+        "title": "Basalt Basins and McCloud Waterfalls",
+        "start": "Suggested: 9:30 AM from McCloud",
+        "stops": [
+          {
+            "name": "Middle McCloud Falls",
+            "detail": "The largest of the three waterfalls on the McCloud River, featuring a wide curtain of water over a basalt ledge."
+          },
+          {
+            "name": "Lake Siskiyou",
+            "detail": "A lower-elevation reservoir providing a mirrored reflection of the mountain's western face."
+          }
+        ],
+        "driving": "Allow 1.5 hours for the loop between McCloud and the lake; conditions vary.",
+        "note": "Parking at McCloud Falls is highly limited during summer weekends."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "Summit Regulations",
+        "text": "Self-issue permits are found at the Mount Shasta Ranger Station for those venturing into the wilderness. Always verify current volcanic activity monitoring via USGS."
+      },
+      {
+        "kind": "fuel",
+        "title": "Highway Service",
+        "text": "Refuel in Mount Shasta City or Weed before heading up the Everitt Memorial Highway. There are no services available once you begin the ascent into the National Forest."
+      },
+      {
+        "kind": "parking",
+        "title": "Trailhead Capacity",
+        "text": "Bunny Flat serves as the main hub and often reaches capacity early in the morning. Have a secondary plan for lower elevation trails like Castle Lake if lots are full."
+      },
+      {
+        "kind": "signal",
+        "title": "Canyon Connectivity",
+        "text": "Expect total signal loss in the McCloud River canyon and high on the mountain slopes. Download offline navigation for the Shasta-Trinity National Forest area."
+      },
+      {
+        "kind": "timing",
+        "title": "Snowmelt Windows",
+        "text": "High altitude trails may remain under snow until late August. Check the local avalanche center or ranger station for current melt-off status."
+      }
+    ],
+    "arrival": "Collect your vehicle at Redding (RDD) and stock up on supplies in Redding or the town of Mount Shasta before checking into local inns or mountain lodges.",
+    "vehicle": "A standard vehicle is fine for the main highway, but high-clearance is advised for unpaved forest service roads; check rental contracts for off-pavement restrictions.",
+    "goldenHour": "Sunset from the shores of Lake Siskiyou, where the alpenglow hits the peak; timing varies significantly by month.",
+    "sources": [
+      {
+        "label": "Shasta-Trinity National Forest",
+        "url": "https://www.fs.usda.gov/stnf"
+      }
+    ]
+  }
+}
