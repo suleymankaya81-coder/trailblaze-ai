@@ -178,7 +178,7 @@ def render(item):
     bf = font("Fraunces", 42, 600, 72)
     d.text((PAD, y_rule + 48), "minialife.com", font=bf, fill=OFF, anchor="lm")
     cf = font("Inter", 30, 600)
-    d.text((W - PAD, y_rule + 48), "Free route map →", font=cf, fill=SAGE, anchor="rm")
+    d.text((W - PAD, y_rule + 48), CTA[item["kind"]], font=cf, fill=SAGE, anchor="rm")
     if item.get("credit"):
         crf = font("Inter", 17, 400)
         ct = item["credit"]
