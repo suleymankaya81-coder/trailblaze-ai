@@ -48,6 +48,7 @@ def main():
     for key, items in out.items():
         json.dump({"key": key, "reviewed": today, "items": items}, open(os.path.join(OUT, f"{key}.json"), "w"), separators=(",", ":"))
         print(key, len(items))
+    json.dump({"reviewed": today, "counts": {k: len(v) for k, v in out.items()}}, open(os.path.join(OUT, "counts.json"), "w"), indent=1)
 
 if __name__ == "__main__":
     main()
