@@ -284,7 +284,7 @@ export function GearShopPage() {
                   </>
                 );
                 return g.to ? (
-                  <Link key={g.t} to={g.to} className="block overflow-hidden rounded-xl bg-card hover:shadow-lift">{body}</a>
+                  <Link key={g.t} to={g.to} className="block overflow-hidden rounded-xl bg-card hover:shadow-lift">{body}</Link>
                 ) : (
                   <div key={g.t} className="overflow-hidden rounded-xl bg-card opacity-90">{body}</div>
                 );
