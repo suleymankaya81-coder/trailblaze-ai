@@ -301,15 +301,18 @@ def upload(item):
     return f"{URL}/storage/v1{s.json()['signedURL']}"
 
 
-def csv_schedule(keys, rss_dates, start):
-    """CSV pins go out only on days with no RSS release, at most CSV_DAILY per day."""
+def csv_schedule(keys, rss_dates, start, existing_csv=()):
+    """CSV pins go out only on days with no RSS release, at most CSV_DAILY per day
+    including CSV pins already scheduled that day."""
+    from collections import Counter
     busy = {d.date() for d in rss_dates}
-    day, used, out = start.date(), 0, {}
+    used = Counter(d.date() for d in existing_csv)
+    day, out = start.date(), {}
     for k in keys:
-        while day in busy or used >= CSV_DAILY:
-            day += datetime.timedelta(days=1); used = 0
+        while day in busy or used[day] >= CSV_DAILY:
+            day += datetime.timedelta(days=1)
         out[k] = datetime.datetime.combine(day, datetime.time(15), datetime.timezone.utc)  # 15:00 UTC = US morning
-        used += 1
+        used[day] += 1
     return out
 
 
@@ -371,8 +374,8 @@ def main():
     release = release_schedule(rss_items, start, existing)
     csv_assigned = json.loads(q("select coalesce(json_object_agg(key,release_at),'{}') from pin_assets where channel='csv'"))
     csv_todo = sorted((it for it in todo if it["channel"] == "csv"), key=lambda x: (x["kind"] == "rv_camping", -x["score"], x["key"]))
-    last_csv = max([datetime.datetime.fromisoformat(v.replace("Z", "+00:00")) for v in csv_assigned.values()], default=start)
-    release.update(csv_schedule([it["key"] for it in csv_todo], release.values(), max(start, last_csv)))
+    csv_dates = [datetime.datetime.fromisoformat(v.replace("Z", "+00:00")) for v in csv_assigned.values()]
+    release.update(csv_schedule([it["key"] for it in csv_todo], release.values(), start, csv_dates))
 
     def work(it):
         try:
