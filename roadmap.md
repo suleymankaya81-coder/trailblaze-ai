@@ -66,3 +66,8 @@
 - [x] Record confirmed direct affiliate parameters and review the supplied API licence conditions and sandbox/production status.
 - [ ] Securely connect and verify production API access; blocked until the owner completes Viator contact details and creates a production key. The first connector approval was cancelled before execution; no connection was created.
 - [ ] Replace generic activity recommendations with provider-sourced listings after access verification; comply with Viator content indexing and own-domain restrictions.
+
+## Grand Circle corridor partnerships
+- [ ] Add compact flight, Motorhome Republic, EconomyBookings and Airalo booking links below the map.
+- [ ] Add real Viator experiences only after production access verification; never invent listings or show sandbox inventory.
+- [ ] Verify partner destinations and desktop/mobile presentation; keep the corridor pilot unpublished and noindex.
