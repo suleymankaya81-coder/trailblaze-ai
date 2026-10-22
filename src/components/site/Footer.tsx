@@ -1,15 +1,31 @@
 import { Link } from "@tanstack/react-router";
 import logoStacked from "@/assets/logos/minialife-stacked-mixedcase-trimmed.png";
 
-const footerLinks = [
-  { to: "/road-trips", label: "Road Trip Loops" },
-  { to: "/gear", label: "Gear Shop" },
-  { to: "/gear/7-bikepacking-essentials", label: "Bikepacking Gear" },
-  { to: "/about", label: "About" },
-  { to: "/contact", label: "Contact" },
-  { to: "/affiliate-disclosure", label: "Affiliate Disclosure" },
-  { to: "/privacy", label: "Privacy Policy" },
-  { to: "/terms", label: "Terms of Use" },
+const groups = [
+  { title: "Road Trips", links: [
+    { to: "/road-trips", label: "Road Trip Loops" },
+    { to: "/corridors", label: "Gateway Road Trips" },
+    { to: "/destinations", label: "All Destinations" },
+  ] },
+  { title: "Trip Guides", links: [
+    { to: "/trip-guides", label: "All Trip Guides" },
+    { to: "/fly-and-drive", label: "Fly & Drive" },
+    { to: "/rv-camping", label: "RV & Camping" },
+    { to: "/no-reservation", label: "No Reservation" },
+  ] },
+  { title: "Trip Essentials", links: [
+    { to: "/gear", label: "Gear Shop" },
+    { to: "/gear/7-bikepacking-essentials", label: "Bikepacking Essentials" },
+    { to: "/gear/best-cycling-accessories", label: "Cycling Accessories" },
+    { to: "/gear/bike-repair-kit-essentials", label: "Bike Repair Kit" },
+  ] },
+  { title: "MiniaLife", links: [
+    { to: "/about", label: "About" },
+    { to: "/contact", label: "Contact" },
+    { to: "/affiliate-disclosure", label: "Affiliate Disclosure" },
+    { to: "/privacy", label: "Privacy Policy" },
+    { to: "/terms", label: "Terms of Use" },
+  ] },
 ] as const;
 
 export function Footer() {
@@ -32,11 +48,18 @@ export function Footer() {
           </p>
         </div>
 
-        <nav className="mt-10 flex flex-wrap gap-x-6 gap-y-2 border-t border-border pt-6 text-sm text-foreground/80">
-          {footerLinks.map((link) => (
-            <Link key={link.to} to={link.to} className="hover:text-forest hover:underline">
-              {link.label}
-            </Link>
+        <nav className="mt-10 grid grid-cols-2 gap-8 border-t border-border pt-8 text-sm md:grid-cols-4">
+          {groups.map((g) => (
+            <div key={g.title}>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">{g.title}</p>
+              <ul className="mt-3 space-y-2">
+                {g.links.map((link) => (
+                  <li key={link.to}>
+                    <Link to={link.to} className="text-foreground/80 hover:text-forest hover:underline">{link.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
         </nav>
 
