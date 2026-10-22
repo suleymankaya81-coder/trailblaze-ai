@@ -12,7 +12,9 @@ import requests
 from PIL import Image, ImageDraw, ImageFont, ImageStat
 from pin_schedule import release_schedule
 
-VERSION = 1
+# v1 = approved 2026-10-16 batch (never re-rendered). v2 = "Design the Exit" copy:
+# intent-first kicker, concrete next step (days, airport, drive, booking) on the card.
+VERSION = 2
 W, H, PAD = 1000, 1500, 64
 FONTS = "/tmp/pins/fonts"
 OUT = "/tmp/pins/out"
@@ -23,11 +25,21 @@ FOREST, SAGE, OFF, SAND = (29, 59, 43), (185, 207, 189), (251, 250, 246), (232, 
 CACHE = "/tmp/pins/photo-cache"
 PHOTO_LOCKS = {}
 PHOTO_LOCK_GUARD = threading.Lock()
+BASE = "https://minialife.com"
+CSV_DIR = "/mnt/documents/pinterest"
+CSV_DAILY = 100  # manual uploads: half the RSS allowance, on days RSS is idle
 
-KICKER = {"destination": "ROAD TRIP GUIDE", "best_time": "BEST TIME TO VISIT", "things_to_do": "THINGS TO DO",
-          "glamping": "GLAMPING & RV STAYS", "trip_planner": "ITINERARY"}
+KICKER = {"destination": "ROAD TRIP PLAN", "best_time": "WHEN TO GO", "things_to_do": "WHAT TO DO THERE",
+          "glamping": "WHERE TO SLEEP", "trip_planner": "DAY-BY-DAY PLAN",
+          "loop": "MULTI-PARK ROAD TRIP", "rv_camping": "RV & CAMPING TRIP", "corridor": "GATEWAY ROAD TRIP"}
+CTA = {"destination": "Get the route →", "best_time": "Pick your dates →", "things_to_do": "Plan your days →",
+       "glamping": "Find your stay →", "trip_planner": "Get the plan →", "loop": "Get the loop map →",
+       "rv_camping": "Plan the RV trip →", "corridor": "Get the route →"}
 FEED = {"destination": "parks", "trip_planner": "parks", "best_time": "best-time",
-        "things_to_do": "things-to-do", "glamping": "rv"}
+        "things_to_do": "things-to-do", "glamping": "rv", "loop": "road-trips", "rv_camping": "rv-camping",
+        "corridor": "road-trips"}
+CSV_KINDS = {"loop", "rv_camping", "corridor"}
+BOARD = {"road-trips": "US Road Trip Routes", "rv-camping": "RV Camping Trips USA"}
 
 
 def q(sql):
