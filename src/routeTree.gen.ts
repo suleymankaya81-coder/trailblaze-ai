@@ -17,6 +17,7 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as SearchRouteImport } from './routes/search'
 import { Route as TermsRouteImport } from './routes/terms'
+import { Route as CorridorsSlugRouteImport } from './routes/corridors.$slug'
 import { Route as DestinationsIndexRouteImport } from './routes/destinations.index'
 import { Route as DestinationsSlugRouteImport } from './routes/destinations.$slug'
 import { Route as FlyAndDriveSlugRouteImport } from './routes/fly-and-drive.$slug'
@@ -68,6 +69,11 @@ const SearchRoute = SearchRouteImport.update({
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
   path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CorridorsSlugRoute = CorridorsSlugRouteImport.update({
+  id: '/corridors/$slug',
+  path: '/corridors/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DestinationsIndexRoute = DestinationsIndexRouteImport.update({
@@ -143,6 +149,7 @@ export interface FileRoutesByFullPath {
   '/privacy': typeof PrivacyRoute
   '/search': typeof SearchRoute
   '/terms': typeof TermsRoute
+  '/corridors/$slug': typeof CorridorsSlugRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
   '/gear/7-bikepacking-essentials': typeof Gear7BikepackingEssentialsRoute
@@ -165,6 +172,7 @@ export interface FileRoutesByTo {
   '/privacy': typeof PrivacyRoute
   '/search': typeof SearchRoute
   '/terms': typeof TermsRoute
+  '/corridors/$slug': typeof CorridorsSlugRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
   '/gear/7-bikepacking-essentials': typeof Gear7BikepackingEssentialsRoute
@@ -188,6 +196,7 @@ export interface FileRoutesById {
   '/privacy': typeof PrivacyRoute
   '/search': typeof SearchRoute
   '/terms': typeof TermsRoute
+  '/corridors/$slug': typeof CorridorsSlugRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
   '/gear/7-bikepacking-essentials': typeof Gear7BikepackingEssentialsRoute
@@ -212,6 +221,7 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/search'
     | '/terms'
+    | '/corridors/$slug'
     | '/destinations/$slug'
     | '/fly-and-drive/$slug'
     | '/gear/7-bikepacking-essentials'
@@ -234,6 +244,7 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/search'
     | '/terms'
+    | '/corridors/$slug'
     | '/destinations/$slug'
     | '/fly-and-drive/$slug'
     | '/gear/7-bikepacking-essentials'
@@ -256,6 +267,7 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/search'
     | '/terms'
+    | '/corridors/$slug'
     | '/destinations/$slug'
     | '/fly-and-drive/$slug'
     | '/gear/7-bikepacking-essentials'
@@ -279,6 +291,7 @@ export interface RootRouteChildren {
   PrivacyRoute: typeof PrivacyRoute
   SearchRoute: typeof SearchRoute
   TermsRoute: typeof TermsRoute
+  CorridorsSlugRoute: typeof CorridorsSlugRoute
   DestinationsSlugRoute: typeof DestinationsSlugRoute
   FlyAndDriveSlugRoute: typeof FlyAndDriveSlugRoute
   Gear7BikepackingEssentialsRoute: typeof Gear7BikepackingEssentialsRoute
@@ -349,6 +362,13 @@ declare module '@tanstack/react-router' {
       path: '/terms'
       fullPath: '/terms'
       preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/corridors/$slug': {
+      id: '/corridors/$slug'
+      path: '/corridors/$slug'
+      fullPath: '/corridors/$slug'
+      preLoaderRoute: typeof CorridorsSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/destinations/': {
@@ -447,6 +467,7 @@ const rootRouteChildren: RootRouteChildren = {
   PrivacyRoute: PrivacyRoute,
   SearchRoute: SearchRoute,
   TermsRoute: TermsRoute,
+  CorridorsSlugRoute: CorridorsSlugRoute,
   DestinationsSlugRoute: DestinationsSlugRoute,
   FlyAndDriveSlugRoute: FlyAndDriveSlugRoute,
   Gear7BikepackingEssentialsRoute: Gear7BikepackingEssentialsRoute,
