@@ -62,6 +62,19 @@ WIKI_ANCHORS = {
     "sandhills": "Valentine, Nebraska",
     "tallgrass-prairie": "Tallgrass Prairie National Preserve",
     "white-mountains-maine": "Bethel, Maine",
+    # New-destination wave 1 (gateway cities)
+    "san-francisco": "San Francisco",
+    "los-angeles": "Los Angeles",
+    "miami": "Miami",
+    "orlando": "Orlando, Florida",
+    "denver": "Denver",
+    "boston": "Boston",
+    "honolulu": "Honolulu",
+    "phoenix": "Phoenix, Arizona",
+    "tucson": "Tucson, Arizona",
+    "salt-lake-city": "Salt Lake City",
+    "portland-oregon": "Portland, Oregon",
+    "williams-arizona": "Williams, Arizona",
 }
 # Fallback anchor coordinates when Wikipedia/OSM lookups return nothing (town or visitor center).
 COORDS = {
@@ -79,6 +92,19 @@ SEARCH_TERMS = {
     "maah-daah-hey-trail": ["Maah Daah Hey Trail", "Little Missouri National Grassland", "Little Missouri River North Dakota", "Medora North Dakota badlands"],
     "chequamegon-nicolet-national-forest": ["Chequamegon National Forest", "Nicolet National Forest", "Chequamegon-Nicolet National Forest", "Park Falls Wisconsin"],
     "blue-ridge-foothills": ["Dahlonega Georgia", "Blue Ridge Mountains Georgia", "Amicalola", "Lumpkin County Georgia"],
+    # New-destination wave 1: gateway cities show the nature they open to.
+    "san-francisco": ["Golden Gate Bridge Marin Headlands", "Muir Woods redwoods", "Lands End San Francisco", "Point Reyes coast"],
+    "los-angeles": ["Griffith Observatory Los Angeles hills", "Malibu coast", "Santa Monica Mountains", "El Matador State Beach"],
+    "miami": ["Miami Beach South Beach", "Everglades National Park Anhinga Trail", "Biscayne National Park", "Key Biscayne beach"],
+    "orlando": ["Kennedy Space Center Visitor Complex", "Wekiwa Springs", "Blue Spring State Park Florida", "Lake Eola Park"],
+    "denver": ["Red Rocks Amphitheatre", "Denver skyline Rocky Mountains", "Mount Evans road", "Garden of the Gods"],
+    "boston": ["Boston Public Garden", "Boston Harbor skyline", "Cape Cod National Seashore", "Freedom Trail Boston"],
+    "honolulu": ["Diamond Head Waikiki", "Hanauma Bay", "Makapuu Point Lighthouse", "Waikiki Beach"],
+    "phoenix": ["Camelback Mountain Phoenix", "South Mountain Park Phoenix", "Sonoran Desert saguaro Phoenix", "Papago Park"],
+    "tucson": ["Saguaro National Park", "Sabino Canyon", "Mount Lemmon Catalina Highway", "Mission San Xavier del Bac"],
+    "salt-lake-city": ["Salt Lake City Wasatch", "Antelope Island State Park", "Big Cottonwood Canyon", "Great Salt Lake"],
+    "portland-oregon": ["Portland Oregon Mount Hood skyline", "Multnomah Falls", "Columbia River Gorge Crown Point", "Forest Park Portland Oregon"],
+    "williams-arizona": ["Route 66 Williams Arizona", "Grand Canyon Railway", "Grand Canyon South Rim Mather Point", "Kaibab National Forest"],
 }
 
 
