@@ -108,13 +108,13 @@ const planBuilderCards = TRIP_TAG_OPTIONS.map((t, i) => ({
   icon: [Tent, Truck, Sparkles, Users, Mountain, Sun][i] ?? Tent,
 }));
 
-const stayTypes: { name: string; category: ServicePhotoCategory }[] = [
-  { name: "Campgrounds", category: "tent" },
-  { name: "Glamping", category: "glamping" },
-  { name: "RV Parks", category: "rvpark" },
-  { name: "Tiny Houses", category: "tinyhouse" },
-  { name: "Cabins", category: "cabin" },
-  { name: "Lodges", category: "hotel" },
+const stayTypes: { name: string; category: ServicePhotoCategory; tag: string }[] = [
+  { name: "Campgrounds", category: "tent", tag: "family" },
+  { name: "Glamping", category: "glamping", tag: "glamping" },
+  { name: "RV Parks", category: "rvpark", tag: "rv_road_trip" },
+  { name: "Tiny Houses", category: "tinyhouse", tag: "weekend" },
+  { name: "Cabins", category: "cabin", tag: "mountain" },
+  { name: "Lodges", category: "hotel", tag: "national_park" },
 ];
 
 const planIncludes = [
@@ -491,8 +491,9 @@ function HomePage() {
               if (!photo) return null;
               return (
               <figure key={s.name}>
-              <a
-                href="#destinations"
+              <Link
+                to="/destinations"
+                search={{ tag: s.tag } as never}
                 className="group relative block aspect-[4/5] overflow-hidden rounded-lg"
               >
                 <img
@@ -505,7 +506,7 @@ function HomePage() {
                 <h3 className="absolute bottom-4 left-4 right-4 text-base font-bold text-off-white md:text-lg">
                   {s.name}
                 </h3>
-              </a>
+              </Link>
               <figcaption className="mt-2 text-[10px] text-muted-foreground">Illustrative · <a href={photo.source} target="_blank" rel="noopener noreferrer" className="underline">{photo.credit} · {photo.license}</a></figcaption>
               </figure>
             );})}

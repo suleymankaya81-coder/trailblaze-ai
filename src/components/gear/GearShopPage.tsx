@@ -71,7 +71,6 @@ const guides = [
   { img: guideBike, t: "7 Bikepacking Essentials", s: "Must-have gear for your next adventure.", to: "/gear/7-bikepacking-essentials" },
   { img: actCycling, t: "Best Cycling Accessories", s: "Upgrade your ride, go further.", to: "/gear/best-cycling-accessories" },
   { img: actRepair, t: "Bike Repair Kit Essentials", s: "Be prepared on any trail.", to: "/gear/bike-repair-kit-essentials" },
-  { img: spotlightNight, t: "Night Vision Binoculars Guide", s: "Coming soon", to: undefined as string | undefined },
 ];
 
 function SectionHead({ title, link }: { title: string; link?: { label: string; href: string } }) {
@@ -256,15 +255,12 @@ export function GearShopPage() {
         </section>
 
         {/* Buying Guides */}
-        <section className="bg-forest py-14 text-off-white">
+        <section id="guides" className="bg-forest py-14 text-off-white">
           <div className="container-page">
             <div className="flex items-end justify-between gap-4">
-              <h2 className="text-2xl text-off-white md:text-3xl">Buying Guides</h2>
-              <span className="hidden items-center gap-1 text-xs font-semibold text-off-white/80 sm:inline-flex">
-                View all guides <ArrowRight className="h-3.5 w-3.5" />
-              </span>
+              <h2 className="text-2xl text-off-white md:text-3xl">Trip Packing &amp; Gear Guides</h2>
             </div>
-            <div className="mt-8 gear-carousel md:!grid md:!grid-flow-row md:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-8 gear-carousel md:!grid md:!grid-flow-row md:grid-cols-3">
               {guides.map((g) => {
                 const body = (
                   <>
