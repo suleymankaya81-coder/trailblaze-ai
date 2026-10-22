@@ -6,7 +6,7 @@ import logoStacked from "@/assets/logos/minialife-stacked-mixedcase-trimmed.png"
 const NAV = [
   { to: "/destinations", params: undefined, label: "Destinations" },
   { to: "/road-trips", params: undefined, label: "Road Trips" },
-  { to: "/corridors/$slug", params: { slug: "grand-circle-from-las-vegas" }, label: "Grand Circle" },
+  { to: "/corridors", params: undefined, label: "Gateway Road Trips" },
   { to: "/gear", params: undefined, label: "Gear Shop" },
   { to: "/about", params: undefined, label: "About" },
 ] as const;

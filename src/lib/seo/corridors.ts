@@ -39,7 +39,7 @@ export const CORRIDORS: Corridor[] = [
       { q: "Do I need to return the rental car to Las Vegas?", a: "Driving the loop back to Las Vegas lets you return the car at the same airport, which usually avoids one-way drop fees." },
       { q: "Which months are best for overseas visitors?", a: "April–May and September–October bring milder temperatures. Summer is very hot in the desert sections, and winter can close roads or bring snow at Bryce Canyon and the Grand Canyon's higher rims." },
     ],
-    pilot: true,
+    pilot: false,
   },
 ];
 
