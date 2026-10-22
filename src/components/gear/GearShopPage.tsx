@@ -142,7 +142,7 @@ export function GearShopPage() {
                 href.startsWith("#") ? (
                   <a key={key} href={href} className="group block overflow-hidden rounded-xl border border-border bg-card shadow-soft hover:shadow-lift">{body}</a>
                 ) : (
-                  <Link key={key} to={href} className="group block overflow-hidden rounded-xl border border-border bg-card shadow-soft hover:shadow-lift">{body}</Link>
+                  <a key={key} href={href} className="group block overflow-hidden rounded-xl border border-border bg-card shadow-soft hover:shadow-lift">{body}</a>
                 )
               ) : (
                 <div key={key} className="overflow-hidden rounded-xl border border-border bg-card shadow-soft">{body}</div>
@@ -284,7 +284,7 @@ export function GearShopPage() {
                   </>
                 );
                 return g.to ? (
-                  <Link key={g.t} to={g.to} className="block overflow-hidden rounded-xl bg-card hover:shadow-lift">{body}</Link>
+                  <Link key={g.t} to={g.to} className="block overflow-hidden rounded-xl bg-card hover:shadow-lift">{body}</a>
                 ) : (
                   <div key={g.t} className="overflow-hidden rounded-xl bg-card opacity-90">{body}</div>
                 );

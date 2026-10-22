@@ -6,7 +6,7 @@ import { toAbsoluteImageUrl } from "./imageCredit";
 import { flyDriveSlug } from "./flyDrive";
 import { LOOPS, isNoReservationEligible, isRvEligible } from "./guides";
 
-const STATIC_PATHS = ["/", "/destinations", "/about", "/contact", "/privacy", "/terms", "/affiliate-disclosure", "/road-trips", "/gear", "/gear/7-bikepacking-essentials", "/gear/best-cycling-accessories", "/gear/bike-repair-kit-essentials"];
+const STATIC_PATHS = ["/", "/destinations", "/about", "/contact", "/privacy", "/terms", "/affiliate-disclosure", "/road-trips", "/gear", "/gear/7-bikepacking-essentials", "/gear/best-cycling-accessories", "/gear/bike-repair-kit-essentials", ...["camping", "hiking", "cycling", "lights", "apparel", "eyewear", "bags"].map((k) => `/gear/category/${k}`)];
 const BASE_URL = "https://minialife.com";
 const GUIDE_TYPES = ["best-time-to-visit", "things-to-do", "itinerary", "glamping"] as const;
 
