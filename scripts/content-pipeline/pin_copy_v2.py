@@ -49,6 +49,10 @@ def card(kind, d, extra=None):
         return (f"{dur} plan, stop by stop" if dur else "Day-by-day plan", join(arr, booking))
     if kind == "rv_camping":
         return ("Where to park the RV & what to book", join(arr, booking))
+    if kind == "fly_drive":
+        return ("Flights, rental car & first night sorted", arr or (season and f"Best: {season}") or "")
+    if kind == "no_reservation":
+        return ("Entry rules, workarounds & backup stops", join(booking, season and f"Best: {season}"))
     if kind in ("loop", "corridor"):
         e = extra or {}
         return (f"{e['stops']} stops · about {e['days']} days", e.get("info") or "One free map with every stop")
@@ -59,7 +63,14 @@ def csv_title(kind, name, extra=None):
     e = extra or {}
     t = {"loop": f"{name}: {e.get('stops')} Stops in About {e.get('days')} Days",
          "corridor": f"{name}: Fly In, Drive the Loop, Fly Home",
-         "rv_camping": f"{name} RV Trip: Where to Camp & What to Book"}[kind]
+         "rv_camping": f"{name} RV Trip: Where to Camp & What to Book",
+         "fly_drive": f"Fly into {e.get('airport') or 'the Area'}, Drive to {name}: Trip Plan",
+         "no_reservation": f"No Reservation for {name}? Entry Rules & Backup Plans",
+         "destination": f"{name} Road Trip: Route Map, Stops & Drive Times",
+         "best_time": f"Best Time to Visit {name}: Weather, Crowds & Permits",
+         "things_to_do": f"Best Things to Do in {name}: Hikes & Scenic Drives",
+         "glamping": f"Where to Stay Near {name}: Glamping, Cabins & RV Sites",
+         "trip_planner": f"{name} Itinerary: A Day-by-Day Road Trip Plan"}[kind]
     return t[:100]
 
 
@@ -68,7 +79,16 @@ def csv_description(kind, name, sub, info, extra=None):
     if kind in ("loop", "corridor"):
         lead = f"Turn \"some day\" into a real plan: {e.get('stop_names', '')}."
         body = f"{sub}. {info}. Open the free route map, pick your days and get back to the road."
-    else:
+    elif kind == "rv_camping":
         lead = f"Taking the RV to {name}? Here's the short version so you can stop scrolling and start packing."
         body = f"{sub}. {info}. Campgrounds, hookups and booking timing in one free guide."
+    elif kind == "fly_drive":
+        lead = f"Fly in, pick up the car and be at {name} before lunch."
+        body = f"{sub}. {info}. Airport, drive time, rental and first-night tips in one free guide."
+    elif kind == "no_reservation":
+        lead = f"Couldn't get a reservation for {name}? You still have options."
+        body = f"{sub}. {info}. Entry windows, backup stops and official sources in one free guide."
+    else:
+        lead = f"Planning a trip to {name}? Start here."
+        body = f"{sub}. {info}. Free guide with maps, drive times and booking tips."
     return re.sub(r"\s+", " ", f"{lead} {body}").replace(". .", ".")[:500]

@@ -32,15 +32,20 @@ CSV_DAILY = 100  # manual uploads: half the RSS allowance, on days RSS is idle
 
 KICKER = {"destination": "ROAD TRIP PLAN", "best_time": "WHEN TO GO", "things_to_do": "WHAT TO DO THERE",
           "glamping": "WHERE TO SLEEP", "trip_planner": "DAY-BY-DAY PLAN",
-          "loop": "MULTI-PARK ROAD TRIP", "rv_camping": "RV & CAMPING TRIP", "corridor": "GATEWAY ROAD TRIP"}
+          "loop": "MULTI-PARK ROAD TRIP", "rv_camping": "RV & CAMPING TRIP", "corridor": "GATEWAY ROAD TRIP",
+          "fly_drive": "FLY & DRIVE PLAN", "no_reservation": "NO RESERVATION?"}
 CTA = {"destination": "Get the route →", "best_time": "Pick your dates →", "things_to_do": "Plan your days →",
        "glamping": "Find your stay →", "trip_planner": "Get the plan →", "loop": "Get the loop map →",
-       "rv_camping": "Plan the RV trip →", "corridor": "Get the route →"}
+       "rv_camping": "Plan the RV trip →", "corridor": "Get the route →",
+       "fly_drive": "Plan the route →", "no_reservation": "See backup plans →"}
 FEED = {"destination": "parks", "trip_planner": "parks", "best_time": "best-time",
         "things_to_do": "things-to-do", "glamping": "rv", "loop": "road-trips", "rv_camping": "rv-camping",
-        "corridor": "road-trips"}
-CSV_KINDS = {"loop", "rv_camping", "corridor"}
-BOARD = {"road-trips": "US Road Trip Routes", "rv-camping": "RV Camping Trips USA"}
+        "corridor": "road-trips", "fly_drive": "road-trips", "no_reservation": "parks"}
+CSV_KINDS = {"loop", "rv_camping", "corridor", "fly_drive", "no_reservation"}
+# Boards the owner created on Pinterest; RSS feeds and CSV files both target these names.
+BOARD = {"parks": "National Parks & Scenic Drives", "best-time": "Best Time to Visit",
+         "things-to-do": "Things to Do Outdoors", "rv": "Campervan & RV Road Trips",
+         "road-trips": "US Road Trip Routes", "rv-camping": "RV Camping Trips USA"}
 
 
 def q(sql):
@@ -235,10 +240,24 @@ def alt_photo(d, i=0):
     return d["hero_image"], parse_credit(d.get("photo_credit"))
 
 
+def slugify(s):
+    import unicodedata
+    s = "".join(c for c in unicodedata.normalize("NFKD", s.lower()) if not unicodedata.combining(c))
+    return re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+
+
+def airport_city(airport_name):
+    """Port of airportCity() in src/lib/seo/flyDrive.ts; keep both in sync."""
+    m = re.search(r"\(([^)]+)\)", airport_name)
+    words = re.split(r"[\s–-]+", airport_name)
+    base = m.group(1) if m else (f"{words[0]} {words[1] if len(words) > 1 else ''}" if words[0].endswith(".") else words[0])
+    return slugify(base)
+
+
 def items():
     dests = json.loads(q("""select coalesce(json_agg(d),'[]') from (select slug, name, best_season,
       recommended_duration as dur, hero_image, photo_credit, scenic_score, gallery, camping_score,
-      nearest_airport_code as airport, nearest_airport_name, drive_minutes, permit_level
+      nearest_airport_code as airport, nearest_airport_name, drive_minutes, permit_level, permit_note
       from destinations where status='published' and hero_image like 'https://%') d"""))
     by = {d["slug"]: d for d in dests}
     pages = json.loads(q("""select coalesce(json_agg(x),'[]') from (select d.slug, p.path, p.page_type::text as kind,
@@ -270,6 +289,17 @@ def items():
         if (d.get("camping_score") or 0) >= 7 and d.get("airport") and d.get("nearest_airport_name") and d.get("drive_minutes") is not None:
             img, cr = alt_photo(d, 0)
             add(f"rv:{d['slug']}", "rv_camping", d["name"], d, img, cr, f"{BASE}/rv-camping/{d['slug']}")
+    # Fly & drive guides: same eligibility as flyDriveSlug() in src/lib/seo/flyDrive.ts.
+    for d in dests:
+        if d.get("airport") and d.get("nearest_airport_name") and d.get("drive_minutes") is not None:
+            fd = f"{airport_city(d['nearest_airport_name'])}-{d['airport'].lower()}-{d['slug']}"
+            add(f"fd:{d['slug']}", "fly_drive", d["name"], d, d["hero_image"], parse_credit(d["photo_credit"]),
+                f"{BASE}/fly-and-drive/{fd}", {"airport": d["airport"]})
+    # No-reservation guides: same eligibility as isNoReservationEligible() in src/lib/seo/guides.ts.
+    for d in dests:
+        if d.get("permit_level") in ("high", "moderate") and d.get("permit_note"):
+            add(f"nr:{d['slug']}", "no_reservation", d["name"], d, d["hero_image"], parse_credit(d["photo_credit"]),
+                f"{BASE}/no-reservation/{d['slug']}")
     # Multi-park loops and gateway corridors.
     routes = [("loop", l["slug"], re.sub(r"\s+Road Trip Loop$|\s+Loop$", "", l["title"]), l["stops"], f"/road-trips/{l['slug']}")
               for l in json.load(open(os.path.join(os.path.dirname(__file__), "../../src/data/loops.json")))]
@@ -339,6 +369,8 @@ def write_csv(all_items):
                 title = pin_copy_v2.csv_title(k, it["name"], it["extra"])
                 desc = pin_copy_v2.csv_description(k, it["name"], it["sub"], it["info"], it["extra"])
                 kw = {"rv_camping": f"{it['name']} RV camping, RV road trip, campgrounds",
+                      "fly_drive": f"{it['name']} fly and drive, nearest airport, road trip",
+                      "no_reservation": f"{it['name']} reservation, entry permit, backup plans",
                       }.get(k, f"{it['name']} road trip, national park road trip, US road trip itinerary")
                 link = f"{it['link']}?utm_source=pinterest&utm_medium=csv"
                 w.writerow([title, r["image_url"], BOARD[it["feed"]], "", desc, link, r["release_at"][:19], kw])

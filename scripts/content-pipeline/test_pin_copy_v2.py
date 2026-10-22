@@ -15,6 +15,22 @@ class CopyTests(unittest.TestCase):
         self.assertLessEqual(len(c.csv_title("rv_camping", "X" * 120)), 100)
         self.assertLessEqual(len(c.csv_description("loop", "A", "s", "i" * 600, {"stop_names": "a"})), 500)
 
+    def test_new_csv_kinds(self):
+        sub, info = c.card("fly_drive", {"airport": "DEN", "drive_minutes": 95})
+        self.assertEqual(info, "Fly into DEN · 1.5 hr drive")
+        sub, info = c.card("no_reservation", {"permit_level": "high", "best_season": "May"})
+        self.assertEqual(info, "Reservation required · Best: May")
+        for kind in ("fly_drive", "no_reservation", "destination", "best_time", "things_to_do", "glamping", "trip_planner"):
+            self.assertLessEqual(len(c.csv_title(kind, "X" * 120, {"airport": "DEN"})), 100)
+            d = c.csv_description(kind, "Zion", "s", "i" * 600, {"airport": "DEN"})
+            self.assertLessEqual(len(d), 500)
+            self.assertNotIn("undefined", d)
+
+    def test_airport_city_matches_frontend(self):
+        self.assertEqual(rp.airport_city("Denver International Airport"), "denver")
+        self.assertEqual(rp.airport_city("McGhee Tyson Airport (Knoxville)"), "knoxville")
+        self.assertEqual(rp.airport_city("St. George Regional Airport"), "st-george")
+
 
 class CsvScheduleTests(unittest.TestCase):
     def test_csv_skips_rss_days_and_caps_100(self):
