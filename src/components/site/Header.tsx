@@ -4,11 +4,11 @@ import { Menu, X } from "lucide-react";
 import logoStacked from "@/assets/logos/minialife-stacked-mixedcase-trimmed.png";
 
 const NAV = [
-  { to: "/destinations", label: "Destinations" },
-  { to: "/road-trips", label: "Road Trips" },
-  { to: "/corridors/grand-circle-from-las-vegas", label: "Grand Circle" },
-  { to: "/gear", label: "Gear Shop" },
-  { to: "/about", label: "About" },
+  { to: "/destinations", params: undefined, label: "Destinations" },
+  { to: "/road-trips", params: undefined, label: "Road Trips" },
+  { to: "/corridors/$slug", params: { slug: "grand-circle-from-las-vegas" }, label: "Grand Circle" },
+  { to: "/gear", params: undefined, label: "Gear Shop" },
+  { to: "/about", params: undefined, label: "About" },
 ] as const;
 
 const active = { className: "text-foreground underline decoration-forest decoration-2 underline-offset-8" };
@@ -23,7 +23,7 @@ export function Header() {
         </Link>
         <nav className="hidden flex-1 items-center justify-end gap-7 text-sm font-medium md:flex">
           {NAV.map((n) => (
-            <Link key={n.to} to={n.to} className="text-foreground/80 hover:text-foreground" activeProps={active}>
+            <Link key={n.to} to={n.to} params={n.params as never} className="text-foreground/80 hover:text-foreground" activeProps={active}>
               {n.label}
             </Link>
           ))}
@@ -45,6 +45,7 @@ export function Header() {
               <Link
                 key={n.to}
                 to={n.to}
+                params={n.params as never}
                 onClick={() => setOpen(false)}
                 className="border-b border-border/60 py-3 text-base font-medium text-foreground last:border-0"
               >
