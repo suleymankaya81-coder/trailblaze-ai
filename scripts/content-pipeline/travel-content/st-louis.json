@@ -1,0 +1,95 @@
+{
+  "slug": "st-louis",
+  "headline": "Advance Gateway Arch Tram Reservations Essential",
+  "reservation": "Access to the Gateway Arch National Park grounds is open, but tram tickets to the top of the monument frequently sell out weeks in advance. Visitors must secure specific time slots via the official provider; accommodation in the downtown core should be booked early during major Cardinals home games or riverfront festivals.",
+  "source_url": "https://www.nps.gov/jeff/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "The Gateway to the West",
+        "start": "Suggested: 8:30 AM from Gateway Arch",
+        "stops": [
+          {
+            "name": "Gateway Arch Tram",
+            "detail": "Ride the unique tram system to the 630-foot summit for views of the Mississippi River and Illinois plains."
+          },
+          {
+            "name": "Old Courthouse",
+            "detail": "Visit this significant site of the Dred Scott case to explore American civil rights history."
+          }
+        ],
+        "driving": "Allow 10 minutes for downtown parking transitions; walking is recommended",
+        "note": "Security screening is required for Arch entry; allow extra time for the check-in process."
+      },
+      {
+        "title": "Forest Park Cultural Immersion",
+        "start": "Suggested: 9 AM from Forest Park",
+        "stops": [
+          {
+            "name": "Saint Louis Art Museum",
+            "detail": "View world-class collections housed in the only permanent structure remaining from the 1904 World's Fair."
+          },
+          {
+            "name": "Missouri History Museum",
+            "detail": "Discover the city's evolution from a river trading post to a major industrial hub."
+          }
+        ],
+        "driving": "Allow 15-20 minutes to drive from downtown to Forest Park; conditions vary",
+        "note": "Forest Park is larger than Central Park; utilizing the park's internal shuttle or a bicycle is helpful for covering distance."
+      },
+      {
+        "title": "River Bluffs and Botanical Beauty",
+        "start": "Suggested: 9 AM from Missouri Botanical Garden",
+        "stops": [
+          {
+            "name": "Missouri Botanical Garden",
+            "detail": "Wander through the Climatron geodetic dome and the sprawling Seiwa-en Japanese Garden."
+          },
+          {
+            "name": "Castlewood State Park",
+            "detail": "Hike the bluffs overlooking the Meramec River for the best natural vistas in the metropolitan area."
+          }
+        ],
+        "driving": "Allow 30-40 minutes for the drive to Castlewood; conditions vary",
+        "note": "Trails at Castlewood can be muddy after rain; check local park alerts before departing."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Forest Park Options",
+        "text": "Free parking is available throughout Forest Park, but lots near the Zoo fill quickly on weekends. Use the paid lot at the Science Center as a reliable alternative."
+      },
+      {
+        "kind": "signal",
+        "title": "Park Connectivity",
+        "text": "Expect strong cellular service within the city and Forest Park. Signal may be weaker at the base of the limestone bluffs in Castlewood State Park."
+      },
+      {
+        "kind": "fuel",
+        "title": "Metro Supply Points",
+        "text": "Gas stations are frequent along the I-64 and I-44 corridors. Fuel up in the city before heading to more secluded state parks in the Meramec Valley."
+      },
+      {
+        "kind": "timing",
+        "title": "Humidity and Heat",
+        "text": "July and August humidity can be intense; schedule the Botanical Garden for early morning and indoor museums for the late afternoon."
+      },
+      {
+        "kind": "access",
+        "title": "Monument Maintenance",
+        "text": "Tram operations occasionally pause for maintenance; verify the daily schedule on the official NPS partner site before arrival."
+      }
+    ],
+    "arrival": "Drive 20 minutes from STL to downtown St. Louis. Pick up groceries in the Central West End before checking into your accommodation.",
+    "vehicle": "Standard vehicles are sufficient for all regional sites; check for height restrictions if driving a tall van near historic downtown bridges.",
+    "goldenHour": "The Emerson Grand Basin in Forest Park is a classic sunset viewpoint, though color varies by season.",
+    "sources": [
+      {
+        "label": "National Park Service",
+        "url": "https://www.nps.gov/jeff/index.htm"
+      }
+    ]
+  }
+}

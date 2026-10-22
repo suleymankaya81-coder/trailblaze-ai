@@ -1,0 +1,95 @@
+{
+  "slug": "minneapolis",
+  "headline": "Seasonal Park Permits and Museum Reservations",
+  "reservation": "While most city parks are open for public walking, equipment rentals for kayaking or snowshoeing require independent reservations through the Minneapolis Park and Recreation Board. Popular sites like the Walker Art Center recommend advance ticketing for specific gallery rotations. Official systems change seasonally; always check the specific park or museum website for updated entry policies.",
+  "source_url": "https://www.minneapolisparks.org/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Lakeshore Paths and Modern Art",
+        "start": "Suggested: 9 AM from Bde Maka Ska",
+        "stops": [
+          {
+            "name": "Chain of Lakes Regional Park",
+            "detail": "Cycle or walk the connected paths between Bde Maka Ska and Lake Harriet."
+          },
+          {
+            "name": "Minneapolis Sculpture Garden",
+            "detail": "Visit the iconic Spoonbridge and Cherry sculpture in this free outdoor gallery."
+          }
+        ],
+        "driving": "Local city driving; allow 25 minutes for lake-to-garden transfers.",
+        "note": "Walking paths and bike lanes are separated; follow local directional markings."
+      },
+      {
+        "title": "Mississippi River and Industrial History",
+        "start": "Suggested: 8:30 AM from the Mill District",
+        "stops": [
+          {
+            "name": "Stone Arch Bridge",
+            "detail": "Cross the former railroad bridge for panoramic views of St. Anthony Falls."
+          },
+          {
+            "name": "Mill City Museum",
+            "detail": "Explore the ruins of the world's largest flour mill along the riverbank."
+          }
+        ],
+        "driving": "Walking-heavy day; allow 15 minutes for local parking transitions.",
+        "note": "Bridge access may be restricted for structural maintenance; check official city notices."
+      },
+      {
+        "title": "Cascades and Urban Wilds",
+        "start": "Suggested: 9 AM from Minnehaha Falls",
+        "stops": [
+          {
+            "name": "Minnehaha Regional Park",
+            "detail": "View the 53-foot waterfall and follow the creek trails to the Mississippi River."
+          },
+          {
+            "name": "Eloise Butler Wildflower Garden",
+            "detail": "Wander through the oldest public wildflower garden in the United States."
+          }
+        ],
+        "driving": "Allow 30 minutes between the falls and Theodore Wirth Park; traffic varies.",
+        "note": "Wildflower garden hours are seasonal; typically closed in winter months."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Lake and Falls Parking",
+        "text": "Pay-to-park lots are standard at Minnehaha Falls and Chain of Lakes. Use the 'Minneapolis Parking' app for easier management of street meters downtown."
+      },
+      {
+        "kind": "signal",
+        "title": "River Gorge Connectivity",
+        "text": "Cellular signals are strong throughout the city, though can dip slightly in the deep wooded sections of the Mississippi River Gorge trails."
+      },
+      {
+        "kind": "fuel",
+        "title": "Urban Infrastructure",
+        "text": "Fuel stations are frequent in the city and surrounding suburbs like Bloomington. Ensure you have a full tank if heading further north into the rural river valleys."
+      },
+      {
+        "kind": "timing",
+        "title": "Skyway vs. Street",
+        "text": "In winter, allow extra time to navigate the Skyway system for indoor walking. Summer travel is best during mid-morning to avoid festival-related congestion."
+      },
+      {
+        "kind": "access",
+        "title": "Trail Conditions",
+        "text": "Limestone trails near the river can be slippery after rain or during the spring melt. Check the Park Board website for seasonal trail closures."
+      }
+    ],
+    "arrival": "Pick up vehicle at MSP Airport; drive 20 minutes to downtown Minneapolis for supplies and lodging check-in.",
+    "vehicle": "Standard cars suffice for summer; consider AWD if visiting during winter months and check rental winter tire policies.",
+    "goldenHour": "Stone Arch Bridge offers views of the skyline, though clarity depends on seasonal river mist.",
+    "sources": [
+      {
+        "label": "Minneapolis Park & Recreation Board",
+        "url": "https://www.minneapolisparks.org/parks-destinations/"
+      }
+    ]
+  }
+}

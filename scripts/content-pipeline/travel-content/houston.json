@@ -1,0 +1,95 @@
+{
+  "slug": "houston",
+  "headline": "Timed Entry for NASA Tours and Museum Highlights",
+  "reservation": "Access to NASA Johnson Space Center tram tours and specific Museum District exhibits often requires advance timed bookings. While the city itself is open, these high-demand educational sites utilize digital ticketing systems that can reach capacity days in advance. Always verify current entry requirements and holiday closures via official venue portals, as distinct from hotel bookings.",
+  "source_url": "https://www.houstontx.gov/parks/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Space Flight and Coastal Heritage",
+        "start": "Suggested: 9 AM from Downtown Houston",
+        "stops": [
+          {
+            "name": "NASA Johnson Space Center",
+            "detail": "Explore the Saturn V rocket at Rocket Park and book the tram tour to see historic Mission Control."
+          },
+          {
+            "name": "Galveston Strand Historic District",
+            "detail": "Walk among preserved Victorian architecture and explore the boutiques near the harbor."
+          }
+        ],
+        "driving": "Allow 2 hours total transit; coastal traffic on I-45 varies significantly.",
+        "note": "Check wind conditions if planning to visit the Seawall."
+      },
+      {
+        "title": "Museum District and Bayou Vistas",
+        "start": "Suggested: 10 AM from The Museum District",
+        "stops": [
+          {
+            "name": "Museum of Fine Arts, Houston",
+            "detail": "View world-class collections across multiple campus buildings in the heart of the city."
+          },
+          {
+            "name": "Buffalo Bayou Park",
+            "detail": "Walk the skyline-view trails and observe the bat colony emergence at Waugh Drive Bridge at dusk."
+          }
+        ],
+        "driving": "Local urban transfers; allow 30-40 minutes between districts.",
+        "note": "Museums often have late hours on Thursdays; verify before visiting."
+      },
+      {
+        "title": "Historical Landmarks and Local Markets",
+        "start": "Suggested: 9 AM from The Heights",
+        "stops": [
+          {
+            "name": "San Jacinto Battleground State Historic Site",
+            "detail": "Visit the world's tallest war memorial monument and the surrounding marshland boardwalks."
+          },
+          {
+            "name": "Houston Farmers Market",
+            "detail": "Experience the city's culinary diversity at the historic Airline Drive produce hub."
+          }
+        ],
+        "driving": "Allow 1.5 hours for regional loops; conditions vary by industrial traffic.",
+        "note": "The monument observation deck access may change based on maintenance."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "District Parking",
+        "text": "Paid garages serve the Museum District, while Hermann Park offers limited free peripheral lots. Street parking in The Heights is narrow and often restricted to residents; look for designated commercial zones."
+      },
+      {
+        "kind": "signal",
+        "title": "Urban Connectivity",
+        "text": "Cellular coverage is robust across the metro area and NASA facilities. Signal may weaken slightly within the marshy areas of San Jacinto Battleground."
+      },
+      {
+        "kind": "fuel",
+        "title": "Metro Refueling",
+        "text": "Fuel stations are abundant along I-45 and the 610 Loop. Ensure your tank is sufficient before entering the San Jacinto industrial corridor where stations are spaced further apart."
+      },
+      {
+        "kind": "timing",
+        "title": "Commuter Flow",
+        "text": "Avoid major freeway transitions between 7:00-9:00 AM and 4:00-6:30 PM. Mid-day is the most predictable time for driving between Houston and Galveston."
+      },
+      {
+        "kind": "access",
+        "title": "Park Hours",
+        "text": "Buffalo Bayou Park trails remain open late, but specific amenities like the Cistern require separate tours. State historic sites typically close gates at sunset."
+      }
+    ],
+    "arrival": "Pick up rental at Hobby Airport (HOU), then head 20 minutes north to downtown for supply runs and hotel check-in.",
+    "vehicle": "Standard sedans are ideal for city navigation; check rental contracts for restrictions on driving to remote coastal beaches.",
+    "goldenHour": "Eleanor Tinsley Park offers skyline views, though specific light quality varies by Texas Gulf humidity levels.",
+    "sources": [
+      {
+        "label": "Texas Parks and Wildlife",
+        "url": "https://tpwd.texas.gov/state-parks/san-jacinto-battleground"
+      }
+    ]
+  }
+}
