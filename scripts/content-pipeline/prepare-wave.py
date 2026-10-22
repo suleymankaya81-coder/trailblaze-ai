@@ -82,6 +82,8 @@ COORDS = {
     "natchez-trace": (34.3326, -88.7036),       # Parkway Visitor Center, Tupelo MS
     "chequamegon-nicolet-national-forest": (45.9344, -90.4416),  # Park Falls, WI
 }
+# Wikipedia lead image is not a scenic cover for these; use the first search photo instead.
+HERO_FROM_SEARCH = {"los-angeles", "boston", "san-francisco"}
 # Alternative Commons search terms for places with too few usable photos.
 SEARCH_TERMS = {
     "flagstaff": ["Flagstaff Arizona landscape", "Flagstaff San Francisco Peaks"],
@@ -286,9 +288,10 @@ def prepare_facts(slug):
         raise RuntimeError("no coordinates")
 
     terms = SEARCH_TERMS.get(slug, [d["name"], f"{d['name']} {d['state']}"])
-    pool = [p for t in terms for p in commons_search(t)]
+    lists = [commons_search(t) for t in terms]
+    pool = [l[i] for i in range(max(map(len, lists), default=0)) for l in lists if i < len(l)]  # interleave terms for variety
     seen, photos = set(), []
-    hero = file_info(pimg) if pimg and not BAD.search(pimg) else None
+    hero = file_info(pimg) if pimg and not BAD.search(pimg) and slug not in HERO_FROM_SEARCH else None
     if hero and (hero["url"] in used or hero["w"] < hero["h"]):
         hero = None
     for p in pool:
