@@ -4,10 +4,11 @@ import { Bike, Binoculars, Glasses, Lamp, Mountain, Shirt, Tent, Briefcase } fro
 import wg9801 from "@/assets/gear/wildguarder-wg9801.jpg.asset.json";
 import hawknite1 from "@/assets/gear/wildguarder-hawknite1.jpg.asset.json";
 import owler1 from "@/assets/gear/wildguarder-owler1.jpg.asset.json";
+import { shopCategoryCounts as n, SHOP_CATEGORY_REVIEWED } from "./gearShop.categories";
 
 // Product counts computed from data/affiliate-feeds/rockbros/products.json (2,010 models)
 // on 2026-10-20; Optics & Night Vision lists the three WILDGUARDER models below.
-export const GEAR_COUNTS_REVIEW_DATE = "2026-10-20";
+export const GEAR_COUNTS_REVIEW_DATE = SHOP_CATEGORY_REVIEWED;
 
 export type GearCategory = {
   key: string;
@@ -22,14 +23,14 @@ export type GearCategory = {
 };
 
 export const gearCategories: GearCategory[] = [
-  { key: "camping", label: "Camping & Outdoor", items: 50, icon: Tent, tone: "bg-clay text-primary-foreground" },
-  { key: "hiking", label: "Hiking & Backpacks", items: 27, icon: Mountain, tone: "bg-forest text-primary-foreground" },
+  { key: "camping", label: "Camping & Outdoor", items: n.camping, icon: Tent, tone: "bg-clay text-primary-foreground", href: "/gear/category/camping" },
+  { key: "hiking", label: "Hiking & Backpacks", items: n.hiking, icon: Mountain, tone: "bg-forest text-primary-foreground", href: "/gear/category/hiking" },
   { key: "optics", label: "Optics & Night Vision", items: 3, icon: Binoculars, tone: "bg-sky text-primary-foreground", href: "#night-vision" },
-  { key: "cycling", label: "Cycling Gear", items: 559, icon: Bike, tone: "bg-clay text-primary-foreground", href: "/gear/best-cycling-accessories" },
-  { key: "lights", label: "Lights & Power", items: 208, icon: Lamp, tone: "bg-amber text-ink", href: "/gear/best-cycling-accessories" },
-  { key: "apparel", label: "Apparel & Cold Weather", items: 449, icon: Shirt, tone: "bg-forest text-primary-foreground" },
-  { key: "eyewear", label: "Eyewear & Gloves", items: 276, icon: Glasses, tone: "bg-sage-deep text-primary-foreground", href: "/gear/best-cycling-accessories" },
-  { key: "bags", label: "Travel & Moto Bags", items: 213, icon: Briefcase, tone: "bg-clay text-primary-foreground", href: "/gear/7-bikepacking-essentials" },
+  { key: "cycling", label: "Cycling Gear", items: n.cycling, icon: Bike, tone: "bg-clay text-primary-foreground", href: "/gear/category/cycling" },
+  { key: "lights", label: "Lights & Power", items: n.lights, icon: Lamp, tone: "bg-amber text-ink", href: "/gear/category/lights" },
+  { key: "apparel", label: "Apparel & Cold Weather", items: n.apparel, icon: Shirt, tone: "bg-forest text-primary-foreground", href: "/gear/category/apparel" },
+  { key: "eyewear", label: "Eyewear & Gloves", items: n.eyewear, icon: Glasses, tone: "bg-sage-deep text-primary-foreground", href: "/gear/category/eyewear" },
+  { key: "bags", label: "Travel & Moto Bags", items: n.bags, icon: Briefcase, tone: "bg-clay text-primary-foreground", href: "/gear/category/bags" },
 ];
 
 // WILDGUARDER partner models (15% commission offer via Awin, invitation email).

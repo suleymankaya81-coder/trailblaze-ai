@@ -142,7 +142,7 @@ export function GearShopPage() {
                 href.startsWith("#") ? (
                   <a key={key} href={href} className="group block overflow-hidden rounded-xl border border-border bg-card shadow-soft hover:shadow-lift">{body}</a>
                 ) : (
-                  <Link key={key} to={href} className="group block overflow-hidden rounded-xl border border-border bg-card shadow-soft hover:shadow-lift">{body}</Link>
+                  <a key={key} href={href} className="group block overflow-hidden rounded-xl border border-border bg-card shadow-soft hover:shadow-lift">{body}</a>
                 )
               ) : (
                 <div key={key} className="overflow-hidden rounded-xl border border-border bg-card shadow-soft">{body}</div>
