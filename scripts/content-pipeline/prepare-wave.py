@@ -75,6 +75,19 @@ WIKI_ANCHORS = {
     "salt-lake-city": "Salt Lake City",
     "portland-oregon": "Portland, Oregon",
     "williams-arizona": "Williams, Arizona",
+    # New-destination wave 2 (gateway cities)
+    "new-york-city": "New York City",
+    "philadelphia": "Philadelphia",
+    "atlanta": "Atlanta",
+    "nashville": "Nashville, Tennessee",
+    "houston": "Houston",
+    "dallas-fort-worth": "Dallas",
+    "sacramento": "Sacramento, California",
+    "charlotte": "Charlotte, North Carolina",
+    "minneapolis": "Minneapolis",
+    "pittsburgh": "Pittsburgh",
+    "san-antonio": "San Antonio",
+    "st-louis": "St. Louis",
 }
 # Fallback anchor coordinates when Wikipedia/OSM lookups return nothing (town or visitor center).
 COORDS = {
@@ -83,7 +96,7 @@ COORDS = {
     "chequamegon-nicolet-national-forest": (45.9344, -90.4416),  # Park Falls, WI
 }
 # Wikipedia lead image is not a scenic cover for these; use the first search photo instead.
-HERO_FROM_SEARCH = {"los-angeles", "boston", "san-francisco"}
+HERO_FROM_SEARCH = {"los-angeles", "boston", "san-francisco", "new-york-city", "houston", "dallas-fort-worth", "charlotte", "atlanta"}
 # Alternative Commons search terms for places with too few usable photos.
 SEARCH_TERMS = {
     "flagstaff": ["Flagstaff Arizona landscape", "Flagstaff San Francisco Peaks"],
@@ -107,6 +120,19 @@ SEARCH_TERMS = {
     "salt-lake-city": ["Salt Lake City Wasatch", "Antelope Island State Park", "Big Cottonwood Canyon", "Great Salt Lake"],
     "portland-oregon": ["Portland Oregon Mount Hood skyline", "Multnomah Falls", "Columbia River Gorge Crown Point", "Forest Park Portland Oregon"],
     "williams-arizona": ["Route 66 Williams Arizona", "Grand Canyon Railway", "Grand Canyon South Rim Mather Point", "Kaibab National Forest"],
+    # New-destination wave 2
+    "new-york-city": ["Central Park New York", "Hudson River Palisades", "Bear Mountain State Park", "Brooklyn Bridge Park"],
+    "philadelphia": ["Wissahickon Valley Park", "Valley Forge National Historical Park", "Schuylkill River Trail", "Independence Hall"],
+    "atlanta": ["Stone Mountain Park", "Chattahoochee River National Recreation Area", "Piedmont Park Atlanta", "Kennesaw Mountain"],
+    "nashville": ["Radnor Lake State Park", "Percy Priest Lake", "Nashville skyline Cumberland River", "Natchez Trace Parkway bridge"],
+    "houston": ["Buffalo Bayou Park", "Galveston Island beach", "Space Center Houston", "Brazos Bend State Park"],
+    "dallas-fort-worth": ["White Rock Lake Dallas", "Fort Worth Stockyards", "Cedar Ridge Preserve", "Dallas Arboretum"],
+    "sacramento": ["American River Sacramento", "Folsom Lake", "Old Sacramento", "Sacramento River delta"],
+    "charlotte": ["Crowders Mountain State Park", "Lake Norman", "U.S. National Whitewater Center", "Charlotte skyline"],
+    "minneapolis": ["Minnehaha Falls", "Chain of Lakes Minneapolis", "Stone Arch Bridge Minneapolis", "Mississippi River Minneapolis"],
+    "pittsburgh": ["Point State Park Pittsburgh", "Ohiopyle State Park", "Mount Washington Pittsburgh view", "Fallingwater"],
+    "san-antonio": ["San Antonio River Walk", "San Antonio Missions National Historical Park", "Mission San José San Antonio", "Natural Bridge Caverns"],
+    "st-louis": ["Gateway Arch", "Forest Park St. Louis", "Elephant Rocks State Park", "Missouri Botanical Garden"],
 }
 
 
