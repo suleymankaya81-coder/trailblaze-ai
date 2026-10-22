@@ -32,7 +32,8 @@ export async function buildRss(feed: string): Promise<Response | null> {
     const [dests, pages, pins] = await Promise.all([
       rest<D>("destinations?select=id,slug,name,tagline,best_season,recommended_duration,nearest_airport_code,updated_at&status=eq.published&order=slug.asc"),
       rest<L>("seo_landing_pages?select=path,page_type,seo_title,seo_description,destination_id,published_at,updated_at,indexable&status=eq.published&order=path.asc"),
-      rest<P>("pin_assets?select=key,image_url,release_at&order=key.asc"),
+      // CSV-uploaded pins are posted manually; never repeat them through RSS.
+      rest<P>("pin_assets?select=key,image_url,release_at&channel=eq.rss&order=key.asc"),
     ]);
     const pinBy = new Map(pins.map((p) => [p.key, p]));
     const byId = new Map(dests.map((d) => [d.id, d]));
