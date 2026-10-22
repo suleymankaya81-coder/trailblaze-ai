@@ -1,0 +1,95 @@
+{
+  "slug": "boston",
+  "headline": "Advance Reservations for Historic Landmarks and Harbor Ferries",
+  "reservation": "Access to sites like the Old North Church or the USS Constitution varies by season; check official National Park Service schedules. While the Freedom Trail is free to walk, specific interior tours and the Boston Harbor Island ferries require separate tickets. Accommodation demand spikes during graduation weeks in May and the October regatta, requiring months of lead time; always verify current entry policies via official agency sites.",
+  "source_url": "https://www.nps.gov/bost/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Revolutionary Landmarks and Harbor Vistas",
+        "start": "Suggested: 9 AM from Boston Common",
+        "stops": [
+          {
+            "name": "Freedom Trail",
+            "detail": "Walk the 2.5-mile red-lined path connecting 16 significant sites including the Granary Burying Ground and Faneuil Hall."
+          },
+          {
+            "name": "USS Constitution",
+            "detail": "Visit the world's oldest commissioned warship afloat in the Charlestown Navy Yard to learn about maritime defense history."
+          }
+        ],
+        "driving": "Allow 20–40 minutes for local transit; conditions vary",
+        "note": "The climb up the Bunker Hill Monument involves 294 steps and may be restricted by seasonal staffing."
+      },
+      {
+        "title": "Island Escapes and Coastal Greenways",
+        "start": "Suggested: 9:30 AM from Long Wharf",
+        "stops": [
+          {
+            "name": "Boston Harbor Islands National Recreation Area",
+            "detail": "Take a ferry to Spectacle Island for hiking trails and skyline views or Georges Island to explore Fort Warren."
+          },
+          {
+            "name": "Rose Kennedy Greenway",
+            "detail": "Stroll this contemporary linear park featuring public art and gardens where elevated highways once stood."
+          }
+        ],
+        "driving": "Walking and ferry transfers; allow 45 minutes for boat boarding",
+        "note": "Ferry schedules are highly seasonal and weather-dependent; confirm departures on the morning of travel."
+      },
+      {
+        "title": "Artistic Legacies and Academic Enclaves",
+        "start": "Suggested: 10 AM from Back Bay",
+        "stops": [
+          {
+            "name": "Isabella Stewart Gardner Museum",
+            "detail": "Explore a Venetian-style palace housing a private collection around a year-round blooming courtyard."
+          },
+          {
+            "name": "Arnold Arboretum",
+            "detail": "Walk through Harvard University's living museum of trees, specifically the paths near Hemlock Hill."
+          }
+        ],
+        "driving": "Allow 30–50 minutes for MBTA 'T' transit; conditions vary",
+        "note": "The Arboretum is expansive; focus on Peter’s Hill for a less-crowded panoramic view of the skyline."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "Trail Accessibility",
+        "text": "The Freedom Trail consists of historic brick and cobblestone which can be uneven in the North End. Some historic interior spaces have limited mobility access due to their 18th-century architecture."
+      },
+      {
+        "kind": "fuel",
+        "title": "Urban Charging",
+        "text": "Fuel stations are sparse in the downtown core; look for garages in the Seaport or Back Bay for electric charging. Standard gas stations are more frequent near the airport or in residential Quincy."
+      },
+      {
+        "kind": "parking",
+        "title": "Garage Strategy",
+        "text": "Street parking in Beacon Hill is strictly permitted for residents; utilize underground garages near the Common. Rates are highest during business hours, so consider taking the subway from gateway hubs."
+      },
+      {
+        "kind": "signal",
+        "title": "Downtown Connectivity",
+        "text": "Cellular signal is generally strong throughout the city, though thick stone walls in historic basements can cause drops. Public Wi-Fi is available at the Boston Public Library in Copley Square."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Pacing",
+        "text": "Plan for significant crowds during Patriot's Day in April and the Head of the Charles in October. Winter visitors should account for shorter daylight hours and potential icy sidewalk conditions."
+      }
+    ],
+    "arrival": "Collect rental at Logan International (BOS), then proceed via the Sumner Tunnel to downtown hotels; stock up on essentials in the Seaport District.",
+    "vehicle": "A compact car is preferred for narrow historic streets; check rental contracts for restrictions on driving to offshore islands.",
+    "goldenHour": "Custom House Tower provides a historic vantage point for sunset, subject to seasonal tour availability.",
+    "sources": [
+      {
+        "label": "Boston National Historical Park",
+        "url": "https://www.nps.gov/bost/planyourvisit/index.htm"
+      }
+    ]
+  }
+}

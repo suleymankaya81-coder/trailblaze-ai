@@ -1,0 +1,95 @@
+{
+  "slug": "miami",
+  "headline": "Everglades and Biscayne Guided Tour Reservations",
+  "reservation": "Entry to Everglades National Park requires a standard pass, but specialized ranger-led boat tours and tram slots at Shark Valley should be booked weeks in advance. Seasonal demand during the dry winter months is high; check the official NPS portal for the latest availability. Coastal accommodations in the Art Deco district often reach capacity during spring events.",
+  "source_url": "https://www.nps.gov/ever/index.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Art Deco and Atlantic Shores",
+        "start": "Suggested: 9 AM from South Beach",
+        "stops": [
+          {
+            "name": "Art Deco Historic District",
+            "detail": "Walk the concentration of 1930s pastel architecture along Ocean Drive and Collins Avenue."
+          },
+          {
+            "name": "South Pointe Park",
+            "detail": "Observe cruise ships departing the channel from the southern tip of the island."
+          }
+        ],
+        "driving": "Allow 30 minutes; walking is preferred in the historic core",
+        "note": "Parking in South Beach is limited; utilize public garages on 7th or 13th streets."
+      },
+      {
+        "title": "Subtropical Wilderness Exploration",
+        "start": "Suggested: 8 AM from Coral Gables",
+        "stops": [
+          {
+            "name": "Shark Valley Observation Tower",
+            "detail": "Cycle the 15-mile loop to view alligators and migratory birds in the sawgrass prairies."
+          },
+          {
+            "name": "Fairchild Tropical Botanic Garden",
+            "detail": "Stroll through rare tropical plant collections and extensive butterfly conservatories."
+          }
+        ],
+        "driving": "Allow 2–3 hours round trip; conditions vary on Tamiami Trail",
+        "note": "Wildlife viewing is most productive during the dry season from November to April."
+      },
+      {
+        "title": "Biscayne Bay and Cultural Roots",
+        "start": "Suggested: 9:30 AM from Downtown",
+        "stops": [
+          {
+            "name": "Vizcaya Museum and Gardens",
+            "detail": "Tour the Italian Renaissance-style villa and formal gardens overlooking the bay."
+          },
+          {
+            "name": "Wynwood Walls",
+            "detail": "View the curated outdoor museum of large-scale street art and contemporary murals."
+          }
+        ],
+        "driving": "Allow 1 hour for local transfers; conditions vary",
+        "note": "Sudden afternoon thunderstorms are common from June through September."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Coastal Stationing",
+        "text": "Public garages in South Beach are more reliable than street spots, which are often residential only. At the Everglades, use designated visitor center lots to ensure protection of native habitat."
+      },
+      {
+        "kind": "signal",
+        "title": "Wetland Connectivity",
+        "text": "Cellular reception is reliable in the city but drops significantly once entering the Everglades interior. Carry physical maps for navigation along the Main Park Road and remote keys."
+      },
+      {
+        "kind": "fuel",
+        "title": "Glades Transit",
+        "text": "Top off tanks in Florida City or Homestead before heading into the national park. There are no refueling stations within the Everglades park boundaries beyond the main entrance corridor."
+      },
+      {
+        "kind": "timing",
+        "title": "Wildlife Windows",
+        "text": "Early morning is optimal for birding at Anhinga Trail before the midday heat. During summer, plan indoor museum visits for the mid-afternoon rain window."
+      },
+      {
+        "kind": "access",
+        "title": "Waterway Transfers",
+        "text": "Access to Biscayne National Park's reefs is exclusively by boat from the Dante Fascell Visitor Center. The Metromover provides free elevated transit within the Downtown and Brickell districts."
+      }
+    ],
+    "arrival": "Pick up vehicle at MIA and transit to Coral Gables or Miami Beach for provisions and check-in.",
+    "vehicle": "Standard cars are suitable for most areas; check rental terms for driving on unpaved swamp access roads.",
+    "goldenHour": "Key Biscayne's Bill Baggs Cape Florida State Park offers views of the historic lighthouse at dusk.",
+    "sources": [
+      {
+        "label": "Everglades National Park Official",
+        "url": "https://www.nps.gov/ever"
+      }
+    ]
+  }
+}

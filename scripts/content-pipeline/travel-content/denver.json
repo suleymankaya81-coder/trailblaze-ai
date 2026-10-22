@@ -1,0 +1,95 @@
+{
+  "slug": "denver",
+  "headline": "Regional Timed-Entry and High-Altitude Access Requirements",
+  "reservation": "Popular natural areas like Rocky Mountain National Park and Mount Blue Sky require timed-entry reservations during peak summer months. Glamping and boutique accommodations on the Front Range often book out three to four months in advance. Always check official agency websites for the specific release dates of permit blocks, as these are mandatory for entry.",
+  "source_url": "https://www.nps.gov/romo/planyourvisit/timed-entry-permit-system.htm",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Foothills and Red Rock Formations",
+        "start": "Suggested: 8 AM from Downtown Denver",
+        "stops": [
+          {
+            "name": "Red Rocks Park and Amphitheatre",
+            "detail": "Walk the Trading Post Trail between massive sandstone monoliths and explore the world-renowned outdoor venue."
+          },
+          {
+            "name": "Clear Creek Canyon",
+            "detail": "Visit the gateway town of Golden to walk the paved paths along the river or watch kayakers navigate the whitewater."
+          }
+        ],
+        "driving": "Allow 45–60 minutes; conditions vary with mountain traffic",
+        "note": "Red Rocks may close for rehearsals or events; check the venue calendar before visiting the amphitheater floor."
+      },
+      {
+        "title": "High Prairie and Pastoral Views",
+        "start": "Suggested: 9 AM from Castle Rock",
+        "stops": [
+          {
+            "name": "Castlewood Canyon State Park",
+            "detail": "Hike the rim trails to see the ruins of the historic dam and views of the Pikes Peak massif."
+          },
+          {
+            "name": "Rock Park",
+            "detail": "Climb the short, steep trail to the base of the namesake formation for a 360-degree view of the Front Range."
+          }
+        ],
+        "driving": "Allow 30–50 minutes; conditions vary",
+        "note": "Summer temperatures on the plains can be significantly higher than in the mountains; carry extra water."
+      },
+      {
+        "title": "Alpine Lakes and Glacial Valleys",
+        "start": "Suggested: 7 AM from Boulder",
+        "stops": [
+          {
+            "name": "Bear Lake",
+            "detail": "Explore the high-altitude trails of Rocky Mountain National Park, starting at this iconic subalpine basin."
+          },
+          {
+            "name": "Chautauqua Park",
+            "detail": "Visit the base of the Flatirons for a view of Boulder's famous slanted sandstone formations."
+          }
+        ],
+        "driving": "Allow 1.5–2 hours; conditions vary by park entrance traffic",
+        "note": "Afternoon thunderstorms are common above the tree line; plan to be off high peaks by noon."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "Winter Road Closures",
+        "text": "Trail Ridge Road and Mount Blue Sky Scenic Byway close seasonally due to snow, typically from late autumn to late spring. Check the CDOT website for current mountain pass statuses before departing."
+      },
+      {
+        "kind": "fuel",
+        "title": "High Country Supplies",
+        "text": "Ensure your tank is full before leaving gateway towns like Golden or Lyons; fuel services are non-existent once inside the national park boundaries. Electric charging stations are primarily concentrated in the Denver-Boulder metro areas."
+      },
+      {
+        "kind": "parking",
+        "title": "Trailhead Congestion",
+        "text": "Parking at popular spots like Bear Lake or Red Rocks often fills by early morning during summer weekends. Utilize regional shuttles where available to avoid the stress of full lots."
+      },
+      {
+        "kind": "signal",
+        "title": "Mountain Dead Zones",
+        "text": "Cellular reception is reliable in the city but disappears quickly in deep canyons and high-altitude basins. Download offline maps for navigation in areas like Castlewood Canyon or the national forests."
+      },
+      {
+        "kind": "timing",
+        "title": "Altitude Adjustment",
+        "text": "Allow time to acclimate to the elevation in Denver before attempting strenuous high-altitude hikes. Hydration is critical as the low humidity and altitude increase the risk of dehydration."
+      }
+    ],
+    "arrival": "Pick up rental at Denver International (DEN); stop in Aurora or Stapleton for mountain supplies and water before heading west.",
+    "vehicle": "An AWD vehicle is recommended for mountain roads in shoulder seasons; check rental agreements for off-pavement restrictions.",
+    "goldenHour": "The Flatirons in Boulder offer a classic sunrise view where the rocks glow orange, subject to morning cloud cover.",
+    "sources": [
+      {
+        "label": "Colorado Department of Transportation",
+        "url": "https://www.codot.gov/travel"
+      }
+    ]
+  }
+}
