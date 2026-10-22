@@ -73,7 +73,8 @@
 - [x] Verify three real listings, loaded images, direct booking click, noindex experience document and desktop/mobile layout; nine attribution tests pass, build OK. Pilot remains unpublished and noindex.
 ## New destinations (66 total, 6 waves) — plan 2026-10-22
 - [x] Wave 1: 12 gateway cities published (San Francisco, Los Angeles, Miami, Orlando, Denver, Boston, Honolulu, Phoenix, Tucson, Salt Lake City, Portland, Williams) with 48 guides
-- [ ] Wave 2: remaining entry cities (12) — next month's AI credits
+- [x] Wave 2: 12 entry cities published (New York City, Philadelphia, Atlanta, Nashville, Houston, Dallas–Fort Worth, Sacramento, Charlotte, Minneapolis, Pittsburgh, San Antonio, St. Louis; Seward/Fairbanks already existed) with 48 guides
+- [ ] Waves 3–5 (36 places): paused to keep this month's AI credit allowance; resume on request
 - [ ] Wave 3: winter/desert season (12)
 - [ ] Wave 4: history on the road (12)
 - [ ] Wave 5: summer mountains & wellness (12)
