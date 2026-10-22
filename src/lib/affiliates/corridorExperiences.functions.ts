@@ -20,7 +20,7 @@ export const getCorridorExperiences = createServerFn({ method: "GET" })
   .handler(async (): Promise<{ items: CorridorExperience[]; unavailable: boolean }> => {
     const key = process.env["VIATOR_API_KEY"];
     if (!key) return { items: [], unavailable: true };
-    const results = await Promise.all(GRAND_CIRCLE_EXPERIENCES.map(async (selection) => {
+    const results = await Promise.all(GRAND_CIRCLE_EXPERIENCES.map(async (selection): Promise<CorridorExperience | null> => {
       try {
         const response = await fetch("https://api.viator.com/partner/search/freetext", {
           method: "POST",
