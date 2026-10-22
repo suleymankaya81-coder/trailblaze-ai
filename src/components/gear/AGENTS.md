@@ -1,3 +1,3 @@
 - Gear guides compose small typed selections from the stored affiliate catalog; never bundle the full catalog. Why: fast pages with traceable product details.
 - Merchant images use asset pointers and outbound Awin links use buildAwinLink. Why: reliable images and consistent attribution.
-- Global semantic tokens, including copper/ember compatibility aliases, control action colors. Why: one palette across old and new screens.
+- Global semantic tokens, including copper/ember compatibility aliases, control action colors. Why: one palette across old and new screens.- Gear Shop category pages (/gear/category/{key}) read per-category JSON built by scripts/content-pipeline/build-gear-categories.py and load it via a server function. Why: card counts match the products shown and the browser never bundles the full catalog.
