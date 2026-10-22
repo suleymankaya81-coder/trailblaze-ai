@@ -1,0 +1,95 @@
+{
+  "slug": "salt-lake-city",
+  "headline": "Canyon Transportation and Island Access Procedures",
+  "reservation": "Entry to Antelope Island State Park requires a daily vehicle fee paid at the causeway. During winter months, parking at popular Wasatch ski resorts and trailheads in Little Cottonwood Canyon may require advanced reservations or specific carpool permits. Check the official UDOT and Utah State Parks websites for changing seasonal requirements.",
+  "source_url": "https://stateparks.utah.gov/parks/antelope-island/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "High Altitude Alpine Lakes",
+        "start": "Suggested: 8 AM from Salt Lake City",
+        "stops": [
+          {
+            "name": "Big Cottonwood Canyon",
+            "detail": "Explore the Silver Lake Loop or higher trails for mountain views and seasonal wildflowers."
+          },
+          {
+            "name": "Red Butte Garden",
+            "detail": "Visit this botanical garden in the foothills to see native mountain plants and regional landscapes."
+          }
+        ],
+        "driving": "Allow 60–90 minutes for canyon travel; conditions vary",
+        "note": "Check for traction laws if visiting between November and April; 4WD or chains may be required."
+      },
+      {
+        "title": "Island Vistas and Saline Shores",
+        "start": "Suggested: 9 AM from Downtown",
+        "stops": [
+          {
+            "name": "Antelope Island State Park",
+            "detail": "Drive the causeway to see free-roaming bison and the unique landscape of the Great Salt Lake."
+          },
+          {
+            "name": "Ensign Peak",
+            "detail": "A short, steep hike above the city offering a historic overview of the valley layout."
+          }
+        ],
+        "driving": "Allow 2 hours for the round trip to the island; conditions vary",
+        "note": "Biting gnats can be prevalent near the lake shore in late spring; check local reports."
+      },
+      {
+        "title": "Temple Grounds and Olympic History",
+        "start": "Suggested: 8:30 AM from Salt Lake City",
+        "stops": [
+          {
+            "name": "Temple Square",
+            "detail": "Walk the historic 10-acre grounds containing the Salt Lake Temple and Tabernacle."
+          },
+          {
+            "name": "Utah Olympic Park",
+            "detail": "Visit the site of the Winter Olympic Games in nearby Park City for museum exhibits and athlete training views."
+          }
+        ],
+        "driving": "Allow 60–80 minutes for the drive to Park City; conditions vary",
+        "note": "Temple Square is undergoing multi-year renovation; check for specific sidewalk closures."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Canyon Capacity",
+        "text": "Trailheads in Little and Big Cottonwood Canyons often fill by 7:30 AM on summer weekends. Utilize the UTA ski bus during winter to mitigate parking shortages and traffic restrictions."
+      },
+      {
+        "kind": "signal",
+        "title": "Canyon Dead Zones",
+        "text": "Expect total loss of cellular signal in the upper reaches of the Uinta-Wasatch-Cache National Forest. Always notify someone of your itinerary before entering the mountain canyons."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Supplies",
+        "text": "Fill tanks in Sandy or Midvale before heading up the Cottonwood Canyons, as there are no fuel stations within the canyon walls. Fuel is also unavailable on Antelope Island beyond the entrance."
+      },
+      {
+        "kind": "timing",
+        "title": "Snowmelt Windows",
+        "text": "High-altitude trails above 9,000 feet often remain snow-covered until late June. Plan for lower foothill hikes during the spring months to avoid deep mud and lingering drifts."
+      },
+      {
+        "kind": "access",
+        "title": "Traction Laws",
+        "text": "UDOT 'Traction Law' (R-984) may be enforced during snow events, requiring specific tires or AWD for canyon access. Check the UDOT Cottonwood accounts for real-time road status and avalanche closures."
+      }
+    ],
+    "arrival": "Arrive at SLC, drive 15 minutes to downtown to check-in, then head to the nearby foothills for a sunset walk.",
+    "vehicle": "AWD is strongly recommended for canyon travel from November to May; check rental agency tire ratings.",
+    "goldenHour": "Buffalo Point on Antelope Island offers a westward view over the Great Salt Lake, subject to park gate hours.",
+    "sources": [
+      {
+        "label": "Utah State Parks",
+        "url": "https://stateparks.utah.gov"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "phoenix",
+  "headline": "Morning Trail Access and Desert Botanical Garden Check-ins",
+  "reservation": "Popular city preserves like Camelback Mountain require early arrivals but generally do not use a reservation system for trail entry. The Desert Botanical Garden and Musical Instrument Museum suggest purchasing dated tickets in advance to ensure entry during peak winter and spring festivals. Changing heat-safety policies may restrict trail access during extreme weather; check official city park alerts before departing.",
+  "source_url": "https://www.phoenix.gov/parks",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Mountain Spires and Urban Oases",
+        "start": "Suggested: 7 AM from Downtown Phoenix",
+        "stops": [
+          {
+            "name": "Camelback Mountain",
+            "detail": "Scale the Echo Canyon or Cholla trails for a 360-degree view of the Valley of the Sun; these are strenuous vertical climbs."
+          },
+          {
+            "name": "Desert Botanical Garden",
+            "detail": "Walk the themed trails to see thousands of species of cacti and succulents native to the Sonoran Desert."
+          }
+        ],
+        "driving": "Allow 45–60 minutes for local transit; conditions vary with traffic",
+        "note": "Arrive at trailheads at daybreak as lots fill rapidly and mid-day heat is significant."
+      },
+      {
+        "title": "Red Rocks and Cultural Echoes",
+        "start": "Suggested: 9 AM from Scottsdale",
+        "stops": [
+          {
+            "name": "Papago Park",
+            "detail": "Visit the 'Hole-in-the-Rock' formation, a natural sandstone opening providing an elevated perspective of the local skyline."
+          },
+          {
+            "name": "Heard Museum",
+            "detail": "Explore extensive collections of American Indian art and history through immersive indoor galleries."
+          }
+        ],
+        "driving": "Allow 30–50 minutes; conditions vary",
+        "note": "The walk to Hole-in-the-Rock is short but exposed to direct sun."
+      },
+      {
+        "title": "High Desert Views and History",
+        "start": "Suggested: 8 AM from Tempe",
+        "stops": [
+          {
+            "name": "South Mountain Park and Preserve",
+            "detail": "Drive or hike to Dobbins Lookout, the highest point in the park accessible by vehicle for expansive valley vistas."
+          },
+          {
+            "name": "Musical Instrument Museum",
+            "detail": "View over 6,500 instruments from 200 countries in a high-tech, acoustically immersive environment."
+          }
+        ],
+        "driving": "Allow 60–90 minutes for cross-valley travel; conditions vary",
+        "note": "Check the park's silent Sunday schedule if planning to bike or hike without vehicle traffic."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead Capacity",
+        "text": "Echo Canyon and Piestewa Peak parking lots are small and often reach capacity before 8 AM during spring. Have a secondary park location identified in the Phoenix Mountains Preserve if initial lots are closed."
+      },
+      {
+        "kind": "signal",
+        "title": "Desert Connectivity",
+        "text": "Reliable cellular service is available throughout the metro area, but signals can drop in deep canyons at South Mountain. Download offline maps if exploring the extensive National Trail system."
+      },
+      {
+        "kind": "fuel",
+        "title": "Valley Refueling",
+        "text": "Fuel stations are abundant in Scottsdale and Tempe, though distances between eastern valley suburbs and western preserves are vast. Ensure a full tank before heading toward remote trailheads in the Superstition Mountains."
+      },
+      {
+        "kind": "timing",
+        "title": "Heat Awareness",
+        "text": "During summer months, outdoor activity is discouraged after 10 AM due to extreme temperatures. Winter and spring offer all-day exploration windows with mild, dry conditions."
+      },
+      {
+        "kind": "access",
+        "title": "Trail Closures",
+        "text": "Local parks may close specific summit trails during Excessive Heat Warnings issued by the National Weather Service. Check the official city park website for daily status updates during the summer monsoon season."
+      }
+    ],
+    "arrival": "Pick up rental at Sky Harbor (PHX), drive 10 minutes to downtown for supplies and regional maps before hotel check-in.",
+    "vehicle": "Standard vehicles are suitable for city travel; check rental restrictions for unpaved sections of the Apache Trail.",
+    "goldenHour": "Dobbins Lookout at South Mountain offers a panoramic sunset view, though seasonal gates close shortly after dark.",
+    "sources": [
+      {
+        "label": "Phoenix Parks and Recreation",
+        "url": "https://www.phoenix.gov/parks"
+      }
+    ]
+  }
+}
