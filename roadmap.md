@@ -71,3 +71,10 @@
 - [x] Add compact flight, Motorhome Republic, EconomyBookings and Airalo booking links below the map.
 - [x] Add three production Viator products for Page, Zion and Las Vegas, with provider photos, current starting prices, ratings and API-issued direct tracking.
 - [x] Verify three real listings, loaded images, direct booking click, noindex experience document and desktop/mobile layout; nine attribution tests pass, build OK. Pilot remains unpublished and noindex.
+## New destinations (66 total, 6 waves) — plan 2026-10-22
+- [x] Wave 1: 12 gateway cities published (San Francisco, Los Angeles, Miami, Orlando, Denver, Boston, Honolulu, Phoenix, Tucson, Salt Lake City, Portland, Williams) with 48 guides
+- [ ] Wave 2: remaining entry cities (12) — next month's AI credits
+- [ ] Wave 3: winter/desert season (12)
+- [ ] Wave 4: history on the road (12)
+- [ ] Wave 5: summer mountains & wellness (12)
+- [ ] Wave 6: finish 6 catalog places (Badlands, Beartooth, Blue Ridge, Jean Lafitte, Lost Maples, Tallgrass Prairie)
