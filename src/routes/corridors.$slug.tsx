@@ -10,6 +10,7 @@ import { getLoopStops } from "@/lib/data/guides.functions";
 import { SITE } from "@/lib/seo/flyDrive";
 import { haversineMiles, suggestedDays } from "@/lib/seo/guides";
 import { getCorridor } from "@/lib/seo/corridors";
+import { CorridorBookings } from "@/components/guides/CorridorBookings";
 
 const RoadTripMap = lazy(() => import("@/components/destination/RoadTripMap"));
 
@@ -23,7 +24,8 @@ export const Route = createFileRoute("/corridors/$slug")({
   },
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
-    const { corridor, url } = loaderData;
+    const { corridor, url, stops } = loaderData;
+    const image = stops[1]?.heroImage ?? stops[0]?.heroImage;
     const title = `${corridor.title}: ${corridor.idealDays} Road Trip for International Visitors — MiniaLife`;
     const description = corridor.intro.slice(0, 300);
     return {
@@ -34,6 +36,7 @@ export const Route = createFileRoute("/corridors/$slug")({
         { property: "og:description", content: description },
         { property: "og:type", content: "article" },
         { name: "twitter:card", content: "summary_large_image" },
+        ...(image?.startsWith("https://") ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : []),
         ...(corridor.pilot ? [{ name: "robots", content: "noindex" }] : []),
       ],
       links: [{ rel: "canonical", href: url }],
@@ -69,6 +72,10 @@ function Page() {
             </ClientOnly>
           </div>
           <p className="mt-2 text-xs text-muted-foreground">{corridor.intro}</p>
+        </GuideSection>
+
+        <GuideSection title="Start in Las Vegas" intro="Arrange your arrival, choose your wheels and get connected before the first park day.">
+          <CorridorBookings slug={corridor.slug} airport={corridor.gateway.code} />
         </GuideSection>
 
         <GuideSection title="Before you fly: essentials for overseas visitors">
@@ -109,6 +116,10 @@ function Page() {
             })}
             <li className="ml-6 flex items-center gap-2 text-sm text-muted-foreground"><MapPin className="h-4 w-4" /> Return to {first.name} and drop the car at {corridor.gateway.code}.</li>
           </ol>
+        </GuideSection>
+
+        <GuideSection title="Experiences worth planning ahead" intro="A guided canyon visit, a Zion ride or a Las Vegas add-on: choose what fits your loop and allow time for the meeting point.">
+          <iframe src={`/experiences/${corridor.slug}`} title="Viator experiences along the Grand Circle" loading="lazy" className="h-[1750px] w-full border-0 bg-background sm:h-[650px]" />
         </GuideSection>
 
         <GuideSection title="Quick answers"><GuideFaq faqs={corridor.faqs} /></GuideSection>

@@ -64,5 +64,10 @@
 
 ## Direct Viator activity integration
 - [x] Record confirmed direct affiliate parameters and review the supplied API licence conditions and sandbox/production status.
-- [ ] Securely connect and verify production API access; blocked until the owner completes Viator contact details and creates a production key. The first connector approval was cancelled before execution; no connection was created.
-- [ ] Replace generic activity recommendations with provider-sourced listings after access verification; comply with Viator content indexing and own-domain restrictions.
+- [x] Verify securely saved VIATOR_API_KEY against production search: real products and account-attributed links return 200. Bulk product access returns 403; use the permitted search endpoint.
+- [ ] Replace generic destination activity recommendations site-wide; outside the approved Grand Circle pilot scope, awaiting a separate rollout request.
+
+## Grand Circle corridor partnerships
+- [x] Add compact flight, Motorhome Republic, EconomyBookings and Airalo booking links below the map.
+- [x] Add three production Viator products for Page, Zion and Las Vegas, with provider photos, current starting prices, ratings and API-issued direct tracking.
+- [x] Verify three real listings, loaded images, direct booking click, noindex experience document and desktop/mobile layout; nine attribution tests pass, build OK. Pilot remains unpublished and noindex.
