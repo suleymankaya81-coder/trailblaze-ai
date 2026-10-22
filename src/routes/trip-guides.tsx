@@ -17,14 +17,14 @@ const FAMILIES = [
   { to: "/destinations", label: "All Destinations", text: "Every place with its map, day-by-day plan and stays." },
 ] as const;
 
-export const Route = createFileRoute("/guides/")({
+export const Route = createFileRoute("/trip-guides")({
   head: () => ({
     meta: [
       { title }, { name: "description", content: description },
       { property: "og:title", content: title }, { property: "og:description", content: description },
       { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: `${SITE}/guides` }],
+    links: [{ rel: "canonical", href: `${SITE}/trip-guides` }],
   }),
   component: Page,
 });

@@ -24,7 +24,7 @@ export function GuideHub({ family, kicker, title, intro, entries }: { family: Hu
       <Header />
       <main className="container-page py-14 md:py-20">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-          <Link to="/guides" className="hover:underline">Trip Guides</Link> · {kicker}
+          <Link to="/trip-guides" className="hover:underline">Trip Guides</Link> · {kicker}
         </p>
         <h1 className="mt-3 max-w-3xl font-display text-4xl font-bold text-foreground md:text-5xl">{title}</h1>
         <p className="mt-4 max-w-2xl text-muted-foreground">{intro}</p>

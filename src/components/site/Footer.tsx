@@ -8,7 +8,7 @@ const groups = [
     { to: "/destinations", label: "All Destinations" },
   ] },
   { title: "Trip Guides", links: [
-    { to: "/guides", label: "All Trip Guides" },
+    { to: "/trip-guides", label: "All Trip Guides" },
     { to: "/fly-and-drive", label: "Fly & Drive" },
     { to: "/rv-camping", label: "RV & Camping" },
     { to: "/no-reservation", label: "No Reservation" },

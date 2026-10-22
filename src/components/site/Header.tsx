@@ -7,7 +7,7 @@ const NAV = [
   { to: "/destinations", params: undefined, label: "Destinations" },
   { to: "/road-trips", params: undefined, label: "Road Trips" },
   { to: "/corridors", params: undefined, label: "Gateway Road Trips" },
-  { to: "/guides", params: undefined, label: "Trip Guides" },
+  { to: "/trip-guides", params: undefined, label: "Trip Guides" },
   { to: "/gear", params: undefined, label: "Gear Shop" },
   { to: "/about", params: undefined, label: "About" },
 ] as const;
