@@ -74,8 +74,5 @@
 ## New destinations (66 total, 6 waves) — plan 2026-10-22
 - [x] Wave 1: 12 gateway cities published (San Francisco, Los Angeles, Miami, Orlando, Denver, Boston, Honolulu, Phoenix, Tucson, Salt Lake City, Portland, Williams) with 48 guides
 - [x] Wave 2: 12 entry cities published (New York City, Philadelphia, Atlanta, Nashville, Houston, Dallas–Fort Worth, Sacramento, Charlotte, Minneapolis, Pittsburgh, San Antonio, St. Louis; Seward/Fairbanks already existed) with 48 guides
-- [ ] Waves 3–5 (36 places): paused to keep this month's AI credit allowance; resume on request
-- [ ] Wave 3: winter/desert season (12)
-- [ ] Wave 4: history on the road (12)
-- [ ] Wave 5: summer mountains & wellness (12)
+- [x] Waves 3–5: 36 places published in one run without search guides (20 planned names already existed and were replaced with new towns); all 36 pages verified
 - [ ] Wave 6: finish 6 catalog places (Badlands, Beartooth, Blue Ridge, Jean Lafitte, Lost Maples, Tallgrass Prairie)
