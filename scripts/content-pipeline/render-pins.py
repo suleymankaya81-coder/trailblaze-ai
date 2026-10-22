@@ -225,7 +225,9 @@ def gallery_credit(raw, i):
 
 def alt_photo(d, i=0):
     """A credited gallery photo, so CSV pins don't repeat the destination pin's cover."""
-    g = d.get("gallery") or []
+    # Gallery frames were never subject-reviewed (one showed equipment, not scenery),
+    # so CSV pins use the reviewed cover photo of their own destination.
+    g = []
     if len(g) > i and g[i].startswith("https://"):
         c = gallery_credit(d.get("photo_credit"), i)
         if c:
@@ -281,7 +283,7 @@ def items():
         first = ss[0]
         extra = {"stops": len(ss), "days": sum(pin_copy_v2.days_from(s["dur"]) for s in ss),
                  "stop_names": " → ".join(s["name"] for s in ss),
-                 "info": pin_copy_v2.join(pin_copy_v2.arrival(first.get("airport"), None), "free map with every stop")}
+                 "info": pin_copy_v2.join(pin_copy_v2.arrival("LAS" if kind == "corridor" else first.get("airport"), None), "free map with every stop")}
         pic = ss[1]
         img, cr = alt_photo(pic, 1 if len(pic.get("gallery") or []) > 1 else 0)
         add(f"{kind}:{slug}", kind, name, {**pic, "scenic_score": 10}, img, cr, f"{BASE}{path}", extra)
