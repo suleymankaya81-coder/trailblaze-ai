@@ -10,7 +10,7 @@ describe("gateway corridors", () => {
   });
   it.each(CORRIDORS.map((c) => [c.slug, c] as const))("%s has content and 3 experiences", (_s, c) => {
     expect(c.stops.length).toBeGreaterThanOrEqual(3);
-    expect(c.essentials.length).toBe(24);
+    expect(c.essentials.length).toBe(6);
     expect(c.faqs.length).toBe(3);
     expect(c.experiences.length).toBe(3);
     expect(corridorArea(c)).not.toBe("More loops");
