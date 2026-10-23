@@ -1,3 +1,4 @@
+import { MORE_CORRIDORS } from "./corridors.more";
 // International entry corridors: hand-written, reviewed copy for overseas visitors.
 // Pilot pages stay noindex until approved.
 export type Corridor = {
@@ -18,6 +19,8 @@ export type Corridor = {
   experiences: { search: string; stop: string; code?: string }[];
   /** Optional note shown between stops (places without their own guide). */
   legNotes?: Record<string, string>;
+  /** Region group on the /corridors hub. */
+  area?: string;
 };
 
 const ESTA = { title: "Entry: ESTA or visa", text: "Visa Waiver Program travellers need an approved ESTA before boarding. Apply only on the official U.S. government ESTA website and allow at least 72 hours." };
@@ -205,6 +208,15 @@ export const CORRIDORS: Corridor[] = [
     ],
     pilot: false,
   },
+  ...MORE_CORRIDORS,
 ];
 
 export const getCorridor = (slug: string) => CORRIDORS.find((c) => c.slug === slug) ?? null;
+
+const FIRST_WAVE_AREA: Record<string, string> = {
+  "grand-circle-from-las-vegas": "Southwest", "arizona-red-rocks-from-phoenix": "Southwest",
+  "california-icons-from-san-francisco": "West Coast", "pacific-northwest-from-seattle": "West Coast",
+  "colorado-rockies-from-denver": "Rocky Mountains", "florida-keys-loop-from-miami": "Southeast",
+};
+export const CORRIDOR_AREAS = ["West Coast", "Southwest", "Rocky Mountains", "Southeast", "Northeast", "Midwest, Texas & Alaska"];
+export const corridorArea = (c: Corridor) => c.area ?? FIRST_WAVE_AREA[c.slug] ?? "More loops";
