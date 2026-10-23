@@ -3,25 +3,26 @@ import { useQuery } from "@tanstack/react-query";
 import { ArrowUpRight, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getCorridorExperiences } from "@/lib/affiliates/corridorExperiences.functions";
+import { getCorridor } from "@/lib/seo/corridors";
 
 // An independently noindexed document keeps restricted provider content out of the original guide's indexable body.
 export const Route = createFileRoute("/experiences/$corridor")({
-  beforeLoad: ({ params }) => { if (params.corridor !== "grand-circle-from-las-vegas") throw notFound(); },
+  beforeLoad: ({ params }) => { const c = getCorridor(params.corridor); if (!c || c.pilot) throw notFound(); },
   head: () => ({ meta: [
-    { title: "Grand Circle Viator Experiences — MiniaLife" },
-    { name: "description", content: "Current Viator experiences along the Grand Circle, with provider photos and booking links." },
-    { property: "og:title", content: "Grand Circle Viator Experiences — MiniaLife" },
-    { property: "og:description", content: "Provider-sourced tours for Page, Zion and Las Vegas." },
+    { title: "Gateway Road Trip Viator Experiences — MiniaLife" },
+    { name: "description", content: "Current Viator experiences along this gateway road trip, with provider photos and booking links." },
+    { property: "og:title", content: "Gateway Road Trip Viator Experiences — MiniaLife" },
+    { property: "og:description", content: "Provider-sourced tours along MiniaLife gateway road trips." },
     { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" },
     { name: "robots", content: "noindex, nofollow, nosnippet" },
   ] }),
-  component: () => <ClientOnly fallback={<Loading />}><Experiences /></ClientOnly>,
+  component: () => { const { corridor } = Route.useParams(); return <ClientOnly fallback={<Loading />}><Experiences slug={corridor} /></ClientOnly>; },
 });
 
 function Loading() { return <div className="grid gap-4 p-1 sm:grid-cols-3" aria-label="Loading experiences">{[1, 2, 3].map((n) => <div key={n} className="h-[460px] animate-pulse rounded-lg bg-muted" />)}</div>; }
 
-function Experiences() {
-  const { data, isPending, isError, refetch } = useQuery({ queryKey: ["corridor-viator", "grand-circle-from-las-vegas"], queryFn: () => getCorridorExperiences({ data: { slug: "grand-circle-from-las-vegas" } }), staleTime: 15 * 60 * 1000, retry: false });
+function Experiences({ slug }: { slug: string }) {
+  const { data, isPending, isError, refetch } = useQuery({ queryKey: ["corridor-viator", slug], queryFn: () => getCorridorExperiences({ data: { slug } }), staleTime: 15 * 60 * 1000, retry: false });
   if (isPending) return <Loading />;
   if (isError || !data?.items.length) return <div className="p-5 text-sm text-muted-foreground"><p>Viator experiences are temporarily unavailable.</p><Button variant="outline" size="sm" className="mt-3" onClick={() => refetch()}>Try again</Button></div>;
   return <div className="bg-background p-1">
@@ -38,6 +39,6 @@ function Experiences() {
         </div>
       </article>)}
     </div>
-    <p className="mt-3 text-[11px] leading-relaxed text-muted-foreground">Photos, prices and ratings supplied by Viator. Availability is confirmed on Viator. Partner links · MiniaLife may earn a commission. The helicopter tour visits Grand Canyon West, not the national park’s South Rim; plan it from Las Vegas.</p>
+    <p className="mt-3 text-[11px] leading-relaxed text-muted-foreground">Photos, prices and ratings supplied by Viator. Availability is confirmed on Viator. Partner links · MiniaLife may earn a commission.{slug === "grand-circle-from-las-vegas" && " The helicopter tour visits Grand Canyon West, not the national park’s South Rim; plan it from Las Vegas."}</p>
   </div>;
 }

@@ -1,11 +1,5 @@
 import { tpLink } from "./travelpayouts";
 
-export const GRAND_CIRCLE_EXPERIENCES = [
-  { code: "142864P1", search: "Antelope Canyon tour Page Arizona", stop: "Page · Antelope Canyon" },
-  { code: "275883P1", search: "Zion National Park guided tour Springdale", stop: "Springdale · Zion" },
-  { code: "5847LASWIN", search: "Grand Canyon helicopter Las Vegas", stop: "Las Vegas · Grand Canyon West" },
-] as const;
-
 export function corridorPartnerLinks(slug: string) {
   return {
     flight: tpLink("aviasales", slug),

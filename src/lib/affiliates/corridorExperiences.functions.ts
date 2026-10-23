@@ -1,6 +1,7 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
-import { GRAND_CIRCLE_EXPERIENCES, verifiedViatorProductUrl } from "./corridorPartners";
+import { verifiedViatorProductUrl } from "./corridorPartners";
+import { getCorridor } from "@/lib/seo/corridors";
 
 type Product = {
   productCode: string;
@@ -16,11 +17,12 @@ export type CorridorExperience = {
 };
 
 export const getCorridorExperiences = createServerFn({ method: "GET" })
-  .inputValidator((data: unknown) => z.object({ slug: z.literal("grand-circle-from-las-vegas") }).parse(data))
-  .handler(async (): Promise<{ items: CorridorExperience[]; unavailable: boolean }> => {
+  .inputValidator((data: unknown) => z.object({ slug: z.string().max(80) }).parse(data))
+  .handler(async ({ data }): Promise<{ items: CorridorExperience[]; unavailable: boolean }> => {
     const key = process.env["VIATOR_API_KEY"];
-    if (!key) return { items: [], unavailable: true };
-    const results = await Promise.all(GRAND_CIRCLE_EXPERIENCES.map(async (selection): Promise<CorridorExperience | null> => {
+    const corridor = getCorridor(data.slug);
+    if (!key || !corridor || corridor.pilot) return { items: [], unavailable: true };
+    const raw = await Promise.all(corridor.experiences.map(async (selection): Promise<CorridorExperience | null> => {
       try {
         const response = await fetch("https://api.viator.com/partner/search/freetext", {
           method: "POST",
@@ -33,7 +35,8 @@ export const getCorridorExperiences = createServerFn({ method: "GET" })
           return null;
         }
         const body = await response.json() as { products?: { results?: Product[] } };
-        const product = body.products?.results?.find((p) => p.productCode === selection.code);
+        const list = body.products?.results ?? [];
+        const product = selection.code ? list.find((p) => p.productCode === selection.code) : list.find((p) => verifiedViatorProductUrl(p.productUrl) && p.images?.length);
         if (!product) return null;
         const url = verifiedViatorProductUrl(product.productUrl);
         const cover = product.images?.find((i) => i.isCover) ?? product.images?.[0];
@@ -50,5 +53,7 @@ export const getCorridorExperiences = createServerFn({ method: "GET" })
         return null;
       }
     }));
+    const seen = new Set<string>();
+    const results = raw.map((p) => (p && !seen.has(p.code) ? (seen.add(p.code), p) : null));
     return { items: results.filter((p): p is CorridorExperience => p !== null), unavailable: results.every((p) => p === null) };
   });
