@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-route
 import { ArrowRight, CheckCircle2, ChevronRight } from "lucide-react";
 
 import { Footer } from "@/components/site/Footer";
+import { ViatorPlaceBlock } from "@/components/destination/ViatorPlaceBlock";
 import { Header } from "@/components/site/Header";
 import { LandingOfferCard } from "@/components/landing/LandingOfferCard";
 import { getLandingBundle, type LandingBundle } from "@/lib/data/landingPages.functions";
@@ -205,6 +206,7 @@ function LandingPage() {
               </div>
             </section>
           )}
+          <ViatorPlaceBlock slug={destination.slug} name={destination.name} />
         </article>
 
         <aside className="min-w-0 space-y-4 lg:sticky lg:top-24 lg:self-start">

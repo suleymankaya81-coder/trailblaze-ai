@@ -2,6 +2,7 @@ import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
+import { ViatorPlaceBlock } from "@/components/destination/ViatorPlaceBlock";
 import { ArrivalPlan, BeforeYouLand, FlyDriveFaq, FlyDriveHero, RelatedLinks, RouteCard } from "@/components/flydrive/FlyDriveSections";
 import { getDestinationPageData } from "@/lib/data/destinations.functions";
 import { getAirportSiblings } from "@/lib/data/flyDrive.functions";
@@ -70,6 +71,7 @@ function FlyDrivePage() {
         <Section title="Before you land">
           <BeforeYouLand dest={dest} />
         </Section>
+        <section className="container-page pb-6"><ViatorPlaceBlock slug={dest.slug} name={dest.name} /></section>
         <Section title="Quick answers">
           <FlyDriveFaq faqs={faqs} />
         </Section>

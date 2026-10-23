@@ -1,4 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { ViatorPlaceBlock } from "@/components/destination/ViatorPlaceBlock";
 import { Caravan, Clock, Tent } from "lucide-react";
 
 import { Header } from "@/components/site/Header";
@@ -116,6 +117,7 @@ function Page() {
           </GuideSection>
         )}
 
+        <section className="container-page pb-6"><ViatorPlaceBlock slug={dest.slug} name={dest.name} /></section>
         <GuideSection title="Quick answers"><GuideFaq faqs={faqs} /></GuideSection>
         <section className="container-page pb-16"><FullGuideLink slug={dest.slug} name={dest.name} /></section>
       </main>

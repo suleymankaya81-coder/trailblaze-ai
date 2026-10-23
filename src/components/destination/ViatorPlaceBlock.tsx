@@ -1,0 +1,22 @@
+import { useEffect, useState } from "react";
+
+/** Live Viator tours for a destination, loaded in a noindexed frame that reports its height (hidden when empty). */
+export function ViatorPlaceBlock({ slug, name, className = "" }: { slug: string; name: string; className?: string }) {
+  const [height, setHeight] = useState<number | null>(null);
+  useEffect(() => {
+    const onMsg = (e: MessageEvent) => {
+      if (e.origin !== window.location.origin || e.data?.type !== "viator-place" || e.data.slug !== slug) return;
+      setHeight(Number(e.data.height) || 0);
+    };
+    window.addEventListener("message", onMsg);
+    return () => window.removeEventListener("message", onMsg);
+  }, [slug]);
+  if (height === 0) return null;
+  return (
+    <section className={className} aria-label={`Tours near ${name}`}>
+      <p className="mb-1 text-[11px] uppercase tracking-wide text-muted-foreground">Partner listings · Viator</p>
+      <h3 className="mb-3 font-display text-xl font-semibold text-foreground">Tours & experiences near {name}</h3>
+      <iframe src={`/experiences/place/${slug}`} title={`Viator tours near ${name}`} loading="lazy" style={{ height: height ?? 360 }} className="w-full border-0 bg-background" />
+    </section>
+  );
+}

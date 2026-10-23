@@ -5,6 +5,7 @@ import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
 import { getAffiliateAdapter } from "@/lib/affiliates";
 import { buildAwinLink } from "@/lib/affiliates/awin";
+import { withWebjetAffiliate } from "@/lib/affiliates/webjet";
 import { isBotUserAgent, hasAfsrcParam } from "@/lib/affiliates/compliance";
 
 const InputSchema = z.object({
@@ -61,8 +62,11 @@ export const trackAndRedirect = createServerFn({ method: "POST" })
       };
     }
 
-    // Motorhome Republic and REI are plain, non-affiliate links until a real partnership exists.
-    if (offer.partner === "motorhome_republic" || offer.partner === "rei") {
+    if (offer.partner === "motorhome_republic") {
+      return { redirectUrl: withWebjetAffiliate(offer.external_url) };
+    }
+    // REI is a plain, non-affiliate link until a real partnership exists.
+    if (offer.partner === "rei") {
       return { redirectUrl: offer.external_url };
     }
 

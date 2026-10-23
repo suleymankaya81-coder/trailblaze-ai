@@ -33,7 +33,7 @@ function useOfferClick(offer: OfferView, destinationSlug: string) {
 
 function linkMeta(offer: OfferView) {
   const label = partnerLabel(offer.partner);
-  const direct = offer.partner === "motorhome_republic" || offer.partner === "rei";
+  const direct = offer.partner === "rei";
   return {
     rel: direct ? "nofollow noopener noreferrer" : "sponsored nofollow noopener noreferrer",
     note: direct ? `Direct link · ${label ?? "external"}` : label ? `Partner link · ${label}` : "Partner link",
