@@ -1,3 +1,8 @@
+## October 23 rental partner cleanup
+- [ ] Correct malformed Airport Rentals live-search rendering and defaults.
+- [ ] Remove all homepage cards listed in the attachment.
+- [ ] Replace other rental providers sitewide with Motorhome Republic and two Airport Rentals car/SUV options; verify tracking and representative page flows.
+
 - [x] Provide covers on all 80 published search guides: retain 32 credited dedicated covers and reuse the matching destination's credited hero on the remaining 48.
 - [x] Remove misleading duplicated destination-cover images from partner cards on guide and destination pages.
 - [x] Verify all 80 guides' metadata, image fallback, and desktop/phone layout; published Lovable badge was confirmed hidden.
