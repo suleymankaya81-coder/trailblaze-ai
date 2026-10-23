@@ -29,7 +29,7 @@ export function RentalSearch() {
     el.dataset.loaded = "1";
     const t = TABS[tab];
     const s = document.createElement("script");
-    s.src = `https://${t.host}/widget/searchform.js?element_id=${id}&affiliate=minialife&target=_blank&pickup_country=&pickup_location=&dropoff_location=${t.extra}&language=en`;
+    s.src = `https://${t.host}/widget/searchform.js?element_id=${id}&affiliate=minialife&target=_blank&pickup_country=US&pickup_location=&dropoff_location=${t.extra}&language=en`;
     s.async = true;
     document.body.appendChild(s);
   }, [visible, tab]);
