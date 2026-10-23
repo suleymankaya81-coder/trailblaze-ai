@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useEffect, useRef } from "react";
 import { ArrowUpRight, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { getPlaceExperiences } from "@/lib/affiliates/viatorPlace.functions";
+import { getPlaceExperiences, tourCategory } from "@/lib/affiliates/viatorPlace.functions";
 
 // Noindexed frame: Viator provider content must stay out of indexable pages.
 export const Route = createFileRoute("/experiences/place/$slug")({
@@ -37,7 +37,9 @@ function Place({ slug }: { slug: string }) {
         {items.map((item) => <article key={item.code} className="flex min-w-0 flex-col overflow-hidden rounded-lg border border-border bg-card">
           <img src={item.image} alt={item.title} loading="lazy" className="aspect-[3/2] w-full object-cover" />
           <div className="flex flex-1 flex-col p-4">
-            <h3 className="font-display text-base font-semibold leading-snug text-foreground">{item.title}</h3>
+            <p className="text-[10px] uppercase tracking-wide text-muted-foreground">{item.category ?? tourCategory(item.title)}</p>
+            <h3 className="mt-1 font-display text-base font-semibold leading-snug text-foreground">{item.title}</h3>
+            {item.summary && <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{item.summary}</p>}
             {item.rating !== null && item.reviews > 0 && <p className="mt-2 flex items-center gap-1 text-xs text-foreground"><Star className="h-3.5 w-3.5 text-amber" />{item.rating.toFixed(1)} <span className="text-muted-foreground">({item.reviews.toLocaleString("en-US")} reviews)</span></p>}
             <p className="mb-4 mt-2 text-lg font-semibold text-foreground">{item.price !== null ? `From ${new Intl.NumberFormat("en-US", { style: "currency", currency: item.currency }).format(item.price)}` : "Check current price"}</p>
             <Button asChild size="sm" className="mt-auto rounded-lg"><a href={item.url} target="_blank" rel="sponsored nofollow noopener noreferrer">View on Viator<ArrowUpRight /></a></Button>
