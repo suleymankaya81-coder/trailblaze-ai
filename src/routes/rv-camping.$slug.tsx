@@ -7,6 +7,7 @@ import { Footer } from "@/components/site/Footer";
 import { RouteCard } from "@/components/flydrive/FlyDriveSections";
 import { HarvestHostsCard } from "@/components/destination/HarvestHostsCard";
 import { PartnerPhotoCard } from "@/components/destination/PartnerPhotoCard";
+import { AirportRentalsCards } from "@/components/destination/AirportRentalsCards";
 import { FullGuideLink, GuideFaq, GuideHero, GuideSection, HeroChip, ReservationPanel } from "@/components/guides/GuideSections";
 import { getDestinationPageData } from "@/lib/data/destinations.functions";
 import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
@@ -117,6 +118,9 @@ function Page() {
           </GuideSection>
         )}
 
+        <GuideSection title="Prefer a car and campground trip?">
+          <div className="grid gap-4 sm:grid-cols-2"><AirportRentalsCards slug={dest.slug} airportCode={dest.airportCode} /></div>
+        </GuideSection>
         <section className="container-page pb-6"><ViatorPlaceBlock slug={dest.slug} name={dest.name} /></section>
         <GuideSection title="Quick answers"><GuideFaq faqs={faqs} /></GuideSection>
         <section className="container-page pb-16"><FullGuideLink slug={dest.slug} name={dest.name} /></section>
