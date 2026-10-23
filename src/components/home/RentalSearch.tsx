@@ -39,7 +39,7 @@ export function RentalSearch() {
   // Each provider owns a global Republic namespace. Separate documents prevent
   // the RV widget from overwriting the car widget's templates and country lists.
   const src = `https://${t.host}/widget/searchform.js?element_id=VehicleSearchForm&affiliate=minialife&target=_blank&pickup_country=US&country=US&language=en`;
-  const documentHtml = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>
+  const documentHtml = `<!doctype html><html lang="en"><head><meta charset="utf-8"><base href="https://${t.host}/"><meta name="viewport" content="width=device-width,initial-scale=1"><style>
     :root{color-scheme:light}body{margin:0;font-family:Arial,sans-serif}#VehicleSearchForm{width:100%;min-height:300px}*{box-sizing:border-box}input,select{max-width:100%}
   </style></head><body><div id="VehicleSearchForm"></div><script>
     function report(){
