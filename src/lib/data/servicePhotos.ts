@@ -16,13 +16,21 @@ export function servicePhoto(category: ServicePhotoCategory, seed: string, offse
   return pool[(photoHash(seed) + offset) % pool.length];
 }
 
+export function airportRentalPhoto(kind: "car" | "suv", seed: string): Photo | undefined {
+  const matching = pools.car?.filter((photo) => kind === "suv"
+    ? /rav4|explorer|suzuki across/i.test(photo.subject)
+    : /seal|sedan/i.test(photo.subject));
+  if (!matching?.length) return servicePhoto("car", seed, kind === "suv" ? 1 : 0);
+  return matching[photoHash(seed) % matching.length];
+}
+
 // Choose by the offered service, never by its position in a filtered grid.
 export function serviceCategory(text: string, category: "stay" | "rental" | "gear"): ServicePhotoCategory | undefined {
   const t = text.toLowerCase();
   if (category === "rental") {
     if (/bike|bicycle|cycling/.test(t)) return "bike";
     if (/kayak|canoe/.test(t)) return "kayak";
-    if (/car rental|rentcars|sedan|suv|economybookings|qeeq/.test(t)) return "car";
+    if (/car rental|airport rentals|rentcars|sedan|suv|economybookings|qeeq/.test(t)) return "car";
     if (/campervan|sprinter|\bvan\b/.test(t)) return "campervan";
     if (/motorhome|class [abc]|\brv\b/.test(t)) return "rv";
     if (/tent/.test(t)) return "tent";

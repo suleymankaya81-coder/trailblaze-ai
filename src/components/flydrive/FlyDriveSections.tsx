@@ -14,6 +14,8 @@ import type { Photo } from "@/lib/data/destinationCardPhotos";
 import { permitFallback } from "@/components/destination/TripRadar";
 import { formatDriveShort, type Faq } from "@/lib/seo/flyDrive";
 import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
+import { airportRentalsLink } from "@/lib/affiliates/webjet";
+import { airportRentalPhoto } from "@/lib/data/servicePhotos";
 
 const PERMIT_LABEL = { high: "Reservations: high demand", moderate: "Reservations: moderate", none: "No entry permit" } as const;
 
@@ -122,7 +124,7 @@ export function ArrivalPlan({ dest }: { dest: DestinationView }) {
   const sub = `fly-drive-${dest.slug}`;
   return (
     <div className="space-y-4">
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 [&>*]:min-w-0">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 [&>*]:min-w-0">
         <StepCard
           n={1}
           icon={<Plane className="h-5 w-5" />}
@@ -136,12 +138,22 @@ export function ArrivalPlan({ dest }: { dest: DestinationView }) {
         <StepCard
           n={2}
           icon={<Car className="h-5 w-5" />}
-          title={`Car at ${dest.airportCode}`}
+          title={`Standard car at ${dest.airportCode}`}
           body={`Pick up at the airport and drive straight to ${dest.name}. Compare rental companies in one search.`}
-          href={tpLink("economybookings", sub)}
+          href={airportRentalsLink()}
           cta="Compare rentals"
-          brand="EconomyBookings"
-          photo={servicePhoto("car", dest.slug)}
+          brand="Airport Rentals"
+          photo={airportRentalPhoto("car", dest.slug)}
+        />
+        <StepCard
+          n={2}
+          icon={<Car className="h-5 w-5" />}
+          title={`SUV at ${dest.airportCode}`}
+          body="Select an SUV, pickup location and dates on Airport Rentals. Confirm prices and availability there."
+          href={airportRentalsLink()}
+          cta="Compare SUVs"
+          brand="Airport Rentals"
+          photo={airportRentalPhoto("suv", dest.slug)}
         />
         <StepCard
           n={3}

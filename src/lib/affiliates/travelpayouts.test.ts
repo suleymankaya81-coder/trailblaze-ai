@@ -1,9 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { nearGoCity, tpLink, ROAD_PREPARATION_PARTNERS } from "./travelpayouts";
+import { nearGoCity, tpLink, preparationLink, ROAD_PREPARATION_PARTNERS } from "./travelpayouts";
 
 describe("travelpayouts links", () => {
-  it("routes car rental to the approved EconomyBookings link", () => {
-    expect(tpLink(ROAD_PREPARATION_PARTNERS.car_rental, "moab")).toBe("https://economybookings.tpm.lv/Ldg7kknv?sub_id=moab");
+  it("routes car rental to the approved Airport Rentals link", () => {
+    expect(preparationLink(ROAD_PREPARATION_PARTNERS.car_rental, "moab")).toBe("https://www.airportrentals.com/?affiliate=minialife");
   });
   it("replaces offline maps with Radical Storage", () => {
     expect(ROAD_PREPARATION_PARTNERS.offline_maps).toBe("radicalstorage");

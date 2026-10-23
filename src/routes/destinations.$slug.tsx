@@ -3,7 +3,6 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { VrboSearchWidget } from "@/components/destination/VrboSearchWidget";
 import { HarvestHostsCard } from "@/components/destination/HarvestHostsCard";
 import { TravelpayoutsCards } from "@/components/destination/TravelpayoutsCards";
-import { airportRentalsLink } from "@/lib/affiliates/webjet";
 import { GetYourGuideWidget } from "@/components/destination/PartnerWidget";
 import { ViatorPlaceBlock } from "@/components/destination/ViatorPlaceBlock";
 import { useQuery } from "@tanstack/react-query";
@@ -67,7 +66,7 @@ import { getCapturedEmail, setCapturedEmail } from "@/lib/plans/session";
 import { getPublicLandingPagesForDestination } from "@/lib/data/landingPages.functions";
 import { LANDING_TYPE_LABEL } from "@/lib/data/landingTypes";
 import { offerPhoto, type Photo } from "@/lib/data/destinationCardPhotos";
-import { ROAD_PREPARATION_PARTNERS, tpLink } from "@/lib/affiliates/travelpayouts";
+import { ROAD_PREPARATION_PARTNERS, preparationLink } from "@/lib/affiliates/travelpayouts";
 
 // Search snippet: tagline plus the matching guide topics, kept within ~160 chars.
 function seoDescription(name: string, tagline: string | null, bestSeason: string | null): string {
@@ -762,7 +761,7 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
    4 — RENT BEFORE YOU GO
 ========================================================= */
 function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
-  const rentals = [...dest.rentals.filter((r) => r.partner === "motorhome_republic"), ...dest.rentals.filter((r) => r.partner !== "motorhome_republic")].slice(0, 5);
+  const rentals = dest.rentals.filter((r) => r.partner === "motorhome_republic").slice(0, 5);
 
   return (
     <section id="rentals" className="scroll-mt-24">
@@ -783,10 +782,6 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
         </div>
       )}
       <TravelpayoutsCards slug={dest.slug} name={dest.name} airportCode={dest.airportCode} />
-      <a href={airportRentalsLink()} target="_blank" rel="sponsored nofollow noopener noreferrer" className="mt-4 flex items-center justify-between gap-4 rounded-2xl border border-border bg-card p-4 transition hover:shadow-soft">
-        <span><span className="block text-[10px] uppercase text-muted-foreground">Partner link · Airport Rentals</span><span className="font-display text-base font-semibold text-foreground">Compare airport car rentals{dest.airportCode ? ` at ${dest.airportCode}` : ""}</span></span>
-        <ArrowRight className="h-4 w-4 shrink-0 text-foreground" />
-      </a>
     </section>
   );
 }
@@ -799,7 +794,7 @@ function RentalTile({ offer, destinationSlug, photo }: { offer: OfferView; desti
         {photo && <PhotoCredit photo={photo} />}
       </div>
       <div className="border-b border-border bg-beige/30 p-4">
-          <p className="text-sm font-semibold text-foreground">{offer.partner === "rentcars" ? `Car rental · ${offer.title}` : offer.title}</p>
+          <p className="text-sm font-semibold text-foreground">{offer.title}</p>
           <p className="mt-1 text-[11px] text-muted-foreground">
             {offer.priceValue != null
               ? `From $${offer.priceValue} / ${offer.priceUnit ?? "day"}`
@@ -901,7 +896,7 @@ function TravelServices({ dest }: { dest: DestinationView }) {
     insurance: { title: "Travel insurance", brand: "EKTA", sub: "Medical cover for international visitors" },
     esim: { title: "US eSIM data", brand: "Airalo", sub: "Get online on landing, no SIM swap" },
     offline_maps: { title: "Luggage storage", brand: "Radical Storage", sub: "Drop bags in the gateway city for the day" },
-    car_rental: { title: "Car Rental", brand: "EconomyBookings", sub: "Compare prices from top rental brands" },
+    car_rental: { title: "Car Rental", brand: "Airport Rentals", sub: "Compare standard cars and SUVs at the airport" },
   };
 
   return (
@@ -914,7 +909,7 @@ function TravelServices({ dest }: { dest: DestinationView }) {
       <ul className="mt-4 divide-y divide-border">
           {Object.entries(ROAD_PREPARATION_PARTNERS).map(([category, brand]) => {
             const detail = preparationDetails[category as keyof typeof preparationDetails];
-            const href = tpLink(brand, dest.slug);
+            const href = preparationLink(brand, dest.slug);
             return (
               <li key={category}>
                 <a href={href} target="_blank" rel="sponsored nofollow noopener noreferrer"
@@ -941,7 +936,7 @@ function TravelServices({ dest }: { dest: DestinationView }) {
             </li>
           ))}
       </ul>
-      <p className="mt-3 text-[11px] text-muted-foreground">Partner links via Travelpayouts. Minialife may earn a commission at no extra cost to you.</p>
+      <p className="mt-3 text-[11px] text-muted-foreground">Partner links via Travelpayouts and Webjet Group. Minialife may earn a commission at no extra cost to you.</p>
     </aside>
   );
 }
