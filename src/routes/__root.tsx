@@ -78,18 +78,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Minialife — Plan Your Next Outdoor Escape" },
-      {
-        name: "description",
-        content:
-          "Discover where to stay, what to rent, what to do, and what to pack — all in one personalized outdoor travel guide.",
-      },
-      { property: "og:title", content: "Minialife — Plan Your Next Outdoor Escape" },
-      {
-        property: "og:description",
-        content:
-          "Camping, glamping, RV travel, cabins and national parks — your complete outdoor trip in one place.",
-      },
+      { property: "og:site_name", content: "MiniaLife" },
       { name: "p:domain_verify", content: "aa60b4c89a7a633826f7c87a6fe468b9" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

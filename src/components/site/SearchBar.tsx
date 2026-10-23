@@ -35,14 +35,15 @@ export function SearchBar({ size = "lg" }: { size?: "lg" | "md" }) {
           (size === "lg" ? "max-w-2xl" : "max-w-xl")
         }
       >
-        <Search className="ml-3 h-5 w-5 text-muted-foreground" />
+        <Search className="ml-1 h-5 w-5 shrink-0 text-muted-foreground sm:ml-3" />
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="Where do you want to go? Try 'Yellowstone' or 'RV Adventure'"
-          className="flex-1 bg-transparent px-2 py-3 text-base text-foreground placeholder:text-muted-foreground focus:outline-none"
+          aria-label="Destination or trip type"
+          className="min-w-0 flex-1 bg-transparent px-1 py-3 text-base text-foreground placeholder:text-muted-foreground focus:outline-none sm:px-2"
         />
-        <Button type="submit" variant="hero" size={size === "lg" ? "lg" : "default"}>
+        <Button type="submit" variant="hero" size={size === "lg" ? "lg" : "default"} className="shrink-0 px-3 sm:px-6">
           Build my trip
         </Button>
       </form>
