@@ -35,6 +35,7 @@ import { Route as RoadTripsIndexRouteImport } from './routes/road-trips.index'
 import { Route as RoadTripsSlugRouteImport } from './routes/road-trips.$slug'
 import { Route as RvCampingIndexRouteImport } from './routes/rv-camping.index'
 import { Route as RvCampingSlugRouteImport } from './routes/rv-camping.$slug'
+import { Route as ExperiencesPlaceSlugRouteImport } from './routes/experiences.place.$slug'
 import { Route as GearCategoryKeyRouteImport } from './routes/gear.category.$key'
 
 const IndexRoute = IndexRouteImport.update({
@@ -170,6 +171,11 @@ const RvCampingSlugRoute = RvCampingSlugRouteImport.update({
   path: '/rv-camping/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ExperiencesPlaceSlugRoute = ExperiencesPlaceSlugRouteImport.update({
+  id: '/experiences/place/$slug',
+  path: '/experiences/place/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const GearCategoryKeyRoute = GearCategoryKeyRouteImport.update({
   id: '/gear/category/$key',
   path: '/gear/category/$key',
@@ -203,6 +209,7 @@ export interface FileRoutesByFullPath {
   '/no-reservation/': typeof NoReservationIndexRoute
   '/road-trips/': typeof RoadTripsIndexRoute
   '/rv-camping/': typeof RvCampingIndexRoute
+  '/experiences/place/$slug': typeof ExperiencesPlaceSlugRoute
   '/gear/category/$key': typeof GearCategoryKeyRoute
 }
 export interface FileRoutesByTo {
@@ -232,6 +239,7 @@ export interface FileRoutesByTo {
   '/no-reservation': typeof NoReservationIndexRoute
   '/road-trips': typeof RoadTripsIndexRoute
   '/rv-camping': typeof RvCampingIndexRoute
+  '/experiences/place/$slug': typeof ExperiencesPlaceSlugRoute
   '/gear/category/$key': typeof GearCategoryKeyRoute
 }
 export interface FileRoutesById {
@@ -262,6 +270,7 @@ export interface FileRoutesById {
   '/no-reservation/': typeof NoReservationIndexRoute
   '/road-trips/': typeof RoadTripsIndexRoute
   '/rv-camping/': typeof RvCampingIndexRoute
+  '/experiences/place/$slug': typeof ExperiencesPlaceSlugRoute
   '/gear/category/$key': typeof GearCategoryKeyRoute
 }
 export interface FileRouteTypes {
@@ -293,6 +302,7 @@ export interface FileRouteTypes {
     | '/no-reservation/'
     | '/road-trips/'
     | '/rv-camping/'
+    | '/experiences/place/$slug'
     | '/gear/category/$key'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -322,6 +332,7 @@ export interface FileRouteTypes {
     | '/no-reservation'
     | '/road-trips'
     | '/rv-camping'
+    | '/experiences/place/$slug'
     | '/gear/category/$key'
   id:
     | '__root__'
@@ -351,6 +362,7 @@ export interface FileRouteTypes {
     | '/no-reservation/'
     | '/road-trips/'
     | '/rv-camping/'
+    | '/experiences/place/$slug'
     | '/gear/category/$key'
   fileRoutesById: FileRoutesById
 }
@@ -381,6 +393,7 @@ export interface RootRouteChildren {
   NoReservationIndexRoute: typeof NoReservationIndexRoute
   RoadTripsIndexRoute: typeof RoadTripsIndexRoute
   RvCampingIndexRoute: typeof RvCampingIndexRoute
+  ExperiencesPlaceSlugRoute: typeof ExperiencesPlaceSlugRoute
   GearCategoryKeyRoute: typeof GearCategoryKeyRoute
 }
 
@@ -568,6 +581,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RvCampingSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/experiences/place/$slug': {
+      id: '/experiences/place/$slug'
+      path: '/experiences/place/$slug'
+      fullPath: '/experiences/place/$slug'
+      preLoaderRoute: typeof ExperiencesPlaceSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/gear/category/$key': {
       id: '/gear/category/$key'
       path: '/gear/category/$key'
@@ -605,6 +625,7 @@ const rootRouteChildren: RootRouteChildren = {
   NoReservationIndexRoute: NoReservationIndexRoute,
   RoadTripsIndexRoute: RoadTripsIndexRoute,
   RvCampingIndexRoute: RvCampingIndexRoute,
+  ExperiencesPlaceSlugRoute: ExperiencesPlaceSlugRoute,
   GearCategoryKeyRoute: GearCategoryKeyRoute,
 }
 export const routeTree = rootRouteImport
