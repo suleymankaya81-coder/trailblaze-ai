@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 import { servicePhoto } from "@/lib/data/servicePhotos";
 import { corridorPartnerLinks } from "@/lib/affiliates/corridorPartners";
 
-export function CorridorBookings({ slug, airport }: { slug: string; airport: string }) {
+export function CorridorBookings({ slug, airport, city }: { slug: string; airport: string; city: string }) {
   const links = corridorPartnerLinks(slug);
   const items = [
-    { key: "flight", icon: Plane, title: `Flights to Las Vegas · ${airport}`, brand: "Aviasales", detail: "Compare arrival dates before fixing your first night.", href: links.flight, photo: servicePhoto("flight", slug) },
+    { key: "flight", icon: Plane, title: `Flights to ${city} · ${airport}`, brand: "Aviasales", detail: "Compare arrival dates before fixing your first night.", href: links.flight, photo: servicePhoto("flight", slug) },
     { key: "motorhome", icon: Truck, title: "Take the loop by motorhome", brand: "Motorhome Republic", detail: "Compare professional fleets; check pickup hours and park vehicle limits.", href: links.motorhome, photo: servicePhoto("rv", slug) },
     { key: "car", icon: Car, title: "Prefer a car + hotel road trip?", brand: "EconomyBookings", detail: `Choose ${airport} pickup and return for your loop. Check the rental terms.`, href: links.car, photo: servicePhoto("car", slug) },
     { key: "esim", icon: Smartphone, title: "Mobile data for your U.S. trip", brand: "Airalo", detail: "Check phone compatibility and U.S. coverage. Download maps before entering the parks.", href: links.esim },
@@ -27,6 +27,6 @@ export function CorridorBookings({ slug, airport }: { slug: string; airport: str
         {item.photo && <p className="border-t border-border px-4 py-2 text-[10px] text-muted-foreground">Illustrative · <a href={item.photo.source} target="_blank" rel="noopener noreferrer" className="underline">{item.photo.credit} · {item.photo.license}</a></p>}
       </article>)}
     </div>
-    <p className="mt-4 text-xs text-muted-foreground">We may earn a commission from partner links, at no extra cost to you. Motorhome Republic is currently a direct, non-affiliate link. Select Las Vegas on the provider’s site; prices and availability are confirmed there.</p>
+    <p className="mt-4 text-xs text-muted-foreground">We may earn a commission from partner links, at no extra cost to you. Motorhome Republic is currently a direct, non-affiliate link. Select {city} on the provider’s site; prices and availability are confirmed there.</p>
   </>;
 }

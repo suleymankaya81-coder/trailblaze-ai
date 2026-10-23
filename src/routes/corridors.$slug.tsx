@@ -74,8 +74,8 @@ function Page() {
           <p className="mt-2 text-xs text-muted-foreground">{corridor.intro}</p>
         </GuideSection>
 
-        <GuideSection title="Start in Las Vegas" intro="Arrange your arrival, choose your wheels and get connected before the first park day.">
-          <CorridorBookings slug={corridor.slug} airport={corridor.gateway.code} />
+        <GuideSection title={`Start in ${corridor.gatewayCity}`} intro="Arrange your arrival, choose your wheels and get connected before the first park day.">
+          <CorridorBookings slug={corridor.slug} airport={corridor.gateway.code} city={corridor.gatewayCity} />
         </GuideSection>
 
         <GuideSection title="Before you fly: essentials for overseas visitors">
@@ -98,6 +98,7 @@ function Page() {
               return (
                 <li key={s.slug}>
                   {leg != null && <p className="mb-2 ml-6 flex items-center gap-2 text-xs text-muted-foreground"><RouteIcon className="h-3.5 w-3.5" /> ~{leg} mi straight-line from {stops[i - 1].name}</p>}
+                  {corridor.legNotes?.[s.slug] && <p className="mb-2 ml-6 text-xs text-muted-foreground">{corridor.legNotes[s.slug]}</p>}
                   <Link to="/destinations/$slug" params={{ slug: s.slug }} className="group grid grid-cols-[96px_minmax(0,1fr)] gap-4 overflow-hidden rounded-3xl border border-border bg-card p-3 shadow-soft transition hover:shadow-lg sm:grid-cols-[160px_minmax(0,1fr)]">
                     <div className="relative aspect-square overflow-hidden rounded-2xl bg-muted sm:aspect-[4/3]">
                       {s.heroImage && <img src={s.heroImage} alt={s.name} loading="lazy" className="h-full w-full object-cover" />}
@@ -118,8 +119,8 @@ function Page() {
           </ol>
         </GuideSection>
 
-        <GuideSection title="Experiences worth planning ahead" intro="A guided canyon visit, a Zion ride or a Las Vegas add-on: choose what fits your loop and allow time for the meeting point.">
-          <iframe src={`/experiences/${corridor.slug}`} title="Viator experiences along the Grand Circle" loading="lazy" className="h-[1750px] w-full border-0 bg-background sm:h-[650px]" />
+        <GuideSection title="Experiences worth planning ahead" intro="Guided tours along the loop: choose what fits your route and allow time for the meeting point.">
+          <iframe src={`/experiences/${corridor.slug}`} title={`Viator experiences along the ${corridor.title}`} loading="lazy" className="h-[1750px] w-full border-0 bg-background sm:h-[650px]" />
         </GuideSection>
 
         <GuideSection title="Quick answers"><GuideFaq faqs={corridor.faqs} /></GuideSection>
