@@ -6,13 +6,26 @@ import { verifiedViatorProductUrl } from "./corridorPartners";
 export type PlaceExperience = {
   code: string; title: string; url: string; image: string;
   price: number | null; currency: string; rating: number | null; reviews: number;
+  summary?: string; category?: string;
 };
 type Product = {
-  productCode: string; title: string; productUrl: string;
+  productCode: string; title: string; productUrl: string; description?: string;
   images?: { isCover?: boolean; variants: { width: number; url: string }[] }[];
   reviews?: { combinedAverageRating?: number; totalReviews?: number };
   pricing?: { currency: string; summary?: { fromPrice?: number } };
 };
+
+/** Our own category label from the tour title (not provider text). */
+export function tourCategory(title: string): string {
+  const t = title.toLowerCase();
+  const rules: [RegExp, string][] = [
+    [/helicopter|plane|flight|air tour/, "Scenic flight"], [/kayak|raft|boat|cruise|canoe|paddle/, "Water activity"],
+    [/hik|trek|walk/, "Guided hike"], [/jeep|4x4|off-road|atv|utv/, "Off-road tour"], [/bike|cycl/, "Bike tour"],
+    [/horse|trail ride/, "Horseback riding"], [/wildlife|safari|whale|bird/, "Wildlife tour"], [/photo/, "Photography tour"],
+    [/food|wine|tasting|brew/, "Food & drink"], [/museum|histor|ghost/, "History & culture"], [/bus|coach|day trip|sightseeing/, "Sightseeing day trip"],
+  ];
+  return rules.find(([re]) => re.test(t))?.[1] ?? "Tour & experience";
+}
 
 const DAY = 24 * 60 * 60 * 1000;
 
@@ -45,7 +58,9 @@ export const getPlaceExperiences = createServerFn({ method: "GET" })
         const cover = p.images?.find((i) => i.isCover) ?? p.images?.[0];
         const image = cover?.variants.filter((v) => v.width >= 480).sort((a, b) => b.width - a.width)[0]?.url;
         if (!url || !image?.startsWith("https://")) continue;
-        items.push({ code: p.productCode, title: p.title, url, image, price: p.pricing?.summary?.fromPrice ?? null, currency: p.pricing?.currency ?? "USD", rating: p.reviews?.combinedAverageRating ?? null, reviews: p.reviews?.totalReviews ?? 0 });
+        const desc = (p.description ?? "").replace(/\s+/g, " ").trim();
+        const summary = desc ? (desc.length > 160 ? `${desc.slice(0, 157).replace(/\s\S*$/, "")}…` : desc) : undefined;
+        items.push({ code: p.productCode, title: p.title, url, image, price: p.pricing?.summary?.fromPrice ?? null, currency: p.pricing?.currency ?? "USD", rating: p.reviews?.combinedAverageRating ?? null, reviews: p.reviews?.totalReviews ?? 0, summary, category: tourCategory(p.title) });
         if (items.length === 6) break;
       }
     } catch (e) {
