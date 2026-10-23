@@ -1,11 +1,13 @@
 import { tpLink } from "./travelpayouts";
+import { airportRentalsLink, motorhomeRepublicLink } from "./webjet";
 
 export function corridorPartnerLinks(slug: string) {
   return {
     flight: tpLink("aviasales", slug),
     car: tpLink("economybookings", slug),
     esim: tpLink("airalo", slug),
-    motorhome: "https://www.motorhomerepublic.com/usa/",
+    motorhome: motorhomeRepublicLink(),
+    airportRentals: airportRentalsLink(),
   };
 }
 

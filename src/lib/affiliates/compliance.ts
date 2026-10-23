@@ -44,6 +44,7 @@ export function hasAfsrcParam(url: string): boolean {
 // Reader always knows where a click takes them.
 const PARTNER_LABELS: Record<string, string> = {
   motorhome_republic: "Motorhome Republic",
+  airport_rentals: "Airport Rentals",
   hipcamp: "Hipcamp",
   glamping_hub: "Glamping Hub",
   arrive_outdoors: "Arrive Outdoors",
