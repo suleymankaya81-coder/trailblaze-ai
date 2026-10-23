@@ -3,6 +3,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { VrboSearchWidget } from "@/components/destination/VrboSearchWidget";
 import { HarvestHostsCard } from "@/components/destination/HarvestHostsCard";
 import { TravelpayoutsCards } from "@/components/destination/TravelpayoutsCards";
+import { airportRentalsLink } from "@/lib/affiliates/webjet";
 import { GetYourGuideWidget } from "@/components/destination/PartnerWidget";
 import { ViatorPlaceBlock } from "@/components/destination/ViatorPlaceBlock";
 import { useQuery } from "@tanstack/react-query";
@@ -782,6 +783,10 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
         </div>
       )}
       <TravelpayoutsCards slug={dest.slug} name={dest.name} airportCode={dest.airportCode} />
+      <a href={airportRentalsLink()} target="_blank" rel="sponsored nofollow noopener noreferrer" className="mt-4 flex items-center justify-between gap-4 rounded-2xl border border-border bg-card p-4 transition hover:shadow-soft">
+        <span><span className="block text-[10px] uppercase text-muted-foreground">Partner link · Airport Rentals</span><span className="font-display text-base font-semibold text-foreground">Compare airport car rentals{dest.airportCode ? ` at ${dest.airportCode}` : ""}</span></span>
+        <ArrowRight className="h-4 w-4 shrink-0 text-foreground" />
+      </a>
     </section>
   );
 }
