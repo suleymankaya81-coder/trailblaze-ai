@@ -181,3 +181,8 @@
   font-weight: 700;
   cursor: pointer;
 }
+
+/* Webjet search widgets: hide their branding, keep our card style */
+.webjet-form div.republic-section-button { background-image: none; }
+.webjet-form p.republic-number-one { display: none !important; }
+.webjet-form div.republic-logo { background-image: none !important; height: 0 !important; }
