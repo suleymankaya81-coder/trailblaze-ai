@@ -14,6 +14,7 @@ export const Route = createFileRoute("/fly-and-drive/")({
       { title }, { name: "description", content: description },
       { property: "og:title", content: title }, { property: "og:description", content: description },
       { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:url", content: `${SITE}/fly-and-drive` },
     ],
     links: [{ rel: "canonical", href: `${SITE}/fly-and-drive` }],
   }),

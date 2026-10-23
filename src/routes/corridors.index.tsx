@@ -5,9 +5,9 @@ import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { CORRIDORS, CORRIDOR_AREAS, corridorArea } from "@/lib/seo/corridors";
 
-const title = "Gateway Road Trips: Fly-In USA Road Trip Loops — MiniaLife";
+const title = "USA Airport Road Trip Loops: Gateway Road Trips — MiniaLife";
 const description =
-  "Road trips that start and end at a major U.S. arrival airport — national park loops with suggested days, entry and driving-licence notes for international visitors.";
+  "Free USA self-drive itineraries that return to your arrival airport. Compare national park and coastal loops, suggested days and notes for overseas visitors.";
 const url = "https://minialife.com/corridors";
 
 export const Route = createFileRoute("/corridors/")({
@@ -33,7 +33,7 @@ function Page() {
       <Header />
       <main className="container-page py-14 md:py-20">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">Gateway Road Trips</p>
-        <h1 className="mt-3 max-w-3xl font-display text-4xl font-bold text-foreground md:text-5xl">Fly in, drive the loop, fly home</h1>
+        <h1 className="mt-3 max-w-3xl font-display text-4xl font-bold text-foreground md:text-5xl">USA road trip loops from arrival airports</h1>
         <p className="mt-4 max-w-2xl text-muted-foreground">
           Each route starts and ends at a major U.S. airport, so you return the car where you picked it up. Built for visitors arriving from overseas.
         </p>

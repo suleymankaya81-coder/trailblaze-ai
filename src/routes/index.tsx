@@ -39,27 +39,27 @@ export const Route = createFileRoute("/")({
   }),
   head: () => ({
     meta: [
-      { title: "Minialife — Plan Your Next Outdoor Escape" },
+      { title: "USA Outdoor Road Trips & Self-Drive Itineraries — MiniaLife" },
       {
         name: "description",
         content:
-          "A complete outdoor trip in one place. Discover destinations, stays, RV rentals and gear for camping, glamping, road trips and national parks.",
+          "Free USA outdoor road trip itineraries: airport loops, national parks and RV routes. Plan your stops, check entry notes and book with travel partners.",
       },
-      { property: "og:title", content: "Minialife — Plan Your Next Outdoor Escape" },
+      { property: "og:title", content: "USA Outdoor Road Trips & Self-Drive Itineraries — MiniaLife" },
       {
         property: "og:description",
         content:
-          "Where to go, where to stay, what to rent, what to pack. Built for travelers who'd rather be outside.",
+          "Free USA outdoor road trip itineraries: airport loops, national parks and RV routes. Plan your stops, check entry notes and book with travel partners.",
       },
       {
         property: "og:image",
         content:
-          "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&q=80",
+          "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&h=630&q=75",
       },
       { property: "og:url", content: "https://minialife.com/" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&q=80" },
+      { name: "twitter:image", content: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&h=630&q=75" },
     ],
     links: [{ rel: "canonical", href: "https://minialife.com/" }],
   }),
@@ -95,8 +95,8 @@ const planIncludes = [
   },
   {
     icon: Compass,
-    title: "RV & gear rentals",
-    blurb: "From Sprinter vans to kayaks, ready when you arrive.",
+    title: "Choose your wheels",
+    blurb: "Compare RV and campervan rentals, airport cars and SUVs with our travel partners.",
   },
   {
     icon: Sparkles,
@@ -105,8 +105,8 @@ const planIncludes = [
   },
   {
     icon: Wallet,
-    title: "Realistic budget",
-    blurb: "Stays, fuel, food and fun — all the real numbers.",
+    title: "Before you set off",
+    blurb: "Destination-specific entry notes and seasonal considerations before you book.",
   },
   {
     icon: MapPin,
@@ -373,8 +373,8 @@ function HomePage() {
               A complete trip plan, free.
             </h2>
             <p className="mt-5 text-off-white/80">
-              Pick any destination — we put together the stays, rentals, things to do, gear
-              and budget for you.
+              Choose a prepared itinerary, explore the stops and check entry notes.
+              Book flights, stays, vehicles and experiences separately with our travel partners.
             </p>
             <div className="mt-8">
               <Button asChild variant="hero" size="xl">
@@ -430,29 +430,30 @@ function HomeHero() {
 
         <div className="container-page relative z-10 w-full pb-14 text-off-white md:pb-20">
           <p className="text-xs font-bold uppercase tracking-[0.22em] text-off-white/75">
-            Outdoor trip planning, simplified
+            MiniaLife · Outdoor Travel & Road Trips
           </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl leading-[1.05] md:text-6xl">
-            One destination. One plan. Everything you need to go.
+            USA outdoor road trips
           </h1>
+          <p className="mt-4 max-w-2xl text-base text-off-white/90">Free self-drive itineraries, national park loops and arrival plans — for visitors flying in and travelers already on the road.</p>
 
           <div className="mt-8 max-w-2xl">
             <SearchBar size="lg" />
           </div>
 
           <div className="mt-5 flex items-center gap-4 text-sm">
-            <a
-              href="#rentals-gear"
+            <Link
+              to="/corridors"
               className="font-medium text-off-white/80 hover:text-off-white hover:underline"
             >
-              RV Rentals
-            </a>
+              Gateway Road Trips
+            </Link>
             <span className="h-1 w-1 rounded-full bg-off-white/40" />
             <Link
-              to="/gear"
+              to="/trip-guides"
               className="font-medium text-off-white/80 hover:text-off-white hover:underline"
             >
-              Curated Gear Picks
+              All Trip Guides
             </Link>
           </div>
         </div>

@@ -10,6 +10,7 @@ import { getLoopStops } from "@/lib/data/guides.functions";
 import { SITE } from "@/lib/seo/flyDrive";
 import { haversineMiles, suggestedDays } from "@/lib/seo/guides";
 import { getCorridor } from "@/lib/seo/corridors";
+import { buildCorridorJsonLd, corridorSearchDescription, corridorSearchTitle } from "@/lib/seo/corridorSeo";
 import { CorridorBookings } from "@/components/guides/CorridorBookings";
 
 const RoadTripMap = lazy(() => import("@/components/destination/RoadTripMap"));
@@ -26,8 +27,8 @@ export const Route = createFileRoute("/corridors/$slug")({
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
     const { corridor, url, stops } = loaderData;
     const image = stops[1]?.heroImage ?? stops[0]?.heroImage;
-    const title = `${corridor.title}: ${corridor.idealDays} Road Trip for International Visitors — MiniaLife`;
-    const description = corridor.intro.slice(0, 300);
+    const title = `${corridorSearchTitle(corridor)} — MiniaLife`;
+    const description = corridorSearchDescription(corridor);
     return {
       meta: [
         { title },
@@ -35,11 +36,13 @@ export const Route = createFileRoute("/corridors/$slug")({
         { property: "og:title", content: title },
         { property: "og:description", content: description },
         { property: "og:type", content: "article" },
+        { property: "og:url", content: url },
         { name: "twitter:card", content: "summary_large_image" },
         ...(image?.startsWith("https://") ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : []),
         ...(corridor.pilot ? [{ name: "robots", content: "noindex" }] : []),
       ],
       links: [{ rel: "canonical", href: url }],
+      scripts: [{ type: "application/ld+json", children: JSON.stringify(buildCorridorJsonLd(corridor, stops, url)) }],
     };
   },
   component: Page,
@@ -57,7 +60,7 @@ function Page() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <GuideHero image={stops[1]?.heroImage ?? first.heroImage} kicker={`International entry route · ${corridor.region}`} title={corridor.title} crumbs={<><Link to="/" className="hover:underline">Home</Link> / <Link to="/road-trips" className="hover:underline">Road trips</Link></>}>
+        <GuideHero image={stops[1]?.heroImage ?? first.heroImage} kicker={`Gateway Road Trip · ${corridor.region}`} title={corridorSearchTitle(corridor)} crumbs={<><Link to="/" className="hover:underline">Home</Link> / <Link to="/corridors" className="hover:underline">Gateway Road Trips</Link></>}>
           <HeroChip icon={<Plane className="h-4 w-4" />}>Fly into {corridor.gateway.code}</HeroChip>
           <HeroChip icon={<CalendarDays className="h-4 w-4" />}>{corridor.idealDays}</HeroChip>
           <HeroChip icon={<RouteIcon className="h-4 w-4" />}>~{miles} mi loop (straight-line)</HeroChip>
