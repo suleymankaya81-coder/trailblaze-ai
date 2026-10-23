@@ -1,7 +1,7 @@
 ## October 23 positioning-led competitor analysis and SEO
-- [ ] Verify closest business substitutes and actual search competitors; save a sourced report and keyword-to-existing-page priorities.
-- [ ] Improve existing homepage and gateway/hub metadata and navigation where the investigation finds concrete gaps; do not create new satellite guides.
-- [ ] Verify updated pages, relevant tests and search-data access; publishing requires the owner's request.
+- [x] Verify closest business substitutes and actual search competitors; save a sourced report and keyword-to-existing-page priorities (marketing/minialife-rakip-seo-2026-10-23_v2.md).
+- [x] Improve existing homepage and gateway/hub metadata and navigation; add visible-order gateway structured data; no new satellite guides.
+- [x] Verify 11 representative pages, 30 tests, homepage-to-SFO navigation and phone search; read GSC through the selected https://minialife.com/ property (6 clicks/29 impressions; four priority routes not indexed). Preview build OK; publishing requires the owner's request.
 
 ## October 23 rental partner cleanup
 - [x] Isolate conflicting rental widget scripts, strip malformed heading fragments, and show a tracked search button instead of empty fields.
