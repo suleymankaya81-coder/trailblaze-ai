@@ -1,7 +1,7 @@
 """Tier rollout step 2: write /tmp/wave/<slug>.json (from prepare-wave.py) into
 the database and the app's bundled data. Destinations stay unpublished here.
   - destinations row: photos + credits, location, airport, drive, trip summary
-  - offers: the same partner set every live destination has (Awin + Motorhome Republic/REI direct)
+  - offers: the same partner set every live destination has (Awin + Webjet rentals + REI direct)
   - src/data/routes.json: precomputed airport -> destination line
   - src/data/destinationCardPhotos.wave.json + public/images/destination-cards/*: activity photos
 Re-running is safe: offers for the slug are replaced, everything else is overwritten.
@@ -66,8 +66,8 @@ def offers(d, dest_id):
         ("stay", "harvest_hosts", "awin", 111454, "RV Park", f"Harvest Hosts stays on the way to {name}",
          "https://www.harvesthosts.com", None, None, None,
          "Membership for overnight RV stays at farms, wineries and other unique spots along your route.", None, None),
-        ("rv_rental", "rentcars", "awin", 18808, "Car rental", f"Car rentals at {code}",
-         "https://www.rentcars.com/en/", None, None, None,
+        ("rv_rental", "airport_rentals", None, None, "Car rental", f"Standard car rentals at {code}",
+         "https://www.airportrentals.com/?affiliate=minialife", None, None, None,
          "Compare rental companies at the nearest airport in one search.", None, None),
         ("rv_rental", "motorhome_republic", None, None, "RV", "Class C Motorhome — Sleeps 4",
          f"https://www.motorhomerepublic.com/usa/", "$245/day", 245, "day",

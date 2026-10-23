@@ -1,4 +1,3 @@
-import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   ArrowRight,
@@ -22,51 +21,22 @@ import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { SearchBar } from "@/components/site/SearchBar";
 import { Button } from "@/components/ui/button";
-import { offerPhoto } from "@/lib/data/destinationCardPhotos";
 import { servicePhoto, type ServicePhotoCategory } from "@/lib/data/servicePhotos";
-import { PartnerPhotoCard } from "@/components/destination/PartnerPhotoCard";
-import { tpLink } from "@/lib/affiliates/travelpayouts";
-import rental1 from "@/assets/home-rental-1.jpg";
-import rental2 from "@/assets/home-rental-2.jpg";
-import rental3 from "@/assets/home-rental-3.jpg";
-import rental4 from "@/assets/home-rental-4.jpg";
-import rental5 from "@/assets/home-rental-5.jpg";
-import rental6 from "@/assets/home-rental-6.jpg";
-import rental7 from "@/assets/home-rental-7.jpg";
-import rental8 from "@/assets/home-rental-8.jpg";
-import rvImage from "@/assets/home-rv.jpg";
-import campervanImage from "@/assets/home-campervan.jpg";
-import bikeImage from "@/assets/home-bike.jpg";
+import { AirportRentalsCards } from "@/components/destination/AirportRentalsCards";
 import { RentalSearch } from "@/components/home/RentalSearch";
-import kayakImage from "@/assets/home-kayak.jpg";
 import {
-  getFeaturedGearOffers,
   getHomepageDestinations,
   TRIP_TAG_OPTIONS,
-  type FeaturedGearOffer,
   type HomepageDestination,
 } from "@/lib/data/destinations.functions";
 
 export const Route = createFileRoute("/")({
-  loader: async (): Promise<{
-    gearOffers: FeaturedGearOffer[];
-    homeDestinations: HomepageDestination[];
-  }> => {
-    // Defensive: both of these are homepage nice-to-haves, so a Supabase
-    // hiccup on either should just hide that section, never take down the
-    // whole homepage.
-    const [gearOffers, homeDestinations] = await Promise.all([
-      getFeaturedGearOffers().catch((err) => {
-        console.error("[/] getFeaturedGearOffers failed", err);
-        return [];
-      }),
-      getHomepageDestinations().catch((err) => {
-        console.error("[/] getHomepageDestinations failed", err);
-        return [];
-      }),
-    ]);
-    return { gearOffers, homeDestinations };
-  },
+  loader: async (): Promise<{ homeDestinations: HomepageDestination[] }> => ({
+    homeDestinations: await getHomepageDestinations().catch((err) => {
+      console.error("[/] getHomepageDestinations failed", err);
+      return [];
+    }),
+  }),
   head: () => ({
     meta: [
       { title: "Minialife — Plan Your Next Outdoor Escape" },
@@ -99,7 +69,6 @@ export const Route = createFileRoute("/")({
 const img = (id: string, w = 1200) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
 
-const homepageRentalImages = [rental1, rental2, rental3, rental4, rental5, rental6, rental7, rental8];
 
 // Icon-forward, not photo-forward — deliberately: this site already has
 // one image-mismatch incident behind it, and there's no real per-tag
@@ -165,13 +134,10 @@ const stories = [
 ];
 
 function HomePage() {
-  const { gearOffers, homeDestinations } = Route.useLoaderData();
+  const { homeDestinations } = Route.useLoaderData();
   const largeDestinations = homeDestinations.slice(0, 3);
   const compactDestinations = homeDestinations.slice(3, 6);
-  const usedRentalPhotos = new Set([
-    servicePhoto("bike", "homepage-partners")?.url,
-    servicePhoto("car", "homepage-partners")?.url,
-  ]);
+
 
   return (
     <div className="bg-background">
@@ -296,107 +262,18 @@ function HomePage() {
         </div>
       </section>
 
-      {/* RENTALS & GEAR — real Supabase offers, single section (no static placeholders) */}
-      {gearOffers.length > 0 && (
-        <section id="rentals-gear" className="bg-beige py-20">
-          <div className="container-page">
-            <div className="mb-10 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
-              <div>
-                <p className="text-xs font-bold uppercase tracking-[0.22em] text-foreground/60">
-                  Rental ideas
-                </p>
-                <h2 className="mt-2 max-w-2xl font-serif text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-                  Rentals and gear worth considering
-                </h2>
-              </div>
-              <p className="max-w-xs text-sm text-muted-foreground">
-                RVs, campervans, bikes, cars and outdoor gear. Photos are illustrative and prices are
-                estimates — check the partner site for current availability and pricing.
-              </p>
-            </div>
-
-            <RentalSearch />
-            <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-              {([{ brand: "bikesbooking" as const, name: "BikesBooking", category: "bike" as const, title: "Bike & e-bike rentals" }, { brand: "economybookings" as const, name: "EconomyBookings", category: "car" as const, title: "Compare road-trip rental cars" }]).map((item) => {
-                const photo = servicePhoto(item.category, "homepage-partners");
-                return photo ? <PartnerPhotoCard key={item.brand} brand={item.name} title={item.title} href={tpLink(item.brand, "homepage")} photo={photo} /> : null;
-              })}
-              {gearOffers.map((offer, index) => {
-                // Offers without listing photography use the same credited,
-                // explicitly illustrative photos as the destination cards.
-                const rentalIndex = /car rental/i.test(offer.title) ? 2 : /van/i.test(offer.title) ? 1 : 0;
-                const gearIndex = /bottle|water/i.test(offer.title) ? 1
-                  : /wool|layer/i.test(offer.title) ? 2
-                  : /lamp|light/i.test(offer.title) ? 3
-                  : /first.?aid/i.test(offer.title) ? 4
-                  : /jacket/i.test(offer.title) ? 5 : 0;
-                let photo = offerPhoto(
-                  offer.destinationSlug,
-                  offer.category === "rv_rental" ? "rental" : "gear",
-                  offer.category === "rv_rental" ? rentalIndex : gearIndex,
-                  `${offer.title} ${offer.subcategory ?? ""}`,
-                );
-                for (let offset = 1; photo && usedRentalPhotos.has(photo.url) && offset < 20; offset++) {
-                  photo = offerPhoto(offer.destinationSlug, offer.category === "rv_rental" ? "rental" : "gear", index + offset, `${offer.title} ${offer.subcategory ?? ""}`);
-                }
-                if (photo) usedRentalPhotos.add(photo.url);
-                const generatedImage = /bike|bicycle/i.test(offer.title) ? bikeImage
-                  : /kayak/i.test(offer.title) ? kayakImage
-                  : offer.subcategory === "RV" ? rvImage
-                  : offer.subcategory === "Campervan" ? campervanImage
-                  : /car rental/i.test(offer.title) ? homepageRentalImages[index] : undefined;
-                const image = photo?.url || generatedImage;
-                if (!image) return null;
-                return (
-                <figure key={offer.id}>
-                <Link
-                  to="/destinations/$slug"
-                  params={{ slug: offer.destinationSlug }}
-                  className="group block overflow-hidden rounded-2xl border border-border bg-card"
-                >
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <img
-                      src={image}
-                      alt={photo ? `${photo.subject} — illustrative photo, not actual partner inventory` : `${offer.title} — AI-generated illustration`}
-                      loading="lazy"
-                      onError={(event) => {
-                        if (!generatedImage && photo && event.currentTarget.getAttribute("src") !== photo.url) {
-                          event.currentTarget.src = photo.url;
-                          event.currentTarget.alt = `${photo.subject} — illustrative photo`;
-                        }
-                      }}
-                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="p-5">
-                    <p className="text-xs uppercase tracking-wider text-muted-foreground">
-                      {offer.destinationName}
-                    </p>
-                    <h3 className="mt-1 text-base font-bold text-foreground">{offer.title}</h3>
-                    <p className="mt-1.5 font-serif text-lg font-semibold text-foreground">
-                      {offer.priceDisplay ??
-                        (offer.priceValue != null
-                          ? `$${offer.priceValue}${offer.priceUnit ? ` / ${offer.priceUnit}` : ""}`
-                          : `${estimatedFrom(`${offer.title} ${offer.subcategory ?? ""}`)} · estimate`)}
-                    </p>
-                  </div>
-                </Link>
-                {!photo && generatedImage ? (
-                  <figcaption className="mt-2 text-xs text-muted-foreground">
-                    AI-generated illustration · Not an actual rental listing
-                  </figcaption>
-                ) : photo && (
-                  <figcaption className="mt-2 text-xs text-muted-foreground">
-                    Illustrative photo · <a href={photo.source} target="_blank" rel="noopener noreferrer" className="underline">{photo.credit} · {photo.license}</a>
-                  </figcaption>
-                )}
-                </figure>
-                );
-              })}
-            </div>
+      <section id="rentals-gear" className="bg-beige py-20">
+        <div className="container-page">
+          <div className="mb-8">
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-foreground/60">Rental ideas</p>
+            <h2 className="mt-2 font-serif text-3xl font-bold text-foreground md:text-4xl">RV, campervan & airport car rentals</h2>
           </div>
-        </section>
-      )}
+          <RentalSearch />
+          <div className="grid gap-5 md:grid-cols-2">
+            <AirportRentalsCards slug="homepage" />
+          </div>
+        </div>
+      </section>
 
       {/* CURATED TRIP ESSENTIALS — gear framed as route support, not a store */}
       <section className="bg-background py-16">
