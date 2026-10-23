@@ -526,6 +526,24 @@ export type Database = {
           },
         ]
       }
+      viator_place_cache: {
+        Row: {
+          fetched_at: string
+          items: Json
+          slug: string
+        }
+        Insert: {
+          fetched_at?: string
+          items?: Json
+          slug: string
+        }
+        Update: {
+          fetched_at?: string
+          items?: Json
+          slug?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
