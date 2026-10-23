@@ -1,3 +1,8 @@
+## October 23 positioning-led competitor analysis and SEO
+- [ ] Verify closest business substitutes and actual search competitors; save a sourced report and keyword-to-existing-page priorities.
+- [ ] Improve existing homepage and gateway/hub metadata and navigation where the investigation finds concrete gaps; do not create new satellite guides.
+- [ ] Verify updated pages, relevant tests and search-data access; publishing requires the owner's request.
+
 ## October 23 rental partner cleanup
 - [x] Isolate conflicting rental widget scripts, strip malformed heading fragments, and show a tracked search button instead of empty fields.
 - [ ] Verify provider-hosted live forms with real location/date input: external widget fields do not load in the preview; provider script delivery must be available before this can be verified.
