@@ -35,7 +35,7 @@ function Page() {
         <Link to="/corridors" className="mt-10 flex flex-col gap-2 rounded-3xl border-2 border-forest bg-card p-6 shadow-soft transition hover:shadow-lg md:p-8">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-forest">Gateway Road Trips · Fly in, loop, fly home</p>
           <h2 className="font-display text-2xl font-semibold text-foreground md:text-3xl">Road trips from major arrival airports</h2>
-          <p className="max-w-2xl text-sm text-muted-foreground">Multi-week loops that start and end at a major U.S. airport, with entry, licence and park-pass notes for international visitors. Las Vegas, San Francisco, Miami, Seattle, Denver and Phoenix.</p>
+          <p className="max-w-2xl text-sm text-muted-foreground">Multi-week loops that start and end at a major U.S. airport, with entry, licence and park-pass notes for international visitors. 24 loops from Las Vegas, Los Angeles, San Francisco, Seattle, Salt Lake City, Denver, Boston, Chicago, Miami, Anchorage and more.</p>
           <span className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-primary">See all gateway road trips <ArrowUpRight className="h-4 w-4" /></span>
         </Link>
         <h2 className="mt-14 font-display text-2xl font-semibold text-foreground">All {LOOPS.length} loops</h2>
