@@ -37,12 +37,12 @@ function AffiliateDisclosurePage() {
           (via Awin), Vrbo and Expedia
           (via the Expedia Group Travel Creator Program), and travel brands available through
           Travelpayouts: Aviasales, EconomyBookings, QEEQ, BikesBooking, Klook, Tiqets, Go City,
-          EKTA, Airalo and Radical Storage. When you click one of these partner links and go on to book or
+          EKTA, Airalo, Radical Storage, and through the Webjet Group programme, Motorhome Republic and Airport Rentals. When you click one of these partner links and go on to book or
           purchase, we may earn a small commission. Links marked as partner links are tracked by
           the network on the partner's behalf.
         </p>
         <p>
-          Some buttons — for example Motorhome Republic rentals and REI gear — are ordinary direct links to
+          Some buttons — for example REI gear — are ordinary direct links to
           brands we are not paid by. They are labelled so you can tell the difference, and we earn
           nothing from them.
         </p>
