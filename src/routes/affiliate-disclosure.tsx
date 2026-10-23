@@ -36,7 +36,7 @@ function AffiliateDisclosurePage() {
           Minialife currently earns commissions through Harvest Hosts and RoverPass
           (via Awin), Vrbo and Expedia
           (via the Expedia Group Travel Creator Program), and travel brands available through
-          Travelpayouts: Aviasales, EconomyBookings, QEEQ, BikesBooking, Klook, Tiqets, Go City,
+          Travelpayouts: Aviasales, Klook, Tiqets, Go City,
           EKTA, Airalo, Radical Storage, and through the Webjet Group programme, Motorhome Republic and Airport Rentals. When you click one of these partner links and go on to book or
           purchase, we may earn a small commission. Links marked as partner links are tracked by
           the network on the partner's behalf.

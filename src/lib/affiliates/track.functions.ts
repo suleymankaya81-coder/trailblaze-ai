@@ -6,6 +6,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { getAffiliateAdapter } from "@/lib/affiliates";
 import { buildAwinLink } from "@/lib/affiliates/awin";
 import { withWebjetAffiliate } from "@/lib/affiliates/webjet";
+import { rentalPartnerUrl, isApprovedRental } from "@/lib/affiliates/rentalPolicy";
 import { isBotUserAgent, hasAfsrcParam } from "@/lib/affiliates/compliance";
 
 const InputSchema = z.object({
@@ -20,7 +21,7 @@ export const trackAndRedirect = createServerFn({ method: "POST" })
   .handler(async ({ data }): Promise<{ redirectUrl: string }> => {
     const { data: offer, error: offerError } = await supabase
       .from("offers")
-      .select("id, external_url, partner, network, network_mid")
+      .select("id, external_url, partner, network, network_mid, category")
       .eq("id", data.offerId)
       .maybeSingle();
 
@@ -28,6 +29,10 @@ export const trackAndRedirect = createServerFn({ method: "POST" })
     if (!offer || !offer.external_url) {
       throw new Error("Offer is not bookable yet");
     }
+
+    const rentalUrl = rentalPartnerUrl(offer.partner);
+    if (rentalUrl) return { redirectUrl: rentalUrl };
+    if (!isApprovedRental(offer.partner, offer.category)) throw new Error("Rental provider is no longer available");
 
     // Affiliate best practice: links already carrying afsrc=1 belong to another
     // affiliate — pass them through untouched, never re-affiliate them.

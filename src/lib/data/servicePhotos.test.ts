@@ -1,9 +1,16 @@
 import { describe, expect, it } from "vitest";
 import library from "@/data/servicePhotos.json";
 import { offerPhoto } from "./destinationCardPhotos";
-import { serviceCategory, servicePhoto } from "./servicePhotos";
+import { airportRentalPhoto, serviceCategory, servicePhoto } from "./servicePhotos";
 
 describe("service photo matching", () => {
+  it("uses distinct sedan and SUV subjects for Airport Rentals", () => {
+    const car = airportRentalPhoto("car", "homepage");
+    const suv = airportRentalPhoto("suv", "homepage");
+    expect(car?.subject).toMatch(/seal|sedan/i);
+    expect(suv?.subject).toMatch(/rav4|explorer|suzuki across/i);
+    expect(car?.url).not.toBe(suv?.url);
+  });
   it("distinguishes cars, campervans and bicycles", () => {
     expect(serviceCategory("Car rentals at JAC", "rental")).toBe("car");
     expect(serviceCategory("Sprinter Adventure Van", "rental")).toBe("campervan");

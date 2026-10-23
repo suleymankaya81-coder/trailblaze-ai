@@ -2,14 +2,15 @@ import { ArrowUpRight, Car, Plane, Smartphone, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { servicePhoto } from "@/lib/data/servicePhotos";
 import { corridorPartnerLinks } from "@/lib/affiliates/corridorPartners";
+import { airportRentalPhoto } from "@/lib/data/servicePhotos";
 
 export function CorridorBookings({ slug, airport, city }: { slug: string; airport: string; city: string }) {
   const links = corridorPartnerLinks(slug);
   const items = [
     { key: "flight", icon: Plane, title: `Flights to ${city} · ${airport}`, brand: "Aviasales", detail: "Compare arrival dates before fixing your first night.", href: links.flight, photo: servicePhoto("flight", slug) },
     { key: "motorhome", icon: Truck, title: "Take the loop by motorhome", brand: "Motorhome Republic", detail: "Compare professional fleets; check pickup hours and park vehicle limits.", href: links.motorhome, photo: servicePhoto("rv", slug) },
-    { key: "car", icon: Car, title: "Prefer a car + hotel road trip?", brand: "EconomyBookings", detail: `Choose ${airport} pickup and return for your loop. Check the rental terms.`, href: links.car, photo: servicePhoto("car", slug) },
-    { key: "airport", icon: Car, title: `Airport car rental at ${airport}`, brand: "Airport Rentals", detail: "Compare airport desks and on-site pickup for a same-airport return.", href: links.airportRentals },
+    { key: "car", icon: Car, title: `Standard car rentals at ${airport}`, brand: "Airport Rentals", detail: `Choose ${airport} pickup, dates and the standard car class on the partner site.`, href: links.car, photo: airportRentalPhoto("car", slug) },
+    { key: "airport", icon: Car, title: `SUV rentals at ${airport}`, brand: "Airport Rentals", detail: "Select an SUV on the partner site; confirm live prices, pickup and rental terms there.", href: links.airportRentals, photo: airportRentalPhoto("suv", slug) },
     { key: "esim", icon: Smartphone, title: "Mobile data for your U.S. trip", brand: "Airalo", detail: "Check phone compatibility and U.S. coverage. Download maps before entering the parks.", href: links.esim },
   ];
   return <>

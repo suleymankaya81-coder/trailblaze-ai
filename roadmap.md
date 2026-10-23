@@ -1,3 +1,9 @@
+## October 23 rental partner cleanup
+- [x] Isolate conflicting rental widget scripts, strip malformed heading fragments, and show a tracked search button instead of empty fields.
+- [ ] Verify provider-hosted live forms with real location/date input: external widget fields do not load in the preview; provider script delivery must be available before this can be verified.
+- [x] Remove all homepage cards listed in the attachment.
+- [x] Replace other rental providers in shared destination/guide paths with Motorhome Republic and two Airport Rentals car/SUV options; 504 stored car/service offers updated; seven representative page types return 200 with tracked links and loaded car/SUV photos; direct Airport Rentals click verified.
+
 - [x] Provide covers on all 80 published search guides: retain 32 credited dedicated covers and reuse the matching destination's credited hero on the remaining 48.
 - [x] Remove misleading duplicated destination-cover images from partner cards on guide and destination pages.
 - [x] Verify all 80 guides' metadata, image fallback, and desktop/phone layout; published Lovable badge was confirmed hidden.

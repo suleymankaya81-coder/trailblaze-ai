@@ -4,7 +4,7 @@ import { airportRentalsLink, motorhomeRepublicLink } from "./webjet";
 export function corridorPartnerLinks(slug: string) {
   return {
     flight: tpLink("aviasales", slug),
-    car: tpLink("economybookings", slug),
+    car: airportRentalsLink(),
     esim: tpLink("airalo", slug),
     motorhome: motorhomeRepublicLink(),
     airportRentals: airportRentalsLink(),

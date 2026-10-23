@@ -4,7 +4,7 @@ import { corridorPartnerLinks, verifiedViatorProductUrl } from "./corridorPartne
 describe("Grand Circle partner attribution", () => {
   it("uses the approved car and eSIM links with corridor attribution", () => {
     const links = corridorPartnerLinks("grand-circle-from-las-vegas");
-    expect(new URL(links.car).hostname).toBe("economybookings.tpm.lv");
+    expect(links.car).toBe("https://www.airportrentals.com/?affiliate=minialife");
     expect(new URL(links.esim).hostname).toBe("airalo.tpm.lv");
     expect(new URL(links.flight).searchParams.get("sub_id")).toBe("grand-circle-from-las-vegas");
     expect(links.motorhome).toBe("https://www.motorhomerepublic.com/usa/?affiliate=minialife");

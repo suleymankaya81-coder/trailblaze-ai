@@ -4,6 +4,8 @@ import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
 import type { Tables } from "@/integrations/supabase/types";
 import { parseTravelPlan, type TravelPlan } from "./travelPlan";
+import { isApprovedRental } from "@/lib/affiliates/rentalPolicy";
+import { withWebjetAffiliate } from "@/lib/affiliates/webjet";
 
 export type OfferView = {
   id: string;
@@ -80,7 +82,7 @@ function toOfferView(row: Tables<"offers">): OfferView {
     priceDisplay: row.price_display,
     priceValue: row.price_value,
     priceUnit: row.price_unit,
-    externalUrl: row.external_url,
+    externalUrl: row.external_url ? withWebjetAffiliate(row.external_url) : null,
     whyRecommended: row.why_recommended,
     description: row.description,
     duration: row.duration,
@@ -91,8 +93,7 @@ function toOfferView(row: Tables<"offers">): OfferView {
   };
 }
 
-// Awin and informational offers remain the default. Motorhome Republic rentals and REI
-// gear are explicit non-affiliate exceptions requested for destination pages.
+// Other services retain their existing networks; rentals use the exclusive Webjet partners.
 const SHOWN_NETWORKS = ["awin", "info"] as const;
 
 export const GLOBAL_SERVICE_CATEGORIES = [
@@ -142,10 +143,12 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
     const byCategory = (categories: Tables<"offers">["category"][]) =>
       (offers ?? [])
         .filter((o) => categories.includes(o.category))
+        .filter((o) => isApprovedRental(o.partner, o.category))
         .filter(
           (o) =>
             SHOWN_NETWORKS.some((network) => network === o.network) ||
             (o.partner === "motorhome_republic" && o.category === "rv_rental") ||
+            (o.partner === "airport_rentals" && o.category === "rv_rental") ||
             (o.partner === "rei" && o.category === "gear_purchase"),
         )
         .map(toOfferView);

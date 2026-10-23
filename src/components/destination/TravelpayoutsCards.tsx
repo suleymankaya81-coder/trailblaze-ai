@@ -5,6 +5,7 @@ import { getFlightPrice } from "@/lib/affiliates/flights.functions";
 import { servicePhoto, type ServicePhotoCategory } from "@/lib/data/servicePhotos";
 import { PartnerPhotoCard } from "./PartnerPhotoCard";
 import { offerPhoto } from "@/lib/data/destinationCardPhotos";
+import { AirportRentalsCards } from "./AirportRentalsCards";
 
 type Item = { brand: TpBrand; name: string; title: string; sub: string; icon: typeof Plane };
 
@@ -35,12 +36,13 @@ function Card({ item, slug }: { item: Item; slug: string }) {
   );
 }
 
-function Group({ title, items, slug }: { title: string; items: Item[]; slug: string }) {
+function Group({ title, items, slug, airportCode, rentals = false }: { title: string; items: Item[]; slug: string; airportCode?: string | null; rentals?: boolean }) {
   return (
     <div className="mt-6">
       <h3 className="mb-3 text-sm font-semibold text-foreground">{title}</h3>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {items.map((i) => <Card key={i.brand} item={i} slug={slug} />)}
+        {rentals && <AirportRentalsCards slug={slug} airportCode={airportCode} />}
       </div>
     </div>
   );
@@ -60,9 +62,6 @@ export function TravelpayoutsCards({ slug, name, airportCode }: { slug: string; 
 
   const getThere: Item[] = [
     { brand: "aviasales", name: "Aviasales", title: `Flights to${at || ` ${name}`}`, sub: flightSub, icon: Plane },
-    { brand: "economybookings", name: "EconomyBookings", title: `Rental cars at${at || " the airport"}`, sub: "Compares major rental brands in one search", icon: Car },
-    { brand: "qeeq", name: "QEEQ", title: "SUVs & road-trip cars", sub: "A second price check for bigger cars", icon: Car },
-    { brand: "bikesbooking", name: "BikesBooking", title: "Bike & e-bike rentals", sub: "Cruise scenic roads and town trails", icon: Bike },
   ];
   const doIt: Item[] = [
     { brand: "klook", name: "Klook", title: `Tours near ${name}`, sub: "Guided tours, day trips and attraction deals", icon: Ticket },
@@ -71,10 +70,10 @@ export function TravelpayoutsCards({ slug, name, airportCode }: { slug: string; 
   ];
   return (
     <div className="mt-8">
-      <Group title="Getting there & getting around" items={getThere} slug={slug} />
+      <Group title="Getting there & getting around" items={getThere} slug={slug} rentals airportCode={airportCode} />
       <Group title="Tours & tickets" items={doIt} slug={slug} />
       <p className="mt-3 text-[11px] text-muted-foreground">
-        Partner links via Travelpayouts. Prices are estimates; the partner's site shows live prices. Minialife may earn a commission at no extra cost to you.
+        Partner links via Travelpayouts and Webjet Group. The partner's site shows live prices and availability. Minialife may earn a commission at no extra cost to you.
       </p>
     </div>
   );

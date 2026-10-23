@@ -11,6 +11,7 @@ import { LANDING_TYPE_LABEL, LANDING_TYPE_OFFERS } from "@/lib/data/landingTypes
 import { landingCoverAssets } from "@/lib/data/landingCoverAssets";
 import { offerPhoto, type Photo } from "@/lib/data/destinationCardPhotos";
 import { InlineOfferCta } from "@/components/landing/LandingOfferCard";
+import { AirportRentalsCards } from "@/components/destination/AirportRentalsCards";
 import { factItems, QuickFacts, SeasonPicker, SectionBlock, seasonOf, type LandingFacts } from "@/components/landing/DecisionBlocks";
 
 const BASE = "https://minialife.com";
@@ -35,7 +36,7 @@ export const Route = createFileRoute("/$landing")({
     const tagged = dest
       ? [
           ...dest.stays.map((o, i) => ({ o, photo: offerPhoto(slug, "stay", i, `${o.title} ${o.subcategory ?? ""} ${o.partner ?? ""}`) })),
-          ...dest.rentals.map((o, i) => ({ o, photo: offerPhoto(slug, "rental", i, `${o.title} ${o.subcategory ?? ""} ${o.partner ?? ""}`) })),
+          ...dest.rentals.filter((o) => o.partner === "motorhome_republic").map((o, i) => ({ o, photo: offerPhoto(slug, "rental", i, `${o.title} ${o.subcategory ?? ""} ${o.partner ?? ""}`) })),
           ...dest.activities.map((o, i) => ({ o, photo: offerPhoto(slug, "activity", i) })),
         ]
       : [];
@@ -206,6 +207,10 @@ function LandingPage() {
               </div>
             </section>
           )}
+          <section>
+            <h2 className="mb-4 font-display text-2xl text-foreground">Airport car & SUV rentals</h2>
+            <div className="grid gap-4 sm:grid-cols-2"><AirportRentalsCards slug={destination.slug} airportCode={facts.airport} /></div>
+          </section>
           <ViatorPlaceBlock slug={destination.slug} name={destination.name} />
         </article>
 

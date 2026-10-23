@@ -1,3 +1,4 @@
+import { airportRentalsLink } from "./webjet";
 // Travelpayouts tracked short links (tpm.lv), issued per brand in the dashboard.
 export const TP_LINKS = {
   airalo: "https://airalo.tpm.lv/Cl55ghx0",
@@ -19,8 +20,12 @@ export const ROAD_PREPARATION_PARTNERS = {
   insurance: "ekta",
   esim: "airalo",
   offline_maps: "radicalstorage",
-  car_rental: "economybookings",
-} as const satisfies Record<string, TpBrand>;
+  car_rental: "airport_rentals",
+} as const;
+
+export function preparationLink(brand: TpBrand | "airport_rentals", slug?: string): string {
+  return brand === "airport_rentals" ? airportRentalsLink() : tpLink(brand, slug);
+}
 
 /** Adds sub_id (destination slug) so Travelpayouts reports show which page earned the click. */
 export function tpLink(brand: TpBrand, subId?: string): string {
