@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, Check, ChevronRight, Handshake, Sparkles } from "lucide-react";
+import { ArrowRight, Check, ChevronRight, Sparkles } from "lucide-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { gearCategories, GEAR_COUNTS_REVIEW_DATE, wildguarderProducts, wildguarderPrice, wildguarderStoreUrl, wildguarderLink, WILDGUARDER_REVIEW_DATE } from "@/lib/data/gearCategories";
