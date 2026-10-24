@@ -10,6 +10,8 @@ import {
   TRIP_TAG_OPTIONS,
 } from "@/lib/data/destinations.functions";
 import { SEASONS, US_REGIONS } from "@/lib/data/usRegions";
+import { FilterPanel } from "@/components/site/FilterPanel";
+import { Button } from "@/components/ui/button";
 
 const SearchSchema = z.object({
   tag: z.string().optional(),
@@ -106,7 +108,7 @@ function DestinationsIndexPage() {
           ))}
         </div>
 
-        <form method="get" action="/destinations" className="mt-6 grid gap-3 rounded-2xl border border-border bg-card p-4 shadow-soft sm:grid-cols-[1fr_auto_auto_auto]">
+        <div className="mt-6"><FilterPanel><form method="get" action="/destinations" className="grid gap-3 md:grid-cols-[1fr_auto_auto_auto]">
           {tag && <input type="hidden" name="tag" value={tag} />}
           <input name="q" defaultValue={q} placeholder="Search by name" aria-label="Search destinations by name" className="rounded-lg border border-border bg-background px-3 py-2 text-sm" />
           <select name="region" defaultValue={region} aria-label="Region" className="rounded-lg border border-border bg-background px-3 py-2 text-sm">
@@ -117,8 +119,8 @@ function DestinationsIndexPage() {
             <option value="">Any season</option>
             {SEASONS.map((s) => <option key={s} value={s}>{s[0].toUpperCase() + s.slice(1)}</option>)}
           </select>
-          <button type="submit" className="rounded-lg bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground">Filter</button>
-        </form>
+          <Button type="submit" size="lg">Show destinations</Button>
+        </form></FilterPanel></div>
 
         {destinations.length === 0 ? (
           <p className="mt-12 text-sm text-muted-foreground">
@@ -132,7 +134,7 @@ function DestinationsIndexPage() {
           <>
             <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {destinations.map((d) => (
-                <DestinationCard key={d.slug} d={d} aspect="aspect-[4/5]" titleClass="text-xl" />
+                <DestinationCard key={d.slug} d={d} aspect="aspect-[4/3]" titleClass="text-xl" />
               ))}
             </div>
 

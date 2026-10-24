@@ -1,3 +1,4 @@
+import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 
@@ -64,9 +65,10 @@ function FlyDrivePage() {
       <Header />
       <main>
         <FlyDriveHero dest={dest} />
-        <section className="container-page -mt-10 relative">
+        <TripSnapshot trip={dest} /><TripQuickNav />
+        <section id="trip-plan" className="container-page py-6">
           <RouteCard dest={dest} />
-          <div className="mt-6"><BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} /></div>
+          <div id="trip-booking" className="mt-6"><BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} /></div>
         </section>
         <Section title="Your arrival plan">
           <ArrivalPlan dest={dest} />
@@ -74,8 +76,8 @@ function FlyDrivePage() {
         <Section title="Before you land">
           <BeforeYouLand dest={dest} />
         </Section>
-        <section className="container-page py-10"><TripEssentials context={{ slug: dest.slug, name: dest.name, places: [dest] }} /></section>
         <section className="container-page pb-6"><ViatorPlaceBlock slug={dest.slug} name={dest.name} /></section>
+        <section className="container-page py-10"><TripEssentials context={{ slug: dest.slug, name: dest.name, places: [dest] }} /></section>
         <Section title="Quick answers">
           <FlyDriveFaq faqs={faqs} />
         </Section>

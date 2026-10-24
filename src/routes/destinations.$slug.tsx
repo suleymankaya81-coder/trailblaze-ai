@@ -1,3 +1,4 @@
+import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { offerCtaLabel } from "@/lib/affiliates/ctaLabel";
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { estimatedFrom } from "@/lib/data/servicePhotos";
@@ -177,11 +178,12 @@ function DestinationPage() {
       <Header />
 
       <Hero dest={dest} />
-      <JumpBar />
+      <TripSnapshot trip={dest} />
+      <TripQuickNav />
 
       <main className="container-page space-y-14 py-10 md:space-y-16">
-        <TripRadar dest={dest} />
-        <BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} />
+        <div id="trip-plan"><TripRadar dest={dest} /></div>
+        <div id="trip-booking"><BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} /></div>
         <DestinationAnswers slug={dest.slug} />
 
         {/* Booking order: flight (strip above) → vehicle → stay → tours */}
@@ -561,7 +563,7 @@ function TopStays({ dest }: { dest: DestinationView }) {
   return (
     <section id="stays" className="scroll-mt-24">
       <SectionHeader
-        step={4}
+        step={3}
         title="Where you'll want to sleep"
         action={<TextLink>View all stays</TextLink>}
       />
@@ -591,7 +593,7 @@ function TopStays({ dest }: { dest: DestinationView }) {
       {filtered.length === 0 ? (
         <EmptyState message="No stays listed for this filter yet." />
       ) : (
-        <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <div className="travel-card-row mt-5 sm:grid-cols-2 xl:grid-cols-4">
            {pick && <StayCard offer={pick} destinationSlug={dest.slug} featured photo={offerPhoto(dest.slug, "stay", 0, `${pick.title} ${pick.subcategory ?? ""} ${pick.partner ?? ""}`)} />}
            {rest.map((s, index) => (
              <StayCard key={s.id} offer={s} destinationSlug={dest.slug} photo={offerPhoto(dest.slug, "stay", index + 1, `${s.title} ${s.subcategory ?? ""} ${s.partner ?? ""}`)} />
@@ -629,7 +631,7 @@ function StayCard({
       className={
         "group flex flex-col overflow-hidden rounded-2xl border bg-card transition hover:shadow-lift " +
         (featured
-          ? "border-foreground/15 shadow-soft md:col-span-2 xl:col-span-1"
+          ? "border-foreground/15 shadow-soft"
           : "border-border")
       }
     >
@@ -802,7 +804,7 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
       {rentals.length === 0 ? (
         <EmptyState message="No rental partners listed for this destination yet." />
       ) : (
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
            {rentals.map((r, index) => (
              <RentalTile key={r.id} offer={r} destinationSlug={dest.slug} photo={offerPhoto(dest.slug, "rental", index, `${r.title} ${r.subcategory ?? ""} ${r.partner ?? ""}`)} />
           ))}

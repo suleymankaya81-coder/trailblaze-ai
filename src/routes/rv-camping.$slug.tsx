@@ -1,3 +1,5 @@
+import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
+import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
@@ -70,10 +72,13 @@ function Page() {
           title={`${dest.name} by RV`}
           crumbs={<><Link to="/" className="hover:underline">Home</Link> / <Link to="/destinations/$slug" params={{ slug: dest.slug }} className="hover:underline">{dest.name}</Link> / RV & camping</>}
         >
-          <HeroChip icon={<Clock className="h-4 w-4" />}>{formatDriveShort(dest.driveMinutes!)} from {dest.airportCode}</HeroChip>
+          <HeroChip icon={<Clock className="h-4 w-4" />}>{formatDriveShort(dest.driveMinutes ?? 0)} from {dest.airportCode}</HeroChip>
           <HeroChip icon={<Tent className="h-4 w-4" />}>Camping score {dest.campingScore}/10</HeroChip>
         </GuideHero>
-        <section className="container-page -mt-10 relative"><RouteCard dest={dest} /></section>
+        <TripSnapshot trip={dest} /><TripQuickNav />
+        <div id="trip-booking" className="container-page py-6"><BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} /></div>
+        <div id="trip-plan" />
+        <section className="container-page py-6"><RouteCard dest={dest} /></section>
 
         {plan && (
           <GuideSection title="Vehicle & road notes">
@@ -100,10 +105,10 @@ function Page() {
         )}
 
         <GuideSection title={`Where to park the rig near ${dest.name}`} intro="Private campgrounds and RV parks outside the park, plus overnight stops for members.">
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3">
             {camps.map((o, i) => {
               const photo = servicePhoto("rvpark", `${dest.slug}:${o.id}`, i);
-              return photo ? <PartnerPhotoCard key={o.id} brand={partnerLabel(o.partner) ?? "Partner"} title={o.title} href={o.externalUrl!} photo={photo} detail={o.whyRecommended ?? undefined} badges={["Compare RV & campervan suppliers"]} cta="Check RV availability" price={o.priceValue != null ? `From $${o.priceValue}/day` : (o.priceDisplay ?? estimatedFrom("motorhome"))} /> : null;
+              return photo ? <PartnerPhotoCard key={o.id} brand={partnerLabel(o.partner) ?? "Partner"} title={o.title} href={o.externalUrl ?? ""} photo={photo} detail={o.whyRecommended ?? undefined} badges={["Compare RV & campervan suppliers"]} cta="Check RV availability" price={o.priceValue != null ? `From $${o.priceValue}/day` : (o.priceDisplay ?? estimatedFrom("motorhome"))} /> : null;
             })}
           </div>
           <div className="mt-6"><HarvestHostsCard destinationName={dest.name} /></div>
@@ -111,20 +116,20 @@ function Page() {
 
         {rentals.length > 0 && (
           <GuideSection title="Rent a motorhome or campervan" intro="Fleet rentals from established depots. Compare pick-up cities against your flight.">
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3">
               {rentals.map((o, i) => {
                 const photo = servicePhoto(/campervan/i.test(o.title) ? "campervan" : "rv", `${dest.slug}:${o.id}`, i);
-                return photo ? <PartnerPhotoCard key={o.id} brand="Motorhome Republic" title={o.title} href={o.externalUrl!} photo={photo} detail={o.whyRecommended ?? undefined} /> : null;
+                return photo ? <PartnerPhotoCard key={o.id} brand="Motorhome Republic" title={o.title} href={o.externalUrl ?? ""} photo={photo} detail={o.whyRecommended ?? undefined} /> : null;
               })}
             </div>
           </GuideSection>
         )}
 
         <GuideSection title="Prefer a car and campground trip?">
-          <div className="grid gap-4 sm:grid-cols-2"><AirportRentalsCards slug={dest.slug} airportCode={dest.airportCode} /></div>
+          <div className="travel-card-row sm:grid-cols-2"><AirportRentalsCards slug={dest.slug} airportCode={dest.airportCode} /></div>
         </GuideSection>
-        <section className="container-page py-10"><TripEssentials context={{ slug: `rv-${dest.slug}`, name: dest.name, places: [dest], mode: "camping" }} /></section>
         <section className="container-page pb-6"><ViatorPlaceBlock slug={dest.slug} name={dest.name} /></section>
+        <section className="container-page py-10"><TripEssentials context={{ slug: `rv-${dest.slug}`, name: dest.name, places: [dest], mode: "camping" }} /></section>
         <GuideSection title="Quick answers"><GuideFaq faqs={faqs} /></GuideSection>
         <section className="container-page pb-16"><FullGuideLink slug={dest.slug} name={dest.name} /></section>
       </main>

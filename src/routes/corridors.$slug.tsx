@@ -1,3 +1,5 @@
+import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
+import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { createFileRoute, Link, notFound, ClientOnly } from "@tanstack/react-router";
 import { lazy, Suspense } from "react";
@@ -66,6 +68,8 @@ function Page() {
           <HeroChip icon={<CalendarDays className="h-4 w-4" />}>{corridor.idealDays}</HeroChip>
           <HeroChip icon={<RouteIcon className="h-4 w-4" />}>~{miles} mi loop (straight-line)</HeroChip>
         </GuideHero>
+        <TripSnapshot airport={corridor.gateway.code} days={corridor.idealDays} stops={stops.length} /><TripQuickNav />
+        <div id="trip-plan" />
 
         <GuideSection title="Who this route is for" intro={corridor.audience}>
           <div className="relative h-[360px] overflow-hidden rounded-3xl border border-border bg-muted">
@@ -79,7 +83,7 @@ function Page() {
         </GuideSection>
 
         <GuideSection title={`Start in ${corridor.gatewayCity}`} intro="Arrange your arrival, choose your wheels and get connected before the first park day.">
-          <CorridorBookings slug={corridor.slug} airport={corridor.gateway.code} city={corridor.gatewayCity} />
+          <div id="trip-booking"><BookingStepsStrip slug={corridor.slug} name={corridor.gatewayCity} airportCode={corridor.gateway.code} /><CorridorBookings slug={corridor.slug} airport={corridor.gateway.code} city={corridor.gatewayCity} /></div>
         </GuideSection>
 
         <GuideSection title="Before you fly: essentials for overseas visitors">
@@ -123,11 +127,11 @@ function Page() {
           </ol>
         </GuideSection>
 
-        <section className="container-page py-10"><TripEssentials context={{ slug: corridor.slug, name: corridor.title, places: stops.slice(1), topic: corridor.intro }} /></section>
 
-        <GuideSection title="Experiences worth planning ahead" intro="Guided tours along the loop: choose what fits your route and allow time for the meeting point.">
+        <div id="trip-tours" /><GuideSection title="Experiences worth planning ahead" intro="Guided tours along the loop: choose what fits your route and allow time for the meeting point.">
           <iframe src={`/experiences/${corridor.slug}`} title={`Viator experiences along the ${corridor.title}`} loading="lazy" className="h-[1750px] w-full border-0 bg-background sm:h-[650px]" />
         </GuideSection>
+        <section className="container-page py-10"><TripEssentials context={{ slug: corridor.slug, name: corridor.title, places: stops.slice(1), topic: corridor.intro }} /></section>
 
         <GuideSection title="Quick answers"><GuideFaq faqs={corridor.faqs} /></GuideSection>
       </main>

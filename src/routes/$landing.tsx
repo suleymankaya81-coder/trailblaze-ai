@@ -1,3 +1,5 @@
+import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
+import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2, ChevronRight } from "lucide-react";
@@ -178,10 +180,11 @@ function LandingPage() {
         </p>
       )}
 
-      <QuickFacts facts={facts} />
+      <TripSnapshot trip={{ airportCode: facts.airport, driveMinutes: facts.driveMinutes, tripDurationDays: facts.tripDays, bestSeason: facts.bestSeason, permitLevel: facts.permitLevel }} /><TripQuickNav />
+      <div id="trip-booking" className="container-page py-6"><BookingStepsStrip slug={destination.slug} name={destination.name} airportCode={facts.airport} /></div>
 
       <main className="container-page grid grid-cols-[minmax(0,1fr)] gap-10 py-10 lg:grid-cols-[minmax(0,1fr)_300px]">
-        <article className="min-w-0 space-y-8 [overflow-wrap:anywhere]">
+        <article id="trip-plan" className="min-w-0 space-y-8 [overflow-wrap:anywhere]">
           {page.introContent && <p className="text-lg leading-relaxed text-foreground">{page.introContent}</p>}
           {page.pageType === "best_time" && <SeasonPicker sections={sections} />}
           {sections.map((s, i) => {
@@ -210,7 +213,7 @@ function LandingPage() {
           )}
           <section>
             <h2 className="mb-4 font-display text-2xl text-foreground">Airport car & SUV rentals</h2>
-            <div className="grid gap-4 sm:grid-cols-2"><AirportRentalsCards slug={destination.slug} airportCode={facts.airport} /></div>
+            <div className="travel-card-row sm:grid-cols-2"><AirportRentalsCards slug={destination.slug} airportCode={facts.airport} /></div>
           </section>
           <ViatorPlaceBlock slug={destination.slug} name={destination.name} />
         </article>

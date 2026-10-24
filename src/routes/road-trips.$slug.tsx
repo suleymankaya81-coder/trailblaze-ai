@@ -1,3 +1,5 @@
+import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
+import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ClientOnly } from "@tanstack/react-router";
@@ -66,6 +68,8 @@ function Page() {
           <HeroChip icon={<MapPin className="h-4 w-4" />}>{stops.length} stops</HeroChip>
           <HeroChip icon={<CalendarDays className="h-4 w-4" />}>About {totalDays} days</HeroChip>
         </GuideHero>
+        <TripSnapshot airport={gateway?.code} days={`About ${totalDays} days`} stops={stops.length} /><TripQuickNav />
+        <div id="trip-plan" />
 
         <GuideSection title="The loop" intro={loop.intro}>
           <div className="relative h-[340px] overflow-hidden rounded-3xl border border-border bg-muted">
@@ -80,7 +84,7 @@ function Page() {
 
         {gateway && (
           <GuideSection title={`Book this loop from ${gateway.code}`} intro={`Fly into ${gateway.name}, pick up your car or RV, then drive the loop.`}>
-            <CorridorBookings slug={loop.slug} airport={gateway.code} city={gateway.name} />
+            <div id="trip-booking"><BookingStepsStrip slug={loop.slug} name={first.name} airportCode={gateway.code} /><CorridorBookings slug={loop.slug} airport={gateway.code} city={gateway.name} /></div>
           </GuideSection>
         )}
 
@@ -110,9 +114,9 @@ function Page() {
           </ol>
         </GuideSection>
 
-        <section className="container-page py-10"><TripEssentials context={{ slug: loop.slug, name: loop.title, places: stops, topic: loop.intro }} /></section>
 
         <section className="container-page pb-6"><ViatorPlaceBlock slug={first.slug} name={first.name} /></section>
+        <section className="container-page py-10"><TripEssentials context={{ slug: loop.slug, name: loop.title, places: stops, topic: loop.intro }} /></section>
 
         <GuideSection title="Quick answers"><GuideFaq faqs={faqs} /></GuideSection>
       </main>
