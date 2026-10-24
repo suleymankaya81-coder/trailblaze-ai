@@ -2,6 +2,7 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { verifiedViatorProductUrl } from "./corridorPartners";
 import { getCorridor } from "@/lib/seo/corridors";
+import { viatorProductImage } from "./viatorImages";
 
 type Product = {
   productCode: string;
@@ -39,8 +40,7 @@ export const getCorridorExperiences = createServerFn({ method: "GET" })
         const product = selection.code ? list.find((p) => p.productCode === selection.code) : list.find((p) => verifiedViatorProductUrl(p.productUrl) && p.images?.length);
         if (!product) return null;
         const url = verifiedViatorProductUrl(product.productUrl);
-        const cover = product.images?.find((i) => i.isCover) ?? product.images?.[0];
-        const image = cover?.variants.filter((v) => v.width >= 480).sort((a, b) => b.width - a.width)[0]?.url;
+        const image = viatorProductImage(product.images);
         if (!url || !image?.startsWith("https://")) return null;
         return {
           code: product.productCode, title: product.title, url, image, stop: selection.stop,

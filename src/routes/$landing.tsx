@@ -1,3 +1,6 @@
+import { Button } from "@/components/ui/button";
+import { Thumb, SwipeRow } from "@/components/ui-kit";
+import planImg from "@/assets/thumbs/plan.jpg";
 import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
@@ -171,7 +174,7 @@ function LandingPage() {
             <ChevronRight className="h-3 w-3" />
             <span>{label}</span>
           </nav>
-          <h1 className="max-w-3xl font-display text-3xl text-off-white md:text-5xl">{h1}</h1>
+          <h1 className="max-w-3xl font-display text-[34px] leading-tight text-off-white md:text-[56px]">{h1}</h1>
         </div>
       </section>
       {coverImage && photoCredit && photoSource && (
@@ -204,7 +207,7 @@ function LandingPage() {
           {rest.length > 0 && (
             <section>
               <h2 className="mb-4 font-display text-2xl text-foreground">More ways to book {destination.name}</h2>
-              <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+              <div className="travel-card-row sm:grid-cols-2 xl:grid-cols-3">
                 {rest.map((o, j) => (
                   <LandingOfferCard key={o.id} offer={o} destinationSlug={destination.slug} photo={photos[sections.length + j] ?? undefined} />
                 ))}
@@ -224,7 +227,7 @@ function LandingPage() {
             <ul className="mt-3 space-y-2.5">
               {factItems(facts).map((f) => (
                 <li key={f.label} className="flex items-start gap-2 text-sm">
-                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-sage" />
+                  <Thumb src={planImg} size={32} />
                   <span><span className="text-off-white/70">{f.label}:</span> {f.value}</span>
                 </li>
               ))}
@@ -232,7 +235,7 @@ function LandingPage() {
             <Link
               to="/destinations/$slug"
               params={{ slug: destination.slug }}
-              className="mt-5 inline-flex w-full items-center justify-center gap-1.5 rounded-full bg-copper px-4 py-2.5 text-xs font-semibold text-off-white"
+              className="mt-5 inline-flex min-h-12 w-full items-center justify-center gap-1.5 rounded-md bg-card px-4 py-3 text-center text-xs font-semibold text-forest"
             >
               Build my {destination.name} plan <ArrowRight className="h-3.5 w-3.5" />
             </Link>

@@ -1,3 +1,8 @@
+import { Thumb, SwipeRow } from "@/components/ui-kit";
+import roadImg from "@/assets/thumbs/road.jpg";
+import planImg from "@/assets/thumbs/plan.jpg";
+import flightImg from "@/assets/thumbs/flight.jpg";
+import carImg from "@/assets/thumbs/car.jpg";
 import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
@@ -15,6 +20,7 @@ import { haversineMiles, suggestedDays } from "@/lib/seo/guides";
 import { getCorridor } from "@/lib/seo/corridors";
 import { buildCorridorJsonLd, corridorSearchDescription, corridorSearchTitle } from "@/lib/seo/corridorSeo";
 import { CorridorBookings } from "@/components/guides/CorridorBookings";
+import { CorridorTourFrame } from "@/components/guides/CorridorTourFrame";
 
 const RoadTripMap = lazy(() => import("@/components/destination/RoadTripMap"));
 
@@ -64,9 +70,9 @@ function Page() {
       <Header />
       <main>
         <GuideHero image={stops[1]?.heroImage ?? first.heroImage} kicker={`Gateway Road Trip · ${corridor.region}`} title={corridorSearchTitle(corridor)} crumbs={<><Link to="/" className="hover:underline">Home</Link> / <Link to="/corridors" className="hover:underline">Gateway Road Trips</Link></>}>
-          <HeroChip icon={<Plane className="h-4 w-4" />}>Fly into {corridor.gateway.code}</HeroChip>
-          <HeroChip icon={<CalendarDays className="h-4 w-4" />}>{corridor.idealDays}</HeroChip>
-          <HeroChip icon={<RouteIcon className="h-4 w-4" />}>~{miles} mi loop (straight-line)</HeroChip>
+          <HeroChip image={roadImg}>Fly into {corridor.gateway.code}</HeroChip>
+          <HeroChip image={roadImg}>{corridor.idealDays}</HeroChip>
+          <HeroChip image={roadImg}>~{miles} mi loop (straight-line)</HeroChip>
         </GuideHero>
         <TripSnapshot airport={corridor.gateway.code} days={corridor.idealDays} stops={stops.length} /><TripQuickNav />
         <div id="trip-plan" />
@@ -90,7 +96,7 @@ function Page() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {corridor.essentials.map((e) => (
               <div key={e.title} className="rounded-lg border border-border bg-card p-6 shadow-soft">
-                <Globe2 className="h-5 w-5 text-forest" />
+                <Thumb src={/license|driv/i.test(e.title) ? carImg : /park|pass|permit/i.test(e.title) ? planImg : /toll|road/i.test(e.title) ? roadImg : flightImg} size={56} />
                 <p className="mt-3 font-display text-lg font-semibold text-foreground">{e.title}</p>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{e.text}</p>
               </div>
@@ -99,7 +105,7 @@ function Page() {
         </GuideSection>
 
         <GuideSection title="The loop, stop by stop">
-          <ol className="space-y-4">
+          <ol className="space-y-5">
             {stops.map((s, i) => {
               const leg = i > 0 ? Math.round(haversineMiles([stops[i - 1].lng, stops[i - 1].lat], [s.lng, s.lat])) : null;
               const d = suggestedDays(s.tripDurationDays);
@@ -107,8 +113,8 @@ function Page() {
                 <li key={s.slug}>
                   {leg != null && <p className="mb-2 ml-6 flex items-center gap-2 text-xs text-muted-foreground"><RouteIcon className="h-3.5 w-3.5" /> ~{leg} mi straight-line from {stops[i - 1].name}</p>}
                   {corridor.legNotes?.[s.slug] && <p className="mb-2 ml-6 text-xs text-muted-foreground">{corridor.legNotes[s.slug]}</p>}
-                  <Link to="/destinations/$slug" params={{ slug: s.slug }} className="group grid grid-cols-[96px_minmax(0,1fr)] gap-4 overflow-hidden rounded-lg border border-border bg-card p-3 shadow-soft transition hover:shadow-lg sm:grid-cols-[160px_minmax(0,1fr)]">
-                    <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-muted">
+                  <Link to="/destinations/$slug" params={{ slug: s.slug }} className="group grid min-h-12 grid-cols-[80px_minmax(0,1fr)] gap-4 border-b border-border py-4 transition sm:grid-cols-[120px_minmax(0,1fr)]">
+                    <div className="relative aspect-square overflow-hidden rounded-lg bg-muted">
                       {s.heroImage && <img src={s.heroImage} alt={s.name} loading="lazy" className="h-full w-full object-cover" />}
                       <span className="absolute left-2 top-2 grid h-8 w-8 place-items-center rounded-full bg-card/90 font-display text-sm font-bold text-forest">{i + 1}</span>
                     </div>
@@ -129,7 +135,7 @@ function Page() {
 
 
         <div id="trip-tours" /><GuideSection title="Experiences worth planning ahead" intro="Guided tours along the loop: choose what fits your route and allow time for the meeting point.">
-          <iframe src={`/experiences/${corridor.slug}`} title={`Viator experiences along the ${corridor.title}`} loading="lazy" className="h-[1750px] w-full border-0 bg-background sm:h-[650px]" />
+          <CorridorTourFrame slug={corridor.slug} title={corridor.title} />
         </GuideSection>
         <section className="container-page py-10"><TripEssentials context={{ slug: corridor.slug, name: corridor.title, places: stops.slice(1), topic: corridor.intro }} /></section>
 

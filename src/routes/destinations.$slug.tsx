@@ -5,7 +5,7 @@ import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { VrboSearchWidget } from "@/components/destination/VrboSearchWidget";
 import { HarvestHostsCard } from "@/components/destination/HarvestHostsCard";
-import { TravelpayoutsCards } from "@/components/destination/TravelpayoutsCards";
+import { TravelpayoutsCards, TourTicketCards } from "@/components/destination/TravelpayoutsCards";
 import { GetYourGuideWidget } from "@/components/destination/PartnerWidget";
 import { ViatorPlaceBlock } from "@/components/destination/ViatorPlaceBlock";
 import { useQuery } from "@tanstack/react-query";
@@ -805,56 +805,11 @@ function RentalTile({ offer, destinationSlug, photo }: { offer: OfferView; desti
    5 — THINGS TO DO
 ========================================================= */
 function ThingsToDo({ dest }: { dest: DestinationView }) {
-  const activities = dest.activities.slice(0, 4);
-
   return (
-    <section>
-      <SectionHeader
-        title="The moments you came for"
-        action={<TextLink>View all activities</TextLink>}
-      />
-      {activities.length === 0 ? (
-        <EmptyState message="No activities listed for this destination yet." />
-      ) : (
-        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-           {activities.map((a, index) => (
-            <article
-              key={a.id}
-              className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card transition hover:shadow-lift"
-            >
-               <div className="relative aspect-[4/3] bg-beige/30">
-                  <CardImg src={offerPhoto(dest.slug, "activity", index)?.url ?? ""} alt={offerPhoto(dest.slug, "activity", index) ? `${offerPhoto(dest.slug, "activity", index)?.subject}, illustrative activity photo` : ""} className="h-full w-full object-cover" />
-                 {offerPhoto(dest.slug, "activity", index) && <PhotoCredit photo={offerPhoto(dest.slug, "activity", index)} />}
-               </div>
-              <div className="flex flex-1 flex-col p-4">
-                <h3 className="font-display text-lg leading-snug text-foreground">{a.title}</h3>
-                {a.duration && (
-                  <p className="mt-0.5 text-[11px] uppercase tracking-wide text-muted-foreground">
-                    {a.duration}
-                  </p>
-                )}
-                <p className="mt-2 line-clamp-2 text-xs leading-relaxed text-muted-foreground">
-                  {a.whyRecommended ?? a.description}
-                </p>
-                <div className="mt-auto flex flex-col gap-3 border-t border-border pt-3">
-                  <PriceTag
-                    offer={a}
-                    fallbackUnit="person"
-                    className="font-serif text-base font-semibold text-foreground"
-                  />
-                  <OfferCta
-                    offer={a}
-                    label={offerCtaLabel("activity", dest.name)}
-                    size="sm"
-                    destinationSlug={dest.slug}
-                  />
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-      )}
-      <ViatorPlaceBlock slug={dest.slug} name={dest.name} className="mt-8" />
+    <section id="trip-tours" className="scroll-mt-24">
+      <SectionHeader step={4} title="The moments you came for" />
+      <ViatorPlaceBlock slug={dest.slug} name={dest.name} className="mt-6" anchored={false} />
+      <TourTicketCards slug={dest.slug} name={dest.name} />
       <GetYourGuideWidget query={dest.name} />
     </section>
   );

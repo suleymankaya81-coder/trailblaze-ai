@@ -3,7 +3,8 @@
 - [x] 1. Homepage: hero, What is MiniaLife + 3 steps, 5 photo start squares, 1+4 places, 4 loops, rentals, 3 stay types, 3 green guide cards, 4 trip essentials, Why MiniaLife, collapsible phone footer.
 - [x] 2. Destination list, Road Trips, Gateway, Trip Guides and the 3 guide lists use the new photo cards; homepage car cards removed.
 - [x] 3. Destination pages: repeated facts removed, large booking buttons, serif card titles, no repeated stay photos, scenic city covers.
-- [ ] 4. Guide pages (Fly & Drive, RV, No Reservation, loops, gateways, search guides)
+- [x] Requested before step 4: merged ticket partners into The moments you came for, removed illustrative Viator activity offers; individually called all 500 place functions. 339 retain provider-text-matched results, 161 have no matching results, zero request errors. Reject unrelated destination results; report in scripts/audits/viator-destinations-2026-10-24.json. This is automated relevance screening, not manual location/meeting-point verification.
+- [x] 4. Guide pages (Fly & Drive, RV, No Reservation, loops, gateways, search guides): shared photo snapshots/booking steps, serif heroes, square stop thumbnails, overseas-note photos, collapsed FAQs, mobile swipe/progress and auto-height provider frames. Eight representative pages checked at desktop/phone sizes, no page errors/overflow; actual Viator click and mobile swipe verified, 28 tests pass. Steps 5–6 remain for owner review; no publishing.
 - [ ] 5. About and static pages
 - [ ] 6. Final desktop/phone check and tests
 

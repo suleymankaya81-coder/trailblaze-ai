@@ -25,6 +25,7 @@
 - Gateway search titles and TouristTrip/BreadcrumbList data use the browser-safe corridorSeo helper and the actual displayed stop order including the airport return, without Offer or availability claims. Why: search descriptions must match suggested self-drive routes, not imply packaged tours.
 - Motorhome Republic and Airport Rentals are Webjet affiliate links built only via `src/lib/affiliates/webjet.ts`; homepage widgets use separate sandboxed documents with provider base URLs and a visible tracked fallback when fields do not load. Why: isolate conflicting Republic globals and avoid showing broken or empty forms.
 - Live Viator listings on destination and guide pages load from `/experiences/place/$slug` (noindex frame, 24h `viator_place_cache`). Why: Viator content must not be indexed and API calls stay bounded.
+- Viator place searches and cached results require place-specific provider-text matches; empty results remain empty instead of substituting another destination. Why: free-text search can return unrelated states or cities.
 - Site search sends trip-type queries to hubs via `src/lib/data/searchIntent.ts` and matches places by whole words only. Why: short aliases matched inside other words and sent visitors to the wrong place.
 - Road Trips is one menu entry; `/road-trips` and `/corridors` cross-link as tabs, and loop pages show route booking cards only when a stop has airport data. Shared booking stages are flight → vehicle → stay → tours → gear; data and luggage are unnumbered preparation services. Why: one clear entry, consistent decision order and no invented airports.
 
@@ -32,3 +33,4 @@
 - Travel templates use TripSnapshot/TripQuickNav and shared section anchors; repeated card rows use travel-card-row on phones and grids on larger screens. Why: consistent navigation and card ergonomics without runtime content generation.
 - Load the Travelpayouts rewriting script only after hydration and place photo-credit links outside clickable card anchors. Why: prevent pre-hydration DOM mutations and invalid nested anchors.
 - Shared card templates live in src/components/ui-kit (CategoryTile, PlaceCard, EditorialCard, SplitBand, SwipeRow, Thumb); new pages reuse them instead of adding new card styles. Why: one consistent card system across the site.
+- Guide heroes, reservation notes and FAQs share GuideSections; provider tour frames report their own height and verify message origin/source. Why: guide families stay consistent and mobile listings are not clipped.

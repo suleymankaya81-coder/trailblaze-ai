@@ -1,3 +1,8 @@
+import { Thumb, SwipeRow } from "@/components/ui-kit";
+import roadImg from "@/assets/thumbs/road.jpg";
+import planImg from "@/assets/thumbs/plan.jpg";
+import flightImg from "@/assets/thumbs/flight.jpg";
+import carImg from "@/assets/thumbs/car.jpg";
 import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
@@ -63,8 +68,8 @@ function Page() {
           title={`${dest.name} without a reservation`}
           crumbs={<><Link to="/" className="hover:underline">Home</Link> / <Link to="/destinations/$slug" params={{ slug: dest.slug }} className="hover:underline">{dest.name}</Link> / No reservation</>}
         >
-          <HeroChip icon={<ShieldAlert className="h-4 w-4" />}>{dest.permitLevel === "high" ? "Bookings: high demand" : "Bookings: moderate demand"}</HeroChip>
-          {dest.driveMinutes != null && <HeroChip icon={<Clock className="h-4 w-4" />}>{formatDriveShort(dest.driveMinutes)} from {dest.airportCode}</HeroChip>}
+          <HeroChip image={roadImg}>{dest.permitLevel === "high" ? "Bookings: high demand" : "Bookings: moderate demand"}</HeroChip>
+          {dest.driveMinutes != null && <HeroChip image={roadImg}>{formatDriveShort(dest.driveMinutes)} from {dest.airportCode}</HeroChip>}
         </GuideHero>
         <TripSnapshot trip={dest} /><TripQuickNav />
         <div id="trip-booking" className="container-page py-6"><BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} /></div>
@@ -78,7 +83,7 @@ function Page() {
           <GuideSection title="How to still get in" intro="Local timing and access notes for this place. Rules change; confirm on the official source before you go.">
             <div className="grid gap-4 md:grid-cols-3">
               {tips.map((t) => (
-                <div key={t.kind} className="rounded-3xl border border-border bg-card p-6">
+                <div key={t.kind} className="rounded-lg border border-border bg-card p-6">
                   <p className="text-xs uppercase tracking-wider text-muted-foreground">{t.kind}</p>
                   <p className="mt-2 font-display text-lg font-semibold text-foreground">{t.title}</p>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t.text}</p>
@@ -97,7 +102,7 @@ function Page() {
         )}
 
         {dest.airportCode && (
-          <GuideSection title="Book the rest now" intro="Flights, car and first night don't depend on park entry — lock them in early.">
+          <GuideSection title="Flights, vehicles & your first night" intro="Confirm your entry plans and cancellation terms before committing to flights, a vehicle and lodging.">
             <ArrivalPlan dest={dest} />
           </GuideSection>
         )}

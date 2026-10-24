@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { ArrowUpRight, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getPlaceExperiences, tourCategory } from "@/lib/affiliates/viatorPlace.functions";
+import { SwipeRow } from "@/components/ui-kit";
 
 // Noindexed frame: Viator provider content must stay out of indexable pages.
 export const Route = createFileRoute("/experiences/place/$slug")({
@@ -33,7 +34,7 @@ function Place({ slug }: { slug: string }) {
   if (isPending) return <div className="grid gap-4 p-1 sm:grid-cols-3">{[1, 2, 3].map((n) => <div key={n} className="h-80 animate-pulse rounded-lg bg-muted" />)}</div>;
   return <div ref={ref} className="bg-background p-1">
     {items.length > 0 && <>
-      <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3">
+      <SwipeRow className="md:grid-cols-2 lg:grid-cols-3">
         {items.map((item) => <article key={item.code} className="flex min-w-0 flex-col overflow-hidden rounded-lg border border-border bg-card">
           <img src={item.image} alt={item.title} loading="lazy" className="aspect-[4/3] w-full object-cover" />
           <div className="flex flex-1 flex-col p-4">
@@ -46,7 +47,7 @@ function Place({ slug }: { slug: string }) {
             <Button asChild size="sm" className="mt-auto min-h-12 rounded-lg"><a href={item.url} target="_blank" rel="sponsored nofollow noopener noreferrer">View on Viator<ArrowUpRight /></a></Button>
           </div>
         </article>)}
-      </div>
+      </SwipeRow>
       <p className="mt-3 text-[11px] text-muted-foreground">Photos, prices and ratings supplied by Viator; availability confirmed on Viator. Partner links · MiniaLife may earn a commission.</p>
     </>}
   </div>;

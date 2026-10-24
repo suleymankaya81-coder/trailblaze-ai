@@ -1,3 +1,8 @@
+import { Thumb, SwipeRow } from "@/components/ui-kit";
+import roadImg from "@/assets/thumbs/road.jpg";
+import planImg from "@/assets/thumbs/plan.jpg";
+import flightImg from "@/assets/thumbs/flight.jpg";
+import carImg from "@/assets/thumbs/car.jpg";
 import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
@@ -65,8 +70,8 @@ function Page() {
       <Header />
       <main>
         <GuideHero image={first.heroImage} kicker={`Road trip · ${loop.region}`} title={loop.title} crumbs={<><Link to="/" className="hover:underline">Home</Link> / <Link to="/road-trips" className="hover:underline">Road trips</Link></>}>
-          <HeroChip icon={<MapPin className="h-4 w-4" />}>{stops.length} stops</HeroChip>
-          <HeroChip icon={<CalendarDays className="h-4 w-4" />}>About {totalDays} days</HeroChip>
+          <HeroChip image={roadImg}>{stops.length} stops</HeroChip>
+          <HeroChip image={roadImg}>About {totalDays} days</HeroChip>
         </GuideHero>
         <TripSnapshot airport={gateway?.code} days={`About ${totalDays} days`} stops={stops.length} /><TripQuickNav booking={!!gateway} />
         <div id="trip-plan" />
@@ -95,8 +100,8 @@ function Page() {
               return (
                 <li key={s.slug}>
                   {leg != null && <p className="mb-2 ml-6 flex items-center gap-2 text-xs text-muted-foreground"><RouteIcon className="h-3.5 w-3.5" /> ~{leg} mi straight-line from {stops[i - 1].name}</p>}
-                  <Link to="/destinations/$slug" params={{ slug: s.slug }} className="group grid grid-cols-[96px_minmax(0,1fr)] gap-4 overflow-hidden rounded-lg border border-border bg-card p-3 shadow-soft transition hover:shadow-lg sm:grid-cols-[160px_minmax(0,1fr)]">
-                    <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-muted">
+                  <Link to="/destinations/$slug" params={{ slug: s.slug }} className="group grid min-h-12 grid-cols-[80px_minmax(0,1fr)] gap-4 border-b border-border py-4 transition sm:grid-cols-[120px_minmax(0,1fr)]">
+                    <div className="relative aspect-square overflow-hidden rounded-lg bg-muted">
                       {s.heroImage && <img src={s.heroImage} alt={s.name} loading="lazy" className="h-full w-full object-cover" />}
                       <span className="absolute left-2 top-2 grid h-8 w-8 place-items-center rounded-full bg-card/90 font-display text-sm font-bold text-forest">{i + 1}</span>
                     </div>

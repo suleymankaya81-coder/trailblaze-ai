@@ -1,19 +1,25 @@
 import { CalendarDays, Car, Clock, Plane, ShieldAlert } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { formatDriveShort } from '@/lib/seo/flyDrive';
+import { Thumb } from '@/components/ui-kit';
+import flightImg from '@/assets/thumbs/flight.jpg';
+import roadImg from '@/assets/thumbs/road.jpg';
+import planImg from '@/assets/thumbs/plan.jpg';
+import mapImg from '@/assets/thumbs/map.jpg';
+import carImg from '@/assets/thumbs/car.jpg';
 
 type Trip = { airportCode?: string | null; driveMinutes?: number | null; tripDurationDays?: string | null; bestSeason?: string | null; permitLevel?: string | null; travelPlan?: { vehicle?: string | null } | null };
 export function TripSnapshot({ trip, airport, days, stops }: { trip?: Trip; airport?: string | null; days?: string; stops?: number }) {
   const demand: Record<string, string> = { high: 'High · check entry notes', moderate: 'Moderate · check entry notes', none: 'Lower · check current rules' };
   const facts = [
-    { icon: Plane, label: 'Arrival airport', value: airport ?? trip?.airportCode },
-    { icon: Clock, label: 'Airport drive', value: trip?.driveMinutes != null ? `${formatDriveShort(trip.driveMinutes)} · estimate` : null },
-    { icon: CalendarDays, label: 'Suggested stay', value: days ?? trip?.tripDurationDays },
-    { icon: ShieldAlert, label: 'Reservation demand', value: trip?.permitLevel ? demand[trip.permitLevel] : stops ? `${stops} stops · check each guide` : null },
-    { icon: Car, label: trip?.travelPlan?.vehicle ? 'Vehicle notes' : 'Best season', value: trip?.travelPlan?.vehicle ?? trip?.bestSeason },
+    { image: flightImg, label: 'Arrival airport', value: airport ?? trip?.airportCode },
+    { image: roadImg, label: 'Airport drive', value: trip?.driveMinutes != null ? `${formatDriveShort(trip.driveMinutes)} · estimate` : null },
+    { image: planImg, label: 'Suggested stay', value: days ?? trip?.tripDurationDays },
+    { image: mapImg, label: 'Reservation demand', value: trip?.permitLevel ? demand[trip.permitLevel] : stops ? `${stops} stops · check each guide` : null },
+    { image: carImg, label: trip?.travelPlan?.vehicle ? 'Vehicle notes' : 'Best season', value: trip?.travelPlan?.vehicle ?? trip?.bestSeason },
   ].filter(f => f.value);
   return <section aria-label="Trip snapshot" className="border-b border-border bg-card">
-    <div className="container-page py-6"><p className="mb-4 text-xs font-semibold uppercase text-sage-deep">Trip snapshot</p><dl className="grid grid-cols-2 gap-5 lg:grid-cols-5">{facts.map(f => <div key={f.label} className="min-w-0"><dt className="flex items-center gap-2 text-xs text-muted-foreground"><f.icon className="h-4 w-4 shrink-0" />{f.label}</dt><dd className="mt-2 line-clamp-3 text-sm font-semibold leading-relaxed" title={String(f.value)}>{f.value}</dd></div>)}</dl></div>
+    <div className="container-page py-6"><p className="mb-4 text-xs font-semibold uppercase text-sage-deep">Trip snapshot</p><dl className="grid grid-cols-2 gap-5 lg:grid-cols-5">{facts.map(f => <div key={f.label} className="min-w-0"><dt className="flex items-center gap-2 text-xs text-muted-foreground"><Thumb src={f.image} size={40} />{f.label}</dt><dd className="mt-2 line-clamp-3 text-sm font-semibold leading-relaxed" title={String(f.value)}>{f.value}</dd></div>)}</dl></div>
   </section>;
 }
 export function TripQuickNav({ booking = true }: { booking?: boolean }) {
