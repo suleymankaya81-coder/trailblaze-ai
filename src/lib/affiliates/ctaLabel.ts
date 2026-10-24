@@ -3,7 +3,7 @@ export function offerCtaLabel(category: string | null | undefined, place?: strin
   const near = place ? ` near ${place}` : "";
   switch (category) {
     case "stay": return `See stays${near}`;
-    case "rv_rental": return "Find campervans & RVs from $150/day";
+    case "rv_rental": return place ? `Find campervans & RVs for ${place}` : "Find campervans & RVs";
     case "car_rental": return "Compare car rental rates";
     case "activity": return place ? `See tours in ${place}` : "See tour times";
     case "esim": return "Get your US eSIM";

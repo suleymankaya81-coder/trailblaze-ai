@@ -8,7 +8,7 @@ describe("offerCtaLabel", () => {
     }
   });
   it("names the place for RV and stays", () => {
-    expect(offerCtaLabel("rv_rental", "Acadia")).toBe("Find campervans & RVs from $150/day");
+    expect(offerCtaLabel("rv_rental", "Acadia")).toBe("Find campervans & RVs for Acadia");
     expect(offerCtaLabel("stay", "Acadia")).toBe("See stays near Acadia");
   });
   it("never promises a price or discount", () => {
