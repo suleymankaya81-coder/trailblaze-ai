@@ -9,11 +9,12 @@ const description = "Entry rules, timed-entry workarounds and nearby alternative
 
 export const Route = createFileRoute("/no-reservation/")({
   loader: () => getHubEntries({ data: { family: "no-reservation" } }),
-  head: () => ({
+  head: ({ loaderData }) => ({
     meta: [
       { title }, { name: "description", content: description },
       { property: "og:title", content: title }, { property: "og:description", content: description },
       { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
+      ...((image => image?.startsWith("https://") ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : [])(loaderData?.find(e => e.heroImage)?.heroImage)),
       { property: "og:url", content: `${SITE}/no-reservation` },
     ],
     links: [{ rel: "canonical", href: `${SITE}/no-reservation` }],
