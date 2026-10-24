@@ -104,16 +104,6 @@ function Page() {
           </GuideSection>
         )}
 
-        <GuideSection title={`Where to park the rig near ${dest.name}`} intro="Private campgrounds and RV parks outside the park, plus overnight stops for members.">
-          <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3">
-            {camps.map((o, i) => {
-              const photo = servicePhoto("rvpark", `${dest.slug}:${o.id}`, i);
-              return photo ? <PartnerPhotoCard key={o.id} brand={partnerLabel(o.partner) ?? "Partner"} title={o.title} href={o.externalUrl ?? ""} photo={photo} detail={o.whyRecommended ?? undefined} cta="Check campground availability" price={o.priceDisplay ?? (o.priceValue != null ? `From $${o.priceValue}/${o.priceUnit ?? "night"}` : undefined)} /> : null;
-            })}
-          </div>
-          <div className="mt-6"><HarvestHostsCard destinationName={dest.name} /></div>
-        </GuideSection>
-
         {rentals.length > 0 && (
           <GuideSection title="Rent a motorhome or campervan" intro="Fleet rentals from established depots. Compare pick-up cities against your flight.">
             <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3">
@@ -128,6 +118,16 @@ function Page() {
         <GuideSection title="Prefer a car and campground trip?">
           <div className="travel-card-row sm:grid-cols-2"><AirportRentalsCards slug={dest.slug} airportCode={dest.airportCode} /></div>
         </GuideSection>
+        <GuideSection title={`Where to park the rig near ${dest.name}`} intro="Private campgrounds and RV parks outside the park, plus overnight stops for members.">
+          <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3">
+            {camps.map((o, i) => {
+              const photo = servicePhoto("rvpark", `${dest.slug}:${o.id}`, i);
+              return photo ? <PartnerPhotoCard key={o.id} brand={partnerLabel(o.partner) ?? "Partner"} title={o.title} href={o.externalUrl ?? ""} photo={photo} detail={o.whyRecommended ?? undefined} cta="Check campground availability" price={o.priceDisplay ?? (o.priceValue != null ? `From $${o.priceValue}/${o.priceUnit ?? "night"}` : undefined)} /> : null;
+            })}
+          </div>
+          <div className="mt-6"><HarvestHostsCard destinationName={dest.name} /></div>
+        </GuideSection>
+
         <section className="container-page pb-6"><ViatorPlaceBlock slug={dest.slug} name={dest.name} /></section>
         <section className="container-page py-10"><TripEssentials context={{ slug: `rv-${dest.slug}`, name: dest.name, places: [dest], mode: "camping" }} /></section>
         <GuideSection title="Quick answers"><GuideFaq faqs={faqs} /></GuideSection>

@@ -223,6 +223,7 @@ function HomePage() {
                 params={{ slug: l.slug }}
                 className="group flex flex-col rounded-lg border border-border bg-card p-6 shadow-soft transition hover:shadow-lg"
               >
+                {homeDestinations.find(d => l.stops.includes(d.slug))?.heroImage && <img src={homeDestinations.find(d => l.stops.includes(d.slug))?.heroImage} alt={`${l.title} — route scenery`} loading="lazy" className="mb-4 aspect-[4/3] w-full rounded-lg object-cover" />}
                 <p className="flex items-center gap-1.5 text-xs uppercase tracking-wider text-muted-foreground">
                   <MapPin className="h-3.5 w-3.5" />
                   {l.region} · {l.stops.length} stops
@@ -495,7 +496,7 @@ export function DestinationCard({
           <h3 className={`mt-1 font-bold ${titleClass}`}>{d.name}</h3>
         </div>
       </div>
-      <div className="mt-3 flex items-center justify-between text-sm">
+      <div className="mt-3 flex flex-wrap items-start justify-between gap-2 text-sm">
         <span className="text-foreground/70">{meta}</span>
         <span className="font-semibold text-foreground/80 group-hover:text-foreground group-hover:underline">
           Plan a trip <ArrowRight className="ml-0.5 inline h-3.5 w-3.5" />

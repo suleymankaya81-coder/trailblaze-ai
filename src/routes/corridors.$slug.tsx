@@ -72,7 +72,7 @@ function Page() {
         <div id="trip-plan" />
 
         <GuideSection title="Who this route is for" intro={corridor.audience}>
-          <div className="relative h-[360px] overflow-hidden rounded-3xl border border-border bg-muted">
+          <div className="relative h-[360px] overflow-hidden rounded-lg border border-border bg-muted">
             <ClientOnly fallback={<Skeleton className="h-full w-full" />}>
               <Suspense fallback={<Skeleton className="h-full w-full" />}>
                 <RoadTripMap route={line} from={[first.lng, first.lat]} to={[first.lng, first.lat]} stops={markers} />
@@ -89,7 +89,7 @@ function Page() {
         <GuideSection title="Before you fly: essentials for overseas visitors">
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {corridor.essentials.map((e) => (
-              <div key={e.title} className="rounded-3xl border border-border bg-card p-6 shadow-soft">
+              <div key={e.title} className="rounded-lg border border-border bg-card p-6 shadow-soft">
                 <Globe2 className="h-5 w-5 text-forest" />
                 <p className="mt-3 font-display text-lg font-semibold text-foreground">{e.title}</p>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{e.text}</p>
@@ -107,8 +107,8 @@ function Page() {
                 <li key={s.slug}>
                   {leg != null && <p className="mb-2 ml-6 flex items-center gap-2 text-xs text-muted-foreground"><RouteIcon className="h-3.5 w-3.5" /> ~{leg} mi straight-line from {stops[i - 1].name}</p>}
                   {corridor.legNotes?.[s.slug] && <p className="mb-2 ml-6 text-xs text-muted-foreground">{corridor.legNotes[s.slug]}</p>}
-                  <Link to="/destinations/$slug" params={{ slug: s.slug }} className="group grid grid-cols-[96px_minmax(0,1fr)] gap-4 overflow-hidden rounded-3xl border border-border bg-card p-3 shadow-soft transition hover:shadow-lg sm:grid-cols-[160px_minmax(0,1fr)]">
-                    <div className="relative aspect-square overflow-hidden rounded-2xl bg-muted sm:aspect-[4/3]">
+                  <Link to="/destinations/$slug" params={{ slug: s.slug }} className="group grid grid-cols-[96px_minmax(0,1fr)] gap-4 overflow-hidden rounded-lg border border-border bg-card p-3 shadow-soft transition hover:shadow-lg sm:grid-cols-[160px_minmax(0,1fr)]">
+                    <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-muted">
                       {s.heroImage && <img src={s.heroImage} alt={s.name} loading="lazy" className="h-full w-full object-cover" />}
                       <span className="absolute left-2 top-2 grid h-8 w-8 place-items-center rounded-full bg-card/90 font-display text-sm font-bold text-forest">{i + 1}</span>
                     </div>
