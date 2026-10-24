@@ -28,7 +28,7 @@ function AffiliateDisclosurePage() {
       eyebrow="Transparency"
       title="Affiliate Disclosure"
       lede="Minialife may earn a commission when you book or purchase through links on this site, at no extra cost to you."
-      updated="August 13, 2026"
+      updated="October 24, 2026"
     >
       <section>
         <h2>How this works</h2>
@@ -40,6 +40,9 @@ function AffiliateDisclosurePage() {
           EKTA, Airalo, Radical Storage, and through the Webjet Group programme, Motorhome Republic and Airport Rentals. When you click one of these partner links and go on to book or
           purchase, we may earn a small commission. Links marked as partner links are tracked by
           the network on the partner's behalf.
+        </p>
+        <p>
+          We also use direct Viator partner links and ROCKBROS product links through Awin.
         </p>
         <p>
           Some buttons — for example REI gear — are ordinary direct links to
@@ -83,7 +86,7 @@ function AffiliateDisclosurePage() {
         <h2>Why we do this</h2>
         <p>
           Affiliate commissions are how Minialife stays free to use. They let us keep researching
-          destinations, testing stays, and writing packing guides without charging you a
+          destinations, comparing travel options, and writing route guides without charging you a
           subscription or gating content behind a paywall.
         </p>
       </section>
@@ -102,8 +105,7 @@ function AffiliateDisclosurePage() {
       <section>
         <h2>Where you'll see affiliate links</h2>
         <p>
-          Affiliate links mainly appear in the "Top Stays," "Rent Before You Go," "Things to Do,"
-          and "Essentials" sections of each destination page. Outbound links open in a new tab so
+          Affiliate links appear alongside flights, vehicle rentals, stays, tours and Curated Trip Essentials on travel pages. Outbound links open in a new tab so
           you never lose your place on Minialife.
         </p>
       </section>

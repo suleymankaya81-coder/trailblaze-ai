@@ -1,5 +1,15 @@
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { offerCtaLabel } from "@/lib/affiliates/ctaLabel";
+import { SafeImage } from "@/components/shared/SafeImage";
+import { PhotoCredit } from "@/components/shared/PhotoCredit";
+import { PlaceCard, SwipeRow, Thumb } from "@/components/ui-kit";
+import { Button } from "@/components/ui/button";
+import planImage from "@/assets/thumbs/plan.jpg";
+import carImage from "@/assets/thumbs/car.jpg";
+import stayImage from "@/assets/thumbs/stay.jpg";
+import gearImage from "@/assets/thumbs/gear.jpg";
+import roadImage from "@/assets/thumbs/road.jpg";
+import mapImage from "@/assets/thumbs/map.jpg";
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
@@ -199,7 +209,7 @@ function DestinationPage() {
         <RoadTrip dest={dest} ai={ai} />
 
         {/* Tours & services — one section */}
-        <section id="tours" className="scroll-mt-24">
+        <section id="trip-tours" className="scroll-mt-24">
           <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
             <ThingsToDo dest={dest} />
             <TravelServices dest={dest} />
@@ -327,17 +337,6 @@ function CardImg({ src, alt, className }: { src: string; alt: string; className?
       onError={() => setFailed(true)}
       className={className}
     />
-  );
-}
-
-function PhotoCredit({ photo }: { photo?: Photo }) {
-  if (!photo) return null;
-  return (
-    <a href={photo.source} target="_blank" rel="noopener noreferrer" title={`${photo.subject} · ${photo.credit} · ${photo.license}`}
-      onClick={(event) => event.stopPropagation()} aria-label={`Illustrative photo credit: ${photo.credit}, ${photo.license}`}
-      className="absolute bottom-1 right-1 z-10 rounded bg-ink/80 px-1.5 py-0.5 text-[10px] text-off-white">
-       ©
-    </a>
   );
 }
 
@@ -493,6 +492,7 @@ function StayChooser({ name }: { name: string }) {
     <div className="mb-5 grid gap-3 sm:grid-cols-3" aria-label={`Where to stay near ${name}`}>
       {STAY_CHOICES.map((c) => (
         <div key={c.label} className="rounded-lg border border-border bg-card p-3">
+          <Thumb src={c.label.toLowerCase().includes("rv") ? carImage : c.label.toLowerCase().includes("cabin") ? stayImage : roadImage} size={48} className="mb-3" />
           <p className="text-sm font-semibold text-foreground">{c.label}</p>
           <p className="mt-0.5 text-xs text-muted-foreground">{c.why}</p>
           <p className="mt-1.5 text-xs font-semibold text-foreground">{c.price} <span className="font-normal text-muted-foreground">· typical</span></p>
@@ -514,14 +514,14 @@ function TopStays({ dest }: { dest: DestinationView }) {
   const filtered = tab === "All" ? dest.stays : dest.stays.filter((s) => s.subcategory === tab);
   const pick = filtered[0];
   const rest = filtered.slice(1, 4);
-  const usedStayPhotos = new Set<string>();
+
 
   return (
     <section id="stays" className="scroll-mt-24">
       <SectionHeader
         step={3}
         title="Where you'll want to sleep"
-        action={<TextLink>View all stays</TextLink>}
+        
       />
       <p className="-mt-3 mb-4 text-[11px] text-muted-foreground">
         Checks availability with the partner directly — not a confirmed booking on our end.
@@ -531,7 +531,8 @@ function TopStays({ dest }: { dest: DestinationView }) {
 
       <div className="flex flex-wrap items-center gap-2">
         {["All", ...cats].map((c) => (
-          <button
+          <Button
+            variant="outline"
             key={c}
             onClick={() => setTab(c)}
             className={
@@ -542,7 +543,7 @@ function TopStays({ dest }: { dest: DestinationView }) {
             }
           >
             {c}
-          </button>
+          </Button>
         ))}
       </div>
 
@@ -609,12 +610,7 @@ function StayCard({
             Minialife's pick
           </span>
         )}
-        <button
-          aria-label="Save this stay"
-          className="absolute right-3 top-3 grid h-8 w-8 place-items-center rounded-full bg-off-white/90 text-foreground/60 transition hover:text-foreground"
-        >
-          <Heart className="h-4 w-4" />
-        </button>
+
       </div>
 
       <div className="flex flex-1 flex-col p-4">
@@ -708,7 +704,7 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
             {items.map((i) => (
               <li key={i.label} className="flex items-center justify-between gap-3">
                 <span className="flex items-center gap-2 text-foreground/80">
-                  <span className="text-foreground/45">{i.icon}</span>
+                  <Thumb src={i.label === "Accommodation" ? stayImage : i.label === "Rental" ? carImage : i.label === "Gear & essentials" ? gearImage : roadImage} size={32} />
                   <span className="text-xs">{i.label}</span>
                 </span>
                 <span className="text-xs font-semibold text-foreground">
@@ -752,14 +748,12 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
       <SectionHeader
         step={2}
         title={dest.airportCode ? `RVs, campervans & cars near ${dest.airportCode}` : "RVs, campervans & cars for this trip"}
-        action={<TextLink>View all rentals</TextLink>}
+        
       />
       <p className="-mt-3 mb-4 text-[11px] text-muted-foreground">
         Checks availability with the partner directly — not a confirmed booking on our end.
       </p>
-      {rentals.length === 0 ? (
-        <EmptyState message="No rental partners listed for this destination yet." />
-      ) : (
+      {rentals.length > 0 && (
         <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
            {rentals.map((r, index) => (
              <RentalTile key={r.id} offer={r} destinationSlug={dest.slug} photo={offerPhoto(dest.slug, "rental", index, `${r.title} ${r.subcategory ?? ""} ${r.partner ?? ""}`)} />
@@ -806,7 +800,7 @@ function RentalTile({ offer, destinationSlug, photo }: { offer: OfferView; desti
 ========================================================= */
 function ThingsToDo({ dest }: { dest: DestinationView }) {
   return (
-    <section id="trip-tours" className="scroll-mt-24">
+    <section className="scroll-mt-24">
       <SectionHeader step={4} title="The moments you came for" />
       <ViatorPlaceBlock slug={dest.slug} name={dest.name} className="mt-6" anchored={false} />
       <TourTicketCards slug={dest.slug} name={dest.name} />
@@ -859,7 +853,7 @@ function TravelServices({ dest }: { dest: DestinationView }) {
                     event.preventDefault();
                     window.open(href, "_blank", "noopener,noreferrer");
                   }}>
-                  <span className="mt-0.5 text-foreground/50">{SERVICE_META[category]?.icon}</span>
+                  <Thumb src={category === "car_rental" ? carImage : category === "insurance" ? planImage : category === "esim" ? mapImage : gearImage} size={40} />
                   <span className="min-w-0 flex-1">
                     <span className="block text-xs font-semibold text-foreground">{detail.title}</span>
                     <span className="block text-[11px] text-muted-foreground">{detail.sub}</span>
@@ -890,7 +884,7 @@ function ServiceRow({ service, destinationSlug }: { service: OfferView; destinat
 
   const inner = (
     <>
-      <span className="mt-0.5 text-foreground/50">{meta.icon}</span>
+      <Thumb src={service.category === "car_rental" ? carImage : planImage} size={40} />
       <span className="min-w-0 flex-1">
         <span className="block text-xs font-semibold text-foreground">{service.title}</span>
         <span className="block text-[11px] text-muted-foreground">
@@ -955,7 +949,7 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
             </ClientOnly>
           ) : (
             <div className="flex min-h-[300px] flex-col items-center justify-center gap-3 p-8 text-center">
-              <Map className="h-7 w-7 text-foreground/40" />
+              <Thumb src={mapImage} size={64} />
               <p className="text-sm font-semibold text-foreground">Route map coming soon</p>
             </div>
           )}
@@ -999,7 +993,7 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
                       href="#stays"
                       className="flex items-center gap-3 rounded-xl border border-border bg-beige/40 px-3 py-2.5 text-xs text-foreground/80 hover:bg-muted"
                     >
-                      <Tent className="h-4 w-4 text-foreground/50" />
+                      <Thumb src={stayImage} size={32} />
                       <span className="truncate">{s.title}</span>
                     </a>
                   </li>
@@ -1056,9 +1050,7 @@ function FieldIntel({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) 
     <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
       {tips.map((t) => (
         <div key={t.label} className="rounded-lg border border-border bg-card p-4 shadow-soft">
-          <span className="grid h-8 w-8 place-items-center rounded-full bg-sage/20 text-forest">
-            {t.icon}
-          </span>
+          <Thumb src={t.label === "Signal" ? mapImage : roadImage} size={40} />
           <p className="mt-2.5 text-[10px] font-bold uppercase tracking-[0.14em] text-muted-foreground">
             {t.label}
           </p>
@@ -1163,39 +1155,19 @@ function TripFlow({ dest }: { dest: DestinationView }) {
    11 — SIMILAR DESTINATIONS
 ========================================================= */
 function SimilarDestinations({ dest }: { dest: DestinationView }) {
-  const similar = dest.similar.slice(0, 6);
+  const similar = dest.similar.slice(0, 4);
   return (
     <section>
       <SectionHeader
         title="More destinations you'll love"
-        action={<TextLink>View all destinations</TextLink>}
+        action={<Link to="/destinations" className="inline-flex min-h-12 items-center text-sm font-semibold text-primary">All destinations <ArrowRight className="ml-1 h-4 w-4" /></Link>}
       />
       {similar.length === 0 ? (
         <EmptyState message="No related destinations yet." />
       ) : (
-        <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 xl:grid-cols-5">
-          {similar.map((d) => (
-            <Link
-              key={d.slug}
-              to="/destinations/$slug"
-              params={{ slug: d.slug }}
-              className="group relative overflow-hidden rounded-lg border border-border"
-            >
-              <div className="relative aspect-[3/4]">
-                <CardImg
-                  src={d.heroImage}
-                  alt={d.name}
-                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/25 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 p-3">
-                  <p className="text-xs font-semibold leading-snug text-off-white">{d.name}</p>
-                  <p className="mt-0.5 text-[10px] text-off-white/75">{d.region}</p>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
+        <SwipeRow className="md:grid-cols-2 xl:grid-cols-4">
+          {similar.map((d) => <PlaceCard key={d.slug} to="/destinations/$slug" params={{ slug: d.slug }} image={d.heroImage} alt={d.name} title={d.name} info={d.region} />)}
+        </SwipeRow>
       )}
     </section>
   );
@@ -1234,7 +1206,7 @@ function FinalCta({ dest }: { dest: DestinationView }) {
 
   return (
     <aside className="rounded-lg bg-ink p-6 text-off-white shadow-lift">
-      <Sparkles className="h-6 w-6 text-off-white/70" />
+      <Thumb src={planImage} size={64} />
       <h2 className="mt-4 font-display text-xl">Ready to build your trip?</h2>
       <p className="mt-2 text-xs leading-relaxed text-off-white/80">
         Save places, compare options, and plan every detail in one place.
@@ -1283,7 +1255,7 @@ function FinalCta({ dest }: { dest: DestinationView }) {
       )}
 
       <p className="mt-4 flex items-center gap-1.5 text-[10px] text-off-white/60">
-        <Star className="h-3 w-3" />
+        
         Free — no account needed
       </p>
     </aside>
@@ -1306,7 +1278,7 @@ function PlanDeeper({ dest }: { dest: DestinationView }) {
   const pill = "inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground hover:bg-muted";
   if (!arrivalSlug && !noRes && !rv && loops.length === 0 && gatewayTrips.length === 0 && (!data || data.length === 0)) return null;
   return (
-    <section className="rounded-lg border border-border bg-card p-6">
+    <section className="border-y border-border py-6">
       <h2 className="font-display text-2xl text-foreground">Plan deeper</h2>
       <div className="mt-4 flex flex-wrap gap-3">
         {arrivalSlug && (

@@ -27,7 +27,7 @@ function TermsPage() {
       eyebrow="Legal"
       title="Terms of Use"
       lede="Please read these terms before using Minialife. By browsing or using the Site, you agree to them."
-      updated="August 13, 2026"
+      updated="October 24, 2026"
     >
       <section>
         <h2>Acceptance of terms</h2>
@@ -43,7 +43,7 @@ function TermsPage() {
         <p>
           Minialife is a destination-planning guide. We publish curated information about
           national parks and outdoor destinations, including recommended stays, RV and gear
-          rentals, activities, and packing essentials. We link out to third-party partners where
+          rentals, activities, and curated trip essentials. We link out to third-party partners where
           you can book or purchase — Minialife itself does not process bookings, payments, or
           reservations.
         </p>
@@ -65,8 +65,7 @@ function TermsPage() {
       <section>
         <h2>Third-party bookings and purchases</h2>
         <p>
-          Links on the Site take you to third-party partners (such as Motorhome Republic, Hipcamp, Glamping
-          Hub, Arrive Outdoors, REI, and Viator) to complete a booking or purchase. Any transaction
+          Links on the Site take you to third-party partners (such as Motorhome Republic, Airport Rentals, Expedia, Vrbo, REI, ROCKBROS, and Viator) to complete a booking or purchase. Any transaction
           you enter into with a partner is solely between you and that partner, governed by their
           own terms, pricing, cancellation policies, and privacy practices. Minialife is not a
           party to those transactions and is not responsible for a partner's availability,
@@ -80,7 +79,7 @@ function TermsPage() {
         <h2>Content accuracy</h2>
         <p>
           We aim to keep destination information, seasonal guidance, pricing estimates, and
-          packing recommendations accurate and current, but outdoor conditions, park rules, and
+          activity guidance accurate and current, but outdoor conditions, park rules, and
           partner pricing change. Always confirm details (permits, road closures, weather, and
           exact pricing) directly with the relevant park authority or booking partner before you
           travel.
