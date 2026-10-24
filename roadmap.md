@@ -1,3 +1,10 @@
+## October 24 REI-inspired site-wide presentation (in order)
+- [ ] 1. Homepage: explain MiniaLife, add three-step How it works band and five clear discovery entries immediately after the cover.
+- [ ] 2. Card standards: 4:3 destination/route photos, square gear photos, data-backed facts, honest prices, consistent action hierarchy and compact credits; preserve Gear Shop design.
+- [ ] 3. Travel pages: shared Trip Snapshot/quick navigation across destination, Fly & Drive, RV, no-reservation, loops, gateways and search guides; flight → vehicle → stay → tours → gear booking sequence, without invented vehicle/permit claims.
+- [ ] 4. Phone experience: 85%-width swipe rows, 48px touch controls and compact destination/hub filter dialogs.
+- [ ] 5. Verify representative page families, navigation, filters, swipe interaction, partner links, metadata and desktop/phone layout. Do not publish without request.
+
 ## October 24 contextual trip essentials
 - [x] Select real approved-partner ROCKBROS products and match exactly four distinct items to destination/route context; bike-only repair/mounting equipment is restricted to cycling trips. Prices and stock are recorded feed values, not live guarantees.
 - [x] Add page-matched horizontal product cards after planning content on destination, Fly & Drive, RV/camping, no-reservation, loop, gateway and existing search-guide pages; preserve Gear Shop.
