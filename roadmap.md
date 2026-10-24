@@ -1,3 +1,7 @@
+## October 24 selected homepage collage correction
+- [x] Replace the incorrectly applied cinematic opening with the selected left-copy / three-photo staggered collage and working search; retain all lower homepage sections.
+- [x] Verified all three images at 1280/977/390px, no horizontal overflow or page errors; Yellowstone search opens its actual destination page. Preview build OK. Inspirational scenes are generated, clearly labelled, and not represented as verified destination photographs; nothing published.
+
 ## October 24 photo, contact and publishing request
 - [x] Replace all eight city covers with exact-place licensed Flickr/Pexels scenery; verify loaded photos/credits on desktop and phone, no overflow/errors. Sources: scripts/audits/city-cover-sources-2026-10-24.json. Rejected Sacramento candidate with conflicting location metadata.
 - [x] Replace incorrect public email with info@minialife.com and remove the owner's personal name from public content; repository and all application database text fields checked.

@@ -239,3 +239,29 @@
   padding-block: 3.5rem;
   @media (min-width: 768px) { padding-block: 5.5rem; }
 }
+
+/* Selected editorial collage: an unframed opening, not a photo carousel. */
+.home-collage-hero { overflow: hidden; background: var(--background); }
+.home-collage-layout { display: grid; gap: 2rem; padding-block: 2rem; }
+.home-collage-copy { min-width: 0; align-self: center; }
+.home-collage-scenes { position: relative; display: grid; grid-template-columns: 1.2fr 1fr 0.85fr; gap: 0.5rem; height: 300px; padding-bottom: 20px; }
+.home-collage-scene { position: relative; overflow: hidden; border-radius: 8px; min-width: 0; height: calc(100% - 20px); transform: skewY(-4deg); }
+.home-collage-scene img { transform: skewY(4deg) scale(1.08); }
+.home-collage-scene-2 { margin-top: 16px; height: calc(100% - 30px); }
+.home-collage-scene-3 { margin-top: 32px; height: calc(100% - 50px); }
+@media (min-width: 768px) {
+  .home-collage-layout { grid-template-columns: 0.95fr 1.3fr; gap: 2.5rem; padding-block: 2rem; }
+  .home-collage-scenes { height: clamp(450px, calc(100svh - 160px), 680px); gap: 0.75rem; }
+  .home-collage-scene { height: calc(100% - 24px); }
+  .home-collage-scene-2 { margin-top: 26px; height: calc(100% - 60px); }
+  .home-collage-scene-3 { margin-top: 55px; height: calc(100% - 115px); }
+}
+@media (min-width: 1024px) { .home-collage-layout { gap: 3rem; } }
+@media (min-width: 768px) and (max-height: 650px) {
+  .home-collage-layout { padding-block: 1.25rem; }
+  .home-collage-scenes { height: 390px; }
+  .home-collage-copy h1 { margin-top: 0.75rem; }
+  .home-collage-copy p { margin-top: 0.75rem; }
+  .home-collage-copy form { margin-top: 1rem; }
+  .home-collage-copy ul { margin-top: 1.25rem; }
+}
