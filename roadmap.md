@@ -1,8 +1,8 @@
 ## October 24 REI-style visual rebuild (step by step, owner approves each step)
 - [x] 0. Shared design system: stone background, #1B4431 green, mustard/terracotta badges, serif headings, card kit, phone swipe rows with progress line, photo thumbnails instead of icons.
 - [x] 1. Homepage: hero, What is MiniaLife + 3 steps, 5 photo start squares, 1+4 places, 4 loops, rentals, 3 stay types, 3 green guide cards, 4 trip essentials, Why MiniaLife, collapsible phone footer.
-- [ ] 2. Destination list and route/guide hubs (waiting for owner review of step 1)
-- [ ] 3. Destination pages
+- [x] 2. Destination list, Road Trips, Gateway, Trip Guides and the 3 guide lists use the new photo cards; homepage car cards removed.
+- [ ] 3. Destination pages (waiting for owner review of step 2)
 - [ ] 4. Guide pages (Fly & Drive, RV, No Reservation, loops, gateways, search guides)
 - [ ] 5. About and static pages
 - [ ] 6. Final desktop/phone check and tests

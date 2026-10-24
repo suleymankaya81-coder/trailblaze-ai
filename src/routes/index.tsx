@@ -8,7 +8,6 @@ import { Footer } from "@/components/site/Footer";
 import { SearchBar } from "@/components/site/SearchBar";
 import { servicePhoto, type ServicePhotoCategory } from "@/lib/data/servicePhotos";
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
-import { AirportRentalsCards } from "@/components/destination/AirportRentalsCards";
 import { RentalSearch } from "@/components/home/RentalSearch";
 import { StartHere } from "@/components/home/StartHere";
 import { TripEssentials } from "@/components/destination/TripEssentials";
@@ -122,11 +121,8 @@ function HomePage() {
       <section id="rentals-gear" className="section-y">
         <div className="container-page">
           <SectionHead kicker="Step 2 of your trip" title="RV, campervan & airport car rentals" intro="Search Motorhome Republic for RVs or Airport Rentals for cars. Prices shown are typical rates; the partner shows the live price." />
-          <div className="grid gap-6 lg:grid-cols-[1.1fr_1fr]">
+          <div className="mx-auto max-w-3xl">
             <RentalSearch />
-            <SwipeRow className="md:grid-cols-2">
-              <AirportRentalsCards slug="homepage" />
-            </SwipeRow>
           </div>
         </div>
       </section>
