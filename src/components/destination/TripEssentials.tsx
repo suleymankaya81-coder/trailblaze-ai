@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { catalogPrice, gearShopLink } from '@/lib/data/rockbrosGear';
 import { selectTripEssentials, type EssentialsContext } from '@/lib/data/tripEssentials';
 import { TRIP_ESSENTIALS_REVIEWED } from '@/lib/data/tripEssentials.catalog';
+import { SafeImage } from '@/components/shared/SafeImage';
 
 export function TripEssentials({ context }: { context: EssentialsContext }) {
   const { products } = selectTripEssentials(context);
@@ -36,7 +37,7 @@ export function TripEssentials({ context }: { context: EssentialsContext }) {
         {products.map(product => (
           <article key={product.id} data-product-id={product.id} className="flex min-w-0 flex-col overflow-hidden rounded-lg border border-border bg-card">
             <a href={gearShopLink(product, `trip-${context.slug}`)} target="_blank" rel="sponsored nofollow noopener noreferrer" aria-label={`View ${product.name} at ROCKBROS`} className="block aspect-square p-5">
-              <img src={product.image} alt={product.catalogTitle} width={400} height={300} loading="lazy" className="h-full w-full object-contain" />
+              <SafeImage src={product.image} alt={product.catalogTitle} width={400} height={300} loading="lazy" className="h-full w-full object-contain" />
             </a>
             <div className="flex flex-1 flex-col p-4 pt-0">
               <p className="text-[11px] font-semibold text-sage-deep">{product.purpose}</p>

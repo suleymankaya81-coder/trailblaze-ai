@@ -34,3 +34,5 @@
 - Load the Travelpayouts rewriting script only after hydration and place photo-credit links outside clickable card anchors. Why: prevent pre-hydration DOM mutations and invalid nested anchors.
 - Shared card templates live in src/components/ui-kit (CategoryTile, PlaceCard, EditorialCard, SplitBand, SwipeRow, Thumb); new pages reuse them instead of adding new card styles. Why: one consistent card system across the site.
 - Guide heroes, reservation notes and FAQs share GuideSections; provider tour frames report their own height and verify message origin/source. Why: guide families stay consistent and mobile listings are not clipped.
+- Remote images in shared cards use SafeImage without substituting unrelated photographs; Viator display validation lives in viatorDisplay. Why: failed media and invalid provider values must not create misleading content.
+- About and legal content share StaticPageLayout with an unframed reading column. Why: static pages keep the travel site's visual hierarchy without floating article cards.
