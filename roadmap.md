@@ -1,3 +1,9 @@
+## October 24 photo, contact and publishing request
+- [ ] Replace eight city covers using verified licensed alternative sources and check their pages.
+- [ ] Replace incorrect public email with info@minialife.com and remove the owner's personal name from public content.
+- [ ] Validate and verify the contact form's real submission behavior.
+- [ ] Check security and request publication of the completed changes.
+
 ## October 24 full implementation audit
 - [x] Audit shared templates and all 3,525 sitemap content URLs: all 200, required metadata present; corrected two duplicate-title pairs and read changes back. Fixed destination planning order/tours anchor, inactive save/view-all controls, shared image failure handling, Viator ratings/resize/error states, subject-mismatched Tiqets photo, estimate labels, related cards, mobile footer resize and About/static presentation.
 - [x] Verify 15 representative pages at 1280/390px (30 views), destination search→Acadia, real Yellowstone Viator click, all travel-family four-product rows/swipe, successful-empty and simulated frame-error states, section order and 145 tests. No observed overflow/page errors; build OK. Report: scripts/audits/implementation-audit-2026-10-24.md.
