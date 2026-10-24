@@ -1,7 +1,7 @@
 ## October 24 full implementation audit
-- [ ] Check the previous rebuild against the detailed plan across all page families; correct confirmed omissions and regressions.
-- [ ] Complete About/static presentation and verify desktop/phone layouts, images, navigation, booking links and relevant tests.
-- [ ] Record remaining external-data limitations without claiming unavailable live forms or full factual verification.
+- [x] Audit shared templates and all 3,525 sitemap content URLs: all 200, required metadata present; corrected two duplicate-title pairs and read changes back. Fixed destination planning order/tours anchor, inactive save/view-all controls, shared image failure handling, Viator ratings/resize/error states, subject-mismatched Tiqets photo, estimate labels, related cards, mobile footer resize and About/static presentation.
+- [x] Verify 15 representative pages at 1280/390px (30 views), destination search→Acadia, real Yellowstone Viator click, all travel-family four-product rows/swipe, successful-empty and simulated frame-error states, section order and 145 tests. No observed overflow/page errors; build OK. Report: scripts/audits/implementation-audit-2026-10-24.md.
+- [x] Record remaining external limitations: all eight scenic-city replacement photos remain incomplete (Wikimedia downloads return 403; only five locations had verified candidates). Removed wrong-country/state Branson/Ely gallery photos; retained correct existing covers. Live rental forms and full independent factual/photo-location verification remain unverified; no publication.
 
 ## October 24 REI-style visual rebuild (step by step, owner approves each step)
 - [x] 0. Shared design system: stone background, #1B4431 green, mustard/terracotta badges, serif headings, card kit, phone swipe rows with progress line, photo thumbnails instead of icons.
@@ -10,8 +10,8 @@
 - [x] 3. Destination pages: repeated facts removed, large booking buttons, serif card titles, no repeated stay photos, scenic city covers.
 - [x] Requested before step 4: merged ticket partners into The moments you came for, removed illustrative Viator activity offers; individually called all 500 place functions. 339 retain provider-text-matched results, 161 have no matching results, zero request errors. Reject unrelated destination results; report in scripts/audits/viator-destinations-2026-10-24.json. This is automated relevance screening, not manual location/meeting-point verification.
 - [x] 4. Guide pages (Fly & Drive, RV, No Reservation, loops, gateways, search guides): shared photo snapshots/booking steps, serif heroes, square stop thumbnails, overseas-note photos, collapsed FAQs, mobile swipe/progress and auto-height provider frames. Eight representative pages checked at desktop/phone sizes, no page errors/overflow; actual Viator click and mobile swipe verified, 28 tests pass. Steps 5–6 remain for owner review; no publishing.
-- [ ] 5. About and static pages
-- [ ] 6. Final desktop/phone check and tests
+- [x] 5. About and static pages: shared unframed reading layout, serif scale, photo thumbnails/three steps; removed obsolete packing and unsupported full-verification claims; updated disclosure partnerships.
+- [x] 6. Final desktop/phone checks, all sitemap URLs and 145 tests; limitations recorded in the implementation audit above.
 
 ## October 24 REI-inspired site-wide presentation (in order)
 - [x] 1. Homepage: explain MiniaLife, add three-step How it works band and five clear discovery entries immediately after the cover.
