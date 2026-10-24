@@ -238,34 +238,6 @@ function Hero({ dest }: { dest: DestinationView }) {
   if (dest.campingScore != null)
     stats.push({ label: "Camping score", value: `${dest.campingScore} / 10` });
 
-  const glance: { icon: ReactNode; label: string; value: string }[] = [
-    { icon: <MapPin className="h-4 w-4" />, label: "Location", value: dest.region || "—" },
-  ];
-  if (dest.bestSeason)
-    glance.push({
-      icon: <Sun className="h-4 w-4" />,
-      label: "Best season",
-      value: dest.bestSeason,
-    });
-  if (dest.tripDurationDays)
-    glance.push({
-      icon: <Calendar className="h-4 w-4" />,
-      label: "Ideal duration",
-      value: dest.tripDurationDays,
-    });
-  if (dest.scenicScore != null)
-    glance.push({
-      icon: <Ruler className="h-4 w-4" />,
-      label: "Scenic score",
-      value: `${dest.scenicScore} / 10`,
-    });
-  if (dest.avgDailyBudget != null)
-    glance.push({
-      icon: <DollarSign className="h-4 w-4" />,
-      label: "Average budget",
-      value: `$${dest.avgDailyBudget} per day`,
-    });
-
   return (
     <section className="relative isolate overflow-hidden">
       <img
