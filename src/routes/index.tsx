@@ -167,8 +167,8 @@ function HomePage() {
 
       <section className="section-y bg-card">
         <div className="container-page">
-          <SectionHead kicker="Curated Trip Essentials" title="Gear picked by MiniaLife for the road" action={<SectionLink to="/gear">Go to the Gear Shop</SectionLink>} />
           <TripEssentials context={{ slug: "homepage", name: "your road trip" }} />
+          <div className="mt-2"><SectionLink to="/gear">Go to the Gear Shop</SectionLink></div>
         </div>
       </section>
 
