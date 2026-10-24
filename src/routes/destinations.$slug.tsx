@@ -238,34 +238,6 @@ function Hero({ dest }: { dest: DestinationView }) {
   if (dest.campingScore != null)
     stats.push({ label: "Camping score", value: `${dest.campingScore} / 10` });
 
-  const glance: { icon: ReactNode; label: string; value: string }[] = [
-    { icon: <MapPin className="h-4 w-4" />, label: "Location", value: dest.region || "—" },
-  ];
-  if (dest.bestSeason)
-    glance.push({
-      icon: <Sun className="h-4 w-4" />,
-      label: "Best season",
-      value: dest.bestSeason,
-    });
-  if (dest.tripDurationDays)
-    glance.push({
-      icon: <Calendar className="h-4 w-4" />,
-      label: "Ideal duration",
-      value: dest.tripDurationDays,
-    });
-  if (dest.scenicScore != null)
-    glance.push({
-      icon: <Ruler className="h-4 w-4" />,
-      label: "Scenic score",
-      value: `${dest.scenicScore} / 10`,
-    });
-  if (dest.avgDailyBudget != null)
-    glance.push({
-      icon: <DollarSign className="h-4 w-4" />,
-      label: "Average budget",
-      value: `$${dest.avgDailyBudget} per day`,
-    });
-
   return (
     <section className="relative isolate overflow-hidden">
       <img
@@ -275,7 +247,7 @@ function Hero({ dest }: { dest: DestinationView }) {
       />
       <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/60 to-ink/20" />
 
-      <div className="container-page relative grid gap-10 py-14 md:py-20 lg:grid-cols-[minmax(0,1fr)_300px] lg:items-start lg:gap-14">
+      <div className="container-page relative grid gap-10 py-14 md:py-20 ">
         <div className="text-off-white">
           <nav className="flex flex-wrap items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-off-white/70">
             <Link to="/" className="hover:text-off-white">
@@ -312,34 +284,19 @@ function Hero({ dest }: { dest: DestinationView }) {
           <div className="mt-9 flex flex-wrap gap-3">
             <a
               href="#stays"
-              className="inline-flex items-center justify-center rounded-full bg-copper px-6 py-3 text-sm font-semibold text-off-white transition hover:bg-copper/90"
+              className="inline-flex items-center justify-center min-h-12 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
             >
               See places to stay
             </a>
             <a
               href="#road-trip"
-              className="inline-flex items-center justify-center rounded-full border border-off-white/50 px-6 py-3 text-sm font-semibold text-off-white transition hover:bg-off-white/10"
+              className="inline-flex items-center justify-center min-h-12 rounded-md border border-off-white/50 px-6 py-3 text-sm font-semibold text-off-white transition hover:bg-off-white/10"
             >
               Explore the trip
             </a>
           </div>
         </div>
 
-        {/* At a glance — desktop only, compact */}
-        <aside className="hidden rounded-lg border border-border/60 bg-card/95 p-5 shadow-lift backdrop-blur lg:block">
-          <p className="text-sm font-semibold text-foreground">At a glance</p>
-          <ul className="mt-3 divide-y divide-border">
-            {glance.map((g) => (
-              <li key={g.label} className="flex items-start gap-3 py-3">
-                <span className="mt-0.5 text-foreground/50">{g.icon}</span>
-                <span className="min-w-0">
-                  <span className="block text-[11px] text-muted-foreground">{g.label}</span>
-                  <span className="block text-xs font-medium text-foreground">{g.value}</span>
-                </span>
-              </li>
-            ))}
-          </ul>
-        </aside>
       </div>
     </section>
   );
@@ -458,7 +415,7 @@ function OfferCta({
   size?: "sm" | "md";
 }) {
   const { handleClick, pending } = useTrackedRedirect(offer, destinationSlug);
-  const pad = size === "sm" ? "px-3 py-1.5 text-[11px]" : "px-4 py-2 text-xs";
+  const pad = size === "sm" ? "px-4 text-xs" : "px-4 text-sm";
 
   if (!offer.externalUrl) {
     return (
@@ -472,7 +429,7 @@ function OfferCta({
   }
 
   return (
-    <span className="inline-flex flex-col items-start gap-1">
+    <span className="flex w-full flex-col items-stretch gap-1.5">
       <a
         href={offer.externalUrl}
         target="_blank"
@@ -480,17 +437,15 @@ function OfferCta({
         title={outboundLinkTitle(offer.partner, offer.externalUrl, offer.network === "awin")}
         onClick={handleClick}
         aria-disabled={pending}
-        className={`inline-flex items-center gap-1.5 rounded-full bg-copper ${pad} font-semibold text-off-white transition hover:bg-copper/90 ${
+        className={`inline-flex min-h-12 w-full items-center justify-center gap-1.5 rounded-md bg-primary ${pad} text-center font-semibold text-primary-foreground transition hover:bg-primary/90 ${
           pending ? "pointer-events-none opacity-70" : ""
         }`}
       >
         {label}
         <ArrowRight className="h-3.5 w-3.5" />
       </a>
-      <span className="text-[10px] leading-tight text-muted-foreground">
-        {offer.network === "awin"
-          ? `Partner link · ${partnerLabel(offer.partner) ?? "External partner"}`
-          : `Direct link · ${partnerLabel(offer.partner) ?? "External site"}`}
+      <span className="text-center text-[10px] leading-tight text-muted-foreground">
+        {`Partner link · ${partnerLabel(offer.partner) ?? "External partner"}`}
       </span>
     </span>
   );
@@ -559,6 +514,7 @@ function TopStays({ dest }: { dest: DestinationView }) {
   const filtered = tab === "All" ? dest.stays : dest.stays.filter((s) => s.subcategory === tab);
   const pick = filtered[0];
   const rest = filtered.slice(1, 4);
+  const usedStayPhotos = new Set<string>();
 
   return (
     <section id="stays" className="scroll-mt-24">
@@ -629,7 +585,7 @@ function StayCard({
   return (
     <article
       className={
-        "group flex flex-col overflow-hidden rounded-lg border bg-card transition hover:shadow-lift " +
+        "group flex flex-col overflow-hidden rounded-xl border bg-card transition hover:shadow-lift " +
         (featured
           ? "border-foreground/15 shadow-soft"
           : "border-border")
@@ -662,7 +618,7 @@ function StayCard({
       </div>
 
       <div className="flex flex-1 flex-col p-4">
-        <h3 className="text-sm font-semibold text-foreground">{offer.title}</h3>
+        <h3 className="font-display text-lg leading-snug text-foreground">{offer.title}</h3>
         {offer.subcategory && (
           <p className="mt-0.5 text-[11px] uppercase tracking-wide text-muted-foreground">
             {offer.subcategory}
@@ -676,7 +632,7 @@ function StayCard({
             {offer.whyRecommended ?? offer.description}
           </p>
         )}
-        <div className="mt-4 flex items-center justify-between gap-3 border-t border-border pt-3">
+        <div className="mt-auto flex flex-col gap-3 border-t border-border pt-3">
           <PriceTag offer={offer} fallbackUnit="night" />
           <OfferCta offer={offer} label={offerCtaLabel(offer.category)} destinationSlug={destinationSlug} />
         </div>
@@ -804,7 +760,7 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
       {rentals.length === 0 ? (
         <EmptyState message="No rental partners listed for this destination yet." />
       ) : (
-        <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
            {rentals.map((r, index) => (
              <RentalTile key={r.id} offer={r} destinationSlug={dest.slug} photo={offerPhoto(dest.slug, "rental", index, `${r.title} ${r.subcategory ?? ""} ${r.partner ?? ""}`)} />
           ))}
@@ -817,21 +773,21 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
 
 function RentalTile({ offer, destinationSlug, photo }: { offer: OfferView; destinationSlug: string; photo?: Photo }) {
   return (
-    <article className="group relative overflow-hidden rounded-lg border border-border bg-card">
+    <article className="group relative flex flex-col overflow-hidden rounded-xl border border-border bg-card">
       <div className="relative aspect-[4/3] bg-beige/30">
         <CardImg src={photo?.url ?? ""} alt={photo ? `${photo.subject}, illustrative rental photo` : ""} className="h-full w-full object-cover" />
         {photo && <PhotoCredit photo={photo} />}
       </div>
-      <div className="border-b border-border bg-beige/30 p-4">
-          <p className="text-sm font-semibold text-foreground">{offer.title}</p>
+      <div className="flex-1 border-b border-border p-4">
+          <p className="font-display text-lg leading-snug text-foreground">{offer.title}</p>
           <p className="mt-1 text-[11px] text-muted-foreground">
             {offer.priceValue != null
               ? `From $${offer.priceValue} / ${offer.priceUnit ?? "day"}`
               : (offer.priceDisplay ?? `${estimatedFrom(`${offer.title} ${offer.subcategory ?? ""} ${offer.partner ?? ""}`)} · estimate`)}
           </p>
       </div>
-      <div className="flex items-center justify-between gap-2 p-3">
-        <span className="truncate text-[11px] text-muted-foreground">
+      <div className="flex flex-col gap-2 p-4">
+        <span className="text-[11px] uppercase tracking-wide text-muted-foreground">
           {offer.subcategory ?? "Rental"}
         </span>
         <OfferCta
@@ -871,7 +827,7 @@ function ThingsToDo({ dest }: { dest: DestinationView }) {
                  {offerPhoto(dest.slug, "activity", index) && <PhotoCredit photo={offerPhoto(dest.slug, "activity", index)} />}
                </div>
               <div className="flex flex-1 flex-col p-4">
-                <h3 className="text-sm font-semibold text-foreground">{a.title}</h3>
+                <h3 className="font-display text-lg leading-snug text-foreground">{a.title}</h3>
                 {a.duration && (
                   <p className="mt-0.5 text-[11px] uppercase tracking-wide text-muted-foreground">
                     {a.duration}
@@ -880,7 +836,7 @@ function ThingsToDo({ dest }: { dest: DestinationView }) {
                 <p className="mt-2 line-clamp-2 text-xs leading-relaxed text-muted-foreground">
                   {a.whyRecommended ?? a.description}
                 </p>
-                <div className="mt-4 flex items-center justify-between gap-3 border-t border-border pt-3">
+                <div className="mt-auto flex flex-col gap-3 border-t border-border pt-3">
                   <PriceTag
                     offer={a}
                     fallbackUnit="person"
