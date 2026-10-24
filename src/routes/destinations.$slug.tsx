@@ -518,6 +518,14 @@ function TopStays({ dest }: { dest: DestinationView }) {
   const filtered = tab === "All" ? dest.stays : dest.stays.filter((s) => s.subcategory === tab);
   const pick = filtered[0];
   const rest = filtered.slice(1, 4);
+  const usedStayPhotos = new Set<string>();
+  const stayPhoto = (offer: OfferView, index: number) => {
+    const context = `${offer.title} ${offer.subcategory ?? ""} ${offer.partner ?? ""}`;
+    let photo = offerPhoto(dest.slug, "stay", index, context);
+    for (let offset = 1; photo && usedStayPhotos.has(photo.url) && offset < 20; offset++) photo = offerPhoto(dest.slug, "stay", index + offset, context);
+    if (photo) usedStayPhotos.add(photo.url);
+    return photo;
+  };
 
 
   return (
@@ -555,9 +563,9 @@ function TopStays({ dest }: { dest: DestinationView }) {
         <EmptyState message="No stays listed for this filter yet." />
       ) : (
         <div className="travel-card-row mt-5 sm:grid-cols-2 xl:grid-cols-4">
-           {pick && <StayCard offer={pick} destinationSlug={dest.slug} featured photo={offerPhoto(dest.slug, "stay", 0, `${pick.title} ${pick.subcategory ?? ""} ${pick.partner ?? ""}`)} />}
+           {pick && <StayCard offer={pick} destinationSlug={dest.slug} featured photo={stayPhoto(pick, 0)} />}
            {rest.map((s, index) => (
-             <StayCard key={s.id} offer={s} destinationSlug={dest.slug} photo={offerPhoto(dest.slug, "stay", index + 1, `${s.title} ${s.subcategory ?? ""} ${s.partner ?? ""}`)} />
+             <StayCard key={s.id} offer={s} destinationSlug={dest.slug} photo={stayPhoto(s, index + 1)} />
           ))}
         </div>
       )}
