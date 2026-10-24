@@ -173,11 +173,6 @@ export function GearShopPage() {
               </div>
               <img src={brandWildguarder} alt="Great horned owl perched on a pine branch at night" loading="lazy" width={1024} height={768} className="h-20 w-28 shrink-0 rounded-lg object-cover" />
             </a>
-            <div className="flex flex-col items-center justify-center gap-2 rounded-xl border border-dashed border-border bg-card p-4 text-center shadow-soft">
-              <Handshake className="h-7 w-7 text-sage-deep" />
-              <p className="text-sm font-semibold text-foreground">More partner brands</p>
-              <p className="text-xs text-muted-foreground">coming soon</p>
-            </div>
           </div>
         </section>
 
