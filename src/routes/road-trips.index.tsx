@@ -4,6 +4,7 @@ import { ArrowUpRight, MapPin } from "lucide-react";
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
+import { PageHero } from "@/components/site/PageHero";
 import { LOOPS } from "@/lib/seo/guides";
 import { SITE } from "@/lib/seo/flyDrive";
 
@@ -32,15 +33,14 @@ function Page() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main className="container-page py-14 md:py-20">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">Road trips</p>
-        <h1 className="mt-3 max-w-3xl font-display text-4xl font-bold text-foreground md:text-5xl">All road trips in one place</h1>
-        <nav aria-label="Road trip types" className="mt-6 flex flex-wrap gap-2">
-          <Link to="/corridors" className="rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground">From an airport (24)</Link>
-          <a href="#loops" className="rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-foreground">Multi-park loops ({LOOPS.length})</a>
+      <PageHero image={Object.values(covers)[0]} kicker="Road trips" title="All road trips in one place" intro="Self-drive loops linking parks and towns, with suggested days per stop and approximate distances. Flying in? Start from an airport loop.">
+        <nav aria-label="Road trip types" className="flex flex-wrap gap-2">
+          <Link to="/corridors" className="rounded-full bg-card px-5 py-2.5 text-sm font-semibold text-foreground">From an airport (24)</Link>
+          <a href="#loops" className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground">Multi-park loops ({LOOPS.length})</a>
         </nav>
-        <p className="mt-4 max-w-2xl text-muted-foreground">Self-drive loops linking parks and towns, with suggested days per stop and approximate distances. Choose an airport-based route below if you're flying in.</p>
-        <Link to="/corridors" className="mt-10 flex flex-col gap-2 rounded-3xl border-2 border-forest bg-card p-6 shadow-soft transition hover:shadow-lg md:p-8">
+      </PageHero>
+      <main className="container-page py-10 md:py-14">
+        <Link to="/corridors" className="flex flex-col gap-2 rounded-3xl border-2 border-forest bg-card p-6 shadow-soft transition hover:shadow-lg md:p-8">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-forest">Gateway Road Trips · Fly in, loop, fly home</p>
           <h2 className="font-display text-2xl font-semibold text-foreground md:text-3xl">Road trips from major arrival airports</h2>
           <p className="max-w-2xl text-sm text-muted-foreground">Loops that start and end at a major U.S. airport, with suggested trip lengths, entry, licence and park-pass notes for international visitors. 24 loops from Las Vegas, Los Angeles, San Francisco, Seattle, Salt Lake City, Denver, Boston, Chicago, Miami, Anchorage and more.</p>
