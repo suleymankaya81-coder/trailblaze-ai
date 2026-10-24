@@ -28,7 +28,7 @@ function PrivacyPage() {
       eyebrow="Legal"
       title="Privacy Policy"
       lede="This policy explains what information Minialife collects when you use the site, how we use it, and the choices you have."
-      updated="August 13, 2026"
+      updated="October 24, 2026"
     >
       <section>
         <h2>Overview</h2>
@@ -64,8 +64,9 @@ function PrivacyPage() {
           </li>
           <li>
             <strong>Contact form.</strong> If you use the <Link to="/contact">Contact</Link> page,
-            we receive whatever you choose to include (typically your name, email address, and
-            message) so we can respond to you.
+            the form prepares a message in your own email app. The Site does not submit or store
+            those form details. We receive your name, email address and message only if you send
+            that email to us, so we can respond.
           </li>
         </ul>
       </section>

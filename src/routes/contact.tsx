@@ -10,8 +10,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Thumb } from "@/components/ui-kit";
 import planImage from "@/assets/thumbs/plan.jpg";
 import roadImage from "@/assets/thumbs/road.jpg";
-
-const CONTACT_EMAIL = "hello@minialife.com";
+import { CONTACT_EMAIL, buildContactEmail, contactSchema } from "@/lib/contact";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -36,13 +35,8 @@ function ContactPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
-  const mailtoHref = (() => {
-    const subject = encodeURIComponent(`Message from ${name || "the Minialife site"}`);
-    const bodyLines = [message, "", email ? `Reply to: ${email}` : ""].filter(Boolean);
-    const body = encodeURIComponent(bodyLines.join("\n"));
-    return `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
-  })();
+  const [error, setError] = useState("");
+  const [opened, setOpened] = useState(false);
 
   return (
     <div className="bg-background">
@@ -90,19 +84,30 @@ function ContactPage() {
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              window.location.href = mailtoHref;
+              const result = contactSchema.safeParse({ name, email, message });
+              if (!result.success) {
+                setError(result.error.issues[0]?.message ?? "Check your details.");
+                setOpened(false);
+                return;
+              }
+              setError("");
+              window.location.href = buildContactEmail(result.data);
+              setOpened(true);
             }}
             className="rounded-lg border border-border bg-card p-6 md:p-8"
           >
             <p className="text-sm text-muted-foreground">
-              Fill this out and it'll open a pre-filled email in your mail app — Minialife doesn't
-              have a support inbox behind this form, just a direct line to {CONTACT_EMAIL}.
+              Your message will open in your email app. Send it there to reach {CONTACT_EMAIL}.
             </p>
             <div className="mt-6 space-y-4">
               <div className="space-y-1.5">
                 <Label htmlFor="contact-name">Name</Label>
                 <Input
                   id="contact-name"
+                  name="name"
+                  autoComplete="name"
+                  required
+                  maxLength={100}
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Your name"
@@ -113,6 +118,10 @@ function ContactPage() {
                 <Input
                   id="contact-email"
                   type="email"
+                  name="email"
+                  autoComplete="email"
+                  required
+                  maxLength={255}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="you@example.com"
@@ -122,6 +131,9 @@ function ContactPage() {
                 <Label htmlFor="contact-message">Message</Label>
                 <Textarea
                   id="contact-message"
+                  name="message"
+                  required
+                  maxLength={2000}
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   placeholder="What's on your mind?"
@@ -129,6 +141,8 @@ function ContactPage() {
                 />
               </div>
             </div>
+            {error && <p role="alert" className="mt-4 text-sm text-destructive">{error}</p>}
+            {opened && <p role="status" className="mt-4 text-sm text-muted-foreground">Your message has not been sent yet. Send it in your email app. If nothing opened, email {CONTACT_EMAIL} directly; your message remains here.</p>}
             <Button type="submit" className="mt-6 min-h-12 w-full">
               Open email to send
             </Button>
