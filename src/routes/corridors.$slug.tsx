@@ -1,3 +1,8 @@
+import { Thumb, SwipeRow } from "@/components/ui-kit";
+import roadImg from "@/assets/thumbs/road.jpg";
+import planImg from "@/assets/thumbs/plan.jpg";
+import flightImg from "@/assets/thumbs/flight.jpg";
+import carImg from "@/assets/thumbs/car.jpg";
 import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
@@ -64,9 +69,9 @@ function Page() {
       <Header />
       <main>
         <GuideHero image={stops[1]?.heroImage ?? first.heroImage} kicker={`Gateway Road Trip · ${corridor.region}`} title={corridorSearchTitle(corridor)} crumbs={<><Link to="/" className="hover:underline">Home</Link> / <Link to="/corridors" className="hover:underline">Gateway Road Trips</Link></>}>
-          <HeroChip icon={<Plane className="h-4 w-4" />}>Fly into {corridor.gateway.code}</HeroChip>
-          <HeroChip icon={<CalendarDays className="h-4 w-4" />}>{corridor.idealDays}</HeroChip>
-          <HeroChip icon={<RouteIcon className="h-4 w-4" />}>~{miles} mi loop (straight-line)</HeroChip>
+          <HeroChip image={roadImg}>Fly into {corridor.gateway.code}</HeroChip>
+          <HeroChip image={roadImg}>{corridor.idealDays}</HeroChip>
+          <HeroChip image={roadImg}>~{miles} mi loop (straight-line)</HeroChip>
         </GuideHero>
         <TripSnapshot airport={corridor.gateway.code} days={corridor.idealDays} stops={stops.length} /><TripQuickNav />
         <div id="trip-plan" />
@@ -90,7 +95,7 @@ function Page() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {corridor.essentials.map((e) => (
               <div key={e.title} className="rounded-lg border border-border bg-card p-6 shadow-soft">
-                <Globe2 className="h-5 w-5 text-forest" />
+                <Thumb src={/license|driv/i.test(e.title) ? carImg : /park|pass|permit/i.test(e.title) ? planImg : /toll|road/i.test(e.title) ? roadImg : flightImg} size={56} />
                 <p className="mt-3 font-display text-lg font-semibold text-foreground">{e.title}</p>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{e.text}</p>
               </div>

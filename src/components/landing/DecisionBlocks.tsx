@@ -1,3 +1,5 @@
+import { Thumb } from "@/components/ui-kit";
+import planImg from "@/assets/thumbs/plan.jpg";
 import { CalendarDays, Clock, Flower2, Leaf, MapPin, Mountain, Plane, Snowflake, Sun, Ticket, Wallet } from "lucide-react";
 import type { ReactNode } from "react";
 
@@ -79,7 +81,7 @@ export function SectionBlock({ section, index, cta }: { section: LandingSection;
           {day}
         </span>
         <span className="absolute left-5 top-10 bottom-[-2.5rem] w-px bg-border" aria-hidden />
-        <div className="rounded-2xl border border-border bg-card p-5 md:p-6">
+        <div className="border-b border-border p-5 md:p-6">
           <h2 className="mb-3 font-display text-2xl text-foreground">{section.heading}</h2>
           <Body text={section.body} />
           {cta && <div className="mt-4 border-t border-border pt-4">{cta}</div>}
@@ -89,9 +91,9 @@ export function SectionBlock({ section, index, cta }: { section: LandingSection;
   }
 
   return (
-    <section className="overflow-hidden rounded-2xl border border-border bg-card">
+    <section className="overflow-hidden border-b border-border">
       <div className={`flex items-center gap-3 px-5 py-3 md:px-6 ${season ? season.tone : "bg-beige/60 text-forest"}`}>
-        {season ? season.icon : index % 2 ? <MapPin className="h-5 w-5" /> : <Mountain className="h-5 w-5" />}
+        <Thumb src={planImg} size={40} />
         <span className="text-xs font-semibold uppercase tracking-[0.16em]">{season ? season.name : `Step ${index + 1}`}</span>
       </div>
       <div className="p-5 md:p-6">
@@ -109,8 +111,8 @@ export function SeasonPicker({ sections }: { sections: LandingSection[] }) {
   return (
     <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
       {found.map((s) => (
-        <a key={s.name} href={`#season-${s.name.toLowerCase()}`} className={`flex items-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold ${s.tone} hover:opacity-90`}>
-          {s.icon} {s.name}
+        <a key={s.name} href={`#season-${s.name.toLowerCase()}`} className={`flex items-center gap-2 min-h-12 rounded-lg px-4 py-3 text-sm font-semibold ${s.tone} hover:opacity-90`}>
+          {s.name}
         </a>
       ))}
     </div>

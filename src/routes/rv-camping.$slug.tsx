@@ -1,3 +1,8 @@
+import { Thumb, SwipeRow } from "@/components/ui-kit";
+import roadImg from "@/assets/thumbs/road.jpg";
+import planImg from "@/assets/thumbs/plan.jpg";
+import flightImg from "@/assets/thumbs/flight.jpg";
+import carImg from "@/assets/thumbs/car.jpg";
 import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { estimatedFrom } from "@/lib/data/servicePhotos";
@@ -72,8 +77,8 @@ function Page() {
           title={`${dest.name} by RV`}
           crumbs={<><Link to="/" className="hover:underline">Home</Link> / <Link to="/destinations/$slug" params={{ slug: dest.slug }} className="hover:underline">{dest.name}</Link> / RV & camping</>}
         >
-          <HeroChip icon={<Clock className="h-4 w-4" />}>{formatDriveShort(dest.driveMinutes ?? 0)} from {dest.airportCode}</HeroChip>
-          <HeroChip icon={<Tent className="h-4 w-4" />}>Camping score {dest.campingScore}/10</HeroChip>
+          <HeroChip image={roadImg}>{formatDriveShort(dest.driveMinutes ?? 0)} from {dest.airportCode}</HeroChip>
+          <HeroChip image={roadImg}>Camping score {dest.campingScore}/10</HeroChip>
         </GuideHero>
         <TripSnapshot trip={dest} /><TripQuickNav />
         <div id="trip-booking" className="container-page py-6"><BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} /></div>
@@ -83,12 +88,12 @@ function Page() {
         {plan && (
           <GuideSection title="Vehicle & road notes">
             <div className="grid gap-4 md:grid-cols-3">
-              <div className="rounded-3xl border border-border bg-sand/40 p-6 md:col-span-3 md:p-8">
-                <p className="flex items-center gap-2 text-xs uppercase tracking-wider text-muted-foreground"><Caravan className="h-4 w-4" /> Which vehicle</p>
+              <div className="border-l-2 border-primary bg-sand/40 p-6 md:col-span-3 md:p-8">
+                <p className="flex items-center gap-2 text-xs uppercase tracking-wider text-muted-foreground"><Thumb src={carImg} size={40} /> Which vehicle</p>
                 <p className="mt-2 text-sm leading-relaxed text-foreground/85">{plan.vehicle}</p>
               </div>
               {roadTips.map((t) => (
-                <div key={t.kind} className="rounded-3xl border border-border bg-card p-6">
+                <div key={t.kind} className="rounded-lg border border-border bg-card p-6">
                   <p className="text-xs uppercase tracking-wider text-muted-foreground">{t.kind}</p>
                   <p className="mt-2 font-display text-lg font-semibold text-foreground">{t.title}</p>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t.text}</p>
@@ -105,7 +110,7 @@ function Page() {
         )}
 
         {rentals.length > 0 && (
-          <GuideSection title="Rent a motorhome or campervan" intro="Fleet rentals from established depots. Compare pick-up cities against your flight.">
+          <GuideSection title="2 · Choose a motorhome or campervan" intro="Fleet rentals from established depots. Compare pick-up cities against your flight.">
             <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3">
               {rentals.map((o, i) => {
                 const photo = servicePhoto(/campervan/i.test(o.title) ? "campervan" : "rv", `${dest.slug}:${o.id}`, i);
@@ -118,7 +123,7 @@ function Page() {
         <GuideSection title="Prefer a car and campground trip?">
           <div className="travel-card-row sm:grid-cols-2"><AirportRentalsCards slug={dest.slug} airportCode={dest.airportCode} /></div>
         </GuideSection>
-        <GuideSection title={`Where to park the rig near ${dest.name}`} intro="Private campgrounds and RV parks outside the park, plus overnight stops for members.">
+        <GuideSection title={`3 · Where to park the rig near ${dest.name}`} intro="Private campgrounds and RV parks outside the park, plus overnight stops for members.">
           <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3">
             {camps.map((o, i) => {
               const photo = servicePhoto("rvpark", `${dest.slug}:${o.id}`, i);

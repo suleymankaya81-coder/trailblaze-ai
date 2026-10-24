@@ -1,3 +1,8 @@
+import { Thumb, SwipeRow } from "@/components/ui-kit";
+import roadImg from "@/assets/thumbs/road.jpg";
+import planImg from "@/assets/thumbs/plan.jpg";
+import flightImg from "@/assets/thumbs/flight.jpg";
+import carImg from "@/assets/thumbs/car.jpg";
 import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
@@ -65,8 +70,8 @@ function Page() {
       <Header />
       <main>
         <GuideHero image={first.heroImage} kicker={`Road trip · ${loop.region}`} title={loop.title} crumbs={<><Link to="/" className="hover:underline">Home</Link> / <Link to="/road-trips" className="hover:underline">Road trips</Link></>}>
-          <HeroChip icon={<MapPin className="h-4 w-4" />}>{stops.length} stops</HeroChip>
-          <HeroChip icon={<CalendarDays className="h-4 w-4" />}>About {totalDays} days</HeroChip>
+          <HeroChip image={roadImg}>{stops.length} stops</HeroChip>
+          <HeroChip image={roadImg}>About {totalDays} days</HeroChip>
         </GuideHero>
         <TripSnapshot airport={gateway?.code} days={`About ${totalDays} days`} stops={stops.length} /><TripQuickNav booking={!!gateway} />
         <div id="trip-plan" />
