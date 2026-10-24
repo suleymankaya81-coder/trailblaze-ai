@@ -9,6 +9,7 @@ import { servicePhoto, type ServicePhotoCategory } from "@/lib/data/servicePhoto
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
 import { RentalSearch } from "@/components/home/RentalSearch";
 import { StartHere } from "@/components/home/StartHere";
+import { HomeHero } from "@/components/home/HomeHero";
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { EditorialCard, PlaceCard, SectionHead, SectionLink, SwipeRow, Thumb } from "@/components/ui-kit";
 import planImg from "@/assets/thumbs/plan.jpg";
@@ -16,7 +17,6 @@ import mapImg from "@/assets/thumbs/map.jpg";
 import carImg from "@/assets/thumbs/car.jpg";
 import roadImg from "@/assets/thumbs/road.jpg";
 import flightImg from "@/assets/thumbs/flight.jpg";
-import heroAsset from "@/assets/home/home-hero-trollstigen.jpg.asset.json";
 import rvImg from "@/assets/thumbs/rv.jpg";
 import {
   getHomepageDestinations,
@@ -44,18 +44,15 @@ export const Route = createFileRoute("/")({
         content:
           "Free USA outdoor road trip itineraries: airport loops, national parks and RV routes. Plan your stops, check entry notes and book with travel partners.",
       },
-      { property: "og:image", content: HERO_OG_IMAGE },
       { property: "og:url", content: "https://minialife.com/" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: HERO_OG_IMAGE },
     ],
     links: [{ rel: "canonical", href: "https://minialife.com/" }],
   }),
   component: HomePage,
 });
 
-const HERO_OG_IMAGE = "https://minialife.com/__l5e/assets-v1/e4b73893-626c-4ef0-98e9-6257f2c03a1e/home-hero-trollstigen.jpg";
 
 
 
@@ -176,70 +173,6 @@ function HomePage() {
 
       <Footer />
     </div>
-  );
-}
-
-/* =========================================================
-   HOME HERO — single photo, one headline, full-weight search,
-   neutral fast-path row. Replaces the old 5-panel carousel.
-========================================================= */
-function HomeHero() {
-  return (
-    <section className="relative overflow-hidden">
-      <div className="relative flex min-h-[560px] w-full items-end md:min-h-[78vh]">
-        <img
-          src={heroAsset.url}
-          alt="Trollstigen mountain road winding through a Norwegian valley"
-          className="absolute inset-0 h-full w-full object-cover"
-          fetchPriority="high"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-ink/10" />
-
-        <div className="container-page relative z-10 w-full pb-14 text-off-white md:pb-20">
-          <p className="text-xs font-bold uppercase tracking-[0.22em] text-off-white/75">
-            MiniaLife · Outdoor Travel & Road Trips
-          </p>
-          <h1 className="mt-3 max-w-4xl font-display uppercase leading-[1.05] tracking-[0.01em] text-[34px] md:text-[64px]">
-            Plan the drive.<br />We did the rest.
-          </h1>
-          <p className="mt-4 max-w-2xl text-base text-off-white/90">Free day-by-day road trip itineraries, route maps and booking links — everything in one place.</p>
-
-          <div className="mt-8">
-            <Link
-              to="/destinations"
-              className="inline-flex items-center justify-center rounded-sm bg-off-white px-8 py-3.5 text-sm font-semibold text-ink hover:bg-off-white/90"
-            >
-              Start planning
-            </Link>
-          </div>
-
-          <div className="mt-6 flex items-center gap-4 text-sm">
-            <Link
-              to="/corridors"
-              className="font-medium text-off-white/80 hover:text-off-white hover:underline"
-            >
-              Gateway Road Trips
-            </Link>
-            <span className="h-1 w-1 rounded-full bg-off-white/40" />
-            <Link
-              to="/trip-guides"
-              className="font-medium text-off-white/80 hover:text-off-white hover:underline"
-            >
-              All Trip Guides
-            </Link>
-          </div>
-        </div>
-
-        <PhotoCredit
-          photo={{
-            source: "https://commons.wikimedia.org/wiki/File:Trollstigen_HochPanno.jpg",
-            credit: "Stefan Krause",
-            license: "CC BY-SA 3.0 · via Wikimedia Commons",
-          }}
-          className="absolute bottom-2 right-2"
-        />
-      </div>
-    </section>
   );
 }
 
