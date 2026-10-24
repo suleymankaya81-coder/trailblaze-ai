@@ -17,13 +17,19 @@ Disallow: /go/
 Disallow: /out/
 Disallow: /_serverFn/
 
-# Affiliate compliance: automated agents must not trigger outbound
-# partner links or click tracking.
+# SEO audit crawlers may read pages, but never outbound partner links.
 User-agent: AhrefsBot
-Disallow: /
+Allow: /
+Disallow: /go/
+Disallow: /out/
+Disallow: /_serverFn/
 
 User-agent: SemrushBot
-Disallow: /
+Allow: /
+Disallow: /go/
+Disallow: /out/
+Disallow: /_serverFn/
+
 
 User-agent: MJ12bot
 Disallow: /

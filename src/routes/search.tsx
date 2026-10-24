@@ -5,6 +5,7 @@ import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { SearchBar } from "@/components/site/SearchBar";
 import { findDestinationSlugByQuery } from "@/lib/data/destinations.functions";
+import { matchSearchIntent } from "@/lib/data/searchIntent";
 
 const SearchSchema = z.object({ q: z.string().optional() });
 
@@ -13,6 +14,8 @@ export const Route = createFileRoute("/search")({
   loaderDeps: ({ search }) => ({ q: search.q ?? "" }),
   loader: async ({ deps }): Promise<{ q: string }> => {
     const q = deps.q.trim();
+    const intent = matchSearchIntent(q);
+    if (intent) throw redirect({ to: intent.to as never, search: intent.search as never });
     if (q) {
       const { slug } = await findDestinationSlugByQuery({ data: { query: q } });
       if (slug) throw redirect({ to: "/destinations/$slug", params: { slug } });

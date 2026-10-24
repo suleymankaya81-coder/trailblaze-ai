@@ -336,16 +336,8 @@ export const findDestinationSlugByQuery = createServerFn({ method: "GET" })
     const bySlug = rows.find((d) => d.slug.toLowerCase() === q);
     if (bySlug) return { slug: bySlug.slug };
 
-    const byAlias = rows.find((d) => {
-      const name = d.name.toLowerCase();
-      return (
-        name.includes(q) ||
-        d.aliases.some((a) => {
-          const alias = a.toLowerCase();
-          return alias === q || alias.includes(q) || q.includes(alias);
-        })
-      );
-    });
+    const { matchesTerm } = await import("./searchIntent");
+    const byAlias = rows.find((d) => matchesTerm(q, d.name) || d.aliases.some((a) => matchesTerm(q, a)));
     if (byAlias) return { slug: byAlias.slug };
 
     return { slug: null };
