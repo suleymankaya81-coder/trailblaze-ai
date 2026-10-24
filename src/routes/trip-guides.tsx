@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { PlaceCard } from "@/components/ui-kit";
+import { EditorialCard } from "@/components/ui-kit";
 import roadImg from "@/assets/thumbs/road.jpg";
 import flightImg from "@/assets/thumbs/flight.jpg";
 import carImg from "@/assets/thumbs/car.jpg";
@@ -51,7 +51,7 @@ function Page() {
       <main className="container-page py-10 md:py-14">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {FAMILIES.map((f) => (
-            <PlaceCard key={f.to} to={f.to} image={covers[f.cover] ?? f.icon} alt={f.label} title={f.label} summary={f.text} badges={[f.count]} action="Browse" />
+            <EditorialCard key={f.to} to={f.to} image={covers[f.cover] ?? f.icon} title={f.label} summary={f.text} action={`Browse ${f.count}`} />
           ))}
         </div>
       </main>
