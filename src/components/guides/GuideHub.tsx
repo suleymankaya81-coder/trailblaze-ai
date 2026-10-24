@@ -1,54 +1,68 @@
 import { useMemo, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, MapPin, Search } from "lucide-react";
+import { ArrowUpRight, Clock, MapPin, Plane, Search } from "lucide-react";
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
+import { PageHero } from "@/components/site/PageHero";
 import type { HubEntry, HubFamily } from "@/lib/data/guideHubs.functions";
 import { formatDriveShort } from "@/lib/seo/flyDrive";
+import { US_REGIONS, type UsRegionKey } from "@/lib/data/usRegions";
 
 const PAGE = 48;
+const regionOf = (state: string) => (Object.keys(US_REGIONS) as UsRegionKey[]).find((k) => (US_REGIONS[k].states as readonly string[]).includes(state));
 
 export function GuideHub({ family, kicker, title, intro, entries }: { family: HubFamily; kicker: string; title: string; intro: string; entries: HubEntry[] }) {
   const [q, setQ] = useState("");
   const [state, setState] = useState("");
+  const [region, setRegion] = useState<UsRegionKey | "">("");
   const [shown, setShown] = useState(PAGE);
   const states = useMemo(() => [...new Set(entries.map((e) => e.state).filter(Boolean))].sort(), [entries]);
   const list = useMemo(() => {
     const s = q.trim().toLowerCase();
-    return entries.filter((e) => (!state || e.state === state) && (!s || e.name.toLowerCase().includes(s) || (e.airportCode ?? "").toLowerCase().includes(s)));
-  }, [entries, q, state]);
+    return entries.filter((e) => (!state || e.state === state) && (!region || regionOf(e.state) === region) && (!s || e.name.toLowerCase().includes(s) || (e.airportCode ?? "").toLowerCase().includes(s)));
+  }, [entries, q, state, region]);
+  const heroImage = entries.find((e) => e.heroImage)?.heroImage;
+  const reset = () => setShown(PAGE);
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main className="container-page py-14 md:py-20">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-          <Link to="/trip-guides" className="hover:underline">Trip Guides</Link> · {kicker}
-        </p>
-        <h1 className="mt-3 max-w-3xl font-display text-4xl font-bold text-foreground md:text-5xl">{title}</h1>
-        <p className="mt-4 max-w-2xl text-muted-foreground">{intro}</p>
-
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          <label className="relative flex-1">
-            <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-            <input value={q} onChange={(e) => { setQ(e.target.value); setShown(PAGE); }} placeholder={family === "fly-and-drive" ? "Search a place or airport code" : "Search a place"} aria-label="Search guides" className="h-12 w-full rounded-full border border-border bg-card pl-11 pr-4 text-sm text-foreground outline-none focus:border-forest" />
-          </label>
-          <select value={state} onChange={(e) => { setState(e.target.value); setShown(PAGE); }} aria-label="Filter by state" className="h-12 rounded-full border border-border bg-card px-4 text-sm text-foreground">
+      <PageHero image={heroImage} kicker={<><Link to="/trip-guides" className="hover:underline">Trip Guides</Link> · {kicker}</>} title={title} intro={intro}>
+        <label className="relative block max-w-xl">
+          <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+          <input value={q} onChange={(e) => { setQ(e.target.value); reset(); }} placeholder={family === "fly-and-drive" ? "Search a place or airport code" : "Search a place"} aria-label="Search guides" className="h-14 w-full rounded-full border border-border bg-card pl-11 pr-4 text-sm text-foreground shadow-soft outline-none focus:border-forest" />
+        </label>
+      </PageHero>
+      <main className="container-page py-10 md:py-14">
+        <div className="flex flex-wrap items-center gap-2">
+          <button type="button" onClick={() => { setRegion(""); reset(); }} className={`rounded-full px-4 py-2 text-sm font-semibold ${!region ? "bg-primary text-primary-foreground" : "border border-border bg-card text-foreground"}`}>All regions</button>
+          {(Object.keys(US_REGIONS) as UsRegionKey[]).map((k) => (
+            <button key={k} type="button" onClick={() => { setRegion(k); setState(""); reset(); }} className={`rounded-full px-4 py-2 text-sm font-semibold ${region === k ? "bg-primary text-primary-foreground" : "border border-border bg-card text-foreground"}`}>{US_REGIONS[k].label}</button>
+          ))}
+          <select value={state} onChange={(e) => { setState(e.target.value); reset(); }} aria-label="Filter by state" className="ml-auto h-10 rounded-full border border-border bg-card px-4 text-sm text-foreground">
             <option value="">All states</option>
-            {states.map((s) => <option key={s} value={s}>{s}</option>)}
+            {states.filter((s) => !region || regionOf(s) === region).map((s) => <option key={s} value={s}>{s}</option>)}
           </select>
         </div>
-        <p className="mt-4 text-sm text-muted-foreground">{list.length} guides</p>
+        <p className="mt-5 text-sm text-muted-foreground">{list.length} guides</p>
 
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {list.slice(0, shown).map((e) => (
-            <Link key={e.slug} to={`/${family}/$slug` as "/rv-camping/$slug"} params={{ slug: e.slug }} className="group overflow-hidden rounded-3xl border border-border bg-card shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg">
-              {e.heroImage && <img src={e.heroImage} alt={e.name} loading="lazy" className="aspect-[16/9] w-full object-cover" />}
-              <div className="p-5">
-                <p className="flex items-center gap-1.5 text-xs uppercase tracking-wider text-muted-foreground"><MapPin className="h-3.5 w-3.5" />{e.state}{family === "fly-and-drive" && e.airportCode ? ` · ${e.airportCode}${e.driveMinutes ? ` · ${formatDriveShort(e.driveMinutes)}` : ""}` : ""}</p>
-                <h2 className="mt-1 font-display text-lg font-semibold text-foreground">{e.name}</h2>
-                <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-primary">Open guide <ArrowUpRight className="h-4 w-4" /></span>
+            <Link key={e.slug} to={`/${family}/$slug` as "/rv-camping/$slug"} params={{ slug: e.slug }} className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg">
+              <div className="relative aspect-[16/10] overflow-hidden bg-muted">
+                {e.heroImage && <img src={e.heroImage} alt={e.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />}
+                <span className="absolute left-3 top-3 inline-flex items-center gap-1 rounded-full bg-card/95 px-3 py-1 text-xs font-semibold text-foreground"><MapPin className="h-3 w-3" />{e.state}</span>
+              </div>
+              <div className="flex flex-1 flex-col p-5">
+                <h2 className="font-display text-lg font-semibold text-foreground">{e.name}</h2>
+                {(e.airportCode || e.driveMinutes) && (
+                  <div className="mt-2 flex flex-wrap gap-1.5 text-xs font-semibold">
+                    {e.airportCode && <span className="inline-flex items-center gap-1 rounded-full bg-primary px-2 py-0.5 text-primary-foreground"><Plane className="h-3 w-3" />{e.airportCode}</span>}
+                    {e.driveMinutes ? <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-foreground"><Clock className="h-3 w-3" />{formatDriveShort(e.driveMinutes)} drive</span> : null}
+                  </div>
+                )}
+                <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-semibold text-primary">Open guide <ArrowUpRight className="h-4 w-4" /></span>
               </div>
             </Link>
           ))}
