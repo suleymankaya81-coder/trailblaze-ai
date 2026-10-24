@@ -1,3 +1,8 @@
+## October 24 full implementation audit
+- [ ] Check the previous rebuild against the detailed plan across all page families; correct confirmed omissions and regressions.
+- [ ] Complete About/static presentation and verify desktop/phone layouts, images, navigation, booking links and relevant tests.
+- [ ] Record remaining external-data limitations without claiming unavailable live forms or full factual verification.
+
 ## October 24 REI-style visual rebuild (step by step, owner approves each step)
 - [x] 0. Shared design system: stone background, #1B4431 green, mustard/terracotta badges, serif headings, card kit, phone swipe rows with progress line, photo thumbnails instead of icons.
 - [x] 1. Homepage: hero, What is MiniaLife + 3 steps, 5 photo start squares, 1+4 places, 4 loops, rentals, 3 stay types, 3 green guide cards, 4 trip essentials, Why MiniaLife, collapsible phone footer.
