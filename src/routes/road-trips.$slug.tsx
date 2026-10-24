@@ -1,3 +1,4 @@
+import { TripEssentials } from "@/components/destination/TripEssentials";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ClientOnly } from "@tanstack/react-router";
 import { lazy, Suspense } from "react";
@@ -108,6 +109,8 @@ function Page() {
             })}
           </ol>
         </GuideSection>
+
+        <section className="container-page py-10"><TripEssentials context={{ slug: loop.slug, name: loop.title, places: stops, topic: loop.intro }} /></section>
 
         <section className="container-page pb-6"><ViatorPlaceBlock slug={first.slug} name={first.name} /></section>
 
