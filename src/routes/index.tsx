@@ -66,7 +66,7 @@ const img = (id: string, w = 1200) =>
 const stayTypes: { name: string; category: ServicePhotoCategory; tag: string; why: string; price: string }[] = [
   { name: "In or by the park", category: "hotel", tag: "national_park", why: "Shortest drive to trailheads; books up first.", price: "Est. from $110/night" },
   { name: "Nearby town cabin", category: "cabin", tag: "mountain", why: "More space and a kitchen for groups.", price: "Est. from $120/night" },
-  { name: "RV & camping", category: "rvpark", tag: "rv_road_trip", why: "Cheapest per night and closest to nature.", price: "Est. from $35/night" },
+  { name: "RV & camping", category: "rvpark", tag: "rv_road_trip", why: "Outdoor sites for tents and RVs; facilities and fees vary.", price: "Est. from $35/night" },
 ];
 
 const why = [
@@ -120,7 +120,7 @@ function HomePage() {
 
       <section id="rentals-gear" className="section-y">
         <div className="container-page">
-          <SectionHead kicker="Step 2 of your trip" title="RV, campervan & airport car rentals" intro="Search Motorhome Republic for RVs or Airport Rentals for cars. Prices shown are typical rates; the partner shows the live price." />
+          <SectionHead kicker="Step 2 of your trip" title="RV, campervan & airport car rentals" intro="Search Motorhome Republic for RVs or Airport Rentals for cars. Compare the current price for your dates on the partner site." />
           <div className="mx-auto max-w-3xl">
             <RentalSearch />
           </div>
@@ -140,7 +140,7 @@ function HomePage() {
                     <div className="flex flex-1 flex-col p-5">
                       <h3 className="text-xl">{s.name}</h3>
                       <p className="mt-2 flex-1 text-sm text-muted-foreground">{s.why}</p>
-                      <p className="mt-4 text-lg font-semibold">{s.price.replace("Est. from ", "From ")} <span className="text-[11px] font-normal text-muted-foreground">typical price</span></p>
+                      <p className="mt-4 text-lg font-semibold">{s.price} <span className="text-[11px] font-normal text-muted-foreground">typical rate · confirm with partner</span></p>
                     </div>
                   </Link>
                   <PhotoCredit photo={photo} className="absolute right-2 top-2" />
