@@ -21,7 +21,7 @@ export function TripEssentials({ context }: { context: EssentialsContext }) {
     if (row && card) setActive(Math.min(3, Math.round(row.scrollLeft / (card.getBoundingClientRect().width + 16))));
   }
   return (
-    <section aria-label={`Trip essentials for ${context.name}`} className="min-w-0">
+    <section id="trip-gear" aria-label={`Trip essentials for ${context.name}`} className="min-w-0">
       <div className="mb-5 flex items-end justify-between gap-4">
         <div className="min-w-0">
           <p className="text-xs font-semibold uppercase text-sage-deep">Curated Trip Essentials</p>
@@ -35,7 +35,7 @@ export function TripEssentials({ context }: { context: EssentialsContext }) {
       <div ref={track} onScroll={onScroll} tabIndex={0} role="region" aria-label="Recommended trip equipment" className="gear-carousel lg:grid-flow-row lg:grid-cols-4 lg:overflow-visible lg:pb-0">
         {products.map(product => (
           <article key={product.id} data-product-id={product.id} className="flex min-w-0 flex-col overflow-hidden rounded-lg border border-border bg-card">
-            <a href={gearShopLink(product, `trip-${context.slug}`)} target="_blank" rel="sponsored nofollow noopener noreferrer" aria-label={`View ${product.name} at ROCKBROS`} className="block aspect-[4/3] p-5">
+            <a href={gearShopLink(product, `trip-${context.slug}`)} target="_blank" rel="sponsored nofollow noopener noreferrer" aria-label={`View ${product.name} at ROCKBROS`} className="block aspect-square p-5">
               <img src={product.image} alt={product.catalogTitle} width={400} height={300} loading="lazy" className="h-full w-full object-contain" />
             </a>
             <div className="flex flex-1 flex-col p-4 pt-0">
@@ -44,7 +44,7 @@ export function TripEssentials({ context }: { context: EssentialsContext }) {
               <p className="mb-4 mt-2 text-xs leading-relaxed text-muted-foreground">{product.description}</p>
               <div className="mt-auto">
                 <p className="mb-3 text-base font-semibold text-foreground">{catalogPrice(product)} <span className="text-[10px] font-normal text-muted-foreground">USD · catalog price</span></p>
-                <Button asChild className="h-auto min-h-10 w-full whitespace-normal rounded-md px-2 text-xs">
+                <Button asChild className="h-auto min-h-12 w-full whitespace-normal rounded-md px-2 text-xs">
                   <a href={gearShopLink(product, `trip-${context.slug}`)} target="_blank" rel="sponsored nofollow noopener noreferrer">Shop at ROCKBROS <ArrowRight className="h-3.5 w-3.5 shrink-0" /></a>
                 </Button>
               </div>

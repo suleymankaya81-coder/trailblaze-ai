@@ -9,6 +9,7 @@ import type { Photo } from "@/lib/data/destinationCardPhotos";
 import { trackAndRedirect } from "@/lib/affiliates/track.functions";
 import { getOrCreateSessionId } from "@/lib/affiliates/session";
 import { outboundLinkTitle, partnerLabel } from "@/lib/affiliates/compliance";
+import { Button } from "@/components/ui/button";
 
 function useOfferClick(offer: OfferView, destinationSlug: string) {
   const track = useServerFn(trackAndRedirect);
@@ -48,17 +49,16 @@ export function InlineOfferCta({ offer, destinationSlug, photo, lead }: { offer:
   const m = linkMeta(offer);
   if (!offer.externalUrl) return null;
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex flex-wrap items-center gap-4">
       {photo && <img src={photo.url} alt={`${photo.subject}, illustrative photo`} loading="lazy" className="h-16 w-16 shrink-0 rounded-xl object-cover" />}
       <div className="min-w-0 flex-1">
         <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-sage-deep">{lead}</p>
         <p className="truncate text-sm font-semibold text-foreground">{offer.title}</p>
         <p className="text-[10px] text-muted-foreground">{offer.priceDisplay ? `${offer.priceDisplay} (estimate) · ` : ""}{m.note}</p>
       </div>
-      <a href={offer.externalUrl} target="_blank" rel={m.rel} title={outboundLinkTitle(offer.partner, offer.externalUrl)} onClick={onClick}
-        className="inline-flex shrink-0 items-center gap-1 rounded-full bg-copper px-3.5 py-2 text-xs font-semibold text-off-white hover:bg-copper/90">
-        Check <ArrowRight className="h-3.5 w-3.5" />
-      </a>
+      <Button asChild size="lg" className="h-auto min-h-12 whitespace-normal rounded-md text-xs"><a href={offer.externalUrl} target="_blank" rel={m.rel} title={outboundLinkTitle(offer.partner, offer.externalUrl)} onClick={onClick}>
+        {offerCtaLabel(offer.category)} <ArrowRight className="h-3.5 w-3.5" />
+      </a></Button>
     </div>
   );
 }
@@ -67,7 +67,7 @@ export function LandingOfferCard({ offer, destinationSlug, photo }: { offer: Off
   const onClick = useOfferClick(offer, destinationSlug);
   const m = linkMeta(offer);
   return (
-    <article className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card">
+     <article className="flex flex-col overflow-hidden rounded-lg border border-border bg-card">
       {photo && (
         <div className="relative aspect-[4/3]">
           <img src={photo.url} alt={`${photo.subject}, illustrative photo`} loading="lazy" className="h-full w-full object-cover" />
@@ -84,10 +84,9 @@ export function LandingOfferCard({ offer, destinationSlug, photo }: { offer: Off
         )}
         {offer.externalUrl && (
           <div className="mt-auto pt-2">
-            <a href={offer.externalUrl} target="_blank" rel={m.rel} title={outboundLinkTitle(offer.partner, offer.externalUrl)} onClick={onClick}
-              className="inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground hover:bg-primary/90">
+            <Button asChild size="lg" className="h-auto min-h-12 w-full whitespace-normal rounded-md text-xs"><a href={offer.externalUrl} target="_blank" rel={m.rel} title={outboundLinkTitle(offer.partner, offer.externalUrl)} onClick={onClick}>
               {offerCtaLabel(offer.category)} <ArrowRight className="h-3.5 w-3.5" />
-            </a>
+            </a></Button>
             <p className="mt-1 text-[10px] text-muted-foreground">{m.note}</p>
           </div>
         )}

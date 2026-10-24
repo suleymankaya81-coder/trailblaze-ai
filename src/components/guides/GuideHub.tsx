@@ -8,6 +8,8 @@ import { PageHero } from "@/components/site/PageHero";
 import type { HubEntry, HubFamily } from "@/lib/data/guideHubs.functions";
 import { formatDriveShort } from "@/lib/seo/flyDrive";
 import { US_REGIONS, type UsRegionKey } from "@/lib/data/usRegions";
+import { FilterPanel } from "@/components/site/FilterPanel";
+import { Button } from "@/components/ui/button";
 
 const PAGE = 48;
 const regionOf = (state: string) => (Object.keys(US_REGIONS) as UsRegionKey[]).find((k) => (US_REGIONS[k].states as readonly string[]).includes(state));
@@ -35,22 +37,22 @@ export function GuideHub({ family, kicker, title, intro, entries }: { family: Hu
         </label>
       </PageHero>
       <main className="container-page py-10 md:py-14">
-        <div className="flex flex-wrap items-center gap-2">
-          <button type="button" onClick={() => { setRegion(""); reset(); }} className={`rounded-full px-4 py-2 text-sm font-semibold ${!region ? "bg-primary text-primary-foreground" : "border border-border bg-card text-foreground"}`}>All regions</button>
+        <FilterPanel><div className="flex flex-wrap items-center gap-2">
+          <Button variant={!region ? "default" : "outline"} size="lg" type="button" onClick={() => { setRegion(""); reset(); }}>All regions</Button>
           {(Object.keys(US_REGIONS) as UsRegionKey[]).map((k) => (
-            <button key={k} type="button" onClick={() => { setRegion(k); setState(""); reset(); }} className={`rounded-full px-4 py-2 text-sm font-semibold ${region === k ? "bg-primary text-primary-foreground" : "border border-border bg-card text-foreground"}`}>{US_REGIONS[k].label}</button>
+            <Button key={k} variant={region === k ? "default" : "outline"} size="lg" type="button" onClick={() => { setRegion(k); setState(""); reset(); }}>{US_REGIONS[k].label}</Button>
           ))}
           <select value={state} onChange={(e) => { setState(e.target.value); reset(); }} aria-label="Filter by state" className="ml-auto h-10 rounded-full border border-border bg-card px-4 text-sm text-foreground">
             <option value="">All states</option>
             {states.filter((s) => !region || regionOf(s) === region).map((s) => <option key={s} value={s}>{s}</option>)}
           </select>
-        </div>
+        </div></FilterPanel>
         <p className="mt-5 text-sm text-muted-foreground">{list.length} guides</p>
 
         <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {list.slice(0, shown).map((e) => (
-            <Link key={e.slug} to={`/${family}/$slug` as "/rv-camping/$slug"} params={{ slug: e.slug }} className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg">
-              <div className="relative aspect-[16/10] overflow-hidden bg-muted">
+            <Link key={e.slug} to={`/${family}/$slug` as "/rv-camping/$slug"} params={{ slug: e.slug }} className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card shadow-soft transition hover:shadow-lg">
+              <div className="relative aspect-[4/3] overflow-hidden bg-muted">
                 {e.heroImage && <img src={e.heroImage} alt={e.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />}
                 <span className="absolute left-3 top-3 inline-flex items-center gap-1 rounded-full bg-card/95 px-3 py-1 text-xs font-semibold text-foreground"><MapPin className="h-3 w-3" />{e.state}</span>
               </div>
@@ -69,7 +71,7 @@ export function GuideHub({ family, kicker, title, intro, entries }: { family: Hu
         </div>
         {shown < list.length && (
           <div className="mt-10 flex justify-center">
-            <button type="button" onClick={() => setShown((n) => n + PAGE)} className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90">Show more</button>
+            <Button size="lg" type="button" onClick={() => setShown((n) => n + PAGE)}>Show more</Button>
           </div>
         )}
       </main>

@@ -1,3 +1,4 @@
+import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { offerCtaLabel } from "@/lib/affiliates/ctaLabel";
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { estimatedFrom } from "@/lib/data/servicePhotos";
@@ -177,11 +178,12 @@ function DestinationPage() {
       <Header />
 
       <Hero dest={dest} />
-      <JumpBar />
+      <TripSnapshot trip={dest} />
+      <TripQuickNav />
 
       <main className="container-page space-y-14 py-10 md:space-y-16">
-        <TripRadar dest={dest} />
-        <BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} />
+        <div id="trip-plan"><TripRadar dest={dest} /></div>
+        <div id="trip-booking"><BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} /></div>
         <DestinationAnswers slug={dest.slug} />
 
         {/* Booking order: flight (strip above) → vehicle → stay → tours */}
@@ -324,7 +326,7 @@ function Hero({ dest }: { dest: DestinationView }) {
         </div>
 
         {/* At a glance — desktop only, compact */}
-        <aside className="hidden rounded-2xl border border-border/60 bg-card/95 p-5 shadow-lift backdrop-blur lg:block">
+        <aside className="hidden rounded-lg border border-border/60 bg-card/95 p-5 shadow-lift backdrop-blur lg:block">
           <p className="text-sm font-semibold text-foreground">At a glance</p>
           <ul className="mt-3 divide-y divide-border">
             {glance.map((g) => (
@@ -561,7 +563,7 @@ function TopStays({ dest }: { dest: DestinationView }) {
   return (
     <section id="stays" className="scroll-mt-24">
       <SectionHeader
-        step={4}
+        step={3}
         title="Where you'll want to sleep"
         action={<TextLink>View all stays</TextLink>}
       />
@@ -591,7 +593,7 @@ function TopStays({ dest }: { dest: DestinationView }) {
       {filtered.length === 0 ? (
         <EmptyState message="No stays listed for this filter yet." />
       ) : (
-        <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <div className="travel-card-row mt-5 sm:grid-cols-2 xl:grid-cols-4">
            {pick && <StayCard offer={pick} destinationSlug={dest.slug} featured photo={offerPhoto(dest.slug, "stay", 0, `${pick.title} ${pick.subcategory ?? ""} ${pick.partner ?? ""}`)} />}
            {rest.map((s, index) => (
              <StayCard key={s.id} offer={s} destinationSlug={dest.slug} photo={offerPhoto(dest.slug, "stay", index + 1, `${s.title} ${s.subcategory ?? ""} ${s.partner ?? ""}`)} />
@@ -627,9 +629,9 @@ function StayCard({
   return (
     <article
       className={
-        "group flex flex-col overflow-hidden rounded-2xl border bg-card transition hover:shadow-lift " +
+        "group flex flex-col overflow-hidden rounded-lg border bg-card transition hover:shadow-lift " +
         (featured
-          ? "border-foreground/15 shadow-soft md:col-span-2 xl:col-span-1"
+          ? "border-foreground/15 shadow-soft"
           : "border-border")
       }
     >
@@ -685,7 +687,7 @@ function StayCard({
 
 function EmptyState({ message }: { message: string }) {
   return (
-    <div className="mt-5 rounded-2xl border border-dashed border-border bg-card p-8 text-center text-xs text-muted-foreground">
+    <div className="mt-5 rounded-lg border border-dashed border-border bg-card p-8 text-center text-xs text-muted-foreground">
       {message}
     </div>
   );
@@ -724,12 +726,12 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
   return (
     <>
     {ai && (
-      <div className="flex items-center justify-between rounded-2xl border border-border bg-card px-4 py-3 shadow-soft lg:hidden">
+      <div className="flex items-center justify-between rounded-lg border border-border bg-card px-4 py-3 shadow-soft lg:hidden">
         <span className="text-xs text-muted-foreground">Est. trip budget · 4 days, 2 people</span>
         <span className="font-serif text-lg font-semibold text-foreground">${total.toLocaleString()}</span>
       </div>
     )}
-    <aside className="hidden rounded-2xl border border-border bg-card p-6 shadow-soft lg:sticky lg:top-24 lg:block">
+    <aside className="hidden rounded-lg border border-border bg-card p-6 shadow-soft lg:sticky lg:top-24 lg:block">
       <h2 className="font-display text-lg text-foreground">Your trip budget</h2>
       <p className="mt-0.5 text-xs text-muted-foreground">Estimated for 4 days · 2 travelers</p>
 
@@ -802,7 +804,7 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
       {rentals.length === 0 ? (
         <EmptyState message="No rental partners listed for this destination yet." />
       ) : (
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
            {rentals.map((r, index) => (
              <RentalTile key={r.id} offer={r} destinationSlug={dest.slug} photo={offerPhoto(dest.slug, "rental", index, `${r.title} ${r.subcategory ?? ""} ${r.partner ?? ""}`)} />
           ))}
@@ -815,7 +817,7 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
 
 function RentalTile({ offer, destinationSlug, photo }: { offer: OfferView; destinationSlug: string; photo?: Photo }) {
   return (
-    <article className="group relative overflow-hidden rounded-2xl border border-border bg-card">
+    <article className="group relative overflow-hidden rounded-lg border border-border bg-card">
       <div className="relative aspect-[4/3] bg-beige/30">
         <CardImg src={photo?.url ?? ""} alt={photo ? `${photo.subject}, illustrative rental photo` : ""} className="h-full w-full object-cover" />
         {photo && <PhotoCredit photo={photo} />}
@@ -862,7 +864,7 @@ function ThingsToDo({ dest }: { dest: DestinationView }) {
            {activities.map((a, index) => (
             <article
               key={a.id}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition hover:shadow-lift"
+              className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card transition hover:shadow-lift"
             >
                <div className="relative aspect-[4/3] bg-beige/30">
                   <CardImg src={offerPhoto(dest.slug, "activity", index)?.url ?? ""} alt={offerPhoto(dest.slug, "activity", index) ? `${offerPhoto(dest.slug, "activity", index)?.subject}, illustrative activity photo` : ""} className="h-full w-full object-cover" />
@@ -927,7 +929,7 @@ function TravelServices({ dest }: { dest: DestinationView }) {
   };
 
   return (
-    <aside className="rounded-2xl border border-border bg-card p-6 shadow-soft">
+    <aside className="rounded-lg border border-border bg-card p-6 shadow-soft">
       <h2 className="font-display text-lg text-foreground">Before you hit the road</h2>
       <p className="mt-0.5 text-xs text-muted-foreground">
         The few things worth sorting out in advance.
@@ -1032,7 +1034,7 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
   return (
     <section id="road-trip" className="scroll-mt-24">
       <SectionHeader title="Plan your road trip" />
-      <div className="grid grid-cols-[minmax(0,1fr)] gap-6 rounded-2xl border border-border bg-card p-4 shadow-soft sm:p-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
+      <div className="grid grid-cols-[minmax(0,1fr)] gap-6 rounded-lg border border-border bg-card p-4 shadow-soft sm:p-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
         <div className="relative min-h-[300px] overflow-hidden rounded-xl border border-border bg-beige/60">
           {from && to ? (
             <ClientOnly fallback={<Skeleton className="h-[300px] w-full" />}>
@@ -1142,7 +1144,7 @@ function FieldIntel({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) 
   return (
     <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
       {tips.map((t) => (
-        <div key={t.label} className="rounded-2xl border border-border bg-card p-4 shadow-soft">
+        <div key={t.label} className="rounded-lg border border-border bg-card p-4 shadow-soft">
           <span className="grid h-8 w-8 place-items-center rounded-full bg-sage/20 text-forest">
             {t.icon}
           </span>
@@ -1226,7 +1228,7 @@ function TripFlow({ dest }: { dest: DestinationView }) {
         {plan.map((p, i) => (
           <li
             key={p.day}
-            className="relative flex flex-col rounded-2xl border border-border bg-card p-5 shadow-soft"
+            className="relative flex flex-col rounded-lg border border-border bg-card p-5 shadow-soft"
           >
             <span className="inline-flex w-fit items-center rounded-full bg-forest/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-forest">
               {p.day}
@@ -1266,7 +1268,7 @@ function SimilarDestinations({ dest }: { dest: DestinationView }) {
               key={d.slug}
               to="/destinations/$slug"
               params={{ slug: d.slug }}
-              className="group relative overflow-hidden rounded-2xl border border-border"
+              className="group relative overflow-hidden rounded-lg border border-border"
             >
               <div className="relative aspect-[3/4]">
                 <CardImg
@@ -1320,7 +1322,7 @@ function FinalCta({ dest }: { dest: DestinationView }) {
   };
 
   return (
-    <aside className="rounded-2xl bg-ink p-6 text-off-white shadow-lift">
+    <aside className="rounded-lg bg-ink p-6 text-off-white shadow-lift">
       <Sparkles className="h-6 w-6 text-off-white/70" />
       <h2 className="mt-4 font-display text-xl">Ready to build your trip?</h2>
       <p className="mt-2 text-xs leading-relaxed text-off-white/80">
@@ -1393,7 +1395,7 @@ function PlanDeeper({ dest }: { dest: DestinationView }) {
   const pill = "inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground hover:bg-muted";
   if (!arrivalSlug && !noRes && !rv && loops.length === 0 && gatewayTrips.length === 0 && (!data || data.length === 0)) return null;
   return (
-    <section className="rounded-2xl border border-border bg-card p-6">
+    <section className="rounded-lg border border-border bg-card p-6">
       <h2 className="font-display text-2xl text-foreground">Plan deeper</h2>
       <div className="mt-4 flex flex-wrap gap-3">
         {arrivalSlug && (

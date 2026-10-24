@@ -1,3 +1,5 @@
+import { PhotoCredit } from "@/components/shared/PhotoCredit";
+import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { Link } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { ArrowUpRight, BedDouble, Car, Clock, Luggage, MapPin, Plane, Route as RouteIcon, ShieldAlert } from "lucide-react";
@@ -58,7 +60,7 @@ function Chip({ icon, children }: { icon: ReactNode; children: ReactNode }) {
 
 export function RouteCard({ dest }: { dest: DestinationView }) {
   return (
-    <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-8">
+    <div className="rounded-lg border border-border bg-card p-6 shadow-soft md:p-8">
       <p className="text-xs uppercase tracking-wider text-muted-foreground">Your route</p>
       <div className="mt-4 flex items-center gap-4">
         <div>
@@ -85,19 +87,20 @@ export function RouteCard({ dest }: { dest: DestinationView }) {
 
 function StepCard({ n, icon, title, body, href, cta, brand, photo }: { n: number; icon: ReactNode; title: string; body: string; href: string; cta: string; brand: string; photo?: Photo }) {
   return (
+    <figure className="relative flex min-w-0 flex-col">
     <a
       href={href}
       target="_blank"
       rel="sponsored nofollow noopener noreferrer"
       title={`Opens ${brand} in a new tab — partner link, we may earn a commission`}
-      className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg"
+      className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg"
     >
       <div className="relative aspect-[4/3] overflow-hidden bg-muted">
         {photo && (
           <img src={photo.url} alt={`${photo.subject} — illustrative photo`} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 motion-safe:group-hover:scale-105" />
         )}
         <span className="absolute left-4 top-4 grid h-11 w-11 place-items-center rounded-2xl bg-card/90 text-forest shadow-soft backdrop-blur">{icon}</span>
-        <span className="absolute right-4 top-3 font-display text-3xl font-bold text-off-white drop-shadow">0{n}</span>
+        <span className="absolute right-4 top-3 font-display text-3xl font-bold text-off-white drop-shadow">{n ? `0${n}` : ""}</span>
       </div>
       <div className="flex flex-1 flex-col p-6">
         <h3 className="font-display text-lg font-semibold text-foreground">{title}</h3>
@@ -107,10 +110,12 @@ function StepCard({ n, icon, title, body, href, cta, brand, photo }: { n: number
         </span>
         <p className="mt-2 text-[10px] text-muted-foreground">
           Partner link · {brand}
-          {photo && <> · Photo: {photo.credit} · {photo.license}</>}
+          
         </p>
       </div>
     </a>
+    {photo && <PhotoCredit photo={photo} className="absolute right-2 top-2" />}
+    </figure>
   );
 }
 
@@ -124,7 +129,7 @@ export function ArrivalPlan({ dest }: { dest: DestinationView }) {
   const sub = `fly-drive-${dest.slug}`;
   return (
     <div className="space-y-4">
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 [&>*]:min-w-0">
+      <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-4">
         <StepCard
           n={1}
           icon={<Plane className="h-5 w-5" />}
@@ -139,7 +144,7 @@ export function ArrivalPlan({ dest }: { dest: DestinationView }) {
           n={2}
           icon={<Car className="h-5 w-5" />}
           title={`Standard car at ${dest.airportCode}`}
-          body={`Pick up at the airport and drive straight to ${dest.name}. Compare rental companies in one search.`}
+          body={`Pick up at the airport and drive straight to ${dest.name}. Compare rental companies in one search. ${estimatedFrom("car")} · typical rate; check live prices.`}
           href={airportRentalsLink()}
           cta="Compare rentals"
           brand="Airport Rentals"
@@ -149,14 +154,14 @@ export function ArrivalPlan({ dest }: { dest: DestinationView }) {
           n={2}
           icon={<Car className="h-5 w-5" />}
           title={`SUV at ${dest.airportCode}`}
-          body="Select an SUV, pickup location and dates on Airport Rentals. Confirm prices and availability there."
+          body={`Select an SUV, pickup location and dates on Airport Rentals. Confirm prices and availability there. ${estimatedFrom("suv")} · typical rate.`}
           href={airportRentalsLink()}
           cta="Compare SUVs"
           brand="Airport Rentals"
           photo={airportRentalPhoto("suv", dest.slug)}
         />
         <StepCard
-          n={3}
+          n={0}
           icon={<Luggage className="h-5 w-5" />}
           title="Store extra bags"
           body="Early arrival or late flight home? Drop luggage nearby and keep the car light for the park."
@@ -166,30 +171,30 @@ export function ArrivalPlan({ dest }: { dest: DestinationView }) {
           photo={servicePhoto("flight", dest.slug, 1)}
         />
       </div>
-      <div className="rounded-3xl border border-border bg-sand/30 p-4 md:p-6">
+      <div className="rounded-lg border border-border bg-sand/30 p-4 md:p-6">
         <div className="mb-4 flex items-center gap-3">
           <span className="grid h-11 w-11 place-items-center rounded-2xl bg-sage/20 text-forest"><BedDouble className="h-5 w-5" /></span>
           <div>
-            <p className="font-display text-lg font-semibold text-foreground">04 · First night near {dest.name}</p>
+            <p className="font-display text-lg font-semibold text-foreground">03 · First night near {dest.name}</p>
             <p className="text-sm text-muted-foreground">Sleep close after the drive so day one starts in the park.</p>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 [&>*]:min-w-0">
+        <div className="travel-card-row sm:grid-cols-2">
           <StepCard
-            n={4}
+            n={3}
             icon={<BedDouble className="h-5 w-5" />}
             title={`Hotels near ${dest.name}`}
-            body="Compare hotels and lodges on the way in, with free-cancellation filters."
+            body={`${estimatedFrom("hotel")} · typical rate. Compare hotels and lodges; check cancellation terms on Expedia.`}
             href={buildExpediaHotelSearchUrl(dest.name)}
             cta="Search Expedia"
             brand="Expedia"
             photo={servicePhoto("hotel", dest.slug)}
           />
           <StepCard
-            n={4}
+            n={3}
             icon={<BedDouble className="h-5 w-5" />}
             title={`Cabins & homes near ${dest.name}`}
-            body="Whole homes and cabins for families or groups who want a kitchen and space."
+            body={`${estimatedFrom("cabin")} · typical rate. Whole homes and cabins for families or groups; check live prices on Vrbo.`}
             href={buildVrboSearchUrl(dest.name)}
             cta="Search Vrbo"
             brand="Vrbo"
@@ -209,7 +214,7 @@ export function BeforeYouLand({ dest }: { dest: DestinationView }) {
   return (
     <div className="grid gap-4 md:grid-cols-3">
       {note && (
-        <div className="rounded-3xl border border-border bg-sand/40 p-6 md:col-span-2 md:p-8">
+        <div className="rounded-lg border border-border bg-sand/40 p-6 md:col-span-2 md:p-8">
           <p className="text-xs uppercase tracking-wider text-muted-foreground">Reservations</p>
           <p className="mt-2 font-display text-xl font-semibold text-foreground">{reviewed?.headline ?? dest.permitHeadline ?? `Planning ${dest.name}`}</p>
           <p className="mt-3 leading-relaxed text-foreground/80">{note}</p>
@@ -221,7 +226,7 @@ export function BeforeYouLand({ dest }: { dest: DestinationView }) {
         </div>
       )}
       {dest.bestSeason && (
-        <div className="rounded-3xl border border-border bg-card p-6 md:p-8">
+        <div className="rounded-lg border border-border bg-card p-6 md:p-8">
           <p className="text-xs uppercase tracking-wider text-muted-foreground">Best time to fly in</p>
           <p className="mt-2 font-display text-xl font-semibold text-foreground">{dest.bestSeason}</p>
         </div>
@@ -232,7 +237,7 @@ export function BeforeYouLand({ dest }: { dest: DestinationView }) {
 
 export function FlyDriveFaq({ faqs }: { faqs: Faq[] }) {
   return (
-    <div className="divide-y divide-border rounded-3xl border border-border bg-card">
+    <div className="divide-y divide-border rounded-lg border border-border bg-card">
       {faqs.map((f) => (
         <details key={f.q} className="group p-6" open>
           <summary className="cursor-pointer list-none font-semibold text-foreground">{f.q}</summary>
@@ -246,7 +251,7 @@ export function FlyDriveFaq({ faqs }: { faqs: Faq[] }) {
 export function RelatedLinks({ dest, siblings }: { dest: DestinationView; siblings: FlyDriveSibling[] }) {
   return (
     <div className="space-y-6">
-      <Link to="/destinations/$slug" params={{ slug: dest.slug }} className="flex items-center justify-between rounded-3xl bg-forest p-6 text-off-white md:p-8">
+      <Link to="/destinations/$slug" params={{ slug: dest.slug }} className="flex items-center justify-between rounded-lg bg-forest p-6 text-off-white md:p-8">
         <span>
           <span className="block text-xs uppercase tracking-wider text-off-white/70">Full guide</span>
           <span className="font-display text-xl font-semibold">Stays, 3-day plan and route map for {dest.name}</span>

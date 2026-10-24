@@ -1,3 +1,5 @@
+import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
+import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { createFileRoute, Link, notFound, ClientOnly } from "@tanstack/react-router";
 import { lazy, Suspense } from "react";
@@ -66,9 +68,11 @@ function Page() {
           <HeroChip icon={<CalendarDays className="h-4 w-4" />}>{corridor.idealDays}</HeroChip>
           <HeroChip icon={<RouteIcon className="h-4 w-4" />}>~{miles} mi loop (straight-line)</HeroChip>
         </GuideHero>
+        <TripSnapshot airport={corridor.gateway.code} days={corridor.idealDays} stops={stops.length} /><TripQuickNav />
+        <div id="trip-plan" />
 
         <GuideSection title="Who this route is for" intro={corridor.audience}>
-          <div className="relative h-[360px] overflow-hidden rounded-3xl border border-border bg-muted">
+          <div className="relative h-[360px] overflow-hidden rounded-lg border border-border bg-muted">
             <ClientOnly fallback={<Skeleton className="h-full w-full" />}>
               <Suspense fallback={<Skeleton className="h-full w-full" />}>
                 <RoadTripMap route={line} from={[first.lng, first.lat]} to={[first.lng, first.lat]} stops={markers} />
@@ -79,13 +83,13 @@ function Page() {
         </GuideSection>
 
         <GuideSection title={`Start in ${corridor.gatewayCity}`} intro="Arrange your arrival, choose your wheels and get connected before the first park day.">
-          <CorridorBookings slug={corridor.slug} airport={corridor.gateway.code} city={corridor.gatewayCity} />
+          <div id="trip-booking"><BookingStepsStrip slug={corridor.slug} name={corridor.gatewayCity} airportCode={corridor.gateway.code} /><CorridorBookings slug={corridor.slug} airport={corridor.gateway.code} city={corridor.gatewayCity} /></div>
         </GuideSection>
 
         <GuideSection title="Before you fly: essentials for overseas visitors">
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {corridor.essentials.map((e) => (
-              <div key={e.title} className="rounded-3xl border border-border bg-card p-6 shadow-soft">
+              <div key={e.title} className="rounded-lg border border-border bg-card p-6 shadow-soft">
                 <Globe2 className="h-5 w-5 text-forest" />
                 <p className="mt-3 font-display text-lg font-semibold text-foreground">{e.title}</p>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{e.text}</p>
@@ -103,8 +107,8 @@ function Page() {
                 <li key={s.slug}>
                   {leg != null && <p className="mb-2 ml-6 flex items-center gap-2 text-xs text-muted-foreground"><RouteIcon className="h-3.5 w-3.5" /> ~{leg} mi straight-line from {stops[i - 1].name}</p>}
                   {corridor.legNotes?.[s.slug] && <p className="mb-2 ml-6 text-xs text-muted-foreground">{corridor.legNotes[s.slug]}</p>}
-                  <Link to="/destinations/$slug" params={{ slug: s.slug }} className="group grid grid-cols-[96px_minmax(0,1fr)] gap-4 overflow-hidden rounded-3xl border border-border bg-card p-3 shadow-soft transition hover:shadow-lg sm:grid-cols-[160px_minmax(0,1fr)]">
-                    <div className="relative aspect-square overflow-hidden rounded-2xl bg-muted sm:aspect-[4/3]">
+                  <Link to="/destinations/$slug" params={{ slug: s.slug }} className="group grid grid-cols-[96px_minmax(0,1fr)] gap-4 overflow-hidden rounded-lg border border-border bg-card p-3 shadow-soft transition hover:shadow-lg sm:grid-cols-[160px_minmax(0,1fr)]">
+                    <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-muted">
                       {s.heroImage && <img src={s.heroImage} alt={s.name} loading="lazy" className="h-full w-full object-cover" />}
                       <span className="absolute left-2 top-2 grid h-8 w-8 place-items-center rounded-full bg-card/90 font-display text-sm font-bold text-forest">{i + 1}</span>
                     </div>
@@ -123,11 +127,11 @@ function Page() {
           </ol>
         </GuideSection>
 
-        <section className="container-page py-10"><TripEssentials context={{ slug: corridor.slug, name: corridor.title, places: stops.slice(1), topic: corridor.intro }} /></section>
 
-        <GuideSection title="Experiences worth planning ahead" intro="Guided tours along the loop: choose what fits your route and allow time for the meeting point.">
+        <div id="trip-tours" /><GuideSection title="Experiences worth planning ahead" intro="Guided tours along the loop: choose what fits your route and allow time for the meeting point.">
           <iframe src={`/experiences/${corridor.slug}`} title={`Viator experiences along the ${corridor.title}`} loading="lazy" className="h-[1750px] w-full border-0 bg-background sm:h-[650px]" />
         </GuideSection>
+        <section className="container-page py-10"><TripEssentials context={{ slug: corridor.slug, name: corridor.title, places: stops.slice(1), topic: corridor.intro }} /></section>
 
         <GuideSection title="Quick answers"><GuideFaq faqs={corridor.faqs} /></GuideSection>
       </main>

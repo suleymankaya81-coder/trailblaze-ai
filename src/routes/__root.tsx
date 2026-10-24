@@ -98,13 +98,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "apple-touch-icon", sizes: "64x64", href: "/favicon.png" },
       { rel: "stylesheet", href: appCss },
     ],
-    scripts: [
-      {
-        src: "https://tp-em.com/NTgyMTU3.js?t=582157",
-        async: true,
-        "data-cmp-ab": "2",
-      },
-    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
@@ -131,6 +124,15 @@ function RootComponent() {
   const router = useRouter();
 
   useEffect(() => {
+    // The affiliate script rewrites links; start it only after React hydrates.
+    if (!document.querySelector('script[data-minialife-travelpayouts]')) {
+      const script = document.createElement('script');
+      script.src = 'https://tp-em.com/NTgyMTU3.js?t=582157';
+      script.async = true;
+      script.setAttribute('data-cmp-ab', '2');
+      script.setAttribute('data-minialife-travelpayouts', 'true');
+      document.body.appendChild(script);
+    }
     initAnalytics();
     const unsubscribe = router.subscribe("onResolved", ({ toLocation }) => {
       trackPageView(toLocation.pathname + toLocation.searchStr);

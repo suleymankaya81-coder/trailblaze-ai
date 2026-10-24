@@ -26,16 +26,16 @@ function Experiences({ slug }: { slug: string }) {
   if (isPending) return <Loading />;
   if (isError || !data?.items.length) return <div className="p-5 text-sm text-muted-foreground"><p>Viator experiences are temporarily unavailable.</p><Button variant="outline" size="sm" className="mt-3" onClick={() => refetch()}>Try again</Button></div>;
   return <div className="bg-background p-1">
-    <div className="grid gap-4 sm:grid-cols-3">
+    <div className="travel-card-row sm:grid-cols-3">
       {data.items.map((item) => <article key={item.code} className="flex min-w-0 flex-col overflow-hidden rounded-lg border border-border bg-card">
-        <img src={item.image} alt={item.title} loading="lazy" className="aspect-[3/2] w-full object-cover" />
+        <img src={item.image} alt={item.title} loading="lazy" className="aspect-[4/3] w-full object-cover" />
         <div className="flex flex-1 flex-col p-4">
           <p className="text-[10px] uppercase text-muted-foreground">{item.stop}</p>
           <h3 className="mt-2 font-display text-base font-semibold leading-snug text-foreground">{item.title}</h3>
           {item.rating !== null && <p className="mt-3 flex items-center gap-1 text-xs text-foreground"><Star className="h-3.5 w-3.5 text-amber" />{item.rating.toFixed(1)} <span className="text-muted-foreground">({item.reviews.toLocaleString("en-US")} reviews · Viator / Tripadvisor)</span></p>}
           <p className="mt-3 text-lg font-semibold text-foreground">{item.price !== null ? `From ${new Intl.NumberFormat("en-US", { style: "currency", currency: item.currency }).format(item.price)}` : "Check current price"}</p>
           <p className="mb-4 mt-1 text-[11px] text-muted-foreground">Starting price; check your dates and options on Viator.</p>
-          <Button asChild size="sm" className="mt-auto rounded-lg"><a href={item.url} target="_blank" rel="sponsored nofollow noopener noreferrer">View on Viator<ArrowUpRight /></a></Button>
+          <Button asChild size="sm" className="mt-auto min-h-12 rounded-lg"><a href={item.url} target="_blank" rel="sponsored nofollow noopener noreferrer">View on Viator<ArrowUpRight /></a></Button>
         </div>
       </article>)}
     </div>

@@ -1,3 +1,5 @@
+import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
+import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ViatorPlaceBlock } from "@/components/destination/ViatorPlaceBlock";
@@ -64,9 +66,12 @@ function Page() {
           <HeroChip icon={<ShieldAlert className="h-4 w-4" />}>{dest.permitLevel === "high" ? "Bookings: high demand" : "Bookings: moderate demand"}</HeroChip>
           {dest.driveMinutes != null && <HeroChip icon={<Clock className="h-4 w-4" />}>{formatDriveShort(dest.driveMinutes)} from {dest.airportCode}</HeroChip>}
         </GuideHero>
+        <TripSnapshot trip={dest} /><TripQuickNav />
+        <div id="trip-booking" className="container-page py-6"><BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} /></div>
+        <div id="trip-plan" />
 
         <GuideSection title="What needs booking">
-          <ReservationPanel headline={reviewed ? null : dest.permitHeadline} note={reservationNote(dest)!} sourceUrl={reviewed?.sourceUrl ?? dest.permitSourceUrl} />
+          <ReservationPanel headline={reviewed ? null : dest.permitHeadline} note={reservationNote(dest) ?? "Check the current official reservation rules before booking."} sourceUrl={reviewed?.sourceUrl ?? dest.permitSourceUrl} />
         </GuideSection>
 
         {tips.length > 0 && (
@@ -97,8 +102,8 @@ function Page() {
           </GuideSection>
         )}
 
-        <section className="container-page py-10"><TripEssentials context={{ slug: dest.slug, name: dest.name, places: [dest] }} /></section>
         <section className="container-page pb-6"><ViatorPlaceBlock slug={dest.slug} name={dest.name} /></section>
+        <section className="container-page py-10"><TripEssentials context={{ slug: dest.slug, name: dest.name, places: [dest] }} /></section>
         <GuideSection title="Quick answers"><GuideFaq faqs={faqs} /></GuideSection>
         <section className="container-page pb-16"><FullGuideLink slug={dest.slug} name={dest.name} /></section>
       </main>

@@ -40,7 +40,7 @@ function Group({ title, items, slug, airportCode, rentals = false }: { title: st
   return (
     <div className="mt-6">
       <h3 className="mb-3 text-sm font-semibold text-foreground">{title}</h3>
-      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-4">
         {items.map((i) => <Card key={i.brand} item={i} slug={slug} />)}
         {rentals && <AirportRentalsCards slug={slug} airportCode={airportCode} />}
       </div>

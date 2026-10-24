@@ -1,3 +1,5 @@
+import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
+import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ClientOnly } from "@tanstack/react-router";
@@ -66,9 +68,11 @@ function Page() {
           <HeroChip icon={<MapPin className="h-4 w-4" />}>{stops.length} stops</HeroChip>
           <HeroChip icon={<CalendarDays className="h-4 w-4" />}>About {totalDays} days</HeroChip>
         </GuideHero>
+        <TripSnapshot airport={gateway?.code} days={`About ${totalDays} days`} stops={stops.length} /><TripQuickNav booking={!!gateway} />
+        <div id="trip-plan" />
 
         <GuideSection title="The loop" intro={loop.intro}>
-          <div className="relative h-[340px] overflow-hidden rounded-3xl border border-border bg-muted">
+          <div className="relative h-[340px] overflow-hidden rounded-lg border border-border bg-muted">
             <ClientOnly fallback={<Skeleton className="h-full w-full" />}>
               <Suspense fallback={<Skeleton className="h-full w-full" />}>
                 <RoadTripMap route={line} from={[first.lng, first.lat]} to={[last.lng, last.lat]} stops={markers} />
@@ -80,7 +84,7 @@ function Page() {
 
         {gateway && (
           <GuideSection title={`Book this loop from ${gateway.code}`} intro={`Fly into ${gateway.name}, pick up your car or RV, then drive the loop.`}>
-            <CorridorBookings slug={loop.slug} airport={gateway.code} city={gateway.name} />
+            <div id="trip-booking"><BookingStepsStrip slug={loop.slug} name={first.name} airportCode={gateway.code} /><CorridorBookings slug={loop.slug} airport={gateway.code} city={gateway.name} /></div>
           </GuideSection>
         )}
 
@@ -91,8 +95,8 @@ function Page() {
               return (
                 <li key={s.slug}>
                   {leg != null && <p className="mb-2 ml-6 flex items-center gap-2 text-xs text-muted-foreground"><RouteIcon className="h-3.5 w-3.5" /> ~{leg} mi straight-line from {stops[i - 1].name}</p>}
-                  <Link to="/destinations/$slug" params={{ slug: s.slug }} className="group grid grid-cols-[96px_minmax(0,1fr)] gap-4 overflow-hidden rounded-3xl border border-border bg-card p-3 shadow-soft transition hover:shadow-lg sm:grid-cols-[160px_minmax(0,1fr)]">
-                    <div className="relative aspect-square overflow-hidden rounded-2xl bg-muted sm:aspect-[4/3]">
+                  <Link to="/destinations/$slug" params={{ slug: s.slug }} className="group grid grid-cols-[96px_minmax(0,1fr)] gap-4 overflow-hidden rounded-lg border border-border bg-card p-3 shadow-soft transition hover:shadow-lg sm:grid-cols-[160px_minmax(0,1fr)]">
+                    <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-muted">
                       {s.heroImage && <img src={s.heroImage} alt={s.name} loading="lazy" className="h-full w-full object-cover" />}
                       <span className="absolute left-2 top-2 grid h-8 w-8 place-items-center rounded-full bg-card/90 font-display text-sm font-bold text-forest">{i + 1}</span>
                     </div>
@@ -110,9 +114,9 @@ function Page() {
           </ol>
         </GuideSection>
 
-        <section className="container-page py-10"><TripEssentials context={{ slug: loop.slug, name: loop.title, places: stops, topic: loop.intro }} /></section>
 
         <section className="container-page pb-6"><ViatorPlaceBlock slug={first.slug} name={first.name} /></section>
+        <section className="container-page py-10"><TripEssentials context={{ slug: loop.slug, name: loop.title, places: stops, topic: loop.intro }} /></section>
 
         <GuideSection title="Quick answers"><GuideFaq faqs={faqs} /></GuideSection>
       </main>

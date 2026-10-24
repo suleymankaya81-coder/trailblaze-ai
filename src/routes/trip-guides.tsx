@@ -22,11 +22,12 @@ const FAMILIES = [
 ];
 
 export const Route = createFileRoute("/trip-guides")({
-  head: () => ({
+  head: ({ loaderData }) => ({
     meta: [
       { title }, { name: "description", content: description },
       { property: "og:title", content: title }, { property: "og:description", content: description },
       { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
+      ...((image => image?.startsWith("https://") ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : [])(loaderData?.["yellowstone"] ?? Object.values(loaderData ?? {})[0])),
       { property: "og:url", content: `${SITE}/trip-guides` },
     ],
     links: [{ rel: "canonical", href: `${SITE}/trip-guides` }],
@@ -44,8 +45,8 @@ function Page() {
       <main className="container-page py-10 md:py-14">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {FAMILIES.map((f) => (
-            <Link key={f.to} to={f.to} className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg">
-              {covers[f.cover] ? <div className="aspect-[16/9] overflow-hidden bg-muted"><img src={covers[f.cover]} alt="" loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" /></div> : null}
+            <Link key={f.to} to={f.to} className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg">
+              {covers[f.cover] ? <div className="aspect-[4/3] overflow-hidden bg-muted"><img src={covers[f.cover]} alt="" loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" /></div> : null}
               <div className="flex flex-1 flex-col p-6">
               <div className="flex items-center justify-between"><span className="grid h-11 w-11 place-items-center rounded-2xl bg-primary text-primary-foreground"><f.icon className="h-5 w-5" /></span><span className="rounded-full bg-muted px-3 py-1 text-xs font-semibold text-foreground">{f.count}</span></div>
               <h2 className="mt-4 font-display text-xl font-semibold text-foreground">{f.label}</h2>

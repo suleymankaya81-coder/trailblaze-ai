@@ -13,7 +13,7 @@ const description =
 const url = "https://minialife.com/corridors";
 
 export const Route = createFileRoute("/corridors/")({
-  head: () => ({
+  head: ({ loaderData }) => ({
     meta: [
       { title },
       { name: "description", content: description },
@@ -22,6 +22,7 @@ export const Route = createFileRoute("/corridors/")({
       { property: "og:type", content: "website" },
       { property: "og:url", content: url },
       { name: "twitter:card", content: "summary_large_image" },
+      ...((image => image?.startsWith("https://") ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : [])((() => { const stops = CORRIDORS.filter(c => !c.pilot)[0]?.stops ?? []; const slug = stops.slice(1).find(s => loaderData?.[s]) ?? stops.find(s => loaderData?.[s]); return slug ? loaderData?.[slug] : undefined; })())),
     ],
     links: [{ rel: "canonical", href: url }],
   }),
@@ -51,8 +52,8 @@ function Page() {
             <h2 className="font-display text-2xl font-semibold text-foreground">{area}</h2>
             <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {list.filter((c) => corridorArea(c) === area).map((c) => { const cover = coverFor(c.stops); return (
-            <Link key={c.slug} to="/corridors/$slug" params={{ slug: c.slug }} className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg">
-{cover ? <div className="relative aspect-[16/9] overflow-hidden bg-muted"><img src={cover} alt={`${c.title} — route scenery`} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" /></div> : null}
+            <Link key={c.slug} to="/corridors/$slug" params={{ slug: c.slug }} className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg">
+{cover ? <div className="relative aspect-[4/3] overflow-hidden bg-muted"><img src={cover} alt={`${c.title} — route scenery`} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" /></div> : null}
               <div className="flex flex-1 flex-col p-6">
               <p className="flex flex-wrap items-center gap-1.5 text-xs uppercase tracking-wider text-muted-foreground"><span className="inline-flex items-center gap-1 rounded-full bg-primary px-2 py-0.5 font-semibold text-primary-foreground"><Plane className="h-3 w-3" />{c.gateway.code}</span><span className="rounded-full bg-muted px-2 py-0.5 font-semibold text-foreground">{c.idealDays}</span><span className="rounded-full bg-muted px-2 py-0.5 font-semibold text-foreground">{c.stops.length} stops</span></p>
               <h3 className="mt-2 font-display text-xl font-semibold text-foreground">{c.title}</h3>

@@ -24,7 +24,7 @@ export function PartnerPhotoCard({ brand, title, href, photo, detail, price, bad
           <h3 className="mt-1 text-sm font-semibold text-foreground">{title}</h3>
           {price && <p className="mt-1 font-display text-base font-semibold text-foreground">{price} <span className="text-[10px] font-normal text-muted-foreground">· typical rate, live price on {brand}</span></p>}
           {detail && <p className="mt-2 text-xs text-muted-foreground">{detail}</p>}
-          <span className="mt-auto inline-flex items-center gap-1 pt-4 text-xs font-semibold text-primary">{cta ?? `Check on ${brand}`} <ArrowUpRight className="h-3.5 w-3.5" /></span>
+          <span className="mt-4 inline-flex min-h-12 items-center justify-center gap-1 rounded-md bg-primary px-3 py-2 text-center text-xs font-semibold text-primary-foreground">{cta ?? `Check on ${brand}`} <ArrowUpRight className="h-3.5 w-3.5 shrink-0" /></span>
         </div>
       </a>
       <PhotoCredit photo={photo} className="absolute right-2 top-2" />

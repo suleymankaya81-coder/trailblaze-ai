@@ -163,6 +163,31 @@
   *, *::before, *::after { scroll-behavior: auto !important; }
 }
 
+@utility travel-card-row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 85%;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.75rem;
+  & > * { scroll-snap-align: start; min-width: 0; }
+  @media (min-width: 640px) {
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+}
+
+[id^="trip-"] { scroll-margin-top: 11rem; }
+.trip-quick-nav { border-block: 1px solid var(--border); background: var(--background); }
+@layer base {
+  @media (max-width: 767px) {
+    button, select, summary { min-height: 48px; }
+  }
+}
+
 @utility container-page {
   max-width: 80rem;
   margin-inline: auto;
