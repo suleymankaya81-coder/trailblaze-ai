@@ -1,3 +1,8 @@
+## October 24 contextual trip essentials
+- [ ] Select real approved-partner products and match exactly four distinct items to each destination/route's activities; no generic bike products for non-cyclists.
+- [ ] Add page-matched horizontal product cards after planning content on destination, Fly & Drive, RV/camping, no-reservation, loop, gateway and existing search-guide pages; preserve Gear Shop.
+- [ ] Verify selection rules, affiliate attribution, photographs and desktop/phone interaction.
+
 ## October 23 positioning-led competitor analysis and SEO
 - [x] Verify closest business substitutes and actual search competitors; save a sourced report and keyword-to-existing-page priorities (marketing/minialife-rakip-seo-2026-10-23_v2.md).
 - [x] Improve existing homepage and gateway/hub metadata and navigation; add visible-order gateway structured data; no new satellite guides.
