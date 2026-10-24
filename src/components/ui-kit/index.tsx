@@ -59,11 +59,11 @@ export function PlaceCard({ to, params, image, alt, badges = [], title, summary,
 }) {
   return (
     <Link to={to} params={params as never} className="group flex h-full flex-col overflow-hidden rounded-xl border border-border bg-card transition hover:shadow-soft">
-      <div className={cn("relative overflow-hidden", large ? "aspect-[4/3] md:aspect-[16/11]" : "aspect-[4/3]")}>
+      <div className={cn("relative overflow-hidden", large ? "aspect-[4/3] md:aspect-auto md:min-h-[320px] md:flex-1" : "aspect-[4/3]")}>
         <img src={image} alt={alt} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
         {badges.length > 0 && <div className="absolute left-3 top-3 flex flex-wrap gap-1.5">{badges.slice(0, 3).map((b) => <Pill key={b}>{b}</Pill>)}</div>}
       </div>
-      <div className="flex flex-1 flex-col p-4 md:p-5">
+      <div className={cn("flex flex-col p-4 md:p-5", !large && "flex-1")}>
         <h3 className={cn("leading-snug text-foreground", large ? "text-2xl" : "text-lg md:text-xl")}>{title}</h3>
         {summary && <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted-foreground">{summary}</p>}
         <div className="mt-auto flex items-center justify-between gap-3 pt-4">

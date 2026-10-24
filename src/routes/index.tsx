@@ -81,7 +81,9 @@ const why = [
 function HomePage() {
   const { homeDestinations } = Route.useLoaderData();
   const featured = homeDestinations.slice(0, 5);
-  const loopImage = (stops: readonly string[]) => homeDestinations.find((d) => stops.includes(d.slug))?.heroImage ?? roadImg;
+  const used = new Set(featured.map((d) => d.heroImage));
+  const fallbacks = [roadImg, mapImg, rvImg, flightImg];
+  const loopImage = (stops: readonly string[], i: number) => { const hit = homeDestinations.find((d) => stops.includes(d.slug) && !used.has(d.heroImage))?.heroImage; if (hit) { used.add(hit); return hit; } return fallbacks[i % fallbacks.length]; };
 
   return (
     <div className="bg-background">
@@ -110,8 +112,8 @@ function HomePage() {
         <div className="container-page">
           <SectionHead kicker="Road trip loops" title="Multi-park routes, planned for you" action={<SectionLink to="/road-trips">All loops</SectionLink>} />
           <SwipeRow className="md:grid-cols-2 lg:grid-cols-4">
-            {LOOPS.slice(0, 4).map((l) => (
-              <PlaceCard key={l.slug} to="/road-trips/$slug" params={{ slug: l.slug }} image={loopImage(l.stops)} alt={`${l.title} route scenery`}
+            {LOOPS.slice(0, 4).map((l, i) => (
+              <PlaceCard key={l.slug} to="/road-trips/$slug" params={{ slug: l.slug }} image={loopImage(l.stops, i)} alt={`${l.title} route scenery`}
                 badges={[`${l.stops.length} stops`, l.region]} title={l.title} summary={l.intro} action="See the route" />
             ))}
           </SwipeRow>
@@ -214,7 +216,6 @@ function HomeHero() {
             <SearchBar size="lg" />
           </div>
 
-          <Button asChild size="lg" className="mt-5 min-h-12"><a href="#how-it-works">Start planning <ArrowRight /></a></Button>
           <div className="mt-5 flex items-center gap-4 text-sm">
             <Link
               to="/corridors"
