@@ -11,6 +11,7 @@ vi.mock("@tanstack/react-router", () => ({
     return {};
   },
   redirect: (target: unknown) => target,
+  lazyRouteComponent: () => () => null,
 }));
 vi.mock("@/lib/data/destinations.functions", () => ({ findDestinationSlugByQuery: mocks.findDestination }));
 vi.mock("@/components/site/Header", () => ({ Header: () => null }));

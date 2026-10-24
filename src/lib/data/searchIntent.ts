@@ -1,5 +1,4 @@
-// Trip-type search intents: these queries describe a kind of trip, not a
-// place, so they open a hub page instead of guessing a destination.
+// Trip-type hub fallbacks, used only after checking for a named place.
 export type SearchIntent = { to: string; search?: Record<string, string> };
 
 const INTENTS: Array<{ words: RegExp; target: SearchIntent }> = [
@@ -24,5 +23,13 @@ export function matchesTerm(query: string, term: string): boolean {
   if (!q || !t) return false;
   if (q === t) return true;
   if (q.length >= 3 && new RegExp(`\\b${escape(q)}`).test(t)) return true;
+  // A trailing trip modifier must not hide a place with no short alias.
+  // Keep leading words (e.g. "Gateway Arch") intact to avoid broad matches.
+  for (const intent of INTENTS) {
+    const modifier = intent.words.exec(q);
+    if (!modifier || modifier.index === 0 || modifier.index + modifier[0].length !== q.length) continue;
+    const place = q.slice(0, modifier.index).trim();
+    if (place.length >= 3 && new RegExp(`\\b${escape(place)}\\b`).test(t)) return true;
+  }
   return t.length >= 3 && new RegExp(`\\b${escape(t)}\\b`).test(q);
 }
