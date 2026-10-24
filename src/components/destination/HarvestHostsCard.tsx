@@ -59,7 +59,6 @@ export function HarvestHostsCard({ destinationName }: { destinationName: string 
           <p className="text-sm text-muted-foreground">
             Harvest Hosts membership: 5,000+ unique RV stops. Minialife readers get 20% off the first year.
           </p>
-          <p className="mt-1 text-xs font-semibold text-foreground">Membership from about $99/year <span className="font-normal text-muted-foreground">· typical, current price on Harvest Hosts</span></p>
         </div>
         <div className="flex shrink-0 flex-col items-start gap-2 md:items-end">
           <button type="button" onClick={copy}

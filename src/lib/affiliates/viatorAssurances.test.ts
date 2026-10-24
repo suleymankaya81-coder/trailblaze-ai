@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { viatorAssurances } from "./viatorPlace.functions";
-import { STAY_CHOICES } from "@/routes/destinations.$slug";
+import { STAY_CHOICES } from "@/lib/data/stayChoices";
 describe("tour and stay labels", () => {
   it("shows tour labels only when Viator flags say so", () => {
     expect(viatorAssurances(undefined)).toEqual({ freeCancellation: false, mobileTicket: false });
