@@ -27,3 +27,5 @@
 - Live Viator listings on destination and guide pages load from `/experiences/place/$slug` (noindex frame, 24h `viator_place_cache`). Why: Viator content must not be indexed and API calls stay bounded.
 - Site search sends trip-type queries to hubs via `src/lib/data/searchIntent.ts` and matches places by whole words only. Why: short aliases matched inside other words and sent visitors to the wrong place.
 - Road Trips is one menu entry; `/road-trips` and `/corridors` cross-link as tabs, and loop pages show route booking cards only when a stop has airport data, in the fixed `bookingSteps.ts` order. Why: one clear entry and no invented airports.
+
+- Partner-card photo credits use the shared PhotoCredit (©) component and button text comes from offerCtaLabel. Why: credits stay compact and CTAs consistent across card types.
