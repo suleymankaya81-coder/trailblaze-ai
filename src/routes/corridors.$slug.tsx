@@ -1,3 +1,4 @@
+import { TripEssentials } from "@/components/destination/TripEssentials";
 import { createFileRoute, Link, notFound, ClientOnly } from "@tanstack/react-router";
 import { lazy, Suspense } from "react";
 import { CalendarDays, Globe2, MapPin, Plane, Route as RouteIcon, ShieldAlert } from "lucide-react";
@@ -121,6 +122,8 @@ function Page() {
             <li className="ml-6 flex items-center gap-2 text-sm text-muted-foreground"><MapPin className="h-4 w-4" /> Return to {first.name} and drop the car at {corridor.gateway.code}.</li>
           </ol>
         </GuideSection>
+
+        <section className="container-page py-10"><TripEssentials context={{ slug: corridor.slug, name: corridor.title, places: stops.slice(1), topic: corridor.intro }} /></section>
 
         <GuideSection title="Experiences worth planning ahead" intro="Guided tours along the loop: choose what fits your route and allow time for the meeting point.">
           <iframe src={`/experiences/${corridor.slug}`} title={`Viator experiences along the ${corridor.title}`} loading="lazy" className="h-[1750px] w-full border-0 bg-background sm:h-[650px]" />

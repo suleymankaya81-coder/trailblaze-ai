@@ -1,3 +1,4 @@
+import { TripEssentials } from "@/components/destination/TripEssentials";
 import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 
 import { Header } from "@/components/site/Header";
@@ -73,6 +74,7 @@ function FlyDrivePage() {
         <Section title="Before you land">
           <BeforeYouLand dest={dest} />
         </Section>
+        <section className="container-page py-10"><TripEssentials context={{ slug: dest.slug, name: dest.name, places: [dest] }} /></section>
         <section className="container-page pb-6"><ViatorPlaceBlock slug={dest.slug} name={dest.name} /></section>
         <Section title="Quick answers">
           <FlyDriveFaq faqs={faqs} />

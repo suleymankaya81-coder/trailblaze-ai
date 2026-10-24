@@ -1,3 +1,4 @@
+import { TripEssentials } from "@/components/destination/TripEssentials";
 import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { VrboSearchWidget } from "@/components/destination/VrboSearchWidget";
@@ -200,6 +201,8 @@ function DestinationPage() {
             <TravelServices dest={dest} />
           </div>
         </section>
+
+        <TripEssentials context={{ slug: dest.slug, name: dest.name, places: [dest] }} />
 
         <PlanDeeper dest={dest} />
 

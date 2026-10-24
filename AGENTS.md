@@ -1,4 +1,5 @@
 - Destination page sections live in `src/components/destination/*`; the route file composes them. Why: the single route file grew too large to maintain.
+- Travel pages share TripEssentials with a compact verified partner selection and deterministic activity/context matching; keep it after planning content and do not load the full catalog or generate recommendations per visit. Why: consistent relevant product cards without extra AI cost or changing Gear Shop.
 - All Awin links, including bespoke promotional cards, must use buildAwinLink from the shared affiliate module. Why: a single publisher identity prevents attribution drift between cards.
 - Homepage rentals use partner search forms and shared standard-car/SUV cards, not catalog inventory tiles. Why: show real partner search without invented inventory or prices.
 - Road trip maps use MapLibre + OpenFreeMap with a Vite-resolved worker asset and precomputed `src/data/routes.json` routes; never use paid/runtime routing per visit. Why: reliable tile loading and zero per-visitor map cost.

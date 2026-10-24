@@ -1,3 +1,4 @@
+import { TripEssentials } from "@/components/destination/TripEssentials";
 import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2, ChevronRight } from "lucide-react";
 
@@ -254,6 +255,7 @@ function LandingPage() {
           )}
         </aside>
       </main>
+      <div className="container-page pb-14"><TripEssentials context={{ slug: destination.slug, name: destination.name, places: [destination], topic: `${h1} ${page.introContent ?? ""} ${sections.map(s => s.heading).join(" ")}` }} /></div>
       <Footer />
     </div>
   );
