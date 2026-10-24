@@ -5,7 +5,6 @@ import { LOOPS } from "@/lib/seo/guides";
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
-import { PhotoCredit } from "@/components/shared/PhotoCredit";
 import { servicePhoto, type ServicePhotoCategory } from "@/lib/data/servicePhotos";
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
 import { RentalSearch } from "@/components/home/RentalSearch";
