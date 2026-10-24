@@ -1,34 +1,33 @@
 import { ArrowUpRight, Car, Plane, Smartphone, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { servicePhoto } from "@/lib/data/servicePhotos";
+import { servicePhoto, airportRentalPhoto } from "@/lib/data/servicePhotos";
 import { corridorPartnerLinks } from "@/lib/affiliates/corridorPartners";
-import { airportRentalPhoto } from "@/lib/data/servicePhotos";
+import { BOOKING_STEPS } from "@/lib/affiliates/bookingSteps";
 
 export function CorridorBookings({ slug, airport, city }: { slug: string; airport: string; city: string }) {
   const links = corridorPartnerLinks(slug);
+  const step = (k: (typeof BOOKING_STEPS)[number]["key"]) => BOOKING_STEPS.findIndex((s) => s.key === k) + 1;
   const items = [
-    { key: "flight", icon: Plane, title: `Flights to ${city} · ${airport}`, brand: "Aviasales", detail: "Compare arrival dates before fixing your first night.", href: links.flight, photo: servicePhoto("flight", slug) },
-    { key: "motorhome", icon: Truck, title: "Take the loop by motorhome", brand: "Motorhome Republic", detail: "Compare professional fleets; check pickup hours and park vehicle limits.", href: links.motorhome, photo: servicePhoto("rv", slug) },
-    { key: "car", icon: Car, title: `Standard car rentals at ${airport}`, brand: "Airport Rentals", detail: `Choose ${airport} pickup, dates and the standard car class on the partner site.`, href: links.car, photo: airportRentalPhoto("car", slug) },
-    { key: "airport", icon: Car, title: `SUV rentals at ${airport}`, brand: "Airport Rentals", detail: "Select an SUV on the partner site; confirm live prices, pickup and rental terms there.", href: links.airportRentals, photo: airportRentalPhoto("suv", slug) },
-    { key: "esim", icon: Smartphone, title: "Mobile data for your U.S. trip", brand: "Airalo", detail: "Check phone compatibility and U.S. coverage. Download maps before entering the parks.", href: links.esim },
+    { key: "flight", step: step("flight"), icon: Plane, title: `Flights to ${airport}`, brand: "Aviasales", cta: `Find flights to ${airport}`, detail: "Compare arrival dates before fixing your first night.", href: links.flight, photo: servicePhoto("flight", slug) },
+    { key: "motorhome", step: step("vehicle"), icon: Truck, title: "Motorhome or campervan", brand: "Motorhome Republic", cta: `Compare RVs near ${airport}`, detail: "Professional fleets; check pickup hours and park vehicle limits.", href: links.motorhome, photo: servicePhoto("rv", slug) },
+    { key: "car", step: step("vehicle"), icon: Car, title: `Car or SUV at ${airport}`, brand: "Airport Rentals", cta: `Compare cars at ${airport}`, detail: `Choose ${airport} pickup, dates and a standard car or SUV; live prices on the partner site.`, href: links.car, photo: airportRentalPhoto("car", slug) },
+    { key: "esim", step: step("data"), icon: Smartphone, title: "Mobile data for the U.S.", brand: "Airalo", cta: "Get a U.S. eSIM", detail: "Check phone compatibility; download maps before entering the parks.", href: links.esim, photo: null },
   ];
   return <>
-    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {items.map((item) => <article key={item.key} className={`flex min-w-0 flex-col overflow-hidden rounded-lg border bg-card ${item.key === "motorhome" ? "border-primary" : "border-border"}`}>
         {item.photo ? <div className="relative aspect-[16/9] overflow-hidden bg-muted">
-          <img src={item.photo.url} alt={`${item.photo.subject} — illustrative, not rental inventory`} loading="lazy" className="h-full w-full object-cover" />
-          {item.key === "motorhome" && <span className="absolute left-3 top-3 rounded bg-primary px-2 py-1 text-xs font-semibold text-primary-foreground">RV & campervan choice</span>}
-        </div> : <div className="flex aspect-[16/9] items-center justify-center bg-sky/15"><Smartphone className="h-12 w-12 text-primary" /></div>}
+          <img src={item.photo.url} alt={`${item.photo.subject} — illustrative`} loading="lazy" className="h-full w-full object-cover" />
+          <a href={item.photo.source} target="_blank" rel="noopener noreferrer" title={`${item.photo.credit} · ${item.photo.license}`} aria-label={`Photo credit: ${item.photo.credit}, ${item.photo.license}`} className="absolute bottom-1.5 right-1.5 rounded bg-background/80 px-1.5 text-[10px] text-muted-foreground">©</a>
+        </div> : <div className="flex aspect-[16/9] items-center justify-center bg-muted"><item.icon className="h-12 w-12 text-primary" /></div>}
         <div className="flex flex-1 flex-col p-4">
-          <p className="text-[10px] uppercase text-muted-foreground">Partner link · {item.brand}</p>
+          <p className="flex items-center gap-2 text-[10px] uppercase text-muted-foreground"><span className="grid h-5 w-5 place-items-center rounded-full bg-primary text-[10px] font-bold text-primary-foreground">{item.step}</span>Step {item.step} · {item.brand}</p>
           <h3 className="mt-2 font-display text-base font-semibold text-foreground">{item.title}</h3>
           <p className="mb-5 mt-2 text-xs leading-relaxed text-muted-foreground">{item.detail}</p>
-          <Button asChild size="sm" className="mt-auto h-auto min-h-9 whitespace-normal rounded-lg py-2 text-center"><a href={item.href} target="_blank" rel="sponsored nofollow noopener noreferrer" onClick={(e) => { e.preventDefault(); window.open(item.href, "_blank", "noopener,noreferrer"); }}>Check {item.brand}<ArrowUpRight /></a></Button>
+          <Button asChild size="sm" className="mt-auto h-auto min-h-9 whitespace-normal rounded-lg py-2 text-center"><a href={item.href} target="_blank" rel="sponsored nofollow noopener noreferrer" onClick={(e) => { e.preventDefault(); window.open(item.href, "_blank", "noopener,noreferrer"); }}>{item.cta}<ArrowUpRight /></a></Button>
         </div>
-        {item.photo && <p className="border-t border-border px-4 py-2 text-[10px] text-muted-foreground">Illustrative · <a href={item.photo.source} target="_blank" rel="noopener noreferrer" className="underline">{item.photo.credit} · {item.photo.license}</a></p>}
       </article>)}
     </div>
-    <p className="mt-4 text-xs text-muted-foreground">We may earn a commission from partner links, at no extra cost to you. Select {city} on the provider’s site; prices and availability are confirmed there.</p>
+    <p className="mt-4 text-xs text-muted-foreground">Then step 4: browse tours below. Photos are illustrative. We may earn a commission from partner links, at no extra cost to you; prices and availability are confirmed on the provider's site ({city}).</p>
   </>;
 }
