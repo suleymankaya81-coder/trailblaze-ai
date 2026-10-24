@@ -9,26 +9,30 @@ import {
   getDestinationsList,
   TRIP_TAG_OPTIONS,
 } from "@/lib/data/destinations.functions";
+import { SEASONS, US_REGIONS } from "@/lib/data/usRegions";
 
 const SearchSchema = z.object({
   tag: z.string().optional(),
+  region: z.string().optional(),
+  season: z.string().optional(),
+  q: z.string().optional(),
   page: z.coerce.number().int().min(1).optional(),
 });
 
 export const Route = createFileRoute("/destinations/")({
   validateSearch: (search) => SearchSchema.parse(search),
-  loaderDeps: ({ search }) => ({ tag: search.tag, page: search.page ?? 1 }),
+  loaderDeps: ({ search }) => ({ tag: search.tag, region: search.region, season: search.season, q: search.q, page: search.page ?? 1 }),
   loader: async ({ deps }) => {
     const result = await getDestinationsList({
-      data: { tag: deps.tag, page: deps.page },
+      data: { tag: deps.tag, region: deps.region, season: deps.season, q: deps.q, page: deps.page },
     }).catch((err) => {
       console.error("[/destinations] getDestinationsList failed", err);
       return { destinations: [], total: 0 };
     });
-    return { ...result, tag: deps.tag ?? null, page: deps.page };
+    return { ...result, tag: deps.tag ?? null, region: deps.region ?? "", season: deps.season ?? "", q: deps.q ?? "", page: deps.page };
   },
   head: ({ loaderData }) => {
-    const isFiltered = Boolean(loaderData?.tag) || (loaderData?.page ?? 1) > 1;
+    const isFiltered = Boolean(loaderData?.tag || loaderData?.region || loaderData?.season || loaderData?.q) || (loaderData?.page ?? 1) > 1;
     return {
       meta: [
         { title: "All Destinations — Minialife" },
@@ -70,7 +74,8 @@ function paginationLinkClass(disabled: boolean) {
 }
 
 function DestinationsIndexPage() {
-  const { destinations, total, tag, page } = Route.useLoaderData();
+  const { destinations, total, tag, region, season, q, page } = Route.useLoaderData();
+  const keep = { tag: tag ?? undefined, region: region || undefined, season: season || undefined, q: q || undefined };
   const activeTag = TRIP_TAG_OPTIONS.find((t) => t.value === tag);
   const totalPages = Math.max(1, Math.ceil(total / DESTINATIONS_PAGE_SIZE));
 
@@ -101,6 +106,20 @@ function DestinationsIndexPage() {
           ))}
         </div>
 
+        <form method="get" action="/destinations" className="mt-6 grid gap-3 rounded-2xl border border-border bg-card p-4 shadow-soft sm:grid-cols-[1fr_auto_auto_auto]">
+          {tag && <input type="hidden" name="tag" value={tag} />}
+          <input name="q" defaultValue={q} placeholder="Search by name" aria-label="Search destinations by name" className="rounded-lg border border-border bg-background px-3 py-2 text-sm" />
+          <select name="region" defaultValue={region} aria-label="Region" className="rounded-lg border border-border bg-background px-3 py-2 text-sm">
+            <option value="">All regions</option>
+            {Object.entries(US_REGIONS).map(([k, r]) => <option key={k} value={k}>{r.label}</option>)}
+          </select>
+          <select name="season" defaultValue={season} aria-label="Best season" className="rounded-lg border border-border bg-background px-3 py-2 text-sm">
+            <option value="">Any season</option>
+            {SEASONS.map((s) => <option key={s} value={s}>{s[0].toUpperCase() + s.slice(1)}</option>)}
+          </select>
+          <button type="submit" className="rounded-lg bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground">Filter</button>
+        </form>
+
         {destinations.length === 0 ? (
           <p className="mt-12 text-sm text-muted-foreground">
             No destinations to show here.{" "}
@@ -124,7 +143,7 @@ function DestinationsIndexPage() {
               >
                 <Link
                   to="/destinations"
-                  search={{ tag: tag ?? undefined, page: Math.max(1, page - 1) }}
+                  search={{ ...keep, page: Math.max(1, page - 1) }}
                   aria-disabled={page <= 1}
                   className={paginationLinkClass(page <= 1)}
                 >
@@ -135,7 +154,7 @@ function DestinationsIndexPage() {
                 </span>
                 <Link
                   to="/destinations"
-                  search={{ tag: tag ?? undefined, page: Math.min(totalPages, page + 1) }}
+                  search={{ ...keep, page: Math.min(totalPages, page + 1) }}
                   aria-disabled={page >= totalPages}
                   className={paginationLinkClass(page >= totalPages)}
                 >

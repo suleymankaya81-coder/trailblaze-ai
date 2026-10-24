@@ -367,7 +367,7 @@ export const DESTINATIONS_PAGE_SIZE = 24;
 // HomepageDestination — both are "just enough to render a destination card."
 export const getDestinationsList = createServerFn({ method: "GET" })
   .inputValidator((input: unknown) =>
-    z.object({ tag: z.string().optional(), page: z.number().int().min(1).optional() }).parse(input),
+    z.object({ tag: z.string().optional(), region: z.string().optional(), season: z.string().optional(), q: z.string().max(80).optional(), page: z.number().int().min(1).optional() }).parse(input),
   )
   .handler(async ({ data }): Promise<{ destinations: HomepageDestination[]; total: number }> => {
     const page = data.page ?? 1;
@@ -383,6 +383,11 @@ export const getDestinationsList = createServerFn({ method: "GET" })
       .order("name", { ascending: true });
 
     if (data.tag) query = query.contains("trip_tags", [data.tag]);
+    const { US_REGIONS, isRegionKey, SEASONS } = await import("./usRegions");
+    if (isRegionKey(data.region)) query = query.in("state", [...US_REGIONS[data.region].states]);
+    if (data.season && (SEASONS as readonly string[]).includes(data.season)) query = query.contains("best_seasons", [data.season]);
+    const nameQ = data.q?.trim().replace(/[%_,()]/g, "");
+    if (nameQ) query = query.ilike("name", `%${nameQ}%`);
 
     const { data: rows, error, count } = await query.range(from, to);
 
