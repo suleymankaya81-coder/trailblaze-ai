@@ -15,12 +15,13 @@ export function ViatorPlaceBlock({ slug, name, className = "", anchored = true }
     measure();
   };
   useEffect(() => {
+    const timer = window.setInterval(measureFrame, 1000);
     const onMsg = (e: MessageEvent) => {
       if (e.origin !== window.location.origin || e.source !== frame.current?.contentWindow || e.data?.type !== "viator-place" || e.data.slug !== slug) return;
       setHeight(Number(e.data.height) || 0);
     };
     window.addEventListener("message", onMsg);
-    return () => { window.removeEventListener("message", onMsg); observer.current?.disconnect(); };
+    return () => { window.clearInterval(timer); window.removeEventListener("message", onMsg); observer.current?.disconnect(); };
   }, [slug]);
   return (
     <section id={anchored ? "trip-tours" : undefined} className={className} aria-label={`Tours near ${name}`}>
