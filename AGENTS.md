@@ -30,3 +30,4 @@
 
 - Partner-card photo credits use the shared PhotoCredit (©) component and button text comes from offerCtaLabel. Why: credits stay compact and CTAs consistent across card types.
 - Travel templates use TripSnapshot/TripQuickNav and shared section anchors; repeated card rows use travel-card-row on phones and grids on larger screens. Why: consistent navigation and card ergonomics without runtime content generation.
+- Load the Travelpayouts rewriting script only after hydration and place photo-credit links outside clickable card anchors. Why: prevent pre-hydration DOM mutations and invalid nested anchors.
