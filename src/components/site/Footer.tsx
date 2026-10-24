@@ -31,7 +31,13 @@ const groups = [
 
 export function Footer() {
   const [wide, setWide] = useState(true);
-  useEffect(() => { setWide(window.matchMedia("(min-width: 768px)").matches); }, []);
+  useEffect(() => {
+    const media = window.matchMedia("(min-width: 768px)");
+    const update = () => setWide(media.matches);
+    update();
+    media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, []);
   return (
     <footer className="border-t border-border bg-beige/50">
       <div className="container-page py-16">

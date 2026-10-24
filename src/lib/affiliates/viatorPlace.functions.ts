@@ -42,7 +42,7 @@ const DAY = 24 * 60 * 60 * 1000;
 /** Live Viator listings for one destination, cached 24h per place. */
 export const getPlaceExperiences = createServerFn({ method: "GET" })
   .inputValidator((d: unknown) => z.object({ slug: z.string().regex(/^[a-z0-9-]{1,80}$/) }).parse(d))
-  .handler(async ({ data }): Promise<{ name: string; items: PlaceExperience[] }> => {
+  .handler(async ({ data }): Promise<{ name: string; items: PlaceExperience[]; unavailable?: boolean }> => {
     const { data: dest } = await supabase.from("destinations").select("name, state").eq("slug", data.slug).eq("status", "published").maybeSingle();
     if (!dest) return { name: "", items: [] };
     const { data: cached } = await supabase.from("viator_place_cache").select("items, fetched_at").eq("slug", data.slug).maybeSingle();
@@ -50,7 +50,7 @@ export const getPlaceExperiences = createServerFn({ method: "GET" })
     if (cached && Date.now() - new Date(cached.fetched_at).getTime() < DAY) return { name: dest.name, items: cachedItems };
 
     const key = process.env["VIATOR_API_KEY"];
-    if (!key) return { name: dest.name, items: cachedItems };
+    if (!key) return { name: dest.name, items: cachedItems, unavailable: cachedItems.length === 0 };
     let items: PlaceExperience[] = [];
     try {
       const res = await fetch("https://api.viator.com/partner/search/freetext", {
@@ -61,7 +61,7 @@ export const getPlaceExperiences = createServerFn({ method: "GET" })
       });
       if (!res.ok) {
         console.error(`[Viator place] ${res.status}`);
-        return { name: dest.name, items: cachedItems };
+        return { name: dest.name, items: cachedItems, unavailable: cachedItems.length === 0 };
       }
       const body = (await res.json()) as { products?: { results?: Product[] } };
       for (const p of body.products?.results ?? []) {
@@ -76,7 +76,7 @@ export const getPlaceExperiences = createServerFn({ method: "GET" })
       }
     } catch (e) {
       console.error("[Viator place] failed", e instanceof Error ? e.message : e);
-      return { name: dest.name, items: cachedItems };
+      return { name: dest.name, items: cachedItems, unavailable: cachedItems.length === 0 };
     }
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     await supabaseAdmin.from("viator_place_cache").upsert({ slug: data.slug, items, fetched_at: new Date().toISOString() });

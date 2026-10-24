@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Mail, MessageSquare } from "lucide-react";
 import { useState } from "react";
 
 import { Footer } from "@/components/site/Footer";
@@ -8,6 +7,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { Thumb } from "@/components/ui-kit";
+import planImage from "@/assets/thumbs/plan.jpg";
+import roadImage from "@/assets/thumbs/road.jpg";
 
 const CONTACT_EMAIL = "hello@minialife.com";
 
@@ -43,7 +45,7 @@ function ContactPage() {
   })();
 
   return (
-    <div className="bg-beige/30">
+    <div className="bg-background">
       <Header />
 
       <main className="container-page py-12">
@@ -51,7 +53,7 @@ function ContactPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sage-deep">
             Get in touch
           </p>
-          <h1 className="mt-3 font-display text-4xl text-foreground md:text-5xl">Contact</h1>
+          <h1 className="mt-3 font-display text-[34px] leading-tight text-foreground md:text-[56px]">Contact</h1>
           <p className="mt-4 text-base text-muted-foreground">
             Found a broken link, a listing that's out of date, or a destination you'd like to see
             covered? We read everything that comes in.
@@ -62,16 +64,16 @@ function ContactPage() {
           <div className="space-y-4">
             <a
               href={`mailto:${CONTACT_EMAIL}`}
-              className="flex items-start gap-3 rounded-2xl border border-border bg-card p-6 shadow-soft transition hover:border-forest/40"
+              className="flex items-start gap-3 border-b border-border py-6 transition hover:opacity-80"
             >
-              <Mail className="mt-0.5 h-5 w-5 text-forest" />
+              <Thumb src={planImage} size={48} />
               <div>
                 <p className="text-sm font-semibold text-foreground">Email us</p>
                 <p className="mt-1 text-sm text-muted-foreground">{CONTACT_EMAIL}</p>
               </div>
             </a>
-            <div className="flex items-start gap-3 rounded-2xl border border-border bg-card p-6 shadow-soft">
-              <MessageSquare className="mt-0.5 h-5 w-5 text-forest" />
+            <div className="flex items-start gap-3 py-6">
+              <Thumb src={roadImage} size={48} />
               <div>
                 <p className="text-sm font-semibold text-foreground">Response time</p>
                 <p className="mt-1 text-sm text-muted-foreground">
@@ -90,7 +92,7 @@ function ContactPage() {
               e.preventDefault();
               window.location.href = mailtoHref;
             }}
-            className="rounded-2xl border border-border bg-card p-6 shadow-soft md:p-8"
+            className="rounded-lg border border-border bg-card p-6 md:p-8"
           >
             <p className="text-sm text-muted-foreground">
               Fill this out and it'll open a pre-filled email in your mail app — Minialife doesn't
@@ -127,7 +129,7 @@ function ContactPage() {
                 />
               </div>
             </div>
-            <Button type="submit" className="mt-6 w-full">
+            <Button type="submit" className="mt-6 min-h-12 w-full">
               Open email to send
             </Button>
           </form>

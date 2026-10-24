@@ -1,21 +1,20 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Compass, MapPin, Sparkles, Tent } from "lucide-react";
+import { StaticPageLayout } from "@/components/site/StaticPageLayout";
+import { Thumb } from "@/components/ui-kit";
+import { Button } from "@/components/ui/button";
+import mapImage from "@/assets/thumbs/map.jpg";
+import planImage from "@/assets/thumbs/plan.jpg";
+import carImage from "@/assets/thumbs/car.jpg";
 
-import { Footer } from "@/components/site/Footer";
-import { Header } from "@/components/site/Header";
-
+const description = "MiniaLife publishes free U.S. outdoor travel guides and self-drive itineraries. Plan a route, check arrival and entry notes, then book with travel partners.";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Minialife" },
-      {
-        name: "description",
-        content:
-          "Minialife is a destination-first outdoor travel guide — where to stay, what to rent, what to do, and what to pack, in one place.",
-      },
+      { title: "About MiniaLife — Outdoor Travel & Road Trip Guides" },
+      { name: "description", content: description },
+      { property: "og:title", content: "About MiniaLife — Outdoor Travel & Road Trip Guides" },
+      { property: "og:description", content: description },
       { property: "og:url", content: "https://minialife.com/about" },
-      { property: "og:title", content: "About — Minialife" },
-      { property: "og:description", content: "Minialife brings outdoor destinations, stays, rentals, activities and packing together in one travel guide." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
@@ -23,114 +22,44 @@ export const Route = createFileRoute("/about")({
   }),
   component: AboutPage,
 });
-
-const pillars = [
-  {
-    icon: Compass,
-    title: "One destination, one plan",
-    body: "Pick a park or a trip idea and get a complete guide back — stays, rentals, activities, packing, and budget — instead of twenty browser tabs.",
-  },
-  {
-    icon: Tent,
-    title: "Curated, not exhaustive",
-    body: "We'd rather show you four stays worth booking than forty you have to sort through. Every listing is chosen for fit — location, season, and trip type — not just for being available.",
-  },
-  {
-    icon: MapPin,
-    title: "Built for the outdoors",
-    body: "Camping, glamping, RV and campervan travel, cabins, tiny houses, and national park road trips. If it involves a tent, a trailhead, or a trunk full of gear, it's in scope.",
-  },
-  {
-    icon: Sparkles,
-    title: "AI where it earns its keep",
-    body: "AI fills in the details that change fast — weather patterns, crowd levels, packing lists — on top of a destination template we research and fact-check ourselves. It never invents the core facts.",
-  },
+const steps = [
+  { image: mapImage, title: "Choose a park or route", text: "Start with an outdoor destination, a multi-park loop or a road trip from your arrival airport." },
+  { image: planImage, title: "Bring the plan together", text: "See suggested days, route maps, airport drives, reservation notes and places to stay." },
+  { image: carImage, title: "Book with the partner", text: "Compare your options, then confirm dates, meeting points, final prices and terms on the provider’s site." },
 ];
-
 function AboutPage() {
-  return (
-    <div className="bg-beige/30">
-      <Header />
-
-      <main className="container-page py-12">
-        <div className="max-w-2xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sage-deep">
-            About Minialife
-          </p>
-          <h1 className="mt-3 font-display text-4xl text-foreground md:text-5xl">
-            A trip guide for people who'd rather be outside.
-          </h1>
-          <p className="mt-5 text-base text-muted-foreground">
-            Minialife is a destination-planning site for camping, glamping, RV travel, cabins, and
-            national parks across the United States. Tell us where you want to go — or what kind
-            of trip you're after — and we put together where to stay, what to rent, what to do,
-            and what to pack, all in one page.
-          </p>
-        </div>
-
-        <div className="mt-12 grid gap-4 sm:grid-cols-2">
-          {pillars.map((p) => (
-            <div key={p.title} className="rounded-2xl border border-border bg-card p-6 shadow-soft">
-              <p.icon className="h-5 w-5 text-forest" />
-              <h2 className="mt-3 font-display text-lg text-foreground">{p.title}</h2>
-              <p className="mt-2 text-sm text-muted-foreground">{p.body}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-10 max-w-2xl rounded-2xl border border-border bg-card p-6 shadow-soft md:p-10">
-          <div className="space-y-6 text-sm leading-relaxed text-foreground/80">
-            <section>
-              <h2 className="mb-2 font-display text-xl text-foreground">Who this is for</h2>
-              <p>
-                First-time campers who want a plan instead of a spreadsheet, RV travelers stringing
-                together a multi-park route, and anyone who's decided "we should do a national
-                park trip this year" and needs somewhere to start. If you're picking between a
-                tent, a rental RV, and a cabin for the same weekend, Minialife is built for that
-                exact decision.
-              </p>
-            </section>
-            <section>
-              <h2 className="mb-2 font-display text-xl text-foreground">What we don't do</h2>
-              <p>
-                We don't process bookings or payments — every "Check availability," "Reserve," or
-                "Buy" button sends you to the actual campground, rental marketplace, or retailer to
-                finish there. We also don't accept payment to rank a listing higher; see our{" "}
-                <Link to="/affiliate-disclosure" className="text-forest underline underline-offset-2">
-                  Affiliate Disclosure
-                </Link>{" "}
-                for how the site makes money.
-              </p>
-            </section>
-            <section>
-              <h2 className="mb-2 font-display text-xl text-foreground">Who publishes Minialife</h2>
-              <p>
-                Minialife is an independent outdoor-travel publisher founded and edited by
-                Süleyman Kaya, who oversees every destination guide and is responsible for the
-                content on this site. Editorial questions, corrections,
-                and partner or affiliate-network enquiries all reach us at{" "}
-                <a href="mailto:hello@minialife.com" className="text-forest underline underline-offset-2">
-                  hello@minialife.com
-                </a>
-                ; we reply within a few business days.
-              </p>
-            </section>
-            <section>
-              <h2 className="mb-2 font-display text-xl text-foreground">Get in touch</h2>
-              <p>
-                Found a broken link, a wrong detail, or have a destination you'd like to see
-                covered? We'd like to hear it —{" "}
-                <Link to="/contact" className="text-forest underline underline-offset-2">
-                  contact us
-                </Link>
-                .
-              </p>
-            </section>
-          </div>
-        </div>
-      </main>
-
-      <Footer />
-    </div>
-  );
+  return <StaticPageLayout eyebrow="About MiniaLife" title="Outdoor travel, one route at a time." lede="Free U.S. outdoor travel guides and self-drive itineraries — for people who would rather be outside.">
+    <section>
+      <h2>Your place, your pace</h2>
+      <p>MiniaLife brings national parks, scenic towns and road-trip stops into one planning experience. Use our day-by-day suggestions, maps and arrival guidance to shape your own trip, whether you travel by car, campervan or RV.</p>
+      <p>We are an independent travel publisher, not a tour operator or booking agency. Our guides are free to use; bookings and purchases happen on our partners’ sites.</p>
+      <Button asChild className="mt-6 min-h-12"><Link to="/destinations">Find your destination</Link></Button>
+    </section>
+    <section>
+      <h2>How it works</h2>
+      <ol className="mt-6 space-y-6">
+        {steps.map((step, index) => <li key={step.title} className="flex gap-4 border-b border-border pb-6">
+          <Thumb src={step.image} size={72} />
+          <div><p className="text-xs font-semibold text-sage-deep">Step {index + 1}</p><h3 className="mt-1 text-xl text-foreground">{step.title}</h3><p className="mt-2 text-sm">{step.text}</p></div>
+        </li>)}
+      </ol>
+    </section>
+    <section>
+      <h2>Independent guidance, clear limits</h2>
+      <p>Our itineraries are suggestions, not packaged tours. Some planning content is assisted by AI and reviewed through our editorial process; this does not mean every statement or map marker has been independently verified. Park access, road conditions, seasonal services and partner prices can change. Check official sources and the provider before you travel.</p>
+      <p>Service photographs may illustrate a type of stay or vehicle rather than bookable inventory. Rental and stay price anchors are labelled estimates. Actual tour listings, photos, prices and ratings come from Viator and are confirmed on Viator.</p>
+    </section>
+    <section>
+      <h2>Curated Trip Essentials</h2>
+      <p>Optional equipment suggestions support the route and its activities. They are not a complete packing or safety list, and MiniaLife does not operate a retail store.</p>
+    </section>
+    <section>
+      <h2>How the site stays free</h2>
+      <p>We may earn a commission when you book or buy through partner links, at no extra cost to you. Read our <Link to="/affiliate-disclosure">Affiliate Disclosure</Link> for the details.</p>
+    </section>
+    <section>
+      <h2>Who publishes MiniaLife</h2>
+      <p>MiniaLife is an independent outdoor-travel publisher founded and edited by Süleyman Kaya. For editorial questions, corrections or partnership enquiries, <Link to="/contact">contact us</Link>.</p>
+    </section>
+  </StaticPageLayout>;
 }

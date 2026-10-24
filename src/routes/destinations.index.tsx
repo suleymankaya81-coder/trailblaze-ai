@@ -52,6 +52,7 @@ export const Route = createFileRoute("/destinations/")({
         },
         { property: "og:type", content: "website" },
         { name: "twitter:card", content: "summary" },
+        ...(loaderData?.destinations[0]?.heroImage?.startsWith("https://") ? [{ property: "og:image", content: loaderData.destinations[0].heroImage }, { name: "twitter:image", content: loaderData.destinations[0].heroImage }] : []),
         // Filtered and paginated variants are duplicates of the main list.
         ...(isFiltered ? [{ name: "robots", content: "noindex, follow" }] : []),
         { property: "og:url", content: "https://minialife.com/destinations" },
@@ -64,7 +65,7 @@ export const Route = createFileRoute("/destinations/")({
 
 function pageLinkClass(active: boolean) {
   return (
-    "inline-flex min-h-11 shrink-0 items-center rounded-full px-4 text-sm font-semibold transition " +
+    "inline-flex min-h-12 shrink-0 items-center rounded-full px-4 text-sm font-semibold transition " +
     (active ? "bg-primary text-primary-foreground" : "border border-border bg-card text-foreground hover:border-primary")
   );
 }

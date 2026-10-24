@@ -5,11 +5,12 @@ import type { ReactNode } from "react";
 import type { Faq } from "@/lib/seo/flyDrive";
 import { PlaceCard, Thumb } from "@/components/ui-kit";
 import planImg from "@/assets/thumbs/plan.jpg";
+import { SafeImage } from "@/components/shared/SafeImage";
 
 export function GuideHero({ image, kicker, title, crumbs, children }: { image: string; kicker: string; title: string; crumbs: ReactNode; children?: ReactNode }) {
   return (
     <section className="relative isolate overflow-hidden">
-      {image && <img src={image} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />}
+      {image && <SafeImage src={image} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />}
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink/85 via-ink/45 to-ink/20" />
       <div className="container-page py-12 md:py-20">
         <nav className="mb-6 text-xs text-off-white/80">{crumbs}</nav>

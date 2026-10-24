@@ -13,7 +13,7 @@ import { US_REGIONS, type UsRegionKey } from "@/lib/data/usRegions";
 import { FilterPanel } from "@/components/site/FilterPanel";
 import { Button } from "@/components/ui/button";
 
-const PAGE = 48;
+const PAGE = 24;
 const regionOf = (state: string) => (Object.keys(US_REGIONS) as UsRegionKey[]).find((k) => (US_REGIONS[k].states as readonly string[]).includes(state));
 
 export function GuideHub({ family, kicker, title, intro, entries }: { family: HubFamily; kicker: string; title: string; intro: string; entries: HubEntry[] }) {

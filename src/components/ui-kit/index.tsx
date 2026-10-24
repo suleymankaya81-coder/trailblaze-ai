@@ -2,6 +2,7 @@ import { useRef, useState, type ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { SafeImage } from "@/components/shared/SafeImage";
 
 /** Section heading: small kicker, serif title, optional right-side link. */
 export function SectionHead({ kicker, title, intro, action }: { kicker: string; title: string; intro?: string; action?: ReactNode }) {
@@ -27,7 +28,7 @@ export function SectionLink({ to, children }: { to: string; children: ReactNode 
 
 /** Small photo used in place of an icon. */
 export function Thumb({ src, alt = "", size = 72, className }: { src: string; alt?: string; size?: number; className?: string }) {
-  return <img src={src} alt={alt} width={size} height={size} loading="lazy" style={{ width: size, height: size }} className={cn("shrink-0 rounded-[10px] object-cover", className)} />;
+  return <SafeImage src={src} alt={alt} width={size} height={size} loading="lazy" style={{ width: size, height: size }} className={cn("shrink-0 rounded-[10px] object-cover", className)} />;
 }
 
 export function Pill({ children, tone = "light" }: { children: ReactNode; tone?: "light" | "mustard" | "warn" | "dark" }) {
@@ -45,7 +46,7 @@ export function CategoryTile({ to, image, label, detail }: { to: string; image: 
   return (
     <Link to={to} className="group flex min-h-12 flex-col items-center text-center">
       <span className="block aspect-square w-full overflow-hidden rounded-[10px] bg-thumb p-2">
-        <img src={image} alt="" loading="lazy" className="h-full w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-105" />
+        <SafeImage src={image} alt="" loading="lazy" className="h-full w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-105" />
       </span>
       <span className="mt-3 text-sm font-semibold text-foreground group-hover:underline">{label}</span>
       {detail && <span className="mt-0.5 text-xs text-muted-foreground">{detail}</span>}
@@ -60,7 +61,7 @@ export function PlaceCard({ to, params, image, alt, badges = [], title, summary,
   return (
     <Link to={to} params={params as never} className="group flex h-full flex-col overflow-hidden rounded-xl border border-border bg-card transition hover:shadow-soft">
       <div className={cn("relative overflow-hidden", large ? "aspect-[4/3] md:aspect-auto md:min-h-[320px] md:flex-1" : "aspect-[4/3]")}>
-        <img src={image} alt={alt} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+        <SafeImage src={image} alt={alt} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
         {badges.length > 0 && <div className="absolute left-3 top-3 flex flex-wrap gap-1.5">{badges.slice(0, 3).map((b) => <Pill key={b}>{b}</Pill>)}</div>}
       </div>
       <div className={cn("flex flex-col p-4 md:p-5", !large && "flex-1")}>
@@ -79,7 +80,7 @@ export function PlaceCard({ to, params, image, alt, badges = [], title, summary,
 export function EditorialCard({ to, image, title, summary, action }: { to: string; image: string; title: string; summary: string; action: string }) {
   return (
     <Link to={to} className="group flex h-full flex-col overflow-hidden rounded-xl bg-forest text-off-white">
-      <div className="aspect-video overflow-hidden"><img src={image} alt="" loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" /></div>
+      <div className="aspect-video overflow-hidden"><SafeImage src={image} alt="" loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" /></div>
       <div className="flex flex-1 flex-col p-5">
         <h3 className="text-xl leading-snug">{title}</h3>
         <p className="mt-2 line-clamp-2 flex-1 text-sm leading-relaxed text-off-white/80">{summary}</p>
@@ -93,7 +94,7 @@ export function EditorialCard({ to, image, title, summary, action }: { to: strin
 export function SplitBand({ image, imageAlt = "", children, reverse = false }: { image?: string; imageAlt?: string; children: ReactNode; reverse?: boolean }) {
   return (
     <div className={cn("grid overflow-hidden rounded-xl border border-border bg-card md:grid-cols-2", reverse && "md:[&>*:first-child]:order-2")}>
-      {image && <img src={image} alt={imageAlt} loading="lazy" className="aspect-[16/10] h-full w-full object-cover md:aspect-auto" />}
+      {image && <SafeImage src={image} alt={imageAlt} loading="lazy" className="aspect-[16/10] h-full w-full object-cover md:aspect-auto" />}
       <div className="p-6 md:p-10">{children}</div>
     </div>
   );
