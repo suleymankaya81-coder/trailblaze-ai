@@ -1,9 +1,9 @@
 ## October 24 REI-inspired site-wide presentation (in order)
-- [ ] 1. Homepage: explain MiniaLife, add three-step How it works band and five clear discovery entries immediately after the cover.
-- [ ] 2. Card standards: 4:3 destination/route photos, square gear photos, data-backed facts, honest prices, consistent action hierarchy and compact credits; preserve Gear Shop design.
-- [ ] 3. Travel pages: shared Trip Snapshot/quick navigation across destination, Fly & Drive, RV, no-reservation, loops, gateways and search guides; flight → vehicle → stay → tours → gear booking sequence, without invented vehicle/permit claims.
-- [ ] 4. Phone experience: 85%-width swipe rows, 48px touch controls and compact destination/hub filter dialogs.
-- [ ] 5. Verify representative page families, navigation, filters, swipe interaction, partner links, metadata and desktop/phone layout. Do not publish without request.
+- [x] 1. Homepage: explain MiniaLife, add three-step How it works band and five clear discovery entries immediately after the cover.
+- [x] 2. Card standards: 4:3 destination/route photos, square gear photos, data-backed facts, honest prices, consistent action hierarchy and compact credits; preserve Gear Shop design.
+- [x] 3. Travel pages: shared Trip Snapshot/quick navigation across destination, Fly & Drive, RV, no-reservation, loops, gateways and search guides; flight → vehicle → stay → tours → gear booking sequence, without invented vehicle/permit claims.
+- [x] 4. Phone experience: 85%-width swipe rows, 48px touch controls and compact destination/hub filter dialogs.
+- [x] 5. Verified seven representative travel families on desktop/phone, all four quick-nav anchors, four loaded gear images and swipe movement, homepage → airport routes navigation and destination search filter; 44 tests passed. Head metadata audited; provider quote forms remain externally blocked as recorded below. No publishing performed.
 
 ## October 24 contextual trip essentials
 - [x] Select real approved-partner ROCKBROS products and match exactly four distinct items to destination/route context; bike-only repair/mounting equipment is restricted to cycling trips. Prices and stock are recorded feed values, not live guarantees.

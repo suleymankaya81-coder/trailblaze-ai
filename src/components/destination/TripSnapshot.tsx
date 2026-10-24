@@ -16,6 +16,6 @@ export function TripSnapshot({ trip, airport, days, stops }: { trip?: Trip; airp
     <div className="container-page py-6"><p className="mb-4 text-xs font-semibold uppercase text-sage-deep">Trip snapshot</p><dl className="grid grid-cols-2 gap-5 lg:grid-cols-5">{facts.map(f => <div key={f.label} className="min-w-0"><dt className="flex items-center gap-2 text-xs text-muted-foreground"><f.icon className="h-4 w-4 shrink-0" />{f.label}</dt><dd className="mt-2 text-sm font-semibold leading-relaxed">{f.value}</dd></div>)}</dl></div>
   </section>;
 }
-export function TripQuickNav() {
-  return <nav aria-label="Trip quick navigation" className="trip-quick-nav sticky top-20 z-30 md:top-24"><div className="container-page flex gap-2 overflow-x-auto py-2">{[{ id: 'trip-plan', label: 'Plan & route' }, { id: 'trip-booking', label: 'Flights, vehicles & stays' }, { id: 'trip-tours', label: 'Tours' }, { id: 'trip-gear', label: 'Trip essentials' }].map(l => <Button key={l.id} asChild variant="ghost" className="h-12 shrink-0"><a href={`#${l.id}`}>{l.label}</a></Button>)}</div></nav>;
+export function TripQuickNav({ booking = true }: { booking?: boolean }) {
+  return <nav aria-label="Trip quick navigation" className="trip-quick-nav sticky top-20 z-30 md:top-24"><div className="container-page flex gap-2 overflow-x-auto py-2">{[{ id: 'trip-plan', label: 'Plan & route' }, ...(booking ? [{ id: 'trip-booking', label: 'Flights, vehicles & stays' }] : []), { id: 'trip-tours', label: 'Tours' }, { id: 'trip-gear', label: 'Trip essentials' }].map(l => <Button key={l.id} asChild variant="ghost" className="h-12 shrink-0"><a href={`#${l.id}`}>{l.label}</a></Button>)}</div></nav>;
 }

@@ -68,7 +68,7 @@ function Page() {
           <HeroChip icon={<MapPin className="h-4 w-4" />}>{stops.length} stops</HeroChip>
           <HeroChip icon={<CalendarDays className="h-4 w-4" />}>About {totalDays} days</HeroChip>
         </GuideHero>
-        <TripSnapshot airport={gateway?.code} days={`About ${totalDays} days`} stops={stops.length} /><TripQuickNav />
+        <TripSnapshot airport={gateway?.code} days={`About ${totalDays} days`} stops={stops.length} /><TripQuickNav booking={!!gateway} />
         <div id="trip-plan" />
 
         <GuideSection title="The loop" intro={loop.intro}>
