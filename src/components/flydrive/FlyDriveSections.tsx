@@ -152,7 +152,7 @@ export function ArrivalPlan({ dest }: { dest: DestinationView }) {
           n={2}
           icon={<Car className="h-5 w-5" />}
           title={`SUV at ${dest.airportCode}`}
-          body={`Select an SUV, pickup location and dates on Airport Rentals. Confirm prices and availability there. ${estimatedFrom("suv")} · typical rate.`
+          body={`Select an SUV, pickup location and dates on Airport Rentals. Confirm prices and availability there. ${estimatedFrom("suv")} · typical rate.`}
           href={airportRentalsLink()}
           cta="Compare SUVs"
           brand="Airport Rentals"
