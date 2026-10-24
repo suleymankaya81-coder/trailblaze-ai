@@ -17,6 +17,7 @@ import mapImg from "@/assets/thumbs/map.jpg";
 import carImg from "@/assets/thumbs/car.jpg";
 import roadImg from "@/assets/thumbs/road.jpg";
 import flightImg from "@/assets/thumbs/flight.jpg";
+import heroAsset from "@/assets/home/home-hero-trollstigen.jpg.asset.json";
 import rvImg from "@/assets/thumbs/rv.jpg";
 import {
   getHomepageDestinations,
@@ -190,28 +191,34 @@ function HomePage() {
 function HomeHero() {
   return (
     <section className="relative overflow-hidden">
-      <div className="relative flex min-h-[520px] w-full items-end md:min-h-[620px]">
+      <div className="relative flex min-h-[560px] w-full items-end md:min-h-[78vh]">
         <img
-          src={img("photo-1506905925346-21bda4d32df4", 2000)}
-          alt="Alpine valley at golden hour"
+          src={heroAsset.url}
+          alt="Trollstigen mountain road winding through a Norwegian valley"
           className="absolute inset-0 h-full w-full object-cover"
+          fetchPriority="high"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/40 to-ink/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-ink/10" />
 
         <div className="container-page relative z-10 w-full pb-14 text-off-white md:pb-20">
           <p className="text-xs font-bold uppercase tracking-[0.22em] text-off-white/75">
             MiniaLife · Outdoor Travel & Road Trips
           </p>
-          <h1 className="mt-3 max-w-3xl font-display text-[34px] leading-[1.05] md:text-[56px]">
-            Your U.S. road trip, planned in one place.
+          <h1 className="mt-3 max-w-4xl font-display uppercase leading-[1.05] tracking-[0.01em] text-[34px] md:text-[64px]">
+            Plan the drive.<br />We did the rest.
           </h1>
-          <p className="mt-4 max-w-2xl text-base text-off-white/90">Free self-drive itineraries, national park loops and arrival plans — for visitors flying in and travelers already on the road.</p>
+          <p className="mt-4 max-w-2xl text-base text-off-white/90">Free day-by-day road trip itineraries, route maps and booking links — everything in one place.</p>
 
-          <div className="mt-8 max-w-2xl">
-            <SearchBar size="lg" />
+          <div className="mt-8">
+            <Link
+              to="/destinations"
+              className="inline-flex items-center justify-center rounded-sm bg-off-white px-8 py-3.5 text-sm font-semibold text-ink hover:bg-off-white/90"
+            >
+              Start planning
+            </Link>
           </div>
 
-          <div className="mt-5 flex items-center gap-4 text-sm">
+          <div className="mt-6 flex items-center gap-4 text-sm">
             <Link
               to="/corridors"
               className="font-medium text-off-white/80 hover:text-off-white hover:underline"
@@ -227,6 +234,15 @@ function HomeHero() {
             </Link>
           </div>
         </div>
+
+        <PhotoCredit
+          photo={{
+            source: "https://commons.wikimedia.org/wiki/File:Trollstigen_HochPanno.jpg",
+            credit: "Stefan Krause",
+            license: "CC BY-SA 3.0 · via Wikimedia Commons",
+          }}
+          className="absolute bottom-2 right-2"
+        />
       </div>
     </section>
   );
