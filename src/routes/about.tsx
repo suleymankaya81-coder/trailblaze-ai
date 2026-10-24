@@ -59,7 +59,7 @@ function AboutPage() {
     </section>
     <section>
       <h2>Who publishes MiniaLife</h2>
-      <p>MiniaLife is an independent outdoor-travel publisher founded and edited by Süleyman Kaya. For editorial questions, corrections or partnership enquiries, <Link to="/contact">contact us</Link>.</p>
+      <p>MiniaLife is an independent outdoor-travel publisher. For editorial questions, corrections or partnership enquiries, <Link to="/contact">contact us</Link>.</p>
     </section>
   </StaticPageLayout>;
 }

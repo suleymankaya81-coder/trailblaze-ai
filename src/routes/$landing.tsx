@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { SafeImage } from "@/components/shared/SafeImage";
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
-import { commonsFilePage } from "@/lib/seo/imageCredit";
+import { commonsFilePage, parsePhotoCredit } from "@/lib/seo/imageCredit";
 import { Thumb, SwipeRow } from "@/components/ui-kit";
 import planImg from "@/assets/thumbs/plan.jpg";
 import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
@@ -153,18 +153,19 @@ function LandingPage() {
   const label = LANDING_TYPE_LABEL[page.pageType] ?? "Guide";
   const coverImage = landingCoverAssets[page.path] ?? page.coverImage ?? destination.heroImage;
   const usesDestinationPhoto = !landingCoverAssets[page.path] && !page.coverImage;
+  const destinationCredit = parsePhotoCredit(destination.photoCredit).hero;
   const photoCredit = usesDestinationPhoto
-    ? destination.photoCredit?.split(" · Gallery:")[0]?.replace(/^Hero:\s*/, "")
+    ? destinationCredit?.creator
     : page.coverPhotoCredit;
-  const photoSource = usesDestinationPhoto ? destination.heroImage : page.coverPhotoSource;
-  const photoLicense = usesDestinationPhoto ? null : page.coverPhotoLicense;
+  const photoSource = usesDestinationPhoto ? destinationCredit?.sourceUrl ?? destination.heroImage : page.coverPhotoSource;
+  const photoLicense = usesDestinationPhoto ? destinationCredit?.license : page.coverPhotoLicense;
 
   return (
     <div className="bg-beige/40">
       <Header />
       <section className={`relative ${coverImage ? "min-h-[340px] md:min-h-[420px]" : "bg-forest py-16 md:py-20"}`}>
         {coverImage && (
-          <SafeImage src={coverImage} alt={`${destination.name} landscape`} className="absolute inset-0 h-full w-full object-cover" />
+          <SafeImage src={coverImage} alt={`${destination.name} landscape`} className={`absolute inset-0 h-full w-full object-cover ${usesDestinationPhoto && destination.slug === "sarasota" ? "object-bottom" : ""}`} />
         )}
         {coverImage && <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-transparent" />}
         <div className={`container-page relative ${coverImage ? "flex min-h-[340px] flex-col justify-end pb-8 md:min-h-[420px]" : ""}`}>

@@ -120,7 +120,7 @@ def fetch(src):
     with lock:
         if not os.path.exists(path):
             for attempt in range(4):
-                r = requests.get(src, headers={"User-Agent": "MiniaLifePinRenderer/1.0 (https://minialife.com; hello@minialife.com)"}, timeout=60)
+                r = requests.get(src, headers={"User-Agent": "MiniaLifePinRenderer/1.0 (https://minialife.com; info@minialife.com)"}, timeout=60)
                 if r.status_code not in (429, 502, 503, 504) or attempt == 3:
                     break
                 time.sleep(2 ** (attempt + 1))
@@ -130,7 +130,7 @@ def fetch(src):
             # A thumbnail may conceal a sufficiently detailed original.
             if s > 1.6 and "/commons/thumb/" in src:
                 original = src.replace("thumb.wikimedia.org", "upload.wikimedia.org").replace("/commons/thumb/", "/commons/").rsplit("/", 1)[0]
-                full = requests.get(original, headers={"User-Agent": "MiniaLifePinRenderer/1.0 (https://minialife.com; hello@minialife.com)"}, timeout=60)
+                full = requests.get(original, headers={"User-Agent": "MiniaLifePinRenderer/1.0 (https://minialife.com; info@minialife.com)"}, timeout=60)
                 if full.ok:
                     im = Image.open(io.BytesIO(full.content)).convert("RGB")
                     s = max(W / im.width, H / im.height)

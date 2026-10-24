@@ -239,7 +239,7 @@ function DestinationPage() {
 function Hero({ dest }: { dest: DestinationView }) {
   const [region, sub] = dest.region.split(",").map((s) => s.trim());
   const credit = parsePhotoCredit(dest.photoCredit).hero;
-  const source = commonsFilePage(dest.heroImage);
+  const source = credit?.sourceUrl ?? commonsFilePage(dest.heroImage);
 
   const stats: { label: string; value: string }[] = [];
   if (dest.bestSeason) stats.push({ label: "Best time", value: dest.bestSeason });
@@ -256,7 +256,7 @@ function Hero({ dest }: { dest: DestinationView }) {
       <SafeImage
         src={dest.heroImage}
         alt={dest.name}
-        className="absolute inset-0 h-full w-full object-cover"
+        className={`absolute inset-0 h-full w-full object-cover ${dest.slug === "sarasota" ? "object-bottom" : ""}`}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/60 to-ink/20" />
       {credit && source && <PhotoCredit photo={{ source, credit: credit.creator, license: credit.license }} />}

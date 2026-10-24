@@ -5,9 +5,9 @@ function imageObject(url: string, caption: string, credit: ImageCredit | null): 
   const obj: Record<string, unknown> = { "@type": "ImageObject", contentUrl: url, url, caption, name: caption };
   if (credit) {
     obj.creator = { "@type": "Person", name: credit.creator };
-    obj.creditText = `${credit.creator} / ${credit.license} via Wikimedia Commons`;
+    obj.creditText = `${credit.creator} / ${credit.license} via ${credit.source ?? "Wikimedia Commons"}`;
     if (credit.licenseUrl) obj.license = credit.licenseUrl;
-    const page = commonsFilePage(url);
+    const page = credit.sourceUrl ?? commonsFilePage(url);
     if (page) obj.acquireLicensePage = page;
   }
   return obj;
