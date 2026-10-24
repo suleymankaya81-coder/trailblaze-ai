@@ -239,7 +239,7 @@ function DestinationPage() {
 function Hero({ dest }: { dest: DestinationView }) {
   const [region, sub] = dest.region.split(",").map((s) => s.trim());
   const credit = parsePhotoCredit(dest.photoCredit).hero;
-  const source = commonsFilePage(dest.heroImage);
+  const source = credit?.sourceUrl ?? commonsFilePage(dest.heroImage);
 
   const stats: { label: string; value: string }[] = [];
   if (dest.bestSeason) stats.push({ label: "Best time", value: dest.bestSeason });
