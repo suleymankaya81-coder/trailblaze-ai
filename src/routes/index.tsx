@@ -25,6 +25,7 @@ import { servicePhoto, type ServicePhotoCategory } from "@/lib/data/servicePhoto
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
 import { AirportRentalsCards } from "@/components/destination/AirportRentalsCards";
 import { RentalSearch } from "@/components/home/RentalSearch";
+import { StartHere } from "@/components/home/StartHere";
 import {
   getHomepageDestinations,
   TRIP_TAG_OPTIONS,
@@ -145,6 +146,7 @@ function HomePage() {
       <Header />
 
       <HomeHero />
+      <StartHere />
 
       {/* DESTINATIONS — one grid: three large + three compact */}
       {homeDestinations.length > 0 && (
@@ -167,14 +169,14 @@ function HomePage() {
               </Link>
             </div>
 
-            <div className="grid gap-5 md:grid-cols-3">
+            <div className="travel-card-row sm:grid-cols-3">
               {largeDestinations.map((d) => (
-                <DestinationCard key={d.slug} d={d} aspect="aspect-[4/5]" titleClass="text-2xl" />
+                <DestinationCard key={d.slug} d={d} aspect="aspect-[4/3]" titleClass="text-2xl" />
               ))}
             </div>
 
             {compactDestinations.length > 0 && (
-              <div className="mt-5 grid gap-4 sm:grid-cols-3">
+              <div className="travel-card-row mt-5 sm:grid-cols-3">
                 {compactDestinations.map((d) => (
                   <DestinationCard key={d.slug} d={d} aspect="aspect-[4/3]" titleClass="text-lg" />
                 ))}
@@ -219,7 +221,7 @@ function HomePage() {
                 key={l.slug}
                 to="/road-trips/$slug"
                 params={{ slug: l.slug }}
-                className="group flex flex-col rounded-3xl border border-border bg-card p-6 shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg"
+                className="group flex flex-col rounded-lg border border-border bg-card p-6 shadow-soft transition hover:shadow-lg"
               >
                 <p className="flex items-center gap-1.5 text-xs uppercase tracking-wider text-muted-foreground">
                   <MapPin className="h-3.5 w-3.5" />
@@ -270,7 +272,7 @@ function HomePage() {
             <h2 className="mt-2 font-serif text-3xl font-bold text-foreground md:text-4xl">RV, campervan & airport car rentals</h2>
           </div>
           <RentalSearch />
-          <div className="grid gap-5 md:grid-cols-2">
+          <div className="travel-card-row sm:grid-cols-2">
             <AirportRentalsCards slug="homepage" />
           </div>
         </div>
@@ -421,7 +423,7 @@ function HomePage() {
 function HomeHero() {
   return (
     <section className="relative overflow-hidden">
-      <div className="relative flex min-h-[560px] w-full items-end md:min-h-[640px]">
+      <div className="relative flex min-h-[440px] w-full items-end md:min-h-[510px]">
         <img
           src={img("photo-1506905925346-21bda4d32df4", 2000)}
           alt="Alpine valley at golden hour"
@@ -481,7 +483,7 @@ export function DestinationCard({
 
   return (
     <Link to="/destinations/$slug" params={{ slug: d.slug }} className="group block">
-      <div className={`relative ${aspect} overflow-hidden rounded-2xl`}>
+      <div className={`relative ${aspect} overflow-hidden rounded-lg`}>
         <img
           src={d.heroImage}
           alt={d.name}
