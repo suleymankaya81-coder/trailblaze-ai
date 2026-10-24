@@ -36,7 +36,7 @@ describe('four contextual approved-partner essentials', () => {
   });
   it('matches desert, waterfront, town, cold and campsite needs', () => {
     expect(selectTripEssentials(contexts[0]).products.map(p => p.id)).toContain('45045768945716');
-    expect(selectTripEssentials(contexts[1]).products.map(p => p.id)).toContain('44641382826036');
+    expect(selectTripEssentials(contexts[1]).products.map(p => p.id)).toContain('47136319209524');
     expect(selectTripEssentials(contexts[2]).products.map(p => p.id)).toContain('46920453226548');
     expect(selectTripEssentials(contexts[3]).products.map(p => p.id)).toContain('47327361368116');
     expect(selectTripEssentials(contexts[5]).products.map(p => p.id)).toContain('47533912752180');
@@ -44,6 +44,7 @@ describe('four contextual approved-partner essentials', () => {
   });
   it('uses route stops, not just the gateway city, for loop recommendations', () => {
     expect(selectTripEssentials({ slug: 'california-icons-from-san-francisco', name: 'California Icons', places: [{ slug: 'yosemite', name: 'Yosemite' }] }).profile).toBe('walking');
+    expect(selectTripEssentials({ slug: 'california-icons-from-san-francisco', name: 'California Icons', places: [{ slug: 'yosemite', name: 'Yosemite' }, { slug: 'monterey', name: 'Monterey Coast' }] }).profile).toBe('walking');
     expect(selectTripEssentials({ slug: 'florida-keys-loop-from-miami', name: 'Florida Keys Loop', places: [{ slug: 'florida-keys', name: 'Florida Keys' }] }).profile).toBe('waterfront');
   });
   it('new selections match in-stock priced variants in the approved stored feed', () => {

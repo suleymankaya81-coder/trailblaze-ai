@@ -8,10 +8,10 @@ export type EssentialsProfile = 'walking' | 'desert' | 'waterfront' | 'town' | '
 const selections: Record<EssentialsProfile, string[]> = {
   walking: ['47533902757940', '45045768945716', '45703028342836', '44671785271348'],
   desert: ['45045768945716', '44671785271348', '47768652808244', '45703028342836'],
-  waterfront: ['47136319209524', '44641382826036', '44671785271348', '47768652808244'],
+  waterfront: ['47136319209524', '45045768945716', '44671785271348', '47768652808244'],
   town: ['46920453226548', '47674357645364', '44671785271348', '47768652808244'],
   cold: ['47327361368116', '47234906095668', '47533902757940', '45703028342836'],
-  camping: ['47533912752180', '45045768945716', '44641382826036', '44671785271348'],
+  camping: ['47533912752180', '45045768945716', '46920453226548', '44671785271348'],
   cycling: ['47198472962100', '45072034857012', '45045768945716', '44671785271348'],
 };
 const catalog = [...tripEssentialsCatalog, ...cyclingAccessories, ...repairKit];
@@ -25,6 +25,8 @@ export function essentialsProfile(c: EssentialsContext): EssentialsProfile {
   if (/\b(bikepacking|cycling|bicycle|mountain biking)\b/.test(identity)) return 'cycling';
   if (/\b(winter|ski|skiing|snowshoe|alaska|denali|fairbanks|anchorage|seward)\b/.test(identity)) return 'cold';
   if (/\b(desert|moab|zion|bryce|arizona|phoenix|sedona|joshua|death valley|grand circle|mighty 5|utah)\b/.test(identity.replace(/-/g, ' '))) return 'desert';
+  // Mixed loops with mountain/park stops need walking equipment, not two beach bags.
+  if (places.length > 1 && /\b(yosemite|yellowstone|rockies|teton|glacier|rainier|smoky|hiking|trail|canyon)\b/.test(identity.replace(/-/g, ' '))) return 'walking';
   if (/\b(keys|miami|beach|coast|coastal|cape cod|outer banks|honolulu|maui|kauai|lake|island|acadia|waterfront)\b/.test(identity.replace(/-/g, ' '))) return 'waterfront';
   if (/\b(yosemite|yellowstone|mountain|rockies|teton|glacier|rainier|smoky|hiking|trail|canyon|national park)\b/.test(`${identity.replace(/-/g, ' ')} ${detail}`)) return 'walking';
   if (places.every(p => towns.has(p.slug)) || /\b(city|historic district|museum|urban|downtown)\b/.test(detail)) return 'town';
