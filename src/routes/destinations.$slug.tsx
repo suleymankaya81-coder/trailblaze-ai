@@ -561,7 +561,7 @@ function TopStays({ dest }: { dest: DestinationView }) {
   return (
     <section id="stays" className="scroll-mt-24">
       <SectionHeader
-        step={3}
+        step={4}
         title="Where you'll want to sleep"
         action={<TextLink>View all stays</TextLink>}
       />
