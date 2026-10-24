@@ -14,12 +14,13 @@ export const Route = createFileRoute("/search")({
   loaderDeps: ({ search }) => ({ q: search.q ?? "" }),
   loader: async ({ deps }): Promise<{ q: string }> => {
     const q = deps.q.trim();
-    const intent = matchSearchIntent(q);
-    if (intent) throw redirect({ to: intent.to as never, search: intent.search as never });
     if (q) {
       const { slug } = await findDestinationSlugByQuery({ data: { query: q } });
       if (slug) throw redirect({ to: "/destinations/$slug", params: { slug } });
     }
+    // Named places take priority, even when their query includes a trip type.
+    const intent = matchSearchIntent(q);
+    if (intent) throw redirect({ to: intent.to as never, search: intent.search as never });
     // No match (or no query at all) — render the no-results state below
     // instead of guessing at a destination.
     return { q };

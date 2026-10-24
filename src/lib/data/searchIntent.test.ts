@@ -15,4 +15,17 @@ describe("search matching", () => {
     expect(matchesTerm("yellowstone", "Yellowstone National Park")).toBe(true);
     expect(matchSearchIntent("Yellowstone")).toBeNull();
   });
+  it("matches Yellowstone camping without requiring a short alias", () => {
+    expect(matchesTerm("Yellowstone camping", "Yellowstone National Park")).toBe(true);
+    expect(matchesTerm("Yellowstone camping", "Yellowstone Montana Gateway")).toBe(true);
+    expect(matchesTerm("Yellowstone camping", "Grand Teton National Park")).toBe(false);
+  });
+  it("keeps Gateway Arch intact when matching its place name", () => {
+    expect(matchesTerm("Gateway Arch", "Gateway Arch National Park")).toBe(true);
+    expect(matchesTerm("Gateway Arch", "Arches National Park")).toBe(false);
+  });
+  it("does not turn a general trip query into a place match", () => {
+    expect(matchesTerm("RV Adventure", "Yellowstone National Park")).toBe(false);
+    expect(matchesTerm("glamping weekend", "la")).toBe(false);
+  });
 });
