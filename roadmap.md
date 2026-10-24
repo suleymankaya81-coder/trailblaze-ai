@@ -1,7 +1,7 @@
 ## October 24 contextual trip essentials
-- [ ] Select real approved-partner products and match exactly four distinct items to each destination/route's activities; no generic bike products for non-cyclists.
-- [ ] Add page-matched horizontal product cards after planning content on destination, Fly & Drive, RV/camping, no-reservation, loop, gateway and existing search-guide pages; preserve Gear Shop.
-- [ ] Verify selection rules, affiliate attribution, photographs and desktop/phone interaction.
+- [x] Select real approved-partner ROCKBROS products and match exactly four distinct items to destination/route context; bike-only repair/mounting equipment is restricted to cycling trips. Prices and stock are recorded feed values, not live guarantees.
+- [x] Add page-matched horizontal product cards after planning content on destination, Fly & Drive, RV/camping, no-reservation, loop, gateway and existing search-guide pages; preserve Gear Shop.
+- [x] Verify 13 tests, all four photos on 11 representative travel pages, an actual tracked product-store click and phone next-card interaction with no page errors; build OK.
 
 ## October 23 positioning-led competitor analysis and SEO
 - [x] Verify closest business substitutes and actual search competitors; save a sourced report and keyword-to-existing-page priorities (marketing/minialife-rakip-seo-2026-10-23_v2.md).
