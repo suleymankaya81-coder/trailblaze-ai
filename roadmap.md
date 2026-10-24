@@ -2,6 +2,7 @@
 - [x] Audit shared templates and all 3,525 sitemap content URLs: all 200, required metadata present; corrected two duplicate-title pairs and read changes back. Fixed destination planning order/tours anchor, inactive save/view-all controls, shared image failure handling, Viator ratings/resize/error states, subject-mismatched Tiqets photo, estimate labels, related cards, mobile footer resize and About/static presentation.
 - [x] Verify 15 representative pages at 1280/390px (30 views), destination search→Acadia, real Yellowstone Viator click, all travel-family four-product rows/swipe, successful-empty and simulated frame-error states, section order and 145 tests. No observed overflow/page errors; build OK. Report: scripts/audits/implementation-audit-2026-10-24.md.
 - [x] Record remaining external limitations: all eight scenic-city replacement photos remain incomplete (Wikimedia downloads return 403; only five locations had verified candidates). Removed wrong-country/state Branson/Ely gallery photos; retained correct existing covers. Live rental forms and full independent factual/photo-location verification remain unverified; no publication.
+- [ ] Finish eight scenic-city replacements when verified Commons image downloads are accessible; blocker: original and thumbnail delivery returns 403.
 
 ## October 24 REI-style visual rebuild (step by step, owner approves each step)
 - [x] 0. Shared design system: stone background, #1B4431 green, mustard/terracotta badges, serif headings, card kit, phone swipe rows with progress line, photo thumbnails instead of icons.
