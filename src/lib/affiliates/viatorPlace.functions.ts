@@ -7,13 +7,21 @@ export type PlaceExperience = {
   code: string; title: string; url: string; image: string;
   price: number | null; currency: string; rating: number | null; reviews: number;
   summary?: string; category?: string;
+  freeCancellation?: boolean; mobileTicket?: boolean;
 };
 type Product = {
   productCode: string; title: string; productUrl: string; description?: string;
   images?: { isCover?: boolean; variants: { width: number; url: string }[] }[];
   reviews?: { combinedAverageRating?: number; totalReviews?: number };
   pricing?: { currency: string; summary?: { fromPrice?: number } };
+  flags?: string[];
 };
+
+/** Labels only when Viator's own product flags state them. */
+export function viatorAssurances(flags: string[] | undefined): { freeCancellation: boolean; mobileTicket: boolean } {
+  const f = flags ?? [];
+  return { freeCancellation: f.includes("FREE_CANCELLATION"), mobileTicket: f.includes("MOBILE_TICKET") };
+}
 
 /** Our own category label from the tour title (not provider text). */
 export function tourCategory(title: string): string {
@@ -60,7 +68,7 @@ export const getPlaceExperiences = createServerFn({ method: "GET" })
         if (!url || !image?.startsWith("https://")) continue;
         const desc = (p.description ?? "").replace(/\s+/g, " ").trim();
         const summary = desc ? (desc.length > 160 ? `${desc.slice(0, 157).replace(/\s\S*$/, "")}…` : desc) : undefined;
-        items.push({ code: p.productCode, title: p.title, url, image, price: p.pricing?.summary?.fromPrice ?? null, currency: p.pricing?.currency ?? "USD", rating: p.reviews?.combinedAverageRating ?? null, reviews: p.reviews?.totalReviews ?? 0, summary, category: tourCategory(p.title) });
+        items.push({ code: p.productCode, title: p.title, url, image, price: p.pricing?.summary?.fromPrice ?? null, currency: p.pricing?.currency ?? "USD", rating: p.reviews?.combinedAverageRating ?? null, reviews: p.reviews?.totalReviews ?? 0, summary, category: tourCategory(p.title), ...viatorAssurances(p.flags) });
         if (items.length === 6) break;
       }
     } catch (e) {

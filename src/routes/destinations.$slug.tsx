@@ -40,6 +40,7 @@ import {
 } from "lucide-react";
 import { lazy, Suspense, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { ClientOnly } from "@tanstack/react-router";
+import { STAY_CHOICES } from "@/lib/data/stayChoices";
 import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { JumpBar, TripRadar, formatDrive } from "@/components/destination/TripRadar";
 import routes from "@/data/routes.json";
@@ -183,13 +184,13 @@ function DestinationPage() {
         <BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} />
         <DestinationAnswers slug={dest.slug} />
 
-        {/* Stays + budget rail (compact bar on mobile) */}
+        {/* Booking order: flight (strip above) → vehicle → stay → tours */}
+        <RentBeforeYouGo dest={dest} />
+
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
           <TopStays dest={dest} />
           <TripBudget ai={ai} loading={aiLoading} />
         </div>
-
-        <RentBeforeYouGo dest={dest} />
 
         {dest.travelPlan ? <TravelFlow name={dest.name} plan={dest.travelPlan} /> : <TripFlow dest={dest} />}
 
@@ -493,10 +494,10 @@ function OfferCta({
   );
 }
 
-function SectionHeader({ title, action, id }: { title: string; action?: ReactNode; id?: string }) {
+function SectionHeader({ title, action, id, step }: { title: string; action?: ReactNode; id?: string; step?: number }) {
   return (
     <div className="mb-5 flex flex-wrap items-end justify-between gap-3" id={id}>
-      <h2 className="font-display text-2xl text-foreground md:text-[28px]">{title}</h2>
+      <h2 className="font-display text-2xl text-foreground md:text-[28px]">{step && <span className="mr-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-primary align-middle font-sans text-sm font-semibold text-primary-foreground">{step}</span>}{title}</h2>
       {action}
     </div>
   );
@@ -529,6 +530,21 @@ function bestForLine(offer: OfferView): string {
   return (key && BEST_FOR_BY_SUBCATEGORY[key]) || "Most travelers";
 }
 
+
+function StayChooser({ name }: { name: string }) {
+  return (
+    <div className="mb-5 grid gap-3 sm:grid-cols-3" aria-label={`Where to stay near ${name}`}>
+      {STAY_CHOICES.map((c) => (
+        <div key={c.label} className="rounded-lg border border-border bg-card p-3">
+          <p className="text-sm font-semibold text-foreground">{c.label}</p>
+          <p className="mt-0.5 text-xs text-muted-foreground">{c.why}</p>
+          <p className="mt-1.5 text-xs font-semibold text-foreground">{c.price} <span className="font-normal text-muted-foreground">· typical</span></p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function TopStays({ dest }: { dest: DestinationView }) {
   const cats = useMemo(
     () =>
@@ -545,12 +561,15 @@ function TopStays({ dest }: { dest: DestinationView }) {
   return (
     <section id="stays" className="scroll-mt-24">
       <SectionHeader
+        step={4}
         title="Where you'll want to sleep"
         action={<TextLink>View all stays</TextLink>}
       />
       <p className="-mt-3 mb-4 text-[11px] text-muted-foreground">
         Checks availability with the partner directly — not a confirmed booking on our end.
       </p>
+
+      <StayChooser name={dest.name} />
 
       <div className="flex flex-wrap items-center gap-2">
         {["All", ...cats].map((c) => (
@@ -773,6 +792,7 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
   return (
     <section id="rentals" className="scroll-mt-24">
       <SectionHeader
+        step={2}
         title={dest.airportCode ? `RVs, campervans & cars near ${dest.airportCode}` : "RVs, campervans & cars for this trip"}
         action={<TextLink>View all rentals</TextLink>}
       />
