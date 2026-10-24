@@ -19,6 +19,12 @@ import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 import { airportRentalsLink } from "@/lib/affiliates/webjet";
 import { airportRentalPhoto } from "@/lib/data/servicePhotos";
 
+import { Thumb, PlaceCard, SwipeRow } from "@/components/ui-kit";
+import { GuideFaq } from "@/components/guides/GuideSections";
+import roadImg from "@/assets/thumbs/road.jpg";
+import stayImg from "@/assets/thumbs/stay.jpg";
+import planImg from "@/assets/thumbs/plan.jpg";
+
 const PERMIT_LABEL = { high: "Reservations: high demand", moderate: "Reservations: moderate", none: "No entry permit" } as const;
 
 export function FlyDriveHero({ dest }: { dest: DestinationView }) {
@@ -28,13 +34,13 @@ export function FlyDriveHero({ dest }: { dest: DestinationView }) {
         <img src={dest.heroImage} alt={`${dest.name} scenery`} className="absolute inset-0 -z-10 h-full w-full object-cover" />
       )}
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink/85 via-ink/45 to-ink/20" />
-      <div className="container-page py-20 md:py-28">
+      <div className="container-page py-12 md:py-20">
         <nav className="mb-6 text-xs text-off-white/80">
           <Link to="/" className="hover:underline">Home</Link> /{" "}
           <Link to="/destinations/$slug" params={{ slug: dest.slug }} className="hover:underline">{dest.name}</Link> / Fly & Drive
         </nav>
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-off-white/80">Fly & Drive guide</p>
-        <h1 className="mt-3 max-w-3xl font-display text-4xl font-bold leading-[1.05] text-off-white md:text-6xl">
+        <h1 className="mt-3 max-w-3xl font-display text-[34px] font-semibold leading-tight text-off-white md:text-[56px]">
           Fly into {dest.airportCode}, drive to {dest.name}
         </h1>
         <div className="mt-8 flex flex-wrap gap-2">
@@ -52,7 +58,6 @@ export function FlyDriveHero({ dest }: { dest: DestinationView }) {
 function Chip({ icon, children }: { icon: ReactNode; children: ReactNode }) {
   return (
     <span className="inline-flex items-center gap-2 rounded-full border border-off-white/25 bg-off-white/15 px-4 py-2 text-sm font-medium text-off-white backdrop-blur">
-      {icon}
       {children}
     </span>
   );
@@ -64,14 +69,14 @@ export function RouteCard({ dest }: { dest: DestinationView }) {
       <p className="text-xs uppercase tracking-wider text-muted-foreground">Your route</p>
       <div className="mt-4 flex items-center gap-4">
         <div>
-          <p className="font-display text-5xl font-bold tracking-tight text-foreground">{dest.airportCode}</p>
+          <p className="font-display text-5xl font-semibold text-foreground">{dest.airportCode}</p>
           <p className="mt-1 max-w-[12rem] text-xs text-muted-foreground">{dest.airportName}</p>
         </div>
         <span className="relative h-px flex-1 border-t-2 border-dashed border-forest/30">
-          <Car className="absolute left-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 text-forest" />
+          <Thumb src={roadImg} size={40} className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
         </span>
         <div className="text-right">
-          <MapPin className="ml-auto h-8 w-8 text-copper" />
+          <Thumb src={dest.heroImage} size={48} className="ml-auto" />
           <p className="mt-1 text-sm font-semibold text-foreground">{dest.name}</p>
         </div>
       </div>
@@ -93,19 +98,19 @@ function StepCard({ n, icon, title, body, href, cta, brand, photo }: { n: number
       target="_blank"
       rel="sponsored nofollow noopener noreferrer"
       title={`Opens ${brand} in a new tab — partner link, we may earn a commission`}
-      className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg"
+      className="group flex h-full flex-col overflow-hidden rounded-lg border border-border bg-card shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg"
     >
       <div className="relative aspect-[4/3] overflow-hidden bg-muted">
         {photo && (
           <img src={photo.url} alt={`${photo.subject} — illustrative photo`} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 motion-safe:group-hover:scale-105" />
         )}
-        <span className="absolute left-4 top-4 grid h-11 w-11 place-items-center rounded-2xl bg-card/90 text-forest shadow-soft backdrop-blur">{icon}</span>
-        <span className="absolute right-4 top-3 font-display text-3xl font-bold text-off-white drop-shadow">{n ? `0${n}` : ""}</span>
+        <span className="absolute left-3 top-3 rounded-full bg-card/95 px-3 py-1 text-xs font-semibold text-foreground">{n ? `Step ${n}` : "Before you go"}</span>
+        
       </div>
       <div className="flex flex-1 flex-col p-6">
         <h3 className="font-display text-lg font-semibold text-foreground">{title}</h3>
         <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{body}</p>
-        <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition group-hover:gap-2.5">
+        <span className="mt-5 inline-flex min-h-12 items-center justify-center gap-1.5 rounded-md bg-primary px-4 py-2 text-center text-sm font-semibold text-primary-foreground">
           {cta} <ArrowUpRight className="h-4 w-4" />
         </span>
         <p className="mt-2 text-[10px] text-muted-foreground">
@@ -171,9 +176,9 @@ export function ArrivalPlan({ dest }: { dest: DestinationView }) {
           photo={servicePhoto("flight", dest.slug, 1)}
         />
       </div>
-      <div className="rounded-lg border border-border bg-sand/30 p-4 md:p-6">
+      <div className="border-t border-border py-6">
         <div className="mb-4 flex items-center gap-3">
-          <span className="grid h-11 w-11 place-items-center rounded-2xl bg-sage/20 text-forest"><BedDouble className="h-5 w-5" /></span>
+          <Thumb src={stayImg} size={48} />
           <div>
             <p className="font-display text-lg font-semibold text-foreground">03 · First night near {dest.name}</p>
             <p className="text-sm text-muted-foreground">Sleep close after the drive so day one starts in the park.</p>
@@ -236,16 +241,7 @@ export function BeforeYouLand({ dest }: { dest: DestinationView }) {
 }
 
 export function FlyDriveFaq({ faqs }: { faqs: Faq[] }) {
-  return (
-    <div className="divide-y divide-border rounded-lg border border-border bg-card">
-      {faqs.map((f) => (
-        <details key={f.q} className="group p-6" open>
-          <summary className="cursor-pointer list-none font-semibold text-foreground">{f.q}</summary>
-          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{f.a}</p>
-        </details>
-      ))}
-    </div>
-  );
+  return <GuideFaq faqs={faqs} />;
 }
 
 export function RelatedLinks({ dest, siblings }: { dest: DestinationView; siblings: FlyDriveSibling[] }) {
@@ -261,17 +257,9 @@ export function RelatedLinks({ dest, siblings }: { dest: DestinationView; siblin
       {siblings.length > 0 && (
         <div>
           <h3 className="font-display text-lg font-semibold text-foreground">Also reachable from {dest.airportCode}</h3>
-          <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {siblings.map((s) => (
-              <Link key={s.slug} to="/destinations/$slug" params={{ slug: s.slug }} className="flex items-center gap-3 rounded-2xl border border-border bg-card p-3 hover:shadow-soft">
-                {s.heroImage && <img src={s.heroImage} alt={s.name} loading="lazy" className="h-14 w-14 rounded-xl object-cover" />}
-                <span>
-                  <span className="block text-sm font-semibold text-foreground">{s.name}</span>
-                  {s.driveMinutes != null && <span className="text-xs text-muted-foreground">{formatDriveShort(s.driveMinutes)} drive</span>}
-                </span>
-              </Link>
-            ))}
-          </div>
+          <SwipeRow className="mt-4 md:grid-cols-3">
+            {siblings.map((s) => <PlaceCard key={s.slug} to="/destinations/$slug" params={{ slug: s.slug }} image={s.heroImage} alt={s.name} title={s.name} info={s.driveMinutes != null ? `${formatDriveShort(s.driveMinutes)} drive` : undefined} />)}
+          </SwipeRow>
         </div>
       )}
     </div>
