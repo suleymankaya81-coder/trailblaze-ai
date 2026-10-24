@@ -8,6 +8,8 @@ const LICENSES: [RegExp, (v: string) => string][] = [
   [/^CC BY (\d\.\d)$/i, (v) => `https://creativecommons.org/licenses/by/${v}/`],
   [/^CC0( 1\.0)?$/i, () => "https://creativecommons.org/publicdomain/zero/1.0/"],
   [/^Public domain$/i, () => "https://creativecommons.org/publicdomain/mark/1.0/"],
+  [/^Pexels License$/i, () => "https://www.pexels.com/license/"],
+  [/^Unsplash License$/i, () => "https://unsplash.com/license"],
 ];
 
 export function licenseUrl(license: string): string | null {
@@ -29,7 +31,7 @@ function parseOne(text: string): ImageCredit | null {
   return { creator, license, licenseUrl: licenseUrl(license), ...(source !== "Wikimedia Commons" ? { source } : {}), ...(sourceUrl ? { sourceUrl } : {}) };
 }
 
-// "Hero: A / CC BY-SA 3.0 via Wikimedia Commons · Gallery: B / ...; C / ..."
+// "Hero: A / licence via provider | https://source-page · Gallery: B / ..."
 export function parsePhotoCredit(text: string | null | undefined): { hero: ImageCredit | null; gallery: (ImageCredit | null)[] } {
   if (!text) return { hero: null, gallery: [] };
   const [heroPart, galleryPart] = text.split(" · Gallery:");

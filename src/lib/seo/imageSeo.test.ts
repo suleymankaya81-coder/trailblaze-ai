@@ -12,6 +12,7 @@ describe("image credit parsing", () => {
     expect(result.hero).toEqual({ creator: "Carol M. Highsmith", license: "Public domain", licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/", source: "Library of Congress", sourceUrl: "https://www.loc.gov/item/example/" });
     const images = buildDestinationImages({ name: "Seattle", region: "Washington", heroImage: "https://minialife.com/photo.jpg", gallery: [], photoCredit: "Hero: Carol M. Highsmith / Public domain via Library of Congress | https://www.loc.gov/item/example/" });
     expect(images[0]).toMatchObject({ creditText: "Carol M. Highsmith / Public domain via Library of Congress", acquireLicensePage: "https://www.loc.gov/item/example/" });
+    expect(parsePhotoCredit("Hero: Conner Berry / Pexels License via Pexels | https://www.pexels.com/photo/close-up-of-stacked-rocks-16581130/").hero?.licenseUrl).toBe("https://www.pexels.com/license/");
   });
   it("reads hero and every gallery credit, including commas in names", () => {
     const r = parsePhotoCredit(credit);

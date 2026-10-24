@@ -1,7 +1,8 @@
 ## October 24 photo, contact and publishing request
 - [ ] Replace eight city covers using verified licensed alternative sources and check their pages.
-- [ ] Replace incorrect public email with info@minialife.com and remove the owner's personal name from public content.
-- [ ] Validate and verify the contact form's real submission behavior.
+- [x] Replace incorrect public email with info@minialife.com and remove the owner's personal name from public content; repository and all application database text fields checked.
+- [x] Validate and verify the current contact form's mail-app handoff at desktop/phone sizes; required fields, limits, safe encoding and explicit not-sent notice; four tests pass.
+- [ ] Enable direct contact email delivery; blocker: no email sender domain configured. Owner must complete the email setup dialog; current validated mail-app handoff remains available.
 - [ ] Check security and request publication of the completed changes.
 
 ## October 24 full implementation audit
