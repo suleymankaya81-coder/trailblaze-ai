@@ -32,7 +32,11 @@ function Page() {
     <div className="min-h-screen bg-background">
       <Header />
       <main className="container-page py-14 md:py-20">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">Gateway Road Trips</p>
+        <nav aria-label="Road trip types" className="mb-6 flex flex-wrap gap-2">
+          <span className="rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground">From an airport ({CORRIDORS.length})</span>
+          <Link to="/road-trips" hash="loops" className="rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-foreground">Multi-park loops</Link>
+        </nav>
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">Road Trips · From an airport</p>
         <h1 className="mt-3 max-w-3xl font-display text-4xl font-bold text-foreground md:text-5xl">USA road trip loops from arrival airports</h1>
         <p className="mt-4 max-w-2xl text-muted-foreground">
           Each route starts and ends at a major U.S. airport, so you return the car where you picked it up. Built for visitors arriving from overseas.
