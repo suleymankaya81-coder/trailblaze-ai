@@ -2,6 +2,7 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
 import { verifiedViatorProductUrl } from "./corridorPartners";
+import { viatorProductImage } from "./viatorImages";
 
 export type PlaceExperience = {
   code: string; title: string; url: string; image: string;
@@ -63,8 +64,7 @@ export const getPlaceExperiences = createServerFn({ method: "GET" })
       const body = (await res.json()) as { products?: { results?: Product[] } };
       for (const p of body.products?.results ?? []) {
         const url = verifiedViatorProductUrl(p.productUrl);
-        const cover = p.images?.find((i) => i.isCover) ?? p.images?.[0];
-        const image = cover?.variants.filter((v) => v.width >= 480).sort((a, b) => b.width - a.width)[0]?.url;
+        const image = viatorProductImage(p.images);
         if (!url || !image?.startsWith("https://")) continue;
         const desc = (p.description ?? "").replace(/\s+/g, " ").trim();
         const summary = desc ? (desc.length > 160 ? `${desc.slice(0, 157).replace(/\s\S*$/, "")}…` : desc) : undefined;
