@@ -18,8 +18,8 @@ export function servicePhoto(category: ServicePhotoCategory, seed: string, offse
 
 export function airportRentalPhoto(kind: "car" | "suv", seed: string): Photo | undefined {
   const matching = pools.car?.filter((photo) => kind === "suv"
-    ? /rav4|explorer|suzuki across/i.test(photo.subject)
-    : /seal|sedan/i.test(photo.subject));
+    ? /suv/i.test(photo.subject)
+    : /sedan/i.test(photo.subject));
   if (!matching?.length) return servicePhoto("car", seed, kind === "suv" ? 1 : 0);
   return matching[photoHash(seed) % matching.length];
 }
