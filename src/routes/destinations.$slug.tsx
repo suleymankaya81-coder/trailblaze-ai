@@ -83,6 +83,7 @@ import { getPublicLandingPagesForDestination } from "@/lib/data/landingPages.fun
 import { LANDING_TYPE_LABEL } from "@/lib/data/landingTypes";
 import { offerPhoto, type Photo } from "@/lib/data/destinationCardPhotos";
 import { ROAD_PREPARATION_PARTNERS, preparationLink } from "@/lib/affiliates/travelpayouts";
+import { commonsFilePage, parsePhotoCredit } from "@/lib/seo/imageCredit";
 
 // Search snippet: tagline plus the matching guide topics, kept within ~160 chars.
 function seoDescription(name: string, tagline: string | null, bestSeason: string | null): string {
@@ -192,9 +193,13 @@ function DestinationPage() {
       <TripQuickNav />
 
       <main className="container-page space-y-14 py-10 md:space-y-16">
-        <div id="trip-plan"><TripRadar dest={dest} /></div>
+        <div id="trip-plan" className="space-y-14">
+          <TripRadar dest={dest} />
+          <DestinationAnswers slug={dest.slug} />
+          {dest.travelPlan ? <TravelFlow name={dest.name} plan={dest.travelPlan} /> : <TripFlow dest={dest} />}
+          <RoadTrip dest={dest} ai={ai} />
+        </div>
         <div id="trip-booking"><BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} /></div>
-        <DestinationAnswers slug={dest.slug} />
 
         {/* Booking order: flight (strip above) → vehicle → stay → tours */}
         <RentBeforeYouGo dest={dest} />
@@ -203,10 +208,6 @@ function DestinationPage() {
           <TopStays dest={dest} />
           <TripBudget ai={ai} loading={aiLoading} />
         </div>
-
-        {dest.travelPlan ? <TravelFlow name={dest.name} plan={dest.travelPlan} /> : <TripFlow dest={dest} />}
-
-        <RoadTrip dest={dest} ai={ai} />
 
         {/* Tours & services — one section */}
         <section id="trip-tours" className="scroll-mt-24">
@@ -237,6 +238,8 @@ function DestinationPage() {
 ========================================================= */
 function Hero({ dest }: { dest: DestinationView }) {
   const [region, sub] = dest.region.split(",").map((s) => s.trim());
+  const credit = parsePhotoCredit(dest.photoCredit).hero;
+  const source = commonsFilePage(dest.heroImage);
 
   const stats: { label: string; value: string }[] = [];
   if (dest.bestSeason) stats.push({ label: "Best time", value: dest.bestSeason });
@@ -250,12 +253,13 @@ function Hero({ dest }: { dest: DestinationView }) {
 
   return (
     <section className="relative isolate overflow-hidden">
-      <img
+      <SafeImage
         src={dest.heroImage}
         alt={dest.name}
         className="absolute inset-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/60 to-ink/20" />
+      {credit && source && <PhotoCredit photo={{ source, credit: credit.creator, license: credit.license }} />}
 
       <div className="container-page relative grid gap-10 py-14 md:py-20 ">
         <div className="text-off-white">
