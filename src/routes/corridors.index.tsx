@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowUpRight, Plane } from "lucide-react";
+import { PlaceCard } from "@/components/ui-kit";
+import flightImg from "@/assets/thumbs/flight.jpg";
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
@@ -43,25 +44,17 @@ function Page() {
           <Link to="/road-trips" hash="loops" className="rounded-full bg-card px-5 py-2.5 text-sm font-semibold text-foreground">Multi-park loops</Link>
         </nav>
         <div className="mt-6 flex flex-wrap gap-2">
-          {CORRIDOR_AREAS.map((area) => <a key={area} href={`#${area.toLowerCase().replace(/[^a-z]+/g, "-")}`} className="rounded-full border border-background/40 px-4 py-1.5 text-xs font-semibold text-background hover:bg-background/10">{area}</a>)}
+          {CORRIDOR_AREAS.map((area) => <a key={area} href={`#${area.toLowerCase().replace(/[^a-z]+/g, "-")}`} className="inline-flex min-h-11 items-center rounded-full border border-background/40 px-4 text-xs font-semibold text-background hover:bg-background/10">{area}</a>)}
         </div>
       </PageHero>
       <main className="container-page py-6 md:py-10">
         {CORRIDOR_AREAS.map((area) => (
           <section key={area} id={area.toLowerCase().replace(/[^a-z]+/g, "-")} className="mt-12 scroll-mt-28">
-            <h2 className="font-display text-2xl font-semibold text-foreground">{area}</h2>
-            <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {list.filter((c) => corridorArea(c) === area).map((c) => { const cover = coverFor(c.stops); return (
-            <Link key={c.slug} to="/corridors/$slug" params={{ slug: c.slug }} className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg">
-{cover ? <div className="relative aspect-[4/3] overflow-hidden bg-muted"><img src={cover} alt={`${c.title} — route scenery`} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" /></div> : null}
-              <div className="flex flex-1 flex-col p-6">
-              <p className="flex flex-wrap items-center gap-1.5 text-xs uppercase tracking-wider text-muted-foreground"><span className="inline-flex items-center gap-1 rounded-full bg-primary px-2 py-0.5 font-semibold text-primary-foreground"><Plane className="h-3 w-3" />{c.gateway.code}</span><span className="rounded-full bg-muted px-2 py-0.5 font-semibold text-foreground">{c.idealDays}</span><span className="rounded-full bg-muted px-2 py-0.5 font-semibold text-foreground">{c.stops.length} stops</span></p>
-              <h3 className="mt-2 font-display text-xl font-semibold text-foreground">{c.title}</h3>
-              <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{c.intro}</p>
-              <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">See the route <ArrowUpRight className="h-4 w-4" /></span>
-              </div>
-            </Link>
-          );})}
+            <h2 className="text-[26px] leading-tight text-foreground md:text-3xl">{area}</h2>
+            <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {list.filter((c) => corridorArea(c) === area).map((c) => (
+            <PlaceCard key={c.slug} to="/corridors/$slug" params={{ slug: c.slug }} image={coverFor(c.stops) ?? flightImg} alt={`${c.title} route scenery`} title={c.title} summary={c.intro} badges={[`✈ ${c.gateway.code}`, c.idealDays, `${c.stops.length} stops`]} action="See the route" />
+          ))}
             </div>
           </section>
         ))}

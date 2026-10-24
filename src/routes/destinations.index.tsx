@@ -3,7 +3,8 @@ import { z } from "zod";
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
-import { DestinationCard } from "@/routes/index";
+import { PlaceCard } from "@/components/ui-kit";
+import { PageHero } from "@/components/site/PageHero";
 import {
   DESTINATIONS_PAGE_SIZE,
   getDestinationsList,
@@ -63,14 +64,14 @@ export const Route = createFileRoute("/destinations/")({
 
 function pageLinkClass(active: boolean) {
   return (
-    "rounded-full px-4 py-1.5 text-xs font-semibold transition " +
-    (active ? "bg-ink text-off-white" : "border border-border text-foreground/70 hover:bg-muted")
+    "inline-flex min-h-11 shrink-0 items-center rounded-full px-4 text-sm font-semibold transition " +
+    (active ? "bg-primary text-primary-foreground" : "border border-border bg-card text-foreground hover:border-primary")
   );
 }
 
 function paginationLinkClass(disabled: boolean) {
   return (
-    "rounded-full border border-border px-4 py-2 text-xs font-semibold transition " +
+    "inline-flex min-h-12 items-center rounded-full border border-border bg-card px-5 text-sm font-semibold transition " +
     (disabled ? "pointer-events-none opacity-40" : "text-foreground hover:bg-muted")
   );
 }
@@ -84,15 +85,9 @@ function DestinationsIndexPage() {
   return (
     <div className="bg-background">
       <Header />
-      <main className="container-page py-16">
-        <p className="text-xs font-bold uppercase tracking-[0.22em] text-foreground/60">
-          {total} destination{total === 1 ? "" : "s"}
-        </p>
-        <h1 className="mt-2 font-serif text-4xl font-bold tracking-tight text-foreground md:text-5xl">
-          {activeTag ? activeTag.label : "All destinations"}
-        </h1>
-
-        <div className="mt-6 flex flex-wrap gap-2">
+      <PageHero image={destinations[0]?.heroImage} kicker={`${total} destination${total === 1 ? "" : "s"}`} title={activeTag ? activeTag.label : "All destinations"} intro="National parks, outdoor towns and scenic places, each with a day-by-day plan, arrival airport and where to stay." />
+      <main className="container-page py-10 md:py-14">
+        <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 md:mx-0 md:flex-wrap md:px-0">
           <Link to="/destinations" className={pageLinkClass(!tag)}>
             All
           </Link>
@@ -110,12 +105,12 @@ function DestinationsIndexPage() {
 
         <div className="mt-6"><FilterPanel><form method="get" action="/destinations" className="grid gap-3 md:grid-cols-[1fr_auto_auto_auto]">
           {tag && <input type="hidden" name="tag" value={tag} />}
-          <input name="q" defaultValue={q} placeholder="Search by name" aria-label="Search destinations by name" className="rounded-lg border border-border bg-background px-3 py-2 text-sm" />
-          <select name="region" defaultValue={region} aria-label="Region" className="rounded-lg border border-border bg-background px-3 py-2 text-sm">
+          <input name="q" defaultValue={q} placeholder="Search by name" aria-label="Search destinations by name" className="h-12 rounded-lg border border-border bg-card px-3 text-sm" />
+          <select name="region" defaultValue={region} aria-label="Region" className="h-12 rounded-lg border border-border bg-card px-3 text-sm">
             <option value="">All regions</option>
             {Object.entries(US_REGIONS).map(([k, r]) => <option key={k} value={k}>{r.label}</option>)}
           </select>
-          <select name="season" defaultValue={season} aria-label="Best season" className="rounded-lg border border-border bg-background px-3 py-2 text-sm">
+          <select name="season" defaultValue={season} aria-label="Best season" className="h-12 rounded-lg border border-border bg-card px-3 text-sm">
             <option value="">Any season</option>
             {SEASONS.map((s) => <option key={s} value={s}>{s[0].toUpperCase() + s.slice(1)}</option>)}
           </select>
@@ -132,9 +127,11 @@ function DestinationsIndexPage() {
           </p>
         ) : (
           <>
-            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <p className="mt-8 text-sm text-muted-foreground">Showing {destinations.length} of {total}</p>
+            <div className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {destinations.map((d) => (
-                <DestinationCard key={d.slug} d={d} aspect="aspect-[4/3]" titleClass="text-xl" />
+                <PlaceCard key={d.slug} to="/destinations/$slug" params={{ slug: d.slug }} image={d.heroImage} alt={d.name} title={d.name}
+                  badges={[d.bestSeason ? `Best: ${d.bestSeason}` : "", d.tripDurationDays ?? ""].filter(Boolean)} info={d.region} />
               ))}
             </div>
 

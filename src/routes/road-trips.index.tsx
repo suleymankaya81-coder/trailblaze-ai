@@ -1,6 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { getDestinationCovers } from "@/lib/data/destinations.functions";
-import { ArrowUpRight, MapPin } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import { PlaceCard, SectionHead } from "@/components/ui-kit";
+import roadImg from "@/assets/thumbs/road.jpg";
+import flightImg from "@/assets/thumbs/flight.jpg";
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
@@ -41,24 +44,19 @@ function Page() {
         </nav>
       </PageHero>
       <main className="container-page py-10 md:py-14">
-        <Link to="/corridors" className="flex flex-col gap-2 rounded-lg border-2 border-forest bg-card p-6 shadow-soft transition hover:shadow-lg md:p-8">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-forest">Gateway Road Trips · Fly in, loop, fly home</p>
-          <h2 className="font-display text-2xl font-semibold text-foreground md:text-3xl">Road trips from major arrival airports</h2>
-          <p className="max-w-2xl text-sm text-muted-foreground">Loops that start and end at a major U.S. airport, with suggested trip lengths, entry, licence and park-pass notes for international visitors. 24 loops from Las Vegas, Los Angeles, San Francisco, Seattle, Salt Lake City, Denver, Boston, Chicago, Miami, Anchorage and more.</p>
-          <span className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-primary">See all gateway road trips <ArrowUpRight className="h-4 w-4" /></span>
+        <Link to="/corridors" className="group grid overflow-hidden rounded-xl border border-border bg-card transition hover:shadow-soft md:grid-cols-[2fr_3fr]">
+          <img src={flightImg} alt="" loading="lazy" className="aspect-[16/10] h-full w-full object-cover md:aspect-auto" />
+          <div className="p-6 md:p-10">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-sage-deep">Gateway Road Trips · Fly in, loop, fly home</p>
+            <h2 className="mt-2 text-[26px] leading-tight text-foreground md:text-3xl">Road trips from major arrival airports</h2>
+            <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">24 loops that start and end at a major U.S. airport, with trip lengths and entry, licence and park-pass notes for overseas visitors.</p>
+            <span className="mt-6 inline-flex min-h-12 items-center gap-1.5 rounded-md bg-primary px-5 text-sm font-semibold text-primary-foreground">See all gateway road trips <ArrowUpRight className="h-4 w-4" /></span>
+          </div>
         </Link>
-        <h2 id="loops" className="mt-14 scroll-mt-28 font-display text-2xl font-semibold text-foreground">All {LOOPS.length} loops</h2>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {LOOPS.map((l) => { const s = l.stops.find((x) => covers[x]); const cover = s ? covers[s] : undefined; return (
-            <Link key={l.slug} to="/road-trips/$slug" params={{ slug: l.slug }} className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg">
-{cover ? <div className="relative aspect-[4/3] overflow-hidden bg-muted"><img src={cover} alt={`${l.title} — route scenery`} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" /></div> : null}
-              <div className="flex flex-1 flex-col p-6">
-              <p className="flex flex-wrap items-center gap-1.5 text-xs uppercase tracking-wider text-muted-foreground"><MapPin className="h-3.5 w-3.5" />{l.region}<span className="rounded-full bg-muted px-2 py-0.5 font-semibold text-foreground">{l.stops.length} stops</span></p>
-              <h2 className="mt-2 font-display text-xl font-semibold text-foreground">{l.title}</h2>
-              <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{l.intro}</p>
-              <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">See the loop <ArrowUpRight className="h-4 w-4" /></span>
-              </div>
-            </Link>
+        <div id="loops" className="mt-14 scroll-mt-28"><SectionHead kicker="Multi-park loops" title={`All ${LOOPS.length} loops`} intro="Self-drive routes linking nearby parks and towns, with suggested days per stop." /></div>
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {LOOPS.map((l) => { const s = l.stops.find((x) => covers[x]); return (
+            <PlaceCard key={l.slug} to="/road-trips/$slug" params={{ slug: l.slug }} image={s ? covers[s] : roadImg} alt={`${l.title} route scenery`} title={l.title} summary={l.intro} badges={[`${l.stops.length} stops`, l.region]} action="See the loop" />
           );})}
         </div>
       </main>

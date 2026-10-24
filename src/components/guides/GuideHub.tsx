@@ -1,6 +1,8 @@
 import { useMemo, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, Clock, MapPin, Plane, Search } from "lucide-react";
+import { Search } from "lucide-react";
+import { PlaceCard } from "@/components/ui-kit";
+import mapImg from "@/assets/thumbs/map.jpg";
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
@@ -38,11 +40,11 @@ export function GuideHub({ family, kicker, title, intro, entries }: { family: Hu
       </PageHero>
       <main className="container-page py-10 md:py-14">
         <FilterPanel><div className="flex flex-wrap items-center gap-2">
-          <Button variant={!region ? "default" : "outline"} size="lg" type="button" onClick={() => { setRegion(""); reset(); }}>All regions</Button>
+          <Button variant={!region ? "default" : "outline"} size="lg" className="rounded-full" type="button" onClick={() => { setRegion(""); reset(); }}>All regions</Button>
           {(Object.keys(US_REGIONS) as UsRegionKey[]).map((k) => (
-            <Button key={k} variant={region === k ? "default" : "outline"} size="lg" type="button" onClick={() => { setRegion(k); setState(""); reset(); }}>{US_REGIONS[k].label}</Button>
+            <Button key={k} variant={region === k ? "default" : "outline"} size="lg" className="rounded-full" type="button" onClick={() => { setRegion(k); setState(""); reset(); }}>{US_REGIONS[k].label}</Button>
           ))}
-          <select value={state} onChange={(e) => { setState(e.target.value); reset(); }} aria-label="Filter by state" className="ml-auto h-10 rounded-full border border-border bg-card px-4 text-sm text-foreground">
+          <select value={state} onChange={(e) => { setState(e.target.value); reset(); }} aria-label="Filter by state" className="ml-auto h-12 rounded-full border border-border bg-card px-4 text-sm text-foreground">
             <option value="">All states</option>
             {states.filter((s) => !region || regionOf(s) === region).map((s) => <option key={s} value={s}>{s}</option>)}
           </select>
@@ -51,22 +53,8 @@ export function GuideHub({ family, kicker, title, intro, entries }: { family: Hu
 
         <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {list.slice(0, shown).map((e) => (
-            <Link key={e.slug} to={`/${family}/$slug` as "/rv-camping/$slug"} params={{ slug: e.slug }} className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card shadow-soft transition hover:shadow-lg">
-              <div className="relative aspect-[4/3] overflow-hidden bg-muted">
-                {e.heroImage && <img src={e.heroImage} alt={e.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />}
-                <span className="absolute left-3 top-3 inline-flex items-center gap-1 rounded-full bg-card/95 px-3 py-1 text-xs font-semibold text-foreground"><MapPin className="h-3 w-3" />{e.state}</span>
-              </div>
-              <div className="flex flex-1 flex-col p-5">
-                <h2 className="font-display text-lg font-semibold text-foreground">{e.name}</h2>
-                {(e.airportCode || e.driveMinutes) && (
-                  <div className="mt-2 flex flex-wrap gap-1.5 text-xs font-semibold">
-                    {e.airportCode && <span className="inline-flex items-center gap-1 rounded-full bg-primary px-2 py-0.5 text-primary-foreground"><Plane className="h-3 w-3" />{e.airportCode}</span>}
-                    {e.driveMinutes ? <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-foreground"><Clock className="h-3 w-3" />{formatDriveShort(e.driveMinutes)} drive</span> : null}
-                  </div>
-                )}
-                <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-semibold text-primary">Open guide <ArrowUpRight className="h-4 w-4" /></span>
-              </div>
-            </Link>
+            <PlaceCard key={e.slug} to={`/${family}/$slug`} params={{ slug: e.slug }} image={e.heroImage || mapImg} alt={e.name} title={e.name}
+              badges={[e.state, e.airportCode ? `✈ ${e.airportCode}` : "", e.driveMinutes ? `${formatDriveShort(e.driveMinutes)} drive` : ""].filter(Boolean)} action="Open guide" />
           ))}
         </div>
         {shown < list.length && (
