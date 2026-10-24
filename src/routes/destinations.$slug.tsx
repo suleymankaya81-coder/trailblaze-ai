@@ -61,6 +61,7 @@ import { outboundLinkTitle, partnerLabel } from "@/lib/affiliates/compliance";
 import { buildDestinationJsonLd } from "@/lib/seo/destinationJsonLd";
 import { flyDriveSlug } from "@/lib/seo/flyDrive";
 import { isNoReservationEligible, isRvEligible, loopsForDestination } from "@/lib/seo/guides";
+import { CORRIDORS } from "@/lib/seo/corridors";
 import { saveTripPlan } from "@/lib/plans/savePlan.functions";
 import { getCapturedEmail, setCapturedEmail } from "@/lib/plans/session";
 import { getPublicLandingPagesForDestination } from "@/lib/data/landingPages.functions";
@@ -1362,8 +1363,9 @@ function PlanDeeper({ dest }: { dest: DestinationView }) {
   const noRes = isNoReservationEligible(dest);
   const rv = isRvEligible(dest);
   const loops = loopsForDestination(dest.slug);
+  const gatewayTrips = CORRIDORS.filter((c) => c.stops.includes(dest.slug));
   const pill = "inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground hover:bg-muted";
-  if (!arrivalSlug && !noRes && !rv && loops.length === 0 && (!data || data.length === 0)) return null;
+  if (!arrivalSlug && !noRes && !rv && loops.length === 0 && gatewayTrips.length === 0 && (!data || data.length === 0)) return null;
   return (
     <section className="rounded-2xl border border-border bg-card p-6">
       <h2 className="font-display text-2xl text-foreground">Plan deeper</h2>
@@ -1384,6 +1386,11 @@ function PlanDeeper({ dest }: { dest: DestinationView }) {
             By RV: campgrounds & RV parks <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         )}
+        {gatewayTrips.map((c) => (
+          <Link key={c.slug} to="/corridors/$slug" params={{ slug: c.slug }} className={pill}>
+            Airport road trip: {c.title} <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
+        ))}
         {loops.map((l) => (
           <Link key={l.slug} to="/road-trips/$slug" params={{ slug: l.slug }} className={pill}>
             Road trip: {l.title} <ArrowRight className="h-3.5 w-3.5" />
