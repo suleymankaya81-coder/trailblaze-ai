@@ -2,6 +2,7 @@ import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
+import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { ViatorPlaceBlock } from "@/components/destination/ViatorPlaceBlock";
 import { ArrivalPlan, BeforeYouLand, FlyDriveFaq, FlyDriveHero, RelatedLinks, RouteCard } from "@/components/flydrive/FlyDriveSections";
 import { getDestinationPageData } from "@/lib/data/destinations.functions";
@@ -64,6 +65,7 @@ function FlyDrivePage() {
         <FlyDriveHero dest={dest} />
         <section className="container-page -mt-10 relative">
           <RouteCard dest={dest} />
+          <div className="mt-6"><BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} /></div>
         </section>
         <Section title="Your arrival plan">
           <ArrivalPlan dest={dest} />

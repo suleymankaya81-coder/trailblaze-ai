@@ -38,6 +38,7 @@ import {
 } from "lucide-react";
 import { lazy, Suspense, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { ClientOnly } from "@tanstack/react-router";
+import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { JumpBar, TripRadar, formatDrive } from "@/components/destination/TripRadar";
 import routes from "@/data/routes.json";
 import { TravelFlow, LocalIntel } from "@/components/destination/TravelFlow";
@@ -177,6 +178,7 @@ function DestinationPage() {
 
       <main className="container-page space-y-14 py-10 md:space-y-16">
         <TripRadar dest={dest} />
+        <BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} />
         <DestinationAnswers slug={dest.slug} />
 
         {/* Stays + budget rail (compact bar on mobile) */}
