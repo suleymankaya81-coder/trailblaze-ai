@@ -9,7 +9,9 @@ import { GuideFaq, GuideHero, GuideSection, HeroChip } from "@/components/guides
 import { Skeleton } from "@/components/ui/skeleton";
 import { getLoopStops } from "@/lib/data/guides.functions";
 import { SITE } from "@/lib/seo/flyDrive";
-import { getLoop, haversineMiles, jsonLdScript, loopFaqs, loopJsonLd, suggestedDays, validateLoop } from "@/lib/seo/guides";
+import { CorridorBookings } from "@/components/guides/CorridorBookings";
+import { ViatorPlaceBlock } from "@/components/destination/ViatorPlaceBlock";
+import { getLoop, loopGatewayAirport, haversineMiles, jsonLdScript, loopFaqs, loopJsonLd, suggestedDays, validateLoop } from "@/lib/seo/guides";
 
 const RoadTripMap = lazy(() => import("@/components/destination/RoadTripMap"));
 
@@ -54,6 +56,7 @@ function Page() {
   const markers = stops.slice(1, -1).map((s) => ({ name: s.name, lng: s.lng, lat: s.lat, sourceUrl: `${SITE}/destinations/${s.slug}` }));
   const first = stops[0];
   const last = stops[stops.length - 1];
+  const gateway = loopGatewayAirport(stops);
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -73,6 +76,12 @@ function Page() {
           </div>
           <p className="mt-2 text-xs text-muted-foreground">Overview line between stops, not turn-by-turn directions.</p>
         </GuideSection>
+
+        {gateway && (
+          <GuideSection title={`Book this loop from ${gateway.code}`} intro={`Fly into ${gateway.name}, pick up your car or RV, then drive the loop.`}>
+            <CorridorBookings slug={loop.slug} airport={gateway.code} city={gateway.name} />
+          </GuideSection>
+        )}
 
         <GuideSection title="Stop by stop">
           <ol className="space-y-4">
@@ -99,6 +108,8 @@ function Page() {
             })}
           </ol>
         </GuideSection>
+
+        <section className="container-page pb-6"><ViatorPlaceBlock slug={first.slug} name={first.name} /></section>
 
         <GuideSection title="Quick answers"><GuideFaq faqs={faqs} /></GuideSection>
       </main>
