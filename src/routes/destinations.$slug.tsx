@@ -5,7 +5,7 @@ import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { VrboSearchWidget } from "@/components/destination/VrboSearchWidget";
 import { HarvestHostsCard } from "@/components/destination/HarvestHostsCard";
-import { TravelpayoutsCards } from "@/components/destination/TravelpayoutsCards";
+import { TravelpayoutsCards, TourTicketCards } from "@/components/destination/TravelpayoutsCards";
 import { GetYourGuideWidget } from "@/components/destination/PartnerWidget";
 import { ViatorPlaceBlock } from "@/components/destination/ViatorPlaceBlock";
 import { useQuery } from "@tanstack/react-query";
@@ -808,8 +808,9 @@ function ThingsToDo({ dest }: { dest: DestinationView }) {
   const activities = dest.activities.slice(0, 4);
 
   return (
-    <section>
+    <section id="trip-tours" className="scroll-mt-24">
       <SectionHeader
+        step={4}
         title="The moments you came for"
         action={<TextLink>View all activities</TextLink>}
       />
@@ -854,7 +855,8 @@ function ThingsToDo({ dest }: { dest: DestinationView }) {
           ))}
         </div>
       )}
-      <ViatorPlaceBlock slug={dest.slug} name={dest.name} className="mt-8" />
+      <ViatorPlaceBlock slug={dest.slug} name={dest.name} className="mt-8" anchored={false} />
+      <TourTicketCards slug={dest.slug} name={dest.name} />
       <GetYourGuideWidget query={dest.name} />
     </section>
   );

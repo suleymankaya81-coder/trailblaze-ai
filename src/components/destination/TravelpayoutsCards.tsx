@@ -63,6 +63,17 @@ export function TravelpayoutsCards({ slug, name, airportCode }: { slug: string; 
   const getThere: Item[] = [
     { brand: "aviasales", name: "Aviasales", title: `Flights to${at || ` ${name}`}`, sub: flightSub, icon: Plane },
   ];
+  return (
+    <div className="mt-8">
+      <Group title="Getting there & getting around" items={getThere} slug={slug} rentals airportCode={airportCode} />
+      <p className="mt-3 text-[11px] text-muted-foreground">
+        Partner links via Travelpayouts and Webjet Group. The partner's site shows live prices and availability. Minialife may earn a commission at no extra cost to you.
+      </p>
+    </div>
+  );
+}
+
+export function TourTicketCards({ slug, name }: { slug: string; name: string }) {
   const doIt: Item[] = [
     { brand: "klook", name: "Klook", title: `Tours near ${name}`, sub: "Guided tours, day trips and attraction deals", icon: Ticket },
     { brand: "tiqets", name: "Tiqets", title: "Tickets & attractions", sub: "Instant mobile tickets for nearby sights", icon: Ticket },
@@ -70,8 +81,7 @@ export function TravelpayoutsCards({ slug, name, airportCode }: { slug: string; 
   ];
   return (
     <div className="mt-8">
-      <Group title="Getting there & getting around" items={getThere} slug={slug} rentals airportCode={airportCode} />
-      <Group title="Tours & tickets" items={doIt} slug={slug} />
+      <Group title="More tours & ticket partners" items={doIt} slug={slug} />
       <p className="mt-3 text-[11px] text-muted-foreground">
         Partner links via Travelpayouts and Webjet Group. The partner's site shows live prices and availability. Minialife may earn a commission at no extra cost to you.
       </p>

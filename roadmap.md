@@ -3,6 +3,7 @@
 - [x] 1. Homepage: hero, What is MiniaLife + 3 steps, 5 photo start squares, 1+4 places, 4 loops, rentals, 3 stay types, 3 green guide cards, 4 trip essentials, Why MiniaLife, collapsible phone footer.
 - [x] 2. Destination list, Road Trips, Gateway, Trip Guides and the 3 guide lists use the new photo cards; homepage car cards removed.
 - [x] 3. Destination pages: repeated facts removed, large booking buttons, serif card titles, no repeated stay photos, scenic city covers.
+- [ ] Requested before step 4: combine Tours & tickets with The moments you came for; check real Viator results for each of the 500 destinations and record empty/error cases honestly.
 - [ ] 4. Guide pages (Fly & Drive, RV, No Reservation, loops, gateways, search guides)
 - [ ] 5. About and static pages
 - [ ] 6. Final desktop/phone check and tests
