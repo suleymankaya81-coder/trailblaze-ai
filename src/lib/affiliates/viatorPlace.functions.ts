@@ -3,6 +3,7 @@ import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
 import { verifiedViatorProductUrl } from "./corridorPartners";
 import { viatorProductImage } from "./viatorImages";
+import { isPlaceExperienceRelevant } from "./viatorRelevance";
 
 export type PlaceExperience = {
   code: string; title: string; url: string; image: string;
@@ -45,10 +46,11 @@ export const getPlaceExperiences = createServerFn({ method: "GET" })
     const { data: dest } = await supabase.from("destinations").select("name, state").eq("slug", data.slug).eq("status", "published").maybeSingle();
     if (!dest) return { name: "", items: [] };
     const { data: cached } = await supabase.from("viator_place_cache").select("items, fetched_at").eq("slug", data.slug).maybeSingle();
-    if (cached && Date.now() - new Date(cached.fetched_at).getTime() < DAY) return { name: dest.name, items: cached.items as PlaceExperience[] };
+    const cachedItems = ((cached?.items as PlaceExperience[] | undefined) ?? []).filter((item) => isPlaceExperienceRelevant(dest.name, item.title, item.summary));
+    if (cached && Date.now() - new Date(cached.fetched_at).getTime() < DAY) return { name: dest.name, items: cachedItems };
 
     const key = process.env["VIATOR_API_KEY"];
-    if (!key) return { name: dest.name, items: (cached?.items as PlaceExperience[]) ?? [] };
+    if (!key) return { name: dest.name, items: cachedItems };
     let items: PlaceExperience[] = [];
     try {
       const res = await fetch("https://api.viator.com/partner/search/freetext", {
@@ -59,10 +61,11 @@ export const getPlaceExperiences = createServerFn({ method: "GET" })
       });
       if (!res.ok) {
         console.error(`[Viator place] ${res.status}`);
-        return { name: dest.name, items: (cached?.items as PlaceExperience[]) ?? [] };
+        return { name: dest.name, items: cachedItems };
       }
       const body = (await res.json()) as { products?: { results?: Product[] } };
       for (const p of body.products?.results ?? []) {
+        if (!isPlaceExperienceRelevant(dest.name, p.title, p.description)) continue;
         const url = verifiedViatorProductUrl(p.productUrl);
         const image = viatorProductImage(p.images);
         if (!url || !image?.startsWith("https://")) continue;
@@ -73,7 +76,7 @@ export const getPlaceExperiences = createServerFn({ method: "GET" })
       }
     } catch (e) {
       console.error("[Viator place] failed", e instanceof Error ? e.message : e);
-      return { name: dest.name, items: (cached?.items as PlaceExperience[]) ?? [] };
+      return { name: dest.name, items: cachedItems };
     }
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     await supabaseAdmin.from("viator_place_cache").upsert({ slug: data.slug, items, fetched_at: new Date().toISOString() });
