@@ -5,7 +5,7 @@ import { LOOPS } from "@/lib/seo/guides";
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
-import { SearchBar } from "@/components/site/SearchBar";
+import { PhotoCredit } from "@/components/shared/PhotoCredit";
 import { servicePhoto, type ServicePhotoCategory } from "@/lib/data/servicePhotos";
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
 import { RentalSearch } from "@/components/home/RentalSearch";
@@ -45,23 +45,19 @@ export const Route = createFileRoute("/")({
         content:
           "Free USA outdoor road trip itineraries: airport loops, national parks and RV routes. Plan your stops, check entry notes and book with travel partners.",
       },
-      {
-        property: "og:image",
-        content:
-          "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&h=630&q=75",
-      },
+      { property: "og:image", content: HERO_OG_IMAGE },
       { property: "og:url", content: "https://minialife.com/" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&h=630&q=75" },
+      { name: "twitter:image", content: HERO_OG_IMAGE },
     ],
     links: [{ rel: "canonical", href: "https://minialife.com/" }],
   }),
   component: HomePage,
 });
 
-const img = (id: string, w = 1200) =>
-  `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
+const HERO_OG_IMAGE = "https://minialife.com/__l5e/assets-v1/e4b73893-626c-4ef0-98e9-6257f2c03a1e/home-hero-trollstigen.jpg";
+
 
 
 const stayTypes: { name: string; category: ServicePhotoCategory; tag: string; why: string; price: string }[] = [
