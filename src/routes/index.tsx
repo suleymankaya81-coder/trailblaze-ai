@@ -6,7 +6,6 @@ import { LOOPS } from "@/lib/seo/guides";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { SearchBar } from "@/components/site/SearchBar";
-import { Button } from "@/components/ui/button";
 import { servicePhoto, type ServicePhotoCategory } from "@/lib/data/servicePhotos";
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
 import { AirportRentalsCards } from "@/components/destination/AirportRentalsCards";
