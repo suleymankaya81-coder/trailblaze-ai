@@ -87,6 +87,7 @@ export function RouteCard({ dest }: { dest: DestinationView }) {
 
 function StepCard({ n, icon, title, body, href, cta, brand, photo }: { n: number; icon: ReactNode; title: string; body: string; href: string; cta: string; brand: string; photo?: Photo }) {
   return (
+    <figure className="relative flex min-w-0 flex-col">
     <a
       href={href}
       target="_blank"
@@ -100,7 +101,6 @@ function StepCard({ n, icon, title, body, href, cta, brand, photo }: { n: number
         )}
         <span className="absolute left-4 top-4 grid h-11 w-11 place-items-center rounded-2xl bg-card/90 text-forest shadow-soft backdrop-blur">{icon}</span>
         <span className="absolute right-4 top-3 font-display text-3xl font-bold text-off-white drop-shadow">{n ? `0${n}` : ""}</span>
-        {photo && <PhotoCredit photo={photo} className="absolute right-2 bottom-2" />}
       </div>
       <div className="flex flex-1 flex-col p-6">
         <h3 className="font-display text-lg font-semibold text-foreground">{title}</h3>
@@ -114,6 +114,8 @@ function StepCard({ n, icon, title, body, href, cta, brand, photo }: { n: number
         </p>
       </div>
     </a>
+    {photo && <PhotoCredit photo={photo} className="absolute right-2 top-2" />}
+    </figure>
   );
 }
 

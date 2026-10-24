@@ -108,7 +108,7 @@ function Page() {
           <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3">
             {camps.map((o, i) => {
               const photo = servicePhoto("rvpark", `${dest.slug}:${o.id}`, i);
-              return photo ? <PartnerPhotoCard key={o.id} brand={partnerLabel(o.partner) ?? "Partner"} title={o.title} href={o.externalUrl ?? ""} photo={photo} detail={o.whyRecommended ?? undefined} badges={["Compare RV & campervan suppliers"]} cta="Check RV availability" price={o.priceValue != null ? `From $${o.priceValue}/day` : (o.priceDisplay ?? estimatedFrom("motorhome"))} /> : null;
+              return photo ? <PartnerPhotoCard key={o.id} brand={partnerLabel(o.partner) ?? "Partner"} title={o.title} href={o.externalUrl ?? ""} photo={photo} detail={o.whyRecommended ?? undefined} cta="Check campground availability" price={o.priceDisplay ?? (o.priceValue != null ? `From $${o.priceValue}/${o.priceUnit ?? "night"}` : undefined)} /> : null;
             })}
           </div>
           <div className="mt-6"><HarvestHostsCard destinationName={dest.name} /></div>
@@ -119,7 +119,7 @@ function Page() {
             <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3">
               {rentals.map((o, i) => {
                 const photo = servicePhoto(/campervan/i.test(o.title) ? "campervan" : "rv", `${dest.slug}:${o.id}`, i);
-                return photo ? <PartnerPhotoCard key={o.id} brand="Motorhome Republic" title={o.title} href={o.externalUrl ?? ""} photo={photo} detail={o.whyRecommended ?? undefined} /> : null;
+                return photo ? <PartnerPhotoCard key={o.id} brand="Motorhome Republic" title={o.title} href={o.externalUrl ?? ""} photo={photo} detail={o.whyRecommended ?? undefined} price={o.priceDisplay ?? estimatedFrom("motorhome")} cta="Compare RV & campervan rates" /> : null;
               })}
             </div>
           </GuideSection>
