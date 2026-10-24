@@ -13,12 +13,12 @@ const title = "Trip Guides: Fly & Drive, RV, Permits & Loops — MiniaLife";
 const description = "All MiniaLife trip guides in one place: road trip loops, gateway road trips, fly & drive, RV & camping and no-reservation guides.";
 
 const FAMILIES = [
-  { cover: "zion-national-park", to: "/road-trips", icon: Map, count: `${LOOPS.length} loops`, label: "Road Trip Loops", text: "Multi-park loops with days per stop and drive distances." },
+  { cover: "zion", to: "/road-trips", icon: Map, count: `${LOOPS.length} loops`, label: "Road Trip Loops", text: "Multi-park loops with days per stop and drive distances." },
   { cover: "big-sur", to: "/corridors", icon: Plane, count: `${CORRIDORS.length} airport loops`, label: "Gateway Road Trips", text: "Fly into a major airport, drive the loop, fly home." },
-  { cover: "acadia-national-park", to: "/fly-and-drive", icon: Car, count: "500 guides", label: "Fly & Drive", text: "Closest airport, drive time, car and first night for every destination." },
-  { cover: "grand-teton-national-park", to: "/rv-camping", icon: Truck, count: "363 guides", label: "RV & Camping", text: "Campgrounds, RV parks and campervan rentals." },
+  { cover: "acadia", to: "/fly-and-drive", icon: Car, count: "500 guides", label: "Fly & Drive", text: "Closest airport, drive time, car and first night for every destination." },
+  { cover: "grand-teton", to: "/rv-camping", icon: Truck, count: "363 guides", label: "RV & Camping", text: "Campgrounds, RV parks and campervan rentals." },
   { cover: "arches-national-park", to: "/no-reservation", icon: Ticket, count: "228 guides", label: "No Reservation", text: "Entry rules and backup plans where booking matters." },
-  { cover: "yellowstone-national-park", to: "/destinations", icon: MapPinned, count: "500 places", label: "All Destinations", text: "Every place with its map, day-by-day plan and stays." },
+  { cover: "yellowstone", to: "/destinations", icon: MapPinned, count: "500 places", label: "All Destinations", text: "Every place with its map, day-by-day plan and stays." },
 ];
 
 export const Route = createFileRoute("/trip-guides")({
@@ -40,7 +40,7 @@ function Page() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <PageHero image={covers["yellowstone-national-park"] ?? Object.values(covers)[0]} kicker="Trip Guides" title="Find the guide for your trip" intro="Choose how you're travelling and we'll show every matching guide." />
+      <PageHero image={covers["yellowstone"] ?? Object.values(covers)[0]} kicker="Trip Guides" title="Find the guide for your trip" intro="Choose how you're travelling and we'll show every matching guide." />
       <main className="container-page py-10 md:py-14">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {FAMILIES.map((f) => (
