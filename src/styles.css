@@ -241,7 +241,15 @@
 }
 
 /* Selected editorial collage: an unframed opening, not a photo carousel. */
-.home-collage-hero { overflow: hidden; background: var(--background); }
+.home-collage-hero {
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  background:
+    linear-gradient(135deg,
+      color-mix(in oklab, var(--sage) 22%, var(--off-white)) 0%,
+      color-mix(in oklab, var(--sand) 45%, var(--off-white)) 55%,
+      var(--beige) 100%);
+}
 .home-collage-layout { display: grid; gap: 2rem; padding-block: 2rem; }
 .home-collage-copy { min-width: 0; align-self: center; }
 .home-collage-scenes { position: relative; display: grid; grid-template-columns: 1.2fr 1fr 0.85fr; gap: 0.5rem; height: 300px; padding-bottom: 20px; }
