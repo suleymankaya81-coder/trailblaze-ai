@@ -73,12 +73,17 @@ export function RentalSearch() {
       <div className="p-6 md:p-8">
         <p className="text-xs font-bold uppercase tracking-[0.22em] text-foreground/60">Live search · {t.brand}</p>
         <p className="mt-2 max-w-xl text-sm text-muted-foreground">{t.blurb}</p>
+        <ul className="mt-3 flex flex-wrap gap-1.5">
+          {(tab === "rv" ? ["Compare RV & campervan suppliers", "Pickup across the USA"] : ["Compare airport suppliers", "Free cancellation on many rates", "Same-airport return"]).map((b) => (
+            <li key={b} className="rounded-full bg-secondary px-2.5 py-1 text-[11px] font-medium text-foreground">✓ {b}</li>
+          ))}
+        </ul>
         {visible && <iframe ref={frame} key={tab} title={`${t.brand} live rental search`} srcDoc={documentHtml}
           sandbox="allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox" height={height}
-          className={`mt-5 w-full border-0 ${ready ? "" : "hidden"}`} />}
+          className={`mt-5 w-full rounded-lg border border-border bg-background ${ready ? "" : "hidden"}`} />}
         <Button asChild variant={ready ? "outline" : "default"} className="mt-4 h-auto whitespace-normal py-3">
           <a href={t.fallback} target="_blank" rel="sponsored nofollow noopener noreferrer">
-            Search on {t.brand}
+            {tab === "rv" ? "Check RV availability on Motorhome Republic" : "Compare airport car rates"}
           </a>
         </Button>
         <p className="mt-4 text-[11px] text-muted-foreground">Partner links · MiniaLife may earn a commission. Prices and availability are confirmed on the partner site.</p>

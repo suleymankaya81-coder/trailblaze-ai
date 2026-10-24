@@ -1,3 +1,4 @@
+import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ViatorPlaceBlock } from "@/components/destination/ViatorPlaceBlock";
@@ -102,7 +103,7 @@ function Page() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {camps.map((o, i) => {
               const photo = servicePhoto("rvpark", `${dest.slug}:${o.id}`, i);
-              return photo ? <PartnerPhotoCard key={o.id} brand={partnerLabel(o.partner) ?? "Partner"} title={o.title} href={o.externalUrl!} photo={photo} detail={o.whyRecommended ?? undefined} /> : null;
+              return photo ? <PartnerPhotoCard key={o.id} brand={partnerLabel(o.partner) ?? "Partner"} title={o.title} href={o.externalUrl!} photo={photo} detail={o.whyRecommended ?? undefined} badges={["Compare RV & campervan suppliers"]} cta="Check RV availability" price={o.priceValue != null ? `From $${o.priceValue}/day` : (o.priceDisplay ?? estimatedFrom("motorhome"))} /> : null;
             })}
           </div>
           <div className="mt-6"><HarvestHostsCard destinationName={dest.name} /></div>

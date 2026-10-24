@@ -1,3 +1,4 @@
+import { offerCtaLabel } from "@/lib/affiliates/ctaLabel";
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
@@ -656,7 +657,7 @@ function StayCard({
         )}
         <div className="mt-4 flex items-center justify-between gap-3 border-t border-border pt-3">
           <PriceTag offer={offer} fallbackUnit="night" />
-          <OfferCta offer={offer} label="Check availability" destinationSlug={destinationSlug} />
+          <OfferCta offer={offer} label={offerCtaLabel(offer.category)} destinationSlug={destinationSlug} />
         </div>
       </div>
     </article>
@@ -813,7 +814,7 @@ function RentalTile({ offer, destinationSlug, photo }: { offer: OfferView; desti
         </span>
         <OfferCta
           offer={offer}
-          label="See rental options"
+          label={offerCtaLabel(offer.category)}
           size="sm"
           destinationSlug={destinationSlug}
         />
@@ -865,7 +866,7 @@ function ThingsToDo({ dest }: { dest: DestinationView }) {
                   />
                   <OfferCta
                     offer={a}
-                    label="Explore activity"
+                    label={offerCtaLabel("activity", dest.name)}
                     size="sm"
                     destinationSlug={dest.slug}
                   />
