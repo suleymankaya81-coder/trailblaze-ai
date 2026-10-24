@@ -370,9 +370,9 @@ function PhotoCredit({ photo }: { photo?: Photo }) {
   if (!photo) return null;
   return (
     <a href={photo.source} target="_blank" rel="noopener noreferrer" title={`${photo.subject} · ${photo.credit} · ${photo.license}`}
-      onClick={(event) => event.stopPropagation()}
-      className="absolute bottom-1 right-1 z-10 max-w-[85%] truncate bg-ink/80 px-1.5 py-0.5 text-[9px] text-off-white">
-       Illustrative · {photo.credit} · {photo.license}
+      onClick={(event) => event.stopPropagation()} aria-label={`Illustrative photo credit: ${photo.credit}, ${photo.license}`}
+      className="absolute bottom-1 right-1 z-10 rounded bg-ink/80 px-1.5 py-0.5 text-[10px] text-off-white">
+       ©
     </a>
   );
 }
