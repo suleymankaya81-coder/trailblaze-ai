@@ -252,10 +252,10 @@ function HomePage() {
                 key={c.value}
                 to="/destinations"
                 search={{ tag: c.value }}
-                className="group flex flex-col items-center gap-2 rounded-2xl border border-border bg-card px-4 py-6 text-center transition hover:border-foreground/30 hover:shadow-soft"
+                className="group flex flex-col items-center gap-2 rounded-2xl border-2 border-foreground/15 bg-card px-4 py-6 text-center shadow-soft transition hover:border-primary hover:bg-primary hover:text-primary-foreground"
               >
-                <c.icon className="h-6 w-6 text-foreground/70 transition group-hover:text-foreground" />
-                <span className="text-sm font-semibold text-foreground">{c.label}</span>
+                <c.icon className="h-6 w-6 text-primary transition group-hover:text-primary-foreground" />
+                <span className="text-sm font-semibold text-foreground group-hover:text-primary-foreground">{c.label}</span>
               </Link>
             ))}
           </div>
@@ -391,7 +391,7 @@ function HomePage() {
             </div>
           </div>
 
-          <div className="mt-16 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
             {planIncludes.map((p) => (
               <div
                 key={p.title}

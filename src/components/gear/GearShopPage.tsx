@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, Check, ChevronRight, Handshake, Sparkles } from "lucide-react";
+import { ArrowRight, Check, ChevronRight, Sparkles } from "lucide-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { gearCategories, GEAR_COUNTS_REVIEW_DATE, wildguarderProducts, wildguarderPrice, wildguarderStoreUrl, wildguarderLink, WILDGUARDER_REVIEW_DATE } from "@/lib/data/gearCategories";
@@ -173,11 +173,6 @@ export function GearShopPage() {
               </div>
               <img src={brandWildguarder} alt="Great horned owl perched on a pine branch at night" loading="lazy" width={1024} height={768} className="h-20 w-28 shrink-0 rounded-lg object-cover" />
             </a>
-            <div className="flex flex-col items-center justify-center gap-2 rounded-xl border border-dashed border-border bg-card p-4 text-center shadow-soft">
-              <Handshake className="h-7 w-7 text-sage-deep" />
-              <p className="text-sm font-semibold text-foreground">More partner brands</p>
-              <p className="text-xs text-muted-foreground">coming soon</p>
-            </div>
           </div>
         </section>
 

@@ -48,9 +48,11 @@ function StayCard({
           href={pic.source}
           target="_blank"
           rel="noopener noreferrer"
-          className="absolute bottom-1.5 right-1.5 rounded bg-background/80 px-1.5 py-0.5 text-[9px] text-muted-foreground"
+          title={`${pic.credit} · ${pic.license}`}
+          aria-label={`Photo credit: ${pic.credit}, ${pic.license}`}
+          className="absolute bottom-1.5 right-1.5 rounded bg-background/80 px-1.5 py-0.5 text-[10px] text-muted-foreground"
         >
-          Illustrative photo · {pic.credit} · {pic.license}
+          ©
         </a>
       </div>
       <div className="flex flex-1 flex-col p-5 sm:p-6">
@@ -85,9 +87,9 @@ export function VrboSearchWidget({ destinationName }: { destinationName: string 
       <div className="grid gap-4 md:grid-cols-2">
         <StayCard
           brand="Vrbo"
-          title={`Cabins & vacation rentals near ${destinationName}`}
+          title={`Search cabins & vacation rentals near ${destinationName}`}
           href={buildVrboSearchUrl(destinationName)}
-          cta="See cabins on Vrbo"
+          cta="Search cabins on Vrbo"
           pic={servicePhoto("cabin", destinationName + ":vrbo") ?? CABINS[0]}
           points={[
             { icon: Mountain, text: "Whole-home cabins and mountain lodges" },
@@ -97,9 +99,9 @@ export function VrboSearchWidget({ destinationName }: { destinationName: string 
         />
         <StayCard
           brand="Expedia"
-          title={`Hotels & lodges near ${destinationName}`}
+          title={`Search hotels & lodges near ${destinationName}`}
           href={buildExpediaHotelSearchUrl(destinationName)}
-          cta="See hotels on Expedia"
+          cta="Search hotels on Expedia"
           pic={servicePhoto("hotel", destinationName + ":expedia") ?? HOTELS[1]}
           points={[
             { icon: MapPin, text: "Hotels in nearby gateway towns" },
@@ -109,7 +111,7 @@ export function VrboSearchWidget({ destinationName }: { destinationName: string 
         />
       </div>
       <p className="mt-3 text-[11px] text-muted-foreground">
-        Photos are illustrative, not actual listings. Opens Vrbo's or Expedia's own search. Minialife may earn a commission on bookings, at no extra cost to you.
+        Each button opens a live search for this area on Vrbo or Expedia; photos show the stay type only. Minialife may earn a commission on bookings, at no extra cost to you.
       </p>
     </div>
   );

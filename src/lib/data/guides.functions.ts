@@ -30,7 +30,7 @@ export const getLoopStops = createServerFn({ method: "GET" })
   .handler(async ({ data }): Promise<LoopStop[]> => {
     const { data: rows, error } = await supabase
       .from("destinations")
-      .select("slug, name, lat, lng, hero_image, trip_duration_days, permit_level, permit_headline")
+      .select("slug, name, lat, lng, hero_image, trip_duration_days, permit_level, permit_headline, nearest_airport_code, nearest_airport_name")
       .eq("status", "published")
       .in("slug", data.slugs);
     if (error) throw new Error("Could not load loop stops");
@@ -41,6 +41,7 @@ export const getLoopStops = createServerFn({ method: "GET" })
       return [{
         slug: r.slug, name: r.name, lat: r.lat, lng: r.lng, heroImage: r.hero_image ?? "",
         tripDurationDays: r.trip_duration_days, permitLevel: (r.permit_level as LoopStop["permitLevel"]) ?? null, permitHeadline: r.permit_headline,
+        airportCode: r.nearest_airport_code ?? null, airportName: r.nearest_airport_name ?? null,
       }];
     });
   });
