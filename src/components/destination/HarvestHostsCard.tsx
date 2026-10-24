@@ -1,3 +1,4 @@
+import { PhotoCredit } from "@/components/shared/PhotoCredit";
 import { useState } from "react";
 import { ArrowRight, Check, Copy, Tent } from "lucide-react";
 import { servicePhoto } from "@/lib/data/servicePhotos";
@@ -46,14 +47,7 @@ export function HarvestHostsCard({ destinationName }: { destinationName: string 
     <div className="mt-6 flex flex-col overflow-hidden rounded-2xl border border-border bg-card md:flex-row">
       <div className="relative aspect-[16/9] bg-muted md:aspect-auto md:w-64 md:shrink-0">
         <img src={pic.url} alt="Illustrative RV overnight stop — not an actual Harvest Hosts location" loading="lazy" className="h-full w-full object-cover" />
-        <a
-          href={pic.source}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="absolute bottom-1.5 right-1.5 rounded bg-background/80 px-1.5 py-0.5 text-[9px] text-muted-foreground"
-        >
-          Illustrative photo · {pic.credit} · {pic.license}
-        </a>
+        <PhotoCredit photo={pic} />
       </div>
       <div className="flex flex-1 flex-col gap-4 p-5 md:flex-row md:items-center">
         <div className="hidden h-12 w-12 shrink-0 items-center justify-center rounded-full bg-secondary text-foreground md:flex">

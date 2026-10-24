@@ -1,3 +1,5 @@
+import { PhotoCredit } from "@/components/shared/PhotoCredit";
+import { offerCtaLabel } from "@/lib/affiliates/ctaLabel";
 import { useServerFn } from "@tanstack/react-start";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
@@ -69,9 +71,7 @@ export function LandingOfferCard({ offer, destinationSlug, photo }: { offer: Off
       {photo && (
         <div className="relative aspect-[4/3]">
           <img src={photo.url} alt={`${photo.subject}, illustrative photo`} loading="lazy" className="h-full w-full object-cover" />
-          <span className="absolute bottom-1.5 right-1.5 rounded bg-ink/60 px-1.5 py-0.5 text-[9px] text-off-white">
-            Illustrative · <a href={photo.source} target="_blank" rel="noopener noreferrer" className="underline">{photo.credit}</a>
-          </span>
+          <PhotoCredit photo={photo} />
         </div>
       )}
       <div className="flex flex-1 flex-col gap-2 p-4">
@@ -85,8 +85,8 @@ export function LandingOfferCard({ offer, destinationSlug, photo }: { offer: Off
         {offer.externalUrl && (
           <div className="mt-auto pt-2">
             <a href={offer.externalUrl} target="_blank" rel={m.rel} title={outboundLinkTitle(offer.partner, offer.externalUrl)} onClick={onClick}
-              className="inline-flex items-center gap-1.5 rounded-full bg-copper px-4 py-2 text-xs font-semibold text-off-white hover:bg-copper/90">
-              Check availability <ArrowRight className="h-3.5 w-3.5" />
+              className="inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground hover:bg-primary/90">
+              {offerCtaLabel(offer.category)} <ArrowRight className="h-3.5 w-3.5" />
             </a>
             <p className="mt-1 text-[10px] text-muted-foreground">{m.note}</p>
           </div>

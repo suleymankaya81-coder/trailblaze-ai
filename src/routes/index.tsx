@@ -22,6 +22,7 @@ import { Footer } from "@/components/site/Footer";
 import { SearchBar } from "@/components/site/SearchBar";
 import { Button } from "@/components/ui/button";
 import { servicePhoto, type ServicePhotoCategory } from "@/lib/data/servicePhotos";
+import { PhotoCredit } from "@/components/shared/PhotoCredit";
 import { AirportRentalsCards } from "@/components/destination/AirportRentalsCards";
 import { RentalSearch } from "@/components/home/RentalSearch";
 import {
@@ -337,7 +338,7 @@ function HomePage() {
               const photo = servicePhoto(s.category, "homepage-stays");
               if (!photo) return null;
               return (
-              <figure key={s.name}>
+              <figure key={s.name} className="relative">
               <Link
                 to="/destinations"
                 search={{ tag: s.tag } as never}
@@ -354,7 +355,7 @@ function HomePage() {
                   {s.name}
                 </h3>
               </Link>
-              <figcaption className="mt-2 text-[10px] text-muted-foreground">Illustrative · <a href={photo.source} target="_blank" rel="noopener noreferrer" className="underline">{photo.credit} · {photo.license}</a></figcaption>
+              <PhotoCredit photo={photo} className="absolute right-2 top-2" />
               </figure>
             );})}
           </div>

@@ -18,8 +18,8 @@ export function servicePhoto(category: ServicePhotoCategory, seed: string, offse
 
 export function airportRentalPhoto(kind: "car" | "suv", seed: string): Photo | undefined {
   const matching = pools.car?.filter((photo) => kind === "suv"
-    ? /rav4|explorer|suzuki across/i.test(photo.subject)
-    : /seal|sedan/i.test(photo.subject));
+    ? /suv/i.test(photo.subject)
+    : /sedan/i.test(photo.subject));
   if (!matching?.length) return servicePhoto("car", seed, kind === "suv" ? 1 : 0);
   return matching[photoHash(seed) % matching.length];
 }
@@ -62,7 +62,8 @@ const ESTIMATES: Array<[RegExp, string]> = [
   [/cabin|vacation|tiny|home/, "Est. from $120/night"],
   [/hotel|lodge|inn|resort/, "Est. from $110/night"],
   [/motorhome|\brv\b|class [abc]|campervan|\bvan\b/, "Est. from $150/day"],
-  [/car|suv|sedan/, "Est. from $45/day"],
+  [/\bsuv\b/, "Est. from $55/day"],
+  [/car|sedan/, "Est. from $45/day"],
   [/bike|bicycle|kayak|canoe/, "Est. from $35/day"],
   [/camp|tent|site|harvest|roverpass/, "Est. from $35/night"],
 ];

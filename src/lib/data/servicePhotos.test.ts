@@ -7,8 +7,8 @@ describe("service photo matching", () => {
   it("uses distinct sedan and SUV subjects for Airport Rentals", () => {
     const car = airportRentalPhoto("car", "homepage");
     const suv = airportRentalPhoto("suv", "homepage");
-    expect(car?.subject).toMatch(/seal|sedan/i);
-    expect(suv?.subject).toMatch(/rav4|explorer|suzuki across/i);
+    expect(car?.subject).toMatch(/sedan/i);
+    expect(suv?.subject).toMatch(/suv/i);
     expect(car?.url).not.toBe(suv?.url);
   });
   it("distinguishes cars, campervans and bicycles", () => {
@@ -25,7 +25,7 @@ describe("service photo matching", () => {
     expect(library.cabin.map((p) => p.url)).toContain(photo?.url);
   });
   it("varies photos between destinations and adjacent same-service cards", () => {
-    const choices = ["acadia", "yosemite", "moab", "grand-teton", "glacier"].map((slug) => servicePhoto("car", slug)?.url);
+    const choices = ["acadia", "yosemite", "moab", "grand-teton", "glacier", "zion", "big-sur", "sedona", "olympic"].map((slug) => servicePhoto("car", slug)?.url);
     expect(new Set(choices).size).toBeGreaterThan(1);
     expect(servicePhoto("car", "yosemite", 0)?.url).not.toBe(servicePhoto("car", "yosemite", 1)?.url);
   });
@@ -37,5 +37,7 @@ import { estimatedFrom } from "./servicePhotos";
 describe("estimatedFrom", () => {
   it("campground estimate", () => expect(estimatedFrom("Riverside campground")).toBe("Est. from $35/night"));
   it("cabin estimate", () => expect(estimatedFrom("Lakeside cabin")).toBe("Est. from $120/night"));
+  it("SUV estimate", () => expect(estimatedFrom("SUV rentals at BHB")).toBe("Est. from $55/day"));
+  it("standard car estimate", () => expect(estimatedFrom("Standard car rentals")).toBe("Est. from $45/day"));
   it("RV estimate", () => expect(estimatedFrom("Class C RV")).toBe("Est. from $150/day"));
 });

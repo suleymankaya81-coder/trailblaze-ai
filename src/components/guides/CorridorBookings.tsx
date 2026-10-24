@@ -1,12 +1,28 @@
 import { ArrowUpRight, Car, Plane, Smartphone, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { servicePhoto, airportRentalPhoto } from "@/lib/data/servicePhotos";
+import { servicePhoto, airportRentalPhoto, estimatedFrom } from "@/lib/data/servicePhotos";
 import { corridorPartnerLinks } from "@/lib/affiliates/corridorPartners";
 import { BOOKING_STEPS } from "@/lib/affiliates/bookingSteps";
+import { useQuery } from "@tanstack/react-query";
+import { getFlightPrice } from "@/lib/affiliates/flights.functions";
+import { flightFareBadge } from "@/lib/affiliates/flightFare";
 
 export function CorridorBookings({ slug, airport, city }: { slug: string; airport: string; city: string }) {
   const links = corridorPartnerLinks(slug);
   const step = (k: (typeof BOOKING_STEPS)[number]["key"]) => BOOKING_STEPS.findIndex((s) => s.key === k) + 1;
+  const { data: fare } = useQuery({
+    queryKey: ["flight-price", airport],
+    queryFn: () => getFlightPrice({ data: { airport } }),
+    staleTime: 60 * 60 * 1000,
+  });
+  const fareBadge = flightFareBadge(fare?.price);
+  const badges: Record<string, string[]> = {
+    flight: fareBadge ? [fareBadge] : [],
+    motorhome: ["Compare RV & campervan suppliers"],
+    car: [`Compare suppliers at ${airport}`, "Free cancellation on many rates"],
+    esim: [],
+  };
+  const prices: Record<string, string | null> = { flight: null, motorhome: estimatedFrom("motorhome"), car: estimatedFrom("car"), esim: null };
   const items = [
     { key: "flight", step: step("flight"), icon: Plane, title: `Flights to ${airport}`, brand: "Aviasales", cta: `Find flights to ${airport}`, detail: "Compare arrival dates before fixing your first night.", href: links.flight, photo: servicePhoto("flight", slug) },
     { key: "motorhome", step: step("vehicle"), icon: Truck, title: "Motorhome or campervan", brand: "Motorhome Republic", cta: `Compare RVs near ${airport}`, detail: "Professional fleets; check pickup hours and park vehicle limits.", href: links.motorhome, photo: servicePhoto("rv", slug) },
@@ -22,6 +38,8 @@ export function CorridorBookings({ slug, airport, city }: { slug: string; airpor
         </div> : <div className="flex aspect-[16/9] items-center justify-center bg-muted"><item.icon className="h-12 w-12 text-primary" /></div>}
         <div className="flex flex-1 flex-col p-4">
           <p className="flex items-center gap-2 text-[10px] uppercase text-muted-foreground"><span className="grid h-5 w-5 place-items-center rounded-full bg-primary text-[10px] font-bold text-primary-foreground">{item.step}</span>Step {item.step} · {item.brand}</p>
+          {prices[item.key] ? <p className="mt-2 font-display text-base font-semibold text-foreground">{prices[item.key]} <span className="text-[10px] font-normal text-muted-foreground">· typical rate</span></p> : null}
+          {badges[item.key]?.length ? <ul className="mt-2 flex flex-wrap gap-1.5">{badges[item.key].map((b) => <li key={b} className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-medium text-foreground">✓ {b}</li>)}</ul> : null}
           <h3 className="mt-2 font-display text-base font-semibold text-foreground">{item.title}</h3>
           <p className="mb-5 mt-2 text-xs leading-relaxed text-muted-foreground">{item.detail}</p>
           <Button asChild size="sm" className="mt-auto h-auto min-h-9 whitespace-normal rounded-lg py-2 text-center"><a href={item.href} target="_blank" rel="sponsored nofollow noopener noreferrer" onClick={(e) => { e.preventDefault(); window.open(item.href, "_blank", "noopener,noreferrer"); }}>{item.cta}<ArrowUpRight /></a></Button>

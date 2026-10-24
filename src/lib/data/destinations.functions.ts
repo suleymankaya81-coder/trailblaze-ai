@@ -409,3 +409,20 @@ export const getDestinationsList = createServerFn({ method: "GET" })
       total: count ?? 0,
     };
   });
+
+// Cover photos for route list cards: slug → published hero image.
+export const getDestinationCovers = createServerFn({ method: "GET" })
+  .inputValidator((d: unknown) => z.object({ slugs: z.array(z.string().max(80)).max(300) }).parse(d))
+  .handler(async ({ data }): Promise<Record<string, string>> => {
+    if (!data.slugs.length) return {};
+    const { data: rows, error } = await supabase
+      .from("destinations")
+      .select("slug, hero_image")
+      .eq("status", "published")
+      .in("slug", data.slugs);
+    if (error) {
+      console.error("[getDestinationCovers] query failed", error);
+      return {};
+    }
+    return Object.fromEntries((rows ?? []).filter((r) => r.hero_image).map((r) => [r.slug, r.hero_image as string]));
+  });
