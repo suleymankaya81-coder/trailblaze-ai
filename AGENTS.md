@@ -27,7 +27,7 @@
 - Motorhome Republic and Airport Rentals are Webjet affiliate links built only via `src/lib/affiliates/webjet.ts`; homepage widgets use separate sandboxed documents with provider base URLs and a visible tracked fallback when fields do not load. Why: isolate conflicting Republic globals and avoid showing broken or empty forms.
 - Live Viator listings on destination and guide pages load from `/experiences/place/$slug` (noindex frame, 24h `viator_place_cache`). Why: Viator content must not be indexed and API calls stay bounded.
 - Viator place searches and cached results require place-specific provider-text matches; empty results remain empty instead of substituting another destination. Why: free-text search can return unrelated states or cities.
-- Site search sends trip-type queries to hubs via `src/lib/data/searchIntent.ts` and matches places by whole words only. Why: short aliases matched inside other words and sent visitors to the wrong place.
+- Site search checks whole-word destination matches before trip-type hub fallbacks via `src/lib/data/searchIntent.ts`. Why: named places must win over words like camping or gateway, without matching short aliases inside unrelated words.
 - Road Trips is one menu entry; `/road-trips` and `/corridors` cross-link as tabs, and loop pages show route booking cards only when a stop has airport data. Shared booking stages are flight → vehicle → stay → tours → gear; data and luggage are unnumbered preparation services. Why: one clear entry, consistent decision order and no invented airports.
 
 - Partner-card photo credits use the shared PhotoCredit (©) component and button text comes from offerCtaLabel. Why: credits stay compact and CTAs consistent across card types.
