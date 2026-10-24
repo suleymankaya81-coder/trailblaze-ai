@@ -14,7 +14,7 @@
   --radius-4xl: calc(var(--radius) + 16px);
 
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
   --font-serif: "Fraunces", ui-serif, Georgia, serif;
 
   --color-background: var(--background);
@@ -52,6 +52,9 @@
   --color-clay-soft: var(--clay-soft);
   --color-amber: var(--amber);
   --color-sand-warm: var(--sand-warm);
+  --color-thumb: var(--thumb-bg);
+  --color-mustard: var(--mustard);
+  --color-terracotta: var(--terracotta);
   --font-hand: "Caveat", cursive;
 
   --shadow-soft: 0 1px 2px oklch(0.2 0.02 80 / 0.04), 0 8px 30px oklch(0.2 0.02 80 / 0.06);
@@ -67,7 +70,10 @@
   --sand: oklch(0.91 0.025 80);
   --sage: oklch(0.82 0.045 150);
   --sage-deep: oklch(0.48 0.08 152);
-  --forest: oklch(0.32 0.055 155);
+  --forest: oklch(0.355 0.055 158); /* #1B4431 */
+  --thumb-bg: oklch(0.945 0.01 90); /* #EFEDE6 */
+  --mustard: oklch(0.86 0.13 92); /* #F3D053 */
+  --terracotta: oklch(0.52 0.16 35); /* #BA361A */
   --ember: var(--forest);
   --ink: oklch(0.18 0.012 80);
   /* Compatibility aliases keep every existing action in the green palette. */
@@ -80,7 +86,7 @@
   --amber: oklch(0.8 0.14 80);
   --sand-warm: oklch(0.95 0.03 80);
 
-  --background: oklch(0.987 0.003 100);
+  --background: oklch(0.973 0.006 90); /* #F7F6F2 */
   --foreground: var(--ink);
   --card: oklch(1 0 0);
   --card-foreground: var(--ink);
@@ -96,7 +102,7 @@
   --accent-foreground: var(--forest);
   --destructive: oklch(0.55 0.18 28);
   --destructive-foreground: var(--off-white);
-  --border: oklch(0.91 0.008 85);
+  --border: oklch(0.91 0.007 85); /* #E6E4DF */
   --input: oklch(0.93 0.008 85);
   --ring: var(--forest);
 }
@@ -138,8 +144,8 @@
 
   h1, h2, h3 {
     font-family: var(--font-display);
-    font-weight: 700;
-    letter-spacing: 0;
+    font-weight: 600;
+    letter-spacing: -0.01em;
   }
 }
 
@@ -211,3 +217,25 @@
 .webjet-form div.republic-section-button { background-image: none; }
 .webjet-form p.republic-number-one { display: none !important; }
 .webjet-form div.republic-logo { background-image: none !important; height: 0 !important; }
+
+/* REI-style shared card system */
+@utility swipe-row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 85%;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  & > * { scroll-snap-align: start; min-width: 0; }
+  &::-webkit-scrollbar { display: none; }
+  @media (min-width: 768px) {
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+    overflow: visible;
+  }
+}
+@utility section-y {
+  padding-block: 3.5rem;
+  @media (min-width: 768px) { padding-block: 5.5rem; }
+}

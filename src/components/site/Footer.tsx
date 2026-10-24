@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import logoStacked from "@/assets/logos/minialife-stacked-mixedcase-trimmed.png";
 
@@ -29,6 +30,8 @@ const groups = [
 ] as const;
 
 export function Footer() {
+  const [wide, setWide] = useState(true);
+  useEffect(() => { setWide(window.matchMedia("(min-width: 768px)").matches); }, []);
   return (
     <footer className="border-t border-border bg-beige/50">
       <div className="container-page py-16">
@@ -48,18 +51,18 @@ export function Footer() {
           </p>
         </div>
 
-        <nav className="mt-10 grid grid-cols-2 gap-8 border-t border-border pt-8 text-sm md:grid-cols-4">
+        <nav className="mt-10 border-t border-border pt-2 text-sm md:grid md:grid-cols-4 md:gap-8 md:pt-8">
           {groups.map((g) => (
-            <div key={g.title}>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">{g.title}</p>
-              <ul className="mt-3 space-y-2">
+            <details key={g.title} className="group border-b border-border md:border-0" open={wide}>
+              <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground md:pointer-events-none md:min-h-0">{g.title}<span className="md:hidden transition group-open:rotate-45">+</span></summary>
+              <ul className="mb-4 mt-3 space-y-2">
                 {g.links.map((link) => (
                   <li key={link.to}>
                     <Link to={link.to} className="text-foreground/80 hover:text-forest hover:underline">{link.label}</Link>
                   </li>
                 ))}
               </ul>
-            </div>
+            </details>
           ))}
         </nav>
 

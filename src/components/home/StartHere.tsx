@@ -1,39 +1,49 @@
-import { Link } from '@tanstack/react-router';
-import { ArrowRight, MapPinned, Mountain, Plane, Route, ShoppingBag, Truck } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { CategoryTile, SectionHead, Thumb } from '@/components/ui-kit';
+import mapImg from '@/assets/thumbs/map.jpg';
+import planImg from '@/assets/thumbs/plan.jpg';
+import carImg from '@/assets/thumbs/car.jpg';
+import flightImg from '@/assets/thumbs/flight.jpg';
+import rvImg from '@/assets/thumbs/rv.jpg';
+import gearImg from '@/assets/thumbs/gear.jpg';
+import roadImg from '@/assets/thumbs/road.jpg';
 
-const entries = [
-  { to: '/destinations', icon: Mountain, title: 'Parks & outdoor places', detail: 'Find your destination' },
-  { to: '/road-trips', icon: Route, title: 'Multi-park road trips', detail: 'Connect the stops' },
-  { to: '/corridors', icon: Plane, title: 'Fly-in road trips', detail: 'Start at an airport' },
-  { to: '/rv-camping', icon: Truck, title: 'RV & camping', detail: 'Plan your overnights' },
-  { to: '/gear', icon: ShoppingBag, title: 'Curated trip essentials', detail: 'Find gear for the road' },
-] as const;
+const steps = [
+  { img: mapImg, title: 'Choose a park or route', text: '500+ outdoor places, 30 multi-park loops and 24 road trips that start at an airport.' },
+  { img: planImg, title: 'See your plan on one page', text: 'Day-by-day stops, a route map, arrival airport, reservation notes and where to stay.' },
+  { img: carImg, title: 'Book with the partner', text: 'Compare flights, cars, RVs, stays and tours, then check the final price on the partner site.' },
+];
 
-export function StartHere() {
+/** Homepage "who we are / how it works" band plus five photo entry squares. */
+export function StartHere({ parkImage }: { parkImage?: string }) {
+  const entries = [
+    { to: '/destinations', image: parkImage ?? roadImg, title: 'National parks', detail: 'Find your place' },
+    { to: '/road-trips', image: roadImg, title: 'Road trip loops', detail: 'Connect the parks' },
+    { to: '/corridors', image: flightImg, title: 'Fly-in road trips', detail: 'Start at an airport' },
+    { to: '/rv-camping', image: rvImg, title: 'RV & camping', detail: 'Plan your nights' },
+    { to: '/gear', image: gearImg, title: 'Trip essentials', detail: 'Gear for the road' },
+  ];
   return <>
-    <section id="how-it-works" className="border-b border-border bg-card py-10 md:py-12">
-      <div className="container-page">
-        <div className="flex flex-wrap items-end justify-between gap-5">
-          <div><p className="text-xs font-semibold uppercase text-sage-deep">MiniaLife · How it works</p>
-            <h2 className="mt-2 font-serif text-3xl">Your U.S. road trip, brought together.</h2>
-            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">We create free outdoor travel guides and self-drive itineraries. You choose the trip; bookings and payments happen directly with our travel partners.</p>
-          </div>
-          <Button asChild variant="outline" size="lg"><Link to="/about">About MiniaLife <ArrowRight /></Link></Button>
+    <section id="how-it-works" className="section-y border-b border-border bg-card">
+      <div className="container-page grid gap-10 lg:grid-cols-[1fr_2fr] lg:gap-16">
+        <div>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-sage-deep">What is MiniaLife?</p>
+          <h2 className="mt-2 text-[26px] leading-tight md:text-4xl">Free U.S. road trip plans, ready to book.</h2>
+          <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground">We write independent self-drive guides for national parks and outdoor places. You pick the trip; you book directly with trusted travel partners.</p>
         </div>
-        <ol className="mt-8 grid gap-6 md:grid-cols-3">
-          {[
-            { icon: MapPinned, title: 'Choose a place or route', text: 'Explore national parks, outdoor towns and airport-to-airport loops.' },
-            { icon: Route, title: 'Bring your plan together', text: 'See suggested days, maps, arrival options, stays and reservation notes.' },
-            { icon: ShoppingBag, title: 'Book with the partner', text: 'Compare cars, RVs, stays and tours. Check final prices and terms before paying.' },
-          ].map((s, i) => <li key={s.title} className="flex gap-4 md:border-l md:border-border md:pl-5"><s.icon className="mt-1 h-6 w-6 shrink-0 text-primary" /><div><p className="text-xs font-semibold text-sage-deep">0{i + 1}</p><h3 className="mt-1 text-base">{s.title}</h3><p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.text}</p></div></li>)}
+        <ol className="grid gap-6 md:grid-cols-3">
+          {steps.map((s, i) => <li key={s.title} className="flex gap-4 md:flex-col">
+            <Thumb src={s.img} alt="" size={72} />
+            <div><p className="text-xs font-semibold text-sage-deep">Step {i + 1}</p><h3 className="mt-1 text-lg leading-snug">{s.title}</h3><p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.text}</p></div>
+          </li>)}
         </ol>
-        <p className="mt-6 text-xs text-muted-foreground">Free to explore · Independent itineraries, not packaged tours · We may earn a commission from partner links.</p>
       </div>
+      <p className="container-page mt-8 text-xs text-muted-foreground">Free to use · Independent guides, not packaged tours · We may earn a commission from partner links.</p>
     </section>
-    <section className="container-page py-10 md:py-12" aria-labelledby="start-title">
-      <h2 id="start-title" className="mb-6 font-serif text-2xl">Where would you like to start?</h2>
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-5">{entries.map(e => <Button key={e.to} asChild variant="outline" className="h-auto min-h-32 flex-col whitespace-normal rounded-lg p-4 text-center"><Link to={e.to}><e.icon className="mb-2 size-7" /><span className="text-sm font-semibold">{e.title}</span><span className="text-xs font-normal text-muted-foreground">{e.detail}</span></Link></Button>)}</div>
+    <section className="section-y container-page" aria-labelledby="start-title">
+      <SectionHead kicker="Start here" title="Where would you like to start?" />
+      <div className="grid grid-cols-3 gap-x-3 gap-y-6 md:grid-cols-5 md:gap-5">
+        {entries.map(e => <CategoryTile key={e.to} to={e.to} image={e.image} label={e.title} detail={e.detail} />)}
+      </div>
     </section>
   </>;
 }
