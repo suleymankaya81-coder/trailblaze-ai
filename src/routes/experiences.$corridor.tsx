@@ -6,6 +6,8 @@ import { getCorridorExperiences } from "@/lib/affiliates/corridorExperiences.fun
 import { getCorridor } from "@/lib/seo/corridors";
 import { useEffect, useRef } from "react";
 import { SwipeRow } from "@/components/ui-kit";
+import { SafeImage } from "@/components/shared/SafeImage";
+import { hasViatorRating } from "@/lib/affiliates/viatorDisplay";
 
 // An independently noindexed document keeps restricted provider content out of the original guide's indexable body.
 export const Route = createFileRoute("/experiences/$corridor")({
@@ -39,11 +41,11 @@ function Experiences({ slug }: { slug: string }) {
   return <div ref={ref} className="bg-background p-1">
     <SwipeRow className="md:grid-cols-3">
       {data.items.map((item) => <article key={item.code} className="flex min-w-0 flex-col overflow-hidden rounded-lg border border-border bg-card">
-        <img src={item.image} alt={item.title} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+        <SafeImage src={item.image} alt={item.title} loading="lazy" className="aspect-[4/3] w-full object-cover" />
         <div className="flex flex-1 flex-col p-4">
           <p className="text-[10px] uppercase text-muted-foreground">{item.stop}</p>
           <h3 className="mt-2 font-display text-base font-semibold leading-snug text-foreground">{item.title}</h3>
-          {item.rating !== null && item.reviews > 0 && <p className="mt-3 flex items-center gap-1 text-xs text-foreground"><Star className="h-3.5 w-3.5 text-amber" />{item.rating.toFixed(1)} <span className="text-muted-foreground">({item.reviews.toLocaleString("en-US")} reviews · Viator / Tripadvisor)</span></p>}
+          {hasViatorRating(item.rating, item.reviews) && <p className="mt-3 flex items-center gap-1 text-xs text-foreground"><Star className="h-3.5 w-3.5 text-amber" />{item.rating.toFixed(1)} <span className="text-muted-foreground">({item.reviews.toLocaleString("en-US")} reviews · Viator / Tripadvisor)</span></p>}
           <p className="mt-3 text-lg font-semibold text-foreground">{item.price !== null ? `From ${new Intl.NumberFormat("en-US", { style: "currency", currency: item.currency }).format(item.price)}` : "Check current price"}</p>
           <p className="mb-4 mt-1 text-[11px] text-muted-foreground">Starting price; check your dates and options on Viator.</p>
           <Button asChild size="sm" className="mt-auto min-h-12 rounded-lg"><a href={item.url} target="_blank" rel="sponsored nofollow noopener noreferrer">View on Viator<ArrowUpRight /></a></Button>
