@@ -22,6 +22,7 @@ import { offerPhoto, type Photo } from "@/lib/data/destinationCardPhotos";
 import { InlineOfferCta } from "@/components/landing/LandingOfferCard";
 import { AirportRentalsCards } from "@/components/destination/AirportRentalsCards";
 import { factItems, QuickFacts, SeasonPicker, SectionBlock, seasonOf, type LandingFacts } from "@/components/landing/DecisionBlocks";
+import { DESCRIPTION_MAX, TITLE_MAX, fitText } from "@/lib/seo/routeSeo";
 
 const BASE = "https://minialife.com";
 
@@ -67,8 +68,10 @@ export const Route = createFileRoute("/$landing")({
       return { meta: [{ title: "Page not found — Minialife" }, { name: "robots", content: "noindex" }] };
     }
     const { page, h1, destination, sections } = loaderData.bundle;
-    const title = page.seoTitle ?? h1;
-    const description = page.seoDescription ?? page.introContent ?? "";
+    // Stored titles/descriptions are reviewed content; clamp defensively so a
+    // future over-long row never ships an invalid title or snippet.
+    const title = fitText([page.seoTitle ?? h1], TITLE_MAX);
+    const description = fitText([page.seoDescription ?? page.introContent ?? ""], DESCRIPTION_MAX);
     const url = page.canonicalUrl ?? `${BASE}${page.path}`;
     const coverImage = landingCoverAssets[page.path]
       ? `${BASE}${landingCoverAssets[page.path]}`
