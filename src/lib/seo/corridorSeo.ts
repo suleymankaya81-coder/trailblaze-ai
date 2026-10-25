@@ -1,21 +1,19 @@
 import type { Corridor } from "./corridors";
 
-const ROUTE_TITLES: Record<string, string> = {
-  "grand-circle-from-las-vegas": "Grand Circle Road Trip from Las Vegas",
-  "california-icons-from-san-francisco": "San Francisco to Yosemite Road Trip Loop",
-  "florida-keys-loop-from-miami": "Miami to Key West Road Trip Loop",
-  "utah-mighty-5-from-salt-lake-city": "Utah Mighty 5 Road Trip from Salt Lake City",
-};
+import { corridorDescription, corridorKeyword, corridorTitle } from "./routeSeo";
 
+/** Search phrase used as the page name (H1-independent) and in structured data. */
 export function corridorSearchTitle(corridor: Corridor): string {
-  return ROUTE_TITLES[corridor.slug] ?? corridor.title;
+  return corridorKeyword(corridor.slug, corridor.title);
 }
 
-export function corridorSearchDescription(corridor: Corridor): string {
-  const text = `${corridor.idealDays} from ${corridor.gateway.code}, returning to the same airport. ${corridor.intro}`;
-  if (text.length <= 160) return text;
-  const shortened = text.slice(0, 157);
-  return `${shortened.slice(0, shortened.lastIndexOf(" "))}…`;
+/** Full <title>, kept within 60 characters. */
+export function corridorPageTitle(corridor: Corridor): string {
+  return corridorTitle(corridor.slug, corridor.title, corridor.idealDays);
+}
+
+export function corridorSearchDescription(corridor: Corridor, stopNames: string[] = []): string {
+  return corridorDescription(corridor.slug, corridor.title, corridor.idealDays, corridor.gateway.code, stopNames);
 }
 
 type VisibleStop = { slug: string; name: string };

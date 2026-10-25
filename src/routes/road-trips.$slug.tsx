@@ -17,6 +17,7 @@ import { GuideFaq, GuideHero, GuideSection, HeroChip } from "@/components/guides
 import { Skeleton } from "@/components/ui/skeleton";
 import { getLoopStops } from "@/lib/data/guides.functions";
 import { SITE } from "@/lib/seo/flyDrive";
+import { loopSearchDescription, loopSearchTitle } from "@/lib/seo/routeSeo";
 import { CorridorBookings } from "@/components/guides/CorridorBookings";
 import { ViatorPlaceBlock } from "@/components/destination/ViatorPlaceBlock";
 import { getLoop, loopGatewayAirport, haversineMiles, jsonLdScript, loopFaqs, loopJsonLd, suggestedDays, validateLoop } from "@/lib/seo/guides";
@@ -34,8 +35,8 @@ export const Route = createFileRoute("/road-trips/$slug")({
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
     const { loop, stops, faqs, url } = loaderData;
-    const title = `${loop.title}: ${stops.length} Stops, Days & Route — MiniaLife`;
-    const description = `${loop.intro} Suggested days per stop, leg distances and booking notes.`.slice(0, 300);
+    const title = loopSearchTitle(loop.slug, loop.title, stops.length);
+    const description = loopSearchDescription(loop.slug, loop.title, stops.map((s) => s.name));
     const img = stops[0]?.heroImage.startsWith("https://") ? stops[0].heroImage : null;
     return {
       meta: [

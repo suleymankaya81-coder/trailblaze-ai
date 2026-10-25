@@ -18,7 +18,7 @@ import { getLoopStops } from "@/lib/data/guides.functions";
 import { SITE } from "@/lib/seo/flyDrive";
 import { haversineMiles, suggestedDays } from "@/lib/seo/guides";
 import { getCorridor } from "@/lib/seo/corridors";
-import { buildCorridorJsonLd, corridorSearchDescription, corridorSearchTitle } from "@/lib/seo/corridorSeo";
+import { buildCorridorJsonLd, corridorSearchDescription, corridorSearchTitle, corridorPageTitle } from "@/lib/seo/corridorSeo";
 import { CorridorBookings } from "@/components/guides/CorridorBookings";
 import { CorridorTourFrame } from "@/components/guides/CorridorTourFrame";
 
@@ -36,8 +36,8 @@ export const Route = createFileRoute("/corridors/$slug")({
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
     const { corridor, url, stops } = loaderData;
     const image = stops[1]?.heroImage ?? stops[0]?.heroImage;
-    const title = `${corridorSearchTitle(corridor)} — MiniaLife`;
-    const description = corridorSearchDescription(corridor);
+    const title = corridorPageTitle(corridor);
+    const description = corridorSearchDescription(corridor, stops.map((s) => s.name));
     return {
       meta: [
         { title },
