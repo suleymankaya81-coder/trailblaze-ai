@@ -55,14 +55,11 @@ describe("destinationFaqs", () => {
     expect(destinationFaqs({ slug: "bare", name: "Bare", airportCode: null, airportName: null, driveMinutes: null, permitLevel: null, permitNote: null, permitHeadline: null, campingScore: null, bestSeason: null })).toEqual([]);
   });
 
-  it("prefers reviewed Yellowstone answers and notes over generated text", () => {
+  it("skips topics the reviewed answers panel already covers", () => {
     const faqs = destinationFaqs({ ...base, slug: "yellowstone", name: "Yellowstone" });
-    const days = faqs.find((f) => f.q.startsWith("How many days"))!;
-    expect(days.a).toContain("three days");
-    expect(days.a).toContain("planning suggestion");
-    const reservation = faqs.find((f) => f.q.startsWith("Do you need a reservation"))!;
-    expect(reservation.a).toContain("does not require a vehicle entry reservation");
-    expect(reservation.a).not.toBe("Timed entry is required in peak season.");
+    expect(faqs.map((f) => f.q)).not.toContain("How many days do you need in Yellowstone?");
+    expect(faqs.map((f) => f.q)).not.toContain("Do you need a reservation for Yellowstone?");
+    expect(faqs.map((f) => f.q)).toContain("When is the best time to visit Yellowstone?");
   });
 });
 
