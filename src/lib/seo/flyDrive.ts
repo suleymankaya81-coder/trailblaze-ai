@@ -44,6 +44,29 @@ export function parseFlyDriveSlug(raw: string): { iata: string; destinationSlug:
   return null;
 }
 
+// Search metadata: these pages target "closest airport to {name}" / "fly into {code}",
+// a distinct phrase family from the destination guide and the four search pages.
+export function flyDriveTitle(d: FlyDriveInput): string {
+  const kw = `Closest Airport to ${d.name}`;
+  return fitText(
+    [`${kw}: Fly into ${d.airportCode}${BRAND}`, `${kw} (${d.airportCode})${BRAND}`, `Fly into ${d.airportCode} for ${d.name}${BRAND}`, `${kw}${BRAND}`, kw],
+    TITLE_MAX,
+  );
+}
+
+export function flyDriveDescription(d: FlyDriveInput): string {
+  if (!d.airportCode || !d.airportName || d.driveMinutes == null) return "";
+  const drive = formatDriveShort(d.driveMinutes);
+  return fitText(
+    [
+      `The closest airport to ${d.name} is ${d.airportName} (${d.airportCode}), about ${drive} away by car. Flights, airport car rental, luggage storage and first-night stays.`,
+      `The closest airport to ${d.name} is ${d.airportName} (${d.airportCode}), about ${drive} away. Flights, airport car rental and first-night stays.`,
+      `Fly into ${d.airportCode} for ${d.name}: ${drive} drive, airport car rental and first-night stays.`,
+    ],
+    DESCRIPTION_MAX,
+  );
+}
+
 export function formatDriveShort(mins: number): string {
   const h = Math.floor(mins / 60);
   const m = mins % 60;

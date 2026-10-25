@@ -105,6 +105,28 @@ export function corridorTitle(slug: string, fallback: string, idealDays: string)
   return fitText([`${kw}: ${d} Day Itinerary${BRAND}`, `${kw}: ${d} Days${BRAND}`, `${kw}${BRAND}`, kw], TITLE_MAX);
 }
 
+// Main destination pages target "{name} travel guide" / "plan a trip to {name}"; the four
+// per-destination search pages own "things to do in {name}", "{name} itinerary",
+// "best time to visit {name}" and "{name} glamping", so those phrases stay out of this metadata.
+export function destinationSearchTitle(name: string): string {
+  return fitText([`${name} Travel Guide${BRAND}`, `${name} Guide${BRAND}`, `${name}${BRAND}`, name], TITLE_MAX);
+}
+
+export function destinationSearchDescription(name: string, tagline: string | null, bestSeason: string | null): string {
+  const base = (tagline ?? "").trim().replace(/[.!]?$/, ".");
+  const season = bestSeason ? ` When to go: ${bestSeason}.` : "";
+  const plan = ` Plan a trip to ${name}: when to go, a day-by-day plan, stays, RV rentals and the road trip map.`;
+  return fitText(
+    [
+      `${base}${season}${plan}`,
+      `${base}${plan}`,
+      `Plan a trip to ${name}: when to go, a day-by-day plan, stays, RV rentals and the road trip map.${season}`,
+      `${name} travel guide: when to go, a day-by-day plan, stays, RV rentals and the road trip map.`,
+    ],
+    DESCRIPTION_MAX,
+  );
+}
+
 export function corridorDescription(slug: string, fallback: string, idealDays: string, code: string, stopNames: string[]): string {
   const kw = corridorKeyword(slug, fallback);
   const d = shortDays(idealDays);
