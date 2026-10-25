@@ -120,6 +120,7 @@ export function destinationSearchDescription(name: string, tagline: string | nul
     [
       `${base}${season}${plan}`,
       `${base}${plan}`,
+      `${base} Plan a trip to ${name}: day-by-day plan, stays and RV rentals.`,
       `Plan a trip to ${name}: when to go, a day-by-day plan, stays, RV rentals and the road trip map.${season}`,
       `${name} travel guide: when to go, a day-by-day plan, stays, RV rentals and the road trip map.`,
     ],

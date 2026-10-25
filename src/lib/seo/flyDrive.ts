@@ -49,7 +49,14 @@ export function parseFlyDriveSlug(raw: string): { iata: string; destinationSlug:
 export function flyDriveTitle(d: FlyDriveInput): string {
   const kw = `Closest Airport to ${d.name}`;
   return fitText(
-    [`${kw}: Fly into ${d.airportCode}${BRAND}`, `${kw} (${d.airportCode})${BRAND}`, `Fly into ${d.airportCode} for ${d.name}${BRAND}`, `${kw}${BRAND}`, kw],
+    [
+      `${kw}: Fly into ${d.airportCode}${BRAND}`,
+      `${kw} (${d.airportCode})${BRAND}`,
+      `Fly into ${d.airportCode} for ${d.name}${BRAND}`,
+      `Fly into ${d.airportCode} for ${d.name}`,
+      `${kw} (${d.airportCode})`,
+      kw,
+    ],
     TITLE_MAX,
   );
 }
