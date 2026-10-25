@@ -20,13 +20,12 @@ function Card({ item, slug }: { item: Item; slug: string }) {
       href={tpLink(item.brand, slug)}
       target="_blank"
       rel="sponsored nofollow noopener noreferrer"
-      title={`Opens ${item.name} in a new tab — partner link, we may earn a commission`}
+      title={`Opens ${item.name} in a new tab`}
       className="group flex flex-col rounded-2xl border border-border bg-card p-5 transition hover:shadow-soft"
     >
       <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-primary">
         <Icon className="h-4 w-4" />
       </span>
-      <p className="mt-3 text-[10px] uppercase tracking-wider text-muted-foreground">Partner link · {item.name}</p>
       <p className="mt-1 text-sm font-semibold text-foreground">{item.title}</p>
       <p className="mt-1 flex-1 text-xs text-muted-foreground">{item.sub}</p>
       <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-primary">
@@ -57,7 +56,7 @@ export function TravelpayoutsCards({ slug, name, airportCode }: { slug: string; 
   });
   const at = airportCode ? ` ${airportCode}` : "";
   const flightSub = fare?.price
-    ? `Recent fares from ~$${Math.round(fare.price)}${fare.origin ? ` (from ${fare.origin})` : ""} · estimate, check live price`
+    ? `Recent fares from ~$${Math.round(fare.price)}${fare.origin ? ` (from ${fare.origin})` : ""} · estimate`
     : `Compare fares into${at || " the nearest airport"}`;
 
   const getThere: Item[] = [
@@ -66,9 +65,6 @@ export function TravelpayoutsCards({ slug, name, airportCode }: { slug: string; 
   return (
     <div className="mt-8">
       <Group title="Getting there & getting around" items={getThere} slug={slug} rentals airportCode={airportCode} />
-      <p className="mt-3 text-[11px] text-muted-foreground">
-        Partner links via Travelpayouts and Webjet Group. The partner's site shows live prices and availability. Minialife may earn a commission at no extra cost to you.
-      </p>
     </div>
   );
 }
@@ -82,9 +78,6 @@ export function TourTicketCards({ slug, name }: { slug: string; name: string }) 
   return (
     <div className="mt-8">
       <Group title="More tours & ticket partners" items={doIt} slug={slug} />
-      <p className="mt-3 text-[11px] text-muted-foreground">
-        Partner links via Travelpayouts and Webjet Group. The partner's site shows live prices and availability. Minialife may earn a commission at no extra cost to you.
-      </p>
     </div>
   );
 }

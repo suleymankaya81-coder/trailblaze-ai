@@ -28,7 +28,7 @@ function AffiliateDisclosurePage() {
       eyebrow="Transparency"
       title="Affiliate Disclosure"
       lede="Minialife may earn a commission when you book or purchase through links on this site, at no extra cost to you."
-      updated="October 24, 2026"
+      updated="October 25, 2026"
     >
       <section>
         <h2>How this works</h2>
@@ -38,7 +38,7 @@ function AffiliateDisclosurePage() {
           (via the Expedia Group Travel Creator Program), and travel brands available through
           Travelpayouts: Aviasales, Klook, Tiqets, Go City,
           EKTA, Airalo, Radical Storage, and through the Webjet Group programme, Motorhome Republic and Airport Rentals. When you click one of these partner links and go on to book or
-          purchase, we may earn a small commission. Links marked as partner links are tracked by
+          purchase, we may earn a small commission. Affiliate links are tracked by
           the network on the partner's behalf.
         </p>
         <p>
@@ -46,8 +46,7 @@ function AffiliateDisclosurePage() {
         </p>
         <p>
           Some buttons — for example REI gear — are ordinary direct links to
-          brands we are not paid by. They are labelled so you can tell the difference, and we earn
-          nothing from them.
+          brands we are not paid by. We earn nothing from them.
         </p>
         <p>
           This commission is paid by the partner out of their own marketing budget. It does not
@@ -56,13 +55,11 @@ function AffiliateDisclosurePage() {
       </section>
 
       <section>
-        <h2>How partner links are labelled</h2>
+        <h2>Where to find this disclosure</h2>
         <p>
-          Every page that contains partner links carries a visible notice at the top, and each
-          outbound button is labelled with the partner it opens (for example "Partner link ·
-          Hipcamp"). Links open in a new tab and are marked as sponsored for search engines. We
-          never hide, cloak, or redirect a link through a page that disguises where you are going,
-          and clicks are only recorded when you actively click a button yourself.
+          The Affiliate Disclosure link in the site footer opens this explanation of our
+          partnerships. Booking and shopping buttons identify the provider they open. Outbound
+          links open in a new tab; affiliate tracking may record a referral when you click.
         </p>
         <p>
           Prices and availability shown on Minialife are estimates gathered at the time of
@@ -113,8 +110,7 @@ function AffiliateDisclosurePage() {
       <section>
         <h2>Questions</h2>
         <p>
-          This disclosure follows FTC guidance on affiliate marketing (16 CFR Part 255). If you
-          have questions about a specific link or partnership, reach out on our{" "}
+          If you have questions about a specific link or partnership, reach out on our{" "}
           <Link to="/contact">Contact</Link> page.
         </p>
       </section>

@@ -37,7 +37,6 @@ export function StartHere({ parkImage }: { parkImage?: string }) {
           </li>)}
         </ol>
       </div>
-      <p className="container-page mt-8 text-xs text-muted-foreground">Free to use · Independent guides, not packaged tours · We may earn a commission from partner links.</p>
     </section>
     <section className="section-y container-page" aria-labelledby="start-title">
       <SectionHead kicker="Start here" title="Where would you like to start?" />

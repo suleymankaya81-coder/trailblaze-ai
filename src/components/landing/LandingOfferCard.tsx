@@ -8,7 +8,7 @@ import type { OfferView } from "@/lib/data/destinations.functions";
 import type { Photo } from "@/lib/data/destinationCardPhotos";
 import { trackAndRedirect } from "@/lib/affiliates/track.functions";
 import { getOrCreateSessionId } from "@/lib/affiliates/session";
-import { outboundLinkTitle, partnerLabel } from "@/lib/affiliates/compliance";
+import { outboundLinkTitle } from "@/lib/affiliates/compliance";
 import { Button } from "@/components/ui/button";
 
 function useOfferClick(offer: OfferView, destinationSlug: string) {
@@ -35,11 +35,9 @@ function useOfferClick(offer: OfferView, destinationSlug: string) {
 }
 
 function linkMeta(offer: OfferView) {
-  const label = partnerLabel(offer.partner);
   const direct = offer.partner === "rei";
   return {
     rel: direct ? "nofollow noopener noreferrer" : "sponsored nofollow noopener noreferrer",
-    note: direct ? `Direct link · ${label ?? "external"}` : label ? `Partner link · ${label}` : "Partner link",
   };
 }
 
@@ -54,7 +52,7 @@ export function InlineOfferCta({ offer, destinationSlug, photo, lead }: { offer:
       <div className="min-w-0 flex-1">
         <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-sage-deep">{lead}</p>
         <p className="truncate text-sm font-semibold text-foreground">{offer.title}</p>
-        <p className="text-[10px] text-muted-foreground">{offer.priceDisplay ? `${offer.priceDisplay} (estimate) · ` : ""}{m.note}</p>
+        {offer.priceDisplay && <p className="text-[10px] text-muted-foreground">{offer.priceDisplay} (estimate)</p>}
       </div>
       <Button asChild size="lg" className="h-auto min-h-12 whitespace-normal rounded-md text-xs"><a href={offer.externalUrl} target="_blank" rel={m.rel} title={outboundLinkTitle(offer.partner, offer.externalUrl)} onClick={onClick}>
         {offerCtaLabel(offer.category)} <ArrowRight className="h-3.5 w-3.5" />
@@ -87,7 +85,6 @@ export function LandingOfferCard({ offer, destinationSlug, photo }: { offer: Off
             <Button asChild size="lg" className="h-auto min-h-12 w-full whitespace-normal rounded-md text-xs"><a href={offer.externalUrl} target="_blank" rel={m.rel} title={outboundLinkTitle(offer.partner, offer.externalUrl)} onClick={onClick}>
               {offerCtaLabel(offer.category)} <ArrowRight className="h-3.5 w-3.5" />
             </a></Button>
-            <p className="mt-1 text-[10px] text-muted-foreground">{m.note}</p>
           </div>
         )}
       </div>

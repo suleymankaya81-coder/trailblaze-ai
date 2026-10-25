@@ -70,7 +70,6 @@ export function HarvestHostsCard({ destinationName }: { destinationName: string 
             className="inline-flex items-center gap-1.5 rounded-full bg-copper px-4 py-2 text-xs font-semibold text-off-white hover:bg-copper/90">
             Get 20% off <ArrowRight className="h-3.5 w-3.5" />
           </a>
-          <p className="text-[10px] text-muted-foreground">Partner link · Harvest Hosts</p>
         </div>
       </div>
     </div>

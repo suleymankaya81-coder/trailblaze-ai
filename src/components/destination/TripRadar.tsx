@@ -84,7 +84,7 @@ export function TripRadar({ dest }: { dest: DestinationView }) {
           href={flightsHref}
           target="_blank"
           rel="sponsored nofollow noopener noreferrer"
-          title="Opens Aviasales flight search in a new tab — partner link, we may earn a commission"
+          title="Opens Aviasales flight search in a new tab"
           className="group relative flex flex-col overflow-hidden rounded-3xl border border-border bg-gradient-to-br from-sage/25 via-card to-sand/50 p-6 shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg md:p-7"
         >
           <Plane className="pointer-events-none absolute -right-6 -top-6 h-36 w-36 rotate-12 text-forest/5" />
@@ -117,7 +117,6 @@ export function TripRadar({ dest }: { dest: DestinationView }) {
               <ArrowUpRight className="h-4 w-4" />
             </span>
           </div>
-          <p className="mt-3 text-[10px] text-muted-foreground">Partner link · Aviasales</p>
         </a>
       )}
     </div>

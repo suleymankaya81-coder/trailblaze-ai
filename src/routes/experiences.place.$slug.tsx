@@ -53,7 +53,7 @@ function Place({ slug }: { slug: string }) {
           </div>
         </article>)}
       </SwipeRow>
-      <p className="mt-3 text-[11px] text-muted-foreground">Photos, prices and ratings supplied by Viator; availability confirmed on Viator. Partner links · MiniaLife may earn a commission.</p>
+      <p className="mt-3 text-[11px] text-muted-foreground">Photos, prices and ratings supplied by Viator.</p>
     </>}
   </div>;
 }

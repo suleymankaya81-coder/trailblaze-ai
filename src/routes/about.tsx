@@ -54,10 +54,6 @@ function AboutPage() {
       <p>Optional equipment suggestions support the route and its activities. They are not a complete packing or safety list, and MiniaLife does not operate a retail store.</p>
     </section>
     <section>
-      <h2>How the site stays free</h2>
-      <p>We may earn a commission when you book or buy through partner links, at no extra cost to you. Read our <Link to="/affiliate-disclosure">Affiliate Disclosure</Link> for the details.</p>
-    </section>
-    <section>
       <h2>Who publishes MiniaLife</h2>
       <p>MiniaLife is an independent outdoor-travel publisher. For editorial questions, corrections or partnership enquiries, <Link to="/contact">contact us</Link>.</p>
     </section>

@@ -58,7 +58,7 @@ function StayCard({
       <div className="flex flex-1 flex-col p-5 sm:p-6">
         <p className="text-xs font-semibold uppercase tracking-wider text-primary">{brand}</p>
         <h3 className="mt-1 text-lg font-semibold text-foreground">{title}</h3>
-        <p className="mt-1 font-display text-base font-semibold text-foreground">{brand === "Vrbo" ? "Est. from $120/night" : "Est. from $110/night"} <span className="text-[10px] font-normal text-muted-foreground">· typical rate, live price on {brand}</span></p>
+        <p className="mt-1 font-display text-base font-semibold text-foreground">{brand === "Vrbo" ? "Est. from $120/night" : "Est. from $110/night"} <span className="text-[10px] font-normal text-muted-foreground">· typical rate</span></p>
         <ul className="mt-4 flex-1 space-y-2.5">
           {points.map(({ icon: Icon, text }) => (
             <li key={text} className="flex gap-2.5 text-sm text-muted-foreground">
@@ -95,7 +95,7 @@ export function VrboSearchWidget({ destinationName }: { destinationName: string 
           points={[
             { icon: Mountain, text: "Whole-home cabins and mountain lodges" },
             { icon: Trees, text: "Kitchens, fire pits and room for the crew" },
-            { icon: Home, text: "Pick dates on Vrbo for live prices" },
+            { icon: Home, text: "Choose dates and a home on Vrbo" },
           ]}
         />
         <StayCard
@@ -111,9 +111,6 @@ export function VrboSearchWidget({ destinationName }: { destinationName: string 
           ]}
         />
       </div>
-      <p className="mt-3 text-[11px] text-muted-foreground">
-        Each button opens a live search for this area on Vrbo or Expedia; photos show the stay type only. Minialife may earn a commission on bookings, at no extra cost to you.
-      </p>
     </div>
   );
 }

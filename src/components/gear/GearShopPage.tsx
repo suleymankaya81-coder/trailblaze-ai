@@ -285,7 +285,7 @@ export function GearShopPage() {
         </section>
 
         <p className="container-page py-6 text-xs text-muted-foreground">
-          Partner links via Awin. We may earn a commission at no extra cost to you. Prices come from the partner catalogs and may change. Some photos are illustrative. See our <Link to="/affiliate-disclosure" className="underline">affiliate disclosure</Link>.
+          Prices come from the partner catalogs and may change. Some photos are illustrative.
         </p>
       </main>
       <Footer />

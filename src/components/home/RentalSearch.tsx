@@ -86,7 +86,6 @@ export function RentalSearch() {
             {tab === "rv" ? "Check RV availability on Motorhome Republic" : "Compare airport car rates"}
           </a>
         </Button>
-        <p className="mt-4 text-[11px] text-muted-foreground">Partner links · MiniaLife may earn a commission. Prices and availability are confirmed on the partner site.</p>
       </div>
     </div>
   );

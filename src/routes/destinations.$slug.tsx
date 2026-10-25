@@ -72,7 +72,7 @@ import {
 import { enrichDestination, type EnrichResult } from "@/lib/ai/enrich.functions";
 import { trackAndRedirect } from "@/lib/affiliates/track.functions";
 import { getOrCreateSessionId } from "@/lib/affiliates/session";
-import { outboundLinkTitle, partnerLabel } from "@/lib/affiliates/compliance";
+import { outboundLinkTitle } from "@/lib/affiliates/compliance";
 import { buildDestinationJsonLd } from "@/lib/seo/destinationJsonLd";
 import { flyDriveSlug } from "@/lib/seo/flyDrive";
 import { isNoReservationEligible, isRvEligible, loopsForDestination } from "@/lib/seo/guides";
@@ -447,9 +447,6 @@ function OfferCta({
         {label}
         <ArrowRight className="h-3.5 w-3.5" />
       </a>
-      <span className="text-center text-[10px] leading-tight text-muted-foreground">
-        {`Partner link · ${partnerLabel(offer.partner) ?? "External partner"}`}
-      </span>
     </span>
   );
 }
@@ -535,9 +532,6 @@ function TopStays({ dest }: { dest: DestinationView }) {
         title="Where you'll want to sleep"
         
       />
-      <p className="-mt-3 mb-4 text-[11px] text-muted-foreground">
-        Checks availability with the partner directly — not a confirmed booking on our end.
-      </p>
 
       <StayChooser name={dest.name} />
 
@@ -573,13 +567,6 @@ function TopStays({ dest }: { dest: DestinationView }) {
       <VrboSearchWidget destinationName={dest.name} />
       <HarvestHostsCard destinationName={dest.name} />
 
-      <p className="mt-5 text-[11px] text-muted-foreground">
-        Minialife may earn a commission when you book through links on this page, at no extra cost
-        to you.{" "}
-        <Link to="/affiliate-disclosure" className="underline underline-offset-2">
-          Learn more
-        </Link>
-      </p>
     </section>
   );
 }
@@ -762,9 +749,6 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
         title={dest.airportCode ? `RVs, campervans & cars near ${dest.airportCode}` : "RVs, campervans & cars for this trip"}
         
       />
-      <p className="-mt-3 mb-4 text-[11px] text-muted-foreground">
-        Checks availability with the partner directly — not a confirmed booking on our end.
-      </p>
       {rentals.length > 0 && (
         <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
            {rentals.map((r, index) => (
@@ -859,7 +843,7 @@ function TravelServices({ dest }: { dest: DestinationView }) {
             return (
               <li key={category}>
                 <a href={href} target="_blank" rel="sponsored nofollow noopener noreferrer"
-                  title={`Opens ${detail.brand} in a new tab — partner link`}
+                  title={`Opens ${detail.brand} in a new tab`}
                   className="flex items-start gap-3 py-3.5 transition hover:opacity-80"
                   onClick={(event) => {
                     event.preventDefault();
@@ -869,7 +853,6 @@ function TravelServices({ dest }: { dest: DestinationView }) {
                   <span className="min-w-0 flex-1">
                     <span className="block text-xs font-semibold text-foreground">{detail.title}</span>
                     <span className="block text-[11px] text-muted-foreground">{detail.sub}</span>
-                    <span className="mt-1 block text-[10px] text-muted-foreground">Partner link · {detail.brand}</span>
                   </span>
                   <ChevronRight className="mt-1 h-4 w-4 shrink-0 text-foreground/30" />
                 </a>
@@ -882,7 +865,6 @@ function TravelServices({ dest }: { dest: DestinationView }) {
             </li>
           ))}
       </ul>
-      <p className="mt-3 text-[11px] text-muted-foreground">Partner links via Travelpayouts and Webjet Group. Minialife may earn a commission at no extra cost to you.</p>
     </aside>
   );
 }

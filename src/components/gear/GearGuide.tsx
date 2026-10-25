@@ -117,9 +117,6 @@ export function GearGuide({ config: c }: { config: GearGuideConfig }) {
         <div className="border-b border-border">
           <div className="container-page flex flex-wrap items-center justify-between gap-3 py-4 text-xs text-muted-foreground">
             <span>Catalog reviewed October 19, 2026</span>
-            <Link to="/affiliate-disclosure" className="underline underline-offset-4">
-              Partner links · We may earn a commission at no extra cost to you
-            </Link>
           </div>
         </div>
         <section className="container-page py-12 md:py-16">
@@ -326,14 +323,6 @@ export function GearGuide({ config: c }: { config: GearGuideConfig }) {
             </Button>
           </div>
         </section>
-        <div className="container-page py-8 text-xs leading-relaxed text-muted-foreground">
-          <p>
-            <strong className="text-foreground">Independent selection, partner links.</strong>{" "}
-            MiniaLife is an independent publisher. Purchases are made on ROCKBROS, not on MiniaLife.
-            We may receive a commission through Awin. Inclusion is not a claim that these products
-            are essential for every rider or safe for every route.
-          </p>
-        </div>
       </main>
       <Footer />
     </div>
