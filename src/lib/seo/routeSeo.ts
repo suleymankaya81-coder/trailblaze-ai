@@ -3,7 +3,7 @@
 
 export const TITLE_MAX = 60;
 export const DESCRIPTION_MAX = 160;
-const BRAND = " — MiniaLife";
+export const BRAND = " — MiniaLife";
 
 export const LOOP_KEYWORDS: Record<string, string> = {
   "utah-mighty-5-loop": "Utah Mighty 5 Road Trip",
