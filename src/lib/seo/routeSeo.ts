@@ -90,7 +90,7 @@ export function loopSearchDescription(slug: string, fallback: string, stopNames:
   const kw = LOOP_KEYWORDS[slug] ?? fallback;
   const n = stopNames.length;
   return fitText(
-    [3, 2, 1].map((k) => `Plan a ${n}-stop ${kw.toLowerCase()} via ${listNames(stopNames, k)}: days per stop, drive distances, route map and car or RV rental tips.`),
+    [3, 2, 1].map((k) => `Plan a ${n}-stop ${kw.replace("Road Trip", "road trip")} via ${listNames(stopNames, k)}: days per stop, drive distances, route map and car or RV rental tips.`),
     DESCRIPTION_MAX,
   );
 }
