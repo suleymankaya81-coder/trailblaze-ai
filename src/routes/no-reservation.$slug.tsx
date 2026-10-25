@@ -19,6 +19,7 @@ import { getGuideAlternatives } from "@/lib/data/guides.functions";
 import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 import { SITE, formatDriveShort } from "@/lib/seo/flyDrive";
 import { destGuideJsonLd, isNoReservationEligible, jsonLdScript, noReservationFaqs, reservationNote } from "@/lib/seo/guides";
+import { noReservationDescription, noReservationTitle } from "@/lib/seo/guidesSeo";
 
 export const Route = createFileRoute("/no-reservation/$slug")({
   loader: async ({ params }) => {
@@ -31,8 +32,8 @@ export const Route = createFileRoute("/no-reservation/$slug")({
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
     const { dest, faqs, url } = loaderData;
-    const title = `${dest.name} Without a Reservation: Entry Rules & Backup Plans — MiniaLife`;
-    const description = `Missed a booking for ${dest.name}? What needs a reservation, timing tips to get in, nearby places with no entry booking, and flights, car and first night.`;
+    const title = noReservationTitle(dest);
+    const description = noReservationDescription(dest);
     const img = dest.heroImage.startsWith("https://") ? dest.heroImage : null;
     return {
       meta: [

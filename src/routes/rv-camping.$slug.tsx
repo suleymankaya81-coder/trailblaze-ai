@@ -24,6 +24,7 @@ import { servicePhoto } from "@/lib/data/servicePhotos";
 import { partnerLabel } from "@/lib/affiliates/compliance";
 import { SITE, formatDriveShort } from "@/lib/seo/flyDrive";
 import { destGuideJsonLd, isRvEligible, jsonLdScript, reservationNote, rvFaqs } from "@/lib/seo/guides";
+import { rvCampingDescription, rvCampingTitle } from "@/lib/seo/guidesSeo";
 
 const CAMP_PARTNERS = new Set(["campspot", "roverpass"]);
 
@@ -36,8 +37,8 @@ export const Route = createFileRoute("/rv-camping/$slug")({
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
     const { dest, faqs, url } = loaderData;
-    const title = `${dest.name} by RV: Campgrounds, RV Parks & Route — MiniaLife`;
-    const description = `Plan an RV or camping trip to ${dest.name}: drive from ${dest.airportCode}, campground and RV-park booking, overnight stops, rentals and vehicle tips.`;
+    const title = rvCampingTitle(dest);
+    const description = rvCampingDescription(dest);
     const img = dest.heroImage.startsWith("https://") ? dest.heroImage : null;
     return {
       meta: [
