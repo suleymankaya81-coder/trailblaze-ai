@@ -306,11 +306,11 @@ def route(a, lat, lng):
     return {"minutes": round(rt["duration"] / 60), "miles": round(rt["distance"] / 1609.34, 1), "coords": pts}
 
 
-SYSTEM = """You write factual trip summaries for Minialife, a US outdoor travel guide.
+SYSTEM = """You write factual trip summaries for MiniaLife, a US outdoor travel guide.
 Use only widely known, stable facts. No exact prices, no guarantees, no invented
 business names. Return JSON only."""
 PROMPT = """Destination: {facts}
-Published Minialife destinations you may pick similar ones from: {pool}
+Published MiniaLife destinations you may pick similar ones from: {pool}
 Return JSON:
 {{"region": short region e.g. "Southeastern Utah",
  "tagline": one evocative sentence, max 110 chars,

@@ -5,14 +5,14 @@ import { StaticPageLayout } from "@/components/site/StaticPageLayout";
 export const Route = createFileRoute("/terms")({
   head: () => ({
     meta: [
-      { title: "Terms of Use — Minialife" },
+      { title: "Terms of Use — MiniaLife" },
       {
         name: "description",
-        content: "The terms that govern your use of Minialife's destination guides and outbound booking links.",
+        content: "The terms that govern your use of MiniaLife's destination guides and outbound booking links.",
       },
       { property: "og:url", content: "https://minialife.com/terms" },
-      { property: "og:title", content: "Terms of Use — Minialife" },
-      { property: "og:description", content: "The terms for using Minialife outdoor guides and partner booking links." },
+      { property: "og:title", content: "Terms of Use — MiniaLife" },
+      { property: "og:description", content: "The terms for using MiniaLife outdoor guides and partner booking links." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
@@ -26,25 +26,25 @@ function TermsPage() {
     <StaticPageLayout
       eyebrow="Legal"
       title="Terms of Use"
-      lede="Please read these terms before using Minialife. By browsing or using the Site, you agree to them."
+      lede="Please read these terms before using MiniaLife. By browsing or using the Site, you agree to them."
       updated="October 24, 2026"
     >
       <section>
         <h2>Acceptance of terms</h2>
         <p>
           These Terms of Use ("Terms") govern your access to and use of minialife.com and related
-          pages (the "Site"), operated by Minialife ("we," "us," or "our"). By using the Site, you
+          pages (the "Site"), operated by MiniaLife ("we," "us," or "our"). By using the Site, you
           agree to be bound by these Terms. If you do not agree, please do not use the Site.
         </p>
       </section>
 
       <section>
-        <h2>What Minialife is</h2>
+        <h2>What MiniaLife is</h2>
         <p>
-          Minialife is a destination-planning guide. We publish curated information about
+          MiniaLife is a destination-planning guide. We publish curated information about
           national parks and outdoor destinations, including recommended stays, RV and gear
           rentals, activities, and curated trip essentials. We link out to third-party partners where
-          you can book or purchase — Minialife itself does not process bookings, payments, or
+          you can book or purchase — MiniaLife itself does not process bookings, payments, or
           reservations.
         </p>
       </section>
@@ -58,7 +58,7 @@ function TermsPage() {
           <li>Scrape, harvest, or systematically extract content from the Site without permission.</li>
           <li>Attempt to interfere with, disrupt, or gain unauthorized access to the Site or its underlying systems.</li>
           <li>Use the Site to distribute malware, spam, or unlawful content.</li>
-          <li>Misrepresent your affiliation with Minialife.</li>
+          <li>Misrepresent your affiliation with MiniaLife.</li>
         </ul>
       </section>
 
@@ -67,7 +67,7 @@ function TermsPage() {
         <p>
           Links on the Site take you to third-party partners (such as Motorhome Republic, Airport Rentals, Expedia, Vrbo, REI, ROCKBROS, and Viator) to complete a booking or purchase. Any transaction
           you enter into with a partner is solely between you and that partner, governed by their
-          own terms, pricing, cancellation policies, and privacy practices. Minialife is not a
+          own terms, pricing, cancellation policies, and privacy practices. MiniaLife is not a
           party to those transactions and is not responsible for a partner's availability,
           pricing accuracy, service quality, or fulfillment. As described in our{" "}
           <Link to="/affiliate-disclosure">Affiliate Disclosure</Link>, we may earn a commission
@@ -89,7 +89,7 @@ function TermsPage() {
       <section>
         <h2>Intellectual property</h2>
         <p>
-          The Site's design, text, and original content are owned by Minialife or its licensors
+          The Site's design, text, and original content are owned by MiniaLife or its licensors
           and protected by copyright and other intellectual property laws. You may view and share
           pages for personal, non-commercial use, but you may not reproduce, redistribute, or
           create derivative works from the Site's content without our permission.
@@ -108,7 +108,7 @@ function TermsPage() {
       <section>
         <h2>Limitation of liability</h2>
         <p>
-          To the fullest extent permitted by law, Minialife will not be liable for any indirect,
+          To the fullest extent permitted by law, MiniaLife will not be liable for any indirect,
           incidental, special, or consequential damages arising from your use of the Site or any
           third-party booking made through a link on the Site, including but not limited to lost
           bookings, travel costs, or trip disruptions.

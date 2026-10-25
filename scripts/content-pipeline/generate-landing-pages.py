@@ -18,7 +18,7 @@ def words(p):
     return len((p["intro"] + " " + " ".join(x["body"] for x in p["sections"])).split())
 os.makedirs(OUT, exist_ok=True)
 
-SYSTEM = """You write practical US outdoor travel guide pages for Minialife.
+SYSTEM = """You write practical US outdoor travel guide pages for MiniaLife.
 Rules: use only widely known, stable facts about the place; no exact prices,
 no price guarantees, no "best deal", no safety or medical guarantees; describe
 costs as rough estimates; never invent specific business names, phone numbers

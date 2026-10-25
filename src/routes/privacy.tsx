@@ -5,15 +5,15 @@ import { StaticPageLayout } from "@/components/site/StaticPageLayout";
 export const Route = createFileRoute("/privacy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy — Minialife" },
+      { title: "Privacy Policy — MiniaLife" },
       {
         name: "description",
         content:
-          "How Minialife collects, uses, and protects your information — including analytics and click tracking on affiliate links.",
+          "How MiniaLife collects, uses, and protects your information — including analytics and click tracking on affiliate links.",
       },
       { property: "og:url", content: "https://minialife.com/privacy" },
-      { property: "og:title", content: "Privacy Policy — Minialife" },
-      { property: "og:description", content: "How Minialife handles your information, analytics and partner-link tracking." },
+      { property: "og:title", content: "Privacy Policy — MiniaLife" },
+      { property: "og:description", content: "How MiniaLife handles your information, analytics and partner-link tracking." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
@@ -27,13 +27,13 @@ function PrivacyPage() {
     <StaticPageLayout
       eyebrow="Legal"
       title="Privacy Policy"
-      lede="This policy explains what information Minialife collects when you use the site, how we use it, and the choices you have."
+      lede="This policy explains what information MiniaLife collects when you use the site, how we use it, and the choices you have."
       updated="October 24, 2026"
     >
       <section>
         <h2>Overview</h2>
         <p>
-          Minialife ("we," "us," or "our") operates minialife.com and related pages (the "Site").
+          MiniaLife ("we," "us," or "our") operates minialife.com and related pages (the "Site").
           This policy applies to visitors of the Site. By using the Site, you agree to the
           collection and use of information as described here.
         </p>
@@ -43,7 +43,7 @@ function PrivacyPage() {
         <h2>Information we collect</h2>
         <p>We keep data collection minimal. The Site does not require an account to use, and we
           do not collect names, mailing addresses, or payment details — bookings and purchases
-          happen entirely on our partners' sites, not on Minialife.</p>
+          happen entirely on our partners' sites, not on MiniaLife.</p>
         <ul>
           <li>
             <strong>Usage analytics.</strong> Standard, aggregated analytics (pages viewed,
@@ -76,7 +76,7 @@ function PrivacyPage() {
         <ul>
           <li>To operate, maintain, and improve the Site and its recommendations.</li>
           <li>To measure which destinations, stays, and rentals visitors find useful.</li>
-          <li>To attribute bookings and purchases to Minialife for affiliate commission purposes — see our <Link to="/affiliate-disclosure">Affiliate Disclosure</Link>.</li>
+          <li>To attribute bookings and purchases to MiniaLife for affiliate commission purposes — see our <Link to="/affiliate-disclosure">Affiliate Disclosure</Link>.</li>
           <li>To respond to messages sent through the Contact page.</li>
         </ul>
       </section>
@@ -84,7 +84,7 @@ function PrivacyPage() {
       <section>
         <h2>We do not sell your data</h2>
         <p>
-          Minialife does not sell, rent, or trade personal information to third parties for their
+          MiniaLife does not sell, rent, or trade personal information to third parties for their
           own marketing purposes. Information about outbound clicks is shared only with the
           specific partner you clicked through to, and only as needed for them to credit the
           referral and, where applicable, fulfill your booking or order.
@@ -97,7 +97,7 @@ function PrivacyPage() {
           The Site links to third-party booking and retail partners (such as Motorhome Republic, Hipcamp,
           Glamping Hub, Arrive Outdoors, REI, and Viator). Some of these links are managed through
           affiliate networks, including Awin, which may receive the click and referral
-          information described above in order to attribute a referral and pay a commission. Once you leave Minialife, that partner's
+          information described above in order to attribute a referral and pay a commission. Once you leave MiniaLife, that partner's
           own privacy policy governs how they handle your information. We encourage you to review
           it before booking or purchasing.
         </p>

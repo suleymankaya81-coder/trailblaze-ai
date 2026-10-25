@@ -57,7 +57,7 @@ export function HarvestHostsCard({ destinationName }: { destinationName: string 
           <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-muted-foreground">Traveling by RV near {destinationName}?</p>
           <h3 className="font-semibold text-foreground">Stay overnight free at wineries, farms & breweries</h3>
           <p className="text-sm text-muted-foreground">
-            Harvest Hosts membership: 5,000+ unique RV stops. Minialife readers get 20% off the first year.
+            Harvest Hosts membership: 5,000+ unique RV stops. MiniaLife readers get 20% off the first year.
           </p>
         </div>
         <div className="flex shrink-0 flex-col items-start gap-2 md:items-end">

@@ -95,7 +95,7 @@ export const Route = createFileRoute("/destinations/$slug")({
   },
   head: ({ loaderData }) => {
     const d = loaderData?.dest;
-    if (!d) return { meta: [{ title: "Destination — Minialife" }] };
+    if (!d) return { meta: [{ title: "Destination — MiniaLife" }] };
     const title = destinationSearchTitle(d.name);
     const description = destinationSearchDescription(d.name, d.tagline, d.bestSeason);
     const pageUrl = `https://minialife.com/destinations/${d.slug}`;
@@ -595,7 +595,7 @@ function StayCard({
         )}
         {featured && (
           <span className="absolute left-0 top-4 rounded-r-full bg-ink/80 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-off-white">
-            Minialife's pick
+            MiniaLife's pick
           </span>
         )}
 

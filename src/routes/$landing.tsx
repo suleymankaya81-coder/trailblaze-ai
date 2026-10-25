@@ -65,7 +65,7 @@ export const Route = createFileRoute("/$landing")({
   },
   head: ({ loaderData }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Page not found — Minialife" }, { name: "robots", content: "noindex" }] };
+      return { meta: [{ title: "Page not found — MiniaLife" }, { name: "robots", content: "noindex" }] };
     }
     const { page, h1, destination, sections } = loaderData.bundle;
     // Stored titles/descriptions are reviewed content; clamp defensively so a
@@ -85,7 +85,7 @@ export const Route = createFileRoute("/$landing")({
         image: coverImage || undefined,
         dateModified: page.updatedAt,
         mainEntityOfPage: url,
-        publisher: { "@type": "Organization", name: "Minialife" },
+        publisher: { "@type": "Organization", name: "MiniaLife" },
         articleSection: sections.map((s) => s.heading),
       },
       {
