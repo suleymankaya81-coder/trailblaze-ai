@@ -1,6 +1,7 @@
 // Pure helpers for /fly-and-drive/{airport-city}-{iata}-{destination} pages.
 // Built only from stored destination data — no AI generation per page.
 import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
+import { BRAND, DESCRIPTION_MAX, TITLE_MAX, fitText } from "./routeSeo";
 
 export const SITE = "https://minialife.com";
 
@@ -41,6 +42,36 @@ export function parseFlyDriveSlug(raw: string): { iata: string; destinationSlug:
     if (/^[a-z]{3}$/.test(parts[i])) return { iata: parts[i], destinationSlug: parts.slice(i + 1).join("-") };
   }
   return null;
+}
+
+// Search metadata: these pages target "closest airport to {name}" / "fly into {code}",
+// a distinct phrase family from the destination guide and the four search pages.
+export function flyDriveTitle(d: FlyDriveInput): string {
+  const kw = `Closest Airport to ${d.name}`;
+  return fitText(
+    [
+      `${kw}: Fly into ${d.airportCode}${BRAND}`,
+      `${kw} (${d.airportCode})${BRAND}`,
+      `Fly into ${d.airportCode} for ${d.name}${BRAND}`,
+      `Fly into ${d.airportCode} for ${d.name}`,
+      `${kw} (${d.airportCode})`,
+      kw,
+    ],
+    TITLE_MAX,
+  );
+}
+
+export function flyDriveDescription(d: FlyDriveInput): string {
+  if (!d.airportCode || !d.airportName || d.driveMinutes == null) return "";
+  const drive = formatDriveShort(d.driveMinutes);
+  return fitText(
+    [
+      `The closest airport to ${d.name} is ${d.airportName} (${d.airportCode}), about ${drive} away by car. Flights, airport car rental, luggage storage and first-night stays.`,
+      `The closest airport to ${d.name} is ${d.airportName} (${d.airportCode}), about ${drive} away. Flights, airport car rental and first-night stays.`,
+      `Fly into ${d.airportCode} for ${d.name}: ${drive} drive, airport car rental and first-night stays.`,
+    ],
+    DESCRIPTION_MAX,
+  );
 }
 
 export function formatDriveShort(mins: number): string {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { airportCity, flyDriveFaqs, flyDriveJsonLd, flyDriveSlug, parseFlyDriveSlug, SITE } from "./flyDrive";
+import { airportCity, flyDriveDescription, flyDriveFaqs, flyDriveJsonLd, flyDriveSlug, flyDriveTitle, parseFlyDriveSlug, SITE } from "./flyDrive";
 
 const ys = { slug: "yellowstone", name: "Yellowstone", airportCode: "BZN", airportName: "Bozeman Yellowstone International Airport", driveMinutes: 116, driveMiles: 90 };
 
@@ -20,6 +20,29 @@ describe("fly & drive slugs", () => {
     expect(flyDriveSlug({ ...ys, driveMinutes: null })).toBeNull();
     expect(flyDriveSlug({ ...ys, airportCode: null })).toBeNull();
     expect(flyDriveFaqs({ ...ys, driveMinutes: null, permitHeadline: null, permitLevel: null })).toEqual([]);
+  });
+});
+
+describe("fly & drive search metadata", () => {
+  it("leads with the 'closest airport' phrase and the airport code, within limits", () => {
+    const title = flyDriveTitle(ys);
+    expect(title).toBe("Closest Airport to Yellowstone: Fly into BZN — MiniaLife");
+    expect(title.length).toBeLessThanOrEqual(60);
+    const description = flyDriveDescription(ys);
+    expect(description).toContain("closest airport to Yellowstone");
+    expect(description).toContain("BZN");
+    expect(description).toContain("1 h 56 min");
+    expect(description.length).toBeLessThanOrEqual(160);
+  });
+  it("stays within limits for long names and never loses the phrase", () => {
+    const long = { ...ys, name: "Great Smoky Mountains National Park", airportName: "McGhee Tyson Airport (Knoxville)", airportCode: "TYS" };
+    const title = flyDriveTitle(long);
+    expect(title.length).toBeLessThanOrEqual(60);
+    expect(title).toContain("TYS");
+    expect(flyDriveDescription(long).length).toBeLessThanOrEqual(160);
+  });
+  it("returns an empty description when the page would be thin", () => {
+    expect(flyDriveDescription({ ...ys, driveMinutes: null })).toBe("");
   });
 });
 
