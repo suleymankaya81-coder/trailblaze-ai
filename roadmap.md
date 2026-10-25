@@ -1,6 +1,6 @@
 ## October 25 affiliate copy cleanup
-- [ ] Remove repetitive partnership/commission and generic pricing notices across page families; retain footer Affiliate Disclosure link, legal page, tracking, photo credits and estimate qualifiers.
-- [ ] Verify representative pages and existing affected tests.
+- [x] Remove repetitive partnership/commission and generic pricing notices across page families; retain footer Affiliate Disclosure link, legal page, tracking, photo credits and estimate qualifiers. Update the legal page's outdated description of labels.
+- [x] Verify nine representative pages, footer disclosure navigation, retained estimate labels/sponsored links, no page errors and 33 existing tests; preview build OK. Not published.
 
 ## October 24 selected homepage collage correction
 - [x] Replace the incorrectly applied cinematic opening with the selected left-copy / three-photo staggered collage and working search; retain all lower homepage sections.
