@@ -23,6 +23,29 @@ describe("fly & drive slugs", () => {
   });
 });
 
+describe("fly & drive search metadata", () => {
+  it("leads with the 'closest airport' phrase and the airport code, within limits", () => {
+    const title = flyDriveTitle(ys);
+    expect(title).toBe("Closest Airport to Yellowstone: Fly into BZN — MiniaLife");
+    expect(title.length).toBeLessThanOrEqual(60);
+    const description = flyDriveDescription(ys);
+    expect(description).toContain("closest airport to Yellowstone");
+    expect(description).toContain("BZN");
+    expect(description).toContain("1 h 56 min");
+    expect(description.length).toBeLessThanOrEqual(160);
+  });
+  it("stays within limits for long names and never loses the phrase", () => {
+    const long = { ...ys, name: "Great Smoky Mountains National Park", airportName: "McGhee Tyson Airport (Knoxville)", airportCode: "TYS" };
+    const title = flyDriveTitle(long);
+    expect(title.length).toBeLessThanOrEqual(60);
+    expect(title).toContain("TYS");
+    expect(flyDriveDescription(long).length).toBeLessThanOrEqual(160);
+  });
+  it("returns an empty description when the page would be thin", () => {
+    expect(flyDriveDescription({ ...ys, driveMinutes: null })).toBe("");
+  });
+});
+
 describe("fly & drive structured itinerary", () => {
   it("orders the arrival airport before the destination, without invented offers", () => {
     const url = `${SITE}/fly-and-drive/bozeman-bzn-yellowstone`;
