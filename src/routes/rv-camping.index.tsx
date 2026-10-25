@@ -3,9 +3,10 @@ import { createFileRoute } from "@tanstack/react-router";
 import { GuideHub } from "@/components/guides/GuideHub";
 import { getHubEntries } from "@/lib/data/guideHubs.functions";
 import { SITE } from "@/lib/seo/flyDrive";
+import { HUB_SEO } from "@/lib/seo/hubSeo";
 
-const title = "RV & Camping Guides by Destination — MiniaLife";
-const description = "Campgrounds, RV parks, hookups and campervan rentals for the best RV-friendly national parks and outdoor towns in the USA.";
+const title = HUB_SEO.rvCamping.title;
+const description = HUB_SEO.rvCamping.description;
 
 export const Route = createFileRoute("/rv-camping/")({
   loader: () => getHubEntries({ data: { family: "rv-camping" } }),

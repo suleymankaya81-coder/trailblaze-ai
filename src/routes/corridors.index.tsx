@@ -7,10 +7,10 @@ import { Footer } from "@/components/site/Footer";
 import { PageHero } from "@/components/site/PageHero";
 import { getDestinationCovers } from "@/lib/data/destinations.functions";
 import { CORRIDORS, CORRIDOR_AREAS, corridorArea } from "@/lib/seo/corridors";
+import { HUB_SEO } from "@/lib/seo/hubSeo";
 
-const title = "USA Airport Road Trip Loops: Gateway Road Trips — MiniaLife";
-const description =
-  "Free USA self-drive itineraries that return to your arrival airport. Compare national park and coastal loops, suggested days and notes for overseas visitors.";
+const title = HUB_SEO.corridors.title;
+const description = HUB_SEO.corridors.description;
 const url = "https://minialife.com/corridors";
 
 export const Route = createFileRoute("/corridors/")({

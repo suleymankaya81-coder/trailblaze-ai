@@ -10,9 +10,10 @@ import { Footer } from "@/components/site/Footer";
 import { PageHero } from "@/components/site/PageHero";
 import { LOOPS } from "@/lib/seo/guides";
 import { SITE } from "@/lib/seo/flyDrive";
+import { HUB_SEO } from "@/lib/seo/hubSeo";
 
-const title = "USA Road Trips: Airport Loops & Multi-Park Routes — MiniaLife";
-const description = `${LOOPS.length} road-trip loops linking nearby national parks and scenic towns, with suggested days per stop, leg distances and booking notes.`;
+const title = HUB_SEO.roadTrips.title;
+const description = HUB_SEO.roadTrips.description;
 
 export const Route = createFileRoute("/road-trips/")({
   head: ({ loaderData }) => ({

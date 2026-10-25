@@ -3,9 +3,10 @@ import { createFileRoute } from "@tanstack/react-router";
 import { GuideHub } from "@/components/guides/GuideHub";
 import { getHubEntries } from "@/lib/data/guideHubs.functions";
 import { SITE } from "@/lib/seo/flyDrive";
+import { HUB_SEO } from "@/lib/seo/hubSeo";
 
-const title = "Fly & Drive Guides: Airport to Park — MiniaLife";
-const description = "Which airport to fly into, how long the drive is and where to sleep the first night — one guide for every MiniaLife destination.";
+const title = HUB_SEO.flyAndDrive.title;
+const description = HUB_SEO.flyAndDrive.description;
 
 export const Route = createFileRoute("/fly-and-drive/")({
   loader: () => getHubEntries({ data: { family: "fly-and-drive" } }),

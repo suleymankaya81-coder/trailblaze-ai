@@ -1,10 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { GearShopPage } from "@/components/gear/GearShopPage";
 import { wildguarderProducts } from "@/lib/data/gearCategories";
+import { HUB_SEO } from "@/lib/seo/hubSeo";
 
-const title = "All Gear Categories: Outdoor Gear Shop | MiniaLife";
-const description =
-  "Browse outdoor gear by category — camping, cycling, optics, apparel and more — with handpicked picks from partner brands like ROCKBROS and WILDGUARDER.";
+const title = HUB_SEO.gear.title;
+const description = HUB_SEO.gear.description;
 
 export const Route = createFileRoute("/gear/")({
   head: () => ({
