@@ -5,6 +5,7 @@ import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { getShopCategory } from "@/lib/data/gearShop.functions";
 import { isShopCategory, shopCategoryMeta } from "@/lib/data/gearShop.categories";
+import { GEAR_CATEGORY_SEO } from "@/lib/seo/gearSeo";
 
 export const Route = createFileRoute("/gear/category/$key")({
   loader: async ({ params }) => {
@@ -17,13 +18,15 @@ export const Route = createFileRoute("/gear/category/$key")({
     const meta = isShopCategory(params.key) ? shopCategoryMeta[params.key] : null;
     if (!meta || !loaderData) return { meta: [{ title: "Gear category — MiniaLife" }, { name: "robots", content: "noindex" }] };
     const url = `https://minialife.com/gear/category/${params.key}`;
-    const title = `${meta.label} — ROCKBROS Trip Essentials | MiniaLife`;
+    const seo = GEAR_CATEGORY_SEO[params.key as keyof typeof GEAR_CATEGORY_SEO];
+    const title = seo.title;
+    const description = seo.description;
     return {
       meta: [
         { title },
-        { name: "description", content: meta.intro },
+        { name: "description", content: description },
         { property: "og:title", content: title },
-        { property: "og:description", content: meta.intro },
+        { property: "og:description", content: description },
         { property: "og:type", content: "website" },
         { property: "og:url", content: url },
         { name: "twitter:card", content: "summary_large_image" },
