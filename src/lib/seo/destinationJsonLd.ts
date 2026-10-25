@@ -29,8 +29,10 @@ export function buildDestinationImages(dest: Pick<DestinationView, "name" | "reg
   return out;
 }
 
+import type { Faq } from "./flyDrive";
+
 // Describe the visible guide, not unverified live inventory or a bookable tour.
-export function buildDestinationJsonLd(dest: DestinationView, pageUrl: string): Record<string, unknown> {
+export function buildDestinationJsonLd(dest: DestinationView, pageUrl: string, faqs: Faq[] = []): Record<string, unknown> {
   const destination: Record<string, unknown> = {
     "@type": "TouristDestination",
     "@id": `${pageUrl}#destination`,
@@ -70,5 +72,11 @@ export function buildDestinationJsonLd(dest: DestinationView, pageUrl: string): 
       },
     });
   }
+  // FAQPage mirrors the visible "Quick answers" section exactly.
+  if (faqs.length)
+    graph.push({
+      "@type": "FAQPage",
+      mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+    });
   return { "@context": "https://schema.org", "@graph": graph };
 }
