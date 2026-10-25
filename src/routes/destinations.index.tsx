@@ -12,6 +12,7 @@ import {
 } from "@/lib/data/destinations.functions";
 import { SEASONS, US_REGIONS } from "@/lib/data/usRegions";
 import { FilterPanel } from "@/components/site/FilterPanel";
+import { HUB_SEO } from "@/lib/seo/hubSeo";
 import { Button } from "@/components/ui/button";
 
 const SearchSchema = z.object({
@@ -38,18 +39,10 @@ export const Route = createFileRoute("/destinations/")({
     const isFiltered = Boolean(loaderData?.tag || loaderData?.region || loaderData?.season || loaderData?.q) || (loaderData?.page ?? 1) > 1;
     return {
       meta: [
-        { title: "All Destinations — Minialife" },
-        {
-          name: "description",
-          content:
-            "Every destination Minialife covers — camping, glamping, RV travel, cabins and national parks.",
-        },
-        { property: "og:title", content: "All Destinations — Minialife" },
-        {
-          property: "og:description",
-          content:
-            "Browse every outdoor destination we cover: camping, glamping, RV travel, cabins and national parks.",
-        },
+        { title: HUB_SEO.destinations.title },
+        { name: "description", content: HUB_SEO.destinations.description },
+        { property: "og:title", content: HUB_SEO.destinations.title },
+        { property: "og:description", content: HUB_SEO.destinations.description },
         { property: "og:type", content: "website" },
         { name: "twitter:card", content: "summary" },
         ...(loaderData?.destinations[0]?.heroImage?.startsWith("https://") ? [{ property: "og:image", content: loaderData.destinations[0].heroImage }, { name: "twitter:image", content: loaderData.destinations[0].heroImage }] : []),
