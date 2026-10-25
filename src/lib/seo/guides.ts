@@ -50,6 +50,28 @@ export function noReservationFaqs(d: GuideDest): Faq[] {
   return faqs;
 }
 
+// ---------- Destination page FAQs ----------
+// Deterministic answers to the query shapes people actually search
+// ("best time to visit X", "closest airport to X", "do you need a reservation for X").
+// Built only from stored destination data; a question is skipped when its data is missing.
+export function destinationFaqs(d: GuideDest & { tagline?: string | null; tripDurationDays?: string | null; avgDailyBudget?: number | null }): Faq[] {
+  const faqs: Faq[] = [];
+  const reviewed = getDestinationAnswers(d.slug)?.answers ?? [];
+  if (d.bestSeason)
+    faqs.push({ q: `When is the best time to visit ${d.name}?`, a: `The best window is typically ${d.bestSeason}. Outside that window weather and seasonal closures can limit what is open, so check current conditions before booking.` });
+  if (d.airportCode && d.airportName)
+    faqs.push({ q: `What is the closest airport to ${d.name}?`, a: `${d.airportName} (${d.airportCode}) is the closest airport${d.driveMinutes != null ? `, about ${formatDriveShort(d.driveMinutes)} away by car, without stops` : ""}.` });
+  // Topics already covered by the reviewed "A few things worth knowing" panel stay there — no duplicate answers on the page.
+  const reviewedDays = reviewed.some((a) => a.question.toLowerCase().startsWith("how many days"));
+  if (!reviewedDays && d.tripDurationDays) faqs.push({ q: `How many days do you need in ${d.name}?`, a: `Plan ${d.tripDurationDays} for the main sights at a comfortable pace.` });
+  const reviewedReservation = reviewed.some((a) => /reservation|timed entry|permit/i.test(a.question));
+  const note = reservationNote(d);
+  if (!reviewedReservation && note) faqs.push({ q: `Do you need a reservation for ${d.name}?`, a: note });
+  if (d.avgDailyBudget != null)
+    faqs.push({ q: `How much does a trip to ${d.name} cost?`, a: `A typical daily budget is about $${d.avgDailyBudget} per person, excluding flights. This is a typical estimate — actual prices vary by season and booking date.` });
+  return faqs;
+}
+
 export function rvFaqs(d: GuideDest): Faq[] {
   if (!isRvEligible(d)) return [];
   const note = reservationNote(d);
