@@ -1,17 +1,19 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { GearGuide } from "@/components/gear/GearGuide";
 import { gearGuides } from "@/lib/data/gearGuides";
+import { GEAR_ARTICLE_SEO } from "@/lib/seo/gearSeo";
 
 const c = gearGuides.repair;
+const seo = GEAR_ARTICLE_SEO.repair;
 const url = `https://minialife.com${c.path}`;
 
 export const Route = createFileRoute("/gear/bike-repair-kit-essentials")({
   head: () => ({
     meta: [
-      { title: c.metaTitle },
-      { name: "description", content: c.description },
-      { property: "og:title", content: c.metaTitle },
-      { property: "og:description", content: c.description },
+      { title: seo.title },
+      { name: "description", content: seo.description },
+      { property: "og:title", content: seo.title },
+      { property: "og:description", content: seo.description },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: url },
