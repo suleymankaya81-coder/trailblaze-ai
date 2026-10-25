@@ -75,7 +75,8 @@ import { getOrCreateSessionId } from "@/lib/affiliates/session";
 import { outboundLinkTitle } from "@/lib/affiliates/compliance";
 import { buildDestinationJsonLd } from "@/lib/seo/destinationJsonLd";
 import { flyDriveSlug } from "@/lib/seo/flyDrive";
-import { isNoReservationEligible, isRvEligible, loopsForDestination } from "@/lib/seo/guides";
+import { destinationFaqs, isNoReservationEligible, isRvEligible, loopsForDestination } from "@/lib/seo/guides";
+import { GuideFaq } from "@/components/guides/GuideSections";
 import { CORRIDORS } from "@/lib/seo/corridors";
 import { saveTripPlan } from "@/lib/plans/savePlan.functions";
 import { getCapturedEmail, setCapturedEmail } from "@/lib/plans/session";
@@ -99,7 +100,7 @@ export const Route = createFileRoute("/destinations/$slug")({
     const title = destinationSearchTitle(d.name);
     const description = destinationSearchDescription(d.name, d.tagline, d.bestSeason);
     const pageUrl = `https://minialife.com/destinations/${d.slug}`;
-    const jsonLd = buildDestinationJsonLd(d, pageUrl);
+    const jsonLd = buildDestinationJsonLd(d, pageUrl, destinationFaqs(d));
     return {
       meta: [
         { title },
@@ -188,6 +189,7 @@ function DestinationPage() {
           {dest.travelPlan ? <TravelFlow name={dest.name} plan={dest.travelPlan} /> : <TripFlow dest={dest} />}
           <RoadTrip dest={dest} ai={ai} />
         </div>
+        <DestinationQuickAnswers dest={dest} />
         <div id="trip-booking"><BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} /></div>
 
         {/* Booking order: flight (strip above) → vehicle → stay → tours */}
