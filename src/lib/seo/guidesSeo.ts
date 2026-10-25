@@ -4,7 +4,8 @@
 // "{name} reservations" (e.g. "yellowstone reservations", 1,600/mo; top
 // question "do you need a reservation for {name}"). Distinct phrase families
 // from the destination guide ("{name} travel guide") and the four search pages.
-import { BRAND, DESCRIPTION_MAX, TITLE_MAX, fitText, formatDriveShort } from "./routeSeo";
+import { BRAND, DESCRIPTION_MAX, TITLE_MAX, fitText } from "./routeSeo";
+import { formatDriveShort } from "./flyDrive";
 
 export type GuideSeoInput = {
   name: string;
