@@ -85,18 +85,7 @@ import { offerPhoto, type Photo } from "@/lib/data/destinationCardPhotos";
 import { ROAD_PREPARATION_PARTNERS, preparationLink } from "@/lib/affiliates/travelpayouts";
 import { commonsFilePage, parsePhotoCredit } from "@/lib/seo/imageCredit";
 
-// Search snippet: tagline plus the matching guide topics, kept within ~160 chars.
-function seoDescription(name: string, tagline: string | null, bestSeason: string | null): string {
-  const base = (tagline ?? "").trim().replace(/[.!]?$/, ".");
-  const extras = [
-    bestSeason ? ` Best time: ${bestSeason}.` : "",
-    ` Things to do, itinerary & glamping in ${name}.`,
-    " Stays, RV rentals & road trip map.",
-  ];
-  let out = base;
-  for (const e of extras) if ((out + e).length <= 160) out += e;
-  return out.trim();
-}
+import { destinationSearchDescription, destinationSearchTitle } from "@/lib/seo/routeSeo";
 
 export const Route = createFileRoute("/destinations/$slug")({
   loader: async ({ params }): Promise<{ dest: DestinationView }> => {
@@ -107,8 +96,8 @@ export const Route = createFileRoute("/destinations/$slug")({
   head: ({ loaderData }) => {
     const d = loaderData?.dest;
     if (!d) return { meta: [{ title: "Destination — Minialife" }] };
-    const title = `${d.name} Travel Guide — Minialife`;
-    const description = seoDescription(d.name, d.tagline, d.bestSeason);
+    const title = destinationSearchTitle(d.name);
+    const description = destinationSearchDescription(d.name, d.tagline, d.bestSeason);
     const pageUrl = `https://minialife.com/destinations/${d.slug}`;
     const jsonLd = buildDestinationJsonLd(d, pageUrl);
     return {
