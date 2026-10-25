@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 
 import { LOOPS } from "@/lib/seo/guides";
+import { HUB_SEO } from "@/lib/seo/hubSeo";
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
@@ -32,18 +33,10 @@ export const Route = createFileRoute("/")({
   }),
   head: () => ({
     meta: [
-      { title: "USA Outdoor Road Trips & Self-Drive Itineraries — MiniaLife" },
-      {
-        name: "description",
-        content:
-          "Free USA outdoor road trip itineraries: airport loops, national parks and RV routes. Plan your stops, check entry notes and book with travel partners.",
-      },
-      { property: "og:title", content: "USA Outdoor Road Trips & Self-Drive Itineraries — MiniaLife" },
-      {
-        property: "og:description",
-        content:
-          "Free USA outdoor road trip itineraries: airport loops, national parks and RV routes. Plan your stops, check entry notes and book with travel partners.",
-      },
+      { title: HUB_SEO.home.title },
+      { name: "description", content: HUB_SEO.home.description },
+      { property: "og:title", content: HUB_SEO.home.title },
+      { property: "og:description", content: HUB_SEO.home.description },
       { property: "og:url", content: "https://minialife.com/" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

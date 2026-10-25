@@ -14,9 +14,10 @@ import { Footer } from "@/components/site/Footer";
 import { PageHero } from "@/components/site/PageHero";
 import { getDestinationCovers } from "@/lib/data/destinations.functions";
 import { SITE } from "@/lib/seo/flyDrive";
+import { HUB_SEO } from "@/lib/seo/hubSeo";
 
-const title = "Trip Guides: Fly & Drive, RV, Permits & Loops — MiniaLife";
-const description = "All MiniaLife trip guides in one place: road trip loops, gateway road trips, fly & drive, RV & camping and no-reservation guides.";
+const title = HUB_SEO.tripGuides.title;
+const description = HUB_SEO.tripGuides.description;
 
 const FAMILIES = [
   { cover: "zion", to: "/road-trips", icon: roadImg, count: `${LOOPS.length} loops`, label: "Road Trip Loops", text: "Multi-park loops with days per stop and drive distances." },
