@@ -159,6 +159,21 @@ function DestinationNotFound() {
   );
 }
 
+// Query-shaped answers (best time, closest airport, reservations, days, budget),
+// built only from stored destination data; hidden when nothing applies.
+function DestinationQuickAnswers({ dest }: { dest: DestinationView }) {
+  const faqs = destinationFaqs(dest);
+  if (!faqs.length) return null;
+  return (
+    <section id="trip-answers" className="scroll-mt-24" aria-labelledby="quick-answers">
+      <h2 id="quick-answers" className="mb-4 font-display text-2xl font-bold text-foreground md:text-3xl">
+        Quick answers about {dest.name}
+      </h2>
+      <GuideFaq faqs={faqs} />
+    </section>
+  );
+}
+
 /* =========================================================
    PAGE
    Flow: Stay -> Rent -> Explore -> Prepare -> Go
