@@ -1,3 +1,7 @@
+## October 25 affiliate copy cleanup
+- [ ] Remove repetitive partnership/commission and generic pricing notices across page families; retain footer Affiliate Disclosure link, legal page, tracking, photo credits and estimate qualifiers.
+- [ ] Verify representative pages and existing affected tests.
+
 ## October 24 selected homepage collage correction
 - [x] Replace the incorrectly applied cinematic opening with the selected left-copy / three-photo staggered collage and working search; retain all lower homepage sections.
 - [x] Verified all three images at 1280/977/390px, no horizontal overflow or page errors; Yellowstone search opens its actual destination page. Preview build OK. Inspirational scenes are generated, clearly labelled, and not represented as verified destination photographs; nothing published.
