@@ -143,7 +143,7 @@ function CategoryPage() {
         )}
 
         <p className="mt-12 rounded-xl bg-muted/60 p-4 text-xs text-muted-foreground">
-          Partner links via Awin. We may earn a commission at no extra cost to you. Products, photos and prices come from the ROCKBROS catalog ({reviewed}) and may change; checkout happens on the ROCKBROS store. We have not hands-on tested every item. See our <Link to="/affiliate-disclosure" className="underline">affiliate disclosure</Link>.
+          Products, photos and prices come from the ROCKBROS catalog ({reviewed}) and may change; checkout happens on the ROCKBROS store. We have not hands-on tested every item.
         </p>
       </main>
       <Footer />

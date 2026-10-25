@@ -52,6 +52,6 @@ function Experiences({ slug }: { slug: string }) {
         </div>
       </article>)}
     </SwipeRow>
-    <p className="mt-3 text-[11px] leading-relaxed text-muted-foreground">Photos, prices and ratings supplied by Viator. Availability is confirmed on Viator. Partner links · MiniaLife may earn a commission.{slug === "grand-circle-from-las-vegas" && " The helicopter tour visits Grand Canyon West, not the national park’s South Rim; plan it from Las Vegas."}</p>
+    <p className="mt-3 text-[11px] leading-relaxed text-muted-foreground">Photos, prices and ratings supplied by Viator.{slug === "grand-circle-from-las-vegas" && " The helicopter tour visits Grand Canyon West, not the national park’s South Rim; plan it from Las Vegas."}</p>
   </div>;
 }

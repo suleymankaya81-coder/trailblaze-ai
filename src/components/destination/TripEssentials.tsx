@@ -53,7 +53,7 @@ export function TripEssentials({ context }: { context: EssentialsContext }) {
           </article>
         ))}
       </div>
-      <p className="mt-4 text-xs leading-relaxed text-muted-foreground">Optional picks, not a complete packing or safety list. Partner links · We may earn a commission at no extra cost to you. Photos from the ROCKBROS catalog. Prices as of {TRIP_ESSENTIALS_REVIEWED}; price, stock and shipping may change.</p>
+      <p className="mt-4 text-xs leading-relaxed text-muted-foreground">Optional picks, not a complete packing or safety list. Photos from the ROCKBROS catalog. Prices as of {TRIP_ESSENTIALS_REVIEWED}; price, stock and shipping may change.</p>
     </section>
   );
 }

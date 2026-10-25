@@ -36,9 +36,6 @@ export function GetYourGuideWidget({ query }: { query: string }) {
   if (!GYG_PARTNER_ID) return null;
   return (
     <div ref={ref} className="mt-6">
-      <p className="mb-2 text-[11px] uppercase tracking-wide text-muted-foreground">
-        Partner link · GetYourGuide
-      </p>
       {visible && (
         <div
           data-gyg-widget="auto"

@@ -87,10 +87,7 @@ export function destinationHost(url: string | null): string | null {
   }
 }
 
-export function outboundLinkTitle(partner: string | null, url: string | null, commissionable = true): string {
+export function outboundLinkTitle(partner: string | null, url: string | null, _commissionable = true): string {
   const name = partnerLabel(partner) ?? destinationHost(url);
-  if (!commissionable) return name ? `Opens ${name} in a new tab` : "Opens external site in a new tab";
-  return name
-    ? `Opens ${name} in a new tab — partner link, we may earn a commission`
-    : "Opens a partner site in a new tab — we may earn a commission";
+  return name ? `Opens ${name} in a new tab` : "Opens external site in a new tab";
 }

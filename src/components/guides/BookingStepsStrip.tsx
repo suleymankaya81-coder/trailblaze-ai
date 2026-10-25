@@ -28,14 +28,13 @@ export function BookingStepsStrip({ slug, name, airportCode }: { slug: string; n
               onClick={(e) => { if (s.external) { e.preventDefault(); window.open(s.href, "_blank", "noopener,noreferrer"); } }}
               className="flex min-h-12 items-start gap-2 rounded-lg border border-border bg-card p-3 text-sm font-semibold text-foreground transition hover:border-primary">
               <Thumb src={[flightImg, carImg, stayImg, roadImg, gearImg][s.number - 1]} size={40} />
-              <span className="min-w-0 flex-1"><span className="block text-[10px] uppercase text-sage-deep">Step {s.number}</span>{s.label}<span className="block text-[11px] font-normal text-muted-foreground">{s.brand}{s.external ? " · partner link" : ""}</span></span>
+              <span className="min-w-0 flex-1"><span className="block text-[10px] uppercase text-sage-deep">Step {s.number}</span>{s.label}<span className="block text-[11px] font-normal text-muted-foreground">{s.brand}</span></span>
               <ArrowUpRight className="h-4 w-4 shrink-0 text-primary" />
             </a>
             {s.alternative && <a href={s.alternative} target="_blank" rel="sponsored nofollow noopener noreferrer" className="mt-1 flex min-h-12 items-center px-3 text-xs font-semibold text-primary">Or choose an RV · Motorhome Republic <ArrowUpRight className="ml-1 h-3 w-3" /></a>}
           </div>
         ))}
       </SwipeRow>
-      <p className="mt-3 text-[11px] text-muted-foreground">Live prices and availability are on each partner's site. We may earn a commission, at no extra cost to you.</p>
     </section>
   );
 }

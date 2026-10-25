@@ -30,7 +30,7 @@ export function CorridorBookings({ slug, airport, city }: { slug: string; airpor
   const items = [
     { key: "flight", step: step("flight"), icon: Plane, title: `Flights to ${airport}`, brand: "Aviasales", cta: `Find flights to ${airport}`, detail: "Compare arrival dates before fixing your first night.", href: links.flight, photo: servicePhoto("flight", slug) },
     { key: "motorhome", step: step("vehicle"), icon: Truck, title: "Motorhome or campervan", brand: "Motorhome Republic", cta: `Compare RVs near ${airport}`, detail: "Professional fleets; check pickup hours and park vehicle limits.", href: links.motorhome, photo: servicePhoto("rv", slug) },
-    { key: "car", step: step("vehicle"), icon: Car, title: `Car or SUV at ${airport}`, brand: "Airport Rentals", cta: `Compare cars at ${airport}`, detail: `Choose ${airport} pickup, dates and a standard car or SUV; live prices on the partner site.`, href: links.car, photo: airportRentalPhoto("car", slug) },
+    { key: "car", step: step("vehicle"), icon: Car, title: `Car or SUV at ${airport}`, brand: "Airport Rentals", cta: `Compare cars at ${airport}`, detail: `Choose ${airport} pickup, dates and a standard car or SUV.`, href: links.car, photo: airportRentalPhoto("car", slug) },
     { key: "stay", step: step("stay"), icon: Truck, title: `Stays near ${city}`, brand: "Vrbo", cta: "Find cabins & homes", detail: "Choose your overnight stops and check dates on Vrbo.", href: buildVrboSearchUrl(city), photo: servicePhoto("cabin", slug) },
     { key: "esim", step: null, icon: Smartphone, title: "Mobile data for the U.S.", brand: "Airalo", cta: "Get a U.S. eSIM", detail: "Check phone compatibility; download maps before entering the parks.", href: links.esim, photo: null },
   ];
@@ -51,6 +51,5 @@ export function CorridorBookings({ slug, airport, city }: { slug: string; airpor
         </div>
       </article>)}
     </SwipeRow>
-    <p className="mt-4 text-xs text-muted-foreground">Next: choose your overnight stops, then tours and trip essentials below. Photos are illustrative. We may earn a commission from partner links, at no extra cost to you; prices and availability are confirmed on the provider's site ({city}).</p>
   </>;
 }

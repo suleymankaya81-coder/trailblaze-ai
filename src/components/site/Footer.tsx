@@ -72,14 +72,6 @@ export function Footer() {
           ))}
         </nav>
 
-        <p className="mt-6 text-xs text-muted-foreground">
-          Minialife contains partner links. If you book or buy through them we may earn a
-          commission, at no extra cost to you — see our{" "}
-          <Link to="/affiliate-disclosure" className="font-semibold text-forest underline underline-offset-2">
-            Affiliate Disclosure
-          </Link>
-          . Minialife is an independent publisher and does not process bookings or payments.
-        </p>
 
         <div className="mt-6 flex flex-col gap-2 text-xs text-muted-foreground md:flex-row md:justify-between">
           <span>© {new Date().getFullYear()} Minialife. All rights reserved.</span>

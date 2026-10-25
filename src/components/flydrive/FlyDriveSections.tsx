@@ -97,7 +97,7 @@ function StepCard({ n, icon, title, body, href, cta, brand, photo }: { n: number
       href={href}
       target="_blank"
       rel="sponsored nofollow noopener noreferrer"
-      title={`Opens ${brand} in a new tab — partner link, we may earn a commission`}
+      title={`Opens ${brand} in a new tab`}
       className="group flex h-full flex-col overflow-hidden rounded-lg border border-border bg-card shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg"
     >
       <div className="relative aspect-[4/3] overflow-hidden bg-muted">
@@ -113,10 +113,6 @@ function StepCard({ n, icon, title, body, href, cta, brand, photo }: { n: number
         <span className="mt-5 inline-flex min-h-12 items-center justify-center gap-1.5 rounded-md bg-primary px-4 py-2 text-center text-sm font-semibold text-primary-foreground">
           {cta} <ArrowUpRight className="h-4 w-4" />
         </span>
-        <p className="mt-2 text-[10px] text-muted-foreground">
-          Partner link · {brand}
-          
-        </p>
       </div>
     </a>
     {photo && <PhotoCredit photo={photo} className="absolute right-2 top-2" />}
@@ -149,7 +145,7 @@ export function ArrivalPlan({ dest }: { dest: DestinationView }) {
           n={2}
           icon={<Car className="h-5 w-5" />}
           title={`Standard car at ${dest.airportCode}`}
-          body={`Pick up at the airport and drive straight to ${dest.name}. Compare rental companies in one search. ${estimatedFrom("car")} · typical rate; check live prices.`}
+          body={`Pick up at the airport and drive straight to ${dest.name}. Compare rental companies in one search. ${estimatedFrom("car")} · typical rate.`}
           href={airportRentalsLink()}
           cta="Compare rentals"
           brand="Airport Rentals"
@@ -159,7 +155,7 @@ export function ArrivalPlan({ dest }: { dest: DestinationView }) {
           n={2}
           icon={<Car className="h-5 w-5" />}
           title={`SUV at ${dest.airportCode}`}
-          body={`Select an SUV, pickup location and dates on Airport Rentals. Confirm prices and availability there. ${estimatedFrom("suv")} · typical rate.`}
+          body={`Select an SUV, pickup location and dates on Airport Rentals. ${estimatedFrom("suv")} · typical rate.`}
           href={airportRentalsLink()}
           cta="Compare SUVs"
           brand="Airport Rentals"
@@ -199,7 +195,7 @@ export function ArrivalPlan({ dest }: { dest: DestinationView }) {
             n={3}
             icon={<BedDouble className="h-5 w-5" />}
             title={`Cabins & homes near ${dest.name}`}
-            body={`${estimatedFrom("cabin")} · typical rate. Whole homes and cabins for families or groups; check live prices on Vrbo.`}
+            body={`${estimatedFrom("cabin")} · typical rate. Whole homes and cabins for families or groups.`}
             href={buildVrboSearchUrl(dest.name)}
             cta="Search Vrbo"
             brand="Vrbo"
