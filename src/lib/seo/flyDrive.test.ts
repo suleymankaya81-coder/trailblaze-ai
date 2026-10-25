@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { airportCity, flyDriveFaqs, flyDriveJsonLd, flyDriveSlug, parseFlyDriveSlug, SITE } from "./flyDrive";
+import { airportCity, flyDriveDescription, flyDriveFaqs, flyDriveJsonLd, flyDriveSlug, flyDriveTitle, parseFlyDriveSlug, SITE } from "./flyDrive";
 
 const ys = { slug: "yellowstone", name: "Yellowstone", airportCode: "BZN", airportName: "Bozeman Yellowstone International Airport", driveMinutes: 116, driveMiles: 90 };
 

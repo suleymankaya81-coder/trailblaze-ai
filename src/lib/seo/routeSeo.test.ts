@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import loops from "@/data/loops.json";
 import { CORRIDORS } from "./corridors";
 import { corridorPageTitle, corridorSearchDescription, corridorSearchTitle } from "./corridorSeo";
-import { CORRIDOR_KEYWORDS, LOOP_KEYWORDS, loopSearchDescription, loopSearchTitle } from "./routeSeo";
+import { CORRIDOR_KEYWORDS, LOOP_KEYWORDS, destinationSearchDescription, destinationSearchTitle, loopSearchDescription, loopSearchTitle } from "./routeSeo";
 
 const name = (slug: string) => slug.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" ");
 
