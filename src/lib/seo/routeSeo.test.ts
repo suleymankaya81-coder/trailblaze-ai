@@ -33,7 +33,7 @@ describe("road trip search metadata", () => {
 
   it("uses the exact Grand Circle phrase", () => {
     const c = CORRIDORS.find((x) => x.slug === "grand-circle-from-las-vegas")!;
-    expect(corridorPageTitle(c)).toBe("Grand Circle Road Trip from Las Vegas: 10-14 Days — MiniaLife");
+    expect(corridorPageTitle(c)).toBe("Grand Circle Road Trip from Las Vegas — MiniaLife");
   });
 
   it("gives every page a distinct title", () => {

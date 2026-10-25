@@ -56,7 +56,7 @@ export const CORRIDOR_KEYWORDS: Record<string, string> = {
   "black-hills-badlands-from-rapid-city": "Black Hills & Badlands Road Trip",
   "smokies-blue-ridge-from-atlanta": "Atlanta to Smoky Mountains Road Trip",
   "florida-springs-gulf-from-orlando": "Florida Road Trip from Orlando",
-  "deep-south-from-new-orleans": "New Orleans Road Trip: Deep South Loop",
+  "deep-south-from-new-orleans": "New Orleans & Deep South Road Trip",
   "new-england-acadia-from-boston": "New England Fall Foliage Road Trip",
   "cape-cod-coast-from-boston": "Cape Cod Road Trip from Boston",
   "shenandoah-history-from-washington-dc": "Shenandoah Road Trip from Washington, DC",
