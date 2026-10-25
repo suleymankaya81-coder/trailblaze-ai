@@ -9,7 +9,7 @@ import { ViatorPlaceBlock } from "@/components/destination/ViatorPlaceBlock";
 import { ArrivalPlan, BeforeYouLand, FlyDriveFaq, FlyDriveHero, RelatedLinks, RouteCard } from "@/components/flydrive/FlyDriveSections";
 import { getDestinationPageData } from "@/lib/data/destinations.functions";
 import { getAirportSiblings } from "@/lib/data/flyDrive.functions";
-import { SITE, flyDriveFaqs, flyDriveJsonLd, flyDriveSlug, formatDriveShort, parseFlyDriveSlug } from "@/lib/seo/flyDrive";
+import { SITE, flyDriveDescription, flyDriveFaqs, flyDriveJsonLd, flyDriveSlug, flyDriveTitle, parseFlyDriveSlug } from "@/lib/seo/flyDrive";
 
 export const Route = createFileRoute("/fly-and-drive/$slug")({
   loader: async ({ params }) => {
@@ -25,9 +25,9 @@ export const Route = createFileRoute("/fly-and-drive/$slug")({
   },
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
-    const { dest, driveMinutes, faqs, url } = loaderData;
-    const title = `Fly into ${dest.airportCode}, Drive to ${dest.name} — MiniaLife`;
-    const description = `Flights to ${dest.airportCode}, airport car rental, luggage storage and a first night near ${dest.name}. ${formatDriveShort(driveMinutes)} drive, reservation notes included.`;
+    const { dest, faqs, url } = loaderData;
+    const title = flyDriveTitle(dest);
+    const description = flyDriveDescription(dest);
     const img = dest.heroImage.startsWith("https://") ? dest.heroImage : null;
     return {
       meta: [
