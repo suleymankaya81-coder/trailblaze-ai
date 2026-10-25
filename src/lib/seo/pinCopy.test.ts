@@ -4,7 +4,7 @@ import { DESC_MAX, DESC_MIN, type PinKind, pinDescription, pinTitle } from "./pi
 const base = {
   name: "Zion National Park",
   tagline: "Towering sandstone cliffs and slot canyons in southern Utah. A classic stop on any desert road trip.",
-  seoTitle: "Top 10 Things to Do in Zion National Park | Minialife",
+  seoTitle: "Top 10 Things to Do in Zion National Park | MiniaLife",
   seoDescription: "Discover the best time to visit Zion. Learn about weather, crowds and shuttle seasons for your trip.",
   bestSeason: "March – May, September – November",
   duration: "3-5 days",

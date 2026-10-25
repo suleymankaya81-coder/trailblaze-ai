@@ -74,7 +74,7 @@ export function Footer() {
 
 
         <div className="mt-6 flex flex-col gap-2 text-xs text-muted-foreground md:flex-row md:justify-between">
-          <span>© {new Date().getFullYear()} Minialife. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} MiniaLife. All rights reserved.</span>
           <span>Crafted for the great outdoors.</span>
         </div>
       </div>

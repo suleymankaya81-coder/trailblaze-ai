@@ -15,14 +15,14 @@ import { CONTACT_EMAIL, buildContactEmail, contactSchema } from "@/lib/contact";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Minialife" },
+      { title: "Contact — MiniaLife" },
       {
         name: "description",
-        content: "Get in touch with the Minialife team — broken links, destination requests, or partnership questions.",
+        content: "Get in touch with the MiniaLife team — broken links, destination requests, or partnership questions.",
       },
       { property: "og:url", content: "https://minialife.com/contact" },
-      { property: "og:title", content: "Contact — Minialife" },
-      { property: "og:description", content: "Contact Minialife about destination requests, broken links or partnerships." },
+      { property: "og:title", content: "Contact — MiniaLife" },
+      { property: "og:description", content: "Contact MiniaLife about destination requests, broken links or partnerships." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
@@ -75,7 +75,7 @@ function ContactPage() {
                   merchant, or affiliate-network enquiries.
                 </p>
                 <p className="mt-2 text-xs text-muted-foreground">
-                  Minialife is an independent outdoor-travel publisher based in the United States.
+                  MiniaLife is an independent outdoor-travel publisher based in the United States.
                 </p>
               </div>
             </div>
