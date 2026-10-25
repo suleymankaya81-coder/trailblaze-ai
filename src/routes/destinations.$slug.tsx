@@ -532,9 +532,6 @@ function TopStays({ dest }: { dest: DestinationView }) {
         title="Where you'll want to sleep"
         
       />
-      <p className="-mt-3 mb-4 text-[11px] text-muted-foreground">
-        Checks availability with the partner directly — not a confirmed booking on our end.
-      </p>
 
       <StayChooser name={dest.name} />
 
@@ -752,9 +749,6 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
         title={dest.airportCode ? `RVs, campervans & cars near ${dest.airportCode}` : "RVs, campervans & cars for this trip"}
         
       />
-      <p className="-mt-3 mb-4 text-[11px] text-muted-foreground">
-        Checks availability with the partner directly — not a confirmed booking on our end.
-      </p>
       {rentals.length > 0 && (
         <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
            {rentals.map((r, index) => (

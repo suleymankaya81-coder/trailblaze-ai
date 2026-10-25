@@ -95,7 +95,7 @@ export function VrboSearchWidget({ destinationName }: { destinationName: string 
           points={[
             { icon: Mountain, text: "Whole-home cabins and mountain lodges" },
             { icon: Trees, text: "Kitchens, fire pits and room for the crew" },
-            { icon: Home, text: "Pick dates on Vrbo for live prices" },
+            { icon: Home, text: "Choose dates and a home on Vrbo" },
           ]}
         />
         <StayCard

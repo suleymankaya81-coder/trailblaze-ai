@@ -56,7 +56,7 @@ export function TravelpayoutsCards({ slug, name, airportCode }: { slug: string; 
   });
   const at = airportCode ? ` ${airportCode}` : "";
   const flightSub = fare?.price
-    ? `Recent fares from ~$${Math.round(fare.price)}${fare.origin ? ` (from ${fare.origin})` : ""} · estimate, check live price`
+    ? `Recent fares from ~$${Math.round(fare.price)}${fare.origin ? ` (from ${fare.origin})` : ""} · estimate`
     : `Compare fares into${at || " the nearest airport"}`;
 
   const getThere: Item[] = [

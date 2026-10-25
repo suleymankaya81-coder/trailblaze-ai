@@ -10,7 +10,7 @@ export function AirportRentalsCards({ slug, airportCode }: { slug: string; airpo
       return photo ? <PartnerPhotoCard key={kind} brand="Airport Rentals"
         title={`${kind === "car" ? "Standard car rentals" : "SUV rentals"}${airportCode ? ` at ${airportCode}` : ""}`}
         href={airportRentalsLink()} photo={photo} price={estimatedFrom(kind === "car" ? "standard car" : "suv")}
-        detail="Pick your dates and vehicle class; live prices are shown on Airport Rentals."
+        detail="Pick your dates and vehicle class."
         badges={[airportCode ? `Compare suppliers at ${airportCode}` : "Compare airport suppliers", "Free cancellation on many rates"]}
         cta={airportCode ? `Compare rates at ${airportCode}` : "Compare airport rates"} /> : null;
     })}
