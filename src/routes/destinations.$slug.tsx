@@ -734,10 +734,10 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
 
 // A small sleeps-2 camper van: what a second, cheaper Motorhome Republic booking looks like.
 const SMALL_CAMPER_PHOTO: Photo = {
-  url: "/images/destination-cards/campervan-sleeps2-5844194797.jpg",
-  source: "https://commons.wikimedia.org/wiki/File:Volkswagen_California_TDI_Camper_(Europe)_(5844194797).jpg",
-  credit: "InSapphoWeTrust",
-  license: "CC BY-SA 2.0",
+  url: "/images/destination-cards/campervan-sleeps2-california-t61.jpg",
+  source: "https://commons.wikimedia.org/wiki/File:VW_California_Ocean_T6.1.jpg",
+  credit: "Southampton Campers",
+  license: "CC BY-SA 4.0",
   subject: "Small campervan (sleeps 2)",
 };
 
