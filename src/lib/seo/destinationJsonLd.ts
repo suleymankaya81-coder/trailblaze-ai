@@ -43,7 +43,18 @@ export function buildDestinationJsonLd(dest: DestinationView, pageUrl: string, f
   const images = buildDestinationImages(dest);
   if (images.length) destination.image = images;
   if (dest.region) destination.address = dest.region;
-  const graph: Record<string, unknown>[] = [destination, {
+  if (dest.lat != null && dest.lng != null)
+    destination.geo = { "@type": "GeoCoordinates", latitude: dest.lat, longitude: dest.lng };
+  const webPage: Record<string, unknown> = {
+    "@type": "WebPage",
+    "@id": `${pageUrl}#webpage`,
+    url: pageUrl,
+    name: `${dest.name} travel guide`,
+    about: { "@id": `${pageUrl}#destination` },
+    publisher: { "@type": "Organization", name: "MiniaLife", url: "https://minialife.com/" },
+    inLanguage: "en",
+  };
+  const graph: Record<string, unknown>[] = [destination, webPage, {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "MiniaLife", item: "https://minialife.com/" },
