@@ -181,8 +181,8 @@ function DestinationPage() {
       <TripSnapshot trip={dest} />
       <TripQuickNav />
 
-      <main className="container-page space-y-14 py-10 md:space-y-16">
-        <div id="trip-plan" className="space-y-14">
+      <main className="container-page max-w-[1200px] space-y-12 py-10 md:space-y-16">
+        <div id="trip-plan" className="space-y-12 md:space-y-16">
           <TripRadar dest={dest} />
           <DestinationAnswers slug={dest.slug} />
           {dest.travelPlan ? <TravelFlow name={dest.name} plan={dest.travelPlan} /> : <TripFlow dest={dest} />}
@@ -193,12 +193,12 @@ function DestinationPage() {
         {/* Booking order: flight (strip above) → vehicle → stay → tours */}
         <RentBeforeYouGo dest={dest} />
 
-        <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
-          <TopStays dest={dest} />
-          <div className="space-y-6">
-            <TripBudget ai={ai} loading={aiLoading} />
-            <TravelServices dest={dest} />
-          </div>
+        <TopStays dest={dest} />
+
+        {/* Budget + preparation: equal panels, never sticky (prevents overlap) */}
+        <div className="grid gap-6 md:grid-cols-2 md:items-stretch">
+          <TripBudget ai={ai} loading={aiLoading} />
+          <TravelServices dest={dest} />
         </div>
 
         {/* Tours & services — one section */}
@@ -210,10 +210,8 @@ function DestinationPage() {
 
         <PlanDeeper dest={dest} />
 
-        <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
-          <SimilarDestinations dest={dest} />
-          <FinalCta dest={dest} />
-        </div>
+        <SimilarDestinations dest={dest} />
+        <FinalCta dest={dest} />
       </main>
 
       <Footer />
@@ -442,8 +440,11 @@ function OfferCta({
 
 function SectionHeader({ title, action, id, step }: { title: string; action?: ReactNode; id?: string; step?: number }) {
   return (
-    <div className="mb-5 flex flex-wrap items-end justify-between gap-3" id={id}>
-      <h2 className="font-display text-2xl text-foreground md:text-[28px]">{step && <span className="mr-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-primary align-middle font-sans text-sm font-semibold text-primary-foreground">{step}</span>}{title}</h2>
+    <div className="mb-6 grid grid-cols-[minmax(0,1fr)_auto] items-end gap-3" id={id}>
+      <h2 className="flex min-w-0 items-center gap-3 font-display text-[26px] leading-tight text-foreground md:text-[36px]">
+        {step && <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary font-sans text-sm font-semibold text-primary-foreground">{step}</span>}
+        <span className="min-w-0">{title}</span>
+      </h2>
       {action}
     </div>
   );
