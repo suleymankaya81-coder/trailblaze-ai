@@ -40,7 +40,7 @@ function Place({ slug }: { slug: string }) {
   return <div ref={ref} className="bg-background p-1">
     {unavailable && <div className="p-4"><p className="text-sm text-muted-foreground">Viator tours could not be loaded. Please try again.</p><Button variant="outline" className="mt-3 min-h-12" onClick={() => refetch()}>Try again</Button></div>}
     {items.length > 0 && <>
-      <SwipeRow className="sm:grid-cols-3">
+      <SwipeRow className="md:grid-cols-3">
         {items.map((item) => <article key={item.code} className="flex min-w-0 flex-col overflow-hidden rounded-lg border border-border bg-card">
           <SafeImage src={item.image} alt={item.title} loading="lazy" className="aspect-[4/3] w-full object-cover" />
           <div className="flex flex-1 flex-col p-4">
