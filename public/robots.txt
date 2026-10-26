@@ -17,6 +17,21 @@ Disallow: /go/
 Disallow: /out/
 Disallow: /_serverFn/
 
+# AI assistants and answer engines may read public pages.
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Perplexity-User
+User-agent: Bingbot
+Allow: /
+Disallow: /go/
+Disallow: /out/
+Disallow: /_serverFn/
+
 # SEO audit crawlers may read pages, but never outbound partner links.
 User-agent: AhrefsBot
 Allow: /
