@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { landingFaqs } from "./landingFaqs";
 
-const full = { bestSeason: "June to September", tripDays: "3–4 days", airport: "BZN", driveMinutes: 90, permitLevel: "required", dailyBudget: 180 };
+const full = { bestSeason: "June to September", tripDays: "3–4 days", airport: "BZN", driveMinutes: 90, permitLevel: "high", dailyBudget: 180 };
 const empty = { bestSeason: null, tripDays: null, airport: null, driveMinutes: null, permitLevel: null, dailyBudget: null };
 
 describe("search page FAQs", () => {

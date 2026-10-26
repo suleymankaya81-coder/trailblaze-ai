@@ -22,9 +22,9 @@ export function landingFaqs(pageType: string, name: string, f: LandingFaqFacts, 
   const air = airportLine(f);
   const budget = f.dailyBudget != null ? `about $${f.dailyBudget} per person per day, excluding flights (a typical estimate; prices vary by season)` : null;
   const reservations =
-    f.permitLevel === "required" ? `Yes — ${name} requires an advance reservation or permit for at least part of the year. Check the official site before you go.`
-    : f.permitLevel === "recommended" ? `Not always, but booking ahead is recommended for ${name}, especially in peak season.`
-    : f.permitLevel === "none" ? `No general entry reservation is needed for ${name}; popular tours and stays can still sell out.`
+    f.permitLevel === "high" ? `Yes — ${name} can require an advance reservation or permit for at least part of the year. Check the official site before you go.`
+    : f.permitLevel === "moderate" ? `Not always, but booking ahead is recommended for ${name}, especially in peak season.`
+    : f.permitLevel === "low" ? `No general entry reservation is usually needed for ${name}; popular tours and stays can still sell out.`
     : null;
   const headings = sections.map((s) => s.heading.replace(/^\d+[.)]\s*/, "")).filter(Boolean).slice(0, 4);
 

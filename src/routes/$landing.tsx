@@ -70,6 +70,7 @@ export const Route = createFileRoute("/$landing")({
       return { meta: [{ title: "Page not found — MiniaLife" }, { name: "robots", content: "noindex" }] };
     }
     const { page, h1, destination, sections } = loaderData.bundle;
+    const faqs = landingFaqs(page.pageType, destination.name, loaderData.facts, sections);
     // Stored titles/descriptions are reviewed content; clamp defensively so a
     // future over-long row never ships an invalid title or snippet.
     const title = fitText([page.seoTitle ?? h1], TITLE_MAX);
@@ -99,6 +100,13 @@ export const Route = createFileRoute("/$landing")({
           { "@type": "ListItem", position: 3, name: h1, item: url },
         ],
       },
+      ...(faqs.length
+        ? [{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+          }]
+        : []),
     ]);
     return {
       meta: [
@@ -221,6 +229,15 @@ function LandingPage() {
               </div>
             </section>
           )}
+          {(() => {
+            const faqs = landingFaqs(page.pageType, destination.name, facts, sections);
+            return faqs.length > 0 ? (
+              <section id="faq" className="scroll-mt-24">
+                <h2 className="mb-4 font-display text-2xl text-foreground">Quick answers about {destination.name}</h2>
+                <GuideFaq faqs={faqs} />
+              </section>
+            ) : null;
+          })()}
           <section>
             <h2 className="mb-4 font-display text-2xl text-foreground">Airport car & SUV rentals</h2>
             <div className="travel-card-row sm:grid-cols-2"><AirportRentalsCards slug={destination.slug} airportCode={facts.airport} /></div>
