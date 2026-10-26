@@ -40,7 +40,7 @@ function Place({ slug }: { slug: string }) {
   return <div ref={ref} className="bg-background p-1">
     {unavailable && <div className="p-4"><p className="text-sm text-muted-foreground">Viator tours could not be loaded. Please try again.</p><Button variant="outline" className="mt-3 min-h-12" onClick={() => refetch()}>Try again</Button></div>}
     {items.length > 0 && <>
-      <SwipeRow className="sm:grid-flow-row sm:grid-cols-3 sm:overflow-visible">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
         {items.map((item) => <article key={item.code} className="flex min-w-0 flex-col overflow-hidden rounded-lg border border-border bg-card">
           <SafeImage src={item.image} alt={item.title} loading="lazy" className="aspect-[4/3] w-full object-cover" />
           <div className="flex flex-1 flex-col p-4">
@@ -53,7 +53,7 @@ function Place({ slug }: { slug: string }) {
             <Button asChild size="sm" className="mt-auto min-h-12 rounded-lg"><a href={item.url} target="_blank" rel="sponsored nofollow noopener noreferrer">View on Viator<ArrowUpRight /></a></Button>
           </div>
         </article>)}
-      </SwipeRow>
+      </div>
       <p className="mt-3 text-[11px] text-muted-foreground">Photos, prices and ratings supplied by Viator.</p>
     </>}
   </div>;
