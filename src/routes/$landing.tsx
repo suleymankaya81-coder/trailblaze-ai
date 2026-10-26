@@ -23,6 +23,8 @@ import { InlineOfferCta } from "@/components/landing/LandingOfferCard";
 import { AirportRentalsCards } from "@/components/destination/AirportRentalsCards";
 import { factItems, QuickFacts, SeasonPicker, SectionBlock, seasonOf, type LandingFacts } from "@/components/landing/DecisionBlocks";
 import { DESCRIPTION_MAX, TITLE_MAX, fitText } from "@/lib/seo/routeSeo";
+import { landingFaqs } from "@/lib/seo/landingFaqs";
+import { GuideFaq } from "@/components/guides/GuideSections";
 
 const BASE = "https://minialife.com";
 
