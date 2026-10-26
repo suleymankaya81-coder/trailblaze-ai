@@ -28,4 +28,11 @@ describe("search matching", () => {
     expect(matchesTerm("RV Adventure", "Yellowstone National Park")).toBe(false);
     expect(matchesTerm("glamping weekend", "la")).toBe(false);
   });
+  it("generic trip searches do not match a single park", () => {
+    expect(matchesTerm("national park camping", "Yellowstone National Park")).toBe(false);
+    expect(matchesTerm("state park camping", "Custer State Park")).toBe(false);
+    expect(matchesTerm("lake road trip", "Lake Tahoe")).toBe(false);
+    expect(matchSearchIntent("national park camping")?.to).toBe("/rv-camping");
+    expect(matchSearchIntent("lake road trip")?.to).toBe("/road-trips");
+  });
 });

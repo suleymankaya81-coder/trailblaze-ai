@@ -16,6 +16,10 @@ export function matchSearchIntent(query: string): SearchIntent | null {
 
 const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
+const GENERIC_WORDS = new Set(
+  "national state park parks lake lakes mountain mountains desert beach beaches coast coastal forest forests river rivers canyon canyons island islands scenic best family weekend summer winter fall spring usa us the a an and in near".split(" "),
+);
+
 /** Whole-word match so short aliases ("la") never match inside other words ("glamping"). */
 export function matchesTerm(query: string, term: string): boolean {
   const q = query.trim().toLowerCase();
@@ -29,6 +33,8 @@ export function matchesTerm(query: string, term: string): boolean {
     const modifier = intent.words.exec(q);
     if (!modifier || modifier.index === 0 || modifier.index + modifier[0].length !== q.length) continue;
     const place = q.slice(0, modifier.index).trim();
+    // Generic landscape words ("national park", "lake") describe a trip type, not a place.
+    if (place.split(/\s+/).every((w) => GENERIC_WORDS.has(w))) continue;
     if (place.length >= 3 && new RegExp(`\\b${escape(place)}\\b`).test(t)) return true;
   }
   return t.length >= 3 && new RegExp(`\\b${escape(t)}\\b`).test(q);
