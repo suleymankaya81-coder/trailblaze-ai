@@ -285,13 +285,13 @@ function Hero({ dest }: { dest: DestinationView }) {
           <div className="mt-9 flex flex-wrap gap-3">
             <a
               href="#stays"
-              className="inline-flex items-center justify-center min-h-12 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
+              className="inline-flex items-center justify-center min-h-12 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
             >
               See places to stay
             </a>
             <a
               href="#road-trip"
-              className="inline-flex items-center justify-center min-h-12 rounded-md border border-off-white/50 px-6 py-3 text-sm font-semibold text-off-white transition hover:bg-off-white/10"
+              className="inline-flex items-center justify-center min-h-12 rounded-full border border-off-white/50 bg-off-white/10 px-6 py-3 text-sm font-semibold text-off-white transition hover:bg-off-white/10"
             >
               Explore the trip
             </a>
@@ -529,7 +529,7 @@ function TopStays({ dest }: { dest: DestinationView }) {
       {filtered.length === 0 ? (
         <EmptyState message="No stays listed for this filter yet." />
       ) : (
-        <div className="travel-card-row mt-5 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="travel-card-row mt-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
            {pick && <StayCard offer={pick} destinationSlug={dest.slug} featured photo={stayPhoto(pick, 0)} />}
            {rest.map((s, index) => (
              <StayCard key={s.id} offer={s} destinationSlug={dest.slug} photo={stayPhoto(s, index + 1)} />
@@ -647,15 +647,8 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
   const total = items.reduce((s, i) => s + i.value, 0);
 
   return (
-    <>
-    {ai && (
-      <div className="flex items-center justify-between rounded-lg border border-border bg-card px-4 py-3 shadow-soft lg:hidden">
-        <span className="text-xs text-muted-foreground">Est. trip budget · 4 days, 2 people</span>
-        <span className="font-serif text-lg font-semibold text-foreground">${total.toLocaleString()}</span>
-      </div>
-    )}
-    <aside className="hidden rounded-lg border border-border bg-card p-6 shadow-soft lg:sticky lg:top-24 lg:block">
-      <h2 className="font-display text-lg text-foreground">Your trip budget</h2>
+    <aside className="h-full rounded-xl border border-border bg-card p-6 md:p-8">
+      <h2 className="font-display text-2xl text-foreground">Your trip budget</h2>
       <p className="mt-0.5 text-xs text-muted-foreground">Estimated for 4 days · 2 travelers</p>
 
       {loading ? (
@@ -704,7 +697,6 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
         Prices are averages and may vary based on season and preferences.
       </p>
     </aside>
-    </>
   );
 }
 
@@ -814,8 +806,8 @@ function TravelServices({ dest }: { dest: DestinationView }) {
   };
 
   return (
-    <aside className="rounded-lg border border-border bg-card p-6 shadow-soft">
-      <h2 className="font-display text-lg text-foreground">Before you hit the road</h2>
+    <aside className="h-full rounded-xl border border-border bg-card p-6 md:p-8">
+      <h2 className="font-display text-2xl text-foreground">Before you hit the road</h2>
       <p className="mt-0.5 text-xs text-muted-foreground">
         The few things worth sorting out in advance.
       </p>
