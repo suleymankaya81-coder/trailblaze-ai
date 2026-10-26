@@ -78,7 +78,7 @@ export function TravelpayoutsCards({ slug, name, airportCode }: { slug: string; 
 }
 
 // Typical "from" prices, always labelled as typical on the card.
-const TOUR_PRICE: Partial<Record<TpBrand, string>> = { klook: "Est. from $35 · typical", tiqets: "Est. from $20 · typical", gocity: "Est. from $79 · typical" };
+const TOUR_PRICE: Partial<Record<TpBrand, string>> = { klook: "Est. from $35", tiqets: "Est. from $20", gocity: "Est. from $79" };
 
 /** Tour/ticket partner cards as bare grid items for the activities row. */
 export function TourTicketItems({ slug, name }: { slug: string; name: string }) {
@@ -94,7 +94,7 @@ function TourCard({ item, slug }: { item: Item; slug: string }) {
   const categories: Partial<Record<TpBrand, ServicePhotoCategory>> = { klook: "tour", tiqets: "attraction", gocity: "attraction" };
   const photo = item.brand === "klook" ? offerPhoto(slug, "activity", 0) ?? servicePhoto("tour", slug) : servicePhoto(categories[item.brand] ?? "attraction", slug, item.brand === "gocity" ? 1 : 0);
   if (!photo) return <Card item={item} slug={slug} />;
-  return <PartnerPhotoCard brand={item.name} title={item.title} href={tpLink(item.brand, slug)} photo={photo} detail={`${item.sub}. ${TOUR_PRICE[item.brand] ?? ""}`.trim()} />;
+  return <PartnerPhotoCard brand={item.name} title={item.title} href={tpLink(item.brand, slug)} photo={photo} detail={item.sub} price={TOUR_PRICE[item.brand]} />;
 }
 
 export function TourTicketCards({ slug, name }: { slug: string; name: string }) {
