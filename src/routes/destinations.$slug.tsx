@@ -14,7 +14,7 @@ import { TripEssentials } from "@/components/destination/TripEssentials";
 import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { VrboExpediaItems } from "@/components/destination/VrboSearchWidget";
-import { HarvestHostsOffer } from "@/components/destination/HarvestHostsCard";
+import { HarvestHostsOffer, HARVEST_HOSTS_URL } from "@/components/destination/HarvestHostsCard";
 import { GettingThereItems, TourTicketItems } from "@/components/destination/TravelpayoutsCards";
 import { servicePhoto } from "@/lib/data/servicePhotos";
 import { GetYourGuideWidget } from "@/components/destination/PartnerWidget";
@@ -600,7 +600,7 @@ function StayCard({
         )}
         <div className="mt-auto flex flex-col gap-3 border-t border-border pt-3">
           <PriceTag offer={offer} fallbackUnit="night" />
-          <OfferCta offer={offer} label={offer.partner === "harvest_hosts" ? "Get 20% off" : offerCtaLabel(offer.category)} destinationSlug={destinationSlug} />
+          <OfferCta offer={offer.partner === "harvest_hosts" ? { ...offer, externalUrl: HARVEST_HOSTS_URL, network: "awin" } : offer} label={offer.partner === "harvest_hosts" ? "Get 20% off" : offerCtaLabel(offer.category)} destinationSlug={destinationSlug} />
         </div>
       </div>
     </article>
