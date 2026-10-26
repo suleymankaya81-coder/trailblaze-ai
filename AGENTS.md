@@ -39,3 +39,4 @@
 - About and legal content share StaticPageLayout with an unframed reading column. Why: static pages keep the travel site's visual hierarchy without floating article cards.
 - Contact email handoff uses the shared contact schema and URL builder; never report a mail-app handoff as successful delivery. Why: input must be encoded and delivery requires the visitor to send from their email app until app-email sending is configured.
 - Route-page search titles/descriptions come from src/lib/seo/routeSeo.ts keyword maps (one distinct phrase per page, ≤60/≤160 chars); RV & camping and no-reservation guides use src/lib/seo/guidesSeo.ts on the same fitText/limits pattern. Why: match real Google queries without page overlap.
+- Destination pages are a single column with no sticky side panels; budget and preparation panels sit side by side (stacked on phones). Why: sticky side panels overlapped neighbouring content.
