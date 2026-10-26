@@ -52,7 +52,6 @@ import {
 } from "lucide-react";
 import { lazy, Suspense, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { ClientOnly } from "@tanstack/react-router";
-import { STAY_CHOICES } from "@/lib/data/stayChoices";
 import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { JumpBar, TripRadar, formatDrive } from "@/components/destination/TripRadar";
 import routes from "@/data/routes.json";
@@ -529,7 +528,7 @@ function TopStays({ dest }: { dest: DestinationView }) {
       {filtered.length === 0 ? (
         <EmptyState message="No stays listed for this filter yet." />
       ) : (
-        <div className="travel-card-row mt-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="travel-card-row mt-5 sm:grid-cols-2 xl:grid-cols-3">
            {pick && <StayCard offer={pick} destinationSlug={dest.slug} featured photo={stayPhoto(pick, 0)} />}
            {rest.map((s, index) => (
              <StayCard key={s.id} offer={s} destinationSlug={dest.slug} photo={stayPhoto(s, index + 1)} />
@@ -601,7 +600,7 @@ function StayCard({
         )}
         <div className="mt-auto flex flex-col gap-3 border-t border-border pt-3">
           <PriceTag offer={offer} fallbackUnit="night" />
-          <OfferCta offer={offer} label={offerCtaLabel(offer.category)} destinationSlug={destinationSlug} />
+          <OfferCta offer={offer} label={offer.partner === "harvest_hosts" ? "Get 20% off" : offerCtaLabel(offer.category)} destinationSlug={destinationSlug} />
         </div>
       </div>
     </article>
