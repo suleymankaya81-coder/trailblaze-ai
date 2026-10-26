@@ -4,7 +4,7 @@ import type { TravelPlan } from "@/lib/data/travelPlan";
 
 export function TravelFlow({ name, plan }: { name: string; plan: TravelPlan }) {
   function download() {
-    const text = [name, ...plan.days.flatMap((day, i) => [`\nDay ${i + 1}: ${day.title}`, day.start, ...day.stops.map(s => `${s.name}: ${s.detail}`), day.driving, day.note]), "\nLOCAL NOTES", ...plan.intel.map(t => `${t.title}: ${t.text}`), plan.arrival, plan.vehicle, plan.goldenHour, ...plan.sources.map(s => `${s.label}: ${s.url}`)].join("\n");
+    const text = [name, ...plan.days.flatMap((day, i) => [`\nDay ${i + 1}: ${day.title}`, day.start, ...day.stops.map(s => `${s.name}: ${s.detail}`), day.driving, day.note]), "\nLOCAL NOTES", ...plan.intel.map(t => `${t.title}: ${t.text}`), ...plan.sources.map(s => `${s.label}: ${s.url}`)].join("\n");
     const url = URL.createObjectURL(new Blob([text], { type: "text/plain;charset=utf-8" }));
     const link = document.createElement("a"); link.href = url; link.download = `${name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-trip.txt`; link.click(); URL.revokeObjectURL(url);
   }
@@ -20,9 +20,6 @@ export function TravelFlow({ name, plan }: { name: string; plan: TravelPlan }) {
         <p className="mt-5 flex gap-2 border-t border-border pt-4 text-xs leading-relaxed text-foreground"><Navigation className="h-4 w-4 shrink-0" />{day.driving}</p><p className="mt-2 text-xs leading-relaxed text-muted-foreground">{day.note}</p>
       </li>)}
     </ol>
-    <div className="mt-6 grid gap-5 border-y border-border py-6 md:grid-cols-3">
-      {[{title:"Your first two hours",text:plan.arrival,Icon:Clock},{title:"The right vehicle",text:plan.vehicle,Icon:Navigation},{title:"Chase the light",text:plan.goldenHour,Icon:Sun}].map(({title,text,Icon}) => <div key={title}><Icon className="mb-2 h-5 w-5 text-sage-deep" /><h3 className="text-sm text-foreground">{title}</h3><p className="mt-2 text-xs leading-relaxed text-muted-foreground">{text}</p></div>)}
-    </div>
   </section>;
 }
 
