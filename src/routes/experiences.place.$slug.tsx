@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 import { ArrowUpRight, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getPlaceExperiences, tourCategory } from "@/lib/affiliates/viatorPlace.functions";
-import { SwipeRow } from "@/components/ui-kit";
 import { SafeImage } from "@/components/shared/SafeImage";
 import { hasViatorRating } from "@/lib/affiliates/viatorDisplay";
 
