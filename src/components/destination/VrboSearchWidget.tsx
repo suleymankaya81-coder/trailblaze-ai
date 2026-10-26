@@ -1,4 +1,4 @@
-import { ArrowUpRight, BedDouble, Home, MapPin, Mountain, Plane, Trees } from "lucide-react";
+import { ArrowUpRight, BedDouble, Home, MapPin, Mountain, Trees } from "lucide-react";
 import { buildVrboSearchUrl } from "@/lib/affiliates/vrbo";
 import { buildExpediaHotelSearchUrl } from "@/lib/affiliates/expedia";
 import { servicePhoto } from "@/lib/data/servicePhotos";
@@ -19,11 +19,6 @@ const HOTELS: Pic[] = [
   { url: "/images/destination-cards/7ff8cde9bccf9e6c.jpg", source: "https://commons.wikimedia.org/wiki/File:Hilton_San_Diego_Bayfront_Hotel.jpg", credit: "Bernard Gagnon", license: "CC BY-SA 3.0" },
 ];
 
-function hash(s: string) {
-  let h = 0;
-  for (const c of s) h = (h * 31 + c.charCodeAt(0)) >>> 0;
-  return h;
-}
 
 function StayCard({
   brand,
@@ -41,8 +36,8 @@ function StayCard({
   pic: Pic;
 }) {
   return (
-    <div className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card">
-      <div className="relative aspect-[16/9] bg-muted">
+    <div className="flex flex-col overflow-hidden rounded-xl border border-border bg-card">
+      <div className="relative aspect-[4/3] bg-muted">
         <img src={pic.url} alt={`Illustrative ${brand} stay photo`} loading="lazy" className="h-full w-full object-cover" />
         <a
           href={pic.source}
@@ -55,9 +50,9 @@ function StayCard({
           ©
         </a>
       </div>
-      <div className="flex flex-1 flex-col p-5 sm:p-6">
+      <div className="flex flex-1 flex-col p-4">
         <p className="text-xs font-semibold uppercase tracking-wider text-primary">{brand}</p>
-        <h3 className="mt-1 text-lg font-semibold text-foreground">{title}</h3>
+        <h3 className="mt-1 font-display text-lg leading-snug text-foreground">{title}</h3>
         <p className="mt-1 font-display text-base font-semibold text-foreground">{brand === "Vrbo" ? "Est. from $120/night" : "Est. from $110/night"} <span className="text-[10px] font-normal text-muted-foreground">· typical rate</span></p>
         <ul className="mt-4 flex-1 space-y-2.5">
           {points.map(({ icon: Icon, text }) => (
@@ -71,7 +66,7 @@ function StayCard({
           href={href}
           target="_blank"
           rel="sponsored noopener noreferrer"
-          className="mt-5 inline-flex items-center justify-center gap-1.5 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90"
+          className="mt-5 inline-flex items-center justify-center gap-1.5 min-h-12 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90"
         >
           {cta} <ArrowUpRight className="h-4 w-4" />
         </a>
@@ -80,37 +75,32 @@ function StayCard({
   );
 }
 
-/** Vrbo (cabins) + Expedia (hotels) side by side, both tracked searches for this destination. */
-export function VrboSearchWidget({ destinationName }: { destinationName: string }) {
-  const h = hash(destinationName);
+/** Vrbo (cabins) + Expedia (hotels) as bare grid items, listed in the same row as the other stay cards. */
+export function VrboExpediaItems({ destinationName }: { destinationName: string }) {
   return (
-    <div className="mt-6">
-      <div className="grid gap-4 md:grid-cols-2">
-        <StayCard
-          brand="Vrbo"
-          title={`Search cabins & vacation rentals near ${destinationName}`}
-          href={buildVrboSearchUrl(destinationName)}
-          cta="Search cabins on Vrbo"
-          pic={servicePhoto("cabin", destinationName + ":vrbo") ?? CABINS[0]}
-          points={[
-            { icon: Mountain, text: "Whole-home cabins and mountain lodges" },
-            { icon: Trees, text: "Kitchens, fire pits and room for the crew" },
-            { icon: Home, text: "Choose dates and a home on Vrbo" },
-          ]}
-        />
-        <StayCard
-          brand="Expedia"
-          title={`Search hotels & lodges near ${destinationName}`}
-          href={buildExpediaHotelSearchUrl(destinationName)}
-          cta="Search hotels on Expedia"
-          pic={servicePhoto("hotel", destinationName + ":expedia") ?? HOTELS[1]}
-          points={[
-            { icon: MapPin, text: "Hotels in nearby gateway towns" },
-            { icon: BedDouble, text: "Resorts, inns and last-minute rooms" },
-            { icon: Plane, text: "Easy to pair with flights and cars" },
-          ]}
-        />
-      </div>
-    </div>
+    <>
+      <StayCard
+        brand="Vrbo"
+        title={`Cabins & vacation rentals near ${destinationName}`}
+        href={buildVrboSearchUrl(destinationName)}
+        cta="Search cabins on Vrbo"
+        pic={servicePhoto("cabin", destinationName + ":vrbo") ?? CABINS[0]}
+        points={[
+          { icon: Mountain, text: "Whole-home cabins and lodges" },
+          { icon: Trees, text: "Kitchens and room for the crew" },
+        ]}
+      />
+      <StayCard
+        brand="Expedia"
+        title={`Hotels & lodges near ${destinationName}`}
+        href={buildExpediaHotelSearchUrl(destinationName)}
+        cta="Search hotels on Expedia"
+        pic={servicePhoto("hotel", destinationName + ":expedia") ?? HOTELS[1]}
+        points={[
+          { icon: MapPin, text: "Hotels in nearby gateway towns" },
+          { icon: BedDouble, text: "Inns and last-minute rooms" },
+        ]}
+      />
+    </>
   );
 }
