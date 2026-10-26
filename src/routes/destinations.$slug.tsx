@@ -755,11 +755,11 @@ function RentalTile({ offer, destinationSlug, photo, kind }: { offer: OfferView;
       <div className="flex-1 border-b border-border p-4">
           <p className="font-display text-lg leading-snug text-foreground">{title}</p>
           <p className="mt-1 font-display text-base font-semibold text-foreground">{price} <span className="text-[10px] font-normal text-muted-foreground">· typical rate</span></p>
-          <p className="mt-1 text-xs text-muted-foreground">{kind === "motorhome" ? "Drive-and-sleep motorhome with kitchen and bathroom." : "Smaller towable and van-style campers, easier to park."}</p>
+          <p className="mt-1 text-xs text-muted-foreground">{kind === "motorhome" ? "Drive-and-sleep motorhome with kitchen and bathroom." : "Compact van-style camper that sleeps two, easier to park."}</p>
       </div>
       <div className="flex flex-col gap-2 p-4">
         <span className="text-[11px] uppercase tracking-wide text-muted-foreground">
-          {kind === "motorhome" ? "Motorhome" : "Trailer & campervan"} · Motorhome Republic
+          {kind === "motorhome" ? "Motorhome" : "Sleeps 2 camper"} · Motorhome Republic
         </span>
         <OfferCta
           offer={offer}
