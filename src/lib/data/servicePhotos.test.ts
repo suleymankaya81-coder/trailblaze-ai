@@ -40,4 +40,5 @@ describe("estimatedFrom", () => {
   it("SUV estimate", () => expect(estimatedFrom("SUV rentals at BHB")).toBe("Est. from $55/day"));
   it("standard car estimate", () => expect(estimatedFrom("Standard car rentals")).toBe("Est. from $45/day"));
   it("RV estimate", () => expect(estimatedFrom("Class C RV")).toBe("Est. from $150/day"));
+  it("small sleeps-2 camper estimate", () => expect(estimatedFrom("small campervan")).toBe("Est. from $95/day"));
 });

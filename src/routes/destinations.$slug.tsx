@@ -723,8 +723,8 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
       />
       <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {rentals.map((r, index) => (
-          <RentalTile key={r.id} offer={r} destinationSlug={dest.slug} kind={index === 0 ? "motorhome" : "trailer"}
-            photo={index === 0 ? servicePhoto("rv", dest.slug) : TRAILER_PHOTO} />
+          <RentalTile key={r.id} offer={r} destinationSlug={dest.slug} kind={index === 0 ? "motorhome" : "camper"}
+            photo={index === 0 ? servicePhoto("rv", dest.slug) : SMALL_CAMPER_PHOTO} />
         ))}
         <GettingThereItems slug={dest.slug} name={dest.name} airportCode={dest.airportCode} />
       </div>
@@ -732,19 +732,20 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
   );
 }
 
-const TRAILER_PHOTO: Photo = {
-  url: "/images/destination-cards/travel-trailer-de5ab3bb.jpg",
-  source: "https://commons.wikimedia.org/wiki/File:Travel_trailer.jpg",
-  credit: "KittensMittens2",
+// A small sleeps-2 camper van: what a second, cheaper Motorhome Republic booking looks like.
+const SMALL_CAMPER_PHOTO: Photo = {
+  url: "/images/destination-cards/campervan-sleeps2-california-t61.jpg",
+  source: "https://commons.wikimedia.org/wiki/File:VW_California_Ocean_T6.1.jpg",
+  credit: "Southampton Campers",
   license: "CC BY-SA 4.0",
-  subject: "Travel trailer",
+  subject: "Small campervan (sleeps 2)",
 };
 
-function RentalTile({ offer, destinationSlug, photo, kind }: { offer: OfferView; destinationSlug: string; photo?: Photo; kind: "motorhome" | "trailer" }) {
-  const title = kind === "motorhome" ? offer.title : "Trailer-style campers & campervans";
+function RentalTile({ offer, destinationSlug, photo, kind }: { offer: OfferView; destinationSlug: string; photo?: Photo; kind: "motorhome" | "camper" }) {
+  const title = kind === "motorhome" ? offer.title : "Sleeps 2 campervans";
   const price = kind === "motorhome" && offer.priceValue != null
     ? `From $${offer.priceValue}/${offer.priceUnit ?? "day"}`
-    : estimatedFrom(kind === "trailer" ? "travel trailer" : `${offer.title} ${offer.subcategory ?? ""}`);
+    : estimatedFrom(kind === "camper" ? "small campervan" : `${offer.title} ${offer.subcategory ?? ""}`);
   return (
     <article className="group relative flex flex-col overflow-hidden rounded-xl border border-border bg-card">
       <div className="relative aspect-[4/3] bg-beige/30">
@@ -754,11 +755,11 @@ function RentalTile({ offer, destinationSlug, photo, kind }: { offer: OfferView;
       <div className="flex-1 border-b border-border p-4">
           <p className="font-display text-lg leading-snug text-foreground">{title}</p>
           <p className="mt-1 font-display text-base font-semibold text-foreground">{price} <span className="text-[10px] font-normal text-muted-foreground">· typical rate</span></p>
-          <p className="mt-1 text-xs text-muted-foreground">{kind === "motorhome" ? "Drive-and-sleep motorhome with kitchen and bathroom." : "Smaller towable and van-style campers, easier to park."}</p>
+          <p className="mt-1 text-xs text-muted-foreground">{kind === "motorhome" ? "Drive-and-sleep motorhome with kitchen and bathroom." : "Compact van-style camper that sleeps two, easier to park."}</p>
       </div>
       <div className="flex flex-col gap-2 p-4">
         <span className="text-[11px] uppercase tracking-wide text-muted-foreground">
-          {kind === "motorhome" ? "Motorhome" : "Trailer & campervan"} · Motorhome Republic
+          {kind === "motorhome" ? "Motorhome" : "Sleeps 2 camper"} · Motorhome Republic
         </span>
         <OfferCta
           offer={offer}

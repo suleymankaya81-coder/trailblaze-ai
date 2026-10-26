@@ -62,6 +62,7 @@ const ESTIMATES: Array<[RegExp, string]> = [
   [/cabin|vacation|tiny|home/, "Est. from $120/night"],
   [/hotel|lodge|inn|resort/, "Est. from $110/night"],
   [/trailer|towable/, "Est. from $95/day"],
+  [/small camper|sleeps 2|2-berth/, "Est. from $95/day"],
   [/motorhome|\brv\b|class [abc]|campervan|\bvan\b/, "Est. from $150/day"],
   [/\bsuv\b/, "Est. from $55/day"],
   [/car|sedan/, "Est. from $45/day"],
