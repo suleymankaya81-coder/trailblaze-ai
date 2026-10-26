@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 import { ArrowUpRight, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getPlaceExperiences, tourCategory } from "@/lib/affiliates/viatorPlace.functions";
-import { SwipeRow } from "@/components/ui-kit";
 import { SafeImage } from "@/components/shared/SafeImage";
 import { hasViatorRating } from "@/lib/affiliates/viatorDisplay";
 
@@ -24,7 +23,8 @@ export const Route = createFileRoute("/experiences/place/$slug")({
 function Place({ slug }: { slug: string }) {
   const ref = useRef<HTMLDivElement>(null);
   const { data, isPending, isError, refetch } = useQuery({ queryKey: ["viator-place", slug], queryFn: () => getPlaceExperiences({ data: { slug } }), staleTime: 15 * 60 * 1000, retry: false });
-  const items = data?.items ?? [];
+  // Three photo-led listings only; listings without a photo are skipped.
+  const items = (data?.items ?? []).filter((item) => Boolean(item.image)).slice(0, 3);
   const unavailable = isError || data?.unavailable === true;
   useEffect(() => {
     const status = isPending ? "loading" : unavailable ? "error" : items.length ? "results" : "empty";
@@ -39,7 +39,7 @@ function Place({ slug }: { slug: string }) {
   return <div ref={ref} className="bg-background p-1">
     {unavailable && <div className="p-4"><p className="text-sm text-muted-foreground">Viator tours could not be loaded. Please try again.</p><Button variant="outline" className="mt-3 min-h-12" onClick={() => refetch()}>Try again</Button></div>}
     {items.length > 0 && <>
-      <SwipeRow className="md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
         {items.map((item) => <article key={item.code} className="flex min-w-0 flex-col overflow-hidden rounded-lg border border-border bg-card">
           <SafeImage src={item.image} alt={item.title} loading="lazy" className="aspect-[4/3] w-full object-cover" />
           <div className="flex flex-1 flex-col p-4">
@@ -52,7 +52,7 @@ function Place({ slug }: { slug: string }) {
             <Button asChild size="sm" className="mt-auto min-h-12 rounded-lg"><a href={item.url} target="_blank" rel="sponsored nofollow noopener noreferrer">View on Viator<ArrowUpRight /></a></Button>
           </div>
         </article>)}
-      </SwipeRow>
+      </div>
       <p className="mt-3 text-[11px] text-muted-foreground">Photos, prices and ratings supplied by Viator.</p>
     </>}
   </div>;

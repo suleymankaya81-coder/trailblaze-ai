@@ -13,9 +13,10 @@ import mapImage from "@/assets/thumbs/map.jpg";
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { VrboSearchWidget } from "@/components/destination/VrboSearchWidget";
-import { HarvestHostsCard } from "@/components/destination/HarvestHostsCard";
-import { TravelpayoutsCards, TourTicketCards } from "@/components/destination/TravelpayoutsCards";
+import { VrboExpediaItems } from "@/components/destination/VrboSearchWidget";
+import { HarvestHostsOffer, HARVEST_HOSTS_URL } from "@/components/destination/HarvestHostsCard";
+import { GettingThereItems, TourTicketItems } from "@/components/destination/TravelpayoutsCards";
+import { servicePhoto } from "@/lib/data/servicePhotos";
 import { GetYourGuideWidget } from "@/components/destination/PartnerWidget";
 import { ViatorPlaceBlock } from "@/components/destination/ViatorPlaceBlock";
 import { useQuery } from "@tanstack/react-query";
@@ -51,7 +52,6 @@ import {
 } from "lucide-react";
 import { lazy, Suspense, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { ClientOnly } from "@tanstack/react-router";
-import { STAY_CHOICES } from "@/lib/data/stayChoices";
 import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { JumpBar, TripRadar, formatDrive } from "@/components/destination/TripRadar";
 import routes from "@/data/routes.json";
@@ -75,8 +75,7 @@ import { getOrCreateSessionId } from "@/lib/affiliates/session";
 import { outboundLinkTitle } from "@/lib/affiliates/compliance";
 import { buildDestinationJsonLd } from "@/lib/seo/destinationJsonLd";
 import { flyDriveSlug } from "@/lib/seo/flyDrive";
-import { destinationFaqs, isNoReservationEligible, isRvEligible, loopsForDestination } from "@/lib/seo/guides";
-import { GuideFaq } from "@/components/guides/GuideSections";
+import { isNoReservationEligible, isRvEligible, loopsForDestination } from "@/lib/seo/guides";
 import { CORRIDORS } from "@/lib/seo/corridors";
 import { saveTripPlan } from "@/lib/plans/savePlan.functions";
 import { getCapturedEmail, setCapturedEmail } from "@/lib/plans/session";
@@ -100,7 +99,7 @@ export const Route = createFileRoute("/destinations/$slug")({
     const title = destinationSearchTitle(d.name);
     const description = destinationSearchDescription(d.name, d.tagline, d.bestSeason);
     const pageUrl = `https://minialife.com/destinations/${d.slug}`;
-    const jsonLd = buildDestinationJsonLd(d, pageUrl, destinationFaqs(d));
+    const jsonLd = buildDestinationJsonLd(d, pageUrl);
     return {
       meta: [
         { title },
@@ -159,21 +158,6 @@ function DestinationNotFound() {
   );
 }
 
-// Query-shaped answers (best time, closest airport, reservations, days, budget),
-// built only from stored destination data; hidden when nothing applies.
-function DestinationQuickAnswers({ dest }: { dest: DestinationView }) {
-  const faqs = destinationFaqs(dest);
-  if (!faqs.length) return null;
-  return (
-    <section id="trip-answers" className="scroll-mt-24" aria-labelledby="quick-answers">
-      <h2 id="quick-answers" className="mb-4 font-display text-2xl font-bold text-foreground md:text-3xl">
-        Quick answers about {dest.name}
-      </h2>
-      <GuideFaq faqs={faqs} />
-    </section>
-  );
-}
-
 /* =========================================================
    PAGE
    Flow: Stay -> Rent -> Explore -> Prepare -> Go
@@ -204,7 +188,6 @@ function DestinationPage() {
           {dest.travelPlan ? <TravelFlow name={dest.name} plan={dest.travelPlan} /> : <TripFlow dest={dest} />}
           <RoadTrip dest={dest} ai={ai} />
         </div>
-        <DestinationQuickAnswers dest={dest} />
         <div id="trip-booking"><BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} /></div>
 
         {/* Booking order: flight (strip above) → vehicle → stay → tours */}
@@ -212,15 +195,15 @@ function DestinationPage() {
 
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
           <TopStays dest={dest} />
-          <TripBudget ai={ai} loading={aiLoading} />
+          <div className="space-y-6">
+            <TripBudget ai={ai} loading={aiLoading} />
+            <TravelServices dest={dest} />
+          </div>
         </div>
 
         {/* Tours & services — one section */}
         <section id="trip-tours" className="scroll-mt-24">
-          <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
-            <ThingsToDo dest={dest} />
-            <TravelServices dest={dest} />
-          </div>
+          <ThingsToDo dest={dest} />
         </section>
 
         <TripEssentials context={{ slug: dest.slug, name: dest.name, places: [dest] }} />
@@ -494,21 +477,6 @@ function bestForLine(offer: OfferView): string {
 }
 
 
-function StayChooser({ name }: { name: string }) {
-  return (
-    <div className="mb-5 grid gap-3 sm:grid-cols-3" aria-label={`Where to stay near ${name}`}>
-      {STAY_CHOICES.map((c) => (
-        <div key={c.label} className="rounded-lg border border-border bg-card p-3">
-          <Thumb src={c.label.toLowerCase().includes("rv") ? carImage : c.label.toLowerCase().includes("cabin") ? stayImage : roadImage} size={48} className="mb-3" />
-          <p className="text-sm font-semibold text-foreground">{c.label}</p>
-          <p className="mt-0.5 text-xs text-muted-foreground">{c.why}</p>
-          <p className="mt-1.5 text-xs font-semibold text-foreground">{c.price} <span className="font-normal text-muted-foreground">· typical</span></p>
-        </div>
-      ))}
-    </div>
-  );
-}
-
 function TopStays({ dest }: { dest: DestinationView }) {
   const cats = useMemo(
     () =>
@@ -539,8 +507,6 @@ function TopStays({ dest }: { dest: DestinationView }) {
         
       />
 
-      <StayChooser name={dest.name} />
-
       <div className="flex flex-wrap items-center gap-2">
         {["All", ...cats].map((c) => (
           <Button
@@ -562,16 +528,14 @@ function TopStays({ dest }: { dest: DestinationView }) {
       {filtered.length === 0 ? (
         <EmptyState message="No stays listed for this filter yet." />
       ) : (
-        <div className="travel-card-row mt-5 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="travel-card-row mt-5 sm:grid-cols-2 xl:grid-cols-3">
            {pick && <StayCard offer={pick} destinationSlug={dest.slug} featured photo={stayPhoto(pick, 0)} />}
            {rest.map((s, index) => (
              <StayCard key={s.id} offer={s} destinationSlug={dest.slug} photo={stayPhoto(s, index + 1)} />
           ))}
+           <VrboExpediaItems destinationName={dest.name} />
         </div>
       )}
-
-      <VrboSearchWidget destinationName={dest.name} />
-      <HarvestHostsCard destinationName={dest.name} />
 
     </section>
   );
@@ -620,6 +584,7 @@ function StayCard({
 
       <div className="flex flex-1 flex-col p-4">
         <h3 className="font-display text-lg leading-snug text-foreground">{offer.title}</h3>
+        {offer.partner === "harvest_hosts" && <HarvestHostsOffer />}
         {offer.subcategory && (
           <p className="mt-0.5 text-[11px] uppercase tracking-wide text-muted-foreground">
             {offer.subcategory}
@@ -635,7 +600,7 @@ function StayCard({
         )}
         <div className="mt-auto flex flex-col gap-3 border-t border-border pt-3">
           <PriceTag offer={offer} fallbackUnit="night" />
-          <OfferCta offer={offer} label={offerCtaLabel(offer.category)} destinationSlug={destinationSlug} />
+          <OfferCta offer={offer.partner === "harvest_hosts" ? { ...offer, externalUrl: HARVEST_HOSTS_URL, network: "awin" } : offer} label={offer.partner === "harvest_hosts" ? "Get 20% off" : offerCtaLabel(offer.category)} destinationSlug={destinationSlug} />
         </div>
       </div>
     </article>
@@ -746,7 +711,8 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
    4 — RENT BEFORE YOU GO
 ========================================================= */
 function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
-  const rentals = dest.rentals.filter((r) => r.partner === "motorhome_republic").slice(0, 5);
+  // Two RV styles: a drivable motorhome and a towable trailer-style camper.
+  const rentals = dest.rentals.filter((r) => r.partner === "motorhome_republic").slice(0, 2);
 
   return (
     <section id="rentals" className="scroll-mt-24">
@@ -755,19 +721,30 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
         title={dest.airportCode ? `RVs, campervans & cars near ${dest.airportCode}` : "RVs, campervans & cars for this trip"}
         
       />
-      {rentals.length > 0 && (
-        <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-           {rentals.map((r, index) => (
-             <RentalTile key={r.id} offer={r} destinationSlug={dest.slug} photo={offerPhoto(dest.slug, "rental", index, `${r.title} ${r.subcategory ?? ""} ${r.partner ?? ""}`)} />
-          ))}
-        </div>
-      )}
-      <TravelpayoutsCards slug={dest.slug} name={dest.name} airportCode={dest.airportCode} />
+      <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        {rentals.map((r, index) => (
+          <RentalTile key={r.id} offer={r} destinationSlug={dest.slug} kind={index === 0 ? "motorhome" : "trailer"}
+            photo={index === 0 ? servicePhoto("rv", dest.slug) : TRAILER_PHOTO} />
+        ))}
+        <GettingThereItems slug={dest.slug} name={dest.name} airportCode={dest.airportCode} />
+      </div>
     </section>
   );
 }
 
-function RentalTile({ offer, destinationSlug, photo }: { offer: OfferView; destinationSlug: string; photo?: Photo }) {
+const TRAILER_PHOTO: Photo = {
+  url: "/images/destination-cards/travel-trailer-de5ab3bb.jpg",
+  source: "https://commons.wikimedia.org/wiki/File:Travel_trailer.jpg",
+  credit: "KittensMittens2",
+  license: "CC BY-SA 4.0",
+  subject: "Travel trailer",
+};
+
+function RentalTile({ offer, destinationSlug, photo, kind }: { offer: OfferView; destinationSlug: string; photo?: Photo; kind: "motorhome" | "trailer" }) {
+  const title = kind === "motorhome" ? offer.title : "Trailer-style campers & campervans";
+  const price = kind === "motorhome" && offer.priceValue != null
+    ? `From $${offer.priceValue}/${offer.priceUnit ?? "day"}`
+    : estimatedFrom(kind === "trailer" ? "travel trailer" : `${offer.title} ${offer.subcategory ?? ""}`);
   return (
     <article className="group relative flex flex-col overflow-hidden rounded-xl border border-border bg-card">
       <div className="relative aspect-[4/3] bg-beige/30">
@@ -775,16 +752,13 @@ function RentalTile({ offer, destinationSlug, photo }: { offer: OfferView; desti
         {photo && <PhotoCredit photo={photo} />}
       </div>
       <div className="flex-1 border-b border-border p-4">
-          <p className="font-display text-lg leading-snug text-foreground">{offer.title}</p>
-          <p className="mt-1 text-[11px] text-muted-foreground">
-            {offer.priceValue != null
-              ? `From $${offer.priceValue} / ${offer.priceUnit ?? "day"}`
-              : (offer.priceDisplay ?? `${estimatedFrom(`${offer.title} ${offer.subcategory ?? ""} ${offer.partner ?? ""}`)} · estimate`)}
-          </p>
+          <p className="font-display text-lg leading-snug text-foreground">{title}</p>
+          <p className="mt-1 font-display text-base font-semibold text-foreground">{price} <span className="text-[10px] font-normal text-muted-foreground">· typical rate</span></p>
+          <p className="mt-1 text-xs text-muted-foreground">{kind === "motorhome" ? "Drive-and-sleep motorhome with kitchen and bathroom." : "Smaller towable and van-style campers, easier to park."}</p>
       </div>
       <div className="flex flex-col gap-2 p-4">
         <span className="text-[11px] uppercase tracking-wide text-muted-foreground">
-          {offer.subcategory ?? "Rental"}
+          {kind === "motorhome" ? "Motorhome" : "Trailer & campervan"} · Motorhome Republic
         </span>
         <OfferCta
           offer={offer}
@@ -804,8 +778,10 @@ function ThingsToDo({ dest }: { dest: DestinationView }) {
   return (
     <section className="scroll-mt-24">
       <SectionHeader step={4} title="The moments you came for" />
-      <ViatorPlaceBlock slug={dest.slug} name={dest.name} className="mt-6" anchored={false} />
-      <TourTicketCards slug={dest.slug} name={dest.name} />
+      <div className="grid gap-6 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:items-start">
+        <ViatorPlaceBlock slug={dest.slug} name={dest.name} anchored={false} />
+        <div className="travel-card-row sm:grid-cols-2 lg:pt-[92px]"><TourTicketItems slug={dest.slug} name={dest.name} /></div>
+      </div>
       <GetYourGuideWidget query={dest.name} />
     </section>
   );

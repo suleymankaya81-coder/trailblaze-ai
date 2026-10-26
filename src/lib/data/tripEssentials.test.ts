@@ -60,3 +60,22 @@ describe('four contextual approved-partner essentials', () => {
     }
   });
 });
+
+describe('fifth WILDGUARDER pick and per-destination variety', () => {
+  it('always adds a WILDGUARDER binocular with an Awin link for advertiser 126831', async () => {
+    const { wildguarderLink } = await import('./gearCategories');
+    for (const c of contexts) {
+      const { binocular } = selectTripEssentials(c);
+      expect(binocular.name).toMatch(/binocular/i);
+      expect(new URL(wildguarderLink(binocular.url, 'x')).searchParams.get('awinmid')).toBe('126831');
+    }
+  });
+  it('does not show the same four products on every walking destination', () => {
+    const slugs = ['yosemite', 'yellowstone-np', 'glacier', 'rainier', 'great-smoky', 'teton-trail'];
+    const sets = new Set(slugs.map(slug => selectTripEssentials({ slug, name: 'Trail ' + slug }).products.map(p => p.id).join()));
+    expect(sets.size).toBeGreaterThan(2);
+  });
+  it('keeps the same picks for the same page', () => {
+    expect(selectTripEssentials({ slug: 'zion', name: 'Zion' }).products.map(p => p.id)).toEqual(selectTripEssentials({ slug: 'zion', name: 'Zion' }).products.map(p => p.id));
+  });
+});

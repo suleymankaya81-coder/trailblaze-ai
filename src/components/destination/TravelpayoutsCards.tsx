@@ -47,7 +47,8 @@ function Group({ title, items, slug, airportCode, rentals = false }: { title: st
   );
 }
 
-export function TravelpayoutsCards({ slug, name, airportCode }: { slug: string; name: string; airportCode: string | null }) {
+/** Flight + airport car cards as bare grid items, so they sit in the same row as the RV cards. */
+export function GettingThereItems({ slug, name, airportCode }: { slug: string; name: string; airportCode: string | null }) {
   const { data: fare } = useQuery({
     queryKey: ["flight-price", airportCode],
     queryFn: () => airportCode ? getFlightPrice({ data: { airport: airportCode } }) : Promise.resolve(null),
@@ -58,26 +59,49 @@ export function TravelpayoutsCards({ slug, name, airportCode }: { slug: string; 
   const flightSub = fare?.price
     ? `Recent fares from ~$${Math.round(fare.price)}${fare.origin ? ` (from ${fare.origin})` : ""} · estimate`
     : `Compare fares into${at || " the nearest airport"}`;
+  const item: Item = { brand: "aviasales", name: "Aviasales", title: `Flights to${at || ` ${name}`}`, sub: flightSub, icon: Plane };
+  return (
+    <>
+      <Card item={item} slug={slug} />
+      <AirportRentalsCards slug={slug} airportCode={airportCode} />
+    </>
+  );
+}
 
-  const getThere: Item[] = [
-    { brand: "aviasales", name: "Aviasales", title: `Flights to${at || ` ${name}`}`, sub: flightSub, icon: Plane },
-  ];
+export function TravelpayoutsCards({ slug, name, airportCode }: { slug: string; name: string; airportCode: string | null }) {
   return (
     <div className="mt-8">
-      <Group title="Getting there & getting around" items={getThere} slug={slug} rentals airportCode={airportCode} />
+      <h3 className="mb-3 text-sm font-semibold text-foreground">Getting there & getting around</h3>
+      <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-4"><GettingThereItems slug={slug} name={name} airportCode={airportCode} /></div>
     </div>
   );
 }
 
-export function TourTicketCards({ slug, name }: { slug: string; name: string }) {
+// Typical "from" prices, always labelled as typical on the card.
+const TOUR_PRICE: Partial<Record<TpBrand, string>> = { klook: "Est. from $35", tiqets: "Est. from $20", gocity: "Est. from $79" };
+
+/** Tour/ticket partner cards as bare grid items for the activities row. */
+export function TourTicketItems({ slug, name }: { slug: string; name: string }) {
   const doIt: Item[] = [
     { brand: "klook", name: "Klook", title: `Tours near ${name}`, sub: "Guided tours, day trips and attraction deals", icon: Ticket },
     { brand: "tiqets", name: "Tiqets", title: "Tickets & attractions", sub: "Instant mobile tickets for nearby sights", icon: Ticket },
     ...(nearGoCity(slug) ? [{ brand: "gocity" as const, name: "Go City", title: "City attraction pass", sub: "One pass for the gateway city's top sights", icon: Building2 }] : []),
   ];
+  return <>{doIt.map((i) => <TourCard key={i.brand} item={i} slug={slug} />)}</>;
+}
+
+function TourCard({ item, slug }: { item: Item; slug: string }) {
+  const categories: Partial<Record<TpBrand, ServicePhotoCategory>> = { klook: "tour", tiqets: "attraction", gocity: "attraction" };
+  const photo = item.brand === "klook" ? offerPhoto(slug, "activity", 0) ?? servicePhoto("tour", slug) : servicePhoto(categories[item.brand] ?? "attraction", slug, item.brand === "gocity" ? 1 : 0);
+  if (!photo) return <Card item={item} slug={slug} />;
+  return <PartnerPhotoCard brand={item.name} title={item.title} href={tpLink(item.brand, slug)} photo={photo} detail={item.sub} price={TOUR_PRICE[item.brand]} />;
+}
+
+export function TourTicketCards({ slug, name }: { slug: string; name: string }) {
   return (
     <div className="mt-8">
-      <Group title="More tours & ticket partners" items={doIt} slug={slug} />
+      <h3 className="mb-3 text-sm font-semibold text-foreground">More tours & ticket partners</h3>
+      <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-4"><TourTicketItems slug={slug} name={name} /></div>
     </div>
   );
 }
