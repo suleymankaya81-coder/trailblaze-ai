@@ -273,3 +273,9 @@
   .home-collage-copy form { margin-top: 1rem; }
   .home-collage-copy ul { margin-top: 1.25rem; }
 }
+
+/* Grand Canyon vehicle pilot: highlight the cards matching the visitor's choice. */
+.vehicle-pick[data-pick] > * { opacity: .55; transition: opacity .2s, box-shadow .2s; }
+.vehicle-pick[data-pick="rv"] > :has(a[href*="motorhomerepublic"]),
+.vehicle-pick[data-pick="car"] > :has(a[href*="airportrentals"]),
+.vehicle-pick[data-pick="suv"] > :has(a[href*="airportrentals"]) { opacity: 1; box-shadow: 0 0 0 2px var(--primary); }
