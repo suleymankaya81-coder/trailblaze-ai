@@ -706,6 +706,8 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
 function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
   // Two RV styles: a drivable motorhome and a towable trailer-style camper.
   const rentals = dest.rentals.filter((r) => r.partner === "motorhome_republic").slice(0, 2);
+  const [pick, setPick] = useState<VehiclePick | null>(null);
+  const pilot = VEHICLE_PILOT_SLUGS.includes(dest.slug);
 
   return (
     <section id="rentals" className="scroll-mt-24">
@@ -714,7 +716,8 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
         title={dest.airportCode ? `RVs, campervans & cars near ${dest.airportCode}` : "RVs, campervans & cars for this trip"}
         
       />
-      <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+      {pilot && <VehicleChooser slug={dest.slug} value={pick} onChange={setPick} />}
+      <div className="vehicle-pick travel-card-row sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5" data-pick={pick ?? undefined}>
         {rentals.map((r, index) => (
           <RentalTile key={r.id} offer={r} destinationSlug={dest.slug} kind={index === 0 ? "motorhome" : "camper"}
             photo={index === 0 ? servicePhoto("rv", dest.slug) : SMALL_CAMPER_PHOTO} />
