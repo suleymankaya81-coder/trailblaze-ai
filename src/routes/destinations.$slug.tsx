@@ -51,6 +51,7 @@ import {
   Wifi,
 } from "lucide-react";
 import { lazy, Suspense, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { VehicleChooser, VEHICLE_PILOT_SLUGS, type VehiclePick } from "@/components/destination/VehicleChooser";
 import { ClientOnly } from "@tanstack/react-router";
 import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { JumpBar, TripRadar, formatDrive } from "@/components/destination/TripRadar";
