@@ -23,6 +23,7 @@ import { Route as CorridorsSlugRouteImport } from './routes/corridors.$slug'
 import { Route as DestinationsIndexRouteImport } from './routes/destinations.index'
 import { Route as DestinationsSlugRouteImport } from './routes/destinations.$slug'
 import { Route as ExperiencesCorridorRouteImport } from './routes/experiences.$corridor'
+import { Route as ExperiencesHomeRouteImport } from './routes/experiences.home'
 import { Route as FlyAndDriveIndexRouteImport } from './routes/fly-and-drive.index'
 import { Route as FlyAndDriveSlugRouteImport } from './routes/fly-and-drive.$slug'
 import { Route as GearIndexRouteImport } from './routes/gear.index'
@@ -106,6 +107,11 @@ const DestinationsSlugRoute = DestinationsSlugRouteImport.update({
 const ExperiencesCorridorRoute = ExperiencesCorridorRouteImport.update({
   id: '/experiences/$corridor',
   path: '/experiences/$corridor',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExperiencesHomeRoute = ExperiencesHomeRouteImport.update({
+  id: '/experiences/home',
+  path: '/experiences/home',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FlyAndDriveIndexRoute = FlyAndDriveIndexRouteImport.update({
@@ -195,6 +201,7 @@ export interface FileRoutesByFullPath {
   '/corridors/$slug': typeof CorridorsSlugRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/experiences/$corridor': typeof ExperiencesCorridorRoute
+  '/experiences/home': typeof ExperiencesHomeRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
   '/gear/7-bikepacking-essentials': typeof Gear7BikepackingEssentialsRoute
   '/gear/best-cycling-accessories': typeof GearBestCyclingAccessoriesRoute
@@ -225,6 +232,7 @@ export interface FileRoutesByTo {
   '/corridors/$slug': typeof CorridorsSlugRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/experiences/$corridor': typeof ExperiencesCorridorRoute
+  '/experiences/home': typeof ExperiencesHomeRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
   '/gear/7-bikepacking-essentials': typeof Gear7BikepackingEssentialsRoute
   '/gear/best-cycling-accessories': typeof GearBestCyclingAccessoriesRoute
@@ -256,6 +264,7 @@ export interface FileRoutesById {
   '/corridors/$slug': typeof CorridorsSlugRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
   '/experiences/$corridor': typeof ExperiencesCorridorRoute
+  '/experiences/home': typeof ExperiencesHomeRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
   '/gear/7-bikepacking-essentials': typeof Gear7BikepackingEssentialsRoute
   '/gear/best-cycling-accessories': typeof GearBestCyclingAccessoriesRoute
@@ -288,6 +297,7 @@ export interface FileRouteTypes {
     | '/corridors/$slug'
     | '/destinations/$slug'
     | '/experiences/$corridor'
+    | '/experiences/home'
     | '/fly-and-drive/$slug'
     | '/gear/7-bikepacking-essentials'
     | '/gear/best-cycling-accessories'
@@ -318,6 +328,7 @@ export interface FileRouteTypes {
     | '/corridors/$slug'
     | '/destinations/$slug'
     | '/experiences/$corridor'
+    | '/experiences/home'
     | '/fly-and-drive/$slug'
     | '/gear/7-bikepacking-essentials'
     | '/gear/best-cycling-accessories'
@@ -348,6 +359,7 @@ export interface FileRouteTypes {
     | '/corridors/$slug'
     | '/destinations/$slug'
     | '/experiences/$corridor'
+    | '/experiences/home'
     | '/fly-and-drive/$slug'
     | '/gear/7-bikepacking-essentials'
     | '/gear/best-cycling-accessories'
@@ -379,6 +391,7 @@ export interface RootRouteChildren {
   CorridorsSlugRoute: typeof CorridorsSlugRoute
   DestinationsSlugRoute: typeof DestinationsSlugRoute
   ExperiencesCorridorRoute: typeof ExperiencesCorridorRoute
+  ExperiencesHomeRoute: typeof ExperiencesHomeRoute
   FlyAndDriveSlugRoute: typeof FlyAndDriveSlugRoute
   Gear7BikepackingEssentialsRoute: typeof Gear7BikepackingEssentialsRoute
   GearBestCyclingAccessoriesRoute: typeof GearBestCyclingAccessoriesRoute
@@ -497,6 +510,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ExperiencesCorridorRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/experiences/home': {
+      id: '/experiences/home'
+      path: '/experiences/home'
+      fullPath: '/experiences/home'
+      preLoaderRoute: typeof ExperiencesHomeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/fly-and-drive/': {
       id: '/fly-and-drive/'
       path: '/fly-and-drive'
@@ -611,6 +631,7 @@ const rootRouteChildren: RootRouteChildren = {
   CorridorsSlugRoute: CorridorsSlugRoute,
   DestinationsSlugRoute: DestinationsSlugRoute,
   ExperiencesCorridorRoute: ExperiencesCorridorRoute,
+  ExperiencesHomeRoute: ExperiencesHomeRoute,
   FlyAndDriveSlugRoute: FlyAndDriveSlugRoute,
   Gear7BikepackingEssentialsRoute: Gear7BikepackingEssentialsRoute,
   GearBestCyclingAccessoriesRoute: GearBestCyclingAccessoriesRoute,
