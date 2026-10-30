@@ -246,9 +246,9 @@
   border-bottom: 1px solid var(--border);
   background:
     linear-gradient(135deg,
-      color-mix(in oklab, var(--sage) 22%, var(--off-white)) 0%,
-      color-mix(in oklab, var(--sand) 45%, var(--off-white)) 55%,
-      var(--beige) 100%);
+      color-mix(in oklab, var(--sage) 40%, var(--off-white)) 0%,
+      color-mix(in oklab, var(--sand) 70%, var(--off-white)) 55%,
+      color-mix(in oklab, var(--sand) 35%, var(--beige)) 100%);
 }
 .home-collage-layout { display: grid; gap: 2rem; padding-block: 2rem; }
 .home-collage-copy { min-width: 0; align-self: center; }
