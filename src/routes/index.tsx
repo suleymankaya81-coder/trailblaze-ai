@@ -8,7 +8,7 @@ import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { servicePhoto, type ServicePhotoCategory } from "@/lib/data/servicePhotos";
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
-import { RentalSearch } from "@/components/home/RentalSearch";
+import { RentalsFeature } from "@/components/home/RentalsFeature";
 import { StartHere } from "@/components/home/StartHere";
 import { HomeHero } from "@/components/home/HomeHero";
 import { TripEssentials } from "@/components/destination/TripEssentials";
@@ -106,10 +106,7 @@ function HomePage() {
 
       <section id="rentals-gear" className="section-y">
         <div className="container-page">
-          <SectionHead kicker="Step 2 of your trip" title="RV, campervan & airport car rentals" intro="Search Motorhome Republic for RVs or Airport Rentals for cars. Compare the current price for your dates on the partner site." />
-          <div className="mx-auto max-w-3xl">
-            <RentalSearch />
-          </div>
+          <RentalsFeature />
         </div>
       </section>
 
