@@ -9,6 +9,7 @@ import { Footer } from "@/components/site/Footer";
 import { servicePhoto, type ServicePhotoCategory } from "@/lib/data/servicePhotos";
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
 import { RentalsFeature } from "@/components/home/RentalsFeature";
+import { HomeExperiences } from "@/components/home/HomeExperiences";
 import { StartHere } from "@/components/home/StartHere";
 import { HomeHero } from "@/components/home/HomeHero";
 import { TripEssentials } from "@/components/destination/TripEssentials";
@@ -91,6 +92,8 @@ function HomePage() {
           </div>
         </section>
       )}
+
+      <HomeExperiences />
 
       <section className="section-y bg-card">
         <div className="container-page">
