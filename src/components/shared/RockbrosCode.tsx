@@ -8,7 +8,7 @@ export function RockbrosCode({ className = "" }: { className?: string }) {
   return (
     <p className={`inline-flex items-center gap-1.5 rounded-full bg-accent px-2.5 py-1 text-[11px] font-semibold text-accent-foreground ${className}`}>
       <Tag className="h-3 w-3 shrink-0" aria-hidden />
-      <span>{promo.percentOff}% off · code <span className="font-bold tracking-wide">{promo.code}</span></span>
+      <span className="whitespace-nowrap">{promo.percentOff}% off · code <span className="font-bold tracking-wide">{promo.code}</span></span>
     </p>
   );
 }
