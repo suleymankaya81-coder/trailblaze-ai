@@ -1,3 +1,4 @@
+import { RockbrosCode } from "@/components/shared/RockbrosCode";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { ArrowRight, ChevronRight, ExternalLink } from "lucide-react";
