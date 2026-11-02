@@ -1,3 +1,4 @@
+import { RockbrosCode } from "@/components/shared/RockbrosCode";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { ArrowRight, ChevronRight, ExternalLink } from "lucide-react";
@@ -91,6 +92,7 @@ function CategoryPage() {
             <h1 className="mt-3 font-display text-3xl font-semibold text-foreground md:text-4xl">{meta.label}</h1>
             <p className="mt-2 text-sm text-muted-foreground">{meta.intro}</p>
             <p className="mt-1 text-xs text-muted-foreground">{file.items.length.toLocaleString("en-US")} in-stock products · Prices as of {reviewed}, may change</p>
+            <RockbrosCode className="mt-3" />
           </div>
           <label className="flex items-center gap-2 text-sm text-muted-foreground">
             Sort

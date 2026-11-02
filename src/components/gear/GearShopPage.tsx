@@ -1,3 +1,4 @@
+import { RockbrosCode } from "@/components/shared/RockbrosCode";
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check, ChevronRight, Sparkles } from "lucide-react";
 import { Header } from "@/components/site/Header";
@@ -162,6 +163,7 @@ export function GearShopPage() {
                 <p className="text-lg font-extrabold tracking-tight text-foreground">ROCKBROS</p>
                 <p className="mt-1 text-xs text-muted-foreground">Cycling, camping &amp; outdoor accessories</p>
                 <p className="mt-1 text-xs text-muted-foreground">2,010 catalog products</p>
+                <RockbrosCode className="mt-2" />
               </div>
               <img src={actCycling} alt="Cyclist riding a mountain road at sunset" loading="lazy" width={1024} height={768} className="h-20 w-28 shrink-0 rounded-lg object-cover" />
             </a>
