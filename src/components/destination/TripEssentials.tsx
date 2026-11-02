@@ -5,6 +5,7 @@ import { catalogPrice, gearShopLink } from '@/lib/data/rockbrosGear';
 import { selectTripEssentials, type EssentialsContext } from '@/lib/data/tripEssentials';
 import { TRIP_ESSENTIALS_REVIEWED } from '@/lib/data/tripEssentials.catalog';
 import { SafeImage } from '@/components/shared/SafeImage';
+import { RockbrosCode } from '@/components/shared/RockbrosCode';
 import { wildguarderLink, wildguarderPrice, WILDGUARDER_REVIEW_DATE } from '@/lib/data/gearCategories';
 
 export function TripEssentials({ context }: { context: EssentialsContext }) {
@@ -45,7 +46,8 @@ export function TripEssentials({ context }: { context: EssentialsContext }) {
               <h3 className="mt-2 text-base font-semibold leading-snug text-foreground">{product.name}</h3>
               <p className="mb-4 mt-2 text-xs leading-relaxed text-muted-foreground">{product.description}</p>
               <div className="mt-auto">
-                <p className="mb-3 text-base font-semibold text-foreground">{catalogPrice(product)} <span className="text-[10px] font-normal text-muted-foreground">USD · catalog price</span></p>
+                <p className="mb-2 text-base font-semibold text-foreground">{catalogPrice(product)} <span className="text-[10px] font-normal text-muted-foreground">USD · catalog price</span></p>
+                <RockbrosCode className="mb-3" />
                 <Button asChild className="h-auto min-h-12 w-full whitespace-normal rounded-md px-2 text-xs">
                   <a href={gearShopLink(product, `trip-${context.slug}`)} target="_blank" rel="sponsored nofollow noopener noreferrer">Shop at ROCKBROS <ArrowRight className="h-3.5 w-3.5 shrink-0" /></a>
                 </Button>
