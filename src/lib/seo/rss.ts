@@ -23,6 +23,21 @@ export function feedForPath(path: string): Exclude<Feed, "all"> {
   return "parks";
 }
 
+/** Board feed for a pin's stored feed name; guide families without their own feed join the closest board. */
+export function feedForPin(feed: string): Exclude<Feed, "all"> {
+  if (feed === "rv-camping" || feed === "rv") return "rv";
+  if (feed === "best-time" || feed === "things-to-do") return feed;
+  return "parks";
+}
+
+export type StoredPin = { key: string; image_url: string; release_at: string; feed: string; title: string | null; description: string | null; link: string | null };
+
+/** Pins that carry their own reviewed copy and link (former manual-upload pins). */
+export function storedPinItem(p: StoredPin): FeedItem | null {
+  if (!p.title || !p.description || !p.link || !/^https:\/\/minialife\.com\//.test(p.link)) return null;
+  return { title: p.title, description: p.description, link: p.link, image: p.image_url, releaseAt: p.release_at, date: p.release_at, feed: feedForPin(p.feed), indexable: true, published: true };
+}
+
 export function withUtm(link: string): string {
   return `${link}${link.includes("?") ? "&" : "?"}utm_source=pinterest&utm_medium=rss`;
 }

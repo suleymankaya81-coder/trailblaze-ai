@@ -1,6 +1,6 @@
 // Server-only: Pinterest RSS feeds built live from published rows + branded pin cards.
 import { type PinKind, isBroken, pinDescription, pinTitle } from "./pinCopy";
-import { FEEDS, type Feed, type FeedItem, feedForPath, renderRss, selectItems } from "./rss";
+import { FEEDS, type Feed, type FeedItem, type StoredPin, feedForPath, renderRss, selectItems, storedPinItem } from "./rss";
 
 const BASE = "https://minialife.com";
 
@@ -23,7 +23,7 @@ async function rest<T>(query: string): Promise<T[]> {
 
 type D = { id: string; slug: string; name: string; tagline: string | null; best_season: string | null; recommended_duration: string | null; nearest_airport_code: string | null; updated_at: string };
 type L = { path: string; page_type: string; seo_title: string | null; seo_description: string | null; destination_id: string; published_at: string | null; updated_at: string; indexable: boolean };
-type P = { key: string; image_url: string; release_at: string };
+type P = StoredPin;
 
 export async function buildRss(feed: string): Promise<Response | null> {
   if (!(FEEDS as readonly string[]).includes(feed)) return null;
@@ -33,11 +33,18 @@ export async function buildRss(feed: string): Promise<Response | null> {
       rest<D>("destinations?select=id,slug,name,tagline,best_season,recommended_duration,nearest_airport_code,updated_at&status=eq.published&order=slug.asc"),
       rest<L>("seo_landing_pages?select=path,page_type,seo_title,seo_description,destination_id,published_at,updated_at,indexable&status=eq.published&order=path.asc"),
       // CSV-uploaded pins are posted manually; never repeat them through RSS.
-      rest<P>("pin_assets?select=key,image_url,release_at&channel=eq.rss&order=key.asc"),
+      rest<P>("pin_assets?select=key,image_url,release_at,feed,title,description,link&channel=eq.rss&order=key.asc"),
     ]);
+    // Pins with stored copy + link are emitted as-is (covers guide families not built below).
+    const stored = new Set<string>();
+    for (const p of pins) {
+      const item = storedPinItem(p);
+      if (item) { items.push(item); stored.add(p.key); }
+    }
     const pinBy = new Map(pins.map((p) => [p.key, p]));
     const byId = new Map(dests.map((d) => [d.id, d]));
     const push = (kind: PinKind, d: D, key: string, link: string, extra: Partial<L>, feedName: FeedItem["feed"], date: string, indexable: boolean) => {
+      if (stored.has(key)) return;
       const pin = pinBy.get(key);
       const input = { kind, name: d.name, tagline: d.tagline, seoTitle: extra.seo_title, seoDescription: extra.seo_description, bestSeason: d.best_season, duration: d.recommended_duration, airport: d.nearest_airport_code };
       const title = pinTitle(input);
