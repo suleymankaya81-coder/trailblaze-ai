@@ -32,7 +32,7 @@ export async function buildRss(feed: string): Promise<Response | null> {
     const [dests, pages, pins] = await Promise.all([
       rest<D>("destinations?select=id,slug,name,tagline,best_season,recommended_duration,nearest_airport_code,updated_at&status=eq.published&order=slug.asc"),
       rest<L>("seo_landing_pages?select=path,page_type,seo_title,seo_description,destination_id,published_at,updated_at,indexable&status=eq.published&order=path.asc"),
-      // CSV-uploaded pins are posted manually; never repeat them through RSS.
+      // Pins still on the manual CSV channel are excluded so a page is never pinned twice.
       rest<P>("pin_assets?select=key,image_url,release_at,feed,title,description,link&channel=eq.rss&order=key.asc"),
     ]);
     // Pins with stored copy + link are emitted as-is (covers guide families not built below).
