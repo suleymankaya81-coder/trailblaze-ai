@@ -372,34 +372,43 @@ export type Database = {
         Row: {
           channel: string
           created_at: string
+          description: string | null
           feed: string
           image_url: string
           key: string
           kind: string
+          link: string | null
           release_at: string
           template_version: number
+          title: string | null
           updated_at: string
         }
         Insert: {
           channel?: string
           created_at?: string
+          description?: string | null
           feed: string
           image_url: string
           key: string
           kind: string
+          link?: string | null
           release_at?: string
           template_version?: number
+          title?: string | null
           updated_at?: string
         }
         Update: {
           channel?: string
           created_at?: string
+          description?: string | null
           feed?: string
           image_url?: string
           key?: string
           kind?: string
+          link?: string | null
           release_at?: string
           template_version?: number
+          title?: string | null
           updated_at?: string
         }
         Relationships: []

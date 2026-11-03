@@ -1,0 +1,1 @@
+ALTER TABLE public.pin_assets ADD COLUMN IF NOT EXISTS title text, ADD COLUMN IF NOT EXISTS description text, ADD COLUMN IF NOT EXISTS link text;

@@ -24,3 +24,7 @@ Normal runs skip completed template versions. Do not use `--force` to shift rele
 Template v2 follows Pinterest's Oct 2026 "Design the Exit" guidance: intent-first kicker (WHEN TO GO, WHERE TO SLEEP…), a concrete next step on the card (days, arrival airport, drive time, booking need) and an action CTA. Copy lives in `pin_copy_v2.py` (tested in `test_pin_copy_v2.py`). v1 cards are never re-rendered.
 
 Channels (`pin_assets.channel`): `rss` pins publish through the four existing feeds; `csv` pins (road-trip loops, gateway corridors, RV & camping guides) are uploaded manually from `/mnt/documents/pinterest/*.csv` and are filtered out of RSS, so no page is pinned twice. CSV pins are scheduled only on days with no RSS release, max 100 per day; one file per day (Pinterest accepts up to 200 rows per file). `render-pins.py --csv-only` rewrites the files.
+
+## 2026-11-03 — CSV pins moved to RSS
+
+Manual CSV uploads failed, so all 1,246 `csv` pins were switched to `channel = rss` with their CSV title, description and link stored on the row (`pin_assets.title/description/link`), released 200 per UTC day from 2026-11-04 to 2026-11-10. Road-trip/fly-drive/no-reservation pins publish through the `parks` feed and RV-camping pins through `rv`. If any earlier CSV file had already been uploaded, its pins may appear twice.

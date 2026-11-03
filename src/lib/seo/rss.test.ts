@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { type FeedItem, feedForPath, selectItems } from "./rss";
+import { type FeedItem, feedForPath, feedForPin, selectItems, storedPinItem } from "./rss";
 
 const base: FeedItem = { title: "t", description: "d", link: "https://minialife.com/x", image: "https://a.org/p.jpg", date: "2026-10-01", feed: "parks", indexable: true, published: true };
 
@@ -16,5 +16,15 @@ describe("pinterest rss", () => {
     expect(feedForPath("/zion-best-time-to-visit")).toBe("best-time");
     expect(feedForPath("/zion-glamping")).toBe("rv");
     expect(selectItems([base], "rv")).toHaveLength(0);
+  });
+  it("puts RV camping pins on the RV board and road trip pins on the parks board", () => {
+    expect(feedForPin("rv-camping")).toBe("rv");
+    expect(feedForPin("road-trips")).toBe("parks");
+  });
+  it("emits stored-copy pins only with a minialife link", () => {
+    const p = { key: "fd:zion", image_url: "https://a.org/p.jpg", release_at: "2026-11-04T00:00:00Z", feed: "road-trips", title: "T", description: "D", link: "https://minialife.com/fly-and-drive/zion" };
+    expect(storedPinItem(p)?.feed).toBe("parks");
+    expect(storedPinItem({ ...p, link: "https://evil.example/x" })).toBeNull();
+    expect(storedPinItem({ ...p, title: null })).toBeNull();
   });
 });
