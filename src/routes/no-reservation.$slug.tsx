@@ -15,6 +15,8 @@ import { Footer } from "@/components/site/Footer";
 import { ArrivalPlan } from "@/components/flydrive/FlyDriveSections";
 import { DestTile, FullGuideLink, GuideFaq, GuideHero, GuideSection, HeroChip, ReservationPanel } from "@/components/guides/GuideSections";
 import { getDestinationPageData } from "@/lib/data/destinations.functions";
+import { getLandingLinksForDestination } from "@/lib/data/landingPages.functions";
+import { PlanDeeper } from "@/components/guides/PlanDeeper";
 import { getGuideAlternatives } from "@/lib/data/guides.functions";
 import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 import { SITE, formatDriveShort } from "@/lib/seo/flyDrive";
@@ -27,7 +29,8 @@ export const Route = createFileRoute("/no-reservation/$slug")({
     if (!dest || !isNoReservationEligible(dest)) throw notFound();
     const altSlugs = dest.similar.map((s) => s.slug);
     const alts = altSlugs.length ? (await getGuideAlternatives({ data: { slugs: altSlugs } })).filter((a) => a.permitLevel === "none") : [];
-    return { dest, alts, faqs: noReservationFaqs(dest), url: `${SITE}/no-reservation/${dest.slug}` };
+    const landingLinks = await getLandingLinksForDestination({ data: { destinationId: dest.id } }).catch(() => []);
+    return { dest, landingLinks, alts, faqs: noReservationFaqs(dest), url: `${SITE}/no-reservation/${dest.slug}` };
   },
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
@@ -56,7 +59,7 @@ export const Route = createFileRoute("/no-reservation/$slug")({
 });
 
 function Page() {
-  const { dest, alts, faqs } = Route.useLoaderData();
+  const { dest, alts, faqs, landingLinks } = Route.useLoaderData();
   const reviewed = getDestinationAnswers(dest.slug)?.reservation;
   const tips = dest.travelPlan?.intel.filter((t) => t.kind === "timing" || t.kind === "access" || t.kind === "parking") ?? [];
   return (
@@ -111,7 +114,7 @@ function Page() {
         <section className="container-page pb-6"><ViatorPlaceBlock slug={dest.slug} name={dest.name} /></section>
         <section className="container-page py-10"><TripEssentials context={{ slug: dest.slug, name: dest.name, places: [dest] }} /></section>
         <GuideSection title="Quick answers"><GuideFaq faqs={faqs} /></GuideSection>
-        <section className="container-page pb-16"><FullGuideLink slug={dest.slug} name={dest.name} /></section>
+        <section className="container-page pb-16"><FullGuideLink slug={dest.slug} name={dest.name} /><div className="mt-8"><PlanDeeper dest={dest} landingLinks={landingLinks} current="no-reservation" /></div></section>
       </main>
       <Footer />
     </div>

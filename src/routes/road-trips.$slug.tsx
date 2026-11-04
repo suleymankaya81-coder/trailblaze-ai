@@ -13,6 +13,7 @@ import { CalendarDays, MapPin, Route as RouteIcon, ShieldAlert } from "lucide-re
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
+import { MoreRoutes } from "@/components/guides/MoreRoutes";
 import { GuideFaq, GuideHero, GuideSection, HeroChip } from "@/components/guides/GuideSections";
 import { Skeleton } from "@/components/ui/skeleton";
 import { getLoopStops } from "@/lib/data/guides.functions";
@@ -125,6 +126,7 @@ function Page() {
         <section className="container-page py-10"><TripEssentials context={{ slug: loop.slug, name: loop.title, places: stops, topic: loop.intro }} /></section>
 
         <GuideSection title="Quick answers"><GuideFaq faqs={faqs} /></GuideSection>
+        <MoreRoutes stops={loop.stops} currentLoop={loop.slug} />
       </main>
       <Footer />
     </div>
