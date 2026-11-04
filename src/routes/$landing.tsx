@@ -94,7 +94,7 @@ export const Route = createFileRoute("/$landing")({
         publisher: { "@type": "Organization", name: "MiniaLife" },
         articleSection: sections.map((s) => s.heading),
       },
-      { "@context": "https://schema.org", ...breadcrumbJsonLd(placeGuideCrumbs(destination, h1, page.path)) },
+      { "@context": "https://schema.org", ...breadcrumbJsonLd(placeGuideCrumbs(destination, LANDING_TYPE_LABEL[page.pageType] ?? "Guide", page.path)) },
       ...(faqs.length
         ? [{
             "@context": "https://schema.org",

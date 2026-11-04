@@ -12,6 +12,7 @@ import { CalendarDays, Globe2, MapPin, Plane, Route as RouteIcon, ShieldAlert } 
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
+import { corridorCrumbs } from "@/lib/seo/corridorSeo";
 import { MoreRoutes } from "@/components/guides/MoreRoutes";
 import { GuideFaq, GuideHero, GuideSection, HeroChip } from "@/components/guides/GuideSections";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -70,7 +71,7 @@ function Page() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <GuideHero image={stops[1]?.heroImage ?? first.heroImage} kicker={`Gateway Road Trip · ${corridor.region}`} title={corridorSearchTitle(corridor)} crumbs={<><Link to="/" className="hover:underline">Home</Link> / <Link to="/corridors" className="hover:underline">Gateway Road Trips</Link></>}>
+        <GuideHero image={stops[1]?.heroImage ?? first.heroImage} kicker={`Gateway Road Trip · ${corridor.region}`} title={corridorSearchTitle(corridor)} crumbs={corridorCrumbs(corridor)}>
           <HeroChip image={roadImg}>Fly into {corridor.gateway.code}</HeroChip>
           <HeroChip image={roadImg}>{corridor.idealDays}</HeroChip>
           <HeroChip image={roadImg}>~{miles} mi loop (straight-line)</HeroChip>

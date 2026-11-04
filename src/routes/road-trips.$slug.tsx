@@ -13,6 +13,7 @@ import { CalendarDays, MapPin, Route as RouteIcon, ShieldAlert } from "lucide-re
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
+import { HOME, ROAD_TRIPS } from "@/lib/seo/breadcrumbs";
 import { MoreRoutes } from "@/components/guides/MoreRoutes";
 import { GuideFaq, GuideHero, GuideSection, HeroChip } from "@/components/guides/GuideSections";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -71,7 +72,7 @@ function Page() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <GuideHero image={first.heroImage} kicker={`Road trip · ${loop.region}`} title={loop.title} crumbs={<><Link to="/" className="hover:underline">Home</Link> / <Link to="/road-trips" className="hover:underline">Road trips</Link></>}>
+        <GuideHero image={first.heroImage} kicker={`Road trip · ${loop.region}`} title={loop.title} crumbs={[HOME, ROAD_TRIPS, { name: loop.title, path: `/road-trips/${loop.slug}` }]}>
           <HeroChip image={roadImg}>{stops.length} stops</HeroChip>
           <HeroChip image={roadImg}>About {totalDays} days</HeroChip>
         </GuideHero>

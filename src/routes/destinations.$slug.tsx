@@ -79,6 +79,8 @@ import { saveTripPlan } from "@/lib/plans/savePlan.functions";
 import { getCapturedEmail, setCapturedEmail } from "@/lib/plans/session";
 import { getLandingLinksForDestination, type LandingLink } from "@/lib/data/landingPages.functions";
 import { PlanDeeper } from "@/components/guides/PlanDeeper";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { destinationCrumbs } from "@/lib/seo/breadcrumbs";
 import { offerPhoto, type Photo } from "@/lib/data/destinationCardPhotos";
 import { ROAD_PREPARATION_PARTNERS, preparationLink } from "@/lib/affiliates/travelpayouts";
 import { commonsFilePage, parsePhotoCredit } from "@/lib/seo/imageCredit";
@@ -249,19 +251,7 @@ function Hero({ dest }: { dest: DestinationView }) {
 
       <div className="container-page relative grid gap-10 py-14 md:py-20 ">
         <div className="text-off-white">
-          <nav className="flex flex-wrap items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-off-white/70">
-            <Link to="/" className="hover:text-off-white">
-              Home
-            </Link>
-            <span className="opacity-50">›</span>
-            <span>{region}</span>
-            {sub && (
-              <>
-                <span className="opacity-50">›</span>
-                <span className="text-off-white">{sub}</span>
-              </>
-            )}
-          </nav>
+          <Breadcrumbs crumbs={destinationCrumbs(dest)} className="text-off-white/75" />
 
           <h1 className="mt-5 max-w-xl font-display text-4xl leading-[1.05] md:text-6xl">
             {dest.name}

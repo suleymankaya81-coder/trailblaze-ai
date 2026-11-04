@@ -20,6 +20,7 @@ import { AirportRentalsCards } from "@/components/destination/AirportRentalsCard
 import { FullGuideLink, GuideFaq, GuideHero, GuideSection, HeroChip, ReservationPanel } from "@/components/guides/GuideSections";
 import { getDestinationPageData } from "@/lib/data/destinations.functions";
 import { getLandingLinksForDestination } from "@/lib/data/landingPages.functions";
+import { placeGuideCrumbs } from "@/lib/seo/breadcrumbs";
 import { PlanDeeper } from "@/components/guides/PlanDeeper";
 import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 import { servicePhoto } from "@/lib/data/servicePhotos";
@@ -79,7 +80,7 @@ function Page() {
           image={dest.heroImage}
           kicker="RV & camping guide"
           title={`${dest.name} by RV`}
-          crumbs={<><Link to="/" className="hover:underline">Home</Link> / <Link to="/destinations/$slug" params={{ slug: dest.slug }} className="hover:underline">{dest.name}</Link> / RV & camping</>}
+          crumbs={placeGuideCrumbs(dest, "RV & camping", `/rv-camping/${dest.slug}`)}
         >
           <HeroChip image={roadImg}>{formatDriveShort(dest.driveMinutes ?? 0)} from {dest.airportCode}</HeroChip>
           <HeroChip image={roadImg}>Camping score {dest.campingScore}/10</HeroChip>

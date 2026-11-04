@@ -3,17 +3,19 @@ import { ArrowUpRight, ShieldAlert } from "lucide-react";
 import type { ReactNode } from "react";
 
 import type { Faq } from "@/lib/seo/flyDrive";
+import type { Crumb } from "@/lib/seo/breadcrumbs";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { PlaceCard, Thumb } from "@/components/ui-kit";
 import planImg from "@/assets/thumbs/plan.jpg";
 import { SafeImage } from "@/components/shared/SafeImage";
 
-export function GuideHero({ image, kicker, title, crumbs, children }: { image: string; kicker: string; title: string; crumbs: ReactNode; children?: ReactNode }) {
+export function GuideHero({ image, kicker, title, crumbs, children }: { image: string; kicker: string; title: string; crumbs: Crumb[]; children?: ReactNode }) {
   return (
     <section className="relative isolate overflow-hidden">
       {image && <SafeImage src={image} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />}
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink/85 via-ink/45 to-ink/20" />
       <div className="container-page py-12 md:py-20">
-        <nav className="mb-6 text-xs text-off-white/80">{crumbs}</nav>
+        <Breadcrumbs crumbs={crumbs} className="mb-6 text-off-white/80" />
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-off-white/80">{kicker}</p>
         <h1 className="mt-3 max-w-3xl font-display text-[34px] font-semibold leading-tight text-off-white md:text-[56px]">{title}</h1>
         {children && <div className="mt-8 flex flex-wrap gap-2">{children}</div>}
