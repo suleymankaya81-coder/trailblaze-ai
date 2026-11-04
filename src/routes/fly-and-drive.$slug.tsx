@@ -8,6 +8,8 @@ import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { ViatorPlaceBlock } from "@/components/destination/ViatorPlaceBlock";
 import { ArrivalPlan, BeforeYouLand, FlyDriveFaq, FlyDriveHero, RelatedLinks, RouteCard } from "@/components/flydrive/FlyDriveSections";
 import { getDestinationPageData } from "@/lib/data/destinations.functions";
+import { getLandingLinksForDestination } from "@/lib/data/landingPages.functions";
+import { PlanDeeper } from "@/components/guides/PlanDeeper";
 import { getAirportSiblings } from "@/lib/data/flyDrive.functions";
 import { SITE, flyDriveDescription, flyDriveFaqs, flyDriveJsonLd, flyDriveSlug, flyDriveTitle, parseFlyDriveSlug } from "@/lib/seo/flyDrive";
 
@@ -21,7 +23,8 @@ export const Route = createFileRoute("/fly-and-drive/$slug")({
     if (!canonical || !dest.airportCode || dest.driveMinutes == null) throw notFound();
     if (canonical !== params.slug) throw redirect({ to: "/fly-and-drive/$slug", params: { slug: canonical }, statusCode: 301 });
     const siblings = await getAirportSiblings({ data: { airport: dest.airportCode, exclude: dest.slug } });
-    return { dest, driveMinutes: dest.driveMinutes, siblings, faqs: flyDriveFaqs(dest), url: `${SITE}/fly-and-drive/${canonical}` };
+    const landingLinks = await getLandingLinksForDestination({ data: { destinationId: dest.id } }).catch(() => []);
+    return { dest, landingLinks, driveMinutes: dest.driveMinutes, siblings, faqs: flyDriveFaqs(dest), url: `${SITE}/fly-and-drive/${canonical}` };
   },
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
@@ -59,7 +62,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 }
 
 function FlyDrivePage() {
-  const { dest, siblings, faqs } = Route.useLoaderData();
+  const { dest, siblings, faqs, landingLinks } = Route.useLoaderData();
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -83,6 +86,7 @@ function FlyDrivePage() {
         </Section>
         <Section title="Keep planning">
           <RelatedLinks dest={dest} siblings={siblings} />
+          <PlanDeeper dest={dest} landingLinks={landingLinks} current="fly-and-drive" />
         </Section>
       </main>
       <Footer />

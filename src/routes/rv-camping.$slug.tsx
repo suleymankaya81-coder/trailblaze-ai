@@ -19,6 +19,8 @@ import { PartnerPhotoCard } from "@/components/destination/PartnerPhotoCard";
 import { AirportRentalsCards } from "@/components/destination/AirportRentalsCards";
 import { FullGuideLink, GuideFaq, GuideHero, GuideSection, HeroChip, ReservationPanel } from "@/components/guides/GuideSections";
 import { getDestinationPageData } from "@/lib/data/destinations.functions";
+import { getLandingLinksForDestination } from "@/lib/data/landingPages.functions";
+import { PlanDeeper } from "@/components/guides/PlanDeeper";
 import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 import { servicePhoto } from "@/lib/data/servicePhotos";
 import { partnerLabel } from "@/lib/affiliates/compliance";
@@ -32,7 +34,8 @@ export const Route = createFileRoute("/rv-camping/$slug")({
   loader: async ({ params }) => {
     const dest = await getDestinationPageData({ data: { slug: params.slug } }).catch(() => null);
     if (!dest || !isRvEligible(dest)) throw notFound();
-    return { dest, faqs: rvFaqs(dest), url: `${SITE}/rv-camping/${dest.slug}` };
+    const landingLinks = await getLandingLinksForDestination({ data: { destinationId: dest.id } }).catch(() => []);
+    return { dest, landingLinks, faqs: rvFaqs(dest), url: `${SITE}/rv-camping/${dest.slug}` };
   },
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
@@ -61,7 +64,7 @@ export const Route = createFileRoute("/rv-camping/$slug")({
 });
 
 function Page() {
-  const { dest, faqs } = Route.useLoaderData();
+  const { dest, faqs, landingLinks } = Route.useLoaderData();
   const camps = dest.stays.filter((o) => o.partner && CAMP_PARTNERS.has(o.partner) && o.externalUrl).slice(0, 3);
   const rentals = dest.rentals.filter((o) => o.partner === "motorhome_republic" && o.externalUrl).slice(0, 3);
   const plan = dest.travelPlan;
@@ -137,7 +140,7 @@ function Page() {
         <section className="container-page pb-6"><ViatorPlaceBlock slug={dest.slug} name={dest.name} /></section>
         <section className="container-page py-10"><TripEssentials context={{ slug: `rv-${dest.slug}`, name: dest.name, places: [dest], mode: "camping" }} /></section>
         <GuideSection title="Quick answers"><GuideFaq faqs={faqs} /></GuideSection>
-        <section className="container-page pb-16"><FullGuideLink slug={dest.slug} name={dest.name} /></section>
+        <section className="container-page pb-16"><FullGuideLink slug={dest.slug} name={dest.name} /><div className="mt-8"><PlanDeeper dest={dest} landingLinks={landingLinks} current="rv-camping" /></div></section>
       </main>
       <Footer />
     </div>

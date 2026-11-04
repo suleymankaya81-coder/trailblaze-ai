@@ -75,13 +75,10 @@ import { trackAndRedirect } from "@/lib/affiliates/track.functions";
 import { getOrCreateSessionId } from "@/lib/affiliates/session";
 import { outboundLinkTitle } from "@/lib/affiliates/compliance";
 import { buildDestinationJsonLd } from "@/lib/seo/destinationJsonLd";
-import { flyDriveSlug } from "@/lib/seo/flyDrive";
-import { isNoReservationEligible, isRvEligible, loopsForDestination } from "@/lib/seo/guides";
-import { CORRIDORS } from "@/lib/seo/corridors";
 import { saveTripPlan } from "@/lib/plans/savePlan.functions";
 import { getCapturedEmail, setCapturedEmail } from "@/lib/plans/session";
-import { getPublicLandingPagesForDestination } from "@/lib/data/landingPages.functions";
-import { LANDING_TYPE_LABEL } from "@/lib/data/landingTypes";
+import { getLandingLinksForDestination, type LandingLink } from "@/lib/data/landingPages.functions";
+import { PlanDeeper } from "@/components/guides/PlanDeeper";
 import { offerPhoto, type Photo } from "@/lib/data/destinationCardPhotos";
 import { ROAD_PREPARATION_PARTNERS, preparationLink } from "@/lib/affiliates/travelpayouts";
 import { commonsFilePage, parsePhotoCredit } from "@/lib/seo/imageCredit";
@@ -89,10 +86,11 @@ import { commonsFilePage, parsePhotoCredit } from "@/lib/seo/imageCredit";
 import { destinationSearchDescription, destinationSearchTitle } from "@/lib/seo/routeSeo";
 
 export const Route = createFileRoute("/destinations/$slug")({
-  loader: async ({ params }): Promise<{ dest: DestinationView }> => {
+  loader: async ({ params }): Promise<{ dest: DestinationView; landingLinks: LandingLink[] }> => {
     const dest = await getDestinationPageData({ data: { slug: params.slug } });
     if (!dest) throw notFound();
-    return { dest };
+    const landingLinks = await getLandingLinksForDestination({ data: { destinationId: dest.id } }).catch(() => []);
+    return { dest, landingLinks };
   },
   head: ({ loaderData }) => {
     const d = loaderData?.dest;
@@ -164,7 +162,7 @@ function DestinationNotFound() {
    Flow: Stay -> Rent -> Explore -> Prepare -> Go
 ========================================================= */
 function DestinationPage() {
-  const { dest } = Route.useLoaderData() as { dest: DestinationView };
+  const { dest, landingLinks } = Route.useLoaderData() as { dest: DestinationView; landingLinks: LandingLink[] };
   const enrich = useServerFn(enrichDestination);
 
   const { data: ai, isLoading: aiLoading } = useQuery({
@@ -209,7 +207,7 @@ function DestinationPage() {
 
         <TripEssentials context={{ slug: dest.slug, name: dest.name, places: [dest] }} />
 
-        <PlanDeeper dest={dest} />
+        <PlanDeeper dest={dest} landingLinks={landingLinks} current="destination" />
 
         <SimilarDestinations dest={dest} />
         <FinalCta dest={dest} />
@@ -1236,63 +1234,3 @@ function FinalCta({ dest }: { dest: DestinationView }) {
   );
 }
 
-// Links to this destination's search pages (best time, things to do, ...).
-function PlanDeeper({ dest }: { dest: DestinationView }) {
-  const arrivalSlug = flyDriveSlug(dest);
-  const fetchPages = useServerFn(getPublicLandingPagesForDestination);
-  const { data } = useQuery({
-    queryKey: ["landing-pages", dest.id],
-    queryFn: () => fetchPages({ data: { destinationId: dest.id } }),
-    staleTime: 5 * 60 * 1000,
-  });
-  const noRes = isNoReservationEligible(dest);
-  const rv = isRvEligible(dest);
-  const loops = loopsForDestination(dest.slug);
-  const gatewayTrips = CORRIDORS.filter((c) => c.stops.includes(dest.slug));
-  const pill = "inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground hover:bg-muted";
-  if (!arrivalSlug && !noRes && !rv && loops.length === 0 && gatewayTrips.length === 0 && (!data || data.length === 0)) return null;
-  return (
-    <section className="border-y border-border py-6">
-      <h2 className="font-display text-2xl text-foreground">Plan deeper</h2>
-      <div className="mt-4 flex flex-wrap gap-3">
-        {arrivalSlug && (
-          <Link to="/fly-and-drive/$slug" params={{ slug: arrivalSlug }} className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground hover:bg-muted">
-            Fly into {dest.airportCode}: flights, car & first night
-            <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
-        )}
-        {noRes && (
-          <Link to="/no-reservation/$slug" params={{ slug: dest.slug }} className={pill}>
-            No reservation? Entry rules & backup plans <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
-        )}
-        {rv && (
-          <Link to="/rv-camping/$slug" params={{ slug: dest.slug }} className={pill}>
-            By RV: campgrounds & RV parks <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
-        )}
-        {gatewayTrips.map((c) => (
-          <Link key={c.slug} to="/corridors/$slug" params={{ slug: c.slug }} className={pill}>
-            Airport road trip: {c.title} <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
-        ))}
-        {loops.map((l) => (
-          <Link key={l.slug} to="/road-trips/$slug" params={{ slug: l.slug }} className={pill}>
-            Road trip: {l.title} <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
-        ))}
-        {(data ?? []).map((p) => (
-          <Link
-            key={p.id}
-            to="/$landing"
-            params={{ landing: p.path.slice(1) }}
-            className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground hover:bg-muted"
-          >
-            {dest.name.replace(" National Park", "")}: {LANDING_TYPE_LABEL[p.pageType] ?? p.pageType}
-            <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
-        ))}
-      </div>
-    </section>
-  );
-}
