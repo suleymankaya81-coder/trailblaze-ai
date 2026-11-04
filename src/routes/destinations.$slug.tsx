@@ -225,7 +225,6 @@ function DestinationPage() {
    1 — HERO
 ========================================================= */
 function Hero({ dest }: { dest: DestinationView }) {
-  const [region, sub] = dest.region.split(",").map((s) => s.trim());
   const credit = parsePhotoCredit(dest.photoCredit).hero;
   const source = credit?.sourceUrl ?? commonsFilePage(dest.heroImage);
 

@@ -8,6 +8,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { getDestinationCovers } from "@/lib/data/destinations.functions";
 import { CORRIDORS, CORRIDOR_AREAS, corridorArea } from "@/lib/seo/corridors";
 import { HUB_SEO } from "@/lib/seo/hubSeo";
+import { GATEWAY_TRIPS, HOME, ROAD_TRIPS, breadcrumbScript } from "@/lib/seo/breadcrumbs";
 
 const title = HUB_SEO.corridors.title;
 const description = HUB_SEO.corridors.description;
@@ -26,6 +27,7 @@ export const Route = createFileRoute("/corridors/")({
       ...((image => image?.startsWith("https://") ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : [])((() => { const stops = CORRIDORS.filter(c => !c.pilot)[0]?.stops ?? []; const slug = stops.slice(1).find(s => loaderData?.[s]) ?? stops.find(s => loaderData?.[s]); return slug ? loaderData?.[slug] : undefined; })())),
     ],
     links: [{ rel: "canonical", href: url }],
+    scripts: [breadcrumbScript([HOME, ROAD_TRIPS, GATEWAY_TRIPS])],
   }),
   loader: () => getDestinationCovers({ data: { slugs: [...new Set(CORRIDORS.flatMap((c) => c.stops))] } }),
   component: Page,
@@ -38,7 +40,7 @@ function Page() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <PageHero image={coverFor(list[0]?.stops ?? [])} kicker="Road Trips · From an airport" title="USA road trip loops from arrival airports" intro="Each route starts and ends at a major U.S. airport, so you return the car where you picked it up. Built for visitors arriving from overseas.">
+      <PageHero crumbs={[HOME, ROAD_TRIPS, GATEWAY_TRIPS]} image={coverFor(list[0]?.stops ?? [])} kicker="Road Trips · From an airport" title="USA road trip loops from arrival airports" intro="Each route starts and ends at a major U.S. airport, so you return the car where you picked it up. Built for visitors arriving from overseas.">
         <nav aria-label="Road trip types" className="flex flex-wrap gap-2">
           <span className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground">From an airport ({CORRIDORS.length})</span>
           <Link to="/road-trips" hash="loops" className="rounded-full bg-card px-5 py-2.5 text-sm font-semibold text-foreground">Multi-park loops</Link>

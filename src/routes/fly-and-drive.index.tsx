@@ -4,6 +4,7 @@ import { GuideHub } from "@/components/guides/GuideHub";
 import { getHubEntries } from "@/lib/data/guideHubs.functions";
 import { SITE } from "@/lib/seo/flyDrive";
 import { HUB_SEO } from "@/lib/seo/hubSeo";
+import { breadcrumbScript, hubCrumbs } from "@/lib/seo/breadcrumbs";
 
 const title = HUB_SEO.flyAndDrive.title;
 const description = HUB_SEO.flyAndDrive.description;
@@ -19,6 +20,7 @@ export const Route = createFileRoute("/fly-and-drive/")({
       { property: "og:url", content: `${SITE}/fly-and-drive` },
     ],
     links: [{ rel: "canonical", href: `${SITE}/fly-and-drive` }],
+    scripts: [breadcrumbScript(hubCrumbs("Fly & drive guides", "/fly-and-drive"))],
   }),
   component: () => <GuideHub family="fly-and-drive" kicker="Fly & Drive" title="Fly & drive guides" intro="Pick a place to see the closest airport, the drive time, car rental and the first night's stay." entries={Route.useLoaderData()} />,
 });

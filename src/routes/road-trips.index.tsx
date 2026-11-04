@@ -11,6 +11,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { LOOPS } from "@/lib/seo/guides";
 import { SITE } from "@/lib/seo/flyDrive";
 import { HUB_SEO } from "@/lib/seo/hubSeo";
+import { HOME, ROAD_TRIPS, breadcrumbScript } from "@/lib/seo/breadcrumbs";
 
 const title = HUB_SEO.roadTrips.title;
 const description = HUB_SEO.roadTrips.description;
@@ -28,6 +29,7 @@ export const Route = createFileRoute("/road-trips/")({
       ...((image => image?.startsWith("https://") ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : [])(Object.values(loaderData ?? {})[0])),
     ],
     links: [{ rel: "canonical", href: `${SITE}/road-trips` }],
+    scripts: [breadcrumbScript([HOME, ROAD_TRIPS])],
   }),
   loader: () => getDestinationCovers({ data: { slugs: [...new Set(LOOPS.flatMap((l) => l.stops))] } }),
   component: Page,
@@ -38,7 +40,7 @@ function Page() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <PageHero image={Object.values(covers)[0]} kicker="Road trips" title="All road trips in one place" intro="Self-drive loops linking parks and towns, with suggested days per stop and approximate distances. Flying in? Start from an airport loop.">
+      <PageHero crumbs={[HOME, ROAD_TRIPS]} image={Object.values(covers)[0]} kicker="Road trips" title="All road trips in one place" intro="Self-drive loops linking parks and towns, with suggested days per stop and approximate distances. Flying in? Start from an airport loop.">
         <nav aria-label="Road trip types" className="flex flex-wrap gap-2">
           <Link to="/corridors" className="rounded-full bg-card px-5 py-2.5 text-sm font-semibold text-foreground">From an airport (24)</Link>
           <a href="#loops" className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground">Multi-park loops ({LOOPS.length})</a>

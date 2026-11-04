@@ -12,6 +12,7 @@ import { CORRIDORS } from "@/lib/seo/corridors";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { PageHero } from "@/components/site/PageHero";
+import { HOME, TRIP_GUIDES, breadcrumbScript } from "@/lib/seo/breadcrumbs";
 import { getDestinationCovers } from "@/lib/data/destinations.functions";
 import { SITE } from "@/lib/seo/flyDrive";
 import { HUB_SEO } from "@/lib/seo/hubSeo";
@@ -38,6 +39,7 @@ export const Route = createFileRoute("/trip-guides")({
       { property: "og:url", content: `${SITE}/trip-guides` },
     ],
     links: [{ rel: "canonical", href: `${SITE}/trip-guides` }],
+    scripts: [breadcrumbScript([HOME, TRIP_GUIDES])],
   }),
   loader: () => getDestinationCovers({ data: { slugs: FAMILIES.map((f) => f.cover) } }),
   component: Page,
@@ -48,7 +50,7 @@ function Page() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <PageHero image={covers["yellowstone"] ?? Object.values(covers)[0]} kicker="Trip Guides" title="Find the guide for your trip" intro="Choose how you're travelling and we'll show every matching guide." />
+      <PageHero crumbs={[HOME, TRIP_GUIDES]} image={covers["yellowstone"] ?? Object.values(covers)[0]} kicker="Trip Guides" title="Find the guide for your trip" intro="Choose how you're travelling and we'll show every matching guide." />
       <main className="container-page py-10 md:py-14">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {FAMILIES.map((f) => (
