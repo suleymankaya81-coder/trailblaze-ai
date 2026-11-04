@@ -82,7 +82,8 @@ export const Route = createFileRoute("/$landing")({
     const coverImage = landingCoverAssets[page.path]
       ? `${BASE}${landingCoverAssets[page.path]}`
       : page.coverImage ?? destination.heroImage;
-    const jsonLd = JSON.stringify([
+    // Passed as an object: "script:ld+json" serializes it once (a string would be double-encoded).
+    const jsonLd = [
       {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -102,7 +103,7 @@ export const Route = createFileRoute("/$landing")({
             mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
           }]
         : []),
-    ]);
+    ];
     return {
       meta: [
         { title },
