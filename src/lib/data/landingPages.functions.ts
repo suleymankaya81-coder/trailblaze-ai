@@ -102,6 +102,24 @@ export const getPublicLandingPagesForDestination = createServerFn({ method: "GET
     return (rows ?? []).map(toView);
   });
 
+export type LandingLink = { path: string; pageType: string };
+
+// Lightweight list for internal links: published + indexable pages only, so
+// crawlers are not sent to pages we ask them not to index.
+export const getLandingLinksForDestination = createServerFn({ method: "GET" })
+  .inputValidator((input: unknown) => z.object({ destinationId: z.string().uuid() }).parse(input))
+  .handler(async ({ data }): Promise<LandingLink[]> => {
+    const { data: rows, error } = await supabase
+      .from("seo_landing_pages")
+      .select("path, page_type")
+      .eq("destination_id", data.destinationId)
+      .eq("status", "published")
+      .eq("indexable", true)
+      .order("priority", { ascending: false });
+    if (error) return [];
+    return (rows ?? []).map((r) => ({ path: r.path, pageType: r.page_type }));
+  });
+
 export type LandingBundle = {
   page: LandingPageView;
   h1: string;
