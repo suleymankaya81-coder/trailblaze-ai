@@ -1,4 +1,5 @@
 import type { Corridor } from "./corridors";
+import { GATEWAY_TRIPS, HOME, ROAD_TRIPS, breadcrumbJsonLd, type Crumb } from "./breadcrumbs";
 
 import { corridorDescription, corridorKeyword, corridorTitle } from "./routeSeo";
 
@@ -19,6 +20,11 @@ export function corridorSearchDescription(corridor: Corridor, stopNames: string[
 type VisibleStop = { slug: string; name: string };
 
 // Describe the displayed self-drive suggestion, never a packaged tour or live inventory.
+/** Home › Road Trips › Gateway Road Trips › route — shared by the visible trail. */
+export function corridorCrumbs(corridor: Corridor): Crumb[] {
+  return [HOME, ROAD_TRIPS, GATEWAY_TRIPS, { name: corridorSearchTitle(corridor), path: `/corridors/${corridor.slug}` }];
+}
+
 export function buildCorridorJsonLd(corridor: Corridor, stops: VisibleStop[], pageUrl: string) {
   const first = stops[0];
   const itinerary = stops.map((stop) => ({
@@ -43,14 +49,7 @@ export function buildCorridorJsonLd(corridor: Corridor, stops: VisibleStop[], pa
           itemListElement: itinerary.map((item, i) => ({ "@type": "ListItem", position: i + 1, item })),
         },
       },
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "MiniaLife", item: "https://minialife.com/" },
-          { "@type": "ListItem", position: 2, name: "Gateway Road Trips", item: "https://minialife.com/corridors" },
-          { "@type": "ListItem", position: 3, name: corridorSearchTitle(corridor), item: pageUrl },
-        ],
-      },
+      breadcrumbJsonLd(corridorCrumbs(corridor)),
     ],
   };
 }

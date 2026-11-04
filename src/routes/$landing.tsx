@@ -8,7 +8,7 @@ import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
-import { ArrowRight, CheckCircle2, ChevronRight } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 import { Footer } from "@/components/site/Footer";
 import { ViatorPlaceBlock } from "@/components/destination/ViatorPlaceBlock";
@@ -26,6 +26,8 @@ import { DESCRIPTION_MAX, TITLE_MAX, fitText } from "@/lib/seo/routeSeo";
 import { landingFaqs } from "@/lib/seo/landingFaqs";
 import { GuideFaq } from "@/components/guides/GuideSections";
 import { PlanDeeper } from "@/components/guides/PlanDeeper";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { breadcrumbJsonLd, placeGuideCrumbs } from "@/lib/seo/breadcrumbs";
 
 const BASE = "https://minialife.com";
 
@@ -92,15 +94,7 @@ export const Route = createFileRoute("/$landing")({
         publisher: { "@type": "Organization", name: "MiniaLife" },
         articleSection: sections.map((s) => s.heading),
       },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: `${BASE}/` },
-          { "@type": "ListItem", position: 2, name: destination.name, item: `${BASE}/destinations/${destination.slug}` },
-          { "@type": "ListItem", position: 3, name: h1, item: url },
-        ],
-      },
+      { "@context": "https://schema.org", ...breadcrumbJsonLd(placeGuideCrumbs(destination, h1, page.path)) },
       ...(faqs.length
         ? [{
             "@context": "https://schema.org",
@@ -184,15 +178,7 @@ function LandingPage() {
         )}
         {coverImage && <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-transparent" />}
         <div className={`container-page relative ${coverImage ? "flex min-h-[340px] flex-col justify-end pb-8 md:min-h-[420px]" : ""}`}>
-          <nav className="mb-3 flex flex-wrap items-center gap-1 text-xs text-off-white/80">
-            <Link to="/" className="hover:underline">Home</Link>
-            <ChevronRight className="h-3 w-3" />
-            <Link to="/destinations/$slug" params={{ slug: destination.slug }} className="hover:underline">
-              {destination.name}
-            </Link>
-            <ChevronRight className="h-3 w-3" />
-            <span>{label}</span>
-          </nav>
+          <Breadcrumbs crumbs={placeGuideCrumbs(destination, label, page.path)} className="mb-3 text-off-white/80" />
           <h1 className="max-w-3xl font-display text-[34px] leading-tight text-off-white md:text-[56px]">{h1}</h1>
         </div>
       </section>

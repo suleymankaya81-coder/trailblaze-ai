@@ -1,3 +1,4 @@
+import { breadcrumbJsonLd, destinationCrumbs } from "./breadcrumbs";
 import type { DestinationView } from "@/lib/data/destinations.functions";
 import { commonsFilePage, parsePhotoCredit, toAbsoluteImageUrl, type ImageCredit } from "./imageCredit";
 
@@ -54,14 +55,7 @@ export function buildDestinationJsonLd(dest: DestinationView, pageUrl: string, f
     publisher: { "@type": "Organization", name: "MiniaLife", url: "https://minialife.com/" },
     inLanguage: "en",
   };
-  const graph: Record<string, unknown>[] = [destination, webPage, {
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "MiniaLife", item: "https://minialife.com/" },
-      { "@type": "ListItem", position: 2, name: "Destinations", item: "https://minialife.com/destinations" },
-      { "@type": "ListItem", position: 3, name: dest.name, item: pageUrl },
-    ],
-  }];
+  const graph: Record<string, unknown>[] = [destination, webPage, breadcrumbJsonLd(destinationCrumbs(dest))];
   const plan = dest.travelPlan;
   if (plan) {
     graph.push({

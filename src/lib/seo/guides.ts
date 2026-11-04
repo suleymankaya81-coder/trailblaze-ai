@@ -1,6 +1,7 @@
 // Pure helpers for the Phase B guide families:
 //   /no-reservation/{destination}, /road-trips/{loop}, /rv-camping/{destination}
 // Built only from stored destination data and the reviewed loops file — no AI per page.
+import { HOME, ROAD_TRIPS, breadcrumbJsonLd, placeGuideCrumbs } from "./breadcrumbs";
 import loops from "@/data/loops.json";
 import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 import { SITE, formatDriveShort, type Faq } from "@/lib/seo/flyDrive";
@@ -135,10 +136,6 @@ export function loopFaqs(loop: Loop, stops: LoopStop[]): Faq[] {
 }
 
 // ---------- JSON-LD ----------
-const breadcrumb = (items: [string, string][]) => ({
-  "@type": "BreadcrumbList",
-  itemListElement: items.map(([name, item], i) => ({ "@type": "ListItem", position: i + 1, name, item })),
-});
 const faqPage = (faqs: Faq[]) => ({
   "@type": "FAQPage",
   mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
@@ -149,7 +146,7 @@ export function destGuideJsonLd(opts: { name: string; slug: string; heroImage: s
     "@context": "https://schema.org",
     "@graph": [
       { "@type": "Article", headline: opts.title, url: opts.url, about: { "@type": "TouristDestination", name: opts.name, url: `${SITE}/destinations/${opts.slug}` }, ...(opts.heroImage.startsWith("https://") ? { image: opts.heroImage } : {}) },
-      breadcrumb([["Home", SITE], [opts.name, `${SITE}/destinations/${opts.slug}`], [opts.label, opts.url]]),
+      breadcrumbJsonLd(placeGuideCrumbs(opts, opts.label, opts.url.replace(SITE, ""))),
       faqPage(opts.faqs),
     ],
   };
@@ -172,7 +169,7 @@ export function loopJsonLd(loop: Loop, stops: LoopStop[], faqs: Faq[], url: stri
           itemListElement: stops.map((s, i) => ({ "@type": "ListItem", position: i + 1, item: { "@type": "TouristDestination", name: s.name, url: `${SITE}/destinations/${s.slug}` } })),
         },
       },
-      breadcrumb([["Home", SITE], ["Road trips", `${SITE}/road-trips`], [loop.title, url]]),
+      breadcrumbJsonLd([HOME, ROAD_TRIPS, { name: loop.title, path: `/road-trips/${loop.slug}` }]),
       faqPage(faqs),
     ],
   };
