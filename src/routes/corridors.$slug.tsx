@@ -12,6 +12,7 @@ import { CalendarDays, Globe2, MapPin, Plane, Route as RouteIcon, ShieldAlert } 
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
+import { MoreRoutes } from "@/components/guides/MoreRoutes";
 import { GuideFaq, GuideHero, GuideSection, HeroChip } from "@/components/guides/GuideSections";
 import { Skeleton } from "@/components/ui/skeleton";
 import { getLoopStops } from "@/lib/data/guides.functions";
@@ -140,6 +141,7 @@ function Page() {
         <section className="container-page py-10"><TripEssentials context={{ slug: corridor.slug, name: corridor.title, places: stops.slice(1), topic: corridor.intro }} /></section>
 
         <GuideSection title="Quick answers"><GuideFaq faqs={corridor.faqs} /></GuideSection>
+        <MoreRoutes stops={corridor.stops} currentCorridor={corridor.slug} />
       </main>
       <Footer />
     </div>
