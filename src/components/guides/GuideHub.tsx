@@ -1,5 +1,4 @@
 import { useMemo, useState } from "react";
-import { Link } from "@tanstack/react-router";
 import { Search } from "lucide-react";
 import { PlaceCard } from "@/components/ui-kit";
 import mapImg from "@/assets/thumbs/map.jpg";
@@ -12,6 +11,7 @@ import { formatDriveShort } from "@/lib/seo/flyDrive";
 import { US_REGIONS, type UsRegionKey } from "@/lib/data/usRegions";
 import { FilterPanel } from "@/components/site/FilterPanel";
 import { Button } from "@/components/ui/button";
+import { hubCrumbs } from "@/lib/seo/breadcrumbs";
 
 const PAGE = 24;
 const regionOf = (state: string) => (Object.keys(US_REGIONS) as UsRegionKey[]).find((k) => (US_REGIONS[k].states as readonly string[]).includes(state));
@@ -32,7 +32,7 @@ export function GuideHub({ family, kicker, title, intro, entries }: { family: Hu
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <PageHero image={heroImage} kicker={<><Link to="/trip-guides" className="hover:underline">Trip Guides</Link> · {kicker}</>} title={title} intro={intro}>
+      <PageHero image={heroImage} crumbs={hubCrumbs(title, `/${family}`)} kicker={kicker} title={title} intro={intro}>
         <label className="relative block max-w-xl">
           <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <input value={q} onChange={(e) => { setQ(e.target.value); reset(); }} placeholder={family === "fly-and-drive" ? "Search a place or airport code" : "Search a place"} aria-label="Search guides" className="h-14 w-full rounded-full border border-border bg-card pl-11 pr-4 text-sm text-foreground shadow-soft outline-none focus:border-forest" />

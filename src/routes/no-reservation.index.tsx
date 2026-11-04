@@ -4,6 +4,7 @@ import { GuideHub } from "@/components/guides/GuideHub";
 import { getHubEntries } from "@/lib/data/guideHubs.functions";
 import { SITE } from "@/lib/seo/flyDrive";
 import { HUB_SEO } from "@/lib/seo/hubSeo";
+import { breadcrumbScript, hubCrumbs } from "@/lib/seo/breadcrumbs";
 
 const title = HUB_SEO.noReservation.title;
 const description = HUB_SEO.noReservation.description;
@@ -19,6 +20,7 @@ export const Route = createFileRoute("/no-reservation/")({
       { property: "og:url", content: `${SITE}/no-reservation` },
     ],
     links: [{ rel: "canonical", href: `${SITE}/no-reservation` }],
+    scripts: [breadcrumbScript(hubCrumbs("No reservation? Entry rules & backup plans", "/no-reservation"))],
   }),
   component: () => <GuideHub family="no-reservation" kicker="No Reservation" title="No reservation? Entry rules & backup plans" intro="Places where booking matters — what the rules are, how to get in without a reservation, and where to go instead." entries={Route.useLoaderData()} />,
 });

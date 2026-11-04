@@ -16,6 +16,7 @@ import { ArrivalPlan } from "@/components/flydrive/FlyDriveSections";
 import { DestTile, FullGuideLink, GuideFaq, GuideHero, GuideSection, HeroChip, ReservationPanel } from "@/components/guides/GuideSections";
 import { getDestinationPageData } from "@/lib/data/destinations.functions";
 import { getLandingLinksForDestination } from "@/lib/data/landingPages.functions";
+import { placeGuideCrumbs } from "@/lib/seo/breadcrumbs";
 import { PlanDeeper } from "@/components/guides/PlanDeeper";
 import { getGuideAlternatives } from "@/lib/data/guides.functions";
 import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
@@ -70,7 +71,7 @@ function Page() {
           image={dest.heroImage}
           kicker="No-reservation guide"
           title={`${dest.name} without a reservation`}
-          crumbs={<><Link to="/" className="hover:underline">Home</Link> / <Link to="/destinations/$slug" params={{ slug: dest.slug }} className="hover:underline">{dest.name}</Link> / No reservation</>}
+          crumbs={placeGuideCrumbs(dest, "No reservation", `/no-reservation/${dest.slug}`)}
         >
           <HeroChip image={roadImg}>{dest.permitLevel === "high" ? "Bookings: high demand" : "Bookings: moderate demand"}</HeroChip>
           {dest.driveMinutes != null && <HeroChip image={roadImg}>{formatDriveShort(dest.driveMinutes)} from {dest.airportCode}</HeroChip>}

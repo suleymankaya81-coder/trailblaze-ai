@@ -1,3 +1,5 @@
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { placeGuideCrumbs } from "@/lib/seo/breadcrumbs";
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
 import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { Link } from "@tanstack/react-router";
@@ -14,7 +16,7 @@ import { buildVrboSearchUrl } from "@/lib/affiliates/vrbo";
 import { servicePhoto } from "@/lib/data/servicePhotos";
 import type { Photo } from "@/lib/data/destinationCardPhotos";
 import { permitFallback } from "@/components/destination/TripRadar";
-import { formatDriveShort, type Faq } from "@/lib/seo/flyDrive";
+import { flyDriveSlug, formatDriveShort, type Faq } from "@/lib/seo/flyDrive";
 import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 import { airportRentalsLink } from "@/lib/affiliates/webjet";
 import { airportRentalPhoto } from "@/lib/data/servicePhotos";
@@ -35,10 +37,7 @@ export function FlyDriveHero({ dest }: { dest: DestinationView }) {
       )}
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink/85 via-ink/45 to-ink/20" />
       <div className="container-page py-12 md:py-20">
-        <nav className="mb-6 text-xs text-off-white/80">
-          <Link to="/" className="hover:underline">Home</Link> /{" "}
-          <Link to="/destinations/$slug" params={{ slug: dest.slug }} className="hover:underline">{dest.name}</Link> / Fly & Drive
-        </nav>
+        <Breadcrumbs crumbs={placeGuideCrumbs(dest, "Fly & Drive", `/fly-and-drive/${flyDriveSlug(dest) ?? dest.slug}`)} className="mb-6 text-off-white/80" />
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-off-white/80">Fly & Drive guide</p>
         <h1 className="mt-3 max-w-3xl font-display text-[34px] font-semibold leading-tight text-off-white md:text-[56px]">
           Fly into {dest.airportCode}, drive to {dest.name}

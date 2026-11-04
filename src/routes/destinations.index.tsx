@@ -5,6 +5,7 @@ import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { PlaceCard } from "@/components/ui-kit";
 import { PageHero } from "@/components/site/PageHero";
+import { DESTINATIONS, HOME, breadcrumbScript } from "@/lib/seo/breadcrumbs";
 import {
   DESTINATIONS_PAGE_SIZE,
   getDestinationsList,
@@ -51,6 +52,7 @@ export const Route = createFileRoute("/destinations/")({
         { property: "og:url", content: "https://minialife.com/destinations" },
       ],
       links: [{ rel: "canonical", href: "https://minialife.com/destinations" }],
+      scripts: [breadcrumbScript([HOME, DESTINATIONS])],
     };
   },
   component: DestinationsIndexPage,
@@ -79,7 +81,7 @@ function DestinationsIndexPage() {
   return (
     <div className="bg-background">
       <Header />
-      <PageHero image={destinations[0]?.heroImage} kicker={`${total} destination${total === 1 ? "" : "s"}`} title={activeTag ? activeTag.label : "All destinations"} intro="National parks, outdoor towns and scenic places, each with a day-by-day plan, arrival airport and where to stay." />
+      <PageHero crumbs={[HOME, DESTINATIONS]} image={destinations[0]?.heroImage} kicker={`${total} destination${total === 1 ? "" : "s"}`} title={activeTag ? activeTag.label : "All destinations"} intro="National parks, outdoor towns and scenic places, each with a day-by-day plan, arrival airport and where to stay." />
       <main className="container-page py-10 md:py-14">
         <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 md:mx-0 md:flex-wrap md:px-0">
           <Link to="/destinations" className={pageLinkClass(!tag)}>

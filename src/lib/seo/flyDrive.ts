@@ -1,6 +1,7 @@
 // Pure helpers for /fly-and-drive/{airport-city}-{iata}-{destination} pages.
 // Built only from stored destination data — no AI generation per page.
 import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
+import { breadcrumbJsonLd, placeGuideCrumbs } from "./breadcrumbs";
 import { BRAND, DESCRIPTION_MAX, TITLE_MAX, fitText } from "./routeSeo";
 
 export const SITE = "https://minialife.com";
@@ -112,14 +113,7 @@ export function flyDriveJsonLd(d: FlyDriveInput & { heroImage: string; faqs: Faq
           ],
         },
       },
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: SITE },
-          { "@type": "ListItem", position: 2, name: d.name, item: `${SITE}/destinations/${d.slug}` },
-          { "@type": "ListItem", position: 3, name: "Fly & Drive", item: url },
-        ],
-      },
+      breadcrumbJsonLd(placeGuideCrumbs(d, "Fly & Drive", url.replace(SITE, ""))),
       {
         "@type": "FAQPage",
         mainEntity: d.faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),

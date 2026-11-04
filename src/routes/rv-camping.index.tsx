@@ -4,6 +4,7 @@ import { GuideHub } from "@/components/guides/GuideHub";
 import { getHubEntries } from "@/lib/data/guideHubs.functions";
 import { SITE } from "@/lib/seo/flyDrive";
 import { HUB_SEO } from "@/lib/seo/hubSeo";
+import { breadcrumbScript, hubCrumbs } from "@/lib/seo/breadcrumbs";
 
 const title = HUB_SEO.rvCamping.title;
 const description = HUB_SEO.rvCamping.description;
@@ -19,6 +20,7 @@ export const Route = createFileRoute("/rv-camping/")({
       { property: "og:url", content: `${SITE}/rv-camping` },
     ],
     links: [{ rel: "canonical", href: `${SITE}/rv-camping` }],
+    scripts: [breadcrumbScript(hubCrumbs("RV & camping guides", "/rv-camping"))],
   }),
   component: () => <GuideHub family="rv-camping" kicker="RV & Camping" title="RV & camping guides" intro="Places that work well by RV or campervan, with campgrounds, RV parks and rental options." entries={Route.useLoaderData()} />,
 });
