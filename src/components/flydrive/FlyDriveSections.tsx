@@ -16,7 +16,7 @@ import { buildVrboSearchUrl } from "@/lib/affiliates/vrbo";
 import { servicePhoto } from "@/lib/data/servicePhotos";
 import type { Photo } from "@/lib/data/destinationCardPhotos";
 import { permitFallback } from "@/components/destination/TripRadar";
-import { formatDriveShort, type Faq } from "@/lib/seo/flyDrive";
+import { flyDriveSlug, formatDriveShort, type Faq } from "@/lib/seo/flyDrive";
 import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 import { airportRentalsLink } from "@/lib/affiliates/webjet";
 import { airportRentalPhoto } from "@/lib/data/servicePhotos";
