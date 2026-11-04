@@ -25,6 +25,7 @@ import { factItems, QuickFacts, SeasonPicker, SectionBlock, seasonOf, type Landi
 import { DESCRIPTION_MAX, TITLE_MAX, fitText } from "@/lib/seo/routeSeo";
 import { landingFaqs } from "@/lib/seo/landingFaqs";
 import { GuideFaq } from "@/components/guides/GuideSections";
+import { PlanDeeper } from "@/components/guides/PlanDeeper";
 
 const BASE = "https://minialife.com";
 
@@ -63,7 +64,7 @@ export const Route = createFileRoute("/$landing")({
       permitLevel: dest?.permitLevel ?? null,
       dailyBudget: dest?.avgDailyBudget ?? null,
     };
-    return { bundle, offers, photos, facts };
+    return { bundle, offers, photos, facts, dest };
   },
   head: ({ loaderData }) => {
     if (!loaderData) {
@@ -158,7 +159,8 @@ function ctaLead(pageType: string, category: string) {
 }
 
 function LandingPage() {
-  const { bundle, offers, photos, facts } = Route.useLoaderData() as {
+  const { bundle, offers, photos, facts, dest } = Route.useLoaderData() as {
+    dest: Awaited<ReturnType<typeof getDestinationPageData>>;
     bundle: LandingBundle; offers: OfferView[]; photos: (Photo | null)[]; facts: LandingFacts;
   };
   const rest = offers.slice(bundle.sections.length);
@@ -285,6 +287,7 @@ function LandingPage() {
           )}
         </aside>
       </main>
+      {dest && <div className="container-page pb-8"><PlanDeeper dest={dest} landingLinks={[]} current="landing" /></div>}
       <div className="container-page pb-14"><TripEssentials context={{ slug: destination.slug, name: destination.name, places: [destination], topic: `${h1} ${page.introContent ?? ""} ${sections.map(s => s.heading).join(" ")}` }} /></div>
       <Footer />
     </div>
