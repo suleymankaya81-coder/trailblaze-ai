@@ -108,7 +108,7 @@ export function DestinationPageView({ dest, landingLinks, crumbs }: { dest: Dest
     <div className="bg-beige/40">
       <Header />
 
-      <Hero dest={dest} />
+      <Hero dest={dest} crumbs={crumbs} />
       <TripSnapshot trip={dest} />
       <TripQuickNav />
 
@@ -154,7 +154,7 @@ export function DestinationPageView({ dest, landingLinks, crumbs }: { dest: Dest
 /* =========================================================
    1 — HERO
 ========================================================= */
-function Hero({ dest }: { dest: DestinationView }) {
+function Hero({ dest, crumbs }: { dest: DestinationView; crumbs?: Crumb[] }) {
   const credit = parsePhotoCredit(dest.photoCredit).hero;
   const source = credit?.sourceUrl ?? commonsFilePage(dest.heroImage);
 
@@ -180,7 +180,7 @@ function Hero({ dest }: { dest: DestinationView }) {
 
       <div className="container-page relative grid gap-10 py-14 md:py-20 ">
         <div className="text-off-white">
-          <Breadcrumbs crumbs={destinationCrumbs(dest)} className="text-off-white/75" />
+          <Breadcrumbs crumbs={crumbs ?? destinationCrumbs(dest)} className="text-off-white/75" />
 
           <h1 className="mt-5 max-w-xl font-display text-4xl leading-[1.05] md:text-6xl">
             {dest.name}
