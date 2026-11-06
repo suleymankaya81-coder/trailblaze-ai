@@ -74,7 +74,7 @@ export function PlanDeeper({
         ))}
         {landing.map((p) => (
           <Link key={p.path} to="/$landing" params={{ landing: p.path.slice(1) }} className={pill}>
-            {shortName}: {LANDING_TYPE_LABEL[p.pageType] ?? p.pageType} <ArrowRight className="h-3.5 w-3.5" />
+            {shortName}: <T>{LANDING_TYPE_LABEL[p.pageType] ?? p.pageType}</T> <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         ))}
       </div>
