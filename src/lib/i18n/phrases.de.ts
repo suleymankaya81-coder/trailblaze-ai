@@ -289,10 +289,22 @@ export const DE_PHRASES: Record<string, string> = {
   "Travel documents & cards": "Reisedokumente & Karten",
   "Uneven walking trails": "Unebene Wanderwege",
   "Waterfront day trips": "Tagesausflüge ans Wasser",
+  "Arrival airport": "Ankunftsflughafen",
+  "Suggested stay": "Empfohlene Dauer",
+  "Reservation demand": "Reservierungsbedarf",
+  "Vehicle notes": "Fahrzeughinweise",
+  "Best season": "Beste Saison",
+  "check entry notes": "Einlasshinweise prüfen",
+  "check current rules": "aktuelle Regeln prüfen",
+  "check each guide": "jeden Reiseführer prüfen",
+  "High": "Hoch",
+  "Lower": "Niedriger",
+  "Reservations": "Reservierungen",
 };
 
 // Phrases with a variable part ($1, $2 are kept as-is).
 export const DE_PATTERNS: [RegExp, string][] = [
+  [/^recent fares from ~\$(\d+) \(estimate\)$/, "aktuelle Preise ab ca. $$$1 (Schätzung)"],
   [/^(\d+)X optical zoom$/, "$1-facher optischer Zoom"],
   [/^(\d+)m IR range\. Check park rules before using lights at night\.$/, "$1 m IR-Reichweite. Vor nächtlicher Lichtnutzung Parkregeln prüfen."],
   [/^Explore guided activities around (.+)\. Check the meeting point, dates and availability on Viator before booking\.$/, "Geführte Aktivitäten rund um $1. Prüfen Sie Treffpunkt, Termine und Verfügbarkeit auf Viator vor der Buchung."],
@@ -319,7 +331,6 @@ export const DE_PATTERNS: [RegExp, string][] = [
   [/^Fly into (.+): flights, car & first night$/, "Anreise nach $1: Flüge, Auto & erste Nacht"],
   [/^Recent fares from ~\$(\d+) \(from (.+)\) · estimate$/, "Aktuelle Preise ab ca. $$$1 (ab $2) · Schätzung"],
   [/^Recent fares from ~\$(\d+)(.*)$/i, "Aktuelle Preise ab ca. $$$1$2"],
-  [/^recent fares from ~\$(\d+) \(estimate\)$/, "aktuelle Preise ab ca. $$$1 (Schätzung)"],
   [/^(\d.*) drive$/, "$1 Fahrt"],
   [/^Est\. from \$(\d+)\/day$/, "Ca. ab $1 $/Tag"],
   [/^Est\. from \$(\d+)\/night$/, "Ca. ab $1 $/Nacht"],
