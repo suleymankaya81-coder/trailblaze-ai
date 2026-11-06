@@ -296,7 +296,7 @@ export const DE_PATTERNS: [RegExp, string][] = [
   [/^Recent fares from ~\$(\d+) \(from (.+)\) · estimate$/, "Aktuelle Preise ab ca. $$$1 (ab $2) · Schätzung"],
   [/^Recent fares from ~\$(\d+)(.*)$/i, "Aktuelle Preise ab ca. $$$1$2"],
   [/^recent fares from ~\$(\d+) \(estimate\)$/, "aktuelle Preise ab ca. $$$1 (Schätzung)"],
-  [/^(.+) drive$/, "$1 Fahrt"],
+  [/^(\d.*) drive$/, "$1 Fahrt"],
   [/^(.+) · estimate$/, "$1 · Schätzung"],
   [/^Est\. from \$(\d+)\/day(.*)$/, "Ca. ab $1 $/Tag$2"],
   [/^Est\. from \$(\d+)\/night(.*)$/, "Ca. ab $1 $/Nacht$2"],
