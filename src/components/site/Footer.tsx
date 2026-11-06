@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Link } from "@tanstack/react-router";
 import logoStacked from "@/assets/logos/minialife-stacked-mixedcase-trimmed.png";
 
@@ -75,7 +76,7 @@ export function Footer() {
 
         <div className="mt-6 flex flex-col gap-2 text-xs text-muted-foreground md:flex-row md:justify-between">
           <span>© {new Date().getFullYear()} MiniaLife. All rights reserved.</span>
-          <span>Crafted for the great outdoors.</span>
+          <span className="flex items-center gap-3">Crafted for the great outdoors. <LanguageSwitcher /></span>
         </div>
       </div>
     </footer>
