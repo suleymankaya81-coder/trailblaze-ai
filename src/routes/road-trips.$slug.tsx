@@ -108,7 +108,7 @@ export function Page(): React.ReactElement {
               const leg = i > 0 ? Math.round(haversineMiles([stops[i - 1].lng, stops[i - 1].lat], [s.lng, s.lat])) : null;
               return (
                 <li key={s.slug}>
-                  {leg != null && <p className="mb-2 ml-6 flex items-center gap-2 text-xs text-muted-foreground"><RouteIcon className="h-3.5 w-3.5" /> ~{leg} mi straight-line from {stops[i - 1].name}</p>}
+                  {leg != null && <p className="mb-2 ml-6 flex items-center gap-2 text-xs text-muted-foreground"><RouteIcon className="h-3.5 w-3.5" /> <T>{`~${leg} mi straight-line from ${stops[i - 1].name}`}</T></p>}
                   <Link to="/destinations/$slug" params={{ slug: s.slug }} className="group grid min-h-12 grid-cols-[80px_minmax(0,1fr)] gap-4 border-b border-border py-4 transition sm:grid-cols-[120px_minmax(0,1fr)]">
                     <div className="relative aspect-square overflow-hidden rounded-lg bg-muted">
                       {s.heroImage && <img src={s.heroImage} alt={s.name} loading="lazy" className="h-full w-full object-cover" />}

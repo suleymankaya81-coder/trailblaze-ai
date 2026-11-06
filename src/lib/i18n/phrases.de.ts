@@ -306,6 +306,13 @@ export const DE_PHRASES: Record<string, string> = {
 
 // Phrases with a variable part ($1, $2 are kept as-is).
 export const DE_PATTERNS: [RegExp, string][] = [
+  [/^~(\d+) mi straight-line from (.+)$/, "ca. $1 mi (Luftlinie) von $2"],
+  [/^Return to (.+) and drop the car at ([A-Z]{3})\.$/, "Zurück nach $1, Mietwagen in $2 abgeben."],
+  [/^Step (\d+) · $/, "Schritt $1 · "],
+  [/^Show more \((\d+) left\)$/, "Mehr anzeigen (noch $1)"],
+  [/^Compare suppliers at ([A-Z]{3})$/, "Anbieter in $1 vergleichen"],
+  [/^(.+) Loop from (.+)$/, "$1 Rundreise ab $2"],
+  [/^(.+) from ([A-Z][\w .,]+)$/, "$1 ab $2"],
   [/^recent fares from ~\$(\d+) \(estimate\)$/, "aktuelle Preise ab ca. $$$1 (Schätzung)"],
   [/^(\d+)X optical zoom$/, "$1-facher optischer Zoom"],
   [/^(\d+)m IR range\. Check park rules before using lights at night\.$/, "$1 m IR-Reichweite. Vor nächtlicher Lichtnutzung Parkregeln prüfen."],

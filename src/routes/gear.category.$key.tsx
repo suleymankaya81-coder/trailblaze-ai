@@ -144,7 +144,7 @@ function CategoryPage() {
         {shown < items.length && (
           <div className="mt-8 text-center">
             <button onClick={() => setShown((n) => n + 24)} className="rounded-md border border-border bg-card px-6 py-2.5 text-sm font-semibold text-foreground hover:shadow-soft">
-              Show more ({items.length - shown} left)
+              <T>{`Show more (${items.length - shown} left)`}</T>
             </button>
           </div>
         )}
