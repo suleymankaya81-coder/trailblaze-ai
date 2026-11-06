@@ -1,5 +1,5 @@
 import { T } from "@/lib/i18n";
-import { Link } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
 import { ArrowRight } from "lucide-react";
 
 import { CORRIDORS } from "@/lib/seo/corridors";

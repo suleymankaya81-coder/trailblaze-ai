@@ -8,7 +8,8 @@ import carImg from "@/assets/thumbs/car.jpg";
 import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
-import { createFileRoute, Link, notFound, ClientOnly, useLoaderData } from "@tanstack/react-router";
+import { createFileRoute, notFound, ClientOnly, useLoaderData } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
 import { lazy, Suspense } from "react";
 import { CalendarDays, Globe2, MapPin, Plane, Route as RouteIcon, ShieldAlert } from "lucide-react";
 

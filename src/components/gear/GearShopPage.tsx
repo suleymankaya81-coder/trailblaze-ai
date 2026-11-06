@@ -1,5 +1,5 @@
 import { RockbrosCode } from "@/components/shared/RockbrosCode";
-import { Link } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
 import { ArrowRight, Check, ChevronRight, Sparkles } from "lucide-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";

@@ -1,5 +1,6 @@
 import { hreflangLinks } from "@/lib/seo/hreflang";
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
 import { z } from "zod";
 
 import { Header } from "@/components/site/Header";

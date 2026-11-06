@@ -1,5 +1,6 @@
 import { deAlternates } from "@/lib/i18n/deTemplate";
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
 import { StaticPageLayout } from "@/components/site/StaticPageLayout";
 import { Thumb } from "@/components/ui-kit";
 import { Button } from "@/components/ui/button";

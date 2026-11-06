@@ -2,7 +2,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { placeGuideCrumbs } from "@/lib/seo/breadcrumbs";
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
 import { estimatedFrom } from "@/lib/data/servicePhotos";
-import { Link } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
 import { useQuery } from "@tanstack/react-query";
 import { ArrowUpRight, BedDouble, Car, Clock, Luggage, MapPin, Plane, Route as RouteIcon, ShieldAlert } from "lucide-react";
 import type { ReactNode } from "react";

@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
 import { ArrowUpRight, ShieldAlert } from "lucide-react";
 import type { ReactNode } from "react";
 

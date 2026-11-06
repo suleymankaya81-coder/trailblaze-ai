@@ -1,6 +1,7 @@
 import { T, useTp } from "@/lib/i18n";
 import { hreflangLinks } from "@/lib/seo/hreflang";
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
 import { ArrowRight } from "lucide-react";
 
 import { LOOPS } from "@/lib/seo/guides";

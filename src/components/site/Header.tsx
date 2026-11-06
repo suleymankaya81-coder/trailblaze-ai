@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
 import { Menu, X } from "lucide-react";
 import logoStacked from "@/assets/logos/minialife-stacked-mixedcase-trimmed.png";
 import { useLocale, t, type DictKey } from "@/lib/i18n";

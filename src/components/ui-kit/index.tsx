@@ -1,6 +1,6 @@
 import { T } from "@/lib/i18n";
 import { useRef, useState, type ReactNode } from "react";
-import { Link } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { SafeImage } from "@/components/shared/SafeImage";

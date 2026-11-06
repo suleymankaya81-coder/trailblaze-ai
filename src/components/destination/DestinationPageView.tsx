@@ -13,7 +13,7 @@ import roadImage from "@/assets/thumbs/road.jpg";
 import mapImage from "@/assets/thumbs/map.jpg";
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { estimatedFrom } from "@/lib/data/servicePhotos";
-import { Link } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
 import { VrboExpediaItems } from "@/components/destination/VrboSearchWidget";
 import { HarvestHostsOffer, HARVEST_HOSTS_URL } from "@/components/destination/HarvestHostsCard";
 import { GettingThereItems, TourTicketItems } from "@/components/destination/TravelpayoutsCards";
