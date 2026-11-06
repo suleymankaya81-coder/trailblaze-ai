@@ -76,8 +76,8 @@ export function Footer() {
 
 
         <div className="mt-6 flex flex-col gap-2 text-xs text-muted-foreground md:flex-row md:justify-between">
-          <span>© {new Date().getFullYear()} MiniaLife. All rights reserved.</span>
-          <span className="flex items-center gap-3">Crafted for the great outdoors. <LanguageSwitcher /></span>
+          <span>© {new Date().getFullYear()} MiniaLife. <T>All rights reserved.</T></span>
+          <span className="flex items-center gap-3"><T>Crafted for the great outdoors.</T> <LanguageSwitcher /></span>
         </div>
       </div>
     </footer>

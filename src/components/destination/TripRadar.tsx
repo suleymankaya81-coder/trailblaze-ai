@@ -103,18 +103,18 @@ export function TripRadar({ dest }: { dest: DestinationView }) {
           </div>
           <p className="mt-2 text-sm text-muted-foreground">
             {dest.airportName}
-            {dest.driveMinutes != null && ` · ${formatDrive(dest.driveMinutes)} drive`}
+            {dest.driveMinutes != null && <> · <T>{`${formatDrive(dest.driveMinutes)} drive`}</T></>}
           </p>
           <div className="mt-auto flex flex-wrap items-center justify-between gap-3 pt-5">
             {fare?.price != null ? (
               <span className="rounded-full bg-card px-3 py-1 text-xs text-muted-foreground shadow-soft">
-                recent fares from ~${Math.round(fare.price)} (estimate)
+                <T>{`recent fares from ~$${Math.round(fare.price)} (estimate)`}</T>
               </span>
             ) : (
               <span />
             )}
             <span className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition group-hover:gap-3">
-              Find flights to {dest.airportCode}
+              <T>{`Find flights to ${dest.airportCode}`}</T>
               <ArrowUpRight className="h-4 w-4" />
             </span>
           </div>

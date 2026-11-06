@@ -76,7 +76,7 @@ export function RentalSearch() {
         <p className="mt-2 max-w-xl text-sm text-muted-foreground"><T>{t.blurb}</T></p>
         <ul className="mt-3 flex flex-wrap gap-1.5">
           {(tab === "rv" ? ["Compare RV & campervan suppliers", "Pickup across the USA"] : ["Compare airport suppliers", "Free cancellation on many rates", "Same-airport return"]).map((b) => (
-            <li key={b} className="rounded-full bg-secondary px-2.5 py-1 text-[11px] font-medium text-foreground">✓ {b}</li>
+            <li key={b} className="rounded-full bg-secondary px-2.5 py-1 text-[11px] font-medium text-foreground">✓ <T>{b}</T></li>
           ))}
         </ul>
         {visible && <iframe ref={frame} key={tab} title={`${t.brand} live rental search`} srcDoc={documentHtml}

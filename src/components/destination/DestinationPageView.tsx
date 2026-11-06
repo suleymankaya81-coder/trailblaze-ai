@@ -486,7 +486,7 @@ function StayCard({
               (parkTag(offer) === "inside" ? "bg-copper" : "bg-forest")
             }
           >
-            {parkTag(offer) === "inside" ? "Inside the park · books up fast" : "Outside the park · easier to book"}
+            <T>{parkTag(offer) === "inside" ? "Inside the park · books up fast" : "Outside the park · easier to book"}</T>
           </span>
         )}
         {featured && (

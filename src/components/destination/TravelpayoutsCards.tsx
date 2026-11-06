@@ -30,7 +30,7 @@ function Card({ item, slug }: { item: Item; slug: string }) {
       <p className="mt-1 text-sm font-semibold text-foreground"><T>{item.title}</T></p>
       <p className="mt-1 flex-1 text-xs text-muted-foreground"><T>{item.sub}</T></p>
       <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-primary">
-        Check on {item.name} <ArrowUpRight className="h-3.5 w-3.5" />
+        <T>{`Check on ${item.name}`}</T> <ArrowUpRight className="h-3.5 w-3.5" />
       </span>
     </a>
   );

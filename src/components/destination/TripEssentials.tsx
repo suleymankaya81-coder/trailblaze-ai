@@ -29,7 +29,7 @@ export function TripEssentials({ context }: { context: EssentialsContext }) {
       <div className="mb-5 flex items-end justify-between gap-4">
         <div className="min-w-0">
           <p className="text-xs font-semibold uppercase text-sage-deep"><T>Curated Trip Essentials</T></p>
-          <h2 className="mt-2 break-words font-display text-2xl text-foreground md:text-[28px]">Five picks for {context.name}</h2>
+          <h2 className="mt-2 break-words font-display text-2xl text-foreground md:text-[28px]"><T>{`Five picks for ${context.name}`}</T></h2>
         </div>
         <div className="flex shrink-0 gap-1 lg:hidden">
           <Button variant="outline" size="icon" aria-label="Previous trip essential" title="Previous product" disabled={active === 0} onClick={() => move(-1)}><ChevronLeft /></Button>
