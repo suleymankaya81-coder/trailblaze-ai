@@ -278,6 +278,14 @@ export const DE_PHRASES: Record<string, string> = {
   "A light neck covering for sunny walks; use alongside sunscreen, not instead of it.": "Leichter Halsschutz für sonnige Wanderungen; zusätzlich zur Sonnencreme, nicht stattdessen.",
   "20X optical zoom · 500m IR range. Check park rules before using lights at night.": "20-facher optischer Zoom · 500 m IR-Reichweite. Vor nächtlicher Lichtnutzung Parkregeln prüfen.",
   "Wrap-around cycling sunglasses with polarized lenses and a lightweight TR90 frame, according to the listing.": "Umlaufende Fahrrad-Sonnenbrille mit polarisierten Gläsern und leichtem TR90-Rahmen (laut Produktangabe).",
+  "Campsite evenings": "Abende auf dem Campingplatz",
+  "Cold-weather layering": "Zwiebellook bei Kälte",
+  "Cool-weather stops": "Stopps bei kühlem Wetter",
+  "Day-walk storage": "Stauraum für Tageswanderungen",
+  "Small-item splash protection": "Spritzschutz für Kleinigkeiten",
+  "Travel documents & cards": "Reisedokumente & Karten",
+  "Uneven walking trails": "Unebene Wanderwege",
+  "Waterfront day trips": "Tagesausflüge ans Wasser",
 };
 
 // Phrases with a variable part ($1, $2 are kept as-is).
