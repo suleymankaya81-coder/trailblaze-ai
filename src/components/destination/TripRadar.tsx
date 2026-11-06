@@ -60,7 +60,7 @@ export function TripRadar({ dest }: { dest: DestinationView }) {
             </span>
             <div>
               <p className="text-xs uppercase tracking-wider text-muted-foreground">
-                Reservations · {permit.label}
+                <T>Reservations</T> · <T>{permit.label}</T>
               </p>
               <p className="font-display text-xl font-semibold leading-tight text-foreground">
                 {reviewedReservation?.headline ?? dest.permitHeadline ?? `Planning ${dest.name}`}
