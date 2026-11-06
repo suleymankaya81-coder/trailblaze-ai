@@ -3,6 +3,7 @@ import generated from "./phrases.de.generated.json";
 // Missing phrases fall back to English.
 export const DE_PHRASES: Record<string, string> = {
   ...(generated as Record<string, string>),
+  "Before you go": "Vor der Reise",
   "A few things worth knowing": "Gut zu wissen",
   "Official park information": "Offizielle Parkinformationen",
   "See places to stay": "Unterkünfte ansehen",
@@ -312,7 +313,6 @@ export const DE_PATTERNS: [RegExp, string][] = [
   [/^Show more \((\d+) left\)$/, "Mehr anzeigen (noch $1)"],
   [/^Compare suppliers at ([A-Z]{3})$/, "Anbieter in $1 vergleichen"],
   [/^(.+) Loop from (.+)$/, "$1 Rundreise ab $2"],
-  [/^(.+) from ([A-Z][\w .,]+)$/, "$1 ab $2"],
   [/^recent fares from ~\$(\d+) \(estimate\)$/, "aktuelle Preise ab ca. $$$1 (Schätzung)"],
   [/^(\d+)X optical zoom$/, "$1-facher optischer Zoom"],
   [/^(\d+)m IR range\. Check park rules before using lights at night\.$/, "$1 m IR-Reichweite. Vor nächtlicher Lichtnutzung Parkregeln prüfen."],
