@@ -13,7 +13,8 @@ const LocalLinkImpl = forwardRef<HTMLAnchorElement, any>(function LocalLink(prop
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     if (target) return <RouterLink ref={ref} {...rest} to={target as any} />;
   }
-  return <RouterLink ref={ref} {...props} />;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return <RouterLink ref={ref} {...(props as any)} />;
 });
 
 export const Link = LocalLinkImpl as unknown as typeof RouterLink;
