@@ -1,4 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { deAlternates } from "@/lib/i18n/deTemplate";
+import { createFileRoute, useLoaderData } from "@tanstack/react-router";
 
 import { GuideHub } from "@/components/guides/GuideHub";
 import { getHubEntries } from "@/lib/data/guideHubs.functions";
@@ -22,5 +23,9 @@ export const Route = createFileRoute("/no-reservation/")({
     links: [{ rel: "canonical", href: `${SITE}/no-reservation` }],
     scripts: [breadcrumbScript(hubCrumbs("No reservation? Entry rules & backup plans", "/no-reservation"))],
   }),
-  component: () => <GuideHub family="no-reservation" kicker="No Reservation" title="No reservation? Entry rules & backup plans" intro="Places where booking matters — what the rules are, how to get in without a reservation, and where to go instead." entries={Route.useLoaderData()} />,
+  component: HubPage,
 });
+
+export function HubPage() {
+  return <GuideHub family="no-reservation" kicker="No Reservation" title="No reservation? Entry rules & backup plans" intro="Places where booking matters — what the rules are, how to get in without a reservation, and where to go instead." entries={(useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>)} />;
+}

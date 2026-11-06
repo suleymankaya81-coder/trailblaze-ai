@@ -1,3 +1,4 @@
+import { deAlternates } from "@/lib/i18n/deTemplate";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { StaticPageLayout } from "@/components/site/StaticPageLayout";
 import { Thumb } from "@/components/ui-kit";
@@ -18,7 +19,7 @@ export const Route = createFileRoute("/about")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
-    links: [{ rel: "canonical", href: "https://minialife.com/about" }],
+    links: [{ rel: "canonical", href: "https://minialife.com/about" }, ...deAlternates("https://minialife.com/about")],
   }),
   component: AboutPage,
 });
@@ -27,7 +28,7 @@ const steps = [
   { image: planImage, title: "Bring the plan together", text: "See suggested days, route maps, airport drives, reservation notes and places to stay." },
   { image: carImage, title: "Book with the partner", text: "Compare your options, then confirm dates, meeting points, final prices and terms on the provider’s site." },
 ];
-function AboutPage() {
+export function AboutPage() {
   return <StaticPageLayout eyebrow="About MiniaLife" title="Outdoor travel, one route at a time." lede="Free U.S. outdoor travel guides and self-drive itineraries — for people who would rather be outside.">
     <section>
       <h2>Your place, your pace</h2>

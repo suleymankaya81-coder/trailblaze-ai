@@ -1,4 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { deAlternates } from "@/lib/i18n/deTemplate";
+import { createFileRoute, useLoaderData } from "@tanstack/react-router";
 
 import { GuideHub } from "@/components/guides/GuideHub";
 import { getHubEntries } from "@/lib/data/guideHubs.functions";
@@ -22,5 +23,9 @@ export const Route = createFileRoute("/fly-and-drive/")({
     links: [{ rel: "canonical", href: `${SITE}/fly-and-drive` }],
     scripts: [breadcrumbScript(hubCrumbs("Fly & drive guides", "/fly-and-drive"))],
   }),
-  component: () => <GuideHub family="fly-and-drive" kicker="Fly & Drive" title="Fly & drive guides" intro="Pick a place to see the closest airport, the drive time, car rental and the first night's stay." entries={Route.useLoaderData()} />,
+  component: HubPage,
 });
+
+export function HubPage() {
+  return <GuideHub family="fly-and-drive" kicker="Fly & Drive" title="Fly & drive guides" intro="Pick a place to see the closest airport, the drive time, car rental and the first night's stay." entries={(useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>)} />;
+}

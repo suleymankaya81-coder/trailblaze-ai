@@ -1,6 +1,7 @@
+import { deAlternates } from "@/lib/i18n/deTemplate";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
-import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
+import { createFileRoute, notFound, redirect, useLoaderData } from "@tanstack/react-router";
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
@@ -43,7 +44,7 @@ export const Route = createFileRoute("/fly-and-drive/$slug")({
         { name: "twitter:card", content: "summary_large_image" },
         ...(img ? [{ property: "og:image", content: img }, { name: "twitter:image", content: img }] : []),
       ],
-      links: [{ rel: "canonical", href: url }],
+      links: [{ rel: "canonical", href: url }, ...deAlternates(url)],
       scripts: [{ type: "application/ld+json", children: JSON.stringify(flyDriveJsonLd({ ...dest, faqs }, url)).replace(/</g, "\\u003c") }],
     };
   },
@@ -61,8 +62,8 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   );
 }
 
-function FlyDrivePage() {
-  const { dest, siblings, faqs, landingLinks } = Route.useLoaderData();
+export function FlyDrivePage() {
+  const { dest, siblings, faqs, landingLinks } = (useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>);
   return (
     <div className="min-h-screen bg-background">
       <Header />

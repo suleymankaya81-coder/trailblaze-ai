@@ -1,3 +1,4 @@
+import { deAlternates } from "@/lib/i18n/deTemplate";
 import { createFileRoute } from "@tanstack/react-router";
 import { GearShopPage } from "@/components/gear/GearShopPage";
 import { wildguarderProducts } from "@/lib/data/gearCategories";
@@ -17,7 +18,7 @@ export const Route = createFileRoute("/gear/")({
       { property: "og:url", content: "https://minialife.com/gear" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://minialife.com/gear" }],
+    links: [{ rel: "canonical", href: "https://minialife.com/gear" }, ...deAlternates("https://minialife.com/gear")],
     scripts: [
       {
         type: "application/ld+json",

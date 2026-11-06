@@ -1,3 +1,4 @@
+import { deAlternates } from "@/lib/i18n/deTemplate";
 import { Thumb, SwipeRow } from "@/components/ui-kit";
 import roadImg from "@/assets/thumbs/road.jpg";
 import planImg from "@/assets/thumbs/plan.jpg";
@@ -6,7 +7,7 @@ import carImg from "@/assets/thumbs/car.jpg";
 import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, useLoaderData } from "@tanstack/react-router";
 import { ViatorPlaceBlock } from "@/components/destination/ViatorPlaceBlock";
 import { Clock, ShieldAlert } from "lucide-react";
 
@@ -50,7 +51,7 @@ export const Route = createFileRoute("/no-reservation/$slug")({
         { name: "twitter:card", content: "summary_large_image" },
         ...(img ? [{ property: "og:image", content: img }, { name: "twitter:image", content: img }] : []),
       ],
-      links: [{ rel: "canonical", href: url }],
+      links: [{ rel: "canonical", href: url }, ...deAlternates(url)],
       scripts: [{ type: "application/ld+json", children: jsonLdScript(destGuideJsonLd({ ...dest, faqs, url, label: "No reservation", title })) }],
     };
   },
@@ -59,8 +60,8 @@ export const Route = createFileRoute("/no-reservation/$slug")({
   notFoundComponent: () => <div className="container-page py-20">This guide does not exist.</div>,
 });
 
-function Page() {
-  const { dest, alts, faqs, landingLinks } = Route.useLoaderData();
+export function Page() {
+  const { dest, alts, faqs, landingLinks } = (useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>);
   const reviewed = getDestinationAnswers(dest.slug)?.reservation;
   const tips = dest.travelPlan?.intel.filter((t) => t.kind === "timing" || t.kind === "access" || t.kind === "parking") ?? [];
   return (

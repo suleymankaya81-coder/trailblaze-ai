@@ -1,4 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { deAlternates } from "@/lib/i18n/deTemplate";
+import { createFileRoute, Link, useLoaderData } from "@tanstack/react-router";
 import { EditorialCard } from "@/components/ui-kit";
 import roadImg from "@/assets/thumbs/road.jpg";
 import flightImg from "@/assets/thumbs/flight.jpg";
@@ -45,8 +46,8 @@ export const Route = createFileRoute("/trip-guides")({
   component: Page,
 });
 
-function Page() {
-  const covers = Route.useLoaderData();
+export function Page() {
+  const covers = (useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>);
   return (
     <div className="min-h-screen bg-background">
       <Header />
