@@ -1,5 +1,6 @@
 import { hreflangLinks } from "@/lib/seo/hreflang";
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
 import { getDestinationCovers } from "@/lib/data/destinations.functions";
 import { ArrowUpRight } from "lucide-react";
 import { PlaceCard, SectionHead } from "@/components/ui-kit";

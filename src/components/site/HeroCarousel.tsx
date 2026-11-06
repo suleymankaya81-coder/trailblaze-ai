@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
@@ -88,14 +89,14 @@ export function HeroCarousel({ slides }: { slides: HeroSlide[] }) {
                   )}
                   <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-ink/70 to-transparent" />
                   <h2 className="absolute left-5 right-5 bottom-5 font-serif text-2xl font-bold leading-tight text-off-white md:text-3xl">
-                    {s.title}
+                    <T>{s.title}</T>
                   </h2>
                 </a>
                 <div className="flex flex-1 flex-col px-5 py-6">
                   <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-forest">
                     {s.eyebrow}
                   </p>
-                  <p className="mt-3 flex-1 text-sm text-foreground/80">{s.blurb}</p>
+                  <p className="mt-3 flex-1 text-sm text-foreground/80"><T>{s.blurb}</T></p>
                   <a
                     href={s.href}
                     className="mt-5 inline-flex w-fit items-center justify-center rounded-sm bg-forest px-5 py-2.5 text-sm font-semibold text-off-white hover:bg-forest/90"

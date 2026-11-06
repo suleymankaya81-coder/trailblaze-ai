@@ -1,8 +1,9 @@
+import { T } from "@/lib/i18n";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { placeGuideCrumbs } from "@/lib/seo/breadcrumbs";
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
 import { estimatedFrom } from "@/lib/data/servicePhotos";
-import { Link } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
 import { useQuery } from "@tanstack/react-query";
 import { ArrowUpRight, BedDouble, Car, Clock, Luggage, MapPin, Plane, Route as RouteIcon, ShieldAlert } from "lucide-react";
 import type { ReactNode } from "react";
@@ -65,18 +66,18 @@ function Chip({ icon, children }: { icon: ReactNode; children: ReactNode }) {
 export function RouteCard({ dest }: { dest: DestinationView }) {
   return (
     <div className="rounded-lg border border-border bg-card p-6 shadow-soft md:p-8">
-      <p className="text-xs uppercase tracking-wider text-muted-foreground">Your route</p>
+      <p className="text-xs uppercase tracking-wider text-muted-foreground"><T>Your route</T></p>
       <div className="mt-4 flex items-center gap-4">
         <div>
-          <p className="font-display text-5xl font-semibold text-foreground">{dest.airportCode}</p>
-          <p className="mt-1 max-w-[12rem] text-xs text-muted-foreground">{dest.airportName}</p>
+          <p className="font-display text-5xl font-semibold text-foreground"><T>{dest.airportCode}</T></p>
+          <p className="mt-1 max-w-[12rem] text-xs text-muted-foreground"><T>{dest.airportName}</T></p>
         </div>
         <span className="relative h-px flex-1 border-t-2 border-dashed border-forest/30">
           <Thumb src={roadImg} size={40} className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
         </span>
         <div className="text-right">
           <Thumb src={dest.heroImage} size={48} className="ml-auto" />
-          <p className="mt-1 text-sm font-semibold text-foreground">{dest.name}</p>
+          <p className="mt-1 text-sm font-semibold text-foreground"><T>{dest.name}</T></p>
         </div>
       </div>
       {dest.driveMinutes != null && (
@@ -176,7 +177,7 @@ export function ArrivalPlan({ dest }: { dest: DestinationView }) {
           <Thumb src={stayImg} size={48} />
           <div>
             <p className="font-display text-lg font-semibold text-foreground">03 · First night near {dest.name}</p>
-            <p className="text-sm text-muted-foreground">Sleep close after the drive so day one starts in the park.</p>
+            <p className="text-sm text-muted-foreground"><T>Sleep close after the drive so day one starts in the park.</T></p>
           </div>
         </div>
         <div className="travel-card-row sm:grid-cols-2">
@@ -228,7 +229,7 @@ export function BeforeYouLand({ dest }: { dest: DestinationView }) {
       {dest.bestSeason && (
         <div className="rounded-lg border border-border bg-card p-6 md:p-8">
           <p className="text-xs uppercase tracking-wider text-muted-foreground">Best time to fly in</p>
-          <p className="mt-2 font-display text-xl font-semibold text-foreground">{dest.bestSeason}</p>
+          <p className="mt-2 font-display text-xl font-semibold text-foreground"><T>{dest.bestSeason}</T></p>
         </div>
       )}
     </div>

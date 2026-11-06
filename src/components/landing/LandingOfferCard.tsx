@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
 import { offerCtaLabel } from "@/lib/affiliates/ctaLabel";
 import { useServerFn } from "@tanstack/react-start";
@@ -51,7 +52,7 @@ export function InlineOfferCta({ offer, destinationSlug, photo, lead }: { offer:
       {photo && <img src={photo.url} alt={`${photo.subject}, illustrative photo`} loading="lazy" className="h-16 w-16 shrink-0 rounded-xl object-cover" />}
       <div className="min-w-0 flex-1">
         <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-sage-deep">{lead}</p>
-        <p className="truncate text-sm font-semibold text-foreground">{offer.title}</p>
+        <p className="truncate text-sm font-semibold text-foreground"><T>{offer.title}</T></p>
         {offer.priceDisplay && <p className="text-[10px] text-muted-foreground">{offer.priceDisplay} (estimate)</p>}
       </div>
       <Button asChild size="lg" className="h-auto min-h-12 whitespace-normal rounded-md text-xs"><a href={offer.externalUrl} target="_blank" rel={m.rel} title={outboundLinkTitle(offer.partner, offer.externalUrl)} onClick={onClick}>
@@ -73,8 +74,8 @@ export function LandingOfferCard({ offer, destinationSlug, photo }: { offer: Off
         </div>
       )}
       <div className="flex flex-1 flex-col gap-2 p-4">
-        <h3 className="font-semibold text-foreground">{offer.title}</h3>
-        {offer.whyRecommended && <p className="line-clamp-3 text-sm text-muted-foreground">{offer.whyRecommended}</p>}
+        <h3 className="font-semibold text-foreground"><T>{offer.title}</T></h3>
+        {offer.whyRecommended && <p className="line-clamp-3 text-sm text-muted-foreground"><T>{offer.whyRecommended}</T></p>}
         {offer.priceDisplay && (
           <p className="text-sm font-semibold text-foreground">
             {offer.priceDisplay} <span className="font-normal text-muted-foreground">(estimate)</span>

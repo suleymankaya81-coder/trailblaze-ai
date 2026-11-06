@@ -1,5 +1,7 @@
+import { T } from "@/lib/i18n";
 import { hreflangLinks } from "@/lib/seo/hreflang";
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
 import { z } from "zod";
 
 import { Header } from "@/components/site/Header";
@@ -95,7 +97,7 @@ function DestinationsIndexPage() {
               search={{ tag: t.value }}
               className={pageLinkClass(tag === t.value)}
             >
-              {t.label}
+              <T>{t.label}</T>
             </Link>
           ))}
         </div>
@@ -104,8 +106,8 @@ function DestinationsIndexPage() {
           {tag && <input type="hidden" name="tag" value={tag} />}
           <input name="q" defaultValue={q} placeholder="Search by name" aria-label="Search destinations by name" className="h-12 rounded-lg border border-border bg-card px-3 text-sm" />
           <select name="region" defaultValue={region} aria-label="Region" className="h-12 rounded-lg border border-border bg-card px-3 text-sm">
-            <option value="">All regions</option>
-            {Object.entries(US_REGIONS).map(([k, r]) => <option key={k} value={k}>{r.label}</option>)}
+            <option value=""><T>All regions</T></option>
+            {Object.entries(US_REGIONS).map(([k, r]) => <option key={k} value={k}><T>{r.label}</T></option>)}
           </select>
           <select name="season" defaultValue={season} aria-label="Best season" className="h-12 rounded-lg border border-border bg-card px-3 text-sm">
             <option value="">Any season</option>
@@ -118,7 +120,7 @@ function DestinationsIndexPage() {
           <p className="mt-12 text-sm text-muted-foreground">
             No destinations to show here.{" "}
             <Link to="/destinations" className="underline underline-offset-2 hover:text-foreground">
-              View all destinations
+              <T>View all destinations</T>
             </Link>
             .
           </p>

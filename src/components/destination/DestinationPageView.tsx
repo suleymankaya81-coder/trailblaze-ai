@@ -13,7 +13,7 @@ import roadImage from "@/assets/thumbs/road.jpg";
 import mapImage from "@/assets/thumbs/map.jpg";
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { estimatedFrom } from "@/lib/data/servicePhotos";
-import { Link } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
 import { VrboExpediaItems } from "@/components/destination/VrboSearchWidget";
 import { HarvestHostsOffer, HARVEST_HOSTS_URL } from "@/components/destination/HarvestHostsCard";
 import { GettingThereItems, TourTicketItems } from "@/components/destination/TravelpayoutsCards";
@@ -181,7 +181,7 @@ function Hero({ dest, crumbs }: { dest: DestinationView; crumbs?: Crumb[] }) {
           <h1 className="mt-5 max-w-xl font-display text-4xl leading-[1.05] md:text-6xl">
             <T>{dest.name}</T>
           </h1>
-          <p className="mt-5 max-w-lg text-base text-off-white/85">{dest.tagline}</p>
+          <p className="mt-5 max-w-lg text-base text-off-white/85"><T>{dest.tagline}</T></p>
 
           {stats.length > 0 && (
             <dl className="mt-9 flex flex-wrap gap-x-10 gap-y-5">
@@ -269,7 +269,7 @@ function PriceTag({
       </span>
     );
   }
-  if (offer.priceDisplay) return <span className={className}>{offer.priceDisplay}</span>;
+  if (offer.priceDisplay) return <span className={className}><T>{offer.priceDisplay}</T></span>;
   return <span className="text-xs font-normal text-muted-foreground"><T>{`${estimatedFrom(`${offer.title ?? ""} ${offer.subcategory ?? ""} ${offer.partner ?? ""}`)} · estimate`}</T></span>;
 }
 
@@ -846,7 +846,7 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
           {dest.airportCode && (
             <div className="rounded-xl bg-beige/50 p-4">
               <p className="text-[11px] uppercase tracking-wider text-muted-foreground">
-                From {dest.airportName}
+                <T>From</T> {dest.airportName}
               </p>
               <p className="mt-1 font-serif text-2xl font-semibold text-foreground">
                 {dest.driveMinutes != null ? formatDrive(dest.driveMinutes) : "—"}

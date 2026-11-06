@@ -1,7 +1,7 @@
 import { T } from "@/lib/i18n";
 import { useEffect, useState } from "react";
 import { LanguageSwitcher } from "./LanguageSwitcher";
-import { Link } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
 import logoStacked from "@/assets/logos/minialife-stacked-mixedcase-trimmed.png";
 
 const groups = [

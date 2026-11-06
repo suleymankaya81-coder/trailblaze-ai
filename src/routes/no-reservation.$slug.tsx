@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { Thumb, SwipeRow } from "@/components/ui-kit";
@@ -8,7 +9,8 @@ import carImg from "@/assets/thumbs/car.jpg";
 import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
-import { createFileRoute, Link, notFound, useLoaderData } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
+import { createFileRoute, notFound, useLoaderData } from "@tanstack/react-router";
 import { ViatorPlaceBlock } from "@/components/destination/ViatorPlaceBlock";
 import { Clock, ShieldAlert } from "lucide-react";
 
@@ -93,9 +95,9 @@ export function Page(): React.ReactElement {
             <div className="grid gap-4 md:grid-cols-3">
               {tips.map((t) => (
                 <div key={t.kind} className="rounded-lg border border-border bg-card p-6">
-                  <p className="text-xs uppercase tracking-wider text-muted-foreground">{t.kind}</p>
-                  <p className="mt-2 font-display text-lg font-semibold text-foreground">{t.title}</p>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t.text}</p>
+                  <p className="text-xs uppercase tracking-wider text-muted-foreground"><T>{t.kind}</T></p>
+                  <p className="mt-2 font-display text-lg font-semibold text-foreground"><T>{t.title}</T></p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground"><T>{t.text}</T></p>
                 </div>
               ))}
             </div>

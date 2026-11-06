@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { Thumb, SwipeRow } from "@/components/ui-kit";
@@ -8,7 +9,8 @@ import carImg from "@/assets/thumbs/car.jpg";
 import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
-import { createFileRoute, Link, notFound, ClientOnly, useLoaderData } from "@tanstack/react-router";
+import { createFileRoute, notFound, ClientOnly, useLoaderData } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
 import { lazy, Suspense } from "react";
 import { CalendarDays, Globe2, MapPin, Plane, Route as RouteIcon, ShieldAlert } from "lucide-react";
 
@@ -76,8 +78,8 @@ export function Page(): React.ReactElement {
       <Header />
       <main>
         <GuideHero image={stops[1]?.heroImage ?? first.heroImage} kicker={`Gateway Road Trip · ${corridor.region}`} title={corridorSearchTitle(corridor)} crumbs={corridorCrumbs(corridor)}>
-          <HeroChip image={roadImg}>Fly into {corridor.gateway.code}</HeroChip>
-          <HeroChip image={roadImg}>{corridor.idealDays}</HeroChip>
+          <HeroChip image={roadImg}>{`Fly into ${corridor.gateway.code}`}</HeroChip>
+          <HeroChip image={roadImg}><T>{corridor.idealDays}</T></HeroChip>
           <HeroChip image={roadImg}>~{miles} mi loop (straight-line)</HeroChip>
         </GuideHero>
         <TripSnapshot airport={corridor.gateway.code} days={corridor.idealDays} stops={stops.length} /><TripQuickNav />
@@ -91,7 +93,7 @@ export function Page(): React.ReactElement {
               </Suspense>
             </ClientOnly>
           </div>
-          <p className="mt-2 text-xs text-muted-foreground">{corridor.intro}</p>
+          <p className="mt-2 text-xs text-muted-foreground"><T>{corridor.intro}</T></p>
         </GuideSection>
 
         <GuideSection title={`Start in ${corridor.gatewayCity}`} intro="Arrange your arrival, choose your wheels and get connected before the first park day.">
@@ -103,8 +105,8 @@ export function Page(): React.ReactElement {
             {corridor.essentials.map((e) => (
               <div key={e.title} className="rounded-lg border border-border bg-card p-6 shadow-soft">
                 <Thumb src={/license|driv/i.test(e.title) ? carImg : /park|pass|permit/i.test(e.title) ? planImg : /toll|road/i.test(e.title) ? roadImg : flightImg} size={56} />
-                <p className="mt-3 font-display text-lg font-semibold text-foreground">{e.title}</p>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{e.text}</p>
+                <p className="mt-3 font-display text-lg font-semibold text-foreground"><T>{e.title}</T></p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground"><T>{e.text}</T></p>
               </div>
             ))}
           </div>
@@ -117,7 +119,7 @@ export function Page(): React.ReactElement {
               const d = suggestedDays(s.tripDurationDays);
               return (
                 <li key={s.slug}>
-                  {leg != null && <p className="mb-2 ml-6 flex items-center gap-2 text-xs text-muted-foreground"><RouteIcon className="h-3.5 w-3.5" /> ~{leg} mi straight-line from {stops[i - 1].name}</p>}
+                  {leg != null && <p className="mb-2 ml-6 flex items-center gap-2 text-xs text-muted-foreground"><RouteIcon className="h-3.5 w-3.5" /> <T>{`~${leg} mi straight-line from ${stops[i - 1].name}`}</T></p>}
                   {corridor.legNotes?.[s.slug] && <p className="mb-2 ml-6 text-xs text-muted-foreground">{corridor.legNotes[s.slug]}</p>}
                   <Link to="/destinations/$slug" params={{ slug: s.slug }} className="group grid min-h-12 grid-cols-[80px_minmax(0,1fr)] gap-4 border-b border-border py-4 transition sm:grid-cols-[120px_minmax(0,1fr)]">
                     <div className="relative aspect-square overflow-hidden rounded-lg bg-muted">
@@ -125,17 +127,17 @@ export function Page(): React.ReactElement {
                       <span className="absolute left-2 top-2 grid h-8 w-8 place-items-center rounded-full bg-card/90 font-display text-sm font-bold text-forest">{i + 1}</span>
                     </div>
                     <div className="py-1">
-                      <p className="font-display text-lg font-semibold text-foreground group-hover:underline">{s.name}</p>
+                      <p className="font-display text-lg font-semibold text-foreground group-hover:underline"><T>{s.name}</T></p>
                       <p className="mt-1 text-sm text-muted-foreground">Suggested: {d} day{d > 1 ? "s" : ""}</p>
                       {(s.permitLevel === "high" || s.permitLevel === "moderate") && s.permitHeadline && (
-                        <p className="mt-2 inline-flex items-start gap-1.5 text-xs text-copper"><ShieldAlert className="mt-0.5 h-3.5 w-3.5 shrink-0" />{s.permitHeadline}</p>
+                        <p className="mt-2 inline-flex items-start gap-1.5 text-xs text-copper"><ShieldAlert className="mt-0.5 h-3.5 w-3.5 shrink-0" /><T>{s.permitHeadline}</T></p>
                       )}
                     </div>
                   </Link>
                 </li>
               );
             })}
-            <li className="ml-6 flex items-center gap-2 text-sm text-muted-foreground"><MapPin className="h-4 w-4" /> Return to {first.name} and drop the car at {corridor.gateway.code}.</li>
+            <li className="ml-6 flex items-center gap-2 text-sm text-muted-foreground"><MapPin className="h-4 w-4" /> <T>Return to</T> {first.name} and drop the car at {corridor.gateway.code}.</li>
           </ol>
         </GuideSection>
 

@@ -1,5 +1,6 @@
+import { T } from "@/lib/i18n";
 import { RockbrosCode } from "@/components/shared/RockbrosCode";
-import { Link } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
 import { ArrowRight, Check, ChevronRight, Sparkles } from "lucide-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
@@ -80,7 +81,7 @@ function SectionHead({ title, link }: { title: string; link?: { label: string; h
       <h2 className="text-2xl text-forest md:text-3xl">{title}</h2>
       {link && (
         <a href={link.href} className="hidden shrink-0 items-center gap-1 text-xs font-semibold text-forest hover:underline sm:inline-flex">
-          {link.label} <ArrowRight className="h-3.5 w-3.5" />
+          <T>{link.label}</T> <ArrowRight className="h-3.5 w-3.5" />
         </a>
       )}
     </div>
@@ -97,9 +98,9 @@ export function GearShopPage() {
           <img src={hero} alt="Campsite with a glowing tent and an SUV carrying bikes by an alpine lake at sunset" width={1920} height={1024} className="absolute inset-0 -z-10 h-full w-full object-cover" />
           <div className="absolute inset-0 -z-10 bg-ink/45" />
           <div className="container-page flex min-h-[26rem] flex-col items-center justify-center py-16 text-center text-off-white">
-            <p className="text-xs font-medium text-off-white/85">Gear Shop <span className="mx-1">/</span> All Categories</p>
-            <h1 className="mt-3 text-4xl text-off-white md:text-5xl">All Gear Categories</h1>
-            <p className="mt-3 max-w-xl text-off-white/90">Outdoor gear for every trip — from camp to trail to night sky.</p>
+            <p className="text-xs font-medium text-off-white/85">Gear Shop <span className="mx-1">/</span> <T>All Categories</T></p>
+            <h1 className="mt-3 text-4xl text-off-white md:text-5xl"><T>All Gear Categories</T></h1>
+            <p className="mt-3 max-w-xl text-off-white/90"><T>Outdoor gear for every trip — from camp to trail to night sky.</T></p>
             <nav aria-label="Gear category shortcuts" className="mt-8 flex max-w-3xl flex-wrap justify-center gap-2">
               {chips.map((chip) => (
                 <a
@@ -150,7 +151,7 @@ export function GearShopPage() {
             })}
           </div>
           <p className="mt-2 text-xs text-muted-foreground">
-            Item counts from the ROCKBROS catalog, checked {countsReviewed}; Optics &amp; Night Vision lists our WILDGUARDER partner models. Category photos are illustrative.
+            <T>Item counts from the ROCKBROS catalog, checked</T> {countsReviewed}; Optics &amp; Night Vision lists our WILDGUARDER partner models. Category photos are illustrative.
           </p>
         </section>
 
@@ -186,15 +187,15 @@ export function GearShopPage() {
               <p className="absolute bottom-6 left-6 font-hand text-3xl leading-tight text-off-white">Explore a wilder,<br />darker world.</p>
             </div>
             <div className="p-6 md:p-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-foreground/70">Spotlight: See the Night</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-foreground/70"><T>Spotlight: See the Night</T></p>
               <h2 className="mt-2 text-2xl text-forest md:text-3xl">Night Vision for Wildlife &amp; Stargazing</h2>
-              <p className="mt-2 text-sm text-muted-foreground">Get closer to nature after dark with WILDGUARDER night vision optics.</p>
+              <p className="mt-2 text-sm text-muted-foreground"><T>Get closer to nature after dark with WILDGUARDER night vision optics.</T></p>
               <div className="mt-6 grid gap-3 sm:grid-cols-3">
                 {wildguarderProducts.map((p) => (
                   <a key={p.id} href={wildguarderLink(p.url, `gear-wildguarder-${p.id}`)} target="_blank" rel="sponsored nofollow noopener" className="rounded-xl border border-border bg-background p-3 hover:shadow-lift">
                     <img src={p.image} alt={`WILDGUARDER ${p.name}`} loading="lazy" width={300} height={300} className="aspect-square w-full rounded-lg bg-off-white object-contain" />
                     <h3 className="mt-2 line-clamp-2 text-xs font-semibold text-foreground">WILDGUARDER {p.name}</h3>
-                    <p className="mt-0.5 line-clamp-2 text-[10px] text-muted-foreground">{p.spec}</p>
+                    <p className="mt-0.5 line-clamp-2 text-[10px] text-muted-foreground"><T>{p.spec}</T></p>
                     <p className="mt-1.5 text-sm font-bold text-foreground">{wildguarderPrice(p)}</p>
                     <p className="text-[10px] text-muted-foreground">Official store price, checked {wgReviewed}</p>
                   </a>
@@ -203,7 +204,7 @@ export function GearShopPage() {
               <a href={wildguarderLink(wildguarderStoreUrl, "gear-wildguarder-store")} target="_blank" rel="sponsored nofollow noopener" className="mt-6 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90">
                 Shop WILDGUARDER <ArrowRight className="h-4 w-4" />
               </a>
-              <p className="mt-3 text-[10px] text-muted-foreground">Links go to the official WILDGUARDER store.</p>
+              <p className="mt-3 text-[10px] text-muted-foreground"><T>Links go to the official WILDGUARDER store.</T></p>
             </div>
           </div>
         </section>
@@ -217,14 +218,14 @@ export function GearShopPage() {
                 <div key={t.title} className="flex gap-4 rounded-xl border border-border bg-card p-3 shadow-soft">
                   <img src={t.img} alt={`${t.title} illustration`} loading="lazy" width={1024} height={768} className="h-28 w-32 shrink-0 rounded-lg object-cover" />
                   <div className="min-w-0">
-                    <h3 className="text-sm font-semibold text-foreground">{t.title}</h3>
+                    <h3 className="text-sm font-semibold text-foreground"><T>{t.title}</T></h3>
                     <ul className="mt-1.5 space-y-0.5 text-xs text-muted-foreground">
                       {t.items.map((item) => (
                         <li key={item} className="flex items-center gap-1.5"><Check className="h-3 w-3 shrink-0 text-forest" />{item}</li>
                       ))}
                     </ul>
                     <a href={t.href} className="mt-1.5 inline-flex items-center gap-1 text-xs font-semibold text-forest hover:underline">
-                      See matching gear <ArrowRight className="h-3 w-3" />
+                      <T>See matching gear</T> <ArrowRight className="h-3 w-3" />
                     </a>
                   </div>
                 </div>
@@ -238,10 +239,10 @@ export function GearShopPage() {
                 <Link key={d.name} to={d.to} className="group flex gap-4 rounded-xl border border-border bg-card p-3 shadow-soft hover:shadow-lift">
                   <img src={d.img} alt={`${d.name} scenery`} loading="lazy" width={1920} height={1280} className="h-28 w-32 shrink-0 rounded-lg object-cover" />
                   <div className="min-w-0">
-                    <h3 className="text-sm font-semibold text-foreground">{d.name}</h3>
-                    <p className="mt-1 text-xs text-muted-foreground">{d.text}</p>
+                    <h3 className="text-sm font-semibold text-foreground"><T>{d.name}</T></h3>
+                    <p className="mt-1 text-xs text-muted-foreground"><T>{d.text}</T></p>
                     <p className="mt-1.5 inline-flex items-center gap-1 text-xs font-semibold text-forest group-hover:underline">
-                      See the trip plan <ArrowRight className="h-3 w-3" />
+                      <T>See the trip plan</T> <ArrowRight className="h-3 w-3" />
                     </p>
                     <p className="mt-1 text-[10px] text-muted-foreground/80">Photo: {d.credit}</p>
                   </div>
@@ -267,8 +268,8 @@ export function GearShopPage() {
                     </div>
                     <div className="flex items-center justify-between gap-2 p-4">
                       <div className="min-w-0">
-                        <h3 className="text-sm font-semibold text-foreground">{g.t}</h3>
-                        <p className="mt-1 text-xs text-muted-foreground">{g.s}</p>
+                        <h3 className="text-sm font-semibold text-foreground"><T>{g.t}</T></h3>
+                        <p className="mt-1 text-xs text-muted-foreground"><T>{g.s}</T></p>
                       </div>
                       <span className={`grid h-8 w-8 shrink-0 place-items-center rounded-full border ${g.to ? "border-forest text-forest" : "border-border text-muted-foreground"}`}>
                         <ArrowRight className="h-4 w-4" />
@@ -287,7 +288,7 @@ export function GearShopPage() {
         </section>
 
         <p className="container-page py-6 text-xs text-muted-foreground">
-          Prices come from the partner catalogs and may change. Some photos are illustrative.
+          <T>Prices come from the partner catalogs and may change. Some photos are illustrative.</T>
         </p>
       </main>
       <Footer />

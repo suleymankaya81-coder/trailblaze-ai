@@ -73,7 +73,7 @@ export function TripEssentials({ context }: { context: EssentialsContext }) {
           </div>
         </article>
       </div>
-      <p className="mt-4 text-xs leading-relaxed text-muted-foreground">Optional picks, not a complete packing or safety list. Photos from the ROCKBROS and WILDGUARDER stores. Prices as of {TRIP_ESSENTIALS_REVIEWED} / {WILDGUARDER_REVIEW_DATE}; price, stock and shipping may change.</p>
+      <p className="mt-4 text-xs leading-relaxed text-muted-foreground"><T>Optional picks, not a complete packing or safety list. Photos from the ROCKBROS and WILDGUARDER stores. Prices as of</T> {TRIP_ESSENTIALS_REVIEWED} / {WILDGUARDER_REVIEW_DATE}; price, stock and shipping may change.</p>
     </section>
   );
 }

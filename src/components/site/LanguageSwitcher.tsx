@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { useEffect, useState } from "react";
 import { useRouterState } from "@tanstack/react-router";
 import { LOCALES, localeFromPath, t } from "@/lib/i18n";
@@ -31,9 +32,9 @@ export function LanguageSwitcher({ className = "" }: { className?: string }) {
     <nav aria-label={t(current, "lang.label")} className={`flex items-center gap-1 text-xs font-semibold ${className}`}>
       {options.map((l) =>
         l.code === current ? (
-          <span key={l.code} aria-current="true" className="rounded-full bg-primary px-2.5 py-1 text-primary-foreground">{l.short}</span>
+          <span key={l.code} aria-current="true" className="rounded-full bg-primary px-2.5 py-1 text-primary-foreground"><T>{l.short}</T></span>
         ) : (
-          <a key={l.code} href={alts[l.hreflang]} hrefLang={l.hreflang} lang={l.hreflang} title={l.label} className="rounded-full px-2.5 py-1 text-foreground/80 hover:bg-muted hover:text-foreground">{l.short}</a>
+          <a key={l.code} href={alts[l.hreflang]} hrefLang={l.hreflang} lang={l.hreflang} title={l.label} className="rounded-full px-2.5 py-1 text-foreground/80 hover:bg-muted hover:text-foreground"><T>{l.short}</T></a>
         ),
       )}
     </nav>

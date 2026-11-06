@@ -16,9 +16,9 @@ export function TravelFlow({ name, plan }: { name: string; plan: TravelPlan }) {
     </div>
     <ol className="grid gap-4 md:grid-cols-2">
       {plan.days.map((day, i) => <li key={day.title} className="rounded-lg border border-border bg-card p-5 md:p-6">
-        <div className="flex items-start gap-4"><span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-forest text-primary-foreground text-sm font-bold">{String(i+1).padStart(2,"0")}</span><div><h3 className="text-lg text-foreground"><T>{day.title}</T></h3><p className="mt-1 flex items-center gap-1.5 text-xs text-sage-deep"><Clock className="h-3.5 w-3.5 shrink-0" />{day.start}</p></div></div>
+        <div className="flex items-start gap-4"><span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-forest text-primary-foreground text-sm font-bold">{String(i+1).padStart(2,"0")}</span><div><h3 className="text-lg text-foreground"><T>{day.title}</T></h3><p className="mt-1 flex items-center gap-1.5 text-xs text-sage-deep"><Clock className="h-3.5 w-3.5 shrink-0" /><T>{day.start}</T></p></div></div>
         <ul className="mt-5 space-y-4">{day.stops.map(stop => <li key={stop.name} className="flex gap-3"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-sage-deep" /><div><p className="text-sm font-semibold text-foreground"><T>{stop.name}</T></p><p className="mt-1 text-xs leading-relaxed text-muted-foreground"><T>{stop.detail}</T></p></div></li>)}</ul>
-        <p className="mt-5 flex gap-2 border-t border-border pt-4 text-xs leading-relaxed text-foreground"><Navigation className="h-4 w-4 shrink-0" />{day.driving}</p><p className="mt-2 text-xs leading-relaxed text-muted-foreground"><T>{day.note}</T></p>
+        <p className="mt-5 flex gap-2 border-t border-border pt-4 text-xs leading-relaxed text-foreground"><Navigation className="h-4 w-4 shrink-0" /><T>{day.driving}</T></p><p className="mt-2 text-xs leading-relaxed text-muted-foreground"><T>{day.note}</T></p>
       </li>)}
     </ol>
   </section>;

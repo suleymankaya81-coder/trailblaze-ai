@@ -1,6 +1,6 @@
 """Translate destination page text once into content_translations (no per-visit AI).
 Resumable: places that already have a row for the locale are skipped unless --force.
-Run: python scripts/content-pipeline/translate-content.py --locale de --pilot [slug ...] [--force]
+Run: python scripts/content-pipeline/translate-content.py --locale de --pilot [slug ...] [--force]   |   --locale de --all  (every published place, resumable)
 """
 import json, os, sys
 import requests
@@ -17,7 +17,8 @@ args = sys.argv[1:]
 force = "--force" in args
 locale = args[args.index("--locale") + 1] if "--locale" in args else "de"
 slugs = [a for a in args if not a.startswith("--") and a != locale]
-if "--pilot" in args or not slugs:
+run_all = "--all" in args
+if not run_all and ("--pilot" in args or not slugs):
     slugs = slugs or PILOT
 lang = LOCALE_NAMES[locale]
 
@@ -40,13 +41,14 @@ def ai_json(prompt: str) -> dict:
 
 existing = {row["entity_id"] for row in requests.get(
     f"{REST}/content_translations?select=entity_id&entity_type=eq.destination&locale=eq.{locale}", headers=H).json()}
+slug_filter = "" if run_all else f"&slug=in.({','.join(slugs)})"
 rows = requests.get(
-    f"{REST}/destinations?status=eq.published&slug=in.({','.join(slugs)})"
+    f"{REST}/destinations?status=eq.published{slug_filter}&order=slug"
     "&select=slug,name,region,tagline,best_season,permit_headline,permit_note,travel_plan", headers=H).json()
 
-for d in rows:
+def work(d):
     if d["slug"] in existing and not force:
-        print(d["slug"], "skip (exists)"); continue
+        return
     plan = d.get("travel_plan") or {}
     source = {
         "name": d["name"], "region": d["region"], "tagline": d["tagline"], "bestSeason": d["best_season"],
@@ -62,15 +64,23 @@ SOURCE JSON:
     try:
         out = ai_json(prompt)
     except Exception as e:  # noqa: BLE001
-        print(d["slug"], "FAILED", e); continue
+        print(d["slug"], "FAILED", e, flush=True); return
+    if isinstance(out, list) and len(out) == 1: out = out[0]
+    if not isinstance(out, dict):
+        print(d["slug"], "REJECTED (not object)", flush=True); return
     ok = (out.get("name") and out.get("metaTitle") and out.get("metaDescription")
           and len(out.get("days", [])) == len(source["days"]) and len(out.get("intel", [])) == len(source["intel"]))
     if not ok:
-        print(d["slug"], "REJECTED (structure)"); continue
+        print(d["slug"], "REJECTED (structure)", flush=True); return
     out["metaTitle"] = out["metaTitle"][:60]
     out["metaDescription"] = out["metaDescription"][:160]
     res = requests.post(f"{REST}/content_translations?on_conflict=entity_type,entity_id,locale",
                         headers={**H, "Prefer": "resolution=merge-duplicates"},
                         json={"entity_type": "destination", "entity_id": d["slug"], "locale": locale,
                               "fields": out, "status": "published", "updated_at": "now()"})
-    print(d["slug"], "saved" if res.ok else f"ERROR {res.status_code} {res.text[:200]}")
+    print(d["slug"], "saved" if res.ok else f"ERROR {res.status_code} {res.text[:200]}", flush=True)
+
+
+from concurrent.futures import ThreadPoolExecutor
+with ThreadPoolExecutor(max_workers=4) as pool:
+    list(pool.map(work, rows))

@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { Thumb } from "@/components/ui-kit";
 import planImg from "@/assets/thumbs/plan.jpg";
 import { CalendarDays, Clock, Flower2, Leaf, MapPin, Mountain, Plane, Snowflake, Sun, Ticket, Wallet } from "lucide-react";
@@ -40,9 +41,9 @@ export function QuickFacts({ facts }: { facts: LandingFacts }) {
         {items.map((i) => (
           <div key={i.label} className="bg-card p-4">
             <p className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-sage-deep">
-              {i.icon} {i.label}
+              {i.icon} <T>{i.label}</T>
             </p>
-            <p className="mt-1 text-sm font-semibold text-foreground">{i.value}</p>
+            <p className="mt-1 text-sm font-semibold text-foreground"><T>{i.value}</T></p>
           </div>
         ))}
       </div>
@@ -82,7 +83,7 @@ export function SectionBlock({ section, index, cta }: { section: LandingSection;
         </span>
         <span className="absolute left-5 top-10 bottom-[-2.5rem] w-px bg-border" aria-hidden />
         <div className="border-b border-border p-5 md:p-6">
-          <h2 className="mb-3 font-display text-2xl text-foreground">{section.heading}</h2>
+          <h2 className="mb-3 font-display text-2xl text-foreground"><T>{section.heading}</T></h2>
           <Body text={section.body} />
           {cta && <div className="mt-4 border-t border-border pt-4">{cta}</div>}
         </div>
@@ -97,7 +98,7 @@ export function SectionBlock({ section, index, cta }: { section: LandingSection;
         <span className="text-xs font-semibold uppercase tracking-[0.16em]">{season ? season.name : `Step ${index + 1}`}</span>
       </div>
       <div className="p-5 md:p-6">
-        <h2 className="mb-3 font-display text-2xl text-foreground">{section.heading}</h2>
+        <h2 className="mb-3 font-display text-2xl text-foreground"><T>{section.heading}</T></h2>
         <Body text={section.body} />
         {cta && <div className="mt-4 border-t border-border pt-4">{cta}</div>}
       </div>

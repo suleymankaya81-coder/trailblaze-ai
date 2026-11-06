@@ -1,5 +1,5 @@
 import { T } from "@/lib/i18n";
-import { Link } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
 import { ArrowRight } from "lucide-react";
 
 import { CORRIDORS } from "@/lib/seo/corridors";
@@ -23,7 +23,7 @@ export function MoreRoutes({ stops, currentLoop, currentCorridor }: { stops: str
   return (
     <section className="container-page pb-14" aria-labelledby="more-routes-title">
       <div className="border-y border-border py-6">
-        <h2 id="more-routes-title" className="font-display text-2xl text-foreground">More road trips</h2>
+        <h2 id="more-routes-title" className="font-display text-2xl text-foreground"><T>More road trips</T></h2>
         <div className="mt-4 flex flex-wrap gap-3">
           {loops.map((l) => (
             <Link key={l.slug} to="/road-trips/$slug" params={{ slug: l.slug }} className={pill}>
@@ -32,7 +32,7 @@ export function MoreRoutes({ stops, currentLoop, currentCorridor }: { stops: str
           ))}
           {corridors.map((c) => (
             <Link key={c.slug} to="/corridors/$slug" params={{ slug: c.slug }} className={pill}>
-              From the airport: {c.title} <ArrowRight className="h-3.5 w-3.5" />
+              <T>From the airport:</T> <T>{c.title}</T> <ArrowRight className="h-3.5 w-3.5" />
             </Link>
           ))}
         </div>
