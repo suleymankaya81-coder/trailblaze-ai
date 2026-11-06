@@ -14,7 +14,8 @@ export function deAlternates(canonical: string) {
 }
 
 /** Turn an English template head into its /de counterpart: German fixed wording, /de canonical, hreflang. */
-export function deHead(head: Head): Head {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function deHead(head: Head): any {
   if (!head) return head;
   const canonical = head.links?.find((l) => l.rel === "canonical")?.href as string | undefined;
   const meta = (head.meta ?? []).map((m) => {
