@@ -1,3 +1,4 @@
+import { hreflangLinks } from "@/lib/seo/hreflang";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 
@@ -42,7 +43,7 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://minialife.com/" }],
+    links: [{ rel: "canonical", href: "https://minialife.com/" }, ...hreflangLinks("/", ["en", "de"])],
   }),
   component: HomePage,
 });

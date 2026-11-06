@@ -2,7 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
-import { SafeImage } from "@/components/ui-kit";
+import { SafeImage } from "@/components/shared/SafeImage";
 import { getDestinationPageData } from "@/lib/data/destinations.functions";
 import { getDestinationTranslation } from "@/lib/data/translations.functions";
 import { t } from "@/lib/i18n";

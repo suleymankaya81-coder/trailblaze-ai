@@ -1,3 +1,4 @@
+import { hreflangLinks } from "@/lib/seo/hreflang";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { z } from "zod";
 
@@ -51,7 +52,7 @@ export const Route = createFileRoute("/destinations/")({
         ...(isFiltered ? [{ name: "robots", content: "noindex, follow" }] : []),
         { property: "og:url", content: "https://minialife.com/destinations" },
       ],
-      links: [{ rel: "canonical", href: "https://minialife.com/destinations" }],
+      links: [{ rel: "canonical", href: "https://minialife.com/destinations" }, ...(isFiltered ? [] : hreflangLinks("/destinations", ["en", "de"]))],
       scripts: [breadcrumbScript([HOME, DESTINATIONS])],
     };
   },
