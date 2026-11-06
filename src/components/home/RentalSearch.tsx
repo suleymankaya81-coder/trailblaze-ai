@@ -62,11 +62,11 @@ export function RentalSearch() {
     <div ref={wrap} className="mb-5 overflow-hidden rounded-lg border border-border bg-card shadow-soft">
       <div className="flex border-b border-border">
         {(Object.keys(TABS) as Tab[]).map((k) => {
-          const T = TABS[k];
+          const Tab = TABS[k];
           return (
             <Button key={k} type="button" variant="ghost" onClick={() => { setTab(k); setReady(false); setHeight(430); }} aria-pressed={tab === k}
               className={`h-auto flex-1 whitespace-normal rounded-none px-4 py-4 text-sm font-semibold ${tab === k ? "bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground" : "text-foreground hover:bg-muted"}`}>
-              <T.icon className="h-4 w-4" /><T>{T.label}</T>
+              <Tab.icon className="h-4 w-4" /><T>{Tab.label}</T>
             </Button>
           );
         })}
