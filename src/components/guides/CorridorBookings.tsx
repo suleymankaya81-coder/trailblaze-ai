@@ -43,11 +43,11 @@ export function CorridorBookings({ slug, airport, city }: { slug: string; airpor
           <PhotoCredit photo={item.photo} />
         </div> : <div className="aspect-[4/3] bg-muted"><img src={planImg} alt="" className="h-full w-full object-cover" /></div>}
         <div className="flex flex-1 flex-col p-4">
-          <p className="flex items-center gap-2 text-[10px] uppercase text-muted-foreground">{item.step ? <><span className="grid h-5 w-5 place-items-center rounded-full bg-primary text-[10px] font-bold text-primary-foreground">{item.step}</span>Step {item.step} · </> : "Before you go · "}{item.brand}</p>
+          <p className="flex items-center gap-2 text-[10px] uppercase text-muted-foreground">{item.step ? <><span className="grid h-5 w-5 place-items-center rounded-full bg-primary text-[10px] font-bold text-primary-foreground"><T>{item.step}</T></span>Step {item.step} · </> : "Before you go · "}{item.brand}</p>
           {prices[item.key] ? <p className="mt-2 font-display text-base font-semibold text-foreground"><T>{String(prices[item.key])}</T> <span className="text-[10px] font-normal text-muted-foreground"><T>· typical rate</T></span></p> : null}
           {badges[item.key]?.length ? <ul className="mt-2 flex flex-wrap gap-1.5">{badges[item.key].map((b) => <li key={b} className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-medium text-foreground">✓ {b}</li>)}</ul> : null}
-          <h3 className="mt-2 font-display text-base font-semibold text-foreground">{item.title}</h3>
-          <p className="mb-5 mt-2 text-xs leading-relaxed text-muted-foreground">{item.detail}</p>
+          <h3 className="mt-2 font-display text-base font-semibold text-foreground"><T>{item.title}</T></h3>
+          <p className="mb-5 mt-2 text-xs leading-relaxed text-muted-foreground"><T>{item.detail}</T></p>
           <Button asChild size="sm" className="mt-auto h-auto min-h-12 whitespace-normal rounded-lg py-2 text-center"><a href={item.href} target="_blank" rel="sponsored nofollow noopener noreferrer" onClick={(e) => { e.preventDefault(); window.open(item.href, "_blank", "noopener,noreferrer"); }}>{item.cta}<ArrowUpRight /></a></Button>
         </div>
       </article>)}

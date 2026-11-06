@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { ClientOnly, createFileRoute } from "@tanstack/react-router";
 import { useQueries } from "@tanstack/react-query";
 import { useEffect, useRef } from "react";
@@ -58,7 +59,7 @@ function HomeTours() {
         </div>
         <div className="flex flex-1 flex-col p-4">
           <p className="text-[10px] uppercase tracking-wide text-muted-foreground">{item.category ?? tourCategory(item.title)}</p>
-          <h3 className="mt-1 line-clamp-2 font-display text-base font-semibold leading-snug text-foreground">{item.title}</h3>
+          <h3 className="mt-1 line-clamp-2 font-display text-base font-semibold leading-snug text-foreground"><T>{item.title}</T></h3>
           {hasViatorRating(item.rating, item.reviews) && <p className="mt-2 flex items-center gap-1 text-xs text-foreground"><Star className="h-3.5 w-3.5 text-amber" />{item.rating.toFixed(1)} <span className="text-muted-foreground">({item.reviews.toLocaleString("en-US")} reviews)</span></p>}
           {item.freeCancellation && <p className="mt-2 text-[11px] font-medium text-foreground">✓ Free cancellation</p>}
           <p className="mb-4 mt-2 text-lg font-semibold text-foreground">{item.price !== null ? `From ${new Intl.NumberFormat("en-US", { style: "currency", currency: item.currency }).format(item.price)}` : "Check current price"}</p>

@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { Thumb, SwipeRow } from "@/components/ui-kit";
@@ -114,10 +115,10 @@ export function Page(): React.ReactElement {
                       <span className="absolute left-2 top-2 grid h-8 w-8 place-items-center rounded-full bg-card/90 font-display text-sm font-bold text-forest">{i + 1}</span>
                     </div>
                     <div className="py-1">
-                      <p className="font-display text-lg font-semibold text-foreground group-hover:underline">{s.name}</p>
+                      <p className="font-display text-lg font-semibold text-foreground group-hover:underline"><T>{s.name}</T></p>
                       <p className="mt-1 text-sm text-muted-foreground">Suggested: {suggestedDays(s.tripDurationDays)} day{suggestedDays(s.tripDurationDays) > 1 ? "s" : ""}{s.tripDurationDays ? ` (full guide: ${s.tripDurationDays})` : ""}</p>
                       {(s.permitLevel === "high" || s.permitLevel === "moderate") && s.permitHeadline && (
-                        <p className="mt-2 inline-flex items-start gap-1.5 text-xs text-copper"><ShieldAlert className="mt-0.5 h-3.5 w-3.5 shrink-0" />{s.permitHeadline}</p>
+                        <p className="mt-2 inline-flex items-start gap-1.5 text-xs text-copper"><ShieldAlert className="mt-0.5 h-3.5 w-3.5 shrink-0" /><T>{s.permitHeadline}</T></p>
                       )}
                     </div>
                   </Link>

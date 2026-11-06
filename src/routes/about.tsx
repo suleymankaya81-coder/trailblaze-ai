@@ -43,7 +43,7 @@ export function AboutPage() {
       <ol className="mt-6 space-y-6">
         {steps.map((step, index) => <li key={step.title} className="flex gap-4 border-b border-border pb-6">
           <Thumb src={step.image} size={72} />
-          <div><p className="text-xs font-semibold text-sage-deep">Step {index + 1}</p><h3 className="mt-1 text-xl text-foreground">{step.title}</h3><p className="mt-2 text-sm">{step.text}</p></div>
+          <div><p className="text-xs font-semibold text-sage-deep">Step {index + 1}</p><h3 className="mt-1 text-xl text-foreground"><T>{step.title}</T></h3><p className="mt-2 text-sm"><T>{step.text}</T></p></div>
         </li>)}
       </ol>
     </section>

@@ -204,7 +204,7 @@ export function DestinationCard({
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent" />
         <div className="absolute inset-x-0 bottom-0 p-5 text-off-white">
-          <p className="text-xs uppercase tracking-wider text-off-white/80">{d.region}</p>
+          <p className="text-xs uppercase tracking-wider text-off-white/80"><T>{d.region}</T></p>
           <h3 className={`mt-1 font-bold ${titleClass}`}><T>{d.name}</T></h3>
         </div>
       </div>

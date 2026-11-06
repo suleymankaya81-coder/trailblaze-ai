@@ -107,7 +107,7 @@ function DestinationsIndexPage() {
           <input name="q" defaultValue={q} placeholder="Search by name" aria-label="Search destinations by name" className="h-12 rounded-lg border border-border bg-card px-3 text-sm" />
           <select name="region" defaultValue={region} aria-label="Region" className="h-12 rounded-lg border border-border bg-card px-3 text-sm">
             <option value=""><T>All regions</T></option>
-            {Object.entries(US_REGIONS).map(([k, r]) => <option key={k} value={k}>{r.label}</option>)}
+            {Object.entries(US_REGIONS).map(([k, r]) => <option key={k} value={k}><T>{r.label}</T></option>)}
           </select>
           <select name="season" defaultValue={season} aria-label="Best season" className="h-12 rounded-lg border border-border bg-card px-3 text-sm">
             <option value="">Any season</option>

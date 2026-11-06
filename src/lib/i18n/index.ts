@@ -23,7 +23,7 @@ export function useT() {
 }
 
 import { DE_PATTERNS, DE_PHRASES } from "./phrases.de";
-import { createElement, Fragment } from "react";
+import { createElement, Fragment, type ReactNode } from "react";
 const PATTERNS: Partial<Record<Locale, [RegExp, string][]>> = { de: DE_PATTERNS };
 const PHRASES: Partial<Record<Locale, Record<string, string>>> = { de: DE_PHRASES };
 
@@ -45,7 +45,7 @@ export function useTp() {
 }
 
 /** Inline translated phrase: <T>English text</T>. */
-export function T({ children }: { children: string }) {
+export function T({ children }: { children: ReactNode }) {
   const locale = useLocale();
-  return createElement(Fragment, null, tp(locale, children));
+  return createElement(Fragment, null, typeof children === "string" ? tp(locale, children) : children);
 }

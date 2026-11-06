@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { Link } from "@/components/site/LocalLink";
 import { ArrowUpRight, ShieldAlert } from "lucide-react";
 import type { ReactNode } from "react";
@@ -66,7 +67,7 @@ export function GuideFaq({ faqs }: { faqs: Faq[] }) {
       {faqs.map((f) => (
         <details key={f.q} className="group py-4">
           <summary className="flex min-h-12 cursor-pointer items-center justify-between gap-4 font-semibold text-foreground">{f.q}<span aria-hidden className="text-xl text-primary group-open:rotate-45">+</span></summary>
-          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{f.a}</p>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground"><T>{f.a}</T></p>
         </details>
       ))}
     </div>

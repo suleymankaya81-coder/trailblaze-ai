@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { useRef, useState } from "react";
 import { Link } from "@/components/site/LocalLink";
 import { ArrowDown, ArrowRight, ChevronLeft, ChevronRight, Check, Compass } from "lucide-react";
@@ -31,10 +32,10 @@ function ProductCard({ product, index, guide }: { product: GearProduct; index: n
         />
       </div>
       <div className="flex flex-1 flex-col p-6 pt-2">
-        <p className={`text-xs font-semibold uppercase ${["text-sage-deep","text-sky","text-clay","text-[oklch(0.55_0.12_70)]"][index % 4]}`}>{product.purpose}</p>
-        <h3 className="mt-2 text-xl text-foreground">{product.name}</h3>
-        <p className="mt-2 text-sm font-medium text-foreground">{product.spec}</p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{product.description}</p>
+        <p className={`text-xs font-semibold uppercase ${["text-sage-deep","text-sky","text-clay","text-[oklch(0.55_0.12_70)]"][index % 4]}`}><T>{product.purpose}</T></p>
+        <h3 className="mt-2 text-xl text-foreground"><T>{product.name}</T></h3>
+        <p className="mt-2 text-sm font-medium text-foreground"><T>{product.spec}</T></p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground"><T>{product.description}</T></p>
         <div className={`my-4 rounded-r-md border-l-2 py-2 pl-3 pr-2 text-xs leading-relaxed text-foreground/75 ${cautionTones[index % 4]}`}>
           {product.caution}
         </div>
@@ -271,8 +272,8 @@ export function GearGuide({ config: c }: { config: GearGuideConfig }) {
                           {product.name}
                         </a>
                       </th>
-                      <td className="px-5 py-4 text-muted-foreground">{product.purpose}</td>
-                      <td className="px-5 py-4 text-muted-foreground">{product.spec}</td>
+                      <td className="px-5 py-4 text-muted-foreground"><T>{product.purpose}</T></td>
+                      <td className="px-5 py-4 text-muted-foreground"><T>{product.spec}</T></td>
                       <td className="whitespace-nowrap px-5 py-4 font-semibold">
                         {catalogPrice(product)}
                       </td>
@@ -298,7 +299,7 @@ export function GearGuide({ config: c }: { config: GearGuideConfig }) {
                   <summary className="cursor-pointer pr-4 text-base font-semibold text-foreground">
                     {faq.question}
                   </summary>
-                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{faq.answer}</p>
+                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground"><T>{faq.answer}</T></p>
                 </details>
               ))}
             </div>

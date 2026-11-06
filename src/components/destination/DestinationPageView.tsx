@@ -181,7 +181,7 @@ function Hero({ dest, crumbs }: { dest: DestinationView; crumbs?: Crumb[] }) {
           <h1 className="mt-5 max-w-xl font-display text-4xl leading-[1.05] md:text-6xl">
             <T>{dest.name}</T>
           </h1>
-          <p className="mt-5 max-w-lg text-base text-off-white/85">{dest.tagline}</p>
+          <p className="mt-5 max-w-lg text-base text-off-white/85"><T>{dest.tagline}</T></p>
 
           {stats.length > 0 && (
             <dl className="mt-9 flex flex-wrap gap-x-10 gap-y-5">
@@ -269,7 +269,7 @@ function PriceTag({
       </span>
     );
   }
-  if (offer.priceDisplay) return <span className={className}>{offer.priceDisplay}</span>;
+  if (offer.priceDisplay) return <span className={className}><T>{offer.priceDisplay}</T></span>;
   return <span className="text-xs font-normal text-muted-foreground"><T>{`${estimatedFrom(`${offer.title ?? ""} ${offer.subcategory ?? ""} ${offer.partner ?? ""}`)} · estimate`}</T></span>;
 }
 

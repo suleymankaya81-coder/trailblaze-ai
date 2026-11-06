@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { Thumb, SwipeRow } from "@/components/ui-kit";
@@ -78,7 +79,7 @@ export function Page(): React.ReactElement {
       <main>
         <GuideHero image={stops[1]?.heroImage ?? first.heroImage} kicker={`Gateway Road Trip · ${corridor.region}`} title={corridorSearchTitle(corridor)} crumbs={corridorCrumbs(corridor)}>
           <HeroChip image={roadImg}>Fly into {corridor.gateway.code}</HeroChip>
-          <HeroChip image={roadImg}>{corridor.idealDays}</HeroChip>
+          <HeroChip image={roadImg}><T>{corridor.idealDays}</T></HeroChip>
           <HeroChip image={roadImg}>~{miles} mi loop (straight-line)</HeroChip>
         </GuideHero>
         <TripSnapshot airport={corridor.gateway.code} days={corridor.idealDays} stops={stops.length} /><TripQuickNav />
@@ -92,7 +93,7 @@ export function Page(): React.ReactElement {
               </Suspense>
             </ClientOnly>
           </div>
-          <p className="mt-2 text-xs text-muted-foreground">{corridor.intro}</p>
+          <p className="mt-2 text-xs text-muted-foreground"><T>{corridor.intro}</T></p>
         </GuideSection>
 
         <GuideSection title={`Start in ${corridor.gatewayCity}`} intro="Arrange your arrival, choose your wheels and get connected before the first park day.">
@@ -104,8 +105,8 @@ export function Page(): React.ReactElement {
             {corridor.essentials.map((e) => (
               <div key={e.title} className="rounded-lg border border-border bg-card p-6 shadow-soft">
                 <Thumb src={/license|driv/i.test(e.title) ? carImg : /park|pass|permit/i.test(e.title) ? planImg : /toll|road/i.test(e.title) ? roadImg : flightImg} size={56} />
-                <p className="mt-3 font-display text-lg font-semibold text-foreground">{e.title}</p>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{e.text}</p>
+                <p className="mt-3 font-display text-lg font-semibold text-foreground"><T>{e.title}</T></p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground"><T>{e.text}</T></p>
               </div>
             ))}
           </div>
@@ -126,10 +127,10 @@ export function Page(): React.ReactElement {
                       <span className="absolute left-2 top-2 grid h-8 w-8 place-items-center rounded-full bg-card/90 font-display text-sm font-bold text-forest">{i + 1}</span>
                     </div>
                     <div className="py-1">
-                      <p className="font-display text-lg font-semibold text-foreground group-hover:underline">{s.name}</p>
+                      <p className="font-display text-lg font-semibold text-foreground group-hover:underline"><T>{s.name}</T></p>
                       <p className="mt-1 text-sm text-muted-foreground">Suggested: {d} day{d > 1 ? "s" : ""}</p>
                       {(s.permitLevel === "high" || s.permitLevel === "moderate") && s.permitHeadline && (
-                        <p className="mt-2 inline-flex items-start gap-1.5 text-xs text-copper"><ShieldAlert className="mt-0.5 h-3.5 w-3.5 shrink-0" />{s.permitHeadline}</p>
+                        <p className="mt-2 inline-flex items-start gap-1.5 text-xs text-copper"><ShieldAlert className="mt-0.5 h-3.5 w-3.5 shrink-0" /><T>{s.permitHeadline}</T></p>
                       )}
                     </div>
                   </Link>

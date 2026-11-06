@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { placeGuideCrumbs } from "@/lib/seo/breadcrumbs";
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
@@ -68,15 +69,15 @@ export function RouteCard({ dest }: { dest: DestinationView }) {
       <p className="text-xs uppercase tracking-wider text-muted-foreground">Your route</p>
       <div className="mt-4 flex items-center gap-4">
         <div>
-          <p className="font-display text-5xl font-semibold text-foreground">{dest.airportCode}</p>
-          <p className="mt-1 max-w-[12rem] text-xs text-muted-foreground">{dest.airportName}</p>
+          <p className="font-display text-5xl font-semibold text-foreground"><T>{dest.airportCode}</T></p>
+          <p className="mt-1 max-w-[12rem] text-xs text-muted-foreground"><T>{dest.airportName}</T></p>
         </div>
         <span className="relative h-px flex-1 border-t-2 border-dashed border-forest/30">
           <Thumb src={roadImg} size={40} className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
         </span>
         <div className="text-right">
           <Thumb src={dest.heroImage} size={48} className="ml-auto" />
-          <p className="mt-1 text-sm font-semibold text-foreground">{dest.name}</p>
+          <p className="mt-1 text-sm font-semibold text-foreground"><T>{dest.name}</T></p>
         </div>
       </div>
       {dest.driveMinutes != null && (
@@ -228,7 +229,7 @@ export function BeforeYouLand({ dest }: { dest: DestinationView }) {
       {dest.bestSeason && (
         <div className="rounded-lg border border-border bg-card p-6 md:p-8">
           <p className="text-xs uppercase tracking-wider text-muted-foreground">Best time to fly in</p>
-          <p className="mt-2 font-display text-xl font-semibold text-foreground">{dest.bestSeason}</p>
+          <p className="mt-2 font-display text-xl font-semibold text-foreground"><T>{dest.bestSeason}</T></p>
         </div>
       )}
     </div>

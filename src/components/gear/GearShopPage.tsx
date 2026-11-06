@@ -195,7 +195,7 @@ export function GearShopPage() {
                   <a key={p.id} href={wildguarderLink(p.url, `gear-wildguarder-${p.id}`)} target="_blank" rel="sponsored nofollow noopener" className="rounded-xl border border-border bg-background p-3 hover:shadow-lift">
                     <img src={p.image} alt={`WILDGUARDER ${p.name}`} loading="lazy" width={300} height={300} className="aspect-square w-full rounded-lg bg-off-white object-contain" />
                     <h3 className="mt-2 line-clamp-2 text-xs font-semibold text-foreground">WILDGUARDER {p.name}</h3>
-                    <p className="mt-0.5 line-clamp-2 text-[10px] text-muted-foreground">{p.spec}</p>
+                    <p className="mt-0.5 line-clamp-2 text-[10px] text-muted-foreground"><T>{p.spec}</T></p>
                     <p className="mt-1.5 text-sm font-bold text-foreground">{wildguarderPrice(p)}</p>
                     <p className="text-[10px] text-muted-foreground">Official store price, checked {wgReviewed}</p>
                   </a>
@@ -218,7 +218,7 @@ export function GearShopPage() {
                 <div key={t.title} className="flex gap-4 rounded-xl border border-border bg-card p-3 shadow-soft">
                   <img src={t.img} alt={`${t.title} illustration`} loading="lazy" width={1024} height={768} className="h-28 w-32 shrink-0 rounded-lg object-cover" />
                   <div className="min-w-0">
-                    <h3 className="text-sm font-semibold text-foreground">{t.title}</h3>
+                    <h3 className="text-sm font-semibold text-foreground"><T>{t.title}</T></h3>
                     <ul className="mt-1.5 space-y-0.5 text-xs text-muted-foreground">
                       {t.items.map((item) => (
                         <li key={item} className="flex items-center gap-1.5"><Check className="h-3 w-3 shrink-0 text-forest" />{item}</li>
@@ -239,8 +239,8 @@ export function GearShopPage() {
                 <Link key={d.name} to={d.to} className="group flex gap-4 rounded-xl border border-border bg-card p-3 shadow-soft hover:shadow-lift">
                   <img src={d.img} alt={`${d.name} scenery`} loading="lazy" width={1920} height={1280} className="h-28 w-32 shrink-0 rounded-lg object-cover" />
                   <div className="min-w-0">
-                    <h3 className="text-sm font-semibold text-foreground">{d.name}</h3>
-                    <p className="mt-1 text-xs text-muted-foreground">{d.text}</p>
+                    <h3 className="text-sm font-semibold text-foreground"><T>{d.name}</T></h3>
+                    <p className="mt-1 text-xs text-muted-foreground"><T>{d.text}</T></p>
                     <p className="mt-1.5 inline-flex items-center gap-1 text-xs font-semibold text-forest group-hover:underline">
                       See the trip plan <ArrowRight className="h-3 w-3" />
                     </p>
@@ -268,8 +268,8 @@ export function GearShopPage() {
                     </div>
                     <div className="flex items-center justify-between gap-2 p-4">
                       <div className="min-w-0">
-                        <h3 className="text-sm font-semibold text-foreground">{g.t}</h3>
-                        <p className="mt-1 text-xs text-muted-foreground">{g.s}</p>
+                        <h3 className="text-sm font-semibold text-foreground"><T>{g.t}</T></h3>
+                        <p className="mt-1 text-xs text-muted-foreground"><T>{g.s}</T></p>
                       </div>
                       <span className={`grid h-8 w-8 shrink-0 place-items-center rounded-full border ${g.to ? "border-forest text-forest" : "border-border text-muted-foreground"}`}>
                         <ArrowRight className="h-4 w-4" />

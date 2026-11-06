@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { ClientOnly, createFileRoute, notFound } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { ArrowUpRight, Star } from "lucide-react";
@@ -43,8 +44,8 @@ function Experiences({ slug }: { slug: string }) {
       {data.items.map((item) => <article key={item.code} className="flex min-w-0 flex-col overflow-hidden rounded-lg border border-border bg-card">
         <SafeImage src={item.image} alt={item.title} loading="lazy" className="aspect-[4/3] w-full object-cover" />
         <div className="flex flex-1 flex-col p-4">
-          <p className="text-[10px] uppercase text-muted-foreground">{item.stop}</p>
-          <h3 className="mt-2 font-display text-base font-semibold leading-snug text-foreground">{item.title}</h3>
+          <p className="text-[10px] uppercase text-muted-foreground"><T>{item.stop}</T></p>
+          <h3 className="mt-2 font-display text-base font-semibold leading-snug text-foreground"><T>{item.title}</T></h3>
           {hasViatorRating(item.rating, item.reviews) && <p className="mt-3 flex items-center gap-1 text-xs text-foreground"><Star className="h-3.5 w-3.5 text-amber" />{item.rating.toFixed(1)} <span className="text-muted-foreground">({item.reviews.toLocaleString("en-US")} reviews · Viator / Tripadvisor)</span></p>}
           <p className="mt-3 text-lg font-semibold text-foreground">{item.price !== null ? `From ${new Intl.NumberFormat("en-US", { style: "currency", currency: item.currency }).format(item.price)}` : "Check current price"}</p>
           <p className="mb-4 mt-1 text-[11px] text-muted-foreground">Starting price; check your dates and options on Viator.</p>

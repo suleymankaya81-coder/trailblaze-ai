@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { Thumb, SwipeRow } from "@/components/ui-kit";
@@ -100,13 +101,13 @@ export function Page(): React.ReactElement {
             <div className="grid gap-4 md:grid-cols-3">
               <div className="border-l-2 border-primary bg-sand/40 p-6 md:col-span-3 md:p-8">
                 <p className="flex items-center gap-2 text-xs uppercase tracking-wider text-muted-foreground"><Thumb src={carImg} size={40} /> Which vehicle</p>
-                <p className="mt-2 text-sm leading-relaxed text-foreground/85">{plan.vehicle}</p>
+                <p className="mt-2 text-sm leading-relaxed text-foreground/85"><T>{plan.vehicle}</T></p>
               </div>
               {roadTips.map((t) => (
                 <div key={t.kind} className="rounded-lg border border-border bg-card p-6">
-                  <p className="text-xs uppercase tracking-wider text-muted-foreground">{t.kind}</p>
-                  <p className="mt-2 font-display text-lg font-semibold text-foreground">{t.title}</p>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t.text}</p>
+                  <p className="text-xs uppercase tracking-wider text-muted-foreground"><T>{t.kind}</T></p>
+                  <p className="mt-2 font-display text-lg font-semibold text-foreground"><T>{t.title}</T></p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground"><T>{t.text}</T></p>
                 </div>
               ))}
             </div>
