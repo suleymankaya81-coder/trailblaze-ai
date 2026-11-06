@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import type { ReactNode } from "react";
 
 import { Footer } from "@/components/site/Footer";
@@ -28,10 +29,10 @@ export function StaticPageLayout({
         <div className="max-w-[680px]">
           <Thumb src={planImage} size={64} className="mb-5" />
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sage-deep">
-            {eyebrow}
+            {typeof eyebrow==="string"?<T>{eyebrow}</T>:eyebrow}
           </p>
-          <h1 className="mt-3 font-display text-[34px] leading-tight text-foreground md:text-[56px]">{title}</h1>
-          {lede && <p className="mt-4 text-base text-muted-foreground">{lede}</p>}
+          <h1 className="mt-3 font-display text-[34px] leading-tight text-foreground md:text-[56px]">{typeof title==="string"?<T>{title}</T>:title}</h1>
+          {lede && <p className="mt-4 text-base text-muted-foreground">{typeof lede==="string"?<T>{lede}</T>:lede}</p>}
           {updated && <p className="mt-2 text-xs text-muted-foreground">Last updated {updated}</p>}
         </div>
         </div>
