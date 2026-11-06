@@ -1,4 +1,5 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
+import { T } from "@/lib/i18n";
 import { ChevronRight } from "lucide-react";
 import type { ComponentType, ReactNode } from "react";
 
@@ -17,9 +18,9 @@ export function Breadcrumbs({ crumbs, className = "" }: { crumbs: Crumb[]; class
           return (
             <li key={c.path} className="inline-flex items-center gap-1">
               {last ? (
-                <span aria-current="page" className="opacity-90">{c.name}</span>
+                <span aria-current="page" className="opacity-90"><T>{c.name}</T></span>
               ) : (
-                <PathLink to={c.path} className="hover:underline">{c.name}</PathLink>
+                <PathLink to={c.path} className="hover:underline"><T>{c.name}</T></PathLink>
               )}
               {!last && <ChevronRight aria-hidden className="h-3 w-3 opacity-60" />}
             </li>
