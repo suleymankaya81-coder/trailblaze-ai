@@ -1,6 +1,8 @@
+import generated from "./phrases.de.generated.json";
 // German wording for fixed English page text, keyed by the exact English phrase.
 // Missing phrases fall back to English.
 export const DE_PHRASES: Record<string, string> = {
+  ...(generated as Record<string, string>),
   "A few things worth knowing": "Gut zu wissen",
   "Official park information": "Offizielle Parkinformationen",
   "See places to stay": "Unterkünfte ansehen",
