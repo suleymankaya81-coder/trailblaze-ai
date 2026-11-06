@@ -9,7 +9,8 @@ import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { TripEssentials } from "@/components/destination/TripEssentials";
-import { createFileRoute, Link, notFound, useLoaderData } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
+import { createFileRoute, notFound, useLoaderData } from "@tanstack/react-router";
 import { ViatorPlaceBlock } from "@/components/destination/ViatorPlaceBlock";
 import { Caravan, Clock, Tent } from "lucide-react";
 

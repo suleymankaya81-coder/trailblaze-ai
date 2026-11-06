@@ -1,6 +1,7 @@
 import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
-import { createFileRoute, Link, useLoaderData } from "@tanstack/react-router";
+import { Link } from "@/components/site/LocalLink";
+import { createFileRoute, useLoaderData } from "@tanstack/react-router";
 import { EditorialCard } from "@/components/ui-kit";
 import roadImg from "@/assets/thumbs/road.jpg";
 import flightImg from "@/assets/thumbs/flight.jpg";
