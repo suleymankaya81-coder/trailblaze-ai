@@ -1,4 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
+import type * as React from "react";
+import { deAlternates } from "@/lib/i18n/deTemplate";
+import { createFileRoute, useLoaderData } from "@tanstack/react-router";
 
 import { GuideHub } from "@/components/guides/GuideHub";
 import { getHubEntries } from "@/lib/data/guideHubs.functions";
@@ -9,8 +11,10 @@ import { breadcrumbScript, hubCrumbs } from "@/lib/seo/breadcrumbs";
 const title = HUB_SEO.noReservation.title;
 const description = HUB_SEO.noReservation.description;
 
+const loadPage = () => getHubEntries({ data: { family: "no-reservation" } });
+
 export const Route = createFileRoute("/no-reservation/")({
-  loader: () => getHubEntries({ data: { family: "no-reservation" } }),
+  loader: loadPage,
   head: ({ loaderData }) => ({
     meta: [
       { title }, { name: "description", content: description },
@@ -19,8 +23,12 @@ export const Route = createFileRoute("/no-reservation/")({
       ...((image => image?.startsWith("https://") ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : [])(loaderData?.find(e => e.heroImage)?.heroImage)),
       { property: "og:url", content: `${SITE}/no-reservation` },
     ],
-    links: [{ rel: "canonical", href: `${SITE}/no-reservation` }],
+    links: [{ rel: "canonical", href: `${SITE}/no-reservation` }, ...deAlternates(`${SITE}/no-reservation`)],
     scripts: [breadcrumbScript(hubCrumbs("No reservation? Entry rules & backup plans", "/no-reservation"))],
   }),
-  component: () => <GuideHub family="no-reservation" kicker="No Reservation" title="No reservation? Entry rules & backup plans" intro="Places where booking matters — what the rules are, how to get in without a reservation, and where to go instead." entries={Route.useLoaderData()} />,
+  component: HubPage,
 });
+
+export function HubPage(): React.ReactElement {
+  return <GuideHub family="no-reservation" kicker="No Reservation" title="No reservation? Entry rules & backup plans" intro="Places where booking matters — what the rules are, how to get in without a reservation, and where to go instead." entries={(useLoaderData({ strict: false }) as Awaited<ReturnType<typeof loadPage>>)} />;
+}

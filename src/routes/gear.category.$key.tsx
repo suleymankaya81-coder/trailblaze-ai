@@ -1,3 +1,4 @@
+import type * as React from "react";
 import { RockbrosCode } from "@/components/shared/RockbrosCode";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useMemo, useState } from "react";

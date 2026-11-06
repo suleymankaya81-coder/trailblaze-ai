@@ -1,4 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
+import type * as React from "react";
+import { deAlternates } from "@/lib/i18n/deTemplate";
+import { createFileRoute, useLoaderData } from "@tanstack/react-router";
 
 import { GuideHub } from "@/components/guides/GuideHub";
 import { getHubEntries } from "@/lib/data/guideHubs.functions";
@@ -9,8 +11,10 @@ import { breadcrumbScript, hubCrumbs } from "@/lib/seo/breadcrumbs";
 const title = HUB_SEO.rvCamping.title;
 const description = HUB_SEO.rvCamping.description;
 
+const loadPage = () => getHubEntries({ data: { family: "rv-camping" } });
+
 export const Route = createFileRoute("/rv-camping/")({
-  loader: () => getHubEntries({ data: { family: "rv-camping" } }),
+  loader: loadPage,
   head: ({ loaderData }) => ({
     meta: [
       { title }, { name: "description", content: description },
@@ -19,8 +23,12 @@ export const Route = createFileRoute("/rv-camping/")({
       ...((image => image?.startsWith("https://") ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : [])(loaderData?.find(e => e.heroImage)?.heroImage)),
       { property: "og:url", content: `${SITE}/rv-camping` },
     ],
-    links: [{ rel: "canonical", href: `${SITE}/rv-camping` }],
+    links: [{ rel: "canonical", href: `${SITE}/rv-camping` }, ...deAlternates(`${SITE}/rv-camping`)],
     scripts: [breadcrumbScript(hubCrumbs("RV & camping guides", "/rv-camping"))],
   }),
-  component: () => <GuideHub family="rv-camping" kicker="RV & Camping" title="RV & camping guides" intro="Places that work well by RV or campervan, with campgrounds, RV parks and rental options." entries={Route.useLoaderData()} />,
+  component: HubPage,
 });
+
+export function HubPage(): React.ReactElement {
+  return <GuideHub family="rv-camping" kicker="RV & Camping" title="RV & camping guides" intro="Places that work well by RV or campervan, with campgrounds, RV parks and rental options." entries={(useLoaderData({ strict: false }) as Awaited<ReturnType<typeof loadPage>>)} />;
+}

@@ -1,3 +1,5 @@
+import type * as React from "react";
+import { deAlternates } from "@/lib/i18n/deTemplate";
 import { Thumb, SwipeRow } from "@/components/ui-kit";
 import roadImg from "@/assets/thumbs/road.jpg";
 import planImg from "@/assets/thumbs/plan.jpg";
@@ -6,7 +8,7 @@ import carImg from "@/assets/thumbs/car.jpg";
 import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
-import { createFileRoute, Link, notFound, ClientOnly } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, ClientOnly, useLoaderData } from "@tanstack/react-router";
 import { lazy, Suspense } from "react";
 import { CalendarDays, Globe2, MapPin, Plane, Route as RouteIcon, ShieldAlert } from "lucide-react";
 
@@ -26,14 +28,16 @@ import { CorridorTourFrame } from "@/components/guides/CorridorTourFrame";
 
 const RoadTripMap = lazy(() => import("@/components/destination/RoadTripMap"));
 
+const loadPage = async ({ params }: { params: { slug: string } }) => {
+  const corridor = getCorridor(params.slug);
+  if (!corridor) throw notFound();
+  const stops = await getLoopStops({ data: { slugs: corridor.stops } });
+  if (stops.length < 3) throw notFound();
+  return { corridor, stops, url: `${SITE}/corridors/${corridor.slug}` };
+};
+
 export const Route = createFileRoute("/corridors/$slug")({
-  loader: async ({ params }) => {
-    const corridor = getCorridor(params.slug);
-    if (!corridor) throw notFound();
-    const stops = await getLoopStops({ data: { slugs: corridor.stops } });
-    if (stops.length < 3) throw notFound();
-    return { corridor, stops, url: `${SITE}/corridors/${corridor.slug}` };
-  },
+  loader: loadPage,
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
     const { corridor, url, stops } = loaderData;
@@ -52,7 +56,7 @@ export const Route = createFileRoute("/corridors/$slug")({
         ...(image?.startsWith("https://") ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : []),
         ...(corridor.pilot ? [{ name: "robots", content: "noindex" }] : []),
       ],
-      links: [{ rel: "canonical", href: url }],
+      links: [{ rel: "canonical", href: url }, ...deAlternates(url)],
       scripts: [{ type: "application/ld+json", children: JSON.stringify(buildCorridorJsonLd(corridor, stops, url)) }],
     };
   },
@@ -60,8 +64,8 @@ export const Route = createFileRoute("/corridors/$slug")({
   notFoundComponent: () => <div className="container-page py-20">This route does not exist.</div>,
 });
 
-function Page() {
-  const { corridor, stops } = Route.useLoaderData();
+export function Page(): React.ReactElement {
+  const { corridor, stops } = (useLoaderData({ strict: false }) as Awaited<ReturnType<typeof loadPage>>);
   const loop = [...stops, stops[0]];
   const miles = Math.round(loop.slice(1).reduce((m, s, i) => m + haversineMiles([loop[i].lng, loop[i].lat], [s.lng, s.lat]), 0));
   const line = loop.map((s) => [s.lng, s.lat] as [number, number]);

@@ -1,4 +1,6 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import type * as React from "react";
+import { deAlternates } from "@/lib/i18n/deTemplate";
+import { createFileRoute, Link, useLoaderData } from "@tanstack/react-router";
 import { PlaceCard } from "@/components/ui-kit";
 import flightImg from "@/assets/thumbs/flight.jpg";
 
@@ -14,6 +16,8 @@ const title = HUB_SEO.corridors.title;
 const description = HUB_SEO.corridors.description;
 const url = "https://minialife.com/corridors";
 
+const loadPage = () => getDestinationCovers({ data: { slugs: [...new Set(CORRIDORS.flatMap((c) => c.stops))] } });
+
 export const Route = createFileRoute("/corridors/")({
   head: ({ loaderData }) => ({
     meta: [
@@ -26,16 +30,16 @@ export const Route = createFileRoute("/corridors/")({
       { name: "twitter:card", content: "summary_large_image" },
       ...((image => image?.startsWith("https://") ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : [])((() => { const stops = CORRIDORS.filter(c => !c.pilot)[0]?.stops ?? []; const slug = stops.slice(1).find(s => loaderData?.[s]) ?? stops.find(s => loaderData?.[s]); return slug ? loaderData?.[slug] : undefined; })())),
     ],
-    links: [{ rel: "canonical", href: url }],
+    links: [{ rel: "canonical", href: url }, ...deAlternates(url)],
     scripts: [breadcrumbScript([HOME, ROAD_TRIPS, GATEWAY_TRIPS])],
   }),
-  loader: () => getDestinationCovers({ data: { slugs: [...new Set(CORRIDORS.flatMap((c) => c.stops))] } }),
+  loader: loadPage,
   component: Page,
 });
 
-function Page() {
+export function Page(): React.ReactElement {
   const list = CORRIDORS.filter((c) => !c.pilot);
-  const covers = Route.useLoaderData();
+  const covers = (useLoaderData({ strict: false }) as Awaited<ReturnType<typeof loadPage>>);
   const coverFor = (stops: string[]) => { const s = stops.slice(1).find((x) => covers[x]) ?? stops.find((x) => covers[x]); return s ? covers[s] : undefined; };
   return (
     <div className="min-h-screen bg-background">

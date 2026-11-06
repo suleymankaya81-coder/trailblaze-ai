@@ -1,3 +1,5 @@
+import type * as React from "react";
+import { deAlternates } from "@/lib/i18n/deTemplate";
 import { Thumb, SwipeRow } from "@/components/ui-kit";
 import roadImg from "@/assets/thumbs/road.jpg";
 import planImg from "@/assets/thumbs/plan.jpg";
@@ -6,7 +8,7 @@ import carImg from "@/assets/thumbs/car.jpg";
 import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, useLoaderData } from "@tanstack/react-router";
 import { ClientOnly } from "@tanstack/react-router";
 import { lazy, Suspense } from "react";
 import { CalendarDays, MapPin, Route as RouteIcon, ShieldAlert } from "lucide-react";
@@ -26,14 +28,16 @@ import { getLoop, loopGatewayAirport, haversineMiles, jsonLdScript, loopFaqs, lo
 
 const RoadTripMap = lazy(() => import("@/components/destination/RoadTripMap"));
 
+const loadPage = async ({ params }: { params: { slug: string } }) => {
+  const loop = getLoop(params.slug);
+  if (!loop) throw notFound();
+  const stops = await getLoopStops({ data: { slugs: loop.stops } });
+  if (stops.length !== loop.stops.length || !validateLoop(stops)) throw notFound();
+  return { loop, stops, faqs: loopFaqs(loop, stops), url: `${SITE}/road-trips/${loop.slug}` };
+};
+
 export const Route = createFileRoute("/road-trips/$slug")({
-  loader: async ({ params }) => {
-    const loop = getLoop(params.slug);
-    if (!loop) throw notFound();
-    const stops = await getLoopStops({ data: { slugs: loop.stops } });
-    if (stops.length !== loop.stops.length || !validateLoop(stops)) throw notFound();
-    return { loop, stops, faqs: loopFaqs(loop, stops), url: `${SITE}/road-trips/${loop.slug}` };
-  },
+  loader: loadPage,
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
     const { loop, stops, faqs, url } = loaderData;
@@ -51,7 +55,7 @@ export const Route = createFileRoute("/road-trips/$slug")({
         { name: "twitter:card", content: "summary_large_image" },
         ...(img ? [{ property: "og:image", content: img }, { name: "twitter:image", content: img }] : []),
       ],
-      links: [{ rel: "canonical", href: url }],
+      links: [{ rel: "canonical", href: url }, ...deAlternates(url)],
       scripts: [{ type: "application/ld+json", children: jsonLdScript(loopJsonLd(loop, stops, faqs, url)) }],
     };
   },
@@ -60,8 +64,8 @@ export const Route = createFileRoute("/road-trips/$slug")({
   notFoundComponent: () => <div className="container-page py-20">This road trip does not exist.</div>,
 });
 
-function Page() {
-  const { loop, stops, faqs } = Route.useLoaderData();
+export function Page(): React.ReactElement {
+  const { loop, stops, faqs } = (useLoaderData({ strict: false }) as Awaited<ReturnType<typeof loadPage>>);
   const totalDays = stops.reduce((s, x) => s + suggestedDays(x.tripDurationDays), 0);
   const line = stops.map((s) => [s.lng, s.lat] as [number, number]);
   const markers = stops.slice(1, -1).map((s) => ({ name: s.name, lng: s.lng, lat: s.lat, sourceUrl: `${SITE}/destinations/${s.slug}` }));

@@ -18,4 +18,4 @@ export function hreflangLinks(path: string, available: Locale[]) {
 }
 
 /** Pages whose German version always exists (interface-only translation). */
-export const STATIC_TRANSLATED_PATHS = ["/", "/destinations", "/road-trips"] as const;
+export const STATIC_TRANSLATED_PATHS = ["/", "/destinations", "/road-trips", "/about", "/trip-guides", "/gear", "/fly-and-drive", "/no-reservation", "/rv-camping", "/corridors"] as const;

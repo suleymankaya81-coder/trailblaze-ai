@@ -1,4 +1,6 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import type * as React from "react";
+import { deAlternates } from "@/lib/i18n/deTemplate";
+import { createFileRoute, Link, useLoaderData } from "@tanstack/react-router";
 import { EditorialCard } from "@/components/ui-kit";
 import roadImg from "@/assets/thumbs/road.jpg";
 import flightImg from "@/assets/thumbs/flight.jpg";
@@ -29,6 +31,8 @@ const FAMILIES = [
   { cover: "yellowstone", to: "/destinations", icon: mapImg, count: "500 places", label: "All Destinations", text: "Every place with its map, day-by-day plan and stays." },
 ];
 
+const loadPage = () => getDestinationCovers({ data: { slugs: FAMILIES.map((f) => f.cover) } });
+
 export const Route = createFileRoute("/trip-guides")({
   head: ({ loaderData }) => ({
     meta: [
@@ -38,15 +42,15 @@ export const Route = createFileRoute("/trip-guides")({
       ...((image => image?.startsWith("https://") ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : [])(loaderData?.["yellowstone"] ?? Object.values(loaderData ?? {})[0])),
       { property: "og:url", content: `${SITE}/trip-guides` },
     ],
-    links: [{ rel: "canonical", href: `${SITE}/trip-guides` }],
+    links: [{ rel: "canonical", href: `${SITE}/trip-guides` }, ...deAlternates(`${SITE}/trip-guides`)],
     scripts: [breadcrumbScript([HOME, TRIP_GUIDES])],
   }),
-  loader: () => getDestinationCovers({ data: { slugs: FAMILIES.map((f) => f.cover) } }),
+  loader: loadPage,
   component: Page,
 });
 
-function Page() {
-  const covers = Route.useLoaderData();
+export function Page(): React.ReactElement {
+  const covers = (useLoaderData({ strict: false }) as Awaited<ReturnType<typeof loadPage>>);
   return (
     <div className="min-h-screen bg-background">
       <Header />
