@@ -49,8 +49,8 @@ export function CategoryTile({ to, image, label, detail }: { to: string; image: 
       <span className="block aspect-square w-full overflow-hidden rounded-[10px] bg-thumb p-2">
         <SafeImage src={image} alt="" loading="lazy" className="h-full w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-105" />
       </span>
-      <span className="mt-3 text-sm font-semibold text-foreground group-hover:underline">{label}</span>
-      {detail && <span className="mt-0.5 text-xs text-muted-foreground">{detail}</span>}
+      <span className="mt-3 text-sm font-semibold text-foreground group-hover:underline"><T>{label}</T></span>
+      {detail && <span className="mt-0.5 text-xs text-muted-foreground"><T>{detail}</T></span>}
     </Link>
   );
 }

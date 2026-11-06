@@ -86,7 +86,7 @@ function HomePage() {
               {featured.map((d, i) => (
                 <div key={d.slug} className={i === 0 ? "md:col-span-2 md:row-span-2" : ""}>
                   <PlaceCard to="/destinations/$slug" params={{ slug: d.slug }} image={d.heroImage} alt={d.name} large={i === 0}
-                    badges={[d.bestSeason ? `Best: ${d.bestSeason}` : null, d.tripDurationDays].filter((x): x is string => !!x)}
+                    badges={[d.bestSeason ? `${tp("Best:")} ${d.bestSeason}` : null, d.tripDurationDays].filter((x): x is string => !!x)}
                     title={d.name} info={d.region} action="See the plan" />
                 </div>
               ))}
@@ -103,7 +103,7 @@ function HomePage() {
           <SwipeRow className="md:grid-cols-2 lg:grid-cols-4">
             {LOOPS.slice(0, 4).map((l, i) => (
               <PlaceCard key={l.slug} to="/road-trips/$slug" params={{ slug: l.slug }} image={loopImage(l.stops, i)} alt={`${l.title} route scenery`}
-                badges={[`${l.stops.length} stops`, l.region]} title={l.title} summary={l.intro} action="See the route" />
+                badges={[`${l.stops.length} ${tp("stops")}`, l.region]} title={l.title} summary={l.intro} action="See the route" />
             ))}
           </SwipeRow>
         </div>

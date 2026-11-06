@@ -34,7 +34,7 @@ export function StartHere({ parkImage }: { parkImage?: string }) {
         <ol className="grid gap-6 md:grid-cols-3">
           {steps.map((s, i) => <li key={s.title} className="flex gap-4 md:flex-col">
             <Thumb src={s.img} alt="" size={72} />
-            <div><p className="text-xs font-semibold text-sage-deep">Step {i + 1}</p><h3 className="mt-1 text-lg leading-snug"><T>{s.title}</T></h3><p className="mt-2 text-sm leading-relaxed text-muted-foreground"><T>{s.text}</T></p></div>
+            <div><p className="text-xs font-semibold text-sage-deep"><T>Step</T> {i + 1}</p><h3 className="mt-1 text-lg leading-snug"><T>{s.title}</T></h3><p className="mt-2 text-sm leading-relaxed text-muted-foreground"><T>{s.text}</T></p></div>
           </li>)}
         </ol>
       </div>

@@ -11,7 +11,7 @@ export function TravelFlow({ name, plan }: { name: string; plan: TravelPlan }) {
   }
   return <section id="flow" className="scroll-mt-24">
     <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
-      <div><p className="mb-2 text-xs font-semibold uppercase text-sage-deep"><T>A little structure. Plenty of freedom.</T></p><h2 className="text-2xl text-foreground md:text-3xl">{plan.days.length} days in {name}</h2></div>
+      <div><p className="mb-2 text-xs font-semibold uppercase text-sage-deep"><T>A little structure. Plenty of freedom.</T></p><h2 className="text-2xl text-foreground md:text-3xl">{plan.days.length} <T>days in</T> {name}</h2></div>
       <Button variant="outline" onClick={download}><Download /> <T>Save trip</T></Button>
     </div>
     <ol className="grid gap-4 md:grid-cols-2">
