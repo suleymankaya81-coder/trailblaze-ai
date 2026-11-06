@@ -39,3 +39,9 @@ describe("phrase translation", () => {
     expect(tp("de", "Arches National Park")).toBe("Arches National Park");
   });
 });
+
+describe("combined phrases", () => {
+  it("translates each part around a middle dot", () => {
+    expect(tp("de", "Est. from $35/night · estimate")).toBe("Ca. ab 35 $/Nacht · Schätzung");
+  });
+});

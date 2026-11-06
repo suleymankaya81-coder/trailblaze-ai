@@ -34,6 +34,8 @@ export function tp(locale: Locale, text: string): string {
   const hit = dict[text];
   if (hit) return hit;
   for (const [re, out] of PATTERNS[locale] ?? []) if (re.test(text)) return text.replace(re, out);
+  // "Est. from $35/night · estimate": translate each " · " part on its own.
+  if (text.includes(" · ")) return text.split(" · ").map((part) => tp(locale, part)).join(" · ");
   return text;
 }
 

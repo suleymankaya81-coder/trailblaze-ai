@@ -435,7 +435,7 @@ function TopStays({ dest }: { dest: DestinationView }) {
                 : "border border-border bg-card text-foreground/70 hover:bg-muted")
             }
           >
-            {c}
+            <T>{c}</T>
           </Button>
         ))}
       </div>
@@ -510,7 +510,7 @@ function StayCard({
         </p>
         {(offer.whyRecommended || offer.description) && (
           <p className="mt-2 line-clamp-3 text-xs leading-relaxed text-muted-foreground">
-            {offer.whyRecommended ?? offer.description}
+            <T>{offer.whyRecommended ?? offer.description ?? ""}</T>
           </p>
         )}
         <div className="mt-auto flex flex-col gap-3 border-t border-border pt-3">

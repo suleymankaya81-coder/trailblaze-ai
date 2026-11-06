@@ -63,7 +63,7 @@ export function TripEssentials({ context }: { context: EssentialsContext }) {
           <div className="flex flex-1 flex-col p-4 pt-0">
             <p className="text-[11px] font-semibold text-sage-deep"><T>Wildlife & night viewing</T></p>
             <h3 className="mt-2 text-base font-semibold leading-snug text-foreground"><T>{binocular.name}</T></h3>
-            <p className="mb-4 mt-2 text-xs leading-relaxed text-muted-foreground">{binocular.spec}. Check park rules before using lights at night.</p>
+            <p className="mb-4 mt-2 text-xs leading-relaxed text-muted-foreground"><T>{`${binocular.spec}. Check park rules before using lights at night.`}</T></p>
             <div className="mt-auto">
               <p className="mb-3 text-base font-semibold text-foreground">{wildguarderPrice(binocular)} <span className="text-[10px] font-normal text-muted-foreground"><T>USD · store price</T></span></p>
               <Button asChild className="h-auto min-h-12 w-full whitespace-normal rounded-md px-2 text-xs">

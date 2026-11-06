@@ -265,6 +265,9 @@ export const DE_PHRASES: Record<string, string> = {
   "Drive-and-sleep motorhome with kitchen and bathroom.": "Wohnmobil mit Küche und Bad.",
   "Use Ctrl + scroll to zoom the map": "Strg + Scrollen zum Zoomen der Karte",
   "All": "Alle",
+  "estimate": "Schätzung",
+  "Plan & Route": "Plan & Route",
+  "Check park rules before using lights at night.": "Vor nächtlicher Lichtnutzung Parkregeln prüfen.",
   "Hotels": "Hotels",
   "Cabins": "Hütten",
   "Campgrounds": "Campingplätze",
@@ -290,6 +293,8 @@ export const DE_PHRASES: Record<string, string> = {
 
 // Phrases with a variable part ($1, $2 are kept as-is).
 export const DE_PATTERNS: [RegExp, string][] = [
+  [/^(\d+)X optical zoom$/, "$1-facher optischer Zoom"],
+  [/^(\d+)m IR range\. Check park rules before using lights at night\.$/, "$1 m IR-Reichweite. Vor nächtlicher Lichtnutzung Parkregeln prüfen."],
   [/^Explore guided activities around (.+)\. Check the meeting point, dates and availability on Viator before booking\.$/, "Geführte Aktivitäten rund um $1. Prüfen Sie Treffpunkt, Termine und Verfügbarkeit auf Viator vor der Buchung."],
   [/^No matching Viator tours are currently listed for (.+)\.$/, "Für $1 sind derzeit keine passenden Viator-Touren gelistet."],
   [/^about (\d+) miles by car · times vary with traffic and road closures$/, "ca. $1 Meilen mit dem Auto · Zeiten variieren je nach Verkehr und Sperrungen"],
@@ -316,9 +321,8 @@ export const DE_PATTERNS: [RegExp, string][] = [
   [/^Recent fares from ~\$(\d+)(.*)$/i, "Aktuelle Preise ab ca. $$$1$2"],
   [/^recent fares from ~\$(\d+) \(estimate\)$/, "aktuelle Preise ab ca. $$$1 (Schätzung)"],
   [/^(\d.*) drive$/, "$1 Fahrt"],
-  [/^(.+) · estimate$/, "$1 · Schätzung"],
-  [/^Est\. from \$(\d+)\/day(.*)$/, "Ca. ab $1 $/Tag$2"],
-  [/^Est\. from \$(\d+)\/night(.*)$/, "Ca. ab $1 $/Nacht$2"],
+  [/^Est\. from \$(\d+)\/day$/, "Ca. ab $1 $/Tag"],
+  [/^Est\. from \$(\d+)\/night$/, "Ca. ab $1 $/Nacht"],
   [/^Est\. from \$(\d+)$/, "Ca. ab $1 $"],
   [/^From \$(\d+)\/day$/, "Ab $1 $/Tag"],
   [/^Best: (.+)$/, "Beste Zeit: $1"],
