@@ -66,7 +66,7 @@ function Chip({ icon, children }: { icon: ReactNode; children: ReactNode }) {
 export function RouteCard({ dest }: { dest: DestinationView }) {
   return (
     <div className="rounded-lg border border-border bg-card p-6 shadow-soft md:p-8">
-      <p className="text-xs uppercase tracking-wider text-muted-foreground">Your route</p>
+      <p className="text-xs uppercase tracking-wider text-muted-foreground"><T>Your route</T></p>
       <div className="mt-4 flex items-center gap-4">
         <div>
           <p className="font-display text-5xl font-semibold text-foreground"><T>{dest.airportCode}</T></p>
@@ -177,7 +177,7 @@ export function ArrivalPlan({ dest }: { dest: DestinationView }) {
           <Thumb src={stayImg} size={48} />
           <div>
             <p className="font-display text-lg font-semibold text-foreground">03 · First night near {dest.name}</p>
-            <p className="text-sm text-muted-foreground">Sleep close after the drive so day one starts in the park.</p>
+            <p className="text-sm text-muted-foreground"><T>Sleep close after the drive so day one starts in the park.</T></p>
           </div>
         </div>
         <div className="travel-card-row sm:grid-cols-2">

@@ -8,7 +8,7 @@ export function DestinationAnswers({ slug }: { slug: string }) {
   return <section aria-labelledby="travel-answers" className="border-y border-border py-7">
     <div className="mb-6 flex flex-wrap items-baseline justify-between gap-2">
       <h2 id="travel-answers" className="font-display text-2xl text-foreground"><T>A few things worth knowing</T></h2>
-      <p className="text-xs text-muted-foreground">Access rules checked {guide.checkedOn} · Recheck for your dates</p>
+      <p className="text-xs text-muted-foreground">Access rules checked {guide.checkedOn} <T>· Recheck for your dates</T></p>
     </div>
     <dl className="grid gap-6 md:grid-cols-3">
       {guide.answers.map(answer => <div key={answer.question} className="min-w-0">

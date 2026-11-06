@@ -21,7 +21,7 @@ export function BookingStepsStrip({ slug, name, airportCode }: { slug: string; n
   ];
   return (
     <section aria-label="Book your trip in this order" className="border-y border-border py-5">
-      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">Book in this order</p>
+      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground"><T>Book in this order</T></p>
       <SwipeRow className="mt-3 md:grid-cols-2 lg:grid-cols-5">
         {steps.map((s) => (
           <div key={s.label}>

@@ -33,13 +33,13 @@ const steps = [
 export function AboutPage() {
   return <StaticPageLayout eyebrow="About MiniaLife" title="Outdoor travel, one route at a time." lede="Free U.S. outdoor travel guides and self-drive itineraries — for people who would rather be outside.">
     <section>
-      <h2><T>Your place, your pace</T></h2>
-      <p><T>MiniaLife brings national parks, scenic towns and road-trip stops into one planning experience. Use our day-by-day suggestions, maps and arrival guidance to shape your own trip, whether you travel by car, campervan or RV.</T></p>
+      <h2><T><T>Your place, your pace</T></T></h2>
+      <p><T><T>MiniaLife brings national parks, scenic towns and road-trip stops into one planning experience. Use our day-by-day suggestions, maps and arrival guidance to shape your own trip, whether you travel by car, campervan or RV.</T></T></p>
       <p><T>We are an independent travel publisher, not a tour operator or booking agency. Our guides are free to use; bookings and purchases happen on our partners’ sites.</T></p>
-      <Button asChild className="mt-6 min-h-12"><Link to="/destinations"><T>Find your destination</T></Link></Button>
+      <Button asChild className="mt-6 min-h-12"><Link to="/destinations"><T><T>Find your destination</T></T></Link></Button>
     </section>
     <section>
-      <h2>How it works</h2>
+      <h2><T>How it works</T></h2>
       <ol className="mt-6 space-y-6">
         {steps.map((step, index) => <li key={step.title} className="flex gap-4 border-b border-border pb-6">
           <Thumb src={step.image} size={72} />
@@ -50,15 +50,15 @@ export function AboutPage() {
     <section>
       <h2>Independent guidance, clear limits</h2>
       <p><T>Our itineraries are suggestions, not packaged tours. Some planning content is assisted by AI and reviewed through our editorial process; this does not mean every statement or map marker has been independently verified. Park access, road conditions, seasonal services and partner prices can change. Check official sources and the provider before you travel.</T></p>
-      <p><T>Service photographs may illustrate a type of stay or vehicle rather than bookable inventory. Rental and stay price anchors are labelled estimates. Actual tour listings, photos, prices and ratings come from Viator and are confirmed on Viator.</T></p>
+      <p><T><T>Service photographs may illustrate a type of stay or vehicle rather than bookable inventory. Rental and stay price anchors are labelled estimates. Actual tour listings, photos, prices and ratings come from Viator and are confirmed on Viator.</T></T></p>
     </section>
     <section>
-      <h2><T>Curated Trip Essentials</T></h2>
-      <p><T>Optional equipment suggestions support the route and its activities. They are not a complete packing or safety list, and MiniaLife does not operate a retail store.</T></p>
+      <h2><T><T>Curated Trip Essentials</T></T></h2>
+      <p><T><T>Optional equipment suggestions support the route and its activities. They are not a complete packing or safety list, and MiniaLife does not operate a retail store.</T></T></p>
     </section>
     <section>
       <h2>Who publishes MiniaLife</h2>
-      <p><T>MiniaLife is an independent outdoor-travel publisher. For editorial questions, corrections or partnership enquiries,</T> <Link to="/contact">contact us</Link>.</p>
+      <p><T><T>MiniaLife is an independent outdoor-travel publisher. For editorial questions, corrections or partnership enquiries,</T></T> <Link to="/contact">contact us</Link>.</p>
     </section>
   </StaticPageLayout>;
 }
