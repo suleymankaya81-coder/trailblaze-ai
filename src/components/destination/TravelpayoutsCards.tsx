@@ -84,9 +84,9 @@ const TOUR_PRICE: Partial<Record<TpBrand, string>> = { klook: "Est. from $35", t
 /** Tour/ticket partner cards as bare grid items for the activities row. */
 export function TourTicketItems({ slug, name }: { slug: string; name: string }) {
   const doIt: Item[] = [
-    { brand: "klook", name: "Klook", title: `Tours near ${name}`, sub: <T>Guided tours, day trips and attraction deals</T>, icon: Ticket },
-    { brand: "tiqets", name: "Tiqets", title: <T>Tickets & attractions</T>, sub: <T>Instant mobile tickets for nearby sights</T>, icon: Ticket },
-    ...(nearGoCity(slug) ? [{ brand: "gocity" as const, name: "Go City", title: <T>City attraction pass</T>, sub: <T>One pass for the gateway city's top sights</T>, icon: Building2 }] : []),
+    { brand: "klook", name: "Klook", title: `Tours near ${name}`, sub: "Guided tours, day trips and attraction deals", icon: Ticket },
+    { brand: "tiqets", name: "Tiqets", title: "Tickets & attractions", sub: "Instant mobile tickets for nearby sights", icon: Ticket },
+    ...(nearGoCity(slug) ? [{ brand: "gocity" as const, name: "Go City", title: "City attraction pass", sub: "One pass for the gateway city's top sights", icon: Building2 }] : []),
   ];
   return <>{doIt.map((i) => <TourCard key={i.brand} item={i} slug={slug} />)}</>;
 }

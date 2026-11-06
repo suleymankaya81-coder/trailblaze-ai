@@ -53,9 +53,9 @@ export const Route = createFileRoute("/")({
 
 
 const stayTypes: { name: string; category: ServicePhotoCategory; tag: string; why: string; price: string }[] = [
-  { name: <T>In or by the park</T>, category: "hotel", tag: "national_park", why: <T>Shortest drive to trailheads; books up first.</T>, price: <T>Est. from $110/night</T> },
-  { name: <T>Nearby town cabin</T>, category: "cabin", tag: "mountain", why: <T>More space and a kitchen for groups.</T>, price: <T>Est. from $120/night</T> },
-  { name: <T>RV & camping</T>, category: "rvpark", tag: "rv_road_trip", why: <T>Outdoor sites for tents and RVs; facilities and fees vary.</T>, price: <T>Est. from $35/night</T> },
+  { name: "In or by the park", category: "hotel", tag: "national_park", why: "Shortest drive to trailheads; books up first.", price: "Est. from $110/night" },
+  { name: "Nearby town cabin", category: "cabin", tag: "mountain", why: "More space and a kitchen for groups.", price: "Est. from $120/night" },
+  { name: "RV & camping", category: "rvpark", tag: "rv_road_trip", why: "Outdoor sites for tents and RVs; facilities and fees vary.", price: "Est. from $35/night" },
 ];
 
 const why = [
@@ -81,13 +81,13 @@ function HomePage() {
       {featured.length > 0 && (
         <section id="destinations" className="section-y border-t border-border">
           <div className="container-page">
-            <SectionHead kicker={<T>Popular right now</T>} title={<T>Where travelers are headed</T>} action={<SectionLink to="/destinations"><T>All destinations</T></SectionLink>} />
+            <SectionHead kicker="Popular right now" title="Where travelers are headed" action={<SectionLink to="/destinations"><T>All destinations</T></SectionLink>} />
             <SwipeRow className="md:grid-cols-4 md:grid-rows-2">
               {featured.map((d, i) => (
                 <div key={d.slug} className={i === 0 ? "md:col-span-2 md:row-span-2" : ""}>
                   <PlaceCard to="/destinations/$slug" params={{ slug: d.slug }} image={d.heroImage} alt={d.name} large={i === 0}
                     badges={[d.bestSeason ? `Best: ${d.bestSeason}` : null, d.tripDurationDays].filter((x): x is string => !!x)}
-                    title={d.name} info={d.region} action={<T>See the plan</T>} />
+                    title={d.name} info={d.region} action="See the plan" />
                 </div>
               ))}
             </SwipeRow>
@@ -99,11 +99,11 @@ function HomePage() {
 
       <section className="section-y bg-card">
         <div className="container-page">
-          <SectionHead kicker={<T>Road trip loops</T>} title={<T>Multi-park routes, planned for you</T>} action={<SectionLink to="/road-trips"><T>All loops</T></SectionLink>} />
+          <SectionHead kicker="Road trip loops" title="Multi-park routes, planned for you" action={<SectionLink to="/road-trips"><T>All loops</T></SectionLink>} />
           <SwipeRow className="md:grid-cols-2 lg:grid-cols-4">
             {LOOPS.slice(0, 4).map((l, i) => (
               <PlaceCard key={l.slug} to="/road-trips/$slug" params={{ slug: l.slug }} image={loopImage(l.stops, i)} alt={`${l.title} route scenery`}
-                badges={[`${l.stops.length} stops`, l.region]} title={l.title} summary={l.intro} action={<T>See the route</T>} />
+                badges={[`${l.stops.length} stops`, l.region]} title={l.title} summary={l.intro} action="See the route" />
             ))}
           </SwipeRow>
         </div>
@@ -117,7 +117,7 @@ function HomePage() {
 
       <section id="stay-types" className="section-y bg-card">
         <div className="container-page">
-          <SectionHead kicker={<T>Where to stay</T>} title={<T>Pick the stay that fits your trip</T>} action={<SectionLink to="/destinations"><T>Browse places</T></SectionLink>} />
+          <SectionHead kicker="Where to stay" title="Pick the stay that fits your trip" action={<SectionLink to="/destinations"><T>Browse places</T></SectionLink>} />
           <SwipeRow className="md:grid-cols-3">
             {stayTypes.map((s) => {
               const photo = servicePhoto(s.category, "homepage-stays");
@@ -141,25 +141,25 @@ function HomePage() {
 
       <section className="section-y">
         <div className="container-page">
-          <SectionHead kicker={<T>Trip guides</T>} title={<T>Guides for the way you travel</T>} action={<SectionLink to="/trip-guides"><T>All trip guides</T></SectionLink>} />
+          <SectionHead kicker="Trip guides" title="Guides for the way you travel" action={<SectionLink to="/trip-guides"><T>All trip guides</T></SectionLink>} />
           <SwipeRow className="md:grid-cols-3">
-            <EditorialCard to="/fly-and-drive" image={flightImg} title={<T>Fly & Drive</T>} summary={<T>Land at the nearest airport, pick up a car and reach the park the same day.</T>} action={<T>Plan a fly-in trip</T>} />
-            <EditorialCard to="/no-reservation" image={roadImg} title={<T>No reservation needed</T>} summary={<T>Parks you can visit without timed-entry permits, with current notes.</T>} action={<T>See open parks</T>} />
-            <EditorialCard to="/rv-camping" image={rvImg} title={<T>RV & camping</T>} summary={<T>Where to pick up an RV and which places suit campers best.</T>} action={<T>Plan an RV trip</T>} />
+            <EditorialCard to="/fly-and-drive" image={flightImg} title="Fly & Drive" summary="Land at the nearest airport, pick up a car and reach the park the same day." action="Plan a fly-in trip" />
+            <EditorialCard to="/no-reservation" image={roadImg} title="No reservation needed" summary="Parks you can visit without timed-entry permits, with current notes." action="See open parks" />
+            <EditorialCard to="/rv-camping" image={rvImg} title="RV & camping" summary="Where to pick up an RV and which places suit campers best." action="Plan an RV trip" />
           </SwipeRow>
         </div>
       </section>
 
       <section className="section-y bg-card">
         <div className="container-page">
-          <TripEssentials context={{ slug: "homepage", name: <T>your road trip</T> }} />
+          <TripEssentials context={{ slug: "homepage", name: "your road trip" }} />
           <div className="mt-2"><SectionLink to="/gear"><T>Go to the Gear Shop</T></SectionLink></div>
         </div>
       </section>
 
       <section className="section-y border-t border-border">
         <div className="container-page">
-          <SectionHead kicker={<T>Why MiniaLife</T>} title={<T>Plan with confidence</T>} />
+          <SectionHead kicker="Why MiniaLife" title="Plan with confidence" />
           <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {why.map((w) => <li key={w.title} className="flex items-start gap-4"><Thumb src={w.img} size={64} /><div><h3 className="text-lg">{w.title}</h3><p className="mt-1 text-sm text-muted-foreground">{w.text}</p></div></li>)}
           </ul>

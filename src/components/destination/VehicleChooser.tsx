@@ -5,9 +5,9 @@ export type VehiclePick = "car" | "suv" | "rv";
 export const VEHICLE_PILOT_SLUGS = ["grand-canyon"];
 
 const OPTIONS: { id: VehiclePick; title: string; hint: string }[] = [
-  { id: "car", title: <T>Car</T>, hint: "Solo or couple, staying in hotels" },
-  { id: "suv", title: <T>SUV</T>, hint: "Family, luggage or dirt roads" },
-  { id: "rv", title: <T>Motorhome / campervan</T>, hint: "Sleep inside the park" },
+  { id: "car", title: "Car", hint: "Solo or couple, staying in hotels" },
+  { id: "suv", title: "SUV", hint: "Family, luggage or dirt roads" },
+  { id: "rv", title: "Motorhome / campervan", hint: "Sleep inside the park" },
 ];
 
 export function VehicleChooser({ slug, value, onChange }: { slug: string; value: VehiclePick | null; onChange: (v: VehiclePick) => void }) {

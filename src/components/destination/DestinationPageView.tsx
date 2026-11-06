@@ -155,14 +155,14 @@ function Hero({ dest, crumbs }: { dest: DestinationView; crumbs?: Crumb[] }) {
   const source = credit?.sourceUrl ?? commonsFilePage(dest.heroImage);
 
   const stats: { label: string; value: string }[] = [];
-  if (dest.bestSeason) stats.push({ label: <T>Best time</T>, value: dest.bestSeason });
-  if (dest.tripDurationDays) stats.push({ label: <T>Duration</T>, value: dest.tripDurationDays });
+  if (dest.bestSeason) stats.push({ label: "Best time", value: dest.bestSeason });
+  if (dest.tripDurationDays) stats.push({ label: "Duration", value: dest.tripDurationDays });
   if (dest.avgDailyBudget != null)
-    stats.push({ label: <T>Avg. budget</T>, value: `$${dest.avgDailyBudget} / day` });
+    stats.push({ label: "Avg. budget", value: `$${dest.avgDailyBudget} / day` });
   if (dest.scenicScore != null)
-    stats.push({ label: <T>Scenic score</T>, value: `${dest.scenicScore} / 10` });
+    stats.push({ label: "Scenic score", value: `${dest.scenicScore} / 10` });
   if (dest.campingScore != null)
-    stats.push({ label: <T>Camping score</T>, value: `${dest.campingScore} / 10` });
+    stats.push({ label: "Camping score", value: `${dest.campingScore} / 10` });
 
   return (
     <section className="relative isolate overflow-hidden">
@@ -324,7 +324,7 @@ function OfferCta({
   if (!offer.externalUrl) {
     return (
       <span
-        title={<T>Not bookable yet</T>}
+        title="Not bookable yet"
         className={`rounded-full border border-border bg-muted ${pad} font-semibold text-muted-foreground`}
       >
         <T>Coming soon</T>
@@ -418,7 +418,7 @@ function TopStays({ dest }: { dest: DestinationView }) {
     <section id="stays" className="scroll-mt-24">
       <SectionHeader
         step={3}
-        title={<T>Where you'll want to sleep</T>}
+        title="Where you'll want to sleep"
         
       />
 
@@ -688,7 +688,7 @@ function RentalTile({ offer, destinationSlug, photo, kind }: { offer: OfferView;
 function ThingsToDo({ dest }: { dest: DestinationView }) {
   return (
     <section className="scroll-mt-24">
-      <SectionHeader step={4} title={<T>The moments you came for</T>} />
+      <SectionHeader step={4} title="The moments you came for" />
       <div className="grid gap-6 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:items-start">
         <ViatorPlaceBlock slug={dest.slug} name={dest.name} anchored={false} />
         <div className="travel-card-row sm:grid-cols-2 lg:pt-[92px]"><TourTicketItems slug={dest.slug} name={dest.name} /></div>
@@ -702,14 +702,14 @@ function ThingsToDo({ dest }: { dest: DestinationView }) {
    6 — TRAVEL SERVICES
 ========================================================= */
 const SERVICE_META: Record<string, { icon: ReactNode; sub: string }> = {
-  car_rental: { icon: <Navigation className="h-4 w-4" />, sub: <T>Compare prices from top brands</T> },
-  insurance: { icon: <ShieldCheck className="h-4 w-4" />, sub: <T>Protect your trip and gear</T> },
-  esim: { icon: <Wifi className="h-4 w-4" />, sub: <T>Stay connected anywhere</T> },
-  park_pass: { icon: <Trees className="h-4 w-4" />, sub: <T>Official park passes & info</T> },
-  travel_card: { icon: <CreditCard className="h-4 w-4" />, sub: <T>Spend without foreign fees</T> },
+  car_rental: { icon: <Navigation className="h-4 w-4" />, sub: "Compare prices from top brands" },
+  insurance: { icon: <ShieldCheck className="h-4 w-4" />, sub: "Protect your trip and gear" },
+  esim: { icon: <Wifi className="h-4 w-4" />, sub: "Stay connected anywhere" },
+  park_pass: { icon: <Trees className="h-4 w-4" />, sub: "Official park passes & info" },
+  travel_card: { icon: <CreditCard className="h-4 w-4" />, sub: "Spend without foreign fees" },
   offline_maps: {
     icon: <Luggage className="h-4 w-4" />,
-    sub: <T>Drop bags in the gateway city for the day</T>,
+    sub: "Drop bags in the gateway city for the day",
   },
 };
 
@@ -786,7 +786,7 @@ function ServiceRow({ service, destinationSlug }: { service: OfferView; destinat
 
   if (!service.externalUrl) {
     return (
-      <div className={`${rowClass} opacity-60`} title={<T>Coming soon</T>}>
+      <div className={`${rowClass} opacity-60`} title="Coming soon">
         {inner}
       </div>
     );
@@ -825,7 +825,7 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
 
   return (
     <section id="road-trip" className="scroll-mt-24">
-      <SectionHeader title={<T>Plan your road trip</T>} />
+      <SectionHeader title="Plan your road trip" />
       <div className="grid grid-cols-[minmax(0,1fr)] gap-6 rounded-lg border border-border bg-card p-4 shadow-soft sm:p-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
         <div className="relative min-h-[300px] overflow-hidden rounded-xl border border-border bg-beige/60">
           {from && to ? (
@@ -905,28 +905,28 @@ function FieldIntel({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) 
   const tips: { icon: ReactNode; label: string; text: string }[] = [
     {
       icon: <Wifi className="h-4 w-4" />,
-      label: <T>Signal</T>,
+      label: "Signal",
       text:
         ai?.insights.cellCoverage ??
         "Cell signal drops inside and around the park — download offline maps before you leave the gateway town.",
     },
     {
       icon: <Fuel className="h-4 w-4" />,
-      label: <T>Last fuel</T>,
+      label: "Last fuel",
       text: dest.airportName
         ? `Fill up in the gateway town after leaving ${dest.airportName} — fuel near the entrance is pricier and stations are sparse.`
         : "Fill up in the gateway town — fuel near the entrance is pricier and stations are sparse.",
     },
     {
       icon: <Sun className="h-4 w-4" />,
-      label: <T>Beat the crowds</T>,
+      label: "Beat the crowds",
       text:
         ai?.insights.crowdLevels ??
         "Arrive at headline sights before 9 AM; parking lots at the popular trailheads fill first.",
     },
     {
       icon: <Mountain className="h-4 w-4" />,
-      label: <T>Wildlife</T>,
+      label: "Wildlife",
       text:
         ai?.insights.wildlife ??
         "Dawn and dusk are prime wildlife hours — drive slowly and never approach animals for a photo.",
@@ -980,7 +980,7 @@ function TripFlow({ dest }: { dest: DestinationView }) {
   const plan: { day: string; title: string; detail: string; start: string }[] = [];
   plan.push({
     day: "Day 1",
-    title: <T>Arrive & settle in</T>,
+    title: "Arrive & settle in",
     detail: dest.airportCode
       ? `Land at ${dest.airportCode}, pick up your rental, and take the ${dest.driveMinutes != null ? formatDrive(dest.driveMinutes) : "scenic"} drive in. Stock up on groceries and fuel in the gateway town before prices rise near the park.`
       : "Arrive, pick up your rental, and stock up on groceries and fuel in the gateway town before heading in.",
@@ -1002,7 +1002,7 @@ function TripFlow({ dest }: { dest: DestinationView }) {
   }
   plan.push({
     day: `Day ${days}`,
-    title: <T>Golden hour & departure</T>,
+    title: "Golden hour & departure",
     detail:
       "Keep the last morning light for one final viewpoint, then loop back at your own pace. Leave buffer for the drive out — weekend traffic builds after lunch.",
     start: "Start: sunrise",
@@ -1046,7 +1046,7 @@ function SimilarDestinations({ dest }: { dest: DestinationView }) {
   return (
     <section>
       <SectionHeader
-        title={<T>More destinations you'll love</T>}
+        title="More destinations you'll love"
         action={<Link to="/destinations" className="inline-flex min-h-12 items-center text-sm font-semibold text-primary"><T>All destinations</T> <ArrowRight className="ml-1 h-4 w-4" /></Link>}
       />
       {similar.length === 0 ? (

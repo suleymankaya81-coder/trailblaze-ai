@@ -23,9 +23,9 @@ export function HomeExperiences() {
   return (
     <section className="section-y" aria-label="Top bucket-list experiences">
       <div className="container-page">
-        <SectionHead kicker={<T>Viator experiences</T>} title={<T>Top bucket-list experiences</T>} />
+        <SectionHead kicker="Viator experiences" title="Top bucket-list experiences" />
         <p className="-mt-2 mb-5 max-w-2xl text-sm text-muted-foreground"><T>Guided tours travelers book most at America's icons. Check dates and meeting points on Viator.</T></p>
-        <iframe ref={frame} src="/experiences/home" title={<T>Top Viator experiences</T>} loading="lazy" style={{ height: height ?? 460 }} className="w-full border-0 bg-background" />
+        <iframe ref={frame} src="/experiences/home" title="Top Viator experiences" loading="lazy" style={{ height: height ?? 460 }} className="w-full border-0 bg-background" />
       </div>
     </section>
   );

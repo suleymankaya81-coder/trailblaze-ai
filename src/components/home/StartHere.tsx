@@ -40,7 +40,7 @@ export function StartHere({ parkImage }: { parkImage?: string }) {
       </div>
     </section>
     <section className="section-y container-page" aria-labelledby="start-title">
-      <SectionHead kicker={<T>Start here</T>} title={<T>Where would you like to start?</T>} />
+      <SectionHead kicker="Start here" title="Where would you like to start?" />
       <div className="grid grid-cols-3 gap-x-3 gap-y-6 md:grid-cols-5 md:gap-5">
         {entries.map(e => <CategoryTile key={e.to} to={e.to} image={e.image} label={e.title} detail={e.detail} />)}
       </div>

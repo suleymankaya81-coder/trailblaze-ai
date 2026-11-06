@@ -84,22 +84,22 @@ export function VrboExpediaItems({ destinationName }: { destinationName: string 
         brand="Vrbo"
         title={`Cabins & vacation rentals near ${destinationName}`}
         href={buildVrboSearchUrl(destinationName)}
-        cta={<T>Search cabins on Vrbo</T>}
+        cta="Search cabins on Vrbo"
         pic={servicePhoto("cabin", destinationName + ":vrbo") ?? CABINS[0]}
         points={[
-          { icon: Mountain, text: <T>Whole-home cabins and lodges</T> },
-          { icon: Trees, text: <T>Kitchens and room for the crew</T> },
+          { icon: Mountain, text: "Whole-home cabins and lodges" },
+          { icon: Trees, text: "Kitchens and room for the crew" },
         ]}
       />
       <StayCard
         brand="Expedia"
         title={`Hotels & lodges near ${destinationName}`}
         href={buildExpediaHotelSearchUrl(destinationName)}
-        cta={<T>Search hotels on Expedia</T>}
+        cta="Search hotels on Expedia"
         pic={servicePhoto("hotel", destinationName + ":expedia") ?? HOTELS[1]}
         points={[
-          { icon: MapPin, text: <T>Hotels in nearby gateway towns</T> },
-          { icon: BedDouble, text: <T>Inns and last-minute rooms</T> },
+          { icon: MapPin, text: "Hotels in nearby gateway towns" },
+          { icon: BedDouble, text: "Inns and last-minute rooms" },
         ]}
       />
     </>
