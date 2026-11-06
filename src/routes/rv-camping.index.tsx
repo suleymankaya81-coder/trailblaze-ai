@@ -20,7 +20,7 @@ export const Route = createFileRoute("/rv-camping/")({
       ...((image => image?.startsWith("https://") ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : [])(loaderData?.find(e => e.heroImage)?.heroImage)),
       { property: "og:url", content: `${SITE}/rv-camping` },
     ],
-    links: [{ rel: "canonical", href: `${SITE}/rv-camping` }],
+    links: [{ rel: "canonical", href: `${SITE}/rv-camping` }, ...deAlternates(`${SITE}/rv-camping`)],
     scripts: [breadcrumbScript(hubCrumbs("RV & camping guides", "/rv-camping"))],
   }),
   component: HubPage,

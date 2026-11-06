@@ -20,7 +20,7 @@ export const Route = createFileRoute("/no-reservation/")({
       ...((image => image?.startsWith("https://") ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : [])(loaderData?.find(e => e.heroImage)?.heroImage)),
       { property: "og:url", content: `${SITE}/no-reservation` },
     ],
-    links: [{ rel: "canonical", href: `${SITE}/no-reservation` }],
+    links: [{ rel: "canonical", href: `${SITE}/no-reservation` }, ...deAlternates(`${SITE}/no-reservation`)],
     scripts: [breadcrumbScript(hubCrumbs("No reservation? Entry rules & backup plans", "/no-reservation"))],
   }),
   component: HubPage,

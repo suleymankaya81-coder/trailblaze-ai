@@ -39,7 +39,7 @@ export const Route = createFileRoute("/trip-guides")({
       ...((image => image?.startsWith("https://") ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : [])(loaderData?.["yellowstone"] ?? Object.values(loaderData ?? {})[0])),
       { property: "og:url", content: `${SITE}/trip-guides` },
     ],
-    links: [{ rel: "canonical", href: `${SITE}/trip-guides` }],
+    links: [{ rel: "canonical", href: `${SITE}/trip-guides` }, ...deAlternates(`${SITE}/trip-guides`)],
     scripts: [breadcrumbScript([HOME, TRIP_GUIDES])],
   }),
   loader: () => getDestinationCovers({ data: { slugs: FAMILIES.map((f) => f.cover) } }),

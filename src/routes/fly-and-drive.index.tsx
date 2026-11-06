@@ -20,7 +20,7 @@ export const Route = createFileRoute("/fly-and-drive/")({
       ...((image => image?.startsWith("https://") ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : [])(loaderData?.find(e => e.heroImage)?.heroImage)),
       { property: "og:url", content: `${SITE}/fly-and-drive` },
     ],
-    links: [{ rel: "canonical", href: `${SITE}/fly-and-drive` }],
+    links: [{ rel: "canonical", href: `${SITE}/fly-and-drive` }, ...deAlternates(`${SITE}/fly-and-drive`)],
     scripts: [breadcrumbScript(hubCrumbs("Fly & drive guides", "/fly-and-drive"))],
   }),
   component: HubPage,
