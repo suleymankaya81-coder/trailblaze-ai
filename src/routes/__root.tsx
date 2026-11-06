@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
@@ -22,7 +23,7 @@ function NotFoundComponent() {
         <h1 className="font-display text-7xl text-foreground">404</h1>
         <h2 className="mt-4 text-xl font-medium text-foreground">Trail not found</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          That path doesn't exist on the map. Let's get you back to basecamp.
+          <T>That path doesn't exist on the map. Let's get you back to basecamp.</T>
         </p>
         <div className="mt-6">
           <Link

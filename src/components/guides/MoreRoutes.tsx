@@ -23,7 +23,7 @@ export function MoreRoutes({ stops, currentLoop, currentCorridor }: { stops: str
   return (
     <section className="container-page pb-14" aria-labelledby="more-routes-title">
       <div className="border-y border-border py-6">
-        <h2 id="more-routes-title" className="font-display text-2xl text-foreground">More road trips</h2>
+        <h2 id="more-routes-title" className="font-display text-2xl text-foreground"><T>More road trips</T></h2>
         <div className="mt-4 flex flex-wrap gap-3">
           {loops.map((l) => (
             <Link key={l.slug} to="/road-trips/$slug" params={{ slug: l.slug }} className={pill}>
