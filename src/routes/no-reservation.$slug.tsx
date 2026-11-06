@@ -26,15 +26,17 @@ import { SITE, formatDriveShort } from "@/lib/seo/flyDrive";
 import { destGuideJsonLd, isNoReservationEligible, jsonLdScript, noReservationFaqs, reservationNote } from "@/lib/seo/guides";
 import { noReservationDescription, noReservationTitle } from "@/lib/seo/guidesSeo";
 
+const loadPage = async ({ params }: { params: { slug: string } }) => {
+  const dest = await getDestinationPageData({ data: { slug: params.slug } }).catch(() => null);
+  if (!dest || !isNoReservationEligible(dest)) throw notFound();
+  const altSlugs = dest.similar.map((s) => s.slug);
+  const alts = altSlugs.length ? (await getGuideAlternatives({ data: { slugs: altSlugs } })).filter((a) => a.permitLevel === "none") : [];
+  const landingLinks = await getLandingLinksForDestination({ data: { destinationId: dest.id } }).catch(() => []);
+  return { dest, landingLinks, alts, faqs: noReservationFaqs(dest), url: `${SITE}/no-reservation/${dest.slug}` };
+};
+
 export const Route = createFileRoute("/no-reservation/$slug")({
-  loader: async ({ params }) => {
-    const dest = await getDestinationPageData({ data: { slug: params.slug } }).catch(() => null);
-    if (!dest || !isNoReservationEligible(dest)) throw notFound();
-    const altSlugs = dest.similar.map((s) => s.slug);
-    const alts = altSlugs.length ? (await getGuideAlternatives({ data: { slugs: altSlugs } })).filter((a) => a.permitLevel === "none") : [];
-    const landingLinks = await getLandingLinksForDestination({ data: { destinationId: dest.id } }).catch(() => []);
-    return { dest, landingLinks, alts, faqs: noReservationFaqs(dest), url: `${SITE}/no-reservation/${dest.slug}` };
-  },
+  loader: loadPage,
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
     const { dest, faqs, url } = loaderData;
@@ -62,7 +64,7 @@ export const Route = createFileRoute("/no-reservation/$slug")({
 });
 
 export function Page(): React.ReactElement {
-  const { dest, alts, faqs, landingLinks } = (useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>);
+  const { dest, alts, faqs, landingLinks } = (useLoaderData({ strict: false }) as Awaited<ReturnType<typeof loadPage>>);
   const reviewed = getDestinationAnswers(dest.slug)?.reservation;
   const tips = dest.travelPlan?.intel.filter((t) => t.kind === "timing" || t.kind === "access" || t.kind === "parking") ?? [];
   return (

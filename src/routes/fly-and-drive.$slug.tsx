@@ -15,19 +15,21 @@ import { PlanDeeper } from "@/components/guides/PlanDeeper";
 import { getAirportSiblings } from "@/lib/data/flyDrive.functions";
 import { SITE, flyDriveDescription, flyDriveFaqs, flyDriveJsonLd, flyDriveSlug, flyDriveTitle, parseFlyDriveSlug } from "@/lib/seo/flyDrive";
 
+const loadPage = async ({ params }: { params: { slug: string } }) => {
+  const parsed = parseFlyDriveSlug(params.slug);
+  if (!parsed) throw notFound();
+  const dest = await getDestinationPageData({ data: { slug: parsed.destinationSlug } }).catch(() => null);
+  if (!dest) throw notFound();
+  const canonical = flyDriveSlug(dest);
+  if (!canonical || !dest.airportCode || dest.driveMinutes == null) throw notFound();
+  if (canonical !== params.slug) throw redirect({ to: "/fly-and-drive/$slug", params: { slug: canonical }, statusCode: 301 });
+  const siblings = await getAirportSiblings({ data: { airport: dest.airportCode, exclude: dest.slug } });
+  const landingLinks = await getLandingLinksForDestination({ data: { destinationId: dest.id } }).catch(() => []);
+  return { dest, landingLinks, driveMinutes: dest.driveMinutes, siblings, faqs: flyDriveFaqs(dest), url: `${SITE}/fly-and-drive/${canonical}` };
+};
+
 export const Route = createFileRoute("/fly-and-drive/$slug")({
-  loader: async ({ params }) => {
-    const parsed = parseFlyDriveSlug(params.slug);
-    if (!parsed) throw notFound();
-    const dest = await getDestinationPageData({ data: { slug: parsed.destinationSlug } }).catch(() => null);
-    if (!dest) throw notFound();
-    const canonical = flyDriveSlug(dest);
-    if (!canonical || !dest.airportCode || dest.driveMinutes == null) throw notFound();
-    if (canonical !== params.slug) throw redirect({ to: "/fly-and-drive/$slug", params: { slug: canonical }, statusCode: 301 });
-    const siblings = await getAirportSiblings({ data: { airport: dest.airportCode, exclude: dest.slug } });
-    const landingLinks = await getLandingLinksForDestination({ data: { destinationId: dest.id } }).catch(() => []);
-    return { dest, landingLinks, driveMinutes: dest.driveMinutes, siblings, faqs: flyDriveFaqs(dest), url: `${SITE}/fly-and-drive/${canonical}` };
-  },
+  loader: loadPage,
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
     const { dest, faqs, url } = loaderData;
@@ -64,7 +66,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 }
 
 export function FlyDrivePage(): React.ReactElement {
-  const { dest, siblings, faqs, landingLinks } = (useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>);
+  const { dest, siblings, faqs, landingLinks } = (useLoaderData({ strict: false }) as Awaited<ReturnType<typeof loadPage>>);
   return (
     <div className="min-h-screen bg-background">
       <Header />

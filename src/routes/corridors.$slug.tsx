@@ -28,14 +28,16 @@ import { CorridorTourFrame } from "@/components/guides/CorridorTourFrame";
 
 const RoadTripMap = lazy(() => import("@/components/destination/RoadTripMap"));
 
+const loadPage = async ({ params }: { params: { slug: string } }) => {
+  const corridor = getCorridor(params.slug);
+  if (!corridor) throw notFound();
+  const stops = await getLoopStops({ data: { slugs: corridor.stops } });
+  if (stops.length < 3) throw notFound();
+  return { corridor, stops, url: `${SITE}/corridors/${corridor.slug}` };
+};
+
 export const Route = createFileRoute("/corridors/$slug")({
-  loader: async ({ params }) => {
-    const corridor = getCorridor(params.slug);
-    if (!corridor) throw notFound();
-    const stops = await getLoopStops({ data: { slugs: corridor.stops } });
-    if (stops.length < 3) throw notFound();
-    return { corridor, stops, url: `${SITE}/corridors/${corridor.slug}` };
-  },
+  loader: loadPage,
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
     const { corridor, url, stops } = loaderData;
@@ -63,7 +65,7 @@ export const Route = createFileRoute("/corridors/$slug")({
 });
 
 export function Page(): React.ReactElement {
-  const { corridor, stops } = (useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>);
+  const { corridor, stops } = (useLoaderData({ strict: false }) as Awaited<ReturnType<typeof loadPage>>);
   const loop = [...stops, stops[0]];
   const miles = Math.round(loop.slice(1).reduce((m, s, i) => m + haversineMiles([loop[i].lng, loop[i].lat], [s.lng, s.lat]), 0));
   const line = loop.map((s) => [s.lng, s.lat] as [number, number]);

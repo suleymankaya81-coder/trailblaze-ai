@@ -11,8 +11,10 @@ import { breadcrumbScript, hubCrumbs } from "@/lib/seo/breadcrumbs";
 const title = HUB_SEO.noReservation.title;
 const description = HUB_SEO.noReservation.description;
 
+const loadPage = () => getHubEntries({ data: { family: "no-reservation" } });
+
 export const Route = createFileRoute("/no-reservation/")({
-  loader: () => getHubEntries({ data: { family: "no-reservation" } }),
+  loader: loadPage,
   head: ({ loaderData }) => ({
     meta: [
       { title }, { name: "description", content: description },
@@ -28,5 +30,5 @@ export const Route = createFileRoute("/no-reservation/")({
 });
 
 export function HubPage(): React.ReactElement {
-  return <GuideHub family="no-reservation" kicker="No Reservation" title="No reservation? Entry rules & backup plans" intro="Places where booking matters — what the rules are, how to get in without a reservation, and where to go instead." entries={(useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>)} />;
+  return <GuideHub family="no-reservation" kicker="No Reservation" title="No reservation? Entry rules & backup plans" intro="Places where booking matters — what the rules are, how to get in without a reservation, and where to go instead." entries={(useLoaderData({ strict: false }) as Awaited<ReturnType<typeof loadPage>>)} />;
 }

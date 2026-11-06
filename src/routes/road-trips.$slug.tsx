@@ -28,14 +28,16 @@ import { getLoop, loopGatewayAirport, haversineMiles, jsonLdScript, loopFaqs, lo
 
 const RoadTripMap = lazy(() => import("@/components/destination/RoadTripMap"));
 
+const loadPage = async ({ params }: { params: { slug: string } }) => {
+  const loop = getLoop(params.slug);
+  if (!loop) throw notFound();
+  const stops = await getLoopStops({ data: { slugs: loop.stops } });
+  if (stops.length !== loop.stops.length || !validateLoop(stops)) throw notFound();
+  return { loop, stops, faqs: loopFaqs(loop, stops), url: `${SITE}/road-trips/${loop.slug}` };
+};
+
 export const Route = createFileRoute("/road-trips/$slug")({
-  loader: async ({ params }) => {
-    const loop = getLoop(params.slug);
-    if (!loop) throw notFound();
-    const stops = await getLoopStops({ data: { slugs: loop.stops } });
-    if (stops.length !== loop.stops.length || !validateLoop(stops)) throw notFound();
-    return { loop, stops, faqs: loopFaqs(loop, stops), url: `${SITE}/road-trips/${loop.slug}` };
-  },
+  loader: loadPage,
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
     const { loop, stops, faqs, url } = loaderData;
@@ -63,7 +65,7 @@ export const Route = createFileRoute("/road-trips/$slug")({
 });
 
 export function Page(): React.ReactElement {
-  const { loop, stops, faqs } = (useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>);
+  const { loop, stops, faqs } = (useLoaderData({ strict: false }) as Awaited<ReturnType<typeof loadPage>>);
   const totalDays = stops.reduce((s, x) => s + suggestedDays(x.tripDurationDays), 0);
   const line = stops.map((s) => [s.lng, s.lat] as [number, number]);
   const markers = stops.slice(1, -1).map((s) => ({ name: s.name, lng: s.lng, lat: s.lat, sourceUrl: `${SITE}/destinations/${s.slug}` }));

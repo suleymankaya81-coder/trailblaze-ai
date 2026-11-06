@@ -33,13 +33,15 @@ import { rvCampingDescription, rvCampingTitle } from "@/lib/seo/guidesSeo";
 
 const CAMP_PARTNERS = new Set(["campspot", "roverpass"]);
 
+const loadPage = async ({ params }: { params: { slug: string } }) => {
+  const dest = await getDestinationPageData({ data: { slug: params.slug } }).catch(() => null);
+  if (!dest || !isRvEligible(dest)) throw notFound();
+  const landingLinks = await getLandingLinksForDestination({ data: { destinationId: dest.id } }).catch(() => []);
+  return { dest, landingLinks, faqs: rvFaqs(dest), url: `${SITE}/rv-camping/${dest.slug}` };
+};
+
 export const Route = createFileRoute("/rv-camping/$slug")({
-  loader: async ({ params }) => {
-    const dest = await getDestinationPageData({ data: { slug: params.slug } }).catch(() => null);
-    if (!dest || !isRvEligible(dest)) throw notFound();
-    const landingLinks = await getLandingLinksForDestination({ data: { destinationId: dest.id } }).catch(() => []);
-    return { dest, landingLinks, faqs: rvFaqs(dest), url: `${SITE}/rv-camping/${dest.slug}` };
-  },
+  loader: loadPage,
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
     const { dest, faqs, url } = loaderData;
@@ -67,7 +69,7 @@ export const Route = createFileRoute("/rv-camping/$slug")({
 });
 
 export function Page(): React.ReactElement {
-  const { dest, faqs, landingLinks } = (useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>);
+  const { dest, faqs, landingLinks } = (useLoaderData({ strict: false }) as Awaited<ReturnType<typeof loadPage>>);
   const camps = dest.stays.filter((o) => o.partner && CAMP_PARTNERS.has(o.partner) && o.externalUrl).slice(0, 3);
   const rentals = dest.rentals.filter((o) => o.partner === "motorhome_republic" && o.externalUrl).slice(0, 3);
   const plan = dest.travelPlan;

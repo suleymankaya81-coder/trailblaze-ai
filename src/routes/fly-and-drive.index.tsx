@@ -11,8 +11,10 @@ import { breadcrumbScript, hubCrumbs } from "@/lib/seo/breadcrumbs";
 const title = HUB_SEO.flyAndDrive.title;
 const description = HUB_SEO.flyAndDrive.description;
 
+const loadPage = () => getHubEntries({ data: { family: "fly-and-drive" } });
+
 export const Route = createFileRoute("/fly-and-drive/")({
-  loader: () => getHubEntries({ data: { family: "fly-and-drive" } }),
+  loader: loadPage,
   head: ({ loaderData }) => ({
     meta: [
       { title }, { name: "description", content: description },
@@ -28,5 +30,5 @@ export const Route = createFileRoute("/fly-and-drive/")({
 });
 
 export function HubPage(): React.ReactElement {
-  return <GuideHub family="fly-and-drive" kicker="Fly & Drive" title="Fly & drive guides" intro="Pick a place to see the closest airport, the drive time, car rental and the first night's stay." entries={(useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>)} />;
+  return <GuideHub family="fly-and-drive" kicker="Fly & Drive" title="Fly & drive guides" intro="Pick a place to see the closest airport, the drive time, car rental and the first night's stay." entries={(useLoaderData({ strict: false }) as Awaited<ReturnType<typeof loadPage>>)} />;
 }

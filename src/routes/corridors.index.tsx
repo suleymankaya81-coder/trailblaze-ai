@@ -16,6 +16,8 @@ const title = HUB_SEO.corridors.title;
 const description = HUB_SEO.corridors.description;
 const url = "https://minialife.com/corridors";
 
+const loadPage = () => getDestinationCovers({ data: { slugs: [...new Set(CORRIDORS.flatMap((c) => c.stops))] } });
+
 export const Route = createFileRoute("/corridors/")({
   head: ({ loaderData }) => ({
     meta: [
@@ -31,13 +33,13 @@ export const Route = createFileRoute("/corridors/")({
     links: [{ rel: "canonical", href: url }, ...deAlternates(url)],
     scripts: [breadcrumbScript([HOME, ROAD_TRIPS, GATEWAY_TRIPS])],
   }),
-  loader: () => getDestinationCovers({ data: { slugs: [...new Set(CORRIDORS.flatMap((c) => c.stops))] } }),
+  loader: loadPage,
   component: Page,
 });
 
 export function Page(): React.ReactElement {
   const list = CORRIDORS.filter((c) => !c.pilot);
-  const covers = (useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>);
+  const covers = (useLoaderData({ strict: false }) as Awaited<ReturnType<typeof loadPage>>);
   const coverFor = (stops: string[]) => { const s = stops.slice(1).find((x) => covers[x]) ?? stops.find((x) => covers[x]); return s ? covers[s] : undefined; };
   return (
     <div className="min-h-screen bg-background">

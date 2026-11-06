@@ -11,8 +11,10 @@ import { breadcrumbScript, hubCrumbs } from "@/lib/seo/breadcrumbs";
 const title = HUB_SEO.rvCamping.title;
 const description = HUB_SEO.rvCamping.description;
 
+const loadPage = () => getHubEntries({ data: { family: "rv-camping" } });
+
 export const Route = createFileRoute("/rv-camping/")({
-  loader: () => getHubEntries({ data: { family: "rv-camping" } }),
+  loader: loadPage,
   head: ({ loaderData }) => ({
     meta: [
       { title }, { name: "description", content: description },
@@ -28,5 +30,5 @@ export const Route = createFileRoute("/rv-camping/")({
 });
 
 export function HubPage(): React.ReactElement {
-  return <GuideHub family="rv-camping" kicker="RV & Camping" title="RV & camping guides" intro="Places that work well by RV or campervan, with campgrounds, RV parks and rental options." entries={(useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>)} />;
+  return <GuideHub family="rv-camping" kicker="RV & Camping" title="RV & camping guides" intro="Places that work well by RV or campervan, with campgrounds, RV parks and rental options." entries={(useLoaderData({ strict: false }) as Awaited<ReturnType<typeof loadPage>>)} />;
 }

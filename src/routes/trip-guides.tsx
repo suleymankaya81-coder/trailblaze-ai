@@ -31,6 +31,8 @@ const FAMILIES = [
   { cover: "yellowstone", to: "/destinations", icon: mapImg, count: "500 places", label: "All Destinations", text: "Every place with its map, day-by-day plan and stays." },
 ];
 
+const loadPage = () => getDestinationCovers({ data: { slugs: FAMILIES.map((f) => f.cover) } });
+
 export const Route = createFileRoute("/trip-guides")({
   head: ({ loaderData }) => ({
     meta: [
@@ -43,12 +45,12 @@ export const Route = createFileRoute("/trip-guides")({
     links: [{ rel: "canonical", href: `${SITE}/trip-guides` }, ...deAlternates(`${SITE}/trip-guides`)],
     scripts: [breadcrumbScript([HOME, TRIP_GUIDES])],
   }),
-  loader: () => getDestinationCovers({ data: { slugs: FAMILIES.map((f) => f.cover) } }),
+  loader: loadPage,
   component: Page,
 });
 
 export function Page(): React.ReactElement {
-  const covers = (useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>);
+  const covers = (useLoaderData({ strict: false }) as Awaited<ReturnType<typeof loadPage>>);
   return (
     <div className="min-h-screen bg-background">
       <Header />
