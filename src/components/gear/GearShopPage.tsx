@@ -98,9 +98,9 @@ export function GearShopPage() {
           <img src={hero} alt="Campsite with a glowing tent and an SUV carrying bikes by an alpine lake at sunset" width={1920} height={1024} className="absolute inset-0 -z-10 h-full w-full object-cover" />
           <div className="absolute inset-0 -z-10 bg-ink/45" />
           <div className="container-page flex min-h-[26rem] flex-col items-center justify-center py-16 text-center text-off-white">
-            <p className="text-xs font-medium text-off-white/85">Gear Shop <span className="mx-1">/</span> <T><T>All Categories</T></T></p>
-            <h1 className="mt-3 text-4xl text-off-white md:text-5xl"><T><T>All Gear Categories</T></T></h1>
-            <p className="mt-3 max-w-xl text-off-white/90"><T><T>Outdoor gear for every trip — from camp to trail to night sky.</T></T></p>
+            <p className="text-xs font-medium text-off-white/85">Gear Shop <span className="mx-1">/</span> <T>All Categories</T></p>
+            <h1 className="mt-3 text-4xl text-off-white md:text-5xl"><T>All Gear Categories</T></h1>
+            <p className="mt-3 max-w-xl text-off-white/90"><T>Outdoor gear for every trip — from camp to trail to night sky.</T></p>
             <nav aria-label="Gear category shortcuts" className="mt-8 flex max-w-3xl flex-wrap justify-center gap-2">
               {chips.map((chip) => (
                 <a
@@ -189,7 +189,7 @@ export function GearShopPage() {
             <div className="p-6 md:p-8">
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-foreground/70"><T>Spotlight: See the Night</T></p>
               <h2 className="mt-2 text-2xl text-forest md:text-3xl">Night Vision for Wildlife &amp; Stargazing</h2>
-              <p className="mt-2 text-sm text-muted-foreground"><T><T>Get closer to nature after dark with WILDGUARDER night vision optics.</T></T></p>
+              <p className="mt-2 text-sm text-muted-foreground"><T>Get closer to nature after dark with WILDGUARDER night vision optics.</T></p>
               <div className="mt-6 grid gap-3 sm:grid-cols-3">
                 {wildguarderProducts.map((p) => (
                   <a key={p.id} href={wildguarderLink(p.url, `gear-wildguarder-${p.id}`)} target="_blank" rel="sponsored nofollow noopener" className="rounded-xl border border-border bg-background p-3 hover:shadow-lift">
@@ -204,7 +204,7 @@ export function GearShopPage() {
               <a href={wildguarderLink(wildguarderStoreUrl, "gear-wildguarder-store")} target="_blank" rel="sponsored nofollow noopener" className="mt-6 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90">
                 Shop WILDGUARDER <ArrowRight className="h-4 w-4" />
               </a>
-              <p className="mt-3 text-[10px] text-muted-foreground"><T><T>Links go to the official WILDGUARDER store.</T></T></p>
+              <p className="mt-3 text-[10px] text-muted-foreground"><T>Links go to the official WILDGUARDER store.</T></p>
             </div>
           </div>
         </section>

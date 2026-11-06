@@ -45,7 +45,7 @@ export function SearchBar({ size = "lg" }: { size?: "lg" | "md" }) {
           className="min-w-0 flex-1 bg-transparent px-1 py-3 text-base text-foreground placeholder:text-muted-foreground focus:outline-none sm:px-2"
         />
         <Button type="submit" variant="hero" size={size === "lg" ? "lg" : "default"} className="shrink-0 px-3 sm:px-6">
-          <T><T>Build my trip</T></T>
+          <T>Build my trip</T>
         </Button>
       </form>
       <div className="mt-5 flex flex-wrap gap-2">

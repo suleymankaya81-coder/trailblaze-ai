@@ -106,7 +106,7 @@ function DestinationsIndexPage() {
           {tag && <input type="hidden" name="tag" value={tag} />}
           <input name="q" defaultValue={q} placeholder="Search by name" aria-label="Search destinations by name" className="h-12 rounded-lg border border-border bg-card px-3 text-sm" />
           <select name="region" defaultValue={region} aria-label="Region" className="h-12 rounded-lg border border-border bg-card px-3 text-sm">
-            <option value=""><T><T>All regions</T></T></option>
+            <option value=""><T>All regions</T></option>
             {Object.entries(US_REGIONS).map(([k, r]) => <option key={k} value={k}><T>{r.label}</T></option>)}
           </select>
           <select name="season" defaultValue={season} aria-label="Best season" className="h-12 rounded-lg border border-border bg-card px-3 text-sm">
@@ -120,7 +120,7 @@ function DestinationsIndexPage() {
           <p className="mt-12 text-sm text-muted-foreground">
             No destinations to show here.{" "}
             <Link to="/destinations" className="underline underline-offset-2 hover:text-foreground">
-              <T><T>View all destinations</T></T>
+              <T>View all destinations</T>
             </Link>
             .
           </p>

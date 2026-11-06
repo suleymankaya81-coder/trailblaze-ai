@@ -46,7 +46,7 @@ export function GuideHub({ family, kicker, title, intro, entries }: { family: Hu
             <Button key={k} variant={region === k ? "default" : "outline"} size="lg" className="rounded-full" type="button" onClick={() => { setRegion(k); setState(""); reset(); }}>{US_REGIONS[k].label}</Button>
           ))}
           <select value={state} onChange={(e) => { setState(e.target.value); reset(); }} aria-label="Filter by state" className="ml-auto h-12 rounded-full border border-border bg-card px-4 text-sm text-foreground">
-            <option value=""><T><T>All states</T></T></option>
+            <option value=""><T>All states</T></option>
             {states.filter((s) => !region || regionOf(s) === region).map((s) => <option key={s} value={s}>{s}</option>)}
           </select>
         </div></FilterPanel>

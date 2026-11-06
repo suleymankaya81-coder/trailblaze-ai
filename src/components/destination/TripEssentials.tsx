@@ -28,7 +28,7 @@ export function TripEssentials({ context }: { context: EssentialsContext }) {
     <section id="trip-gear" aria-label={`Trip essentials for ${context.name}`} className="min-w-0">
       <div className="mb-5 flex items-end justify-between gap-4">
         <div className="min-w-0">
-          <p className="text-xs font-semibold uppercase text-sage-deep"><T><T>Curated Trip Essentials</T></T></p>
+          <p className="text-xs font-semibold uppercase text-sage-deep"><T>Curated Trip Essentials</T></p>
           <h2 className="mt-2 break-words font-display text-2xl text-foreground md:text-[28px]"><T>{`Five picks for ${context.name}`}</T></h2>
         </div>
         <div className="flex shrink-0 gap-1 lg:hidden">
@@ -73,7 +73,7 @@ export function TripEssentials({ context }: { context: EssentialsContext }) {
           </div>
         </article>
       </div>
-      <p className="mt-4 text-xs leading-relaxed text-muted-foreground"><T><T>Optional picks, not a complete packing or safety list. Photos from the ROCKBROS and WILDGUARDER stores. Prices as of</T></T> {TRIP_ESSENTIALS_REVIEWED} / {WILDGUARDER_REVIEW_DATE}; price, stock and shipping may change.</p>
+      <p className="mt-4 text-xs leading-relaxed text-muted-foreground"><T>Optional picks, not a complete packing or safety list. Photos from the ROCKBROS and WILDGUARDER stores. Prices as of</T> {TRIP_ESSENTIALS_REVIEWED} / {WILDGUARDER_REVIEW_DATE}; price, stock and shipping may change.</p>
     </section>
   );
 }

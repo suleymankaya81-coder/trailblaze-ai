@@ -137,7 +137,7 @@ export function Page(): React.ReactElement {
                 </li>
               );
             })}
-            <li className="ml-6 flex items-center gap-2 text-sm text-muted-foreground"><MapPin className="h-4 w-4" /> <T><T>Return to</T></T> {first.name} and drop the car at {corridor.gateway.code}.</li>
+            <li className="ml-6 flex items-center gap-2 text-sm text-muted-foreground"><MapPin className="h-4 w-4" /> <T>Return to</T> {first.name} and drop the car at {corridor.gateway.code}.</li>
           </ol>
         </GuideSection>
 
