@@ -151,7 +151,7 @@ export function GearShopPage() {
             })}
           </div>
           <p className="mt-2 text-xs text-muted-foreground">
-            Item counts from the ROCKBROS catalog, checked {countsReviewed}; Optics &amp; Night Vision lists our WILDGUARDER partner models. Category photos are illustrative.
+            <T>Item counts from the ROCKBROS catalog, checked</T> {countsReviewed}; Optics &amp; Night Vision lists our WILDGUARDER partner models. Category photos are illustrative.
           </p>
         </section>
 
@@ -225,7 +225,7 @@ export function GearShopPage() {
                       ))}
                     </ul>
                     <a href={t.href} className="mt-1.5 inline-flex items-center gap-1 text-xs font-semibold text-forest hover:underline">
-                      See matching gear <ArrowRight className="h-3 w-3" />
+                      <T>See matching gear</T> <ArrowRight className="h-3 w-3" />
                     </a>
                   </div>
                 </div>
@@ -242,7 +242,7 @@ export function GearShopPage() {
                     <h3 className="text-sm font-semibold text-foreground"><T>{d.name}</T></h3>
                     <p className="mt-1 text-xs text-muted-foreground"><T>{d.text}</T></p>
                     <p className="mt-1.5 inline-flex items-center gap-1 text-xs font-semibold text-forest group-hover:underline">
-                      See the trip plan <ArrowRight className="h-3 w-3" />
+                      <T>See the trip plan</T> <ArrowRight className="h-3 w-3" />
                     </p>
                     <p className="mt-1 text-[10px] text-muted-foreground/80">Photo: {d.credit}</p>
                   </div>
@@ -288,7 +288,7 @@ export function GearShopPage() {
         </section>
 
         <p className="container-page py-6 text-xs text-muted-foreground">
-          Prices come from the partner catalogs and may change. Some photos are illustrative.
+          <T>Prices come from the partner catalogs and may change. Some photos are illustrative.</T>
         </p>
       </main>
       <Footer />

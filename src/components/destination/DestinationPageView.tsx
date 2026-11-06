@@ -846,7 +846,7 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
           {dest.airportCode && (
             <div className="rounded-xl bg-beige/50 p-4">
               <p className="text-[11px] uppercase tracking-wider text-muted-foreground">
-                From {dest.airportName}
+                <T>From</T> {dest.airportName}
               </p>
               <p className="mt-1 font-serif text-2xl font-semibold text-foreground">
                 {dest.driveMinutes != null ? formatDrive(dest.driveMinutes) : "—"}
