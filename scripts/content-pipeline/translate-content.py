@@ -65,6 +65,9 @@ SOURCE JSON:
         out = ai_json(prompt)
     except Exception as e:  # noqa: BLE001
         print(d["slug"], "FAILED", e, flush=True); return
+    if isinstance(out, list) and len(out) == 1: out = out[0]
+    if not isinstance(out, dict):
+        print(d["slug"], "REJECTED (not object)", flush=True); return
     ok = (out.get("name") and out.get("metaTitle") and out.get("metaDescription")
           and len(out.get("days", [])) == len(source["days"]) and len(out.get("intel", [])) == len(source["intel"]))
     if not ok:
