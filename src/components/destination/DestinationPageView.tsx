@@ -359,7 +359,7 @@ function SectionHeader({ title, action, id, step }: { title: string; action?: Re
         {step && <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary font-sans text-sm font-semibold text-primary-foreground">{step}</span>}
         <span className="min-w-0"><T>{title}</T></span>
       </h2>
-      <T>{action}</T>
+      {action}
     </div>
   );
 }
