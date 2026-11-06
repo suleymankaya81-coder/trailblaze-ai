@@ -12,7 +12,7 @@ export function SectionHead({ kicker, title, intro, action }: { kicker: string; 
       <div className="max-w-2xl">
         <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-sage-deep"><T>{kicker}</T></p>
         <h2 className="mt-2 text-[26px] leading-tight text-foreground md:text-4xl"><T>{title}</T></h2>
-        {intro && <p className="mt-3 text-[15px] leading-relaxed text-muted-foreground">{intro}</p>}
+        {intro && <p className="mt-3 text-[15px] leading-relaxed text-muted-foreground"><T>{intro}</T></p>}
       </div>
       {action}
     </div>
@@ -69,7 +69,7 @@ export function PlaceCard({ to, params, image, alt, badges = [], title, summary,
         <h3 className={cn("leading-snug text-foreground", large ? "text-2xl" : "text-lg md:text-xl")}><T>{title}</T></h3>
         {summary && <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted-foreground"><T>{summary}</T></p>}
         <div className="mt-auto flex items-center justify-between gap-3 pt-4">
-          <span className="text-xs text-muted-foreground">{info}</span>
+          <span className="text-xs text-muted-foreground">{info ? <T>{info}</T> : null}</span>
           <span className="inline-flex shrink-0 items-center gap-1 text-sm font-semibold text-primary"><T>{action}</T> <ArrowRight className="h-4 w-4" /></span>
         </div>
       </div>
