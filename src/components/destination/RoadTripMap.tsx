@@ -54,6 +54,11 @@ export default function RoadTripMap({
       fitBoundsOptions: { padding: 50 },
       attributionControl: { compact: true },
       cooperativeGestures: true,
+      ...(document.documentElement.lang === "de" ? { locale: {
+        "CooperativeGesturesHandler.WindowsHelpText": "Strg + Scrollen zum Zoomen der Karte",
+        "CooperativeGesturesHandler.MacHelpText": "⌘ + Scrollen zum Zoomen der Karte",
+        "CooperativeGesturesHandler.MobileHelpText": "Mit zwei Fingern die Karte bewegen",
+      } } : {}),
     });
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
     new maplibregl.Marker({ color: startColor }).setLngLat(from).addTo(map);

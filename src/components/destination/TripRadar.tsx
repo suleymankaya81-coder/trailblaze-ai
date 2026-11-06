@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { useQuery } from "@tanstack/react-query";
 import { ArrowUpRight, Plane, ShieldAlert } from "lucide-react";
 import type { DestinationView } from "@/lib/data/destinations.functions";
@@ -59,14 +60,14 @@ export function TripRadar({ dest }: { dest: DestinationView }) {
             </span>
             <div>
               <p className="text-xs uppercase tracking-wider text-muted-foreground">
-                Reservations · {permit.label}
+                <T>Reservations</T> · <T>{permit.label}</T>
               </p>
               <p className="font-display text-xl font-semibold leading-tight text-foreground">
                 {reviewedReservation?.headline ?? dest.permitHeadline ?? `Planning ${dest.name}`}
               </p>
             </div>
           </div>
-          <p className="mt-4 text-[15px] leading-relaxed text-foreground/80">{note}</p>
+          <p className="mt-4 text-[15px] leading-relaxed text-foreground/80"><T>{note}</T></p>
           {sourceUrl && (
             <a
               href={sourceUrl}
@@ -74,7 +75,7 @@ export function TripRadar({ dest }: { dest: DestinationView }) {
               rel="noopener noreferrer"
               className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-semibold text-primary hover:underline"
             >
-              Check official reservation info <ArrowUpRight className="h-4 w-4" />
+              <T>Check official reservation info</T> <ArrowUpRight className="h-4 w-4" />
             </a>
           )}
         </div>
@@ -88,7 +89,7 @@ export function TripRadar({ dest }: { dest: DestinationView }) {
           className="group relative flex flex-col overflow-hidden rounded-3xl border border-border bg-gradient-to-br from-sage/25 via-card to-sand/50 p-6 shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg md:p-7"
         >
           <Plane className="pointer-events-none absolute -right-6 -top-6 h-36 w-36 rotate-12 text-forest/5" />
-          <p className="text-xs uppercase tracking-wider text-muted-foreground">Fly in · nearest airport</p>
+          <p className="text-xs uppercase tracking-wider text-muted-foreground"><T>Fly in · nearest airport</T></p>
           <div className="mt-3 flex items-center gap-3">
             <span className="font-display text-4xl font-bold tracking-tight text-foreground">
               {dest.airportCode}
@@ -97,23 +98,23 @@ export function TripRadar({ dest }: { dest: DestinationView }) {
               <Plane className="absolute left-1/2 top-1/2 h-5 w-5 -translate-x-1/2 -translate-y-1/2 rotate-45 text-forest transition group-hover:left-3/4" />
             </span>
             <span className="max-w-[40%] truncate text-right text-sm font-semibold text-foreground">
-              {dest.name}
+              <T>{dest.name}</T>
             </span>
           </div>
           <p className="mt-2 text-sm text-muted-foreground">
             {dest.airportName}
-            {dest.driveMinutes != null && ` · ${formatDrive(dest.driveMinutes)} drive`}
+            {dest.driveMinutes != null && <> · <T>{`${formatDrive(dest.driveMinutes)} drive`}</T></>}
           </p>
           <div className="mt-auto flex flex-wrap items-center justify-between gap-3 pt-5">
             {fare?.price != null ? (
               <span className="rounded-full bg-card px-3 py-1 text-xs text-muted-foreground shadow-soft">
-                recent fares from ~${Math.round(fare.price)} (estimate)
+                <T>{`recent fares from ~$${Math.round(fare.price)} (estimate)`}</T>
               </span>
             ) : (
               <span />
             )}
             <span className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition group-hover:gap-3">
-              Find flights to {dest.airportCode}
+              <T>{`Find flights to ${dest.airportCode}`}</T>
               <ArrowUpRight className="h-4 w-4" />
             </span>
           </div>
@@ -141,7 +142,7 @@ export function JumpBar() {
             href={j.href}
             className="shrink-0 rounded-full border border-border px-4 py-1.5 text-xs font-semibold text-foreground/80 transition hover:bg-muted hover:text-foreground"
           >
-            {j.label}
+            <T>{j.label}</T>
           </a>
         ))}
       </div>

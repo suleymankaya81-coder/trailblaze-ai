@@ -21,3 +21,31 @@ export function useT() {
   const locale = useLocale();
   return (key: DictKey) => t(locale, key);
 }
+
+import { DE_PATTERNS, DE_PHRASES } from "./phrases.de";
+import { createElement, Fragment } from "react";
+const PATTERNS: Partial<Record<Locale, [RegExp, string][]>> = { de: DE_PATTERNS };
+const PHRASES: Partial<Record<Locale, Record<string, string>>> = { de: DE_PHRASES };
+
+/** Translate a fixed English phrase; falls back to the English text. */
+export function tp(locale: Locale, text: string): string {
+  const dict = PHRASES[locale];
+  if (!dict) return text;
+  const hit = dict[text];
+  if (hit) return hit;
+  for (const [re, out] of PATTERNS[locale] ?? []) if (re.test(text)) return text.replace(re, out);
+  // "Est. from $35/night · estimate": translate each " · " part on its own.
+  if (text.includes(" · ")) return text.split(" · ").map((part) => tp(locale, part)).join(" · ");
+  return text;
+}
+
+export function useTp() {
+  const locale = useLocale();
+  return (text: string) => tp(locale, text);
+}
+
+/** Inline translated phrase: <T>English text</T>. */
+export function T({ children }: { children: string }) {
+  const locale = useLocale();
+  return createElement(Fragment, null, tp(locale, children));
+}

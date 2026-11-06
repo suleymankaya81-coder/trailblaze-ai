@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { useEffect, useState } from "react";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Link } from "@tanstack/react-router";
@@ -53,19 +54,18 @@ export function Footer() {
             />
           </div>
           <p className="max-w-md text-sm text-muted-foreground">
-            A modern outdoor-travel guide. Tell us where you want to go and we'll show you where to
-            stay, what to rent, what to do, and what to bring.
+            <T>{"A modern outdoor-travel guide. Tell us where you want to go and we'll show you where to stay, what to rent, what to do, and what to bring."}</T>
           </p>
         </div>
 
         <nav className="mt-10 border-t border-border pt-2 text-sm md:grid md:grid-cols-4 md:gap-8 md:pt-8">
           {groups.map((g) => (
             <details key={g.title} className="group border-b border-border md:border-0" open={wide}>
-              <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground md:pointer-events-none md:min-h-0">{g.title}<span className="md:hidden transition group-open:rotate-45">+</span></summary>
+              <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground md:pointer-events-none md:min-h-0"><T>{g.title}</T><span className="md:hidden transition group-open:rotate-45">+</span></summary>
               <ul className="mb-4 mt-3 space-y-2">
                 {g.links.map((link) => (
                   <li key={link.to}>
-                    <Link to={link.to} className="text-foreground/80 hover:text-forest hover:underline">{link.label}</Link>
+                    <Link to={link.to} className="text-foreground/80 hover:text-forest hover:underline"><T>{link.label}</T></Link>
                   </li>
                 ))}
               </ul>
@@ -75,8 +75,8 @@ export function Footer() {
 
 
         <div className="mt-6 flex flex-col gap-2 text-xs text-muted-foreground md:flex-row md:justify-between">
-          <span>© {new Date().getFullYear()} MiniaLife. All rights reserved.</span>
-          <span className="flex items-center gap-3">Crafted for the great outdoors. <LanguageSwitcher /></span>
+          <span>© {new Date().getFullYear()} MiniaLife. <T>All rights reserved.</T></span>
+          <span className="flex items-center gap-3"><T>Crafted for the great outdoors.</T> <LanguageSwitcher /></span>
         </div>
       </div>
     </footer>

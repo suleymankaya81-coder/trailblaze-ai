@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { useQuery } from "@tanstack/react-query";
 import { ArrowUpRight, Bike, Car, Plane, Ticket, Building2 } from "lucide-react";
 import { tpLink, nearGoCity, type TpBrand } from "@/lib/affiliates/travelpayouts";
@@ -26,10 +27,10 @@ function Card({ item, slug }: { item: Item; slug: string }) {
       <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-primary">
         <Icon className="h-4 w-4" />
       </span>
-      <p className="mt-1 text-sm font-semibold text-foreground">{item.title}</p>
-      <p className="mt-1 flex-1 text-xs text-muted-foreground">{item.sub}</p>
+      <p className="mt-1 text-sm font-semibold text-foreground"><T>{item.title}</T></p>
+      <p className="mt-1 flex-1 text-xs text-muted-foreground"><T>{item.sub}</T></p>
       <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-primary">
-        Check on {item.name} <ArrowUpRight className="h-3.5 w-3.5" />
+        <T>{`Check on ${item.name}`}</T> <ArrowUpRight className="h-3.5 w-3.5" />
       </span>
     </a>
   );
@@ -38,7 +39,7 @@ function Card({ item, slug }: { item: Item; slug: string }) {
 function Group({ title, items, slug, airportCode, rentals = false }: { title: string; items: Item[]; slug: string; airportCode?: string | null; rentals?: boolean }) {
   return (
     <div className="mt-6">
-      <h3 className="mb-3 text-sm font-semibold text-foreground">{title}</h3>
+      <h3 className="mb-3 text-sm font-semibold text-foreground"><T>{title}</T></h3>
       <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-4">
         {items.map((i) => <Card key={i.brand} item={i} slug={slug} />)}
         {rentals && <AirportRentalsCards slug={slug} airportCode={airportCode} />}
@@ -71,7 +72,7 @@ export function GettingThereItems({ slug, name, airportCode }: { slug: string; n
 export function TravelpayoutsCards({ slug, name, airportCode }: { slug: string; name: string; airportCode: string | null }) {
   return (
     <div className="mt-8">
-      <h3 className="mb-3 text-sm font-semibold text-foreground">Getting there & getting around</h3>
+      <h3 className="mb-3 text-sm font-semibold text-foreground"><T>Getting there & getting around</T></h3>
       <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-4"><GettingThereItems slug={slug} name={name} airportCode={airportCode} /></div>
     </div>
   );
@@ -100,7 +101,7 @@ function TourCard({ item, slug }: { item: Item; slug: string }) {
 export function TourTicketCards({ slug, name }: { slug: string; name: string }) {
   return (
     <div className="mt-8">
-      <h3 className="mb-3 text-sm font-semibold text-foreground">More tours & ticket partners</h3>
+      <h3 className="mb-3 text-sm font-semibold text-foreground"><T>More tours & ticket partners</T></h3>
       <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-4"><TourTicketItems slug={slug} name={name} /></div>
     </div>
   );

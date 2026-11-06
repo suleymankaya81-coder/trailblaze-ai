@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { useEffect, useRef, useState } from "react";
 import { Car, Truck } from "lucide-react";
 import { motorhomeRepublicLink, airportRentalsLink } from "@/lib/affiliates/webjet";
@@ -61,21 +62,21 @@ export function RentalSearch() {
     <div ref={wrap} className="mb-5 overflow-hidden rounded-lg border border-border bg-card shadow-soft">
       <div className="flex border-b border-border">
         {(Object.keys(TABS) as Tab[]).map((k) => {
-          const T = TABS[k];
+          const Tab = TABS[k];
           return (
             <Button key={k} type="button" variant="ghost" onClick={() => { setTab(k); setReady(false); setHeight(430); }} aria-pressed={tab === k}
               className={`h-auto flex-1 whitespace-normal rounded-none px-4 py-4 text-sm font-semibold ${tab === k ? "bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground" : "text-foreground hover:bg-muted"}`}>
-              <T.icon className="h-4 w-4" />{T.label}
+              <Tab.icon className="h-4 w-4" /><T>{Tab.label}</T>
             </Button>
           );
         })}
       </div>
       <div className="p-6 md:p-8">
         <p className="text-xs font-bold uppercase tracking-[0.22em] text-foreground/60">Live search · {t.brand}</p>
-        <p className="mt-2 max-w-xl text-sm text-muted-foreground">{t.blurb}</p>
+        <p className="mt-2 max-w-xl text-sm text-muted-foreground"><T>{t.blurb}</T></p>
         <ul className="mt-3 flex flex-wrap gap-1.5">
           {(tab === "rv" ? ["Compare RV & campervan suppliers", "Pickup across the USA"] : ["Compare airport suppliers", "Free cancellation on many rates", "Same-airport return"]).map((b) => (
-            <li key={b} className="rounded-full bg-secondary px-2.5 py-1 text-[11px] font-medium text-foreground">✓ {b}</li>
+            <li key={b} className="rounded-full bg-secondary px-2.5 py-1 text-[11px] font-medium text-foreground">✓ <T>{b}</T></li>
           ))}
         </ul>
         {visible && <iframe ref={frame} key={tab} title={`${t.brand} live rental search`} srcDoc={documentHtml}

@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { CalendarDays, Car, Clock, Plane, ShieldAlert } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { formatDriveShort } from '@/lib/seo/flyDrive';
@@ -19,9 +20,9 @@ export function TripSnapshot({ trip, airport, days, stops }: { trip?: Trip; airp
     { image: carImg, label: trip?.travelPlan?.vehicle ? 'Vehicle notes' : 'Best season', value: trip?.travelPlan?.vehicle ?? trip?.bestSeason },
   ].filter(f => f.value);
   return <section aria-label="Trip snapshot" className="border-b border-border bg-card">
-    <div className="container-page py-6"><p className="mb-4 text-xs font-semibold uppercase text-sage-deep">Trip snapshot</p><dl className="grid grid-cols-2 gap-5 lg:grid-cols-5">{facts.map(f => <div key={f.label} className="min-w-0"><dt className="flex items-center gap-2 text-xs text-muted-foreground"><Thumb src={f.image} size={40} />{f.label}</dt><dd className="mt-2 line-clamp-3 text-sm font-semibold leading-relaxed" title={String(f.value)}>{f.value}</dd></div>)}</dl></div>
+    <div className="container-page py-6"><p className="mb-4 text-xs font-semibold uppercase text-sage-deep"><T>Trip snapshot</T></p><dl className="grid grid-cols-2 gap-5 lg:grid-cols-5">{facts.map(f => <div key={f.label} className="min-w-0"><dt className="flex items-center gap-2 text-xs text-muted-foreground"><Thumb src={f.image} size={40} /><T>{f.label}</T></dt><dd className="mt-2 line-clamp-3 text-sm font-semibold leading-relaxed" title={String(f.value)}>{typeof f.value === "string" ? <T>{f.value}</T> : f.value}</dd></div>)}</dl></div>
   </section>;
 }
 export function TripQuickNav({ booking = true }: { booking?: boolean }) {
-  return <nav aria-label="Trip quick navigation" className="trip-quick-nav sticky top-20 z-30 md:top-24"><div className="container-page flex gap-2 overflow-x-auto py-2">{[{ id: 'trip-plan', label: 'Plan & route' }, ...(booking ? [{ id: 'trip-booking', label: 'Flights, vehicles & stays' }] : []), { id: 'trip-tours', label: 'Tours' }, { id: 'trip-gear', label: 'Trip essentials' }].map(l => <Button key={l.id} asChild variant="ghost" className="h-12 shrink-0"><a href={`#${l.id}`}>{l.label}</a></Button>)}</div></nav>;
+  return <nav aria-label="Trip quick navigation" className="trip-quick-nav sticky top-20 z-30 md:top-24"><div className="container-page flex gap-2 overflow-x-auto py-2">{[{ id: 'trip-plan', label: 'Plan & route' }, ...(booking ? [{ id: 'trip-booking', label: 'Flights, vehicles & stays' }] : []), { id: 'trip-tours', label: 'Tours' }, { id: 'trip-gear', label: 'Trip essentials' }].map(l => <Button key={l.id} asChild variant="ghost" className="h-12 shrink-0"><a href={`#${l.id}`}><T>{l.label}</T></a></Button>)}</div></nav>;
 }

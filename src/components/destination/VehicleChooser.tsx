@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { trackEvent } from "@/lib/analytics";
 
 export type VehiclePick = "car" | "suv" | "rv";
@@ -12,14 +13,14 @@ const OPTIONS: { id: VehiclePick; title: string; hint: string }[] = [
 export function VehicleChooser({ slug, value, onChange }: { slug: string; value: VehiclePick | null; onChange: (v: VehiclePick) => void }) {
   return (
     <div className="mb-5 rounded-xl border border-border bg-card p-4">
-      <p className="font-display text-base text-foreground">Which vehicle fits your trip?</p>
+      <p className="font-display text-base text-foreground"><T>Which vehicle fits your trip?</T></p>
       <div className="mt-3 grid gap-2 sm:grid-cols-3">
         {OPTIONS.map((o) => (
           <button key={o.id} type="button" aria-pressed={value === o.id}
             onClick={() => { onChange(o.id); trackEvent("vehicle_choice", { choice: o.id, destination_slug: slug }); }}
             className={`rounded-lg border p-3 text-left transition-colors ${value === o.id ? "border-primary bg-primary/10" : "border-border hover:border-primary/50"}`}>
-            <span className="block text-sm font-semibold text-foreground">{o.title}</span>
-            <span className="block text-xs text-muted-foreground">{o.hint}</span>
+            <span className="block text-sm font-semibold text-foreground"><T>{o.title}</T></span>
+            <span className="block text-xs text-muted-foreground"><T>{o.hint}</T></span>
           </button>
         ))}
       </div>

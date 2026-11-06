@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { offerCtaLabel } from "@/lib/affiliates/ctaLabel";
 import { SafeImage } from "@/components/shared/SafeImage";
@@ -178,7 +179,7 @@ function Hero({ dest, crumbs }: { dest: DestinationView; crumbs?: Crumb[] }) {
           <Breadcrumbs crumbs={crumbs ?? destinationCrumbs(dest)} className="text-off-white/75" />
 
           <h1 className="mt-5 max-w-xl font-display text-4xl leading-[1.05] md:text-6xl">
-            {dest.name}
+            <T>{dest.name}</T>
           </h1>
           <p className="mt-5 max-w-lg text-base text-off-white/85">{dest.tagline}</p>
 
@@ -187,9 +188,9 @@ function Hero({ dest, crumbs }: { dest: DestinationView; crumbs?: Crumb[] }) {
               {stats.map((s) => (
                 <div key={s.label}>
                   <dt className="text-[10px] font-semibold uppercase tracking-[0.16em] text-off-white/60">
-                    {s.label}
+                    <T>{s.label}</T>
                   </dt>
-                  <dd className="mt-1 text-sm font-semibold text-off-white">{s.value}</dd>
+                  <dd className="mt-1 text-sm font-semibold text-off-white">{typeof s.value === "string" ? <T>{s.value}</T> : s.value}</dd>
                 </div>
               ))}
             </dl>
@@ -200,13 +201,13 @@ function Hero({ dest, crumbs }: { dest: DestinationView; crumbs?: Crumb[] }) {
               href="#stays"
               className="inline-flex items-center justify-center min-h-12 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
             >
-              See places to stay
+              <T>See places to stay</T>
             </a>
             <a
               href="#road-trip"
               className="inline-flex items-center justify-center min-h-12 rounded-full border border-off-white/50 bg-off-white/10 px-6 py-3 text-sm font-semibold text-off-white transition hover:bg-off-white/10"
             >
-              Explore the trip
+              <T>Explore the trip</T>
             </a>
           </div>
         </div>
@@ -269,7 +270,7 @@ function PriceTag({
     );
   }
   if (offer.priceDisplay) return <span className={className}>{offer.priceDisplay}</span>;
-  return <span className="text-xs font-normal text-muted-foreground">{estimatedFrom(`${offer.title ?? ""} ${offer.subcategory ?? ""} ${offer.partner ?? ""}`)} · estimate</span>;
+  return <span className="text-xs font-normal text-muted-foreground"><T>{`${estimatedFrom(`${offer.title ?? ""} ${offer.subcategory ?? ""} ${offer.partner ?? ""}`)} · estimate`}</T></span>;
 }
 
 function useTrackedRedirect(offer: OfferView, destinationSlug: string) {
@@ -326,7 +327,7 @@ function OfferCta({
         title="Not bookable yet"
         className={`rounded-full border border-border bg-muted ${pad} font-semibold text-muted-foreground`}
       >
-        Coming soon
+        <T>Coming soon</T>
       </span>
     );
   }
@@ -344,7 +345,7 @@ function OfferCta({
           pending ? "pointer-events-none opacity-70" : ""
         }`}
       >
-        {label}
+        <T>{label}</T>
         <ArrowRight className="h-3.5 w-3.5" />
       </a>
     </span>
@@ -356,7 +357,7 @@ function SectionHeader({ title, action, id, step }: { title: string; action?: Re
     <div className="mb-6 grid grid-cols-[minmax(0,1fr)_auto] items-end gap-3" id={id}>
       <h2 className="flex min-w-0 items-center gap-3 font-display text-[26px] leading-tight text-foreground md:text-[36px]">
         {step && <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary font-sans text-sm font-semibold text-primary-foreground">{step}</span>}
-        <span className="min-w-0">{title}</span>
+        <span className="min-w-0"><T>{title}</T></span>
       </h2>
       {action}
     </div>
@@ -434,7 +435,7 @@ function TopStays({ dest }: { dest: DestinationView }) {
                 : "border border-border bg-card text-foreground/70 hover:bg-muted")
             }
           >
-            {c}
+            <T>{c}</T>
           </Button>
         ))}
       </div>
@@ -485,19 +486,19 @@ function StayCard({
               (parkTag(offer) === "inside" ? "bg-copper" : "bg-forest")
             }
           >
-            {parkTag(offer) === "inside" ? "Inside the park · books up fast" : "Outside the park · easier to book"}
+            <T>{parkTag(offer) === "inside" ? "Inside the park · books up fast" : "Outside the park · easier to book"}</T>
           </span>
         )}
         {featured && (
           <span className="absolute left-0 top-4 rounded-r-full bg-ink/80 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-off-white">
-            MiniaLife's pick
+            <T>MiniaLife's pick</T>
           </span>
         )}
 
       </div>
 
       <div className="flex flex-1 flex-col p-4">
-        <h3 className="font-display text-lg leading-snug text-foreground">{offer.title}</h3>
+        <h3 className="font-display text-lg leading-snug text-foreground"><T>{offer.title}</T></h3>
         {offer.partner === "harvest_hosts" && <HarvestHostsOffer />}
         {offer.subcategory && (
           <p className="mt-0.5 text-[11px] uppercase tracking-wide text-muted-foreground">
@@ -505,11 +506,11 @@ function StayCard({
           </p>
         )}
         <p className="mt-3 text-xs font-medium text-foreground/80">
-          Best for: <span className="font-normal">{bestForLine(offer)}</span>
+          <T>Best for:</T> <span className="font-normal">{bestForLine(offer)}</span>
         </p>
         {(offer.whyRecommended || offer.description) && (
           <p className="mt-2 line-clamp-3 text-xs leading-relaxed text-muted-foreground">
-            {offer.whyRecommended ?? offer.description}
+            <T>{offer.whyRecommended ?? offer.description ?? ""}</T>
           </p>
         )}
         <div className="mt-auto flex flex-col gap-3 border-t border-border pt-3">
@@ -561,28 +562,28 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
 
   return (
     <aside className="h-full rounded-xl border border-border bg-card p-6 md:p-8">
-      <h2 className="font-display text-2xl text-foreground">Your trip budget</h2>
-      <p className="mt-0.5 text-xs text-muted-foreground">Estimated for 4 days · 2 travelers</p>
+      <h2 className="font-display text-2xl text-foreground"><T>Your trip budget</T></h2>
+      <p className="mt-0.5 text-xs text-muted-foreground"><T>Estimated for 4 days · 2 travelers</T></p>
 
       {loading ? (
         <Skeleton className="mt-5 h-9 w-32" />
       ) : !ai ? (
         <p className="mt-5 text-xs text-muted-foreground">
-          Budget estimate isn't available for this destination right now.
+          <T>Budget estimate isn't available for this destination right now.</T>
         </p>
       ) : (
         <>
           <p className="mt-5 font-serif text-3xl font-semibold text-foreground">
             ${total.toLocaleString()}
           </p>
-          <p className="text-xs text-muted-foreground">Estimated total</p>
+          <p className="text-xs text-muted-foreground"><T>Estimated total</T></p>
 
           <ul className="mt-5 space-y-3 text-sm">
             {items.map((i) => (
               <li key={i.label} className="flex items-center justify-between gap-3">
                 <span className="flex items-center gap-2 text-foreground/80">
                   <Thumb src={i.label === "Accommodation" ? stayImage : i.label === "Rental" ? carImage : i.label === "Gear & essentials" ? gearImage : roadImage} size={32} />
-                  <span className="text-xs">{i.label}</span>
+                  <span className="text-xs"><T>{i.label}</T></span>
                 </span>
                 <span className="text-xs font-semibold text-foreground">
                   ${i.value.toLocaleString()}
@@ -596,7 +597,7 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
             onClick={() => setShowNote((v) => !v)}
             className="mt-6 w-full rounded-full border border-border py-2.5 text-xs font-semibold text-foreground transition hover:bg-muted"
           >
-            See ways to save
+            <T>See ways to save</T>
           </button>
           {showNote && (
             <p className="mt-3 rounded-xl bg-beige/70 p-3 text-[11px] leading-relaxed text-foreground/80">
@@ -607,7 +608,7 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
       )}
 
       <p className="mt-4 text-[11px] leading-relaxed text-muted-foreground">
-        Prices are averages and may vary based on season and preferences.
+        <T>Prices are averages and may vary based on season and preferences.</T>
       </p>
     </aside>
   );
@@ -651,7 +652,7 @@ const SMALL_CAMPER_PHOTO: Photo = {
 };
 
 function RentalTile({ offer, destinationSlug, photo, kind }: { offer: OfferView; destinationSlug: string; photo?: Photo; kind: "motorhome" | "camper" }) {
-  const title = kind === "motorhome" ? offer.title : "Sleeps 2 campervans";
+  const title = kind === "motorhome" ? offer.title: "Sleeps 2 campervans";
   const price = kind === "motorhome" && offer.priceValue != null
     ? `From $${offer.priceValue}/${offer.priceUnit ?? "day"}`
     : estimatedFrom(kind === "camper" ? "small campervan" : `${offer.title} ${offer.subcategory ?? ""}`);
@@ -662,9 +663,9 @@ function RentalTile({ offer, destinationSlug, photo, kind }: { offer: OfferView;
         {photo && <PhotoCredit photo={photo} />}
       </div>
       <div className="flex-1 border-b border-border p-4">
-          <p className="font-display text-lg leading-snug text-foreground">{title}</p>
-          <p className="mt-1 font-display text-base font-semibold text-foreground">{price} <span className="text-[10px] font-normal text-muted-foreground">· typical rate</span></p>
-          <p className="mt-1 text-xs text-muted-foreground">{kind === "motorhome" ? "Drive-and-sleep motorhome with kitchen and bathroom." : "Compact van-style camper that sleeps two, easier to park."}</p>
+          <p className="font-display text-lg leading-snug text-foreground"><T>{title}</T></p>
+          <p className="mt-1 font-display text-base font-semibold text-foreground"><T>{price}</T> <span className="text-[10px] font-normal text-muted-foreground"><T>· typical rate</T></span></p>
+          <p className="mt-1 text-xs text-muted-foreground"><T>{kind === "motorhome" ? "Drive-and-sleep motorhome with kitchen and bathroom." : "Compact van-style camper that sleeps two, easier to park."}</T></p>
       </div>
       <div className="flex flex-col gap-2 p-4">
         <span className="text-[11px] uppercase tracking-wide text-muted-foreground">
@@ -723,9 +724,9 @@ function TravelServices({ dest }: { dest: DestinationView }) {
 
   return (
     <aside className="h-full rounded-xl border border-border bg-card p-6 md:p-8">
-      <h2 className="font-display text-2xl text-foreground">Before you hit the road</h2>
+      <h2 className="font-display text-2xl text-foreground"><T>Before you hit the road</T></h2>
       <p className="mt-0.5 text-xs text-muted-foreground">
-        The few things worth sorting out in advance.
+        <T>The few things worth sorting out in advance.</T>
       </p>
 
       <ul className="mt-4 divide-y divide-border">
@@ -743,8 +744,8 @@ function TravelServices({ dest }: { dest: DestinationView }) {
                   }}>
                   <Thumb src={category === "car_rental" ? carImage : category === "insurance" ? planImage : category === "esim" ? mapImage : gearImage} size={40} />
                   <span className="min-w-0 flex-1">
-                    <span className="block text-xs font-semibold text-foreground">{detail.title}</span>
-                    <span className="block text-[11px] text-muted-foreground">{detail.sub}</span>
+                    <span className="block text-xs font-semibold text-foreground"><T>{detail.title}</T></span>
+                    <span className="block text-[11px] text-muted-foreground"><T>{detail.sub}</T></span>
                   </span>
                   <ChevronRight className="mt-1 h-4 w-4 shrink-0 text-foreground/30" />
                 </a>
@@ -772,7 +773,7 @@ function ServiceRow({ service, destinationSlug }: { service: OfferView; destinat
     <>
       <Thumb src={service.category === "car_rental" ? carImage : planImage} size={40} />
       <span className="min-w-0 flex-1">
-        <span className="block text-xs font-semibold text-foreground">{service.title}</span>
+        <span className="block text-xs font-semibold text-foreground"><T>{service.title}</T></span>
         <span className="block text-[11px] text-muted-foreground">
           {service.priceDisplay ?? meta.sub}
         </span>
@@ -836,7 +837,7 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
           ) : (
             <div className="flex min-h-[300px] flex-col items-center justify-center gap-3 p-8 text-center">
               <Thumb src={mapImage} size={64} />
-              <p className="text-sm font-semibold text-foreground">Route map coming soon</p>
+              <p className="text-sm font-semibold text-foreground"><T>Route map coming soon</T></p>
             </div>
           )}
         </div>
@@ -852,8 +853,7 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
               </p>
               {dest.driveMiles != null && (
                 <p className="text-xs text-muted-foreground">
-                  about {Math.round(dest.driveMiles)} miles by car · times vary with traffic and
-                  road closures
+                  <T>{`about ${Math.round(dest.driveMiles)} miles by car · times vary with traffic and road closures`}</T>
                 </p>
               )}
             </div>
@@ -864,14 +864,14 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
             rel="noopener noreferrer"
             className="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-forest px-5 py-2.5 text-sm font-semibold text-off-white transition hover:bg-ink"
           >
-            <Navigation className="h-4 w-4" /> Get directions
+            <Navigation className="h-4 w-4" /> <T>Get directions</T>
           </a>
           <p className="mt-2 text-center text-[11px] text-muted-foreground">
-            Airport-to-destination drive; sightseeing stops are separate markers.
+            <T>Airport-to-destination drive; sightseeing stops are separate markers.</T>
           </p>
           {nearbyStays.length > 0 && (
             <>
-              <p className="mt-5 text-xs font-semibold text-foreground">Stays near the end of your drive</p>
+              <p className="mt-5 text-xs font-semibold text-foreground"><T>Stays near the end of your drive</T></p>
               <ul className="mt-2 space-y-2">
                 {nearbyStays.map((s) => (
                   <li key={s.id}>
@@ -880,7 +880,7 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
                       className="flex items-center gap-3 rounded-xl border border-border bg-beige/40 px-3 py-2.5 text-xs text-foreground/80 hover:bg-muted"
                     >
                       <Thumb src={stayImage} size={32} />
-                      <span className="truncate">{s.title}</span>
+                      <span className="truncate"><T>{s.title}</T></span>
                     </a>
                   </li>
                 ))}
@@ -938,9 +938,9 @@ function FieldIntel({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) 
         <div key={t.label} className="rounded-lg border border-border bg-card p-4 shadow-soft">
           <Thumb src={t.label === "Signal" ? mapImage : roadImage} size={40} />
           <p className="mt-2.5 text-[10px] font-bold uppercase tracking-[0.14em] text-muted-foreground">
-            {t.label}
+            <T>{t.label}</T>
           </p>
-          <p className="mt-1 text-xs leading-relaxed text-foreground/80">{t.text}</p>
+          <p className="mt-1 text-xs leading-relaxed text-foreground/80"><T>{t.text}</T></p>
         </div>
       ))}
     </div>
@@ -1011,7 +1011,7 @@ function TripFlow({ dest }: { dest: DestinationView }) {
     <section id="flow" className="scroll-mt-24">
       <SectionHeader title={`Your ${days}-day ${dest.name.split(" ")[0]} flow`} />
       <p className="-mt-3 mb-5 text-[11px] text-muted-foreground">
-        A suggested rhythm, not a fixed schedule — swap days around the weather and your energy.
+        <T>A suggested rhythm, not a fixed schedule — swap days around the weather and your energy.</T>
       </p>
       <ol className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         {plan.map((p, i) => (
@@ -1022,8 +1022,8 @@ function TripFlow({ dest }: { dest: DestinationView }) {
             <span className="inline-flex w-fit items-center rounded-full bg-forest/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-forest">
               {p.day}
             </span>
-            <h3 className="mt-3 font-display text-lg text-foreground">{p.title}</h3>
-            <p className="mt-2 flex-1 text-xs leading-relaxed text-muted-foreground">{p.detail}</p>
+            <h3 className="mt-3 font-display text-lg text-foreground"><T>{p.title}</T></h3>
+            <p className="mt-2 flex-1 text-xs leading-relaxed text-muted-foreground"><T>{p.detail}</T></p>
             <p className="mt-4 border-t border-border pt-3 text-[11px] font-semibold text-foreground/70">
               {p.start}
             </p>
@@ -1046,7 +1046,7 @@ function SimilarDestinations({ dest }: { dest: DestinationView }) {
     <section>
       <SectionHeader
         title="More destinations you'll love"
-        action={<Link to="/destinations" className="inline-flex min-h-12 items-center text-sm font-semibold text-primary">All destinations <ArrowRight className="ml-1 h-4 w-4" /></Link>}
+        action={<Link to="/destinations" className="inline-flex min-h-12 items-center text-sm font-semibold text-primary"><T>All destinations</T> <ArrowRight className="ml-1 h-4 w-4" /></Link>}
       />
       {similar.length === 0 ? (
         <EmptyState message="No related destinations yet." />
@@ -1093,9 +1093,9 @@ function FinalCta({ dest }: { dest: DestinationView }) {
   return (
     <aside className="rounded-lg bg-ink p-6 text-off-white shadow-lift">
       <Thumb src={planImage} size={64} />
-      <h2 className="mt-4 font-display text-xl">Ready to build your trip?</h2>
+      <h2 className="mt-4 font-display text-xl"><T>Ready to build your trip?</T></h2>
       <p className="mt-2 text-xs leading-relaxed text-off-white/80">
-        Save places, compare options, and plan every detail in one place.
+        <T>Save places, compare options, and plan every detail in one place.</T>
       </p>
 
       {state === "prompt" || state === "error" ? (
@@ -1118,15 +1118,15 @@ function FinalCta({ dest }: { dest: DestinationView }) {
             type="submit"
             className="w-full rounded-full bg-off-white px-4 py-2.5 text-xs font-semibold text-copper"
           >
-            Save my trip plan
+            <T>Save my trip plan</T>
           </button>
           {state === "error" && (
-            <p className="text-[11px] text-off-white/80">Something went wrong. Please try again.</p>
+            <p className="text-[11px] text-off-white/80"><T>Something went wrong. Please try again.</T></p>
           )}
         </form>
       ) : state === "saved" ? (
         <p className="mt-5 rounded-full bg-off-white/15 px-4 py-2.5 text-center text-xs font-semibold">
-          Trip plan saved ✓
+          <T>Trip plan saved ✓</T>
         </p>
       ) : (
         <button
@@ -1142,7 +1142,7 @@ function FinalCta({ dest }: { dest: DestinationView }) {
 
       <p className="mt-4 flex items-center gap-1.5 text-[10px] text-off-white/60">
         
-        Free — no account needed
+        <T>Free — no account needed</T>
       </p>
     </aside>
   );

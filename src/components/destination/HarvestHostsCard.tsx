@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
 import { useState } from "react";
 import { ArrowRight, Check, Copy, Tent } from "lucide-react";
@@ -55,9 +56,9 @@ export function HarvestHostsCard({ destinationName }: { destinationName: string 
         </div>
         <div className="min-w-0 flex-1">
           <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-muted-foreground">Traveling by RV near {destinationName}?</p>
-          <h3 className="font-semibold text-foreground">Stay overnight free at wineries, farms & breweries</h3>
+          <h3 className="font-semibold text-foreground"><T>Stay overnight free at wineries, farms & breweries</T></h3>
           <p className="text-sm text-muted-foreground">
-            Harvest Hosts membership: 5,000+ unique RV stops. MiniaLife readers get 20% off the first year.
+            <T>Harvest Hosts membership: 5,000+ unique RV stops. MiniaLife readers get 20% off the first year.</T>
           </p>
         </div>
         <div className="flex shrink-0 flex-col items-start gap-2 md:items-end">
@@ -68,7 +69,7 @@ export function HarvestHostsCard({ destinationName }: { destinationName: string 
           </button>
           <a href={HARVEST_HOSTS_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" onClick={copy}
             className="inline-flex items-center gap-1.5 rounded-full bg-copper px-4 py-2 text-xs font-semibold text-off-white hover:bg-copper/90">
-            Get 20% off <ArrowRight className="h-3.5 w-3.5" />
+            <T>Get 20% off</T> <ArrowRight className="h-3.5 w-3.5" />
           </a>
         </div>
       </div>
@@ -90,8 +91,8 @@ export function HarvestHostsOffer() {
   };
   return (
     <div className="mt-3 rounded-md bg-secondary p-3">
-      <p className="text-xs font-semibold text-foreground">Stay overnight free at wineries, farms & breweries</p>
-      <p className="mt-1 text-xs text-muted-foreground">5,000+ unique RV stops. MiniaLife readers get 20% off the first year.</p>
+      <p className="text-xs font-semibold text-foreground"><T>Stay overnight free at wineries, farms & breweries</T></p>
+      <p className="mt-1 text-xs text-muted-foreground"><T>5,000+ unique RV stops. MiniaLife readers get 20% off the first year.</T></p>
       <button type="button" onClick={copy} className="mt-2 inline-flex items-center gap-1.5 rounded-full border border-dashed border-border bg-card px-3 py-1 text-xs font-semibold text-foreground">
         {copied ? <Check className="h-3.5 w-3.5" /> : <Copy className="h-3.5 w-3.5" />}
         {copied ? "Copied" : `Code ${HARVEST_HOSTS_CODE}`}

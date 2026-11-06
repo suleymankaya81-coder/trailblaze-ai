@@ -1,3 +1,4 @@
+import { T, useTp } from "@/lib/i18n";
 import { hreflangLinks } from "@/lib/seo/hreflang";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
@@ -66,6 +67,12 @@ const why = [
 
 function HomePage() {
   const { homeDestinations } = Route.useLoaderData();
+  return <HomePageView homeDestinations={homeDestinations} />;
+}
+
+/** Shared homepage body; German pages pass the slugs that have a German place page. */
+export function HomePageView({ homeDestinations, localSlugs }: { homeDestinations: HomepageDestination[]; localSlugs?: Set<string> }) {
+  const tp = useTp();
   const featured = homeDestinations.slice(0, 5);
   const used = new Set(featured.map((d) => d.heroImage));
   const fallbacks = [roadImg, mapImg, rvImg, flightImg];
@@ -80,12 +87,12 @@ function HomePage() {
       {featured.length > 0 && (
         <section id="destinations" className="section-y border-t border-border">
           <div className="container-page">
-            <SectionHead kicker="Popular right now" title="Where travelers are headed" action={<SectionLink to="/destinations">All destinations</SectionLink>} />
+            <SectionHead kicker="Popular right now" title="Where travelers are headed" action={<SectionLink to="/destinations"><T>All destinations</T></SectionLink>} />
             <SwipeRow className="md:grid-cols-4 md:grid-rows-2">
               {featured.map((d, i) => (
                 <div key={d.slug} className={i === 0 ? "md:col-span-2 md:row-span-2" : ""}>
-                  <PlaceCard to="/destinations/$slug" params={{ slug: d.slug }} image={d.heroImage} alt={d.name} large={i === 0}
-                    badges={[d.bestSeason ? `Best: ${d.bestSeason}` : null, d.tripDurationDays].filter((x): x is string => !!x)}
+                  <PlaceCard to={localSlugs?.has(d.slug) ? "/de/destinations/$slug" : "/destinations/$slug"} params={{ slug: d.slug }} image={d.heroImage} alt={d.name} large={i === 0}
+                    badges={[d.bestSeason ? tp(`Best: ${d.bestSeason}`) : null, d.tripDurationDays].filter((x): x is string => !!x)}
                     title={d.name} info={d.region} action="See the plan" />
                 </div>
               ))}
@@ -98,11 +105,11 @@ function HomePage() {
 
       <section className="section-y bg-card">
         <div className="container-page">
-          <SectionHead kicker="Road trip loops" title="Multi-park routes, planned for you" action={<SectionLink to="/road-trips">All loops</SectionLink>} />
+          <SectionHead kicker="Road trip loops" title="Multi-park routes, planned for you" action={<SectionLink to="/road-trips"><T>All loops</T></SectionLink>} />
           <SwipeRow className="md:grid-cols-2 lg:grid-cols-4">
             {LOOPS.slice(0, 4).map((l, i) => (
               <PlaceCard key={l.slug} to="/road-trips/$slug" params={{ slug: l.slug }} image={loopImage(l.stops, i)} alt={`${l.title} route scenery`}
-                badges={[`${l.stops.length} stops`, l.region]} title={l.title} summary={l.intro} action="See the route" />
+                badges={[tp(`${l.stops.length} stops`), l.region]} title={l.title} summary={l.intro} action="See the route" />
             ))}
           </SwipeRow>
         </div>
@@ -116,7 +123,7 @@ function HomePage() {
 
       <section id="stay-types" className="section-y bg-card">
         <div className="container-page">
-          <SectionHead kicker="Where to stay" title="Pick the stay that fits your trip" action={<SectionLink to="/destinations">Browse places</SectionLink>} />
+          <SectionHead kicker="Where to stay" title="Pick the stay that fits your trip" action={<SectionLink to="/destinations"><T>Browse places</T></SectionLink>} />
           <SwipeRow className="md:grid-cols-3">
             {stayTypes.map((s) => {
               const photo = servicePhoto(s.category, "homepage-stays");
@@ -125,9 +132,9 @@ function HomePage() {
                   <Link to="/destinations" search={{ tag: s.tag } as never} className="group flex flex-1 flex-col">
                     <div className="aspect-[16/10] overflow-hidden"><img src={photo.url} alt={`${photo.subject} — illustrative photo`} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" /></div>
                     <div className="flex flex-1 flex-col p-5">
-                      <h3 className="text-xl">{s.name}</h3>
-                      <p className="mt-2 flex-1 text-sm text-muted-foreground">{s.why}</p>
-                      <p className="mt-4 text-lg font-semibold">{s.price} <span className="text-[11px] font-normal text-muted-foreground">typical rate · confirm with partner</span></p>
+                      <h3 className="text-xl"><T>{s.name}</T></h3>
+                      <p className="mt-2 flex-1 text-sm text-muted-foreground"><T>{s.why}</T></p>
+                      <p className="mt-4 text-lg font-semibold"><T>{s.price}</T> <span className="text-[11px] font-normal text-muted-foreground"><T>typical rate · confirm with partner</T></span></p>
                     </div>
                   </Link>
                   <PhotoCredit photo={photo} className="absolute right-2 top-2" />
@@ -140,7 +147,7 @@ function HomePage() {
 
       <section className="section-y">
         <div className="container-page">
-          <SectionHead kicker="Trip guides" title="Guides for the way you travel" action={<SectionLink to="/trip-guides">All trip guides</SectionLink>} />
+          <SectionHead kicker="Trip guides" title="Guides for the way you travel" action={<SectionLink to="/trip-guides"><T>All trip guides</T></SectionLink>} />
           <SwipeRow className="md:grid-cols-3">
             <EditorialCard to="/fly-and-drive" image={flightImg} title="Fly & Drive" summary="Land at the nearest airport, pick up a car and reach the park the same day." action="Plan a fly-in trip" />
             <EditorialCard to="/no-reservation" image={roadImg} title="No reservation needed" summary="Parks you can visit without timed-entry permits, with current notes." action="See open parks" />
@@ -152,7 +159,7 @@ function HomePage() {
       <section className="section-y bg-card">
         <div className="container-page">
           <TripEssentials context={{ slug: "homepage", name: "your road trip" }} />
-          <div className="mt-2"><SectionLink to="/gear">Go to the Gear Shop</SectionLink></div>
+          <div className="mt-2"><SectionLink to="/gear"><T>Go to the Gear Shop</T></SectionLink></div>
         </div>
       </section>
 
@@ -160,7 +167,7 @@ function HomePage() {
         <div className="container-page">
           <SectionHead kicker="Why MiniaLife" title="Plan with confidence" />
           <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {why.map((w) => <li key={w.title} className="flex items-start gap-4"><Thumb src={w.img} size={64} /><div><h3 className="text-lg">{w.title}</h3><p className="mt-1 text-sm text-muted-foreground">{w.text}</p></div></li>)}
+            {why.map((w) => <li key={w.title} className="flex items-start gap-4"><Thumb src={w.img} size={64} /><div><h3 className="text-lg"><T>{w.title}</T></h3><p className="mt-1 text-sm text-muted-foreground"><T>{w.text}</T></p></div></li>)}
           </ul>
         </div>
       </section>
@@ -197,13 +204,13 @@ export function DestinationCard({
         <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent" />
         <div className="absolute inset-x-0 bottom-0 p-5 text-off-white">
           <p className="text-xs uppercase tracking-wider text-off-white/80">{d.region}</p>
-          <h3 className={`mt-1 font-bold ${titleClass}`}>{d.name}</h3>
+          <h3 className={`mt-1 font-bold ${titleClass}`}><T>{d.name}</T></h3>
         </div>
       </div>
       <div className="mt-3 flex flex-wrap items-start justify-between gap-2 text-sm">
         <span className="text-foreground/70">{meta}</span>
         <span className="font-semibold text-foreground/80 group-hover:text-foreground group-hover:underline">
-          Plan a trip <ArrowRight className="ml-0.5 inline h-3.5 w-3.5" />
+          <T>Plan a trip</T> <ArrowRight className="ml-0.5 inline h-3.5 w-3.5" />
         </span>
       </div>
     </Link>

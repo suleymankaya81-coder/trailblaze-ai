@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { CategoryTile, SectionHead, Thumb } from '@/components/ui-kit';
 import mapImg from '@/assets/thumbs/map.jpg';
 import planImg from '@/assets/thumbs/plan.jpg';
@@ -26,14 +27,14 @@ export function StartHere({ parkImage }: { parkImage?: string }) {
     <section id="how-it-works" className="section-y border-b border-border bg-card">
       <div className="container-page grid gap-10 lg:grid-cols-[1fr_2fr] lg:gap-16">
         <div>
-          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-sage-deep">What is MiniaLife?</p>
-          <h2 className="mt-2 text-[26px] leading-tight md:text-4xl">Free U.S. road trip plans, ready to book.</h2>
-          <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground">We write independent self-drive guides for national parks and outdoor places. You pick the trip; you book directly with trusted travel partners.</p>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-sage-deep"><T>What is MiniaLife?</T></p>
+          <h2 className="mt-2 text-[26px] leading-tight md:text-4xl"><T>Free U.S. road trip plans, ready to book.</T></h2>
+          <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground"><T>We write independent self-drive guides for national parks and outdoor places. You pick the trip; you book directly with trusted travel partners.</T></p>
         </div>
         <ol className="grid gap-6 md:grid-cols-3">
           {steps.map((s, i) => <li key={s.title} className="flex gap-4 md:flex-col">
             <Thumb src={s.img} alt="" size={72} />
-            <div><p className="text-xs font-semibold text-sage-deep">Step {i + 1}</p><h3 className="mt-1 text-lg leading-snug">{s.title}</h3><p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.text}</p></div>
+            <div><p className="text-xs font-semibold text-sage-deep"><T>Step</T> {i + 1}</p><h3 className="mt-1 text-lg leading-snug"><T>{s.title}</T></h3><p className="mt-2 text-sm leading-relaxed text-muted-foreground"><T>{s.text}</T></p></div>
           </li>)}
         </ol>
       </div>

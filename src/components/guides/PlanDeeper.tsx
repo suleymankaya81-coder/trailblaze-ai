@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 
@@ -38,22 +39,22 @@ export function PlanDeeper({
   return (
     <section className="border-y border-border py-6" aria-labelledby="plan-deeper-title">
       <h2 id="plan-deeper-title" className="font-display text-2xl text-foreground">
-        {current === "destination" ? "Plan deeper" : `More ${shortName} guides`}
+        <T>{current === "destination" ? "Plan deeper" : `More ${shortName} guides`}</T>
       </h2>
       <div className="mt-4 flex flex-wrap gap-3">
         {showDest && (
           <Link to="/destinations/$slug" params={{ slug: dest.slug }} className={pill}>
-            {dest.name}: full trip plan <ArrowRight className="h-3.5 w-3.5" />
+            <T>{`${dest.name}: full trip plan`}</T> <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         )}
         {arrivalSlug && (
           <Link to="/fly-and-drive/$slug" params={{ slug: arrivalSlug }} className={pill}>
-            Fly into {dest.airportCode}: flights, car & first night <ArrowRight className="h-3.5 w-3.5" />
+            <T>{`Fly into ${dest.airportCode}: flights, car & first night`}</T> <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         )}
         {noRes && (
           <Link to="/no-reservation/$slug" params={{ slug: dest.slug }} className={pill}>
-            No reservation? Entry rules & backup plans <ArrowRight className="h-3.5 w-3.5" />
+            <T>No reservation? Entry rules & backup plans</T> <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         )}
         {rv && (
