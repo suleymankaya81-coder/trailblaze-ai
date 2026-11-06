@@ -1,3 +1,4 @@
+import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { createFileRoute, useLoaderData } from "@tanstack/react-router";
 
@@ -26,6 +27,6 @@ export const Route = createFileRoute("/fly-and-drive/")({
   component: HubPage,
 });
 
-export function HubPage() {
+export function HubPage(): React.ReactElement {
   return <GuideHub family="fly-and-drive" kicker="Fly & Drive" title="Fly & drive guides" intro="Pick a place to see the closest airport, the drive time, car rental and the first night's stay." entries={(useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>)} />;
 }

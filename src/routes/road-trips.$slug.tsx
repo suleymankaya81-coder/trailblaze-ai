@@ -1,3 +1,4 @@
+import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { Thumb, SwipeRow } from "@/components/ui-kit";
 import roadImg from "@/assets/thumbs/road.jpg";
@@ -61,7 +62,7 @@ export const Route = createFileRoute("/road-trips/$slug")({
   notFoundComponent: () => <div className="container-page py-20">This road trip does not exist.</div>,
 });
 
-export function Page() {
+export function Page(): React.ReactElement {
   const { loop, stops, faqs } = (useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>);
   const totalDays = stops.reduce((s, x) => s + suggestedDays(x.tripDurationDays), 0);
   const line = stops.map((s) => [s.lng, s.lat] as [number, number]);

@@ -1,3 +1,4 @@
+import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { createFileRoute, useLoaderData } from "@tanstack/react-router";
 
@@ -26,6 +27,6 @@ export const Route = createFileRoute("/no-reservation/")({
   component: HubPage,
 });
 
-export function HubPage() {
+export function HubPage(): React.ReactElement {
   return <GuideHub family="no-reservation" kicker="No Reservation" title="No reservation? Entry rules & backup plans" intro="Places where booking matters — what the rules are, how to get in without a reservation, and where to go instead." entries={(useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>)} />;
 }

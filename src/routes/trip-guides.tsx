@@ -1,3 +1,4 @@
+import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { createFileRoute, Link, useLoaderData } from "@tanstack/react-router";
 import { EditorialCard } from "@/components/ui-kit";
@@ -46,7 +47,7 @@ export const Route = createFileRoute("/trip-guides")({
   component: Page,
 });
 
-export function Page() {
+export function Page(): React.ReactElement {
   const covers = (useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>);
   return (
     <div className="min-h-screen bg-background">

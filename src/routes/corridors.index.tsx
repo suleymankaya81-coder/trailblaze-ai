@@ -1,3 +1,4 @@
+import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { createFileRoute, Link, useLoaderData } from "@tanstack/react-router";
 import { PlaceCard } from "@/components/ui-kit";
@@ -34,7 +35,7 @@ export const Route = createFileRoute("/corridors/")({
   component: Page,
 });
 
-export function Page() {
+export function Page(): React.ReactElement {
   const list = CORRIDORS.filter((c) => !c.pilot);
   const covers = (useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>);
   const coverFor = (stops: string[]) => { const s = stops.slice(1).find((x) => covers[x]) ?? stops.find((x) => covers[x]); return s ? covers[s] : undefined; };

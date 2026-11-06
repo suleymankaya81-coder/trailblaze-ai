@@ -1,3 +1,4 @@
+import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { Thumb, SwipeRow } from "@/components/ui-kit";
 import roadImg from "@/assets/thumbs/road.jpg";
@@ -61,7 +62,7 @@ export const Route = createFileRoute("/corridors/$slug")({
   notFoundComponent: () => <div className="container-page py-20">This route does not exist.</div>,
 });
 
-export function Page() {
+export function Page(): React.ReactElement {
   const { corridor, stops } = (useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>);
   const loop = [...stops, stops[0]];
   const miles = Math.round(loop.slice(1).reduce((m, s, i) => m + haversineMiles([loop[i].lng, loop[i].lat], [s.lng, s.lat]), 0));

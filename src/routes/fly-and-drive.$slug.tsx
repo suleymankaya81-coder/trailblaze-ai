@@ -1,3 +1,4 @@
+import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
@@ -62,7 +63,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   );
 }
 
-export function FlyDrivePage() {
+export function FlyDrivePage(): React.ReactElement {
   const { dest, siblings, faqs, landingLinks } = (useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>);
   return (
     <div className="min-h-screen bg-background">

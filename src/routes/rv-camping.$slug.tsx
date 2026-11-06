@@ -1,3 +1,4 @@
+import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { Thumb, SwipeRow } from "@/components/ui-kit";
 import roadImg from "@/assets/thumbs/road.jpg";
@@ -65,7 +66,7 @@ export const Route = createFileRoute("/rv-camping/$slug")({
   notFoundComponent: () => <div className="container-page py-20">This guide does not exist.</div>,
 });
 
-export function Page() {
+export function Page(): React.ReactElement {
   const { dest, faqs, landingLinks } = (useLoaderData({ strict: false }) as ReturnType<typeof Route.useLoaderData>);
   const camps = dest.stays.filter((o) => o.partner && CAMP_PARTNERS.has(o.partner) && o.externalUrl).slice(0, 3);
   const rentals = dest.rentals.filter((o) => o.partner === "motorhome_republic" && o.externalUrl).slice(0, 3);
