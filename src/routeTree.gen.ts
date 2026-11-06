@@ -14,12 +14,14 @@ import { Route as LandingRouteImport } from './routes/$landing'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as AffiliateDisclosureRouteImport } from './routes/affiliate-disclosure'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as DeRouteImport } from './routes/de'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as SearchRouteImport } from './routes/search'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as TripGuidesRouteImport } from './routes/trip-guides'
 import { Route as CorridorsIndexRouteImport } from './routes/corridors.index'
 import { Route as CorridorsSlugRouteImport } from './routes/corridors.$slug'
+import { Route as DeIndexRouteImport } from './routes/de.index'
 import { Route as DestinationsIndexRouteImport } from './routes/destinations.index'
 import { Route as DestinationsSlugRouteImport } from './routes/destinations.$slug'
 import { Route as ExperiencesCorridorRouteImport } from './routes/experiences.$corridor'
@@ -36,6 +38,9 @@ import { Route as RoadTripsIndexRouteImport } from './routes/road-trips.index'
 import { Route as RoadTripsSlugRouteImport } from './routes/road-trips.$slug'
 import { Route as RvCampingIndexRouteImport } from './routes/rv-camping.index'
 import { Route as RvCampingSlugRouteImport } from './routes/rv-camping.$slug'
+import { Route as DeDestinationsIndexRouteImport } from './routes/de.destinations.index'
+import { Route as DeDestinationsSlugRouteImport } from './routes/de.destinations.$slug'
+import { Route as DeRoadTripsIndexRouteImport } from './routes/de.road-trips.index'
 import { Route as ExperiencesPlaceSlugRouteImport } from './routes/experiences.place.$slug'
 import { Route as GearCategoryKeyRouteImport } from './routes/gear.category.$key'
 
@@ -62,6 +67,11 @@ const AffiliateDisclosureRoute = AffiliateDisclosureRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DeRoute = DeRouteImport.update({
+  id: '/de',
+  path: '/de',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PrivacyRoute = PrivacyRouteImport.update({
@@ -93,6 +103,11 @@ const CorridorsSlugRoute = CorridorsSlugRouteImport.update({
   id: '/corridors/$slug',
   path: '/corridors/$slug',
   getParentRoute: () => rootRouteImport,
+} as any)
+const DeIndexRoute = DeIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => DeRoute,
 } as any)
 const DestinationsIndexRoute = DestinationsIndexRouteImport.update({
   id: '/destinations/',
@@ -177,6 +192,21 @@ const RvCampingSlugRoute = RvCampingSlugRouteImport.update({
   path: '/rv-camping/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DeDestinationsIndexRoute = DeDestinationsIndexRouteImport.update({
+  id: '/destinations/',
+  path: '/destinations/',
+  getParentRoute: () => DeRoute,
+} as any)
+const DeDestinationsSlugRoute = DeDestinationsSlugRouteImport.update({
+  id: '/destinations/$slug',
+  path: '/destinations/$slug',
+  getParentRoute: () => DeRoute,
+} as any)
+const DeRoadTripsIndexRoute = DeRoadTripsIndexRouteImport.update({
+  id: '/road-trips/',
+  path: '/road-trips/',
+  getParentRoute: () => DeRoute,
+} as any)
 const ExperiencesPlaceSlugRoute = ExperiencesPlaceSlugRouteImport.update({
   id: '/experiences/place/$slug',
   path: '/experiences/place/$slug',
@@ -194,6 +224,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/affiliate-disclosure': typeof AffiliateDisclosureRoute
   '/contact': typeof ContactRoute
+  '/de': typeof DeRouteWithChildren
   '/privacy': typeof PrivacyRoute
   '/search': typeof SearchRoute
   '/terms': typeof TermsRoute
@@ -210,14 +241,18 @@ export interface FileRoutesByFullPath {
   '/road-trips/$slug': typeof RoadTripsSlugRoute
   '/rv-camping/$slug': typeof RvCampingSlugRoute
   '/corridors/': typeof CorridorsIndexRoute
+  '/de/': typeof DeIndexRoute
   '/destinations/': typeof DestinationsIndexRoute
   '/fly-and-drive/': typeof FlyAndDriveIndexRoute
   '/gear/': typeof GearIndexRoute
   '/no-reservation/': typeof NoReservationIndexRoute
   '/road-trips/': typeof RoadTripsIndexRoute
   '/rv-camping/': typeof RvCampingIndexRoute
+  '/de/destinations/$slug': typeof DeDestinationsSlugRoute
   '/experiences/place/$slug': typeof ExperiencesPlaceSlugRoute
   '/gear/category/$key': typeof GearCategoryKeyRoute
+  '/de/destinations/': typeof DeDestinationsIndexRoute
+  '/de/road-trips/': typeof DeRoadTripsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -241,14 +276,18 @@ export interface FileRoutesByTo {
   '/road-trips/$slug': typeof RoadTripsSlugRoute
   '/rv-camping/$slug': typeof RvCampingSlugRoute
   '/corridors': typeof CorridorsIndexRoute
+  '/de': typeof DeIndexRoute
   '/destinations': typeof DestinationsIndexRoute
   '/fly-and-drive': typeof FlyAndDriveIndexRoute
   '/gear': typeof GearIndexRoute
   '/no-reservation': typeof NoReservationIndexRoute
   '/road-trips': typeof RoadTripsIndexRoute
   '/rv-camping': typeof RvCampingIndexRoute
+  '/de/destinations/$slug': typeof DeDestinationsSlugRoute
   '/experiences/place/$slug': typeof ExperiencesPlaceSlugRoute
   '/gear/category/$key': typeof GearCategoryKeyRoute
+  '/de/destinations': typeof DeDestinationsIndexRoute
+  '/de/road-trips': typeof DeRoadTripsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -257,6 +296,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/affiliate-disclosure': typeof AffiliateDisclosureRoute
   '/contact': typeof ContactRoute
+  '/de': typeof DeRouteWithChildren
   '/privacy': typeof PrivacyRoute
   '/search': typeof SearchRoute
   '/terms': typeof TermsRoute
@@ -273,14 +313,18 @@ export interface FileRoutesById {
   '/road-trips/$slug': typeof RoadTripsSlugRoute
   '/rv-camping/$slug': typeof RvCampingSlugRoute
   '/corridors/': typeof CorridorsIndexRoute
+  '/de/': typeof DeIndexRoute
   '/destinations/': typeof DestinationsIndexRoute
   '/fly-and-drive/': typeof FlyAndDriveIndexRoute
   '/gear/': typeof GearIndexRoute
   '/no-reservation/': typeof NoReservationIndexRoute
   '/road-trips/': typeof RoadTripsIndexRoute
   '/rv-camping/': typeof RvCampingIndexRoute
+  '/de/destinations/$slug': typeof DeDestinationsSlugRoute
   '/experiences/place/$slug': typeof ExperiencesPlaceSlugRoute
   '/gear/category/$key': typeof GearCategoryKeyRoute
+  '/de/destinations/': typeof DeDestinationsIndexRoute
+  '/de/road-trips/': typeof DeRoadTripsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -290,6 +334,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/affiliate-disclosure'
     | '/contact'
+    | '/de'
     | '/privacy'
     | '/search'
     | '/terms'
@@ -306,14 +351,18 @@ export interface FileRouteTypes {
     | '/road-trips/$slug'
     | '/rv-camping/$slug'
     | '/corridors/'
+    | '/de/'
     | '/destinations/'
     | '/fly-and-drive/'
     | '/gear/'
     | '/no-reservation/'
     | '/road-trips/'
     | '/rv-camping/'
+    | '/de/destinations/$slug'
     | '/experiences/place/$slug'
     | '/gear/category/$key'
+    | '/de/destinations/'
+    | '/de/road-trips/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -337,14 +386,18 @@ export interface FileRouteTypes {
     | '/road-trips/$slug'
     | '/rv-camping/$slug'
     | '/corridors'
+    | '/de'
     | '/destinations'
     | '/fly-and-drive'
     | '/gear'
     | '/no-reservation'
     | '/road-trips'
     | '/rv-camping'
+    | '/de/destinations/$slug'
     | '/experiences/place/$slug'
     | '/gear/category/$key'
+    | '/de/destinations'
+    | '/de/road-trips'
   id:
     | '__root__'
     | '/'
@@ -352,6 +405,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/affiliate-disclosure'
     | '/contact'
+    | '/de'
     | '/privacy'
     | '/search'
     | '/terms'
@@ -368,14 +422,18 @@ export interface FileRouteTypes {
     | '/road-trips/$slug'
     | '/rv-camping/$slug'
     | '/corridors/'
+    | '/de/'
     | '/destinations/'
     | '/fly-and-drive/'
     | '/gear/'
     | '/no-reservation/'
     | '/road-trips/'
     | '/rv-camping/'
+    | '/de/destinations/$slug'
     | '/experiences/place/$slug'
     | '/gear/category/$key'
+    | '/de/destinations/'
+    | '/de/road-trips/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -384,6 +442,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   AffiliateDisclosureRoute: typeof AffiliateDisclosureRoute
   ContactRoute: typeof ContactRoute
+  DeRoute: typeof DeRouteWithChildren
   PrivacyRoute: typeof PrivacyRoute
   SearchRoute: typeof SearchRoute
   TermsRoute: typeof TermsRoute
@@ -447,6 +506,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/de': {
+      id: '/de'
+      path: '/de'
+      fullPath: '/de'
+      preLoaderRoute: typeof DeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/privacy': {
       id: '/privacy'
       path: '/privacy'
@@ -488,6 +554,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/corridors/$slug'
       preLoaderRoute: typeof CorridorsSlugRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/de/': {
+      id: '/de/'
+      path: '/'
+      fullPath: '/de/'
+      preLoaderRoute: typeof DeIndexRouteImport
+      parentRoute: typeof DeRoute
     }
     '/destinations/': {
       id: '/destinations/'
@@ -601,6 +674,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RvCampingSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/de/destinations/': {
+      id: '/de/destinations/'
+      path: '/destinations'
+      fullPath: '/de/destinations/'
+      preLoaderRoute: typeof DeDestinationsIndexRouteImport
+      parentRoute: typeof DeRoute
+    }
+    '/de/destinations/$slug': {
+      id: '/de/destinations/$slug'
+      path: '/destinations/$slug'
+      fullPath: '/de/destinations/$slug'
+      preLoaderRoute: typeof DeDestinationsSlugRouteImport
+      parentRoute: typeof DeRoute
+    }
+    '/de/road-trips/': {
+      id: '/de/road-trips/'
+      path: '/road-trips'
+      fullPath: '/de/road-trips/'
+      preLoaderRoute: typeof DeRoadTripsIndexRouteImport
+      parentRoute: typeof DeRoute
+    }
     '/experiences/place/$slug': {
       id: '/experiences/place/$slug'
       path: '/experiences/place/$slug'
@@ -618,12 +712,29 @@ declare module '@tanstack/react-router' {
   }
 }
 
+interface DeRouteChildren {
+  DeIndexRoute: typeof DeIndexRoute
+  DeDestinationsSlugRoute: typeof DeDestinationsSlugRoute
+  DeDestinationsIndexRoute: typeof DeDestinationsIndexRoute
+  DeRoadTripsIndexRoute: typeof DeRoadTripsIndexRoute
+}
+
+const DeRouteChildren: DeRouteChildren = {
+  DeIndexRoute: DeIndexRoute,
+  DeDestinationsSlugRoute: DeDestinationsSlugRoute,
+  DeDestinationsIndexRoute: DeDestinationsIndexRoute,
+  DeRoadTripsIndexRoute: DeRoadTripsIndexRoute,
+}
+
+const DeRouteWithChildren = DeRoute._addFileChildren(DeRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   LandingRoute: LandingRoute,
   AboutRoute: AboutRoute,
   AffiliateDisclosureRoute: AffiliateDisclosureRoute,
   ContactRoute: ContactRoute,
+  DeRoute: DeRouteWithChildren,
   PrivacyRoute: PrivacyRoute,
   SearchRoute: SearchRoute,
   TermsRoute: TermsRoute,
