@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { CalendarDays, Car, Clock, Plane, ShieldAlert } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { formatDriveShort } from '@/lib/seo/flyDrive';

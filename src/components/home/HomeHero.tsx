@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { useState } from 'react';
 import { useNavigate } from '@tanstack/react-router';
 import { ArrowRight, Search } from 'lucide-react';

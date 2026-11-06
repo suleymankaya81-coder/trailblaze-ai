@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { offerCtaLabel } from "@/lib/affiliates/ctaLabel";
 import { SafeImage } from "@/components/shared/SafeImage";

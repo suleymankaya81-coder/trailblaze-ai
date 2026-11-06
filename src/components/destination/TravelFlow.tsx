@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { Clock, Fuel, MapPin, Navigation, ParkingCircle, Sun, Wifi, ExternalLink, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { TravelPlan } from "@/lib/data/travelPlan";

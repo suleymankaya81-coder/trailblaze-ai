@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { hreflangLinks } from "@/lib/seo/hreflang";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
