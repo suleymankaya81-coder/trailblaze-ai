@@ -59,10 +59,10 @@ const stayTypes: { name: string; category: ServicePhotoCategory; tag: string; wh
 ];
 
 const why = [
-  { img: planImg, title: <T>Free trip plans</T>, text: <T>Day-by-day itineraries you can use without an account.</T> },
-  { img: mapImg, title: <T>Real route maps</T>, text: <T>Airport drives and stops drawn on an actual map.</T> },
-  { img: carImg, title: <T>Trusted partners</T>, text: <T>Rentals, stays and tours from approved travel partners.</T> },
-  { img: roadImg, title: <T>Independent guides</T>, text: <T>Written by MiniaLife, not paid placements.</T> },
+  { img: planImg, title: "Free trip plans", text: "Day-by-day itineraries you can use without an account." },
+  { img: mapImg, title: "Real route maps", text: "Airport drives and stops drawn on an actual map." },
+  { img: carImg, title: "Trusted partners", text: "Rentals, stays and tours from approved travel partners." },
+  { img: roadImg, title: "Independent guides", text: "Written by MiniaLife, not paid placements." },
 ];
 
 function HomePage() {
@@ -126,9 +126,9 @@ function HomePage() {
                   <Link to="/destinations" search={{ tag: s.tag } as never} className="group flex flex-1 flex-col">
                     <div className="aspect-[16/10] overflow-hidden"><img src={photo.url} alt={`${photo.subject} — illustrative photo`} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" /></div>
                     <div className="flex flex-1 flex-col p-5">
-                      <h3 className="text-xl">{s.name}</h3>
-                      <p className="mt-2 flex-1 text-sm text-muted-foreground">{s.why}</p>
-                      <p className="mt-4 text-lg font-semibold">{s.price} <span className="text-[11px] font-normal text-muted-foreground"><T>typical rate · confirm with partner</T></span></p>
+                      <h3 className="text-xl"><T>{s.name}</T></h3>
+                      <p className="mt-2 flex-1 text-sm text-muted-foreground"><T>{s.why}</T></p>
+                      <p className="mt-4 text-lg font-semibold"><T>{s.price}</T> <span className="text-[11px] font-normal text-muted-foreground"><T>typical rate · confirm with partner</T></span></p>
                     </div>
                   </Link>
                   <PhotoCredit photo={photo} className="absolute right-2 top-2" />
@@ -161,7 +161,7 @@ function HomePage() {
         <div className="container-page">
           <SectionHead kicker="Why MiniaLife" title="Plan with confidence" />
           <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {why.map((w) => <li key={w.title} className="flex items-start gap-4"><Thumb src={w.img} size={64} /><div><h3 className="text-lg">{w.title}</h3><p className="mt-1 text-sm text-muted-foreground">{w.text}</p></div></li>)}
+            {why.map((w) => <li key={w.title} className="flex items-start gap-4"><Thumb src={w.img} size={64} /><div><h3 className="text-lg"><T>{w.title}</T></h3><p className="mt-1 text-sm text-muted-foreground"><T>{w.text}</T></p></div></li>)}
           </ul>
         </div>
       </section>
@@ -198,7 +198,7 @@ export function DestinationCard({
         <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent" />
         <div className="absolute inset-x-0 bottom-0 p-5 text-off-white">
           <p className="text-xs uppercase tracking-wider text-off-white/80">{d.region}</p>
-          <h3 className={`mt-1 font-bold ${titleClass}`}>{d.name}</h3>
+          <h3 className={`mt-1 font-bold ${titleClass}`}><T>{d.name}</T></h3>
         </div>
       </div>
       <div className="mt-3 flex flex-wrap items-start justify-between gap-2 text-sm">

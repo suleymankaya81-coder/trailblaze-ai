@@ -7,9 +7,9 @@ import { tpLink } from "@/lib/affiliates/travelpayouts";
 import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 
 const PERMIT_COPY = {
-  high: { label: <T>High demand</T>, tone: "border-copper/40 bg-copper/5", badge: "bg-copper/15 text-copper" },
-  moderate: { label: <T>Moderate</T>, tone: "border-border bg-sand/40", badge: "bg-sand text-foreground" },
-  none: { label: <T>Low</T>, tone: "border-sage/40 bg-sage/5", badge: "bg-sage/20 text-forest" },
+  high: { label: "High demand", tone: "border-copper/40 bg-copper/5", badge: "bg-copper/15 text-copper" },
+  moderate: { label: "Moderate", tone: "border-border bg-sand/40", badge: "bg-sand text-foreground" },
+  none: { label: "Low", tone: "border-sage/40 bg-sage/5", badge: "bg-sage/20 text-forest" },
 } as const;
 
 export function formatDrive(mins: number) {
@@ -98,7 +98,7 @@ export function TripRadar({ dest }: { dest: DestinationView }) {
               <Plane className="absolute left-1/2 top-1/2 h-5 w-5 -translate-x-1/2 -translate-y-1/2 rotate-45 text-forest transition group-hover:left-3/4" />
             </span>
             <span className="max-w-[40%] truncate text-right text-sm font-semibold text-foreground">
-              {dest.name}
+              <T>{dest.name}</T>
             </span>
           </div>
           <p className="mt-2 text-sm text-muted-foreground">
@@ -125,11 +125,11 @@ export function TripRadar({ dest }: { dest: DestinationView }) {
 }
 
 const JUMPS = [
-  { href: "#stays", label: <T>Stays</T> },
-  { href: "#rentals", label: <T>RV & Car Rentals</T> },
-  { href: "#flow", label: <T>3-Day Flow</T> },
-  { href: "#road-trip", label: <T>Route</T> },
-  { href: "#tours", label: <T>Tours</T> },
+  { href: "#stays", label: "Stays" },
+  { href: "#rentals", label: "RV & Car Rentals" },
+  { href: "#flow", label: "3-Day Flow" },
+  { href: "#road-trip", label: "Route" },
+  { href: "#tours", label: "Tours" },
 ];
 
 export function JumpBar() {
@@ -142,7 +142,7 @@ export function JumpBar() {
             href={j.href}
             className="shrink-0 rounded-full border border-border px-4 py-1.5 text-xs font-semibold text-foreground/80 transition hover:bg-muted hover:text-foreground"
           >
-            {j.label}
+            <T>{j.label}</T>
           </a>
         ))}
       </div>

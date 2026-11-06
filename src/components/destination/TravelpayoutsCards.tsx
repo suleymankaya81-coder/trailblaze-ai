@@ -27,8 +27,8 @@ function Card({ item, slug }: { item: Item; slug: string }) {
       <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-primary">
         <Icon className="h-4 w-4" />
       </span>
-      <p className="mt-1 text-sm font-semibold text-foreground">{item.title}</p>
-      <p className="mt-1 flex-1 text-xs text-muted-foreground">{item.sub}</p>
+      <p className="mt-1 text-sm font-semibold text-foreground"><T>{item.title}</T></p>
+      <p className="mt-1 flex-1 text-xs text-muted-foreground"><T>{item.sub}</T></p>
       <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-primary">
         Check on {item.name} <ArrowUpRight className="h-3.5 w-3.5" />
       </span>

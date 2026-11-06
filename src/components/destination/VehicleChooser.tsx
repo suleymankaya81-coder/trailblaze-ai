@@ -19,7 +19,7 @@ export function VehicleChooser({ slug, value, onChange }: { slug: string; value:
           <button key={o.id} type="button" aria-pressed={value === o.id}
             onClick={() => { onChange(o.id); trackEvent("vehicle_choice", { choice: o.id, destination_slug: slug }); }}
             className={`rounded-lg border p-3 text-left transition-colors ${value === o.id ? "border-primary bg-primary/10" : "border-border hover:border-primary/50"}`}>
-            <span className="block text-sm font-semibold text-foreground">{o.title}</span>
+            <span className="block text-sm font-semibold text-foreground"><T>{o.title}</T></span>
             <span className="block text-xs text-muted-foreground">{o.hint}</span>
           </button>
         ))}
