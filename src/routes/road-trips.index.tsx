@@ -1,3 +1,4 @@
+import { hreflangLinks } from "@/lib/seo/hreflang";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { getDestinationCovers } from "@/lib/data/destinations.functions";
 import { ArrowUpRight } from "lucide-react";
@@ -28,7 +29,7 @@ export const Route = createFileRoute("/road-trips/")({
       { name: "twitter:card", content: "summary_large_image" },
       ...((image => image?.startsWith("https://") ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : [])(Object.values(loaderData ?? {})[0])),
     ],
-    links: [{ rel: "canonical", href: `${SITE}/road-trips` }],
+    links: [{ rel: "canonical", href: `${SITE}/road-trips` }, ...hreflangLinks("/road-trips", ["en", "de"])],
     scripts: [breadcrumbScript([HOME, ROAD_TRIPS])],
   }),
   loader: () => getDestinationCovers({ data: { slugs: [...new Set(LOOPS.flatMap((l) => l.stops))] } }),

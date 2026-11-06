@@ -87,7 +87,7 @@ function urlset(urls: Url[]): Response {
   return xml(urlsetXml(urls));
 }
 
-const CHILDREN = ["pages", "destinations", "fly-and-drive", "no-reservation", "rv-camping", "road-trips", ...GUIDE_TYPES.map((t) => `guides-${t}`)];
+const CHILDREN = ["pages", "de", "destinations", "fly-and-drive", "no-reservation", "rv-camping", "road-trips", ...GUIDE_TYPES.map((t) => `guides-${t}`)];
 
 export async function buildSitemapResponse(_origin?: string): Promise<Response> {
   return xml(
@@ -105,6 +105,15 @@ export async function buildChildSitemap(name: string): Promise<Response | null> 
   if (!CHILDREN.includes(name)) return null;
   if (name === "pages") return urlset(STATIC_PATHS.map((p) => ({ loc: `${BASE_URL}${p}` })));
   try {
+    if (name === "de") {
+      const rows = await fetchAll<{ entity_id: string; updated_at: string }>(
+        "content_translations?select=entity_id,updated_at&entity_type=eq.destination&locale=eq.de&status=eq.published&order=entity_id.asc",
+      );
+      return urlset([
+        ...["/de", "/de/destinations", "/de/road-trips"].map((p) => ({ loc: `${BASE_URL}${p}` })),
+        ...rows.map((r) => ({ loc: `${BASE_URL}/de/destinations/${r.entity_id}`, lastmod: new Date(r.updated_at).toISOString() })),
+      ]);
+    }
     if (name === "destinations") {
       const rows = await fetchAll<{ slug: string; updated_at: string; hero_image: string | null; gallery: string[] | null }>(
         "destinations?select=slug,updated_at,hero_image,gallery&status=eq.published&order=slug.asc",

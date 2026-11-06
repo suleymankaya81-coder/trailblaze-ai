@@ -1,3 +1,6 @@
+import { hreflangLinks } from "@/lib/seo/hreflang";
+import { getDestinationLocales } from "@/lib/data/translations.functions";
+import { isLocale } from "@/lib/i18n/locales";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { offerCtaLabel } from "@/lib/affiliates/ctaLabel";
 import { SafeImage } from "@/components/shared/SafeImage";
@@ -88,11 +91,12 @@ import { commonsFilePage, parsePhotoCredit } from "@/lib/seo/imageCredit";
 import { destinationSearchDescription, destinationSearchTitle } from "@/lib/seo/routeSeo";
 
 export const Route = createFileRoute("/destinations/$slug")({
-  loader: async ({ params }): Promise<{ dest: DestinationView; landingLinks: LandingLink[] }> => {
+  loader: async ({ params }): Promise<{ dest: DestinationView; landingLinks: LandingLink[]; locales: string[] }> => {
     const dest = await getDestinationPageData({ data: { slug: params.slug } });
     if (!dest) throw notFound();
     const landingLinks = await getLandingLinksForDestination({ data: { destinationId: dest.id } }).catch(() => []);
-    return { dest, landingLinks };
+    const locales = await getDestinationLocales({ data: { slug: dest.slug } }).catch(() => []);
+    return { dest, landingLinks, locales };
   },
   head: ({ loaderData }) => {
     const d = loaderData?.dest;
@@ -115,7 +119,7 @@ export const Route = createFileRoute("/destinations/$slug")({
         { property: "og:url", content: pageUrl },
         { property: "og:type", content: "article" },
       ],
-      links: [{ rel: "canonical", href: pageUrl }],
+      links: [{ rel: "canonical", href: pageUrl }, ...hreflangLinks(`/destinations/${d.slug}`, ["en", ...(loaderData?.locales ?? []).filter(isLocale)])],
       scripts: [{ type: "application/ld+json", children: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }],
     };
   },
