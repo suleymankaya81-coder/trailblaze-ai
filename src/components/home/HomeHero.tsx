@@ -20,6 +20,7 @@ const scenes = [
 export function HomeHero() {
   const [query, setQuery] = useState('');
   const navigate = useNavigate();
+  const tp = useTp();
 
   return (
     <section className="home-collage-hero" aria-labelledby="home-hero-title">

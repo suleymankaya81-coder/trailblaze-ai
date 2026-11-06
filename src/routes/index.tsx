@@ -1,4 +1,4 @@
-import { T } from "@/lib/i18n";
+import { T, useTp } from "@/lib/i18n";
 import { hreflangLinks } from "@/lib/seo/hreflang";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
@@ -67,6 +67,12 @@ const why = [
 
 function HomePage() {
   const { homeDestinations } = Route.useLoaderData();
+  return <HomePageView homeDestinations={homeDestinations} />;
+}
+
+/** Shared homepage body; German pages pass the slugs that have a German place page. */
+export function HomePageView({ homeDestinations, localSlugs }: { homeDestinations: HomepageDestination[]; localSlugs?: Set<string> }) {
+  const tp = useTp();
   const featured = homeDestinations.slice(0, 5);
   const used = new Set(featured.map((d) => d.heroImage));
   const fallbacks = [roadImg, mapImg, rvImg, flightImg];
@@ -85,7 +91,7 @@ function HomePage() {
             <SwipeRow className="md:grid-cols-4 md:grid-rows-2">
               {featured.map((d, i) => (
                 <div key={d.slug} className={i === 0 ? "md:col-span-2 md:row-span-2" : ""}>
-                  <PlaceCard to="/destinations/$slug" params={{ slug: d.slug }} image={d.heroImage} alt={d.name} large={i === 0}
+                  <PlaceCard to={localSlugs?.has(d.slug) ? "/de/destinations/$slug" : "/destinations/$slug"} params={{ slug: d.slug }} image={d.heroImage} alt={d.name} large={i === 0}
                     badges={[d.bestSeason ? `${tp("Best:")} ${d.bestSeason}` : null, d.tripDurationDays].filter((x): x is string => !!x)}
                     title={d.name} info={d.region} action="See the plan" />
                 </div>
