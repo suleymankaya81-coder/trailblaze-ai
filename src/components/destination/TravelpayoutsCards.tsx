@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { useQuery } from "@tanstack/react-query";
 import { ArrowUpRight, Bike, Car, Plane, Ticket, Building2 } from "lucide-react";
 import { tpLink, nearGoCity, type TpBrand } from "@/lib/affiliates/travelpayouts";
@@ -71,7 +72,7 @@ export function GettingThereItems({ slug, name, airportCode }: { slug: string; n
 export function TravelpayoutsCards({ slug, name, airportCode }: { slug: string; name: string; airportCode: string | null }) {
   return (
     <div className="mt-8">
-      <h3 className="mb-3 text-sm font-semibold text-foreground">Getting there & getting around</h3>
+      <h3 className="mb-3 text-sm font-semibold text-foreground"><T>Getting there & getting around</T></h3>
       <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-4"><GettingThereItems slug={slug} name={name} airportCode={airportCode} /></div>
     </div>
   );
@@ -83,9 +84,9 @@ const TOUR_PRICE: Partial<Record<TpBrand, string>> = { klook: "Est. from $35", t
 /** Tour/ticket partner cards as bare grid items for the activities row. */
 export function TourTicketItems({ slug, name }: { slug: string; name: string }) {
   const doIt: Item[] = [
-    { brand: "klook", name: "Klook", title: `Tours near ${name}`, sub: "Guided tours, day trips and attraction deals", icon: Ticket },
-    { brand: "tiqets", name: "Tiqets", title: "Tickets & attractions", sub: "Instant mobile tickets for nearby sights", icon: Ticket },
-    ...(nearGoCity(slug) ? [{ brand: "gocity" as const, name: "Go City", title: "City attraction pass", sub: "One pass for the gateway city's top sights", icon: Building2 }] : []),
+    { brand: "klook", name: "Klook", title: `Tours near ${name}`, sub: <T>Guided tours, day trips and attraction deals</T>, icon: Ticket },
+    { brand: "tiqets", name: "Tiqets", title: <T>Tickets & attractions</T>, sub: <T>Instant mobile tickets for nearby sights</T>, icon: Ticket },
+    ...(nearGoCity(slug) ? [{ brand: "gocity" as const, name: "Go City", title: <T>City attraction pass</T>, sub: <T>One pass for the gateway city's top sights</T>, icon: Building2 }] : []),
   ];
   return <>{doIt.map((i) => <TourCard key={i.brand} item={i} slug={slug} />)}</>;
 }
@@ -100,7 +101,7 @@ function TourCard({ item, slug }: { item: Item; slug: string }) {
 export function TourTicketCards({ slug, name }: { slug: string; name: string }) {
   return (
     <div className="mt-8">
-      <h3 className="mb-3 text-sm font-semibold text-foreground">More tours & ticket partners</h3>
+      <h3 className="mb-3 text-sm font-semibold text-foreground"><T>More tours & ticket partners</T></h3>
       <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-4"><TourTicketItems slug={slug} name={name} /></div>
     </div>
   );

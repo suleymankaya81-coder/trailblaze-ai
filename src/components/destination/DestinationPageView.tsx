@@ -154,14 +154,14 @@ function Hero({ dest, crumbs }: { dest: DestinationView; crumbs?: Crumb[] }) {
   const source = credit?.sourceUrl ?? commonsFilePage(dest.heroImage);
 
   const stats: { label: string; value: string }[] = [];
-  if (dest.bestSeason) stats.push({ label: "Best time", value: dest.bestSeason });
-  if (dest.tripDurationDays) stats.push({ label: "Duration", value: dest.tripDurationDays });
+  if (dest.bestSeason) stats.push({ label: <T>Best time</T>, value: dest.bestSeason });
+  if (dest.tripDurationDays) stats.push({ label: <T>Duration</T>, value: dest.tripDurationDays });
   if (dest.avgDailyBudget != null)
-    stats.push({ label: "Avg. budget", value: `$${dest.avgDailyBudget} / day` });
+    stats.push({ label: <T>Avg. budget</T>, value: `$${dest.avgDailyBudget} / day` });
   if (dest.scenicScore != null)
-    stats.push({ label: "Scenic score", value: `${dest.scenicScore} / 10` });
+    stats.push({ label: <T>Scenic score</T>, value: `${dest.scenicScore} / 10` });
   if (dest.campingScore != null)
-    stats.push({ label: "Camping score", value: `${dest.campingScore} / 10` });
+    stats.push({ label: <T>Camping score</T>, value: `${dest.campingScore} / 10` });
 
   return (
     <section className="relative isolate overflow-hidden">
@@ -200,13 +200,13 @@ function Hero({ dest, crumbs }: { dest: DestinationView; crumbs?: Crumb[] }) {
               href="#stays"
               className="inline-flex items-center justify-center min-h-12 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
             >
-              See places to stay
+              <T>See places to stay</T>
             </a>
             <a
               href="#road-trip"
               className="inline-flex items-center justify-center min-h-12 rounded-full border border-off-white/50 bg-off-white/10 px-6 py-3 text-sm font-semibold text-off-white transition hover:bg-off-white/10"
             >
-              Explore the trip
+              <T>Explore the trip</T>
             </a>
           </div>
         </div>
@@ -323,10 +323,10 @@ function OfferCta({
   if (!offer.externalUrl) {
     return (
       <span
-        title="Not bookable yet"
+        title={<T>Not bookable yet</T>}
         className={`rounded-full border border-border bg-muted ${pad} font-semibold text-muted-foreground`}
       >
-        Coming soon
+        <T>Coming soon</T>
       </span>
     );
   }
@@ -417,7 +417,7 @@ function TopStays({ dest }: { dest: DestinationView }) {
     <section id="stays" className="scroll-mt-24">
       <SectionHeader
         step={3}
-        title="Where you'll want to sleep"
+        title={<T>Where you'll want to sleep</T>}
         
       />
 
@@ -490,7 +490,7 @@ function StayCard({
         )}
         {featured && (
           <span className="absolute left-0 top-4 rounded-r-full bg-ink/80 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-off-white">
-            MiniaLife's pick
+            <T>MiniaLife's pick</T>
           </span>
         )}
 
@@ -505,7 +505,7 @@ function StayCard({
           </p>
         )}
         <p className="mt-3 text-xs font-medium text-foreground/80">
-          Best for: <span className="font-normal">{bestForLine(offer)}</span>
+          <T>Best for:</T> <span className="font-normal">{bestForLine(offer)}</span>
         </p>
         {(offer.whyRecommended || offer.description) && (
           <p className="mt-2 line-clamp-3 text-xs leading-relaxed text-muted-foreground">
@@ -539,20 +539,20 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
     ? [
         {
           icon: <Hotel className="h-4 w-4" />,
-          label: "Accommodation",
+          label: <T>Accommodation</T>,
           value: ai.budget.accommodation,
         },
-        { icon: <Truck className="h-4 w-4" />, label: "Rental", value: ai.budget.rental },
-        { icon: <UtensilsCrossed className="h-4 w-4" />, label: "Food", value: ai.budget.food },
-        { icon: <Fuel className="h-4 w-4" />, label: "Fuel", value: ai.budget.fuel },
+        { icon: <Truck className="h-4 w-4" />, label: <T>Rental</T>, value: ai.budget.rental },
+        { icon: <UtensilsCrossed className="h-4 w-4" />, label: <T>Food</T>, value: ai.budget.food },
+        { icon: <Fuel className="h-4 w-4" />, label: <T>Fuel</T>, value: ai.budget.fuel },
         {
           icon: <Mountain className="h-4 w-4" />,
-          label: "Activities",
+          label: <T>Activities</T>,
           value: ai.budget.activities,
         },
         {
           icon: <ShoppingBasket className="h-4 w-4" />,
-          label: "Gear & essentials",
+          label: <T>Gear & essentials</T>,
           value: ai.budget.equipment,
         },
       ]
@@ -561,21 +561,21 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
 
   return (
     <aside className="h-full rounded-xl border border-border bg-card p-6 md:p-8">
-      <h2 className="font-display text-2xl text-foreground">Your trip budget</h2>
-      <p className="mt-0.5 text-xs text-muted-foreground">Estimated for 4 days · 2 travelers</p>
+      <h2 className="font-display text-2xl text-foreground"><T>Your trip budget</T></h2>
+      <p className="mt-0.5 text-xs text-muted-foreground"><T>Estimated for 4 days · 2 travelers</T></p>
 
       {loading ? (
         <Skeleton className="mt-5 h-9 w-32" />
       ) : !ai ? (
         <p className="mt-5 text-xs text-muted-foreground">
-          Budget estimate isn't available for this destination right now.
+          <T>Budget estimate isn't available for this destination right now.</T>
         </p>
       ) : (
         <>
           <p className="mt-5 font-serif text-3xl font-semibold text-foreground">
             ${total.toLocaleString()}
           </p>
-          <p className="text-xs text-muted-foreground">Estimated total</p>
+          <p className="text-xs text-muted-foreground"><T>Estimated total</T></p>
 
           <ul className="mt-5 space-y-3 text-sm">
             {items.map((i) => (
@@ -596,7 +596,7 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
             onClick={() => setShowNote((v) => !v)}
             className="mt-6 w-full rounded-full border border-border py-2.5 text-xs font-semibold text-foreground transition hover:bg-muted"
           >
-            See ways to save
+            <T>See ways to save</T>
           </button>
           {showNote && (
             <p className="mt-3 rounded-xl bg-beige/70 p-3 text-[11px] leading-relaxed text-foreground/80">
@@ -607,7 +607,7 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
       )}
 
       <p className="mt-4 text-[11px] leading-relaxed text-muted-foreground">
-        Prices are averages and may vary based on season and preferences.
+        <T>Prices are averages and may vary based on season and preferences.</T>
       </p>
     </aside>
   );
@@ -651,7 +651,7 @@ const SMALL_CAMPER_PHOTO: Photo = {
 };
 
 function RentalTile({ offer, destinationSlug, photo, kind }: { offer: OfferView; destinationSlug: string; photo?: Photo; kind: "motorhome" | "camper" }) {
-  const title = kind === "motorhome" ? offer.title : "Sleeps 2 campervans";
+  const title = kind === "motorhome" ? offer.title: <T>Sleeps 2 campervans</T>;
   const price = kind === "motorhome" && offer.priceValue != null
     ? `From $${offer.priceValue}/${offer.priceUnit ?? "day"}`
     : estimatedFrom(kind === "camper" ? "small campervan" : `${offer.title} ${offer.subcategory ?? ""}`);
@@ -663,7 +663,7 @@ function RentalTile({ offer, destinationSlug, photo, kind }: { offer: OfferView;
       </div>
       <div className="flex-1 border-b border-border p-4">
           <p className="font-display text-lg leading-snug text-foreground">{title}</p>
-          <p className="mt-1 font-display text-base font-semibold text-foreground">{price} <span className="text-[10px] font-normal text-muted-foreground">· typical rate</span></p>
+          <p className="mt-1 font-display text-base font-semibold text-foreground">{price} <span className="text-[10px] font-normal text-muted-foreground"><T>· typical rate</T></span></p>
           <p className="mt-1 text-xs text-muted-foreground">{kind === "motorhome" ? "Drive-and-sleep motorhome with kitchen and bathroom." : "Compact van-style camper that sleeps two, easier to park."}</p>
       </div>
       <div className="flex flex-col gap-2 p-4">
@@ -687,7 +687,7 @@ function RentalTile({ offer, destinationSlug, photo, kind }: { offer: OfferView;
 function ThingsToDo({ dest }: { dest: DestinationView }) {
   return (
     <section className="scroll-mt-24">
-      <SectionHeader step={4} title="The moments you came for" />
+      <SectionHeader step={4} title={<T>The moments you came for</T>} />
       <div className="grid gap-6 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:items-start">
         <ViatorPlaceBlock slug={dest.slug} name={dest.name} anchored={false} />
         <div className="travel-card-row sm:grid-cols-2 lg:pt-[92px]"><TourTicketItems slug={dest.slug} name={dest.name} /></div>
@@ -701,31 +701,31 @@ function ThingsToDo({ dest }: { dest: DestinationView }) {
    6 — TRAVEL SERVICES
 ========================================================= */
 const SERVICE_META: Record<string, { icon: ReactNode; sub: string }> = {
-  car_rental: { icon: <Navigation className="h-4 w-4" />, sub: "Compare prices from top brands" },
-  insurance: { icon: <ShieldCheck className="h-4 w-4" />, sub: "Protect your trip and gear" },
-  esim: { icon: <Wifi className="h-4 w-4" />, sub: "Stay connected anywhere" },
-  park_pass: { icon: <Trees className="h-4 w-4" />, sub: "Official park passes & info" },
-  travel_card: { icon: <CreditCard className="h-4 w-4" />, sub: "Spend without foreign fees" },
+  car_rental: { icon: <Navigation className="h-4 w-4" />, sub: <T>Compare prices from top brands</T> },
+  insurance: { icon: <ShieldCheck className="h-4 w-4" />, sub: <T>Protect your trip and gear</T> },
+  esim: { icon: <Wifi className="h-4 w-4" />, sub: <T>Stay connected anywhere</T> },
+  park_pass: { icon: <Trees className="h-4 w-4" />, sub: <T>Official park passes & info</T> },
+  travel_card: { icon: <CreditCard className="h-4 w-4" />, sub: <T>Spend without foreign fees</T> },
   offline_maps: {
     icon: <Luggage className="h-4 w-4" />,
-    sub: "Drop bags in the gateway city for the day",
+    sub: <T>Drop bags in the gateway city for the day</T>,
   },
 };
 
 function TravelServices({ dest }: { dest: DestinationView }) {
   const services = dest.globalServices.filter((service) => !(service.category in ROAD_PREPARATION_PARTNERS));
   const preparationDetails = {
-    insurance: { title: "Travel insurance", brand: "EKTA", sub: "Medical cover for international visitors" },
-    esim: { title: "US eSIM data", brand: "Airalo", sub: "Get online on landing, no SIM swap" },
-    offline_maps: { title: "Luggage storage", brand: "Radical Storage", sub: "Drop bags in the gateway city for the day" },
-    car_rental: { title: "Car Rental", brand: "Airport Rentals", sub: "Compare standard cars and SUVs at the airport" },
+    insurance: { title: <T>Travel insurance</T>, brand: "EKTA", sub: <T>Medical cover for international visitors</T> },
+    esim: { title: <T>US eSIM data</T>, brand: "Airalo", sub: <T>Get online on landing, no SIM swap</T> },
+    offline_maps: { title: <T>Luggage storage</T>, brand: "Radical Storage", sub: <T>Drop bags in the gateway city for the day</T> },
+    car_rental: { title: <T>Car Rental</T>, brand: "Airport Rentals", sub: <T>Compare standard cars and SUVs at the airport</T> },
   };
 
   return (
     <aside className="h-full rounded-xl border border-border bg-card p-6 md:p-8">
-      <h2 className="font-display text-2xl text-foreground">Before you hit the road</h2>
+      <h2 className="font-display text-2xl text-foreground"><T>Before you hit the road</T></h2>
       <p className="mt-0.5 text-xs text-muted-foreground">
-        The few things worth sorting out in advance.
+        <T>The few things worth sorting out in advance.</T>
       </p>
 
       <ul className="mt-4 divide-y divide-border">
@@ -785,7 +785,7 @@ function ServiceRow({ service, destinationSlug }: { service: OfferView; destinat
 
   if (!service.externalUrl) {
     return (
-      <div className={`${rowClass} opacity-60`} title="Coming soon">
+      <div className={`${rowClass} opacity-60`} title={<T>Coming soon</T>}>
         {inner}
       </div>
     );
@@ -824,7 +824,7 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
 
   return (
     <section id="road-trip" className="scroll-mt-24">
-      <SectionHeader title="Plan your road trip" />
+      <SectionHeader title={<T>Plan your road trip</T>} />
       <div className="grid grid-cols-[minmax(0,1fr)] gap-6 rounded-lg border border-border bg-card p-4 shadow-soft sm:p-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
         <div className="relative min-h-[300px] overflow-hidden rounded-xl border border-border bg-beige/60">
           {from && to ? (
@@ -836,7 +836,7 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
           ) : (
             <div className="flex min-h-[300px] flex-col items-center justify-center gap-3 p-8 text-center">
               <Thumb src={mapImage} size={64} />
-              <p className="text-sm font-semibold text-foreground">Route map coming soon</p>
+              <p className="text-sm font-semibold text-foreground"><T>Route map coming soon</T></p>
             </div>
           )}
         </div>
@@ -864,14 +864,14 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
             rel="noopener noreferrer"
             className="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-forest px-5 py-2.5 text-sm font-semibold text-off-white transition hover:bg-ink"
           >
-            <Navigation className="h-4 w-4" /> Get directions
+            <Navigation className="h-4 w-4" /> <T>Get directions</T>
           </a>
           <p className="mt-2 text-center text-[11px] text-muted-foreground">
-            Airport-to-destination drive; sightseeing stops are separate markers.
+            <T>Airport-to-destination drive; sightseeing stops are separate markers.</T>
           </p>
           {nearbyStays.length > 0 && (
             <>
-              <p className="mt-5 text-xs font-semibold text-foreground">Stays near the end of your drive</p>
+              <p className="mt-5 text-xs font-semibold text-foreground"><T>Stays near the end of your drive</T></p>
               <ul className="mt-2 space-y-2">
                 {nearbyStays.map((s) => (
                   <li key={s.id}>
@@ -904,28 +904,28 @@ function FieldIntel({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) 
   const tips: { icon: ReactNode; label: string; text: string }[] = [
     {
       icon: <Wifi className="h-4 w-4" />,
-      label: "Signal",
+      label: <T>Signal</T>,
       text:
         ai?.insights.cellCoverage ??
         "Cell signal drops inside and around the park — download offline maps before you leave the gateway town.",
     },
     {
       icon: <Fuel className="h-4 w-4" />,
-      label: "Last fuel",
+      label: <T>Last fuel</T>,
       text: dest.airportName
         ? `Fill up in the gateway town after leaving ${dest.airportName} — fuel near the entrance is pricier and stations are sparse.`
         : "Fill up in the gateway town — fuel near the entrance is pricier and stations are sparse.",
     },
     {
       icon: <Sun className="h-4 w-4" />,
-      label: "Beat the crowds",
+      label: <T>Beat the crowds</T>,
       text:
         ai?.insights.crowdLevels ??
         "Arrive at headline sights before 9 AM; parking lots at the popular trailheads fill first.",
     },
     {
       icon: <Mountain className="h-4 w-4" />,
-      label: "Wildlife",
+      label: <T>Wildlife</T>,
       text:
         ai?.insights.wildlife ??
         "Dawn and dusk are prime wildlife hours — drive slowly and never approach animals for a photo.",
@@ -979,7 +979,7 @@ function TripFlow({ dest }: { dest: DestinationView }) {
   const plan: { day: string; title: string; detail: string; start: string }[] = [];
   plan.push({
     day: "Day 1",
-    title: "Arrive & settle in",
+    title: <T>Arrive & settle in</T>,
     detail: dest.airportCode
       ? `Land at ${dest.airportCode}, pick up your rental, and take the ${dest.driveMinutes != null ? formatDrive(dest.driveMinutes) : "scenic"} drive in. Stock up on groceries and fuel in the gateway town before prices rise near the park.`
       : "Arrive, pick up your rental, and stock up on groceries and fuel in the gateway town before heading in.",
@@ -1001,7 +1001,7 @@ function TripFlow({ dest }: { dest: DestinationView }) {
   }
   plan.push({
     day: `Day ${days}`,
-    title: "Golden hour & departure",
+    title: <T>Golden hour & departure</T>,
     detail:
       "Keep the last morning light for one final viewpoint, then loop back at your own pace. Leave buffer for the drive out — weekend traffic builds after lunch.",
     start: "Start: sunrise",
@@ -1011,7 +1011,7 @@ function TripFlow({ dest }: { dest: DestinationView }) {
     <section id="flow" className="scroll-mt-24">
       <SectionHeader title={`Your ${days}-day ${dest.name.split(" ")[0]} flow`} />
       <p className="-mt-3 mb-5 text-[11px] text-muted-foreground">
-        A suggested rhythm, not a fixed schedule — swap days around the weather and your energy.
+        <T>A suggested rhythm, not a fixed schedule — swap days around the weather and your energy.</T>
       </p>
       <ol className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         {plan.map((p, i) => (
@@ -1045,8 +1045,8 @@ function SimilarDestinations({ dest }: { dest: DestinationView }) {
   return (
     <section>
       <SectionHeader
-        title="More destinations you'll love"
-        action={<Link to="/destinations" className="inline-flex min-h-12 items-center text-sm font-semibold text-primary">All destinations <ArrowRight className="ml-1 h-4 w-4" /></Link>}
+        title={<T>More destinations you'll love</T>}
+        action={<Link to="/destinations" className="inline-flex min-h-12 items-center text-sm font-semibold text-primary"><T>All destinations</T> <ArrowRight className="ml-1 h-4 w-4" /></Link>}
       />
       {similar.length === 0 ? (
         <EmptyState message="No related destinations yet." />
@@ -1093,9 +1093,9 @@ function FinalCta({ dest }: { dest: DestinationView }) {
   return (
     <aside className="rounded-lg bg-ink p-6 text-off-white shadow-lift">
       <Thumb src={planImage} size={64} />
-      <h2 className="mt-4 font-display text-xl">Ready to build your trip?</h2>
+      <h2 className="mt-4 font-display text-xl"><T>Ready to build your trip?</T></h2>
       <p className="mt-2 text-xs leading-relaxed text-off-white/80">
-        Save places, compare options, and plan every detail in one place.
+        <T>Save places, compare options, and plan every detail in one place.</T>
       </p>
 
       {state === "prompt" || state === "error" ? (
@@ -1118,15 +1118,15 @@ function FinalCta({ dest }: { dest: DestinationView }) {
             type="submit"
             className="w-full rounded-full bg-off-white px-4 py-2.5 text-xs font-semibold text-copper"
           >
-            Save my trip plan
+            <T>Save my trip plan</T>
           </button>
           {state === "error" && (
-            <p className="text-[11px] text-off-white/80">Something went wrong. Please try again.</p>
+            <p className="text-[11px] text-off-white/80"><T>Something went wrong. Please try again.</T></p>
           )}
         </form>
       ) : state === "saved" ? (
         <p className="mt-5 rounded-full bg-off-white/15 px-4 py-2.5 text-center text-xs font-semibold">
-          Trip plan saved ✓
+          <T>Trip plan saved ✓</T>
         </p>
       ) : (
         <button
@@ -1142,7 +1142,7 @@ function FinalCta({ dest }: { dest: DestinationView }) {
 
       <p className="mt-4 flex items-center gap-1.5 text-[10px] text-off-white/60">
         
-        Free — no account needed
+        <T>Free — no account needed</T>
       </p>
     </aside>
   );

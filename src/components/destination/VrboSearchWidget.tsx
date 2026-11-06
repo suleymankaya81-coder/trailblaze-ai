@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { ArrowUpRight, BedDouble, Home, MapPin, Mountain, Trees } from "lucide-react";
 import { buildVrboSearchUrl } from "@/lib/affiliates/vrbo";
 import { buildExpediaHotelSearchUrl } from "@/lib/affiliates/expedia";
@@ -53,7 +54,7 @@ function StayCard({
       <div className="flex flex-1 flex-col p-4">
         <p className="text-xs font-semibold uppercase tracking-wider text-primary">{brand}</p>
         <h3 className="mt-1 font-display text-lg leading-snug text-foreground">{title}</h3>
-        <p className="mt-1 font-display text-base font-semibold text-foreground">{brand === "Vrbo" ? "Est. from $120/night" : "Est. from $110/night"} <span className="text-[10px] font-normal text-muted-foreground">· typical rate</span></p>
+        <p className="mt-1 font-display text-base font-semibold text-foreground">{brand === "Vrbo" ? "Est. from $120/night" : "Est. from $110/night"} <span className="text-[10px] font-normal text-muted-foreground"><T>· typical rate</T></span></p>
         <ul className="mt-4 flex-1 space-y-2.5">
           {points.map(({ icon: Icon, text }) => (
             <li key={text} className="flex gap-2.5 text-sm text-muted-foreground">
@@ -83,22 +84,22 @@ export function VrboExpediaItems({ destinationName }: { destinationName: string 
         brand="Vrbo"
         title={`Cabins & vacation rentals near ${destinationName}`}
         href={buildVrboSearchUrl(destinationName)}
-        cta="Search cabins on Vrbo"
+        cta={<T>Search cabins on Vrbo</T>}
         pic={servicePhoto("cabin", destinationName + ":vrbo") ?? CABINS[0]}
         points={[
-          { icon: Mountain, text: "Whole-home cabins and lodges" },
-          { icon: Trees, text: "Kitchens and room for the crew" },
+          { icon: Mountain, text: <T>Whole-home cabins and lodges</T> },
+          { icon: Trees, text: <T>Kitchens and room for the crew</T> },
         ]}
       />
       <StayCard
         brand="Expedia"
         title={`Hotels & lodges near ${destinationName}`}
         href={buildExpediaHotelSearchUrl(destinationName)}
-        cta="Search hotels on Expedia"
+        cta={<T>Search hotels on Expedia</T>}
         pic={servicePhoto("hotel", destinationName + ":expedia") ?? HOTELS[1]}
         points={[
-          { icon: MapPin, text: "Hotels in nearby gateway towns" },
-          { icon: BedDouble, text: "Inns and last-minute rooms" },
+          { icon: MapPin, text: <T>Hotels in nearby gateway towns</T> },
+          { icon: BedDouble, text: <T>Inns and last-minute rooms</T> },
         ]}
       />
     </>

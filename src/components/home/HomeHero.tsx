@@ -24,9 +24,9 @@ export function HomeHero() {
     <section className="home-collage-hero" aria-labelledby="home-hero-title">
       <div className="container-page home-collage-layout">
         <div className="home-collage-copy">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Bigger places. Calmer planning.</p>
-          <h1 id="home-hero-title" className="mt-5 font-display text-[38px] leading-[1.08] text-primary md:text-[48px] xl:text-[64px]">Where will the<br className="hidden md:block" /> road take you?</h1>
-          <p className="mt-5 max-w-md text-base leading-relaxed text-muted-foreground md:text-lg">500+ wild places, day-by-day road trip plans and honest booking advice — so you can pick a direction and go.</p>
+          <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground"><T>Bigger places. Calmer planning.</T></p>
+          <h1 id="home-hero-title" className="mt-5 font-display text-[38px] leading-[1.08] text-primary md:text-[48px] xl:text-[64px]"><T>Where will the</T><br className="hidden md:block" /> <T>road take you?</T></h1>
+          <p className="mt-5 max-w-md text-base leading-relaxed text-muted-foreground md:text-lg"><T>500+ wild places, day-by-day road trip plans and honest booking advice — so you can pick a direction and go.</T></p>
           <form className="mt-7 flex items-center gap-2 rounded-full border border-border bg-card p-1.5 shadow-soft" role="search" onSubmit={(event) => {
             event.preventDefault();
             const q = query.trim();
@@ -34,7 +34,7 @@ export function HomeHero() {
           }}>
             <Search aria-hidden="true" className="ml-3 h-4 w-4 shrink-0 text-muted-foreground" />
             <input aria-label="Destination or trip type" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Try 'Yellowstone' or 'coastal road trip'" required maxLength={160} className="min-w-0 flex-1 bg-transparent py-3 text-sm text-foreground outline-none placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-ring" />
-            <Button type="submit" size="lg" className="shrink-0 gap-2 px-4 text-sm shadow-none lg:px-6">Search <ArrowRight aria-hidden="true" /></Button>
+            <Button type="submit" size="lg" className="shrink-0 gap-2 px-4 text-sm shadow-none lg:px-6"><T>Search</T> <ArrowRight aria-hidden="true" /></Button>
           </form>
           <ul className="mt-8 grid grid-cols-3 gap-3 md:mt-10">
             {[
@@ -43,7 +43,7 @@ export function HomeHero() {
               { image: road, title: 'Free forever', detail: 'Independent guides' },
             ].map((item) => <li key={item.title} className="flex items-center gap-2.5"><span className="hidden lg:block"><Thumb src={item.image} alt="" size={36} /></span><div><p className="text-xs font-semibold text-foreground">{item.title}</p><p className="mt-1 text-[10px] text-muted-foreground">{item.detail}</p></div></li>)}
           </ul>
-          <p className="mt-8 flex items-center gap-3 text-[9px] font-medium uppercase tracking-[0.15em] text-muted-foreground md:mt-12"><span className="h-px w-6 bg-border" />Good roads. Brighter days.</p>
+          <p className="mt-8 flex items-center gap-3 text-[9px] font-medium uppercase tracking-[0.15em] text-muted-foreground md:mt-12"><span className="h-px w-6 bg-border" /><T>Good roads. Brighter days.</T></p>
         </div>
         <div className="home-collage-scenes" aria-label="Road trip inspiration">
           {scenes.map((scene, index) => <figure key={scene.label} className={`home-collage-scene home-collage-scene-${index + 1}`}>

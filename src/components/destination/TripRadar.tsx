@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { useQuery } from "@tanstack/react-query";
 import { ArrowUpRight, Plane, ShieldAlert } from "lucide-react";
 import type { DestinationView } from "@/lib/data/destinations.functions";
@@ -6,9 +7,9 @@ import { tpLink } from "@/lib/affiliates/travelpayouts";
 import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 
 const PERMIT_COPY = {
-  high: { label: "High demand", tone: "border-copper/40 bg-copper/5", badge: "bg-copper/15 text-copper" },
-  moderate: { label: "Moderate", tone: "border-border bg-sand/40", badge: "bg-sand text-foreground" },
-  none: { label: "Low", tone: "border-sage/40 bg-sage/5", badge: "bg-sage/20 text-forest" },
+  high: { label: <T>High demand</T>, tone: "border-copper/40 bg-copper/5", badge: "bg-copper/15 text-copper" },
+  moderate: { label: <T>Moderate</T>, tone: "border-border bg-sand/40", badge: "bg-sand text-foreground" },
+  none: { label: <T>Low</T>, tone: "border-sage/40 bg-sage/5", badge: "bg-sage/20 text-forest" },
 } as const;
 
 export function formatDrive(mins: number) {
@@ -74,7 +75,7 @@ export function TripRadar({ dest }: { dest: DestinationView }) {
               rel="noopener noreferrer"
               className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-semibold text-primary hover:underline"
             >
-              Check official reservation info <ArrowUpRight className="h-4 w-4" />
+              <T>Check official reservation info</T> <ArrowUpRight className="h-4 w-4" />
             </a>
           )}
         </div>
@@ -88,7 +89,7 @@ export function TripRadar({ dest }: { dest: DestinationView }) {
           className="group relative flex flex-col overflow-hidden rounded-3xl border border-border bg-gradient-to-br from-sage/25 via-card to-sand/50 p-6 shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg md:p-7"
         >
           <Plane className="pointer-events-none absolute -right-6 -top-6 h-36 w-36 rotate-12 text-forest/5" />
-          <p className="text-xs uppercase tracking-wider text-muted-foreground">Fly in · nearest airport</p>
+          <p className="text-xs uppercase tracking-wider text-muted-foreground"><T>Fly in · nearest airport</T></p>
           <div className="mt-3 flex items-center gap-3">
             <span className="font-display text-4xl font-bold tracking-tight text-foreground">
               {dest.airportCode}
@@ -124,11 +125,11 @@ export function TripRadar({ dest }: { dest: DestinationView }) {
 }
 
 const JUMPS = [
-  { href: "#stays", label: "Stays" },
-  { href: "#rentals", label: "RV & Car Rentals" },
-  { href: "#flow", label: "3-Day Flow" },
-  { href: "#road-trip", label: "Route" },
-  { href: "#tours", label: "Tours" },
+  { href: "#stays", label: <T>Stays</T> },
+  { href: "#rentals", label: <T>RV & Car Rentals</T> },
+  { href: "#flow", label: <T>3-Day Flow</T> },
+  { href: "#road-trip", label: <T>Route</T> },
+  { href: "#tours", label: <T>Tours</T> },
 ];
 
 export function JumpBar() {

@@ -1,18 +1,19 @@
+import { T } from "@/lib/i18n";
 import { trackEvent } from "@/lib/analytics";
 
 export type VehiclePick = "car" | "suv" | "rv";
 export const VEHICLE_PILOT_SLUGS = ["grand-canyon"];
 
 const OPTIONS: { id: VehiclePick; title: string; hint: string }[] = [
-  { id: "car", title: "Car", hint: "Solo or couple, staying in hotels" },
-  { id: "suv", title: "SUV", hint: "Family, luggage or dirt roads" },
-  { id: "rv", title: "Motorhome / campervan", hint: "Sleep inside the park" },
+  { id: "car", title: <T>Car</T>, hint: "Solo or couple, staying in hotels" },
+  { id: "suv", title: <T>SUV</T>, hint: "Family, luggage or dirt roads" },
+  { id: "rv", title: <T>Motorhome / campervan</T>, hint: "Sleep inside the park" },
 ];
 
 export function VehicleChooser({ slug, value, onChange }: { slug: string; value: VehiclePick | null; onChange: (v: VehiclePick) => void }) {
   return (
     <div className="mb-5 rounded-xl border border-border bg-card p-4">
-      <p className="font-display text-base text-foreground">Which vehicle fits your trip?</p>
+      <p className="font-display text-base text-foreground"><T>Which vehicle fits your trip?</T></p>
       <div className="mt-3 grid gap-2 sm:grid-cols-3">
         {OPTIONS.map((o) => (
           <button key={o.id} type="button" aria-pressed={value === o.id}

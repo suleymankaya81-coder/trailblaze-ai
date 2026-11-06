@@ -1,11 +1,12 @@
+import { T } from "@/lib/i18n";
 import { useEffect, useRef, useState } from "react";
 import { Car, Truck } from "lucide-react";
 import { motorhomeRepublicLink, airportRentalsLink } from "@/lib/affiliates/webjet";
 import { Button } from "@/components/ui/button";
 
 const TABS = {
-  rv: { label: "RV & Campervan", icon: Truck, brand: "Motorhome Republic", host: "www.motorhomerepublic.com", extra: "&country=", fallback: motorhomeRepublicLink(), blurb: "Compare motorhomes and campervans from professional rental fleets across the USA." },
-  car: { label: "Car Rental", icon: Car, brand: "Airport Rentals", host: "www.airportrentals.com", extra: "", fallback: airportRentalsLink(), blurb: "Compare airport car rentals and return to the same airport to avoid one-way fees." },
+  rv: { label: <T>RV & Campervan</T>, icon: Truck, brand: "Motorhome Republic", host: "www.motorhomerepublic.com", extra: "&country=", fallback: motorhomeRepublicLink(), blurb: <T>Compare motorhomes and campervans from professional rental fleets across the USA.</T> },
+  car: { label: <T>Car Rental</T>, icon: Car, brand: "Airport Rentals", host: "www.airportrentals.com", extra: "", fallback: airportRentalsLink(), blurb: <T>Compare airport car rentals and return to the same airport to avoid one-way fees.</T> },
 } as const;
 type Tab = keyof typeof TABS;
 

@@ -27,7 +27,7 @@ export function TripEssentials({ context }: { context: EssentialsContext }) {
     <section id="trip-gear" aria-label={`Trip essentials for ${context.name}`} className="min-w-0">
       <div className="mb-5 flex items-end justify-between gap-4">
         <div className="min-w-0">
-          <p className="text-xs font-semibold uppercase text-sage-deep">Curated Trip Essentials</p>
+          <p className="text-xs font-semibold uppercase text-sage-deep"><T>Curated Trip Essentials</T></p>
           <h2 className="mt-2 break-words font-display text-2xl text-foreground md:text-[28px]">Five picks for {context.name}</h2>
         </div>
         <div className="flex shrink-0 gap-1 lg:hidden">
@@ -46,10 +46,10 @@ export function TripEssentials({ context }: { context: EssentialsContext }) {
               <h3 className="mt-2 text-base font-semibold leading-snug text-foreground">{product.name}</h3>
               <p className="mb-4 mt-2 text-xs leading-relaxed text-muted-foreground">{product.description}</p>
               <div className="mt-auto">
-                <p className="mb-2 text-base font-semibold text-foreground">{catalogPrice(product)} <span className="text-[10px] font-normal text-muted-foreground">USD · catalog price</span></p>
+                <p className="mb-2 text-base font-semibold text-foreground">{catalogPrice(product)} <span className="text-[10px] font-normal text-muted-foreground"><T>USD · catalog price</T></span></p>
                 <RockbrosCode className="mb-3" />
                 <Button asChild className="h-auto min-h-12 w-full whitespace-normal rounded-md px-2 text-xs">
-                  <a href={gearShopLink(product, `trip-${context.slug}`)} target="_blank" rel="sponsored nofollow noopener noreferrer">Shop at ROCKBROS <ArrowRight className="h-3.5 w-3.5 shrink-0" /></a>
+                  <a href={gearShopLink(product, `trip-${context.slug}`)} target="_blank" rel="sponsored nofollow noopener noreferrer"><T>Shop at ROCKBROS</T> <ArrowRight className="h-3.5 w-3.5 shrink-0" /></a>
                 </Button>
               </div>
             </div>
@@ -60,13 +60,13 @@ export function TripEssentials({ context }: { context: EssentialsContext }) {
             <SafeImage src={binocular.image} alt={binocular.name} width={400} height={300} loading="lazy" className="h-full w-full object-contain" />
           </a>
           <div className="flex flex-1 flex-col p-4 pt-0">
-            <p className="text-[11px] font-semibold text-sage-deep">Wildlife & night viewing</p>
+            <p className="text-[11px] font-semibold text-sage-deep"><T>Wildlife & night viewing</T></p>
             <h3 className="mt-2 text-base font-semibold leading-snug text-foreground">{binocular.name}</h3>
             <p className="mb-4 mt-2 text-xs leading-relaxed text-muted-foreground">{binocular.spec}. Check park rules before using lights at night.</p>
             <div className="mt-auto">
-              <p className="mb-3 text-base font-semibold text-foreground">{wildguarderPrice(binocular)} <span className="text-[10px] font-normal text-muted-foreground">USD · store price</span></p>
+              <p className="mb-3 text-base font-semibold text-foreground">{wildguarderPrice(binocular)} <span className="text-[10px] font-normal text-muted-foreground"><T>USD · store price</T></span></p>
               <Button asChild className="h-auto min-h-12 w-full whitespace-normal rounded-md px-2 text-xs">
-                <a href={wildguarderLink(binocular.url, `trip-${context.slug}`)} target="_blank" rel="sponsored nofollow noopener noreferrer">Shop at WILDGUARDER <ArrowRight className="h-3.5 w-3.5 shrink-0" /></a>
+                <a href={wildguarderLink(binocular.url, `trip-${context.slug}`)} target="_blank" rel="sponsored nofollow noopener noreferrer"><T>Shop at WILDGUARDER</T> <ArrowRight className="h-3.5 w-3.5 shrink-0" /></a>
               </Button>
             </div>
           </div>

@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
 import { ArrowUpRight } from "lucide-react";
 import type { Photo } from "@/lib/data/destinationCardPhotos";
@@ -21,7 +22,7 @@ export function PartnerPhotoCard({ brand, title, href, photo, detail, price, bad
             </ul>
           )}
           <h3 className="mt-1 text-sm font-semibold text-foreground">{title}</h3>
-          {price && <p className="mt-1 font-display text-base font-semibold text-foreground">{price} <span className="text-[10px] font-normal text-muted-foreground">· typical rate</span></p>}
+          {price && <p className="mt-1 font-display text-base font-semibold text-foreground">{price} <span className="text-[10px] font-normal text-muted-foreground"><T>· typical rate</T></span></p>}
           {detail && <p className="mt-2 text-xs text-muted-foreground">{detail}</p>}
           <span className="mt-4 inline-flex min-h-12 items-center justify-center gap-1 rounded-md bg-primary px-3 py-2 text-center text-xs font-semibold text-primary-foreground">{cta ?? `Check on ${brand}`} <ArrowUpRight className="h-3.5 w-3.5 shrink-0" /></span>
         </div>

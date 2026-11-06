@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { CategoryTile, SectionHead, Thumb } from '@/components/ui-kit';
 import mapImg from '@/assets/thumbs/map.jpg';
 import planImg from '@/assets/thumbs/plan.jpg';
@@ -26,9 +27,9 @@ export function StartHere({ parkImage }: { parkImage?: string }) {
     <section id="how-it-works" className="section-y border-b border-border bg-card">
       <div className="container-page grid gap-10 lg:grid-cols-[1fr_2fr] lg:gap-16">
         <div>
-          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-sage-deep">What is MiniaLife?</p>
-          <h2 className="mt-2 text-[26px] leading-tight md:text-4xl">Free U.S. road trip plans, ready to book.</h2>
-          <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground">We write independent self-drive guides for national parks and outdoor places. You pick the trip; you book directly with trusted travel partners.</p>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-sage-deep"><T>What is MiniaLife?</T></p>
+          <h2 className="mt-2 text-[26px] leading-tight md:text-4xl"><T>Free U.S. road trip plans, ready to book.</T></h2>
+          <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground"><T>We write independent self-drive guides for national parks and outdoor places. You pick the trip; you book directly with trusted travel partners.</T></p>
         </div>
         <ol className="grid gap-6 md:grid-cols-3">
           {steps.map((s, i) => <li key={s.title} className="flex gap-4 md:flex-col">
@@ -39,7 +40,7 @@ export function StartHere({ parkImage }: { parkImage?: string }) {
       </div>
     </section>
     <section className="section-y container-page" aria-labelledby="start-title">
-      <SectionHead kicker="Start here" title="Where would you like to start?" />
+      <SectionHead kicker={<T>Start here</T>} title={<T>Where would you like to start?</T>} />
       <div className="grid grid-cols-3 gap-x-3 gap-y-6 md:grid-cols-5 md:gap-5">
         {entries.map(e => <CategoryTile key={e.to} to={e.to} image={e.image} label={e.title} detail={e.detail} />)}
       </div>
