@@ -26,3 +26,16 @@ describe("i18n", () => {
     ]);
   });
 });
+
+import { tp } from "./index";
+describe("phrase translation", () => {
+  it("translates fixed and patterned phrases for German", () => {
+    expect(tp("de", "See places to stay")).toBe("Unterkünfte ansehen");
+    expect(tp("de", "Find flights to CNY")).toBe("Flüge nach CNY finden");
+    expect(tp("de", "Est. from $45/day")).toBe("Ca. ab 45 $/Tag");
+  });
+  it("leaves English and unknown text unchanged", () => {
+    expect(tp("en", "See places to stay")).toBe("See places to stay");
+    expect(tp("de", "Arches National Park")).toBe("Arches National Park");
+  });
+});

@@ -22,13 +22,19 @@ export function useT() {
   return (key: DictKey) => t(locale, key);
 }
 
-import { DE_PHRASES } from "./phrases.de";
+import { DE_PATTERNS, DE_PHRASES } from "./phrases.de";
 import { createElement, Fragment } from "react";
+const PATTERNS: Partial<Record<Locale, [RegExp, string][]>> = { de: DE_PATTERNS };
 const PHRASES: Partial<Record<Locale, Record<string, string>>> = { de: DE_PHRASES };
 
 /** Translate a fixed English phrase; falls back to the English text. */
 export function tp(locale: Locale, text: string): string {
-  return PHRASES[locale]?.[text] ?? text;
+  const dict = PHRASES[locale];
+  if (!dict) return text;
+  const hit = dict[text];
+  if (hit) return hit;
+  for (const [re, out] of PATTERNS[locale] ?? []) if (re.test(text)) return text.replace(re, out);
+  return text;
 }
 
 export function useTp() {
