@@ -43,14 +43,14 @@ export function HomeHero() {
               { image: map, title: '500+', detail: 'Destinations, mapped' },
               { image: plan, title: 'Day by day', detail: 'Road-tested trip plans' },
               { image: road, title: 'Free forever', detail: 'Independent guides' },
-            ].map((item) => <li key={item.title} className="flex items-center gap-2.5"><span className="hidden lg:block"><Thumb src={item.image} alt="" size={36} /></span><div><p className="text-xs font-semibold text-foreground"><T><T>{item.title}</T></T></p><p className="mt-1 text-[10px] text-muted-foreground"><T><T>{item.detail}</T></T></p></div></li>)}
+            ].map((item) => <li key={item.title} className="flex items-center gap-2.5"><span className="hidden lg:block"><Thumb src={item.image} alt="" size={36} /></span><div><p className="text-xs font-semibold text-foreground"><T>{item.title}</T></p><p className="mt-1 text-[10px] text-muted-foreground"><T>{item.detail}</T></p></div></li>)}
           </ul>
           <p className="mt-8 flex items-center gap-3 text-[9px] font-medium uppercase tracking-[0.15em] text-muted-foreground md:mt-12"><span className="h-px w-6 bg-border" /><T>Good roads. Brighter days.</T></p>
         </div>
         <div className="home-collage-scenes" aria-label="Road trip inspiration">
           {scenes.map((scene, index) => <figure key={scene.label} className={`home-collage-scene home-collage-scene-${index + 1}`}>
             <img src={scene.image} alt={scene.alt} width={768} height={1536} fetchPriority={index === 0 ? 'high' : 'auto'} className="h-full w-full object-cover" />
-            <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/75 to-transparent px-4 pb-6 pt-16 text-[9px] font-medium uppercase leading-relaxed tracking-[0.15em] text-off-white"><T><T>{scene.label}</T></T><br /><T><T>{scene.caption}</T></T></figcaption>
+            <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/75 to-transparent px-4 pb-6 pt-16 text-[9px] font-medium uppercase leading-relaxed tracking-[0.15em] text-off-white"><T>{scene.label}</T><br /><T>{scene.caption}</T></figcaption>
           </figure>)}
         </div>
       </div>

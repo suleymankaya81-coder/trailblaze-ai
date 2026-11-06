@@ -98,7 +98,7 @@ export function TripRadar({ dest }: { dest: DestinationView }) {
               <Plane className="absolute left-1/2 top-1/2 h-5 w-5 -translate-x-1/2 -translate-y-1/2 rotate-45 text-forest transition group-hover:left-3/4" />
             </span>
             <span className="max-w-[40%] truncate text-right text-sm font-semibold text-foreground">
-              <T><T>{dest.name}</T></T>
+              <T>{dest.name}</T>
             </span>
           </div>
           <p className="mt-2 text-sm text-muted-foreground">
@@ -142,7 +142,7 @@ export function JumpBar() {
             href={j.href}
             className="shrink-0 rounded-full border border-border px-4 py-1.5 text-xs font-semibold text-foreground/80 transition hover:bg-muted hover:text-foreground"
           >
-            <T><T>{j.label}</T></T>
+            <T>{j.label}</T>
           </a>
         ))}
       </div>
