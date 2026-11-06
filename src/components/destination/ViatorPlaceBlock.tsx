@@ -36,7 +36,7 @@ export function ViatorPlaceBlock({ slug, name, className = "", anchored = true }
     <section id={anchored ? "trip-tours" : undefined} className={className} aria-label={`Tours near ${name}`}>
       <p className="mb-1 text-[11px] uppercase tracking-wide text-muted-foreground">Viator</p>
       <h3 className="mb-2 font-display text-xl font-semibold text-foreground">Tours & experiences near {name}</h3>
-      <p className="mb-3 text-sm leading-relaxed text-muted-foreground">{status === "empty" ? `No matching Viator tours are currently listed for ${name}.` : status === "error" ? "Viator listings are temporarily unavailable. Retry below or open the listings separately." : `Explore guided activities around ${name}. Check the meeting point, dates and availability on Viator before booking.`}</p>
+      <p className="mb-3 text-sm leading-relaxed text-muted-foreground"><T>{status === "empty" ? `No matching Viator tours are currently listed for ${name}.` : status === "error" ? "Viator listings are temporarily unavailable. Retry below or open the listings separately." : `Explore guided activities around ${name}. Check the meeting point, dates and availability on Viator before booking.`}</T></p>
       <iframe ref={frame} onLoad={measureFrame} src={`/experiences/place/${slug}`} title={`Viator tours near ${name}`} loading="lazy" style={{ height: height ?? 360 }} className="w-full border-0 bg-background" />
       {status !== "empty" && <Button asChild variant="outline" className="mt-3 min-h-12"><a href={`/experiences/place/${slug}`} target="_blank" rel="nofollow noopener noreferrer"><T>Open tour listings separately</T></a></Button>}
     </section>

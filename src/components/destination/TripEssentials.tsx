@@ -43,7 +43,7 @@ export function TripEssentials({ context }: { context: EssentialsContext }) {
               <SafeImage src={product.image} alt={product.catalogTitle} width={400} height={300} loading="lazy" className="h-full w-full object-contain" />
             </a>
             <div className="flex flex-1 flex-col p-4 pt-0">
-              <p className="text-[11px] font-semibold text-sage-deep">{product.purpose}</p>
+              <p className="text-[11px] font-semibold text-sage-deep"><T>{product.purpose}</T></p>
               <h3 className="mt-2 text-base font-semibold leading-snug text-foreground"><T>{product.name}</T></h3>
               <p className="mb-4 mt-2 text-xs leading-relaxed text-muted-foreground"><T>{product.description}</T></p>
               <div className="mt-auto">

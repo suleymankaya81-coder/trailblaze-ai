@@ -54,7 +54,7 @@ function StayCard({
       <div className="flex flex-1 flex-col p-4">
         <p className="text-xs font-semibold uppercase tracking-wider text-primary">{brand}</p>
         <h3 className="mt-1 font-display text-lg leading-snug text-foreground"><T>{title}</T></h3>
-        <p className="mt-1 font-display text-base font-semibold text-foreground">{brand === "Vrbo" ? "Est. from $120/night" : "Est. from $110/night"} <span className="text-[10px] font-normal text-muted-foreground"><T>· typical rate</T></span></p>
+        <p className="mt-1 font-display text-base font-semibold text-foreground"><T>{brand === "Vrbo" ? "Est. from $120/night" : "Est. from $110/night"}</T> <span className="text-[10px] font-normal text-muted-foreground"><T>· typical rate</T></span></p>
         <ul className="mt-4 flex-1 space-y-2.5">
           {points.map(({ icon: Icon, text }) => (
             <li key={text} className="flex gap-2.5 text-sm text-muted-foreground">

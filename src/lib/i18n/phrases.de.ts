@@ -271,10 +271,21 @@ export const DE_PHRASES: Record<string, string> = {
   "Est. from $20": "Ca. ab 20 $",
   "Est. from $35": "Ca. ab 35 $",
   "Est. from $55/day": "Ca. ab 55 $/Tag",
+  "Viator listings are temporarily unavailable. Retry below or open the listings separately.": "Viator-Angebote sind vorübergehend nicht verfügbar. Unten erneut versuchen oder separat öffnen.",
+  "Carry drinking water on longer walks; refill before leaving services.": "Nehmen Sie auf längeren Wanderungen Trinkwasser mit; vor dem Verlassen von Versorgungsstellen auffüllen.",
+  "Keep small day-trip belongings together without a bike-mounted bag.": "Hält kleine Dinge für Tagesausflüge zusammen – ohne Fahrradtasche.",
+  "Carry spare layers and walking supplies; check fit and use a liner for valuables.": "Für Wechselkleidung und Wanderbedarf; Passform prüfen und Wertsachen extra schützen.",
+  "A light neck covering for sunny walks; use alongside sunscreen, not instead of it.": "Leichter Halsschutz für sonnige Wanderungen; zusätzlich zur Sonnencreme, nicht stattdessen.",
+  "20X optical zoom · 500m IR range. Check park rules before using lights at night.": "20-facher optischer Zoom · 500 m IR-Reichweite. Vor nächtlicher Lichtnutzung Parkregeln prüfen.",
+  "Wrap-around cycling sunglasses with polarized lenses and a lightweight TR90 frame, according to the listing.": "Umlaufende Fahrrad-Sonnenbrille mit polarisierten Gläsern und leichtem TR90-Rahmen (laut Produktangabe).",
 };
 
 // Phrases with a variable part ($1, $2 are kept as-is).
 export const DE_PATTERNS: [RegExp, string][] = [
+  [/^Explore guided activities around (.+)\. Check the meeting point, dates and availability on Viator before booking\.$/, "Geführte Aktivitäten rund um $1. Prüfen Sie Treffpunkt, Termine und Verfügbarkeit auf Viator vor der Buchung."],
+  [/^No matching Viator tours are currently listed for (.+)\.$/, "Für $1 sind derzeit keine passenden Viator-Touren gelistet."],
+  [/^about (\d+) miles by car · times vary with traffic and road closures$/, "ca. $1 Meilen mit dem Auto · Zeiten variieren je nach Verkehr und Sperrungen"],
+  [/^(\d+) h (\d+) min$/, "$1 Std. $2 Min."],
   [/^Find flights to (.+)$/, "Flüge nach $1 finden"],
   [/^Flights to ?(.+)$/, "Flüge nach $1"],
   [/^Compare cars at (.+)$/, "Mietwagen in $1 vergleichen"],

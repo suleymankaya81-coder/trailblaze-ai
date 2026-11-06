@@ -190,7 +190,7 @@ function Hero({ dest, crumbs }: { dest: DestinationView; crumbs?: Crumb[] }) {
                   <dt className="text-[10px] font-semibold uppercase tracking-[0.16em] text-off-white/60">
                     <T>{s.label}</T>
                   </dt>
-                  <dd className="mt-1 text-sm font-semibold text-off-white">{s.value}</dd>
+                  <dd className="mt-1 text-sm font-semibold text-off-white">{typeof s.value === "string" ? <T>{s.value}</T> : s.value}</dd>
                 </div>
               ))}
             </dl>
@@ -270,7 +270,7 @@ function PriceTag({
     );
   }
   if (offer.priceDisplay) return <span className={className}>{offer.priceDisplay}</span>;
-  return <span className="text-xs font-normal text-muted-foreground">{estimatedFrom(`${offer.title ?? ""} ${offer.subcategory ?? ""} ${offer.partner ?? ""}`)} · estimate</span>;
+  return <span className="text-xs font-normal text-muted-foreground"><T>{`${estimatedFrom(`${offer.title ?? ""} ${offer.subcategory ?? ""} ${offer.partner ?? ""}`)} · estimate`}</T></span>;
 }
 
 function useTrackedRedirect(offer: OfferView, destinationSlug: string) {
@@ -665,7 +665,7 @@ function RentalTile({ offer, destinationSlug, photo, kind }: { offer: OfferView;
       <div className="flex-1 border-b border-border p-4">
           <p className="font-display text-lg leading-snug text-foreground"><T>{title}</T></p>
           <p className="mt-1 font-display text-base font-semibold text-foreground"><T>{price}</T> <span className="text-[10px] font-normal text-muted-foreground"><T>· typical rate</T></span></p>
-          <p className="mt-1 text-xs text-muted-foreground">{kind === "motorhome" ? "Drive-and-sleep motorhome with kitchen and bathroom." : "Compact van-style camper that sleeps two, easier to park."}</p>
+          <p className="mt-1 text-xs text-muted-foreground"><T>{kind === "motorhome" ? "Drive-and-sleep motorhome with kitchen and bathroom." : "Compact van-style camper that sleeps two, easier to park."}</T></p>
       </div>
       <div className="flex flex-col gap-2 p-4">
         <span className="text-[11px] uppercase tracking-wide text-muted-foreground">
@@ -853,8 +853,7 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
               </p>
               {dest.driveMiles != null && (
                 <p className="text-xs text-muted-foreground">
-                  about {Math.round(dest.driveMiles)} miles by car · times vary with traffic and
-                  road closures
+                  <T>{`about ${Math.round(dest.driveMiles)} miles by car · times vary with traffic and road closures`}</T>
                 </p>
               )}
             </div>
