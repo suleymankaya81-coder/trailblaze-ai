@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 
@@ -26,7 +27,7 @@ export function MoreRoutes({ stops, currentLoop, currentCorridor }: { stops: str
         <div className="mt-4 flex flex-wrap gap-3">
           {loops.map((l) => (
             <Link key={l.slug} to="/road-trips/$slug" params={{ slug: l.slug }} className={pill}>
-              {l.title} <ArrowRight className="h-3.5 w-3.5" />
+              <T>{l.title}</T> <ArrowRight className="h-3.5 w-3.5" />
             </Link>
           ))}
           {corridors.map((c) => (

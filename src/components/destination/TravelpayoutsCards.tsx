@@ -27,8 +27,8 @@ function Card({ item, slug }: { item: Item; slug: string }) {
       <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-primary">
         <Icon className="h-4 w-4" />
       </span>
-      <p className="mt-1 text-sm font-semibold text-foreground"><T>{item.title}</T></p>
-      <p className="mt-1 flex-1 text-xs text-muted-foreground"><T>{item.sub}</T></p>
+      <p className="mt-1 text-sm font-semibold text-foreground"><T><T>{item.title}</T></T></p>
+      <p className="mt-1 flex-1 text-xs text-muted-foreground"><T><T>{item.sub}</T></T></p>
       <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-primary">
         Check on {item.name} <ArrowUpRight className="h-3.5 w-3.5" />
       </span>
@@ -39,7 +39,7 @@ function Card({ item, slug }: { item: Item; slug: string }) {
 function Group({ title, items, slug, airportCode, rentals = false }: { title: string; items: Item[]; slug: string; airportCode?: string | null; rentals?: boolean }) {
   return (
     <div className="mt-6">
-      <h3 className="mb-3 text-sm font-semibold text-foreground">{title}</h3>
+      <h3 className="mb-3 text-sm font-semibold text-foreground"><T>{title}</T></h3>
       <div className="travel-card-row sm:grid-cols-2 lg:grid-cols-4">
         {items.map((i) => <Card key={i.brand} item={i} slug={slug} />)}
         {rentals && <AirportRentalsCards slug={slug} airportCode={airportCode} />}

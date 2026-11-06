@@ -179,7 +179,7 @@ function Hero({ dest, crumbs }: { dest: DestinationView; crumbs?: Crumb[] }) {
           <Breadcrumbs crumbs={crumbs ?? destinationCrumbs(dest)} className="text-off-white/75" />
 
           <h1 className="mt-5 max-w-xl font-display text-4xl leading-[1.05] md:text-6xl">
-            <T>{dest.name}</T>
+            <T><T>{dest.name}</T></T>
           </h1>
           <p className="mt-5 max-w-lg text-base text-off-white/85">{dest.tagline}</p>
 
@@ -188,7 +188,7 @@ function Hero({ dest, crumbs }: { dest: DestinationView; crumbs?: Crumb[] }) {
               {stats.map((s) => (
                 <div key={s.label}>
                   <dt className="text-[10px] font-semibold uppercase tracking-[0.16em] text-off-white/60">
-                    <T>{s.label}</T>
+                    <T><T>{s.label}</T></T>
                   </dt>
                   <dd className="mt-1 text-sm font-semibold text-off-white">{s.value}</dd>
                 </div>
@@ -345,7 +345,7 @@ function OfferCta({
           pending ? "pointer-events-none opacity-70" : ""
         }`}
       >
-        {label}
+        <T>{label}</T>
         <ArrowRight className="h-3.5 w-3.5" />
       </a>
     </span>
@@ -357,9 +357,9 @@ function SectionHeader({ title, action, id, step }: { title: string; action?: Re
     <div className="mb-6 grid grid-cols-[minmax(0,1fr)_auto] items-end gap-3" id={id}>
       <h2 className="flex min-w-0 items-center gap-3 font-display text-[26px] leading-tight text-foreground md:text-[36px]">
         {step && <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary font-sans text-sm font-semibold text-primary-foreground">{step}</span>}
-        <span className="min-w-0">{title}</span>
+        <span className="min-w-0"><T>{title}</T></span>
       </h2>
-      {action}
+      <T>{action}</T>
     </div>
   );
 }
@@ -498,7 +498,7 @@ function StayCard({
       </div>
 
       <div className="flex flex-1 flex-col p-4">
-        <h3 className="font-display text-lg leading-snug text-foreground"><T>{offer.title}</T></h3>
+        <h3 className="font-display text-lg leading-snug text-foreground"><T><T>{offer.title}</T></T></h3>
         {offer.partner === "harvest_hosts" && <HarvestHostsOffer />}
         {offer.subcategory && (
           <p className="mt-0.5 text-[11px] uppercase tracking-wide text-muted-foreground">
@@ -583,7 +583,7 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
               <li key={i.label} className="flex items-center justify-between gap-3">
                 <span className="flex items-center gap-2 text-foreground/80">
                   <Thumb src={i.label === "Accommodation" ? stayImage : i.label === "Rental" ? carImage : i.label === "Gear & essentials" ? gearImage : roadImage} size={32} />
-                  <span className="text-xs"><T>{i.label}</T></span>
+                  <span className="text-xs"><T><T>{i.label}</T></T></span>
                 </span>
                 <span className="text-xs font-semibold text-foreground">
                   ${i.value.toLocaleString()}
@@ -663,8 +663,8 @@ function RentalTile({ offer, destinationSlug, photo, kind }: { offer: OfferView;
         {photo && <PhotoCredit photo={photo} />}
       </div>
       <div className="flex-1 border-b border-border p-4">
-          <p className="font-display text-lg leading-snug text-foreground">{title}</p>
-          <p className="mt-1 font-display text-base font-semibold text-foreground">{price} <span className="text-[10px] font-normal text-muted-foreground"><T>· typical rate</T></span></p>
+          <p className="font-display text-lg leading-snug text-foreground"><T>{title}</T></p>
+          <p className="mt-1 font-display text-base font-semibold text-foreground"><T>{price}</T> <span className="text-[10px] font-normal text-muted-foreground"><T>· typical rate</T></span></p>
           <p className="mt-1 text-xs text-muted-foreground">{kind === "motorhome" ? "Drive-and-sleep motorhome with kitchen and bathroom." : "Compact van-style camper that sleeps two, easier to park."}</p>
       </div>
       <div className="flex flex-col gap-2 p-4">
@@ -744,8 +744,8 @@ function TravelServices({ dest }: { dest: DestinationView }) {
                   }}>
                   <Thumb src={category === "car_rental" ? carImage : category === "insurance" ? planImage : category === "esim" ? mapImage : gearImage} size={40} />
                   <span className="min-w-0 flex-1">
-                    <span className="block text-xs font-semibold text-foreground"><T>{detail.title}</T></span>
-                    <span className="block text-[11px] text-muted-foreground"><T>{detail.sub}</T></span>
+                    <span className="block text-xs font-semibold text-foreground"><T><T>{detail.title}</T></T></span>
+                    <span className="block text-[11px] text-muted-foreground"><T><T>{detail.sub}</T></T></span>
                   </span>
                   <ChevronRight className="mt-1 h-4 w-4 shrink-0 text-foreground/30" />
                 </a>
@@ -773,7 +773,7 @@ function ServiceRow({ service, destinationSlug }: { service: OfferView; destinat
     <>
       <Thumb src={service.category === "car_rental" ? carImage : planImage} size={40} />
       <span className="min-w-0 flex-1">
-        <span className="block text-xs font-semibold text-foreground"><T>{service.title}</T></span>
+        <span className="block text-xs font-semibold text-foreground"><T><T>{service.title}</T></T></span>
         <span className="block text-[11px] text-muted-foreground">
           {service.priceDisplay ?? meta.sub}
         </span>
@@ -881,7 +881,7 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
                       className="flex items-center gap-3 rounded-xl border border-border bg-beige/40 px-3 py-2.5 text-xs text-foreground/80 hover:bg-muted"
                     >
                       <Thumb src={stayImage} size={32} />
-                      <span className="truncate"><T>{s.title}</T></span>
+                      <span className="truncate"><T><T>{s.title}</T></T></span>
                     </a>
                   </li>
                 ))}
@@ -939,9 +939,9 @@ function FieldIntel({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) 
         <div key={t.label} className="rounded-lg border border-border bg-card p-4 shadow-soft">
           <Thumb src={t.label === "Signal" ? mapImage : roadImage} size={40} />
           <p className="mt-2.5 text-[10px] font-bold uppercase tracking-[0.14em] text-muted-foreground">
-            <T>{t.label}</T>
+            <T><T>{t.label}</T></T>
           </p>
-          <p className="mt-1 text-xs leading-relaxed text-foreground/80"><T>{t.text}</T></p>
+          <p className="mt-1 text-xs leading-relaxed text-foreground/80"><T><T>{t.text}</T></T></p>
         </div>
       ))}
     </div>
@@ -1023,8 +1023,8 @@ function TripFlow({ dest }: { dest: DestinationView }) {
             <span className="inline-flex w-fit items-center rounded-full bg-forest/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-forest">
               {p.day}
             </span>
-            <h3 className="mt-3 font-display text-lg text-foreground"><T>{p.title}</T></h3>
-            <p className="mt-2 flex-1 text-xs leading-relaxed text-muted-foreground">{p.detail}</p>
+            <h3 className="mt-3 font-display text-lg text-foreground"><T><T>{p.title}</T></T></h3>
+            <p className="mt-2 flex-1 text-xs leading-relaxed text-muted-foreground"><T>{p.detail}</T></p>
             <p className="mt-4 border-t border-border pt-3 text-[11px] font-semibold text-foreground/70">
               {p.start}
             </p>

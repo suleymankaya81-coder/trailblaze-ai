@@ -21,9 +21,9 @@ export function PartnerPhotoCard({ brand, title, href, photo, detail, price, bad
               {badges.map((b) => <li key={b} className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-medium text-foreground">✓ {b}</li>)}
             </ul>
           )}
-          <h3 className="mt-1 text-sm font-semibold text-foreground">{title}</h3>
-          {price && <p className="mt-1 font-display text-base font-semibold text-foreground">{price} <span className="text-[10px] font-normal text-muted-foreground"><T>· typical rate</T></span></p>}
-          {detail && <p className="mt-2 text-xs text-muted-foreground">{detail}</p>}
+          <h3 className="mt-1 text-sm font-semibold text-foreground"><T>{title}</T></h3>
+          {price && <p className="mt-1 font-display text-base font-semibold text-foreground"><T>{price}</T> <span className="text-[10px] font-normal text-muted-foreground"><T>· typical rate</T></span></p>}
+          {detail && <p className="mt-2 text-xs text-muted-foreground"><T>{detail}</T></p>}
           <span className="mt-4 inline-flex min-h-12 items-center justify-center gap-1 rounded-md bg-primary px-3 py-2 text-center text-xs font-semibold text-primary-foreground">{cta ?? `Check on ${brand}`} <ArrowUpRight className="h-3.5 w-3.5 shrink-0" /></span>
         </div>
       </a>

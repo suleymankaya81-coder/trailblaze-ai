@@ -30,10 +30,10 @@ export function RentalsFeature() {
       <div className="mt-6 grid gap-4 md:grid-cols-3">
         {OPTIONS.map((o) => (
           <a key={o.title} href={o.href} target="_blank" rel="sponsored noopener" className="group flex flex-col rounded-xl border border-border bg-secondary p-5 transition-colors hover:bg-card">
-            <span className="font-display text-lg text-foreground"><T>{o.title}</T></span>
-            <span className="mt-1 text-sm text-muted-foreground"><T>{o.text}</T></span>
+            <span className="font-display text-lg text-foreground"><T><T>{o.title}</T></T></span>
+            <span className="mt-1 text-sm text-muted-foreground"><T><T>{o.text}</T></T></span>
             <span className="mt-3 flex items-center justify-between text-sm">
-              <span className="font-semibold text-foreground"><T>{o.price}</T> <span className="font-normal text-muted-foreground"><T>· typical</T></span></span>
+              <span className="font-semibold text-foreground"><T><T>{o.price}</T></T> <span className="font-normal text-muted-foreground"><T>· typical</T></span></span>
               <span className="inline-flex items-center gap-1 font-semibold text-primary">{o.brand} <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" /></span>
             </span>
           </a>

@@ -53,13 +53,13 @@ function StayCard({
       </div>
       <div className="flex flex-1 flex-col p-4">
         <p className="text-xs font-semibold uppercase tracking-wider text-primary">{brand}</p>
-        <h3 className="mt-1 font-display text-lg leading-snug text-foreground">{title}</h3>
+        <h3 className="mt-1 font-display text-lg leading-snug text-foreground"><T>{title}</T></h3>
         <p className="mt-1 font-display text-base font-semibold text-foreground">{brand === "Vrbo" ? "Est. from $120/night" : "Est. from $110/night"} <span className="text-[10px] font-normal text-muted-foreground"><T>· typical rate</T></span></p>
         <ul className="mt-4 flex-1 space-y-2.5">
           {points.map(({ icon: Icon, text }) => (
             <li key={text} className="flex gap-2.5 text-sm text-muted-foreground">
               <Icon className="h-4 w-4 shrink-0 text-primary" />
-              {text}
+              <T>{text}</T>
             </li>
           ))}
         </ul>
@@ -69,7 +69,7 @@ function StayCard({
           rel="sponsored noopener noreferrer"
           className="mt-5 inline-flex items-center justify-center gap-1.5 min-h-12 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90"
         >
-          {cta} <ArrowUpRight className="h-4 w-4" />
+          <T>{cta}</T> <ArrowUpRight className="h-4 w-4" />
         </a>
       </div>
     </div>
