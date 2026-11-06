@@ -81,7 +81,7 @@ function SectionHead({ title, link }: { title: string; link?: { label: string; h
       <h2 className="text-2xl text-forest md:text-3xl">{title}</h2>
       {link && (
         <a href={link.href} className="hidden shrink-0 items-center gap-1 text-xs font-semibold text-forest hover:underline sm:inline-flex">
-          {link.label} <ArrowRight className="h-3.5 w-3.5" />
+          <T>{link.label}</T> <ArrowRight className="h-3.5 w-3.5" />
         </a>
       )}
     </div>

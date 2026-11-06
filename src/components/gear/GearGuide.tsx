@@ -100,7 +100,7 @@ export function GearGuide({ config: c }: { config: GearGuideConfig }) {
           <div className="container-page w-full pb-12 pt-20 text-off-white md:pb-14">
             <p className="text-xs font-semibold uppercase">MiniaLife / The gear edit</p>
             <h1 className="mt-4 max-w-3xl font-serif text-4xl leading-tight md:text-6xl">
-              {c.title}
+              <T>{c.title}</T>
             </h1>
             <p className="mt-5 max-w-lg text-base leading-relaxed text-off-white/90">
               {c.lede}

@@ -64,12 +64,12 @@ export function PlanDeeper({
         )}
         {gatewayTrips.map((c) => (
           <Link key={c.slug} to="/corridors/$slug" params={{ slug: c.slug }} className={pill}>
-            <T>Airport road trip:</T> {c.title} <ArrowRight className="h-3.5 w-3.5" />
+            <T>Airport road trip:</T> <T>{c.title}</T> <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         ))}
         {loops.map((l) => (
           <Link key={l.slug} to="/road-trips/$slug" params={{ slug: l.slug }} className={pill}>
-            <T>Road trip:</T> {l.title} <ArrowRight className="h-3.5 w-3.5" />
+            <T>Road trip:</T> <T>{l.title}</T> <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         ))}
         {landing.map((p) => (

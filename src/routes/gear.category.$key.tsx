@@ -110,7 +110,7 @@ function CategoryPage() {
           <div className="mt-6 flex flex-wrap gap-2">
             {meta.guides.map((g) => (
               <a key={g.to} href={g.to} className="inline-flex items-center gap-1 rounded-full border border-border bg-card px-3 py-1.5 text-xs font-semibold text-forest hover:shadow-soft">
-                Buying guide: {g.label} <ArrowRight className="h-3 w-3" />
+                Buying guide: <T>{g.label}</T> <ArrowRight className="h-3 w-3" />
               </a>
             ))}
           </div>

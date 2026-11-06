@@ -89,7 +89,7 @@ export function HeroCarousel({ slides }: { slides: HeroSlide[] }) {
                   )}
                   <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-ink/70 to-transparent" />
                   <h2 className="absolute left-5 right-5 bottom-5 font-serif text-2xl font-bold leading-tight text-off-white md:text-3xl">
-                    {s.title}
+                    <T>{s.title}</T>
                   </h2>
                 </a>
                 <div className="flex flex-1 flex-col px-5 py-6">

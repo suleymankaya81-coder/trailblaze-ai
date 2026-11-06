@@ -1,3 +1,4 @@
+import { T } from "@/lib/i18n";
 import { useState } from "react";
 import { Link } from "@/components/site/LocalLink";
 import { Menu, X } from "lucide-react";
@@ -30,7 +31,7 @@ export function Header() {
         <nav className="hidden flex-1 items-center justify-end gap-7 text-sm font-medium md:flex">
           {items.map((n) => (
             <Link key={n.to} to={n.to} className="text-foreground/80 hover:text-foreground" activeProps={active}>
-              {n.label}
+              <T>{n.label}</T>
             </Link>
           ))}
           <LanguageSwitcher />
@@ -58,7 +59,7 @@ export function Header() {
                 onClick={() => setOpen(false)}
                 className="border-b border-border/60 py-3 text-base font-medium text-foreground last:border-0"
               >
-                {n.label}
+                <T>{n.label}</T>
               </Link>
             ))}
           </div>

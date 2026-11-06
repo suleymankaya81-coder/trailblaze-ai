@@ -32,7 +32,7 @@ export function MoreRoutes({ stops, currentLoop, currentCorridor }: { stops: str
           ))}
           {corridors.map((c) => (
             <Link key={c.slug} to="/corridors/$slug" params={{ slug: c.slug }} className={pill}>
-              <T>From the airport:</T> {c.title} <ArrowRight className="h-3.5 w-3.5" />
+              <T>From the airport:</T> <T>{c.title}</T> <ArrowRight className="h-3.5 w-3.5" />
             </Link>
           ))}
         </div>

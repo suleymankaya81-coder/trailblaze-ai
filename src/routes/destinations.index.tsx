@@ -97,7 +97,7 @@ function DestinationsIndexPage() {
               search={{ tag: t.value }}
               className={pageLinkClass(tag === t.value)}
             >
-              {t.label}
+              <T>{t.label}</T>
             </Link>
           ))}
         </div>

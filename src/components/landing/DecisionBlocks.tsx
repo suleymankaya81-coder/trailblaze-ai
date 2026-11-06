@@ -41,7 +41,7 @@ export function QuickFacts({ facts }: { facts: LandingFacts }) {
         {items.map((i) => (
           <div key={i.label} className="bg-card p-4">
             <p className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-sage-deep">
-              {i.icon} {i.label}
+              {i.icon} <T>{i.label}</T>
             </p>
             <p className="mt-1 text-sm font-semibold text-foreground"><T>{i.value}</T></p>
           </div>
