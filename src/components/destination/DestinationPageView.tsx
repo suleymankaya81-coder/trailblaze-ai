@@ -1,6 +1,3 @@
-import { hreflangLinks } from "@/lib/seo/hreflang";
-import { getDestinationLocales } from "@/lib/data/translations.functions";
-import { isLocale } from "@/lib/i18n/locales";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { offerCtaLabel } from "@/lib/affiliates/ctaLabel";
 import { SafeImage } from "@/components/shared/SafeImage";
@@ -77,10 +74,9 @@ import { enrichDestination, type EnrichResult } from "@/lib/ai/enrich.functions"
 import { trackAndRedirect } from "@/lib/affiliates/track.functions";
 import { getOrCreateSessionId } from "@/lib/affiliates/session";
 import { outboundLinkTitle } from "@/lib/affiliates/compliance";
-import { buildDestinationJsonLd } from "@/lib/seo/destinationJsonLd";
 import { saveTripPlan } from "@/lib/plans/savePlan.functions";
 import { getCapturedEmail, setCapturedEmail } from "@/lib/plans/session";
-import { getLandingLinksForDestination, type LandingLink } from "@/lib/data/landingPages.functions";
+import { type LandingLink } from "@/lib/data/landingPages.functions";
 import { PlanDeeper } from "@/components/guides/PlanDeeper";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { destinationCrumbs, type Crumb } from "@/lib/seo/breadcrumbs";
@@ -88,7 +84,6 @@ import { offerPhoto, type Photo } from "@/lib/data/destinationCardPhotos";
 import { ROAD_PREPARATION_PARTNERS, preparationLink } from "@/lib/affiliates/travelpayouts";
 import { commonsFilePage, parsePhotoCredit } from "@/lib/seo/imageCredit";
 
-import { destinationSearchDescription, destinationSearchTitle } from "@/lib/seo/routeSeo";
 
 /* =========================================================
    PAGE
