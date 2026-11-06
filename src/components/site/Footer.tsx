@@ -54,8 +54,7 @@ export function Footer() {
             />
           </div>
           <p className="max-w-md text-sm text-muted-foreground">
-            A modern outdoor-travel guide. Tell us where you want to go and we'll show you where to
-            stay, what to rent, what to do, and what to bring.
+            <T>{"A modern outdoor-travel guide. Tell us where you want to go and we'll show you where to stay, what to rent, what to do, and what to bring."}</T>
           </p>
         </div>
 
