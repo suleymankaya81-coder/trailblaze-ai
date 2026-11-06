@@ -78,7 +78,7 @@ export function Page(): React.ReactElement {
       <Header />
       <main>
         <GuideHero image={stops[1]?.heroImage ?? first.heroImage} kicker={`Gateway Road Trip · ${corridor.region}`} title={corridorSearchTitle(corridor)} crumbs={corridorCrumbs(corridor)}>
-          <HeroChip image={roadImg}>Fly into {corridor.gateway.code}</HeroChip>
+          <HeroChip image={roadImg}>{`Fly into ${corridor.gateway.code}`}</HeroChip>
           <HeroChip image={roadImg}><T>{corridor.idealDays}</T></HeroChip>
           <HeroChip image={roadImg}>~{miles} mi loop (straight-line)</HeroChip>
         </GuideHero>

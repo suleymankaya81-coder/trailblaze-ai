@@ -307,6 +307,12 @@ export const DE_PHRASES: Record<string, string> = {
 
 // Phrases with a variable part ($1, $2 are kept as-is).
 export const DE_PATTERNS: [RegExp, string][] = [
+  [/^(\d+) stops$/, "$1 Stopps"],
+  [/^About (\d+) days$/, "Etwa $1 Tage"],
+  [/^Fly into ([A-Z]{3})$/, "Anflug nach $1"],
+  [/^Book this loop from ([A-Z]{3})$/, "Diese Rundreise ab $1 buchen"],
+  [/^Fly into (.+), pick up your car or RV, then drive the loop\.$/, "Fliegen Sie nach $1, holen Sie Ihr Auto oder Wohnmobil ab und fahren Sie die Rundreise."],
+  [/^Road trip · (.+)$/, "Roadtrip · $1"],
   [/^~(\d+) mi straight-line from (.+)$/, "ca. $1 mi (Luftlinie) von $2"],
   [/^Return to (.+) and drop the car at ([A-Z]{3})\.$/, "Zurück nach $1, Mietwagen in $2 abgeben."],
   [/^Step (\d+) · $/, "Schritt $1 · "],

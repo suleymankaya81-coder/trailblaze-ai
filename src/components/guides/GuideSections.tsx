@@ -17,8 +17,8 @@ export function GuideHero({ image, kicker, title, crumbs, children }: { image: s
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink/85 via-ink/45 to-ink/20" />
       <div className="container-page py-12 md:py-20">
         <Breadcrumbs crumbs={crumbs} className="mb-6 text-off-white/80" />
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-off-white/80">{kicker}</p>
-        <h1 className="mt-3 max-w-3xl font-display text-[34px] font-semibold leading-tight text-off-white md:text-[56px]">{title}</h1>
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-off-white/80"><T>{kicker}</T></p>
+        <h1 className="mt-3 max-w-3xl font-display text-[34px] font-semibold leading-tight text-off-white md:text-[56px]"><T>{title}</T></h1>
         {children && <div className="mt-8 flex flex-wrap gap-2">{children}</div>}
       </div>
     </section>
@@ -29,7 +29,7 @@ export function HeroChip({ icon, image, children }: { icon?: ReactNode; image?: 
   return (
     <span className="inline-flex items-center gap-2 rounded-full border border-off-white/25 bg-off-white/15 px-4 py-2 text-sm font-medium text-off-white backdrop-blur">
       {image && <Thumb src={image} size={32} />}
-      {children}
+      {typeof children === "string" ? <T>{children}</T> : children}
     </span>
   );
 }
@@ -37,8 +37,8 @@ export function HeroChip({ icon, image, children }: { icon?: ReactNode; image?: 
 export function GuideSection({ title, intro, children }: { title: string; intro?: string; children: ReactNode }) {
   return (
     <section className="container-page py-10 md:py-14">
-      <h2 className="font-display text-2xl font-bold text-foreground md:text-3xl">{title}</h2>
-      {intro && <p className="mt-2 max-w-2xl text-sm text-muted-foreground">{intro}</p>}
+      <h2 className="font-display text-2xl font-bold text-foreground md:text-3xl"><T>{title}</T></h2>
+      {intro && <p className="mt-2 max-w-2xl text-sm text-muted-foreground"><T>{intro}</T></p>}
       <div className="mt-6">{children}</div>
     </section>
   );

@@ -79,8 +79,8 @@ export function Page(): React.ReactElement {
       <Header />
       <main>
         <GuideHero image={first.heroImage} kicker={`Road trip · ${loop.region}`} title={loop.title} crumbs={[HOME, ROAD_TRIPS, { name: loop.title, path: `/road-trips/${loop.slug}` }]}>
-          <HeroChip image={roadImg}>{stops.length} stops</HeroChip>
-          <HeroChip image={roadImg}>About {totalDays} days</HeroChip>
+          <HeroChip image={roadImg}>{`${stops.length} stops`}</HeroChip>
+          <HeroChip image={roadImg}>{`About ${totalDays} days`}</HeroChip>
         </GuideHero>
         <TripSnapshot airport={gateway?.code} days={`About ${totalDays} days`} stops={stops.length} /><TripQuickNav booking={!!gateway} />
         <div id="trip-plan" />
