@@ -1,5 +1,5 @@
 import { T } from "@/lib/i18n";
-import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
+import { TripSnapshot, BookingBar } from "@/components/destination/TripSnapshot";
 import { offerCtaLabel } from "@/lib/affiliates/ctaLabel";
 import { SafeImage } from "@/components/shared/SafeImage";
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
@@ -58,6 +58,7 @@ import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { JumpBar, TripRadar, formatDrive } from "@/components/destination/TripRadar";
 import routes from "@/data/routes.json";
 import { TravelFlow, LocalIntel } from "@/components/destination/TravelFlow";
+import { TopShowcase } from "@/components/destination/TopShowcase";
 import { DestinationAnswers } from "@/components/destination/DestinationAnswers";
 
 const RoadTripMap = lazy(() => import("@/components/destination/RoadTripMap"));
@@ -106,32 +107,39 @@ export function DestinationPageView({ dest, landingLinks, crumbs }: { dest: Dest
 
       <Hero dest={dest} crumbs={crumbs} />
       <TripSnapshot trip={dest} />
-      <TripQuickNav />
+      <BookingBar />
 
-      <main className="container-page max-w-[1200px] space-y-12 py-10 md:space-y-16">
-        <div id="trip-plan" className="space-y-12 md:space-y-16">
-          <TripRadar dest={dest} />
+      {/* Order: showcase (vehicles + top tour) → know before you go → flights → vehicles → itinerary → map → stays → tours → budget/prep → gear */}
+      <main className="container-page max-w-[1200px] space-y-12 py-8 md:space-y-16 md:py-10">
+        <TopShowcase slug={dest.slug} name={dest.name} airportCode={dest.airportCode} />
+
+        <section id="trip-plan" aria-label="Know before you go" className="scroll-mt-40 space-y-8">
+          {dest.travelPlan && <LocalIntel plan={dest.travelPlan} />}
           <DestinationAnswers slug={dest.slug} />
-          {dest.travelPlan ? <TravelFlow name={dest.name} plan={dest.travelPlan} /> : <TripFlow dest={dest} />}
-          <RoadTrip dest={dest} ai={ai} />
-        </div>
-        <div id="trip-booking"><BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} /></div>
+        </section>
 
-        {/* Booking order: flight (strip above) → vehicle → stay → tours */}
+        <div id="trip-flights" className="scroll-mt-40"><div id="trip-booking"><BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} /></div></div>
+
         <RentBeforeYouGo dest={dest} />
 
+        <div className="space-y-12 md:space-y-16">
+          {dest.travelPlan ? <TravelFlow name={dest.name} plan={dest.travelPlan} airportCode={dest.airportCode} nudges /> : <TripFlow dest={dest} />}
+          <TripRadar dest={dest} />
+          <RoadTrip dest={dest} ai={ai} />
+        </div>
+
         <TopStays dest={dest} />
+
+        {/* Tours & services — one section */}
+        <section id="trip-tours" className="scroll-mt-40">
+          <ThingsToDo dest={dest} />
+        </section>
 
         {/* Budget + preparation: equal panels, never sticky (prevents overlap) */}
         <div className="grid gap-6 md:grid-cols-2 md:items-stretch">
           <TripBudget ai={ai} loading={aiLoading} />
           <TravelServices dest={dest} />
         </div>
-
-        {/* Tours & services — one section */}
-        <section id="trip-tours" className="scroll-mt-24">
-          <ThingsToDo dest={dest} />
-        </section>
 
         <TripEssentials context={{ slug: dest.slug, name: dest.name, places: [dest] }} />
 
@@ -174,7 +182,7 @@ function Hero({ dest, crumbs }: { dest: DestinationView; crumbs?: Crumb[] }) {
       <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/60 to-ink/20" />
       {credit && source && <PhotoCredit photo={{ source, credit: credit.creator, license: credit.license }} />}
 
-      <div className="container-page relative grid gap-10 py-14 md:py-20 ">
+      <div className="container-page relative grid gap-8 py-10 md:py-14">
         <div className="text-off-white">
           <Breadcrumbs crumbs={crumbs ?? destinationCrumbs(dest)} className="text-off-white/75" />
 
@@ -184,7 +192,7 @@ function Hero({ dest, crumbs }: { dest: DestinationView; crumbs?: Crumb[] }) {
           <p className="mt-5 max-w-lg text-base text-off-white/85"><T>{dest.tagline}</T></p>
 
           {stats.length > 0 && (
-            <dl className="mt-9 flex flex-wrap gap-x-10 gap-y-5">
+            <dl className="mt-6 flex flex-wrap gap-x-10 gap-y-5">
               {stats.map((s) => (
                 <div key={s.label}>
                   <dt className="text-[10px] font-semibold uppercase tracking-[0.16em] text-off-white/60">
@@ -890,7 +898,7 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
         </div>
       </div>
 
-      {dest.travelPlan ? <LocalIntel plan={dest.travelPlan} /> : <FieldIntel dest={dest} ai={ai} />}
+      {!dest.travelPlan && <FieldIntel dest={dest} ai={ai} />}
     </section>
   );
 }

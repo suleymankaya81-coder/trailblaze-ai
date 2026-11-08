@@ -26,3 +26,8 @@ export function TripSnapshot({ trip, airport, days, stops }: { trip?: Trip; airp
 export function TripQuickNav({ booking = true }: { booking?: boolean }) {
   return <nav aria-label="Trip quick navigation" className="trip-quick-nav sticky top-20 z-30 md:top-24"><div className="container-page flex gap-2 overflow-x-auto py-2">{[{ id: 'trip-plan', label: 'Plan & route' }, ...(booking ? [{ id: 'trip-booking', label: 'Flights, vehicles & stays' }] : []), { id: 'trip-tours', label: 'Tours' }, { id: 'trip-gear', label: 'Trip essentials' }].map(l => <Button key={l.id} asChild variant="ghost" className="h-12 shrink-0"><a href={`#${l.id}`}><T>{l.label}</T></a></Button>)}</div></nav>;
 }
+/** Destination booking bar: one jump link per booking stage, in booking order. */
+export function BookingBar() {
+  const links = [{ id: 'trip-flights', label: 'Flights' }, { id: 'trip-vehicles', label: 'Vehicle & RV' }, { id: 'stays', label: 'Stays' }, { id: 'trip-tours', label: 'Tours' }, { id: 'trip-gear', label: 'Gear' }, { id: 'flow', label: 'Itinerary' }];
+  return <nav aria-label="Booking bar" className="trip-quick-nav sticky top-20 z-30 md:top-24"><div className="container-page flex h-14 items-center gap-1 overflow-x-auto">{links.map(l => <Button key={l.id} asChild variant="ghost" className="h-11 shrink-0 px-3"><a href={`#${l.id}`}><T>{l.label}</T></a></Button>)}</div></nav>;
+}
