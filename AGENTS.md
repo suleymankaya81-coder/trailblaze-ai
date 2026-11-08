@@ -39,7 +39,7 @@
 - About and legal content share StaticPageLayout with an unframed reading column. Why: static pages keep the travel site's visual hierarchy without floating article cards.
 - Contact email handoff uses the shared contact schema and URL builder; never report a mail-app handoff as successful delivery. Why: input must be encoded and delivery requires the visitor to send from their email app until app-email sending is configured.
 - Route-page search titles/descriptions come from src/lib/seo/routeSeo.ts keyword maps (one distinct phrase per page, ≤60/≤160 chars); RV & camping and no-reservation guides use src/lib/seo/guidesSeo.ts on the same fitText/limits pattern. Why: match real Google queries without page overlap.
-- Destination page order lives in DestinationPageView: TopShowcase (vehicles + one top Viator listing) sits right after the booking bar, before guide content. Why: first-screen booking options in every language.
+- Destination TopShowcase (vehicles + top Viator listing) follows the booking bar, before guide content. Why: first-screen booking.
 - Destination pages are a single column with no sticky side panels; budget and preparation panels sit side by side (stacked on phones). Why: sticky side panels overlapped neighbouring content.
 - Homepage "Top bucket-list experiences" shows one real Viator listing per iconic place via the noindexed `/experiences/home` frame. Why: keep provider content unindexed while using cached place searches.
 - Internal guide links use shared PlanDeeper (all guides for one place, loader-fetched indexable search pages) and MoreRoutes (related loops/corridors), rendered server-side on every destination, guide, search and route page. Why: crawlers must find sibling pages in the initial HTML, not after client fetches.
