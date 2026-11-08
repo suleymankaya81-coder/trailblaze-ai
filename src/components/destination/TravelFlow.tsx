@@ -18,7 +18,7 @@ export function TravelFlow({ name, plan, airportCode, nudges = false }: { name: 
     const url = URL.createObjectURL(new Blob([text], { type: "text/plain;charset=utf-8" }));
     const link = document.createElement("a"); link.href = url; link.download = `${name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-trip.txt`; link.click(); URL.revokeObjectURL(url);
   }
-  return <section id="flow" className="scroll-mt-24">
+  return <section id="flow" className="scroll-mt-40">
     <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
       <div><p className="mb-2 text-xs font-semibold uppercase text-sage-deep"><T>A little structure. Plenty of freedom.</T></p><h2 className="text-2xl text-foreground md:text-3xl">{plan.days.length} <T>days in</T> <T>{name}</T></h2></div>
       <Button variant="outline" onClick={download}><Download /> <T>Save trip</T></Button>

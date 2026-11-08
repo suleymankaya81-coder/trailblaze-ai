@@ -423,7 +423,7 @@ function TopStays({ dest }: { dest: DestinationView }) {
 
 
   return (
-    <section id="stays" className="scroll-mt-24">
+    <section id="stays" className="scroll-mt-40">
       <SectionHeader
         step={3}
         title="Where you'll want to sleep"
@@ -632,7 +632,7 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
   const pilot = VEHICLE_PILOT_SLUGS.includes(dest.slug);
 
   return (
-    <section id="rentals" className="scroll-mt-24">
+    <section id="rentals" className="scroll-mt-40">
       <SectionHeader
         step={2}
         title={dest.airportCode ? `RVs, campervans & cars near ${dest.airportCode}` : "RVs, campervans & cars for this trip"}
