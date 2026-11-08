@@ -6,8 +6,6 @@ export const DE_PHRASES: Record<string, string> = {
   "Before you go": "Vor der Reise",
   "Flights": "Flüge",
   "Vehicle & RV": "Fahrzeug & Wohnmobil",
-  "Stays": "Unterkünfte",
-  "Tours": "Touren",
   "Gear": "Ausrüstung",
   "Itinerary": "Reiseplan",
   "Choose your vehicle": "Fahrzeug wählen",
@@ -22,7 +20,6 @@ export const DE_PHRASES: Record<string, string> = {
   "Pick up your vehicle": "Fahrzeug abholen",
   "Find a place to stay": "Unterkunft finden",
   "Tours for today's stops": "Touren für die heutigen Stopps",
-  "Know before you go": "Gut zu wissen vor der Reise",
   "A few things worth knowing": "Gut zu wissen",
   "Official park information": "Offizielle Parkinformationen",
   "See places to stay": "Unterkünfte ansehen",
@@ -326,6 +323,10 @@ export const DE_PHRASES: Record<string, string> = {
 
 // Phrases with a variable part ($1, $2 are kept as-is).
 export const DE_PATTERNS: [RegExp, string][] = [
+  [/^Pick up at (\w+) airport$/, "Abholung am Flughafen $1"],
+  [/^Pick up your vehicle at (\w+)$/, "Fahrzeug in $1 abholen"],
+  [/^Most popular experience near (.+)$/, "Beliebtestes Erlebnis bei $1"],
+  [/^See guided tours and tickets near (.+)\.$/, "Geführte Touren und Tickets bei $1 ansehen."],
   [/^(\d+) stops$/, "$1 Stopps"],
   [/^About (\d+) days$/, "Etwa $1 Tage"],
   [/^Fly into ([A-Z]{3})$/, "Anflug nach $1"],
