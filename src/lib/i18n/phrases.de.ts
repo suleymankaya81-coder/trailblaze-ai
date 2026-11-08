@@ -142,7 +142,6 @@ export const DE_PHRASES: Record<string, string> = {
   "Route": "Route",
   "Tours": "Touren",
   "Car": "Auto",
-  "SUV": "SUV",
   "Motorhome / campervan": "Wohnmobil / Campervan",
   "Search cabins on Vrbo": "Hütten auf Vrbo suchen",
   "Whole-home cabins and lodges": "Ganze Hütten und Lodges",
