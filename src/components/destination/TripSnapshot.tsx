@@ -10,7 +10,7 @@ import mapImg from '@/assets/thumbs/map.jpg';
 import carImg from '@/assets/thumbs/car.jpg';
 
 type Trip = { airportCode?: string | null; driveMinutes?: number | null; tripDurationDays?: string | null; bestSeason?: string | null; permitLevel?: string | null; travelPlan?: { vehicle?: string | null } | null };
-export function TripSnapshot({ trip, airport, days, stops }: { trip?: Trip; airport?: string | null; days?: string; stops?: number }) {
+export function TripSnapshot({ trip, airport, days, stops, compact = false }: { trip?: Trip; airport?: string | null; days?: string; stops?: number; compact?: boolean }) {
   const demand: Record<string, string> = { high: 'High · check entry notes', moderate: 'Moderate · check entry notes', none: 'Lower · check current rules' };
   const facts = [
     { image: flightImg, label: 'Arrival airport', value: airport ?? trip?.airportCode },
@@ -20,7 +20,7 @@ export function TripSnapshot({ trip, airport, days, stops }: { trip?: Trip; airp
     { image: carImg, label: trip?.travelPlan?.vehicle ? 'Vehicle notes' : 'Best season', value: trip?.travelPlan?.vehicle ?? trip?.bestSeason },
   ].filter(f => f.value);
   return <section aria-label="Trip snapshot" className="border-b border-border bg-card">
-    <div className={`container-page ${compact ? "py-3" : "py-6"}`}>{!compact && <p className="mb-4 text-xs font-semibold uppercase text-sage-deep"><T>Trip snapshot</T></p>}<dl className="grid grid-cols-2 gap-5 lg:grid-cols-5">{facts.map(f => <div key={f.label} className="min-w-0"><dt className="flex items-center gap-2 text-xs text-muted-foreground"><Thumb src={f.image} size={compact ? 28 : 40} /><T>{f.label}</T></dt><dd className={`${compact ? "mt-1 line-clamp-1" : "mt-2 line-clamp-3"} text-sm`} data-x=" font-semibold leading-relaxed" title={String(f.value)}>{typeof f.value === "string" ? <T>{f.value}</T> : f.value}</dd></div>)}</dl></div>
+    <div className={`container-page ${compact ? "py-3" : "py-6"}`}>{!compact && <p className="mb-4 text-xs font-semibold uppercase text-sage-deep"><T>Trip snapshot</T></p>}<dl className={`grid grid-cols-2 lg:grid-cols-5 ${compact ? "gap-3" : "gap-5"}`}>{facts.map(f => <div key={f.label} className="min-w-0"><dt className="flex items-center gap-2 text-xs text-muted-foreground"><Thumb src={f.image} size={compact ? 28 : 40} /><T>{f.label}</T></dt><dd className={`${compact ? "mt-1 line-clamp-1" : "mt-2 line-clamp-3"} text-sm font-semibold leading-relaxed`} title={String(f.value)}>{typeof f.value === "string" ? <T>{f.value}</T> : f.value}</dd></div>)}</dl></div>
   </section>;
 }
 export function TripQuickNav({ booking = true }: { booking?: boolean }) {
