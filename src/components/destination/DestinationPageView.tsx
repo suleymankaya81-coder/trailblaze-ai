@@ -189,10 +189,10 @@ function Hero({ dest, crumbs }: { dest: DestinationView; crumbs?: Crumb[] }) {
           <h1 className="mt-4 max-w-2xl font-display text-4xl leading-[1.05] md:text-5xl">
             <T>{dest.name}</T>
           </h1>
-          <p className="mt-3 max-w-lg text-base text-off-white/85"><T>{dest.tagline}</T></p>
+          <p className="mt-3 line-clamp-2 max-w-lg text-base text-off-white/85 md:line-clamp-none"><T>{dest.tagline}</T></p>
 
           {stats.length > 0 && (
-            <dl className="mt-5 flex flex-wrap gap-x-10 gap-y-4">
+            <dl className="mt-5 hidden flex-wrap gap-x-10 gap-y-4 md:flex">
               {stats.map((s) => (
                 <div key={s.label}>
                   <dt className="text-[10px] font-semibold uppercase tracking-[0.16em] text-off-white/60">

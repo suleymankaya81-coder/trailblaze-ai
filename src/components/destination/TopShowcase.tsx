@@ -21,7 +21,7 @@ function VehicleShowcase({ slug, airportCode }: { slug: string; airportCode: str
   const rows = [
     { icon: Car, label: "Standard car", price: estimatedFrom("standard car"), brand: "Airport Rentals", href: l.car },
     { icon: Truck, label: "SUV", price: estimatedFrom("suv"), brand: "Airport Rentals", href: l.car },
-    { icon: Caravan, label: "RV / motorhome", price: estimatedFrom("motorhome"), brand: "Motorhome Republic", href: l.motorhome },
+    { icon: Caravan, label: "RV / motorhome", price: estimatedFrom("rv"), brand: "Motorhome Republic", href: l.motorhome },
   ];
   return (
     <div className="flex flex-col rounded-xl border border-border bg-card p-5 md:p-6">
