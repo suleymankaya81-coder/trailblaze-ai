@@ -1,4 +1,4 @@
-import { T } from "@/lib/i18n";
+import { T, useTp } from "@/lib/i18n";
 import { TripSnapshot, BookingBar } from "@/components/destination/TripSnapshot";
 import { offerCtaLabel } from "@/lib/affiliates/ctaLabel";
 import { SafeImage } from "@/components/shared/SafeImage";
@@ -92,6 +92,7 @@ import { commonsFilePage, parsePhotoCredit } from "@/lib/seo/imageCredit";
    Flow: Stay -> Rent -> Explore -> Prepare -> Go
 ========================================================= */
 export function DestinationPageView({ dest, landingLinks, crumbs }: { dest: DestinationView; landingLinks: LandingLink[]; crumbs?: Crumb[] }) {
+  const tp = useTp();
   const enrich = useServerFn(enrichDestination);
 
   const { data: ai, isLoading: aiLoading } = useQuery({
