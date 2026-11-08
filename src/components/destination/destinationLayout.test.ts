@@ -17,6 +17,6 @@ describe("destination layout", () => {
     expect(dayNudge(2, 3)?.href).toBe("#stays");
   });
   it("translates the showcase heading for German visitors", () => {
-    expect(tp("Pick up at BZN airport", "de")).toBe("Abholung am Flughafen BZN");
+    expect(tp("de", "Pick up at BZN airport")).toBe("Abholung am Flughafen BZN");
   });
 });
