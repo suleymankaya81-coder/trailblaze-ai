@@ -3,13 +3,22 @@ import { Clock, Fuel, MapPin, Navigation, ParkingCircle, Sun, Wifi, ExternalLink
 import { Button } from "@/components/ui/button";
 import type { TravelPlan } from "@/lib/data/travelPlan";
 
-export function TravelFlow({ name, plan }: { name: string; plan: TravelPlan }) {
+type Nudge = { href: string; label: string };
+/** One quiet booking link per day: arrival → vehicle, middle → tours, last → stays. */
+export function dayNudge(i: number, total: number, airportCode?: string | null): Nudge | null {
+  if (i === 0) return { href: "#trip-vehicles", label: airportCode ? `Pick up your vehicle at ${airportCode}` : "Pick up your vehicle" };
+  if (total > 1 && i === total - 1) return { href: "#stays", label: "Find a place to stay" };
+  if (i === 1) return { href: "#trip-tours", label: "Tours for today's stops" };
+  return null;
+}
+
+export function TravelFlow({ name, plan, airportCode, nudges = false }: { name: string; plan: TravelPlan; airportCode?: string | null; nudges?: boolean }) {
   function download() {
     const text = [name, ...plan.days.flatMap((day, i) => [`\nDay ${i + 1}: ${day.title}`, day.start, ...day.stops.map(s => `${s.name}: ${s.detail}`), day.driving, day.note]), "\nLOCAL NOTES", ...plan.intel.map(t => `${t.title}: ${t.text}`), ...plan.sources.map(s => `${s.label}: ${s.url}`)].join("\n");
     const url = URL.createObjectURL(new Blob([text], { type: "text/plain;charset=utf-8" }));
     const link = document.createElement("a"); link.href = url; link.download = `${name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-trip.txt`; link.click(); URL.revokeObjectURL(url);
   }
-  return <section id="flow" className="scroll-mt-24">
+  return <section id="flow" className="scroll-mt-40">
     <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
       <div><p className="mb-2 text-xs font-semibold uppercase text-sage-deep"><T>A little structure. Plenty of freedom.</T></p><h2 className="text-2xl text-foreground md:text-3xl">{plan.days.length} <T>days in</T> <T>{name}</T></h2></div>
       <Button variant="outline" onClick={download}><Download /> <T>Save trip</T></Button>
@@ -19,6 +28,7 @@ export function TravelFlow({ name, plan }: { name: string; plan: TravelPlan }) {
         <div className="flex items-start gap-4"><span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-forest text-primary-foreground text-sm font-bold">{String(i+1).padStart(2,"0")}</span><div><h3 className="text-lg text-foreground"><T>{day.title}</T></h3><p className="mt-1 flex items-center gap-1.5 text-xs text-sage-deep"><Clock className="h-3.5 w-3.5 shrink-0" /><T>{day.start}</T></p></div></div>
         <ul className="mt-5 space-y-4">{day.stops.map(stop => <li key={stop.name} className="flex gap-3"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-sage-deep" /><div><p className="text-sm font-semibold text-foreground"><T>{stop.name}</T></p><p className="mt-1 text-xs leading-relaxed text-muted-foreground"><T>{stop.detail}</T></p></div></li>)}</ul>
         <p className="mt-5 flex gap-2 border-t border-border pt-4 text-xs leading-relaxed text-foreground"><Navigation className="h-4 w-4 shrink-0" /><T>{day.driving}</T></p><p className="mt-2 text-xs leading-relaxed text-muted-foreground"><T>{day.note}</T></p>
+        {nudges && (() => { const n = dayNudge(i, plan.days.length, airportCode); return n ? <a href={n.href} className="mt-3 inline-flex min-h-11 items-center gap-1 text-xs font-semibold text-primary underline underline-offset-4"><T>{n.label}</T> →</a> : null; })()}
       </li>)}
     </ol>
   </section>;
@@ -26,5 +36,5 @@ export function TravelFlow({ name, plan }: { name: string; plan: TravelPlan }) {
 
 const intelIcons = { parking: ParkingCircle, signal: Wifi, fuel: Fuel, timing: Sun, access: Navigation };
 export function LocalIntel({ plan }: { plan: TravelPlan }) {
-  return <div className="mt-6"><h3 className="mb-4 text-lg text-foreground"><T>Know before you go</T></h3><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{plan.intel.map(tip => {const Icon=intelIcons[tip.kind]; return <div key={tip.kind} className="rounded-lg border border-border bg-card p-5"><Icon className="h-5 w-5 text-sage-deep" /><h4 className="mt-3 text-sm font-semibold text-foreground"><T>{tip.title}</T></h4><p className="mt-2 text-xs leading-relaxed text-muted-foreground"><T>{tip.text}</T></p></div>;})}</div><div className="mt-4 flex flex-wrap items-center gap-4 text-xs text-muted-foreground"><span><T>Check current conditions:</T></span>{plan.sources.map(s => <a key={s.url} href={s.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 underline underline-offset-4"><T>{s.label}</T><ExternalLink className="h-3 w-3" /></a>)}</div></div>;
+  return <div className="mt-6"><h3 className="mb-4 font-display text-2xl text-foreground md:text-3xl"><T>Know before you go</T></h3><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{plan.intel.map(tip => {const Icon=intelIcons[tip.kind]; return <div key={tip.kind} className="rounded-lg border border-border bg-card p-5"><Icon className="h-5 w-5 text-sage-deep" /><h4 className="mt-3 text-sm font-semibold text-foreground"><T>{tip.title}</T></h4><p className="mt-2 text-xs leading-relaxed text-muted-foreground"><T>{tip.text}</T></p></div>;})}</div><div className="mt-4 flex flex-wrap items-center gap-4 text-xs text-muted-foreground"><span><T>Check current conditions:</T></span>{plan.sources.map(s => <a key={s.url} href={s.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 underline underline-offset-4"><T>{s.label}</T><ExternalLink className="h-3 w-3" /></a>)}</div></div>;
 }

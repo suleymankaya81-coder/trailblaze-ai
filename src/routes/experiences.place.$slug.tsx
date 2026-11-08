@@ -24,25 +24,27 @@ export const Route = createFileRoute("/experiences/place/$slug")({
 function Place({ slug }: { slug: string }) {
   const ref = useRef<HTMLDivElement>(null);
   const { data, isPending, isError, refetch } = useQuery({ queryKey: ["viator-place", slug], queryFn: () => getPlaceExperiences({ data: { slug } }), staleTime: 15 * 60 * 1000, retry: false });
-  // Three photo-led listings only; listings without a photo are skipped.
-  const items = (data?.items ?? []).filter((item) => Boolean(item.image)).slice(0, 3);
+  // ?limit=1 renders the single top listing used in the destination showcase.
+  const limit = new URLSearchParams(window.location.search).get("limit") === "1" ? 1 : 3;
+  // Photo-led listings only; listings without a photo are skipped.
+  const items = (data?.items ?? []).filter((item) => Boolean(item.image)).slice(0, limit);
   const unavailable = isError || data?.unavailable === true;
   useEffect(() => {
     const status = isPending ? "loading" : unavailable ? "error" : items.length ? "results" : "empty";
-    const send = () => window.parent.postMessage({ type: "viator-place", slug, status, height: status === "empty" ? 0 : ref.current?.scrollHeight ?? 120 }, window.location.origin);
+    const send = () => window.parent.postMessage({ type: limit === 1 ? "viator-place-top" : "viator-place", slug, status, height: status === "empty" ? 0 : ref.current?.scrollHeight ?? 120 }, window.location.origin);
     send();
     if (!ref.current) return;
     const ro = new ResizeObserver(send);
     ro.observe(ref.current);
     return () => ro.disconnect();
-  }, [isPending, unavailable, items.length, slug]);
-  if (isPending) return <div className="grid gap-4 p-1 sm:grid-cols-3">{[1, 2, 3].map((n) => <div key={n} className="h-80 animate-pulse rounded-lg bg-muted" />)}</div>;
+  }, [isPending, unavailable, items.length, slug, limit]);
+  if (isPending) return <div className={`grid gap-4 p-1 ${limit === 1 ? "" : "sm:grid-cols-3"}`}>{(limit === 1 ? [1] : [1, 2, 3]).map((n) => <div key={n} className="h-80 animate-pulse rounded-lg bg-muted" />)}</div>;
   return <div ref={ref} className="bg-background p-1">
     {unavailable && <div className="p-4"><p className="text-sm text-muted-foreground">Viator tours could not be loaded. Please try again.</p><Button variant="outline" className="mt-3 min-h-12" onClick={() => refetch()}>Try again</Button></div>}
     {items.length > 0 && <>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+      <div className={`grid grid-cols-1 gap-4 ${limit === 1 ? "" : "sm:grid-cols-3"}`}>
         {items.map((item) => <article key={item.code} className="flex min-w-0 flex-col overflow-hidden rounded-lg border border-border bg-card">
-          <SafeImage src={item.image} alt={item.title} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+          <SafeImage src={item.image} alt={item.title} loading="lazy" className={`${limit === 1 ? "aspect-[16/9]" : "aspect-[4/3]"} w-full object-cover`} />
           <div className="flex flex-1 flex-col p-4">
             <p className="text-[10px] uppercase tracking-wide text-muted-foreground">{item.category ?? tourCategory(item.title)}</p>
             <h3 className="mt-1 font-display text-base font-semibold leading-snug text-foreground"><T>{item.title}</T></h3>

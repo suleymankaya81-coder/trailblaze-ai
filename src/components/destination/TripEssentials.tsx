@@ -25,7 +25,7 @@ export function TripEssentials({ context }: { context: EssentialsContext }) {
     if (row && card) setActive(Math.min(4, Math.round(row.scrollLeft / (card.getBoundingClientRect().width + 16))));
   }
   return (
-    <section id="trip-gear" aria-label={`Trip essentials for ${context.name}`} className="min-w-0">
+    <section id="trip-gear" style={{ scrollMarginTop: 160 }} aria-label={`Trip essentials for ${context.name}`} className="min-w-0">
       <div className="mb-5 flex items-end justify-between gap-4">
         <div className="min-w-0">
           <p className="text-xs font-semibold uppercase text-sage-deep"><T>Curated Trip Essentials</T></p>
