@@ -106,11 +106,11 @@ export function DestinationPageView({ dest, landingLinks, crumbs }: { dest: Dest
       <Header />
 
       <Hero dest={dest} crumbs={crumbs} />
-      <TripSnapshot trip={dest} />
+      <TripSnapshot trip={dest} compact />
       <BookingBar />
 
       {/* Order: showcase (vehicles + top tour) → know before you go → flights → vehicles → itinerary → map → stays → tours → budget/prep → gear */}
-      <main className="container-page max-w-[1200px] space-y-12 py-8 md:space-y-16 md:py-10">
+      <main className="container-page max-w-[1200px] space-y-12 py-5 md:space-y-16 md:py-6">
         <TopShowcase slug={dest.slug} name={dest.name} airportCode={dest.airportCode} />
 
         <section id="trip-plan" aria-label="Know before you go" className="scroll-mt-40 space-y-8">
@@ -182,17 +182,17 @@ function Hero({ dest, crumbs }: { dest: DestinationView; crumbs?: Crumb[] }) {
       <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/60 to-ink/20" />
       {credit && source && <PhotoCredit photo={{ source, credit: credit.creator, license: credit.license }} />}
 
-      <div className="container-page relative grid gap-8 py-10 md:py-14">
+      <div className="container-page relative grid gap-8 py-8 md:py-10">
         <div className="text-off-white">
           <Breadcrumbs crumbs={crumbs ?? destinationCrumbs(dest)} className="text-off-white/75" />
 
-          <h1 className="mt-5 max-w-xl font-display text-4xl leading-[1.05] md:text-6xl">
+          <h1 className="mt-4 max-w-2xl font-display text-4xl leading-[1.05] md:text-5xl">
             <T>{dest.name}</T>
           </h1>
-          <p className="mt-5 max-w-lg text-base text-off-white/85"><T>{dest.tagline}</T></p>
+          <p className="mt-3 max-w-lg text-base text-off-white/85"><T>{dest.tagline}</T></p>
 
           {stats.length > 0 && (
-            <dl className="mt-6 flex flex-wrap gap-x-10 gap-y-5">
+            <dl className="mt-5 flex flex-wrap gap-x-10 gap-y-4">
               {stats.map((s) => (
                 <div key={s.label}>
                   <dt className="text-[10px] font-semibold uppercase tracking-[0.16em] text-off-white/60">
@@ -204,20 +204,6 @@ function Hero({ dest, crumbs }: { dest: DestinationView; crumbs?: Crumb[] }) {
             </dl>
           )}
 
-          <div className="mt-9 flex flex-wrap gap-3">
-            <a
-              href="#stays"
-              className="inline-flex items-center justify-center min-h-12 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
-            >
-              <T>See places to stay</T>
-            </a>
-            <a
-              href="#road-trip"
-              className="inline-flex items-center justify-center min-h-12 rounded-full border border-off-white/50 bg-off-white/10 px-6 py-3 text-sm font-semibold text-off-white transition hover:bg-off-white/10"
-            >
-              <T>Explore the trip</T>
-            </a>
-          </div>
         </div>
 
       </div>
