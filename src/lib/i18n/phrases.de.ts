@@ -16,6 +16,7 @@ export const DE_PHRASES: Record<string, string> = {
   "See vehicles & prices": "Fahrzeuge & Preise ansehen",
   "All vehicle options": "Alle Fahrzeugoptionen",
   "Top tour": "Top-Tour",
+  "Which vehicle?": "Welches Fahrzeug?",
   "Tours near this place": "Touren in der Nähe",
   "Pick up your vehicle": "Fahrzeug abholen",
   "Find a place to stay": "Unterkunft finden",

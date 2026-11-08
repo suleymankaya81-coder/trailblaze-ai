@@ -7,16 +7,16 @@ import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { validViatorHeight } from "@/lib/affiliates/viatorDisplay";
 
 /** First-screen two-up showcase: vehicles & RVs (left) and the top real Viator tour for this place (right). */
-export function TopShowcase({ slug, name, airportCode }: { slug: string; name: string; airportCode: string | null }) {
+export function TopShowcase({ slug, name, airportCode, vehicleNote }: { slug: string; name: string; airportCode: string | null; vehicleNote?: string | null }) {
   return (
     <section id="trip-vehicles" aria-label={`Vehicles and tours for ${name}`} className="scroll-mt-40 grid gap-5 md:grid-cols-2 md:items-stretch">
-      <VehicleShowcase slug={slug} airportCode={airportCode} />
+      <VehicleShowcase slug={slug} airportCode={airportCode} vehicleNote={vehicleNote} />
       <TourShowcase slug={slug} name={name} />
     </section>
   );
 }
 
-function VehicleShowcase({ slug, airportCode }: { slug: string; airportCode: string | null }) {
+function VehicleShowcase({ slug, airportCode, vehicleNote }: { slug: string; airportCode: string | null; vehicleNote?: string | null }) {
   const l = corridorPartnerLinks(slug);
   const rows = [
     { icon: Car, label: "Standard car", price: estimatedFrom("standard car"), brand: "Airport Rentals", href: l.car },
@@ -45,6 +45,7 @@ function VehicleShowcase({ slug, airportCode }: { slug: string; airportCode: str
           </li>
         ))}
       </ul>
+      {vehicleNote && <div className="mt-4 rounded-lg bg-secondary/60 p-4"><p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-sage-deep"><T>Which vehicle?</T></p><p className="mt-1 text-sm leading-relaxed text-foreground"><T>{vehicleNote}</T></p></div>}
       <div className="mt-auto flex flex-wrap gap-2 pt-4">
         <Button asChild className="min-h-12 flex-1"><a href={l.car} target="_blank" rel="sponsored nofollow noopener noreferrer"><T>See vehicles & prices</T><ArrowUpRight /></a></Button>
         <Button asChild variant="outline" className="min-h-12"><a href="#rentals"><T>All vehicle options</T></a></Button>
@@ -65,8 +66,14 @@ function TourShowcase({ slug, name }: { slug: string; name: string }) {
       if (next === null || !["loading", "error", "empty", "results"].includes(e.data.status)) return;
       setHeight(next); setStatus(e.data.status);
     };
+    // Same-origin fallback: measure the frame directly in case a message arrived before this listener.
+    const timer = window.setInterval(() => {
+      const body = frame.current?.contentDocument?.body;
+      const next = body?.textContent?.trim() ? validViatorHeight(Math.ceil(body.scrollHeight)) : null;
+      if (next) { setHeight(next); setStatus("results"); }
+    }, 1000);
     window.addEventListener("message", onMsg);
-    return () => window.removeEventListener("message", onMsg);
+    return () => { window.clearInterval(timer); window.removeEventListener("message", onMsg); };
   }, [slug]);
   const empty = status === "empty" || status === "error";
   return (
