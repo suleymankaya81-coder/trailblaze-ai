@@ -114,7 +114,7 @@ export function DestinationPageView({ dest, landingLinks, crumbs }: { dest: Dest
       <main className="container-page max-w-[1200px] space-y-12 py-5 md:space-y-16 md:py-6">
         <TopShowcase slug={dest.slug} name={dest.name} airportCode={dest.airportCode} vehicleNote={dest.travelPlan?.vehicle} />
 
-        <section id="trip-plan" aria-label="Know before you go" className="scroll-mt-40 space-y-8">
+        <section id="trip-plan" aria-label={tp("Know before you go")} className="scroll-mt-40 space-y-8">
           {dest.travelPlan && <LocalIntel plan={dest.travelPlan} />}
           <DestinationAnswers slug={dest.slug} />
         </section>
