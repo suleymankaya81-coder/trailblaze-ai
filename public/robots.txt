@@ -3,6 +3,13 @@ Allow: /
 Disallow: /go/
 Disallow: /out/
 Disallow: /_serverFn/
+Disallow: /plans/
+Disallow: /curated-plans/
+Disallow: /product/
+Disallow: /product-category/
+Disallow: /shop/
+Disallow: /blog/
+Disallow: /wp-
 
 # Search discovery only; outbound tracking remains off limits.
 User-agent: OAI-SearchBot
@@ -10,12 +17,26 @@ Allow: /
 Disallow: /go/
 Disallow: /out/
 Disallow: /_serverFn/
+Disallow: /plans/
+Disallow: /curated-plans/
+Disallow: /product/
+Disallow: /product-category/
+Disallow: /shop/
+Disallow: /blog/
+Disallow: /wp-
 
 User-agent: PerplexityBot
 Allow: /
 Disallow: /go/
 Disallow: /out/
 Disallow: /_serverFn/
+Disallow: /plans/
+Disallow: /curated-plans/
+Disallow: /product/
+Disallow: /product-category/
+Disallow: /shop/
+Disallow: /blog/
+Disallow: /wp-
 
 # AI assistants and answer engines may read public pages.
 User-agent: GPTBot
@@ -31,6 +52,13 @@ Allow: /
 Disallow: /go/
 Disallow: /out/
 Disallow: /_serverFn/
+Disallow: /plans/
+Disallow: /curated-plans/
+Disallow: /product/
+Disallow: /product-category/
+Disallow: /shop/
+Disallow: /blog/
+Disallow: /wp-
 
 # SEO audit crawlers may read pages, but never outbound partner links.
 User-agent: AhrefsBot
@@ -38,12 +66,26 @@ Allow: /
 Disallow: /go/
 Disallow: /out/
 Disallow: /_serverFn/
+Disallow: /plans/
+Disallow: /curated-plans/
+Disallow: /product/
+Disallow: /product-category/
+Disallow: /shop/
+Disallow: /blog/
+Disallow: /wp-
 
 User-agent: SemrushBot
 Allow: /
 Disallow: /go/
 Disallow: /out/
 Disallow: /_serverFn/
+Disallow: /plans/
+Disallow: /curated-plans/
+Disallow: /product/
+Disallow: /product-category/
+Disallow: /shop/
+Disallow: /blog/
+Disallow: /wp-
 
 
 User-agent: MJ12bot
