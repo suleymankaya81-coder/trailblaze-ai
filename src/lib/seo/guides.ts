@@ -100,7 +100,7 @@ export function haversineMiles(a: [number, number], b: [number, number]): number
   return 2 * R * Math.asin(Math.sqrt(h));
 }
 
-export type LoopStop = { slug: string; name: string; lat: number; lng: number; heroImage: string; tripDurationDays: string | null; permitLevel: GuideDest["permitLevel"]; permitHeadline: string | null; airportCode?: string | null; airportName?: string | null };
+export type LoopStop = { slug: string; name: string; lat: number; lng: number; heroImage: string; tripDurationDays: string | null; bestSeason?: string | null; region?: string | null; permitLevel: GuideDest["permitLevel"]; permitHeadline: string | null; airportCode?: string | null; airportName?: string | null };
 
 /** Loop gateway airport: the first stop that has airport data; null means no booking block. */
 export function loopGatewayAirport(stops: LoopStop[]): { code: string; name: string } | null {

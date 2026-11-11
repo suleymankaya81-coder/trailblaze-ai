@@ -42,6 +42,7 @@ export type DestinationView = {
   name: string;
   region: string;
   tagline: string;
+  destinationType?: string | null;
   heroImage: string;
   gallery: string[];
   photoCredit: string | null;
@@ -176,6 +177,7 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       name: dest.name,
       region: dest.region ?? "",
       tagline: dest.tagline ?? "",
+      destinationType: dest.destination_type,
       heroImage: dest.hero_image ?? "",
       gallery: dest.gallery,
       photoCredit: dest.photo_credit,

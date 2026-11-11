@@ -1,4 +1,5 @@
 import { DayRouteActions } from "@/components/ui-kit/DayRouteActions";
+import { travelDescription } from "@/lib/seo/travelMetadata";
 import { T } from "@/lib/i18n";
 import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
@@ -35,7 +36,7 @@ const loadPage = async ({ params }: { params: { slug: string } }) => {
   const corridor = getCorridor(params.slug);
   if (!corridor) throw notFound();
   const stops = await getLoopStops({ data: { slugs: corridor.stops } });
-  if (stops.length < 3) throw notFound();
+  if (stops.length < 3 || stops.length !== corridor.stops.length || stops[0]?.slug !== corridor.stops[0]) throw notFound();
   return { corridor, stops, url: `${SITE}/corridors/${corridor.slug}` };
 };
 
@@ -46,7 +47,7 @@ export const Route = createFileRoute("/corridors/$slug")({
     const { corridor, url, stops } = loaderData;
     const image = stops[1]?.heroImage ?? stops[0]?.heroImage;
     const title = corridorPageTitle(corridor);
-    const description = corridorSearchDescription(corridor, stops.map((s) => s.name));
+    const description = travelDescription({ name: corridorSearchTitle(corridor), region: `${corridor.gatewayCity} (${corridor.gateway.code})`, tripDurationDays: corridor.idealDays }, "corridors", corridorSearchDescription(corridor, stops.map((s) => s.name)));
     return {
       meta: [
         { title },

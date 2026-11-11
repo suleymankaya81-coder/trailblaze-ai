@@ -1,3 +1,11 @@
+## November 11 daily Maps and travel metadata
+- [x] Mobile-safe segmentation: three intermediate waypoints, overlapping parts, no silent truncation; Acadia day two preserves its independent endpoints in EN/DE.
+- [x] Collect all 500 public destinations / 1512 days / 3039 stops once into a canonical query/source-coordinate cache, with a missing-coordinate report and no per-visit lookup.
+- [ ] Independently verify the remaining 2364 stop coordinates; blocker: stored source markers do not establish these exact locations. Canonical place-qualified Maps queries remain available, but resolved destinations and road access are not verified.
+- [x] Daily actions added to Fly & Drive, no-reservation and RV guides; existing loop/corridor controls share the mobile-safe splitter and corridor loads reject missing stops.
+- [x] Stored-fact metadata updated across six travel families and DE versions; 12 browser pages checked, phone day-two button visible without overflow or page errors.
+- [ ] Verify handoff and navigation in the real Google Maps phone app; blocker: native Maps cannot be launched in this sandbox. Site-generated URLs and day boundaries tested, not Maps results. Changes not published.
+
 ## October 25 affiliate copy cleanup
 - [x] Remove repetitive partnership/commission and generic pricing notices across page families; retain footer Affiliate Disclosure link, legal page, tracking, photo credits and estimate qualifiers. Update the legal page's outdated description of labels.
 - [x] Verify nine representative pages, footer disclosure navigation, retained estimate labels/sponsored links, no page errors and 33 existing tests; preview build OK. Not published.

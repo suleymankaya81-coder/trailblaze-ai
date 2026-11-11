@@ -1,0 +1,2 @@
+- Daily Maps links use three intermediate waypoints and overlapping parts; mapsUrl rejects oversized input instead of truncating it. Why: mobile browser limits must not drop stops.
+- Canonical cached stop names survive translations via routingName; only sourced coordinates enable GPX, and unresolved points keep place-qualified text queries. Why: no invented locations or per-visit lookups.

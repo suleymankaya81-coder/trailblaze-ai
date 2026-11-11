@@ -1,4 +1,6 @@
 import { T } from "@/lib/i18n";
+import { DailyRoutes } from "@/components/guides/DailyRoutes";
+import { travelDescription } from "@/lib/seo/travelMetadata";
 import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { Thumb, SwipeRow } from "@/components/ui-kit";
@@ -48,7 +50,7 @@ export const Route = createFileRoute("/rv-camping/$slug")({
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
     const { dest, faqs, url } = loaderData;
     const title = rvCampingTitle(dest);
-    const description = rvCampingDescription(dest);
+    const description = travelDescription(dest, "rv-camping", rvCampingDescription(dest));
     const img = dest.heroImage.startsWith("https://") ? dest.heroImage : null;
     return {
       meta: [
@@ -144,6 +146,7 @@ export function Page(): React.ReactElement {
           <div className="mt-6"><HarvestHostsCard destinationName={dest.name} /></div>
         </GuideSection>
 
+        <DailyRoutes dest={dest} />
         <section className="container-page pb-6"><ViatorPlaceBlock slug={dest.slug} name={dest.name} /></section>
         <section className="container-page py-10"><TripEssentials context={{ slug: `rv-${dest.slug}`, name: dest.name, places: [dest], mode: "camping" }} /></section>
         <GuideSection title="Quick answers"><GuideFaq faqs={faqs} /></GuideSection>

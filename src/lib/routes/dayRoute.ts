@@ -1,9 +1,10 @@
 import type { TravelPlan, TravelMarker } from "@/lib/data/travelPlan";
+import storedPoints from "@/data/daily-route-points.json";
 
 /** A routable point: real coordinates when verified, otherwise a disambiguated text query. */
 export type RoutePoint = { name: string; lat?: number; lng?: number; query: string };
 
-export const MAPS_MAX_WAYPOINTS = 8; // Google allows ~9 waypoints; keep a margin.
+export const MAPS_MAX_WAYPOINTS = 3; // Maps URLs support only three intermediate waypoints in mobile browsers.
 
 export function normalizeName(s: string): string {
   return s.toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/\(.*?\)/g, "")
@@ -24,8 +25,11 @@ export function toPoint(name: string, markers: TravelMarker[], place: string, re
   return m ? { name, lat: m.lat, lng: m.lng, query } : { name, query };
 }
 
-export function dayPoints(day: TravelPlan["days"][number], markers: TravelMarker[], place: string, region?: string): RoutePoint[] {
-  return day.stops.map(s => toPoint(s.name, markers, place, region));
+export function dayPoints(day: TravelPlan["days"][number], markers: TravelMarker[], place: string, region?: string, slug?: string): RoutePoint[] {
+  const cache = storedPoints as Record<string, RoutePoint[][]>;
+  const canonical = slug ? cache[slug]?.find(points => points.length === day.stops.length && points.every((p, i) => normalizeName(p.name) === normalizeName(day.stops[i].routingName ?? day.stops[i].name))) : undefined;
+  if (canonical) return canonical.map((p, i) => ({ ...p, name: day.stops[i].name }));
+  return day.stops.map(s => ({ ...toPoint(s.routingName ?? s.name, markers, place, region), name: s.name }));
 }
 
 const enc = (p: RoutePoint) => p.lat != null && p.lng != null ? `${p.lat.toFixed(5)},${p.lng.toFixed(5)}` : p.query;
@@ -33,7 +37,8 @@ const enc = (p: RoutePoint) => p.lat != null && p.lng != null ? `${p.lat.toFixed
 /** Free Google Maps directions URL (no API key). Returns null for fewer than 2 points. */
 export function mapsUrl(points: RoutePoint[]): string | null {
   if (points.length < 2) return null;
-  const pts = points.slice(0, MAPS_MAX_WAYPOINTS + 2);
+  if (points.length > MAPS_MAX_WAYPOINTS + 2) return null; // Use mapsUrlParts: never silently discard stops.
+  const pts = points;
   const params = new URLSearchParams({ api: "1", origin: enc(pts[0]), destination: enc(pts[pts.length - 1]), travelmode: "driving" });
   const mid = pts.slice(1, -1);
   if (mid.length) params.set("waypoints", mid.map(enc).join("|"));

@@ -1,0 +1,1 @@
+- travelMetadata composes route-family descriptions from stored location/type/duration/season facts; omit unknown facts and never infer camping availability. Why: search snippets must reflect the displayed trip rather than invented inventory.

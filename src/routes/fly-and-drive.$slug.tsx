@@ -1,4 +1,7 @@
 import type * as React from "react";
+import { DailyRoutes } from "@/components/guides/DailyRoutes";
+import { travelDescription } from "@/lib/seo/travelMetadata";
+import { T } from "@/lib/i18n";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
@@ -34,7 +37,7 @@ export const Route = createFileRoute("/fly-and-drive/$slug")({
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
     const { dest, faqs, url } = loaderData;
     const title = flyDriveTitle(dest);
-    const description = flyDriveDescription(dest);
+    const description = travelDescription(dest, "fly-and-drive", flyDriveDescription(dest));
     const img = dest.heroImage.startsWith("https://") ? dest.heroImage : null;
     return {
       meta: [
@@ -59,7 +62,7 @@ export const Route = createFileRoute("/fly-and-drive/$slug")({
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="container-page py-10 md:py-14">
-      <h2 className="mb-6 font-display text-2xl font-bold text-foreground md:text-3xl">{title}</h2>
+      <h2 className="mb-6 font-display text-2xl font-bold text-foreground md:text-3xl"><T>{title}</T></h2>
       {children}
     </section>
   );
@@ -83,6 +86,7 @@ export function FlyDrivePage(): React.ReactElement {
         <Section title="Before you land">
           <BeforeYouLand dest={dest} />
         </Section>
+        <DailyRoutes dest={dest} arrival />
         <section className="container-page pb-6"><ViatorPlaceBlock slug={dest.slug} name={dest.name} /></section>
         <section className="container-page py-10"><TripEssentials context={{ slug: dest.slug, name: dest.name, places: [dest] }} /></section>
         <Section title="Quick answers">

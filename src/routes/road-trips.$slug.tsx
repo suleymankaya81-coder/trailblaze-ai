@@ -1,4 +1,5 @@
 import { DayRouteActions } from "@/components/ui-kit/DayRouteActions";
+import { travelDescription } from "@/lib/seo/travelMetadata";
 import { T } from "@/lib/i18n";
 import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
@@ -45,7 +46,7 @@ export const Route = createFileRoute("/road-trips/$slug")({
     if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
     const { loop, stops, faqs, url } = loaderData;
     const title = loopSearchTitle(loop.slug, loop.title, stops.length);
-    const description = loopSearchDescription(loop.slug, loop.title, stops.map((s) => s.name));
+    const description = travelDescription({ name: loop.title, region: loop.region, tripDurationDays: `${stops.reduce((sum, s) => sum + suggestedDays(s.tripDurationDays), 0)} days`, bestSeason: stops[0]?.bestSeason }, "road-trips", loopSearchDescription(loop.slug, loop.title, stops.map((s) => s.name)));
     const img = stops[0]?.heroImage.startsWith("https://") ? stops[0].heroImage : null;
     return {
       meta: [

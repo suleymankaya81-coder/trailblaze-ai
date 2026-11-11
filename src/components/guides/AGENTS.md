@@ -1,0 +1,1 @@
+- DailyRoutes reuses stored plans and shared DayRouteActions in every place-guide family. Why: no duplicated itinerary generation or inconsistent Maps links.

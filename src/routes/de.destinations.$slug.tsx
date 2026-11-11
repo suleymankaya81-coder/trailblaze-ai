@@ -1,4 +1,5 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
+import { travelDescription } from "@/lib/seo/travelMetadata";
 import { DestinationPageView } from "@/components/destination/DestinationPageView";
 import { getDestinationPageData, type DestinationView } from "@/lib/data/destinations.functions";
 import { getDestinationTranslation, type DestinationTranslation } from "@/lib/data/translations.functions";
@@ -13,7 +14,7 @@ function translateDest(dest: DestinationView, tr: DestinationTranslation): Desti
   const travelPlan = plan && tr.days.length === plan.days.length && tr.intel.length === plan.intel.length
     ? {
         ...plan,
-        days: plan.days.map((d, i) => ({ ...d, ...tr.days[i], stops: d.stops.map((s, j) => ({ ...s, ...(tr.days[i].stops[j] ?? {}) })) })),
+        days: plan.days.map((d, i) => ({ ...d, ...tr.days[i], stops: d.stops.map((s, j) => ({ ...s, ...(tr.days[i].stops[j] ?? {}), routingName: s.name })) })),
         intel: plan.intel.map((x, i) => ({ ...x, title: tr.intel[i].title, text: tr.intel[i].text })),
         arrival: tr.arrival ?? plan.arrival,
         vehicle: tr.vehicle ?? plan.vehicle,
@@ -49,7 +50,7 @@ export const Route = createFileRoute("/de/destinations/$slug")({
     const crumbs = [HOME_DE, DESTINATIONS_DE, { name: tr.name, path: `/de/destinations/${dest.slug}` }];
     return {
       meta: [
-        ...deMeta(tr.metaTitle, tr.metaDescription, url),
+        ...deMeta(tr.metaTitle, travelDescription(dest, "destination", tr.metaDescription, "de"), url),
         { property: "og:type", content: "article" },
         { name: "twitter:card", content: "summary_large_image" },
         ...(dest.heroImage.startsWith("https://") ? [{ property: "og:image", content: dest.heroImage }, { name: "twitter:image", content: dest.heroImage }] : []),
