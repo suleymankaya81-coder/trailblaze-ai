@@ -1,3 +1,4 @@
+import { DayRouteActions } from "@/components/ui-kit/DayRouteActions";
 import { T } from "@/lib/i18n";
 import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
@@ -94,6 +95,7 @@ export function Page(): React.ReactElement {
             </ClientOnly>
           </div>
           <p className="mt-2 text-xs text-muted-foreground"><T>{corridor.intro}</T></p>
+          <DayRouteActions title={corridor.title} points={loop.map((s) => ({ name: s.name, lat: s.lat, lng: s.lng, query: s.name }))} mapsLabel="Open route in Google Maps" />
         </GuideSection>
 
         <GuideSection title={`Start in ${corridor.gatewayCity}`} intro="Arrange your arrival, choose your wheels and get connected before the first park day.">

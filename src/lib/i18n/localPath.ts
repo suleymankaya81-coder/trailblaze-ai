@@ -2,7 +2,7 @@ import { STATIC_TRANSLATED_PATHS } from "@/lib/seo/hreflang";
 import { localizePath, type Locale } from "./locales";
 
 /** Page families that have a German route for every slug the English route serves. */
-const SLUG_FAMILIES = ["destinations", "road-trips", "corridors", "fly-and-drive", "no-reservation", "rv-camping"];
+const SLUG_FAMILIES = ["destinations", "trip-builder", "road-trips", "corridors", "fly-and-drive", "no-reservation", "rv-camping"];
 
 /** True when an English path has a version in another language (search guides and others do not). */
 export function hasTranslatedPage(path: string): boolean {

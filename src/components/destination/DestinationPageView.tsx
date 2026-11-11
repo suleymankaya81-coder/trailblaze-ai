@@ -124,7 +124,7 @@ export function DestinationPageView({ dest, landingLinks, crumbs }: { dest: Dest
         <RentBeforeYouGo dest={dest} />
 
         <div className="space-y-12 md:space-y-16">
-          {dest.travelPlan ? <TravelFlow name={dest.name} plan={dest.travelPlan} airportCode={dest.airportCode} nudges /> : <TripFlow dest={dest} />}
+          {dest.travelPlan ? <TravelFlow name={dest.name} plan={dest.travelPlan} airportCode={dest.airportCode} nudges region={dest.region} slug={dest.slug} /> : <TripFlow dest={dest} />}
           <TripRadar dest={dest} />
           <RoadTrip dest={dest} ai={ai} />
         </div>
