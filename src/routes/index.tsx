@@ -15,6 +15,9 @@ import { HomeExperiences } from "@/components/home/HomeExperiences";
 import { StartHere } from "@/components/home/StartHere";
 import { HomeHero } from "@/components/home/HomeHero";
 import { TripEssentials } from "@/components/destination/TripEssentials";
+import { motorhomeRepublicLink } from "@/lib/affiliates/webjet";
+import { isMhrBlackFridayLive } from "@/lib/affiliates/mhrBlackFriday";
+import bfArt from "@/assets/rv_black_friday_2026.png.asset.json";
 import { EditorialCard, PlaceCard, SectionHead, SectionLink, SwipeRow, Thumb } from "@/components/ui-kit";
 import planImg from "@/assets/thumbs/plan.jpg";
 import mapImg from "@/assets/thumbs/map.jpg";
@@ -114,6 +117,17 @@ export function HomePageView({ homeDestinations, localSlugs }: { homeDestination
           </SwipeRow>
         </div>
       </section>
+
+      {isMhrBlackFridayLive() && (
+        <section id="black-friday" className="section-y">
+          <div className="container-page">
+            <a href={motorhomeRepublicLink()} target="_blank" rel="sponsored noopener" className="block overflow-hidden rounded-xl border border-border bg-card">
+              <img src={bfArt.url} alt="Black Friday sale: save up to 35% off motorhome rentals" loading="lazy" className="w-full object-contain" />
+              <span className="block bg-secondary px-4 py-3 text-xs text-muted-foreground"><T>Black Friday · ends 2 Dec — Cruise America & Cruise Canada up to 35% off. Selected dates & T&Cs apply.</T></span>
+            </a>
+          </div>
+        </section>
+      )}
 
       <section id="stay-types" className="section-y bg-card">
         <div className="container-page">
