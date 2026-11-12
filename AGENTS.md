@@ -33,13 +33,13 @@
 - Partner-card photo credits use the shared PhotoCredit (©) component and button text comes from offerCtaLabel. Why: credits stay compact and CTAs consistent across card types.
 - Travel templates use TripSnapshot/TripQuickNav and shared section anchors; repeated card rows use travel-card-row on phones and grids on larger screens. Why: consistent navigation and card ergonomics without runtime content generation.
 - Load the Travelpayouts rewriting script only after hydration and place photo-credit links outside clickable card anchors. Why: prevent pre-hydration DOM mutations and invalid nested anchors.
-- Shared card templates live in src/components/ui-kit (CategoryTile, PlaceCard, EditorialCard, SplitBand, SwipeRow, Thumb); new pages reuse them instead of adding new card styles. Why: one consistent card system across the site.
+- Shared card templates live in src/components/ui-kit (CategoryTile, PlaceCard, EditorialCard, SplitBand, SwipeRow, Thumb); new pages reuse them instead of adding new card styles. Why: one card system.
 - Guide heroes, reservation notes and FAQs share GuideSections; provider tour frames report their own height and verify message origin/source. Why: guide families stay consistent and mobile listings are not clipped.
 - Remote images in shared cards use SafeImage without substituting unrelated photographs; Viator display validation lives in viatorDisplay. Why: failed media and invalid provider values must not create misleading content.
 - About and legal content share StaticPageLayout with an unframed reading column. Why: static pages keep the travel site's visual hierarchy without floating article cards.
 - Contact email handoff uses the shared contact schema and URL builder; never report a mail-app handoff as successful delivery. Why: input must be encoded and delivery requires the visitor to send from their email app until app-email sending is configured.
 - Route-page search titles/descriptions come from src/lib/seo/routeSeo.ts keyword maps (one distinct phrase per page, ≤60/≤160 chars); RV & camping and no-reservation guides use src/lib/seo/guidesSeo.ts on the same fitText/limits pattern. Why: match real Google queries without page overlap.
-- Destination TopShowcase (vehicles + top Viator listing) follows the booking bar, before guide content. Why: first-screen booking.
+- Destination TopShowcase (vehicles + top Viator listing) follows the booking bar, before guide content. Why: booking first.
 - Destination pages are a single column with no sticky side panels; budget and preparation panels sit side by side (stacked on phones). Why: sticky side panels overlapped neighbouring content.
 - Homepage "Top bucket-list experiences" shows one real Viator listing per iconic place via the noindexed `/experiences/home` frame. Why: keep provider content unindexed while using cached place searches.
 - Internal guide links use shared PlanDeeper (all guides for one place, loader-fetched indexable search pages) and MoreRoutes (related loops/corridors), rendered server-side on every destination, guide, search and route page. Why: crawlable initial HTML.
