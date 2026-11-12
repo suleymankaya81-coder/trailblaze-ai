@@ -11,10 +11,10 @@ import { hasViatorRating } from "@/lib/affiliates/viatorDisplay";
 // Noindexed frame: Viator provider content must stay out of indexable pages.
 export const Route = createFileRoute("/experiences/place/$slug")({
   head: () => ({ meta: [
-    { title: "Viator Tours Near This Destination — MiniaLife" },
-    { name: "description", content: "Current Viator tours and experiences near this MiniaLife destination." },
-    { property: "og:title", content: "Viator Tours Near This Destination — MiniaLife" },
-    { property: "og:description", content: "Provider-sourced tours near MiniaLife destinations." },
+    { title: "Viator Tours Near This Destination — WildParkRoutes" },
+    { name: "description", content: "Current Viator tours and experiences near this WildParkRoutes destination." },
+    { property: "og:title", content: "Viator Tours Near This Destination — WildParkRoutes" },
+    { property: "og:description", content: "Provider-sourced tours near WildParkRoutes destinations." },
     { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" },
     { name: "robots", content: "noindex, nofollow, nosnippet" },
   ] }),

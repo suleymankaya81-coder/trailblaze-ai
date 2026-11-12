@@ -21,9 +21,9 @@ export const HOME_TOUR_PLACES = [
 // Noindexed frame: Viator provider content must stay out of indexable pages.
 export const Route = createFileRoute("/experiences/home")({
   head: () => ({ meta: [
-    { title: "Top Viator Experiences — MiniaLife" },
-    { name: "description", content: "Current top Viator experiences at iconic MiniaLife destinations." },
-    { property: "og:title", content: "Top Viator Experiences — MiniaLife" },
+    { title: "Top Viator Experiences — WildParkRoutes" },
+    { name: "description", content: "Current top Viator experiences at iconic WildParkRoutes destinations." },
+    { property: "og:title", content: "Top Viator Experiences — WildParkRoutes" },
     { property: "og:description", content: "Provider-sourced bucket-list experiences." },
     { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" },
     { name: "robots", content: "noindex, nofollow, nosnippet" },

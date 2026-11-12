@@ -36,7 +36,7 @@ export type StoredPin = { key: string; image_url: string; release_at: string; fe
 
 /** Pins that carry their own reviewed copy and link (former manual-upload pins). */
 export function storedPinItem(p: StoredPin): FeedItem | null {
-  if (!p.title || !p.description || !p.link || !/^https:\/\/minialife\.com\//.test(p.link)) return null;
+  if (!p.title || !p.description || !p.link || !/^https:\/\/(wildparkroutes|minialife)\.com\//.test(p.link)) return null;
   return { title: p.title, description: p.description, link: SITE_ORIGIN + canonicalPath(new URL(p.link).pathname), image: p.image_url, releaseAt: p.release_at, date: p.release_at, feed: feedForPin(p.feed), indexable: true, published: true };
 }
 
@@ -62,7 +62,7 @@ export function renderRss(items: FeedItem[], feed: Feed): string {
     '<?xml version="1.0" encoding="UTF-8"?>',
     '<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">',
     "<channel>",
-    "<title>MiniaLife — Road Trips &amp; Outdoor Travel</title>",
+    "<title>WildParkRoutes — Road Trips &amp; Outdoor Travel</title>",
     `<link>${SITE_ORIGIN}</link>`,
     `<atom:link href="${self}" rel="self" type="application/rss+xml"/>`,
     "<description>Road trip guides, scenic routes and outdoor travel plans.</description>",

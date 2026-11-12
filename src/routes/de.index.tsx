@@ -6,7 +6,7 @@ import { deMeta } from "@/lib/i18n/deSeo";
 import { hreflangLinks } from "@/lib/seo/hreflang";
 import { HomePageView } from "./index";
 
-const title = "USA-Roadtrip planen: Nationalpark-Reisepläne | MiniaLife";
+const title = "USA-Roadtrip planen: Nationalpark-Reisepläne | WildParkRoutes";
 const description = "Fertige Reisepläne für Yellowstone, Grand Canyon, Zion & mehr: Tag-für-Tag-Routen, Reservierungshinweise und Tipps für Ihren USA-Roadtrip.";
 
 export const Route = createFileRoute("/de/")({

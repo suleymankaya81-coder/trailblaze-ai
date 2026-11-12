@@ -22,7 +22,7 @@ export const Route = createFileRoute("/de/destinations/$slug/$region/")({
     return { country: params.slug, region: params.region, name: data.name, places };
   },
   head: ({ loaderData }) => {
-    if (!loaderData) return { meta: [{ title: "Nicht verfügbar — MiniaLife" }, { name: "robots", content: "noindex" }] };
+    if (!loaderData) return { meta: [{ title: "Nicht verfügbar — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
     const { name, places, country, region } = loaderData;
     const title = `${name}: Nationalparks & Outdoor-Reisen – ${places.length} Reiseziele`;
     const description = `Roadtrip- und Parkführer für ${name} (${COUNTRIES[country].nameDe}): ${places.slice(0, 4).map((p) => p.name).join(", ")} und mehr.`.slice(0, 160);

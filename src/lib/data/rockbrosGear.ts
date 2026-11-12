@@ -176,7 +176,7 @@ export const gearFaqs = [
   {
     question: "Are these products independently tested?",
     answer:
-      "No. This is a catalog-based editorial selection, not a hands-on review. Capacities, materials and performance claims come from the ROCKBROS listing and have not been independently tested by MiniaLife.",
+      "No. This is a catalog-based editorial selection, not a hands-on review. Capacities, materials and performance claims come from the ROCKBROS listing and have not been independently tested by WildParkRoutes.",
   },
   {
     question: "Can the mini air pump inflate bicycle tires?",

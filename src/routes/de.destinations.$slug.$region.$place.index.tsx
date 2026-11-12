@@ -53,7 +53,7 @@ export const Route = createFileRoute("/de/destinations/$slug/$region/$place/")({
     return { dest: translateDest(dest, tr), tr, landingLinks };
   },
   head: ({ loaderData }) => {
-    if (!loaderData) return { meta: [{ title: "Nicht verfügbar — MiniaLife" }, { name: "robots", content: "noindex" }] };
+    if (!loaderData) return { meta: [{ title: "Nicht verfügbar — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
     const { tr, dest } = loaderData;
     const url = `${SITE_ORIGIN}${destinationPath(dest.slug, "de")}`;
     const crumbs = placeCrumbsDe(dest.slug, tr.name);

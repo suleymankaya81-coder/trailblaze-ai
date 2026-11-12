@@ -95,7 +95,7 @@ export const HUB_SEO = {
     "trip guides",
     [`Trip Guides: Fly & Drive, RV, Permits & Loops${BRAND}`, `Trip Guides${BRAND}`],
     [
-      "All MiniaLife trip guides in one place: road trip loops, gateway road trips, fly & drive, RV & camping and national park reservation guides.",
+      "All WildParkRoutes trip guides in one place: road trip loops, gateway road trips, fly & drive, RV & camping and national park reservation guides.",
       "All trip guides in one place: road trip loops, fly & drive, RV & camping and national park reservation guides.",
     ],
   ),

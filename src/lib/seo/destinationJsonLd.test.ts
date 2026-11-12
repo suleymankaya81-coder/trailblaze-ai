@@ -13,10 +13,10 @@ const dest = {
 
 describe("destination structured data", () => {
   it("preserves the visible daily stop order in one suggested trip", () => {
-    const result = buildDestinationJsonLd(dest, "https://minialife.com/destinations/yellowstone");
+    const result = buildDestinationJsonLd(dest, "https://wildparkroutes.com/destinations/yellowstone");
     expect(result).toMatchObject({ "@graph": expect.arrayContaining([{
-      "@type": "TouristTrip", "@id": "https://minialife.com/destinations/yellowstone#trip",
-      name: "2 days in Yellowstone", url: "https://minialife.com/destinations/yellowstone#flow",
+      "@type": "TouristTrip", "@id": "https://wildparkroutes.com/destinations/yellowstone#trip",
+      name: "2 days in Yellowstone", url: "https://wildparkroutes.com/destinations/yellowstone#flow",
       description: expect.any(String),
       itinerary: { "@type": "ItemList", itemListOrder: "https://schema.org/ItemListOrderAscending", numberOfItems: 3,
         itemListElement: [
@@ -28,11 +28,11 @@ describe("destination structured data", () => {
     }]) });
   });
   it("does not invent live availability from a booking URL", () => {
-    const result = JSON.stringify(buildDestinationJsonLd(dest, "https://minialife.com/destinations/yellowstone"));
+    const result = JSON.stringify(buildDestinationJsonLd(dest, "https://wildparkroutes.com/destinations/yellowstone"));
     expect(result).not.toContain('"availability"');
     expect(result).not.toContain('"offers"');
   });
   it("omits a trip when no visible stored daily plan exists", () => {
-    expect(JSON.stringify(buildDestinationJsonLd({ ...dest, travelPlan: null }, "https://minialife.com/destinations/yellowstone"))).not.toContain('"TouristTrip"');
+    expect(JSON.stringify(buildDestinationJsonLd({ ...dest, travelPlan: null }, "https://wildparkroutes.com/destinations/yellowstone"))).not.toContain('"TouristTrip"');
   });
 });

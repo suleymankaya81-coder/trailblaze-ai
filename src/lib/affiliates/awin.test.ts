@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { buildAwinLink } from "./awin";
 import { HARVEST_HOSTS_URL } from "../../components/destination/HarvestHostsCard";
 
-describe("MiniaLife Awin attribution", () => {
+describe("WildParkRoutes Awin attribution", () => {
   it("attributes RoverPass clicks to publisher 3115962", () => {
     const url = new URL(buildAwinLink({
       id: "roverpass",

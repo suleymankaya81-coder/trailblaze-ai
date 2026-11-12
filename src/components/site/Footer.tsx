@@ -2,7 +2,7 @@ import { T } from "@/lib/i18n";
 import { useEffect, useState } from "react";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Link } from "@/components/site/LocalLink";
-import logoStacked from "@/assets/logos/minialife-stacked-mixedcase-trimmed.png";
+import { Wordmark } from "@/components/site/Wordmark";
 
 const groups = [
   { title: "Road Trips", links: [
@@ -22,7 +22,7 @@ const groups = [
     { to: "/gear/best-cycling-accessories", label: "Cycling Accessories" },
     { to: "/gear/bike-repair-kit-essentials", label: "Bike Repair Kit" },
   ] },
-  { title: "MiniaLife", links: [
+  { title: "WildParkRoutes", links: [
     { to: "/about", label: "About" },
     { to: "/contact", label: "Contact" },
     { to: "/affiliate-disclosure", label: "Affiliate Disclosure" },
@@ -45,13 +45,7 @@ export function Footer() {
       <div className="container-page py-16">
         <div className="flex flex-col items-start justify-between gap-10 md:flex-row md:items-center">
           <div>
-            <img
-              src={logoStacked}
-              alt="MiniaLife"
-              width={598}
-              height={737}
-              className="h-24 w-auto"
-            />
+            <Wordmark />
           </div>
           <p className="max-w-md text-sm text-muted-foreground">
             <T>{"A modern outdoor-travel guide. Tell us where you want to go and we'll show you where to stay, what to rent, what to do, and what to bring."}</T>
@@ -75,7 +69,7 @@ export function Footer() {
 
 
         <div className="mt-6 flex flex-col gap-2 text-xs text-muted-foreground md:flex-row md:justify-between">
-          <span>© {new Date().getFullYear()} MiniaLife. <T>All rights reserved.</T></span>
+          <span>© {new Date().getFullYear()} WildParkRoutes. <T>All rights reserved.</T></span>
           <span className="flex items-center gap-3"><T>Crafted for the great outdoors.</T> <LanguageSwitcher /></span>
         </div>
       </div>

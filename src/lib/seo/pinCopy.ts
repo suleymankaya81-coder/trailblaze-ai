@@ -19,7 +19,7 @@ export const DESC_MAX = 450;
 
 export function clean(s: string): string {
   return s
-    .replace(/\s*\|\s*MiniaLife\b/gi, "")
+    .replace(/\s*\|\s*WildParkRoutes\b/gi, "")
     .replace(/\s+/g, " ")
     .replace(/\b(\w+)( \1\b)+/gi, "$1")
     .replace(/National Park National Park/gi, "National Park")

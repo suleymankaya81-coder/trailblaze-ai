@@ -65,7 +65,7 @@ export function buildGpx(title: string, points: RoutePoint[]): string | null {
   if (!hasAllCoords(points)) return null;
   const wpts = points.map(p => `  <wpt lat="${p.lat}" lon="${p.lng}"><name>${xml(p.name)}</name></wpt>`).join("\n");
   const rtepts = points.map(p => `    <rtept lat="${p.lat}" lon="${p.lng}"><name>${xml(p.name)}</name></rtept>`).join("\n");
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="MiniaLife" xmlns="http://www.topografix.com/GPX/1/1">\n  <metadata><name>${xml(title)}</name></metadata>\n${wpts}\n  <rte><name>${xml(title)}</name>\n${rtepts}\n  </rte>\n</gpx>\n`;
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="WildParkRoutes" xmlns="http://www.topografix.com/GPX/1/1">\n  <metadata><name>${xml(title)}</name></metadata>\n${wpts}\n  <rte><name>${xml(title)}</name>\n${rtepts}\n  </rte>\n</gpx>\n`;
 }
 
 export function slugify(s: string): string { return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }

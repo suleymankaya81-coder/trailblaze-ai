@@ -6,7 +6,7 @@ names=list(dict.fromkeys(s['name'] for r in rows for d in r['travel_plan']['days
 found={}
 for start in range(0,len(names),40):
  batch=names[start:start+40]
- resp=requests.get('https://en.wikipedia.org/w/api.php',params={'action':'query','format':'json','formatversion':2,'titles':'|'.join(batch),'prop':'coordinates','redirects':1},headers={'User-Agent':'MiniaLife/1.0 (https://minialife.com)'},timeout=40)
+ resp=requests.get('https://en.wikipedia.org/w/api.php',params={'action':'query','format':'json','formatversion':2,'titles':'|'.join(batch),'prop':'coordinates','redirects':1},headers={'User-Agent':'WildParkRoutes/1.0 (https://minialife.com)'},timeout=40)
  resp.raise_for_status();j=resp.json().get('query',{}); pages={p['title']:p for p in j.get('pages',[])}; aliases={p['from']:p['to'] for p in j.get('normalized',[])+j.get('redirects',[])}
  for name in batch:
   title=name

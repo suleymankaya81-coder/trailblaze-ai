@@ -33,7 +33,7 @@ describe("road trip search metadata", () => {
 
   it("uses the exact Grand Circle phrase", () => {
     const c = CORRIDORS.find((x) => x.slug === "grand-circle-from-las-vegas")!;
-    expect(corridorPageTitle(c)).toBe("Grand Circle Road Trip from Las Vegas — MiniaLife");
+    expect(corridorPageTitle(c)).toBe("Grand Circle Road Trip from Las Vegas — WildParkRoutes");
   });
 
   it("gives every page a distinct title", () => {
@@ -45,7 +45,7 @@ describe("road trip search metadata", () => {
 describe("destination search metadata", () => {
   it("targets '{name} travel guide' within limits", () => {
     const title = destinationSearchTitle("Yellowstone");
-    expect(title).toBe("Yellowstone Travel Guide — MiniaLife");
+    expect(title).toBe("Yellowstone Travel Guide — WildParkRoutes");
     expect(title.length).toBeLessThanOrEqual(60);
     expect(destinationSearchTitle("Great Smoky Mountains National Park").length).toBeLessThanOrEqual(60);
     expect(destinationSearchTitle("A Very Long Destination Name That Will Not Fit The Title Limit").length).toBeLessThanOrEqual(60);

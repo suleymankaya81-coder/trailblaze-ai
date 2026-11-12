@@ -113,7 +113,7 @@ export const Route = createFileRoute("/destinations/$slug/$region/$place/")({
   },
   head: ({ loaderData }) => {
     const d = loaderData?.dest;
-    if (!d) return { meta: [{ title: "Destination — MiniaLife" }] };
+    if (!d) return { meta: [{ title: "Destination — WildParkRoutes" }] };
     const title = destinationSearchTitle(d.name);
     const description = travelDescription(d, "destination", destinationSearchDescription(d.name, d.tagline, d.bestSeason));
     const pageUrl = `${SITE_ORIGIN}${destinationPath(d.slug)}`;

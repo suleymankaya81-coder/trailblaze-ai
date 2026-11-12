@@ -19,7 +19,7 @@ export const Route = createFileRoute("/$landing")({
     }
     throw notFound();
   },
-  head: () => ({ meta: [{ title: "Page not found — MiniaLife" }, { name: "robots", content: "noindex" }] }),
+  head: () => ({ meta: [{ title: "Page not found — WildParkRoutes" }, { name: "robots", content: "noindex" }] }),
   component: () => null,
   errorComponent: () => <p className="p-10 text-center">Something went wrong.</p>,
   notFoundComponent: LandingNotFound,

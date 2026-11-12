@@ -98,7 +98,7 @@ export function GearGuide({ config: c }: { config: GearGuideConfig }) {
           />
           <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink/85 via-ink/35 to-transparent" />
           <div className="container-page w-full pb-12 pt-20 text-off-white md:pb-14">
-            <p className="text-xs font-semibold uppercase">MiniaLife / The gear edit</p>
+            <p className="text-xs font-semibold uppercase">WildParkRoutes / The gear edit</p>
             <h1 className="mt-4 max-w-3xl font-serif text-4xl leading-tight md:text-6xl">
               <T>{c.title}</T>
             </h1>

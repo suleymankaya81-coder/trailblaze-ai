@@ -68,13 +68,13 @@ describe("buildDestinationJsonLd FAQs", () => {
 
   it("mirrors the visible FAQs as FAQPage", () => {
     const faqs = destinationFaqs(base);
-    const ld = buildDestinationJsonLd(dest, "https://minialife.com/destinations/test-place", faqs) as { "@graph": Record<string, unknown>[] };
+    const ld = buildDestinationJsonLd(dest, "https://wildparkroutes.com/destinations/test-place", faqs) as { "@graph": Record<string, unknown>[] };
     const faqPage = ld["@graph"].find((n) => n["@type"] === "FAQPage") as { mainEntity: { name: string }[] };
     expect(faqPage.mainEntity.map((e) => e.name)).toEqual(faqs.map((f) => f.q));
   });
 
   it("omits FAQPage when there are no answers", () => {
-    const ld = buildDestinationJsonLd(dest, "https://minialife.com/destinations/test-place", []) as { "@graph": Record<string, unknown>[] };
+    const ld = buildDestinationJsonLd(dest, "https://wildparkroutes.com/destinations/test-place", []) as { "@graph": Record<string, unknown>[] };
     expect(ld["@graph"].some((n) => n["@type"] === "FAQPage")).toBe(false);
   });
 });

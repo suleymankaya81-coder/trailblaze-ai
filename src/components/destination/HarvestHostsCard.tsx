@@ -58,7 +58,7 @@ export function HarvestHostsCard({ destinationName }: { destinationName: string 
           <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-muted-foreground">Traveling by RV near {destinationName}?</p>
           <h3 className="font-semibold text-foreground"><T>Stay overnight free at wineries, farms & breweries</T></h3>
           <p className="text-sm text-muted-foreground">
-            <T>Harvest Hosts membership: 5,000+ unique RV stops. MiniaLife readers get 20% off the first year.</T>
+            <T>Harvest Hosts membership: 5,000+ unique RV stops. WildParkRoutes readers get 20% off the first year.</T>
           </p>
         </div>
         <div className="flex shrink-0 flex-col items-start gap-2 md:items-end">
@@ -92,7 +92,7 @@ export function HarvestHostsOffer() {
   return (
     <div className="mt-3 rounded-md bg-secondary p-3">
       <p className="text-xs font-semibold text-foreground"><T>Stay overnight free at wineries, farms & breweries</T></p>
-      <p className="mt-1 text-xs text-muted-foreground"><T>5,000+ unique RV stops. MiniaLife readers get 20% off the first year.</T></p>
+      <p className="mt-1 text-xs text-muted-foreground"><T>5,000+ unique RV stops. WildParkRoutes readers get 20% off the first year.</T></p>
       <button type="button" onClick={copy} className="mt-2 inline-flex items-center gap-1.5 rounded-full border border-dashed border-border bg-card px-3 py-1 text-xs font-semibold text-foreground">
         {copied ? <Check className="h-3.5 w-3.5" /> : <Copy className="h-3.5 w-3.5" />}
         {copied ? "Copied" : `Code ${HARVEST_HOSTS_CODE}`}

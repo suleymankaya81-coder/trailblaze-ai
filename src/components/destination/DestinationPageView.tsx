@@ -486,7 +486,7 @@ function StayCard({
         )}
         {featured && (
           <span className="absolute left-0 top-4 rounded-r-full bg-ink/80 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-off-white">
-            <T>MiniaLife's pick</T>
+            <T>WildParkRoutes's pick</T>
           </span>
         )}
 

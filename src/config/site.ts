@@ -14,7 +14,7 @@ export const REDIRECT_HOSTS = [...AUTHORITY_HOSTS];
 /** After migration the old domain only forwards pages that still exist; everything else gets 410 there and never reaches the new domain. */
 export const LEGACY_HOSTS = MIGRATED ? ["minialife.com", "www.minialife.com"] : [];
 export const SITE_DOMAIN = new URL(SITE_ORIGIN).host;
-export const BRAND_NAME = "MiniaLife";
+export const BRAND_NAME = "WildParkRoutes";
 export const CONTACT_EMAIL = "info@minialife.com";
 
 /** Absolute URL for a site path ("/destinations/zion" → "https://…/destinations/zion"). */

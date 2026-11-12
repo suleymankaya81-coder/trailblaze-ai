@@ -66,7 +66,7 @@ const why = [
   { img: planImg, title: "Free trip plans", text: "Day-by-day itineraries you can use without an account." },
   { img: mapImg, title: "Real route maps", text: "Airport drives and stops drawn on an actual map." },
   { img: carImg, title: "Trusted partners", text: "Rentals, stays and tours from approved travel partners." },
-  { img: roadImg, title: "Independent guides", text: "Written by MiniaLife, not paid placements." },
+  { img: roadImg, title: "Independent guides", text: "Written by WildParkRoutes, not paid placements." },
 ];
 
 function HomePage() {
@@ -174,7 +174,7 @@ export function HomePageView({ homeDestinations, localSlugs }: { homeDestination
 
       <section className="section-y border-t border-border">
         <div className="container-page">
-          <SectionHead kicker="Why MiniaLife" title="Plan with confidence" />
+          <SectionHead kicker="Why WildParkRoutes" title="Plan with confidence" />
           <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {why.map((w) => <li key={w.title} className="flex items-start gap-4"><Thumb src={w.img} size={64} /><div><h3 className="text-lg"><T>{w.title}</T></h3><p className="mt-1 text-sm text-muted-foreground"><T>{w.text}</T></p></div></li>)}
           </ul>

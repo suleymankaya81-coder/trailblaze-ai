@@ -74,7 +74,7 @@ export const Route = createFileRoute("/destinations/$slug/$region/$place/$guide"
   },
   head: ({ loaderData }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Page not found — MiniaLife" }, { name: "robots", content: "noindex" }] };
+      return { meta: [{ title: "Page not found — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
     }
     const { page, h1, destination, sections } = loaderData.bundle;
     const faqs = landingFaqs(page.pageType, destination.name, loaderData.facts, sections);
@@ -96,7 +96,7 @@ export const Route = createFileRoute("/destinations/$slug/$region/$place/$guide"
         image: coverImage || undefined,
         dateModified: page.updatedAt,
         mainEntityOfPage: url,
-        publisher: { "@type": "Organization", name: "MiniaLife" },
+        publisher: { "@type": "Organization", name: "WildParkRoutes" },
         articleSection: sections.map((s) => s.heading),
       },
       { "@context": "https://schema.org", ...breadcrumbJsonLd(placeGuideCrumbs(destination, LANDING_TYPE_LABEL[page.pageType] ?? "Guide", page.path)) },

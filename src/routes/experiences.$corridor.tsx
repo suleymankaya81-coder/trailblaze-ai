@@ -14,10 +14,10 @@ import { hasViatorRating } from "@/lib/affiliates/viatorDisplay";
 export const Route = createFileRoute("/experiences/$corridor")({
   beforeLoad: ({ params }) => { const c = getCorridor(params.corridor); if (!c || c.pilot) throw notFound(); },
   head: () => ({ meta: [
-    { title: "Gateway Road Trip Viator Experiences — MiniaLife" },
+    { title: "Gateway Road Trip Viator Experiences — WildParkRoutes" },
     { name: "description", content: "Current Viator experiences along this gateway road trip, with provider photos and booking links." },
-    { property: "og:title", content: "Gateway Road Trip Viator Experiences — MiniaLife" },
-    { property: "og:description", content: "Provider-sourced tours along MiniaLife gateway road trips." },
+    { property: "og:title", content: "Gateway Road Trip Viator Experiences — WildParkRoutes" },
+    { property: "og:description", content: "Provider-sourced tours along WildParkRoutes gateway road trips." },
     { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" },
     { name: "robots", content: "noindex, nofollow, nosnippet" },
   ] }),

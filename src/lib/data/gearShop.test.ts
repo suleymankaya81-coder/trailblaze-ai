@@ -4,7 +4,7 @@ import { gearShopLink } from "./rockbrosGear";
 
 describe("gear shop picks", () => {
   it("shows six picks", () => expect(shopPicks).toHaveLength(6));
-  it("links every pick through Awin with MiniaLife and ROCKBROS ids", () => {
+  it("links every pick through Awin with WildParkRoutes and ROCKBROS ids", () => {
     for (const { product } of shopPicks) {
       const url = gearShopLink(product);
       expect(url).toContain("awin1.com");

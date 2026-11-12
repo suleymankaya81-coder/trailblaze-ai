@@ -42,7 +42,7 @@ const loadPage = async ({ params }: { params: { slug: string } }) => {
 export const Route = createFileRoute("/no-reservation/$slug")({
   loader: loadPage,
   head: ({ loaderData }) => {
-    if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
+    if (!loaderData) return { meta: [{ title: "Unavailable — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
     const { dest, faqs, url } = loaderData;
     const title = noReservationTitle(dest);
     const description = travelDescription(dest, "no-reservation", noReservationDescription(dest));

@@ -91,7 +91,7 @@ export function legacyResponse(url: URL): Response | null {
   if (MIGRATED && !LEGACY_HOSTS.includes(host)) return null;
   if (GONE_PREFIXES.some((p) => path === p || path.startsWith(p + "/"))) {
     return new Response(
-      '<!doctype html><html><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>Page removed — MiniaLife</title></head><body style="font-family:sans-serif;padding:3rem;text-align:center"><h1>This page has been permanently removed</h1><p><a href="/destinations">Explore our destination guides</a></p></body></html>',
+      '<!doctype html><html><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>Page removed — WildParkRoutes</title></head><body style="font-family:sans-serif;padding:3rem;text-align:center"><h1>This page has been permanently removed</h1><p><a href="/destinations">Explore our destination guides</a></p></body></html>',
       {
         status: 410,
         headers: {

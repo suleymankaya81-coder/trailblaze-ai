@@ -27,7 +27,7 @@ export function StartHere({ parkImage }: { parkImage?: string }) {
     <section id="how-it-works" className="section-y border-b border-border bg-card">
       <div className="container-page grid gap-10 lg:grid-cols-[1fr_2fr] lg:gap-16">
         <div>
-          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-sage-deep"><T>What is MiniaLife?</T></p>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-sage-deep"><T>What is WildParkRoutes?</T></p>
           <h2 className="mt-2 text-[26px] leading-tight md:text-4xl"><T>Free U.S. road trip plans, ready to book.</T></h2>
           <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground"><T>We write independent self-drive guides for national parks and outdoor places. You pick the trip; you book directly with trusted travel partners.</T></p>
         </div>

@@ -12,7 +12,7 @@ import { breadcrumbScript } from "@/lib/seo/breadcrumbs";
 import { hreflangLinks } from "@/lib/seo/hreflang";
 import roadImg from "@/assets/thumbs/road.jpg";
 
-const title = "USA-Roadtrips: Rundreisen durch Nationalparks | MiniaLife";
+const title = "USA-Roadtrips: Rundreisen durch Nationalparks | WildParkRoutes";
 const description = "Rundreisen mit dem Mietwagen oder Wohnmobil durch die Nationalparks der USA – mit Stopps, empfohlenen Tagen und Entfernungen.";
 const crumbs = [HOME_DE, ROAD_TRIPS_DE];
 

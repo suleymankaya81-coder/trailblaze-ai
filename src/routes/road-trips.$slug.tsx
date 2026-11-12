@@ -43,7 +43,7 @@ const loadPage = async ({ params }: { params: { slug: string } }) => {
 export const Route = createFileRoute("/road-trips/$slug")({
   loader: loadPage,
   head: ({ loaderData }) => {
-    if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
+    if (!loaderData) return { meta: [{ title: "Unavailable — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
     const { loop, stops, faqs, url } = loaderData;
     const title = loopSearchTitle(loop.slug, loop.title, stops.length);
     const description = travelDescription({ name: loop.title, region: loop.region, tripDurationDays: `${stops.reduce((sum, s) => sum + suggestedDays(s.tripDurationDays), 0)} days`, bestSeason: stops[0]?.bestSeason }, "road-trips", loopSearchDescription(loop.slug, loop.title, stops.map((s) => s.name)));

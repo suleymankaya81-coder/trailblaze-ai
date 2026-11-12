@@ -18,7 +18,7 @@ export const Route = createFileRoute("/trip-builder/$slug")({
   // Personal tool: never indexed; canonical points at the destination guide.
   head: ({ loaderData, params }) => {
     const name = loaderData?.name ?? "your trip";
-    const title = `Customize your ${name} road trip — MiniaLife`;
+    const title = `Customize your ${name} road trip — WildParkRoutes`;
     const description = `Reorder stops, change days and get Google Maps and GPX routes plus campsite links for ${name}.`;
     return {
       meta: [

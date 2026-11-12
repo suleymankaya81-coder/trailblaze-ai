@@ -27,7 +27,7 @@ const commonFaqs = {
   tested: {
     question: "Are these products independently tested?",
     answer:
-      "No. This is a catalog-based editorial selection, not a hands-on review. Specifications and performance claims come from the ROCKBROS listing and have not been independently tested by MiniaLife.",
+      "No. This is a catalog-based editorial selection, not a hands-on review. Specifications and performance claims come from the ROCKBROS listing and have not been independently tested by WildParkRoutes.",
   },
   price: {
     question: "Are prices and stock guaranteed?",
@@ -41,7 +41,7 @@ export const gearGuides: Record<string, GearGuideConfig> = {
     slug: "bikepacking",
     path: "/gear/7-bikepacking-essentials",
     title: "7 Bikepacking Essentials",
-    metaTitle: "7 Bikepacking Essentials from ROCKBROS | MiniaLife",
+    metaTitle: "7 Bikepacking Essentials from ROCKBROS | WildParkRoutes",
     description:
       "Compare seven ROCKBROS bikepacking picks: bags, a front light, a bottle cage and a camping pump, with catalog prices and practical fit notes.",
     lede: "Thoughtful storage, light and little comforts for your next overnight ride. A catalog-based ROCKBROS edit.",
@@ -64,7 +64,7 @@ export const gearGuides: Record<string, GearGuideConfig> = {
     slug: "accessories",
     path: "/gear/best-cycling-accessories",
     title: "Best Cycling Accessories",
-    metaTitle: "Best Cycling Accessories from ROCKBROS | MiniaLife",
+    metaTitle: "Best Cycling Accessories from ROCKBROS | WildParkRoutes",
     description:
       "Seven ROCKBROS cycling accessories for safer, more comfortable rides: sunglasses, gloves, a tail light, mirror, bell, phone mount and lock, with catalog prices.",
     lede: "Small upgrades that make every ride safer and more comfortable. A catalog-based ROCKBROS edit.",
@@ -105,7 +105,7 @@ export const gearGuides: Record<string, GearGuideConfig> = {
     slug: "repair",
     path: "/gear/bike-repair-kit-essentials",
     title: "Bike Repair Kit Essentials",
-    metaTitle: "Bike Repair Kit Essentials from ROCKBROS | MiniaLife",
+    metaTitle: "Bike Repair Kit Essentials from ROCKBROS | WildParkRoutes",
     description:
       "Seven ROCKBROS repair picks for the road and the home workshop: a repair kit, multi-tool, patch kit, tire lever, mini pump, tool set and repair stand.",
     lede: "Be ready for the unexpected — on the trail and at home. A catalog-based ROCKBROS edit.",

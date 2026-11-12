@@ -43,7 +43,7 @@ const loadPage = async ({ params }: { params: { slug: string } }) => {
 export const Route = createFileRoute("/corridors/$slug")({
   loader: loadPage,
   head: ({ loaderData }) => {
-    if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
+    if (!loaderData) return { meta: [{ title: "Unavailable — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
     const { corridor, url, stops } = loaderData;
     const image = stops[1]?.heroImage ?? stops[0]?.heroImage;
     const title = corridorPageTitle(corridor);

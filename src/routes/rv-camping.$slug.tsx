@@ -47,7 +47,7 @@ const loadPage = async ({ params }: { params: { slug: string } }) => {
 export const Route = createFileRoute("/rv-camping/$slug")({
   loader: loadPage,
   head: ({ loaderData }) => {
-    if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
+    if (!loaderData) return { meta: [{ title: "Unavailable — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
     const { dest, faqs, url } = loaderData;
     const title = rvCampingTitle(dest);
     const description = travelDescription(dest, "rv-camping", rvCampingDescription(dest));

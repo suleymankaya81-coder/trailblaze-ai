@@ -29,7 +29,7 @@ type Tag = Record<string, unknown>;
 export function germanTravelHead(head: { meta?: Tag[]; [key: string]: unknown }, facts: TravelFacts, family: Family) {
   const topic = { destination: "Reiseführer", "fly-and-drive": "Flughafen & Anreise", "no-reservation": "Reservierung & Einlass", "rv-camping": "Wohnmobil & Camping", "road-trips": "Roadtrip", corridors: "Roadtrip ab Flughafen" }[family];
   const name = tp("de", facts.name);
-  const title = fitText([`${name}: ${topic} — MiniaLife`, `${name}: ${topic}`, name], TITLE_MAX);
+  const title = fitText([`${name}: ${topic} — WildParkRoutes`, `${name}: ${topic}`, name], TITLE_MAX);
   const description = travelDescription(facts, family, `${facts.name}: ${topic}.`, "de");
   return { ...head, meta: (head.meta ?? []).map(tag => typeof tag.title === "string" ? { ...tag, title } : tag.property === "og:title" ? { ...tag, content: title } : tag.name === "description" || tag.property === "og:description" ? { ...tag, content: description } : tag) };
 }

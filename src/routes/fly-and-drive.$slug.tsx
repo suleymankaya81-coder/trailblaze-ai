@@ -34,7 +34,7 @@ const loadPage = async ({ params }: { params: { slug: string } }) => {
 export const Route = createFileRoute("/fly-and-drive/$slug")({
   loader: loadPage,
   head: ({ loaderData }) => {
-    if (!loaderData) return { meta: [{ title: "Unavailable — MiniaLife" }, { name: "robots", content: "noindex" }] };
+    if (!loaderData) return { meta: [{ title: "Unavailable — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
     const { dest, faqs, url } = loaderData;
     const title = flyDriveTitle(dest);
     const description = travelDescription(dest, "fly-and-drive", flyDriveDescription(dest));

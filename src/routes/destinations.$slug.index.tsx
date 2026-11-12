@@ -19,7 +19,7 @@ export const Route = createFileRoute("/destinations/$slug/")({
     return { country: params.slug, regions };
   },
   head: ({ loaderData }) => {
-    if (!loaderData) return { meta: [{ title: "Destination not found — MiniaLife" }, { name: "robots", content: "noindex" }] };
+    if (!loaderData) return { meta: [{ title: "Destination not found — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
     const name = COUNTRIES[loaderData.country].name;
     const total = loaderData.regions.reduce((n, r) => n + r.count, 0);
     const title = `${name} National Parks & Road Trip Destinations by State`;

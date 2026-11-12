@@ -11,7 +11,7 @@ import { DESTINATIONS_DE, HOME_DE, deMeta } from "@/lib/i18n/deSeo";
 import { breadcrumbScript } from "@/lib/seo/breadcrumbs";
 import { hreflangLinks } from "@/lib/seo/hreflang";
 
-const title = "Nationalparks USA: Reisepläne auf Deutsch | MiniaLife";
+const title = "Nationalparks USA: Reisepläne auf Deutsch | WildParkRoutes";
 const description = "Reisepläne für die beliebtesten Nationalparks der USA: Tagesrouten, beste Reisezeit, Reservierungen und Tipps vor Ort – auf Deutsch.";
 const crumbs = [HOME_DE, DESTINATIONS_DE];
 

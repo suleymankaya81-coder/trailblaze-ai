@@ -6,15 +6,15 @@ import { StaticPageLayout } from "@/components/site/StaticPageLayout";
 export const Route = createFileRoute("/affiliate-disclosure")({
   head: () => ({
     meta: [
-      { title: "Affiliate Disclosure — MiniaLife" },
+      { title: "Affiliate Disclosure — WildParkRoutes" },
       {
         name: "description",
         content:
-          "How MiniaLife makes money: affiliate commissions on bookings and gear purchases, at no extra cost to you.",
+          "How WildParkRoutes makes money: affiliate commissions on bookings and gear purchases, at no extra cost to you.",
       },
       { property: "og:url", content: `${SITE_ORIGIN}/affiliate-disclosure` },
-      { property: "og:title", content: "Affiliate Disclosure — MiniaLife" },
-      { property: "og:description", content: "How MiniaLife earns commissions through partner links without adding to your booking price." },
+      { property: "og:title", content: "Affiliate Disclosure — WildParkRoutes" },
+      { property: "og:description", content: "How WildParkRoutes earns commissions through partner links without adding to your booking price." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
@@ -28,13 +28,13 @@ function AffiliateDisclosurePage() {
     <StaticPageLayout
       eyebrow="Transparency"
       title="Affiliate Disclosure"
-      lede="MiniaLife may earn a commission when you book or purchase through links on this site, at no extra cost to you."
+      lede="WildParkRoutes may earn a commission when you book or purchase through links on this site, at no extra cost to you."
       updated="October 25, 2026"
     >
       <section>
         <h2>How this works</h2>
         <p>
-          MiniaLife currently earns commissions through Harvest Hosts and RoverPass
+          WildParkRoutes currently earns commissions through Harvest Hosts and RoverPass
           (via Awin), Vrbo and Expedia
           (via the Expedia Group Travel Creator Program), and travel brands available through
           Travelpayouts: Aviasales, Klook, Tiqets, Go City,
@@ -63,7 +63,7 @@ function AffiliateDisclosurePage() {
           links open in a new tab; affiliate tracking may record a referral when you click.
         </p>
         <p>
-          Prices and availability shown on MiniaLife are estimates gathered at the time of
+          Prices and availability shown on WildParkRoutes are estimates gathered at the time of
           research. The partner's own site is always the source of truth for current pricing,
           availability, and cancellation terms.
         </p>
@@ -83,7 +83,7 @@ function AffiliateDisclosurePage() {
       <section>
         <h2>Why we do this</h2>
         <p>
-          Affiliate commissions are how MiniaLife stays free to use. They let us keep researching
+          Affiliate commissions are how WildParkRoutes stays free to use. They let us keep researching
           destinations, comparing travel options, and writing route guides without charging you a
           subscription or gating content behind a paywall.
         </p>
@@ -92,7 +92,7 @@ function AffiliateDisclosurePage() {
       <section>
         <h2>Our editorial standards</h2>
         <p>
-          Recommendations on MiniaLife are based on our own research into location, reviews, and
+          Recommendations on WildParkRoutes are based on our own research into location, reviews, and
           fit for the trip type we're covering — not on which partner pays the highest commission.
           Whether a stay, rental, or activity earns us a commission has no bearing on whether it
           appears on the site or how it's described. If a link isn't yet bookable, the button says
@@ -104,7 +104,7 @@ function AffiliateDisclosurePage() {
         <h2>Where you'll see affiliate links</h2>
         <p>
           Affiliate links appear alongside flights, vehicle rentals, stays, tours and Curated Trip Essentials on travel pages. Outbound links open in a new tab so
-          you never lose your place on MiniaLife.
+          you never lose your place on WildParkRoutes.
         </p>
       </section>
 

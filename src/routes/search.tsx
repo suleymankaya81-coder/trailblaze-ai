@@ -27,15 +27,15 @@ export const Route = createFileRoute("/search")({
   },
   head: () => ({
     meta: [
-      { title: "Search Destinations — MiniaLife" },
+      { title: "Search Destinations — WildParkRoutes" },
       {
         name: "description",
         content:
-          "Search MiniaLife for a national park, lake, desert or road-trip destination and open its full travel guide.",
+          "Search WildParkRoutes for a national park, lake, desert or road-trip destination and open its full travel guide.",
       },
       // Query-driven, thin result page — kept out of search indexes.
       { name: "robots", content: "noindex, follow" },
-      { property: "og:title", content: "Search Destinations — MiniaLife" },
+      { property: "og:title", content: "Search Destinations — WildParkRoutes" },
       {
         property: "og:description",
         content: "Find the outdoor destination you're planning and open its full guide.",

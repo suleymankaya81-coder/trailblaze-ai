@@ -15,7 +15,7 @@ export const Route = createFileRoute("/destinations/$slug/$region/")({
     return { country: params.slug, region: params.region, ...data };
   },
   head: ({ loaderData }) => {
-    if (!loaderData) return { meta: [{ title: "Region not found — MiniaLife" }, { name: "robots", content: "noindex" }] };
+    if (!loaderData) return { meta: [{ title: "Region not found — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
     const { name, places, country, region } = loaderData;
     const title = `${name} National Parks & Outdoor Trips: ${places.length} Destinations`;
     const description = `Road trip and park guides for ${name}, ${COUNTRIES[country].name}: ${places.slice(0, 4).map((p) => p.name).join(", ")} and more — airports, rentals and when to go.`.slice(0, 160);

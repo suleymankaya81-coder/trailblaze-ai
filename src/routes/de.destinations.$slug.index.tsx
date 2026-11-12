@@ -18,7 +18,7 @@ export const Route = createFileRoute("/de/destinations/$slug/")({
     return { country: params.slug, regions: await getCountryRegions({ data: { country: params.slug } }) };
   },
   head: ({ loaderData }) => {
-    if (!loaderData) return { meta: [{ title: "Nicht verfügbar — MiniaLife" }, { name: "robots", content: "noindex" }] };
+    if (!loaderData) return { meta: [{ title: "Nicht verfügbar — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
     const name = COUNTRIES[loaderData.country].nameDe;
     const total = loaderData.regions.reduce((n, r) => n + r.count, 0);
     const title = `${name}: Nationalparks & Roadtrip-Ziele nach Bundesstaat`;

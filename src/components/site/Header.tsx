@@ -2,7 +2,7 @@ import { T } from "@/lib/i18n";
 import { useState } from "react";
 import { Link } from "@/components/site/LocalLink";
 import { Menu, X } from "lucide-react";
-import logoStacked from "@/assets/logos/minialife-stacked-mixedcase-trimmed.png";
+import { Wordmark } from "@/components/site/Wordmark";
 import { useLocale, t, type DictKey } from "@/lib/i18n";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
@@ -25,8 +25,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur">
       <div className="container-page flex h-20 items-center justify-between gap-6 md:h-24">
-        <Link to={home} className="flex items-center text-foreground" aria-label="MiniaLife home">
-          <img src={logoStacked} alt="MiniaLife" width={598} height={737} className="h-16 w-auto md:h-20" />
+        <Link to={home} className="flex items-center text-foreground" aria-label="WildParkRoutes home">
+          <Wordmark />
         </Link>
         <nav className="hidden flex-1 items-center justify-end gap-7 text-sm font-medium md:flex">
           {items.map((n) => (

@@ -26,7 +26,7 @@ describe("fly & drive slugs", () => {
 describe("fly & drive search metadata", () => {
   it("leads with the 'closest airport' phrase and the airport code, within limits", () => {
     const title = flyDriveTitle(ys);
-    expect(title).toBe("Closest Airport to Yellowstone: Fly into BZN — MiniaLife");
+    expect(title).toBe("Closest Airport to Yellowstone (BZN) — WildParkRoutes");
     expect(title.length).toBeLessThanOrEqual(60);
     const description = flyDriveDescription(ys);
     expect(description).toContain("closest airport to Yellowstone");

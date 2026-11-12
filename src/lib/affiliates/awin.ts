@@ -1,6 +1,6 @@
 import type { AwinOffer } from "./types";
 
-// MiniaLife publisher account. Public — appears in every Awin link.
+// WildParkRoutes publisher account. Public — appears in every Awin link.
 export const AWIN_PUBLISHER_ID = "3115962";
 
 // Awin tracked deep link. Until a programme approves us, Awin still forwards
