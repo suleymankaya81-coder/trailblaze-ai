@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 
@@ -20,13 +21,13 @@ export const Route = createFileRoute("/contact")({
         name: "description",
         content: "Get in touch with the MiniaLife team — broken links, destination requests, or partnership questions.",
       },
-      { property: "og:url", content: "https://minialife.com/contact" },
+      { property: "og:url", content: `${SITE_ORIGIN}/contact` },
       { property: "og:title", content: "Contact — MiniaLife" },
       { property: "og:description", content: "Contact MiniaLife about destination requests, broken links or partnerships." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
-    links: [{ rel: "canonical", href: "https://minialife.com/contact" }],
+    links: [{ rel: "canonical", href: `${SITE_ORIGIN}/contact` }],
   }),
   component: ContactPage,
 });

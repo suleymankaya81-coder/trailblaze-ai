@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { createFileRoute, notFound, useLoaderData } from "@tanstack/react-router";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
@@ -25,7 +26,7 @@ export const Route = createFileRoute("/trip-builder/$slug")({
         { property: "og:title", content: title }, { property: "og:description", content: description },
         { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" },
       ],
-      links: [{ rel: "canonical", href: `https://minialife.com/destinations/${params.slug}` }],
+      links: [{ rel: "canonical", href: `${SITE_ORIGIN}/destinations/${params.slug}` }],
     };
   },
   component: BuilderPage,

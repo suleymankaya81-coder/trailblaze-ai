@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { T } from "@/lib/i18n";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { createFileRoute } from "@tanstack/react-router";
@@ -17,11 +18,11 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: description },
       { property: "og:title", content: "About MiniaLife — Outdoor Travel & Road Trip Guides" },
       { property: "og:description", content: description },
-      { property: "og:url", content: "https://minialife.com/about" },
+      { property: "og:url", content: `${SITE_ORIGIN}/about` },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
-    links: [{ rel: "canonical", href: "https://minialife.com/about" }, ...deAlternates("https://minialife.com/about")],
+    links: [{ rel: "canonical", href: `${SITE_ORIGIN}/about` }, ...deAlternates(`${SITE_ORIGIN}/about`)],
   }),
   component: AboutPage,
 });

@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { T, useTp } from "@/lib/i18n";
 import { hreflangLinks } from "@/lib/seo/hreflang";
 import { createFileRoute } from "@tanstack/react-router";
@@ -43,11 +44,11 @@ export const Route = createFileRoute("/")({
       { name: "description", content: HUB_SEO.home.description },
       { property: "og:title", content: HUB_SEO.home.title },
       { property: "og:description", content: HUB_SEO.home.description },
-      { property: "og:url", content: "https://minialife.com/" },
+      { property: "og:url", content: `${SITE_ORIGIN}/` },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://minialife.com/" }, ...hreflangLinks("/", ["en", "de"])],
+    links: [{ rel: "canonical", href: `${SITE_ORIGIN}/` }, ...hreflangLinks("/", ["en", "de"])],
   }),
   component: HomePage,
 });

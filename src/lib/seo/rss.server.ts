@@ -1,8 +1,9 @@
+import { SITE_ORIGIN } from "@/config/site";
 // Server-only: Pinterest RSS feeds built live from published rows + branded pin cards.
 import { type PinKind, isBroken, pinDescription, pinTitle } from "./pinCopy";
 import { FEEDS, type Feed, type FeedItem, type StoredPin, feedForPath, renderRss, selectItems, storedPinItem } from "./rss";
 
-const BASE = "https://minialife.com";
+const BASE = SITE_ORIGIN;
 
 async function rest<T>(query: string): Promise<T[]> {
   const url = process.env.SUPABASE_URL;

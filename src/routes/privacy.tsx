@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { StaticPageLayout } from "@/components/site/StaticPageLayout";
@@ -11,13 +12,13 @@ export const Route = createFileRoute("/privacy")({
         content:
           "How MiniaLife collects, uses, and protects your information — including analytics and click tracking on affiliate links.",
       },
-      { property: "og:url", content: "https://minialife.com/privacy" },
+      { property: "og:url", content: `${SITE_ORIGIN}/privacy` },
       { property: "og:title", content: "Privacy Policy — MiniaLife" },
       { property: "og:description", content: "How MiniaLife handles your information, analytics and partner-link tracking." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
-    links: [{ rel: "canonical", href: "https://minialife.com/privacy" }],
+    links: [{ rel: "canonical", href: `${SITE_ORIGIN}/privacy` }],
   }),
   component: PrivacyPage,
 });

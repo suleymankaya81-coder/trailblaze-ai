@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 // Addresses from the previous site design (deleted on purpose). Answer them
 // with 301 (clear modern equivalent) or 410 Gone so Google drops them fast.
 const REDIRECTS: Record<string, string> = {
@@ -36,7 +37,7 @@ export function legacyResponse(url: URL): Response | null {
   if (to) {
     return new Response(null, {
       status: 301,
-      headers: { location: `https://minialife.com${to}`, "cache-control": "public, max-age=86400" },
+      headers: { location: `${SITE_ORIGIN}${to}`, "cache-control": "public, max-age=86400" },
     });
   }
   if (GONE_PREFIXES.some((p) => path === p || path.startsWith(p + "/"))) {

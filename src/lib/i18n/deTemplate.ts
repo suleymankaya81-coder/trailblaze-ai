@@ -1,7 +1,8 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { tp } from "./index";
 import { hreflangLinks } from "@/lib/seo/hreflang";
 
-const SITE = "https://minialife.com";
+const SITE = SITE_ORIGIN;
 type Tag = Record<string, unknown>;
 type Head = { meta?: Tag[]; links?: Tag[]; scripts?: Tag[] } | undefined;
 

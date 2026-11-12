@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { createFileRoute } from "@tanstack/react-router";
 import { GearGuide } from "@/components/gear/GearGuide";
 import { gearGuides } from "@/lib/data/gearGuides";
@@ -5,7 +6,7 @@ import { GEAR_ARTICLE_SEO } from "@/lib/seo/gearSeo";
 
 const c = gearGuides.accessories;
 const seo = GEAR_ARTICLE_SEO.accessories;
-const url = `https://minialife.com${c.path}`;
+const url = `${SITE_ORIGIN}${c.path}`;
 
 export const Route = createFileRoute("/gear/best-cycling-accessories")({
   head: () => ({

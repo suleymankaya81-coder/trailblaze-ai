@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { travelDescription } from "@/lib/seo/travelMetadata";
 import { DestinationPageView } from "@/components/destination/DestinationPageView";
@@ -46,7 +47,7 @@ export const Route = createFileRoute("/de/destinations/$slug")({
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Nicht verfügbar — MiniaLife" }, { name: "robots", content: "noindex" }] };
     const { tr, dest } = loaderData;
-    const url = `https://minialife.com/de/destinations/${dest.slug}`;
+    const url = `${SITE_ORIGIN}/de/destinations/${dest.slug}`;
     const crumbs = [HOME_DE, DESTINATIONS_DE, { name: tr.name, path: `/de/destinations/${dest.slug}` }];
     return {
       meta: [

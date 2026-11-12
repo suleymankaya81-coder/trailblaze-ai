@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { createFileRoute } from "@tanstack/react-router";
 import { GearShopPage } from "@/components/gear/GearShopPage";
@@ -15,10 +16,10 @@ export const Route = createFileRoute("/gear/")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://minialife.com/gear" },
+      { property: "og:url", content: `${SITE_ORIGIN}/gear` },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://minialife.com/gear" }, ...deAlternates("https://minialife.com/gear")],
+    links: [{ rel: "canonical", href: `${SITE_ORIGIN}/gear` }, ...deAlternates(`${SITE_ORIGIN}/gear`)],
     scripts: [
       {
         type: "application/ld+json",

@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { DestinationPageView } from "@/components/destination/DestinationPageView";
 import { travelDescription } from "@/lib/seo/travelMetadata";
 import { hreflangLinks } from "@/lib/seo/hreflang";
@@ -106,7 +107,7 @@ export const Route = createFileRoute("/destinations/$slug")({
     if (!d) return { meta: [{ title: "Destination — MiniaLife" }] };
     const title = destinationSearchTitle(d.name);
     const description = travelDescription(d, "destination", destinationSearchDescription(d.name, d.tagline, d.bestSeason));
-    const pageUrl = `https://minialife.com/destinations/${d.slug}`;
+    const pageUrl = `${SITE_ORIGIN}/destinations/${d.slug}`;
     const jsonLd = buildDestinationJsonLd(d, pageUrl);
     return {
       meta: [

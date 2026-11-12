@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { CORRIDORS } from "@/lib/seo/corridors";
 // Server-only: sitemap index at /sitemap.xml plus child sitemaps under
 // /sitemaps/*.xml, built live from published rows — never edited by hand.
@@ -8,7 +9,7 @@ import { flyDriveSlug } from "./flyDrive";
 import { LOOPS, isNoReservationEligible, isRvEligible } from "./guides";
 
 const STATIC_PATHS = ["/", "/destinations", "/about", "/contact", "/privacy", "/terms", "/affiliate-disclosure", "/road-trips", "/corridors", "/trip-guides", "/fly-and-drive", "/rv-camping", "/no-reservation", ...CORRIDORS.filter((c) => !c.pilot).map((c) => `/corridors/${c.slug}`), "/gear", "/gear/7-bikepacking-essentials", "/gear/best-cycling-accessories", "/gear/bike-repair-kit-essentials", ...["camping", "hiking", "cycling", "lights", "apparel", "eyewear", "bags"].map((k) => `/gear/category/${k}`)];
-const BASE_URL = "https://minialife.com";
+const BASE_URL = SITE_ORIGIN;
 const GUIDE_TYPES = ["best-time-to-visit", "things-to-do", "itinerary", "glamping"] as const;
 
 type Url = { loc: string; lastmod?: string; images?: string[] };

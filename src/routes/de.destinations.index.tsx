@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@/components/site/LocalLink";
 import { Header } from "@/components/site/Header";
@@ -18,12 +19,12 @@ export const Route = createFileRoute("/de/destinations/")({
   loader: () => listTranslatedDestinations({ data: { locale: "de" } }),
   head: ({ loaderData }) => ({
     meta: [
-      ...deMeta(title, description, "https://minialife.com/de/destinations"),
+      ...deMeta(title, description, `${SITE_ORIGIN}/de/destinations`),
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       ...(loaderData?.[0]?.heroImage?.startsWith("https://") ? [{ property: "og:image", content: loaderData[0].heroImage }, { name: "twitter:image", content: loaderData[0].heroImage }] : []),
     ],
-    links: [{ rel: "canonical", href: "https://minialife.com/de/destinations" }, ...hreflangLinks("/destinations", ["en", "de"])],
+    links: [{ rel: "canonical", href: `${SITE_ORIGIN}/de/destinations` }, ...hreflangLinks("/destinations", ["en", "de"])],
     scripts: [breadcrumbScript(crumbs)],
   }),
   component: Page,

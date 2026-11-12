@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { createFileRoute } from "@tanstack/react-router";
 import { listTranslatedDestinations } from "@/lib/data/translations.functions";
 import { getHomepageDestinations } from "@/lib/data/destinations.functions";
@@ -18,11 +19,11 @@ export const Route = createFileRoute("/de/")({
   },
   head: () => ({
     meta: [
-      ...deMeta(title, description, "https://minialife.com/de"),
+      ...deMeta(title, description, `${SITE_ORIGIN}/de`),
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://minialife.com/de" }, ...hreflangLinks("/", ["en", "de"])],
+    links: [{ rel: "canonical", href: `${SITE_ORIGIN}/de` }, ...hreflangLinks("/", ["en", "de"])],
   }),
   component: Page,
 });

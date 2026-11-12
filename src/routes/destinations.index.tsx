@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { T } from "@/lib/i18n";
 import { hreflangLinks } from "@/lib/seo/hreflang";
 import { createFileRoute } from "@tanstack/react-router";
@@ -52,9 +53,9 @@ export const Route = createFileRoute("/destinations/")({
         ...(loaderData?.destinations[0]?.heroImage?.startsWith("https://") ? [{ property: "og:image", content: loaderData.destinations[0].heroImage }, { name: "twitter:image", content: loaderData.destinations[0].heroImage }] : []),
         // Filtered and paginated variants are duplicates of the main list.
         ...(isFiltered ? [{ name: "robots", content: "noindex, follow" }] : []),
-        { property: "og:url", content: "https://minialife.com/destinations" },
+        { property: "og:url", content: `${SITE_ORIGIN}/destinations` },
       ],
-      links: [{ rel: "canonical", href: "https://minialife.com/destinations" }, ...(isFiltered ? [] : hreflangLinks("/destinations", ["en", "de"]))],
+      links: [{ rel: "canonical", href: `${SITE_ORIGIN}/destinations` }, ...(isFiltered ? [] : hreflangLinks("/destinations", ["en", "de"]))],
       scripts: [breadcrumbScript([HOME, DESTINATIONS])],
     };
   },

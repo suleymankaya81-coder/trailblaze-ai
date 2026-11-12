@@ -1,6 +1,7 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { DEFAULT_LOCALE, LOCALES, localizePath, type Locale } from "@/lib/i18n/locales";
 
-const BASE = "https://minialife.com";
+const BASE = SITE_ORIGIN;
 const abs = (p: string) => (p === "/" ? `${BASE}/` : `${BASE}${p}`);
 
 /**

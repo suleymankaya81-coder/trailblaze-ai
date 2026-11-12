@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { T } from "@/lib/i18n";
 import type * as React from "react";
 import { RockbrosCode } from "@/components/shared/RockbrosCode";
@@ -20,7 +21,7 @@ export const Route = createFileRoute("/gear/category/$key")({
   head: ({ params, loaderData }) => {
     const meta = isShopCategory(params.key) ? shopCategoryMeta[params.key] : null;
     if (!meta || !loaderData) return { meta: [{ title: "Gear category — MiniaLife" }, { name: "robots", content: "noindex" }] };
-    const url = `https://minialife.com/gear/category/${params.key}`;
+    const url = `${SITE_ORIGIN}/gear/category/${params.key}`;
     const seo = GEAR_CATEGORY_SEO[params.key as keyof typeof GEAR_CATEGORY_SEO];
     const title = seo.title;
     const description = seo.description;

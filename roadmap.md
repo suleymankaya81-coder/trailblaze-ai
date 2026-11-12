@@ -1,3 +1,10 @@
+## November 12 domain & international URL plan (Bölüm 2)
+- [x] Step 1: central site config; all hard-coded origins in app code use it.
+- [x] Step 2: country_code/region_slug/currency on destinations + regions table (51 US regions).
+- [x] Step 3: shared address builder with tests.
+- [ ] Steps 4+5: nested country/region pages and moving destination/guide addresses with 301 map (next part).
+- [ ] Steps 6-9: country-aware partners, split sitemaps, migration day, final checks.
+
 ## November 11 daily Maps and travel metadata
 - [x] Mobile-safe segmentation: three intermediate waypoints, overlapping parts, no silent truncation; Acadia day two preserves its independent endpoints in EN/DE.
 - [x] Collect all 500 public destinations / 1512 days / 3039 stops once into a canonical query/source-coordinate cache, with a missing-coordinate report and no per-visit lookup.

@@ -125,7 +125,9 @@ export type Database = {
           best_season: string | null
           best_seasons: string[]
           camping_score: number | null
+          country_code: string
           created_at: string
+          currency: string
           destination_type: string | null
           drive_miles: number | null
           drive_minutes: number | null
@@ -152,6 +154,7 @@ export type Database = {
           primary_keyword: string | null
           recommended_duration: string | null
           region: string | null
+          region_slug: string | null
           relevance: Json
           scenic_score: number | null
           secondary_keywords: string[]
@@ -178,7 +181,9 @@ export type Database = {
           best_season?: string | null
           best_seasons?: string[]
           camping_score?: number | null
+          country_code?: string
           created_at?: string
+          currency?: string
           destination_type?: string | null
           drive_miles?: number | null
           drive_minutes?: number | null
@@ -205,6 +210,7 @@ export type Database = {
           primary_keyword?: string | null
           recommended_duration?: string | null
           region?: string | null
+          region_slug?: string | null
           relevance?: Json
           scenic_score?: number | null
           secondary_keywords?: string[]
@@ -231,7 +237,9 @@ export type Database = {
           best_season?: string | null
           best_seasons?: string[]
           camping_score?: number | null
+          country_code?: string
           created_at?: string
+          currency?: string
           destination_type?: string | null
           drive_miles?: number | null
           drive_minutes?: number | null
@@ -258,6 +266,7 @@ export type Database = {
           primary_keyword?: string | null
           recommended_duration?: string | null
           region?: string | null
+          region_slug?: string | null
           relevance?: Json
           scenic_score?: number | null
           secondary_keywords?: string[]
@@ -445,6 +454,39 @@ export type Database = {
           release_at?: string
           template_version?: number
           title?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      regions: {
+        Row: {
+          country_code: string
+          created_at: string
+          id: string
+          intro: string | null
+          name: string
+          slug: string
+          status: string
+          updated_at: string
+        }
+        Insert: {
+          country_code: string
+          created_at?: string
+          id?: string
+          intro?: string | null
+          name: string
+          slug: string
+          status?: string
+          updated_at?: string
+        }
+        Update: {
+          country_code?: string
+          created_at?: string
+          id?: string
+          intro?: string | null
+          name?: string
+          slug?: string
+          status?: string
           updated_at?: string
         }
         Relationships: []

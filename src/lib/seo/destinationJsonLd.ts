@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { breadcrumbJsonLd, destinationCrumbs } from "./breadcrumbs";
 import type { DestinationView } from "@/lib/data/destinations.functions";
 import { commonsFilePage, parsePhotoCredit, toAbsoluteImageUrl, type ImageCredit } from "./imageCredit";
@@ -52,7 +53,7 @@ export function buildDestinationJsonLd(dest: DestinationView, pageUrl: string, f
     url: pageUrl,
     name: `${dest.name} travel guide`,
     about: { "@id": `${pageUrl}#destination` },
-    publisher: { "@type": "Organization", name: "MiniaLife", url: "https://minialife.com/" },
+    publisher: { "@type": "Organization", name: "MiniaLife", url: `${SITE_ORIGIN}/` },
     inLanguage: "en",
   };
   const graph: Record<string, unknown>[] = [destination, webPage, breadcrumbJsonLd(destinationCrumbs(dest))];

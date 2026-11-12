@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { StaticPageLayout } from "@/components/site/StaticPageLayout";
@@ -11,13 +12,13 @@ export const Route = createFileRoute("/affiliate-disclosure")({
         content:
           "How MiniaLife makes money: affiliate commissions on bookings and gear purchases, at no extra cost to you.",
       },
-      { property: "og:url", content: "https://minialife.com/affiliate-disclosure" },
+      { property: "og:url", content: `${SITE_ORIGIN}/affiliate-disclosure` },
       { property: "og:title", content: "Affiliate Disclosure — MiniaLife" },
       { property: "og:description", content: "How MiniaLife earns commissions through partner links without adding to your booking price." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
-    links: [{ rel: "canonical", href: "https://minialife.com/affiliate-disclosure" }],
+    links: [{ rel: "canonical", href: `${SITE_ORIGIN}/affiliate-disclosure` }],
   }),
   component: AffiliateDisclosurePage,
 });

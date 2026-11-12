@@ -1,10 +1,11 @@
+import { SITE_ORIGIN } from "@/config/site";
 // Pure helpers for /fly-and-drive/{airport-city}-{iata}-{destination} pages.
 // Built only from stored destination data — no AI generation per page.
 import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 import { breadcrumbJsonLd, placeGuideCrumbs } from "./breadcrumbs";
 import { BRAND, DESCRIPTION_MAX, TITLE_MAX, fitText } from "./routeSeo";
 
-export const SITE = "https://minialife.com";
+export const SITE = SITE_ORIGIN;
 
 export type FlyDriveInput = {
   slug: string;

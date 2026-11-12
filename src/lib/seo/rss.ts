@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 // Pure helpers for Pinterest RSS feeds (testable, no I/O).
 export const FEEDS = ["all", "parks", "rv", "best-time", "things-to-do"] as const;
 export type Feed = (typeof FEEDS)[number];
@@ -55,13 +56,13 @@ const esc = (v: string) =>
   v.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
 export function renderRss(items: FeedItem[], feed: Feed): string {
-  const self = feed === "all" ? "https://minialife.com/rss.xml" : `https://minialife.com/rss/${feed}.xml`;
+  const self = feed === "all" ? `${SITE_ORIGIN}/rss.xml` : `${SITE_ORIGIN}/rss/${feed}.xml`;
   return [
     '<?xml version="1.0" encoding="UTF-8"?>',
     '<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">',
     "<channel>",
     "<title>MiniaLife — Road Trips &amp; Outdoor Travel</title>",
-    "<link>https://minialife.com</link>",
+    `<link>${SITE_ORIGIN}</link>`,
     `<atom:link href="${self}" rel="self" type="application/rss+xml"/>`,
     "<description>Road trip guides, scenic routes and outdoor travel plans.</description>",
     ...items.map((i) => {

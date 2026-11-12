@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
@@ -19,12 +20,12 @@ export const Route = createFileRoute("/de/road-trips/")({
   loader: () => getDestinationCovers({ data: { slugs: [...new Set(LOOPS.flatMap((l) => l.stops))] } }),
   head: ({ loaderData }) => ({
     meta: [
-      ...deMeta(title, description, "https://minialife.com/de/road-trips"),
+      ...deMeta(title, description, `${SITE_ORIGIN}/de/road-trips`),
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       ...((img) => (img?.startsWith("https://") ? [{ property: "og:image", content: img }, { name: "twitter:image", content: img }] : []))(Object.values(loaderData ?? {})[0]),
     ],
-    links: [{ rel: "canonical", href: "https://minialife.com/de/road-trips" }, ...hreflangLinks("/road-trips", ["en", "de"])],
+    links: [{ rel: "canonical", href: `${SITE_ORIGIN}/de/road-trips` }, ...hreflangLinks("/road-trips", ["en", "de"])],
     scripts: [breadcrumbScript(crumbs)],
   }),
   component: Page,

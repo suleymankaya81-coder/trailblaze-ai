@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { Button } from "@/components/ui/button";
 import { SafeImage } from "@/components/shared/SafeImage";
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
@@ -29,7 +30,7 @@ import { PlanDeeper } from "@/components/guides/PlanDeeper";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { breadcrumbJsonLd, placeGuideCrumbs } from "@/lib/seo/breadcrumbs";
 
-const BASE = "https://minialife.com";
+const BASE = SITE_ORIGIN;
 
 // Root-level search pages (e.g. /yosemite-things-to-do). Static routes such as
 // /about or /destinations/* always win over this dynamic segment.

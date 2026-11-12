@@ -1,5 +1,6 @@
+import { SITE_ORIGIN } from "@/config/site";
 // Pure helpers for image SEO: credit parsing and absolute URLs.
-const BASE_URL = "https://minialife.com";
+const BASE_URL = SITE_ORIGIN;
 
 export type ImageCredit = { creator: string; license: string; licenseUrl: string | null; source?: string; sourceUrl?: string };
 

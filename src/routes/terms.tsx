@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { StaticPageLayout } from "@/components/site/StaticPageLayout";
@@ -10,13 +11,13 @@ export const Route = createFileRoute("/terms")({
         name: "description",
         content: "The terms that govern your use of MiniaLife's destination guides and outbound booking links.",
       },
-      { property: "og:url", content: "https://minialife.com/terms" },
+      { property: "og:url", content: `${SITE_ORIGIN}/terms` },
       { property: "og:title", content: "Terms of Use — MiniaLife" },
       { property: "og:description", content: "The terms for using MiniaLife outdoor guides and partner booking links." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
-    links: [{ rel: "canonical", href: "https://minialife.com/terms" }],
+    links: [{ rel: "canonical", href: `${SITE_ORIGIN}/terms` }],
   }),
   component: TermsPage,
 });

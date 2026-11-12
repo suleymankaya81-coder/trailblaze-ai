@@ -1,3 +1,4 @@
+import { SITE_ORIGIN } from "@/config/site";
 import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { createFileRoute, useLoaderData } from "@tanstack/react-router";
@@ -15,7 +16,7 @@ import { GATEWAY_TRIPS, HOME, ROAD_TRIPS, breadcrumbScript } from "@/lib/seo/bre
 
 const title = HUB_SEO.corridors.title;
 const description = HUB_SEO.corridors.description;
-const url = "https://minialife.com/corridors";
+const url = `${SITE_ORIGIN}/corridors`;
 
 const loadPage = () => getDestinationCovers({ data: { slugs: [...new Set(CORRIDORS.flatMap((c) => c.stops))] } });
 

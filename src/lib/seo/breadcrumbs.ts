@@ -1,7 +1,8 @@
+import { SITE_ORIGIN } from "@/config/site";
 // One source for page hierarchy: the visible breadcrumb trail and the
 // BreadcrumbList JSON-LD are both built from the same Crumb[] so they never
 // disagree. Paths are site-relative; the last crumb is the current page.
-const BASE = "https://minialife.com";
+const BASE = SITE_ORIGIN;
 
 export type Crumb = { name: string; path: string };
 
