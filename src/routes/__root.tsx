@@ -1,3 +1,5 @@
+import { BRAND_NAME } from "@/config/site";
+import { siteJsonLd } from "@/lib/seo/siteJsonLd";
 import { T } from "@/lib/i18n";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
@@ -81,7 +83,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { property: "og:site_name", content: "MiniaLife" },
+      { property: "og:site_name", content: BRAND_NAME },
       { name: "p:domain_verify", content: "aa60b4c89a7a633826f7c87a6fe468b9" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -94,13 +96,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Caveat:wght@600&family=Inter:wght@400;500;600&display=swap",
       },
       { rel: "icon", href: "/favicon.ico" },
-      { rel: "alternate", type: "application/rss+xml", title: "MiniaLife", href: "/rss.xml" },
+      { rel: "alternate", type: "application/rss+xml", title: BRAND_NAME, href: "/rss.xml" },
       { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16.png" },
       { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32.png" },
       { rel: "icon", type: "image/png", href: "/favicon.png" },
       { rel: "apple-touch-icon", sizes: "64x64", href: "/favicon.png" },
       { rel: "stylesheet", href: appCss },
     ],
+    scripts: [{ type: "application/ld+json", children: JSON.stringify(siteJsonLd()) }],
   }),
   shellComponent: RootShell,
   component: RootComponent,

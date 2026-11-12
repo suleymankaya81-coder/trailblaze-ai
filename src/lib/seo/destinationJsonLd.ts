@@ -53,7 +53,7 @@ export function buildDestinationJsonLd(dest: DestinationView, pageUrl: string, f
     url: pageUrl,
     name: `${dest.name} travel guide`,
     about: { "@id": `${pageUrl}#destination` },
-    publisher: { "@type": "Organization", name: "MiniaLife", url: `${SITE_ORIGIN}/` },
+    publisher: { "@id": `${SITE_ORIGIN}/#organization` },
     inLanguage: "en",
   };
   const graph: Record<string, unknown>[] = [destination, webPage, breadcrumbJsonLd(destinationCrumbs(dest))];
