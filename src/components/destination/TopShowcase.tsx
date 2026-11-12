@@ -6,6 +6,7 @@ import { corridorPartnerLinks } from "@/lib/affiliates/corridorPartners";
 import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { isMhrBlackFridayLive } from "@/lib/affiliates/mhrBlackFriday";
 import { validViatorHeight } from "@/lib/affiliates/viatorDisplay";
+import bfArt from "@/assets/rv_black_friday_2026.png.asset.json";
 
 /** First-screen two-up showcase: vehicles & RVs (left) and the top real Viator tour for this place (right). */
 export function TopShowcase({ slug, name, airportCode, vehicleNote }: { slug: string; name: string; airportCode: string | null; vehicleNote?: string | null }) {
@@ -28,6 +29,12 @@ function VehicleShowcase({ slug, airportCode, vehicleNote }: { slug: string; air
     <div className="flex flex-col rounded-xl border border-border bg-card p-5 md:p-6">
       <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-sage-deep"><T>Vehicle & RV</T></p>
       <h2 className="mt-1 font-display text-2xl leading-tight text-foreground"><T>{airportCode ? `Pick up at ${airportCode} airport` : "Choose your vehicle"}</T></h2>
+      {isMhrBlackFridayLive() && (
+        <a href={l.motorhome} target="_blank" rel="sponsored nofollow noopener noreferrer" className="mt-4 block overflow-hidden rounded-lg border border-border">
+          <img src={bfArt.url} alt="Black Friday sale: save up to 35% off motorhome rentals" loading="lazy" className="w-full object-cover" />
+          <span className="block bg-secondary px-3 py-2 text-xs text-muted-foreground"><T>Black Friday · ends 2 Dec — Cruise America & Cruise Canada up to 35% off. Selected dates & T&Cs apply.</T></span>
+        </a>
+      )}
       <ul className="mt-4 divide-y divide-border">
         {rows.map((r) => (
           <li key={r.label}>

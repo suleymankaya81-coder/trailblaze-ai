@@ -11,7 +11,6 @@ import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { servicePhoto, type ServicePhotoCategory } from "@/lib/data/servicePhotos";
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
-import { RentalsFeature } from "@/components/home/RentalsFeature";
 import { HomeExperiences } from "@/components/home/HomeExperiences";
 import { StartHere } from "@/components/home/StartHere";
 import { HomeHero } from "@/components/home/HomeHero";
@@ -113,12 +112,6 @@ export function HomePageView({ homeDestinations, localSlugs }: { homeDestination
                 badges={[tp(`${l.stops.length} stops`), l.region]} title={l.title} summary={l.intro} action="See the route" />
             ))}
           </SwipeRow>
-        </div>
-      </section>
-
-      <section id="rentals-gear" className="section-y">
-        <div className="container-page">
-          <RentalsFeature />
         </div>
       </section>
 
