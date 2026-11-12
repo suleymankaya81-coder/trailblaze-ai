@@ -1,3 +1,4 @@
+import { canonicalPath, destinationPath } from "@/lib/routes/paths";
 import { SITE_ORIGIN } from "@/config/site";
 // Server-only: Pinterest RSS feeds built live from published rows + branded pin cards.
 import { type PinKind, isBroken, pinDescription, pinTitle } from "./pinCopy";
@@ -53,11 +54,11 @@ export async function buildRss(feed: string): Promise<Response | null> {
       if (isBroken(title) || isBroken(description)) return;
       items.push({ title, description, link, image: pin?.image_url ?? null, releaseAt: pin?.release_at, date, feed: feedName, indexable, published: true });
     };
-    for (const d of dests) push("destination", d, `d:${d.slug}`, `${BASE}/destinations/${d.slug}`, {}, "parks", d.updated_at, true);
+    for (const d of dests) push("destination", d, `d:${d.slug}`, `${BASE}${destinationPath(d.slug)}`, {}, "parks", d.updated_at, true);
     for (const p of pages) {
       const d = byId.get(p.destination_id);
       if (!d) continue;
-      push(p.page_type as PinKind, d, `p:${p.path}`, `${BASE}${p.path}`, p, feedForPath(p.path), p.published_at ?? p.updated_at, p.indexable);
+      push(p.page_type as PinKind, d, `p:${p.path}`, `${BASE}${canonicalPath(p.path)}`, p, feedForPath(p.path), p.published_at ?? p.updated_at, p.indexable);
     }
   } catch (err) {
     console.error("[rss]", err);

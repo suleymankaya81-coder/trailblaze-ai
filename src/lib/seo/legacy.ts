@@ -1,4 +1,5 @@
 import { SITE_ORIGIN } from "@/config/site";
+import { canonicalPath } from "@/lib/routes/paths";
 // Addresses from the previous site design (deleted on purpose). Answer them
 // with 301 (clear modern equivalent) or 410 Gone so Google drops them fast.
 const REDIRECTS: Record<string, string> = {
@@ -33,6 +34,14 @@ const GONE_PREFIXES = [
 
 export function legacyResponse(url: URL): Response | null {
   const path = url.pathname.replace(/\/+$/, "") || "/";
+  // Flat destination and root guide addresses → country/region structure.
+  const moved = canonicalPath(path);
+  if (moved !== path) {
+    return new Response(null, {
+      status: 301,
+      headers: { location: `${moved}${url.search}`, "cache-control": "public, max-age=86400" },
+    });
+  }
   const to = REDIRECTS[path];
   if (to) {
     return new Response(null, {

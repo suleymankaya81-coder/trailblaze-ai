@@ -9,13 +9,15 @@ describe("breadcrumbs", () => {
     expect(placeGuideCrumbs(dest, "RV & camping", "/rv-camping/yellowstone").map((c) => c.path)).toEqual([
       "/",
       "/destinations",
-      "/destinations/yellowstone",
+      "/destinations/us",
+      "/destinations/us/wyoming",
+      "/destinations/us/wyoming/yellowstone",
       "/rv-camping/yellowstone",
     ]);
   });
 
-  it("place pages and guide directories have three levels", () => {
-    expect(destinationCrumbs(dest).map((c) => c.name)).toEqual(["Home", "Destinations", "Yellowstone National Park"]);
+  it("place pages sit under country and state; guide directories have three levels", () => {
+    expect(destinationCrumbs(dest).map((c) => c.name)).toEqual(["Home", "Destinations", "United States", "Wyoming", "Yellowstone National Park"]);
     expect(hubCrumbs("RV & camping guides", "/rv-camping").map((c) => c.path)).toEqual(["/", "/trip-guides", "/rv-camping"]);
   });
 
@@ -24,7 +26,9 @@ describe("breadcrumbs", () => {
     expect(ld.itemListElement.map((i) => [i.position, i.item])).toEqual([
       [1, "https://minialife.com/"],
       [2, "https://minialife.com/destinations"],
-      [3, "https://minialife.com/destinations/yellowstone"],
+      [3, "https://minialife.com/destinations/us"],
+      [4, "https://minialife.com/destinations/us/wyoming"],
+      [5, "https://minialife.com/destinations/us/wyoming/yellowstone"],
     ]);
   });
 });

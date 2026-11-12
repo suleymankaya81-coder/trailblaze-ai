@@ -1,3 +1,4 @@
+import { destinationPath } from "@/lib/routes/paths";
 import { SITE_ORIGIN } from "@/config/site";
 // Pure helpers for /fly-and-drive/{airport-city}-{iata}-{destination} pages.
 // Built only from stored destination data — no AI generation per page.
@@ -110,7 +111,7 @@ export function flyDriveJsonLd(d: FlyDriveInput & { heroImage: string; faqs: Faq
           itemListOrder: "https://schema.org/ItemListOrderAscending",
           itemListElement: [
             { "@type": "ListItem", position: 1, item: { "@type": "Airport", name: d.airportName, iataCode: d.airportCode } },
-            { "@type": "ListItem", position: 2, item: { "@type": "TouristDestination", name: d.name, url: `${SITE}/destinations/${d.slug}` } },
+            { "@type": "ListItem", position: 2, item: { "@type": "TouristDestination", name: d.name, url: `${SITE}${destinationPath(d.slug)}` } },
           ],
         },
       },

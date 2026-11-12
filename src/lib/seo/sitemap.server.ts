@@ -1,4 +1,5 @@
 import { SITE_ORIGIN } from "@/config/site";
+import { canonicalPath, COUNTRIES, countryPath, regionPath, regionSlugsOf } from "@/lib/routes/paths";
 import { CORRIDORS } from "@/lib/seo/corridors";
 // Server-only: sitemap index at /sitemap.xml plus child sitemaps under
 // /sitemaps/*.xml, built live from published rows — never edited by hand.
@@ -68,6 +69,14 @@ function xml(body: string): Response {
   });
 }
 
+/** Every listed address is emitted in its canonical (country/region) form. */
+function canonicalLoc(loc: string): string {
+  return loc.startsWith(SITE_ORIGIN) ? SITE_ORIGIN + canonicalPath(loc.slice(SITE_ORIGIN.length) || "/") : loc;
+}
+
+const geoPaths = (locale: "en" | "de") =>
+  Object.keys(COUNTRIES).flatMap((c) => [countryPath(c, locale), ...regionSlugsOf(c).map((r) => regionPath(c, r, locale))]);
+
 export function urlsetXml(urls: Url[]): string {
   return (
     [
@@ -75,7 +84,7 @@ export function urlsetXml(urls: Url[]): string {
       '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">',
       ...urls.map(
         (u) =>
-          `  <url><loc>${xmlEscape(u.loc)}</loc>${u.lastmod ? `<lastmod>${u.lastmod}</lastmod>` : ""}${(u.images ?? [])
+          `  <url><loc>${xmlEscape(canonicalLoc(u.loc))}</loc>${u.lastmod ? `<lastmod>${u.lastmod}</lastmod>` : ""}${(u.images ?? [])
             .map((i) => `<image:image><image:loc>${xmlEscape(i)}</image:loc></image:image>`)
             .join("")}</url>`,
       ),
@@ -111,7 +120,7 @@ export async function buildChildSitemap(name: string): Promise<Response | null> 
         "content_translations?select=entity_id,updated_at&entity_type=eq.destination&locale=eq.de&status=eq.published&order=entity_id.asc",
       );
       return urlset([
-        ...["/de", "/de/destinations", "/de/road-trips"].map((p) => ({ loc: `${BASE_URL}${p}` })),
+        ...["/de", "/de/destinations", "/de/road-trips", ...geoPaths("de")].map((p) => ({ loc: `${BASE_URL}${p}` })),
         ...rows.map((r) => ({ loc: `${BASE_URL}/de/destinations/${r.entity_id}`, lastmod: new Date(r.updated_at).toISOString() })),
       ]);
     }
@@ -119,13 +128,14 @@ export async function buildChildSitemap(name: string): Promise<Response | null> 
       const rows = await fetchAll<{ slug: string; updated_at: string; hero_image: string | null; gallery: string[] | null }>(
         "destinations?select=slug,updated_at,hero_image,gallery&status=eq.published&order=slug.asc",
       );
-      return urlset(
-        rows.map((d) => ({
+      return urlset([
+        ...geoPaths("en").map((p) => ({ loc: `${BASE_URL}${p}` })),
+        ...rows.map((d) => ({
           loc: `${BASE_URL}/destinations/${d.slug}`,
           lastmod: new Date(d.updated_at).toISOString(),
           images: uniqueImages([d.hero_image, ...(d.gallery ?? [])]),
         })),
-      );
+      ]);
     }
     if (name === "fly-and-drive") {
       const rows = await fetchAll<{ slug: string; name: string; updated_at: string; hero_image: string | null; nearest_airport_code: string | null; nearest_airport_name: string | null; drive_minutes: number | null; drive_miles: number | null }>(

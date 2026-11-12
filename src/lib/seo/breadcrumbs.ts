@@ -1,4 +1,5 @@
 import { SITE_ORIGIN } from "@/config/site";
+import { COUNTRIES, canonicalPath, countryPath, destinationGeo, destinationPath, regionPath } from "@/lib/routes/paths";
 // One source for page hierarchy: the visible breadcrumb trail and the
 // BreadcrumbList JSON-LD are both built from the same Crumb[] so they never
 // disagree. Paths are site-relative; the last crumb is the current page.
@@ -14,13 +15,29 @@ export const GATEWAY_TRIPS: Crumb = { name: "Gateway Road Trips", path: "/corrid
 
 export const absoluteUrl = (path: string) => (path === "/" ? `${BASE}/` : `${BASE}${path}`);
 
+/** "new-york" → "New York", "district-of-columbia" → "District of Columbia". */
+export function regionName(slug: string): string {
+  return slug.split("-").map((w, i) => (i > 0 && ["of", "and"].includes(w) ? w : w[0].toUpperCase() + w.slice(1))).join(" ");
+}
+
+export function countryCrumbs(country: string): Crumb[] {
+  return [HOME, DESTINATIONS, { name: COUNTRIES[country]?.name ?? country.toUpperCase(), path: countryPath(country) }];
+}
+
+export function regionCrumbs(country: string, region: string, name = regionName(region)): Crumb[] {
+  return [...countryCrumbs(country), { name, path: regionPath(country, region) }];
+}
+
+/** Home › Destinations › Country › Region › Place (country/region omitted when unknown). */
 export function destinationCrumbs(dest: { name: string; slug: string }): Crumb[] {
-  return [HOME, DESTINATIONS, { name: dest.name, path: `/destinations/${dest.slug}` }];
+  const g = destinationGeo(dest.slug);
+  const parents = g ? regionCrumbs(g.country, g.region) : [HOME, DESTINATIONS];
+  return [...parents, { name: dest.name, path: destinationPath(dest.slug) }];
 }
 
 /** Guides that belong to one place: Home › Destinations › Place › Guide. */
 export function placeGuideCrumbs(dest: { name: string; slug: string }, label: string, path: string): Crumb[] {
-  return [...destinationCrumbs(dest), { name: label, path }];
+  return [...destinationCrumbs(dest), { name: label, path: canonicalPath(path) }];
 }
 
 /** Guide directories: Home › Trip Guides › Directory. */

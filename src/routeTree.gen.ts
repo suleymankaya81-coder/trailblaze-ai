@@ -25,7 +25,6 @@ import { Route as DeIndexRouteImport } from './routes/de.index'
 import { Route as DeAboutRouteImport } from './routes/de.about'
 import { Route as DeTripGuidesRouteImport } from './routes/de.trip-guides'
 import { Route as DestinationsIndexRouteImport } from './routes/destinations.index'
-import { Route as DestinationsSlugRouteImport } from './routes/destinations.$slug'
 import { Route as ExperiencesCorridorRouteImport } from './routes/experiences.$corridor'
 import { Route as ExperiencesHomeRouteImport } from './routes/experiences.home'
 import { Route as FlyAndDriveIndexRouteImport } from './routes/fly-and-drive.index'
@@ -44,7 +43,6 @@ import { Route as TripBuilderSlugRouteImport } from './routes/trip-builder.$slug
 import { Route as DeCorridorsIndexRouteImport } from './routes/de.corridors.index'
 import { Route as DeCorridorsSlugRouteImport } from './routes/de.corridors.$slug'
 import { Route as DeDestinationsIndexRouteImport } from './routes/de.destinations.index'
-import { Route as DeDestinationsSlugRouteImport } from './routes/de.destinations.$slug'
 import { Route as DeFlyAndDriveIndexRouteImport } from './routes/de.fly-and-drive.index'
 import { Route as DeFlyAndDriveSlugRouteImport } from './routes/de.fly-and-drive.$slug'
 import { Route as DeGearIndexRouteImport } from './routes/de.gear.index'
@@ -55,8 +53,15 @@ import { Route as DeRoadTripsSlugRouteImport } from './routes/de.road-trips.$slu
 import { Route as DeRvCampingIndexRouteImport } from './routes/de.rv-camping.index'
 import { Route as DeRvCampingSlugRouteImport } from './routes/de.rv-camping.$slug'
 import { Route as DeTripBuilderSlugRouteImport } from './routes/de.trip-builder.$slug'
+import { Route as DestinationsSlugIndexRouteImport } from './routes/destinations.$slug.index'
 import { Route as ExperiencesPlaceSlugRouteImport } from './routes/experiences.place.$slug'
 import { Route as GearCategoryKeyRouteImport } from './routes/gear.category.$key'
+import { Route as DeDestinationsSlugIndexRouteImport } from './routes/de.destinations.$slug.index'
+import { Route as DestinationsSlugRegionIndexRouteImport } from './routes/destinations.$slug.$region.index'
+import { Route as DeDestinationsSlugRegionIndexRouteImport } from './routes/de.destinations.$slug.$region.index'
+import { Route as DestinationsSlugRegionPlaceIndexRouteImport } from './routes/destinations.$slug.$region.$place.index'
+import { Route as DestinationsSlugRegionPlaceGuideRouteImport } from './routes/destinations.$slug.$region.$place.$guide'
+import { Route as DeDestinationsSlugRegionPlaceIndexRouteImport } from './routes/de.destinations.$slug.$region.$place.index'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -136,11 +141,6 @@ const DeTripGuidesRoute = DeTripGuidesRouteImport.update({
 const DestinationsIndexRoute = DestinationsIndexRouteImport.update({
   id: '/destinations/',
   path: '/destinations/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DestinationsSlugRoute = DestinationsSlugRouteImport.update({
-  id: '/destinations/$slug',
-  path: '/destinations/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ExperiencesCorridorRoute = ExperiencesCorridorRouteImport.update({
@@ -236,11 +236,6 @@ const DeDestinationsIndexRoute = DeDestinationsIndexRouteImport.update({
   path: '/destinations/',
   getParentRoute: () => DeRoute,
 } as any)
-const DeDestinationsSlugRoute = DeDestinationsSlugRouteImport.update({
-  id: '/destinations/$slug',
-  path: '/destinations/$slug',
-  getParentRoute: () => DeRoute,
-} as any)
 const DeFlyAndDriveIndexRoute = DeFlyAndDriveIndexRouteImport.update({
   id: '/fly-and-drive/',
   path: '/fly-and-drive/',
@@ -291,6 +286,11 @@ const DeTripBuilderSlugRoute = DeTripBuilderSlugRouteImport.update({
   path: '/trip-builder/$slug',
   getParentRoute: () => DeRoute,
 } as any)
+const DestinationsSlugIndexRoute = DestinationsSlugIndexRouteImport.update({
+  id: '/destinations/$slug/',
+  path: '/destinations/$slug/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ExperiencesPlaceSlugRoute = ExperiencesPlaceSlugRouteImport.update({
   id: '/experiences/place/$slug',
   path: '/experiences/place/$slug',
@@ -301,6 +301,41 @@ const GearCategoryKeyRoute = GearCategoryKeyRouteImport.update({
   path: '/gear/category/$key',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DeDestinationsSlugIndexRoute = DeDestinationsSlugIndexRouteImport.update({
+  id: '/destinations/$slug/',
+  path: '/destinations/$slug/',
+  getParentRoute: () => DeRoute,
+} as any)
+const DestinationsSlugRegionIndexRoute =
+  DestinationsSlugRegionIndexRouteImport.update({
+    id: '/destinations/$slug/$region/',
+    path: '/destinations/$slug/$region/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DeDestinationsSlugRegionIndexRoute =
+  DeDestinationsSlugRegionIndexRouteImport.update({
+    id: '/destinations/$slug/$region/',
+    path: '/destinations/$slug/$region/',
+    getParentRoute: () => DeRoute,
+  } as any)
+const DestinationsSlugRegionPlaceIndexRoute =
+  DestinationsSlugRegionPlaceIndexRouteImport.update({
+    id: '/destinations/$slug/$region/$place/',
+    path: '/destinations/$slug/$region/$place/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DestinationsSlugRegionPlaceGuideRoute =
+  DestinationsSlugRegionPlaceGuideRouteImport.update({
+    id: '/destinations/$slug/$region/$place/$guide',
+    path: '/destinations/$slug/$region/$place/$guide',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DeDestinationsSlugRegionPlaceIndexRoute =
+  DeDestinationsSlugRegionPlaceIndexRouteImport.update({
+    id: '/destinations/$slug/$region/$place/',
+    path: '/destinations/$slug/$region/$place/',
+    getParentRoute: () => DeRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -316,7 +351,6 @@ export interface FileRoutesByFullPath {
   '/corridors/$slug': typeof CorridorsSlugRoute
   '/de/about': typeof DeAboutRoute
   '/de/trip-guides': typeof DeTripGuidesRoute
-  '/destinations/$slug': typeof DestinationsSlugRoute
   '/experiences/$corridor': typeof ExperiencesCorridorRoute
   '/experiences/home': typeof ExperiencesHomeRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
@@ -336,7 +370,6 @@ export interface FileRoutesByFullPath {
   '/road-trips/': typeof RoadTripsIndexRoute
   '/rv-camping/': typeof RvCampingIndexRoute
   '/de/corridors/$slug': typeof DeCorridorsSlugRoute
-  '/de/destinations/$slug': typeof DeDestinationsSlugRoute
   '/de/fly-and-drive/$slug': typeof DeFlyAndDriveSlugRoute
   '/de/no-reservation/$slug': typeof DeNoReservationSlugRoute
   '/de/road-trips/$slug': typeof DeRoadTripsSlugRoute
@@ -351,6 +384,13 @@ export interface FileRoutesByFullPath {
   '/de/no-reservation/': typeof DeNoReservationIndexRoute
   '/de/road-trips/': typeof DeRoadTripsIndexRoute
   '/de/rv-camping/': typeof DeRvCampingIndexRoute
+  '/destinations/$slug/': typeof DestinationsSlugIndexRoute
+  '/de/destinations/$slug/': typeof DeDestinationsSlugIndexRoute
+  '/destinations/$slug/$region/': typeof DestinationsSlugRegionIndexRoute
+  '/destinations/$slug/$region/$place/$guide': typeof DestinationsSlugRegionPlaceGuideRoute
+  '/de/destinations/$slug/$region/': typeof DeDestinationsSlugRegionIndexRoute
+  '/destinations/$slug/$region/$place/': typeof DestinationsSlugRegionPlaceIndexRoute
+  '/de/destinations/$slug/$region/$place/': typeof DeDestinationsSlugRegionPlaceIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -365,7 +405,6 @@ export interface FileRoutesByTo {
   '/corridors/$slug': typeof CorridorsSlugRoute
   '/de/about': typeof DeAboutRoute
   '/de/trip-guides': typeof DeTripGuidesRoute
-  '/destinations/$slug': typeof DestinationsSlugRoute
   '/experiences/$corridor': typeof ExperiencesCorridorRoute
   '/experiences/home': typeof ExperiencesHomeRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
@@ -385,7 +424,6 @@ export interface FileRoutesByTo {
   '/road-trips': typeof RoadTripsIndexRoute
   '/rv-camping': typeof RvCampingIndexRoute
   '/de/corridors/$slug': typeof DeCorridorsSlugRoute
-  '/de/destinations/$slug': typeof DeDestinationsSlugRoute
   '/de/fly-and-drive/$slug': typeof DeFlyAndDriveSlugRoute
   '/de/no-reservation/$slug': typeof DeNoReservationSlugRoute
   '/de/road-trips/$slug': typeof DeRoadTripsSlugRoute
@@ -400,6 +438,13 @@ export interface FileRoutesByTo {
   '/de/no-reservation': typeof DeNoReservationIndexRoute
   '/de/road-trips': typeof DeRoadTripsIndexRoute
   '/de/rv-camping': typeof DeRvCampingIndexRoute
+  '/destinations/$slug': typeof DestinationsSlugIndexRoute
+  '/de/destinations/$slug': typeof DeDestinationsSlugIndexRoute
+  '/destinations/$slug/$region': typeof DestinationsSlugRegionIndexRoute
+  '/destinations/$slug/$region/$place/$guide': typeof DestinationsSlugRegionPlaceGuideRoute
+  '/de/destinations/$slug/$region': typeof DeDestinationsSlugRegionIndexRoute
+  '/destinations/$slug/$region/$place': typeof DestinationsSlugRegionPlaceIndexRoute
+  '/de/destinations/$slug/$region/$place': typeof DeDestinationsSlugRegionPlaceIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -416,7 +461,6 @@ export interface FileRoutesById {
   '/corridors/$slug': typeof CorridorsSlugRoute
   '/de/about': typeof DeAboutRoute
   '/de/trip-guides': typeof DeTripGuidesRoute
-  '/destinations/$slug': typeof DestinationsSlugRoute
   '/experiences/$corridor': typeof ExperiencesCorridorRoute
   '/experiences/home': typeof ExperiencesHomeRoute
   '/fly-and-drive/$slug': typeof FlyAndDriveSlugRoute
@@ -436,7 +480,6 @@ export interface FileRoutesById {
   '/road-trips/': typeof RoadTripsIndexRoute
   '/rv-camping/': typeof RvCampingIndexRoute
   '/de/corridors/$slug': typeof DeCorridorsSlugRoute
-  '/de/destinations/$slug': typeof DeDestinationsSlugRoute
   '/de/fly-and-drive/$slug': typeof DeFlyAndDriveSlugRoute
   '/de/no-reservation/$slug': typeof DeNoReservationSlugRoute
   '/de/road-trips/$slug': typeof DeRoadTripsSlugRoute
@@ -451,6 +494,13 @@ export interface FileRoutesById {
   '/de/no-reservation/': typeof DeNoReservationIndexRoute
   '/de/road-trips/': typeof DeRoadTripsIndexRoute
   '/de/rv-camping/': typeof DeRvCampingIndexRoute
+  '/destinations/$slug/': typeof DestinationsSlugIndexRoute
+  '/de/destinations/$slug/': typeof DeDestinationsSlugIndexRoute
+  '/destinations/$slug/$region/': typeof DestinationsSlugRegionIndexRoute
+  '/destinations/$slug/$region/$place/$guide': typeof DestinationsSlugRegionPlaceGuideRoute
+  '/de/destinations/$slug/$region/': typeof DeDestinationsSlugRegionIndexRoute
+  '/destinations/$slug/$region/$place/': typeof DestinationsSlugRegionPlaceIndexRoute
+  '/de/destinations/$slug/$region/$place/': typeof DeDestinationsSlugRegionPlaceIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -468,7 +518,6 @@ export interface FileRouteTypes {
     | '/corridors/$slug'
     | '/de/about'
     | '/de/trip-guides'
-    | '/destinations/$slug'
     | '/experiences/$corridor'
     | '/experiences/home'
     | '/fly-and-drive/$slug'
@@ -488,7 +537,6 @@ export interface FileRouteTypes {
     | '/road-trips/'
     | '/rv-camping/'
     | '/de/corridors/$slug'
-    | '/de/destinations/$slug'
     | '/de/fly-and-drive/$slug'
     | '/de/no-reservation/$slug'
     | '/de/road-trips/$slug'
@@ -503,6 +551,13 @@ export interface FileRouteTypes {
     | '/de/no-reservation/'
     | '/de/road-trips/'
     | '/de/rv-camping/'
+    | '/destinations/$slug/'
+    | '/de/destinations/$slug/'
+    | '/destinations/$slug/$region/'
+    | '/destinations/$slug/$region/$place/$guide'
+    | '/de/destinations/$slug/$region/'
+    | '/destinations/$slug/$region/$place/'
+    | '/de/destinations/$slug/$region/$place/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -517,7 +572,6 @@ export interface FileRouteTypes {
     | '/corridors/$slug'
     | '/de/about'
     | '/de/trip-guides'
-    | '/destinations/$slug'
     | '/experiences/$corridor'
     | '/experiences/home'
     | '/fly-and-drive/$slug'
@@ -537,7 +591,6 @@ export interface FileRouteTypes {
     | '/road-trips'
     | '/rv-camping'
     | '/de/corridors/$slug'
-    | '/de/destinations/$slug'
     | '/de/fly-and-drive/$slug'
     | '/de/no-reservation/$slug'
     | '/de/road-trips/$slug'
@@ -552,6 +605,13 @@ export interface FileRouteTypes {
     | '/de/no-reservation'
     | '/de/road-trips'
     | '/de/rv-camping'
+    | '/destinations/$slug'
+    | '/de/destinations/$slug'
+    | '/destinations/$slug/$region'
+    | '/destinations/$slug/$region/$place/$guide'
+    | '/de/destinations/$slug/$region'
+    | '/destinations/$slug/$region/$place'
+    | '/de/destinations/$slug/$region/$place'
   id:
     | '__root__'
     | '/'
@@ -567,7 +627,6 @@ export interface FileRouteTypes {
     | '/corridors/$slug'
     | '/de/about'
     | '/de/trip-guides'
-    | '/destinations/$slug'
     | '/experiences/$corridor'
     | '/experiences/home'
     | '/fly-and-drive/$slug'
@@ -587,7 +646,6 @@ export interface FileRouteTypes {
     | '/road-trips/'
     | '/rv-camping/'
     | '/de/corridors/$slug'
-    | '/de/destinations/$slug'
     | '/de/fly-and-drive/$slug'
     | '/de/no-reservation/$slug'
     | '/de/road-trips/$slug'
@@ -602,6 +660,13 @@ export interface FileRouteTypes {
     | '/de/no-reservation/'
     | '/de/road-trips/'
     | '/de/rv-camping/'
+    | '/destinations/$slug/'
+    | '/de/destinations/$slug/'
+    | '/destinations/$slug/$region/'
+    | '/destinations/$slug/$region/$place/$guide'
+    | '/de/destinations/$slug/$region/'
+    | '/destinations/$slug/$region/$place/'
+    | '/de/destinations/$slug/$region/$place/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -616,7 +681,6 @@ export interface RootRouteChildren {
   TermsRoute: typeof TermsRoute
   TripGuidesRoute: typeof TripGuidesRoute
   CorridorsSlugRoute: typeof CorridorsSlugRoute
-  DestinationsSlugRoute: typeof DestinationsSlugRoute
   ExperiencesCorridorRoute: typeof ExperiencesCorridorRoute
   ExperiencesHomeRoute: typeof ExperiencesHomeRoute
   FlyAndDriveSlugRoute: typeof FlyAndDriveSlugRoute
@@ -636,6 +700,10 @@ export interface RootRouteChildren {
   RvCampingIndexRoute: typeof RvCampingIndexRoute
   ExperiencesPlaceSlugRoute: typeof ExperiencesPlaceSlugRoute
   GearCategoryKeyRoute: typeof GearCategoryKeyRoute
+  DestinationsSlugIndexRoute: typeof DestinationsSlugIndexRoute
+  DestinationsSlugRegionIndexRoute: typeof DestinationsSlugRegionIndexRoute
+  DestinationsSlugRegionPlaceGuideRoute: typeof DestinationsSlugRegionPlaceGuideRoute
+  DestinationsSlugRegionPlaceIndexRoute: typeof DestinationsSlugRegionPlaceIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -750,13 +818,6 @@ declare module '@tanstack/react-router' {
       path: '/destinations'
       fullPath: '/destinations/'
       preLoaderRoute: typeof DestinationsIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/destinations/$slug': {
-      id: '/destinations/$slug'
-      path: '/destinations/$slug'
-      fullPath: '/destinations/$slug'
-      preLoaderRoute: typeof DestinationsSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/experiences/$corridor': {
@@ -885,13 +946,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DeDestinationsIndexRouteImport
       parentRoute: typeof DeRoute
     }
-    '/de/destinations/$slug': {
-      id: '/de/destinations/$slug'
-      path: '/destinations/$slug'
-      fullPath: '/de/destinations/$slug'
-      preLoaderRoute: typeof DeDestinationsSlugRouteImport
-      parentRoute: typeof DeRoute
-    }
     '/de/fly-and-drive/': {
       id: '/de/fly-and-drive/'
       path: '/fly-and-drive'
@@ -962,6 +1016,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DeTripBuilderSlugRouteImport
       parentRoute: typeof DeRoute
     }
+    '/destinations/$slug/': {
+      id: '/destinations/$slug/'
+      path: '/destinations/$slug'
+      fullPath: '/destinations/$slug/'
+      preLoaderRoute: typeof DestinationsSlugIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/experiences/place/$slug': {
       id: '/experiences/place/$slug'
       path: '/experiences/place/$slug'
@@ -976,6 +1037,48 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GearCategoryKeyRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/de/destinations/$slug/': {
+      id: '/de/destinations/$slug/'
+      path: '/destinations/$slug'
+      fullPath: '/de/destinations/$slug/'
+      preLoaderRoute: typeof DeDestinationsSlugIndexRouteImport
+      parentRoute: typeof DeRoute
+    }
+    '/destinations/$slug/$region/': {
+      id: '/destinations/$slug/$region/'
+      path: '/destinations/$slug/$region'
+      fullPath: '/destinations/$slug/$region/'
+      preLoaderRoute: typeof DestinationsSlugRegionIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/de/destinations/$slug/$region/': {
+      id: '/de/destinations/$slug/$region/'
+      path: '/destinations/$slug/$region'
+      fullPath: '/de/destinations/$slug/$region/'
+      preLoaderRoute: typeof DeDestinationsSlugRegionIndexRouteImport
+      parentRoute: typeof DeRoute
+    }
+    '/destinations/$slug/$region/$place/': {
+      id: '/destinations/$slug/$region/$place/'
+      path: '/destinations/$slug/$region/$place'
+      fullPath: '/destinations/$slug/$region/$place/'
+      preLoaderRoute: typeof DestinationsSlugRegionPlaceIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/$slug/$region/$place/$guide': {
+      id: '/destinations/$slug/$region/$place/$guide'
+      path: '/destinations/$slug/$region/$place/$guide'
+      fullPath: '/destinations/$slug/$region/$place/$guide'
+      preLoaderRoute: typeof DestinationsSlugRegionPlaceGuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/de/destinations/$slug/$region/$place/': {
+      id: '/de/destinations/$slug/$region/$place/'
+      path: '/destinations/$slug/$region/$place'
+      fullPath: '/de/destinations/$slug/$region/$place/'
+      preLoaderRoute: typeof DeDestinationsSlugRegionPlaceIndexRouteImport
+      parentRoute: typeof DeRoute
+    }
   }
 }
 
@@ -984,7 +1087,6 @@ interface DeRouteChildren {
   DeTripGuidesRoute: typeof DeTripGuidesRoute
   DeIndexRoute: typeof DeIndexRoute
   DeCorridorsSlugRoute: typeof DeCorridorsSlugRoute
-  DeDestinationsSlugRoute: typeof DeDestinationsSlugRoute
   DeFlyAndDriveSlugRoute: typeof DeFlyAndDriveSlugRoute
   DeNoReservationSlugRoute: typeof DeNoReservationSlugRoute
   DeRoadTripsSlugRoute: typeof DeRoadTripsSlugRoute
@@ -997,6 +1099,9 @@ interface DeRouteChildren {
   DeNoReservationIndexRoute: typeof DeNoReservationIndexRoute
   DeRoadTripsIndexRoute: typeof DeRoadTripsIndexRoute
   DeRvCampingIndexRoute: typeof DeRvCampingIndexRoute
+  DeDestinationsSlugIndexRoute: typeof DeDestinationsSlugIndexRoute
+  DeDestinationsSlugRegionIndexRoute: typeof DeDestinationsSlugRegionIndexRoute
+  DeDestinationsSlugRegionPlaceIndexRoute: typeof DeDestinationsSlugRegionPlaceIndexRoute
 }
 
 const DeRouteChildren: DeRouteChildren = {
@@ -1004,7 +1109,6 @@ const DeRouteChildren: DeRouteChildren = {
   DeTripGuidesRoute: DeTripGuidesRoute,
   DeIndexRoute: DeIndexRoute,
   DeCorridorsSlugRoute: DeCorridorsSlugRoute,
-  DeDestinationsSlugRoute: DeDestinationsSlugRoute,
   DeFlyAndDriveSlugRoute: DeFlyAndDriveSlugRoute,
   DeNoReservationSlugRoute: DeNoReservationSlugRoute,
   DeRoadTripsSlugRoute: DeRoadTripsSlugRoute,
@@ -1017,6 +1121,10 @@ const DeRouteChildren: DeRouteChildren = {
   DeNoReservationIndexRoute: DeNoReservationIndexRoute,
   DeRoadTripsIndexRoute: DeRoadTripsIndexRoute,
   DeRvCampingIndexRoute: DeRvCampingIndexRoute,
+  DeDestinationsSlugIndexRoute: DeDestinationsSlugIndexRoute,
+  DeDestinationsSlugRegionIndexRoute: DeDestinationsSlugRegionIndexRoute,
+  DeDestinationsSlugRegionPlaceIndexRoute:
+    DeDestinationsSlugRegionPlaceIndexRoute,
 }
 
 const DeRouteWithChildren = DeRoute._addFileChildren(DeRouteChildren)
@@ -1033,7 +1141,6 @@ const rootRouteChildren: RootRouteChildren = {
   TermsRoute: TermsRoute,
   TripGuidesRoute: TripGuidesRoute,
   CorridorsSlugRoute: CorridorsSlugRoute,
-  DestinationsSlugRoute: DestinationsSlugRoute,
   ExperiencesCorridorRoute: ExperiencesCorridorRoute,
   ExperiencesHomeRoute: ExperiencesHomeRoute,
   FlyAndDriveSlugRoute: FlyAndDriveSlugRoute,
@@ -1053,6 +1160,10 @@ const rootRouteChildren: RootRouteChildren = {
   RvCampingIndexRoute: RvCampingIndexRoute,
   ExperiencesPlaceSlugRoute: ExperiencesPlaceSlugRoute,
   GearCategoryKeyRoute: GearCategoryKeyRoute,
+  DestinationsSlugIndexRoute: DestinationsSlugIndexRoute,
+  DestinationsSlugRegionIndexRoute: DestinationsSlugRegionIndexRoute,
+  DestinationsSlugRegionPlaceGuideRoute: DestinationsSlugRegionPlaceGuideRoute,
+  DestinationsSlugRegionPlaceIndexRoute: DestinationsSlugRegionPlaceIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

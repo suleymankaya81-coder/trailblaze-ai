@@ -19,7 +19,9 @@ import mapImage from "@/assets/thumbs/map.jpg";
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { Link } from "@/components/site/LocalLink";
-import { createFileRoute, notFound } from "@tanstack/react-router";
+import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
+import { destinationPath } from "@/lib/routes/paths";
+import { getDestinationGeo } from "@/lib/data/geo.functions";
 import { VrboExpediaItems } from "@/components/destination/VrboSearchWidget";
 import { HarvestHostsOffer, HARVEST_HOSTS_URL } from "@/components/destination/HarvestHostsCard";
 import { GettingThereItems, TourTicketItems } from "@/components/destination/TravelpayoutsCards";
@@ -94,10 +96,17 @@ import { commonsFilePage, parsePhotoCredit } from "@/lib/seo/imageCredit";
 
 import { destinationSearchDescription, destinationSearchTitle } from "@/lib/seo/routeSeo";
 
-export const Route = createFileRoute("/destinations/$slug")({
+export const Route = createFileRoute("/destinations/$slug/$region/$place/")({
   loader: async ({ params }): Promise<{ dest: DestinationView; landingLinks: LandingLink[]; locales: string[] }> => {
-    const dest = await getDestinationPageData({ data: { slug: params.slug } });
-    if (!dest) throw notFound();
+    const [dest, geo] = await Promise.all([
+      getDestinationPageData({ data: { slug: params.place } }),
+      getDestinationGeo({ data: { slug: params.place } }).catch(() => null),
+    ]);
+    if (!dest || !geo) throw notFound();
+    // Wrong country/region in the address → permanent redirect to the right one.
+    if (geo.country !== params.slug || geo.region !== params.region) {
+      throw redirect({ href: `/destinations/${geo.country}/${geo.region}/${dest.slug}`, statusCode: 301 });
+    }
     const landingLinks = await getLandingLinksForDestination({ data: { destinationId: dest.id } }).catch(() => []);
     const locales = await getDestinationLocales({ data: { slug: dest.slug } }).catch(() => []);
     return { dest, landingLinks, locales };
@@ -107,7 +116,7 @@ export const Route = createFileRoute("/destinations/$slug")({
     if (!d) return { meta: [{ title: "Destination — MiniaLife" }] };
     const title = destinationSearchTitle(d.name);
     const description = travelDescription(d, "destination", destinationSearchDescription(d.name, d.tagline, d.bestSeason));
-    const pageUrl = `${SITE_ORIGIN}/destinations/${d.slug}`;
+    const pageUrl = `${SITE_ORIGIN}${destinationPath(d.slug)}`;
     const jsonLd = buildDestinationJsonLd(d, pageUrl);
     return {
       meta: [
@@ -123,7 +132,7 @@ export const Route = createFileRoute("/destinations/$slug")({
         { property: "og:url", content: pageUrl },
         { property: "og:type", content: "article" },
       ],
-      links: [{ rel: "canonical", href: pageUrl }, ...hreflangLinks(`/destinations/${d.slug}`, ["en", ...(loaderData?.locales ?? []).filter(isLocale)])],
+      links: [{ rel: "canonical", href: pageUrl }, ...hreflangLinks(destinationPath(d.slug), ["en", ...(loaderData?.locales ?? []).filter(isLocale)])],
       scripts: [{ type: "application/ld+json", children: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }],
     };
   },
@@ -132,7 +141,7 @@ export const Route = createFileRoute("/destinations/$slug")({
 });
 
 function DestinationNotFound() {
-  const { slug } = Route.useParams();
+  const { place: slug } = Route.useParams();
   return (
     <div className="bg-beige/30">
       <Header />

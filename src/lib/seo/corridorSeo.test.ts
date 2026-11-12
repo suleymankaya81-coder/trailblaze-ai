@@ -19,13 +19,13 @@ describe("gateway suggested-trip data", () => {
     if (!("itinerary" in trip) || !trip.itinerary) throw new Error("Trip missing");
     expect(trip.itinerary.numberOfItems).toBe(7);
     expect(trip.itinerary.itemListElement.map((entry) => entry.item.url)).toEqual([
-      "https://minialife.com/destinations/san-francisco",
-      "https://minialife.com/destinations/yosemite",
-      "https://minialife.com/destinations/lake-tahoe",
-      "https://minialife.com/destinations/napa-valley",
-      "https://minialife.com/destinations/monterey",
-      "https://minialife.com/destinations/big-sur",
-      "https://minialife.com/destinations/san-francisco",
+      "https://minialife.com/destinations/us/california/san-francisco",
+      "https://minialife.com/destinations/us/california/yosemite",
+      "https://minialife.com/destinations/us/california/lake-tahoe",
+      "https://minialife.com/destinations/us/california/napa-valley",
+      "https://minialife.com/destinations/us/california/monterey",
+      "https://minialife.com/destinations/us/california/big-sur",
+      "https://minialife.com/destinations/us/california/san-francisco",
     ]);
     expect(trip.itinerary.itemListElement.at(-1)?.item.name).toBe("Return to San Francisco (SFO)");
   });

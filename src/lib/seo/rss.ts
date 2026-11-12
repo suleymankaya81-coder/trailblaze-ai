@@ -1,4 +1,5 @@
 import { SITE_ORIGIN } from "@/config/site";
+import { canonicalPath } from "@/lib/routes/paths";
 // Pure helpers for Pinterest RSS feeds (testable, no I/O).
 export const FEEDS = ["all", "parks", "rv", "best-time", "things-to-do"] as const;
 export type Feed = (typeof FEEDS)[number];
@@ -36,7 +37,7 @@ export type StoredPin = { key: string; image_url: string; release_at: string; fe
 /** Pins that carry their own reviewed copy and link (former manual-upload pins). */
 export function storedPinItem(p: StoredPin): FeedItem | null {
   if (!p.title || !p.description || !p.link || !/^https:\/\/minialife\.com\//.test(p.link)) return null;
-  return { title: p.title, description: p.description, link: p.link, image: p.image_url, releaseAt: p.release_at, date: p.release_at, feed: feedForPin(p.feed), indexable: true, published: true };
+  return { title: p.title, description: p.description, link: SITE_ORIGIN + canonicalPath(new URL(p.link).pathname), image: p.image_url, releaseAt: p.release_at, date: p.release_at, feed: feedForPin(p.feed), indexable: true, published: true };
 }
 
 export function withUtm(link: string): string {

@@ -2,7 +2,7 @@
 - [x] Step 1: central site config; all hard-coded origins in app code use it.
 - [x] Step 2: country_code/region_slug/currency on destinations + regions table (51 US regions).
 - [x] Step 3: shared address builder with tests.
-- [ ] Steps 4+5: nested country/region pages and moving destination/guide addresses with 301 map (next part).
+- [x] Steps 4+5: country/state pages (EN/DE), nested destination & guide addresses, 301s from all old forms, sitemap/RSS/JSON-LD/breadcrumbs updated.
 - [ ] Steps 6-9: country-aware partners, split sitemaps, migration day, final checks.
 
 ## November 11 daily Maps and travel metadata

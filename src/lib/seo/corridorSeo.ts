@@ -1,3 +1,4 @@
+import { destinationPath } from "@/lib/routes/paths";
 import { SITE_ORIGIN } from "@/config/site";
 import type { Corridor } from "./corridors";
 import { GATEWAY_TRIPS, HOME, ROAD_TRIPS, breadcrumbJsonLd, type Crumb } from "./breadcrumbs";
@@ -31,9 +32,9 @@ export function buildCorridorJsonLd(corridor: Corridor, stops: VisibleStop[], pa
   const itinerary = stops.map((stop) => ({
     "@type": "Place",
     name: stop.name,
-    url: `${SITE_ORIGIN}/destinations/${stop.slug}`,
+    url: `${SITE_ORIGIN}${destinationPath(stop.slug)}`,
   }));
-  if (first) itinerary.push({ "@type": "Place", name: `Return to ${first.name} (${corridor.gateway.code})`, url: `${SITE_ORIGIN}/destinations/${first.slug}` });
+  if (first) itinerary.push({ "@type": "Place", name: `Return to ${first.name} (${corridor.gateway.code})`, url: `${SITE_ORIGIN}${destinationPath(first.slug)}` });
   return {
     "@context": "https://schema.org",
     "@graph": [

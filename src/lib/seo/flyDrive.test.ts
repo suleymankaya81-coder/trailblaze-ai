@@ -55,7 +55,7 @@ describe("fly & drive structured itinerary", () => {
     expect(trip.url).toBe(url);
     expect(trip.itinerary?.itemListElement.map((stop) => stop.position)).toEqual([1, 2]);
     expect(trip.itinerary?.itemListElement[0].item.iataCode).toBe("BZN");
-    expect(trip.itinerary?.itemListElement[1].item.url).toBe(`${SITE}/destinations/yellowstone`);
+    expect(trip.itinerary?.itemListElement[1].item.url).toBe(`${SITE}/destinations/us/wyoming/yellowstone`);
     expect(trip).not.toHaveProperty("offers");
   });
   it("omits relative images from structured data", () => {

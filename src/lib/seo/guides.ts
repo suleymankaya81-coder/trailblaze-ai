@@ -1,3 +1,4 @@
+import { destinationPath } from "@/lib/routes/paths";
 // Pure helpers for the Phase B guide families:
 //   /no-reservation/{destination}, /road-trips/{loop}, /rv-camping/{destination}
 // Built only from stored destination data and the reviewed loops file — no AI per page.
@@ -145,7 +146,7 @@ export function destGuideJsonLd(opts: { name: string; slug: string; heroImage: s
   return {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "Article", headline: opts.title, url: opts.url, about: { "@type": "TouristDestination", name: opts.name, url: `${SITE}/destinations/${opts.slug}` }, ...(opts.heroImage.startsWith("https://") ? { image: opts.heroImage } : {}) },
+      { "@type": "Article", headline: opts.title, url: opts.url, about: { "@type": "TouristDestination", name: opts.name, url: `${SITE}${destinationPath(opts.slug)}` }, ...(opts.heroImage.startsWith("https://") ? { image: opts.heroImage } : {}) },
       breadcrumbJsonLd(placeGuideCrumbs(opts, opts.label, opts.url.replace(SITE, ""))),
       faqPage(opts.faqs),
     ],
@@ -166,7 +167,7 @@ export function loopJsonLd(loop: Loop, stops: LoopStop[], faqs: Faq[], url: stri
         itinerary: {
           "@type": "ItemList",
           itemListOrder: "https://schema.org/ItemListOrderAscending",
-          itemListElement: stops.map((s, i) => ({ "@type": "ListItem", position: i + 1, item: { "@type": "TouristDestination", name: s.name, url: `${SITE}/destinations/${s.slug}` } })),
+          itemListElement: stops.map((s, i) => ({ "@type": "ListItem", position: i + 1, item: { "@type": "TouristDestination", name: s.name, url: `${SITE}${destinationPath(s.slug)}` } })),
         },
       },
       breadcrumbJsonLd([HOME, ROAD_TRIPS, { name: loop.title, path: `/road-trips/${loop.slug}` }]),
