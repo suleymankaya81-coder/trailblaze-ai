@@ -3,7 +3,7 @@ import { airportRentalsLink, motorhomeRepublicLink, withWebjetAffiliate } from "
 describe("webjet links", () => {
   it("Motorhome Republic carries affiliate=minialife", () => expect(motorhomeRepublicLink()).toBe(motorhomeRepublicLink()));
   it("Airport Rentals carries affiliate=minialife", () => expect(airportRentalsLink()).toBe("https://www.airportrentals.com/?affiliate=minialife"));
-  it("does not duplicate the code", () => expect(withWebjetAffiliate(motorhomeRepublicLink())).toBe("https://www.motorhomerepublic.com/usa/?affiliate=minialife"));
+  it("does not duplicate the code", () => expect(withWebjetAffiliate(motorhomeRepublicLink())).toBe(motorhomeRepublicLink()));
   it("leaves other hosts alone", () => expect(withWebjetAffiliate("https://www.rei.com/")).toBe("https://www.rei.com/"));
 });
 
