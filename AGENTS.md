@@ -48,3 +48,5 @@
 - Shared components import Link from `@/components/site/LocalLink` (and wrap visible text in `<T>`); on non-English pages it targets the localized URL only for page families with a translated route, and missing phrases go into `phrases.<locale>.generated.json`. Why: no English links or fixed text on German pages.
 - Map/GPX exports use src/lib/routes/dayRoute.ts with verified coordinates only; Trip Builder state is URL/browser-only and noindex. Why: no API cost/invented points.
 - Origin/brand from `src/config/site.ts`; addresses from `src/lib/routes/paths.ts`; refresh destination-geo.json on publish.
+
+- Vehicle, RV and campground partner eligibility and local price currency come from `src/lib/affiliates/countryPartners.ts`; unsupported countries get no partner links. Why: new countries add one registry entry instead of page edits.
