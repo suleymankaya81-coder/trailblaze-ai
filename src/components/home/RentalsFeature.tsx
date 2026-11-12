@@ -2,6 +2,8 @@ import { T } from "@/lib/i18n";
 import { ArrowRight } from "lucide-react";
 import { motorhomeRepublicLink, airportRentalsLink } from "@/lib/affiliates/webjet";
 import banner from "@/assets/home/rentals-banner.jpg";
+import bfArt from "@/assets/rv_black_friday_2026.png.asset.json";
+import { isMhrBlackFridayLive } from "@/lib/affiliates/mhrBlackFriday";
 
 const OPTIONS = [
   { title: "RVs & motorhomes", text: "Room for the whole crew, kitchen and bed included.", price: "Est. from $150/day", href: motorhomeRepublicLink(), brand: "Motorhome Republic" },
@@ -13,6 +15,18 @@ const OPTIONS = [
 export function RentalsFeature() {
   return (
     <div>
+      {isMhrBlackFridayLive() && (
+        <a href={motorhomeRepublicLink()} target="_blank" rel="sponsored noopener" className="mb-6 grid overflow-hidden rounded-xl border border-border bg-card md:grid-cols-2">
+          <img src={bfArt.url} alt="Black Friday sale: save up to 35% off motorhome rentals" loading="lazy" className="h-full w-full object-cover" />
+          <div className="flex flex-col justify-center gap-3 p-6 md:p-8">
+            <span className="w-fit rounded-sm bg-accent px-3 py-1 font-mono text-xs font-bold uppercase tracking-wider text-accent-foreground"><T>Black Friday · ends 2 Dec</T></span>
+            <h2 className="font-display text-3xl leading-tight text-foreground"><T>Up to 35% off motorhome rentals</T></h2>
+            <p className="text-sm text-muted-foreground"><T>Cruise America &amp; Cruise Canada 35% off. Mighty Campers, Road Bear and El Monte RV up to 30% off; Native Campervans 20–30% off; CanaDream 20% off.</T></p>
+            <span className="inline-flex h-11 w-fit items-center gap-2 rounded-full bg-primary px-5 font-semibold text-primary-foreground"><T>See Black Friday RV deals</T> <ArrowRight className="h-4 w-4" /></span>
+            <p className="text-xs text-muted-foreground"><T>Selected travel dates, providers and T&amp;Cs apply. Deals range from 5–35% off.</T></p>
+          </div>
+        </a>
+      )}
       <div className="grid overflow-hidden rounded-xl border border-border bg-card md:grid-cols-[minmax(0,5fr)_minmax(0,12fr)]">
         <div className="flex flex-col justify-center gap-4 bg-secondary p-6 md:p-8">
           <span className="w-fit rounded-sm bg-accent px-3 py-1 font-mono text-xs font-bold uppercase tracking-wider text-accent-foreground"><T>Step 2 · Your wheels</T></span>

@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { motorhomeRepublicLink } from "./webjet";
 import { isApprovedRental, rentalPartnerUrl, RETIRED_CAR_PARTNERS } from "./rentalPolicy";
 
 describe("exclusive rental partnerships", () => {
@@ -15,6 +16,6 @@ describe("exclusive rental partnerships", () => {
     for (const partner of [...RETIRED_CAR_PARTNERS, "airport_rentals"]) {
       expect(rentalPartnerUrl(partner)).toBe("https://www.airportrentals.com/?affiliate=minialife");
     }
-    expect(rentalPartnerUrl("motorhome_republic")).toBe("https://www.motorhomerepublic.com/usa/?affiliate=minialife");
+    expect(rentalPartnerUrl("motorhome_republic")).toBe(motorhomeRepublicLink());
   });
 });

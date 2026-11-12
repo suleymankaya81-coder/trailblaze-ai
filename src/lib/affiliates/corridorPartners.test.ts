@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { motorhomeRepublicLink } from "./webjet";
 import { corridorPartnerLinks, verifiedViatorProductUrl } from "./corridorPartners";
 
 describe("Grand Circle partner attribution", () => {
@@ -7,7 +8,7 @@ describe("Grand Circle partner attribution", () => {
     expect(links.car).toBe("https://www.airportrentals.com/?affiliate=minialife");
     expect(new URL(links.esim).hostname).toBe("airalo.tpm.lv");
     expect(new URL(links.flight).searchParams.get("sub_id")).toBe("grand-circle-from-las-vegas");
-    expect(links.motorhome).toBe("https://www.motorhomerepublic.com/usa/?affiliate=minialife");
+    expect(links.motorhome).toBe(motorhomeRepublicLink());
   });
   it("preserves verified direct Viator API attribution without Awin", () => {
     const link = "https://www.viator.com/tours/Page/Upper-Antelope-Canyon-Tour/d23393-142864P1?pid=P00327298&mcid=42383&medium=api&api_version=2.0";

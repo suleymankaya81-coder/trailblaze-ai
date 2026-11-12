@@ -4,6 +4,7 @@ import { ArrowUpRight, Car, Caravan, Compass, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { corridorPartnerLinks } from "@/lib/affiliates/corridorPartners";
 import { estimatedFrom } from "@/lib/data/servicePhotos";
+import { isMhrBlackFridayLive } from "@/lib/affiliates/mhrBlackFriday";
 import { validViatorHeight } from "@/lib/affiliates/viatorDisplay";
 
 /** First-screen two-up showcase: vehicles & RVs (left) and the top real Viator tour for this place (right). */
@@ -34,7 +35,7 @@ function VehicleShowcase({ slug, airportCode, vehicleNote }: { slug: string; air
               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-secondary text-foreground"><r.icon className="h-5 w-5" /></span>
               <span className="min-w-0 flex-1">
                 <span className="block text-sm font-semibold text-foreground"><T>{r.label}</T></span>
-                <span className="block text-xs text-muted-foreground">{r.brand}</span>
+                <span className="block text-xs text-muted-foreground">{r.brand}{r.brand === "Motorhome Republic" && isMhrBlackFridayLive() && <span className="ml-2 rounded-sm bg-accent px-1.5 py-0.5 font-semibold text-accent-foreground"><T>Black Friday: up to 35% off</T></span>}</span>
               </span>
               <span className="text-right">
                 <span className="block text-sm font-semibold text-foreground"><T>{r.price}</T></span>
