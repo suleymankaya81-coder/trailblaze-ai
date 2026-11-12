@@ -145,3 +145,10 @@
 - [x] Wave 2: 12 entry cities published (New York City, Philadelphia, Atlanta, Nashville, Houston, Dallas–Fort Worth, Sacramento, Charlotte, Minneapolis, Pittsburgh, San Antonio, St. Louis; Seward/Fairbanks already existed) with 48 guides
 - [x] Waves 3–5: 36 places published in one run without search guides (20 planned names already existed and were replaced with new towns); all 36 pages verified
 - [ ] Wave 6: finish 6 catalog places (Badlands, Beartooth, Blue Ridge, Jean Lafitte, Lost Maples, Tallgrass Prairie)
+
+## Domain switch day (wildparkroutes.com)
+- [ ] Connect wildparkroutes.com and make it primary (Project Settings → Domains)
+- [ ] Set MIGRATED = true in src/config/site.ts
+- [ ] Replace minialife.com in public/robots.txt and public/llms.txt
+- [ ] Connect world-national-parks.net to the project (non-primary)
+- [ ] Publish; submit new sitemap and Change of Address in Search Console

@@ -43,6 +43,9 @@ export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
       const url = new URL(request.url);
+      // Domain/legacy redirects first, so extra domains never serve their own sitemap or RSS.
+      const legacy = legacyResponse(url);
+      if (legacy) return legacy;
       if (url.pathname === "/sitemap.xml") {
         return await buildSitemapResponse(url.origin);
       }
@@ -57,9 +60,6 @@ export default {
         const res = await buildRss(rss);
         if (res) return res;
       }
-      const legacy = legacyResponse(url);
-      if (legacy) return legacy;
-
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
       return await normalizeCatastrophicSsrResponse(response);
