@@ -49,4 +49,4 @@
 - Map/GPX exports use src/lib/routes/dayRoute.ts with verified coordinates only; Trip Builder state is URL/browser-only and noindex. Why: no API cost/invented points.
 - Origin/brand from `src/config/site.ts`; addresses from `src/lib/routes/paths.ts`; refresh destination-geo.json on publish.
 
-- Vehicle, RV and campground partner eligibility and local price currency come from `src/lib/affiliates/countryPartners.ts`; unsupported countries get no partner links. Why: new countries add one registry entry instead of page edits.
+- Country partner eligibility/currency: countryPartners.ts. Why: one entry per new country.
