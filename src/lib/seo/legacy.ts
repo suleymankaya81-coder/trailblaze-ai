@@ -1,4 +1,4 @@
-import { AUTHORITY_HOSTS, REDIRECT_HOSTS, SITE_ORIGIN } from "@/config/site";
+import { AUTHORITY_HOSTS, LEGACY_HOSTS, MIGRATED, REDIRECT_HOSTS, SITE_ORIGIN } from "@/config/site";
 import { canonicalPath } from "@/lib/routes/paths";
 // Addresses from the previous site design (deleted on purpose). Answer them
 // with 301 (clear modern equivalent) or 410 Gone so Google drops them fast.
@@ -49,6 +49,21 @@ export function authorityTarget(path: string, onAuthorityHost: boolean): string 
 const moved301 = (location: string) =>
   new Response(null, { status: 301, headers: { location, "cache-control": "public, max-age=86400" } });
 
+export const isLegacyHost = (host: string) => LEGACY_HOSTS.includes(host.toLowerCase());
+
+/** On the old domain: forward a page that exists now (200) to the new domain, answer anything else with 410. */
+export function legacyHostResponse(url: URL, status: number): Response {
+  const path = url.pathname.replace(/\/+$/, "") || "/";
+  return status === 200 ? moved301(`${SITE_ORIGIN}${canonicalPath(path)}${url.search}`) : goneResponse();
+}
+
+function goneResponse(): Response {
+  return new Response(
+    '<!doctype html><html><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>Page removed</title></head><body style="font-family:sans-serif;padding:3rem;text-align:center"><h1>This page has been permanently removed</h1></body></html>',
+    { status: 410, headers: { "content-type": "text/html; charset=utf-8", "x-robots-tag": "noindex, nofollow", "cache-control": "public, max-age=86400" } },
+  );
+}
+
 export function legacyResponse(url: URL): Response | null {
   const path = url.pathname.replace(/\/+$/, "") || "/";
   const host = url.hostname.toLowerCase();
@@ -62,7 +77,7 @@ export function legacyResponse(url: URL): Response | null {
   if (moved !== path) {
     return new Response(null, {
       status: 301,
-      headers: { location: `${moved}${url.search}`, "cache-control": "public, max-age=86400" },
+      headers: { location: `${SITE_ORIGIN}${moved}${url.search}`, "cache-control": "public, max-age=86400" },
     });
   }
   const to = REDIRECTS[path];
@@ -72,6 +87,8 @@ export function legacyResponse(url: URL): Response | null {
       headers: { location: `${SITE_ORIGIN}${to}`, "cache-control": "public, max-age=86400" },
     });
   }
+  // The new domain never had the old-design addresses: they are plain 404s there, not kept rules.
+  if (MIGRATED && !LEGACY_HOSTS.includes(host)) return null;
   if (GONE_PREFIXES.some((p) => path === p || path.startsWith(p + "/"))) {
     return new Response(
       '<!doctype html><html><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>Page removed — MiniaLife</title></head><body style="font-family:sans-serif;padding:3rem;text-align:center"><h1>This page has been permanently removed</h1><p><a href="/destinations">Explore our destination guides</a></p></body></html>',

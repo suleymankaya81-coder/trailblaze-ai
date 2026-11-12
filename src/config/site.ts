@@ -10,7 +10,9 @@ export const NEW_ORIGIN = "https://wildparkroutes.com";
 export const SITE_ORIGIN = MIGRATED ? NEW_ORIGIN : LEGACY_ORIGIN;
 /** Hosts that permanently redirect to SITE_ORIGIN (same path). The authority domain also maps its old pages. */
 export const AUTHORITY_HOSTS = ["world-national-parks.net", "www.world-national-parks.net"];
-export const REDIRECT_HOSTS = [...AUTHORITY_HOSTS, ...(MIGRATED ? ["minialife.com", "www.minialife.com"] : [])];
+export const REDIRECT_HOSTS = [...AUTHORITY_HOSTS];
+/** After migration the old domain only forwards pages that still exist; everything else gets 410 there and never reaches the new domain. */
+export const LEGACY_HOSTS = MIGRATED ? ["minialife.com", "www.minialife.com"] : [];
 export const SITE_DOMAIN = new URL(SITE_ORIGIN).host;
 export const BRAND_NAME = "MiniaLife";
 export const CONTACT_EMAIL = "info@minialife.com";

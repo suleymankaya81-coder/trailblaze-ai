@@ -148,7 +148,7 @@
 
 ## Domain switch day (wildparkroutes.com)
 - [ ] Connect wildparkroutes.com and make it primary (Project Settings → Domains)
-- [ ] Set MIGRATED = true in src/config/site.ts
+- [ ] Set MIGRATED = true in src/config/site.ts (old domain then forwards only live pages, 410 for the rest)
 - [ ] Replace minialife.com in public/robots.txt and public/llms.txt
 - [ ] Connect world-national-parks.net to the project (non-primary)
 - [ ] Publish; submit new sitemap and Change of Address in Search Console

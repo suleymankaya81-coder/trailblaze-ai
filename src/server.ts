@@ -2,7 +2,7 @@ import "./lib/error-capture";
 
 import { consumeLastCapturedError } from "./lib/error-capture";
 import { renderErrorPage } from "./lib/error-page";
-import { legacyResponse } from "./lib/seo/legacy";
+import { isLegacyHost, legacyHostResponse, legacyResponse } from "./lib/seo/legacy";
 import { buildChildSitemap, buildSitemapResponse } from "./lib/seo/sitemap.server";
 
 type ServerEntry = {
@@ -46,6 +46,7 @@ export default {
       // Domain/legacy redirects first, so extra domains never serve their own sitemap or RSS.
       const legacy = legacyResponse(url);
       if (legacy) return legacy;
+      if (isLegacyHost(url.hostname) && /^\/(sitemap|sitemaps\/|rss)/.test(url.pathname)) return legacyHostResponse(url, 200);
       if (url.pathname === "/sitemap.xml") {
         return await buildSitemapResponse(url.origin);
       }
@@ -62,6 +63,7 @@ export default {
       }
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
+      if (isLegacyHost(url.hostname)) return legacyHostResponse(url, response.status);
       return await normalizeCatastrophicSsrResponse(response);
     } catch (error) {
       console.error(error);
