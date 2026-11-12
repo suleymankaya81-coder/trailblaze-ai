@@ -14,18 +14,18 @@ describe("gateway suggested-trip data", () => {
       { slug: "monterey", name: "Monterey" },
       { slug: "big-sur", name: "Big Sur" },
     ];
-    const result = buildCorridorJsonLd(corridor, stops, "https://minialife.com/corridors/california-icons-from-san-francisco");
+    const result = buildCorridorJsonLd(corridor, stops, "https://wildparkroutes.com/corridors/california-icons-from-san-francisco");
     const trip = result["@graph"][0];
     if (!("itinerary" in trip) || !trip.itinerary) throw new Error("Trip missing");
     expect(trip.itinerary.numberOfItems).toBe(7);
     expect(trip.itinerary.itemListElement.map((entry) => entry.item.url)).toEqual([
-      "https://minialife.com/destinations/us/california/san-francisco",
-      "https://minialife.com/destinations/us/california/yosemite",
-      "https://minialife.com/destinations/us/california/lake-tahoe",
-      "https://minialife.com/destinations/us/california/napa-valley",
-      "https://minialife.com/destinations/us/california/monterey",
-      "https://minialife.com/destinations/us/california/big-sur",
-      "https://minialife.com/destinations/us/california/san-francisco",
+      "https://wildparkroutes.com/destinations/us/california/san-francisco",
+      "https://wildparkroutes.com/destinations/us/california/yosemite",
+      "https://wildparkroutes.com/destinations/us/california/lake-tahoe",
+      "https://wildparkroutes.com/destinations/us/california/napa-valley",
+      "https://wildparkroutes.com/destinations/us/california/monterey",
+      "https://wildparkroutes.com/destinations/us/california/big-sur",
+      "https://wildparkroutes.com/destinations/us/california/san-francisco",
     ]);
     expect(trip.itinerary.itemListElement.at(-1)?.item.name).toBe("Return to San Francisco (SFO)");
   });
@@ -33,7 +33,7 @@ describe("gateway suggested-trip data", () => {
   it("does not turn partner links into an offer or promise availability", () => {
     const corridor = CORRIDORS[0];
     if (!corridor) throw new Error("Corridor missing");
-    const result = buildCorridorJsonLd(corridor, [{ slug: "las-vegas", name: "Las Vegas" }], "https://minialife.com/corridors/grand-circle-from-las-vegas");
+    const result = buildCorridorJsonLd(corridor, [{ slug: "las-vegas", name: "Las Vegas" }], "https://wildparkroutes.com/corridors/grand-circle-from-las-vegas");
     expect(result["@graph"][0]["@type"]).toBe("TouristTrip");
     expect(result["@graph"][0]).not.toHaveProperty("offers");
     expect(result["@graph"][0]).not.toHaveProperty("availability");

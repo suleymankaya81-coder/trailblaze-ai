@@ -20,9 +20,9 @@ describe("i18n", () => {
     expect(hreflangLinks("/destinations/zion", ["en"])).toEqual([]);
     const links = hreflangLinks("/destinations/zion", ["en", "de"]);
     expect(links.map((l) => [l.hrefLang, l.href])).toEqual([
-      ["en", "https://minialife.com/destinations/zion"],
-      ["de", "https://minialife.com/de/destinations/zion"],
-      ["x-default", "https://minialife.com/destinations/zion"],
+      ["en", "https://wildparkroutes.com/destinations/zion"],
+      ["de", "https://wildparkroutes.com/de/destinations/zion"],
+      ["x-default", "https://wildparkroutes.com/destinations/zion"],
     ]);
   });
 });

@@ -13,8 +13,8 @@ describe("country-split sitemaps", () => {
   it("keeps old names answerable", () => expect(parseChild("destinations")).toEqual({ country: null, kind: "destinations" }));
   it("rejects unknown names", () => expect(parseChild("fr-destinations")).toBeNull());
   it("emits en/de/x-default hreflang", () => {
-    const xml = urlsetXml([{ loc: "https://minialife.com/destinations/us/maine/acadia", alternates: destinationAlternates("acadia") }]);
-    expect(xml).toContain('hreflang="de" href="https://minialife.com/de/destinations/us/maine/acadia"');
-    expect(xml).toContain('hreflang="x-default" href="https://minialife.com/destinations/us/maine/acadia"');
+    const xml = urlsetXml([{ loc: "https://wildparkroutes.com/destinations/us/maine/acadia", alternates: destinationAlternates("acadia") }]);
+    expect(xml).toContain('hreflang="de" href="https://wildparkroutes.com/de/destinations/us/maine/acadia"');
+    expect(xml).toContain('hreflang="x-default" href="https://wildparkroutes.com/destinations/us/maine/acadia"');
   });
 });

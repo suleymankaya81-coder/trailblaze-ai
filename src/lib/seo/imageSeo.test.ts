@@ -10,7 +10,7 @@ describe("image credit parsing", () => {
   it("preserves verified alternative-source credits and links", () => {
     const result = parsePhotoCredit("Hero: Carol M. Highsmith / Public domain via Library of Congress | https://www.loc.gov/item/example/");
     expect(result.hero).toEqual({ creator: "Carol M. Highsmith", license: "Public domain", licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/", source: "Library of Congress", sourceUrl: "https://www.loc.gov/item/example/" });
-    const images = buildDestinationImages({ name: "Seattle", region: "Washington", heroImage: "https://minialife.com/photo.jpg", gallery: [], photoCredit: "Hero: Carol M. Highsmith / Public domain via Library of Congress | https://www.loc.gov/item/example/" });
+    const images = buildDestinationImages({ name: "Seattle", region: "Washington", heroImage: "https://wildparkroutes.com/photo.jpg", gallery: [], photoCredit: "Hero: Carol M. Highsmith / Public domain via Library of Congress | https://www.loc.gov/item/example/" });
     expect(images[0]).toMatchObject({ creditText: "Carol M. Highsmith / Public domain via Library of Congress", acquireLicensePage: "https://www.loc.gov/item/example/" });
     expect(parsePhotoCredit("Hero: Conner Berry / Pexels License via Pexels | https://www.pexels.com/photo/close-up-of-stacked-rocks-16581130/").hero?.licenseUrl).toBe("https://www.pexels.com/license/");
   });
@@ -21,7 +21,7 @@ describe("image credit parsing", () => {
     expect(r.gallery[1]?.licenseUrl).toBe("https://creativecommons.org/licenses/by/4.0/");
   });
   it("makes relative paths absolute and rejects http", () => {
-    expect(toAbsoluteImageUrl("/__l5e/a.jpg")).toBe("https://minialife.com/__l5e/a.jpg");
+    expect(toAbsoluteImageUrl("/__l5e/a.jpg")).toBe("https://wildparkroutes.com/__l5e/a.jpg");
     expect(toAbsoluteImageUrl("http://x.org/a.jpg")).toBeNull();
     expect(toAbsoluteImageUrl("")).toBeNull();
   });
@@ -44,7 +44,7 @@ describe("image structured data", () => {
 
 describe("image sitemap", () => {
   it("escapes XML and declares the image namespace", () => {
-    const xml = urlsetXml([{ loc: "https://minialife.com/a", images: ["https://x.org/a.jpg?b=1&c=2"] }]);
+    const xml = urlsetXml([{ loc: "https://wildparkroutes.com/a", images: ["https://x.org/a.jpg?b=1&c=2"] }]);
     expect(xml).toContain('xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"');
     expect(xml).toContain("a.jpg?b=1&amp;c=2");
   });

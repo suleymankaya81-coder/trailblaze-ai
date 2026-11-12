@@ -4,7 +4,7 @@
  * canonical, sitemap, RSS, hreflang, breadcrumb and JSON-LD URL follows.
  */
 // Migration switch: set MIGRATED = true once wildparkroutes.com is connected and primary.
-export const MIGRATED = false;
+export const MIGRATED = true;
 export const LEGACY_ORIGIN = "https://minialife.com";
 export const NEW_ORIGIN = "https://wildparkroutes.com";
 export const SITE_ORIGIN = MIGRATED ? NEW_ORIGIN : LEGACY_ORIGIN;

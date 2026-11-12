@@ -24,11 +24,11 @@ describe("breadcrumbs", () => {
   it("JSON-LD uses absolute URLs with ordered positions", () => {
     const ld = breadcrumbJsonLd(destinationCrumbs(dest));
     expect(ld.itemListElement.map((i) => [i.position, i.item])).toEqual([
-      [1, "https://minialife.com/"],
-      [2, "https://minialife.com/destinations"],
-      [3, "https://minialife.com/destinations/us"],
-      [4, "https://minialife.com/destinations/us/wyoming"],
-      [5, "https://minialife.com/destinations/us/wyoming/yellowstone"],
+      [1, "https://wildparkroutes.com/"],
+      [2, "https://wildparkroutes.com/destinations"],
+      [3, "https://wildparkroutes.com/destinations/us"],
+      [4, "https://wildparkroutes.com/destinations/us/wyoming"],
+      [5, "https://wildparkroutes.com/destinations/us/wyoming/yellowstone"],
     ]);
   });
 });
