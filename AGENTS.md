@@ -49,4 +49,4 @@
 - Map/GPX exports: dayRoute.ts, verified coordinates only; Trip Builder is URL/browser-only, noindex. Why: no API cost/invented points.
 - Origin/brand: config/site.ts; addresses: routes/paths.ts; refresh destination-geo.json on publish.
 
-- Country partner eligibility/currency: countryPartners.ts. Why: one entry per new country.
+- Country partner eligibility/currency: countryPartners.ts. Why: one entry per country.
