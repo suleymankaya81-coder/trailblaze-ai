@@ -20,12 +20,16 @@ function hub(keyword: string, titleCandidates: string[], descriptionCandidates: 
 
 export const HUB_SEO = {
   // "road trip planner" 27.1k/mo; "how to plan a road trip" 135k/mo.
+  // Global wording: brand targets worldwide parks, not only the USA.
   home: hub(
     "road trip planner",
-    [`Free Road Trip Planner: USA Outdoor Itineraries${BRAND}`, `Free USA Road Trip Planner${BRAND}`],
     [
-      "How to plan a road trip in the USA: free self-drive itineraries for national parks, airport loops and RV routes — with maps, entry notes and booking links.",
-      "Free USA road trip planner: self-drive itineraries for national parks, airport loops and RV routes, with maps and entry notes.",
+      `Road Trip Planner: National Parks & Scenic Itineraries${BRAND}`,
+      `Worldwide Road Trip Planner${BRAND}`,
+    ],
+    [
+      "Free self-drive itineraries, national park guides, airport loops and RV routes worldwide — with interactive maps, entry rules and verified booking links.",
+      "Free self-drive itineraries, national park guides, airport loops and RV routes worldwide — with maps, entry rules and booking links.",
     ],
   ),
   // "national parks usa" 9.9k/mo.
