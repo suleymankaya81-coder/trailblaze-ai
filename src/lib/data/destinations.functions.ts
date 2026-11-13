@@ -1,3 +1,4 @@
+import { buildAwinLink } from "@/lib/affiliates/awin";
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 
@@ -83,7 +84,7 @@ function toOfferView(row: Tables<"offers">): OfferView {
     priceDisplay: row.price_display,
     priceValue: row.price_value,
     priceUnit: row.price_unit,
-    externalUrl: row.external_url ? withWebjetAffiliate(row.external_url) : null,
+    externalUrl: !row.external_url ? null : row.network === "awin" && row.network_mid ? buildAwinLink({ id: row.id, partner: row.partner, networkMid: row.network_mid, externalUrl: row.external_url }, row.id) : withWebjetAffiliate(row.external_url),
     whyRecommended: row.why_recommended,
     description: row.description,
     duration: row.duration,
