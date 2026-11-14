@@ -2,7 +2,7 @@
 // The measurement ID is a public value; it is safe to keep in client code.
 import { classifyPartnerLink, pageContext } from "./affiliateTracking";
 
-const MEASUREMENT_ID = "G-SVQECQ1RK3";
+const MEASUREMENT_ID = "G-TP8GK1587S";
 
 declare global {
   interface Window {
