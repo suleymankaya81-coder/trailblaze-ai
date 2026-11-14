@@ -1,3 +1,7 @@
+## November 14 map resilience
+- [x] Add shared OSM raster recovery, loading/error states, retry and Maps handoff; preserve stored route geometry and markers.
+- [x] Verify normal, primary-provider-blocked and all-providers-blocked maps on desktop and phone, including German errors; 12 tests pass and preview build OK. Not published.
+
 ## November 12 domain & international URL plan (Bölüm 2)
 - [x] Step 1: central site config; all hard-coded origins in app code use it.
 - [x] Step 2: country_code/region_slug/currency on destinations + regions table (51 US regions).
