@@ -23,6 +23,7 @@ export type GuideSegment = (typeof GUIDES)[number]["segment"];
 
 export const COUNTRIES: Record<string, { name: string; nameDe: string }> = {
   us: { name: "United States", nameDe: "USA" },
+  ca: { name: "Canada", nameDe: "Kanada" },
 };
 
 export function slugifyRegion(name: string): string {

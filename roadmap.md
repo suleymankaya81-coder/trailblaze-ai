@@ -160,7 +160,9 @@
 ## Canada launch (plan 2026-11-15)
 - [x] Cleaned catalog: scripts/content-pipeline/canada/catalog.json (148 places, 20/84/44 by wave, 18 fly-in)
 - [x] Database: 13 CA regions (draft), destinations.park_authority + access_type
-- [ ] Canadian airport search + anchors in prepare-wave.py
-- [ ] Wave 1 facts → review → publish (spends AI credits; waits for owner go-ahead)
-- [ ] Hide US-only partners on CA pages; fly-in page variant; tests
+- [x] Canadian airport search + anchors in prepare-wave.py
+- [x] Wave 1: 20 places published (photos reviewed, main-airport overrides, official reservation sources)
+- [x] Hide US-only partners + Black Friday on CA pages; test
+- [ ] CA pages still show US-dollar 'typical rate' estimates on rental cards — decide: hide or convert to CAD
+- [ ] Fly-in page variant (wave 3)
 - [ ] Waves 2–3, German versions, world-national-parks.net Canada 301s

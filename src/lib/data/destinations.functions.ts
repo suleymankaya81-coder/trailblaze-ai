@@ -60,6 +60,7 @@ export type DestinationView = {
   permitSourceUrl: string | null;
   travelPlan: TravelPlan | null;
   airportCode: string | null;
+  countryCode: string;
   airportName: string | null;
   airportLat: number | null;
   airportLng: number | null;
@@ -195,6 +196,7 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       permitSourceUrl: dest.permit_source_url,
       travelPlan: parseTravelPlan(dest.travel_plan),
       airportCode: dest.nearest_airport_code,
+      countryCode: dest.country_code ?? "us",
       airportName: dest.nearest_airport_name,
       airportLat: dest.airport_lat,
       airportLng: dest.airport_lng,

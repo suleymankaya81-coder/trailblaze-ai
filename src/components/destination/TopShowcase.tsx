@@ -9,10 +9,12 @@ import { validViatorHeight } from "@/lib/affiliates/viatorDisplay";
 import bfArt from "@/assets/rv_black_friday_2026.png.asset.json";
 
 /** First-screen two-up showcase: vehicles & RVs (left) and the top real Viator tour for this place (right). */
-export function TopShowcase({ slug, name, airportCode, vehicleNote }: { slug: string; name: string; airportCode: string | null; vehicleNote?: string | null }) {
+export function TopShowcase({ slug, name, airportCode, vehicleNote, country = "us" }: { slug: string; name: string; airportCode: string | null; vehicleNote?: string | null; country?: string }) {
+  // The Black Friday deal is US-only; other countries keep the regular vehicle card.
+  const bf = isMhrBlackFridayLive() && country === "us";
   return (
     <section id="trip-vehicles" aria-label={`Vehicles and tours for ${name}`} className="scroll-mt-40 grid gap-5 md:grid-cols-2 md:items-stretch">
-      {isMhrBlackFridayLive() ? <BlackFridayShowcase slug={slug} /> : <VehicleShowcase slug={slug} airportCode={airportCode} vehicleNote={vehicleNote} />}
+      {bf ? <BlackFridayShowcase slug={slug} /> : <VehicleShowcase slug={slug} airportCode={airportCode} vehicleNote={vehicleNote} country={country} />}
       <TourShowcase slug={slug} name={name} />
     </section>
   );
@@ -29,12 +31,13 @@ function BlackFridayShowcase({ slug }: { slug: string }) {
   );
 }
 
-function VehicleShowcase({ slug, airportCode, vehicleNote }: { slug: string; airportCode: string | null; vehicleNote?: string | null }) {
+function VehicleShowcase({ slug, airportCode, vehicleNote, country = "us" }: { slug: string; airportCode: string | null; vehicleNote?: string | null; country?: string }) {
   const l = corridorPartnerLinks(slug);
+  const us = country === "us";
   const rows = [
-    { icon: Car, label: "Standard car", price: estimatedFrom("standard car"), brand: "Airport Rentals", href: l.car },
-    { icon: Truck, label: "SUV", price: estimatedFrom("suv"), brand: "Airport Rentals", href: l.car },
-    { icon: Caravan, label: "RV / motorhome", price: estimatedFrom("rv"), brand: "Motorhome Republic", href: l.motorhome },
+    { icon: Car, label: "Standard car", price: us ? estimatedFrom("standard car") : null, brand: "Airport Rentals", href: l.car },
+    { icon: Truck, label: "SUV", price: us ? estimatedFrom("suv") : null, brand: "Airport Rentals", href: l.car },
+    { icon: Caravan, label: "RV / motorhome", price: us ? estimatedFrom("rv") : null, brand: "Motorhome Republic", href: l.motorhome },
   ];
   return (
     <div className="flex flex-col rounded-xl border border-border bg-card p-5 md:p-6">
@@ -47,12 +50,12 @@ function VehicleShowcase({ slug, airportCode, vehicleNote }: { slug: string; air
               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-secondary text-foreground"><r.icon className="h-5 w-5" /></span>
               <span className="min-w-0 flex-1">
                 <span className="block text-sm font-semibold text-foreground"><T>{r.label}</T></span>
-                <span className="block text-xs text-muted-foreground">{r.brand}{r.brand === "Motorhome Republic" && isMhrBlackFridayLive() && <span className="ml-2 rounded-sm bg-accent px-1.5 py-0.5 font-semibold text-accent-foreground"><T>Black Friday: up to 35% off</T></span>}</span>
+                <span className="block text-xs text-muted-foreground">{r.brand}{r.brand === "Motorhome Republic" && us && isMhrBlackFridayLive() && <span className="ml-2 rounded-sm bg-accent px-1.5 py-0.5 font-semibold text-accent-foreground"><T>Black Friday: up to 35% off</T></span>}</span>
               </span>
-              <span className="text-right">
+              {r.price && <span className="text-right">
                 <span className="block text-sm font-semibold text-foreground"><T>{r.price}</T></span>
                 <span className="block text-[10px] text-muted-foreground"><T>typical rate</T></span>
-              </span>
+              </span>}
               <ArrowUpRight className="h-4 w-4 shrink-0 text-foreground/40" />
             </a>
           </li>

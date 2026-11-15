@@ -1,12 +1,17 @@
 import { tpLink } from "./travelpayouts";
 import { airportRentalsLink, motorhomeRepublicLink } from "./webjet";
+import { rvLinkFor } from "./countryPartners";
+import geo from "@/data/destination-geo.json";
+
+const countryOf = (slug: string) => ((geo as Record<string, string>)[slug] ?? "us").split("/")[0];
 
 export function corridorPartnerLinks(slug: string) {
   return {
     flight: tpLink("aviasales", slug),
     car: airportRentalsLink(),
     esim: tpLink("airalo", slug),
-    motorhome: motorhomeRepublicLink(),
+    // Country-aware: Canadian places use the Canada search, never the US-only campaign page.
+    motorhome: countryOf(slug) === "us" ? motorhomeRepublicLink() : rvLinkFor(countryOf(slug)) ?? motorhomeRepublicLink("/canada/"),
     airportRentals: airportRentalsLink(),
   };
 }
