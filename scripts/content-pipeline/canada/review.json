@@ -1,6 +1,6 @@
 {
   "reviewed": "2026-11-15",
-  "scope": "Sourced corrections; wave 1 (20 places) claim-by-claim verified 2026-11-15, other places targeted only.",
+  "scope": "Sourced corrections; wave 1 (20 places) and first 19 wave-2 places claim-by-claim verified 2026-11-15, other places targeted only.",
   "records": {
     "clear-lake": {
       "fields": {
@@ -3238,58 +3238,56 @@
     "bowron-lake-provincial-park": {
       "fields": {
         "travel_plan": {
-          "arrival": "Pick up rental in Quesnel (YQZ), drive to Wells for final supplies and a bear-proof canister, then proceed to the Bowron Lake park office.",
           "days": [
             {
-              "driving": "Walking/Paddling only; allow 6–8 hours for portaging and lake transit; conditions vary.",
-              "note": "Mandatory weigh-ins for canoe carts occur at the registration centre to protect trail integrity.",
-              "start": "Suggested: 8 AM from Bowron Lake Registration Centre",
+              "note": "If using a canoe cart, cargo carried in the canoe must not exceed 28 kg; backpack excess gear. Maximum cart axle width is 75 cm.",
+              "start": "Start at the registration centre after your assigned registration and orientation; this is the first stage of a 6–10-day full circuit.",
               "stops": [
                 {
-                  "detail": "Begin the journey with the first portage and paddle, experiencing the transition from the park entrance to the wilderness interior.",
-                  "name": "Kibbee Lake"
+                  "name": "Kibbee Lake",
+                  "detail": "Begin the journey with the first portage and paddle, experiencing the transition from the park entrance to the wilderness interior."
                 },
                 {
-                  "detail": "Navigate the calm waters of this second lake, often a prime location for spotting moose in the early morning or evening.",
-                  "name": "Indianpoint Lake"
+                  "name": "Indianpoint Lake",
+                  "detail": "Navigate the calm waters of this second lake, often a prime location for spotting moose in the early morning or evening."
                 }
               ],
-              "title": "Circuit Orientation and Upper Lakes"
+              "title": "Circuit Orientation and Upper Lakes",
+              "driving": "Walking/Paddling only; allow 6–8 hours for portaging and lake transit; conditions vary."
             },
             {
-              "driving": "Paddling only; allow 7–9 hours for the length of Isaac Lake; conditions vary.",
               "note": "Wind on Isaac Lake can create significant waves; it is advisable to paddle close to the shore.",
               "start": "Suggested: 7:30 AM from Isaac Lake Entrance",
               "stops": [
                 {
-                  "detail": "Paddle the longest lake in the circuit, stretching over 30 kilometers and surrounded by the Cariboo Mountains.",
-                  "name": "Isaac Lake"
+                  "name": "Isaac Lake",
+                  "detail": "Isaac Lake has a 6.8 km west arm and a 31.2 km main arm; high winds can create rough water."
                 },
                 {
-                  "detail": "Navigate the Cariboo River section connecting the lakes, requiring careful attention to water levels and currents.",
-                  "name": "The Chute"
+                  "name": "The Chute",
+                  "detail": "The Chute is on the Isaac River, not the Cariboo River. Land at the portage sign and inspect it; inexperienced paddlers should portage. Follow all signed portages around the cascades, log jam and Isaac River Falls toward McLeary Lake."
                 }
               ],
-              "title": "The Grand Lakes Transition"
+              "title": "The Grand Lakes Transition",
+              "driving": "Paddling and portaging, not driving. Split the Isaac Lake and river section over appropriate stages; do not assume a fixed one-day transit."
             },
             {
-              "driving": "Paddling only; allow 6–8 hours for southern circuit navigation; conditions vary.",
               "note": "Bear safety protocols are strictly enforced in all campsites; utilize provided food caches.",
-              "start": "Suggested: 9 AM from Lanezi Lake",
+              "start": "Continue from Lanezi Lake only after completing the intervening Isaac River, McLeary Lake and Cariboo River stages.",
               "stops": [
                 {
-                  "detail": "Experience the deep glacial waters and dramatic mountain backdrops of the southern portion of the circuit.",
-                  "name": "Lanezi Lake"
+                  "name": "Lanezi Lake",
+                  "detail": "Experience the deep glacial waters and dramatic mountain backdrops of the southern portion of the circuit."
                 },
                 {
-                  "detail": "Explore the sandy beaches and wetlands that offer a contrast to the high-alpine feel of the northern lakes.",
-                  "name": "Sandy Lake"
+                  "name": "Sandy Lake",
+                  "detail": "Explore the sandy beaches and wetlands that offer a contrast to the high-alpine feel of the northern lakes."
                 }
               ],
-              "title": "Cariboo Wilderness and Historic Wells"
+              "title": "Southern Circuit Stage: Lanezi and Sandy Lakes",
+              "driving": "Paddling only on this lake stage; the three stages listed here are not a complete circuit itinerary. Allow 6–10 days for the full route and plan the remaining western lakes and portages."
             }
           ],
-          "goldenHour": "The north end of Isaac Lake, with views dependent on summer cloud cover.",
           "intel": [
             {
               "kind": "access",
@@ -3298,8 +3296,8 @@
             },
             {
               "kind": "fuel",
-              "text": "The nearest fuel and grocery services are located in the town of Wells, approximately 30 kilometers from the park. No fuel or food is available within the park boundaries.",
-              "title": "Last Supplies in Wells"
+              "text": "Bowron Lake Park is about 120 km east of Quesnel. The Bowron Lake Road turnoff is approximately 1 km before Barkerville, followed by 27 km of dirt road. BC Parks lists Bear River Mercantile about 1 km from the drive-in campground; confirm services before relying on them.",
+              "title": "Access and nearby supplies"
             },
             {
               "kind": "parking",
@@ -3313,21 +3311,32 @@
             },
             {
               "kind": "timing",
-              "text": "The circuit is typically accessible from mid-May through September. High water levels in June can make river sections challenging, while autumn brings freezing temperatures.",
+              "text": "The published 2026 reservation season is May 15–September 27. Check current advisories, water levels and weather before departure.",
               "title": "Paddling Window"
             }
           ],
+          "arrival": "Pick up rental in Quesnel (YQZ), drive to Wells for final supplies and a bear-proof canister, then proceed to the Bowron Lake park office.",
           "markers": [],
-          "reviewedAt": "2026-11-15T12:35:00Z",
           "sources": [
             {
-              "label": "BC Parks",
-              "url": "https://bcparks.ca/bowron-lake-park/"
+              "url": "https://bcparks.ca/bowron-lake-park/",
+              "label": "BC Parks"
+            },
+            {
+              "url": "https://news.gov.bc.ca/releases/2025ENV0037-001143",
+              "label": "BC Government — 2026 reservation season"
+            },
+            {
+              "url": "https://nrs.objectstore.gov.bc.ca/kuwyyf/bowron_lake_brochure_map_print_11x17_dd03d3eb5f.pdf",
+              "label": "BC Parks — route map"
             }
           ],
-          "vehicle": "High-clearance vehicles are recommended for the gravel access road from Wells to Bowron Lake, particularly after heavy rains.",
-          "version": 1
-        }
+          "vehicle": "The final 27 km from the Barkerville-area turnoff is a wide, well-graded dirt road according to BC Parks; check conditions and rental restrictions.",
+          "version": 1,
+          "goldenHour": "The north end of Isaac Lake, with views dependent on summer cloud cover.",
+          "reviewedAt": "2026-11-15T12:35:00Z"
+        },
+        "permit_note": "For the 2026 canoe season, reservations are required May 15–September 27 for both the full circuit and the West Side. Reservations opened December 2, 2025 at 7 a.m. Pacific. Register and complete the required orientation before departure. The 116 km full circuit normally takes 6–10 days; the West Side takes 2–4 days. Check current BC Parks advisories before travelling."
       },
       "sources": [
         "https://www.tourismpei.com/what-to-do/beaches-parks/basin-head-provincial-park",
@@ -3339,7 +3348,10 @@
         "https://www.travelyukon.com/en/see-and-do/regions/southern-lakes",
         "https://bcparks.ca/bowron-lake-park/",
         "https://bcparks.ca/tweedsmuir-park/",
-        "https://parks.canada.ca/pn-np/pe/pei-ipe"
+        "https://parks.canada.ca/pn-np/pe/pei-ipe",
+        "https://news.gov.bc.ca/releases/2025ENV0037-001143",
+        "https://bcparks.ca/reservations/backcountry-camping/canoe-circuits/",
+        "https://nrs.objectstore.gov.bc.ca/kuwyyf/bowron_lake_brochure_map_print_11x17_dd03d3eb5f.pdf"
       ]
     },
     "fathom-five-national-marine-park": {
@@ -3669,58 +3681,56 @@
     "tweedsmuir-provincial-park": {
       "fields": {
         "travel_plan": {
-          "arrival": "Arrive at Williams Lake (YWL), rent a high-clearance vehicle, and begin the 5-hour drive west. Stock up on all backcountry supplies in Williams Lake as options are minimal later.",
           "days": [
             {
-              "driving": "Allow 2 hours for mountain pass driving; conditions vary with weather.",
               "note": "The descent involves steep grades and switchbacks; ensure your vehicle's braking system is in top condition.",
               "start": "Suggested: 8 AM from Anahim Lake",
               "stops": [
                 {
-                  "detail": "The highest point on the Freedom Highway offers views of the transition from the Chilcotin Plateau to the Coast Mountains.",
-                  "name": "Heckman Pass"
+                  "name": "Heckman Pass",
+                  "detail": "The highest point on the Freedom Highway offers views of the transition from the Chilcotin Plateau to the Coast Mountains."
                 },
                 {
-                  "detail": "Experience the famous steep descent into the Bella Coola Valley, stopping at designated pull-outs for views of the Rainbow Range.",
-                  "name": "The Hill"
+                  "name": "The Hill",
+                  "detail": "Descend Highway 20 between Heckman Pass and Atnarko campground: the Hill loses over 1,200 m in 16 km, with grades up to 18%. Check current highway conditions and stop only where safe."
                 }
               ],
-              "title": "The Precipice and Valley Vistas"
+              "title": "The Precipice and Valley Vistas",
+              "driving": "Allow 2 hours for mountain pass driving; conditions vary with weather."
             },
             {
-              "driving": "Allow 1 hour for trailhead access; conditions vary.",
               "note": "This is prime grizzly country; carry bear spray and make noise while hiking in dense brush or near creeks.",
               "start": "Suggested: 9 AM from Rainbow Range Trailhead",
               "stops": [
                 {
-                  "detail": "Hike into this ancient volcanic landscape where the rocks display vibrant shades of red, orange, and yellow.",
-                  "name": "Rainbow Range"
+                  "name": "Rainbow Range",
+                  "detail": "Follow the Rainbow trail from Highway 20 near Heckman Pass toward the alpine: 7 km one way, approximately 2–3 hours one way and 300 m elevation gain."
                 },
                 {
-                  "detail": "Ask BC Parks for an appropriate currently open route rather than following an unverified meadow name.",
-                  "name": "Park-authority-confirmed walking route"
+                  "name": "Unnamed lake on the Rainbow trail",
+                  "detail": "BC Parks describes a small unnamed lake reached through the forest on the Rainbow trail. Treat this as part of the same hike, not a separate invented meadow stop."
                 }
               ],
-              "title": "Alpine Colors and Volcanic Peaks"
+              "title": "Alpine Colors and Volcanic Peaks",
+              "driving": "Allow 1 hour for trailhead access; conditions vary."
             },
             {
-              "driving": "Allow 45 minutes for valley floor transit; conditions vary.",
               "note": "Salmon spawning season usually begins in August, attracting significant wildlife activity to the river corridor.",
               "start": "Suggested: 9:30 AM from Bella Coola",
               "stops": [
                 {
-                  "detail": "When operating, use the staffed wildlife-viewing area and follow ranger and Nuxalk staff directions. Verify seasonal access before travelling.",
-                  "name": "Belarko Wildlife Viewing Area"
+                  "name": "Belarko Wildlife Viewing Area",
+                  "detail": "When operating, use the staffed wildlife-viewing area and follow ranger and Nuxalk staff directions. Verify seasonal access before travelling."
                 },
                 {
-                  "detail": "Check current public access instructions; do not assume a wildlife-viewing platform is available at this location.",
-                  "name": "Burnt Bridge Creek"
+                  "name": "Burnt Bridge Creek",
+                  "detail": "Check current public access instructions; do not assume a wildlife-viewing platform is available at this location."
                 }
               ],
-              "title": "River Corridors and Ancient Forests"
+              "title": "River Corridors and Ancient Forests",
+              "driving": "Allow 45 minutes for valley floor transit; conditions vary."
             }
           ],
-          "goldenHour": "Heckman Pass summit provides an unobstructed view of the Coast Range peaks catching the last light of the day.",
           "intel": [
             {
               "kind": "parking",
@@ -3748,16 +3758,26 @@
               "title": "Unpaved Sections"
             }
           ],
+          "arrival": "Williams Lake Regional Airport (YWL) has scheduled passenger service. Reserve a rental in advance; airport rental availability is limited. The southern park is approximately 400 km west of Williams Lake via Highway 20, which includes paved and gravel sections. Basic supplies and fuel are also available at Anahim Lake and Nimpo Lake.",
           "markers": [],
-          "reviewedAt": "2026-11-15T12:44:00Z",
           "sources": [
             {
-              "label": "BC Parks: Tweedsmuir South",
-              "url": "https://bcparks.ca/tweedsmuir-park/"
+              "url": "https://bcparks.ca/tweedsmuir-park/",
+              "label": "BC Parks: Tweedsmuir South"
+            },
+            {
+              "url": "https://bcparks.ca/tweedsmuir-park/hiking/",
+              "label": "Official verification source"
+            },
+            {
+              "url": "https://www.williamslake.ca/438/Airport-Services",
+              "label": "Official verification source"
             }
           ],
-          "vehicle": "A high-clearance 4WD is strongly recommended for the steep grades of Heckman Pass and accessing unpaved trailheads safely.",
-          "version": 1
+          "vehicle": "Choose a vehicle approved by the rental company for Highway 20’s steep paved and gravel sections. BC Parks specifies high-clearance 4WD for the separate Tote Road to Hotnarko, not as a blanket requirement for the Highway 20 itinerary.",
+          "version": 1,
+          "goldenHour": "Heckman Pass summit provides an unobstructed view of the Coast Range peaks catching the last light of the day.",
+          "reviewedAt": "2026-11-15T12:44:00Z"
         },
         "permit_note": "Camping fees, registration and reservations vary by area. Check the current Tweedsmuir park page and the rules for your specific campsite or route."
       },
@@ -3772,7 +3792,9 @@
         "https://bcparks.ca/bowron-lake-park/",
         "https://bcparks.ca/tweedsmuir-park/",
         "https://parks.canada.ca/pn-np/pe/pei-ipe",
-        "https://bcparks.ca/tweedsmuir-park/"
+        "https://bcparks.ca/tweedsmuir-park/",
+        "https://bcparks.ca/tweedsmuir-park/hiking/",
+        "https://www.williamslake.ca/438/Airport-Services"
       ]
     },
     "mont-megantic-national-park": {
@@ -3975,62 +3997,60 @@
     "harrison-lake": {
       "fields": {
         "travel_plan": {
-          "arrival": "Arrive via Abbotsford (YXX), drive north through Agassiz, and secure supplies in the village before heading to provincial park sites.",
           "days": [
             {
-              "driving": "Minimal; local village areas are walkable from central parking.",
               "note": "Weekend crowds in the village can significantly increase travel time between local sights.",
               "start": "Suggested: 9 AM from Harrison Village",
               "stops": [
                 {
-                  "detail": "Walk the scenic promenade for a view of the floating water park and the surrounding mountains.",
-                  "name": "Harrison Lagoon"
+                  "name": "Harrison Lagoon",
+                  "detail": "Walk the scenic promenade for a view of the floating water park and the surrounding mountains."
                 },
                 {
-                  "detail": "Walk the woodland trail decorated with whimsical clay masks made by a local artist; follow current access guidance.",
-                  "name": "Spirit Trail"
+                  "name": "Spirit Trail",
+                  "detail": "Walk the woodland trail decorated with whimsical clay masks made by a local artist; follow current access guidance."
                 }
               ],
-              "title": "Lakeside Vistas and Village Life"
+              "title": "Lakeside Vistas and Village Life",
+              "driving": "Minimal; local village areas are walkable from central parking."
             },
             {
-              "driving": "Allow 1 hour for the winding roads into the provincial park area; conditions vary.",
-              "note": "Provincial park gates typically close at dusk; check posted seasonal hours.",
+              "note": "Check posted park and campground gate hours and current advisories; no overnight parking is permitted at Green Point.",
               "start": "Suggested: 8:30 AM from Agassiz",
               "stops": [
                 {
-                  "detail": "Visit Hicks Lake or Deer Lake for quiet water activities away from the main resort area.",
-                  "name": "Sasquatch Provincial Park"
+                  "name": "Sasquatch Provincial Park",
+                  "detail": "Visit Hicks Lake or Deer Lake for quiet water activities away from the main resort area."
                 },
                 {
-                  "detail": "A popular day-use spot for picnicking and viewing the expansive northern reach of the lake.",
-                  "name": "Green Point"
+                  "name": "Green Point",
+                  "detail": "A popular day-use spot for picnicking and viewing the expansive northern reach of the lake."
                 }
               ],
-              "title": "Eastern Shore Adventure"
+              "title": "Eastern Shore Adventure",
+              "driving": "Allow 1 hour for the winding roads into the provincial park area; conditions vary."
             },
             {
-              "driving": "Local road travel to the confirmed visitor sites; do not assume forestry-road access.",
-              "note": "Forest service roads may be rough; high clearance is advised for falls access.",
+              "note": "This day visits Kilby Historic Site and the Kilby day-use area, not a waterfall or forest-service-road destination. Check seasonal opening hours before travelling.",
               "start": "Suggested: 9:30 AM from Harrison Hot Springs",
               "stops": [
                 {
-                  "detail": "A short drive to Harrison Mills to explore a 1920s general store and farm near the Harrison River.",
-                  "name": "Kilby Historic Site"
+                  "name": "Kilby Historic Site",
+                  "detail": "Visit the 1906 Kilby General Store museum and farm at Harrison Mills; check the historic site’s current hours and admission before travelling."
                 },
                 {
-                  "detail": "Continue your visit in the documented Kilby area, checking current opening and access conditions.",
-                  "name": "Kilby day-use area"
+                  "name": "Kilby day-use area",
+                  "detail": "Continue your visit in the documented Kilby area, checking current opening and access conditions."
                 }
               ],
-              "title": "River Confluence and History"
+              "title": "River Confluence and History",
+              "driving": "Local road travel to the confirmed visitor sites; do not assume forestry-road access."
             }
           ],
-          "goldenHour": "Sunset from the Harrison Lake public docks, looking north toward the Douglas Ranges.",
           "intel": [
             {
               "kind": "parking",
-              "text": "Paid parking is in effect throughout the Harrison Village core. Sasquatch Provincial Park lots often reach capacity by mid-morning on sunny summer weekends.",
+              "text": "Village pay parking applies May 15–September 15: Monday–Thursday 9 a.m.–7 p.m. and Friday–Sunday 8 a.m.–8 p.m. Free parking is available on Lillooet Avenue east of Hot Springs Road and in the overflow lot behind the Village Office, subject to posted limits. No overnight parking at Green Point.",
               "title": "Village and Park Congestion"
             },
             {
@@ -4054,24 +4074,37 @@
               "title": "Forest Service Road Status"
             }
           ],
+          "arrival": "Arrive via Abbotsford (YXX), drive north through Agassiz, and secure supplies in the village before heading to provincial park sites.",
           "markers": [],
-          "reviewedAt": "2026-11-15T12:44:00Z",
           "sources": [
             {
-              "label": "Village of Harrison Hot Springs",
-              "url": "https://www.harrisonhotsprings.ca"
+              "url": "https://www.harrisonhotsprings.ca",
+              "label": "Village of Harrison Hot Springs"
             },
             {
-              "label": "BC Parks - Sasquatch",
-              "url": "https://bcparks.ca/sasquatch-park/"
+              "url": "https://bcparks.ca/sasquatch-park/",
+              "label": "BC Parks - Sasquatch"
+            },
+            {
+              "url": "https://www.harrisonhotsprings.ca/payparking",
+              "label": "Village — parking rules"
+            },
+            {
+              "url": "https://kilby.ca/experience/general-store-museum/",
+              "label": "Kilby Historic Site — general store"
             }
           ],
           "vehicle": "Standard vehicles are fine for the village and Sasquatch Provincial Park; 4WD with high clearance is required for the Harrison Forest Service Roads.",
-          "version": 1
+          "version": 1,
+          "goldenHour": "Sunset from the Harrison Lake public docks, looking north toward the Douglas Ranges.",
+          "reviewedAt": "2026-11-15T12:44:00Z"
         }
       },
       "sources": [
-        "https://tourismharrison.com/top-hikes-in-the-harrison-river-valley/"
+        "https://tourismharrison.com/top-hikes-in-the-harrison-river-valley/",
+        "https://bcparks.ca/sasquatch-park/",
+        "https://www.harrisonhotsprings.ca/payparking",
+        "https://kilby.ca/experience/general-store-museum/"
       ]
     },
     "riding-mountain-national-park": {
@@ -5641,6 +5674,1741 @@
           "version": 1
         }
       }
+    },
+    "gulf-islands-national-park-reserve": {
+      "fields": {
+        "permit_headline": "Plan ferry access; mooring buoys are first come, first served",
+        "permit_note": "Check BC Ferries schedules and booking availability for your specific route; Swartz Bay check-in rules distinguish bookable and non-bookable sailings. Reserve reservable campsites separately through Parks Canada. Mooring buoys are first come, first served, with fees after 3 p.m. paid at shore self-registration vaults. Gulf Islands National Park Reserve has no entrance fee. Sidney Island park lands are closed October 15, 2026–February 14, 2027; mooring buoys remain open but beaches, day-use areas, washrooms and public docks are inaccessible.",
+        "travel_plan": {
+          "days": [
+            {
+              "note": "Ferry schedules are subject to tidal delays and seasonal frequency changes.",
+              "start": "Suggested: 9 AM from Sidney (Swartz Bay Terminal)",
+              "stops": [
+                {
+                  "name": "Roesland and Roe Islet",
+                  "detail": "Visit the historic Roesland site and walk to the viewpoint on Roe Islet; check tides before crossing."
+                },
+                {
+                  "name": "Mount Norman",
+                  "detail": "Hike the highest point on the Pender Islands for a panoramic view of the San Juan and Gulf Islands."
+                }
+              ],
+              "title": "Pender Island Coastlines",
+              "driving": "Allow 2 hours including ferry loading and local transit; conditions vary."
+            },
+            {
+              "note": "Services on Saturna are limited; ensure supplies are gathered before departing Sidney or Pender.",
+              "start": "Suggested: 8:30 AM from Otter Bay Terminal",
+              "stops": [
+                {
+                  "name": "East Point",
+                  "detail": "Observe the boiling currents where the Strait of Georgia meets the Boundary Pass, a known area for marine mammal sightings."
+                },
+                {
+                  "name": "Narvaez Bay",
+                  "detail": "Walk the forested trail to reach one of the park’s most secluded bay environments."
+                }
+              ],
+              "title": "Saturna Island Wilderness",
+              "driving": "Allow 3 hours for inter-island ferry transfers and winding island roads."
+            },
+            {
+              "note": "Carry all drinking water. Do not visit during the Sidney Island closure, October 15, 2026–February 14, 2027; beaches, day-use areas, washrooms and public docks are closed.",
+              "start": "Suggested: depart Port Sidney Marina on an operating seasonal ferry sailing.",
+              "stops": [
+                {
+                  "name": "Sidney Spit",
+                  "detail": "Accessible by seasonal walk-on ferry, this site features sprawling tidal flats and unique salt marshes."
+                },
+                {
+                  "name": "Sidney Spit walking trails",
+                  "detail": "Follow the easy 2 km loop and signed spur trails through forest, fields and beach habitats; do not assume the lagoon spur is a circuit."
+                }
+              ],
+              "title": "Sidney Spit Marine Exploration",
+              "driving": "Walking on the island; allow approximately 30 minutes for the boat crossing and check the seasonal ferry timetable."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Use the Swartz Bay terminal page to check designated short- and long-term parking options before leaving a vehicle.",
+              "title": "Terminal and Trailhead Capacity"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular service is intermittent near Narvaez Bay and East Point due to topography and proximity to the US border. Expect roaming charges if devices connect to international towers across the strait.",
+              "title": "Coastal Connectivity Gaps"
+            },
+            {
+              "kind": "fuel",
+              "text": "Full-service stations are located in Sidney and near the Pender Island ferry terminal. Saturna has extremely limited fuel availability; verify local shop hours before travel.",
+              "title": "Island Supply Logic"
+            },
+            {
+              "kind": "timing",
+              "text": "Use terminal- and route-specific check-in instructions rather than a universal 40–60-minute rule. At Swartz Bay, unbooked or non-bookable travel is in arrival order; vehicle ticket sales close five minutes before departure and foot-passenger sales ten minutes before departure.",
+              "title": "Ferry Loading Windows"
+            },
+            {
+              "kind": "access",
+              "text": "D’Arcy and Portland islands require boat access; consult Parks Canada’s approved water-taxi/operator list and current landing restrictions before arranging transport.",
+              "title": "Inter-Island Water Taxis"
+            }
+          ],
+          "arrival": "Collect rental at Victoria International Airport, stock up on provisions in Sidney, and check the BC Ferries status for the Swartz Bay departure.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://parks.canada.ca/pn-np/bc/gulf",
+              "label": "Parks Canada - Gulf Islands"
+            },
+            {
+              "url": "https://parks.canada.ca/pn-np/bc/gulf/activ/randonnee-hiking/sentiers-trails",
+              "label": "Official verification source"
+            },
+            {
+              "url": "https://parks.canada.ca/pn-np/bc/gulf/activ/pique-nique-picnic",
+              "label": "Official verification source"
+            },
+            {
+              "url": "https://parks.canada.ca/pn-np/bc/gulf/activ/camping/groupe-group",
+              "label": "Official verification source"
+            },
+            {
+              "url": "https://www.bcferries.com/travel-boarding/terminal-directions-parking-food/victoria-swartz-bay/SWB",
+              "label": "Official verification source"
+            },
+            {
+              "url": "https://parks.canada.ca/pn-np/bc/gulf/activ/navigation-de-plaisance-boating",
+              "label": "Official verification source"
+            },
+            {
+              "url": "https://www.parks.canada.ca/pn-np/bc/gulf/bulletins/3bae846f-20b2-4fc3-bed2-12cf03abf322",
+              "label": "Official verification source"
+            }
+          ],
+          "vehicle": "Compact cars are ideal for narrow island roads; larger RVs face significant ferry surcharges and limited turning space on Saturna.",
+          "version": 1,
+          "goldenHour": "Sunset views from East Point on Saturna Island, subject to seasonal marine cloud cover.",
+          "reviewedAt": "2026-11-15T11:26:11.833653+00:00"
+        }
+      },
+      "sources": [
+        "https://parks.canada.ca/pn-np/bc/gulf/activ/navigation-de-plaisance-boating",
+        "https://www.bcferries.com/travel-boarding/terminal-directions-parking-food/victoria-swartz-bay/SWB",
+        "https://parks.canada.ca/pn-np/bc/gulf/visit/tarifs-fees",
+        "https://www.parks.canada.ca/pn-np/bc/gulf/bulletins/3bae846f-20b2-4fc3-bed2-12cf03abf322",
+        "https://parks.canada.ca/pn-np/bc/gulf/activ/randonnee-hiking/sentiers-trails",
+        "https://parks.canada.ca/pn-np/bc/gulf/activ/pique-nique-picnic",
+        "https://parks.canada.ca/pn-np/bc/gulf/activ/camping/groupe-group"
+      ]
+    },
+    "mount-robson-provincial-park": {
+      "fields": {
+        "permit_note": "For 2026, Berg Lake Trail campground reservations are required May 27–September 29; booking opened December 2, 2025 at 7 a.m. Pacific through BC Parks. Day hiking on the Berg Lake Trail requires no permit or day-use fee. The entire trail has been repaired following the earlier flood damage, but check current advisories before hiking. Outside peak season, some campgrounds operate first come, first served.",
+        "travel_plan": {
+          "days": [
+            {
+              "note": "The trail to Kinney Lake is relatively flat and shared with cyclists on certain sections.",
+              "start": "Suggested: 8 AM from the Visitor Centre",
+              "stops": [
+                {
+                  "name": "Kinney Lake",
+                  "detail": "Hike the first section of the Berg Lake Trail to see the turquoise waters at the base of Mount Robson."
+                },
+                {
+                  "name": "Overlander Falls",
+                  "detail": "Visit this powerful waterfall on the Fraser River, accessible via a short trail near the park entrance."
+                }
+              ],
+              "title": "The Base of the Emperor",
+              "driving": "Allow 15 minutes; easy access from Highway 16."
+            },
+            {
+              "note": "This area is less crowded than the main Berg Lake corridor but requires more self-sufficiency.",
+              "start": "Suggested: 9 AM from the Mount Fitzwilliam Trailhead",
+              "stops": [
+                {
+                  "name": "Mount Fitzwilliam Trail",
+                  "detail": "Ascend through subalpine forest toward rock gardens that provide views of the Robson Valley's southern end."
+                },
+                {
+                  "name": "Yellowhead Lake (Lucerne area)",
+                  "detail": "Visit the Yellowhead Lake shoreline near Lucerne Campground; the water remains cold year-round."
+                }
+              ],
+              "title": "Alpine Meadows and High Passes",
+              "driving": "Allow 30–40 minutes; watch for wildlife on the Yellowhead Highway."
+            },
+            {
+              "note": "Rearguard Falls is a quick stop; Jackman Flats is better for a leisurely afternoon walk.",
+              "start": "Suggested: 9:30 AM from Tête Jaune Cache",
+              "stops": [
+                {
+                  "name": "Rearguard Falls",
+                  "detail": "Watch the Fraser River drop over a rocky ledge; this is the furthest point upstream for Chinook salmon migration."
+                },
+                {
+                  "name": "Jackman Flats Provincial Park",
+                  "detail": "Explore the nearby sand dunes and unique lichen forest just outside the main Mount Robson gates."
+                }
+              ],
+              "title": "Fraser River Headwaters",
+              "driving": "Allow 20 minutes; sites are located along a short stretch of the highway."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "access",
+              "text": "BC Parks reports that the entire Berg Lake Trail has been repaired. Check current advisories for new closures and conditions before departure; do not assume permanent upper-trail flood closures.",
+              "title": "Berg Lake Trail Status"
+            },
+            {
+              "kind": "parking",
+              "text": "The main parking area is a popular stop for Highway 16 travelers. For the Berg Lake Trailhead, use the dedicated hiker lot further down the access road.",
+              "title": "Visitor Centre Congestion"
+            },
+            {
+              "kind": "fuel",
+              "text": "A restaurant, gift store and gas station are near the park’s western entrance. Check operating hours before relying on them; plan additional supplies in gateway communities.",
+              "title": "Regional Services"
+            },
+            {
+              "kind": "signal",
+              "text": "The Welcome Centre is the only location in Mount Robson Park with cell service; BC Parks reports no service elsewhere in the park. Carry paper maps and consider satellite communication for backcountry travel.",
+              "title": "Highway Connectivity"
+            },
+            {
+              "kind": "timing",
+              "text": "The peak is famously shrouded in clouds; clear views are most common in the early morning. Plan your photography for the first light to maximize your chances.",
+              "title": "Mount Robson Visibility"
+            }
+          ],
+          "arrival": "Arrive from Prince George (YXS) or Jasper; check in at the Visitor Centre to confirm trail conditions before heading to your campsite or lodge.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://bcparks.ca/mount-robson-park/",
+              "label": "BC Parks Mount Robson"
+            },
+            {
+              "url": "https://bcparks.ca/mount-robson-park/berg-lake-trail/",
+              "label": "Official verification source"
+            },
+            {
+              "url": "https://news.gov.bc.ca/releases/2025ENV0037-001143",
+              "label": "Official verification source"
+            }
+          ],
+          "vehicle": "The region is well-suited for RVs with wide highway pullouts, but check length restrictions for some secondary parking lots.",
+          "version": 1,
+          "goldenHour": "The viewpoint at the Mount Robson Visitor Centre provides a classic sunset vista of the South Face, though cloud cover is a frequent variable.",
+          "reviewedAt": "2026-11-15T11:29:55.900713+00:00"
+        }
+      },
+      "sources": [
+        "https://news.gov.bc.ca/releases/2025ENV0037-001143",
+        "https://bcparks.ca/mount-robson-park/berg-lake-trail/",
+        "https://bcparks.ca/mount-robson-park/"
+      ]
+    },
+    "strathcona-provincial-park": {
+      "fields": {
+        "permit_note": "Use BC Parks frontcountry reservations for reservable Buttle Lake and Ralph River campsites. Fee-charging backcountry areas require a camping permit; advance online permit registration is not a campsite reservation and does not guarantee a space. Check the Strathcona park page for area-specific fees, group-site reservations and current advisories.",
+        "travel_plan": {
+          "days": [
+            {
+              "note": "The higher elevations are subject to snowpack late into July; check trail reports.",
+              "start": "Suggested: 8 AM from Campbell River",
+              "stops": [
+                {
+                  "name": "Paradise Meadows",
+                  "detail": "Traverse the accessible boardwalks of the Forbidden Plateau to view subalpine wildflowers and small mountain lakes."
+                },
+                {
+                  "name": "Mount Albert Edward route from Paradise Meadows",
+                  "detail": "This route shares the Paradise Meadows trailhead beside Mount Washington’s Raven Lodge. The summit is approximately 16 km one way; it is generally a one- or two-night trip, not a short add-on to a meadow stroll. Beyond Circlet Lake the route is rough and unmaintained."
+                }
+              ],
+              "title": "Subalpine Peaks and Valleys",
+              "driving": "Allow 1 hour to the Forbidden Plateau area; conditions vary with mountain weather."
+            },
+            {
+              "note": "Buttle Lake can experience high winds in the afternoon, affecting small watercraft.",
+              "start": "Suggested: 9 AM from Buttle Lake Campground",
+              "stops": [
+                {
+                  "name": "Lower Myra Falls",
+                  "detail": "Visit the multi-tiered cascades where the creek meets the southern end of the lake."
+                },
+                {
+                  "name": "Lupin Falls",
+                  "detail": "Take the short forested loop to see this narrow ribbon waterfall through ancient cedar groves."
+                }
+              ],
+              "title": "Buttle Lake Glacial Waters",
+              "driving": "Allow 45 minutes for travel along the lake; logging roads may be active."
+            },
+            {
+              "note": "Cellular reception is non-existent in the western valleys; prepare for self-sufficiency.",
+              "start": "Suggested: 8:30 AM from Gold River Gateway",
+              "stops": [
+                {
+                  "name": "Lady Falls",
+                  "detail": "Witness the powerful 30-meter drop from the viewing platform nestled in old-growth forest."
+                },
+                {
+                  "name": "Elk River Trailhead",
+                  "detail": "Hike into the rugged glacial valley flanked by Colonel Foster and Landslide Lake."
+                }
+              ],
+              "title": "Deep Wilderness and Western Valleys",
+              "driving": "Allow 2 hours for variable paved and gravel surfaces; conditions vary."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "The Paradise Meadows lot often reaches capacity during peak summer weekends. Arrive at these high-elevation gateways early to ensure a spot before the midday influx.",
+              "title": "Trailhead Capacity"
+            },
+            {
+              "kind": "signal",
+              "text": "Signal is lost shortly after leaving Campbell River or Gold River. Download all navigation maps offline as the interior peaks block most cellular frequencies.",
+              "title": "Mountain Connectivity"
+            },
+            {
+              "kind": "fuel",
+              "text": "Campbell River serves as the primary hub for fuel and supplies before entering the park interior. There are no refueling services within the park boundaries or at Buttle Lake.",
+              "title": "Gateway Provisions"
+            },
+            {
+              "kind": "timing",
+              "title": "Seasonal trail conditions",
+              "text": "Most trails are snow-covered from late October or November until at least June; higher routes often retain snow until mid-July. Paradise Meadows access is via Highway 19 exit 130, 20 km on Strathcona Parkway, then 1.5 km on Nordic Lodge Road."
+            },
+            {
+              "kind": "access",
+              "text": "A permit is required where backcountry camping fees apply. Advance online registration pays the permit fee but does not reserve or guarantee a campsite; consult the Forbidden Plateau and Elk River fee-area maps.",
+              "title": "Backcountry Permits"
+            }
+          ],
+          "arrival": "Campbell River Airport (YBL) has scheduled passenger service. Stock up in Campbell River. Use Highway 28 west for Buttle Lake; for Paradise Meadows follow Highway 19 to exit 130 and Strathcona Parkway toward Mount Washington.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://bcparks.ca/strathcona-park/",
+              "label": "BC Parks Strathcona"
+            },
+            {
+              "url": "https://bcparks.ca/strathcona-park/mount-albert-edward-hiking-route/",
+              "label": "Official verification source"
+            },
+            {
+              "url": "https://bcparks.ca/reservations/backcountry-camping/permit-registration/",
+              "label": "Official verification source"
+            },
+            {
+              "url": "https://crairport.ca/airport-services/",
+              "label": "Official verification source"
+            }
+          ],
+          "vehicle": "A standard car suffices for paved park roads, but high-clearance is advised for unpaved logging spurs; check rental insurance for gravel road coverage.",
+          "version": 1,
+          "goldenHour": "Buttle Lake shorelines offer reflective views at sunset, though shadows fall early due to steep surrounding peaks.",
+          "reviewedAt": "2026-11-15T11:32:37.798759+00:00"
+        }
+      },
+      "sources": [
+        "https://bcparks.ca/strathcona-park/",
+        "https://bcparks.ca/reservations/backcountry-camping/permit-registration/",
+        "https://bcparks.ca/strathcona-park/mount-albert-edward-hiking-route/",
+        "https://crairport.ca/airport-services/"
+      ]
+    },
+    "wells-gray-provincial-park": {
+      "fields": {
+        "travel_plan": {
+          "days": [
+            {
+              "note": "The road is paved to Helmcken Falls but narrows significantly.",
+              "start": "Suggested: 8:00 AM from Clearwater Gateway",
+              "stops": [
+                {
+                  "name": "Spahats Falls",
+                  "detail": "Observe the 60-meter drop where water has carved through layers of volcanic rock and glacial silt."
+                },
+                {
+                  "name": "Helmcken Falls",
+                  "detail": "Visit Canada's fourth-tallest waterfall, featuring a massive amphitheater created by centuries of erosion."
+                }
+              ],
+              "title": "The Corridor of Ancient Volcanics",
+              "driving": "Allow 2 hours for return trip on the corridor; conditions vary"
+            },
+            {
+              "note": "The final 20km to the lake is unpaved and can be dusty or washboarded.",
+              "start": "Suggested: 9:00 AM from Corridor North",
+              "stops": [
+                {
+                  "name": "Ray Farm",
+                  "detail": "Walk the loop through a historic homestead that highlights the early human history within the park's wilderness."
+                },
+                {
+                  "name": "Clearwater Lake",
+                  "detail": "The road terminus offers boat launches and quiet vistas of the deep glacial lake surrounded by peaks."
+                }
+              ],
+              "title": "Subalpine Meadows and Clear Waters",
+              "driving": "Allow 3 hours total including gravel sections; conditions vary"
+            },
+            {
+              "note": "Trophy Mountain access branches off Clearwater Valley Road near Spahats Creek and follows 11 km of gravel logging road; watch for industrial traffic and check current road conditions.",
+              "start": "Suggested: 8:30 AM from Trophy Mountain Turnoff",
+              "stops": [
+                {
+                  "name": "Dawson Falls",
+                  "detail": "Known as 'Little Niagara,' this wide waterfall spans the width of the Murtle River."
+                },
+                {
+                  "name": "Trophy Mountain Meadows",
+                  "detail": "Access high-altitude wildflower displays, usually peaking in late July or August depending on snowmelt."
+                }
+              ],
+              "title": "River Canyons and Alpine Hikes",
+              "driving": "Allow 2.5 hours including mountain access; conditions vary"
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "The Helmcken Falls viewing platform is the busiest point in the park; early arrival avoids the mid-afternoon tour bus influx. Smaller falls like Silvertip have very limited pull-off space.",
+              "title": "Helmcken Crowds"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular reception ends shortly after leaving the town of Clearwater. Emergency phones are located at specific points, but do not rely on mobile data for navigation past Spahats Falls.",
+              "title": "Wilderness Dead Zones"
+            },
+            {
+              "kind": "fuel",
+              "text": "Refuel and arrange supplies before entering the park. Distances from Clearwater vary substantially: Spahats Creek is only 10 km north of town, so the blanket 35–65 km estimate does not apply to all major sights.",
+              "title": "The Clearwater Gap"
+            },
+            {
+              "kind": "timing",
+              "text": "Waterfall volume is highest in May and June due to snowmelt, though some hiking trails at higher elevations may remain snow-covered until July.",
+              "title": "Spring Runoff"
+            },
+            {
+              "kind": "access",
+              "text": "While the main road to Helmcken is paved, the upper sections toward Clearwater Lake are gravel. Conditions fluctuate based on recent grading and rainfall.",
+              "title": "Gravel Road Quality"
+            }
+          ],
+          "arrival": "Land at Kamloops (YKA), gather groceries in Kamloops or Clearwater, and allow three hours for the drive and initial park orientation.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://bcparks.ca/wells-gray-park/",
+              "label": "BC Parks"
+            },
+            {
+              "url": "https://bcparks.ca/wells-gray-park/trophy-mountain/",
+              "label": "Official verification source"
+            }
+          ],
+          "vehicle": "Standard cars are fine for main falls; high-clearance vehicles are recommended for Trophy Mountain and northern gravel reaches.",
+          "version": 1,
+          "goldenHour": "Helmcken Falls for late afternoon light illuminating the spray, varying by month.",
+          "reviewedAt": "2026-11-15T11:33:23.091215+00:00"
+        }
+      },
+      "sources": [
+        "https://bcparks.ca/wells-gray-park/",
+        "https://bcparks.ca/wells-gray-park/trophy-mountain/"
+      ]
+    },
+    "haida-gwaii": {
+      "fields": {
+        "permit_note": "Gwaii Haanas has no road access. Independent visitors must reserve, pay the applicable visitor-use fee and complete the self-guided online orientation before entering; carry both the booking receipt and orientation completion certificate. Reserve at least five business days before the trip. Guided visitors arrange reservations, fees and orientation through their licensed operator. These requirements concern Gwaii Haanas, not every visit to Haida Gwaii. Queen Charlotte is now officially named Daajing Giids.",
+        "travel_plan": {
+          "days": [
+            {
+              "note": "Respect local cultural protocols and stay on designated paths at heritage sites.",
+              "start": "Suggested: 9 AM from Skidegate",
+              "stops": [
+                {
+                  "name": "Haida Heritage Centre at Kay Llnagaay",
+                  "detail": "Learn about the living culture of the Haida people through totem poles and traditional longhouses."
+                },
+                {
+                  "name": "Balance Rock",
+                  "detail": "Visit this glacial erratic positioned precariously on the shoreline just north of Skidegate."
+                }
+              ],
+              "title": "Graham Island Heritage",
+              "driving": "Allow 1 hour for local road travel; conditions vary with weather."
+            },
+            {
+              "note": "Motor vehicles must remain on permitted routes and beach areas. Do not drive on dunes or off designated routes in Rose Spit Ecological Reserve; check BC Parks restrictions and tides before travel.",
+              "start": "Suggested: 8 AM from Masset",
+              "stops": [
+                {
+                  "name": "Tow Hill",
+                  "detail": "Hike the boardwalk to the summit for views over the Dixon Entrance and the expansive North Beach."
+                },
+                {
+                  "name": "Rose Spit",
+                  "detail": "A significant ecological site where the Hecate Strait and Dixon Entrance meet; check tide tables for beach access."
+                }
+              ],
+              "title": "Naikoon Wilderness",
+              "driving": "Allow 2 hours for the drive from Masset to the Tow Hill area on unpaved sections."
+            },
+            {
+              "note": "Industrial traffic has the right of way on all gravel access roads.",
+              "start": "Suggested: 8:30 AM from Sandspit",
+              "stops": [
+                {
+                  "name": "Moresby Camp",
+                  "detail": "The primary staging area for boat trips into the Gwaii Haanas wilderness area."
+                },
+                {
+                  "name": "Skidegate Inlet",
+                  "detail": "Observe the marine life and rugged coastline while transiting between the two main islands."
+                }
+              ],
+              "title": "Southern Moresby Exploration",
+              "driving": "Allow 1.5 hours for the drive to Moresby Camp; check active logging road status."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Designated parking is available at the Haida Heritage Centre and Tow Hill. Do not block access roads used by local residents or forestry vehicles.",
+              "title": "Heritage Site and Trailhead Access"
+            },
+            {
+              "kind": "signal",
+              "text": "Reliable signal is limited to the main hubs of Masset, Skidegate, and Daajing Giids. Expect no service once traveling into Naikoon or Gwaii Haanas.",
+              "title": "Remote Communication Realities"
+            },
+            {
+              "kind": "fuel",
+              "text": "Refuel in Masset or Daajing Giids before heading to remote trailheads. Sandspit has fuel, but hours vary; always carry a reserve if exploring backroads.",
+              "title": "Gateway Fuel Stations"
+            },
+            {
+              "kind": "timing",
+              "text": "Many coastal walks and beach access points are only traversable at low tide. Consult local tide tables daily to avoid being cut off by rising waters.",
+              "title": "Tidal Timing Constraints"
+            },
+            {
+              "kind": "access",
+              "text": "Travel to Moresby Camp involves gravel roads shared with logging trucks. Use headlights and yield to industrial traffic at all times.",
+              "title": "Logging Road Protocols"
+            }
+          ],
+          "arrival": "Fly into Sandspit (YZP), take the Alliford Bay ferry to Skidegate, and pick up a vehicle in Daajing Giids (formerly Queen Charlotte).",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://www.gohaidagwaii.ca",
+              "label": "Haida Gwaii Tourism"
+            },
+            {
+              "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas",
+              "label": "Parks Canada - Gwaii Haanas"
+            },
+            {
+              "url": "https://bcparks.ca/naikoon-park/",
+              "label": "BC Parks — Naikoon access restrictions"
+            },
+            {
+              "url": "https://news.gov.bc.ca/releases/2022MUNI0040-001101",
+              "label": "BC Government — Daajing Giids name restoration"
+            }
+          ],
+          "vehicle": "Use established roads to Naikoon trailheads; there is no developed road access to the park interior. Check road conditions and rental gravel-road exclusions for Moresby Island travel. Four-wheel drive does not authorize driving on protected dunes or off designated routes.",
+          "version": 1,
+          "goldenHour": "Sunset at North Beach near Tow Hill, with views across to Alaska on clear summer evenings.",
+          "reviewedAt": "2026-11-15T11:26:12.129090+00:00"
+        }
+      },
+      "sources": [
+        "https://parks.canada.ca/pn-np/bc/gwaiihaanas/visit/planifiez-plan",
+        "https://parks.canada.ca/pn-np/bc/gwaiihaanas/visit/tarifs-fees",
+        "https://news.gov.bc.ca/releases/2022MUNI0040-001101",
+        "https://bcparks.ca/naikoon-park/"
+      ]
+    },
+    "okanagan-lake": {
+      "fields": {
+        "travel_plan": {
+          "days": [
+            {
+              "note": "Parking at popular trailheads fills early during the July heat.",
+              "start": "Suggested: 9 AM from Kelowna",
+              "stops": [
+                {
+                  "name": "Knox Mountain Park",
+                  "detail": "Hike to Apex Lookout for lake and city views. Motor vehicles may use Knox Mountain Drive only to the first lookout, noon–8 p.m. in the frost-free season, subject to closures; driving to Apex is not permitted. The published winter road closure begins October 26, 2026 and lasts until spring 2027."
+                },
+                {
+                  "name": "Mission Creek Greenway",
+                  "detail": "Walk the scenic lower trails that follow the creek toward the lake's eastern shore."
+                }
+              ],
+              "title": "Central Vineyards and Lakeside Vistas",
+              "driving": "Allow 1 hour for local Kelowna transit; conditions vary with summer traffic."
+            },
+            {
+              "note": "The Naramata Road is narrow and frequented by cyclists; exercise caution on curves.",
+              "start": "Suggested: 8:30 AM from Penticton",
+              "stops": [
+                {
+                  "name": "Munson Mountain",
+                  "detail": "View the iconic 'Penticton' sign and look northward across the full length of the lake."
+                },
+                {
+                  "name": "Naramata Creek Falls",
+                  "detail": "Follow the trail through the canyon to see the cooling falls just inland from the lakeshore."
+                }
+              ],
+              "title": "Southern Naramata Bench and Bluffs",
+              "driving": "Allow 2 hours for the winding road along the Naramata Bench; conditions vary."
+            },
+            {
+              "note": "State of water quality can fluctuate; check for local beach advisories before swimming.",
+              "start": "Suggested: 9:30 AM from Vernon",
+              "stops": [
+                {
+                  "name": "Kalamalka Lake Provincial Park",
+                  "detail": "Explore the distinct turquoise waters and ridge trails that separate the two major valley lakes."
+                },
+                {
+                  "name": "Ellison Provincial Park",
+                  "detail": "Access the unique granite headlands and small coves perfect for shore-based exploration."
+                }
+              ],
+              "title": "Northern Bays and Provincial Shorelines",
+              "driving": "Allow 1.5 hours for travel between Vernon and northern park gates; conditions vary."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "City-managed lots in Kelowna use digital payment systems; spaces near City Park are highly contested during weekends. Smaller provincial lots north of the city may have limited capacity for oversized vehicles.",
+              "title": "Urban Beach Lots"
+            },
+            {
+              "kind": "signal",
+              "text": "While urban centers have robust coverage, signal strength drops significantly when driving the Westside Road or high-elevation lookouts. Download offline maps if exploring the forested ridges overlooking the water.",
+              "title": "Highland Dead Zones"
+            },
+            {
+              "kind": "fuel",
+              "text": "Fuel is readily available along Highway 97 connecting the main cities. If heading into the high backcountry plateaus, ensure tanks are filled in the valley floor.",
+              "title": "Corridor Services"
+            },
+            {
+              "kind": "timing",
+              "text": "Mid-day temperatures in the Okanagan often exceed 30°C in July and August. Plan strenuous hikes for early morning to avoid the peak solar intensity.",
+              "title": "Summer Peak Heat"
+            },
+            {
+              "kind": "access",
+              "text": "Public boat launches are located in all three gateway cities, but some may have seasonal depth restrictions. Always check for invasive species inspection requirements before launching private watercraft.",
+              "title": "Waterway Navigation"
+            }
+          ],
+          "arrival": "Collect your vehicle at Kelowna International Airport (YLW) and head south for 20 minutes to stock up on supplies in downtown Kelowna before checking into lakeside rentals.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://bcparks.ca",
+              "label": "BC Parks"
+            },
+            {
+              "url": "https://www.kelowna.ca/parks-recreation/parks-beaches/parks-beaches-listing/knox-mountain-park",
+              "label": "City of Kelowna — Knox Mountain access"
+            }
+          ],
+          "vehicle": "Standard cars are suitable for the main highway; consider a 4WD if accessing remote forest service roads on the lake's west side.",
+          "version": 1,
+          "goldenHour": "Sunset from the Westside Road overlooks offers a glow over the vineyards of the Mission District, varying by season.",
+          "reviewedAt": "2026-11-15T11:30:42.458799+00:00"
+        }
+      },
+      "sources": [
+        "https://www.kelowna.ca/parks-recreation/parks-beaches/parks-beaches-listing/knox-mountain-park"
+      ]
+    },
+    "shuswap-lake": {
+      "fields": {
+        "permit_note": "Provincial campground bookings and private marina slips use separate systems. Cinnemousun Narrows is marine-accessible only; its camping and shelters are first come, first served, not advance campsite reservations. Camping fees apply, but payment does not reserve exclusive use of public wharfs or guarantee that a mooring remains available if you leave. Houseboats may not beach between the Haven Point signs and ranger cabin from May 15 to Labour Day. Check current park advisories and fees before departure.",
+        "permit_source_url": "https://bcparks.ca/cinnemousun-narrows-park/",
+        "travel_plan": {
+          "days": [
+            {
+              "note": "Sicamous serves as the primary provisioning hub for long-duration lake excursions.",
+              "start": "Suggested: 9 AM from Sicamous",
+              "stops": [
+                {
+                  "name": "Sicamous Public Wharf",
+                  "detail": "Explore the gateway to the four arms of the lake, where major houseboat fleets depart and seasonal rentals are centralized."
+                },
+                {
+                  "name": "Hyde Mountain",
+                  "detail": "Gain a panoramic perspective of the Mara and Shuswap intersection from this prominent local overlook."
+                }
+              ],
+              "title": "Houseboat Capitals and Highland Vistas",
+              "driving": "Allow 1 hour for shoreline roads; water transit times vary significantly by craft."
+            },
+            {
+              "note": "The Adams River area has specific footpaths that may be restricted during spawning seasons.",
+              "start": "Suggested: 8:30 AM from Salmon Arm",
+              "stops": [
+                {
+                  "name": "Salmon Arm Wharf",
+                  "detail": "Walk the longest wooden freshwater pier in North America to observe nesting grebes and local birdlife."
+                },
+                {
+                  "name": "Tsútswecw Provincial Park",
+                  "detail": "Visit the Adams River corridor, famous for the sockeye salmon run, though activity peaks specifically in early October."
+                }
+              ],
+              "title": "River Confluences and Provincial Shorelines",
+              "driving": "Allow 2 hours for regional transits; check for seasonal wildlife closures."
+            },
+            {
+              "note": "Cinnemousun Narrows is a high-traffic boat area; exercise caution when swimming near docks.",
+              "start": "Suggested: 9 AM from Chase",
+              "stops": [
+                {
+                  "name": "Tsútswecw Provincial Park trails (formerly Roderick Haig-Brown Provincial Park)",
+                  "detail": "This is the same Adams River park visited on day two, not a separate provincial park. Explore its designated trail system if extending that visit."
+                },
+                {
+                  "name": "Cinnemousun Narrows",
+                  "detail": "Cinnemousun Narrows lies where the four arms of Shuswap Lake meet and is accessible by boat only, not by road. Arrange suitable boat transport separately."
+                }
+              ],
+              "title": "North Shuswap Wilderness Access",
+              "driving": "Road travel reaches Tsútswecw, but cannot reach Cinnemousun Narrows. A separate boat journey is required; do not treat this as a continuous 1.5-hour drive."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Public ramps in Sicamous and Salmon Arm can reach capacity during long weekends; verify overnight trailer storage rules at local marinas. Some provincial park lots are designated for day-use only.",
+              "title": "Boat Launch Staging"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular reception is reliable in gateway towns but often fades in the Anstey and Seymour Arms. Do not rely on digital maps for navigation once on the open water.",
+              "title": "Lake Arm Dead Zones"
+            },
+            {
+              "kind": "fuel",
+              "text": "Fuel is readily available in Salmon Arm and Sicamous, but on-water fuel docks are fewer and operate on seasonal hours. Ensure houseboats are topped up before heading to the remote North Arm.",
+              "title": "Marine vs Road Service"
+            },
+            {
+              "kind": "timing",
+              "text": "BC Parks identifies 2026 and 2030 as dominant Adams River sockeye run years. Early October is a key viewing period; actual returns and access conditions vary. Check current park and festival information.",
+              "title": "Salmon Run Seasonality"
+            },
+            {
+              "kind": "access",
+              "text": "Many of the park's most scenic campsites are boat-in only with no vehicle road access. Ensure your itinerary accounts for water taxi or rental transit times.",
+              "title": "Water-Only Sights"
+            }
+          ],
+          "arrival": "Collect supplies in Salmon Arm before heading to more remote North Shuswap rentals; allow time for mandatory houseboat orientation sessions if applicable.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://bcparks.ca/shuswap-lake-park/",
+              "label": "BC Parks"
+            },
+            {
+              "url": "https://bcparks.ca/cinnemousun-narrows-park/",
+              "label": "BC Parks — Cinnemousun Narrows"
+            },
+            {
+              "url": "https://bcparks.ca/tsutswecw-park/",
+              "label": "BC Parks — Tsútswecw"
+            }
+          ],
+          "vehicle": "Standard vehicles are fine for gateway roads; check rental contracts for restrictions on unpaved North Shuswap forest service roads.",
+          "version": 1,
+          "goldenHour": "Copper Island provides a striking silhouette for sunset viewing from the Scotch Creek shoreline, depending on the month.",
+          "reviewedAt": "2026-11-15T11:32:20.200480+00:00"
+        }
+      },
+      "sources": [
+        "https://bcparks.ca/cinnemousun-narrows-park/",
+        "https://bcparks.ca/tsutswecw-park/",
+        "https://news.gov.bc.ca/releases/2018ENV0077-002040"
+      ]
+    },
+    "elk-island-national-park": {
+      "fields": {
+        "permit_headline": "Park admission and separate camping fees; summer 2026 admission free",
+        "permit_note": "Admission is free June 19–September 7, 2026 inclusive under the Canada Strong Pass, with 25% off eligible camping and overnight stays; reservation fees and other excluded services still cost extra. Outside that period, applicable admission fees or a valid park-specific annual pass or Discovery Pass apply; admission is always free for visitors aged 17 and under. Camping is separate from admission: check campground operating dates, closures and reservation availability before booking.",
+        "travel_plan": {
+          "days": [
+            {
+              "note": "Bison may block roads; remain inside your vehicle and maintain a safe distance at all times.",
+              "start": "Suggested: 8 AM from Edmonton",
+              "stops": [
+                {
+                  "name": "Bison Loop Road",
+                  "detail": "Look for plains bison on Bison Loop Road north of Highway 16. Wood bison live south of Highway 16; the Wood Bison Trail is the park trail for viewing that herd, not a second driving loop."
+                },
+                {
+                  "name": "Astotin Lake",
+                  "detail": "Visit the Astotin Lake shoreline. The Living Waters Boardwalk is listed closed because of high water in the October 28, 2026 trail report; do not enter the closed boardwalk."
+                }
+              ],
+              "title": "Bison and Lakeshore Vistas",
+              "driving": "Allow 1.5 hours for the transit from Edmonton and slow interior loops; conditions vary."
+            },
+            {
+              "note": "Moss Lake offers 4.8 km and 12.6 km loops; choose a route suited to daylight and conditions. Shirley Lake Trail is closed: do not hike it unless Parks Canada announces reopening.",
+              "start": "Suggested: 9 AM from the Astotin Lake Recreation Area",
+              "stops": [
+                {
+                  "name": "Moss Lake Trail",
+                  "detail": "Hike through the rolling hills and aspen forest to see the impact of beaver activity on the local hydrology."
+                },
+                {
+                  "name": "Shirley Lake Trail",
+                  "detail": "Closed: the October 28 trail report lists high water, and a November 12, 2026 area-closure bulletin covers Shirley and Simmons trails. This is not an available hike while the closure remains in effect."
+                }
+              ],
+              "title": "Aspen Parkland Trails",
+              "driving": "Allow 30 minutes between trailheads; conditions vary by trail moisture levels."
+            },
+            {
+              "note": "Evenings require insect protection; the preserve status is best appreciated on cloudless nights.",
+              "start": "Suggested: 10 AM from Fort Saskatchewan",
+              "stops": [
+                {
+                  "name": "Tawayik Lake",
+                  "detail": "Visit this quieter lake area for birdwatching and to see the transition between forest and grassland."
+                },
+                {
+                  "name": "Beaver Hills Dark Sky Preserve",
+                  "detail": "Elk Island is part of the Beaver Hills Dark Sky Preserve. Choose a clear night for stargazing; dark-sky designation does not mean the area is entirely free of light pollution."
+                }
+              ],
+              "title": "Dark Sky and Wildlife Viewing",
+              "driving": "Allow 1 hour total travel; conditions vary by night visibility."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "The largest parking area is at Astotin Lake, which serves as the hub for most activities. Secondary trailheads have much smaller gravel pull-offs that can fill on summer afternoons.",
+              "title": "Astotin Lake Hub"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular reception is generally stable along the Yellowhead Highway but can become spotty in the southern trail sections. Emergency phones are located at major facility clusters.",
+              "title": "Moderate Coverage"
+            },
+            {
+              "kind": "fuel",
+              "text": "There are no fueling stations within the park boundaries. Fill your tank in Sherwood Park or Fort Saskatchewan before entering the park gates.",
+              "title": "Gateway Gas"
+            },
+            {
+              "kind": "timing",
+              "text": "Bison and elk are most active during the cooler hours of early morning and late evening. Afternoon heat often drives wildlife into the deeper forest shade.",
+              "title": "Dawn and Dusk Wildlife"
+            },
+            {
+              "kind": "access",
+              "text": "The entire park is fenced to manage the bison herds; ensure all gates are properly closed if using backcountry access points. Some trails may close seasonally for bison handling operations.",
+              "title": "Fenced Boundaries"
+            }
+          ],
+          "arrival": "Arrive at Edmonton International Airport (YEG), rent a vehicle, and pick up groceries in Sherwood Park before the short drive east on Highway 16.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://parks.canada.ca/pn-np/ab/elkisland/activ/experiences/randonee-hiking/etat-sentiers-trail-conditions",
+              "label": "Parks Canada official guidance"
+            },
+            {
+              "url": "https://parks.canada.ca/pn-np/ab/elkisland/nature/eep-sar/faq_bison",
+              "label": "Parks Canada official guidance"
+            },
+            {
+              "url": "https://parks.canada.ca/pn-np/ab/elkisland/securite-safety/bulletins",
+              "label": "Parks Canada official guidance"
+            },
+            {
+              "url": "https://parks.canada.ca/pn-np/ab/elkisland/activ/experiences/randonee-hiking/moss",
+              "label": "Parks Canada official guidance"
+            }
+          ],
+          "vehicle": "Standard vehicles are perfect for the paved park roads; RVs are common but should check height clearances at the Astotin Lake campground trees.",
+          "version": 1,
+          "goldenHour": "Astotin Lake Beach offers a clear westward view for sunsets over the water and islands.",
+          "reviewedAt": "2026-11-15T11:24:30.845488+00:00"
+        }
+      },
+      "sources": [
+        "https://parks.canada.ca/pn-np/ab/elkisland/visit/tarifs-fees",
+        "https://parks.canada.ca/pn-np/ab/elkisland/~/link.aspx?_id=6B0566AEF4F841939561D3F08BDB8237&_z=z",
+        "https://parks.canada.ca/pn-np/ab/elkisland/securite-safety/bulletins",
+        "https://parks.canada.ca/pn-np/ab/elkisland/activ/experiences/randonee-hiking/etat-sentiers-trail-conditions",
+        "https://parks.canada.ca/pn-np/ab/elkisland/nature/eep-sar/faq_bison",
+        "https://parks.canada.ca/pn-np/ab/elkisland/activ/experiences/randonee-hiking/moss"
+      ]
+    },
+    "golden-ears-provincial-park": {
+      "fields": {
+        "permit_note": "In 2026, free day-use vehicle passes are required Friday through Monday and holidays, May 15–September 7, for parking lots past the Spirea trailhead (boat launch, South Beach, Gold Creek and West Canyon). Book online two days before visiting from 7 am Pacific. Boat-launch passes are all-day; other lots have AM (7 am–1 pm) and PM (after 1 pm) passes. No pass is required after 3:30 pm. Valid overnight camping reservations or backcountry permits exempt holders from the day-use pass; carry proof. Camping reservations and backcountry permits are separate from day-use passes.",
+        "permit_source_url": "https://bcparks.ca/reservations/day-use-passes/",
+        "travel_plan": {
+          "days": [
+            {
+              "note": "The beach area is the first to reach capacity; arrive early during summer months.",
+              "start": "Suggested: 8 AM from Maple Ridge",
+              "stops": [
+                {
+                  "name": "Alouette Lake South Beach",
+                  "detail": "Enjoy the expansive mountain views from the shore of this large, glacier-fed reservoir."
+                },
+                {
+                  "name": "Spirea Nature Trail",
+                  "detail": "Walk through a moss-draped forest featuring interpretive signs about the local ecosystem."
+                }
+              ],
+              "title": "Alouette Lake Recreation",
+              "driving": "Allow 15-20 minutes from the park gate to the lakefront; conditions vary."
+            },
+            {
+              "note": "Expect damp conditions on trails near the creek; boardwalks can be slippery.",
+              "start": "Suggested: 9 AM from Gold Creek",
+              "stops": [
+                {
+                  "name": "Lower Falls Trail",
+                  "detail": "Follow the wide, flat path along Gold Creek to reach the cascading Lower Falls."
+                },
+                {
+                  "name": "Gold Creek Lookout",
+                  "detail": "Observe the clear, emerald waters of the creek against the backdrop of the rugged peaks."
+                }
+              ],
+              "title": "Waterfalls and Rainforests",
+              "driving": "Allow 10 minutes from the main lake to Gold Creek parking; conditions vary."
+            },
+            {
+              "note": "Higher elevation trails are significantly steeper and may have lingering snow in spring.",
+              "start": "Suggested: 7:30 AM from the West Canyon Trailhead",
+              "stops": [
+                {
+                  "name": "West Canyon Lookout",
+                  "detail": "Gain elevation for a perspective over the valley and the surrounding Coast Mountains."
+                },
+                {
+                  "name": "Viewpoint Beach",
+                  "detail": "Access Viewpoint Beach on the East Canyon Trail; it is not a stop directly on the West Canyon Trail. Consult the park map and current trail report before choosing a connection or separate out-and-back hike."
+                }
+              ],
+              "title": "Upper Elevations and Vistas",
+              "driving": "Allow 30 minutes from Maple Ridge to the trailhead; conditions vary."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "In 2026, parking lots beyond Spirea require a free vehicle pass Friday through Monday and holidays, May 15–September 7, before 3:30 pm, unless exempt. Reserve two days ahead at 7 am Pacific; choose the correct parking lot and time slot. Carry camping reservation or backcountry permit proof if using that exemption.",
+              "title": "Lot Capacity"
+            },
+            {
+              "kind": "signal",
+              "text": "Cell service is poor or unavailable in many park areas, including campgrounds and South Beach. Carry paper maps and consider a satellite communication device for backcountry emergencies.",
+              "title": "Cellular Dead Zones"
+            },
+            {
+              "kind": "fuel",
+              "text": "The final opportunity for fuel and major supplies is in Maple Ridge. There are no gas stations or grocery stores within the park's mountain boundaries.",
+              "title": "Last Services"
+            },
+            {
+              "kind": "timing",
+              "text": "The park gates are locked nightly; check the official BC Parks page for current seasonal opening and closing times. Plan your return from deep trails accordingly to avoid being locked in.",
+              "title": "Gate Hours"
+            },
+            {
+              "kind": "access",
+              "text": "The main park road is paved, but access to certain trailheads may involve gravel sections. During heavy rain or snowmelt, monitor official alerts for potential road washouts or closures.",
+              "title": "Road Conditions"
+            }
+          ],
+          "arrival": "Fly into Abbotsford (YXX) or Vancouver, rent a vehicle, and stop in Maple Ridge for bear-safe food storage containers and supplies before heading north.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://bcparks.ca/golden-ears-park/",
+              "label": "BC Parks Golden Ears"
+            }
+          ],
+          "vehicle": "Cars and small RVs are suitable for the main roads, but large RVs may find the Gold Creek parking area restrictive; check BC Parks for length limitations.",
+          "version": 1,
+          "goldenHour": "Panorama Ridge is on the Golden Ears Trail in this park, but reaching it is a long, strenuous backcountry undertaking, not a casual sunset stop. Snow can persist well into July; carry proper equipment and plan for a safe return before dark. The ridge shelter is for emergencies only.",
+          "reviewedAt": "2026-11-15T11:25:21.249464+00:00"
+        }
+      },
+      "sources": [
+        "https://bcparks.ca/golden-ears-park/",
+        "https://bcparks.ca/reservations/day-use-passes/"
+      ]
+    },
+    "juan-de-fuca-provincial-park": {
+      "fields": {
+        "permit_note": "Day hiking does not reserve an overnight campsite. Backcountry camping requires payment of the applicable camping fees and a backcountry permit; permit registration is not a campsite reservation and does not guarantee space. Use BC Parks’ permit-registration service and current park instructions, and camp only in designated areas that are open. Check current trail and campsite advisories before departure. China Beach frontcountry campground reservations are separate.",
+        "travel_plan": {
+          "days": [
+            {
+              "note": "Always check a local tide table; certain beach sections are impassable at high tide.",
+              "start": "Suggested: 8 AM from Sooke",
+              "stops": [
+                {
+                  "name": "Mystic Beach",
+                  "detail": "Hike the Juan de Fuca Marine Trail from the eastern trailhead to Mystic Beach. Check current access advisories; do not rely on the presence or safety of an unofficial rope swing."
+                },
+                {
+                  "name": "China Beach",
+                  "detail": "Explore the expansive cobble beach and observe tide pools during lower tidal stages."
+                }
+              ],
+              "title": "Rugged Surf and Sea Stacks",
+              "driving": "Allow 45 to 60 minutes from Sooke via Highway 14; road is winding with frequent fog"
+            },
+            {
+              "note": "For Botanical Beach tide-pool viewing, BC Parks recommends a low tide of 1.2 m or less. Consult Port Renfrew tide predictions and watch for rogue waves; a two-hour window around any daily low is not a safety guarantee.",
+              "start": "Suggested: 9 AM from Jordan River",
+              "stops": [
+                {
+                  "name": "Botanical Beach",
+                  "detail": "Famous for its sandstone tide pools filled with sea urchins, anemones, and blue mussels at low tide. Do not touch or disturb tide pools or their marine life. Botanical Beach was closed to recreational visitors June 19, 2026 at 7:30 am through June 21 at 4 pm; check for further closures."
+                },
+                {
+                  "name": "Parkinson Creek trailhead",
+                  "detail": "This is one of the four official Juan de Fuca Marine Trail access points. Consult advisories before attempting a northern-section day hike; the trail is rugged and conditions can change quickly."
+                }
+              ],
+              "title": "Tide Pools and Ancient Cedars",
+              "driving": "Allow 75 minutes from Sooke to Port Renfrew; conditions vary with weather"
+            },
+            {
+              "note": "Sombrio Beach access involves a steep descent on a gravel road; check your vehicle's clearance.",
+              "start": "Suggested: 10 AM from Port Renfrew",
+              "stops": [
+                {
+                  "name": "Sombrio Beach",
+                  "detail": "Visit Sombrio Beach via the designated access trail, subject to current advisories. Stay on designated trails rather than relying on an unofficial hidden-waterfall route."
+                },
+                {
+                  "name": "China Beach day-use area",
+                  "detail": "Use the established beach-access trail for a separate short visit. This replaces an unverified easy excursion to Loss Creek; do not assume a suspension bridge deep on the Marine Trail is directly accessible from the road."
+                }
+              ],
+              "title": "Sombrio and China Beach",
+              "driving": "Drive between the Sombrio access road and China Beach on Highway 14; allow additional time for the access road and check current road conditions."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "fuel",
+              "text": "Sooke is the last major town for comprehensive supplies. Port Renfrew has limited fuel and basic groceries, but hours are irregular and availability is not guaranteed.",
+              "title": "Last Reliable Service"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular signal is very weak or nonexistent along most of Highway 14 and the Marine Trail. Do not rely on digital maps; carry a physical topographic map and tide chart.",
+              "title": "Coastal Reception Gaps"
+            },
+            {
+              "kind": "access",
+              "text": "The Juan de Fuca Marine Trail has specific 'tide problems'—sections that flood completely at high tide. Identify the exit points and check the official BC Parks tide warnings before hiking.",
+              "title": "Tidal Cut-offs"
+            },
+            {
+              "kind": "parking",
+              "text": "The Sombrio and China Beach lots are remote and frequently reach capacity. Ensure no valuables are left in your vehicle, as these isolated areas are prone to opportunistic break-ins.",
+              "title": "Trailhead Security"
+            },
+            {
+              "kind": "timing",
+              "text": "The trail becomes extremely muddy and slippery from October through April. Allow significantly more time for hiking during the shoulder seasons due to treacherous footing.",
+              "title": "Wet Season Hazards"
+            }
+          ],
+          "arrival": "Pick up your car at YYJ airport, transit through Victoria to Sooke for grocery and gear check, then head west on Highway 14.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://bcparks.ca/juan-de-fuca-park/",
+              "label": "BC Parks Juan de Fuca"
+            },
+            {
+              "url": "https://news.gov.bc.ca/releases/2026ENV0028-000694",
+              "label": "2026 Botanical Beach closure"
+            }
+          ],
+          "vehicle": "A standard vehicle is fine for main lots, but a higher-clearance vehicle is recommended for the Sombrio Beach access road.",
+          "version": 1,
+          "goldenHour": "Sunset at Botanical Beach, where the flat sandstone shelves reflect the colors of the Pacific horizon.",
+          "reviewedAt": "2026-11-15T11:27:01.999441+00:00"
+        }
+      },
+      "sources": [
+        "https://bcparks.ca/juan-de-fuca-park/",
+        "https://bcparks.ca/reservations/backcountry-camping/permit-registration/",
+        "https://news.gov.bc.ca/releases/2026ENV0028-000694"
+      ]
+    },
+    "peter-lougheed-provincial-park": {
+      "fields": {
+        "permit_headline": "Kananaskis Conservation Pass for parked vehicles, with exemptions",
+        "permit_note": "A Kananaskis Conservation Pass is generally required for vehicles parked at provincial park and public-land sites in the pass area, including Peter Lougheed. Personal-vehicle passes cost $15 per day or $90 per year. Through traffic and passenger loading/unloading without parking do not require a pass; exemptions and free days also apply. Register the vehicle licence plate. Camping fees and reservations are separate. Check the official pass page and current park advisories before visiting.",
+        "permit_source_url": "https://www.alberta.ca/kananaskis-conservation-pass",
+        "travel_plan": {
+          "days": [
+            {
+              "note": "High elevation trails may remain snow-covered until mid-summer.",
+              "start": "Suggested: 8 AM from Kananaskis Village",
+              "stops": [
+                {
+                  "name": "Upper Kananaskis Lake",
+                  "detail": "Walk the shoreline trail to view the surrounding peaks reflected in the glacial waters."
+                },
+                {
+                  "name": "Rawson Lake",
+                  "detail": "Ascend the forested trail to reach this high-elevation cirque nestled beneath Mount Sarrail."
+                }
+              ],
+              "title": "Glacial Lakes and High Alpine Vistas",
+              "driving": "Allow 45–60 minutes; conditions vary by weather."
+            },
+            {
+              "note": "Highway 40 between Peter Lougheed Provincial Park and Highwood House Junction closes annually December 1–June 14. Check temporary closures as well; the northern lake access is not the closed Highwood Pass section.",
+              "start": "Suggested: 9 AM from Elkwood",
+              "stops": [
+                {
+                  "name": "Ptarmigan Cirque",
+                  "detail": "Trek through one of the highest accessible meadows in the Canadian Rockies for alpine flora and fossils."
+                },
+                {
+                  "name": "Highwood Pass",
+                  "detail": "Observe the transition of the subalpine forest at the highest paved pass in Canada."
+                }
+              ],
+              "title": "Upper Highwood Pass Exploration",
+              "driving": "Allow 30–50 minutes; pass access is seasonally restricted."
+            },
+            {
+              "note": "Bears are frequently active in the valley; carry deterrents and check trail reports.",
+              "start": "Suggested: 8:30 AM from Boulton Creek",
+              "stops": [
+                {
+                  "name": "Lower Kananaskis Lake",
+                  "detail": "Check which Lower Kananaskis Lake access points are open before visiting. The November 8, 2026 report lists Lower Lake Day Use Area closed April 1–November 30; William Watson Lodge Pathway and Bill Benson Trail also have partial construction closures."
+                },
+                {
+                  "name": "Elbow Lake",
+                  "detail": "A short, steep trail reaches Elbow Lake, the headwaters of the Elbow River. Do not assume the lake-access hike itself provides a view of Rae Glacier or includes a safe route to it."
+                }
+              ],
+              "title": "Lowland Meadows and Lower Lakes",
+              "driving": "Allow 40–60 minutes; travel times vary with wildlife sightings."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Lot sizes vary significantly between the popular Upper Lake and remote Highwood areas. Many visitors arrive early to secure space at the primary glacial lake trailheads.",
+              "title": "Trailhead Capacity"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular service is extremely limited or non-existent once you enter the Kananaskis Valley. Download offline maps and emergency information in Canmore or Calgary before arrival.",
+              "title": "Remote Connectivity"
+            },
+            {
+              "kind": "fuel",
+              "text": "Fuel is available at Fortress Junction, but availability can fluctuate seasonally. It is advisable to fill your tank in Canmore or Longview before entering the park interior.",
+              "title": "Kananaskis Supply Points"
+            },
+            {
+              "kind": "timing",
+              "text": "Highway 40 between Peter Lougheed Provincial Park and Highwood House Junction is closed December 1–June 14 each year. Check temporary road advisories before travel.",
+              "title": "Seasonal Road Closures"
+            },
+            {
+              "kind": "access",
+              "text": "Purchase your pass online or at a visitor center to avoid penalties at trailheads. The pass is linked to your license plate and is monitored by park enforcement.",
+              "title": "Kananaskis Conservation Pass"
+            }
+          ],
+          "arrival": "Arrive at Calgary International Airport (YYC), rent a vehicle and obtain supplies before driving to Kananaskis. Register your licence plate for a Conservation Pass before parking where required; this is a parking requirement, not a park-gate entry ticket.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://www.alberta.ca/kananaskis-conservation-pass",
+              "label": "Official Alberta guidance"
+            },
+            {
+              "url": "https://www.albertaparks.ca/parks/kananaskis/kananaskis-country/advisories-public-safety/annual-road-closures/",
+              "label": "Official Alberta guidance"
+            },
+            {
+              "url": "https://www.albertaparks.ca/parks/kananaskis/kananaskis-country/advisories-public-safety/trail-reports/peter-lougheed/",
+              "label": "Official Alberta guidance"
+            }
+          ],
+          "vehicle": "Standard vehicles are sufficient for paved areas, but higher clearance may be beneficial for certain trail access roads; check rental agreements for gravel road restrictions.",
+          "version": 1,
+          "goldenHour": "Upper Kananaskis Lake provides mountain-and-lake scenery; choose an open shoreline viewpoint and allow enough daylight for the return. Check trail reports rather than looking for an officially named Rockwall viewpoint here.",
+          "reviewedAt": "2026-11-15T11:31:01.455680+00:00"
+        }
+      },
+      "sources": [
+        "https://www.alberta.ca/kananaskis-conservation-pass",
+        "https://www.albertaparks.ca/parks/kananaskis/kananaskis-country/advisories-public-safety/annual-road-closures/",
+        "https://www.albertaparks.ca/parks/kananaskis/kananaskis-country/advisories-public-safety/trail-reports/peter-lougheed/"
+      ]
+    },
+    "dinosaur-provincial-park": {
+      "fields": {
+        "permit_source_url": "https://www.albertaparks.ca/parks/south/dinosaur-pp/",
+        "travel_plan": {
+          "days": [
+            {
+              "note": "Summer temperatures in the badlands can be significantly higher than in town.",
+              "start": "Suggested: 8:30 AM from Brooks",
+              "stops": [
+                {
+                  "name": "Visitor Centre and Museum",
+                  "detail": "View reconstructed skeletons and learn about the diverse Cretaceous species found within the park boundaries."
+                },
+                {
+                  "name": "Outdoor Fossil Displays",
+                  "detail": "Visit the two displays along the public scenic loop road: an in-situ duck-billed dinosaur skeleton and a recreated Centrosaurus bonebed quarry. Access is year-round, road conditions permitting."
+                }
+              ],
+              "title": "Badlands and Bonebeds",
+              "driving": "Allow 45 minutes from Brooks; watch for wildlife on the prairie roads"
+            },
+            {
+              "note": "The clay-based soil becomes impassable and extremely slippery when wet.",
+              "start": "Suggested: 9 AM from the park campground",
+              "stops": [
+                {
+                  "name": "Badlands Trail",
+                  "detail": "Hike through the hoodoos and pinnacles to see the unique geological layers of the Red Deer River valley."
+                },
+                {
+                  "name": "Cottonwood Flats Trail",
+                  "detail": "Walk through the riparian forest along the river to spot local bird species and distinct flora."
+                }
+              ],
+              "title": "Coulee Views and Cottonwoods",
+              "driving": "Local park loop driving; allow 20 minutes for the scenic circuit"
+            },
+            {
+              "note": "Check wind conditions as the prairie can experience sudden high gusts.",
+              "start": "Suggested: 10 AM from the Visitor Centre",
+              "stops": [
+                {
+                  "name": "Park entrance viewpoint",
+                  "detail": "Stop at the information kiosk and viewpoint at the top of the entrance hill before descending to the visitor centre and campground."
+                },
+                {
+                  "name": "Brooks Aqueduct",
+                  "detail": "Visit this nearby National Historic Site to see the massive concrete structure that once transformed the regional agriculture."
+                }
+              ],
+              "title": "Red Deer River Basin",
+              "driving": "Allow 90 minutes for the return trip to Brooks and the aqueduct site"
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "For the Fossil Finders Hike, park at the Service Centre, walk two minutes to the Visitor Centre, and meet in front of it 15 minutes before departure. Follow the meeting instructions for your booked program.",
+              "title": "Visitor Centre Capacity"
+            },
+            {
+              "kind": "signal",
+              "text": "Cell service is generally reliable at the park entrance and Visitor Centre but drops off quickly in the lower coulees. Download maps before descending into the badlands.",
+              "title": "Deep Coulee Outages"
+            },
+            {
+              "kind": "fuel",
+              "text": "Brooks is the primary location for full services including fuel and groceries. There are no gas stations within the park itself, only a small convenience store.",
+              "title": "Regional Supply Points"
+            },
+            {
+              "kind": "timing",
+              "text": "Check the dated program calendar for guided-tour availability. Visitor Centre hours are seasonal; from October 13 to December 20, weekdays are by appointment and weekends are 11 am–4 pm. Water was shut off October 22, 2026; bring your own water.",
+              "title": "Guided Tour Windows"
+            },
+            {
+              "kind": "access",
+              "text": "Large portions of the park are designated as a Natural Preserve and are closed to the public except via guided programs. Foot traffic is strictly limited to marked trails to prevent erosion.",
+              "title": "Preserve Restrictions"
+            }
+          ],
+          "arrival": "Use Calgary as the flight gateway, then stock up in Brooks before driving to the park, 48 km northeast of Brooks. Medicine Hat scheduled passenger service ended June 24, 2026; do not assume a flight connection there.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://www.albertaparks.ca/parks/south/dinosaur-pp/",
+              "label": "Alberta Parks - Dinosaur"
+            }
+          ],
+          "vehicle": "Standard vehicles are fine for paved park roads, but high-clearance is better for gravel secondary roads; check rental insurance for gravel coverage.",
+          "version": 1,
+          "goldenHour": "Park entrance viewpoint for evening views of the badlands.",
+          "reviewedAt": "2026-11-15T11:24:02.991294+00:00"
+        }
+      },
+      "sources": [
+        "https://www.albertaparks.ca/parks/south/dinosaur-pp/information-facilities/driving-instructions/",
+        "https://www.albertaparks.ca/parks/south/dinosaur-pp/activities-events/recreational-activities/",
+        "https://www.albertaparks.ca/media/wb1dkgmf/program-guide-ff-2026.pdf",
+        "https://www.albertaparks.ca/parks/south/dinosaur-pp/information-facilities/park-contacts/dinosaur-visitor-centre/",
+        "https://www.medicinehat.ca/roads-parking-transportation/airport/"
+      ]
+    },
+    "lesser-slave-lake-provincial-park": {
+      "fields": {
+        "travel_plan": {
+          "days": [
+            {
+              "note": "Seasonal visit only: Marten Mountain Road, viewpoint, Marten Mountain Loop and Lily Lake Trail closed for winter October 13, 2026. Check the reopening advisory before planning this day.",
+              "start": "Suggested: 9 AM from Slave Lake",
+              "stops": [
+                {
+                  "name": "Marten Mountain Viewpoint",
+                  "detail": "Drive the winding road to this high vantage point for a panoramic perspective of the lake's vast eastern basin and the surrounding boreal forest."
+                },
+                {
+                  "name": "Lesser Slave Lake Bird Observatory",
+                  "detail": "Visit this research station during migration seasons to learn about local avian conservation efforts and regional ecology."
+                }
+              ],
+              "title": "Boreal Heights and Basin Views",
+              "driving": "Allow 1-2 hours for local park roads; conditions vary with weather."
+            },
+            {
+              "note": "Beach Road closed to vehicles for winter October 13, 2026. Check access advisories and Boreal Centre opening hours before visiting.",
+              "start": "Suggested: 10 AM from Marten River",
+              "stops": [
+                {
+                  "name": "Devonshire Beach",
+                  "detail": "Walk the extensive natural shoreline known for its fine sand and unique dune ecosystem formed by post-glacial winds."
+                },
+                {
+                  "name": "Boreal Centre for Bird Conservation",
+                  "detail": "Explore the indoor exhibits and nearby interpretive trails that showcase the biodiversity of the northern woods."
+                }
+              ],
+              "title": "Lakeshore Discovery and Dunes",
+              "driving": "The Boreal Centre is 18.5 km north of Slave Lake on Highway 88; plan a separate drive from Devonshire Beach rather than treating them as one central beach complex."
+            },
+            {
+              "note": "Marten River Campground closed for winter October 13, 2026. Since September 18, the Loop A beach stairs between A-28/A-29 and southern Loop B stairs between B-23/B-24 have been closed for structural issues; use signed alternative access when the area is accessible.",
+              "start": "Suggested: 9 AM from Devonshire",
+              "stops": [
+                {
+                  "name": "Jack Pine Trail",
+                  "detail": "Explore the named trail beside Marten River Campground, subject to seasonal access and posted closures."
+                },
+                {
+                  "name": "Duck Pond Boardwalk",
+                  "detail": "Visit the boardwalk identified on the official park map; check local conditions before setting out."
+                }
+              ],
+              "title": "Marten River Exploration",
+              "driving": "Allow 30-45 minutes for transit between the southern beach and northern campground areas."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Parking lots at Devonshire Beach are spacious but can fill during mid-summer festivals; look for overflow signage if the primary entrance is congested.",
+              "title": "Beachside Staging"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular reception is generally reliable near the town of Slave Lake but becomes intermittent as you ascend Marten Mountain or travel north.",
+              "title": "Connectivity Limits"
+            },
+            {
+              "kind": "fuel",
+              "text": "The town of Slave Lake serves as the final comprehensive stop for fuel and supplies before entering the more remote park sectors.",
+              "title": "Gateway Provisions"
+            },
+            {
+              "kind": "timing",
+              "text": "Spring and fall offer the best opportunities for migratory sightings, while summer is preferred for beach activity.",
+              "title": "Seasonal Birding"
+            },
+            {
+              "kind": "access",
+              "text": "Primary park roads are paved, but secondary access points to trailheads may involve gravel surfaces subject to washouts after heavy rain.",
+              "title": "Road Surfaces"
+            }
+          ],
+          "arrival": "Collect your rental at YEG and transit through Edmonton to Slave Lake for groceries and park supplies before the final short drive to the shoreline.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://www.albertaparks.ca/parks/north/lesser-slave-lake-pp/",
+              "label": "Alberta Parks"
+            }
+          ],
+          "vehicle": "Standard passenger vehicles are sufficient for main roads; check rental agreements for restrictions on unpaved mountain access.",
+          "version": 1,
+          "goldenHour": "Marten Mountain Viewpoint in the open season only; the viewpoint closed for winter October 13, 2026.",
+          "reviewedAt": "2026-11-15T11:28:35.956824+00:00"
+        },
+        "permit_note": "Day visits do not require a campsite reservation. Reserve designated reservable camping through Shop.AlbertaParks.ca and check each facility’s booking window. Marten River and Devonshire South campgrounds and the park’s group-use camping areas closed for winter October 13, 2026."
+      },
+      "sources": [
+        "https://www.albertaparks.ca/parks/north/lesser-slave-lake-pp/",
+        "https://www.albertaparks.ca/parks/north/lesser-slave-lake-pp/information-facilities/camping/marten-river/",
+        "https://www.albertaparks.ca/media/k5ongfa5/lesser-slave-lake-tear-sheet.pdf",
+        "https://albertaparks.ca/media/6497371/bcbc-brochure.pdf"
+      ]
+    },
+    "maligne-lake": {
+      "fields": {
+        "permit_note": "A daily park pass or Parks Canada Discovery Pass normally covers Jasper admission; a Discovery Pass is not mandatory. Admission was free January 1–15 and June 19–September 7, 2026 under the Canada Strong Pass. Cruise tickets are separate; overnight backcountry camping requires a reservation and backcountry camping permit. Camping, reservations and third-party cruises are not included in free park admission.",
+        "travel_plan": {
+          "days": [
+            {
+              "note": "Medicine Lake water levels vary significantly by month; early summer is highest.",
+              "start": "Suggested: 8:30 AM from Jasper",
+              "stops": [
+                {
+                  "name": "Maligne Canyon — closed",
+                  "detail": "Do not enter the canyon or plan the bridge walk: Parks Canada states that Maligne Canyon remains closed for the entire 2026 season."
+                },
+                {
+                  "name": "Medicine Lake",
+                  "detail": "Observe the unique 'disappearing' lake, where water drains through an underground karst system."
+                }
+              ],
+              "title": "Glacial Valleys and Canyons",
+              "driving": "Plan the Maligne Lake Road journey separately from sightseeing stops; Maligne Canyon is not an available walking stop in 2026."
+            },
+            {
+              "note": "Spirit Island is a sacred site; visitors must stay on designated paths and docks.",
+              "start": "Suggested: 9 AM from Maligne Lake Lodge",
+              "stops": [
+                {
+                  "name": "Spirit Island",
+                  "detail": "Spirit Island is 14 km up-lake with no road or trail access. Reach the viewing area by commercial tour boat or a suitably planned private paddle; check conditions and water-activity rules first."
+                },
+                {
+                  "name": "Mary Schäffer Loop",
+                  "detail": "An easy lakeside walk offering interpretive plaques about the early explorers and geological history of the area."
+                }
+              ],
+              "title": "Icons of the High Rockies",
+              "driving": "No vehicle access beyond the lodge area; local travel is by boat or on foot."
+            },
+            {
+              "note": "High altitude trails may remain snow-covered until late June; check trail reports.",
+              "start": "Suggested: 8 AM from Maligne Lake",
+              "stops": [
+                {
+                  "name": "Bald Hills Trail",
+                  "detail": "Hike upward for an expansive view of the entire 22km lake and the surrounding glaciers."
+                },
+                {
+                  "name": "Moose Lake Loop",
+                  "detail": "Walk the forested loop to Moose Lake; the route crosses ancient landslide debris before returning along Maligne Lake. Wildlife sightings are not guaranteed."
+                }
+              ],
+              "title": "Alpine Ridges and Skyline",
+              "driving": "Minimal; trailheads are located near the primary parking areas at the north end of the lake."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "The main lots at the lake fill quickly during midday in summer; arrive early or utilize regional shuttle services if available.",
+              "title": "Peak Demand"
+            },
+            {
+              "kind": "signal",
+              "text": "Expect no cellular service along the Maligne Lake Road or at the lake itself; download maps before leaving Jasper.",
+              "title": "Remote Valley"
+            },
+            {
+              "kind": "fuel",
+              "text": "The town of Jasper is the last location for fuel and food; there are no gas stations at Maligne Lake.",
+              "title": "Jasper Supply Hub"
+            },
+            {
+              "kind": "timing",
+              "text": "Boat cruises operate seasonally, usually from late May through early October depending on ice melt.",
+              "title": "Tour Schedules"
+            },
+            {
+              "kind": "access",
+              "text": "Check current trail and closure bulletins before hiking. Maligne Lake is a Water Recreation Zone under the July 31–December 31, 2026 order: watercraft and equipment must comply with Clean, Drain, Dry requirements before use.",
+              "title": "Wildlife Closures"
+            }
+          ],
+          "arrival": "Fly into YEG, drive west to Jasper for check-in and supplies, then take the Maligne Lake Road for the final leg of the journey.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://parks.canada.ca/pn-np/ab/jasper",
+              "label": "Parks Canada - Jasper National Park"
+            }
+          ],
+          "vehicle": "Standard cars are fine for the paved Maligne Lake Road; RVs should use designated parking stalls and check for length restrictions.",
+          "version": 1,
+          "goldenHour": "Spirit Island for late afternoon light (accessible via tour) or the Maligne Lake boathouse for early morning reflections.",
+          "reviewedAt": "2026-11-15T11:28:36.560076+00:00"
+        }
+      },
+      "sources": [
+        "https://parks.canada.ca/voyage-travel/conseils-tips/choisis-canada-choose/admission-camping",
+        "https://parks.canada.ca/pn-np/ab/jasper/activ/passez-stay/arrierepays-backcountry/sugg-sentiers_trip-ideas/maligne",
+        "https://www.parks.canada.ca/pn-np/ab/jasper/activ/itineraires-itineraries/canyon-maligne",
+        "https://www.parks.canada.ca/pn-np/ab/jasper/activ/itineraires-itineraries/lac-maligne",
+        "https://publications.gc.ca/collections/collection_2018/pc/R64-543-2018-eng.pdf",
+        "https://parks.canada.ca/pn-np/ab/jasper/bulletins/02e20910-04ac-4e0e-bbaa-6d9446b83b15"
+      ]
+    },
+    "miette-hot-springs": {
+      "fields": {
+        "permit_source_url": "https://parks.canada.ca/pn-np/ab/jasper/sources-miette-springs",
+        "permit_note": "Jasper admission normally requires a daily park pass or Discovery Pass for visitors aged 18 and over; youth park admission is free. Admission was free to all visitors January 1–15 and June 19–September 7, 2026. Pool admission is a separate charge, including during free park-admission periods, and is sold in person on a first-come, first-served basis; reservations and advance tickets are unavailable. Miette Hot Springs is now closed for the season and expects to reopen in spring 2027. Check road and facility status before travelling.",
+        "travel_plan": {
+          "days": [
+            {
+              "note": "Open-season itinerary only: the pools are closed for the season and expect to reopen spring 2027. Check trail conditions and opening hours before combining Sulphur Skyline with a soak.",
+              "start": "Suggested: 8:30 AM from Jasper",
+              "stops": [
+                {
+                  "name": "Sulphur Skyline Trail",
+                  "detail": "Begin this steep ascent early to reach the summit for 360-degree views of the Fiddle River Valley before the afternoon heat."
+                },
+                {
+                  "name": "Miette Hot Springs",
+                  "detail": "Relax in the hottest mineral springs in the Canadian Rockies after your hike, utilizing the varied temperature pools."
+                }
+              ],
+              "title": "The Fiddle Valley Ascent",
+              "driving": "Allow 1 hour from Jasper; the Miette Road is winding with frequent wildlife sightings."
+            },
+            {
+              "note": "Maintain a safe distance from wildlife; bighorn sheep are frequently found licking salt on the roadway.",
+              "start": "Suggested: 9 AM from Pocahontas",
+              "stops": [
+                {
+                  "name": "Punchbowl Falls",
+                  "detail": "View the unique limestone mountain formations where the water has carved a distinct bowl shape near the Miette Road entrance."
+                },
+                {
+                  "name": "Jasper House National Historic Site",
+                  "detail": "Walk the short trail to the viewpoint overlooking the site of a 19th-century fur trade post on the banks of the Athabasca River."
+                }
+              ],
+              "title": "Ashman and Athabasca Confluence",
+              "driving": "Allow 45 minutes; stop at the various pullouts for bighorn sheep viewing."
+            },
+            {
+              "note": "Talbot Lake is shallow and prone to high winds; use caution if approaching the water's edge.",
+              "start": "Suggested: 9:30 AM from Hinton",
+              "stops": [
+                {
+                  "name": "Talbot Lake",
+                  "detail": "Stop at the rocky shoreline for birdwatching and views of the surrounding peaks reflected in the shallow waters."
+                },
+                {
+                  "name": "Pocahontas Mine Trail",
+                  "detail": "Follow the interpretive loop through the ruins of a historic coal mining townsite located at the base of the Miette Road."
+                }
+              ],
+              "title": "Lakeside Reflection and History",
+              "driving": "Allow 1 hour; conditions are generally paved but subject to seasonal frost heaves."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "The parking lot at the hot springs also serves the Sulphur Skyline trailhead and can fill by late morning. Overflow parking is available but adds walking distance to the facility entrance.",
+              "title": "Miette Terminal Parking"
+            },
+            {
+              "kind": "signal",
+              "text": "Expect total loss of cellular signal once you turn onto Miette Road from Highway 16. Emergency payphones are available at the hot springs facility, but do not rely on digital navigation.",
+              "title": "Fiddle Valley Dead Zone"
+            },
+            {
+              "kind": "fuel",
+              "text": "There are no fueling stations on Miette Road. Hinton offers the most competitive prices before entering the park, while Jasper serves as the primary hub for western arrivals.",
+              "title": "Hinton vs Jasper"
+            },
+            {
+              "kind": "timing",
+              "text": "Miette Hot Springs is closed for the season, with reopening expected spring 2027. This is an open-season itinerary only; verify Miette Road and facility status before departure.",
+              "title": "Seasonal Road Closure"
+            },
+            {
+              "kind": "access",
+              "text": "Pool admission is purchased only in person, first come, first served; no reservations or online tickets. Expect queues at capacity. Towel and swimsuit rentals are listed separately from admission.",
+              "title": "Pool Entry Protocols"
+            }
+          ],
+          "arrival": "Drive west from Edmonton via Highway 16 and stock up in Hinton. The Miette Road junction is 34 km west of Hinton; the pools are a further 17 km along Miette Road. Check seasonal access before setting out.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://parks.canada.ca/pn-np/ab/jasper",
+              "label": "Parks Canada - Jasper"
+            }
+          ],
+          "vehicle": "Miette Road is narrow and winding, with a maximum vehicle length of 7.5 m (25 ft). Trailers and large motorhomes are not permitted beyond Miette Campground; use the trailer drop-off at Lower Mine Trail parking lot.",
+          "version": 1,
+          "goldenHour": "Ashlar Ridge Viewpoint, 8.9 km along Miette Road, when the road is open.",
+          "reviewedAt": "2026-11-15T11:29:06.894905+00:00"
+        }
+      },
+      "sources": [
+        "https://parks.canada.ca/pn-np/ab/jasper/sources-miette-springs",
+        "https://parks.canada.ca/pn-np/ab/jasper/sources-miette-springs/faq",
+        "https://parks.canada.ca/pn-np/ab/jasper/sources-miette-springs/heures-hours",
+        "https://parks.canada.ca/voyage-travel/conseils-tips/choisis-canada-choose/admission-camping",
+        "https://parks.canada.ca/pn-np/ab/jasper/sources-miette-springs/tarifs-fees",
+        "https://parks.canada.ca/pn-np/ab/jasper/sources-miette-springs/localisation-directions",
+        "https://www.parks.canada.ca/pn-np/ab/jasper/activ/experience/sentiers-trails/miette"
+      ]
+    },
+    "writing-on-stone-provincial-park": {
+      "fields": {
+        "travel_plan": {
+          "days": [
+            {
+              "note": "Temperatures in the coulees can exceed 35°C in summer; plan for heat.",
+              "start": "Suggested: 9:00 AM from Visitor Centre",
+              "stops": [
+                {
+                  "name": "Matapiiksi (Hoodoo) Trail",
+                  "detail": "Follow the 2.5 km one-way interpretive trail; allow about 5 km return from the campground to Police Coulee Viewpoint, including the Battle Scene side trip. Stay on the trail."
+                },
+                {
+                  "name": "Battle Scene Petroglyph",
+                  "detail": "One of the most elaborate rock art panels accessible to the public, depicting a historic conflict."
+                }
+              ],
+              "title": "Sacred Landscapes and Hoodoo Trails",
+              "driving": "Minimal driving within the park; conditions vary"
+            },
+            {
+              "note": "Do not float downstream past the park beach without a detailed plan: the river leaves the park and passes private land with no exits for many kilometres. Coffin Bridge construction closures began September 1, 2026; its hand launch remains open.",
+              "start": "Suggested: 8:30 AM from Writing-on-Stone Campground, when open",
+              "stops": [
+                {
+                  "name": "Police Coulee Viewpoint",
+                  "detail": "Follow the public Hoodoo Trail to its viewpoint rather than assuming unrestricted access to the historic police outpost."
+                },
+                {
+                  "name": "Milk River beach",
+                  "detail": "Use the park beach as an exit for a suitably planned upstream paddle or float. Check flows and arrange transport first; canoeing and kayaking are not recommended below 12 cubic metres per second."
+                }
+              ],
+              "title": "Milk River Valley Exploration",
+              "driving": "Allow 30 minutes for local park roads; conditions vary"
+            },
+            {
+              "note": "Guided tours are seasonal and frequently sell out; check official schedules.",
+              "start": "Suggested: 10:00 AM from Visitor Centre",
+              "stops": [
+                {
+                  "name": "Restricted Preserve",
+                  "detail": "Participate in a guided interpretive tour to see petroglyphs and pictographs not accessible to the general public."
+                },
+                {
+                  "name": "Writing-on-Stone Viewpoint",
+                  "detail": "A high-ground perspective showing the Milk River meandering through the prairie landscape."
+                }
+              ],
+              "title": "Archaeological Preserve Guided Walk",
+              "driving": "Allow 1 hour to transit from gateway towns; conditions vary"
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "For the October 25–November 22, 2026 septic replacement, the campground and group-use areas are closed. The valley day-use area remains open, but its access road is closed to vehicles and pedestrians: park at the Visitor Centre and walk down Visitor Centre Trail. Follow current notices and signage.",
+              "title": "Day Use Limits"
+            },
+            {
+              "kind": "signal",
+              "text": "Due to the proximity to the US border, mobile phones may frequently switch to roaming on American towers. Disable data roaming to avoid unexpected charges while in the coulees.",
+              "title": "Border Proximity Issues"
+            },
+            {
+              "kind": "fuel",
+              "text": "Milk River is the nearest town for fuel and basic services. There are no gas stations within the park or the immediate surrounding ranchlands.",
+              "title": "Prairie Distances"
+            },
+            {
+              "kind": "timing",
+              "text": "The park experiences extreme heat from July through August. The best lighting and safest temperatures for the Hoodoo Trail occur in the early morning.",
+              "title": "Summer Heat Precautions"
+            },
+            {
+              "kind": "access",
+              "text": "Entering the Archaeological Preserve without a guide is a legal offense. Respect all signage protecting these Niitsitapi cultural sites.",
+              "title": "Cultural Protection"
+            }
+          ],
+          "arrival": "Use Calgary as the scheduled-flight gateway and drive via Milk River for supplies. Lethbridge Airport currently has no scheduled passenger service; its WestJet Calgary route ended June 24, 2026.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://www.albertaparks.ca/parks/south/writing-on-stone-pp/",
+              "label": "Alberta Parks"
+            }
+          ],
+          "vehicle": "Standard vehicles are suitable for the paved access roads; check for local closures if exploring secondary gravel prairie roads.",
+          "version": 1,
+          "goldenHour": "The viewpoint overlooking the Milk River valley, where sandstone textures are emphasized by low-angle light.",
+          "reviewedAt": "2026-11-15T11:33:23.376843+00:00"
+        }
+      },
+      "sources": [
+        "https://www.albertaparks.ca/parks/south/writing-on-stone-pp/information-facilities/trails/",
+        "https://www.albertaparks.ca/parks/south/writing-on-stone-pp/information-facilities/",
+        "https://www.albertaparks.ca/parks/south/writing-on-stone-pp/activities-events/recreational-activities/",
+        "https://www.albertaparks.ca/media/6496416/wos-hoodoo-trail-guide-booklet.pdf",
+        "https://www.albertaparks.ca/media/3856198/writing-on-stone-brochure.pdf",
+        "https://www.lethbridgeairport.ca/",
+        "https://www.lethbridgeairport.ca/news/the-faq-on-yql"
+      ]
     }
   },
   "photoDecisions": {
