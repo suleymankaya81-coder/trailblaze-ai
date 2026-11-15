@@ -30,7 +30,7 @@ for slug in sys.argv[1:]:
         (slug not in {r["slug"] for r in review.get("photoNeeds", [])}, "reviewed photo blocker"),
         (d["hero_image"] and d["photo_credit"], "cover photo"),
         (d["lat"] is not None and d["nearest_airport_code"] and (d["drive_minutes"] or d.get("access_type") == "fly-in"), "location/airport/drive"),
-        (len(offers) >= (12 if d["country_code"] == "ca" else 15), f"offers {len(offers)}"),
+        (len(offers) >= (12 if d["country_code"] in ("ca", "gb") else 15), f"offers {len(offers)}"),
         (slug in routes, "route line"),
         (d["permit_note"], "reservation note"),
         (d["travel_plan"] and len(d["travel_plan"].get("days", [])) in (3, 4) and len(d["travel_plan"].get("intel", [])) == 5, "local itinerary and field intel"),

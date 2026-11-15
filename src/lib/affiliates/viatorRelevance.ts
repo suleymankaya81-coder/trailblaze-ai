@@ -11,5 +11,9 @@ export function isPlaceExperienceRelevant(name: string, title: string, descripti
     const geography = [...words(context.region ?? "").filter(w => w.length > 2), "canada", "canadian"];
     if (!geography.some(term => text.has(term))) return false;
   }
+  if (context?.countryCode === "gb") {
+    const geography = [...words(context.region ?? "").filter(w => w.length > 2), "uk", "britain", "british", "england", "scotland", "wales", "english", "scottish", "welsh"];
+    if (!geography.some(term => text.has(term))) return false;
+  }
   return terms.every((term) => text.has(term));
 }

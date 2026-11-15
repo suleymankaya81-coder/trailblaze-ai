@@ -38,7 +38,7 @@ const GONE_PREFIXES = [
  * Root "/" only maps on the authority host itself.
  */
 /** Switch on once the first UK places are published, so old UK pages land on the UK country page. */
-export const UK_PAGES_LIVE = false;
+export const UK_PAGES_LIVE = true;
 
 export function authorityTarget(path: string, onAuthorityHost: boolean): string | null {
   const p = path.toLowerCase();

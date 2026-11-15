@@ -14,3 +14,13 @@ class UkCatalog(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+class StopsMustBeSourced(unittest.TestCase):
+    def test_stop_missing_from_sources_is_reported(self):
+        import importlib.util, sys
+        sys.path.insert(0, str(pathlib.Path(__file__).parent))
+        spec = importlib.util.spec_from_file_location("gtc", pathlib.Path(__file__).parent / "generate-travel-content.py")
+        m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
+        plan = {"days": [{"stops": [{"name": "Mam Tor"}, {"name": "Invented Falls (east)"}]}]}
+        packet = {"sources": [{"text": "Walk up Mam Tor from Castleton."}]}
+        self.assertEqual(m.unsupported_stops(plan, packet), ["Invented Falls (east)"])

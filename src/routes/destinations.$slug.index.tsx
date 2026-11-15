@@ -22,8 +22,9 @@ export const Route = createFileRoute("/destinations/$slug/")({
     if (!loaderData) return { meta: [{ title: "Destination not found — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
     const name = COUNTRIES[loaderData.country].name;
     const total = loaderData.regions.reduce((n, r) => n + r.count, 0);
-    const title = `${name} National Parks & Road Trip Destinations by State`;
-    const description = `Plan trips to ${total} ${name} parks and outdoor destinations across ${loaderData.regions.length} states: airports, rentals, itineraries and when to go.`;
+    const unit = loaderData.country === "gb" ? ["Nation", "nations"] : loaderData.country === "ca" ? ["Province", "provinces and territories"] : ["State", "states"];
+    const title = `${name} National Parks & Road Trip Destinations by ${unit[0]}`;
+    const description = `Plan trips to ${total} ${name} parks and outdoor destinations across ${loaderData.regions.length} ${unit[1]}: airports, rentals, itineraries and when to go.`;
     const url = `${SITE_ORIGIN}${countryPath(loaderData.country)}`;
     return {
       meta: [

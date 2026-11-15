@@ -23,4 +23,8 @@ describe("destination-specific real Viator results", () => {
   it("does not match a short place name inside other words", () => {
     expect(isPlaceExperienceRelevant("Ely", "Lovely Las Vegas tour")).toBe(false);
   });
+  it("UK places need British geography in the listing", () => {
+    expect(isPlaceExperienceRelevant("Lake District National Park", "Lake District tour from Seattle", "", { countryCode: "gb", region: "Cumbria" })).toBe(false);
+    expect(isPlaceExperienceRelevant("Lake District National Park", "Lake District day tour in England", "", { countryCode: "gb", region: "Cumbria" })).toBe(true);
+  });
 });

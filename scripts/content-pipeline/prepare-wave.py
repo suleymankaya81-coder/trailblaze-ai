@@ -20,6 +20,9 @@ BAD = re.compile(r"map|logo|seal|sign|diagram|chart|plan|stamp|coin|flag|icon|sv
 # Use an explicitly named, verifiable landmark for broad regions or catalog aliases.
 # These are map anchors, not claims that a region has one exact point.
 WIKI_ANCHORS = {
+    # UK pilot (Welsh official names on Wikipedia)
+    "eryri-snowdonia-national-park": "Eryri National Park",
+    "brecon-beacons-national-park": "Bannau Brycheiniog National Park",
     # Canada wave 2
     "kejimkujik-national-park-and-national-historic-site": "Kejimkujik National Park",
     "north-cape-coastal-drive": "North Cape, Prince Edward Island",
@@ -151,7 +154,11 @@ COORDS = {
 # Wikipedia lead image is not a scenic cover for these; use the first search photo instead.
 HERO_FROM_SEARCH = {"palm-desert","las-cruces","paradise-valley","annapolis","winthrop","manitou-springs","yuma","everglades-city","calistoga","memphis","salem","seligman","glenwood-springs","stanley","amarillo","vicksburg","selma","plymouth","saratoga-springs","truckee", "los-angeles", "boston", "san-francisco", "new-york-city", "houston", "dallas-fort-worth", "charlotte", "atlanta"}
 # Alternative Commons search terms for places with too few usable photos.
+# Exact-place guard: a Commons photo must name the place in its file title (search also returns lookalike forests abroad).
+PLACE_WORDS = {"new-forest-national-park": "new forest", "the-broads-national-park": "broad"}
 SEARCH_TERMS = {
+    "new-forest-national-park": ["New Forest Hampshire", "New Forest ponies", "New Forest heath"],
+    "the-broads-national-park": ["Norfolk Broads", "Hickling Broad", "Horsey Windpump"],
     # Canada wave 2 (low photo counts under the plain park name)
     "kejimkujik-national-park-and-national-historic-site": ["Kejimkujik National Park", "Kejimkujik Lake", "Kejimkujik Seaside"],
     "tweedsmuir-provincial-park": ["Tweedsmuir Provincial Park", "Hunlen Falls", "Rainbow Range British Columbia"],
@@ -301,7 +308,7 @@ def commons_search(term, width=1280, limit=40):
 AIRPORTS = []
 with open("/tmp/airports.csv") as f:
     for r in csv.DictReader(f):
-        if r["iso_country"] in ("US", "CA") and r["scheduled_service"] == "yes" and r["iata_code"] \
+        if r["iso_country"] in ("US", "CA", "GB") and r["scheduled_service"] == "yes" and r["iata_code"] \
                 and r["type"] in ("large_airport", "medium_airport"):
             AIRPORTS.append(r)
 
@@ -343,7 +350,7 @@ Return JSON:
  "best_season": e.g. "March – May, September – October",
  "best_seasons": subset of ["spring","summer","fall","winter"],
  "scenic_score": 1-10, "camping_score": 1-10,
- "avg_daily_budget": rough per person per day in the destination's local currency (CAD for Canada, USD for the US) incl. lodging (integer),
+ "avg_daily_budget": rough per person per day in the destination's local currency (CAD for Canada, GBP for the UK, USD for the US) incl. lodging (integer),
  "trip_duration_days": e.g. "2–3 days", "recommended_duration": e.g. "2-3 days",
  "permit_level": "high" if timed entry/lottery permits are commonly needed, "moderate" if some popular hikes or campsites need reservations, else "none",
  "aliases": 2-4 lowercase names people search for,
@@ -424,6 +431,8 @@ def prepare_facts(slug):
         hero = None
     for p in pool:
         if p["file"] in seen or p["url"] in used or p["url"] in used_cards:
+            continue
+        if slug in PLACE_WORDS and PLACE_WORDS[slug] not in p["file"].lower() and "horsey" not in p["file"].lower():
             continue
         seen.add(p["file"])
         photos.append(p)

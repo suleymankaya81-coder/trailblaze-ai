@@ -73,6 +73,8 @@ const ESTIMATES: Array<[RegExp, string]> = [
 ];
 export function estimatedFrom(text: string, destinationSlug?: string): string {
   if (destinationSlug && destinationGeo(destinationSlug)?.country === "ca") return canadaEstimate(text);
+  // No reviewed UK price benchmark yet: never show US-based estimates on UK pages.
+  if (destinationSlug && destinationGeo(destinationSlug)?.country === "gb") return "Check live price";
   const t = text.toLowerCase();
   return ESTIMATES.find(([re]) => re.test(t))?.[1] ?? "Check live price";
 }

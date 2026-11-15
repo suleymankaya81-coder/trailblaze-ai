@@ -1,0 +1,95 @@
+{
+  "slug": "dartmoor-national-park",
+  "headline": "Archaeology and Firing Range Access Information",
+  "reservation": "Entry is free, but visitors must consult the official firing notice for the Dartmoor Training Area before entering specific northern moor sectors. Firing ranges have been used for over 200 years and access is strictly restricted during live exercises; always check the current camping map for backpack camping zones.",
+  "source_url": "https://www.dartmoor.gov.uk/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Granite Tors and Ancient Stones",
+        "start": "Suggested: 9 AM from Bovey Tracey",
+        "stops": [
+          {
+            "name": "Haytor",
+            "detail": "Climb the park's most famous tor at 457m for views of the surrounding heather moorland and granite outcrops."
+          },
+          {
+            "name": "Merrivale Stone Row",
+            "detail": "Explore significant Bronze Age archaeology, including stone circles and stone rows shaped by human hands."
+          }
+        ],
+        "driving": "Allow 1 hour for winding moorland roads; conditions vary",
+        "note": "Trails can be rugged; use a map and compass when venturing off main paths."
+      },
+      {
+        "title": "Deep Valleys and Ancient Bridges",
+        "start": "Suggested: 9:30 AM from Princetown",
+        "stops": [
+          {
+            "name": "Postbridge",
+            "detail": "See the iconic clapper bridge and learn about the moor's history at the National Park Visitor Centre."
+          },
+          {
+            "name": "Dartmeet",
+            "detail": "Visit the confluence of the East and West Dart rivers where the landscape transitions to deep river valleys."
+          }
+        ],
+        "driving": "Allow 1 hour between central sites; conditions vary",
+        "note": "The area is dotted with small villages; maintain slow speeds for free-roaming ponies."
+      },
+      {
+        "title": "The High Northern Moor",
+        "start": "Suggested: 8:30 AM from Okehampton",
+        "stops": [
+          {
+            "name": "High Willhays",
+            "detail": "Hike to the highest point on Dartmoor at 621m, located within the military training area."
+          },
+          {
+            "name": "Yes Tor",
+            "detail": "Visit the neighboring peak for views across the northern uplands, ensuring you check firing times first."
+          }
+        ],
+        "driving": "Allow 45 minutes to reach the moor edge; conditions vary",
+        "note": "Check the military firing schedule daily; red flags indicate restricted access."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "Military Firing Range",
+        "text": "Large areas of the northern moor are used as firing ranges. Public access is strictly forbidden when red flags are flying; always check the live firing notices."
+      },
+      {
+        "kind": "parking",
+        "title": "Visitor Center Hubs",
+        "text": "Start at Princetown, Postbridge, or Haytor where official parking and visitor centers provide essential safety information. Avoid parking on soft verges to protect rare bog habitats."
+      },
+      {
+        "kind": "signal",
+        "title": "Moorland Mires",
+        "text": "Mobile reception is unreliable in deep river valleys and remote blanket bogs like Aune Head. Carry a physical map for navigation across the open granite landscapes."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Towns",
+        "text": "Refuel in gateway towns such as Tavistock, Ashburton, or Moretonhampstead. Services are extremely limited once you are on the high moorland plateau."
+      },
+      {
+        "kind": "timing",
+        "title": "Weather Awareness",
+        "text": "Rainfall on the moor exceeds the surrounding lowlands, leading to 'quakers' or shifting bogs. Pacing should account for heavy mist and rapidly changing visibility."
+      }
+    ],
+    "arrival": "First two hours: Collect a vehicle in Exeter or Plymouth, then drive to the Princetown Visitor Centre for a safety briefing and trail maps.",
+    "vehicle": "Small cars are best for narrow, stone-walled lanes; check rental insurance for travel on unpaved moorland tracks.",
+    "goldenHour": "Great Staple Tor is a recommended viewpoint for sunset, highlighting the dramatic shapes of the granite tors.",
+    "sources": [
+      {
+        "label": "Dartmoor National Park Authority",
+        "url": "https://www.dartmoor.gov.uk/"
+      }
+    ]
+  }
+}

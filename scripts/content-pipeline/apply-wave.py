@@ -79,10 +79,10 @@ def offers(d, dest_id, country="us"):
          "Small enough to park at the trailhead, comfy enough to sleep in.",
          "Off-grid solar, fold-out bed, parks almost anywhere.", None),
     ]
-    if country == "ca":
+    if country in ("ca", "gb"):
         # Canada: US-only campground partners are excluded; Motorhome Republic uses its Canada search, no USD price anchors.
         rows = [r for r in rows if r[1] not in ("roverpass", "campspot", "harvest_hosts")]
-        rows = [r[:6] + ("https://www.motorhomerepublic.com/canada/", None, None, None) + r[10:] if r[1] == "motorhome_republic" else r for r in rows]
+        rows = [r[:6] + ("https://www.motorhomerepublic.com/" + ("canada" if country == "ca" else "united-kingdom") + "/", None, None, None) + r[10:] if r[1] == "motorhome_republic" else r for r in rows]
     for a in d["ai"]["activities"][:3]:
         rows.append(("activity", "viator", "awin", 11018, "Activity", a,
                      f"https://www.viator.com/searchResults/all?text={urllib.parse.quote(short + ' ' + a)}",

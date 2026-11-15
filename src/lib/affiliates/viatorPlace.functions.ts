@@ -57,7 +57,7 @@ export const getPlaceExperiences = createServerFn({ method: "GET" })
       const res = await fetch("https://api.viator.com/partner/search/freetext", {
         method: "POST",
         headers: { "exp-api-key": key, Accept: "application/json;version=2.0", "Accept-Language": "en-US", "Content-Type": "application/json" },
-        body: JSON.stringify({ searchTerm: `${dest.name} ${dest.state ?? dest.region ?? ""}${dest.country_code === "ca" ? " Canada" : ""}`, searchTypes: [{ searchType: "PRODUCTS", pagination: { start: 1, count: 20 } }], currency: "USD" }),
+        body: JSON.stringify({ searchTerm: `${dest.name} ${dest.state ?? dest.region ?? ""}${dest.country_code === "ca" ? " Canada" : dest.country_code === "gb" ? " UK" : ""}`, searchTypes: [{ searchType: "PRODUCTS", pagination: { start: 1, count: 20 } }], currency: "USD" }),
         signal: AbortSignal.timeout(15000),
       });
       if (!res.ok) {

@@ -177,3 +177,9 @@
 - [x] Wave 3: Saskatchewan Landing completed; wrong Texas Tuktut Nogait imagery withheld; geography refreshed.
 - [ ] Full factual certification: earlier 39 places reviewed; all remaining 105 bulk source-audited with evidence gaps, not certified. See scripts/audits/canada-bulk-2026-11-15/README.md.
 - [ ] German Canada versions and world-national-parks.net Canada 301s: not part of this audit; require translation and verified old URL mapping.
+
+## UK (source-first)
+- [x] Pilot wave: 5 of 15 national parks published (Lake District, Yorkshire Dales, Northumberland, Dartmoor, South Downs)
+- [ ] Retry 10 held parks with expanded official sources (Peak District, North York Moors, New Forest, Broads, Loch Lomond, Brecon Beacons, Pembrokeshire Coast, Cairngorms, Eryri, Exmoor)
+- [ ] UK price benchmarks (currently "Check live price")
+- [ ] Waves 2–5 (England, Scotland, Wales, Northern Ireland) after pilot approval
