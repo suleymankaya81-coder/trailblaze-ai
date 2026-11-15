@@ -1,0 +1,60 @@
+{
+  "slug": "kynance-cove",
+  "headline": "Manage Peak Summer Crowds and Tidal Access at Kynance",
+  "reservation": "No advance entry permit is required, but parking is limited and fills quickly during peak summer months. Visitors should check the official National Trust site for seasonal updates regarding car park capacity and local council dog restrictions. Access to the beach itself is tidal; always check local tide tables before departure to avoid being cut off.",
+  "source_url": "https://www.nationaltrust.org.uk/visit/cornwall/kynance-cove",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Serpentine Stacks and Coastal Exploration",
+        "start": "Suggested: 8 AM from The Lizard",
+        "stops": [
+          {
+            "name": "Kynance Cove",
+            "detail": "Walk from the car park to witness the white sands and turquoise sea framed by unique serpentine rock formations. Explore the caves and islands at low tide while remaining vigilant about water levels.",
+            "stop_id": "kynance-cove"
+          }
+        ],
+        "driving": "Allow 10 minutes from The Lizard; parking availability varies significantly by season.",
+        "note": "The descent to the beach involves steep sections and steps; allow for a 10-minute walk from the main parking area."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Limited Capacity",
+        "text": "The main car park has limited spaces and often fills early in summer; seasonal private overflows may require a 40-minute walk. Coaches are not suitable for the access roads."
+      },
+      {
+        "kind": "access",
+        "title": "Tidal Safety",
+        "text": "Caves and islands are only safely accessible at low tide. Visitors must be aware of the risk of being cut off as there are no lifeguards on duty."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Dog Restrictions",
+        "text": "A council-enforced dog ban is typically in effect from July to August between 10am and 6pm. Check local signage for any changes to these specific hours."
+      },
+      {
+        "kind": "fuel",
+        "title": "Local Services",
+        "text": "Official sources do not specify fuel or EV charging at the cove; verify availability in nearby Helston or The Lizard village. An accessible toilet is located in the car park."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Status",
+        "text": "Specific mobile signal strength for the cove is not documented in official records. Do not rely on digital maps for tidal data while on the beach."
+      }
+    ],
+    "arrival": "Arrive at The Lizard early to secure parking; proceed to the National Trust lot or designated seasonal overflows before walking the final stretch to the cliffs.",
+    "vehicle": "Suitable for standard cars; strictly not suitable for coaches. Check local road widths before bringing large RVs.",
+    "goldenHour": "The serpentine stacks at sunset offer dramatic photography, though shadows fall early in the deep cove during winter months.",
+    "sources": [
+      {
+        "label": "official agency/park",
+        "url": "https://www.nationaltrust.org.uk/visit/cornwall/kynance-cove"
+      }
+    ]
+  }
+}

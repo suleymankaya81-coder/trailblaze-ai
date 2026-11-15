@@ -26,16 +26,31 @@ def main():
     p.add_argument('--catalog', default='uk/catalog.json')
     p.add_argument('--wave', type=int, default=2)
     p.add_argument('--slugs', nargs='+')
+    p.add_argument('--remaining', action='store_true', help='All unpublished catalog places, across waves')
     p.add_argument('--publish', action='store_true')
     a = p.parse_args()
     root = Path(__file__).parent
     catalog = json.loads((root / a.catalog).read_text())
-    rows = [r for r in catalog if r['slug'] in a.slugs] if a.slugs else [r for r in catalog if r['wave'] == a.wave]
+    rows = [r for r in catalog if r['slug'] in a.slugs] if a.slugs else catalog if a.remaining else [r for r in catalog if r['wave'] == a.wave]
+    if a.remaining:
+        from combined_content import module
+        published = set(module('wave_facts', 'prepare-wave.py').q(
+            "select slug from destinations where status='published'").splitlines())
+        rows = [r for r in rows if r['slug'] not in published]
     results = []
     for row in rows:
         slug = row['slug']
         try:
             compact_packet(load_packet(slug))
+            from combined_content import module
+            prepare = module('wave_catalog', 'prepare-wave.py')
+            def literal(value):
+                return "'" + value.replace("'", "''") + "'"
+            values = [slug, row['name'], row['region'].replace('-', ' ').title(),
+                      row['country'], row['region'], 'GBP' if row['country'] == 'gb' else 'USD',
+                      row['authority'], row['access'], row['kind']]
+            prepare.q("insert into destinations (slug,name,state,country_code,region_slug,currency,park_authority,access_type,destination_type,status,tier,seo_eligible) values ("
+                      + ','.join(literal(v) for v in values) + ", 'draft','tier1',false) on conflict (slug) do nothing")
         except ValueError as error:
             results.append({'slug': slug, 'status': 'held_before_ai', 'reason': str(error)})
             continue

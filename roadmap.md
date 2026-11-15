@@ -1,4 +1,5 @@
 ## November 15 flexible UK production
+- [ ] Collect and review evidence for all remaining UK places, run one sequential cached production/publication command with 1–3 visit days, and record exact outcomes without automatic paid retries.
 - [x] Accept one-day and multi-day destination plans throughout generation, publication and browser parsing without weakening exact-source checks; 44 Python and 288 application tests pass.
 - [x] Run remaining UK catalog through the publication batch; 16 new pages published (30 UK total), including four compact visits, with five public page checks and desktop/mobile verification. Thirteen retained outputs reused; only three new paid calls, no replays.
 - [ ] Complete remaining 115 UK catalog places: 30 England drafts need individual source/visitor evidence review; 85 Scotland/Wales/Northern Ireland places have no approved source packets yet. No unreviewed content published; final all-page factual/photo audit remains pending production completion.

@@ -1,0 +1,95 @@
+{
+  "fingerprint": "f5b355ec16260817f12c9516303d049b998b83b153ed09aea69569fed0ed0f81",
+  "status": "validated",
+  "prompt_chars": 6857,
+  "bundle": {
+    "summary": {
+      "region": "West Cornwall",
+      "tagline": "A tidal island where history, myth, and Newlyn School art meet the sea.",
+      "best_season": "winter",
+      "trip_duration_days": "1",
+      "recommended_duration": "1 day",
+      "permit_level": "none",
+      "seo_title": "Visiting St Michael's Mount",
+      "best_seasons": [
+        "winter"
+      ],
+      "scenic_score": 5,
+      "camping_score": 0,
+      "avg_daily_budget": null,
+      "aliases": [],
+      "gateway_cities": [
+        "Marazion"
+      ],
+      "similar_slugs": [],
+      "trip_tags": [
+        "island",
+        "historic",
+        "art"
+      ],
+      "activities": [
+        "Steward's House Art Gallery"
+      ]
+    },
+    "travel": {
+      "slug": "st-michael-s-mount",
+      "headline": "Timed Causeway Access and Seasonal Opening",
+      "reservation": "During the winter, access is free to all visitors. Entry is strictly governed by tidal conditions as the island only opens when the causeway is clear. Visitors should verify daily tide times on the official website to ensure the path is navigable before attempting to cross.",
+      "source_url": "https://stmichaelsmount.co.uk/",
+      "plan": {
+        "version": 1,
+        "days": [
+          {
+            "title": "Pilgrim Path and Art Gallery",
+            "start": "Suggested: 10 AM from Marazion",
+            "stops": [
+              {
+                "name": "Steward's House Art Gallery",
+                "detail": "View the Sheila Hichens Collection featuring Newlyn School artists that depict 20th-century Cornish life.",
+                "stop_id": "steward-s-house-art-gallery"
+              }
+            ],
+            "driving": "Allow 15 minutes for the walking crossing; conditions vary by tide",
+            "note": "The ancient cobbled causeway is only exposed for approximately four hours each day."
+          }
+        ],
+        "intel": [
+          {
+            "kind": "access",
+            "title": "Tidal Crossing Safety",
+            "text": "Crossing the causeway outside of suggested times is hazardous due to strong currents and rapidly rising sea levels. The path is uneven and cobbled, requiring careful footing and a check of accessibility info."
+          },
+          {
+            "kind": "timing",
+            "title": "Winter Operations",
+            "text": "The island, including shops and the art gallery, operates on a seasonal schedule. Check the official site for specific winter opening hours which depend entirely on the daily tide window."
+          },
+          {
+            "kind": "parking",
+            "title": "Marazion Mainland Parking",
+            "text": "Evidence does not specify mainland parking locations or capacity. Travelers should identify local lots in Marazion before arrival."
+          },
+          {
+            "kind": "signal",
+            "title": "Connectivity Status",
+            "text": "Evidence does not confirm cellular or data signal strength on the island or causeway. Assume potential gaps and download tidal schedules in advance."
+          },
+          {
+            "kind": "fuel",
+            "title": "Local Services",
+            "text": "Fuel and supply availability in Marazion is not documented in the provided source. Ensure vehicles are fueled before reaching the coastal approach."
+          }
+        ],
+        "arrival": "Arrive in Marazion and wait for the tide to recede before crossing the causeway on foot during the low-tide window.",
+        "vehicle": "Vehicle access is restricted to the mainland; use standard cars for the drive to Marazion and proceed on foot.",
+        "goldenHour": "The causeway crossing provides a scenic sunset view, though this is strictly limited by the day's specific tidal schedule.",
+        "sources": [
+          {
+            "label": "Official St Michael's Mount",
+            "url": "https://stmichaelsmount.co.uk/"
+          }
+        ]
+      }
+    }
+  }
+}

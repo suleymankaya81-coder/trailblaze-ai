@@ -28,6 +28,8 @@ def validate_bundle(bundle, slug, packet):
         bundle['travel'] = item
     if item['slug'] != slug:
         raise ValueError('Slug mismatch')
+    if not 1 <= len(item['plan']['days']) <= 3:
+        raise ValueError('New destination visits require one to three days')
     stops = {s['id']: s for s in packet['approved_stops']}
     by_name = {s['name'].casefold(): s for s in stops.values()}
     used = set()
@@ -81,6 +83,7 @@ def generate_bundle(prepared):
         + 'summary schema: ' + json.dumps(summary_schema)
         + '\nFor travel use the item schema below, not an items wrapper:\n' + travel_prompt
         + '\nEvery stop must contain stop_id from approved_stops. Do not select new names. '
+        'Use one to three visit days, normally one for a compact attraction. '
         'Use only as many distinct IDs as the visit needs; never pad or duplicate stops. Summary activities are one to three approved stop names. '
         'similar_slugs must be []; avg_daily_budget must be null. Tagline max 110 chars, seo_title max 60 chars. '
         'permit_level must be exactly none, moderate or high, never prose or Parking Fee. '

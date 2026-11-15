@@ -1,0 +1,100 @@
+{
+  "fingerprint": "b07d41f708d2b9a9eb41aec68f42893fc590fe7ce8c6a832837d347f46067cff",
+  "status": "validated",
+  "prompt_chars": 6492,
+  "bundle": {
+    "summary": {
+      "region": "Cambridgeshire",
+      "tagline": "Explore ancient peatlands and grazing herds in England's oldest nature reserve.",
+      "best_season": "summer",
+      "trip_duration_days": "1",
+      "recommended_duration": "half-day",
+      "permit_level": "none",
+      "seo_title": "Wicken Fen National Nature Reserve Guide",
+      "best_seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "scenic_score": 7,
+      "camping_score": 0,
+      "avg_daily_budget": null,
+      "aliases": [
+        "Wicken Fen National Nature Reserve"
+      ],
+      "gateway_cities": [
+        "Cambridge",
+        "Ely"
+      ],
+      "similar_slugs": [],
+      "trip_tags": [
+        "wetlands",
+        "nature reserve"
+      ],
+      "activities": [
+        "Sedge Fen"
+      ]
+    },
+    "travel": {
+      "slug": "wicken-fen",
+      "headline": "Monitor seasonal trail access and parking requirements",
+      "reservation": "Entry generally does not require advanced booking, but non-members must use pay-and-display machines or the JustPark app for parking. National Trust members should scan their cards to receive a free ticket. Check official status for the Summer Nature Trail, which is strictly restricted to certain months to protect the peat.",
+      "source_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wicken-fen-national-nature-reserve",
+      "plan": {
+        "version": 1,
+        "days": [
+          {
+            "title": "Ancient Fenland and Iconic Landmarks",
+            "start": "Suggested: 10 AM from Cambridge",
+            "stops": [
+              {
+                "name": "Sedge Fen",
+                "detail": "Walk the circular Boardwalk to view the historic windpump and look for grazing Konik ponies across the undrained landscape.",
+                "stop_id": "sedge-fen"
+              }
+            ],
+            "driving": "Allow 30-40 minutes from Cambridge; conditions vary.",
+            "note": "The Boardwalk and Woodland Walk are accessible year-round, while the Summer Nature Trail is typically restricted to June through September."
+          }
+        ],
+        "intel": [
+          {
+            "kind": "parking",
+            "title": "Lode Lane Parking",
+            "text": "The main car park is located halfway down Lode Lane; blue badge holders park free of charge. Visitors must walk from the car park down the lane to reach the Visitor Centre and start points."
+          },
+          {
+            "kind": "access",
+            "title": "Path Accessibility",
+            "text": "Boardwalk and Woodland Walk routes are accessible, though assistance dogs only are permitted on these specific paths. The Lodes Way cycle path is open to all dogs under close control."
+          },
+          {
+            "kind": "timing",
+            "title": "Seasonal Trail Limits",
+            "text": "Access on Sedge Fen is limited to the Boardwalk and Woodland Walk from October to May. The extended Summer Nature Trail only opens during drier months to protect delicate flora."
+          },
+          {
+            "kind": "fuel",
+            "title": "Local Services",
+            "text": "The reserve features an on-site cafe near the Visitor Centre for supplies. Evidence does not specify fuel station locations, so verify nearby services in Wicken or Ely before arrival."
+          },
+          {
+            "kind": "signal",
+            "title": "Connectivity Status",
+            "text": "Specific mobile signal strength for the fenland is not documented in official sources. Users should download the JustPark app in advance if planning to use it for parking payments."
+          }
+        ],
+        "arrival": "Arrive at the Lode Lane car park, pay via the app or machine, and follow the pedestrian lane to the Visitor Centre for trail maps.",
+        "vehicle": "Standard cars are suitable for the paved access lane; check for height restrictions if driving a tall RV.",
+        "goldenHour": "The windpump on Sedge Fen provides a focal point for late afternoon light, subject to seasonal closing times.",
+        "sources": [
+          {
+            "label": "National Trust",
+            "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wicken-fen-national-nature-reserve"
+          }
+        ]
+      }
+    }
+  }
+}
