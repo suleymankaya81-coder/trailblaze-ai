@@ -1,3 +1,8 @@
+## November 15 remaining DACH production
+- [x] Process all 300 unpublished DACH destinations in one no-model batch: Berchtesgaden published, 299 held; previously published rows skipped.
+- [ ] Complete 299 remaining destinations; blocker: 298 lack approved official evidence, one lacks a usable photo. Source discovery returned HTTP 429; retained failure records and added stop-on-403/429 without retries.
+- [x] Record baseline 173.67 credits separately from zero content-model calls; verify new published record and run regression checks.
+
 ## November 15 flexible UK production
 - [x] Complete the four actual UK holds from the earlier 19-place list without model calls: three parks published with licensed stored photos; North Coast 500 added as a sourced road-trip overview. Desktop/phone checks and all tests pass; app publication remains required.
 - [x] Restore global Vrbo/Expedia cards independently of catalog stays; verified loaded photos, Seven Sisters real Viator listing and empty-result tracked search card on desktop/phone. 290 JS / 53 Python tests pass.
