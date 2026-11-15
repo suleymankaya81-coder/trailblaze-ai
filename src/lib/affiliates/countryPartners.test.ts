@@ -12,4 +12,6 @@ describe("country partners", () => {
   it("currency follows the country", () => { expect(countryCurrency("ca")).toBe("CAD"); expect(countryCurrency("us")).toBe("USD"); });
   it("formats Canadian prices in CAD", () => expect(formatCountryPrice(120, "ca")).toBe("$120"));
   it("formats non-local currency explicitly", () => expect(formatCountryPrice(120, "us", "CAD")).toBe("CA$120"));
+  it("UK has no US-only campground partners", () => expect(partnersFor("GB", "campground")).toEqual([]));
+  it("UK RV link goes to the UK search and ignores the US deal", () => expect(rvLinkFor("gb", Date.UTC(2026, 10, 20))).toBe("https://www.motorhomerepublic.com/united-kingdom/?affiliate=minialife"));
 });

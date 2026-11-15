@@ -37,9 +37,13 @@ const GONE_PREFIXES = [
  * German park pages → German catalogue, other Europe → trip guides, everything else → destinations.
  * Root "/" only maps on the authority host itself.
  */
+/** Switch on once the first UK places are published, so old UK pages land on the UK country page. */
+export const UK_PAGES_LIVE = false;
+
 export function authorityTarget(path: string, onAuthorityHost: boolean): string | null {
   const p = path.toLowerCase();
   if (p.startsWith("/eu/ge")) return "/de/destinations";
+  if (p.startsWith("/eu/uk")) return UK_PAGES_LIVE ? "/destinations/gb" : "/trip-guides";
   if (p === "/eu" || p.startsWith("/eu/")) return "/trip-guides";
   if (/^\/(af|as|au|sa|ca|ru|us)(\/|$)/.test(p) || /\.html?$/.test(p)) return "/destinations";
   if (onAuthorityHost && p === "/") return "/destinations";
