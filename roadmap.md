@@ -165,4 +165,6 @@
 - [x] Hide US-only partners + Black Friday on CA pages; test
 - [ ] CA pages still show US-dollar 'typical rate' estimates on rental cards — decide: hide or convert to CAD
 - [ ] Fly-in page variant (wave 3)
-- [ ] Waves 2–3, German versions, world-national-parks.net Canada 301s
+- [x] Wave 2: 81 places published
+- [ ] Held (no correct photos): alice-lake, dollar-lake, murray-beach provincial parks
+- [ ] Wave 3, German versions, world-national-parks.net Canada 301s
