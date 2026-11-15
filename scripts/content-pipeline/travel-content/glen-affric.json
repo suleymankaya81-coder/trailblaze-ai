@@ -1,0 +1,60 @@
+{
+  "slug": "glen-affric",
+  "headline": "Monitor Local Signage for Storm Impact and Road Access",
+  "reservation": "Entry to the forest areas does not typically require a formal reservation system, but visitors must check current status for storm damage. Access is via single-track roads which are strictly unsuitable for coaches; verify current land management notices before travel.",
+  "source_url": "https://forestryandland.gov.scot/visit/forests-by-region/forests-in-glen-affric",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Riverside Trails and Pine Forests",
+        "start": "Suggested: 9 AM from Cannich",
+        "stops": [
+          {
+            "name": "Dog Falls",
+            "detail": "Walk to the dark pools and rushing rapids, then continue to the pine trees by Coire Loch or climb to a viewpoint overlooking the glen.",
+            "stop_id": "dog-falls"
+          }
+        ],
+        "driving": "Allow 30-40 minutes; conditions on single-track roads vary",
+        "note": "Follow all local signage regarding storm-affected areas and turn back if paths appear unsafe."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "Single Track Restrictions",
+        "text": "Approaches to the glen consist of narrow single-track roads that are not suitable for large coaches. Drivers should be prepared to use passing places and monitor local conditions."
+      },
+      {
+        "kind": "timing",
+        "title": "Storm Recovery Updates",
+        "text": "Forestry and Land Scotland monitors storm impact continuously, so website data may lag behind reality. Always prioritize on-site signage over digital guides."
+      },
+      {
+        "kind": "parking",
+        "title": "Site Parking Information",
+        "text": "Evidence does not specify parking capacity or fee structures for the Dog Falls area. Visitors should arrive with a backup plan if designated areas are full."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Gaps",
+        "text": "The evidence does not provide details on mobile signal strength within the glen. It is advisable to download maps for offline use before leaving gateway towns."
+      },
+      {
+        "kind": "fuel",
+        "title": "Supply and Fuel Availability",
+        "text": "Specific fuel locations within Glen Affric are not documented in official sources. Ensure the vehicle is sufficiently fueled in Cannich or Inverness before entering the glen."
+      }
+    ],
+    "arrival": "Pick up supplies in Inverness or Cannich before navigating the single-track approach to the forest trailheads.",
+    "vehicle": "Standard cars are suitable, but large coaches are prohibited on the approach roads.",
+    "goldenHour": "The viewpoint up the glen offers elevated perspectives for sunset, though visibility depends on local Highland weather.",
+    "sources": [
+      {
+        "label": "Forestry and Land Scotland",
+        "url": "https://forestryandland.gov.scot/visit/forests-by-region/forests-in-glen-affric"
+      }
+    ]
+  }
+}

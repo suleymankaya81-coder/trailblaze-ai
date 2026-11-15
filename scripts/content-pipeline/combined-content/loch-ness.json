@@ -1,0 +1,96 @@
+{
+  "fingerprint": "3631ef3c6bba460365b6254c7d441ca6f029e6c60b89fabe880e4a75d18635fe",
+  "status": "validated",
+  "prompt_chars": 6072,
+  "bundle": {
+    "summary": {
+      "region": "Scottish Highlands",
+      "tagline": "Discover the rugged beauty and dramatic waterfalls of the south side of Loch Ness.",
+      "best_season": "summer",
+      "trip_duration_days": "1",
+      "recommended_duration": "1 day",
+      "permit_level": "none",
+      "seo_title": "Visiting Loch Ness and the Falls of Foyers",
+      "best_seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "scenic_score": 8,
+      "camping_score": 0,
+      "avg_daily_budget": null,
+      "aliases": [],
+      "gateway_cities": [
+        "Inverness"
+      ],
+      "similar_slugs": [],
+      "trip_tags": [
+        "waterfalls",
+        "woodland"
+      ],
+      "activities": [
+        "Falls of Foyers"
+      ]
+    },
+    "travel": {
+      "slug": "loch-ness",
+      "headline": "Explore the Southern Shore of Loch Ness",
+      "reservation": "Access to the Falls of Foyers generally does not require a reservation, but local parking is limited. Always check official Inverness area tourism sites for local path closures or seasonal access changes before your arrival.",
+      "source_url": "https://www.visitinvernesslochness.com/discover-the-waters-of-inverness-and-lochness",
+      "plan": {
+        "version": 1,
+        "days": [
+          {
+            "title": "Waterfalls and Woodland Walks",
+            "start": "Suggested: 9 AM from Inverness",
+            "stops": [
+              {
+                "name": "Falls of Foyers",
+                "detail": "Descend the winding steps to two distinct viewing areas to witness the dramatic waterfall. Optionally continue on the longer woodland walk that leads down to the shores of Loch Ness.",
+                "stop_id": "falls-of-foyers"
+              }
+            ],
+            "driving": "Allow one to two hours for travel from Inverness; conditions vary by road size and weather.",
+            "note": "Be prepared for a significant number of steps when returning from the waterfall viewing areas."
+          }
+        ],
+        "intel": [
+          {
+            "kind": "access",
+            "title": "Trail Accessibility",
+            "text": "The path to the Falls of Foyers involves winding steps through a gate from the parking area. Visitors should be warned that the journey back up involves a strenuous climb."
+          },
+          {
+            "kind": "parking",
+            "title": "Village Parking",
+            "text": "Parking is located within the village of Foyers near the start of the falls trail. Capacity is not officially monitored in real-time, so verify local signage upon arrival."
+          },
+          {
+            "kind": "fuel",
+            "title": "Highland Supplies",
+            "text": "The evidence does not specify fuel locations on the south side of the Loch. It is recommended to fuel in Inverness or larger hubs before heading into the rural village areas."
+          },
+          {
+            "kind": "signal",
+            "title": "Connectivity Gaps",
+            "text": "Cellular signal strength is not detailed in local sources for the Foyers woodland areas. Carry offline maps as coverage can be intermittent in the Highland terrain."
+          },
+          {
+            "kind": "timing",
+            "title": "Walk Duration",
+            "text": "Allow extra time for the woodland walk to the shores of Loch Ness beyond the falls. The return climb from the two viewing areas requires a slower pace due to the incline."
+          }
+        ],
+        "arrival": "Arrive in Inverness to pick up a rental vehicle and secure supplies. Transit south toward Foyers to reach the designated parking area before beginning the descent to the falls.",
+        "vehicle": "A standard car is suitable for the drive to Foyers, though roads can be narrow. Check rental restrictions for remote Highland travel.",
+        "goldenHour": "Sunset along the shores of Loch Ness provides a scenic backdrop for the woodland walk path.",
+        "sources": [
+          {
+            "label": "Visit Inverness Loch Ness",
+            "url": "https://www.visitinvernesslochness.com/discover-the-waters-of-inverness-and-lochness"
+          }
+        ]
+      }
+    }
+  }
+}

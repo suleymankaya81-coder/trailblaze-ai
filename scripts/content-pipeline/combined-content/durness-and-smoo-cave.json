@@ -1,0 +1,101 @@
+{
+  "fingerprint": "b1877c04d1b4a1375158e3d2e60aeb17c383da0e99e22bb3f0190c6af7fd69f4",
+  "status": "validated",
+  "prompt_chars": 5923,
+  "bundle": {
+    "summary": {
+      "region": "Scottish Highlands",
+      "tagline": "Explore the dramatic geology of the most north-westerly village on the Scottish mainland.",
+      "best_season": "summer",
+      "trip_duration_days": "1",
+      "recommended_duration": "1 day",
+      "permit_level": "none",
+      "seo_title": "Visiting Smoo Cave and Durness",
+      "best_seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "scenic_score": 5,
+      "camping_score": 4,
+      "avg_daily_budget": null,
+      "aliases": [
+        "Durness",
+        "Smoo Cave"
+      ],
+      "gateway_cities": [
+        "Inverness"
+      ],
+      "similar_slugs": [],
+      "trip_tags": [
+        "geology",
+        "caves",
+        "coastal"
+      ],
+      "activities": [
+        "Smoo Cave"
+      ]
+    },
+    "travel": {
+      "slug": "durness-and-smoo-cave",
+      "headline": "Geological exploration at Smoo Cave",
+      "reservation": "Access to the Smoo Cave waterfall chamber via the walkway is free. Guided tours to venture further into the lake chamber require separate on-site check-in and are subject to local water levels; verify availability upon arrival.",
+      "source_url": "https://smoocavetours.com/",
+      "plan": {
+        "version": 1,
+        "days": [
+          {
+            "title": "Durness Coastal Geology",
+            "start": "Suggested: 9 AM from Durness village center",
+            "stops": [
+              {
+                "id": "smoo-cave",
+                "name": "Smoo Cave",
+                "detail": "Walk from the car park to view the active waterfall chamber fed by the Allt Smoo stream. Join a tour to explore the deeper lake chamber and learn about the human history of this millions-of-years-old formation.",
+                "stop_id": "smoo-cave"
+              }
+            ],
+            "driving": "Allow 10 minutes for the walk from the car park; conditions vary based on local weather.",
+            "note": "Wear sensible footwear as the cave environment includes wet surfaces and uneven terrain."
+          }
+        ],
+        "intel": [
+          {
+            "kind": "parking",
+            "title": "Smoo Cave Car Park",
+            "text": "The main parking area is located directly beside the North Coast 500 route. Access to the cave involves a short walk from this designated zone."
+          },
+          {
+            "kind": "signal",
+            "title": "Connectivity Gaps",
+            "text": "Mobile signal in the far north-west can be inconsistent. Verify your route and tour availability before leaving Durness village."
+          },
+          {
+            "kind": "fuel",
+            "title": "Regional Refueling",
+            "text": "As the most north-westerly village, fuel availability is limited to local stations. Ensure tanks are sufficient for remote coastal driving."
+          },
+          {
+            "kind": "timing",
+            "title": "Waterfall Chamber Access",
+            "text": "The walk to the waterfall chamber typically takes 10 minutes. Plan extra time if you intend to join a guided tour deeper into the cave system."
+          },
+          {
+            "kind": "access",
+            "title": "Weather Dependency",
+            "text": "Smoo Cave is an active system fed by a stream. Heavy rain may impact access to certain chambers or the availability of boat-based tours."
+          }
+        ],
+        "arrival": "Arrive via the NC500, check in at local Durness accommodation, and proceed to the Smoo Cave car park for immediate geological sightseeing.",
+        "vehicle": "Suitable for cars and smaller campervans; check NC500 road width restrictions for larger RVs.",
+        "goldenHour": "Coastal cliffs near Durness offer elevated views, though cave visibility is best during daylight hours.",
+        "sources": [
+          {
+            "label": "official agency/park",
+            "url": "https://smoocavetours.com/"
+          }
+        ]
+      }
+    }
+  }
+}

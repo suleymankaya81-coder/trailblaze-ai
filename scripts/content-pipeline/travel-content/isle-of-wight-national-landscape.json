@@ -1,0 +1,60 @@
+{
+  "slug": "isle-of-wight-national-landscape",
+  "headline": "Check Battery seasonal opening times for National Trust access",
+  "reservation": "Access to the site is subject to seasonal closure; individual tickets are typically required for the Battery. No onsite parking exists at the Battery itself, so visitors should check local council or private car park status at Alum Bay or Freshwater Bay before arrival.",
+  "source_url": "https://www.nationaltrust.org.uk/visit/isle-of-wight/the-needles-old-battery-and-new-battery",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Western Cliffs and Military History",
+        "start": "Suggested: 10 AM from Alum Bay",
+        "stops": [
+          {
+            "name": "Needles Old Battery",
+            "detail": "Explore a defensive Victorian fort built in 1862 and used through both World Wars. The site offers sweeping views of the Needles passage and the Solent from the island's western tip.",
+            "stop_id": "needles-old-battery"
+          }
+        ],
+        "driving": "Allow 15 to 45 minutes for walking from local car parks; no vehicle access to the site.",
+        "note": "Expect steep slopes and uneven surfaces within the fort; dogs must remain on leads."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Offsite Parking Only",
+        "text": "The nearest parking is at Alum Bay for a 15-minute uphill walk or Highdown for a 45-minute approach. National Trust members may find discounts at specific Alum Bay lots, but verify current rates locally."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Status",
+        "text": "Source evidence does not provide signal strength for the western cliffs. Verify mobile coverage with your provider before attempting digital navigation in the National Landscape."
+      },
+      {
+        "kind": "fuel",
+        "title": "Island Resupply",
+        "text": "Specific fuel locations at the western tip are not documented. Ensure your vehicle has sufficient range for the return trip across the island before reaching the Alum Bay area."
+      },
+      {
+        "kind": "timing",
+        "title": "Battery Operations",
+        "text": "Opening times for the Old Battery and tea-room are seasonal and can be subject to full closure. Check the official National Trust status page for daily availability before departing."
+      },
+      {
+        "kind": "access",
+        "title": "Uphill Terrain",
+        "text": "The path from Alum Bay is a tarmacked uphill road, though the Battery interior contains steep sections. Accessible toilets are available on-site even though vehicle access is restricted."
+      }
+    ],
+    "arrival": "Arrive at Alum Bay via the island road network and proceed to the designated council or private car parks before beginning the walk to the Battery.",
+    "vehicle": "Standard vehicles are suitable for island travel; check rental restrictions for ferry transport from the mainland.",
+    "goldenHour": "The western tip of the island near the Battery offers cliff-top views of the Needles, ideal for late afternoon light depending on the season.",
+    "sources": [
+      {
+        "label": "national trust",
+        "url": "https://www.nationaltrust.org.uk/visit/isle-of-wight/the-needles-old-battery-and-new-battery"
+      }
+    ]
+  }
+}

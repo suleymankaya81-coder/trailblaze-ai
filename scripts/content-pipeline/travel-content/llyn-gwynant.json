@@ -1,0 +1,64 @@
+{
+  "slug": "llyn-gwynant",
+  "headline": "Manage Lake Access and Park and Ride Facilities",
+  "reservation": "Access for private boats and swimming from the lakeside requires either a campsite booking or a day visitor pass. Boat hire operates seasonally from Easter through September, though availability depends on daily weather conditions; visitors should verify official status before arrival.",
+  "source_url": "https://www.gwynant.com/the-lake",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Lakeside Exploration and Water Activities",
+        "start": "Suggested: 9 AM from Beddgelert",
+        "stops": [
+          {
+            "name": "Llyn Gwynant",
+            "detail": "Visit the glacial lake to utilize the beach area for wild swimming or launch kayaks and sailboats. Explore the deep waters known for cold currents and diverse ecology near the river boundary.",
+            "stop_id": "llyn-gwynant-01"
+          }
+        ],
+        "driving": "Allow 15-30 minutes for local transit; conditions vary based on A498 traffic",
+        "note": "Pace your visit to account for changing weather, as boat hire and water safety depend on suitable conditions."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Park and Ride Options",
+        "text": "Motorists are encouraged to use park and ride facilities rather than road verges. The Sherpa’r Wyddfa bus service provides increased access to the Nant Gwynant area."
+      },
+      {
+        "kind": "signal",
+        "title": "Cellular Connectivity",
+        "text": "Evidence does not specify signal strength in the valley. Users should download maps offline before departing gateway towns."
+      },
+      {
+        "kind": "fuel",
+        "title": "Refueling Locations",
+        "text": "Local evidence does not list fuel stations. Verify supply levels in Beddgelert or larger surrounding towns before entering the Nant Gwynant pass."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Boat Hire",
+        "text": "Boat hire is available from Easter until late September. Operation is not guaranteed daily and is strictly weather-dependent."
+      },
+      {
+        "kind": "access",
+        "title": "Safety Requirements",
+        "text": "Lifejackets are mandatory for all persons using kayaks, canoes, or sailboats on the lake. Access is available via campsite laybys along the A498 for those with valid passes."
+      }
+    ],
+    "arrival": "Travel to the A498 valley; check in at the local campsite or secure a day visitor pass for lakeside beach access.",
+    "vehicle": "Suitable for cars; large RVs should utilize designated park and ride lots to avoid obstructing narrow valley roads.",
+    "goldenHour": "Lakeside views at dusk offer scenic lighting against the valley walls, though swimming is safer during full daylight.",
+    "sources": [
+      {
+        "label": "Llyn Gwynant Campsite",
+        "url": "https://www.gwynant.com/the-lake"
+      },
+      {
+        "label": "Eryri National Park Authority",
+        "url": "https://eryri.gov.wales/multi-agency-collaboration-to-promote-responsible-tourism-at-nant-gwynant-the-watkin-path/"
+      }
+    ]
+  }
+}

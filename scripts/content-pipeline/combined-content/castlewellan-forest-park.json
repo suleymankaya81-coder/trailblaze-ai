@@ -1,51 +1,41 @@
 {
   "fingerprint": "d9c99bb6fa7a075a7b8f4c7d660caee7b0462d99e25b8bf90f44e08a1d36bae7",
-  "status": "held",
+  "status": "validated",
   "prompt_chars": 5905,
   "bundle": {
     "summary": {
       "region": "Northern Ireland",
-      "tagline": "Explore one of the world's largest permanent hedge mazes and a historic arboretum in a commercial forest.",
-      "best_season": "Spring and summer for arboretum blooms and maze navigation.",
+      "tagline": "Explore the Peace Maze, arboretum and way-marked nature trails at Castlewellan Forest Park.",
+      "best_season": "Check current visitor guidance for seasonal services.",
       "trip_duration_days": "1",
-      "recommended_duration": "4-6 hours",
+      "recommended_duration": "Suggested half-day visit",
       "permit_level": "none",
       "seo_title": "Visiting Castlewellan Forest Park and Peace Maze",
-      "best_seasons": [
-        "spring",
-        "summer",
-        "fall"
-      ],
+      "best_seasons": [],
       "scenic_score": 7,
       "camping_score": 0,
       "avg_daily_budget": null,
       "aliases": [],
-      "gateway_cities": [
-        "Castlewellan",
-        "Belfast"
-      ],
+      "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [
-        "forest",
-        "gardens",
         "family"
       ],
       "activities": [
-        "Peace Maze",
-        "Castlewellan Arboretum and Annesley Garden"
+        "Castlewellan Forest Park"
       ]
     },
     "travel": {
       "slug": "castlewellan-forest-park",
       "headline": "Check Local Council or DAERA Guidelines for Forest Park Entry",
-      "reservation": "Access to the forest park and its educational facilities is typically open to the public, though specific guided tours or seasonal café operations may require checking current availability. Consult official DAERA or local management sites to confirm if vehicle entry fees apply at the gate.",
+      "reservation": "DAERA lists the Peace Maze, arboretum, nature trails and guided tours among the park facilities for educational visits. This source does not establish general admission rules, current fees or tour schedules; confirm these with the park before departure.",
       "source_url": "https://www.daera-ni.gov.uk/articles/guide-centres-and-facilities",
       "plan": {
         "version": 1,
         "days": [
           {
             "title": "Gardens and the Peace Maze",
-            "start": "Suggested: 10 AM from Belfast",
+            "start": "Suggested: 10 AM at Castlewellan Forest Park",
             "stops": [
               {
                 "name": "Castlewellan Forest Park",
@@ -53,25 +43,25 @@
                 "stop_id": "castlewellan-forest-park"
               }
             ],
-            "driving": "Allow approximately one hour from Belfast; conditions vary by traffic.",
-            "note": "A seasonal café and picnic areas are available for refreshments between the nature trails."
+            "driving": "No local driving time is established by the supplied source; confirm your route before departure.",
+            "note": "A seasonal caf\u00e9 and picnic areas are available for refreshments between the nature trails."
           }
         ],
         "intel": [
           {
             "kind": "access",
             "title": "Disability Facilities",
-            "text": "The park includes toilets with disabled access near the main activity areas. Way-marked nature trails provide structured paths through the commercially managed forest."
+            "text": "DAERA lists toilets with disabled access and way-marked nature trails. This does not establish that every trail or facility is step-free."
           },
           {
             "kind": "timing",
             "title": "Seasonal Services",
-            "text": "The on-site café operates on a seasonal basis, so visitors should plan for self-catering during off-peak months. Guided tours are available but should be verified for current schedules."
+            "text": "The on-site caf\u00e9 operates on a seasonal basis, so visitors should plan for self-catering during off-peak months. Guided tours are available but should be verified for current schedules."
           },
           {
             "kind": "fuel",
             "title": "Local Supplies",
-            "text": "Specific fuel locations within the park are not documented in forest guides; travelers should refuel in the town of Castlewellan. Verify local shop hours for picnic supplies."
+            "text": "The supplied official page does not identify fuel outlets or shop hours. Check your travel route for supplies before departure."
           },
           {
             "kind": "signal",
@@ -81,12 +71,12 @@
           {
             "kind": "parking",
             "title": "Forest Parking",
-            "text": "Official sources do not specify total parking capacity or peak fill times. Visitors should arrive early during summer weekends to secure a spot near the maze and gardens."
+            "text": "The supplied source does not establish parking capacity, fees or opening hours. Confirm current parking arrangements with the park before departure."
           }
         ],
-        "arrival": "Travel to Castlewellan town, pick up supplies, and enter the forest park gates to locate the arboretum and maze parking areas.",
-        "vehicle": "Standard passenger cars are suitable for the paved access roads; check local signage for height or weight restrictions on forest tracks.",
-        "goldenHour": "The Annesley Garden offers varied lighting for photography, though official sunset access depends on forest gate closing times.",
+        "arrival": "Suggested arrival: confirm current visitor arrangements before visiting the park; the supplied source lists facilities for educational visits.",
+        "vehicle": "The supplied official source does not establish car or RV access restrictions. Confirm vehicle suitability and parking with the park before departure.",
+        "goldenHour": "The arboretum is listed among the park facilities, but sunrise, sunset and gate access are not established by the source. Confirm current visiting hours.",
         "sources": [
           {
             "label": "DAERA Northern Ireland",
@@ -96,5 +86,6 @@
       }
     }
   },
-  "error": "ValueError"
+  "error": "ValueError",
+  "editorial_review": "2026-11-15: removed unsupported size, driving, road, parking and fuel assertions; reused retained response, no paid replay"
 }

@@ -1,0 +1,60 @@
+{
+  "slug": "barafundle-bay",
+  "headline": "Check National Trust parking availability at Stackpole Quay",
+  "reservation": "Access to the bay itself does not require a reservation, but parking at the National Trust-managed Stackpole Quay is subject to availability. Visitors should check the official National Trust site for seasonal updates regarding car park management and local access through the Stackpole Estate.",
+  "source_url": "https://www.nationaltrust.org.uk/visit/wales/barafundle-bay",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Coastal Cliff Walk to Barafundle",
+        "start": "Suggested: 9 AM from Stackpole Quay",
+        "stops": [
+          {
+            "name": "Barafundle Bay",
+            "detail": "Traverse the uneven coastal path from Stackpole Quay to reach this isolated beach, which is accessible only on foot. Enjoy the secluded sands and steep cliff views before returning via the same rugged trail.",
+            "stop_id": "barafundle-bay-01"
+          }
+        ],
+        "driving": "Allow 15 minutes for local arrival; conditions vary",
+        "note": "The terrain is steep with steps and rough paths; pacing should allow for a slow walk back to the car park."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Stackpole Quay Facilities",
+        "text": "The nearest car park is located at Stackpole Quay, approximately half a mile from the bay. Blue badge parking and adapted toilets are available at this location, though the beach itself remains inaccessible to mobility vehicles."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Status",
+        "text": "Evidence does not specify mobile signal strength at the bay or within the Stackpole Estate. Visitors should download maps in advance and notify others of their plans before leaving the gateway town."
+      },
+      {
+        "kind": "fuel",
+        "title": "Local Supply Gaps",
+        "text": "There is no fuel or electricity provided at the beach or the immediate car park areas. Verify refueling locations in nearby Pembrokeshire towns before heading to the SA71 5LS sat nav coordinates."
+      },
+      {
+        "kind": "timing",
+        "title": "Arrival Window",
+        "text": "Plan for a half-mile walk on uneven terrain each way, which may take longer than expected due to steep steps. Arriving early is suggested to secure a space at the small Stackpole Quay lot."
+      },
+      {
+        "kind": "access",
+        "title": "Terrain Constraints",
+        "text": "Access requires navigating the Pembrokeshire coast path or the Stackpole Estate trail. The route is unsuitable for wheelchairs, pushchairs, or those unsteady on their feet due to the rough, steep terrain."
+      }
+    ],
+    "arrival": "Upon arrival at Stackpole Quay, verify parking signage and proceed to the Stackpole Centre for the nearest facilities before starting the half-mile walk.",
+    "vehicle": "Standard vehicles are suitable for reaching the paved car parks; however, the final leg to the bay is strictly pedestrian-only.",
+    "goldenHour": "The cliffs overlooking Barafundle Bay offer elevated views at sunset, though visitors must navigate the uneven paths back to the car park before dark.",
+    "sources": [
+      {
+        "label": "National Trust - Barafundle Bay",
+        "url": "https://www.nationaltrust.org.uk/visit/wales/barafundle-bay"
+      }
+    ]
+  }
+}

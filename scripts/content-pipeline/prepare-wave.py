@@ -23,6 +23,17 @@ WIKI_ANCHORS = {
     # UK pilot (Welsh official names on Wikipedia)
     "eryri-snowdonia-national-park": "Eryri National Park",
     "brecon-beacons-national-park": "Bannau Brycheiniog National Park",
+    "bamburgh-beach": "Bamburgh Dunes",
+    "cranborne-chase-national-landscape": "Cranborne Chase",
+    "durness-and-smoo-cave": "Smoo Cave",
+    "waterfall-country-ystradfellte": "Waterfall Country (Wales)",
+    "dan-yr-ogof-caves": "Dan yr Ogof",
+    "lagan-valley-regional-park": "Lagan Valley",
+    "downhill-beach-and-mussenden-temple-coast": "Downhill Strand",
+    "mendip-hills-national-landscape": "Mendip Hills",
+    "kielder-water-forest-park": "Kielder Water",
+    "gower-national-landscape": "Gower Peninsula",
+    "oxford-island-national-nature-reserve": "Oxford Island",
     # Canada wave 2
     "kejimkujik-national-park-and-national-historic-site": "Kejimkujik National Park",
     "north-cape-coastal-drive": "North Cape, Prince Edward Island",
@@ -156,9 +167,38 @@ HERO_FROM_SEARCH = {"palm-desert","las-cruces","paradise-valley","annapolis","wi
 # Alternative Commons search terms for places with too few usable photos.
 # Exact-place guard: a Commons photo must name the place in its file title (search also returns lookalike forests abroad).
 PLACE_WORDS = {"new-forest-national-park": "new forest", "the-broads-national-park": "broad"}
+# Catalog names differ from Commons titles. These alternatives identify the same landscape,
+# not generic search words that can accidentally admit images from another country.
+PHOTO_IDENTITIES = {
+    "cornwall-national-landscape": r"cornwall|cornish|kynance|land.?s end|st michael.?s mount",
+    "chilterns-national-landscape": r"chiltern|chess valley|ivinghoe|ashridge|coombe hill",
+    "isle-of-wight-national-landscape": r"isle of wight|needles|alum bay|freshwater bay",
+    "cranborne-chase-national-landscape": r"cranborne|ashmore",
+    "gower-national-landscape": r"gower|worm.?s head|rhossili|three cliffs",
+    "lagan-valley-regional-park": r"lagan valley|drumbeg",
+    "roe-valley-country-park": r"roe valley",
+    "oxford-island-national-nature-reserve": r"oxford island|kinnego",
+}
+
+def relevant_photo(slug, filename):
+    if re.search(r"torc|stater|FindID|fleuron|National Trust\.\w+$|NGA \d|Ordnance Survey|International studio|RMG PV", filename, re.I):
+        return False
+    pattern = PHOTO_IDENTITIES.get(slug)
+    return pattern is None or re.search(pattern, filename, re.I) is not None
 SEARCH_TERMS = {
+    "cornwall-national-landscape": ["Cornwall coast geograph", "Cornwall landscape geograph", "Cape Cornwall landscape"],
+    "chilterns-national-landscape": ["Chiltern Hills landscape", "Chilterns geograph", "Chess Valley landscape"],
+    "isle-of-wight-national-landscape": ["Isle of Wight landscape geograph", "Needles Isle of Wight", "Alum Bay Isle of Wight"],
     "new-forest-national-park": ["New Forest Hampshire", "New Forest ponies", "New Forest heath"],
     "the-broads-national-park": ["Norfolk Broads", "Hickling Broad", "Horsey Windpump"],
+    "high-weald-national-landscape": ["High Weald", "Ashdown Forest"],
+    "mendip-hills-national-landscape": ["Mendip Hills", "Mendip landscape"],
+    "kielder-water-forest-park": ["Kielder Water", "Kielder Forest", "Kielder Observatory"],
+    "gower-national-landscape": ["Gower Peninsula", "Gower landscape"],
+    "falls-of-foyers": ["Falls of Foyers", "Foyers waterfall"],
+    "roe-valley-country-park": ["Roe Valley Country Park", "Roe Valley Limavady"],
+    "gortin-glen-forest-park": ["Gortin Glen Forest Park", "Gortin Glen forest"],
+    "oxford-island-national-nature-reserve": ["Oxford Island Lough Neagh", "Oxford Island nature reserve"],
     # Canada wave 2 (low photo counts under the plain park name)
     "kejimkujik-national-park-and-national-historic-site": ["Kejimkujik National Park", "Kejimkujik Lake", "Kejimkujik Seaside"],
     "tweedsmuir-provincial-park": ["Tweedsmuir Provincial Park", "Hunlen Falls", "Rainbow Range British Columbia"],
@@ -433,10 +473,12 @@ def prepare_facts(slug):
     pool = [l[i] for i in range(max(map(len, lists), default=0)) for l in lists if i < len(l)]  # interleave terms for variety
     seen, photos = set(), []
     hero = file_info(pimg) if pimg and not BAD.search(pimg) and slug not in HERO_FROM_SEARCH else None
-    if hero and (hero["url"] in used or hero["w"] < hero["h"]):
+    if hero and (hero["url"] in used or hero["w"] < hero["h"] or not relevant_photo(slug, hero["file"])):
         hero = None
     for p in pool:
         if p["file"] in seen or p["url"] in used or p["url"] in used_cards:
+            continue
+        if not relevant_photo(slug, p["file"]):
             continue
         if slug in PLACE_WORDS and PLACE_WORDS[slug] not in p["file"].lower() and "horsey" not in p["file"].lower():
             continue

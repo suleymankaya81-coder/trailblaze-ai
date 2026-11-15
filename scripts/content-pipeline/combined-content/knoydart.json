@@ -1,0 +1,99 @@
+{
+  "fingerprint": "91a20135298ee522c02887fcd0d8d09b0223d920e13170f9173653aedcb40ea8",
+  "status": "validated",
+  "prompt_chars": 6468,
+  "bundle": {
+    "summary": {
+      "region": "Scottish Highlands",
+      "tagline": "A rugged peninsula disconnected from the mainland road network, accessible only by sea or foot.",
+      "best_season": "summer",
+      "trip_duration_days": "1",
+      "recommended_duration": "1-2 days",
+      "permit_level": "none",
+      "seo_title": "Visiting Knoydart: The UK's Remote Peninsula",
+      "best_seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "scenic_score": 5,
+      "camping_score": 4,
+      "avg_daily_budget": null,
+      "aliases": [
+        "Knoydart Peninsula"
+      ],
+      "gateway_cities": [
+        "Mallaig"
+      ],
+      "similar_slugs": [],
+      "trip_tags": [
+        "remote",
+        "hiking",
+        "coastal"
+      ],
+      "activities": [
+        "Inverie"
+      ]
+    },
+    "travel": {
+      "slug": "knoydart",
+      "headline": "Advance boat transfer and accommodation booking required",
+      "reservation": "Access to Knoydart is exclusively by boat or a long-distance hike as there are no connecting roads. Visitors should secure boat transfers to the Inverie pier and book guesthouses or hostels in advance, as local amenities serve a small resident population. Check official ferry schedules for seasonal changes.",
+      "source_url": "https://www.visitknoydart.co.uk/about",
+      "plan": {
+        "version": 1,
+        "days": [
+          {
+            "title": "Remote Village Exploration",
+            "start": "Suggested: 9 AM arrival via boat at Inverie Pier",
+            "stops": [
+              {
+                "name": "Inverie",
+                "detail": "Visit the primary settlement to access the Community Shop, local pottery, and The Old Forge pub. The village serves as the central hub for amenities and is the starting point for ascents into the surrounding munros.",
+                "stop_id": "inverie"
+              }
+            ],
+            "driving": "No road access; travel is limited to foot or boat transfers.",
+            "note": "Pacing depends on ferry schedules; allow extra time for the rugged terrain if hiking beyond the village."
+          }
+        ],
+        "intel": [
+          {
+            "kind": "parking",
+            "title": "No Road Access",
+            "text": "There are no public roads connecting Knoydart to the mainland UK network. Visitors typically leave vehicles at mainland gateways like Mallaig before boarding a boat."
+          },
+          {
+            "kind": "signal",
+            "title": "Remote Connectivity",
+            "text": "Evidence does not specify mobile signal strength in the peninsula. Travelers should prepare for limited connectivity given the rugged and remote landscape."
+          },
+          {
+            "kind": "fuel",
+            "title": "Supply Information",
+            "text": "Fuel for vehicles is not applicable as there is no road access. The Community Shop in Inverie provides essential supplies for residents and visitors."
+          },
+          {
+            "kind": "timing",
+            "title": "Boat Dependent Travel",
+            "text": "Arrival and departure times are dictated by the boat service to Inverie pier. Hillwalkers should account for daylight hours when attempting the local munros and corbetts."
+          },
+          {
+            "kind": "access",
+            "title": "Pedestrian and Boat Entry",
+            "text": "Access is strictly limited to boat or foot travel. The rugged terrain attracts hillwalkers seeking the four munros within the Knoydart boundary."
+          }
+        ],
+        "arrival": "Arrive at Mallaig for the boat transfer to Inverie pier; once ashore, check into local guesthouses or hostels located along the bay.",
+        "vehicle": "Not applicable; no mainland road access. Inquire locally about small-scale village transport if required.",
+        "goldenHour": "Inverie Bay offers views of the rugged landscape at sunset, though specific lighting varies by season.",
+        "sources": [
+          {
+            "label": "Visit Knoydart",
+            "url": "https://www.visitknoydart.co.uk/about"
+          }
+        ]
+      }
+    }
+  }
+}

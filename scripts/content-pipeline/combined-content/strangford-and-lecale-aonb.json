@@ -1,0 +1,99 @@
+{
+  "fingerprint": "45bff9e1177eadb9f1291ebc43187e596f6a39aa53647fe7c0e054d2b952f3b4",
+  "status": "validated",
+  "prompt_chars": 7430,
+  "bundle": {
+    "summary": {
+      "region": "Northern Ireland",
+      "tagline": "Woodland trails and shoreline meadows along the Lough.",
+      "best_season": "Spring through fall",
+      "trip_duration_days": "1",
+      "recommended_duration": "1 day",
+      "permit_level": "none",
+      "seo_title": "Strangford and Lecale AONB Travel Guide",
+      "best_seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "scenic_score": 8,
+      "camping_score": 0,
+      "avg_daily_budget": null,
+      "aliases": [
+        "Strangford Lough"
+      ],
+      "gateway_cities": [
+        "Downpatrick",
+        "Belfast"
+      ],
+      "similar_slugs": [],
+      "trip_tags": [
+        "coastal",
+        "historic estate"
+      ],
+      "activities": [
+        "Castle Ward"
+      ]
+    },
+    "travel": {
+      "slug": "strangford-and-lecale-aonb",
+      "headline": "Castle Ward Estate Admission and Trail Access",
+      "reservation": "Non-members arriving by car, bike, or on foot must pay an admission fee at the entrance to the parkland. This fee supports conservation work and provides access to the multi-use trail network; check the official National Trust site for current entry status and seasonal closures.",
+      "source_url": "https://www.nationaltrust.org.uk/visit/northern-ireland/castle-ward/multi-use-trails-at-castle-ward",
+      "plan": {
+        "version": 1,
+        "days": [
+          {
+            "title": "Estate Trails and Shoreline Vistas",
+            "start": "Suggested: 10 AM from Downpatrick",
+            "stops": [
+              {
+                "name": "Castle Ward",
+                "detail": "Explore 21 miles of multi-use trails through woodlands and meadows that lead down to the Strangford Lough shoreline.",
+                "stop_id": "castle-ward"
+              }
+            ],
+            "driving": "Allow 20 minutes from Downpatrick; conditions vary based on local traffic.",
+            "note": "Cyclists and walkers must follow waymarkers in an anti-clockwise direction, while horse riders travel clockwise."
+          }
+        ],
+        "intel": [
+          {
+            "kind": "access",
+            "title": "Seasonal Grazing Closures",
+            "text": "The deer park area between map points 23 and 24 remains closed from March to September due to grazing cattle. Follow signposted alternative routes during these months."
+          },
+          {
+            "kind": "timing",
+            "title": "Multi-Use Trail Safety",
+            "text": "Designated 'slow zones' are located where trails meet to protect walkers, cyclists, and horse riders. Keep speed low in these intersections and yield to others by keeping left."
+          },
+          {
+            "kind": "parking",
+            "title": "Estate Arrival",
+            "text": "Parking is available on-site for a fee for non-members; evidence does not specify exact lot capacities or fill times. Verify current accessibility at the main gate upon arrival."
+          },
+          {
+            "kind": "fuel",
+            "title": "Regional Services",
+            "text": "Evidence does not list fuel stations within the AONB boundaries. It is recommended to refuel in nearby gateway towns like Downpatrick before heading to the estate."
+          },
+          {
+            "kind": "signal",
+            "title": "Connectivity Status",
+            "text": "Mobile signal strength throughout the 21 miles of trails is not documented in official sources. Download trail maps before arriving at the shoreline areas."
+          }
+        ],
+        "arrival": "Collect a rental in Belfast or Downpatrick and head to the Castle Ward main entrance to pay the parkland admission fee.",
+        "vehicle": "Standard vehicles are suitable for reaching the estate; check rental terms for driving on rural Northern Ireland roads.",
+        "goldenHour": "Strangford Lough shoreline offers scenic views at sunset, though visibility depends on seasonal weather and cloud cover.",
+        "sources": [
+          {
+            "label": "National Trust Castle Ward",
+            "url": "https://www.nationaltrust.org.uk/visit/northern-ireland/castle-ward/multi-use-trails-at-castle-ward"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "fingerprint": "f9961a400dcf56736fab4bcf87ee324b8e9f3276afd2626a436baad5264771e1",
+  "status": "validated",
+  "prompt_chars": 7243,
+  "bundle": {
+    "summary": {
+      "region": "Northumberland Coast",
+      "tagline": "A historic fortress on a tidal island accessible only when the North Sea retreats.",
+      "best_season": "summer",
+      "trip_duration_days": "1",
+      "recommended_duration": "1 day",
+      "permit_level": "none",
+      "seo_title": "Visiting Holy Island (Lindisfarne) & Lindisfarne Castle",
+      "best_seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "scenic_score": 5,
+      "camping_score": 1,
+      "avg_daily_budget": null,
+      "aliases": [
+        "Holy Island",
+        "Lindisfarne"
+      ],
+      "gateway_cities": [
+        "Berwick-upon-Tweed"
+      ],
+      "similar_slugs": [],
+      "trip_tags": [
+        "historic",
+        "coastal",
+        "island"
+      ],
+      "activities": [
+        "Lindisfarne Castle"
+      ]
+    },
+    "travel": {
+      "slug": "holy-island-lindisfarne",
+      "headline": "Check Tide Times Before Crossing the Causeway",
+      "reservation": "Entry to the castle and island does not require a regional permit, but access is strictly governed by the North Sea tides. Visitors must consult official Northumberland County Council safe crossing times for the road causeway; accommodation or castle tickets should be verified against these windows.",
+      "source_url": "https://holyislandcrossingtimes.northumberland.gov.uk/",
+      "plan": {
+        "version": 1,
+        "days": [
+          {
+            "title": "Castles and Causeway Crossings",
+            "start": "Suggested: 9 AM from Berwick-upon-Tweed",
+            "stops": [
+              {
+                "name": "Lindisfarne Castle",
+                "detail": "Explore the centuries-old history and 19th-century lime kilns via a one-mile walk from the visitor car park. Visit the walled garden designed by Gertrude Jekyll located near the castle headland.",
+                "stop_id": "lindisfarne-castle"
+              }
+            ],
+            "driving": "Allow 30 minutes from the A1; total travel time depends entirely on tidal windows.",
+            "note": "The castle is accessed by a steep cobbled ramp and steps; sturdy footwear is recommended for the terrain."
+          }
+        ],
+        "intel": [
+          {
+            "kind": "access",
+            "title": "Tidal Causeway Hazards",
+            "text": "The only road access is a three-mile causeway covered twice daily by the tide. Always check safe crossing times and allow an extra 30 minutes for weather variables like high winds."
+          },
+          {
+            "kind": "timing",
+            "title": "Walking the Sands",
+            "text": "The marked walking route over mud and sands has different safety requirements than the road. Never cross during a rising tide and aim to finish the walk before the mid-point of the safe road crossing window."
+          },
+          {
+            "kind": "parking",
+            "title": "Visitor Parking",
+            "text": "A visitor car park is situated one mile from the castle entrance. A drop-off point exists outside the gate for those with limited mobility."
+          },
+          {
+            "kind": "fuel",
+            "title": "Supplies and Fuel",
+            "text": "The island is small with limited facilities; verify fuel and specific supply locations on the mainland before crossing. Evidence does not specify fuel stations on the island."
+          },
+          {
+            "kind": "signal",
+            "title": "Connectivity Status",
+            "text": "Specific signal coverage for the island is not detailed in current official sources. Ensure you have downloaded tidal charts offline before reaching the causeway."
+          }
+        ],
+        "arrival": "Exit the A1 and travel five miles east to the causeway. Verify the tide is out before attempting the three-mile drive to the island car park.",
+        "vehicle": "Cars are the most common way to visit; check rental restrictions regarding driving on tidal-affected roads.",
+        "goldenHour": "Castle headland for sunset, subject to tidal road closure times.",
+        "sources": [
+          {
+            "label": "National Trust: Lindisfarne Castle",
+            "url": "https://www.nationaltrust.org.uk/visit/north-east/lindisfarne-castle"
+          },
+          {
+            "label": "Northumberland County Council: Crossing Times",
+            "url": "https://holyislandcrossingtimes.northumberland.gov.uk/"
+          }
+        ]
+      }
+    }
+  }
+}

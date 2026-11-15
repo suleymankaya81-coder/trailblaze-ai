@@ -1,0 +1,109 @@
+{
+  "fingerprint": "45a01826ba0ddcba6a2606035eb8f8004cd1105cb37b2616dcf86994fe08f1f6",
+  "status": "validated",
+  "prompt_chars": 7007,
+  "bundle": {
+    "summary": {
+      "region": "Northumberland",
+      "tagline": "England’s darkest night skies meet the sprawling 26-mile shoreline of Kielder Water.",
+      "best_season": "fall",
+      "trip_duration_days": "1",
+      "recommended_duration": "1-2 days",
+      "permit_level": "none",
+      "seo_title": "Visiting Kielder Water & Forest Park",
+      "best_seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "scenic_score": 8,
+      "camping_score": 7,
+      "avg_daily_budget": null,
+      "aliases": [],
+      "gateway_cities": [
+        "Newcastle upon Tyne",
+        "Hexham"
+      ],
+      "similar_slugs": [],
+      "trip_tags": [
+        "stargazing",
+        "cycling",
+        "public art"
+      ],
+      "activities": [
+        "Lakeside Way",
+        "Kielder Observatory"
+      ]
+    },
+    "travel": {
+      "slug": "kielder-water-forest-park",
+      "headline": "Stargazing Reservations and Lakeside Access",
+      "reservation": "Entry to the forest park is generally open, but the Kielder Observatory requires advance booking for specific stargazing events. Accommodation and observatory sessions often fill months in advance; check the official site for current availability. Use the Lakeside Way for trail access without a specific permit.",
+      "source_url": "https://www.visitkielder.com/",
+      "plan": {
+        "version": 1,
+        "days": [
+          {
+            "title": "Shoreline Trails and Celestial Views",
+            "start": "Suggested: 9 AM from Hexham",
+            "stops": [
+              {
+                "name": "Lakeside Way",
+                "detail": "Explore sections of this 26-mile multi-user trail to find unique outdoor public art installations like the Belvedere shelter.",
+                "stop_id": "lakeside-way"
+              },
+              {
+                "name": "Kielder Observatory",
+                "detail": "Experience some of the darkest skies in England at this renowned astronomical facility located within the forest.",
+                "stop_id": "kielder-observatory"
+              }
+            ],
+            "driving": "Allow 60-90 minutes from gateway towns; conditions vary by weather.",
+            "note": "The Lakeside Way is a multi-user track; expect shared access with cyclists and horse riders."
+          }
+        ],
+        "intel": [
+          {
+            "kind": "parking",
+            "title": "Forest Trailheads",
+            "text": "Formal parking is available near Kielder Waterside and the castle. Official sources do not specify hourly limits, so verify signage upon arrival."
+          },
+          {
+            "kind": "signal",
+            "title": "Connectivity Gaps",
+            "text": "Remote forest locations may have limited mobile reception. Download maps for the Lakeside Way before arriving at the park."
+          },
+          {
+            "kind": "fuel",
+            "title": "Rural Supply",
+            "text": "Fuel is limited within the immediate forest boundary. Ensure a full tank in Hexham or nearby villages before heading into the park."
+          },
+          {
+            "kind": "timing",
+            "title": "Night Sky Planning",
+            "text": "The darkest skies occur during the new moon. Check the observatory schedule for specific event start times which vary by season."
+          },
+          {
+            "kind": "access",
+            "title": "Multi-User Paths",
+            "text": "The Lakeside Way is designed for wheelchairs and cyclists. Some spurs may lead to more immersive, rugged experiences deeper in the woods."
+          }
+        ],
+        "arrival": "Pick up supplies in Hexham before driving northwest toward the reservoir. Check in at Kielder Waterside to access the main trail network.",
+        "vehicle": "Standard vehicles are suitable for main access roads; check local weather for winter road conditions.",
+        "goldenHour": "The shoreline of Kielder Water offers scenic sunset views, particularly near the public art installations.",
+        "sources": [
+          {
+            "label": "Kielder Water & Forest Park Official",
+            "url": "https://www.visitkielder.com/"
+          },
+          {
+            "label": "Kielder Walking Guide",
+            "url": "https://www.visitkielder.com/See-and-do/walking/"
+          }
+        ]
+      }
+    }
+  }
+}

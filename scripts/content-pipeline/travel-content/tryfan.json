@@ -1,0 +1,64 @@
+{
+  "slug": "tryfan",
+  "headline": "Monitor Ogwen Valley Parking Restrictions and Bus Services",
+  "reservation": "While no entry permit is required for the mountain, parking in the Ogwen Valley is strictly regulated. Double yellow lines along the A5 prohibit parking on the roadside or pavement; during peak spring and summer periods, travelers should prepare to use the bus service from Bethesda if local lots are full.",
+  "source_url": "https://eryri.gov.wales/visit/ogwen/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Scaling the Stegosaurus",
+        "start": "Suggested: 8 AM from Bethesda",
+        "stops": [
+          {
+            "name": "Tryfan",
+            "detail": "Approach this technical spur in the Glyderau via the path by Gwern Gof Uchaf farm, requiring approximately two hours for an ascent to the vertiginous summit.",
+            "stop_id": "tryfan-01"
+          }
+        ],
+        "driving": "Allow 15-20 minutes from Bethesda; conditions and parking availability vary",
+        "note": "This is a technical climb suited for experienced mountaineers or those with a guide; avoid the route during poor weather."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "A5 Parking Enforcement",
+        "text": "Parking is strictly prohibited on double yellow lines, including pavements, along the A5 in Ogwen. Official lots by the lake fill quickly during holidays, necessitating an early arrival or use of public transport."
+      },
+      {
+        "kind": "access",
+        "title": "Technical Requirements",
+        "text": "The mountain is technical in nature and requires stamina and nerves of steel. Families with teenagers should only attempt the climb if they have significant mountaineering experience."
+      },
+      {
+        "kind": "timing",
+        "title": "Peak Season Crowds",
+        "text": "Spring and summer holidays represent the busiest times for the Ogwen Valley. Early starts are recommended to secure a spot at the car park near the lake."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Status",
+        "text": "The provided evidence does not contain information regarding mobile signal strength in the Glyderau. Travelers should verify coverage maps or carry offline navigation before departure."
+      },
+      {
+        "kind": "fuel",
+        "title": "Regional Services",
+        "text": "There is no mention of fuel or charging stations within the immediate Ogwen Valley in the official sources. Visitors should check for services in nearby Bethesda before entering the mountain pass."
+      }
+    ],
+    "arrival": "Pick up a rental in a regional hub and head to Bethesda to stock up on supplies before driving into the heart of the Ogwen Valley mountains.",
+    "vehicle": "Standard vehicles are suitable for the A5, though parking space is the primary constraint; check for local bus schedules during peak seasons.",
+    "goldenHour": "The summit of Tryfan offers dramatic views of the Glyderau, though visibility is highly dependent on mountain weather conditions.",
+    "sources": [
+      {
+        "label": "Visit Wales",
+        "url": "https://www.visitwales.com/destinations/north-wales/snowdonia-activity-ideas"
+      },
+      {
+        "label": "Eryri National Park",
+        "url": "https://eryri.gov.wales/visit/ogwen/"
+      }
+    ]
+  }
+}
