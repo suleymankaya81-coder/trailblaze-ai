@@ -1,0 +1,95 @@
+{
+  "slug": "algonquin-provincial-park",
+  "headline": "Advance Daily Vehicle Permits and Backcountry Booking",
+  "reservation": "Daily vehicle permits are required for day use along the Highway 60 corridor and can be reserved up to five days in advance. Overnight stays for developed campgrounds or backcountry paddling sites require separate reservations through the Ontario Parks system. Systems may change seasonally, so verify current requirements on the official website before travel.",
+  "source_url": "https://www.ontarioparks.ca/park/algonquin",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Historical Corridors and High Ridges",
+        "start": "Suggested: 8:30 AM from Huntsville",
+        "stops": [
+          {
+            "name": "Algonquin Visitor Centre",
+            "detail": "Explore exhibits detailing the park's natural history and logging heritage before viewing the panorama from the observation deck."
+          },
+          {
+            "name": "Lookout Trail",
+            "detail": "Ascend this loop for an expansive view of several hundred square kilometers of the park’s rugged interior."
+          }
+        ],
+        "driving": "Allow 1.5 to 2 hours for the transit from Huntsville into the park interior; conditions vary.",
+        "note": "Expect higher traffic volumes near the West Gate during peak autumn color weekends."
+      },
+      {
+        "title": "Canoe Routes and Forest Ecology",
+        "start": "Suggested: 9 AM from the Highway 60 Corridor",
+        "stops": [
+          {
+            "name": "Canoe Lake",
+            "detail": "A central hub for paddling history where visitors can launch for a day trip to explore the waters that inspired the Group of Seven."
+          },
+          {
+            "name": "Spruce Bog Boardwalk",
+            "detail": "Walk through specialized habitats featuring black spruce trees and unique northern bog plants on an accessible path."
+          }
+        ],
+        "driving": "Short transits between trailheads along Highway 60; allow 30 minutes for parking transitions.",
+        "note": "Paddling conditions depend heavily on wind speeds and water levels; check local weather."
+      },
+      {
+        "title": "Legacy Architecture and Logging History",
+        "start": "Suggested: 9:30 AM from Whitney",
+        "stops": [
+          {
+            "name": "Algonquin Logging Museum",
+            "detail": "Walk the easy loop trail to see a recreated logging camp and a steam-powered amphibious tug."
+          },
+          {
+            "name": "Barron Canyon",
+            "detail": "Visit the eastern edge of the park to see the 100-meter deep canyon carved by glacial meltwater."
+          }
+        ],
+        "driving": "Allow 2 to 3 hours for travel between the East Gate and the Barron Canyon access road; conditions vary.",
+        "note": "The road to Barron Canyon is gravel and may be rough; check vehicle clearance suitability."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Corridor Trailheads",
+        "text": "Formal lots are provided at all designated trailheads along Highway 60. During peak summer and autumn months, these lots often reach capacity, necessitating an early start."
+      },
+      {
+        "kind": "signal",
+        "title": "Interior Connectivity",
+        "text": "Cellular reception is generally available near the West and East gates but drops significantly in the park interior. Offline maps are recommended for navigating logging roads and trails."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Refueling",
+        "text": "Reliable fuel stations are located in Huntsville and Whitney outside the park boundaries. There are limited refueling services within the park interior, primarily at major outfitters."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Bug Activity",
+        "text": "Late spring visitors should prepare for black fly and mosquito seasons, which peak in May and June. Late summer and early autumn offer significantly reduced insect activity."
+      },
+      {
+        "kind": "access",
+        "title": "Winter Road Closures",
+        "text": "Highway 60 remains open year-round, but secondary access roads to remote lakes are typically unplowed and closed in winter. Check the park bulletin for seasonal road status."
+      }
+    ],
+    "arrival": "Pick up your rental at Toronto Pearson and drive north via Highway 400. Stop in Huntsville for groceries and supplies before entering through the West Gate.",
+    "vehicle": "Standard vehicles are suitable for Highway 60, but high-clearance vehicles are better for gravel access roads like those leading to Barron Canyon.",
+    "goldenHour": "Lookout Trail offers a western-facing perspective ideal for sunset, though lighting varies by season.",
+    "sources": [
+      {
+        "label": "Ontario Parks",
+        "url": "https://www.ontarioparks.ca/park/algonquin"
+      }
+    ]
+  }
+}

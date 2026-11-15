@@ -1,0 +1,95 @@
+{
+  "slug": "waterton-lakes-national-park",
+  "headline": "Review Parks Canada Access for Townsite and Backcountry Entry",
+  "reservation": "Standard entry requires a National Park Discovery Pass, while peak season activity shuttles or iconic hotel stays necessitate advanced individual bookings. Note that popular trails like Crypt Lake require specific ferry passage reservations that operate independently of park entry fees. Systems for Akamina Parkway access can change based on ecological recovery, so verify the current Parks Canada status before arrival.",
+  "source_url": "https://parks.canada.ca/pn-np/ab/waterton",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Glacial Waters and High Elevation Passes",
+        "start": "Suggested: 8:30 AM from Waterton Park Townsite",
+        "stops": [
+          {
+            "name": "Cameron Lake",
+            "detail": "Paddle through subalpine scenery at the end of Akamina Parkway, where the lake sits tucked against the Continental Divide."
+          },
+          {
+            "name": "Lineham Falls",
+            "detail": "Hike through diverse forest regrowth to view a towering vertical drop fed by the high peaks of the Akamina-Kishinena."
+          }
+        ],
+        "driving": "Allow 1 hour for the winding Akamina Parkway; conditions vary.",
+        "note": "Early starts are essential as limited lakeshore areas serve as the primary trailhead for multiple routes."
+      },
+      {
+        "title": "Prairie Meets Mountain and Historic Vistas",
+        "start": "Suggested: 9 AM from Prince of Wales Hotel",
+        "stops": [
+          {
+            "name": "Red Rock Canyon",
+            "detail": "Observe the striking contrast of vibrant iron-rich argillite layers against the surrounding mountain peaks."
+          },
+          {
+            "name": "Blakiston Falls",
+            "detail": "Follow the short boardwalk from the canyon to view the cascading water and evidence of the park's geological shifts."
+          }
+        ],
+        "driving": "Allow 45 minutes for the Red Rock Parkway; watch for wildlife corridor slowdowns.",
+        "note": "The Red Rock Parkway may have seasonal closures for wildlife movement; check the Visitor Centre board."
+      },
+      {
+        "title": "Deep Lake Excursions and International Borders",
+        "start": "Suggested: 10 AM from Upper Waterton Lake Marina",
+        "stops": [
+          {
+            "name": "Crypt Lake Trailhead",
+            "detail": "Access this world-renowned hike via a local ferry to reach a hidden turquoise lake accessible through a mountain tunnel."
+          },
+          {
+            "name": "Goat Haunt",
+            "detail": "Cross the international boundary to the southern end of the lake, managed jointly within the International Peace Park."
+          }
+        ],
+        "driving": "Limited driving; rely on local ferry transfers or townsite walking paths.",
+        "note": "Crossing into Goat Haunt may require specific customs documentation depending on current international status."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Parkway Capacity",
+        "text": "Lots at Red Rock Canyon and Cameron Lake are finite; once full, park staff may restrict access to the parkways until spots open. Plan destinations for early morning or late afternoon to avoid the midday peak."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Limits",
+        "text": "Expect reliable cellular service within the Waterton Park townsite, but signal drops immediately upon entering the parkways. Download offline maps for any navigation along the Akamina or Red Rock corridors."
+      },
+      {
+        "kind": "fuel",
+        "title": "Refueling Logistics",
+        "text": "The townsite offers seasonal fuel services, but options are limited. Pincher Creek or Cardston serve as the primary year-round supply hubs before entering the park boundaries."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Road Status",
+        "text": "Red Rock and Akamina Parkways typically open by late spring, but snowpack can delay access to high-elevation trailheads. Check the Parks Canada 'Important Bulletins' for road opening dates."
+      },
+      {
+        "kind": "access",
+        "title": "Ferry Dependencies",
+        "text": "Access to the Crypt Lake trail is dictated by ferry departure times, which are subject to wind conditions on the lake. High winds can occasionally suspend water transport even on sunny days."
+      }
+    ],
+    "arrival": "Arrive from Calgary (YYC) via Highway 6, picking up supplies in Pincher Creek. Check into your townsite accommodation before 3 PM to secure parking during the busy summer window.",
+    "vehicle": "Standard passenger cars are suitable for paved parkways; large RVs face length restrictions on Akamina Parkway's tight turns.",
+    "goldenHour": "Prince of Wales Hotel Hill offers panoramic views of the lake valley, with lighting varying significantly by summer solstice.",
+    "sources": [
+      {
+        "label": "Parks Canada - Waterton Lakes",
+        "url": "https://parks.canada.ca/pn-np/ab/waterton"
+      }
+    ]
+  }
+}

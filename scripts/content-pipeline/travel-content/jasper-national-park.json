@@ -1,0 +1,95 @@
+{
+  "slug": "jasper-national-park",
+  "headline": "Monitor Road Access and Seasonal Camping Reservations",
+  "reservation": "A National Park entry permit is required for all visitors. Due to high demand and environmental management, campsite reservations open months in advance and are essential for overnight stays; backcountry permits must be secured through the official Parks Canada portal. Always check for current wildfire-related closures or road restrictions that may affect the Icefields Parkway.",
+  "source_url": "https://parks.canada.ca/pn-np/ab/jasper",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Canyons and Alpine Lakes",
+        "start": "Suggested: 8:30 AM from Jasper Townsite",
+        "stops": [
+          {
+            "name": "Maligne Canyon",
+            "detail": "Walk the bridge system over the deepest canyon in the Canadian Rockies to see dramatic waterfalls and karst formations."
+          },
+          {
+            "name": "Maligne Lake",
+            "detail": "Visit the largest glacially fed lake in the Rockies, famous for the Spirit Island vista."
+          }
+        ],
+        "driving": "Allow 1.5 to 2 hours for the return Maligne Lake Road drive; conditions vary",
+        "note": "Maligne Lake Road is a prime area for wildlife viewing; maintain a slow speed and do not feed animals."
+      },
+      {
+        "title": "Glacial Ice and High Passes",
+        "start": "Suggested: 9 AM from Jasper Townsite",
+        "stops": [
+          {
+            "name": "Athabasca Falls",
+            "detail": "Observe the power of the Athabasca River as it thunders through a narrow quartzite gorge."
+          },
+          {
+            "name": "Columbia Icefield",
+            "detail": "View the Athabasca Glacier from the Toe of the Glacier trail or the Discovery Centre."
+          }
+        ],
+        "driving": "Allow 2 to 3 hours for the Icefields Parkway southward; conditions vary",
+        "note": "Weather at the Icefield is significantly colder than the townsite; allow extra time for sudden snow or wind."
+      },
+      {
+        "title": "Peaks and Natural Springs",
+        "start": "Suggested: 8:30 AM from Jasper Townsite",
+        "stops": [
+          {
+            "name": "Mount Edith Cavell",
+            "detail": "View the hanging Angel Glacier and the dramatic north face of the mountain from the Path of the Glacier trail."
+          },
+          {
+            "name": "Miette Hot Springs",
+            "detail": "Soak in the hottest mineral springs in the Rockies located in the remote Fiddle Valley."
+          }
+        ],
+        "driving": "Allow 2 to 2.5 hours total driving between these disparate sites; conditions vary",
+        "note": "The road to Mount Edith Cavell has vehicle length restrictions and is seasonally closed until late June."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Maligne Canyon Congestion",
+        "text": "The first and second bridge parking lots fill early; utilize the lower fifth bridge lot for a quieter approach to the canyon. At Mount Edith Cavell, parking is strictly limited to small vehicles."
+      },
+      {
+        "kind": "signal",
+        "title": "Icefields Parkway Dead Zones",
+        "text": "There is virtually no cellular service along Highway 93 between Jasper and Lake Louise. Download all maps and reservation confirmations for offline use."
+      },
+      {
+        "kind": "fuel",
+        "title": "Strategic Refueling",
+        "text": "Fuel is available in the Jasper townsite and at the Saskatchewan River Crossing. Prices at the Crossing are typically higher due to its remote location."
+      },
+      {
+        "kind": "timing",
+        "title": "Cavell Road Openings",
+        "text": "The road to Mount Edith Cavell usually opens in mid-to-late June depending on snowpack. Check the Parks Canada 'Roads to Trails' report for exact seasonal status."
+      },
+      {
+        "kind": "access",
+        "title": "Wildlife Corridors",
+        "text": "Seasonal speed limits and temporary area closures are frequently enforced to protect caribou and bear populations. Obey all posted signage near the Sunwapta Pass."
+      }
+    ],
+    "arrival": "Collect your rental at Edmonton (YEG) and complete major grocery shopping in Hinton or Edmonton before entering the park gates.",
+    "vehicle": "A standard car is suitable for the Icefields Parkway, but an RV offers convenience for the long distances between Jasper and Banff sites.",
+    "goldenHour": "Sunset at Pyramid Lake offers reflections of Pyramid Mountain, though the peaks may lose light earlier than expected in autumn.",
+    "sources": [
+      {
+        "label": "Parks Canada: Jasper National Park",
+        "url": "https://parks.canada.ca/pn-np/ab/jasper"
+      }
+    ]
+  }
+}

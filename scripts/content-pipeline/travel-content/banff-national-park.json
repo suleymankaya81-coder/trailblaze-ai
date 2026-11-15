@@ -1,0 +1,95 @@
+{
+  "slug": "banff-national-park",
+  "headline": "Park Pass Requirements and Lake Access Shuttles",
+  "reservation": "A Parks Canada Discovery Pass or daily entry fee is mandatory for all visitors entering the park. Due to extreme demand, parking at Lake Louise and Moraine Lake is highly restricted; Moraine Lake Road is closed to private vehicles, requiring shuttle or transit reservations. Always confirm the current booking window on the Parks Canada site.",
+  "source_url": "https://parks.canada.ca/pn-np/ab/banff",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Alpine Lakes and High Peaks",
+        "start": "Suggested: 7:30 AM from Banff Townsite",
+        "stops": [
+          {
+            "name": "Lake Louise",
+            "detail": "View the turquoise waters and Victoria Glacier, then walk the shoreline trail toward the back of the lake."
+          },
+          {
+            "name": "Moraine Lake",
+            "detail": "Accessible via shuttle, this lake in the Valley of the Ten Peaks offers the famous Rockpile viewpoint."
+          }
+        ],
+        "driving": "Allow 1 hour for the drive to the shuttle hub, plus shuttle transit time; conditions vary.",
+        "note": "Shuttle reservations are essential and often sell out months in advance; check for last-minute releases."
+      },
+      {
+        "title": "Bow Valley and Heritage Hot Springs",
+        "start": "Suggested: 9 AM from Canmore",
+        "stops": [
+          {
+            "name": "Johnston Canyon",
+            "detail": "Walk the catwalks built into the limestone canyon walls to view the Lower and Upper Falls."
+          },
+          {
+            "name": "Cave and Basin National Historic Site",
+            "detail": "Learn about the birthplace of Canada's national parks at these thermal springs and historic bathhouses."
+          }
+        ],
+        "driving": "Allow 45 minutes to 1 hour between Canmore and Johnston Canyon via the Bow Valley Parkway; conditions vary.",
+        "note": "Sections of the Bow Valley Parkway may have seasonal vehicle restrictions to protect wildlife; check local signs."
+      },
+      {
+        "title": "Panoramic Summits and Icefield Views",
+        "start": "Suggested: 8:30 AM from Lake Louise Village",
+        "stops": [
+          {
+            "name": "Bow Lake",
+            "detail": "A stop along the Icefields Parkway providing views of the Crowfoot Glacier and Wapta Icefield."
+          },
+          {
+            "name": "Peyto Lake",
+            "detail": "Take the short walk to the Bow Summit viewpoint for a look at the wolf-shaped glacial lake."
+          }
+        ],
+        "driving": "Allow 2 to 3 hours for a return trip on the Icefields Parkway; conditions vary.",
+        "note": "Fuel is extremely limited on the Icefields Parkway; ensure your tank is full before leaving Lake Louise."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Banff Townsite Parking",
+        "text": "The town of Banff utilizes intercept lots and paid parking zones. Use the free shuttle from the train station lot to minimize congestion in the town center."
+      },
+      {
+        "kind": "signal",
+        "title": "Parkway Connectivity",
+        "text": "Cell service is reliable in Banff and Lake Louise but disappears entirely on long stretches of the Icefields Parkway. Download maps and emergency info before heading north."
+      },
+      {
+        "kind": "fuel",
+        "title": "Regional Stations",
+        "text": "Fuel is available in Canmore, Banff, and Lake Louise Village. The only station on the Icefields Parkway is at Saskatchewan River Crossing, which is seasonal."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Road Access",
+        "text": "Moraine Lake Road typically opens in late May and closes after the first week of October. Winter visitors must use specialized transport for certain valley areas."
+      },
+      {
+        "kind": "access",
+        "title": "Wildlife Corridors",
+        "text": "Speed limits are strictly enforced to protect wildlife; certain areas may have 'no stopping' zones if bears or goats are present near the roadway."
+      }
+    ],
+    "arrival": "Collect your vehicle at Calgary International and drive west on Highway 1. Canmore is an ideal base for groceries and supplies before entering the park gates.",
+    "vehicle": "Winter tires or snow chains are legally required on most park roads from November to April; check rental agreements for mountain specifications.",
+    "goldenHour": "Vermilion Lakes offers a classic view of Mount Rundle for sunset, with colors changing based on seasonal clouds.",
+    "sources": [
+      {
+        "label": "Parks Canada",
+        "url": "https://parks.canada.ca/pn-np/ab/banff"
+      }
+    ]
+  }
+}

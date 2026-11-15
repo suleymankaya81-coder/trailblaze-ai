@@ -52,7 +52,7 @@ def mirror(p):
             "credit": p["credit"], "license": p["license"]}
 
 
-def offers(d, dest_id):
+def offers(d, dest_id, country="us"):
     name, short, code = d["name"], d["name"].replace(" National Park", ""), d["airport"]["code"]
     enc = urllib.parse.quote(name)
     state = (d["state"] or "").lower().replace(" ", "-")
@@ -78,6 +78,10 @@ def offers(d, dest_id):
          "Small enough to park at the trailhead, comfy enough to sleep in.",
          "Off-grid solar, fold-out bed, parks almost anywhere.", None),
     ]
+    if country == "ca":
+        # Canada: US-only campground partners are excluded; Motorhome Republic uses its Canada search, no USD price anchors.
+        rows = [r for r in rows if r[1] not in ("roverpass", "campspot", "harvest_hosts")]
+        rows = [r[:6] + ("https://www.motorhomerepublic.com/canada/", None, None, None) + r[10:] if r[1] == "motorhome_republic" else r for r in rows]
     for a in d["ai"]["activities"][:3]:
         rows.append(("activity", "viator", "awin", 11018, "Activity", a,
                      f"https://www.viator.com/searchResults/all?text={urllib.parse.quote(short + ' ' + a)}",
@@ -103,7 +107,7 @@ def offers(d, dest_id):
 def apply(slug):
     d = json.load(open(f"/tmp/wave/{slug}.json"))
     a, ai, rt = d["airport"], d["ai"], d["route"]
-    dest_id = q(f"select id from destinations where slug={lit(slug)}")
+    dest_id, country = q(f"select id||'|'||country_code from destinations where slug={lit(slug)}").split("|")
     photo_credit = f"Hero: {credit(d['hero'])} · Gallery: " + "; ".join(credit(p) for p in d["gallery"])
     sets = {
         "hero_image": d["hero"]["url"], "gallery": [p["url"] for p in d["gallery"]], "photo_credit": photo_credit,
@@ -120,7 +124,7 @@ def apply(slug):
     sets["permit_level"] = ai["permit_level"]
     requests.patch(f"{REST}/destinations?slug=eq.{slug}", json=sets, headers=H).raise_for_status()
     requests.delete(f"{REST}/offers?destination_id=eq.{dest_id}", headers=H).raise_for_status()
-    requests.post(f"{REST}/offers", json=offers(d, dest_id), headers=H).raise_for_status()
+    requests.post(f"{REST}/offers", json=offers(d, dest_id, country), headers=H).raise_for_status()
 
     routes = json.load(open(ROUTES))
     if rt:

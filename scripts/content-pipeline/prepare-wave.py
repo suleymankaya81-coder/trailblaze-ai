@@ -19,6 +19,12 @@ BAD = re.compile(r"map|logo|seal|sign|diagram|chart|plan|stamp|coin|flag|icon|sv
 # Use an explicitly named, verifiable landmark for broad regions or catalog aliases.
 # These are map anchors, not claims that a region has one exact point.
 WIKI_ANCHORS = {
+    # Canada wave 1
+    "glacier-national-park-bc": "Glacier National Park (Canada)",
+    "lake-louise": "Lake Louise (Alberta)",
+    "niagara-falls-ontario": "Niagara Falls, Ontario",
+    "sea-to-sky-highway": "Squamish, British Columbia",
+    "kananaskis-country": "Kananaskis Village",
     # New-destination waves 3-5
     "palm-desert": "Palm Desert, California",
     "borrego-springs": "Borrego Springs, California",
@@ -274,7 +280,7 @@ def commons_search(term, width=1280, limit=40):
 AIRPORTS = []
 with open("/tmp/airports.csv") as f:
     for r in csv.DictReader(f):
-        if r["iso_country"] == "US" and r["scheduled_service"] == "yes" and r["iata_code"] \
+        if r["iso_country"] in ("US", "CA") and r["scheduled_service"] == "yes" and r["iata_code"] \
                 and r["type"] in ("large_airport", "medium_airport"):
             AIRPORTS.append(r)
 
@@ -285,8 +291,9 @@ def hav(a, b, c, d):
     return 7918 * math.asin(math.sqrt(x))
 
 
-def airports(lat, lng, n=4):
-    return [_ap(a) for a in sorted(AIRPORTS, key=lambda r: hav(lat, lng, float(r["latitude_deg"]), float(r["longitude_deg"])))[:n]]
+def airports(lat, lng, n=4, country="us"):
+    pool = [a for a in AIRPORTS if a["iso_country"] == country.upper()]
+    return [_ap(a) for a in sorted(pool, key=lambda r: hav(lat, lng, float(r["latitude_deg"]), float(r["longitude_deg"])))[:n]]
 
 
 def _ap(a):
@@ -306,7 +313,7 @@ def route(a, lat, lng):
     return {"minutes": round(rt["duration"] / 60), "miles": round(rt["distance"] / 1609.34, 1), "coords": pts}
 
 
-SYSTEM = """You write factual trip summaries for WildParkRoutes, a US outdoor travel guide.
+SYSTEM = """You write factual trip summaries for WildParkRoutes, an outdoor travel guide.
 Use only widely known, stable facts. No exact prices, no guarantees, no invented
 business names. Return JSON only."""
 PROMPT = """Destination: {facts}
@@ -317,7 +324,7 @@ Return JSON:
  "best_season": e.g. "March – May, September – October",
  "best_seasons": subset of ["spring","summer","fall","winter"],
  "scenic_score": 1-10, "camping_score": 1-10,
- "avg_daily_budget": rough USD per person per day incl. lodging (integer),
+ "avg_daily_budget": rough per person per day in the destination's local currency (CAD for Canada, USD for the US) incl. lodging (integer),
  "trip_duration_days": e.g. "2–3 days", "recommended_duration": e.g. "2-3 days",
  "permit_level": "high" if timed entry/lottery permits are commonly needed, "moderate" if some popular hikes or campsites need reservations, else "none",
  "aliases": 2-4 lowercase names people search for,
@@ -365,7 +372,7 @@ def run(slug, facts_only=False):
 
 def prepare_facts(slug):
     d = json.loads(q(f"select row_to_json(t) from (select slug,name,state,destination_type,trip_tags,"
-                     f"experience_tags from destinations where slug='{slug}') t"))
+                     f"experience_tags,country_code from destinations where slug='{slug}') t"))
     used = set(q("select hero_image from destinations where hero_image is not null").split("\n"))
     used_cards = set(q("select coalesce(string_agg(array_to_string(gallery, E'\\n'), E'\\n'),'') from destinations").split("\n"))
 
@@ -376,7 +383,7 @@ def prepare_facts(slug):
     if lat is None:  # free OpenStreetMap geocoder fallback for the same named anchor
         anchor = WIKI_ANCHORS.get(slug, f"{d['name']}, {d['state']}")
         r = requests.get("https://nominatim.openstreetmap.org/search", headers=UA, timeout=30,
-                         params={"q": anchor, "format": "json", "limit": 1, "countrycodes": "us"}).json()
+                         params={"q": anchor, "format": "json", "limit": 1, "countrycodes": d.get("country_code") or "us"}).json()
         time.sleep(1)
         if r:
             lat, lng = float(r[0]["lat"]), float(r[0]["lon"])
@@ -408,7 +415,7 @@ def prepare_facts(slug):
 
     # Straight-line nearest can be across mountains or water: keep the shortest drive of the 4 nearest.
     best = []
-    for cand in airports(lat, lng):
+    for cand in airports(lat, lng, country=d.get('country_code') or 'us'):
         r = route(cand, lat, lng)
         best.append((r["minutes"] if r else 10**6, cand, r))
         time.sleep(1)
