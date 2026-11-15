@@ -34,9 +34,10 @@ export function dayPoints(day: TravelPlan["days"][number], markers: TravelMarker
 
 const enc = (p: RoutePoint) => p.lat != null && p.lng != null ? `${p.lat.toFixed(5)},${p.lng.toFixed(5)}` : p.query;
 
-/** Free Google Maps directions URL (no API key). Returns null for fewer than 2 points. */
+/** Free Google Maps URL: a single sight opens place search, multiple sights open directions. */
 export function mapsUrl(points: RoutePoint[]): string | null {
-  if (points.length < 2) return null;
+  if (!points.length) return null;
+  if (points.length === 1) return `https://www.google.com/maps/search/?${new URLSearchParams({ api: "1", query: enc(points[0]) })}`;
   if (points.length > MAPS_MAX_WAYPOINTS + 2) return null; // Use mapsUrlParts: never silently discard stops.
   const pts = points;
   const params = new URLSearchParams({ api: "1", origin: enc(pts[0]), destination: enc(pts[pts.length - 1]), travelmode: "driving" });

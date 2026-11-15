@@ -1,45 +1,17 @@
 {
   "published_this_request": [
-    "suffolk-essex-coast-heaths-national-landscape",
-    "forest-of-bowland-national-landscape",
-    "cranborne-chase-national-landscape",
-    "assynt-coigach",
-    "falls-of-foyers",
-    "llyn-tegid-bala-lake",
-    "pistyll-rhaeadr",
-    "tenby-coast",
-    "south-stack-cliffs",
-    "newborough-beach-and-forest",
-    "dylan-thomas-trail-coast",
-    "antrim-coast-and-glens-aonb",
-    "causeway-coast-aonb",
-    "sperrin-aonb",
-    "lagan-valley-regional-park"
+    "roe-valley-country-park",
+    "gortin-glen-forest-park",
+    "oxford-island-national-nature-reserve"
   ],
-  "remaining": [
-    {
-      "slug": "north-coast-500",
-      "status": "held",
-      "reason": "HELD: collect and review official source packet before generation: north-coast-500"
-    },
-    {
-      "slug": "roe-valley-country-park",
-      "status": "held",
-      "reason": "only 0 supporting photos for 1 sourced sights"
-    },
-    {
-      "slug": "gortin-glen-forest-park",
-      "status": "held",
-      "reason": "no photos"
-    },
-    {
-      "slug": "oxford-island-national-nature-reserve",
-      "status": "held",
-      "reason": "no photos"
-    }
-  ],
+  "completed_road_trip": {
+    "slug": "north-coast-500",
+    "path": "/road-trips/north-coast-500",
+    "method": "reviewed official-source overview, no model call"
+  },
+  "remaining": [],
   "model_calls": 0,
-  "published_uk_total": 141,
-  "catalog_total": 145,
-  "note": "North Coast 500 is catalog-only; three photo holds are database drafts. Available matching Commons images were predominantly 640px; high-resolution cover/one supporting photo remain required."
+  "published_uk_destinations": 144,
+  "published_uk_road_trip_overviews": 1,
+  "note": "All 145 catalog entries represented: 144 destinations and one road-trip overview. Full independent factual audit and German translations are not claimed."
 }

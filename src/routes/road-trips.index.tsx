@@ -60,6 +60,7 @@ function Page() {
         </Link>
         <div id="loops" className="mt-14 scroll-mt-28"><SectionHead kicker="Multi-park loops" title={`All ${LOOPS.length} loops`} intro="Self-drive routes linking nearby parks and towns, with suggested days per stop." /></div>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <PlaceCard to="/road-trips/north-coast-500" image={roadImg} alt="Road trip planning" title="North Coast 500" summary="Scotland’s North Highlands road trip: official five-day minimum guidance, regional visits and motorhome road restrictions." badges={["Scotland", "At least 5 days"]} action="See the route" />
           {LOOPS.map((l) => { const s = l.stops.find((x) => covers[x]); return (
             <PlaceCard key={l.slug} to="/road-trips/$slug" params={{ slug: l.slug }} image={s ? covers[s] : roadImg} alt={`${l.title} route scenery`} title={l.title} summary={l.intro} badges={[`${l.stops.length} stops`, l.region]} action="See the loop" />
           );})}

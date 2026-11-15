@@ -37,6 +37,7 @@ import { Route as NoReservationIndexRouteImport } from './routes/no-reservation.
 import { Route as NoReservationSlugRouteImport } from './routes/no-reservation.$slug'
 import { Route as RoadTripsIndexRouteImport } from './routes/road-trips.index'
 import { Route as RoadTripsSlugRouteImport } from './routes/road-trips.$slug'
+import { Route as RoadTripsNorthCoast500RouteImport } from './routes/road-trips.north-coast-500'
 import { Route as RvCampingIndexRouteImport } from './routes/rv-camping.index'
 import { Route as RvCampingSlugRouteImport } from './routes/rv-camping.$slug'
 import { Route as TripBuilderSlugRouteImport } from './routes/trip-builder.$slug'
@@ -206,6 +207,11 @@ const RoadTripsSlugRoute = RoadTripsSlugRouteImport.update({
   path: '/road-trips/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RoadTripsNorthCoast500Route = RoadTripsNorthCoast500RouteImport.update({
+  id: '/road-trips/north-coast-500',
+  path: '/road-trips/north-coast-500',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RvCampingIndexRoute = RvCampingIndexRouteImport.update({
   id: '/rv-camping/',
   path: '/rv-camping/',
@@ -359,6 +365,7 @@ export interface FileRoutesByFullPath {
   '/gear/bike-repair-kit-essentials': typeof GearBikeRepairKitEssentialsRoute
   '/no-reservation/$slug': typeof NoReservationSlugRoute
   '/road-trips/$slug': typeof RoadTripsSlugRoute
+  '/road-trips/north-coast-500': typeof RoadTripsNorthCoast500Route
   '/rv-camping/$slug': typeof RvCampingSlugRoute
   '/trip-builder/$slug': typeof TripBuilderSlugRoute
   '/corridors/': typeof CorridorsIndexRoute
@@ -413,6 +420,7 @@ export interface FileRoutesByTo {
   '/gear/bike-repair-kit-essentials': typeof GearBikeRepairKitEssentialsRoute
   '/no-reservation/$slug': typeof NoReservationSlugRoute
   '/road-trips/$slug': typeof RoadTripsSlugRoute
+  '/road-trips/north-coast-500': typeof RoadTripsNorthCoast500Route
   '/rv-camping/$slug': typeof RvCampingSlugRoute
   '/trip-builder/$slug': typeof TripBuilderSlugRoute
   '/corridors': typeof CorridorsIndexRoute
@@ -469,6 +477,7 @@ export interface FileRoutesById {
   '/gear/bike-repair-kit-essentials': typeof GearBikeRepairKitEssentialsRoute
   '/no-reservation/$slug': typeof NoReservationSlugRoute
   '/road-trips/$slug': typeof RoadTripsSlugRoute
+  '/road-trips/north-coast-500': typeof RoadTripsNorthCoast500Route
   '/rv-camping/$slug': typeof RvCampingSlugRoute
   '/trip-builder/$slug': typeof TripBuilderSlugRoute
   '/corridors/': typeof CorridorsIndexRoute
@@ -526,6 +535,7 @@ export interface FileRouteTypes {
     | '/gear/bike-repair-kit-essentials'
     | '/no-reservation/$slug'
     | '/road-trips/$slug'
+    | '/road-trips/north-coast-500'
     | '/rv-camping/$slug'
     | '/trip-builder/$slug'
     | '/corridors/'
@@ -580,6 +590,7 @@ export interface FileRouteTypes {
     | '/gear/bike-repair-kit-essentials'
     | '/no-reservation/$slug'
     | '/road-trips/$slug'
+    | '/road-trips/north-coast-500'
     | '/rv-camping/$slug'
     | '/trip-builder/$slug'
     | '/corridors'
@@ -635,6 +646,7 @@ export interface FileRouteTypes {
     | '/gear/bike-repair-kit-essentials'
     | '/no-reservation/$slug'
     | '/road-trips/$slug'
+    | '/road-trips/north-coast-500'
     | '/rv-camping/$slug'
     | '/trip-builder/$slug'
     | '/corridors/'
@@ -689,6 +701,7 @@ export interface RootRouteChildren {
   GearBikeRepairKitEssentialsRoute: typeof GearBikeRepairKitEssentialsRoute
   NoReservationSlugRoute: typeof NoReservationSlugRoute
   RoadTripsSlugRoute: typeof RoadTripsSlugRoute
+  RoadTripsNorthCoast500Route: typeof RoadTripsNorthCoast500Route
   RvCampingSlugRoute: typeof RvCampingSlugRoute
   TripBuilderSlugRoute: typeof TripBuilderSlugRoute
   CorridorsIndexRoute: typeof CorridorsIndexRoute
@@ -902,6 +915,13 @@ declare module '@tanstack/react-router' {
       path: '/road-trips/$slug'
       fullPath: '/road-trips/$slug'
       preLoaderRoute: typeof RoadTripsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/road-trips/north-coast-500': {
+      id: '/road-trips/north-coast-500'
+      path: '/road-trips/north-coast-500'
+      fullPath: '/road-trips/north-coast-500'
+      preLoaderRoute: typeof RoadTripsNorthCoast500RouteImport
       parentRoute: typeof rootRouteImport
     }
     '/rv-camping/': {
@@ -1149,6 +1169,7 @@ const rootRouteChildren: RootRouteChildren = {
   GearBikeRepairKitEssentialsRoute: GearBikeRepairKitEssentialsRoute,
   NoReservationSlugRoute: NoReservationSlugRoute,
   RoadTripsSlugRoute: RoadTripsSlugRoute,
+  RoadTripsNorthCoast500Route: RoadTripsNorthCoast500Route,
   RvCampingSlugRoute: RvCampingSlugRoute,
   TripBuilderSlugRoute: TripBuilderSlugRoute,
   CorridorsIndexRoute: CorridorsIndexRoute,

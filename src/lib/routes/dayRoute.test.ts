@@ -6,6 +6,15 @@ import storedPoints from "@/data/daily-route-points.json";
 const mk = (name: string, lat: number, lng: number) => ({ name, lat, lng, sourceUrl: "https://x.org" });
 
 describe("Google Maps day links", () => {
+  it("opens a single compact visit in Maps without inventing an origin", () => {
+    const urls = mapsUrlParts([{ name: "Roe Valley Country Park", query: "Roe Valley Country Park, Northern Ireland" }]);
+    expect(urls).toHaveLength(1);
+    const url = new URL(urls[0]);
+    expect(url.pathname).toBe("/maps/search/");
+    expect(url.searchParams.get("query")).toBe("Roe Valley Country Park, Northern Ireland");
+    expect(url.searchParams.has("origin")).toBe(false);
+    expect(mapsUrlParts([])).toEqual([]);
+  });
   it("covers all 500 destinations and 1512 days without dropping any daily endpoint", () => {
     const entries = Object.values(storedPoints);
     expect(entries).toHaveLength(500);

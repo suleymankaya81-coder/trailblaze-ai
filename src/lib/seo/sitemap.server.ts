@@ -176,7 +176,7 @@ export async function buildChildSitemap(name: string): Promise<Response | null> 
       }
       return urlset(urls);
     }
-    if (name === "road-trips") return urlset(LOOPS.map((l) => ({ loc: `${BASE_URL}/road-trips/${l.slug}` })));
+    if (name === "road-trips") return urlset([{ loc: `${BASE_URL}/road-trips/north-coast-500` }, ...LOOPS.map((l) => ({ loc: `${BASE_URL}/road-trips/${l.slug}` }))]);
     if (name === "no-reservation" || name === "rv-camping") {
       const rows = await fetchAll<{ slug: string; name: string; updated_at: string; hero_image: string | null; nearest_airport_code: string | null; nearest_airport_name: string | null; drive_minutes: number | null; permit_level: "high" | "moderate" | "none" | null; permit_note: string | null; permit_headline: string | null; camping_score: number | null; best_season: string | null }>(
         "destinations?select=slug,name,updated_at,hero_image,nearest_airport_code,nearest_airport_name,drive_minutes,permit_level,permit_note,permit_headline,camping_score,best_season&status=eq.published&order=slug.asc",

@@ -1,8 +1,9 @@
 ## November 15 flexible UK production
+- [x] Complete the four actual UK holds from the earlier 19-place list without model calls: three parks published with licensed stored photos; North Coast 500 added as a sourced road-trip overview. Desktop/phone checks and all tests pass; app publication remains required.
 - [x] Restore global Vrbo/Expedia cards independently of catalog stays; verified loaded photos, Seven Sisters real Viator listing and empty-result tracked search card on desktop/phone. 290 JS / 53 Python tests pass.
 - [x] Free completion published 15 additional UK places without model calls, using official excerpts and scope-matched photos; existing published places are skipped on reruns.
 - [x] Categorize the previous 56 UK holds, approve 39 additional source packets, repair exact-place photo filtering, and process the cached publication batch: 37 published, 19 held. 52 Python / 288 application tests pass; three desktop pages and one phone page checked.
-- [ ] Finish four UK holds: Roe Valley, Gortin Glen and Oxford Island need usable exact-place licensed photo sets; North Coast 500 needs a reviewed official route source packet. Full-page factual/photo audit remains pending.
+- [x] Finish four UK holds: Roe Valley, Gortin Glen and Oxford Island have licensed covers/supporting photos; North Coast 500 uses official route sources. Full-page factual/photo audit remains a separate unfinished task.
 - [x] Accept one-day and multi-day destination plans throughout generation, publication and browser parsing without weakening exact-source checks; 44 Python and 288 application tests pass.
 - [x] Run remaining UK catalog through the publication batch; 16 new pages published (30 UK total), including four compact visits, with five public page checks and desktop/mobile verification. Thirteen retained outputs reused; only three new paid calls, no replays.
 - [x] Process the previous 115-place batch: 59 published, 56 held for explicit evidence/photo/coordinate/output reasons; UK total 89 published. Final all-page factual/photo audit remains pending production completion.

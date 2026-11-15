@@ -36,10 +36,13 @@ def lit(v):
 
 
 def credit(p):
-    return f"{p['credit']} / {p['license']} via Wikimedia Commons"
+    source = "Flickr" if "flickr.com" in p['source'] else "Wikimedia Commons"
+    return f"{p['credit']} / {p['license']} via {source} ({p['source']})"
 
 
 def mirror(p):
+    if p['url'].startswith('/__l5e/assets-v1/'):
+        return {key: p[key] for key in ('subject', 'url', 'source', 'credit', 'license')}
     name = hashlib.sha256(p["source"].encode()).hexdigest()[:16] + ".jpg"
     path = f"{IMG_DIR}/{name}"
     if not os.path.exists(path):
