@@ -77,7 +77,7 @@ def generate(rows):
         raise
 
 def main():
-    args = argparse.ArgumentParser(); args.add_argument('--limit',type=int,default=24); args.add_argument('--resume',action='store_true'); args.add_argument('--country'); a=args.parse_args()
+    args = argparse.ArgumentParser(); args.add_argument('--limit',type=int,default=24); args.add_argument('--resume',action='store_true'); args.add_argument('--country'); args.add_argument('--slugs',nargs='+'); a=args.parse_args()
     assert 1 <= a.limit <= 60
     sql(f"insert into content_pipeline_jobs(job_key) values ({literal(JOB)}) on conflict do nothing")
     if a.resume: sql(f"update content_pipeline_jobs set status='ready',pause_reason=null where job_key={literal(JOB)} and pause_reason not in ('Content refusal','Provider access denial')")
@@ -86,7 +86,7 @@ def main():
     lock = sql(f"update content_pipeline_jobs set lease_until=now()+interval '12 minutes' where job_key={literal(JOB)} and status<>'paused' and (lease_until is null or lease_until<now()) returning job_key")
     if not lock: raise RuntimeError('Another run holds the lease')
     try:
-        rows = json.loads(sql(f"select coalesce(json_agg(t),'[]') from (select d.slug,d.name,d.state,d.region,d.destination_type,d.best_season,d.permit_level,d.nearest_airport_code,d.nearest_airport_name,d.drive_minutes,d.gateway_cities,d.lat,d.lng,(select json_agg(json_build_object('type',l.page_type,'intro',l.intro_content,'sections',l.content_sections)) from seo_landing_pages l where l.destination_id=d.id) as guides from destinations d where d.travel_plan is null"+(f" and d.country_code={literal(a.country)}" if a.country else "")+f" order by (d.slug='yellowstone') desc,(d.status='published') desc,d.name limit {a.limit})t"))
+        rows = json.loads(sql(f"select coalesce(json_agg(t),'[]') from (select d.slug,d.name,d.state,d.region,d.destination_type,d.best_season,d.permit_level,d.nearest_airport_code,d.nearest_airport_name,d.drive_minutes,d.gateway_cities,d.lat,d.lng,null as guides from destinations d where d.travel_plan is null"+(f" and d.country_code={literal(a.country)}" if a.country else "")+(" and d.slug in ("+','.join(literal(s) for s in a.slugs)+")" if a.slugs else "")+f" order by (d.slug='yellowstone') desc,(d.status='published') desc,d.name limit {a.limit})t"))
         for start in range(0,len(rows),3):
             if sql(f"select status from content_pipeline_jobs where job_key={literal(JOB)}") == 'paused': break
             chunk = rows[start:start+3]

@@ -1,0 +1,52 @@
+"""One bounded CLI batch. Missing evidence holds a place before any AI spend.
+Usage: python scripts/content-pipeline/run-content-wave.py --catalog uk/catalog.json --wave 2
+Publication remains a separate explicit --publish choice after existing checks.
+"""
+import argparse
+import json
+import subprocess
+import sys
+from pathlib import Path
+from compact_evidence import compact_packet
+from source_evidence import load_packet
+
+def main():
+    p = argparse.ArgumentParser()
+    p.add_argument('--catalog', default='uk/catalog.json')
+    p.add_argument('--wave', type=int, default=2)
+    p.add_argument('--slugs', nargs='+')
+    p.add_argument('--publish', action='store_true')
+    a = p.parse_args()
+    root = Path(__file__).parent
+    catalog = json.loads((root / a.catalog).read_text())
+    rows = [r for r in catalog if r['slug'] in a.slugs] if a.slugs else [r for r in catalog if r['wave'] == a.wave]
+    results = []
+    for row in rows:
+        slug = row['slug']
+        try:
+            compact_packet(load_packet(slug))
+        except ValueError as error:
+            results.append({'slug': slug, 'status': 'held_before_ai', 'reason': str(error)})
+            continue
+        for script, args in [('prepare-wave.py', ['--combined', slug]), ('apply-wave.py', [slug]),
+                             ('generate-travel-content.py', ['--slugs', slug, '--limit', '1', '--country', row['country']])]:
+            response = subprocess.run([sys.executable, str(root / script), *args], text=True, capture_output=True)
+            if response.returncode or any(word in response.stdout for word in ('HELD', 'ERR')):
+                results.append({'slug': slug, 'status': 'held', 'stage': script, 'reason': response.stdout[-1500:]})
+                break
+        else:
+            if a.publish:
+                response = subprocess.run([sys.executable, str(root / 'publish-wave.py'), slug], text=True, capture_output=True)
+                status = 'published' if response.returncode == 0 and 'published' in response.stdout else 'held'
+            else:
+                status = 'prepared_for_review'
+            results.append({'slug': slug, 'status': status})
+        # Gateway failures have unknown/permanent outcomes: stop the whole batch, no blind retries.
+        if results[-1].get('stage') == 'prepare-wave.py' and 'generation failed' in results[-1].get('reason', '').lower():
+            break
+    report = root / 'wave-run-report.json'
+    report.write_text(json.dumps(results, ensure_ascii=False, indent=2))
+    print(json.dumps({'places': len(results), 'statuses': {s: sum(r['status'] == s for r in results) for s in {r['status'] for r in results}}}))
+
+if __name__ == '__main__':
+    main()

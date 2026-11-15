@@ -306,11 +306,6 @@ def commons_search(term, width=1280, limit=40):
 
 
 AIRPORTS = []
-with open("/tmp/airports.csv") as f:
-    for r in csv.DictReader(f):
-        if r["iso_country"] in ("US", "CA", "GB") and r["scheduled_service"] == "yes" and r["iata_code"] \
-                and r["type"] in ("large_airport", "medium_airport"):
-            AIRPORTS.append(r)
 
 
 def hav(a, b, c, d):
@@ -320,6 +315,11 @@ def hav(a, b, c, d):
 
 
 def airports(lat, lng, n=4, country="us"):
+    if not AIRPORTS:
+        with open("/tmp/airports.csv") as f:
+            AIRPORTS.extend(r for r in csv.DictReader(f) if r["iso_country"] in ("US", "CA", "GB")
+                and r["scheduled_service"] == "yes" and r["iata_code"]
+                and r["type"] in ("large_airport", "medium_airport"))
     pool = [a for a in AIRPORTS if a["iso_country"] == country.upper()]
     return [_ap(a) for a in sorted(pool, key=lambda r: hav(lat, lng, float(r["latitude_deg"]), float(r["longitude_deg"])))[:n]]
 
@@ -361,7 +361,7 @@ Return JSON:
  "seo_title": max 60 chars like "<Name> Camping, Stays & Trip Guide"}}"""
 
 
-def run(slug, facts_only=False):
+def run(slug, facts_only=False, combined=False):
     if not facts_only:
         load_packet(slug)
     path = f"{OUT}/{slug}.json"
@@ -378,6 +378,12 @@ def run(slug, facts_only=False):
         json.dump(prepared, open(facts_path, "w"), indent=1)
     if facts_only:
         return f"facts ready airport={prepared['airport']['code']}"
+    if combined:
+        from combined_content import generate_bundle
+        bundle = generate_bundle(prepared)
+        json.dump({k: v for k, v in prepared.items() if k != "destination"} | {"ai": bundle['summary']},
+                  open(path, "w"), indent=1)
+        return "combined content ready"
     from gateway_call import call_ai_json
     d = prepared["destination"]
     published = q("select string_agg(slug, ',') from destinations where status='published'")
@@ -465,9 +471,10 @@ def prepare_facts(slug):
 
 if __name__ == "__main__":
     facts_only = "--facts-only" in sys.argv
-    for s in (arg for arg in sys.argv[1:] if arg != "--facts-only"):
+    combined = "--combined" in sys.argv
+    for s in (arg for arg in sys.argv[1:] if arg not in ("--facts-only", "--combined")):
         try:
-            print(s, run(s, facts_only=facts_only), flush=True)
+            print(s, run(s, facts_only=facts_only, combined=combined), flush=True)
         except Exception as e:  # noqa
             print(s, "ERR", e, flush=True)
         time.sleep(1)
