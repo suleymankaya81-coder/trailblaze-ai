@@ -370,7 +370,7 @@ def hav(a, b, c, d):
 def airports(lat, lng, n=4, country="us"):
     if not AIRPORTS:
         with open("/tmp/airports.csv") as f:
-            AIRPORTS.extend(r for r in csv.DictReader(f) if r["iso_country"] in ("US", "CA", "GB")
+            AIRPORTS.extend(r for r in csv.DictReader(f) if r["iso_country"] in ("US", "CA", "GB", "DE", "AT", "CH")
                 and r["scheduled_service"] == "yes" and r["iata_code"]
                 and r["type"] in ("large_airport", "medium_airport"))
     pool = [a for a in AIRPORTS if a["iso_country"] == country.upper()]
@@ -503,7 +503,7 @@ def prepare_facts(slug):
         if not photos:
             raise RuntimeError("no photos")
         hero = file_info(photos.pop(0)["file"].removeprefix("File:"))
-    activity_count = min(3, len(load_packet(slug).get('approved_stops', []))) if d.get('country_code') == 'gb' else 3
+    activity_count = 3 if (d.get('country_code') or 'us') in ('us', 'ca') else min(3, len(load_packet(slug).get('approved_stops', [])))
     if len(photos) < activity_count:
         raise RuntimeError(f"only {len(photos)} supporting photos for {activity_count} sourced sights")
 

@@ -1,7 +1,7 @@
 import { airportRentalsLink, motorhomeRepublicLink } from "./webjet";
 
 /** Country eligibility for vehicle, RV and campground partners plus local price formatting. */
-export type CountryCode = "us" | "ca" | "gb";
+export type CountryCode = "us" | "ca" | "gb" | "de" | "at" | "ch";
 export type PartnerKind = "rv" | "car" | "campground";
 
 interface CountryPartnerSet { currency: string; numberLocale: string; rv: string[]; car: string[]; campground: string[] }
@@ -10,11 +10,14 @@ export const COUNTRY_PARTNERS: Record<CountryCode, CountryPartnerSet> = {
   us: { currency: "USD", numberLocale: "en-US", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: ["roverpass", "campspot", "harvest_hosts"] },
   ca: { currency: "CAD", numberLocale: "en-CA", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
   gb: { currency: "GBP", numberLocale: "en-GB", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
+  de: { currency: "EUR", numberLocale: "de-DE", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
+  at: { currency: "EUR", numberLocale: "de-AT", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
+  ch: { currency: "CHF", numberLocale: "de-CH", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
 };
 
 export function normalizeCountry(code?: string | null): CountryCode {
   const c = code?.toLowerCase();
-  return c === "ca" || c === "gb" ? c : "us";
+  return c && c in COUNTRY_PARTNERS ? (c as CountryCode) : "us";
 }
 export const isCountrySupported = (code?: string | null) => !!code && code.toLowerCase() in COUNTRY_PARTNERS;
 
@@ -43,6 +46,9 @@ export function rvLinkFor(country?: string | null, now = Date.now()): string | n
   const c = normalizeCountry(country);
   if (c === "ca") return motorhomeRepublicLink("/canada/", now);
   if (c === "gb") return motorhomeRepublicLink("/united-kingdom/", now);
+  if (c === "de") return motorhomeRepublicLink("/germany/", now);
+  if (c === "at") return motorhomeRepublicLink("/austria/", now);
+  if (c === "ch") return motorhomeRepublicLink("/switzerland/", now);
   return motorhomeRepublicLink(undefined, now);
 }
 

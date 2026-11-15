@@ -14,4 +14,6 @@ describe("country partners", () => {
   it("formats non-local currency explicitly", () => expect(formatCountryPrice(120, "us", "CAD")).toBe("CA$120"));
   it("UK has no US-only campground partners", () => expect(partnersFor("GB", "campground")).toEqual([]));
   it("UK RV link goes to the UK search and ignores the US deal", () => expect(rvLinkFor("gb", Date.UTC(2026, 10, 20))).toBe("https://www.motorhomerepublic.com/united-kingdom/?affiliate=minialife"));
+  it("DACH uses local currencies and no US campgrounds", () => { expect(countryCurrency("de")).toBe("EUR"); expect(countryCurrency("at")).toBe("EUR"); expect(countryCurrency("ch")).toBe("CHF"); expect(partnersFor("de", "campground")).toEqual([]); });
+  it("German RV link goes to the Germany search", () => expect(rvLinkFor("de", AFTER_BF)).toBe("https://www.motorhomerepublic.com/germany/?affiliate=minialife"));
 });

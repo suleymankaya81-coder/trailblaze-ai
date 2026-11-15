@@ -22,3 +22,5 @@
 - UK places come from scripts/content-pipeline/uk/catalog.json (country gb, regions england/scotland/wales/northern-ireland, duplicates merged, 15 national parks as pilot wave); GB regions stay draft until a place is published and authority /eu/uk pages map to /destinations/gb only after UK_PAGES_LIVE. Why: one reviewed source, no empty pages.
 - Travel-plan generation holds any destination whose daily stop names do not appear in its approved source packet, or whose citations are not packet URLs; held plans are cleared so a rerun regenerates them. Why: sourced pages must not contain model-recalled places.
 - Travel generation strips link targets from evidence text before prompting and matches stop names by their distinctive words (generic words like trail/centre ignored). Why: models cited linked pages never fetched, and exact-string matching rejected sourced places.
+
+- Country support (airports, partner sets, currency, flexible offer/photo quotas, country paths) is enabled per ISO code; only the US keeps the fixed 15-offer and US campground set. Why: new countries like DACH must not inherit US partners or block on US-only quotas.
