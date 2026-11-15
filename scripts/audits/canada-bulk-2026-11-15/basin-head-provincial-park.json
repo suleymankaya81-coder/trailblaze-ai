@@ -1,0 +1,457 @@
+{
+  "checks": [
+    {
+      "path": "/name",
+      "status": "supported",
+      "reason": "The park name is confirmed by the source.",
+      "url": "https://www.tourismpei.com/provincial-park/basin-head",
+      "quote": "Basin Head Provincial Park"
+    },
+    {
+      "path": "/tagline",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The nickname 'Singing Sands' and the bridge jumping area ('the run') are mentioned.",
+      "url": "https://www.tourismpei.com/provincial-park/basin-head",
+      "quote": "The beach is split into two sections, divided by a channel, known locally as “the run.” ... the beach is nicknamed \"the Singing Sands\"."
+    },
+    {
+      "path": "/best_season",
+      "status": "supported",
+      "reason": "The park's operating dates in 2026 fall between June and October.",
+      "url": "https://www.tourismpei.com/provincial-park/basin-head",
+      "quote": "Open June 5 to October 12, 2026"
+    },
+    {
+      "path": "/gateway_cities",
+      "status": "supported",
+      "reason": "The source confirms the park is a short drive from Souris and located in the Points East Coastal Drive region accessible from major centers.",
+      "url": "https://www.tourismpei.com/provincial-park/basin-head",
+      "quote": "The park is a short 15 minute drive from Souris."
+    },
+    {
+      "path": "/permit_note",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The park is confirmed as a Day Use Park with an on-site museum.",
+      "url": "https://www.tourismpei.com/provincial-park/basin-head",
+      "quote": "Park Type: Day Use Park ... The Basin Head Day Park features a supervised beach, fisheries museum, on-site concessions and washroom."
+    },
+    {
+      "path": "/nearest_airport_code",
+      "status": "unverified",
+      "reason": "The provided source does not mention airports or airport codes.",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/detail",
+      "status": "supported",
+      "reason": "The silica content and resulting sound are mentioned in the source.",
+      "url": "https://www.tourismpei.com/provincial-park/basin-head",
+      "quote": "Because it actually \"sings\" when stepped on due to its high silica content, the beach is nicknamed \"the Singing Sands\"."
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/detail",
+      "status": "supported",
+      "reason": "The museum is confirmed to be on-site overlooking the strait.",
+      "url": "https://www.tourismpei.com/provincial-park/basin-head",
+      "quote": "The on-site Basin Head Fisheries Museum is situated on the bluff overlooking Northumberland Strait"
+    },
+    {
+      "path": "/travel_plan/days/0/driving",
+      "status": "supported",
+      "reason": "The drive time from Souris is explicitly stated.",
+      "url": "https://www.tourismpei.com/provincial-park/basin-head",
+      "quote": "The park is a short 15 minute drive from Souris."
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/name",
+      "status": "unverified",
+      "reason": "East Point Lighthouse is mentioned as a location in the region generally, but its specific details ('Meeting of Tides') are not in the fetched text.",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/name",
+      "status": "unverified",
+      "reason": "Elmira Railway Museum is not mentioned in the supplied source text.",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/detail",
+      "status": "supported",
+      "reason": "The channel known as 'the run' is described as dividing the beach.",
+      "url": "https://www.tourismpei.com/provincial-park/basin-head",
+      "quote": "The beach is split into two sections, divided by a channel, known locally as “the run.”"
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/name",
+      "status": "unverified",
+      "reason": "Red Point Provincial Park is not mentioned in the supplied source text.",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/text",
+      "status": "supported",
+      "reason": "Operational dates are provided, supporting the seasonal nature of facilities.",
+      "url": "https://www.tourismpei.com/provincial-park/basin-head",
+      "quote": "Open June 5 to October 12, 2026"
+    },
+    {
+      "path": "/travel_plan/intel/3/text",
+      "status": "supported",
+      "reason": "Souris is confirmed as a hub for the Magdalen Islands ferry and is close to the park.",
+      "url": "https://www.tourismpei.com/provincial-park/basin-head",
+      "quote": "Eight-passenger van shuttle from Souris (Les Îles-de-la-Madeleine ferry)"
+    },
+    {
+      "path": "/state",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/region",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/recommended_duration",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_level",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_headline",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_source_url",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/nearest_airport_name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lat",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lng",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/access_type",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/arrival",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/vehicle",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/goldenHour",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    }
+  ],
+  "corrections": [
+    {
+      "path": "/destination/intel/0/text",
+      "value": "The beach and park facilities are seasonal, operating from June 5 to October 12, 2026. Outside of this window, park facilities may be closed.",
+      "url": "https://www.tourismpei.com/provincial-park/basin-head",
+      "quote": "Open June 5 to October 12, 2026",
+      "reason": "The source provides specific 2026 dates that slightly extend beyond the 'mid-June through Labor Day' estimation."
+    }
+  ],
+  "summary": "The plan for Basin Head Provincial Park is largely supported regarding its primary features (Singing Sands, the museum, 'the run') and its proximity to Souris. Regional secondary stops like East Point Lighthouse and Elmira Railway Museum are unverified within the provided text, as is the airport information. Operating dates for 2026 have been clarified.",
+  "slug": "basin-head-provincial-park",
+  "status": "audited",
+  "source_errors": [
+    {
+      "url": "https://www.tourismpei.com/sites/default/files/styles/card/public/images/15298-1669316685--dffe75f8-1667-ee11-9ae7-0022483c8898.jpg?h=67b2f357&itok=TYHcEUTZ",
+      "error": "ValueError"
+    }
+  ],
+  "applied_fields": [
+    "travel_plan"
+  ],
+  "coverage": {
+    "leaf_count": 60,
+    "explicitly_classified": 60,
+    "method": "Source audit plus explicit missing-evidence register; not factual certification"
+  }
+}

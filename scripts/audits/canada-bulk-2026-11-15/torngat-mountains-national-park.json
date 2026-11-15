@@ -1,0 +1,442 @@
+{
+  "checks": [
+    {
+      "path": "/name",
+      "status": "supported",
+      "reason": "Name matches official park title.",
+      "url": "https://parks.canada.ca/pn-np/nl/torngats",
+      "quote": "Torngat Mountains National Park"
+    },
+    {
+      "path": "/state",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The park address is listed in Nain, NL.",
+      "url": "https://parks.canada.ca/pn-np/nl/torngats",
+      "quote": "Nain NL A0P 1L0"
+    },
+    {
+      "path": "/best_season",
+      "status": "supported",
+      "reason": "Parks Canada lists mid July to late August as the 2026 visitor season.",
+      "url": "https://parks.canada.ca/pn-np/nl/torngats",
+      "quote": "Open for the 2026 visitor season mid July to late August"
+    },
+    {
+      "path": "/permit_note",
+      "status": "unverified",
+      "reason": "The provided sources describe safety and research permits but do not explicitly detail mandatory polar bear safety briefing attendance for all visitors or specific booking systems for 2026.",
+      "url": "https://parks.canada.ca/pn-np/nl/torngats/securite-safety",
+      "quote": ""
+    },
+    {
+      "path": "/nearest_airport_code",
+      "status": "unverified",
+      "reason": "The airport code YVP/Kuujjuaq is not mentioned in the provided text; only Nain is listed in the address block.",
+      "url": "https://parks.canada.ca/pn-np/nl/torngats",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/text",
+      "status": "supported",
+      "reason": "Satellite communication is explicitly recommended due to reliability needs.",
+      "url": "https://parks.canada.ca/pn-np/nl/torngats/securite-safety",
+      "quote": "The Iridium satellite phones are the most reliable for use in the Torngat Mountains National Park area at the moment. Carrying a SPOT or inReach Satellite Messenger device is also recommended."
+    },
+    {
+      "path": "/travel_plan/intel/4/text",
+      "status": "supported",
+      "reason": "Source confirms it is safest to travel with an Inuit bear guard but does not state it is a legal requirement for independent visitors.",
+      "url": "https://parks.canada.ca/pn-np/nl/torngats/securite-safety",
+      "quote": "It is safest to travel with an experienced Inuit polar bear guard who is permitted to carry a firearm in the park."
+    },
+    {
+      "path": "/vehicle",
+      "status": "unverified",
+      "reason": "While no roads are shown, the source does not explicitly state that travel is 'exclusively' by boat, aircraft, or foot, nor does it mention luggage limits.",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/region",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/tagline",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/recommended_duration",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_level",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_headline",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_source_url",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/nearest_airport_name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lat",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lng",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/access_type",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/arrival",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/vehicle",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/goldenHour",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    }
+  ],
+  "corrections": [],
+  "summary": "The name, location, 2026 season (mid-July to late August), and satellite communication requirements are supported by official Parks Canada text. Specific gateway airport codes (YVP), mandatory briefing attendance protocols, and exclusive transportation lists are unverified by the provided documents.",
+  "slug": "torngat-mountains-national-park",
+  "status": "audited",
+  "source_errors": [],
+  "applied_fields": [],
+  "coverage": {
+    "leaf_count": 60,
+    "explicitly_classified": 60,
+    "method": "Source audit plus explicit missing-evidence register; not factual certification"
+  }
+}

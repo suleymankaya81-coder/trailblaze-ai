@@ -1,6 +1,6 @@
 {
   "reviewed": "2026-11-15",
-  "scope": "Sourced corrections; wave 1 (20 places) and first 19 wave-2 places claim-by-claim verified 2026-11-15, other places targeted only.",
+  "scope": "Sourced corrections; wave 1 (20 places) and first 19 wave-2 places claim-by-claim verified 2026-11-15, other places targeted only.; remaining 105 published places bulk source-audited, unsupported claims remain explicitly unverified in audit reports.; remaining 105 published places bulk source-audited, unsupported claims remain explicitly unverified in audit reports.; remaining 105 published places bulk source-audited, unsupported claims remain explicitly unverified in audit reports.",
   "records": {
     "clear-lake": {
       "fields": {
@@ -120,12 +120,14 @@
           "/images/destination-cards/37188a7f090796fb.jpg",
           "/images/destination-cards/5f68ae3df44cafb0.jpg"
         ],
-        "photo_credit": "Hero: Ymblanter / CC BY-SA 4.0 via Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Great_Slave_Lake_beach_in_Hay_River_2.jpg · Gallery: Paul Gierszewski / Public domain via Wikimedia Commons; Ymblanter / CC BY-SA 4.0 via Wikimedia Commons"
+        "photo_credit": "Hero: Ymblanter / CC BY-SA 4.0 via Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Great_Slave_Lake_beach_in_Hay_River_2.jpg · Gallery: Paul Gierszewski / Public domain via Wikimedia Commons; Ymblanter / CC BY-SA 4.0 via Wikimedia Commons",
+        "permit_headline": "Thaidene Nëné Visitor Registration"
       },
       "sources": [
+        "https://commons.wikimedia.org/wiki/File:Great_Slave_Lake_beach_in_Hay_River_2.jpg",
         "https://commons.wikimedia.org/wiki/File:Great_Slave_Lake_beach_in_Hay_River_3.jpg",
         "https://commons.wikimedia.org/wiki/File:UtsingiPoint-GreatSlaveLake.JPG",
-        "https://commons.wikimedia.org/wiki/File:Great_Slave_Lake_beach_in_Hay_River_2.jpg"
+        "https://parks.canada.ca/pn-np/nt/thaidene-nene/security-safety/bulletins"
       ]
     },
     "great-bear-lake": {
@@ -134,10 +136,9 @@
         "gallery": [],
         "photo_credit": "Hero: mattcatpurple from Hay River, Canada / CC BY-SA 2.0 via Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Great_Bear_Lake_(158842785).jpg · Gallery: ",
         "travel_plan": {
-          "arrival": "Arrive at Norman Wells (YVQ) for your connecting charter to Deline; meet your local host for a briefing on community protocols.",
           "days": [
             {
-              "title": "Confirm the gateway and expedition route",
+              "note": "Allow weather-delay contingency; this stage is not a sightseeing day.",
               "start": "Before departure",
               "stops": [
                 {
@@ -149,11 +150,11 @@
                   "detail": "Book only the flight connections, accommodation and local services appropriate to the agreed expedition route."
                 }
               ],
-              "driving": "No airport-to-park road route is provided. Confirm flight, boat or other local transfers.",
-              "note": "Allow weather-delay contingency; this stage is not a sightseeing day."
+              "title": "Confirm the gateway and expedition route",
+              "driving": "No airport-to-park road route is provided. Confirm flight, boat or other local transfers."
             },
             {
-              "title": "Arrange transfers and required orientation",
+              "note": "A booking does not establish that every remote area is reachable on the same trip.",
               "start": "According to the confirmed operator schedule",
               "stops": [
                 {
@@ -165,11 +166,11 @@
                   "detail": "Travel only to the landing, shore or trail access point approved for the agreed route and current conditions."
                 }
               ],
-              "driving": "Transfer mode and duration depend on your booked route and weather; do not use driving directions.",
-              "note": "A booking does not establish that every remote area is reachable on the same trip."
+              "title": "Arrange transfers and required orientation",
+              "driving": "Transfer mode and duration depend on your booked route and weather; do not use driving directions."
             },
             {
-              "title": "Follow the agreed route and return plan",
+              "note": "The suggested stay above is a broad planning estimate, not a guaranteed expedition duration.",
               "start": "Duration set by the expedition itinerary",
               "stops": [
                 {
@@ -181,11 +182,10 @@
                   "detail": "Keep sufficient time for the agreed return and weather delays, and complete any required de-registration."
                 }
               ],
-              "driving": "Walking, boat or air travel as arranged; no generic three-day circuit is implied.",
-              "note": "The suggested stay above is a broad planning estimate, not a guaranteed expedition duration."
+              "title": "Follow the agreed route and return plan",
+              "driving": "Walking, boat or air travel as arranged; no generic three-day circuit is implied."
             }
           ],
-          "goldenHour": "Midsummer 'Midnight Sun' views from the Deline shoreline; the sun barely dips below the horizon in late June.",
           "intel": [
             {
               "kind": "parking",
@@ -209,27 +209,30 @@
             },
             {
               "kind": "access",
-              "text": "No permanent roads connect Great Bear Lake to the southern mainland. Access is exclusively via scheduled flights from Yellowknife or Norman Wells.",
+              "text": "Access is primarily via scheduled flights from Yellowknife or Norman Wells; a seasonal winter road connects the community to Wrigley via Tulita during colder months.",
               "title": "Fly-In Only"
             }
           ],
+          "arrival": "Arrive at Norman Wells (YVQ) for your connecting charter to Deline; meet your local host for a briefing on community protocols.",
           "markers": [],
-          "reviewedAt": "2026-11-15T12:35:00Z",
           "sources": [
             {
-              "label": "Spectacular Northwest Territories",
-              "url": "https://spectacularnwt.com/destinations/sahtu/deline"
+              "url": "https://spectacularnwt.com/destinations/sahtu/deline",
+              "label": "Spectacular Northwest Territories"
             }
           ],
           "vehicle": "No road vehicles are feasible for visitors; all travel is by boat, bush plane, or foot. Verify all gear weight limits for small aircraft.",
-          "version": 1
+          "version": 1,
+          "goldenHour": "Midsummer 'Midnight Sun' views from the Deline shoreline; the sun barely dips below the horizon in late June.",
+          "reviewedAt": "2026-11-15T12:35:00Z"
         },
         "drive_minutes": null,
         "drive_miles": null
       },
       "sources": [
-        "https://www.enr.gov.nt.ca/en",
-        "https://commons.wikimedia.org/wiki/File:Great_Bear_Lake_(158842785).jpg"
+        "https://commons.wikimedia.org/wiki/File:Great_Bear_Lake_(158842785).jpg",
+        "https://spectacularnwt.com/destinations/sahtu/deline",
+        "https://www.enr.gov.nt.ca/en"
       ]
     },
     "bennett-lake": {
@@ -524,12 +527,14 @@
           "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Great_Sand_Hills_01.jpg/1280px-Great_Sand_Hills_01.jpg",
           "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Great_Sand_Hills_03.jpg/1280px-Great_Sand_Hills_03.jpg"
         ],
-        "photo_credit": "Hero: Masterhatch / CC BY-SA 4.0 via Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Great_Sand_Hills_02.jpg · Gallery: Masterhatch / CC BY-SA 4.0 via Wikimedia Commons; Masterhatch / CC BY-SA 4.0 via Wikimedia Commons"
+        "photo_credit": "Hero: Masterhatch / CC BY-SA 4.0 via Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Great_Sand_Hills_02.jpg · Gallery: Masterhatch / CC BY-SA 4.0 via Wikimedia Commons; Masterhatch / CC BY-SA 4.0 via Wikimedia Commons",
+        "permit_source_url": "https://www.tourismsaskatchewan.com/listings/735/great-sand-hills"
       },
       "sources": [
-        "https://commons.wikimedia.org/wiki/File:Great_Sand_Hills_03.jpg",
         "https://commons.wikimedia.org/wiki/File:Great_Sand_Hills_01.jpg",
-        "https://commons.wikimedia.org/wiki/File:Great_Sand_Hills_02.jpg"
+        "https://commons.wikimedia.org/wiki/File:Great_Sand_Hills_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Great_Sand_Hills_03.jpg",
+        "https://www.tourismsaskatchewan.com/listings/735/great-sand-hills"
       ]
     },
     "douglas-provincial-park": {
@@ -546,10 +551,12 @@
       "fields": {
         "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Manitoulin_Island_%283_of_125%29_%2847993606368%29.jpg/1280px-Manitoulin_Island_%283_of_125%29_%2847993606368%29.jpg",
         "gallery": [],
-        "photo_credit": "Hero: Xander Ashburn / CC BY 2.0 via Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Manitoulin_Island_(3_of_125)_(47993606368).jpg · Gallery: "
+        "photo_credit": "Hero: Xander Ashburn / CC BY 2.0 via Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Manitoulin_Island_(3_of_125)_(47993606368).jpg · Gallery: ",
+        "permit_note": "The Chi-Cheemaun ferry between Tobermory and South Baymouth operates seasonally. Check the operator’s current sailing schedule, reservation opening date and vehicle-booking conditions before planning your crossing; do not assume year-round sailings."
       },
       "sources": [
-        "https://commons.wikimedia.org/wiki/File:Manitoulin_Island_(3_of_125)_(47993606368).jpg"
+        "https://commons.wikimedia.org/wiki/File:Manitoulin_Island_(3_of_125)_(47993606368).jpg",
+        "https://www.ontarioferries.com"
       ]
     },
     "georgian-bay-islands-national-park": {
@@ -1593,11 +1600,12 @@
           "version": 1
         },
         "drive_minutes": null,
-        "drive_miles": null
+        "drive_miles": null,
+        "best_season": "June – September"
       },
       "sources": [
-        "https://parks.canada.ca/pn-np/bc/gwaiihaanas/info/coop",
-        "https://parks.canada.ca/pn-np/bc/gwaiihaanas"
+        "https://parks.canada.ca/pn-np/bc/gwaiihaanas",
+        "https://parks.canada.ca/pn-np/bc/gwaiihaanas/info/coop"
       ]
     },
     "saguenayst-lawrence-marine-park": {
@@ -1702,7 +1710,8 @@
           "version": 1
         },
         "drive_minutes": null,
-        "drive_miles": null
+        "drive_miles": null,
+        "tagline": "Explore 10,700 square kilometers of subarctic wilderness and ancient bouldered tundra."
       },
       "sources": [
         "https://parks.canada.ca/pn-np/nl/mealy"
@@ -2402,7 +2411,8 @@
           "version": 1
         },
         "drive_minutes": null,
-        "drive_miles": null
+        "drive_miles": null,
+        "best_season": "June – October"
       },
       "sources": [
         "https://parks.canada.ca/pn-np/ns/sable"
@@ -2708,10 +2718,12 @@
           "version": 1
         },
         "drive_minutes": null,
-        "drive_miles": null
+        "drive_miles": null,
+        "permit_note": "All visitors must travel in the park with a properly equipped and licensed guide experienced in polar bear country due to extreme danger. There are no facilities; independent travelers must be self-sufficient and contact the Naujaat office for information."
       },
       "sources": [
-        "https://parks.canada.ca/pn-np/nu/ukkusiksalik"
+        "https://parks.canada.ca/pn-np/nu/ukkusiksalik",
+        "https://parks.canada.ca/pn-np/nu/ukkusiksalik/securite-safety/ours-bears"
       ]
     },
     "vuntut-national-park": {
@@ -2917,62 +2929,60 @@
     "basin-head-provincial-park": {
       "fields": {
         "travel_plan": {
-          "arrival": "Fly into Charlottetown (YYG), pick up a rental car, and drive approximately 90 minutes east through rural farmland to the town of Souris.",
           "days": [
             {
-              "driving": "Allow 15 minutes from Souris; coastal roads are well-maintained but narrow.",
               "note": "The 'singing' effect is most prominent on dry sand found further up the beach.",
               "start": "Suggested: 9 AM from Souris",
               "stops": [
                 {
-                  "detail": "Experience the 'Singing Sands,' where high silica content creates a unique sound underfoot while walking near the tide line.",
-                  "name": "Basin Head Beach"
+                  "name": "Basin Head Beach",
+                  "detail": "Experience the 'Singing Sands,' where high silica content creates a unique sound underfoot while walking near the tide line."
                 },
                 {
-                  "detail": "Learn about the history of the inshore fishery and the coastal ecology of the Northumberland Strait.",
-                  "name": "Basin Head Fisheries Museum"
+                  "name": "Basin Head Fisheries Museum",
+                  "detail": "Learn about the history of the inshore fishery and the coastal ecology of the Northumberland Strait."
                 }
               ],
-              "title": "Singing Sands and Coastal Heritage"
+              "title": "Singing Sands and Coastal Heritage",
+              "driving": "Allow 15 minutes from Souris; coastal roads are well-maintained but narrow."
             },
             {
-              "driving": "Allow 45 minutes for a relaxed coastal loop; conditions vary with wind.",
               "note": "Check lighthouse climbing hours as they may differ from general grounds access.",
               "start": "Suggested: 10 AM from Basin Head",
               "stops": [
                 {
-                  "detail": "Visit the 'Meeting of the Tides' where the St. Lawrence and Northumberland Strait currents collide.",
-                  "name": "East Point Lighthouse"
+                  "name": "East Point Lighthouse",
+                  "detail": "Visit the 'Meeting of the Tides' where the St. Lawrence and Northumberland Strait currents collide."
                 },
                 {
-                  "detail": "Explore the eastern terminus of the Prince Edward Island Railway, now the start of the Confederation Trail.",
-                  "name": "Elmira Railway Museum"
+                  "name": "Elmira Railway Museum",
+                  "detail": "Explore the eastern terminus of the Prince Edward Island Railway, now the start of the Confederation Trail."
                 }
               ],
-              "title": "Points East Coastal Drive"
+              "title": "Points East Coastal Drive",
+              "driving": "Allow 45 minutes for a relaxed coastal loop; conditions vary with wind."
             },
             {
-              "driving": "Allow 20 minutes for local transfers between coastal park sites.",
               "note": "Swimming in 'The Run' involves strong currents; follow all posted safety signs and lifeguard instructions.",
               "start": "Suggested: 11 AM from the Museum Parking",
               "stops": [
                 {
-                  "detail": "Observe the channel that divides the beach and allows the basin to drain into the sea, a popular spot for local swimming.",
-                  "name": "The Run"
+                  "name": "The Run",
+                  "detail": "Observe the channel that divides the beach and allows the basin to drain into the sea, a popular spot for local swimming."
                 },
                 {
-                  "detail": "Short drive to nearby cliffs to see the contrasting red sandstone formations characteristic of the island.",
-                  "name": "Red Point Provincial Park"
+                  "name": "Red Point Provincial Park",
+                  "detail": "Short drive to nearby cliffs to see the contrasting red sandstone formations characteristic of the island."
                 }
               ],
-              "title": "The Run and Rural Vistas"
+              "title": "The Run and Rural Vistas",
+              "driving": "Allow 20 minutes for local transfers between coastal park sites."
             }
           ],
-          "goldenHour": "East Point Lighthouse offers an unobstructed horizon for sunrise, while the Basin Head dunes catch the soft evening light looking westward.",
           "intel": [
             {
               "kind": "access",
-              "text": "The beach and park facilities are seasonal, typically fully operational from mid-June through Labor Day. Outside of this window, washrooms and the museum may be closed.",
+              "text": "The beach and park facilities are seasonal, operating from June 5 to October 12, 2026. Outside of this window, park facilities may be closed.",
               "title": "Day Use Facilities"
             },
             {
@@ -2996,29 +3006,32 @@
               "title": "Tidal Influence"
             }
           ],
+          "arrival": "Fly into Charlottetown (YYG), pick up a rental car, and drive approximately 90 minutes east through rural farmland to the town of Souris.",
           "markers": [],
-          "reviewedAt": "2026-11-15T12:35:00Z",
           "sources": [
             {
-              "label": "PEI Provincial Parks",
-              "url": "https://www.tourismpei.com/what-to-do/beaches-parks/basin-head-provincial-park"
+              "url": "https://www.tourismpei.com/what-to-do/beaches-parks/basin-head-provincial-park",
+              "label": "PEI Provincial Parks"
             }
           ],
           "vehicle": "Standard vehicles are ideal for the paved Points East Coastal Drive; larger RVs should be mindful of smaller seaside parking lot turnarounds.",
-          "version": 1
+          "version": 1,
+          "goldenHour": "East Point Lighthouse offers an unobstructed horizon for sunrise, while the Basin Head dunes catch the soft evening light looking westward.",
+          "reviewedAt": "2026-11-15T12:35:00Z"
         }
       },
       "sources": [
-        "https://www.tourismpei.com/what-to-do/beaches-parks/basin-head-provincial-park",
-        "https://parks.canada.ca/pn-np/on/georg",
-        "https://www.newfoundlandlabrador.com/top-destinations/bonavista",
+        "https://bcparks.ca/bowron-lake-park/",
+        "https://bcparks.ca/tweedsmuir-park/",
         "https://jogginsfossilcliffs.net/",
         "https://parks.canada.ca/amnc-nmca/on/fathomfive",
         "https://parks.canada.ca/pn-np/nl/torngats",
-        "https://www.travelyukon.com/en/see-and-do/regions/southern-lakes",
-        "https://bcparks.ca/bowron-lake-park/",
-        "https://bcparks.ca/tweedsmuir-park/",
-        "https://parks.canada.ca/pn-np/pe/pei-ipe"
+        "https://parks.canada.ca/pn-np/on/georg",
+        "https://parks.canada.ca/pn-np/pe/pei-ipe",
+        "https://www.newfoundlandlabrador.com/top-destinations/bonavista",
+        "https://www.tourismpei.com/provincial-park/basin-head",
+        "https://www.tourismpei.com/what-to-do/beaches-parks/basin-head-provincial-park",
+        "https://www.travelyukon.com/en/see-and-do/regions/southern-lakes"
       ]
     },
     "bay-of-fundy": {
@@ -3464,58 +3477,56 @@
     "greenwich-dunes": {
       "fields": {
         "travel_plan": {
-          "arrival": "Collect your vehicle at Charlottetown Airport (YYG) and drive 50 minutes east. Stop in Morell for beach supplies and local seafood before checking into your accommodation near St. Peters Bay.",
           "days": [
             {
-              "driving": "Walking only once at the site; allow 2 hours for the round trip",
               "note": "Stay on the designated boardwalks to protect the extremely fragile dune ecosystem from erosion.",
               "start": "Suggested: 9:00 AM from Greenwich Interpretive Centre",
               "stops": [
                 {
-                  "detail": "Walk through old farm fields and forest before crossing the stunning floating boardwalk over Bowley Pond.",
-                  "name": "Greenwich Dunes Trail"
+                  "name": "Greenwich Dunes Trail",
+                  "detail": "Walk through old farm fields and forest before crossing the stunning floating boardwalk over Bowley Pond."
                 },
                 {
-                  "detail": "Observe the rare, shifting sand formations from the designated viewing platforms at the end of the boardwalk.",
-                  "name": "The Parabolic Dunes"
+                  "name": "The Parabolic Dunes",
+                  "detail": "Beginning October 19, 2026, road and parking lot improvement work will take place between the Greenwich Visitor Information Centre and the Greenwich Dunes Trail trailhead and is expected to continue until approximately December 2026."
                 }
               ],
-              "title": "The Floating Boardwalk and Dunes"
+              "title": "The Floating Boardwalk and Dunes",
+              "driving": "Walking only once at the site; allow 2 hours for the round trip"
             },
             {
-              "driving": "Allow 15 minutes from St. Peters Bay; conditions vary",
               "note": "Wind off the bay can be brisk; a windbreaker is recommended even on sunny days.",
               "start": "Suggested: 10:00 AM from St. Peters Bay",
               "stops": [
                 {
-                  "detail": "Engage with interactive exhibits that explain the 10,000-year history of human habitation in this region.",
-                  "name": "Greenwich Interpretive Centre"
+                  "name": "Greenwich Interpretive Centre",
+                  "detail": "Engage with interactive exhibits that explain the 10,000-year history of human habitation in this region."
                 },
                 {
-                  "detail": "A loop trail offering views of St. Peters Bay, highlighting the area's importance to Mi'kmaw culture.",
-                  "name": "Tlaqatik Trail"
+                  "name": "Tlaqatik Trail",
+                  "detail": "A loop trail offering views of St. Peters Bay, highlighting the area's importance to Mi'kmaw culture."
                 }
               ],
-              "title": "Coastal Heritage and Bays"
+              "title": "Coastal Heritage and Bays",
+              "driving": "Allow 15 minutes from St. Peters Bay; conditions vary"
             },
             {
-              "driving": "Minimal; parking is central to both the beach and trailheads",
               "note": "Beach supervision is seasonal; check the Parks Canada site for lifeguard duty dates.",
               "start": "Suggested: 11:00 AM from Greenwich Beach",
               "stops": [
                 {
-                  "detail": "Relax on the supervised swimming area characterized by fine white sand and warmer Gulf Stream waters.",
-                  "name": "Greenwich Beach"
+                  "name": "Greenwich Beach",
+                  "detail": "Relax on the supervised swimming area characterized by fine white sand and warmer Gulf Stream waters."
                 },
                 {
-                  "detail": "A short walk through the woods and fields that offers a glimpse into the Acadian history of the peninsula.",
-                  "name": "Havre Saint Pierre Trail"
+                  "name": "Havre Saint Pierre Trail",
+                  "detail": "A short walk through the woods and fields that offers a glimpse into the Acadian history of the peninsula."
                 }
               ],
-              "title": "Beach Exploration"
+              "title": "Beach Exploration",
+              "driving": "Minimal; parking is central to both the beach and trailheads"
             }
           ],
-          "goldenHour": "The viewing platform at the end of the Dunes Trail offers an unobstructed west-facing view for sunset over the Gulf of St. Lawrence.",
           "intel": [
             {
               "kind": "parking",
@@ -3543,29 +3554,31 @@
               "title": "Seasonal Facilities"
             }
           ],
+          "arrival": "Collect your vehicle at Charlottetown Airport (YYG) and drive 50 minutes east. Stop in Morell for beach supplies and local seafood before checking into your accommodation near St. Peters Bay.",
           "markers": [],
-          "reviewedAt": "2026-11-15T12:35:00Z",
           "sources": [
             {
-              "label": "Parks Canada - PEI National Park",
-              "url": "https://parks.canada.ca/pn-np/pe/pei-ipe"
+              "url": "https://parks.canada.ca/pn-np/pe/pei-ipe",
+              "label": "Parks Canada - PEI National Park"
             }
           ],
           "vehicle": "Any standard rental car is suitable for the well-maintained paved roads leading to Greenwich. No off-road capability is required.",
-          "version": 1
+          "version": 1,
+          "goldenHour": "The viewing platform at the end of the Dunes Trail offers an unobstructed west-facing view for sunset over the Gulf of St. Lawrence.",
+          "reviewedAt": "2026-11-15T12:35:00Z"
         }
       },
       "sources": [
-        "https://www.tourismpei.com/what-to-do/beaches-parks/basin-head-provincial-park",
-        "https://parks.canada.ca/pn-np/on/georg",
-        "https://www.newfoundlandlabrador.com/top-destinations/bonavista",
+        "https://bcparks.ca/bowron-lake-park/",
+        "https://bcparks.ca/tweedsmuir-park/",
         "https://jogginsfossilcliffs.net/",
         "https://parks.canada.ca/amnc-nmca/on/fathomfive",
         "https://parks.canada.ca/pn-np/nl/torngats",
-        "https://www.travelyukon.com/en/see-and-do/regions/southern-lakes",
-        "https://bcparks.ca/bowron-lake-park/",
-        "https://bcparks.ca/tweedsmuir-park/",
-        "https://parks.canada.ca/pn-np/pe/pei-ipe"
+        "https://parks.canada.ca/pn-np/on/georg",
+        "https://parks.canada.ca/pn-np/pe/pei-ipe",
+        "https://www.newfoundlandlabrador.com/top-destinations/bonavista",
+        "https://www.tourismpei.com/what-to-do/beaches-parks/basin-head-provincial-park",
+        "https://www.travelyukon.com/en/see-and-do/regions/southern-lakes"
       ]
     },
     "prince-edward-island-national-park": {
@@ -3898,58 +3911,56 @@
     "mont-saint-bruno-national-park": {
       "fields": {
         "travel_plan": {
-          "arrival": "Fly into Montreal-Trudeau (YUL), take the A-20 East, and source any needs in Longueuil or Saint-Bruno before reaching the park gates.",
           "days": [
             {
-              "driving": "Allow 15 minutes; local residential roads can be busy during school hours.",
               "note": "Swimming is strictly prohibited in all park lakes to protect the fragile ecosystem.",
               "start": "Suggested: 9 AM from Saint-Bruno-de-Montarville",
               "stops": [
                 {
-                  "detail": "Follow the easy circular path around the park's largest lake, popular for birdwatching and tranquil forest views.",
-                  "name": "Lac Seigneurial"
+                  "name": "Lac Seigneurial",
+                  "detail": "Follow the easy circular path around the park's largest lake, popular for birdwatching and tranquil forest views."
                 },
                 {
-                  "detail": "Visit this historic mill building located between the lakes, often serving as a resting point for walkers.",
-                  "name": "Le Moulin Tea House"
+                  "name": "Le Moulin Tea House",
+                  "detail": "Visit this historic mill building located between the lakes, often serving as a resting point for walkers."
                 }
               ],
-              "title": "The Lakes of the Mountain"
+              "title": "The Lakes of the Mountain",
+              "driving": "Allow 15 minutes; local residential roads can be busy during school hours."
             },
             {
-              "driving": "Minimal driving; most sights are connected by a central trail network.",
               "note": "Trail conditions can be muddy in the spring; stick to the gravel paths during thaws.",
               "start": "Suggested: 10 AM from the Discovery Centre",
               "stops": [
                 {
-                  "detail": "See the apple trees that reflect the region's agricultural heritage, particularly vibrant during the spring blossom.",
-                  "name": "The Historic Orchard"
+                  "name": "The Historic Orchard",
+                  "detail": "See the apple trees that reflect the region's agricultural heritage, particularly vibrant during the spring blossom."
                 },
                 {
-                  "detail": "Follow the documented intermediate 8.8-kilometre loop from the discovery and visitors centre.",
-                  "name": "Le Montérégien"
+                  "name": "Le Montérégien",
+                  "detail": "The park features a 27 km network of trails surrounding its five lakes, including paths for hiking and discovery."
                 }
               ],
-              "title": "Orchards and Elevated Views"
+              "title": "Orchards and Elevated Views",
+              "driving": "Minimal driving; most sights are connected by a central trail network."
             },
             {
-              "driving": "Allow 10 minutes from the town center; parking is concentrated at the main gate.",
               "note": "In winter, specific trails are reserved exclusively for cross-country skiing or fat-biking.",
               "start": "Suggested: 9 AM from the Main Entrance",
               "stops": [
                 {
-                  "detail": "A quieter secondary lake surrounded by birch trees, ideal for seeing local wildlife away from the main crowds.",
-                  "name": "Lac des Bouleaux"
+                  "name": "Lac des Bouleaux",
+                  "detail": "A quieter secondary lake surrounded by birch trees, ideal for seeing local wildlife away from the main crowds."
                 },
                 {
-                  "detail": "A forested loop named after the Great Horned Owl, showcasing the dense canopy of this urban forest.",
-                  "name": "Grand-Duc Trail"
+                  "name": "Grand-Duc Trail",
+                  "detail": "A forested loop named after the Great Horned Owl, showcasing the dense canopy of this urban forest."
                 }
               ],
-              "title": "Winter Trails and Forest Solitude"
+              "title": "Winter Trails and Forest Solitude",
+              "driving": "Allow 10 minutes from the town center; parking is concentrated at the main gate."
             }
           ],
-          "goldenHour": "The shores of Lac Seigneurial offer soft light reflections, though the park closes shortly after sunset.",
           "intel": [
             {
               "kind": "parking",
@@ -3977,21 +3988,24 @@
               "title": "Strict Environmental Rules"
             }
           ],
+          "arrival": "Fly into Montreal-Trudeau (YUL), take the A-20 East, and source any needs in Longueuil or Saint-Bruno before reaching the park gates.",
           "markers": [],
-          "reviewedAt": "2026-11-15T12:44:00Z",
           "sources": [
             {
-              "label": "Sépaq Mont-Saint-Bruno",
-              "url": "https://www.sepaq.com/pq/msb/"
+              "url": "https://www.sepaq.com/pq/msb/",
+              "label": "Sépaq Mont-Saint-Bruno"
             }
           ],
           "vehicle": "Any standard vehicle is fine; bike racks are highly recommended as the park is a popular cycling hub from the city.",
-          "version": 1
+          "version": 1,
+          "goldenHour": "The shores of Lac Seigneurial offer soft light reflections, though the park closes shortly after sunset.",
+          "reviewedAt": "2026-11-15T12:44:00Z"
         }
       },
       "sources": [
+        "https://www.sepaq.com/animaux/annexes/endroits-autorises-mont-saint-bruno.dot",
         "https://www.sepaq.com/pq/msb/annexes/randonnee_pedestre.dot",
-        "https://www.sepaq.com/animaux/annexes/endroits-autorises-mont-saint-bruno.dot"
+        "https://www.sepaq.com/pq/msb/index.dot"
       ]
     },
     "harrison-lake": {
@@ -4110,58 +4124,56 @@
     "riding-mountain-national-park": {
       "fields": {
         "travel_plan": {
-          "arrival": "Pick up supplies in Brandon or Dauphin before entering the park; check into the Wasagaming Visitor Centre for trail conditions.",
           "days": [
             {
-              "driving": "Allow 1-2 hours for the loop to Lake Audy; road conditions vary by recent rainfall.",
               "note": "Stay inside your vehicle when viewing bison to ensure safety and herd health.",
               "start": "Suggested: 9 AM from Wasagaming",
               "stops": [
                 {
-                  "detail": "Drive through the enclosure to observe a managed herd of plains bison in their natural prairie habitat.",
-                  "name": "Lake Audy Bison Paddock"
+                  "name": "Lake Audy Bison Paddock",
+                  "detail": "Drive through the enclosure to observe a managed herd of plains bison in their natural prairie habitat."
                 },
                 {
-                  "detail": "Take in the views from the edge of the Manitoba Escarpment, where the highland forest meets the agricultural plains.",
-                  "name": "Mount Agassiz"
+                  "name": "Mount Agassiz",
+                  "detail": "Take in the views from the edge of the Manitoba Escarpment, where the highland forest meets the agricultural plains."
                 }
               ],
-              "title": "Manitoba Escarpment and Bison Vistas"
+              "title": "Manitoba Escarpment and Bison Vistas",
+              "driving": "Allow 1-2 hours for the loop to Lake Audy; road conditions vary by recent rainfall."
             },
             {
-              "driving": "Local townsite travel is easily managed by foot or bicycle; allow 15 minutes for drives to nearby trailheads.",
               "note": "Watercraft must undergo mandatory inspection for invasive species at the designated station.",
               "start": "Suggested: 10 AM from the Visitor Centre",
               "stops": [
                 {
-                  "detail": "Explore the historic log buildings and manicured gardens that characterize this 1930s-era resort village.",
-                  "name": "Wasagaming Townsite"
+                  "name": "Wasagaming Townsite",
+                  "detail": "Explore the historic log buildings and manicured gardens that characterize this 1930s-era resort village."
                 },
                 {
-                  "detail": "Walk the boardwalk to view diverse birdlife and aquatic plants in a sheltered wetland environment.",
-                  "name": "Ominitik Marsh"
+                  "name": "Ominitik Marsh",
+                  "detail": "Visit various wetland environments like Ominitik Marsh to view diverse birdlife and aquatic plants in a sheltered environment."
                 }
               ],
-              "title": "Clear Lake Heritage and Waterways"
+              "title": "Clear Lake Heritage and Waterways",
+              "driving": "Local townsite travel is easily managed by foot or bicycle; allow 15 minutes for drives to nearby trailheads."
             },
             {
-              "driving": "Allow 45 minutes to 1 hour to reach the northern park sectors from Wasagaming.",
               "note": "Be bear aware in these denser forest areas; carry bear spray and make noise.",
               "start": "Suggested: 8:30 AM from the North Gate",
               "stops": [
                 {
-                  "detail": "Parks Canada lists a Moon Lake Trail closure dated November 6, 2026. Check the current bulletin and do not enter closed trails.",
-                  "name": "Moon Lake"
+                  "name": "Moon Lake",
+                  "detail": "Parks Canada lists a Moon Lake Trail closure dated November 6, 2026. Check the current bulletin and do not enter closed trails."
                 },
                 {
-                  "detail": "Use the current townsite map for an accessible walk; Baldy Mountain belongs to Duck Mountain and is not a local Riding Mountain stop.",
-                  "name": "Wasagaming townsite"
+                  "name": "Wasagaming townsite",
+                  "detail": "Use the current townsite map for an accessible walk; Baldy Mountain belongs to Duck Mountain and is not a local Riding Mountain stop."
                 }
               ],
-              "title": "Boreal Forest and Backcountry Trails"
+              "title": "Boreal Forest and Backcountry Trails",
+              "driving": "Allow 45 minutes to 1 hour to reach the northern park sectors from Wasagaming."
             }
           ],
-          "goldenHour": "The Wasagaming Pier offers clear sunset views over Clear Lake, particularly in late summer.",
           "intel": [
             {
               "kind": "parking",
@@ -4189,19 +4201,24 @@
               "title": "Highway 10 Connectivity"
             }
           ],
+          "arrival": "Pick up supplies in Brandon or Dauphin before entering the park; check into the Wasagaming Visitor Centre for trail conditions.",
           "markers": [],
-          "reviewedAt": "2026-11-15T12:44:00Z",
           "sources": [
             {
-              "label": "Parks Canada Riding Mountain",
-              "url": "https://parks.canada.ca/pn-np/mb/riding"
+              "url": "https://parks.canada.ca/pn-np/mb/riding",
+              "label": "Parks Canada Riding Mountain"
             }
           ],
           "vehicle": "Passenger cars are suitable for all major roads; RVs should check length limits for the Lake Audy loop.",
-          "version": 1
-        }
+          "version": 1,
+          "goldenHour": "The Wasagaming Pier offers clear sunset views over Clear Lake, particularly in late summer.",
+          "reviewedAt": "2026-11-15T12:44:00Z"
+        },
+        "permit_note": "Check the current Parks Canada admission and pass requirements for your visit date. Wasagaming campsites can be reserved through the Parks Canada Reservation System; accessible campsites have separate booking instructions. Consult the official campground page for seasonal service changes."
       },
       "sources": [
+        "https://parks.canada.ca/pn-np/mb/riding",
+        "https://parks.canada.ca/pn-np/mb/riding/activ/camping",
         "https://www.parks.canada.ca/pn-np/mb/riding/securite-safety/bulletins?wbdisable=true"
       ]
     },
@@ -7408,6 +7425,1399 @@
         "https://www.albertaparks.ca/media/3856198/writing-on-stone-brochure.pdf",
         "https://www.lethbridgeairport.ca/",
         "https://www.lethbridgeairport.ca/news/the-faq-on-yql"
+      ]
+    },
+    "bon-echo-provincial-park": {
+      "fields": {
+        "travel_plan": {
+          "days": [
+            {
+              "note": "The Mugwump Ferry operates seasonally; check the park gate for current daily schedules.",
+              "start": "Suggested: 9 AM from Mazinaw Lake Waterfront",
+              "stops": [
+                {
+                  "name": "Mazinaw Rock Pictographs",
+                  "detail": "View over 260 Indigenous pictographs along the massive cliff face, best observed by canoe or kayak to see the detailed red ochre markings."
+                },
+                {
+                  "name": "Cliff Top Trail",
+                  "detail": "Cross the Narrows by ferry to reach this trail, which ascends to the summit of the 100-meter high rock for expansive views of the Mazinaw Lake system."
+                }
+              ],
+              "title": "Mazinaw Rock and Cliffside History",
+              "driving": "Minimal; allow 30 minutes for local park road transitions; conditions vary."
+            },
+            {
+              "note": "Inland trails can be rugged; allow extra time for uneven terrain and possible moisture.",
+              "start": "Suggested: 8:30 AM from Cloyne Gateway",
+              "stops": [
+                {
+                  "name": "Abinger Forest Access",
+                  "detail": "Explore the mixed-wood forests of the Canadian Shield, which provide habitat for a variety of migratory songbirds and local wildlife."
+                },
+                {
+                  "name": "Joeperry Lake",
+                  "detail": "Visit this quieter inland lake for a different perspective of the park's topography and potential sightings of nesting loons."
+                }
+              ],
+              "title": "Shield Forests and Inland Waters",
+              "driving": "Allow 1 hour for internal park access and forest roads; conditions vary."
+            },
+            {
+              "note": "Check the official operating calendar as dates vary by service; in 2026, general park operations run from May 8 to December 13.",
+              "start": "Suggested: 10 AM from Greystones Gift & Heritage Centre",
+              "stops": [
+                {
+                  "name": "Old Walt Whitman Inscription",
+                  "detail": "Locate the massive 'Old Walt' dedication carved directly into the granite face of Mazinaw Rock near the shoreline."
+                },
+                {
+                  "name": "South Beach",
+                  "detail": "Conclude the visit at the sandy shoreline, offering a wide perspective of the rock's scale against the deep waters of the lake."
+                }
+              ],
+              "title": "Heritage Landmarks and Shoreline Vistas",
+              "driving": "Allow 20 minutes between park points; conditions vary."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "access",
+              "text": "Access to the Cliff Top Trail requires a seasonal ferry crossing or a personal watercraft. Confirm the ferry's operational status at the Greystones building.",
+              "title": "Ferry and Water Crossing"
+            },
+            {
+              "kind": "fuel",
+              "text": "Limited fueling services are available in Cloyne and Kaladar. It is advisable to fill tanks in larger hubs like Perth or Kaladar before entering the park perimeter.",
+              "title": "Regional Supply Points"
+            },
+            {
+              "kind": "parking",
+              "text": "The main parking area for day-use visitors near the Mazinaw Lake narrows fills quickly on July and August weekends. Arrive early or utilize secondary lots if directed by staff.",
+              "title": "Main Gate Congestion"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular reception is generally stable near the main gate and Highway 41 but weakens significantly in the interior campsites and back trails. Do not rely on digital navigation for remote park sections.",
+              "title": "Connectivity Limits"
+            },
+            {
+              "kind": "timing",
+              "text": "The park typically transitions to limited services after the second Monday in October. Check official schedules for the closing of washrooms and heritage sites.",
+              "title": "Seasonal Operation"
+            }
+          ],
+          "arrival": "Pick up rental at Ottawa (YOW) and stock up on groceries in Perth or Kaladar before checking in at the Mazinaw Lake gatehouse.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://www.ontarioparks.ca/park/bonecho",
+              "label": "Ontario Parks"
+            }
+          ],
+          "vehicle": "Standard passenger cars are suitable for the main park roads, while larger RVs should check length restrictions for specific campgrounds.",
+          "version": 1,
+          "goldenHour": "Mazinaw Rock overlooks, with timing varying by summer solstice and autumn equinox.",
+          "reviewedAt": "2026-11-15T11:23:20.173535+00:00"
+        }
+      },
+      "sources": [
+        "https://www.ontarioparks.ca/park/bonecho"
+      ]
+    },
+    "hautes-gorges-de-la-riviere-malbaie-national-park": {
+      "fields": {
+        "travel_plan": {
+          "days": [
+            {
+              "note": "Park shuttles typically operate during peak summer to manage traffic in the narrow valley.",
+              "start": "Suggested: 8:30 AM from Saint-Aimé-des-Lacs",
+              "stops": [
+                {
+                  "name": "Le Riverain Trail",
+                  "detail": "Ascend the valley walls for an expansive view of the Malbaie River winding through the steep glacial gorge."
+                },
+                {
+                  "name": "Le Bateau-Mouche",
+                  "detail": "Board a guided river cruise to experience the scale of the highest rock faces in Eastern Canada from the water."
+                }
+              ],
+              "title": "Glacial Valleys and River Vistas",
+              "driving": "Allow 45 minutes to reach the visitor center; conditions vary by weather."
+            },
+            {
+              "note": "Note that the Acropole-des-Draveurs trail closes for the season on October 13, 2026.",
+              "start": "Suggested: 8 AM from Le Draveur Visitor Centre",
+              "stops": [
+                {
+                  "name": "Acropole des Draveurs Trail",
+                  "detail": "Tackle the park's signature strenuous climb to reach three distinct summits overlooking the winding Malbaie River."
+                },
+                {
+                  "name": "Côté-Passage Sector",
+                  "detail": "Explore the lower valley floor near the river banks for a recovery walk following the mountain descent."
+                }
+              ],
+              "title": "The Acropole des Draveurs Ascent",
+              "driving": "Local park shuttle transit or walking between trailheads; allow 1 hour for transitions."
+            },
+            {
+              "note": "Water levels fluctuate; rental availability is subject to seasonal river flow conditions.",
+              "start": "Suggested: 9 AM from Équerre Rental Point",
+              "stops": [
+                {
+                  "name": "Malbaie River Canoe Route",
+                  "detail": "Navigate the calm sections of the river to view the steep granite cliffs from a silent, low-angle perspective."
+                },
+                {
+                  "name": "Le Belvédère Lookout",
+                  "detail": "Visit Le Belvédère or hike to the spectacular 45-meter high La-Chute-du-Ruisseau-Blanc waterfall located in the Équerre sector."
+                }
+              ],
+              "title": "Paddling the Malbaie Hinterland",
+              "driving": "Allow 1 hour for the return drive to La Malbaie; rural roads may have logging activity."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Primary parking is located at Le Draveur, but lots often reach capacity by mid-morning in July. Utilize the mandatory park shuttle if directed by staff at the Saint-Aimé-des-Lacs entrance gate.",
+              "title": "Visitor Centre Hubs"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular reception is extremely limited or non-existent once you descend into the gorge. Download topographic maps and SÉPAQ guides before leaving Saint-Aimé-des-Lacs.",
+              "title": "Deep Valley Connectivity"
+            },
+            {
+              "kind": "fuel",
+              "text": "Final fuel and full-service grocery stores are located in La Malbaie and Saint-Aimé-des-Lacs. There are no refueling stations within the park boundaries or on the immediate access road.",
+              "title": "Last Service Points"
+            },
+            {
+              "kind": "timing",
+              "text": "The Acropole des Draveurs typically has a cut-off time in the early afternoon to ensure hikers return before dark. Verify the specific daily cut-off at the visitor centre upon arrival.",
+              "title": "Trail Closures"
+            },
+            {
+              "kind": "access",
+              "text": "The final approach to the park involves well-maintained gravel roads that can be dusty or muddy. Drive with caution as heavy machinery occasionally uses these shared access routes.",
+              "title": "Gravel Road Sections"
+            }
+          ],
+          "arrival": "Pick up your rental at Quebec City Airport and stop in La Malbaie for regional supplies before the final 30-minute drive to the park entrance.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://www.sepaq.com/pq/hgo/",
+              "label": "SÉPAQ Hautes-Gorges"
+            }
+          ],
+          "vehicle": "Standard vehicles are suitable for the main roads, but check rental contracts for restrictions on unpaved park access roads.",
+          "version": 1,
+          "goldenHour": "Le Riverain lookout provides exceptional light over the gorge during the late summer afternoon.",
+          "reviewedAt": "2026-11-15T11:26:33.142396+00:00"
+        }
+      },
+      "sources": [
+        "https://www.sepaq.com/pq/hgo/"
+      ]
+    },
+    "hecla-grindstone-provincial-park": {
+      "fields": {
+        "travel_plan": {
+          "days": [
+            {
+              "note": "The village is a living community; please respect private property while viewing historical sites.",
+              "start": "Suggested: 10 AM from Hecla Village",
+              "stops": [
+                {
+                  "name": "Hecla Historic Village",
+                  "detail": "Explore the restored 19th-century buildings, including the schoolhouse and church, established by Icelandic settlers."
+                },
+                {
+                  "name": "Gull Harbour Marina",
+                  "detail": "Walk the docks of this sheltered harbor, which serves as the primary hub for boating on Lake Winnipeg's northern basin."
+                }
+              ],
+              "title": "Icelandic Heritage and Village Life",
+              "driving": "Allow 30–45 minutes for local park roads; speeds are reduced for wildlife safety."
+            },
+            {
+              "note": "Early morning offers the best chance for wildlife sightings before temperatures rise.",
+              "start": "Suggested: 8 AM from Grassy Narrows",
+              "stops": [
+                {
+                  "name": "Grassy Narrows Marsh",
+                  "detail": "Traverse the boardwalks and viewing towers to spot pelicans, terns, and occasionally moose in the wetlands."
+                },
+                {
+                  "name": "Hecla Island Causeway",
+                  "detail": "Stop at the pull-outs along the causeway for a panoramic view of the marsh and Lake Winnipeg."
+                }
+              ],
+              "title": "Marshlands and Avian Observation",
+              "driving": "Allow 1 hour for exploring the marsh access roads; gravel surfaces may be uneven."
+            },
+            {
+              "note": "The cliffs are fragile; stay on marked paths to prevent erosion and for personal safety.",
+              "start": "Suggested: 9 AM from the North Point Trailhead",
+              "stops": [
+                {
+                  "name": "North Point Lighthouse",
+                  "detail": "The Lighthouse Trail is currently closed as the Canada Coast Guard is replacing the operational lighthouse."
+                },
+                {
+                  "name": "Sunset Beach",
+                  "detail": "Enjoy the limestone cobble shores and clear water on the quieter western side of the island."
+                }
+              ],
+              "title": "North Point Cliffs and Lighthouses",
+              "driving": "Allow 45 minutes; the road to North Point is well-maintained but ends in a trailhead parking lot."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Primary parking is found at Hecla Village, Gull Harbour, and the North Point trailhead. On weekends, the Gull Harbour area can become busy with boat trailers, so consider early arrival.",
+              "title": "Trailhead Capacity"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular reception is generally stable near Hecla Village and the resort area. However, signal strength can be intermittent on the North Point trails and in the Grassy Narrows marshland.",
+              "title": "Island Coverage"
+            },
+            {
+              "kind": "fuel",
+              "text": "Fuel is available in Riverton before crossing the causeway. There are no traditional gas stations on the island itself, though limited marine fuel may be found at the marina.",
+              "title": "Last Stops"
+            },
+            {
+              "kind": "timing",
+              "text": "The park remains open in winter for cross-country skiing, but many heritage buildings and the marina operate only from late May through September.",
+              "title": "Seasonal Shifts"
+            },
+            {
+              "kind": "access",
+              "text": "Hecla Island is connected to the mainland by a paved causeway on Highway 8. High winds on Lake Winnipeg can occasionally cause spray or debris on the road; drive with caution.",
+              "title": "Causeway Transit"
+            }
+          ],
+          "arrival": "Pick up a rental at Winnipeg (YWG) and drive north through Gimli; buy groceries in Gimli or Riverton as the island has limited convenience options.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/central/hecla.html",
+              "label": "Manitoba Parks - Hecla/Grindstone"
+            }
+          ],
+          "vehicle": "A standard passenger car is perfectly suitable for the paved roads of Hecla, though an SUV provides a smoother ride on the Grindstone gravel side-trips.",
+          "version": 1,
+          "goldenHour": "The North Point limestone cliffs offer a striking white backdrop for the orange hues of a Lake Winnipeg sunset.",
+          "reviewedAt": "2026-11-15T12:09:24.407308+00:00"
+        }
+      },
+      "sources": [
+        "https://www.gov.mb.ca/sd/parks/recreation-and-activities/trail_conditions/index.html"
+      ]
+    },
+    "kawartha-highlands-provincial-park": {
+      "fields": {
+        "travel_plan": {
+          "days": [
+            {
+              "note": "Wind conditions on larger lakes can significantly impact paddle times; check local forecasts.",
+              "start": "Suggested: 9 AM from Apsley",
+              "stops": [
+                {
+                  "name": "Anstruther Lake Access",
+                  "detail": "The primary launch point for exploring the park's central interior, providing access to sprawling granite shorelines."
+                },
+                {
+                  "name": "Rathbun Lake Portage",
+                  "detail": "A manageable transition for paddlers looking to reach the quieter, more secluded northern reaches of the park."
+                }
+              ],
+              "title": "Anstruther Lake Waters",
+              "driving": "Allow 30-45 minutes to access points; road conditions vary by season."
+            },
+            {
+              "note": "Paddling is a primary mode of travel; visitors can also experience the outdoors through a short hike.",
+              "start": "Suggested: 8:30 AM from Anstruther Lake Road",
+              "stops": [
+                {
+                  "name": "Coon Lake Access Point",
+                  "detail": "A quieter alternative for those seeking shorter paddling loops and rugged shoreline views."
+                },
+                {
+                  "name": "Bottle Lake Route",
+                  "detail": "A scenic corridor known for its classic Canadian Shield topography and dense forest canopy."
+                }
+              ],
+              "title": "Coon Lake Exploration",
+              "driving": "Allow 20 minutes from Apsley; gravel roads may be narrow."
+            },
+            {
+              "note": "Water levels in river sections fluctuate; check with Ontario Parks regarding spring run-off or autumn lows.",
+              "start": "Suggested: 10 AM from Catchacoma Lake",
+              "stops": [
+                {
+                  "name": "Mississagua Lake Launch",
+                  "detail": "A gateway to the interconnected water systems that define the western park boundary."
+                },
+                {
+                  "name": "Gold Lake Passage",
+                  "detail": "Navigate through narrow channels that showcase the park's significant biological diversity."
+                }
+              ],
+              "title": "Mississagua River Corridors",
+              "driving": "Allow 1 hour for local transfers; access involves forest service roads."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Parking is limited to designated gravel lots at official access points like Long Lake. Spaces are not guaranteed during peak summer weekends; avoid parking on narrow shoulders to prevent towing.",
+              "title": "Access Point Constraints"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular reception is highly unreliable once you move away from Highway 28. Plan for a complete lack of data services in the interior lake basins.",
+              "title": "Backcountry Communication"
+            },
+            {
+              "kind": "fuel",
+              "text": "Apsley serves as the final reliable location for fuel and basic provisions before entering the park interior. There are no services available once you depart the main regional roads.",
+              "title": "Apsley Supply Hub"
+            },
+            {
+              "kind": "timing",
+              "text": "Suggested departure times allow for manageable portages before midday winds rise. Early starts are recommended for those traversing multiple lake chains.",
+              "title": "Paddling Pace"
+            },
+            {
+              "kind": "access",
+              "text": "Most sites are inaccessible by foot; a canoe or kayak is mandatory for backcountry travel. Ensure your vessel meets local safety requirements before launching.",
+              "title": "Water Entry Only"
+            }
+          ],
+          "arrival": "Collect supplies in Peterborough or Apsley before heading to your specific lake access point. Check in with the digital permit system prior to arrival as on-site staff presence is minimal.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://www.ontarioparks.com/park/kawarthahighlands",
+              "label": "Ontario Parks"
+            }
+          ],
+          "vehicle": "Standard vehicles are generally sufficient for the main access roads, though high-clearance is beneficial for secondary forest routes.",
+          "version": 1,
+          "goldenHour": "Sunset over Long Lake offers classic Shield silhouettes, depending on cloud cover and seasonal smoke.",
+          "reviewedAt": "2026-11-15T11:27:29.036947+00:00"
+        }
+      },
+      "sources": [
+        "https://www.ontarioparks.com/park/kawarthahighlands"
+      ]
+    },
+    "kluane-national-park-and-reserve": {
+      "fields": {
+        "travel_plan": {
+          "days": [
+            {
+              "note": "Mountain weather is highly unpredictable; ensure you have checked the daily forecast at the visitor center.",
+              "start": "Suggested: 8 AM from Haines Junction",
+              "stops": [
+                {
+                  "name": "Da Kų Culture Centre",
+                  "detail": "Begin at this First Nations cultural hub to understand the Dän Keyi (Our People’s Land) heritage before heading into the park."
+                },
+                {
+                  "name": "Kathleen Lake",
+                  "detail": "Walk the boardwalk or the Kokanee Trail to view the dramatic King’s Throne cirque reflected in the glacial waters."
+                }
+              ],
+              "title": "Glacial Vistas and High Alpine Lakes",
+              "driving": "Allow 2 hours for local transit and stops; conditions vary by weather."
+            },
+            {
+              "note": "Bear activity is high in this corridor; check for specific trail closures at the station.",
+              "start": "Suggested: 9 AM from Silver City",
+              "stops": [
+                {
+                  "name": "Tachäl Dhäl (Sheep Mountain)",
+                  "detail": "Use the spotting scopes at the Tachäl Dhäl Visitor Centre to view Dall sheep on the steep slopes above Kluane Lake."
+                },
+                {
+                  "name": "Soldiers Summit",
+                  "detail": "Hike the short historical trail commemorating the opening of the Alaska Highway with expansive views of the Slims River Valley."
+                }
+              ],
+              "title": "Icefield Ranges and Kaskawulsh Views",
+              "driving": "Allow 3 hours for regional exploration; gravel surfaces may increase travel time."
+            },
+            {
+              "note": "Service stations are infrequent between major settlements; monitor fuel levels before leaving gateway towns.",
+              "start": "Suggested: 8 AM from Destruction Bay",
+              "stops": [
+                {
+                  "name": "Donjek River Overlook",
+                  "detail": "Observe the massive braided river system where glacial silt creates a shifting, prehistoric landscape."
+                },
+                {
+                  "name": "Kluane Lake North Shore",
+                  "detail": "Visit the largest lake in the Yukon to see how the changing water levels impact the local ecology and Highway 1 logistics."
+                }
+              ],
+              "title": "Northern St. Elias Exploration",
+              "driving": "Allow 4 hours for the return leg toward Whitehorse; construction is common in summer."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Parking at Kathleen Lake and Tachäl Dhäl is limited during mid-day in peak summer. Arrive early or late to ensure a space without obstructing the narrow access roads.",
+              "title": "Trailhead Capacity"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular service is essentially non-existent once you leave the Haines Junction or Destruction Bay town limits. Download offline maps and notify others of your itinerary before departing.",
+              "title": "Connectivity Limits"
+            },
+            {
+              "kind": "fuel",
+              "text": "Reliable fuel is found in Haines Junction, but availability in smaller outposts like Silver City can be seasonal. Always top up before entering the park’s deeper wilderness corridors.",
+              "title": "Strategic Refueling"
+            },
+            {
+              "kind": "timing",
+              "text": "Summer in the Yukon offers nearly 20 hours of light, which can lead to overexertion. Pace activities to ensure you return to shelter before the cooler evening temperatures set in.",
+              "title": "Daylight Windows"
+            },
+            {
+              "kind": "access",
+              "text": "Unpaved access roads like the Alsek trail can be restricted by spring thaw or heavy rain. Check the Parks Canada trail conditions report for the latest vehicle restrictions.",
+              "title": "Seasonal Road Opening"
+            }
+          ],
+          "arrival": "Upon landing at YXY, collect a rental vehicle in Whitehorse and procure all specialized camping fuel and groceries before the 2-hour drive west to Haines Junction.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://parks.canada.ca/pn-np/yt/kluane",
+              "label": "Parks Canada Kluane"
+            }
+          ],
+          "vehicle": "A high-clearance 4WD is recommended for reaching remote trailheads; check rental agreements for restrictions on gravel roads like the Aishihik.",
+          "version": 1,
+          "goldenHour": "Tachäl Dhäl (Sheep Mountain) at sunset, though the angle changes significantly by late August.",
+          "reviewedAt": "2026-11-15T12:09:59.801597+00:00"
+        }
+      },
+      "sources": [
+        "https://parks.canada.ca/pn-np/yt/kluane"
+      ]
+    },
+    "l-anse-aux-meadows": {
+      "fields": {
+        "travel_plan": {
+          "days": [
+            {
+              "note": "Coastal winds can be high; the site is primarily outdoors with limited indoor shelter between buildings.",
+              "start": "Suggested: 9 AM from St. Anthony",
+              "stops": [
+                {
+                  "name": "Norse Reconstrution Buildings",
+                  "detail": "Step inside recreated sod houses to experience the daily life of Leif Erikson’s 11th-century expedition."
+                },
+                {
+                  "name": "The Archaeological Site",
+                  "detail": "View the original excavated remains of the Norse settlement, now a UNESCO World Heritage site."
+                }
+              ],
+              "title": "Viking Archaeology and Sod Huts",
+              "driving": "Allow 45 minutes from St. Anthony; the road is paved but narrow in sections."
+            },
+            {
+              "note": "Iceberg sightings are highly seasonal and dependent on ocean currents; check local trackers.",
+              "start": "Suggested: 9 AM from Griquet",
+              "stops": [
+                {
+                  "name": "Birchy Noddle Hill Trail",
+                  "detail": "Climb the boardwalk for a panoramic view of the site, the surrounding barrens, and the Sacred Bay."
+                },
+                {
+                  "name": "Skinners Cove",
+                  "detail": "Walk the rugged coastline to look for icebergs drifting south during the early summer months."
+                }
+              ],
+              "title": "Coastal Barrens and Iceberg Viewing",
+              "driving": "Allow 15-20 minutes from local accommodations; watch for moose on the roads at dawn and dusk."
+            },
+            {
+              "note": "Norstead is a separate attraction from the National Historic Site; separate admission may apply.",
+              "start": "Suggested: 10 AM from the Visitor Centre",
+              "stops": [
+                {
+                  "name": "Visitor Centre Exhibits",
+                  "detail": "Examine authentic Norse artifacts recovered from the site and watch the introductory film."
+                },
+                {
+                  "name": "Norstead",
+                  "detail": "Visit the nearby non-government merchant outpost recreation to see a full-scale Viking ship replica."
+                }
+              ],
+              "title": "Regional Maritime History",
+              "driving": "Allow 10 minutes between the Historic Site and Norstead; local transfers are short."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "The main parking area at the Visitor Centre is sufficient for most daily visitors but can feel crowded during tour bus arrivals. Arriving at opening or late afternoon provides a quieter experience.",
+              "title": "Visitor Lot"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular service is weak and unreliable throughout the Great Northern Peninsula. Download all maps and travel documents before leaving the Deer Lake or St. Anthony airport areas.",
+              "title": "Remote Connectivity"
+            },
+            {
+              "kind": "fuel",
+              "text": "St. Anthony is the primary hub for fuel, groceries, and mechanical services. Ensure your tank is sufficient for the return trip as options in Griquet are very limited.",
+              "title": "Great Northern Fuel"
+            },
+            {
+              "kind": "timing",
+              "text": "The site typically operates from June through the beginning of October. Outside of these months, most facilities, including the visitor centre and reconstructions, are closed to the public.",
+              "title": "Seasonal Window"
+            },
+            {
+              "kind": "access",
+              "text": "The site features gravel paths and wooden boardwalks. While designed for accessibility, the coastal winds and damp conditions can make outdoor movement challenging for some.",
+              "title": "Walking Surfaces"
+            }
+          ],
+          "arrival": "Fly into St. Anthony (YAY), pick up a rental car, and head to St. Anthony for supplies. It is a 30-40 minute drive north to the historic site area.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://parks.canada.ca/lhn-nhs/nl/meadows",
+              "label": "Parks Canada L'Anse aux Meadows"
+            }
+          ],
+          "vehicle": "A standard car is suitable for the Viking Trail (Highway 430); check rental contracts for restrictions on gravel side roads.",
+          "version": 1,
+          "goldenHour": "Birchy Noddle Hill for sunset views over the Labrador Sea, subject to clear weather.",
+          "reviewedAt": "2026-11-15T11:27:48.353540+00:00"
+        },
+        "best_season": "June – Early October"
+      },
+      "sources": [
+        "https://parks.canada.ca/lhn-nhs/nl/meadows"
+      ]
+    },
+    "la-mauricie-national-park": {
+      "fields": {
+        "travel_plan": {
+          "days": [
+            {
+              "note": "The Promenade Parkway is the single main artery; expect slow speeds due to steep grades and cycling traffic.",
+              "start": "Suggested: 9 AM from Saint-Jean-des-Piles",
+              "stops": [
+                {
+                  "name": "Le Passage Lookout",
+                  "detail": "Pause at this elevated platform for a panoramic view of the narrowest section of Lake Wapizagonke carved by glacial activity."
+                },
+                {
+                  "name": "Shewenegan Picnic Area",
+                  "detail": "Access the cascades or rent a canoe to explore the southern reaches of the park's interconnected lake system."
+                }
+              ],
+              "title": "Waterways and Winding Ridges",
+              "driving": "Allow 1–2 hours for the Parkway; conditions vary with seasonal traffic."
+            },
+            {
+              "note": "Morning starts are suggested to secure space at the more popular picnic and launch sites.",
+              "start": "Suggested: 8:30 AM from Shawinigan",
+              "stops": [
+                {
+                  "name": "Les Cascades Trail",
+                  "detail": "Walk the accessible boardwalks surrounding these gentle falls, a popular spot for observing the local Laurentian shield geology."
+                },
+                {
+                  "name": "Lac À la Pêche",
+                  "detail": "Visit the eastern sector for a quieter atmosphere and access to a network of multi-use forest trails."
+                }
+              ],
+              "title": "Ancient Forests and Cascades",
+              "driving": "Allow 45 minutes from the gateway; conditions vary."
+            },
+            {
+              "note": "Verify the status of the Saint-Mathieu entrance as it may have different seasonal operating hours than Saint-Jean-des-Piles.",
+              "start": "Suggested: 9 AM from Saint-Mathieu-du-Parc",
+              "stops": [
+                {
+                  "name": "Le Belvédère de l'Île-aux-Pins",
+                  "detail": "A short but steep trek leads to an iconic view of the pine-studded islands within Lake Wapizagonke."
+                },
+                {
+                  "name": "Rivière à la Pêche Service Centre",
+                  "detail": "Utilize the interpretive displays to understand the park's transition from a logging territory to a protected conservation area."
+                }
+              ],
+              "title": "The Northern Wilderness Interface",
+              "driving": "Allow 1 hour for interior transit; conditions vary."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Parking at popular trailheads like Les Cascades fills quickly during summer holidays and autumn leaf-peeping weekends. Have an alternative stop planned in case your primary choice is at capacity.",
+              "title": "Lot Capacity"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular reception is highly unreliable or non-existent once you move past the main gatehouses into the park interior. Download offline maps and official park guides before departing from Shawinigan.",
+              "title": "Connectivity Limits"
+            },
+            {
+              "kind": "fuel",
+              "text": "There are no fuel stations located within the park boundaries. Ensure your tank is sufficient for a 120km round trip before leaving Shawinigan or Saint-Jean-des-Piles.",
+              "title": "Gateway Refueling"
+            },
+            {
+              "kind": "timing",
+              "text": "The Parkway typically closes to vehicles during the winter months. For example, it is partially closed from October 13, 2026, to May 27, 2027. Check the official Parks Canada site for exact dates.",
+              "title": "Seasonal Road Closures"
+            },
+            {
+              "kind": "access",
+              "text": "The park has two primary entrances; Saint-Jean-des-Piles is better for the scenic drive, while Saint-Mathieu offers quicker access to specific recreation areas. Confirm which gate is open during shoulder seasons.",
+              "title": "Entrance Selection"
+            }
+          ],
+          "arrival": "Pick up rental at YQB and stop in Shawinigan for groceries and supplies before proceeding to the Saint-Jean-des-Piles entrance for check-in.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://parks.canada.ca/pn-np/qc/mauricie",
+              "label": "Parks Canada - La Mauricie"
+            }
+          ],
+          "vehicle": "Standard vehicles are suitable for the Parkway; RVs should check length restrictions for certain secondary parking areas.",
+          "version": 1,
+          "goldenHour": "Le Passage Lookout offers expansive western views, though timing for the best light varies significantly between summer and autumn.",
+          "reviewedAt": "2026-11-15T11:28:18.487490+00:00"
+        }
+      },
+      "sources": [
+        "https://parks.canada.ca/pn-np/qc/mauricie"
+      ]
+    },
+    "nopiming-provincial-park": {
+      "fields": {
+        "travel_plan": {
+          "days": [
+            {
+              "note": "Roads 314 and 315 are gravel and can be rough after heavy rain; check local conditions.",
+              "start": "Suggested: 9 AM from Lac du Bonnet",
+              "stops": [
+                {
+                  "name": "Tulabi Falls",
+                  "detail": "View the scenic waterfalls and utilize the accessible docks for a morning paddle on Tulabi Lake."
+                },
+                {
+                  "name": "Bird Lake",
+                  "detail": "Launch here to explore the transition from the boreal forest to the rugged granite of the Canadian Shield."
+                }
+              ],
+              "title": "Shield Lakes and Cascades",
+              "driving": "Allow 1–1.5 hours on gravel roads; conditions vary"
+            },
+            {
+              "note": "Portage trails may be muddy; allow extra time for gear transfers between lakes.",
+              "start": "Suggested: 8 AM from the Bird River boat launch",
+              "stops": [
+                {
+                  "name": "Bird River Canoe Route",
+                  "detail": "Paddle through winding river sections and small portages that highlight the park's namesake 'Entrance to the Wilderness'."
+                },
+                {
+                  "name": "Elbow Lake",
+                  "detail": "Reach this quiet backcountry destination known for its clear water and rocky islands."
+                }
+              ],
+              "title": "Boreal Backcountry Paddling",
+              "driving": "Local water travel; conditions vary"
+            },
+            {
+              "note": "Watch for wildlife, including moose and woodland caribou, which are frequently spotted along the roadside.",
+              "start": "Suggested: 10 AM from Black Lake",
+              "stops": [
+                {
+                  "name": "Walking Drum Trail",
+                  "detail": "Note: Several trails in the Black Lake area, including the Walking Drum (Ancient Mountains) and Fire of '83 trails, remain closed for recovery."
+                },
+                {
+                  "name": "Manigotagan River",
+                  "detail": "Visit the upper reaches of this historic river corridor, a popular route for experienced wilderness paddlers."
+                }
+              ],
+              "title": "Mining Heritage and High Ridges",
+              "driving": "Allow 45 minutes between trailheads; conditions vary"
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Designated parking is available at Tulabi Falls and the Black Lake boat launch. Note that Black Lake Campground is closed for the 2026 season due to wildfire damage.",
+              "title": "Trailhead Logistics"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular service is unreliable once you travel north of Lac du Bonnet and is non-existent in most backcountry areas. Download offline maps before entering the park as digital navigation will fail.",
+              "title": "Intermittent Coverage"
+            },
+            {
+              "kind": "fuel",
+              "text": "Lac du Bonnet is the primary hub for fuel, ice, and full groceries. Limited fuel may be found at seasonal resorts within the park, but availability is never guaranteed.",
+              "title": "Last Service Points"
+            },
+            {
+              "kind": "timing",
+              "text": "September offers fewer insects and vibrant fall colors, but be aware that some campground services may begin to scale back after the Labor Day weekend.",
+              "title": "Autumn Accessibility"
+            },
+            {
+              "kind": "access",
+              "text": "The park is accessed via PR 314 and PR 315, which are largely unpaved. These roads are subject to washboard conditions and dust; slow down for oncoming industrial traffic.",
+              "title": "Road Quality"
+            }
+          ],
+          "arrival": "Pickup supplies in Lac du Bonnet, ensure your Manitoba Parks vehicle pass is active, and proceed via Highway 315 to the Tulabi Falls area for initial check-in.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/eastern/nopiming.html",
+              "label": "Manitoba Parks - Nopiming"
+            }
+          ],
+          "vehicle": "Standard cars can manage the gravel roads, but an SUV provides better clearance for potholes. RVs should check for size restrictions at specific campsites.",
+          "version": 1,
+          "goldenHour": "The sunset over Tulabi Lake from the cliff-top viewing platforms, particularly in late summer.",
+          "reviewedAt": "2026-11-15T12:10:32.174046+00:00"
+        }
+      },
+      "sources": [
+        "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/eastern/nopiming.html",
+        "https://www.gov.mb.ca/sd/pubs/parks-protected-spaces/maps/seasonal_maps/black_lake_seasonal.pdf"
+      ]
+    },
+    "oka-national-park": {
+      "fields": {
+        "travel_plan": {
+          "days": [
+            {
+              "note": "Beach access is heavily weather-dependent and subject to water quality testing.",
+              "start": "Suggested: 8:30 AM from Montreal",
+              "stops": [
+                {
+                  "name": "Grande Pointe Beach",
+                  "detail": "Enjoy the supervised swimming areas and the expansive sandy shoreline of the lake."
+                },
+                {
+                  "name": "La Grande Baie Trail",
+                  "detail": "Walk the boardwalk through marshlands to observe the local flora and wetland bird species."
+                }
+              ],
+              "title": "Lac des Deux Montagnes Waters",
+              "driving": "Allow 1 hour from the city; traffic on the Galipeault Bridge can vary."
+            },
+            {
+              "note": "The Calvaire trail involves moderate inclines; allow extra time for the descent.",
+              "start": "Suggested: 9 AM from Oka Village",
+              "stops": [
+                {
+                  "name": "Calvaire d'Oka",
+                  "detail": "Hike the historic trail featuring four oratories and three chapels built in the 18th century."
+                },
+                {
+                  "name": "Le Sommet Lookout",
+                  "detail": "Gain a panoramic view of the Lac des Deux Montagnes and the Adirondacks in the distance."
+                }
+              ],
+              "title": "Summit Views and History",
+              "driving": "Allow 15 minutes between park sectors; walking between trails is common."
+            },
+            {
+              "note": "Fatbike and ski rentals are seasonal and managed at the Le Littoral service center.",
+              "start": "Suggested: 10 AM from Saint-Eustache",
+              "stops": [
+                {
+                  "name": "L'Écureuil Trail",
+                  "detail": "Cycle or snowshoe through the mature forest depending on the season."
+                },
+                {
+                  "name": "Park Interpretation Centre",
+                  "detail": "Review the ecological history of the region and the transformation of the sandy terraces."
+                }
+              ],
+              "title": "Winter Trails or Autumn Foliage",
+              "driving": "Allow 20 to 30 minutes; winter road clearing is frequent but check conditions."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "The main beach lot is large but fills quickly on warm weekends; arrive early to secure a spot near the water. Additional parking is available at the Calvaire trailhead for hikers.",
+              "title": "Beach Sector Capacity"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular signal is strong throughout most of the park due to its proximity to Montreal. Some depressions in the Calvaire d'Oka trail may experience minor signal drops.",
+              "title": "Network Reliability"
+            },
+            {
+              "kind": "fuel",
+              "text": "Fuel and groceries are readily available in the village of Oka or nearby Saint-Eustache. There are no fueling stations within the park boundaries.",
+              "title": "Local Services"
+            },
+            {
+              "kind": "timing",
+              "text": "Supervised swimming typically begins at 9:30 AM; check the Sépaq website for specific seasonal lifeguard schedules. The park remains open for hiking until sunset.",
+              "title": "Peak Beach Hours"
+            },
+            {
+              "kind": "access",
+              "text": "The park is connected to the Route Verte, making it highly accessible for long-distance cyclists. Check for shared-path etiquette between walkers and bikers on the shoreline trails.",
+              "title": "Cyclist Connectivity"
+            }
+          ],
+          "arrival": "Drive from YUL airport via Autoroute 640 West; stop in Saint-Eustache for major grocery runs before entering the park.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://www.sepaq.com/pq/oka/",
+              "label": "Sépaq - Parc national d'Oka"
+            }
+          ],
+          "vehicle": "Standard cars are sufficient; the park has designated areas for RVs in the camping sectors.",
+          "version": 1,
+          "goldenHour": "The Le Sommet viewpoint offers the best vantage point for watching the sun set over the lake.",
+          "reviewedAt": "2026-11-15T11:30:14.231603+00:00"
+        }
+      },
+      "sources": [
+        "https://www.sepaq.com/pq/oka/index.dot"
+      ]
+    },
+    "point-pelee-national-park": {
+      "fields": {
+        "permit_note": "Point Pelee is temporarily closed to visitors from November 12 to 23, 2026. General park admission fees apply at the gate. Accommodation within the park is limited to oTENTik units in Camp Henry which require advance reservation through the Parks Canada booking system; verify all seasonal hours on the official site."
+      },
+      "sources": [
+        "https://parks.canada.ca/pn-np/on/pelee"
+      ]
+    },
+    "presqu-ile-provincial-park": {
+      "fields": {
+        "travel_plan": {
+          "days": [
+            {
+              "note": "The boardwalk may be subject to seasonal flooding; check for closures at the gatehouse.",
+              "start": "Suggested: 8:30 AM from Brighton",
+              "stops": [
+                {
+                  "name": "Presqu'ile Point Lighthouse",
+                  "detail": "Visit the second oldest operating lighthouse in Ontario, a landmark located on the north shore of Lake Ontario."
+                },
+                {
+                  "name": "Marsh Boardwalk",
+                  "detail": "Walk the 1-kilometer loop through the largest protected marsh on the north shore of Lake Ontario to observe local bird species."
+                }
+              ],
+              "title": "Lighthouse Point and Marshland Discovery",
+              "driving": "Allow 20–40 minutes for local park roads; conditions vary with seasonal traffic."
+            },
+            {
+              "note": "Access to specific shoreline sections may be restricted during piping plover nesting seasons.",
+              "start": "Suggested: 9 AM from Park Gatehouse",
+              "stops": [
+                {
+                  "name": "Jobes' Woods Trail",
+                  "detail": "Explore an old-growth maple and beech forest that showcases the peninsula's diverse inland ecology."
+                },
+                {
+                  "name": "Owen Point Trail",
+                  "detail": "Walk the shoreline to observe shorebird migration patterns on the sandbars, particularly during the spring and fall."
+                }
+              ],
+              "title": "Panhandle and North Shore Shorelines",
+              "driving": "Internal travel under 15 minutes; allow extra time for pedestrian priority zones."
+            },
+            {
+              "note": "Beach water quality is monitored frequently; check official postings before swimming.",
+              "start": "Suggested: 10 AM from Day Use Area 1",
+              "stops": [
+                {
+                  "name": "Poplar Campground Beach",
+                  "detail": "Relax along the expansive sandy shoreline that characterizes the southern edge of the peninsula."
+                },
+                {
+                  "name": "High Bluff Island Lookout",
+                  "detail": "View the offshore islands from the mainland trail to understand the formation of this unique tombolo geomorphology."
+                }
+              ],
+              "title": "Beachfront and High Bluff Vistas",
+              "driving": "Minimal driving within the park loop; conditions vary by beach crowd levels."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "The largest lots are located near the main beaches, but these serve both day-use and campers. Arriving early during summer weekends is suggested as the park may close to new vehicles once capacity is reached.",
+              "title": "Beachfront Capacity"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular reception is generally stable throughout the developed areas of the park due to proximity to Brighton. Some signal degradation may occur near the more remote marsh boardwalks.",
+              "title": "Peninsula Connectivity"
+            },
+            {
+              "kind": "fuel",
+              "text": "Complete all refueling and grocery shopping in Brighton before crossing the causeway into the park. There are no fuel stations located within the provincial park boundaries.",
+              "title": "Brighton Services"
+            },
+            {
+              "kind": "timing",
+              "text": "Spring waterfowl and fall shorebird migrations are the park's busiest ecological events. Suggested visit times for birding are often early morning when activity is highest.",
+              "title": "Migration Windows"
+            },
+            {
+              "kind": "access",
+              "text": "Access is via a single road from the mainland; expect slow-moving traffic on holiday weekends. Pedestrians and cyclists frequently share the main artery, requiring cautious driving.",
+              "title": "Causeway Entry"
+            }
+          ],
+          "arrival": "Pick up rental at Billy Bishop Airport, then head east on Highway 401 toward Brighton for supplies before entering the park.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://www.ontarioparks.com/park/presquile",
+              "label": "Ontario Parks"
+            }
+          ],
+          "vehicle": "Standard sedans are sufficient for all paved park roads; larger RVs should verify campsite dimensions in advance.",
+          "version": 1,
+          "goldenHour": "Presqu'ile Point Lighthouse for sunset; vistas depend on seasonal cloud cover over the lake.",
+          "reviewedAt": "2026-11-15T11:31:29.905654+00:00"
+        }
+      },
+      "sources": [
+        "https://www.ontarioparks.com/park/presquile"
+      ]
+    },
+    "sandbanks-provincial-park": {
+      "fields": {
+        "best_season": "April – October"
+      },
+      "sources": [
+        "https://www.ontarioparks.com/park/sandbanks"
+      ]
+    },
+    "taylor-head-provincial-park": {
+      "fields": {
+        "travel_plan": {
+          "days": [
+            {
+              "note": "The coastal weather can change rapidly; fog is common even when the interior is sunny.",
+              "start": "Suggested: 9 AM from Halifax",
+              "stops": [
+                {
+                  "name": "Pyche Cove Beach",
+                  "detail": "Walk the white sands of this secluded cove, known for its turquoise waters and granite outcrops."
+                },
+                {
+                  "name": "Headland Trail",
+                  "detail": "Hike the rugged loop through the coastal barrens to see the exposed geological features of the Eastern Shore."
+                }
+              ],
+              "title": "Granite Barrens and Sand Beaches",
+              "driving": "Allow 1 hour 45 minutes from Halifax via Highway 7; conditions vary."
+            },
+            {
+              "note": "Black flies and mosquitoes can be prevalent in the wooded sections during June and July.",
+              "start": "Suggested: 9:30 AM from Sheet Harbour",
+              "stops": [
+                {
+                  "name": "Spry Bay",
+                  "detail": "Observe the unique drumlin islands from the shoreline lookoffs before entering the park."
+                },
+                {
+                  "name": "Bob Bluff Trail",
+                  "detail": "Take this shorter path for a high-angle view of the rugged coastline and offshore islands."
+                }
+              ],
+              "title": "Eastern Shore Coastal Exploration",
+              "driving": "Suggested local drive from Sheet Harbour; check your mapped route and current road conditions. The official park address is 20140 Highway 7."
+            },
+            {
+              "note": "Check local tide tables before visiting Bull Beach to safely explore the rocky flats.",
+              "start": "Suggested: 10 AM from Park Gate",
+              "stops": [
+                {
+                  "name": "Bull Beach",
+                  "detail": "Explore the rocky intertidal zones to find local marine life during low tide."
+                },
+                {
+                  "name": "Taylor Head Interpretive Panels",
+                  "detail": "Read about the cultural history of the former settlement and the unique flora of the barrens."
+                }
+              ],
+              "title": "Tidal Pools and Marine Life",
+              "driving": "Internal park roads are short; allow 10 minutes between trailheads."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "The main lot near Psyche Cove can fill on warm summer weekends. Arrive before noon to secure a spot close to the primary trailhead and beach facilities.",
+              "title": "Beach Access Lots"
+            },
+            {
+              "kind": "signal",
+              "text": "Cell service is intermittent along Highway 7 and often drops within the park's forested trails. Plan your route and download maps before leaving Sheet Harbour.",
+              "title": "Eastern Shore Connectivity"
+            },
+            {
+              "kind": "fuel",
+              "text": "Sheet Harbour is the nearest hub for fuel, ice, and groceries. There are no retail services or potable water stations within the park itself.",
+              "title": "Sheet Harbour Services"
+            },
+            {
+              "kind": "timing",
+              "text": "The park gate is typically locked outside of the summer season (November to May). During this time, the park is accessible only by foot from the highway entrance.",
+              "title": "Seasonal Gate Closures"
+            },
+            {
+              "kind": "access",
+              "text": "Pit toilets are available seasonally at the trailheads. There are no indoor facilities or equipment rentals available within this wilderness-oriented park.",
+              "title": "Facility Availability"
+            }
+          ],
+          "arrival": "Pick up rental at Halifax Stanfield (YHZ), take Highway 102 to 107, then merge onto the Marine Drive (Highway 7).",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://parks.novascotia.ca/park/taylor-head",
+              "label": "Nova Scotia Provincial Parks"
+            }
+          ],
+          "vehicle": "A standard vehicle is suitable for the paved and gravel access roads; avoid parking on soft shoulders.",
+          "version": 1,
+          "goldenHour": "The Headland Trail offers 360-degree views of the Atlantic, ideal for viewing the sunrise over the eastern horizon.",
+          "reviewedAt": "2026-11-15T11:32:38.361956+00:00"
+        }
+      },
+      "sources": [
+        "https://parks.novascotia.ca/sites/default/files/TaylorHeadTrail.pdf"
+      ]
+    },
+    "thousand-islands-national-park": {
+      "fields": {
+        "travel_plan": {
+          "days": [
+            {
+              "note": "Black legged ticks, potential carriers of Lyme disease and Human Granulocytic Anaplasmosis, are common in Thousand Islands National Park. Check the 'Ticks and Your Health' page for protection tips.",
+              "start": "Suggested: 9 AM from Mallorytown Landing",
+              "stops": [
+                {
+                  "name": "Mallorytown Landing",
+                  "detail": "Visit the park's primary mainland hub to view the aquarium and interpretative exhibits about the St. Lawrence ecosystem."
+                },
+                {
+                  "name": "Jones Creek",
+                  "detail": "Hike the trail network through various wetland habitats and look for local wildlife from the boardwalk overlooks."
+                }
+              ],
+              "title": "River Views and Shoreline Exploration",
+              "driving": "Allow 20 minutes for mainland travel; conditions vary."
+            },
+            {
+              "note": "Verify current weather and river currents before setting out in small craft like kayaks or canoes.",
+              "start": "Suggested: 8:30 AM from Gananoque",
+              "stops": [
+                {
+                  "name": "Beaurivage Island",
+                  "detail": "Accessible only by boat, this island offers scenic picnic spots and a glimpse into the historic 'Gilded Age' cottage culture."
+                },
+                {
+                  "name": "McDonald Island",
+                  "detail": "Explore the rugged granite shorelines and pitch-pine ridges that define the Frontenac Arch Biosphere."
+                }
+              ],
+              "title": "Island Hopping and River History",
+              "driving": "Local water transfer only; allow 30-60 minutes for boat transit."
+            },
+            {
+              "note": "Landon Bay is popular for birdwatching; bring binoculars for spotting ospreys or bald eagles near the river.",
+              "start": "Suggested: 10 AM from Rockport",
+              "stops": [
+                {
+                  "name": "Landon Bay",
+                  "detail": "Hike to the 'Lookout' trail for one of the most famous views of the St. Lawrence River and the surrounding archipelago."
+                },
+                {
+                  "name": "Heaths Point",
+                  "detail": "Observe the unique geology where the Canadian Shield crosses the river into the United States."
+                }
+              ],
+              "title": "Panoramic Perspectives and Rockport",
+              "driving": "Allow 15 minutes between mainland points; conditions vary."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Parking at Mallorytown Landing is organized but fills quickly on holiday weekends. Smaller trailheads like Jones Creek have limited roadside capacity.",
+              "title": "Mainland Hubs"
+            },
+            {
+              "kind": "signal",
+              "text": "Due to proximity to the US border, mobile devices often ping international towers. Check your data plan to avoid accidental roaming charges while on the river.",
+              "title": "Border Roaming"
+            },
+            {
+              "kind": "fuel",
+              "text": "Roadside fuel is available in Gananoque and Brockville. Boat fuel is only available at private marinas in gateway towns, not on the national park islands.",
+              "title": "Marine and Road Supplies"
+            },
+            {
+              "kind": "timing",
+              "text": "Island docks are typically installed in late May and removed by mid-October. Off-season island access is possible but limited by river ice and weather.",
+              "title": "Water Access Window"
+            },
+            {
+              "kind": "access",
+              "text": "The majority of the park is inaccessible by car. Visitors without a personal vessel should book commercial cruises or rentals in Gananoque or Rockport.",
+              "title": "Boat Dependent Navigation"
+            }
+          ],
+          "arrival": "Arrive at Ottawa (YOW), rent a car, and drive south to the Thousand Islands Parkway. Check into accommodation in Gananoque for easy marina access.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://parks.canada.ca/pn-np/on/1000",
+              "label": "Parks Canada: Thousand Islands"
+            }
+          ],
+          "vehicle": "A car is necessary for mainland trails, but a boat (private or rental) is the only way to experience the island-based park features.",
+          "version": 1,
+          "goldenHour": "The Landon Bay Lookout provides an elevated southern perspective ideal for watching the river light change during late summer afternoons.",
+          "reviewedAt": "2026-11-15T11:33:07.160471+00:00"
+        }
+      },
+      "sources": [
+        "https://parks.canada.ca/pn-np/on/1000/activ/randon-hike"
+      ]
+    },
+    "wood-buffalo-national-park": {
+      "fields": {
+        "travel_plan": {
+          "days": [
+            {
+              "note": "The access road to the Salt Plains is steep and can become impassable for non-4WD vehicles during heavy rain.",
+              "start": "Suggested: 9 AM from Fort Smith",
+              "stops": [
+                {
+                  "name": "Salt Plains Overlook",
+                  "detail": "View the vast prehistoric salt flats from an elevated platform where saline springs create unique mineral mounds."
+                },
+                {
+                  "name": "Salt River Day Use Area",
+                  "detail": "Hike the Karstland Trail to observe sinkholes and the unique topography created by dissolving gypsum."
+                }
+              ],
+              "title": "Salt Plains and Boreal Horizons",
+              "driving": "Allow 2 to 3 hours for gravel road transit; conditions vary."
+            },
+            {
+              "note": "Bison have the right of way; remain in your vehicle if they are on or near the roadway.",
+              "start": "Suggested: 8:30 AM from Pine Lake",
+              "stops": [
+                {
+                  "name": "Pine Lake",
+                  "detail": "Swim or paddle in a series of turquoise-hued sinkhole lakes fed by underground springs."
+                },
+                {
+                  "name": "Lane Lake Trail",
+                  "detail": "Trek through jack pine forest to reach a secluded chain of lakes known for birdwatching and bison sightings."
+                }
+              ],
+              "title": "Aquatic Karst and Pine Forests",
+              "driving": "Allow 1 hour for local area exploration; conditions vary."
+            },
+            {
+              "note": "Aurora visibility is highly dependent on solar activity and clear skies; typically visible after mid-August.",
+              "start": "Suggested: 10 AM from Fort Smith",
+              "stops": [
+                {
+                  "name": "Thebacha Trail",
+                  "detail": "Follow the Slave River to see the massive 'Pelicans on the Rapids' at the northernmost nesting site for the species."
+                },
+                {
+                  "name": "Dark Sky Preserve Observation",
+                  "detail": "Visit designated sites in the world's largest Dark Sky Preserve to witness the aurora borealis during late summer."
+                }
+              ],
+              "title": "Northern Rivers and Dark Skies",
+              "driving": "Allow 1.5 hours for river-side access; conditions vary."
+            }
+          ],
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Parking at Salt River and Pine Lake is unstructured but rarely fills to capacity. Ensure vehicles do not block emergency access routes or narrow gravel turns.",
+              "title": "Remote Lot Etiquette"
+            },
+            {
+              "kind": "signal",
+              "text": "Outside of the Fort Smith townsite, cellular service is extremely limited, though a public internet link exists on NWT Highway 5. It is still recommended to carry a satellite communication device for remote areas.",
+              "title": "Total Connectivity Loss"
+            },
+            {
+              "kind": "fuel",
+              "text": "Fort Smith is the only reliable source for fuel and groceries within the immediate park vicinity. If arriving from Fort McMurray, the winter road is seasonal and the summer drive is an extensive multi-day detour.",
+              "title": "Last Chance Supplies"
+            },
+            {
+              "kind": "timing",
+              "text": "Bison and whooping crane sightings are seasonal; the cranes are highly protected and nesting areas are strictly off-limits. Consult the visitor center for current wildlife safety protocols.",
+              "title": "Wildlife Migration"
+            },
+            {
+              "kind": "access",
+              "text": "Highway 5 and the Pine Lake Road are predominantly gravel. High-velocity dust and flying stones are common; maintain significant following distances.",
+              "title": "Gravel Road Caution"
+            }
+          ],
+          "arrival": "Pick up 4WD rental at Fort Smith Airport; verify all camping supplies in town as no retailers exist within park boundaries.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://parks.canada.ca/pn-np/nt/woodbuffalo/visit",
+              "label": "Parks Canada - Wood Buffalo"
+            }
+          ],
+          "vehicle": "A high-clearance 4WD vehicle is strongly recommended for the Salt Plains access; check rental contracts specifically for Highway 5 restrictions.",
+          "version": 1,
+          "goldenHour": "Salt Plains Overlook for sunset, offering a panoramic view of the minerals reflecting late-day light.",
+          "reviewedAt": "2026-11-15T12:12:59.921269+00:00"
+        },
+        "permit_note": "Entry to the park is generally open, but specific activities like backcountry camping require permits from the Visitor Centre in Fort Smith. Pine Lake Campground offers both reservable sites (via the Parks Canada Reservation System) and first-come, first-served sites."
+      },
+      "sources": [
+        "https://parks.canada.ca/pn-np/nt/woodbuffalo/Securite_Safety/bulletins",
+        "https://parks.canada.ca/pn-np/nt/woodbuffalo/activ/camp"
+      ]
+    },
+    "grands-jardins-national-park": {
+      "fields": {
+        "permit_source_url": "https://www.sepaq.com/pq/grj/",
+        "travel_plan": {
+          "days": [
+            {
+              "note": "Mountain weather is unpredictable; even in summer, visitors are advised to bring warm clothes for summits.",
+              "start": "Suggested: 8:00 AM from Baie-Saint-Paul",
+              "stops": [
+                {
+                  "name": "Mont-du-Lac-des-Cygnes",
+                  "detail": "Hike the park's most famous trail to a summit offering 360-degree views of the Charlevoix meteor crater."
+                },
+                {
+                  "name": "Le Pioui Trail",
+                  "detail": "Traverse alpine ridges and lichen-covered landscapes that resemble the far northern Arctic tundra."
+                }
+              ],
+              "title": "High Altitude Tundra Peaks",
+              "driving": "Allow 60–90 minutes; conditions vary on mountain roads"
+            },
+            {
+              "note": "The interior park roads are partially gravel; drive slowly to avoid flying stones and protect the undercarriage.",
+              "start": "Suggested: 9:00 AM from the Arthabaska Service Centre",
+              "stops": [
+                {
+                  "name": "Lac Arthabaska",
+                  "detail": "Rent a canoe or kayak to explore the quiet waters of this subarctic lake surrounded by dense spruce forest."
+                },
+                {
+                  "name": "La Tourbière Trail",
+                  "detail": "Walk the boardwalks over an ancient peat bog to see unique carnivorous plants and resilient flora."
+                }
+              ],
+              "title": "Lakes and Boreal Forests",
+              "driving": "Allow 40 minutes within the park; conditions vary by gravel road status"
+            },
+            {
+              "note": "Black flies and mosquitoes are prevalent in the forest areas during June and July.",
+              "start": "Suggested: 9:30 AM from the Thomas-Fortin Reception",
+              "stops": [
+                {
+                  "name": "Rivière Malbaie",
+                  "detail": "Observe the crystal-clear waters where fly-fishing for brook trout is a long-standing regional tradition."
+                },
+                {
+                  "name": "Le Boréal Trail",
+                  "detail": "A gentle forest walk highlighting the transition between the mixed forest and the northern taiga."
+                }
+              ],
+              "title": "Valleys and Flowing Waters",
+              "driving": "Allow 30 minutes; conditions vary with local traffic"
+            }
+          ],
+          "intel": [
+            {
+              "kind": "timing",
+              "text": "The main park road (Route 381) is paved, but secondary access roads often open late in the spring due to snow. Check SEPAQ for official opening dates of the Arthabaska sector.",
+              "title": "Seasonal Road Access"
+            },
+            {
+              "kind": "fuel",
+              "text": "There is no fuel available inside the park. Ensure your tank is full before leaving Baie-Saint-Paul or Saint-Urbain.",
+              "title": "Last Service Stations"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular signal is non-existent in most of the park's valleys and trails. Emergency phones are located at the main visitor centers.",
+              "title": "Limited Connectivity"
+            },
+            {
+              "kind": "parking",
+              "text": "Purchase the required daily access through Sépaq and check the park’s current access and parking conditions before departure. An advance purchase should not be treated as a guarantee that every trail or sector will be accessible.",
+              "title": "Trailhead Capacity"
+            },
+            {
+              "kind": "access",
+              "text": "The SEPAQ daily access fee is mandatory for all visitors. Physical passes are rarely sold on-site at smaller trailheads, so digital confirmation is essential.",
+              "title": "Entry Permits"
+            }
+          ],
+          "arrival": "Pick up your rental car at Quebec City (YQB) or Saguenay (YBG). Stop in Baie-Saint-Paul for regional provisions and outdoor supplies before driving the 30 minutes north to the park gates.",
+          "markers": [],
+          "sources": [
+            {
+              "url": "https://www.sepaq.com/pq/gja/index.dot?language_id=1",
+              "label": "SEPAQ - Parc national des Grands-Jardins"
+            }
+          ],
+          "vehicle": "A standard vehicle is suitable for Route 381; however, an SUV is recommended for better clearance on secondary gravel roads leading to remote trailheads.",
+          "version": 1,
+          "goldenHour": "The summit of Mont-du-Lac-des-Cygnes provides an expansive view of the St. Lawrence River during the early evening light.",
+          "reviewedAt": "2026-11-15T11:25:48.703994+00:00"
+        }
+      },
+      "sources": [
+        "https://www.sepaq.com/pq/grj/"
       ]
     }
   },

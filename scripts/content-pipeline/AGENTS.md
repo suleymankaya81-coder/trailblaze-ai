@@ -9,3 +9,5 @@
 - collect-route-stops.py stores canonical daily routing identities and a missing-coordinate report; only exact reviewed source-marker matches receive coordinates. Why: translated labels and broad park-centre matches must not change navigation.
 - Canada places come from scripts/content-pipeline/canada/catalog.json (wave, authority, road/fly-in); CA regions stay draft until a place in them is published. Why: one reviewed source and no empty province pages.
 - Canadian corrections and rejected photo selections live in canada/review.json and override generation retries. Why: verified corrections must not revert to the original generated mistakes.
+- All future content writers require an approved source-packets/<slug>.json through source_evidence.py; official evidence governs operational claims and absent evidence holds generation. Why: source links and model recollection alone cannot establish facts.
+- Offline bulk audits reuse fetched source documents, record per-claim evidence gaps and apply only textual corrections with exact supplied quotes plus guarded database readback. Why: avoid repeated agent research and false completeness claims.

@@ -1,0 +1,470 @@
+{
+  "checks": [
+    {
+      "path": "/tagline",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source mentions the park contains more than 150 lakes and features dense forests.",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie",
+      "quote": "Both accessible and wild, the park offers adventures for everyone... in the heart of an inviting source of wilderness and Mauricie culture."
+    },
+    {
+      "path": "/best_season",
+      "status": "supported",
+      "reason": "The source covers four-season availability including summer, fall, and specific winter activities (skiing).",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie",
+      "quote": "Both accessible and wild, the park offers adventures for everyone, to the rhythm of the four seasons."
+    },
+    {
+      "path": "/gateway_cities",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source identifies the park entrances by Saint-Jean-des-Piles and Saint-Mathieu-du-Parc.",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie",
+      "quote": "Saint-Jean-des-Piles entrance... Saint-Mathieu entrance"
+    },
+    {
+      "path": "/permit_level",
+      "status": "suggestion",
+      "reason": "The level 'moderate' is a subjective classification, though reservations and fees are required as noted in source.",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/visit/tarifs-fees",
+      "quote": "Daily visitor fees... make a reservation for campsites, accommodations and more."
+    },
+    {
+      "path": "/permit_note",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source confirms daily entry fees, separate reservation requirements for camping and oTENTiks via the Parks Canada system.",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/visit/tarifs-fees",
+      "quote": "The daily fee can be paid at the automated pay stations... Online Reservation, Modification or Cancellation - Camping and accommodation $11.50"
+    },
+    {
+      "path": "/nearest_airport_code",
+      "status": "unverified",
+      "reason": "The provided sources do not mention airport codes or specific nearby airports.",
+      "url": ""
+    },
+    {
+      "path": "/travel_plan/days/0/note",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source refers to the Parkway winding across the park and mentions cycling as an activity.",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie",
+      "quote": "The Parkway that winds across the park... cycle or drive through the park"
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/detail",
+      "status": "supported",
+      "reason": "The source lists 'Le Passage Lookout' as a monitored area/bulletin item.",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/securite-safety/bulletins",
+      "quote": "Closure of Le Passage Lookout area"
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source confirms the Shewenegan Picnic Area provides access to the Cascades and Wapizagonke Lake.",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/activ/camping",
+      "quote": "Shewenegan Picnic Area are closed to the public until further notice... access the Cascades and basin 2 of Wapizagonke Lake."
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source confirms Les Cascades as a location within the park.",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/activ/camping",
+      "quote": "how to access the Cascades"
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/name",
+      "status": "supported",
+      "reason": "Lac à la Pêche is mentioned in the context of the Rivière à la Pêche sector.",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/visit/tarifs-fees",
+      "quote": "Rivière à la Pêche Service Centre"
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/name",
+      "status": "supported",
+      "reason": "The Rivière à la Pêche Service Centre is explicitly mentioned.",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/visit/tarifs-fees",
+      "quote": "Rivière à la Pêche Service Centre"
+    },
+    {
+      "path": "/travel_plan/intel/0/text",
+      "status": "supported",
+      "reason": "The source includes a dedicated link for 'Entrances and parking lots status' indicating demand management.",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie",
+      "quote": "Entrances and parking lots status"
+    },
+    {
+      "path": "/travel_plan/intel/1/text",
+      "status": "unverified",
+      "reason": "The sources provide safety guidelines but do not explicitly detail cellular reliability or download instructions for offline maps.",
+      "url": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/text",
+      "status": "unverified",
+      "reason": "The sources do not list fuel facilities or distance-based refueling advice.",
+      "url": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/text",
+      "status": "supported",
+      "reason": "The source explicitly states the Parkway closes seasonally and mentions the winter cross-country ski network.",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie",
+      "quote": "The Parkway that winds across the park is partially closed to visitors from October 13, 2026 to May 27, 2027."
+    },
+    {
+      "path": "/travel_plan/intel/4/text",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source lists Saint-Jean-des-Piles and Saint-Mathieu as the two primary entrances.",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie",
+      "quote": "Saint-Jean-des-Piles entrance... Saint-Mathieu entrance"
+    },
+    {
+      "path": "/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/state",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/region",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/2",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/2",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/recommended_duration",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_headline",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_source_url",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/nearest_airport_name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lat",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lng",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/access_type",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/arrival",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/vehicle",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/goldenHour",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    }
+  ],
+  "corrections": [
+    {
+      "path": "/destination/intel/3/text",
+      "value": "The Parkway typically closes to vehicles during the winter months. For example, it is partially closed from October 13, 2026, to May 27, 2027. Check the official Parks Canada site for exact dates.",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie",
+      "quote": "The Parkway that winds across the park is partially closed to visitors from October 13, 2026 to May 27, 2027.",
+      "reason": "The prompt date is 2026-11-15, which falls within the documented closure period in the source."
+    }
+  ],
+  "summary": "The plan accurately reflects the park's primary entrances, major landmarks (Le Passage, Shewenegan, Cascades), and seasonal Parkway closures. Several logistical details regarding cellular signal and refueling are not found in the official source but are presented as local intel. Airport and specific geologic descriptions of glacial carving are unverified against the provided text.",
+  "slug": "la-mauricie-national-park",
+  "status": "audited",
+  "source_errors": [],
+  "applied_fields": [
+    "travel_plan"
+  ],
+  "coverage": {
+    "leaf_count": 63,
+    "explicitly_classified": 63,
+    "method": "Source audit plus explicit missing-evidence register; not factual certification"
+  }
+}

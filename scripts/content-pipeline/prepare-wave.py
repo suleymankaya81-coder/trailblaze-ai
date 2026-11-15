@@ -9,6 +9,7 @@ Next: apply-wave.py, then generate/insert-landing-pages.py, then publish-wave.py
 """
 import csv, html, json, math, os, re, subprocess, sys, time, urllib.parse
 import requests
+from source_evidence import load_packet, GROUNDING
 
 OUT = "/tmp/wave"
 os.makedirs(OUT, exist_ok=True)
@@ -333,9 +334,7 @@ def route(a, lat, lng):
     return {"minutes": round(rt["duration"] / 60), "miles": round(rt["distance"] / 1609.34, 1), "coords": pts}
 
 
-SYSTEM = """You write factual trip summaries for WildParkRoutes, an outdoor travel guide.
-Use only widely known, stable facts. No exact prices, no guarantees, no invented
-business names. Return JSON only."""
+SYSTEM = GROUNDING + " Return JSON only. Never infer a budget from source prose; use null when no sourced benchmark is supplied."
 PROMPT = """Destination: {facts}
 Published WildParkRoutes destinations you may pick similar ones from: {pool}
 Return JSON:
@@ -356,6 +355,8 @@ Return JSON:
 
 
 def run(slug, facts_only=False):
+    if not facts_only:
+        load_packet(slug)
     path = f"{OUT}/{slug}.json"
     if os.path.exists(path):
         return "cached"
@@ -370,19 +371,21 @@ def run(slug, facts_only=False):
         json.dump(prepared, open(facts_path, "w"), indent=1)
     if facts_only:
         return f"facts ready airport={prepared['airport']['code']}"
-    sys.path.insert(0, "/tmp")
-    from lovable_ai import call_ai_json  # temporary, server-side streaming helper
+    from gateway_call import call_ai_json
     d = prepared["destination"]
     published = q("select string_agg(slug, ',') from destinations where status='published'")
     facts = {**d, "lat": prepared["lat"], "lng": prepared["lng"],
              "nearest_airport": prepared["airport"]["name"],
              "drive_minutes": prepared["route"]["minutes"]}
-    ai = call_ai_json(PROMPT.format(facts=json.dumps(facts), pool=published),
+    packet = load_packet(slug)
+    ai = call_ai_json(PROMPT.format(facts=json.dumps({'identity': {'slug': slug, 'name': d['name']}, 'evidence': packet}), pool=published),
                       model="google/gemini-3-flash-preview", system=SYSTEM)
     if isinstance(ai, str):
         ai = json.loads(ai)
     if isinstance(ai, list):
         ai = ai[0]
+    if ai.get('held'):
+        raise ValueError('HELD: ' + ai['held'])
     pub = set(published.split(","))
     ai["similar_slugs"] = [s for s in ai["similar_slugs"] if s in pub][:3]
     json.dump({k: v for k, v in prepared.items() if k != "destination"} | {"ai": ai},

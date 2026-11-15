@@ -1,0 +1,449 @@
+{
+  "checks": [
+    {
+      "path": "/name",
+      "status": "supported",
+      "reason": "The park name matches the official SÉPAQ website heading.",
+      "url": "https://www.sepaq.com/pq/bon/",
+      "quote": "Parc national de l'Île-Bonaventure- et-du-Rocher‑Percé"
+    },
+    {
+      "path": "/tagline",
+      "status": "supported",
+      "reason": "The source explicitly states it has the world's most accessible Northern Gannet colony.",
+      "url": "https://www.sepaq.com/pq/bon/",
+      "quote": "Sa colonie de fous de Bassan (116 000) est la plus accessible au monde. Un incontournable!"
+    },
+    {
+      "path": "/best_season",
+      "status": "supported",
+      "reason": "The park's main activities and boat excursions run from late May to mid-October, covering the June-September peak.",
+      "url": "https://www.sepaq.com/pq/bon/",
+      "quote": "Période : du 31 mai au 12 octobre 2026"
+    },
+    {
+      "path": "/gateway_cities",
+      "status": "unverified",
+      "reason": "The source mentions Percé village frequently but does not explicitly name Gaspé or Sainte-Thérèse-de-Gaspé as gateway cities.",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_level",
+      "status": "suggestion",
+      "reason": "Moderate is a subjective rating for requiring two separate payment systems (park access and private boat fees).",
+      "url": "https://www.sepaq.com/pq/bon/",
+      "quote": "Le tarif des excursions en bateau vers l'île, offertes par des entreprises privées, n'inclut pas le droit d'accès au parc."
+    },
+    {
+      "path": "/permit_note",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source confirms park access fees are separate from boat tickets and that boat operators are private entities.",
+      "url": "https://www.sepaq.com/pq/bon/",
+      "quote": "Le tarif des excursions en bateau vers l'île, offertes par des entreprises privées, n'inclut pas le droit d'accès au parc. Pour toute information concernant les traversées, communiquez avec : Les Bateliers de Percé ... Les croisières Julien Cloutier"
+    },
+    {
+      "path": "/nearest_airport_code",
+      "status": "unverified",
+      "reason": "No airport information is provided in the source documents.",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The trail name and its destination (Gannet colony) are supported.",
+      "url": "https://www.sepaq.com/pq/bon/",
+      "quote": "Première partie : dans le sentier Les Colonies ... l'impressionnante colonie de fous de Bassan."
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The trail name and historical home visits are supported.",
+      "url": "https://www.sepaq.com/pq/bon/",
+      "quote": "Sentier Le chemin du Roy ... Visitez les maisons restaurées des anciens habitants de l’île Bonaventure"
+    },
+    {
+      "path": "/travel_plan/days/0/driving",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source confirms the island is only accessible by boat and includes mention of cruises around the rock.",
+      "url": "https://www.sepaq.com/pq/bon/",
+      "quote": "Le parc possède comme forteresse l'île Bonaventure et comme vaisseau de pierre le majestueux rocher Percé ... L'île Bonaventure qui est accessible uniquement par bateau."
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source mentions the Charles Robin sector and historical buildings.",
+      "url": "https://www.sepaq.com/pq/bon/",
+      "quote": "le parc présente une activité à la Saline dans le secteur Charles-Robin. ... Centre de découverte Le Chafaud ... expositions sur l’histoire, la faune, la flore et la géologie du parc."
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/detail",
+      "status": "unverified",
+      "reason": "The Geopark and its glass platform are not mentioned in the SÉPAQ source.",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/detail",
+      "status": "unverified",
+      "reason": "Emerald River (Rivière aux Émeraudes) is not mentioned in the park's documentation.",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/detail",
+      "status": "unverified",
+      "reason": "Cap-d'Espoir and its lighthouse are not mentioned in the park's documentation.",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/text",
+      "status": "unverified",
+      "reason": "The specific parking management and lot availability details for the town of Percé are not in the source.",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/text",
+      "status": "supported",
+      "reason": "The boat season dates and the impact of weather on trail/boat access are supported.",
+      "url": "https://www.sepaq.com/pq/bon/",
+      "quote": "Période : du 31 mai au 12 octobre 2026 (l'ouverture de tous les sentiers est conditionnelle à la température et aux conditions)"
+    },
+    {
+      "path": "/travel_plan/intel/4/text",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The total trail distance (15km) and access method are supported.",
+      "url": "https://www.sepaq.com/pq/bon/",
+      "quote": "Quatre sentiers, totalisant 15 km, vous permettent de vous imprégner de l'atmosphère envoûtante du secteur Île-Bonaventure. ... accessible uniquement par bateau."
+    },
+    {
+      "path": "/state",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/region",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/2",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/recommended_duration",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_headline",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_source_url",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/nearest_airport_name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lat",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lng",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/access_type",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/arrival",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/vehicle",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/goldenHour",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    }
+  ],
+  "corrections": [],
+  "summary": "Factual claims regarding the park's official name, the Gannet colony's accessibility, required permits (separate SÉPAQ and boat tickets), and the trail network on Bonaventure Island are fully supported. Claims regarding local regional attractions (Emerald River, Cap-d'Espoir), the Percé Geopark, specific airport codes (YGP), and local municipal parking details are unverified as they fall outside the scope of the provided SÉPAQ park documentation.",
+  "slug": "ile-bonaventure-et-du-rocher-perce-national-park",
+  "status": "audited",
+  "source_errors": [],
+  "applied_fields": [],
+  "coverage": {
+    "leaf_count": 61,
+    "explicitly_classified": 61,
+    "method": "Source audit plus explicit missing-evidence register; not factual certification"
+  }
+}

@@ -4,9 +4,9 @@ Run: python scripts/content-pipeline/generate-permit-notes.py [--limit N] [slug 
 """
 import json, os, sys
 import requests
+from source_evidence import load_packet, validate_citations, GROUNDING
 
-sys.path.insert(0, "/tmp")
-from lovable_ai import call_ai_json  # copied from the ai-gateway skill
+from gateway_call import call_ai_json
 
 REST = os.environ["SUPABASE_URL"] + "/rest/v1"
 SK = os.environ["SUPABASE_SERVICE_ROLE_KEY"]
@@ -24,12 +24,16 @@ if args:
 rows = requests.get(f"{REST}/{q}&limit={limit}", headers=H).json()
 
 for d in rows:
+    try:
+        packet = load_packet(d['slug'])
+    except ValueError as e:
+        print(d['slug'], str(e)); continue
     prompt = f"""Write the "Reservation needed" note for a road-trip guide page about {d['name']} ({d['region'] or d['state']}), type: {d['destination_type']}.
 Known: permit pressure {d['permit_level']}, best season {d['best_season']}, nearest airport {d['nearest_airport_code']}.
 Return JSON: {{"headline": "max 40 chars, specific (e.g. 'Timed entry late May–Oct')", "note": "2-3 sentences, 220-340 chars, specific to this place: which reservations matter (entry, campsites, lodges, shuttles, tours), roughly how far ahead, and one practical tip", "source_url": "official https URL (nps.gov, recreation.gov, state park site) or empty string"}}
 Rules: only well-known facts about this place; say systems 'may' change and to check the official site; no exact prices, no guarantees, no urgency or discount language, no business names except official agencies; never mention specific years."""
     try:
-        r = call_ai_json(prompt, model="google/gemini-3-flash-preview")
+        r = call_ai_json(GROUNDING + '\n' + prompt + '\nRetrieved evidence: ' + json.dumps(packet), model="google/gemini-3-flash-preview")
         if isinstance(r, str):
             r = json.loads(r)
         head, note, src = r["headline"].strip(), r["note"].strip(), (r.get("source_url") or "").strip()
@@ -37,6 +41,7 @@ Rules: only well-known facts about this place; say systems 'may' change and to c
             print(d["slug"], "REJECTED", len(head), len(note)); continue
         if src and not src.startswith("https://"):
             src = ""
+        validate_citations([src], packet)
         requests.patch(f"{REST}/destinations?id=eq.{d['id']}", headers=H,
                        json={"permit_headline": head, "permit_note": note, "permit_source_url": src or None}).raise_for_status()
         print(d["slug"], "OK", head)

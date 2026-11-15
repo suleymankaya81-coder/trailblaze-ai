@@ -1,0 +1,444 @@
+{
+  "checks": [
+    {
+      "path": "/name",
+      "status": "supported",
+      "reason": "The park name is confirmed as Lake Superior Provincial Park.",
+      "url": "https://www.ontarioparks.com/park/lakesuperior",
+      "quote": "Lake Superior Provincial Park"
+    },
+    {
+      "path": "/state",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The park is located in Ontario, as evidenced by the mailing address.",
+      "url": "https://www.ontarioparks.com/park/lakesuperior",
+      "quote": "Wawa, ON"
+    },
+    {
+      "path": "/region",
+      "status": "unverified",
+      "reason": "The source does not explicitly name 'Northern Ontario' as the region, though the address is in Wawa.",
+      "url": ""
+    },
+    {
+      "path": "/tagline",
+      "status": "suggestion",
+      "reason": "This is a descriptive marketing tagline not found verbatim in the source.",
+      "url": ""
+    },
+    {
+      "path": "/best_season",
+      "status": "supported",
+      "reason": "The park's main operating season for camping and day use is May to October, supporting the June-September peak window.",
+      "url": "https://www.ontarioparks.com/park/lakesuperior",
+      "quote": "May 1, 2026 to October 25, 2026"
+    },
+    {
+      "path": "/gateway_cities",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. Wawa is confirmed via the mailing address; Sault Ste. Marie is a logical gateway but not explicitly named as a 'gateway' in the text.",
+      "url": "https://www.ontarioparks.com/park/lakesuperior",
+      "quote": "PO Box 267\n\nWawa, ON"
+    },
+    {
+      "path": "/recommended_duration",
+      "status": "suggestion",
+      "reason": "Recommended duration is a travel planning suggestion not defined by the park authority.",
+      "url": ""
+    },
+    {
+      "path": "/permit_level",
+      "status": "suggestion",
+      "reason": "Permit level classification is subjective.",
+      "url": ""
+    },
+    {
+      "path": "/permit_headline",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The park utilizes a day use reservation system.",
+      "url": "https://www.ontarioparks.com/park/lakesuperior",
+      "quote": "Day Use"
+    },
+    {
+      "path": "/permit_note",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source confirms separate booking links for Day Use, Camping, and Backcountry.",
+      "url": "https://www.ontarioparks.com/park/lakesuperior",
+      "quote": "Reserve Online\n- Day Use\n- Camping\n- Backcountry"
+    },
+    {
+      "path": "/nearest_airport_code",
+      "status": "unverified",
+      "reason": "Airport code YAM is not mentioned in the source.",
+      "url": ""
+    },
+    {
+      "path": "/lat",
+      "status": "contradicted",
+      "reason": "The coordinates provided for the Agawa Bay and Rabbit Blanket campgrounds differ from the general coordinate provided.",
+      "url": "https://www.ontarioparks.com/park/lakesuperior",
+      "quote": "Agawa Bay Campground: Latitude: 47.335010, Longitude: -84.616210"
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The park highlights cultural history (pictographs) and cliffs as a feature.",
+      "url": "https://www.ontarioparks.com/park/lakesuperior",
+      "quote": "cliffs... highlighting the park’s cultural history"
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. Agawa Bay is a confirmed location with beach access.",
+      "url": "https://www.ontarioparks.com/park/lakesuperior",
+      "quote": "Agawa Bay Campground... beaches"
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. Waterfalls are listed as a primary feature of the park.",
+      "url": "https://www.ontarioparks.com/park/lakesuperior",
+      "quote": "spectacular and diverse scenery – cliffs, beaches, river valleys, waterfalls"
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/detail",
+      "status": "supported",
+      "reason": "Cliffs are a listed feature of the park scenery.",
+      "url": "https://www.ontarioparks.com/park/lakesuperior",
+      "quote": "Spectacular and diverse scenery – cliffs"
+    },
+    {
+      "path": "/travel_plan/intel/0/text",
+      "status": "supported",
+      "reason": "The park confirms the presence of a Visitor Centre at Agawa Bay.",
+      "url": "https://www.ontarioparks.com/park/lakesuperior",
+      "quote": "Agawa Bay Campground and Visitor Centre"
+    },
+    {
+      "path": "/travel_plan/intel/4/text",
+      "status": "supported",
+      "reason": "The park confirms seasonal operations from May to October.",
+      "url": "https://www.ontarioparks.com/park/lakesuperior",
+      "quote": "May 1, 2026 to October 25, 2026"
+    },
+    {
+      "path": "/best_seasons/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_source_url",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/nearest_airport_name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lng",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/access_type",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/arrival",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/vehicle",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/goldenHour",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    }
+  ],
+  "corrections": [],
+  "summary": "The park's location, name, and seasonal dates are well-supported. Coordinates provided in the plan vary slightly from specific campground coordinates in the source. Specific details like airport codes and cellular dead zones are not mentioned in the official park source.",
+  "slug": "lake-superior-provincial-park",
+  "status": "audited",
+  "source_errors": [],
+  "applied_fields": [],
+  "coverage": {
+    "leaf_count": 61,
+    "explicitly_classified": 61,
+    "method": "Source audit plus explicit missing-evidence register; not factual certification"
+  }
+}

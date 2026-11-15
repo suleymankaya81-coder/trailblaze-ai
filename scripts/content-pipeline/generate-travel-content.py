@@ -5,6 +5,8 @@ import argparse, datetime, json, os, re, subprocess, time
 from pathlib import Path
 import requests
 from canada.review import reviewed_item
+from source_evidence import grounded_rows, load_packet, validate_citations, GROUNDING
+from gateway_call import call_ai_json
 
 JOB = 'destination-travel-v1'
 MODEL = 'google/gemini-3-flash-preview'
@@ -41,40 +43,15 @@ Return JSON object {"items":[...]}, exactly one per input slug, each:
 Facts and guides:\n'''
 
 def generate(rows):
-    response = requests.post('https://ai.gateway.lovable.dev/v1/chat/completions',
-        headers={'Authorization': 'Bearer '+os.environ['LOVABLE_API_KEY'], 'X-Lovable-AIG-SDK':'fetch'},
-        json={'model':MODEL,'stream':True,'response_format':{'type':'json_object'},'messages':[{'role':'user','content':PROMPT+json.dumps(rows)}]}, stream=True)
-    if not response.ok:
-        reason = response.json().get('message') or response.json().get('error',{}).get('message') or f'Gateway HTTP {response.status_code}'
-        if response.status_code in (402,403,404,401):
-            sql(f"update content_pipeline_jobs set status='paused',pause_reason={literal(str(reason))} where job_key={literal(JOB)}")
-        raise RuntimeError(str(reason))
-    text = ''
-    for line in response.iter_lines():
-        if not line or not line.startswith(b'data: '): continue
-        raw = line[6:]
-        if raw == b'[DONE]': break
-        event = json.loads(raw)
-        if event.get('error'): raise RuntimeError('Gateway stream error')
-        for choice in event.get('choices',[]):
-            if choice.get('finish_reason') in ('content_filter','refusal'):
-                sql(f"update content_pipeline_jobs set status='paused',pause_reason='Content refusal' where job_key={literal(JOB)}")
-                raise RuntimeError('Content refusal')
-            text += choice.get('delta',{}).get('content') or ''
-    Path('/tmp/travel-last-response.json').write_text(text)
+    rows = grounded_rows(rows)
     try:
-        parsed = json.loads(text)
+        parsed = call_ai_json(GROUNDING+'\n'+PROMPT+json.dumps(rows), model=MODEL)
+        if isinstance(parsed, dict) and parsed.get('held'):
+            raise ValueError('HELD: ' + parsed['held'])
         return parsed if isinstance(parsed, list) else parsed['items']
-    except json.JSONDecodeError:
-        # Keep complete objects from a truncated/malformed batch, never publish partial items.
-        decoder = json.JSONDecoder(); items = []
-        for match in re.finditer(r'\{\s*"slug"\s*:', text):
-            try:
-                value, _ = decoder.raw_decode(text[match.start():])
-                if isinstance(value, dict) and 'plan' in value: items.append(value)
-            except json.JSONDecodeError: continue
-        if not items: raise ValueError('No complete JSON items; saved response for review')
-        return items
+    except RuntimeError:
+        sql(f"update content_pipeline_jobs set status='paused',pause_reason='Gateway failure requires explicit review' where job_key={literal(JOB)}")
+        raise
 
 def main():
     args = argparse.ArgumentParser(); args.add_argument('--limit',type=int,default=24); args.add_argument('--resume',action='store_true'); args.add_argument('--country'); a=args.parse_args()
@@ -104,8 +81,11 @@ def main():
                 if not (CACHE/(r['slug']+'.json')).exists():
                     print(r['slug'], 'HELD incomplete response', flush=True); continue
                 item=reviewed_item(json.loads((CACHE/(r['slug']+'.json')).read_text()))
-                try: p=validate(item)
-                except (AssertionError, KeyError) as error:
+                try:
+                    packet = load_packet(r['slug'])
+                    p=validate(item)
+                    validate_citations([item['source_url']] + [s['url'] for s in p['sources']], packet)
+                except (AssertionError, KeyError, ValueError) as error:
                     print(r['slug'], 'HELD', str(error), flush=True)
                     continue
                 p.update(markers=[],reviewedAt=datetime.datetime.now(datetime.timezone.utc).isoformat())

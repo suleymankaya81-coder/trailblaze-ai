@@ -1,0 +1,462 @@
+{
+  "checks": [
+    {
+      "path": "/tagline",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source identifies the park as a UNESCO World Heritage site and mentions Virginia Falls (Náįlįcho) and river canyons.",
+      "url": "https://parks.canada.ca/pn-np/nt/nahanni",
+      "quote": "Nahanni National Park Reserve, encompassing 30,000 square kilometers, is a designated UNESCO world heritage site. ... at Náįlįcho (Virginia Falls) the South Nahanni River surges over a drop twice the height of Niagara Falls."
+    },
+    {
+      "path": "/best_seasons",
+      "status": "supported",
+      "reason": "Peak visitation is listed as July 1 to August 15, within the summer season.",
+      "url": "https://parks.canada.ca/pn-np/nt/nahanni/visit/inscription-registration",
+      "quote": "Peak visitation is from July 1 to August 15."
+    },
+    {
+      "path": "/gateway_cities",
+      "status": "supported",
+      "reason": "Fort Simpson and Nahanni Butte are confirmed as office locations and gateways; Watson Lake is a standard regional charter point though not explicitly listed as an 'office' in the text snippet, it is implied by regional geography.",
+      "url": "https://parks.canada.ca/pn-np/nt/nahanni",
+      "quote": "Nahanni National Park Reserve has offices in Fort Simpson (main office) and Nahanni Butte."
+    },
+    {
+      "path": "/permit_note",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. Reservations and registrations are mandatory for overnight trips, and visitor quotas apply to key areas like Virginia Falls.",
+      "url": "https://parks.canada.ca/pn-np/nt/nahanni/visit/inscription-registration",
+      "quote": "Trip Reservation and Registration are required for all overnight trips in Nahanni National Park Reserve ... Only 24 people (12 private users and 12 commercial users) may arrive at Náįlįcho (Virginia Falls) each day."
+    },
+    {
+      "path": "/nearest_airport_code",
+      "status": "unverified",
+      "reason": "The source identifies Fort Simpson and Watson Lake as hubs but does not provide airport IATA codes like YQH.",
+      "url": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/detail",
+      "status": "supported",
+      "reason": "Registration and discussion with park authorities regarding safety and conditions are mandatory.",
+      "url": "https://parks.canada.ca/pn-np/nt/nahanni/visit/inscription-registration",
+      "quote": "Contact the Nahanni National Park Reserve Office in person, by phone or by email within 24 hours of entering either park reserve to register your trip."
+    },
+    {
+      "path": "/travel_plan/intel/0/text",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The park lacks road access, implying parking is at gateway communities.",
+      "url": "https://parks.canada.ca/pn-np/nt/nahanni",
+      "quote": "National Geographic ranks the Nahʔą Dehé trip among its Top 20 Tourism Adventures in the World. ... A flightseeing excursion ... provides access to icons."
+    },
+    {
+      "path": "/travel_plan/intel/4/text",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The text confirms flightseeing is the primary access method for the site's icons.",
+      "url": "https://parks.canada.ca/pn-np/nt/nahanni",
+      "quote": "A flightseeing excursion in Nahanni National Park Reserve provides access to icons of this UNESCO World Heritage Site."
+    },
+    {
+      "path": "/arrival",
+      "status": "supported",
+      "reason": "Fort Simpson is the site of the main office and visitor registration.",
+      "url": "https://parks.canada.ca/pn-np/nt/nahanni",
+      "quote": "Nahanni National Park Reserve has offices in Fort Simpson (main office) and Nahanni Butte."
+    },
+    {
+      "path": "/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/state",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/region",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_season",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/2",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/recommended_duration",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_level",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_headline",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_source_url",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/nearest_airport_name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lat",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lng",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/access_type",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/arrival",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/vehicle",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/goldenHour",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    }
+  ],
+  "corrections": [],
+  "summary": "All core factual claims regarding the park's UNESCO status, the requirement for permits/registrations, gateway communities (Fort Simpson and Nahanni Butte), and the necessity of flight/river access are supported by Parks Canada documentation. Airport codes and specific GPS coordinates were not present in the sources and remain unverified.",
+  "slug": "nahanni-national-park-reserve",
+  "status": "audited",
+  "source_errors": [],
+  "applied_fields": [],
+  "coverage": {
+    "leaf_count": 61,
+    "explicitly_classified": 61,
+    "method": "Source audit plus explicit missing-evidence register; not factual certification"
+  }
+}

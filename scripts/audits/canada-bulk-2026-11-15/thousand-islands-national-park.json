@@ -1,0 +1,473 @@
+{
+  "checks": [
+    {
+      "path": "/name",
+      "status": "supported",
+      "reason": "The destination name is confirmed in the source header.",
+      "url": "https://parks.canada.ca/pn-np/on/1000",
+      "quote": "Thousand Islands National Park"
+    },
+    {
+      "path": "/state",
+      "status": "supported",
+      "reason": "The park is located in Ontario.",
+      "url": "https://parks.canada.ca/pn-np/on/1000",
+      "quote": "Mallorytown ON K0E 1R0"
+    },
+    {
+      "path": "/region",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source identifies the park's location in Eastern Ontario.",
+      "url": "https://parks.canada.ca/pn-np/on/1000/activ/randon-hike",
+      "quote": "Black legged ticks... are common in Eastern Ontario and Thousand Islands National Park."
+    },
+    {
+      "path": "/tagline",
+      "status": "supported",
+      "reason": "The description of granite islands and the St. Lawrence River is supported.",
+      "url": "https://parks.canada.ca/pn-np/on/1000",
+      "quote": "Granite islands speckle the St. Lawrence River in a transition zone between Canadian Shield and Adirondack Mountains."
+    },
+    {
+      "path": "/best_season",
+      "status": "unverified",
+      "reason": "The specific range of June-September is not explicitly stated as the 'best' season, though hours of operation indicate reopening in May.",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities",
+      "status": "unverified",
+      "reason": "While the source mentions nearby locations like Toronto and Montreal, it does not explicitly name Gananoque, Brockville, or Rockport as gateway cities.",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_note",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The requirement for reservations via the national service and separate fees for parking, docking, and camping are supported.",
+      "url": "https://parks.canada.ca/pn-np/on/1000/visit/tarifs-fees",
+      "quote": "Reservable campsites and oTENTik roofed accommodations must be reserved and paid for through the Parks Canada Reservation Service. ... Fees still apply for ... Mooring"
+    },
+    {
+      "path": "/nearest_airport_code",
+      "status": "unverified",
+      "reason": "The source does not provide information on airports or IATA codes.",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/detail",
+      "status": "supported",
+      "reason": "Mallorytown Landing is identified as a hub with exhibits.",
+      "url": "https://parks.canada.ca/pn-np/on/1000/activ/randon-hike",
+      "quote": "Obtain permits from park interpreters at the Mallorytown Landing Visitor Centre"
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. Jones Creek is a trail network with wetlands and lookouts.",
+      "url": "https://parks.canada.ca/pn-np/on/1000/activ/randon-hike",
+      "quote": "Thousand Islands National Park’s trails at Jones Creek provide an opportunity... in a sanctuary of scenic lookouts, rugged rock faces, and tall stands of pine."
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/detail",
+      "status": "supported",
+      "reason": "Island access is strictly by boat.",
+      "url": "https://parks.canada.ca/pn-np/on/1000",
+      "quote": "Island access is by boat only."
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/detail",
+      "status": "supported",
+      "reason": "The Lookout trail at Landons Bay is explicitly cited as providing the best view.",
+      "url": "https://parks.canada.ca/pn-np/on/1000/activ/randon-hike",
+      "quote": "The view from the Lookout Trail has long been recognized as the best natural view in the Thousand Islands area."
+    },
+    {
+      "path": "/travel_plan/intel/0/text",
+      "status": "supported",
+      "reason": "The source mentions parking fees and permits for these locations.",
+      "url": "https://parks.canada.ca/pn-np/on/1000/activ/randon-hike",
+      "quote": "Permits are valid at Jones Creek, Mallorytown Landing and Landons Bay."
+    },
+    {
+      "path": "/travel_plan/intel/3/text",
+      "status": "supported",
+      "reason": "The park's hours indicate a seasonal closure until May, supporting the concept of a seasonal access window.",
+      "url": "https://parks.canada.ca/pn-np/on/1000",
+      "quote": "Temporarily closed. Reopening in May 2027."
+    },
+    {
+      "path": "/best_seasons/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/2",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/recommended_duration",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_level",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_headline",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_source_url",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/nearest_airport_name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lat",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lng",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/access_type",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/arrival",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/vehicle",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/goldenHour",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    }
+  ],
+  "corrections": [
+    {
+      "path": "/destination/travel_plan/days/0/note",
+      "value": "Black legged ticks, potential carriers of Lyme disease and Human Granulocytic Anaplasmosis, are common in Thousand Islands National Park. Check the 'Ticks and Your Health' page for protection tips.",
+      "url": "https://parks.canada.ca/pn-np/on/1000/activ/randon-hike",
+      "quote": "Black legged ticks, potential carriers of Lyme disease and Human Granulocytic Anaplasmosis, are common in Eastern Ontario and Thousand Islands National Park.",
+      "reason": "The source specifically identifies the types of diseases carried by local ticks and provides a specific resource for health info."
+    },
+    {
+      "path": "/destination/travel_plan/days/0/stops/0/detail",
+      "value": "Visit Mallorytown Landing, which features the Smoky Fire Trail and the Six Nations Trail (note: Six Nations Trail may be closed due to storm damage). View exhibits and obtain park permits from interpreters.",
+      "url": "https://parks.canada.ca/pn-np/on/1000/activ/randon-hike",
+      "quote": "There are also two trails at Mallorytown Landing – the Smoky Fire Trail (850 m), and the Six Nations Trail (1.1 km). ... The Six Nations Trail is closed due to damage from a recent and severe storm.",
+      "reason": "Adds specific trail names and the current status of the Six Nations Trail found in the source."
+    }
+  ],
+  "summary": "Thousand Islands National Park's geography as a riverfront archipelago and its accessibility requirements (boat-only for islands) are well-supported. Core trails and hubs like Mallorytown Landing, Jones Creek, and the Landons Bay Lookout are verified. Specific gateway cities and airport logistics are unverified. Seasonal closures are confirmed with a May reopening date.",
+  "slug": "thousand-islands-national-park",
+  "status": "audited",
+  "source_errors": [],
+  "applied_fields": [
+    "travel_plan"
+  ],
+  "coverage": {
+    "leaf_count": 62,
+    "explicitly_classified": 62,
+    "method": "Source audit plus explicit missing-evidence register; not factual certification"
+  }
+}

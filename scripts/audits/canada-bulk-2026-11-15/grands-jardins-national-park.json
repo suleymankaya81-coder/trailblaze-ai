@@ -1,0 +1,485 @@
+{
+  "checks": [
+    {
+      "path": "/tagline",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The park is part of the UNESCO Charlevoix Biosphere Reserve and contains subarctic/taiga landscapes.",
+      "url": "https://www.sepaq.com/pq/grj/",
+      "quote": "le parc national des Grands-Jardins... constitue l'une des Aires centrales de la Réserve de la biosphère de Charlevoix... Frappés par les tapis de lichens et la végétation nordique exceptionnelle à cette latitude, les gens lui ont donné le nom de Grands-Jardins."
+    },
+    {
+      "path": "/best_season",
+      "status": "suggestion",
+      "reason": "Official hiking and activity periods for most sectors run from late May to mid-October; June-September covers the peak availability.",
+      "url": "https://www.sepaq.com/pq/grj/",
+      "quote": "Période : du 22 mai au 12 octobre 2026"
+    },
+    {
+      "path": "/gateway_cities",
+      "status": "supported",
+      "reason": "Baie-Saint-Paul and Saint-Urbain are directly referenced in proximity to the park; Quebec City is linked via shuttle.",
+      "url": "https://www.sepaq.com/pq/grj/",
+      "quote": "Quatre Natures vous offre un service de navette entre Québec et le parc."
+    },
+    {
+      "path": "/permit_note",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. Entry permits are mandatory and limited by capacity, with online purchase strongly recommended.",
+      "url": "https://www.sepaq.com/pq/grj/",
+      "quote": "Droit d'accès obligatoire... Le nombre de visiteurs pouvant accéder à un parc national dans une même journée est limité. Il est ainsi fortement recommandé d'acheter son droit d’accès en ligne avant une visite."
+    },
+    {
+      "path": "/nearest_airport_code",
+      "status": "unverified",
+      "reason": "While Bagotville is geographically close, the sources do not specify airport codes or confirm it is the 'nearest' commercially accessible option.",
+      "url": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/detail",
+      "status": "supported",
+      "reason": "The trail is described as iconic for viewing the meteor crater.",
+      "url": "https://www.sepaq.com/pq/grj/annexes/sentiers_pedestres.dot?language_id=2",
+      "quote": "ce sommet emblématique vous offre une vue spectaculaire sur l’astroblème de Charlevoix."
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The trail traverses ridges with arctic-alpine vegetation.",
+      "url": "https://www.sepaq.com/pq/grj/annexes/sentiers_pedestres.dot?language_id=2",
+      "quote": "Sentier Le Pioui (rustique)... cheminez le long des crêtes... Sur les sommets, une végétation arctique‑alpine fragile vous accompagne"
+    },
+    {
+      "path": "/travel_plan/days/0/driving",
+      "status": "suggestion",
+      "reason": "Travel times from Baie-Saint-Paul are not explicitly defined in sources, though Baie-Saint-Paul is a known regional hub.",
+      "url": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. Canoe and kayak rentals are available at the Arthabaska Discovery Center.",
+      "url": "https://www.sepaq.com/pq/grj/",
+      "quote": "La location s'effectue au centre de découverte et de services Arthabaska. Il est aussi possible d'utiliser votre embarcation personnelle... sur les lacs Turgeon, des Îles, Pemmican et Arthabaska."
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/detail",
+      "status": "unverified",
+      "reason": "The source lists 'Sentier de la Tour' (which features nature and art), but does not mention 'La Tourbière Trail' by name or boardwalks over a peat bog with carnivorous plants.",
+      "url": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/detail",
+      "status": "supported",
+      "reason": "Fly-fishing on the Malbaie River is a highlighted activity.",
+      "url": "https://www.sepaq.com/pq/grj/",
+      "quote": "La portion de la rivière Malbaie, du km 14 au km 20, est réservée exclusivement pour la pêche à gué."
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/detail",
+      "status": "supported",
+      "reason": "The trail explores older boreal forest and highlights typical park atmosphere.",
+      "url": "https://www.sepaq.com/pq/grj/annexes/sentiers_pedestres.dot?language_id=2",
+      "quote": "Partez à la découverte de l’une des plus vieilles forêts boréales du parc. Retrouvez-vous dans une atmosphère typique des Grands-Jardins"
+    },
+    {
+      "path": "/travel_plan/intel/0/text",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The main road is Route 381, and seasonal closures are noted.",
+      "url": "https://www.sepaq.com/pq/grj/",
+      "quote": "Centre de services du Mont-du-Lac-des-Cygnes (km 21 de la route 381)... Période : de la mi-décembre à la fin mars (selon les conditions de neige)"
+    },
+    {
+      "path": "/travel_plan/intel/2/text",
+      "status": "supported",
+      "reason": "The source explicitly warns that there is no cell service.",
+      "url": "https://www.sepaq.com/pq/grj/",
+      "quote": "Aucun téléphone d’urgence ne se trouve sur les lieux et les réseaux de téléphonie cellulaires ne desservent pas le territoire du parc."
+    },
+    {
+      "path": "/travel_plan/intel/4/text",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. Daily access fees are mandatory and best secured digitally to avoid refusal due to capacity.",
+      "url": "https://www.sepaq.com/pq/grj/",
+      "quote": "Droit d'accès obligatoire... fortement recommandé d'acheter son droit d’accès en ligne... Il est possible que l'accès à un secteur... vous soit malheureusement refusé si un stationnement est plein."
+    },
+    {
+      "path": "/vehicle",
+      "status": "suggestion",
+      "reason": "Sources confirm Route 381 is the primary access and note secondary road conditions, though they don't explicitly require an SUV.",
+      "url": "https://www.sepaq.com/pq/grj/",
+      "quote": "Un seul morceau de bois de chauffage peut détruire des millions d'arbres... Notez que le centre de services Thomas-Fortin (km 31, route 381) est fermé. Une signalisation temporaire a été installée."
+    },
+    {
+      "path": "/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/state",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/region",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/2",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/recommended_duration",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_level",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_headline",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_source_url",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/nearest_airport_name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lat",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lng",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/access_type",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/arrival",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/vehicle",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/goldenHour",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    }
+  ],
+  "corrections": [
+    {
+      "path": "/destination/travel_plan/days/0/note",
+      "value": "Mountain weather is unpredictable; even in summer, visitors are advised to bring warm clothes for summits.",
+      "url": "https://www.sepaq.com/pq/grj/",
+      "quote": "Prévoyez de bonnes chaussures de marche, de l'eau en quantité suffisante et des vêtements chauds. De cette façon, vous pourrez étirer le plaisir au sommet!",
+      "reason": "Source explicitly advises warm clothing for the summit specifically to allow for longer stays."
+    },
+    {
+      "path": "/destination/intel/3/text",
+      "value": "Purchase the required daily access through Sépaq and check the park’s current access and parking conditions before departure. An advance purchase should not be treated as a guarantee that every trail or sector will be accessible.",
+      "url": "https://www.sepaq.com/pq/grj/",
+      "quote": "Il est possible que l'accès à un secteur, à un sentier ou à une activité vous soit malheureusement refusé si un stationnement est plein, ou encore, si la capacité d'accueil maximale établie de ce secteur est atteinte.",
+      "reason": "The source generalizes the capacity issue to all sectors and parking lots, not just Mont-du-Lac-des-Cygnes."
+    },
+    {
+      "path": "/permit_source_url",
+      "value": "https://www.sepaq.com/pq/grj/",
+      "url": "https://www.sepaq.com/pq/grj/",
+      "quote": "# Parc national  des Grands-Jardins\n\n[4℃  ›](https://www.sepaq.com/pq/grj/meteo.dot#container)\n\n[Acheter un accès quotidien  ›](https://www.sepaq.com/fr/reservation/achat/acces-quo",
+      "reason": "Replace broken official URL with retrieved exact-place official page"
+    }
+  ],
+  "summary": "Grands-Jardins National Park is accurately described as a taiga/tundra landscape within the Charlevoix Biosphere Reserve. Factual support for the Mont-du-Lac-des-Cygnes views, Le Pioui ridges, and Malbaie River fishing is strong. Corrections were made to emphasize that parking capacity issues affect all sectors, and that warm clothing is specifically recommended for summit visits.",
+  "slug": "grands-jardins-national-park",
+  "status": "audited",
+  "source_errors": [],
+  "coverage": {
+    "leaf_count": 62,
+    "explicitly_classified": 62,
+    "method": "Source audit plus explicit missing-evidence register; not factual certification"
+  },
+  "applied_fields": [
+    "permit_source_url",
+    "travel_plan"
+  ]
+}

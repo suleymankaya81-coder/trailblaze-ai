@@ -1,0 +1,485 @@
+{
+  "checks": [
+    {
+      "path": "/tagline",
+      "status": "supported",
+      "reason": "The tagline accurately reflects the park's landscape and features described in the official source.",
+      "url": "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/eastern/nopiming.html",
+      "quote": "The entrance road leads to miles of shield country, which is scattered with hundreds of crystal clear lakes that are rimmed by granite rock and sheltered by stands of black spruce, birch and poplar."
+    },
+    {
+      "path": "/gateway_cities",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. Winnipeg and Lac du Bonnet are cited as primary reference points for directions and services; Pine Falls is a nearby community on the access route PTH 11.",
+      "url": "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/eastern/nopiming.html",
+      "quote": "From Winnipeg, follow PTH 59 north to PTH 44, east to PTH 11... Lac du Bonnet 313"
+    },
+    {
+      "path": "/permit_level",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. While there is no lottery, there is a mandatory registration system for backcountry users as of 2026.",
+      "url": "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/eastern/nopiming.html",
+      "quote": "Backcountry users are asked to complete the online backcountry registration form before visiting the park."
+    },
+    {
+      "path": "/permit_note",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The note accurately describes the requirement for park vehicle permits and campground reservations.",
+      "url": "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/eastern/nopiming.html",
+      "quote": "Shoe Lake campsites are open and available for reservations... Backcountry users are asked to complete the online backcountry registration form before visiting the park."
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/detail",
+      "status": "supported",
+      "reason": "Tulabi Falls is a recognized entry point with a campground and water access.",
+      "url": "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/eastern/nopiming.html",
+      "quote": "Tulabi Falls campgrounds are open."
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. Bird Lake is identified as a south-end entry point for the park's shield country.",
+      "url": "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/eastern/nopiming.html",
+      "quote": "PR 315 leading to Bird Lake at the south end of the park... leads to miles of shield country"
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The Bird River-Elbow Lake canoe route is explicitly listed as open.",
+      "url": "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/eastern/nopiming.html",
+      "quote": "Backcountry campsites are open along the following water routes (canoe routes): ... Bird River-Elbow Lake"
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/detail",
+      "status": "contradicted",
+      "reason": "Black Lake area trails are explicitly closed due to wildfire recovery.",
+      "url": "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/eastern/nopiming.html",
+      "quote": "The Black Lake Trail, Ancient Mountains Self-guiding Trail and Fire of ’83 Self-guiding Trail remain closed."
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The Manigotagan River is a confirmed water route within the park.",
+      "url": "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/eastern/nopiming.html",
+      "quote": "Backcountry campsites are open along the following water routes (canoe routes): ... Manigotagan River"
+    },
+    {
+      "path": "/travel_plan/intel/0/text",
+      "status": "contradicted",
+      "reason": "While the boat launch at Black Lake is open, the campground is closed for 2026.",
+      "url": "https://www.gov.mb.ca/sd/pubs/parks-protected-spaces/maps/seasonal_maps/black_lake_seasonal.pdf",
+      "quote": "Campground closed for 2026 due to wildfire damage."
+    },
+    {
+      "path": "/travel_plan/intel/4/text",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. Roads 314 and 315 are confirmed as the primary access routes.",
+      "url": "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/eastern/nopiming.html",
+      "quote": "PR 315 leading to Bird Lake... PR 314, just inside the park, takes you north through the park."
+    },
+    {
+      "path": "/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/state",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/region",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_season",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/2",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/recommended_duration",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_headline",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_source_url",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/nearest_airport_code",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/nearest_airport_name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lat",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lng",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/access_type",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/arrival",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/vehicle",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/goldenHour",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    }
+  ],
+  "corrections": [
+    {
+      "path": "/destination/permit_level",
+      "value": "Registration Required",
+      "url": "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/eastern/nopiming.html",
+      "quote": "Backcountry users are asked to complete the online backcountry registration form before visiting the park.",
+      "reason": "Source requires a registration form for backcountry travel."
+    },
+    {
+      "path": "/destination/travel_plan/days/2/stops/0/detail",
+      "value": "Note: Several trails in the Black Lake area, including the Walking Drum (Ancient Mountains) and Fire of '83 trails, remain closed for recovery.",
+      "url": "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/eastern/nopiming.html",
+      "quote": "The Black Lake Trail, Ancient Mountains Self-guiding Trail and Fire of ’83 Self-guiding Trail remain closed.",
+      "reason": "Hiking trails in the southern/central sector are currently closed due to wildfire recovery."
+    },
+    {
+      "path": "/destination/intel/0/text",
+      "value": "Designated parking is available at Tulabi Falls and the Black Lake boat launch. Note that Black Lake Campground is closed for the 2026 season due to wildfire damage.",
+      "url": "https://www.gov.mb.ca/sd/pubs/parks-protected-spaces/maps/seasonal_maps/black_lake_seasonal.pdf",
+      "quote": "Campground closed for 2026 due to wildfire damage.",
+      "reason": "Black Lake Campground is not operational for 2026."
+    }
+  ],
+  "summary": "Nopiming Provincial Park is largely accessible, but visitors must account for significant wildfire recovery closures in 2026, specifically affecting the Black Lake campground and all self-guiding hiking trails. Backcountry paddlers must now complete a mandatory online registration form before entry.",
+  "slug": "nopiming-provincial-park",
+  "status": "audited",
+  "source_errors": [
+    {
+      "url": "https://www.gov.mb.ca/sd/images/parks/icons/parks_camping_icon_35.gif",
+      "error": "ValueError"
+    }
+  ],
+  "applied_fields": [
+    "travel_plan"
+  ],
+  "coverage": {
+    "leaf_count": 62,
+    "explicitly_classified": 62,
+    "method": "Source audit plus explicit missing-evidence register; not factual certification"
+  }
+}

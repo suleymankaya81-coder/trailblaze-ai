@@ -1,0 +1,471 @@
+{
+  "checks": [
+    {
+      "path": "/tagline",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source identifies the park as part of the world's largest freshwater archipelago with granite outcrops.",
+      "url": "https://parks.canada.ca/pn-np/on/georg",
+      "quote": "located in the world’s largest freshwater archipelago... here, rich ecological diversity spans dense deciduous forests to the granite outcrops of the Canadian Shield."
+    },
+    {
+      "path": "/best_season",
+      "status": "unverified",
+      "reason": "While the visitor centre reopening in May 2027 suggests a late spring start, the specific 'June - September' range is not explicitly detailed in the provided text.",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The park map and address explicitly mention Honey Harbour, and the text mentions a kiosk there.",
+      "url": "https://parks.canada.ca/pn-np/on/georg",
+      "quote": "2611 Honey Harbour road, Honey Harbour ON P0E 1E0"
+    },
+    {
+      "path": "/permit_note",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. Source confirms boat-only access and the need for reservations for cabins and campsites via the Parks Canada service.",
+      "url": "https://parks.canada.ca/pn-np/on/georg",
+      "quote": "Day and overnight visitation in this national park is located on islands and is only accessible by boat... Make a reservation for campsites and accommodations."
+    },
+    {
+      "path": "/nearest_airport_code",
+      "status": "unverified",
+      "reason": "The provided sources do not mention YYZ or Toronto Pearson International Airport.",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lat",
+      "status": "unverified",
+      "reason": "Coordinates are not present in the supplied source text.",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/detail",
+      "status": "supported",
+      "reason": "The source confirms hiking is a primary activity and describes the northern terrain as granite outcrops.",
+      "url": "https://parks.canada.ca/pn-np/on/georg",
+      "quote": "rich ecological diversity spans dense deciduous forests to the granite outcrops of the Canadian Shield."
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source mentions the visitor centre and the park's Indigenous history.",
+      "quote": "Witness the long history of indigenous use of Beausoleil Island... Cedar Spring Visitor Centre.",
+      "url": "https://parks.canada.ca/pn-np/on/georg"
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/name",
+      "status": "supported",
+      "reason": "Christian Beach is explicitly listed as a site for rustic cabins.",
+      "url": "https://parks.canada.ca/pn-np/on/georg/visit/tarifs-fees",
+      "quote": "Rustic Cabin, Christian Beach, per night"
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/detail",
+      "status": "suggestion",
+      "reason": "The source identifies the waterway as a nearby engineering wonder but places it outside the park's specific island focus.",
+      "url": "https://parks.canada.ca/pn-np/on/georg",
+      "quote": "Trent-Severn Waterway National Historic Site... This navigational wonder adds up to 44 locks... more places to discover with Parks Canada."
+    },
+    {
+      "path": "/travel_plan/intel/0/text",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source confirms the presence of a park kiosk in Honey Harbour and that parking fees apply.",
+      "url": "https://parks.canada.ca/voyage-travel/conseils-tips/choisis-canada-choose/admission-camping",
+      "quote": "During the Canada Strong Pass periods, fees still applied for: ... parking"
+    },
+    {
+      "path": "/travel_plan/intel/4/text",
+      "status": "supported",
+      "reason": "The source explicitly states the park is only accessible by boat.",
+      "url": "https://parks.canada.ca/pn-np/on/georg",
+      "quote": "Day and overnight visitation in this national park is located on islands and is only accessible by boat."
+    },
+    {
+      "path": "/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/state",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/region",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/2",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/recommended_duration",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_level",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_headline",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_source_url",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/nearest_airport_name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lng",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/access_type",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/arrival",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/vehicle",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/goldenHour",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    }
+  ],
+  "corrections": [
+    {
+      "path": "/destination/travel_plan/days/1/stops/0/detail",
+      "value": "Learn about the Indigenous history of the region. Note: The Cedar Spring Visitor Centre is temporarily closed, reopening in May 2027.",
+      "url": "https://parks.canada.ca/pn-np/on/georg",
+      "quote": "Cedar Spring Visitor Centre: Temporarily closed. Reopening in May 2027.",
+      "reason": "The Visitor Centre is currently closed for the duration of the 2026 travel date."
+    },
+    {
+      "path": "/destination/permit_headline",
+      "value": "Landmark Cruises Shuttle and Island Cabin Reservations",
+      "url": "https://parks.canada.ca/pn-np/on/georg",
+      "quote": "Book your day visit with Landmark Cruises... Enjoy a scenic boat ride and half day visit to Beausoleil Island.",
+      "reason": "The official source identifies Landmark Cruises as the provider for day visit boat rides."
+    }
+  ],
+  "summary": "The plan accurately identifies Beausoleil Island's boat-only access, its location in the Georgian Bay archipelago, and the distinction between northern granite and southern forest terrains. The primary correction concerns the temporary closure of the Cedar Spring Visitor Centre (reopening May 2027). Airport details and exact trail names like 'Fairy Lake' were not found in the summary source text, and coordinates remain unverified.",
+  "slug": "georgian-bay-islands-national-park",
+  "status": "audited",
+  "source_errors": [],
+  "applied_fields": [],
+  "coverage": {
+    "leaf_count": 62,
+    "explicitly_classified": 62,
+    "method": "Source audit plus explicit missing-evidence register; not factual certification"
+  }
+}

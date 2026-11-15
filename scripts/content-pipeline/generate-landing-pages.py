@@ -5,9 +5,9 @@ Run: python scripts/content-pipeline/generate-landing-pages.py [slug ...]
 """
 import json, os, subprocess, sys, time
 from concurrent.futures import ThreadPoolExecutor
+from source_evidence import load_packet, GROUNDING
 
-sys.path.insert(0, "/tmp")
-from lovable_ai import call_ai_json  # copied from the ai-gateway skill
+from gateway_call import call_ai_json
 
 MODEL = "google/gemini-3-flash-preview"
 OUT = "/tmp/landing"
@@ -18,7 +18,7 @@ def words(p):
     return len((p["intro"] + " " + " ".join(x["body"] for x in p["sections"])).split())
 os.makedirs(OUT, exist_ok=True)
 
-SYSTEM = """You write practical US outdoor travel guide pages for WildParkRoutes.
+SYSTEM = GROUNDING + """ You write practical worldwide outdoor travel guide pages for WildParkRoutes.
 Rules: use only widely known, stable facts about the place; no exact prices,
 no price guarantees, no "best deal", no safety or medical guarantees; describe
 costs as rough estimates; never invent specific business names, phone numbers
@@ -55,11 +55,13 @@ def facts(slug):
 
 
 def run(slug):
+    packet = load_packet(slug)
     path = f"{OUT}/{slug}.json"
     if os.path.exists(path):
         return slug, "cached"
-    f = facts(slug)
-    name = json.loads(f)["name"]
+    stored = json.loads(facts(slug))
+    name = stored["name"]
+    f = json.dumps({'name': name, 'slug': slug, 'evidence': packet})
     short = name.replace(" National Park", "")
     data = None
     for attempt in range(3):  # 1 normal + 1 rewrite for short pages; transient errors retried with backoff
@@ -72,6 +74,8 @@ def run(slug):
             time.sleep(10 * (attempt + 1)); continue
         if isinstance(d, str):
             d = json.loads(d)
+        if d.get('held'):
+            raise ValueError('HELD: ' + d['held'])
         assert set(d["pages"]) == {"best_time", "things_to_do", "itinerary", "glamping"}
         short_pages = [k for k, p in d["pages"].items() if words(p) < MIN_WORDS]
         data = d

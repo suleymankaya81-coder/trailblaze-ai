@@ -158,6 +158,9 @@
 - [ ] Publish; submit new sitemap and Change of Address in Search Console
 
 ## Canada launch (plan 2026-11-15)
+- [x] Run all remaining 105 Canadian places through one cached bulk source audit; 37 evidence-matched textual corrections saved with guarded readback, evidence gaps recorded.
+- [ ] Independently establish all remaining Canadian factual claims; blocker: retrieved sources/model audits did not establish 6,167 leaf fields. Bulk processing is complete, full factual verification is not.
+- [x] Enforce approved cached source-first writing for future destination summaries, travel plans, reservation notes and search guides; 285 JS and 22 Python regression tests pass.
 - [x] Finish Saskatchewan Landing and refresh canonical geography for wave 3; 144 Canadian places are published, four held for photos.
 - [x] Screen all 148 Canadian records/photo assignments and apply targeted sourced corrections to 54 records; retain rejected-photo decisions and report unresolved photos.
 - [ ] Complete independent claim-by-claim and visual verification of every Canadian sentence/photo; external source access and licensed missing photos remain blockers. Metadata screening is not full verification.
@@ -172,5 +175,5 @@
 - [x] Wave 2: 81 places published
 - [ ] Held for licensed exact-place photos: Alice Lake, Dollar Lake, Murray Beach provincial parks and Tuktut Nogait National Park.
 - [x] Wave 3: Saskatchewan Landing completed; wrong Texas Tuktut Nogait imagery withheld; geography refreshed.
-- [ ] Claim-by-claim verification: Wave 1 (20) done; Waves 2–3 (124) pending.
+- [ ] Full factual certification: earlier 39 places reviewed; all remaining 105 bulk source-audited with evidence gaps, not certified. See scripts/audits/canada-bulk-2026-11-15/README.md.
 - [ ] German Canada versions and world-national-parks.net Canada 301s: not part of this audit; require translation and verified old URL mapping.

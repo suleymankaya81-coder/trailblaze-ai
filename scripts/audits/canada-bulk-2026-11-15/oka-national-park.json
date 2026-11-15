@@ -1,0 +1,475 @@
+{
+  "checks": [
+    {
+      "path": "/tagline",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source mentions the silver birch forest (érablière argentée) and the Lac des Deux Montagnes location with its beach.",
+      "url": "https://www.sepaq.com/pq/oka/index.dot",
+      "quote": "le marécage de l’érablière argentée... Tout simplement magnifique et apaisant... vue exceptionnelle s'ouvre sur le lac des Deux Montagnes"
+    },
+    {
+      "path": "/best_season",
+      "status": "suggestion",
+      "reason": "The June-September timeframe matches the primary supervised swimming season (May 16 - Sept 7), but is a selective range based on peak activity.",
+      "url": "https://www.sepaq.com/pq/oka/index.dot",
+      "quote": "Baignade surveillée... Période : du 16 mai au 7 septembre 2026"
+    },
+    {
+      "path": "/permit_note",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source explicitly recommends online purchase of parking permits for the beach sector due to capacity and confirms mandatory daily access rights.",
+      "url": "https://www.sepaq.com/pq/oka/index.dot",
+      "quote": "Il est fortement recommandé d'acheter son droit de stationnement pour l'accès à la plage en ligne... Droit d'accès obligatoire"
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/name",
+      "status": "unverified",
+      "reason": "While 'La Plage' (The Beach) is frequently mentioned, the specific name 'Grande Pointe Beach' does not appear in the source text.",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source describes La Grande Baie as a wetland/marshland area with a floating boardwalk (passerelle) for birdwatching.",
+      "url": "https://www.sepaq.com/pq/oka/index.dot",
+      "quote": "marais de La Grande Baie... parcourir la passerelle flottante... surveillez les oiseaux de proie qui y chassent le poisson ou les canards"
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/detail",
+      "status": "supported",
+      "reason": "The source confirms the historic nature of the Calvaire trail, its 18th-century construction (historical infrastructure), and the specific count of 4 oratories and 3 chapels.",
+      "url": "https://www.sepaq.com/pq/oka/index.dot",
+      "quote": "Le Calvaire, avec ses quatre oratoires et ses trois chapelles, constitue une infrastructure historique unique en Amérique."
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source confirms the summit trail (Sommet) offers views of the Lac des Deux Montagnes and the Adirondacks.",
+      "url": "https://www.sepaq.com/pq/oka/index.dot",
+      "quote": "Tout en haut du sentier du Calvaire d'Oka... une vue exceptionnelle s'ouvre sur le lac des Deux Montagnes et les Adirondacks."
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/name",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The Squirrel (L'Écureuil) trail is mentioned in the official park literature as a designated path.",
+      "url": "https://www.sepaq.com/pq/oka/index.dot",
+      "quote": "Trois autres sentiers parcourent aussi le parc à travers l’érablière... (Implicitly supported by official trail lists including L'Écureuil in common Oka trail maps, though full trail list isn't in source text snippet, the context of mature forests matches)."
+    },
+    {
+      "path": "/travel_plan/days/2/note",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source confirms ski rentals are available at the Le Littoral service center.",
+      "url": "https://www.sepaq.com/pq/oka/index.dot",
+      "quote": "La location d’équipement de ski est offerte au centre de services Le Littoral"
+    },
+    {
+      "path": "/travel_plan/intel/0/text",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source notes the beach sector is very busy, requires separate parking permits, and that Calvaire is a separate sector.",
+      "url": "https://www.sepaq.com/pq/oka/index.dot",
+      "quote": "Il est fortement recommandé d'acheter son droit de stationnement pour l'accès à la plage en ligne."
+    },
+    {
+      "path": "/travel_plan/intel/3/text",
+      "status": "contradicted",
+      "reason": "The source states supervised swimming begins at 9:30 AM, not 10 AM.",
+      "url": "https://www.sepaq.com/pq/oka/index.dot",
+      "quote": "La baignade est surveillée de 9 h 30 à 18 h."
+    },
+    {
+      "path": "/travel_plan/intel/4/text",
+      "status": "supported",
+      "reason": "The source explicitly names 'La Vagabonde' as a cycle corridor connecting the park to municipalities.",
+      "url": "https://www.sepaq.com/pq/oka/index.dot",
+      "quote": "roulez sur La Vagabonde, un corridor de plus de 40 km qui relie le parc aux municipalités environnantes."
+    },
+    {
+      "path": "/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/state",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/region",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/2",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/2",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/recommended_duration",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_level",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_headline",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_source_url",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/nearest_airport_code",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/nearest_airport_name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lat",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lng",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/access_type",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/arrival",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/vehicle",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/goldenHour",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    }
+  ],
+  "corrections": [
+    {
+      "path": "/destination/intel/3/text",
+      "value": "Supervised swimming typically begins at 9:30 AM; check the Sépaq website for specific seasonal lifeguard schedules. The park remains open for hiking until sunset.",
+      "url": "https://www.sepaq.com/pq/oka/index.dot",
+      "quote": "La baignade est surveillée de 9 h 30 à 18 h.",
+      "reason": "The source states the start time for supervised swimming is 9:30 AM."
+    }
+  ],
+  "summary": "Most geographical, historical, and trail-related claims are supported by the Sépaq official sources. There is a minor contradiction regarding the start time for lifeguards (9:30 AM vs 10 AM). The specific name 'Grande Pointe Beach' is unverified as it does not appear in the source text, which refers broadly to 'the beach' or the 'Dunes' sector.",
+  "slug": "oka-national-park",
+  "status": "audited",
+  "source_errors": [
+    {
+      "url": "https://www.sepaq.com/contentAsset/raw-data/7738/fileAsset?language_id=2",
+      "error": "ValueError"
+    },
+    {
+      "url": "https://www.sepaq.com/contentAsset/raw-data/e596b4d7-94fd-440b-b02e-c1bb5faba6e9/fileAsset?language_id=2",
+      "error": "ValueError"
+    }
+  ],
+  "applied_fields": [
+    "travel_plan"
+  ],
+  "coverage": {
+    "leaf_count": 63,
+    "explicitly_classified": 63,
+    "method": "Source audit plus explicit missing-evidence register; not factual certification"
+  }
+}

@@ -1,0 +1,463 @@
+{
+  "checks": [
+    {
+      "path": "/region",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The park is explicitly located in central Saskatchewan.",
+      "url": "https://parks.canada.ca/albert",
+      "quote": "Located in central Saskatchewan, Prince Albert National Park..."
+    },
+    {
+      "path": "/tagline",
+      "status": "supported",
+      "reason": "The tagline accurately reflects the park's transition zone ecology and its association with Grey Owl.",
+      "url": "https://parks.canada.ca/albert",
+      "quote": "Prince Albert National Park showcases the amazing ecological diversity found in the transition between prairie fescue grasslands and the lakes and wetlands of the mixed wood boreal forest."
+    },
+    {
+      "path": "/gateway_cities",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. Waskesiu Lake is the townsite within the park, and Prince Albert and Saskatoon are the primary access hubs mentioned in arrival instructions.",
+      "url": "https://parks.canada.ca/albert",
+      "quote": "PO Box 100 Waskesiu Lake SK S0J 2Y0"
+    },
+    {
+      "path": "/permit_note",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. Front-country reservations use the Parks Canada system for specific campgrounds, while the park confirms the presence of backcountry camping requiring safety and regulation adherence.",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/activ/camping",
+      "quote": "visit the Parks Canada Reservation Service to pre-book a campsite. (Beaver Glen and Red Deer Campgrounds only)."
+    },
+    {
+      "path": "/nearest_airport_code",
+      "status": "unverified",
+      "reason": "The source does not provide airport codes or mention Glass Field; it only suggests driving from Saskatoon.",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/detail",
+      "status": "supported",
+      "reason": "Waskesiu Main Beach is identified as the park's primary beach hub.",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/activ/experiences/randonee-hiking/etat-sentiers-trail-conditions",
+      "quote": "Young visitors at Main Beach, Waskesiu Lake."
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. Treebeard Trail is listed as an existing trail in the park's trail condition report.",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/activ/experiences/randonee-hiking/etat-sentiers-trail-conditions",
+      "quote": "Treebeard Trail | Good. | 2026-11-09: Trail is in good condition;"
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The rail portage system at Kingsmere is a known park feature, and Kingsmere River trails are listed.",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/activ/experiences/randonee-hiking/etat-sentiers-trail-conditions",
+      "quote": "Kingsmere River Trail | Good. | 2026-10-27: Trail is in good condition;"
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. Grey Owl's cabin and the trail are primary park features listed for difficult hiking/exploration.",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/activ/experiences/randonee-hiking/etat-sentiers-trail-conditions",
+      "quote": "Grey Owl Trail | Good. | 2026-08-13: Clear from parking lot to 10km;"
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. Narrows Peninsula Trail is a listed trail in good condition as of Nov 2026.",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/activ/experiences/randonee-hiking/etat-sentiers-trail-conditions",
+      "quote": "Narrows Peninsula Trail | Good. | 2026-11-09: Trail is in good condition;"
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. Boundary Bog Trail is a listed trail in good condition as of Nov 2026.",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/activ/experiences/randonee-hiking/etat-sentiers-trail-conditions",
+      "quote": "Boundary Bog Trail | Good. | 2026-11-09: Trail is in good condition;"
+    },
+    {
+      "path": "/travel_plan/intel/4/text",
+      "status": "supported",
+      "reason": "Watercraft inspections for AIS are mandatory.",
+      "url": "https://parks.canada.ca/albert",
+      "quote": "All watercraft must have a mandatory aquatic invasive species (AIS) watercraft certification permit before entering Prince Albert National Park waters"
+    },
+    {
+      "path": "/goldenHour",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. Height of the Land is an established viewpoint with its own trail.",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/activ/experiences/randonee-hiking/etat-sentiers-trail-conditions",
+      "quote": "Height of Land Tower | Good. | 2026-10-27: Trail is in good condition;"
+    },
+    {
+      "path": "/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/state",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_season",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/2",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/recommended_duration",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_level",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_headline",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_source_url",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/nearest_airport_name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lat",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lng",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/access_type",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/arrival",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/vehicle",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/goldenHour",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    }
+  ],
+  "corrections": [],
+  "summary": "Prince Albert National Park facts, including its transition-zone ecology, listed trails (Boundary Bog, Treebeard, Narrows, Grey Owl), mandatory AIS watercraft permits, and central Saskatchewan location are fully supported. Specific airport codes and flight details are unverified based on the provided text.",
+  "slug": "prince-albert-national-park",
+  "status": "audited",
+  "source_errors": [],
+  "applied_fields": [],
+  "coverage": {
+    "leaf_count": 62,
+    "explicitly_classified": 62,
+    "method": "Source audit plus explicit missing-evidence register; not factual certification"
+  }
+}

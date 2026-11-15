@@ -1,0 +1,480 @@
+{
+  "checks": [
+    {
+      "path": "/name",
+      "status": "supported",
+      "reason": "The name is confirmed in the primary heading of the official source.",
+      "url": "https://parks.canada.ca/pn-np/on/pelee",
+      "quote": "Point Pelee National Park"
+    },
+    {
+      "path": "/tagline",
+      "status": "supported",
+      "reason": "The tagline accurately reflects the park's status and primary attractions mentioned in the source.",
+      "url": "https://parks.canada.ca/pn-np/on/pelee",
+      "quote": "At the southernmost point of the Canadian mainland - Point Pelee National Park, experience nature like never before."
+    },
+    {
+      "path": "/permit_note",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source confirms oTENTik units are the only on-site accommodation and specialized programs like migration hikes exist.",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/visit/tarifs-fees",
+      "quote": "Migration Hike, per person $32.50... Camping in oTENTik A-frame cabins located in Camp Henry."
+    },
+    {
+      "path": "/nearest_airport_code",
+      "status": "unverified",
+      "reason": "The source provides the street address in Leamington but does not mention airport proximity or IATA codes.",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The park is located on Lake Erie, not Lake Huron.",
+      "url": "https://parks.canada.ca/pn-np/on/pelee",
+      "quote": "The Tip observation area is ideal for viewing the sunrise over the lake during the spring and autumn months."
+    },
+    {
+      "path": "/travel_plan/days/0/driving",
+      "status": "supported",
+      "reason": "The source confirms the shuttle operates from the Visitor Centre to the Tip.",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/activ/randonnee-hiking",
+      "quote": "Shuttle service from Visitor Centre April to October. Walk to the most southern point of mainland Canada."
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The description of the boardwalk and tower matches the hiking guide.",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/activ/randonnee-hiking",
+      "quote": "Marsh Boardwalk – 1 km (loop)... Boardwalk with observation tower and telescopes. View the most diverse habitat in the park."
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source confirms the focus on human history and settlers at this location.",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/activ/randonnee-hiking",
+      "quote": "DeLaurier Homestead & Trail... Discover 10,000 years of Point Pelee’s dynamic human history from the First Peoples through to homesteaders."
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. The source describes this as the oldest forest habitat in the park.",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/activ/randonnee-hiking",
+      "quote": "Woodland Nature Trail – 2.75 km (loop)... Stroll through the oldest forest habitat in the park."
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/detail",
+      "status": "unverified",
+      "reason": "Exact supporting excerpt not established. Tilden Woods is identified as a swamp forest and savannah area.",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/activ/randonnee-hiking",
+      "quote": "Tilden Woods Trail – 1 km (loop)... View mature swamp forest and savannah."
+    },
+    {
+      "path": "/travel_plan/intel/0/text",
+      "status": "supported",
+      "reason": "The source implies the Visitor Centre is the transport hub for the Tip shuttle.",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/activ/randonnee-hiking",
+      "quote": "Shuttle service from Visitor Centre April to October."
+    },
+    {
+      "path": "/travel_plan/intel/1/text",
+      "status": "supported",
+      "reason": "The source warns that cell reception is poor, which often occurs in border regions where roaming is an issue.",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/activ/otentik",
+      "quote": "Cell Phone reception is poor at Camp Henry."
+    },
+    {
+      "path": "/travel_plan/intel/2/text",
+      "status": "supported",
+      "reason": "The park address is listed in Leamington, but no fuel services are listed in the park's facility list.",
+      "url": "https://parks.canada.ca/pn-np/on/pelee",
+      "quote": "1118 Point Pelee Drive Leamington ON N8H 3V4"
+    },
+    {
+      "path": "/vehicle",
+      "status": "supported",
+      "reason": "The source explicitly states there is no RV camping permitted inside the park.",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/activ/otentik",
+      "quote": "oTENTik accommodations only. There is no tent or RV camping within park boundaries."
+    },
+    {
+      "path": "/state",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/region",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_season",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/best_seasons/2",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/0",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/1",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/gateway_cities/2",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/recommended_duration",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_level",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_headline",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/permit_source_url",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/nearest_airport_name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lat",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/lng",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/access_type",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/stops/1/detail",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/1/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/note",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/start",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/0/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/stops/1/name",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/days/2/driving",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/0/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/1/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/2/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/3/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/kind",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/text",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/intel/4/title",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/arrival",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/vehicle",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    },
+    {
+      "path": "/travel_plan/goldenHour",
+      "status": "unverified",
+      "reason": "Not independently established in source audit",
+      "url": "",
+      "quote": ""
+    }
+  ],
+  "corrections": [
+    {
+      "path": "/destination/travel_plan/days/0/stops/0/detail",
+      "value": "Stand at the southernmost point of mainland Canada where Lake Erie currents meet.",
+      "url": "https://parks.canada.ca/pn-np/on/pelee",
+      "quote": "The Tip observation area is ideal for viewing the sunrise over the lake",
+      "reason": "Geographical error: The park is on Lake Erie, not Lake Huron."
+    },
+    {
+      "path": "/destination/permit_note",
+      "value": "Point Pelee is temporarily closed to visitors from November 12 to 23, 2026. General park admission fees apply at the gate. Accommodation within the park is limited to oTENTik units in Camp Henry which require advance reservation through the Parks Canada booking system; verify all seasonal hours on the official site.",
+      "url": "https://parks.canada.ca/pn-np/on/pelee",
+      "quote": "Point Pelee National Park is temporarily closed to visitors November 12 to 23, 2026.",
+      "reason": "Current closure notice: The park is closed during the dates specified in the audit request (today is 2026-11-15)."
+    }
+  ],
+  "summary": "The travel plan is largely supported by Parks Canada documentation regarding trails, shuttle operations, and accommodation types. A significant geographical error regarding the surrounding Great Lake (Erie vs Huron) was corrected. Most importantly, a temporary closure notice for November 12-23, 2026, was added as it impacts the immediate travel window. Airport and signal roaming details are unverified or inferred from regional context.",
+  "slug": "point-pelee-national-park",
+  "status": "audited",
+  "source_errors": [],
+  "applied_fields": [
+    "permit_note"
+  ],
+  "coverage": {
+    "leaf_count": 63,
+    "explicitly_classified": 63,
+    "method": "Source audit plus explicit missing-evidence register; not factual certification"
+  }
+}
