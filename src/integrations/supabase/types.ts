@@ -117,6 +117,7 @@ export type Database = {
       }
       destinations: {
         Row: {
+          access_type: string
           affiliate_potential: Json
           airport_lat: number | null
           airport_lng: number | null
@@ -145,6 +146,7 @@ export type Database = {
           nearest_airport_name: string | null
           notes: string | null
           parent_slug: string | null
+          park_authority: string | null
           permit_headline: string | null
           permit_level: Database["public"]["Enums"]["permit_level"] | null
           permit_note: string | null
@@ -173,6 +175,7 @@ export type Database = {
           updated_at: string
         }
         Insert: {
+          access_type?: string
           affiliate_potential?: Json
           airport_lat?: number | null
           airport_lng?: number | null
@@ -201,6 +204,7 @@ export type Database = {
           nearest_airport_name?: string | null
           notes?: string | null
           parent_slug?: string | null
+          park_authority?: string | null
           permit_headline?: string | null
           permit_level?: Database["public"]["Enums"]["permit_level"] | null
           permit_note?: string | null
@@ -229,6 +233,7 @@ export type Database = {
           updated_at?: string
         }
         Update: {
+          access_type?: string
           affiliate_potential?: Json
           airport_lat?: number | null
           airport_lng?: number | null
@@ -257,6 +262,7 @@ export type Database = {
           nearest_airport_name?: string | null
           notes?: string | null
           parent_slug?: string | null
+          park_authority?: string | null
           permit_headline?: string | null
           permit_level?: Database["public"]["Enums"]["permit_level"] | null
           permit_note?: string | null

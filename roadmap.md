@@ -156,3 +156,11 @@
 - [ ] Replace minialife.com in public/robots.txt and public/llms.txt
 - [ ] Connect world-national-parks.net to the project (non-primary)
 - [ ] Publish; submit new sitemap and Change of Address in Search Console
+
+## Canada launch (plan 2026-11-15)
+- [x] Cleaned catalog: scripts/content-pipeline/canada/catalog.json (148 places, 20/84/44 by wave, 18 fly-in)
+- [x] Database: 13 CA regions (draft), destinations.park_authority + access_type
+- [ ] Canadian airport search + anchors in prepare-wave.py
+- [ ] Wave 1 facts → review → publish (spends AI credits; waits for owner go-ahead)
+- [ ] Hide US-only partners on CA pages; fly-in page variant; tests
+- [ ] Waves 2–3, German versions, world-national-parks.net Canada 301s

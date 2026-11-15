@@ -1,0 +1,6 @@
+ALTER TABLE public.destinations ADD COLUMN IF NOT EXISTS park_authority text, ADD COLUMN IF NOT EXISTS access_type text NOT NULL DEFAULT 'road';
+ALTER TABLE public.destinations DROP CONSTRAINT IF EXISTS destinations_access_type_check;
+ALTER TABLE public.destinations ADD CONSTRAINT destinations_access_type_check CHECK (access_type IN ('road','fly-in'));
+INSERT INTO public.regions (country_code, slug, name, status) VALUES
+('ca','british-columbia','British Columbia','draft'),('ca','alberta','Alberta','draft'),('ca','saskatchewan','Saskatchewan','draft'),('ca','manitoba','Manitoba','draft'),('ca','ontario','Ontario','draft'),('ca','quebec','Quebec','draft'),('ca','new-brunswick','New Brunswick','draft'),('ca','nova-scotia','Nova Scotia','draft'),('ca','prince-edward-island','Prince Edward Island','draft'),('ca','newfoundland-and-labrador','Newfoundland and Labrador','draft'),('ca','yukon','Yukon','draft'),('ca','northwest-territories','Northwest Territories','draft'),('ca','nunavut','Nunavut','draft')
+ON CONFLICT (country_code, slug) DO NOTHING;
