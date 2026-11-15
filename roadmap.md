@@ -183,7 +183,7 @@
 - [x] England wave 2 started: 45 draft identities and cached source packets saved; Richmond Park and Rutland Water have reviewed six-stop packets, photos/routes and saved plans from two paid calls. No new places published; 34 Python tests pass.
 - [ ] Complete remaining 43 England source reviews and production; blockers: visitor/access evidence and six reviewed stop identities still incomplete. Island records use the existing non-road template pending ferry-specific evidence, not invented mainland drives.
 - [x] Optimize combined generation, compact evidence, source-bound stop IDs and resumable single-command batches; 288 JS + 33 Python tests pass. Live New Forest output retained, not published because operational claims lack evidence.
-- [ ] Continue England wave 2: all 45 places held before paid generation because approved source packets, reviewed excerpts and sourced stop identities are missing; no new pages published.
+- [ ] Continue England wave 2: two reviewed destination drafts prepared; 43 still need approved visitor evidence and stop identities; no new pages published.
 - [x] Pilot wave: 14 of 15 national parks published
 - [ ] New Forest held: "Tall Trees Trail" not named in official sources
 - [ ] UK price benchmarks (currently "Check live price")
