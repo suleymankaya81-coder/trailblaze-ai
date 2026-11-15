@@ -158,16 +158,18 @@
 - [ ] Publish; submit new sitemap and Change of Address in Search Console
 
 ## Canada launch (plan 2026-11-15)
-- [ ] Finish Saskatchewan Landing and refresh canonical geography for wave 3.
-- [ ] Audit all Canadian records, cover/gallery/activity identity and licenses, official information, access, links, maps and metadata; correct evidenced errors and list unresolved photos.
-- [ ] Use Canada-specific USD estimates (not US defaults); run all JS/Python tests and desktop/mobile end-to-end checks.
+- [x] Finish Saskatchewan Landing and refresh canonical geography for wave 3; 144 Canadian places are published, four held for photos.
+- [x] Screen all 148 Canadian records/photo assignments and apply targeted sourced corrections to 54 records; retain rejected-photo decisions and report unresolved photos.
+- [ ] Complete independent claim-by-claim and visual verification of every Canadian sentence/photo; external source access and licensed missing photos remain blockers. Metadata screening is not full verification.
+- [x] Use Canada-specific USD market estimates; 285 JS and 13 Python tests pass; desktop/mobile travel and daily Maps controls checked.
 - [x] Cleaned catalog: scripts/content-pipeline/canada/catalog.json (148 places, 20/84/44 by wave, 18 fly-in)
 - [x] Database: 13 CA regions (draft), destinations.park_authority + access_type
 - [x] Canadian airport search + anchors in prepare-wave.py
 - [x] Wave 1: 20 places published (photos reviewed, main-airport overrides, official reservation sources)
 - [x] Hide US-only partners + Black Friday on CA pages; test
-- [ ] CA pages still show US-dollar 'typical rate' estimates on rental cards — decide: hide or convert to CAD
-- [ ] Fly-in page variant (wave 3)
+- [x] Canadian rental/stay benchmarks remain in USD, based on Canadian market data with dated exchange conversion and source links.
+- [x] Fly-in page variant: no road rental/daily driving controls; expedition stages instead of a three-day circuit, matching structured data.
 - [x] Wave 2: 81 places published
-- [ ] Held (no correct photos): alice-lake, dollar-lake, murray-beach provincial parks
-- [ ] Wave 3, German versions, world-national-parks.net Canada 301s
+- [ ] Held for licensed exact-place photos: Alice Lake, Dollar Lake, Murray Beach provincial parks and Tuktut Nogait National Park.
+- [x] Wave 3: Saskatchewan Landing completed; wrong Texas Tuktut Nogait imagery withheld; geography refreshed.
+- [ ] German Canada versions and world-national-parks.net Canada 301s: not part of this audit; require translation and verified old URL mapping.

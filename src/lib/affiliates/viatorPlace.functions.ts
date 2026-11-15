@@ -43,10 +43,11 @@ const DAY = 24 * 60 * 60 * 1000;
 export const getPlaceExperiences = createServerFn({ method: "GET" })
   .inputValidator((d: unknown) => z.object({ slug: z.string().regex(/^[a-z0-9-]{1,80}$/) }).parse(d))
   .handler(async ({ data }): Promise<{ name: string; items: PlaceExperience[]; unavailable?: boolean }> => {
-    const { data: dest } = await supabase.from("destinations").select("name, state").eq("slug", data.slug).eq("status", "published").maybeSingle();
+    const { data: dest } = await supabase.from("destinations").select("name, state, country_code, region").eq("slug", data.slug).eq("status", "published").maybeSingle();
     if (!dest) return { name: "", items: [] };
     const { data: cached } = await supabase.from("viator_place_cache").select("items, fetched_at").eq("slug", data.slug).maybeSingle();
-    const cachedItems = ((cached?.items as PlaceExperience[] | undefined) ?? []).filter((item) => isPlaceExperienceRelevant(dest.name, item.title, item.summary));
+    const location = { countryCode: dest.country_code, region: dest.state ?? dest.region };
+    const cachedItems = ((cached?.items as PlaceExperience[] | undefined) ?? []).filter((item) => isPlaceExperienceRelevant(dest.name, item.title, item.summary, location));
     if (cached && Date.now() - new Date(cached.fetched_at).getTime() < DAY) return { name: dest.name, items: cachedItems };
 
     const key = process.env["VIATOR_API_KEY"];
@@ -56,7 +57,7 @@ export const getPlaceExperiences = createServerFn({ method: "GET" })
       const res = await fetch("https://api.viator.com/partner/search/freetext", {
         method: "POST",
         headers: { "exp-api-key": key, Accept: "application/json;version=2.0", "Accept-Language": "en-US", "Content-Type": "application/json" },
-        body: JSON.stringify({ searchTerm: `${dest.name}${dest.state ? ` ${dest.state}` : ""}`, searchTypes: [{ searchType: "PRODUCTS", pagination: { start: 1, count: 20 } }], currency: "USD" }),
+        body: JSON.stringify({ searchTerm: `${dest.name} ${dest.state ?? dest.region ?? ""}${dest.country_code === "ca" ? " Canada" : ""}`, searchTypes: [{ searchType: "PRODUCTS", pagination: { start: 1, count: 20 } }], currency: "USD" }),
         signal: AbortSignal.timeout(15000),
       });
       if (!res.ok) {
@@ -65,7 +66,7 @@ export const getPlaceExperiences = createServerFn({ method: "GET" })
       }
       const body = (await res.json()) as { products?: { results?: Product[] } };
       for (const p of body.products?.results ?? []) {
-        if (!isPlaceExperienceRelevant(dest.name, p.title, p.description)) continue;
+        if (!isPlaceExperienceRelevant(dest.name, p.title, p.description, location)) continue;
         const url = verifiedViatorProductUrl(p.productUrl);
         const image = viatorProductImage(p.images);
         if (!url || !image?.startsWith("https://")) continue;

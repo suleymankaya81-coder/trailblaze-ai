@@ -20,7 +20,7 @@ export function dayNudge(i: number, total: number, airportCode?: string | null):
 export function TravelFlow({ name, plan, airportCode, nudges = false, region, slug }: { name: string; plan: TravelPlan; airportCode?: string | null; nudges?: boolean; region?: string; slug?: string }) {
   const nonRoad = !!slug && isNonRoadDestination(slug);
   function download() {
-    const text = [name, ...plan.days.flatMap((day, i) => [`\nDay ${i + 1}: ${day.title}`, day.start, ...day.stops.map(s => `${s.name}: ${s.detail}`), day.driving, day.note]), "\nLOCAL NOTES", ...plan.intel.map(t => `${t.title}: ${t.text}`), ...plan.sources.map(s => `${s.label}: ${s.url}`)].join("\n");
+    const text = [name, ...plan.days.flatMap((day, i) => [`\n${nonRoad ? "Stage" : "Day"} ${i + 1}: ${day.title}`, day.start, ...day.stops.map(s => `${s.name}: ${s.detail}`), day.driving, day.note]), "\nLOCAL NOTES", ...plan.intel.map(t => `${t.title}: ${t.text}`), ...plan.sources.map(s => `${s.label}: ${s.url}`)].join("\n");
     const url = URL.createObjectURL(new Blob([text], { type: "text/plain;charset=utf-8" }));
     const link = document.createElement("a"); link.href = url; link.download = `${name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-trip.txt`; link.click(); URL.revokeObjectURL(url);
   }

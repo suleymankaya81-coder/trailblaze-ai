@@ -4,9 +4,9 @@
   "records": {
     "clear-lake": {
       "fields": {
-        "hero_image": "https://wildparkroutes.com/images/destination-cards/f292edd9c28c2b5e.jpg",
+        "hero_image": "https://wildparkroutes.com/__l5e/assets-v1/d148d074-a75b-49b1-b1fb-b8d51b2dab64/clear-lake-manitoba.jpg",
         "gallery": [
-          "https://wildparkroutes.com/images/destination-cards/200bb0ffb9da2490.jpg"
+          "/images/destination-cards/200bb0ffb9da2490.jpg"
         ],
         "photo_credit": "Hero: Shahnoor Habib Munmun / CC BY 3.0 via Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Clear_Lake_Riding_Mountain_National_Park_Manitoba_Canada.JPG · Gallery: Shahnoor Habib Munmun / CC BY 3.0 via Wikimedia Commons",
         "lat": 50.65833,
@@ -115,10 +115,10 @@
     },
     "great-slave-lake": {
       "fields": {
-        "hero_image": "https://wildparkroutes.com/images/destination-cards/fce1f3e24f96c7a2.jpg",
+        "hero_image": "https://wildparkroutes.com/__l5e/assets-v1/f79371c1-fdd7-4fb6-bd20-d7e63c2acc7c/great-slave-lake-hay-river.jpg",
         "gallery": [
-          "https://wildparkroutes.com/images/destination-cards/37188a7f090796fb.jpg",
-          "https://wildparkroutes.com/images/destination-cards/5f68ae3df44cafb0.jpg"
+          "/images/destination-cards/37188a7f090796fb.jpg",
+          "/images/destination-cards/5f68ae3df44cafb0.jpg"
         ],
         "photo_credit": "Hero: Ymblanter / CC BY-SA 4.0 via Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Great_Slave_Lake_beach_in_Hay_River_2.jpg · Gallery: Paul Gierszewski / Public domain via Wikimedia Commons; Ymblanter / CC BY-SA 4.0 via Wikimedia Commons"
       },
@@ -249,7 +249,7 @@
       "fields": {
         "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Emerald_Lake%2C_Yukon_3.jpg/1920px-Emerald_Lake%2C_Yukon_3.jpg",
         "gallery": [
-          "https://wildparkroutes.com/images/destination-cards/217d0d2aa79c302a.jpg",
+          "/images/destination-cards/217d0d2aa79c302a.jpg",
           "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Emerald_Lake_Yukon_%281%29.jpg/1280px-Emerald_Lake_Yukon_%281%29.jpg"
         ],
         "photo_credit": "Hero: Wknight94 / CC BY-SA 3.0 via Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Emerald_Lake,_Yukon_3.jpg · Gallery: Sunnya343 / CC BY-SA 4.0 via Wikimedia Commons; John Johnston / CC BY 2.0 via Wikimedia Commons",
@@ -589,20 +589,113 @@
       "fields": {
         "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Mount_Andromeda_at_dusk%2C_Jasper_National_Park%2C_Alberta%2C_Canada.jpg/1920px-Mount_Andromeda_at_dusk%2C_Jasper_National_Park%2C_Alberta%2C_Canada.jpg",
         "gallery": [
-          "https://wildparkroutes.com/images/destination-cards/4bbc7b47ebe9d718.jpg",
+          "/images/destination-cards/4bbc7b47ebe9d718.jpg",
           "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Athabasca_Glacier_from_the_valley_floor%2C_Jasper_National_Park%2C_Alberta%2C_Canada.jpg/1280px-Athabasca_Glacier_from_the_valley_floor%2C_Jasper_National_Park%2C_Alberta%2C_Canada.jpg"
         ],
-        "photo_credit": "Hero: Ethan Sahagun / CC BY 4.0 via Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Mount_Andromeda_at_dusk,_Jasper_National_Park,_Alberta,_Canada.jpg · Gallery: Ethan Sahagun / CC BY 4.0 via Wikimedia Commons; Ethan Sahagun / CC BY 4.0 via Wikimedia Commons"
+        "photo_credit": "Hero: Ethan Sahagun / CC BY 4.0 via Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Mount_Andromeda_at_dusk,_Jasper_National_Park,_Alberta,_Canada.jpg · Gallery: Ethan Sahagun / CC BY 4.0 via Wikimedia Commons; Ethan Sahagun / CC BY 4.0 via Wikimedia Commons",
+        "travel_plan": {
+          "arrival": "Collect your rental at Edmonton (YEG) and complete major grocery shopping in Hinton or Edmonton before entering the park gates.",
+          "days": [
+            {
+              "driving": "Allow 1.5 to 2 hours for the return Maligne Lake Road drive; conditions vary",
+              "note": "Maligne Lake Road is a prime area for wildlife viewing; maintain a slow speed and do not feed animals.",
+              "start": "Suggested: 8:30 AM from Jasper Townsite",
+              "stops": [
+                {
+                  "detail": "This area remains closed for the 2026 season. Do not enter the closed road or trail; choose a currently open route from Parks Canada advisories.",
+                  "name": "Maligne Canyon"
+                },
+                {
+                  "detail": "Visit the largest glacially fed lake in the Rockies, famous for the Spirit Island vista.",
+                  "name": "Maligne Lake"
+                }
+              ],
+              "title": "Canyons and Alpine Lakes"
+            },
+            {
+              "driving": "Allow 2 to 3 hours for the Icefields Parkway southward; conditions vary",
+              "note": "Weather at the Icefield is significantly colder than the townsite; allow extra time for sudden snow or wind.",
+              "start": "Suggested: 9 AM from Jasper Townsite",
+              "stops": [
+                {
+                  "detail": "Observe the power of the Athabasca River as it thunders through a narrow quartzite gorge.",
+                  "name": "Athabasca Falls"
+                },
+                {
+                  "detail": "View the Athabasca Glacier from the Toe of the Glacier trail or the Discovery Centre.",
+                  "name": "Columbia Icefield"
+                }
+              ],
+              "title": "Glacial Ice and High Passes"
+            },
+            {
+              "driving": "Allow 2 to 2.5 hours total driving between these disparate sites; conditions vary",
+              "note": "The road to Mount Edith Cavell has vehicle length restrictions and is seasonally closed until late June.",
+              "start": "Suggested: 8:30 AM from Jasper Townsite",
+              "stops": [
+                {
+                  "detail": "This area remains closed for the 2026 season. Do not enter the closed road or trail; choose a currently open route from Parks Canada advisories.",
+                  "name": "Mount Edith Cavell"
+                },
+                {
+                  "detail": "Soak in the hottest mineral springs in the Rockies located in the remote Fiddle Valley.",
+                  "name": "Miette Hot Springs"
+                }
+              ],
+              "title": "Peaks and Natural Springs"
+            }
+          ],
+          "goldenHour": "Sunset at Pyramid Lake offers reflections of Pyramid Mountain, though the peaks may lose light earlier than expected in autumn.",
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "The first and second bridge parking lots fill early; utilize the lower fifth bridge lot for a quieter approach to the canyon. At Mount Edith Cavell, parking is strictly limited to small vehicles.",
+              "title": "Maligne Canyon Congestion"
+            },
+            {
+              "kind": "signal",
+              "text": "There is virtually no cellular service along Highway 93 between Jasper and Lake Louise. Download all maps and reservation confirmations for offline use.",
+              "title": "Icefields Parkway Dead Zones"
+            },
+            {
+              "kind": "fuel",
+              "text": "Fuel is available in the Jasper townsite and at the Saskatchewan River Crossing. Prices at the Crossing are typically higher due to its remote location.",
+              "title": "Strategic Refueling"
+            },
+            {
+              "kind": "timing",
+              "text": "The road to Mount Edith Cavell usually opens in mid-to-late June depending on snowpack. Check the Parks Canada 'Roads to Trails' report for exact seasonal status.",
+              "title": "Cavell Road Openings"
+            },
+            {
+              "kind": "access",
+              "text": "Seasonal speed limits and temporary area closures are frequently enforced to protect caribou and bear populations. Obey all posted signage near the Sunwapta Pass.",
+              "title": "Wildlife Corridors"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T12:44:00Z",
+          "sources": [
+            {
+              "label": "Parks Canada: Jasper National Park",
+              "url": "https://parks.canada.ca/pn-np/ab/jasper"
+            }
+          ],
+          "vehicle": "A standard car is suitable for the Icefields Parkway, but an RV offers convenience for the long distances between Jasper and Banff sites.",
+          "version": 1
+        }
       },
       "sources": [
         "https://commons.wikimedia.org/wiki/File:Meltwater_at_the_terminus_of_the_Athabasca_Glacier,_Jasper_National_Park,_Alberta,_Canada.jpg",
         "https://commons.wikimedia.org/wiki/File:Mount_Andromeda_at_dusk,_Jasper_National_Park,_Alberta,_Canada.jpg",
-        "https://commons.wikimedia.org/wiki/File:Athabasca_Glacier_from_the_valley_floor,_Jasper_National_Park,_Alberta,_Canada.jpg"
+        "https://commons.wikimedia.org/wiki/File:Athabasca_Glacier_from_the_valley_floor,_Jasper_National_Park,_Alberta,_Canada.jpg",
+        "https://parks.canada.ca/pn-np/ab/jasper/activ/experience/sentiers-trails/cavell",
+        "https://www.parks.canada.ca/pn-np/ab/jasper/activ/itineraires-itineraries/canyon-maligne"
       ]
     },
     "mount-revelstoke-national-park": {
       "fields": {
-        "hero_image": "https://wildparkroutes.com/images/destination-cards/0ae00c918e897925.jpg",
+        "hero_image": "/images/destination-cards/0ae00c918e897925.jpg",
         "gallery": [
           "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Lake%2C_Mount_Revelstoke_National_Park_20240825_1.jpg/1280px-Lake%2C_Mount_Revelstoke_National_Park_20240825_1.jpg",
           "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/View_of_Lake_Revelstoke_from_Mount_Revelstoke_National_Park_20240825_1.jpg/1280px-View_of_Lake_Revelstoke_from_Mount_Revelstoke_National_Park_20240825_1.jpg"
@@ -617,7 +710,7 @@
     },
     "chute-montmorency": {
       "fields": {
-        "hero_image": "https://wildparkroutes.com/images/destination-cards/16212a203ccfa7e4.jpg",
+        "hero_image": "/images/destination-cards/16212a203ccfa7e4.jpg",
         "gallery": [
           "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Parc_de_la_Chute-Montmorency_001.jpg/1280px-Parc_de_la_Chute-Montmorency_001.jpg",
           "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Montmorency_waterfall%2C_Qu%C3%A9bec%2C_Qu%C3%A9bec.jpg/1280px-Montmorency_waterfall%2C_Qu%C3%A9bec%2C_Qu%C3%A9bec.jpg"
@@ -632,7 +725,7 @@
     },
     "ile-bonaventure-et-du-rocher-perce-national-park": {
       "fields": {
-        "hero_image": "https://wildparkroutes.com/images/destination-cards/9f2bcbcc8dca63f6.jpg",
+        "hero_image": "/images/destination-cards/9f2bcbcc8dca63f6.jpg",
         "gallery": [
           "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Rocher_Perc%C3%A9_%E2%80%93_Perc%C3%A9%2C_QC_%E2%80%93_%282018-07-19%29.jpg/1280px-Rocher_Perc%C3%A9_%E2%80%93_Perc%C3%A9%2C_QC_%E2%80%93_%282018-07-19%29.jpg",
           "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Parc_national_de_l%27%C3%8Ele-Bonaventure-et-du-Rocher-Perc%C3%A9.jpg/1280px-Parc_national_de_l%27%C3%8Ele-Bonaventure-et-du-Rocher-Perc%C3%A9.jpg"
@@ -3407,8 +3500,8 @@
                   "name": "Rainbow Range"
                 },
                 {
-                  "detail": "Walk through vast alpine meadows that bloom with wildflowers in late July and early August.",
-                  "name": "McCauley Meadows"
+                  "detail": "Ask BC Parks for an appropriate currently open route rather than following an unverified meadow name.",
+                  "name": "Park-authority-confirmed walking route"
                 }
               ],
               "title": "Alpine Colors and Volcanic Peaks"
@@ -3419,11 +3512,11 @@
               "start": "Suggested: 9:30 AM from Bella Coola",
               "stops": [
                 {
-                  "detail": "Visit the river banks where grizzly bears often congregate during the salmon spawn in late summer.",
-                  "name": "Atnarko River"
+                  "detail": "When operating, use the staffed wildlife-viewing area and follow ranger and Nuxalk staff directions. Verify seasonal access before travelling.",
+                  "name": "Belarko Wildlife Viewing Area"
                 },
                 {
-                  "detail": "Explore the lower valley's lush cedar forests and take a short walk to the viewing platform over the rushing creek.",
+                  "detail": "Check current public access instructions; do not assume a wildlife-viewing platform is available at this location.",
                   "name": "Burnt Bridge Creek"
                 }
               ],
@@ -3459,7 +3552,7 @@
             }
           ],
           "markers": [],
-          "reviewedAt": "2026-11-15T12:35:00Z",
+          "reviewedAt": "2026-11-15T12:44:00Z",
           "sources": [
             {
               "label": "BC Parks: Tweedsmuir South",
@@ -3468,7 +3561,8 @@
           ],
           "vehicle": "A high-clearance 4WD is strongly recommended for the steep grades of Heckman Pass and accessing unpaved trailheads safely.",
           "version": 1
-        }
+        },
+        "permit_note": "Camping fees, registration and reservations vary by area. Check the current Tweedsmuir park page and the rules for your specific campsite or route."
       },
       "sources": [
         "https://www.tourismpei.com/what-to-do/beaches-parks/basin-head-provincial-park",
@@ -3480,7 +3574,405 @@
         "https://www.travelyukon.com/en/see-and-do/regions/southern-lakes",
         "https://bcparks.ca/bowron-lake-park/",
         "https://bcparks.ca/tweedsmuir-park/",
-        "https://parks.canada.ca/pn-np/pe/pei-ipe"
+        "https://parks.canada.ca/pn-np/pe/pei-ipe",
+        "https://bcparks.ca/tweedsmuir-park/"
+      ]
+    },
+    "mont-megantic-national-park": {
+      "fields": {
+        "travel_plan": {
+          "arrival": "Pickup rental at Quebec Jean Lesage (YQB), source supplies in Sherbrooke or Lac-Mégantic, and check-in at the Notre-Dame-des-Bois park entrance.",
+          "days": [
+            {
+              "driving": "Allow 30-45 minutes; mountain access roads may be steep and slow.",
+              "note": "Summit weather is significantly colder than the gateway towns; allow extra time for steep elevation gains.",
+              "start": "Suggested: 8 AM from Notre-Dame-des-Bois",
+              "stops": [
+                {
+                  "detail": "Trek to the highest point accessible by trail to view the ASTROLab observatory and panoramic vistas of the Appalachian range.",
+                  "name": "Mont Mégantic Summit"
+                },
+                {
+                  "detail": "Visit the summit chapel and enjoy steep lookouts facing the southern Eastern Townships valleys.",
+                  "name": "Mont Saint-Joseph"
+                }
+              ],
+              "title": "Summit Ascents and High Altitude Views"
+            },
+            {
+              "driving": "Local park transfers only; allow 20 minutes between sectors.",
+              "note": "Evening astronomy programs require separate dedicated bookings and are weather-dependent.",
+              "start": "Suggested: 10 AM from the ASTROLab",
+              "stops": [
+                {
+                  "detail": "Explore the Franceville sector using the official Sentier des Cimes map and select a distance suited to your group.",
+                  "name": "Sentier des Cimes de Franceville"
+                },
+                {
+                  "detail": "Engage with interactive astronomy exhibits in this dedicated dark-sky facility located at the mountain base.",
+                  "name": "ASTROLab Activity Centre"
+                }
+              ],
+              "title": "Celestial Discoveries and Valley Trails"
+            },
+            {
+              "driving": "Allow 1 hour if moving between the Franceville and Observatoire sectors.",
+              "note": "The Franceville sector is separate from the main observatory entrance; check map routes carefully.",
+              "start": "Suggested: 9 AM from Franceville Sector",
+              "stops": [
+                {
+                  "detail": "Follow the watercourse through the Franceville sector to see cascading rapids and rocky outcrops.",
+                  "name": "Ruisseau de la Montagne"
+                },
+                {
+                  "detail": "Follow the documented 6.7-kilometre Franceville-sector trail past rocky escarpments and viewpoints.",
+                  "name": "Sentier des Escarpements"
+                }
+              ],
+              "title": "Riverside Rhythms and Dark Sky Preparation"
+            }
+          ],
+          "goldenHour": "Mont Saint-Joseph lookout for sunset, noting that descent in the dark requires preparation.",
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Parking is divided between the Observatoire and Franceville sectors; verify your trailhead location to avoid long detours. Spaces may reach capacity during peak autumn foliage weekends.",
+              "title": "Sector Specific Lots"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular reception is highly inconsistent in the deep valleys and Franceville sector. Download offline maps at the ASTROLab before heading to remote trailheads.",
+              "title": "Mountain Topography Interference"
+            },
+            {
+              "kind": "fuel",
+              "text": "Fuel is available in Lac-Mégantic and Notre-Dame-des-Bois; there are no stations within the park boundaries. Ensure a full tank before ascending the steep summit access roads.",
+              "title": "Gateway Service Availability"
+            },
+            {
+              "kind": "timing",
+              "text": "Public observatory access is strictly managed via scheduled evening tours only. Day hikers should aim to be off the trails by dusk unless participating in an official night activity.",
+              "title": "Dark Sky Window"
+            },
+            {
+              "kind": "access",
+              "text": "The road to the summit observatory may be restricted to shuttle use or closed to private vehicles during winter months. Always check the official Sépaq alerts for seasonal road closures.",
+              "title": "Winter Road Conditions"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T12:44:00Z",
+          "sources": [
+            {
+              "label": "Sépaq Mont-Mégantic",
+              "url": "https://www.sepaq.com/pq/mme/"
+            }
+          ],
+          "vehicle": "Standard vehicles are suitable, but low-clearance cars should exercise caution on secondary park roads; check rental terms for unpaved surfaces.",
+          "version": 1
+        }
+      },
+      "sources": [
+        "https://www.sepaq.com/resources/docs/pq/mme/mme_guide_visiteur.pdf"
+      ]
+    },
+    "mont-saint-bruno-national-park": {
+      "fields": {
+        "travel_plan": {
+          "arrival": "Fly into Montreal-Trudeau (YUL), take the A-20 East, and source any needs in Longueuil or Saint-Bruno before reaching the park gates.",
+          "days": [
+            {
+              "driving": "Allow 15 minutes; local residential roads can be busy during school hours.",
+              "note": "Swimming is strictly prohibited in all park lakes to protect the fragile ecosystem.",
+              "start": "Suggested: 9 AM from Saint-Bruno-de-Montarville",
+              "stops": [
+                {
+                  "detail": "Follow the easy circular path around the park's largest lake, popular for birdwatching and tranquil forest views.",
+                  "name": "Lac Seigneurial"
+                },
+                {
+                  "detail": "Visit this historic mill building located between the lakes, often serving as a resting point for walkers.",
+                  "name": "Le Moulin Tea House"
+                }
+              ],
+              "title": "The Lakes of the Mountain"
+            },
+            {
+              "driving": "Minimal driving; most sights are connected by a central trail network.",
+              "note": "Trail conditions can be muddy in the spring; stick to the gravel paths during thaws.",
+              "start": "Suggested: 10 AM from the Discovery Centre",
+              "stops": [
+                {
+                  "detail": "See the apple trees that reflect the region's agricultural heritage, particularly vibrant during the spring blossom.",
+                  "name": "The Historic Orchard"
+                },
+                {
+                  "detail": "Follow the documented intermediate 8.8-kilometre loop from the discovery and visitors centre.",
+                  "name": "Le Montérégien"
+                }
+              ],
+              "title": "Orchards and Elevated Views"
+            },
+            {
+              "driving": "Allow 10 minutes from the town center; parking is concentrated at the main gate.",
+              "note": "In winter, specific trails are reserved exclusively for cross-country skiing or fat-biking.",
+              "start": "Suggested: 9 AM from the Main Entrance",
+              "stops": [
+                {
+                  "detail": "A quieter secondary lake surrounded by birch trees, ideal for seeing local wildlife away from the main crowds.",
+                  "name": "Lac des Bouleaux"
+                },
+                {
+                  "detail": "A forested loop named after the Great Horned Owl, showcasing the dense canopy of this urban forest.",
+                  "name": "Grand-Duc Trail"
+                }
+              ],
+              "title": "Winter Trails and Forest Solitude"
+            }
+          ],
+          "goldenHour": "The shores of Lac Seigneurial offer soft light reflections, though the park closes shortly after sunset.",
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "The main lot often fills before 10 AM on sunny weekends and holidays. Access is denied at the gate once the pre-sold permit quota is reached.",
+              "title": "Morning Capacity Issues"
+            },
+            {
+              "kind": "signal",
+              "text": "Mobile signal is excellent throughout the park due to its location within the Montreal metropolitan area. Offline maps are generally not required for navigation.",
+              "title": "Full Urban Connectivity"
+            },
+            {
+              "kind": "fuel",
+              "text": "Ample fuel and charging stations are located within two kilometers of the park entrance in Saint-Bruno-de-Montarville. No services exist inside the park gates.",
+              "title": "Immediate Suburban Services"
+            },
+            {
+              "kind": "timing",
+              "text": "Visit on Tuesday or Wednesday to avoid the heavy local exercise crowds that frequent the trails after work hours. Early morning offers the best birdwatching.",
+              "title": "Weekday Advantage"
+            },
+            {
+              "kind": "access",
+              "text": "Dogs are permitted only in designated areas and trails under Sépaq conditions. Check the current seasonal dog-access map before bringing a dog.",
+              "title": "Strict Environmental Rules"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T12:44:00Z",
+          "sources": [
+            {
+              "label": "Sépaq Mont-Saint-Bruno",
+              "url": "https://www.sepaq.com/pq/msb/"
+            }
+          ],
+          "vehicle": "Any standard vehicle is fine; bike racks are highly recommended as the park is a popular cycling hub from the city.",
+          "version": 1
+        }
+      },
+      "sources": [
+        "https://www.sepaq.com/pq/msb/annexes/randonnee_pedestre.dot",
+        "https://www.sepaq.com/animaux/annexes/endroits-autorises-mont-saint-bruno.dot"
+      ]
+    },
+    "harrison-lake": {
+      "fields": {
+        "travel_plan": {
+          "arrival": "Arrive via Abbotsford (YXX), drive north through Agassiz, and secure supplies in the village before heading to provincial park sites.",
+          "days": [
+            {
+              "driving": "Minimal; local village areas are walkable from central parking.",
+              "note": "Weekend crowds in the village can significantly increase travel time between local sights.",
+              "start": "Suggested: 9 AM from Harrison Village",
+              "stops": [
+                {
+                  "detail": "Walk the scenic promenade for a view of the floating water park and the surrounding mountains.",
+                  "name": "Harrison Lagoon"
+                },
+                {
+                  "detail": "Walk the woodland trail decorated with whimsical clay masks made by a local artist; follow current access guidance.",
+                  "name": "Spirit Trail"
+                }
+              ],
+              "title": "Lakeside Vistas and Village Life"
+            },
+            {
+              "driving": "Allow 1 hour for the winding roads into the provincial park area; conditions vary.",
+              "note": "Provincial park gates typically close at dusk; check posted seasonal hours.",
+              "start": "Suggested: 8:30 AM from Agassiz",
+              "stops": [
+                {
+                  "detail": "Visit Hicks Lake or Deer Lake for quiet water activities away from the main resort area.",
+                  "name": "Sasquatch Provincial Park"
+                },
+                {
+                  "detail": "A popular day-use spot for picnicking and viewing the expansive northern reach of the lake.",
+                  "name": "Green Point"
+                }
+              ],
+              "title": "Eastern Shore Adventure"
+            },
+            {
+              "driving": "Local road travel to the confirmed visitor sites; do not assume forestry-road access.",
+              "note": "Forest service roads may be rough; high clearance is advised for falls access.",
+              "start": "Suggested: 9:30 AM from Harrison Hot Springs",
+              "stops": [
+                {
+                  "detail": "A short drive to Harrison Mills to explore a 1920s general store and farm near the Harrison River.",
+                  "name": "Kilby Historic Site"
+                },
+                {
+                  "detail": "Continue your visit in the documented Kilby area, checking current opening and access conditions.",
+                  "name": "Kilby day-use area"
+                }
+              ],
+              "title": "River Confluence and History"
+            }
+          ],
+          "goldenHour": "Sunset from the Harrison Lake public docks, looking north toward the Douglas Ranges.",
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Paid parking is in effect throughout the Harrison Village core. Sasquatch Provincial Park lots often reach capacity by mid-morning on sunny summer weekends.",
+              "title": "Village and Park Congestion"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular reception is strong in Harrison Hot Springs and Agassiz but drops off quickly when traveling north along the forest service roads or deeper into Sasquatch Park.",
+              "title": "Variable Mountain Coverage"
+            },
+            {
+              "kind": "fuel",
+              "text": "Major fuel stations are located in Agassiz and Chilliwack. There is no fuel available along the remote East or West Harrison Forest Service Roads.",
+              "title": "Fraser Valley Supply Points"
+            },
+            {
+              "kind": "timing",
+              "text": "Lake levels fluctuate significantly with spring snowmelt; beach sizes at Green Point and the village may vary. Boat launches can be impacted by these seasonal changes.",
+              "title": "Seasonal Water Levels"
+            },
+            {
+              "kind": "access",
+              "text": "The West Harrison FSR is a rugged industrial road; check for active logging activity and washouts before attempting to reach the northern end of the lake.",
+              "title": "Forest Service Road Status"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T12:44:00Z",
+          "sources": [
+            {
+              "label": "Village of Harrison Hot Springs",
+              "url": "https://www.harrisonhotsprings.ca"
+            },
+            {
+              "label": "BC Parks - Sasquatch",
+              "url": "https://bcparks.ca/sasquatch-park/"
+            }
+          ],
+          "vehicle": "Standard vehicles are fine for the village and Sasquatch Provincial Park; 4WD with high clearance is required for the Harrison Forest Service Roads.",
+          "version": 1
+        }
+      },
+      "sources": [
+        "https://tourismharrison.com/top-hikes-in-the-harrison-river-valley/"
+      ]
+    },
+    "riding-mountain-national-park": {
+      "fields": {
+        "travel_plan": {
+          "arrival": "Pick up supplies in Brandon or Dauphin before entering the park; check into the Wasagaming Visitor Centre for trail conditions.",
+          "days": [
+            {
+              "driving": "Allow 1-2 hours for the loop to Lake Audy; road conditions vary by recent rainfall.",
+              "note": "Stay inside your vehicle when viewing bison to ensure safety and herd health.",
+              "start": "Suggested: 9 AM from Wasagaming",
+              "stops": [
+                {
+                  "detail": "Drive through the enclosure to observe a managed herd of plains bison in their natural prairie habitat.",
+                  "name": "Lake Audy Bison Paddock"
+                },
+                {
+                  "detail": "Take in the views from the edge of the Manitoba Escarpment, where the highland forest meets the agricultural plains.",
+                  "name": "Mount Agassiz"
+                }
+              ],
+              "title": "Manitoba Escarpment and Bison Vistas"
+            },
+            {
+              "driving": "Local townsite travel is easily managed by foot or bicycle; allow 15 minutes for drives to nearby trailheads.",
+              "note": "Watercraft must undergo mandatory inspection for invasive species at the designated station.",
+              "start": "Suggested: 10 AM from the Visitor Centre",
+              "stops": [
+                {
+                  "detail": "Explore the historic log buildings and manicured gardens that characterize this 1930s-era resort village.",
+                  "name": "Wasagaming Townsite"
+                },
+                {
+                  "detail": "Walk the boardwalk to view diverse birdlife and aquatic plants in a sheltered wetland environment.",
+                  "name": "Ominitik Marsh"
+                }
+              ],
+              "title": "Clear Lake Heritage and Waterways"
+            },
+            {
+              "driving": "Allow 45 minutes to 1 hour to reach the northern park sectors from Wasagaming.",
+              "note": "Be bear aware in these denser forest areas; carry bear spray and make noise.",
+              "start": "Suggested: 8:30 AM from the North Gate",
+              "stops": [
+                {
+                  "detail": "Parks Canada lists a Moon Lake Trail closure dated November 6, 2026. Check the current bulletin and do not enter closed trails.",
+                  "name": "Moon Lake"
+                },
+                {
+                  "detail": "Use the current townsite map for an accessible walk; Baldy Mountain belongs to Duck Mountain and is not a local Riding Mountain stop.",
+                  "name": "Wasagaming townsite"
+                }
+              ],
+              "title": "Boreal Forest and Backcountry Trails"
+            }
+          ],
+          "goldenHour": "The Wasagaming Pier offers clear sunset views over Clear Lake, particularly in late summer.",
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Parking near the Main Pier and Visitor Centre fills rapidly during July and August weekends. Utilize secondary lots near the beach or walk from regional campgrounds.",
+              "title": "Wasagaming Congestion"
+            },
+            {
+              "kind": "signal",
+              "text": "Reliable cell service is generally limited to Wasagaming and Highway 10. Expect signal loss on the west end trails and near Lake Audy.",
+              "title": "Townsite vs Backcountry"
+            },
+            {
+              "kind": "fuel",
+              "text": "Full service stations are available in Wasagaming and Onanole just south of the park. Plan for limited services when traveling north toward Dauphin.",
+              "title": "Gateway Service"
+            },
+            {
+              "kind": "timing",
+              "text": "Many services in the townsite operate seasonally from May through October. Check the official site for specific facility closure dates in the autumn.",
+              "title": "Seasonal Shifts"
+            },
+            {
+              "kind": "access",
+              "text": "This major provincial route bisects the park, providing reliable year-round access. Side roads like the Lake Audy road are gravel and may be closed in early spring due to mud.",
+              "title": "Highway 10 Connectivity"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T12:44:00Z",
+          "sources": [
+            {
+              "label": "Parks Canada Riding Mountain",
+              "url": "https://parks.canada.ca/pn-np/mb/riding"
+            }
+          ],
+          "vehicle": "Passenger cars are suitable for all major roads; RVs should check length limits for the Lake Audy loop.",
+          "version": 1
+        }
+      },
+      "sources": [
+        "https://www.parks.canada.ca/pn-np/mb/riding/securite-safety/bulletins?wbdisable=true"
       ]
     }
   },
@@ -3488,7 +3980,7 @@
     "clear-lake": {
       "hero": {
         "file": "File:Clear Lake Riding Mountain National Park Manitoba Canada.JPG",
-        "url": "https://wildparkroutes.com/images/destination-cards/f292edd9c28c2b5e.jpg",
+        "url": "https://wildparkroutes.com/__l5e/assets-v1/d148d074-a75b-49b1-b1fb-b8d51b2dab64/clear-lake-manitoba.jpg",
         "source": "https://commons.wikimedia.org/wiki/File:Clear_Lake_Riding_Mountain_National_Park_Manitoba_Canada.JPG",
         "credit": "Shahnoor Habib Munmun",
         "license": "CC BY 3.0",
@@ -3499,7 +3991,7 @@
       "gallery": [
         {
           "file": "File:Clear Lake Riding Mountain National Park Manitoba Canada (10).JPG",
-          "url": "https://wildparkroutes.com/images/destination-cards/200bb0ffb9da2490.jpg",
+          "url": "/images/destination-cards/200bb0ffb9da2490.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Clear_Lake_Riding_Mountain_National_Park_Manitoba_Canada_(10).JPG",
           "credit": "Shahnoor Habib Munmun",
           "license": "CC BY 3.0",
@@ -3511,7 +4003,7 @@
       "activity": [
         {
           "file": "File:Clear Lake Riding Mountain National Park Manitoba Canada.JPG",
-          "url": "https://wildparkroutes.com/images/destination-cards/f292edd9c28c2b5e.jpg",
+          "url": "/images/destination-cards/f292edd9c28c2b5e.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Clear_Lake_Riding_Mountain_National_Park_Manitoba_Canada.JPG",
           "credit": "Shahnoor Habib Munmun",
           "license": "CC BY 3.0",
@@ -3521,7 +4013,7 @@
         },
         {
           "file": "File:Clear Lake Riding Mountain National Park Manitoba Canada (10).JPG",
-          "url": "https://wildparkroutes.com/images/destination-cards/200bb0ffb9da2490.jpg",
+          "url": "/images/destination-cards/200bb0ffb9da2490.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Clear_Lake_Riding_Mountain_National_Park_Manitoba_Canada_(10).JPG",
           "credit": "Shahnoor Habib Munmun",
           "license": "CC BY 3.0",
@@ -3534,7 +4026,7 @@
     "great-slave-lake": {
       "hero": {
         "file": "File:Great Slave Lake beach in Hay River 2.jpg",
-        "url": "https://wildparkroutes.com/images/destination-cards/fce1f3e24f96c7a2.jpg",
+        "url": "https://wildparkroutes.com/__l5e/assets-v1/f79371c1-fdd7-4fb6-bd20-d7e63c2acc7c/great-slave-lake-hay-river.jpg",
         "source": "https://commons.wikimedia.org/wiki/File:Great_Slave_Lake_beach_in_Hay_River_2.jpg",
         "credit": "Ymblanter",
         "license": "CC BY-SA 4.0",
@@ -3545,7 +4037,7 @@
       "gallery": [
         {
           "file": "File:UtsingiPoint-GreatSlaveLake.JPG",
-          "url": "https://wildparkroutes.com/images/destination-cards/37188a7f090796fb.jpg",
+          "url": "/images/destination-cards/37188a7f090796fb.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:UtsingiPoint-GreatSlaveLake.JPG",
           "credit": "Paul Gierszewski",
           "license": "Public domain",
@@ -3555,7 +4047,7 @@
         },
         {
           "file": "File:Great Slave Lake beach in Hay River 3.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/5f68ae3df44cafb0.jpg",
+          "url": "/images/destination-cards/5f68ae3df44cafb0.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Great_Slave_Lake_beach_in_Hay_River_3.jpg",
           "credit": "Ymblanter",
           "license": "CC BY-SA 4.0",
@@ -3567,7 +4059,7 @@
       "activity": [
         {
           "file": "File:Great Slave Lake beach in Hay River 2.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/fce1f3e24f96c7a2.jpg",
+          "url": "/images/destination-cards/fce1f3e24f96c7a2.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Great_Slave_Lake_beach_in_Hay_River_2.jpg",
           "credit": "Ymblanter",
           "license": "CC BY-SA 4.0",
@@ -3577,7 +4069,7 @@
         },
         {
           "file": "File:Great Slave Lake beach in Hay River 3.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/5f68ae3df44cafb0.jpg",
+          "url": "/images/destination-cards/5f68ae3df44cafb0.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Great_Slave_Lake_beach_in_Hay_River_3.jpg",
           "credit": "Ymblanter",
           "license": "CC BY-SA 4.0",
@@ -3627,7 +4119,7 @@
       "activity": [
         {
           "file": "File:Bennett Lake at Carcross.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/dbf02afe80da085f.jpg",
+          "url": "/images/destination-cards/dbf02afe80da085f.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Bennett_Lake_at_Carcross.jpg",
           "credit": "Richard Martin",
           "license": "CC BY 2.0",
@@ -3651,7 +4143,7 @@
       "gallery": [
         {
           "file": "File:Emerald Lake, Yukon, Aug 2016.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/217d0d2aa79c302a.jpg",
+          "url": "/images/destination-cards/217d0d2aa79c302a.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Emerald_Lake,_Yukon,_Aug_2016.jpg",
           "credit": "Sunnya343",
           "license": "CC BY-SA 4.0",
@@ -3673,7 +4165,7 @@
       "activity": [
         {
           "file": "File:Emerald Lake, Yukon, Aug 2016.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/217d0d2aa79c302a.jpg",
+          "url": "/images/destination-cards/217d0d2aa79c302a.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Emerald_Lake,_Yukon,_Aug_2016.jpg",
           "credit": "Sunnya343",
           "license": "CC BY-SA 4.0",
@@ -3683,7 +4175,7 @@
         },
         {
           "file": "File:BRK0997a Emerald Lake Yukon (9589725729).jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/5d23e4e872ac4f81.jpg",
+          "url": "/images/destination-cards/5d23e4e872ac4f81.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:BRK0997a_Emerald_Lake_Yukon_(9589725729).jpg",
           "credit": "Boris Kasimov from Toronto, Canada",
           "license": "CC BY 2.0",
@@ -3693,7 +4185,7 @@
         },
         {
           "file": "File:BRK1002a Emerald Lake Yukon (9592514152).jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/57a6bbb56aebeb1c.jpg",
+          "url": "/images/destination-cards/57a6bbb56aebeb1c.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:BRK1002a_Emerald_Lake_Yukon_(9592514152).jpg",
           "credit": "Boris Kasimov from Toronto, Canada",
           "license": "CC BY 2.0",
@@ -3795,7 +4287,7 @@
       "activity": [
         {
           "file": "File:Glacier National Park (Canada) banner.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/742c8f1f409c9c44.jpg",
+          "url": "/images/destination-cards/742c8f1f409c9c44.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Glacier_National_Park_(Canada)_banner.jpg",
           "credit": "The Interior",
           "license": "CC BY-SA 3.0",
@@ -3851,7 +4343,7 @@
       "activity": [
         {
           "file": "File:Watrous Manitou Beach Saskatchwan WV banner.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/595c3d633d8c13f5.jpg",
+          "url": "/images/destination-cards/595c3d633d8c13f5.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Watrous_Manitou_Beach_Saskatchwan_WV_banner.jpg",
           "credit": "Canadian2006",
           "license": "CC BY-SA 3.0",
@@ -3917,7 +4409,7 @@
       "activity": [
         {
           "file": "File:Shifting Dunes.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/cb5c3ef39e9eb19c.jpg",
+          "url": "/images/destination-cards/cb5c3ef39e9eb19c.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Shifting_Dunes.jpg",
           "credit": "Drm310",
           "license": "CC BY-SA 4.0",
@@ -3927,7 +4419,7 @@
         },
         {
           "file": "File:Glenda Goertzen in the Great Sand Hills.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/74e3c0fee11af902.jpg",
+          "url": "/images/destination-cards/74e3c0fee11af902.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Glenda_Goertzen_in_the_Great_Sand_Hills.jpg",
           "credit": "GGoertzen",
           "license": "CC BY-SA 4.0",
@@ -3962,7 +4454,7 @@
       "activity": [
         {
           "file": "File:Douglas Prov Park 02 cropped.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/6ba8245569b5becb.jpg",
+          "url": "/images/destination-cards/6ba8245569b5becb.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Douglas_Prov_Park_02_cropped.jpg",
           "credit": "Masterhatch",
           "license": "CC0",
@@ -3987,7 +4479,7 @@
       "activity": [
         {
           "file": "File:Wind Turbines and Farmland - Autumn on Manitoulin Island - Ontario - Canada (53073575988).jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/74739ca995920c71.jpg",
+          "url": "/images/destination-cards/74739ca995920c71.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Wind_Turbines_and_Farmland_-_Autumn_on_Manitoulin_Island_-_Ontario_-_Canada_(53073575988).jpg",
           "credit": "Tony Webster",
           "license": "CC BY 2.0",
@@ -4023,7 +4515,7 @@
       "activity": [
         {
           "file": "File:Beausoleil Sunset.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/6999b7d86faa13b5.jpg",
+          "url": "/images/destination-cards/6999b7d86faa13b5.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Beausoleil_Sunset.jpg",
           "credit": "Laur3nN3w3ll",
           "license": "CC BY-SA 4.0",
@@ -4069,7 +4561,7 @@
       "activity": [
         {
           "file": "File:162 - Parlee Beach NB.JPG",
-          "url": "https://wildparkroutes.com/images/destination-cards/dd12fea69c442f19.jpg",
+          "url": "/images/destination-cards/dd12fea69c442f19.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:162_-_Parlee_Beach_NB.JPG",
           "credit": "Share Bear~commonswiki",
           "license": "Public domain",
@@ -4103,7 +4595,7 @@
       "gallery": [
         {
           "file": "File:Meltwater at the terminus of the Athabasca Glacier, Jasper National Park, Alberta, Canada.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/4bbc7b47ebe9d718.jpg",
+          "url": "/images/destination-cards/4bbc7b47ebe9d718.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Meltwater_at_the_terminus_of_the_Athabasca_Glacier,_Jasper_National_Park,_Alberta,_Canada.jpg",
           "credit": "Ethan Sahagun",
           "license": "CC BY 4.0",
@@ -4125,7 +4617,7 @@
       "activity": [
         {
           "file": "File:Meltwater at the terminus of the Athabasca Glacier, Jasper National Park, Alberta, Canada.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/4bbc7b47ebe9d718.jpg",
+          "url": "/images/destination-cards/4bbc7b47ebe9d718.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Meltwater_at_the_terminus_of_the_Athabasca_Glacier,_Jasper_National_Park,_Alberta,_Canada.jpg",
           "credit": "Ethan Sahagun",
           "license": "CC BY 4.0",
@@ -4135,7 +4627,7 @@
         },
         {
           "file": "File:Icefields Parkway from an elevated viewpoint, Jasper National Park, Alberta, Canada.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/9a16f76676b289fd.jpg",
+          "url": "/images/destination-cards/9a16f76676b289fd.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Icefields_Parkway_from_an_elevated_viewpoint,_Jasper_National_Park,_Alberta,_Canada.jpg",
           "credit": "Ethan Sahagun",
           "license": "CC BY 4.0",
@@ -4145,7 +4637,7 @@
         },
         {
           "file": "File:Mount Andromeda from the Athabasca Glacier, Jasper National Park, Alberta, Canada.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/1e372800624e5d7a.jpg",
+          "url": "/images/destination-cards/1e372800624e5d7a.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Mount_Andromeda_from_the_Athabasca_Glacier,_Jasper_National_Park,_Alberta,_Canada.jpg",
           "credit": "Ethan Sahagun",
           "license": "CC BY 4.0",
@@ -4158,7 +4650,7 @@
     "mount-revelstoke-national-park": {
       "hero": {
         "file": "File:Summit Fire Lookout, Mount Revelstoke National Park 20240825 3.jpg",
-        "url": "https://wildparkroutes.com/images/destination-cards/0ae00c918e897925.jpg",
+        "url": "/images/destination-cards/0ae00c918e897925.jpg",
         "source": "https://commons.wikimedia.org/wiki/File:Summit_Fire_Lookout,_Mount_Revelstoke_National_Park_20240825_3.jpg",
         "credit": "DXR",
         "license": "CC BY-SA 4.0",
@@ -4191,7 +4683,7 @@
       "activity": [
         {
           "file": "File:Path in Mount Revelstoke National Park 20240825 2.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/ddee1903379d38c0.jpg",
+          "url": "/images/destination-cards/ddee1903379d38c0.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Path_in_Mount_Revelstoke_National_Park_20240825_2.jpg",
           "credit": "DXR",
           "license": "CC BY-SA 4.0",
@@ -4201,7 +4693,7 @@
         },
         {
           "file": "File:Summit Fire Lookout, Mount Revelstoke National Park 20240825 3.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/0ae00c918e897925.jpg",
+          "url": "/images/destination-cards/0ae00c918e897925.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Summit_Fire_Lookout,_Mount_Revelstoke_National_Park_20240825_3.jpg",
           "credit": "DXR",
           "license": "CC BY-SA 4.0",
@@ -4211,7 +4703,7 @@
         },
         {
           "file": "File:Revelstoke and the Columbia River from Meadows in the Sky Parkway.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/e4a7144f78bc5850.jpg",
+          "url": "/images/destination-cards/e4a7144f78bc5850.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Revelstoke_and_the_Columbia_River_from_Meadows_in_the_Sky_Parkway.jpg",
           "credit": "Ymblanter",
           "license": "CC BY-SA 4.0",
@@ -4224,7 +4716,7 @@
     "chute-montmorency": {
       "hero": {
         "file": "File:Chute Montmorency panorama.jpg",
-        "url": "https://wildparkroutes.com/images/destination-cards/16212a203ccfa7e4.jpg",
+        "url": "/images/destination-cards/16212a203ccfa7e4.jpg",
         "source": "https://commons.wikimedia.org/wiki/File:Chute_Montmorency_panorama.jpg",
         "credit": "The Cosmonaut",
         "license": "CC BY-SA 2.5 ca",
@@ -4257,7 +4749,7 @@
       "activity": [
         {
           "file": "File:Chute Montmorency panorama.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/16212a203ccfa7e4.jpg",
+          "url": "/images/destination-cards/16212a203ccfa7e4.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Chute_Montmorency_panorama.jpg",
           "credit": "The Cosmonaut",
           "license": "CC BY-SA 2.5 ca",
@@ -4290,7 +4782,7 @@
     "ile-bonaventure-et-du-rocher-perce-national-park": {
       "hero": {
         "file": "File:Bonaventure Island (île Bonaventure) Bird Habitats 01.jpg",
-        "url": "https://wildparkroutes.com/images/destination-cards/9f2bcbcc8dca63f6.jpg",
+        "url": "/images/destination-cards/9f2bcbcc8dca63f6.jpg",
         "source": "https://commons.wikimedia.org/wiki/File:Bonaventure_Island_(%C3%AEle_Bonaventure)_Bird_Habitats_01.jpg",
         "credit": "Estcroissant",
         "license": "CC BY-SA 4.0",
@@ -4323,7 +4815,7 @@
       "activity": [
         {
           "file": "File:Bonaventure Island (île Bonaventure) Bird Habitats 01.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/9f2bcbcc8dca63f6.jpg",
+          "url": "/images/destination-cards/9f2bcbcc8dca63f6.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Bonaventure_Island_(%C3%AEle_Bonaventure)_Bird_Habitats_01.jpg",
           "credit": "Estcroissant",
           "license": "CC BY-SA 4.0",
@@ -4333,7 +4825,7 @@
         },
         {
           "file": "File:Ile du Rocher Percé.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/0599f981a8d9cbff.jpg",
+          "url": "/images/destination-cards/0599f981a8d9cbff.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Ile_du_Rocher_Perc%C3%A9.jpg",
           "credit": "Maria Azzurra Mugnai",
           "license": "CC BY-SA 3.0",
@@ -4343,7 +4835,7 @@
         },
         {
           "file": "File:Ile du Rocher Percé 1.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/9c8fc56aebd81003.jpg",
+          "url": "/images/destination-cards/9c8fc56aebd81003.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Ile_du_Rocher_Perc%C3%A9_1.jpg",
           "credit": "Maria Azzurra Mugnai",
           "license": "CC BY-SA 3.0",
@@ -4379,7 +4871,7 @@
       "activity": [
         {
           "file": "File:Looking east across May inlet.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/558123af6e91006c.jpg",
+          "url": "/images/destination-cards/558123af6e91006c.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Looking_east_across_May_inlet.jpg",
           "credit": "Paul Gierszewski",
           "license": "CC BY-SA 4.0",
@@ -4389,7 +4881,7 @@
         },
         {
           "file": "File:Stokes Range.jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/2f0f4da0e6719cc8.jpg",
+          "url": "/images/destination-cards/2f0f4da0e6719cc8.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Stokes_Range.jpg",
           "credit": "Paul Gierszewski",
           "license": "CC BY-SA 4.0",
@@ -4399,7 +4891,7 @@
         },
         {
           "file": "File:Hiking the rocks below the Stoke's Range (banner).jpg",
-          "url": "https://wildparkroutes.com/images/destination-cards/802963ff117501f4.jpg",
+          "url": "/images/destination-cards/802963ff117501f4.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:Hiking_the_rocks_below_the_Stoke%27s_Range_(banner).jpg",
           "credit": "Paul Gierszewski",
           "license": "CC BY-SA 4.0",

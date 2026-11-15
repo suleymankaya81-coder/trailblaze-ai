@@ -2,6 +2,12 @@ import { describe, expect, it } from "vitest";
 import { isPlaceExperienceRelevant } from "./viatorRelevance";
 
 describe("destination-specific real Viator results", () => {
+  it("rejects Lake Tahoe tours for Clear Lake in Manitoba", () => {
+    expect(isPlaceExperienceRelevant("Clear Lake", "Clear Kayak Tour of Lake Tahoe’s Crystal Waters", "Enjoy clear lake water in California", { countryCode: "ca", region: "Manitoba" })).toBe(false);
+  });
+  it("requires affirmative Canadian location for same-name Canadian places", () => {
+    expect(isPlaceExperienceRelevant("Clear Lake", "Clear Lake guided walk", "Visit Wasagaming in Manitoba, Canada", { countryCode: "ca", region: "Manitoba" })).toBe(true);
+  });
   it("rejects Alaska wilderness results for Allagash", () => {
     expect(isPlaceExperienceRelevant("Allagash Wilderness", "PRISTINE - Wilderness, Wildlife, Glacier Experience in Anchorage")).toBe(false);
   });

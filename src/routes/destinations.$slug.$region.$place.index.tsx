@@ -133,7 +133,7 @@ export const Route = createFileRoute("/destinations/$slug/$region/$place/")({
         { property: "og:type", content: "article" },
       ],
       links: [{ rel: "canonical", href: pageUrl }, ...hreflangLinks(destinationPath(d.slug), ["en", ...(loaderData?.locales ?? []).filter(isLocale)])],
-      scripts: [{ type: "application/ld+json", children: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }],
+      scripts: [{ id: "destination-jsonld", type: "application/ld+json", children: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }],
     };
   },
   component: DestinationPage,

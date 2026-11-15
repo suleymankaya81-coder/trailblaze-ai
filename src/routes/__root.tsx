@@ -104,7 +104,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "apple-touch-icon", sizes: "64x64", href: "/favicon.png" },
       { rel: "stylesheet", href: appCss },
     ],
-    scripts: [{ type: "application/ld+json", children: JSON.stringify(siteJsonLd()) }],
+    scripts: [{ id: "site-jsonld", type: "application/ld+json", children: JSON.stringify(siteJsonLd()) }],
   }),
   shellComponent: RootShell,
   component: RootComponent,
