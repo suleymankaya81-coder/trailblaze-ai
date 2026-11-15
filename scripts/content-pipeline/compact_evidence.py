@@ -9,8 +9,8 @@ def plain(text):
 
 def approved_stops(packet):
     stops = packet.get('approved_stops', [])
-    if len(stops) < 6:
-        raise ValueError('HELD: at least six editorially approved sourced stops required')
+    if not stops:
+        raise ValueError('HELD: at least one editorially approved sourced stop required')
     official = {s['url']: plain(s['text']) for s in packet['sources'] if s['kind'] == 'official'}
     ids = set()
     for stop in stops:

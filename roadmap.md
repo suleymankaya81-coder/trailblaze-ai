@@ -1,3 +1,7 @@
+## November 15 flexible UK production
+- [ ] Accept one-day and multi-day destination plans throughout the pipeline without weakening exact-source checks; test compact visits and cached reuse.
+- [ ] Run remaining UK places in a single resumable publication batch; verify saved/public results and report genuine source/photo blockers.
+
 ## November 14 map resilience
 - [x] Add shared OSM raster recovery, loading/error states, retry and Maps handoff; preserve stored route geometry and markers.
 - [x] Verify normal, primary-provider-blocked and all-providers-blocked maps on desktop and phone, including German errors; 12 tests pass and preview build OK. Not published.

@@ -32,9 +32,9 @@ class CompactEvidenceTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'exact official evidence'):
             compact_packet(p)
 
-    def test_six_stops_required_before_paid_generation(self):
-        p = packet(); p['approved_stops'] = p['approved_stops'][:5]
-        with self.assertRaisesRegex(ValueError, 'six'):
+    def test_no_sourced_stops_rejected_before_paid_generation(self):
+        p = packet(); p['approved_stops'] = []
+        with self.assertRaisesRegex(ValueError, 'at least one'):
             compact_packet(p)
 
     def test_unreviewed_excerpts_hold_instead_of_truncating(self):
@@ -74,6 +74,7 @@ class CompactEvidenceTests(unittest.TestCase):
             with self.assertRaises(RuntimeError): combined_content.generate_bundle({'slug': 'test', 'name': 'Test'})
             path = Path(tmp, 'test.json'); state = json.loads(path.read_text())
             state.update(status='validated', bundle={'travel': {'slug': 'test'}})
+            state['fingerprint'] = 'older-prompt-version'
             path.write_text(json.dumps(state))
             self.assertEqual(combined_content.generate_bundle({'slug': 'test', 'name': 'Test'}), state['bundle'])
             self.assertEqual(ai.call_count, 1)

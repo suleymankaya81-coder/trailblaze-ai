@@ -1,0 +1,109 @@
+{
+  "fingerprint": "37db522b17554335821628fdf74657ef0309aee445d39d951c53768f9d0307e2",
+  "status": "validated",
+  "prompt_chars": 6982,
+  "bundle": {
+    "summary": {
+      "region": "Somerset",
+      "tagline": "Legends and subterranean adventures in the heart of the Mendip Hills.",
+      "best_season": "Year-round",
+      "trip_duration_days": "1",
+      "recommended_duration": "1 day",
+      "permit_level": "none",
+      "seo_title": "Wookey Hole Caves and Attractions Guide",
+      "best_seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "scenic_score": 8,
+      "camping_score": 7,
+      "avg_daily_budget": null,
+      "aliases": [],
+      "gateway_cities": [],
+      "similar_slugs": [],
+      "trip_tags": [
+        "caves",
+        "family-friendly"
+      ],
+      "activities": [
+        "Wookey Hole Caves",
+        "Adventure Golf",
+        "Museum"
+      ]
+    },
+    "travel": {
+      "slug": "wookey-hole",
+      "headline": "Check Tickets and the Daily Attraction Schedule",
+      "reservation": "Check the official Wookey Hole website for tickets and the attractions available on your chosen date. Adventure Golf is listed as included with the visit; live circus performances run on weekends and Somerset school holidays. Accommodation is a separate decision; confirm current terms before booking.",
+      "source_url": "https://www.wookey.co.uk/",
+      "plan": {
+        "version": 1,
+        "days": [
+          {
+            "title": "Subterranean Exploration and Family Fun",
+            "start": "Suggested: 10 AM at Wookey Hole; check current entry hours",
+            "stops": [
+              {
+                "name": "Wookey Hole Caves",
+                "detail": "Explore the legendary limestone caverns that have been millions of years in the making. Follow the history of the caves through the heart of the Mendip Hills.",
+                "stop_id": "wookey-hole-caves"
+              },
+              {
+                "name": "Museum",
+                "detail": "Visit the museum to learn about Wookey Hole history and finds from the caves.",
+                "stop_id": "museum"
+              },
+              {
+                "name": "Adventure Golf",
+                "detail": "Conclude the visit with a round of themed golf, which is included as part of the standard attraction entry.",
+                "stop_id": "adventure-golf"
+              }
+            ],
+            "driving": "This is one attraction-site visit, not a multi-day driving circuit; allow time for the caves, museum and golf.",
+            "note": "Suggested pace is a single day; note that the circus only performs during weekends and Somerset school holidays."
+          }
+        ],
+        "intel": [
+          {
+            "kind": "access",
+            "title": "Holiday Scheduling",
+            "text": "The Circus performs specifically during Somerset school holidays and weekends. Check the attraction calendar to ensure live shows align with your visit."
+          },
+          {
+            "kind": "timing",
+            "title": "Day Trip Duration",
+            "text": "A typical visit encompasses the caves, museum, and golf within a single day. Allow extra time if attending a scheduled circus performance."
+          },
+          {
+            "kind": "fuel",
+            "title": "Local Supplies",
+            "text": "The reviewed evidence does not establish fuel or charging locations for this visit. Check current local information and the official visitor page before departure."
+          },
+          {
+            "kind": "signal",
+            "title": "Connectivity Status",
+            "text": "The reviewed evidence does not establish mobile coverage for this visit. Check current local information and the official visitor page before departure."
+          },
+          {
+            "kind": "parking",
+            "title": "Site Parking",
+            "text": "The reviewed evidence does not establish vehicle parking arrangements for this visit. Check current local information and the official visitor page before departure."
+          }
+        ],
+        "arrival": "Start at the Wookey Hole visitor entrance and check current ticket arrangements and attraction schedules. Keep the caves, museum and golf within the same site visit.",
+        "vehicle": "Check actual rental and local road restrictions before travel, and confirm parking suitability with the operator before bringing a larger vehicle.",
+        "goldenHour": "Wookey Hole Caves are the main visit focus rather than a sunset stop. Check permitted access hours and plan outdoor photography according to the season.",
+        "sources": [
+          {
+            "label": "Wookey Hole Official",
+            "url": "https://www.wookey.co.uk/things-to-do"
+          }
+        ]
+      }
+    }
+  },
+  "error": "TypeError",
+  "editorial_review": "Reviewed compact site visit; unsupported drives, gateway and amenity claims removed; retained response, no paid replay."
+}

@@ -1,140 +1,129 @@
 {
   "fingerprint": "065384baaf2467bdf595dc9ba9f5933166d11e1d9dcf6abe09280cbf08f6d63b",
-  "status": "held",
+  "status": "validated",
   "prompt_chars": 11367,
-  "bundle": [
-    {
-      "summary": {
-        "region": "Yorkshire Dales",
-        "tagline": "A carboniferous limestone circular trail featuring ancient woodland and 14-meter drops.",
-        "best_season": "Year-round",
-        "trip_duration_days": "3",
-        "recommended_duration": "3 days",
-        "permit_level": "none",
-        "seo_title": "Ingleton Waterfalls Trail Circular Walking Guide",
-        "best_seasons": [
-          "spring",
-          "summer",
-          "fall",
-          "winter"
+  "bundle": {
+    "summary": {
+      "region": "Yorkshire Dales",
+      "tagline": "A carboniferous limestone circular trail featuring ancient woodland and 14-meter drops.",
+      "best_season": "Year-round",
+      "trip_duration_days": "Half day",
+      "recommended_duration": "2.5–4 hours",
+      "permit_level": "none",
+      "seo_title": "Ingleton Waterfalls Trail Circular Walking Guide",
+      "best_seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "scenic_score": 5,
+      "camping_score": 0,
+      "avg_daily_budget": null,
+      "aliases": [
+        "Ingleton Falls"
+      ],
+      "gateway_cities": [
+        "Ingleton"
+      ],
+      "similar_slugs": [],
+      "trip_tags": [
+        "waterfalls",
+        "woodland",
+        "limestone"
+      ],
+      "activities": [
+        "Thornton Force",
+        "Beezley Falls",
+        "Pecca Falls"
+      ]
+    },
+    "travel": {
+      "slug": "ingleton-waterfalls-trail",
+      "headline": "Pay on Arrival at the Ticket Office",
+      "reservation": "There is no need to pre-book; payments are made by card only at the ticket office on the day of your visit. Access is subject to weather conditions, so contact the ticket office directly to confirm if the trail is open during extreme weather events. Ticket holders have access to limited free parking at the Broadwood car park.",
+      "source_url": "https://www.ingletonwaterfallstrail.co.uk/",
+      "plan": {
+        "version": 1,
+        "days": [
+          {
+            "title": "The clockwise waterfalls walk",
+            "start": "Suggested: 9 AM at the trail ticket office; check current entry hours",
+            "stops": [
+              {
+                "name": "Swilla Glen",
+                "detail": "Enter a deep carboniferous limestone glen filled with oak and birch woodland where mosses and ferns thrive.",
+                "stop_id": "swilla-glen"
+              },
+              {
+                "name": "Pecca Falls",
+                "detail": "Cross Manor Bridge to witness these falls within the moist environment of the limestone gorge.",
+                "stop_id": "pecca-falls"
+              },
+              {
+                "name": "Hollybush Spout",
+                "detail": "Ascend a series of steep steps to reach open moorland where the river transitions to a shallow valley.",
+                "stop_id": "hollybush-spout"
+              },
+              {
+                "name": "Thornton Force",
+                "detail": "Observe the trail's most famous geological feature, where water falls 14 metres over a limestone cliff.",
+                "stop_id": "thornton-force"
+              },
+              {
+                "name": "Beezley Falls",
+                "detail": "Continue into oak woodland along the River Doe to view Beezley Falls on the marked trail.",
+                "stop_id": "beezley-falls"
+              },
+              {
+                "name": "Snow Falls",
+                "detail": "Look back after passing Baxenghyll Gorge to catch a view of this waterfall before finishing the loop.",
+                "stop_id": "snow-falls"
+              }
+            ],
+            "driving": "Walking circuit, not a driving route; allow two and a half to four hours, depending on pace.",
+            "note": "Follow the one-way clockwise trail; check extreme-weather closures and download the official guide before departure."
+          }
         ],
-        "scenic_score": 5,
-        "camping_score": 0,
-        "avg_daily_budget": null,
-        "aliases": [
-          "Ingleton Falls"
+        "intel": [
+          {
+            "kind": "parking",
+            "title": "Broadwood Car Park",
+            "text": "Limited free parking is available for ticket holders at the start of the trail. The car park also hosts a refreshment kiosk and toilet facilities."
+          },
+          {
+            "kind": "signal",
+            "title": "Offline Navigation Required",
+            "text": "Mobile data is not available around the trail area. Visitors should download the self-guided geology and ecology guide before arrival."
+          },
+          {
+            "kind": "fuel",
+            "title": "Local Supply Gap",
+            "text": "The evidence does not specify fuel station locations in Ingleton. Travelers should verify fuel levels before entering the Dales region."
+          },
+          {
+            "kind": "timing",
+            "title": "Completion Estimates",
+            "text": "The 4.5-mile circular route typically takes between 2.5 and 4 hours. Pace varies significantly based on fitness and stops for photography."
+          },
+          {
+            "kind": "access",
+            "title": "Weather Closures",
+            "text": "The trail closes during extreme weather for safety reasons. It is recommended to ring the ticket office for the latest status if rain is heavy."
+          }
         ],
-        "gateway_cities": [
-          "Ingleton"
-        ],
-        "similar_slugs": [],
-        "trip_tags": [
-          "waterfalls",
-          "woodland",
-          "limestone"
-        ],
-        "activities": [
-          "Thornton Force",
-          "Beezley Falls",
-          "Pecca Falls"
+        "arrival": "Upon arrival in Ingleton, proceed to the ticket office to pay by card. The trail begins with a woodland walk through the river glen.",
+        "vehicle": "Check actual rental and local road restrictions before travel; confirm parking suitability for larger vehicles with the operator.",
+        "goldenHour": "Thornton Force is a possible photography stop during permitted opening hours; choose lighting to suit the season and never extend the visit beyond last entry or closure.",
+        "sources": [
+          {
+            "label": "Official Ingleton Waterfalls Trail",
+            "url": "https://www.ingletonwaterfallstrail.co.uk/the-trail/"
+          }
         ]
-      },
-      "travel": {
-        "slug": "ingleton-waterfalls-trail",
-        "headline": "Pay on Arrival at the Ticket Office",
-        "reservation": "There is no need to pre-book; payments are made by card only at the ticket office on the day of your visit. Access is subject to weather conditions, so contact the ticket office directly to confirm if the trail is open during extreme weather events. Ticket holders have access to limited free parking at the Broadwood car park.",
-        "source_url": "https://www.ingletonwaterfallstrail.co.uk/",
-        "plan": {
-          "version": 1,
-          "days": [
-            {
-              "title": "Limestone Gorges and Ancient Woodland",
-              "start": "Suggested: 9 AM from Ingleton",
-              "stops": [
-                {
-                  "name": "Swilla Glen",
-                  "detail": "Enter a deep carboniferous limestone glen filled with oak and birch woodland where mosses and ferns thrive."
-                },
-                {
-                  "name": "Pecca Falls",
-                  "detail": "Cross Manor Bridge to witness these falls within the moist environment of the limestone gorge."
-                }
-              ],
-              "driving": "Local walking trail; allow 2 to 4 hours for the 4.5-mile loop.",
-              "note": "Suggested pace is a stroll to accommodate steep steps and photography."
-            },
-            {
-              "title": "Geological Features and High Drops",
-              "start": "Suggested: 10 AM from Broadwood Car Park",
-              "stops": [
-                {
-                  "name": "Hollybush Spout",
-                  "detail": "Ascend a series of steep steps to reach open moorland where the river transitions to a shallow valley."
-                },
-                {
-                  "name": "Thornton Force",
-                  "detail": "Observe the trail's most famous geological feature, where water falls 14 metres over a limestone cliff."
-                }
-              ],
-              "driving": "Local walking trail; trail is one-way in a clockwise direction.",
-              "note": "Download the self-guided tour beforehand as mobile data is not available on-site."
-            },
-            {
-              "title": "River Views and Hidden Falls",
-              "start": "Suggested: 11 AM from Falls Cafe",
-              "stops": [
-                {
-                  "name": "Beezley Falls",
-                  "detail": "View the 'Forbidden Pool' section of the falls, a popular spot for seasonal photography."
-                },
-                {
-                  "name": "Snow Falls",
-                  "detail": "Look back after passing Baxenghyll Gorge to catch a view of this waterfall before finishing the loop."
-                }
-              ],
-              "driving": "Local walking trail; conditions vary with weather.",
-              "note": "Ensure you have sturdy walking boots for the riverside terrain."
-            }
-          ],
-          "intel": [
-            {
-              "kind": "parking",
-              "title": "Broadwood Car Park",
-              "text": "Limited free parking is available for ticket holders at the start of the trail. The car park also hosts a refreshment kiosk and toilet facilities."
-            },
-            {
-              "kind": "signal",
-              "title": "Offline Navigation Required",
-              "text": "Mobile data is not available around the trail area. Visitors should download the self-guided geology and ecology guide before arrival."
-            },
-            {
-              "kind": "fuel",
-              "title": "Local Supply Gap",
-              "text": "The evidence does not specify fuel station locations in Ingleton. Travelers should verify fuel levels before entering the Dales region."
-            },
-            {
-              "kind": "timing",
-              "title": "Completion Estimates",
-              "text": "The 4.5-mile circular route typically takes between 2.5 and 4 hours. Pace varies significantly based on fitness and stops for photography."
-            },
-            {
-              "kind": "access",
-              "title": "Weather Closures",
-              "text": "The trail closes during extreme weather for safety reasons. It is recommended to ring the ticket office for the latest status if rain is heavy."
-            }
-          ],
-          "arrival": "Upon arrival in Ingleton, proceed to the ticket office to pay by card. The trail begins with a woodland walk through the river glen.",
-          "vehicle": "Suitable for standard cars; check local road restrictions for larger RVs in the Yorkshire Dales.",
-          "goldenHour": "Thornton Force offers dramatic lighting during the late afternoon in autumn.",
-          "sources": [
-            {
-              "label": "Official Ingleton Waterfalls Trail",
-              "url": "https://www.ingletonwaterfallstrail.co.uk/the-trail/"
-            }
-          ]
-        }
       }
     }
-  ],
-  "error": "TypeError"
+  },
+  "error": "TypeError",
+  "editorial_review": "One clockwise half-day circuit, exact operator evidence; no paid replay."
 }

@@ -6,6 +6,18 @@ Run: python scripts/content-pipeline/publish-wave.py slug [slug ...]
 """
 import json, os, sys
 import requests
+from combined_content import module
+from visit_policy import required_offer_count
+
+validate_travel = module('publish_travel', 'generate-travel-content.py').validate
+
+def complete_plan(destination):
+    try:
+        validate_travel({'plan': destination['travel_plan'], 'headline': destination['permit_headline'],
+                         'reservation': destination['permit_note'], 'source_url': destination['permit_source_url']})
+        return True
+    except (AssertionError, KeyError, TypeError, ValueError):
+        return False
 
 REST = os.environ["SUPABASE_URL"] + "/rest/v1"
 SK = os.environ["SUPABASE_SERVICE_ROLE_KEY"]
@@ -23,17 +35,17 @@ def get(path):
 
 held = []
 for slug in sys.argv[1:]:
-    d = get(f"destinations?slug=eq.{slug}&select=id,hero_image,photo_credit,lat,nearest_airport_code,drive_minutes,permit_note,travel_plan,country_code,region_slug,access_type")[0]
+    d = get(f"destinations?slug=eq.{slug}&select=id,hero_image,photo_credit,lat,nearest_airport_code,drive_minutes,permit_headline,permit_note,permit_source_url,travel_plan,country_code,region_slug,access_type")[0]
     offers = get(f"offers?destination_id=eq.{d['id']}&select=id")
     c = review.get("photoDecisions", {}).get(slug, cards.get(slug, {}))
     problems = [msg for ok, msg in [
         (slug not in {r["slug"] for r in review.get("photoNeeds", [])}, "reviewed photo blocker"),
         (d["hero_image"] and d["photo_credit"], "cover photo"),
         (d["lat"] is not None and d["nearest_airport_code"] and (d["drive_minutes"] or d.get("access_type") == "fly-in"), "location/airport/drive"),
-        (len(offers) >= (12 if d["country_code"] in ("ca", "gb") else 15), f"offers {len(offers)}"),
+        (len(offers) >= required_offer_count(d['country_code'], d.get('travel_plan')), f"offers {len(offers)}"),
         (slug in routes, "route line"),
         (d["permit_note"], "reservation note"),
-        (d["travel_plan"] and len(d["travel_plan"].get("days", [])) in (3, 4) and len(d["travel_plan"].get("intel", [])) == 5, "local itinerary and field intel"),
+        (complete_plan(d), "local visit plan and field intel"),
         (len(c.get("activity", [])) >= 3, "activity card photos"),
     ] if not ok]
     if problems:

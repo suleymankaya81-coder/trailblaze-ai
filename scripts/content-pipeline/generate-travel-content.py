@@ -39,9 +39,9 @@ def unsupported_stops(plan, packet):
 
 def validate(item):
     p = item['plan']
-    assert 3 <= len(p['days']) <= 4, '3–4 days required'
+    assert len(p['days']) >= 1, 'At least one visit day required'
     for day in p['days']:
-        assert 2 <= len(day['stops']) <= 3, '2–3 daily sights required'
+        assert len(day['stops']) >= 1, 'At least one sourced daily sight required'
         assert all(len(s['detail']) >= 20 for s in day['stops']), 'short sight detail'
         assert all(day.get(k) for k in ['title', 'start', 'driving', 'note'])
     assert {x['kind'] for x in p['intel']} == {'parking','signal','fuel','timing','access'}
@@ -57,7 +57,7 @@ def validate(item):
 PROMPT = '''You are WildParkRoutes's factual outdoor travel editor. Write fluent, polished English specific to EACH destination in the supplied facts and existing guides. Existing guides are context, not verified current policy. Use stable well-known landmarks and official sources. Never invent a place, a last gas station, a ranger endorsement, exact parking fill time, GPS coordinates, fares or current permit rules. Qualify changing access and distinguish suggested times from opening hours. Avoid repetitive generic park advice for towns, coasts, islands and urban destinations. Match geography and gateway: island itineraries must not assume mainland road access. Daily drives are rough suggestions, not measured routes; use 'Allow ...; conditions vary' or state walking/local transfer. No exact prices or specific years. No packing/gear-shopping content. No urgency/guarantees/discount copy. Reservation note must explain the actual bottleneck and official check. Golden hour is a named viewpoint and season-dependent suggestion, not an exact sunrise time. Vehicle advice must mention checking actual rental/road restrictions. Do not prescribe medical/safety guarantees. Every source_url and sources[].url must be copied exactly from a url in that destination's evidence packet; never cite a homepage or page that is not in the packet. Never write a four-digit year.
 Return JSON object {"items":[...]}, exactly one per input slug, each:
 {"slug":"...","headline":"specific reservation headline 12–70 chars","reservation":"2–4 sentences 160–700 chars about this place; distinguish entry from accommodation, changing systems require official check","source_url":"official https source","plan":{"version":1,"days":[{"title":"specific regional theme","start":"Suggested: ...","stops":[{"name":"actual named sight","detail":"why visit and logical order, 1–2 sentences"}],"driving":"rough daily travel allowance with uncertainty","note":"local seasonal constraint or pace advice"}],"intel":[{"kind":"parking|signal|fuel|timing|access","title":"local short heading","text":"2 specific useful sentences tied to named local areas; qualify unknowns"}],"arrival":"First two hours: rental pickup, realistic supply town and check-in logic","vehicle":"Car vs RV suitability in this region, check restrictions","goldenHour":"Named sunrise/sunset viewpoint with seasonal caveat","sources":[{"label":"official agency/park","url":"official https page"}]}}
-3 or 4 days, exactly 2–3 named sights per day, all five unique intel kinds, at least one real official source. start MUST contain a suggested clock time such as 'Suggested: 8 AM from Bar Harbor', not only a location. No generic day titled Arrive & settle in / The iconic core / Golden hour & departure. Sources must match this destination, not unrelated parks.
+Use one visit day for a single attraction, short walk or compact park; use multiple days only when the supplied evidence supports a wider visit. A half-day visit fits one day. Include only genuinely sourced sights; never pad days or duplicate sights to meet a count. All five unique intel kinds and at least one real official source remain required. start MUST contain a suggested clock time such as 'Suggested: 8 AM from Bar Harbor', not an opening-hours claim. No generic day titled Arrive & settle in / The iconic core / Golden hour & departure. Sources must match this destination, not unrelated parks.
 Facts and guides:\n'''
 
 def generate(rows):

@@ -52,7 +52,10 @@ def main():
                 continue
             if a.publish:
                 response = subprocess.run([sys.executable, str(root / 'publish-wave.py'), slug], text=True, capture_output=True)
-                status = 'published' if response.returncode == 0 and 'published' in response.stdout else 'held'
+                status = 'published' if response.returncode == 0 and any(line == slug + ' published' for line in response.stdout.splitlines()) else 'held'
+                if status == 'held':
+                    results.append({'slug': slug, 'status': status, 'stage': 'publish-wave.py', 'reason': (response.stdout + response.stderr)[-1500:]})
+                    continue
             else:
                 status = 'prepared_for_review'
             results.append({'slug': slug, 'status': status})

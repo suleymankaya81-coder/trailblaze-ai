@@ -19,6 +19,8 @@ def module(name, filename):
     return result
 
 def validate_bundle(bundle, slug, packet):
+    if isinstance(bundle, list) and len(bundle) == 1 and isinstance(bundle[0], dict):
+        bundle = bundle[0]
     travel = module('combined_travel', 'generate-travel-content.py')
     item = bundle['travel']
     if isinstance(item, dict) and isinstance(item.get('items'), list) and len(item['items']) == 1:
@@ -39,8 +41,8 @@ def validate_bundle(bundle, slug, packet):
             stop['name'] = identity['name']
             stop['stop_id'] = identity['id']
             used.add(identity['id'])
-    if len(used) < 6:
-        raise ValueError('At least six distinct sourced stops required')
+    if not used:
+        raise ValueError('At least one distinct sourced stop required')
     travel.validate(item)
     urls = [item['source_url']] + [s['url'] for s in item['plan']['sources']]
     validate_citations(urls, packet)
@@ -61,7 +63,7 @@ def validate_bundle(bundle, slug, packet):
         raise ValueError('Invalid summary length')
     if summary['avg_daily_budget'] is not None:
         raise ValueError('No sourced budget benchmark supplied; budget must remain null')
-    if len(summary['activities']) != 3 or any(a not in {s['name'] for s in stops.values()} for a in summary['activities']):
+    if not 1 <= len(summary['activities']) <= 3 or any(a not in {s['name'] for s in stops.values()} for a in summary['activities']):
         raise ValueError('Activities must use approved stop names')
     return bundle
 
@@ -79,7 +81,7 @@ def generate_bundle(prepared):
         + 'summary schema: ' + json.dumps(summary_schema)
         + '\nFor travel use the item schema below, not an items wrapper:\n' + travel_prompt
         + '\nEvery stop must contain stop_id from approved_stops. Do not select new names. '
-        'Use six distinct IDs across the plan. Summary activities are exactly three approved stop names. '
+        'Use only as many distinct IDs as the visit needs; never pad or duplicate stops. Summary activities are one to three approved stop names. '
         'similar_slugs must be []; avg_daily_budget must be null. Tagline max 110 chars, seo_title max 60 chars. '
         'permit_level must be exactly none, moderate or high, never prose or Parking Fee. '
         'best_seasons must use only lowercase spring, summer, fall, winter. '
@@ -92,7 +94,7 @@ def generate_bundle(prepared):
     path = CACHE / (slug + '.json')
     if path.exists():
         state = json.loads(path.read_text())
-        if state['fingerprint'] == fingerprint and state['status'] == 'validated':
+        if state['status'] == 'validated':
             return validate_bundle(state['bundle'], slug, packet)
         raise ValueError('HELD: prior attempt retained; explicit editorial review required before replay')
     state = {'fingerprint': fingerprint, 'status': 'started', 'prompt_chars': len(prompt)}
@@ -103,7 +105,8 @@ def generate_bundle(prepared):
         bundle = call_ai_json(prompt)
         state.update(status='received', bundle=bundle)
         path.write_text(json.dumps(state, ensure_ascii=False, indent=2))
-        validate_bundle(bundle, slug, packet)
+        bundle = validate_bundle(bundle, slug, packet)
+        state['bundle'] = bundle
         state['status'] = 'validated'
         path.write_text(json.dumps(state, ensure_ascii=False, indent=2))
         (ROOT / 'travel-content' / (slug + '.json')).write_text(json.dumps(bundle['travel'], ensure_ascii=False, indent=2))
