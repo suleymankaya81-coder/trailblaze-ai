@@ -20,6 +20,10 @@ BAD = re.compile(r"map|logo|seal|sign|diagram|chart|plan|stamp|coin|flag|icon|sv
 # Use an explicitly named, verifiable landmark for broad regions or catalog aliases.
 # These are map anchors, not claims that a region has one exact point.
 WIKI_ANCHORS = {
+    "spreewald-biosphere-reserve": "Spreewald",
+    "berchtesgadener-land-biosphere-region": "Berchtesgadener Land",
+    "wienerwald-biosphere-reserve": "Wienerwald",
+    "schaalsee-biosphere-reserve": "Schaalsee",
     # UK pilot (Welsh official names on Wikipedia)
     "eryri-snowdonia-national-park": "Eryri National Park",
     "brecon-beacons-national-park": "Bannau Brycheiniog National Park",
