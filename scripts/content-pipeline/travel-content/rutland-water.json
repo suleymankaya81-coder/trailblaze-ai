@@ -1,0 +1,105 @@
+{
+  "slug": "rutland-water",
+  "headline": "Pay-on-arrival parking and seasonal reserve access",
+  "reservation": "Access to Rutland Water is primarily managed through car park entry fees ranging from hourly rates to all-day explorer tickets. The Lyndon and Egleton reserves have specific seasonal opening hours that require checking. No overnight stays are permitted in any car park, and visitors should verify current water levels and mud warnings officially before arrival.",
+  "source_url": "https://anglianwaterparks.co.uk/rutland-water",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "South Shore Landscapes",
+        "start": "Suggested: 9 AM at Normanton Church",
+        "stops": [
+          {
+            "name": "Normanton Church",
+            "detail": "View Normanton Church and the Dam along the southeastern shore. The route is mostly tarmac with a bumpy compacted-stone section near the church.",
+            "stop_id": "s1"
+          },
+          {
+            "name": "Sykes Lane",
+            "detail": "Visit the Visitor Centre and enjoy takeaway snacks at the beach area while exploring the southeastern shore.",
+            "stop_id": "s2"
+          }
+        ],
+        "driving": "Transfer time is not established by the supplied sources; check access and walking routes before departure.",
+        "note": "A 2.3-mile linear route connects these sites with accessible facilities at both ends."
+      },
+      {
+        "title": "Peninsula and Northern Creeks",
+        "start": "Suggested: 9 AM at Whitwell",
+        "stops": [
+          {
+            "name": "Whitwell",
+            "detail": "Start at Whitwell Creek for water sports or dining at the Harbour Café, which offers panoramic views.",
+            "stop_id": "s3"
+          },
+          {
+            "name": "Hambleton Peninsula",
+            "detail": "Embark on a longer hike around this scenic outcrop to complete part of the 22.1-mile circular trail.",
+            "stop_id": "s4"
+          }
+        ],
+        "driving": "Transfer time is not established by the supplied sources; check access and walking routes before departure.",
+        "note": "The full circular route excluding Hambleton is 15.1 miles; pace yourself accordingly."
+      },
+      {
+        "title": "Wildlife and Wetlands",
+        "start": "Suggested: 9 AM at Anglian Water Birdwatching Centre",
+        "stops": [
+          {
+            "name": "Anglian Water Birdwatching Centre",
+            "detail": "Begin the nature reserve walk at the Birdwatching Centre, which has a gift shop, snacks and an accessible toilet.",
+            "stop_id": "s5"
+          },
+          {
+            "name": "Dunlin hide",
+            "detail": "Follow the compacted stone track through the reserve to reach this viewpoint for local wildfowl.",
+            "stop_id": "s6"
+          }
+        ],
+        "driving": "Transfer time is not established by the supplied sources; check access and walking routes before departure.",
+        "note": "Note that the Nature Reserve areas at Egleton and Lyndon are dog-free zones."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Car Park Fees",
+        "text": "Parking charges apply at all sites with the first 15 minutes free and all-day explorer tickets available for £8. Barnsdale car park is closed from end of October to end of March."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Status",
+        "text": "Mobile coverage is not established by these sources; download maps before departure."
+      },
+      {
+        "kind": "fuel",
+        "title": "Local Supplies",
+        "text": "Fuel locations are not established by these sources; plan supplies before departure."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Hours",
+        "text": "Car parks generally open from 9 AM, but closing times are advertised locally at entrances. The Lyndon reserve operates on a strictly limited seasonal schedule from March to September."
+      },
+      {
+        "kind": "access",
+        "title": "Ground Conditions",
+        "text": "Low water levels can result in soft mud around the reservoir edges. Stay on designated paths and avoid entering the reservoir bed or inlets for safety."
+      }
+    ],
+    "arrival": "Suggested: start at Normanton or Sykes Lane; check posted car park closing times. Overnight stays in the car parks are not permitted.",
+    "vehicle": "The site speed limit is 10 mph. Vehicle-size suitability is not established by these sources; verify restrictions before arrival.",
+    "goldenHour": "Normanton Church offers a notable backdrop for sunset, though visitors must exit car parks before the locally posted closing times.",
+    "sources": [
+      {
+        "label": "Anglian Water Parks",
+        "url": "https://anglianwaterparks.co.uk/rutland-water"
+      },
+      {
+        "label": "Rutland Water Trails",
+        "url": "https://anglianwaterparks.co.uk/rutland-water-park/walking-relaxing"
+      }
+    ]
+  }
+}

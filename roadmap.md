@@ -179,6 +179,9 @@
 - [ ] German Canada versions and world-national-parks.net Canada 301s: not part of this audit; require translation and verified old URL mapping.
 
 ## UK (source-first)
+- [ ] Collect and review official England wave-2 evidence for all 45 places, then run the optimized combined writer only for evidence-ready places; retain held reasons and defer the final full-site audit until production ends.
+- [x] England wave 2 started: 45 draft identities and cached source packets saved; Richmond Park and Rutland Water have reviewed six-stop packets, photos/routes and saved plans from two paid calls. No new places published; 34 Python tests pass.
+- [ ] Complete remaining 43 England source reviews and production; blockers: visitor/access evidence and six reviewed stop identities still incomplete. Island records use the existing non-road template pending ferry-specific evidence, not invented mainland drives.
 - [x] Optimize combined generation, compact evidence, source-bound stop IDs and resumable single-command batches; 288 JS + 33 Python tests pass. Live New Forest output retained, not published because operational claims lack evidence.
 - [ ] Continue England wave 2: all 45 places held before paid generation because approved source packets, reviewed excerpts and sourced stop identities are missing; no new pages published.
 - [x] Pilot wave: 14 of 15 national parks published

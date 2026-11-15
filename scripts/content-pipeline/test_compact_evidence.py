@@ -13,6 +13,20 @@ def packet():
         {'id': str(i), 'name': f'Place {i}', 'quote': q, 'source_url': 'https://park.test/walks'} for i,q in enumerate(quotes)]}
 
 class CompactEvidenceTests(unittest.TestCase):
+    def test_permit_enum_rejects_free_text_before_database_write(self):
+        p = packet()
+        travel = {'slug': 'test', 'source_url': 'https://park.test/walks', 'plan': {
+            'days': [{'stops': [{'stop_id': str(i)} for i in range(6)]}],
+            'sources': [{'url': 'https://park.test/walks'}]}}
+        summary = dict.fromkeys(['region','tagline','best_season','best_seasons','scenic_score',
+            'camping_score','avg_daily_budget','trip_duration_days','recommended_duration',
+            'permit_level','aliases','gateway_cities','similar_slugs','trip_tags','activities','seo_title'])
+        summary['permit_level'] = 'Parking Fee'
+        with patch.object(combined_content, 'module') as mod:
+            mod.return_value.validate.return_value = None
+            with self.assertRaisesRegex(ValueError, 'Invalid permit level'):
+                combined_content.validate_bundle({'summary': summary, 'travel': travel}, 'test', p)
+
     def test_only_approved_exact_official_stop_names_pass(self):
         p = packet(); p['approved_stops'][0]['name'] = 'Invented Falls'
         with self.assertRaisesRegex(ValueError, 'exact official evidence'):

@@ -1,0 +1,142 @@
+{
+  "fingerprint": "67b521cba952770f111ace33782ed59bbffc1fd8c1e0a4386bdc7f165013dae4",
+  "status": "validated",
+  "prompt_chars": 11780,
+  "bundle": {
+    "summary": {
+      "region": "Greater London",
+      "tagline": "Ancient woodlands and historic deer herds in London's largest National Nature Reserve.",
+      "best_season": "Spring (Azalea bloom)",
+      "trip_duration_days": "3",
+      "recommended_duration": "3 days",
+      "permit_level": "moderate",
+      "seo_title": "Exploring Richmond Park: A 3-Day Nature Guide",
+      "best_seasons": [
+        "spring",
+        "fall"
+      ],
+      "scenic_score": 8,
+      "camping_score": 0,
+      "avg_daily_budget": null,
+      "aliases": [
+        "London’s largest Site of Special Scientific Interest"
+      ],
+      "gateway_cities": [],
+      "similar_slugs": [],
+      "trip_tags": [
+        "family"
+      ],
+      "activities": [
+        "Isabella Plantation",
+        "King Henry’s Mound",
+        "Tamsin Trail"
+      ]
+    },
+    "travel": {
+      "slug": "richmond-park",
+      "headline": "Permits required for specialized activities like fishing",
+      "reservation": "Fishing requires a permit and traction kiting requires a licence. Check current visitor access and activity requirements with The Royal Parks before planning your visit.",
+      "source_url": "https://www.royalparks.org.uk/visit/parks/richmond-park",
+      "plan": {
+        "version": 1,
+        "days": [
+          {
+            "title": "Historic Vistas and Garden Oases",
+            "start": "Suggested: 9 AM at King Henry’s Mound",
+            "stops": [
+              {
+                "name": "King Henry’s Mound",
+                "detail": "Visit the highest point in the park to admire protected views stretching over ten miles to St. Paul’s Cathedral.",
+                "stop_id": "s2"
+              },
+              {
+                "name": "Pembroke Lodge",
+                "detail": "Visit this Georgian mansion for tea and stroll through its gardens, which offer sweeping views of the Thames Valley.",
+                "stop_id": "s4"
+              }
+            ],
+            "driving": "Transfer time is not established by the supplied sources; check access and walking routes before departure.",
+            "note": "Suggested pacing is for a leisurely day of walking and sightseeing."
+          },
+          {
+            "title": "Wildlife and Wetland Landscapes",
+            "start": "Suggested: 9 AM at Pen Ponds",
+            "stops": [
+              {
+                "name": "Pen Ponds",
+                "detail": "Visit Pen Ponds for wildlife photography; keep at least 50 metres away from deer.",
+                "stop_id": "s6"
+              },
+              {
+                "name": "Isabella Plantation",
+                "detail": "Walk the woodland paths of this 40-acre oasis, known for its streams and vibrant azalea collection.",
+                "stop_id": "s1"
+              }
+            ],
+            "driving": "Transfer time is not established by the supplied sources; check access and walking routes before departure.",
+            "note": "Keep at least 50m away from deer and use long lenses for photography."
+          },
+          {
+            "title": "Circuit Treks and Family Trails",
+            "start": "Suggested: 9 AM at Tamsin Trail",
+            "stops": [
+              {
+                "name": "Tamsin Trail",
+                "detail": "Follow the seven-mile perimeter route popular with hikers and joggers for a full view of the park's grasslands.",
+                "stop_id": "s3"
+              },
+              {
+                "name": "Petersham Gate Playground",
+                "detail": "A family stop with swings and slides.",
+                "stop_id": "s5"
+              }
+            ],
+            "driving": "Transfer time is not established by the supplied sources; check access and walking routes before departure.",
+            "note": "The Tamsin Trail is a multi-use path; remain alert for joggers and cyclists."
+          }
+        ],
+        "intel": [
+          {
+            "kind": "parking",
+            "title": "Public Access Points",
+            "text": "Evidence does not specify parking fill times or exact lot locations. Visitors should verify official gate availability and car park status before arrival."
+          },
+          {
+            "kind": "signal",
+            "title": "Connectivity Status",
+            "text": "Mobile coverage is not established by these sources; download maps before departure."
+          },
+          {
+            "kind": "fuel",
+            "title": "Refueling Locations",
+            "text": "Fuel locations are not established by these sources; plan supplies before departure."
+          },
+          {
+            "kind": "timing",
+            "title": "Seasonal Landscapes",
+            "text": "Visit in spring to see the azalea extravaganza at Isabella Plantation. Autumn offers a chance to see the 600-strong deer herds during the rut."
+          },
+          {
+            "kind": "access",
+            "title": "Recreational Licensing",
+            "text": "While walking is free, fishing and traction kiting are strictly regulated by permits. Check the Royal Parks website for current application procedures."
+          }
+        ],
+        "arrival": "Suggested: begin at one of the park’s approved sights and check current access before arrival.",
+        "vehicle": "While roads exist, cycling and walking are primary ways to experience the Tamsin Trail; check local vehicle restrictions for larger RVs.",
+        "goldenHour": "King Henry’s Mound is the recommended spot for evening light over the London skyline, though specific sunset times vary by season.",
+        "sources": [
+          {
+            "label": "The Royal Parks visitor information",
+            "url": "https://www.royalparks.org.uk/visit/parks/richmond-park"
+          },
+          {
+            "label": "The Royal Parks visitor information",
+            "url": "https://www.royalparks.org.uk/visit/parks/richmond-park/things-to-do#park-menu"
+          }
+        ]
+      }
+    }
+  },
+  "editorial_review": "Editorial review: schema values normalized; unsupported station, driving times, acreage, free-entry, camping-wide and vehicle-fit claims removed. No additional AI call."
+}

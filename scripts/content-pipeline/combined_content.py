@@ -53,6 +53,10 @@ def validate_bundle(bundle, slug, packet):
                 'aliases','gateway_cities','similar_slugs','trip_tags','activities','seo_title']
     if any(k not in summary for k in required):
         raise ValueError('Incomplete summary')
+    if summary['permit_level'] not in ('none', 'moderate', 'high'):
+        raise ValueError('Invalid permit level: expected none, moderate or high')
+    if not set(summary['best_seasons']) <= {'spring', 'summer', 'fall', 'winter'}:
+        raise ValueError('Invalid season values')
     if not summary['tagline'] or len(summary['tagline']) > 110 or len(summary['seo_title']) > 60:
         raise ValueError('Invalid summary length')
     if summary['avg_daily_budget'] is not None:
@@ -77,6 +81,8 @@ def generate_bundle(prepared):
         + '\nEvery stop must contain stop_id from approved_stops. Do not select new names. '
         'Use six distinct IDs across the plan. Summary activities are exactly three approved stop names. '
         'similar_slugs must be []; avg_daily_budget must be null. Tagline max 110 chars, seo_title max 60 chars. '
+        'permit_level must be exactly none, moderate or high, never prose or Parking Fee. '
+        'best_seasons must use only lowercase spring, summer, fall, winter. '
         'Use only evidence for season, regional scores (editorial assessments), gateways and permit level. '
         'Do not invent signal coverage, fuel locations or parking conditions; when evidence is missing explicitly '
         'state the gap and direct readers to verify before departure. Cite every official source used.\n'
