@@ -1,0 +1,95 @@
+{
+  "slug": "whiteshell-provincial-park",
+  "headline": "Park Pass Requirements for Manitoba Provincial Sites",
+  "reservation": "A valid Manitoba Provincial Parks vehicle permit is required for entry, which is distinct from campsite or yurt bookings. While day-use entry does not currently require a timed reservation, peak weekends often see capacity limits at popular trailheads; verify current permit digital or physical display requirements with Manitoba Parks.",
+  "source_url": "https://www.gov.mb.ca/sd/parks/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Boreal Shield Shorelines and Petroforms",
+        "start": "Suggested: 8:30 AM from Falcon Lake",
+        "stops": [
+          {
+            "name": "Bannock Point Petroforms",
+            "detail": "Walk the ancient rock alignments arranged by Indigenous peoples on the bedrock of the Precambrian Shield."
+          },
+          {
+            "name": "Pine Point Rapids",
+            "detail": "Hike the three-stage rapid system along the Whiteshell River, featuring a self-guided trail through mixed forest."
+          }
+        ],
+        "driving": "Allow 1 to 2 hours for regional travel; conditions vary.",
+        "note": "Stay on marked paths at petroform sites to preserve the sensitive lichen and cultural heritage."
+      },
+      {
+        "title": "Lake Tides and High Viewpoints",
+        "start": "Suggested: 9 AM from West Hawk Lake",
+        "stops": [
+          {
+            "name": "West Hawk Lake",
+            "detail": "Explore Canada's deepest lake, formed in a meteorite impact crater, known for its clear water and sheer rock cliffs."
+          },
+          {
+            "name": "Hunt Lake Trail",
+            "detail": "Navigate a challenging trek along the eastern shoreline of West Hawk Lake for elevated views of the impact basin."
+          }
+        ],
+        "driving": "Allow 45 minutes for local transfers; conditions vary.",
+        "note": "The Hunt Lake Trail features steep rock scrambles that may be slippery after rainfall."
+      },
+      {
+        "title": "Northern Cascades and Suspension Bridges",
+        "start": "Suggested: 8:30 AM from Seven Sisters Falls",
+        "stops": [
+          {
+            "name": "Rainbow Falls",
+            "detail": "Visit this popular photography spot where the White Lake outlet cascades over rounded granite steps."
+          },
+          {
+            "name": "Nutimik Lake Suspension Bridge",
+            "detail": "Cross the Winnipeg River via a pedestrian bridge to access the rugged northern sections of the Trans Canada Trail."
+          }
+        ],
+        "driving": "Allow 1.5 hours for transit between lake basins; conditions vary.",
+        "note": "Angling in these waters requires a valid Manitoba fishing license in addition to park entry."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead Capacity",
+        "text": "Parking lots at Pine Point and Bannock Point are known to reach capacity by mid-morning on summer weekends. Have an alternative destination ready as roadside parking is restricted in sensitive ecological zones."
+      },
+      {
+        "kind": "signal",
+        "title": "Cellular Connectivity",
+        "text": "Cell service is consistent near Falcon Lake and West Hawk Lake but drops off significantly in the park's northern interior. Download navigation maps for the PR 307 corridor before departing gateway towns."
+      },
+      {
+        "kind": "fuel",
+        "title": "Service Hubs",
+        "text": "Full service stations are concentrated at Falcon Lake and Rennie. Ensure your tank is sufficient before heading toward the more remote northern backcountry access points."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Biting Insects",
+        "text": "Early summer brings significant activity from blackflies and mosquitoes, which typically subsides by late August. Timing your hikes for breezy days on exposed granite ridges can improve the experience."
+      },
+      {
+        "kind": "access",
+        "title": "Watercraft Regulations",
+        "text": "Aquatic Invasive Species (AIS) inspections are mandatory for all watercraft entering Manitoba waters. Check official stations at park entrances to prevent the spread of zebra mussels."
+      }
+    ],
+    "arrival": "Pick up rental vehicle in Kenora or Winnipeg; stock up on perishables at Falcon Lake before checking into park cabins or campgrounds.",
+    "vehicle": "Standard passenger cars are suitable for the main paved routes (PR 301, 307, 308), though an SUV provides more comfort on gravel access roads; check rental agreements for unpaved road exclusions.",
+    "goldenHour": "Falcon Ridge lookout for sunset, though colors vary by lake orientation and seasonal haze.",
+    "sources": [
+      {
+        "label": "Manitoba Parks",
+        "url": "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/eastern/whiteshell.html"
+      }
+    ]
+  }
+}

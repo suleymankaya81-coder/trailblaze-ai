@@ -22,12 +22,12 @@ def get(path):
 
 held = []
 for slug in sys.argv[1:]:
-    d = get(f"destinations?slug=eq.{slug}&select=id,hero_image,photo_credit,lat,nearest_airport_code,drive_minutes,permit_note,travel_plan,country_code,region_slug")[0]
+    d = get(f"destinations?slug=eq.{slug}&select=id,hero_image,photo_credit,lat,nearest_airport_code,drive_minutes,permit_note,travel_plan,country_code,region_slug,access_type")[0]
     offers = get(f"offers?destination_id=eq.{d['id']}&select=id")
     c = cards.get(slug, {})
     problems = [msg for ok, msg in [
         (d["hero_image"] and d["photo_credit"], "cover photo"),
-        (d["lat"] is not None and d["nearest_airport_code"] and d["drive_minutes"], "location/airport/drive"),
+        (d["lat"] is not None and d["nearest_airport_code"] and (d["drive_minutes"] or d.get("access_type") == "fly-in"), "location/airport/drive"),
         (len(offers) >= (12 if d["country_code"] == "ca" else 15), f"offers {len(offers)}"),
         (slug in routes, "route line"),
         (d["permit_note"], "reservation note"),

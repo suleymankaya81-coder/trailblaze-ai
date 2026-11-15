@@ -28,6 +28,12 @@ WIKI_ANCHORS = {
     "niagara-falls-ontario": "Niagara Falls, Ontario",
     "sea-to-sky-highway": "Squamish, British Columbia",
     "kananaskis-country": "Kananaskis Village",
+    # Canada wave 3
+    "the-great-sand-hills": "Great Sand Hills",
+    "clear-lake": "Clear Lake (Manitoba)",
+    "akami-uapishku-kakkasuak-mealy-mountains-national-park-reserve": "Mealy Mountains National Park Reserve",
+    "miles-canyon": "Miles Canyon",
+    "naats-ihch-oh-national-park-reserve": "Nááts'įhch'oh National Park Reserve",
     # New-destination waves 3-5
     "palm-desert": "Palm Desert, California",
     "borrego-springs": "Borrego Springs, California",
@@ -154,6 +160,8 @@ SEARCH_TERMS = {
     "dollar-lake-provincial-park": ["Dollar Lake Provincial Park", "Dollar Lake Nova Scotia"],
     "lawrencetown-beach-provincial-park": ["Lawrencetown Beach", "Lawrencetown Nova Scotia", "Lawrencetown surf"],
     "north-cape-coastal-drive": ["North Cape Prince Edward Island", "North Cape lighthouse PEI", "North Cape Wind Energy"],
+    # Canada wave 3
+    "tuktut-nogait-national-park": ["Tuktut Nogait National Park", "Hornaday River", "Paulatuk Northwest Territories"],
     # New-destination waves 3-5: named scenic landmarks avoid same-name towns elsewhere.
     "palm-desert": ["Living Desert Zoo and Gardens", "Santa Rosa and San Jacinto Mountains National Monument", "Palm Desert California mountains"],
     "borrego-springs": ["Anza-Borrego Desert State Park", "Borrego Springs California", "Fonts Point Anza-Borrego"],
@@ -384,7 +392,7 @@ def run(slug, facts_only=False):
 
 def prepare_facts(slug):
     d = json.loads(q(f"select row_to_json(t) from (select slug,name,state,destination_type,trip_tags,"
-                     f"experience_tags,country_code from destinations where slug='{slug}') t"))
+                     f"experience_tags,country_code,access_type from destinations where slug='{slug}') t"))
     used = set(q("select hero_image from destinations where hero_image is not null").split("\n"))
     used_cards = set(q("select coalesce(string_agg(array_to_string(gallery, E'\\n'), E'\\n'),'') from destinations").split("\n"))
 
@@ -432,6 +440,10 @@ def prepare_facts(slug):
         best.append((r["minutes"] if r else 10**6, cand, r))
         time.sleep(1)
     _, ap, rt = min(best, key=lambda b: b[0])
+    if rt is None and d.get("access_type") == "fly-in":
+        # No roads to the park: visitors fly in, so store a straight line from the airport.
+        rt = {"minutes": 0, "miles": 0,
+              "coords": [[ap["lng"], ap["lat"]], [round(lng, 5), round(lat, 5)]]}
     if rt is None:
         raise RuntimeError("no drivable airport route")
     return {"slug": slug, "name": d["name"], "state": d["state"], "destination": d,
