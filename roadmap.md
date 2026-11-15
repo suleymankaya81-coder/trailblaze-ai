@@ -1,5 +1,6 @@
 ## November 15 flexible UK production
-- [ ] Categorize the remaining 56 UK places (40 source review, 8 photos, 7 coordinates, 1 retained output), resolve supported evidence/photo/identity gaps, and run one cached 1–3-day publication batch without paid retries; provide the exact remaining list.
+- [x] Categorize the previous 56 UK holds, approve 39 additional source packets, repair exact-place photo filtering, and process the cached publication batch: 37 published, 19 held. 52 Python / 288 application tests pass; three desktop pages and one phone page checked.
+- [ ] Finish 19 UK holds: 14 insufficient exact-place photo sets, 3 coordinate identities, North Coast 500 route evidence, and interrupted Forest of Bowland AI outcome (no paid replay). See uk/recovery-outcome-2026-11-15.json; full-page factual/photo audit remains pending.
 - [x] Accept one-day and multi-day destination plans throughout generation, publication and browser parsing without weakening exact-source checks; 44 Python and 288 application tests pass.
 - [x] Run remaining UK catalog through the publication batch; 16 new pages published (30 UK total), including four compact visits, with five public page checks and desktop/mobile verification. Thirteen retained outputs reused; only three new paid calls, no replays.
 - [x] Process the previous 115-place batch: 59 published, 56 held for explicit evidence/photo/coordinate/output reasons; UK total 89 published. Final all-page factual/photo audit remains pending production completion.
