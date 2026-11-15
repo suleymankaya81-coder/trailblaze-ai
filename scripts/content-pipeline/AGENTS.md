@@ -24,3 +24,4 @@
 - Travel generation strips link targets from evidence text before prompting and matches stop names by their distinctive words (generic words like trail/centre ignored). Why: models cited linked pages never fetched, and exact-string matching rejected sourced places.
 
 - Country support (airports, partner sets, currency, flexible offer/photo quotas, country paths) is enabled per ISO code; only the US keeps the fixed 15-offer and US campground set. Why: new countries like DACH must not inherit US partners or block on US-only quotas.
+- DACH places come from scripts/content-pipeline/dach/catalog.json (country de/at/ch, kind, wave 1 parks/biospheres, 2 iconic sights, 3 wider regions); authority names are hints, never evidence. Why: one reviewed list for source-first production.
