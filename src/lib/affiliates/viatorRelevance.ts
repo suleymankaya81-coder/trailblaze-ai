@@ -17,3 +17,19 @@ export function isPlaceExperienceRelevant(name: string, title: string, descripti
   }
   return terms.every((term) => text.has(term));
 }
+
+/** Fallback for places with no named listing: a gateway town or the place's distinctive area must be named, with the same country checks. */
+export function isNearbyExperienceRelevant(title: string, description = "", context: { gateways?: string[] | null; area?: string | null; state?: string | null; countryCode?: string | null }): boolean {
+  const text = new Set(words(`${title} ${description}`));
+  const geo = context.countryCode === "ca" ? [...words(context.state ?? ""), "canada", "canadian"]
+    : context.countryCode === "gb" ? [...words(context.state ?? ""), "uk", "britain", "british", "england", "scotland", "wales", "english", "scottish", "welsh", "ireland"]
+    : null;
+  if (geo && !geo.some((term) => text.has(term))) return false;
+  const stateWords = new Set(words(context.state ?? ""));
+  const has = (phrase: string, min: number) => {
+    const terms = words(phrase).filter((w) => w.length > 2 && !GENERIC.has(w) && !stateWords.has(w) && !DIRECTIONS.has(w));
+    return terms.length >= min && terms.every((t) => text.has(t));
+  };
+  return (context.gateways ?? []).some((g) => has(g, 1)) || has(context.area ?? "", 2);
+}
+const DIRECTIONS = new Set("north south east west northern southern eastern western northeastern northwestern southeastern southwestern central upper lower greater".split(" "));

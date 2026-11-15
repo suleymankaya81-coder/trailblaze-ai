@@ -31,3 +31,16 @@ describe("destination-specific real Viator results", () => {
     expect(isPlaceExperienceRelevant("Lake District National Park", "Lake District day tour in England", "", { countryCode: "gb", region: "Cumbria" })).toBe(true);
   });
 });
+
+import { isNearbyExperienceRelevant } from "./viatorRelevance";
+describe("nearby Viator fallback", () => {
+  it("accepts a tour from the gateway town", () => {
+    expect(isNearbyExperienceRelevant("Yorkshire Dales day trip from Skipton, England", "", { gateways: ["Skipton"], area: "Yorkshire Dales", state: "England", countryCode: "gb" })).toBe(true);
+  });
+  it("rejects a same-name town in another country", () => {
+    expect(isNearbyExperienceRelevant("Banff food tour", "Scotland coast", { gateways: ["Banff"], area: "Canadian Rockies", state: "Alberta", countryCode: "ca" })).toBe(false);
+  });
+  it("does not accept a state name alone", () => {
+    expect(isNearbyExperienceRelevant("Alabama BBQ tour", "", { gateways: ["Fort Payne"], area: "Northeastern Alabama", state: "Alabama", countryCode: "us" })).toBe(false);
+  });
+});
