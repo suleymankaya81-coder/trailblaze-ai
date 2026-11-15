@@ -1,0 +1,2 @@
+- Canadian estimates use dated market benchmarks and explicit USD conversion, not US defaults. Why: a shared currency must not substitute the wrong country's market.
+- Non-road destination access and reviewed Canadian photo overrides are shared across guides and destination views. Why: old drive metrics and rejected photos must not reappear in sibling surfaces.

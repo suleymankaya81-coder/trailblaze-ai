@@ -158,6 +158,9 @@
 - [ ] Publish; submit new sitemap and Change of Address in Search Console
 
 ## Canada launch (plan 2026-11-15)
+- [ ] Finish Saskatchewan Landing and refresh canonical geography for wave 3.
+- [ ] Audit all Canadian records, cover/gallery/activity identity and licenses, official information, access, links, maps and metadata; correct evidenced errors and list unresolved photos.
+- [ ] Use Canada-specific USD estimates (not US defaults); run all JS/Python tests and desktop/mobile end-to-end checks.
 - [x] Cleaned catalog: scripts/content-pipeline/canada/catalog.json (148 places, 20/84/44 by wave, 18 fly-in)
 - [x] Database: 13 CA regions (draft), destinations.park_authority + access_type
 - [x] Canadian airport search + anchors in prepare-wave.py

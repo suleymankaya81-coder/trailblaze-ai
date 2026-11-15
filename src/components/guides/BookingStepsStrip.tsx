@@ -8,13 +8,15 @@ import gearImg from "@/assets/thumbs/gear.jpg";
 import { ArrowUpRight } from "lucide-react";
 import { corridorPartnerLinks } from "@/lib/affiliates/corridorPartners";
 import { buildVrboSearchUrl } from "@/lib/affiliates/vrbo";
+import { isNonRoadDestination } from "@/lib/data/destinationAccess";
 
 /** Shared five-stage booking path. Cars and RVs are alternatives within one stage. */
 export function BookingStepsStrip({ slug, name, airportCode }: { slug: string; name: string; airportCode: string | null }) {
   const l = corridorPartnerLinks(slug);
+  const nonRoad = isNonRoadDestination(slug);
   const steps = [
     { number: 1, label: airportCode ? `Find flights to ${airportCode}` : "Choose your arrival", brand: airportCode ? "Aviasales" : "Route & arrival notes", href: airportCode ? l.flight : "#trip-plan", external: !!airportCode },
-    { number: 2, label: airportCode ? `Compare cars at ${airportCode}` : "Compare rental cars", brand: "Airport Rentals", href: l.car, external: true, alternative: l.motorhome },
+    nonRoad ? { number: 2, label: "Arrange expedition transfers", brand: "Official access notes", href: "#trip-plan", external: false } : { number: 2, label: airportCode ? `Compare cars at ${airportCode}` : "Compare rental cars", brand: "Airport Rentals", href: l.car, external: true, alternative: l.motorhome },
     { number: 3, label: `Search stays near ${name}`, brand: "Vrbo", href: buildVrboSearchUrl(name), external: true },
     { number: 4, label: "Choose your tours", brand: "Tours & experiences", href: "#trip-tours", external: false },
     { number: 5, label: "Choose trip essentials", brand: "Four route-matched picks", href: "#trip-gear", external: false },

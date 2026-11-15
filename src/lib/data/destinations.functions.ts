@@ -7,6 +7,8 @@ import type { Tables } from "@/integrations/supabase/types";
 import { parseTravelPlan, type TravelPlan } from "./travelPlan";
 import { isApprovedRental } from "@/lib/affiliates/rentalPolicy";
 import { withWebjetAffiliate } from "@/lib/affiliates/webjet";
+import { isNonRoadDestination, isOfferEligibleForPlace } from "./destinationAccess";
+import { cadToUsd } from "./canadaPricing";
 
 export type OfferView = {
   id: string;
@@ -61,6 +63,7 @@ export type DestinationView = {
   travelPlan: TravelPlan | null;
   airportCode: string | null;
   countryCode: string;
+  accessType?: string;
   airportName: string | null;
   airportLat: number | null;
   airportLng: number | null;
@@ -120,6 +123,8 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
 
     if (destError) throw destError;
     if (!dest) return null;
+    const nonRoad = isNonRoadDestination(dest.slug, dest.access_type);
+    const country = dest.country_code ?? "us";
 
     const { data: offers, error: offersError } = await supabase
       .from("offers")
@@ -140,6 +145,7 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
     const order = GLOBAL_SERVICE_CATEGORIES as readonly string[];
     const globalServices = (globalRows ?? [])
       .slice()
+      .filter((o) => isOfferEligibleForPlace(o.partner, country, nonRoad, o.category))
       .sort((a, b) => order.indexOf(a.category) - order.indexOf(b.category))
       .map(toOfferView);
 
@@ -147,6 +153,7 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       (offers ?? [])
         .filter((o) => categories.includes(o.category))
         .filter((o) => isApprovedRental(o.partner, o.category))
+        .filter((o) => isOfferEligibleForPlace(o.partner, country, nonRoad, o.category))
         .filter(
           (o) =>
             SHOWN_NETWORKS.some((network) => network === o.network) ||
@@ -187,7 +194,7 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       bestSeason: dest.best_season,
       scenicScore: dest.scenic_score,
       campingScore: dest.camping_score,
-      avgDailyBudget: dest.avg_daily_budget,
+       avgDailyBudget: dest.avg_daily_budget == null ? null : dest.currency === "CAD" ? cadToUsd(dest.avg_daily_budget) : dest.avg_daily_budget,
       tripDurationDays: dest.trip_duration_days,
       id: dest.id,
       permitLevel: dest.permit_level,
@@ -197,13 +204,14 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       travelPlan: parseTravelPlan(dest.travel_plan),
       airportCode: dest.nearest_airport_code,
       countryCode: dest.country_code ?? "us",
+      accessType: dest.access_type ?? "road",
       airportName: dest.nearest_airport_name,
       airportLat: dest.airport_lat,
       airportLng: dest.airport_lng,
       lat: dest.lat,
       lng: dest.lng,
-      driveMinutes: dest.drive_minutes,
-      driveMiles: dest.drive_miles,
+      driveMinutes: nonRoad ? null : dest.drive_minutes,
+      driveMiles: nonRoad ? null : dest.drive_miles,
       stays: byCategory(["stay"]),
       rentals: byCategory(["rv_rental", "gear_rental"]),
       activities: byCategory(["activity"]),

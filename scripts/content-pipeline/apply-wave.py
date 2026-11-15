@@ -9,6 +9,7 @@ Run: python scripts/content-pipeline/apply-wave.py slug [slug ...]
 """
 import hashlib, json, os, subprocess, sys, urllib.parse
 import requests
+from canada.review import overrides
 
 DB = os.environ["SUPABASE_DB_URL"]  # read-only lookups
 REST = os.environ["SUPABASE_URL"] + "/rest/v1"
@@ -122,6 +123,7 @@ def apply(slug):
         "drive_minutes": rt and rt["minutes"], "drive_miles": rt and rt["miles"],
     }
     sets["permit_level"] = ai["permit_level"]
+    sets.update(overrides(slug))
     requests.patch(f"{REST}/destinations?slug=eq.{slug}", json=sets, headers=H).raise_for_status()
     requests.delete(f"{REST}/offers?destination_id=eq.{dest_id}", headers=H).raise_for_status()
     requests.post(f"{REST}/offers", json=offers(d, dest_id, country), headers=H).raise_for_status()

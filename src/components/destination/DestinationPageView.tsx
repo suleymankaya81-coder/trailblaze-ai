@@ -85,6 +85,8 @@ import { destinationCrumbs, type Crumb } from "@/lib/seo/breadcrumbs";
 import { offerPhoto, type Photo } from "@/lib/data/destinationCardPhotos";
 import { ROAD_PREPARATION_PARTNERS, preparationLink } from "@/lib/affiliates/travelpayouts";
 import { commonsFilePage, parsePhotoCredit } from "@/lib/seo/imageCredit";
+import { isNonRoadDestination } from "@/lib/data/destinationAccess";
+import { CANADA_PRICE_BASIS } from "@/lib/data/canadaPricing";
 
 
 /* =========================================================
@@ -93,6 +95,7 @@ import { commonsFilePage, parsePhotoCredit } from "@/lib/seo/imageCredit";
 ========================================================= */
 export function DestinationPageView({ dest, landingLinks, crumbs }: { dest: DestinationView; landingLinks: LandingLink[]; crumbs?: Crumb[] }) {
   const tp = useTp();
+  const nonRoad = isNonRoadDestination(dest.slug, dest.accessType);
   const enrich = useServerFn(enrichDestination);
 
   const { data: ai, isLoading: aiLoading } = useQuery({
@@ -108,7 +111,7 @@ export function DestinationPageView({ dest, landingLinks, crumbs }: { dest: Dest
 
       <Hero dest={dest} crumbs={crumbs} />
       <TripSnapshot trip={dest} compact />
-      <BookingBar />
+      <BookingBar nonRoad={nonRoad} />
 
       {/* Order: showcase (vehicles + top tour) → know before you go → flights → vehicles → itinerary → map → stays → tours → budget/prep → gear */}
       <main className="container-page max-w-[1200px] space-y-12 py-5 md:space-y-16 md:py-6">
@@ -121,7 +124,7 @@ export function DestinationPageView({ dest, landingLinks, crumbs }: { dest: Dest
 
         <div id="trip-flights" className="scroll-mt-40"><div id="trip-booking"><BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} /></div></div>
 
-        <RentBeforeYouGo dest={dest} />
+        {!nonRoad && <RentBeforeYouGo dest={dest} />}
 
         <div className="space-y-12 md:space-y-16">
           {dest.travelPlan ? <TravelFlow name={dest.name} plan={dest.travelPlan} airportCode={dest.airportCode} nudges region={dest.region} slug={dest.slug} /> : <TripFlow dest={dest} />}
@@ -167,7 +170,7 @@ function Hero({ dest, crumbs }: { dest: DestinationView; crumbs?: Crumb[] }) {
   if (dest.bestSeason) stats.push({ label: "Best time", value: dest.bestSeason });
   if (dest.tripDurationDays) stats.push({ label: "Duration", value: dest.tripDurationDays });
   if (dest.avgDailyBudget != null)
-    stats.push({ label: "Avg. budget", value: `$${dest.avgDailyBudget} / day` });
+    stats.push({ label: "Est. budget · USD", value: `US$${dest.avgDailyBudget} / day` });
   if (dest.scenicScore != null)
     stats.push({ label: "Scenic score", value: `${dest.scenicScore} / 10` });
   if (dest.campingScore != null)
@@ -246,10 +249,12 @@ function CardImg({ src, alt, className }: { src: string; alt: string; className?
 function PriceTag({
   offer,
   fallbackUnit,
+  destinationSlug,
   className = "font-serif text-lg font-semibold text-foreground",
 }: {
   offer: OfferView;
   fallbackUnit: string;
+  destinationSlug: string;
   className?: string;
 }) {
   if (offer.priceValue != null) {
@@ -265,7 +270,7 @@ function PriceTag({
     );
   }
   if (offer.priceDisplay) return <span className={className}><T>{offer.priceDisplay}</T></span>;
-  return <span className="text-xs font-normal text-muted-foreground"><T>{`${estimatedFrom(`${offer.title ?? ""} ${offer.subcategory ?? ""} ${offer.partner ?? ""}`)} · estimate`}</T></span>;
+  return <span className="text-xs font-normal text-muted-foreground"><T>{`${estimatedFrom(`${offer.title ?? ""} ${offer.subcategory ?? ""} ${offer.partner ?? ""}`, destinationSlug)} · estimate`}</T></span>;
 }
 
 function useTrackedRedirect(offer: OfferView, destinationSlug: string) {
@@ -509,7 +514,7 @@ function StayCard({
           </p>
         )}
         <div className="mt-auto flex flex-col gap-3 border-t border-border pt-3">
-          <PriceTag offer={offer} fallbackUnit="night" />
+          <PriceTag offer={offer} fallbackUnit="night" destinationSlug={destinationSlug} />
           <OfferCta offer={offer.partner === "harvest_hosts" ? { ...offer, externalUrl: HARVEST_HOSTS_URL, network: "awin" } : offer} label={offer.partner === "harvest_hosts" ? "Get 20% off" : offerCtaLabel(offer.category)} destinationSlug={destinationSlug} />
         </div>
       </div>
@@ -569,7 +574,7 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
       ) : (
         <>
           <p className="mt-5 font-serif text-3xl font-semibold text-foreground">
-            ${total.toLocaleString()}
+            US${total.toLocaleString()}
           </p>
           <p className="text-xs text-muted-foreground"><T>Estimated total</T></p>
 
@@ -581,19 +586,19 @@ function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
                   <span className="text-xs"><T>{i.label}</T></span>
                 </span>
                 <span className="text-xs font-semibold text-foreground">
-                  ${i.value.toLocaleString()}
+                  US${i.value.toLocaleString()}
                 </span>
               </li>
             ))}
           </ul>
 
-          <button
+          <Button
             type="button"
             onClick={() => setShowNote((v) => !v)}
             className="mt-6 w-full rounded-full border border-border py-2.5 text-xs font-semibold text-foreground transition hover:bg-muted"
           >
             <T>See ways to save</T>
-          </button>
+          </Button>
           {showNote && (
             <p className="mt-3 rounded-xl bg-beige/70 p-3 text-[11px] leading-relaxed text-foreground/80">
               {ai.budget.note}
@@ -633,6 +638,7 @@ function RentBeforeYouGo({ dest }: { dest: DestinationView }) {
         ))}
         <GettingThereItems slug={dest.slug} name={dest.name} airportCode={dest.airportCode} />
       </div>
+      {dest.countryCode === "ca" && <p className="mt-4 text-xs text-muted-foreground">Canadian market averages in USD, not live quotes. C${CANADA_PRICE_BASIS.cadPerUsd} = US$1 ({CANADA_PRICE_BASIS.exchangeDate}); season, taxes and extras vary. <a className="underline" href={CANADA_PRICE_BASIS.carSource} target="_blank" rel="noopener noreferrer">Car averages</a> · <a className="underline" href={CANADA_PRICE_BASIS.rvSource} target="_blank" rel="noopener noreferrer">RV averages</a></p>}
     </section>
   );
 }
@@ -650,7 +656,7 @@ function RentalTile({ offer, destinationSlug, photo, kind }: { offer: OfferView;
   const title = kind === "motorhome" ? offer.title: "Sleeps 2 campervans";
   const price = kind === "motorhome" && offer.priceValue != null
     ? `From $${offer.priceValue}/${offer.priceUnit ?? "day"}`
-    : estimatedFrom(kind === "camper" ? "small campervan" : `${offer.title} ${offer.subcategory ?? ""}`);
+    : estimatedFrom(kind === "camper" ? "small campervan" : `${offer.title} ${offer.subcategory ?? ""}`, destinationSlug);
   return (
     <article className="group relative flex flex-col overflow-hidden rounded-xl border border-border bg-card">
       <div className="relative aspect-[4/3] bg-beige/30">
@@ -808,19 +814,20 @@ function ServiceRow({ service, destinationSlug }: { service: OfferView; destinat
    (src/data/routes.json). Visitors never trigger a paid map API.
 ========================================================= */
 function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
+  const nonRoad = isNonRoadDestination(dest.slug, dest.accessType);
   const hasGeo =
     dest.lat != null && dest.lng != null && dest.airportLat != null && dest.airportLng != null;
   const from: [number, number] | null = dest.airportLng != null && dest.airportLat != null ? [dest.airportLng, dest.airportLat] : null;
   const to: [number, number] | null = dest.lng != null && dest.lat != null ? [dest.lng, dest.lat] : null;
-  const route = ROUTES[dest.slug] ?? null;
-  const directions = hasGeo
+  const route = nonRoad ? null : ROUTES[dest.slug] ?? null;
+  const directions = hasGeo && !nonRoad
     ? `https://www.google.com/maps/dir/?api=1&origin=${dest.airportLat},${dest.airportLng}&destination=${dest.lat},${dest.lng}&travelmode=driving`
     : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(dest.name)}`;
   const nearbyStays = dest.stays.slice(0, 3);
 
   return (
     <section id="road-trip" className="scroll-mt-24">
-      <SectionHeader title="Plan your road trip" />
+      <SectionHeader title={nonRoad ? "Locate your expedition" : "Plan your road trip"} />
       <div className="grid grid-cols-[minmax(0,1fr)] gap-6 rounded-lg border border-border bg-card p-4 shadow-soft sm:p-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
         <div className="relative min-h-[300px] overflow-hidden rounded-xl border border-border bg-beige/60">
           {from && to ? (
@@ -844,9 +851,9 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
                 <T>From</T> {dest.airportName}
               </p>
               <p className="mt-1 font-serif text-2xl font-semibold text-foreground">
-                {dest.driveMinutes != null ? formatDrive(dest.driveMinutes) : "—"}
+                {nonRoad ? <T>Flight or boat transfer required</T> : dest.driveMinutes != null ? formatDrive(dest.driveMinutes) : "—"}
               </p>
-              {dest.driveMiles != null && (
+              {!nonRoad && dest.driveMiles != null && (
                 <p className="text-xs text-muted-foreground">
                   <T>{`about ${Math.round(dest.driveMiles)} miles by car · times vary with traffic and road closures`}</T>
                 </p>
@@ -859,14 +866,14 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
             rel="noopener noreferrer"
             className="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-forest px-5 py-2.5 text-sm font-semibold text-off-white transition hover:bg-ink"
           >
-            <Navigation className="h-4 w-4" /> <T>Get directions</T>
+            <Navigation className="h-4 w-4" /> <T>{nonRoad ? "View place in Google Maps" : "Get directions"}</T>
           </a>
           <p className="mt-2 text-center text-[11px] text-muted-foreground">
-            <T>Airport-to-destination drive; sightseeing stops are separate markers.</T>
+            <T>{nonRoad ? "Location only; this is not a road route. Confirm transfers with the park authority." : "Airport-to-destination drive; sightseeing stops are separate markers."}</T>
           </p>
           {nearbyStays.length > 0 && (
             <>
-              <p className="mt-5 text-xs font-semibold text-foreground"><T>Stays near the end of your drive</T></p>
+              <p className="mt-5 text-xs font-semibold text-foreground"><T>{nonRoad ? "Check accommodation with your expedition operator" : "Stays near the end of your drive"}</T></p>
               <ul className="mt-2 space-y-2">
                 {nearbyStays.map((s) => (
                   <li key={s.id}>

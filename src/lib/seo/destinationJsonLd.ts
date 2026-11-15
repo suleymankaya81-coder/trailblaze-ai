@@ -1,6 +1,7 @@
 import { SITE_ORIGIN } from "@/config/site";
 import { breadcrumbJsonLd, destinationCrumbs } from "./breadcrumbs";
 import type { DestinationView } from "@/lib/data/destinations.functions";
+import { isNonRoadDestination } from "@/lib/data/destinationAccess";
 import { commonsFilePage, parsePhotoCredit, toAbsoluteImageUrl, type ImageCredit } from "./imageCredit";
 
 function imageObject(url: string, caption: string, credit: ImageCredit | null): Record<string, unknown> {
@@ -58,13 +59,14 @@ export function buildDestinationJsonLd(dest: DestinationView, pageUrl: string, f
   };
   const graph: Record<string, unknown>[] = [destination, webPage, breadcrumbJsonLd(destinationCrumbs(dest))];
   const plan = dest.travelPlan;
+  const nonRoad = isNonRoadDestination(dest.slug, dest.accessType);
   if (plan) {
     graph.push({
       "@type": "TouristTrip",
       "@id": `${pageUrl}#trip`,
-      name: `${plan.days.length} days in ${dest.name}`,
+      name: nonRoad ? `Expedition planning stages for ${dest.name}` : `${plan.days.length} days in ${dest.name}`,
       url: `${pageUrl}#flow`,
-      description: `Suggested sightseeing itinerary for ${dest.name}; not a bookable guided tour.`,
+      description: nonRoad ? `Expedition preparation sequence for ${dest.name}; not a three-day sightseeing circuit or bookable tour.` : `Suggested sightseeing itinerary for ${dest.name}; not a bookable guided tour.`,
       itinerary: {
         "@type": "ItemList",
         itemListOrder: "https://schema.org/ItemListOrderAscending",
@@ -72,7 +74,7 @@ export function buildDestinationJsonLd(dest: DestinationView, pageUrl: string, f
         itemListElement: plan.days.flatMap((day, dayIndex) => day.stops.map((stop, stopIndex) => ({
           "@type": "ListItem",
           position: plan.days.slice(0, dayIndex).reduce((count, previous) => count + previous.stops.length, 0) + stopIndex + 1,
-          name: `Day ${dayIndex + 1}: ${day.title}`,
+          name: `${nonRoad ? "Stage" : "Day"} ${dayIndex + 1}: ${day.title}`,
           item: { "@type": "TouristAttraction", name: stop.name, description: stop.detail },
         }))),
       },

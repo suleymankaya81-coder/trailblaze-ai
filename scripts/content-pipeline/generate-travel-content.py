@@ -4,6 +4,7 @@ Run --limit 24. Credits/policy/refusals halt every entry point until explicit --
 import argparse, datetime, json, os, re, subprocess, time
 from pathlib import Path
 import requests
+from canada.review import reviewed_item
 
 JOB = 'destination-travel-v1'
 MODEL = 'google/gemini-3-flash-preview'
@@ -102,7 +103,7 @@ def main():
             for r in chunk:
                 if not (CACHE/(r['slug']+'.json')).exists():
                     print(r['slug'], 'HELD incomplete response', flush=True); continue
-                item=json.loads((CACHE/(r['slug']+'.json')).read_text())
+                item=reviewed_item(json.loads((CACHE/(r['slug']+'.json')).read_text()))
                 try: p=validate(item)
                 except (AssertionError, KeyError) as error:
                     print(r['slug'], 'HELD', str(error), flush=True)

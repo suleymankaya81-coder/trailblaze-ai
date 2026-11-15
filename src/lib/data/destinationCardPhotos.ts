@@ -1,5 +1,6 @@
 /** Credited Commons photos mirrored locally. All partner photos are illustrative, not listing/product photography. */
 import wavePhotos from "@/data/destinationCardPhotos.wave.json";
+import canadaPhotos from "@/data/canada-photo-overrides.json";
 import { servicePhoto, serviceCategory } from "./servicePhotos";
 export type Photo = { url: string; source: string; credit: string; license: string; subject: string };
 type CardCategory = "stay" | "rental" | "activity" | "gear" | "toolkit";
@@ -154,6 +155,7 @@ for (const [slug, p] of Object.entries(wavePhotos as Record<string, { activity: 
 }
 export const offerPhoto = (slug: string, category: Exclude<CardCategory, "toolkit">, index: number, serviceText?: string): Photo | undefined => {
   // Keep place-specific activity photos tied to their own destination.
+  if (category === "activity" && slug in canadaPhotos) return (canadaPhotos as Record<string, Photo[]>)[slug]?.[index];
   if (category === "activity") return photos[slug]?.activity?.[index];
   const defaults = { stay: ["tent", "rvpark", "tent"], rental: ["rv", "campervan", "car"], gear: ["power", "bottle", "layers", "headlamp", "firstaid", "jacket"] } as const;
   const type = serviceText ? serviceCategory(serviceText, category) : defaults[category][index];

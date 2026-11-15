@@ -1,5 +1,7 @@
 import library from "@/data/servicePhotos.json";
 import type { Photo } from "./destinationCardPhotos";
+import { destinationGeo } from "@/lib/routes/paths";
+import { canadaEstimate } from "./canadaPricing";
 
 export type ServicePhotoCategory = "flight" | "car" | "bike" | "rv" | "campervan" | "tour" | "attraction" | "tent" | "rvpark" | "cabin" | "hotel" | "glamping" | "tinyhouse" | "kayak" | "bottle" | "headlamp" | "jacket" | "firstaid" | "layers" | "power" | "parkentry";
 const pools = library as Partial<Record<ServicePhotoCategory, Photo[]>>;
@@ -69,7 +71,8 @@ const ESTIMATES: Array<[RegExp, string]> = [
   [/bike|bicycle|kayak|canoe/, "Est. from $35/day"],
   [/camp|tent|site|harvest|roverpass/, "Est. from $35/night"],
 ];
-export function estimatedFrom(text: string): string {
+export function estimatedFrom(text: string, destinationSlug?: string): string {
+  if (destinationSlug && destinationGeo(destinationSlug)?.country === "ca") return canadaEstimate(text);
   const t = text.toLowerCase();
   return ESTIMATES.find(([re]) => re.test(t))?.[1] ?? "Check live price";
 }

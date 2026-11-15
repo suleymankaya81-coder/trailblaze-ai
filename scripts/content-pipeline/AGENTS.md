@@ -8,3 +8,4 @@
 - Affiliate feeds: raw files in data/affiliate-feeds/<brand>/raw, normalized by import-<brand>-feed.py into products.json. Why: one re-importable catalog for product guides.
 - collect-route-stops.py stores canonical daily routing identities and a missing-coordinate report; only exact reviewed source-marker matches receive coordinates. Why: translated labels and broad park-centre matches must not change navigation.
 - Canada places come from scripts/content-pipeline/canada/catalog.json (wave, authority, road/fly-in); CA regions stay draft until a place in them is published. Why: one reviewed source and no empty province pages.
+- Canadian corrections and rejected photo selections live in canada/review.json and override generation retries. Why: verified corrections must not revert to the original generated mistakes.

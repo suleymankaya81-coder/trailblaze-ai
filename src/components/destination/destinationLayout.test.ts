@@ -6,7 +6,7 @@ import { tp } from "@/lib/i18n";
 describe("destination layout", () => {
   it("shows the vehicle & tour showcase before the itinerary", () => {
     const src = readFileSync("src/components/destination/DestinationPageView.tsx", "utf8");
-    const page = src.slice(src.indexOf("<BookingBar />"));
+    const page = src.slice(src.indexOf("<BookingBar"));
     expect(page.indexOf("<TopShowcase")).toBeGreaterThan(-1);
     expect(page.indexOf("<TopShowcase")).toBeLessThan(page.indexOf("<TravelFlow"));
     expect(page.indexOf("<LocalIntel")).toBeLessThan(page.indexOf("<TravelFlow"));

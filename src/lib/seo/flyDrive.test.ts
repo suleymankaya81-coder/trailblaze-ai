@@ -4,6 +4,9 @@ import { airportCity, flyDriveDescription, flyDriveFaqs, flyDriveJsonLd, flyDriv
 const ys = { slug: "yellowstone", name: "Yellowstone", airportCode: "BZN", airportName: "Bozeman Yellowstone International Airport", driveMinutes: 116, driveMiles: 90 };
 
 describe("fly & drive slugs", () => {
+  it("does not create road guides for remote Canadian expedition parks", () => {
+    expect(flyDriveSlug({ ...ys, slug: "auyuittuq-national-park" })).toBeNull();
+  });
   it("builds the agreed URL shape", () => {
     expect(flyDriveSlug(ys)).toBe("bozeman-bzn-yellowstone");
   });

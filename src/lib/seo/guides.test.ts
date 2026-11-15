@@ -5,6 +5,9 @@ const base: GuideDest = { slug: "x-test", name: "X", airportCode: "AAA", airport
 const stop = (slug: string, lng: number, lat: number): LoopStop => ({ slug, name: slug, lng, lat, heroImage: "", tripDurationDays: "2–3 days", permitLevel: "none", permitHeadline: null });
 
 describe("guide eligibility", () => {
+  it("does not recommend RV driving to fly-in parks even with old drive metrics", () => {
+    expect(isRvEligible({ ...base, slug: "sirmilik-national-park" })).toBe(false);
+  });
   it("no-reservation page needs high/moderate permit level and a note", () => {
     expect(isNoReservationEligible(base)).toBe(true);
     expect(isNoReservationEligible({ ...base, permitLevel: "none" })).toBe(false);

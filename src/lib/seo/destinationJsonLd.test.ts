@@ -12,6 +12,10 @@ const dest = {
 } as unknown as DestinationView;
 
 describe("destination structured data", () => {
+  it("does not turn remote expedition stages into a day-trip promise", () => {
+    const result = buildDestinationJsonLd({ ...dest, slug: "auyuittuq-national-park", name: "Auyuittuq" }, "https://wildparkroutes.com/destinations/ca/nunavut/auyuittuq-national-park");
+    expect(result["@graph"]).toEqual(expect.arrayContaining([expect.objectContaining({ name: "Expedition planning stages for Auyuittuq", itinerary: expect.objectContaining({ itemListElement: expect.arrayContaining([expect.objectContaining({ name: "Stage 1: Geysers" })]) }) })]));
+  });
   it("preserves the visible daily stop order in one suggested trip", () => {
     const result = buildDestinationJsonLd(dest, "https://wildparkroutes.com/destinations/yellowstone");
     expect(result).toMatchObject({ "@graph": expect.arrayContaining([{

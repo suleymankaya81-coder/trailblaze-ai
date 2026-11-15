@@ -5,6 +5,7 @@ import { SITE_ORIGIN } from "@/config/site";
 import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 import { breadcrumbJsonLd, placeGuideCrumbs } from "./breadcrumbs";
 import { BRAND, DESCRIPTION_MAX, TITLE_MAX, fitText } from "./routeSeo";
+import { isNonRoadDestination } from "@/lib/data/destinationAccess";
 
 export const SITE = SITE_ORIGIN;
 
@@ -31,6 +32,7 @@ export function airportCity(airportName: string): string {
 
 /** Canonical slug, or null when the data needed for a useful page is missing. */
 export function flyDriveSlug(d: FlyDriveInput): string | null {
+  if (isNonRoadDestination(d.slug)) return null;
   if (!d.airportCode || !d.airportName || d.driveMinutes == null) return null;
   return `${airportCity(d.airportName)}-${d.airportCode.toLowerCase()}-${d.slug}`;
 }

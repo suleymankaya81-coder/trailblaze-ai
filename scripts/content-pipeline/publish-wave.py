@@ -12,6 +12,7 @@ SK = os.environ["SUPABASE_SERVICE_ROLE_KEY"]
 H = {"apikey": SK, "Authorization": f"Bearer {SK}", "Content-Type": "application/json"}
 routes = json.load(open("src/data/routes.json"))
 cards = json.load(open("src/data/destinationCardPhotos.wave.json"))
+review = json.load(open("scripts/content-pipeline/canada/review.json"))
 
 
 def get(path):
@@ -24,8 +25,9 @@ held = []
 for slug in sys.argv[1:]:
     d = get(f"destinations?slug=eq.{slug}&select=id,hero_image,photo_credit,lat,nearest_airport_code,drive_minutes,permit_note,travel_plan,country_code,region_slug,access_type")[0]
     offers = get(f"offers?destination_id=eq.{d['id']}&select=id")
-    c = cards.get(slug, {})
+    c = review.get("photoDecisions", {}).get(slug, cards.get(slug, {}))
     problems = [msg for ok, msg in [
+        (slug not in {r["slug"] for r in review.get("photoNeeds", [])}, "reviewed photo blocker"),
         (d["hero_image"] and d["photo_credit"], "cover photo"),
         (d["lat"] is not None and d["nearest_airport_code"] and (d["drive_minutes"] or d.get("access_type") == "fly-in"), "location/airport/drive"),
         (len(offers) >= (12 if d["country_code"] == "ca" else 15), f"offers {len(offers)}"),

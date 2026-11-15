@@ -7,14 +7,16 @@ import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { isMhrBlackFridayLive } from "@/lib/affiliates/mhrBlackFriday";
 import { validViatorHeight } from "@/lib/affiliates/viatorDisplay";
 import bfArt from "@/assets/rv_black_friday_2026.png.asset.json";
+import { isNonRoadDestination } from "@/lib/data/destinationAccess";
 
 /** First-screen two-up showcase: vehicles & RVs (left) and the top real Viator tour for this place (right). */
 export function TopShowcase({ slug, name, airportCode, vehicleNote, country = "us" }: { slug: string; name: string; airportCode: string | null; vehicleNote?: string | null; country?: string }) {
   // The Black Friday deal is US-only; other countries keep the regular vehicle card.
   const bf = isMhrBlackFridayLive() && country === "us";
+  const nonRoad = isNonRoadDestination(slug);
   return (
     <section id="trip-vehicles" aria-label={`Vehicles and tours for ${name}`} className="scroll-mt-40 grid gap-5 md:grid-cols-2 md:items-stretch">
-      {bf ? <BlackFridayShowcase slug={slug} /> : <VehicleShowcase slug={slug} airportCode={airportCode} vehicleNote={vehicleNote} country={country} />}
+      {nonRoad ? <div className="border border-border bg-card p-6"><h2 className="font-display text-2xl"><T>Plan your expedition access</T></h2><p className="mt-3 text-sm text-muted-foreground"><T>No airport-to-park road route. Arrange the required flight, boat or guided transfer with the park authority before booking.</T></p>{vehicleNote && <p className="mt-3 text-sm"><T>{vehicleNote}</T></p>}<Button asChild variant="outline" className="mt-4"><a href="#trip-plan"><T>Check access notes</T></a></Button></div> : bf ? <BlackFridayShowcase slug={slug} /> : <VehicleShowcase slug={slug} airportCode={airportCode} vehicleNote={vehicleNote} country={country} />}
       <TourShowcase slug={slug} name={name} />
     </section>
   );
@@ -35,9 +37,9 @@ function VehicleShowcase({ slug, airportCode, vehicleNote, country = "us" }: { s
   const l = corridorPartnerLinks(slug);
   const us = country === "us";
   const rows = [
-    { icon: Car, label: "Standard car", price: us ? estimatedFrom("standard car") : null, brand: "Airport Rentals", href: l.car },
-    { icon: Truck, label: "SUV", price: us ? estimatedFrom("suv") : null, brand: "Airport Rentals", href: l.car },
-    { icon: Caravan, label: "RV / motorhome", price: us ? estimatedFrom("rv") : null, brand: "Motorhome Republic", href: l.motorhome },
+    { icon: Car, label: "Standard car", price: estimatedFrom("standard car", slug), brand: "Airport Rentals", href: l.car },
+    { icon: Truck, label: "SUV", price: estimatedFrom("suv", slug), brand: "Airport Rentals", href: l.car },
+    { icon: Caravan, label: "RV / motorhome", price: estimatedFrom("rv", slug), brand: "Motorhome Republic", href: l.motorhome },
   ];
   return (
     <div className="flex flex-col rounded-xl border border-border bg-card p-5 md:p-6">

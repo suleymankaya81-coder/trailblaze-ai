@@ -6,6 +6,7 @@ import { HOME, ROAD_TRIPS, breadcrumbJsonLd, placeGuideCrumbs } from "./breadcru
 import loops from "@/data/loops.json";
 import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 import { SITE, formatDriveShort, type Faq } from "@/lib/seo/flyDrive";
+import { isNonRoadDestination } from "@/lib/data/destinationAccess";
 
 export type GuideDest = {
   slug: string;
@@ -34,6 +35,7 @@ export function isNoReservationEligible(d: GuideDest): boolean {
 }
 
 export function isRvEligible(d: GuideDest): boolean {
+  if (isNonRoadDestination(d.slug)) return false;
   return (d.campingScore ?? 0) >= RV_MIN_CAMPING_SCORE && !!d.airportCode && !!d.airportName && d.driveMinutes != null;
 }
 
