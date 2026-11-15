@@ -1,0 +1,121 @@
+{
+  "fingerprint": "0bf8d3ebbc72ba3913d1732be6d3f03fca791a3b6fe95842a05b3188dbb4dc7c",
+  "status": "validated",
+  "prompt_chars": 7407,
+  "bundle": {
+    "summary": {
+      "region": "Cornwall",
+      "tagline": "A tranquil archipelago of dramatic contrasts and crystal clear waters off the Cornish coast.",
+      "best_season": "Spring and Summer",
+      "trip_duration_days": "2",
+      "recommended_duration": "2",
+      "permit_level": "none",
+      "seo_title": "Isles of Scilly Travel Guide",
+      "best_seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "scenic_score": 5,
+      "camping_score": 3,
+      "avg_daily_budget": null,
+      "aliases": [
+        "Scilly Isles"
+      ],
+      "gateway_cities": [
+        "Penzance",
+        "Land's End",
+        "Newquay",
+        "Exeter"
+      ],
+      "similar_slugs": [],
+      "trip_tags": [
+        "island-hopping",
+        "coastal"
+      ],
+      "activities": [
+        "St. Mary’s",
+        "St. Martin's",
+        "Bryher"
+      ]
+    },
+    "travel": {
+      "slug": "isles-of-scilly",
+      "headline": "Check seasonal ferry and flight schedules for island access",
+      "reservation": "Entry does not require a permit, but transit via the Scillonian III ferry or Skybus flights is highly seasonal. The ferry operates between March and November; helicopter and air services vary by departure point. Travelers should verify schedules with official transport providers as weather frequently impacts crossing availability.",
+      "source_url": "https://www.visitislesofscilly.com/",
+      "plan": {
+        "version": 1,
+        "days": [
+          {
+            "title": "St. Mary's and St. Martin's",
+            "start": "Suggested: 9 AM from Penzance",
+            "stops": [
+              {
+                "stop_id": "st-mary-s",
+                "name": "St. Mary’s",
+                "detail": "Arrive at the archipelago's largest island and primary gateway, which serves as the hub for all inter-island sea and air links."
+              },
+              {
+                "stop_id": "st-martin-s",
+                "name": "St. Martin's",
+                "detail": "Visit the iconic red and white Daymark, a historic 17th-century navigational aid overlooking idyllic beaches and clear waters."
+              }
+            ],
+            "driving": "Allow for boat transfers between islands; no mainland road access exists.",
+            "note": "The Daymark is the first landmark visible when crossing from the mainland."
+          },
+          {
+            "title": "The Wild West of Bryher",
+            "start": "Suggested: 10 AM from Hugh Town",
+            "stops": [
+              {
+                "stop_id": "bryher",
+                "name": "Bryher",
+                "detail": "Experience an island of contrast featuring dramatic Atlantic waves on one side and calm sandy beaches on the other."
+              }
+            ],
+            "driving": "Local boat transfers only; conditions vary significantly by tide and weather.",
+            "note": "Bryher is home to approximately 80 residents and offers a taste of untamed coastal scenery."
+          }
+        ],
+        "intel": [
+          {
+            "kind": "access",
+            "title": "Seasonal Sea Links",
+            "text": "The Scillonian III ferry operates daily services from March to November, weather permitting. Outside these months, visitors must rely on air or helicopter services from the mainland."
+          },
+          {
+            "kind": "timing",
+            "title": "Flight Departures",
+            "text": "Skybus flights operate year-round from Land’s End, with additional seasonal routes from Newquay and Exeter. Helicopter transfers are available to both St. Mary’s and Tresco."
+          },
+          {
+            "kind": "parking",
+            "title": "Mainland Staging",
+            "text": "Long-stay parking is required at mainland gateways like Penzance or Land's End as cars are not typically brought to the islands. Verify specific lot availability at your chosen departure airport or harbor."
+          },
+          {
+            "kind": "signal",
+            "title": "Island Connectivity",
+            "text": "Mobile signal strength varies between the inhabited islands and remote coastal stretches. Evidence does not specify exact dead zones; verify coverage with your provider before departing St. Mary's."
+          },
+          {
+            "kind": "fuel",
+            "title": "Island Transit",
+            "text": "Traditional fuel stations for visitors are not applicable as there is no mainland road access for private vehicles. Transport relies on local boat services and walking paths within the six square miles of the main island."
+          }
+        ],
+        "arrival": "First two hours: Arrive at St. Mary's via ferry or flight, check into local accommodation in the main hub, and visit the quay for the daily boat schedule.",
+        "vehicle": "No private cars or RVs from the mainland; travel is strictly by foot, bicycle, or local boat transfers.",
+        "goldenHour": "The Daymark on St. Martin's provides a historic vantage point for evening light, subject to local boat return times.",
+        "sources": [
+          {
+            "label": "Isles of Scilly Official Tourism",
+            "url": "https://www.visitislesofscilly.com/"
+          }
+        ]
+      }
+    }
+  }
+}

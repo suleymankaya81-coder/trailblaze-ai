@@ -50,7 +50,7 @@ def validate(item):
     assert p['sources'] and all(s['url'].startswith('https://') for s in p['sources'])
     assert 12 <= len(item['headline']) <= 70 and 160 <= len(item['reservation']) <= 700
     assert item['source_url'].startswith('https://')
-    text = json.dumps(item).lower()
+    text = json.dumps({**item, 'plan': {k: v for k, v in p.items() if k != 'reviewedAt'}}).lower()
     assert not re.search(r'\b20\d{2}\b|ranger pick|cheapest|best deal|hurry', text), 'unsupported claim/year'
     return p
 

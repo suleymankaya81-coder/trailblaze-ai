@@ -1,9 +1,7 @@
 [
   {
     "slug": "cotswolds-national-landscape",
-    "status": "held",
-    "stage": "publish-wave.py",
-    "reason": "cotswolds-national-landscape HELD ['local visit plan and field intel']\nheld back: 1\n"
+    "status": "published"
   },
   {
     "slug": "cornwall-national-landscape",
@@ -17,21 +15,15 @@
   },
   {
     "slug": "north-pennines-national-landscape",
-    "status": "held",
-    "stage": "publish-wave.py",
-    "reason": "north-pennines-national-landscape HELD ['local visit plan and field intel']\nheld back: 1\n"
+    "status": "published"
   },
   {
     "slug": "malvern-hills-national-landscape",
-    "status": "held",
-    "stage": "publish-wave.py",
-    "reason": "malvern-hills-national-landscape HELD ['local visit plan and field intel']\nheld back: 1\n"
+    "status": "published"
   },
   {
     "slug": "dorset-national-landscape",
-    "status": "held",
-    "stage": "publish-wave.py",
-    "reason": "dorset-national-landscape HELD ['local visit plan and field intel']\nheld back: 1\n"
+    "status": "published"
   },
   {
     "slug": "isle-of-wight-national-landscape",
@@ -51,9 +43,7 @@
   },
   {
     "slug": "quantock-hills-national-landscape",
-    "status": "held",
-    "stage": "publish-wave.py",
-    "reason": "quantock-hills-national-landscape HELD ['local visit plan and field intel']\nheld back: 1\n"
+    "status": "published"
   },
   {
     "slug": "mendip-hills-national-landscape",
@@ -78,39 +68,27 @@
   },
   {
     "slug": "the-needles",
-    "status": "held",
-    "stage": "publish-wave.py",
-    "reason": "the-needles HELD ['local visit plan and field intel']\nheld back: 1\n"
+    "status": "published"
   },
   {
     "slug": "kynance-cove",
-    "status": "held",
-    "stage": "publish-wave.py",
-    "reason": "kynance-cove HELD ['local visit plan and field intel']\nheld back: 1\n"
+    "status": "published"
   },
   {
     "slug": "st-michael-s-mount",
-    "status": "held",
-    "stage": "publish-wave.py",
-    "reason": "st-michael-s-mount HELD ['local visit plan and field intel']\nheld back: 1\n"
+    "status": "published"
   },
   {
     "slug": "land-s-end",
-    "status": "held",
-    "stage": "publish-wave.py",
-    "reason": "land-s-end HELD ['local visit plan and field intel']\nheld back: 1\n"
+    "status": "published"
   },
   {
     "slug": "aysgarth-falls",
-    "status": "held",
-    "stage": "publish-wave.py",
-    "reason": "aysgarth-falls HELD ['local visit plan and field intel']\nheld back: 1\n"
+    "status": "published"
   },
   {
     "slug": "malham-cove",
-    "status": "held",
-    "stage": "publish-wave.py",
-    "reason": "malham-cove HELD ['local visit plan and field intel']\nheld back: 1\n"
+    "status": "published"
   },
   {
     "slug": "bamburgh-beach",
@@ -128,5 +106,429 @@
     "status": "held",
     "stage": "prepare-wave.py",
     "reason": "kielder-water-forest-park ERR only 0 extra photos\n"
+  },
+  {
+    "slug": "wicken-fen",
+    "status": "published"
+  },
+  {
+    "slug": "skomer-island",
+    "status": "published"
+  },
+  {
+    "slug": "epping-forest",
+    "status": "published"
+  },
+  {
+    "slug": "dedham-vale-national-landscape",
+    "status": "published"
+  },
+  {
+    "slug": "tamar-valley-national-landscape",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: tamar-valley-national-landscape"
+  },
+  {
+    "slug": "cranborne-chase-national-landscape",
+    "status": "held",
+    "stage": "prepare-wave.py",
+    "reason": "cranborne-chase-national-landscape ERR no coordinates\n"
+  },
+  {
+    "slug": "isles-of-scilly",
+    "status": "published"
+  },
+  {
+    "slug": "bude-sea-pool",
+    "status": "published"
+  },
+  {
+    "slug": "glen-coe",
+    "status": "published"
+  },
+  {
+    "slug": "ben-nevis",
+    "status": "published"
+  },
+  {
+    "slug": "glen-affric",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: glen-affric"
+  },
+  {
+    "slug": "assynt-coigach",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: assynt-coigach"
+  },
+  {
+    "slug": "torridon",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: torridon"
+  },
+  {
+    "slug": "knoydart",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: knoydart"
+  },
+  {
+    "slug": "glen-shiel",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: glen-shiel"
+  },
+  {
+    "slug": "quiraing",
+    "status": "published"
+  },
+  {
+    "slug": "old-man-of-storr",
+    "status": "published"
+  },
+  {
+    "slug": "fairy-pools",
+    "status": "published"
+  },
+  {
+    "slug": "isle-of-skye",
+    "status": "published"
+  },
+  {
+    "slug": "isle-of-mull",
+    "status": "published"
+  },
+  {
+    "slug": "isle-of-arran",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: isle-of-arran"
+  },
+  {
+    "slug": "outer-hebrides",
+    "status": "published"
+  },
+  {
+    "slug": "orkney-islands",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: orkney-islands"
+  },
+  {
+    "slug": "shetland-islands",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: shetland-islands"
+  },
+  {
+    "slug": "st-kilda",
+    "status": "published"
+  },
+  {
+    "slug": "luskentyre-beach",
+    "status": "published"
+  },
+  {
+    "slug": "sandwood-bay",
+    "status": "published"
+  },
+  {
+    "slug": "durness-and-smoo-cave",
+    "status": "held",
+    "stage": "prepare-wave.py",
+    "reason": "durness-and-smoo-cave ERR no coordinates\n"
+  },
+  {
+    "slug": "north-coast-500",
+    "status": "held_before_ai",
+    "reason": "HELD: collect and review official source packet before generation: north-coast-500"
+  },
+  {
+    "slug": "loch-ness",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: loch-ness"
+  },
+  {
+    "slug": "loch-maree",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: loch-maree"
+  },
+  {
+    "slug": "loch-shiel",
+    "status": "published"
+  },
+  {
+    "slug": "loch-tay",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: loch-tay"
+  },
+  {
+    "slug": "loch-katrine",
+    "status": "published"
+  },
+  {
+    "slug": "falls-of-foyers",
+    "status": "held",
+    "stage": "prepare-wave.py",
+    "reason": "falls-of-foyers ERR only 2 extra photos\n"
+  },
+  {
+    "slug": "steall-falls",
+    "status": "published"
+  },
+  {
+    "slug": "wester-ross",
+    "status": "published"
+  },
+  {
+    "slug": "north-arran",
+    "status": "published"
+  },
+  {
+    "slug": "gower-national-landscape",
+    "status": "held",
+    "stage": "prepare-wave.py",
+    "reason": "gower-national-landscape ERR only 2 extra photos\n"
+  },
+  {
+    "slug": "anglesey-national-landscape",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: anglesey-national-landscape"
+  },
+  {
+    "slug": "llyn-national-landscape",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: llyn-national-landscape"
+  },
+  {
+    "slug": "clwydian-range-and-dee-valley-national-landscape",
+    "status": "published"
+  },
+  {
+    "slug": "cadair-idris",
+    "status": "published"
+  },
+  {
+    "slug": "pen-y-fan",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: pen-y-fan"
+  },
+  {
+    "slug": "tryfan",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: tryfan"
+  },
+  {
+    "slug": "llyn-tegid-bala-lake",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: llyn-tegid-bala-lake"
+  },
+  {
+    "slug": "llyn-padarn",
+    "status": "published"
+  },
+  {
+    "slug": "llyn-gwynant",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: llyn-gwynant"
+  },
+  {
+    "slug": "swallow-falls",
+    "status": "published"
+  },
+  {
+    "slug": "pistyll-rhaeadr",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: pistyll-rhaeadr"
+  },
+  {
+    "slug": "aber-falls",
+    "status": "published"
+  },
+  {
+    "slug": "waterfall-country-ystradfellte",
+    "status": "held",
+    "stage": "prepare-wave.py",
+    "reason": "waterfall-country-ystradfellte ERR no coordinates\n"
+  },
+  {
+    "slug": "dan-yr-ogof-caves",
+    "status": "held",
+    "stage": "prepare-wave.py",
+    "reason": "dan-yr-ogof-caves ERR no coordinates\n"
+  },
+  {
+    "slug": "elan-valley",
+    "status": "published"
+  },
+  {
+    "slug": "barafundle-bay",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: barafundle-bay"
+  },
+  {
+    "slug": "tenby-coast",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: tenby-coast"
+  },
+  {
+    "slug": "ramsey-island",
+    "status": "published"
+  },
+  {
+    "slug": "llanddwyn-island",
+    "status": "published"
+  },
+  {
+    "slug": "south-stack-cliffs",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: south-stack-cliffs"
+  },
+  {
+    "slug": "newborough-beach-and-forest",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: newborough-beach-and-forest"
+  },
+  {
+    "slug": "rhossili-bay",
+    "status": "published"
+  },
+  {
+    "slug": "three-cliffs-bay",
+    "status": "published"
+  },
+  {
+    "slug": "dylan-thomas-trail-coast",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: dylan-thomas-trail-coast"
+  },
+  {
+    "slug": "antrim-coast-and-glens-aonb",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: antrim-coast-and-glens-aonb"
+  },
+  {
+    "slug": "causeway-coast-aonb",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: causeway-coast-aonb"
+  },
+  {
+    "slug": "binevenagh-aonb",
+    "status": "published"
+  },
+  {
+    "slug": "sperrin-aonb",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: sperrin-aonb"
+  },
+  {
+    "slug": "ring-of-gullion-aonb",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: ring-of-gullion-aonb"
+  },
+  {
+    "slug": "strangford-and-lecale-aonb",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: strangford-and-lecale-aonb"
+  },
+  {
+    "slug": "lagan-valley-regional-park",
+    "status": "held",
+    "stage": "prepare-wave.py",
+    "reason": "lagan-valley-regional-park ERR no coordinates\n"
+  },
+  {
+    "slug": "giant-s-causeway",
+    "status": "published"
+  },
+  {
+    "slug": "carrick-a-rede-rope-bridge",
+    "status": "published"
+  },
+  {
+    "slug": "white-park-bay",
+    "status": "published"
+  },
+  {
+    "slug": "ballintoy-harbour",
+    "status": "published"
+  },
+  {
+    "slug": "murlough-national-nature-reserve",
+    "status": "published"
+  },
+  {
+    "slug": "rathlin-island",
+    "status": "published"
+  },
+  {
+    "slug": "portstewart-strand",
+    "status": "published"
+  },
+  {
+    "slug": "downhill-beach-and-mussenden-temple-coast",
+    "status": "held",
+    "stage": "prepare-wave.py",
+    "reason": "downhill-beach-and-mussenden-temple-coast ERR no coordinates\n"
+  },
+  {
+    "slug": "mourne-mountains",
+    "status": "published"
+  },
+  {
+    "slug": "slieve-donard",
+    "status": "published"
+  },
+  {
+    "slug": "silent-valley-mountain-park",
+    "status": "published"
+  },
+  {
+    "slug": "tollymore-forest-park",
+    "status": "published"
+  },
+  {
+    "slug": "castlewellan-forest-park",
+    "status": "held",
+    "stage": "prepare-wave.py",
+    "reason": "castlewellan-forest-park ERR Activities must use approved stop names\n"
+  },
+  {
+    "slug": "glenariff-forest-park",
+    "status": "published"
+  },
+  {
+    "slug": "roe-valley-country-park",
+    "status": "held",
+    "stage": "prepare-wave.py",
+    "reason": "roe-valley-country-park ERR only 3 extra photos\n"
+  },
+  {
+    "slug": "gortin-glen-forest-park",
+    "status": "held",
+    "stage": "prepare-wave.py",
+    "reason": "gortin-glen-forest-park ERR only 4 extra photos\n"
+  },
+  {
+    "slug": "lough-neagh",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: lough-neagh"
+  },
+  {
+    "slug": "upper-lough-erne",
+    "status": "published"
+  },
+  {
+    "slug": "lower-lough-erne",
+    "status": "published"
+  },
+  {
+    "slug": "marble-arch-caves-global-geopark",
+    "status": "held_before_ai",
+    "reason": "HELD: source packet is not approved: marble-arch-caves-global-geopark"
+  },
+  {
+    "slug": "cuilcagh-boardwalk-trail",
+    "status": "published"
+  },
+  {
+    "slug": "oxford-island-national-nature-reserve",
+    "status": "held",
+    "stage": "prepare-wave.py",
+    "reason": "oxford-island-national-nature-reserve ERR only 0 extra photos\n"
   }
 ]

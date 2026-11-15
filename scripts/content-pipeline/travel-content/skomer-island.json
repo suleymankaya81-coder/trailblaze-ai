@@ -1,0 +1,65 @@
+{
+  "slug": "skomer-island",
+  "headline": "Boat Landing and Hostel Reservations",
+  "reservation": "Day visits and overnight stays at the sustainably run hostel require advance booking. As an internationally important seabird island, visitor numbers are controlled; check official Welsh Wildlife Trust sites for current boat landing permit systems and availability.",
+  "source_url": "https://www.welshwildlife.org/visit/skomer-island",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Seabird Colonies and Coastal Cliffs",
+        "start": "Suggested: 9 AM from Martin's Haven",
+        "stops": [
+          {
+            "id": "skomer",
+            "name": "Skomer",
+            "detail": "Explore the largest Pembrokeshire island to see Puffins nesting in cliff-top burrows and cliffs packed with Guillemots and Razorbills.",
+            "stop_id": "skomer"
+          }
+        ],
+        "driving": "Allow for boat transit times; conditions at sea vary significantly.",
+        "note": "Puffins are typically present from May through July, with most departing by the end of July."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Mainland Access",
+        "text": "Evidence does not specify parking capacity at the mainland departure point. Travelers should verify local parking at Martin's Haven before arrival."
+      },
+      {
+        "kind": "signal",
+        "title": "Island Connectivity",
+        "text": "Connectivity status on the island is not provided in official sources. Expect limited digital access and plan navigation using physical markers."
+      },
+      {
+        "kind": "fuel",
+        "title": "Supplies and Energy",
+        "text": "The island features a sustainably run hostel, but fuel stations are not available on-site. Ensure all vehicles are fueled on the mainland prior to reaching the coast."
+      },
+      {
+        "kind": "timing",
+        "title": "Puffin Seasonal Window",
+        "text": "Visit between mid-April and mid-July for peak puffin activity. Wildflower displays of blue, pink, and white are most prominent in spring and early summer."
+      },
+      {
+        "kind": "access",
+        "title": "Boat Departure",
+        "text": "Access is strictly by boat from the mainland. Departure schedules are weather-dependent and require confirmation with the ferry operator."
+      }
+    ],
+    "arrival": "Arrive at Martin's Haven for boat check-in; collect essential supplies in Marloes or nearby mainland towns as the island offers limited amenities.",
+    "vehicle": "Personal vehicles must remain on the mainland; the island is explored entirely on foot.",
+    "goldenHour": "The cliffs of Skomer at dusk offer views of Manx Shearwaters, though exact sunset accessibility depends on hostel residency or boat schedules.",
+    "sources": [
+      {
+        "label": "Pembrokeshire Coast National Park Authority",
+        "url": "https://www.pembrokeshirecoast.wales/things-to-do/pembrokeshires-islands/skomer/"
+      },
+      {
+        "label": "Wildlife Trust of South and West Wales",
+        "url": "https://www.welshwildlife.org/visit/skomer-island"
+      }
+    ]
+  }
+}

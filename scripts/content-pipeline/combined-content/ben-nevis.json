@@ -1,0 +1,98 @@
+{
+  "fingerprint": "29ec356891cba21efb53224a21a98a4cb6baed05a630ee7100d2534665d2bedd",
+  "status": "validated",
+  "prompt_chars": 5370,
+  "bundle": {
+    "summary": {
+      "region": "Scottish Highlands",
+      "tagline": "Ascend the highest peak in the British Isles via the storied slopes of Glen Nevis.",
+      "best_season": "Summer",
+      "trip_duration_days": "1",
+      "recommended_duration": "1 day",
+      "permit_level": "none",
+      "seo_title": "Ben Nevis Hiking Guide",
+      "best_seasons": [
+        "summer",
+        "fall",
+        "spring"
+      ],
+      "scenic_score": 10,
+      "camping_score": 5,
+      "avg_daily_budget": null,
+      "aliases": [
+        "The Ben"
+      ],
+      "gateway_cities": [
+        "Fort William"
+      ],
+      "similar_slugs": [],
+      "trip_tags": [
+        "mountain",
+        "hiking"
+      ],
+      "activities": [
+        "Ben Nevis"
+      ]
+    },
+    "travel": {
+      "slug": "ben-nevis",
+      "headline": "Check Local Mountain Weather Before Your Ascent",
+      "reservation": "No permits are currently required for individual hikers to access the mountain via Glen Nevis. However, large organized events may require notification to local land managers, and parking at the main trailheads often requires a local fee; always check Forestry and Land Scotland for the latest access updates.",
+      "source_url": "https://forestryandland.gov.scot/visit/destinations/glen-nevis",
+      "plan": {
+        "version": 1,
+        "days": [
+          {
+            "title": "The High Ascent",
+            "start": "Suggested: 8 AM from Fort William",
+            "stops": [
+              {
+                "name": "Ben Nevis",
+                "detail": "Begin your journey at the visitor centre to gather essential route information before attempting the ascent of the UK's highest summit.",
+                "stop_id": "ben-nevis"
+              }
+            ],
+            "driving": "Allow 15-30 minutes from Fort William to the trailhead; conditions vary by season.",
+            "note": "The weather on the summit can be significantly more severe than at the base; set a turnaround time to ensure a safe descent."
+          }
+        ],
+        "intel": [
+          {
+            "kind": "parking",
+            "title": "Glen Nevis Trailheads",
+            "text": "Parking is centered around the visitor centre where the main mountain path begins. Capacity is limited during peak summer months, so arrive early to secure a space."
+          },
+          {
+            "kind": "signal",
+            "title": "Mountain Connectivity",
+            "text": "Mobile signal is highly unreliable in the deep glens and on the upper mountain slopes. Evidence does not confirm specific carrier coverage; do not rely on digital maps for navigation."
+          },
+          {
+            "kind": "fuel",
+            "title": "Regional Services",
+            "text": "The nearest reliable fuel and supplies are located in the gateway town of Fort William. No fuel services exist within the immediate Glen Nevis hiking area."
+          },
+          {
+            "kind": "timing",
+            "title": "Ascent Duration",
+            "text": "The climb is a strenuous full-day endeavor for most walkers. Ensure you have enough daylight for both the ascent and the descent back to the visitor centre."
+          },
+          {
+            "kind": "access",
+            "title": "Route Starting Point",
+            "text": "Most walkers begin their journey at the visitor centre in Glen Nevis. Check for any temporary path closures or local conservation notices at the centre before starting."
+          }
+        ],
+        "arrival": "Pick up supplies in Fort William and proceed to the Glen Nevis visitor centre for a trail orientation and weather briefing.",
+        "vehicle": "Standard cars are suitable for the paved roads to the trailhead; check for height restrictions if driving an RV.",
+        "goldenHour": "Sunset from the summit of Ben Nevis provides panoramic views of the Highlands, though mountain safety requires a descent before dark.",
+        "sources": [
+          {
+            "label": "Forestry and Land Scotland",
+            "url": "https://forestryandland.gov.scot/visit/destinations/glen-nevis"
+          }
+        ]
+      }
+    }
+  }
+}

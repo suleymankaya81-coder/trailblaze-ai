@@ -30,6 +30,17 @@ class FlexibleVisitTests(unittest.TestCase):
     def test_one_day_one_sight_is_valid(self):
         self.assertEqual(len(travel.validate(item())['days']), 1)
 
+    def test_review_timestamp_does_not_fail_visible_year_screening(self):
+        value = item()
+        value['plan']['reviewedAt'] = '2026-11-15T18:00:00+00:00'
+        self.assertEqual(len(travel.validate(value)['days']), 1)
+
+    def test_visible_unsupported_year_still_fails(self):
+        value = item()
+        value['plan']['arrival'] += ' Visit in 2026.'
+        with self.assertRaisesRegex(AssertionError, 'unsupported claim/year'):
+            travel.validate(value)
+
     def test_multiple_days_remain_valid(self):
         self.assertEqual(len(travel.validate(item(5))['days']), 5)
 

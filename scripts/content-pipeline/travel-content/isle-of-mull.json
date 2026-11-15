@@ -1,0 +1,60 @@
+{
+  "slug": "isle-of-mull",
+  "headline": "Check CalMac Ferry Schedules for Island Access",
+  "reservation": "Travel to the island typically requires booking a vehicle space on the ferry from Oban to Craignure via Caledonian MacBrayne. While castle grounds access may be seasonal, visitors should check the official ferry and site websites for current docking times and operational updates before departure.",
+  "source_url": "https://visitmullandiona.co.uk/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Historic Coastal Strongholds",
+        "start": "Suggested: 9 AM from Craignure",
+        "stops": [
+          {
+            "name": "Duart Castle",
+            "detail": "Visit this influential historical attraction perched dramatically above Duart Bay to explore its ancient architecture and coastal defenses.",
+            "stop_id": "duart-castle"
+          }
+        ],
+        "driving": "Allow 20-40 minutes for local transfers; conditions vary by ferry timing.",
+        "note": "Pacing depends on ferry arrival times and the central transit hub of Salen."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Port and Site Access",
+        "text": "Parking is centered around the ferry terminal at Craignure and designated visitor areas at the castle; verify site-specific availability upon arrival."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Gaps",
+        "text": "Mobile signal strength across the island's rugged terrain is not documented in available evidence; travelers should prepare for potential outages."
+      },
+      {
+        "kind": "fuel",
+        "title": "Island Resupply",
+        "text": "Specific fuel station locations are not listed in official excerpts; verify refueling options in the central hubs of Salen or Craignure."
+      },
+      {
+        "kind": "timing",
+        "title": "Central Hub Logistics",
+        "text": "Salen serves as the central point for traveling to all other areas of the island. Coordinate transit to ensure return to the busy port at Craignure for ferry departures."
+      },
+      {
+        "kind": "access",
+        "title": "Ferry Connections",
+        "text": "Primary access is via the ferry port for Oban; visitors must align their itinerary with the maritime transit schedule."
+      }
+    ],
+    "arrival": "Arrive at Craignure via ferry, collect any local transport, and head toward Salen or Duart Bay for initial sightseeing.",
+    "vehicle": "Check rental restrictions for island travel and ferry boarding; narrow roads may affect larger vehicles.",
+    "goldenHour": "Duart Bay offers dramatic views of the castle during evening light, subject to seasonal weather patterns.",
+    "sources": [
+      {
+        "label": "Visit Mull & Iona",
+        "url": "https://visitmullandiona.co.uk/"
+      }
+    ]
+  }
+}

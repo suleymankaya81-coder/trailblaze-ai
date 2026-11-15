@@ -1,0 +1,98 @@
+{
+  "fingerprint": "00db2a90d52bb97cb4f2afdd2036e5494cc0ff5dc98d1f0857f784e61611eb94",
+  "status": "validated",
+  "prompt_chars": 5311,
+  "bundle": {
+    "summary": {
+      "region": "Inner Hebrides",
+      "tagline": "A dramatic landscape defined by the basalt pinnacles of the Trotternish Ridge.",
+      "best_season": "summer",
+      "trip_duration_days": "1",
+      "recommended_duration": "1 day",
+      "permit_level": "none",
+      "seo_title": "Visiting the Isle of Skye",
+      "best_seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "scenic_score": 5,
+      "camping_score": 3,
+      "avg_daily_budget": null,
+      "aliases": [],
+      "gateway_cities": [
+        "Portree"
+      ],
+      "similar_slugs": [],
+      "trip_tags": [
+        "highlands",
+        "coastal",
+        "hiking"
+      ],
+      "activities": [
+        "Old Man of Storr"
+      ]
+    },
+    "travel": {
+      "slug": "isle-of-skye",
+      "headline": "Plan Your Visit to the Trotternish Peninsula",
+      "reservation": "While no entry permit is required for the island, accommodation in nearby Portree often requires booking months in advance during peak periods. Access to popular trailheads is managed by local infrastructure; always check the official VisitScotland portal for the latest travel advisories and weather-related closures.",
+      "source_url": "https://www.visitscotland.com/places-to-go/islands/isle-skye",
+      "plan": {
+        "version": 1,
+        "days": [
+          {
+            "title": "Trotternish Landmarks",
+            "start": "Suggested: 8 AM from Portree",
+            "stops": [
+              {
+                "id": "old-man-of-storr",
+                "name": "Old Man of Storr",
+                "detail": "Ascend the path to meet the iconic basalt pinnacles overlooking the Sound of Raasay.",
+                "stop_id": "old-man-of-storr"
+              }
+            ],
+            "driving": "Allow 20 to 40 minutes for the drive from Portree; conditions vary based on weather.",
+            "note": "Suggested pacing is for a single landmark visit; local weather changes rapidly and may impact visibility."
+          }
+        ],
+        "intel": [
+          {
+            "kind": "parking",
+            "title": "Trailhead Capacity",
+            "text": "The area near the Old Man of Storr has designated parking, but capacity is limited during peak summer months. Evidence does not specify exact fill times, so arriving early is recommended to secure a spot."
+          },
+          {
+            "kind": "signal",
+            "title": "Connectivity Gaps",
+            "text": "Mobile signal strength varies significantly across the rugged Trotternish terrain. Visitors should verify their routes and download offline maps before departing from Portree."
+          },
+          {
+            "kind": "fuel",
+            "title": "Island Supply Points",
+            "text": "Portree serves as the primary hub for fuel and supplies before heading north into the Trotternish area. Evidence does not list specific stations, so verify fuel levels before leaving town."
+          },
+          {
+            "kind": "timing",
+            "title": "Weather Awareness",
+            "text": "Visibility at high-elevation landmarks can be obscured by mist at any time of day. Check local maritime forecasts as conditions can change faster than mainland weather patterns."
+          },
+          {
+            "kind": "access",
+            "title": "Road Conditions",
+            "text": "The route involves navigating single-track roads with passing places north of Portree. Drivers should be familiar with local etiquette for allowing faster traffic or oncoming vehicles to pass."
+          }
+        ],
+        "arrival": "Pick up your rental vehicle in Inverness or at the ferry terminals, then proceed to Portree to secure supplies and check into local lodging.",
+        "vehicle": "Standard cars are suitable for paved island roads, though narrow lanes require cautious driving; check rental agreements for restrictions on unpaved tracks.",
+        "goldenHour": "Old Man of Storr offers dramatic lighting during the morning hours, though specific sunrise views are highly dependent on seasonal cloud cover.",
+        "sources": [
+          {
+            "label": "VisitScotland Isle of Skye",
+            "url": "https://www.visitscotland.com/places-to-go/islands/isle-skye"
+          }
+        ]
+      }
+    }
+  }
+}

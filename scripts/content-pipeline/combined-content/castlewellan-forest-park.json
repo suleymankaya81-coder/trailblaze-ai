@@ -1,0 +1,100 @@
+{
+  "fingerprint": "d9c99bb6fa7a075a7b8f4c7d660caee7b0462d99e25b8bf90f44e08a1d36bae7",
+  "status": "held",
+  "prompt_chars": 5905,
+  "bundle": {
+    "summary": {
+      "region": "Northern Ireland",
+      "tagline": "Explore one of the world's largest permanent hedge mazes and a historic arboretum in a commercial forest.",
+      "best_season": "Spring and summer for arboretum blooms and maze navigation.",
+      "trip_duration_days": "1",
+      "recommended_duration": "4-6 hours",
+      "permit_level": "none",
+      "seo_title": "Visiting Castlewellan Forest Park and Peace Maze",
+      "best_seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "scenic_score": 7,
+      "camping_score": 0,
+      "avg_daily_budget": null,
+      "aliases": [],
+      "gateway_cities": [
+        "Castlewellan",
+        "Belfast"
+      ],
+      "similar_slugs": [],
+      "trip_tags": [
+        "forest",
+        "gardens",
+        "family"
+      ],
+      "activities": [
+        "Peace Maze",
+        "Castlewellan Arboretum and Annesley Garden"
+      ]
+    },
+    "travel": {
+      "slug": "castlewellan-forest-park",
+      "headline": "Check Local Council or DAERA Guidelines for Forest Park Entry",
+      "reservation": "Access to the forest park and its educational facilities is typically open to the public, though specific guided tours or seasonal café operations may require checking current availability. Consult official DAERA or local management sites to confirm if vehicle entry fees apply at the gate.",
+      "source_url": "https://www.daera-ni.gov.uk/articles/guide-centres-and-facilities",
+      "plan": {
+        "version": 1,
+        "days": [
+          {
+            "title": "Gardens and the Peace Maze",
+            "start": "Suggested: 10 AM from Belfast",
+            "stops": [
+              {
+                "name": "Castlewellan Forest Park",
+                "detail": "Navigate the Peace Maze before exploring the Castlewellan Arboretum and Annesley Garden's diverse tree collection.",
+                "stop_id": "castlewellan-forest-park"
+              }
+            ],
+            "driving": "Allow approximately one hour from Belfast; conditions vary by traffic.",
+            "note": "A seasonal café and picnic areas are available for refreshments between the nature trails."
+          }
+        ],
+        "intel": [
+          {
+            "kind": "access",
+            "title": "Disability Facilities",
+            "text": "The park includes toilets with disabled access near the main activity areas. Way-marked nature trails provide structured paths through the commercially managed forest."
+          },
+          {
+            "kind": "timing",
+            "title": "Seasonal Services",
+            "text": "The on-site café operates on a seasonal basis, so visitors should plan for self-catering during off-peak months. Guided tours are available but should be verified for current schedules."
+          },
+          {
+            "kind": "fuel",
+            "title": "Local Supplies",
+            "text": "Specific fuel locations within the park are not documented in forest guides; travelers should refuel in the town of Castlewellan. Verify local shop hours for picnic supplies."
+          },
+          {
+            "kind": "signal",
+            "title": "Connectivity Gaps",
+            "text": "Mobile signal strength throughout the forested nature trails is not officially verified. It is recommended to download or carry a map of the way-marked trails."
+          },
+          {
+            "kind": "parking",
+            "title": "Forest Parking",
+            "text": "Official sources do not specify total parking capacity or peak fill times. Visitors should arrive early during summer weekends to secure a spot near the maze and gardens."
+          }
+        ],
+        "arrival": "Travel to Castlewellan town, pick up supplies, and enter the forest park gates to locate the arboretum and maze parking areas.",
+        "vehicle": "Standard passenger cars are suitable for the paved access roads; check local signage for height or weight restrictions on forest tracks.",
+        "goldenHour": "The Annesley Garden offers varied lighting for photography, though official sunset access depends on forest gate closing times.",
+        "sources": [
+          {
+            "label": "DAERA Northern Ireland",
+            "url": "https://www.daera-ni.gov.uk/articles/guide-centres-and-facilities"
+          }
+        ]
+      }
+    }
+  },
+  "error": "ValueError"
+}

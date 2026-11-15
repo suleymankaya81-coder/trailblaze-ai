@@ -1,0 +1,60 @@
+{
+  "slug": "giant-s-causeway",
+  "headline": "Advance Car Park Bookings Recommended",
+  "reservation": "Access to the main car park adjacent to the Visitor Centre is reserved for National Trust members and Visitor Experience ticket holders. As parking in the vicinity is limited, visitors are strongly advised to pre-book online to ensure entry and avoid disappointment. Systems may change seasonally, so verify current booking requirements on the official site.",
+  "source_url": "https://www.nationaltrust.org.uk/visit/northern-ireland/giants-causeway",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Basalt Columns and the North Coast",
+        "start": "Suggested: 9 AM from Bushmills",
+        "stops": [
+          {
+            "name": "Giant's Causeway",
+            "detail": "Walk among the thousands of interlocking basalt columns formed by ancient volcanic activity. Visit the Visitor Centre on the B147 Causeway road to learn about the geological history and local folklore.",
+            "stop_id": "giant-s-causeway"
+          }
+        ],
+        "driving": "Allow 10–30 minutes for local transfers from nearby villages; conditions vary.",
+        "note": "Pace your visit to account for coastal weather shifts and potential crowds at the main formations."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "On-Site Parking",
+        "text": "The main car park is prioritized for ticket holders and members. General parking in the immediate area is constrained, necessitating advance planning."
+      },
+      {
+        "kind": "access",
+        "title": "Visitor Centre Entry",
+        "text": "The Visitor Centre is located directly on the B147 road. Pedestrian access is available, but parking remains the primary bottleneck for vehicle arrivals."
+      },
+      {
+        "kind": "timing",
+        "title": "Peak Hour Considerations",
+        "text": "Limited parking capacity means midday arrivals may face delays. Evidence does not specify exact fill times, so verify morning availability before departure."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Status",
+        "text": "Official evidence does not confirm cellular signal strength at the coast. Ensure all booking confirmations are downloaded or printed prior to arrival."
+      },
+      {
+        "kind": "fuel",
+        "title": "Local Services",
+        "text": "Fuel and supplies are located in nearby Bushmills, approximately two miles away. Check local village hours for specific service availability."
+      }
+    ],
+    "arrival": "Pick up rental in Belfast or Derry, then travel toward Bushmills for supply runs and check-in before heading to the B147 Causeway road.",
+    "vehicle": "Standard cars are suitable for the B147; RV users should check for specific coastal road width restrictions.",
+    "goldenHour": "The basalt columns at the Giant's Causeway provide a dramatic foreground for sunset, though cloud cover is frequent.",
+    "sources": [
+      {
+        "label": "National Trust: Giant's Causeway",
+        "url": "https://www.nationaltrust.org.uk/visit/northern-ireland/giants-causeway"
+      }
+    ]
+  }
+}

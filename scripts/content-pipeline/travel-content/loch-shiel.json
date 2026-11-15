@@ -1,0 +1,60 @@
+{
+  "slug": "loch-shiel",
+  "headline": "Review seasonal cruise schedules for Loch Shiel access",
+  "reservation": "While the loch itself is open, vessel passage requires booking with local operators like Highland Cruises. Availability varies by season; ensure you check official schedules for the Sileas as passenger capacity is limited to 50 people per departure.",
+  "source_url": "https://www.highlandcruises.co.uk/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Highland Waters and Wilderness",
+        "start": "Suggested: 9 AM from Glenfinnan",
+        "stops": [
+          {
+            "name": "Loch Shiel",
+            "detail": "Board a cruise to experience the historical scenery and wildlife of the region with live commentary. Passengers can utilize onboard binoculars and guidebooks to spot local species from the open or covered decks.",
+            "stop_id": "loch-shiel"
+          }
+        ],
+        "driving": "Allow for local transit to departure points at either end of the loch; conditions vary.",
+        "note": "Suggested pacing allows for a full cruise duration and time for light refreshments available at the shore terminals."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Departure Point Access",
+        "text": "Evidence does not specify parking capacity at the cruise terminals; travelers should verify local lot availability in Glenfinnan or Acharacle before arrival."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Status",
+        "text": "Mobile signal strength is not documented for the loch surface; do not rely on digital navigation while on the water."
+      },
+      {
+        "kind": "fuel",
+        "title": "Local Services",
+        "text": "While light refreshments are available on the Sileas, fuel locations for vehicles are not listed in provided sources; fill up in major Highland hubs."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Operations",
+        "text": "Cruises are subject to weather and seasonal demand. Check official operator updates for current sailing times and potential cancellations."
+      },
+      {
+        "kind": "access",
+        "title": "Onboard Facilities",
+        "text": "The vessel Sileas features a saloon below decks and is Marine Coastguard Agency approved for 50 passengers. Well-behaved dogs are permitted to join the cruise."
+      }
+    ],
+    "arrival": "Arrive at the designated pier at least thirty minutes prior to departure; coordinate local transport or rental drop-off in the nearest gateway village.",
+    "vehicle": "Standard vehicles are suitable for reaching the loch-side villages; check local road conditions for narrow Highland routes.",
+    "goldenHour": "Views from the deck of the Sileas offer shifting perspectives of the Highland scenery as light changes throughout the day.",
+    "sources": [
+      {
+        "label": "Highland Cruises",
+        "url": "https://www.highlandcruises.co.uk/"
+      }
+    ]
+  }
+}

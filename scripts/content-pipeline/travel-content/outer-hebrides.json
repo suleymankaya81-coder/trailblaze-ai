@@ -1,0 +1,60 @@
+{
+  "slug": "outer-hebrides",
+  "headline": "Boat Operator Logistics and Weather Dependency",
+  "reservation": "Access to remote islands requires booking with commercial boat operators well in advance due to limited vessel capacity. Visitors must monitor weather conditions as sailings are frequently cancelled or rescheduled; verify current landing requirements and conservation protocols with official island authorities before departure.",
+  "source_url": "https://www.visitscotland.com/places-to-go/islands/outer-hebrides",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Remote Archipelago Exploration",
+        "start": "Suggested: 8 AM from Harris or Uist",
+        "stops": [
+          {
+            "name": "St Kilda",
+            "detail": "Explore the abandoned village of Hirta and witness the UK's largest colony of Atlantic puffins among dramatic sea stacks.",
+            "stop_id": "st-kilda"
+          }
+        ],
+        "driving": "Allow all day for sea transit; conditions vary",
+        "note": "Island landings are strictly weather-dependent and require a full day's commitment."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "access",
+        "title": "Maritime Reach",
+        "text": "The archipelago is only accessible by boat; landing is subject to sea state and swell at Village Bay. Official sources do not list specific public pier facilities for private vessels, so verify with local harbor masters."
+      },
+      {
+        "kind": "timing",
+        "title": "Wildlife Cycles",
+        "text": "Seabird colonies including gannets and fulmars are most active during the breeding season. Specific nesting months are not provided in source data; confirm current activity with local rangers."
+      },
+      {
+        "kind": "fuel",
+        "title": "Island Supplies",
+        "text": "There are no commercial fuel or grocery services mentioned for the abandoned village of Hirta. Travelers should depart the mainland or primary Hebridean islands with all necessary provisions for the day."
+      },
+      {
+        "kind": "signal",
+        "title": "Remote Connectivity",
+        "text": "Expect significant gaps in mobile coverage given the archipelago's remote Atlantic location. Carry offline maps and do not rely on digital signals for navigation or emergency communication."
+      },
+      {
+        "kind": "parking",
+        "title": "Departure Point Transit",
+        "text": "Parking availability varies at mainland and Hebridean ferry terminals; arrive early to secure space before boat departures. Source data does not specify exact parking lot capacities or fees."
+      }
+    ],
+    "arrival": "Arrive at your primary Hebridean gateway the evening prior to departure to coordinate with boat skippers and verify supply levels.",
+    "vehicle": "Road vehicles are not used on St Kilda; sea transit via commercial vessel is required. Check rental restrictions for taking vehicles on Hebridean ferries to reach departure points.",
+    "goldenHour": "Village Bay on Hirta offers dramatic light against sea stacks, though visitors usually depart before sunset due to boat schedules.",
+    "sources": [
+      {
+        "label": "VisitScotland",
+        "url": "https://www.visitscotland.com/places-to-go/islands/outer-hebrides"
+      }
+    ]
+  }
+}

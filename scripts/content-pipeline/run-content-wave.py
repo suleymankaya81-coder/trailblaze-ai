@@ -48,7 +48,7 @@ def main():
                 return "'" + value.replace("'", "''") + "'"
             values = [slug, row['name'], row['region'].replace('-', ' ').title(),
                       row['country'], row['region'], 'GBP' if row['country'] == 'gb' else 'USD',
-                      row['authority'], row['access'], row['kind']]
+                      row['authority'], 'fly-in' if row['access'] == 'island' else row['access'], row['kind']]
             prepare.q("insert into destinations (slug,name,state,country_code,region_slug,currency,park_authority,access_type,destination_type,status,tier,seo_eligible) values ("
                       + ','.join(literal(v) for v in values) + ", 'draft','tier1',false) on conflict (slug) do nothing")
         except ValueError as error:

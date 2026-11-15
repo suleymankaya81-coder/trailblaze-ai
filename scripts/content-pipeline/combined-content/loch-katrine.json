@@ -1,0 +1,99 @@
+{
+  "fingerprint": "8e747a27032567638c6c6ca26e2b1787a170bacb0db731289ede33276763bcce",
+  "status": "validated",
+  "prompt_chars": 5525,
+  "bundle": {
+    "summary": {
+      "region": "The Trossachs",
+      "tagline": "The historic birthplace of Scottish tourism featuring steamship cruises and loch-side piers.",
+      "best_season": "summer",
+      "trip_duration_days": "1",
+      "recommended_duration": "1 day",
+      "permit_level": "none",
+      "seo_title": "Loch Katrine Steamship Cruises and Pier Guide",
+      "best_seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "scenic_score": 5,
+      "camping_score": 4,
+      "avg_daily_budget": null,
+      "aliases": [],
+      "gateway_cities": [
+        "Stiriling",
+        "Callander"
+      ],
+      "similar_slugs": [],
+      "trip_tags": [
+        "historical",
+        "waterfront",
+        "scenic-drive"
+      ],
+      "activities": [
+        "Loch Katrine"
+      ]
+    },
+    "travel": {
+      "slug": "loch-katrine",
+      "headline": "Historic Cruises and Waterfront Lodging on Loch Katrine",
+      "reservation": "Daily steamship cruises depart from Trossachs Pier. While general access to the piers does not require an entry permit, visitors intending to stay at the loch-side eco-lodges or motorhome pitches should verify availability and book through the official operator website. Systems for cycle hire and cruise timing may vary seasonally.",
+      "source_url": "https://www.lochkatrine.com/",
+      "plan": {
+        "version": 1,
+        "days": [
+          {
+            "title": "Trossachs Pier and Steamship Heritage",
+            "start": "Suggested: 10 AM departure via specialized local roads",
+            "stops": [
+              {
+                "id": "loch-katrine",
+                "name": "Loch Katrine",
+                "detail": "Experience the legacy of steamship cruises that have operated here for over 180 years, departing from the primary facilities at Trossachs Pier.",
+                "stop_id": "loch-katrine"
+              }
+            ],
+            "driving": "Allow time for narrow roads toward the piers; conditions vary",
+            "note": "A single day allows for a cruise and visiting either Trossachs or Stronachlachar Pier."
+          }
+        ],
+        "intel": [
+          {
+            "kind": "parking",
+            "title": "Motorhome and Pier Parking",
+            "text": "Motorhome pitches are available at both Trossachs Pier and Stronachlachar Pier. Visitors should check official capacity for standard vehicle parking during peak cruise times."
+          },
+          {
+            "kind": "signal",
+            "title": "Connectivity Status",
+            "text": "Evidence does not confirm mobile signal strength at the piers. Visitors should download navigation and booking details before arriving in the Trossachs."
+          },
+          {
+            "kind": "fuel",
+            "title": "Local Fuel Availability",
+            "text": "Official sources do not list fuel stations at the piers. Ensure the vehicle is sufficiently fueled in a gateway town before entering the loch area."
+          },
+          {
+            "kind": "timing",
+            "title": "Cruise Schedules",
+            "text": "Steamship cruises run daily but are subject to seasonal schedule changes. Plan arrivals to coincide with scheduled departures from Trossachs Pier."
+          },
+          {
+            "kind": "access",
+            "title": "Loch Access Points",
+            "text": "Primary facilities including the gift shop and cycle hire are located at Trossachs Pier. Stronachlachar Pier offers a quieter alternative with a cafe and loch views."
+          }
+        ],
+        "arrival": "Arrive from nearby Trossachs villages and proceed to Trossachs Pier for information, cycle hire, or cruise tickets.",
+        "vehicle": "Suitable for standard cars and motorhomes; check for narrow-road restrictions on the approach to the loch.",
+        "goldenHour": "Loch-side views at Stronachlachar Pier with seasonal light caveats.",
+        "sources": [
+          {
+            "label": "Loch Katrine Official Site",
+            "url": "https://www.lochkatrine.com/"
+          }
+        ]
+      }
+    }
+  }
+}

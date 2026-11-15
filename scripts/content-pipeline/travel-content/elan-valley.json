@@ -1,0 +1,74 @@
+{
+  "slug": "elan-valley",
+  "headline": "Open Estate Access with Local Parking Fees",
+  "reservation": "Access to the 72 square mile Elan Valley estate and its network of walking routes is free for all visitors. Parking charges apply at specific locations including the Visitor Centre. While entry is open, visitors interested in guided activities or bike hire should check current availability at the Visitor Centre.",
+  "source_url": "https://www.visitwales.com/destinations/mid-wales/powys/visitor-guide-elan-valley-mid-wales",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Victorian Dams and High Moorland",
+        "start": "Suggested: 9 AM from Rhayader",
+        "stops": [
+          {
+            "name": "Caban Coch",
+            "stop_id": "caban-coch",
+            "detail": "View one of the four dams on the Elan River built originally to supply Birmingham with fresh water."
+          },
+          {
+            "name": "Craig Goch",
+            "stop_id": "craig-goch",
+            "detail": "Often called the most elegant of the dams, this structure sits higher up the valley chain."
+          },
+          {
+            "name": "Claerwen",
+            "stop_id": "claerwen",
+            "detail": "Visit the newest and largest dam in the estate, which was officially opened in 1952."
+          }
+        ],
+        "driving": "Allow 1 to 2 hours for the reservoir loop; conditions vary.",
+        "note": "The B4518 connects the valley to Rhayader; road speeds are low due to narrow sections and free-roaming livestock."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Visitor Centre Charges",
+        "text": "Parking fees are required at the main Visitor Centre and certain designated locations. Verify current payment methods upon arrival as evidence does not specify if machines accept cards or cash."
+      },
+      {
+        "kind": "access",
+        "title": "Dog Guidance",
+        "text": "Dogs are welcome across the estate and in the Visitor Centre café. They must remain on leads at all times to protect livestock roaming the 72 square mile area."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Supplies",
+        "text": "Rhayader serves as the primary gateway for fuel and supplies before entering the estate. There are no fuel services within the reservoir area itself."
+      },
+      {
+        "kind": "timing",
+        "title": "Stargazing Opportunities",
+        "text": "The valley is known for star-studded skies once the sun sets. Plan to stay after dusk if conditions are clear for optimal celestial viewing."
+      },
+      {
+        "kind": "signal",
+        "title": "Rural Connectivity",
+        "text": "Mobile signal is not guaranteed in deep valleys or remote moorland. Download maps from the official website or purchase a physical walking pack at the Visitor Centre."
+      }
+    ],
+    "arrival": "Pick up supplies in Rhayader before following the B4518 west. Head directly to the Visitor Centre for trail maps and bike hire information.",
+    "vehicle": "Suitable for cars and smaller campervans; check for specific height or weight restrictions on narrow estate roads.",
+    "goldenHour": "Claerwen dam provides expansive views for sunset, though cloud cover is frequent in Mid Wales.",
+    "sources": [
+      {
+        "label": "Visit Wales",
+        "url": "https://www.visitwales.com/destinations/mid-wales/powys/visitor-guide-elan-valley-mid-wales"
+      },
+      {
+        "label": "Elan Valley",
+        "url": "https://www.elanvalley.org.uk/"
+      }
+    ]
+  }
+}
