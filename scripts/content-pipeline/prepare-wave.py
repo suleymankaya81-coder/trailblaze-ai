@@ -34,6 +34,17 @@ WIKI_ANCHORS = {
     "kielder-water-forest-park": "Kielder Water",
     "gower-national-landscape": "Gower Peninsula",
     "oxford-island-national-nature-reserve": "Oxford Island",
+    "newborough-beach-and-forest": "Newborough Warren",
+    "dylan-thomas-trail-coast": "Laugharne",
+    "antrim-coast-and-glens-aonb": "Glenariff Forest Park",
+    "causeway-coast-aonb": "Causeway Coast",
+    "sperrin-aonb": "Sperrins",
+    "llyn-tegid-bala-lake": "Bala Lake",
+    "suffolk-essex-coast-heaths-national-landscape": "Suffolk Coast and Heaths",
+    "forest-of-bowland-national-landscape": "Forest of Bowland",
+    "assynt-coigach": "Assynt",
+    "tenby-coast": "Tenby",
+    "south-stack-cliffs": "South Stack",
     # Canada wave 2
     "kejimkujik-national-park-and-national-historic-site": "Kejimkujik National Park",
     "north-cape-coastal-drive": "North Cape, Prince Edward Island",
@@ -186,6 +197,8 @@ def relevant_photo(slug, filename):
     pattern = PHOTO_IDENTITIES.get(slug)
     return pattern is None or re.search(pattern, filename, re.I) is not None
 SEARCH_TERMS = {
+    "cranborne-chase-national-landscape": ["Cranborne Chase geograph"],
+    "causeway-coast-aonb": ["Causeway Coast geograph"],
     "cornwall-national-landscape": ["Cornwall coast geograph", "Cornwall landscape geograph", "Cape Cornwall landscape"],
     "chilterns-national-landscape": ["Chiltern Hills landscape", "Chilterns geograph", "Chess Valley landscape"],
     "isle-of-wight-national-landscape": ["Isle of Wight landscape geograph", "Needles Isle of Wight", "Alum Bay Isle of Wight"],
@@ -490,8 +503,9 @@ def prepare_facts(slug):
         if not photos:
             raise RuntimeError("no photos")
         hero = file_info(photos.pop(0)["file"].removeprefix("File:"))
-    if len(photos) < 5:
-        raise RuntimeError(f"only {len(photos)} extra photos")
+    activity_count = min(3, len(load_packet(slug).get('approved_stops', []))) if d.get('country_code') == 'gb' else 3
+    if len(photos) < activity_count:
+        raise RuntimeError(f"only {len(photos)} supporting photos for {activity_count} sourced sights")
 
     # Straight-line nearest can be across mountains or water: keep the shortest drive of the 4 nearest.
     best = []
@@ -508,7 +522,7 @@ def prepare_facts(slug):
         raise RuntimeError("no drivable airport route")
     return {"slug": slug, "name": d["name"], "state": d["state"], "destination": d,
             "lat": lat, "lng": lng, "airport": ap, "route": rt, "hero": hero,
-            "gallery": photos[:2], "activity": photos[2:5]}
+            "gallery": photos[activity_count:activity_count + 2], "activity": photos[:activity_count]}
 
 
 if __name__ == "__main__":

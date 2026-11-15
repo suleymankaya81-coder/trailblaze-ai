@@ -2,6 +2,9 @@ import { describe, expect, it } from "vitest";
 import { isPlaceExperienceRelevant } from "./viatorRelevance";
 
 describe("destination-specific real Viator results", () => {
+  it("matches Seven Sisters without requiring the administrative country-park suffix", () => {
+    expect(isPlaceExperienceRelevant("Seven Sisters Country Park", "Seven Sisters and South Downs Tour from Brighton", "Visit England's Seven Sisters", { countryCode: "gb", region: "England" })).toBe(true);
+  });
   it("rejects Lake Tahoe tours for Clear Lake in Manitoba", () => {
     expect(isPlaceExperienceRelevant("Clear Lake", "Clear Kayak Tour of Lake Tahoe’s Crystal Waters", "Enjoy clear lake water in California", { countryCode: "ca", region: "Manitoba" })).toBe(false);
   });

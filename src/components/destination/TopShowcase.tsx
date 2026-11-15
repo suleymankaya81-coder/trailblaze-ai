@@ -8,6 +8,7 @@ import { isMhrBlackFridayLive } from "@/lib/affiliates/mhrBlackFriday";
 import { validViatorHeight } from "@/lib/affiliates/viatorDisplay";
 import bfArt from "@/assets/rv_black_friday_2026.png.asset.json";
 import { isNonRoadDestination } from "@/lib/data/destinationAccess";
+import { viatorPlaceSearchUrl } from "@/lib/affiliates/viatorSearch";
 
 /** First-screen two-up showcase: vehicles & RVs (left) and the top real Viator tour for this place (right). */
 export function TopShowcase({ slug, name, airportCode, vehicleNote, country = "us" }: { slug: string; name: string; airportCode: string | null; vehicleNote?: string | null; country?: string }) {
@@ -17,7 +18,7 @@ export function TopShowcase({ slug, name, airportCode, vehicleNote, country = "u
   return (
     <section id="trip-vehicles" aria-label={`Vehicles and tours for ${name}`} className="scroll-mt-40 grid gap-5 md:grid-cols-2 md:items-stretch">
       {nonRoad ? <div className="border border-border bg-card p-6"><h2 className="font-display text-2xl"><T>Plan your expedition access</T></h2><p className="mt-3 text-sm text-muted-foreground"><T>No airport-to-park road route. Arrange the required flight, boat or guided transfer with the park authority before booking.</T></p>{vehicleNote && <p className="mt-3 text-sm"><T>{vehicleNote}</T></p>}<Button asChild variant="outline" className="mt-4"><a href="#trip-plan"><T>Check access notes</T></a></Button></div> : bf ? <BlackFridayShowcase slug={slug} /> : <VehicleShowcase slug={slug} airportCode={airportCode} vehicleNote={vehicleNote} country={country} />}
-      <TourShowcase slug={slug} name={name} />
+      <TourShowcase slug={slug} name={name} country={country} />
     </section>
   );
 }
@@ -72,7 +73,7 @@ function VehicleShowcase({ slug, airportCode, vehicleNote, country = "us" }: { s
   );
 }
 
-function TourShowcase({ slug, name }: { slug: string; name: string }) {
+function TourShowcase({ slug, name, country }: { slug: string; name: string; country: string }) {
   const frame = useRef<HTMLIFrameElement>(null);
   const [height, setHeight] = useState<number | null>(null);
   const [status, setStatus] = useState("loading");
@@ -84,29 +85,24 @@ function TourShowcase({ slug, name }: { slug: string; name: string }) {
       if (next === null || !["loading", "error", "empty", "results"].includes(e.data.status)) return;
       setHeight(next); setStatus(e.data.status);
     };
-    // Same-origin fallback: measure the frame directly in case a message arrived before this listener.
-    const timer = window.setInterval(() => {
-      const body = frame.current?.contentDocument?.body;
-      const next = body?.textContent?.trim() ? validViatorHeight(Math.ceil(body.scrollHeight)) : null;
-      if (next) { setHeight(next); setStatus("results"); }
-    }, 1000);
+    // A nonempty frame body can be a skeleton or error; only its explicit status proves a listing.
+    const timer = window.setTimeout(() => setStatus(current => current === "loading" ? "error" : current), 20000);
     window.addEventListener("message", onMsg);
-    return () => { window.clearInterval(timer); window.removeEventListener("message", onMsg); };
+    return () => { window.clearTimeout(timer); window.removeEventListener("message", onMsg); };
   }, [slug]);
   const empty = status === "empty" || status === "error";
   return (
     <div className="flex flex-col rounded-xl border border-border bg-card p-5 md:p-6">
       <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-sage-deep"><T>Top tour</T></p>
-      <h2 className="mt-1 font-display text-2xl leading-tight text-foreground"><T>{`Most popular experience near ${name}`}</T></h2>
+      <h2 className="mt-1 font-display text-2xl leading-tight text-foreground"><T>{`Tours & experiences near ${name}`}</T></h2>
       {empty ? (
         <div className="mt-4 flex flex-1 flex-col items-start justify-center gap-3 rounded-lg bg-secondary/50 p-5">
           <Compass className="h-6 w-6 text-sage-deep" />
           <p className="text-sm text-muted-foreground"><T>{`See guided tours and tickets near ${name}.`}</T></p>
-          <Button asChild variant="outline" className="min-h-12"><a href="#trip-tours"><T>Tours near this place</T></a></Button>
+          <Button asChild variant="outline" className="min-h-12"><a href={viatorPlaceSearchUrl(name, country)} target="_blank" rel="sponsored nofollow noopener noreferrer"><T>Search on Viator</T><ArrowUpRight /></a></Button>
         </div>
-      ) : (
-        <iframe ref={frame} src={`/experiences/place/${slug}?limit=1`} title={`Top Viator tour near ${name}`} style={{ height: height ?? 420 }} className="mt-4 w-full border-0 bg-background" />
-      )}
+      ) : null}
+      <iframe ref={frame} src={`/experiences/place/${slug}?limit=1`} title={`Top Viator tour near ${name}`} style={{ height: height ?? 420 }} className={empty ? "hidden" : "mt-4 w-full border-0 bg-background"} onError={() => setStatus("error")} />
     </div>
   );
 }

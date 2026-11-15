@@ -46,7 +46,7 @@ for slug in sys.argv[1:]:
         (slug in routes, "route line"),
         (d["permit_note"], "reservation note"),
         (complete_plan(d), "local visit plan and field intel"),
-        (len(c.get("activity", [])) >= 3, "activity card photos"),
+        (len(c.get("activity", [])) >= min(3, len({s['name'] for day in (d.get('travel_plan') or {}).get('days', []) for s in day['stops']})) and bool(c.get('activity')), "activity card photos"),
     ] if not ok]
     if problems:
         held.append((slug, problems))

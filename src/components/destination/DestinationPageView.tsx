@@ -440,17 +440,13 @@ function TopStays({ dest }: { dest: DestinationView }) {
         ))}
       </div>
 
-      {filtered.length === 0 ? (
-        <EmptyState message="No stays listed for this filter yet." />
-      ) : (
         <div className="travel-card-row mt-6 sm:grid-cols-2 lg:grid-cols-3">
            {pick && <StayCard offer={pick} destinationSlug={dest.slug} featured photo={stayPhoto(pick, 0)} />}
            {rest.map((s, index) => (
              <StayCard key={s.id} offer={s} destinationSlug={dest.slug} photo={stayPhoto(s, index + 1)} />
           ))}
-           <VrboExpediaItems destinationName={dest.name} />
+           <VrboExpediaItems destinationName={dest.name} destinationSlug={dest.slug} />
         </div>
-      )}
 
     </section>
   );
