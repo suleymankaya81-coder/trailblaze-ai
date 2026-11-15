@@ -1,0 +1,95 @@
+{
+  "slug": "mont-megantic-national-park",
+  "headline": "International Dark-Sky Reserve Access and Astronomy Pass",
+  "reservation": "Daily access fees are mandatory through the Sépaq system, while specific ASTROLab activity and observatory tickets operate on a separate, high-demand booking schedule. Accommodation within the park, including huts and camping, often fills months in advance; always verify current entry quotas on the official site before travel.",
+  "source_url": "https://www.sepaq.com/pq/mme/index.dot",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Summit Ascents and High Altitude Views",
+        "start": "Suggested: 8 AM from Notre-Dame-des-Bois",
+        "stops": [
+          {
+            "name": "Mont Mégantic Summit",
+            "detail": "Trek to the highest point accessible by trail to view the ASTROLab observatory and panoramic vistas of the Appalachian range."
+          },
+          {
+            "name": "Mont Saint-Joseph",
+            "detail": "Visit the summit chapel and enjoy steep lookouts facing the southern Eastern Townships valleys."
+          }
+        ],
+        "driving": "Allow 30-45 minutes; mountain access roads may be steep and slow.",
+        "note": "Summit weather is significantly colder than the gateway towns; allow extra time for steep elevation gains."
+      },
+      {
+        "title": "Celestial Discoveries and Valley Trails",
+        "start": "Suggested: 10 AM from the ASTROLab",
+        "stops": [
+          {
+            "name": "Sentier des Cimes",
+            "detail": "Walk through high-altitude forest ecosystems with interpretation panels explaining the local flora."
+          },
+          {
+            "name": "ASTROLab Activity Centre",
+            "detail": "Engage with interactive astronomy exhibits in this dedicated dark-sky facility located at the mountain base."
+          }
+        ],
+        "driving": "Local park transfers only; allow 20 minutes between sectors.",
+        "note": "Evening astronomy programs require separate dedicated bookings and are weather-dependent."
+      },
+      {
+        "title": "Riverside Rhythms and Dark Sky Preparation",
+        "start": "Suggested: 9 AM from Franceville Sector",
+        "stops": [
+          {
+            "name": "Ruisseau de la Montagne",
+            "detail": "Follow the watercourse through the Franceville sector to see cascading rapids and rocky outcrops."
+          },
+          {
+            "name": "Crest Trail via Franceville",
+            "detail": "A lower-elevation alternative offering views of the distinct rock formations of the Mégantic massif."
+          }
+        ],
+        "driving": "Allow 1 hour if moving between the Franceville and Observatoire sectors.",
+        "note": "The Franceville sector is separate from the main observatory entrance; check map routes carefully."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Sector Specific Lots",
+        "text": "Parking is divided between the Observatoire and Franceville sectors; verify your trailhead location to avoid long detours. Spaces may reach capacity during peak autumn foliage weekends."
+      },
+      {
+        "kind": "signal",
+        "title": "Mountain Topography Interference",
+        "text": "Cellular reception is highly inconsistent in the deep valleys and Franceville sector. Download offline maps at the ASTROLab before heading to remote trailheads."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Service Availability",
+        "text": "Fuel is available in Lac-Mégantic and Notre-Dame-des-Bois; there are no stations within the park boundaries. Ensure a full tank before ascending the steep summit access roads."
+      },
+      {
+        "kind": "timing",
+        "title": "Dark Sky Window",
+        "text": "Public observatory access is strictly managed via scheduled evening tours only. Day hikers should aim to be off the trails by dusk unless participating in an official night activity."
+      },
+      {
+        "kind": "access",
+        "title": "Winter Road Conditions",
+        "text": "The road to the summit observatory may be restricted to shuttle use or closed to private vehicles during winter months. Always check the official Sépaq alerts for seasonal road closures."
+      }
+    ],
+    "arrival": "Pickup rental at Quebec Jean Lesage (YQB), source supplies in Sherbrooke or Lac-Mégantic, and check-in at the Notre-Dame-des-Bois park entrance.",
+    "vehicle": "Standard vehicles are suitable, but low-clearance cars should exercise caution on secondary park roads; check rental terms for unpaved surfaces.",
+    "goldenHour": "Mont Saint-Joseph lookout for sunset, noting that descent in the dark requires preparation.",
+    "sources": [
+      {
+        "label": "Sépaq Mont-Mégantic",
+        "url": "https://www.sepaq.com/pq/mme/"
+      }
+    ]
+  }
+}

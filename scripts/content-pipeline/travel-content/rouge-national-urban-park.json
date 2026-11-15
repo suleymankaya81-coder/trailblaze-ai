@@ -1,0 +1,95 @@
+{
+  "slug": "rouge-national-urban-park",
+  "headline": "Review Urban Transit and Trailhead Availability",
+  "reservation": "Access to Rouge National Urban Park is generally free and does not require a daily entry permit for walking trails. However, specific camping at Glen Rouge Campground requires a separate booking through the Parks Canada system, which often reaches capacity months in advance. Visitors should verify the status of individual trailheads and facility seasonal closures via the official Parks Canada website.",
+  "source_url": "https://parks.canada.ca/pn-np/on/rouge",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Wetlands and River Estuaries",
+        "start": "Suggested: 9 AM from Downtown Toronto",
+        "stops": [
+          {
+            "name": "Rouge Beach and Marsh",
+            "detail": "Explore the largest remaining wetland in the city where the Rouge River meets Lake Ontario, offering a unique habitat for migratory birds."
+          },
+          {
+            "name": "Glen Eagles Vista",
+            "detail": "Walk this elevated trail for a panoramic view of the river valley and the geological formations of the Bluffs."
+          }
+        ],
+        "driving": "Allow 45–60 minutes; conditions vary significantly with GTA traffic",
+        "note": "The beach area can experience high pedestrian volume on summer weekends."
+      },
+      {
+        "title": "Glacial Landscapes and Forested Vistas",
+        "start": "Suggested: 8:30 AM from Scarborough",
+        "stops": [
+          {
+            "name": "Mast Trail",
+            "detail": "Hike this historic route used in the 1800s for transporting timber, featuring rare Carolinian forest species."
+          },
+          {
+            "name": "Vista Trail",
+            "detail": "Visit the two-level viewing platform to see the autumn colors or the dense canopy overlooking the Little Rouge Creek."
+          }
+        ],
+        "driving": "Allow 20 minutes between trailheads; parking is dispersed",
+        "note": "Terrain includes steep ridges; allow extra time for elevation changes."
+      },
+      {
+        "title": "Agricultural Heritage and Rural Limits",
+        "start": "Suggested: 9 AM from Markham",
+        "stops": [
+          {
+            "name": "Bob Hunter Memorial Park",
+            "detail": "Walk through restored tallgrass prairies and wetlands that highlight the region's agricultural restoration efforts."
+          },
+          {
+            "name": "Reesor Pond",
+            "detail": "Observe waterfowl from the boardwalks in this quiet northern section of the park near the agricultural preserve."
+          }
+        ],
+        "driving": "Allow 30 minutes; north-south travel across the park crosses city streets",
+        "note": "Services are limited in the northern reaches; carry water as taps are infrequent."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Trailhead Capacity",
+        "text": "Parking lots at Zoo Road and Rouge Beach are the first to reach capacity on sunny days. Overflow parking on municipal streets is strictly enforced by local bylaws."
+      },
+      {
+        "kind": "signal",
+        "title": "Urban Connectivity",
+        "text": "Cellular reception is generally excellent throughout the park due to its urban proximity. Some deep ravines near the Mast Trail may experience momentary signal drops."
+      },
+      {
+        "kind": "fuel",
+        "title": "City Services",
+        "text": "Fuel and electric charging are abundant in the surrounding neighborhoods of Scarborough and Pickering. No fueling stations are located within the park boundaries."
+      },
+      {
+        "kind": "timing",
+        "title": "Commuter Flow",
+        "text": "Travel times to the park fluctuate heavily based on Toronto highway congestion. Aim to arrive at trailheads before mid-morning to avoid peak transit delays."
+      },
+      {
+        "kind": "access",
+        "title": "Public Transit Options",
+        "text": "The park is accessible via GO Transit and TTC bus routes to specific entry points like Rouge Hill. Check current transit schedules as seasonal shuttles may vary."
+      }
+    ],
+    "arrival": "Collect rental at Billy Bishop or Pearson, then stop in Scarborough for supplies before heading to the Glen Rouge area.",
+    "vehicle": "Standard cars are ideal for city streets; check rental terms for driving on unpaved trailhead access roads.",
+    "goldenHour": "Glen Eagles Vista for sunset, though lighting depends on the season's foliage density.",
+    "sources": [
+      {
+        "label": "Parks Canada - Rouge",
+        "url": "https://parks.canada.ca/pn-np/on/rouge"
+      }
+    ]
+  }
+}

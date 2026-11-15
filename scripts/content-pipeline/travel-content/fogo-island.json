@@ -1,0 +1,97 @@
+{
+  "slug": "fogo-island",
+  "name": "Fogo Island",
+  "state": "Newfoundland and Labrador",
+  "reservation": "There is no entry fee for the island itself, but ferry space from Farewell is limited and operates on a first-come, first-served basis without reservations for standard vehicles. Accommodation on the island is very limited and often booked months in advance; always confirm lodging before boarding the ferry. Check the provincial ferry service website for current schedules and potential weather delays.",
+  "source_url": "https://www.flr.gov.nl.ca/ferryservices/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Fishing Heritage and Longshots",
+        "start": "Suggested: 9 AM from Tilting",
+        "stops": [
+          {
+            "name": "Brimstone Head",
+            "detail": "Hike the wooden boardwalks to what is locally touted as one of the four corners of the flat earth for panoramic views of the Atlantic."
+          },
+          {
+            "name": "Tilting National Historic Site",
+            "detail": "Walk through this Irish-settled fishing village to see the traditional wooden flakes and stages used for drying cod."
+          }
+        ],
+        "driving": "Allow 1 hour for island road navigation between communities; conditions vary.",
+        "note": "Fog can roll in rapidly, significantly reducing visibility on the coastal trails."
+      },
+      {
+        "title": "Modern Art and Ancient Rocks",
+        "start": "Suggested: 8:30 AM from Joe Batt's Arm",
+        "stops": [
+          {
+            "name": "Long Studio",
+            "detail": "View the striking contemporary architecture of this off-grid artist studio, contrasting with the rugged 400-million-year-old shoreline."
+          },
+          {
+            "name": "The Great Auk Statue",
+            "detail": "Visit the sculpture dedicated to the extinct flightless bird that once nested on nearby Funk Island."
+          }
+        ],
+        "driving": "Allow 1.5 hours for local stops and coastal walking; conditions vary.",
+        "note": "Most artist studios are private workspaces; view from the exterior unless an open house is scheduled."
+      },
+      {
+        "title": "Island Heights and Harbour Life",
+        "start": "Suggested: 9:30 AM from Fogo Harbour",
+        "stops": [
+          {
+            "name": "Lion's Den Trail",
+            "detail": "Trek the loop connecting four former 'outport' communities that were resettled, offering views of the rugged cliffs."
+          },
+          {
+            "name": "Fogo Island Marine Interpretive Centre",
+            "detail": "Learn about the island's transition from the cod fishery to its current cultural economy."
+          }
+        ],
+        "driving": "Allow 1 hour for driving and significant time for hiking; conditions vary.",
+        "note": "Moose are frequently spotted near the roadsides at dusk; exercise caution while driving."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Ferry Terminal Queuing",
+        "text": "Vehicle lineups at Farewell can exceed several hours during peak summer weekends. Arrive significantly early and be prepared for the possibility of waiting for a second or third sailing."
+      },
+      {
+        "kind": "signal",
+        "title": "Outport Connectivity",
+        "text": "Signal is generally available in the main towns like Fogo and Joe Batt's Arm but drops off entirely on the central barrens. Download maps before leaving the mainland."
+      },
+      {
+        "kind": "fuel",
+        "title": "Limited Island Pumps",
+        "text": "There are very few fuel stations on the island, primarily in the town of Fogo. Ensure you have a full tank before leaving the mainland at Gander or Farewell."
+      },
+      {
+        "kind": "timing",
+        "title": "Iceberg and Berry Seasons",
+        "text": "Icebergs are typically visible from the shore in June, while berry picking season begins in August. Shops and museums may have reduced hours outside of the peak July window."
+      },
+      {
+        "kind": "access",
+        "title": "Ferry Dependency",
+        "text": "Island access is entirely dependent on the MV Veteran ferry; mechanical issues or high winds can cancel service for days. Always have a contingency plan for a delayed return to the mainland."
+      }
+    ],
+    "arrival": "Fly into Gander, rent a vehicle, and drive north to Farewell. Check the ferry status board at the Gander airport or online before starting the drive.",
+    "vehicle": "A standard passenger car is sufficient for the paved island roads, though an SUV offers more comfort on gravel turn-offs; check ferry rates for oversized RVs.",
+    "goldenHour": "Brimstone Head at sunset, offering elevated views of the sun dipping into the Labrador Sea during clear summer nights.",
+    "sources": [
+      {
+        "label": "Town of Fogo Island",
+        "url": "https://www.townoffogoisland.ca"
+      }
+    ]
+  },
+  "headline": "Check Ferry Schedules and Island Lodging Availability"
+}

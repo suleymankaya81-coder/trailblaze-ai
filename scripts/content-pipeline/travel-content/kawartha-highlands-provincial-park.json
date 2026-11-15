@@ -1,0 +1,95 @@
+{
+  "slug": "kawartha-highlands-provincial-park",
+  "headline": "Advance Reservation for Backcountry Water Access Sites",
+  "reservation": "Access to this semi-wilderness park requires a valid backcountry permit for designated sites, distinct from any local cottage rentals. Reservations must be secured through the Ontario Parks online system, as there is no central gatehouse for walk-in transactions. Policies for vehicle parking at specific access points like Anstruther Lake or Long Lake are subject to change and must be verified via official park channels.",
+  "source_url": "https://www.ontarioparks.com/park/kawarthahighlands",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Anstruther Lake Waters",
+        "start": "Suggested: 9 AM from Apsley",
+        "stops": [
+          {
+            "name": "Anstruther Lake Access",
+            "detail": "The primary launch point for exploring the park's central interior, providing access to sprawling granite shorelines."
+          },
+          {
+            "name": "Rathbun Lake Portage",
+            "detail": "A manageable transition for paddlers looking to reach the quieter, more secluded northern reaches of the park."
+          }
+        ],
+        "driving": "Allow 30-45 minutes to access points; road conditions vary by season.",
+        "note": "Wind conditions on larger lakes can significantly impact paddle times; check local forecasts."
+      },
+      {
+        "title": "Coon Lake Exploration",
+        "start": "Suggested: 8:30 AM from Anstruther Lake Road",
+        "stops": [
+          {
+            "name": "Coon Lake Access Point",
+            "detail": "A quieter alternative for those seeking shorter paddling loops and rugged shoreline views."
+          },
+          {
+            "name": "Bottle Lake Route",
+            "detail": "A scenic corridor known for its classic Canadian Shield topography and dense forest canopy."
+          }
+        ],
+        "driving": "Allow 20 minutes from Apsley; gravel roads may be narrow.",
+        "note": "Paddling is the primary mode of travel; land-based hiking is limited to specific rugged corridors."
+      },
+      {
+        "title": "Mississagua River Corridors",
+        "start": "Suggested: 10 AM from Catchacoma Lake",
+        "stops": [
+          {
+            "name": "Mississagua Lake Launch",
+            "detail": "A gateway to the interconnected water systems that define the western park boundary."
+          },
+          {
+            "name": "Gold Lake Passage",
+            "detail": "Navigate through narrow channels that showcase the park's significant biological diversity."
+          }
+        ],
+        "driving": "Allow 1 hour for local transfers; access involves forest service roads.",
+        "note": "Water levels in river sections fluctuate; check with Ontario Parks regarding spring run-off or autumn lows."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Access Point Constraints",
+        "text": "Parking is limited to designated gravel lots at official access points like Long Lake. Spaces are not guaranteed during peak summer weekends; avoid parking on narrow shoulders to prevent towing."
+      },
+      {
+        "kind": "signal",
+        "title": "Backcountry Communication",
+        "text": "Cellular reception is highly unreliable once you move away from Highway 28. Plan for a complete lack of data services in the interior lake basins."
+      },
+      {
+        "kind": "fuel",
+        "title": "Apsley Supply Hub",
+        "text": "Apsley serves as the final reliable location for fuel and basic provisions before entering the park interior. There are no services available once you depart the main regional roads."
+      },
+      {
+        "kind": "timing",
+        "title": "Paddling Pace",
+        "text": "Suggested departure times allow for manageable portages before midday winds rise. Early starts are recommended for those traversing multiple lake chains."
+      },
+      {
+        "kind": "access",
+        "title": "Water Entry Only",
+        "text": "Most sites are inaccessible by foot; a canoe or kayak is mandatory for backcountry travel. Ensure your vessel meets local safety requirements before launching."
+      }
+    ],
+    "arrival": "Collect supplies in Peterborough or Apsley before heading to your specific lake access point. Check in with the digital permit system prior to arrival as on-site staff presence is minimal.",
+    "vehicle": "Standard vehicles are generally sufficient for the main access roads, though high-clearance is beneficial for secondary forest routes.",
+    "goldenHour": "Sunset over Long Lake offers classic Shield silhouettes, depending on cloud cover and seasonal smoke.",
+    "sources": [
+      {
+        "label": "Ontario Parks",
+        "url": "https://www.ontarioparks.com/park/kawarthahighlands"
+      }
+    ]
+  }
+}

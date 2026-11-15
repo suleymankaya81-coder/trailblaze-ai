@@ -1,0 +1,95 @@
+{
+  "slug": "georgian-bay-islands-national-park",
+  "headline": "Day Tripper Shuttle and Island Cabin Reservations",
+  "reservation": "Access to Beausoleil Island requires a ferry or water taxi booking, distinct from the national park entry fee. Overnight stays in cabins or campsites are highly competitive and must be secured via the Parks Canada Reservation Service. Always check the official website for current shuttle schedules and boat docking availability.",
+  "source_url": "https://parks.canada.ca/pn-np/on/georgian",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Northern Granite Shores",
+        "start": "Suggested: 9 AM from Honey Harbour",
+        "stops": [
+          {
+            "name": "Beausoleil Island North End",
+            "detail": "Hike the Fairy Lake trail to see the iconic windswept pines and ancient rock formations."
+          },
+          {
+            "name": "Honeymoon Bay",
+            "detail": "Visit this sheltered cove for its clear turquoise waters and interpretive geological signs."
+          }
+        ],
+        "driving": "Walking and boat transfer only; allow 20 minutes for the ferry crossing.",
+        "note": "The northern island terrain is rugged granite; sturdy footwear is recommended."
+      },
+      {
+        "title": "Southern Forest Heritage",
+        "start": "Suggested: 10 AM from Cedar Spring",
+        "stops": [
+          {
+            "name": "Cedar Spring Visitor Centre",
+            "detail": "Learn about the Indigenous history of the region and the park's status as a biosphere reserve."
+          },
+          {
+            "name": "Christian Beach",
+            "detail": "Walk to the western shore to view the expansive waters of Georgian Bay."
+          }
+        ],
+        "driving": "Local island walking; allow 30-45 minutes between southern bay sights.",
+        "note": "The southern part of the island features softer paths through hardwood forests."
+      },
+      {
+        "title": "Offshore Perspective",
+        "start": "Suggested: 9:30 AM from Midland",
+        "stops": [
+          {
+            "name": "Georgian Bay Waterway",
+            "detail": "Utilize a local water taxi to view the smaller islands that make up the 'Thirty Thousand Islands'."
+          },
+          {
+            "name": "Big Chute Marine Railway",
+            "detail": "Visit this nearby historic engineering marvel just outside the park's water boundaries."
+          }
+        ],
+        "driving": "Allow 20 minutes from Midland to Honey Harbour docks; conditions vary.",
+        "note": "Water taxi services operate independently; confirm return times at drop-off."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Honey Harbour Docks",
+        "text": "Paid parking is available at Parks Canada lots in Honey Harbour for ferry passengers. Space is limited during peak summer weekends; consider arriving well before your scheduled departure."
+      },
+      {
+        "kind": "signal",
+        "title": "Island Connectivity",
+        "text": "Cell service is generally available on the southern end of Beausoleil Island but becomes spotty in the northern interior. Do not rely on mobile data for navigation in the rocky northern trail loops."
+      },
+      {
+        "kind": "fuel",
+        "title": "Mainland Services",
+        "text": "Fuel and supplies must be secured in Honey Harbour or Midland before boarding the ferry. There are no stores, fuel stations, or ATMs on the islands themselves."
+      },
+      {
+        "kind": "timing",
+        "title": "Ferry Deadlines",
+        "text": "The 'Day Tripper' shuttle operates on a strict schedule with pre-assigned return times. Missing the final boat requires a private water taxi at significantly higher personal expense."
+      },
+      {
+        "kind": "access",
+        "title": "Boat Access Only",
+        "text": "This park is strictly accessible by water; there are no bridges or road links to the islands. Ensure your boat operator is authorized to land or that you have paid the appropriate docking fees."
+      }
+    ],
+    "arrival": "Arrive at Toronto (YYZ), drive to Honey Harbour, and check in at the park kiosk for your scheduled boat departure to Beausoleil Island.",
+    "vehicle": "A standard car is sufficient for reaching the ferry terminal; no vehicles are permitted on the islands. Verify parking rules for oversized vehicles.",
+    "goldenHour": "Sunset is best viewed from the rocks at Christian Beach, where the horizon meets the open bay.",
+    "sources": [
+      {
+        "label": "Parks Canada Georgian Bay Islands",
+        "url": "https://parks.canada.ca/pn-np/on/georgian"
+      }
+    ]
+  }
+}

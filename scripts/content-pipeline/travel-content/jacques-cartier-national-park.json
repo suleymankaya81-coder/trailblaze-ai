@@ -1,0 +1,95 @@
+{
+  "slug": "jacques-cartier-national-park",
+  "headline": "Online Entry Authorization for the Jacques-Cartier Valley",
+  "reservation": "Visitors must obtain a daily access pass online via SEPAQ before arrival, as on-site sales are not guaranteed during peak summer or winter weekends. Separate reservations are required for the yurt and campground accommodations, which fill months in advance. Always check the official SEPAQ dashboard for real-time capacity alerts before departing Quebec City.",
+  "source_url": "https://www.sepaq.com/pq/jac/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Deep Valley Exploration",
+        "start": "Suggested: 8:30 AM from Quebec City",
+        "stops": [
+          {
+            "name": "Les Loups Trail",
+            "detail": "Ascend to viewpoints overlooking the dramatic 550-meter deep glacial valley and the winding river below."
+          },
+          {
+            "name": "Le Scotora",
+            "detail": "Trek through higher elevation plateaus for a chance to see the park's boreal forest transition and northern peaks."
+          }
+        ],
+        "driving": "Allow 60 to 90 minutes from Quebec City; winter road conditions vary significantly",
+        "note": "Snow tires are legally required in Quebec from December to March for all mountain access roads."
+      },
+      {
+        "title": "River Currents and Meadows",
+        "start": "Suggested: 9 AM from the Discovery Center",
+        "stops": [
+          {
+            "name": "Jacques-Cartier River",
+            "detail": "Rent a canoe or kayak to navigate the calm sections or tackle the rapids of this historic waterway."
+          },
+          {
+            "name": "L'Escarpement Trail",
+            "detail": "A shorter forest walk providing perspectives of the river's path through the valley floor's mixed forest."
+          }
+        ],
+        "driving": "Minimal; local transfers between the Discovery Center and various river put-ins",
+        "note": "Water levels fluctuate; river activities may be restricted during periods of high flow or drought."
+      },
+      {
+        "title": "Glacial Geology and Wildlife",
+        "start": "Suggested: 9:30 AM from Stoneham",
+        "stops": [
+          {
+            "name": "L'Éperon Trail",
+            "detail": "A loop trail at the park entrance offering insights into the geological formation of the Laurentian Mountains."
+          },
+          {
+            "name": "Le Tourbière",
+            "detail": "Explore the boardwalk over the park's peat bog to see unique flora and birdlife specialized for this habitat."
+          }
+        ],
+        "driving": "Allow 30 minutes from Stoneham-et-Tewkesbury; watch for wildlife on Route 175",
+        "note": "Moose are frequently sighted near the valley floor at dusk; maintain a respectful distance."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Valley Road Congestion",
+        "text": "The main road along the river has several small lots for specific trailheads that fill quickly. Arrive early to secure a spot at the Les Loups trailhead, as roadside parking is strictly prohibited."
+      },
+      {
+        "kind": "signal",
+        "title": "Deep Valley Dead Zones",
+        "text": "Cellular service is non-existent in most of the valley beyond the Discovery Center. Download all offline maps and trail guides before leaving the Stoneham gateway."
+      },
+      {
+        "kind": "fuel",
+        "title": "Stoneham Service Hub",
+        "text": "There are no gas stations or charging points inside the park. Stoneham-et-Tewkesbury is the final reliable stop for fuel and grocery supplies before the climb into the park."
+      },
+      {
+        "kind": "timing",
+        "title": "Winter Access Rules",
+        "text": "During winter, only certain sections of the valley road are plowed and accessible by vehicle. Check the SEPAQ winter trail map for which sectors are open for snowshoeing versus Nordic skiing."
+      },
+      {
+        "kind": "access",
+        "title": "Shuttle Options",
+        "text": "In peak summer, a shuttle service occasionally operates between Quebec City and the park. Confirm availability with local operators as these are not run by the park agency."
+      }
+    ],
+    "arrival": "Pick up your vehicle at YQB airport, follow Route 175 North, and stop in Stoneham for regional Quebecois provisions and full fuel.",
+    "vehicle": "Compact cars are fine for summer, but 4WD or AWD is highly recommended for winter visits due to mountain gradients.",
+    "goldenHour": "Sunset from the L'Éperon viewpoint provides a dramatic silhouette of the glacial valley shoulders.",
+    "sources": [
+      {
+        "label": "SEPAQ Jacques-Cartier",
+        "url": "https://www.sepaq.com/pq/jac/"
+      }
+    ]
+  }
+}

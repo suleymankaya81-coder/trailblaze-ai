@@ -1,0 +1,95 @@
+{
+  "slug": "blomidon-provincial-park",
+  "headline": "Check Campground Availability and Day-Use Gate Times",
+  "reservation": "Day-use access is typically first-come, first-served, but camping requires reservations through the Nova Scotia Provincial Parks booking system. During peak summer months, campsites are frequently booked the day reservations open; check the official site for current booking windows and gate closure times.",
+  "source_url": "https://parks.novascotia.ca/park/blomidon",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "The Heights of Cape Blomidon",
+        "start": "Suggested: 8:30 AM from Wolfville",
+        "stops": [
+          {
+            "name": "Jodrey Trail",
+            "detail": "Hike the cliff-side path for views of the Minas Basin and the red sandstone cliffs."
+          },
+          {
+            "name": "Look-off Viewpoint",
+            "detail": "Stop at the designated roadside park nearby for a wider perspective of the Annapolis Valley orchards."
+          }
+        ],
+        "driving": "Allow 45 minutes; winding roads require caution in wet weather.",
+        "note": "The Jodrey Trail features steep drops; stay well back from the eroding cliff edges."
+      },
+      {
+        "title": "Shoreline and Red Sands",
+        "start": "Suggested: 9 AM from Canning",
+        "stops": [
+          {
+            "name": "Blomidon Beach",
+            "detail": "Explore the expansive red sand flats revealed at low tide, framed by the towering cliffs above."
+          },
+          {
+            "name": "Borden Brook Trail",
+            "detail": "Walk through the hardwood forest to see a seasonal waterfall that cascades toward the basin."
+          }
+        ],
+        "driving": "Allow 15 minutes; watch for pedestrians in the park's day-use area.",
+        "note": "The beach is largely inaccessible at high tide; time your visit for the ebbing tide."
+      },
+      {
+        "title": "Annapolis Valley Hinterlands",
+        "start": "Suggested: 10 AM from Halifax",
+        "stops": [
+          {
+            "name": "Prescott House Museum",
+            "detail": "Visit this nearby historic site to understand the region's long agricultural history."
+          },
+          {
+            "name": "The Habitant River",
+            "detail": "Drive the scenic route through Canning to see the influence of the tides on local waterways."
+          }
+        ],
+        "driving": "Allow 1.5 hours; heavy tourist traffic on Highway 101 during weekends.",
+        "note": "Museum hours are seasonal; verify they are open if visiting outside the peak summer window."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "fuel",
+        "title": "Canning Supply Point",
+        "text": "The village of Canning is the last reliable stop for fuel and snacks before heading up the peninsula. There are no retail services once you enter the park."
+      },
+      {
+        "kind": "access",
+        "title": "Cliff Erosion Hazards",
+        "text": "The red cliffs are composed of soft sandstone and are prone to sudden landslides. Never climb on the cliffs or sit directly beneath them on the beach."
+      },
+      {
+        "kind": "signal",
+        "title": "Peninsula Dead Zones",
+        "text": "Signal strength is weak at the base of the cliffs and at the beach. Most reliable reception is found at the park's upper entrance and the Look-off."
+      },
+      {
+        "kind": "parking",
+        "title": "Day-Use Capacity",
+        "text": "The beach parking lot fills rapidly on hot summer afternoons. Arrive before 10 AM or after 4 PM to find space during the height of July."
+      },
+      {
+        "kind": "timing",
+        "title": "Tidal Windows",
+        "text": "Tides in the Minas Basin can rise several meters in an hour. Always leave the beach area at least two hours before the predicted high tide to avoid being cut off."
+      }
+    ],
+    "arrival": "Drive from Halifax Stanfield; purchase all necessary firewood and groceries in Wolfville or Canning before arriving at the park gate.",
+    "vehicle": "Suitable for standard cars; the road up the 'North Mountain' is steep, so ensure brakes are in good condition for the descent.",
+    "goldenHour": "The Look-off viewpoint, located a short drive from the park, offers a famous sunrise view over the valley floor and Minas Basin.",
+    "sources": [
+      {
+        "label": "Nova Scotia Provincial Parks",
+        "url": "https://parks.novascotia.ca/park/blomidon"
+      }
+    ]
+  }
+}

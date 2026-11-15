@@ -1,0 +1,95 @@
+{
+  "slug": "elk-island-national-park",
+  "headline": "Parks Canada Discovery Pass and Camping Reservations",
+  "reservation": "While day-use entry typically requires a standard daily fee or a Discovery Pass, camping at Astotin Lake requires a separate advance booking. High demand for summer weekends makes the reservation system a critical bottleneck; check the Parks Canada reservation service for current availability. Vehicle entry is distinct from any specialized interpretive programming bookings.",
+  "source_url": "https://parks.canada.ca/pn-np/ab/elkisland",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Bison and Lakeshore Vistas",
+        "start": "Suggested: 8 AM from Edmonton",
+        "stops": [
+          {
+            "name": "Yellowhead Highway Bison Loop",
+            "detail": "Drive the designated loops to spot Plains bison and wood bison in their separate fenced habitats."
+          },
+          {
+            "name": "Astotin Lake",
+            "detail": "Walk the boardwalks or rent a canoe to explore the islands and observe the diverse waterfowl population."
+          }
+        ],
+        "driving": "Allow 1.5 hours for the transit from Edmonton and slow interior loops; conditions vary.",
+        "note": "Bison may block roads; remain inside your vehicle and maintain a safe distance at all times."
+      },
+      {
+        "title": "Aspen Parkland Trails",
+        "start": "Suggested: 9 AM from the Astotin Lake Recreation Area",
+        "stops": [
+          {
+            "name": "Moss Lake Trail",
+            "detail": "Hike through the rolling hills and aspen forest to see the impact of beaver activity on the local hydrology."
+          },
+          {
+            "name": "Shirley Lake Trail",
+            "detail": "Explore the meadows and wetlands to find elk and moose, which are most active in the early morning or evening."
+          }
+        ],
+        "driving": "Allow 30 minutes between trailheads; conditions vary by trail moisture levels.",
+        "note": "Trails can be muddy after rainfall; allow extra time for the 10km+ loops."
+      },
+      {
+        "title": "Dark Sky and Wildlife Viewing",
+        "start": "Suggested: 10 AM from Fort Saskatchewan",
+        "stops": [
+          {
+            "name": "Tawayik Lake",
+            "detail": "Visit this quieter lake area for birdwatching and to see the transition between forest and grassland."
+          },
+          {
+            "name": "Beaver Hills Dark Sky Preserve",
+            "detail": "Stay late to witness the stars in this internationally recognized preserve, free from urban light pollution."
+          }
+        ],
+        "driving": "Allow 1 hour total travel; conditions vary by night visibility.",
+        "note": "Evenings require insect protection; the preserve status is best appreciated on cloudless nights."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Astotin Lake Hub",
+        "text": "The largest parking area is at Astotin Lake, which serves as the hub for most activities. Secondary trailheads have much smaller gravel pull-offs that can fill on summer afternoons."
+      },
+      {
+        "kind": "signal",
+        "title": "Moderate Coverage",
+        "text": "Cellular reception is generally stable along the Yellowhead Highway but can become spotty in the southern trail sections. Emergency phones are located at major facility clusters."
+      },
+      {
+        "kind": "fuel",
+        "title": "Gateway Gas",
+        "text": "There are no fueling stations within the park boundaries. Fill your tank in Sherwood Park or Fort Saskatchewan before entering the park gates."
+      },
+      {
+        "kind": "timing",
+        "title": "Dawn and Dusk Wildlife",
+        "text": "Bison and elk are most active during the cooler hours of early morning and late evening. Afternoon heat often drives wildlife into the deeper forest shade."
+      },
+      {
+        "kind": "access",
+        "title": "Fenced Boundaries",
+        "text": "The entire park is fenced to manage the bison herds; ensure all gates are properly closed if using backcountry access points. Some trails may close seasonally for bison handling operations."
+      }
+    ],
+    "arrival": "Arrive at Edmonton International Airport (YEG), rent a vehicle, and pick up groceries in Sherwood Park before the short drive east on Highway 16.",
+    "vehicle": "Standard vehicles are perfect for the paved park roads; RVs are common but should check height clearances at the Astotin Lake campground trees.",
+    "goldenHour": "Astotin Lake Beach offers a clear westward view for sunsets over the water and islands.",
+    "sources": [
+      {
+        "label": "Parks Canada",
+        "url": "https://parks.canada.ca/"
+      }
+    ]
+  }
+}

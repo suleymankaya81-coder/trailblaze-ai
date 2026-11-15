@@ -1,0 +1,95 @@
+{
+  "slug": "gulf-islands-national-park-reserve",
+  "headline": "Secure BC Ferries and Moorage for Salish Sea Access",
+  "reservation": "Access involves multiple BC Ferries routes; reservations are highly recommended for vehicles as sailings frequently reach capacity. National Park Reserve camping and mooring buoy usage require separate bookings through the Parks Canada Reservation Service. Check the official site for seasonal opening dates and specific island-by-island docking restrictions.",
+  "source_url": "https://parks.canada.ca/pn-np/bc/gulf",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Pender Island Coastlines",
+        "start": "Suggested: 9 AM from Sidney (Swartz Bay Terminal)",
+        "stops": [
+          {
+            "name": "Roesland and Roe Hole",
+            "detail": "Explore the historic cottage site and walk the peninsula for views of the Pender Canal."
+          },
+          {
+            "name": "Mount Norman",
+            "detail": "Hike the highest point on the Pender Islands for a panoramic view of the San Juan and Gulf Islands."
+          }
+        ],
+        "driving": "Allow 2 hours including ferry loading and local transit; conditions vary.",
+        "note": "Ferry schedules are subject to tidal delays and seasonal frequency changes."
+      },
+      {
+        "title": "Saturna Island Wilderness",
+        "start": "Suggested: 8:30 AM from Otter Bay Terminal",
+        "stops": [
+          {
+            "name": "East Point",
+            "detail": "Observe the boiling currents where the Strait of Georgia meets the Boundary Pass, a known area for marine mammal sightings."
+          },
+          {
+            "name": "Narvaez Bay",
+            "detail": "Walk the forested trail to reach one of the park’s most secluded bay environments."
+          }
+        ],
+        "driving": "Allow 3 hours for inter-island ferry transfers and winding island roads.",
+        "note": "Services on Saturna are limited; ensure supplies are gathered before departing Sidney or Pender."
+      },
+      {
+        "title": "Sidney Spit Marine Exploration",
+        "start": "Suggested: 10 AM from Sidney Pier",
+        "stops": [
+          {
+            "name": "Sidney Spit",
+            "detail": "Accessible by seasonal walk-on ferry, this site features sprawling tidal flats and unique salt marshes."
+          },
+          {
+            "name": "Lagoon Nature Trail",
+            "detail": "A gentle circuit highlighting the island's bird habitats and shifting sand ecosystems."
+          }
+        ],
+        "driving": "Walking only on Sidney Spit; allow 25 minutes for the passenger ferry crossing.",
+        "note": "No potable water is available on Sidney Spit; visitors must carry all necessary fluids."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Terminal and Trailhead Capacity",
+        "text": "Parking at Swartz Bay is often restricted to short-term; use designated long-term lots if leaving a vehicle for the ferry. Small trailhead lots on Saturna and Pender fill quickly during summer weekends."
+      },
+      {
+        "kind": "signal",
+        "title": "Coastal Connectivity Gaps",
+        "text": "Cellular service is intermittent near Narvaez Bay and East Point due to topography and proximity to the US border. Expect roaming charges if devices connect to international towers across the strait."
+      },
+      {
+        "kind": "fuel",
+        "title": "Island Supply Logic",
+        "text": "Full-service stations are located in Sidney and near the Pender Island ferry terminal. Saturna has extremely limited fuel availability; verify local shop hours before travel."
+      },
+      {
+        "kind": "timing",
+        "title": "Ferry Loading Windows",
+        "text": "Arrival at terminals at least 40-60 minutes before scheduled sailings is standard for reserved vehicles. Unreserved travel may result in multi-sailing waits during July and August."
+      },
+      {
+        "kind": "access",
+        "title": "Inter-Island Water Taxis",
+        "text": "Private water taxis provide access to smaller islets like D'Arcy or Portland Island which are not served by BC Ferries. Confirm landing permits and dock status with Parks Canada staff."
+      }
+    ],
+    "arrival": "Collect rental at Victoria International Airport, stock up on provisions in Sidney, and check the BC Ferries status for the Swartz Bay departure.",
+    "vehicle": "Compact cars are ideal for narrow island roads; larger RVs face significant ferry surcharges and limited turning space on Saturna.",
+    "goldenHour": "Sunset views from East Point on Saturna Island, subject to seasonal marine cloud cover.",
+    "sources": [
+      {
+        "label": "Parks Canada - Gulf Islands",
+        "url": "https://parks.canada.ca/pn-np/bc/gulf"
+      }
+    ]
+  }
+}
