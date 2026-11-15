@@ -19,6 +19,9 @@ BAD = re.compile(r"map|logo|seal|sign|diagram|chart|plan|stamp|coin|flag|icon|sv
 # Use an explicitly named, verifiable landmark for broad regions or catalog aliases.
 # These are map anchors, not claims that a region has one exact point.
 WIKI_ANCHORS = {
+    # Canada wave 2
+    "kejimkujik-national-park-and-national-historic-site": "Kejimkujik National Park",
+    "north-cape-coastal-drive": "North Cape, Prince Edward Island",
     # Canada wave 1
     "glacier-national-park-bc": "Glacier National Park (Canada)",
     "lake-louise": "Lake Louise (Alberta)",
@@ -142,6 +145,15 @@ COORDS = {
 HERO_FROM_SEARCH = {"palm-desert","las-cruces","paradise-valley","annapolis","winthrop","manitou-springs","yuma","everglades-city","calistoga","memphis","salem","seligman","glenwood-springs","stanley","amarillo","vicksburg","selma","plymouth","saratoga-springs","truckee", "los-angeles", "boston", "san-francisco", "new-york-city", "houston", "dallas-fort-worth", "charlotte", "atlanta"}
 # Alternative Commons search terms for places with too few usable photos.
 SEARCH_TERMS = {
+    # Canada wave 2 (low photo counts under the plain park name)
+    "kejimkujik-national-park-and-national-historic-site": ["Kejimkujik National Park", "Kejimkujik Lake", "Kejimkujik Seaside"],
+    "tweedsmuir-provincial-park": ["Tweedsmuir Provincial Park", "Hunlen Falls", "Rainbow Range British Columbia"],
+    "alice-lake-provincial-park": ["Alice Lake Provincial Park", "Alice Lake Squamish", "Four Lakes Trail Squamish"],
+    "lesser-slave-lake-provincial-park": ["Lesser Slave Lake", "Lesser Slave Lake Provincial Park", "Slave Lake Alberta"],
+    "parlee-beach-provincial-park": ["Parlee Beach", "Shediac New Brunswick beach", "Pointe-du-Chêne"],
+    "dollar-lake-provincial-park": ["Dollar Lake Provincial Park", "Dollar Lake Nova Scotia"],
+    "lawrencetown-beach-provincial-park": ["Lawrencetown Beach", "Lawrencetown Nova Scotia", "Lawrencetown surf"],
+    "north-cape-coastal-drive": ["North Cape Prince Edward Island", "North Cape lighthouse PEI", "North Cape Wind Energy"],
     # New-destination waves 3-5: named scenic landmarks avoid same-name towns elsewhere.
     "palm-desert": ["Living Desert Zoo and Gardens", "Santa Rosa and San Jacinto Mountains National Monument", "Palm Desert California mountains"],
     "borrego-springs": ["Anza-Borrego Desert State Park", "Borrego Springs California", "Fonts Point Anza-Borrego"],
