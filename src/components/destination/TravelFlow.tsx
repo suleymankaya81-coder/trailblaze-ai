@@ -26,12 +26,12 @@ export function TravelFlow({ name, plan, airportCode, nudges = false, region, sl
   }
   return <section id="flow" className="scroll-mt-40">
     <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
-      <div><p className="mb-2 text-xs font-semibold uppercase text-sage-deep"><T>A little structure. Plenty of freedom.</T></p><h2 className="text-2xl text-foreground md:text-3xl">{nonRoad ? <T>Expedition planning stages</T> : <>{plan.days.length} <T>days in</T></>} <T>{name}</T></h2>{nonRoad && <p className="mt-2 text-sm text-muted-foreground"><T>These are planning stages, not a three-day sightseeing circuit. Transfers, duration and return arrangements must be confirmed with your operator.</T></p>}</div>
+      <div><p className="mb-2 text-xs font-semibold uppercase text-sage-deep"><T>A little structure. Plenty of freedom.</T></p><h2 className="text-2xl text-foreground md:text-3xl">{nonRoad ? <T>Expedition planning stages</T> : plan.days.length === 1 ? <T>Visit highlights:</T> : <>{plan.days.length} <T>days in</T></>} <T>{name}</T></h2>{nonRoad && <p className="mt-2 text-sm text-muted-foreground"><T>These are planning stages, not a three-day sightseeing circuit. Transfers, duration and return arrangements must be confirmed with your operator.</T></p>}</div>
       <div className="flex flex-wrap gap-2">{slug && !nonRoad && <Button asChild variant="outline"><Link to="/trip-builder/$slug" params={{ slug }}><SlidersHorizontal /> <T>Customize this trip</T></Link></Button>}<Button variant="outline" onClick={download}><Download /> <T>Save trip</T></Button></div>
     </div>
     {!nonRoad && <DayRouteActions title={`${name} trip`} points={plan.days.flatMap(d => dayPoints(d, plan.markers, name, region, slug))} mapsLabel="Open whole trip in Google Maps" />}
     <div className="mb-4" />
-    <ol className="grid gap-4 md:grid-cols-2">
+    <ol className={plan.days.length === 1 ? "grid gap-4" : "grid gap-4 md:grid-cols-2"}>
       {plan.days.map((day, i) => <li key={day.title} className="rounded-lg border border-border bg-card p-5 md:p-6">
         <div className="flex items-start gap-4"><span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-forest text-primary-foreground text-sm font-bold">{String(i+1).padStart(2,"0")}</span><div><h3 className="text-lg text-foreground"><T>{day.title}</T></h3><p className="mt-1 flex items-center gap-1.5 text-xs text-sage-deep"><Clock className="h-3.5 w-3.5 shrink-0" /><T>{day.start}</T></p></div></div>
         <ul className="mt-5 space-y-4">{day.stops.map(stop => <li key={stop.name} className="flex gap-3"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-sage-deep" /><div><p className="text-sm font-semibold text-foreground"><T>{stop.name}</T></p><p className="mt-1 text-xs leading-relaxed text-muted-foreground"><T>{stop.detail}</T></p></div></li>)}</ul>

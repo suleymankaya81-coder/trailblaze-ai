@@ -1,6 +1,7 @@
 """Save a validated retained bundle to a draft without replaying inference."""
 import json
 import os
+import datetime
 from pathlib import Path
 import requests
 from compact_evidence import compact_packet
@@ -13,6 +14,7 @@ def save_reviewed_bundle(slug):
     if state.get('status') != 'validated':
         raise ValueError('HELD: retained output is not validated')
     item = validate_bundle(state['bundle'], slug, compact_packet(load_packet(slug)))['travel']
+    item['plan']['reviewedAt'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
     key = os.environ['SUPABASE_SERVICE_ROLE_KEY']
     headers = {'apikey': key, 'Authorization': 'Bearer ' + key, 'Prefer': 'return=representation'}
     payload = {'travel_plan': item['plan'], 'permit_headline': item['headline'],

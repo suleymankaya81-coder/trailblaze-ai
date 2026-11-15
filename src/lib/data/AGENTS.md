@@ -1,2 +1,3 @@
 - Canadian estimates use dated market benchmarks and explicit USD conversion, not US defaults. Why: a shared currency must not substitute the wrong country's market.
 - Non-road destination access and reviewed Canadian photo overrides are shared across guides and destination views. Why: old drive metrics and rejected photos must not reappear in sibling surfaces.
+- Stored visit parsing accepts one or multiple days and one or more sights per day, matching offline production validation. Why: compact sourced visits must render rather than silently disappear.
