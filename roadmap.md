@@ -179,7 +179,7 @@
 - [ ] German Canada versions and world-national-parks.net Canada 301s: not part of this audit; require translation and verified old URL mapping.
 
 ## UK (source-first)
-- [x] Pilot wave: 5 of 15 national parks published (Lake District, Yorkshire Dales, Northumberland, Dartmoor, South Downs)
-- [ ] Retry 10 held parks with expanded official sources (Peak District, North York Moors, New Forest, Broads, Loch Lomond, Brecon Beacons, Pembrokeshire Coast, Cairngorms, Eryri, Exmoor)
+- [x] Pilot wave: 14 of 15 national parks published
+- [ ] New Forest held: "Tall Trees Trail" not named in official sources
 - [ ] UK price benchmarks (currently "Check live price")
 - [ ] Waves 2–5 (England, Scotland, Wales, Northern Ireland) after pilot approval

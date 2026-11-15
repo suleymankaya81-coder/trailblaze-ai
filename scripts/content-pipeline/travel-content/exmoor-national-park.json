@@ -1,94 +1,94 @@
 {
   "slug": "exmoor-national-park",
-  "headline": "Where Moor Meets Sea: Essential Exmoor Visitor Guide",
-  "reservation": "The park is free to enter, but car parks at popular sites like Valley of Rocks or Dunkery Beacon may require local fees. Stargazing events during the October Dark Skies Festival typically require advance booking. Accommodation in small hamlets like Simonsbath is limited and should be secured well in advance.",
+  "headline": "Enjoy Truncated Moorland and Dark Sky Access",
+  "reservation": "Entry to Exmoor National Park is generally free, though specific parking permits for National Park Authority lots can be purchased via their online shop. Accommodation varies from quaint villages to remote camping; systems operate independently and require direct official confirmation. Dark Sky events, particularly during the October festival, often require separate booking.",
   "source_url": "https://www.exmoor-nationalpark.gov.uk/exmoor-for-everyone",
   "plan": {
     "version": 1,
     "days": [
       {
-        "title": "The Wilderness Coast",
-        "start": "Suggested: 9 AM from Lynton",
+        "title": "Wilderness Coast and Cliffs",
+        "start": "Suggested: 9 AM from Minehead",
         "stops": [
           {
-            "name": "Valley of Rocks",
-            "detail": "Walk among dramatic rock formations along the rugged heritage coastline."
-          },
-          {
-            "name": "Great Hangman",
-            "detail": "Ascend England’s highest sea cliffs for views from 314 metres above the Bristol Channel."
-          }
-        ],
-        "driving": "Allow 1 hour for coastal road transit; conditions vary",
-        "note": "Steep gradients are common near Lynton and Lynmouth; allow extra time for heavy vehicles."
-      },
-      {
-        "title": "High Moors and Rivers",
-        "start": "Suggested: 8:30 AM from Simonsbath",
-        "stops": [
-          {
-            "name": "Dunkery Beacon",
-            "detail": "Visit the highest point on Exmoor and Somerset for panoramic views of the heather moors."
-          },
-          {
-            "name": "Tarr Steps",
-            "detail": "Observe this ancient clapper bridge over the River Barle; check for current accessibility after storm events."
-          }
-        ],
-        "driving": "Allow 1.5-2 hours for moorland driving; conditions vary",
-        "note": "Roads across the high moor are often open and exposed; watch for wandering Exmoor ponies."
-      },
-      {
-        "title": "Villages and Ancient Vales",
-        "start": "Suggested: 10 AM from Porlock",
-        "stops": [
-          {
-            "name": "Porlock Weir",
-            "detail": "Explore this historic harbor village situated at the edge of the Vale of Porlock."
+            "name": "South West Coast Path",
+            "detail": "Walk the first stage of the UK's longest National Trail along high sea cliffs and steep-sided gorges."
           },
           {
             "name": "Selworthy Beacon",
-            "detail": "Look for heather in bloom and views across Porlock Bay from this high vantage point."
+            "detail": "View the heather in bloom and look out over the Bristol Channel coast."
           }
         ],
-        "driving": "Allow 1 hour for local valley transit; conditions vary",
-        "note": "Porlock Hill features one of the steepest A-road gradients in the UK; check vehicle brakes."
+        "driving": "Allow 1-2 hours; conditions vary on narrow coastal roads.",
+        "note": "Pace your hike for the rugged terrain; the coastline here is the highest on the British mainland."
+      },
+      {
+        "title": "Ancient Valleys and History",
+        "start": "Suggested: 8:30 AM from Dulverton",
+        "stops": [
+          {
+            "name": "Tarr Steps",
+            "detail": "Visit this ancient clapper bridge in a wooded valley; check local status following seasonal storm damage."
+          },
+          {
+            "name": "Simonsbath",
+            "detail": "Explore the high moors and see the source of the River Exe nearby."
+          }
+        ],
+        "driving": "Allow 1 hour; check for livestock on open moorland roads.",
+        "note": "Check official updates for bridge access at Tarr Steps before visiting."
+      },
+      {
+        "title": "Beacons and Dark Skies",
+        "start": "Suggested: 10 AM from Porlock",
+        "stops": [
+          {
+            "name": "Dunkery Beacon",
+            "detail": "Ascend the highest point on Exmoor and in Somerset for panoramic regional views."
+          },
+          {
+            "name": "International Dark Sky Reserve",
+            "detail": "Stay late to witness shooting stars and the Milky Way in Europe's first Dark Sky Reserve."
+          }
+        ],
+        "driving": "Allow 45 minutes; evening visibility requires extra caution.",
+        "note": "Golden hour at Dunkery Beacon is season-dependent; prepare for rapid temperature drops."
       }
     ],
     "intel": [
       {
         "kind": "parking",
-        "title": "Permits and Village Lots",
-        "text": "Parking permits can be purchased in advance via the official shop for major National Park lots. Village parking in Dulverton or Porlock is available but limited during festival periods."
+        "title": "Village and Trailhead Permits",
+        "text": "Parking permits for Authority-managed sites are available through the official online shop. Many smaller hamlets have limited spaces that fill early during peak summer months."
       },
       {
         "kind": "signal",
-        "title": "Moorland Dead Zones",
-        "text": "Cellular signal is highly inconsistent in deep wooded combes and the central moor near Simonsbath. Main villages usually provide basic coverage, but do not rely on it for emergency navigation."
+        "title": "Remote Connectivity",
+        "text": "Mobile reception is frequently absent in deep wooded valleys and remote moors. Download offline maps or carry official physical guides before entering the former royal hunting forest."
       },
       {
         "kind": "fuel",
-        "title": "Perimeter Service",
-        "text": "The nearest mainline rail stations and major fuel hubs are in Taunton, Barnstaple, and Tiverton Parkway. Ensure a full tank before heading into the interior moorland roads."
+        "title": "Gateway Supplies",
+        "text": "Fuel is available in larger villages like Dulverton and Lynton, but is not found in the high moorland center. Refill at gateway towns before traversing the 693 square kilometer park."
       },
       {
         "kind": "timing",
-        "title": "Wildlife Viewing",
-        "text": "Dawn and dusk are the best times to catch a glimpse of wild red deer stags at Alderman's Barrow. Stargazing is optimal on clear moonless nights in the Dark Sky Reserve."
+        "title": "Heather and Stargazing",
+        "text": "Late summer brings blooming heather to Selworthy Beacon, while October is the peak time for organized dark sky activities. Suggested morning starts help avoid peak crowds at popular coastal trailheads."
       },
       {
         "kind": "access",
-        "title": "Coastal Path Routes",
-        "text": "Around 1,000km of rights of way are maintained. The South West Coast Path follows the 'Wilderness Coast' and requires sturdy footwear for steep-sided gorges."
+        "title": "Rights of Way",
+        "text": "Exmoor features 1000km of rights of way across moorland and farmland. Visitors must respect active farming and managed environment boundaries shaped over thousands of years."
       }
     ],
-    "arrival": "Arrive via Taunton or Tiverton Parkway stations, followed by a bus or rental car transfer. Stock up on local produce in Dulverton before heading to remote moorland stays.",
-    "vehicle": "Suitable for cars, but large RVs may struggle with steep coastal hills and narrow village lanes. Always check rental height restrictions for rural bridges.",
-    "goldenHour": "Sunset from Selworthy Beacon offers views of Porlock Bay framed by heather, with colors varying by season.",
+    "arrival": "Pick up a rental at Taunton or Tiverton Parkway rail stations. Stock up on supplies in these gateway towns before a 60-minute bus or drive into the park's central hamlets.",
+    "vehicle": "Smaller cars are best for narrow country lanes; check rental restrictions for steep coastal grades.",
+    "goldenHour": "Selworthy Beacon offers views of the heather-clad cliffs, best at sunset in late summer.",
     "sources": [
       {
         "label": "Exmoor National Park Authority",
-        "url": "https://www.exmoor-nationalpark.gov.uk/exmoor-for-everyone"
+        "url": "https://www.exmoor-nationalpark.gov.uk/"
       }
     ]
   }

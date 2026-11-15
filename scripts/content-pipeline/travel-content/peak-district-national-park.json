@@ -1,0 +1,95 @@
+{
+  "slug": "peak-district-national-park",
+  "headline": "Digital Parking Permits and Pay & Display Access",
+  "reservation": "Entry to the park is free, but parking often requires payment via the RingGo app or at physical machines. Digital weekly and annual permits are available for purchase but do not guarantee a space in popular lots. Always check the official website for current trail or cave accessibility and specific site fees.",
+  "source_url": "https://www.peakdistrict.gov.uk/visiting/planning-your-visit/parking",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Caves and Peaks of the Hope Valley",
+        "start": "Suggested: 9 AM from Castleton",
+        "stops": [
+          {
+            "name": "Castleton Show Caves",
+            "detail": "Discover the unique underground world beneath the summits at one of the area's iconic limestone caverns."
+          },
+          {
+            "name": "Mam Tor",
+            "detail": "Hike the accessible paths of this famous hill for expansive views across the White Peak valleys."
+          }
+        ],
+        "driving": "Allow 1 hour for local travel; conditions vary in narrow valley roads",
+        "note": "Car parks in Castleton fill early; consider arriving before 9 AM during summer."
+      },
+      {
+        "title": "History of the Dark Peak Moorlands",
+        "start": "Suggested: 8:30 AM from Edale",
+        "stops": [
+          {
+            "name": "The Pennine Way",
+            "detail": "Start at the Nags Head pub to walk the beginning of Britain’s first long-distance national trail."
+          },
+          {
+            "name": "Derwent Dam",
+            "detail": "Visit the historic towers where the Dambusters 617 squadron performed their training missions."
+          }
+        ],
+        "driving": "Allow 1.5 hours for local travel; conditions vary",
+        "note": "The higher moorlands of the Dark Peak are prone to sudden weather shifts."
+      },
+      {
+        "title": "Cycling the Silent Railways",
+        "start": "Suggested: 9:30 AM from Bakewell",
+        "stops": [
+          {
+            "name": "Monsal Trail",
+            "detail": "Cycle or walk through former railway tunnels that once served as bustling steam routes."
+          },
+          {
+            "name": "Millers Dale Station",
+            "detail": "Explore this historic transit hub which now features accessible trails and EV charging points."
+          }
+        ],
+        "driving": "Allow 45 minutes; conditions vary",
+        "note": "Bike hire is available at several centres along the traffic-free level trails."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Paid Parking Systems",
+        "text": "The Authority manages 44 car parks, most using a card, coin, or app-based Pay & Display system. Some sites like Millers Dale are trialling ANPR cameras which require payment within 10 minutes of arrival."
+      },
+      {
+        "kind": "signal",
+        "title": "App Payment Issues",
+        "text": "Connectivity is limited in rural valleys; digital permits should be purchased before departure. At 'Late Pay Locations,' the authority allows payment within 24 hours of arrival due to connectivity challenges."
+      },
+      {
+        "kind": "fuel",
+        "title": "Electric Vehicle Support",
+        "text": "Publicly accessible 7kw EV charging points are located at Millers Dale Station and Parsley Hay. Traditional fuel stations are found in gateway towns like Buxton and Glossop outside the park boundary."
+      },
+      {
+        "kind": "timing",
+        "title": "Peak Hour Congestion",
+        "text": "Small car parks often reach capacity early in the morning during summer and holidays. Parking on grass verges or farm gates is strictly prohibited to ensure emergency service and farm vehicle access."
+      },
+      {
+        "kind": "access",
+        "title": "Miles Without Stiles",
+        "text": "Over 35 miles of traffic-free, level-access trails are designed for mobility equipment and families. The Hope Valley rail line provides a low-carbon travel alternative between Manchester and Sheffield."
+      }
+    ],
+    "arrival": "Collect rentals at Manchester Airport, then stop in Buxton or Glossop for supplies before arriving in the Hope Valley.",
+    "vehicle": "Suitable for cars; large RVs must pay for extra bays and check size suitability for narrow stone-walled lanes.",
+    "goldenHour": "Curbar Edge offers sunset views over green fields, though light quality is highly season-dependent.",
+    "sources": [
+      {
+        "label": "official agency/park",
+        "url": "https://www.peakdistrict.gov.uk/visiting"
+      }
+    ]
+  }
+}

@@ -19,11 +19,23 @@ def sql(query):
 def literal(v):
     return "'" + v.replace("'", "''") + "'"
 
+GENERIC_STOP_WORDS = set('unesco world heritage site estate visitor centre center trail walk walks village park country national area the and head show caves cave valley waterways'.split())
+
+def _norm(text):
+    return re.sub(r"[’‘`]", "'", text.lower())
+
 def unsupported_stops(plan, packet):
-    text = ' '.join(src.get('text', '') for src in packet['sources']).lower()
-    names = [st['name'] for day in plan['days'] for st in day['stops']]
-    core = lambda n: re.sub(r'\(.*?\)', '', n).split(' and ')[0].split(',')[0].strip().lower()
-    return [n for n in names if core(n) not in text]
+    """A stop passes when every distinctive word of its name appears in the official evidence."""
+    text = _norm(' '.join(src.get('text', '') for src in packet['sources']))
+    words = set(re.findall(r"[a-z0-9']+", text))
+    missing = []
+    for day in plan['days']:
+        for st in day['stops']:
+            name = _norm(re.sub(r'\(.*?\)', '', st['name']))
+            key = [w for w in re.findall(r"[a-z0-9']+", name) if len(w) > 2 and w not in GENERIC_STOP_WORDS]
+            if not key or not all(w in words for w in key):
+                missing.append(st['name'])
+    return missing
 
 def validate(item):
     p = item['plan']
@@ -50,6 +62,11 @@ Facts and guides:\n'''
 
 def generate(rows):
     rows = grounded_rows(rows)
+    # Hide link targets inside page text so only the packet's own source URLs can be cited.
+    for r in rows:
+        for src in r['evidence']['sources']:
+            src['text'] = re.sub(r'!?\[([^\]]*)\]\([^)]*\)', r'\1', src['text'])
+            src['text'] = re.sub(r'https?://\S+', '', src['text'])
     try:
         parsed = call_ai_json(GROUNDING+'\n'+PROMPT+json.dumps(rows), model=MODEL)
         if isinstance(parsed, dict) and parsed.get('held'):
