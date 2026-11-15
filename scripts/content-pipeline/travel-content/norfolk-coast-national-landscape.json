@@ -1,0 +1,113 @@
+{
+  "slug": "norfolk-coast-national-landscape",
+  "headline": "Check Official Signage for Wildlife Protection and Closures",
+  "reservation": "Access to the Norfolk Coast is generally open, but specific seasonal restrictions apply to protect nesting birds and resting seals. Some National Nature Reserves may have cordoned areas or designated route requirements; always check current local signage for specific wildlife exclusion zones before entering dunes or beaches.",
+  "source_url": "https://norfolkcoast.org/visit-us/know-before-you-go/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Western Gateway and Chalkland Trails",
+        "start": "Suggested: 9 AM at Peddars Way; check current access first",
+        "stops": [
+          {
+            "name": "Peddars Way",
+            "detail": "Begin your journey on this 46-mile trail where cycling is permitted, offering a unique perspective on the rolling chalkland.",
+            "stop_id": "peddars-way"
+          },
+          {
+            "name": "Norfolk Coast Path",
+            "detail": "Connect to this 112-mile National Trail, noting that cycling is not permitted on this specific coastal section.",
+            "stop_id": "norfolk-coast-path"
+          }
+        ],
+        "driving": "Suggested pairing only; journey times between stops are not verified. Check each walking start and access before departure.",
+        "note": "This is suggested pacing, not an opening schedule. Check current site access and conditions before setting out."
+      },
+      {
+        "title": "Marine Reserves and Coastal Marshes",
+        "start": "Suggested: 9 AM at Blakeney Point; check current access first",
+        "stops": [
+          {
+            "name": "Blakeney Point",
+            "detail": "Visit this National Nature Reserve to observe diverse wildlife, ensuring you maintain a respectful distance from resting seals.",
+            "stop_id": "blakeney-point"
+          },
+          {
+            "name": "Longshore walk",
+            "detail": "Traverse the shingle ridge at Cley beach and watch for oystercatchers probing the marshland for shellfish.",
+            "stop_id": "longshore-walk"
+          }
+        ],
+        "driving": "Suggested pairing only; journey times between stops are not verified. Check each walking start and access before departure.",
+        "note": "This is suggested pacing, not an opening schedule. Check current site access and conditions before setting out."
+      },
+      {
+        "title": "Glacial Moraines and Eastern Dunes",
+        "start": "Suggested: 9 AM at Sheringham Park; check current access first",
+        "stops": [
+          {
+            "name": "Sheringham Park",
+            "detail": "Explore accessible off-road routes suitable for walkers and mobility scooters within this historic landscape.",
+            "stop_id": "sheringham-park"
+          },
+          {
+            "name": "Winterton Dunes",
+            "detail": "Conclude at the eastern edge of the landscape to experience the unique flora of these National Nature Reserve dunes.",
+            "stop_id": "winterton-dunes"
+          }
+        ],
+        "driving": "Suggested pairing only; journey times between stops are not verified. Check each walking start and access before departure.",
+        "note": "This is suggested pacing, not an opening schedule. Check current site access and conditions before setting out."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Sustainable Transit",
+        "text": "The park advises considering train or bus travel to avoid queuing for car parks. Specific parking fill times are not provided; verify local site capacity before departure."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Gaps",
+        "text": "The reviewed official sources do not establish mobile coverage at these stops. Save directions before departure rather than assuming reception."
+      },
+      {
+        "kind": "fuel",
+        "title": "Local Supply Points",
+        "text": "The reviewed official sources do not establish fuel-station locations or operating hours. Check your refuelling options independently before departure."
+      },
+      {
+        "kind": "timing",
+        "title": "Seasonal Wildlife Pace",
+        "text": "Allow extra time for wildlife viewing at Blakeney Point. Always steer clear of cordons marked for protected species."
+      },
+      {
+        "kind": "access",
+        "title": "Trail Restrictions",
+        "text": "Cycling is strictly prohibited on the Norfolk Coast Path but allowed on Peddars Way. Check for dog restrictions before entering nature reserves."
+      }
+    ],
+    "arrival": "Pick up a rental vehicle in Norwich or King's Lynn. Check into local brick and flint villages such as those near Cley or Winterton to settle into the historic landscape.",
+    "vehicle": "The reviewed sources do not establish rental or motorhome suitability on every approach road. Check your provider, the actual roads and each site’s vehicle restrictions before departure.",
+    "goldenHour": "For a suggested late-day visit at Peddars Way, check daylight, closing times and current access first. A sunset view or after-hours admission is not established by these sources.",
+    "sources": [
+      {
+        "label": "Official visitor information",
+        "url": "https://national-landscapes.org.uk/national-landscapes/norfolk-coast"
+      },
+      {
+        "label": "Official visitor information",
+        "url": "https://norfolkcoast.org/"
+      },
+      {
+        "label": "Official visitor information",
+        "url": "https://norfolkcoast.org/visit-us/know-before-you-go/"
+      },
+      {
+        "label": "Official visitor information",
+        "url": "https://norfolkcoast.org/visit-us/walking-and-cycling/"
+      }
+    ]
+  }
+}

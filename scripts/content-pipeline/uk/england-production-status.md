@@ -1,12 +1,11 @@
-# England wave 2 — 15 November 2026
+# England production — 15 November 2026
 
-- 45 catalog identities saved as drafts, never published automatically.
-- Official-source collection started for all 45; cached full documents are retained in source-packets. Collection alone is not editorial approval.
-- Several directory URLs returned soft errors or unrelated redirects; these must not be approved merely because the scrape returned text. Additional authority/visitor sources were collected where available.
-- Richmond Park and Rutland Water: six exact-source reviewed stop identities, compact excerpts, photos/airport routes, combined summaries and plans saved.
-- Two paid combined requests total; no blind replay. Free-text permit values and uppercase seasons were corrected editorially without more AI calls. Unsupported access, transfer-time and vehicle claims removed from these drafts.
-- Remaining 43 packets need reviewed visitor/access excerpts and stop identities before paid generation. Small single-sight locations may not support the existing six-stop/three-day template; do not manufacture nearby stops.
-- Island catalog records use the existing non-road access class in drafts. No ferry-aware itinerary, airport route or vehicle recommendation has been verified for these records.
-- All new records remain drafts. Existing 14 UK published national parks are unchanged.
-- 34 Python tests pass; preview build log reports OK.
-- Final visual/photo/claim audit and publication have not been performed.
+- All 45 existing England packets screened against official place identity, named visitor stops and access evidence. Detailed holds are recorded in england-review-2026-11-15.json; this is evidence review, not full sentence/photo certification.
+- 11 England wave-2 destinations plus New Forest have combined summaries, photos/routes, three-day plans and reservation notes saved as drafts, verified by guarded database readback. 14 previously published national parks unchanged.
+- Prepared: Richmond Park, Rutland Water, Seven Sisters, St Ives Bay, RSPB Minsmere, Norfolk Coast, Shropshire Hills, Wye Valley, Cannock Chase, Cheddar Gorge, Lulworth Cove, New Forest.
+- New Forest’s six individual official walk pages are now retained. Conflicting Blackwater/Blashford distance summaries omitted; unsupported transport/signal/fuel claims removed. Existing paid output reused.
+- 34 wave-2 destinations remain incomplete. Causes: 404/soft-error/wrong-place sources; insufficient individually described stops/access; single-site itineraries incompatible with the three-day template; tidal/island routing and winter closures. No automatic approval or paid replay.
+- Ingleton output retained but held: official trail is a one-way single circuit, not three independent day entrances. A compact day-walk presentation is needed before saving it.
+- Ten new paid combined attempts in this turn; five initially failed output checks, retained and corrected without paid replay (Ingleton remains held). Prior New Forest/Richmond/Rutland outputs reused. No measured comparative savings percentage.
+- New pages remain unpublished pending the requested final visual/photo/claim audit. No German translations or new search guides generated.
+- Application tests: 288 passed; pipeline tests: 37 passed.

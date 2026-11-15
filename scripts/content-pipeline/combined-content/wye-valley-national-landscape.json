@@ -1,0 +1,151 @@
+{
+  "fingerprint": "b8cd0a170d518ef4c6f956cb3410b268eb18109234b8aa8785096ed86801e5c8",
+  "status": "validated",
+  "prompt_chars": 18181,
+  "bundle": {
+    "summary": {
+      "region": "England and Wales Border",
+      "tagline": "Discover limestone gorges and romantic ruins in Britain's finest lowland landscape.",
+      "best_season": "Check official seasonal access before choosing dates",
+      "trip_duration_days": 3,
+      "recommended_duration": "Suggested 3-day regional visit",
+      "permit_level": "none",
+      "seo_title": "Wye Valley National Landscape Itinerary",
+      "best_seasons": [],
+      "scenic_score": 5,
+      "camping_score": 0,
+      "avg_daily_budget": null,
+      "aliases": [
+        "Wye Valley Area of Outstanding Natural Beauty",
+        "Dyffryn Gwy"
+      ],
+      "gateway_cities": [],
+      "similar_slugs": [],
+      "trip_tags": [
+        "river landscapes",
+        "historical ruins",
+        "woodlands"
+      ],
+      "activities": [
+        "Tintern Abbey",
+        "Symonds Yat Rock",
+        "Goodrich Castle"
+      ]
+    },
+    "travel": {
+      "slug": "wye-valley-national-landscape",
+      "headline": "Check Castle and Abbey Access Conditions",
+      "reservation": "Check admission and opening arrangements with each historic-site operator before visiting Tintern Abbey or Goodrich Castle; the landscape overview establishes their identity, not current availability. For Symonds Yat Rock, follow Forestry England’s current parking and visitor guidance.",
+      "source_url": "https://www.forestryengland.uk/symonds-yat-rock",
+      "plan": {
+        "version": 1,
+        "days": [
+          {
+            "title": "Castles and Gorges",
+            "start": "Suggested: 9 AM at Goodrich Castle; check current access first",
+            "stops": [
+              {
+                "name": "Goodrich Castle",
+                "detail": "View this fortification perched high above the Wye, marking the historical border between England and Wales.",
+                "stop_id": "goodrich-castle"
+              },
+              {
+                "name": "Symonds Yat Rock",
+                "detail": "Witness the most iconic view of the Wye Valley's limestone gorges and look for river boat trips nearby.",
+                "stop_id": "symonds-yat-rock"
+              }
+            ],
+            "driving": "Suggested pairing only; journey times between stops are not verified. Check each walking start and access before departure.",
+            "note": "This is suggested pacing, not an opening schedule. Check current site access and conditions before setting out."
+          },
+          {
+            "title": "Romantic Ruins and Picturesque Walks",
+            "start": "Suggested: 9 AM at Tintern Abbey; check current access first",
+            "stops": [
+              {
+                "name": "Tintern Abbey",
+                "detail": "Explore the romantic ruins surrounded by hills that inspired poets like Wordsworth and artists like Turner.",
+                "stop_id": "tintern-abbey"
+              },
+              {
+                "name": "Piercefield",
+                "detail": "Walk through this 18th-century picturesque landscape that was a historic highlight of the fashionable Wye Tour.",
+                "stop_id": "piercefield"
+              }
+            ],
+            "driving": "Suggested pairing only; journey times between stops are not verified. Check each walking start and access before departure.",
+            "note": "This is suggested pacing, not an opening schedule. Check current site access and conditions before setting out."
+          },
+          {
+            "title": "Hilltop Views and Nightjars",
+            "start": "Suggested: 9 AM at Kymin; check current access first",
+            "stops": [
+              {
+                "name": "Kymin",
+                "detail": "Visit the Round House and Naval Temple overlooking Monmouth and the Brecon Beacons.",
+                "stop_id": "kymin"
+              },
+              {
+                "name": "Beacon Hill",
+                "detail": "Head out at dusk on a summer evening to hear the calls of nightjars near Trellech.",
+                "stop_id": "beacon-hill"
+              }
+            ],
+            "driving": "Suggested pairing only; journey times between stops are not verified. Check each walking start and access before departure.",
+            "note": "This is suggested pacing, not an opening schedule. Check current site access and conditions before setting out."
+          }
+        ],
+        "intel": [
+          {
+            "kind": "parking",
+            "title": "ANPR and Barrier Systems",
+            "text": "Symonds Yat Rock uses barrierless ANPR for parking payments via card or RingGo; the Kymin has a small National Trust car park with no toilets."
+          },
+          {
+            "kind": "signal",
+            "title": "Connectivity Status",
+            "text": "The reviewed official sources do not establish mobile coverage at these stops. Save directions before departure rather than assuming reception."
+          },
+          {
+            "kind": "fuel",
+            "title": "Supply Stations",
+            "text": "The reviewed official sources do not establish fuel-station locations or operating hours. Check your refuelling options independently before departure."
+          },
+          {
+            "kind": "timing",
+            "title": "Avoiding Crowds",
+            "text": "Symonds Yat Rock is typically less busy on weekdays outside school holidays, specifically before 10 AM or after 4 PM."
+          },
+          {
+            "kind": "access",
+            "title": "Narrow Lane Restrictions",
+            "text": "The road to the Kymin is steep with hairpin bends and is not suitable for coaches; Symonds Yat car park is locked nightly."
+          }
+        ],
+        "arrival": "Choose the valley stops that fit your arrival and check the relevant operators before departure. The reviewed sources do not establish rental pickup or accommodation availability.",
+        "vehicle": "The reviewed sources do not establish rental or motorhome suitability on every approach road. Check your provider, the actual roads and each site’s vehicle restrictions before departure.",
+        "goldenHour": "For a suggested late-day visit at Goodrich Castle, check daylight, closing times and current access first. A sunset view or after-hours admission is not established by these sources.",
+        "sources": [
+          {
+            "label": "Official visitor information",
+            "url": "https://national-landscapes.org.uk/national-landscapes/wye-valley"
+          },
+          {
+            "label": "Official visitor information",
+            "url": "https://www.wyevalley-nl.org.uk/"
+          },
+          {
+            "label": "Official visitor information",
+            "url": "https://www.forestryengland.uk/symonds-yat-rock"
+          },
+          {
+            "label": "Official visitor information",
+            "url": "https://www.nationaltrust.org.uk/visit/wales/the-kymin"
+          }
+        ]
+      }
+    }
+  },
+  "editorial_reviewed": true,
+  "review_reason": "Retained output reviewed; unsupported routing, signal, fuel, availability and vehicle claims corrected without paid replay."
+}

@@ -185,6 +185,12 @@
 - [x] Optimize combined generation, compact evidence, source-bound stop IDs and resumable single-command batches; 288 JS + 33 Python tests pass. Live New Forest output retained, not published because operational claims lack evidence.
 - [ ] Continue England wave 2: two reviewed destination drafts prepared; 43 still need approved visitor evidence and stop identities; no new pages published.
 - [x] Pilot wave: 14 of 15 national parks published
-- [ ] New Forest held: "Tall Trees Trail" not named in official sources
+- [x] New Forest: individual official walk pages now establish six stops; corrected retained output saved as draft, awaiting final audit.
 - [ ] UK price benchmarks (currently "Check live price")
 - [ ] Waves 2–5 (England, Scotland, Wales, Northern Ireland) after pilot approval
+
+## November 15 England reviewed batch
+- [x] Screen all 45 England source packets and New Forest; retain actual per-place evidence decisions, never auto-approve source fetch success.
+- [ ] Complete 34 England holds: individual official visitor/access evidence, tidal/island arrival checks and compact single-day presentation are missing; see dated review report.
+- [x] Repair apply/runner outcome checks and guarded draft readback; single cached batch saved 12 reviewed drafts including New Forest. New pages remain drafts pending final audit.
+- [x] Run regressions and guarded readback: 288 application / 37 Python tests; 11 England + New Forest saved, 34 England held with per-place reasons.

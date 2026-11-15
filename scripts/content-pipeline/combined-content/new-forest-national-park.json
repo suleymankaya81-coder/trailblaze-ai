@@ -1,31 +1,26 @@
 {
   "fingerprint": "a50e0be49000132db788a266072ded47e1a12e62dbffc689ede85f0398290d9b",
-  "status": "held",
+  "status": "validated",
   "prompt_chars": 35394,
   "bundle": {
     "summary": {
       "region": "Hampshire, England",
       "tagline": "Wander through ancient woodlands and open heathlands where free-roaming livestock shape the landscape.",
-      "best_season": "April – June, September – October",
-      "best_seasons": [
-        "spring",
-        "summer",
-        "fall"
-      ],
+      "best_season": "Choose dates after checking official seasonal guidance",
+      "best_seasons": [],
       "scenic_score": 8,
       "camping_score": 7,
       "avg_daily_budget": null,
-      "trip_duration_days": "3 days",
-      "recommended_duration": "3 days",
+      "trip_duration_days": 3,
+      "recommended_duration": "Suggested 3-day visit",
       "permit_level": "none",
       "aliases": [
         "new forest",
         "the new forest"
       ],
       "gateway_cities": [
-        "Southampton",
-        "Bournemouth",
-        "Lyndhurst"
+        "Brockenhurst",
+        "Ashurst"
       ],
       "similar_slugs": [],
       "trip_tags": [
@@ -43,7 +38,7 @@
     "travel": {
       "slug": "new-forest-national-park",
       "headline": "Follow the New Forest Code for a Responsible Visit",
-      "reservation": "While there is no general park entry permit, you must follow the New Forest Code to protect rare ground-nesting birds and free-roaming livestock. Camping is only permitted at designated sites and no fires or BBQs are allowed anywhere in the forest; check with local landowners for specific permissions regarding activities like metal detecting.",
+      "reservation": "Check the official New Forest Code before visiting: keep your distance from free-roaming animals, keep to the tracks and avoid fires or BBQs. For individual walks, check the linked authority pages for current access details; accommodation bookings and live opening hours are not established by these excerpts.",
       "source_url": "https://www.newforestnpa.gov.uk/visiting/help-care-for-the-forest/",
       "plan": {
         "version": 1,
@@ -54,17 +49,17 @@
             "stops": [
               {
                 "name": "Blackwater Arboretum",
-                "detail": "Explore a unique collection of trees from around the world on a short, accessible trail.",
+                "detail": "Follow the short circular gravelled trail among conifers and tactile seed sculptures. Check the authority page for current access details.",
                 "stop_id": "nf-1"
               },
               {
                 "name": "Brockenhurst Village",
-                "detail": "Visit this charming village to experience the local pace and see free-roaming animals grazing near the roadside.",
+                "detail": "The official walk crosses grazed lawns and riverside woodlands and returns through the village to the railway station.",
                 "stop_id": "nf-4"
               }
             ],
-            "driving": "Allow 1 hour for local transfers; livestock may cause delays.",
-            "note": "Keep your distance from ponies and donkeys at all times."
+            "driving": "Suggested pairing only; check the journey between each walking start before departure. Transfer times have not been verified.",
+            "note": "Follow the New Forest Code: keep your distance from animals and stay on the tracks."
           },
           {
             "title": "Lakeside Wildlife and Forest Vistas",
@@ -72,76 +67,101 @@
             "stops": [
               {
                 "name": "Blashford Lakes",
-                "detail": "A peaceful area featuring accessible trails ideal for spotting local birds and nature.",
+                "detail": "Explore bird hides connected by gravel paths. The nature reserve permits assistance dogs only; paths can be muddy in winter.",
                 "stop_id": "nf-2"
               },
               {
                 "name": "Burley Village",
-                "detail": "Walk through this famous forest village known for its local character and easy 4-mile circular trail.",
+                "detail": "The village-centre circular walk climbs gently along Castle Hill Lane and passes a hill fort before returning through the village.",
                 "stop_id": "nf-5"
               }
             ],
-            "driving": "Allow 1.5 hours; conditions vary by weather and animal activity.",
-            "note": "Keep to the main tracks to avoid disturbing rare ground-nesting birds."
+            "driving": "Suggested pairing only; check the journey between each walking start before departure. Transfer times have not been verified.",
+            "note": "Follow the New Forest Code: keep your distance from animals and stay on the tracks."
           },
           {
-            "title": "Village Strolls and Coastal Edge",
+            "title": "Ashurst Woodland and Boldre Countryside",
             "start": "Suggested: 9:30 AM from Ashurst",
             "stops": [
               {
                 "name": "Ashurst Stroll",
-                "detail": "An easy 2.5-mile walk that provides a gentle introduction to the forest landscape.",
+                "detail": "Start from Ashurst railway station for the official walk through open lawns, Churchplace Inclosure and Ashurst Wood. Woodland tracks and gates can be muddy.",
                 "stop_id": "nf-6"
               },
               {
                 "name": "Boldre Village",
-                "detail": "Take a 2-hour walk through the countryside near this traditional forest settlement.",
+                "detail": "Walk through country lanes, farmland and Roydon Woods Nature Reserve, returning alongside the Lymington River. Keep dogs on a lead.",
                 "stop_id": "nf-3"
               }
             ],
-            "driving": "Allow 1 hour; use the New Forest Tour open-top bus for sustainable travel.",
-            "note": "Stick to waymarked tracks especially during breeding season from February to August."
+            "driving": "Suggested pairing only; check the journey between each walking start before departure. Transfer times have not been verified.",
+            "note": "Follow the New Forest Code: keep your distance from animals and stay on the tracks."
           }
         ],
         "intel": [
           {
             "kind": "access",
-            "title": "Track Access",
-            "text": "Keep to main tracks to protect rare ground-nesting birds, particularly between February and August. Walking off-track is discouraged in sensitive habitats."
+            "title": "Walk-specific access",
+            "text": "Blashford Lakes permits assistance dogs only. Brockenhurst and Ashurst walks include road crossings and woodland tracks that can become muddy."
           },
           {
             "kind": "parking",
-            "title": "Designated Parking",
-            "text": "The New Forest Code requires parking only in official car parks to protect the verges. Avoid parking on grass or blocking gateways."
+            "title": "Named walking starts",
+            "text": "Blackwater and Blashford Lakes have accessible parking bays according to their official walk pages. Current charges and capacity are not established; check before setting out."
           },
           {
             "kind": "timing",
-            "title": "Pony Safety",
-            "text": "Drive with care as animals have right of way on all forest roads. Night driving requires extra caution due to low visibility of free-roaming livestock."
+            "title": "Walking pace",
+            "text": "Suggested start times are itinerary choices, not opening hours. The official Brockenhurst and Burley walk pages give a walking duration of 2–3 hours; check current access before departure."
           },
           {
             "kind": "signal",
-            "title": "Connectivity",
-            "text": "Signal varies significantly across the open heath and deep woods. Download the New Forest National Park Walks app before entering remote areas."
+            "title": "Connectivity not verified",
+            "text": "The reviewed authority excerpts do not establish mobile coverage at these walks. Save the official walk directions before departure rather than assuming reception."
           },
           {
             "kind": "fuel",
-            "title": "Local Supplies",
-            "text": "Support the local economy by looking for the New Forest Marque emblem in village stores. Most major services are found in gateway towns like Ringwood or Southampton."
+            "title": "Fuel provision not verified",
+            "text": "The reviewed sources do not establish fuel-station locations or opening hours. Check your refuelling options independently before starting the journey."
           }
         ],
-        "arrival": "Arrive via train to Brockenhurst or Ashurst for sustainable access. Pick up local supplies in village centers and look for the New Forest Marque accreditation on regional products.",
-        "vehicle": "Cars are suitable but drivers must observe the special forest speed limits to protect animals; the open-top New Forest Tour bus is a sustainable seasonal alternative.",
-        "goldenHour": "Deer Watch Trail during late afternoon for the best chance to spot wildlife from a respectful distance.",
+        "arrival": "The official Brockenhurst walk starts at its railway station, and Ashurst Stroll also has a railway-station start. Verify current timetables and choose the walk start that suits your arrival.",
+        "vehicle": "Drivers should stay alert and slow down around free-roaming livestock. The reviewed sources do not establish rental or motorhome restrictions; check your provider and the actual roads before departure.",
+        "goldenHour": "For a suggested late-day walk at Blackwater Arboretum, check daylight and current access first. The sources describe the trees and trail but do not establish a specific sunset viewpoint or opening time.",
         "sources": [
           {
-            "label": "New Forest National Park Authority",
+            "label": "New Forest National Park Authority — help-care-for-the-forest",
             "url": "https://www.newforestnpa.gov.uk/visiting/help-care-for-the-forest/"
+          },
+          {
+            "label": "New Forest National Park Authority — blackwater-arboretum",
+            "url": "https://www.newforestnpa.gov.uk/walk/blackwater-arboretum/"
+          },
+          {
+            "label": "New Forest National Park Authority — brockenhurst-village",
+            "url": "https://www.newforestnpa.gov.uk/walk/brockenhurst-village/"
+          },
+          {
+            "label": "New Forest National Park Authority — blashford-lakes",
+            "url": "https://www.newforestnpa.gov.uk/walk/blashford-lakes/"
+          },
+          {
+            "label": "New Forest National Park Authority — burley-village",
+            "url": "https://www.newforestnpa.gov.uk/walk/burley-village/"
+          },
+          {
+            "label": "New Forest National Park Authority — ashurst-stroll",
+            "url": "https://www.newforestnpa.gov.uk/walk/ashurst-stroll/"
+          },
+          {
+            "label": "New Forest National Park Authority — boldre-village",
+            "url": "https://www.newforestnpa.gov.uk/walk/boldre-village/"
           }
         ]
       }
     }
   },
   "error": "KeyError",
-  "review_reason": "Output contains operational statements not established by excerpts; withheld pending editorial evidence review."
+  "review_reason": "Existing output corrected against individually fetched official walks; unsupported timing, camping, access, signal and fuel claims removed. No paid replay.",
+  "editorial_reviewed": true
 }

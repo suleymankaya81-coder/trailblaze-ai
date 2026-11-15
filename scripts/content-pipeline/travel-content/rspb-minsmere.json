@@ -1,0 +1,101 @@
+{
+  "slug": "rspb-minsmere",
+  "headline": "Check Local Path Closures at the Visitor Hub",
+  "reservation": "Access to trails requires checking in at the Visitor Hub for guidance on current path closures due to past wildfire activity. While no advance entry permit is noted, booking for mobility scooters is essential and must be done via the Visitor Centre. Overnight parking and camping are strictly prohibited.",
+  "source_url": "https://www.rspb.org.uk/days-out/reserves/minsmere",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Wetland and Reedbed Exploration",
+        "start": "Suggested: 9 AM at Bittern Hide; check current access first",
+        "stops": [
+          {
+            "name": "Bittern Hide",
+            "detail": "The RSPB names Bittern Hide in its reserve reports. Use it as a suggested observation stop only after checking current trail access at the Visitor Hub; wildlife sightings are not guaranteed.",
+            "stop_id": "bittern-hide"
+          },
+          {
+            "name": "Island Mere",
+            "detail": "The RSPB names Island Mere in its reserve reports. Use it as a suggested observation stop only after checking current trail access at the Visitor Hub; wildlife sightings are not guaranteed.",
+            "stop_id": "island-mere"
+          }
+        ],
+        "driving": "Suggested pairing only; journey times between stops are not verified. Check each walking start and access before departure.",
+        "note": "This is suggested pacing, not an opening schedule. Check current site access and conditions before setting out."
+      },
+      {
+        "title": "Waders of the Scrape",
+        "start": "Suggested: 9 AM at Scrape; check current access first",
+        "stops": [
+          {
+            "name": "Scrape",
+            "detail": "The RSPB names Scrape in its reserve reports. Use it as a suggested observation stop only after checking current trail access at the Visitor Hub; wildlife sightings are not guaranteed.",
+            "stop_id": "scrape"
+          },
+          {
+            "name": "North Wall",
+            "detail": "The RSPB names North Wall in its reserve reports. Use it as a suggested observation stop only after checking current trail access at the Visitor Hub; wildlife sightings are not guaranteed.",
+            "stop_id": "north-wall"
+          }
+        ],
+        "driving": "Suggested pairing only; journey times between stops are not verified. Check each walking start and access before departure.",
+        "note": "This is suggested pacing, not an opening schedule. Check current site access and conditions before setting out."
+      },
+      {
+        "title": "Peripheral Hides and Woodland",
+        "start": "Suggested: 9 AM at South Hide; check current access first",
+        "stops": [
+          {
+            "name": "South Hide",
+            "detail": "The RSPB names South Hide in its reserve reports. Use it as a suggested observation stop only after checking current trail access at the Visitor Hub; wildlife sightings are not guaranteed.",
+            "stop_id": "south-hide"
+          },
+          {
+            "name": "West Hide",
+            "detail": "The RSPB names West Hide in its reserve reports. Use it as a suggested observation stop only after checking current trail access at the Visitor Hub; wildlife sightings are not guaranteed.",
+            "stop_id": "west-hide"
+          }
+        ],
+        "driving": "Suggested pairing only; journey times between stops are not verified. Check each walking start and access before departure.",
+        "note": "This is suggested pacing, not an opening schedule. Check current site access and conditions before setting out."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Main Car Park",
+        "text": "Dogs are permitted in the car park on short leads. There are no height restrictions, but overnight parking is prohibited."
+      },
+      {
+        "kind": "signal",
+        "title": "Reserve Connectivity",
+        "text": "The reviewed official sources do not establish mobile coverage at these stops. Save directions before departure rather than assuming reception."
+      },
+      {
+        "kind": "fuel",
+        "title": "Local Energy",
+        "text": "The reviewed official sources do not establish fuel-station locations or operating hours. Check your refuelling options independently before departure."
+      },
+      {
+        "kind": "timing",
+        "title": "Check-in Requirements",
+        "text": "The RSPB asks visitors to check in at the Visitor Hub for current access guidance. If visiting with a dog, ask for the dog-walking map; nature trails admit assistance dogs only."
+      },
+      {
+        "kind": "access",
+        "title": "Path Restrictions",
+        "text": "Cycling is prohibited on all nature trails for the safety of wildlife. Mobility scooters must be booked in advance by calling the Visitor Centre."
+      }
+    ],
+    "arrival": "Start at the Visitor Hub and ask which paths and hides are currently accessible following wildfire impacts. Collect an access map and verify any mobility-scooter reservation before entering the trails.",
+    "vehicle": "The reviewed sources do not establish rental or motorhome suitability on every approach road. Check your provider, the actual roads and each site’s vehicle restrictions before departure.",
+    "goldenHour": "For a suggested late-day visit at Bittern Hide, check daylight, closing times and current access first. A sunset view or after-hours admission is not established by these sources.",
+    "sources": [
+      {
+        "label": "Official visitor information",
+        "url": "https://www.rspb.org.uk/days-out/reserves/minsmere"
+      }
+    ]
+  }
+}

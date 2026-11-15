@@ -124,7 +124,10 @@ def apply(slug):
     }
     sets["permit_level"] = ai["permit_level"]
     sets.update(overrides(slug))
-    requests.patch(f"{REST}/destinations?slug=eq.{slug}", json=sets, headers=H).raise_for_status()
+    response = requests.patch(f"{REST}/destinations?slug=eq.{slug}", json=sets, headers=H)
+    if not response.ok:
+        detail = response.json()
+        raise ValueError(f"Destination update rejected: {detail.get('code')}: {detail.get('message')}")
     requests.delete(f"{REST}/offers?destination_id=eq.{dest_id}", headers=H).raise_for_status()
     requests.post(f"{REST}/offers", json=offers(d, dest_id, country), headers=H).raise_for_status()
 
@@ -139,8 +142,11 @@ def apply(slug):
 
 
 if __name__ == "__main__":
+    failed = False
     for s in sys.argv[1:]:
         try:
             print(s, apply(s), flush=True)
         except Exception as e:  # noqa
             print(s, "ERR", e, flush=True)
+            failed = True
+    sys.exit(1 if failed else 0)

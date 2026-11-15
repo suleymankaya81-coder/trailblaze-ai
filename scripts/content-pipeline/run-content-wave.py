@@ -6,9 +6,20 @@ import argparse
 import json
 import subprocess
 import sys
+import requests
 from pathlib import Path
 from compact_evidence import compact_packet
 from source_evidence import load_packet
+from save_reviewed_bundle import save_reviewed_bundle
+
+def stage_failed(response, script):
+    """A zero exit alone is not proof that a writer saved its output."""
+    output = response.stdout + '\n' + response.stderr
+    if response.returncode or any(word in output for word in ('HELD', 'ERR')):
+        return True
+    if script == 'apply-wave.py':
+        return not any(line.endswith(' applied') for line in response.stdout.splitlines())
+    return False
 
 def main():
     p = argparse.ArgumentParser()
@@ -28,13 +39,17 @@ def main():
         except ValueError as error:
             results.append({'slug': slug, 'status': 'held_before_ai', 'reason': str(error)})
             continue
-        for script, args in [('prepare-wave.py', ['--combined', slug]), ('apply-wave.py', [slug]),
-                             ('generate-travel-content.py', ['--slugs', slug, '--limit', '1', '--country', row['country']])]:
+        for script, args in [('prepare-wave.py', ['--combined', slug]), ('apply-wave.py', [slug])]:
             response = subprocess.run([sys.executable, str(root / script), *args], text=True, capture_output=True)
-            if response.returncode or any(word in response.stdout for word in ('HELD', 'ERR')):
-                results.append({'slug': slug, 'status': 'held', 'stage': script, 'reason': response.stdout[-1500:]})
+            if stage_failed(response, script):
+                results.append({'slug': slug, 'status': 'held', 'stage': script, 'reason': (response.stdout + response.stderr)[-1500:]})
                 break
         else:
+            try:
+                save_reviewed_bundle(slug)
+            except (ValueError, requests.RequestException) as error:
+                results.append({'slug': slug, 'status': 'held', 'stage': 'save_reviewed_bundle', 'reason': str(error)})
+                continue
             if a.publish:
                 response = subprocess.run([sys.executable, str(root / 'publish-wave.py'), slug], text=True, capture_output=True)
                 status = 'published' if response.returncode == 0 and 'published' in response.stdout else 'held'
@@ -44,6 +59,8 @@ def main():
         # Gateway failures have unknown/permanent outcomes: stop the whole batch, no blind retries.
         if results[-1].get('stage') == 'prepare-wave.py' and 'generation failed' in results[-1].get('reason', '').lower():
             break
+        report = root / 'wave-run-report.json'
+        report.write_text(json.dumps(results, ensure_ascii=False, indent=2))
     report = root / 'wave-run-report.json'
     report.write_text(json.dumps(results, ensure_ascii=False, indent=2))
     print(json.dumps({'places': len(results), 'statuses': {s: sum(r['status'] == s for r in results) for s in {r['status'] for r in results}}}))

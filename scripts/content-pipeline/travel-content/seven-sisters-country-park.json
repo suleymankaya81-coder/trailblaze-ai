@@ -1,0 +1,113 @@
+{
+  "slug": "seven-sisters-country-park",
+  "headline": "Check Tide Times and Car Park Availability Early",
+  "reservation": "Entry to the park is generally open, but parking operates under a pay-and-display system. The two on-site lots fill quickly during peak periods, so visitors should plan for alternative parking or arrive via the A259 bus service. Always verify current parking fees and height restrictions at the official park website.",
+  "source_url": "https://www.sevensisters.org.uk/plan-your-visit/getting-here/",
+  "plan": {
+    "version": 1,
+    "days": [
+      {
+        "title": "Chalk Cliffs and Coastal Habitats",
+        "start": "Suggested: 9 AM at Seven Sisters Country Park Visitor Centre; check current access first",
+        "stops": [
+          {
+            "name": "Seven Sisters Country Park Visitor Centre",
+            "detail": "Begin at the visitor hub to access the South Downs Way and cross the A259 to reach the hilly grassland trails.",
+            "stop_id": "seven-sisters-country-park-visitor-centre"
+          },
+          {
+            "name": "Cuckmere Haven",
+            "detail": "Explore the river-mouth landscape described by the park authority. Observe cliff and river safety guidance; do not attempt a river crossing as a shortcut.",
+            "stop_id": "cuckmere-haven"
+          }
+        ],
+        "driving": "Suggested pairing only; journey times between stops are not verified. Check each walking start and access before departure.",
+        "note": "This is suggested pacing, not an opening schedule. Check current site access and conditions before setting out."
+      },
+      {
+        "title": "Forest Trails and Village Heritage",
+        "start": "Suggested: 9 AM at Friston Forest; check current access first",
+        "stops": [
+          {
+            "name": "Friston Forest",
+            "detail": "Hike the South Downs Way through shaded woodland and descend the stone steps toward the village of Westdean.",
+            "stop_id": "friston-forest"
+          },
+          {
+            "name": "Westdean pond",
+            "detail": "Pass this local landmark while following signage toward the forest path junctions leading to Litlington.",
+            "stop_id": "westdean-pond"
+          }
+        ],
+        "driving": "Suggested pairing only; journey times between stops are not verified. Check each walking start and access before departure.",
+        "note": "This is suggested pacing, not an opening schedule. Check current site access and conditions before setting out."
+      },
+      {
+        "title": "River Meanders and Hillside Figures",
+        "start": "Suggested: 9 AM at Litlington Church; check current access first",
+        "stops": [
+          {
+            "name": "Litlington Church",
+            "detail": "The authority’s walking circuit passes Litlington Church in the village. Check visitor access before entering; the route description does not establish opening hours.",
+            "stop_id": "litlington-church"
+          },
+          {
+            "name": "Litlington White Horse",
+            "detail": "Follow the riverbank footpath for over a mile to view the High and Over hill where the hillside horse is visible.",
+            "stop_id": "litlington-white-horse"
+          }
+        ],
+        "driving": "Suggested pairing only; journey times between stops are not verified. Check each walking start and access before departure.",
+        "note": "This is suggested pacing, not an opening schedule. Check current site access and conditions before setting out."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "On-site Lot Constraints",
+        "text": "The park features two pay and display car parks that fill quickly during peak season. Very limited alternative parking exists nearby, so public transport is recommended."
+      },
+      {
+        "kind": "signal",
+        "title": "Connectivity Status",
+        "text": "The reviewed official sources do not establish mobile coverage at these stops. Save directions before departure rather than assuming reception."
+      },
+      {
+        "kind": "fuel",
+        "title": "Local Refueling",
+        "text": "The reviewed official sources do not establish fuel-station locations or operating hours. Check your refuelling options independently before departure."
+      },
+      {
+        "kind": "timing",
+        "title": "Peak Season Access",
+        "text": "Suggested times are itinerary choices. Check car-park opening and any height barriers on the official getting-here page before departure."
+      },
+      {
+        "kind": "access",
+        "title": "River Crossing Hazards",
+        "text": "Do not attempt to cross the Cuckmere River at high tide due to dangerous currents. Stick to designated paths and kissing gates to navigate the livestock grazing areas."
+      }
+    ],
+    "arrival": "The official getting-here page describes the A259 approach at Exceat, two pay-and-display car parks and bus stops at the Visitor Centre. Check current services and parking access before departure.",
+    "vehicle": "The reviewed sources do not establish rental or motorhome suitability on every approach road. Check your provider, the actual roads and each site’s vehicle restrictions before departure.",
+    "goldenHour": "For a suggested late-day visit at Seven Sisters Country Park Visitor Centre, check daylight, closing times and current access first. A sunset view or after-hours admission is not established by these sources.",
+    "sources": [
+      {
+        "label": "Official visitor information",
+        "url": "https://www.sevensisters.org.uk/"
+      },
+      {
+        "label": "Official visitor information",
+        "url": "https://www.sevensisters.org.uk/plan-your-visit/cliff-safety/"
+      },
+      {
+        "label": "Official visitor information",
+        "url": "https://www.sevensisters.org.uk/plan-your-visit/getting-here/"
+      },
+      {
+        "label": "Official visitor information",
+        "url": "https://www.sevensisters.org.uk/things-to-do/walking/"
+      }
+    ]
+  }
+}
