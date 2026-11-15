@@ -172,4 +172,5 @@
 - [x] Wave 2: 81 places published
 - [ ] Held for licensed exact-place photos: Alice Lake, Dollar Lake, Murray Beach provincial parks and Tuktut Nogait National Park.
 - [x] Wave 3: Saskatchewan Landing completed; wrong Texas Tuktut Nogait imagery withheld; geography refreshed.
+- [ ] Claim-by-claim verification: Wave 1 (20) done; Waves 2–3 (124) pending.
 - [ ] German Canada versions and world-national-parks.net Canada 301s: not part of this audit; require translation and verified old URL mapping.

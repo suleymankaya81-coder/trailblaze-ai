@@ -1,6 +1,6 @@
 {
   "reviewed": "2026-11-15",
-  "scope": "Targeted sourced corrections and rejected photo assignments; not full claim-by-claim verification.",
+  "scope": "Sourced corrections; wave 1 (20 places) claim-by-claim verified 2026-11-15, other places targeted only.",
   "records": {
     "clear-lake": {
       "fields": {
@@ -399,7 +399,101 @@
         "gallery": [
           "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Rogers_Pass%2C_Glacier_National_Park%2C_Canada_%2854881287660%29.jpg/1280px-Rogers_Pass%2C_Glacier_National_Park%2C_Canada_%2854881287660%29.jpg"
         ],
-        "photo_credit": "Hero: Sesivany/Jiri Eischmann / CC BY-SA 3.0 via Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Glacier_np_canada.JPG · Gallery: Christoph Strässler from Oberdorf BL, Schweiz / CC BY-SA 4.0 via Wikimedia Commons"
+        "photo_credit": "Hero: Sesivany/Jiri Eischmann / CC BY-SA 3.0 via Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Glacier_np_canada.JPG · Gallery: Christoph Strässler from Oberdorf BL, Schweiz / CC BY-SA 4.0 via Wikimedia Commons",
+        "permit_headline": "Park Admission and Seasonal Backcountry Winter Permits",
+        "permit_note": "Park admission normally applies, with free youth admission and Canada Strong free-admission periods January 1–15 and June 19–September 7, 2026. For winter 2026/27, from November 15 until the end of avalanche-control season, Winter Permits are required for all backcountry access, including Winter Unrestricted Areas. Daily and annual permit holders must complete the required quiz; check daily area status and closures.",
+        "permit_source_url": "https://parks.canada.ca/pn-np/bc/glacier",
+        "travel_plan": {
+          "arrival": "Pick up rental at Kelowna (YLW) and stop in Revelstoke for mountain-grade groceries and fuel before the climb to the pass.",
+          "days": [
+            {
+              "driving": "Allow 1 to 2 hours for mountain transit; conditions vary",
+              "note": "Expect steep gradients and heavy transport traffic along the Trans-Canada Highway.",
+              "start": "Suggested: 9 AM from Revelstoke",
+              "stops": [
+                {
+                  "detail": "Walk through an accessible tract of old-growth inland temperate rainforest featuring ancient western hemlocks.",
+                  "name": "Hemlock Grove Boardwalk"
+                },
+                {
+                  "detail": "Use the temporary Summit Station for visitor information, park passes and permits. Rogers Pass Centre is undergoing rehabilitation; its exhibits and theatre are closed.",
+                  "name": "Summit Station at Rogers Pass"
+                }
+              ],
+              "title": "Ancient Cedars and Selkirk History"
+            },
+            {
+              "driving": "Minimal road travel between local trailheads; allow for parking transitions",
+              "note": "Trail availability depends heavily on the seasonal snowmelt, typically clear by mid-July.",
+              "start": "Suggested: 8:30 AM from Rogers Pass",
+              "stops": [
+                {
+                  "detail": "Hike the Great Glacier Trail for views of Mount Sir Donald and Vaux Glacier. The trail ends well short of Illecillewaet Glacier, which is hidden from the trail end by sloping bedrock.",
+                  "name": "Great Glacier Trail"
+                },
+                {
+                  "detail": "View the convergence of Asulkan Brook and the Illecillewaet River near the historic ruins of Glacier House.",
+                  "name": "Meeting of the Waters"
+                }
+              ],
+              "title": "Glacial Vistas and Alpine Trails"
+            },
+            {
+              "driving": "Allow 1 hour for local transfers and return toward Golden; conditions vary",
+              "note": "The weather at Rogers Pass can change rapidly; maintain a flexible pace.",
+              "start": "Suggested: 8 AM from Illecillewaet Campground",
+              "stops": [
+                {
+                  "detail": "Hike through u-shaped glacial valleys toward high-altitude waterfalls and moraines.",
+                  "name": "Asulkan Valley"
+                },
+                {
+                  "detail": "Examine the massive stone pillars that once supported railway trestles over the rugged terrain.",
+                  "name": "Loop Brook Trail"
+                }
+              ],
+              "title": "Mountain Summits and Pass Views"
+            }
+          ],
+          "goldenHour": "Sunset from the Rogers Pass Monument offers dramatic shadows across the Hermit Range, though timing fluctuates significantly by month.",
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Parking at the Illecillewaet area serves multiple major trails and tends to reach capacity during summer weekends. Secondary lots at Loop Brook provide alternative access for shorter historical walks.",
+              "title": "Illecillewaet Trailhead Hub"
+            },
+            {
+              "kind": "signal",
+              "text": "Do not rely on cellular reception in remote mountain terrain. Rogers Pass Centre is closed for rehabilitation; Summit Station is the temporary visitor-services hub, not a substitute for carrying an emergency communication device.",
+              "title": "Connectivity Gaps"
+            },
+            {
+              "kind": "fuel",
+              "text": "There are no refueling stations within the park boundaries. Travelers should top up tanks in Revelstoke or Golden before entering the Rogers Pass corridor.",
+              "title": "Gateway Provisions"
+            },
+            {
+              "kind": "timing",
+              "text": "Construction delays on the Trans-Canada Highway are common during the short summer maintenance window. Check DriveBC for real-time updates on bridge work or lane closures.",
+              "title": "Seasonal Road Maintenance"
+            },
+            {
+              "kind": "access",
+              "text": "The Winter Permit System operates November 15 through the end of avalanche-control season. For winter 2026/27, all backcountry access requires a Winter Permit, including Winter Unrestricted Areas. Daily and annual users must complete a quiz. Check the daily status of Winter Restricted Areas; a permit does not authorize entry into closed areas.",
+              "title": "Winter Permitting Areas"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T10:45:05.471198+00:00",
+          "sources": [
+            {
+              "label": "Parks Canada: Glacier National Park",
+              "url": "https://parks.canada.ca/pn-np/bc/glacier"
+            }
+          ],
+          "vehicle": "Standard road vehicles can use the Trans-Canada Highway; prepare for mountain weather, check DriveBC and follow applicable BC winter-tire or chain requirements. Ground clearance is not protection against steep grades or heavy rain.",
+          "version": 1
+        }
       },
       "sources": [
         "https://commons.wikimedia.org/wiki/File:Glacier_np_canada.JPG",
@@ -606,7 +700,7 @@
                   "name": "Maligne Canyon"
                 },
                 {
-                  "detail": "Visit the largest glacially fed lake in the Rockies, famous for the Spirit Island vista.",
+                  "detail": "Visit the largest natural lake in the Canadian Rockies, famous for the Spirit Island vista.",
                   "name": "Maligne Lake"
                 }
               ],
@@ -630,7 +724,7 @@
             },
             {
               "driving": "Allow 2 to 2.5 hours total driving between these disparate sites; conditions vary",
-              "note": "The road to Mount Edith Cavell has vehicle length restrictions and is seasonally closed until late June.",
+              "note": "Cavell Road and its trails are closed for the entire 2026 season; do not plan a Mount Edith Cavell visit. Check Parks Canada bulletins for current closures.",
               "start": "Suggested: 8:30 AM from Jasper Townsite",
               "stops": [
                 {
@@ -638,7 +732,7 @@
                   "name": "Mount Edith Cavell"
                 },
                 {
-                  "detail": "Soak in the hottest mineral springs in the Rockies located in the remote Fiddle Valley.",
+                  "detail": "Soak in the hottest mineral springs in the Rockies located in the remote Fiddle Valley. Miette Hot Springs is closed for the season and is scheduled to reopen in spring 2027.",
                   "name": "Miette Hot Springs"
                 }
               ],
@@ -649,7 +743,7 @@
           "intel": [
             {
               "kind": "parking",
-              "text": "The first and second bridge parking lots fill early; utilize the lower fifth bridge lot for a quieter approach to the canyon. At Mount Edith Cavell, parking is strictly limited to small vehicles.",
+              "text": "Cavell Road and Maligne Canyon are closed for the entire 2026 season, including Maligne Canyon trails from First Bridge to the Fifth Bridge junction. Check Parks Canada Important Bulletins before planning access.",
               "title": "Maligne Canyon Congestion"
             },
             {
@@ -664,12 +758,12 @@
             },
             {
               "kind": "timing",
-              "text": "The road to Mount Edith Cavell usually opens in mid-to-late June depending on snowpack. Check the Parks Canada 'Roads to Trails' report for exact seasonal status.",
+              "text": "Cavell Road and Maligne Canyon are closed for the entire 2026 season, including Maligne Canyon trails from First Bridge to the Fifth Bridge junction. Check Parks Canada Important Bulletins before planning access.",
               "title": "Cavell Road Openings"
             },
             {
               "kind": "access",
-              "text": "Seasonal speed limits and temporary area closures are frequently enforced to protect caribou and bear populations. Obey all posted signage near the Sunwapta Pass.",
+              "text": "Seasonal closures apply in the Tonquin and À la Pêche caribou ranges November 1–May 15. Obey wildlife speed-limit signs along Highway 93.",
               "title": "Wildlife Corridors"
             }
           ],
@@ -681,9 +775,12 @@
               "url": "https://parks.canada.ca/pn-np/ab/jasper"
             }
           ],
-          "vehicle": "A standard car is suitable for the Icefields Parkway, but an RV offers convenience for the long distances between Jasper and Banff sites.",
+          "vehicle": "A standard car is suitable for the Icefields Parkway, but an RV offers convenience for the long distances between Jasper and Banff sites. RVs and trailers are prohibited on Lake Annette and Lake Edith roads; Pyramid Road has a maximum vehicle length of 7.5 m.",
           "version": 1
-        }
+        },
+        "permit_headline": "Monitor Road Access and Seasonal Camping Reservations",
+        "permit_note": "Admission was free January 1–15 and June 19–September 7, 2026. Outside these periods, daily admission or a valid pass applies, with free admission for youth 17 and under. Camping, reservation, parking and third-party tour charges remain separate. Due to high demand and environmental management, campsite reservations open months in advance and are essential for overnight stays; backcountry permits must be secured through the official Parks Canada portal. Always check for current wildfire-related closures or road restrictions that may affect the Icefields Parkway.",
+        "permit_source_url": "https://parks.canada.ca/pn-np/ab/jasper"
       },
       "sources": [
         "https://commons.wikimedia.org/wiki/File:Meltwater_at_the_terminus_of_the_Athabasca_Glacier,_Jasper_National_Park,_Alberta,_Canada.jpg",
@@ -700,7 +797,101 @@
           "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Lake%2C_Mount_Revelstoke_National_Park_20240825_1.jpg/1280px-Lake%2C_Mount_Revelstoke_National_Park_20240825_1.jpg",
           "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/View_of_Lake_Revelstoke_from_Mount_Revelstoke_National_Park_20240825_1.jpg/1280px-View_of_Lake_Revelstoke_from_Mount_Revelstoke_National_Park_20240825_1.jpg"
         ],
-        "photo_credit": "Hero: DXR / CC BY-SA 4.0 via Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Summit_Fire_Lookout,_Mount_Revelstoke_National_Park_20240825_3.jpg · Gallery: DXR / CC BY-SA 4.0 via Wikimedia Commons; DXR / CC BY-SA 4.0 via Wikimedia Commons"
+        "photo_credit": "Hero: DXR / CC BY-SA 4.0 via Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Summit_Fire_Lookout,_Mount_Revelstoke_National_Park_20240825_3.jpg · Gallery: DXR / CC BY-SA 4.0 via Wikimedia Commons; DXR / CC BY-SA 4.0 via Wikimedia Commons",
+        "permit_headline": "Alpine Access via the Meadows in the Sky Parkway",
+        "permit_note": "Park admission normally applies, with free admission for youth 17 and under and Canada Strong periods January 1–15 and June 19–September 7, 2026. The Parkway has no published timed-entry reservation requirement; snow, gate hours and road conditions determine access. Authorized commercial shuttles have separate fares and booking arrangements. Check current gate and trail status.",
+        "permit_source_url": "https://parks.canada.ca/pn-np/bc/revelstoke",
+        "travel_plan": {
+          "arrival": "Pick up your rental in Kelowna and drive 2.5 hours east; Revelstoke serves as the primary supply hub for groceries and outdoor permits.",
+          "days": [
+            {
+              "driving": "Allow 30–40 minutes for highway stops; conditions vary with mountain weather.",
+              "note": "The lower boardwalks are generally accessible earlier in the season than the summit road.",
+              "start": "Suggested: 9:00 AM from Revelstoke Town",
+              "stops": [
+                {
+                  "detail": "Walk through an ancient grove of Western Red Cedars, some over half a millennium old, located just off the highway.",
+                  "name": "Giant Cedars Boardwalk"
+                },
+                {
+                  "detail": "Explore the wetlands along the Illecillewaet River, ideal for spotting migratory birds in early summer.",
+                  "name": "Skunk Cabbage Boardwalk"
+                }
+              ],
+              "title": "Rainforest to Alpine Ascent"
+            },
+            {
+              "driving": "Allow 1 hour to drive the winding 26km Parkway; conditions vary with weather.",
+              "note": "Vehicle length restrictions apply on the switchbacks; check official limits for trailers or large RVs.",
+              "start": "Suggested: 8:30 AM from the Parkway Entrance",
+              "stops": [
+                {
+                  "detail": "Park at the upper limit and take the seasonal shuttle or walk to the summit area to see subalpine wildflower displays.",
+                  "name": "Balsam Lake"
+                },
+                {
+                  "detail": "Visit the historic 1927 station for 360-degree views of the Selkirk and Monashee mountain ranges.",
+                  "name": "Fire Lookout"
+                }
+              ],
+              "title": "Meadows in the Sky"
+            },
+            {
+              "driving": "Allow approximately an hour for the winding Parkway ascent before reaching the summit-area Eva Lake trailhead, plus the return descent; Eva Lake itself requires 5–7 hours of hiking.",
+              "note": "Eva Lake is a full-day commitment; ensure you have sufficient daylight for the return journey.",
+              "start": "Suggested: 10:00 AM from Revelstoke",
+              "stops": [
+                {
+                  "detail": "Trek through the rolling subalpine terrain to reach a pristine glacial lake surrounded by talus slopes.",
+                  "name": "Eva Lake Trail"
+                },
+                {
+                  "detail": "View the site of world-record ski jumps near the base of the mountain and learn about the area's sporting history.",
+                  "name": "Nels Nelsen Historic Ski Jump"
+                }
+              ],
+              "title": "Monashee Vistas"
+            }
+          ],
+          "goldenHour": "The Monashee Lookout on the Parkway offers expansive westward views for sunset, depending on seasonal cloud cover.",
+          "intel": [
+            {
+              "kind": "access",
+              "text": "The Meadows in the Sky Parkway is paved but only fully opens to the summit when snow is cleared, typically from July to September. Lower sections may open earlier in the spring.",
+              "title": "Seasonal Parkway Gates"
+            },
+            {
+              "kind": "timing",
+              "text": "The famous subalpine bloom at the summit typically peaks in early to mid-August. Plan for mid-week visits to avoid the busiest periods on the narrow upper trails.",
+              "title": "Wildflower Peak"
+            },
+            {
+              "kind": "parking",
+              "text": "Balsam Lake has limited parking. Authorized commercial shuttles provide summit access; consult operators for pickup points, fares and reservations. Vehicles over 7.9 m and towed trailers/vehicles are not permitted on the Parkway; trailers may be left at Nels Nelsen Historic Area.",
+              "title": "Summit Turnaround"
+            },
+            {
+              "kind": "signal",
+              "text": "Signal is lost quickly once you begin the ascent on the Parkway. The town of Revelstoke is the last reliable point for digital communication.",
+              "title": "Canyon Shadow"
+            },
+            {
+              "kind": "fuel",
+              "text": "Ensure your tank is full in Revelstoke before starting the 26km climb, as the steep grade increases fuel consumption significantly. There are no services on the Parkway.",
+              "title": "Mountain Grades"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T10:46:03.995413+00:00",
+          "sources": [
+            {
+              "label": "Parks Canada Mount Revelstoke",
+              "url": "https://parks.canada.ca/pn-np/bc/revelstoke"
+            }
+          ],
+          "vehicle": "The Parkway is paved, narrow and has tight switchbacks. Vehicles longer than 7.9 m (26 ft), towed trailers and towed vehicles are not permitted. Towed units may be left at Nels Nelsen Historic Area, 0.5 km from the highway.",
+          "version": 1
+        }
       },
       "sources": [
         "https://commons.wikimedia.org/wiki/File:View_of_Lake_Revelstoke_from_Mount_Revelstoke_National_Park_20240825_1.jpg",
@@ -1087,7 +1278,7 @@
           "days": [
             {
               "driving": "Allow 1 hour for the drive to the shuttle hub, plus shuttle transit time; conditions vary.",
-              "note": "Shuttle reservations are essential and often sell out months in advance; check for last-minute releases.",
+              "note": "Parks Canada shuttle reservations opened April 15, 2026 at 8 a.m. MDT. Additional seats are released at 8 a.m. MDT two days before departure; reserve ahead and check availability.",
               "start": "Suggested: 7:30 AM from Banff Townsite",
               "stops": [
                 {
@@ -1138,7 +1329,7 @@
           "intel": [
             {
               "kind": "parking",
-              "text": "The town of Banff utilizes intercept lots and paid parking zones. Use the free shuttle from the train station lot to minimize congestion in the town center.",
+              "text": "Banff has downtown paid parking and free nine-hour parking at the Train Station lot. Walk approximately eight minutes from that lot to downtown; check current Roam routes and fares if using transit.",
               "title": "Banff Townsite Parking"
             },
             {
@@ -1153,7 +1344,7 @@
             },
             {
               "kind": "timing",
-              "text": "Moraine Lake Road typically opens in late May and closes after the first week of October. Winter visitors must use specialized transport for certain valley areas.",
+              "text": "Moraine Lake Road is closed to personal vehicles year-round. Authorized seasonal transport operates in the snow-free season; check the published 2026 shuttle dates and access conditions. Winter travel beyond the road closure involves avalanche terrain, not routine specialized visitor transport.",
               "title": "Seasonal Road Access"
             },
             {
@@ -1170,9 +1361,12 @@
               "url": "https://parks.canada.ca/pn-np/ab/banff"
             }
           ],
-          "vehicle": "Winter tires are required on the Icefields Parkway from November 1 to March 31 and on some other routes under posted conditions. Requirements differ by road; check Parks Canada advisories and your rental agreement.",
+          "vehicle": "On the Icefields Parkway, snow tires or tire chains are mandatory November 1–March 31 and whenever the road is covered with snow or ice. Check Parks Canada road guidance, conditions and the rental agreement.",
           "version": 1
-        }
+        },
+        "permit_headline": "Park Pass Requirements and Lake Access Shuttles",
+        "permit_note": "A park pass or applicable daily admission is normally required when visiting Banff; youth 17 and under enter free, and Canada Strong free-admission periods in 2026 were January 1–15 and June 19–September 7. Through-travellers who do not stop do not need admission. Lake Louise parking is limited and paid seasonally. Moraine Lake Road is closed to personal vehicles year-round, with specified authorized access including registered lodge guests. Reserve Parks Canada shuttles; other licensed transport and hiking/cycling options have their own conditions.",
+        "permit_source_url": "https://parks.canada.ca/pn-np/ab/banff"
       },
       "sources": [
         "https://parks.canada.ca/pn-np/ab/banff/visit/conduite-driving"
@@ -3377,7 +3571,7 @@
                   "name": "Cavendish Beach"
                 },
                 {
-                  "detail": "Explore the farm and landscapes that inspired L.M. Montgomery's classic novels, located just outside the park boundary.",
+                  "detail": "Explore Green Gables Heritage Place, located within Prince Edward Island National Park in Cavendish, and the landscapes that inspired L.M. Montgomery’s Anne of Green Gables.",
                   "name": "Green Gables Heritage Place"
                 }
               ],
@@ -3389,7 +3583,7 @@
               "start": "Suggested: 9:30 AM from North Rustico",
               "stops": [
                 {
-                  "detail": "Cross the parabolic dunes via a floating boardwalk to reach one of the most significant sand systems in North America.",
+                  "detail": "Follow the Greenwich Dunes Trail over Bowley Pond on a floating boardwalk and use the designated dune crossing to reach the beach; do not walk off-route on the dunes.",
                   "name": "Greenwich Dunes Trail"
                 },
                 {
@@ -3435,7 +3629,7 @@
             },
             {
               "kind": "timing",
-              "text": "Full services including washrooms and visitor centers typically operate from June through September. Limited access is available in the shoulder season.",
+              "text": "Most facilities operate from mid-May to early autumn; full services are available in July and August, with limited services in May–June and September–October. The Greenwich Interpretation Centre is listed June 8–September 7, and Cavendish and Stanhope campgrounds June 10–September 21. Confirm individual facility dates.",
               "title": "Seasonal Operations"
             },
             {
@@ -3454,7 +3648,10 @@
           ],
           "vehicle": "Standard passenger cars are ideal for the paved park roads; bicycles are highly recommended for the Gulf Shore Way.",
           "version": 1
-        }
+        },
+        "permit_headline": "Securing Summer Stays in Cavendish and Stanhope",
+        "permit_note": "PEI National Park admission was free June 19–September 7, 2026 under Canada Strong. Camping at Cavendish and Stanhope and reservation fees remained separate; eligible overnight stays received a 25% discount during that period. Check the official fees and reservation pages for chargeable dates and site availability rather than assuming gate fees apply all summer.",
+        "permit_source_url": "https://parks.canada.ca/pn-np/pe/pei-ipe"
       },
       "sources": [
         "https://www.tourismpei.com/what-to-do/beaches-parks/basin-head-provincial-park",
@@ -3974,6 +4171,1476 @@
       "sources": [
         "https://www.parks.canada.ca/pn-np/mb/riding/securite-safety/bulletins?wbdisable=true"
       ]
+    },
+    "algonquin-provincial-park": {
+      "fields": {
+        "permit_headline": "Advance Daily Vehicle Permits and Backcountry Booking",
+        "permit_note": "Daily vehicle permits are required for day use along the Highway 60 corridor and can be reserved up to five days in advance. Overnight stays for developed campgrounds or backcountry paddling sites require separate reservations through the Ontario Parks system. Systems may change seasonally, so verify current requirements on the official website before travel.",
+        "permit_source_url": "https://www.ontarioparks.ca/park/algonquin",
+        "travel_plan": {
+          "arrival": "Pick up your rental at Toronto Pearson and drive north via Highway 400. Stop in Huntsville for groceries and supplies before entering through the West Gate.",
+          "days": [
+            {
+              "driving": "Allow travel time from Huntsville to the Highway 60 corridor attractions, including Lookout Trail at km 39.7 and the Visitor Centre at km 43 east of West Gate. These are road-accessible corridor stops, not a drive into the roadless backcountry; allow extra time in fall traffic.",
+              "note": "Expect higher traffic volumes near the West Gate during peak autumn color weekends.",
+              "start": "Suggested: 8:30 AM from Huntsville",
+              "stops": [
+                {
+                  "detail": "Explore exhibits detailing the park's natural history and logging heritage before viewing the panorama from the observation deck.",
+                  "name": "Algonquin Visitor Centre"
+                },
+                {
+                  "detail": "Ascend this loop for an expansive view of several hundred square kilometers of the park’s rugged interior.",
+                  "name": "Lookout Trail"
+                }
+              ],
+              "title": "Historical Corridors and High Ridges"
+            },
+            {
+              "driving": "Short transits between trailheads along Highway 60; allow 30 minutes for parking transitions.",
+              "note": "Paddling conditions depend heavily on wind speeds and water levels; check local weather.",
+              "start": "Suggested: 9 AM from the Highway 60 Corridor",
+              "stops": [
+                {
+                  "detail": "A central hub for paddling history where visitors can launch for a day trip to explore the waters that inspired the Group of Seven.",
+                  "name": "Canoe Lake"
+                },
+                {
+                  "detail": "Walk through specialized habitats featuring black spruce trees and unique northern bog plants on an accessible path.",
+                  "name": "Spruce Bog Boardwalk"
+                }
+              ],
+              "title": "Canoe Routes and Forest Ecology"
+            },
+            {
+              "driving": "Allow 2 to 3 hours for travel between the East Gate and the Barron Canyon access road; conditions vary.",
+              "note": "The road to Barron Canyon is gravel and may be rough; check vehicle clearance suitability.",
+              "start": "Suggested: 9:30 AM from Whitney",
+              "stops": [
+                {
+                  "detail": "Walk the easy loop trail to see a recreated logging camp and a steam-powered amphibious tug.",
+                  "name": "Algonquin Logging Museum"
+                },
+                {
+                  "detail": "Visit the eastern edge of the park to see the 100-meter deep canyon carved by glacial meltwater.",
+                  "name": "Barron Canyon"
+                }
+              ],
+              "title": "Legacy Architecture and Logging History"
+            }
+          ],
+          "goldenHour": "Lookout Trail offers a western-facing perspective ideal for sunset, though lighting varies by season.",
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Formal lots are provided at all designated trailheads along Highway 60. During peak summer and autumn months, these lots often reach capacity, necessitating an early start.",
+              "title": "Corridor Trailheads"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular reception is generally available near the West and East gates but drops significantly in the park interior. Offline maps are recommended for navigating logging roads and trails.",
+              "title": "Interior Connectivity"
+            },
+            {
+              "kind": "fuel",
+              "text": "Reliable fuel stations are located in Huntsville and Whitney outside the park boundaries. There are limited refueling services within the park interior, primarily at major outfitters.",
+              "title": "Gateway Refueling"
+            },
+            {
+              "kind": "timing",
+              "text": "Late spring visitors should prepare for black fly and mosquito seasons, which peak in May and June. Late summer and early autumn offer significantly reduced insect activity.",
+              "title": "Seasonal Bug Activity"
+            },
+            {
+              "kind": "access",
+              "text": "Highway 60 remains open year-round, but secondary access roads to remote lakes are typically unplowed and closed in winter. Check the park bulletin for seasonal road status.",
+              "title": "Winter Road Closures"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T10:44:08.063517+00:00",
+          "sources": [
+            {
+              "label": "Ontario Parks",
+              "url": "https://www.ontarioparks.ca/park/algonquin"
+            }
+          ],
+          "vehicle": "Standard vehicles are suitable for Highway 60, but high-clearance vehicles are better for gravel access roads like those leading to Barron Canyon.",
+          "version": 1
+        }
+      }
+    },
+    "bruce-peninsula-national-park": {
+      "fields": {
+        "permit_headline": "Timed Entry for The Grotto and Halfway Log Dump",
+        "permit_note": "Reserve Grotto parking May 1–October 31 (4-hour slots) and Halfway Log Dump parking June 19–September 7, 2026. These are separate location-specific reservations. Plan to arrive with at least two hours remaining in your parking slot; arriving after its start does not automatically invalidate the reservation, but it does not extend your departure time. Parking and reservation charges remain separate from admission, including during June 19–September 7 free admission.",
+        "permit_source_url": "https://parks.canada.ca/pn-np/on/bruce",
+        "travel_plan": {
+          "arrival": "Drive north from Toronto Pearson along Highway 10 and 6. Stock up on supplies in Owen Sound or Wiarton before the final stretch to the tip of the peninsula.",
+          "days": [
+            {
+              "driving": "Allow 20 to 30 minutes to reach the Cyprus Lake gate from Tobermory; conditions vary.",
+              "note": "The hike to the Grotto involves uneven rocky terrain; allow ample time for the return trek within your parking window.",
+              "start": "Suggested: 8 AM from Tobermory",
+              "stops": [
+                {
+                  "detail": "Navigate the rugged limestone cliffs to see the famous sea cave and its turquoise waters.",
+                  "name": "The Grotto"
+                },
+                {
+                  "detail": "A popular spot for viewing the distinct white boulder beaches and clear depths of Georgian Bay.",
+                  "name": "Indian Head Cove"
+                }
+              ],
+              "title": "The Grotto and Georgian Bay Shoreline"
+            },
+            {
+              "driving": "Allow 45 minutes to 1 hour for travel on secondary roads; conditions vary.",
+              "note": "Halfway Log Dump requires a separate parking reservation from the Grotto area.",
+              "start": "Suggested: 9 AM from Miller Lake",
+              "stops": [
+                {
+                  "detail": "Follow the Halfway Log Dump access trail to Georgian Bay's rocky shoreline on the Niagara Escarpment; this popular day-use area requires its own parking reservation in the reservation season.",
+                  "name": "Halfway Log Dump"
+                },
+                {
+                  "detail": "Hike a portion of the long-distance Bruce Trail to overlook the sheer cliffs dropping into the bay.",
+                  "name": "Bruce Trail — Georgian Bay shoreline section"
+                }
+              ],
+              "title": "Cliffs and Cobblestone Beaches"
+            },
+            {
+              "driving": "Allow 15 to 20 minutes for travel between the harbor and Singing Sands; conditions vary.",
+              "note": "Water temperatures on the Lake Huron side are typically warmer than the deep waters of Georgian Bay.",
+              "start": "Suggested: 10 AM from Tobermory",
+              "stops": [
+                {
+                  "detail": "Visit the Parks Canada Visitor Centre exhibits and nearby trails, subject to current opening notices. The observation tower has been closed since June 2026 for safety/structural assessment and remains closed while project planning and work proceed.",
+                  "name": "Parks Canada Visitor Centre"
+                },
+                {
+                  "detail": "Visit the Lake Huron side of the park for a shallow, sandy beach and unique fen ecosystem.",
+                  "name": "Singing Sands Beach"
+                }
+              ],
+              "title": "Harborside Heritage and Visitor Orientation"
+            }
+          ],
+          "goldenHour": "Do not plan photography from the Visitor Centre observation tower while it is closed; check Parks Canada for reopening updates.",
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Grotto day-use parking accessed via Cyprus Lake Road uses reserved 4-hour slots May 1–October 31; this is not a four-hour limit on overnight Cyprus Lake campers. Plan to arrive with at least two hours left in your slot and leave by its end.",
+              "title": "Timed Slot Enforcement"
+            },
+            {
+              "kind": "signal",
+              "text": "Signal strength is inconsistent once you leave the Highway 6 corridor. Ensure you have physical or offline maps for the backcountry trailheads.",
+              "title": "Peninsula Dead Zones"
+            },
+            {
+              "kind": "fuel",
+              "text": "Tobermory has fuel and services, but they can be busy. Wiarton is the last major town with full-service amenities for those driving up from the south.",
+              "title": "Last Stops"
+            },
+            {
+              "kind": "timing",
+              "text": "July and August see significant congestion in Tobermory. Consider a late spring or early autumn visit for quieter trails, though water remains cold year-round.",
+              "title": "Peak Season Crowds"
+            },
+            {
+              "kind": "access",
+              "text": "The shoreline sections of the Bruce Trail are very rocky and can be slippery when wet. Sturdy footwear is necessary for the limestone terrain.",
+              "title": "Bruce Trail Conditions"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T10:44:08.957096+00:00",
+          "sources": [
+            {
+              "label": "Parks Canada",
+              "url": "https://parks.canada.ca/pn-np/on/bruce"
+            }
+          ],
+          "vehicle": "Standard passenger cars are sufficient for all paved park roads and main parking lots; no 4WD is required for the primary attractions.",
+          "version": 1
+        }
+      }
+    },
+    "cape-breton-highlands-national-park": {
+      "fields": {
+        "permit_headline": "Park Admission and 2026 Skyline Trail Parking Reservations",
+        "permit_note": "Park admission is separate from camping and Skyline parking. Admission was free January 1–15 and June 19–September 7, 2026; regular fees apply outside those periods, with normal free-admission categories. Reserve Skyline Trail parking for June 26–October 25, 2026; a park pass alone does not secure trail access. Arrive no earlier than 10 minutes before and no later than one hour after the reserved start time. Check the specific campground's reservation and operating arrangements separately.",
+        "permit_source_url": "https://parks.canada.ca/pn-np/ns/cbreton",
+        "travel_plan": {
+          "arrival": "Collect your rental at Sydney (YQY) and stock up on supplies in Sydney or North Sydney before the two-hour drive to the Ingonish entrance.",
+          "days": [
+            {
+              "driving": "Allow 2 to 3 hours for the western climbs; conditions vary with weather.",
+              "note": "The western ascent involves steep grades and sharp switchbacks near French Mountain.",
+              "start": "Suggested: 8:30 AM from Chéticamp",
+              "stops": [
+                {
+                  "detail": "Walk the dramatic headland boardwalk for expansive views of the Gulf of St. Lawrence where the mountains meet the sea. Reserve Skyline Trail parking for June 26–October 25, 2026; a park pass alone does not secure access.",
+                  "name": "Skyline Trail"
+                },
+                {
+                  "detail": "MacIntosh Brook Trail is closed to all entry from September 25, 2026 until further notice because of aggressive coyote encounters. Visit only after Parks Canada lifts the closure.",
+                  "name": "MacIntosh Brook"
+                }
+              ],
+              "title": "Acadia Coastline and Canyon Vistas"
+            },
+            {
+              "driving": "Allow 1.5 to 2 hours of travel time; slow down for potential wildlife crossings.",
+              "note": "Cellular reception is extremely limited in the Aspy Valley and interior plateau.",
+              "start": "Suggested: 9 AM from Pleasant Bay",
+              "stops": [
+                {
+                  "detail": "Lone Shieling is closed to all entry from September 25, 2026 until further notice because of aggressive coyote encounters. Visit only after Parks Canada lifts the closure.",
+                  "name": "Lone Shieling"
+                },
+                {
+                  "detail": "Drive into the Aspy Valley to witness one of the park's highest cascades falling from the highland plateau.",
+                  "name": "Beulach Ban Falls"
+                }
+              ],
+              "title": "Plateau Barrens and Hidden Waterfalls"
+            },
+            {
+              "driving": "Allow 1 hour for local exploration; road construction is common during summer months.",
+              "note": "Expect higher traffic volumes near the Ingonish beach area and local services.",
+              "start": "Suggested: 8:30 AM from Ingonish",
+              "stops": [
+                {
+                  "detail": "Observe the rugged pink granite coastline and crashing Atlantic waves from this iconic roadside viewpoint.",
+                  "name": "Lakies Head"
+                },
+                {
+                  "detail": "Hike the rocky peninsula separating North and South Ingonish Bays for views of the Keltic Lodge and distant Cape Smokey.",
+                  "name": "Middle Head Trail"
+                }
+              ],
+              "title": "Atlantic Coves and Granite Cliffs"
+            }
+          ],
+          "goldenHour": "Lakies Head provides a dramatic Atlantic sunrise setting, depending on seasonal cloud cover.",
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Skyline Trail requires a parking reservation June 26–October 25, 2026. When reservations are full there is no trail access during that period; arriving early without a reservation is not a substitute.",
+              "title": "Trailhead Capacity"
+            },
+            {
+              "kind": "signal",
+              "text": "Expect significant dead zones for mobile data between Pleasant Bay and Neil's Harbour. Offline maps are essential for navigating the inland plateau sections of the Cabot Trail.",
+              "title": "Topographic Interference"
+            },
+            {
+              "kind": "fuel",
+              "text": "Refuel in Chéticamp or Ingonish as there are no fueling stations within the national park boundaries. Ensure your vehicle is prepared for the significant elevation changes of the North Mountain pass.",
+              "title": "Coastal Gateway Services"
+            },
+            {
+              "kind": "timing",
+              "text": "Check seasonal facility hours and road conditions. Mary Ann Falls Road is permanently closed to vehicles, not merely closed for winter. Access Mary Ann Falls by its hiking-only trail from Warren Lake Road: 13.9 km, about 5–6 hours.",
+              "title": "Seasonal Road Status"
+            },
+            {
+              "kind": "access",
+              "text": "Parks Canada lists French Mountain and MacKenzie Mountain grades at 9–12%; North Mountain reaches 12–15%. Prepare for sustained steep climbs and descents and obey posted road conditions.",
+              "title": "Cycling and Grade"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T10:44:39.142340+00:00",
+          "sources": [
+            {
+              "label": "Parks Canada - Cape Breton Highlands",
+              "url": "https://parks.canada.ca/pn-np/ns/cbreton"
+            }
+          ],
+          "vehicle": "Standard passenger cars are suitable for the Cabot Trail, though RVs should check brake health for steep descents.",
+          "version": 1
+        }
+      }
+    },
+    "fundy-national-park": {
+      "fields": {
+        "permit_headline": "Tidal Cycle Access and Entry Requirements",
+        "permit_note": "Outside free-admission periods, admission can be paid by daily admission, a park seasonal pass or an annual Discovery Pass; a Discovery Pass is not a daily ticket. Admission was free January 1–15 and June 19–September 7, 2026. Camping, accommodation and reservation charges remain separate; reserve ahead and check facility operating dates. Consult the official local tide tables before shoreline walks; low-tide access is temporary.",
+        "permit_source_url": "https://parks.canada.ca/pn-np/nb/fundy",
+        "travel_plan": {
+          "arrival": "Fly into Moncton (YQM) and drive approximately 90 minutes south, stopping in Riverview for major grocery supplies before reaching Alma.",
+          "days": [
+            {
+              "driving": "Allow 1 hour of local travel; road speed limits are strictly enforced to protect local deer.",
+              "note": "Consult the official tide table daily as access to the beach at Herring Cove changes by roughly an hour each day.",
+              "start": "Suggested: 9 AM from Alma",
+              "stops": [
+                {
+                  "detail": "Visit Point Wolfe's logging-history landscape when access is open. Point Wolfe Covered Bridge is closed to vehicles and pedestrians September 8–December 2026 for rehabilitation; facilities beyond the bridge are effectively closed, with designated backcountry detours where provided.",
+                  "name": "Point Wolfe"
+                },
+                {
+                  "detail": "When the trail is open, descend Herring Cove Beach Trail at low tide to the rocky headland; a small sea cave is reached by a slippery rock scramble. The trail is closed to all public access for the season from November 1, 2026; check reopening before visiting.",
+                  "name": "Herring Cove"
+                }
+              ],
+              "title": "Tidal Fluctuations and Coastal Geology"
+            },
+            {
+              "driving": "Allow 1.5 hours; gravel interior roads may require slower speeds than paved sections.",
+              "note": "The hike to Laverty Falls involves a steady climb on the return journey; allow sufficient time before dusk.",
+              "start": "Suggested: 8:30 AM from Wolfe Lake",
+              "stops": [
+                {
+                  "detail": "Follow the most popular boardwalk in the park through a lush, moss-covered valley to a cooling waterfall.",
+                  "name": "Dickson Falls"
+                },
+                {
+                  "detail": "Hike the 5 km return Laverty Falls Trail through mixed forest to a 12 m curtain waterfall and its deep pool; allow 2–3 hours in normal access conditions. The optional Moosehorn extension enters the Upper Salmon River valley. As of November 14, 2026, Laverty Road is closed, adding 6.5 km each way to reach this trail.",
+                  "name": "Laverty Falls"
+                }
+              ],
+              "title": "Highland Forests and River Valleys"
+            },
+            {
+              "driving": "Allow 1 hour; the route between the highland plateau and the coast is steep.",
+              "note": "Fog can roll in quickly from the Bay, drastically reducing visibility on the highland roads.",
+              "start": "Suggested: 9 AM from Chignecto North",
+              "stops": [
+                {
+                  "detail": "Traverse open fields and coastal forests for a high-vantage view over the Bay of Fundy's muddy flats.",
+                  "name": "Matthews Head"
+                },
+                {
+                  "detail": "Relax at the park's primary freshwater lake, ideal for a calm paddle away from the turbulent bay waters.",
+                  "name": "Bennett Lake"
+                }
+              ],
+              "title": "Panoramic Summits and Freshwater Lakes"
+            }
+          ],
+          "goldenHour": "Matthews Head provides a panoramic sunset view over the Bay of Fundy, though coastal fog is a common seasonal variable.",
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Parking in the village of Alma can be difficult during peak weekend lunch hours. At Dickson Falls, the small lot fills quickly; consider visiting earlier in the morning or late afternoon.",
+              "title": "Village and Trailhead Limits"
+            },
+            {
+              "kind": "signal",
+              "text": "Cell service is generally reliable in Alma and the Chignecto North area, but drops significantly in the Point Wolfe and Laverty Falls valleys. Do not rely on streaming services for navigation in the park's western end.",
+              "title": "Valley Connectivity"
+            },
+            {
+              "kind": "fuel",
+              "text": "Fuel is available in the gateway village of Alma, but there are no stations within the park itself. Ensure you have a full tank if planning to explore the nearby Fundy Trail Parkway.",
+              "title": "Gateway Provisions"
+            },
+            {
+              "kind": "timing",
+              "text": "Use the official local tide tables and follow posted shoreline advice; visit tidal flats at low tide. Herring Cove's cave approach involves slippery rocks. A generic two-hour window around low tide is not a guarantee of safe access to every shoreline or cave.",
+              "title": "Tide-Dependent Planning"
+            },
+            {
+              "kind": "access",
+              "text": "While Route 114 remains open, many internal park roads including the road to Point Wolfe are not plowed in winter. Access is limited to snowshoeing or skiing during the snowy months.",
+              "title": "Winter Road Closures"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T10:44:39.428853+00:00",
+          "sources": [
+            {
+              "label": "Parks Canada - Fundy National Park",
+              "url": "https://parks.canada.ca/pn-np/nb/fundy"
+            }
+          ],
+          "vehicle": "Point Wolfe Covered Bridge has a maximum vehicle/equipment length of 7.3 m (24 ft) and height of 4.4 m (14.4 ft). Check posted restrictions before visiting with an RV. The bridge is closed to both vehicles and pedestrians September 8–December 2026.",
+          "version": 1
+        }
+      }
+    },
+    "garibaldi-provincial-park": {
+      "fields": {
+        "permit_headline": "Day Use Pass Requirements for High-Traffic Trailheads",
+        "permit_note": "In 2026 free vehicle day-use passes were required at Diamond Head and Rubble Creek on Fridays–Mondays and holidays June 12–October 12. Cheakamus Lake required passes daily June 13–September 7 and Fridays–Mondays/holidays September 8–October 12, with separate morning (depart before 1 pm) and afternoon (arrive after 1 pm) slots. Book from 7 am Pacific two days ahead. Overnight camping requires a reservation year-round; carry it instead of an additional day-use pass.",
+        "permit_source_url": "https://bcparks.ca/garibaldi-park/",
+        "travel_plan": {
+          "arrival": "Pick up your vehicle at Vancouver (YVR) and drive 90 minutes north to Squamish to settle into your base camp and purchase bear-safe storage supplies.",
+          "days": [
+            {
+              "driving": "Allow 1 hour to reach the Rubble Creek trailhead; road conditions are paved but steep.",
+              "note": "The ascent to the lake is a strenuous 820m elevation gain; allow a full day for this return hike.",
+              "start": "Suggested: 7:30 AM from Squamish",
+              "stops": [
+                {
+                  "detail": "Hike the 9km ascent to witness the iconic glacial-fed turquoise waters framed by the Sphinx and Sentinel glaciers.",
+                  "name": "Garibaldi Lake"
+                },
+                {
+                  "detail": "Stop at the viewpoint for this massive natural lava dam that holds back the waters of Garibaldi Lake.",
+                  "name": "The Barrier"
+                }
+              ],
+              "title": "Turquoise Waters and Volcanic Peaks"
+            },
+            {
+              "driving": "Allow 45 minutes; the Cheakamus Lake road is unpaved and can be rough for low-clearance vehicles.",
+              "note": "Grizzly bear activity is common in the Helm Creek area; check for local trail closures or warnings.",
+              "start": "Suggested: 8 AM from Whistler",
+              "stops": [
+                {
+                  "detail": "From the Cheakamus trail, climb the Helm Creek route to its campground, 8.5 km from the parking lot; the longer route continues through Cinder Flats toward Black Tusk meadows. Allow six to seven hours one way for the 14.5-km route to Black Tusk Meadows.",
+                  "name": "Helm Creek"
+                },
+                {
+                  "detail": "A gentler forest walk leads to the shores of this lower-elevation turquoise lake surrounded by old-growth cedars.",
+                  "name": "Cheakamus Lake"
+                }
+              ],
+              "title": "Alpine Meadows and Cinder Cones"
+            },
+            {
+              "driving": "Allow 45 minutes to reach Diamond Head; the final access road is steep gravel.",
+              "note": "Snow often persists on the Elfin Lakes trail until mid-July; check trail conditions before departure.",
+              "start": "Suggested: 8:30 AM from Squamish",
+              "stops": [
+                {
+                  "detail": "Follow the Paul Ridge for constant views of Mount Garibaldi before reaching two small subalpine lakes.",
+                  "name": "Elfin Lakes"
+                },
+                {
+                  "detail": "At Elfin Lakes, look toward Columnar Peak, the Gargoyles, Opal Cone and Mamquam Icefield.",
+                  "name": "Columnar Peak"
+                }
+              ],
+              "title": "Subalpine Ridges and Glacial Vistas"
+            }
+          ],
+          "goldenHour": "Panorama Ridge offers a world-class sunset view over Garibaldi Lake, though this requires a late-night descent with headlamps.",
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Use authorized parking and obey posted restrictions. BC Parks accommodates some roadside parking at Rubble Creek; Diamond Head road-edge parking can obstruct snow removal.",
+              "title": "Trailhead Congestion"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular signal disappears almost immediately upon leaving the Highway 99 corridor. Do not expect any reception at the lakes or in the backcountry valleys.",
+              "title": "Mountain Shadows"
+            },
+            {
+              "kind": "fuel",
+              "text": "The last reliable fueling stations are located in Squamish or Whistler Village. There are no services of any kind once you turn off the main highway toward the park trailheads.",
+              "title": "Highway 99 Corridor"
+            },
+            {
+              "kind": "timing",
+              "text": "High-altitude trails are typically snow-covered until July and may see new snow as early as September. Plan for 'summer' conditions only between late July and late August.",
+              "title": "The Summer Window"
+            },
+            {
+              "kind": "access",
+              "text": "For the Diamond Head access road, carry properly fitting chains October through May, even when the road is bare; snow removal is periodic.",
+              "title": "Road Surface Warnings"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T10:44:39.713564+00:00",
+          "sources": [
+            {
+              "label": "BC Parks - Garibaldi",
+              "url": "https://bcparks.ca/garibaldi-park/"
+            }
+          ],
+          "vehicle": "An SUV with moderate clearance is recommended for the gravel access roads at Diamond Head and Cheakamus Lake.",
+          "version": 1
+        }
+      }
+    },
+    "gros-morne-national-park": {
+      "fields": {
+        "permit_headline": "Advance Boat Tour and Entry Pass Verification",
+        "permit_note": "Park admission is available separately from camping and boat tours; an annual Discovery Pass is one admission option, not the only one. Admission was free January 1–15 and June 19–September 7, 2026. Western Brook Pond boat tours are operated by Bontours, with separate charges and advance reservations recommended. Reserve available campsites and backcountry camping through Parks Canada; check each accommodation's actual booking channel rather than assuming backcountry huts are in the national reservation system.",
+        "permit_source_url": "https://parks.canada.ca/pn-np/nl/grosmorne",
+        "travel_plan": {
+          "arrival": "Pick up your vehicle at Deer Lake Airport (YDF) and stop in Deer Lake for supplies before the drive to Rocky Harbour.",
+          "days": [
+            {
+              "driving": "Allow 1 to 1.5 hours across the south and north arms; conditions vary",
+              "note": "Wind speeds on the Tablelands can be significant; prepare for high exposure.",
+              "start": "Suggested: 9 AM from Rocky Harbour",
+              "stops": [
+                {
+                  "detail": "Walk upon exposed peridotite rock from the Earth's mantle, a geological rarity that defines the park's UNESCO status.",
+                  "name": "The Tablelands"
+                },
+                {
+                  "detail": "Examine the coastal cliffs featuring significant fossil records and unique geological folding.",
+                  "name": "Green Point"
+                }
+              ],
+              "title": "The Earth's Mantle and Coastal Cliffs"
+            },
+            {
+              "driving": "Allow 1 hour for transit between northern attractions; conditions vary",
+              "note": "The walk to the Western Brook Pond dock takes approximately 45 minutes each way.",
+              "start": "Suggested: 8:30 AM from Norris Point",
+              "stops": [
+                {
+                  "detail": "Walk the 3 km approach to the Western Brook Pond dock, approximately 45 minutes each way, mainly on a wide gravel path with some boardwalk. Allow about two additional hours for the boat tour, subject to wind and weather.",
+                  "name": "Western Brook Pond"
+                },
+                {
+                  "detail": "Visit the restored fishing premises to learn about the traditional maritime heritage of the Gulf of St. Lawrence.",
+                  "name": "Broom Point"
+                }
+              ],
+              "title": "Fjords and Forested Valleys"
+            },
+            {
+              "driving": "Allow 30 to 45 minutes for local transfers; conditions vary",
+              "note": "The mountain trail is seasonally closed in late spring to protect nesting ptarmigan and caribou.",
+              "start": "Suggested: 8 AM from Rocky Harbour",
+              "stops": [
+                {
+                  "detail": "Embark on a challenging trek to the park's highest point for a panoramic view of the Long Range Mountains.",
+                  "name": "Gros Morne Mountain"
+                },
+                {
+                  "detail": "Explore the historic lighthouse grounds and scan the coastal waters for whale activity.",
+                  "name": "Lobster Cove Head Lighthouse"
+                }
+              ],
+              "title": "Summit Views and Harbour Life"
+            }
+          ],
+          "goldenHour": "Sunset at Lobster Cove Head Lighthouse provides an unobstructed view of the Gulf of St. Lawrence, subject to coastal fog.",
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "The main lot for Western Brook Pond is large but fills quickly before scheduled boat departures. Arrive well in advance of your tour time to ensure a spot.",
+              "title": "Western Brook Trailhead"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular service is reliable in Rocky Harbour and Norris Point but fades quickly in the Tablelands and northern backcountry. Do not rely on digital maps for off-trail navigation.",
+              "title": "Rural Coverage"
+            },
+            {
+              "kind": "fuel",
+              "text": "Fuel is available in Rocky Harbour and Deer Lake. Ensure you have sufficient supply before heading to the northernmost reaches near Cow Head.",
+              "title": "Community Pumps"
+            },
+            {
+              "kind": "timing",
+              "text": "Western Brook Pond boat tours normally operate from mid-May to mid-October. Departures depend on wind and weather; confirm current operation with Bontours.",
+              "title": "Seasonal Boat Access"
+            },
+            {
+              "kind": "access",
+              "text": "Roads provide access to communities and trailheads on both sides of Bonne Bay. A seasonal passenger water taxi between Woody Point and Norris Point is an optional cross-bay shortcut, not a general trail-access requirement; confirm its current schedule and onward transport.",
+              "title": "Water Taxi Logistics"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T10:45:05.743165+00:00",
+          "sources": [
+            {
+              "label": "Parks Canada: Gros Morne",
+              "url": "https://parks.canada.ca/pn-np/nl/grosmorne"
+            }
+          ],
+          "vehicle": "Compact cars are sufficient for the main Viking Trail, but SUVs offer better comfort on secondary roads that may have seasonal frost heaves.",
+          "version": 1
+        }
+      }
+    },
+    "joffre-lakes-provincial-park": {
+      "fields": {
+        "permit_headline": "Day-Use Passes Required for Alpine Access",
+        "permit_note": "Free day-use passes are required May 11–October 25, 2026, separate from camping reservations; campers with reservations do not need an additional day-use pass. Book at 7 am Pacific two days before the visit, up to four passes per transaction. The park is closed to visitors June 20–27 and September 8–30, 2026. Check BC Parks for current booking and closure notices.",
+        "permit_source_url": "https://bcparks.ca/reservations/day-use-passes/",
+        "travel_plan": {
+          "arrival": "Pick up rental at YVR, secure bear spray and water supplies in Squamish or Whistler, and check into Pemberton lodging.",
+          "days": [
+            {
+              "driving": "Allow 45 minutes from Pemberton; conditions vary with mountain weather.",
+              "note": "The trail involves significant elevation gain on uneven terrain; pace yourself for the thinner mountain air.",
+              "start": "Suggested: 7 AM from Pemberton",
+              "stops": [
+                {
+                  "detail": "Reach the first turquoise basin within minutes of the trailhead to observe the Matier Glacier reflection before the wind rises.",
+                  "name": "Lower Joffre Lake"
+                },
+                {
+                  "detail": "Ascend the main switchbacks to reach the second of the three lakes, known for its vibrant silt-driven color and floating log features.",
+                  "name": "Middle Joffre Lake"
+                }
+              ],
+              "title": "Glacial Basin Ascent"
+            },
+            {
+              "driving": "Minimal driving if staged at the park; allow for shuttle transit if active.",
+              "note": "Stay on marked paths to protect the sensitive alpine heather and meadows.",
+              "start": "Suggested: 8 AM from Trailhead",
+              "stops": [
+                {
+                  "detail": "Trek to the base of the Matier Glacier moraine where the water is coldest and the granite peaks are most prominent.",
+                  "name": "Upper Joffre Lake"
+                },
+                {
+                  "detail": "Pause at the cascading waters between the middle and upper lakes, a popular spot for observing the local sub-alpine flora.",
+                  "name": "Holloway Falls"
+                }
+              ],
+              "title": "Upper Alpine and Icefall Views"
+            },
+            {
+              "driving": "Allow 1 hour for the transit between the park and Pemberton valley sights.",
+              "note": "Expect high traffic volumes on Highway 99 during summer weekends.",
+              "start": "Suggested: 9 AM from Mount Currie",
+              "stops": [
+                {
+                  "detail": "Observe the 60-meter high waterfall where the Green River carves through the rock on your return toward Whistler.",
+                  "name": "Nairn Falls Provincial Park"
+                },
+                {
+                  "detail": "Enjoy a flat boardwalk stroll through the wetlands near Pemberton to decompress after the steep Joffre terrain.",
+                  "name": "One Mile Lake"
+                }
+              ],
+              "title": "Pemberton Valley Transit"
+            }
+          ],
+          "goldenHour": "Upper Joffre Lake viewpoint for alpenglow on Matier Glacier; timing varies significantly by month.",
+          "intel": [
+            {
+              "kind": "access",
+              "text": "Capacity is strictly managed via the BC Parks pass system; those without a digital pass will be turned away by staff at the Highway 99 entry. Check for seasonal closures related to First Nations cultural celebrations or conservation.",
+              "title": "Restricted Trail Entry"
+            },
+            {
+              "kind": "parking",
+              "text": "The primary lot at the trailhead fills rapidly, and parking on the shoulder of Highway 99 is strictly prohibited and subject to towing. Use official shuttle services from Duffey Lake Road if they are operational during your visit.",
+              "title": "Overflow Limitations"
+            },
+            {
+              "kind": "signal",
+              "text": "There is no cellular service along this stretch of the Duffey Lake Road or on the trails. Download all offline maps and your digital pass QR code before leaving Pemberton.",
+              "title": "Zero Connectivity"
+            },
+            {
+              "kind": "fuel",
+              "text": "Pemberton is the final reliable stop for fuel and food before heading north into the mountain pass. Ensure your tank is full as there are no services between the park and Lillooet.",
+              "title": "Pemberton Supply Gap"
+            },
+            {
+              "kind": "timing",
+              "text": "Snow can persist on the Upper Lake trail well into July, requiring appropriate footwear. Early autumn visits should account for shorter daylight hours in the deep valley shadows.",
+              "title": "Seasonal Snowpack"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T10:45:34.247751+00:00",
+          "sources": [
+            {
+              "label": "BC Parks Joffre Lakes",
+              "url": "https://bcparks.ca/joffre-lakes-park/"
+            }
+          ],
+          "vehicle": "Standard vehicles are sufficient for Highway 99, but ensure rental contracts allow for mountain pass driving.",
+          "version": 1
+        }
+      }
+    },
+    "kananaskis-country": {
+      "fields": {
+        "permit_headline": "Conservation Pass Required for Parking at Applicable Sites",
+        "permit_note": "A Kananaskis Conservation Pass is required for vehicles parked at applicable provincial park and public-land sites in Kananaskis Country and the Bow Valley. Through-travel, passenger loading/unloading, non-motorized arrivals and specified exempt areas or visitors do not require it. Buy online or at listed visitor facilities; camping reservations and other applicable fees are separate.",
+        "permit_source_url": "https://www.alberta.ca/kananaskis-conservation-pass",
+        "travel_plan": {
+          "arrival": "Pick up rental at YYC, stock up on bear-safe storage in Calgary, and proceed to Bragg Creek or Canmore basecamp.",
+          "days": [
+            {
+              "driving": "Allow 1.5 hours from Canmore via Smith Dorrien or Highway 40; conditions vary.",
+              "note": "Highway 40 over Highwood Pass closes December 1 through June 14; this does not close the northern Highway 40 approach to Peter Lougheed Provincial Park.",
+              "start": "Suggested: 8:30 AM from Canmore",
+              "stops": [
+                {
+                  "detail": "Walk the shoreline trail for views of Mount Lyautey and access to several hidden waterfall feeders.",
+                  "name": "Upper Kananaskis Lake"
+                },
+                {
+                  "detail": "A prime location for viewing the Highwood Pass peaks reflected in the calmer morning waters.",
+                  "name": "Lower Kananaskis Lake"
+                }
+              ],
+              "title": "Peter Lougheed Lakes"
+            },
+            {
+              "driving": "Allow 2 hours if navigating the unpaved sections of the Smith-Dorrien Trail.",
+              "note": "Dust and washboard conditions are common on secondary gravel roads; reduce speed.",
+              "start": "Suggested: 9 AM from Bragg Creek",
+              "stops": [
+                {
+                  "detail": "Follow the gravel Smith-Dorrien Trail for expansive views of the jagged peaks flanking this massive waterway.",
+                  "name": "Spray Lakes Reservoir"
+                },
+                {
+                  "detail": "Watch for resident moose in the valley bottom marshes from the designated pull-offs near the lodge.",
+                  "name": "Mount Engadine Meadow"
+                }
+              ],
+              "title": "Spray Valley Vistas"
+            },
+            {
+              "driving": "Allow 1 hour from Calgary; Highway 66 is paved but narrow.",
+              "note": "The Elbow Falls area can be exceptionally busy on summer weekends; visit early.",
+              "start": "Suggested: 8 AM from Calgary",
+              "stops": [
+                {
+                  "detail": "Visit this emerald pond at the end of Highway 66 for a gentle walk beneath the Nihahi Ridge.",
+                  "name": "Forget-Me-Not Pond"
+                },
+                {
+                  "detail": "Witness the power of the Elbow River as it drops into a rocky gorge near the Bragg Creek entry point.",
+                  "name": "Elbow Falls"
+                }
+              ],
+              "title": "Sibbald and Elbow Gateway"
+            }
+          ],
+          "goldenHour": "Barrier Lake Lookout for sunset views over the front ranges; check local tables for autumn shifts.",
+          "intel": [
+            {
+              "kind": "fuel",
+              "text": "The Fortress Junction Service Centre is the only fuel point within the heart of Kananaskis on Highway 40. Always enter the region from Calgary or Canmore with a full tank.",
+              "title": "Limited Valley Services"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular service is non-existent in the Spray Valley and highly unreliable in the Peter Lougheed back-country. Emergency phones are located at select day-use areas and visitor centers.",
+              "title": "Fragmented Reception"
+            },
+            {
+              "kind": "access",
+              "text": "Highway 40 over Highwood Pass, between Peter Lougheed Provincial Park and Highwood House Junction, closes December 1–June 14. Highway 66 west of Elbow Falls and Powderface Trail closes December 1–May 14. Check Alberta Parks advisories and Alberta 511 before travelling.",
+              "title": "Seasonal Road Closures"
+            },
+            {
+              "kind": "timing",
+              "text": "Dawn and dusk are peak times for bear and moose activity along the roadsides. Expect slower travel speeds if wildlife is present and maintain a respectful distance.",
+              "title": "Wildlife Movement"
+            },
+            {
+              "kind": "parking",
+              "text": "Popular spots like Barrier Lake and Elbow Falls often reach vehicle capacity by mid-morning. Have a secondary trail in mind to avoid circling lots.",
+              "title": "Day-Use Congestion"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T10:45:34.552513+00:00",
+          "sources": [
+            {
+              "label": "Alberta Parks Kananaskis",
+              "url": "https://www.albertaparks.ca/parks/kananaskis/kananaskis-country/"
+            }
+          ],
+          "vehicle": "SUVs are recommended for the gravel Smith-Dorrien Trail; check rental insurance for unpaved road coverage.",
+          "version": 1
+        }
+      }
+    },
+    "kootenay-national-park": {
+      "fields": {
+        "permit_headline": "Highway 93 South: Park Admission for Visits, Not Nonstop Through-Travel",
+        "permit_note": "Outside free-admission periods, visitors stopping to use the park require daily admission or a Discovery Pass; nonstop travellers on Highway 93 South do not require a park pass. Admission was free January 1–15 and June 19–September 7, 2026. Reserve available frontcountry campsites through Parks Canada; booking months ahead is recommended for popular dates, not a mandatory minimum lead time.",
+        "permit_source_url": "https://parks.canada.ca/pn-np/bc/kootenay",
+        "travel_plan": {
+          "arrival": "Pick up rental at YXC (Cranbrook) or YYC (Calgary), purchase groceries in Invermere or Banff, and check in at Radium.",
+          "days": [
+            {
+              "driving": "Allow 45 minutes from Banff to the park gate; traffic varies at the junction.",
+              "note": "Morning light is best for photographing the vibrant orange clay of the Paint Pots.",
+              "start": "Suggested: 8:30 AM from Banff",
+              "stops": [
+                {
+                  "detail": "Cross several bridges over a deep limestone gorge where the Tokumm Creek has carved dramatic patterns into the rock.",
+                  "name": "Marble Canyon"
+                },
+                {
+                  "detail": "Walk the short trail to the ochre beds, naturally occurring mineral springs historically significant to the Ktunaxa people.",
+                  "name": "Paint Pots"
+                }
+              ],
+              "title": "The Vermilion Range"
+            },
+            {
+              "driving": "Allow 1.5 hours of total driving time to reach the southern end of the park.",
+              "note": "Radium Hot Springs pool hours are seasonal; check the Parks Canada site for current facility maintenance windows.",
+              "start": "Suggested: 9 AM from Castle Junction",
+              "stops": [
+                {
+                  "detail": "View the powerful glacial runoff of the Vermilion River from the accessible roadside viewpoint.",
+                  "name": "Numa Falls"
+                },
+                {
+                  "detail": "Soak in the mineral-rich waters situated within the dramatic Sinclair Canyon rock walls near the southern gate.",
+                  "name": "Radium Hot Springs"
+                }
+              ],
+              "title": "Continental Divide to Hot Springs"
+            },
+            {
+              "driving": "Allow 40 minutes for the winding ascent through Sinclair Pass.",
+              "note": "Watch for bighorn sheep on the road near the Radium park entrance; they are frequently present on the tarmac.",
+              "start": "Suggested: 10 AM from Radium Hot Springs",
+              "stops": [
+                {
+                  "detail": "Stop at this small, crystal-clear lake on the Sinclair Pass for a quiet boardwalk loop and birdwatching.",
+                  "name": "Olive Lake"
+                },
+                {
+                  "detail": "Capture the expansive vistas of the Mitchell and Vermilion ranges from this elevated roadside pull-off.",
+                  "name": "Kootenay Valley Viewpoint"
+                }
+              ],
+              "title": "Sinclair Canyon and Valley Views"
+            }
+          ],
+          "goldenHour": "Kootenay Valley Viewpoint for wide-angle sunset light over the Rockies; check seasonal tables.",
+          "intel": [
+            {
+              "kind": "fuel",
+              "text": "There is no fuel, food, or reliable cell service along the 100km stretch of Highway 93 South between Castle Junction and Radium Hot Springs. Top up in Banff or Radium before entering the park.",
+              "title": "The Service Gap"
+            },
+            {
+              "kind": "signal",
+              "text": "The Kootenay Parkway is a notorious dead zone for mobile devices. Ensure you have physical maps or downloaded GPS data for navigation and emergency contacts.",
+              "title": "Disconnected Corridor"
+            },
+            {
+              "kind": "timing",
+              "text": "This park is a critical corridor for wolves and grizzly bears; speed limits are strictly enforced to protect transit. Dusk travel requires extreme caution due to low visibility and high animal activity.",
+              "title": "Wildlife Crossing"
+            },
+            {
+              "kind": "access",
+              "text": "Follow signed winter-tire requirements, generally October 1–April 30 on designated Interior routes. Passenger vehicles need legal winter tires (M+S or mountain/snowflake, at least 3.5 mm tread); chains on summer tires are not an acceptable substitute. Check DriveBC before travel.",
+              "title": "Winter Travel Requirements"
+            },
+            {
+              "kind": "parking",
+              "text": "Marble Canyon is the most visited site in the park; its lot often fills by 10 AM in July. Consider visiting the Paint Pots first and returning to the canyon later in the afternoon.",
+              "title": "Canyon Lot Constraints"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T10:45:34.820542+00:00",
+          "sources": [
+            {
+              "label": "Parks Canada Kootenay",
+              "url": "https://parks.canada.ca/pn-np/bc/kootenay"
+            }
+          ],
+          "vehicle": "Standard vehicles are fine for the parkway, but large RVs should be aware of steep grades and sharp turns in Sinclair Canyon.",
+          "version": 1
+        }
+      }
+    },
+    "lake-louise": {
+      "fields": {
+        "permit_headline": "Managing High Demand at Lake Louise and Moraine Lake",
+        "permit_note": "Outside free-admission periods, pay daily admission or use a valid Discovery Pass; an annual pass is optional. Admission was free January 1–15 and June 19–September 7, 2026; transport, parking and reservation fees remained separate. Due to high demand, access to the lakeshores often requires advanced booking for the official Parks Canada shuttle or a commercial provider; Moraine Lake is closed to personal vehicles. Systems change seasonally, so verify current booking windows on the Parks Canada website before planning.",
+        "permit_source_url": "https://parks.canada.ca/pn-np/ab/banff",
+        "travel_plan": {
+          "arrival": "Collect your vehicle at Calgary International Airport and drive 2 hours west to Banff or Canmore to stock up on groceries before continuing to the lake area.",
+          "days": [
+            {
+              "driving": "Allow 45–60 minutes between Banff and the lake; conditions vary with shuttle timing.",
+              "note": "Uphill hiking trails are rocky and can remain snow-covered well into June.",
+              "start": "Suggested: 7:30 AM from Banff or Lake Louise Village",
+              "stops": [
+                {
+                  "detail": "Hike the steep trail for an elevated perspective of the historic Fairmont Chateau Lake Louise and the Victoria Glacier.",
+                  "name": "Fairview Lookout"
+                },
+                {
+                  "detail": "Ascend the forested path past Mirror Lake to reach this seasonal alpine cabin nestled by a mountain tarn.",
+                  "name": "Lake Agnes Teahouse"
+                }
+              ],
+              "title": "Glacial Peaks and High Alpine Vistas"
+            },
+            {
+              "driving": "Shuttle transfers take roughly 20–30 minutes; allow for queue times.",
+              "note": "This area is high-density grizzly bear habitat; check official group-size requirements for hiking.",
+              "start": "Suggested: 8:00 AM from the Park and Ride Lot",
+              "stops": [
+                {
+                  "detail": "Climb the short, stony path at Moraine Lake for the quintessential view of the azure water and surrounding summits.",
+                  "name": "Rockpile Trail"
+                },
+                {
+                  "detail": "Follow the switchbacks through dense forest to reach open meadows that glow gold during the autumn transition.",
+                  "name": "Larch Valley"
+                }
+              ],
+              "title": "The Valley of the Ten Peaks"
+            },
+            {
+              "driving": "Allow 1.5 hours for the scenic route to Banff; conditions vary by wildlife activity.",
+              "note": "In 2026 the eastern 17 km was closed to public vehicles April 30–June 25 and September 1–October 6 for the cycling offer; the annual March 1–June 25 wildlife restriction prohibits all travel there from 8 pm to 8 am. Use the permitted alternate approach to Johnston Canyon.",
+              "start": "Suggested: 9:00 AM from Lake Louise Village",
+              "stops": [
+                {
+                  "detail": "Walk the suspended catwalks to view the Lower and Upper Falls carved into the limestone canyon.",
+                  "name": "Johnston Canyon"
+                },
+                {
+                  "detail": "Hike to the former fire-lookout site for views of the middle Bow Valley; allow approximately 3–4 hours return for 7.4 km and 520 m of ascent.",
+                  "name": "Castle Lookout"
+                }
+              ],
+              "title": "Bow Valley Parkway Exploration"
+            }
+          ],
+          "goldenHour": "Moraine Lake Rockpile provides iconic light at sunrise, though seasonal road closures limit access to summer and early autumn.",
+          "intel": [
+            {
+              "kind": "access",
+              "text": "The Lake Louise Drive area is subject to significant traffic management. Utilizing the official shuttle from the Lake Louise Park and Ride at Lake Louise Ski Resort, 1 Whitehorn Road is the primary way to visit both major lakes in one day.",
+              "title": "Shuttle Priority"
+            },
+            {
+              "kind": "timing",
+              "text": "2026 shuttle reservations opened April 15 at 8 am Mountain Time, with 40% of seats released then and 60% released at 8 am two days before departure. Arrive within your booked one-hour departure window; an early arrival does not entitle you to board early.",
+              "title": "Early Starts"
+            },
+            {
+              "kind": "parking",
+              "text": "Parking in Lake Louise Village is limited to short-term retail use. It is not a viable staging area for all-day hiking at the lakeshore.",
+              "title": "Village Constraints"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular service is generally reliable in the village but drops off significantly on the higher alpine trails. Download offline maps before leaving your accommodation.",
+              "title": "Connectivity Gaps"
+            },
+            {
+              "kind": "fuel",
+              "text": "Fuel is available in Lake Louise Village and the town of Banff. There are no refueling stations along the Icefields Parkway heading north until Saskatchewan River Crossing.",
+              "title": "Last Service Points"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T10:46:03.667212+00:00",
+          "sources": [
+            {
+              "label": "Parks Canada Banff National Park",
+              "url": "https://parks.canada.ca/pn-np/ab/banff"
+            }
+          ],
+          "vehicle": "Standard vehicles are suitable for the main highways, while RVs may face restricted parking in the village and must use designated lots.",
+          "version": 1
+        }
+      }
+    },
+    "niagara-falls-ontario": {
+      "fields": {
+        "permit_headline": "Navigating the Niagara River Corridor",
+        "permit_note": "No entry permit is required for the public viewing areas of the Falls. Individual attractions such as the boat tours or tunnels require separate tickets; during peak summer months, booking timed entries in advance is recommended to avoid long queues.",
+        "permit_source_url": "https://www.niagaraparks.com",
+        "travel_plan": {
+          "arrival": "Fly into Toronto Pearson and drive 90 minutes south; most visitors check in to hotels in the Fallsview district or Niagara-on-the-Lake before exploring.",
+          "days": [
+            {
+              "driving": "Allow 15–20 minutes for local parking transfers; conditions vary with pedestrian traffic.",
+              "note": "Expect to get wet at these locations; waterproof ponchos are typically provided at the attractions.",
+              "start": "Suggested: 9:00 AM from Queen Victoria Park",
+              "stops": [
+                {
+                  "detail": "Stand at the brink of the Horseshoe Falls to experience the immense scale and sound of the cascading water.",
+                  "name": "Table Rock Centre"
+                },
+                {
+                  "detail": "Descend via elevator to the tunnels behind the water curtain for a unique subterranean perspective.",
+                  "name": "Journey Behind the Falls"
+                }
+              ],
+              "title": "The Power of the Horseshoe"
+            },
+            {
+              "driving": "Allow 20–30 minutes along the Parkway; conditions vary by season.",
+              "note": "The WEGO bus system is an efficient alternative to driving and parking along the river corridor.",
+              "start": "Suggested: 10:00 AM from the Niagara Parkway",
+              "stops": [
+                {
+                  "detail": "Walk the boardwalk alongside the Class 6 rapids of the Niagara River to see the power of the water downstream. White Water Walk is seasonal and currently listed as closed for the season; check Niagara Parks before visiting.",
+                  "name": "White Water Walk"
+                },
+                {
+                  "detail": "Observe the natural phenomenon where the river turns abruptly, creating a massive counter-clockwise vortex.",
+                  "name": "Niagara Whirlpool"
+                }
+              ],
+              "title": "River Gorges and Whirlpools"
+            },
+            {
+              "driving": "Allow 45 minutes for the full drive to Niagara-on-the-Lake; conditions vary with tourism volume.",
+              "note": "Niagara Glen trails are steep and can be slippery after rain; wear appropriate footwear for rocky terrain.",
+              "start": "Suggested: 9:30 AM from Niagara-on-the-Lake",
+              "stops": [
+                {
+                  "detail": "Hike the rugged trails through the Carolinian forest down to the river’s edge for a quiet escape from the crowds.",
+                  "name": "Niagara Glen Nature Reserve"
+                },
+                {
+                  "detail": "Visit the site of the historic War of 1812 battle and the Brock’s Monument overlooking the valley.",
+                  "name": "Queenston Heights Park"
+                }
+              ],
+              "title": "Garden City and Historic Heights"
+            }
+          ],
+          "goldenHour": "Oakes Garden Theatre offers a framed view of the American and Horseshoe Falls for evening photography during the summer months.",
+          "intel": [
+            {
+              "kind": "access",
+              "text": "The sidewalk near Table Rock becomes extremely crowded by midday. Utilize the Falls Incline Railway to move between the Fallsview hotel district and the park level easily.",
+              "title": "Pedestrian Flow"
+            },
+            {
+              "kind": "timing",
+              "text": "The Falls are lit every night, but the start time shifts throughout the year based on sunset. Check the Niagara Parks schedule for specific seasonal firework displays.",
+              "title": "Illumination Schedule"
+            },
+            {
+              "kind": "parking",
+              "text": "Parking near the brink is expensive and fills early. The Rapidsview Parking Lot offers a shuttle service that is often more convenient than searching for spots in the core. Rapidsview Lot C is seasonal and closed in winter.",
+              "title": "Managed Lots"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular devices often ping towers across the river in the USA. Ensure your roaming settings are configured to avoid unexpected charges while near the gorge.",
+              "title": "Border Roaming"
+            },
+            {
+              "kind": "fuel",
+              "text": "Fuel and electric charging stations are plentiful throughout the city of Niagara Falls. Prices may be slightly higher near the tourist district than in St. Catharines.",
+              "title": "Urban Supply"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T10:46:04.354252+00:00",
+          "sources": [
+            {
+              "label": "Niagara Parks Commission",
+              "url": "https://www.niagaraparks.com"
+            }
+          ],
+          "vehicle": "Standard cars are ideal for this urban-scenic mix; RVs should use designated long-term parking at the Rapidsview lot as city streets are congested. Rapidsview Lot C is seasonal and closed in winter.",
+          "version": 1
+        }
+      }
+    },
+    "pacific-rim-national-park-reserve": {
+      "fields": {
+        "permit_headline": "Advance Planning for Coastal Camping and Long Beach Access",
+        "permit_note": "Admission was free January 1–15 and June 19–September 7, 2026. Outside these periods, daily admission or a valid pass applies, with free admission for youth 17 and under. Camping, reservation, parking and third-party tour charges remain separate. The West Coast Trail requires a specific reservation system that often opens months in advance; always verify current procedures via Parks Canada for seasonal access changes. Traditional accommodations in Tofino and Ucluelet frequently require advance booking during the summer storm-watching and surfing seasons.",
+        "permit_source_url": "https://parks.canada.ca/pn-np/bc/pacificrim",
+        "travel_plan": {
+          "arrival": "Pick up rental vehicle at Nanaimo Airport (YCD) and stock up on supplies in Port Alberni before the mountain pass drive to the coast.",
+          "days": [
+            {
+              "driving": "Allow 1-2 hours for transit between trailheads; conditions vary by weather.",
+              "note": "Boardwalks can be slippery when wet; maintain a steady pace on the loops.",
+              "start": "Suggested: 9 AM from Ucluelet",
+              "stops": [
+                {
+                  "detail": "Walk the elevated wooden boardwalks through stands of massive Western Red Cedar and Sitka Spruce to observe the temperate rainforest ecosystem.",
+                  "name": "Rainforest Trail"
+                },
+                {
+                  "detail": "Explore the vast expanse of sand between Tofino and Ucluelet, known for its surf culture and geological features like Incinerator Rock.",
+                  "name": "Long Beach"
+                }
+              ],
+              "title": "Ancient Rainforests and Coastal Sands"
+            },
+            {
+              "driving": "Allow 45 minutes for local road transfers; roads are winding.",
+              "note": "Check tide tables locally as coastal access points change drastically with the water level.",
+              "start": "Suggested: 8:30 AM from Tofino",
+              "stops": [
+                {
+                  "detail": "Learn about local Indigenous culture and marine natural history when the centre is open. The centre and its parking lot were closed September 16–25, 2026 for a cultural event; check current Parks Canada bulletins before visiting.",
+                  "name": "K<sup>w</sup>isitis Visitor Centre"
+                },
+                {
+                  "detail": "Visit this intertidal zone at high tide to observe the calm waters of the Clayoquot Sound UNESCO Biosphere Reserve.",
+                  "name": "Grice Bay"
+                }
+              ],
+              "title": "Nu-chah-nulth Heritage and Inner Waters"
+            },
+            {
+              "driving": "Allow 1 hour for travel between southern and northern park sections; conditions vary.",
+              "note": "Stay on marked paths to avoid disturbing delicate coastal vegetation.",
+              "start": "Suggested: 9:30 AM from Ucluelet",
+              "stops": [
+                {
+                  "detail": "View the Wild Pacific Trail's rugged coastline where the open ocean meets the rocky shores of Vancouver Island.",
+                  "name": "Amphitrite Point Lighthouse"
+                },
+                {
+                  "detail": "Schooner Cove Trail and its parking lot are closed until further notice under the September 24, 2026 bulletin. Do not plan access until Parks Canada lifts the closure.",
+                  "name": "Schooner Cove"
+                }
+              ],
+              "title": "Rocky Promontories and Marine Vistas"
+            }
+          ],
+          "goldenHour": "Radar Hill for panoramic sunset views of the coast, noting that fog frequently obscures the horizon.",
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Parking lots at popular beach access points like Incinerator Rock fill early during summer months. Alternative lots may require a longer walk to the shoreline.",
+              "title": "Long Beach Congestion"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular reception is intermittent along Highway 4 and within dense forest sections of the park. Carry physical maps for navigation between Tofino and Ucluelet.",
+              "title": "Variable Coastal Coverage"
+            },
+            {
+              "kind": "fuel",
+              "text": "Fuel is readily available in Tofino and Ucluelet, but services are sparse along the interior Highway 4 toward Port Alberni. Refill before entering the park reserve boundaries.",
+              "title": "Gateway Service Stations"
+            },
+            {
+              "kind": "timing",
+              "text": "Check local tide charts and posted coastal safety advice before beach walks. Schooner Cove Trail and its parking lot are closed until further notice; tide conditions do not override the closure.",
+              "title": "Tidal Navigation"
+            },
+            {
+              "kind": "access",
+              "text": "The Kennedy Hill section of Highway 4 may experience construction delays or winter weather restrictions. Check the DriveBC portal for the latest road status.",
+              "title": "Seasonal Highway Conditions"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T10:46:21.589476+00:00",
+          "sources": [
+            {
+              "label": "Parks Canada - Pacific Rim",
+              "url": "https://parks.canada.ca/pn-np/bc/pacificrim"
+            }
+          ],
+          "vehicle": "Standard vehicles are suitable for main roads; check rental agreements for restrictions on unpaved logging roads nearby.",
+          "version": 1
+        }
+      }
+    },
+    "sea-to-sky-highway": {
+      "fields": {
+        "permit_headline": "Coordinating Fjord and Mountain Peak Access",
+        "permit_note": "While the highway is a public route, specific stops like the Sea to Sky Gondola or provincial parks such as Garibaldi require separate day-use passes or tickets during peak periods. Access systems for popular hiking trails often change seasonally; verify current requirements with BC Parks before arrival. Parking at major viewpoints is not guaranteed and requires early arrival during summer months.",
+        "permit_source_url": "https://bcparks.ca/reservations/day-use-passes/",
+        "travel_plan": {
+          "arrival": "Pick up rental vehicle at Vancouver International Airport (YVR) and secure outdoor supplies in North Vancouver before joining Highway 99 North.",
+          "days": [
+            {
+              "driving": "Allow 1.5 to 2 hours from Vancouver to Squamish; conditions vary with traffic.",
+              "note": "Expect heavy traffic exiting Vancouver during morning rush hours and weekends.",
+              "start": "Suggested: 8 AM from Vancouver",
+              "stops": [
+                {
+                  "detail": "Observe the third-highest waterfall in British Columbia via a short forest walk from the highway.",
+                  "name": "Shannon Falls Provincial Park"
+                },
+                {
+                  "detail": "Ascend to the summit for views of Howe Sound and the surrounding Coast Mountains from the Sky Pilot Suspension Bridge.",
+                  "name": "Sea to Sky Gondola"
+                }
+              ],
+              "title": "Fjords and Waterfalls"
+            },
+            {
+              "driving": "Allow 1 hour for the stretch between Squamish and Whistler; conditions vary.",
+              "note": "Parking at Stawamus Chief is limited; have a secondary plan if the lot is full.",
+              "start": "Suggested: 9 AM from Squamish",
+              "stops": [
+                {
+                  "detail": "View the massive granite monolith popular with climbers or hike the trails for elevated vistas of the Squamish valley.",
+                  "name": "Stawamus Chief Provincial Park"
+                },
+                {
+                  "detail": "Walk to the viewpoint for 70-metre Brandywine Falls on Brandywine Creek and views toward Daisy Lake. Stay on designated trails; there is no public access to the lower falls canyon. The vehicle gate closes in the off-season; pedestrian access remains possible subject to conditions. Use only legal parking and keep the highway clear.",
+                  "name": "Brandywine Falls Provincial Park"
+                }
+              ],
+              "title": "Granite Peaks and Alpine Valleys"
+            },
+            {
+              "driving": "Allow 30-45 minutes for local exploration; conditions vary by weather.",
+              "note": "Mountain weather can change rapidly; check the local forecast before heading north of Whistler.",
+              "start": "Suggested: 8:30 AM from Whistler",
+              "stops": [
+                {
+                  "detail": "Explore the pedestrian-only base of Whistler Blackcomb, featuring local art, dining, and the Olympic Plaza.",
+                  "name": "Whistler Village"
+                },
+                {
+                  "detail": "Travel just north of Whistler to witness the Green River carving through a narrow rock canyon.",
+                  "name": "Nairn Falls Provincial Park"
+                }
+              ],
+              "title": "Glacial Vistas and Olympic Legacy"
+            }
+          ],
+          "goldenHour": "Tantalus Lookout for sunset views of the ice-capped Tantalus Range across the valley, noting seasonal sun position changes.",
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Popular spots like Shannon Falls and the Stawamus Chief lots often reach capacity by mid-morning on weekends. Use overflow lots in Squamish if available.",
+              "title": "Trailhead Limitations"
+            },
+            {
+              "kind": "signal",
+              "text": "Cellular signal is generally strong along the highway but can drop significantly in deep valleys or on higher elevation hiking trails.",
+              "title": "Mountain Terrain Obstructions"
+            },
+            {
+              "kind": "fuel",
+              "text": "Fuel and electric charging stations are located in Vancouver, Squamish, and Whistler. There are long stretches between these hubs without service stations.",
+              "title": "Major Hub Services"
+            },
+            {
+              "kind": "timing",
+              "text": "Friday afternoons and Sunday evenings see significant delays for travelers returning to Vancouver. Adjust travel times to avoid peak commuter periods.",
+              "title": "Rush Hour Congestion"
+            },
+            {
+              "kind": "access",
+              "text": "From October 1 to March 31, passenger vehicles on the signed Sea-to-Sky route must have legal winter tires (M+S or mountain/snowflake, at least 3.5 mm tread). Chains on summer tires are not a legal substitute. Follow posted signs and check the provincial route map for onward travel.",
+              "title": "Winter Tire Regulations"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T10:46:22.120741+00:00",
+          "sources": [
+            {
+              "label": "HelloBC - Sea to Sky",
+              "url": "https://www.hellobc.com/road-trips/sea-to-sky-highway-route/"
+            }
+          ],
+          "vehicle": "Reliable brakes and engines are necessary for steep grades; check rental policies regarding winter tire compliance for the route.",
+          "version": 1
+        }
+      }
+    },
+    "waterton-lakes-national-park": {
+      "fields": {
+        "permit_headline": "Review Parks Canada Access for Townsite and Backcountry Entry",
+        "permit_note": "Outside free-admission periods, pay daily admission or use a valid Discovery Pass; a Discovery Pass is optional. Admission was free January 1–15 and June 19–September 7, 2026. Activity transport, accommodation and camping have separate booking arrangements; confirm current availability with the relevant operator.",
+        "permit_source_url": "https://parks.canada.ca/pn-np/ab/waterton",
+        "travel_plan": {
+          "arrival": "Arrive from Calgary (YYC) via Highway 6, picking up supplies in Pincher Creek. Check into your townsite accommodation before 3 PM to secure parking during the busy summer window.",
+          "days": [
+            {
+              "driving": "Allow 1 hour for the winding Akamina Parkway; conditions vary.",
+              "note": "Early starts are essential as limited lakeshore areas serve as the primary trailhead for multiple routes.",
+              "start": "Suggested: 8:30 AM from Waterton Park Townsite",
+              "stops": [
+                {
+                  "detail": "Use an authorized on-site rental for paddling and obey aquatic-invasive-species restrictions: outside non-motorized watercraft may not be launched in Waterton waters.",
+                  "name": "Cameron Lake"
+                },
+                {
+                  "detail": "Hike through diverse forest regrowth to view a towering vertical drop fed by the high peaks of the Akamina-Kishinena.",
+                  "name": "Lineham Falls"
+                }
+              ],
+              "title": "Glacial Waters and High Elevation Passes"
+            },
+            {
+              "driving": "Allow 45 minutes for the Red Rock Parkway; watch for wildlife corridor slowdowns.",
+              "note": "The Red Rock Parkway may have seasonal closures for wildlife movement; check the Visitor Centre board.",
+              "start": "Suggested: 9 AM from Prince of Wales Hotel",
+              "stops": [
+                {
+                  "detail": "Observe the striking contrast of vibrant iron-rich argillite layers against the surrounding mountain peaks.",
+                  "name": "Red Rock Canyon"
+                },
+                {
+                  "detail": "Follow the Blakiston Falls trail from Red Rock Canyon to the falls viewpoints.",
+                  "name": "Blakiston Falls"
+                }
+              ],
+              "title": "Prairie Meets Mountain and Historic Vistas"
+            },
+            {
+              "driving": "Choose a full day for Crypt Lake with its scheduled return boat, or a separate Goat Haunt excursion with border formalities and suitable transport. Do not assume the two are consecutive ferry stops.",
+              "note": "International travel requires appropriate entry documents. Hikers and private-watercraft travellers must report US entry through CBP ROAM on the crossing day and comply with Canadian reporting requirements on return; check eligibility and operating arrangements before travel.",
+              "start": "Suggested: 10 AM from Upper Waterton Lake Marina",
+              "stops": [
+                {
+                  "detail": "Access this world-renowned hike via a local ferry to reach a hidden turquoise lake accessible through a mountain tunnel.",
+                  "name": "Crypt Lake Trailhead"
+                },
+                {
+                  "detail": "Goat Haunt is in Glacier National Park, United States, administered by the US National Park Service; crossing requires compliance with US and Canadian border rules.",
+                  "name": "Goat Haunt"
+                }
+              ],
+              "title": "Deep Lake Excursions and International Borders"
+            }
+          ],
+          "goldenHour": "Prince of Wales Hotel Hill offers panoramic views of the lake valley, with lighting varying significantly by summer solstice.",
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "Lots at Red Rock Canyon and Cameron Lake are finite; once full, park staff may restrict access to the parkways until spots open. Plan destinations for early morning or late afternoon to avoid the midday peak.",
+              "title": "Parkway Capacity"
+            },
+            {
+              "kind": "signal",
+              "text": "Expect reliable cellular service within the Waterton Park townsite, but signal drops immediately upon entering the parkways. Download offline maps for any navigation along the Akamina or Red Rock corridors.",
+              "title": "Connectivity Limits"
+            },
+            {
+              "kind": "fuel",
+              "text": "The townsite offers seasonal fuel services, but options are limited. Pincher Creek or Cardston serve as the primary year-round supply hubs before entering the park boundaries.",
+              "title": "Refueling Logistics"
+            },
+            {
+              "kind": "timing",
+              "text": "Akamina Parkway is accessible year-round, but closes to vehicles beyond Little Prairie in winter; in 2026 full vehicle access opened May 14 and the partial winter closure began November 2. Red Rock Parkway opened May 7 and closed to vehicles October 26, 2026.",
+              "title": "Seasonal Road Status"
+            },
+            {
+              "kind": "access",
+              "text": "Access to the Crypt Lake trail is dictated by ferry departure times, which are subject to wind conditions on the lake. High winds can occasionally suspend water transport even on sunny days.",
+              "title": "Ferry Dependencies"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T10:46:41.863287+00:00",
+          "sources": [
+            {
+              "label": "Parks Canada - Waterton Lakes",
+              "url": "https://parks.canada.ca/pn-np/ab/waterton"
+            }
+          ],
+          "vehicle": "Standard passenger cars are suitable for paved parkways; large RVs face length restrictions on Akamina Parkway's tight turns.",
+          "version": 1
+        }
+      }
+    },
+    "yoho-national-park": {
+      "fields": {
+        "permit_headline": "Lake O'Hara Shuttle Lottery, Camping and Seasonal Road Limits",
+        "permit_note": "Admission was free January 1–15 and June 19–September 7, 2026. Outside these periods, daily admission or a valid pass applies, with free admission for youth 17 and under. Camping, reservation, parking and third-party tour charges remain separate. Accessing Lake O'Hara requires a highly competitive shuttle reservation through a seasonal random draw (March 2–23 for 2026; dates announced annually). While general park entry is covered by a Discovery Pass, camping and the Burgess Shale guided hikes must be reserved months in advance. Always confirm the current seasonal shuttle schedule via the official Parks Canada portal.",
+        "permit_source_url": "https://parks.canada.ca/pn-np/bc/yoho",
+        "travel_plan": {
+          "arrival": "Depart Calgary (YYC) and travel west through Banff. The village of Field is the central hub for local guest houses and basic supplies before exploring the high-valley trailheads.",
+          "days": [
+            {
+              "driving": "Allow 45 minutes for the Yoho Valley Road, including tight switchbacks; conditions vary.",
+              "note": "Yoho Valley Road is seasonal and typically closed to all vehicles from October to June.",
+              "start": "Suggested: 8:30 AM from the Village of Field",
+              "stops": [
+                {
+                  "detail": "Experience the sheer scale of one of Canada’s highest waterfalls, fed by the Daly Glacier.",
+                  "name": "Takakkaw Falls"
+                },
+                {
+                  "detail": "Observe the distinct color contrast where the glacial Yoho River joins the clear Kicking Horse River.",
+                  "name": "Meeting of the Waters"
+                }
+              ],
+              "title": "Glacial Power and Steep Descents"
+            },
+            {
+              "driving": "Allow 20 minutes from Field to Emerald Lake; parking is extremely limited midday.",
+              "note": "Canoe rentals are popular here; arrive before 10 AM to minimize wait times during peak July and August weeks.",
+              "start": "Suggested: 9 AM from Emerald Lake Lodge",
+              "stops": [
+                {
+                  "detail": "Walk the lakeshore trail to see the vivid green water caused by powdered limestone called rock flour.",
+                  "name": "Emerald Lake"
+                },
+                {
+                  "detail": "View the powerful Kicking Horse River as it carves through solid ancient rock layers.",
+                  "name": "Natural Bridge"
+                }
+              ],
+              "title": "Ancient Seas and Emerald Waters"
+            },
+            {
+              "driving": "Allow 1 hour for the distance between the tunnels and the western Wapta Falls trailhead. Wapta Falls trail road has eastbound access only; Finn Creek day-use area has westbound access only.",
+              "note": "Wapta Falls involves a moderate walk; ensure you have time for the return trip before park light fades.",
+              "start": "Suggested: 9:30 AM from Spiral Tunnels Viewpoint",
+              "stops": [
+                {
+                  "detail": "Watch for freight trains navigating the ingenious engineering of the mountain rail system.",
+                  "name": "Upper Spiral Tunnel Viewpoint"
+                },
+                {
+                  "detail": "Take the forested trail to the largest waterfall on the Kicking Horse River by volume.",
+                  "name": "Wapta Falls"
+                }
+              ],
+              "title": "The Kicking Horse Pass and Spiral Tunnels"
+            }
+          ],
+          "goldenHour": "Finn Creek or the Natural Bridge provide exceptional late-afternoon vistas as the sun dips below the President Range.",
+          "intel": [
+            {
+              "kind": "parking",
+              "text": "The main lot at Emerald Lake frequently reaches capacity by 10 AM. Parks Canada may implement traffic control on the access road during holiday weekends.",
+              "title": "Emerald Lake Overflow"
+            },
+            {
+              "kind": "signal",
+              "text": "Reliable signal is found in the town of Field along the Trans-Canada Highway. Most of the Yoho Valley and Emerald Lake backcountry remain in a communication dead zone.",
+              "title": "Mountain Topography Effects"
+            },
+            {
+              "kind": "fuel",
+              "text": "The village of Field has limited fuel; larger service centers are located in Golden or Banff. Ensure your tank is sufficient for the return climb over the Kicking Horse Pass.",
+              "title": "Gateway Gas Stations"
+            },
+            {
+              "kind": "timing",
+              "text": "Takakkaw Falls is accessible only to cars and small RVs due to very tight switchbacks. Check seasonal Yoho Valley Road status before travel.",
+              "title": "Switchback Limits"
+            },
+            {
+              "kind": "access",
+              "text": "Private vehicles are prohibited on the 11km Lake O'Hara access road. Access is strictly limited to those with shuttle reservations, valid camping permits, or those walking the distance.",
+              "title": "Lake O'Hara Restrictions"
+            }
+          ],
+          "markers": [],
+          "reviewedAt": "2026-11-15T10:46:42.141760+00:00",
+          "sources": [
+            {
+              "label": "Parks Canada - Yoho",
+              "url": "https://parks.canada.ca/pn-np/bc/yoho"
+            }
+          ],
+          "vehicle": "Suitable for most cars, but trailers and RVs over a certain length are discouraged on the Yoho Valley Road switchbacks.",
+          "version": 1
+        }
+      }
     }
   },
   "photoDecisions": {

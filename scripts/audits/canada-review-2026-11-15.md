@@ -26,3 +26,8 @@ Please supply the source URL and reuse permission/license, not only an image cop
 - A 200 page response does not prove correct scenery, factual accuracy or partner availability. Six representative destination pages were browser-tested, not all 144.
 - Full independent photo licensing/location verification and current-source verification remain open. German Canadian translations and old-authority-domain URL mappings were not included.
 - No publishing action was performed. Database corrections are shared with the published site, while frontend changes require publishing.
+## Claim-by-claim verification — batch 1 (20 Wave 1 places)
+- All 20 Wave 1 destinations checked against Parks Canada, provincial and official tourism sources; 97 sourced corrections applied to the database and persisted in `canada/review.json`.
+- Main fixes: 2026 free-admission periods (Jan 1–15, Jun 19–Sep 7), Kananaskis pass scope and road-closure dates, Cape Breton coyote trail closures and Skyline reservations, Fundy bridge/trail/road closures, Bruce Peninsula parking reservations and tower closure, Gros Morne boat-tour details.
+- Unverifiable claims (exact drive times, crowd levels, wildlife sightings) were left as advice, not certified facts.
+- Remaining: 124 published Canadian places (Waves 2–3).
