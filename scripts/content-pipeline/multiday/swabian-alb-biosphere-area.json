@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Heidengraben",
+      "quote": "Hektar Fläche umfasst der Heidengraben. Er ist die größte bekannte keltische Befestigungsanlage Deutschlands.",
+      "english": "The Heidengraben covers hectares of area; it is the largest known Celtic fortification in Germany."
+    },
+    {
+      "id": "s2",
+      "name": "Biosphärenzentrum Schwäbische Alb",
+      "quote": "Entdecken Sie das Biosphärenzentrum Schwäbische Alb und besuchen Sie Veranstaltungen, wechselnde und dauerhafte Ausstellungen, unseren Shop und mehr.",
+      "english": "Discover the Swabian Alb Biosphere Center and visit events, changing and permanent exhibitions, our shop, and more."
+    },
+    {
+      "id": "s3",
+      "name": "Marbach",
+      "quote": "Goldener Herbst in Marbach: Gestütsführungen ohne Anmeldung",
+      "english": "Golden autumn in Marbach: stud farm tours without registration."
+    },
+    {
+      "id": "s4",
+      "name": "ehem. Truppenübungsplatz",
+      "quote": "Mutterschafe auf dem ehem. Truppenübungsplatz",
+      "english": "Ewes on the former military training area."
+    },
+    {
+      "id": "s5",
+      "name": "Zwiefalten",
+      "quote": "In der Kernzone im Gemeindewald Zwiefalten hat sich der Borkenkäfer in den dortigen…",
+      "english": "In the core zone in the Zwiefalten municipal forest, the bark beetle has in the local..."
+    },
+    {
+      "id": "s6",
+      "name": "Blaubeuren",
+      "quote": "Allmendingen, Blaubeuren, Engstingen, Hohenstein, Sonnenbühl und Rechtenstein.",
+      "english": "Allmendingen, Blaubeuren, Engstingen, Hohenstein, Sonnenbühl and Rechtenstein."
+    },
+    {
+      "id": "s7",
+      "name": "Sonnenbühl",
+      "quote": "Allmendingen, Blaubeuren, Engstingen, Hohenstein, Sonnenbühl und Rechtenstein.",
+      "english": "Allmendingen, Blaubeuren, Engstingen, Hohenstein, Sonnenbühl and Rechtenstein."
+    }
+  ],
+  "days": [
+    {
+      "title": "Biosphere Center and Regional History",
+      "stop_ids": [
+        "s2",
+        "s1",
+        "s4"
+      ]
+    },
+    {
+      "title": "Stud Farms and Forest Nature",
+      "stop_ids": [
+        "s3",
+        "s5"
+      ]
+    },
+    {
+      "title": "Notable Towns of the Alb",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

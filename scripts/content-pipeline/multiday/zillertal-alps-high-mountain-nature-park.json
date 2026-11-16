@@ -1,0 +1,91 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hochfeiler",
+      "quote": "Surrounded by numerous peaks over 3,000 metres – with the Hochfeiler as the highest summit – the valley is considered the birthplace of Alpine mountaineering.",
+      "english": "Surrounded by numerous peaks over 3,000 metres – with the Hochfeiler as the highest summit – the valley is considered the birthplace of Alpine mountaineering."
+    },
+    {
+      "id": "s2",
+      "name": "Actionberg Penken",
+      "quote": "Those seeking a sporting challenge cannot miss Actionberg Penken.",
+      "english": "Those seeking a sporting challenge cannot miss Actionberg Penken."
+    },
+    {
+      "id": "s3",
+      "name": "Harakiri run",
+      "quote": "Here, Austria's steepest ski slope awaits the bravest: the legendary Harakiri run with up to 78% gradient.",
+      "english": "Here, Austria's steepest ski slope awaits the bravest: the legendary Harakiri run with up to 78% gradient."
+    },
+    {
+      "id": "s4",
+      "name": "Spieljoch",
+      "quote": "The small ski area at Spieljoch is particularly family-friendly, featuring a fun park, fun slope, toboggan run, and wide pistes.",
+      "english": "The small ski area at Spieljoch is particularly family-friendly, featuring a fun park, fun slope, toboggan run, and wide pistes."
+    },
+    {
+      "id": "s5",
+      "name": "Arena Coaster",
+      "quote": "Speeding downhill for 1,500 metres with exciting curves and steep sections.",
+      "english": "Speeding downhill for 1,500 metres with exciting curves and steep sections."
+    },
+    {
+      "id": "s6",
+      "name": "Fichtenschloss",
+      "quote": "Located in Zell am Ziller, Fichtenschloss is an adventure playground made of spruce wood, featuring several towers and offering a great view of the surrounding area.",
+      "english": "Located in Zell am Ziller, Fichtenschloss is an adventure playground made of spruce wood, featuring several towers and offering a great view of the surrounding area."
+    },
+    {
+      "id": "s7",
+      "name": "Nature Ice Palace",
+      "quote": "Visitors explore impressive ice formations, stalactites, and a frozen waterfall.",
+      "english": "Visitors explore impressive ice formations, stalactites, and a frozen waterfall."
+    },
+    {
+      "id": "s8",
+      "name": "Hintertux Glacier",
+      "quote": "In winter, the Zillertal in Tirol transforms into a true skier’s paradise: over 540 km of slopes, modern cable cars and the Hintertux Glacier guarantee snow fun at altitudes of up to 3,250 metres.",
+      "english": "In winter, the Zillertal in Tirol transforms into a true skier’s paradise: over 540 km of slopes, modern cable cars and the Hintertux Glacier guarantee snow fun at altitudes of up to 3,250 metres."
+    },
+    {
+      "id": "s9",
+      "name": "Zillertal High Road",
+      "quote": "This picturesque panoramic road winds through the stunning mountain landscape of the Zillertal, providing breathtaking views of the surrounding peaks.",
+      "english": "This picturesque panoramic road winds through the stunning mountain landscape of the Zillertal, providing breathtaking views of the surrounding peaks."
+    },
+    {
+      "id": "s10",
+      "name": "Zillertal Railway",
+      "quote": "The historic Zillertal Railway connects Mayrhofen with Jenbach, offering a nostalgic ride through the valley.",
+      "english": "The historic Zillertal Railway connects Mayrhofen with Jenbach, offering a nostalgic ride through the valley."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glacial Heights and Mountain Summits",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s8",
+        "s9"
+      ]
+    },
+    {
+      "title": "Action Slopes and Alpine Transit",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s10"
+      ]
+    },
+    {
+      "title": "Family Adventures and Forest Playgrounds",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}
