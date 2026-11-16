@@ -6,6 +6,7 @@ import argparse, json, re, time
 from pathlib import Path
 from source_evidence import fetch_source
 from compact_evidence import plain
+from dach_discovery import austria_urls, fetch_public_source, wikipedia_background
 
 ROOT = Path(__file__).parent
 QID = {'de': 'Q183', 'at': 'Q40', 'ch': 'Q39'}
@@ -52,12 +53,14 @@ def build(row, site):
         if base:
             urls = [base.rstrip('/') + '/en/', base]
     urls += tourism_pages(row)
+    if row['country'] == 'at':
+        urls = austria_urls(row) + urls
     if not urls:
         raise ValueError('no official website found')
     found = None
     for url in urls:
         try:
-            src = fetch_source(url)
+            src = fetch_public_source(url) if row['country'] == 'at' else fetch_source(url)
         except Exception:
             continue
         hit = pick(row, src['text'])
@@ -69,8 +72,11 @@ def build(row, site):
     if not found:
         raise ValueError('official site has no paragraph naming the place')
     src, name, quote, lang = found
+    if row['country'] == 'at' and lang != 'en':
+        raise ValueError('official German evidence retained in cache; English excerpt still missing (no automatic translation)')
+    background = wikipedia_background(row, site) if row['country'] == 'at' else None
     return {'slug': row['slug'], 'approved_for_generation': True, 'language': lang,
-        'sources': [{**src, 'kind': 'official', 'generation_excerpts': [quote]}],
+        'sources': [{**src, 'kind': 'official', 'generation_excerpts': [quote]}] + ([background] if background else []),
         'approved_stops': [{'id': row['slug'], 'name': name, 'quote': quote, 'source_url': src['url']}],
         'review_note': f'DACH chunk: automated exact {lang} excerpt from country-matched official website; no model.'}
 

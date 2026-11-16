@@ -211,6 +211,7 @@
 - [x] Run regressions and guarded readback: 288 application / 37 Python tests; 11 England + New Forest saved, 34 England held with per-place reasons.
 
 ## November 16 DACH chunks
+- [x] Expand Austria English discovery through cached national/regional sitemaps: 27 approved packets, 15 new destinations published, 12 held for coordinates; 50 source-discovery holds retained. No model calls, translation service or subagents. Lake Attersee HTTP 200, heading and Expedia/Vrbo checked; 10 Python tests and preview build pass. Workspace balance snapshots 165.82→164.22, not final task attribution.
 - [x] Chunk 1 Switzerland: 25 more published; held for coordinates (8), photos (5), quote check (1), no official page found (~25).
-- [ ] Chunk 2 Austria (official tourism search does not return results; needs another official page source)
+- [ ] Finish Austria: 12 approved destinations lack verified coordinates; 50 others still lack usable English official excerpts. Discovery and publication batch completed for available evidence (19/81 now published).
 - [ ] Chunks 3–5 Germany
