@@ -6,6 +6,7 @@ import re
 import time
 import unicodedata
 from pathlib import Path
+from functools import lru_cache
 from urllib.parse import urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
@@ -56,7 +57,8 @@ def matches(row, url):
     # Whole distinctive path tokens, not a generic region or a substring of another name.
     terms = re.findall(r'[\wÀ-ž]+', row['authority'] + ' ' + row['name'])
     generic = {'national', 'nationalpark', 'nature', 'naturpark', 'park', 'lake', 'valley',
-               'biosphere', 'reserve', 'mountain', 'high', 'road', 'glacier', 'austria', 'lower'}
+               'biosphere', 'reserve', 'mountain', 'high', 'road', 'glacier', 'austria', 'lower',
+               'germany', 'forest', 'regional', 'nationalparks', 'naturparks', 'upper'}
     tokens = {key(t) for t in terms if len(key(t)) >= 5 and t.lower() not in generic}
     parts = {key(t) for t in re.findall(r'[\wÀ-ž]+', urlparse(url).path)}
     return bool(tokens & parts)
@@ -85,9 +87,44 @@ def austria_urls(row):
             pass
     return list(dict.fromkeys(sorted(urls, key=len)))[:4]
 
+GERMANY_SITEMAPS = (
+    'https://www.germany.travel/en/sitemap.xml',
+    'https://www.bavaria.travel/sitemap.xml',
+    'https://www.niedersachsen-tourism.com/sitemap.xml',
+    'https://www.saechsische-schweiz.de/en/sitemap.xml',
+    'https://www.visit-thuringia.com/sitemap.xml',
+    'https://www.visit-nrw.com/sitemap.xml',
+    'https://www.off-to-mv.com/sitemap.xml',
+)
+
+@lru_cache(maxsize=16)
+def sitemap_pages(url):
+    """Bounded official sitemap expansion, once per process and persistently cached."""
+    try:
+        xml = BeautifulSoup(get(url)['body'], 'xml')
+        locations = [n.text.strip() for n in xml.select('loc')]
+        if xml.find('sitemapindex'):
+            pages = []
+            for child in locations[:4]:
+                # Never follow a sitemap into an unapproved external host.
+                if urlparse(child).hostname != urlparse(url).hostname:
+                    continue
+                child_xml = BeautifulSoup(get(child)['body'], 'xml')
+                pages += [n.text.strip() for n in child_xml.select('loc')]
+            return tuple(pages)
+        return tuple(locations)
+    except (requests.RequestException, ValueError):
+        return ()
+
+def germany_urls(row):
+    pages = [url for sitemap in GERMANY_SITEMAPS for url in sitemap_pages(sitemap)
+             if matches(row, url) and not re.search(r'/(de|fr|nl|es)(/|$)', urlparse(url).path)]
+    return list(dict.fromkeys(sorted(pages, key=len)))[:4]
+
 def wikipedia_background(row, site):
     """Only an exact country-matched entity may supply a linked English article."""
-    if 'Q40' not in site.get('countries', []):
+    country = {'at': 'Q40', 'de': 'Q183', 'ch': 'Q39'}.get(row.get('country'))
+    if not country or country not in site.get('countries', []):
         return None
     qid = site.get('qid')
     if not qid:

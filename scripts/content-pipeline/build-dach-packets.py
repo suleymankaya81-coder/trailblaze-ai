@@ -6,7 +6,7 @@ import argparse, json, re, time
 from pathlib import Path
 from source_evidence import fetch_source
 from compact_evidence import plain
-from dach_discovery import austria_urls, fetch_public_source, wikipedia_background
+from dach_discovery import austria_urls, germany_urls, fetch_public_source, wikipedia_background
 
 ROOT = Path(__file__).parent
 QID = {'de': 'Q183', 'at': 'Q40', 'ch': 'Q39'}
@@ -55,12 +55,14 @@ def build(row, site):
     urls += tourism_pages(row)
     if row['country'] == 'at':
         urls = austria_urls(row) + urls
+    elif row['country'] == 'de':
+        urls = germany_urls(row) + urls
     if not urls:
         raise ValueError('no official website found')
     found = None
     for url in urls:
         try:
-            src = fetch_public_source(url) if row['country'] == 'at' else fetch_source(url)
+            src = fetch_public_source(url) if row['country'] in ('at', 'de') else fetch_source(url)
         except Exception:
             continue
         hit = pick(row, src['text'])
@@ -72,9 +74,9 @@ def build(row, site):
     if not found:
         raise ValueError('official site has no paragraph naming the place')
     src, name, quote, lang = found
-    if row['country'] == 'at' and lang != 'en':
+    if row['country'] in ('at', 'de') and lang != 'en':
         raise ValueError('official German evidence retained in cache; English excerpt still missing (no automatic translation)')
-    background = wikipedia_background(row, site) if row['country'] == 'at' else None
+    background = wikipedia_background(row, site) if row['country'] in ('at', 'de') else None
     return {'slug': row['slug'], 'approved_for_generation': True, 'language': lang,
         'sources': [{**src, 'kind': 'official', 'generation_excerpts': [quote]}] + ([background] if background else []),
         'approved_stops': [{'id': row['slug'], 'name': name, 'quote': quote, 'source_url': src['url']}],
