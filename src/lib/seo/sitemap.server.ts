@@ -74,7 +74,8 @@ function canonicalLoc(loc: string): string {
   return loc.startsWith(SITE_ORIGIN) ? SITE_ORIGIN + canonicalPath(loc.slice(SITE_ORIGIN.length) || "/") : loc;
 }
 
-const geoPathsOf = (c: string, locale: "en" | "de") => [countryPath(c, locale), ...regionSlugsOf(c).map((r) => regionPath(c, r, locale))];
+// No country page (or region pages) once a country has zero published places: avoids an empty /destinations/{cc} URL in the sitemap.
+const geoPathsOf = (c: string, locale: "en" | "de") => (regionSlugsOf(c).length === 0 ? [] : [countryPath(c, locale), ...regionSlugsOf(c).map((r) => regionPath(c, r, locale))]);
 const geoPaths = (locale: "en" | "de") => Object.keys(COUNTRIES).flatMap((c) => geoPathsOf(c, locale));
 const inCountry = (slug: string, country: string | null) => !country || destinationGeo(slug)?.country === country;
 
@@ -122,12 +123,16 @@ export function parseChild(name: string): { country: string | null; kind: string
   return { country, kind: de ? `de-${kind}` : kind };
 }
 
+// A country keeps its sitemap children out of the index until it has at least one published
+// place; parseChild/buildChildSitemap stay generic so the file is served (empty) if hit directly,
+// and starts listing real URLs the moment destination-geo.json picks up its first published row.
+const hasPublishedPlaces = (country: string | null) => !country || regionSlugsOf(country).length > 0;
 export async function buildSitemapResponse(_origin?: string): Promise<Response> {
   return xml(
     [
       '<?xml version="1.0" encoding="UTF-8"?>',
       '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-      ...CHILDREN.map((c) => `  <sitemap><loc>${BASE_URL}/sitemaps/${c}.xml</loc></sitemap>`),
+      ...CHILDREN.filter((c) => hasPublishedPlaces(parseChild(c)?.country ?? null)).map((c) => `  <sitemap><loc>${BASE_URL}/sitemaps/${c}.xml</loc></sitemap>`),
       "</sitemapindex>",
     ].join("\n"),
   );

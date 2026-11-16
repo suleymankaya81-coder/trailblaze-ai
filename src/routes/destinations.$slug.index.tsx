@@ -16,6 +16,7 @@ export const Route = createFileRoute("/destinations/$slug/")({
       throw notFound();
     }
     const regions = await getCountryRegions({ data: { country: params.slug } });
+    if (regions.length === 0) throw notFound(); // Enabled country, nothing published yet: no empty page.
     return { country: params.slug, regions };
   },
   head: ({ loaderData }) => {
