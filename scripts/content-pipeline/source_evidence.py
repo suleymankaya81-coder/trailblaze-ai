@@ -31,6 +31,16 @@ def fetch_source(url):
     path.write_text(json.dumps(result, ensure_ascii=False))
     return result
 
+def allows_wikipedia_overview(packet):
+    return (packet.get('evidence_policy') == 'dach-wikipedia-overview'
+            and packet.get('country_code') in ('de', 'at', 'ch')
+            and packet.get('identity_verified') is True)
+
+def overview_source(source, packet):
+    host = urlparse(source.get('url', '')).hostname or ''
+    return source.get('kind') == 'official' or (allows_wikipedia_overview(packet)
+        and source.get('kind') == 'wikipedia' and host in ('en.wikipedia.org', 'de.wikipedia.org'))
+
 def load_packet(slug):
     path = PACKETS / (slug + '.json')
     if not path.exists():
@@ -38,7 +48,7 @@ def load_packet(slug):
     packet = json.loads(path.read_text())
     if packet.get('slug') != slug or not packet.get('approved_for_generation') or not packet.get('sources'):
         raise ValueError('HELD: source packet is not approved: ' + slug)
-    if not any(s.get('kind') == 'official' and len(s.get('text', '')) >= 200 for s in packet['sources']):
+    if not any(overview_source(s, packet) and len(s.get('text', '')) >= 200 for s in packet['sources']):
         raise ValueError('HELD: official evidence missing: ' + slug)
     return packet
 

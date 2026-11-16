@@ -29,12 +29,12 @@ def quoted_bundle(row, packet):
         'arrival': gap('a measured arrival schedule or supply stops'),
         'vehicle': gap('vehicle size or rental restrictions; do not assume RV access'),
         'goldenHour': gap('a verified sunrise or sunset viewpoint'),
-        'sources': [{'label': 'Official visitor information', 'url': s['url']} for s in sources], 'markers': []}
+        'sources': [{'label': 'Wikipedia · CC BY-SA' if s['kind'] == 'wikipedia' else 'Official visitor information', 'url': s['url']} for s in sources], 'markers': []}
     summary = {'region': row['region'].replace('-', ' ').title(), 'tagline': clean(excerpts[0]).split('\n')[0][:110],
         'best_season': 'Check official seasonal information', 'best_seasons': [],
         'scenic_score': None, 'camping_score': None, 'avg_daily_budget': None,
         'trip_duration_days': '1 visit day', 'recommended_duration': '1 visit day', 'permit_level': 'moderate',
         'aliases': [], 'gateway_cities': [], 'similar_slugs': [], 'trip_tags': [],
         'activities': [s['name'] for s in stops], 'seo_title': (row['name'] + ' Visit Guide')[:60]}
-    return {'summary': summary, 'travel': {'slug': row['slug'], 'headline': 'Check visitor access before departure',
+    return {'summary': summary, 'travel': {'slug': row['slug'], 'overview_name': row['name'], 'headline': 'Check visitor access before departure',
         'reservation': note, 'source_url': url, 'plan': plan}}

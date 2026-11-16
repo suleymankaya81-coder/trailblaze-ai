@@ -1,3 +1,7 @@
+## November 16 flexible DACH completion
+- [ ] Complete the previous 63 holds in one cached no-model batch using exact-place Wikipedia evidence, verified coordinates and licensed covers; retain unknown operational details.
+- [ ] Check published records and public pages, run policy regressions and save the result.
+
 ## November 16 Gemini completion for the remaining 79 DACH places
 - [x] Process all 79 in one bounded sequential Gemini batch after cached evidence/photo/location preparation; 16 calls, no replays or research subagents.
 - [x] Publish 16 eligible pages; all return HTTP 200, operational fields read back, 70 Python tests pass. List: dach/gemini-completion-2026-11-16.md.

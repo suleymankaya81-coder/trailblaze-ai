@@ -4,7 +4,7 @@ import importlib.util
 import json
 from pathlib import Path
 from compact_evidence import compact_packet
-from source_evidence import load_packet, validate_citations, GROUNDING
+from source_evidence import load_packet, validate_citations, GROUNDING, allows_wikipedia_overview, overview_source
 from gateway_call import call_ai_json
 
 ROOT = Path(__file__).parent
@@ -48,9 +48,17 @@ def validate_bundle(bundle, slug, packet):
     travel.validate(item)
     urls = [item['source_url']] + [s['url'] for s in item['plan']['sources']]
     validate_citations(urls, packet)
-    official = {s['url'] for s in packet['sources'] if s['kind'] == 'official'}
+    official = {s['url'] for s in packet['sources'] if overview_source(s, packet)}
     if not set(urls) <= official:
         raise ValueError('Operational sources must be official')
+    if allows_wikipedia_overview(packet):
+        # Wikipedia overviews are deterministic, not a bypass for generated permit claims.
+        name = item.get('overview_name', '')
+        expected = ('Check the official visitor information for ' + name + ' before departure. '
+                    'Entry, activity permissions and overnight accommodation are separate checks; '
+                    'the source excerpts below do not establish availability for your dates.')
+        if not name or item['headline'] != 'Check visitor access before departure' or item['reservation'] != expected:
+            raise ValueError('Wikipedia overview must retain explicit operational unknowns')
     summary = bundle['summary']
     required = ['region','tagline','best_season','best_seasons','scenic_score','camping_score',
                 'avg_daily_budget','trip_duration_days','recommended_duration','permit_level',

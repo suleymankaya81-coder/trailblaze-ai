@@ -1,5 +1,6 @@
 """Bounded evidence, with editorially approved exact-phrase stop identities."""
 import re
+from source_evidence import overview_source
 
 MAX_SOURCE_CHARS = 14000
 
@@ -11,7 +12,7 @@ def approved_stops(packet):
     stops = packet.get('approved_stops', [])
     if not stops:
         raise ValueError('HELD: at least one editorially approved sourced stop required')
-    official = {s['url']: plain(s['text']) for s in packet['sources'] if s['kind'] == 'official'}
+    official = {s['url']: plain(s['text']) for s in packet['sources'] if overview_source(s, packet)}
     ids = set()
     for stop in stops:
         if stop['id'] in ids or not stop['name'].strip():
@@ -43,4 +44,5 @@ def compact_packet(packet):
         sources.append({'url': src['url'], 'kind': src['kind'], 'text': text})
     if not sources:
         raise ValueError('HELD: compact evidence missing')
-    return {'slug': packet['slug'], 'sources': sources, 'approved_stops': stops}
+    return {**{k: packet[k] for k in ('evidence_policy', 'country_code', 'identity_verified') if k in packet},
+            'slug': packet['slug'], 'sources': sources, 'approved_stops': stops}
