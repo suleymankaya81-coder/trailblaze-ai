@@ -240,5 +240,6 @@
 ## Italy (Southern Europe wave)
 - [x] 190 of 198 Italian places published (English).
 - [ ] 8 held: Capri and Aeolian Islands (ferry evidence), 3 source text never names the place, Great Dolomite Road article, Chianti coordinates, Monti Lattari cover.
-- [ ] Europe plans (DACH + Italy, 506 places) are all 1-day; multi-day plans need a decision on paid generation.
+- [x] Multi-day plans: 239 of 506 Europe places now 2-3 days (IT 88, DE 69, AT 49, CH 33); German day texts refreshed for 151 DACH pages.
+- [ ] 267 places stay 1-day: their sources name too few separate sights.
 - [ ] German versions of Italian pages (translation run) not done yet.
