@@ -7,7 +7,7 @@ import { estimatedFrom } from "@/lib/data/servicePhotos";
 import { isMhrBlackFridayLive } from "@/lib/affiliates/mhrBlackFriday";
 import { validViatorHeight } from "@/lib/affiliates/viatorDisplay";
 import bfArt from "@/assets/rv_black_friday_2026.png.asset.json";
-import { isNonRoadDestination } from "@/lib/data/destinationAccess";
+import { isFerryDestination, isNonRoadDestination } from "@/lib/data/destinationAccess";
 import { viatorPlaceSearchUrl } from "@/lib/affiliates/viatorSearch";
 
 /** First-screen two-up showcase: vehicles & RVs (left) and the top real Viator tour for this place (right). */
@@ -15,9 +15,10 @@ export function TopShowcase({ slug, name, airportCode, vehicleNote, country = "u
   // The Black Friday deal is US-only; other countries keep the regular vehicle card.
   const bf = isMhrBlackFridayLive() && country === "us";
   const nonRoad = isNonRoadDestination(slug);
+  const ferry = isFerryDestination(slug);
   return (
     <section id="trip-vehicles" aria-label={`Vehicles and tours for ${name}`} className="scroll-mt-40 grid gap-5 md:grid-cols-2 md:items-stretch">
-      {nonRoad ? <div className="border border-border bg-card p-6"><h2 className="font-display text-2xl"><T>Plan your expedition access</T></h2><p className="mt-3 text-sm text-muted-foreground"><T>No airport-to-park road route. Arrange the required flight, boat or guided transfer with the park authority before booking.</T></p>{vehicleNote && <p className="mt-3 text-sm"><T>{vehicleNote}</T></p>}<Button asChild variant="outline" className="mt-4"><a href="#trip-plan"><T>Check access notes</T></a></Button></div> : bf ? <BlackFridayShowcase slug={slug} /> : <VehicleShowcase slug={slug} airportCode={airportCode} vehicleNote={vehicleNote} country={country} />}
+      {nonRoad ? <div className="border border-border bg-card p-6"><h2 className="font-display text-2xl"><T>{ferry ? "Getting to the island" : "Plan your expedition access"}</T></h2><p className="mt-3 text-sm text-muted-foreground"><T>{ferry ? "No road route to the island. Fly to the nearest airport, then take a scheduled ferry or hydrofoil; check current timetables with the boat operators." : "No airport-to-park road route. Arrange the required flight, boat or guided transfer with the park authority before booking."}</T></p>{vehicleNote && <p className="mt-3 text-sm"><T>{vehicleNote}</T></p>}<Button asChild variant="outline" className="mt-4"><a href="#trip-plan"><T>Check access notes</T></a></Button></div> : bf ? <BlackFridayShowcase slug={slug} /> : <VehicleShowcase slug={slug} airportCode={airportCode} vehicleNote={vehicleNote} country={country} />}
       <TourShowcase slug={slug} name={name} country={country} />
     </section>
   );

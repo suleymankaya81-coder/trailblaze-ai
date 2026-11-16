@@ -96,6 +96,7 @@ import { CANADA_PRICE_BASIS } from "@/lib/data/canadaPricing";
 export function DestinationPageView({ dest, landingLinks, crumbs }: { dest: DestinationView; landingLinks: LandingLink[]; crumbs?: Crumb[] }) {
   const tp = useTp();
   const nonRoad = isNonRoadDestination(dest.slug, dest.accessType);
+  const ferryAccess = isFerryDestination(dest.slug, dest.accessType);
   const enrich = useServerFn(enrichDestination);
 
   const { data: ai, isLoading: aiLoading } = useQuery({
@@ -111,7 +112,7 @@ export function DestinationPageView({ dest, landingLinks, crumbs }: { dest: Dest
 
       <Hero dest={dest} crumbs={crumbs} />
       <TripSnapshot trip={dest} compact />
-      <BookingBar nonRoad={nonRoad} />
+      <BookingBar nonRoad={nonRoad} ferry={ferryAccess} />
 
       {/* Order: showcase (vehicles + top tour) → know before you go → flights → vehicles → itinerary → map → stays → tours → budget/prep → gear */}
       <main className="container-page max-w-[1200px] space-y-12 py-5 md:space-y-16 md:py-6">
