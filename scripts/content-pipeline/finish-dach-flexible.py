@@ -16,7 +16,7 @@ ROOT = Path(__file__).parent
 TITLES = {
  'southern-black-forest-biosphere-area': 'Biosphärengebiet Schwarzwald',
  'elbe-river-landscape-biosphere-reserve': 'Biosphärenreservat Flusslandschaft Elbe',
- 'vessertal-thuringian-forest-biosphere-reserve': 'Vessertal-Thüringen Forest',
+ 'vessertal-thuringian-forest-biosphere-reserve': 'Biosphärenreservat Thüringer Wald',
  'upper-lusatian-heath-and-pond-landscape': 'Upper Lusatian Heath and Pond Landscape',
  'ore-mountains-nature-park': 'Ore Mountains/Vogtland Nature Park',
  'feldberg-black-forest': 'Feldberg (Black Forest)',
@@ -28,14 +28,14 @@ TITLES = {
  'island-of-juist': 'Juist', 'herreninsel-chiemsee': 'Herreninsel',
  'elbe-sandstone-mountains-bastei': 'Bastei', 'kyffhauser': 'Kyffhäuser',
  'triberg-waterfalls': 'Triberg Waterfalls', 'todtnau-waterfall': 'Todtnauer Wasserfall',
- 'barenhohle-swabian-alb': 'Bärenhöhle (Sonnenbühl)', 'teufelshohle-pottenstein': 'Teufelshöhle bei Pottenstein',
+ 'barenhohle-swabian-alb': 'Karls- und Bärenhöhle', 'teufelshohle-pottenstein': 'Teufelshöhle bei Pottenstein',
  'salzburger-lungau-and-karntner-nockberge-biosphere': 'Salzburger Lungau und Kärntner Nockberge',
  'grossglockner-and-pasterze-glacier': 'Pasterze', 'eisriesenwelt-ice-cave': 'Eisriesenwelt',
  'dachstein-ice-cave-and-five-fingers': 'Dachstein-Rieseneishöhle',
  'hallstatt-and-lake-hallstatt': 'Hallstätter See', 'plansee': 'Plansee',
  'gosau-lakes': 'Gosauseen', 'stubai-valley-and-glacier': 'Stubaital',
  'kaprun-glacier-kitzsteinhorn': 'Kitzsteinhorn', 'tscheppaschlucht': 'Tscheppaschlucht',
- 'golling-waterfall': 'Gollinger Wasserfall', 'stuibenfall': 'Stuibenfall (Umhausen)',
+ 'golling-waterfall': 'Gollinger Wasserfall', 'stuibenfall': 'Stuibenfall (Niederthai)',
  'umbalfalle': 'Umbalfälle', 'grindelwald-and-eiger': 'Eiger',
  'schilthorn-and-murren': 'Schilthorn', 'rhine-gorge-ruinaulta': 'Ruinaulta',
  'stoos-and-fronalpstock': 'Fronalpstock (Schwyz)', 'ebenalp-and-seealpsee': 'Seealpsee',
@@ -55,7 +55,7 @@ TITLES = {
 
 def article(title, lang):
     params = {'action':'query','format':'json','formatversion':2,'redirects':1,'titles':title,
-              'prop':'extracts|coordinates|pageimages|pageprops','explaintext':1,'exintro':1,'piprop':'name'}
+              'prop':'extracts|coordinates|pageimages|pageprops','explaintext':1,'exchars':8000,'piprop':'name'}
     data = json.loads(get(f'https://{lang}.wikipedia.org/w/api.php?' + urlencode(params))['body'])
     page = data['query']['pages'][0]
     if page.get('missing') or 'disambiguation' in page.get('pageprops', {}):
@@ -74,7 +74,7 @@ def packet_and_page(row):
             if not paragraphs:
                 # German inflections often differ from the article title; use its exact opening bold-name phrase.
                 first = text.split('\n')[0].strip()
-                candidate = re.split(r'\s+(?:ist|liegt|wurde|umfasst|befindet)\s+', first, maxsplit=1)[0]
+                candidate = re.split(r'\s+(?:ist|liegt|wurde|wurden|umfasst|befindet)\s+', first, maxsplit=1)[0]
                 if 4 <= len(candidate) <= 150 and len(first) >= 80:
                     name = candidate; paragraphs = [first]
             if not paragraphs: continue
@@ -110,12 +110,21 @@ def prepared_facts(row, page, lang, prepare, used):
     bounds = {'de':(47,55.2,5.5,15.5),'at':(46.3,49.1,9.4,17.2),'ch':(45.8,47.9,5.8,10.6)}[row['country']]
     if not (bounds[0]<=lat<=bounds[1] and bounds[2]<=lng<=bounds[3]): raise ValueError('Coordinate country mismatch')
     hero = prepare.file_info(page['pageimage']) if page.get('pageimage') else None
-    if hero and (hero['url'] in used or prepare.BAD.search(hero['file'])): hero = None
+    if hero and (hero['url'] in used or prepare.BAD.search(hero['file']) or hero['credit']=='Unknown' or hero['license'] in ('','See source')): hero = None
+    reviewed_files = {
+        'eisriesenwelt-ice-cave': 'Eisriesenwelt, Macizos de Tennen, Austria, 2019-05-18, DD 58.jpg',
+        'plansee': 'Plansee.jpg',
+        'umbalfalle': '2017-07-15 (121) Umbal falls at Prägraten am Großvenediger, Austria.jpg',
+    }
+    if row['slug'] in reviewed_files:
+        hero = prepare.file_info(reviewed_files[row['slug']])
     if not hero:
         term = page['title'].split(' (')[0]
         for photo in prepare.commons_search(term,limit=16):
             tokens = [key(t) for t in term.split() if len(key(t))>=6 and key(t) not in ('naturpark','nationalpark','biosphaerenreservat')]
-            if (key(term) in key(photo['file']) or any(t in key(photo['file']) for t in tokens)) and photo['url'] not in used: hero=photo;break
+            if (key(term) in key(photo['file']) or any(t in key(photo['file']) for t in tokens)) and photo['url'] not in used and photo['credit'] != 'Unknown' and photo['license'] not in ('','See source'): hero=photo;break
+        if not hero and row['slug'] == 'umbalfalle':
+            hero = prepare.file_info('2017-07-15 (121) Umbal falls at Prägraten am Großvenediger, Austria.jpg')
     if not hero or hero['credit']=='Unknown' or hero['license'] in ('','See source'): raise ValueError('Licensed unique same-place cover missing')
     routes=[]
     for airport in prepare.airports(lat,lng,n=2,country=row['country']):

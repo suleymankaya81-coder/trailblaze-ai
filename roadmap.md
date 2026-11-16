@@ -1,11 +1,12 @@
 ## November 16 flexible DACH completion
-- [ ] Complete the previous 63 holds in one cached no-model batch using exact-place Wikipedia evidence, verified coordinates and licensed covers; retain unknown operational details.
-- [ ] Check published records and public pages, run policy regressions and save the result.
+- [x] Process all previous 63 holds without model calls: 62 published with Wikipedia overviews, coordinates and licensed covers; operational gaps remain unknown.
+- [x] Read back all 62 published records and check all 62 pages (HTTP 200); three browser checks, 75 policy tests and preview build OK.
+- [ ] Publish Neusiedler See–Leithagebirge Nature Park; blocker: exact-place coordinates absent from its Wikipedia/Wikidata record. No guessed point applied.
 
 ## November 16 Gemini completion for the remaining 79 DACH places
 - [x] Process all 79 in one bounded sequential Gemini batch after cached evidence/photo/location preparation; 16 calls, no replays or research subagents.
 - [x] Publish 16 eligible pages; all return HTTP 200, operational fields read back, 70 Python tests pass. List: dach/gemini-completion-2026-11-16.md.
-- [ ] Complete the remaining 63; blockers: 51 exact-place official excerpts, 10 verified coordinates and two licensed covers. AI cannot establish absent facts.
+- [x] Process the remaining 63 under the owner-approved Wikipedia overview policy; 62 published, one coordinate hold tracked above.
 
 ## November 16 remaining 100 DACH places
 - [x] Collect tourism search candidates and Wikipedia page responses for 100 places without research subagents; missing Wikipedia articles excluded, remaining background requires identity review.

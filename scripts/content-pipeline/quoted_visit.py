@@ -11,7 +11,7 @@ def quoted_bundle(row, packet):
     sources = evidence['sources']
     translations = {s['url']: s['display_translation'] for s in packet['sources'] if s.get('display_translation')}
     excerpts = [clean(translations.get(s['url'], s['text'])) for s in sources]
-    stops = evidence['approved_stops'][:3]
+    stops = [{**s, 'name': clean(s['name'])} for s in evidence['approved_stops'][:3]]
     url = stops[0]['source_url']
     note = ('Check the official visitor information for ' + row['name'] + ' before departure. '
             'Entry, activity permissions and overnight accommodation are separate checks; '

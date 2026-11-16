@@ -34,4 +34,13 @@ class FlexibleDachTests(unittest.TestCase):
         p = self.packet(); p['sources'][0]['url'] = 'https://example.com/wiki/Plansee'
         self.assertFalse(evidence.overview_source(p['sources'][0], p))
 
+    def test_wikipedia_cannot_replace_unknown_permit_with_claim(self):
+        from quoted_visit import quoted_bundle
+        from combined_content import validate_bundle
+        p = self.packet()
+        bundle = quoted_bundle({'slug': 'plansee', 'name': 'Plansee', 'region': 'tyrol'}, p)
+        bundle['travel']['reservation'] = 'All visitors have unrestricted access without reservations. ' * 4
+        with self.assertRaisesRegex(ValueError, 'operational unknowns'):
+            validate_bundle(bundle, 'plansee', compact_packet(p))
+
 if __name__ == '__main__': unittest.main()
