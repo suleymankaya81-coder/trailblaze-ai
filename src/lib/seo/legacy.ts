@@ -40,12 +40,21 @@ const GONE_PREFIXES = [
 /** Switch on once the first UK places are published, so old UK pages land on the UK country page. */
 export const UK_PAGES_LIVE = true;
 
+/** Old directory country pages (archive-verified codes) → our live country pages. "/eu/au" is Austria, "/eu/es" Estonia, "/au" Australia. */
+export const AUTHORITY_COUNTRY: Record<string, string> = {
+  "/eu/au": "at", "/eu/ge": "de", "/eu/it": "it", "/eu/sp": "es", "/eu/uk": "gb", "/ca": "ca", "/us": "us",
+};
+
 export function authorityTarget(path: string, onAuthorityHost: boolean): string | null {
-  const p = path.toLowerCase();
-  if (p.startsWith("/eu/ge")) return "/de/destinations";
-  if (p.startsWith("/eu/uk")) return UK_PAGES_LIVE ? "/destinations/gb" : "/trip-guides";
-  if (p === "/eu" || p.startsWith("/eu/")) return "/trip-guides";
-  if (/^\/(af|as|au|sa|ca|ru|us)(\/|$)/.test(p) || /\.html?$/.test(p)) return "/destinations";
+  const p = path.toLowerCase().replace(/\.html?$/, "");
+  for (const [prefix, cc] of Object.entries(AUTHORITY_COUNTRY)) {
+    if (p === prefix || p.startsWith(prefix + "/") || p.startsWith(prefix + ".")) {
+      if (cc === "gb" && !UK_PAGES_LIVE) return "/trip-guides";
+      return `/destinations/${cc}`;
+    }
+  }
+  if (p === "/eu" || p.startsWith("/eu/")) return "/destinations";
+  if (/^\/(af|as|au|sa|ru|ce|me|in|ne|so)(\/|$)/.test(p) || /\.(html?|asp)$/.test(path.toLowerCase())) return "/destinations";
   if (onAuthorityHost && p === "/") return "/destinations";
   return null;
 }
