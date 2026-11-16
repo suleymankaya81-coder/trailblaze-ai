@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Piedmont",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco naturale del Monte San Giorgio"
+        "monte San Giorgio",
+        "cima dell'omonima montagna"
       ],
       "seo_title": "Parco naturale del Monte San Giorgio Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco naturale del Monte San Giorgio",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Mountain Peak and Slopes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco naturale del Monte San Giorgio",
-                "stop_id": "parco-naturale-del-monte-san-giorgio",
-                "detail": "The natural park of Monte San Giorgio is a protected natural area located in the municipality of Piossasco in the metropolitan city of Turin, in Piedmont, and established by the Province of Turin and entered with regional law 32 of 8-11-[dated source] in the system of protected areas of the Piedmont Region."
+                "name": "monte San Giorgio",
+                "stop_id": "parco-naturale-del-monte-san-giorgio--s1",
+                "detail": "The rocks that make up Monte San Giorgio are part of the Lanzo Ultrabasic Massif, a formation of deep origin."
+              },
+              {
+                "name": "cima dell'omonima montagna",
+                "stop_id": "parco-naturale-del-monte-san-giorgio--s2",
+                "detail": "The park protects 377 hectares entirely within the municipality of Piossasco and located at an altitude ranging from 300 to 837 m at the peak of the mountain of the same name."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale del Monte San Giorgio before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Southern Flora and Sangano Slopes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "zona meridionale del parco",
+                "stop_id": "parco-naturale-del-monte-san-giorgio--s3",
+                "detail": "In the southern area of the park lies one of the few remaining stations in Piedmont of a rare plant species, the Paeonia officinalis."
+              },
+              {
+                "name": "versante che volge verso Sangano",
+                "stop_id": "parco-naturale-del-monte-san-giorgio--s4",
+                "detail": "Salamanders are numerous on the slope facing towards Sangano along with newts; the insects are also interesting, among which a rich and differentiated presence of Carabids stands out."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco naturale del Monte San Giorgio before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_naturale_del_Monte_San_Giorgio"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_del_Monte_San_Giorgio"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:00:18.959690+00:00"
       }
     }
   }

@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Valle del Curone",
+      "quote": "Il parco regionale di Montevecchia e della Valle del Curone è un'area naturale protetta della Lombardia situata nel territorio dell'area di Merate, nella Brianza lecchese.",
+      "english": "The regional park of Montevecchia and the Curone Valley is a protected natural area of Lombardy located in the territory of the Merate area, in the Brianza region of Lecco."
+    },
+    {
+      "id": "s2",
+      "name": "Montevecchia",
+      "quote": "Il Parco si estende per una superficie di circa 3.809 ettari, che interessa dodici comuni: Airuno, Cernusco Lombardone, La Valletta Brianza, Lomagna, Merate, Missaglia, Montevecchia (che ne è sede), Olgiate Molgora, Osnago, Sirtori, Valgreghentino, Viganò.",
+      "english": "The Park extends over an area of approximately 3,809 hectares, which involves twelve municipalities: Airuno, Cernusco Lombardone, La Valletta Brianza, Lomagna, Merate, Missaglia, Montevecchia (which is its headquarters), Olgiate Molgora, Osnago, Sirtori, Valgreghentino, Viganò."
+    },
+    {
+      "id": "s3",
+      "name": "torrente Curone",
+      "quote": "Dal punto di vista idrografico, è attraversato dai torrenti Curone, Molgora, Lavandaia e Molgoretta.",
+      "english": "From a hydrographic point of view, it is crossed by the Curone, Molgora, Lavandaia and Molgoretta streams."
+    },
+    {
+      "id": "s4",
+      "name": "torrente Molgora",
+      "quote": "Dal punto di vista idrografico, è attraversato dai torrenti Curone, Molgora, Lavandaia e Molgoretta.",
+      "english": "From a hydrographic point of view, it is crossed by the Curone, Molgora, Lavandaia and Molgoretta streams."
+    },
+    {
+      "id": "s5",
+      "name": "torrente Lavandaia",
+      "quote": "Dal punto di vista idrografico, è attraversato dai torrenti Curone, Molgora, Lavandaia e Molgoretta.",
+      "english": "From a hydrographic point of view, it is crossed by the Curone, Molgora, Lavandaia and Molgoretta streams."
+    },
+    {
+      "id": "s6",
+      "name": "torrente Molgoretta",
+      "quote": "Dal punto di vista idrografico, è attraversato dai torrenti Curone, Molgora, Lavandaia e Molgoretta.",
+      "english": "From a hydrographic point of view, it is crossed by the Curone, Molgora, Lavandaia and Molgoretta streams."
+    },
+    {
+      "id": "s7",
+      "name": "anfiteatro morenico",
+      "quote": "Dal punto di vista geologico, il parco costituisce un luogo interessante poiché è l'ultima propaggine di un anfiteatro morenico.",
+      "english": "From a geological point of view, the park constitutes an interesting place since it is the last offshoot of a morainic amphitheater."
+    }
+  ],
+  "days": [
+    {
+      "title": "Heart of the Park and Valley",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "The Streams of the Brianza",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

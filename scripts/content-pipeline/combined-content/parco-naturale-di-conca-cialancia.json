@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Piedmont",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco naturale di Conca Cialancia"
+        "Lago Lauson",
+        "Bivacco Formaggino"
       ],
       "seo_title": "Parco naturale di Conca Cialancia Visit Guide"
     },
@@ -32,16 +33,57 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco naturale di Conca Cialancia",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Lower Basin and Northwest Pastures",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco naturale di Conca Cialancia",
-                "stop_id": "parco-naturale-di-conca-cialancia",
-                "detail": "Conca Cialancia Natural Park is a protected natural area located in the upper Val Germanasca, entirely included in the territory of the municipality of Perrero, in the metropolitan city of Turin (Piemonte)."
+                "name": "Lago Lauson",
+                "stop_id": "parco-naturale-di-conca-cialancia--s3",
+                "detail": "It can be reached by car via a narrow, mostly unpaved former military road that in about 15 km leads to the vicinity of Lake Lauson (2,017 m), where there is a mountain pasture farm selling cheese, a picnic area with tables, and a fountain."
+              },
+              {
+                "name": "Bivacco Formaggino",
+                "stop_id": "parco-naturale-di-conca-cialancia--s4",
+                "detail": "In a north-westerly direction, it continues level and crosses a ridge, where the Formaggino Bivouac is located (closed), used by the Park Authority, before descending through some hairpins to reach the old, now abandoned mountain huts of Alpe Cialancia (1,845 m), near the stream of the same name"
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale di Conca Cialancia before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "The High Lakes and the Basin Rim",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Rocca Bianca",
+                "stop_id": "parco-naturale-di-conca-cialancia--s2",
+                "detail": "It also includes the Basin (2,451 m) with the small lakes and the south-east slope of Rocca Bianca."
+              },
+              {
+                "name": "Laghi Cialancia",
+                "stop_id": "parco-naturale-di-conca-cialancia--s6",
+                "detail": "In a southerly direction, it overcomes a height difference with two hairpins, before starting a wide arc in a south-westerly direction slightly uphill, which runs along the perimeter of the basin until ending at its head, where the Cialancia Lakes (2,455 m) and the ruins of the relative mountain huts are located"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale di Conca Cialancia before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Summit Ridges and High Passes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Punta Cialancia",
+                "stop_id": "parco-naturale-di-conca-cialancia--s1",
+                "detail": "It is situated in mountainous territory with an altitude between 1,796 and the 2,855 m of Punta Cialancia."
+              },
+              {
+                "name": "Passo della Cialancia",
+                "stop_id": "parco-naturale-di-conca-cialancia--s7",
+                "detail": "From the Cialancia Lakes, the path continues and reaches the Cialancia Pass (2,683 m), which connects the Cialancia Basin with the Plateau of the Thirteen Lakes, a hiking access point for the ridges of Punta Cialancia (to the south) and Punta Founset (to the north)"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco naturale di Conca Cialancia before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +121,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_naturale_di_Conca_Cialancia"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_di_Conca_Cialancia"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:01:32.855656+00:00"
       }
     }
   }

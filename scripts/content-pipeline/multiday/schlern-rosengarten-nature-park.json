@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "punta Santner",
+      "quote": "Il parco è famoso per due delle sue cime più famose: la punta Santner e la punta Euringer.",
+      "english": "The park is famous for two of its most famous peaks: the Santner peak and the Euringer peak."
+    },
+    {
+      "id": "s2",
+      "name": "punta Euringer",
+      "quote": "Il parco è famoso per due delle sue cime più famose: la punta Santner e la punta Euringer.",
+      "english": "The park is famous for two of its most famous peaks: the Santner peak and the Euringer peak."
+    },
+    {
+      "id": "s3",
+      "name": "monte Pez",
+      "quote": "Lo Sciliar (Schlern) ha come punto più alto il monte Pez, con i suoi 2.563 metri s.l.m.",
+      "english": "The Sciliar (Schlern) has Mount Pez as its highest point, at 2,563 meters above sea level."
+    },
+    {
+      "id": "s4",
+      "name": "Lago di Fiè",
+      "quote": "Oltre a questo centro visite, presso il lago di Fiè si trova un punto informativo (Infostelle Völser Weiher).",
+      "english": "In addition to this visitor center, an information point (Infostelle Völser Weiher) is located at the lake of Fiè."
+    },
+    {
+      "id": "s5",
+      "name": "Siusi",
+      "quote": "In 2022 è stato aperto a Siusi il centro visite del parco che dedica molto spazio alla geologia unica del parco, nonché alla vegetazione e alla fauna.",
+      "english": "In 2022, the park's visitor center was opened in Siusi, which dedicates much space to the park's unique geology, as well as its vegetation and fauna."
+    },
+    {
+      "id": "s6",
+      "name": "punto informativo Steger Säge",
+      "quote": "Nei pressi dei Bagni di Lavina Bianca (Weißlahnbad), nel comune di Tires, è situato il \"punto informativo Steger Säge\", allestito dentro ad un vecchio mulino ad acqua che faceva funzionare una segheria idraulica, attiva sin dal lontano 1598 fino alla fine degli anni 1950.",
+      "english": "Near the Bagni di Lavina Bianca (Weißlahnbad), in the municipality of Tires, is the \"Steger Säge information point\", set up inside an old water mill that operated a hydraulic sawmill, active from as far back as 1598 until the late 1950s."
+    },
+    {
+      "id": "s7",
+      "name": "Catinaccio",
+      "quote": "Dall'anno 2003 anche il Catinaccio fa parte dell'area naturale.",
+      "english": "Since the year 2003, the Catinaccio has also been part of the natural area."
+    }
+  ],
+  "days": [
+    {
+      "title": "Peaks of Sciliar and Catinaccio",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Visitor Centres and Lakes",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

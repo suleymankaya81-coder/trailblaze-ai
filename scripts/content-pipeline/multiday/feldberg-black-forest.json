@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Seebuck",
+      "quote": "Vom Seebuck aus fällt der Feldberg nach Nordosten steil zum Feldsee ab.",
+      "english": "From the Seebuck, the Feldberg falls steeply to the northeast towards the Feldsee."
+    },
+    {
+      "id": "s2",
+      "name": "Feldsee",
+      "quote": "Nach und nach schuf das Eis auf diese Weise den 33 m tiefen Feldsee.",
+      "english": "Bit by bit, the ice created the 33 m deep Feldsee in this way."
+    },
+    {
+      "id": "s3",
+      "name": "Feldseemoor",
+      "quote": "Auch das Feldseemoor, ein paar Meter weiter gelegen, ist ein Überbleibsel der Eiszeit.",
+      "english": "The Feldseemoor, located a few meters further away, is also a remnant of the Ice Age."
+    },
+    {
+      "id": "s4",
+      "name": "Feldbergturm",
+      "quote": "Auf dem Seebuck befindet sich der Feldbergturm, ein ehemaliger Funkturm, der als Aussichtsturm dient und seit 2013 ein Schwarzwälder-Schinken-Museum beherbergt.",
+      "english": "The Feldberg Tower, a former radio tower that serves as an observation tower and has housed a Black Forest Ham Museum since 2013, is located on the Seebuck."
+    },
+    {
+      "id": "s5",
+      "name": "Bismarckdenkmal",
+      "quote": "Erkennbar ist der Feldberg heute am alten und am neuen Fernsehturm sowie am Bismarckdenkmal auf dem Seebuck.",
+      "english": "The Feldberg is recognizable today by the old and new television towers as well as the Bismarck monument on the Seebuck."
+    },
+    {
+      "id": "s6",
+      "name": "Naturschutzzentrum Südschwarzwald",
+      "quote": "Seit 2001 obliegt die Schutzgebietsbetreuung dem Naturschutzzentrum Südschwarzwald im Haus der Natur, das zudem als Verwaltungssitz des Naturparks Südschwarzwald dient.",
+      "english": "Since 2001, the management of the protected area has been the responsibility of the Southern Black Forest Nature Conservation Centre in the House of Nature, which also serves as the administrative headquarters of the Southern Black Forest Nature Park."
+    },
+    {
+      "id": "s7",
+      "name": "Der Wichtelpfad im Auerhahnwald",
+      "quote": "Neben einer interaktiven Dauerausstellung dort, gibt es direkt hinter dem Haus seit 2005 den Naturerlebnispfad „Der Wichtelpfad im Auerhahnwald“.",
+      "english": "In addition to an interactive permanent exhibition there, the nature discovery trail 'The Gnome Path in the Capercaillie Forest' has existed directly behind the house since 2005."
+    },
+    {
+      "id": "s8",
+      "name": "Friedrich-Luise-Turm",
+      "quote": "Der höchste Geländepunkt liegt auf einem flachen Hügel etwa 20 m westlich des Friedrich-Luise-Turms.",
+      "english": "The highest point of the terrain lies on a flat hill about 20 m west of the Friedrich-Luise Tower."
+    }
+  ],
+  "days": [
+    {
+      "title": "Summit Peaks and Scenic Monuments",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5",
+        "s8"
+      ]
+    },
+    {
+      "title": "Glacial Lakes and Nature Education",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "e484a113dcbbff80c5064f2de2e2805a848bec36d114412e65428b9a835b1d34"
+}

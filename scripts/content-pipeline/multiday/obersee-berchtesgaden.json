@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Obersee",
+      "quote": "Der Obersee ist ein natürlicher Bergsee in den Berchtesgadener Alpen.",
+      "english": "The Obersee is a natural mountain lake in the Berchtesgaden Alps."
+    },
+    {
+      "id": "s2",
+      "name": "Fischunkelalm",
+      "quote": "Am Südufer liegt auf einer Höhe von 620 m die 500 Jahre alte Fischunkelalm, die von Mitte Mai bis Mitte Oktober von zwei Sennerinnen bewirtschaftet wird.",
+      "english": "The 500-year-old Fischunkelalm is located on the southern shore at an altitude of 620 m and is managed by two dairymaids from mid-May to mid-October."
+    },
+    {
+      "id": "s3",
+      "name": "Röthbachfall",
+      "quote": "Von der dahinter aufsteigenden 470 m hohen Röthwand stürzt der Röthbachfall auf den Almboden herab, und von der nördlich sich anschließenden Brustwand der Landtalgraben.",
+      "english": "From the 470 m high Röthwand rising behind it, the Röthbachfall plunges onto the alpine meadows, and from the adjoining Brustwand to the north, the Landtalgraben."
+    },
+    {
+      "id": "s4",
+      "name": "Saletalm",
+      "quote": "Der Schutt eines im Jahr 1172 niedergegangenen Bergsturzes liegt in Form mächtiger Blöcke noch heute sichtbar im Auwald des Talgrunds und den Aualmen der Saletalm.",
+      "english": "The debris from a landslide that occurred in 1172 is still visible today in the form of massive blocks in the alluvial forest of the valley floor and the meadows of the Saletalm."
+    },
+    {
+      "id": "s5",
+      "name": "Mittersee",
+      "quote": "Auf halbem Wege zum Königssee weitet sich der Bach nach Süden zum kleinen Mittersee.",
+      "english": "Halfway to the Königssee, the stream widens to the south into the small Mittersee."
+    },
+    {
+      "id": "s6",
+      "name": "Saletbach",
+      "quote": "Der Obersee speist über einen rund 600 m langen Wildbach den Königssee, der Saletbach genannt wird.",
+      "english": "The Obersee feeds the Königssee via an approximately 600 m long torrent called the Saletbach."
+    },
+    {
+      "id": "s7",
+      "name": "Fischunkel",
+      "quote": "Die Bäche vereinigen sich und versickern in der Fischunkel, dem hintersten Teil des Tals, und fließen dem Obersee unterirdisch zu.",
+      "english": "The streams join and seep into the Fischunkel, the rearmost part of the valley, and flow underground into the Obersee."
+    }
+  ],
+  "days": [
+    {
+      "title": "Obersee and the Southern Valley",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Northern Meadows and Waterways",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "92e4ea58db76be8c218586551237d0b8220ce8b4cb1afc78d891a25268f2ba78"
+}

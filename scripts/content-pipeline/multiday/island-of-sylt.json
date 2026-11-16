@@ -1,0 +1,106 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Westerland",
+      "quote": "Bekannt ist die nördlichste deutsche Insel vor allem durch ihre Kurorte Westerland, Kampen und Wenningstedt, für verbreitetes Nacktbaden und durch den circa 40 Kilometer langen Weststrand.",
+      "english": "The northernmost German island is known primarily for its spas Westerland, Kampen and Wenningstedt, for widespread nude bathing and for the approximately 40-kilometer-long west beach."
+    },
+    {
+      "id": "s2",
+      "name": "Kampen",
+      "quote": "Ihre höchste Erhebung ist die Uwe-Düne in Kampen mit 52,5 m ü. NHN.",
+      "english": "Its highest elevation is the Uwe-Düne in Kampen at 52.5 m above sea level."
+    },
+    {
+      "id": "s3",
+      "name": "Wenningstedt",
+      "quote": "Dieser Geestkern erodierte, nachdem ihn der Anstieg des Meeresspiegels vor 8000 Jahren der starken Strömung entlang des steilen Inselsockels aussetzte.",
+      "english": "This geest core eroded after the rise in sea level 8,000 years ago exposed it to strong currents along the steep island base."
+    },
+    {
+      "id": "s4",
+      "name": "Königshafen",
+      "quote": "Sylt erstreckt sich über 38,0 Kilometer in Nord-Süd-Richtung und ist im Norden, am Königshafen bei List auf Sylt, nur etwa 320 Meter breit.",
+      "english": "Sylt extends over 38.0 kilometers in a north-south direction and is only about 320 meters wide in the north, at the Königshafen near List on Sylt."
+    },
+    {
+      "id": "s5",
+      "name": "List",
+      "quote": "Aktuelle Klima- und Wetterdaten liefern seit 1937 die mittlerweile automatisierte nördlichste Wetterstation des Deutschen Wetterdienstes auf einer Düne bei List und einige Stationen kommerzieller Wetterbeobachter wie MeteoGroup Schweiz, ebenfalls in List.",
+      "english": "Since 1937, current climate and weather data have been provided by the now automated northernmost weather station of the German Weather Service on a dune near List and several stations of commercial weather observers such as MeteoGroup Switzerland, also in List."
+    },
+    {
+      "id": "s6",
+      "name": "Nössespitze",
+      "quote": "An ihrer breitesten Stelle, von Westerland im Westen bis zur Nössespitze bei Morsum im Osten, misst sie 12,6 Kilometer.",
+      "english": "At its widest point, from Westerland in the west to the Nössespitze near Morsum in the east, it measures 12.6 kilometers."
+    },
+    {
+      "id": "s7",
+      "name": "Morsum",
+      "quote": "Der Mittelteil der Insel im Bereich der ehemaligen Gemeinden Westerland, Wenningstedt und Sylt-Ost ruht auf einem Geestkern, der von See aus in Form des Roten Kliffs sichtbar ist.",
+      "english": "The middle part of the island in the area of the former municipalities of Westerland, Wenningstedt and Sylt-Ost rests on a geest core, which is visible from the sea in the form of the Red Cliff."
+    },
+    {
+      "id": "s8",
+      "name": "Rotes Kliff",
+      "quote": "Der Mittelteil der Insel im Bereich der ehemaligen Gemeinden Westerland, Wenningstedt und Sylt-Ost ruht auf einem Geestkern, der von See aus in Form des Roten Kliffs sichtbar ist.",
+      "english": "The middle part of the island in the area of the former municipalities of Westerland, Wenningstedt and Sylt-Ost rests on a geest core, which is visible from the sea in the form of the Red Cliff."
+    },
+    {
+      "id": "s9",
+      "name": "Uwe-Düne",
+      "quote": "Ihre höchste Erhebung ist die Uwe-Düne in Kampen mit 52,5 m ü. NHN.",
+      "english": "Its highest elevation is the Uwe-Düne in Kampen at 52.5 m above sea level."
+    },
+    {
+      "id": "s10",
+      "name": "Ellenbogen",
+      "quote": "Durch die Entstehung des Ellenbogens versandete der Königshafen bei List ab der zweiten Hälfte des 17. Jahrhunderts.",
+      "english": "Due to the creation of the Ellenbogen, the Königshafen near List silted up from the second half of the 17th century."
+    },
+    {
+      "id": "s11",
+      "name": "Hörnum",
+      "quote": "Vor dem Hörnumer Weststrand sind sie deshalb ab Mitte 2005 zum Teil wieder entfernt worden.",
+      "english": "For this reason, some of them were removed again from the Hörnum west beach starting in mid-2005."
+    },
+    {
+      "id": "s12",
+      "name": "Rantum",
+      "quote": "Besonders gefährdet ist dabei eine nur rund 500 Meter breite Schmalstelle südlich von Rantum.",
+      "english": "A narrow point only about 500 meters wide south of Rantum is particularly at risk."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Dunes and Harbors",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s10",
+        "s2",
+        "s9"
+      ]
+    },
+    {
+      "title": "Central Resorts and Cliffs",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Southern Coastal Protection",
+      "stop_ids": [
+        "s11",
+        "s12"
+      ]
+    }
+  ],
+  "_text_sha": "f9f44a69669a18283de5e52ce58d6869604d13c69bc5a265b58e8b7531e350e9"
+}

@@ -1,0 +1,60 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Monte Sole",
+      "quote": "Il territorio del parco si sovrappone quasi interamente con il sito di interesse comunitario Monte Sole (IT4050003).",
+      "english": "The territory of the park overlaps almost entirely with the site of community interest Monte Sole (IT4050003)."
+    },
+    {
+      "id": "s2",
+      "name": "Pian di Misano",
+      "quote": "All'inizio del secolo V a.C., nasce l'insediamento etrusco di Pian di Misano, che si estendeva fino alle porte dell'odierno abitato di Marzabotto, che era anche l'ultima area pianeggiante di una certa ampiezza prima dell'Appennino.",
+      "english": "At the beginning of the 5th century BC, the Etruscan settlement of Pian di Misano was born, which extended to the gates of today's town of Marzabotto, which was also the last flat area of a certain size before the Apennines."
+    },
+    {
+      "id": "s3",
+      "name": "acquedotto romano",
+      "quote": "Databile intorno al 15 a.C., l'acquedotto romano è tuttora in funzione, dopo il recupero ottocentesco, e continua a servire acqua a Bologna.",
+      "english": "Dating back to around 15 BC, the Roman aqueduct is still in operation, after the nineteenth-century recovery, and continues to serve water to Bologna."
+    },
+    {
+      "id": "s4",
+      "name": "Centro Visite",
+      "quote": "Sono presenti nel parco percorsi per mountain bike e a cavallo (presso il Centro Visite è presente anche un posto di sosta), è vietato fare motocross.",
+      "english": "There are mountain bike and horse riding trails in the park (there is also a rest stop at the Visitor Center), and motocross is prohibited."
+    },
+    {
+      "id": "s5",
+      "name": "Kainua",
+      "quote": "Percorso storico - gli Etruschi: numerosi i resti di questo antico passato, la città di Kainua con le sue necropoli, ed altri ritrovamenti in diverse zone del parco",
+      "english": "Historical path - the Etruscans: numerous remains of this ancient past, the city of Kainua with its necropolises, and other findings in different areas of the park"
+    },
+    {
+      "id": "s6",
+      "name": "Percorso storico - l'Eccidio di Monte Sole",
+      "quote": "Percorso storico - l'Eccidio di Monte Sole: ripercorre le zone e le vicende dell'eccidio nazifascista e la storia della brigata partigiana Stella Rossa",
+      "english": "Historical path - the Monte Sole Massacre: traces the areas and events of the Nazi-Fascist massacre and the history of the Stella Rossa partisan brigade"
+    },
+    {
+      "id": "s7",
+      "name": "Percorso artistico - Giorgio Morandi",
+      "quote": "Percorso artistico - Giorgio Morandi: osserva il paesaggio e ricerca quell'ispirazione che Morandi ha fissato su tela",
+      "english": "Artistic path - Giorgio Morandi: observe the landscape and search for that inspiration that Morandi fixed on canvas"
+    }
+  ],
+  "days": [
+    {
+      "title": "History, Nature and Art of Monte Sole",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

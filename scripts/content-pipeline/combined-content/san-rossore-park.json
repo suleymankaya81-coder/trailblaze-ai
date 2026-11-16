@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Tuscany",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco naturale di Migliarino, San Rossore, Massaciuccoli"
+        "Macchia Lucchese",
+        "Tenuta di Migliarino"
       ],
       "seo_title": "San Rossore Park Visit Guide"
     },
@@ -32,16 +33,62 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: San Rossore Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Northern Forests and Waters",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco naturale di Migliarino, San Rossore, Massaciuccoli",
-                "stop_id": "san-rossore-park",
-                "detail": "The natural park of Migliarino, San Rossore, Massaciuccoli is a protected natural area located in the provinces of Pisa and Lucca, established with LR Toscana n. 61 of 13 December 1979."
+                "name": "Macchia Lucchese",
+                "stop_id": "san-rossore-park--s2",
+                "detail": "The Macchia Lucchese is the wooded strip to the north, enclosed between Viareggio, Torre del Lago Puccini and the coast."
+              },
+              {
+                "name": "Tenuta di Migliarino",
+                "stop_id": "san-rossore-park--s3",
+                "detail": "In the Migliarino estate there are the remains of what was the headquarters of the 10th MAS Flotilla of the Royal Navy during WWII."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for San Rossore Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Coastal Estates and Information",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Centro Visite",
+                "stop_id": "san-rossore-park--s7",
+                "detail": "For guided tours it is possible to contact the Visitor Centre every day and enter with a guide."
+              },
+              {
+                "name": "La Sterpaia",
+                "stop_id": "san-rossore-park--s8",
+                "detail": "The former Presidential Estate of San Rossore is open to the public every day in the area between Cascine Vecchie and La Sterpaia."
+              },
+              {
+                "name": "Tenuta di Tombolo",
+                "stop_id": "san-rossore-park--s5",
+                "detail": "Inside the area there is also the CISAM (in which the first Italian nuclear reactor \"Galileo Galilei\" was installed) and, in the Tombolo Estate, the US Army base of Camp Darby."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for San Rossore Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Southern Estates and Marine Shallows",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Tenuta di Coltano",
+                "stop_id": "san-rossore-park--s6",
+                "detail": "The Macchia Lucchese, Lake Massaciuccoli, the Coltano Estate and part of the Migliarino and Tombolo estates can be visited freely."
+              },
+              {
+                "name": "Secche della Meloria",
+                "stop_id": "san-rossore-park--s4",
+                "detail": "The Meloria shoals complete the management areas of the park, an important system of shallows with two outcropping rocks and seabeds of important naturalistic value."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for San Rossore Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +126,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_naturale_di_Migliarino%2C_San_Rossore%2C_Massaciuccoli"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_di_Migliarino%2C_San_Rossore%2C_Massaciuccoli"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:08:22.369910+00:00"
       }
     }
   }

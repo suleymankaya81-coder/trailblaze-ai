@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lombardy",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco dei Colli di Bergamo"
+        "città Alta",
+        "orto botanico",
+        "Chiesa della Natività della Beata Vergine Maria"
       ],
       "seo_title": "Parco dei Colli di Bergamo Visit Guide"
     },
@@ -32,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco dei Colli di Bergamo",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Historic Hills and Botanical Gardens",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco dei Colli di Bergamo",
-                "stop_id": "parco-dei-colli-di-bergamo",
-                "detail": "Parco dei Colli di Bergamo is a natural park in the province of Bergamo, Lombardy, northern Italy."
+                "name": "città Alta",
+                "stop_id": "parco-dei-colli-di-bergamo--s2",
+                "detail": "The area, extending over 4700 [hectares] and including the historic area of the Upper City and the Bergamo hills, features numerous terraces with vegetable gardens, vineyards, and meadows."
+              },
+              {
+                "name": "orto botanico",
+                "stop_id": "parco-dei-colli-di-bergamo--s3",
+                "detail": "The park is considered the green lung of the city where there is the presence of a botanical garden with an educational trail."
+              },
+              {
+                "name": "Chiesa della Natività della Beata Vergine Maria",
+                "stop_id": "parco-dei-colli-di-bergamo--s7",
+                "detail": "Church of the Nativity of the Blessed Virgin Mary (Bergamo)"
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco dei Colli di Bergamo before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Peaks, Convents and Agricultural Belts",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Ex convento di Santa Maria in Valmarina",
+                "stop_id": "parco-dei-colli-di-bergamo--s4",
+                "detail": "The administrative headquarters of the park is located in the Former Convent of Santa Maria in Valmarina."
+              },
+              {
+                "name": "Parco Agricolo Ecologico Madonna dei Campi",
+                "stop_id": "parco-dei-colli-di-bergamo--s5",
+                "detail": "The inclusion into the protected area of the PLIS ‘Madonna dei Campi Ecological Agricultural Park’, in the neighborhoods of Grumello del Piano and Colognola, added 257 hectares to the Parco dei Colli and created a green belt south of the city of Bergamo, safeguarding an area that had remained without buildings in an otherwise heavily urbanized context."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco dei Colli di Bergamo before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +109,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Parco_dei_Colli_di_Bergamo"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_dei_Colli_di_Bergamo"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:58:34.003810+00:00"
       }
     }
   }

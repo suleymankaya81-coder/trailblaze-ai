@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Camogli",
+      "quote": "L'ente è costituito principalmente dai comuni di Camogli, Portofino e Santa Margherita Ligure, quest'ultima sede del parco e dell'area naturale marina protetta Portofino.",
+      "english": "The entity is mainly composed of the municipalities of Camogli, Portofino and Santa Margherita Ligure, the latter being the headquarters of the park and the Portofino marine protected area."
+    },
+    {
+      "id": "s2",
+      "name": "Portofino",
+      "quote": "Dal 2021 il presidente dell'Ente Parco è Matteo Viacava, sindaco di Portofino dal 2016.",
+      "english": "Since 2021, the president of the Park Authority is Matteo Viacava, mayor of Portofino since 2016."
+    },
+    {
+      "id": "s3",
+      "name": "Santa Margherita Ligure",
+      "quote": "L'opera venne presa molto in considerazione, specie dal presidente della Provincia di Genova e dal prefetto genovese, ma il finanziamento non arrivò dal governo di Roma e l'ambito progetto non decollò mai dall'idea di costruire una strada che partendo dal comune di Camogli giungesse a Santa Margherita Ligure passando per il monte di Portofino.",
+      "english": "The work was taken into great consideration, especially by the president of the Province of Genoa and the Genoese prefect, but funding did not arrive from the government in Rome and the ambitious project never took off from the idea of building a road starting from the municipality of Camogli to reach Santa Margherita Ligure passing through the mount of Portofino."
+    },
+    {
+      "id": "s4",
+      "name": "monte di Portofino",
+      "quote": "Nel 1978 l'Ente Parco Monte di Portofino venne soppresso dalla legge 70 del 1975 mettendo il territorio sotto la tutela della Regione Liguria, gestione che portò alla creazione di un parco regionale proteggendo l'intera area fino ai giorni nostri.",
+      "english": "In 1978, the Monte di Portofino Park Authority was abolished by law 70 of 1975, placing the territory under the protection of the Liguria Region, a management that led to the creation of a regional park protecting the entire area to the present day."
+    },
+    {
+      "id": "s5",
+      "name": "Nozarego",
+      "quote": "Tra gli anfibi è presente la raganella mediterranea frequente attorno alla frazione di Nozarego e sopra Cala dell'Oro, il rospo comune abbondantissimo ovunque.",
+      "english": "Among the amphibians is the Mediterranean tree frog, frequent around the hamlet of Nozarego and above Cala dell'Oro, while the common toad is very abundant everywhere."
+    },
+    {
+      "id": "s6",
+      "name": "Cala dell'Oro",
+      "quote": "Tra gli anfibi è presente la raganella mediterranea frequente attorno alla frazione di Nozarego e sopra Cala dell'Oro, il rospo comune abbondantissimo ovunque.",
+      "english": "Among the amphibians is the Mediterranean tree frog, frequent around the hamlet of Nozarego and above Cala dell'Oro, while the common toad is very abundant everywhere."
+    },
+    {
+      "id": "s7",
+      "name": "faro di Portofino",
+      "quote": "Interessante è la presenza dello scoiattolo rosso, che si osserva spesso, specialmente presso la zona del faro di Portofino.",
+      "english": "Interesting is the presence of the red squirrel, which is often observed, especially near the Portofino lighthouse area."
+    }
+  ],
+  "days": [
+    {
+      "title": "Villages and the Mountain",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Hamlets and Coastal Landmarks",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

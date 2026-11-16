@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Eremo Monte Barro",
+      "quote": "L'Eremo Monte Barro, già parte delle fortificazioni altomedievali, venne ampiamente modificato in età rinascimentale, e successivamente adibito a scopi religiosi.",
+      "english": "The Monte Barro Hermitage, already part of early medieval fortifications, was extensively modified during the Renaissance and subsequently used for religious purposes."
+    },
+    {
+      "id": "s2",
+      "name": "Museo archeologico del Barro",
+      "quote": "In località eremo del Monte Barro, nel centro parco per l'educazione ambientale, sono stati realizzati il principale centro visite del parco (dotato di un ostello e bar-ristorante), un'aula didattica e il Museo archeologico del Barro, che espone i principali reperti rinvenuti nelle campagne di scavo archeologico.",
+      "english": "In the Monte Barro hermitage area, within the park center for environmental education, the park's main visitor center (equipped with a hostel and bar-restaurant), a classroom, and the Barro Archaeological Museum, which exhibits the main finds from archaeological excavation campaigns, have been established."
+    },
+    {
+      "id": "s3",
+      "name": "Piani di Barra",
+      "quote": "Un altro sito del parco di particolare interesse è il parco archeologico dei Piani di Barra, ove è possibile visitare i resti archeologici di fortificazioni tardo romane, e utilizzate dagli Ostrogoti alla caduta dell'Impero romano d'Occidente.",
+      "english": "Another site of the park of particular interest is the archaeological park of Piani di Barra, where it is possible to visit the archaeological remains of late Roman fortifications, used by the Ostrogoths at the fall of the Western Roman Empire."
+    },
+    {
+      "id": "s4",
+      "name": "Monte Castelletto",
+      "quote": "Si possono prenotare interventi in classe, escursioni e attività pratiche sul campo e nelle varie strutture e destinazioni del Parco (il Centro Visitatori all'Eremo, le due aule didattiche, la Stazione Ornitologica di Costa Perla, il Museo Etnografico dell’Alta Brianza e il Museo Archeologico del Barro, le Aree archeologiche dei Piani di Barra e di Monte Castelletto, la Chiesa incompiuta di San Michele, il Centro Studi della flora autoctona).",
+      "english": "Class interventions, excursions and practical field activities can be booked in the various structures and destinations of the Park (the Visitor Center at the Hermitage, the two teaching rooms, the Costa Perla Ornithological Station, the Ethnographic Museum of Alta Brianza and the Barro Archaeological Museum, the archaeological areas of Piani di Barra and Monte Castelletto, the unfinished Church of San Michele, the Study Center for native flora)."
+    },
+    {
+      "id": "s5",
+      "name": "Museo Etnografico dell'Alta Brianza",
+      "quote": "In località Camporeso si trova il Museo Etnografico dell'Alta Brianza.",
+      "english": "The Ethnographic Museum of Alta Brianza is located in the locality of Camporeso."
+    },
+    {
+      "id": "s6",
+      "name": "Stazione Ornitologica di Costa Perla",
+      "quote": "Si possono prenotare interventi in classe, escursioni e attività pratiche sul campo e nelle varie strutture e destinazioni del Parco (il Centro Visitatori all'Eremo, le due aule didattiche, la Stazione Ornitologica di Costa Perla, il Museo Etnografico dell’Alta Brianza e il Museo Archeologico del Barro, le Aree archeologiche dei Piani di Barra e di Monte Castelletto, la Chiesa incompiuta di San Michele, il Centro Studi della flora autoctona).",
+      "english": "Class interventions, excursions and practical field activities can be booked in the various structures and destinations of the Park (the Visitor Center at the Hermitage, the two teaching rooms, the Costa Perla Ornithological Station, the Ethnographic Museum of Alta Brianza and the Barro Archaeological Museum, the archaeological areas of Piani di Barra and Monte Castelletto, the unfinished Church of San Michele, the Study Center for native flora)."
+    },
+    {
+      "id": "s7",
+      "name": "Chiesa incompiuta di San Michele",
+      "quote": "Si possono prenotare interventi in classe, escursioni e attività pratiche sul campo e nelle varie strutture e destinazioni del Parco (il Centro Visitatori all'Eremo, le due aule didattiche, la Stazione Ornitologica di Costa Perla, il Museo Etnografico dell’Alta Brianza e il Museo Archeologico del Barro, le Aree archeologiche dei Piani di Barra e di Monte Castelletto, la Chiesa incompiuta di San Michele, il Centro Studi della flora autoctona).",
+      "english": "Class interventions, excursions and practical field activities can be booked in the various structures and destinations of the Park (the Visitor Center at the Hermitage, the two teaching rooms, the Costa Perla Ornithological Station, the Ethnographic Museum of Alta Brianza and the Barro Archaeological Museum, the archaeological areas of Piani di Barra and Monte Castelletto, the unfinished Church of San Michele, the Study Center for native flora)."
+    },
+    {
+      "id": "s8",
+      "name": "Villa Bertarelli",
+      "quote": "La sede del parco è collocata in Galbiate, presso Villa Bertarelli, dove ha sede anche il centro regionale Flora Autoctona della Lombardia.",
+      "english": "The park headquarters is located in Galbiate, at Villa Bertarelli, which is also home to the regional Native Flora Center of Lombardy."
+    }
+  ],
+  "days": [
+    {
+      "title": "Hermitage and Archaeological Finds",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "History and Nature Studies",
+      "stop_ids": [
+        "s4",
+        "s6",
+        "s8"
+      ]
+    },
+    {
+      "title": "Traditions and Sacred Architecture",
+      "stop_ids": [
+        "s5",
+        "s7"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Apulia",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco naturale regionale Bosco e Paludi di Rauccio"
+        "lecceta",
+        "bacino dell'Idume"
       ],
       "seo_title": "Parco naturale regionale Bosco e Paludi di Rauccio Visit Gui"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco naturale regionale Bosco e Paludi di Rauccio",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Natural Wetlands and Forests",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco naturale regionale Bosco e Paludi di Rauccio",
-                "stop_id": "parco-naturale-regionale-bosco-e-paludi-di-rauccio",
-                "detail": "The Regional Natural Park Bosco e Paludi di Rauccio is a natural protected area of Puglia, which extends altogether to an area of 1593 hectares established in [dated source]."
+                "name": "lecceta",
+                "stop_id": "parco-naturale-regionale-bosco-e-paludi-di-rauccio--s1",
+                "detail": "18 hectares of land are occupied by a holm oak forest, a residual witness of the \"forest of Lecce\", a wooded area that in the Middle Ages developed in an area between Lecce, the Adriatic coast, Otranto and Brindisi."
+              },
+              {
+                "name": "bacino dell'Idume",
+                "stop_id": "parco-naturale-regionale-bosco-e-paludi-di-rauccio--s3",
+                "detail": "In the spring season hoopoes and turtle doves station there, while sometimes during the winter, the presence of the swan has been recorded in the Idume basin."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale regionale Bosco e Paludi di Rauccio before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Rauccio Complex and Wildlife Center",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "complesso masserizio di Rauccio",
+                "stop_id": "parco-naturale-regionale-bosco-e-paludi-di-rauccio--s6",
+                "detail": "In the internal area, there are the masserie Barone Vecchio, dating back to the middle of the 16th century, and the Rauccio farm complex from the 17th century, consisting of the farmhouse, the Dovecote Tower and the Chapel, of which few traces remain."
+              },
+              {
+                "name": "acquaterrario",
+                "stop_id": "parco-naturale-regionale-bosco-e-paludi-di-rauccio--s7",
+                "detail": "The farmhouse, recently restored, houses the aqua-terrarium and is the headquarters of the WWF which carries out protection and enhancement activities of the park here."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco naturale regionale Bosco e Paludi di Rauccio before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_Bosco_e_Paludi_di_Rauccio"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_Bosco_e_Paludi_di_Rauccio"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:02:11.168087+00:00"
       }
     }
   }

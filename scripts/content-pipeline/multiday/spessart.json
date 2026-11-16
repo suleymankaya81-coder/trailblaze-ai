@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Geiersberg",
+      "quote": "Die höchste Erhebung ist mit 586 m ü. NHN der Geiersberg im Hohen Spessart.",
+      "english": "The highest elevation at 586 m above sea level is the Geiersberg in the High Spessart."
+    },
+    {
+      "id": "s2",
+      "name": "Geishöhe",
+      "quote": "Die Geishöhe, offiziell Oberwintersbach (Ortsteil von Dammbach), ist mit 521 m ü. NHN Höhe die höchstgelegene Besiedelung im Spessart.",
+      "english": "The Geishöhe, officially Oberwintersbach (a district of Dammbach), is the highest settlement in the Spessart at an altitude of 521 m above sea level."
+    },
+    {
+      "id": "s3",
+      "name": "Heinrichsthal",
+      "quote": "Die Ortschaft Heinrichsthal im Nordspessart ist mit 436 m ü. NHN Höhe die höchstgelegene selbständige Gemeinde im Spessart.",
+      "english": "The village of Heinrichsthal in the North Spessart is the highest independent municipality in the Spessart at 436 m above sea level."
+    },
+    {
+      "id": "s4",
+      "name": "Bieberer Lochborn",
+      "quote": "Mit Siderit, Baryt und fallweise Co-Ni Arseniden (z. B. Skutterudit, sogar gediegener Wismut) vererzte Verwerfungen wurden im Bieberer Lochborn bis etwa 1867 zur Gewinnung von blauen Keramikfarben abgebaut.",
+      "english": "Faults mineralized with siderite, barite and occasionally Co-Ni arsenides (e.g. skutterudite, even native bismuth) were mined in the Bieberer Lochborn until about 1867 to obtain blue ceramic pigments."
+    },
+    {
+      "id": "s5",
+      "name": "Mainviereck",
+      "quote": "Das Mainviereck bezeichnet den südlichen Teil des Spessarts mit den vier Eckpunkten Lohr, Wertheim, Miltenberg und Aschaffenburg.",
+      "english": "The Mainviereck refers to the southern part of the Spessart with the four corner points Lohr, Wertheim, Miltenberg and Aschaffenburg."
+    },
+    {
+      "id": "s6",
+      "name": "Kahlgrund",
+      "quote": "142.10 Kahlgrund",
+      "english": "142.10 Kahlgrund"
+    },
+    {
+      "id": "s7",
+      "name": "Michaelsberg",
+      "quote": "Auf dem Michaelsberg in Rorinlacha, dem heutigen Neustadt am Main, soll schon um 640 ein Jagdschloss gestanden haben.",
+      "english": "A hunting lodge is said to have stood on the Michaelsberg in Rorinlacha, today's Neustadt am Main, as early as 640."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Summits and Settlements",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Mining History and Valleys",
+      "stop_ids": [
+        "s4",
+        "s6"
+      ]
+    },
+    {
+      "title": "Southern Landmarks and History",
+      "stop_ids": [
+        "s5",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "9123ccacd463dbba0bc57768fbee5d36e84d9f8a99d795b21c14c823552c61ed"
+}

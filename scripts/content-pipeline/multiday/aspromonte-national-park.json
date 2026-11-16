@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Montalto",
+      "quote": "Il complesso ha una forma conico-piramidale, con un rilievo centrale, il Montalto, di 1956 m, da cui si diramano più creste intervallate a valli profonde.",
+      "english": "The complex has a conical-pyramidal shape, with a central relief, Montalto, at 1956 m, from which multiple ridges branch out interspersed with deep valleys."
+    },
+    {
+      "id": "s2",
+      "name": "Bova",
+      "quote": "I borghi del parco: Bova, Gerace, Mammola,San Giorgio Morgeto, Oppido Mamertina, vantano una storia antichissima e meritano una visita particolare in quanto suscitano grandi interessi.",
+      "english": "The villages of the park: Bova, Gerace, Mammola, San Giorgio Morgeto, Oppido Mamertina, boast an ancient history and deserve a special visit as they arouse great interest."
+    },
+    {
+      "id": "s3",
+      "name": "Gerace",
+      "quote": "I borghi del parco: Bova, Gerace, Mammola,San Giorgio Morgeto, Oppido Mamertina, vantano una storia antichissima e meritano una visita particolare in quanto suscitano grandi interessi.",
+      "english": "The villages of the park: Bova, Gerace, Mammola, San Giorgio Morgeto, Oppido Mamertina, boast an ancient history and deserve a special visit as they arouse great interest."
+    },
+    {
+      "id": "s4",
+      "name": "Mammola",
+      "quote": "I borghi del parco: Bova, Gerace, Mammola,San Giorgio Morgeto, Oppido Mamertina, vantano una storia antichissima e meritano una visita particolare in quanto suscitano grandi interessi.",
+      "english": "The villages of the park: Bova, Gerace, Mammola, San Giorgio Morgeto, Oppido Mamertina, boast an ancient history and deserve a special visit as they arouse great interest."
+    },
+    {
+      "id": "s5",
+      "name": "San Giorgio Morgeto",
+      "quote": "I borghi del parco: Bova, Gerace, Mammola,San Giorgio Morgeto, Oppido Mamertina, vantano una storia antichissima e meritano una visita particolare in quanto suscitano grandi interessi.",
+      "english": "The villages of the park: Bova, Gerace, Mammola, San Giorgio Morgeto, Oppido Mamertina, boast an ancient history and deserve a special visit as they arouse great interest."
+    },
+    {
+      "id": "s6",
+      "name": "Oppido Mamertina",
+      "quote": "I borghi del parco: Bova, Gerace, Mammola,San Giorgio Morgeto, Oppido Mamertina, vantano una storia antichissima e meritano una visita particolare in quanto suscitano grandi interessi.",
+      "english": "The villages of the park: Bova, Gerace, Mammola, San Giorgio Morgeto, Oppido Mamertina, boast an ancient history and deserve a special visit as they arouse great interest."
+    },
+    {
+      "id": "s7",
+      "name": "cascate",
+      "quote": "Dato il regime pluviometrico, con piogge concentrate nel periodo invernale, questi torrenti scorrono impetuosi nel periodo invernale, formando ad alta quota suggestive cascate.",
+      "english": "Given the rainfall pattern, with rains concentrated in the winter period, these streams flow impetuously in winter, forming suggestive waterfalls at high altitudes."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Massif and Southern Villages",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s2"
+      ]
+    },
+    {
+      "title": "Historical Northern Gateways",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Eastern Historical Settlements",
+      "stop_ids": [
+        "s3",
+        "s6"
+      ]
+    }
+  ]
+}

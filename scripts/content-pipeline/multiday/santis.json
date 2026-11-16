@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Säntisgipfel",
+      "quote": "Der Säntisgipfel ermöglicht einen Blick in sechs Länder: Schweiz, Deutschland, Österreich, Liechtenstein, Italien und Frankreich.",
+      "english": "The Säntis summit allows a view into six countries: Switzerland, Germany, Austria, Liechtenstein, Italy, and France."
+    },
+    {
+      "id": "s2",
+      "name": "Blauschnee",
+      "quote": "Es existieren noch die beiden Gletscher Blauschnee (nordöstlich des Gipfels) und Gross Schnee (südöstlich des Gipfels).",
+      "english": "The two glaciers Blauschnee (northeast of the summit) and Gross Schnee (southeast of the summit) still exist."
+    },
+    {
+      "id": "s3",
+      "name": "Gross Schnee",
+      "quote": "Es existieren noch die beiden Gletscher Blauschnee (nordöstlich des Gipfels) und Gross Schnee (südöstlich des Gipfels).",
+      "english": "The two glaciers Blauschnee (northeast of the summit) and Gross Schnee (southeast of the summit) still exist."
+    },
+    {
+      "id": "s4",
+      "name": "Lisengrat",
+      "quote": "Sie reicht bis zur Linie Lisengrat-Widderalp und zeigt einen starren Faltenbau.",
+      "english": "It extends to the Lisengrat-Widderalp line and shows a rigid fold structure."
+    },
+    {
+      "id": "s5",
+      "name": "Widderalp",
+      "quote": "Sie reicht bis zur Linie Lisengrat-Widderalp und zeigt einen starren Faltenbau.",
+      "english": "It extends to the Lisengrat-Widderalp line and shows a rigid fold structure."
+    },
+    {
+      "id": "s6",
+      "name": "Schwägalp",
+      "quote": "Sein Gipfel ist seit 1935 per Luftseilbahn von der Schwägalp, durch Wanderwege von dort, von Wasserauen, Wildhaus, Unterwasser oder über andere Routen erreichbar.",
+      "english": "Its summit has been accessible since 1935 by cable car from Schwägalp, via hiking trails from there, from Wasserauen, Wildhaus, Unterwasser, or via other routes."
+    },
+    {
+      "id": "s7",
+      "name": "Bollenwees",
+      "quote": "Der mächtigste und eindrücklichste ist der Sax-Schwendi-Bruch, der das Massiv entlang einer Linie Saxerlücke – Bollenwees – Stifel – Bogartenlücke – Hüttentobel in einen westlichen und einen östlichen Teil trennt.",
+      "english": "The most powerful and impressive is the Sax-Schwendi fault, which separates the massif into a western and an eastern part along a line from Saxerlücke – Bollenwees – Stifel – Bogartenlücke – Hüttentobel."
+    }
+  ],
+  "days": [
+    {
+      "title": "Summit Glaciers and Heights",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Ridges and Base Access",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Eastern Massif Fault Line",
+      "stop_ids": [
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "344c3773612383e8349bdaf11c79efabe1d0186b41a6bc2740ab14efeed68ef9"
+}

@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Blautopf",
+      "quote": "Der Blautopf ist die Karstquelle der Blau, eines Nebenflusses der Donau.",
+      "english": "The Blautopf is the karst spring of the Blau, a tributary of the Danube."
+    },
+    {
+      "id": "s2",
+      "name": "Blautopfhöhle",
+      "quote": "Das Blauhöhlensystem besteht aus der Blautopfhöhle und der Vetterhöhle.",
+      "english": "The Blau cave system consists of the Blautopf Cave and the Vetter Cave."
+    },
+    {
+      "id": "s3",
+      "name": "Vetterhöhle",
+      "quote": "Das Blauhöhlensystem besteht aus der Blautopfhöhle und der Vetterhöhle.",
+      "english": "The Blau cave system consists of the Blautopf Cave and the Vetter Cave."
+    },
+    {
+      "id": "s4",
+      "name": "Apokalypse",
+      "quote": "Am 23. September 2006 entdeckten Jochen Malmann und Andreas Kücha von der Arbeitsgemeinschaft Blautopf in der Blauhöhle eine riesige Halle, die sie Apokalypse nannten.",
+      "english": "On September 23, 2006, Jochen Malmann and Andreas Kücha from the Blautopf working group discovered a giant hall in the Blau Cave, which they named Apocalypse."
+    },
+    {
+      "id": "s5",
+      "name": "Hammerwerk",
+      "quote": "Am Blautopf gibt es ein Hammerwerk, das vom Wasser der Quelle angetrieben wird.",
+      "english": "At the Blautopf, there is a hammer mill driven by the water of the spring."
+    },
+    {
+      "id": "s6",
+      "name": "Klötzle Blei",
+      "quote": "In Anlehnung an diese Sage gibt es unweit des Blautopfs einen Felsen mit dem Namen „Klötzle Blei“.",
+      "english": "Based on this legend, there is a rock not far from the Blautopf named “Klötzle Blei”."
+    },
+    {
+      "id": "s7",
+      "name": "Nonnenhof",
+      "quote": "Dabei half ihr die Wirtin des Nonnenhofs.",
+      "english": "In this, the landlady of the Nonnenhof helped her."
+    }
+  ],
+  "days": [
+    {
+      "title": "Spring and Caves Exploration",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Heritage and Legends of the Blau",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "3c94d1f6c2b672612e3ae2a800b65c5050f4adab7e33ddfd6f8289e2e4d29481"
+}

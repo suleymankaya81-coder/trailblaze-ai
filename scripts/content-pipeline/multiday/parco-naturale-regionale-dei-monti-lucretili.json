@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Monte Pellecchia",
+      "quote": "Le vette più alte, Monte Pellecchia (1368 m) e Monte Gennaro (1271 m), si stagliano ben visibili a N-E di Roma.",
+      "english": "The highest peaks, Monte Pellecchia (1368 m) and Monte Gennaro (1271 m), stand out clearly visible to the N-E of Rome."
+    },
+    {
+      "id": "s2",
+      "name": "Monte Gennaro",
+      "quote": "Le vette più alte, Monte Pellecchia (1368 m) e Monte Gennaro (1271 m), si stagliano ben visibili a N-E di Roma.",
+      "english": "The highest peaks, Monte Pellecchia (1368 m) and Monte Gennaro (1271 m), stand out clearly visible to the N-E of Rome."
+    },
+    {
+      "id": "s3",
+      "name": "Lagustelli\" di Percile",
+      "quote": "i due “Lagustelli\" di Percile, di origine carsica (Percile, RM)",
+      "english": "the two \"Lagustelli\" of Percile, of karstic origin (Percile, RM)"
+    },
+    {
+      "id": "s4",
+      "name": "Valle Cavaliera",
+      "quote": "le foreste di faggio della Valle Cavaliera (San Polo dei Cavalieri, RM)",
+      "english": "the beech forests of the Cavaliera Valley (San Polo dei Cavalieri, RM)"
+    },
+    {
+      "id": "s5",
+      "name": "Chiesa di S. Maria in Monte Dominici",
+      "quote": "la Chiesa di S. Maria in Monte Dominici del XIII secolo (Marcellina, RM))",
+      "english": "the Church of S. Maria in Monte Dominici from the 13th century (Marcellina, RM))"
+    },
+    {
+      "id": "s6",
+      "name": "villa di Orazio Flacco",
+      "quote": "villa di Orazio Flacco, in loc. Vigne S. Pietro (Licenza, RM)",
+      "english": "villa of Horace Flaccus, in loc. Vigne S. Pietro (Licenza, RM)"
+    },
+    {
+      "id": "s7",
+      "name": "castrum medievale di Castiglione",
+      "quote": "castrum medievale di Castiglione (Palombara Sabina, RM)",
+      "english": "medieval castrum of Castiglione (Palombara Sabina, RM)"
+    },
+    {
+      "id": "s8",
+      "name": "tempietto di S. Giacomo Maggiore",
+      "quote": "tempietto di S. Giacomo Maggiore (Vicovaro, RM)",
+      "english": "small temple of S. Giacomo Maggiore (Vicovaro, RM)"
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Northern Lakes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Ancient Castles and Historic Churches",
+      "stop_ids": [
+        "s5",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Ancient Roman Villas and Beech Valleys",
+      "stop_ids": [
+        "s4",
+        "s6"
+      ]
+    }
+  ]
+}

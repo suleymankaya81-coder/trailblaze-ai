@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Bavaria",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Die Teufelshöhle"
+        "Kuppelsaal",
+        "Barbarossadom"
       ],
       "seo_title": "Teufelshöhle Pottenstein Visit Guide"
     },
@@ -32,16 +33,62 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Teufelshöhle Pottenstein",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Main Show Caves and Entrances",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Die Teufelshöhle",
-                "stop_id": "teufelshohle-pottenstein",
-                "detail": "The Teufelshöhle is a natural karst cave near the Upper Franconian city of Pottenstein in the district of Bayreuth in Bavaria."
+                "name": "Kuppelsaal",
+                "stop_id": "teufelshohle-pottenstein--s2",
+                "detail": "The Kuppelsaal, which was known as the Great Teufelsloch before the development, has a height of more than ten meters with a floor area of about 100 square meters; a 15-meter-thick rock ceiling lies above it."
+              },
+              {
+                "name": "Barbarossadom",
+                "stop_id": "teufelshohle-pottenstein--s3",
+                "detail": "The Barbarossadom is about 45 meters long, 18 meters wide and up to 18 meters high, with an overlying rock ceiling 52 meters thick."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Teufelshöhle Pottenstein before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Great Halls and Giant Formations",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Riesensaal",
+                "stop_id": "teufelshohle-pottenstein--s4",
+                "detail": "The Riesensaal, the largest room in the Teufelshöhle, is about 30 meters long, 16 meters wide and 13 meters high, with 45 meters of rock above it."
+              },
+              {
+                "name": "Kleine Teufelshöhle",
+                "stop_id": "teufelshohle-pottenstein--s5",
+                "detail": "In the cave register of the Franconian Alb, with over 3,500 caves over an area of 6,400 square kilometers, the Teufelshöhle is registered as D 95 and the Kleine Teufelshöhle as D 148."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Teufelshöhle Pottenstein before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Connected Systems and Southern Gorges",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Brennnesselbau",
+                "stop_id": "teufelshohle-pottenstein--s6",
+                "detail": "Connected to this is the Brennnesselbau, which has an excavated exit towards the valley side."
+              },
+              {
+                "name": "Zankenhöhle",
+                "stop_id": "teufelshohle-pottenstein--s7",
+                "detail": "The Brennnesselbau is also connected to the Zankenhöhle."
+              },
+              {
+                "name": "Teufelsschlucht",
+                "stop_id": "teufelshohle-pottenstein--s8",
+                "detail": "The Teufelsschlucht located to the south was connected to the Lehmhöhle, the entrance of which has collapsed."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Teufelshöhle Pottenstein before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +126,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://de.wikipedia.org/wiki/Teufelsh%C3%B6hle_bei_Pottenstein"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Teufelsh%C3%B6hle_bei_Pottenstein"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:51:45.747807+00:00"
       }
     }
   }

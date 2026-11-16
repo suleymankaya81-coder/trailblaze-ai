@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Liguria",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco naturale regionale di Montemarcello-Magra-Vara"
+        "Promontorio del Caprione",
+        "Punta Bianca"
       ],
       "seo_title": "Parco naturale regionale di Montemarcello - Magra Visit Guid"
     },
@@ -32,16 +33,57 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco naturale regionale di Montemarcello - Magra",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Caprione Promontory and Coastal Geology",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco naturale regionale di Montemarcello-Magra-Vara",
-                "stop_id": "parco-naturale-regionale-di-montemarcello-magra",
-                "detail": "The regional natural park of Montemarcello-Magra-Vara is a protected natural area of the Liguria Region, in the province of Spezia, and includes the promontory of Caprione, the low course of the river Magra and the low and medium course of the river Vara, its main tributary."
+                "name": "Promontorio del Caprione",
+                "stop_id": "parco-naturale-regionale-di-montemarcello-magra--s1",
+                "detail": "In addition to the river area, the Caprione promontory is of great naturalistic and historical-cultural value, an ideal starting point for many excursions."
+              },
+              {
+                "name": "Punta Bianca",
+                "stop_id": "parco-naturale-regionale-di-montemarcello-magra--s6",
+                "detail": "Particularly interesting is the geological series of Punta Bianca, the southern extremity of the Caprione promontory."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale regionale di Montemarcello - Magra before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Riverside Valleys and Trails",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Val di Magra",
+                "stop_id": "parco-naturale-regionale-di-montemarcello-magra--s2",
+                "detail": "The sea and the coast with highly attractive seaside villages and beaches give way to the Magra valley with its wetlands rich in biodiversity and inland to the green hills of the Vara valley."
+              },
+              {
+                "name": "Alta Via dei Monti Liguri",
+                "stop_id": "parco-naturale-regionale-di-montemarcello-magra--s7",
+                "detail": "In the Park area there are many hiking trails and it is crossed by the Alta Via dei Monti Liguri, the Sentiero Liguria and the Alta Via del Golfo."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale regionale di Montemarcello - Magra before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Wetlands and Plains",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Bozi di Sarzana",
+                "stop_id": "parco-naturale-regionale-di-montemarcello-magra--s4",
+                "detail": "But the park is not only a collection of unique landscapes, it is also a laboratory of \"certified\" conservation and environmental redevelopment projects that revolve around the wetland of the Bozi di Sarzana and the Montemarcello Botanical Garden."
+              },
+              {
+                "name": "Piana di Marinella",
+                "stop_id": "parco-naturale-regionale-di-montemarcello-magra--s10",
+                "detail": "In the Marinella plain there is also the cattle egret (Bubulcus ibis)."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco naturale regionale di Montemarcello - Magra before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +121,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_di_Montemarcello-Magra-Vara"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_di_Montemarcello-Magra-Vara"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:03:33.231221+00:00"
       }
     }
   }

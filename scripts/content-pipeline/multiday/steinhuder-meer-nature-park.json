@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Steinhuder Meer",
+      "quote": "Im Zentrum des Naturparks liegt als größter See Nordwestdeutschlands das Steinhuder Meer.",
+      "english": "In the center of the nature park lies Lake Steinhude, the largest lake in Northwestern Germany."
+    },
+    {
+      "id": "s2",
+      "name": "Grinderwald",
+      "quote": "In seinem Nordteil befindet sich der Grinderwald, in seinem Ostteil das Tote Moor, sein Südwesten wird von den Rehburger Bergen begrenzt, und im Nordwesten liegt das Schneerener Moor.",
+      "english": "In its northern part is the Grinderwald, in its eastern part the Tote Moor, its southwest is bordered by the Rehburg Hills, and in the northwest lies the Schneerener Moor."
+    },
+    {
+      "id": "s3",
+      "name": "Totes Moor",
+      "quote": "In seinem Nordteil befindet sich der Grinderwald, in seinem Ostteil das Tote Moor, sein Südwesten wird von den Rehburger Bergen begrenzt, und im Nordwesten liegt das Schneerener Moor.",
+      "english": "In its northern part is the Grinderwald, in its eastern part the Tote Moor, its southwest is bordered by the Rehburg Hills, and in the northwest lies the Schneerener Moor."
+    },
+    {
+      "id": "s4",
+      "name": "Schneerener Moor",
+      "quote": "In seinem Nordteil befindet sich der Grinderwald, in seinem Ostteil das Tote Moor, sein Südwesten wird von den Rehburger Bergen begrenzt, und im Nordwesten liegt das Schneerener Moor.",
+      "english": "In its northern part is the Grinderwald, in its eastern part the Tote Moor, its southwest is bordered by the Rehburg Hills, and in the northwest lies the Schneerener Moor."
+    },
+    {
+      "id": "s5",
+      "name": "Rehburger Berge",
+      "quote": "In seinem Nordteil befindet sich der Grinderwald, in seinem Ostteil das Tote Moor, sein Südwesten wird von den Rehburger Bergen begrenzt, und im Nordwesten liegt das Schneerener Moor.",
+      "english": "In its northern part is the Grinderwald, in its eastern part the Tote Moor, its southwest is bordered by the Rehburg Hills, and in the northwest lies the Schneerener Moor."
+    },
+    {
+      "id": "s6",
+      "name": "Naturpark Infozentrum Steinhude",
+      "quote": "Der Naturpark betreibt das Naturpark Infozentrum Steinhude und das Naturparkhaus Mardorf, die Informationen zur Natur im Schutzgebiet bieten und Exkursionen sowie Veranstaltungen anbieten.",
+      "english": "The nature park operates the Steinhude Nature Park Information Center and the Mardorf Nature Park House, which provide information about nature in the protected area and offer excursions and events."
+    },
+    {
+      "id": "s7",
+      "name": "Naturparkhaus Mardorf",
+      "quote": "Der Naturpark betreibt das Naturpark Infozentrum Steinhude und das Naturparkhaus Mardorf, die Informationen zur Natur im Schutzgebiet bieten und Exkursionen sowie Veranstaltungen anbieten.",
+      "english": "The nature park operates the Steinhude Nature Park Information Center and the Mardorf Nature Park House, which provide information about nature in the protected area and offer excursions and events."
+    }
+  ],
+  "days": [
+    {
+      "title": "Moors and Forests of the North",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Lake Center and Southern Hills",
+      "stop_ids": [
+        "s1",
+        "s5"
+      ]
+    },
+    {
+      "title": "Visitor Centers and Education",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "af36e697c0358af1b4ec918840c38aa8439cd4e5b512466d8232587f32f9f585"
+}

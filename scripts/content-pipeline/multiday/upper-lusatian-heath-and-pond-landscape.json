@@ -1,0 +1,39 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Biosphärenreservat Oberlausitzer Heide- und Teichlandschaft",
+      "quote": "Den zentralen Teil des Gebiets nimmt das Biosphärenreservat Oberlausitzer Heide- und Teichlandschaft ein, dessen Kernzonen als „Naturschutzgebiet Oberlausitzer Heide- und Teichlandschaft“ ausgewiesen sind.",
+      "english": "The central part of the area is occupied by the Upper Lusatian Heath and Pond Landscape Biosphere Reserve, whose core zones are designated as the \"Upper Lusatian Heath and Pond Landscape Nature Reserve.\""
+    },
+    {
+      "id": "s2",
+      "name": "Naturschutzgebiet Oberlausitzer Heide- und Teichlandschaft",
+      "quote": "Den zentralen Teil des Gebiets nimmt das Biosphärenreservat Oberlausitzer Heide- und Teichlandschaft ein, dessen Kernzonen als „Naturschutzgebiet Oberlausitzer Heide- und Teichlandschaft“ ausgewiesen sind.",
+      "english": "The central part of the area is occupied by the Upper Lusatian Heath and Pond Landscape Biosphere Reserve, whose core zones are designated as the \"Upper Lusatian Heath and Pond Landscape Nature Reserve.\""
+    },
+    {
+      "id": "s3",
+      "name": "Kraftwerk Boxberg",
+      "quote": "Durch den Braunkohletagebau um das Kraftwerk Boxberg wurde ein Teil der ursprünglichen Naturlandschaft zerstört, jedoch werden die Restlöcher nach der Flutung einen neuen Teil der Landschaft bilden.",
+      "english": "A part of the original natural landscape was destroyed by lignite mining around the Boxberg power station, but the remaining pits will form a new part of the landscape after flooding."
+    },
+    {
+      "id": "s4",
+      "name": "Restlöcher",
+      "quote": "Durch den Braunkohletagebau um das Kraftwerk Boxberg wurde ein Teil der ursprünglichen Naturlandschaft zerstört, jedoch werden die Restlöcher nach der Flutung einen neuen Teil der Landschaft bilden.",
+      "english": "A part of the original natural landscape was destroyed by lignite mining around the Boxberg power station, but the remaining pits will form a new part of the landscape after flooding."
+    }
+  ],
+  "days": [
+    {
+      "title": "Biosphere Reserve and Industrial Transformation",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

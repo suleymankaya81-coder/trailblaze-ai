@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Partnachklamm Gorge",
+      "quote": "In the 700 m long Partnachklamm Gorge, the path boldly snakes its way through rocks, passing within touching distance of rapids, swirling pools and waterfalls.",
+      "english": "In the 700 m long Partnachklamm Gorge, the path boldly snakes its way through rocks, passing within touching distance of rapids, swirling pools and waterfalls."
+    },
+    {
+      "id": "s2",
+      "name": "Bockhütte",
+      "quote": "Ignoring the detour off to the left to the Königshaus at Schachen, so beloved by the Fairy Tale King, it takes another two and half hours before the path reaches the “Bockhütte”.",
+      "english": "Ignoring the detour off to the left to the Königshaus at Schachen, so beloved by the Fairy Tale King, it takes another two and half hours before the path reaches the “Bockhütte”."
+    },
+    {
+      "id": "s3",
+      "name": "Reintalangerhütte",
+      "quote": "A waterfall, a little way off the path, heralds the entrance into the Upper Reintal, followed before long by the fluttering of Tibetan prayer flags outside the “Reintalangerhütte”, at 1,369 m.",
+      "english": "A waterfall, a little way off the path, heralds the entrance into the Upper Reintal, followed before long by the fluttering of Tibetan prayer flags outside the “Reintalangerhütte”, at 1,369 m."
+    },
+    {
+      "id": "s4",
+      "name": "Knorrhütte",
+      "quote": "Fortunately, refreshments are available at the “Knorrhütte”, with wonderful views of the Wetterstein Mountains on the right.",
+      "english": "Fortunately, refreshments are available at the “Knorrhütte”, with wonderful views of the Wetterstein Mountains on the right."
+    },
+    {
+      "id": "s5",
+      "name": "Zugspitzplatt",
+      "quote": "From here, the path ascends steeply over scree slopes and then the slightly undulating plateau of the rocky glacier known as the Zugspitzplatt.",
+      "english": "From here, the path ascends steeply over scree slopes and then the slightly undulating plateau of the rocky glacier known as the Zugspitzplatt."
+    },
+    {
+      "id": "s6",
+      "name": "Sonnalpin",
+      "quote": "Upon reaching the “Sonnalpin” restaurant, anyone wishing to avoid the final, most challenging part of the ascent can simply climb into the glacier cable car.",
+      "english": "Upon reaching the “Sonnalpin” restaurant, anyone wishing to avoid the final, most challenging part of the ascent can simply climb into the glacier cable car."
+    },
+    {
+      "id": "s7",
+      "name": "Münchner Haus",
+      "quote": "Crowds of people are teeming around the “Münchner Haus” restaurant.",
+      "english": "Crowds of people are teeming around the “Münchner Haus” restaurant."
+    },
+    {
+      "id": "s8",
+      "name": "Lake Eibsee",
+      "quote": "A cable car from Lake Eibsee gets you to the top of Germany’s highest mountain in comfort.",
+      "english": "A cable car from Lake Eibsee gets you to the top of Germany’s highest mountain in comfort."
+    },
+    {
+      "id": "s9",
+      "name": "Olympia Ski Stadium",
+      "quote": "That becomes apparent shortly after leaving the recently modernised Olympia Ski Stadium in Garmisch-Partenkirchen.",
+      "english": "That becomes apparent shortly after leaving the recently modernised Olympia Ski Stadium in Garmisch-Partenkirchen."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lower Reintal Valley Approach",
+      "stop_ids": [
+        "s9",
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Upper Reintal Ascent",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Summit Experience and Descent",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

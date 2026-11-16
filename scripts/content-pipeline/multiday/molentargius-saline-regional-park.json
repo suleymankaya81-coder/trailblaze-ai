@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Bellarosa minore",
+      "quote": "Il Bellarosa minore è lo stagno più interno, composto di acqua dolce, situato nella zona settentrionale del sistema di stagni ed è alimentato da alcuni torrenti e dalle acque affinate provenienti dall'impianto di fitodepurazione detto \"Ecosistema Filtro\".",
+      "english": "Bellarosa minore is the innermost pond, composed of fresh water, located in the northern area of the pond system and is fed by several streams and refined waters coming from the phytodepuration plant called \"Ecosistema Filtro\"."
+    },
+    {
+      "id": "s2",
+      "name": "Ecosistema Filtro",
+      "quote": "L'\"Ecosistema Filtro\" è un grande impianto di fitodepurazione, o meglio un'area umida artificiale, costruita durante i lavori di risanamento che sfrutta le capacità autodepurative tipiche di questi ambienti per affinare una parte delle acque provenienti dal depuratore di Is Arenas e renderle idonee all'alimentazione degli stagni.",
+      "english": "The \"Ecosistema Filtro\" is a large phytodepuration plant, or rather an artificial wetland, built during recovery works that exploits the self-purifying capacities typical of these environments to refine a portion of the waters coming from the Is Arenas treatment plant and make them suitable for feeding the ponds."
+    },
+    {
+      "id": "s3",
+      "name": "Is Arenas",
+      "quote": "Quella più interna, Is Arenas (la cui denominazione in sardo campidanese significa le sabbie), è una spiaggia fossile che separa il bacino delle Saline dal Bellarosa maggiore.",
+      "english": "The innermost one, Is Arenas (whose name in Campidanese Sardinian means \"the sands\"), is a fossil beach that separates the Saline basin from the Bellarosa maggiore."
+    },
+    {
+      "id": "s4",
+      "name": "Bellarosa maggiore",
+      "quote": "Il Bellarosa maggiore occupa il settore centrale degli stagni, compreso fra il Bellarosa minore e la striscia de Is Arenas e costituisce il bacino di prima evaporazione della salina di Stato, ora dismessa.",
+      "english": "The Bellarosa maggiore occupies the central sector of the ponds, included between the Bellarosa minore and the strip of Is Arenas, and constitutes the first evaporation basin of the state salt works, now decommissioned."
+    },
+    {
+      "id": "s5",
+      "name": "Le Saline",
+      "quote": "Le Saline è costituito dal sistema di bacini compreso fra la striscia di Is Arenas e la città di Quartu a nord e la striscia del Poetto a sud.",
+      "english": "The Saline consists of the system of basins included between the strip of Is Arenas and the city of Quartu to the north and the strip of Poetto to the south."
+    },
+    {
+      "id": "s6",
+      "name": "Stagno di Quartu",
+      "quote": "Il settore orientale è noto anche con il nome di Stagno di Quartu.",
+      "english": "The eastern sector is also known by the name Stagno di Quartu."
+    },
+    {
+      "id": "s7",
+      "name": "Poetto",
+      "quote": "Quella più esterna, il Poetto, è un sistema retrodunale più recente che separa le Saline e lo stagno di Quartu dal Golfo degli Angeli.",
+      "english": "The outermost one, the Poetto, is a more recent back-dune system that separates the Saline and the Quartu pond from the Gulf of the Angels."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Wetlands and Filter System",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Central Basins and Fossil Beach",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Coastal Salt Pans and Dunes",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Castagno dei Cento Cavalli",
+      "quote": "nel comune di Sant'Alfio c'è il Castagno dei Cento Cavalli, un albero di eccezionale longevità, storicamente tra i più grandi del mondo, tutelato dal 1745.",
+      "english": "In the municipality of Sant'Alfio, there is the Chestnut of the Hundred Horses, a tree of exceptional longevity, historically among the largest in the world, protected since 1745."
+    },
+    {
+      "id": "s2",
+      "name": "grotta dei Lamponi",
+      "quote": "Le grotte più note sono: la grotta dei Lamponi, la grotta del Gelo, una grotta di scorrimento lavico con la presenza di ghiaccio perenne al suo interno, e una temperatura che persino nei mesi estivi non va sopra i -6 °C, la grotta dei tre livelli: allo stato delle conoscenze attuali la più lunga grotta di scorrimento sull'Etna e tra le più estese al mondo.",
+      "english": "The most famous caves are: the Raspberries Cave, the Frost Cave, a lava flow cave with the presence of perennial ice inside, and a temperature that even in the summer months does not go above -6 °C, the three levels cave: to the state of current knowledge the longest flow cave on Etna and among the most extensive in the world."
+    },
+    {
+      "id": "s3",
+      "name": "grotta del Gelo",
+      "quote": "la grotta del Gelo, una grotta di scorrimento lavico con la presenza di ghiaccio perenne al suo interno, e una temperatura che persino nei mesi estivi non va sopra i -6 °C, la grotta dei tre livelli: allo stato delle conoscenze attuali la più lunga grotta di scorrimento sull'Etna e tra le più estese al mondo.",
+      "english": "the Frost Cave, a lava flow cave with the presence of perennial ice inside, and a temperature that even in the summer months does not go above -6 °C, the three levels cave: to the state of current knowledge the longest flow cave on Etna and among the most extensive in the world."
+    },
+    {
+      "id": "s4",
+      "name": "grotta dei tre livelli",
+      "quote": "la grotta dei tre livelli: allo stato delle conoscenze attuali la più lunga grotta di scorrimento sull'Etna e tra le più estese al mondo.",
+      "english": "the three levels cave: to the state of current knowledge the longest flow cave on Etna and among the most extensive in the world."
+    },
+    {
+      "id": "s5",
+      "name": "Valle del Bove",
+      "quote": "I dicchi della Valle del Bove che costituiscono quanto resta del vulcano primordiale Trifoglietto.",
+      "english": "The dikes of the Valle del Bove which constitute what remains of the primordial Trifoglietto volcano."
+    },
+    {
+      "id": "s6",
+      "name": "Rifugio Sapienza",
+      "quote": "Nicolosi, che si trova sulla strada che collega direttamente Catania al Rifugio Sapienza del CAI",
+      "english": "Nicolosi, which is located on the road that directly connects Catania to the Sapienza Refuge of the CAI."
+    },
+    {
+      "id": "s7",
+      "name": "monastero di San Nicolò l'Arena",
+      "quote": "L'\"Ente Parco dell'Etna\" è un ente di diritto pubblico sottoposto a controllo e vigilanza della Regione siciliana, con sede a Nicolosi presso l'antico monastero di San Nicolò l'Arena.",
+      "english": "The \"Etna Park Authority\" is a public law body subject to the control and supervision of the Sicilian Region, based in Nicolosi at the ancient monastery of San Nicolò l'Arena."
+    },
+    {
+      "id": "s8",
+      "name": "Giardino Botanico Nuova Gussonea",
+      "quote": "Giardino Botanico Nuova Gussonea, su digilander.libero.it.",
+      "english": "Nuova Gussonea Botanical Garden, on digilander.libero.it."
+    }
+  ],
+  "days": [
+    {
+      "title": "East Flank Giants and Monasteries",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "High Altitude Caves and Craters",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Volcanic Geology and Refuges",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

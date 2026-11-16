@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "chiuse di Leonardo",
+      "quote": "Nell'ambito del parco sono presenti testimonianze interessanti di ingegneria idraulica del secolo XIX tra le quali i navigli e le chiuse di Leonardo a Trezzo.",
+      "english": "Within the park there are interesting examples of 19th-century hydraulic engineering, including the canals and Leonardo's locks in Trezzo."
+    },
+    {
+      "id": "s2",
+      "name": "ponte di ferro di Paderno - Calusco",
+      "quote": "Fra le opere di ingegneria civile è notevole il ponte di ferro di Paderno - Calusco.",
+      "english": "Among the civil engineering works, the iron bridge of Paderno - Calusco is noteworthy."
+    },
+    {
+      "id": "s3",
+      "name": "Crespi d'Adda",
+      "quote": "Per l'archeologia industriale un esempio di intervento urbanistico legato alla industrializzazione ottocentesca è il villaggio operaio di Crespi d'Adda, ora patrimonio dell'UNESCO.",
+      "english": "For industrial archaeology, an example of urban planning linked to 19th-century industrialization is the workers' village of Crespi d'Adda, now a UNESCO World Heritage site."
+    },
+    {
+      "id": "s4",
+      "name": "Centrale idroelettrica Semenza",
+      "quote": "Notevoli anche le quattro storiche centrali idroelettriche sull'Adda; partendo da nord troviamo: la Centrale idroelettrica Semenza a Calusco d'Adda (Bg), la Centrale Bertini e la Esterle entrambe a Porto di Cornate d'Adda (Mb) ed infine la Taccani a Trezzo sull'Adda, (Mi).",
+      "english": "Also noteworthy are the four historic hydroelectric power stations on the Adda; starting from the north we find: the Semenza hydroelectric power station in Calusco d'Adda (Bg), the Bertini and Esterle stations both in Porto di Cornate d'Adda (Mb) and finally the Taccani in Trezzo sull'Adda, (Mi)."
+    },
+    {
+      "id": "s5",
+      "name": "Villa Gina",
+      "quote": "La sede del parco si trova a Villa Gina a Concesa, frazione del comune di Trezzo.",
+      "english": "The park headquarters is located at Villa Gina in Concesa, a hamlet in the municipality of Trezzo."
+    },
+    {
+      "id": "s6",
+      "name": "Lago di Olginate",
+      "quote": "Nell'area del Parco sono incluse le seguenti zone speciali di conservazione (ZPS): Lago di Olginate, IT2030004 Palude di Brivio, IT2030005 Il Toffo, IT2030008 Oasi Le Foppe, IT2050011",
+      "english": "The Park area includes the following special protection zones (ZPS): Lake Olginate, IT2030004 Brivio Marsh, IT2030005 Il Toffo, IT2030008 Le Foppe Oasis, IT2050011"
+    },
+    {
+      "id": "s7",
+      "name": "ecomuseo di Leonardo",
+      "quote": "Al suo interno è stato allestito l'ecomuseo di Leonardo.",
+      "english": "The Leonardo ecomuseum has been set up inside it."
+    }
+  ],
+  "days": [
+    {
+      "title": "Industrial Engineering and UNESCO Heritage",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Leonardo's Legacy and Park History",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s7"
+      ]
+    },
+    {
+      "title": "Natural Conservation Areas",
+      "stop_ids": [
+        "s6"
+      ]
+    }
+  ]
+}

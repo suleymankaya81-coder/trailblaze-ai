@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Schafberg (Furth im Wald)",
+      "quote": "Schafberg (Furth im Wald), Ortsteil der Stadt Furth im Wald, Landkreis Cham, Bayern",
+      "english": "Schafberg (Furth im Wald), a district of the town of Furth im Wald, Cham district, Bavaria"
+    },
+    {
+      "id": "s2",
+      "name": "Schafberg (Hunderdorf)",
+      "quote": "Schafberg (Hunderdorf), Ortsteil der Gemeinde Hunderdorf, Landkreis Straubing-Bogen, Bavaria",
+      "english": "Schafberg (Hunderdorf), a district of the municipality of Hunderdorf, Straubing-Bogen district, Bavaria"
+    },
+    {
+      "id": "s3",
+      "name": "Schafberg (Hürtgenwald)",
+      "quote": "Schafberg (Hürtgenwald), Ortsteil der Gemeinde Hürtgenwald, Kreis Düren, Nordrhein-Westfalen",
+      "english": "Schafberg (Hürtgenwald), a district of the municipality of Hürtgenwald, Düren district, North Rhine-Westphalia"
+    },
+    {
+      "id": "s4",
+      "name": "Schafberg (Ibbenbüren)",
+      "quote": "Schafberg (Ibbenbüren), Ortsteil der Stadt Ibbenbüren, Kreis Steinfurt, Nordrhein-Westfalen",
+      "english": "Schafberg (Ibbenbüren), a district of the town of Ibbenbüren, Steinfurt district, North Rhine-Westphalia"
+    },
+    {
+      "id": "s5",
+      "name": "Schafbergspitze (Ortler-Alpen)",
+      "quote": "Schafbergspitze (Ortler-Alpen) (3306 m), in den Ortler-Alpen (Ortlergruppe) bei Tschengls (Laas), Südtirol",
+      "english": "Schafbergspitze (Ortler Alps) (3306 m), in the Ortler Alps (Ortler Group) near Tschengls (Laas), South Tyrol"
+    },
+    {
+      "id": "s6",
+      "name": "Spullerschafberg",
+      "quote": "Spullerschafberg (2679), Lechquellengebirge, nördlich des Spullersees, Vorarlberg",
+      "english": "Spullerschafberg (2679), Lechquellen Mountains, north of Lake Spuller, Vorarlberg"
+    },
+    {
+      "id": "s7",
+      "name": "Schafberg (Pontresina)",
+      "quote": "Schafberg (Pontresina) (2647 m), im Engadin bei Pontresina, Region Maloja, Kanton Graubünden",
+      "english": "Schafberg (Pontresina) (2647 m), in the Engadine near Pontresina, Maloja region, Canton of Graubünden"
+    },
+    {
+      "id": "s8",
+      "name": "Formarin-Schafberg",
+      "quote": "Formarin-Schafberg (2413 m), Lechquellengebirge westlich des Formarinsees, Vorarlberg",
+      "english": "Formarin-Schafberg (2413 m), Lechquellen Mountains west of Lake Formarin, Vorarlberg"
+    },
+    {
+      "id": "s9",
+      "name": "Schafberg (Salzkammergut-Berge)",
+      "quote": "Schafberg (Salzkammergut-Berge) (1782 m), in den Salzkammergut-Bergen zwischen Mondsee und Wolfgangsee östlich von St. Gilgen, Land Salzburg",
+      "english": "Schafberg (Salzkammergut Mountains) (1782 m), in the Salzkammergut Mountains between Mondsee and Wolfgangsee east of St. Gilgen, State of Salzburg"
+    },
+    {
+      "id": "s10",
+      "name": "Schafberg (Wien)",
+      "quote": "Schafberg (Wien) (390 m), im Wienerwald im 17./18. Gemeindebezirk von Wien",
+      "english": "Schafberg (Vienna) (390 m), in the Vienna Woods in the 17th/18th municipal district of Vienna"
+    }
+  ],
+  "days": [
+    {
+      "title": "Bavarian and North Rhine-Westphalian Districts",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "High Alpine Peaks of South Tyrol and Graubünden",
+      "stop_ids": [
+        "s5",
+        "s7"
+      ]
+    },
+    {
+      "title": "Austrian Mountains from Vorarlberg to Vienna",
+      "stop_ids": [
+        "s6",
+        "s8",
+        "s9",
+        "s10"
+      ]
+    }
+  ],
+  "_text_sha": "886aa0386567991a86139127fef0b2f238a14a3bde5c8679642516dc737051a1"
+}

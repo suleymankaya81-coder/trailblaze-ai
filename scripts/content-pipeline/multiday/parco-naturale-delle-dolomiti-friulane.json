@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Cima dei Preti",
+      "quote": "Le maggiori cime, di tipo calcareo-dolomitico, sono la Cima dei Preti (2.706 m), la più alta del parco, il monte Duranno (2.652 m), il monte Cridola (2.580 m), il monte Pramaggiore (2.478 m).",
+      "english": "The major peaks, of the limestone-dolomite type, are Cima dei Preti (2,706 m), the highest in the park, Mount Duranno (2,652 m), Mount Cridola (2,580 m), and Mount Pramaggiore (2,478 m)."
+    },
+    {
+      "id": "s2",
+      "name": "monte Duranno",
+      "quote": "Le maggiori cime, di tipo calcareo-dolomitico, sono la Cima dei Preti (2.706 m), la più alta del parco, il monte Duranno (2.652 m), il monte Cridola (2.580 m), il monte Pramaggiore (2.478 m).",
+      "english": "The major peaks, of the limestone-dolomite type, are Cima dei Preti (2,706 m), the highest in the park, Mount Duranno (2,652 m), Mount Cridola (2,580 m), and Mount Pramaggiore (2,478 m)."
+    },
+    {
+      "id": "s3",
+      "name": "monte Cridola",
+      "quote": "Le maggiori cime, di tipo calcareo-dolomitico, sono la Cima dei Preti (2.706 m), la più alta del parco, il monte Duranno (2.652 m), il monte Cridola (2.580 m), il monte Pramaggiore (2.478 m).",
+      "english": "The major peaks, of the limestone-dolomite type, are Cima dei Preti (2,706 m), the highest in the park, Mount Duranno (2,652 m), Mount Cridola (2,580 m), and Mount Pramaggiore (2,478 m)."
+    },
+    {
+      "id": "s4",
+      "name": "monte Pramaggiore",
+      "quote": "Le maggiori cime, di tipo calcareo-dolomitico, sono la Cima dei Preti (2.706 m), la più alta del parco, il monte Duranno (2.652 m), il monte Cridola (2.580 m), il monte Pramaggiore (2.478 m).",
+      "english": "The major peaks, of the limestone-dolomite type, are Cima dei Preti (2,706 m), the highest in the park, Mount Duranno (2,652 m), Mount Cridola (2,580 m), and Mount Pramaggiore (2,478 m)."
+    },
+    {
+      "id": "s5",
+      "name": "Lago del Vajont",
+      "quote": "Tra queste le più importanti sono: Lago del Vajont Lago di Cà Selva Lago di Cà Zul Lago dei Tramonti Lago di Barcis",
+      "english": "Among these the most important are: Lake Vajont, Lake Cà Selva, Lake Cà Zul, Lake Tramonti, Lake Barcis."
+    },
+    {
+      "id": "s6",
+      "name": "Lago di Cà Selva",
+      "quote": "Tra queste le più importanti sono: Lago del Vajont Lago di Cà Selva Lago di Cà Zul Lago dei Tramonti Lago di Barcis",
+      "english": "Among these the most important are: Lake Vajont, Lake Cà Selva, Lake Cà Zul, Lake Tramonti, Lake Barcis."
+    },
+    {
+      "id": "s7",
+      "name": "Lago di Cà Zul",
+      "quote": "Tra queste le più importanti sono: Lago del Vajont Lago di Cà Selva Lago di Cà Zul Lago dei Tramonti Lago di Barcis",
+      "english": "Among these the most important are: Lake Vajont, Lake Cà Selva, Lake Cà Zul, Lake Tramonti, Lake Barcis."
+    },
+    {
+      "id": "s8",
+      "name": "Lago dei Tramonti",
+      "quote": "Tra queste le più importanti sono: Lago del Vajont Lago di Cà Selva Lago di Cà Zul Lago dei Tramonti Lago di Barcis",
+      "english": "Among these the most important are: Lake Vajont, Lake Cà Selva, Lake Cà Zul, Lake Tramonti, Lake Barcis."
+    },
+    {
+      "id": "s9",
+      "name": "Lago di Barcis",
+      "quote": "Tra queste le più importanti sono: Lago del Vajont Lago di Cà Selva Lago di Cà Zul Lago dei Tramonti Lago di Barcis",
+      "english": "Among these the most important are: Lake Vajont, Lake Cà Selva, Lake Cà Zul, Lake Tramonti, Lake Barcis."
+    }
+  ],
+  "days": [
+    {
+      "title": "Major Peaks of the Friulian Dolomites",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Western Alpine Lakes",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Southern and Eastern Lakes",
+      "stop_ids": [
+        "s8",
+        "s9"
+      ]
+    }
+  ]
+}

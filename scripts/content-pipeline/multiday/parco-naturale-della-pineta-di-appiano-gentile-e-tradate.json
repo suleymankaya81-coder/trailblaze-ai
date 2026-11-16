@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Pinetina",
+      "quote": "Sono inoltre presenti cascine e aziende agricole, alcune aree residenziali realizzate nello scorso secolo e la località detta la \"Pinetina\" dove ha sede il Centro Sportivo Angelo Moratti, luogo di allenamento della squadra di calcio dell'Inter, e il percorso del Golf Club La Pinetina.",
+      "english": "There are also farmhouses and agricultural companies, some residential areas built in the last century, and the locality known as \"Pinetina,\" home to the Angelo Moratti Sports Center, the training ground for the Inter football team, and the course of the La Pinetina Golf Club."
+    },
+    {
+      "id": "s2",
+      "name": "Osservatorio astronomico di Tradate FOAM13",
+      "quote": "All'interno del parco sono presenti, inoltre, il sito di interesse comunitario e zona speciale di conservazione \"Pineta pedemontana di Appiano Gentile\" (codice SIC: IT2020007), gestito dall'ente parco, e l'Osservatorio astronomico di Tradate FOAM13.",
+      "english": "Inside the park, there is also the site of community interest and special conservation zone \"Pineta pedemontana di Appiano Gentile\" (code SIC: IT2020007), managed by the park authority, and the FOAM13 astronomical observatory of Tradate."
+    },
+    {
+      "id": "s3",
+      "name": "Centro Didattico Scientifico",
+      "quote": "Il Centro Didattico Scientifico è legato all'Osservatorio astronomico di Tradate FOAM13 ed è nato al fine di stimolare ragazzi di ogni età verso lo sviluppo di una conoscenza e coscienza scientifica, e per comprendere e preservare la natura del parco.",
+      "english": "The Scientific Didactic Center is linked to the FOAM13 astronomical observatory of Tradate and was established to encourage children of all ages toward the development of scientific knowledge and awareness, and to understand and preserve the nature of the park."
+    },
+    {
+      "id": "s4",
+      "name": "stagno artificiale",
+      "quote": "Nel comune di Limido Comasco, in prossimità della Cascina Castigliona e del torrente Antiga, è presente uno stagno artificiale attrezzato per il bird watching.",
+      "english": "In the municipality of Limido Comasco, near the Cascina Castigliona and the Antiga stream, there is an artificial pond equipped for bird watching."
+    },
+    {
+      "id": "s5",
+      "name": "Sentiero delle uccellande",
+      "quote": "A Limido Comasco il roccolo è stato inserito nel Sentiero delle uccellande, gestito direttamente dal Parco Pineta.",
+      "english": "In Limido Comasco, the bird-snare structure has been included in the Path of the Bird-Snares, managed directly by the Pineta Park."
+    },
+    {
+      "id": "s6",
+      "name": "roccolo di Montechiaro",
+      "quote": "A Tradate il roccolo di Montechiaro era posizionato a nord della cittadina alle pendici di un bosco.",
+      "english": "In Tradate, the Montechiaro bird-snare was positioned north of the town on the slopes of a forest."
+    },
+    {
+      "id": "s7",
+      "name": "Parco della Villa Caproni di Taliedo",
+      "quote": "All'interno del Parco della Villa Caproni di Taliedo a Venegono Superiore è presente un colonnato di carpini e il casello in muratura.",
+      "english": "Inside the Park of Villa Caproni di Taliedo in Venegono Superiore, there is a colonnade of hornbeams and a masonry lodge."
+    }
+  ],
+  "days": [
+    {
+      "title": "Tradate Science and History",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "Limido Comasco Nature Trails",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Sport and Estates",
+      "stop_ids": [
+        "s1",
+        "s7"
+      ]
+    }
+  ]
+}

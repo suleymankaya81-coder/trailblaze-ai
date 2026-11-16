@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kochel am See",
+      "quote": "Er gehört zu den Gemeinden Kochel am See im Osten und Schlehdorf im Westen.",
+      "english": "It belongs to the municipalities of Kochel am See in the east and Schlehdorf in the west."
+    },
+    {
+      "id": "s2",
+      "name": "Schlehdorf",
+      "quote": "Bei Schlehdorf, nördlich unterhalb von Herzogstand und Heimgarten, fließt die Loisach in den Westteil des Kochelsees.",
+      "english": "At Schlehdorf, north below Herzogstand and Heimgarten, the Loisach flows into the western part of Lake Kochel."
+    },
+    {
+      "id": "s3",
+      "name": "Loisach-Kochelsee-Moore",
+      "quote": "Während der südliche Bereich des Sees von Bergen umgeben ist, liegt der nördliche Teil schon im flachen Voralpenland und wird von den Loisach-Kochelsee-Mooren begrenzt.",
+      "english": "While the southern area of the lake is surrounded by mountains, the northern part is already located in the flat Alpine upland and is bordered by the Loisach-Kochelsee Moors."
+    },
+    {
+      "id": "s4",
+      "name": "Birg",
+      "quote": "Die Geschichte der Besiedelung Kochels begann auf der so genannten Birg bei Altjoch, einem Felskegel direkt am Ufer des Kochelsees.",
+      "english": "The history of the settlement of Kochel began on the so-called Birg near Altjoch, a rocky cone directly on the shore of Lake Kochel."
+    },
+    {
+      "id": "s5",
+      "name": "Altjoch",
+      "quote": "Die Ortschaften am Ufer des Sees gehören zum Landkreis Bad Tölz-Wolfratshausen, dabei handelt es sich um: ... Altjoch (Südufer, Ortsteil von Kochel am See).",
+      "english": "The villages on the shore of the lake belong to the district of Bad Tölz-Wolfratshausen, these are: ... Altjoch (south shore, district of Kochel am See)."
+    },
+    {
+      "id": "s6",
+      "name": "Herzogstand",
+      "quote": "Auch gibt es Möglichkeiten zur Skiabfahrt am Herzogstand, von dem aus man Kochelsee und Walchensee überblickt.",
+      "english": "There are also opportunities for downhill skiing at the Herzogstand, from which one overlooks Lake Kochel and Lake Walchen."
+    },
+    {
+      "id": "s7",
+      "name": "Raut",
+      "quote": "Die Ortschaften am Ufer des Sees gehören zum Landkreis Bad Tölz-Wolfratshausen, dabei handelt es sich um: ... Raut (Westufer, Ortsteil von Schlehdorf).",
+      "english": "The villages on the shore of the lake belong to the district of Bad Tölz-Wolfratshausen, these are: ... Raut (west shore, district of Schlehdorf)."
+    },
+    {
+      "id": "s8",
+      "name": "Wasserkraftwerk Walchensee",
+      "quote": "Gleichzeitig fließt im Durchschnitt dieselbe Wassermenge vom Walchensee – und damit von der Isar – durch das Wasserkraftwerk Walchensee zu.",
+      "english": "At the same time, on average the same amount of water flows in from Lake Walchen – and thus from the Isar – through the Walchensee hydroelectric power station."
+    }
+  ],
+  "days": [
+    {
+      "title": "Villages and Moors of the North and West",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Peaks and Southern Shore Landmarks",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "5b369e4d997b0f9623fddd01242a955c018f71a79fa825a2dc5e03d91280260e"
+}

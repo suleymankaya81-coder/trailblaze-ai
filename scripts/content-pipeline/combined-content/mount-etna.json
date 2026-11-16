@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Sicily",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Mount Etna"
+        "Grotta del Gelo",
+        "Funivia dell'Etna",
+        "Rifugio Sapienza"
       ],
       "seo_title": "Mount Etna Visit Guide"
     },
@@ -32,16 +34,49 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Mount Etna",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Southern Gateway and Ancient Caves",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Mount Etna",
-                "stop_id": "mount-etna",
-                "detail": "Mount Etna, or simply Etna, is an active stratovolcano on the east coast of Sicily, Italy, in the Metropolitan City of Catania, between the cities of Messina and Catania. It is located above the convergent plate margin between the African Plate and the Eurasian Plate. It is one of the tallest active volcanoes in Europe, and the tallest peak in Italy south of the Alps with a current height (September [dated source]) of 3,403 m (11,165 ft), though this varies with summit eruptions. For instance, in [dated source] the southeastern crater reached a height of 3,357 m (11,014 ft), but was then surpassed by the Voragine crater after the summer [dated source] eruptions."
+                "name": "Grotta del Gelo",
+                "stop_id": "mount-etna--s5",
+                "detail": "The surface of the volcano is characterized by a rich variety of environments that alternate between urban landscapes, thick forests that preserve various endemic botanical species, desolate areas covered by magmatic rock and devoid of vegetation and, above a certain altitude, subject to winter snow and perennial glaciers at the highest elevations (e.g. Grotta del Gelo)."
+              },
+              {
+                "name": "Funivia dell'Etna",
+                "stop_id": "mount-etna--s8",
+                "detail": "The infrastructure does not allow reaching the summit by car but, having reached the tourist station around the Etna Cableway, it then continues its path for about another 20 km in the direction of Zafferana Etnea."
+              },
+              {
+                "name": "Rifugio Sapienza",
+                "stop_id": "mount-etna--s9",
+                "detail": "From the southern one, from the historic Sapienza Refuge in the territory of Nicolosi, it is possible to admire the Gulf of Catania and the Simeto valley."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Mount Etna before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Northern Slopes and Eastern Valleys",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Valle del Bove",
+                "stop_id": "mount-etna--s6",
+                "detail": "The eastern slope is dominated by the Valle del Bove, on the margins of which thick forests climb."
+              },
+              {
+                "name": "Linguaglossa",
+                "stop_id": "mount-etna--s7",
+                "detail": "Little urbanized, but with a gentler appearance, the northern slope has a predominance of woods above Linguaglossa."
+              },
+              {
+                "name": "Piano Provenzana",
+                "stop_id": "mount-etna--s10",
+                "detail": "From the slopes of Piano Provenzana to the north, in the territory of Linguaglossa, Taormina and the coasts of Calabria are visible."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Mount Etna before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +114,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Mount_Etna"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Etna"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:57:58.770972+00:00"
       }
     }
   }

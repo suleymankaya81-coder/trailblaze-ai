@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Mittellandkanal",
+      "quote": "Heute ist die Niederung mit dem Mittellandkanal und den Flüssen Aller sowie Ohre Rückzugsgebiet für seltene oder vom Aussterben bedrohte Tier- und Pflanzenarten.",
+      "english": "Today, the lowland with the Mittelland Canal and the rivers Aller and Ohre is a retreat for rare or endangered animal and plant species."
+    },
+    {
+      "id": "s2",
+      "name": "Aller",
+      "quote": "Die durch die Niederung fließende und in die Elbe mündende Ohre entwässert nach Osten, die Aller berührt die Niederung und entwässert zur Weser hin.",
+      "english": "The Ohre, flowing through the lowlands and emptying into the Elbe, drains to the east, while the Aller touches the lowlands and drains toward the Weser."
+    },
+    {
+      "id": "s3",
+      "name": "Ohre",
+      "quote": "Die durch die Niederung fließende und in die Elbe mündende Ohre entwässert nach Osten, die Aller berührt die Niederung und entwässert zur Weser hin.",
+      "english": "The Ohre, flowing through the lowlands and emptying into the Elbe, drains to the east, while the Aller touches the lowlands and drains toward the Weser."
+    },
+    {
+      "id": "s4",
+      "name": "Kleines und Großes Giebelmoor",
+      "quote": "Das unter Naturschutz stehende Kleine und Große Giebelmoor beim Forsthaus Giebel (Samtgemeinde Brome in Niedersachsen) ist bekannt für ein Naturwaldreservat mit Erlen- und Birkenbruchwald.",
+      "english": "The protected Kleine and Große Giebelmoor near the Giebel forest house (Samtgemeinde Brome in Lower Saxony) is known for a natural forest reserve with alder and birch swamp forest."
+    },
+    {
+      "id": "s5",
+      "name": "Forsthaus Giebel",
+      "quote": "Das unter Naturschutz stehende Kleine und Große Giebelmoor beim Forsthaus Giebel (Samtgemeinde Brome in Niedersachsen) ist bekannt für ein Naturwaldreservat mit Erlen- und Birkenbruchwald.",
+      "english": "The protected Kleine and Große Giebelmoor near the Giebel forest house (Samtgemeinde Brome in Lower Saxony) is known for a natural forest reserve with alder and birch swamp forest."
+    },
+    {
+      "id": "s6",
+      "name": "Jeggauer Moor",
+      "quote": "Typische Vertreter, besonders im Naturschutzgebiet Jeggauer Moor, sind der Pillenfarn (Pilularia globulifera) und die Flutende Teichsimse (Eleogiton fluitans), die zur Grabenvegetation gehören.",
+      "english": "Typical representatives, especially in the Jeggauer Moor nature reserve, are the pillwort (Pilularia globulifera) and the floating club-rush (Eleogiton fluitans), which belong to the trench vegetation."
+    },
+    {
+      "id": "s7",
+      "name": "Breitenroder-Oebisfelder Drömling",
+      "quote": "Sie besteht aus vier Gebieten, darunter den Totalreservaten Breitenroder-Oebisfelder Drömling und Böckwitz-Jahrstedter Drömling.",
+      "english": "It consists of four areas, including the total reserves Breitenroder-Oebisfelder Drömling and Böckwitz-Jahrstedter Drömling."
+    },
+    {
+      "id": "s8",
+      "name": "Böckwitz-Jahrstedter Drömling",
+      "quote": "Sie besteht aus vier Gebieten, darunter den Totalreservaten Breitenroder-Oebisfelder Drömling und Böckwitz-Jahrstedter Drömling.",
+      "english": "It consists of four areas, including the total reserves Breitenroder-Oebisfelder Drömling and Böckwitz-Jahrstedter Drömling."
+    }
+  ],
+  "days": [
+    {
+      "title": "Waterways and Central Lowlands",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Moors and Forest Reserves",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Total Nature Reserves",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "d6e36294e44ed0bf0fa30ca8566a26b0b9b2712b1a15969ba0369e27bbb0ab1c"
+}

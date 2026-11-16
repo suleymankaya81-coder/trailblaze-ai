@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Museo Archeologico del Barro",
+      "quote": "Molti oggetti rinvenuti negli scavi sono conservati nel Museo Archeologico del Barro allestito presso l'Eremo.",
+      "english": "Many objects found in the excavations are preserved in the Archaeological Museum of Barro set up at the Hermitage."
+    },
+    {
+      "id": "s2",
+      "name": "Eremo",
+      "quote": "Dall'eremo si rientra a Galbiate attraverso un sentiero o una strada asfaltata.",
+      "english": "From the hermitage you return to Galbiate via a path or a paved road."
+    },
+    {
+      "id": "s3",
+      "name": "Monte Castelletto",
+      "quote": "L'area archeologica di Monte Castelletto è una scoperta recente, effettuata nel 2007 a seguito di ricerche di superficie.",
+      "english": "The archaeological area of Monte Castelletto is a recent discovery, made in 2007 following surface research."
+    },
+    {
+      "id": "s4",
+      "name": "Grande Edificio",
+      "quote": "Di rilievo è il cosiddetto Grande Edificio, probabilmente residenza di un funzionario pubblico.",
+      "english": "Of note is the so-called Great Building, probably the residence of a public official."
+    },
+    {
+      "id": "s5",
+      "name": "Sasso della Vecchia",
+      "quote": "Raggiunta la cima si prosegue verso il Sasso della Vecchia (per giro più ampio e più impegnativo) oppure direttamente verso l’eremo del monte Barro.",
+      "english": "Once the summit is reached, you continue towards the Sasso della Vecchia (for a longer and more demanding loop) or directly towards the hermitage of Monte Barro."
+    },
+    {
+      "id": "s6",
+      "name": "sentiero delle creste",
+      "quote": "Il più completo e panoramico è un percorso ad anello che parte da Galbiate e porta in vetta attraverso il sentiero delle creste.",
+      "english": "The most complete and panoramic is a circular route that starts from Galbiate and leads to the summit via the ridge path."
+    },
+    {
+      "id": "s7",
+      "name": "Museo Etnografico dell'Alta Brianza",
+      "quote": "Museo Etnografico dell'Alta Brianza",
+      "english": "Ethnographic Museum of Upper Brianza"
+    }
+  ],
+  "days": [
+    {
+      "title": "Archeology and History at the Hermitage",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s4"
+      ]
+    },
+    {
+      "title": "Summit Trails and Panoramic Ridges",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Fortifications and Culture",
+      "stop_ids": [
+        "s3",
+        "s7"
+      ]
+    }
+  ]
+}

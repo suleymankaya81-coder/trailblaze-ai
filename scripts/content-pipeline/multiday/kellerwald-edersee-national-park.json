@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Traddelkopf",
+      "quote": "Der niedrigste Punkt des Nationalparks Kellerwald-Edersee liegt am Rand des Edertals beim Ortsrand von Affoldern unweit bzw. unterhalb der Staustufe des Affolderner Sees auf 194 m, seine höchste Stelle mit 626,4 m auf dem Traddelkopf.",
+      "english": "The lowest point of the Kellerwald-Edersee National Park lies on the edge of the Eder Valley near the outskirts of Affoldern close to or below the barrage of the Affoldern Lake at 194 m, its highest point at 626.4 m on the Traddelkopf."
+    },
+    {
+      "id": "s2",
+      "name": "Ahornkopf",
+      "quote": "Ahornkopf (604,1 m) – Südwestausläufer des Traddelkopfs mit im Nationalpark aufgegangenem Naturschutzgebiet Ruhlauber",
+      "english": "Ahornkopf (604.1 m) – southwest spur of the Traddelkopf with the Ruhlauber nature reserve which has been absorbed into the national park."
+    },
+    {
+      "id": "s3",
+      "name": "Locheiche",
+      "quote": "Locheiche (557,3 m) – Nordostausläufer des Traddelkopfs",
+      "english": "Locheiche (557.3 m) – northeast spur of the Traddelkopf."
+    },
+    {
+      "id": "s4",
+      "name": "Quernst",
+      "quote": "Quernst (ca. 545 m) – Nordausläufer des Talgangs mit Ruine der Quernstkirche (bei 535 m), der Quernstkapelle und einem Aussichtspunkt mit Blick auf das Rothaargebirge und Winterberg",
+      "english": "Quernst (approx. 545 m) – northern spur of the Talgang with the ruins of the Quernst Church (at 535 m), the Quernst Chapel and a viewpoint with a view of the Rothaar Mountains and Winterberg."
+    },
+    {
+      "id": "s5",
+      "name": "Talgang",
+      "quote": "In den Ederhöhen liegen auf dem Berg Talgang mitten im Wald die Ruinen der Quernstkirche, die um 800 auf einem alten germanischen Heiligtum, einem heiligen Hain, errichtet wurde.",
+      "english": "In the Eder Heights, on the Talgang mountain in the middle of the forest, lie the ruins of the Quernst Church, which was built around 800 on an old Germanic sanctuary, a sacred grove."
+    },
+    {
+      "id": "s6",
+      "name": "Friedrichskopf",
+      "quote": "Friedrichskopf (528,5 m) – Südausläufer des Talgangs",
+      "english": "Friedrichskopf (528.5 m) – southern spur of the Talgang."
+    },
+    {
+      "id": "s7",
+      "name": "Banfebachtal",
+      "quote": "Die letzte dieser Wellen erreichte auch die Ederberge, also das heutige Nationalparkgebiet. Dort entstanden die Dörfer Eselsbach, am Hundsbach im Gebrannten gelegen, Eschenbruch etwas östlich des Fahrentriesches, Wellenhausen im oberen Banfebachtal bei der Quernst, Denninghausen im Bleibachtal östlich des Himbeerkopfes, Bodenscheid und Banfe im unteren Banfebachtal sowie Ermerode am Elmsberg.",
+      "english": "The last of these waves also reached the Eder Mountains, i.e., today's national park area. There the villages of Eselsbach, located on the Hundsbach in the Gebrannten, Eschenbruch somewhat east of the Fahrentriesch, Wellenhausen in the upper Banfe Valley near the Quernst, Denninghausen in the Bleibach Valley east of the Himbeerkopf, Bodenscheid and Banfe in the lower Banfe Valley, as well as Ermerode on the Elmsberg, were established."
+    },
+    {
+      "id": "s8",
+      "name": "Siegelskirche",
+      "quote": "Eine weitere frühchristliche Höhenkirche ist die Siegelskirche, die wohl ebenfalls an der Stelle eines vorchristlichen heiligen Hains gegründet wurde.",
+      "english": "Another early Christian hilltop church is the Siegelskirche, which was probably also founded on the site of a pre-Christian sacred grove."
+    }
+  ],
+  "days": [
+    {
+      "title": "Peaks of the Traddelkopf Massif",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "History of the Talgang Ridge",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Valleys and Sacred Sites",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "c5cceb4896317f3804bb16e4512281a6e27b07eaaf255e2be8ba158cef0bb578"
+}

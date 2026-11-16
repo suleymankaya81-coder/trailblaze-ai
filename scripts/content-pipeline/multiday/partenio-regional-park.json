@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Oasi WWF Montagna di Sopra di Pannarano",
+      "quote": "Al suo interno si trova l'Oasi WWF Montagna di Sopra di Pannarano.",
+      "english": "The WWF Oasis Montagna di Sopra di Pannarano is located within it."
+    },
+    {
+      "id": "s2",
+      "name": "Montevergine",
+      "quote": "Il parco è situato sulla catena del Partenio, tra cui svetta il Montevergine, monte sul quale sorge il Santuario di Montevergine, in frazione di Mercogliano.",
+      "english": "The park is situated on the Partenio range, among which Montevergine stands out, the mountain where the Sanctuary of Montevergine rises, in the hamlet of Mercogliano."
+    },
+    {
+      "id": "s3",
+      "name": "Santuario di Montevergine",
+      "quote": "Il parco è situato sulla catena del Partenio, tra cui svetta il Montevergine, monte sul quale sorge il Santuario di Montevergine, in frazione di Mercogliano.",
+      "english": "The park is situated on the Partenio range, among which Montevergine stands out, the mountain where the Sanctuary of Montevergine rises, in the hamlet of Mercogliano."
+    },
+    {
+      "id": "s4",
+      "name": "grotte di San Silvestro",
+      "quote": "Nel parco regionale del Partenio sono presenti vari punti di interesse a cominciare dall'Oasi WWF Montagna di Sopra situata presso le grotte di San Silvestro, nel comune di Pannarano, all'interno di un sito di interesse comunitario.",
+      "english": "In the Partenio regional park there are various points of interest starting from the WWF Oasis Montagna di Sopra located near the caves of San Silvestro, in the municipality of Pannarano, within a site of community interest."
+    },
+    {
+      "id": "s5",
+      "name": "Campus di ingegneria naturalistica",
+      "quote": "Un altro punto di interesse naturalistico situato sempre a Summonte nel bel mezzo del percorso escursionistico è il Campus di ingegneria naturalistica dove si può osservare un paesaggio di enorme suggestione naturalistica e ambientale con notevoli boschi di castagni.",
+      "english": "Another point of naturalistic interest also located in Summonte in the middle of the hiking trail is the Campus of naturalistic engineering where one can observe a landscape of enormous naturalistic and environmental charm with remarkable chestnut woods."
+    },
+    {
+      "id": "s6",
+      "name": "Mafariello",
+      "quote": "Mafariello è una località montana (770 m s.l.m) situata nel parco, nel comune di San Martino Valle Caudina (AV).",
+      "english": "Mafariello is a mountain locality (770 m a.s.l.) located in the park, in the municipality of San Martino Valle Caudina (AV)."
+    },
+    {
+      "id": "s7",
+      "name": "rifugio Urupreta",
+      "quote": "Presso il rifugio Urupreta a Summonte ed è un centro che rappresenta un punto di sosta e un'area pic-nic per gli escursionisti che intraprendono percorsi montuosi ed escursioni a partire proprio dal rifugio che è l'inizio del percorso.",
+      "english": "At the Urupreta refuge in Summonte, there is a center that represents a rest point and a picnic area for hikers who undertake mountain paths and excursions starting right from the refuge which is the beginning of the trail."
+    },
+    {
+      "id": "s8",
+      "name": "Castellone",
+      "quote": "Sempre sul sentiero escursionistico da Summonte si può trovare nella località Castellone un maneggio nei pressi del Centro Equestre Castellone dove un escursionista può decidere di proseguire il percorso a cavallo.",
+      "english": "Also on the hiking trail from Summonte one can find a riding stable in the locality of Castellone near the Castellone Equestrian Center where a hiker can decide to continue the journey on horseback."
+    },
+    {
+      "id": "s9",
+      "name": "monte San Silvestro",
+      "quote": "Uno dei 30 sentieri presenti nel parco porta al monte San Silvestro, precisamente il numero 205.",
+      "english": "One of the 30 trails present in the park leads to Mount San Silvestro, specifically number 205."
+    }
+  ],
+  "days": [
+    {
+      "title": "Religious Heights and Summits",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s9"
+      ]
+    },
+    {
+      "title": "Summonte Hiking and Equestrian Trails",
+      "stop_ids": [
+        "s5",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Pannarano Nature and Caves",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s6"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lombardy",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Stelvio National Park"
+        "passo dello Stelvio",
+        "Ortles",
+        "ghiacciaio dei Forni"
       ],
       "seo_title": "Stelvio National Park Visit Guide"
     },
@@ -32,16 +34,62 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Stelvio National Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "High Peaks and Glaciers of the Ortles Group",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Stelvio National Park",
-                "stop_id": "stelvio-national-park",
-                "detail": "Stelvio National Park (Italian: Parco nazionale dello Stelvio; German: Nationalpark Stilfser Joch) is a national park in northeast Italy, established in 1935."
+                "name": "passo dello Stelvio",
+                "stop_id": "stelvio-national-park--s1",
+                "detail": "The main ridge starts at the Stelvio Pass (2,758 m), the second highest drivable pass in Europe connecting Bormio to Trafoi, and rises into numerous peaks above 3,500 m, such as Punta Thurwieser (3,652 m), Gran Zebrù (3,857 m), and Cevedale (3,769 m), culminating with the peak of Ortles at 3,905 m."
+              },
+              {
+                "name": "Ortles",
+                "stop_id": "stelvio-national-park--s2",
+                "detail": "Almost all the peaks of the Ortles Alps are included in the park."
+              },
+              {
+                "name": "ghiacciaio dei Forni",
+                "stop_id": "stelvio-national-park--s3",
+                "detail": "In addition to numerous streams along the respective valleys, several important glaciers are present in the territory, the most important of which is the Forni glacier, the largest Italian alpine valley glacier, located on the Lombard side."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Stelvio National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Forests and Wildlife Areas of Trentino",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "val di Rabbi",
+                "stop_id": "stelvio-national-park--s4",
+                "detail": "The most widespread species is certainly the Norway spruce (Picea abies), associated with a few isolated groups of silver fir (Abies alba), the latter present mainly in Val di Rabbi, the Trentino area of the Park."
+              },
+              {
+                "name": "Val di Peio",
+                "stop_id": "stelvio-national-park--s5",
+                "detail": "These tree formations climb the slopes, thinning out towards the upper limit to slowly give way to the larch (Larix decidua) and the stone pine (Pinus cembra), mainly widespread in Val di Peio."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Stelvio National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Visitor Centres and Landmarks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Centro visite Aquaprad",
+                "stop_id": "stelvio-national-park--s6",
+                "detail": "Aquaprad visitor centre in Prato allo Stelvio"
+              },
+              {
+                "name": "Torre Alberti",
+                "stop_id": "stelvio-national-park--s7",
+                "detail": "Torre Alberti information point in Bormio"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Stelvio National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +127,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Stelvio_National_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_nazionale_dello_Stelvio"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:08:52.668212+00:00"
       }
     }
   }

@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Massiccio dell'Argentera",
+      "quote": "Il nome “Argentera” deriva dall'omonimo massiccio situato al centro delle Alpi Marittime.",
+      "english": "The name \"Argentera\" derives from the massif of the same name located in the center of the Maritime Alps."
+    },
+    {
+      "id": "s2",
+      "name": "Bosco e laghi di Palanfrè",
+      "quote": "Nel 1995, per effetto di un progetto regionale di accorpamento delle aree protette piemontesi, è stata realizzata, con Legge Regionale nº 33/1995, la fusione con la Riserva naturale speciale “Bosco e laghi di Palanfrè” (istituita nel 1979), che ha portato alla nascita dell'odierno Parco.",
+      "english": "In 1995, as a result of a regional project to merge protected areas in Piedmont, the fusion with the Special Natural Reserve \"Bosco e laghi di Palanfrè\" (established in 1979) was carried out via Regional Law No. 33/1995, leading to the creation of today's Park."
+    },
+    {
+      "id": "s3",
+      "name": "Colle del Sabbione",
+      "quote": "Il primo occupa l'arco montuoso che va dal Colle del Sabbione (2.328 m s.l.m.) fino al Colle di Finestra (2.471 m s.l.m.)",
+      "english": "The first occupies the mountain arc that goes from the Colle del Sabbione (2,328 m a.s.l.) to the Colle di Finestra (2,471 m a.s.l.)"
+    },
+    {
+      "id": "s4",
+      "name": "Colle di Finestra",
+      "quote": "Il primo occupa l'arco montuoso che va dal Colle del Sabbione (2.328 m s.l.m.) fino al Colle di Finestra (2.471 m s.l.m.)",
+      "english": "The first occupies the mountain arc that goes from the Colle del Sabbione (2,328 m a.s.l.) to the Colle di Finestra (2,471 m a.s.l.)"
+    },
+    {
+      "id": "s5",
+      "name": "Valle di Desertetto",
+      "quote": "Ad esclusione della “Valle di Desertetto”, che ha una morfologia piuttosto modellata, il resto del territorio è un tipico ambiente di alta montagna, che, grazie alla presenza delle rocce cristalline particolarmente resistenti agli agenti esogeni, si presenta con valli anguste e incassate, con pendici sempre molto ripide e vaste superfici prive di vegetazione, boschi ridotti, nevai perenni e qualche lembo relitto di ghiacciai di tipo pirenaico (quelli del Monte Gelàs sono i più meridionali della Catena Alpina).",
+      "english": "Excluding the \"Valle di Desertetto\", which has a rather shaped morphology, the rest of the territory is a typical high mountain environment which, thanks to the presence of crystalline rocks particularly resistant to exogenous agents, presents narrow and deep-set valleys, with slopes that are always very steep and vast surfaces devoid of vegetation, reduced forests, perennial snowfields and some relic fragments of Pyrenean-type glaciers (those of Monte Gelàs are the southernmost of the Alpine Chain)."
+    },
+    {
+      "id": "s6",
+      "name": "Monte Gelàs",
+      "quote": "Ad esclusione della “Valle di Desertetto”, che ha una morfologia piuttosto modellata, il resto del territorio è un tipico ambiente di alta montagna, che, grazie alla presenza delle rocce cristalline particolarmente resistenti agli agenti esogeni, si presenta con valli anguste e incassate, con pendici sempre molto ripide e vaste superfici prive di vegetazione, boschi ridotti, nevai perenni e qualche lembo relitto di ghiacciai di tipo pirenaico (quelli del Monte Gelàs sono i più meridionali della Catena Alpina).",
+      "english": "Excluding the \"Valle di Desertetto\", which has a rather shaped morphology, the rest of the territory is a typical high mountain environment which, thanks to the presence of crystalline rocks particularly resistant to exogenous agents, presents narrow and deep-set valleys, with slopes that are always very steep and vast surfaces devoid of vegetation, reduced forests, perennial snowfields and some relic fragments of Pyrenean-type glaciers (those of Monte Gelàs are the southernmost of the Alpine Chain)."
+    },
+    {
+      "id": "s7",
+      "name": "Prà del Rasour",
+      "quote": "Ciò provoca la formazione, dopo una fase paludosa e di torbiera, di una piccola area pianeggiante, come è possibile osservare al Prà del Rasour, al Piano del Valasco, al Pian della Casa, ecc.",
+      "english": "This causes the formation, after a swampy and peat bog phase, of a small flat area, as can be observed at Prà del Rasour, at Piano del Valasco, at Pian della Casa, etc."
+    },
+    {
+      "id": "s8",
+      "name": "Piano del Valasco",
+      "quote": "Ciò provoca la formazione, dopo una fase paludosa e di torbiera, di una piccola area pianeggiante, come è possibile osservare al Prà del Rasour, al Piano del Valasco, al Pian della Casa, ecc.",
+      "english": "This causes the formation, after a swampy and peat bog phase, of a small flat area, as can be observed at Prà del Rasour, at Piano del Valasco, at Pian della Casa, etc."
+    },
+    {
+      "id": "s9",
+      "name": "Pian della Casa",
+      "quote": "Ciò provoca la formazione, dopo una fase paludosa e di torbiera, di una piccola area pianeggiante, come è possibile osservare al Prà del Rasour, al Piano del Valasco, al Pian della Casa, ecc.",
+      "english": "This causes the formation, after a swampy and peat bog phase, of a small flat area, as can be observed at Prà del Rasour, at Piano del Valasco, at Pian della Casa, etc."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glacial Highlands and High Peaks",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Passes and Forests",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Mountain Plains and Basin Meadows",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ]
+}

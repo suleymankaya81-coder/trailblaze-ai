@@ -1,0 +1,58 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "area delle sorgenti",
+      "quote": "Il primo punto d'interesse è rappresentato dall'area delle sorgenti (le risorgive sono dette in Veneto fontanassi), localizzata tra Casacorba, Cavasagra di Vedelago e Torreselle di Piombino Dese.",
+      "english": "The first point of interest is represented by the spring area (the springs are called fontanassi in Veneto), located between Casacorba, Cavasagra di Vedelago and Torreselle di Piombino Dese."
+    },
+    {
+      "id": "s2",
+      "name": "La Porta dell'Acqua",
+      "quote": "In prossimità del principale nucleo di risorgive, l'ente parco ha realizzato un percorso attrezzato, che si snoda attraverso una sentieristica pedonale e ciclabile, denominato \"La Porta dell'Acqua\".",
+      "english": "Near the main core of the springs, the park authority has created an equipped route, which winds through a pedestrian and cycle path network, called \"The Water Gate\"."
+    },
+    {
+      "id": "s3",
+      "name": "oasi naturalistica del Mulino Cervara",
+      "quote": "Un'altra porta di accesso al parco è rappresentata dall'oasi naturalistica del Mulino Cervara, presso Santa Cristina: si estende su circa 25 ettari entro un isolotto delimitato dal Sile e dal canale Piovega.",
+      "english": "Another gateway to the park is represented by the naturalistic oasis of Mulino Cervara, near Santa Cristina: it extends over about 25 hectares within an islet bordered by the Sile and the Piovega canal."
+    },
+    {
+      "id": "s4",
+      "name": "GiraSile",
+      "quote": "L'ente Parco del Sile ha creato un percorso ciclabile lungo il fiume chiamato GiraSile che attraverso 90 km di pista ciclabile partendo da Casacorba arriva a Portegrandi sulla Laguna di Venezia.",
+      "english": "The Sile Park authority has created a cycle path along the river called GiraSile which, through 90 km of cycle track starting from Casacorba, arrives at Portegrandi on the Venice Lagoon."
+    },
+    {
+      "id": "s5",
+      "name": "Restere",
+      "quote": "Dopo Treviso si snodano le Restere, cioè gli argini rialzati su cui i buoi trainavano i grandi barconi da trasporto detti burci.",
+      "english": "After Treviso wind the Restere, which are the raised embankments on which oxen pulled the large transport boats called burci."
+    },
+    {
+      "id": "s6",
+      "name": "Cimitero dei burci",
+      "quote": "Restano ancora numerosi relitti arenati nella zona tra Silea e Casier (il cosiddetto \"Cimitero dei burci\").",
+      "english": "Numerous stranded wrecks still remain in the area between Silea and Casier (the so-called \"Burci Cemetery\")."
+    }
+  ],
+  "days": [
+    {
+      "title": "Springs and Wetlands",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Riverside Routes and History",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

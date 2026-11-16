@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "lago di Suviana",
+      "quote": "L'area è ubicata attorno a due ampi bacini artificiali realizzati a partire dai primi del Novecento a scopo idroelettrico, il lago di Suviana, contornato da una folta pineta, e il bacino del Brasimone, con le sponde erbose.",
+      "english": "The area is located around two large artificial basins created starting from the early twentieth century for hydroelectric purposes, Lake Suviana, surrounded by a thick pine forest, and the Brasimone basin, with its grassy shores."
+    },
+    {
+      "id": "s2",
+      "name": "bacino del Brasimone",
+      "quote": "L'area è ubicata attorno a due ampi bacini artificiali realizzati a partire dai primi del Novecento a scopo idroelettrico, il lago di Suviana, contornato da una folta pineta, e il bacino del Brasimone, con le sponde erbose.",
+      "english": "The area is located around two large artificial basins created starting from the early twentieth century for hydroelectric purposes, Lake Suviana, surrounded by a thick pine forest, and the Brasimone basin, with its grassy shores."
+    },
+    {
+      "id": "s3",
+      "name": "bacino di Pavana",
+      "quote": "Il territorio del parco è racchiuso fra le valli dei torrenti Brasimone e Limentra Orientale, principali immissari dei due laghi; il confine meridionale del parco è però sulla sponda destra del bacino di Pavana, nella valle del Limentra Occidentale.",
+      "english": "The territory of the park is enclosed between the valleys of the Brasimone and Limentra Orientale streams, the main tributaries of the two lakes; the southern border of the park is, however, on the right bank of the Pavana basin, in the Limentra Occidentale valley."
+    },
+    {
+      "id": "s4",
+      "name": "valle del Limentra Occidentale",
+      "quote": "Il territorio del parco è racchiuso fra le valli dei torrenti Brasimone e Limentra Orientale, principali immissari dei due laghi; il confine meridionale del parco è però sulla sponda destra del bacino di Pavana, nella valle del Limentra Occidentale.",
+      "english": "The territory of the park is enclosed between the valleys of the Brasimone and Limentra Orientale streams, the main tributaries of the two lakes; the southern border of the park is, however, on the right bank of the Pavana basin, in the Limentra Occidentale valley."
+    },
+    {
+      "id": "s5",
+      "name": "Centro visita Sala della Terra",
+      "quote": "Centro visita Sala della Terra, dedicato alla geologia del parco, a Castiglione dei Pepoli.",
+      "english": "Sala della Terra Visitor Center, dedicated to the geology of the park, in Castiglione dei Pepoli."
+    },
+    {
+      "id": "s6",
+      "name": "Centro visita Museo del Bosco",
+      "quote": "Centro visita Museo del Bosco, dedicato al secolare Bosco del Poranceto",
+      "english": "Bosco Museum Visitor Center, dedicated to the secular Poranceto Woods"
+    },
+    {
+      "id": "s7",
+      "name": "Bosco del Poranceto",
+      "quote": "Centro visita Museo del Bosco, dedicato al secolare Bosco del Poranceto",
+      "english": "Bosco Museum Visitor Center, dedicated to the secular Poranceto Woods"
+    }
+  ],
+  "days": [
+    {
+      "title": "Major Lakes and Basins",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Visitor Education and Ancient Woods",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Southern Valley Explorations",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

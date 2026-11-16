@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lombardy",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Lake Como"
+        "Bellagio",
+        "Isola Comacina",
+        "Argegno"
       ],
       "seo_title": "Lake Como Visit Guide"
     },
@@ -32,16 +34,49 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Lake Como",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Central Lake and Southwest Branch",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Lake Como",
-                "stop_id": "lake-como",
-                "detail": "Lake Como, also known as Lario, is a lake of glacial origin in Lombardy, Italy. It has an area of 146 km2 (56 sq mi), making it the third-largest lake in Italy, after Lake Garda and Lake Maggiore. At over 400 metres (1,300 ft) deep, it is one of the deepest lakes in Europe. Its characteristic \"Y\" shape resulted from the movement of the ancient Adda glacier, which was diverted by the mountainous terrain and carved the three branches."
+                "name": "Bellagio",
+                "stop_id": "lake-como--s1",
+                "detail": "The three branches converge at the center of the lake in front of the Bellagio promontory, one of the most celebrated locations for the beauty of its landscape and for its ancient tourist traditions."
+              },
+              {
+                "name": "Isola Comacina",
+                "stop_id": "lake-como--s2",
+                "detail": "In the southwest branch, narrow and winding, with steep and wooded slopes, lies Isola Comacina, the only one in the Lario."
+              },
+              {
+                "name": "Argegno",
+                "stop_id": "lake-como--s3",
+                "detail": "It is the deepest lake in Italy, reaching a maximum depression of 418 meters between the towns of Argegno and Nesso, and fifth in Europe, characterized by cryptodepression depths being over 200 meters below sea level."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Como before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Historical Cities and Eastern Peaks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Como",
+                "stop_id": "lake-como--s5",
+                "detail": "Como is a city full of history and in its past it was of strategic importance for the entire region, so much so as to be able to rival Milan."
+              },
+              {
+                "name": "Lecco",
+                "stop_id": "lake-como--s6",
+                "detail": "On the shores of the eastern branch lies the city of Lecco, which owes its fame to Manzoni's famous novel, which set the literary masterpiece The Betrothed in this territory."
+              },
+              {
+                "name": "Gruppo delle Grigne",
+                "stop_id": "lake-como--s7",
+                "detail": "The southeast branch, called the Lecco branch, with the city at its apex, looks east to the Grigne Group (2,410 m)."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Lake Como before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +114,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Lake_Como"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Lago_di_Como"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:55:59.238445+00:00"
       }
     }
   }

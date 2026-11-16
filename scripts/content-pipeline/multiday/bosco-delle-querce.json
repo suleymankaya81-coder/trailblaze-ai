@@ -1,0 +1,39 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "vasche di contenimento",
+      "quote": "Nel giugno del 1977 le operazioni di bonifica vennero affidate a un apposito ufficio speciale per Seveso, che tra il 1981 e il 1984 iniziò la costruzione proprio nella zona A di due vasche di contenimento impermeabilizzate: una da 200000 m³ nel territorio di Seveso e una da 80000 m³ in quello di Meda.",
+      "english": "In June 1977, the reclamation operations were entrusted to a special office for Seveso, which between 1981 and 1984 began the construction right in Zone A of two waterproof containment tanks: one of 200,000 m³ in the territory of Seveso and one of 80,000 m³ in that of Meda."
+    },
+    {
+      "id": "s2",
+      "name": "vasca di Seveso",
+      "quote": "nella vasca di Seveso sono anche contenuti i resti degli edifici, gli oggetti personali, i resti degli oltre 80000 animali morti o soppressi e anche le attrezzature utilizzate per la bonifica stessa.",
+      "english": "the Seveso tank also contains the remains of buildings, personal objects, the remains of over 80,000 dead or culled animals, and also the equipment used for the reclamation itself."
+    },
+    {
+      "id": "s3",
+      "name": "zona A",
+      "quote": "Nel 1983 si decise di costruire un parco nella ex zona A, ricoprendo le vasche di contenimento e utilizzando per lo strato superficiale terra proveniente da altre zone della Lombardia; i lavori iniziarono l'anno successivo e terminarono nel 1986, quando il parco fu affidato all'Azienda regionale delle foreste (ARF).",
+      "english": "In 1983 it was decided to build a park in the former Zone A, covering the containment tanks and using soil from other areas of Lombardy for the surface layer; the work began the following year and ended in 1986, when the park was entrusted to the Regional Forestry Agency (ARF)."
+    },
+    {
+      "id": "s4",
+      "name": "Bosco delle Querce",
+      "quote": "Il parco naturale Bosco delle Querce è un'area naturale protetta rinaturalizzata situata nella ex zona A del disastro di Seveso, dove il materiale contaminato dalla diossina venne rimosso e sostituito da terra proveniente da altre aree non inquinate.",
+      "english": "The Bosco delle Querce natural park is a renaturalized protected natural area located in the former Zone A of the Seveso disaster, where material contaminated by dioxin was removed and replaced with soil from other non-polluted areas."
+    }
+  ],
+  "days": [
+    {
+      "title": "Reclamation Sites and Natural Park",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

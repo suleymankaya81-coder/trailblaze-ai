@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Tuscany",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Val d'Orcia"
+        "Pienza",
+        "Rovere delle Checche"
       ],
       "seo_title": "Val d'Orcia Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Val d'Orcia",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Renaissance Architecture and Cinema in Pienza",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Val d'Orcia",
-                "stop_id": "val-d-orcia",
-                "detail": "The Val d'Orcia or Valdorcia (Italian: [valˈdortʃa]) is a region of Tuscany, Central Italy, which extends from the hills south of Siena to Monte Amiata, between the provinces of Siena and Grosseto. Its gentle, cultivated hills are occasionally broken by gullies and by towns and villages such as Pienza (rebuilt as an \"ideal town\" in the 15th century under the patronage of Pope Pius II), Radicofani (home to the notorious brigand-hero Ghino di Tacco) and Montalcino (the Brunello di Montalcino is counted among the most prestigious of Italian wines). Its landscape has been depicted in works of art from Renaissance painting to modern photography."
+                "name": "Pienza",
+                "stop_id": "val-d-orcia--s1",
+                "detail": "Crossed by the Orcia river in the center, which gives it its name, it is characterized by pleasant landscapes and various centers of medieval origin, two of which are very well known, such as Pienza and Montalcino."
+              },
+              {
+                "name": "Rovere delle Checche",
+                "stop_id": "val-d-orcia--s8",
+                "detail": "Also worth mentioning is the famous monumental tree Rovere delle Checche, in the municipality of Pienza."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Val d'Orcia before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Thermal Springs and Scenic Landscapes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Castiglione d'Orcia",
+                "stop_id": "val-d-orcia--s3",
+                "detail": "The Val d'Orcia is an area of high tourist interest thanks to its historical-landscape peculiarities, such as the Velona Castle, as well as characteristic villages such as San Quirico d'Orcia and Castiglione d'Orcia."
+              },
+              {
+                "name": "San Quirico d'Orcia",
+                "stop_id": "val-d-orcia--s4",
+                "detail": "Inside the natural area, the famous cypresses of San Quirico d'Orcia are also worth noting."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Val d'Orcia before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Val_d%27Orcia"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Val_d%27Orcia"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:09:30.664817+00:00"
       }
     }
   }

@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Trischen",
+      "quote": "Teil des Nationalparks sind unbewohnte Inseln, Halligen und Sandbänke wie Trischen, Blauort oder die Nordfriesischen Außensände.",
+      "english": "Part of the national park are uninhabited islands, halligen and sandbanks such as Trischen, Blauort or the North Frisian Outer Sands."
+    },
+    {
+      "id": "s2",
+      "name": "Blauort",
+      "quote": "Teil des Nationalparks sind unbewohnte Inseln, Halligen und Sandbänke wie Trischen, Blauort oder die Nordfriesischen Außensände.",
+      "english": "Part of the national park are uninhabited islands, halligen and sandbanks such as Trischen, Blauort or the North Frisian Outer Sands."
+    },
+    {
+      "id": "s3",
+      "name": "Nordfriesische Außensände",
+      "quote": "Teil des Nationalparks sind unbewohnte Inseln, Halligen und Sandbänke wie Trischen, Blauort oder die Nordfriesischen Außensände.",
+      "english": "Part of the national park are uninhabited islands, halligen and sandbanks such as Trischen, Blauort or the North Frisian Outer Sands."
+    },
+    {
+      "id": "s4",
+      "name": "Amrum",
+      "quote": "Im nördlichen Bereich (bis etwa Amrum) verläuft die Nationalparkgrenze an der Zwölfmeilenlinie, südlich davon etwa auf der Dreimeilenlinie.",
+      "english": "In the northern area (up to about Amrum), the national park border runs along the twelve-mile line, south of that approximately on the three-mile line."
+    },
+    {
+      "id": "s5",
+      "name": "Schweinswalschutzgebiet",
+      "quote": "In der Schutzzone 2 liegt das 1999 ausgewiesene Schweinswalschutzgebiet.",
+      "english": "The harbor porpoise protection area, designated in 1999, is located in protection zone 2."
+    },
+    {
+      "id": "s6",
+      "name": "Sylt",
+      "quote": "Es erstreckt sich entlang der gesamten westlichen Sylter Küste und hat eine Größe von 124.000 ha.",
+      "english": "It extends along the entire western coast of Sylt and has a size of 124,000 ha."
+    },
+    {
+      "id": "s7",
+      "name": "Wattforschungsstation in List",
+      "quote": "Dies wäre durch die bestehende Wattforschungsstation in List perfekt zu beobachten gewesen.",
+      "english": "This would have been perfectly observable through the existing mudflat research station in List."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Islands and Research Sites",
+      "stop_ids": [
+        "s4",
+        "s7",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Outer Sandbanks and Islands",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ]
+}

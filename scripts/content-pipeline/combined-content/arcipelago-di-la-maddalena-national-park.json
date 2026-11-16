@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Sardinia",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Arcipelago di La Maddalena National Park"
+        "isola di Razzoli",
+        "isola di Mortorio"
       ],
       "seo_title": "Arcipelago di La Maddalena National Park Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Arcipelago di La Maddalena National Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Northern Islands and Coastal Protection",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Arcipelago di La Maddalena National Park",
-                "stop_id": "arcipelago-di-la-maddalena-national-park",
-                "detail": "Arcipelago di La Maddalena National Park is a geomarine national park on the coast of Sardinia. The park was established on 1 April 1994, followed by the change of DPR on 17 May 1996. It covers an area on land and sea of over 12,000 hectares and 180 kilometers of coasts. This region includes all the islands and islets within the territory of the Municipality of La Maddalena, Italy. The territory of the National Park will also represent an important part of the Bocche di Bonifacio international marine park which will soon be established."
+                "name": "isola di Razzoli",
+                "stop_id": "arcipelago-di-la-maddalena-national-park--s1",
+                "detail": "Due to the strong wind that occasionally hits the area, the geomorphological characteristics and biological qualities of the soil, endemic components such as Artemisia densiflora have developed on the island of Razzoli and Phoenician juniper thickets on almost all islands."
+              },
+              {
+                "name": "isola di Mortorio",
+                "stop_id": "arcipelago-di-la-maddalena-national-park--s2",
+                "detail": "The park covers a land area of 5,100 hectares and a marine area of 15,046 hectares, along a front of as many as 180 km of coastline, extending from the Strait of Bonifacio and including all the islands belonging to the La Maddalena Archipelago, up to a short distance from the Gallura coast, where the smaller islands belonging to the park are located, such as the island of Mortorio, under full protection."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Arcipelago di La Maddalena National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Garibaldi's Legacy on Caprera",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "isola di Caprera",
+                "stop_id": "arcipelago-di-la-maddalena-national-park--s3",
+                "detail": "On the island of Caprera there are large pine forests, which legend says were first planted by Giuseppe Garibaldi near his home."
+              },
+              {
+                "name": "Memoriale Giuseppe Garibaldi",
+                "stop_id": "arcipelago-di-la-maddalena-national-park--s6",
+                "detail": "On the island there is also the Giuseppe Garibaldi Memorial, housed in the former fort of Arbuticci, and the tomb of the mare Marsala."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Arcipelago di La Maddalena National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Arcipelago_di_La_Maddalena_National_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_nazionale_dell%27Arcipelago_di_La_Maddalena"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:52:59.564226+00:00"
       }
     }
   }

@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Bolle di Magadino",
+      "quote": "Das Mündungsgebiet, die Bolle di Magadino «Blase von Magadino», ist ein artenreiches Naturschutzgebiet.",
+      "english": "The estuary area, the Bolle di Magadino 'Bubble of Magadino', is a species-rich nature reserve."
+    },
+    {
+      "id": "s2",
+      "name": "Locarno",
+      "quote": "Östlich des Deltas liegt Locarno, das vor allem durch sein Filmfestival und die Wallfahrtskirche Madonna del Sasso bekannt ist, auf der Westseite Ascona mit seiner Seepromenade und dem Monte Verità.",
+      "english": "To the east of the delta lies Locarno, which is primarily known for its film festival and the pilgrimage church of Madonna del Sasso, and on the west side Ascona with its lakeside promenade and Monte Verità."
+    },
+    {
+      "id": "s3",
+      "name": "Madonna del Sasso",
+      "quote": "Östlich des Deltas liegt Locarno, das vor allem durch sein Filmfestival und die Wallfahrtskirche Madonna del Sasso bekannt ist, auf der Westseite Ascona mit seiner Seepromenade und dem Monte Verità.",
+      "english": "To the east of the delta lies Locarno, which is primarily known for its film festival and the pilgrimage church of Madonna del Sasso, and on the west side Ascona with its lakeside promenade and Monte Verità."
+    },
+    {
+      "id": "s4",
+      "name": "Ascona",
+      "quote": "Östlich des Deltas liegt Locarno, das vor allem durch sein Filmfestival und die Wallfahrtskirche Madonna del Sasso bekannt ist, auf der Westseite Ascona mit seiner Seepromenade und dem Monte Verità.",
+      "english": "To the east of the delta lies Locarno, which is primarily known for its film festival and the pilgrimage church of Madonna del Sasso, and on the west side Ascona with its lakeside promenade and Monte Verità."
+    },
+    {
+      "id": "s5",
+      "name": "Monte Verità",
+      "quote": "Östlich des Deltas liegt Locarno, das vor allem durch sein Filmfestival und die Wallfahrtskirche Madonna del Sasso bekannt ist, auf der Westseite Ascona mit seiner Seepromenade und dem Monte Verità.",
+      "english": "To the east of the delta lies Locarno, which is primarily known for its film festival and the pilgrimage church of Madonna del Sasso, and on the west side Ascona with its lakeside promenade and Monte Verità."
+    },
+    {
+      "id": "s6",
+      "name": "Ponte dei Salti",
+      "quote": "Im Norden mündet die Verzasca in den See, vor allem bekannt durch eine Brücke, die Ponte dei Salti, und die 220 m hohe Staumauer.",
+      "english": "In the north, the Verzasca flows into the lake, known primarily for a bridge, the Ponte dei Salti, and the 220 m high dam wall."
+    },
+    {
+      "id": "s7",
+      "name": "Isole di Brissago",
+      "quote": "Bei Brissago liegen die zwei Isole di Brissago mit ihrem botanischen Garten: Isola di San Pancrazio (Isola Grande) und Isola di Sant’Apollinare (Isolino).",
+      "english": "Near Brissago lie the two Brissago Islands with their botanical garden: Isola di San Pancrazio (Isola Grande) and Isola di Sant’Apollinare (Isolino)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Shore and Nature Reserves",
+      "stop_ids": [
+        "s1",
+        "s6"
+      ]
+    },
+    {
+      "title": "Locarno and Ascona Cultural Highlights",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Brissago Islands Botanical Visit",
+      "stop_ids": [
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "1dff5c57db57273ac2e5464dae1f5b1d7243f717cadbe8e6b8ee208c12518b86"
+}

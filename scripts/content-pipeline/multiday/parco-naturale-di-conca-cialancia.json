@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Punta Cialancia",
+      "quote": "Si situa in territorio montano con un'altitudine compresa i 1.796 e i 2.855 m della Punta Cialancia.",
+      "english": "It is situated in mountainous territory with an altitude between 1,796 and the 2,855 m of Punta Cialancia."
+    },
+    {
+      "id": "s2",
+      "name": "Rocca Bianca",
+      "quote": "Comprende anche la Conca (2.451 m) con i laghetti e il versante sud-est della Rocca Bianca.",
+      "english": "It also includes the Basin (2,451 m) with the small lakes and the south-east slope of Rocca Bianca."
+    },
+    {
+      "id": "s3",
+      "name": "Lago Lauson",
+      "quote": "Lo si può raggiungere in auto attraverso una stretta strada in gran parte sterrata ex militare che in circa 15 km conduce nei pressi del Lago Lauson (2.017 m), dove sono situati un alpeggio che vende formaggi, un'area attrezzata con tavoli e una fontana.",
+      "english": "It can be reached by car via a narrow, mostly unpaved former military road that in about 15 km leads to the vicinity of Lake Lauson (2,017 m), where there is a mountain pasture farm selling cheese, a picnic area with tables, and a fountain."
+    },
+    {
+      "id": "s4",
+      "name": "Bivacco Formaggino",
+      "quote": "In direzione nord-ovest continua pianeggiante e supera un costone, dove è situato il Bivacco Formaggino (chiuso) usato dall'Ente Parco, prima di scendere per alcuni tornanti e raggiungere le vecchie malghe dell'Alpe Cialancia (1.845 m), ormai abbandonate, nei pressi del rio omonimo",
+      "english": "In a north-westerly direction, it continues level and crosses a ridge, where the Formaggino Bivouac is located (closed), used by the Park Authority, before descending through some hairpins to reach the old, now abandoned mountain huts of Alpe Cialancia (1,845 m), near the stream of the same name"
+    },
+    {
+      "id": "s5",
+      "name": "Alpe Cialancia",
+      "quote": "In direzione nord-ovest continua pianeggiante e supera un costone, dove è situato il Bivacco Formaggino (chiuso) usato dall'Ente Parco, prima di scendere per alcuni tornanti e raggiungere le vecchie malghe dell'Alpe Cialancia (1.845 m), ormai abbandonate, nei pressi del rio omonimo",
+      "english": "In a north-westerly direction, it continues level and crosses a ridge, where the Formaggino Bivouac is located (closed), used by the Park Authority, before descending through some hairpins to reach the old, now abandoned mountain huts of Alpe Cialancia (1,845 m), near the stream of the same name"
+    },
+    {
+      "id": "s6",
+      "name": "Laghi Cialancia",
+      "quote": "In direzione sud supera un dislivello con due tornati, prima di iniziare un ampio arco in direzione sud-ovest in leggera salita, che percorre il perimetro della conca fino a concludersi sulla sua testata, dove sono situati i Laghi Cialancia (2.455 m) e i ruderi delle relative malghe",
+      "english": "In a southerly direction, it overcomes a height difference with two hairpins, before starting a wide arc in a south-westerly direction slightly uphill, which runs along the perimeter of the basin until ending at its head, where the Cialancia Lakes (2,455 m) and the ruins of the relative mountain huts are located"
+    },
+    {
+      "id": "s7",
+      "name": "Passo della Cialancia",
+      "quote": "Dai Laghi Cialancia prosegue il sentiero che raggiunge il Passo della Cialancia (2.683 m), che collega la Conca Cialancia con l'Altopiano dei Tredici Laghi, punto di accesso per escursionistico per le creste di Punta Cialancia (a sud) e di Punta Founset (a nord)",
+      "english": "From the Cialancia Lakes, the path continues and reaches the Cialancia Pass (2,683 m), which connects the Cialancia Basin with the Plateau of the Thirteen Lakes, a hiking access point for the ridges of Punta Cialancia (to the south) and Punta Founset (to the north)"
+    },
+    {
+      "id": "s8",
+      "name": "Punta Founset",
+      "quote": "Dai Laghi Cialancia prosegue il sentiero che raggiunge il Passo della Cialancia (2.683 m), che collega la Conca Cialancia con l'Altopiano dei Tredici Laghi, punto di accesso per escursionistico per le creste di Punta Cialancia (a sud) e di Punta Founset (a nord)",
+      "english": "From the Cialancia Lakes, the path continues and reaches the Cialancia Pass (2,683 m), which connects the Cialancia Basin with the Plateau of the Thirteen Lakes, a hiking access point for the ridges of Punta Cialancia (to the south) and Punta Founset (to the north)"
+    }
+  ],
+  "days": [
+    {
+      "title": "Lower Basin and Northwest Pastures",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "The High Lakes and the Basin Rim",
+      "stop_ids": [
+        "s2",
+        "s6"
+      ]
+    },
+    {
+      "title": "Summit Ridges and High Passes",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

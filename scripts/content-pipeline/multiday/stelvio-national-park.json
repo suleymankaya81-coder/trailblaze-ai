@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "passo dello Stelvio",
+      "quote": "La dorsale principale inizia al passo dello Stelvio (2.758 m), il secondo più alto valico transitabile d'Europa che collega Bormio a Trafoi, e s'innalza in numerose vette al di sopra dei 3.500 m, come la punta Thurwieser (3.652 m), il Gran Zebrù (3.857 m) e il Cevedale (3.769 m), per culminare con la vetta dell'Ortles con i suoi 3.905 m.",
+      "english": "The main ridge starts at the Stelvio Pass (2,758 m), the second highest drivable pass in Europe connecting Bormio to Trafoi, and rises into numerous peaks above 3,500 m, such as Punta Thurwieser (3,652 m), Gran Zebrù (3,857 m), and Cevedale (3,769 m), culminating with the peak of Ortles at 3,905 m."
+    },
+    {
+      "id": "s2",
+      "name": "Ortles",
+      "quote": "Rientrano nel parco quasi tutte le cime Alpi dell'Ortles.",
+      "english": "Almost all the peaks of the Ortles Alps are included in the park."
+    },
+    {
+      "id": "s3",
+      "name": "ghiacciaio dei Forni",
+      "quote": "Oltre a numerosi torrenti lungo le rispettive valli, nel territorio sono presenti diversi importanti ghiacciai, il più importante dei quali è il ghiacciaio dei Forni, il più vasto ghiacciaio vallivo alpino italiano, situato sul versante lombardo.",
+      "english": "In addition to numerous streams along the respective valleys, several important glaciers are present in the territory, the most important of which is the Forni glacier, the largest Italian alpine valley glacier, located on the Lombard side."
+    },
+    {
+      "id": "s4",
+      "name": "val di Rabbi",
+      "quote": "La specie più diffusa è sicuramente l'abete rosso (Picea abies), al quale si associano pochi e isolati gruppi di abete bianco (Abies alba), quest'ultimo presente soprattutto in val di Rabbi, zona trentina del Parco.",
+      "english": "The most widespread species is certainly the Norway spruce (Picea abies), associated with a few isolated groups of silver fir (Abies alba), the latter present mainly in Val di Rabbi, the Trentino area of the Park."
+    },
+    {
+      "id": "s5",
+      "name": "Val di Peio",
+      "quote": "Queste formazioni di alberi risalgono i versanti diradandosi verso il limite superiore per cedere lentamente il posto al larice (Larix decidua) e al pino cembro (Pinus cembra), diffuso principalmente in Val di Peio.",
+      "english": "These tree formations climb the slopes, thinning out towards the upper limit to slowly give way to the larch (Larix decidua) and the stone pine (Pinus cembra), mainly widespread in Val di Peio."
+    },
+    {
+      "id": "s6",
+      "name": "Centro visite Aquaprad",
+      "quote": "Centro visite Aquaprad di Prato allo Stelvio",
+      "english": "Aquaprad visitor centre in Prato allo Stelvio"
+    },
+    {
+      "id": "s7",
+      "name": "Torre Alberti",
+      "quote": "Punto informazioni Torre Alberti di Bormio",
+      "english": "Torre Alberti information point in Bormio"
+    },
+    {
+      "id": "s8",
+      "name": "Area faunistica di Peio",
+      "quote": "Area faunistica di Peio",
+      "english": "Peio wildlife area"
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Glaciers of the Ortles Group",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Forests and Wildlife Areas of Trentino",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s8"
+      ]
+    },
+    {
+      "title": "Visitor Centres and Landmarks",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

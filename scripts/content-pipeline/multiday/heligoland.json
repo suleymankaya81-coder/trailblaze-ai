@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Oberland",
+      "quote": "Das Unterland mit dem Hafen befindet sich im Osten und Süden der Insel, das Oberland im Norden und Westen, das kleinere Mittelland im Südwesten.",
+      "english": "The Unterland with the port is located in the east and south of the island, the Oberland in the north and west, the smaller Mittelland in the southwest."
+    },
+    {
+      "id": "s2",
+      "name": "Mittelland",
+      "quote": "Die gesamte Oberfläche des Oberlands sowie das Mittelland wurden durch die Sprengung der Bunkeranlagen 1947 und die anschließende Bombardierung geformt.",
+      "english": "The entire surface of the Oberland as well as the Mittelland were shaped by the blowing up of the bunker systems in 1947 and the subsequent bombing."
+    },
+    {
+      "id": "s3",
+      "name": "Unterland",
+      "quote": "Die Siedlung liegt etwa je zur Hälfte im Unter- und Oberland.",
+      "english": "The settlement is located about half each in the Unterland and Oberland."
+    },
+    {
+      "id": "s4",
+      "name": "Nordostland",
+      "quote": "Viele öffentliche Einrichtungen finden sich im Nordostland.",
+      "english": "Many public facilities are found in the Nordostland."
+    },
+    {
+      "id": "s5",
+      "name": "Lange Anna",
+      "quote": "Am Nordwestende der Hauptinsel befindet sich das bekannteste Wahrzeichen Helgolands, der 47 Meter hohe Brandungspfeiler Lange Anna.",
+      "english": "At the northwest end of the main island is Heligoland's most famous landmark, the 47-meter-high sea stack Lange Anna."
+    },
+    {
+      "id": "s6",
+      "name": "Pinneberg",
+      "quote": "Dabei entstand auch die mit 61,3 m höchste Erhebung der Insel wie auch des Kreises Pinneberg, die seit 1998 nichtamtlich „Pinneberg“ genannt wird und mit einem Gipfelkreuz markiert ist.",
+      "english": "This also created the island's highest elevation at 61.3 m, as well as that of the Pinneberg district, which has been informally called \"Pinneberg\" since 1998 and is marked with a summit cross."
+    },
+    {
+      "id": "s7",
+      "name": "Düne",
+      "quote": "Die Nebeninsel Düne befindet sich jenseits der kleinen Meeresstraße Reede, die in Nordreede und Südreede unterteilt ist, knapp einen Kilometer östlich der helgoländischen Hauptinsel.",
+      "english": "The neighboring island Düne is located beyond the small marine strait Reede, which is divided into Nordreede and Südreede, just under a kilometer east of the main island of Heligoland."
+    }
+  ],
+  "days": [
+    {
+      "title": "Town Centers and High Points",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "Northern Districts and Landmarks",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Natural Scars and Dunes",
+      "stop_ids": [
+        "s2",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "bd1c0afb8e3d8f5b57e03f7fdb070c26d06d44c84b042b6fa79342c75cc81ebd"
+}

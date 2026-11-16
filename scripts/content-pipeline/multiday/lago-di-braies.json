@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "lago di Braies",
+      "quote": "Il lago di Braies (Pragser Wildsee in tedesco) è un lago alpino situato in Val di Braies (una valle laterale alla Val Pusteria) a 1.496 m s.l.m. nel comune di Braies (BZ), a circa 97 km da Bolzano.",
+      "english": "Lake Braies (Pragser Wildsee in German) is an alpine lake located in the Braies Valley (a side valley of the Puster Valley) at 1,496 m above sea level in the municipality of Braies (BZ), about 97 km from Bolzano."
+    },
+    {
+      "id": "s2",
+      "name": "Val di Braies",
+      "quote": "Il lago di Braies (Pragser Wildsee in tedesco) è un lago alpino situato in Val di Braies (una valle laterale alla Val Pusteria) a 1.496 m s.l.m. nel comune di Braies (BZ), a circa 97 km da Bolzano.",
+      "english": "Lake Braies (Pragser Wildsee in German) is an alpine lake located in the Braies Valley (a side valley of the Puster Valley) at 1,496 m above sea level in the municipality of Braies (BZ), about 97 km from Bolzano."
+    },
+    {
+      "id": "s3",
+      "name": "Croda del Becco",
+      "quote": "Il lago giace ai piedi dell'imponente parete rocciosa della Croda del Becco (ted. Seekofel, ladino Sass dla Porta, 2.810 m) e si trova all'interno del parco naturale Fanes - Sennes e Braies.",
+      "english": "The lake lies at the foot of the imposing rock face of the Croda del Becco (German Seekofel, Ladin Sass dla Porta, 2,810 m) and is located within the Fanes - Sennes and Braies nature park."
+    },
+    {
+      "id": "s4",
+      "name": "parco naturale Fanes - Sennes e Braies",
+      "quote": "Il lago giace ai piedi dell'imponente parete rocciosa della Croda del Becco (ted. Seekofel, ladino Sass dla Porta, 2.810 m) e si trova all'interno del parco naturale Fanes - Sennes e Braies.",
+      "english": "The lake lies at the foot of the imposing rock face of the Croda del Becco (German Seekofel, Ladin Sass dla Porta, 2,810 m) and is located within the Fanes - Sennes and Braies nature park."
+    },
+    {
+      "id": "s5",
+      "name": "Alta via n. 1 delle Dolomiti",
+      "quote": "È il punto di partenza dell'Alta via n. 1 delle Dolomiti detta \"La classica\" che arriva fino a Belluno ai piedi del gruppo della Schiara.",
+      "english": "It is the starting point of the Alta Via no. 1 of the Dolomites, known as \"The Classic,\" which reaches Belluno at the foot of the Schiara group."
+    },
+    {
+      "id": "s6",
+      "name": "hotel del lago di Braies",
+      "quote": "Presso l'hotel del lago di Braies (Hotel Pragser Wildsee) si è verificato uno degli ultimi episodi della seconda guerra mondiale in Italia.",
+      "english": "At the Lake Braies hotel (Hotel Pragser Wildsee), one of the last episodes of the Second World War in Italy took place."
+    },
+    {
+      "id": "s7",
+      "name": "Zeitgeschichtsarchiv Pragser Wildsee",
+      "quote": "Per ricordare gli avvenimenti, presso l'omonimo hotel nel 2006 è stato istituito lo Zeitgeschichtsarchiv Pragser Wildsee (\"Archivio di storia contemporanea del lago di Braies\") che organizza convegni e dibattiti e pubblica una collana scientifica, sempre su temi legati alla resistenza al nazismo.",
+      "english": "To remember the events, the Zeitgeschichtsarchiv Pragser Wildsee (\"Contemporary History Archive of Lake Braies\") was established at the hotel of the same name in 2006, which organizes conferences and debates and publishes a scientific series, always on themes related to resistance to Nazism."
+    },
+    {
+      "id": "s8",
+      "name": "ponticello di Braies",
+      "quote": "Altra vicenda storica è la tragedia del ponticello di Braies, dove il 7 marzo 1970 persero la vita sette alpini a causa di una valanga che si è staccata lungo la valle di Braies.",
+      "english": "Another historical event is the tragedy of the Braies bridge, where on March 7, 1970, seven Alpine troops lost their lives due to an avalanche that broke off along the Braies valley."
+    }
+  ],
+  "days": [
+    {
+      "title": "Braies Valley exploration",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s8"
+      ]
+    },
+    {
+      "title": "Nature and Peaks",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "History at the Lakeside",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

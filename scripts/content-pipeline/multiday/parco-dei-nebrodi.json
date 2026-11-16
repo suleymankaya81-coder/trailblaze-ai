@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Monte Soro",
+      "quote": "Notevole è la escursione altimetrica, che da poche decine di metri sul livello del mare raggiunge la quota massima di 1847 metri di Monte Soro.",
+      "english": "The altimetric range is notable, reaching the maximum altitude of 1847 meters at Monte Soro from just a few dozen meters above sea level."
+    },
+    {
+      "id": "s2",
+      "name": "Serra del Re",
+      "quote": "Altri rilievi da segnalare sono la Serra del Re (1754 metri), Pizzo Fau (1686 metri), Serra Pignataro (1661 metri), Monte Castelli (1566 metri) e il Monte Sambughetti (1558 metri).",
+      "english": "Other peaks to mention are Serra del Re (1754 meters), Pizzo Fau (1686 meters), Serra Pignataro (1661 meters), Monte Castelli (1566 meters) and Monte Sambughetti (1558 meters)."
+    },
+    {
+      "id": "s3",
+      "name": "Pizzo Fau",
+      "quote": "Altri rilievi da segnalare sono la Serra del Re (1754 metri), Pizzo Fau (1686 metri), Serra Pignataro (1661 metri), Monte Castelli (1566 metri) e il Monte Sambughetti (1558 metri).",
+      "english": "Other peaks to mention are Serra del Re (1754 meters), Pizzo Fau (1686 meters), Serra Pignataro (1661 meters), Monte Castelli (1566 meters) and Monte Sambughetti (1558 meters)."
+    },
+    {
+      "id": "s4",
+      "name": "Monte San Fratello",
+      "quote": "È questo il caso del Monte San Fratello e, soprattutto, delle Rocche del Crasto (1315 m s.l.m.).",
+      "english": "This is the case with Monte San Fratello and, above all, the Rocche del Crasto (1315 m a.s.l.)."
+    },
+    {
+      "id": "s5",
+      "name": "Rocche del Crasto",
+      "quote": "È questo il caso del Monte San Fratello e, soprattutto, delle Rocche del Crasto (1315 m s.l.m.).",
+      "english": "This is the case with Monte San Fratello and, above all, the Rocche del Crasto (1315 m a.s.l.)."
+    },
+    {
+      "id": "s6",
+      "name": "bosco della Tassita",
+      "quote": "Quest'ultima specie è presente, all'interno del bosco della Tassita, con esemplari maestosi che raggiungono i 25 m di altezza.",
+      "english": "This last species is present within the Tassita woods, with majestic specimens reaching 25 m in height."
+    },
+    {
+      "id": "s7",
+      "name": "vallone Calagna",
+      "quote": "Numeroso il contingente delle specie endemiche tra cui si annoverano la Genista aristata, che popola la fascia termomediterranea, la Vicia elegans, una leguminosa rinvenibile nel sottobosco della fascia mesomediterranea, la Petagnaea gussonei, rarissima umbellifera, localizzata esclusivamente nel vallone Calagna (Tortorici) e in pochissime altre stazioni in prossimità di torrenti, e l'abete dei Nebrodi.",
+      "english": "There is a large contingent of endemic species including Genista aristata, which inhabits the thermo-Mediterranean belt, Vicia elegans, a legume found in the undergrowth of the meso-Mediterranean belt, Petagnaea gussonei, a very rare umbellifer, located exclusively in the Calagna valley (Tortorici) and in very few other stations near streams, and the Nebrodi fir."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Ancient Woods",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "Rocky Outcrops and Rare Valleys",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s7"
+      ]
+    }
+  ]
+}

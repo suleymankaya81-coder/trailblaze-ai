@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lombardy",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Lake Garda"
+        "Sirmione",
+        "parco giardino Sigurtà"
       ],
       "seo_title": "Lake Garda Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Lake Garda",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Towns and Peninsula of the Southern Shores",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Lake Garda",
-                "stop_id": "lake-garda",
-                "detail": "Lake Garda (Italian: Lago di Garda, Italian: [ˈlaːɡo di ˈɡarda], or (Lago) Benaco, Italian: [beˈnaːko]; Eastern Lombard: Lach de Garda; Venetian: Ƚago de Garda) is the largest lake in Italy. It is a popular holiday location in northern Italy, between Brescia and Milan to the west, and Verona and Venice to the east.  The lake cuts into the edge of the Italian Alps, particularly the Alpine sub-ranges of the Garda Mountains and the Brenta Group. Glaciers formed this alpine region at the end of the last ice age. The lake and its shoreline are divided between the provinces of Brescia (to the south-west), Verona (south-east) and Trentino (north)."
+                "name": "Sirmione",
+                "stop_id": "lake-garda--s3",
+                "detail": "The translation \"horned\" is also interpreted in reference to the Sirmione peninsula."
+              },
+              {
+                "name": "parco giardino Sigurtà",
+                "stop_id": "lake-garda--s9",
+                "detail": "In the territory there are both protected areas, such as the Mincio regional park, the Castellaro Lagusello nature reserve and the Lake Frassino biotype, and parks and gardens of great importance, such as the famous Sigurtà Garden Park."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Garda before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Islands of the Lake",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "isola di San Biagio",
+                "stop_id": "lake-garda--s5",
+                "detail": "A short distance away is the second largest island, the island of San Biagio, also called \"of the Rabbits\" because in the 16th century there were numerous rabbits that offered abundant hunting."
+              },
+              {
+                "name": "isola degli Olivi",
+                "stop_id": "lake-garda--s6",
+                "detail": "Along the eastern shore are three other islands, all of modest size, located in the vicinity of Malcesine: the northernmost is the island of Olives, then there is the island of Dream, also reachable on foot from the coast during dry periods, and finally the southernmost, the island of Trimelone (or Tremellone)."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Lake Garda before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Lake_Garda"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Lago_di_Garda"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:56:07.650063+00:00"
       }
     }
   }

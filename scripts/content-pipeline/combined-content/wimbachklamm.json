@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Bavaria",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Wimbachklamm"
+        "Ramsau",
+        "Wimbachklamm Gorge",
+        "Berchtesgaden National Park"
       ],
       "seo_title": "Wimbachklamm Visit Guide"
     },
     "travel": {
       "slug": "wimbachklamm",
+      "overview_name": "Wimbachklamm",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Wimbachklamm before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.berchtesgaden.de/en/pois/wimbachklamm-ramsau",
@@ -31,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Wimbachklamm",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Gorge Entrance and Ramsau Village",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Wimbachklamm",
-                "stop_id": "wimbachklamm",
-                "detail": "Rushing waterfalls, narrow rocky passages, countless streams, lush carpets of moss, and a refreshing escape on hot summer days: Wimbachklamm Gorge offers an unforgettable nature experience along bridges and wooden walkways."
+                "name": "Ramsau",
+                "stop_id": "wimbachklamm--s3",
+                "detail": "At the entrance to the vast high-alpine valley between Mount Watzmann and Mount Hochkalter, near the mountaineering village of Ramsau, lies the narrow Wimbachklamm Gorge."
+              },
+              {
+                "name": "Wimbachklamm Gorge",
+                "stop_id": "wimbachklamm--s1",
+                "detail": "Wimbachklamm Gorge offers an unforgettable nature experience along bridges and wooden walkways."
+              },
+              {
+                "name": "Berchtesgaden National Park",
+                "stop_id": "wimbachklamm--s5",
+                "detail": "Wimbachklamm Gorge in Berchtesgaden National Park is a fascinating geological attraction, a spectacular natural landmark, and a popular destination for hikers and walkers alike."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Wimbachklamm before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Upper Alpine Wilderness",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Wimbachgries",
+                "stop_id": "wimbachklamm--s4",
+                "detail": "While the upper Wimbachtal valley, known as Wimbachgries, is covered in dry gravel and the water flows underground, the mountain stream bursts back to the surface in Wimbachklamm Gorge."
+              },
+              {
+                "name": "Wimbachgrieshütte",
+                "stop_id": "wimbachklamm--s7",
+                "detail": "Farther up Wimbachtal, Wimbachgrieshütte offers overnight accommodations and is a popular destination for hikers and mountaineers."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Wimbachklamm before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +111,8 @@
             "url": "https://www.berchtesgaden.de/en/pois/wimbachklamm-ramsau"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:52:54.306373+00:00"
       }
     }
   }

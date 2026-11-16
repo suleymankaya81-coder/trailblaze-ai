@@ -1,0 +1,99 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Haus der Natur",
+      "quote": "Der Verwaltungssitz ist das Haus der Natur in der Gemeinde Feldberg am höchsten Berg des Schwarzwaldes, dem 1.493 m hohen Feldberg.",
+      "english": "The administrative headquarters is the House of Nature in the municipality of Feldberg on the highest mountain in the Black Forest, the 1,493 m high Feldberg."
+    },
+    {
+      "id": "s2",
+      "name": "Feldberg",
+      "quote": "Südlich des Feldsees liegt der Feldberg, er ist mit einer Höhe von 1493 m ü. NN die höchste Erhebung des Schwarzwaldes.",
+      "english": "To the south of the Feldsee lies the Feldberg; at a height of 1493 m above sea level, it is the highest elevation in the Black Forest."
+    },
+    {
+      "id": "s3",
+      "name": "Feldsee",
+      "quote": "Im Feldsee gibt es eine Art des stachelsporigen Brachsenkrauts, das neben dem Feldsee nur im Titisee vorkommt und von der IUCN als gefährdet eingestuft wird.",
+      "english": "In the Feldsee, there is a species of spiny-spored quillwort that, besides the Feldsee, only occurs in the Titisee and is classified as endangered by the IUCN."
+    },
+    {
+      "id": "s4",
+      "name": "Titisee",
+      "quote": "Der Sage nach sind der Titisee und der Ursee unterirdisch miteinander verbunden.",
+      "english": "According to legend, the Titisee and the Ursee are connected to each other underground."
+    },
+    {
+      "id": "s5",
+      "name": "Schluchsee",
+      "quote": "Mit einer maximalen Fläche von 5,14 km² ist der Schluchsee der größte See des Schwarzwaldes.",
+      "english": "With a maximum area of 5.14 km², the Schluchsee is the largest lake in the Black Forest."
+    },
+    {
+      "id": "s6",
+      "name": "Herzogenhorn",
+      "quote": "Am Herzogenhorn gibt es ein Netz von Wanderwegen, der zum Gipfel führende Naturlehrpfad geht an der Krunkelbachhütte vorbei.",
+      "english": "At the Herzogenhorn there is a network of hiking trails; the nature trail leading to the summit passes by the Krunkelbachhütte."
+    },
+    {
+      "id": "s7",
+      "name": "Belchen",
+      "quote": "Der Belchen ist die vierthöchste Erhebung im Schwarzwald und wurde 1949 wegen seiner Fauna und Flora unter Schutz gestellt.",
+      "english": "The Belchen is the fourth highest elevation in the Black Forest and was placed under protection in 1949 because of its fauna and flora."
+    },
+    {
+      "id": "s8",
+      "name": "Blauen",
+      "quote": "Auf dem Blauen gibt es einen Aussichtsturm, der 1895 errichtet und 1984 mit Mitteln der Deutschen Bundespost renoviert wurde.",
+      "english": "On the Blauen, there is a viewing tower that was built in 1895 and renovated in 1984 with funds from the German Federal Post Office."
+    },
+    {
+      "id": "s9",
+      "name": "Schluchtensteig",
+      "quote": "Durch Blumberg führen mehrere Fernwanderwege, wie der Schluchtensteig.",
+      "english": "Several long-distance hiking trails lead through Blumberg, such as the Schluchtensteig."
+    },
+    {
+      "id": "s10",
+      "name": "Triberger Wasserfällen",
+      "quote": "Neben den Triberger Wasserfällen (den zweithöchsten Wasserfällen Deutschlands) gibt es rund 50 weitere Wasserfälle im Südschwarzwald.",
+      "english": "In addition to the Triberg Waterfalls (the second highest waterfalls in Germany), there are around 50 other waterfalls in the Southern Black Forest."
+    },
+    {
+      "id": "s11",
+      "name": "Wutachschlucht",
+      "quote": "Die Wutachschlucht ist 60 bis 135 Meter tief, Sehenswürdigkeiten in der Schlucht sind unter anderem das unter Denkmalschutz stehende Flusskraftwerk Stallegg und die Stallegger Tanne.",
+      "english": "The Wutach Gorge is 60 to 135 meters deep; sights in the gorge include the heritage-protected Stallegg river power plant and the Stallegg fir tree."
+    }
+  ],
+  "days": [
+    {
+      "title": "Peaks and Lakes of the High Black Forest",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Highlands and Southern Summits",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Gorges and Waterfalls",
+      "stop_ids": [
+        "s9",
+        "s10",
+        "s11"
+      ]
+    }
+  ],
+  "_text_sha": "9ce01d6faf05f32f9f2b1f3e51f4e906f65bb52df2484b575b2462fd27252cfa"
+}

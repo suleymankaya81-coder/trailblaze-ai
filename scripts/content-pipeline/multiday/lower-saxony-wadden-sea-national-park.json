@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Dollart",
+      "quote": "Bereits seit der Ramsar-Konvention von 1971 sind die heutigen Nationalpark-Flächen und auch der Dollart als Feuchtgebiete internationaler Bedeutung geschützt.",
+      "english": "The areas of today's national park as well as the Dollart have been protected as wetlands of international importance since the Ramsar Convention of 1971."
+    },
+    {
+      "id": "s2",
+      "name": "Borkum",
+      "quote": "Dafür wurden ein reines Meeresgebiet vor den Inseln Borkum und Baltrum und das ehemalige Naturschutzgebiet im östlichen Teil des Dollarts mit in den Nationalpark aufgenommen.",
+      "english": "In exchange, a purely marine area off the islands of Borkum and Baltrum and the former nature reserve in the eastern part of the Dollart were included in the national park."
+    },
+    {
+      "id": "s3",
+      "name": "Baltrum",
+      "quote": "Dafür wurden ein reines Meeresgebiet vor den Inseln Borkum und Baltrum und das ehemalige Naturschutzgebiet im östlichen Teil des Dollarts mit in den Nationalpark aufgenommen.",
+      "english": "In exchange, a purely marine area off the islands of Borkum and Baltrum and the former nature reserve in the eastern part of the Dollart were included in the national park."
+    },
+    {
+      "id": "s4",
+      "name": "Neßmersiel",
+      "quote": "Im Juli 2006 wurde am Strand von Neßmersiel auf Initiative des Landes Niedersachsen das zwanzigjährige Bestehen des Nationalparks Niedersächsisches Wattenmeer gefeiert.",
+      "english": "In July 2006, the twentieth anniversary of the Lower Saxony Wadden Sea National Park was celebrated on the beach of Neßmersiel at the initiative of the state of Lower Saxony."
+    },
+    {
+      "id": "s5",
+      "name": "Wilhelmshaven",
+      "quote": "Die Nationalparkverwaltung befindet sich in Wilhelmshaven.",
+      "english": "The national park administration is located in Wilhelmshaven."
+    },
+    {
+      "id": "s6",
+      "name": "Cuxhaven",
+      "quote": "Durch die Novellierung wurde der Nationalpark um ca. 670 km² überwiegend im Bereich Cuxhaven und im Elbe-Weser Mündungsgebiet vergrößert.",
+      "english": "As a result of the amendment, the national park was enlarged by approximately 670 km², predominantly in the Cuxhaven area and in the Elbe-Weser estuary."
+    },
+    {
+      "id": "s7",
+      "name": "Amrum",
+      "quote": "Die meisten davon brüten auf der Insel Amrum.",
+      "english": "Most of them breed on the island of Amrum."
+    }
+  ],
+  "days": [
+    {
+      "title": "Western Estuaries and Islands",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Coastal Hubs and Administrative Centers",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Northern Estuaries and Breeding Grounds",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "6da450483ee3ebec207539690375ffc0046681bbd17c1f20d3dc5a595d80c879"
+}

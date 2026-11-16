@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Großer Ölberg",
+      "quote": "Großer Ölberg (460,7 m, Osten) mit Gipfelrestaurant",
+      "english": "Großer Ölberg (460.7 m, East) with a summit restaurant"
+    },
+    {
+      "id": "s2",
+      "name": "Löwenburg",
+      "quote": "Löwenburg (455 m, Osten) mit Burgruine",
+      "english": "Löwenburg (455 m, East) with castle ruins"
+    },
+    {
+      "id": "s3",
+      "name": "Lohrberg",
+      "quote": "Lohrberg (432,8 m, Osten)",
+      "english": "Lohrberg (432.8 m, East)"
+    },
+    {
+      "id": "s4",
+      "name": "Petersberg",
+      "quote": "Das letzte vulkanische Ereignis fand im Miozän statt und führte zur Entstehung des Petersberges.",
+      "english": "The last volcanic event took place in the Miocene and led to the formation of the Petersberg."
+    },
+    {
+      "id": "s5",
+      "name": "Peterskapelle",
+      "quote": "Petersberg (335,9 m, Westen), Name im früheren Mittelalter Stromberg, mit keltischem Ringwall, Peterskapelle, Gästehaus der Bundesrepublik Deutschland",
+      "english": "Petersberg (335.9 m, West), named Stromberg in the early Middle Ages, with a Celtic ring wall, Peters Chapel, and guest house of the Federal Republic of Germany"
+    },
+    {
+      "id": "s6",
+      "name": "Wolkenburg",
+      "quote": "Wolkenburg (324 m, Westen)",
+      "english": "Wolkenburg (324 m, West)"
+    },
+    {
+      "id": "s7",
+      "name": "Drachenfels",
+      "quote": "Drachenfels (320,7 m, westliches Siebengebirge) mit Burgruine und Gipfelrestaurant",
+      "english": "Drachenfels (320.7 m, western Siebengebirge) with castle ruins and summit restaurant"
+    },
+    {
+      "id": "s8",
+      "name": "Rosenau",
+      "quote": "Rosenau, auch Große Rosenau (322,1 m, Osten); mit Burgruine",
+      "english": "Rosenau, also called Große Rosenau (322.1 m, East); with castle ruins"
+    },
+    {
+      "id": "s9",
+      "name": "Stenzelberg",
+      "quote": "Stenzelberg (287 m, östlicher Randberg); ehemaliger Kletterberg",
+      "english": "Stenzelberg (287 m, eastern peripheral mountain); former climbing mountain"
+    },
+    {
+      "id": "s10",
+      "name": "Weilberg",
+      "quote": "Weilberg (242,1 m, östlicher Randberg); erstmalige Vergabe des Europadiploms für das Siebengebirge am 15. Oktober 1971",
+      "english": "Weilberg (242.1 m, eastern peripheral mountain); first award of the European Diploma for the Siebengebirge on October 15, 1971"
+    }
+  ],
+  "days": [
+    {
+      "title": "High Eastern Peaks and Ruins",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s8"
+      ]
+    },
+    {
+      "title": "Western History and Rhine Views",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Eastern Slopes and Rocks",
+      "stop_ids": [
+        "s9",
+        "s10"
+      ]
+    }
+  ],
+  "_text_sha": "e8c7534a5224923b979534799781a62aa852e39604492d482bfafc10a3669230"
+}

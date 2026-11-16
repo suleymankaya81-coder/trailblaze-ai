@@ -1,0 +1,72 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Grande",
+      "quote": "la più alta è la Grande, ossia la centrale (2.999 m s.l.m.);",
+      "english": "the highest is the Grande, that is the central one (2,999 m a.s.l.);"
+    },
+    {
+      "id": "s2",
+      "name": "Cima Ovest",
+      "quote": "la seconda è la Cima Ovest (2.973 m);",
+      "english": "the second is the Cima Ovest (2,973 m);"
+    },
+    {
+      "id": "s3",
+      "name": "Cima Piccola",
+      "quote": "la Cima Piccola è la più bassa (2.857 m).",
+      "english": "the Cima Piccola is the lowest (2,857 m)."
+    },
+    {
+      "id": "s4",
+      "name": "Monte Paterno",
+      "quote": "Di questo periodo rimangono ancora evidenti resti (trincee, gallerie, baraccamenti) sul massiccio e sul vicino monte Paterno.",
+      "english": "From this period evident remains still exist (trenches, tunnels, barracks) on the massif and on the nearby Monte Paterno."
+    },
+    {
+      "id": "s5",
+      "name": "Rifugio Auronzo",
+      "quote": "Il Rifugio Auronzo, punto di partenza delle principali escursioni, si trova al termine della strada a pedaggio che sale da Misurina, e può essere raggiunto in macchina, per un numero limitato di posti, oppure in autobus grazie alla navetta Misura - Tre cime gestita da Dolomiti Bus.",
+      "english": "The Rifugio Auronzo, the starting point for the main excursions, is located at the end of the toll road that ascends from Misurina, and can be reached by car, for a limited number of spots, or by bus thanks to the Misura - Tre Cime shuttle managed by Dolomiti Bus."
+    },
+    {
+      "id": "s6",
+      "name": "Rifugio Locatelli-Innerkofler",
+      "quote": "I punti panoramici più conosciuti sono quelli che si possono ottenere dalla val di Landro, presso il vecchio paese dove si ha un profilo laterale delle Tre Cime, oppure dal rifugio Auronzo o ancora dal rifugio Antonio Locatelli.",
+      "english": "The most well-known viewpoints are those that can be obtained from Val di Landro, near the old village where there is a side profile of the Tre Cime, or from Rifugio Auronzo or also from Rifugio Antonio Locatelli."
+    },
+    {
+      "id": "s7",
+      "name": "Rifugio Lavaredo",
+      "quote": "Rifugio Lavaredo",
+      "english": "Lavaredo Refuge"
+    },
+    {
+      "id": "s8",
+      "name": "alta via n. 4",
+      "quote": "Il gruppo è attraversato dall'alta via n. 4, detta di Grohmann.",
+      "english": "The group is crossed by high path no. 4, called Grohmann's."
+    }
+  ],
+  "days": [
+    {
+      "title": "The Three Peaks and High Path",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s8"
+      ]
+    },
+    {
+      "title": "Refuges and Historical Landmarks",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

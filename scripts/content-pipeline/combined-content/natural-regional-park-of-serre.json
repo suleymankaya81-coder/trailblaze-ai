@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Calabria",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Natural regional park of Serre"
+        "bosco Archiforo",
+        "monte Pecoraro"
       ],
       "seo_title": "Natural regional park of Serre Visit Guide"
     },
@@ -32,16 +33,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Natural regional park of Serre",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Forests and High Peaks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Natural regional park of Serre",
-                "stop_id": "natural-regional-park-of-serre",
-                "detail": "The Natural Regional Park of Serre (Italian: Parco naturale regionale delle Serre) is a protected natural area of Calabria, Italy, created in [dated source]."
+                "name": "bosco Archiforo",
+                "stop_id": "natural-regional-park-of-serre--s1",
+                "detail": "Zone A integral reserve: locations: Archiforo forest, Santa Maria forest and Mount Pecoraro"
+              },
+              {
+                "name": "monte Pecoraro",
+                "stop_id": "natural-regional-park-of-serre--s2",
+                "detail": "ANAS Building (Serra S. Bruno) to Mount Pecoraro Trail"
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Natural regional park of Serre before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Castles, Lakes and Reserves",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Villa Vittoria",
+                "stop_id": "natural-regional-park-of-serre--s5",
+                "detail": "Cervus elaphus (red deer) present only and exclusively in the Villa Vittoria reserve"
+              },
+              {
+                "name": "Castello della Baronessa Scoppa",
+                "stop_id": "natural-regional-park-of-serre--s6",
+                "detail": "Mount Trematerra - Baroness Scoppa Castle Trail;"
+              },
+              {
+                "name": "lago Angitola",
+                "stop_id": "natural-regional-park-of-serre--s7",
+                "detail": "Lake Angitola Oasis - The area occupies a surface of 875 ha, equal to 4.95% of the park's surface"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Natural regional park of Serre before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +108,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Natural_regional_park_of_Serre"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_delle_Serre"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:58:08.810095+00:00"
       }
     }
   }

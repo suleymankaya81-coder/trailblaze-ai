@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Palata Menasciutto",
+      "quote": "All'interno del parco sono state individuate due aree a riserva naturale: quella della Palata Menasciutto, in territorio cremasco e quella di Malpaga-Basella, in territorio bergamasco.",
+      "english": "Two natural reserve areas have been identified within the park: that of Palata Menasciutto, in the Cremasco territory, and that of Malpaga-Basella, in the Bergamo territory."
+    },
+    {
+      "id": "s2",
+      "name": "castello di Malpaga",
+      "quote": "Si definisce come una zona steppica e arida compresa tra la Basella e il castello di Malpaga.",
+      "english": "It is defined as a steppic and arid zone included between the Basella and the castle of Malpaga."
+    },
+    {
+      "id": "s3",
+      "name": "Villa e Giardino Griffoni",
+      "quote": "Villa e Giardino Griffoni a Castel Gabbiano, risalenti alla fine del XVII secolo, sono uno dei primi esempi.",
+      "english": "Villa and Griffoni Garden in Castel Gabbiano, dating back to the end of the 17th century, are one of the first examples."
+    },
+    {
+      "id": "s4",
+      "name": "Villa Martini San Bernardino",
+      "quote": "Villa Martini San Bernardino a Crema, datata XVI secolo, presenta una facciata molto semplice e fa oggi parte dell'Oratorio.",
+      "english": "Villa Martini San Bernardino in Crema, dating to the 16th century, has a very simple facade and is today part of the Oratory."
+    },
+    {
+      "id": "s5",
+      "name": "Palazzo Rubini",
+      "quote": "Palazzo Rubini a Romano di Lombardia fu fatto edificare nel 1845 su volontà del tenore Giovan Battista Rubini.",
+      "english": "Palazzo Rubini in Romano di Lombardia was built in 1845 at the wish of the tenor Giovan Battista Rubini."
+    },
+    {
+      "id": "s6",
+      "name": "Palazzo Benvenuti",
+      "quote": "All'interno del Palazzo Benvenuti a Montodine è conservato il cippo di confine tra lo Stato di Milano e lo Stato di Venezia.",
+      "english": "Inside the Palazzo Benvenuti in Montodine, the border stone between the State of Milan and the State of Venice is preserved."
+    },
+    {
+      "id": "s7",
+      "name": "castello di Cavernago",
+      "quote": "Nella lista si annoverano: il castello di Malpaga, residenza ufficiale della famiglia Colleoni; il castello di Cavernago, all'esterno austero, ma con sale riccamente affrescate; il castello di Cologno al Serio e quello di Martinengo, di cui oggi rimane solo la torre con tessitura muraria in ciottoli di fiume e mattoni pieni.",
+      "english": "The list includes: the castle of Malpaga, the official residence of the Colleoni family; the castle of Cavernago, austere on the outside, but with richly frescoed rooms; the castle of Cologno al Serio and that of Martinengo, of which today only the tower remains with wall textures in river pebbles and solid bricks."
+    }
+  ],
+  "days": [
+    {
+      "title": "Historical Palaces and Natural Reserves",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s6"
+      ]
+    },
+    {
+      "title": "Castles and Estates of the Serio",
+      "stop_ids": [
+        "s2",
+        "s7",
+        "s3",
+        "s5"
+      ]
+    }
+  ]
+}

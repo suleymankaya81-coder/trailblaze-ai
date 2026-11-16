@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Botrange",
+      "quote": "Ein Naturparkzentrum ist auf der Botrange eingerichtet, zudem in der Hocheifel das Naturparkzentrum Prümer Land.",
+      "english": "A nature park centre has been established on the Botrange, as well as the Naturparkzentrum Prümer Land in the High Eifel."
+    },
+    {
+      "id": "s2",
+      "name": "Naturparkzentrum Prümer Land",
+      "quote": "Ein Naturparkzentrum ist auf der Botrange eingerichtet, zudem in der Hocheifel das Naturparkzentrum Prümer Land.",
+      "english": "A nature park centre has been established on the Botrange, as well as the Naturparkzentrum Prümer Land in the High Eifel."
+    },
+    {
+      "id": "s3",
+      "name": "Hohes Venn",
+      "quote": "Das Hohe Venn wird geographisch als eigenständiger Naturraum der Gesamteifel angesehen, ist jedoch in den Naturpark mit einbegriffen.",
+      "english": "The High Fens are geographically regarded as an independent natural area of the Eifel as a whole, but are included in the nature park."
+    },
+    {
+      "id": "s4",
+      "name": "Drover Heide",
+      "quote": "Es handelt sich um die Hänge westlich des Wehebaches bei Langerwehe, die Ruraue bei Kreuzau und die Drover Heide bei Vettweiß.",
+      "english": "These are the slopes west of the Wehebach near Langerwehe, the Rur floodplain near Kreuzau and the Drover Heide near Vettweiß."
+    },
+    {
+      "id": "s5",
+      "name": "Ruraue",
+      "quote": "Es handelt sich um die Hänge westlich des Wehebaches bei Langerwehe, die Ruraue bei Kreuzau und die Drover Heide bei Vettweiß.",
+      "english": "These are the slopes west of the Wehebach near Langerwehe, the Rur floodplain near Kreuzau and the Drover Heide near Vettweiß."
+    },
+    {
+      "id": "s6",
+      "name": "Vogelsang",
+      "quote": "Inmitten des Naturparks liegt, im Wesentlichen auf dem ehemaligen Truppenübungsplatz Vogelsang und um den Urftstausee, der 2004 gegründete und nach dem Abzug der belgischen Streitkräfte zum 1. Januar 2006 erweiterte Nationalpark Eifel.",
+      "english": "In the middle of the nature park lies the Eifel National Park, which was founded in 2004 and expanded after the withdrawal of the Belgian armed forces on 1 January 2006, essentially on the former Vogelsang military training area and around the Urft reservoir."
+    },
+    {
+      "id": "s7",
+      "name": "Urftstausee",
+      "quote": "Inmitten des Naturparks liegt, im Wesentlichen auf dem ehemaligen Truppenübungsplatz Vogelsang und um den Urftstausee, der 2004 gegründete und nach dem Abzug der belgischen Streitkräfte zum 1. Januar 2006 erweiterte Nationalpark Eifel.",
+      "english": "In the middle of the nature park lies the Eifel National Park, which was founded in 2004 and expanded after the withdrawal of the Belgian armed forces on 1 January 2006, essentially on the former Vogelsang military training area and around the Urft reservoir."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Fens Centers and Moors",
+      "stop_ids": [
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "title": "National Park and Southern Center",
+      "stop_ids": [
+        "s2",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Northern Floodplains and Heaths",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "ee6dcd01ea35b0e667b1668f01f3da5cab5adbb33f6150cacf7f4c8a59cf42eb"
+}

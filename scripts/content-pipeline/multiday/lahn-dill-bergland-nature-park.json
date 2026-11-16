@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Angelburg",
+      "quote": "Im eigentlichen Gladenbacher Bergland stellt indes die 609 m ü. NN hohe Angelburg die höchste Erhebung dar.",
+      "english": "In the Gladenbacher Bergland proper, however, the 609 m high Angelburg represents the highest elevation."
+    },
+    {
+      "id": "s2",
+      "name": "Eschenburg",
+      "quote": "Eschenburg (590 m ü. NN) – Westlicher Schelder Wald, am Dietzhölzetal",
+      "english": "Eschenburg (590 m above sea level) – Western Schelder Wald, at the Dietzhölze valley."
+    },
+    {
+      "id": "s3",
+      "name": "Hünstein",
+      "quote": "Hünstein (504 m) – kein wirklich eigenständiger Gipfel, jedoch mit Aussichtsturm; Namensgeber von Holzhausen am Hünstein",
+      "english": "Hünstein (504 m) – not a truly independent peak, but with an observation tower; namesake of Holzhausen am Hünstein."
+    },
+    {
+      "id": "s4",
+      "name": "Koppe",
+      "quote": "Koppe (454 m) – mit Aussichtsturm; nah Gladenbach-Erdhausen",
+      "english": "Koppe (454 m) – with an observation tower; near Gladenbach-Erdhausen."
+    },
+    {
+      "id": "s5",
+      "name": "Rimberg",
+      "quote": "Rimberg*** (498 m) – Nordosten, mit Aussichtsturm",
+      "english": "Rimberg (498 m) – Northeast, with an observation tower."
+    },
+    {
+      "id": "s6",
+      "name": "Burg Hohensolms",
+      "quote": "Ramsberg*** (ca. 435 m) – Burg Hohensolms",
+      "english": "Ramsberg (approx. 435 m) – Hohensolms Castle."
+    },
+    {
+      "id": "s7",
+      "name": "Sackpfeife",
+      "quote": "Sackpfeife (Norden der Region Lahn-Dill, Osten des Rothaargebirges)",
+      "english": "Sackpfeife (North of the Lahn-Dill region, East of the Rothaargebirge)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Peaks and Towers",
+      "stop_ids": [
+        "s7",
+        "s5",
+        "s3"
+      ]
+    },
+    {
+      "title": "Central Heights and Views",
+      "stop_ids": [
+        "s1",
+        "s4"
+      ]
+    },
+    {
+      "title": "Western Forests and Castles",
+      "stop_ids": [
+        "s2",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "230740dacdeb7463ae37182e2cdc9f6a5581f66728c673bd149fcbd62ddfa73e"
+}

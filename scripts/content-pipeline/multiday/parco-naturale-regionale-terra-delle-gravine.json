@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Gravina di Laterza",
+      "quote": "La Gravina di Laterza è tra le più grandi e spettacolari d'Europa, con pareti alte oltre 200 metri.",
+      "english": "The Gravina di Laterza is among the largest and most spectacular in Europe, with walls over 200 meters high."
+    },
+    {
+      "id": "s2",
+      "name": "Gravina di Ginosa",
+      "quote": "La Gravina di Ginosa circonda l'antico abitato con le sue caratteristiche case-grotta scavate nella roccia.",
+      "english": "The Gravina di Ginosa surrounds the ancient settlement with its characteristic cave-houses carved into the rock."
+    },
+    {
+      "id": "s3",
+      "name": "Gravina di Castellaneta",
+      "quote": "La Gravina di Castellaneta, nota anche come Gravina di Santo Stefano, offre scorci panoramici mozzafiato sul borgo antico.",
+      "english": "The Gravina di Castellaneta, also known as the Gravina di Santo Stefano, offers breathtaking panoramic views of the ancient village."
+    },
+    {
+      "id": "s4",
+      "name": "Gravina di Palagianello",
+      "quote": "Presso la Gravina di Palagianello è possibile visitare il villaggio ipogeo e l'antico castello che domina il ciglio del burrone.",
+      "english": "At the Gravina di Palagianello, it is possible to visit the hypogean village and the ancient castle overlooking the edge of the ravine."
+    },
+    {
+      "id": "s5",
+      "name": "Gravina di Massafra",
+      "quote": "La Gravina di Massafra è divisa in due rami, San Marco e Santa Caterina, ed è ricca di insediamenti rupestri e chiese affrescate.",
+      "english": "The Gravina di Massafra is divided into two branches, San Marco and Santa Caterina, and is rich in rock settlements and frescoed churches."
+    },
+    {
+      "id": "s6",
+      "name": "Gravina di Leucaspide",
+      "quote": "La Gravina di Leucaspide si trova nel territorio di Statte e conserva i resti di antichi dolmen e necropoli.",
+      "english": "The Gravina di Leucaspide is located in the territory of Statte and preserves the remains of ancient dolmens and necropolises."
+    },
+    {
+      "id": "s7",
+      "name": "Gravina di Riggio",
+      "quote": "La Gravina di Riggio, situata a Grottaglie, è l'unica a presentare una cascata naturale durante i periodi di pioggia.",
+      "english": "The Gravina di Riggio, located in Grottaglie, is the only one to feature a natural waterfall during rainy periods."
+    }
+  ],
+  "days": [
+    {
+      "title": "Western Canyons and Cave Villages",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Castles and Hypogean Settlements",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Archaeology and Waterfalls of the Eastern Park",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

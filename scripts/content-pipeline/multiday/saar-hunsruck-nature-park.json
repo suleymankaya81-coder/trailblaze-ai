@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Bauernhausmuseum „Haus Saargau“ in Gisingen (Wallerfangen)",
+      "quote": "Bauernhausmuseum „Haus Saargau“ in Gisingen (Wallerfangen)",
+      "english": "Farmhouse Museum \"Haus Saargau\" in Gisingen (Wallerfangen)"
+    },
+    {
+      "id": "s2",
+      "name": "Cloef-Atrium in Orscholz",
+      "quote": "Cloef-Atrium in Orscholz",
+      "english": "Cloef-Atrium in Orscholz"
+    },
+    {
+      "id": "s3",
+      "name": "Saar-Hunsrück-Steig",
+      "quote": "Ein Projekt des Naturparks ist der 410 km lange Premiumwanderweg Saar-Hunsrück-Steig von Perl an der Grenze zu Luxemburg über Mettlach, Weiskirchen und die Römerstadt Trier zur Primstalsperre, weiter zum Erbeskopf, dem Ringwall von Otzenhausen, zum Wildenburger Kopf über Idar-Oberstein bis nach Boppard am Rhein.",
+      "english": "A project of the nature park is the 410 km long premium hiking trail Saar-Hunsrück-Steig from Perl on the border with Luxembourg via Mettlach, Weiskirchen and the Roman city of Trier to the Prims Dam, further to the Erbeskopf, the ring wall of Otzenhausen, to the Wildenburger Kopf via Idar-Oberstein to Boppard on the Rhine."
+    },
+    {
+      "id": "s4",
+      "name": "Schaumbergturm bei Tholey",
+      "quote": "Schaumbergturm bei Tholey",
+      "english": "Schaumberg Tower near Tholey"
+    },
+    {
+      "id": "s5",
+      "name": "Erbeskopf",
+      "quote": "Erbeskopf (816,32 m), Schwarzwälder Hochwald",
+      "english": "Erbeskopf (816.32 m), Black Forest Hochwald"
+    },
+    {
+      "id": "s6",
+      "name": "Wildenburg",
+      "quote": "Naturpark-Infostelle und Nationalpark-Tor Wildenburg",
+      "english": "Nature Park Information Point and National Park Gate Wildenburg"
+    },
+    {
+      "id": "s7",
+      "name": "Landesmuseum Birkenfeld",
+      "quote": "Birkenfeld (Landesmuseum Birkenfeld)",
+      "english": "Birkenfeld (Birkenfeld State Museum)"
+    },
+    {
+      "id": "s8",
+      "name": "Freizeitzentrum Finkenrech bei Dirmingen",
+      "quote": "Freizeitzentrum Finkenrech bei Dirmingen",
+      "english": "Finkenrech Leisure Center near Dirmingen"
+    }
+  ],
+  "days": [
+    {
+      "title": "Culture and Hikes in the West",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "High Peaks and Local History",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Towers and Leisure Centers",
+      "stop_ids": [
+        "s4",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "ca6f14e10b2c6bce763b2e7b1f65541f2e017aae589b87b77f499f318f658fb1"
+}

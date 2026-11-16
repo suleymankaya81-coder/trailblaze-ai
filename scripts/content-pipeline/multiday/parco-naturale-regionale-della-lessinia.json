@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Corno d'Aquilio",
+      "quote": "Gli accessi alla parte più elevata del parco sono dati dalla rotabile del passo della Liana che da Sant'Anna d'Alfaedo si inerpica fra il Corno d'Aquilio e il corno Mozzo;",
+      "english": "The accesses to the highest part of the park are provided by the Passo della Liana road which climbs from Sant'Anna d'Alfaedo between Corno d'Aquilio and Corno Mozzo;"
+    },
+    {
+      "id": "s2",
+      "name": "corno Mozzo",
+      "quote": "Gli accessi alla parte più elevata del parco sono dati dalla rotabile del passo della Liana che da Sant'Anna d'Alfaedo si inerpica fra il Corno d'Aquilio e il corno Mozzo;",
+      "english": "The accesses to the highest part of the park are provided by the Passo della Liana road which climbs from Sant'Anna d'Alfaedo between Corno d'Aquilio and Corno Mozzo;"
+    },
+    {
+      "id": "s3",
+      "name": "passo delle Fittanze",
+      "quote": "la provinciale da Erbezzo per il passo delle Fittanze;",
+      "english": "the provincial road from Erbezzo to the Fittanze pass;"
+    },
+    {
+      "id": "s4",
+      "name": "San Giorgio",
+      "quote": "la diretta da Bosco Chiesanuova per San Giorgio e la strada che da Velo passa per Camposilvano ed arriva alla Conca dei Parpari.",
+      "english": "the direct road from Bosco Chiesanuova to San Giorgio and the road that from Velo passes through Camposilvano and reaches the Conca dei Parpari."
+    },
+    {
+      "id": "s5",
+      "name": "Camposilvano",
+      "quote": "la diretta da Bosco Chiesanuova per San Giorgio e la strada che da Velo passa per Camposilvano ed arriva alla Conca dei Parpari.",
+      "english": "the direct road from Bosco Chiesanuova to San Giorgio and the road that from Velo passes through Camposilvano and reaches the Conca dei Parpari."
+    },
+    {
+      "id": "s6",
+      "name": "Conca dei Parpari",
+      "quote": "la diretta da Bosco Chiesanuova per San Giorgio e la strada che da Velo passa per Camposilvano ed arriva alla Conca dei Parpari.",
+      "english": "the direct road from Bosco Chiesanuova to San Giorgio and the road that from Velo passes through Camposilvano and reaches the Conca dei Parpari."
+    },
+    {
+      "id": "s7",
+      "name": "Malga Derocon",
+      "quote": "Il parco in senso stretto ha delle attività proprie prevalentemente concentrate nella Malga Derocon a pochi chilometri da Erbezzo.",
+      "english": "The park strictly speaking has its own activities mainly concentrated in Malga Derocon a few kilometers from Erbezzo."
+    }
+  ],
+  "days": [
+    {
+      "title": "Western Peaks and Passes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "High Pastures and Nature Centers",
+      "stop_ids": [
+        "s7",
+        "s4"
+      ]
+    },
+    {
+      "title": "Valleys and Basins",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

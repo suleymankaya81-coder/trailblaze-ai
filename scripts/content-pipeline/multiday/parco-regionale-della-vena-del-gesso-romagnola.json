@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "grotta del Re Tiberio",
+      "quote": "Tra gli anni cinquanta del XIX secolo e il 1872 il geologo e paleontologo imolese Giuseppe Scarabelli programmò ed eseguì numerose campagne di esplorazione della grotta del Re Tiberio, per poi intraprendere alcuni importanti studi sulla geologia della Vena del Gesso.",
+      "english": "Between the 1850s and 1872, the geologist and paleontologist Giuseppe Scarabelli from Imola planned and carried out numerous exploration campaigns in the Re Tiberio cave, later undertaking several important studies on the geology of the Vena del Gesso."
+    },
+    {
+      "id": "s2",
+      "name": "cava di Borgo Rivola",
+      "quote": "Nel 1997 venne steso un progetto preliminare di Piano Territoriale per il Parco Regionale della Vena del Gesso Romagnola, promosso da tutti gli enti territoriali interessati con un alto livello di consenso fra le comunità locali, che impone dei limiti per l'escavazione del gesso nella cava di Borgo Rivola.",
+      "english": "In 1997, a preliminary project for the Territorial Plan for the Vena del Gesso Romagnola Regional Park was drafted, promoted by all the local authorities involved with a high level of consensus among the local communities, which imposes limits on gypsum excavation in the Borgo Rivola quarry."
+    },
+    {
+      "id": "s3",
+      "name": "Monte Tondo",
+      "quote": "Durante l'anno 2000 uno studio inerente all'ampliamento della cava su Monte Tondo, presso Borgo Rivola, affidato all’“Agenzia regionale per la protezione ambientale” (ARPA) e formalmente recepito nel PIAE e nel PAE (piani di attività estrattiva), stabiliva due vincoli: un quantitativo massimo di gesso estraibile ed un'area massima dove proseguire l’estrazione.",
+      "english": "During the year 2000, a study regarding the expansion of the quarry on Monte Tondo, near Borgo Rivola, entrusted to the 'Regional Agency for Environmental Protection' (ARPA) and formally incorporated into the PIAE and PAE (extraction activity plans), established two constraints: a maximum quantity of extractable gypsum and a maximum area for continuing the extraction."
+    },
+    {
+      "id": "s4",
+      "name": "valle del Santerno",
+      "quote": "Il parco si sviluppa sulle colline romagnole tra Imola e Faenza, nell'area dell'Appennino imolese e dell'Appennino faentino, a una decina di chilometri dalla linea di congiunzione con la pianura, attraversando le valli del Santerno, del Senio del Sintria fino da arrivare a quella del Lamone.",
+      "english": "The park develops on the Romagna hills between Imola and Faenza, in the area of the Imola Apennines and the Faenza Apennines, about ten kilometers from the junction line with the plain, crossing the valleys of the Santerno, the Senio, the Sintria until reaching that of the Lamone."
+    },
+    {
+      "id": "s5",
+      "name": "valle del Senio",
+      "quote": "Il parco si sviluppa sulle colline romagnole tra Imola e Faenza, nell'area dell'Appennino imolese e dell'Appennino faentino, a una decina di chilometri dalla linea di congiunzione con la pianura, attraversando le valli del Santerno, del Senio del Sintria fino da arrivare a quella del Lamone.",
+      "english": "The park develops on the Romagna hills between Imola and Faenza, in the area of the Imola Apennines and the Faenza Apennines, about ten kilometers from the junction line with the plain, crossing the valleys of the Santerno, the Senio, the Sintria until reaching that of the Lamone."
+    },
+    {
+      "id": "s6",
+      "name": "valle del Sintria",
+      "quote": "Il parco si sviluppa sulle colline romagnole tra Imola e Faenza, nell'area dell'Appennino imolese e dell'Appennino faentino, a una decina di chilometri dalla linea di congiunzione con la pianura, attraversando le valli del Santerno, del Senio del Sintria fino da arrivare a quella del Lamone.",
+      "english": "The park develops on the Romagna hills between Imola and Faenza, in the area of the Imola Apennines and the Faenza Apennines, about ten kilometers from the junction line with the plain, crossing the valleys of the Santerno, the Senio, the Sintria until reaching that of the Lamone."
+    },
+    {
+      "id": "s7",
+      "name": "valle del Lamone",
+      "quote": "Il parco si sviluppa sulle colline romagnole tra Imola e Faenza, nell'area dell'Appennino imolese e dell'Appennino faentino, a una decina di chilometri dalla linea di congiunzione con la pianura, attraversando le valli del Santerno, del Senio del Sintria fino da arrivare a quella del Lamone.",
+      "english": "The park develops on the Romagna hills between Imola and Faenza, in the area of the Imola Apennines and the Faenza Apennines, about ten kilometers from the junction line with the plain, crossing the valleys of the Santerno, the Senio, the Sintria until reaching that of the Lamone."
+    }
+  ],
+  "days": [
+    {
+      "title": "Caves and Quarries of Borgo Rivola",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Valleys of the Santerno and Senio",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Eastern Valleys of Sintria and Lamone",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

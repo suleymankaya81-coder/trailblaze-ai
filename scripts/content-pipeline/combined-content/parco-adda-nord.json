@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lombardy",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco dell'Adda Nord"
+        "ponte di ferro di Paderno - Calusco",
+        "Crespi d'Adda",
+        "Centrale idroelettrica Semenza"
       ],
       "seo_title": "Parco Adda Nord Visit Guide"
     },
@@ -32,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco Adda Nord",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Industrial Engineering and UNESCO Heritage",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco dell'Adda Nord",
-                "stop_id": "parco-adda-nord",
-                "detail": "The park of the North Adda is a protected natural area that includes the plain territories crossed by the Adda River, downstream of the Lecchese branch of the Lario. In this part the river winds through a unique landscape with unique environmental characteristics. The park was established in 1983 and has an area of 5580 hectares."
+                "name": "ponte di ferro di Paderno - Calusco",
+                "stop_id": "parco-adda-nord--s2",
+                "detail": "Among the civil engineering works, the iron bridge of Paderno - Calusco is noteworthy."
+              },
+              {
+                "name": "Crespi d'Adda",
+                "stop_id": "parco-adda-nord--s3",
+                "detail": "For industrial archaeology, an example of urban planning linked to 19th-century industrialization is the workers' village of Crespi d'Adda, now a UNESCO World Heritage site."
+              },
+              {
+                "name": "Centrale idroelettrica Semenza",
+                "stop_id": "parco-adda-nord--s4",
+                "detail": "Also noteworthy are the four historic hydroelectric power stations on the Adda; starting from the north we find: the Semenza hydroelectric power station in Calusco d'Adda (Bg), the Bertini and Esterle stations both in Porto di Cornate d'Adda (Mb) and finally the Taccani in Trezzo sull'Adda, (Mi)."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco Adda Nord before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Leonardo's Legacy and Park History",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "chiuse di Leonardo",
+                "stop_id": "parco-adda-nord--s1",
+                "detail": "Within the park there are interesting examples of 19th-century hydraulic engineering, including the canals and Leonardo's locks in Trezzo."
+              },
+              {
+                "name": "ecomuseo di Leonardo",
+                "stop_id": "parco-adda-nord--s7",
+                "detail": "The Leonardo ecomuseum has been set up inside it."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco Adda Nord before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +109,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_dell%27Adda_Nord"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_dell%27Adda_Nord"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:58:22.581383+00:00"
       }
     }
   }

@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Porto Selvaggio",
+      "quote": "La costa è rocciosa e frastagliata, e caratterizzata da pinete e macchia mediterranea.",
+      "english": "The coast is rocky and jagged, and characterized by pine forests and Mediterranean scrub."
+    },
+    {
+      "id": "s2",
+      "name": "Palude del Capitano",
+      "quote": "Comprende la zona del parco naturale regionale attrezzato di \"Porto Selvaggio - Torre Uluzzo\" (istituito nel 1980) e la palude del Capitano (classificata come area naturale nel 1997).",
+      "english": "It includes the area of the equipped regional natural park of \"Porto Selvaggio - Torre Uluzzo\" (established in 1980) and the Capitano marsh (classified as a natural area in 1997)."
+    },
+    {
+      "id": "s3",
+      "name": "Torre dell'Alto",
+      "quote": "Lungo il litorale sono dislocate la Torre dell'Alto, la Torre Uluzzo e la Torre Inserraglio.",
+      "english": "Located along the coastline are the Torre dell'Alto, the Torre Uluzzo and the Torre Inserraglio."
+    },
+    {
+      "id": "s4",
+      "name": "Torre Uluzzo",
+      "quote": "Lungo il litorale sono dislocate la Torre dell'Alto, la Torre Uluzzo e la Torre Inserraglio.",
+      "english": "Located along the coastline are the Torre dell'Alto, the Torre Uluzzo and the Torre Inserraglio."
+    },
+    {
+      "id": "s5",
+      "name": "Torre Inserraglio",
+      "quote": "Lungo il litorale sono dislocate la Torre dell'Alto, la Torre Uluzzo e la Torre Inserraglio.",
+      "english": "Located along the coastline are the Torre dell'Alto, the Torre Uluzzo and the Torre Inserraglio."
+    },
+    {
+      "id": "s6",
+      "name": "grotta del Cavallo",
+      "quote": "Nel territorio del parco si trova anche la grotta del Cavallo, una grotta naturale costiera calcarea, parte di un sistema più ampio di caverne naturali ubicate nella baia di Uluzzo.",
+      "english": "Inside the park territory one also finds the Cavallo cave, a natural coastal limestone cave, part of a wider system of natural caverns located in the bay of Uluzzo."
+    },
+    {
+      "id": "s7",
+      "name": "baia di Uluzzo",
+      "quote": "Nel territorio del parco si trova anche la grotta del Cavallo, una grotta naturale costiera calcarea, parte di un sistema più ampio di caverne naturali ubicate nella baia di Uluzzo.",
+      "english": "Inside the park territory one also finds the Cavallo cave, a natural coastal limestone cave, part of a wider system of natural caverns located in the bay of Uluzzo."
+    }
+  ],
+  "days": [
+    {
+      "title": "Coastal Towers and Bays",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Caves and Wetlands",
+      "stop_ids": [
+        "s2",
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

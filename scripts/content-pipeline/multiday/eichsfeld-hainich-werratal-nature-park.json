@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Naturschutzgebiet Lengenberg",
+      "quote": "Das Naturschutzgebiet Lengenberg bietet den größten Eibenbestand Thüringens.",
+      "english": "The Lengenberg nature reserve offers the largest stock of yew trees in Thuringia."
+    },
+    {
+      "id": "s2",
+      "name": "Teufelskanzel",
+      "quote": "Die Teufelskanzel ist ein wuchtiger Sandsteinfels an einer 452 m ü. NN hohen Stelle des Höheberg (max. 510,7 m ü. NN).",
+      "english": "The Teufelskanzel is a massive sandstone rock at a point on the Höheberg 452 m above sea level (maximum 510.7 m above sea level)."
+    },
+    {
+      "id": "s3",
+      "name": "Lutterwasserfall",
+      "quote": "Der Lutterwasserfall liegt bei Großbartloff und ist mit einer Höhe von 10 m imposant anzusehen.",
+      "english": "The Lutter waterfall is located near Großbartloff and is impressive to look at with a height of 10 m."
+    },
+    {
+      "id": "s4",
+      "name": "Dieteröder Klippen",
+      "quote": "Zum Beispiel an den bei Dieterode gelegenen Dieteröder Klippen, von denen sich der Panoramablick auf das Obereichsfeld bietet, führt der Naturlehrpfad des Naturparks vorbei.",
+      "english": "For example, the nature trail of the nature park passes the Dieteröder Klippen located near Dieterode, from which there is a panoramic view of the Obereichsfeld."
+    },
+    {
+      "id": "s5",
+      "name": "Gobert",
+      "quote": "Die Gobert mit der höchsten Erhebung des Eichsfelds und zugleich des Naturparks, der Goburg (543,4 m ü. NN), den ausgeschilderten Wanderwegen und seiner artenreichen Flora, zählt zu den schönsten Wandergebieten im Eichsfeld.",
+      "english": "The Gobert, with the highest elevation of the Eichsfeld and also of the nature park, the Goburg (543.4 m above sea level), its signposted hiking trails and its species-rich flora, is one of the most beautiful hiking areas in the Eichsfeld."
+    },
+    {
+      "id": "s6",
+      "name": "Heldrastein",
+      "quote": "Der Heldrastein bei Heldra gilt als der König des Werratals, vom Turm der Einheit genießt man einen ausgezeichneten Fernblick über den thüringischen Naturpark.",
+      "english": "The Heldrastein near Heldra is considered the king of the Werra valley; from the Tower of Unity, one enjoys an excellent distant view over the Thuringian nature park."
+    },
+    {
+      "id": "s7",
+      "name": "Naturschutzgebiet Probsteizella",
+      "quote": "Das Naturschutzgebiet Probsteizella besitzt mit den Falkener Klippen eine atemberaubend steile Felswand, die bis an das Werraufer heranreicht.",
+      "english": "The Probsteizella nature reserve possesses in the Falken Cliffs a breathtakingly steep rock face that reaches right down to the banks of the Werra."
+    },
+    {
+      "id": "s8",
+      "name": "Burg Hanstein",
+      "quote": "Die Burg Hanstein wurde im 9. Jahrhundert zum ersten Mal urkundlich erwähnt und thront über dem Ort Bornhagen.",
+      "english": "Hanstein Castle was mentioned in documents for the first time in the 9th century and towers over the village of Bornhagen."
+    },
+    {
+      "id": "s9",
+      "name": "Naturparkzentrum in Fürstenhagen",
+      "quote": "Das Naturparkzentrum in Fürstenhagen befindet sich im ehemaligen Bahnhof Fürstenhagen.",
+      "english": "The nature park center in Fürstenhagen is located in the former Fürstenhagen railway station."
+    },
+    {
+      "id": "s10",
+      "name": "Naturparkweg Leine-Werra",
+      "quote": "Der Naturparkweg Leine-Werra führt über 103 Kilometer von Heilbad Heiligenstadt an der Leine bis nach Creuzburg an der Werra.",
+      "english": "The Leine-Werra Nature Park Trail leads over 103 kilometers from Heilbad Heiligenstadt on the Leine to Creuzburg on the Werra."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Eichsfeld Cliffs and Castles",
+      "stop_ids": [
+        "s8",
+        "s2",
+        "s5",
+        "s9"
+      ]
+    },
+    {
+      "title": "Waterfalls and Highlands",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s1"
+      ]
+    },
+    {
+      "title": "Werra Valley Vistas and Trails",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s10"
+      ]
+    }
+  ],
+  "_text_sha": "90966ef146e1778eaeb1cdd49ab4fee6c934cc1a4e176dc10afd73af282e9679"
+}

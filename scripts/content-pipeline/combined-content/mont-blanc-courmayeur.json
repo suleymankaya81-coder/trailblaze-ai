@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Aosta Valley",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Mont Blanc"
+        "Dente del Gigante",
+        "Aiguille Noire de Peuterey"
       ],
       "seo_title": "Mont Blanc (Courmayeur) Visit Guide"
     },
@@ -32,16 +33,49 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Mont Blanc (Courmayeur)",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Glacial Passes and Iconic Spires",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Mont Blanc",
-                "stop_id": "mont-blanc-courmayeur",
-                "detail": "Mont Blanc (UK: ; US: ) is a mountain in the Alps, rising 4,807.3 m (15,771.9 ft) above sea level, located right at the Franco-Italian border. It is the highest mountain in Europe outside the Caucasus Mountains, the second-most prominent mountain in Europe (after Mount Elbrus in Russia), and the 11th most prominent mountain in the world."
+                "name": "Dente del Gigante",
+                "stop_id": "mont-blanc-courmayeur--s4",
+                "detail": "The Dente del Gigante (4,014 m) is one of the most famous peaks."
+              },
+              {
+                "name": "Aiguille Noire de Peuterey",
+                "stop_id": "mont-blanc-courmayeur--s9",
+                "detail": "The Aiguille Noire de Peuterey (3,773 m) is one of the symbols of Mont Blanc on the Italian side: it rises directly from the meadows of Val Veny for 2,200 m of elevation gain; it is the most important peak of the great Peuterey ridge."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Mont Blanc (Courmayeur) before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Massive Summits and Triple Borders",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Dôme du Goûter",
+                "stop_id": "mont-blanc-courmayeur--s5",
+                "detail": "If the summit part of the Grandes Jorasses is bristling with peaks, that of the Dôme du Goûter is completely flat and is the most extensive in all the Alps."
+              },
+              {
+                "name": "Grandes Jorasses",
+                "stop_id": "mont-blanc-courmayeur--s6",
+                "detail": "The Grandes Jorasses (3,825 m): on its summit part, about 1 km long, it groups a sequence of six points, five of which exceed 4,000 m."
+              },
+              {
+                "name": "Mont Dolent",
+                "stop_id": "mont-blanc-courmayeur--s7",
+                "detail": "Mont Dolent (3,820 m) is a pyramidal peak; curiously its summit is the meeting point of the borders of Italy, Switzerland and France."
+              },
+              {
+                "name": "Guglie di Chamonix",
+                "stop_id": "mont-blanc-courmayeur--s8",
+                "detail": "The Aiguilles de Chamonix (between 3,000 and 3,842 m) dominate the Chamonix valley and represent one of the most famous landscapes of the French Alps."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Mont Blanc (Courmayeur) before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +113,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Mont_Blanc"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Monte_Bianco"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:57:29.629970+00:00"
       }
     }
   }

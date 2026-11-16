@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Monte Cusna",
+      "quote": "Tra i passi di Cirone e delle Forbici si ergono le vette dell'Alpe di Succiso, del Monte Prado e del Monte Cusna che superano i 2.000 metri.",
+      "english": "Between the Cirone and Forbici passes rise the peaks of Alpe di Succiso, Monte Prado, and Monte Cusna, which exceed 2,000 meters."
+    },
+    {
+      "id": "s2",
+      "name": "Monte Prado",
+      "quote": "Tra i passi di Cirone e delle Forbici si ergono le vette dell'Alpe di Succiso, del Monte Prado e del Monte Cusna che superano i 2.000 metri.",
+      "english": "Between the Cirone and Forbici passes rise the peaks of Alpe di Succiso, Monte Prado, and Monte Cusna, which exceed 2,000 meters."
+    },
+    {
+      "id": "s3",
+      "name": "Alpe di Succiso",
+      "quote": "Tra i passi di Cirone e delle Forbici si ergono le vette dell'Alpe di Succiso, del Monte Prado e del Monte Cusna che superano i 2.000 metri.",
+      "english": "Between the Cirone and Forbici passes rise the peaks of Alpe di Succiso, Monte Prado, and Monte Cusna, which exceed 2,000 meters."
+    },
+    {
+      "id": "s4",
+      "name": "Pietra di Bismantova",
+      "quote": "Più in basso, sul versante emiliano, la Pietra di Bismantova domina il paesaggio con le sue pareti verticali a fianco del fiume Secchia.",
+      "english": "Further down, on the Emilian slope, the Pietra di Bismantova dominates the landscape with its vertical walls alongside the Secchia river."
+    },
+    {
+      "id": "s5",
+      "name": "Logarghena",
+      "quote": "A primavera, le giunchiglie imbiancano le praterie più assolate del Parco e offrono panorami spettacolari soprattutto nelle ampie distese prative di Logarghena, a 1.000 m di quota, sul Monte Braiola e sul Monte Marinella sopra Sassalbo.",
+      "english": "In spring, daffodils whiten the sunniest meadows of the Park and offer spectacular panoramas especially in the wide meadow expanses of Logarghena, at an altitude of 1,000 m, on Monte Braiola and Monte Marinella above Sassalbo."
+    },
+    {
+      "id": "s6",
+      "name": "Abetina Reale",
+      "quote": "Il bosco dell'Abetina Reale si sviluppa sul lato destro dell'Alta Valle delle Dolo fino al crinale appenninico al confine con la Garfagnana.",
+      "english": "The Abetina Reale forest develops on the right side of the Upper Dolo Valley up to the Apennine ridge on the border with Garfagnana."
+    },
+    {
+      "id": "s7",
+      "name": "Lago Santo parmense",
+      "quote": "Alcuni sentieri permettono di raggiungere il Monte Orsaro, il Monte Marmagna ed il Lago Santo parmense, attraversando brughiere a mirtilli e facendo sosta nei rifugi e bivacchi nella zona: il Rifugio Mattei, il Rifugio Mariotti e la Capanna Tifoni.",
+      "english": "Some paths allow you to reach Monte Orsaro, Monte Marmagna and the Parmense Holy Lake, crossing blueberry moors and stopping in the refuges and bivouacs in the area: the Mattei Refuge, the Mariotti Refuge and the Tifoni Hut."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Apennine Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Lakes and Forests of the Ridge",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Iconic Rocks and Meadows",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    }
+  ]
+}

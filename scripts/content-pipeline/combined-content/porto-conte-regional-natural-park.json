@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Sardinia",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco naturale regionale di Porto Conte"
+        "Capo Caccia",
+        "baia di Porto Conte"
       ],
       "seo_title": "Porto Conte Regional Natural Park Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Porto Conte Regional Natural Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Coastal Landmarks and Marine Caves",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco naturale regionale di Porto Conte",
-                "stop_id": "porto-conte-regional-natural-park",
-                "detail": "Porto Conte Regional Natural Park (also officially in Algherese Catalan: Parc natural regional de Port del Comte e in sardo: Parcu natural regional de Portu Conte) is a protected natural area of the Coral Riviera located in north-western Sardinia north of Alghero. It takes its name from the site of considerable geo/naturalistic importance of Porto Conte in which it insists for great territorial prevalence. It was established by Regional Law No. 4 of 26 February 1999. It occupies an area of 5,350 it has in the administrative territory of the municipality of Alghero, to which the constitution, which took place in the same year, of the management body of the park, the Special Company Parco di Porto Conte."
+                "name": "Capo Caccia",
+                "stop_id": "porto-conte-regional-natural-park--s3",
+                "detail": "The Capo Caccia lighthouse is located on the promontory."
+              },
+              {
+                "name": "baia di Porto Conte",
+                "stop_id": "porto-conte-regional-natural-park--s7",
+                "detail": "the boat excursion, which departs from the port of Alghero towards the bay of Porto Conte, during which the characteristics of the coastal environment of the protected area are illustrated."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Porto Conte Regional Natural Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Park Heritage and Forest Wildlife",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "casa Gioiosa",
+                "stop_id": "porto-conte-regional-natural-park--s5",
+                "detail": "the visit to Casa Gioiosa, headquarters of the park authority, where it is possible to view illustrative panels of the environmental characteristics of the protected area and the educational laboratories of the environmental center;"
+              },
+              {
+                "name": "punta Giglio",
+                "stop_id": "porto-conte-regional-natural-park--s6",
+                "detail": "the visit to Punta Giglio, through a trekking path that goes into the Mediterranean scrub until reaching the summit and where it is possible to see the remains of World War II military positions;"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Porto Conte Regional Natural Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_di_Porto_Conte"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_di_Porto_Conte"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:07:42.765103+00:00"
       }
     }
   }

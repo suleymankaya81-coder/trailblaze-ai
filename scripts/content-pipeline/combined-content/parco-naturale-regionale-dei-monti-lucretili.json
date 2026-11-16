@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lazio",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco naturale regionale dei Monti Lucretili"
+        "Chiesa di S. Maria in Monte Dominici",
+        "castrum medievale di Castiglione",
+        "tempietto di S. Giacomo Maggiore"
       ],
       "seo_title": "Parco naturale regionale dei Monti Lucretili Visit Guide"
     },
@@ -32,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco naturale regionale dei Monti Lucretili",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Ancient Castles and Historic Churches",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco naturale regionale dei Monti Lucretili",
-                "stop_id": "parco-naturale-regionale-dei-monti-lucretili",
-                "detail": "The regional nature park of the Lucretili Mountains is a protected natural area of the Lazio region established in 1989."
+                "name": "Chiesa di S. Maria in Monte Dominici",
+                "stop_id": "parco-naturale-regionale-dei-monti-lucretili--s5",
+                "detail": "the Church of S. Maria in Monte Dominici from the 13th century (Marcellina, RM))"
+              },
+              {
+                "name": "castrum medievale di Castiglione",
+                "stop_id": "parco-naturale-regionale-dei-monti-lucretili--s7",
+                "detail": "medieval castrum of Castiglione (Palombara Sabina, RM)"
+              },
+              {
+                "name": "tempietto di S. Giacomo Maggiore",
+                "stop_id": "parco-naturale-regionale-dei-monti-lucretili--s8",
+                "detail": "small temple of S. Giacomo Maggiore (Vicovaro, RM)"
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale regionale dei Monti Lucretili before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Ancient Roman Villas and Beech Valleys",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Valle Cavaliera",
+                "stop_id": "parco-naturale-regionale-dei-monti-lucretili--s4",
+                "detail": "the beech forests of the Cavaliera Valley (San Polo dei Cavalieri, RM)"
+              },
+              {
+                "name": "villa di Orazio Flacco",
+                "stop_id": "parco-naturale-regionale-dei-monti-lucretili--s6",
+                "detail": "villa of Horace Flaccus, in loc. Vigne S. Pietro (Licenza, RM)"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco naturale regionale dei Monti Lucretili before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +109,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_regionale_naturale_dei_Monti_Lucretili"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_regionale_naturale_dei_Monti_Lucretili"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:02:30.532575+00:00"
       }
     }
   }

@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "monte Viglio",
+      "quote": "il confine segue la cresta del monte Viglio, la vetta più alta del Parco (2156 metri), per scendere poi verso Pratiglio S.Onofrio seguendone la vallata fino a Capodacqua, zona a valle di Trevi nel Lazio.",
+      "english": "the border follows the ridge of Mount Viglio, the highest peak of the Park (2156 meters), then descends towards Pratiglio S.Onofrio following the valley down to Capodacqua, an area downstream from Trevi nel Lazio."
+    },
+    {
+      "id": "s2",
+      "name": "Capodacqua",
+      "quote": "il confine segue la cresta del monte Viglio, la vetta più alta del Parco (2156 metri), per scendere poi verso Pratiglio S.Onofrio seguendone la vallata fino a Capodacqua, zona a valle di Trevi nel Lazio.",
+      "english": "the border follows the ridge of Mount Viglio, the highest peak of the Park (2156 meters), then descends towards Pratiglio S.Onofrio following the valley down to Capodacqua, an area downstream from Trevi nel Lazio."
+    },
+    {
+      "id": "s3",
+      "name": "Aniene",
+      "quote": "Da quel punto fino a Subiaco il confine corrisponde con il corso del fiume Aniene.",
+      "english": "From that point until Subiaco, the border corresponds with the course of the Aniene river."
+    },
+    {
+      "id": "s4",
+      "name": "Camposecco",
+      "quote": "È tipico dei Simbruini incontrare ampi pianori in quota (Camposecco, Campaegli, Fondi di Jenne, Campo della Pietra), che raggiungono i 500 ettari di superficie, e su cui si può constatare l'abbondante presenza di \"buchi\" nel terreno che hanno la forma di grossi imbuti ovvero doline o inghiottitoi.",
+      "english": "It is typical of the Simbruini to find large high-altitude plateaus (Camposecco, Campaegli, Fondi di Jenne, Campo della Pietra), which reach 500 hectares in surface area, and where one can see the abundant presence of \"holes\" in the ground shaped like large funnels, namely sinkholes or swallow holes."
+    },
+    {
+      "id": "s5",
+      "name": "Campaegli",
+      "quote": "Le aree naturali antropizzate più note del parco sono Campaegli, Monte Livata e Camporotondo, quest'ultima località situata esternamente all'area protetta in territorio marsicano.",
+      "english": "The best-known anthropized natural areas of the park are Campaegli, Monte Livata and Camporotondo, the latter location being situated outside the protected area in Marsican territory."
+    },
+    {
+      "id": "s6",
+      "name": "Fondi di Jenne",
+      "quote": "È tipico dei Simbruini incontrare ampi pianori in quota (Camposecco, Campaegli, Fondi di Jenne, Campo della Pietra), che raggiungono i 500 ettari di superficie, e su cui si può constatare l'abbondante presenza di \"buchi\" nel terreno che hanno la forma di grossi imbuti ovvero doline o inghiottitoi.",
+      "english": "It is typical of the Simbruini to find large high-altitude plateaus (Camposecco, Campaegli, Fondi di Jenne, Campo della Pietra), which reach 500 hectares in surface area, and where one can see the abundant presence of \"holes\" in the ground shaped like large funnels, namely sinkholes or swallow holes."
+    },
+    {
+      "id": "s7",
+      "name": "Campo della Pietra",
+      "quote": "È tipico dei Simbruini incontrare ampi pianori in quota (Camposecco, Campaegli, Fondi di Jenne, Campo della Pietra), che raggiungono i 500 ettari di superficie, e su cui si può constatare l'abbondante presenza di \"buchi\" nel terreno che hanno la forma di grossi imbuti ovvero doline o inghiottitoi.",
+      "english": "It is typical of the Simbruini to find large high-altitude plateaus (Camposecco, Campaegli, Fondi di Jenne, Campo della Pietra), which reach 500 hectares in surface area, and where one can see the abundant presence of \"holes\" in the ground shaped like large funnels, namely sinkholes or swallow holes."
+    },
+    {
+      "id": "s8",
+      "name": "Monte Livata",
+      "quote": "Le aree naturali antropizzate più note del parco sono Campaegli, Monte Livata e Camporotondo, quest'ultima località situata esternamente all'area protetta in territorio marsicano.",
+      "english": "The best-known anthropized natural areas of the park are Campaegli, Monte Livata and Camporotondo, the latter location being situated outside the protected area in Marsican territory."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Plateaus and Karst Formations",
+      "stop_ids": [
+        "s4",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Riverside and Mountain Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Livata and Campaegli Natural Areas",
+      "stop_ids": [
+        "s5",
+        "s8"
+      ]
+    }
+  ]
+}

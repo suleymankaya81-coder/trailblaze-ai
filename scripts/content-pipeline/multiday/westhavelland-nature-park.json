@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Havelländische Luch",
+      "quote": "In tiefen Lagen entstanden große Moor- und Sumpfgebiete, wie das Havelländische Luch, das Rhinluch und das Dossebruch.",
+      "english": "In low-lying areas, large moor and swamp areas were formed, such as the Havelländisches Luch, the Rhinluch and the Dossebruch."
+    },
+    {
+      "id": "s2",
+      "name": "Rhinluch",
+      "quote": "In tiefen Lagen entstanden große Moor- und Sumpfgebiete, wie das Havelländische Luch, das Rhinluch und das Dossebruch.",
+      "english": "In low-lying areas, large moor and swamp areas were formed, such as the Havelländisches Luch, the Rhinluch and the Dossebruch."
+    },
+    {
+      "id": "s3",
+      "name": "Dossebruch",
+      "quote": "In tiefen Lagen entstanden große Moor- und Sumpfgebiete, wie das Havelländische Luch, das Rhinluch und das Dossebruch.",
+      "english": "In low-lying areas, large moor and swamp areas were formed, such as the Havelländisches Luch, the Rhinluch and the Dossebruch."
+    },
+    {
+      "id": "s4",
+      "name": "Ländchen Rhinow",
+      "quote": "Aus diesen Niederungen erheben sich Hochflächen auf Grundmoränenplatten und Endmoränen, die sogenannten Ländchen, wie das Ländchen Bellin, das Ländchen Glien und das Ländchen Rhinow.",
+      "english": "From these lowlands, plateaus rise on ground moraine plates and terminal moraines, the so-called Ländchen, such as the Ländchen Bellin, the Ländchen Glien and the Ländchen Rhinow."
+    },
+    {
+      "id": "s5",
+      "name": "Staatliche Vogelschutzwarte",
+      "quote": "Im Ortsteil Buckow der Gemeinde Nennhausen befindet sich die Staatliche Vogelschutzwarte des Landes Brandenburg.",
+      "english": "In the Buckow district of the municipality of Nennhausen is the State Bird Sanctuary of the State of Brandenburg."
+    },
+    {
+      "id": "s6",
+      "name": "Besucherzentrum des Naturparks Westhavelland",
+      "quote": "Das Besucherzentrum des Naturparks Westhavelland befindet sich im Ortsteil Milow der Gemeinde Milower Land in einem ehemaligen Gutskomplex direkt an der Mündung der Stremme in die Havel.",
+      "english": "The visitor center of the Westhavelland Nature Park is located in the Milow district of the municipality of Milower Land in a former estate complex directly at the mouth of the Stremme into the Havel."
+    },
+    {
+      "id": "s7",
+      "name": "Sternenpark",
+      "quote": "Am 9. Februar 2014 wurde dem Naturpark von der International Dark Sky Association (IDA) als erstem Ort in Deutschland der Titel „Sternenpark“ verliehen.",
+      "english": "On February 9, 2014, the International Dark Sky Association (IDA) awarded the nature park the title 'Star Park' as the first place in Germany."
+    }
+  ],
+  "days": [
+    {
+      "title": "Wetlands and Moraines of the North",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Bird Protection and Astronomy",
+      "stop_ids": [
+        "s5",
+        "s7"
+      ]
+    },
+    {
+      "title": "Riverside Discovery",
+      "stop_ids": [
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "977629f5420cf0df34b258481a5cad3c814fea751108b56f13f74f6244a72d5f"
+}

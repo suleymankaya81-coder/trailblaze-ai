@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Baden Wurttemberg",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Feldberg"
+        "Seebuck",
+        "Bismarckdenkmal",
+        "Friedrich-Luise-Turm"
       ],
       "seo_title": "Feldberg (Black Forest) Visit Guide"
     },
@@ -32,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Feldberg (Black Forest)",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Summit Peaks and Scenic Monuments",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Feldberg",
-                "stop_id": "feldberg-black-forest",
-                "detail": "The Feldberg (German pronunciation: [ˈfɛltˌbɛʁk]) is the highest mountain of the Black Forest in the German state of Baden-Württemberg. At an elevation of 1,494 metres (4,902 ft), it is the highest mountain in Baden-Württemberg, and the highest in Germany outside of the Alps and Bavaria. The local municipality of Feldberg was named after the mountain."
+                "name": "Seebuck",
+                "stop_id": "feldberg-black-forest--s1",
+                "detail": "From the Seebuck, the Feldberg falls steeply to the northeast towards the Feldsee."
+              },
+              {
+                "name": "Bismarckdenkmal",
+                "stop_id": "feldberg-black-forest--s5",
+                "detail": "The Feldberg is recognizable today by the old and new television towers as well as the Bismarck monument on the Seebuck."
+              },
+              {
+                "name": "Friedrich-Luise-Turm",
+                "stop_id": "feldberg-black-forest--s8",
+                "detail": "The highest point of the terrain lies on a flat hill about 20 m west of the Friedrich-Luise Tower."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Feldberg (Black Forest) before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Glacial Lakes and Nature Education",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Feldsee",
+                "stop_id": "feldberg-black-forest--s2",
+                "detail": "Bit by bit, the ice created the 33 m deep Feldsee in this way."
+              },
+              {
+                "name": "Feldseemoor",
+                "stop_id": "feldberg-black-forest--s3",
+                "detail": "The Feldseemoor, located a few meters further away, is also a remnant of the Ice Age."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Feldberg (Black Forest) before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +109,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Feldberg_%28Black_Forest%29"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Feldberg_%28Berg_im_Schwarzwald%29"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:14:33.402121+00:00"
       }
     }
   }

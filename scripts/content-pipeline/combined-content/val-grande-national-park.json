@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Piedmont",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Val Grande National Park"
+        "Cicogna",
+        "Pogallo",
+        "Sutermeister"
       ],
       "seo_title": "Val Grande National Park Visit Guide"
     },
@@ -32,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Val Grande National Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Heart of the Wilderness and Historic Trails",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Val Grande National Park",
-                "stop_id": "val-grande-national-park",
-                "detail": "Val Grande National Park (Italian: Parco Nazionale della Val Grande) is a protected area located in Piedmont, in the north of Italy. It is most notable for landscapes of the High Alps."
+                "name": "Cicogna",
+                "stop_id": "val-grande-national-park--s1",
+                "detail": "Today in Val Grande there is only one inhabited center: Cicogna (a hamlet of Cossogno) where there are 17 inhabitants."
+              },
+              {
+                "name": "Pogallo",
+                "stop_id": "val-grande-national-park--s4",
+                "detail": "At the beginning of the twentieth century in Pogallo, an alpine pasture located in the valley of the same name, there was a great development due to the production of timber coming from the deforestation that took place in Val Grande."
+              },
+              {
+                "name": "Sutermeister",
+                "stop_id": "val-grande-national-park--s5",
+                "detail": "The connection between Pogallo and Cicogna, previously very difficult, was made suitable for timber carts thanks to a new mule track, called \"Sutermeister\" in honor of the engineer, which thanks to daring passages carved into the rock halves the travel time."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Val Grande National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Central Nature Reserves and Peaks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Cima Pedum",
+                "stop_id": "val-grande-national-park--s2",
+                "detail": "The Val Grande Nature Reserve, the innermost area of the integral nature reserve, includes Cima Pedum, although the most sought-after peaks by hikers and nature lovers are the surrounding mountains."
+              },
+              {
+                "name": "Cima Sasso",
+                "stop_id": "val-grande-national-park--s8",
+                "detail": "Without too much difficulty you can reach Cima Sasso, although knowledge of the surrounding territory is recommended, while the remaining part of the ridge is recommended for experienced and accompanied hikers."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Val Grande National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +109,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Val_Grande_National_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_nazionale_della_Val_Grande"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:09:37.622840+00:00"
       }
     }
   }

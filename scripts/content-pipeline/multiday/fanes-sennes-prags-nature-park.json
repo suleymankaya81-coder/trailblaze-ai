@@ -1,0 +1,72 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "lago di Braies",
+      "quote": "I principali laghi del parco sono: il lago di Braies, il lago di Dobbiaco, il le de Fojedöra, il lago di Limo, il lago Piciodel e il lago de Rufiedo.",
+      "english": "The main lakes of the park are: Lake Braies, Lake Dobbiaco, the Le de Fojedöra, Lake Limo, Lake Piciodel and Lake de Rufiedo."
+    },
+    {
+      "id": "s2",
+      "name": "Prato Piazza",
+      "quote": "Le cime raggiungono anche le quote dei 3.000 m s.l.m. e sovrastano i vasti altopiani di Fanes, Sennes, Fosses e Prato Piazza (Plätzwiese).",
+      "english": "The peaks reach heights of 3,000 m a.s.l. and overlook the vast plateaus of Fanes, Sennes, Fosses and Prato Piazza (Plätzwiese)."
+    },
+    {
+      "id": "s3",
+      "name": "forte Prato Piazza",
+      "quote": "All'interno del parco si trova anche un vecchio forte austroungarico risalente alla prima guerra mondiale, il forte Prato Piazza.",
+      "english": "Inside the park there is also an old Austro-Hungarian fort dating back to the First World War, the Prato Piazza fort."
+    },
+    {
+      "id": "s4",
+      "name": "le de Fojedöra",
+      "quote": "Da qui in mezz'ora si raggiunge il lago Le de Fojedöra (it. lago dell'Alpe dei Colli Alti, ted. Hochalpen-See, 2252 m).",
+      "english": "From here, in half an hour you reach Lake Le de Fojedöra (It. lake of the Alpe dei Colli Alti, Ger. Hochalpen-See, 2252 m)."
+    },
+    {
+      "id": "s5",
+      "name": "rifugio Fanes",
+      "quote": "Ancora più' avanti si arriva ad una croce, da dove si intravedono il rifugio Fanes (2062 m) e il rifugio Lavarella (2038 m), circondati da un anfiteatro rinomato, il \"parlamento delle marmotte\".",
+      "english": "Further ahead you arrive at a cross, from where you can see the Fanes refuge (2062 m) and the Lavarella refuge (2038 m), surrounded by a renowned amphitheater, the \"marmot parliament\"."
+    },
+    {
+      "id": "s6",
+      "name": "lago di Limo",
+      "quote": "Sempre proseguendo lungo il sentiero n. 11, si risale per circa altri 20 minuti e si arriva al lago di Limo (2154 m).",
+      "english": "Continuing along trail no. 11, you climb for about another 20 minutes and arrive at Lake Limo (2154 m)."
+    },
+    {
+      "id": "s7",
+      "name": "rifugio Pederü",
+      "quote": "Da qui per scendere verso San Vigilio di Marebbe si prende il sentiero n. 7, che porta attraverso la valle Rudo, al rifugio Pederü (1577 m), in 1,5 ore.",
+      "english": "From here, to descend towards San Vigilio di Marebbe, take trail no. 7, which leads through the Rudo valley to the Pederü refuge (1577 m) in 1.5 hours."
+    },
+    {
+      "id": "s8",
+      "name": "centro visite del parco naturale",
+      "quote": "A San Vigilio di Marebbe è stato edificato un centro visite del parco naturale, ad accesso libero, che raccoglie in un suggestivo edificio in legno, informazioni e curiosità del parco.",
+      "english": "In San Vigilio di Marebbe, a visitor center of the nature park has been built, with free access, which collects information and curiosities about the park in a suggestive wooden building."
+    }
+  ],
+  "days": [
+    {
+      "title": "Braies Lakes and High Plateaus",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Fanes Heart and Park Information",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

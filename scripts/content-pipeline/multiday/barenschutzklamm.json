@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Bärenschützklamm",
+      "quote": "Die Bärenschützklamm im österreichischen Bundesland Steiermark ist eine Klamm mit bis zu 300 m hohen Kalkfelswänden.",
+      "english": "The Bärenschützklamm in the Austrian state of Styria is a gorge with limestone cliffs up to 300 m high."
+    },
+    {
+      "id": "s2",
+      "name": "Mixnitzbach",
+      "quote": "Sie liegt im Grazer Bergland im Gebiet der Gemeinde Pernegg an der Mur und wird vom Mixnitzbach durchflossen, der etwa südwestwärts von links der Mur zufließt.",
+      "english": "It is located in the Graz Highlands in the area of the municipality of Pernegg an der Mur and is traversed by the Mixnitzbach, which flows approximately southwestward from the left into the Mur."
+    },
+    {
+      "id": "s3",
+      "name": "Mixnitz",
+      "quote": "Ausgangspunkt einer Wanderung ist zumeist der Ort Mixnitz mit dem Bahnhof Mixnitz-Bärenschützklamm.",
+      "english": "The starting point for a hike is usually the village of Mixnitz with the Mixnitz-Bärenschützklamm railway station."
+    },
+    {
+      "id": "s4",
+      "name": "Bahnhof Mixnitz-Bärenschützklamm",
+      "quote": "Vom Bahnhof Mixnitz-Bärenschützklamm der Südbahn im Ort Mixnitz, vorbei am Parkplatz, geht man etwa gut 1 Stunde den Lehrwanderweg, der Erzherzog Johann gewidmet ist, entlang von Schautafeln zur Hans-Kerl-Hütte mit der Kasse am Beginn der Steiganlage.",
+      "english": "From the Mixnitz-Bärenschützklamm station of the Southern Railway in the village of Mixnitz, past the parking lot, one walks for a good hour along the educational trail dedicated to Archduke Johann, past display boards to the Hans-Kerl-Hütte with the ticket office at the beginning of the climbing facility."
+    },
+    {
+      "id": "s5",
+      "name": "Hans-Kerl-Hütte",
+      "quote": "Vom Bahnhof Mixnitz-Bärenschützklamm der Südbahn im Ort Mixnitz, vorbei am Parkplatz, geht man etwa gut 1 Stunde den Lehrwanderweg, der Erzherzog Johann gewidmet ist, entlang von Schautafeln zur Hans-Kerl-Hütte mit der Kasse am Beginn der Steiganlage.",
+      "english": "From the Mixnitz-Bärenschützklamm station of the Southern Railway in the village of Mixnitz, past the parking lot, one walks for a good hour along the educational trail dedicated to Archduke Johann, past display boards to the Hans-Kerl-Hütte with the ticket office at the beginning of the climbing facility."
+    },
+    {
+      "id": "s6",
+      "name": "Prügelweg",
+      "quote": "Seit der Wiedereröffnung 2024 darf die Klamm nurmehr bergauf durchstiegen werden, der Rückweg erfolgt über den „Prügelweg“.",
+      "english": "Since the reopening in 2024, the gorge may only be climbed uphill; the return journey is via the 'Prügelweg'."
+    },
+    {
+      "id": "s7",
+      "name": "Zentralalpenweg",
+      "quote": "Durch die Klamm verläuft auch der Zentralalpenweg, ein österreichischer Weitwanderweg von Hainburg an der Donau (NÖ) nach Feldkirch in Vorarlberg.",
+      "english": "The Central Alpine Trail, an Austrian long-distance hiking trail from Hainburg an der Donau (Lower Austria) to Feldkirch in Vorarlberg, also runs through the gorge."
+    }
+  ],
+  "days": [
+    {
+      "title": "Mixnitz Gateway and Gorge Access",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "The Bärenschützklamm Experience",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "bc1ae4eb05feb9ef6673850703f2cbeac398756e37350bc98cf1dd87d35a3112"
+}

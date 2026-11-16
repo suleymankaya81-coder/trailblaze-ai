@@ -1,0 +1,72 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Pineta Sacchetti",
+      "quote": "Pineta Sacchetti, pianeggiante con centinaia di piante di pino domestico alte fino a 30 metri;",
+      "english": "Pineta Sacchetti, flat with hundreds of stone pine plants up to 30 meters high;"
+    },
+    {
+      "id": "s2",
+      "name": "Valle dell'Inferno",
+      "quote": "Valle dell'Inferno, estesa valle che si espande a est fino al Parco di Monte Ciocci e a nord fino al Parco delle Mimose;",
+      "english": "Valle dell'Inferno, an extensive valley that expands eastwards to the Park of Monte Ciocci and northwards to the Park of the Mimose;"
+    },
+    {
+      "id": "s3",
+      "name": "Parco delle Mimose",
+      "quote": "Parco delle Mimose, parco pubblico attrezzato sopra la Valle dell'Inferno, tra Balduina centrale e Columbus di Balduina.",
+      "english": "Parco delle Mimose, an equipped public park above the Valle dell'Inferno, between central Balduina and Columbus di Balduina."
+    },
+    {
+      "id": "s4",
+      "name": "Pianoro di Proba Petronia",
+      "quote": "Pianoro di Proba Petronia, parco pubblico attrezzato, situato a Balduina Bassa.",
+      "english": "Pianoro di Proba Petronia, an equipped public park, located in Balduina Bassa."
+    },
+    {
+      "id": "s5",
+      "name": "Acquedotto dell'Acqua Paola",
+      "quote": "Il territorio del Parco del Pineto custodisce tracce di frequentazione già in età romana, qui correva infatti l'acquedotto Traiano, costruito nel 109 d.C. e riutilizzato nel XVII secolo per volontà di papa Paolo V, dando vita all'Acquedotto dell'Acqua Paola, che ancora oggi alimenta il celebre Fontanone del Gianicolo.",
+      "english": "The territory of Pineto Park preserves traces of presence as early as the Roman age; in fact, the Trajan aqueduct ran here, built in 109 AD and reused in the 17th century by the will of Pope Paul V, giving life to the Acqua Paola Aqueduct, which still today feeds the famous Fontanone del Gianicolo."
+    },
+    {
+      "id": "s6",
+      "name": "Chiesa di Gesù Divino Maestro",
+      "quote": "Chiesa di Gesù Divino Maestro, esempio significativo di architettura modernista situata nel quartiere Balduina di Roma.",
+      "english": "Church of Jesus the Divine Master, a significant example of modernist architecture located in the Balduina district of Rome."
+    },
+    {
+      "id": "s7",
+      "name": "Forte Braschi",
+      "quote": "Edificato a partire dal 1877 e completato nel 1881, su una superficie di 8,2 ettari lungo via della Pineta Sacchetti, il terreno su cui sorge era di proprietà del cardinale Braschi, da cui deriva il nome.",
+      "english": "Built starting from 1877 and completed in 1881, on an area of 8.2 hectares along via della Pineta Sacchetti, the land on which it stands was owned by Cardinal Braschi, from whom its name derives."
+    },
+    {
+      "id": "s8",
+      "name": "Casale del Giannotto",
+      "quote": "Casale del Giannotto,casale settecentesco restaurato che oggi ospita la Biblioteca Casa del Parco e spazi culturali.",
+      "english": "Casale del Giannotto, a restored eighteenth-century farmhouse that today houses the Casa del Parco Library and cultural spaces."
+    }
+  ],
+  "days": [
+    {
+      "title": "Nature and Valleys of Pineto",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "History and Architecture of Balduina",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Monte Miletto",
+      "quote": "Le montagne più alte, di natura calcarea, sono il Monte Miletto (2050 m s.l.m.), la Gallinola (1923 m s.l.m.) ed il monte Mutria (1823 m s.l.m.).",
+      "english": "The highest mountains, of limestone nature, are Monte Miletto (2050 m a.s.l.), the Gallinola (1923 m a.s.l.) and mount Mutria (1823 m a.s.l.)."
+    },
+    {
+      "id": "s2",
+      "name": "lago del Matese",
+      "quote": "Sono presenti quattro laghi: il lago del Matese (quota 1014 m s.l.m.), esteso per 2,5 km², il lago di Letino (1,1 km²), il lago di Gallo (0,6 km²) ed il lago di Arcichiaro (0,5 km²), a Guardiaregia.",
+      "english": "Four lakes are present: the lake of Matese (altitude 1014 m a.s.l.), extending for 2.5 km², the lake of Letino (1.1 km²), the lake of Gallo (0.6 km²) and the lake of Arcichiaro (0.5 km²), at Guardiaregia."
+    },
+    {
+      "id": "s3",
+      "name": "Titerno",
+      "quote": "Il parco è attraversato da cinque fiumi: il Titerno, il Tammaro, il Volturno, il Lete ed il Biferno.",
+      "english": "The park is crossed by five rivers: the Titerno, the Tammaro, the Volturno, the Lete and the Biferno."
+    },
+    {
+      "id": "s4",
+      "name": "San Potito Sannitico",
+      "quote": "Dal 2006 l'ente parco regionale del Matese ha sede in San Potito Sannitico, in provincia di Caserta.",
+      "english": "Since 2006, the Matese regional park authority has been based in San Potito Sannitico, in the province of Caserta."
+    },
+    {
+      "id": "s5",
+      "name": "Valle dell'inferno",
+      "quote": "Tra i rapaci troviamo l'aquila reale che nidifica nelle ripide pareti rocciose di Valle dell'inferno, la poiana e il falco pellegrino.",
+      "english": "Among the birds of prey we find the golden eagle that nests in the steep rocky walls of Valle dell'inferno, the buzzard and the peregrine falcon."
+    },
+    {
+      "id": "s6",
+      "name": "Letino",
+      "quote": "L'animale emblematico è il lupo, avvistato regolarmente nei comuni di Letino e Gallo Matese.",
+      "english": "The emblematic animal is the wolf, spotted regularly in the municipalities of Letino and Gallo Matese."
+    },
+    {
+      "id": "s7",
+      "name": "Pietraroja",
+      "quote": "Ailano, Alife, Capriati a Volturno, Casalduni, Castello del Matese, Cerreto Sannita, Ciorlano, Cusano Mutri, Faicchio, Fontegreca, Gallo Matese, Gioia Sannitica, Guardia Sanframondi, Letino, Morcone, Piedimonte Matese, Pietraroja, Pontelandolfo, Prata Sannita, Pratella, Raviscanina, San Gregorio Matese, San Lorenzello, San Lorenzo Maggiore, San Lupo, San Potito Sannitico, San Salvatore Telesino, Sant'Angelo d'Alife, Sassinoro, Telese Terme, Valle Agricola.",
+      "english": "Ailano, Alife, Capriati a Volturno, Casalduni, Castello del Matese, Cerreto Sannita, Ciorlano, Cusano Mutri, Faicchio, Fontegreca, Gallo Matese, Gioia Sannitica, Guardia Sanframondi, Letino, Morcone, Piedimonte Matese, Pietraroja, Pontelandolfo, Prata Sannita, Pratella, Raviscanina, San Gregorio Matese, San Lorenzello, San Lorenzo Maggiore, San Lupo, San Potito Sannitico, San Salvatore Telesino, Sant'Angelo d'Alife, Sassinoro, Telese Terme, Valle Agricola."
+    }
+  ],
+  "days": [
+    {
+      "title": "Peaks and Lakes of the Massif",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Rivers and Park Administration",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Wildlife and Historical Villages",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

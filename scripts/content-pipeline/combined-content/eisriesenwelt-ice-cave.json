@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Salzburg",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Eisriesenwelt"
+        "Dr.-Friedrich-Oedl-Haus",
+        "Bockstollen"
       ],
       "seo_title": "Eisriesenwelt Ice Cave Visit Guide"
     },
@@ -32,16 +33,57 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Eisriesenwelt Ice Cave",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Cave Entrance and the Deep Passages",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Eisriesenwelt",
-                "stop_id": "eisriesenwelt-ice-cave",
-                "detail": "The Eisriesenwelt (German for 'World of the Ice Giants') is a natural limestone and ice cave located in Werfen, Austria, about 40 km south of Salzburg.  The cave is inside the Hochkogel mountain in the Tennengebirge section of the Alps. It is the largest ice cave in the world, extending more than 42 km and visited by about 200,000 tourists every year."
+                "name": "Dr.-Friedrich-Oedl-Haus",
+                "stop_id": "eisriesenwelt-ice-cave--s9",
+                "detail": "Today, a cable car brings up to 2,500 guests per day close to the cave entrance (Dr. Friedrich Oedl House), totaling about 150,000 visitors per year."
+              },
+              {
+                "name": "Bockstollen",
+                "stop_id": "eisriesenwelt-ice-cave--s2",
+                "detail": "A steep tunnel (Bockstollen) leads from the Ice Palace to the U-Tunnel."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Eisriesenwelt Ice Cave before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Historical Markers and Ice Formations",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Posselt-Kreuz",
+                "stop_id": "eisriesenwelt-ice-cave--s5",
+                "detail": "He marked his turning point with a black cross on the rock, the Posselt Cross."
+              },
+              {
+                "name": "Eispalast",
+                "stop_id": "eisriesenwelt-ice-cave--s1",
+                "detail": "After the Ice Palace, there are no more continuous sheets of ice, and the guided section ends there as well."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Eisriesenwelt Ice Cave before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "The Explorers Legacy",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Sturmsee",
+                "stop_id": "eisriesenwelt-ice-cave--s7",
+                "detail": "Alexander von Mörk was also the first researcher who dared to pass the Sturmsee, a small passage that was under water at the time."
+              },
+              {
+                "name": "Alexander-von-Mörk-Dom",
+                "stop_id": "eisriesenwelt-ice-cave--s8",
+                "detail": "This wish was fulfilled and he was buried in the mid-1920s in the Alexander von Mörk Cathedral, which he had discovered."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Eisriesenwelt Ice Cave before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +121,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Eisriesenwelt"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Eisriesenwelt"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:13:08.275149+00:00"
       }
     }
   }

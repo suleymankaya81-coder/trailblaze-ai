@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Peenemünder Haken",
+      "quote": "Am Peenemünder Haken im Norden der Insel wurde schon 1925 das älteste Naturschutzgebiet Pommerns ausgewiesen.",
+      "english": "At the Peenemünder Haken in the north of the island, the oldest nature reserve in Pomerania was designated as early as 1925."
+    },
+    {
+      "id": "s2",
+      "name": "Ruth-und-Klaus-Bahlsen-Haus",
+      "quote": "Ein Informationszentrum, das Ruth-und-Klaus-Bahlsen-Haus, mit Ausstellungsräumen, dem Sitz der Naturpark-Verwaltung und der Stadtinformation, befindet sich im historischen Bahnhofsgebäude an der Bäderstraße von Usedom (Stadt).",
+      "english": "An information center, the Ruth-and-Klaus-Bahlsen-Haus, with exhibition rooms, the headquarters of the nature park administration and the city information office, is located in the historical station building on the Bäderstraße of Usedom (town)."
+    },
+    {
+      "id": "s3",
+      "name": "Schmollensee",
+      "quote": "Die eutrophen Flachseen wie der Gothen- und der Schmollensee sind für die Vögel ideale Rast- und Brutplätze.",
+      "english": "The eutrophic shallow lakes such as the Gothen- and Schmollensee are ideal resting and breeding grounds for birds."
+    },
+    {
+      "id": "s4",
+      "name": "Wockninsee",
+      "quote": "Wockninsee bei Ückeritz, seit 1958, 50 ha, teilweise verlandeter Strandsee",
+      "english": "Wockninsee near Ückeritz, since 1958, 50 hectares, a partially silted-up beach lake"
+    },
+    {
+      "id": "s5",
+      "name": "Mümmelkensee",
+      "quote": "Mümmelkensee, seit 1957, 6 ha, Moorsee zwischen Schmollensee und Ostseestrand",
+      "english": "Mümmelkensee, since 1957, 6 hectares, a bog lake between Schmollensee and the Baltic Sea beach"
+    },
+    {
+      "id": "s6",
+      "name": "Golm",
+      "quote": "Golm, seit 1958, 25 ha, höchster Berg Usedoms (70 m)",
+      "english": "Golm, since 1958, 25 hectares, the highest mountain on Usedom (70 m)"
+    },
+    {
+      "id": "s7",
+      "name": "Streckelsberg",
+      "quote": "Streckelsberg bei Koserow, seit 1957, 34 ha, Endmoräne mit höchster Kliffranddüne der Insel (56 m)",
+      "english": "Streckelsberg near Koserow, since 1957, 34 hectares, a terminal moraine with the island's highest cliff-edge dune (56 m)"
+    },
+    {
+      "id": "s8",
+      "name": "Mellenthiner Os",
+      "quote": "Mellenthiner Os, seit 1995, 65 ha, slawischer Wallberg und Moor",
+      "english": "Mellenthiner Os, since 1995, 65 hectares, a Slavic rampart hill and bog"
+    },
+    {
+      "id": "s9",
+      "name": "Insel Görmitz",
+      "quote": "Naturschutzgebiet Insel Görmitz, seit 1998, 110 ha, Vogelinsel im Achterwasser",
+      "english": "Nature reserve Görmitz Island, since 1998, 110 hectares, a bird island in the Achterwasser."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Coast and Visitor Center",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s2"
+      ]
+    },
+    {
+      "title": "Lakes and Central Heights",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Southern Peaks and Bird Islands",
+      "stop_ids": [
+        "s6",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "614d8e172449de1a5ee7f4825c20dbb94847cae348f5667fef607a29b06af0cd"
+}

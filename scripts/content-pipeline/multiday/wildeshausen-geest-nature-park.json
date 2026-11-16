@@ -1,0 +1,39 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hunte",
+      "quote": "Ob auf einer Radtour oder auf Wanderwegen , bei einer Kanutour auf der Hunte oder in stiller Natur – der Naturpark bietet Erholung für Körper und Geist.",
+      "english": "Whether on a bike tour or on hiking trails, on a canoe trip on the Hunte or in peaceful nature – the nature park offers relaxation for body and soul."
+    },
+    {
+      "id": "s2",
+      "name": "Klosterareal Hude",
+      "quote": "Zu deinen Aufgaben gehören unter anderem die Weiterentwicklung des Klosterareals Hude für Tourismus & Kultur, die Planung von Workshops & Veranstaltungen, Fördermittelakquise und Öffentlichkeitsarbeit.",
+      "english": "Your tasks include, among others, the further development of the Hude Monastery grounds for tourism & culture, the planning of workshops & events, fundraising and public relations."
+    },
+    {
+      "id": "s3",
+      "name": "Naturpark-Huus",
+      "quote": "Am 13.06.2026 öffnet das Naturpark-Huus für Alle.",
+      "english": "On June 13, 2026, the Naturpark-Huus opens for everyone."
+    },
+    {
+      "id": "s4",
+      "name": "Großsteingräber",
+      "quote": "Großsteingräber, Hügelgräber und Wallhecken zeugen von jahrtausendealter Besiedlung.",
+      "english": "Megalithic tombs, burial mounds and hedgerows bear witness to thousands of years of settlement."
+    }
+  ],
+  "days": [
+    {
+      "title": "Culture and River Adventures",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

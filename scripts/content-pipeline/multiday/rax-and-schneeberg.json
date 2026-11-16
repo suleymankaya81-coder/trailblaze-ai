@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Rax-Seilbahn",
+      "quote": "Vom Reichenauer Ortsteil Hirschwang führt seit 1926 die Rax-Seilbahn, die erste Seilbahn Österreichs, auf das Raxplateau auf 1546 m.",
+      "english": "From the Reichenau district of Hirschwang, the Rax Cableway, Austria's first cableway, has led up to the Rax plateau at 1546 m since 1926."
+    },
+    {
+      "id": "s2",
+      "name": "Heukuppe",
+      "quote": "Die Heukuppe bildet mit 2007 m ü. A. die höchste Erhebung des Raxalpengebiets.",
+      "english": "The Heukuppe, at 2007 m above sea level, is the highest elevation in the Rax Alps region."
+    },
+    {
+      "id": "s3",
+      "name": "Kurhaus Thalhof",
+      "quote": "Das Kurhaus Thalhof in Reichenau an der Rax wurde zum Treffpunkt des Wiener Salons, zu dessen prominentesten Vertretern Arthur Schnitzler, Peter Altenberg, Eduard von Bauernfeld und Sigmund Freud zählten.",
+      "english": "The Kurhaus Thalhof in Reichenau an der Rax became a meeting point for the Viennese Salon, counting Arthur Schnitzler, Peter Altenberg, Eduard von Bauernfeld, and Sigmund Freud among its most prominent representatives."
+    },
+    {
+      "id": "s4",
+      "name": "Schneebergbahn",
+      "quote": "Die Schneebergbahn nahm 1897 den Betrieb auf und befördert seitdem Gäste auf den höchsten Berg in den Wiener Alpen.",
+      "english": "The Schneeberg Railway began operations in 1897 and has since transported guests to the highest mountain in the Viennese Alps."
+    },
+    {
+      "id": "s5",
+      "name": "Galerie VOKA",
+      "quote": "Die Galerie des 1965 in Puchberg am Schneeberg geborenen Künstlers befindet sich an einer Station der Schneebergbahn und ist damit die höchstgelegene Galerie Österreichs.",
+      "english": "The gallery of the artist born in Puchberg am Schneeberg in 1965 is located at a station of the Schneeberg Railway, making it the highest gallery in Austria."
+    },
+    {
+      "id": "s6",
+      "name": "Waldbauernmuseum",
+      "quote": "Das Regionalmuseum erklärt die Wirtschafts- und Sozialgeschichte des Schneebergs.",
+      "english": "The regional museum explains the economic and social history of the Schneeberg."
+    },
+    {
+      "id": "s7",
+      "name": "Welterbe Informationszentrum",
+      "quote": "Das Welterbe Informationszentrum in Semmering informiert Besucher über die Semmeringeisenbahn, welche von der UNESCO im Jahr 1998 zum Weltkulturerbe erklärt wurde.",
+      "english": "The World Heritage Information Center in Semmering informs visitors about the Semmering Railway, which was declared a UNESCO World Heritage site in 1998."
+    },
+    {
+      "id": "s8",
+      "name": "Hotel Panhans",
+      "quote": "Es entstanden auch prunkvolle Grand Hotels, wie 1882 das Südbahnhotel oder 1888 das Hotel Panhans für Städter, die auf der Suche nach der Sommerfrische waren.",
+      "english": "Magnificent grand hotels were also built, such as the Südbahnhotel in 1882 or the Hotel Panhans in 1888 for city dwellers looking for a summer retreat."
+    }
+  ],
+  "days": [
+    {
+      "title": "Rax Mountain and History",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Schneeberg Heights and Culture",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Semmering Heritage",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "ff601202b73b7fa58988164d2cd9fb9770019938a2fbfcf7139554b18c04e340"
+}

@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Foresta demaniale di Porto Conte \"Le Prigionette\"",
+      "quote": "Presso la foresta demaniale si trova l'oasi faunistica che ospita i daini, i cavallini della Giara e gli asinelli bianchi.",
+      "english": "At the state forest there is a wildlife oasis that hosts fallow deer, Giara ponies, and white donkeys."
+    },
+    {
+      "id": "s2",
+      "name": "Grotte di Nettuno",
+      "quote": "Il complesso carsico si trova alla base della scogliera di Capo Caccia e può essere raggiunto attraverso un battello che salpa dal porto di Alghero oppure discendendo una lunga scalinata (l'Escala del Cabirol) che parte dal piazzale di sosta di Capo Caccia fino a raggiungere l'ingresso della grotta.",
+      "english": "The karst complex is located at the base of the Capo Caccia cliff and can be reached by a boat departing from the port of Alghero or by descending a long staircase (the Escala del Cabirol) that starts from the Capo Caccia parking area to reach the cave entrance."
+    },
+    {
+      "id": "s3",
+      "name": "Capo Caccia",
+      "quote": "Sul promontorio si trova il faro di Capo Caccia.",
+      "english": "The Capo Caccia lighthouse is located on the promontory."
+    },
+    {
+      "id": "s4",
+      "name": "Isola Foradada",
+      "quote": "Si trova davanti al promontorio di Capo Caccia e deve il proprio nome alla Grotta dei Palombi, creatasi per azione dell'erosione marina, che la attraversa da parte in parte.",
+      "english": "It is located in front of the Capo Caccia promontory and owes its name to the Grotta dei Palombi, created by marine erosion, which crosses it from one side to the other."
+    },
+    {
+      "id": "s5",
+      "name": "casa Gioiosa",
+      "quote": "la visita a casa Gioiosa, sede dell'ente parco, presso la quale è possibile visionare i pannelli illustrativi delle caratteristiche ambientali dell'area protetta ed i laboratori didattici del centro ambientale;",
+      "english": "the visit to Casa Gioiosa, headquarters of the park authority, where it is possible to view illustrative panels of the environmental characteristics of the protected area and the educational laboratories of the environmental center;"
+    },
+    {
+      "id": "s6",
+      "name": "punta Giglio",
+      "quote": "la visita da punta Giglio, attraverso un percorso di trekking che si addentra nella macchia mediterranea fino a raggiungere la cima e dove è possibile vedere i resti delle postazioni militari della seconda guerra mondiale;",
+      "english": "the visit to Punta Giglio, through a trekking path that goes into the Mediterranean scrub until reaching the summit and where it is possible to see the remains of World War II military positions;"
+    },
+    {
+      "id": "s7",
+      "name": "baia di Porto Conte",
+      "quote": "l'escursione in battello, che parte dal porto di Alghero in direzione della baia di Porto Conte, durante la quale vengono illustrate le caratteristiche dell'ambiente costiero dell'area protetta.",
+      "english": "the boat excursion, which departs from the port of Alghero towards the bay of Porto Conte, during which the characteristics of the coastal environment of the protected area are illustrated."
+    }
+  ],
+  "days": [
+    {
+      "title": "Coastal Landmarks and Marine Caves",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Park Heritage and Forest Wildlife",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

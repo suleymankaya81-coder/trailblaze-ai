@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Vinsebeck Castle",
+      "quote": "Pass Vinsebeck Castle and climb up to the next panoramic ridge above Sandebeck.",
+      "english": "Pass Vinsebeck Castle and climb up to the next panoramic ridge above Sandebeck."
+    },
+    {
+      "id": "s2",
+      "name": "Vulkan-Embrio",
+      "quote": "Volcano-Embrio Sandebeck, northernmost volcano in Germany.",
+      "english": "Volcano-Embrio Sandebeck, northernmost volcano in Germany."
+    },
+    {
+      "id": "s3",
+      "name": "Vinsebeck airfield",
+      "quote": "Vinsebeck airfield, sport aviation on the Frankenberg.",
+      "english": "Vinsebeck airfield, sport aviation on the Frankenberg."
+    },
+    {
+      "id": "s4",
+      "name": "Eggeturm",
+      "quote": "Eggeturm, particularly worthwhile on a \"clear day\".",
+      "english": "Eggeturm, particularly worthwhile on a \"clear day\"."
+    },
+    {
+      "id": "s5",
+      "name": "Preußische Velmerstot",
+      "quote": "The special thing about this mountain: from 1950 to 1995, the mountain head was home to a bunkered NATO anti-aircraft missile station.",
+      "english": "The special thing about this mountain: from 1950 to 1995, the mountain head was home to a bunkered NATO anti-aircraft missile station."
+    },
+    {
+      "id": "s6",
+      "name": "Barnacken",
+      "quote": "On wild forest paths, we cycle past the Barnacken - the highest point of the Teutoburg Forest - to the Kleiner Rigi pass with its hidden ground monument \"Roman Path Traces\".",
+      "english": "On wild forest paths, we cycle past the Barnacken - the highest point of the Teutoburg Forest - to the Kleiner Rigi pass with its hidden ground monument \"Roman Path Traces\"."
+    },
+    {
+      "id": "s7",
+      "name": "Kleiner Rigi",
+      "quote": "Barnacken with the Roman traces at the small Rigi, historic pass crossing in the heart of the Teutoburg Forest.",
+      "english": "Barnacken with the Roman traces at the small Rigi, historic pass crossing in the heart of the Teutoburg Forest."
+    },
+    {
+      "id": "s8",
+      "name": "Externsteine",
+      "quote": "Externsteine, tourist attraction in the Teutoburg Forest with cultural history.",
+      "english": "Externsteine, tourist attraction in the Teutoburg Forest with cultural history."
+    },
+    {
+      "id": "s9",
+      "name": "Moorstich",
+      "quote": "Moorstich Bad Meinberg, natural moor with health benefits to experience.",
+      "english": "Moorstich Bad Meinberg, natural moor with health benefits to experience."
+    }
+  ],
+  "days": [
+    {
+      "title": "Castles and Volcanic Wonders",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Peaks and NATO History",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Roman Trails and Sacred Stones",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Sardinia",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Molentargius - Saline Regional Park"
+        "Bellarosa minore",
+        "Ecosistema Filtro"
       ],
       "seo_title": "Molentargius – Saline Regional Park Visit Guide"
     },
@@ -32,16 +33,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Molentargius – Saline Regional Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Northern Wetlands and Filter System",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Molentargius - Saline Regional Park",
-                "stop_id": "molentargius-saline-regional-park",
-                "detail": "Molentargius - Saline Regional Park (Italian: Parco naturale regionale Molentargius - Saline) is a regional park in Sardinia, Italy. It was established in 1999 to protect and enhance a site of international interest, already included in the Ramsar Convention since 1977 because of its relevance to stopover, wintering, and nesting waterfowl bird species."
+                "name": "Bellarosa minore",
+                "stop_id": "molentargius-saline-regional-park--s1",
+                "detail": "Bellarosa minore is the innermost pond, composed of fresh water, located in the northern area of the pond system and is fed by several streams and refined waters coming from the phytodepuration plant called \"Ecosistema Filtro\"."
+              },
+              {
+                "name": "Ecosistema Filtro",
+                "stop_id": "molentargius-saline-regional-park--s2",
+                "detail": "The \"Ecosistema Filtro\" is a large phytodepuration plant, or rather an artificial wetland, built during recovery works that exploits the self-purifying capacities typical of these environments to refine a portion of the waters coming from the Is Arenas treatment plant and make them suitable for feeding the ponds."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Molentargius – Saline Regional Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Coastal Salt Pans and Dunes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Le Saline",
+                "stop_id": "molentargius-saline-regional-park--s5",
+                "detail": "The Saline consists of the system of basins included between the strip of Is Arenas and the city of Quartu to the north and the strip of Poetto to the south."
+              },
+              {
+                "name": "Stagno di Quartu",
+                "stop_id": "molentargius-saline-regional-park--s6",
+                "detail": "The eastern sector is also known by the name Stagno di Quartu."
+              },
+              {
+                "name": "Poetto",
+                "stop_id": "molentargius-saline-regional-park--s7",
+                "detail": "The outermost one, the Poetto, is a more recent back-dune system that separates the Saline and the Quartu pond from the Gulf of the Angels."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Molentargius – Saline Regional Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +108,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Molentargius_-_Saline_Regional_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_Molentargius-Saline"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:57:12.878573+00:00"
       }
     }
   }

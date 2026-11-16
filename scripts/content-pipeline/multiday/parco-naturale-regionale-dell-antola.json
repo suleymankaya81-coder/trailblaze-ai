@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Rocche del Reopasso",
+      "quote": "Le Rocche del Reopasso sono comprese nell'oasi del Reopasso (1.221 ha), sono un'importante formazione rocciosa, formata da estesi affioramenti di conglomerato di Savignone che risalgono all'epoca oligocenica.",
+      "english": "The Rocche del Reopasso are included in the Reopasso oasis (1,221 ha) and are an important rock formation consisting of extensive outcrops of Savignone conglomerate dating back to the Oligocene epoch."
+    },
+    {
+      "id": "s2",
+      "name": "castello della Pietra",
+      "quote": "È caratterizzata dalla presenza del castello della Pietra, imponente fortificazione eretta intorno all'anno 1000 fra due speroni di conglomerato nel territorio comunale di Vobbia.",
+      "english": "It is characterized by the presence of the Stone Castle, an imposing fortification erected around the year 1000 between two conglomerate spurs in the municipal territory of Vobbia."
+    },
+    {
+      "id": "s3",
+      "name": "monte Reale",
+      "quote": "Esse sono: l'area della vetta del monte Reale, il torrente Vobbia e il castello della Pietra, l'ecomuseo della val Brevenna, l'area della vetta del monte Antola e rifugio connesso, il lago del Brugneto ed infine l'osservatorio astronomico Casa del Romano;",
+      "english": "These are: the area of the peak of Mount Reale, the Vobbia stream and the Stone Castle, the ecomuseum of the Brevenna valley, the area of the peak of Mount Antola and its connected refuge, the Brugneto lake and finally the Casa del Romano astronomical observatory;"
+    },
+    {
+      "id": "s4",
+      "name": "monte Antola",
+      "quote": "L'intero parco è dominato dal monte Antola (1597 metri) che fa da spartiacque tra le valli principali del parco: la val Vobbia e la val Brevenna (che confluiscono poi nell'alta valle Scrivia) e le valli Brugneto e Cassingheno che confluiscono nell'alta val Trebbia.",
+      "english": "The entire park is dominated by Mount Antola (1597 meters) which acts as a watershed between the main valleys of the park: the Vobbia and Brevenna valleys (which then flow into the upper Scrivia valley) and the Brugneto and Cassingheno valleys which flow into the upper Trebbia valley."
+    },
+    {
+      "id": "s5",
+      "name": "Senarega",
+      "quote": "A Senarega, in val Brevenna, è stato recentemente restaurato, da parte del Parco, il millenario castello dei Fieschi.",
+      "english": "In Senarega, in the Brevenna valley, the thousand-year-old Fieschi castle has recently been restored by the Park."
+    },
+    {
+      "id": "s6",
+      "name": "Pentema",
+      "quote": "Il borgo di Pentema, frazione di Torriglia, è invece famoso per il presepe contadino che vi si svolge ogni anno e che rappresenta una sorta di museo etnografico della civiltà contadina dei secoli scorsi nelle valli dell'Antola.",
+      "english": "The village of Pentema, a hamlet of Torriglia, is instead famous for the peasant nativity scene that takes place there every year and which represents a sort of ethnographic museum of the peasant civilization of past centuries in the Antola valleys."
+    },
+    {
+      "id": "s7",
+      "name": "lago del Brugneto",
+      "quote": "L'alta val Trebbia è caratterizzata dalla gran quantità di corsi e bacini d'acqua come il lago del Brugneto e il fiume Trebbia, con i suoi affluenti (di sinistra, fra i quali il Terenzone e il Cassingheno, e di destra, fra i quali il Sermigliasca e il Moglia) e dalla presenza di numerose faggete.",
+      "english": "The upper Trebbia valley is characterized by the large amount of water courses and basins such as Lake Brugneto and the Trebbia river, with its tributaries (on the left, including the Terenzone and the Cassingheno, and on the right, including the Sermigliasca and the Moglia) and by the presence of numerous beech forests."
+    },
+    {
+      "id": "s8",
+      "name": "osservatorio astronomico Casa del Romano",
+      "quote": "Esse sono: l'area della vetta del monte Reale, il torrente Vobbia e il castello della Pietra, l'ecomuseo della val Brevenna, l'area della vetta del monte Antola e rifugio connesso, il lago del Brugneto ed infine l'osservatorio astronomico Casa del Romano;",
+      "english": "These are: the area of the peak of Mount Reale, the Vobbia stream and the Stone Castle, the ecomuseum of the Brevenna valley, the area of the peak of Mount Antola and its connected refuge, the Brugneto lake and finally the Casa del Romano astronomical observatory;"
+    }
+  ],
+  "days": [
+    {
+      "title": "Val Vobbia Rocks and Castles",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Antola Peaks and Historic Villages",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Trebbia Waters and Stars",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

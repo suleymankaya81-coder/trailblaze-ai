@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Monte Cucco",
+      "quote": "Il Monte Cucco di 1.566 m s.l.m. è la montagna più alta e più estesa del parco.",
+      "english": "Monte Cucco, at 1,566 m above sea level, is the highest and most extensive mountain in the park."
+    },
+    {
+      "id": "s2",
+      "name": "Pian delle Macinare",
+      "quote": "L'altopiano di Pian delle Macinare rappresenta uno snodo principale di sentieri da escursionismo che si sviluppano per circa 100 km in tutto il parco.",
+      "english": "The Pian delle Macinare plateau represents a main hub of hiking trails that extend for about 100 km throughout the park."
+    },
+    {
+      "id": "s3",
+      "name": "Grotta di Monte Cucco",
+      "quote": "L'attrazione principale del parco è la Grotta di Monte Cucco, una delle grotte più estese d'Italia.",
+      "english": "The main attraction of the park is the Grotta di Monte Cucco, one of the most extensive caves in Italy."
+    },
+    {
+      "id": "s4",
+      "name": "Forra di Rio Freddo",
+      "quote": "Il versante est della montagna è solcato dalla Forra di Rio Freddo, un imponente canyon sceso ogni anno da centinaia di appassionati di torrentismo.",
+      "english": "The eastern slope of the mountain is furrowed by the Forra di Rio Freddo, an imposing canyon descended every year by hundreds of canyoning enthusiasts."
+    },
+    {
+      "id": "s5",
+      "name": "Val di Ranco",
+      "quote": "È inoltre localizzato il paese di Val di Ranco, piccola località turistica situata a 1.000 m di quota.",
+      "english": "Furthermore, the village of Val di Ranco is located there, a small tourist resort situated at an altitude of 1,000 m."
+    },
+    {
+      "id": "s6",
+      "name": "Corno del Catria",
+      "quote": "I punti di nidificazione si trovano all'estremo nord del parco, sulle pareti del Corno del Catria.",
+      "english": "Nesting sites are found at the far north of the park, on the walls of the Corno del Catria."
+    },
+    {
+      "id": "s7",
+      "name": "Grotta di Santa Agnese",
+      "quote": "Di grande fascino è anche la Grotta di Santa Agnese, un antro di ragguardevoli dimensioni facilmente raggiungibile a piedi, in cui si fondono storia e leggenda.",
+      "english": "Also of great charm is the Grotta di Santa Agnese, a cavern of considerable size easily reachable on foot, where history and legend merge."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Massif and Caves",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Canyons and Southern Villages",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Northern Wilderness and Peaks",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

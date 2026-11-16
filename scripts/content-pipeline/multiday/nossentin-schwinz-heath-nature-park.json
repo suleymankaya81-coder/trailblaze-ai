@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Krakower See",
+      "quote": "Initiativen von Naturschützern führten im Januar 1990 dazu, ein geplantes Großschutzgebiet im Raum des Krakower Sees in das Nationalparkprogramm der DDR-Regierung vom 16. März 1990 aufzunehmen.",
+      "english": "In January 1990, initiatives by conservationists led to the inclusion of a planned large-scale protected area in the Krakow Lake region into the GDR government's national park program on March 16, 1990."
+    },
+    {
+      "id": "s2",
+      "name": "Nebel",
+      "quote": "Insgesamt gibt es im Naturpark 60 Seen, die Flüsse Nebel und die Mildenitz entspringen hier.",
+      "english": "In total, there are 60 lakes in the nature park; the rivers Nebel and Mildenitz originate here."
+    },
+    {
+      "id": "s3",
+      "name": "Mildenitz",
+      "quote": "Insgesamt gibt es im Naturpark 60 Seen, die Flüsse Nebel und die Mildenitz entspringen hier.",
+      "english": "In total, there are 60 lakes in the nature park; the rivers Nebel and Mildenitz originate here."
+    },
+    {
+      "id": "s4",
+      "name": "Kloster Dobbertin",
+      "quote": "In der Nähe des Naturparks liegt auch das Kloster Dobbertin.",
+      "english": "The Dobbertin Abbey is also located near the nature park."
+    },
+    {
+      "id": "s5",
+      "name": "Damerower Werder",
+      "quote": "Dass auf dem Damerower Werder Wisente gezüchtet werden, leistet einen Beitrag zur Erhaltung dieses in Mitteleuropa einst heimischen und vom Aussterben bedrohten Wildrindes.",
+      "english": "The fact that European bison are bred on the Damerower Werder contributes to the conservation of this wild cattle species that was once native to Central Europe and is now threatened with extinction."
+    },
+    {
+      "id": "s6",
+      "name": "Sander",
+      "quote": "Besonderes Merkmal des Naturparks sind die Sander, übriggebliebene Sand- und Kiesablagerungen aus der Eiszeit.",
+      "english": "A special feature of the nature park are the sandur, leftover sand and gravel deposits from the Ice Age."
+    },
+    {
+      "id": "s7",
+      "name": "Moore",
+      "quote": "Auch zahlreiche Moore prägen die Landschaft.",
+      "english": "Numerous moors also characterize the landscape."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lakes, Rivers and Historic Architecture",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Wildlife and Ice Age Landscapes",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "1111a4469c020a5047f8b984b9c17e83c595af0dad8ecbfb51579afb3efab72f"
+}

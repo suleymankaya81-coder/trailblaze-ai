@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Emilia Romagna",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Gessi Bolognesi e dei Calanchi dell'Abbadessa"
+        "grotta del Farneto",
+        "ex cava a filo"
       ],
       "seo_title": "parco regionale dei Gessi Bolognesi e Calanchi dell'Abbadess"
     },
@@ -32,16 +33,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: parco regionale dei Gessi Bolognesi e Calanchi dell'Abbadessa",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Caves and Quarries of San Lazzaro",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Gessi Bolognesi e dei Calanchi dell'Abbadessa",
-                "stop_id": "parco-regionale-dei-gessi-bolognesi-e-calanchi-dell-abbadessa",
-                "detail": "The regional park of the Bolognese Gessi and the Calanchi dell'Abbadessa (Väṅna dal żass e Calànc dla Badassa in bolognese) is a protected natural area that develops on the first slopes of the Bolognese hill. The park develops around important chalky outcrops that have created a karst complex of considerable interest. The park also embraces the Calanchi dell'Abbadessa, a formation that imprints to the landscape an aspect of austere beauty."
+                "name": "grotta del Farneto",
+                "stop_id": "parco-regionale-dei-gessi-bolognesi-e-calanchi-dell-abbadessa--s1",
+                "detail": "Many caves were destroyed or their stability was irremediably compromised (as in the case of the Farneto cave)."
+              },
+              {
+                "name": "ex cava a filo",
+                "stop_id": "parco-regionale-dei-gessi-bolognesi-e-calanchi-dell-abbadessa--s2",
+                "detail": "A trace of this mining activity remains in one of the park's rest areas in the municipality of San Lazzaro, the former wire quarry."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for parco regionale dei Gessi Bolognesi e Calanchi dell'Abbadessa before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Religious History and Ridges",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Passo della Badessa",
+                "stop_id": "parco-regionale-dei-gessi-bolognesi-e-calanchi-dell-abbadessa--s6",
+                "detail": "Not far from the parish church, stood the women's monastery of Santa Cristina, near the long ridge between the badlands known as \"Passo della Badessa\"."
+              },
+              {
+                "name": "Pieve di Pastino",
+                "stop_id": "parco-regionale-dei-gessi-bolognesi-e-calanchi-dell-abbadessa--s7",
+                "detail": "In the locality of Settefonti lies the Pieve di Pastino, documented as early as the 11th century; declined in the 15th century and survived only as an oratory, it was later transformed into a private home."
+              },
+              {
+                "name": "San Pietro di Ozzano",
+                "stop_id": "parco-regionale-dei-gessi-bolognesi-e-calanchi-dell-abbadessa--s8",
+                "detail": "The small fort of San Pietro di Ozzano, for example, originated from the inhabitants of Claterna who, after the destruction of the city in the 5th century, took refuge on the nearby hill."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for parco regionale dei Gessi Bolognesi e Calanchi dell'Abbadessa before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +108,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_regionale_dei_Gessi_Bolognesi_e_Calanchi_dell%27Abbadessa"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_regionale_dei_Gessi_Bolognesi_e_Calanchi_dell%27Abbadessa"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:04:53.938536+00:00"
       }
     }
   }

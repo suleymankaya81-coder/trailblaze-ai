@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Monte Canin",
+      "quote": "Le cime principali sono il Monte Canin (2.587 m), il Monte Plauris (1.958 m), la catena dei Monti Musi (1.869 m).",
+      "english": "The main peaks are Monte Canin (2,587 m), Monte Plauris (1,958 m), and the Monti Musi chain (1,869 m)."
+    },
+    {
+      "id": "s2",
+      "name": "Monte Plauris",
+      "quote": "Le cime principali sono il Monte Canin (2.587 m), il Monte Plauris (1.958 m), la catena dei Monti Musi (1.869 m).",
+      "english": "The main peaks are Monte Canin (2,587 m), Monte Plauris (1,958 m), and the Monti Musi chain (1,869 m)."
+    },
+    {
+      "id": "s3",
+      "name": "Monti Musi",
+      "quote": "Le cime principali sono il Monte Canin (2.587 m), il Monte Plauris (1.958 m), la catena dei Monti Musi (1.869 m).",
+      "english": "The main peaks are Monte Canin (2,587 m), Monte Plauris (1,958 m), and the Monti Musi chain (1,869 m)."
+    },
+    {
+      "id": "s4",
+      "name": "Prato",
+      "quote": "La sede del parco si trova nella frazione Prato del comune di Resia.",
+      "english": "The park headquarters are located in the hamlet of Prato in the municipality of Resia."
+    },
+    {
+      "id": "s5",
+      "name": "ricovero alpino Rio Nero Casera",
+      "quote": "Nel parco naturale sono presenti i seguenti rifugi: ricovero alpino Rio Nero Casera a 865 m s.l.m.; ricovero alpino Borgo Miniera a 966 m s.l.m.; ricovero alpino Marsinska Planina a 1401 m s.l.m.; ricovero alpino Montemaggiore-Gran Monte a 1648 m s.l.m.; ricovero alpino Bellina Dino a 1405 m s.l.m..",
+      "english": "The following refuges are present in the natural park: Rio Nero Casera alpine shelter at 865 m above sea level; Borgo Miniera alpine shelter at 966 m above sea level; Marsinska Planina alpine shelter at 1401 m above sea level; Montemaggiore-Gran Monte alpine shelter at 1648 m above sea level; Bellina Dino alpine shelter at 1405 m above sea level."
+    },
+    {
+      "id": "s6",
+      "name": "Val Resia",
+      "quote": "In Val Resia, sul torrione Mulaz 1804, parete NNE, il 18 ottobre 2013 è stata attrezzata la L. Ron Hubbard Route - Mulaz Climbing Route.",
+      "english": "In Val Resia, on the Mulaz 1804 tower, NNE face, the L. Ron Hubbard Route - Mulaz Climbing Route was equipped on October 18, 2013."
+    },
+    {
+      "id": "s7",
+      "name": "torrione Mulaz 1804",
+      "quote": "In Val Resia, sul torrione Mulaz 1804, parete NNE, il 18 ottobre 2013 è stata attrezzata la L. Ron Hubbard Route - Mulaz Climbing Route.",
+      "english": "In Val Resia, on the Mulaz 1804 tower, NNE face, the L. Ron Hubbard Route - Mulaz Climbing Route was equipped on October 18, 2013."
+    },
+    {
+      "id": "s8",
+      "name": "bivacco Franco Costantini - CAI Manzano",
+      "quote": "bivacco Franco Costantini - CAI Manzano a 1690 m s.l.m.",
+      "english": "Franco Costantini - CAI Manzano bivouac at 1690 m above sea level."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Summits and Bivouacs",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s8"
+      ]
+    },
+    {
+      "title": "Valleys and Climbing Routes",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s4"
+      ]
+    },
+    {
+      "title": "Alpine Shelters and Ridges",
+      "stop_ids": [
+        "s3",
+        "s5"
+      ]
+    }
+  ]
+}

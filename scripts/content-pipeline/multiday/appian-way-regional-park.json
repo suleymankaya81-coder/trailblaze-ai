@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "via Appia Antica",
+      "quote": "Comprende infatti la via Appia Antica e le sue adiacenze per un tratto di 16 chilometri (compresa la Villa dei Quintili), la valle della Caffarella (200 hm²), le aree archeologiche degli Acquedotti (240 hm²), di Tor Fiscale e delle tombe della via Latina, la Tenuta di Tor Marancia (220 hm²) e quella della Farnesiana (180 hm²).",
+      "english": "It includes in fact the via Appia Antica and its surroundings for a stretch of 16 kilometers (including the Villa of the Quintili), the Caffarella valley (200 hm²), the archaeological areas of the Aqueducts (240 hm²), of Tor Fiscale and the tombs of via Latina, the Tor Marancia Estate (220 hm²) and the Farnesiana estate (180 hm²)."
+    },
+    {
+      "id": "s2",
+      "name": "Villa dei Quintili",
+      "quote": "Comprende infatti la via Appia Antica e le sue adiacenze per un tratto di 16 chilometri (compresa la Villa dei Quintili), la valle della Caffarella (200 hm²), le aree archeologiche degli Acquedotti (240 hm²), di Tor Fiscale e delle tombe della via Latina, la Tenuta di Tor Marancia (220 hm²) e quella della Farnesiana (180 hm²).",
+      "english": "It includes in fact the via Appia Antica and its surroundings for a stretch of 16 kilometers (including the Villa of the Quintili), the Caffarella valley (200 hm²), the archaeological areas of the Aqueducts (240 hm²), of Tor Fiscale and the tombs of via Latina, the Tor Marancia Estate (220 hm²) and the Farnesiana estate (180 hm²)."
+    },
+    {
+      "id": "s3",
+      "name": "valle della Caffarella",
+      "quote": "Una parte importante del parco consiste nella valle della Caffarella, un'area di circa 200 ettari, dove sono concentrate straordinarie qualità archeologiche e paesaggistiche.",
+      "english": "An important part of the park consists of the Caffarella valley, an area of about 200 hectares, where extraordinary archaeological and landscape qualities are concentrated."
+    },
+    {
+      "id": "s4",
+      "name": "Ninfeo di Egeria",
+      "quote": "Il Ninfeo di Egeria, situato all’interno del Parco, è conosciuto con questa denominazione a causa di un errore compiuto da studiosi del 1600 che lo individuarono con il ninfeo che, invece, si doveva trovare al primo miglio dopo le Mura Repubblicane.",
+      "english": "The Nymphaeum of Egeria, located inside the Park, is known by this name due to an error made by 17th-century scholars who identified it as the nymphaeum that, instead, should have been found at the first mile after the Republican Walls."
+    },
+    {
+      "id": "s5",
+      "name": "Tempio del Dio Redìcolo",
+      "quote": "Il cosiddetto Tempio del Dio Redìcolo (il dio che proteggeva il ritorno dei romani nella loro città) appartiene alla tipologia della tomba a tempio.",
+      "english": "The so-called Temple of the God Rediculus (the god who protected the return of Romans to their city) belongs to the temple-tomb typology."
+    },
+    {
+      "id": "s6",
+      "name": "fiume Almone",
+      "quote": "Il fiume Almone, piccolo aﬄuente del Tevere e terzo fiume di Roma, ancora presente nel Parco, nasce da infiltrazioni del lago Albano e confluiva nel Tevere; attualmente il suo corso è deviato verso il depuratore di Roma sud.",
+      "english": "The Almone river, a small tributary of the Tiber and the third river of Rome, still present in the Park, originates from infiltrations of Lake Albano and used to flow into the Tiber; currently its course is diverted towards the Rome south treatment plant."
+    },
+    {
+      "id": "s7",
+      "name": "casale della Vaccareccia",
+      "quote": "Il cosiddetto casale della Vaccareccia, citato già nel XII secolo, modificato nel 1500 dalla famiglia Caffarelli.",
+      "english": "The so-called Vaccareccia farmhouse, already mentioned in the 12th century, was modified in the 1500s by the Caffarelli family."
+    }
+  ],
+  "days": [
+    {
+      "title": "Ancient Road and Roman Villas",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "The Sacred Heart of Caffarella Valley",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

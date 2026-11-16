@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Nationalparkzentrum Unteres Odertal",
+      "quote": "Die Verwaltung des Nationalparks befindet sich auf dem Gelände des Schlosses in Criewen im Nationalparkzentrum Unteres Odertal.",
+      "english": "The administration of the national park is located on the grounds of the castle in Criewen in the Lower Oder Valley National Park Centre."
+    },
+    {
+      "id": "s2",
+      "name": "Nationalparkhaus",
+      "quote": "Dort befindet sich auch das Nationalparkhaus mit einer Ausstellung.",
+      "english": "The national park house with an exhibition is also located there."
+    },
+    {
+      "id": "s3",
+      "name": "Schloss in Criewen",
+      "quote": "Die Verwaltung des Nationalparks befindet sich auf dem Gelände des Schlosses in Criewen im Nationalparkzentrum Unteres Odertal.",
+      "english": "The administration of the national park is located on the grounds of the castle in Criewen in the Lower Oder Valley National Park Centre."
+    },
+    {
+      "id": "s4",
+      "name": "Turm in Mescherin",
+      "quote": "Im Nationalpark sammeln sich die Kraniche vor dem Flug in den Süden, sie können u. a. vom Turm in Mescherin beobachtet werden.",
+      "english": "In the national park, cranes gather before their flight south; they can be observed, among other places, from the tower in Mescherin."
+    },
+    {
+      "id": "s5",
+      "name": "Oder-Neiße-Radweg",
+      "quote": "Auf einem der Deiche führt ein Teilstück des inzwischen 465 Kilometer langen Oder-Neiße-Radwegs entlang.",
+      "english": "A section of the now 465-kilometer-long Oder-Neisse Cycle Path runs along one of the dikes."
+    },
+    {
+      "id": "s6",
+      "name": "Burg Stolpe",
+      "quote": "Etwas weiter südlich befinden sich auf einer Anhöhe die Überreste der Burg Stolpe (im Volksmund „Grützpott“ genannt).",
+      "english": "A little further south, on a hill, are the remains of Stolpe Castle (popularly known as the \"Grützpott\")."
+    },
+    {
+      "id": "s7",
+      "name": "Grützpott",
+      "quote": "Etwas weiter südlich befinden sich auf einer Anhöhe die Überreste der Burg Stolpe (im Volksmund „Grützpott“ genannt).",
+      "english": "A little further south, on a hill, are the remains of Stolpe Castle (popularly known as the \"Grützpott\")."
+    }
+  ],
+  "days": [
+    {
+      "title": "Visitor Centers and Historic Sites",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Observation and Cycling Trails",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "c35633ee35cab795c1015f2637d9c8f731286698c2f0b331f4b2ff86048f7b53"
+}

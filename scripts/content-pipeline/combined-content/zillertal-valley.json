@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Tyrol",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Zillertal"
+        "Hintertux Glacier",
+        "Zillertal Alps High Mountain Nature Park",
+        "Hintertux Glacier Nature Ice Palace"
       ],
       "seo_title": "Zillertal Valley Visit Guide"
     },
     "travel": {
       "slug": "zillertal-valley",
+      "overview_name": "Zillertal Valley",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Zillertal Valley before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.tyrol.com/destinations/zillertal",
@@ -31,16 +34,67 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Zillertal Valley",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "High Alpine Peaks and Nature Parks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Zillertal",
-                "stop_id": "zillertal-valley",
-                "detail": "At its beginning, the Zillertal presents itself with a broad, sun-drenched valley floor. At Jenbach, 40 kilometres east of Innsbruck, it branches off from the Inntal valley to the south and is flanked by the Kitzbühel Alps to the east and the Tux Alps to the west."
+                "name": "Hintertux Glacier",
+                "stop_id": "zillertal-valley--s4",
+                "detail": "The Hintertux Glacier forms the crowning glory at the end of the valley."
+              },
+              {
+                "name": "Zillertal Alps High Mountain Nature Park",
+                "stop_id": "zillertal-valley--s6",
+                "detail": "The greatest scenic sensation is the Zillertal Alps High Mountain Nature Park, its 80 glaciers and the numerous three-thousand metre peaks with the Hochfeiler (3,509 metres) as the highest elevation."
+              },
+              {
+                "name": "Hintertux Glacier Nature Ice Palace",
+                "stop_id": "zillertal-valley--s8",
+                "detail": "In addition to the numerous sporting activities, the Hintertux Glacier Nature Ice Palace is also an exciting attraction."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Zillertal Valley before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Side Valleys and Mountaineering Villages",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Zemmtal valley",
+                "stop_id": "zillertal-valley--s1",
+                "detail": "Only from Mayrhofen, where the Zillertal splits into the narrow Zemmtal valley with the mountaineering village of Ginzling and the Tuxertal valley, does it begin to rise sharply."
+              },
+              {
+                "name": "Zillertal Railway",
+                "stop_id": "zillertal-valley--s5",
+                "detail": "The Zillertal Railway, a modern means of transport that is still partly operated by nostalgic steam locomotives, fits in with this in a way."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Zillertal Valley before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Family Fun and Adventure Centers",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Arena Coaster",
+                "stop_id": "zillertal-valley--s9",
+                "detail": "The Arena Coaster summer toboggan run is ideal for children (but adults will also get their money's worth here - we promise!)."
+              },
+              {
+                "name": "Beer Adventure World",
+                "stop_id": "zillertal-valley--s10",
+                "detail": "For beer drinkers, the Beer Adventure World is an absolute must."
+              },
+              {
+                "name": "Mayrhofen adventure pool",
+                "stop_id": "zillertal-valley--s11",
+                "detail": "For bad weather days, we recommend the beer adventure world for the grown-ups or the Mayrhofen adventure pool or the Erlebnistherme Zillertal for the family."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Zillertal Valley before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +134,8 @@
             "url": "https://www.tyrol.com/destinations/zillertal"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:51:41.531563+00:00"
       }
     }
   }

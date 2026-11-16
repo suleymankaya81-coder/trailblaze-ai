@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Nördlicher beziehungsweise Unterer Pfälzerwald",
+      "quote": "den Nördlichen beziehungsweise Unteren Pfälzerwald, der im Norden durch das Nordpfälzer Bergland begrenzt wird und nach Süden bis etwa an die Autobahn 6 reicht",
+      "english": "the Northern or Lower Palatinate Forest, which is bounded to the north by the North Palatinate Uplands and extends south to approximately the A6 motorway"
+    },
+    {
+      "id": "s2",
+      "name": "Mittlerer Pfälzerwald",
+      "quote": "den Mittleren Pfälzerwald, der von dort aus bis zur Linie Pirmasens–Landau reicht",
+      "english": "the Central Palatinate Forest, which extends from there to the Pirmasens–Landau line"
+    },
+    {
+      "id": "s3",
+      "name": "Südlicher Pfälzerwald",
+      "quote": "den Südlichen Pfälzerwald, der von der Linie Pirmasens–Landau bis zur französischen Grenze im Süden reicht.",
+      "english": "the Southern Palatinate Forest, which extends from the Pirmasens–Landau line to the French border in the south."
+    },
+    {
+      "id": "s4",
+      "name": "Wasgau",
+      "quote": "Dieser Teil des Naturparks Pfälzerwald wird zusammen mit seiner Fortsetzung auf französischem Boden auch als Wasgau bezeichnet.",
+      "english": "This part of the Palatinate Forest Nature Park, together with its continuation on French soil, is also known as the Wasgau."
+    },
+    {
+      "id": "s5",
+      "name": "Deutsche Weinstraße",
+      "quote": "Hinzu kommt das ehemalige Landschaftsschutzgebiet Deutsche Weinstraße, das sich am Ostrand des Naturparks am Übergang zur Rheinebene erstreckt und Teil des Haardtrandes ist.",
+      "english": "In addition, there is the former German Wine Route landscape conservation area, which extends along the eastern edge of the nature park at the transition to the Rhine plain and is part of the Haardt edge."
+    },
+    {
+      "id": "s6",
+      "name": "Eistal",
+      "quote": "1958 wurde der Pfälzerwald unter Einbeziehung der Landschaftsschutzgebiete Pfälzerwald, Deutsche Weinstraße sowie Eistal und Eckbachtal zum Naturpark erklärt und 1967 mit einer Landesverordnung als Landschaftsschutzgebiet Naturpark Pfälzerwald offiziell unter Schutz gestellt.",
+      "english": "In 1958, the Palatinate Forest was declared a nature park, incorporating the Palatinate Forest, German Wine Route, Eistal, and Eckbachtal landscape conservation areas, and was officially placed under protection in 1967 by a state ordinance as the Palatinate Forest Nature Park landscape conservation area."
+    },
+    {
+      "id": "s7",
+      "name": "Eckbachtal",
+      "quote": "1958 wurde der Pfälzerwald unter Einbeziehung der Landschaftsschutzgebiete Pfälzerwald, Deutsche Weinstraße sowie Eistal und Eckbachtal zum Naturpark erklärt und 1967 mit einer Landesverordnung als Landschaftsschutzgebiet Naturpark Pfälzerwald offiziell unter Schutz gestellt.",
+      "english": "In 1958, the Palatinate Forest was declared a nature park, incorporating the Palatinate Forest, German Wine Route, Eistal, and Eckbachtal landscape conservation areas, and was officially placed under protection in 1967 by a state ordinance as the Palatinate Forest Nature Park landscape conservation area."
+    },
+    {
+      "id": "s8",
+      "name": "Hambacher Schloss",
+      "quote": "In einer Sitzung des Bezirkstags Pfalz auf dem Hambacher Schloss am 20. Dezember 2013 erfolgte die formelle Beschlussfassung zur Übernahme, so dass seit dem 1. Januar 2014 der Bezirksverband Pfalz die alleinige Trägerschaft wahrnimmt.",
+      "english": "In a meeting of the Palatinate District Assembly at Hambach Castle on December 20, 2013, the formal resolution for the takeover was passed, so that the Palatinate District Association has held sole responsibility since January 1, 2014."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Valleys and Landscapes",
+      "stop_ids": [
+        "s1",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Central Forest and Historic Sites",
+      "stop_ids": [
+        "s2",
+        "s5",
+        "s8"
+      ]
+    },
+    {
+      "title": "Southern Borderlands and Wasgau",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "e489b97e3f4cbdb762f6cf5ec312d379ac0c89edaaf84a7bbd79b02db7c2a285"
+}

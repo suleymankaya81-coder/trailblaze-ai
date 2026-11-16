@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hauptort",
+      "quote": "Auf der Insel gibt es zwei Ortsteile: den in Westdorf und Ostdorf unterteilten Hauptort sowie Loog.",
+      "english": "There are two districts on the island: the main town, divided into Westdorf and Ostdorf, as well as Loog."
+    },
+    {
+      "id": "s2",
+      "name": "Loog",
+      "quote": "Auf der Insel gibt es zwei Ortsteile: den in Westdorf und Ostdorf unterteilten Hauptort sowie Loog.",
+      "english": "There are two districts on the island: the main town, divided into Westdorf and Ostdorf, as well as Loog."
+    },
+    {
+      "id": "s3",
+      "name": "Juister Wasserturm",
+      "quote": "Die höchste Düne trägt den Juister Wasserturm und hat eine Höhe von 22 Metern ü. NN.",
+      "english": "The highest dune carries the Juist water tower and has a height of 22 meters above sea level."
+    },
+    {
+      "id": "s4",
+      "name": "Bill",
+      "quote": "An der Bill (Westende der Insel) wanderte die Abbruchkante seit 1976 etwa 200 Meter nach Süden.",
+      "english": "At the Bill (western end of the island), the breakaway edge has migrated about 200 meters south since 1976."
+    },
+    {
+      "id": "s5",
+      "name": "Kalfamer",
+      "quote": "So ist es auch zu erklären, dass der Kalfamer im Osten der jüngste Teil der Insel ist.",
+      "english": "This also explains why the Kalfamer in the east is the youngest part of the island."
+    },
+    {
+      "id": "s6",
+      "name": "Nordstrand",
+      "quote": "Auf Juist besteht am Nordstrand eine 1390 Meter lange Schutzmauer von 1920, die heute unter Sand verborgen liegt.",
+      "english": "On Juist, there is a 1390-meter-long protective wall from 1920 on the north beach, which today lies hidden under sand."
+    },
+    {
+      "id": "s7",
+      "name": "Hammersee",
+      "quote": "Die Petriflut von 1651 durchbrach die nördlichen Randdünen im Bereich der Kirche und des heutigen Hammersees und teilte die Insel in zwei annähernd gleich große Teile.",
+      "english": "The St. Peter's Flood of 1651 broke through the northern boundary dunes in the area of the church and today's Lake Hammer, splitting the island into two approximately equal parts."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Districts and Viewpoints",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Natural Wonders and Coastal Features",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "52dcedb53fb925acfd826d7886b1a18ea513b10ca3df0912fe9478757dd03ea7"
+}

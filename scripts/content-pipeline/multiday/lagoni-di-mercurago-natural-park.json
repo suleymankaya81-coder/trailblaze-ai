@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "centro visite",
+      "quote": "L'accesso principale al Parco dei Lagoni è quello della sede e del centro visite, in via Gattico 6 a Mercurago, frazione di Arona.",
+      "english": "The main access to the Lagoni Park is that of the headquarters and the visitor centre, in via Gattico 6 in Mercurago, a hamlet of Arona."
+    },
+    {
+      "id": "s2",
+      "name": "zona umida",
+      "quote": "La zona umida, ricca di stagni, torbiere e paludi, rappresenta il vero cuore pulsante del parco.",
+      "english": "The wetland, rich in ponds, peat bogs and marshes, represents the true beating heart of the park."
+    },
+    {
+      "id": "s3",
+      "name": "prati e nei pascoli",
+      "quote": "Nei prati e nei pascoli si coltiva e si pratica l'allevamento di cavalli da corsa, il tutto in un contesto poco urbanizzato e ricco di boschi e brughiere.",
+      "english": "In the meadows and pastures racehorses are cultivated and bred, all in a context with little urbanization and rich in woods and heaths."
+    },
+    {
+      "id": "s4",
+      "name": "torbiera del Lagone",
+      "quote": "Nel 1860, nella torbiera del Lagone, sono stati rinvenuti - per la prima volta in Italia - i resti di alcune palafitte (impalcati di legno e pali sprofondati nel limo e nella torba).",
+      "english": "In 1860, in the Lagone peat bog, the remains of some pile dwellings (wooden decks and poles sunk in silt and peat) were found for the first time in Italy."
+    },
+    {
+      "id": "s5",
+      "name": "insediamenti, risalenti all'età del bronzo",
+      "quote": "Nel corso degli anni, infatti, sono stati rinvenuti diversi insediamenti, risalenti all'età del bronzo e alcune domus romane.",
+      "english": "Over the years, in fact, several settlements dating back to the Bronze Age and some Roman domus have been found."
+    },
+    {
+      "id": "s6",
+      "name": "domus romane",
+      "quote": "Nel corso degli anni, infatti, sono stati rinvenuti diversi insediamenti, risalenti all'età del bronzo e alcune domus romane.",
+      "english": "Over the years, in fact, several settlements dating back to the Bronze Age and some Roman domus have been found."
+    },
+    {
+      "id": "s7",
+      "name": "Villaggio delle Macine",
+      "quote": "Villaggio delle Macine",
+      "english": "Village of the Millstones"
+    }
+  ],
+  "days": [
+    {
+      "title": "Visitor Center and Ancient Archeology",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Wetlands and Natural Habitats",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "volturino",
+      "quote": "Il suo perimetro si staglia su una larga parte dell'Appennino Lucano, lungo un articolato confine che dalle vette dei monti Volturino e Pierfaone si estende fino al massiccio del Sirino, che comprende alcune delle maggiori cime dell'Appennino meridionale.",
+      "english": "Its perimeter stands out over a large part of the Lucanian Apennines, along an articulated border that extends from the peaks of the Volturino and Pierfaone mountains to the Sirino massif, which includes some of the major peaks of the southern Apennines."
+    },
+    {
+      "id": "s2",
+      "name": "Pierfaone",
+      "quote": "Il suo perimetro si staglia su una larga parte dell'Appennino Lucano, lungo un articolato confine che dalle vette dei monti Volturino e Pierfaone si estende fino al massiccio del Sirino, che comprende alcune delle maggiori cime dell'Appennino meridionale.",
+      "english": "Its perimeter stands out over a large part of the Lucanian Apennines, along an articulated border that extends from the peaks of the Volturino and Pierfaone mountains to the Sirino massif, which includes some of the major peaks of the southern Apennines."
+    },
+    {
+      "id": "s3",
+      "name": "massiccio del Sirino",
+      "quote": "Il suo perimetro si staglia su una larga parte dell'Appennino Lucano, lungo un articolato confine che dalle vette dei monti Volturino e Pierfaone si estende fino al massiccio del Sirino, che comprende alcune delle maggiori cime dell'Appennino meridionale.",
+      "english": "Its perimeter stands out over a large part of the Lucanian Apennines, along an articulated border that extends from the peaks of the Volturino and Pierfaone mountains to the Sirino massif, which includes some of the major peaks of the southern Apennines."
+    },
+    {
+      "id": "s4",
+      "name": "massiccio della Maddalena",
+      "quote": "Tra questi due complessi, imponenti e frastagliati, si aprono a ventaglio le cime più dolci del massiccio della Maddalena, una catena montuosa, dal profilo dolce e meno elevato, che racchiude l'alta valle del fiume Agri.",
+      "english": "Between these two complexes, imposing and jagged, the gentler peaks of the Maddalena massif open up like a fan, a mountain range with a gentle and lower profile, which encloses the upper valley of the Agri river."
+    },
+    {
+      "id": "s5",
+      "name": "fiume Agri",
+      "quote": "Tra questi due complessi, imponenti e frastagliati, si aprono a ventaglio le cime più dolci del massiccio della Maddalena, una catena montuosa, dal profilo dolce e meno elevato, che racchiude l'alta valle del fiume Agri.",
+      "english": "Between these two complexes, imposing and jagged, the gentler peaks of the Maddalena massif open up like a fan, a mountain range with a gentle and lower profile, which encloses the upper valley of the Agri river."
+    },
+    {
+      "id": "s6",
+      "name": "abetina di Laurenzana",
+      "quote": "Da sottolineare la residua abetina di Laurenzana.",
+      "english": "To be highlighted is the residual fir forest of Laurenzana."
+    },
+    {
+      "id": "s7",
+      "name": "Lago Sirino",
+      "quote": "Lago Sirino",
+      "english": "Lake Sirino"
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Peaks and Forests",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s6"
+      ]
+    },
+    {
+      "title": "Sirino Massif and Lake",
+      "stop_ids": [
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Maddalena Mountains and Agri River",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "val Veny",
+      "quote": "È posto nel settore delle Alpi nord-occidentali, lungo la sezione alpina delle Alpi Graie, sulla linea spartiacque tra la Valle d'Aosta (val Veny e val Ferret in Italia) e l'Alta Savoia (valle dell'Arve in Francia), nei territori comunali di Courmayeur e Chamonix-Mont-Blanc.",
+      "english": "It is located in the north-western Alps sector, along the Alpine section of the Graian Alps, on the watershed line between the Aosta Valley (Val Veny and Val Ferret in Italy) and Haute-Savoie (Arve Valley in France), in the municipal territories of Courmayeur and Chamonix-Mont-Blanc."
+    },
+    {
+      "id": "s2",
+      "name": "val Ferret",
+      "quote": "Mentre il versante francese discende lentamente in pendio, il versante italiano è formato da una ripida e maestosa muraglia granitica che dalle sommità maggiori precipita sul fondo delle valli Ferret e Veny.",
+      "english": "While the French side descends slowly in a slope, the Italian side is formed by a steep and majestic granite wall that plunges from the major summits to the bottom of the Ferret and Veny valleys."
+    },
+    {
+      "id": "s3",
+      "name": "valico del Gigante",
+      "quote": "I luoghi abitati sono situati al disotto dei 2.800 m, mentre rari e difficili sono i valichi, il più basso dei quali è quello del Gigante a 3.359 m.",
+      "english": "Inhabited places are situated below 2,800 m, while passes are rare and difficult, the lowest of which is the Gigante pass at 3,359 m."
+    },
+    {
+      "id": "s4",
+      "name": "Dente del Gigante",
+      "quote": "Il Dente del Gigante (4.014 m) è una delle più celebri cime.",
+      "english": "The Dente del Gigante (4,014 m) is one of the most famous peaks."
+    },
+    {
+      "id": "s5",
+      "name": "Dôme du Goûter",
+      "quote": "Se la parte sommitale delle Grandes Jorasses è irta di cime, quella del Dôme du Goûter è completamente piatta ed è la più estesa di tutte le Alpi.",
+      "english": "If the summit part of the Grandes Jorasses is bristling with peaks, that of the Dôme du Goûter is completely flat and is the most extensive in all the Alps."
+    },
+    {
+      "id": "s6",
+      "name": "Grandes Jorasses",
+      "quote": "Le Grandes Jorasses (3.825 m): sulla sua parte sommitale, lunga circa 1 km, raggruppa una sequenza di sei punte, cinque delle quali superano i 4.000 m.",
+      "english": "The Grandes Jorasses (3,825 m): on its summit part, about 1 km long, it groups a sequence of six points, five of which exceed 4,000 m."
+    },
+    {
+      "id": "s7",
+      "name": "Mont Dolent",
+      "quote": "Il Mont Dolent (3.820 m) è una cima piramidale; curiosamente la sua vetta è il punto d'incontro delle frontiere di Italia, Svizzera e Francia.",
+      "english": "Mont Dolent (3,820 m) is a pyramidal peak; curiously its summit is the meeting point of the borders of Italy, Switzerland and France."
+    },
+    {
+      "id": "s8",
+      "name": "Guglie di Chamonix",
+      "quote": "le Guglie di Chamonix (tra i 3.000 e i 3.842 m), dominano la vallata di Chamonix e rappresentano uno dei paesaggi più celebri delle Alpi francesi.",
+      "english": "The Aiguilles de Chamonix (between 3,000 and 3,842 m) dominate the Chamonix valley and represent one of the most famous landscapes of the French Alps."
+    },
+    {
+      "id": "s9",
+      "name": "Aiguille Noire de Peuterey",
+      "quote": "L'Aiguille Noire de Peuterey (3.773 m) è uno dei simboli del Monte Bianco nel versante italiano: si innalza direttamente dai prati della Val Veny per 2.200 m di dislivello; è la cima più importante della gran cresta del Peuterey.",
+      "english": "The Aiguille Noire de Peuterey (3,773 m) is one of the symbols of Mont Blanc on the Italian side: it rises directly from the meadows of Val Veny for 2,200 m of elevation gain; it is the most important peak of the great Peuterey ridge."
+    },
+    {
+      "id": "s10",
+      "name": "Trou des Romains",
+      "quote": "Una era conosciuta già nell'antichità con il nome di Trou des Romains e pare realmente che il suo sfruttamento risalga all'epoca romana.",
+      "english": "One was already known in antiquity by the name of Trou des Romains and it truly seems that its exploitation dates back to Roman times."
+    }
+  ],
+  "days": [
+    {
+      "title": "Valleys and Roman History of Courmayeur",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s10"
+      ]
+    },
+    {
+      "title": "Glacial Passes and Iconic Spires",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s9"
+      ]
+    },
+    {
+      "title": "Massive Summits and Triple Borders",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

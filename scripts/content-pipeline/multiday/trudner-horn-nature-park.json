@@ -1,0 +1,72 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "monte Corno",
+      "quote": "La cima più alta è il monte Corno, che dà il nome al parco, e che raggiunge 1.817 m s.l.m.",
+      "english": "The highest peak is Mount Corno, which gives the park its name and reaches 1,817 m above sea level."
+    },
+    {
+      "id": "s2",
+      "name": "lago Bianco",
+      "quote": "Nel parco esistono alcune zone acquitrinose: il lago Bianco, il lago Nero e la Palù Longa.",
+      "english": "In the park there are some marshy areas: Lake Bianco, Lake Nero and the Palù Longa."
+    },
+    {
+      "id": "s3",
+      "name": "lago Nero",
+      "quote": "Nel parco esistono alcune zone acquitrinose: il lago Bianco, il lago Nero e la Palù Longa.",
+      "english": "In the park there are some marshy areas: Lake Bianco, Lake Nero and the Palù Longa."
+    },
+    {
+      "id": "s4",
+      "name": "Palù Longa",
+      "quote": "Nel parco esistono alcune zone acquitrinose: il lago Bianco, il lago Nero e la Palù Longa.",
+      "english": "In the park there are some marshy areas: Lake Bianco, Lake Nero and the Palù Longa."
+    },
+    {
+      "id": "s5",
+      "name": "Anterivo",
+      "quote": "Fanno parte del parco i territori dei comuni di Anterivo, Egna, Montagna, Salorno e Trodena.",
+      "english": "The territories of the municipalities of Anterivo, Egna, Montagna, Salorno and Trodena are part of the park."
+    },
+    {
+      "id": "s6",
+      "name": "Trodena",
+      "quote": "Il centro visite del parco ha sede a Trodena, ed è gestito dalla provincia autonoma di Bolzano.",
+      "english": "The park visitor centre is located in Trodena and is managed by the autonomous province of Bolzano."
+    },
+    {
+      "id": "s7",
+      "name": "centro visite",
+      "quote": "È sito in un vecchio mulino elettrico, precisamente in un edificio di tre piani, recentemente restaurato.",
+      "english": "It is located in an old electric mill, specifically in a three-story building, recently restored."
+    },
+    {
+      "id": "s8",
+      "name": "canyon del Bletterbach",
+      "quote": "il canyon del Bletterbach",
+      "english": "the Bletterbach canyon"
+    }
+  ],
+  "days": [
+    {
+      "title": "Peaks and Wetlands",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Villages and Visitor Centers",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

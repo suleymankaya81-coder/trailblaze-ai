@@ -1,0 +1,44 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "monte San Giorgio",
+      "quote": "Le rocce che costituiscono il monte San Giorgio fanno parte del Massiccio Ultrabasico di Lanzo sono, una formazione di origine profonda.",
+      "english": "The rocks that make up Monte San Giorgio are part of the Lanzo Ultrabasic Massif, a formation of deep origin."
+    },
+    {
+      "id": "s2",
+      "name": "cima dell'omonima montagna",
+      "quote": "Il parco tutela 377 ettari totalmente ricadenti in comune di Piossasco e collocati ad una quota che va dai 300 agli 837 m della cima dell'omonima montagna.",
+      "english": "The park protects 377 hectares entirely within the municipality of Piossasco and located at an altitude ranging from 300 to 837 m at the peak of the mountain of the same name."
+    },
+    {
+      "id": "s3",
+      "name": "zona meridionale del parco",
+      "quote": "Nella zona meridionale del parco si trova una delle poche stazioni rimaste in Piemonte di una rara specie vegetale, la Paeonia officinalis.",
+      "english": "In the southern area of the park lies one of the few remaining stations in Piedmont of a rare plant species, the Paeonia officinalis."
+    },
+    {
+      "id": "s4",
+      "name": "versante che volge verso Sangano",
+      "quote": "Numerose sono le salamandre sul versante che volge verso Sangano insieme ai tritoni, interessanti anche gli insetti, tra i quali spicca una ricca e differenziata presenza di Carabidi.",
+      "english": "Salamanders are numerous on the slope facing towards Sangano along with newts; the insects are also interesting, among which a rich and differentiated presence of Carabids stands out."
+    }
+  ],
+  "days": [
+    {
+      "title": "Mountain Peak and Slopes",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Southern Flora and Sangano Slopes",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

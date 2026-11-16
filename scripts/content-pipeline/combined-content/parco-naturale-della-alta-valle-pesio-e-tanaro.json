@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Piedmont",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Natural Park of Marguareis"
+        "Punta Marguareis",
+        "Cima delle Saline"
       ],
       "seo_title": "Parco naturale della Alta Valle Pesio e Tanaro Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco naturale della Alta Valle Pesio e Tanaro",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "High Peaks of the Ligurian Alps",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Natural Park of Marguareis",
-                "stop_id": "parco-naturale-della-alta-valle-pesio-e-tanaro",
-                "detail": "The Natural Park of Marguareis(in Italian Parco Naturale del Marguareis) is a regional natural park of the Ligurian Alps located in the Province of Cuneo (Piedmont, Italy)."
+                "name": "Punta Marguareis",
+                "stop_id": "parco-naturale-della-alta-valle-pesio-e-tanaro--s1",
+                "detail": "It takes its name from Punta Marguareis, the highest of the Ligurian Alps."
+              },
+              {
+                "name": "Cima delle Saline",
+                "stop_id": "parco-naturale-della-alta-valle-pesio-e-tanaro--s2",
+                "detail": "Among the main peaks included in whole or in part in the park, in addition to Marguareis, the Cima delle Saline, Monte Bertrand, Cima Cars, and Cima della Fascia can be mentioned."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale della Alta Valle Pesio e Tanaro before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Northern Ridges and Monastic Woodlands",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Certosa di Pesio",
+                "stop_id": "parco-naturale-della-alta-valle-pesio-e-tanaro--s6",
+                "detail": "The regional park is home to vast wooded areas (in particular beech, fir and larch forests), the development of which was favored by the presence of the monks of the Certosa di Pesio."
+              },
+              {
+                "name": "GTA",
+                "stop_id": "parco-naturale-della-alta-valle-pesio-e-tanaro--s7",
+                "detail": "A wide network of marked trails is available inside the park, which is also crossed by the southernmost stretch of the GTA."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco naturale della Alta Valle Pesio e Tanaro before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Natural_Park_of_Marguareis"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_del_Marguareis"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:00:44.890190+00:00"
       }
     }
   }

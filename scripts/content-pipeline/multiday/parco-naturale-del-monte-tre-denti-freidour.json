@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Monte Freidour",
+      "quote": "Il parco tutela 8,21 km quadrati totalmente ricadenti nel comune di Cumiana, e collocati ad una quota che va dai 563 metri della confluenza Chisola - Chisoletta ai 1445 m della vetta del Monte Freidour.",
+      "english": "The park protects 8.21 square kilometers entirely within the municipality of Cumiana, located at an altitude ranging from 563 meters at the Chisola - Chisoletta confluence to 1445 m at the summit of Monte Freidour."
+    },
+    {
+      "id": "s2",
+      "name": "confluenza Chisola - Chisoletta",
+      "quote": "Il parco tutela 8,21 km quadrati totalmente ricadenti nel comune di Cumiana, e collocati ad una quota che va dai 563 metri della confluenza Chisola - Chisoletta ai 1445 m della vetta del Monte Freidour.",
+      "english": "The park protects 8.21 square kilometers entirely within the municipality of Cumiana, located at an altitude ranging from 563 meters at the Chisola - Chisoletta confluence to 1445 m at the summit of Monte Freidour."
+    },
+    {
+      "id": "s3",
+      "name": "Monte Tre Denti",
+      "quote": "Si estende pressoché interamente sul versante Nord della dorsale Monte Freidour - Monte Tre Denti - Monte Brunello.",
+      "english": "It extends almost entirely over the northern slope of the Monte Freidour - Monte Tre Denti - Monte Brunello ridge."
+    },
+    {
+      "id": "s4",
+      "name": "Monte Brunello",
+      "quote": "Si estende pressoché interamente sul versante Nord della dorsale Monte Freidour - Monte Tre Denti - Monte Brunello.",
+      "english": "It extends almost entirely over the northern slope of the Monte Freidour - Monte Tre Denti - Monte Brunello ridge."
+    },
+    {
+      "id": "s5",
+      "name": "cava di gneiss della Pedrera",
+      "quote": "Dalla vecchia cava di gneiss della Pedrera, situata non lontano dalla frazione Picchi, provengono le pietre utilizzate per la costruzione di vari edifici torinesi quali la Gran Madre di Dio e il Ponte Mosca.",
+      "english": "The stones used for the construction of various buildings in Turin, such as the Gran Madre di Dio and Ponte Mosca, come from the old Pedrera gneiss quarry, located not far from the hamlet of Picchi."
+    },
+    {
+      "id": "s6",
+      "name": "frazione Picchi",
+      "quote": "Dalla vecchia cava di gneiss della Pedrera, situata non lontano dalla frazione Picchi, provengono le pietre utilizzate per la costruzione di vari edifici torinesi quali la Gran Madre di Dio e il Ponte Mosca.",
+      "english": "The stones used for the construction of various buildings in Turin, such as the Gran Madre di Dio and Ponte Mosca, come from the old Pedrera gneiss quarry, located not far from the hamlet of Picchi."
+    },
+    {
+      "id": "s7",
+      "name": "Pradera dei Picchi",
+      "quote": "Da segnalare un'area rimboschita artificialmente a pino nero e larice dai Forestali negli anni trenta intorno alla zona della Pradera dei Picchi.",
+      "english": "An area artificially reforested with black pine and larch by the Forestry Corps in the 1930s around the Pradera dei Picchi area is noteworthy."
+    }
+  ],
+  "days": [
+    {
+      "title": "Summit Ridges and Higher Peaks",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Lower Valleys and Historic Quarries",
+      "stop_ids": [
+        "s2",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Alexanderturm",
+      "quote": "Die höchste Erhebung des Bliesgaus ist mit 401,1 m ü. NN der Große Kahlenberg bei Breitfurt, auf dem die Ruine des Aussichtsturms Alexanderturm steht.",
+      "english": "The highest elevation of the Bliesgau is the Großer Kahlenberg near Breitfurt at 401.1 m above sea level, on which the ruins of the Alexanderturm observation tower stand."
+    },
+    {
+      "id": "s2",
+      "name": "Gollenstein",
+      "quote": "Bekannt ist der Gollenstein, ein 4000 Jahre alter Menhir.",
+      "english": "Well-known is the Gollenstein, a 4,000-year-old menhir."
+    },
+    {
+      "id": "s3",
+      "name": "Europäischer Kulturpark Bliesbruck-Reinheim",
+      "quote": "Es ist heute Teil des Europäischen Kulturparks Bliesbruck-Reinheim.",
+      "english": "Today it is part of the European Archaeological Park Bliesbruck-Reinheim."
+    },
+    {
+      "id": "s4",
+      "name": "Stephanuskirche",
+      "quote": "Die Stephanuskirche in Böckweiler stammt in ihrer heutigen Form aus dem 11. Jahrhundert.",
+      "english": "The Stephanus Church in Böckweiler dates in its current form from the 11th century."
+    },
+    {
+      "id": "s5",
+      "name": "Naturschutzgebiet Höllengraben",
+      "quote": "Am Naturschutzgebiet Höllengraben befindet sich eine Herde mit Heckrindern, Wasserbüffeln und Konik-Wildpferden, ein Weißstorchennest sowie Populationen von Graureihern, Wildenten, Feldgänsen und anderen seltenen Tierarten.",
+      "english": "At the Höllengraben nature reserve there is a herd of Heck cattle, water buffalo and Konik wild horses, a white stork's nest as well as populations of grey herons, wild ducks, field geese and other rare animal species."
+    },
+    {
+      "id": "s6",
+      "name": "Fischerhütte in Beeden",
+      "quote": "Weitere Weißstorchhorste finden sich an der Fischerhütte in Beeden, in Ingweiler an der Blies und in Webenheim.",
+      "english": "Further white stork nests can be found at the Fischerhütte in Beeden, in Ingweiler on the Blies and in Webenheim."
+    },
+    {
+      "id": "s7",
+      "name": "Spohns Haus",
+      "quote": "Den Anliegen der Ökologie und den Prinzipien der Nachhaltigkeit hat sich Spohns Haus in Gersheim verschrieben.",
+      "english": "Spohns Haus in Gersheim is dedicated to ecological concerns and the principles of sustainability."
+    }
+  ],
+  "days": [
+    {
+      "title": "Ancient Monuments and Heights",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s4"
+      ]
+    },
+    {
+      "title": "History and Nature Exploration",
+      "stop_ids": [
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Wildlife and Bird Watching",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "77a58970993342e26a45a0a3c04f207120034d70c1f6856188bfdcf02f1ebc52"
+}

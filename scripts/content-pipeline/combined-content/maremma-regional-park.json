@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Tuscany",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Maremma Regional Park"
+        "Principina a Mare",
+        "Foce dell'Ombrone",
+        "Fiume Ombrone"
       ],
       "seo_title": "Maremma Regional Park Visit Guide"
     },
@@ -32,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Maremma Regional Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Northern Marshes and River Delta",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Maremma Regional Park",
-                "stop_id": "maremma-regional-park",
-                "detail": "The Maremma Regional Park (Italian: Parco Regionale della Maremma), also known as Uccellina Park (Parco dell'Uccellina), covers a coastal area between Principina a Mare and Talamone in the province of Grosseto, right up to the Livorno-Roma train line. The park covers 9,000 hectares (22,000 acres) plus an extra 8,500 hectares (21,000 acres) of open land around its boundaries, and it is included in the municipalities of Grosseto, Magliano in Toscana and Orbetello."
+                "name": "Principina a Mare",
+                "stop_id": "maremma-regional-park--s2",
+                "detail": "The Park covers an area of 9800 hectares and extends along the coast from the village of Principina a Mare (municipality of Grosseto) to the village of Talamone (municipality of Orbetello)."
+              },
+              {
+                "name": "Foce dell'Ombrone",
+                "stop_id": "maremma-regional-park--s4",
+                "detail": "Within its territory lie the last marshy lands near the mouth of the Ombrone, which, rich in life and still wild, host important colonies of marsh birds."
+              },
+              {
+                "name": "Fiume Ombrone",
+                "stop_id": "maremma-regional-park--s8",
+                "detail": "Limitation of negative impacts on fauna caused by direct human disturbance, through increased surveillance activity (particularly during migration and wintering periods), in regulated access areas; regulation of canoeing on the Ombrone River; adequate organization of guided tours (E)."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Maremma Regional Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Central Plains and Administrative Heart",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Fattoria di Spergolaia",
+                "stop_id": "maremma-regional-park--s5",
+                "detail": "Further south the area is composed of the Uccellina mountains covered by dense Mediterranean scrub and to the east, at the foot of the mountains, by vast grassy expanses, where the Fattoria di Spergolaia, administrative center of the regional farm and headquarters of the butteri, is located."
+              },
+              {
+                "name": "Pianure di Maremma",
+                "stop_id": "maremma-regional-park--s6",
+                "detail": "Inside the Regional Park is the site of regional interest (SIR) \"Pianure di Maremma\": the area is also protected as a special protection zone (ZPS), and the SIR \"Dune dell'Uccellina\", also a site of community interest (SIC) and special protection zone (ZPS) and completely included in the Natural Park."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Maremma Regional Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +109,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Maremma_Regional_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_della_Maremma"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:56:45.212058+00:00"
       }
     }
   }

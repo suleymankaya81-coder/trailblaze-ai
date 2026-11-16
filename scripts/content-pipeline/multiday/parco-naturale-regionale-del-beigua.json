@@ -1,0 +1,91 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "monte Beigua",
+      "quote": "Il parco naturale regionale del Beigua è un'area naturale protetta della Liguria in un territorio che si estende tra la città metropolitana di Genova e la provincia di Savona e comprende il monte Beigua (1287 m).",
+      "english": "The Beigua regional natural park is a protected natural area of Liguria in a territory that extends between the metropolitan city of Genoa and the province of Savona and includes Mount Beigua (1287 m)."
+    },
+    {
+      "id": "s2",
+      "name": "Alta Via dei Monti Liguri",
+      "quote": "Nell'area del Parco si trovano molti sentieri escursionistici ed è attraversato dall'Alta Via dei Monti Liguri.",
+      "english": "In the Park area there are many hiking trails and it is crossed by the Alta Via dei Monti Liguri."
+    },
+    {
+      "id": "s3",
+      "name": "monte Reixa",
+      "quote": "Sul versante meridionale, partendo dalla parte di Genova, il primo che si incontra è il monte Reixa, al confine del Comune di Genova e quello di Arenzano, poco distante dal passo del Faiallo.",
+      "english": "On the southern slope, starting from the side of Genoa, the first one encountered is Mount Reixa, on the border of the Municipality of Genoa and that of Arenzano, not far from the Faiallo pass."
+    },
+    {
+      "id": "s4",
+      "name": "passo del Faiallo",
+      "quote": "Sul versante meridionale, partendo dalla parte di Genova, il primo che si incontra è il monte Reixa, al confine del Comune di Genova e quello di Arenzano, poco distante dal passo del Faiallo.",
+      "english": "On the southern slope, starting from the side of Genoa, the first one encountered is Mount Reixa, on the border of the Municipality of Genoa and that of Arenzano, not far from the Faiallo pass."
+    },
+    {
+      "id": "s5",
+      "name": "valle del Cerusa",
+      "quote": "Da questa sezione del massiccio, in territorio genovese, parte la stretta e ripida valle del Cerusa, che sbocca a Voltri dopo aver fiancheggiato il Bric del Dente (1107 m s.l.m.), il Monte Giallo e le alture del passo del Turchino.",
+      "english": "From this section of the massif, in Genoese territory, begins the narrow and steep Cerusa valley, which ends at Voltri after flanking the Bric del Dente (1107 m a.s.l.), Monte Giallo and the heights of the Turchino pass."
+    },
+    {
+      "id": "s6",
+      "name": "Bric del Dente",
+      "quote": "Da questa sezione del massiccio, in territorio genovese, parte la stretta e ripida valle del Cerusa, che sbocca a Voltri dopo aver fiancheggiato il Bric del Dente (1107 m s.l.m.), il Monte Giallo e le alture del passo del Turchino.",
+      "english": "From this section of the massif, in Genoese territory, begins the narrow and steep Cerusa valley, which ends at Voltri after flanking the Bric del Dente (1107 m a.s.l.), Monte Giallo and the heights of the Turchino pass."
+    },
+    {
+      "id": "s7",
+      "name": "valle del torrente Lerone",
+      "quote": "A Ponente, in comune di Arenzano, segue la valle del torrente Lerone, stretto tra le pendici del Monte Reixa (1183 m s.l.m.) e del Monte Argentea (1086 m s.l.m.).",
+      "english": "To the West, in the municipality of Arenzano, follows the valley of the Lerone stream, squeezed between the slopes of Mount Reixa (1183 m a.s.l.) and Mount Argentea (1086 m a.s.l.)."
+    },
+    {
+      "id": "s8",
+      "name": "Monte Argentea",
+      "quote": "A Ponente, in comune di Arenzano, segue la valle del torrente Lerone, stretto tra le pendici del Monte Reixa (1183 m s.l.m.) e del Monte Argentea (1086 m s.l.m.).",
+      "english": "To the West, in the municipality of Arenzano, follows the valley of the Lerone stream, squeezed between the slopes of Mount Reixa (1183 m a.s.l.) and Mount Argentea (1086 m a.s.l.)."
+    },
+    {
+      "id": "s9",
+      "name": "crinale del Prà Riondo",
+      "quote": "La catena prosegue con il crinale del Prà Riondo, che prosegue nell'ampia dorsale sommitale del monte Beigua (1287 m s.l.m.); sono infine degni di nota il Monte Rama (1150 m s.l.m.), Bric Resonau (1147 m s.l.m.), Monte Sciguelo (1102 m s.l.m.) e il Monte Tardia (927 m s.l.m.).",
+      "english": "The chain continues with the Prà Riondo ridge, which continues into the wide summit ridge of Mount Beigua (1287 m a.s.l.); finally noteworthy are Mount Rama (1150 m a.s.l.), Bric Resonau (1147 m a.s.l.), Mount Sciguelo (1102 m a.s.l.) and Mount Tardia (927 m a.s.l.)."
+    },
+    {
+      "id": "s10",
+      "name": "Monte Rama",
+      "quote": "La catena prosegue con il crinale del Prà Riondo, che prosegue nell'ampia dorsale sommitale del monte Beigua (1287 m s.l.m.); sono infine degni di nota il Monte Rama (1150 m s.l.m.), Bric Resonau (1147 m s.l.m.), Monte Sciguelo (1102 m s.l.m.) e il Monte Tardia (927 m s.l.m.).",
+      "english": "The chain continues with the Prà Riondo ridge, which continues into the wide summit ridge of Mount Beigua (1287 m a.s.l.); finally noteworthy are Mount Rama (1150 m a.s.l.), Bric Resonau (1147 m a.s.l.), Mount Sciguelo (1102 m a.s.l.) and Mount Tardia (927 m a.s.l.)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Main Summits and High Trails",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s9",
+        "s10"
+      ]
+    },
+    {
+      "title": "Eastern Peaks and Cerusa Valley",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Arenzano Valleys and Slopes",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

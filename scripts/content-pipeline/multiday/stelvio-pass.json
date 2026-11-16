@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Cima Garibaldi",
+      "quote": "Dalla sommità del passo si diramano diversi percorsi escursionistici, tra cui il sentiero per la Cima Garibaldi (2843 m s.l.m.) e la strada sterrata che raggiunge il rifugio Pirovano (3020 m s.l.m.).",
+      "english": "Several hiking trails branch off from the top of the pass, including the path to Cima Garibaldi (2843 m a.s.l.) and the dirt road that reaches the Pirovano refuge (3020 m a.s.l.)."
+    },
+    {
+      "id": "s2",
+      "name": "rifugio Pirovano",
+      "quote": "Dalla sommità del passo si diramano diversi percorsi escursionistici, tra cui il sentiero per la Cima Garibaldi (2843 m s.l.m.) e la strada sterrata che raggiunge il rifugio Pirovano (3020 m s.l.m.).",
+      "english": "Several hiking trails branch off from the top of the pass, including the path to Cima Garibaldi (2843 m a.s.l.) and the dirt road that reaches the Pirovano refuge (3020 m a.s.l.)."
+    },
+    {
+      "id": "s3",
+      "name": "ghiacciaio del Livrio",
+      "quote": "A sud del passo dello Stelvio si trova il ghiacciaio del Livrio, che si estende da una quota di circa 2.800 m fino a circa 3.400 m.",
+      "english": "South of the Stelvio Pass lies the Livrio glacier, which extends from an altitude of about 2,800 m up to about 3,400 m."
+    },
+    {
+      "id": "s4",
+      "name": "monte Trincerone",
+      "quote": "Le piste si raggiungono dal parcheggio del passo con una prima funivia, che conduce al monte Trincerone (3.000 metri circa), e da qui con un altro moderno impianto (di costruzione Hölzl) che raggiunge il rifugio Livrio.",
+      "english": "The slopes are reached from the pass parking lot with a first cable car, which leads to Mount Trincerone (approx. 3,000 meters), and from there with another modern facility (built by Hölzl) that reaches the Livrio refuge."
+    },
+    {
+      "id": "s5",
+      "name": "rifugio Livrio",
+      "quote": "Le piste si raggiungono dal parcheggio del passo con una prima funivia, che conduce al monte Trincerone (3.000 metri circa), e da qui con un altro moderno impianto (di costruzione Hölzl) che raggiunge il rifugio Livrio.",
+      "english": "The slopes are reached from the pass parking lot with a first cable car, which leads to Mount Trincerone (approx. 3,000 meters), and from there with another modern facility (built by Hölzl) that reaches the Livrio refuge."
+    },
+    {
+      "id": "s6",
+      "name": "Sacrario militare dello Stelvio",
+      "quote": "Lunga circa 21,5 km e con 40 tornanti, la strada sale regolare per 15 km fino a raggiungere il Pian di Grembo (circa 2400 metri di quota) un tratto di circa un chilometro con pendenze più modeste, dov’è anche situato il Sacrario militare dello Stelvio inaugurato nel 1932.",
+      "english": "About 21.5 km long and with 40 hairpins, the road rises steadily for 15 km until reaching Pian di Grembo (about 2400 meters high), a stretch of about one kilometer with more modest slopes, where the Stelvio Military Memorial, inaugurated in 1932, is also located."
+    },
+    {
+      "id": "s7",
+      "name": "Passo dell'Umbrail",
+      "quote": "Il terzo accesso al passo è il più breve dei tre; l'ascesa parte da Santa Maria Val Monastero (1375 m s.l.m.), nel comune svizzero di Val Müstair e corre in buona parte in territorio elvetico, per poi ricongiungersi presso il Passo dell'Umbrail (2503 m s.l.m.) al versante di Bormio, a circa 3 km dalla vetta dello Stelvio.",
+      "english": "The third access to the pass is the shortest of the three; the ascent starts from Santa Maria Val Monastero (1375 m a.s.l.), in the Swiss municipality of Val Müstair and runs largely in Swiss territory, then rejoins the Bormio side at the Umbrail Pass (2503 m a.s.l.), about 3 km from the Stelvio peak."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glacier and Mountain Peaks",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "High Altitude Trails and Refuges",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Historical Memorials and Borders",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

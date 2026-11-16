@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lazio",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Pineto Regional Park"
+        "Pineta Sacchetti",
+        "Valle dell'Inferno",
+        "Parco delle Mimose"
       ],
       "seo_title": "Pineto Regional Park Visit Guide"
     },
@@ -32,16 +34,54 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Pineto Regional Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Nature and Valleys of Pineto",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Pineto Regional Park",
-                "stop_id": "pineto-regional-park",
-                "detail": "The Pineto Regional Park is a protected natural area of Lazio, Italy, instituted in 1987. It has an area of approximately 240 hectares, which includes Pineta Sacchetti. The park is in the northwest area of the city of Rome, in Municipio XIX, shared between the districts of Aurelio, Primavalle, and Trionfale."
+                "name": "Pineta Sacchetti",
+                "stop_id": "pineto-regional-park--s1",
+                "detail": "Pineta Sacchetti, flat with hundreds of stone pine plants up to 30 meters high;"
+              },
+              {
+                "name": "Valle dell'Inferno",
+                "stop_id": "pineto-regional-park--s2",
+                "detail": "Valle dell'Inferno, an extensive valley that expands eastwards to the Park of Monte Ciocci and northwards to the Park of the Mimose;"
+              },
+              {
+                "name": "Parco delle Mimose",
+                "stop_id": "pineto-regional-park--s3",
+                "detail": "Parco delle Mimose, an equipped public park above the Valle dell'Inferno, between central Balduina and Columbus di Balduina."
+              },
+              {
+                "name": "Pianoro di Proba Petronia",
+                "stop_id": "pineto-regional-park--s4",
+                "detail": "Pianoro di Proba Petronia, an equipped public park, located in Balduina Bassa."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Pineto Regional Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "History and Architecture of Balduina",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Acquedotto dell'Acqua Paola",
+                "stop_id": "pineto-regional-park--s5",
+                "detail": "The territory of Pineto Park preserves traces of presence as early as the Roman age; in fact, the Trajan aqueduct ran here, built in 109 AD and reused in the 17th century by the will of Pope Paul V, giving life to the Acqua Paola Aqueduct, which still today feeds the famous Fontanone del Gianicolo."
+              },
+              {
+                "name": "Chiesa di Gesù Divino Maestro",
+                "stop_id": "pineto-regional-park--s6",
+                "detail": "Church of Jesus the Divine Master, a significant example of modernist architecture located in the Balduina district of Rome."
+              },
+              {
+                "name": "Casale del Giannotto",
+                "stop_id": "pineto-regional-park--s8",
+                "detail": "Casale del Giannotto, a restored eighteenth-century farmhouse that today houses the Casa del Parco Library and cultural spaces."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Pineto Regional Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +119,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Pineto_Regional_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_regionale_urbano_del_Pineto"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:07:25.051891+00:00"
       }
     }
   }

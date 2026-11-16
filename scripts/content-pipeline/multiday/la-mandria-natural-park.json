@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "castello della Mandria",
+      "quote": "Il muro, lungo circa 30 km e costato 1 milione di lire, doveva proteggere gli appartamenti reali del castello della Mandria voluti dal re per viverci con la sua seconda famiglia creata con la moglie morganatica Rosa Vercellana detta \"la Bela Rosin\"; è servito di fatto a proteggere uno dei rarissimi lembi sopravvissuti della foresta planiziale che un tempo copriva l'intera Pianura Padana.",
+      "english": "The wall, approximately 30 km long and costing 1 million lire, was intended to protect the royal apartments of the Mandria castle commissioned by the king to live in with his second family created with his morganatic wife Rosa Vercellana, known as \"la Bela Rosin\"; it effectively served to protect one of the very rare surviving strips of lowland forest that once covered the entire Po Valley."
+    },
+    {
+      "id": "s2",
+      "name": "chiesetta di San Giuliano",
+      "quote": "Si conserva, nella zona della Rubbianetta, la pregevole chiesetta di San Giuliano, al cui interno sono presenti affreschi con immagini di santi, risalenti al 1493.",
+      "english": "In the Rubbianetta area, the exquisite little church of San Giuliano is preserved, inside which there are frescoes with images of saints dating back to 1493."
+    },
+    {
+      "id": "s3",
+      "name": "Castello dei Laghi",
+      "quote": "Inoltre vi si trovano anche il Castello dei Laghi, piccolo edificio che fu reposoir di caccia del re Vittorio Emanuele II, diverse cascine coloniche e casini di caccia.",
+      "english": "Furthermore, one also finds the Castle of the Lakes, a small building that was a hunting lodge for King Vittorio Emanuele II, several farmhouses, and hunting lodges."
+    },
+    {
+      "id": "s4",
+      "name": "castelletto della Bizzarría",
+      "quote": "A fianco dell'ingresso omonimo, a San Gillio, si trova il castelletto della Bizzarría, così chiamato per lo stile architettonico fantasioso e indefinibile, con elementi architettonici del tutto particolari che possono ricordare il liberty, o le torri moresche, concepito come piccolo padiglione di caccia, è una degli edifici più curiosi del parco.",
+      "english": "Next to the entrance of the same name, in San Gillio, is the little castle of Bizzarría, so named for its imaginative and indefinable architectural style, with very particular architectural elements that may recall Art Nouveau or Moorish towers; conceived as a small hunting pavilion, it is one of the most curious buildings in the park."
+    },
+    {
+      "id": "s5",
+      "name": "cascina Rubbianetta",
+      "quote": "A poche centinaia di metri dall'entrata di Druento si trova la cascina Rubbianetta, costruita negli anni 1860-63 per volere di Vittorio Emanuele II, come centro di allevamento cavalli.",
+      "english": "A few hundred meters from the Druento entrance is the Rubbianetta farmhouse, built in the years 1860-63 by order of Vittorio Emanuele II as a horse breeding center."
+    },
+    {
+      "id": "s6",
+      "name": "cascina Vittoria",
+      "quote": "L'ente parco mantiene inoltre l'allevamento di cavalli appartenenti alla razza autoctona Tpr presso le scuderie della Cascina Vittoria.",
+      "english": "The park authority also maintains the breeding of horses belonging to the native Tpr breed at the stables of Cascina Vittoria."
+    },
+    {
+      "id": "s7",
+      "name": "cascina Prato Pascolo",
+      "quote": "Della Mandria è importante segnalare come essa sia organizzata al suo interno: visitando i suoi lunghi viali appositamente aperti per regalare \"giornate nel verde\" ai cittadini che volessero visitarla, si possono trovare punti di ristoro, quali il ristorante posto presso la cascina Prato Pascolo e Oslera, cascine con cavalli, come la cascina Vittoria ed il Centro Internazionale del cavallo alla Cascina Rubianetta, spiazzi attrezzati con tavoli per pic-nic e infine alcuni punti, segnalati su apposite mappe presenti all'interno del parco, per il noleggio di biciclette (a Prato Pascolo all'interno del parco ed all'entrata di Druento vicino ai parcheggi, nonché a Cascina Oslera sulla direttissima Torino-Lanzo) e quant'altro possa essere utile per visitare il parco.",
+      "english": "It is important to note how La Mandria is organized internally: by visiting its long avenues specially opened to offer \"days in the green\" to citizens who wish to visit, one can find refreshment points, such as the restaurant located at the Prato Pascolo and Oslera farmhouse, farmhouses with horses, such as Cascina Vittoria and the International Horse Center at Cascina Rubianetta, areas equipped with picnic tables, and finally some points, marked on special maps inside the park, for bicycle rental (at Prato Pascolo inside the park and at the Druento entrance near the parking lots, as well as at Cascina Oslera on the Turin-Lanzo direct road) and anything else that might be useful for visiting the park."
+    },
+    {
+      "id": "s8",
+      "name": "cascina Oslera",
+      "quote": "L'accesso al pubblico (fruitori/visitatori) avviene esclusivamente dagli ingressi di Ponte Verde e Tre Cancelli (Venaria Reale), Rubbianetta e Cascina Oslera (Druento) e Bizzarría (San Gillio).",
+      "english": "Public access (users/visitors) occurs exclusively from the entrances of Ponte Verde and Tre Cancelli (Venaria Reale), Rubbianetta and Cascina Oslera (Druento), and Bizzarría (San Gillio)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Royal Residences and Greenery",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s6"
+      ]
+    },
+    {
+      "title": "History and Equestrian Heritage in Druento",
+      "stop_ids": [
+        "s5",
+        "s2",
+        "s8"
+      ]
+    },
+    {
+      "title": "Unique Architecture and Hidden Lakes",
+      "stop_ids": [
+        "s4",
+        "s3"
+      ]
+    }
+  ]
+}

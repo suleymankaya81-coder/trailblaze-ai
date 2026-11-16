@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Trümmelbachfälle",
+      "quote": "Ein über 600 Meter langes Wegsystem über Treppen und durch Tunnels macht die Trümmelbachfälle seit 1913 zugänglich.",
+      "english": "A path system over 600 meters long via stairs and through tunnels has made the Trümmelbach Falls accessible since 1913."
+    },
+    {
+      "id": "s2",
+      "name": "Lauterbrunnental",
+      "quote": "Die Trümmelbachfälle liegen im schweizerischen Lauterbrunnental zwischen Lauterbrunnen und Stechelberg im Kanton Bern.",
+      "english": "The Trümmelbach Falls are located in the Swiss Lauterbrunnen Valley between Lauterbrunnen and Stechelberg in the Canton of Bern."
+    },
+    {
+      "id": "s3",
+      "name": "Klamm",
+      "quote": "In dieser Klamm stürzt der Bach über zehn Wasserfälle, wobei er eine Höhendifferenz von 140 Metern überwindet.",
+      "english": "In this gorge, the stream plunges over ten waterfalls, overcoming a height difference of 140 meters."
+    },
+    {
+      "id": "s4",
+      "name": "unterirdische Wasserfälle",
+      "quote": "Die obersten Fälle liegen so tief in der schmalen, verwinkelten Klamm, dass kein Tageslicht mehr zu ihnen gelangt und sie als unterirdische Wasserfälle bezeichnet werden.",
+      "english": "The uppermost falls lie so deep in the narrow, winding gorge that no more daylight reaches them and they are referred to as underground waterfalls."
+    },
+    {
+      "id": "s5",
+      "name": "Wegsystem",
+      "quote": "Ein über 600 Meter langes Wegsystem über Treppen und durch Tunnels macht die Trümmelbachfälle seit 1913 zugänglich.",
+      "english": "A path system over 600 meters long via stairs and through tunnels has made the Trümmelbach Falls accessible since 1913."
+    },
+    {
+      "id": "s6",
+      "name": "Schräglift",
+      "quote": "Ein Schräglift im Berg, der eine Höhendifferenz von 100 Metern überwindet, erleichtert den Aufstieg.",
+      "english": "An inclined elevator inside the mountain, which overcomes a height difference of 100 meters, facilitates the ascent."
+    },
+    {
+      "id": "s7",
+      "name": "oberen Wasserfälle",
+      "quote": "Besonders die oberen Wasserfälle im Berginnern konnten nur durch Galerien und Tunnels erschlossen werden.",
+      "english": "In particular, the upper waterfalls inside the mountain could only be made accessible through galleries and tunnels."
+    }
+  ],
+  "days": [
+    {
+      "title": "Gorge Exploration and Lower Falls",
+      "stop_ids": [
+        "s2",
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "title": "Mountain Interior and Upper Cascades",
+      "stop_ids": [
+        "s6",
+        "s5",
+        "s7",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "57e18fcc220275fb9950168031542b65149389c2fc913492c96bfd04f35c6fa9"
+}

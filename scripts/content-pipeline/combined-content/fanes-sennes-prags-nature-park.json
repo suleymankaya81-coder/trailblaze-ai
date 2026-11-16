@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Trentino South Tyrol",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Fanes-Sennes-Prags Nature Park"
+        "lago di Braies",
+        "Prato Piazza",
+        "forte Prato Piazza"
       ],
       "seo_title": "Fanes-Sennes-Prags Nature Park Visit Guide"
     },
@@ -32,16 +34,49 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Fanes-Sennes-Prags Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Braies Lakes and High Plateaus",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Fanes-Sennes-Prags Nature Park",
-                "stop_id": "fanes-sennes-prags-nature-park",
-                "detail": "The Fanes-Sennes-Prags Nature Park (Ladin: Parch natural Fanes-Senes-Braies; Italian: Parco naturale Fanes-Sennes-Braies; German: Naturpark Fanes-Sennes-Prags) is a nature reserve in the Dolomites in South Tyrol, Italy."
+                "name": "lago di Braies",
+                "stop_id": "fanes-sennes-prags-nature-park--s1",
+                "detail": "The main lakes of the park are: Lake Braies, Lake Dobbiaco, the Le de Fojedöra, Lake Limo, Lake Piciodel and Lake de Rufiedo."
+              },
+              {
+                "name": "Prato Piazza",
+                "stop_id": "fanes-sennes-prags-nature-park--s2",
+                "detail": "The peaks reach heights of 3,000 m a.s.l. and overlook the vast plateaus of Fanes, Sennes, Fosses and Prato Piazza (Plätzwiese)."
+              },
+              {
+                "name": "forte Prato Piazza",
+                "stop_id": "fanes-sennes-prags-nature-park--s3",
+                "detail": "Inside the park there is also an old Austro-Hungarian fort dating back to the First World War, the Prato Piazza fort."
+              },
+              {
+                "name": "le de Fojedöra",
+                "stop_id": "fanes-sennes-prags-nature-park--s4",
+                "detail": "From here, in half an hour you reach Lake Le de Fojedöra (It. lake of the Alpe dei Colli Alti, Ger. Hochalpen-See, 2252 m)."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Fanes-Sennes-Prags Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Fanes Heart and Park Information",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "lago di Limo",
+                "stop_id": "fanes-sennes-prags-nature-park--s6",
+                "detail": "Continuing along trail no. 11, you climb for about another 20 minutes and arrive at Lake Limo (2154 m)."
+              },
+              {
+                "name": "centro visite del parco naturale",
+                "stop_id": "fanes-sennes-prags-nature-park--s8",
+                "detail": "In San Vigilio di Marebbe, a visitor center of the nature park has been built, with free access, which collects information and curiosities about the park in a suggestive wooden building."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Fanes-Sennes-Prags Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +114,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Fanes-Sennes-Prags_Nature_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_Fanes-Sennes-Braies"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:54:37.307591+00:00"
       }
     }
   }

@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Bellagio",
+      "quote": "I tre rami confluiscono al centro del lago davanti al promontorio di Bellagio, una delle località più celebrate per la bellezza del paesaggio e per le antiche tradizioni turistiche.",
+      "english": "The three branches converge at the center of the lake in front of the Bellagio promontory, one of the most celebrated locations for the beauty of its landscape and for its ancient tourist traditions."
+    },
+    {
+      "id": "s2",
+      "name": "Isola Comacina",
+      "quote": "Nel ramo di sud-ovest, stretto e tortuoso, con i versanti ripidi e boscosi, si trova l’Isola Comacina, l’unica del Lario.",
+      "english": "In the southwest branch, narrow and winding, with steep and wooded slopes, lies Isola Comacina, the only one in the Lario."
+    },
+    {
+      "id": "s3",
+      "name": "Argegno",
+      "quote": "È il lago più profondo d'Italia, toccando i 418 metri di depressione massima fra le località di Argegno e Nesso, e quinto in Europa, caratterizzato dai fondali in criptodepressione trovandosi a oltre 200 metri sotto il livello del mare.",
+      "english": "It is the deepest lake in Italy, reaching a maximum depression of 418 meters between the towns of Argegno and Nesso, and fifth in Europe, characterized by cryptodepression depths being over 200 meters below sea level."
+    },
+    {
+      "id": "s4",
+      "name": "Nesso",
+      "quote": "Anche a causa di questa severa conformazione fisica, il turismo lariano non ha conosciuto il fenomeno \"di massa\" tipico del lago di Garda, riguardando esclusivamente i salotti dell'aristocrazia e gli artisti che spesso vi erano ospitati; un soggiorno di tipo meditativo che ancora oggi si riscontra nelle ville d'epoca (osservabili dal lago più che dalla strada) e - per contro - dall'antica semplicità dei borghi più umili (Pognana, Careno, Nesso, Brienno, Colonno, Corenno Plinio, ecc.).",
+      "english": "Also due to this severe physical conformation, Larian tourism has not experienced the \"mass\" phenomenon typical of Lake Garda, concerning exclusively the salons of the aristocracy and the artists who were often hosted there; a meditative type of stay that is still found today in the period villas (observable from the lake more than from the road) and - on the other hand - in the ancient simplicity of the humbler villages (Pognana, Careno, Nesso, Brienno, Colonno, Corenno Plinio, etc.)."
+    },
+    {
+      "id": "s5",
+      "name": "Como",
+      "quote": "Como è una città carica di storia e nel suo passato è stata di importanza strategica per tutta la regione, tanto da esser in grado di rivaleggiare con Milano.",
+      "english": "Como is a city full of history and in its past it was of strategic importance for the entire region, so much so as to be able to rival Milan."
+    },
+    {
+      "id": "s6",
+      "name": "Lecco",
+      "quote": "Sulle sponde del ramo orientale si trova la città di Lecco la quale deve la sua fama al celebre romanzo del Manzoni che in questo territorio ambientò il capolavoro letterario de I promessi sposi.",
+      "english": "On the shores of the eastern branch lies the city of Lecco, which owes its fame to Manzoni's famous novel, which set the literary masterpiece The Betrothed in this territory."
+    },
+    {
+      "id": "s7",
+      "name": "Gruppo delle Grigne",
+      "quote": "Il ramo sud-est, denominato ramo di Lecco, con la città al suo apice, guarda a oriente il Gruppo delle Grigne (2 410 m).",
+      "english": "The southeast branch, called the Lecco branch, with the city at its apex, looks east to the Grigne Group (2,410 m)."
+    },
+    {
+      "id": "s8",
+      "name": "laghetto di Piona",
+      "quote": "A nord, presso i territori comunali di Colico e Dorio, è presente un piccolo golfo incavato, quasi a sembrare uno specchio d'acqua indipendente, chiamato laghetto di Piona; quest'ultimo fa da cornice all'omonima abbazia cistercense che sorge in prossimità delle sue rive delimitata dalla penisola dell'Olgiasca e dal Montecchio Sud.",
+      "english": "To the north, near the municipal territories of Colico and Dorio, there is a small hollowed gulf, almost appearing to be an independent body of water, called laghetto di Piona; the latter frames the Cistercian abbey of the same name which rises near its shores delimited by the Olgiasca peninsula and Montecchio Sud."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Lake and Southwest Branch",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Historical Cities and Eastern Peaks",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Northern Waters",
+      "stop_ids": [
+        "s8"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "lecceta",
+      "quote": "18 ettari di terreno sono occupati da una lecceta, testimonianza residuale della \"foresta di Lecce\", un'area boschiva che nel medioevo si sviluppava in un'area compresa tra Lecce, la costa adriatica, Otranto e Brindisi.",
+      "english": "18 hectares of land are occupied by a holm oak forest, a residual witness of the \"forest of Lecce\", a wooded area that in the Middle Ages developed in an area between Lecce, the Adriatic coast, Otranto and Brindisi."
+    },
+    {
+      "id": "s2",
+      "name": "specchia della Milogna",
+      "quote": "Limitrofa alla lecceta, vi è una zona paludosa denominata specchia della Milogna che copre una superficie di circa 90 ettari.",
+      "english": "Adjacent to the holm oak forest, there is a marshy area called Specchia della Milogna which covers a surface of about 90 hectares."
+    },
+    {
+      "id": "s3",
+      "name": "bacino dell'Idume",
+      "quote": "Nella stagione primaverile vi stazionano upupe e tortore, mentre talvolta durante l'inverno, nel bacino dell'Idume è stata rilevata la presenza del cigno.",
+      "english": "In the spring season hoopoes and turtle doves station there, while sometimes during the winter, the presence of the swan has been recorded in the Idume basin."
+    },
+    {
+      "id": "s4",
+      "name": "Torre Rinalda",
+      "quote": "Lungo il litorale vi sono due delle torri di avvistamento che, a partire dal Medioevo, erano edificate a scopo difensivo contro i Turchi; si tratta di Torre Rinalda e di Torre Chianca.",
+      "english": "Along the coast there are two of the watchtowers that, starting from the Middle Ages, were built for defensive purposes against the Turks; these are Torre Rinalda and Torre Chianca."
+    },
+    {
+      "id": "s5",
+      "name": "masseria Barone Vecchio",
+      "quote": "Nella zona interna poi, insistono le masserie Barone Vecchio, risalente alla metà del XVI secolo e il complesso masserizio di Rauccio del XVII secolo, costituito dalla masseria, dalla Torre colombaia e dalla Cappella, della quale rimangono poche tracce.",
+      "english": "In the internal area, there are the masserie Barone Vecchio, dating back to the middle of the 16th century, and the Rauccio farm complex from the 17th century, consisting of the farmhouse, the Dovecote Tower and the Chapel, of which few traces remain."
+    },
+    {
+      "id": "s6",
+      "name": "complesso masserizio di Rauccio",
+      "quote": "Nella zona interna poi, insistono le masserie Barone Vecchio, risalente alla metà del XVI secolo e il complesso masserizio di Rauccio del XVII secolo, costituito dalla masseria, dalla Torre colombaia e dalla Cappella, della quale rimangono poche tracce.",
+      "english": "In the internal area, there are the masserie Barone Vecchio, dating back to the middle of the 16th century, and the Rauccio farm complex from the 17th century, consisting of the farmhouse, the Dovecote Tower and the Chapel, of which few traces remain."
+    },
+    {
+      "id": "s7",
+      "name": "acquaterrario",
+      "quote": "La masseria, recentemente restaurata ospita l'acquaterrario ed è la sede del WWF che qui svolge le attività di tutela e valorizzazione del parco.",
+      "english": "The farmhouse, recently restored, houses the aqua-terrarium and is the headquarters of the WWF which carries out protection and enhancement activities of the park here."
+    }
+  ],
+  "days": [
+    {
+      "title": "Natural Wetlands and Forests",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Coastal Towers and Historical Farms",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Rauccio Complex and Wildlife Center",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

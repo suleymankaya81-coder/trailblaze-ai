@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Sardinia",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Gennargentu National Park"
+        "Punta La Marmora",
+        "Bruncu Spina"
       ],
       "seo_title": "Gennargentu National Park Visit Guide"
     },
@@ -32,16 +33,57 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Gennargentu National Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "High Peaks of Gennargentu",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Gennargentu National Park",
-                "stop_id": "gennargentu-national-park",
-                "detail": "The Gennargentu National Park (also National Park of the Bay of Orosei and Gennargentu; Italian: Parco Nazionale del Golfo di Orosei e del Gennargentu) is a national park on the east coast of Sardinia."
+                "name": "Punta La Marmora",
+                "stop_id": "gennargentu-national-park--s1",
+                "detail": "The island's highest mountain peaks are found here, reaching the maximum altitude with the 1,834 meters of Punta La Marmora."
+              },
+              {
+                "name": "Bruncu Spina",
+                "stop_id": "gennargentu-national-park--s2",
+                "detail": "Some of the highest peaks of the mountain complex are Bruncu Spina (1,828 meters), Punta Florisa (1,822 meters), Punta Paolina (1,792 meters), Punta Erba Irdes (1,703 meters), Bruncu Allasu (1,701 meters), Monte Iscudu (1,676 meters) and Monte Spada (1,595 meters)."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Gennargentu National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Supramonte Highlands",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Supramonte",
+                "stop_id": "gennargentu-national-park--s4",
+                "detail": "The Supramonte region develops in a series of karst plateaus formed by limestone rocks dating back to the Mesozoic."
+              },
+              {
+                "name": "Monte Corrasi",
+                "stop_id": "gennargentu-national-park--s5",
+                "detail": "The plateau is surrounded by a series of mountain peaks whose maximum altitude is reached by Monte Corrasi, with its 1,463 meters."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Gennargentu National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Ancient Forests and Plateaus",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Punta Solitta",
+                "stop_id": "gennargentu-national-park--s6",
+                "detail": "Punta Solitta, with its 1,206 meters, is one of these."
+              },
+              {
+                "name": "Sas Baddes",
+                "stop_id": "gennargentu-national-park--s7",
+                "detail": "The plateaus and heights of Supramonte are instead dominated by holm oak forests, as in the case of the \"Sas Baddes\" holm oak grove, included within the perimeter of the Montes state forest, one of the last primary forests still present in Europe."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Gennargentu National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +121,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Gulf_of_Orosei_and_Gennargentu_National_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_nazionale_del_Golfo_di_Orosei_e_del_Gennargentu"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:55:06.614419+00:00"
       }
     }
   }

@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "punta della Scomunica",
+      "quote": "Il suo rilievo più elevato è punta della Scomunica (408 m s.l.m.), cui seguono punta Maestra (265 metri), punta Tumbarino (241 metri), monte Ruda (215 metri) e punta Marcutza (195 metri).",
+      "english": "Its highest point is Punta della Scomunica (408 m a.s.l.), followed by Punta Maestra (265 meters), Punta Tumbarino (241 meters), Monte Ruda (215 meters), and Punta Marcutza (195 meters)."
+    },
+    {
+      "id": "s2",
+      "name": "cala d'Oliva",
+      "quote": "I corsi d'acqua hanno carattere prevalentemente stagionale ed alimentano alcuni invasi artificiali che erano al servizio delle strutture carcerarie e del villaggio di cala d'Oliva.",
+      "english": "The watercourses are predominantly seasonal and feed some artificial reservoirs that served the prison structures and the village of Cala d'Oliva."
+    },
+    {
+      "id": "s3",
+      "name": "Cala Scombro di Dentro",
+      "quote": "I piccoli scogli presso Cala Scombro di Dentro ospitano importanti colonie di marangone dal ciuffo (Phalacrocorax aristotelis).",
+      "english": "The small rocks near Cala Scombro di Dentro host important colonies of European shag (Phalacrocorax aristotelis)."
+    },
+    {
+      "id": "s4",
+      "name": "Elighe Mannu",
+      "quote": "Soltanto in località Elighe Mannu si trova una piccola formazione originale di bosco di leccio (Quercus ilex).",
+      "english": "Only in the locality of Elighe Mannu is there a small original formation of holm oak forest (Quercus ilex)."
+    },
+    {
+      "id": "s5",
+      "name": "ossario austro-ungarico",
+      "quote": "Oltre alle strutture che facevano parte del complesso carcerario, sull'isola è presente un ossario austro-ungarico eretto negli anni trenta.",
+      "english": "In addition to the structures that were part of the prison complex, there is an Austro-Hungarian ossuary on the island erected in the 1930s."
+    },
+    {
+      "id": "s6",
+      "name": "Ospedale delle Tartarughe",
+      "quote": "Nella località di Fornelli è stato istituito nel 2004 l'Ospedale delle Tartarughe, allo scopo di studiare le specie e recuperare gli esemplari feriti o catturati in maniera accidentale.",
+      "english": "In the locality of Fornelli, the Turtle Hospital was established in 2004 for the purpose of studying the species and recovering injured or accidentally captured specimens."
+    },
+    {
+      "id": "s7",
+      "name": "Osservatorio Faunistico del Parco",
+      "quote": "In località Tumbarino è invece attivo l'Osservatorio Faunistico del Parco.",
+      "english": "In the Tumbarino locality, the Park's Wildlife Observatory is active."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Heights and Villages",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s4"
+      ]
+    },
+    {
+      "title": "Central Nature and History",
+      "stop_ids": [
+        "s3",
+        "s5",
+        "s7"
+      ]
+    },
+    {
+      "title": "Southern Conservation Center",
+      "stop_ids": [
+        "s6"
+      ]
+    }
+  ]
+}

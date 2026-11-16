@@ -1,0 +1,79 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Vulcano di Roccamonfina",
+      "quote": "Il Vulcano di Roccamonfina (1006 m s.l.m.) è il più antico vulcano della Campania, per dimensioni il quarto vulcano d'Italia.",
+      "english": "The Roccamonfina Volcano (1006 m above sea level) is the oldest volcano in Campania and the fourth largest volcano in Italy."
+    },
+    {
+      "id": "s2",
+      "name": "Santuario dei Lattani",
+      "quote": "Il Santuario dei Lattani (nel comune di Roccamonfina)",
+      "english": "The Sanctuary of Lattani (in the municipality of Roccamonfina)"
+    },
+    {
+      "id": "s3",
+      "name": "Le Neviere di Roccamonfina",
+      "quote": "Le Neviere di Roccamonfina",
+      "english": "The Snow Houses of Roccamonfina"
+    },
+    {
+      "id": "s4",
+      "name": "Le Ciampate del Diavolo",
+      "quote": "Le Ciampate del Diavolo (nel comune di Tora e Piccilli)",
+      "english": "The Devil's Footprints (in the municipality of Tora and Piccilli)"
+    },
+    {
+      "id": "s5",
+      "name": "fiume Garigliano",
+      "quote": "L'intera area è dominata dal vulcano spento di Roccamonfina ed ha come limite geografico il fiume Garigliano.",
+      "english": "The entire area is dominated by the extinct Roccamonfina volcano and has the Garigliano river as its geographical limit."
+    },
+    {
+      "id": "s6",
+      "name": "torre di Pandolfo Capodiferro",
+      "quote": "Le rovine della torre di Pandolfo Capodiferro ed il bosco sacro della Ninfa Marica alla foce del Garigliano (nel comune di Sessa Aurunca)",
+      "english": "The ruins of the tower of Pandolfo Capodiferro and the sacred forest of the Nymph Marica at the mouth of the Garigliano (in the municipality of Sessa Aurunca)"
+    },
+    {
+      "id": "s7",
+      "name": "bosco sacro della Ninfa Marica",
+      "quote": "Le rovine della torre di Pandolfo Capodiferro ed il bosco sacro della Ninfa Marica alla foce del Garigliano (nel comune di Sessa Aurunca)",
+      "english": "The ruins of the tower of Pandolfo Capodiferro and the sacred forest of the Nymph Marica at the mouth of the Garigliano (in the municipality of Sessa Aurunca)"
+    },
+    {
+      "id": "s8",
+      "name": "teatro romano di Teano",
+      "quote": "Il teatro romano di Teano",
+      "english": "The Roman theater of Teano"
+    },
+    {
+      "id": "s9",
+      "name": "Museo archeologico nazionale di Teanum Sidicinum",
+      "quote": "Il Museo archeologico nazionale di Teanum Sidicinum",
+      "english": "The National Archaeological Museum of Teanum Sidicinum"
+    }
+  ],
+  "days": [
+    {
+      "title": "Volcanic Peaks and Ancient Footprints",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Riverside Ruins and History of Teano",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ]
+}

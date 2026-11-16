@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Sicily",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco dell'Etna"
+        "monastero di San Nicolò l'Arena",
+        "Giardino Botanico Nuova Gussonea"
       ],
       "seo_title": "Etna Park Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Etna Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "East Flank Giants and Monasteries",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco dell'Etna",
-                "stop_id": "etna-park",
-                "detail": "The park of Etna is a protected natural area of the Sicilian Region established in 1987, with the Decree of the President of the Rino Nicolosi Region."
+                "name": "monastero di San Nicolò l'Arena",
+                "stop_id": "etna-park--s7",
+                "detail": "The \"Etna Park Authority\" is a public law body subject to the control and supervision of the Sicilian Region, based in Nicolosi at the ancient monastery of San Nicolò l'Arena."
+              },
+              {
+                "name": "Giardino Botanico Nuova Gussonea",
+                "stop_id": "etna-park--s8",
+                "detail": "Nuova Gussonea Botanical Garden, on digilander.libero.it."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Etna Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Volcanic Geology and Refuges",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Valle del Bove",
+                "stop_id": "etna-park--s5",
+                "detail": "The dikes of the Valle del Bove which constitute what remains of the primordial Trifoglietto volcano."
+              },
+              {
+                "name": "Rifugio Sapienza",
+                "stop_id": "etna-park--s6",
+                "detail": "Nicolosi, which is located on the road that directly connects Catania to the Sapienza Refuge of the CAI."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Etna Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_dell%27Etna"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_dell%27Etna"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:54:31.755322+00:00"
       }
     }
   }

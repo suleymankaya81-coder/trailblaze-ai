@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Baden Wurttemberg",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Triberg Waterfalls"
+        "Hauptfälle",
+        "Wasserfallkessel"
       ],
       "seo_title": "Triberg Waterfalls Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Triberg Waterfalls",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Cascades and Basin",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Triberg Waterfalls",
-                "stop_id": "triberg-waterfalls",
-                "detail": "The Triberg Waterfalls are waterfalls near Triberg in the Black Forest in Baden-Württemberg (Germany). With a descent of 163 m, it is one of the highest waterfalls in Germany and a landmark in the Black Forest region."
+                "name": "Hauptfälle",
+                "stop_id": "triberg-waterfalls--s2",
+                "detail": "After a steep torrent section follow the well-known seven-stage main falls, which plunge on a stretch of approx. 230 meters from about 805 m to 713 m above sea level."
+              },
+              {
+                "name": "Wasserfallkessel",
+                "stop_id": "triberg-waterfalls--s6",
+                "detail": "The cirque-like forms including the waterfall basin likely received their final shaping during the high glacial period of the Würm ice age, while the lower valley steps were shaped only in older, more extensive glaciations."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Triberg Waterfalls before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Lake and Mountain Entrances",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Bergsee",
+                "stop_id": "triberg-waterfalls--s3",
+                "detail": "The Triberg waterfall basin lies, together with the neighboring mountain lake, in a row of ice-age cirque forms that are typically recessed into the northeastern slope of the Schönwald plateau."
+              },
+              {
+                "name": "Scheffelplatz",
+                "stop_id": "triberg-waterfalls--s4",
+                "detail": "They have five entrances: in the city center directly on the B 500, at the Bergsee, at Scheffelplatz, on the Adelheid and behind the Asklepios Clinic."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Triberg Waterfalls before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Triberg_Waterfalls"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Triberger_Wasserf%C3%A4lle"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:52:09.646276+00:00"
       }
     }
   }

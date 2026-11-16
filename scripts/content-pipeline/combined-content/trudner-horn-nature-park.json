@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Trentino South Tyrol",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Trudner Horn Nature Park"
+        "monte Corno",
+        "lago Bianco"
       ],
       "seo_title": "Trudner Horn Nature Park Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Trudner Horn Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Peaks and Wetlands",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Trudner Horn Nature Park",
-                "stop_id": "trudner-horn-nature-park",
-                "detail": "The Trudner Horn Nature Park (Italian: Parco naturale Monte Corno) is a nature reserve south of Bolzano in South Tyrol, Italy."
+                "name": "monte Corno",
+                "stop_id": "trudner-horn-nature-park--s1",
+                "detail": "The highest peak is Mount Corno, which gives the park its name and reaches 1,817 m above sea level."
+              },
+              {
+                "name": "lago Bianco",
+                "stop_id": "trudner-horn-nature-park--s2",
+                "detail": "In the park there are some marshy areas: Lake Bianco, Lake Nero and the Palù Longa."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Trudner Horn Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Villages and Visitor Centers",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Anterivo",
+                "stop_id": "trudner-horn-nature-park--s5",
+                "detail": "The territories of the municipalities of Anterivo, Egna, Montagna, Salorno and Trodena are part of the park."
+              },
+              {
+                "name": "Trodena",
+                "stop_id": "trudner-horn-nature-park--s6",
+                "detail": "The park visitor centre is located in Trodena and is managed by the autonomous province of Bolzano."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Trudner Horn Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Trudner_Horn_Nature_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_Monte_Corno"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:09:21.709672+00:00"
       }
     }
   }

@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Teufelsloch",
+      "quote": "Hans Brand aus Bayreuth, ein Geologe und Bergbauingenieur, späterer SS-Standartenführer, hat im Jahr 1922 eine etwa neun Meter dicke Abschlusswand, gebildet durch einen Versturz, im Teufelsloch durchbrochen und tropfsteingeschmückte Höhlenteile entdeckt, die bis August 1923 gangbar gemacht und für Besucher einstweilen freigegeben wurden.",
+      "english": "Hans Brand from Bayreuth, a geologist and mining engineer, later SS-Standartenführer, broke through an approximately nine-meter-thick end wall formed by a collapse in the Teufelsloch in 1922 and discovered cave sections decorated with dripstones, which were made accessible and temporarily opened to visitors by August 1923."
+    },
+    {
+      "id": "s2",
+      "name": "Kuppelsaal",
+      "quote": "Der Kuppelsaal, der schon vor der Erschließung als das Große Teufelsloch bekannt war, hat bei einer Grundfläche von etwa 100 Quadratmetern eine Höhe von mehr als zehn Metern; eine 15 Meter mächtige Felsdecke liegt darüber.",
+      "english": "The Kuppelsaal, which was known as the Great Teufelsloch before the development, has a height of more than ten meters with a floor area of about 100 square meters; a 15-meter-thick rock ceiling lies above it."
+    },
+    {
+      "id": "s3",
+      "name": "Barbarossadom",
+      "quote": "Der Barbarossadom ist etwa 45 Meter lang, 18 Meter breit und bis zu 18 Meter hoch, mit einer darüber liegenden Felsendecke von 52 Metern Mächtigkeit.",
+      "english": "The Barbarossadom is about 45 meters long, 18 meters wide and up to 18 meters high, with an overlying rock ceiling 52 meters thick."
+    },
+    {
+      "id": "s4",
+      "name": "Riesensaal",
+      "quote": "Der Riesensaal, der größte Raum der Teufelshöhle, ist etwa 30 Meter lang, 16 Meter breit und 13 Meter hoch, darüber liegen 45 Meter Felsen.",
+      "english": "The Riesensaal, the largest room in the Teufelshöhle, is about 30 meters long, 16 meters wide and 13 meters high, with 45 meters of rock above it."
+    },
+    {
+      "id": "s5",
+      "name": "Kleine Teufelshöhle",
+      "quote": "Im Höhlenkataster Fränkische Alb mit über 3500 Höhlen auf einer Fläche von 6400 Quadratkilometern ist die Teufelshöhle als D 95 und die Kleine Teufelshöhle als D 148 registriert.",
+      "english": "In the cave register of the Franconian Alb, with over 3,500 caves over an area of 6,400 square kilometers, the Teufelshöhle is registered as D 95 and the Kleine Teufelshöhle as D 148."
+    },
+    {
+      "id": "s6",
+      "name": "Brennnesselbau",
+      "quote": "Mit diesem ist der Brennnesselbau verbunden, der zur Talseite hin einen ausgegrabenen Ausgang hat.",
+      "english": "Connected to this is the Brennnesselbau, which has an excavated exit towards the valley side."
+    },
+    {
+      "id": "s7",
+      "name": "Zankenhöhle",
+      "quote": "Der Brennnesselbau steht auch mit der Zankenhöhle in Verbindung.",
+      "english": "The Brennnesselbau is also connected to the Zankenhöhle."
+    },
+    {
+      "id": "s8",
+      "name": "Teufelsschlucht",
+      "quote": "Die südlich gelegene Teufelsschlucht war mit der Lehmhöhle verbunden, deren Eingang verstürzt ist.",
+      "english": "The Teufelsschlucht located to the south was connected to the Lehmhöhle, the entrance of which has collapsed."
+    }
+  ],
+  "days": [
+    {
+      "title": "Main Show Caves and Entrances",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Great Halls and Giant Formations",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Connected Systems and Southern Gorges",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

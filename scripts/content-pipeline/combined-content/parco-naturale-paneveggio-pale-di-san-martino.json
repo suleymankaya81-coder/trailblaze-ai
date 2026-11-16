@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Trentino South Tyrol",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Paneveggio-Pale di San Martino Natural Park"
+        "Foresta Demaniale di Paneveggio",
+        "Passo Rolle",
+        "Malga Juribello"
       ],
       "seo_title": "Parco naturale Paneveggio - Pale di San Martino Visit Guide"
     },
@@ -32,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco naturale Paneveggio - Pale di San Martino",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Forests and High Passes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Paneveggio-Pale di San Martino Natural Park",
-                "stop_id": "parco-naturale-paneveggio-pale-di-san-martino",
-                "detail": "The Paneveggio-Pale di San Martino Natural Park (Italian: Parco naturale Paneveggio-Pale di San Martino) is a nature reserve in Trentino, Italy. Established in 1967, it stretches over nearly 20,000 ha (49,000 acres) in the Dolomites (in the territory of seven municipalities, all in the Province of Trento), encompassing the Pale di San Martino massif, the Paneveggio forest, and the easternmost part of the Lagorai range, between the valleys of Fiemme, Fassa, Primiero, and Vanoi."
+                "name": "Foresta Demaniale di Paneveggio",
+                "stop_id": "parco-naturale-paneveggio-pale-di-san-martino--s1",
+                "detail": "To the north, defined by the slopes of Lagorai and those of the Cima Bocche group, the Travignolo stream valley hosts the Paneveggio State Forest, one of the most famous forest complexes in the Alps."
+              },
+              {
+                "name": "Passo Rolle",
+                "stop_id": "parco-naturale-paneveggio-pale-di-san-martino--s5",
+                "detail": "The formation is well exposed northwest of Paneveggio, along some bends of the road between San Martino di Castrozza and Passo Rolle, along the valley from Passo Valles to Falcade."
+              },
+              {
+                "name": "Malga Juribello",
+                "stop_id": "parco-naturale-paneveggio-pale-di-san-martino--s6",
+                "detail": "In the Park area the thicknesses of the sandstone layers are of limited power as are the outcrops of the Val Gardena sandstones. The main outcrops are on the southern slope of Passo Lusia, north of Malga Bocche, downstream of Malga Juribello."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale Paneveggio - Pale di San Martino before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Geological Wonders of the Valleys",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Val Canali",
+                "stop_id": "parco-naturale-paneveggio-pale-di-san-martino--s3",
+                "detail": "This formation has great variability, both horizontal and vertical with a thickness of a few hundred meters. It outcrops in Val Canali, but, above all, on the Costazza, Malga Juribello, Cima Valles and on the northern slope of Bellamonte."
+              },
+              {
+                "name": "Val Venegia",
+                "stop_id": "parco-naturale-paneveggio-pale-di-san-martino--s4",
+                "detail": "Sedimentary rocks outcrop on the orographic left of the Cismon stream and in Val Venegia, while magmatic (or igneous) and metamorphic rocks from the Permian outcrop in the eastern area of the Lagorai chain, a mountain massif consisting of quartz porphyry, at Passo Rolle, Passo Valles, Colle Margherita as far as Falcade."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco naturale Paneveggio - Pale di San Martino before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +109,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Paneveggio-Pale_di_San_Martino_Natural_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_Paneveggio_-_Pale_di_San_Martino"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:02:00.258925+00:00"
       }
     }
   }

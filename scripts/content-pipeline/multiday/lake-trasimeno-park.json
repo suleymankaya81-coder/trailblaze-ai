@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "lago Trasimeno",
+      "quote": "Il parco del Lago Trasimeno è un'area naturale protetta istituita con la legge regionale n. 9 del 3 marzo 1995, con l'obiettivo di proteggere e valorizzare un'area di altissimo valore naturalistico e storico-artistico qual è quella del lago Trasimeno e dei comuni del suo comprensorio.",
+      "english": "The Lake Trasimeno Park is a protected natural area established by regional law no. 9 of March 3, 1995, with the aim of protecting and enhancing an area of very high naturalistic and historical-artistic value such as that of Lake Trasimeno and the municipalities of its district."
+    },
+    {
+      "id": "s2",
+      "name": "Castiglione del Lago",
+      "quote": "Il parco è gestito da un Consorzio di cui fanno parte oltre alla Provincia di Perugia i Comuni di: Castiglione del Lago Magione Panicale Passignano sul Trasimeno Tuoro sul Trasimeno e anche gli altri Comuni facenti parte della Comunità Montana Monti del Trasimeno: Bettona Cannara Corciano Deruta Marsciano Paciano Piegaro Città della Pieve",
+      "english": "The park is managed by a Consortium which includes, in addition to the Province of Perugia, the Municipalities of: Castiglione del Lago Magione Panicale Passignano sul Trasimeno Tuoro sul Trasimeno and also the other Municipalities part of the Mountain Community of the Trasimeno Mountains: Bettona Cannara Corciano Deruta Marsciano Paciano Piegaro Città della Pieve"
+    },
+    {
+      "id": "s3",
+      "name": "Magione",
+      "quote": "Il parco è gestito da un Consorzio di cui fanno parte oltre alla Provincia di Perugia i Comuni di: Castiglione del Lago Magione Panicale Passignano sul Trasimeno Tuoro sul Trasimeno e anche gli altri Comuni facenti parte della Comunità Montana Monti del Trasimeno: Bettona Cannara Corciano Deruta Marsciano Paciano Piegaro Città della Pieve",
+      "english": "The park is managed by a Consortium which includes, in addition to the Province of Perugia, the Municipalities of: Castiglione del Lago Magione Panicale Passignano sul Trasimeno Tuoro sul Trasimeno and also the other Municipalities part of the Mountain Community of the Trasimeno Mountains: Bettona Cannara Corciano Deruta Marsciano Paciano Piegaro Città della Pieve"
+    },
+    {
+      "id": "s4",
+      "name": "Panicale",
+      "quote": "Il parco è gestito da un Consorzio di cui fanno parte oltre alla Provincia di Perugia i Comuni di: Castiglione del Lago Magione Panicale Passignano sul Trasimeno Tuoro sul Trasimeno e anche gli altri Comuni facenti parte della Comunità Montana Monti del Trasimeno: Bettona Cannara Corciano Deruta Marsciano Paciano Piegaro Città della Pieve",
+      "english": "The park is managed by a Consortium which includes, in addition to the Province of Perugia, the Municipalities of: Castiglione del Lago Magione Panicale Passignano sul Trasimeno Tuoro sul Trasimeno and also the other Municipalities part of the Mountain Community of the Trasimeno Mountains: Bettona Cannara Corciano Deruta Marsciano Paciano Piegaro Città della Pieve"
+    },
+    {
+      "id": "s5",
+      "name": "Passignano sul Trasimeno",
+      "quote": "Il parco è gestito da un Consorzio di cui fanno parte oltre alla Provincia di Perugia i Comuni di: Castiglione del Lago Magione Panicale Passignano sul Trasimeno Tuoro sul Trasimeno e anche gli altri Comuni facenti parte della Comunità Montana Monti del Trasimeno: Bettona Cannara Corciano Deruta Marsciano Paciano Piegaro Città della Pieve",
+      "english": "The park is managed by a Consortium which includes, in addition to the Province of Perugia, the Municipalities of: Castiglione del Lago Magione Panicale Passignano sul Trasimeno Tuoro sul Trasimeno and also the other Municipalities part of the Mountain Community of the Trasimeno Mountains: Bettona Cannara Corciano Deruta Marsciano Paciano Piegaro Città della Pieve"
+    },
+    {
+      "id": "s6",
+      "name": "Tuoro sul Trasimeno",
+      "quote": "Il parco è gestito da un Consorzio di cui fanno parte oltre alla Provincia di Perugia i Comuni di: Castiglione del Lago Magione Panicale Passignano sul Trasimeno Tuoro sul Trasimeno e anche gli altri Comuni facenti parte della Comunità Montana Monti del Trasimeno: Bettona Cannara Corciano Deruta Marsciano Paciano Piegaro Città della Pieve",
+      "english": "The park is managed by a Consortium which includes, in addition to the Province of Perugia, the Municipalities of: Castiglione del Lago Magione Panicale Passignano sul Trasimeno Tuoro sul Trasimeno and also the other Municipalities part of the Mountain Community of the Trasimeno Mountains: Bettona Cannara Corciano Deruta Marsciano Paciano Piegaro Città della Pieve"
+    },
+    {
+      "id": "s7",
+      "name": "Museo della Pesca",
+      "quote": "Museo della Pesca, su museodellapesca.it.",
+      "english": "Fishing Museum, on museodellapesca.it."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lakeside Villages and Museum",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Northern and Western Shores",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

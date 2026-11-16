@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "ninfeo di Punta Epitaffio",
+      "quote": "Fra gli ambienti di maggiore pregio, che oggi si trovano inabissati, vi è il ninfeo di Punta Epitaffio, triclinium con funzione di sala per banchetti risalente all'epoca dell'imperatore Claudio, le cui statue sono state trasferite all'interno del Museo archeologico dei Campi Flegrei dove l'ambiente è stato ricostruito.",
+      "english": "Among the most valuable environments, which today are submerged, there is the nymphaeum of Punta Epitaffio, a triclinium serving as a banquet hall dating back to the era of Emperor Claudius, whose statues have been moved inside the Archaeological Museum of the Phlegraean Fields where the room has been reconstructed."
+    },
+    {
+      "id": "s2",
+      "name": "Museo archeologico dei Campi Flegrei",
+      "quote": "Fra gli ambienti di maggiore pregio, che oggi si trovano inabissati, vi è il ninfeo di Punta Epitaffio, triclinium con funzione di sala per banchetti risalente all'epoca dell'imperatore Claudio, le cui statue sono state trasferite all'interno del Museo archeologico dei Campi Flegrei dove l'ambiente è stato ricostruito.",
+      "english": "Among the most valuable environments, which today are submerged, there is the nymphaeum of Punta Epitaffio, a triclinium serving as a banquet hall dating back to the era of Emperor Claudius, whose statues have been moved inside the Archaeological Museum of the Phlegraean Fields where the room has been reconstructed."
+    },
+    {
+      "id": "s3",
+      "name": "Lacus Baianus",
+      "quote": "Inoltre si trovano sommersi su tale costa i resti dei porti commerciali di Baia (Lacus Baianus) ed il Portus Julius.",
+      "english": "In addition, the remains of the commercial ports of Baia (Lacus Baianus) and the Portus Julius are found submerged on this coast."
+    },
+    {
+      "id": "s4",
+      "name": "Portus Julius",
+      "quote": "Inoltre si trovano sommersi su tale costa i resti dei porti commerciali di Baia (Lacus Baianus) ed il Portus Julius.",
+      "english": "In addition, the remains of the commercial ports of Baia (Lacus Baianus) and the Portus Julius are found submerged on this coast."
+    },
+    {
+      "id": "s5",
+      "name": "Capo Miseno",
+      "quote": "Più a nord aveva sede il porto di Capo Miseno sede storica della flotta imperiale romana.",
+      "english": "Further north was the port of Capo Miseno, the historic seat of the Roman imperial fleet."
+    },
+    {
+      "id": "s6",
+      "name": "Pausilypon",
+      "quote": "Intorno al primo secolo a.C. infatti l'intera zona costiera a nord di Napoli era una fiorentissima stazione climatica, resa alla moda anche dalla presenza di una villa imperiale, il Pausilypon appunto che dette il nome al Promontorio di Posillipo, costruita dal ricco liberto Publio Vedio Pollione.",
+      "english": "Around the first century BC, in fact, the entire coastal area north of Naples was a flourishing health resort, made fashionable also by the presence of an imperial villa, the Pausilypon precisely, which gave its name to the Promontory of Posillipo, built by the wealthy freedman Publius Vedius Pollio."
+    },
+    {
+      "id": "s7",
+      "name": "Promontorio di Posillipo",
+      "quote": "Intorno al primo secolo a.C. infatti l'intera zona costiera a nord di Napoli era una fiorentissima stazione climatica, resa alla moda anche dalla presenza di una villa imperiale, il Pausilypon appunto che dette il nome al Promontorio di Posillipo, costruita dal ricco liberto Publio Vedio Pollione.",
+      "english": "Around the first century BC, in fact, the entire coastal area north of Naples was a flourishing health resort, made fashionable also by the presence of an imperial villa, the Pausilypon precisely, which gave its name to the Promontory of Posillipo, built by the wealthy freedman Publius Vedius Pollio."
+    }
+  ],
+  "days": [
+    {
+      "title": "Submerged Ports and Imperial Villas",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Archeological Treasures and Naval History",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s5"
+      ]
+    }
+  ]
+}

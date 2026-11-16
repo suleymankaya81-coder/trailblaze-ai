@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Cascina Centro Parco",
+      "quote": "L'ente che gestisce l'area ha in quest'ultimo comune la sua sede legale, nella Cascina Centro Parco, cui si accede però da Bresso.",
+      "english": "The entity that manages the area has its legal headquarters in this last municipality, in the Cascina Centro Parco, which is however accessed from Bresso."
+    },
+    {
+      "id": "s2",
+      "name": "lago di Niguarda",
+      "quote": "Nel gennaio 2011, nel settore nord si sono aperti i cantieri per la costruzione del primo lago del parco, terminati poi nel 2015 con il nome di lago di Niguarda.",
+      "english": "In January 2011, in the northern sector, construction sites opened for the building of the park's first lake, completed in 2015 under the name Lake Niguarda."
+    },
+    {
+      "id": "s3",
+      "name": "villa di Alessandro Manzoni",
+      "quote": "All'interno del parco si trovano un complesso di scuole secondarie superiori: il liceo scientifico, linguistico e classico Casiraghi (Cinisello Balsamo), L'ITIS Cartesio (Istituto Tecnico Industriale) e l'IIS Eugenio Montale (Cinisello Balsamo); la villa di Alessandro Manzoni a Brusuglio, l'Ospedale Bassini (Cinisello Balsamo) e un aeroporto a uso turistico-civile (Bresso).",
+      "english": "Inside the park there is a complex of upper secondary schools: the Casiraghi scientific, linguistic and classical high school (Cinisello Balsamo), the ITIS Cartesio (Industrial Technical Institute) and the IIS Eugenio Montale (Cinisello Balsamo); Alessandro Manzoni's villa in Brusuglio, the Bassini Hospital (Cinisello Balsamo) and an airport for tourist-civil use (Bresso)."
+    },
+    {
+      "id": "s4",
+      "name": "montagnetta",
+      "quote": "È per la maggior parte della propria superficie pianeggiante; tuttavia, nell'area al confine tra Sesto San Giovanni e Bresso, a sud della passerella ciclopedonale sulla via Gian Carlo Clerici, sorge la cosiddetta montagnetta, formata nel secolo scorso da residui di lavorazione delle acciaierie e successivamente bonificata.",
+      "english": "It is flat for most of its surface; however, in the area on the border between Sesto San Giovanni and Bresso, south of the pedestrian and cycle bridge on via Gian Carlo Clerici, stands the so-called little mountain, formed in the last century by steel mill processing residues and subsequently reclaimed."
+    },
+    {
+      "id": "s5",
+      "name": "teatrino",
+      "quote": "Sulla montagnetta si trova una struttura in cemento e legno, denominata \"teatrino\" e utilizzata per varie manifestazioni.",
+      "english": "On the little mountain there is a concrete and wooden structure, called the \"little theater\" and used for various events."
+    },
+    {
+      "id": "s6",
+      "name": "velodromo",
+      "quote": "Nella zona a est della passerella ciclopedonale Foglia su via XX Settembre, a Bresso, è stato realizzato un anello di velocità per biciclette all'aperto (velodromo).",
+      "english": "In the area east of the Foglia pedestrian and cycle bridge on via XX Settembre, in Bresso, an outdoor bicycle speed ring (velodrome) was built."
+    },
+    {
+      "id": "s7",
+      "name": "Monumento al Deportato",
+      "quote": "Sulla collinetta raggiungibile dall'ingresso in via Giancarlo Clerici è collocato il Monumento al Deportato, un'opera scultorea del 1998 progettata dallo studio BBPR dell'architetto Lodovico Barbiano di Belgiojoso, ex deportato, e dell'architetto Alberico Barbiano di Belgiojoso, suo figlio.",
+      "english": "On the hillock reachable from the entrance in via Giancarlo Clerici is located the Monument to the Deportee, a 1998 sculptural work designed by the BBPR studio of the architect Lodovico Barbiano di Belgiojoso, a former deportee, and of the architect Alberico Barbiano di Belgiojoso, his son."
+    }
+  ],
+  "days": [
+    {
+      "title": "North and Cultural Circuit",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Hill and Sport Exploration",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

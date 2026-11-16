@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Haus der Natur",
+      "quote": "Die Verwaltung befindet sich im „Haus der Natur“, dem alten Bahnhof in Beuron, der Heimat des Naturparkvereins und des Naturschutzzentrums ist.",
+      "english": "The administration is located in the \"Haus der Natur\", the old station in Beuron, which is home to the Nature Park Association and the Nature Conservation Center."
+    },
+    {
+      "id": "s2",
+      "name": "Erzabtei Beuron",
+      "quote": "Die Ortschaft ist aus der vielbesuchten Erzabtei Beuron hervorgegangen.",
+      "english": "The village emerged from the much-visited Beuron Archabbey."
+    },
+    {
+      "id": "s3",
+      "name": "Knopfmacherfelsen",
+      "quote": "In diesem Durchbruchstal des noch schmalen Flusses wurden mächtige Kalkfelsen freigelegt: Einer davon ist der Knopfmacherfelsen bei Beuron.",
+      "english": "In this breakthrough valley of the still narrow river, mighty limestone cliffs were exposed: one of them is the Knopfmacherfelsen near Beuron."
+    },
+    {
+      "id": "s4",
+      "name": "Donauversickerungen in Immendingen",
+      "quote": "Rein geologisch als auch touristisch interessant, sind die Donauversickerungen in Immendingen – südlich von Fridingen.",
+      "english": "Geologically as well as touristically interesting are the Danube sinkholes in Immendingen – south of Fridingen."
+    },
+    {
+      "id": "s5",
+      "name": "Burg Wildenstein",
+      "quote": "Zu den zahlreichen erhaltenen Burgen und Schlössern zählen das Alte und Neue Schloss Mühlheim, das Fridinger Stadtschloss, Schloss Bronnen, Burg Wildenstein, Schloss Werenwag, Schloss Gutenstein, Hohenzollernschloss Sigmaringen, Schloss Bartelstein und das Schloss Scheer.",
+      "english": "The numerous preserved castles and palaces include the Old and New Mühlheim Castle, the Fridingen Town Palace, Bronnen Castle, Wildenstein Castle, Werenwag Castle, Gutenstein Castle, Sigmaringen Hohenzollern Castle, Bartelstein Castle, and Scheer Castle."
+    },
+    {
+      "id": "s6",
+      "name": "Burgruine Kallenberg",
+      "quote": "Die bekanntesten Ruinen sind in Tuttlingen die Burg Honberg, in Buchheim die Burgruine Kallenberg, die Ruine Schloss Hausen im Tal, Ruine Falkenstein, Ruine Dietfurt, Gebrochen Gutenstein.",
+      "english": "The most famous ruins are Honberg Castle in Tuttlingen, Kallenberg Castle ruins in Buchheim, the ruins of Hausen im Tal Castle, Falkenstein ruins, Dietfurt ruins, and Gebrochen Gutenstein."
+    },
+    {
+      "id": "s7",
+      "name": "Donauradweg",
+      "quote": "Parallel zur Donau verläuft der Donauradweg, der von Donaueschingen bis nach Wien, bzw. als EuroVelo-Route EV6 zum Schwarzen Meer führt.",
+      "english": "Parallel to the Danube runs the Danube Cycle Path, which leads from Donaueschingen to Vienna, or as the EuroVelo route EV6 to the Black Sea."
+    }
+  ],
+  "days": [
+    {
+      "title": "Beuron Abbey and Scenic Cliffs",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Geological Wonders and Cycling",
+      "stop_ids": [
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Castles and Historic Ruins",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "c0af702709905bdc8d0175903504a55a751576f71942a127bc5dfa1d84ce7bf7"
+}

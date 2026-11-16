@@ -1,0 +1,99 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Großherzog-Friedrich-Terrasse",
+      "quote": "Der höchste Punkt ist laut amtlichen Karten bei der Großherzog-Friedrich-Terrasse (historisches Wasserreservoir auf dem Vogelherd).",
+      "english": "The highest point according to official maps is at the Grand Duke Friedrich Terrace (historic water reservoir on the Vogelherd)."
+    },
+    {
+      "id": "s2",
+      "name": "Arboretum der Insel Mainau",
+      "quote": "Herzstück der „Blumeninsel“ ist neben den historischen Gebäuden das von Großherzog Friedrich I. ab 1856 angelegte parkähnliche Arboretum der Insel Mainau mit seinen 500 verschiedenen Arten von zum Teil seltenen und wertvollen Laub- und Nadelgehölzen.",
+      "english": "The heart of the \"Flower Island,\" alongside the historical buildings, is the park-like Arboretum of Mainau Island, established by Grand Duke Friedrich I from 1856, featuring 500 different species of partly rare and valuable deciduous and coniferous trees."
+    },
+    {
+      "id": "s3",
+      "name": "Palmenhaus",
+      "quote": "Im Frühjahr Ende März / Anfang April beginnt auf der Mainau das Blumenjahr im Palmenhaus mit einer großen Orchideenschau.",
+      "english": "In spring, at the end of March / beginning of April, the floral year begins on Mainau in the Palm House with a large orchid show."
+    },
+    {
+      "id": "s4",
+      "name": "Frühlingsallee",
+      "quote": "Hierzu wurden im östlichen Teil der Insel an der sogenannten „Frühlingsallee“ parallel zum Weg Tausende von Tulpen-, Narzissen- und Hyazinthenzwiebeln gepflanzt.",
+      "english": "For this purpose, thousands of tulip, daffodil, and hyacinth bulbs were planted in the eastern part of the island along the so-called \"Spring Avenue\" parallel to the path."
+    },
+    {
+      "id": "s5",
+      "name": "italienische Rosengarten",
+      "quote": "Der sogenannte „italienische Rosengarten“ ist eine streng geometrische Anlage mit Pergolen, Skulpturen und Brunnen.",
+      "english": "The so-called \"Italian Rose Garden\" is a strictly geometric complex with pergolas, sculptures, and fountains."
+    },
+    {
+      "id": "s6",
+      "name": "Schlossterrasse",
+      "quote": "Eine Barocktreppe führt hinauf zur aussichtsreichen Schlossterrasse.",
+      "english": "A baroque staircase leads up to the panoramic Castle Terrace."
+    },
+    {
+      "id": "s7",
+      "name": "Mediterran-Terrassen",
+      "quote": "Die „Frühlingsallee“ führt zu den „Mediterran-Terrassen“ mit ihren exotischen Kübelpflanzen, wo im Sommer Palmengewächse, Agaven, Kakteen und Bougainvilleen gezeigt werden.",
+      "english": "The \"Spring Avenue\" leads to the \"Mediterranean Terraces\" with their exotic potted plants, where palm plants, agaves, cacti, and bougainvillea are shown in summer."
+    },
+    {
+      "id": "s8",
+      "name": "Ufergarten",
+      "quote": "Im östlich anschließenden Ufergarten wachsen Frühlings- und Sommerblumen, darunter eine Sammlung verschiedener Fuchsienarten.",
+      "english": "Spring and summer flowers grow in the adjacent Shore Garden to the east, including a collection of various fuchsia species."
+    },
+    {
+      "id": "s9",
+      "name": "Schmetterlingshaus",
+      "quote": "Im ganzjährig geöffneten Schmetterlingshaus auf der Insel, mit etwa 1000 Quadratmeter das zweitgrößte seiner Art in Deutschland, können Besucher zwischen 25 °C und 30 °C Wärme und 80 bis 90 Prozent Luftfeuchtigkeit durch eine tropisch anmutende Umgebung mit Wasserfällen und exotischen Gewächsen gehen.",
+      "english": "In the Butterfly House on the island, which is open all year round and at approximately 1000 square meters is the second largest of its kind in Germany, visitors can walk through a tropical-looking environment with waterfalls and exotic plants in temperatures between 25 °C and 30 °C and 80 to 90 percent humidity."
+    },
+    {
+      "id": "s10",
+      "name": "Mainauer Kinderland „Wasserwelt“",
+      "quote": "Für Kinder gibt es das rund 1100 Quadratmeter große Mainauer Kinderland „Wasserwelt“, einen Spielplatz mit einem 60 Zentimeter tiefen Wasserbecken, das von Flusssteinen mit einem Gesamtgewicht von rund 130 Tonnen eingefasst wird.",
+      "english": "For children, there is the approximately 1100 square meter Mainau Children's Land \"Water World,\" a playground with a 60-centimeter-deep water basin bordered by river stones with a total weight of around 130 tons."
+    },
+    {
+      "id": "s11",
+      "name": "Deutschordenschloss",
+      "quote": "Das Deutschordenschloss wurde auf dem Burgstall der im 18. Jahrhundert abgebrochenen Burg Mainau nach den Entwürfen von Johann Caspar Bagnato (Giovanni Gaspare Bagnato) und unter seiner Bauleitung 1739 begonnen und nach siebenjähriger Bauzeit vollendet.",
+      "english": "The Teutonic Order Castle was begun in 1739 on the site of Mainau Castle, which was demolished in the 18th century, according to the designs of Johann Caspar Bagnato (Giovanni Gaspare Bagnato) and under his construction management, and completed after seven years of construction."
+    }
+  ],
+  "days": [
+    {
+      "title": "Historical Gardens and Panoramic Terraces",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s6",
+        "s11"
+      ]
+    },
+    {
+      "title": "Floral Avenues and Mediterranean Displays",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s7"
+      ]
+    },
+    {
+      "title": "Shoreline Attractions and Tropical Nature",
+      "stop_ids": [
+        "s8",
+        "s9",
+        "s10"
+      ]
+    }
+  ],
+  "_text_sha": "3a1454377568dbbb2df5fe9bdc8d284cac657f3740597a4a092d05bf5c0412ad"
+}

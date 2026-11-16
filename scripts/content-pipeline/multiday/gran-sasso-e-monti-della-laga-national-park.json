@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Campo Imperatore",
+      "quote": "Nella zona alta e nella piana di Campo Imperatore il terreno presenta invece solo pascoli.",
+      "english": "In the high area and in the plain of Campo Imperatore, the terrain instead features only pastures."
+    },
+    {
+      "id": "s2",
+      "name": "Pizzo Cefalone",
+      "quote": "Nella zona alta e nella piana di Campo Imperatore il terreno presenta invece solo pascoli.",
+      "english": "In the upper zone and in the plain of Campo Imperatore, the terrain instead presents only pastures."
+    },
+    {
+      "id": "s3",
+      "name": "Fonte Vetica",
+      "quote": "Più in alto si trovano soltanto pascoli e solo nella zona di Fonte Vetica troviamo un piccolo tratto con alcuni abeti e betulle.",
+      "english": "Higher up there are only pastures and only in the area of Fonte Vetica do we find a small stretch with some firs and birches."
+    },
+    {
+      "id": "s4",
+      "name": "Lago di Campotosto",
+      "quote": "Sono stati avvistati dagli abitanti del luogo anche diversi esemplari di airone nei pressi del lago di Campotosto e nel comune di Crognaleto.",
+      "english": "Several specimens of heron have also been spotted by local inhabitants near Lake Campotosto and in the municipality of Crognaleto."
+    },
+    {
+      "id": "s5",
+      "name": "Passo delle Capannelle",
+      "quote": "Nella zona più a nord del Gran Sasso, versante teramano, troviamo principalmente faggeti, con boschi sterminati che rendono la zona davvero suggestiva, soprattutto nella zona di Pietracamela, paesino situato ai piedi del Corno Piccolo, raggiungibile esclusivamente tramite la statale 80, se provenienti da Teramo, ovvero dal passo delle Capannelle provenendo dall'Aquila.",
+      "english": "In the northernmost area of the Gran Sasso, on the Teramo side, we find mainly beech forests, with endless woods that make the area truly suggestive, especially in the area of Pietracamela, a small village located at the foot of Corno Piccolo, reachable exclusively via the state road 80 if coming from Teramo, or from the Capannelle pass coming from L'Aquila."
+    },
+    {
+      "id": "s6",
+      "name": "Corno Piccolo",
+      "quote": "Nella zona più a nord del Gran Sasso, versante teramano, troviamo principalmente faggeti, con boschi sterminati che rendono la zona davvero suggestiva, soprattutto nella zona di Pietracamela, paesino situato ai piedi del Corno Piccolo, raggiungibile esclusivamente tramite la statale 80, se provenienti da Teramo, ovvero dal passo delle Capannelle provenendo dall'Aquila.",
+      "english": "In the northernmost area of the Gran Sasso, on the Teramo side, we find mainly beech forests, with endless woods that make the area truly suggestive, especially in the area of Pietracamela, a small village located at the foot of Corno Piccolo, reachable exclusively via the state road 80 if coming from Teramo, or from the Capannelle pass coming from L'Aquila."
+    },
+    {
+      "id": "s7",
+      "name": "Pietracamela",
+      "quote": "Nella zona più a nord del Gran Sasso, versante teramano, troviamo principalmente faggeti, con boschi sterminati che rendono la zona davvero suggestiva, soprattutto nella zona di Pietracamela, paesino situato ai piedi del Corno Piccolo, raggiungibile esclusivamente tramite la statale 80, se provenienti da Teramo, ovvero dal passo delle Capannelle provenendo dall'Aquila.",
+      "english": "In the northernmost area of the Gran Sasso, on the Teramo side, we find mainly beech forests, with endless woods that make the area truly suggestive, especially in the area of Pietracamela, a small village located at the foot of Corno Piccolo, reachable exclusively via the state road 80 if coming from Teramo, or from the Capannelle pass coming from L'Aquila."
+    },
+    {
+      "id": "s8",
+      "name": "Rocca Calascio",
+      "quote": "Campo Imperatore, zona dell'alta valle dell'Aterno, il cui cuore è tra Assergi e Rocca Calascio.",
+      "english": "Campo Imperatore, area of the upper Aterno valley, whose heart is between Assergi and Rocca Calascio."
+    },
+    {
+      "id": "s9",
+      "name": "Valle del Tirino",
+      "quote": "Valle del Tirino, prende il nome dal fiume che attraversa i comuni di Capestrano, Bussi sul Tirino e Ofena.",
+      "english": "Valle del Tirino takes its name from the river that flows through the municipalities of Capestrano, Bussi sul Tirino and Ofena."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Plateaus and Southern Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s8"
+      ]
+    },
+    {
+      "title": "Northern Forests and Peaks",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Lakes and Southern Valleys",
+      "stop_ids": [
+        "s4",
+        "s9"
+      ]
+    }
+  ]
+}

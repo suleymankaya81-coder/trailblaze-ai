@@ -1,0 +1,91 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Sass de Putia",
+      "quote": "Sopra ad esso si è formato un deposito di arenaria, che affiora e risulta ammirabile nei pressi del Sass de Putia.",
+      "english": "On top of it, a sandstone deposit formed, which surfaces and can be admired near the Sass de Putia."
+    },
+    {
+      "id": "s2",
+      "name": "Furchetta",
+      "quote": "A sud ovest il gruppo delle Odle con il sottogruppo di Rasciesa, dove si trovano le cime più alte come la Furchetta e il Sass Rigais, entrambe di 3.025 m.",
+      "english": "To the southwest is the Odle group with the Rasciesa subgroup, where the highest peaks like Furchetta and Sass Rigais are located, both at 3,025 m."
+    },
+    {
+      "id": "s3",
+      "name": "Sass Rigais",
+      "quote": "A sud ovest il gruppo delle Odle con il sottogruppo di Rasciesa, dove si trovano le cime più alte come la Furchetta e il Sass Rigais, entrambe di 3.025 m.",
+      "english": "To the southwest is the Odle group with the Rasciesa subgroup, where the highest peaks like Furchetta and Sass Rigais are located, both at 3,025 m."
+    },
+    {
+      "id": "s4",
+      "name": "Piz de Puez",
+      "quote": "A sud est si trova invece il gruppo del Puez, a sua volta suddiviso col gruppo dello Stevìa, i sottogruppi Sassongher, Gran Cir-Vallunga, dove la cima più alta è il Piz de Puez (2.913 m).",
+      "english": "To the southeast lies the Puez group, in turn divided with the Stevìa group, the Sassongher and Gran Cir-Vallunga subgroups, where the highest peak is Piz de Puez (2,913 m)."
+    },
+    {
+      "id": "s5",
+      "name": "Alta via n. 2",
+      "quote": "Il parco è attraversato da nord a sud dall'Alta via n. 2.",
+      "english": "The park is crossed from north to south by the Alta via n. 2."
+    },
+    {
+      "id": "s6",
+      "name": "Vallunga",
+      "quote": "Rimarchevole è anche il bosco rado della Vallunga, costituito da abeti rossi, larici e pini cembri.",
+      "english": "The sparse woodland of Vallunga, consisting of spruce, larch, and stone pine, is also remarkable."
+    },
+    {
+      "id": "s7",
+      "name": "Lago di Campaccio",
+      "quote": "Lago di Campaccio",
+      "english": "Campaccio Lake"
+    },
+    {
+      "id": "s8",
+      "name": "via delle Odle",
+      "quote": "Il gruppo è meta di molti escursionisti ed alpinisti, perché offre dalle vie ferrate alle scalate di modesta, media ed estrema difficoltà, oltre a passeggiate escursionistiche di particolare interesse, come ad esempio la \"via delle Odle\" (in tedesco Adolf Munekl-Weg), il sentiero che passa alla base settentrionale del gruppo delle Odle.",
+      "english": "The group is a destination for many hikers and climbers because it offers everything from via ferratas to climbs of modest, medium, and extreme difficulty, as well as hiking walks of particular interest, such as the \"via delle Odle\" (in German Adolf Munekl-Weg), the path that passes the northern base of the Odle group."
+    },
+    {
+      "id": "s9",
+      "name": "centro visite del parco",
+      "quote": "Il centro visite del parco ha sede a Santa Maddalena.",
+      "english": "The park's visitor center is located in Santa Maddalena."
+    },
+    {
+      "id": "s10",
+      "name": "sentiero natura",
+      "quote": "All'interno del parco, nei pressi della malga Zannes c'è uno speciale sentiero, il sentiero natura, percorribile anche dai disabili in sedia a rotelle.",
+      "english": "Inside the park, near the Zannes hut, there is a special trail, the nature trail, which is also accessible to the disabled in wheelchairs."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Peaks and Visitor Discovery",
+      "stop_ids": [
+        "s1",
+        "s9",
+        "s10"
+      ]
+    },
+    {
+      "title": "The Odle Group and High Trails",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s5",
+        "s8"
+      ]
+    },
+    {
+      "title": "Puez Heights and Woodland Valleys",
+      "stop_ids": [
+        "s4",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

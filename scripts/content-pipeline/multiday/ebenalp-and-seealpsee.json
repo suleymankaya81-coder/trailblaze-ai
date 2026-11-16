@@ -1,0 +1,61 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Seealpsee",
+      "quote": "Der Seealpsee ist ein auf 1142 m ü. M. liegender See im Alpsteingebiet in der Schweiz und gehört zum Kanton Appenzell Innerrhoden.",
+      "english": "The Seealpsee is a lake at 1142 m above sea level in the Alpstein area in Switzerland and belongs to the canton of Appenzell Innerrhoden."
+    },
+    {
+      "id": "s2",
+      "name": "Wasserauen",
+      "quote": "Der Seealpsee ist in etwa 60 Minuten zu Fuss von Wasserauen, der Endhaltestelle der Appenzeller Bahnen, auf einem teils steilen, aber grossenteils asphaltierten Weg zu erreichen.",
+      "english": "The Seealpsee can be reached in about 60 minutes on foot from Wasserauen, the terminus of the Appenzell Railways, on a partly steep but largely paved path."
+    },
+    {
+      "id": "s3",
+      "name": "Hüttentobel",
+      "quote": "Ein nichtasphaltierter, etwas längerer und etwas weniger steiler Wanderweg führt von Wasserauen aufwärts über die südöstliche Talseite (Hüttentobel) zum Seealpsee.",
+      "english": "An unpaved, somewhat longer and slightly less steep hiking trail leads from Wasserauen upwards via the southeastern side of the valley (Hüttentobel) to Seealpsee."
+    },
+    {
+      "id": "s4",
+      "name": "Ebenalp",
+      "quote": "Ein sehr steiler, jedoch schöner Weg führt abwärts von der Ebenalp durch eine prähistorische Höhle, vorbei am Wildkirchli zum Gasthaus Aescher, das unter einem steilen Felsabsturz an den Fels gebaut ist; weiter führt der Weg hinunter zum Seealpsee.",
+      "english": "A very steep but beautiful path leads down from the Ebenalp through a prehistoric cave, past the Wildkirchli to the Aescher guesthouse, which is built against the rock under a steep precipice; the path continues down to Seealpsee."
+    },
+    {
+      "id": "s5",
+      "name": "Wildkirchli",
+      "quote": "Ein sehr steiler, jedoch schöner Weg führt abwärts von der Ebenalp durch eine prähistorische Höhle, vorbei am Wildkirchli zum Gasthaus Aescher, das unter einem steilen Felsabsturz an den Fels gebaut ist; weiter führt der Weg hinunter zum Seealpsee.",
+      "english": "A very steep but beautiful path leads down from the Ebenalp through a prehistoric cave, past the Wildkirchli to the Aescher guesthouse, which is built against the rock under a steep precipice; the path continues down to Seealpsee."
+    },
+    {
+      "id": "s6",
+      "name": "Aescher",
+      "quote": "Der steile Bergweg zwischen dem Seealpsee und dem Aescher verläuft grösstenteils in einem bewaldeten Gebiet.",
+      "english": "The steep mountain path between Seealpsee and the Aescher runs mostly through a wooded area."
+    },
+    {
+      "id": "s7",
+      "name": "Säntis",
+      "quote": "Die Aussicht über den Seealpsee in Richtung Säntis wird auf Flaschen und Dosen der Appenzeller Biermarke Quöllfrisch dargestellt.",
+      "english": "The view over the Seealpsee towards Säntis is depicted on bottles and cans of the Appenzell beer brand Quöllfrisch."
+    }
+  ],
+  "days": [
+    {
+      "title": "Ebenalp Descent and Seealpsee View",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "_text_sha": "1e33a560e47b63c3295173073cdda6e9d2aa1c2ac83e823dd4a160b576c7bacc"
+}

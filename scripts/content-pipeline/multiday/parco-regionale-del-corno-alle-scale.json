@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Corno alle Scale",
+      "quote": "Occupa una superficie di 4974 ha sul Corno alle Scale nella provincia di Bologna.",
+      "english": "It occupies an area of 4974 ha on Corno alle Scale in the province of Bologna."
+    },
+    {
+      "id": "s2",
+      "name": "Dardagna",
+      "quote": "Nelle acque del Dardagna, che scorre lungo il parco, si trovano numerose varietà di pesci tipici di acque pulite e fredde come la trota fario, il salmerino ed il vairone.",
+      "english": "In the waters of the Dardagna, which flows along the park, there are numerous varieties of fish typical of clean and cold waters such as brown trout, brook trout and minnow."
+    },
+    {
+      "id": "s3",
+      "name": "Lago Scaffaiolo",
+      "quote": "Lago Scaffaiolo",
+      "english": "Scaffaiolo Lake"
+    },
+    {
+      "id": "s4",
+      "name": "Cascate del Dardagna",
+      "quote": "Cascate del Dardagna",
+      "english": "Dardagna Waterfalls"
+    },
+    {
+      "id": "s5",
+      "name": "Centro visite di Pian d'Ivo",
+      "quote": "Centro visite di Pian d'Ivo, in località Madonna dell'Acero",
+      "english": "Pian d'Ivo visitor centre, in the locality of Madonna dell'Acero"
+    },
+    {
+      "id": "s6",
+      "name": "Monte Grande",
+      "quote": "Monte Grande",
+      "english": "Mount Grande"
+    },
+    {
+      "id": "s7",
+      "name": "Monte Belvedere",
+      "quote": "Monte Belvedere",
+      "english": "Mount Belvedere"
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Mountain Lakes",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "Riverside Trails and Waterfalls",
+      "stop_ids": [
+        "s2",
+        "s4"
+      ]
+    },
+    {
+      "title": "Visitor Centres and Panorama",
+      "stop_ids": [
+        "s5",
+        "s7"
+      ]
+    }
+  ]
+}

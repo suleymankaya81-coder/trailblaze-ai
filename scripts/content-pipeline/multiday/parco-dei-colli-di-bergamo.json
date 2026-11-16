@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "monte Canto Alto",
+      "quote": "È sovrastata dal monte Canto Alto (1146 m) e arriva fino alle colline della città di Bergamo.",
+      "english": "It is dominated by Mount Canto Alto (1146 m) and reaches as far as the hills of the city of Bergamo."
+    },
+    {
+      "id": "s2",
+      "name": "città Alta",
+      "quote": "L'area, estesa per 4700 e che comprende la zona storica di città Alta e delle colline da Bergamo, presenta numerosi terrazzamenti con orti, vigneti e prati.",
+      "english": "The area, extending over 4700 [hectares] and including the historic area of the Upper City and the Bergamo hills, features numerous terraces with vegetable gardens, vineyards, and meadows."
+    },
+    {
+      "id": "s3",
+      "name": "orto botanico",
+      "quote": "Il parco è considerato il polmone verde della città dove vi è la presenza di un orto botanico con un percorso didattico.",
+      "english": "The park is considered the green lung of the city where there is the presence of a botanical garden with an educational trail."
+    },
+    {
+      "id": "s4",
+      "name": "Ex convento di Santa Maria in Valmarina",
+      "quote": "Sede direzionale del parco si trova nell'Ex convento di Santa Maria in Valmarina.",
+      "english": "The administrative headquarters of the park is located in the Former Convent of Santa Maria in Valmarina."
+    },
+    {
+      "id": "s5",
+      "name": "Parco Agricolo Ecologico Madonna dei Campi",
+      "quote": "L'inclusione alla area protetta del PLIS ‘Parco Agricolo Ecologico Madonna dei Campi’, nei quartieri di Grumello del Piano e Colognola, ha aggiunto al Parco dei Colli 257 ettari e ha creato una cintura verde a sud della città di Bergamo, salvaguardando un'area rimasta ancora priva di costruzioni in un contesto invece fortemente urbanizzato.",
+      "english": "The inclusion into the protected area of the PLIS ‘Madonna dei Campi Ecological Agricultural Park’, in the neighborhoods of Grumello del Piano and Colognola, added 257 hectares to the Parco dei Colli and created a green belt south of the city of Bergamo, safeguarding an area that had remained without buildings in an otherwise heavily urbanized context."
+    },
+    {
+      "id": "s6",
+      "name": "Orto botanico Lorenzo Rota",
+      "quote": "Orto botanico Lorenzo Rota",
+      "english": "Lorenzo Rota Botanical Garden"
+    },
+    {
+      "id": "s7",
+      "name": "Chiesa della Natività della Beata Vergine Maria",
+      "quote": "Chiesa della Natività della Beata Vergine Maria (Bergamo)",
+      "english": "Church of the Nativity of the Blessed Virgin Mary (Bergamo)"
+    }
+  ],
+  "days": [
+    {
+      "title": "Historic Hills and Botanical Gardens",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Peaks, Convents and Agricultural Belts",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5"
+      ]
+    }
+  ]
+}

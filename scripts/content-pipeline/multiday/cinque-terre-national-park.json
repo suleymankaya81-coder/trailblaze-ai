@@ -1,0 +1,91 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Riomaggiore",
+      "quote": "Il parco ha sede a Riomaggiore.",
+      "english": "The park is headquartered in Riomaggiore."
+    },
+    {
+      "id": "s2",
+      "name": "Manarola",
+      "quote": "Proseguendo sulla \"Litoranea\" si incontra invece più avanti lo svincolo che scende alla frazione di Manarola.",
+      "english": "Continuing on the \"Litoranea\" road, you will later find the junction that descends to the hamlet of Manarola."
+    },
+    {
+      "id": "s3",
+      "name": "Corniglia",
+      "quote": "Non essendo mai stato portato a compimento il tratto centrale della \"Litoranea\", per raggiungere i borghi di Vernazza e Corniglia, sia che si provenga da Monterosso sia che si provenga da Riomaggiore, occorre servirsi della stretta e tortuosa strada detta \"dei Santuari\" (SP 38) e la SP 51.",
+      "english": "Since the central section of the \"Litoranea\" was never completed, to reach the villages of Vernazza and Corniglia, whether coming from Monterosso or Riomaggiore, it is necessary to use the narrow and winding road known as \"dei Santuari\" (SP 38) and the SP 51."
+    },
+    {
+      "id": "s4",
+      "name": "Vernazza",
+      "quote": "Tutte le località delle Cinque Terre sono dotate di singole stazioni e fermate ferroviarie lungo la tratta Genova-Pisa: Monterosso, Vernazza, Corniglia, Manarola, Riomaggiore.",
+      "english": "All the locations of the Cinque Terre are equipped with individual railway stations and stops along the Genoa-Pisa route: Monterosso, Vernazza, Corniglia, Manarola, Riomaggiore."
+    },
+    {
+      "id": "s5",
+      "name": "Monterosso al Mare",
+      "quote": "Da nord per arrivare a Monterosso al Mare occorre invece uscire al casello di Carrodano - Levanto sull'autostrada A12 e proseguire quindi sulla strada provinciale 566 dir di Val di Vara in direzione di Levanto e quindi Monterosso.",
+      "english": "From the north, to arrive at Monterosso al Mare, it is instead necessary to exit at the Carrodano - Levanto toll booth on the A12 motorway and then continue on the provincial road 566 dir of Val di Vara towards Levanto and then Monterosso."
+    },
+    {
+      "id": "s6",
+      "name": "Prevo",
+      "quote": "Il punto più alto è situato a Prevo, minuscola frazione di Vernazza, a 208 m. s.l.m..",
+      "english": "The highest point is located at Prevo, a tiny hamlet of Vernazza, at 208 m above sea level."
+    },
+    {
+      "id": "s7",
+      "name": "Sentiero Azzurro",
+      "quote": "Il parco è attraversato, da Riomaggiore a Monterosso al Mare, dal Sentiero Azzurro.",
+      "english": "The park is crossed, from Riomaggiore to Monterosso al Mare, by the Blue Path."
+    },
+    {
+      "id": "s8",
+      "name": "Punta Mesco",
+      "quote": "L'Area marina protetta Cinque Terre è stata istituita con decreto dell'allora Ministero dell'ambiente il 12 dicembre 1997 nell'area marina compresa tra Punta Mesco a ovest e Punta di Montenero a est.",
+      "english": "The Cinque Terre Protected Marine Area was established by decree of the then Ministry of the Environment on December 12, 1997, in the marine area between Punta Mesco to the west and Punta di Montenero to the east."
+    },
+    {
+      "id": "s9",
+      "name": "Punta di Montenero",
+      "quote": "L'Area marina protetta Cinque Terre è stata istituita nell'area marina compresa tra Punta Mesco a ovest e Punta di Montenero a est.",
+      "english": "The Cinque Terre Protected Marine Area was established in the marine area between Punta Mesco to the west and Punta di Montenero to the east."
+    },
+    {
+      "id": "s10",
+      "name": "Via dell'Amore",
+      "quote": "Vi è poi il sentiero costiero numero SVA, conosciuto come sentiero Verde Azzurro (592), il quale connette Riomaggiore a Monterosso attraversando tutti i borghi delle Cinque Terre e assumendo nel tratto tra Riomaggiore e Manarola le sembianze della celebre Via dell'Amore.",
+      "english": "Then there is the coastal path number SVA, known as the Green Blue path (592), which connects Riomaggiore to Monterosso crossing all the villages of the Cinque Terre and taking on the appearance of the famous Way of Love in the stretch between Riomaggiore and Manarola."
+    }
+  ],
+  "days": [
+    {
+      "title": "Southern Villages and the Way of Love",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s9",
+        "s10"
+      ]
+    },
+    {
+      "title": "Central Heights and Coastal Trails",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Northern Coastline",
+      "stop_ids": [
+        "s5",
+        "s8"
+      ]
+    }
+  ]
+}

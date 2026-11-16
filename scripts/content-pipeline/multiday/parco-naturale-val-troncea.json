@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Laval",
+      "quote": "L'escursione altimetrica è compresa tra i 1.670 m s.l.m. di Laval e i 3.280 m s.l.m.",
+      "english": "The altimetric excursion is between 1,670 m a.s.l. in Laval and 3,280 m a.s.l."
+    },
+    {
+      "id": "s2",
+      "name": "Punta Rognosa di Sestriere",
+      "quote": "L'altezza massima è raggiunta dalla Punta Rognosa di Sestriere che è anche la vetta più elevata di tutta la Val Chisone.",
+      "english": "The maximum height is reached by Punta Rognosa di Sestriere, which is also the highest peak in the entire Val Chisone."
+    },
+    {
+      "id": "s3",
+      "name": "monte Banchetta",
+      "quote": "Nel parco è vietato accendere fuochi al di fuori delle numerose aree attrezzate di fondovalle e i cani, ad eccezione della riserva integrale del monte Banchetta e del vallone del Beth, possono essere condotti ma solo e sempre al guinzaglio per non arrecare disturbo e stress alla fauna protetta.",
+      "english": "In the park it is forbidden to light fires outside the numerous equipped areas on the valley floor and dogs, with the exception of the integral reserve of mount Banchetta and the Beth valley, may be brought but only and always on a leash so as not to cause disturbance and stress to the protected fauna."
+    },
+    {
+      "id": "s4",
+      "name": "vallone del Beth",
+      "quote": "Tra le mete più impegnative ma comunque sempre escursionistiche vi sono invece i monti e colli che circondano la valle: Monte Barifreddo e Appenna, Monte Banchetta, monte Morefreddo, Colle dell'Arcano e monte Ruetas, Colle del Beth (con le miniere di calcopirite abbandonate da cui si estraeva il rame), Punta del Beth e Ghinivert.",
+      "english": "Among the more challenging but still hiking destinations are instead the mountains and passes that surround the valley: Monte Barifreddo and Appenna, Monte Banchetta, monte Morefreddo, Colle dell'Arcano and monte Ruetas, Colle del Beth (with the abandoned chalcopyrite mines from which copper was extracted), Punta del Beth and Ghinivert."
+    },
+    {
+      "id": "s5",
+      "name": "Alpe Mei",
+      "quote": "L'alpe Mei è un alpeggio abitato solamente nel periodo estivo e collocato al fondo della valle a 2.045 m di quota.",
+      "english": "Alpe Mei is a mountain pasture inhabited only in the summer period and located at the bottom of the valley at an altitude of 2,045 m."
+    },
+    {
+      "id": "s6",
+      "name": "Rifugio Troncea",
+      "quote": "Rifugio Troncea, situato nella borgata di Troncea a 1.915 m",
+      "english": "Rifugio Troncea, located in the hamlet of Troncea at 1,915 m"
+    },
+    {
+      "id": "s7",
+      "name": "Mulino di Laval",
+      "quote": "Rifugio escursionistico Mulino di Laval, situato a 1.670 m all'imbocco della valle",
+      "english": "Hiking refuge Mulino di Laval, located at 1,670 m at the entrance of the valley"
+    }
+  ],
+  "days": [
+    {
+      "title": "Lower Valley Hamlets and Peaks",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s2"
+      ]
+    },
+    {
+      "title": "High Pastures and Refuges",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Restricted Reserves and Mining History",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

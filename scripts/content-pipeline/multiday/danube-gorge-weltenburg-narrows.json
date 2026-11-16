@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kloster Weltenburg",
+      "quote": "Die Weltenburger Enge, auch Donaudurchbruch bei Weltenburg genannt, ist eine etwa 5,5 Kilometer lange Engstelle des Donautals zwischen Kelheim und dem Kloster Weltenburg.",
+      "english": "The Weltenburger Enge, also called the Danube Gorge at Weltenburg, is an approximately 5.5 kilometer long narrow point of the Danube valley between Kelheim and the Weltenburg Abbey."
+    },
+    {
+      "id": "s2",
+      "name": "Stille Wand",
+      "quote": "Zwischen der sogenannten Stillen Wand und der Langen Wand verengt sich der Strom bis auf 110 Meter und erreicht eine Wassertiefe von 20 Meter.",
+      "english": "Between the so-called Stille Wand and the Lange Wand, the current narrows to 110 meters and reaches a water depth of 20 meters."
+    },
+    {
+      "id": "s3",
+      "name": "Lange Wand",
+      "quote": "Zwischen der sogenannten Stillen Wand und der Langen Wand verengt sich der Strom bis auf 110 Meter und erreicht eine Wassertiefe von 20 Meter.",
+      "english": "Between the so-called Stille Wand and the Lange Wand, the current narrows to 110 meters and reaches a water depth of 20 meters."
+    },
+    {
+      "id": "s4",
+      "name": "Bienenhaus",
+      "quote": "Die Kalkstein-Formationen tragen phantasiereiche Namen wie Die drei feindlichen Brüder, Räuberfelsen, Kuchelfelsen, Versteinerte Jungfrau, Bayerischer Löwe, Bischofsmütze, Zwei Sich-Küssende, Römerfelsen, Peter und Paul, Bienenhaus (ein Stein mit Höhlungen wie Bienenwaben), Napoleons Reisekoffer (den er nach einer Sage beim Rückzug vergessen haben soll).",
+      "english": "The limestone formations bear imaginative names such as The Three Hostile Brothers, Robber's Rock, Kuchel Rock, Petrified Virgin, Bavarian Lion, Bishop's Mitre, Two Kissing, Roman Rock, Peter and Paul, Beehouse (a stone with cavities like honeycombs), Napoleon's Suitcase (which, according to a legend, he is said to have forgotten during the retreat)."
+    },
+    {
+      "id": "s5",
+      "name": "Napoleons Reisekoffer",
+      "quote": "Die Kalkstein-Formationen tragen phantasiereiche Namen wie Die drei feindlichen Brüder, Räuberfelsen, Kuchelfelsen, Versteinerte Jungfrau, Bayerischer Löwe, Bischofsmütze, Zwei Sich-Küssende, Römerfelsen, Peter und Paul, Bienenhaus (ein Stein mit Höhlungen wie Bienenwaben), Napoleons Reisekoffer (den er nach einer Sage beim Rückzug vergessen haben soll).",
+      "english": "The limestone formations bear imaginative names such as The Three Hostile Brothers, Robber's Rock, Kuchel Rock, Petrified Virgin, Bavarian Lion, Bishop's Mitre, Two Kissing, Roman Rock, Peter and Paul, Beehouse (a stone with cavities like honeycombs), Napoleon's Suitcase (which, according to a legend, he is said to have forgotten during the retreat)."
+    },
+    {
+      "id": "s6",
+      "name": "Wipfelsfurt",
+      "quote": "Im Gegensatz zu der enormen Wassertiefe an der Stelle des eigentlichen Durchbruchs befindet sich etwa auf halber Strecke zwischen Kelheim und Weltenburg ein wenig auffälliger Bereich, die sogenannte Wipfelsfurt.",
+      "english": "In contrast to the enormous water depth at the site of the actual breakthrough, there is a less conspicuous area about halfway between Kelheim and Weltenburg, the so-called Wipfelsfurt."
+    },
+    {
+      "id": "s7",
+      "name": "Klösterl",
+      "quote": "Stromabwärts vor Kelheim befindet sich das Klösterl, ein auf eine Einsiedelei von 1450 zurückgehendes ehemaliges Kloster, dessen 1603 neu erbaute Höhlenkirche mit natürlichem Felsdach im Inneren eine Besonderheit unter den europäischen Felsenkirchen darstellt.",
+      "english": "Downstream before Kelheim is the Klösterl, a former monastery dating back to a hermitage from 1450, whose cave church, newly built in 1603 with a natural rock roof inside, represents a peculiarity among European rock churches."
+    },
+    {
+      "id": "s8",
+      "name": "Befreiungshalle",
+      "quote": "Nordöstlich des Durchbruchs erhebt sich auf dem Michelsberg die Befreiungshalle.",
+      "english": "To the northeast of the gorge, the Befreiungshalle rises on the Michelsberg."
+    }
+  ],
+  "days": [
+    {
+      "title": "Abbey and Inner Narrows",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Rock Formations and River Shallows",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Monuments and Historic Hermitages",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "1cac9f2fd41357f820d28857a1ff75f2acf3753a99a49be0ff1f1f02dfb5ed58"
+}

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Campania",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco regionale del Partenio"
+        "Montevergine",
+        "monte San Silvestro"
       ],
       "seo_title": "Partenio Regional Park Visit Guide"
     },
@@ -32,16 +33,67 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Partenio Regional Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Religious Heights and Summits",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco regionale del Partenio",
-                "stop_id": "partenio-regional-park",
-                "detail": "The regional park of Partenio is a protected natural area located in Campania established since 1993. It occupies an area of 16.650 ha on the Monti del Partenio, between the provinces of Avellino, Benevento, Caserta and Naples."
+                "name": "Montevergine",
+                "stop_id": "partenio-regional-park--s2",
+                "detail": "The park is situated on the Partenio range, among which Montevergine stands out, the mountain where the Sanctuary of Montevergine rises, in the hamlet of Mercogliano."
+              },
+              {
+                "name": "monte San Silvestro",
+                "stop_id": "partenio-regional-park--s9",
+                "detail": "One of the 30 trails present in the park leads to Mount San Silvestro, specifically number 205."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Partenio Regional Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Summonte Hiking and Equestrian Trails",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Campus di ingegneria naturalistica",
+                "stop_id": "partenio-regional-park--s5",
+                "detail": "Another point of naturalistic interest also located in Summonte in the middle of the hiking trail is the Campus of naturalistic engineering where one can observe a landscape of enormous naturalistic and environmental charm with remarkable chestnut woods."
+              },
+              {
+                "name": "rifugio Urupreta",
+                "stop_id": "partenio-regional-park--s7",
+                "detail": "At the Urupreta refuge in Summonte, there is a center that represents a rest point and a picnic area for hikers who undertake mountain paths and excursions starting right from the refuge which is the beginning of the trail."
+              },
+              {
+                "name": "Castellone",
+                "stop_id": "partenio-regional-park--s8",
+                "detail": "Also on the hiking trail from Summonte one can find a riding stable in the locality of Castellone near the Castellone Equestrian Center where a hiker can decide to continue the journey on horseback."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Partenio Regional Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Pannarano Nature and Caves",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Oasi WWF Montagna di Sopra di Pannarano",
+                "stop_id": "partenio-regional-park--s1",
+                "detail": "The WWF Oasis Montagna di Sopra di Pannarano is located within it."
+              },
+              {
+                "name": "grotte di San Silvestro",
+                "stop_id": "partenio-regional-park--s4",
+                "detail": "In the Partenio regional park there are various points of interest starting from the WWF Oasis Montagna di Sopra located near the caves of San Silvestro, in the municipality of Pannarano, within a site of community interest."
+              },
+              {
+                "name": "Mafariello",
+                "stop_id": "partenio-regional-park--s6",
+                "detail": "Mafariello is a mountain locality (770 m a.s.l.) located in the park, in the municipality of San Martino Valle Caudina (AV)."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Partenio Regional Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +131,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_regionale_del_Partenio"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_regionale_del_Partenio"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:07:18.462115+00:00"
       }
     }
   }

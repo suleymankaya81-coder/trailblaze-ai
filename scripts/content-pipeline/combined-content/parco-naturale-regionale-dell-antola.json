@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Liguria",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Antola Natural Regional Park"
+        "Rocche del Reopasso",
+        "monte Reale"
       ],
       "seo_title": "Parco naturale regionale dell'Antola Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco naturale regionale dell'Antola",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Val Vobbia Rocks and Castles",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Antola Natural Regional Park",
-                "stop_id": "parco-naturale-regionale-dell-antola",
-                "detail": "The Antola Natural Regional Park (in Italian Parco naturale regionale dell'Antola) is a natural park in Metropolitan City of Genoa (Liguria, Italy). It gets the name from the highest mountain of the area, Monte Antola."
+                "name": "Rocche del Reopasso",
+                "stop_id": "parco-naturale-regionale-dell-antola--s1",
+                "detail": "The Rocche del Reopasso are included in the Reopasso oasis (1,221 ha) and are an important rock formation consisting of extensive outcrops of Savignone conglomerate dating back to the Oligocene epoch."
+              },
+              {
+                "name": "monte Reale",
+                "stop_id": "parco-naturale-regionale-dell-antola--s3",
+                "detail": "These are: the area of the peak of Mount Reale, the Vobbia stream and the Stone Castle, the ecomuseum of the Brevenna valley, the area of the peak of Mount Antola and its connected refuge, the Brugneto lake and finally the Casa del Romano astronomical observatory;"
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale regionale dell'Antola before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Antola Peaks and Historic Villages",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Senarega",
+                "stop_id": "parco-naturale-regionale-dell-antola--s5",
+                "detail": "In Senarega, in the Brevenna valley, the thousand-year-old Fieschi castle has recently been restored by the Park."
+              },
+              {
+                "name": "Pentema",
+                "stop_id": "parco-naturale-regionale-dell-antola--s6",
+                "detail": "The village of Pentema, a hamlet of Torriglia, is instead famous for the peasant nativity scene that takes place there every year and which represents a sort of ethnographic museum of the peasant civilization of past centuries in the Antola valleys."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco naturale regionale dell'Antola before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Antola_Natural_Regional_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_dell%27Antola"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:03:07.632754+00:00"
       }
     }
   }

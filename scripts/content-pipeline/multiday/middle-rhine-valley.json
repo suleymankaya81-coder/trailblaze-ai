@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Bingen am Rhein",
+      "quote": "Die wichtigsten Städte am linken Ufer sind Bingen am Rhein, Bacharach, Oberwesel, Sankt Goar, Boppard und Koblenz am oberen sowie Andernach, Bad Breisig, Sinzig, Remagen und Bonn am unteren Mittelrhein.",
+      "english": "The most important cities on the left bank are Bingen am Rhein, Bacharach, Oberwesel, Sankt Goar, Boppard and Koblenz on the upper Middle Rhine, as well as Andernach, Bad Breisig, Sinzig, Remagen and Bonn on the lower Middle Rhine."
+    },
+    {
+      "id": "s2",
+      "name": "Rüdesheim am Rhein",
+      "quote": "Am rechten Flussufer liegen Rüdesheim am Rhein, Assmannshausen, Lorch, Kaub, Sankt Goarshausen, Braubach und Lahnstein am oberen sowie Vallendar, Bendorf, Neuwied, Bad Hönningen, Linz am Rhein, Unkel, Bad Honnef und Königswinter am unteren Mittelrhein.",
+      "english": "Located on the right riverbank are Rüdesheim am Rhein, Assmannshausen, Lorch, Kaub, Sankt Goarshausen, Braubach and Lahnstein on the upper Middle Rhine, as well as Vallendar, Bendorf, Neuwied, Bad Hönningen, Linz am Rhein, Unkel, Bad Honnef and Königswinter on the lower Middle Rhine."
+    },
+    {
+      "id": "s3",
+      "name": "Bacharach",
+      "quote": "Eine regionale, weit nach Norden gehandelte Spezialität war die Herstellung von Feuerwein im Viertälergebiet um Bacharach (heute wieder im Posthof Bacharach hergestellt).",
+      "english": "A regional specialty traded far to the north was the production of fire wine in the Four Valleys area around Bacharach (today once again produced at the Posthof Bacharach)."
+    },
+    {
+      "id": "s4",
+      "name": "Loreley",
+      "quote": "Obwohl Prallhänge zumeist steiler sind als Gleithänge, ist die für ihre Schroffheit berühmte Loreley ein Gleithang.",
+      "english": "Although undercut slopes are usually steeper than slip-off slopes, the Loreley, famous for its ruggedness, is a slip-off slope."
+    },
+    {
+      "id": "s5",
+      "name": "Namedyer Geysir",
+      "quote": "Durch eine in der Hoffnung auf Mineralwasser durchgeführte Bohrung im Jahr 1903 entstand hier künstlich der Namedyer Geysir, als höchster Kaltwassergeysir der Welt seit 2006 touristisch erschlossen.",
+      "english": "As a result of a borehole drilled in 1903 in the hope of finding mineral water, the Namedy Geyser was artificially created here, developed for tourism since 2006 as the world's highest cold-water geyser."
+    },
+    {
+      "id": "s6",
+      "name": "Andernach",
+      "quote": "Die größten Häfen entlang des Mittelrheins befinden sich in Andernach, Bendorf, Koblenz und Lahnstein.",
+      "english": "The largest ports along the Middle Rhine are located in Andernach, Bendorf, Koblenz, and Lahnstein."
+    },
+    {
+      "id": "s7",
+      "name": "Königswinter",
+      "quote": "Am rechten Flussufer liegen Rüdesheim am Rhein, Assmannshausen, Lorch, Kaub, Sankt Goarshausen, Braubach und Lahnstein am oberen sowie Vallendar, Bendorf, Neuwied, Bad Hönningen, Linz am Rhein, Unkel, Bad Honnef und Königswinter am unteren Mittelrhein.",
+      "english": "Located on the right riverbank are Rüdesheim am Rhein, Assmannshausen, Lorch, Kaub, Sankt Goarshausen, Braubach and Lahnstein on the upper Middle Rhine, as well as Vallendar, Bendorf, Neuwied, Bad Hönningen, Linz am Rhein, Unkel, Bad Honnef and Königswinter on the lower Middle Rhine."
+    }
+  ],
+  "days": [
+    {
+      "title": "Southern Gateway and Wine Traditions",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Heart of the Romantic Rhine",
+      "stop_ids": [
+        "s4",
+        "s6"
+      ]
+    },
+    {
+      "title": "Northern Wonders and Geysers",
+      "stop_ids": [
+        "s5",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "cbccbdd64135974c16efb51f6cb0ecca12af97b9fd6899f00a1769ecd6cf7838"
+}

@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Nemi",
+      "quote": "Molti dei comuni dei Castelli Romani condividono aree protette del parco, tra cui spicca Nemi, il cui territorio ricade per intero entro la sua delimitazione.",
+      "english": "Many of the municipalities of the Castelli Romani share protected areas of the park, among which Nemi stands out, whose territory falls entirely within its boundaries."
+    },
+    {
+      "id": "s2",
+      "name": "Tuscolo",
+      "quote": "Di interesse particolare sono il sito archeologico di Tuscolo, come anche le numerose ville tuscolane.",
+      "english": "Of particular interest is the archaeological site of Tuscolo, as well as the numerous Tusculan villas."
+    },
+    {
+      "id": "s3",
+      "name": "ville tuscolane",
+      "quote": "Di interesse particolare sono il sito archeologico di Tuscolo, come anche le numerose ville tuscolane.",
+      "english": "Of particular interest is the archaeological site of Tuscolo, as well as the numerous Tusculan villas."
+    },
+    {
+      "id": "s4",
+      "name": "lago Albano",
+      "quote": "Del parco fanno parte anche il lago Albano (detto anche impropriamente lago di Castel Gandolfo), il lago di Nemi e da ultimo anche la Riserva naturale della Sughereta di Pomezia.",
+      "english": "The park also includes Lake Albano (also improperly called Lake Castel Gandolfo), Lake Nemi and finally also the Sughereta di Pomezia Nature Reserve."
+    },
+    {
+      "id": "s5",
+      "name": "lago di Nemi",
+      "quote": "Del parco fanno parte anche il lago Albano (detto anche impropriamente lago di Castel Gandolfo), il lago di Nemi e da ultimo anche la Riserva naturale della Sughereta di Pomezia.",
+      "english": "The park also includes Lake Albano (also improperly called Lake Castel Gandolfo), Lake Nemi and finally also the Sughereta di Pomezia Nature Reserve."
+    },
+    {
+      "id": "s6",
+      "name": "Riserva naturale della Sughereta di Pomezia",
+      "quote": "Del parco fanno parte anche il lago Albano (detto anche impropriamente lago di Castel Gandolfo), il lago di Nemi e da ultimo anche la Riserva naturale della Sughereta di Pomezia.",
+      "english": "The park also includes Lake Albano (also improperly called Lake Castel Gandolfo), Lake Nemi and finally also the Sughereta di Pomezia Nature Reserve."
+    },
+    {
+      "id": "s7",
+      "name": "Rocca di Papa",
+      "quote": "Il Parco dei Castelli Romani è stato istituito con la Legge della regione 2/1984 allo scopo di tutelare l'integrità delle caratteristiche naturali e culturali dei quindici paesi (Albano Laziale, Ariccia, Castel Gandolfo, Frascati, Genzano di Roma, Grottaferrata, Lanuvio, Lariano, Marino, Monte Compatri, Monte Porzio Catone, Nemi, Rocca di Papa, Rocca Priora, Velletri) che occupano l'antico Vulcano Laziale, e da Pomezia, inclusa per salvaguardare i resti delle antiche sugherete presenti alle falde dei colli.",
+      "english": "The Castelli Romani Park was established by regional law 2/1984 with the aim of protecting the integrity of the natural and cultural characteristics of the fifteen towns (Albano Laziale, Ariccia, Castel Gandolfo, Frascati, Genzano di Roma, Grottaferrata, Lanuvio, Lariano, Marino, Monte Compatri, Monte Porzio Catone, Nemi, Rocca di Papa, Rocca Priora, Velletri) that occupy the ancient Latian Volcano, and Pomezia, included to safeguard the remains of the ancient cork oak forests present at the slopes of the hills."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lakes and Local Heritage",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Ancient History and Villas",
+      "stop_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Nature Reserves and Mountain Villages",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Veneto",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Tre Cime di Lavaredo"
+        "Grande",
+        "Cima Piccola",
+        "alta via n. 4"
       ],
       "seo_title": "Tre Cime di Lavaredo Visit Guide"
     },
@@ -32,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Tre Cime di Lavaredo",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "The Three Peaks and High Path",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Tre Cime di Lavaredo",
-                "stop_id": "tre-cime-di-lavaredo",
-                "detail": "The Tre Cime di Lavaredo (Italian for 'Three Peaks of Lavaredo'; pronounced [ˌtre tˈtʃiːme di lavaˈreːdo]), also called the Drei Zinnen (German for 'Three Merlons') (pronounced [ˌdʁaɪ ˈtsɪnən] ), are three distinctive battlement-like peaks, in the Sexten Dolomites of northeastern Italy. They are one of the best-known mountain groups in the Alps. The three peaks, from east to west, are:"
+                "name": "Grande",
+                "stop_id": "tre-cime-di-lavaredo--s1",
+                "detail": "the highest is the Grande, that is the central one (2,999 m a.s.l.);"
+              },
+              {
+                "name": "Cima Piccola",
+                "stop_id": "tre-cime-di-lavaredo--s3",
+                "detail": "the Cima Piccola is the lowest (2,857 m)."
+              },
+              {
+                "name": "alta via n. 4",
+                "stop_id": "tre-cime-di-lavaredo--s8",
+                "detail": "The group is crossed by high path no. 4, called Grohmann's."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Tre Cime di Lavaredo before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Refuges and Historical Landmarks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Monte Paterno",
+                "stop_id": "tre-cime-di-lavaredo--s4",
+                "detail": "From this period evident remains still exist (trenches, tunnels, barracks) on the massif and on the nearby Monte Paterno."
+              },
+              {
+                "name": "Rifugio Auronzo",
+                "stop_id": "tre-cime-di-lavaredo--s5",
+                "detail": "The Rifugio Auronzo, the starting point for the main excursions, is located at the end of the toll road that ascends from Misurina, and can be reached by car, for a limited number of spots, or by bus thanks to the Misura - Tre Cime shuttle managed by Dolomiti Bus."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Tre Cime di Lavaredo before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +109,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Tre_Cime_di_Lavaredo"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Tre_Cime_di_Lavaredo"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:09:16.581356+00:00"
       }
     }
   }

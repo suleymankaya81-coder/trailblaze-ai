@@ -1,0 +1,46 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Monte Subasio (sommità)",
+      "quote": "Monte Subasio (sommità);",
+      "english": "Mount Subasio (summit);"
+    },
+    {
+      "id": "s2",
+      "name": "Fosso dell'Eremo delle Carceri",
+      "quote": "Fosso dell'Eremo delle Carceri (Monte Subasio);",
+      "english": "Ditch of the Hermitage of the Prisons (Mount Subasio);"
+    },
+    {
+      "id": "s3",
+      "name": "Fiume Tescio",
+      "quote": "Fiume Tescio (parte alta);",
+      "english": "Tescio River (upper part);"
+    },
+    {
+      "id": "s4",
+      "name": "Colli Selvalonga – Il Monte",
+      "quote": "Colli Selvalonga – Il Monte (Assisi);",
+      "english": "Selvalonga Hills – The Mount (Assisi);"
+    },
+    {
+      "id": "s5",
+      "name": "Poggio Caselle - Fosso Renaro",
+      "quote": "Poggio Caselle - Fosso Renaro (Monte Subasio).",
+      "english": "Poggio Caselle - Renaro Ditch (Mount Subasio)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Natural Reserves and Summits of Subasio",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    }
+  ]
+}

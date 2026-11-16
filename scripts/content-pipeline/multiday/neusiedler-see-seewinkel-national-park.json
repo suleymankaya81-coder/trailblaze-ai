@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Neusiedler See",
+      "quote": "Zentrum der Kulturlandschaft ist der Neusiedler See mit seinen für den Steppensee typischen Uferlandschaften wie den breiten Schilfgürteln.",
+      "english": "The center of the cultural landscape is Lake Neusiedl, with its lakeshore landscapes typical of a steppe lake, such as the wide reed belts."
+    },
+    {
+      "id": "s2",
+      "name": "Hanság",
+      "quote": "Am Südende des Sees finden sich die Hanság, jene Niedermoorlandschaften, von denen heute nur mehr ein Teil vorhanden ist, da das Moor in den vergangenen Jahrhunderten durch ein Kanal- und Wassergrabensystem entwässert wurde.",
+      "english": "At the southern end of the lake is the Hanság, those fen landscapes of which only a part remains today, as the moor was drained in past centuries by a system of canals and water ditches."
+    },
+    {
+      "id": "s3",
+      "name": "Leithagebirge",
+      "quote": "Ebenso zur Kulturlandschaft zählen die zahlreichen Weingärten, die sich aufgrund des pannonischen Klimas am Abhang des Leithagebirges bis zum Seeufer entwickelt haben und das Burgenland zu einer bekannten Weinregion machen.",
+      "english": "The cultural landscape also includes the numerous vineyards that have developed on the slopes of the Leitha Mountains down to the lakeshore due to the Pannonian climate, making Burgenland a well-known wine region."
+    },
+    {
+      "id": "s4",
+      "name": "St. Bartholomäus Quelle",
+      "quote": "Daher gibt es in der Region auch etwa zwanzig Mineralwasserquellen wie beispielsweise die St. Bartholomäus Quelle in Illmitz.",
+      "english": "Therefore, there are about twenty mineral water springs in the region, such as the St. Bartholomew Spring in Illmitz."
+    },
+    {
+      "id": "s5",
+      "name": "Sulfina",
+      "quote": "In Illmitz gibt es noch zwei weitere Quellen: die Sulfina und die Gastrin.",
+      "english": "In Illmitz there are two other springs: the Sulfina and the Gastrin."
+    },
+    {
+      "id": "s6",
+      "name": "Gastrin",
+      "quote": "In Illmitz gibt es noch zwei weitere Quellen: die Sulfina und die Gastrin.",
+      "english": "In Illmitz there are two other springs: the Sulfina and the Gastrin."
+    },
+    {
+      "id": "s7",
+      "name": "Illmitz",
+      "quote": "Sie wurde im Jahr 1930 in einer Tiefe von 188 m gefunden, als man eigentlich nur nach reinem Quellwasser bohrte.",
+      "english": "It was found in 1930 at a depth of 188 m when they were actually just drilling for pure spring water."
+    },
+    {
+      "id": "s8",
+      "name": "Fertőrákos",
+      "quote": "1991 wurde der gesamte südliche Seeteil aus dem Gebiet vor dem Strandbad in Fertőrákos zum Nationalpark erklärt.",
+      "english": "In 1991, the entire southern part of the lake from the area in front of the lido in Fertőrákos was declared a national park."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Lake and Northern Slopes",
+      "stop_ids": [
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "title": "Springs and Village of Illmitz",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Southern Marshes and Parks",
+      "stop_ids": [
+        "s2",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "44fdfbdef280f04180c9b3faf9602530789437b77dd71ecb2415c81619ebb8d3"
+}

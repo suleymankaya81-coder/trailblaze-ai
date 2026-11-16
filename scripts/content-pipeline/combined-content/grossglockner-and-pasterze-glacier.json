@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Carinthia",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Pasterze"
+        "Großglockner",
+        "Johannisberg",
+        "Hohe Riffl"
       ],
       "seo_title": "Grossglockner and Pasterze Glacier Visit Guide"
     },
@@ -32,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Grossglockner and Pasterze Glacier",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Glacial Peaks and High Roads",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Pasterze",
-                "stop_id": "grossglockner-and-pasterze-glacier",
-                "detail": "With a length of about 8 km, the Pasterze is still the largest glacier in Austria and the longest of the Eastern Alps. It is located at the foot of the Grossglockner in the upper valley floor of the Möll valley (Pasterzenboden) and is the source area of the Möll. Since 1856, their area has decreased by almost half from then over 30 km2. As with the vast majority of Austrian glaciers, their length has been declining for several years, in the last few years on the order of 50 meters per year. In [dated source]/15, the decline was 54.4 m, in [dated source] 52.5 m. By [dated source], the glacier tongue could have disappeared. As of September [dated source], there were forecasts that saw a tearing of the glacier tongue in 1-2 years. At the beginning of [dated source], the forecast was postponed to [dated source] or [dated source]. According to July [dated source], this will happen in the summer of [dated source]. After demolishing the Pasterze, the Gepatschferner in Tyrol is expected to be the largest glacier in Austria."
+                "name": "Großglockner",
+                "stop_id": "grossglockner-and-pasterze-glacier--s1",
+                "detail": "It is located at the foot of the Grossglockner in the upper valley floor of the Möll Valley (Pasterzenboden) and is the source area of the Möll."
+              },
+              {
+                "name": "Johannisberg",
+                "stop_id": "grossglockner-and-pasterze-glacier--s2",
+                "detail": "The highest point is formed by the 3453 m above sea level Johannisberg."
+              },
+              {
+                "name": "Hohe Riffl",
+                "stop_id": "grossglockner-and-pasterze-glacier--s8",
+                "detail": "In the area of the Pasterze are located, among others, the mountain peaks Johannisberg, Hoher, Mittlerer and Kleiner Burgstall, Hohe Riffl, Schattseitköpfl and Vorderer Bärenkopf."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Grossglockner and Pasterze Glacier before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Viewpoints and Alpine Reservoirs",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Sandersee",
+                "stop_id": "grossglockner-and-pasterze-glacier--s3",
+                "detail": "The tongue ends a few hundred meters before the Sandersee."
+              },
+              {
+                "name": "Stausee Margaritze",
+                "stop_id": "grossglockner-and-pasterze-glacier--s4",
+                "detail": "The water of the Pasterze feeds the Margaritze reservoir, which lies below the Glocknerhaus."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Grossglockner and Pasterze Glacier before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +109,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://de.wikipedia.org/wiki/Pasterze"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Pasterze"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:13:22.381870+00:00"
       }
     }
   }

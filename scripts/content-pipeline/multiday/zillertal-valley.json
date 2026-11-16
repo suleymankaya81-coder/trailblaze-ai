@@ -1,0 +1,105 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Zemmtal valley",
+      "quote": "Only from Mayrhofen, where the Zillertal splits into the narrow Zemmtal valley with the mountaineering village of Ginzling and the Tuxertal valley, does it begin to rise sharply.",
+      "english": "Only from Mayrhofen, where the Zillertal splits into the narrow Zemmtal valley with the mountaineering village of Ginzling and the Tuxertal valley, does it begin to rise sharply."
+    },
+    {
+      "id": "s2",
+      "name": "Ginzling",
+      "quote": "Only from Mayrhofen, where the Zillertal splits into the narrow Zemmtal valley with the mountaineering village of Ginzling and the Tuxertal valley, does it begin to rise sharply.",
+      "english": "Only from Mayrhofen, where the Zillertal splits into the narrow Zemmtal valley with the mountaineering village of Ginzling and the Tuxertal valley, does it begin to rise sharply."
+    },
+    {
+      "id": "s3",
+      "name": "Tuxertal valley",
+      "quote": "Only from Mayrhofen, where the Zillertal splits into the narrow Zemmtal valley with the mountaineering village of Ginzling and the Tuxertal valley, does it begin to rise sharply.",
+      "english": "Only from Mayrhofen, where the Zillertal splits into the narrow Zemmtal valley with the mountaineering village of Ginzling and the Tuxertal valley, does it begin to rise sharply."
+    },
+    {
+      "id": "s4",
+      "name": "Hintertux Glacier",
+      "quote": "The Hintertux Glacier forms the crowning glory at the end of the valley.",
+      "english": "The Hintertux Glacier forms the crowning glory at the end of the valley."
+    },
+    {
+      "id": "s5",
+      "name": "Zillertal Railway",
+      "quote": "The Zillertal Railway, a modern means of transport that is still partly operated by nostalgic steam locomotives, fits in with this in a way.",
+      "english": "The Zillertal Railway, a modern means of transport that is still partly operated by nostalgic steam locomotives, fits in with this in a way."
+    },
+    {
+      "id": "s6",
+      "name": "Zillertal Alps High Mountain Nature Park",
+      "quote": "The greatest scenic sensation is the Zillertal Alps High Mountain Nature Park, its 80 glaciers and the numerous three-thousand metre peaks with the Hochfeiler (3,509 metres) as the highest elevation.",
+      "english": "The greatest scenic sensation is the Zillertal Alps High Mountain Nature Park, its 80 glaciers and the numerous three-thousand metre peaks with the Hochfeiler (3,509 metres) as the highest elevation."
+    },
+    {
+      "id": "s7",
+      "name": "Hochfeiler",
+      "quote": "The greatest scenic sensation is the Zillertal Alps High Mountain Nature Park, its 80 glaciers and the numerous three-thousand metre peaks with the Hochfeiler (3,509 metres) as the highest elevation.",
+      "english": "The greatest scenic sensation is the Zillertal Alps High Mountain Nature Park, its 80 glaciers and the numerous three-thousand metre peaks with the Hochfeiler (3,509 metres) as the highest elevation."
+    },
+    {
+      "id": "s8",
+      "name": "Hintertux Glacier Nature Ice Palace",
+      "quote": "In addition to the numerous sporting activities, the Hintertux Glacier Nature Ice Palace is also an exciting attraction.",
+      "english": "In addition to the numerous sporting activities, the Hintertux Glacier Nature Ice Palace is also an exciting attraction."
+    },
+    {
+      "id": "s9",
+      "name": "Arena Coaster",
+      "quote": "The Arena Coaster summer toboggan run is ideal for children (but adults will also get their money's worth here - we promise!).",
+      "english": "The Arena Coaster summer toboggan run is ideal for children (but adults will also get their money's worth here - we promise!)."
+    },
+    {
+      "id": "s10",
+      "name": "Beer Adventure World",
+      "quote": "For beer drinkers, the Beer Adventure World is an absolute must.",
+      "english": "For beer drinkers, the Beer Adventure World is an absolute must."
+    },
+    {
+      "id": "s11",
+      "name": "Mayrhofen adventure pool",
+      "quote": "For bad weather days, we recommend the beer adventure world for the grown-ups or the Mayrhofen adventure pool or the Erlebnistherme Zillertal for the family.",
+      "english": "For bad weather days, we recommend the beer adventure world for the grown-ups or the Mayrhofen adventure pool or the Erlebnistherme Zillertal for the family."
+    },
+    {
+      "id": "s12",
+      "name": "Erlebnistherme Zillertal",
+      "quote": "For bad weather days, we recommend the beer adventure world for the grown-ups or the Mayrhofen adventure pool or the Erlebnistherme Zillertal for the family.",
+      "english": "For bad weather days, we recommend the beer adventure world for the grown-ups or the Mayrhofen adventure pool or the Erlebnistherme Zillertal for the family."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Alpine Peaks and Nature Parks",
+      "stop_ids": [
+        "s4",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Side Valleys and Mountaineering Villages",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s5"
+      ]
+    },
+    {
+      "title": "Family Fun and Adventure Centers",
+      "stop_ids": [
+        "s9",
+        "s10",
+        "s11",
+        "s12"
+      ]
+    }
+  ]
+}

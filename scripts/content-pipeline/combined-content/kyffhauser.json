@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Thuringia",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Kyffhäuser"
+        "Kulpenberg",
+        "Reichsburg Kyffhausen",
+        "Burgbrunnen"
       ],
       "seo_title": "Kyffhäuser Visit Guide"
     },
@@ -32,16 +34,49 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Kyffhäuser",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Imperial Heritage and Peaks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Kyffhäuser",
-                "stop_id": "kyffhauser",
-                "detail": "The Kyffhäuser (German pronunciation: [ˈkɪfˌhɔʏzɐ] , sometimes also referred to as Kyffhäusergebirge) is a hill range in Central Germany, shared by Thuringia and Saxony-Anhalt, southeast of the Harz mountains. It reaches its highest point at the Kulpenberg with an elevation of 473.4 m (1,553 ft). The range is the site of medieval Kyffhausen Castle (Reichsburg Kyffhausen) and the 19th century Kyffhäuser Monument; it has significance in German traditional mythology as the legendary resting place of Emperor Frederick Barbarossa."
+                "name": "Kulpenberg",
+                "stop_id": "kyffhauser--s1",
+                "detail": "Its highest elevation is the Kulpenberg, on which a television tower has stood since the 1960s."
+              },
+              {
+                "name": "Reichsburg Kyffhausen",
+                "stop_id": "kyffhauser--s2",
+                "detail": "On a mountain spur in the northeast of the Kyffhäuser Mountains are the ruins of the Reichsburg Kyffhausen, which were complemented at the end of the 19th century by the Kyffhäuser Monument in honor of Emperor Wilhelm I."
+              },
+              {
+                "name": "Burgbrunnen",
+                "stop_id": "kyffhauser--s4",
+                "detail": "Parts of the ruins of the Upper and Lower Castle, however, were preserved, and the 176 m deep castle well was also restored."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Kyffhäuser before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Caves and Historical Monuments",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Barbarossahöhle",
+                "stop_id": "kyffhauser--s5",
+                "detail": "Other signal towers of trigonometric points in the Kyffhäuser were located on the Saukopf (between Tilleda and Udersleben), on the Schlachtberg next to the Peasants' War monument north of Bad Frankenhausen, next to the Falkenburg above (north) of the Barbarossa Cave (Rottleben), and on the Stöckey between Badra and the Numburg."
+              },
+              {
+                "name": "Panoramamuseum Bad Frankenhausen",
+                "stop_id": "kyffhauser--s6",
+                "detail": "Schlachtberg (271.0 m), north of Bad Frankenhausen with the Peasants' War Panorama (Panorama Museum Bad Frankenhausen), with the Thomas Müntzer Memorial and with the nearby Hausmannsturm (Frankenburg), approx. 800 m to the south."
+              },
+              {
+                "name": "Königspfalz Tilleda",
+                "stop_id": "kyffhauser--s7",
+                "detail": "Pfingstberg (approx. 196 m), on the southern edge of Tilleda with the Tilleda Royal Palace and the Schusterhöhle cave located at the palace."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Kyffhäuser before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +114,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Kyffh%C3%A4user"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Kyffh%C3%A4user"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:16:13.456440+00:00"
       }
     }
   }

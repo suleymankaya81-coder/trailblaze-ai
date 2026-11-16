@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Müritz",
+      "quote": "Die Müritz ist mit einer Fläche von 117 Quadratkilometern das größte Gewässer, das vollständig innerhalb Deutschlands liegt.",
+      "english": "The Müritz, with an area of 117 square kilometers, is the largest body of water located entirely within Germany."
+    },
+    {
+      "id": "s2",
+      "name": "Feisnecksee",
+      "quote": "Außer der Müritz, die nur zu kleinen Teilen im Nationalpark liegt, sind größere Gewässer im westlichen Teil der Feisnecksee, Rederangsee, Specker See und Woterfitzsee.",
+      "english": "Apart from the Müritz, which is only located to a small extent in the national park, larger bodies of water in the western part are the Feisnecksee, Rederangsee, Specker See and Woterfitzsee."
+    },
+    {
+      "id": "s3",
+      "name": "Käflingsberg",
+      "quote": "Die höchste Erhebung im allgemein flacheren Müritzer Teil ist der Käflingsberg mit 100,3 m ü. NHN.",
+      "english": "The highest elevation in the generally flatter Müritz part is the Käflingsberg at 100.3 m above sea level."
+    },
+    {
+      "id": "s4",
+      "name": "Käflingsbergturm",
+      "quote": "Hier befindet sich mit dem Käflingsbergturm ein kombinierter Aussichts-, Feuerwacht- und Mobilfunksendeturm.",
+      "english": "Located here is the Käflingsberg Tower, a combined observation, fire watch, and mobile communications tower."
+    },
+    {
+      "id": "s5",
+      "name": "Hirschberg",
+      "quote": "Im Teilgebiet Serrahn befinden sich mit dem Hirschberg (143,7 m ü. NHN) und dem Warsberg (143,2 m ü. NHN) die höchsten Erhebungen im Nationalpark.",
+      "english": "In the Serrahn sub-area, the Hirschberg (143.7 m above sea level) and the Warsberg (143.2 m above sea level) are the highest elevations in the national park."
+    },
+    {
+      "id": "s6",
+      "name": "Serrahner Berge",
+      "quote": "Weitere bedeutende Anhöhen sind die Serrahner Berge mit 124,2 m ü. NHN.",
+      "english": "Other significant elevations are the Serrahner Berge at 124.2 m above sea level."
+    },
+    {
+      "id": "s7",
+      "name": "Wienpietschseen",
+      "quote": "Letztere sind heute als Seen (zum Beispiel die Wienpietschseen) und Sölle überall in der Landschaft verstreut.",
+      "english": "The latter are today scattered throughout the landscape as lakes (for example the Wienpietschseen) and kettle holes."
+    }
+  ],
+  "days": [
+    {
+      "title": "Western Lakes and Panoramas",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Eastern Heights and Glacial Remains",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "e90aaed4facc4ce3828015a9557f0a3cdc708e99852c90ced87ebe86ab5b1782"
+}

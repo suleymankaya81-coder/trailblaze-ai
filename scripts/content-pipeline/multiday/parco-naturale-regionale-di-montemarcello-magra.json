@@ -1,0 +1,91 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Promontorio del Caprione",
+      "quote": "Oltre all'area fluviale, di grande pregio naturalistico e storico-culturale è il promontorio del Caprione, ideale punto di partenza per molte escursioni.",
+      "english": "In addition to the river area, the Caprione promontory is of great naturalistic and historical-cultural value, an ideal starting point for many excursions."
+    },
+    {
+      "id": "s2",
+      "name": "Val di Magra",
+      "quote": "Il mare e la costa con borghi marinari di forte attrattiva e spiagge lasciano il posto alla val di Magra con le sue zone umide ricche di biodiversità e nell’entroterra alle verdi colline della val di Vara.",
+      "english": "The sea and the coast with highly attractive seaside villages and beaches give way to the Magra valley with its wetlands rich in biodiversity and inland to the green hills of the Vara valley."
+    },
+    {
+      "id": "s3",
+      "name": "Val di Vara",
+      "quote": "Il mare e la costa con borghi marinari di forte attrattiva e spiagge lasciano il posto alla val di Magra con le sue zone umide ricche di biodiversità e nell’entroterra alle verdi colline della val di Vara.",
+      "english": "The sea and the coast with highly attractive seaside villages and beaches give way to the Magra valley with its wetlands rich in biodiversity and inland to the green hills of the Vara valley."
+    },
+    {
+      "id": "s4",
+      "name": "Bozi di Sarzana",
+      "quote": "Ma il parco non è solo un insieme di paesaggi unici, è anche un laboratorio di progetti \"certificati\" di conservazione e riqualificazione ambientale che ruotano sull'area umida dei Bozi di Sarzana e sull'Orto botanico di Montemarcello.",
+      "english": "But the park is not only a collection of unique landscapes, it is also a laboratory of \"certified\" conservation and environmental redevelopment projects that revolve around the wetland of the Bozi di Sarzana and the Montemarcello Botanical Garden."
+    },
+    {
+      "id": "s5",
+      "name": "Orto botanico di Montemarcello",
+      "quote": "Ma il parco non è solo un insieme di paesaggi unici, è anche un laboratorio di progetti \"certificati\" di conservazione e riqualificazione ambientale che ruotano sull'area umida dei Bozi di Sarzana e sull'Orto botanico di Montemarcello.",
+      "english": "But the park is not only a collection of unique landscapes, it is also a laboratory of \"certified\" conservation and environmental redevelopment projects that revolve around the wetland of the Bozi di Sarzana and the Montemarcello Botanical Garden."
+    },
+    {
+      "id": "s6",
+      "name": "Punta Bianca",
+      "quote": "Particolarmente interessante è la serie geologica di Punta Bianca, l’estremità meridionale del promontorio del Caprione.",
+      "english": "Particularly interesting is the geological series of Punta Bianca, the southern extremity of the Caprione promontory."
+    },
+    {
+      "id": "s7",
+      "name": "Alta Via dei Monti Liguri",
+      "quote": "Nell'area del Parco si trovano molti sentieri escursionistici ed è attraversato dall'Alta Via dei Monti Liguri, dal Sentiero Liguria e dall'Alta Via del Golfo.",
+      "english": "In the Park area there are many hiking trails and it is crossed by the Alta Via dei Monti Liguri, the Sentiero Liguria and the Alta Via del Golfo."
+    },
+    {
+      "id": "s8",
+      "name": "Sentiero Liguria",
+      "quote": "Nell'area del Parco si trovano molti sentieri escursionistici ed è attraversato dall'Alta Via dei Monti Liguri, dal Sentiero Liguria e dall'Alta Via del Golfo.",
+      "english": "In the Park area there are many hiking trails and it is crossed by the Alta Via dei Monti Liguri, the Sentiero Liguria and the Alta Via del Golfo."
+    },
+    {
+      "id": "s9",
+      "name": "Bocca di Magra",
+      "quote": "Il versante sul fiume Magra è caratterizzato da pinete di pino marittimo, nelle colline di Bocca di Magra, e dal bosco misto di caducifoglie.",
+      "english": "The slope on the Magra river is characterized by maritime pine forests, in the hills of Bocca di Magra, and by mixed deciduous forest."
+    },
+    {
+      "id": "s10",
+      "name": "Piana di Marinella",
+      "quote": "Nella piana di Marinella è presente anche l’airone guardabuoi (Bubulcus ibis).",
+      "english": "In the Marinella plain there is also the cattle egret (Bubulcus ibis)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Caprione Promontory and Coastal Geology",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6",
+        "s9"
+      ]
+    },
+    {
+      "title": "Riverside Valleys and Trails",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Wetlands and Plains",
+      "stop_ids": [
+        "s4",
+        "s10"
+      ]
+    }
+  ]
+}

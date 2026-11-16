@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lombardy",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco del Serio"
+        "Palata Menasciutto",
+        "Villa Martini San Bernardino",
+        "Palazzo Benvenuti"
       ],
       "seo_title": "Parco del Serio Visit Guide"
     },
@@ -32,16 +34,49 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco del Serio",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Historical Palaces and Natural Reserves",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco del Serio",
-                "stop_id": "parco-del-serio",
-                "detail": "The park of the Serio is a protected natural area of Lombardy that develops along the Serio river to its mouth in the Adda from the municipality of Seriate to the municipality of Montodine, for a length of about 45 km. The territory of the park crosses 26 municipalities between the province of Bergamo and Cremona. The total area is 7750 hectares and is between a minimum of 48 m a.s.l. and 250 m s.l. The reasons that led to the establishment of the park were the preservation of the typical perifluvial environment, favoring its recovery and avoiding its degradation."
+                "name": "Palata Menasciutto",
+                "stop_id": "parco-del-serio--s1",
+                "detail": "Two natural reserve areas have been identified within the park: that of Palata Menasciutto, in the Cremasco territory, and that of Malpaga-Basella, in the Bergamo territory."
+              },
+              {
+                "name": "Villa Martini San Bernardino",
+                "stop_id": "parco-del-serio--s4",
+                "detail": "Villa Martini San Bernardino in Crema, dating to the 16th century, has a very simple facade and is today part of the Oratory."
+              },
+              {
+                "name": "Palazzo Benvenuti",
+                "stop_id": "parco-del-serio--s6",
+                "detail": "Inside the Palazzo Benvenuti in Montodine, the border stone between the State of Milan and the State of Venice is preserved."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco del Serio before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Castles and Estates of the Serio",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "castello di Malpaga",
+                "stop_id": "parco-del-serio--s2",
+                "detail": "It is defined as a steppic and arid zone included between the Basella and the castle of Malpaga."
+              },
+              {
+                "name": "castello di Cavernago",
+                "stop_id": "parco-del-serio--s7",
+                "detail": "The list includes: the castle of Malpaga, the official residence of the Colleoni family; the castle of Cavernago, austere on the outside, but with richly frescoed rooms; the castle of Cologno al Serio and that of Martinengo, of which today only the tower remains with wall textures in river pebbles and solid bricks."
+              },
+              {
+                "name": "Villa e Giardino Griffoni",
+                "stop_id": "parco-del-serio--s3",
+                "detail": "Villa and Griffoni Garden in Castel Gabbiano, dating back to the end of the 17th century, are one of the first examples."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco del Serio before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +114,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_del_Serio"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_del_Serio"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:59:06.217821+00:00"
       }
     }
   }

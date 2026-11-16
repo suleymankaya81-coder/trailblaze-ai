@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Baden Wurttemberg",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Lake Constance"
+        "Pfahlbaumuseum Unteruhldingen",
+        "Singen am Hohentwiel"
       ],
       "seo_title": "Lake Constance (German shore) Visit Guide"
     },
@@ -32,16 +33,57 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Lake Constance (German shore)",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Western Shores and Ancient History",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Lake Constance",
-                "stop_id": "lake-constance-german-shore",
-                "detail": "Lake Constance (German: Bodensee, pronounced [ˈboːdn̩zeː] ) refers to three bodies of water on the Rhine at the northern foot of the Alps: Upper Lake Constance (Obersee), Lower Lake Constance (Untersee), and a connecting stretch of the Rhine, called the Seerhein (lit. 'Rhine of the lake(s)'). These water bodies lie within the Lake Constance Basin (Bodenseebecken) in the Alpine Foreland through which the Rhine flows. The nearby Mindelsee is not considered part of Lake Constance."
+                "name": "Pfahlbaumuseum Unteruhldingen",
+                "stop_id": "lake-constance-german-shore--s2",
+                "detail": "A pile dwelling village of this kind has been reconstructed near Unteruhldingen and is accessible today as the Pile Dwelling Museum Unteruhldingen."
+              },
+              {
+                "name": "Singen am Hohentwiel",
+                "stop_id": "lake-constance-german-shore--s3",
+                "detail": "Grave finds from Singen am Hohentwiel should be mentioned from the beginning of the Early Bronze Age."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Constance (German shore) before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Religious Centers and Historic Constance",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Konstanz",
+                "stop_id": "lake-constance-german-shore--s4",
+                "detail": "The most important places on the lake were Bregenz (Celtic Brigantion) and present-day Constance."
+              },
+              {
+                "name": "Abtei Reichenau",
+                "stop_id": "lake-constance-german-shore--s7",
+                "detail": "After their Christianization, the cultural importance of the region grew through the founding of the Bishopric of Constance (around 585) and the Reichenau Abbey (724)."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Constance (German shore) before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Eastern Lake and Roman Heritage",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Bregenz",
+                "stop_id": "lake-constance-german-shore--s5",
+                "detail": "Bregenz became the most important Roman town, which soon received Roman city rights and later became the seat of the prefect of the Lake Constance fleet."
+              },
+              {
+                "name": "Lindau",
+                "stop_id": "lake-constance-german-shore--s6",
+                "detail": "The Romans were also in Lindau, but only settled the hills around Lindau there, as the shore was swampland."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Lake Constance (German shore) before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +121,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Lake_Constance"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Bodensee"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:16:26.953538+00:00"
       }
     }
   }

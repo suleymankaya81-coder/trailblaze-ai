@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Colle Costapiana",
+      "quote": "Per un lungo tratto tale strada fa da confine al parco con ingressi segnalati ai Colli (da ovest a est) Costapiana, Blegier e Lauson.",
+      "english": "For a long stretch, this road marks the park boundary with signposted entrances at the Cols (from west to east) Costapiana, Blegier and Lauson."
+    },
+    {
+      "id": "s2",
+      "name": "Colle Blegier",
+      "quote": "Per un lungo tratto tale strada fa da confine al parco con ingressi segnalati ai Colli (da ovest a est) Costapiana, Blegier e Lauson.",
+      "english": "For a long stretch, this road marks the park boundary with signposted entrances at the Cols (from west to east) Costapiana, Blegier and Lauson."
+    },
+    {
+      "id": "s3",
+      "name": "Colle Lauson",
+      "quote": "Per un lungo tratto tale strada fa da confine al parco con ingressi segnalati ai Colli (da ovest a est) Costapiana, Blegier e Lauson.",
+      "english": "For a long stretch, this road marks the park boundary with signposted entrances at the Cols (from west to east) Costapiana, Blegier and Lauson."
+    },
+    {
+      "id": "s4",
+      "name": "Pinea",
+      "quote": "Da Salbertrand: in auto si va direttamente all'area attrezzata Pinea, con parcheggio.",
+      "english": "From Salbertrand: by car you go directly to the Pinea equipped area, with parking."
+    },
+    {
+      "id": "s5",
+      "name": "Monfol",
+      "quote": "In alternativa, è possibile scendere alla stazione di Oulx e utilizzare la navetta in coincidenza per Sauze d'Oulx: da qui, si raggiunge a piedi la borgata Monfol, da cui inizia la cartellonistica dell'area protetta.",
+      "english": "Alternatively, you can get off at Oulx station and use the connecting shuttle to Sauze d'Oulx: from here, you reach the hamlet of Monfol on foot, where the protected area's signage begins."
+    },
+    {
+      "id": "s6",
+      "name": "Ser Blanc",
+      "quote": "Il primo si raggiunge procedendo dal concentrico verso la borgata Gran Villard e, superata questa ed entrando nel comune di Oulx, procedendo nel parco dove è possibile transitare con auto attraversando Monfol (borgata di Oulx) sino all'area attrezzata di Ser Blanc.",
+      "english": "The first is reached by proceeding from the town center towards the hamlet of Gran Villard and, having passed this and entered the municipality of Oulx, proceeding into the park where it is possible to travel by car through Monfol (a hamlet of Oulx) until the Ser Blanc equipped area."
+    },
+    {
+      "id": "s7",
+      "name": "Enfers",
+      "quote": "Il secondo si raggiunge procedendo dal concentrico verso borgata Richardette verso la SP 173 del Colle dell'Assietta sino a località Enfers da dove è consentito entrare nel Parco con auto sino ai segnali di divieto posti internamente al bosco.",
+      "english": "The second is reached by proceeding from the town center towards the hamlet of Richardette towards the SP 173 of the Colle dell'Assietta until the locality of Enfers from where it is permitted to enter the Park by car up to the prohibition signs placed inside the woods."
+    },
+    {
+      "id": "s8",
+      "name": "Alpe Arguel",
+      "quote": "Da Susa e Chiomonte: al pian del Frais, poi Alpe Arguel per strada sterrata oppure via Clot Rosset e per sterrata in direzione Clot Rosset/Clot des Anes.",
+      "english": "From Susa and Chiomonte: to Pian del Frais, then Alpe Arguel via a dirt road or via Clot Rosset and by dirt road towards Clot Rosset/Clot des Anes."
+    }
+  ],
+  "days": [
+    {
+      "title": "Mountain Passes and High Ridges",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Eastern Access and High Pastures",
+      "stop_ids": [
+        "s4",
+        "s8"
+      ]
+    },
+    {
+      "title": "Western Gateways and Forest Areas",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

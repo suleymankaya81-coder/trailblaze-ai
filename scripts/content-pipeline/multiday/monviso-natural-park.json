@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Monviso",
+      "quote": "Il Parco naturale del Monviso è un'area naturale protetta; occupa 9154,00 ettari di territorio e si estende attorno al Monviso a cavallo fra la Valle Po e la Valle Varaita.",
+      "english": "The Monviso Natural Park is a protected natural area; it occupies 9154.00 hectares of territory and extends around Monviso across the Po Valley and the Varaita Valley."
+    },
+    {
+      "id": "s2",
+      "name": "Valle Po",
+      "quote": "Il Parco naturale del Monviso è un'area naturale protetta; occupa 9154,00 ettari di territorio e si estende attorno al Monviso a cavallo fra la Valle Po e la Valle Varaita.",
+      "english": "The Monviso Natural Park is a protected natural area; it occupies 9154.00 hectares of territory and extends around Monviso across the Po Valley and the Varaita Valley."
+    },
+    {
+      "id": "s3",
+      "name": "Valle Varaita",
+      "quote": "Il Parco naturale del Monviso è un'area naturale protetta; occupa 9154,00 ettari di territory e si estende attorno al Monviso a cavallo fra la Valle Po e la Valle Varaita.",
+      "english": "The Monviso Natural Park is a protected natural area; it occupies 9154.00 hectares of territory and extends around Monviso across the Po Valley and the Varaita Valley."
+    },
+    {
+      "id": "s4",
+      "name": "riserva naturale della Grotta di Rio Martino",
+      "quote": "L'Ente di gestione delle aree protette del Monviso, oltre al Parco naturale del Monviso gestisce otto aree classificate \"riserva naturale\" e alcuni siti della Rete Natura 2000 la riserva naturale della Grotta di Rio Martino (ZSC)",
+      "english": "The management body of the Monviso protected areas, in addition to the Monviso Natural Park, manages eight areas classified as \"natural reserves\" and some sites of the Natura 2000 Network, including the Rio Martino Cave natural reserve (SAC)."
+    },
+    {
+      "id": "s5",
+      "name": "Bosco dell'Alevè",
+      "quote": "la zona di protezione speciale Gruppo del Monviso e Bosco dell'Alevè (ZSC/ZPS)",
+      "english": "the special protection area of the Monviso Group and the Alevè Forest (SAC/SPA)."
+    },
+    {
+      "id": "s6",
+      "name": "Bosco del Merlino",
+      "quote": "la zona di protezione speciale del Bosco del Merlino (ZSC)",
+      "english": "the special protection area of the Merlino Forest (SAC)."
+    },
+    {
+      "id": "s7",
+      "name": "Staffarda",
+      "quote": "la zona di protezione speciale Boschi e colonie di chirotteri di Staffarda (ZSC)",
+      "english": "the special protection area of the Woods and bat colonies of Staffarda (SAC)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Peaks and Caves of the Monviso Group",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Valleys and Forests",
+      "stop_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Lowland Woods and Heritage Sites",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

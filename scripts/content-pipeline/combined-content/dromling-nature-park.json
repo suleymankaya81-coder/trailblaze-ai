@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Saxony Anhalt",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Drömling"
+        "Mittellandkanal",
+        "Aller"
       ],
       "seo_title": "Drömling Nature Park Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Drömling Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Waterways and Central Lowlands",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Drömling",
-                "stop_id": "dromling-nature-park",
-                "detail": "Drömling is a sparsely populated depression on the border of Lower Saxony and Saxony-Anhalt in Germany with an area of about 340 square kilometres (130 sq mi). The larger part belonging to Saxony-Anhalt in the east has been a nature park since 1990. The former swampland was transformed  by drainage from a natural into a cultural landscape in the 18th century under the direction of Frederick the Great of Prussia. Today the depression, with its waterways, the Mittelland Canal and the rivers Aller and Ohre is a refuge for rare or endangered animal and plant species. Most of the area is now made up of nature reserves and protected areas. Nearby towns include Oebisfelde and Wolfsburg."
+                "name": "Mittellandkanal",
+                "stop_id": "dromling-nature-park--s1",
+                "detail": "Today, the lowland with the Mittelland Canal and the rivers Aller and Ohre is a retreat for rare or endangered animal and plant species."
+              },
+              {
+                "name": "Aller",
+                "stop_id": "dromling-nature-park--s2",
+                "detail": "The Ohre, flowing through the lowlands and emptying into the Elbe, drains to the east, while the Aller touches the lowlands and drains toward the Weser."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Drömling Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Moors and Forest Reserves",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Forsthaus Giebel",
+                "stop_id": "dromling-nature-park--s5",
+                "detail": "The protected Kleine and Große Giebelmoor near the Giebel forest house (Samtgemeinde Brome in Lower Saxony) is known for a natural forest reserve with alder and birch swamp forest."
+              },
+              {
+                "name": "Jeggauer Moor",
+                "stop_id": "dromling-nature-park--s6",
+                "detail": "Typical representatives, especially in the Jeggauer Moor nature reserve, are the pillwort (Pilularia globulifera) and the floating club-rush (Eleogiton fluitans), which belong to the trench vegetation."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Drömling Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Dr%C3%B6mling"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Dr%C3%B6mling"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:13:55.527342+00:00"
       }
     }
   }

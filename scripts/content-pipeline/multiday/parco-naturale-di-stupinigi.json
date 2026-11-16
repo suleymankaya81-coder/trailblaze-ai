@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Sangone",
+      "quote": "Sul territorio si trovano due fiumi principali: il Sangone a nord e il Chisola a sud, essi presentano due morfologie di letto differente: per il Sangone rettilineo e profondo, mentre per il Chisola lo scorrimento avviene più in superficie e con un percorso più tortuoso.",
+      "english": "Two main rivers are found in the territory: the Sangone to the north and the Chisola to the south; they present two different bed morphologies: for the Sangone straight and deep, while for the Chisola the flow occurs more on the surface and with a more winding path."
+    },
+    {
+      "id": "s2",
+      "name": "Chisola",
+      "quote": "Sul territorio si trovano due fiumi principali: il Sangone a nord e il Chisola a sud, essi presentano due morfologie di letto differente: per il Sangone rettilineo e profondo, mentre per il Chisola lo scorrimento avviene più in superficie e con un percorso più tortuoso.",
+      "english": "Two main rivers are found in the territory: the Sangone to the north and the Chisola to the south; they present two different bed morphologies: for the Sangone straight and deep, while for the Chisola the flow occurs more on the surface and with a more winding path."
+    },
+    {
+      "id": "s3",
+      "name": "palazzina di caccia di Stupinigi",
+      "quote": "Il punto di maggiore interesse all'interno dei confini del parco è certamente la palazzina di caccia di Stupinigi, nel comune di Nichelino, dichiarata patrimonio dell'umanità dall'UNESCO nel 1997.",
+      "english": "The point of greatest interest within the park boundaries is certainly the Stupinigi hunting lodge, in the municipality of Nichelino, declared a UNESCO World Heritage site in 1997."
+    },
+    {
+      "id": "s4",
+      "name": "borgo rustico",
+      "quote": "Dopo la costruzione della palazzina nel Settecento andarono definendosi le prime rotte rettilinee di caccia in direzione di Drosso e di Mirafiori, i rondò, i viali di pioppi e un borgo rustico annesso al palazzo per le sue esigenze.",
+      "english": "After the construction of the building in the eighteenth century, the first straight hunting routes towards Drosso and Mirafiori, the roundabouts, the poplar avenues, and a rustic village attached to the palace for its needs were defined."
+    },
+    {
+      "id": "s5",
+      "name": "cascine storiche",
+      "quote": "Gli altri principali punti di interesse sono poi le cascine storiche, caratterizzate da corti chiuse, alcune delle quali risalenti alla fine del Quattrocento, per un totale di otto poderi rustici con strutture funzionali all'attività della caccia (canili, stalle, magazzini, ecc.) e alla vita del borgo (segheria, chiesa parrocchiale, ecc.).",
+      "english": "The other main points of interest are the historical farmhouses, characterized by closed courtyards, some of which date back to the late fifteenth century, for a total of eight rustic farms with structures functional to the hunting activity (kennels, stables, warehouses, etc.) and to the life of the village (sawmill, parish church, etc.)."
+    },
+    {
+      "id": "s6",
+      "name": "Parpaglia",
+      "quote": "Nel territorio del parco di Stupinigi sono inoltre ubicati i castelli medievali di Parpaglia (XIV sec.) e Castelvecchio.",
+      "english": "Furthermore, the medieval castles of Parpaglia (14th century) and Castelvecchio are located within the territory of the Stupinigi park."
+    },
+    {
+      "id": "s7",
+      "name": "Castelvecchio",
+      "quote": "Nel territorio del parco di Stupinigi sono inoltre ubicati i castelli medievali di Parpaglia (XIV sec.) e Castelvecchio.",
+      "english": "Furthermore, the medieval castles of Parpaglia (14th century) and Castelvecchio are located within the territory of the Stupinigi park."
+    }
+  ],
+  "days": [
+    {
+      "title": "Royal Residences and Rural Life",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Rivers and Waterways",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Medieval Fortifications",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

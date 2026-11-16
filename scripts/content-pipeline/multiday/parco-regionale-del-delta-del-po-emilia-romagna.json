@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Bosco della Mesola",
+      "quote": "Protegge zone importanti come il Bosco della Mesola, dove sopravvive una rara sottospecie di cervo nobile, la Valle Bertuzzi e la sacca di Goro.",
+      "english": "It protects important areas such as the Bosco della Mesola, where a rare subspecies of red deer survives, the Valle Bertuzzi and the sacca di Goro."
+    },
+    {
+      "id": "s2",
+      "name": "abbazia di Pomposa",
+      "quote": "Comprende anche l'abbazia di Pomposa, risalente al IX secolo.",
+      "english": "It also includes the abbey of Pomposa, dating back to the 9th century."
+    },
+    {
+      "id": "s3",
+      "name": "Comacchio",
+      "quote": "Comprende, come dice il nome, il centro di Comacchio.",
+      "english": "It includes, as the name suggests, the center of Comacchio."
+    },
+    {
+      "id": "s4",
+      "name": "saline di Comacchio",
+      "quote": "Protegge, oltre alle valli propriamente dette, anche le saline di Comacchio.",
+      "english": "It protects, in addition to the valleys themselves, the salt pans of Comacchio."
+    },
+    {
+      "id": "s5",
+      "name": "Punte Alberete",
+      "quote": "La zona più importante è il complesso palustre di Punte Alberete e Valle Mandriole, dove nidificano specie molto rare come il mignattaio, la spatola, il marangone minore e la sgarza ciuffetto, ma sono rilevanti anche la grande Pineta di San Vitale e la laguna Pialassa della Baiona.",
+      "english": "The most important area is the marshy complex of Punte Alberete and Valle Mandriole, where very rare species such as the glossy ibis, the spoonbill, the pygmy cormorant and the squacco heron nest, but the large Pineta di San Vitale and the Pialassa della Baiona lagoon are also significant."
+    },
+    {
+      "id": "s6",
+      "name": "Pineta di Classe",
+      "quote": "Comprende un complesso naturale ininterrotto dal mare all'entroterra, dall'incontaminata foce del torrente Bevano, alle paludi di Ortazzino e Ortazzo, alla Pineta di Classe; più a sud si trova la Salina di Cervia.",
+      "english": "It includes an uninterrupted natural complex from the sea to the hinterland, from the pristine mouth of the Bevano stream, to the marshes of Ortazzino and Ortazzo, to the Pineta di Classe; further south is the Salina di Cervia."
+    },
+    {
+      "id": "s7",
+      "name": "basilica di Sant'Apollinare in Classe",
+      "quote": "La stazione include anche gli scavi archeologici dell'antico porto di Classe e la basilica di Sant'Apollinare in Classe.",
+      "english": "The station also includes the archaeological excavations of the ancient port of Classe and the basilica of Sant'Apollinare in Classe."
+    },
+    {
+      "id": "s8",
+      "name": "Pieve di San Giorgio",
+      "quote": "La Pieve di San Giorgio, a Campotto, è il più antico luogo di culto della Provincia di Ferrara.",
+      "english": "The Pieve di San Giorgio, in Campotto, is the oldest place of worship in the Province of Ferrara."
+    },
+    {
+      "id": "s9",
+      "name": "centro visite di Sant'Alberto",
+      "quote": "Tra di essi, il centro visite di Sant'Alberto è anche un museo dedicato all'avifauna.",
+      "english": "Among them, the Sant'Alberto visitor center is also a museum dedicated to birdlife."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Woodlands and Abbeys",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Comacchio Salt Pans and Historic Center",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Southern Marshes, Pines and Basilicas",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ]
+}

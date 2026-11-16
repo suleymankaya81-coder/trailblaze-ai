@@ -1,0 +1,39 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Bosco della Partecipanza",
+      "quote": "Il Bosco della Partecipanza è rilevante soprattutto per la sua collocazione, isolata in mezzo a una vastissima area di risaie.",
+      "english": "The Bosco della Partecipanza is relevant above all for its location, isolated in the middle of a vast area of rice fields."
+    },
+    {
+      "id": "s2",
+      "name": "Abbazia di Santa Maria di Lucedio",
+      "quote": "Abbazia di Santa Maria di Lucedio",
+      "english": "Abbey of Santa Maria di Lucedio"
+    },
+    {
+      "id": "s3",
+      "name": "Abbazia di Montarolo",
+      "quote": "Abbazia di Montarolo",
+      "english": "Abbey of Montarolo"
+    },
+    {
+      "id": "s4",
+      "name": "Madonna delle Vigne",
+      "quote": "Madonna delle Vigne",
+      "english": "Our Lady of the Vineyards"
+    }
+  ],
+  "days": [
+    {
+      "title": "Natural Woods and Historical Religious Sites",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

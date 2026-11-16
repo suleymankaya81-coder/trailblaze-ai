@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "lago di Piediluco",
+      "quote": "Nei pressi della frazione di Marmore, il Velino defluisce dal lago di Piediluco e si tuffa nella sottostante gola del Nera formando le cascate.",
+      "english": "Near the village of Marmore, the Velino flows out of Lake Piediluco and plunges into the underlying Nera gorge, forming the waterfalls."
+    },
+    {
+      "id": "s2",
+      "name": "gola del Nera",
+      "quote": "Nei pressi della frazione di Marmore, il Velino defluisce dal lago di Piediluco e si tuffa nella sottostante gola del Nera formando le cascate.",
+      "english": "Near the village of Marmore, the Velino flows out of Lake Piediluco and plunges into the underlying Nera gorge, forming the waterfalls."
+    },
+    {
+      "id": "s3",
+      "name": "belvedere inferiore",
+      "quote": "L'accesso al parco è possibile dal basso (belvedere inferiore) e dall'alto (belvedere superiore) con pagamento di un biglietto.",
+      "english": "Access to the park is possible from below (lower viewpoint) and from above (upper viewpoint) upon payment of a ticket."
+    },
+    {
+      "id": "s4",
+      "name": "belvedere superiore",
+      "quote": "Diversi sentieri percorrono il parco ed è possibile andare a piedi tra i due belvedere, sia in salita che in discesa.",
+      "english": "Several paths run through the park and it is possible to walk between the two viewpoints, both uphill and downhill."
+    },
+    {
+      "id": "s5",
+      "name": "Grotte",
+      "quote": "Alcune grotte sono visitabili e rappresentano un aspetto ancora poco conosciuto della cascata delle Marmore.",
+      "english": "Some caves can be visited and represent a still little-known aspect of the Marmore Falls."
+    },
+    {
+      "id": "s6",
+      "name": "Centro di Educazione Ambientale",
+      "quote": "L'area della Cascata delle Marmore è attrezzata con sentieri di visita, Centro di Educazione Ambientale e servizi.",
+      "english": "The Marmore Falls area is equipped with visiting trails, an Environmental Education Centre, and services."
+    },
+    {
+      "id": "s7",
+      "name": "Torreorsina",
+      "quote": "Una vista panoramica della cascata si può ammirare dal borgo medievale di Torreorsina, unico paese della Valnerina che si affaccia direttamente su di essa.",
+      "english": "A panoramic view of the waterfall can be admired from the medieval village of Torreorsina, the only town in the Valnerina that directly overlooks it."
+    }
+  ],
+  "days": [
+    {
+      "title": "Water Sources and Panoramic Views",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Park Discovery and Viewpoints",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

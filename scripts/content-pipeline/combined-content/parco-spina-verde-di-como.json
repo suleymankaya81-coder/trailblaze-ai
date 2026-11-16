@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lombardy",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco Spina Verde di Como"
+        "Sito di Pianvalle",
+        "Roccia di Pianvalle",
+        "Fonte della Mojenca"
       ],
       "seo_title": "Parco Spina Verde di Como Visit Guide"
     },
@@ -32,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco Spina Verde di Como",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Protohistoric Settlements and Sacred Waters",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco Spina Verde di Como",
-                "stop_id": "parco-spina-verde-di-como",
-                "detail": "The Parco Spina Verde di Como is a regional natural park in Lombardy, northern Italy. It covers a hill ridge overlooking the town of Como, and borders on its northern side with Switzerland. It is in the town territory of Como (east) and the nearby municipalities of Colverde (west) and San Fermo della Battaglia (south). It was established in 1993 by a Regional Act (L. R. n. 10/1993) and is administered by the Region of Lombardy. It takes its name from the elevated ridge upon which it stretches, called Spina Verde (green thorn). The park administration is in Villa Imbonati, in San Fermo della Battaglia. Part of the park borders Switzerland and, in particular, the Penz Hill park."
+                "name": "Sito di Pianvalle",
+                "stop_id": "parco-spina-verde-di-como--s1",
+                "detail": "Of notable interest is the site of Pianvalle, on Monte Croce (via Monte Croce, municipality of Como)."
+              },
+              {
+                "name": "Roccia di Pianvalle",
+                "stop_id": "parco-spina-verde-di-como--s2",
+                "detail": "Immediately beside the protohistoric settlement, the rock of Pianvalle (a vertical outcrop of gonfolite) has aroused the interest of experts for its notable carvings: cup marks (small semicircular cavities, very common in the Alpine area), spirals, geometric and serpentiform motifs, of uncertain, perhaps ritual or social meaning."
+              },
+              {
+                "name": "Fonte della Mojenca",
+                "stop_id": "parco-spina-verde-di-como--s3",
+                "detail": "Remaining in the Municipality of Como, another site of notable interest is the so-called source of Mojenca (whose name could derive from the Celtic words muit or moier, or from the Lombard möi or moia, terms that all indicate a place rich in water)."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco Spina Verde di Como before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Rock-cut Chambers and Military Borders",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Camera Grande",
+                "stop_id": "parco-spina-verde-di-como--s4",
+                "detail": "From the Leno locality of the Prestino district, it is possible to reach two large rectangular chambers of the late Bronze Age (10th-9th century BC) carved into the living rock of the hill: the Camera Grande, measuring 8.71 m × 5.05 m, and the smaller Camera Carugo."
+              },
+              {
+                "name": "Camera Carugo",
+                "stop_id": "parco-spina-verde-di-como--s5",
+                "detail": "The Camera Grande had residential functions, while for the Camera Carugo it is presumed to have been a room used for metalworking."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco Spina Verde di Como before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +109,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Parco_Spina_Verde_di_Como"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_regionale_Spina_Verde"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:07:02.020916+00:00"
       }
     }
   }

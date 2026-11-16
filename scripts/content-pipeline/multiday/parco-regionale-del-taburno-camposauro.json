@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "massiccio del Taburno Camposauro",
+      "quote": "Occupa una superficie di 12370 ha sul massiccio del Taburno Camposauro nella provincia di Benevento e comprende i comuni di Bonea, Bucciano, Cautano, Foglianise, Frasso Telesino, Melizzano, Moiano, Montesarchio, Paupisi, Sant'Agata De' Goti, Solopaca, Tocco Caudio, Torrecuso e Vitulano.",
+      "english": "It occupies an area of 12,370 hectares on the Taburno Camposauro massif in the province of Benevento and includes the municipalities of Bonea, Bucciano, Cautano, Foglianise, Frasso Telesino, Melizzano, Moiano, Montesarchio, Paupisi, Sant'Agata De' Goti, Solopaca, Tocco Caudio, Torrecuso and Vitulano."
+    },
+    {
+      "id": "s2",
+      "name": "faggete",
+      "quote": "A livello delle sorgenti e delle zone umide in quota più bassa è presente la raganella italiana (Hyla intermedia) mentre, invece, un po' ovunque nelle faggete e lungo pozze, sorgenti e torrenti, si trova la rana appenninica (Rana italica).",
+      "english": "At the level of springs and wetlands at lower altitudes the Italian tree frog (Hyla intermedia) is present while, instead, just about everywhere in the beech forests and along pools, springs and streams, the Apennine frog (Rana italica) is found."
+    },
+    {
+      "id": "s3",
+      "name": "borghi collinari",
+      "quote": "Dal lato dell'antropizzazione, la presenza dei borghi collinari e lo stile di vita in armonia con il territorio favoriscono specie dall'ecologia più plastica.",
+      "english": "On the side of anthropization, the presence of the hillside villages and the lifestyle in harmony with the territory favor species with a more plastic ecology."
+    },
+    {
+      "id": "s4",
+      "name": "foresta demaniale",
+      "quote": "Nidificano in aree boscate, specialmente faggete e l'abetina di abete bianco della foresta demaniale, anche cincia mora (Periparus ater) e cincia bigia (Poecile palustris), più rara.",
+      "english": "The coal tit (Periparus ater) and the rarer marsh tit (Poecile palustris) also nest in wooded areas, especially beech forests and the silver fir woods of the state forest."
+    },
+    {
+      "id": "s5",
+      "name": "ambienti rupestri",
+      "quote": "Ambienti rupestri, prati e pascoli di quota sono sorvolati da corvo imperiale (Corvus corax), allodola (Alauda arvensis), codirosso spazzacamino (Phoenicurus ochruros) e rondini (Hirundinidae).",
+      "english": "Rocky environments, high-altitude meadows and pastures are flown over by the common raven (Corvus corax), skylark (Alauda arvensis), black redstart (Phoenicurus ochruros) and swallows (Hirundinidae)."
+    },
+    {
+      "id": "s6",
+      "name": "querceti",
+      "quote": "L'ambiente submontano, grazie anche a ghiande e altri frutti dei querceti e dei boschi misti, è l'habitat di moscardino (Muscardinus avellanarius).",
+      "english": "The sub-mountain environment, thanks also to acorns and other fruits of the oak groves and mixed woods, is the habitat of the hazel dormouse (Muscardinus avellanarius)."
+    },
+    {
+      "id": "s7",
+      "name": "corsi d'acqua",
+      "quote": "Le sponde dei corsi d'acqua costituiscono invece un habitat ideale per l'arvicola (Arvicola amphibius).",
+      "english": "The banks of the watercourses instead constitute an ideal habitat for the water vole (Arvicola amphibius)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Massif Peaks and State Forests",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Beech Forests and Hillside Villages",
+      "stop_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Oak Groves and Waterways",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

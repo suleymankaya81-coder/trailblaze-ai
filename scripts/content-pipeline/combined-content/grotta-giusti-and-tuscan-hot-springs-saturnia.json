@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Tuscany",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Terme di Saturnia"
+        "Terme di Saturnia",
+        "piscina sorgente"
       ],
       "seo_title": "Grotta Giusti and Tuscan hot springs Saturnia Visit Guide"
     },
@@ -32,16 +33,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Grotta Giusti and Tuscan hot springs Saturnia",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Thermal Springs and Historic Resort",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
                 "name": "Terme di Saturnia",
-                "stop_id": "grotta-giusti-and-tuscan-hot-springs-saturnia",
-                "detail": "Terme di Saturnia is an international thermal park in the Maremma of Grosseto, formed by a hydrothermal spring that flows at a constant temperature of 37.5 degrees. The spring, in addition to providing the aforementioned thermal park, feeds, downstream and with a lower water temperature, also the Waterfalls of the Mill, free access. The complex is located in Follonata, near Saturnia, in the town of Manciano, in the province of Grosseto."
+                "stop_id": "grotta-giusti-and-tuscan-hot-springs-saturnia--s1",
+                "detail": "The Terme di Saturnia constitute a thermal park of international importance in the Grosseto Maremma, formed by a hydrothermal spring that gushes at a constant temperature of 37.5 degrees."
+              },
+              {
+                "name": "piscina sorgente",
+                "stop_id": "grotta-giusti-and-tuscan-hot-springs-saturnia--s3",
+                "detail": "The water flow is almost 800 liters per second: this allows the source pool and the thermal park pools a complete replacement every 4 hours, 6 times a day, making it uncontaminated."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Grotta Giusti and Tuscan hot springs Saturnia before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Natural Waterfalls and Ancient Routes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Cascate del Mulino",
+                "stop_id": "grotta-giusti-and-tuscan-hot-springs-saturnia--s2",
+                "detail": "The spring, in addition to supplying the aforementioned thermal park, also feeds the Cascate del Mulino downstream, which have free access and a lower water temperature."
+              },
+              {
+                "name": "Saturnia",
+                "stop_id": "grotta-giusti-and-tuscan-hot-springs-saturnia--s4",
+                "detail": "The complex is located in the locality of Follonata, near Saturnia, in the municipality of Manciano, in the province of Grosseto."
+              },
+              {
+                "name": "via Clodia",
+                "stop_id": "grotta-giusti-and-tuscan-hot-springs-saturnia--s7",
+                "detail": "Travelers stopped there while traveling along the Via Clodia and Roman Patricians chose it for their healthy holidays."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Grotta Giusti and Tuscan hot springs Saturnia before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +108,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Terme_di_Saturnia"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Terme_di_Saturnia"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:55:34.337923+00:00"
       }
     }
   }

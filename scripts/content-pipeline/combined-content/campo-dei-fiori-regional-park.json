@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lombardy",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Campo dei Fiori Regional Park"
+        "Masso erratico di Brinzio",
+        "Cascata del Pesegh"
       ],
       "seo_title": "Campo dei Fiori Regional Park Visit Guide"
     },
@@ -32,16 +33,57 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Campo dei Fiori Regional Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Natural Wonders of Brinzio",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Campo dei Fiori Regional Park",
-                "stop_id": "campo-dei-fiori-regional-park",
-                "detail": "The Campo dei Fiori Regional Park (Italian: Parco regionale Campo dei Fiori) is a nature reserve in Lombardy, Italy. Established in 1984 and enlarged in [dated source], it comprises the Campo dei Fiori and Martica massifs in the Varese Prealps, between the Valganna, the Valcuvia and the city of Varese."
+                "name": "Masso erratico di Brinzio",
+                "stop_id": "campo-dei-fiori-regional-park--s1",
+                "detail": "Erratic boulder of Brinzio: a large gneiss boulder transported and deposited by glaciers in the Intrino valley, on the northern slope of Campo dei Fiori."
+              },
+              {
+                "name": "Cascata del Pesegh",
+                "stop_id": "campo-dei-fiori-regional-park--s2",
+                "detail": "Pesegh Waterfall: formed by the junction of the waters of the Brivola and Valmolina streams, Brinzio."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Campo dei Fiori Regional Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Valleys and Peaks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Forre della Valganna",
+                "stop_id": "campo-dei-fiori-regional-park--s6",
+                "detail": "Valganna Gorges: deep incisions with steep walls, eroded by water, north of the Valganna Caves."
+              },
+              {
+                "name": "Monte Martica",
+                "stop_id": "campo-dei-fiori-regional-park--s7",
+                "detail": "Monte Martica is also part of the C.d.F. complex; it can be traveled to the summit thanks to a military road and is connected to Monte Chiusarella."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Campo dei Fiori Regional Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Architecture and Springs",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Marmitte dei giganti del torrente Vellone",
+                "stop_id": "campo-dei-fiori-regional-park--s8",
+                "detail": "Giant's kettles of the Vellone stream: abrasion forms produced by water erosion, Velate."
+              },
+              {
+                "name": "Fonte del Ceppo",
+                "stop_id": "campo-dei-fiori-regional-park--s9",
+                "detail": "Ceppo Spring: a karst spring active all year round, Santa Maria del Monte."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Campo dei Fiori Regional Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +121,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Campo_dei_Fiori_Regional_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_regionale_Campo_dei_Fiori"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:53:38.908511+00:00"
       }
     }
   }

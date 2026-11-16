@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lake Spitzingsee",
+      "quote": "In the early morning, the banks of fog quietly push their way through the powdered spruces around the snow-covered Lake Spitzingsee.",
+      "english": "In the early morning, the banks of fog quietly push their way through the powdered spruces around the snow-covered Lake Spitzingsee."
+    },
+    {
+      "id": "s2",
+      "name": "Spitzingsattel",
+      "quote": "They glide between the steep flanks of Mounts Brecherspitze and Jägerkamp over the Spitzingsattel down into the Alpine foothills.",
+      "english": "They glide between the steep flanks of Mounts Brecherspitze and Jägerkamp over the Spitzingsattel down into the Alpine foothills."
+    },
+    {
+      "id": "s3",
+      "name": "Mounts Brecherspitze",
+      "quote": "They glide between the steep flanks of Mounts Brecherspitze and Jägerkamp over the Spitzingsattel down into the Alpine foothills.",
+      "english": "They glide between the steep flanks of Mounts Brecherspitze and Jägerkamp over the Spitzingsattel down into the Alpine foothills."
+    },
+    {
+      "id": "s4",
+      "name": "Jägerkamp",
+      "quote": "Antonia Rüede-Passul is assigned to the Jägerkamp.",
+      "english": "Antonia Rüede-Passul is assigned to the Jägerkamp."
+    },
+    {
+      "id": "s5",
+      "name": "Lake Tegernsee",
+      "quote": "On a sunny Saturday morning, after the people of Munich have finished their second latte, got into the car and joined the caravan heading south, addicted to the mountains, it can get crowded a little later around Lake Tegernsee and Lake Schliersee.",
+      "english": "On a sunny Saturday morning, after the people of Munich have finished their second latte, got into the car and joined the caravan heading south, addicted to the mountains, it can get crowded a little later around Lake Tegernsee and Lake Schliersee."
+    },
+    {
+      "id": "s6",
+      "name": "Lake Schliersee",
+      "quote": "View from the Jägerkamp onto Lake Schliersee and the Pre-Alps",
+      "english": "View from the Jägerkamp onto Lake Schliersee and the Pre-Alps"
+    },
+    {
+      "id": "s7",
+      "name": "Wörth Island",
+      "quote": "Lake Schliersee with Wörth Island",
+      "english": "Lake Schliersee with Wörth Island"
+    },
+    {
+      "id": "s8",
+      "name": "Taubenstein",
+      "quote": "“From my point of view, sanctioning should never be the first step,” says Thorsten Schär, whom I meet a little later at the valley station of the Taubenstein, the starting point of the tours on the Jägerkamp.",
+      "english": "“From my point of view, sanctioning should never be the first step,” says Thorsten Schär, whom I meet a little later at the valley station of the Taubenstein, the starting point of the tours on the Jägerkamp."
+    },
+    {
+      "id": "s9",
+      "name": "Wendelstein",
+      "quote": "Especially around the so-called Munich local mountains between Wendelstein and Tegernsee, things are getting tight.",
+      "english": "Especially around the so-called Munich local mountains between Wendelstein and Tegernsee, things are getting tight."
+    }
+  ],
+  "days": [
+    {
+      "title": "Spitzingsee Peaks and Passes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s8"
+      ]
+    },
+    {
+      "title": "Jägerkamp Summits and Schliersee Views",
+      "stop_ids": [
+        "s4",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Regional Lakes and Mountains",
+      "stop_ids": [
+        "s5",
+        "s9"
+      ]
+    }
+  ]
+}

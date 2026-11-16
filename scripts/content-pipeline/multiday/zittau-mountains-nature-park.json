@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lausche",
+      "quote": "Besondere Beachtung verdient daneben das Reliktvorkommen der Alpenspitzmaus (Sorex alpinus) auf dem Gipfel der Lausche.",
+      "english": "In addition, the relict occurrence of the Alpine shrew (Sorex alpinus) on the summit of the Lausche deserves special attention."
+    },
+    {
+      "id": "s2",
+      "name": "Jonsdorfer Felsenstadt",
+      "quote": "Der Schutzzone I mit 1.207 Hektar (9,05 %) umfasst die Gebiete mit besonders wertvoller Naturausstattung, so die Naturschutzgebiete „Lausche“, „Jonsdorfer Felsenstadt“ sowie folgende weitere Gebiete:",
+      "english": "Protection Zone I, covering 1,207 hectares (9.05%), includes areas with particularly valuable natural features, such as the nature reserves \"Lausche\" and \"Jonsdorfer Felsenstadt\" as well as the following other areas:"
+    },
+    {
+      "id": "s3",
+      "name": "Pochebachtal",
+      "quote": "Der Schutzzone I mit 1.207 Hektar (9,05 %) umfasst die Gebiete mit besonders wertvoller Naturausstattung, so die Naturschutzgebiete „Lausche“, „Jonsdorfer Felsenstadt“ sowie folgende weitere Gebiete: Feuchtgebiet Eichgraben, Pochewiesen, Pochebachtal, Jonsberg, Ostabfall Ameisenberg, Kleiner Töpfer, Felsengasse Schindellöcher, Dachslöcher, Hainberg, Nordostabfall Hochwald, Uhusteine, Fuchskanzel Roschertal, Gampenstein, Spitzberg, Schülertal, Südflur Seifhennersdorf, Landwasser zwischen B96 und Mandau.",
+      "english": "Protection Zone I with 1,207 hectares (9.05%) includes areas with particularly valuable natural features, such as the nature reserves \"Lausche\", \"Jonsdorfer Felsenstadt\" as well as the following other areas: Eichgraben wetland, Pochewiesen, Pochebachtal, Jonsberg, east slope of Ameisenberg, Kleiner Töpfer, Felsengasse Schindellöcher, Dachslöcher, Hainberg, northeast slope of Hochwald, Uhusteine, Fuchskanzel Roschertal, Gampenstein, Spitzberg, Schülertal, Seifhennersdorf southern fields, Landwasser between B96 and Mandau."
+    },
+    {
+      "id": "s4",
+      "name": "Jonsberg",
+      "quote": "Der Schutzzone I mit 1.207 Hektar (9,05 %) umfasst die Gebiete mit besonders wertvoller Naturausstattung, so die Naturschutzgebiete „Lausche“, „Jonsdorfer Felsenstadt“ sowie folgende weitere Gebiete: Feuchtgebiet Eichgraben, Pochewiesen, Pochebachtal, Jonsberg, Ostabfall Ameisenberg, Kleiner Töpfer, Felsengasse Schindellöcher, Dachslöcher, Hainberg, Nordostabfall Hochwald, Uhusteine, Fuchskanzel Roschertal, Gampenstein, Spitzberg, Schülertal, Südflur Seifhennersdorf, Landwasser zwischen B96 und Mandau.",
+      "english": "Protection Zone I with 1,207 hectares (9.05%) includes areas with particularly valuable natural features, such as the nature reserves \"Lausche\", \"Jonsdorfer Felsenstadt\" as well as the following other areas: Eichgraben wetland, Pochewiesen, Pochebachtal, Jonsberg, east slope of Ameisenberg, Kleiner Töpfer, Felsengasse Schindellöcher, Dachslöcher, Hainberg, northeast slope of Hochwald, Uhusteine, Fuchskanzel Roschertal, Gampenstein, Spitzberg, Schülertal, Seifhennersdorf southern fields, Landwasser between B96 and Mandau."
+    },
+    {
+      "id": "s5",
+      "name": "Tagebaus Olbersdorf",
+      "quote": "für die Brachflächen im Umfeld des ehemaligen Tagebaus Olbersdorf: Schwarzkehlchen (Saxicola torquata),",
+      "english": "for the fallow areas in the vicinity of the former Olbersdorf open-cast mine: Stonechat (Saxicola torquata),"
+    },
+    {
+      "id": "s6",
+      "name": "Mandau",
+      "quote": "Bemerkenswert sind u. a. Libellenarten wie die Nordische Moosjungfer (Leucorrhinia rubicunda), seltene Käferarten wie der Große Eichenbock (Cerambyx cerdo) (Art des Anhangs II der FFH-RL) und der Rostbeinige Fleckenbock (Evodinus clathratus), Schmetterlinge wie der Dunkle Wiesenknopf-Ameisenbläuling (Glaucopsyche nausithous) (Art des Anhangs II der FFH-RL) sowie das Vorkommen der Gemeinen Flussmuschel (Unio crassus) (Art des Anhangs II der FFH-RL) in der Mandau.",
+      "english": "Notable species include dragonfly species such as the ruby whiteface (Leucorrhinia rubicunda), rare beetle species such as the great capricorn beetle (Cerambyx cerdo) and the Rostbeiniger Fleckenbock (Evodinus clathratus), butterflies such as the dusky large blue (Glaucopsyche nausithous), and the occurrence of the thick-shelled river mussel (Unio crassus) in the Mandau."
+    },
+    {
+      "id": "s7",
+      "name": "Mandautal",
+      "quote": "Die Schutzzone II mit 7.518 Hektar (56,37 %) umfasst die Landschaftsschutzgebiete „Zittauer Gebirge“ und „Mandautal“.",
+      "english": "Protection Zone II, covering 7,518 hectares (56.37%), comprises the landscape conservation areas \"Zittauer Gebirge\" and \"Mandautal\"."
+    }
+  ],
+  "days": [
+    {
+      "title": "Peaks and Rock Cities of Jonsdorf",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s4"
+      ]
+    },
+    {
+      "title": "Valleys and Waters of the Mandau",
+      "stop_ids": [
+        "s3",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Mining History and Reclaimed Landscapes",
+      "stop_ids": [
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "7499ae6d0d01b5fa6c35493a98cca57ea3a27d72142bf62b664615a84cb3340b"
+}

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Schleswig Holstein",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Föhr"
+        "Wyk",
+        "Sandwall"
       ],
       "seo_title": "Island of Föhr Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Island of Föhr",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Town Life and Coastal Views in Wyk",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Föhr",
-                "stop_id": "island-of-fohr",
-                "detail": "Föhr (German pronunciation: [føːɐ̯] ; Fering North Frisian: Feer; Danish: Før) is one of the North Frisian Islands on the German coast of the North Sea. It is part of the Nordfriesland district in the federal state of Schleswig-Holstein. Föhr is the second-largest North Sea island of Germany and a popular destination for tourists. A town and eleven distinct municipalities are located on the island. The climate is oceanic with moderate winters and relatively cool summers."
+                "name": "Wyk",
+                "stop_id": "island-of-fohr--s1",
+                "detail": "In the southeast of the island lies the only city and main town Wyk (Fering: bi a Wik), which is a state-recognized North Sea spa resort."
+              },
+              {
+                "name": "Sandwall",
+                "stop_id": "island-of-fohr--s3",
+                "detail": "The newly married couple stayed at the Sandwall, from where there was a wide view of the North Sea and the chain of terps of Hallig Langeness."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Island of Föhr before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Historical Villages and Heritage Houses",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Nieblum",
+                "stop_id": "island-of-fohr--s4",
+                "detail": "Even today, sumptuously furnished houses of the commanders can be seen in Nieblum and Süderende."
+              },
+              {
+                "name": "Goting",
+                "stop_id": "island-of-fohr--s6",
+                "detail": "Stone graves, for example between Goting and Nieblum, and numerous small finds also bear witness to this on Föhr."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Island of Föhr before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/F%C3%B6hr"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/F%C3%B6hr"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:15:34.317034+00:00"
       }
     }
   }

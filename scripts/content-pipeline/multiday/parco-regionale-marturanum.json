@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Fiume Biedano",
+      "quote": "L'area è pertanto caratterizzata da grandi valloni tufacei, ricoperti di fitta vegetazione, ove scorrono due principali corsi d'acqua: il Fiume Biedano e il Fiume Vesca.",
+      "english": "The area is therefore characterized by large tuff valleys, covered with dense vegetation, where two main watercourses flow: the Biedano River and the Vesca River."
+    },
+    {
+      "id": "s2",
+      "name": "Fiume Vesca",
+      "quote": "L'area è pertanto caratterizzata da grandi valloni tufacei, ricoperti di fitta vegetazione, ove scorrono due principali corsi d'acqua: il Fiume Biedano e il Fiume Vesca.",
+      "english": "The area is therefore characterized by large tuff valleys, covered with dense vegetation, where two main watercourses flow: the Biedano River and the Vesca River."
+    },
+    {
+      "id": "s3",
+      "name": "Tomba del Cervo",
+      "quote": "Ne consegue nuova linfa in favore degli abitanti più umili, testimoniata dalla ricchezza di alcuni corredi funerari appartenenti a folti gruppi familiari, tra tutti spiccano quello della Tomba del Cervo, caratterizzata dalla grande camera a semi-dado, e delle tombe Thanzinas, destinate ad ospitare decine di sarcofagi appartenenti alla stessa famiglia.",
+      "english": "This resulted in new life for the humbler inhabitants, evidenced by the richness of some funerary items belonging to large family groups, most notably that of the Tomb of the Deer, characterized by the large semi-cube chamber, and the Thanzinas tombs, intended to house dozens of sarcophagi belonging to the same family."
+    },
+    {
+      "id": "s4",
+      "name": "San Giuliano",
+      "quote": "In cerca di rifugio gli abitanti di questi luoghi si arroccano sull'altura di San Giuliano, ove si possono osservare alte mura difensive in tufo.",
+      "english": "In search of refuge, the inhabitants of these places took a stand on the San Giuliano height, where high tuff defensive walls can be observed."
+    },
+    {
+      "id": "s5",
+      "name": "Via Clodia",
+      "quote": "I Romani dopo la conquista provvedeno all'ampliamento e alla modernizzazione dei sentieri etruschi, in particolare nel parco si trovano i resti della Via Clodia, indispensabile via di collegamento tra Roma e l'Etruria.",
+      "english": "After the conquest, the Romans saw to the expansion and modernization of the Etruscan paths; in particular, the remains of the Via Clodia, an indispensable connection route between Rome and Etruria, are found in the park."
+    },
+    {
+      "id": "s6",
+      "name": "Centro Visite",
+      "quote": "Oltre alle strutture operative (Uffici, Centro Visite e museo naturalistico, in Viale IV Novembre), l'area protetta dispone nel borgo medievale di un Ostello e di una Foresteria.",
+      "english": "In addition to the operational structures (Offices, Visitor Centre and naturalistic museum, in Viale IV Novembre), the protected area has a Hostel and a Guest House in the medieval village."
+    },
+    {
+      "id": "s7",
+      "name": "monte Regolano",
+      "quote": "Sempre partendo dal centro storico è possibile percorrere tratti della Via Clodia facendo il periplo dell'area SO salendo a monte Regolano e monte Mandrione tramite i sentieri CAI 103A, 138B e 105.",
+      "english": "Always starting from the historic center, it is possible to walk sections of the Via Clodia, circling the SW area by climbing Mount Regolano and Mount Mandrione via CAI trails 103A, 138B, and 105."
+    },
+    {
+      "id": "s8",
+      "name": "monte Mandrione",
+      "quote": "Sempre partendo dal centro storico è possibile percorrere tratti della Via Clodia facendo il periplo dell'area SO salendo a monte Regolano e monte Mandrione tramite i sentieri CAI 103A, 138B e 105.",
+      "english": "Always starting from the historic center, it is possible to walk sections of the Via Clodia, circling the SW area by climbing Mount Regolano and Mount Mandrione via CAI trails 103A, 138B, and 105."
+    }
+  ],
+  "days": [
+    {
+      "title": "Rivers and Park Services",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s6"
+      ]
+    },
+    {
+      "title": "Archeology and History of San Giuliano",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Mountain Peaks and Hiking",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

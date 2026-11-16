@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Titisee",
+      "quote": "Der Titisee ist ein See im südlichen Schwarzwald in Baden-Württemberg.",
+      "english": "The Titisee is a lake in the southern Black Forest in Baden-Württemberg."
+    },
+    {
+      "id": "s2",
+      "name": "Strandbad",
+      "quote": "Die Wasserqualität des Titisees wird an den beiden Badestellen Strandbad und Sandbank während der Badesaison regelmäßig mit Wasserproben kontrolliert.",
+      "english": "The water quality of the Titisee is regularly checked with water samples at the two bathing areas Strandbad and Sandbank during the swimming season."
+    },
+    {
+      "id": "s3",
+      "name": "Sandbank",
+      "quote": "Die Wasserqualität des Titisees wird an den beiden Badestellen Strandbad und Sandbank während der Badesaison regelmäßig mit Wasserproben kontrolliert.",
+      "english": "The water quality of the Titisee is regularly checked with water samples at the two bathing areas Strandbad and Sandbank during the swimming season."
+    },
+    {
+      "id": "s4",
+      "name": "Uferpromenade",
+      "quote": "Schwärme von Rotaugen und Döbel finden sich vermehrt am Auslauf der Uferpromenade, wo Passanten Wasservögel mit Brot füttern.",
+      "english": "Schools of common roach and chub are found increasingly at the outlet of the lakeside promenade, where passers-by feed water birds with bread."
+    },
+    {
+      "id": "s5",
+      "name": "Jugendherberge Veltishof",
+      "quote": "Am nordwestlichen Ende liegt die Jugendherberge Veltishof.",
+      "english": "The Veltishof youth hostel is located at the northwestern end."
+    },
+    {
+      "id": "s6",
+      "name": "Bärental",
+      "quote": "Gespeist wird er von dem das Bärental durchfließenden Seebach, der am Seebuck, am Osthang des Feldberg-Massivs, dem Feldsee entspringt.",
+      "english": "It is fed by the Seebach flowing through the Bärental valley, which originates at the Seebuck, on the eastern slope of the Feldberg massif, from the Feldsee."
+    },
+    {
+      "id": "s7",
+      "name": "Feldsee",
+      "quote": "Gleiches erzählt man sich auch vom Feldsee.",
+      "english": "The same is said about the Feldsee."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lake Activities and Promenade",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Northern Shore and Surrounding Valleys",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

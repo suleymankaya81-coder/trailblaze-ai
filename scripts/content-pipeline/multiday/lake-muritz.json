@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Müritz-Nationalpark",
+      "quote": "Im Osten grenzt an den See der Müritz-Nationalpark an, Deutschlands größter terrestrischer Nationalpark.",
+      "english": "In the east, the Müritz National Park, Germany's largest terrestrial national park, borders the lake."
+    },
+    {
+      "id": "s2",
+      "name": "Binnenmüritz",
+      "quote": "An der Stadt Waren (Müritz) im Norden des Sees befindet sich die Binnenmüritz mit der tiefsten Stelle des Sees (−31 m), die nur eine schmale Verbindung mit dem Hauptbecken der Müritz aufweist.",
+      "english": "At the town of Waren (Müritz) in the north of the lake is the Binnenmüritz with the lake's deepest point (−31 m), which has only a narrow connection to the main basin of the Müritz."
+    },
+    {
+      "id": "s3",
+      "name": "Kleine Müritz",
+      "quote": "Im Süden des Sees liegt die Kleine Müritz, von der nach Süden der Müritzarm mit dem Müritzsee an seinem Ende abzweigt.",
+      "english": "In the south of the lake lies the Kleine Müritz, from which the Müritzarm branches off to the south with the Müritzsee at its end."
+    },
+    {
+      "id": "s4",
+      "name": "Waren (Müritz)",
+      "quote": "Die größte Stadt an der Müritz ist Waren (Müritz).",
+      "english": "The largest town on the Müritz is Waren (Müritz)."
+    },
+    {
+      "id": "s5",
+      "name": "Röbel/Müritz",
+      "quote": "Weitere Orte sind (im Uhrzeigersinn) Rechlin, Priborn, Vipperow, Ludorf, Röbel/Müritz, Gotthun, Sietow und Klink.",
+      "english": "Other towns are (clockwise) Rechlin, Priborn, Vipperow, Ludorf, Röbel/Müritz, Gotthun, Sietow and Klink."
+    },
+    {
+      "id": "s6",
+      "name": "Großer Schwerin",
+      "quote": "Als Naturschutzgebiete sind die Halbinseln Großer Schwerin und Steinhorn sowie deren Umfeld im Südwesten und das Müritzsteilufer bei Rechlin im Südosten des Sees ausgewiesen.",
+      "english": "The peninsulas of Großer Schwerin and Steinhorn and their surroundings in the southwest, as well as the Müritz steep bank near Rechlin in the southeast of the lake, are designated as nature reserves."
+    },
+    {
+      "id": "s7",
+      "name": "Steinhorn",
+      "quote": "Als Naturschutzgebiete sind die Halbinseln Großer Schwerin und Steinhorn sowie deren Umfeld im Südwesten und das Müritzsteilufer bei Rechlin im Südosten des Sees ausgewiesen.",
+      "english": "The peninsulas of Großer Schwerin and Steinhorn and their surroundings in the southwest, as well as the Müritz steep bank near Rechlin in the southeast of the lake, are designated as nature reserves."
+    },
+    {
+      "id": "s8",
+      "name": "Müritzsteilufer",
+      "quote": "Als Naturschutzgebiete sind die Halbinseln Großer Schwerin und Steinhorn sowie deren Umfeld im Südwesten und das Müritzsteilufer bei Rechlin im Südosten des Sees ausgewiesen.",
+      "english": "The peninsulas of Großer Schwerin and Steinhorn and their surroundings in the southwest, as well as the Müritz steep bank near Rechlin in the southeast of the lake, are designated as nature reserves."
+    },
+    {
+      "id": "s9",
+      "name": "Rechlin",
+      "quote": "Weitere Orte sind (im Uhrzeigersinn) Rechlin, Priborn, Vipperow, Ludorf, Röbel/Müritz, Gotthun, Sietow und Klink.",
+      "english": "Other towns are (clockwise) Rechlin, Priborn, Vipperow, Ludorf, Röbel/Müritz, Gotthun, Sietow and Klink."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Bays and Main Town",
+      "stop_ids": [
+        "s2",
+        "s4"
+      ]
+    },
+    {
+      "title": "Southern Nature and Settlements",
+      "stop_ids": [
+        "s3",
+        "s8",
+        "s9"
+      ]
+    },
+    {
+      "title": "Western Shores and National Park",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "b010ce6e174f97bbc25548194409e1e1d63cb7c00d2ec5cbfbe1a7fd0b694d5c"
+}

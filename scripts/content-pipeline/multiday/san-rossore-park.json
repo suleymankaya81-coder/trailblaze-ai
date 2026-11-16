@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lago di Massaciuccoli",
+      "quote": "L'area del Massaciuccoli comprende il lago e l'area palustre che lo circonda.",
+      "english": "The Massaciuccoli area includes the lake and the marshy area surrounding it."
+    },
+    {
+      "id": "s2",
+      "name": "Macchia Lucchese",
+      "quote": "La Macchia Lucchese è la fascia boscosa a nord, racchiusa tra Viareggio, Torre del Lago Puccini e la costa.",
+      "english": "The Macchia Lucchese is the wooded strip to the north, enclosed between Viareggio, Torre del Lago Puccini and the coast."
+    },
+    {
+      "id": "s3",
+      "name": "Tenuta di Migliarino",
+      "quote": "Nella tenuta di Migliarino sono presenti i resti di quella che era la sede della 10ª Flottiglia MAS della Regia Marina durante la II Guerra Mondiale.",
+      "english": "In the Migliarino estate there are the remains of what was the headquarters of the 10th MAS Flotilla of the Royal Navy during WWII."
+    },
+    {
+      "id": "s4",
+      "name": "Secche della Meloria",
+      "quote": "Completano le aree di gestione del parco le secche della Meloria, un importante sistema di secche, con due scogli affioranti, dotati di fondali dall'importante valore naturalistico.",
+      "english": "The Meloria shoals complete the management areas of the park, an important system of shallows with two outcropping rocks and seabeds of important naturalistic value."
+    },
+    {
+      "id": "s5",
+      "name": "Tenuta di Tombolo",
+      "quote": "All'interno dell'area sono presenti anche il CISAM (nel quale era installato il primo reattore nucleare italiano “Galileo Galilei”) e, nella Tenuta di Tombolo, la base dell'US Army di Camp Darby.",
+      "english": "Inside the area there is also the CISAM (in which the first Italian nuclear reactor \"Galileo Galilei\" was installed) and, in the Tombolo Estate, the US Army base of Camp Darby."
+    },
+    {
+      "id": "s6",
+      "name": "Tenuta di Coltano",
+      "quote": "La Macchia Lucchese, il lago di Massaciuccoli, la Tenuta di Coltano e parte delle tenute di Migliarino e di Tombolo sono visitabili liberamente.",
+      "english": "The Macchia Lucchese, Lake Massaciuccoli, the Coltano Estate and part of the Migliarino and Tombolo estates can be visited freely."
+    },
+    {
+      "id": "s7",
+      "name": "Centro Visite",
+      "quote": "Per le visite guidate ogni giorno è possibile contattare il Centro Visite ed accedere con guida.",
+      "english": "For guided tours it is possible to contact the Visitor Centre every day and enter with a guide."
+    },
+    {
+      "id": "s8",
+      "name": "La Sterpaia",
+      "quote": "L'ex Tenuta Presidenziale di San Rossore è aperta al pubblico tutti i giorni nell'area tra Cascine Vecchie e La Sterpaia.",
+      "english": "The former Presidential Estate of San Rossore is open to the public every day in the area between Cascine Vecchie and La Sterpaia."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Forests and Waters",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Coastal Estates and Information",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s5"
+      ]
+    },
+    {
+      "title": "Southern Estates and Marine Shallows",
+      "stop_ids": [
+        "s6",
+        "s4"
+      ]
+    }
+  ]
+}

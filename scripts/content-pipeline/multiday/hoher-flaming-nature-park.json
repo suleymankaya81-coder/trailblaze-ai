@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Bad Belzig",
+      "quote": "Wichtige Orte im Naturpark sind Bad Belzig, Wiesenburg/Mark und Görzke.",
+      "english": "Important places in the nature park are Bad Belzig, Wiesenburg/Mark and Görzke."
+    },
+    {
+      "id": "s2",
+      "name": "Burg Eisenhardt",
+      "quote": "In der Bad Belziger Burg Eisenhardt gibt es ein Museum.",
+      "english": "In the Bad Belzig castle Burg Eisenhardt there is a museum."
+    },
+    {
+      "id": "s3",
+      "name": "SteinTherme",
+      "quote": "Bad Belzig ist ein staatlich anerkannter Kurort, der seit 2010 den Namenszusatz „Bad“ führen darf, und hat mit der SteinTherme und der Reha-Klinik ein breites Angebot im Bereich Gesundheitstourismus.",
+      "english": "Bad Belzig is a state-recognized spa town, which has been allowed to use the prefix \"Bad\" since 2010, and offers a wide range of health tourism services with the SteinTherme and the rehabilitation clinic."
+    },
+    {
+      "id": "s4",
+      "name": "Wiesenburg/Mark",
+      "quote": "Die Gemeinde Wiesenburg/Mark wurde im Jahr 2011 beim Bundeswettbewerb Unser Dorf hat Zukunft als erstes Dorf in Brandenburg in der Geschichte des Wettbewerbs mit einer Goldmedaille ausgezeichnet.",
+      "english": "In 2011, the municipality of Wiesenburg/Mark was the first village in Brandenburg in the history of the competition to be awarded a gold medal in the federal competition \"Our Village has a Future\"."
+    },
+    {
+      "id": "s5",
+      "name": "Schloss Wiesenburg",
+      "quote": "Schloss Wiesenburg ist in Privatbesitz und wird zu Wohnzwecken genutzt.",
+      "english": "Wiesenburg Castle is privately owned and used for residential purposes."
+    },
+    {
+      "id": "s6",
+      "name": "Schlosspark",
+      "quote": "Das Schloss hat einen größtenteils als Landschaftspark gestalteten Schlosspark.",
+      "english": "The castle has a castle park that is largely designed as a landscape park."
+    },
+    {
+      "id": "s7",
+      "name": "Kunstwanderweg",
+      "quote": "Im Sommer 2007 wurde ein 17 km langer Kunstwanderweg, der die Bahnhöfe von Bad Belzig und Wiesenburg verbindet, mit zehn Kunstwerken eröffnet.",
+      "english": "In the summer of 2007, a 17 km long art hiking trail, connecting the train stations of Bad Belzig and Wiesenburg, was opened with ten works of art."
+    },
+    {
+      "id": "s8",
+      "name": "Burg Rabenstein",
+      "quote": "In Burg Rabenstein ist eine Herberge mit Gaststätte untergebracht.",
+      "english": "A hostel with a restaurant is housed in Rabenstein Castle."
+    },
+    {
+      "id": "s9",
+      "name": "Belziger Landschaftswiesen",
+      "quote": "In den Belziger Landschaftswiesen gibt es Vorkommen der seltenen Großtrappe und des Breitblättrigen Knabenkrauts.",
+      "english": "In the Belzig landscape meadows there are occurrences of the rare great bustard and the broad-leaved orchid."
+    },
+    {
+      "id": "s10",
+      "name": "Dippmannsdorf",
+      "quote": "Im Jahr 2001 wurde Dippmannsdorf mit einer Silbermedaille ausgezeichnet.",
+      "english": "In 2001, Dippmannsdorf was awarded a silver medal."
+    }
+  ],
+  "days": [
+    {
+      "title": "Bad Belzig Spa and Fortress",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s9"
+      ]
+    },
+    {
+      "title": "Wiesenburg Art and Gardens",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Historic Villages and Medieval Keeps",
+      "stop_ids": [
+        "s8",
+        "s10"
+      ]
+    }
+  ],
+  "_text_sha": "fdb4784d2c818977c0222b03ef7b2463620885390c772a3012acbd72ba77d529"
+}

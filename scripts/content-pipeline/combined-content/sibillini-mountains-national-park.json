@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Marche",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Monti Sibillini National Park"
+        "Monte Vettore",
+        "Lago di Pilato"
       ],
       "seo_title": "Sibillini Mountains National Park Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Sibillini Mountains National Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "High Peaks and Glacial Lakes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Monti Sibillini National Park",
-                "stop_id": "sibillini-mountains-national-park",
-                "detail": "The Monti Sibillini National Park (Italian: Parco Nazionale dei Monti Sibillini) is an Italian national park located across the regions of Marche and Umbria, encompassing the provinces of Macerata, Fermo, Ascoli Piceno and Perugia."
+                "name": "Monte Vettore",
+                "stop_id": "sibillini-mountains-national-park--s4",
+                "detail": "The highest mountain, as well as the highest peak in the Marche, is Monte Vettore which, with its 2476 m, dominates Castelluccio."
+              },
+              {
+                "name": "Lago di Pilato",
+                "stop_id": "sibillini-mountains-national-park--s7",
+                "detail": "Located between the inaccessible and vertical walls immediately below the summit of Monte Vettore, Lake Pilato is one of the very few alpine-type glacial lakes present in the Apennines and the only lake of natural origin in the Marche."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Sibillini Mountains National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Plateaus and Gorges",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Piani di Castelluccio",
+                "stop_id": "sibillini-mountains-national-park--s2",
+                "detail": "The western slope slopes gently towards Umbria with a successive series of high-altitude depressions, the famous Piani di Castelluccio."
+              },
+              {
+                "name": "Gole dell'Infernaccio",
+                "stop_id": "sibillini-mountains-national-park--s1",
+                "detail": "The valley floors of rivers and streams are divided into narrow and impressive gorges (such as the suggestive Gole dell'Infernaccio), created by tectonic activities and erosion."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Sibillini Mountains National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Monti_Sibillini_National_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_nazionale_dei_Monti_Sibillini"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:08:34.267911+00:00"
       }
     }
   }

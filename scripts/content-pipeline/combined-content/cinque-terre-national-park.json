@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Liguria",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Cinque Terre National Park"
+        "Manarola",
+        "Via dell'Amore"
       ],
       "seo_title": "Cinque Terre National Park Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Cinque Terre National Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Southern Villages and the Way of Love",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Cinque Terre National Park",
-                "stop_id": "cinque-terre-national-park",
-                "detail": "Cinque Terre National Park (Italian: Parco Nazionale delle Cinque Terre) is a protected area inducted as an Italian national park in 1999. Located in the province of La Spezia, Liguria, northern Italy, it is the smallest national park in Italy at 4,300 acres, but also the densest with 5,000 permanent inhabitants among the five towns. In addition to the territory of the towns of Cinque Terre (Riomaggiore, Manarola, Corniglia, Vernazza and Monterosso al Mare), the Cinque Terre National Park encompasses parts of the communes of Levanto (Punta Mesco) and La Spezia (Campiglia Sunsets). Cinque Terre was included as a UNESCO World Heritage Site in 1999."
+                "name": "Manarola",
+                "stop_id": "cinque-terre-national-park--s2",
+                "detail": "Continuing on the \"Litoranea\" road, you will later find the junction that descends to the hamlet of Manarola."
+              },
+              {
+                "name": "Via dell'Amore",
+                "stop_id": "cinque-terre-national-park--s10",
+                "detail": "Then there is the coastal path number SVA, known as the Green Blue path (592), which connects Riomaggiore to Monterosso crossing all the villages of the Cinque Terre and taking on the appearance of the famous Way of Love in the stretch between Riomaggiore and Manarola."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Cinque Terre National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Central Heights and Coastal Trails",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Corniglia",
+                "stop_id": "cinque-terre-national-park--s3",
+                "detail": "Since the central section of the \"Litoranea\" was never completed, to reach the villages of Vernazza and Corniglia, whether coming from Monterosso or Riomaggiore, it is necessary to use the narrow and winding road known as \"dei Santuari\" (SP 38) and the SP 51."
+              },
+              {
+                "name": "Vernazza",
+                "stop_id": "cinque-terre-national-park--s4",
+                "detail": "All the locations of the Cinque Terre are equipped with individual railway stations and stops along the Genoa-Pisa route: Monterosso, Vernazza, Corniglia, Manarola, Riomaggiore."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Cinque Terre National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Cinque_Terre_National_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_nazionale_delle_Cinque_Terre"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:53:57.608830+00:00"
       }
     }
   }

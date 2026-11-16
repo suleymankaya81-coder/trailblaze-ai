@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "punta Gnifetti",
+      "quote": "Il territorio del parco si estende su 6500 ettari, dalla quota di 900 m s.l.m. circa del fondovalle, fino ai 4559 m s.l.m. della punta Gnifetti, una delle più alte vette del Monte Rosa.",
+      "english": "The park territory extends over 6,500 hectares, from an altitude of about 900 m above sea level on the valley floor, up to 4,559 m above sea level at Punta Gnifetti, one of the highest peaks of Monte Rosa."
+    },
+    {
+      "id": "s2",
+      "name": "vallone del Turlo",
+      "quote": "Comprende la parte sommitale della Val Grande, nel territorio di Alagna Valsesia, con i ghiacciai delle Piode, del Sesia e delle Vigne, e con tutto il lato sinistro idrografico della valle, comprendente anche l'intero vallone del Turlo",
+      "english": "It includes the upper part of Val Grande, in the territory of Alagna Valsesia, with the Piode, Sesia, and Vigne glaciers, and the entire left hydrographic side of the valley, also including the entire Turlo valley."
+    },
+    {
+      "id": "s3",
+      "name": "alpe Fum Bitz",
+      "quote": "Centro visita del parco all'alpe Fum Bitz (1603 m), presso Alagna, aperto durante l'estate: con percorso illustrativo della fauna presente nel parco e annesso giardino botanico.",
+      "english": "Park visitor center at Alpe Fum Bitz (1,603 m), near Alagna, open during the summer: with an illustrative trail of the fauna present in the park and an attached botanical garden."
+    },
+    {
+      "id": "s4",
+      "name": "Museo naturalistico a Carcoforo",
+      "quote": "Museo naturalistico a Carcoforo: nel quale sono illustrate le caratteristiche ambientali del parco.",
+      "english": "Naturalistic museum in Carcoforo: in which the environmental characteristics of the park are illustrated."
+    },
+    {
+      "id": "s5",
+      "name": "Rifugio Massero",
+      "quote": "Il Rifugio Massero a Carcoforo (2082 m)",
+      "english": "The Massero Refuge in Carcoforo (2,082 m)"
+    },
+    {
+      "id": "s6",
+      "name": "Rifugio Vallè",
+      "quote": "Il Rifugio Vallè a Rima (2175 m)",
+      "english": "The Vallè Refuge in Rima (2,175 m)"
+    },
+    {
+      "id": "s7",
+      "name": "caseificio di Roj",
+      "quote": "Centro visita del parco presso il caseificio di Roj a Fobello: dedicato alla presenza umana e alle attività agro-pastorali.",
+      "english": "Park visitor center at the Roj dairy in Fobello: dedicated to human presence and agro-pastoral activities."
+    },
+    {
+      "id": "s8",
+      "name": "Bivacco Abele Traglio",
+      "quote": "Bivacco Abele Traglio, presso il laghetto del Capezzone.",
+      "english": "Abele Traglio Bivouac, near the Capezzone lake."
+    }
+  ],
+  "days": [
+    {
+      "title": "Alagna Glaciers and Wildlife",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Carcoforo and Rima Refuges",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Fobello Culture and Strona Peaks",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

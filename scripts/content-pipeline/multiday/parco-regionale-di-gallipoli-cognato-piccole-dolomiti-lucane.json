@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "museo naturalistico",
+      "quote": "Presso la sede dell'ente di gestione del parco si trovano anche un museo naturalistico, un orto botanico, laboratori ed un centro informazioni.",
+      "english": "At the park's management headquarters, there is also a natural history museum, a botanical garden, laboratories, and an information center."
+    },
+    {
+      "id": "s2",
+      "name": "Pian di Gilio",
+      "quote": "Il centro visite Pian di Gilio si trova nei pressi, in corrispondenza delle oasi faunistiche del daino e del cervo; sempre nel comune di Accettura, lungo la via del Maggio, si trova il Museo dei culti arborei.",
+      "english": "The Pian di Gilio visitor center is located nearby, corresponding to the fallow deer and red deer wildlife oases; also in the municipality of Accettura, along the via del Maggio, lies the Museum of Tree Cults."
+    },
+    {
+      "id": "s3",
+      "name": "area archeologica di Croccia Cognato",
+      "quote": "Venne allora istituita la riserva antropologica statale di Monte Croccia a tutela dell'area archeologica di Croccia Cognato, oggi all'interno del parco, che conserva i resti di un insediamento preistorico degli antichi Lucani, databile tra il VI ed il IV secolo a.C., ritrovati sulla sommità del monte omonimo.",
+      "english": "The Monte Croccia state anthropological reserve was then established to protect the archaeological area of Croccia Cognato, now inside the park, which preserves the remains of a prehistoric settlement of the ancient Lucanians, datable between the 6th and 4th centuries BC, found on the summit of the mountain of the same name."
+    },
+    {
+      "id": "s4",
+      "name": "bosco di Montepiano",
+      "quote": "In territorio di Accettura vi è anche il bosco di Montepiano, un'antica cerreta coltivata a bosco deciduo, che si estende per circa 800 ettari.",
+      "english": "In the territory of Accettura there is also the Montepiano wood, an ancient turkey oak forest cultivated as a deciduous wood, which covers about 800 hectares."
+    },
+    {
+      "id": "s5",
+      "name": "ponte della Vecchia",
+      "quote": "Ed è proprio qui che, seminascosto dai manufatti stradali si inarca sul Basento il ponte della Vecchia, dalle origini legate a un'antica leggenda che si tramanda a Pietrapertosa.",
+      "english": "And it is right here that, half-hidden by road structures, the Vecchia bridge arches over the Basento, with origins linked to an ancient legend passed down in Pietrapertosa."
+    },
+    {
+      "id": "s6",
+      "name": "Castelmezzano",
+      "quote": "Gli stessi centri abitati di Castelmezzano e Pietrapertosa sono straordinariamente pittoreschi, essendo aggrappati alle pareti rocciose delle montagne che li circondano e che con le loro forme danno luogo a scenari suggestivi ed a paesaggi mozzafiato.",
+      "english": "The inhabited centers of Castelmezzano and Pietrapertosa themselves are extraordinarily picturesque, clinging to the rocky walls of the mountains that surround them and which, with their shapes, give rise to suggestive scenery and breathtaking landscapes."
+    },
+    {
+      "id": "s7",
+      "name": "Pietrapertosa",
+      "quote": "A testimonianza dell'importanza che i culti arborei hanno in questa parte di Appennino lucano, altre feste del Maggio o di sposalizio degli alberi vengono celebrate anche ad Oliveto Lucano, dal 10 al 12 agosto, a Castelmezzano, il 12 e 13 settembre, ed a Pietrapertosa, in occasione dei festeggiamenti per Sant'Antonio da Padova nel mese di giugno.",
+      "english": "As evidence of the importance that tree cults have in this part of the Lucanian Apennines, other May festivals or tree wedding ceremonies are also celebrated in Oliveto Lucano from August 10 to 12, in Castelmezzano on September 12 and 13, and in Pietrapertosa during the festivities for Saint Anthony of Padua in June."
+    },
+    {
+      "id": "s8",
+      "name": "Rio di Caperrino",
+      "quote": "Tra le Dolomiti lucane ed i versanti coperti dalla foresta di Gallipoli-Cognato in una profonda gola scorre il Rio di Caperrino, affluente di destra del Basento.",
+      "english": "Between the Lucanian Dolomites and the slopes covered by the Gallipoli-Cognato forest, the Rio di Caperrino, a right tributary of the Basento, flows through a deep gorge."
+    },
+    {
+      "id": "s9",
+      "name": "monte Caperrino",
+      "quote": "Le vette più elevate delle Dolomiti Lucane, che appartengono alla provincia di Potenza, sono il monte Caperrino, che raggiunge i 1455 m s.l.m., la Serra della Rossa (1179 m s.l.m.) che è la cima maggiore della catena montuosa detta Costa la Rossa (visibile per lunghi tratti dalla strada che porta ad Accettura e dal bosco di Gallipoli-Cognato) ed il monte Murge, di 1004 m.",
+      "english": "The highest peaks of the Lucanian Dolomites, which belong to the province of Potenza, are Mount Caperrino, which reaches 1455 m above sea level, the Serra della Rossa (1179 m) which is the major peak of the mountain range called Costa la Rossa (visible for long stretches from the road leading to Accettura and from the Gallipoli-Cognato forest) and Mount Murge, at 1004 m."
+    }
+  ],
+  "days": [
+    {
+      "title": "Accettura Heritage and Nature",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Dolomiti Lucane Villages and Gorges",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "High Peaks and Rivers",
+      "stop_ids": [
+        "s8",
+        "s9"
+      ]
+    }
+  ]
+}

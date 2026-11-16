@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Seeaubachtal",
+      "quote": "Der Naturpark umfasst das komplette Seeaubachtal und den größten Teil des Hammerbachtales.",
+      "english": "The nature park includes the entire Seeaubach valley and the largest part of the Hammerbach valley."
+    },
+    {
+      "id": "s2",
+      "name": "Hammerbachtales",
+      "quote": "Der Hammerbach ist ein Nebenfluss der Ybbs.",
+      "english": "The Hammerbach is a tributary of the Ybbs."
+    },
+    {
+      "id": "s3",
+      "name": "Wentsteinhammer",
+      "quote": "Wie der Name Hammerbach bereits vermuten lässt, entstanden entlang dieses Baches einige Wasser getriebene Hammerschmieden, innerhalb des Naturparks wurde der Wentsteinhammer restauriert und dient als Schauschmiede.",
+      "english": "As the name Hammerbach already suggests, several water-driven hammer mills were built along this stream; within the nature park, the Wentsteinhammer was restored and serves as a demonstration forge."
+    },
+    {
+      "id": "s4",
+      "name": "Treffenguthammer",
+      "quote": "Der Treffenguthammer ist ebenfalls eines der wenigen erhaltenen Hammerwerke entlang des Hammerbaches.",
+      "english": "The Treffenguthammer is also one of the few preserved hammer mills along the Hammerbach."
+    },
+    {
+      "id": "s5",
+      "name": "Promau",
+      "quote": "Im Naturpark wurden Themenwege angelegt und in der Promau eine Rindenhütten – ein Unterschlupf für Holzfäller aus Baumrinden und wenigen Holzstangen – errichtet.",
+      "english": "Thematic trails were created in the nature park and a bark hut – a shelter for lumberjacks made of tree bark and a few wooden poles – was built in Promau."
+    },
+    {
+      "id": "s6",
+      "name": "Kitzhütte",
+      "quote": "Auf 1.280 m Seehöhe, liegt die bewirtschaftete Kitzhütte und bietet Übernachtungsmöglichkeiten auf Matratzenlager für bis zu 25 Personen (von 25. Mai bis 31. Oktober geöffnet).",
+      "english": "Located at 1,280 m above sea level, the managed Kitzhütte offers overnight accommodation on mattress camps for up to 25 people (open from May 25th to October 31st)."
+    },
+    {
+      "id": "s7",
+      "name": "Naturparkinformationszentrum",
+      "quote": "Das Naturparkinformationszentrum befindet sich im Tourismusbüro am Dorfplatz von Hollenstein an der Ybbs",
+      "english": "The nature park information center is located in the tourist office on the village square of Hollenstein an der Ybbs"
+    },
+    {
+      "id": "s8",
+      "name": "Gamssteins",
+      "quote": "Der Naturpark liegt in den nördlichen Kalkalpen, die hier bis auf eine Seehöhe von 1774 Meter reichen (Hochkogel, höchster Punkt des Gamssteins).",
+      "english": "The nature park is located in the Northern Limestone Alps, which here reach an altitude of 1774 meters (Hochkogel, highest point of the Gamsstein)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Valleys and Alpine Summits",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s8"
+      ]
+    },
+    {
+      "title": "Historical Forges and Information",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Forest Shelters and Mountain Huts",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "94a5c46863ca48f9c10f576601985a3082f61ec8cd89e82975e80e9d0a1e0d6b"
+}

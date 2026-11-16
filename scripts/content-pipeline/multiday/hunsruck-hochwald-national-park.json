@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Schwarzwälder Hochwald",
+      "quote": "Der Nationalpark umfasst 10.120 ha im Bereich der westlichen Höhenlagen des Hunsrücks, genauer dem Idarwald und dem Schwarzwälder Hochwald, der meist nur als Hochwald bezeichnet wird.",
+      "english": "The national park covers 10,120 hectares in the western highlands of the Hunsrück, specifically the Idarwald and the Schwarzwälder Hochwald, which is usually just called the Hochwald."
+    },
+    {
+      "id": "s2",
+      "name": "Idarwald",
+      "quote": "Der Idarwald (kelt.: „id ar“ – Waldhöhe über dem Lande) ist ein bis 766,2 m ü. NN hoher Teil des Hunsrücks in Rheinland-Pfalz.",
+      "english": "The Idarwald (Celtic: 'id ar' – forest heights above the land) is a part of the Hunsrück in Rhineland-Palatinate reaching up to 766.2 m above sea level."
+    },
+    {
+      "id": "s3",
+      "name": "Saar-Hunsrück-Steig",
+      "quote": "Der Wanderweg Saar-Hunsrück-Steig durchquert den Nationalpark mit seinen Etappen 9 und 10 von Nonnweiler bis zum Erbeskopf sowie mit seinen Etappen 11 und 12 im Abschnitt von der Kirschweiler Festung bis zur Mörschieder Burr.",
+      "english": "The hiking trail Saar-Hunsrück-Steig crosses the national park with its stages 9 and 10 from Nonnweiler to the Erbeskopf as well as with its stages 11 and 12 in the section from the Kirschweiler Festung to the Mörschieder Burr."
+    },
+    {
+      "id": "s4",
+      "name": "Erbeskopf",
+      "quote": "Der Wanderweg Saar-Hunsrück-Steig durchquert den Nationalpark mit seinen Etappen 9 und 10 von Nonnweiler bis zum Erbeskopf sowie mit seinen Etappen 11 und 12 im Abschnitt von der Kirschweiler Festung bis zur Mörschieder Burr.",
+      "english": "The hiking trail Saar-Hunsrück-Steig crosses the national park with its stages 9 and 10 from Nonnweiler to the Erbeskopf as well as with its stages 11 and 12 in the section from the Kirschweiler Festung to the Mörschieder Burr."
+    },
+    {
+      "id": "s5",
+      "name": "Kirschweiler Festung",
+      "quote": "Der Wanderweg Saar-Hunsrück-Steig durchquert den Nationalpark mit seinen Etappen 9 und 10 von Nonnweiler bis zum Erbeskopf sowie mit seinen Etappen 11 und 12 im Abschnitt von der Kirschweiler Festung bis zur Mörschieder Burr.",
+      "english": "The hiking trail Saar-Hunsrück-Steig crosses the national park with its stages 9 and 10 from Nonnweiler to the Erbeskopf as well as with its stages 11 and 12 in the section from the Kirschweiler Festung to the Mörschieder Burr."
+    },
+    {
+      "id": "s6",
+      "name": "Mörschieder Burr",
+      "quote": "Der Wanderweg Saar-Hunsrück-Steig durchquert den Nationalpark mit seinen Etappen 9 und 10 von Nonnweiler bis zum Erbeskopf sowie mit seinen Etappen 11 und 12 im Abschnitt von der Kirschweiler Festung bis zur Mörschieder Burr.",
+      "english": "The hiking trail Saar-Hunsrück-Steig crosses the national park with its stages 9 and 10 from Nonnweiler to the Erbeskopf as well as with its stages 11 and 12 in the section from the Kirschweiler Festung to the Mörschieder Burr."
+    },
+    {
+      "id": "s7",
+      "name": "Börfink",
+      "quote": "Enklaven in dem Gebiet sind die Orte Börfink, Muhl, Thranenweier und Hujetsägemühle.",
+      "english": "Enclaves in the area are the villages of Börfink, Muhl, Thranenweier, and Hujetsägemühle."
+    }
+  ],
+  "days": [
+    {
+      "title": "Forest Peaks and Enclaves",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Western Hiking Trail Section",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Eastern Rock Formations",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "6a7b86964c11152407cb37e871c146c185fa09afe565b065e3cfa7e51aa70b2c"
+}

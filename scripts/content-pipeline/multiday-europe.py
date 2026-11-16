@@ -27,10 +27,15 @@ SOURCE TEXT:
 {text}'''
 
 def extract(slug, name, text):
+    import hashlib
     path = CACHE / f'{slug}.json'
-    if path.exists(): return json.loads(path.read_text())
+    if path.exists():
+        cached = json.loads(path.read_text())
+        if cached.get('_text_sha', hashlib.sha256(text.encode()).hexdigest()) == hashlib.sha256(text.encode()).hexdigest(): return cached
+    path = CACHE / f'{slug}.json'
     clean_text = re.sub(r'https?://\S+', '', re.sub(r'!?\[([^\]]*)\]\([^)]*\)', r'\1', text))[:9000]
     out = call_ai_json(PROMPT.format(name=name, text=clean_text))
+    out['_text_sha'] = hashlib.sha256(text.encode()).hexdigest()
     path.write_text(json.dumps(out, ensure_ascii=False, indent=2)); return out
 
 def verified(out, text, lang):
@@ -47,6 +52,14 @@ def verified(out, text, lang):
         if len(ids) >= 2 and d.get('title'): days.append({'title': clean(d['title'])[:80], 'ids': ids[:4]})
     return stops, days[:3]
 
+def wiki_json(url, params):
+    import time
+    for attempt in range(5):
+        r = requests.get(url, params=params, headers={'User-Agent': 'WildParkRoutes/1.0 (https://wildparkroutes.com; info@minialife.com)'}, timeout=30)
+        if r.status_code == 200 and r.text.startswith('{'): return r.json()
+        time.sleep(5 * (attempt + 1))
+    raise ValueError(f'Wikipedia unavailable ({r.status_code})')
+
 def fuller_source(src, country):
     """When the stored article is short, use the same article's local-language version (same Wikipedia page identity via langlinks)."""
     m = re.match(r'https://(\w\w)\.wikipedia\.org/wiki/(.+)', src['url'])
@@ -55,13 +68,30 @@ def fuller_source(src, country):
     lang, title = m[1], unquote(m[2]).replace('_', ' ')
     local = 'it' if country == 'it' else 'de'
     if lang != local:
-        d = requests.get(f'https://{lang}.wikipedia.org/w/api.php', params={'action':'query','format':'json','formatversion':2,'titles':title,'redirects':1,'prop':'langlinks','lllang':local}, headers={'User-Agent':'WildParkRoutes/1.0'}, timeout=30).json()
+        d = wiki_json(f'https://{lang}.wikipedia.org/w/api.php', {'action':'query','format':'json','formatversion':2,'titles':title,'redirects':1,'prop':'langlinks','lllang':local})
         links = d['query']['pages'][0].get('langlinks', [])
         if not links: return None
         lang, title = local, links[0]['title']
-    d = requests.get(f'https://{lang}.wikipedia.org/w/api.php', params={'action':'query','format':'json','formatversion':2,'titles':title,'redirects':1,'prop':'extracts','explaintext':1}, headers={'User-Agent':'WildParkRoutes/1.0'}, timeout=30).json()
+    d = wiki_json(f'https://{lang}.wikipedia.org/w/api.php', {'action':'query','format':'json','formatversion':2,'titles':title,'redirects':1,'prop':'extracts','explaintext':1})
     page = d['query']['pages'][0]; text = page.get('extract', '')[:14000]
     return {'url': f'https://{lang}.wikipedia.org/wiki/' + quote(page['title'].replace(' ', '_')), 'kind': 'wikipedia', 'text': text, 'generation_excerpts': []} if len(text) > len(src.get('text','')) else None
+
+SITES = json.loads((ROOT / 'dach/official-sites.json').read_text())
+
+def qid_source(slug, country):
+    """Reviewed Wikidata identity (dach/official-sites.json) -> full local-language article."""
+    qid = SITES.get(slug, {}).get('qid')
+    if not qid: return None
+    links = wiki_json('https://www.wikidata.org/w/api.php', {'action':'wbgetentities','ids':qid,'props':'sitelinks','format':'json'})['entities'][qid].get('sitelinks', {})
+    for lang in ('de', 'en'):
+        if lang + 'wiki' in links:
+            from urllib.parse import quote
+            title = links[lang + 'wiki']['title']
+            d = wiki_json(f'https://{lang}.wikipedia.org/w/api.php', {'action':'query','format':'json','formatversion':2,'titles':title,'prop':'extracts','explaintext':1})
+            text = d['query']['pages'][0].get('extract', '')[:14000]
+            if len(text) >= 1500:
+                return {'url': f'https://{lang}.wikipedia.org/wiki/' + quote(title.replace(' ', '_')), 'kind': 'wikipedia', 'text': text, 'generation_excerpts': []}
+    return None
 
 def main():
     limit = int(sys.argv[1]) if len(sys.argv) > 1 else 10**6
@@ -77,9 +107,13 @@ def main():
         slug = row['slug']
         try:
             ppath = ROOT / 'source-packets' / f'{slug}.json'
-            packet = json.loads(ppath.read_text()); src = packet['sources'][0]; text = src.get('text', '')
+            packet = json.loads(ppath.read_text()) if ppath.exists() else {'slug': slug, 'approved_for_generation': True, 'country_code': row['country_code'], 'sources': [], 'approved_stops': []}
+            src = packet['sources'][0] if packet['sources'] else {'url': '', 'text': ''}; text = src.get('text', '') if src.get('kind') == 'wikipedia' else ''
             if len(text) < 4000:
-                extra = next((s for s in packet['sources'][1:] if s.get('kind') == 'wikipedia'), None) or fuller_source(src, row['country_code'])
+                extra = next((s for s in packet['sources'][1:] if s.get('kind') == 'wikipedia' and len(s.get('text','')) >= 4000), None) or (src.get('kind') == 'wikipedia' and fuller_source(src, row['country_code'])) or qid_source(slug, row['country_code'])
+                if extra and extra.get('url') != src.get('url'):
+                    # Same Wikidata-identified place; descriptive overview only (approved flexible European policy).
+                    packet.update(evidence_policy='dach-wikipedia-overview', identity_verified=True)
                 if extra:
                     if extra not in packet['sources']: packet['sources'].append(extra)
                     src, text = extra, extra['text']
@@ -88,9 +122,9 @@ def main():
             lang = m[1] if m else ('de' if row['country_code'] in ('de','at','ch') else 'it' if row['country_code'] == 'it' else 'en')
             stops, days = verified(extract(slug, row['name'], text), text, lang)
             if len(days) < 2: raise ValueError(f'Only {len(days)} verified day(s) of sights in the source; stays 1 day')
-            base = [s for s in packet['approved_stops'] if s['id'] == slug or s is packet['approved_stops'][0]]
+            base = packet['approved_stops'][:1]
             packet['approved_stops'] = base + [{'id': f'{slug}--{i}', 'name': s['name'], 'quote': s['quote'], 'source_url': src['url']} for i, s in stops.items()]
-            if src is not packet['sources'][0]:
+            if src is not packet['sources'][0] or not src.get('generation_excerpts'):
                 src['generation_excerpts'] = list(dict.fromkeys(s['quote'] for s in stops.values()))
             ppath.write_text(json.dumps(packet, ensure_ascii=False, indent=2))
             bundle = quoted_bundle(row | {'region': row['region']}, packet)

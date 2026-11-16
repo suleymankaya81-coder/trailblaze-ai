@@ -1,0 +1,39 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Darßwald",
+      "quote": "Bei der Familienführung „Der Natur auf der Spur“ wird der urige Darßwald zum Abenteuer und dann heißt es – Augen auf und Ohren spitzen!",
+      "english": "During the family tour 'On the trail of nature', the rustic Darß Forest becomes an adventure and then it's a matter of—eyes open and ears pricked!"
+    },
+    {
+      "id": "s2",
+      "name": "Bodden",
+      "quote": "Einzigartige Lagunen der Ostsee - die Bodden - und eine Küste in ständiger Bewegung sind seine Markenzeichen.",
+      "english": "Unique lagoons of the Baltic Sea - the Bodden - and a coast in constant motion are its trademarks."
+    },
+    {
+      "id": "s3",
+      "name": "Kernzone des Nationalparks",
+      "quote": "Die Nationalparktage Zingst am 3. und 4. Oktober bieten einzigartige Einblicke in die wilde, herbstliche Küstenlandschaft mit geführten Touren in die Kernzone des Nationalparks und spannenden Aktionsständen im Festzelt.",
+      "english": "The National Park Days Zingst on October 3rd and 4th offer unique insights into the wild, autumnal coastal landscape with guided tours into the core zone of the national park and exciting activity stands in the festival tent."
+    },
+    {
+      "id": "s4",
+      "name": "Inselhafens in Prerow",
+      "quote": "Bei bestem Sommerwetter weihte Umweltminister Dr. Till Backhaus die Terrasse des Inselhafens in Prerow feierlich als neue Ausstellungsplattform ein.",
+      "english": "In the best summer weather, Environment Minister Dr. Till Backhaus solemnly inaugurated the terrace of the island harbor in Prerow as a new exhibition platform."
+    }
+  ],
+  "days": [
+    {
+      "title": "Forest and Lagoons of the National Park",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

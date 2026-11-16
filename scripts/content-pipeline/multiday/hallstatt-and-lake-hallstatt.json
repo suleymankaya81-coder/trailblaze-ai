@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hallstätter See",
+      "quote": "Der Hallstätter See ist ein Bergsee im oberösterreichischen Teil des Salzkammergutes, am Nordfuß des Dachsteinmassivs und liegt auf 508 m ü. A.",
+      "english": "Lake Hallstatt is a mountain lake in the Upper Austrian part of the Salzkammergut, at the northern foot of the Dachstein massif, and is located at 508 m above sea level."
+    },
+    {
+      "id": "s2",
+      "name": "Hirlatz",
+      "quote": "Im Süden erheben sich der Hirlatz (1985 m ü. A.) und der Krippenstein (2108 m ü. A.), die mit steilen Flanken zum Seeufer abfallen.",
+      "english": "To the south rise the Hirlatz (1985 m above sea level) and the Krippenstein (2108 m above sea level), which drop down to the lakeshore with steep flanks."
+    },
+    {
+      "id": "s3",
+      "name": "Krippenstein",
+      "quote": "Im Süden erheben sich der Hirlatz (1985 m ü. A.) und der Krippenstein (2108 m ü. A.), die mit steilen Flanken zum Seeufer abfallen.",
+      "english": "To the south rise the Hirlatz (1985 m above sea level) and the Krippenstein (2108 m above sea level), which drop down to the lakeshore with steep flanks."
+    },
+    {
+      "id": "s4",
+      "name": "Obertraun",
+      "quote": "Auf deren Schwemmebene liegt die Ortschaft Obertraun.",
+      "english": "The village of Obertraun is located on its alluvial plain."
+    },
+    {
+      "id": "s5",
+      "name": "Echerntal",
+      "quote": "Im Südwesten liegt das Trogtal des Echerntals.",
+      "english": "The trough valley of the Echerntal is located in the southwest."
+    },
+    {
+      "id": "s6",
+      "name": "Mühlbach",
+      "quote": "Im Westen stürzt der Mühlbach in mehreren Kaskaden ins Ortszentrum von Hallstatt herab.",
+      "english": "In the west, the Mühlbach falls in several cascades down into the town center of Hallstatt."
+    },
+    {
+      "id": "s7",
+      "name": "Seeklause in Steeg",
+      "quote": "Der Wasserstand wird durch die Seeklause in Steeg reguliert.",
+      "english": "The water level is regulated by the Seeklause in Steeg."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lake Hallstatt and Northern Shore",
+      "stop_ids": [
+        "s1",
+        "s7"
+      ]
+    },
+    {
+      "title": "Southern Peaks and Villages",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Western Valleys and Waterfalls",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "14f729b9111b340a6bc4dc4ee475aa6e1c888157ef49423ec5ee714673ff6a4b"
+}

@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Großer Plöner See",
+      "quote": "Der Große Plöner See ist mit knapp 3.000 ha der größte, tiefste und inselreichste See Schleswig-Holsteins.",
+      "english": "The Lake Großer Plöner See, at nearly 3,000 hectares, is the largest, deepest, and most island-rich lake in Schleswig-Holstein."
+    },
+    {
+      "id": "s2",
+      "name": "Prinzeninsel",
+      "quote": "An feuchten Standorten, die periodisch auch überschwemmt werden können, wachsen teils Bruchwälder, die von Schwarzerlen dominiert werden, etwa am Großen Plöner See vor der Prinzeninsel oder auf dem Kleinen Warder (Bosau) betrachten.",
+      "english": "In damp locations that can also be periodically flooded, carr forests dominated by black alders grow, for example, on Lake Großer Plöner See in front of the Prinzeninsel or can be viewed on the Kleiner Warder (Bosau)."
+    },
+    {
+      "id": "s3",
+      "name": "Kleinen Warder (Bosau)",
+      "quote": "An feuchten Standorten, die periodisch auch überschwemmt werden können, wachsen teils Bruchwälder, die von Schwarzerlen dominiert werden, etwa am Großen Plöner See vor der Prinzeninsel oder auf dem Kleinen Warder (Bosau) betrachten.",
+      "english": "In damp locations that can also be periodically flooded, carr forests dominated by black alders grow, for example, on Lake Großer Plöner See in front of the Prinzeninsel or can be viewed on the Kleiner Warder (Bosau)."
+    },
+    {
+      "id": "s4",
+      "name": "Halbinsel Störland",
+      "quote": "Solche Weidelandschaften gibt es auf der Halbinsel Störland am Ufer des Großen Plöner Sees, am Barkauer See, an den Middelburger Seen oder im Naturschutzgebiet Kasseedorfer Teiche und Umgebung.",
+      "english": "Such grazing landscapes exist on the Störland peninsula on the shores of Lake Großer Plöner See, at Lake Barkauer See, at the Middelburg Lakes, or in the Kasseedorfer Teiche nature reserve and surroundings."
+    },
+    {
+      "id": "s5",
+      "name": "Heidmoor",
+      "quote": "Im Heidmoor in der Gemeinde Seedorf wurden Wiedervernässungsmaßnahmen durchgeführt und es wurde eine großflächige extensive Beweidung mit Rindern etabliert.",
+      "english": "In the Heidmoor in the municipality of Seedorf, rewetting measures were carried out and large-scale extensive grazing with cattle was established."
+    },
+    {
+      "id": "s6",
+      "name": "Tarbeker Moor",
+      "quote": "insgesamt sind 57 Brutvogelarten im Tarbeker Moor nachgewiesen worden, darunter Kiebitz, Knäkente, Rothalstaucher, Flussregenpfeifer, Heidelerche und Kranich.",
+      "english": "In total, 57 breeding bird species have been recorded in the Tarbeker Moor, including lapwing, garganey, red-necked grebe, little ringed plover, woodlark, and crane."
+    },
+    {
+      "id": "s7",
+      "name": "Ukleisee",
+      "quote": "Zu diesen gehören z. B. der Naturwaldbereich im Dodauer Forst oder der Naturwald am Ukleisee.",
+      "english": "These include, for example, the natural forest area in the Dodauer Forst or the natural forest at Lake Ukleisee."
+    },
+    {
+      "id": "s8",
+      "name": "Dodauer Forst",
+      "quote": "Zu diesen gehören z. B. der Naturwaldbereich im Dodauer Forst oder der Naturwald am Ukleisee.",
+      "english": "These include, for example, the natural forest area in the Dodauer Forst or the natural forest at Lake Ukleisee."
+    },
+    {
+      "id": "s9",
+      "name": "Bungsberg",
+      "quote": "Er erstreckt sich in nordsüdlicher Richtung vom Selenter See bis zur Stadt Bad Segeberg und in westöstlicher Richtung von Ascheberg am Großen Plöner See bis Schönwalde am Bungsberg.",
+      "english": "It extends in a north-south direction from Lake Selenter See to the town of Bad Segeberg and in a west-east direction from Ascheberg at Lake Großer Plöner See to Schönwalde at Bungsberg."
+    },
+    {
+      "id": "s10",
+      "name": "Kasseedorfer Teiche",
+      "quote": "Solche Weidelandschaften gibt es auf der Halbinsel Störland am Ufer des Großen Plöner Sees, am Barkauer See, an den Middelburger Seen oder im Naturschutzgebiet Kasseedorfer Teiche und Umgebung.",
+      "english": "Such grazing landscapes exist on the Störland peninsula on the shores of Lake Großer Plöner See, at Lake Barkauer See, at the Middelburg Lakes, or in the Kasseedorfer Teiche nature reserve and surroundings."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lakes and Islands of Plön",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Moors and Protected Wetlands",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s10"
+      ]
+    },
+    {
+      "title": "Forests and Peaks",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "fd2659dd1a066fb198f6320e7c5552afef09dbbde5bb14183dccec1287928f1b"
+}

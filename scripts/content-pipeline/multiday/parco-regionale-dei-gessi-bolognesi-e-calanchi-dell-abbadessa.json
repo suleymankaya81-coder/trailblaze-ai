@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "grotta del Farneto",
+      "quote": "Molte grotte vennero distrutte oppure ne venne irrimediabilmente compromessa la stabilità (come nel caso della grotta del Farneto).",
+      "english": "Many caves were destroyed or their stability was irremediably compromised (as in the case of the Farneto cave)."
+    },
+    {
+      "id": "s2",
+      "name": "ex cava a filo",
+      "quote": "Di questa attività estrattiva rimane una traccia in una delle aree di sosta del parco nel comune di San Lazzaro, l'ex cava a filo.",
+      "english": "A trace of this mining activity remains in one of the park's rest areas in the municipality of San Lazzaro, the former wire quarry."
+    },
+    {
+      "id": "s3",
+      "name": "grotta Calindri",
+      "quote": "Al gesso si è fatto ricorso fin dalla preistoria, come documentano le tracce di estrazione e lavorazione della grotta Calindri, e poi in epoca romana per uso edilizio.",
+      "english": "Gypsum has been used since prehistory, as documented by traces of extraction and processing in the Calindri cave, and later in Roman times for construction use."
+    },
+    {
+      "id": "s4",
+      "name": "dolina della Spipola",
+      "quote": "L'esistenza di comunità dedite alla caccia e alla raccolta nella zona è documentata fin dal Paleolitico, e nuclei dell'età del Bronzo sono stati individuati presso le frazioni Croara, Farneto, nella grotta Calindri e a Castel de' Britti.",
+      "english": "The existence of communities dedicated to hunting and gathering in the area is documented since the Paleolithic, and Bronze Age nuclei have been identified near the hamlets of Croara, Farneto, in the Calindri cave and at Castel de' Britti."
+    },
+    {
+      "id": "s5",
+      "name": "Castel de' Britti",
+      "quote": "Sul versante destro dell'Idice, già in comune di San Lazzaro, sorge Castel de' Britti, antico borgo fortificato allo sbocco del torrente in pianura, in posizione dominante su uno sperone di gesso.",
+      "english": "On the right bank of the Idice, already in the municipality of San Lazzaro, stands Castel de' Britti, an ancient fortified village at the opening of the stream into the plain, in a dominant position on a gypsum spur."
+    },
+    {
+      "id": "s6",
+      "name": "Passo della Badessa",
+      "quote": "Non lontano dalla pieve, sorgeva il monastero femminile di Santa Cristina, nelle vicinanze del lungo crinale tra i calanchi noto come \"Passo della Badessa\".",
+      "english": "Not far from the parish church, stood the women's monastery of Santa Cristina, near the long ridge between the badlands known as \"Passo della Badessa\"."
+    },
+    {
+      "id": "s7",
+      "name": "Pieve di Pastino",
+      "quote": "In località Settefonti si trova la Pieve di Pastino, attestata già nell'XI secolo; decaduta nel XV secolo e sopravvissuta solo come oratorio, fu poi trasformata in abitazione civile.",
+      "english": "In the locality of Settefonti lies the Pieve di Pastino, documented as early as the 11th century; declined in the 15th century and survived only as an oratory, it was later transformed into a private home."
+    },
+    {
+      "id": "s8",
+      "name": "San Pietro di Ozzano",
+      "quote": "Il fortilizio di San Pietro di Ozzano, ad esempio, ebbe origine dagli abitanti di Claterna che, dopo la distruzione della città nel V secolo, si rifugiarono sulla vicina collina.",
+      "english": "The small fort of San Pietro di Ozzano, for example, originated from the inhabitants of Claterna who, after the destruction of the city in the 5th century, took refuge on the nearby hill."
+    }
+  ],
+  "days": [
+    {
+      "title": "Caves and Quarries of San Lazzaro",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Ancient Fortifications and Grottoes",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Religious History and Ridges",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

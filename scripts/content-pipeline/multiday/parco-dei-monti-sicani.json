@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Palazzo Adriano",
+      "quote": "Il 13 gennaio 2015 a Palazzo Adriano, una delle due sedi del parco, si insediano Renato Saverino e Francesco Gendusa rispettivamente nelle funzioni di commissario straordinario e di direttore reggente.",
+      "english": "On January 13, 2015, in Palazzo Adriano, one of the two headquarters of the park, Renato Saverino and Francesco Gendusa took office respectively as extraordinary commissioner and acting director."
+    },
+    {
+      "id": "s2",
+      "name": "Bivona",
+      "quote": "Le sedi ufficiali dell'ente parco erano nei comuni di Bivona e Palazzo Adriano.",
+      "english": "The official headquarters of the park authority were in the municipalities of Bivona and Palazzo Adriano."
+    },
+    {
+      "id": "s3",
+      "name": "Monti di Palazzo Adriano e Valle del Sosio",
+      "quote": "Il parco raggruppava, nel territorio di 12 comuni, quattro riserve naturali preesistenti: la riserva naturale orientata Monti di Palazzo Adriano e Valle del Sosio, la riserva naturale orientata Monte Carcaci, la riserva naturale orientata Monte Genuardo e Santa Maria del Bosco e la riserva naturale orientata Monte Cammarata, che contestualmente all'istituzione del parco, sono state soppresse con decreto.",
+      "english": "The park grouped together, within the territory of 12 municipalities, four pre-existing natural reserves: the Monti di Palazzo Adriano and Valle del Sosio oriented natural reserve, the Monte Carcaci oriented natural reserve, the Monte Genuardo and Santa Maria del Bosco oriented natural reserve and the Monte Cammarata oriented natural reserve, which were abolished by decree at the same time as the establishment of the park."
+    },
+    {
+      "id": "s4",
+      "name": "Monte Carcaci",
+      "quote": "Il 23 luglio 2019 con il D.A. n. 390/GAB la Regione Siciliana annulla il decreto assessoriale n. 281/GAB concernente l’istituzione del Parco con il conseguente reinserimento delle riserve naturali orientate di Monte Cammarata, Monti di Palazzo Adriano e Valle del Sosio, Monte Carcaci, Monte Genuardo e Santa Maria del Bosco, che erano state integrate nel territorio nel parco, e la decadenza dell'ente gestore.",
+      "english": "On July 23, 2019, with D.A. n. 390/GAB, the Sicilian Region canceled the departmental decree n. 281/GAB concerning the establishment of the Park with the consequent reintegration of the oriented natural reserves of Monte Cammarata, Monti di Palazzo Adriano and Valle del Sosio, Monte Carcaci, Monte Genuardo and Santa Maria del Bosco, which had been integrated into the park territory, and the forfeiture of the managing body."
+    },
+    {
+      "id": "s5",
+      "name": "Monte Genuardo e Santa Maria del Bosco",
+      "quote": "Il 23 luglio 2019 con il D.A. n. 390/GAB la Regione Siciliana annulla il decreto assessoriale n. 281/GAB concernente l’istituzione del Parco con il conseguente reinserimento delle riserve naturali orientate di Monte Cammarata, Monti di Palazzo Adriano e Valle del Sosio, Monte Carcaci, Monte Genuardo e Santa Maria del Bosco, che erano state integrate nel territorio nel parco, e la decadenza dell'ente gestore.",
+      "english": "On July 23, 2019, with D.A. n. 390/GAB, the Sicilian Region canceled the departmental decree n. 281/GAB concerning the establishment of the Park with the consequent reintegration of the oriented natural reserves of Monte Cammarata, Monti di Palazzo Adriano and Valle del Sosio, Monte Carcaci, Monte Genuardo and Santa Maria del Bosco, which had been integrated into the park territory, and the forfeiture of the managing body."
+    },
+    {
+      "id": "s6",
+      "name": "Monte Cammarata",
+      "quote": "Il 23 luglio 2019 con il D.A. n. 390/GAB la Regione Siciliana annulla il decreto assessoriale n. 281/GAB concernente l’istituzione del Parco con il conseguente reinserimento delle riserve naturali orientate di Monte Cammarata, Monti di Palazzo Adriano e Valle del Sosio, Monte Carcaci, Monte Genuardo e Santa Maria del Bosco, che erano state integrate nel territorio nel parco, e la decadenza dell'ente gestore.",
+      "english": "On July 23, 2019, with D.A. n. 390/GAB, the Sicilian Region canceled the departmental decree n. 281/GAB concerning the establishment of the Park with the consequent reintegration of the oriented natural reserves of Monte Cammarata, Monti di Palazzo Adriano and Valle del Sosio, Monte Carcaci, Monte Genuardo and Santa Maria del Bosco, which had been integrated into the park territory, and the forfeiture of the managing body."
+    },
+    {
+      "id": "s7",
+      "name": "Monti Sicani",
+      "quote": "Comprendeva il massiccio montuoso dei Monti Sicani, situato nella zona centro-occidentale della Sicilia.",
+      "english": "It included the mountain massif of the Sicani Mountains, located in the central-western area of Sicily."
+    }
+  ],
+  "days": [
+    {
+      "title": "Park Headquarters and Central Massif",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Northern Reserves and Valleys",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Southern Peaks and Forests",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

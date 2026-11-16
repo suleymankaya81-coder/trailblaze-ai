@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Karlshöhle",
+      "quote": "Sie setzt sich aus der 1834 entdeckten Karlshöhle und ihrer 1949 entdeckten Fortsetzung, der Bärenhöhle, zusammen.",
+      "english": "It consists of the Karlshöhle, discovered in 1834, and its extension, the Bärenhöhle, discovered in 1949."
+    },
+    {
+      "id": "s2",
+      "name": "Bärenhöhle",
+      "quote": "Ihren Namen verdankt sie den zahlreichen Skeletten von Höhlenbären, die in ihr gefunden wurden.",
+      "english": "It owes its name to the numerous skeletons of cave bears that were found inside it."
+    },
+    {
+      "id": "s3",
+      "name": "Fauthsloch",
+      "quote": "In Erinnerung an die Entdeckungsgeschichte wird die Öffnung in der Höhlendecke der ersten Halle Fauthsloch genannt.",
+      "english": "In memory of the history of its discovery, the opening in the cave ceiling of the first hall is called Fauthsloch."
+    },
+    {
+      "id": "s4",
+      "name": "Große Halle der Bärenhöhle",
+      "quote": "Der Spalt war der Eingang zu einem etwa 80 Zentimeter hohen Gang, der direkt in die damals noch unbekannte Große Halle der Bärenhöhle führte.",
+      "english": "The crevice was the entrance to a passage about 80 centimeters high, which led directly into the then still unknown Great Hall of the Bärenhöhle."
+    },
+    {
+      "id": "s5",
+      "name": "Freizeitpark Traumland auf der Bärenhöhle",
+      "quote": "Seit 1974 befindet sich oberhalb der Bärenhöhle der Freizeitpark Traumland auf der Bärenhöhle.",
+      "english": "Since 1974, the amusement park Traumland auf der Bärenhöhle has been located above the Bärenhöhle."
+    },
+    {
+      "id": "s6",
+      "name": "UNESCO Geopark Schwäbische Alb",
+      "quote": "Seit April 2013 ist die Bärenhöhle außerdem eine von 26 Infostellen des UNESCO Geoparks Schwäbische Alb.",
+      "english": "Since April 2013, the Bärenhöhle has also been one of 26 information centers of the UNESCO Geopark Swabian Alb."
+    },
+    {
+      "id": "s7",
+      "name": "restauriertes Bärenskelett",
+      "quote": "Etliche Schädel und Knochen sowie ein restauriertes Bärenskelett können in der Höhle besichtigt werden.",
+      "english": "Several skulls and bones as well as a restored bear skeleton can be visited inside the cave."
+    }
+  ],
+  "days": [
+    {
+      "title": "Subterranean Discovery and Geological Heritage",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s6"
+      ]
+    },
+    {
+      "title": "Cave Landmarks and Fossil Remains",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Surface Attractions and Leisure",
+      "stop_ids": [
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "bfbb6fd8944cb83b43ef078db97a9cbe37ba931ef8dd6b17453b8d1d5fb45bed"
+}

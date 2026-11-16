@@ -1,0 +1,39 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "due laghi di Avigliana",
+      "quote": "Il parco è stato istituito nel 1980 allo scopo di tutelare l'ecosistema della zona dei due laghi di Avigliana e della palude dei Mareschi, anche limitandone l'antropizzazione.",
+      "english": "The park was established in 1980 with the aim of protecting the ecosystem of the area of the two lakes of Avigliana and the Mareschi marsh, also by limiting its human impact."
+    },
+    {
+      "id": "s2",
+      "name": "palude dei Mareschi",
+      "quote": "I Mareschi costituiscono la zona palustre più occidentale d'Italia, situati nell'area pressoché pianeggiante in cui scorre il canale della Naviglia, unico estuario dei due laghi verso la Dora Riparia.",
+      "english": "The Mareschi constitute the westernmost marshy area in Italy, located in the almost flat area where the Naviglia canal flows, the only estuary of the two lakes towards the Dora Riparia."
+    },
+    {
+      "id": "s3",
+      "name": "Dinamitificio Nobel",
+      "quote": "Nel territorio del parco si trovano anche gli edifici di un'ormai dismessa fabbrica di esplosivi (il Dinamitificio Nobel), che costituisce attualmente un museo.",
+      "english": "In the territory of the park there are also the buildings of a now disused explosives factory (the Nobel Dynamite Factory), which currently constitutes a museum."
+    },
+    {
+      "id": "s4",
+      "name": "Duco-Montecatini",
+      "quote": "Un altro edificio era invece sede della fabbrica di vernici Duco-Montecatini, dove trovò lavoro lo scrittore Primo Levi nell'immediato dopoguerra, ed alla cui scrivania compose gran parte della sua celeberrima opera Se questo è un uomo.",
+      "english": "Another building was instead the headquarters of the Duco-Montecatini paint factory, where the writer Primo Levi found work in the immediate post-war period, and at whose desk he composed a large part of his famous work If This Is a Man."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lakes, Marshes and Industrial History",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

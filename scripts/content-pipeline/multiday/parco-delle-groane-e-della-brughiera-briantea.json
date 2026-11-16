@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Oasi Il Caloggio",
+      "quote": "L'organizzazione ambientale WWF, con i volontari della sezione locale, opera all'interno del parco nell'oasi Il Caloggio.",
+      "english": "The environmental organization WWF, with volunteers from the local section, operates within the park in the Il Caloggio oasis."
+    },
+    {
+      "id": "s2",
+      "name": "Oasi Fosso del Ronchetto",
+      "quote": "L'oasi Fosso del Ronchetto, anch'essa gestita dal WWF e situata nel parco, è stata proposta per il futuro.",
+      "english": "The Fosso del Ronchetto oasis, also managed by the WWF and located in the park, has been proposed for the future."
+    },
+    {
+      "id": "s3",
+      "name": "Riserva naturale Fontana del Guercio",
+      "quote": "Dal 21 dicembre 2017 vi è stato accorpato il parco della Brughiera Briantea e la riserva naturale Fontana del Guercio.",
+      "english": "Since December 21, 2017, the Brughiera Briantea park and the Fontana del Guercio nature reserve have been merged into it."
+    },
+    {
+      "id": "s4",
+      "name": "Oasi Lipu di Cesano Maderno",
+      "quote": "Le cause furono l'inquinamento, il ridursi del suo habitat e la competizione con la tartaruga palustre americana, la quale quest'ultima tuttora è presente nell'Oasi Lipu di Cesano Maderno e a Bollate.",
+      "english": "The causes were pollution, the reduction of its habitat, and competition with the American pond turtle, the latter of which is still present in the Lipu Oasis of Cesano Maderno and in Bollate."
+    },
+    {
+      "id": "s5",
+      "name": "Boschi di S. Andrea a Misinto",
+      "quote": "Molto numerosa è la volpe mentre una piccola popolazione di tasso è segnalata nei boschi di S. Andrea a Misinto, ma la specie è stata avvistata anche in altre zone del parco, anche a Bollate.",
+      "english": "The fox is very numerous, while a small badger population is reported in the S. Andrea woods in Misinto, but the species has also been spotted in other areas of the park, including Bollate."
+    },
+    {
+      "id": "s6",
+      "name": "Pinete di Cesate",
+      "quote": "Le pinete di pino silvestre (la meglio conservata si trova nella zona di Cesate), sono anch'esse un ecosistema temporaneo fra la brughiera e il querceto.",
+      "english": "The Scots pine forests (the best-preserved one is found in the Cesate area) are also a temporary ecosystem between the heath and the oak forest."
+    },
+    {
+      "id": "s7",
+      "name": "Boschi di Solaro",
+      "quote": "Il parco ospita inoltre alcune specie di mammiferi: tra i roditori arboricoli si può trovare lo scoiattolo rosso, che fu reintrodotto nei boschi di Cesate e di Solaro dall'Ente parco negli anni Ottanta del secolo scorso, il ghiro, il moscardino e il quercino;",
+      "english": "The park also hosts some species of mammals: among the arboreal rodents one can find the red squirrel, which was reintroduced into the woods of Cesate and Solaro by the Park Authority in the eighties of the last century, the dormouse, the hazel dormouse and the garden dormouse;"
+    }
+  ],
+  "days": [
+    {
+      "title": "Natural Reserves and Oases",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Woodlands and Wildlife Habitats",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Schloss Waldeck",
+      "quote": "Überragt vom Schloss Waldeck bildet die auch kurz nur Edersee genannte Talsperre zusammen mit dem Nationalpark Kellerwald-Edersee und dem Naturpark Kellerwald-Edersee ein großflächiges Freizeit- und Erholungsgebiet.",
+      "english": "Overlooked by Waldeck Castle, the dam, also known simply as Edersee, forms a large-scale leisure and recreation area together with the Kellerwald-Edersee National Park and the Kellerwald-Edersee Nature Park."
+    },
+    {
+      "id": "s2",
+      "name": "Nationalpark Kellerwald-Edersee",
+      "quote": "Im Süden grenzt der Stausee an die Ederhöhen, einer Bergregion im Norden des Kellerwaldes, die zusammen mit den nördlichen Hängen des Edertrogs den Nationalpark Kellerwald-Edersee bilden.",
+      "english": "In the south, the reservoir borders the Eder Heights, a mountain region in the north of the Kellerwald, which together with the northern slopes of the Eder trough form the Kellerwald-Edersee National Park."
+    },
+    {
+      "id": "s3",
+      "name": "Naturpark Kellerwald-Edersee",
+      "quote": "Überragt vom Schloss Waldeck bildet die auch kurz nur Edersee genannte Talsperre zusammen mit dem Nationalpark Kellerwald-Edersee und dem Naturpark Kellerwald-Edersee ein großflächiges Freizeit- und Erholungsgebiet.",
+      "english": "Overlooked by Waldeck Castle, the dam, also known simply as Edersee, forms a large-scale leisure and recreation area together with the Kellerwald-Edersee National Park and the Kellerwald-Edersee Nature Park."
+    },
+    {
+      "id": "s4",
+      "name": "Staumauer",
+      "quote": "Im Mittelpunkt steht die 48 m hohe und unter Denkmalschutz stehende Staumauer mit den beiden historischen Tortürmen und den zwei Kraftwerksgebäuden am Mauerfuß.",
+      "english": "At the center is the 48 m high and heritage-listed dam wall with its two historic gate towers and the two power plant buildings at the foot of the wall."
+    },
+    {
+      "id": "s5",
+      "name": "Halbinsel Scheid",
+      "quote": "Gemeinde Edertal mit Hemfurth-Edersee (östliches See-Ende), Rehbach und Bringhausen, Gemeinde Vöhl mit Asel-Süd, Harbshausen, Kirchlotheim und Herzhausen (westliches See-Ende), Asel und Basdorf (inkl. Trappenhardt) und Stadt Waldeck (inkl. Waldeck-West) mit Nieder-Werbe und der Halbinsel Scheid.",
+      "english": "Municipality of Edertal with Hemfurth-Edersee (eastern end of the lake), Rehbach and Bringhausen, Municipality of Vöhl with Asel-Süd, Harbshausen, Kirchlotheim and Herzhausen (western end of the lake), Asel and Basdorf (incl. Trappenhardt) and the town of Waldeck (incl. Waldeck-West) with Nieder-Werbe and the Scheid peninsula."
+    },
+    {
+      "id": "s6",
+      "name": "Bringhausen",
+      "quote": "Die Dörfer Asel und Bringhausen, die im Tal der Eder lagen, wurden – nachdem sie abgerissen oder abgetragen worden waren – an höher gelegenen Orten oberhalb des entstehenden Edersees neu errichtet, das ebenfalls betroffene Berich wurde jedoch rund 21 km vom ehemaligen Standort entfernt auf dem Gebiet der Stadt Bad Arolsen wiederaufgebaut.",
+      "english": "The villages of Asel and Bringhausen, which were located in the Eder valley, were rebuilt at higher elevations above the emerging Lake Edersee after they had been demolished or dismantled, but Berich, which was also affected, was rebuilt around 21 km from its former location on the territory of the town of Bad Arolsen."
+    },
+    {
+      "id": "s7",
+      "name": "Asel",
+      "quote": "Die Dörfer Asel und Bringhausen, die im Tal der Eder lagen, wurden – nachdem sie abgerissen oder abgetragen worden waren – an höher gelegenen Orten oberhalb des entstehenden Edersees neu errichtet, das ebenfalls betroffene Berich wurde jedoch rund 21 km vom ehemaligen Standort entfernt auf dem Gebiet der Stadt Bad Arolsen wiederaufgebaut.",
+      "english": "The villages of Asel and Bringhausen, which were located in the Eder valley, were rebuilt at higher elevations above the emerging Lake Edersee after they had been demolished or dismantled, but Berich, which was also affected, was rebuilt around 21 km from its former location on the territory of the town of Bad Arolsen."
+    },
+    {
+      "id": "s8",
+      "name": "Hemfurth-Edersee",
+      "quote": "Über eine Luftlinie von zwölf Kilometern schlängelt sich der Stausee durch das Edertal von ihrer Einmündung vor der Ortschaft Herzhausen (zu Vöhl) im Westen bis zur Staumauer bei Hemfurth-Edersee im Osten.",
+      "english": "Over a straight line of twelve kilometers, the reservoir winds through the Eder Valley from its confluence before the village of Herzhausen (near Vöhl) in the west to the dam wall near Hemfurth-Edersee in the east."
+    }
+  ],
+  "days": [
+    {
+      "title": "East Shore Landmarks and Engineering",
+      "stop_ids": [
+        "s4",
+        "s8",
+        "s1"
+      ]
+    },
+    {
+      "title": "Nature Reserves and the Southern Shore",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "Northern Bays and Peninsulas",
+      "stop_ids": [
+        "s5",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "31ae747d9ed867c463dd92cab30c22c42db9c193d733b752741d970dfc5e12f6"
+}

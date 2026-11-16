@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Bavaria",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Zugspitze"
+        "Olympia Ski Stadium",
+        "Partnachklamm Gorge",
+        "Bockhütte"
       ],
       "seo_title": "Zugspitze Visit Guide"
     },
     "travel": {
       "slug": "zugspitze",
+      "overview_name": "Zugspitze",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Zugspitze before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://bavaria.travel/stories/zugspitze-a-fantastic-climb/",
@@ -31,16 +34,72 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Zugspitze",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Lower Reintal Valley Approach",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Zugspitze",
-                "stop_id": "zugspitze",
-                "detail": "Every child in Bavaria knows that at 2,962 metres, the Zugspitze is the highest mountain in Germany. Two hundred years ago, however, even the adult population was unsure about this. So King Maximilian I commissioned his “Royal Bavarian Topographical Bureau” to measure the whole Werdenfelser region, along with the Zugspitze."
+                "name": "Olympia Ski Stadium",
+                "stop_id": "zugspitze--s9",
+                "detail": "That becomes apparent shortly after leaving the recently modernised Olympia Ski Stadium in Garmisch-Partenkirchen."
+              },
+              {
+                "name": "Partnachklamm Gorge",
+                "stop_id": "zugspitze--s1",
+                "detail": "In the 700 m long Partnachklamm Gorge, the path boldly snakes its way through rocks, passing within touching distance of rapids, swirling pools and waterfalls."
+              },
+              {
+                "name": "Bockhütte",
+                "stop_id": "zugspitze--s2",
+                "detail": "Ignoring the detour off to the left to the Königshaus at Schachen, so beloved by the Fairy Tale King, it takes another two and half hours before the path reaches the “Bockhütte”."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Zugspitze before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Upper Reintal Ascent",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Reintalangerhütte",
+                "stop_id": "zugspitze--s3",
+                "detail": "A waterfall, a little way off the path, heralds the entrance into the Upper Reintal, followed before long by the fluttering of Tibetan prayer flags outside the “Reintalangerhütte”, at 1,369 m."
+              },
+              {
+                "name": "Knorrhütte",
+                "stop_id": "zugspitze--s4",
+                "detail": "Fortunately, refreshments are available at the “Knorrhütte”, with wonderful views of the Wetterstein Mountains on the right."
+              },
+              {
+                "name": "Zugspitzplatt",
+                "stop_id": "zugspitze--s5",
+                "detail": "From here, the path ascends steeply over scree slopes and then the slightly undulating plateau of the rocky glacier known as the Zugspitzplatt."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Zugspitze before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Summit Experience and Descent",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Sonnalpin",
+                "stop_id": "zugspitze--s6",
+                "detail": "Upon reaching the “Sonnalpin” restaurant, anyone wishing to avoid the final, most challenging part of the ascent can simply climb into the glacier cable car."
+              },
+              {
+                "name": "Münchner Haus",
+                "stop_id": "zugspitze--s7",
+                "detail": "Crowds of people are teeming around the “Münchner Haus” restaurant."
+              },
+              {
+                "name": "Lake Eibsee",
+                "stop_id": "zugspitze--s8",
+                "detail": "A cable car from Lake Eibsee gets you to the top of Germany’s highest mountain in comfort."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Zugspitze before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +139,8 @@
             "url": "https://bavaria.travel/stories/zugspitze-a-fantastic-climb/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:53:01.042240+00:00"
       }
     }
   }

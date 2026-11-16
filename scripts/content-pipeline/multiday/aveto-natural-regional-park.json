@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Val d'Aveto",
+      "quote": "La val d'Aveto, attraversata dall'omonimo fiume, è circondata da alcune delle montagne più alte dell'Appennino Ligure, tra cui i monti Maggiorasca, Penna, Groppo Rosso e Aiona.",
+      "english": "The Aveto Valley, crossed by the river of the same name, is surrounded by some of the highest mountains of the Ligurian Apennines, including Mounts Maggiorasca, Penna, Groppo Rosso, and Aiona."
+    },
+    {
+      "id": "s2",
+      "name": "Monte Maggiorasca",
+      "quote": "La val d'Aveto, attraversata dall'omonimo fiume, è circondata da alcune delle montagne più alte dell'Appennino Ligure, tra cui i monti Maggiorasca, Penna, Groppo Rosso e Aiona.",
+      "english": "The Aveto Valley, crossed by the river of the same name, is surrounded by some of the highest mountains of the Ligurian Apennines, including Mounts Maggiorasca, Penna, Groppo Rosso, and Aiona."
+    },
+    {
+      "id": "s3",
+      "name": "Sequoia gigante di Allegrezze",
+      "quote": "Nel parco, grazie alla legge regionale 4/1999, sono presenti numerosi alberi monumentali: il Cipresso di Borzone e il Castagno del Poggio (comune di Borzonasca), la Roverella di Gòsita (comune di Ne), la Sequoia gigante di Allegrezze (comune di Santo Stefano d'Aveto) e il Faggio del Monte Zatta o Faggio 40 (comune di Mezzanego); quest'ultimo è crollato nel 2005 per un attacco da parte di funghi.",
+      "english": "In the park, thanks to regional law 4/1999, there are numerous monumental trees: the Cypress of Borzone and the Chestnut of Poggio (municipality of Borzonasca), the Downy Oak of Gòsita (municipality of Ne), the Giant Sequoia of Allegrezze (municipality of Santo Stefano d'Aveto) and the Beech of Mount Zatta or Beech 40 (municipality of Mezzanego); the latter collapsed in 2005 due to a fungal attack."
+    },
+    {
+      "id": "s4",
+      "name": "Valle Sturla",
+      "quote": "La valle Sturla nel suo tratto iniziale presenta prima pascoli e castagneti, in seguito noccioleti, orti e oliveti.",
+      "english": "The Sturla Valley in its initial stretch features first pastures and chestnut groves, followed by hazelnut groves, vegetable gardens, and olive groves."
+    },
+    {
+      "id": "s5",
+      "name": "invaso di Giacopiane",
+      "quote": "Il torrente Sturla, che dà il nome alla valle, è da sempre sfruttato per la produzione di energia elettrica; ne è un esempio l'invaso di Giacopiane, situato tra prati e boschi e meta anch'esso di turisti.",
+      "english": "The Sturla stream, which gives the valley its name, has always been used for electricity production; an example is the Giacopiane reservoir, located among meadows and woods and also a destination for tourists."
+    },
+    {
+      "id": "s6",
+      "name": "Val Graveglia",
+      "quote": "La val Graveglia è, delle tre valli, quella con la storia più particolare, sia antica che recente.",
+      "english": "The Graveglia Valley is, of the three valleys, the one with the most particular history, both ancient and recent."
+    },
+    {
+      "id": "s7",
+      "name": "Monte Bossea",
+      "quote": "Una delle zone più importanti dove si sono conservati maggiormente è il Monte Bossea, che deve infatti il suo nome alla presenza di una ricca bosseta, ovvero di un bosco di bossi.",
+      "english": "One of the most important areas where they have been most preserved is Mount Bossea, which in fact owes its name to the presence of a rich 'bosseta', or a boxwood forest."
+    }
+  ],
+  "days": [
+    {
+      "title": "Aveto High Peaks and Giants",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Sturla Valley Waters and Woods",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Graveglia History and Botany",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

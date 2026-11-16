@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Gravina di Matera",
+      "quote": "Nel suo territorio vi è la Gravina di Matera, profondo solco calcareo sul fondo del quale scorre l'omonimo torrente che, dopo aver costeggiato i Sassi di Matera e sfiorato l'abitato di Montescaglioso e aver attraversato parte del territorio pugliese di Ginosa sfocia nel fiume Bradano dopo circa una ventina di chilometri in territorio lucano.",
+      "english": "In its territory is the Gravina di Matera, a deep limestone furrow at the bottom of which flows the stream of the same name which, after having skirted the Sassi di Matera and touched the town of Montescaglioso and having crossed part of the Puglian territory of Ginosa, flows into the Bradano river after about twenty kilometers in Lucanian territory."
+    },
+    {
+      "id": "s2",
+      "name": "Murgia Timone",
+      "quote": "Un sentiero collega i due versanti della Gravina di Matera, dai Sassi all'altopiano di Murgia Timone, cuore del parco; il sentiero arriva sul fondo della Gravina e la attraversa con un ponte tibetano.",
+      "english": "A path connects the two sides of the Gravina di Matera, from the Sassi to the Murgia Timone plateau, the heart of the park; the path reaches the bottom of the Gravina and crosses it with a Tibetan bridge."
+    },
+    {
+      "id": "s3",
+      "name": "grotta dei pipistrelli",
+      "quote": "Tale area, abitata fin dalla preistoria, conserva ancora stazionamenti risalenti al Paleolitico, come la grotta dei pipistrelli, ed al Neolitico, come i numerosi villaggi trincerati.",
+      "english": "This area, inhabited since prehistory, still preserves settlements dating back to the Paleolithic, such as the cave of the bats, and to the Neolithic, such as the numerous entrenched villages."
+    },
+    {
+      "id": "s4",
+      "name": "Jazzo Gattini",
+      "quote": "centro visita e centro di educazione ambientale di Jazzo Gattini e Masseria Radogna - Murgia Timone - Matera.",
+      "english": "Visitor center and environmental education center of Jazzo Gattini and Masseria Radogna - Murgia Timone - Matera."
+    },
+    {
+      "id": "s5",
+      "name": "Masseria Radogna",
+      "quote": "centro visita e centro di educazione ambientale di Jazzo Gattini e Masseria Radogna - Murgia Timone - Matera.",
+      "english": "Visitor center and environmental education center of Jazzo Gattini and Masseria Radogna - Murgia Timone - Matera."
+    },
+    {
+      "id": "s6",
+      "name": "abbazia benedettina di San Michele Arcangelo",
+      "quote": "centro visita di Montescaglioso - presso l'abbazia benedettina di San Michele Arcangelo.",
+      "english": "Montescaglioso visitor center - at the Benedictine abbey of San Michele Arcangelo."
+    },
+    {
+      "id": "s7",
+      "name": "monastero della SS. Concezione",
+      "quote": "centro educazione ambientale di Montescaglioso – presso il monastero della SS. Concezione.",
+      "english": "Montescaglioso environmental education center – at the monastery of the Most Holy Conception."
+    }
+  ],
+  "days": [
+    {
+      "title": "Natural Canyons and Prehistoric Caves",
+      "stop_ids": [
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "title": "Heart of the Park and Visitor Centers",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Monastic Heritage of Montescaglioso",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

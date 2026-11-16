@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Cicogna",
+      "quote": "Oggi in Val Grande esiste un solo centro abitato: Cicogna (frazione di Cossogno) dove si contano 17 abitanti.",
+      "english": "Today in Val Grande there is only one inhabited center: Cicogna (a hamlet of Cossogno) where there are 17 inhabitants."
+    },
+    {
+      "id": "s2",
+      "name": "Cima Pedum",
+      "quote": "La Riserva naturale Val Grande, la zona più interna di riserva naturale integrale, comprende la Cima Pedum, anche se le cime più ambite dagli escursionisti e dagli amanti della natura sono i monti circostanti.",
+      "english": "The Val Grande Nature Reserve, the innermost area of the integral nature reserve, includes Cima Pedum, although the most sought-after peaks by hikers and nature lovers are the surrounding mountains."
+    },
+    {
+      "id": "s3",
+      "name": "Monte Mottac",
+      "quote": "All'interno del parco si trovano la Riserva naturale Val Grande (riserva naturale integrale e biogenetica di 973 ettari) e la Riserva naturale Monte Mottac (riserva naturale orientata e biogenetica di 2.410 ettari), entrambe istituite nel 1971.",
+      "english": "Within the park are located the Val Grande Nature Reserve (integral and biogenetic nature reserve of 973 hectares) and the Monte Mottac Nature Reserve (oriented and biogenetic nature reserve of 2,410 hectares), both established in 1971."
+    },
+    {
+      "id": "s4",
+      "name": "Pogallo",
+      "quote": "All'inizio del novecento a Pogallo, un alpeggio situato nell'omonima valle, ci fu un grandissimo sviluppo dovuto alla produzione di legname proveniente dai disboscamenti avvenuti in Val Grande.",
+      "english": "At the beginning of the twentieth century in Pogallo, an alpine pasture located in the valley of the same name, there was a great development due to the production of timber coming from the deforestation that took place in Val Grande."
+    },
+    {
+      "id": "s5",
+      "name": "Sutermeister",
+      "quote": "Il Collegamento tra Pogallo e Cicogna, prima molto difficoltoso, fu reso adatto ai carrelli per il legname grazie ad una nuova mulattiera, chiamata \"Sutermeister\" in onore dell'ingegnere, che grazie ad arditi passaggi scavati nella roccia dimezza il tempo di percorrenza.",
+      "english": "The connection between Pogallo and Cicogna, previously very difficult, was made suitable for timber carts thanks to a new mule track, called \"Sutermeister\" in honor of the engineer, which thanks to daring passages carved into the rock halves the travel time."
+    },
+    {
+      "id": "s6",
+      "name": "Monte Zeda",
+      "quote": "Altre escursioni degne di nota sono le ascensioni sui monti che delimitano il parco sul versante del Lago Maggiore, cioè il Monte Zeda ed il pizzo Marona; raggiungibili con un'escursione in giornata moderatamente impegnativa, si possono anche concatenare in un giro più ampio con i sentieri che salgono da Cicogna o dalla Valle Intrasca.",
+      "english": "Other noteworthy excursions are the climbs on the mountains that border the park on the Lake Maggiore side, namely Monte Zeda and Pizzo Marona; reachable with a moderately demanding day hike, they can also be combined into a wider loop with the trails climbing from Cicogna or from the Intrasca Valley."
+    },
+    {
+      "id": "s7",
+      "name": "pizzo Marona",
+      "quote": "Altre escursioni degne di nota sono le ascensioni sui monti che delimitano il parco sul versante del Lago Maggiore, cioè il Monte Zeda ed il pizzo Marona; raggiungibili con un'escursione in giornata moderatamente impegnativa, si possono anche concatenare in un giro più ampio con i sentieri che salgono da Cicogna o dalla Valle Intrasca.",
+      "english": "Other noteworthy excursions are the climbs on the mountains that border the park on the Lake Maggiore side, namely Monte Zeda and Pizzo Marona; reachable with a moderately demanding day hike, they can also be combined into a wider loop with the trails climbing from Cicogna or from the Intrasca Valley."
+    },
+    {
+      "id": "s8",
+      "name": "Cima Sasso",
+      "quote": "Senza troppe difficoltà si può raggiungere la Cima Sasso, anche se è consigliabile una conoscenza del territorio circostante, mentre la parte restante della cresta è consigliata ad escursionisti con esperienza ed accompagnati.",
+      "english": "Without too much difficulty you can reach Cima Sasso, although knowledge of the surrounding territory is recommended, while the remaining part of the ridge is recommended for experienced and accompanied hikers."
+    }
+  ],
+  "days": [
+    {
+      "title": "Heart of the Wilderness and Historic Trails",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Central Nature Reserves and Peaks",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s8"
+      ]
+    },
+    {
+      "title": "Lake Maggiore Versant Summits",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

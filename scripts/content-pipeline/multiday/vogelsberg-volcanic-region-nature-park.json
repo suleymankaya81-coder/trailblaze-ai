@@ -1,0 +1,39 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Feldatal",
+      "quote": "Feldatal, the valley of the mills, is located on the northern edge of the Vogelsberg Volcanic Region Nature Park and is one of the most beautiful valleys.",
+      "english": "Feldatal, the valley of the mills, is located on the northern edge of the Vogelsberg Volcanic Region Nature Park and is one of the most beautiful valleys."
+    },
+    {
+      "id": "s2",
+      "name": "Feldataler Sternwarte",
+      "quote": "Zwischen weiten Feldern und Wiesen liegt in einer Talsenke ein Gebäudekomplex der Feldataler Sternwarte.",
+      "english": "A building complex of the Feldatal observatory is situated in a valley hollow between wide fields and meadows."
+    },
+    {
+      "id": "s3",
+      "name": "Stumpertenrod",
+      "quote": "Since the construction of the observatory in the OT Stumpertenrod, the visitor comes even closer to the sky.",
+      "english": "Since the construction of the observatory in the district of Stumpertenrod, the visitor comes even closer to the sky."
+    },
+    {
+      "id": "s4",
+      "name": "Hotel Schloss Romrod",
+      "quote": "Hotel Schloss Romrod Alsfelder Straße 7, 36329 Romrod",
+      "english": "Hotel Castle Romrod Alsfelder Straße 7, 36329 Romrod"
+    }
+  ],
+  "days": [
+    {
+      "title": "Astronomy and Valley Exploration",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

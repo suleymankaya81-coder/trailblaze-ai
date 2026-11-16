@@ -1,0 +1,32 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Isola di Pantelleria",
+      "quote": "Il Parco nazionale dell'Isola di Pantelleria (in siciliano Parcu nazziunali di l'Ìsula di Pantiddrarìa) è un'area naturale protetta situata in Sicilia sull'Isola di Pantelleria.",
+      "english": "The Pantelleria Island National Park (in Sicilian Parcu nazziunali di l'Ìsula di Pantiddrarìa) is a protected natural area located in Sicily on the Island of Pantelleria."
+    },
+    {
+      "id": "s2",
+      "name": "scogliere aride",
+      "quote": "Sulle scogliere aride crescono radi qualche lentisco e ginestra.",
+      "english": "On the arid cliffs, a few mastic and broom plants grow sparsely."
+    },
+    {
+      "id": "s3",
+      "name": "interno",
+      "quote": "Verso l'interno e a quote più elevate si trova il leccio, l'erica, il corbezzolo ed il pino marittimo.",
+      "english": "Inland and at higher altitudes, one finds holm oak, heather, strawberry tree, and maritime pine."
+    }
+  ],
+  "days": [
+    {
+      "title": "Natural Environments of Pantelleria",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ]
+}

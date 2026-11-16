@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Veneto",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco naturale regionale del Fiume Sile"
+        "area delle sorgenti",
+        "La Porta dell'Acqua",
+        "oasi naturalistica del Mulino Cervara"
       ],
       "seo_title": "Parco naturale regionale del Fiume Sile Visit Guide"
     },
@@ -32,16 +34,49 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco naturale regionale del Fiume Sile",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Springs and Wetlands",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco naturale regionale del Fiume Sile",
-                "stop_id": "parco-naturale-regionale-del-fiume-sile",
-                "detail": "The Sile River Regional Natural Park is a protected natural area that extends along the Sile course, from the sources site to Torreselle di Piombino Dese to the original mouth at Portegrandi di Quarto d'Altino."
+                "name": "area delle sorgenti",
+                "stop_id": "parco-naturale-regionale-del-fiume-sile--s1",
+                "detail": "The first point of interest is represented by the spring area (the springs are called fontanassi in Veneto), located between Casacorba, Cavasagra di Vedelago and Torreselle di Piombino Dese."
+              },
+              {
+                "name": "La Porta dell'Acqua",
+                "stop_id": "parco-naturale-regionale-del-fiume-sile--s2",
+                "detail": "Near the main core of the springs, the park authority has created an equipped route, which winds through a pedestrian and cycle path network, called \"The Water Gate\"."
+              },
+              {
+                "name": "oasi naturalistica del Mulino Cervara",
+                "stop_id": "parco-naturale-regionale-del-fiume-sile--s3",
+                "detail": "Another gateway to the park is represented by the naturalistic oasis of Mulino Cervara, near Santa Cristina: it extends over about 25 hectares within an islet bordered by the Sile and the Piovega canal."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale regionale del Fiume Sile before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Riverside Routes and History",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "GiraSile",
+                "stop_id": "parco-naturale-regionale-del-fiume-sile--s4",
+                "detail": "The Sile Park authority has created a cycle path along the river called GiraSile which, through 90 km of cycle track starting from Casacorba, arrives at Portegrandi on the Venice Lagoon."
+              },
+              {
+                "name": "Restere",
+                "stop_id": "parco-naturale-regionale-del-fiume-sile--s5",
+                "detail": "After Treviso wind the Restere, which are the raised embankments on which oxen pulled the large transport boats called burci."
+              },
+              {
+                "name": "Cimitero dei burci",
+                "stop_id": "parco-naturale-regionale-del-fiume-sile--s6",
+                "detail": "Numerous stranded wrecks still remain in the area between Silea and Casier (the so-called \"Burci Cemetery\")."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco naturale regionale del Fiume Sile before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +114,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_del_Fiume_Sile"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_del_Fiume_Sile"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:02:49.354132+00:00"
       }
     }
   }

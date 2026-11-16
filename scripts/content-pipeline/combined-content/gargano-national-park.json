@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Apulia",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Gargano National Park"
+        "Punta Pietre Nere",
+        "dolina Pozzatina",
+        "lago di Lesina"
       ],
       "seo_title": "Gargano National Park Visit Guide"
     },
@@ -32,16 +34,72 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Gargano National Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Northern Lakes and Geological Wonders",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Gargano National Park",
-                "stop_id": "gargano-national-park",
-                "detail": "The Gargano National Park (Italian: Parco nazionale del Gargano) is a national park in the province of Foggia in southern Italy. Aside from the Gargano promontory (encompassing the ancient woodlands of the Foresta Umbra) from which it takes its name, it includes also the Tremiti Islands archipelago and the wetlands Lago Salso. It is the largest park in Apulia."
+                "name": "Punta Pietre Nere",
+                "stop_id": "gargano-national-park--s3",
+                "detail": "An exception is Punta Pietre Nere, a mass of dark volcanic rocks dating back to the Triassic, outcropping on the beach of Lesina."
+              },
+              {
+                "name": "dolina Pozzatina",
+                "stop_id": "gargano-national-park--s4",
+                "detail": "The Pozzatina sinkhole, more than 100 meters deep and with a diameter of about 500, is the largest in Europe (the sinkhole is part of the Municipality of San Nicandro Garganico)."
+              },
+              {
+                "name": "lago di Lesina",
+                "stop_id": "gargano-national-park--s5",
+                "detail": "Lake Lesina, 24.4 km long and 2.4 km wide, has a perimeter of almost 50 km and is to all intents and purposes a lagoon."
+              },
+              {
+                "name": "lago di Varano",
+                "stop_id": "gargano-national-park--s6",
+                "detail": "Lake Varano is the largest in southern Italy (60.5 km²)."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Gargano National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Southern Wetlands and Mountain Forests",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "lago Salso",
+                "stop_id": "gargano-national-park--s7",
+                "detail": "Lake Salso (5.5 km²), located near Manfredonia and fed by the Cervaro river, is characterized instead by its fresh waters."
+              },
+              {
+                "name": "Oasi Lago Salso",
+                "stop_id": "gargano-national-park--s8",
+                "detail": "The lake area, due to its great relevance in the field of biodiversity, is part of the Lake Salso Oasis, managed in collaboration with WWF Italy."
+              },
+              {
+                "name": "Monte Sacro",
+                "stop_id": "gargano-national-park--s10",
+                "detail": "Other woods of naturalistic interest are also those of Monte Sant'Angelo, of Monte Sacro (Mattinata), of Spina Pulci (between San Nicandro Garganico and Cagnano Varano."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Gargano National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Island and Central Forest Exploration",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "isole Tremiti",
+                "stop_id": "gargano-national-park--s1",
+                "detail": "The four Tremiti islands (marine reserve) are part of the park."
+              },
+              {
+                "name": "Foresta Umbra",
+                "stop_id": "gargano-national-park--s2",
+                "detail": "The Umbra Forest is located inside the park."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Gargano National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +137,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Gargano_National_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_nazionale_del_Gargano"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:55:01.184666+00:00"
       }
     }
   }

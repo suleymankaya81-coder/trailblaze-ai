@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Rennsteig",
+      "quote": "Zwischen den Wäldern des Rennsteigs und den Burgen der Saale laden fünf abwechslungsreiche Landschaften von beeindruckender Schönheit zum Entdecken ein.",
+      "english": "Between the forests of the Rennsteig and the castles of the Saale, five varied landscapes of impressive beauty invite you to discover them."
+    },
+    {
+      "id": "s2",
+      "name": "Saale",
+      "quote": "Die Saale, die sich wie ein blaues Band um die Berge windet und das Thüringer Meer speist, ist ein bekanntes Wander- und Erholungsgebiet.",
+      "english": "The Saale, which winds around the mountains like a blue ribbon and feeds the Thuringian Sea, is a well-known hiking and recreation area."
+    },
+    {
+      "id": "s3",
+      "name": "Thüringer Meer",
+      "quote": "Camping- und Ecocampingplätze säumen die fjordähnlichen Ufer der beiden Stauseen.",
+      "english": "Camping and eco-camping sites line the fjord-like shores of the two reservoirs."
+    },
+    {
+      "id": "s4",
+      "name": "Grünen Band",
+      "quote": "Am Grünen Band wird Geschichte erlebbar.",
+      "english": "History can be experienced at the Green Belt."
+    },
+    {
+      "id": "s5",
+      "name": "Land der Tausend Teiche",
+      "quote": "Regionale Fisch- und Wildköstlichkeiten erwarten Gäste im Land der Tausend Teiche.",
+      "english": "Regional fish and game delicacies await guests in the Land of a Thousand Ponds."
+    },
+    {
+      "id": "s6",
+      "name": "Himmelsteiche",
+      "quote": "Vogelbegeisterte werden mit eindrücklichen Beobachtungen rund um die Himmelsteiche belohnt.",
+      "english": "Bird enthusiasts will be rewarded with impressive observations around the sky ponds."
+    },
+    {
+      "id": "s7",
+      "name": "Thüringer Schiefergebirge",
+      "quote": "Berühmt wurde das Thüringer Schiefergebirge aber vor allem durch sein Blaues Gold, den Dachschiefer.",
+      "english": "The Thuringian Slate Mountains became famous primarily for their blue gold, the roofing slate."
+    }
+  ],
+  "days": [
+    {
+      "title": "Mountains and Historic Borders",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s4"
+      ]
+    },
+    {
+      "title": "Water Landscapes of the Saale",
+      "stop_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Ponds and Birdwatching",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

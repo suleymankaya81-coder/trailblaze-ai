@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Trentino South Tyrol",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Puez-Geisler Nature Park"
+        "Sass de Putia",
+        "centro visite del parco",
+        "sentiero natura"
       ],
       "seo_title": "Puez-Geisler Nature Park Visit Guide"
     },
@@ -32,16 +34,62 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Puez-Geisler Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Northern Peaks and Visitor Discovery",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Puez-Geisler Nature Park",
-                "stop_id": "puez-geisler-nature-park",
-                "detail": "The Puez-Geisler Nature Park (Italian: Parco naturale Puez Odle; German: Naturpark Puez-Geisler) is a nature reserve in the Dolomites in South Tyrol, Italy."
+                "name": "Sass de Putia",
+                "stop_id": "puez-geisler-nature-park--s1",
+                "detail": "On top of it, a sandstone deposit formed, which surfaces and can be admired near the Sass de Putia."
+              },
+              {
+                "name": "centro visite del parco",
+                "stop_id": "puez-geisler-nature-park--s9",
+                "detail": "The park's visitor center is located in Santa Maddalena."
+              },
+              {
+                "name": "sentiero natura",
+                "stop_id": "puez-geisler-nature-park--s10",
+                "detail": "Inside the park, near the Zannes hut, there is a special trail, the nature trail, which is also accessible to the disabled in wheelchairs."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Puez-Geisler Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "The Odle Group and High Trails",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Alta via n. 2",
+                "stop_id": "puez-geisler-nature-park--s5",
+                "detail": "The park is crossed from north to south by the Alta via n. 2."
+              },
+              {
+                "name": "via delle Odle",
+                "stop_id": "puez-geisler-nature-park--s8",
+                "detail": "The group is a destination for many hikers and climbers because it offers everything from via ferratas to climbs of modest, medium, and extreme difficulty, as well as hiking walks of particular interest, such as the \"via delle Odle\" (in German Adolf Munekl-Weg), the path that passes the northern base of the Odle group."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Puez-Geisler Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Puez Heights and Woodland Valleys",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Piz de Puez",
+                "stop_id": "puez-geisler-nature-park--s4",
+                "detail": "To the southeast lies the Puez group, in turn divided with the Stevìa group, the Sassongher and Gran Cir-Vallunga subgroups, where the highest peak is Piz de Puez (2,913 m)."
+              },
+              {
+                "name": "Vallunga",
+                "stop_id": "puez-geisler-nature-park--s6",
+                "detail": "The sparse woodland of Vallunga, consisting of spruce, larch, and stone pine, is also remarkable."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Puez-Geisler Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +127,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Puez-Geisler_Nature_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_Puez-Odle"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:07:49.662442+00:00"
       }
     }
   }

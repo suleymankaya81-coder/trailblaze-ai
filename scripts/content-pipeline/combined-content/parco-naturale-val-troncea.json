@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Piedmont",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco naturale Val Troncea"
+        "Laval",
+        "Mulino di Laval",
+        "Punta Rognosa di Sestriere"
       ],
       "seo_title": "Parco naturale Val Troncea Visit Guide"
     },
@@ -32,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco naturale Val Troncea",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Lower Valley Hamlets and Peaks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco naturale Val Troncea",
-                "stop_id": "parco-naturale-val-troncea",
-                "detail": "The nature park Parco naturale Val Troncea is located in Val Chisone, municipality of Pragelato in the Metropolitan City of Turin. The park was created in 1980 to preserve the natural environment."
+                "name": "Laval",
+                "stop_id": "parco-naturale-val-troncea--s1",
+                "detail": "The altimetric excursion is between 1,670 m a.s.l. in Laval and 3,280 m a.s.l."
+              },
+              {
+                "name": "Mulino di Laval",
+                "stop_id": "parco-naturale-val-troncea--s7",
+                "detail": "Hiking refuge Mulino di Laval, located at 1,670 m at the entrance of the valley"
+              },
+              {
+                "name": "Punta Rognosa di Sestriere",
+                "stop_id": "parco-naturale-val-troncea--s2",
+                "detail": "The maximum height is reached by Punta Rognosa di Sestriere, which is also the highest peak in the entire Val Chisone."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale Val Troncea before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "High Pastures and Refuges",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Alpe Mei",
+                "stop_id": "parco-naturale-val-troncea--s5",
+                "detail": "Alpe Mei is a mountain pasture inhabited only in the summer period and located at the bottom of the valley at an altitude of 2,045 m."
+              },
+              {
+                "name": "Rifugio Troncea",
+                "stop_id": "parco-naturale-val-troncea--s6",
+                "detail": "Rifugio Troncea, located in the hamlet of Troncea at 1,915 m"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco naturale Val Troncea before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +109,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Parco_naturale_Val_Troncea"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_della_Val_Troncea"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:04:28.124754+00:00"
       }
     }
   }

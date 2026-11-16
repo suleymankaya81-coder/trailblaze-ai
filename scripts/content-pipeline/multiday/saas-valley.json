@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Saas-Fee",
+      "quote": "Saas-Fee ist mit 1637 Einwohnern (Stand 1. Januar 2026) die grösste Ortschaft im Saastal.",
+      "english": "Saas-Fee, with 1637 inhabitants (as of January 1, 2026), is the largest village in the Saas Valley."
+    },
+    {
+      "id": "s2",
+      "name": "Saas-Grund",
+      "quote": "Saas-Grund ist der ehemalige Hauptort des Saastals und zweitgrösster Ort des Saastals nach Saas-Fee.",
+      "english": "Saas-Grund is the former main town of the Saas Valley and the second largest town in the Saas Valley after Saas-Fee."
+    },
+    {
+      "id": "s3",
+      "name": "Dom",
+      "quote": "Das Saastal ist in erster Linie bekannt durch [...] den Zugang zu den alpinistisch anziehenden Gebieten der Mischabelkette mit dem höchsten grenzfernen Gipfel der Schweiz, dem Dom.",
+      "english": "The Saas Valley is primarily known for [...] access to the alpinistically attractive areas of the Mischabel range with the highest summit entirely within Switzerland, the Dom."
+    },
+    {
+      "id": "s4",
+      "name": "Mattmark-Staudamm",
+      "quote": "Unmittelbar im Anschluss an Saas-Almagell befindet sich der Mattmark-Staudamm, der höchstgelegene Erdstaudamm Europas (2197 m).",
+      "english": "Immediately adjacent to Saas-Almagell is the Mattmark Dam, the highest earth-fill dam in Europe (2197 m)."
+    },
+    {
+      "id": "s5",
+      "name": "Saas-Almagell",
+      "quote": "Saas-Almagell ist die südlichste der Gemeinden im Saastal und hat 376 Einwohner (Stand 1. Januar 2026).",
+      "english": "Saas-Almagell is the southernmost of the municipalities in the Saas Valley and has 376 inhabitants (as of January 1, 2026)."
+    },
+    {
+      "id": "s6",
+      "name": "Saas-Balen",
+      "quote": "Saas-Balen zählt 340 Einwohner (Stand 1. Januar 2026) und ist vor allem bekannt für ihre Rundkirche und den Fellbach.",
+      "english": "Saas-Balen has 340 inhabitants (as of January 1, 2026) and is primarily known for its round church and the Fellbach."
+    },
+    {
+      "id": "s7",
+      "name": "Eisten",
+      "quote": "Vom Rhonetal her kommend gelangt man über Visp und Stalden zuerst nach Eisten und Saas-Balen, dann nach Saas-Grund.",
+      "english": "Coming from the Rhone Valley via Visp and Stalden, you first reach Eisten and Saas-Balen, then Saas-Grund."
+    },
+    {
+      "id": "s8",
+      "name": "Weissmies",
+      "quote": "Auf der rechten Seite des Saastals finden sich die zwei Viertausender der Weissmiesgruppe mit Weissmies und Lagginhorn, 36 Viertausender umgeben das Mattertal.",
+      "english": "On the right side of the Saas Valley are the two four-thousand-meter peaks of the Weissmies group, Weissmies and Lagginhorn; 36 four-thousand-meter peaks surround the Matter Valley."
+    },
+    {
+      "id": "s9",
+      "name": "Hohsaas",
+      "quote": "Der Ort verfügt über ein sonniges Ski- und Wandergebiet (Hohsaas, Kreuzboden) und ist – wie auch das restliche Saastal – auf den Tourismus ausgerichtet.",
+      "english": "The village has a sunny skiing and hiking area (Hohsaas, Kreuzboden) and is – like the rest of the Saas Valley – geared towards tourism."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Glaciers of Saas-Fee",
+      "stop_ids": [
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "title": "Central Valley Hubs and Alpine Slopes",
+      "stop_ids": [
+        "s2",
+        "s8",
+        "s9"
+      ]
+    },
+    {
+      "title": "Southern Dams and Northern Villages",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "8cb9b0fb607b607a551b3099a98c341db409837829ea7bf63f5d376395916433"
+}

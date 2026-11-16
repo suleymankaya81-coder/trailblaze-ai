@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Himmelpforter Heide",
+      "quote": "Im Westen des Naturparks liegt das Waldgebiet Himmelpforter Heide.",
+      "english": "The forest area Himmelpforter Heide is located in the west of the nature park."
+    },
+    {
+      "id": "s2",
+      "name": "Naturschutzgebiet Thymen",
+      "quote": "Der Naturpark schließt folgende Schutzgebiete ein: Landschaftsschutzgebiet Norduckermärkische Seenlandschaft Landschaftsschutzgebiet Neuruppin – Rheinsberg – Fürstenberger Wald- und Seengebiet Naturschutzgebiet Thymen",
+      "english": "The nature park includes the following protected areas: North Uckermark Lake Landscape Protection Area, Neuruppin – Rheinsberg – Fürstenberg Forest and Lake Protection Area, Thymen Nature Reserve."
+    },
+    {
+      "id": "s3",
+      "name": "Naturschutzgebiet Boitzenburger Tiergarten",
+      "quote": "Der Naturpark schließt folgende Schutzgebiete ein: Naturschutzgebiet Boitzenburger Tiergarten",
+      "english": "The nature park includes the following protected areas: Boitzenburger Tiergarten Nature Reserve."
+    },
+    {
+      "id": "s4",
+      "name": "Naturschutzgebiet Mellensee bei Lychen",
+      "quote": "Der Naturpark schließt folgende Schutzgebiete ein: Naturschutzgebiet Mellensee bei Lychen",
+      "english": "The nature park includes the following protected areas: Mellensee near Lychen Nature Reserve."
+    },
+    {
+      "id": "s5",
+      "name": "Naturschutzgebiet Klapperberge",
+      "quote": "Der Naturpark schließt folgende Schutzgebiete ein: Naturschutzgebiet Klapperberge",
+      "english": "The nature park includes the following protected areas: Klapperberge Nature Reserve."
+    },
+    {
+      "id": "s6",
+      "name": "Bürgergarten in Templin",
+      "quote": "Die Naturparkverwaltung hat ihren Sitz in der Hyparschale im Bürgergarten in Templin.",
+      "english": "The nature park administration is located in the Hyparschale in the Bürgergarten in Templin."
+    },
+    {
+      "id": "s7",
+      "name": "Naturschutzgebiet Küstrinchenbach und Oberpfuhlmoor",
+      "quote": "Der Naturpark schließt folgende Schutzgebiete ein: Naturschutzgebiet Küstrinchenbach und Oberpfuhlmoor",
+      "english": "The nature park includes the following protected areas: Küstrinchenbach and Oberpfuhlmoor Nature Reserve."
+    }
+  ],
+  "days": [
+    {
+      "title": "Western Forests and Nature Reserves",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s4"
+      ]
+    },
+    {
+      "title": "Templin Administration and Central Moors",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Eastern and Southern Protected Areas",
+      "stop_ids": [
+        "s3",
+        "s5"
+      ]
+    }
+  ]
+}

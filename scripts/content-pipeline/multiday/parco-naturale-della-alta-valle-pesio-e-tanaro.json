@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Punta Marguareis",
+      "quote": "Prende il nome dalla Punta Marguareis, la più alta delle Alpi Liguri.",
+      "english": "It takes its name from Punta Marguareis, the highest of the Ligurian Alps."
+    },
+    {
+      "id": "s2",
+      "name": "Cima delle Saline",
+      "quote": "Tra le principali cime incluse in tutto o in parte nel parco si possono ricordare, oltre al Marguareis, la Cima delle Saline, il Monte Bertrand, la Cima Cars e la Cima della Fascia.",
+      "english": "Among the main peaks included in whole or in part in the park, in addition to Marguareis, the Cima delle Saline, Monte Bertrand, Cima Cars, and Cima della Fascia can be mentioned."
+    },
+    {
+      "id": "s3",
+      "name": "Monte Bertrand",
+      "quote": "Tra le principali cime incluse in tutto o in parte nel parco si possono ricordare, oltre al Marguareis, la Cima delle Saline, il Monte Bertrand, la Cima Cars e la Cima della Fascia.",
+      "english": "Among the main peaks included in whole or in part in the park, in addition to Marguareis, the Cima delle Saline, Monte Bertrand, Cima Cars, and Cima della Fascia can be mentioned."
+    },
+    {
+      "id": "s4",
+      "name": "Cima Cars",
+      "quote": "Tra le principali cime incluse in tutto o in parte nel parco si possono ricordare, oltre al Marguareis, la Cima delle Saline, il Monte Bertrand, la Cima Cars e la Cima della Fascia.",
+      "english": "Among the main peaks included in whole or in part in the park, in addition to Marguareis, the Cima delle Saline, Monte Bertrand, Cima Cars, and Cima della Fascia can be mentioned."
+    },
+    {
+      "id": "s5",
+      "name": "Cima della Fascia",
+      "quote": "Tra le principali cime incluse in tutto o in parte nel parco si possono ricordare, oltre al Marguareis, la Cima delle Saline, il Monte Bertrand, la Cima Cars e la Cima della Fascia.",
+      "english": "Among the main peaks included in whole or in part in the park, in addition to Marguareis, the Cima delle Saline, Monte Bertrand, Cima Cars, and Cima della Fascia can be mentioned."
+    },
+    {
+      "id": "s6",
+      "name": "Certosa di Pesio",
+      "quote": "Il parco regionale ospita vaste aree a bosco (in particolare faggete, abetine e lariceti), il cui sviluppo fu favorito dalla presenza dei monaci della Certosa di Pesio.",
+      "english": "The regional park is home to vast wooded areas (in particular beech, fir and larch forests), the development of which was favored by the presence of the monks of the Certosa di Pesio."
+    },
+    {
+      "id": "s7",
+      "name": "GTA",
+      "quote": "Una ampia rete di sentieri segnati è disponibile all'interno del parco, che è anche attraversato dal tratto più meridionale della GTA.",
+      "english": "A wide network of marked trails is available inside the park, which is also crossed by the southernmost stretch of the GTA."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks of the Ligurian Alps",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Northern Ridges and Monastic Woodlands",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

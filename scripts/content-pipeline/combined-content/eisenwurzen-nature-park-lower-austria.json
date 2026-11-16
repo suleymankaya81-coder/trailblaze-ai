@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lower Austria",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Der Naturpark Niederösterreichische Eisenwurzen"
+        "Wentsteinhammer",
+        "Treffenguthammer",
+        "Naturparkinformationszentrum"
       ],
       "seo_title": "Eisenwurzen Nature Park (Lower Austria) Visit Guide"
     },
@@ -32,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Eisenwurzen Nature Park (Lower Austria)",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Historical Forges and Information",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Der Naturpark Niederösterreichische Eisenwurzen",
-                "stop_id": "eisenwurzen-nature-park-lower-austria",
-                "detail": "The Nature Park Niederösterreichische Eisenwurzen is located in the Mostviertel, in the extreme southwest of Lower Austria. It is located entirely in the municipality of Hollenstein on the Ybbs. The eponymous ironroots are actually a much larger region and also extend to neighboring Styria. The nature park covers the entire Seeaubach valley and most of the Hammerbach valley. Hammerbach is a tributary of the Ybbs."
+                "name": "Wentsteinhammer",
+                "stop_id": "eisenwurzen-nature-park-lower-austria--s3",
+                "detail": "As the name Hammerbach already suggests, several water-driven hammer mills were built along this stream; within the nature park, the Wentsteinhammer was restored and serves as a demonstration forge."
+              },
+              {
+                "name": "Treffenguthammer",
+                "stop_id": "eisenwurzen-nature-park-lower-austria--s4",
+                "detail": "The Treffenguthammer is also one of the few preserved hammer mills along the Hammerbach."
+              },
+              {
+                "name": "Naturparkinformationszentrum",
+                "stop_id": "eisenwurzen-nature-park-lower-austria--s7",
+                "detail": "The nature park information center is located in the tourist office on the village square of Hollenstein an der Ybbs"
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Eisenwurzen Nature Park (Lower Austria) before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Forest Shelters and Mountain Huts",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Promau",
+                "stop_id": "eisenwurzen-nature-park-lower-austria--s5",
+                "detail": "Thematic trails were created in the nature park and a bark hut – a shelter for lumberjacks made of tree bark and a few wooden poles – was built in Promau."
+              },
+              {
+                "name": "Kitzhütte",
+                "stop_id": "eisenwurzen-nature-park-lower-austria--s6",
+                "detail": "Located at 1,280 m above sea level, the managed Kitzhütte offers overnight accommodation on mattress camps for up to 25 people (open from May 25th to October 31st)."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Eisenwurzen Nature Park (Lower Austria) before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +109,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://de.wikipedia.org/wiki/Naturpark_Eisenwurzen_%28Nieder%C3%B6sterreich%29"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Naturpark_Eisenwurzen_%28Nieder%C3%B6sterreich%29"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:13:02.349048+00:00"
       }
     }
   }

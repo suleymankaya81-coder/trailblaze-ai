@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Bavaria",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Eibsee"
+        "Weitsee",
+        "Eibseerundweg"
       ],
       "seo_title": "Lake Eibsee Visit Guide"
     },
@@ -32,16 +33,67 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Lake Eibsee",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Main Lake and Loop Trail",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Eibsee",
-                "stop_id": "lake-eibsee",
-                "detail": "Eibsee (\"yew lake\") is a lake in Bavaria, Germany, 9 km southwest of Garmisch-Partenkirchen and roughly 100 km southwest of Munich. It is 973.28 metres (3,193.2 ft) above sea-level and its surface area is 177.4 hectares (438 acres). It is at the northerly base of the Zugspitze (2,950 metres (9,680 ft) above sea level and 3.5 km to the south), Germany's highest mountain."
+                "name": "Weitsee",
+                "stop_id": "lake-eibsee--s1",
+                "detail": "In the northeast, the 4.8-hectare and 26-meter-deep Untersee is separated from the main part of the lake, the 172-hectare Weitsee, by a 50-meter-wide sill of rockslide debris."
+              },
+              {
+                "name": "Eibseerundweg",
+                "stop_id": "lake-eibsee--s3",
+                "detail": "A small bridge, part of the Eibsee circular trail, leads across this narrow sill."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Eibsee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Southern and Northern Small Lakes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Frillensee",
+                "stop_id": "lake-eibsee--s4",
+                "detail": "To the completely separated small neighboring lakes belong the Frillensee in the south (not to be confused with the larger Frillensee near Inzell) as well as Braxensee, Steingringpriel, Steinsee, Froschsee and Drachenseelein in the north."
+              },
+              {
+                "name": "Braxensee",
+                "stop_id": "lake-eibsee--s5",
+                "detail": "Braxensee: 0.24 ha (completely separated, 13 m north of Lake Eibsee) circumference 200 m"
+              },
+              {
+                "name": "Steinsee",
+                "stop_id": "lake-eibsee--s6",
+                "detail": "Steinsee: 0.08 ha, 185 m north of Lake Eibsee (Steingring) or 100 m north of the Steingringpriel"
+              },
+              {
+                "name": "Froschsee",
+                "stop_id": "lake-eibsee--s7",
+                "detail": "Froschsee: 0.035 ha (350 m²), 40 m north of Lake Eibsee (Steingring)"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Eibsee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Eibsee Islands",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Maximiliansinsel",
+                "stop_id": "lake-eibsee--s8",
+                "detail": "Every year, around 25 civil wedding ceremonies were held in the small log cabin on Maximiliansinsel."
+              },
+              {
+                "name": "Steinbichl",
+                "stop_id": "lake-eibsee--s9",
+                "detail": "Only the smallest island, Steinbichl, 50 meters southeast of Sasseninsel, does not form its own parcel of land."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Lake Eibsee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +131,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Eibsee"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Eibsee"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:16:40.225009+00:00"
       }
     }
   }

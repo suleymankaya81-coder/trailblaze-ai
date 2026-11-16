@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Sardinia",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Asinara"
+        "punta della Scomunica",
+        "cala d'Oliva",
+        "Elighe Mannu"
       ],
       "seo_title": "Asinara National Park Visit Guide"
     },
@@ -32,16 +34,49 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Asinara National Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Northern Heights and Villages",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Asinara",
-                "stop_id": "asinara-national-park",
-                "detail": "Asinara is the second largest island of Sardinia after Sant'Antioco. It houses a great variety of habitats. The island has an extremely odd historical, environmental, and legal status. It is known as \"Isola del Diavolo\" (\"Devil's Island\"), since it was used as a quarantine location, as a prison camp during the First World War, and as one of the most important Italian high security prisons during the terrorist period of the 1970s and during the struggle against organized crime, until the establishment of a National Park in 1998."
+                "name": "punta della Scomunica",
+                "stop_id": "asinara-national-park--s1",
+                "detail": "Its highest point is Punta della Scomunica (408 m a.s.l.), followed by Punta Maestra (265 meters), Punta Tumbarino (241 meters), Monte Ruda (215 meters), and Punta Marcutza (195 meters)."
+              },
+              {
+                "name": "cala d'Oliva",
+                "stop_id": "asinara-national-park--s2",
+                "detail": "The watercourses are predominantly seasonal and feed some artificial reservoirs that served the prison structures and the village of Cala d'Oliva."
+              },
+              {
+                "name": "Elighe Mannu",
+                "stop_id": "asinara-national-park--s4",
+                "detail": "Only in the locality of Elighe Mannu is there a small original formation of holm oak forest (Quercus ilex)."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Asinara National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Central Nature and History",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Cala Scombro di Dentro",
+                "stop_id": "asinara-national-park--s3",
+                "detail": "The small rocks near Cala Scombro di Dentro host important colonies of European shag (Phalacrocorax aristotelis)."
+              },
+              {
+                "name": "ossario austro-ungarico",
+                "stop_id": "asinara-national-park--s5",
+                "detail": "In addition to the structures that were part of the prison complex, there is an Austro-Hungarian ossuary on the island erected in the 1930s."
+              },
+              {
+                "name": "Osservatorio Faunistico del Parco",
+                "stop_id": "asinara-national-park--s7",
+                "detail": "In the Tumbarino locality, the Park's Wildlife Observatory is active."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Asinara National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +114,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Asinara_National_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_nazionale_dell%27Asinara"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:53:11.615354+00:00"
       }
     }
   }

@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "isola di Razzoli",
+      "quote": "A causa del forte vento che colpisce di tanto in tanto il territorio, delle caratteristiche geomorfologiche e delle qualità biologiche del suolo, nell'arcipelago si sono sviluppate componenti endemiche quali l'Artemisia densiflora sull'isola di Razzoli e i ginepreti di ginepro fenicio in quasi tutte le isole.",
+      "english": "Due to the strong wind that occasionally hits the area, the geomorphological characteristics and biological qualities of the soil, endemic components such as Artemisia densiflora have developed on the island of Razzoli and Phoenician juniper thickets on almost all islands."
+    },
+    {
+      "id": "s2",
+      "name": "isola di Mortorio",
+      "quote": "Il parco copre una superficie terrestre di 5.100 ettari e una superficie marina di 15.046 ettari, su un fronte di ben 180 km di coste, estendendosi dalle Bocche di Bonifacio e comprendendo tutte le isole appartenenti all'Arcipelago di La Maddalena, fino a poca distanza dalla costa della Gallura, dove si trovano le isole minori di fronte appartenenti al parco, come l'isola di Mortorio, a protezione integrale.",
+      "english": "The park covers a land area of 5,100 hectares and a marine area of 15,046 hectares, along a front of as many as 180 km of coastline, extending from the Strait of Bonifacio and including all the islands belonging to the La Maddalena Archipelago, up to a short distance from the Gallura coast, where the smaller islands belonging to the park are located, such as the island of Mortorio, under full protection."
+    },
+    {
+      "id": "s3",
+      "name": "isola di Caprera",
+      "quote": "Sull'isola di Caprera sono presenti delle ampie pinete, la cui leggenda vuole che a piantare il primo pino sia stato Giuseppe Garibaldi nei pressi della sua abitazione.",
+      "english": "On the island of Caprera there are large pine forests, which legend says were first planted by Giuseppe Garibaldi near his home."
+    },
+    {
+      "id": "s4",
+      "name": "isola di Spargi",
+      "quote": "Sulle isole di La Maddalena, Caprera e Spargi sono stati liberati, forse a scopo venatorio, esemplari di cinghiale, che si sono negli anni riprodotti e ibridati con il maiale domestico, creando non pochi problemi alla fauna e alla flora locali.",
+      "english": "On the islands of La Maddalena, Caprera and Spargi, wild boar specimens were released, perhaps for hunting purposes, which over the years have reproduced and hybridized with the domestic pig, creating quite a few problems for the local fauna and flora."
+    },
+    {
+      "id": "s5",
+      "name": "Casa Bianca",
+      "quote": "Garibaldi morì a Caprera il 2 giugno 1882 e vi è sepolto, nel piccolo cimitero di famiglia presso la sua residenza, la cosiddetta Casa Bianca, oggi parte del Compendio Garibaldino di Caprera, che comprende la dimora, gli edifici e i luoghi legati alla vita di Garibaldi.",
+      "english": "Garibaldi died in Caprera on June 2, 1882 and is buried there, in the small family cemetery at his residence, the so-called White House, now part of the Compendio Garibaldino di Caprera, which includes the home, buildings and places linked to Garibaldi's life."
+    },
+    {
+      "id": "s6",
+      "name": "Memoriale Giuseppe Garibaldi",
+      "quote": "Sull'isola si trovano anche il Memoriale Giuseppe Garibaldi, ospitato nell'ex forte di Arbuticci, e la tomba della cavalla Marsala.",
+      "english": "On the island there is also the Giuseppe Garibaldi Memorial, housed in the former fort of Arbuticci, and the tomb of the mare Marsala."
+    },
+    {
+      "id": "s7",
+      "name": "forte di Arbuticci",
+      "quote": "Sull'isola si trovano anche il Memoriale Giuseppe Garibaldi, ospitato nell'ex forte di Arbuticci, e la tomba della cavalla Marsala.",
+      "english": "On the island there is also the Giuseppe Garibaldi Memorial, housed in the former fort of Arbuticci, and the tomb of the mare Marsala."
+    },
+    {
+      "id": "s8",
+      "name": "Spiaggia rosa",
+      "quote": "Parchi regionali d'Italia, Area naturale protetta, Parco internazionale delle Bocche di Bonifacio, Riserva naturale delle Bocche di Bonifacio, Spiaggia rosa.",
+      "english": "Regional parks of Italy, Protected natural area, International Park of the Strait of Bonifacio, Nature Reserve of the Strait of Bonifacio, Pink Beach."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Islands and Coastal Protection",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s8"
+      ]
+    },
+    {
+      "title": "Garibaldi's Legacy on Caprera",
+      "stop_ids": [
+        "s3",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Wildlife and Western Isles",
+      "stop_ids": [
+        "s4"
+      ]
+    }
+  ]
+}

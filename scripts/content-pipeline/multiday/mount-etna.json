@@ -1,0 +1,91 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Cratere di Nord-Est",
+      "quote": "Nel 1900 la sua altezza raggiungeva i 3274 m e nel 1950 i 3326 m; nel 1978 era stata raggiunta la quota di 3345 m e nel 1981 quella di 3350 m al Cratere di Nord-Est.",
+      "english": "In 1900 its height reached 3274 m and in 1950 3326 m; in 1978 the altitude of 3345 m was reached and in 1981 that of 3350 m at the North-East Crater."
+    },
+    {
+      "id": "s2",
+      "name": "Cratere di Sud-Est",
+      "quote": "Il 25 luglio 2021 fu misurata l'altezza di 3357 m al Cratere di Sud-Est.",
+      "english": "On July 25, 2021, the height of 3357 m was measured at the South-East Crater."
+    },
+    {
+      "id": "s3",
+      "name": "Voragine",
+      "quote": "Dopo il parossismo del Cratere Centrale (Voragine) del 4 luglio 2024, quest'ultimo diventa la nuova cima del vulcano con quota stimata di 3369 m metri.",
+      "english": "After the paroxysm of the Central Crater (Voragine) on July 4, 2024, the latter became the new peak of the volcano with an estimated altitude of 3369 meters."
+    },
+    {
+      "id": "s4",
+      "name": "Bocca Nuova",
+      "quote": "I crateri sommitali sono: la Voragine e la Bocca Nuova, che si sono formate all'interno del Cratere Centrale rispettivamente nel 1945 e 1968, il Cratere di Nord-Est, che esiste dal 1911 e il Cratere di Sud-Est nato nel 1971.",
+      "english": "The summit craters are: the Voragine and the Bocca Nuova, which formed inside the Central Crater in 1945 and 1968 respectively, the North-East Crater, which has existed since 1911, and the South-East Crater born in 1971."
+    },
+    {
+      "id": "s5",
+      "name": "Grotta del Gelo",
+      "quote": "La superficie del vulcano è caratterizzata da una ricca varietà di ambienti che alterna paesaggi urbani, folti boschi che conservano diverse specie botaniche endemiche, aree desolate ricoperte da roccia magmatica e prive di vegetazione e, sopra una certa quota, soggette a innevamento invernale e ghiacciai perenni alle più elevate (ad es. Grotta del Gelo).",
+      "english": "The surface of the volcano is characterized by a rich variety of environments that alternate between urban landscapes, thick forests that preserve various endemic botanical species, desolate areas covered by magmatic rock and devoid of vegetation and, above a certain altitude, subject to winter snow and perennial glaciers at the highest elevations (e.g. Grotta del Gelo)."
+    },
+    {
+      "id": "s6",
+      "name": "Valle del Bove",
+      "quote": "Il versante est è dominato dalla Valle del Bove sui margini della quale si inerpicano fitti boschi.",
+      "english": "The eastern slope is dominated by the Valle del Bove, on the margins of which thick forests climb."
+    },
+    {
+      "id": "s7",
+      "name": "Linguaglossa",
+      "quote": "Poco urbanizzato, ma di aspetto più dolce, il versante nord con il predominio dei boschi al di sopra di Linguaglossa.",
+      "english": "Little urbanized, but with a gentler appearance, the northern slope has a predominance of woods above Linguaglossa."
+    },
+    {
+      "id": "s8",
+      "name": "Funivia dell'Etna",
+      "quote": "L'infrastruttura non permette di raggiungere la cima in auto ma, raggiunta la stazione turistica attorno alla Funivia dell'Etna, continua poi il suo percorso per altri 20 km circa in direzione di Zafferana Etnea.",
+      "english": "The infrastructure does not allow reaching the summit by car but, having reached the tourist station around the Etna Cableway, it then continues its path for about another 20 km in the direction of Zafferana Etnea."
+    },
+    {
+      "id": "s9",
+      "name": "Rifugio Sapienza",
+      "quote": "Da quella sud, dallo storico Rifugio Sapienza nel territorio di Nicolosi è possibile ammirare il golfo di Catania e la valle del Simeto.",
+      "english": "From the southern one, from the historic Sapienza Refuge in the territory of Nicolosi, it is possible to admire the Gulf of Catania and the Simeto valley."
+    },
+    {
+      "id": "s10",
+      "name": "Piano Provenzana",
+      "quote": "Dalle piste di Piano Provenzana a nord, in territorio di Linguaglossa, sono visibili Taormina e le coste della Calabria.",
+      "english": "From the slopes of Piano Provenzana to the north, in the territory of Linguaglossa, Taormina and the coasts of Calabria are visible."
+    }
+  ],
+  "days": [
+    {
+      "title": "Summit Craters Expedition",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Southern Gateway and Ancient Caves",
+      "stop_ids": [
+        "s5",
+        "s8",
+        "s9"
+      ]
+    },
+    {
+      "title": "Northern Slopes and Eastern Valleys",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s10"
+      ]
+    }
+  ]
+}

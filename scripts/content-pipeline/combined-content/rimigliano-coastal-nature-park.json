@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Tuscany",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco naturale costiero di Rimigliano"
+        "sistema dunale",
+        "arenile"
       ],
       "seo_title": "Rimigliano Coastal Nature Park Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Rimigliano Coastal Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Dunes and Coastal Forest Exploration",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco naturale costiero di Rimigliano",
-                "stop_id": "rimigliano-coastal-nature-park",
-                "detail": "The coastal natural park of Rimigliano established in 1973, is entirely included in the territory of the municipality of San Vincenzo in the province of Livorno and includes about six kilometers of the Tuscan coast."
+                "name": "sistema dunale",
+                "stop_id": "rimigliano-coastal-nature-park--s1",
+                "detail": "The park is densely wooded and protected from sea winds by a continuous dune system, very well formed and preserved, with an average height of about five meters and isolated peaks of over ten meters."
+              },
+              {
+                "name": "arenile",
+                "stop_id": "rimigliano-coastal-nature-park--s3",
+                "detail": "The main activity carried out in the park is bathing, concentrated in the period from June to September and essentially located on the sandy shore."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Rimigliano Coastal Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Park Trails and Historic Landmarks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "villa dei Cavalleggeri",
+                "stop_id": "rimigliano-coastal-nature-park--s2",
+                "detail": "In recent years the municipality has also acquired formal ownership of almost the entire park, with the sole exception of the villa dei Cavalleggeri and some surrounding lands."
+              },
+              {
+                "name": "sentieri",
+                "stop_id": "rimigliano-coastal-nature-park--s4",
+                "detail": "The park is crossed transversally along paths that lead from the provincial road to the beach."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Rimigliano Coastal Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_naturale_costiero_di_Rimigliano"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_costiero_di_Rimigliano"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:08:12.923135+00:00"
       }
     }
   }

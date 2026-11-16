@@ -1,25 +1,10 @@
 {
   "results": [
     {
-      "slug": "allerheiligen-waterfalls",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/allerheiligen-waterfalls.json'"
-    },
-    {
       "slug": "allgau-alps",
       "status": "multiday",
       "days": 3,
       "stops": 9
-    },
-    {
-      "slug": "alpsee-fussen",
-      "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "altmuhltal-nature-park",
-      "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "ammergau-alps",
@@ -40,90 +25,10 @@
       "stops": 4
     },
     {
-      "slug": "arnsberg-forest-nature-park",
-      "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "atta-cave",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/atta-cave.json'"
-    },
-    {
-      "slug": "augsburg-western-forests-nature-park",
-      "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "barenhohle-swabian-alb",
-      "status": "one_day",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
-    },
-    {
-      "slug": "barnim-nature-park",
-      "status": "one_day",
-      "reason": "Source too short for a multi-day plan; stays 1 day"
-    },
-    {
-      "slug": "bavarian-forest-national-park",
-      "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "bavarian-forest-nature-park",
-      "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
       "slug": "bavarian-rhon-nature-park",
       "status": "multiday",
       "days": 2,
       "stops": 4
-    },
-    {
-      "slug": "berchtesgaden-national-park",
-      "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "berchtesgadener-land-biosphere-region",
-      "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "bergisches-land-nature-park",
-      "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "black-forest-central-north-nature-park",
-      "status": "one_day",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
-    },
-    {
-      "slug": "black-forest-national-park",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/black-forest-national-park.json'"
-    },
-    {
-      "slug": "blautopf",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/blautopf.json'"
-    },
-    {
-      "slug": "bliesgau-biosphere-reserve",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/bliesgau-biosphere-reserve.json'"
-    },
-    {
-      "slug": "bode-gorge",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/bode-gorge.json'"
-    },
-    {
-      "slug": "breitachklamm",
-      "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "brocken",
@@ -132,65 +37,10 @@
       "stops": 4
     },
     {
-      "slug": "danube-gorge-weltenburg-narrows",
-      "status": "one_day",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
-    },
-    {
-      "slug": "dromling-nature-park",
-      "status": "one_day",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
-    },
-    {
-      "slug": "dubener-heide-nature-park",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/dubener-heide-nature-park.json'"
-    },
-    {
-      "slug": "dummer-nature-park",
-      "status": "one_day",
-      "reason": "Source too short for a multi-day plan; stays 1 day"
-    },
-    {
-      "slug": "eichsfeld-hainich-werratal-nature-park",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/eichsfeld-hainich-werratal-nature-park.json'"
-    },
-    {
-      "slug": "eifel-maars-daun",
-      "status": "one_day",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
-    },
-    {
-      "slug": "eifel-national-park",
-      "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "elbe-river-landscape-biosphere-reserve",
-      "status": "one_day",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
-    },
-    {
-      "slug": "elbe-sandstone-mountains-bastei",
-      "status": "one_day",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
-    },
-    {
-      "slug": "elm-lappwald-nature-park",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/elm-lappwald-nature-park.json'"
-    },
-    {
       "slug": "externsteine",
       "status": "multiday",
       "days": 3,
       "stops": 6
-    },
-    {
-      "slug": "feldberg-black-forest",
-      "status": "one_day",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "slug": "fichtelgebirge-nature-park",
@@ -205,25 +55,319 @@
       "stops": 4
     },
     {
-      "slug": "franconian-switzerland-nature-park",
-      "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "frankenwald-nature-park",
-      "status": "one_day",
-      "reason": "HELD: stop lacks exact official evidence: Naturpark Frankenwald"
-    },
-    {
       "slug": "frau-holle-land-nature-park",
       "status": "multiday",
       "days": 2,
       "stops": 5
     },
     {
-      "slug": "grumsin-beech-forest",
+      "slug": "hassberge-nature-park",
+      "status": "multiday",
+      "days": 3,
+      "stops": 9
+    },
+    {
+      "slug": "island-of-amrum",
+      "status": "multiday",
+      "days": 3,
+      "stops": 8
+    },
+    {
+      "slug": "jasmund-national-park",
+      "status": "multiday",
+      "days": 2,
+      "stops": 6
+    },
+    {
+      "slug": "lake-chiemsee",
+      "status": "multiday",
+      "days": 2,
+      "stops": 7
+    },
+    {
+      "slug": "lake-konigssee",
+      "status": "multiday",
+      "days": 3,
+      "stops": 8
+    },
+    {
+      "slug": "lake-walchensee",
+      "status": "multiday",
+      "days": 3,
+      "stops": 7
+    },
+    {
+      "slug": "nagelfluhkette-nature-park",
+      "status": "multiday",
+      "days": 3,
+      "stops": 11
+    },
+    {
+      "slug": "odenwald",
+      "status": "multiday",
+      "days": 2,
+      "stops": 4
+    },
+    {
+      "slug": "partnach-gorge",
+      "status": "multiday",
+      "days": 2,
+      "stops": 6
+    },
+    {
+      "slug": "rothbach-waterfall",
+      "status": "multiday",
+      "days": 2,
+      "stops": 4
+    },
+    {
+      "slug": "saxon-switzerland-national-park",
+      "status": "multiday",
+      "days": 2,
+      "stops": 4
+    },
+    {
+      "slug": "schorfheide-chorin-biosphere-reserve",
+      "status": "multiday",
+      "days": 3,
+      "stops": 7
+    },
+    {
+      "slug": "solling-vogler-nature-park",
+      "status": "multiday",
+      "days": 2,
+      "stops": 4
+    },
+    {
+      "slug": "steigerwald",
+      "status": "multiday",
+      "days": 2,
+      "stops": 5
+    },
+    {
+      "slug": "swabian-alb-biosphere-area",
+      "status": "multiday",
+      "days": 2,
+      "stops": 4
+    },
+    {
+      "slug": "teufelshohle-pottenstein",
+      "status": "multiday",
+      "days": 3,
+      "stops": 7
+    },
+    {
+      "slug": "teutoburg-forest-nature-park",
+      "status": "multiday",
+      "days": 2,
+      "stops": 5
+    },
+    {
+      "slug": "thuringian-slate-mountains-upper-saale-nature-park",
+      "status": "multiday",
+      "days": 2,
+      "stops": 5
+    },
+    {
+      "slug": "titisee",
+      "status": "multiday",
+      "days": 2,
+      "stops": 5
+    },
+    {
+      "slug": "triberg-waterfalls",
+      "status": "multiday",
+      "days": 2,
+      "stops": 4
+    },
+    {
+      "slug": "wendelstein",
+      "status": "multiday",
+      "days": 3,
+      "stops": 7
+    },
+    {
+      "slug": "wimbachklamm",
+      "status": "multiday",
+      "days": 2,
+      "stops": 5
+    },
+    {
+      "slug": "zugspitze",
+      "status": "multiday",
+      "days": 3,
+      "stops": 9
+    },
+    {
+      "slug": "allerheiligen-waterfalls",
+      "status": "one_day",
+      "reason": "Source too short for a multi-day plan; stays 1 day"
+    },
+    {
+      "slug": "alpsee-fussen",
       "status": "one_day",
       "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "altmuhltal-nature-park",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "arnsberg-forest-nature-park",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "atta-cave",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "augsburg-western-forests-nature-park",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "barenhohle-swabian-alb",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "barnim-nature-park",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "bavarian-forest-national-park",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "bavarian-forest-nature-park",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "berchtesgaden-national-park",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "berchtesgadener-land-biosphere-region",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "bergisches-land-nature-park",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "black-forest-central-north-nature-park",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "black-forest-national-park",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "blautopf",
+      "status": "multiday",
+      "days": 2,
+      "stops": 5
+    },
+    {
+      "slug": "bliesgau-biosphere-reserve",
+      "status": "multiday",
+      "days": 2,
+      "stops": 5
+    },
+    {
+      "slug": "bode-gorge",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "breitachklamm",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "danube-gorge-weltenburg-narrows",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "dromling-nature-park",
+      "status": "multiday",
+      "days": 2,
+      "stops": 4
+    },
+    {
+      "slug": "dubener-heide-nature-park",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "dummer-nature-park",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "eichsfeld-hainich-werratal-nature-park",
+      "status": "multiday",
+      "days": 3,
+      "stops": 10
+    },
+    {
+      "slug": "eifel-maars-daun",
+      "status": "one_day",
+      "reason": "Source too short for a multi-day plan; stays 1 day"
+    },
+    {
+      "slug": "eifel-national-park",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "elbe-river-landscape-biosphere-reserve",
+      "status": "one_day",
+      "reason": "Source too short for a multi-day plan; stays 1 day"
+    },
+    {
+      "slug": "elbe-sandstone-mountains-bastei",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "elm-lappwald-nature-park",
+      "status": "multiday",
+      "days": 2,
+      "stops": 5
+    },
+    {
+      "slug": "feldberg-black-forest",
+      "status": "multiday",
+      "days": 2,
+      "stops": 5
+    },
+    {
+      "slug": "franconian-switzerland-nature-park",
+      "status": "one_day",
+      "reason": "Source too short for a multi-day plan; stays 1 day"
+    },
+    {
+      "slug": "frankenwald-nature-park",
+      "status": "one_day",
+      "reason": "Source too short for a multi-day plan; stays 1 day"
+    },
+    {
+      "slug": "grumsin-beech-forest",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "hainich-national-park",
@@ -233,28 +377,22 @@
     {
       "slug": "hamburg-wadden-sea-national-park",
       "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/hamburg-wadden-sea-national-park.json'"
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "harz-national-park",
       "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "harz-nature-park-saxony-anhalt",
       "status": "one_day",
-      "reason": "Source too short for a multi-day plan; stays 1 day"
-    },
-    {
-      "slug": "hassberge-nature-park",
-      "status": "multiday",
-      "days": 3,
-      "stops": 9
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "heligoland",
       "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/heligoland.json'"
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "herreninsel-chiemsee",
@@ -264,63 +402,61 @@
     {
       "slug": "high-fens-eifel-nature-park",
       "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/high-fens-eifel-nature-park.json'"
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "hohe-mark-westmunsterland-nature-park",
       "status": "one_day",
-      "reason": "Source too short for a multi-day plan; stays 1 day"
+      "reason": "HELD: stop lacks exact official evidence: Stimberg"
     },
     {
       "slug": "hoher-flaming-nature-park",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/hoher-flaming-nature-park.json'"
+      "status": "multiday",
+      "days": 2,
+      "stops": 5
     },
     {
       "slug": "hollental-gorge",
       "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/hollental-gorge.json'"
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "holstein-switzerland-nature-park",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/holstein-switzerland-nature-park.json'"
+      "status": "multiday",
+      "days": 3,
+      "stops": 6
     },
     {
       "slug": "hunsruck-hochwald-national-park",
       "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/hunsruck-hochwald-national-park.json'"
-    },
-    {
-      "slug": "island-of-amrum",
-      "status": "multiday",
-      "days": 3,
-      "stops": 8
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "island-of-borkum",
       "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+      "reason": "Source too short for a multi-day plan; stays 1 day"
     },
     {
       "slug": "island-of-fohr",
-      "status": "one_day",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
+      "status": "multiday",
+      "days": 2,
+      "stops": 4
     },
     {
       "slug": "island-of-hiddensee",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/island-of-hiddensee.json'"
+      "status": "multiday",
+      "days": 2,
+      "stops": 6
     },
     {
       "slug": "island-of-juist",
       "status": "one_day",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "island-of-norderney",
       "status": "one_day",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "island-of-rugen",
@@ -330,23 +466,18 @@
     {
       "slug": "island-of-spiekeroog",
       "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+      "reason": "Source too short for a multi-day plan; stays 1 day"
     },
     {
       "slug": "island-of-sylt",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/island-of-sylt.json'"
+      "status": "multiday",
+      "days": 2,
+      "stops": 4
     },
     {
       "slug": "island-of-usedom",
       "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "jasmund-national-park",
-      "status": "multiday",
-      "days": 2,
-      "stops": 6
+      "reason": "Source too short for a multi-day plan; stays 1 day"
     },
     {
       "slug": "karst-landscape-south-harz-biosphere-reserve",
@@ -356,100 +487,91 @@
     {
       "slug": "karwendel-mittenwald",
       "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/karwendel-mittenwald.json'"
+      "reason": "Source too short for a multi-day plan; stays 1 day"
     },
     {
       "slug": "kellerwald-edersee-national-park",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/kellerwald-edersee-national-park.json'"
+      "status": "multiday",
+      "days": 3,
+      "stops": 7
     },
     {
       "slug": "kyffhauser",
-      "status": "one_day",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
+      "status": "multiday",
+      "days": 2,
+      "stops": 6
     },
     {
       "slug": "laacher-see",
       "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/laacher-see.json'"
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "lahn-dill-bergland-nature-park",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/lahn-dill-bergland-nature-park.json'"
-    },
-    {
-      "slug": "lake-chiemsee",
       "status": "multiday",
-      "days": 2,
+      "days": 3,
       "stops": 7
     },
     {
       "slug": "lake-constance-german-shore",
-      "status": "one_day",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
+      "status": "multiday",
+      "days": 3,
+      "stops": 6
     },
     {
       "slug": "lake-edersee",
-      "status": "one_day",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
+      "status": "multiday",
+      "days": 2,
+      "stops": 5
     },
     {
       "slug": "lake-eibsee",
-      "status": "one_day",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
-    },
-    {
-      "slug": "lake-kochel",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/lake-kochel.json'"
-    },
-    {
-      "slug": "lake-konigssee",
       "status": "multiday",
       "days": 3,
       "stops": 8
     },
     {
+      "slug": "lake-kochel",
+      "status": "multiday",
+      "days": 2,
+      "stops": 5
+    },
+    {
       "slug": "lake-muritz",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/lake-muritz.json'"
+      "status": "multiday",
+      "days": 2,
+      "stops": 5
     },
     {
       "slug": "lake-schliersee",
       "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "lake-starnberg",
       "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "lake-tegernsee",
       "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "lake-walchensee",
-      "status": "multiday",
-      "days": 3,
-      "stops": 7
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "lauenburg-lakes-nature-park",
       "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "lower-lusatian-heath-nature-park",
       "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "lower-oder-valley-national-park",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/lower-oder-valley-national-park.json'"
+      "status": "multiday",
+      "days": 2,
+      "stops": 5
     },
     {
       "slug": "lower-saxon-elbe-valley-biosphere-reserve",
@@ -459,7 +581,7 @@
     {
       "slug": "lower-saxony-wadden-sea-national-park",
       "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/lower-saxony-wadden-sea-national-park.json'"
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "luneburg-heath-nature-park",
@@ -469,32 +591,34 @@
     {
       "slug": "lusatian-lake-district",
       "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "mainau-island",
       "status": "one_day",
-      "reason": "Source too short for a multi-day plan; stays 1 day"
+      "reason": "HELD: stop lacks exact official evidence: Großherzog-Friedrich-Terrasse"
     },
     {
       "slug": "markische-schweiz-nature-park",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/markische-schweiz-nature-park.json'"
+      "status": "multiday",
+      "days": 3,
+      "stops": 10
     },
     {
       "slug": "mecklenburg-lake-district-nature-park",
       "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "middle-rhine-valley",
       "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/middle-rhine-valley.json'"
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "moselle-valley",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/moselle-valley.json'"
+      "status": "multiday",
+      "days": 3,
+      "stops": 7
     },
     {
       "slug": "mummelsee",
@@ -503,56 +627,41 @@
     },
     {
       "slug": "muritz-national-park",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/muritz-national-park.json'"
-    },
-    {
-      "slug": "nagelfluhkette-nature-park",
       "status": "multiday",
-      "days": 3,
-      "stops": 11
+      "days": 2,
+      "stops": 7
     },
     {
       "slug": "nassau-nature-park",
       "status": "one_day",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "neckar-valley-odenwald-nature-park",
       "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "nossentin-schwinz-heath-nature-park",
-      "status": "one_day",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
+      "status": "multiday",
+      "days": 2,
+      "stops": 5
     },
     {
       "slug": "obersee-berchtesgaden",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/obersee-berchtesgaden.json'"
-    },
-    {
-      "slug": "odenwald",
       "status": "multiday",
       "days": 2,
-      "stops": 4
+      "stops": 6
     },
     {
       "slug": "ore-mountains-nature-park",
       "status": "one_day",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "palatinate-forest-nature-park",
       "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/palatinate-forest-nature-park.json'"
-    },
-    {
-      "slug": "partnach-gorge",
-      "status": "multiday",
-      "days": 2,
-      "stops": 6
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "peene-valley-river-landscape-nature-park",
@@ -561,8 +670,9 @@
     },
     {
       "slug": "ravenna-gorge",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/ravenna-gorge.json'"
+      "status": "multiday",
+      "days": 3,
+      "stops": 6
     },
     {
       "slug": "rhine-taunus-nature-park",
@@ -576,19 +686,14 @@
     },
     {
       "slug": "rhineland-nature-park",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/rhineland-nature-park.json'"
+      "status": "multiday",
+      "days": 2,
+      "stops": 5
     },
     {
       "slug": "rhon-biosphere-reserve",
       "status": "one_day",
       "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "rothbach-waterfall",
-      "status": "multiday",
-      "days": 2,
-      "stops": 4
     },
     {
       "slug": "rugen-chalk-cliffs-konigsstuhl",
@@ -598,23 +703,18 @@
     {
       "slug": "saale-unstrut-triasland-nature-park",
       "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "saar-hunsruck-nature-park",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/saar-hunsruck-nature-park.json'"
+      "status": "multiday",
+      "days": 2,
+      "stops": 4
     },
     {
       "slug": "sauerland-rothaargebirge-nature-park",
       "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/sauerland-rothaargebirge-nature-park.json'"
-    },
-    {
-      "slug": "saxon-switzerland-national-park",
-      "status": "multiday",
-      "days": 2,
-      "stops": 4
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "schaalsee-biosphere-reserve",
@@ -624,34 +724,23 @@
     {
       "slug": "schlaube-valley-nature-park",
       "status": "one_day",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "schleswig-holstein-wadden-sea-national-park",
       "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/schleswig-holstein-wadden-sea-national-park.json'"
-    },
-    {
-      "slug": "schorfheide-chorin-biosphere-reserve",
-      "status": "multiday",
-      "days": 3,
-      "stops": 7
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "siebengebirge-nature-park",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/siebengebirge-nature-park.json'"
-    },
-    {
-      "slug": "solling-vogler-nature-park",
       "status": "multiday",
       "days": 2,
-      "stops": 4
+      "stops": 5
     },
     {
       "slug": "south-eifel-nature-park",
       "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "south-harz-nature-park",
@@ -670,44 +759,40 @@
     },
     {
       "slug": "southern-black-forest-nature-park",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/southern-black-forest-nature-park.json'"
+      "status": "multiday",
+      "days": 3,
+      "stops": 8
     },
     {
       "slug": "spessart",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/spessart.json'"
-    },
-    {
-      "slug": "spreewald-biosphere-reserve",
-      "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "st-peter-ording",
-      "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "stechlin-ruppin-land-nature-park",
-      "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/stechlin-ruppin-land-nature-park.json'"
-    },
-    {
-      "slug": "steigerwald",
       "status": "multiday",
       "days": 2,
       "stops": 5
     },
     {
+      "slug": "spreewald-biosphere-reserve",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "st-peter-ording",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "stechlin-ruppin-land-nature-park",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
       "slug": "steinhuder-meer-nature-park",
       "status": "one_day",
-      "reason": "Source too short for a multi-day plan; stays 1 day"
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "sternberg-lake-land-nature-park",
       "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "stromberg-heuchelberg-nature-park",
@@ -715,15 +800,110 @@
       "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
-      "slug": "swabian-alb-biosphere-area",
-      "status": "multiday",
-      "days": 2,
-      "stops": 4
-    },
-    {
       "slug": "swabian-franconian-forest-nature-park",
       "status": "one_day",
-      "reason": "[Errno 2] No such file or directory: '/dev-server/scripts/content-pipeline/source-packets/swabian-franconian-forest-nature-park.json'"
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "taunus-nature-park",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "thuringian-forest",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "thuringian-forest-nature-park",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "todtnau-waterfall",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "uckermark-lakes-nature-park",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "upper-danube-valley",
+      "status": "multiday",
+      "days": 2,
+      "stops": 5
+    },
+    {
+      "slug": "upper-lusatian-heath-and-pond-landscape",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "upper-palatinate-forest-nature-park",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "usedom-island-nature-park",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "vessertal-thuringian-forest-biosphere-reserve",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "vogelsberg-volcanic-region-nature-park",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "wadden-sea-and-halligen-biosphere-reserve",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "wasserkuppe",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "weserbergland-nature-park",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "westensee-nature-park",
+      "status": "one_day",
+      "reason": "HELD: stop lacks exact official evidence: Westensee"
+    },
+    {
+      "slug": "western-pomerania-lagoon-area-national-park",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "westhavelland-nature-park",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "wildeshausen-geest-nature-park",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "wutach-gorge",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "zittau-mountains-nature-park",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
     }
   ]
 }

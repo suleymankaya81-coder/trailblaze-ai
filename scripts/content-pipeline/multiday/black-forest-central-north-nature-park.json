@@ -1,0 +1,52 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Nationalpark Schwarzwald",
+      "quote": "Der Nationalpark Schwarzwald befindet sich innerhalb des Naturparks und wird von diesem vollständig umschlossen.",
+      "english": "The Black Forest National Park is located within the nature park and is completely surrounded by it."
+    },
+    {
+      "id": "s2",
+      "name": "Karseen",
+      "quote": "Besonders wertvolle Lebensräume, mit einer großen Zahl gefährdeter Tier- und Pflanzenarten, bestimmen ebenfalls das Landschaftsbild des Naturparks: Moore und Moorwälder, Karseen, Grinden – durch jahrhundertelange Beweidung entstandene waldfreie Heideflächen auf den Bergkuppen.",
+      "english": "Particularly valuable habitats, with a large number of endangered animal and plant species, also characterize the landscape of the nature park: moors and moor forests, cirque lakes, Grinden – treeless heath areas on the mountain peaks created by centuries of grazing."
+    },
+    {
+      "id": "s3",
+      "name": "Hornisgrinde",
+      "quote": "Während es in den Weinbergen der Vorbergzone nahezu mediterran ist, fühlt man sich auf den Hochlagen, wie zum Beispiel der Hornisgrinde, fast nach Skandinavien versetzt.",
+      "english": "While it is almost Mediterranean in the vineyards of the foothills, on the high elevations, such as the Hornisgrinde, one feels almost transported to Scandinavia."
+    },
+    {
+      "id": "s4",
+      "name": "Naturpark-Bauernmärkte",
+      "quote": "Dies geschieht im Rahmen einer Regionalvermarktungskampagne, zu der die Naturpark-Bauernmärkte, die Naturpark-Wirte, die Naturpark-Straußwirtschaften, das Projekt „Wilde Sau“, der Naturpark-Laib und die Naturpark-Genuss-Messen gehören.",
+      "english": "This takes place as part of a regional marketing campaign, which includes the nature park farmers' markets, the nature park hosts, the nature park seasonal wine taverns, the 'Wild Boar' project, the nature park loaf, and the nature park gourmet fairs."
+    },
+    {
+      "id": "s5",
+      "name": "Moore",
+      "quote": "In der Ausbildung werden Inhalte zu den Themen Landwirtschaft, Moore, Gewässer und Wald im Klimawandel vermittelt.",
+      "english": "The training conveys content on the topics of agriculture, moors, water bodies, and forests in climate change."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and National Park Nature",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s5"
+      ]
+    },
+    {
+      "title": "Regional Culture and Markets",
+      "stop_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "6a5e2b18dc563a7ceb421ab9d4fcd1292837b69389e87eb12589df9b269d3c8a"
+}

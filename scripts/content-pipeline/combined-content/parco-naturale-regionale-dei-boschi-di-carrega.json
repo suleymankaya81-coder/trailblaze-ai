@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Emilia Romagna",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco naturale regionale dei Boschi di Carrega"
+        "Casinetto",
+        "Villa del Ferlaro"
       ],
       "seo_title": "Parco naturale regionale dei Boschi di Carrega Visit Guide"
     },
@@ -32,16 +33,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco naturale regionale dei Boschi di Carrega",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Ducal Residences and History",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco naturale regionale dei Boschi di Carrega",
-                "stop_id": "parco-naturale-regionale-dei-boschi-di-carrega",
-                "detail": "The regional park of the Boschi di Carrega is a protected natural area located in the province of Parma."
+                "name": "Casinetto",
+                "stop_id": "parco-naturale-regionale-dei-boschi-di-carrega--s2",
+                "detail": "He added a very long colonnade with the Casinetto at the center, a building with a clock and bell tower, which housed the court theater."
+              },
+              {
+                "name": "Villa del Ferlaro",
+                "stop_id": "parco-naturale-regionale-dei-boschi-di-carrega--s3",
+                "detail": "The Villa del Ferlaro was built by Duchess Maria Luisa of Austria on a pre-existing building, the Casinetto Fedolfi, to serve as a summer residence for her children."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale regionale dei Boschi di Carrega before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Nature and Lakes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Bosco della Capannella",
+                "stop_id": "parco-naturale-regionale-dei-boschi-di-carrega--s5",
+                "detail": "The Bosco della Capannella is a suggestive area of the park that runs alongside the municipal road connecting Sala Baganza to Collecchio, known as the \"strada del Conventino\"."
+              },
+              {
+                "name": "lago delle Navette",
+                "stop_id": "parco-naturale-regionale-dei-boschi-di-carrega--s6",
+                "detail": "Among the reptiles, the pond turtle is frequent, inhabiting the lakes (in particular Lake Navette and Lake Svizzera) and pools."
+              },
+              {
+                "name": "lago della Vigna",
+                "stop_id": "parco-naturale-regionale-dei-boschi-di-carrega--s7",
+                "detail": "The main ones are Lake Vigna (approx. 18,000 m2), Lake Svizzera, Lake Grotta, Lake Navetta, Lake Pini, and Lake Ponte Verde."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco naturale regionale dei Boschi di Carrega before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +108,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_dei_Boschi_di_Carrega"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_dei_Boschi_di_Carrega"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:02:25.523726+00:00"
       }
     }
   }

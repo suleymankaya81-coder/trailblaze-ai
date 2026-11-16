@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kulpenberg",
+      "quote": "Seine höchste Erhebung ist der Kulpenberg, auf dem seit den 1960er Jahren ein Fernsehturm steht.",
+      "english": "Its highest elevation is the Kulpenberg, on which a television tower has stood since the 1960s."
+    },
+    {
+      "id": "s2",
+      "name": "Reichsburg Kyffhausen",
+      "quote": "Auf einem Bergvorsprung im Nordosten des Kyffhäusergebirges befinden sich die Ruinen der Reichsburg Kyffhausen, die Ende des 19. Jahrhunderts durch das Kyffhäuserdenkmal zu Ehren Kaiser Wilhelms I. ergänzt wurden.",
+      "english": "On a mountain spur in the northeast of the Kyffhäuser Mountains are the ruins of the Reichsburg Kyffhausen, which were complemented at the end of the 19th century by the Kyffhäuser Monument in honor of Emperor Wilhelm I."
+    },
+    {
+      "id": "s3",
+      "name": "Kyffhäuserdenkmal",
+      "quote": "Dabei wurde vor allem die Mittelburg zerstört, auf ihrem Platz wurde das Denkmal errichtet.",
+      "english": "In the process, the Middle Castle in particular was destroyed; the monument was erected on its site."
+    },
+    {
+      "id": "s4",
+      "name": "Burgbrunnen",
+      "quote": "Teile der Ruinen der Ober- und Unterburg dagegen blieben erhalten, ebenso wurde der 176 m tiefe Burgbrunnen wieder restauriert.",
+      "english": "Parts of the ruins of the Upper and Lower Castle, however, were preserved, and the 176 m deep castle well was also restored."
+    },
+    {
+      "id": "s5",
+      "name": "Barbarossahöhle",
+      "quote": "Weitere Signaltürme von trigonometrischen Punkten im Kyffhäuser befanden sich auf dem Saukopf (zwischen Tilleda und Udersleben), auf dem Schlachtberg neben dem Bauernkriegsdenkmal nördlich von Bad Frankenhausen, neben der Falkenburg oberhalb (nördlich) der Barbarossahöhle (Rottleben) und auf dem Stöckey zwischen Badra und der Numburg.",
+      "english": "Other signal towers of trigonometric points in the Kyffhäuser were located on the Saukopf (between Tilleda and Udersleben), on the Schlachtberg next to the Peasants' War monument north of Bad Frankenhausen, next to the Falkenburg above (north) of the Barbarossa Cave (Rottleben), and on the Stöckey between Badra and the Numburg."
+    },
+    {
+      "id": "s6",
+      "name": "Panoramamuseum Bad Frankenhausen",
+      "quote": "Schlachtberg (271,0 m), nördlich von Bad Frankenhausen mit Bauernkriegspanorama (Panoramamuseum Bad Frankenhausen), mit Thomas-Müntzer-Gedenkstätte und mit nahem Hausmannsturm (Frankenburg), ca. 800 m südlich",
+      "english": "Schlachtberg (271.0 m), north of Bad Frankenhausen with the Peasants' War Panorama (Panorama Museum Bad Frankenhausen), with the Thomas Müntzer Memorial and with the nearby Hausmannsturm (Frankenburg), approx. 800 m to the south."
+    },
+    {
+      "id": "s7",
+      "name": "Königspfalz Tilleda",
+      "quote": "Pfingstberg (ca. 196 m), am südlichen Ortsrand von Tilleda mit Königspfalz Tilleda mit bei der Pfalz befindlicher Schusterhöhle",
+      "english": "Pfingstberg (approx. 196 m), on the southern edge of Tilleda with the Tilleda Royal Palace and the Schusterhöhle cave located at the palace."
+    }
+  ],
+  "days": [
+    {
+      "title": "Imperial Heritage and Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Caves and Historical Monuments",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "d73b35fd6d77dca55088451c41bd244548fba38d056877d99f2f9d158bd65dd2"
+}

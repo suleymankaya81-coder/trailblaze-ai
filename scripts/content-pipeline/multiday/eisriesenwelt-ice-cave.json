@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Eispalast",
+      "quote": "Nach dem Eispalast gibt es keine zusammenhängenden Eisplatten mehr, dort endet auch der Führungsteil.",
+      "english": "After the Ice Palace, there are no more continuous sheets of ice, and the guided section ends there as well."
+    },
+    {
+      "id": "s2",
+      "name": "Bockstollen",
+      "quote": "Vom Eispalast führt ein steiler Bockstollen zum U-Tunnel.",
+      "english": "A steep tunnel (Bockstollen) leads from the Ice Palace to the U-Tunnel."
+    },
+    {
+      "id": "s3",
+      "name": "U-Tunnel",
+      "quote": "Vom Eispalast führt ein steiler Bockstollen zum U-Tunnel.",
+      "english": "A steep tunnel (Bockstollen) leads from the Ice Palace to the U-Tunnel."
+    },
+    {
+      "id": "s4",
+      "name": "Midgards",
+      "quote": "Dieser Gang ist der größte der Höhle (Breite zwischen 8 und 30 Meter).",
+      "english": "This passage is the largest in the cave (width between 8 and 30 meters)."
+    },
+    {
+      "id": "s5",
+      "name": "Posselt-Kreuz",
+      "quote": "Seinen Umkehrpunkt markierte er mit einem schwarzen Kreuz am Felsen, dem Posselt-Kreuz.",
+      "english": "He marked his turning point with a black cross on the rock, the Posselt Cross."
+    },
+    {
+      "id": "s6",
+      "name": "Großer Eiswall",
+      "quote": "Im Jahre 1913 gelang es einigen Forschern, Alexander von Mörk, Erwin Angermayer und Hermann Rihl, das steilste Stück der Eisdecke, den Großen Eiswall, zu bezwingen.",
+      "english": "In 1913, some researchers, Alexander von Mörk, Erwin Angermayer and Hermann Rihl, succeeded in conquering the steepest part of the ice sheet, the Great Ice Wall."
+    },
+    {
+      "id": "s7",
+      "name": "Sturmsee",
+      "quote": "Alexander von Mörk war zudem auch der erste Forscher, der es wagte, den Sturmsee, einen kleinen Durchgang, der damals unter Wasser stand, zu passieren.",
+      "english": "Alexander von Mörk was also the first researcher who dared to pass the Sturmsee, a small passage that was under water at the time."
+    },
+    {
+      "id": "s8",
+      "name": "Alexander-von-Mörk-Dom",
+      "quote": "Dieser Wunsch wurde ihm erfüllt und er wurde Mitte der 1920er Jahre im von ihm entdeckten Alexander-von-Mörk-Dom beigesetzt.",
+      "english": "This wish was fulfilled and he was buried in the mid-1920s in the Alexander von Mörk Cathedral, which he had discovered."
+    },
+    {
+      "id": "s9",
+      "name": "Dr.-Friedrich-Oedl-Haus",
+      "quote": "Heute bringt eine Seilbahn bis 2500 Gäste pro Tag bis in die Nähe des Höhleneingangs (Dr.-Friedrich-Oedl-Haus), im Jahr sind es etwa 150.000 Besucher.",
+      "english": "Today, a cable car brings up to 2,500 guests per day close to the cave entrance (Dr. Friedrich Oedl House), totaling about 150,000 visitors per year."
+    }
+  ],
+  "days": [
+    {
+      "title": "Cave Entrance and the Deep Passages",
+      "stop_ids": [
+        "s9",
+        "s4",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Historical Markers and Ice Formations",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s1"
+      ]
+    },
+    {
+      "title": "The Explorers Legacy",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "a39e7a8535aab7f57c5a1dfbb5a055f1e84da869fc985591bae303a65440be77"
+}

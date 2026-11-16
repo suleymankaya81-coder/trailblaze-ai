@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Grieben",
+      "quote": "Grieben ist das älteste, nördlichste und kleinste Dorf auf Hiddensee und liegt am östlichen Rand des Hochlandes der Insel.",
+      "english": "Grieben is the oldest, northernmost and smallest village on Hiddensee and lies on the eastern edge of the island's highlands."
+    },
+    {
+      "id": "s2",
+      "name": "Gerhart-Hauptmann-Haus",
+      "quote": "Heute gilt Kloster mit dem Gerhart-Hauptmann-Haus, der Inselkirche und dem Inselfriedhof mit den Grabstätten von Gerhart Hauptmann, Walter Felsenstein und Gret Palucca als das kulturelle Zentrum von Hiddensee.",
+      "english": "Today, Kloster, with the Gerhart Hauptmann House, the island church and the island cemetery containing the graves of Gerhart Hauptmann, Walter Felsenstein and Gret Palucca, is considered the cultural center of Hiddensee."
+    },
+    {
+      "id": "s3",
+      "name": "Inselkirche",
+      "quote": "Heute gilt Kloster mit dem Gerhart-Hauptmann-Haus, der Inselkirche und dem Inselfriedhof mit den Grabstätten von Gerhart Hauptmann, Walter Felsenstein und Gret Palucca als das kulturelle Zentrum von Hiddensee.",
+      "english": "Today, Kloster, with the Gerhart Hauptmann House, the island church and the island cemetery containing the graves of Gerhart Hauptmann, Walter Felsenstein and Gret Palucca, is considered the cultural center of Hiddensee."
+    },
+    {
+      "id": "s4",
+      "name": "Dornbusch",
+      "quote": "Es liegt direkt am Hochland, dessen höchste Erhebung der Dornbusch ist.",
+      "english": "It is located directly on the highlands, the highest elevation of which is the Dornbusch."
+    },
+    {
+      "id": "s5",
+      "name": "Vitte",
+      "quote": "Vitte (sprich: Fitte) wurde erstmals 1513 urkundlich erwähnt, ist der Hauptort und zugleich der größte und zentrale Ort der Insel.",
+      "english": "Vitte (pronounced: Fitte) was first mentioned in a document in 1513 and is the main town and at the same time the largest and central location on the island."
+    },
+    {
+      "id": "s6",
+      "name": "Hexenhaus",
+      "quote": "In Vitte steht das älteste noch erhaltene Haus der Insel, das „Hexenhaus“ (ehemals Sommerhaus von Adolf Reichwein).",
+      "english": "The oldest still preserved house on the island, the \"Hexenhaus\" (formerly the summer house of Adolf Reichwein), stands in Vitte."
+    },
+    {
+      "id": "s7",
+      "name": "Schwarze Mühle",
+      "quote": "Darüber hinaus befinden sich in Vitte das (wohl letzte) Zeltkino, die Seebühne Hiddensee (Figurentheater) und eine Holländerwindmühle, die „Schwarze Mühle“.",
+      "english": "In addition, the (probably last) tent cinema, the Seebühne Hiddensee (puppet theater) and a Dutch windmill, the \"Black Mill,\" are located in Vitte."
+    },
+    {
+      "id": "s8",
+      "name": "Neuendorf",
+      "quote": "Neuendorf ist der südlichste Ort auf Hiddensee.",
+      "english": "Neuendorf is the southernmost place on Hiddensee."
+    }
+  ],
+  "days": [
+    {
+      "title": "North Island Exploration and Culture",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Central Village Sights and South Hiddensee",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "90dccdbd6a769ca0abe9e9abe9308bbfe9d4b814d1300aabde476a165ef026f4"
+}

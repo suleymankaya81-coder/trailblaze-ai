@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Vaud",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Vallée de Joux"
+        "Lac de Joux",
+        "Lac Brenet",
+        "Le Pont"
       ],
       "seo_title": "Vallée de Joux Visit Guide"
     },
@@ -32,16 +34,49 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Vallée de Joux",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Northeastern Lakes and Peaks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Vallée de Joux",
-                "stop_id": "vall-e-de-joux",
-                "detail": "The Vallée de Joux (French pronunciation: [vale də ʒu]) is a valley of the Jura Mountains mainly in the Swiss Canton of Vaud. The valley also continues into France (Jura département) at its higher, southwestern, end. Located 30 miles (48 km) north of Geneva and northwest of Lausanne, its mean elevation is over 3,300 feet (1,000 m). There are three Swiss lakes in the Vallée de Joux: the lac de Joux (around 6 miles (9.7 km) long), the lac Brenet and Lake Ter. The French border runs along the northern edge of the valley until, about 10 kilometres (6.2 mi) west of the lac de Joux, the base of the valley becomes French territory. The valley then continues to climb gently towards the Lac des Rousses and the ski resort of Les Rousses."
+                "name": "Lac de Joux",
+                "stop_id": "vall-e-de-joux--s1",
+                "detail": "The northeastern part of the valley is occupied by Lac de Joux and Lac Brenet."
+              },
+              {
+                "name": "Lac Brenet",
+                "stop_id": "vall-e-de-joux--s2",
+                "detail": "Today, Lac de Joux and Lac Brenet serve as storage reservoirs for the Vallorbe power station."
+              },
+              {
+                "name": "Le Pont",
+                "stop_id": "vall-e-de-joux--s3",
+                "detail": "The most important towns are Le Sentier and Le Brassus (municipality of Le Chenit) as well as Le Pont (municipality of L’Abbaye) on the northeastern shore of Lac de Joux."
+              },
+              {
+                "name": "Dent de Vaulion",
+                "stop_id": "vall-e-de-joux--s9",
+                "detail": "The northeastern end of the valley is characterized by the Dent de Vaulion and the hill chain of the Col du Mont d’Orzeires, which were moved to their current position by a strike-slip fault in the system of the Jura chains."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Vallée de Joux before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Southern Valley Towns and Ridges",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Le Sentier",
+                "stop_id": "vall-e-de-joux--s7",
+                "detail": "In Le Sentier, there is a large sports center, a watch museum, and an art gallery."
+              },
+              {
+                "name": "Mont-Tendre-Kette",
+                "stop_id": "vall-e-de-joux--s4",
+                "detail": "The valley forms a syncline, flanked to the southeast by the folds (anticlines) of the Mont Tendre chain and to the northwest by those of the Risoux chain."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Vallée de Joux before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +114,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Vall%C3%A9e_de_Joux"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Vall%C3%A9e_de_Joux"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:13:45.817612+00:00"
       }
     }
   }

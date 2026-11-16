@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Ravennaschlucht",
+      "quote": "Die Ravennaschlucht befindet sich im südlichen Schwarzwald.",
+      "english": "The Ravenna Gorge is located in the southern Black Forest."
+    },
+    {
+      "id": "s2",
+      "name": "Breitnau",
+      "quote": "Der Ravennabach entwässert die nördlich davon gelegene weitläufige Hochmulde um das Dorf Breitnau, innerhalb dessen Gemarkung auch die etwa 4 km lange, windungsreiche Schlucht liegt.",
+      "english": "The Ravenna stream drains the extensive high hollow located to the north around the village of Breitnau, within whose boundaries the approximately 4 km long, winding gorge is also located."
+    },
+    {
+      "id": "s3",
+      "name": "Großen Ravenna-Fall",
+      "quote": "Hier bildet die Ravenna mehrere Wasserfälle, darunter den 16 Meter hohen Großen Ravenna-Fall an einer querenden Verwerfung und den Kleinen Ravenna-Fall mit 6 Metern Fallhöhe.",
+      "english": "Here the Ravenna forms several waterfalls, including the 16-meter-high Great Ravenna Fall at a crossing fault and the Little Ravenna Fall with a height of 6 meters."
+    },
+    {
+      "id": "s4",
+      "name": "Heimatpfad Hochschwarzwald",
+      "quote": "Der Schlucht folgt, teils über Treppen und Felsgalerien, der Heimatpfad Hochschwarzwald.",
+      "english": "The High Black Forest Heritage Trail follows the gorge, partly via stairs and rock galleries."
+    },
+    {
+      "id": "s5",
+      "name": "Großjockenmühle",
+      "quote": "Bei der 1883 erbauten denkmalgeschützten Großjockenmühle am oberen Ende der Schlucht wurde bemerkenswerterweise das Wasser durch das Dach der Mühle auf das Wasserrad geleitet.",
+      "english": "At the heritage-listed Großjocken Mill built in 1883 at the upper end of the gorge, remarkably, the water was guided through the roof of the mill onto the water wheel."
+    },
+    {
+      "id": "s6",
+      "name": "Ravennabrücke",
+      "quote": "Den Schluchtausgang überquert die Höllentalbahn über die 37 Meter hohe Ravennabrücke.",
+      "english": "The Höllental Railway crosses the exit of the gorge via the 37-meter-high Ravenna Bridge."
+    },
+    {
+      "id": "s7",
+      "name": "St.-Oswald-Kapelle",
+      "quote": "Nahebei befinden sich die St.-Oswald-Kapelle (erbaut 1148) und das Hofgut Sternen.",
+      "english": "Nearby are the St. Oswald's Chapel (built 1148) and the Sternen estate."
+    },
+    {
+      "id": "s8",
+      "name": "Hofgut Sternen",
+      "quote": "Im Rahmen ihrer Brautfahrt von Wien nach Versailles soll Marie-Antoinette 1770 im Sternen Halt gemacht haben.",
+      "english": "As part of her bridal journey from Vienna to Versailles, Marie Antoinette is said to have stopped at the Sternen in 1770."
+    },
+    {
+      "id": "s9",
+      "name": "Galgenbühl",
+      "quote": "Unterhalb der Ravennabrücke überragt der Galgenbühl die Talsohle um ungefähr 30 Meter.",
+      "english": "Below the Ravenna Bridge, the Galgenbühl rises about 30 meters above the valley floor."
+    }
+  ],
+  "days": [
+    {
+      "title": "Breitnau Heights and Upper Gorge",
+      "stop_ids": [
+        "s2",
+        "s5",
+        "s4"
+      ]
+    },
+    {
+      "title": "Waterfalls and Natural Wonders",
+      "stop_ids": [
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "title": "Historic Bridges and Landmarks",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "c875091f6d994bb81c7ba9319b54033296c75e6357553a07315e2b591762a441"
+}

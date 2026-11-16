@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Campania",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco regionale del Taburno - Camposauro"
+        "foresta demaniale",
+        "ambienti rupestri"
       ],
       "seo_title": "Parco regionale del Taburno - Camposauro Visit Guide"
     },
@@ -32,16 +33,57 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco regionale del Taburno - Camposauro",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Massif Peaks and State Forests",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco regionale del Taburno - Camposauro",
-                "stop_id": "parco-regionale-del-taburno-camposauro",
-                "detail": "The Taburno - Camposauro Regional Park is a protected natural area of Campania legally established in 1993 and whose management has been active since [dated source]."
+                "name": "foresta demaniale",
+                "stop_id": "parco-regionale-del-taburno-camposauro--s4",
+                "detail": "The coal tit (Periparus ater) and the rarer marsh tit (Poecile palustris) also nest in wooded areas, especially beech forests and the silver fir woods of the state forest."
+              },
+              {
+                "name": "ambienti rupestri",
+                "stop_id": "parco-regionale-del-taburno-camposauro--s5",
+                "detail": "Rocky environments, high-altitude meadows and pastures are flown over by the common raven (Corvus corax), skylark (Alauda arvensis), black redstart (Phoenicurus ochruros) and swallows (Hirundinidae)."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco regionale del Taburno - Camposauro before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Beech Forests and Hillside Villages",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "faggete",
+                "stop_id": "parco-regionale-del-taburno-camposauro--s2",
+                "detail": "At the level of springs and wetlands at lower altitudes the Italian tree frog (Hyla intermedia) is present while, instead, just about everywhere in the beech forests and along pools, springs and streams, the Apennine frog (Rana italica) is found."
+              },
+              {
+                "name": "borghi collinari",
+                "stop_id": "parco-regionale-del-taburno-camposauro--s3",
+                "detail": "On the side of anthropization, the presence of the hillside villages and the lifestyle in harmony with the territory favor species with a more plastic ecology."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco regionale del Taburno - Camposauro before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Oak Groves and Waterways",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "querceti",
+                "stop_id": "parco-regionale-del-taburno-camposauro--s6",
+                "detail": "The sub-mountain environment, thanks also to acorns and other fruits of the oak groves and mixed woods, is the habitat of the hazel dormouse (Muscardinus avellanarius)."
+              },
+              {
+                "name": "corsi d'acqua",
+                "stop_id": "parco-regionale-del-taburno-camposauro--s7",
+                "detail": "The banks of the watercourses instead constitute an ideal habitat for the water vole (Arvicola amphibius)."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco regionale del Taburno - Camposauro before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +121,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_regionale_del_Taburno_-_Camposauro"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_regionale_del_Taburno_-_Camposauro"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:05:31.259440+00:00"
       }
     }
   }

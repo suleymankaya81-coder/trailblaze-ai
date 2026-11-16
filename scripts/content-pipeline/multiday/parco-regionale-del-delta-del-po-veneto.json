@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "dune fossili",
+      "quote": "Il territorio è un alternarsi di ambienti diversi che si susseguono dalla terraferma al mare: dopo la campagna troviamo le dune fossili, visitabili, che corrispondono alle antiche linee di costa.",
+      "english": "The territory is an alternation of different environments that follow one another from the mainland to the sea: after the countryside we find the fossil dunes, which can be visited and correspond to the ancient coastlines."
+    },
+    {
+      "id": "s2",
+      "name": "Museo Regionale Veneto della Bonifica",
+      "quote": "I più importanti centri visita del parco del Delta del Po Veneto, sono: il Museo Regionale Veneto della Bonifica 44.944642°N 12.281232°E44°56′40.71″N, 12°16′52.44″E, a Ca' Vendramin frazione di Taglio di Po;",
+      "english": "The most important visitor centers of the Veneto Po Delta park are: the Veneto Regional Reclamation Museum at Ca' Vendramin, a hamlet of Taglio di Po;"
+    },
+    {
+      "id": "s3",
+      "name": "giardino Botanico litoraneo di Porto Caleri",
+      "quote": "il giardino Botanico litoraneo di Porto Caleri 45.105°N 12.326°E45°06′18″N, 12°19′33.6″E, in località Porto Caleri a Rosolina Mare.",
+      "english": "the coastal Botanical Garden of Porto Caleri in the locality of Porto Caleri in Rosolina Mare."
+    },
+    {
+      "id": "s4",
+      "name": "pinete di Porto Viro",
+      "quote": "Interessante è anche la presenza del tartufo, specie in corrispondenza dei cordoni di dune fossili che passano nelle pinete di Porto Viro.",
+      "english": "Also interesting is the presence of truffles, especially in correspondence with the fossil dune ridges that pass through the pine forests of Porto Viro."
+    },
+    {
+      "id": "s5",
+      "name": "Porto Caleri",
+      "quote": "Da segnalare anche i cervidi come i daini presenti nell'isola di Albarella che sconfinano nelle valli e a Porto Caleri e i mustelidi (come la donnola), predatori che occupano un'importante funzione di controllo sulle popolazioni di uccelli e roditori.",
+      "english": "Also noteworthy are cervids such as the fallow deer present on the island of Albarella which cross over into the valleys and into Porto Caleri and mustelids (such as the weasel), predators that occupy an important control function on bird and rodent populations."
+    },
+    {
+      "id": "s6",
+      "name": "isola di Albarella",
+      "quote": "Da segnalare anche i cervidi come i daini presenti nell'isola di Albarella che sconfinano nelle valli e a Porto Caleri e i mustelidi (come la donnola).",
+      "english": "Also noteworthy are cervids such as the fallow deer present on the island of Albarella which cross over into the valleys and into Porto Caleri and mustelids (such as the weasel)."
+    },
+    {
+      "id": "s7",
+      "name": "taglio di Porto Viro",
+      "quote": "L'uomo, nel tempo, ha assunto nell'evoluzione del Delta un ruolo sempre maggiore, fino a divenirne il protagonista quando, quattro secoli fa, ha realizzato il taglio di Porto Viro, dal quale ha preso origine il Delta Moderno.",
+      "english": "Man, over time, has taken an increasingly greater role in the evolution of the Delta, until becoming its protagonist when, four centuries ago, he created the Porto Viro cut, from which the Modern Delta originated."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Coastal Sights",
+      "stop_ids": [
+        "s3",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Fossil Dunes and Pine Forests",
+      "stop_ids": [
+        "s1",
+        "s4"
+      ]
+    },
+    {
+      "title": "Historical Delta Infrastructure",
+      "stop_ids": [
+        "s2",
+        "s7"
+      ]
+    }
+  ]
+}

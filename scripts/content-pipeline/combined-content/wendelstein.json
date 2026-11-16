@@ -1,39 +1,32 @@
 {
-  "fingerprint": "cad8aa66a32fed3c98b1ef7b7b247dc498b8dc41145a1bc7b7d335bf90bdbdfc",
   "status": "validated",
-  "prompt_chars": 6068,
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
-      "region": "Bavarian Alps",
-      "tagline": "A popular peak in the Munich local mountains known for its unique Alpine ecosystem.",
-      "best_season": "summer",
-      "trip_duration_days": "1",
-      "recommended_duration": "1 day",
-      "permit_level": "none",
-      "seo_title": "Visiting Wendelstein in the Bavarian Alps",
-      "best_seasons": [
-        "spring",
-        "summer",
-        "fall"
-      ],
-      "scenic_score": 5,
-      "camping_score": 1,
+      "region": "Bavaria",
+      "tagline": "The mountain is calling louder than ever: since Covid, outdoor sports are booming, the Alps are literally over",
+      "best_season": "Check official seasonal information",
+      "best_seasons": [],
+      "scenic_score": null,
+      "camping_score": null,
       "avg_daily_budget": null,
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
+      "permit_level": "moderate",
       "aliases": [],
-      "gateway_cities": [
-        "Munich"
-      ],
+      "gateway_cities": [],
       "similar_slugs": [],
-      "trip_tags": [
-        "mountains",
-        "alpine"
-      ],
+      "trip_tags": [],
       "activities": [
-        "Wendelstein"
-      ]
+        "Lake Spitzingsee",
+        "Spitzingsattel",
+        "Taubenstein"
+      ],
+      "seo_title": "Wendelstein Visit Guide"
     },
     "travel": {
       "slug": "wendelstein",
+      "overview_name": "Wendelstein",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Wendelstein before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://bavaria.travel/stories/ranger-tour-tegernsee-schliersee/",
@@ -41,16 +34,62 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Wendelstein",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Spitzingsee Peaks and Passes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Wendelstein",
-                "stop_id": "wendelstein",
-                "detail": "The mountain is calling louder than ever: since Covid, outdoor sports are booming, the Alps are literally overrun. Especially around the so-called Munich local mountains between Wendelstein and Tegernsee, things are getting tight. “It is all the more important that we are also prepared to make compromises, to show consideration for nature and animals, so that we can preserve this unique ecosystem,” Antonia thinks."
+                "name": "Lake Spitzingsee",
+                "stop_id": "wendelstein--s1",
+                "detail": "In the early morning, the banks of fog quietly push their way through the powdered spruces around the snow-covered Lake Spitzingsee."
+              },
+              {
+                "name": "Spitzingsattel",
+                "stop_id": "wendelstein--s2",
+                "detail": "They glide between the steep flanks of Mounts Brecherspitze and Jägerkamp over the Spitzingsattel down into the Alpine foothills."
+              },
+              {
+                "name": "Taubenstein",
+                "stop_id": "wendelstein--s8",
+                "detail": "“From my point of view, sanctioning should never be the first step,” says Thorsten Schär, whom I meet a little later at the valley station of the Taubenstein, the starting point of the tours on the Jägerkamp."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Wendelstein before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Jägerkamp Summits and Schliersee Views",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Jägerkamp",
+                "stop_id": "wendelstein--s4",
+                "detail": "Antonia Rüede-Passul is assigned to the Jägerkamp."
+              },
+              {
+                "name": "Lake Schliersee",
+                "stop_id": "wendelstein--s6",
+                "detail": "View from the Jägerkamp onto Lake Schliersee and the Pre-Alps"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Wendelstein before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Regional Lakes and Mountains",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Lake Tegernsee",
+                "stop_id": "wendelstein--s5",
+                "detail": "On a sunny Saturday morning, after the people of Munich have finished their second latte, got into the car and joined the caravan heading south, addicted to the mountains, it can get crowded a little later around Lake Tegernsee and Lake Schliersee."
+              },
+              {
+                "name": "Wendelstein",
+                "stop_id": "wendelstein--s9",
+                "detail": "Especially around the so-called Munich local mountains between Wendelstein and Tegernsee, things are getting tight."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Wendelstein before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -90,101 +129,9 @@
             "url": "https://bavaria.travel/stories/ranger-tour-tegernsee-schliersee/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:52:43.939396+00:00"
       }
     }
-  },
-  "original_gemini_bundle": {
-    "summary": {
-      "region": "Bavarian Alps",
-      "tagline": "A popular peak in the Munich local mountains known for its unique Alpine ecosystem.",
-      "best_season": "summer",
-      "trip_duration_days": "1",
-      "recommended_duration": "1 day",
-      "permit_level": "none",
-      "seo_title": "Visiting Wendelstein in the Bavarian Alps",
-      "best_seasons": [
-        "spring",
-        "summer",
-        "fall"
-      ],
-      "scenic_score": 5,
-      "camping_score": 1,
-      "avg_daily_budget": null,
-      "aliases": [],
-      "gateway_cities": [
-        "Munich"
-      ],
-      "similar_slugs": [],
-      "trip_tags": [
-        "mountains",
-        "alpine"
-      ],
-      "activities": [
-        "Wendelstein"
-      ]
-    },
-    "travel": {
-      "slug": "wendelstein",
-      "headline": "Check visitor access before departure",
-      "reservation": "Check the official visitor information for Wendelstein before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
-      "source_url": "https://bavaria.travel/stories/ranger-tour-tegernsee-schliersee/",
-      "plan": {
-        "version": 1,
-        "days": [
-          {
-            "title": "Visit highlights: Wendelstein",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
-            "stops": [
-              {
-                "name": "Wendelstein",
-                "stop_id": "wendelstein",
-                "detail": "The mountain is calling louder than ever: since Covid, outdoor sports are booming, the Alps are literally overrun. Especially around the so-called Munich local mountains between Wendelstein and Tegernsee, things are getting tight. “It is all the more important that we are also prepared to make compromises, to show consideration for nature and animals, so that we can preserve this unique ecosystem,” Antonia thinks."
-              }
-            ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
-            "note": "Check the official visitor information for Wendelstein before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
-          }
-        ],
-        "intel": [
-          {
-            "kind": "parking",
-            "title": "Parking check",
-            "text": "The reviewed sources do not establish current parking conditions for Wendelstein. Check the official visitor information before departure."
-          },
-          {
-            "kind": "signal",
-            "title": "Signal check",
-            "text": "The reviewed sources do not establish mobile coverage for Wendelstein. Check the official visitor information before departure."
-          },
-          {
-            "kind": "fuel",
-            "title": "Fuel check",
-            "text": "The reviewed sources do not establish fuel availability for Wendelstein. Check the official visitor information before departure."
-          },
-          {
-            "kind": "timing",
-            "title": "Timing check",
-            "text": "The reviewed sources do not establish a best-season recommendation for Wendelstein. Check the official visitor information before departure."
-          },
-          {
-            "kind": "access",
-            "title": "Access check",
-            "text": "The reviewed sources do not establish all current access restrictions for Wendelstein. Check the official visitor information before departure."
-          }
-        ],
-        "arrival": "The reviewed sources do not establish a measured arrival schedule or supply stops for Wendelstein. Check the official visitor information before departure.",
-        "vehicle": "The reviewed sources do not establish vehicle size or rental restrictions; do not assume RV access for Wendelstein. Check the official visitor information before departure.",
-        "goldenHour": "The reviewed sources do not establish a verified sunrise or sunset viewpoint for Wendelstein. Check the official visitor information before departure.",
-        "sources": [
-          {
-            "label": "Official visitor information",
-            "url": "https://bavaria.travel/stories/ranger-tour-tegernsee-schliersee/"
-          }
-        ],
-        "markers": []
-      }
-    }
-  },
-  "review_note": "Gemini summary retained; exact-source compact visit and explicit operational unknowns applied without additional inference."
+  }
 }

@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Wimbachklamm Gorge",
+      "quote": "Wimbachklamm Gorge offers an unforgettable nature experience along bridges and wooden walkways.",
+      "english": "Wimbachklamm Gorge offers an unforgettable nature experience along bridges and wooden walkways."
+    },
+    {
+      "id": "s2",
+      "name": "Wimbach Valley",
+      "quote": "Nestled between Mount Watzmann and Mount Hochkalter at the entrance to Wimbach Valley, you'll discover one of the region's most impressive natural landmarks.",
+      "english": "Nestled between Mount Watzmann and Mount Hochkalter at the entrance to Wimbach Valley, you'll discover one of the region's most impressive natural landmarks."
+    },
+    {
+      "id": "s3",
+      "name": "Ramsau",
+      "quote": "At the entrance to the vast high-alpine valley between Mount Watzmann and Mount Hochkalter, near the mountaineering village of Ramsau, lies the narrow Wimbachklamm Gorge.",
+      "english": "At the entrance to the vast high-alpine valley between Mount Watzmann and Mount Hochkalter, near the mountaineering village of Ramsau, lies the narrow Wimbachklamm Gorge."
+    },
+    {
+      "id": "s4",
+      "name": "Wimbachgries",
+      "quote": "While the upper Wimbachtal valley, known as Wimbachgries, is covered in dry gravel and the water flows underground, the mountain stream bursts back to the surface in Wimbachklamm Gorge.",
+      "english": "While the upper Wimbachtal valley, known as Wimbachgries, is covered in dry gravel and the water flows underground, the mountain stream bursts back to the surface in Wimbachklamm Gorge."
+    },
+    {
+      "id": "s5",
+      "name": "Berchtesgaden National Park",
+      "quote": "Wimbachklamm Gorge in Berchtesgaden National Park is a fascinating geological attraction, a spectacular natural landmark, and a popular destination for hikers and walkers alike.",
+      "english": "Wimbachklamm Gorge in Berchtesgaden National Park is a fascinating geological attraction, a spectacular natural landmark, and a popular destination for hikers and walkers alike."
+    },
+    {
+      "id": "s6",
+      "name": "Wimbachschloss",
+      "quote": "Once a hunting lodge belonging to the Wittelsbach royal family, it now welcomes hikers as a mountain restaurant in Berchtesgaden National Park.",
+      "english": "Once a hunting lodge belonging to the Wittelsbach royal family, it now welcomes hikers as a mountain restaurant in Berchtesgaden National Park."
+    },
+    {
+      "id": "s7",
+      "name": "Wimbachgrieshütte",
+      "quote": "Farther up Wimbachtal, Wimbachgrieshütte offers overnight accommodations and is a popular destination for hikers and mountaineers.",
+      "english": "Farther up Wimbachtal, Wimbachgrieshütte offers overnight accommodations and is a popular destination for hikers and mountaineers."
+    }
+  ],
+  "days": [
+    {
+      "title": "Gorge Entrance and Ramsau Village",
+      "stop_ids": [
+        "s3",
+        "s1",
+        "s5"
+      ]
+    },
+    {
+      "title": "Wimbachtal Valley Exploration",
+      "stop_ids": [
+        "s2",
+        "s6"
+      ]
+    },
+    {
+      "title": "Upper Alpine Wilderness",
+      "stop_ids": [
+        "s4",
+        "s7"
+      ]
+    }
+  ]
+}

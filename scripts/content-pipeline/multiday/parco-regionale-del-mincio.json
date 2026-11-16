@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Complesso morenico di Castellaro Lagusello",
+      "quote": "Il parco ha un'estensione territoriale molto ampia, circa 16.000 ettari, tra cui spiccano la riserva naturale Complesso morenico di Castellaro Lagusello, il Parco delle Bertone, la riserva naturale Vallazza e la riserva naturale Valli del Mincio.",
+      "english": "The park has a very large territorial extension, about 16,000 hectares, among which the natural reserve Complesso morenico di Castellaro Lagusello, the Parco delle Bertone, the Vallazza natural reserve and the Valli del Mincio natural reserve stand out."
+    },
+    {
+      "id": "s2",
+      "name": "Parco delle Bertone",
+      "quote": "Il parco ha un'estensione territoriale molto ampia, circa 16.000 ettari, tra cui spiccano la riserva naturale Complesso morenico di Castellaro Lagusello, il Parco delle Bertone, la riserva naturale Vallazza e la riserva naturale Valli del Mincio.",
+      "english": "The park has a very large territorial extension, about 16,000 hectares, among which the natural reserve Complesso morenico di Castellaro Lagusello, the Parco delle Bertone, the Vallazza natural reserve and the Valli del Mincio natural reserve stand out."
+    },
+    {
+      "id": "s3",
+      "name": "riserva naturale Vallazza",
+      "quote": "Il parco ha un'estensione territoriale molto ampia, circa 16.000 ettari, tra cui spiccano la riserva naturale Complesso morenico di Castellaro Lagusello, il Parco delle Bertone, la riserva naturale Vallazza e la riserva naturale Valli del Mincio.",
+      "english": "The park has a very large territorial extension, about 16,000 hectares, among which the natural reserve Complesso morenico di Castellaro Lagusello, the Parco delle Bertone, the Vallazza natural reserve and the Valli del Mincio natural reserve stand out."
+    },
+    {
+      "id": "s4",
+      "name": "riserva naturale Valli del Mincio",
+      "quote": "Il parco ha un'estensione territoriale molto ampia, circa 16.000 ettari, tra cui spiccano la riserva naturale Complesso morenico di Castellaro Lagusello, il Parco delle Bertone, la riserva naturale Vallazza e la riserva naturale Valli del Mincio.",
+      "english": "The park has a very large territorial extension, about 16,000 hectares, among which the natural reserve Complesso morenico di Castellaro Lagusello, the Parco delle Bertone, the Vallazza natural reserve and the Valli del Mincio natural reserve stand out."
+    },
+    {
+      "id": "s5",
+      "name": "santuario di Santa Maria delle Grazie",
+      "quote": "Un'eccezionale varietà di situazioni, in cui si trovano anche notevoli elementi architettonici e artistici tra cui il santuario di Santa Maria delle Grazie, la Villa al Parco Bertone e numerose ville dei tempi dei Gonzaga.",
+      "english": "An exceptional variety of situations, in which there are also notable architectural and artistic elements including the sanctuary of Santa Maria delle Grazie, the Villa at Parco Bertone and numerous villas from the time of the Gonzagas."
+    },
+    {
+      "id": "s6",
+      "name": "Villa al Parco Bertone",
+      "quote": "Un'eccezionale varietà di situazioni, in cui si trovano anche notevoli elementi architettonici e artistici tra cui il santuario di Santa Maria delle Grazie, la Villa al Parco Bertone e numerose ville dei tempi dei Gonzaga.",
+      "english": "An exceptional variety of situations, in which there are also notable architectural and artistic elements including the sanctuary of Santa Maria delle Grazie, the Villa at Parco Bertone and numerous villas from the time of the Gonzagas."
+    },
+    {
+      "id": "s7",
+      "name": "pista ciclabile Mantova-Peschiera",
+      "quote": "Il territorio del parco è attraversato dalla pista ciclabile Mantova-Peschiera, che si snoda per quasi 40 km, parte dei quali in sede propria con tratti non asfaltati, costeggiando il corso del fiume Mincio.",
+      "english": "The territory of the park is crossed by the Mantua-Peschiera cycle path, which winds for almost 40 km, part of which on its own site with unpaved sections, running along the course of the Mincio river."
+    },
+    {
+      "id": "s8",
+      "name": "laghi di Mantova",
+      "quote": "Spazia dalle colline moreniche alla pianura terrazzata, dalla zona meandriforme a paleoalvei al complesso dei laghi di Mantova.",
+      "english": "It ranges from the morainic hills to the terraced plain, from the meandering zone with paleo-channels to the complex of the Mantua lakes."
+    }
+  ],
+  "days": [
+    {
+      "title": "Natural Reserves and Morainic Hills",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s8"
+      ]
+    },
+    {
+      "title": "Villas and Cycle Paths of the Mincio",
+      "stop_ids": [
+        "s2",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Sanctuaries and Wetlands",
+      "stop_ids": [
+        "s3",
+        "s5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Vallone Madonna degli Angeli",
+      "quote": "Il parco ospita oltre la metà delle specie vegetali siciliane, e in particolare gran parte di quelle presenti solo in Sicilia (come l'Abies nebrodensis in via di estinzione, nel Vallone Madonna degli Angeli).",
+      "english": "The park hosts more than half of the Sicilian plant species, and in particular a large part of those present only in Sicily (such as the endangered Abies nebrodensis, in the Vallone Madonna degli Angeli)."
+    },
+    {
+      "id": "s2",
+      "name": "Pizzo Carbonara",
+      "quote": "Il nucleo centrale si sviluppa perlopiù sopra i 1600 metri di quota, da Pizzo Carbonara (1979 m) a Pizzo Antenna (1977 m) e a Monte Ferro (1906 m).",
+      "english": "The central core develops mostly above 1600 meters in altitude, from Pizzo Carbonara (1979 m) to Pizzo Antenna (1977 m) and Monte Ferro (1906 m)."
+    },
+    {
+      "id": "s3",
+      "name": "Pizzo Antenna",
+      "quote": "Il nucleo centrale si sviluppa perlopiù sopra i 1600 metri di quota, da Pizzo Carbonara (1979 m) a Pizzo Antenna (1977 m) e a Monte Ferro (1906 m).",
+      "english": "The central core develops mostly above 1600 meters in altitude, from Pizzo Carbonara (1979 m) to Pizzo Antenna (1977 m) and Monte Ferro (1906 m)."
+    },
+    {
+      "id": "s4",
+      "name": "Monte Ferro",
+      "quote": "Il nucleo centrale si sviluppa perlopiù sopra i 1600 metri di quota, da Pizzo Carbonara (1979 m) a Pizzo Antenna (1977 m) e a Monte Ferro (1906 m).",
+      "english": "The central core develops mostly above 1600 meters in altitude, from Pizzo Carbonara (1979 m) to Pizzo Antenna (1977 m) and Monte Ferro (1906 m)."
+    },
+    {
+      "id": "s5",
+      "name": "Monte San Salvatore",
+      "quote": "Essi sono separati da un'ampia vallata dal Monte San Salvatore (1912 m) e dal Monte Quacella (1869 m), tipico massiccio dolomitico, e da un'altra vallata dal Pizzo Dipilo (1385 m), caratterizzato da profonde balze e dirupi; il vallone Madonie separa questi monti dal massiccio Monte dei Cervi (1794 m), grande contenitore delle riserve d'acqua delle Madonie.",
+      "english": "They are separated by a wide valley from Monte San Salvatore (1912 m) and Monte Quacella (1869 m), a typical dolomitic massif, and by another valley from Pizzo Dipilo (1385 m), characterized by deep cliffs and precipices; the Madonie valley separates these mountains from the Monte dei Cervi massif (1794 m), a large container of the Madonie's water reserves."
+    },
+    {
+      "id": "s6",
+      "name": "Monte Quacella",
+      "quote": "Essi sono separati da un'ampia vallata dal Monte San Salvatore (1912 m) e dal Monte Quacella (1869 m), tipico massiccio dolomitico, e da un'altra vallata dal Pizzo Dipilo (1385 m), caratterizzato da profonde balze e dirupi; il vallone Madonie separa questi monti dal massiccio Monte dei Cervi (1794 m), grande contenitore delle riserve d'acqua delle Madonie.",
+      "english": "They are separated by a wide valley from Monte San Salvatore (1912 m) and Monte Quacella (1869 m), a typical dolomitic massif, and by another valley from Pizzo Dipilo (1385 m), characterized by deep cliffs and precipices; the Madonie valley separates these mountains from the Monte dei Cervi massif (1794 m), a large container of the Madonie's water reserves."
+    },
+    {
+      "id": "s7",
+      "name": "Pizzo Dipilo",
+      "quote": "Essi sono separati da un'ampia vallata dal Monte San Salvatore (1912 m) e dal Monte Quacella (1869 m), tipico massiccio dolomitico, e da un'altra vallata dal Pizzo Dipilo (1385 m), caratterizzato da profonde balze e dirupi; il vallone Madonie separa questi monti dal massiccio Monte dei Cervi (1794 m), grande contenitore delle riserve d'acqua delle Madonie.",
+      "english": "They are separated by a wide valley from Monte San Salvatore (1912 m) and Monte Quacella (1869 m), a typical dolomitic massif, and by another valley from Pizzo Dipilo (1385 m), characterized by deep cliffs and precipices; the Madonie valley separates these mountains from the Monte dei Cervi massif (1794 m), a large container of the Madonie's water reserves."
+    },
+    {
+      "id": "s8",
+      "name": "Monte dei Cervi",
+      "quote": "Essi sono separati da un'ampia vallata dal Monte San Salvatore (1912 m) e dal Monte Quacella (1869 m), tipico massiccio dolomitico, e da un'altra vallata dal Pizzo Dipilo (1385 m), caratterizzato da profonde balze e dirupi; il vallone Madonie separa questi monti dal massiccio Monte dei Cervi (1794 m), grande contenitore delle riserve d'acqua delle Madonie.",
+      "english": "They are separated by a wide valley from Monte San Salvatore (1912 m) and Monte Quacella (1869 m), a typical dolomitic massif, and by another valley from Pizzo Dipilo (1385 m), characterized by deep cliffs and precipices; the Madonie valley separates these mountains from the Monte dei Cervi massif (1794 m), a large container of the Madonie's water reserves."
+    },
+    {
+      "id": "s9",
+      "name": "Portella Colla",
+      "quote": "Questi, scavalcando a Portella Colla la prima sella delle Madonie, si dirigono, attraverso Munciarrati, verso la valle d'Isnello dalla quale risalgono per poi scendere a mare seco",
+      "english": "These, crossing the first saddle of the Madonie at Portella Colla, head, through Munciarrati, towards the valley of Isnello from which they ascend and then descend to the sea."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Peaks and Nature Reserves",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Western Massifs and Mountain Passes",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ]
+}

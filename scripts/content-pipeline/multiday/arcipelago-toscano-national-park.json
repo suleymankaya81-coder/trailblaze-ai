@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Isola di Gorgona",
+      "quote": "Il parco ha una superficie di 16.856 ettari a terra e 56.766 a mare ed è composto da tutte le isole principali dell'arcipelago toscano: Isola di Gorgona, Isola di Capraia, Isola d'Elba, Isola di Pianosa, Isola di Montecristo, Isola del Giglio, Isola di Giannutri.",
+      "english": "The park has a surface area of 16,856 hectares on land and 56,766 at sea and is composed of all the main islands of the Tuscan archipelago: Gorgona Island, Capraia Island, Elba Island, Pianosa Island, Montecristo Island, Giglio Island, Giannutri Island."
+    },
+    {
+      "id": "s2",
+      "name": "Isola di Capraia",
+      "quote": "Capraia: la Peraiola.",
+      "english": "Capraia: la Peraiola."
+    },
+    {
+      "id": "s3",
+      "name": "Isola d'Elba",
+      "quote": "Tra le specie vegetali presenti: il cavolo prostrato (Brassica procumbens), specie a distribuzione nord-africana e sud-europea, presente in Europa in due località (Corsica e Isola del Giglio), probabilmente le stazioni europee sono di origine avventizia; la Gagea granatellii, specie rara, segnalata all'Elba (Monte Capanne), Pianosa e Giglio.",
+      "english": "Among the plant species present: the prostrate cabbage (Brassica procumbens), a species with North African and Southern European distribution, present in Europe in two locations (Corsica and Giglio Island), probably the European stations are of adventitious origin; the Gagea granatellii, a rare species, reported on Elba (Monte Capanne), Pianosa and Giglio."
+    },
+    {
+      "id": "s4",
+      "name": "Monte Capanne",
+      "quote": "Sono inoltre da segnalare popolamenti floristici delle coste rocciose con specie endemiche o di elevato interesse conservazionistico all'Elba sul Monte Capanne.",
+      "english": "Also noteworthy are floral populations of the rocky coasts with endemic species or those of high conservation interest on Elba at Monte Capanne."
+    },
+    {
+      "id": "s5",
+      "name": "Monte Perone",
+      "quote": "Il Comune di Marciana dell'isola d'Elba, con delibera n. 26 del 30 aprile 1976, dispose l'acquisizione - per la somma complessiva di 672.000 lire - di tre esemplari di muflone provenienti dalla tenuta di Ugo Baldacci a Montecatini Val di Cecina da collocare sul Monte Perone, dichiarando che l'introduzione degli esemplari costituiva un «contributo del Comune all'opera di ripopolamento e ricostituzione della fauna [...] al fine di ottenere un ripopolamento di selvaggina nelle idonee zone dell'isola.»",
+      "english": "The Municipality of Marciana on the island of Elba, by resolution no. 26 of April 30, 1976, ordered the acquisition - for the total sum of 672,000 lire - of three specimens of mouflon coming from the estate of Ugo Baldacci in Montecatini Val di Cecina to be placed on Monte Perone, declaring that the introduction of the specimens constituted a 'contribution of the Municipality to the work of repopulation and reconstruction of the fauna [...] in order to obtain a repopulation of game in suitable areas of the island.'"
+    },
+    {
+      "id": "s6",
+      "name": "Scoglietto di Portoferraio",
+      "quote": "All'Elba: Formiche della Zanca, l'Ogliera, lo Scoglio della Triglia, l'Isola Corbella, le Isole Gemini, l'Isolotto d'Ortano, l'Isola dei Topi e lo Scoglietto di Portoferraio.",
+      "english": "At Elba: Formiche della Zanca, l'Ogliera, lo Scoglio della Triglia, l'Isola Corbella, the Gemini Islands, l'Isolotto d'Ortano, l'Isola dei Topi and the Scoglietto di Portoferraio."
+    },
+    {
+      "id": "s7",
+      "name": "Isola del Giglio",
+      "quote": "L'isola del Giglio, composta di coste rocciose con falesie di elevato valore naturalistico, oltre a far parte del Parco nazionale, è un'area protetta sia come sito di interesse regionale (SIR) che come zona di protezione speciale (ZPS), ed è inoltre stata proposta come sito di importanza comunitaria (pSIC).",
+      "english": "The island of Giglio, composed of rocky coasts with cliffs of high naturalistic value, in addition to being part of the National Park, is a protected area both as a site of regional interest (SIR) and as a special protection area (ZPS), and has also been proposed as a site of community importance (pSIC)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Islands and Elba Peaks",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Elba Coast and Capraia",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "Southern Cliffs of Giglio",
+      "stop_ids": [
+        "s7"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "monte Cervialto",
+      "quote": "La vetta più alta è il monte Cervialto (1.810 m), seguono il monte Terminio (1.806 m), monte Polveracchio (1.790 m), l'Accellica (1.660 m), il Mai (1606 m), il Calvello (1.579 m),  il Pizzo San Michele (1.567 m), il Montagnone di Nusco (1.486 m.)",
+      "english": "The highest peak is Mount Cervialto (1,810 m), followed by Mount Terminio (1,806 m), Mount Polveracchio (1,790 m), Accellica (1,660 m), Mai (1606 m), Calvello (1,579 m), Pizzo San Michele (1,567 m), Montagnone di Nusco (1,486 m.)"
+    },
+    {
+      "id": "s2",
+      "name": "oasi naturale del Monte Polveracchio",
+      "quote": "Del parco fanno parte l'oasi naturale del Monte Polveracchio, l'oasi naturale Valle della Caccia, l'oasi naturalistica Frassineto e l'altopiano Laceno.",
+      "english": "The natural oasis of Mount Polveracchio, the Valle della Caccia natural oasis, the Frassineto natural oasis and the Laceno plateau are part of the park."
+    },
+    {
+      "id": "s3",
+      "name": "oasi naturale Valle della Caccia",
+      "quote": "Del parco fanno parte l'oasi naturale del Monte Polveracchio, l'oasi naturale Valle della Caccia, l'oasi naturalistica Frassineto e l'altopiano Laceno.",
+      "english": "The natural oasis of Mount Polveracchio, the Valle della Caccia natural oasis, the Frassineto natural oasis and the Laceno plateau are part of the park."
+    },
+    {
+      "id": "s4",
+      "name": "oasi naturalistica Frassineto",
+      "quote": "Del parco fanno parte l'oasi naturale del Monte Polveracchio, l'oasi naturale Valle della Caccia, l'oasi naturalistica Frassineto e l'altopiano Laceno.",
+      "english": "The natural oasis of Mount Polveracchio, the Valle della Caccia natural oasis, the Frassineto natural oasis and the Laceno plateau are part of the park."
+    },
+    {
+      "id": "s5",
+      "name": "altopiano Laceno",
+      "quote": "Del parco fanno parte l'oasi naturale del Monte Polveracchio, l'oasi naturale Valle della Caccia, l'oasi naturalistica Frassineto e l'altopiano Laceno.",
+      "english": "The natural oasis of Mount Polveracchio, the Valle della Caccia natural oasis, the Frassineto natural oasis and the Laceno plateau are part of the park."
+    },
+    {
+      "id": "s6",
+      "name": "Nusco",
+      "quote": "Il parco regionale Monti Picentini è un'area naturale protetta della regione Campania, tra le province di Salerno e Avellino, istituita nel 1995 con sede a Nusco nel palazzo cinquecentesco della famiglia Astrominica.",
+      "english": "The Monti Picentini regional park is a protected natural area of the Campania region, between the provinces of Salerno and Avellino, established in 1995 with headquarters in Nusco in the sixteenth-century palace of the Astrominica family."
+    },
+    {
+      "id": "s7",
+      "name": "palazzo cinquecentesco della famiglia Astrominica",
+      "quote": "Il parco regionale Monti Picentini è un'area naturale protetta della regione Campania, tra le province di Salerno e Avellino, istituita nel 1995 con sede a Nusco nel palazzo cinquecentesco della famiglia Astrominica.",
+      "english": "The Monti Picentini regional park is a protected natural area of the Campania region, between the provinces of Salerno and Avellino, established in 1995 with headquarters in Nusco in the sixteenth-century palace of the Astrominica family."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Plateau",
+      "stop_ids": [
+        "s1",
+        "s5"
+      ]
+    },
+    {
+      "title": "Natural Oases and Reserves",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Park Headquarters and Local Heritage",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

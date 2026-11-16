@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lahntal",
+      "quote": "Der Naturpark Nassau liegt im Rheinischen Schiefergebirge, wobei das Lahntal in Ost-West-Richtung seine Hauptachse bildet.",
+      "english": "The Nassau Nature Park lies in the Rhenish Massif, with the Lahn Valley forming its main axis in an east-west direction."
+    },
+    {
+      "id": "s2",
+      "name": "Alarmstange",
+      "quote": "Sein höchster Berg ist mit 545,2 m ü. NHN die im Westerwaldteil Montabaurer Höhe gelegene Alarmstange, und der im Westlichen Hintertaunus befindliche Graue Kopf ist mit 543,4 m seine höchste Erhebung im Taunus.",
+      "english": "Its highest mountain, at 545.2 m above sea level, is the Alarmstange located in the Montabaurer Höhe part of the Westerwald, and the Graue Kopf located in the Western Hintertaunus is its highest elevation in the Taunus at 543.4 m."
+    },
+    {
+      "id": "s3",
+      "name": "Graue Kopf",
+      "quote": "Sein höchster Berg ist mit 545,2 m ü. NHN die im Westerwaldteil Montabaurer Höhe gelegene Alarmstange, und der im Westlichen Hintertaunus befindliche Graue Kopf ist mit 543,4 m seine höchste Erhebung im Taunus.",
+      "english": "Its highest mountain, at 545.2 m above sea level, is the Alarmstange located in the Montabaurer Höhe part of the Westerwald, and the Graue Kopf located in the Western Hintertaunus is its highest elevation in the Taunus at 543.4 m."
+    },
+    {
+      "id": "s4",
+      "name": "Montabaurer Höhe",
+      "quote": "Schutzzweck für den gesamten Naturpark ist die Erhaltung der landschaftlichen Eigenart, der Schönheit und des für Langzeit- und Kurzurlaub besonderen Erholungswertes des Lahntales und seiner Seitentäler sowie der rechtsseitigen Rheinhänge und Seitentäler des Rheins zwischen Lahnstein und Kamp-Bornhofen, mit den landschaftlich abwechslungsreichen, begleitenden Höhenzügen und der Montabaurer Höhe.",
+      "english": "The protective purpose for the entire nature park is the preservation of the scenic character, the beauty and the special recreational value for long-term and short-term holidays of the Lahn Valley and its side valleys as well as the right-hand Rhine slopes and side valleys of the Rhine between Lahnstein and Kamp-Bornhofen, with the scenically varied, accompanying ridges and the Montabaurer Höhe."
+    },
+    {
+      "id": "s5",
+      "name": "Lahnhöhenweg",
+      "quote": "Gern begangen werden Lahnhöhenweg, Rheinhöhenweg, Limeswanderweg und der Europäische Fernwanderweg E1.",
+      "english": "The Lahn Heights Trail, Rhine Heights Trail, Limes Hiking Trail and the European Long Distance Trail E1 are popular."
+    },
+    {
+      "id": "s6",
+      "name": "Rheinhöhenweg",
+      "quote": "Gern begangen werden Lahnhöhenweg, Rheinhöhenweg, Limeswanderweg und der Europäische Fernwanderweg E1.",
+      "english": "The Lahn Heights Trail, Rhine Heights Trail, Limes Hiking Trail and the European Long Distance Trail E1 are popular."
+    },
+    {
+      "id": "s7",
+      "name": "Limeswanderweg",
+      "quote": "Gern begangen werden Lahnhöhenweg, Rheinhöhenweg, Limeswanderweg und der Europäische Fernwanderweg E1.",
+      "english": "The Lahn Heights Trail, Rhine Heights Trail, Limes Hiking Trail and the European Long Distance Trail E1 are popular."
+    },
+    {
+      "id": "s8",
+      "name": "Europäische Fernwanderweg E1",
+      "quote": "Gern begangen werden Lahnhöhenweg, Rheinhöhenweg, Limeswanderweg und der Europäische Fernwanderweg E1.",
+      "english": "The Lahn Heights Trail, Rhine Heights Trail, Limes Hiking Trail and the European Long Distance Trail E1 are popular."
+    }
+  ],
+  "days": [
+    {
+      "title": "Valleys and Heights of the Lahn",
+      "stop_ids": [
+        "s1",
+        "s5"
+      ]
+    },
+    {
+      "title": "Peaks of Westerwald and Taunus",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Long Distance Trails",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "de8aec49f2937f605fabfabb177c8ed67f4acc653e8c9c937a15ef1d2be8bca0"
+}

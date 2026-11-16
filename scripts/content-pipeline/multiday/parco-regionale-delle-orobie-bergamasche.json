@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Pizzo Coca",
+      "quote": "La vetta più alta è il Pizzo Coca (3 050 m), seguito dal Pizzo Redorta (3 038 m) e dalla Punta di Scais (3 038 m).",
+      "english": "The highest peak is Pizzo Coca (3,050 m), followed by Pizzo Redorta (3,038 m) and Punta di Scais (3,038 m)."
+    },
+    {
+      "id": "s2",
+      "name": "ghiacciaio del Trobio",
+      "quote": "L'ultimo ghiacciaio sopravvissuto sul lato bergamasco delle Orobie è il ghiacciaio del Trobio, che si trova ai piedi della cresta che collega il Monte Gleno al Pizzo dei Tre Confini.",
+      "english": "The last surviving glacier on the Bergamo side of the Orobie is the Trobio glacier, located at the foot of the ridge connecting Monte Gleno to Pizzo dei Tre Confini."
+    },
+    {
+      "id": "s3",
+      "name": "cascate del Serio",
+      "quote": "Altrettanto numerose, ma anche di grande interesse ambientale, economico e turistico, sono le cascate, tra cui quelle del Serio a Valbondione, le più alte d'Italia e le seconde d'Europa con un salto triplice di 315 m a cui è stata assegnata una leggenda, quelle della Val Sambuzza a Carona e le incantevoli cascate del torrente Vo nella Val di Scalve.",
+      "english": "Equally numerous, but also of great environmental, economic, and tourist interest, are the waterfalls, including those of the Serio in Valbondione, the highest in Italy and second in Europe with a triple drop of 315 m to which a legend has been assigned, those of Val Sambuzza in Carona, and the enchanting waterfalls of the Vo stream in Val di Scalve."
+    },
+    {
+      "id": "s4",
+      "name": "rifugio Antonio Curò",
+      "quote": "Il sentiero dei fiori, ideato e originariamente tracciato dal professor Claudio Brissoni, che va dalle Baite di Mezzeno presso Capovalle di Roncobello all'Alpe Arera, e il sentiero naturalistico Antonio Curò, che dal rifugio Antonio Curò, sopra Valbondione, porta al passo del Vivione, in val di Scalve, offrono la possibilità di esplorare una parte consistente della varietà floreale del parco.",
+      "english": "The Flower Trail, designed and originally mapped by Professor Claudio Brissoni, which goes from the Baite di Mezzeno near Capovalle di Roncobello to Alpe Arera, and the Antonio Curò nature trail, which leads from the Antonio Curò refuge above Valbondione to the Vivione pass in Val di Scalve, offer the chance to explore a consistent part of the park's floral variety."
+    },
+    {
+      "id": "s5",
+      "name": "sentiero dei fiori",
+      "quote": "Il sentiero dei fiori, ideato e originariamente tracciato dal professor Claudio Brissoni, che va dalle Baite di Mezzeno presso Capovalle di Roncobello all'Alpe Arera, e il sentiero naturalistico Antonio Curò, che dal rifugio Antonio Curò, sopra Valbondione, porta al passo del Vivione, in val di Scalve, offrono la possibilità di esplorare una parte consistente della varietà floreale del parco.",
+      "english": "The Flower Trail, designed and originally mapped by Professor Claudio Brissoni, which goes from the Baite di Mezzeno near Capovalle di Roncobello to Alpe Arera, and the Antonio Curò nature trail, which leads from the Antonio Curò refuge above Valbondione to the Vivione pass in Val di Scalve, offer the chance to explore a consistent part of the park's floral variety."
+    },
+    {
+      "id": "s6",
+      "name": "cascate della Val Sambuzza",
+      "quote": "Altrettanto numerose, ma anche di grande interesse ambientale, economico e turistico, sono le cascate, tra cui quelle del Serio a Valbondione, le più alte d'Italia e le seconde d'Europa con un salto triplice di 315 m a cui è stata assegnata una leggenda, quelle della Val Sambuzza a Carona e le incantevoli cascate del torrente Vo nella Val di Scalve.",
+      "english": "Equally numerous, but also of great environmental, economic, and tourist interest, are the waterfalls, including those of the Serio in Valbondione, the highest in Italy and second in Europe with a triple drop of 315 m to which a legend has been assigned, those of Val Sambuzza in Carona, and the enchanting waterfalls of the Vo stream in Val di Scalve."
+    },
+    {
+      "id": "s7",
+      "name": "cascate del torrente Vo",
+      "quote": "Altrettanto numerose, ma anche di grande interesse ambientale, economico e turistico, sono le cascate, tra cui quelle del Serio a Valbondione, le più alte d'Italia e le seconde d'Europa con un salto triplice di 315 m a cui è stata assegnata una leggenda, quelle della Val Sambuzza a Carona e le incantevoli cascate del torrente Vo nella Val di Scalve.",
+      "english": "Equally numerous, but also of great environmental, economic, and tourist interest, are the waterfalls, including those of the Serio in Valbondione, the highest in Italy and second in Europe with a triple drop of 315 m to which a legend has been assigned, those of Val Sambuzza in Carona, and the enchanting waterfalls of the Vo stream in Val di Scalve."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Valbondione Waterfalls",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Brembana Waterfalls and Floral Trails",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Glaciers and Val di Scalve Waters",
+      "stop_ids": [
+        "s2",
+        "s7"
+      ]
+    }
+  ]
+}

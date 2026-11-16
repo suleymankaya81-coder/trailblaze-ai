@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hohenstein",
+      "quote": "Bemerkenswerte Naturräume sind: das 800 Hektar große Naturschutzgebiet „Hohenstein“ im Süntel",
+      "english": "Remarkable natural areas include: the 800-hectare nature reserve \"Hohenstein\" in the Süntel."
+    },
+    {
+      "id": "s2",
+      "name": "Schillat-Höhle",
+      "quote": "Tropfsteinhöhlen, insbesondere die Schillat-Höhle bei Hessisch Oldendorf",
+      "english": "Dripstone caves, especially the Schillat Cave near Hessisch Oldendorf."
+    },
+    {
+      "id": "s3",
+      "name": "Rinteln",
+      "quote": "Mittelalterlicher Marktplatz der ehemaligen Universitätsstadt Rinteln",
+      "english": "Medieval market square of the former university town Rinteln."
+    },
+    {
+      "id": "s4",
+      "name": "Schloss Hämelschenburg",
+      "quote": "Bauten der Weserrenaissance, wie die Schlösser Hämelschenburg und Schwöbber",
+      "english": "Buildings of the Weser Renaissance, such as the castles Hämelschenburg and Schwöbber."
+    },
+    {
+      "id": "s5",
+      "name": "Schloss Schwöbber",
+      "quote": "Bauten der Weserrenaissance, wie die Schlösser Hämelschenburg und Schwöbber",
+      "english": "Buildings of the Weser Renaissance, such as the castles Hämelschenburg and Schwöbber."
+    },
+    {
+      "id": "s6",
+      "name": "Rasti-Land",
+      "quote": "Der Freizeitpark Rasti-Land in Salzhemmendorf, das Motto: Zeit für Abenteuer",
+      "english": "The Rasti-Land theme park in Salzhemmendorf, the motto: Time for adventure."
+    },
+    {
+      "id": "s7",
+      "name": "Hameln",
+      "quote": "Altstädte von Bückeburg und Hameln",
+      "english": "Old towns of Bückeburg and Hameln."
+    },
+    {
+      "id": "s8",
+      "name": "Bückeburg",
+      "quote": "Altstädte von Bückeburg und Hameln",
+      "english": "Old towns of Bückeburg and Hameln."
+    }
+  ],
+  "days": [
+    {
+      "title": "Natural Wonders and Caves of the Süntel",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Historic Towns and River Renaissance",
+      "stop_ids": [
+        "s3",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Castles and Family Adventure",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "880397155b2799002faca96101d664201747963487b2d7850e240ad0145ff23d"
+}

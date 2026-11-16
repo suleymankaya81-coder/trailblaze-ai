@@ -1,0 +1,91 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Masso erratico di Brinzio",
+      "quote": "Masso erratico di Brinzio: grosso masso in gneiss trasportato e depositato dai ghiacciai nella valle di Intrino, sul versante nord del Campo dei Fiori.",
+      "english": "Erratic boulder of Brinzio: a large gneiss boulder transported and deposited by glaciers in the Intrino valley, on the northern slope of Campo dei Fiori."
+    },
+    {
+      "id": "s2",
+      "name": "Cascata del Pesegh",
+      "quote": "Cascata del Pesegh: formata dall'unione delle acque dei torrenti Brivola e Valmolina, Brinzio.",
+      "english": "Pesegh Waterfall: formed by the junction of the waters of the Brivola and Valmolina streams, Brinzio."
+    },
+    {
+      "id": "s3",
+      "name": "Laghetto di Brinzio",
+      "quote": "Laghetto di Brinzio, Brinzio.",
+      "english": "Lake Brinzio, Brinzio."
+    },
+    {
+      "id": "s4",
+      "name": "Torbiera del Pau Majur",
+      "quote": "Torbiera del Pau Majur, Brinzio.",
+      "english": "Pau Majur Peat Bog, Brinzio."
+    },
+    {
+      "id": "s5",
+      "name": "Lago di Ganna",
+      "quote": "Lago di Ganna, Valganna",
+      "english": "Lake Ganna, Valganna"
+    },
+    {
+      "id": "s6",
+      "name": "Forre della Valganna",
+      "quote": "Forre della Valganna: profonde incisioni a pareti ripide, erose dall'acqua, a nord delle Grotte della Valganna.",
+      "english": "Valganna Gorges: deep incisions with steep walls, eroded by water, north of the Valganna Caves."
+    },
+    {
+      "id": "s7",
+      "name": "Monte Martica",
+      "quote": "Anche il Monte Martica fa parte del complesso del C.d.F. è percorribile sino alla cima grazie ad una strada militare ed è collegato al monte Chiusarella.",
+      "english": "Monte Martica is also part of the C.d.F. complex; it can be traveled to the summit thanks to a military road and is connected to Monte Chiusarella."
+    },
+    {
+      "id": "s8",
+      "name": "Marmitte dei giganti del torrente Vellone",
+      "quote": "Marmitte dei giganti del torrente Vellone: forme di abrasione prodotte dall'erosione dell'acqua, Velate.",
+      "english": "Giant's kettles of the Vellone stream: abrasion forms produced by water erosion, Velate."
+    },
+    {
+      "id": "s9",
+      "name": "Fonte del Ceppo",
+      "quote": "Fonte del Ceppo: sorgente carsica attiva tutto l'anno, Santa Maria del Monte.",
+      "english": "Ceppo Spring: a karst spring active all year round, Santa Maria del Monte."
+    },
+    {
+      "id": "s10",
+      "name": "Grand Hotel Campo dei Fiori",
+      "quote": "Per i turisti più facoltosi era a disposizione il Grand Hotel Campo dei Fiori, monumentale struttura in stile liberty opera dell'architetto Giuseppe Sommaruga.",
+      "english": "For the wealthiest tourists, the Grand Hotel Campo dei Fiori was available, a monumental Liberty-style structure designed by architect Giuseppe Sommaruga."
+    }
+  ],
+  "days": [
+    {
+      "title": "Natural Wonders of Brinzio",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Valleys and Peaks",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Architecture and Springs",
+      "stop_ids": [
+        "s8",
+        "s9",
+        "s10"
+      ]
+    }
+  ]
+}

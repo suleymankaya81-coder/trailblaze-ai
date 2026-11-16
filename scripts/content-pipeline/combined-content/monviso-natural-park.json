@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Piedmont",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Monviso Natural Park"
+        "Monviso",
+        "Bosco dell'Alevè"
       ],
       "seo_title": "Monviso Natural Park Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Monviso Natural Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Peaks and Caves of the Monviso Group",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Monviso Natural Park",
-                "stop_id": "monviso-natural-park",
-                "detail": "The Monviso Natural Park (Italian: Parco naturale del Monviso) is a nature reserve in Piedmont, Italy. Established in [dated source] and enlarged in [dated source], it encompasses the Monviso, the highest mountain in the Cottian Alps, and the surrounding area between the Valle Po and the Valle Varaita, part of the UNESCO biosphere reserve of Monviso. The lowest point is in the plain of Cuneo, 240 meters above sea level, whereas the highest point is the peak of the Monviso, 3,841 meters above sea level."
+                "name": "Monviso",
+                "stop_id": "monviso-natural-park--s1",
+                "detail": "The Monviso Natural Park is a protected natural area; it occupies 9154.00 hectares of territory and extends around Monviso across the Po Valley and the Varaita Valley."
+              },
+              {
+                "name": "Bosco dell'Alevè",
+                "stop_id": "monviso-natural-park--s5",
+                "detail": "the special protection area of the Monviso Group and the Alevè Forest (SAC/SPA)."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Monviso Natural Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Lowland Woods and Heritage Sites",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Bosco del Merlino",
+                "stop_id": "monviso-natural-park--s6",
+                "detail": "the special protection area of the Merlino Forest (SAC)."
+              },
+              {
+                "name": "Staffarda",
+                "stop_id": "monviso-natural-park--s7",
+                "detail": "the special protection area of the Woods and bat colonies of Staffarda (SAC)."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Monviso Natural Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Monviso_Natural_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_del_Monviso"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:57:50.888580+00:00"
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Salzburg",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Kitzsteinhorn"
+        "Kitzsteinhorn",
+        "Top of Salzburg",
+        "Glückauf-Hanna-Stollen"
       ],
       "seo_title": "Kaprun Glacier (Kitzsteinhorn) Visit Guide"
     },
@@ -32,16 +34,49 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Kaprun Glacier (Kitzsteinhorn)",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Summit Experience and National Park Views",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
                 "name": "Kitzsteinhorn",
-                "stop_id": "kaprun-glacier-kitzsteinhorn",
-                "detail": "The Kitzsteinhorn is a mountain in the High Tauern range of the Central Eastern Alps in Austria. It is part of the Glockner Group and reaches a height of 3,203 m (10,509 ft) AA. The Kitzsteinhorn Glaciers are a popular ski area."
+                "stop_id": "kaprun-glacier-kitzsteinhorn--s1",
+                "detail": "The Kitzsteinhorn is part of the Glockner Group located in the Hohe Tauern and reaches a height of 3203 m above sea level."
+              },
+              {
+                "name": "Top of Salzburg",
+                "stop_id": "kaprun-glacier-kitzsteinhorn--s2",
+                "detail": "On the roof of the station there is a viewing platform called \"Top of Salzburg\"."
+              },
+              {
+                "name": "Glückauf-Hanna-Stollen",
+                "stop_id": "kaprun-glacier-kitzsteinhorn--s3",
+                "detail": "Starting from the summit station, one can reach a second viewing platform with a view of the Hohe Tauern National Park, passing among other things through the 362-meter-long Glückauf-Hanna-Stollen tunnel."
+              },
+              {
+                "name": "Nationalpark Gallery",
+                "stop_id": "kaprun-glacier-kitzsteinhorn--s4",
+                "detail": "Since then, the tunnel – as well as the second viewing platform – has been referred to as the \"Nationalpark Gallery\"."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Kaprun Glacier (Kitzsteinhorn) before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Mountain Huts and Alpine Glaciers",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Alpincenter",
+                "stop_id": "kaprun-glacier-kitzsteinhorn--s5",
+                "detail": "It still leads today from the Alpincenter to the \"Top of Salzburg\" mountain station, just below the summit of the Kitzsteinhorn."
+              },
+              {
+                "name": "Schmiedingerkees",
+                "stop_id": "kaprun-glacier-kitzsteinhorn--s7",
+                "detail": "The Schmiedingerkees can have open crevasses and may make crampons or, in extreme situations, a rope belay necessary."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Kaprun Glacier (Kitzsteinhorn) before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +114,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Kitzsteinhorn"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Kitzsteinhorn"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:13:51.212099+00:00"
       }
     }
   }

@@ -1,0 +1,61 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Aareschlucht",
+      "quote": "Die Aareschlucht ist eine Schlucht bei Meiringen im Berner Oberland in der Schweiz.",
+      "english": "The Aare Gorge is a gorge near Meiringen in the Bernese Oberland in Switzerland."
+    },
+    {
+      "id": "s2",
+      "name": "Kirchet",
+      "quote": "Ein Kalk-Felsriegel zwischen Innertkirchen und Meiringen, der Kirchet, behinderte den Abfluss der Aare aus dem Grimselgebiet.",
+      "english": "A limestone rock barrier between Innertkirchen and Meiringen, the Kirchet, obstructed the outflow of the Aare from the Grimsel area."
+    },
+    {
+      "id": "s3",
+      "name": "Lammiboden",
+      "quote": "Die Hauptstrasse 6 steigt mit drei Haarnadelkurven auf der steileren Südseite rund 80 Höhenmeter zum Lammiboden auf 710 Metern, von wo die Strasse in gleichmässigem Gefälle nach Meiringen (602 m) absinkt.",
+      "english": "Main road 6 climbs with three hairpin bends on the steeper south side around 80 meters in altitude to the Lammiboden at 710 meters, from where the road descends at a steady gradient towards Meiringen (602 m)."
+    },
+    {
+      "id": "s4",
+      "name": "Laufsteg",
+      "quote": "Ein Laufsteg führt über der Aare durch die schmale Passage, die seit 1912 mit einer künstlichen Beleuchtung für Nachtwanderungen ausgestattet ist.",
+      "english": "A walkway leads over the Aare through the narrow passage, which has been equipped with artificial lighting for night hikes since 1912."
+    },
+    {
+      "id": "s5",
+      "name": "Eingang West",
+      "quote": "Beim Eingang West auf der Meiringer Seite liegt die Bahnstation Aareschlucht West und beim Eingang Ost auf Innertkirchen-Seite die Tunnelhaltestelle Aareschlucht Ost der Meiringen-Innertkirchen-Bahn.",
+      "english": "At the West Entrance on the Meiringen side lies the Aareschlucht West train station, and at the East Entrance on the Innertkirchen side is the Aareschlucht Ost tunnel stop of the Meiringen-Innertkirchen railway."
+    },
+    {
+      "id": "s6",
+      "name": "Eingang Ost",
+      "quote": "Beim Eingang West auf der Meiringer Seite liegt die Bahnstation Aareschlucht West und beim Eingang Ost auf Innertkirchen-Seite die Tunnelhaltestelle Aareschlucht Ost der Meiringen-Innertkirchen-Bahn.",
+      "english": "At the West Entrance on the Meiringen side lies the Aareschlucht West train station, and at the East Entrance on the Innertkirchen side is the Aareschlucht Ost tunnel stop of the Meiringen-Innertkirchen railway."
+    },
+    {
+      "id": "s7",
+      "name": "Umgehungstunnel",
+      "quote": "Die Schlucht ist von Anfang April bis zum 1. November täglich geöffnet und man kann sie über die Stege und kleinere Umgehungstunnel durchschreiten.",
+      "english": "The gorge is open daily from the beginning of April to November 1st, and one can pass through it via the walkways and smaller bypass tunnels."
+    }
+  ],
+  "days": [
+    {
+      "title": "Aare Gorge Geological and Infrastructure Tour",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "443a14f4b654534b98af045a920fe8f43c265294394c1c1ff31bf0b846a30443"
+}

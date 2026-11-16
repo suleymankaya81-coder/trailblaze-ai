@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Piedmont",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Gran Bosco di Salbertrand Natural Park"
+        "Pinea",
+        "Alpe Arguel"
       ],
       "seo_title": "Parco naturale del Gran Bosco di Salbertrand Visit Guide"
     },
@@ -32,16 +33,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco naturale del Gran Bosco di Salbertrand",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Eastern Access and High Pastures",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Gran Bosco di Salbertrand Natural Park",
-                "stop_id": "parco-naturale-del-gran-bosco-di-salbertrand",
-                "detail": "The Gran Bosco di Salbertrand Natural Park (Italian: Parco naturale del Gran Bosco di Salbertrand) is a nature reserve in Piedmont, Italy. Established in 1980, it protects the Site of Community Importance of the Great Woods of Salbertrand (Gran Bosco di Salbertrand), in the Val Susa, south of the Dora Riparia, between 1,000 and 2,700 metres above sea level. The woods, which cover an area of about eight hundred hectares, consist of a mix of silver fir and Norway spruce, rarely found in the Western Alps."
+                "name": "Pinea",
+                "stop_id": "parco-naturale-del-gran-bosco-di-salbertrand--s4",
+                "detail": "From Salbertrand: by car you go directly to the Pinea equipped area, with parking."
+              },
+              {
+                "name": "Alpe Arguel",
+                "stop_id": "parco-naturale-del-gran-bosco-di-salbertrand--s8",
+                "detail": "From Susa and Chiomonte: to Pian del Frais, then Alpe Arguel via a dirt road or via Clot Rosset and by dirt road towards Clot Rosset/Clot des Anes."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale del Gran Bosco di Salbertrand before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Western Gateways and Forest Areas",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Monfol",
+                "stop_id": "parco-naturale-del-gran-bosco-di-salbertrand--s5",
+                "detail": "Alternatively, you can get off at Oulx station and use the connecting shuttle to Sauze d'Oulx: from here, you reach the hamlet of Monfol on foot, where the protected area's signage begins."
+              },
+              {
+                "name": "Ser Blanc",
+                "stop_id": "parco-naturale-del-gran-bosco-di-salbertrand--s6",
+                "detail": "The first is reached by proceeding from the town center towards the hamlet of Gran Villard and, having passed this and entered the municipality of Oulx, proceeding into the park where it is possible to travel by car through Monfol (a hamlet of Oulx) until the Ser Blanc equipped area."
+              },
+              {
+                "name": "Enfers",
+                "stop_id": "parco-naturale-del-gran-bosco-di-salbertrand--s7",
+                "detail": "The second is reached by proceeding from the town center towards the hamlet of Richardette towards the SP 173 of the Colle dell'Assietta until the locality of Enfers from where it is permitted to enter the Park by car up to the prohibition signs placed inside the woods."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco naturale del Gran Bosco di Salbertrand before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +108,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Gran_Bosco_di_Salbertrand_Natural_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_del_Gran_Bosco_di_Salbertrand"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:00:09.555139+00:00"
       }
     }
   }

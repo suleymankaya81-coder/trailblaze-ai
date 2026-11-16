@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lombardy",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco della Pineta di Appiano Gentile e Tradate"
+        "Osservatorio astronomico di Tradate FOAM13",
+        "Centro Didattico Scientifico",
+        "roccolo di Montechiaro"
       ],
       "seo_title": "Parco naturale della Pineta di Appiano Gentile e Tradate Vis"
     },
@@ -32,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco naturale della Pineta di Appiano Gentile e Tradate",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Tradate Science and History",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco della Pineta di Appiano Gentile e Tradate",
-                "stop_id": "parco-naturale-della-pineta-di-appiano-gentile-e-tradate",
-                "detail": "The Parco della Pineta di Appiano Gentile e Tradate (\"Tradate and Appiano Gentile pine forest park\") is a nature reserve in Lombardy, Italy. Established in 1983, it covers the eponymous pine forest in northwestern Lombardy, between the provinces of Como and Varese, stretching over 4,800 hectares in the territory of fifteen municipalities. The Site of Community Importance of the pine forest of Appiano Gentile, part of the Natura [dated source] network, is part of the park."
+                "name": "Osservatorio astronomico di Tradate FOAM13",
+                "stop_id": "parco-naturale-della-pineta-di-appiano-gentile-e-tradate--s2",
+                "detail": "Inside the park, there is also the site of community interest and special conservation zone \"Pineta pedemontana di Appiano Gentile\" (code SIC: IT2020007), managed by the park authority, and the FOAM13 astronomical observatory of Tradate."
+              },
+              {
+                "name": "Centro Didattico Scientifico",
+                "stop_id": "parco-naturale-della-pineta-di-appiano-gentile-e-tradate--s3",
+                "detail": "The Scientific Didactic Center is linked to the FOAM13 astronomical observatory of Tradate and was established to encourage children of all ages toward the development of scientific knowledge and awareness, and to understand and preserve the nature of the park."
+              },
+              {
+                "name": "roccolo di Montechiaro",
+                "stop_id": "parco-naturale-della-pineta-di-appiano-gentile-e-tradate--s6",
+                "detail": "In Tradate, the Montechiaro bird-snare was positioned north of the town on the slopes of a forest."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale della Pineta di Appiano Gentile e Tradate before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Sport and Estates",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Pinetina",
+                "stop_id": "parco-naturale-della-pineta-di-appiano-gentile-e-tradate--s1",
+                "detail": "There are also farmhouses and agricultural companies, some residential areas built in the last century, and the locality known as \"Pinetina,\" home to the Angelo Moratti Sports Center, the training ground for the Inter football team, and the course of the La Pinetina Golf Club."
+              },
+              {
+                "name": "Parco della Villa Caproni di Taliedo",
+                "stop_id": "parco-naturale-della-pineta-di-appiano-gentile-e-tradate--s7",
+                "detail": "Inside the Park of Villa Caproni di Taliedo in Venegono Superiore, there is a colonnade of hornbeams and a masonry lodge."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco naturale della Pineta di Appiano Gentile e Tradate before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +109,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Parco_della_Pineta_di_Appiano_Gentile_e_Tradate"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_della_Pineta_di_Appiano_Gentile_e_Tradate"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:00:50.208868+00:00"
       }
     }
   }

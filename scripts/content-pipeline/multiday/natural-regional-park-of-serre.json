@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "bosco Archiforo",
+      "quote": "Zona A riserva integrale:luoghi: bosco Archiforo, bosco Santa Maria e monte Pecoraro",
+      "english": "Zone A integral reserve: locations: Archiforo forest, Santa Maria forest and Mount Pecoraro"
+    },
+    {
+      "id": "s2",
+      "name": "monte Pecoraro",
+      "quote": "Sentiero Edificio ANAS (Serra S. Bruno) Monte Pecoraro",
+      "english": "ANAS Building (Serra S. Bruno) to Mount Pecoraro Trail"
+    },
+    {
+      "id": "s3",
+      "name": "cascata del Marmarico",
+      "quote": "Situato tra l'Aspromonte e la Sila, è percorso da due lunghe catene montuose, da grandi boschi, tra cui il bosco di Stilo, e da corsi d'acqua con cascate come la cascata del Marmarico (la più alta, di 118 m), nel comune di Bivongi, la cascata di Pietra Cupa, sulla fiumara Assi di Guardavalle e le cascate dell'Ancinale.",
+      "english": "Situated between Aspromonte and Sila, it is crossed by two long mountain ranges, large forests, including the Stilo forest, and watercourses with waterfalls such as the Marmarico waterfall (the highest, at 118 m), in the municipality of Bivongi, the Pietra Cupa waterfall on the Assi di Guardavalle stream, and the Ancinale waterfalls."
+    },
+    {
+      "id": "s4",
+      "name": "cascata di Pietra Cupa",
+      "quote": "Sentiero Gole dell'Assi – Cascata di Pietra Cupa",
+      "english": "Assi Gorges – Pietra Cupa Waterfall Trail"
+    },
+    {
+      "id": "s5",
+      "name": "Villa Vittoria",
+      "quote": "Cervus elaphus (cervo nobile) presente solo ed esclusivamente nella riserva di Villa Vittoria",
+      "english": "Cervus elaphus (red deer) present only and exclusively in the Villa Vittoria reserve"
+    },
+    {
+      "id": "s6",
+      "name": "Castello della Baronessa Scoppa",
+      "quote": "Sentiero Monte Trematerra - Castello della Baronessa Scoppa;",
+      "english": "Mount Trematerra - Baroness Scoppa Castle Trail;"
+    },
+    {
+      "id": "s7",
+      "name": "lago Angitola",
+      "quote": "Oasi lago Angitola - La zona occupa una superficie di ha 875, pari al 4,95% della superficie del parco",
+      "english": "Lake Angitola Oasis - The area occupies a surface of 875 ha, equal to 4.95% of the park's surface"
+    }
+  ],
+  "days": [
+    {
+      "title": "Forests and High Peaks",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Waterfalls and Gorges",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Castles, Lakes and Reserves",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Ferleiten",
+      "quote": "Im Fuscher Tal verläuft die Straße über die Ortschaft Fusch an der Großglocknerstraße zur Kassenstelle Ferleiten (1151 m ü. A., ).",
+      "english": "In the Fusch Valley, the road runs via the village of Fusch an der Großglocknerstraße to the Ferleiten toll station (1151 m above sea level)."
+    },
+    {
+      "id": "s2",
+      "name": "Piffkar",
+      "quote": "Dort steigt sie über die Station Piffkar (1633 m ü. A., ) und vorbei an der Blockhalde Hexenküche auf das Obere Nassfeld (Wilfried-Haslauer-Haus, 2268 m ü. A., ) und auf das Fuscher Törl (2428 m ü. A., ) zwischen dem Fuschertal und dem Raurisertal in vielen Serpentinen an.",
+      "english": "From there it climbs in many serpentines via the Piffkar station (1633 m above sea level) and past the Hexenküche boulder field to the Upper Nassfeld (Wilfried-Haslauer-Haus, 2268 m above sea level) and to the Fuscher Törl (2428 m above sea level) between the Fusch Valley and the Rauris Valley."
+    },
+    {
+      "id": "s3",
+      "name": "Fuscher Törl",
+      "quote": "Beim Fuscher Törl zweigt die etwa 1,6 km lange Panoramastraße Edelweißspitze (2571 m ü. A.) ab.",
+      "english": "At the Fuscher Törl, the approximately 1.6 km long Edelweißspitze panoramic road (2571 m above sea level) branches off."
+    },
+    {
+      "id": "s4",
+      "name": "Edelweißspitze",
+      "quote": "Sie führt von Bruck an der Großglocknerstraße über die beiden Gebirgspässe Fuscher Törl und Hochtor (Tunnelportal 2504 m ü. A., historische Passhöhe 2576 m ü. A.) nach Heiligenblut am Großglockner und hat Abzweigungen zur Edelweißspitze und zur Kaiser-Franz-Josefs-Höhe.",
+      "english": "It leads from Bruck an der Großglocknerstraße via the two mountain passes Fuscher Törl and Hochtor (tunnel portal 2504 m above sea level, historical pass height 2576 m above sea level) to Heiligenblut am Großglockner and has branches to the Edelweißspitze and the Kaiser-Franz-Josefs-Höhe."
+    },
+    {
+      "id": "s5",
+      "name": "Fuscher Lacke",
+      "quote": "Danach fällt die Straße zur Fuscher Lacke (2261 m ü. A., ) ab und durchtunnelt das Mittertörl (2375 m ü. A.; Tunnelhöhe 2335 m ü. A., ), wo bei Wegscheid der alte Saumpfad durch das Seidlwinkltal in die Rauris abfällt.",
+      "english": "Afterwards, the road descends to the Fuscher Lacke (2261 m above sea level) and tunnels through the Mittertörl (2375 m above sea level; tunnel height 2335 m above sea level), where the old mule track descends via Wegscheid through the Seidlwinkel Valley into the Rauris."
+    },
+    {
+      "id": "s6",
+      "name": "Hochtor",
+      "quote": "Ein weiterer Tunnel überquert am Hochtor (2576 m ü. A.; Tunnelhöhe 2504 m ü. A., ) die salzburgisch-kärntnerische Grenze und die Wasserscheide Salzach (Inn)/Drau.",
+      "english": "Another tunnel crosses the Salzburg-Carinthian border and the Salzach (Inn)/Drau watershed at the Hochtor (2576 m above sea level; tunnel height 2504 m above sea level)."
+    },
+    {
+      "id": "s7",
+      "name": "Kaiser-Franz-Josefs-Höhe",
+      "quote": "Von der Hauptstraße führt schon weit im Mölltal die Gletscherstraße weg auf die Kaiser-Franz-Josefs-Höhe (2369 m ü. A., ) am Pasterzengletscher mit Blick auf Großglockner, während die Glocknerstraße selbst nach Heiligenblut hinabführt.",
+      "english": "Far into the Möll Valley, the glacier road branches off from the main road to the Kaiser-Franz-Josefs-Höhe (2369 m above sea level) at the Pasterze Glacier with a view of the Grossglockner, while the Glockner Road itself leads down to Heiligenblut."
+    },
+    {
+      "id": "s8",
+      "name": "Pasterzengletscher",
+      "quote": "Ende 1932 wurden die Nordrampe, die Südrampe und die Gletscherstraße zur Pasterze feierlich der Öffentlichkeit übergeben.",
+      "english": "At the end of 1932, the north ramp, the south ramp, and the glacier road to the Pasterze were ceremoniously handed over to the public."
+    },
+    {
+      "id": "s9",
+      "name": "Wallackhaus",
+      "quote": "Auf Kärntner Seite liegen das Wallackhaus und Schachnern an der Straße.",
+      "english": "On the Carinthian side, the Wallackhaus and Schachnern are located along the road."
+    },
+    {
+      "id": "s10",
+      "name": "Glocknerhaus",
+      "quote": "Seit 1875 besteht das Glocknerhaus, zu dem die Sektion Klagenfurt des Deutschen und Österreichischen Alpenvereins als Eigentümer bis 1908 einen Fahrweg errichtete, der später in der Glocknerstraße aufging.",
+      "english": "The Glocknerhaus has existed since 1875, to which the Klagenfurt section of the German and Austrian Alpine Club, as the owner, built a carriage road by 1908, which was later incorporated into the Glockner Road."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Ascent and Panoramic Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "High Alpine Lakes and Historical Passes",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Glaciers and Southern Alpine Lodges",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9",
+        "s10"
+      ]
+    }
+  ],
+  "_text_sha": "6eccd4b03ea21770a24f09d9d56c152b84f404dadd9c1c011c67620506c363ab"
+}

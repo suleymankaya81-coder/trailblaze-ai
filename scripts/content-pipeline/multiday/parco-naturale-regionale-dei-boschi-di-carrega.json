@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Casino dei Boschi",
+      "quote": "Il Casino dei Boschi è un edificio fatto costruire dalla duchessa Maria Amalia di Borbone tra il 1775 e il 1789.",
+      "english": "The Casino dei Boschi is a building commissioned by Duchess Maria Amalia of Bourbon between 1775 and 1789."
+    },
+    {
+      "id": "s2",
+      "name": "Casinetto",
+      "quote": "Aggiunse un lunghissimo colonnato con al centro il Casinetto, un edificio con orologio e torre campanaria, che ospitava il teatrino di corte.",
+      "english": "He added a very long colonnade with the Casinetto at the center, a building with a clock and bell tower, which housed the court theater."
+    },
+    {
+      "id": "s3",
+      "name": "Villa del Ferlaro",
+      "quote": "La villa del Ferlaro venne fatta costruire dalla duchessa Maria Luisa d'Austria su un preesistente edificio, il Casinetto Fedolfi, per destinarla a residenza estiva dei suoi figli.",
+      "english": "The Villa del Ferlaro was built by Duchess Maria Luisa of Austria on a pre-existing building, the Casinetto Fedolfi, to serve as a summer residence for her children."
+    },
+    {
+      "id": "s4",
+      "name": "Chiesa di San Biagio",
+      "quote": "La chiesa di San Biagio si trova a Talignano, sulla dorsale che separa la valle del fiume Taro da quella del torrente Scodogna.",
+      "english": "The church of San Biagio is located in Talignano, on the ridge that separates the Taro river valley from that of the Scodogna stream."
+    },
+    {
+      "id": "s5",
+      "name": "Bosco della Capannella",
+      "quote": "Il bosco della Capannella è una suggestiva zona del parco che costeggia la strada comunale che collega Sala Baganza a Collecchio, detta \"strada del Conventino\".",
+      "english": "The Bosco della Capannella is a suggestive area of the park that runs alongside the municipal road connecting Sala Baganza to Collecchio, known as the \"strada del Conventino\"."
+    },
+    {
+      "id": "s6",
+      "name": "lago delle Navette",
+      "quote": "Tra i rettili è frequente la testuggine palustre, che abita i laghi (in particolare il lago delle Navette e della Svizzera) e le pozze.",
+      "english": "Among the reptiles, the pond turtle is frequent, inhabiting the lakes (in particular Lake Navette and Lake Svizzera) and pools."
+    },
+    {
+      "id": "s7",
+      "name": "lago della Vigna",
+      "quote": "I principali sono il lago della Vigna (ca. 18.000 m2), il lago della Svizzera, il lago della Grotta, il lago della Navetta, il lago dei Pini e il lago Ponte Verde.",
+      "english": "The main ones are Lake Vigna (approx. 18,000 m2), Lake Svizzera, Lake Grotta, Lake Navetta, Lake Pini, and Lake Ponte Verde."
+    },
+    {
+      "id": "s8",
+      "name": "Centro parco \"Renzo Levati\"",
+      "quote": "Il Centro parco \"Renzo Levati\" è un punto di accoglienza per i visitatori, raggiungibile da Sala Baganza, via Olma, o da Talignano.",
+      "english": "The \"Renzo Levati\" Park Center is a visitor reception point, reachable from Sala Baganza, via Olma, or from Talignano."
+    },
+    {
+      "id": "s9",
+      "name": "Vivaio forestale \"Scodogna\"",
+      "quote": "Il Vivaio forestale \"Scodogna\" si estende per circa 17 ettari in località Pontescodogna (comune di Collecchio).",
+      "english": "The \"Scodogna\" forest nursery extends for about 17 hectares in the locality of Pontescodogna (municipality of Collecchio)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Ducal Residences and History",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Nature and Lakes",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Culture and Environment",
+      "stop_ids": [
+        "s4",
+        "s8",
+        "s9"
+      ]
+    }
+  ]
+}

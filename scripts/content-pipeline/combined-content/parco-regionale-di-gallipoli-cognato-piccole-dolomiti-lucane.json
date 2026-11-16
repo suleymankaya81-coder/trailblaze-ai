@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Basilicata",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco Regionale di Gallipoli Cognato Piccole Dolomiti Lucane"
+        "museo naturalistico",
+        "area archeologica di Croccia Cognato",
+        "bosco di Montepiano"
       ],
       "seo_title": "Parco Regionale di Gallipoli Cognato Piccole Dolomiti Lucane"
     },
@@ -32,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco Regionale di Gallipoli Cognato Piccole Dolomiti Lucane",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Accettura Heritage and Nature",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco Regionale di Gallipoli Cognato Piccole Dolomiti Lucane",
-                "stop_id": "parco-regionale-di-gallipoli-cognato-piccole-dolomiti-lucane",
-                "detail": "The Regional Park of Gallipoli Cognato Piccole Dolomiti Lucane is a protected natural area of the Basilicata, established in 1997 with headquarters in the town of Accettura."
+                "name": "museo naturalistico",
+                "stop_id": "parco-regionale-di-gallipoli-cognato-piccole-dolomiti-lucane--s1",
+                "detail": "At the park's management headquarters, there is also a natural history museum, a botanical garden, laboratories, and an information center."
+              },
+              {
+                "name": "area archeologica di Croccia Cognato",
+                "stop_id": "parco-regionale-di-gallipoli-cognato-piccole-dolomiti-lucane--s3",
+                "detail": "The Monte Croccia state anthropological reserve was then established to protect the archaeological area of Croccia Cognato, now inside the park, which preserves the remains of a prehistoric settlement of the ancient Lucanians, datable between the 6th and 4th centuries BC, found on the summit of the mountain of the same name."
+              },
+              {
+                "name": "bosco di Montepiano",
+                "stop_id": "parco-regionale-di-gallipoli-cognato-piccole-dolomiti-lucane--s4",
+                "detail": "In the territory of Accettura there is also the Montepiano wood, an ancient turkey oak forest cultivated as a deciduous wood, which covers about 800 hectares."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco Regionale di Gallipoli Cognato Piccole Dolomiti Lucane before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Dolomiti Lucane Villages and Gorges",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Castelmezzano",
+                "stop_id": "parco-regionale-di-gallipoli-cognato-piccole-dolomiti-lucane--s6",
+                "detail": "The inhabited centers of Castelmezzano and Pietrapertosa themselves are extraordinarily picturesque, clinging to the rocky walls of the mountains that surround them and which, with their shapes, give rise to suggestive scenery and breathtaking landscapes."
+              },
+              {
+                "name": "Pietrapertosa",
+                "stop_id": "parco-regionale-di-gallipoli-cognato-piccole-dolomiti-lucane--s7",
+                "detail": "As evidence of the importance that tree cults have in this part of the Lucanian Apennines, other May festivals or tree wedding ceremonies are also celebrated in Oliveto Lucano from August 10 to 12, in Castelmezzano on September 12 and 13, and in Pietrapertosa during the festivities for Saint Anthony of Padua in June."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco Regionale di Gallipoli Cognato Piccole Dolomiti Lucane before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +109,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_regionale_di_Gallipoli_Cognato_Piccole_Dolomiti_Lucane"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_regionale_di_Gallipoli_Cognato_Piccole_Dolomiti_Lucane"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:06:15.101710+00:00"
       }
     }
   }

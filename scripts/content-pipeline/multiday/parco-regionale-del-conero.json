@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "spiaggia di Mezzavalle",
+      "quote": "Il comune di Ancona, infatti, ritira il suo piano e di conseguenza, Mezzavalle resta una spiaggia completamente libera.",
+      "english": "The municipality of Ancona, in fact, withdraws its plan and consequently, Mezzavalle remains a completely free beach."
+    },
+    {
+      "id": "s2",
+      "name": "Lago Grande di Portonovo",
+      "quote": "il Lago Grande di Portonovo da trasformare in porto turistico, proposta, come la precedente, dell'Azienda di Soggiorno;",
+      "english": "the Lago Grande di Portonovo to be transformed into a tourist port, a proposal, like the previous one, by the Tourist Board;"
+    },
+    {
+      "id": "s3",
+      "name": "Fonte di Portonovo",
+      "quote": "infine la celebre Fonte di Portonovo era stata distrutta per fare posto ad un albergo.",
+      "english": "finally the famous Fountain of Portonovo had been destroyed to make room for a hotel."
+    },
+    {
+      "id": "s4",
+      "name": "Monte Colombo",
+      "quote": "uno sbancamento abusivo a Monte Colombo, di 8.000 metri quadrati.",
+      "english": "an illegal excavation at Monte Colombo, of 8,000 square meters."
+    },
+    {
+      "id": "s5",
+      "name": "valli di Pietralacroce",
+      "quote": "Nel 2013, ancora una marcia della associazioni naturalistiche, unite in questo caso anche al mondo dell'associazionismo giovanile; questa volta si tratta della paventata interruzione del sentiero delle valli di Pietralacroce (itinerario n. 313), a causa di un privato che intende recintare.",
+      "english": "In 2013, another march by naturalistic associations, joined in this case also by the world of youth associations; this time it concerns the feared interruption of the path of the Pietralacroce valleys (itinerary no. 313), due to a private individual who intends to fence it off."
+    },
+    {
+      "id": "s6",
+      "name": "Passetto",
+      "quote": "la funivia dal Passetto a Portonovo e a Sirolo, per complessivi 20 chilometri;",
+      "english": "the cable car from Passetto to Portonovo and to Sirolo, for a total of 20 kilometers;"
+    },
+    {
+      "id": "s7",
+      "name": "Scalaccia",
+      "quote": "nonostante il parco sia già istituito e funzionante, lungo un sentiero ufficiale che conduce alle scogliere sottostanti percorrendo le valli di Pietralacroce (quello della Scalaccia) un rudere viene abbattuto e al suo posto viene costruita una abitazione, con regolare licenza rilasciata dal Comune di Ancona;",
+      "english": "although the park is already established and functioning, along an official path that leads to the cliffs below passing through the valleys of Pietralacroce (that of Scalaccia) a ruin is demolished and a house is built in its place, with a regular license issued by the Municipality of Ancona;"
+    }
+  ],
+  "days": [
+    {
+      "title": "Portonovo and Northern Slopes",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Coastal Paths and Beaches",
+      "stop_ids": [
+        "s1",
+        "s6"
+      ]
+    },
+    {
+      "title": "Valleys of Pietralacroce",
+      "stop_ids": [
+        "s5",
+        "s7"
+      ]
+    }
+  ]
+}

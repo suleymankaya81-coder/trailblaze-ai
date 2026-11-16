@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Steinwald",
+      "quote": "In the Steinwald, mighty granite formations like the Oberpfalzturm or the Weißenstein castle ruins rise above the treetops.",
+      "english": "In the Steinwald, mighty granite formations like the Oberpfalzturm or the Weißenstein castle ruins rise above the treetops."
+    },
+    {
+      "id": "s2",
+      "name": "Oberpfalzturm",
+      "quote": "In the Steinwald, mighty granite formations like the Oberpfalzturm or the Weißenstein castle ruins rise above the treetops.",
+      "english": "In the Steinwald, mighty granite formations like the Oberpfalzturm or the Weißenstein castle ruins rise above the treetops."
+    },
+    {
+      "id": "s3",
+      "name": "Weißenstein castle ruins",
+      "quote": "In the Steinwald, mighty granite formations like the Oberpfalzturm or the Weißenstein castle ruins rise above the treetops.",
+      "english": "In the Steinwald, mighty granite formations like the Oberpfalzturm or the Weißenstein castle ruins rise above the treetops."
+    },
+    {
+      "id": "s4",
+      "name": "Waldnaabtal",
+      "quote": "The Waldnaabtal is particularly refreshing, where the river has carved its way through high granite blocks.",
+      "english": "The Waldnaabtal is particularly refreshing, where the river has carved its way through high granite blocks."
+    },
+    {
+      "id": "s5",
+      "name": "Tirschenreuth Pond District",
+      "quote": "The Tirschenreuth Pond District, known as the 'Land of a Thousand Ponds', offers a unique aquatic landscape.",
+      "english": "The Tirschenreuth Pond District, known as the 'Land of a Thousand Ponds', offers a unique aquatic landscape."
+    },
+    {
+      "id": "s6",
+      "name": "Goldsteig",
+      "quote": "The Goldsteig trail leads through the varied landscape of the Upper Palatinate Forest.",
+      "english": "The Goldsteig trail leads through the varied landscape of the Upper Palatinate Forest."
+    },
+    {
+      "id": "s7",
+      "name": "Bärnau-Tachov History Park",
+      "quote": "Cultural history can be experienced at the Bärnau-Tachov History Park, an archaeological open-air museum.",
+      "english": "Cultural history can be experienced at the Bärnau-Tachov History Park, an archaeological open-air museum."
+    }
+  ],
+  "days": [
+    {
+      "title": "Granite Heights and River Valleys",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Water Landscapes and Cultural History",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hohe Brach",
+      "quote": "Höchste Erhebung der Schwäbisch-Fränkischen Waldberge ist die Hohe Brach (586,9 m).",
+      "english": "The highest elevation of the Swabian-Franconian Forest Mountains is the Hohe Brach (586.9 m)."
+    },
+    {
+      "id": "s2",
+      "name": "Juxkopf",
+      "quote": "Weitere hohe Berge sind neben anderen Hornberg (584,2 m), Hohenstein (572,7 m), Hohenberg (570,4 m), Altenberg (564,7 m), Stocksberg (539,7 m), Haube (539,9 m), Flinsberg (535 m), Burgberg (534,8 m), Juxkopf (533,2 m) und Steinknickle (527,1 m).",
+      "english": "Other high mountains include, among others, Hornberg (584.2 m), Hohenstein (572.7 m), Hohenberg (570.4 m), Altenberg (564.7 m), Stocksberg (539.7 m), Haube (539.9 m), Flinsberg (535 m), Burgberg (534.8 m), Juxkopf (533.2 m) and Steinknickle (527.1 m)."
+    },
+    {
+      "id": "s3",
+      "name": "Hörschbach",
+      "quote": "Zu den bekannten Nebenflüssen der Murr gehören die „Spiegelberger“ Lauter, die Bottwar und der Hörschbach; zur Rems fließt unter anderem die Wieslauf und zum Kocher die Lein, Fichtenberger Rot, Bibers, Bühler, Ohrn und Brettach.",
+      "english": "The well-known tributaries of the Murr include the \"Spiegelberg\" Lauter, the Bottwar and the Hörschbach; the Wieslauf flows to the Rems and the Lein, Fichtenberger Rot, Bibers, Bühler, Ohrn and Brettach flow to the Kocher."
+    },
+    {
+      "id": "s4",
+      "name": "Breitenauer See",
+      "quote": "In den Schwäbisch-Fränkischen Waldbergen liegen viele Seen, unter anderem: Breitenauer See, Buchhorner See, Diebachstausee, Ebnisee, Espachweiher, Finsterroter See, Fischbachsee, Fleckenbachsee, Glasweiher, Gleichener See, die Hammerschmiedeseen, Hochwasserrückhaltebecken Gnadental, Kreßbachsee, Neumühlsee, Orrotsee, Treibsee und Fornsbacher Waldsee.",
+      "english": "Many lakes are located in the Swabian-Franconian Forest Mountains, including: Breitenauer See, Buchhorner See, Diebach Reservoir, Ebnisee, Espachweiher, Finsterroter See, Fischbachsee, Fleckenbachsee, Glasweiher, Gleichener See, the Hammerschmiede lakes, Gnadental flood retention basin, Kreßbachsee, Neumühlsee, Orrotsee, Treibsee and Fornsbacher Waldsee."
+    },
+    {
+      "id": "s5",
+      "name": "Ebnisee",
+      "quote": "In den Schwäbisch-Fränkischen Waldbergen liegen viele Seen, unter anderem: Breitenauer See, Buchhorner See, Diebachstausee, Ebnisee, Espachweiher, Finsterroter See, Fischbachsee, Fleckenbachsee, Glasweiher, Gleichener See, die Hammerschmiedeseen, Hochwasserrückhaltebecken Gnadental, Kreßbachsee, Neumühlsee, Orrotsee, Treibsee und Fornsbacher Waldsee.",
+      "english": "Many lakes are located in the Swabian-Franconian Forest Mountains, including: Breitenauer See, Buchhorner See, Diebach Reservoir, Ebnisee, Espachweiher, Finsterroter See, Fischbachsee, Fleckenbachsee, Glasweiher, Gleichener See, the Hammerschmiede lakes, Gnadental flood retention basin, Kreßbachsee, Neumühlsee, Orrotsee, Treibsee and Fornsbacher Waldsee."
+    },
+    {
+      "id": "s6",
+      "name": "Fornsbacher Waldsee",
+      "quote": "In den Schwäbisch-Fränkischen Waldbergen liegen viele Seen, unter anderem: Breitenauer See, Buchhorner See, Diebachstausee, Ebnisee, Espachweiher, Finsterroter See, Fischbachsee, Fleckenbachsee, Glasweiher, Gleichener See, die Hammerschmiedeseen, Hochwasserrückhaltebecken Gnadental, Kreßbachsee, Neumühlsee, Orrotsee, Treibsee und Fornsbacher Waldsee.",
+      "english": "Many lakes are located in the Swabian-Franconian Forest Mountains, including: Breitenauer See, Buchhorner See, Diebach Reservoir, Ebnisee, Espachweiher, Finsterroter See, Fischbachsee, Fleckenbachsee, Glasweiher, Gleichener See, the Hammerschmiede lakes, Gnadental flood retention basin, Kreßbachsee, Neumühlsee, Orrotsee, Treibsee and Fornsbacher Waldsee."
+    },
+    {
+      "id": "s7",
+      "name": "Obergermanisch-Raetische Limes",
+      "quote": "Durch die Schwäbisch-Fränkischen Waldberge verläuft der von den Römern angelegte Obergermanisch-Raetische Limes, ein zeitweiliger nordöstlicher Schutzwall des Römischen Reiches vor den Germanen.",
+      "english": "The Upper Germanic-Rhaetian Limes, a temporary northeastern protective wall of the Roman Empire against the Germanic tribes built by the Romans, runs through the Swabian-Franconian Forest Mountains."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lakes and Roman History",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Peaks and Streams of the Forest",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "_text_sha": "ce52b7455463a9d7da6409953e3232e179c0f681528df8f843da1aa1a51b5619"
+}

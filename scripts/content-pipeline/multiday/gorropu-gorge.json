@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Gola di Gorropu",
+      "quote": "La Gola di Gorropu, con le sue pareti fino a oltre 500 m di altezza ed una larghezza che varia dai 4 metri nei punti più stretti per raggiungere alcune decine in altri, è considerato il canyon più profondo d'Italia e uno dei più profondi d'Europa.",
+      "english": "The Gorropu Gorge, with its walls up to over 500 m in height and a width that varies from 4 meters at the narrowest points to reaching several dozen in others, is considered the deepest canyon in Italy and one of the deepest in Europe."
+    },
+    {
+      "id": "s2",
+      "name": "Rio Flumineddu",
+      "quote": "La gola si è originata a seguito dell’apertura di una faglia e grazie all'intensa azione erosiva provocata dalle acque del Rio Flumineddu.",
+      "english": "The gorge originated following the opening of a fault and thanks to the intense erosive action caused by the waters of the Rio Flumineddu."
+    },
+    {
+      "id": "s3",
+      "name": "Grotta Su Palu",
+      "quote": "A monte, prima di entrare nella gola, le acque del rio Flumineddu sgorgano dalle rocce e creano delle vasche d'acqua naturali nelle quali è possibile trovare la trota sarda e soprattutto l'euprotto sardo: un endemismo sardo-corso considerato l'anfibio più raro d'Europa oltre al geotritone del Supramonte, presente nella vicina grotta Su Palu.",
+      "english": "Upstream, before entering the gorge, the waters of the Flumineddu river gush from the rocks and create natural water basins in which it is possible to find the Sardinian trout and especially the Sardinian brook salamander: a Sardinian-Corsican endemism considered the rarest amphibian in Europe besides the Supramonte cave salamander, present in the nearby Su Palu cave."
+    },
+    {
+      "id": "s4",
+      "name": "Passo Ghenna Sìlana",
+      "quote": "La più immediata via d'accesso a Gorropu è quella che parte nei pressi di Urzulei, con possibilità di parcheggiare l'auto direttamente presso il passo Ghenna Sìlana lungo la strada statale 125 all'altezza del km 183.",
+      "english": "The most immediate access route to Gorropu is the one that starts near Urzulei, with the possibility of parking the car directly at the Ghenna Sìlana pass along state road 125 at km 183."
+    },
+    {
+      "id": "s5",
+      "name": "Valle di Oddoene",
+      "quote": "Dal paese si imbocca in auto la strada che conduce fra i vigneti della valle di Oddoene, ai piedi del Supramonte.",
+      "english": "From the village, you take the road by car that leads through the vineyards of the Oddoene valley, at the foot of Supramonte."
+    },
+    {
+      "id": "s6",
+      "name": "Ponte di S'Abba Arva",
+      "quote": "Lasciata l'auto presso il ponte di S'Abba Arva (esiste un'omonima area di sosta attrezzata), si segue il sentiero che si snoda lungo il fiume, offrendo scorci panoramici di notevole bellezza e dando anche la possibilità di fare il bagno in uno dei laghetti naturali formati dal torrente.",
+      "english": "Having left the car near the S'Abba Arva bridge (there is an equipped rest area of the same name), you follow the path that winds along the river, offering panoramic views of remarkable beauty and also giving the possibility of swimming in one of the natural ponds formed by the stream."
+    },
+    {
+      "id": "s7",
+      "name": "Sentiero Sedda ar Bacas - Gorropu B-502",
+      "quote": "Il canyon può essere raggiunto percorrendo un percorso escursionistico (il sentiero Sedda ar Bacas - Gorropu B-502) esperto per il quale è necessaria l'adeguata attrezzatura e possibilmente una guida.",
+      "english": "The canyon can be reached by following a hiking route (the Sedda ar Bacas - Gorropu B-502 trail) for experts, for which adequate equipment and possibly a guide are necessary."
+    }
+  ],
+  "days": [
+    {
+      "title": "Canyon Depths and Hiking Trails",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Valleys, Rivers and Caves",
+      "stop_ids": [
+        "s3",
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

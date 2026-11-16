@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Terme di Saturnia",
+      "quote": "Le Terme di Saturnia costituiscono un parco termale di rilievo internazionale nella Maremma grossetana, formato da una sorgente idrotermale che sgorga ad una temperatura costante di 37,5 gradi.",
+      "english": "The Terme di Saturnia constitute a thermal park of international importance in the Grosseto Maremma, formed by a hydrothermal spring that gushes at a constant temperature of 37.5 degrees."
+    },
+    {
+      "id": "s2",
+      "name": "Cascate del Mulino",
+      "quote": "La sorgente, oltre a fornire il suddetto parco termale, alimenta, a valle e con una temperatura dell'acqua inferiore, anche le Cascate del Mulino, ad accesso libero.",
+      "english": "The spring, in addition to supplying the aforementioned thermal park, also feeds the Cascate del Mulino downstream, which have free access and a lower water temperature."
+    },
+    {
+      "id": "s3",
+      "name": "piscina sorgente",
+      "quote": "Il flusso d’acqua è di quasi 800 litri al secondo: ciò consente alla piscina sorgente e alle piscine del parco termale, un ricambio completo ogni 4 ore, per 6 volte al giorno, rendendola incontaminata.",
+      "english": "The water flow is almost 800 liters per second: this allows the source pool and the thermal park pools a complete replacement every 4 hours, 6 times a day, making it uncontaminated."
+    },
+    {
+      "id": "s4",
+      "name": "Saturnia",
+      "quote": "Il complesso si trova in località Follonata, nei pressi di Saturnia, nel comune di Manciano, in provincia di Grosseto.",
+      "english": "The complex is located in the locality of Follonata, near Saturnia, in the municipality of Manciano, in the province of Grosseto."
+    },
+    {
+      "id": "s5",
+      "name": "monte Amiata",
+      "quote": "L’acqua sorgiva delle terme di Saturnia compie un percorso nelle profondità della terra del monte Amiata della durata di 40 anni.",
+      "english": "The spring water of the Saturnia thermal baths completes a journey through the depths of the earth of Mount Amiata lasting 40 years."
+    },
+    {
+      "id": "s6",
+      "name": "resort",
+      "quote": "Nel 1919 i Ciacci costruiscono il primo albergo vero e proprio andando a delineare l’attuale veste del resort Terme di Saturnia.",
+      "english": "In 1919 the Ciacci family built the first real hotel, outlining the current appearance of the Terme di Saturnia resort."
+    },
+    {
+      "id": "s7",
+      "name": "via Clodia",
+      "quote": "I viaggiatori vi sostavano percorrendo la via Clodia e i Patrizi romani la sceglievano per le loro vacanze salutari.",
+      "english": "Travelers stopped there while traveling along the Via Clodia and Roman Patricians chose it for their healthy holidays."
+    }
+  ],
+  "days": [
+    {
+      "title": "Thermal Springs and Historic Resort",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "Natural Waterfalls and Ancient Routes",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Geological Origins",
+      "stop_ids": [
+        "s5"
+      ]
+    }
+  ]
+}

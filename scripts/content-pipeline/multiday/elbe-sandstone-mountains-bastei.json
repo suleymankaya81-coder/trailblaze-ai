@@ -1,0 +1,99 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Bastei",
+      "quote": "Die Bastei (305,4 m ü. NHN) ist eine Felsformation mit Aussichtsplattform in der Sächsischen Schweiz am rechten Ufer der Elbe auf dem Gebiet der Gemeinde Lohmen zwischen dem Kurort Rathen und Stadt Wehlen.",
+      "english": "The Bastei (305.4 m above sea level) is a rock formation with a viewing platform in Saxon Switzerland on the right bank of the Elbe in the municipality of Lohmen between the health resort of Rathen and the town of Wehlen."
+    },
+    {
+      "id": "s2",
+      "name": "Wehlgrund",
+      "quote": "1814 ließ der Rathener Unterförster Auerswald vom Wehlgrund aus durch eine „Vogeltelle“ genannte Schlucht einen Aufgang mit 487 Stufen, damals die längste Treppe in Sachsen, anlegen.",
+      "english": "In 1814, the Rathen sub-forester Auerswald had an ascent with 487 steps, at that time the longest staircase in Saxony, created from the Wehlgrund through a gorge called 'Vogeltelle'."
+    },
+    {
+      "id": "s3",
+      "name": "Vogeltelle",
+      "quote": "1814 ließ der Rathener Unterförster Auerswald vom Wehlgrund aus durch eine „Vogeltelle“ genannte Schlucht einen Aufgang mit 487 Stufen, damals die längste Treppe in Sachsen, anlegen.",
+      "english": "In 1814, the Rathen sub-forester Auerswald had an ascent with 487 steps, at that time the longest staircase in Saxony, created from the Wehlgrund through a gorge called 'Vogeltelle'."
+    },
+    {
+      "id": "s4",
+      "name": "Basteibrücke",
+      "quote": "Unter dem Namen „Basteibrücke“ entstand zudem eine erste hölzerne, über die bis zu 40 m tiefen Klüfte der „Mardertelle“ gebaute Brücke, welche die Bastei vom vorgelagerten Felsriff mit den Felsen Steinschleuder und Neurathener Felsentor verband.",
+      "english": "Under the name 'Basteibrücke', an initial wooden bridge was built over the up to 40 m deep crevices of the 'Mardertelle', which connected the Bastei with the offshore rock reef and the Steinschleuder and Neurathener Felsentor rocks."
+    },
+    {
+      "id": "s5",
+      "name": "Mardertelle",
+      "quote": "Sie hat eine Länge von 76,5 m und überspannt mit sieben Bögen die „Mardertelle“.",
+      "english": "It has a length of 76.5 m and spans the 'Mardertelle' with seven arches."
+    },
+    {
+      "id": "s6",
+      "name": "Steinschleuder",
+      "quote": "Unter dem Namen „Basteibrücke“ entstand zudem eine erste hölzerne, über die bis zu 40 m tiefen Klüfte der „Mardertelle“ gebaute Brücke, welche die Bastei vom vorgelagerten Felsriff mit den Felsen Steinschleuder und Neurathener Felsentor verband.",
+      "english": "Under the name 'Basteibrücke', an initial wooden bridge was built over the up to 40 m deep crevices of the 'Mardertelle', which connected the Bastei with the offshore rock reef and the Steinschleuder and Neurathener Felsentor rocks."
+    },
+    {
+      "id": "s7",
+      "name": "Neurathener Felsentor",
+      "quote": "Unter dem Namen „Basteibrücke“ entstand zudem eine erste hölzerne, über die bis zu 40 m tiefen Klüfte der „Mardertelle“ gebaute Brücke, welche die Bastei vom vorgelagerten Felsriff mit den Felsen Steinschleuder und Neurathener Felsentor verband.",
+      "english": "Under the name 'Basteibrücke', an initial wooden bridge was built over the up to 40 m deep crevices of the 'Mardertelle', which connected the Bastei with the offshore rock reef and the Steinschleuder and Neurathener Felsentor rocks."
+    },
+    {
+      "id": "s8",
+      "name": "Eisenbahnergründel",
+      "quote": "Die zum Bau vorgesehene Schlucht trägt noch heute den Namen Eisenbahnergründel.",
+      "english": "The gorge intended for construction still bears the name Eisenbahnergründel today."
+    },
+    {
+      "id": "s9",
+      "name": "Schweizerhaus",
+      "quote": "In Nachbarschaft der Gaststätte entstand um 1905 das heute noch bestehende Schweizerhaus im Schweizerstil.",
+      "english": "The Schweizerhaus, which still exists today and was built in the Swiss style, was constructed in the vicinity of the restaurant around 1905."
+    },
+    {
+      "id": "s10",
+      "name": "Kanapee",
+      "quote": "Die klassische Basteiaussicht kann von den benachbarten Aussichtspunkten am Kanapee und am Tiedgestein in ähnlicher Perspektive erlebt werden.",
+      "english": "The classic Bastei view can be experienced from a similar perspective from the neighboring viewpoints at Kanapee and Tiedgestein."
+    },
+    {
+      "id": "s11",
+      "name": "Tiedgestein",
+      "quote": "Die klassische Basteiaussicht kann von den benachbarten Aussichtspunkten am Kanapee und am Tiedgestein in ähnlicher Perspektive erlebt werden.",
+      "english": "The classic Bastei view can be experienced from a similar perspective from the neighboring viewpoints at Kanapee and Tiedgestein."
+    }
+  ],
+  "days": [
+    {
+      "title": "Bastei Core and Main Bridge",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5",
+        "s9"
+      ]
+    },
+    {
+      "title": "Historic Ascents and Gorges",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s8"
+      ]
+    },
+    {
+      "title": "Rock Formations and Viewpoints",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s10",
+        "s11"
+      ]
+    }
+  ],
+  "_text_sha": "b6792f7252091e7fa79045ae5e31f240fda62777d475b7b73e74047e50b4efe1"
+}

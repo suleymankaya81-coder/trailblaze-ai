@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "obere Fälle",
+      "quote": "Die oberen Fälle mit drei Hauptstufen fallen von 872 m auf 856 m ü. NHN.",
+      "english": "The upper falls with three main steps fall from 872 m to 856 m above sea level."
+    },
+    {
+      "id": "s2",
+      "name": "Hauptfälle",
+      "quote": "Nach einem steilen Sturzbachabschnitt folgen die bekannten siebenstufigen Hauptfälle, die auf einer Laufstrecke von ca. 230 Metern von etwa 805 m auf 713 m ü. NHN abstürzen.",
+      "english": "After a steep torrent section follow the well-known seven-stage main falls, which plunge on a stretch of approx. 230 meters from about 805 m to 713 m above sea level."
+    },
+    {
+      "id": "s3",
+      "name": "Bergsee",
+      "quote": "Der Triberger Wasserfallkessel liegt, zusammen mit dem benachbarten Bergsee, in einer Reihe eiszeitlicher Karformen, die in typischer Weise in den nordöstlichen Abhang der Schönwalder Hochfläche eingetieft sind.",
+      "english": "The Triberg waterfall basin lies, together with the neighboring mountain lake, in a row of ice-age cirque forms that are typically recessed into the northeastern slope of the Schönwald plateau."
+    },
+    {
+      "id": "s4",
+      "name": "Scheffelplatz",
+      "quote": "Sie haben fünf Eingänge: im Stadtzentrum direkt an der B 500, am Bergsee, am Scheffelplatz, auf der Adelheid und hinter der Asklepios-Klinik.",
+      "english": "They have five entrances: in the city center directly on the B 500, at the Bergsee, at Scheffelplatz, on the Adelheid and behind the Asklepios Clinic."
+    },
+    {
+      "id": "s5",
+      "name": "Adelheid",
+      "quote": "Sie haben fünf Eingänge: im Stadtzentrum direkt an der B 500, am Bergsee, am Scheffelplatz, auf der Adelheid und hinter der Asklepios-Klinik.",
+      "english": "They have five entrances: in the city center directly on the B 500, at the Bergsee, at Scheffelplatz, on the Adelheid and behind the Asklepios Clinic."
+    },
+    {
+      "id": "s6",
+      "name": "Wasserfallkessel",
+      "quote": "Die karartigen Formen einschließlich des Wasserfallkessels haben ihre letzte Überformung wahrscheinlich noch im Hochglazial der Würm-Eiszeit erhalten, die tiefer liegenden Talstufen nur in älteren, ausgedehnteren Vereisungen.",
+      "english": "The cirque-like forms including the waterfall basin likely received their final shaping during the high glacial period of the Würm ice age, while the lower valley steps were shaped only in older, more extensive glaciations."
+    },
+    {
+      "id": "s7",
+      "name": "Stadtzentrum",
+      "quote": "Sie haben fünf Eingänge: im Stadtzentrum direkt an der B 500, am Bergsee, am Scheffelplatz, auf der Adelheid und hinter der Asklepios-Klinik.",
+      "english": "They have five entrances: in the city center directly on the B 500, at the Bergsee, at Scheffelplatz, on the Adelheid and behind the Asklepios Clinic."
+    }
+  ],
+  "days": [
+    {
+      "title": "Cascades and Basin",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s6"
+      ]
+    },
+    {
+      "title": "Lake and Mountain Entrances",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s7"
+      ]
+    }
+  ]
+}

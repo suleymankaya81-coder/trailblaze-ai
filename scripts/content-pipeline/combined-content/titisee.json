@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Baden Wurttemberg",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Titisee"
+        "Titisee",
+        "Uferpromenade"
       ],
       "seo_title": "Titisee Visit Guide"
     },
@@ -32,16 +33,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Titisee",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Lake Activities and Promenade",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
                 "name": "Titisee",
-                "stop_id": "titisee",
-                "detail": "The Titisee (German pronunciation: [ˈtɪtizeː]) is a lake in the southern Black Forest in Baden-Württemberg. It covers an area of 1.3 km2 (320 acres) and is an average of 20 m (66 ft) deep. It owes its formation to the Feldberg glacier, the moraines of which were formed in the Pleistocene epoch and nowadays form the shores of the lake. The lake's outflow, at 840 m (2,760 ft) above sea level, is the River Gutach, which merges with the Haslach stream below Kappel to form the Wutach. The waters of the Titisee thus drain eventually into the Upper Rhine between Tiengen and Waldshut. On the north shore lies the spa town of the same name, today a part of the municipality of Titisee-Neustadt."
+                "stop_id": "titisee--s1",
+                "detail": "The Titisee is a lake in the southern Black Forest in Baden-Württemberg."
+              },
+              {
+                "name": "Uferpromenade",
+                "stop_id": "titisee--s4",
+                "detail": "Schools of common roach and chub are found increasingly at the outlet of the lakeside promenade, where passers-by feed water birds with bread."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Titisee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Northern Shore and Surrounding Valleys",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Jugendherberge Veltishof",
+                "stop_id": "titisee--s5",
+                "detail": "The Veltishof youth hostel is located at the northwestern end."
+              },
+              {
+                "name": "Bärental",
+                "stop_id": "titisee--s6",
+                "detail": "It is fed by the Seebach flowing through the Bärental valley, which originates at the Seebuck, on the eastern slope of the Feldberg massif, from the Feldsee."
+              },
+              {
+                "name": "Feldsee",
+                "stop_id": "titisee--s7",
+                "detail": "The same is said about the Feldsee."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Titisee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +108,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Titisee"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Titisee"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:51:59.381530+00:00"
       }
     }
   }

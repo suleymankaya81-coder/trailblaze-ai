@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "massiccio del Gran Paradiso",
+      "quote": "Il parco nazionale Gran Paradiso (in francese parc national du Grand-Paradis) è il parco nazionale più antico d'Italia, istituito il 3 dicembre del 1922, situato a cavallo delle regioni Valle d'Aosta e Piemonte, attorno al massiccio del Gran Paradiso, gestito dall'Ente Parco Nazionale Gran Paradiso, con sede a Torino.",
+      "english": "The Gran Paradiso National Park (in French parc national du Grand-Paradis) is Italy's oldest national park, established on December 3, 1922, located across the Valle d'Aosta and Piedmont regions, around the Gran Paradiso massif, managed by the Gran Paradiso National Park Authority, based in Turin."
+    },
+    {
+      "id": "s2",
+      "name": "Fenêtre de Champorcher",
+      "quote": "Partì dalla valle di Champorcher, valicò a cavallo la Fenêtre de Champorcher e raggiunse Cogne; lungo questo tragitto, uccise sei camosci ed uno stambecco.",
+      "english": "He left from the Champorcher valley, crossed the Fenêtre de Champorcher on horseback and reached Cogne; along this route, he killed six chamois and an ibex."
+    },
+    {
+      "id": "s3",
+      "name": "Col du Loson",
+      "quote": "Si snodano in buona parte oltre i duemila metri ed in taluni casi superano i tremila (Col du Loson 3296 m e Colle della Porta 3002 m).",
+      "english": "They wind mostly over two thousand meters and in some cases exceed three thousand (Col du Loson 3296 m and Colle della Porta 3002 m)."
+    },
+    {
+      "id": "s4",
+      "name": "Colle della Porta",
+      "quote": "Il tratto meglio conservato si trova in Valle Orco; dal Colle del Nivolet, dopo un primo tratto a mezza costa, la mulattiera reale scavalca i colli della Terra e della Porta, tocca la casa di caccia del Gran Piano (recuperata di recente come rifugio) per poi scendere al paese di Noasca.",
+      "english": "The best-preserved section is found in the Orco Valley; from the Nivolet Pass, after an initial mid-slope stretch, the royal mule track crosses the Terra and Porta passes, reaches the Gran Piano hunting lodge (recently restored as a refuge) and then descends to the village of Noasca."
+    },
+    {
+      "id": "s5",
+      "name": "Colle del Nivolet",
+      "quote": "Il percorso maggiormente battuto dal Re durante i suoi tours del Gran Paradiso era il seguente: partiva da Champorcher, valicava la Fenêtre de Champorcher (2828 m), scendeva a Cogne, raggiungeva Valsavarenche passando dal Col du Loson (3296 m), saliva al Colle del Nivolet (2612 m) e da qui si inoltrava nel territorio canavesano passando sopra Ceresole Reale per poi scendere fino al paese di Noasca (1058 m) lungo il vallone di Ciamosseretto (come dice il nome, ricchissimo di camosci).",
+      "english": "The route most traveled by the King during his tours of the Gran Paradiso was as follows: he started from Champorcher, crossed the Fenêtre de Champorcher (2828 m), descended to Cogne, reached Valsavarenche via the Col du Loson (3296 m), climbed to the Nivolet Pass (2612 m) and from here entered the Canavese territory passing above Ceresole Reale to then descend to the village of Noasca (1058 m) along the Ciamosseretto valley (as the name suggests, very rich in chamois)."
+    },
+    {
+      "id": "s6",
+      "name": "rifugio Vittorio Sella",
+      "quote": "Le case di caccia maggiormente utilizzate furono quelle di Dondena (2186 m), del Lauson (2584 m, oggi rifugio Vittorio Sella), di Orvieille e del Gran Piano di Noasca (anche quest'ultima recentemente recuperata come rifugio).",
+      "english": "The most frequently used hunting lodges were those of Dondena (2186 m), Lauson (2584 m, today the Vittorio Sella refuge), Orvieille, and the Gran Piano di Noasca (the latter also recently restored as a refuge)."
+    },
+    {
+      "id": "s7",
+      "name": "vallone di Ciamosseretto",
+      "quote": "Il percorso maggiormente battuto dal Re durante i suoi tours del Gran Paradiso era il seguente: partiva da Champorcher, valicava la Fenêtre de Champorcher (2828 m), scendeva a Cogne, raggiungeva Valsavarenche passando dal Col du Loson (3296 m), saliva al Colle del Nivolet (2612 m) e da qui si inoltrava nel territorio canavesano passando sopra Ceresole Reale per poi scendere fino al paese di Noasca (1058 m) lungo il vallone di Ciamosseretto (come dice il nome, ricchissimo di camosci).",
+      "english": "The route most traveled by the King during his tours of the Gran Paradiso was as follows: he started from Champorcher, crossed the Fenêtre de Champorcher (2828 m), descended to Cogne, reached Valsavarenche via the Col du Loson (3296 m), climbed to the Nivolet Pass (2612 m) and from here entered the Canavese territory passing above Ceresole Reale to then descend to the village of Noasca (1058 m) along the Ciamosseretto valley (as the name suggests, very rich in chamois)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Eastern Peaks and Passes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "High Refuges and Trails",
+      "stop_ids": [
+        "s6",
+        "s4"
+      ]
+    },
+    {
+      "title": "Western Valleys and Passes",
+      "stop_ids": [
+        "s5",
+        "s7"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "alta valle del Cedra",
+      "quote": "Compreso nei comuni di Corniglio, Monchio delle Corti, Tizzano Val Parma e Neviano degli Arduini tutela l'alta valle del Cedra, l'alta Val Bratica e alcune aree dell'alta Val Parma.",
+      "english": "Included in the municipalities of Corniglio, Monchio delle Corti, Tizzano Val Parma and Neviano degli Arduini, it protects the upper Cedra valley, the upper Bratica valley and some areas of the upper Parma valley."
+    },
+    {
+      "id": "s2",
+      "name": "alta Val Bratica",
+      "quote": "Compreso nei comuni di Corniglio, Monchio delle Corti, Tizzano Val Parma e Neviano degli Arduini tutela l'alta valle del Cedra, l'alta Val Bratica e alcune aree dell'alta Val Parma.",
+      "english": "Included in the municipalities of Corniglio, Monchio delle Corti, Tizzano Val Parma and Neviano degli Arduini, it protects the upper Cedra valley, the upper Bratica valley and some areas of the upper Parma valley."
+    },
+    {
+      "id": "s3",
+      "name": "Parco del Monte Fuso",
+      "quote": "Nel 2019 una parte del territorio del Comune di Neviano degli Arduini (PR), tra cui il Parco del Monte Fuso, viene annesso al Parco dei Cento Laghi con la legge regionale n.13/2019, art. 10 che modifica la L.R. n. 46/1995.",
+      "english": "In 2019 a part of the territory of the Municipality of Neviano degli Arduini (PR), including the Monte Fuso Park, was annexed to the Parco dei Cento Laghi with regional law no. 13/2019, art. 10 which modifies L.R. no. 46/1995."
+    },
+    {
+      "id": "s4",
+      "name": "Lago Santo parmense",
+      "quote": "Lago Santo parmense",
+      "english": "Parmese Lake Santo"
+    },
+    {
+      "id": "s5",
+      "name": "Lago Ballano",
+      "quote": "Lago Ballano",
+      "english": "Lake Ballano"
+    },
+    {
+      "id": "s6",
+      "name": "Lago Verde",
+      "quote": "Lago Verde",
+      "english": "Lake Verde"
+    },
+    {
+      "id": "s7",
+      "name": "Lago Squincio",
+      "quote": "Lago Squincio",
+      "english": "Lake Squincio"
+    }
+  ],
+  "days": [
+    {
+      "title": "Glacial Lakes of the Upper Valleys",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Valleys and Mount Fuso",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ]
+}

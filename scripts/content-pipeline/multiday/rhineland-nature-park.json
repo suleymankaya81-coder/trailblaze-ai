@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kottenforst",
+      "quote": "Den südöstlichen Teil des Naturparks bildet der Kottenforst mit einer Fläche von etwa 40 km².",
+      "english": "The southeastern part of the nature park is formed by the Kottenforst with an area of about 40 km²."
+    },
+    {
+      "id": "s2",
+      "name": "Schloss Herzogsfreude",
+      "quote": "Der Naturpark Kottenforst ist von einem spinnennetzartigen Wegesystem durchzogen, das auf das ehemalige Schloss Herzogsfreude in Röttgen ausgerichtet ist.",
+      "english": "The Kottenforst nature park is criss-crossed by a spider-web-like path system aligned with the former Herzogsfreude Castle in Röttgen."
+    },
+    {
+      "id": "s3",
+      "name": "Jägerhäuschen",
+      "quote": "Als Baudenkmal dieser Jagden ist das Jägerhäuschen erhalten geblieben.",
+      "english": "The Jägerhäuschen (hunting lodge) has been preserved as a architectural monument of these hunts."
+    },
+    {
+      "id": "s4",
+      "name": "Glessener Höhe",
+      "quote": "Die nun höchste Erhebung der Ville ist mit 205,8 m die Glessener Höhe.",
+      "english": "The now highest elevation of the Ville is the Glessener Höhe at 205.8 m."
+    },
+    {
+      "id": "s5",
+      "name": "Schloss Augustusburg",
+      "quote": "Teile des Vorgebirges, wie das Naturschutzgebiet um die Brühler Schlösser Augustusburg und Falkenlust sind, obwohl das Vorgebirge sonst intensiv landwirtschaftlich genutzt wird, Teil des Naturparks.",
+      "english": "Parts of the Vorgebirge, such as the nature reserve around the Brühl palaces Augustusburg and Falkenlust, are part of the nature park, although the Vorgebirge is otherwise used for intensive agriculture."
+    },
+    {
+      "id": "s6",
+      "name": "Liblarer See",
+      "quote": "Seen-Runde (17,7 km), rund um Liblarer See, Bleibtreu See und Heider Bergsee, beiderseits der Luxemburger Straße.",
+      "english": "Seen-Runde (17.7 km), around Liblarer See, Bleibtreu See and Heider Bergsee, on both sides of Luxemburger Straße."
+    },
+    {
+      "id": "s7",
+      "name": "Schloss Türnich",
+      "quote": "So wird zwischen Schloss Gymnich, Gymnicher Mühle und Schloss Türnich eine 5 km lange Lindenallee angepflanzt.",
+      "english": "Thus, a 5 km long linden avenue is being planted between Gymnich Castle, Gymnich Mill and Türnich Castle."
+    }
+  ],
+  "days": [
+    {
+      "title": "Southern Forests and Royal History",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Heights and Palatial Estates",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Lakes and Riverside Castles",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "3a8669194cac633a97380aedf24cc3f6b741cfb25f7d96163b00d0fd396b0de7"
+}

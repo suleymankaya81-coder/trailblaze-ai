@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Complesso monumentale di Santa Lucia",
+      "quote": "Il parco naturale regionale della Gola della Rossa e di Frasassi è un'area naturale protetta delle Marche e ha la sua sede operativa all'interno del Complesso monumentale di Santa Lucia, presso Serra San Quirico.",
+      "english": "The Gola della Rossa e di Frasassi regional natural park is a protected natural area of the Marche and has its operational headquarters inside the monumental complex of Santa Lucia, near Serra San Quirico."
+    },
+    {
+      "id": "s2",
+      "name": "Grotte di Frasassi",
+      "quote": "Esteso per circa 9170 ettari sul versante appenninico della provincia di Ancona, il parco interessa direttamente i comuni di Serra San Quirico, Genga (con le note Grotte di Frasassi), Arcevia, Cerreto d'Esi e Fabriano, un territorio ancora immerso in una natura integra e rigogliosa.",
+      "english": "Extending for about 9170 hectares on the Apennine slope of the province of Ancona, the park directly affects the municipalities of Serra San Quirico, Genga (with the well-known Frasassi Caves), Arcevia, Cerreto d'Esi and Fabriano, a territory still immersed in an intact and lush nature."
+    },
+    {
+      "id": "s3",
+      "name": "eremo di Grottafucile",
+      "quote": "All'interno del parco si trova anche l'eremo di Grottafucile, affacciato sulla Gola della Rossa, presso il borgo di Castelletta.",
+      "english": "Inside the park is also the hermitage of Grottafucile, overlooking the Gola della Rossa, near the village of Castelletta."
+    },
+    {
+      "id": "s4",
+      "name": "Gola della Rossa",
+      "quote": "La bellezza della Gola della Rossa è minacciata dalla continua apertura di cave, l'impatto delle quali sembra non essere abbastanza considerato dagli ambienti politici locali.",
+      "english": "The beauty of the Gola della Rossa is threatened by the continuous opening of quarries, the impact of which seems not to be sufficiently considered by local political circles."
+    },
+    {
+      "id": "s5",
+      "name": "Casa del Parco",
+      "quote": "Sempre a Castelletta si trova la Casa del Parco, isituita nel 2003.",
+      "english": "Also in Castelletta is the Park House, established in 2003."
+    },
+    {
+      "id": "s6",
+      "name": "tempio del Valadier",
+      "quote": "Altri punti di interesse sono il celebre tempio del Valadier e l'eremo di Santa Maria Infra Saxa, lungo la Gola di Frasassi, presso Genga.",
+      "english": "Other points of interest are the famous Valadier temple and the hermitage of Santa Maria Infra Saxa, along the Frasassi Gorge, near Genga."
+    },
+    {
+      "id": "s7",
+      "name": "eremo di Santa Maria Infra Saxa",
+      "quote": "Altri punti di interesse sono il celebre tempio del Valadier e l'eremo di Santa Maria Infra Saxa, lungo la Gola di Frasassi, presso Genga.",
+      "english": "Other points of interest are the famous Valadier temple and the hermitage of Santa Maria Infra Saxa, along the Frasassi Gorge, near Genga."
+    }
+  ],
+  "days": [
+    {
+      "title": "Headquarters and Genga Caves",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Castelletta Village and Red Gorge",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Temples and Hermitages of Frasassi",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

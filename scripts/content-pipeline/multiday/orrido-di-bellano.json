@@ -1,0 +1,46 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Orrido di Bellano",
+      "quote": "L'Orrido di Bellano è una cascata situata in una gola nel comune di Bellano, in provincia di Lecco.",
+      "english": "The Orrido di Bellano is a waterfall located in a gorge in the municipality of Bellano, in the province of Lecco."
+    },
+    {
+      "id": "s2",
+      "name": "passerella",
+      "quote": "È visitabile grazie alla passerella ancorata alle pareti rocciose che percorre l'intera gola munita di impianto di illuminazione.",
+      "english": "It can be visited thanks to the footbridge anchored to the rocky walls that runs through the entire gorge equipped with a lighting system."
+    },
+    {
+      "id": "s3",
+      "name": "scalinata in marmo rosa",
+      "quote": "L'ingresso all'Orrido fu costruito a metà del 1700 con un'ampia scalinata in marmo rosa e, successivamente, le cancellate in stile liberty.",
+      "english": "The entrance to the Orrido was built in the mid-1700s with a wide pink marble staircase and, subsequently, the Art Nouveau gates."
+    },
+    {
+      "id": "s4",
+      "name": "gallerie",
+      "quote": "La tradizione vuole che qui giaccia il valoroso guerriero Taino, sepolto col suo tesoro e che le gallerie, che si diramano verso Bellano furono usate anche durante l'occupazione austriaca per evitare le ronde durante il coprifuoco.",
+      "english": "Tradition has it that the brave warrior Taino lies here, buried with his treasure, and that the tunnels, which branch out towards Bellano, were also used during the Austrian occupation to avoid patrols during the curfew."
+    },
+    {
+      "id": "s5",
+      "name": "Cà del Diavol",
+      "quote": "All'entrata dell'Orrido si trova una torre esagonale alta quattro piani, chiamata “Cà del Diavol” (Casa del Diavolo), a pianta irregolare, con alcune finestre a ringhiera e una scala a chiocciola interna.",
+      "english": "At the entrance of the Orrido stands a four-story hexagonal tower called “Cà del Diavol” (Devil's House), with an irregular layout, some railing windows, and an internal spiral staircase."
+    }
+  ],
+  "days": [
+    {
+      "title": "Bellano Gorge Exploration",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    }
+  ]
+}

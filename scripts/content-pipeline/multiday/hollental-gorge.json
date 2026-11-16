@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Höllentalklamm",
+      "quote": "Markant ist der Einschnitt der Höllentalklamm, die sich zwischen hohen Felswänden hindurch zwängt.",
+      "english": "The cut of the Höllentalklamm is striking, squeezing through between high rock walls."
+    },
+    {
+      "id": "s2",
+      "name": "Höllentalklamm-Museum",
+      "quote": "Seit dem Jahr 2011 besteht hier zudem die Möglichkeit, im Höllentalklamm-Museum die Geschichte der Schlucht näher zu erfahren.",
+      "english": "Since 2011, there has also been the opportunity to learn more about the history of the gorge in the Höllentalklamm-Museum."
+    },
+    {
+      "id": "s3",
+      "name": "Höllentaleingangshütte",
+      "quote": "Vom Grainauer Ortsteil Hammersbach führt ein rund drei Kilometer langer und etwa 300 Höhenmeter ansteigender Fußweg durch ein immer enger werdendes Tal zur Höllentaleingangshütte und zum gebührenpflichtigen Weg durch die Klamm.",
+      "english": "From the Hammersbach district of Grainau, a footway about three kilometers long with an ascent of approximately 300 meters in elevation leads through an increasingly narrowing valley to the Höllentaleingangshütte and the toll path through the gorge."
+    },
+    {
+      "id": "s4",
+      "name": "Stangensteig",
+      "quote": "Kurz vor der Hütte zweigt der kostenfreie, aber etwas beschwerlichere und ½ bis ¾ Stunden längere Stangensteig ab.",
+      "english": "Shortly before the hut, the free but somewhat more arduous and ½ to ¾ hour longer Stangensteig branches off."
+    },
+    {
+      "id": "s5",
+      "name": "Höllentalangerhütte",
+      "quote": "Die Höllentalangerhütte (1387 m) ist Übernachtungsdomizil für die Bergsteiger, die am Folgetag durch das Höllental und über den Höllentalferner auf Deutschlands höchsten Gipfel steigen wollen.",
+      "english": "The Höllentalangerhütte (1387 m) is an overnight domicile for mountaineers who want to climb Germany's highest peak the following day via the Höllental and the Höllentalferner."
+    },
+    {
+      "id": "s6",
+      "name": "Höllentalferner",
+      "quote": "Auch sicherte die Sektion den Weg von der Randkluft des Höllentalferners bis zum Gipfel ebenfalls mit Stahlseilen.",
+      "english": "The section also secured the path from the rimschrund of the Höllentalferner to the summit with steel cables."
+    },
+    {
+      "id": "s7",
+      "name": "Brett",
+      "quote": "Dieser Abschnitt ist mittlerweile als das „Brett“ bekannt.",
+      "english": "This section is now known as the \"Brett\"."
+    },
+    {
+      "id": "s8",
+      "name": "Knappenhäusern",
+      "quote": "So wandten sich die zwei nach Südosten und gelangten über das Mitter- und Mathaisenkar zu den Knappenhäusern.",
+      "english": "So the two turned southeast and reached the Knappenhäuser via the Mitter- and Mathaisenkar."
+    }
+  ],
+  "days": [
+    {
+      "title": "Gorge Exploration and History",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "High Trails and Mining Heritage",
+      "stop_ids": [
+        "s4",
+        "s8"
+      ]
+    },
+    {
+      "title": "Alpine Ascent toward the Peak",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "7b653526b08a6667e6d0e0bfa61c74682c1cf35c14bc7eaa13c93f5cda6b65b3"
+}

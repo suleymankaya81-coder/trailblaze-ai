@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Emilia Romagna",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Appennino Tosco-Emiliano National Park"
+        "Abetina Reale",
+        "Lago Santo parmense"
       ],
       "seo_title": "Appennino Tosco-Emiliano National Park Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Appennino Tosco-Emiliano National Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Lakes and Forests of the Ridge",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Appennino Tosco-Emiliano National Park",
-                "stop_id": "appennino-tosco-emiliano-national-park",
-                "detail": "Appennino Tosco-Emiliano National Park is a state-held natural preserve in Northern and central Italy, located in the heart of an area noted for natural features and for the local quality products and handicrafts. It was founded in [dated source], and is included in the provinces of Massa and Carrara, Lucca, Reggio Emilia and Parma."
+                "name": "Abetina Reale",
+                "stop_id": "appennino-tosco-emiliano-national-park--s6",
+                "detail": "The Abetina Reale forest develops on the right side of the Upper Dolo Valley up to the Apennine ridge on the border with Garfagnana."
+              },
+              {
+                "name": "Lago Santo parmense",
+                "stop_id": "appennino-tosco-emiliano-national-park--s7",
+                "detail": "Some paths allow you to reach Monte Orsaro, Monte Marmagna and the Parmense Holy Lake, crossing blueberry moors and stopping in the refuges and bivouacs in the area: the Mattei Refuge, the Mariotti Refuge and the Tifoni Hut."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Appennino Tosco-Emiliano National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Iconic Rocks and Meadows",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Pietra di Bismantova",
+                "stop_id": "appennino-tosco-emiliano-national-park--s4",
+                "detail": "Further down, on the Emilian slope, the Pietra di Bismantova dominates the landscape with its vertical walls alongside the Secchia river."
+              },
+              {
+                "name": "Logarghena",
+                "stop_id": "appennino-tosco-emiliano-national-park--s5",
+                "detail": "In spring, daffodils whiten the sunniest meadows of the Park and offer spectacular panoramas especially in the wide meadow expanses of Logarghena, at an altitude of 1,000 m, on Monte Braiola and Monte Marinella above Sassalbo."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Appennino Tosco-Emiliano National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Appennino_Tosco-Emiliano_National_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_nazionale_dell%27Appennino_Tosco-Emiliano"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:52:47.121804+00:00"
       }
     }
   }

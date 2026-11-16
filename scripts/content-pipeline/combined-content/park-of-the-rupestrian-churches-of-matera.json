@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Basilicata",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco della Murgia Materana"
+        "Murgia Timone",
+        "Jazzo Gattini"
       ],
       "seo_title": "Park of the Rupestrian Churches of Matera Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Park of the Rupestrian Churches of Matera",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Heart of the Park and Visitor Centers",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco della Murgia Materana",
-                "stop_id": "park-of-the-rupestrian-churches-of-matera",
-                "detail": "The natural archaeological park of the Rocky Churches of Materano, also called the park of the Materana Murgia, is a protected natural area of the Basilicata established by Regional Law no. 11 of 3 April 1990. Since [dated source] the definition \"Sassi di Matera\" in the list of UNESCO World Heritage Sites has been expanded including \"The Sassi and the Park of the Rocky Churches of Matera\"."
+                "name": "Murgia Timone",
+                "stop_id": "park-of-the-rupestrian-churches-of-matera--s2",
+                "detail": "A path connects the two sides of the Gravina di Matera, from the Sassi to the Murgia Timone plateau, the heart of the park; the path reaches the bottom of the Gravina and crosses it with a Tibetan bridge."
+              },
+              {
+                "name": "Jazzo Gattini",
+                "stop_id": "park-of-the-rupestrian-churches-of-matera--s4",
+                "detail": "Visitor center and environmental education center of Jazzo Gattini and Masseria Radogna - Murgia Timone - Matera."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Park of the Rupestrian Churches of Matera before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Monastic Heritage of Montescaglioso",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "abbazia benedettina di San Michele Arcangelo",
+                "stop_id": "park-of-the-rupestrian-churches-of-matera--s6",
+                "detail": "Montescaglioso visitor center - at the Benedictine abbey of San Michele Arcangelo."
+              },
+              {
+                "name": "monastero della SS. Concezione",
+                "stop_id": "park-of-the-rupestrian-churches-of-matera--s7",
+                "detail": "Montescaglioso environmental education center – at the monastery of the Most Holy Conception."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Park of the Rupestrian Churches of Matera before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_della_Murgia_Materana"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_della_Murgia_Materana"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:07:10.847050+00:00"
       }
     }
   }

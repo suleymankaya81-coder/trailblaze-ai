@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Donnerskirchen",
+      "quote": "Im Flussdelta bei Donnerskirchen hat der Schilfgürtel des Sees mit fünf Kilometern seine größte Ausdehnung.",
+      "english": "In the river delta near Donnerskirchen, the lake's reed belt reaches its greatest width of five kilometers."
+    },
+    {
+      "id": "s2",
+      "name": "Ludlloch (Bärenhöhle)",
+      "quote": "Im Naturpark gelegene Naturdenkmäler sind das Ludlloch (Bärenhöhle) in Winden am See, eine Winterlinde in Purbach am Neusiedler See und eine Stieleiche in Donnerskirchen.",
+      "english": "Natural monuments located in the nature park are the Ludlloch (Bear Cave) in Winden am See, a winter lime tree in Purbach am Neusiedler See and a pedunculate oak in Donnerskirchen."
+    },
+    {
+      "id": "s3",
+      "name": "Hackelsberg (Jois)",
+      "quote": "Im Naturpark befinden sich die Naturschutzgebiete Hackelsberg (Jois), Jungerberg (Jois) und Thenauriegel (Breitenbrunn am Neusiedler See).",
+      "english": "The nature reserves Hackelsberg (Jois), Jungerberg (Jois) and Thenauriegel (Breitenbrunn am Neusiedler See) are located in the nature park."
+    },
+    {
+      "id": "s4",
+      "name": "Jungerberg (Jois)",
+      "quote": "Im Naturpark befinden sich die Naturschutzgebiete Hackelsberg (Jois), Jungerberg (Jois) und Thenauriegel (Breitenbrunn am Neusiedler See).",
+      "english": "The nature reserves Hackelsberg (Jois), Jungerberg (Jois) and Thenauriegel (Breitenbrunn am Neusiedler See) are located in the nature park."
+    },
+    {
+      "id": "s5",
+      "name": "Thenauriegel (Breitenbrunn am Neusiedler See)",
+      "quote": "Im Naturpark befinden sich die Naturschutzgebiete Hackelsberg (Jois), Jungerberg (Jois) und Thenauriegel (Breitenbrunn am Neusiedler See).",
+      "english": "The nature reserves Hackelsberg (Jois), Jungerberg (Jois) and Thenauriegel (Breitenbrunn am Neusiedler See) are located in the nature park."
+    },
+    {
+      "id": "s6",
+      "name": "Panoramawanderweg",
+      "quote": "Neben dem alle fünf Gemeinden des Naturparks verbindenden 22 Kilometer langen Panoramawanderweg gibt es in den einzelnen Orten lokale und teilweise gemeindeübergreifende Wanderwege.",
+      "english": "In addition to the 22-kilometer-long Panorama Hiking Trail connecting all five communities of the nature park, there are local and sometimes cross-community hiking trails in the individual towns."
+    },
+    {
+      "id": "s7",
+      "name": "Skulpturenpark Bildhauers Wander Bertoni",
+      "quote": "Der Skulpturenpark Bildhauers Wander Bertoni in Winden am See beansprucht eine Fläche von rund vier Hektar und enthält rund 480 Objekte.",
+      "english": "The sculpture park of the sculptor Wander Bertoni in Winden am See covers an area of around four hectares and contains around 480 objects."
+    },
+    {
+      "id": "s8",
+      "name": "Ramsar-Informationszentrum",
+      "quote": "In Purbach wurde im Haus am Kellerplatz neben dem Sitz des Regionalverbandes 2006 das Ramsar-Informationszentrum für das sich auf 59.000 Hektar erstreckende Ramsargebiet Neusiedler See – Seewinkel eingerichtet.",
+      "english": "In Purbach, the Ramsar Information Center for the 59,000-hectare Ramsar area Neusiedler See – Seewinkel was established in 2006 in the Haus am Kellerplatz next to the headquarters of the regional association."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Reserves and Trails",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Culture and Nature in the South and West",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "0358492349055652e3d7f487c971a261c794ca3ce844a9b41f84b714ab84158d"
+}

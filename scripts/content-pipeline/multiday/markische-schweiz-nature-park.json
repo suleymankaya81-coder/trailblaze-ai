@@ -1,0 +1,106 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Krugberg",
+      "quote": "Die höchste Erhebung des Naturparks ist mit 129 Meter der Krugberg.",
+      "english": "The highest elevation in the nature park is the Krugberg at 129 meters."
+    },
+    {
+      "id": "s2",
+      "name": "Schermützelsee",
+      "quote": "Im Zentrum des Naturparks liegt der Schermützelsee.",
+      "english": "The Schermützelsee is located in the center of the nature park."
+    },
+    {
+      "id": "s3",
+      "name": "Stobber",
+      "quote": "Das zentrale Fließgewässer des Naturparks ist der Stobber.",
+      "english": "The central watercourse of the nature park is the Stobber."
+    },
+    {
+      "id": "s4",
+      "name": "Rotes Luch",
+      "quote": "Sein Scheitelbereich mit einer Pseudobifurkation liegt in 48 m ü. NN im Niedermoorgebiet Rotes Luch.",
+      "english": "Its crest area with a pseudo-bifurcation is located at 48 m above sea level in the Rotes Luch fen area."
+    },
+    {
+      "id": "s5",
+      "name": "Kietzer See",
+      "quote": "87,1 % des Naturparkgebietes sind außerdem als Europäisches Vogelschutzgebiet (SPA) ausgewiesen, darunter das Europäische Vogelschutzgebiet Altfriedländer Teich- und Seengebiet um den Kietzer See in der Nordostecke des Naturparks.",
+      "english": "87.1% of the nature park area is also designated as a European bird sanctuary (SPA), including the Altfriedland pond and lake area bird sanctuary around the Kietzer See in the northeast corner of the nature park."
+    },
+    {
+      "id": "s6",
+      "name": "Poetenstieg",
+      "quote": "Als einen reizvollen Wanderweg ist der „Poetenstieg“ zu nennen, der beginnend in Buckow durch die Mischwälder und Schlucht der Silberkehle führt.",
+      "english": "The 'Poetenstieg' is a charming hiking trail that begins in Buckow and leads through the mixed forests and the Silberkehle gorge."
+    },
+    {
+      "id": "s7",
+      "name": "Silberkehle",
+      "quote": "Als einen reizvollen Wanderweg ist der „Poetenstieg“ zu nennen, der beginnend in Buckow durch die Mischwälder und Schlucht der Silberkehle führt.",
+      "english": "The 'Poetenstieg' is a charming hiking trail that begins in Buckow and leads through the mixed forests and the Silberkehle gorge."
+    },
+    {
+      "id": "s8",
+      "name": "Klostersee",
+      "quote": "Einen kulturhistorischen Anziehungspunkt bildet das ehemalige Zisterzienserinnen-Kloster Friedland mit seiner Klosterkirche und dem Klostersee.",
+      "english": "The former Cistercian nunnery Friedland with its monastery church and the Klostersee forms a cultural-historical attraction."
+    },
+    {
+      "id": "s9",
+      "name": "Oberbarnimer Feldsteinroute",
+      "quote": "Eine kultur- und bauhistorische Route auf den Spuren des Baumaterials Feldstein bildet die 2012 eröffnete Oberbarnimer Feldsteinroute.",
+      "english": "The Oberbarnimer Feldsteinroute, opened in 2012, forms a cultural and architectural-historical route following the traces of fieldstone building material."
+    },
+    {
+      "id": "s10",
+      "name": "Brecht-Weigel-Haus",
+      "quote": "In Buckow erinnert das Museum und der Veranstaltungsort Brecht-Weigel-Haus an das Künstlerehepaar.",
+      "english": "In Buckow, the museum and event venue Brecht-Weigel-Haus commemorates the artist couple."
+    },
+    {
+      "id": "s11",
+      "name": "Schweizer Haus",
+      "quote": "Im „Schweizer Haus“, dem Besucherzentrum des Naturparks in Buckow, gibt es eine Ausstellung über den Naturpark und Informationen für Besucher.",
+      "english": "In the 'Schweizer Haus', the visitor center of the nature park in Buckow, there is an exhibition about the nature park and information for visitors."
+    },
+    {
+      "id": "s12",
+      "name": "Fledermaus-Museum Julianenhof",
+      "quote": "Im Fledermaus-Museum Julianenhof ist eine ständige Ausstellung über Fledermäuse zu sehen.",
+      "english": "A permanent exhibition about bats can be seen in the Fledermaus-Museum Julianenhof."
+    }
+  ],
+  "days": [
+    {
+      "title": "Buckow Culture and Nature",
+      "stop_ids": [
+        "s11",
+        "s10",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Central Lakes and Waterways",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s1",
+        "s4"
+      ]
+    },
+    {
+      "title": "Northern Trails and History",
+      "stop_ids": [
+        "s12",
+        "s8",
+        "s5",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "dc6cd1fc994b5854f74803a07ae4965e88c0906af0f4d48eef2689022319e366"
+}

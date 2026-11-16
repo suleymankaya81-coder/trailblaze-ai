@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Laacher See",
+      "quote": "Der Laacher See in der Ortsgemeinde Glees, nahe der Abtei Maria Laach in der östlichen Vulkaneifel gelegen, ist der größte See in Rheinland-Pfalz.",
+      "english": "The Laacher See, located in the municipality of Glees near Maria Laach Abbey in the eastern Vulkaneifel, is the largest lake in Rhineland-Palatinate."
+    },
+    {
+      "id": "s2",
+      "name": "Abtei Maria Laach",
+      "quote": "Die Abtei erhielt den offiziellen Namen Maria Laach von den Jesuiten bei der Wiederbegründung des Klosters 1863.",
+      "english": "The abbey received the official name Maria Laach from the Jesuits during the re-establishment of the monastery in 1863."
+    },
+    {
+      "id": "s3",
+      "name": "Fulbert-Stollen",
+      "quote": "Als Überlauf sollte dieser Fulbert-Stollen den Klosterbesitz vor Überschwemmungen schützen.",
+      "english": "As an overflow, this Fulbert tunnel was intended to protect the monastery property from flooding."
+    },
+    {
+      "id": "s4",
+      "name": "Mofetten",
+      "quote": "Nahe der südöstlichen Uferzone steigt Kohlenstoffdioxid (CO2) im See auf und bildet sogenannte Mofetten, die auch heute noch die vulkanische Aktivität anzeigen.",
+      "english": "Near the southeastern shore zone, carbon dioxide (CO2) rises in the lake and forms so-called mofettes, which still indicate volcanic activity today."
+    }
+  ],
+  "days": [
+    {
+      "title": "Abbey and Lake Exploration",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "90b301ac37378839a0cb898c75dffa984be6fd28f8c1c563b80b8c2ec6a63a6b"
+}

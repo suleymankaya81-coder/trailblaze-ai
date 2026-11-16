@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Weißen Elster",
+      "quote": "Der Naturpark mit einer Gesamtfläche von etwa 1.495 km² liegt zwischen der Weißen Elster im Vogtland und der Freiberger Mulde im Osterzgebirge in einer Höhe von etwa 500 m NN und mit dem Fichtelberg bis 1.215 m und umfasst alle wichtigen Schutzgebiete, Wälder, Naturdenkmale, die sich in der Nähe von Elstergebirge und Erzgebirgskamm, also in den oberen Teilen von Westerzgebirge und Osterzgebirge befinden.",
+      "english": "The nature park with a total area of about 1,495 km² is located between the White Elster in the Vogtland and the Freiberg Mulde in the Eastern Ore Mountains at an altitude of about 500 m above sea level and with the Fichtelberg up to 1,215 m and includes all important protected areas, forests, natural monuments that are located near the Elster Mountains and the Ore Mountain ridge, i.e. in the upper parts of the Western Ore Mountains and Eastern Ore Mountains."
+    },
+    {
+      "id": "s2",
+      "name": "Freiberger Mulde",
+      "quote": "Der Naturpark mit einer Gesamtfläche von etwa 1.495 km² liegt zwischen der Weißen Elster im Vogtland und der Freiberger Mulde im Osterzgebirge in einer Höhe von etwa 500 m NN und mit dem Fichtelberg bis 1.215 m und umfasst alle wichtigen Schutzgebiete, Wälder, Naturdenkmale, die sich in der Nähe von Elstergebirge und Erzgebirgskamm, also in den oberen Teilen von Westerzgebirge und Osterzgebirge befinden.",
+      "english": "The nature park with a total area of about 1,495 km² is located between the White Elster in the Vogtland and the Freiberg Mulde in the Eastern Ore Mountains at an altitude of about 500 m above sea level and with the Fichtelberg up to 1,215 m and includes all important protected areas, forests, natural monuments that are located near the Elster Mountains and the Ore Mountain ridge, i.e. in the upper parts of the Western Ore Mountains and Eastern Ore Mountains."
+    },
+    {
+      "id": "s3",
+      "name": "Fichtelberg",
+      "quote": "Der Naturpark mit einer Gesamtfläche von etwa 1.495 km² liegt zwischen der Weißen Elster im Vogtland und der Freiberger Mulde im Osterzgebirge in einer Höhe von etwa 500 m NN und mit dem Fichtelberg bis 1.215 m und umfasst alle wichtigen Schutzgebiete, Wälder, Naturdenkmale, die sich in der Nähe von Elstergebirge und Erzgebirgskamm, also in den oberen Teilen von Westerzgebirge und Osterzgebirge befinden.",
+      "english": "The nature park with a total area of about 1,495 km² is located between the White Elster in the Vogtland and the Freiberg Mulde in the Eastern Ore Mountains at an altitude of about 500 m above sea level and with the Fichtelberg up to 1,215 m and includes all important protected areas, forests, natural monuments that are located near the Elster Mountains and the Ore Mountain ridge, i.e. in the upper parts of the Western Ore Mountains and Eastern Ore Mountains."
+    },
+    {
+      "id": "s4",
+      "name": "Elstergebirge",
+      "quote": "Der Naturpark mit einer Gesamtfläche von etwa 1.495 km² liegt zwischen der Weißen Elster im Vogtland und der Freiberger Mulde im Osterzgebirge in einer Höhe von etwa 500 m NN und mit dem Fichtelberg bis 1.215 m und umfasst alle wichtigen Schutzgebiete, Wälder, Naturdenkmale, die sich in der Nähe von Elstergebirge und Erzgebirgskamm, also in den oberen Teilen von Westerzgebirge und Osterzgebirge befinden.",
+      "english": "The nature park with a total area of about 1,495 km² is located between the White Elster in the Vogtland and the Freiberg Mulde in the Eastern Ore Mountains at an altitude of about 500 m above sea level and with the Fichtelberg up to 1,215 m and includes all important protected areas, forests, natural monuments that are located near the Elster Mountains and the Ore Mountain ridge, i.e. in the upper parts of the Western Ore Mountains and Eastern Ore Mountains."
+    },
+    {
+      "id": "s5",
+      "name": "Erzgebirgskamm",
+      "quote": "Der Naturpark mit einer Gesamtfläche von etwa 1.495 km² liegt zwischen der Weißen Elster im Vogtland und der Freiberger Mulde im Osterzgebirge in einer Höhe von etwa 500 m NN und mit dem Fichtelberg bis 1.215 m und umfasst alle wichtigen Schutzgebiete, Wälder, Naturdenkmale, die sich in der Nähe von Elstergebirge und Erzgebirgskamm, also in den oberen Teilen von Westerzgebirge und Osterzgebirge befinden.",
+      "english": "The nature park with a total area of about 1,495 km² is located between the White Elster in the Vogtland and the Freiberg Mulde in the Eastern Ore Mountains at an altitude of about 500 m above sea level and with the Fichtelberg up to 1,215 m and includes all important protected areas, forests, natural monuments that are located near the Elster Mountains and the Ore Mountain ridge, i.e. in the upper parts of the Western Ore Mountains and Eastern Ore Mountains."
+    },
+    {
+      "id": "s6",
+      "name": "Silberstraße",
+      "quote": "Durch einen Großteil des Naturparks führt die Ferienstraße Silberstraße.",
+      "english": "The Silver Road holiday route runs through a large part of the nature park."
+    },
+    {
+      "id": "s7",
+      "name": "Wanderwege",
+      "quote": "Durch das Gebiet führen etwa 5.000 km ausgeschilderte Wanderwege.",
+      "english": "Approximately 5,000 km of signposted hiking trails lead through the area."
+    }
+  ],
+  "days": [
+    {
+      "title": "Rivers and Summits",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Mountain Ridges",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Scenic Routes and Trails",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "38469b3ed5a21bce4fef09a20cbe6879e90079f2d8a5592a301d08c7e3b4fdee"
+}

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lombardy",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco Nord Milano"
+        "Cascina Centro Parco",
+        "villa di Alessandro Manzoni"
       ],
       "seo_title": "Parco Nord Milano Visit Guide"
     },
@@ -32,16 +33,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco Nord Milano",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "North and Cultural Circuit",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco Nord Milano",
-                "stop_id": "parco-nord-milano",
-                "detail": "The Parco Nord Milano is a metropolitan periurban park (about 640 hectares) located on the northern outskirts of Milan."
+                "name": "Cascina Centro Parco",
+                "stop_id": "parco-nord-milano--s1",
+                "detail": "The entity that manages the area has its legal headquarters in this last municipality, in the Cascina Centro Parco, which is however accessed from Bresso."
+              },
+              {
+                "name": "villa di Alessandro Manzoni",
+                "stop_id": "parco-nord-milano--s3",
+                "detail": "Inside the park there is a complex of upper secondary schools: the Casiraghi scientific, linguistic and classical high school (Cinisello Balsamo), the ITIS Cartesio (Industrial Technical Institute) and the IIS Eugenio Montale (Cinisello Balsamo); Alessandro Manzoni's villa in Brusuglio, the Bassini Hospital (Cinisello Balsamo) and an airport for tourist-civil use (Bresso)."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco Nord Milano before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Hill and Sport Exploration",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "montagnetta",
+                "stop_id": "parco-nord-milano--s4",
+                "detail": "It is flat for most of its surface; however, in the area on the border between Sesto San Giovanni and Bresso, south of the pedestrian and cycle bridge on via Gian Carlo Clerici, stands the so-called little mountain, formed in the last century by steel mill processing residues and subsequently reclaimed."
+              },
+              {
+                "name": "teatrino",
+                "stop_id": "parco-nord-milano--s5",
+                "detail": "On the little mountain there is a concrete and wooden structure, called the \"little theater\" and used for various events."
+              },
+              {
+                "name": "velodromo",
+                "stop_id": "parco-nord-milano--s6",
+                "detail": "In the area east of the Foglia pedestrian and cycle bridge on via XX Settembre, in Bresso, an outdoor bicycle speed ring (velodrome) was built."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco Nord Milano before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +108,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_Nord_Milano"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_Nord_Milano"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:04:34.412461+00:00"
       }
     }
   }

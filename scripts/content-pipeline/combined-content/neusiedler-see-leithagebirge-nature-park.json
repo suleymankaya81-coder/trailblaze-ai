@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Burgenland",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Naturpark Neusiedler See – Leithagebirge"
+        "Hackelsberg (Jois)",
+        "Panoramawanderweg"
       ],
       "seo_title": "Neusiedler See-Leithagebirge Nature Park Visit Guide"
     },
@@ -32,16 +33,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Neusiedler See-Leithagebirge Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Northern Reserves and Trails",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Naturpark Neusiedler See – Leithagebirge",
-                "stop_id": "neusiedler-see-leithagebirge-nature-park",
-                "detail": "The Nature Park Neusiedler See – Leithagebirge is part of the Austrian nature and landscape conservation area Neusiedler See and the surrounding area."
+                "name": "Hackelsberg (Jois)",
+                "stop_id": "neusiedler-see-leithagebirge-nature-park--s3",
+                "detail": "The nature reserves Hackelsberg (Jois), Jungerberg (Jois) and Thenauriegel (Breitenbrunn am Neusiedler See) are located in the nature park."
+              },
+              {
+                "name": "Panoramawanderweg",
+                "stop_id": "neusiedler-see-leithagebirge-nature-park--s6",
+                "detail": "In addition to the 22-kilometer-long Panorama Hiking Trail connecting all five communities of the nature park, there are local and sometimes cross-community hiking trails in the individual towns."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Neusiedler See-Leithagebirge Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Culture and Nature in the South and West",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Donnerskirchen",
+                "stop_id": "neusiedler-see-leithagebirge-nature-park--s1",
+                "detail": "In the river delta near Donnerskirchen, the lake's reed belt reaches its greatest width of five kilometers."
+              },
+              {
+                "name": "Ludlloch (Bärenhöhle)",
+                "stop_id": "neusiedler-see-leithagebirge-nature-park--s2",
+                "detail": "Natural monuments located in the nature park are the Ludlloch (Bear Cave) in Winden am See, a winter lime tree in Purbach am Neusiedler See and a pedunculate oak in Donnerskirchen."
+              },
+              {
+                "name": "Skulpturenpark Bildhauers Wander Bertoni",
+                "stop_id": "neusiedler-see-leithagebirge-nature-park--s7",
+                "detail": "The sculpture park of the sculptor Wander Bertoni in Winden am See covers an area of around four hectares and contains around 480 objects."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Neusiedler See-Leithagebirge Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +108,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://de.wikipedia.org/wiki/Naturpark_Neusiedler_See_%E2%80%93_Leithagebirge"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Naturpark_Neusiedler_See_%E2%80%93_Leithagebirge"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:14:10.635966+00:00"
       }
     }
   }

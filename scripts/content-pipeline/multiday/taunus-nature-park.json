@@ -1,0 +1,51 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Taunus-Informationszentrums",
+      "quote": "Mit den Seminarräumen im Taunus-Informationszentrums an der Hohemark kein Problem!",
+      "english": "With the seminar rooms in the Taunus Information Center at Hohemark, it's no problem!"
+    },
+    {
+      "id": "s2",
+      "name": "Hohemark",
+      "quote": "Mit den Seminarräumen im Taunus-Informationszentrums an der Hohemark kein Problem!",
+      "english": "With the seminar rooms in the Taunus Information Center at Hohemark, it's no problem!"
+    },
+    {
+      "id": "s3",
+      "name": "Waldtraut",
+      "quote": "Die Bewirtung erfolgt durch das Team des Waldtraut.",
+      "english": "Catering is provided by the Waldtraut team."
+    },
+    {
+      "id": "s4",
+      "name": "Jugendzeltplatz „Kammerforst“",
+      "quote": "Entdecke das Abenteuer Natur im Jugendzeltplatz „Kammerforst“!",
+      "english": "Discover the nature adventure at the \"Kammerforst\" youth campsite!"
+    },
+    {
+      "id": "s5",
+      "name": "Weilrod",
+      "quote": "Eingebettet in die malerische Landschaft von Weilrod, reserviert für Jugendgruppen und Familien, ist unser Zeltplatz der ideale Ort für bis zu 60 Naturbegeisterte.",
+      "english": "Nestled in the picturesque landscape of Weilrod, reserved for youth groups and families, our campsite is the ideal place for up to 60 nature enthusiasts."
+    }
+  ],
+  "days": [
+    {
+      "title": "Hohemark Information and Hospitality",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Outdoor Adventure in Weilrod",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    }
+  ]
+}

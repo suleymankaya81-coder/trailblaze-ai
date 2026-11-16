@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Monte Velino",
+      "quote": "Si estende per una superficie di circa 564 km² comprendendo i territori del massiccio del Monte Velino e del Monte Sirente, riuniti sotto la denominazione comune di catena del Sirente-Velino, e dei territori ad essi limitrofi come l'altopiano delle Rocche, i Piani di Pezza e parte della piana di Campo Felice, collegandosi direttamente a nord-ovest con l'adiacente Riserva regionale Montagne della Duchessa in territorio laziale e comprendendo al suo interno l'omonima Riserva naturale del Monte Velino.",
+      "english": "It extends over an area of approximately 564 km², including the territories of the Monte Velino and Monte Sirente massifs, united under the common name of the Sirente-Velino chain, and their neighboring territories such as the Rocche plateau, the Piani di Pezza, and part of the Campo Felice plain, connecting directly to the northwest with the adjacent Montagne della Duchessa regional reserve in Lazio territory and including the Monte Velino natural reserve of the same name within it."
+    },
+    {
+      "id": "s2",
+      "name": "Gole di Celano",
+      "quote": "Zone di interesse naturalistico e paesaggistico, oltre ai due gruppi montuosi del Velino e del Sirente con le loro cime, sono l'Altopiano delle Rocche, i Piani di Pezza, i Prati del Sirente, la Val d'Arano, la Serra di Celano e le Gole di Celano.",
+      "english": "Areas of naturalistic and scenic interest, in addition to the two mountain groups of Velino and Sirente with their peaks, are the Rocche Plateau, the Piani di Pezza, the Prati del Sirente, the Val d'Arano, the Serra di Celano, and the Gole di Celano."
+    },
+    {
+      "id": "s3",
+      "name": "grotte di Stiffe",
+      "quote": "Rientrano nel territorio del parco anche le grotte di Stiffe, presso l'omonima frazione del comune di San Demetrio ne' Vestini.",
+      "english": "The Stiffe caves, located near the hamlet of the same name in the municipality of San Demetrio ne' Vestini, are also part of the park territory."
+    },
+    {
+      "id": "s4",
+      "name": "Chiesa di San Sebastiano",
+      "quote": "Chiesa di San Sebastiano (Ovindoli): chiesa del XVIII secolo, in stile barocco-settecentesco, a navata unica.",
+      "english": "Church of San Sebastiano (Ovindoli): an 18th-century church in Baroque-18th-century style, with a single nave."
+    },
+    {
+      "id": "s5",
+      "name": "Chiesa di Santa Maria della Neve",
+      "quote": "Chiesa di Santa Maria della Neve (Rocca di Mezzo): chiesa ricostruita nel XVIII secolo dopo il terremoto del 1703.",
+      "english": "Church of Santa Maria della Neve (Rocca di Mezzo): a church rebuilt in the 18th century after the 1703 earthquake."
+    },
+    {
+      "id": "s6",
+      "name": "Chiesa Conventuale di San Francesco d'Assisi",
+      "quote": "La costruzione del convento nei pressi della chiesa avvenne tra il 1221 e il 1261, per avviare nel 1267 la costruzione di una chiesa più ampia, consacrata nel 1288 e successivamente trasformata nel 1647.",
+      "english": "The construction of the convent near the church took place between 1221 and 1261, starting the construction of a larger church in 1267, consecrated in 1288 and subsequently transformed in 1647."
+    },
+    {
+      "id": "s7",
+      "name": "Chiesa di Santa Lucia",
+      "quote": "Chiesa di Santa Lucia (Magliano de' Marsi): la chiesa risale al XIII secolo, e mantenne l'aspetto originario fino al terremoto del 1915.",
+      "english": "Church of Santa Lucia (Magliano de' Marsi): the church dates back to the 13th century and maintained its original appearance until the 1915 earthquake."
+    },
+    {
+      "id": "s8",
+      "name": "Chiesa di Santa Maria in Valle Porclaneta",
+      "quote": "Chiesa di Santa Maria in Valle Porclaneta (Rosciolo dei Marsi): di origine benedettina si trova di fronte alle pendici del massiccio del monte Velino, costruita probabilmente come parte di un insieme conventuale oggi scomparso, ad opera di un certo Nicolò nel",
+      "english": "Church of Santa Maria in Valle Porclaneta (Rosciolo dei Marsi): of Benedictine origin, it is located in front of the slopes of the Monte Velino massif, probably built as part of a now-vanished convent complex by a certain Nicolò in"
+    }
+  ],
+  "days": [
+    {
+      "title": "Velino Massif and Marsica Heritage",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Plateau Churches and Natural Canyons",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Subequana Valley Religious History and Caves",
+      "stop_ids": [
+        "s3",
+        "s6"
+      ]
+    }
+  ]
+}

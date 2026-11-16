@@ -1,0 +1,91 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "lago d'Averno",
+      "quote": "Alcuni sono di formazione vulcanica (lago d'Averno), mentre altri sono lagunari (lago di Lucrino, lago Miseno, lago Fusaro); hanno caratteristiche di composizione differenti essendo alcuni salmastri (Fusaro) e altri dolci (Averno).",
+      "english": "Some are of volcanic formation (Lake Avernus), while others are lagoonal (Lake Lucrino, Lake Miseno, Lake Fusaro); they have different compositional characteristics, with some being brackish (Fusaro) and others fresh (Avernus)."
+    },
+    {
+      "id": "s2",
+      "name": "Monte Nuovo",
+      "quote": "L'ultima eruzione si è verificata nel 1538 (Monte Nuovo) e l'ultima crisi bradisismica nel 1983.",
+      "english": "The last eruption occurred in 1538 (Monte Nuovo) and the last bradyseismic crisis in 1983."
+    },
+    {
+      "id": "s3",
+      "name": "Astroni",
+      "quote": "Resti di laghi vi sono all'interno dei crateri di Astroni e della Solfatara.",
+      "english": "Remains of lakes are found inside the craters of Astroni and Solfatara."
+    },
+    {
+      "id": "s4",
+      "name": "Solfatara",
+      "quote": "Nelle seguenti zone (a ridotto sviluppo antropico) l'ambiente naturale è tutelato nella sua integrità con la stretta osservanza dei vincoli legislativi: Nisida; Astroni; Monte Nuovo; Solfatara; Punta Penna.",
+      "english": "In the following areas (with reduced anthropic development) the natural environment is protected in its integrity with strict observance of legislative constraints: Nisida; Astroni; Monte Nuovo; Solfatara; Punta Penna."
+    },
+    {
+      "id": "s5",
+      "name": "Cuma",
+      "quote": "In epoca romana i Campi Flegrei erano un sistema urbano-territoriale di fondamentale importanza, ospitando il porto e la città commerciale di Puteoli, i porti militari di Lucrino e di Capo Miseno, il sistema delle ville imperiali e termali di Baia (Bacoli)-Bauli e la città “greca” di Cuma.",
+      "english": "In Roman times, the Phlegraean Fields were an urban-territorial system of fundamental importance, hosting the port and commercial city of Puteoli, the military ports of Lucrino and Capo Miseno, the system of imperial and thermal villas of Baia (Bacoli)-Bauli and the \"Greek\" city of Cuma."
+    },
+    {
+      "id": "s6",
+      "name": "Castello Aragonese di Baia",
+      "quote": "Tutela attiva delle seguenti zone: Fondi di Baia, Castello Aragonese di Baia.",
+      "english": "Active protection of the following areas: Fondi di Baia, Aragonese Castle of Baia."
+    },
+    {
+      "id": "s7",
+      "name": "Grotta della Dragonara",
+      "quote": "Miseno, Capo Miseno, Grotta della Dragonara;",
+      "english": "Miseno, Capo Miseno, Dragonara Grotto;"
+    },
+    {
+      "id": "s8",
+      "name": "Capo Miseno",
+      "quote": "I Campi Flegrei hanno visto sorgere la più antica città della Magna Grecia, Cumae, (VII,VIII secolo a.C.), che a sua volta ha fondato Napoli.",
+      "english": "The Phlegraean Fields saw the rise of the oldest city of Magna Graecia, Cumae, (7th-8th century BC), which in turn founded Naples."
+    },
+    {
+      "id": "s9",
+      "name": "Nisida",
+      "quote": "Sporadica presenza di lepri e conigli; questi ultimi sono presenti in maggior numero sull'isolotto di Nisida.",
+      "english": "Sporadic presence of hares and rabbits; the latter are present in greater numbers on the islet of Nisida."
+    },
+    {
+      "id": "s10",
+      "name": "Eremo dei Camaldoli",
+      "quote": "Uno dei punti di avvistamento dei rapaci è situato sulla terrazza panoramica dell'eremo dei Camaldoli situata all'apice dell'omonima collina.",
+      "english": "One of the sighting points for birds of prey is located on the panoramic terrace of the Camaldoli hermitage situated at the top of the hill of the same name."
+    }
+  ],
+  "days": [
+    {
+      "title": "Volcanoes and Ancient Craters",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4",
+        "s10"
+      ]
+    },
+    {
+      "title": "Archaeology and Coastal Lakes",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Islands and Capes",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ]
+}

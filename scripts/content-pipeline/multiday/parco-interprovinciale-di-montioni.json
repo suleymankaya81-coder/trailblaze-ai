@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Poggio al Chiecco",
+      "quote": "Il territorio, posto ad una distanza media di circa 10 chilometri in linea d'aria dal Mar Tirreno, è caratterizzato dalla presenza di rilievi collinari di altezza massima intorno ai 300 m s.l.m. (Poggio al Chiecco 308 m s.l.m.).",
+      "english": "The territory, located at an average distance of about 10 kilometers as the crow flies from the Tyrrhenian Sea, is characterized by the presence of hilly reliefs with a maximum height of around 300 m above sea level (Poggio al Chiecco 308 m above sea level)."
+    },
+    {
+      "id": "s2",
+      "name": "Poggio Bufalaia",
+      "quote": "All'interno del perimetro del parco ma scorporati da esso sono presenti una cava di quarzite (Poggio Bufalaia e Speranzona) e la riserva naturale Poggio Tre Cancelli, quest'ultima di competenza statale e gestita dall'ASFD di Follonica.",
+      "english": "Within the perimeter of the park but separated from it are a quartzite quarry (Poggio Bufalaia and Speranzona) and the Poggio Tre Cancelli nature reserve, the latter under state jurisdiction and managed by the ASFD of Follonica."
+    },
+    {
+      "id": "s3",
+      "name": "Speranzona",
+      "quote": "All'interno del perimetro del parco ma scorporati da esso sono presenti una cava di quarzite (Poggio Bufalaia e Speranzona) e la riserva naturale Poggio Tre Cancelli, quest'ultima di competenza statale e gestita dall'ASFD di Follonica.",
+      "english": "Within the perimeter of the park but separated from it are a quartzite quarry (Poggio Bufalaia and Speranzona) and the Poggio Tre Cancelli nature reserve, the latter under state jurisdiction and managed by the ASFD of Follonica."
+    },
+    {
+      "id": "s4",
+      "name": "Poggio Tre Cancelli",
+      "quote": "All'interno del perimetro del parco ma scorporati da esso sono presenti una cava di quarzite (Poggio Bufalaia e Speranzona) e la riserva naturale Poggio Tre Cancelli, quest'ultima di competenza statale e gestita dall'ASFD di Follonica.",
+      "english": "Within the perimeter of the park but separated from it are a quartzite quarry (Poggio Bufalaia and Speranzona) and the Poggio Tre Cancelli nature reserve, the latter under state jurisdiction and managed by the ASFD of Follonica."
+    },
+    {
+      "id": "s5",
+      "name": "Pievaccia",
+      "quote": "Il territorio è caratterizzato dalla presenza di testimonianze storiche ed artistiche: resti di insediamenti protostorici, etruschi e romani a cui si sovrappongono edifici medioevali come la Pievaccia, i ruderi del castello di Montioni Vecchio, le Terme di Montioni, e varie testimonianze di archeologia medioevale come le cave di allume.",
+      "english": "The territory is characterized by the presence of historical and artistic evidence: remains of protohistoric, Etruscan and Roman settlements on which medieval buildings such as the Pievaccia, the ruins of the castle of Montioni Vecchio, the Baths of Montioni, and various examples of medieval archeology such as the alum quarries are superimposed."
+    },
+    {
+      "id": "s6",
+      "name": "castello di Montioni Vecchio",
+      "quote": "Il territorio è caratterizzato dalla presenza di testimonianze storiche ed artistiche: resti di insediamenti protostorici, etruschi e romani a cui si sovrappongono edifici medioevali come la Pievaccia, i ruderi del castello di Montioni Vecchio, le Terme di Montioni, e varie testimonianze di archeologia medioevale come le cave di allume.",
+      "english": "The territory is characterized by the presence of historical and artistic evidence: remains of protohistoric, Etruscan and Roman settlements on which medieval buildings such as the Pievaccia, the ruins of the castle of Montioni Vecchio, the Baths of Montioni, and various examples of medieval archeology such as the alum quarries are superimposed."
+    },
+    {
+      "id": "s7",
+      "name": "Terme di Montioni",
+      "quote": "Il territorio è caratterizzato dalla presenza di testimonianze storiche ed artistiche: resti di insediamenti protostorici, etruschi e romani a cui si sovrappongono edifici medioevali come la Pievaccia, i ruderi del castello di Montioni Vecchio, le Terme di Montioni, e varie testimonianze di archeologia medioevale come le cave di allume.",
+      "english": "The territory is characterized by the presence of historical and artistic evidence: remains of protohistoric, Etruscan and Roman settlements on which medieval buildings such as the Pievaccia, the ruins of the castle of Montioni Vecchio, the Baths of Montioni, and various examples of medieval archeology such as the alum quarries are superimposed."
+    },
+    {
+      "id": "s8",
+      "name": "cave di allume",
+      "quote": "Il territorio è caratterizzato dalla presenza di testimonianze storiche ed artistiche: resti di insediamenti protostorici, etruschi e romani a cui si sovrappongono edifici medioevali come la Pievaccia, i ruderi del castello di Montioni Vecchio, le Terme di Montioni, e varie testimonianze di archeologia medioevale come le cave di allume.",
+      "english": "The territory is characterized by the presence of historical and artistic evidence: remains of protohistoric, Etruscan and Roman settlements on which medieval buildings such as the Pievaccia, the ruins of the castle of Montioni Vecchio, the Baths of Montioni, and various examples of medieval archeology such as the alum quarries are superimposed."
+    }
+  ],
+  "days": [
+    {
+      "title": "Summit Ridges and Natural Reserves",
+      "stop_ids": [
+        "s1",
+        "s4"
+      ]
+    },
+    {
+      "title": "Industrial History and Quarries",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s8"
+      ]
+    },
+    {
+      "title": "Medieval Ruins and Ancient Spas",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

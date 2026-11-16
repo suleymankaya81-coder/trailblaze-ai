@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Emilia Romagna",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco regionale del Delta del Po"
+        "Bosco della Mesola",
+        "abbazia di Pomposa"
       ],
       "seo_title": "Parco regionale del Delta del Po Visit Guide"
     },
@@ -32,16 +33,67 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco regionale del Delta del Po",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Northern Woodlands and Abbeys",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco regionale del Delta del Po",
-                "stop_id": "parco-regionale-del-delta-del-po-emilia-romagna",
-                "detail": "The regional park of the Delta del Po of Emilia-Romagna is a protected natural area established in 1988 of about 54 000 hectares located in the Emilia-Romagna region. The park is re-built in the municipalities of Cervia, Ravenna and Alfonsine in Province of Ravenna, and in the municipalities of Argenta, Ostellato, Comacchio, Codigoro, Goro and Mesola in the province of Ferrara."
+                "name": "Bosco della Mesola",
+                "stop_id": "parco-regionale-del-delta-del-po-emilia-romagna--s1",
+                "detail": "It protects important areas such as the Bosco della Mesola, where a rare subspecies of red deer survives, the Valle Bertuzzi and the sacca di Goro."
+              },
+              {
+                "name": "abbazia di Pomposa",
+                "stop_id": "parco-regionale-del-delta-del-po-emilia-romagna--s2",
+                "detail": "It also includes the abbey of Pomposa, dating back to the 9th century."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco regionale del Delta del Po before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Comacchio Salt Pans and Historic Center",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Comacchio",
+                "stop_id": "parco-regionale-del-delta-del-po-emilia-romagna--s3",
+                "detail": "It includes, as the name suggests, the center of Comacchio."
+              },
+              {
+                "name": "saline di Comacchio",
+                "stop_id": "parco-regionale-del-delta-del-po-emilia-romagna--s4",
+                "detail": "It protects, in addition to the valleys themselves, the salt pans of Comacchio."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco regionale del Delta del Po before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Southern Marshes, Pines and Basilicas",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Punte Alberete",
+                "stop_id": "parco-regionale-del-delta-del-po-emilia-romagna--s5",
+                "detail": "The most important area is the marshy complex of Punte Alberete and Valle Mandriole, where very rare species such as the glossy ibis, the spoonbill, the pygmy cormorant and the squacco heron nest, but the large Pineta di San Vitale and the Pialassa della Baiona lagoon are also significant."
+              },
+              {
+                "name": "Pineta di Classe",
+                "stop_id": "parco-regionale-del-delta-del-po-emilia-romagna--s6",
+                "detail": "It includes an uninterrupted natural complex from the sea to the hinterland, from the pristine mouth of the Bevano stream, to the marshes of Ortazzino and Ortazzo, to the Pineta di Classe; further south is the Salina di Cervia."
+              },
+              {
+                "name": "basilica di Sant'Apollinare in Classe",
+                "stop_id": "parco-regionale-del-delta-del-po-emilia-romagna--s7",
+                "detail": "The station also includes the archaeological excavations of the ancient port of Classe and the basilica of Sant'Apollinare in Classe."
+              },
+              {
+                "name": "centro visite di Sant'Alberto",
+                "stop_id": "parco-regionale-del-delta-del-po-emilia-romagna--s9",
+                "detail": "Among them, the Sant'Alberto visitor center is also a museum dedicated to birdlife."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco regionale del Delta del Po before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +131,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_regionale_del_Delta_del_Po_dell%27Emilia-Romagna"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_regionale_del_Delta_del_Po_dell%27Emilia-Romagna"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:05:11.952226+00:00"
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Abruzzo",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Gran Sasso and Monti della Laga National Park"
+        "Campo Imperatore",
+        "Fonte Vetica",
+        "Rocca Calascio"
       ],
       "seo_title": "Gran Sasso e Monti della Laga National Park Visit Guide"
     },
@@ -32,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Gran Sasso e Monti della Laga National Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "High Plateaus and Southern Peaks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Gran Sasso and Monti della Laga National Park",
-                "stop_id": "gran-sasso-e-monti-della-laga-national-park",
-                "detail": "The Gran Sasso and Monti della Laga National Park is a natural park in central Italy. Established in 1991, it covers an area of 2,014 square kilometres (778 mi2), mostly within the provinces of Teramo, L'Aquila, and Pescara in Abruzzo, with small areas in the provinces of Rieti in Lazio and Ascoli Piceno in Marche. The terrain is predominantly mountainous with alpine plains."
+                "name": "Campo Imperatore",
+                "stop_id": "gran-sasso-e-monti-della-laga-national-park--s1",
+                "detail": "In the high area and in the plain of Campo Imperatore, the terrain instead features only pastures."
+              },
+              {
+                "name": "Fonte Vetica",
+                "stop_id": "gran-sasso-e-monti-della-laga-national-park--s3",
+                "detail": "Higher up there are only pastures and only in the area of Fonte Vetica do we find a small stretch with some firs and birches."
+              },
+              {
+                "name": "Rocca Calascio",
+                "stop_id": "gran-sasso-e-monti-della-laga-national-park--s8",
+                "detail": "Campo Imperatore, area of the upper Aterno valley, whose heart is between Assergi and Rocca Calascio."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Gran Sasso e Monti della Laga National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Lakes and Southern Valleys",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Lago di Campotosto",
+                "stop_id": "gran-sasso-e-monti-della-laga-national-park--s4",
+                "detail": "Several specimens of heron have also been spotted by local inhabitants near Lake Campotosto and in the municipality of Crognaleto."
+              },
+              {
+                "name": "Valle del Tirino",
+                "stop_id": "gran-sasso-e-monti-della-laga-national-park--s9",
+                "detail": "Valle del Tirino takes its name from the river that flows through the municipalities of Capestrano, Bussi sul Tirino and Ofena."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Gran Sasso e Monti della Laga National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +109,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Gran_Sasso_and_Monti_della_Laga_National_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_nazionale_del_Gran_Sasso_e_Monti_della_Laga"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:55:28.432531+00:00"
       }
     }
   }

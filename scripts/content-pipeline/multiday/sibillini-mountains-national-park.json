@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Gole dell'Infernaccio",
+      "quote": "I fondivalle dei fiumi e dei torrenti si articolano in gole strette e impressionanti (come le suggestive Gole dell'Infernaccio), create dalle attività telluriche e dall'erosione.",
+      "english": "The valley floors of rivers and streams are divided into narrow and impressive gorges (such as the suggestive Gole dell'Infernaccio), created by tectonic activities and erosion."
+    },
+    {
+      "id": "s2",
+      "name": "Piani di Castelluccio",
+      "quote": "Il versante occidentale degrada dolcemente verso l'Umbria con una serie successiva di depressioni ad alta quota, i famosi Piani di Castelluccio.",
+      "english": "The western slope slopes gently towards Umbria with a successive series of high-altitude depressions, the famous Piani di Castelluccio."
+    },
+    {
+      "id": "s3",
+      "name": "Monte Bove",
+      "quote": "Il 24 marzo 1985 sul Monte Bove ha raggiunto la velocità di 228 km/h e i 207 km/h il 14 gennaio 1991, mentre il 14 aprile 1970, a Bolognola, ha raggiunto i 200 km/h.",
+      "english": "On March 24, 1985, on Monte Bove it reached a speed of 228 km/h and 207 km/h on January 14, 1991, while on April 14, 1970, in Bolognola, it reached 200 km/h."
+    },
+    {
+      "id": "s4",
+      "name": "Monte Vettore",
+      "quote": "Il monte più alto, nonché la cima più alta delle Marche, è il Monte Vettore che con i suoi 2476 m domina Castelluccio.",
+      "english": "The highest mountain, as well as the highest peak in the Marche, is Monte Vettore which, with its 2476 m, dominates Castelluccio."
+    },
+    {
+      "id": "s5",
+      "name": "Lago di Fiastra",
+      "quote": "Il lago di Fiastra è un lago artificiale realizzato a partire dal 1949 con lo scopo di fornire energia elettrica utilizzando il corso del Fiastrone.",
+      "english": "Lake Fiastra is an artificial lake created starting from 1949 with the aim of providing electricity using the course of the Fiastrone."
+    },
+    {
+      "id": "s6",
+      "name": "Lame Rosse",
+      "quote": "Vicino al lago, si trovano le Lame Rosse.",
+      "english": "Near the lake, the Lame Rosse are found."
+    },
+    {
+      "id": "s7",
+      "name": "Lago di Pilato",
+      "quote": "Collocato tra le pareti impervie e verticali immediatamente sotto la cima del Monte Vettore, il lago di Pilato è uno dei pochissimi laghi glaciali di tipo alpino presenti sull'Appennino e l'unico lago di origine naturale delle Marche.",
+      "english": "Located between the inaccessible and vertical walls immediately below the summit of Monte Vettore, Lake Pilato is one of the very few alpine-type glacial lakes present in the Apennines and the only lake of natural origin in the Marche."
+    },
+    {
+      "id": "s8",
+      "name": "Monte Argentella",
+      "quote": "Il cervo (Cervus elaphus) è stato storicamente presente nei Monti Sibillini fin dalla Preistoria e a conferma di ciò, nel 1978 sono stati ritrovati dei fossili in una grotta sul Monte Argentella o nei pressi di Muccia.",
+      "english": "The deer (Cervus elaphus) has been historically present in the Sibillini Mountains since prehistory and in confirmation of this, in 1978 fossils were found in a cave on Monte Argentella or near Muccia."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Lakes and Formations",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s3"
+      ]
+    },
+    {
+      "title": "High Peaks and Glacial Lakes",
+      "stop_ids": [
+        "s4",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Plateaus and Gorges",
+      "stop_ids": [
+        "s2",
+        "s1"
+      ]
+    }
+  ]
+}

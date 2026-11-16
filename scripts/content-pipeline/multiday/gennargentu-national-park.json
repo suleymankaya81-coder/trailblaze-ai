@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Punta La Marmora",
+      "quote": "Vi si trovano le cime montuose più elevate dell'isola, che raggiungono la massima quota con i 1.834 metri di Punta La Marmora.",
+      "english": "The island's highest mountain peaks are found here, reaching the maximum altitude with the 1,834 meters of Punta La Marmora."
+    },
+    {
+      "id": "s2",
+      "name": "Bruncu Spina",
+      "quote": "Alcune delle vette più elevate del complesso montuoso sono il Bruncu Spina (1.828 metri), Punta Florisa (1.822 metri), Punta Paolina (1.792 metri), Punta Erba Irdes (1.703 metri), il Bruncu Allasu (1.701 metri), Monte Iscudu (1.676 metri) ed il Monte Spada (1.595 metri).",
+      "english": "Some of the highest peaks of the mountain complex are Bruncu Spina (1,828 meters), Punta Florisa (1,822 meters), Punta Paolina (1,792 meters), Punta Erba Irdes (1,703 meters), Bruncu Allasu (1,701 meters), Monte Iscudu (1,676 meters) and Monte Spada (1,595 meters)."
+    },
+    {
+      "id": "s3",
+      "name": "Punta Florisa",
+      "quote": "Alcune delle vette più elevate del complesso montuoso sono il Bruncu Spina (1.828 metri), Punta Florisa (1.822 metri), Punta Paolina (1.792 metri), Punta Erba Irdes (1.703 metri), il Bruncu Allasu (1.701 metri), Monte Iscudu (1.676 metri) ed il Monte Spada (1.595 metri).",
+      "english": "Some of the highest peaks of the mountain complex are Bruncu Spina (1,828 meters), Punta Florisa (1,822 meters), Punta Paolina (1,792 meters), Punta Erba Irdes (1,703 meters), Bruncu Allasu (1,701 meters), Monte Iscudu (1,676 meters) and Monte Spada (1,595 meters)."
+    },
+    {
+      "id": "s4",
+      "name": "Supramonte",
+      "quote": "La regione del Supramonte si sviluppa in una serie di altopiani carsici formati da rocce calcaree risalenti al Mesozoico.",
+      "english": "The Supramonte region develops in a series of karst plateaus formed by limestone rocks dating back to the Mesozoic."
+    },
+    {
+      "id": "s5",
+      "name": "Monte Corrasi",
+      "quote": "L'altopiano è circondato da una serie di cime montuose la cui altitudine massima è raggiunta dal Monte Corrasi, con i suoi 1.463 metri.",
+      "english": "The plateau is surrounded by a series of mountain peaks whose maximum altitude is reached by Monte Corrasi, with its 1,463 meters."
+    },
+    {
+      "id": "s6",
+      "name": "Punta Solitta",
+      "quote": "Punta Solitta, con i suoi 1.206 metri, è una di queste.",
+      "english": "Punta Solitta, with its 1,206 meters, is one of these."
+    },
+    {
+      "id": "s7",
+      "name": "Sas Baddes",
+      "quote": "Gli altopiani e le alture del Supramonte sono invece dominate dalle foreste di leccio, come nel caso della lecceta di \"Sas Baddes\", inclusa entro il perimetro della foresta demaniale di Montes, una tra le ultime foreste primarie ancora presenti in Europa.",
+      "english": "The plateaus and heights of Supramonte are instead dominated by holm oak forests, as in the case of the \"Sas Baddes\" holm oak grove, included within the perimeter of the Montes state forest, one of the last primary forests still present in Europe."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks of Gennargentu",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Supramonte Highlands",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Ancient Forests and Plateaus",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

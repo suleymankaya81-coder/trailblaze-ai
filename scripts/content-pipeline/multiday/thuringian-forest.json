@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Großer Beerberg",
+      "quote": "Der höchste Berg des Thüringer Waldes ist der Große Beerberg (982,9 m).",
+      "english": "The highest mountain of the Thuringian Forest is the Großer Beerberg (982.9 m)."
+    },
+    {
+      "id": "s2",
+      "name": "Schneekopf",
+      "quote": "Die nächsthöheren Berge sind der Schneekopf (978 m), der Große Finsterberg (944 m) und der Große Inselsberg (916,5 m).",
+      "english": "The next highest mountains are the Schneekopf (978 m), the Großer Finsterberg (944 m) and the Großer Inselsberg (916.5 m)."
+    },
+    {
+      "id": "s3",
+      "name": "Großer Finsterberg",
+      "quote": "Die nächsthöheren Berge sind der Schneekopf (978 m), der Große Finsterberg (944 m) und der Große Inselsberg (916,5 m).",
+      "english": "The next highest mountains are the Schneekopf (978 m), the Großer Finsterberg (944 m) and the Großer Inselsberg (916.5 m)."
+    },
+    {
+      "id": "s4",
+      "name": "Großer Inselsberg",
+      "quote": "Die nächsthöheren Berge sind der Schneekopf (978 m), der Große Finsterberg (944 m) und der Große Inselsberg (916,5 m).",
+      "english": "The next highest mountains are the Schneekopf (978 m), the Großer Finsterberg (944 m) and the Großer Inselsberg (916.5 m)."
+    },
+    {
+      "id": "s5",
+      "name": "Kickelhahn",
+      "quote": "Weithin bekannte Berge sind überdies der Kickelhahn (861 m) an der Nordost- sowie Großer Hermannsberg (867 m), Ruppberg (866 m) und Adlersberg (849 m) an der Südwestabdachung des Kammes.",
+      "english": "Furthermore, widely known mountains are the Kickelhahn (861 m) on the northeastern slope, as well as Großer Hermannsberg (867 m), Ruppberg (866 m) and Adlersberg (849 m) on the southwestern slope of the ridge."
+    },
+    {
+      "id": "s6",
+      "name": "Großer Hermannsberg",
+      "quote": "Weithin bekannte Berge sind überdies der Kickelhahn (861 m) an der Nordost- sowie Großer Hermannsberg (867 m), Ruppberg (866 m) und Adlersberg (849 m) an der Südwestabdachung des Kammes.",
+      "english": "Furthermore, widely known mountains are the Kickelhahn (861 m) on the northeastern slope, as well as Großer Hermannsberg (867 m), Ruppberg (866 m) and Adlersberg (849 m) on the southwestern slope of the ridge."
+    },
+    {
+      "id": "s7",
+      "name": "Ruppberg",
+      "quote": "Weithin bekannte Berge sind überdies der Kickelhahn (861 m) an der Nordost- sowie Großer Hermannsberg (867 m), Ruppberg (866 m) und Adlersberg (849 m) an der Südwestabdachung des Kammes.",
+      "english": "Furthermore, widely known mountains are the Kickelhahn (861 m) on the northeastern slope, as well as Großer Hermannsberg (867 m), Ruppberg (866 m) and Adlersberg (849 m) on the southwestern slope of the ridge."
+    },
+    {
+      "id": "s8",
+      "name": "Adlersberg",
+      "quote": "Weithin bekannte Berge sind überdies der Kickelhahn (861 m) an der Nordost- sowie Großer Hermannsberg (867 m), Ruppberg (866 m) und Adlersberg (849 m) an der Südwestabdachung des Kammes.",
+      "english": "Furthermore, widely known mountains are the Kickelhahn (861 m) on the northeastern slope, as well as Großer Hermannsberg (867 m), Ruppberg (866 m) and Adlersberg (849 m) on the southwestern slope of the ridge."
+    },
+    {
+      "id": "s9",
+      "name": "Rennsteig",
+      "quote": "Über den gesamten Gebirgskamm führt der Rennsteig.",
+      "english": "The Rennsteig leads across the entire mountain ridge."
+    }
+  ],
+  "days": [
+    {
+      "title": "Highest Peaks and Central Ridge",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s9"
+      ]
+    },
+    {
+      "title": "Northern and Western Summits",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Southeastern Slope Landmarks",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "f9f66d6e80500fcc32c555bce3628f47d46c450d604b5e494de0c5c1d88daa1e"
+}

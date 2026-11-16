@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Bodman",
+      "quote": "Dieser am Westende des Überlinger Sees gelegene Ort hatte im Frühmittelalter eine große Bedeutung, da er erst alemannischer Herzogssitz und dann fränkische Königspfalz und überdies eine Münzstätte war.",
+      "english": "This place, located at the western end of the Überlinger See, was of great importance in the early Middle Ages, as it was first an Alemannic ducal seat and then a Frankish royal palace and, moreover, a mint."
+    },
+    {
+      "id": "s2",
+      "name": "Pfahlbaumuseum Unteruhldingen",
+      "quote": "Bei Unteruhldingen ist ein solches Pfahlbaudorf rekonstruiert worden und heute als Pfahlbaumuseum Unteruhldingen zugänglich.",
+      "english": "A pile dwelling village of this kind has been reconstructed near Unteruhldingen and is accessible today as the Pile Dwelling Museum Unteruhldingen."
+    },
+    {
+      "id": "s3",
+      "name": "Singen am Hohentwiel",
+      "quote": "Vom Beginn der Frühbronzezeit sind Grabfunde aus Singen am Hohentwiel zu nennen.",
+      "english": "Grave finds from Singen am Hohentwiel should be mentioned from the beginning of the Early Bronze Age."
+    },
+    {
+      "id": "s4",
+      "name": "Konstanz",
+      "quote": "Wichtigste Orte am See waren Bregenz (keltisch Brigantion) und das heutige Konstanz.",
+      "english": "The most important places on the lake were Bregenz (Celtic Brigantion) and present-day Constance."
+    },
+    {
+      "id": "s5",
+      "name": "Bregenz",
+      "quote": "Wichtigster römischer Ort wurde Bregenz, das bald römisches Stadtrecht bekam und später zum Sitz des Präfekten der Bodenseeflotte wurde.",
+      "english": "Bregenz became the most important Roman town, which soon received Roman city rights and later became the seat of the prefect of the Lake Constance fleet."
+    },
+    {
+      "id": "s6",
+      "name": "Lindau",
+      "quote": "Die Römer waren auch in Lindau, besiedelten dort allerdings nur die Hügel rund um Lindau, da am Ufer Sumpfgebiet war.",
+      "english": "The Romans were also in Lindau, but only settled the hills around Lindau there, as the shore was swampland."
+    },
+    {
+      "id": "s7",
+      "name": "Abtei Reichenau",
+      "quote": "Nach deren Christianisierung wuchs die kulturelle Bedeutung der Region durch die Gründung des Bischofssitzes Konstanz (um 585) und der Abtei Reichenau (724).",
+      "english": "After their Christianization, the cultural importance of the region grew through the founding of the Bishopric of Constance (around 585) and the Reichenau Abbey (724)."
+    },
+    {
+      "id": "s8",
+      "name": "Friedrichshafen",
+      "quote": "Um 1580 bereiste Michel de Montaigne den Bodensee über die Städte Konstanz, Friedrichshafen und Lindau:",
+      "english": "Around 1580, Michel de Montaigne traveled Lake Constance via the cities of Constance, Friedrichshafen and Lindau:"
+    }
+  ],
+  "days": [
+    {
+      "title": "Western Shores and Ancient History",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Religious Centers and Historic Constance",
+      "stop_ids": [
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Eastern Lake and Roman Heritage",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "8e67e818ce5e20579399917c6ea06750a2d213dbf821eb9bb5d77d65831f872c"
+}

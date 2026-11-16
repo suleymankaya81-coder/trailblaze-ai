@@ -1,0 +1,91 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "isole Tremiti",
+      "quote": "Fanno parte del parco le quattro isole Tremiti (riserva marina).",
+      "english": "The four Tremiti islands (marine reserve) are part of the park."
+    },
+    {
+      "id": "s2",
+      "name": "Foresta Umbra",
+      "quote": "All'interno del parco si trova la Foresta Umbra.",
+      "english": "The Umbra Forest is located inside the park."
+    },
+    {
+      "id": "s3",
+      "name": "Punta Pietre Nere",
+      "quote": "Fa eccezione la Punta Pietre Nere, massa di scure rocce vulcaniche risalenti al Triassico, affioranti sulla spiaggia di Lesina.",
+      "english": "An exception is Punta Pietre Nere, a mass of dark volcanic rocks dating back to the Triassic, outcropping on the beach of Lesina."
+    },
+    {
+      "id": "s4",
+      "name": "dolina Pozzatina",
+      "quote": "La dolina Pozzatina, profonda più di 100 metri e con un diametro di circa 500, è la più grande d'Europa (la dolina fa parte del Comune di San Nicandro Garganico).",
+      "english": "The Pozzatina sinkhole, more than 100 meters deep and with a diameter of about 500, is the largest in Europe (the sinkhole is part of the Municipality of San Nicandro Garganico)."
+    },
+    {
+      "id": "s5",
+      "name": "lago di Lesina",
+      "quote": "il lago di Lesina, lungo 24,4 km e largo 2,4 km, ha un perimetro di quasi 50 km ed è a tutti gli effetti una laguna.",
+      "english": "Lake Lesina, 24.4 km long and 2.4 km wide, has a perimeter of almost 50 km and is to all intents and purposes a lagoon."
+    },
+    {
+      "id": "s6",
+      "name": "lago di Varano",
+      "quote": "il lago di Varano è il più grande dell'Italia meridionale (60,5 km²).",
+      "english": "Lake Varano is the largest in southern Italy (60.5 km²)."
+    },
+    {
+      "id": "s7",
+      "name": "lago Salso",
+      "quote": "il lago Salso (5,5 km²), situato presso Manfredonia e alimentato dal fiume Cervaro, si caratterizza invece per le sue acque dolci.",
+      "english": "Lake Salso (5.5 km²), located near Manfredonia and fed by the Cervaro river, is characterized instead by its fresh waters."
+    },
+    {
+      "id": "s8",
+      "name": "Oasi Lago Salso",
+      "quote": "L'area lacustre, per la sua grande rilevanza nel campo della biodiversità è parte dell'Oasi Lago Salso, gestita in collaborazione con WWF Italia.",
+      "english": "The lake area, due to its great relevance in the field of biodiversity, is part of the Lake Salso Oasis, managed in collaboration with WWF Italy."
+    },
+    {
+      "id": "s9",
+      "name": "paludi di Federico II",
+      "quote": "Altri ambienti particolari del Gargano sono: le paludi di Federico II, zone paludose di Frattarolo e dell'Oasi Lago Salso, divise in due zone.",
+      "english": "Other particular environments of the Gargano are: the marshes of Frederick II, swampy areas of Frattarolo and the Lake Salso Oasis, divided into two zones."
+    },
+    {
+      "id": "s10",
+      "name": "Monte Sacro",
+      "quote": "Altri boschi d'interesse naturalistico sono anche quelli di Monte Sant'Angelo, di Monte Sacro (Mattinata), di Spina Pulci (tra San Nicandro Garganico e Cagnano Varano.",
+      "english": "Other woods of naturalistic interest are also those of Monte Sant'Angelo, of Monte Sacro (Mattinata), of Spina Pulci (between San Nicandro Garganico and Cagnano Varano."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Lakes and Geological Wonders",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Southern Wetlands and Mountain Forests",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9",
+        "s10"
+      ]
+    },
+    {
+      "title": "Island and Central Forest Exploration",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ]
+}

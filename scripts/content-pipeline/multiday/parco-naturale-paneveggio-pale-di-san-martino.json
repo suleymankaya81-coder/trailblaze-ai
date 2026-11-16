@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Foresta Demaniale di Paneveggio",
+      "quote": "A nord, definita dai versanti del Lagorai e da quelli del gruppo di Cima Bocche, la vallata del Torrente Travignolo ospita la Foresta Demaniale di Paneveggio, uno tra i più celebri complessi forestali delle Alpi.",
+      "english": "To the north, defined by the slopes of Lagorai and those of the Cima Bocche group, the Travignolo stream valley hosts the Paneveggio State Forest, one of the most famous forest complexes in the Alps."
+    },
+    {
+      "id": "s2",
+      "name": "Pale di San Martino",
+      "quote": "La Dolomia dello Sciliar, chiara e massiccia, si depose in questa regione circa 200 milioni di anni fa raggiungendo spessori di quasi mille metri ed è visibile oggi in tutto il settore orientale del Parco: sul Cimon della Pala, sul Monte Mulaz, sulla Vezzana e sull’intero complesso delle Pale di San Martino, formando dirupi, canaloni, guglie e ghiaioni.",
+      "english": "The Sciliar Dolomite, light and massive, was deposited in this region about 200 million years ago reaching thicknesses of almost a thousand meters and is visible today throughout the eastern sector of the Park: on Cimon della Pala, on Monte Mulaz, on the Vezzana and on the entire Pale di San Martino complex, forming cliffs, gullies, spires and screes."
+    },
+    {
+      "id": "s3",
+      "name": "Val Canali",
+      "quote": "Questa formazione ha una grande variabilità, sia orizzontale che verticale con spessore di qualche centinaio di metri. Affiora in Val Canali, ma, soprattutto, sulla Costazza, Malga Juribello, Cima Valles e sul versante nord di Bellamonte.",
+      "english": "This formation has great variability, both horizontal and vertical with a thickness of a few hundred meters. It outcrops in Val Canali, but, above all, on the Costazza, Malga Juribello, Cima Valles and on the northern slope of Bellamonte."
+    },
+    {
+      "id": "s4",
+      "name": "Val Venegia",
+      "quote": "Le rocce sedimentarie affiorano sulla sinistra orografica del torrente Cismon e in Val Venegia, mentre le rocce magmatiche (o ignee) e le rocce metamorfiche del Permiano affiorano nella zona orientale della catena del Lagorai, massiccio montuoso costituito da porfidi quarziferi, a Passo Rolle, Passo Valles, Colle Margherita fino a Falcade.",
+      "english": "Sedimentary rocks outcrop on the orographic left of the Cismon stream and in Val Venegia, while magmatic (or igneous) and metamorphic rocks from the Permian outcrop in the eastern area of the Lagorai chain, a mountain massif consisting of quartz porphyry, at Passo Rolle, Passo Valles, Colle Margherita as far as Falcade."
+    },
+    {
+      "id": "s5",
+      "name": "Passo Rolle",
+      "quote": "La formazione è ben esposta a nord-ovest di Paneveggio, lungo alcuni tornanti della strada tra San Martino di Castrozza e Passo Rolle, lungo la valle dal Passo Valles fino a Falcade.",
+      "english": "The formation is well exposed northwest of Paneveggio, along some bends of the road between San Martino di Castrozza and Passo Rolle, along the valley from Passo Valles to Falcade."
+    },
+    {
+      "id": "s6",
+      "name": "Malga Juribello",
+      "quote": "Nell’area del Parco gli spessori degli strati arenacei sono di limitata potenza così come gli affioramenti delle arenarie di Val Gardena. Gli affioramenti principali sono sul versante sud di Passo Lusia, a nord di Malga Bocche, a valle di Malga Juribello.",
+      "english": "In the Park area the thicknesses of the sandstone layers are of limited power as are the outcrops of the Val Gardena sandstones. The main outcrops are on the southern slope of Passo Lusia, north of Malga Bocche, downstream of Malga Juribello."
+    },
+    {
+      "id": "s7",
+      "name": "Cimon della Pala",
+      "quote": "La Dolomia dello Sciliar, chiara e massiccia, si depose in questa regione circa 200 milioni di anni fa raggiungendo spessori di quasi mille metri ed è visibile oggi in tutto il settore orientale del Parco: sul Cimon della Pala, sul Monte Mulaz, sulla Vezzana e sull’intero complesso delle Pale di San Martino, formando dirupi, canaloni, guglie e ghiaioni.",
+      "english": "The Sciliar Dolomite, light and massive, was deposited in this region about 200 million years ago reaching thicknesses of almost a thousand meters and is visible today throughout the eastern sector of the Park: on Cimon della Pala, on Monte Mulaz, on the Vezzana and on the entire Pale di San Martino complex, forming cliffs, gullies, spires and screes."
+    }
+  ],
+  "days": [
+    {
+      "title": "Forests and High Passes",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Dolomite Peaks and Valleys",
+      "stop_ids": [
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Geological Wonders of the Valleys",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

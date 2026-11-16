@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lac de Joux",
+      "quote": "Der nordöstliche Teil des Tales wird vom Lac de Joux und vom Lac Brenet eingenommen.",
+      "english": "The northeastern part of the valley is occupied by Lac de Joux and Lac Brenet."
+    },
+    {
+      "id": "s2",
+      "name": "Lac Brenet",
+      "quote": "Heute dienen der Lac de Joux und der Lac Brenet als Speicherbecken des Kraftwerks Vallorbe.",
+      "english": "Today, Lac de Joux and Lac Brenet serve as storage reservoirs for the Vallorbe power station."
+    },
+    {
+      "id": "s3",
+      "name": "Le Pont",
+      "quote": "Die wichtigsten Ortschaften sind Le Sentier und Le Brassus (Gemeinde Le Chenit) sowie Le Pont (Gemeinde L’Abbaye) am Nordostufer des Lac de Joux.",
+      "english": "The most important towns are Le Sentier and Le Brassus (municipality of Le Chenit) as well as Le Pont (municipality of L’Abbaye) on the northeastern shore of Lac de Joux."
+    },
+    {
+      "id": "s4",
+      "name": "Mont-Tendre-Kette",
+      "quote": "Das Tal bildet eine Synklinale, die im Südosten durch die Falten (Antiklinalen) der Mont-Tendre-Kette, im Nordwesten durch diejenigen der Risoux-Kette flankiert wird.",
+      "english": "The valley forms a syncline, flanked to the southeast by the folds (anticlines) of the Mont Tendre chain and to the northwest by those of the Risoux chain."
+    },
+    {
+      "id": "s5",
+      "name": "Risoux-Kette",
+      "quote": "Wesentlich kleiner als diese beiden Seen ist der Lac Ter, der sich in einer Senke zwischen der steil aufgestellten Kalkrippe Le Revers und der Risoux-Kette befindet.",
+      "english": "Significantly smaller than these two lakes is Lac Ter, which is located in a depression between the steep limestone ridge of Le Revers and the Risoux chain."
+    },
+    {
+      "id": "s6",
+      "name": "Lac Ter",
+      "quote": "Wesentlich kleiner als diese beiden Seen ist der Lac Ter, der sich in einer Senke zwischen der steil aufgestellten Kalkrippe Le Revers und der Risoux-Kette befindet.",
+      "english": "Significantly smaller than these two lakes is Lac Ter, which is located in a depression between the steep limestone ridge of Le Revers and the Risoux chain."
+    },
+    {
+      "id": "s7",
+      "name": "Le Sentier",
+      "quote": "In Le Sentier gibt es ein grosses Sportzentrum, ein Uhrenmuseum und eine Kunstgalerie.",
+      "english": "In Le Sentier, there is a large sports center, a watch museum, and an art gallery."
+    },
+    {
+      "id": "s8",
+      "name": "Le Brassus",
+      "quote": "In Le Brassus, das ab 1924 eine Skisprungschanze besass, fanden internationale nordische Skiwettkämpfe statt.",
+      "english": "In Le Brassus, which had a ski jump since 1924, international Nordic ski competitions were held."
+    },
+    {
+      "id": "s9",
+      "name": "Dent de Vaulion",
+      "quote": "Der nordöstliche Talabschluss ist gekennzeichnet durch die Dent de Vaulion und die Hügelkette des Col du Mont d’Orzeires, die durch eine Blattverschiebung im System der Juraketten in ihre heutige Lage verschoben wurden.",
+      "english": "The northeastern end of the valley is characterized by the Dent de Vaulion and the hill chain of the Col du Mont d’Orzeires, which were moved to their current position by a strike-slip fault in the system of the Jura chains."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northeastern Lakes and Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s9"
+      ]
+    },
+    {
+      "title": "Southern Valley Towns and Ridges",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s4"
+      ]
+    },
+    {
+      "title": "Western Nature Exploration",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "654d6bb5399dba60da9e06312dd86ba3431808bb8a6eecd3018f712ceea53065"
+}

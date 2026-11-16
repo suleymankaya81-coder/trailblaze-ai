@@ -1,0 +1,86 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Treseburg",
+      "status": "village",
+      "quote": "Ein zehn Kilometer langer Wanderweg erschließt die Bodeschlucht zwischen Thale und Treseburg.",
+      "english": "A ten-kilometer long hiking trail opens up the Bode Gorge between Thale and Treseburg."
+    },
+    {
+      "id": "s2",
+      "name": "Thale",
+      "status": "village",
+      "quote": "Touristische Schwerpunkte, Gaststätten und Beherbergungsbetriebe befinden sich am Thalenser Eingang zum Bodetal.",
+      "english": "Tourist hubs, restaurants, and accommodation businesses are located at the Thale entrance to the Bode Valley."
+    },
+    {
+      "id": "s3",
+      "name": "Bodekessel",
+      "status": "rapids",
+      "quote": "Sagenumwoben ist die namhafteste Stromschnelle der Bode, der Bodekessel unweit südwestlich der Gaststätte Königsruhe, vor der Sprengung im Jahre 1798 ein niedriger Wasserfall.",
+      "english": "Legendary is the most famous rapid of the Bode, the Bodekessel, not far southwest of the Königsruhe restaurant, which was a low waterfall before being blasted in 1798."
+    },
+    {
+      "id": "s4",
+      "name": "Gaststätte Königsruhe",
+      "status": "restaurant",
+      "quote": "Sagenumwoben ist die namhafteste Stromschnelle der Bode, der Bodekessel unweit südwestlich der Gaststätte Königsruhe, vor der Sprengung im Jahre 1798 ein niedriger Wasserfall.",
+      "english": "Legendary is the most famous rapid of the Bode, the Bodekessel, not far southwest of the Königsruhe restaurant, which was a low waterfall before being blasted in 1798."
+    },
+    {
+      "id": "s5",
+      "name": "Roßtrappe",
+      "status": "viewpoint/rock",
+      "quote": "Zuwegungen ins Tal gehen von den Aussichtsfelsen an Roßtrappe und Hexentanzplatz aus.",
+      "english": "Access routes into the valley lead from the observation rocks at Roßtrappe and Hexentanzplatz."
+    },
+    {
+      "id": "s6",
+      "name": "Hexentanzplatz",
+      "status": "viewpoint/rock",
+      "quote": "1970 wurde die Bodetal-Seilbahn von Thale zum Hexentanzplatz gebaut, und seit 19",
+      "english": "In 1970, the Bode Valley cable car was built from Thale to the Hexentanzplatz, and since 19"
+    },
+    {
+      "id": "s7",
+      "name": "Wilhelmsblick",
+      "status": "viewpoint",
+      "quote": "Von beiden Punkten führen Höhenwege nach Treseburg, wobei der Weg von der Roßtrappe über den Wilhelmsblick führt.",
+      "english": "High trails lead from both points to Treseburg, whereby the path from the Roßtrappe leads via the Wilhelmsblick."
+    },
+    {
+      "id": "s8",
+      "name": "Bodetal-Seilbahn",
+      "status": "cable car",
+      "quote": "1970 wurde die Bodetal-Seilbahn von Thale zum Hexentanzplatz gebaut, und seit 19",
+      "english": "In 1970, the Bode Valley cable car was built from Thale to the Hexentanzplatz, and since 19"
+    }
+  ],
+  "days": [
+    {
+      "title": "Thale Entrance and High Plateaus",
+      "stop_ids": [
+        "s2",
+        "s6",
+        "s8"
+      ]
+    },
+    {
+      "title": "Riverside Path and Gorge Rapids",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Western Gorge and Heights",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "114569bc106a8cee239759b07ce9d6fe8b0ecdc01fa8db3e06eeefeffccf52ca"
+}

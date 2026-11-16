@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Monte Netto",
+      "quote": "Il parco copre l'intera superficie del rilievo collinare del monte Netto, compresi i nuclei abitativi storici di Capriano del Colle e Poncarale.",
+      "english": "The park covers the entire surface of the Monte Netto hilly relief, including the historic residential centers of Capriano del Colle and Poncarale."
+    },
+    {
+      "id": "s2",
+      "name": "fiume Mella",
+      "quote": "A ovest scorre il fiume Mella.",
+      "english": "The Mella river flows to the west."
+    },
+    {
+      "id": "s3",
+      "name": "Palazzo Gallo",
+      "quote": "Da visitare sul monte ci sono: 1) Palazzo Gallo, 2) Villa Grasseni, 3) Chiesa parrocchiale Conversione di San Paolo, 4) Chiesetta della Disciplina, 5) Palazzo Loda-Calzaveglia, 6) cascina Torrazza, 7) cascina Coler, 8) Strada del Vino colli dei Longobardi, 8) cascina di San Bernardo, 9) San Michele, 10) Palazzo Bocca, 11) cascina Colombaie, 12) Chiesa dei Santi Gervasio e Protasio e 13) Palazzo Vecchia.",
+      "english": "To visit on the mountain there are: 1) Palazzo Gallo, 2) Villa Grasseni, 3) Parish Church of the Conversion of St. Paul, 4) Little Church of the Disciplina, 5) Palazzo Loda-Calzaveglia, 6) Torrazza farmhouse, 7) Coler farmhouse, 8) Wine Road of the Longobard Hills, 8) San Bernardo farmhouse, 9) San Michele, 10) Palazzo Bocca, 11) Colombaie farmhouse, 12) Church of Saints Gervasio and Protasio and 13) Palazzo Vecchia."
+    },
+    {
+      "id": "s4",
+      "name": "cascina Trecamini",
+      "quote": "Ad essa si aggiunge la fascia pedecollinare a meridione del centro abitato di Flero, fra le aree artigianali di Fenili Belasi e la riva destra del Vaso Fiume, e quella situata nella parte meridionale del territorio di Capriano del Colle, comprensiva delle cascine Trecamini e Bona, ma ad esclusione della cascina Torricello.",
+      "english": "To this is added the piedmont belt south of the town center of Flero, between the craft areas of Fenili Belasi and the right bank of the Vaso Fiume, and that located in the southern part of the territory of Capriano del Colle, including the Trecamini and Bona farmhouses, but excluding the Torricello farmhouse."
+    },
+    {
+      "id": "s5",
+      "name": "cascina Bona",
+      "quote": "Ad essa si aggiunge la fascia pedecollinare a meridione del centro abitato di Flero, fra le aree artigianali di Fenili Belasi e la riva destra del Vaso Fiume, e quella situata nella parte meridionale del territorio di Capriano del Colle, comprensiva delle cascine Trecamini e Bona, ma ad esclusione della cascina Torricello.",
+      "english": "To this is added the piedmont belt south of the town center of Flero, between the craft areas of Fenili Belasi and the right bank of the Vaso Fiume, and that located in the southern part of the territory of Capriano del Colle, including the Trecamini and Bona farmhouses, but excluding the Torricello farmhouse."
+    },
+    {
+      "id": "s6",
+      "name": "Bosco delle colombaie",
+      "quote": "Il patrimonio boschivo è costituito preponderantemente dal cosiddetto Bosco delle colombaie caratterizzato da esemplari di carpini bianchi, castagni, farnie, di ornielli e di roveri.",
+      "english": "The forest heritage is mainly constituted by the so-called Bosco delle colombaie, characterized by specimens of hornbeam, chestnut, pedunculate oak, manna ash, and sessile oak."
+    },
+    {
+      "id": "s7",
+      "name": "Strada del Vino colli dei Longobardi",
+      "quote": "Da visitare sul monte ci sono: 1) Palazzo Gallo, 2) Villa Grasseni, 3) Chiesa parrocchiale Conversione di San Paolo, 4) Chiesetta della Disciplina, 5) Palazzo Loda-Calzaveglia, 6) cascina Torrazza, 7) cascina Coler, 8) Strada del Vino colli dei Longobardi, 8) cascina di San Bernardo, 9) San Michele, 10) Palazzo Bocca, 11) cascina Colombaie, 12) Chiesa dei Santi Gervasio e Protasio e 13) Palazzo Vecchia.",
+      "english": "To visit on the mountain there are: 1) Palazzo Gallo, 2) Villa Grasseni, 3) Parish Church of the Conversion of St. Paul, 4) Little Church of the Disciplina, 5) Palazzo Loda-Calzaveglia, 6) Torrazza farmhouse, 7) Coler farmhouse, 8) Wine Road of the Longobard Hills, 8) San Bernardo farmhouse, 9) San Michele, 10) Palazzo Bocca, 11) Colombaie farmhouse, 12) Church of Saints Gervasio and Protasio and 13) Palazzo Vecchia."
+    }
+  ],
+  "days": [
+    {
+      "title": "Natural Relief and River Scenery",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Historic Estates and Woodland Trails",
+      "stop_ids": [
+        "s3",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Southern Farmsteads Heritage",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    }
+  ]
+}

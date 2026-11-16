@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "lago di Bracciano",
+      "quote": "Nel territorio del parco ricadono il lago di Bracciano ed il lago di Martignano, nonché tre aree SIC e un sito UNESCO.",
+      "english": "The territory of the park includes Lake Bracciano and Lake Martignano, as well as three SCI areas and a UNESCO site."
+    },
+    {
+      "id": "s2",
+      "name": "lago di Martignano",
+      "quote": "Sono state infatti individuate 162 specie di uccelli, 79 delle quali nidificanti, tra cui il fistione turco (Netta rufina), una rara anatra tuffatrice orientale, presente soprattutto nel lago di Martignano.",
+      "english": "In fact, 162 species of birds have been identified, 79 of which are nesting, including the red-crested pochard (Netta rufina), a rare eastern diving duck, present mainly in Lake Martignano."
+    },
+    {
+      "id": "s3",
+      "name": "monte Termine",
+      "quote": "Le località più importanti sono monte Termine (590 m) e monte Raschio (552 m).",
+      "english": "The most important locations are Mount Termine (590 m) and Mount Raschio (552 m)."
+    },
+    {
+      "id": "s4",
+      "name": "monte Raschio",
+      "quote": "Sito UNESCO, Patrimonio Mondiale Naturale dell'Umanità è una foresta di faggio con una estensione di 73,73 ha che fa parte del SIC IT6010034 e ha la peculiarità di crescere tra i 450 m s.l.m. e i 552 m s.l.m. di monte Raschio.",
+      "english": "A UNESCO site and World Natural Heritage is a beech forest with an extension of 73.73 hectares that is part of SCI IT6010034 and has the peculiarity of growing between 450 m and 552 m above sea level on Mount Raschio."
+    },
+    {
+      "id": "s5",
+      "name": "fonte Chiappino",
+      "quote": "Grazie alle piogge abbondanti ed alle favorevoli condizioni del suolo, le faggete riescono a crescere a quote decisamente inferiori, fino a 350 m s.l.m. di fonte Chiappino.",
+      "english": "Thanks to abundant rainfall and favorable soil conditions, the beech forests are able to grow at significantly lower altitudes, down to 350 m above sea level at the Chiappino spring."
+    },
+    {
+      "id": "s6",
+      "name": "Caldara di Manziana",
+      "quote": "Il monumento naturale della Caldara di Manziana si estende per 90 ha ed è situato alle estreme propaggini del vulcano Sabatino.",
+      "english": "The natural monument of Caldara di Manziana covers 90 hectares and is located at the extreme edges of the Sabatino volcano."
+    },
+    {
+      "id": "s7",
+      "name": "fosso della Caldara",
+      "quote": "La zona è interessante per la presenza lungo il fosso della Caldara di boschi di ontano nero, cerro, farnetto, roverella, acero minore, olmo camprestre, carpino nero.",
+      "english": "The area is interesting due to the presence along the Caldara stream of forests of black alder, Turkey oak, Hungarian oak, downy oak, Montpellier maple, field elm, and black hornbeam."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lakes and Volcanic Landscapes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Beech Forests and Northern Summits",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    }
+  ]
+}

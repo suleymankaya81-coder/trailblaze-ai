@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Großen Stechlinsee",
+      "quote": "Der Naturpark wurde nach dem Großen Stechlinsee und der historischen Landschaft Ruppiner Land benannt.",
+      "english": "The nature park was named after Lake Great Stechlin and the historical landscape of Ruppiner Land."
+    },
+    {
+      "id": "s2",
+      "name": "Rheinsberger Seengebiet",
+      "quote": "Er umfasst das Rheinsberger Seengebiet und die Ruppiner Schweiz.",
+      "english": "It includes the Rheinsberg Lake District and the Ruppiner Schweiz."
+    },
+    {
+      "id": "s3",
+      "name": "Ruppiner Schweiz",
+      "quote": "Er umfasst das Rheinsberger Seengebiet und die Ruppiner Schweiz.",
+      "english": "It includes the Rheinsberg Lake District and the Ruppiner Schweiz."
+    },
+    {
+      "id": "s4",
+      "name": "Menz",
+      "quote": "Das Besucherzentrum des Naturparks befindet sich in Menz.",
+      "english": "The nature park's visitor center is located in Menz."
+    },
+    {
+      "id": "s5",
+      "name": "NaturParkHaus Stechlin",
+      "quote": "Im NaturParkHaus Stechlin wird eine Ausstellung zu den charakteristischen Lebensräume des Gebietes – Buchenwälder, Moore und Klarwasserseen – und ihren Bewohnern gezeigt.",
+      "english": "In the NaturParkHaus Stechlin, an exhibition on the characteristic habitats of the area – beech forests, moors and clear-water lakes – and their inhabitants is shown."
+    },
+    {
+      "id": "s6",
+      "name": "Menzer Heide",
+      "quote": "Träger des NaturParkHauses ist der Förderverein „Naturlandschaft Stechlin und Menzer Heide e. V.“, der auch ein Programm an Umweltbildungsveranstaltungen anbietet.",
+      "english": "The sponsor of the NaturParkHaus is the association 'Naturlandschaft Stechlin und Menzer Heide e. V.', which also offers a program of environmental education events."
+    },
+    {
+      "id": "s7",
+      "name": "Naturschutzgebiet Stechlin",
+      "quote": "Das Naturschutzgebiet Stechlin wurde am 15. November 2002 mit einer Gesamtgröße von 8.760 Hektar durch Festsetzung der Rechtsverordnung geschützt.",
+      "english": "The Stechlin Nature Reserve was protected on November 15, 2002, with a total size of 8,760 hectares by establishing the legal ordinance."
+    }
+  ],
+  "days": [
+    {
+      "title": "Stechlin Lakes and Nature Reserve",
+      "stop_ids": [
+        "s1",
+        "s7"
+      ]
+    },
+    {
+      "title": "Menz Visitor Center and Heath",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Rheinsberg and Ruppiner Landscapes",
+      "stop_ids": [
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "_text_sha": "3189d9260273fbcad8e0bc3cae07aff10d8ce4944442145dc90200232dd6d92d"
+}

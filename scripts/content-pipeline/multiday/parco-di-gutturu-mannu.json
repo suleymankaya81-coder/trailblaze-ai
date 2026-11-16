@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "riserva naturale di Monte Arcosu",
+      "quote": "All’interno del parco si trovano infatti la riserva naturale di Monte Arcosu, appartenente al WWF Italia (World Wide Fund for Nature), e cinque foreste demaniali (Gutturu Mannu, Is Cannoneris, Monte Nieddu, Pixinamanna, Foresta di Pantaleo);",
+      "english": "In fact, inside the park are the Monte Arcosu nature reserve, belonging to WWF Italy (World Wide Fund for Nature), and five state forests (Gutturu Mannu, Is Cannoneris, Monte Nieddu, Pixinamanna, Foresta di Pantaleo);"
+    },
+    {
+      "id": "s2",
+      "name": "Gutturu Mannu",
+      "quote": "All’interno del parco si trovano infatti la riserva naturale di Monte Arcosu, appartenente al WWF Italia (World Wide Fund for Nature), e cinque foreste demaniali (Gutturu Mannu, Is Cannoneris, Monte Nieddu, Pixinamanna, Foresta di Pantaleo);",
+      "english": "In fact, inside the park are the Monte Arcosu nature reserve, belonging to WWF Italy (World Wide Fund for Nature), and five state forests (Gutturu Mannu, Is Cannoneris, Monte Nieddu, Pixinamanna, Foresta di Pantaleo);"
+    },
+    {
+      "id": "s3",
+      "name": "Is Cannoneris",
+      "quote": "Le foreste di Pixinamanna e Is Cannoneris sono abitate da popolazioni di Daino.",
+      "english": "The forests of Pixinamanna and Is Cannoneris are inhabited by populations of Fallow Deer."
+    },
+    {
+      "id": "s4",
+      "name": "Monte Nieddu",
+      "quote": "All’interno del parco si trovano infatti la riserva naturale di Monte Arcosu, appartenente al WWF Italia (World Wide Fund for Nature), e cinque foreste demaniali (Gutturu Mannu, Is Cannoneris, Monte Nieddu, Pixinamanna, Foresta di Pantaleo);",
+      "english": "In fact, inside the park are the Monte Arcosu nature reserve, belonging to WWF Italy (World Wide Fund for Nature), and five state forests (Gutturu Mannu, Is Cannoneris, Monte Nieddu, Pixinamanna, Foresta di Pantaleo);"
+    },
+    {
+      "id": "s5",
+      "name": "Pixinamanna",
+      "quote": "Le foreste di Pixinamanna e Is Cannoneris sono abitate da popolazioni di Daino.",
+      "english": "The forests of Pixinamanna and Is Cannoneris are inhabited by populations of Fallow Deer."
+    },
+    {
+      "id": "s6",
+      "name": "Foresta di Pantaleo",
+      "quote": "All’interno del parco si trovano infatti la riserva naturale di Monte Arcosu, appartenente al WWF Italia (World Wide Fund for Nature), e cinque foreste demaniali (Gutturu Mannu, Is Cannoneris, Monte Nieddu, Pixinamanna, Foresta di Pantaleo);",
+      "english": "In fact, inside the park are the Monte Arcosu nature reserve, belonging to WWF Italy (World Wide Fund for Nature), and five state forests (Gutturu Mannu, Is Cannoneris, Monte Nieddu, Pixinamanna, Foresta di Pantaleo);"
+    },
+    {
+      "id": "s7",
+      "name": "foresta Demaniale di Piscina Manna",
+      "quote": "Oltre a quelle spontanee, vanno menzionate anche le specie naturalizzate o introdotte dall’uomo, quali l'Eucalyptus camaldulensis, particolarmente diffuso nei terreni forestali privati, il Pinus pinea, presente in alcune aree forestali, in particolare nella foresta Demaniale di Piscina Manna, a Santa Margherita di Pula e a Poggio dei Pini, l'Acacia retinoides, fortemente distribuita nel parco DCK ubicato presso Pula, lungo la strada d'accesso alla foresta demaniale di Piscina Manna.",
+      "english": "In addition to the spontaneous ones, we should also mention the species naturalized or introduced by man, such as Eucalyptus camaldulensis, particularly widespread in private forest lands, Pinus pinea, present in some forest areas, in particular in the Piscina Manna State Forest, at Santa Margherita di Pula and at Poggio dei Pini, Acacia retinoides, strongly distributed in the DCK park located near Pula, along the access road to the Piscina Manna state forest."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Reserves and Gutturu Valley",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s4"
+      ]
+    },
+    {
+      "title": "Southeastern State Forests",
+      "stop_ids": [
+        "s5",
+        "s7"
+      ]
+    },
+    {
+      "title": "Western Forests and Peaks",
+      "stop_ids": [
+        "s3",
+        "s6"
+      ]
+    }
+  ]
+}

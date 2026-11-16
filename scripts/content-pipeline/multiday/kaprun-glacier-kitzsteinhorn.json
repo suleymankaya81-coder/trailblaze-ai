@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kitzsteinhorn",
+      "quote": "Das Kitzsteinhorn ist Teil der in den Hohen Tauern gelegenen Glocknergruppe und erreicht eine Höhe von 3203 m ü. A.",
+      "english": "The Kitzsteinhorn is part of the Glockner Group located in the Hohe Tauern and reaches a height of 3203 m above sea level."
+    },
+    {
+      "id": "s2",
+      "name": "Top of Salzburg",
+      "quote": "Auf dem Stationsdach befindet sich eine Aussichtsplattform namens „Top of Salzburg“.",
+      "english": "On the roof of the station there is a viewing platform called \"Top of Salzburg\"."
+    },
+    {
+      "id": "s3",
+      "name": "Glückauf-Hanna-Stollen",
+      "quote": "Von der Gipfelstation ausgehend gelangt man unter anderem durch den 362 Meter langen Glückauf-Hanna-Stollen zu einer zweiten Aussichtsplattform mit Blick auf den Nationalpark Hohe Tauern.",
+      "english": "Starting from the summit station, one can reach a second viewing platform with a view of the Hohe Tauern National Park, passing among other things through the 362-meter-long Glückauf-Hanna-Stollen tunnel."
+    },
+    {
+      "id": "s4",
+      "name": "Nationalpark Gallery",
+      "quote": "Der Stollen wird daher seither – wie auch die zweite Aussichtsplattform – als „Nationalpark Gallery“ bezeichnet.",
+      "english": "Since then, the tunnel – as well as the second viewing platform – has been referred to as the \"Nationalpark Gallery\"."
+    },
+    {
+      "id": "s5",
+      "name": "Alpincenter",
+      "quote": "Sie führt noch heute vom Alpincenter zur Bergstation „Top of Salzburg“, knapp unterhalb des Gipfels des Kitzsteinhorns.",
+      "english": "It still leads today from the Alpincenter to the \"Top of Salzburg\" mountain station, just below the summit of the Kitzsteinhorn."
+    },
+    {
+      "id": "s6",
+      "name": "Salzburger Hütte",
+      "quote": "Am 12. Dezember 1965 wurde die Gletscherbahn Kaprun 1 eröffnet, sie führte in zwei Teilabschnitten vom Tal aus, mit einer Umstiegsstation bei der Salzburger Hütte, zum Alpincenter oberhalb der Krefelder Hütte.",
+      "english": "On December 12, 1965, the Kaprun 1 Glacier Railway was opened; it led from the valley in two sections, with a transfer station at the Salzburger Hütte, to the Alpincenter above the Krefelder Hütte."
+    },
+    {
+      "id": "s7",
+      "name": "Schmiedingerkees",
+      "quote": "Der Schmiedingerkees kann offene Spalten führen und Steigeisen bzw. in extremen Situationen auch eine Seilsicherung notwendig machen.",
+      "english": "The Schmiedingerkees can have open crevasses and may make crampons or, in extreme situations, a rope belay necessary."
+    },
+    {
+      "id": "s8",
+      "name": "Hohe Arche",
+      "quote": "Am 11. November 2020 ist vom etwas nordwestlich gelegenen Nebengipfel Hohe Arche (2453 m), direkt vom Gipfelgrat ein großer Felssturz abgegangen.",
+      "english": "On November 11, 2020, a large rockfall occurred directly from the summit ridge of the nearby peak Hohe Arche (2453 m), located slightly to the northwest."
+    }
+  ],
+  "days": [
+    {
+      "title": "Summit Experience and National Park Views",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Mountain Huts and Alpine Glaciers",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "a706ca42572004a04fa7d15b78074899331e729818791c97b0fa92db780c4027"
+}

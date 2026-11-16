@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Monti dell'Uccellina",
+      "quote": "Il parco naturale della Maremma è un'area naturale protetta dell'Italia centrale, che occupa il territorio dei Monti dell'Uccellina, in provincia di Grosseto; è stato il primo parco della regione Toscana, istituito con L.R. 65 del 5 giugno 1975.",
+      "english": "The Maremma Natural Park is a protected natural area in central Italy, which occupies the territory of the Uccellina Mountains, in the province of Grosseto; it was the first park in the Tuscany region, established by Regional Law 65 of June 5, 1975."
+    },
+    {
+      "id": "s2",
+      "name": "Principina a Mare",
+      "quote": "Il Parco ha un'estensione di 9800 ettari e si estende, lungo costa, dal paese di Principina a Mare (comune di Grosseto), fino al paese di Talamone (comune di Orbetello).",
+      "english": "The Park covers an area of 9800 hectares and extends along the coast from the village of Principina a Mare (municipality of Grosseto) to the village of Talamone (municipality of Orbetello)."
+    },
+    {
+      "id": "s3",
+      "name": "Talamone",
+      "quote": "Il Parco ha un'estensione di 9800 ettari e si estende, lungo costa, dal paese di Principina a Mare (comune di Grosseto), fino al paese di Talamone (comune di Orbetello).",
+      "english": "The Park covers an area of 9800 hectares and extends along the coast from the village of Principina a Mare (municipality of Grosseto) to the village of Talamone (municipality of Orbetello)."
+    },
+    {
+      "id": "s4",
+      "name": "Foce dell'Ombrone",
+      "quote": "Nel suo territorio ricadono gli ultimi terreni paludosi nei pressi della foce dell'Ombrone, che, ricchi di vita e ancora selvaggi, ospitano importanti colonie di uccelli palustri.",
+      "english": "Within its territory lie the last marshy lands near the mouth of the Ombrone, which, rich in life and still wild, host important colonies of marsh birds."
+    },
+    {
+      "id": "s5",
+      "name": "Fattoria di Spergolaia",
+      "quote": "Più a sud la zona è composta dai monti dell'Uccellina ricoperti da una fitta macchia mediterranea e verso est, ai piedi dei monti, da vaste distese erbose, dove si trova la Fattoria di Spergolaia centro amministrativo dell'azienda regionale e sede dei butteri.",
+      "english": "Further south the area is composed of the Uccellina mountains covered by dense Mediterranean scrub and to the east, at the foot of the mountains, by vast grassy expanses, where the Fattoria di Spergolaia, administrative center of the regional farm and headquarters of the butteri, is located."
+    },
+    {
+      "id": "s6",
+      "name": "Pianure di Maremma",
+      "quote": "All'interno del Parco regionale si trova il sito di interesse regionale (SIR) \"Pianure di Maremma\": l'area è tutelata anche come zona di protezione speciale (ZPS), e il SIR \"Dune dell'Uccellina\", anch'esso sito di interesse comunitario (SIC) e zona di protezione speciale (ZPS) e completamente ricompreso nel Parco naturale.",
+      "english": "Inside the Regional Park is the site of regional interest (SIR) \"Pianure di Maremma\": the area is also protected as a special protection zone (ZPS), and the SIR \"Dune dell'Uccellina\", also a site of community interest (SIC) and special protection zone (ZPS) and completely included in the Natural Park."
+    },
+    {
+      "id": "s7",
+      "name": "Dune dell'Uccellina",
+      "quote": "Il SIR \"Dune dell'Uccellina\" costituisce uno dei sempre più rari tratti significativi di costa sabbiosa, con limitata antropizzazione e con dinamismo vegetazionale non condizionato dal turismo balneare.",
+      "english": "The SIR \"Dune dell'Uccellina\" constitutes one of the increasingly rare significant stretches of sandy coast, with limited anthropization and with vegetational dynamism not conditioned by beach tourism."
+    },
+    {
+      "id": "s8",
+      "name": "Fiume Ombrone",
+      "quote": "Limitazione degli impatti negativi sulla fauna causati dal disturbo antropico diretto, mediante l'incremento dell'attività di sorveglianza (in particolare nei periodi di migrazione e svernamento), nelle zone ad accesso regolamentato; regolamentazione della navigazione in canoa nel Fiume Ombrone; adeguata organizzazione delle visite guidate (E).",
+      "english": "Limitation of negative impacts on fauna caused by direct human disturbance, through increased surveillance activity (particularly during migration and wintering periods), in regulated access areas; regulation of canoeing on the Ombrone River; adequate organization of guided tours (E)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Marshes and River Delta",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s8"
+      ]
+    },
+    {
+      "title": "Central Plains and Administrative Heart",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Southern Peaks and Coastal Dunes",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s7"
+      ]
+    }
+  ]
+}

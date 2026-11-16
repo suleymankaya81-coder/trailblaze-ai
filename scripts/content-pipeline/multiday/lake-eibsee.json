@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Weitsee",
+      "english": "In the northeast, the 4.8-hectare and 26-meter-deep Untersee is separated from the main part of the lake, the 172-hectare Weitsee, by a 50-meter-wide sill of rockslide debris.",
+      "quote": "Im Nordosten ist der 4,8 Hektar große und 26 Meter tiefe Untersee durch eine 50 Meter breite Schwelle aus Bergsturztrümmern vom Hauptteil des Sees, dem 172 Hektar großen Weitsee, getrennt."
+    },
+    {
+      "id": "s2",
+      "name": "Untersee",
+      "english": "The underground drainage of Lake Eibsee takes place in the Untersee.",
+      "quote": "Der unterunterirdische Abfluss des Eibsees erfolgt im Untersee."
+    },
+    {
+      "id": "s3",
+      "name": "Eibseerundweg",
+      "english": "A small bridge, part of the Eibsee circular trail, leads across this narrow sill.",
+      "quote": "Eine kleine Brücke, Teil des Eibseerundwegs, führt über diese enge Schwelle."
+    },
+    {
+      "id": "s4",
+      "name": "Frillensee",
+      "english": "To the completely separated small neighboring lakes belong the Frillensee in the south (not to be confused with the larger Frillensee near Inzell) as well as Braxensee, Steingringpriel, Steinsee, Froschsee and Drachenseelein in the north.",
+      "quote": "Zu den vollständig abgetrennten kleinen Nachbarseen gehören der Frillensee im Süden (nicht zu verwechseln mit dem größeren Frillensee bei Inzell) sowie Braxensee, Steingringpriel, Steinsee, Froschsee und Drachenseelein im Norden."
+    },
+    {
+      "id": "s5",
+      "name": "Braxensee",
+      "english": "Braxensee: 0.24 ha (completely separated, 13 m north of Lake Eibsee) circumference 200 m",
+      "quote": "Braxensee: 0,24 ha (vollständig abgetrennt, 13 m nördlich des Eibsees) Umfang 200 m"
+    },
+    {
+      "id": "s6",
+      "name": "Steinsee",
+      "english": "Steinsee: 0.08 ha, 185 m north of Lake Eibsee (Steingring) or 100 m north of the Steingringpriel",
+      "quote": "Steinsee: 0,08 ha, 185 m nördlich des Eibsees (Steingring) bzw. 100 m nördlich des Steingringpriels"
+    },
+    {
+      "id": "s7",
+      "name": "Froschsee",
+      "english": "Froschsee: 0.035 ha (350 m²), 40 m north of Lake Eibsee (Steingring)",
+      "quote": "Froschsee: 0,035 ha (350 m²), 40 m nördlich des Eibsees (Steingring)"
+    },
+    {
+      "id": "s8",
+      "name": "Maximiliansinsel",
+      "english": "Every year, around 25 civil wedding ceremonies were held in the small log cabin on Maximiliansinsel.",
+      "quote": "In der kleinen Holzblockhütte auf der Maximiliansinsel wurden jährlich rund 25 standesamtliche Trauungen durchgeführt."
+    },
+    {
+      "id": "s9",
+      "name": "Steinbichl",
+      "english": "Only the smallest island, Steinbichl, 50 meters southeast of Sasseninsel, does not form its own parcel of land.",
+      "quote": "Nur die kleinste Insel, Steinbichl, 50 Meter südöstlich der Sasseninsel, bildet kein eigenes Flurstück."
+    }
+  ],
+  "days": [
+    {
+      "title": "Main Lake and Loop Trail",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Southern and Northern Small Lakes",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Eibsee Islands",
+      "stop_ids": [
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "5178e8997f9aeddd8417c21b35e122002802ed8399b8e4d7c9af588cac548424"
+}

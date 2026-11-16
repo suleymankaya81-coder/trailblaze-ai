@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "sistema dunale",
+      "quote": "Il parco è fittamente boscato e protetto dai venti marini da un sistema dunale continuo, molto ben formato e conservato, di altezza media sui cinque metri con punte isolate di oltre dieci metri",
+      "english": "The park is densely wooded and protected from sea winds by a continuous dune system, very well formed and preserved, with an average height of about five meters and isolated peaks of over ten meters."
+    },
+    {
+      "id": "s2",
+      "name": "villa dei Cavalleggeri",
+      "quote": "Negli ultimi anni il comune ha acquistato anche la proprietà formale di quasi tutto il parco, con la sola eccezione della villa dei Cavalleggeri e di alcuni terreni circostanti.",
+      "english": "In recent years the municipality has also acquired formal ownership of almost the entire park, with the sole exception of the villa dei Cavalleggeri and some surrounding lands."
+    },
+    {
+      "id": "s3",
+      "name": "arenile",
+      "quote": "L'attività principale svolta nel parco è quella balneare, concentrata nel periodo da giugno a settembre e localizzata essenzialmente sull'arenile.",
+      "english": "The main activity carried out in the park is bathing, concentrated in the period from June to September and essentially located on the sandy shore."
+    },
+    {
+      "id": "s4",
+      "name": "sentieri",
+      "quote": "Il parco viene attraversato trasversalmente, lungo sentieri che conducono dalla strada provinciale alla spiaggia.",
+      "english": "The park is crossed transversally along paths that lead from the provincial road to the beach."
+    },
+    {
+      "id": "s5",
+      "name": "strada interna sterrata",
+      "quote": "Al centro del parco è stata realizzata una strada interna sterrata che lo attraversa longitudinalmente per quasi tutta la sua lunghezza.",
+      "english": "In the center of the park, an internal dirt road has been created that crosses it longitudinally for almost its entire length."
+    },
+    {
+      "id": "s6",
+      "name": "zone paludose",
+      "quote": "Nelle due uniche residue zone paludose e lungo il relativo fossato di drenaggio, si trovano piante caratteristiche delle zone umide marine quali: Artemisia coerulescens, Arundo donax, Carex extensa, Claudium mariscus, Elymus pycnanthus, Juncus acutus, Juncus maritimus, Limonium angustifolium, Salicornia maritima, Schoenus maritimus.",
+      "english": "In the only two remaining marshy areas and along the relative drainage ditch, characteristic plants of marine humid zones are found such as: Artemisia coerulescens, Arundo donax, Carex extensa, Claudium mariscus, Elymus pycnanthus, Juncus acutus, Juncus maritimus, Limonium angustifolium, Salicornia maritima, Schoenus maritimus."
+    },
+    {
+      "id": "s7",
+      "name": "Bosco retrodunale",
+      "quote": "Bosco retrodunale, con piante tipiche della macchia mediterranea e residui degli impianti di epoca granducale, quali: acero trilobo (Acer monspessulanus), alloro (Laurus nobilis), arisaro (Arisarum vulgare), biancospino (Crataegus monogyna), carpino nero (Ostrya carpinifolia), cerro (Quercus cerris), ciclamini (Cyclamen hederifolium), corbezzolo (Arbutus unedo), euforbia arborea (Euforbia dendroides), leccio (Quercus ilex), lentisco (Pistacia lentiscus), salsapariglia (Smilax aspera), orniello (Fraxinus ornus), pino marittimo (Pinus pinaster), pino domestico (Pinus pinea), quercia da sughero (Quercus suber), roverella (Quercus pubescens), sabina marittima (Juniperus sabina), sorbo (Sorbus domestica e Sorbus torminalis), vitalba (Clematis vitalba), lentaggine (Viburnum tinus), pungitopo (Ruscus aculeatus), oleastro (Olea europaea var. silvestris, citiso rosso (Chamaecytisus purpureus).",
+      "english": "Back-dune forest, with plants typical of the Mediterranean scrub and residues of the Grand Ducal era plantations, such as: Montpellier maple, laurel, friar's cowl, hawthorn, European hop-hornbeam, Turkey oak, cyclamen, strawberry tree, tree spurge, holm oak, mastic, sarsaparilla, manna ash, maritime pine, stone pine, cork oak, pubescent oak, maritime savin, service tree, old man's beard, laurustinus, butcher's broom, wild olive, and purple broom."
+    }
+  ],
+  "days": [
+    {
+      "title": "Dunes and Coastal Forest Exploration",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s3"
+      ]
+    },
+    {
+      "title": "Park Trails and Historic Landmarks",
+      "stop_ids": [
+        "s2",
+        "s4"
+      ]
+    },
+    {
+      "title": "Marshes and Central Pathways",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

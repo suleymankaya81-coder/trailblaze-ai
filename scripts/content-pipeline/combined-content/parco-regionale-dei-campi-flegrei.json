@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Campania",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco regionale dei Campi Flegrei"
+        "Astroni",
+        "Eremo dei Camaldoli"
       ],
       "seo_title": "Parco regionale dei Campi Flegrei Visit Guide"
     },
@@ -32,16 +33,57 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco regionale dei Campi Flegrei",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Volcanoes and Ancient Craters",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco regionale dei Campi Flegrei",
-                "stop_id": "parco-regionale-dei-campi-flegrei",
-                "detail": "The regional park of Campi Flegrei is a protected natural area established in [dated source] in implementation of the Regional Law of Campania n. 33 issued on 1 September 1993. The population affected by the park area is about 140 000 inhabitants."
+                "name": "Astroni",
+                "stop_id": "parco-regionale-dei-campi-flegrei--s3",
+                "detail": "Remains of lakes are found inside the craters of Astroni and Solfatara."
+              },
+              {
+                "name": "Eremo dei Camaldoli",
+                "stop_id": "parco-regionale-dei-campi-flegrei--s10",
+                "detail": "One of the sighting points for birds of prey is located on the panoramic terrace of the Camaldoli hermitage situated at the top of the hill of the same name."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco regionale dei Campi Flegrei before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Archaeology and Coastal Lakes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "lago d'Averno",
+                "stop_id": "parco-regionale-dei-campi-flegrei--s1",
+                "detail": "Some are of volcanic formation (Lake Avernus), while others are lagoonal (Lake Lucrino, Lake Miseno, Lake Fusaro); they have different compositional characteristics, with some being brackish (Fusaro) and others fresh (Avernus)."
+              },
+              {
+                "name": "Cuma",
+                "stop_id": "parco-regionale-dei-campi-flegrei--s5",
+                "detail": "In Roman times, the Phlegraean Fields were an urban-territorial system of fundamental importance, hosting the port and commercial city of Puteoli, the military ports of Lucrino and Capo Miseno, the system of imperial and thermal villas of Baia (Bacoli)-Bauli and the \"Greek\" city of Cuma."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco regionale dei Campi Flegrei before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Islands and Capes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Grotta della Dragonara",
+                "stop_id": "parco-regionale-dei-campi-flegrei--s7",
+                "detail": "Miseno, Capo Miseno, Dragonara Grotto;"
+              },
+              {
+                "name": "Nisida",
+                "stop_id": "parco-regionale-dei-campi-flegrei--s9",
+                "detail": "Sporadic presence of hares and rabbits; the latter are present in greater numbers on the islet of Nisida."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco regionale dei Campi Flegrei before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +121,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_regionale_dei_Campi_Flegrei"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_regionale_dei_Campi_Flegrei"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:04:41.282382+00:00"
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Campania",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "parco sommerso di Baia"
+        "Lacus Baianus",
+        "Pausilypon"
       ],
       "seo_title": "parco sommerso di Baia Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: parco sommerso di Baia",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Submerged Ports and Imperial Villas",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "parco sommerso di Baia",
-                "stop_id": "parco-sommerso-di-baia",
-                "detail": "The underwater park of Baia is a protected marine area located on the coast of the metropolitan city of Naples north of the Gulf of Naples. It is also called \"the submerged Pompeii\", because it has a structure similar to that of the Roman city."
+                "name": "Lacus Baianus",
+                "stop_id": "parco-sommerso-di-baia--s3",
+                "detail": "In addition, the remains of the commercial ports of Baia (Lacus Baianus) and the Portus Julius are found submerged on this coast."
+              },
+              {
+                "name": "Pausilypon",
+                "stop_id": "parco-sommerso-di-baia--s6",
+                "detail": "Around the first century BC, in fact, the entire coastal area north of Naples was a flourishing health resort, made fashionable also by the presence of an imperial villa, the Pausilypon precisely, which gave its name to the Promontory of Posillipo, built by the wealthy freedman Publius Vedius Pollio."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for parco sommerso di Baia before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Archeological Treasures and Naval History",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "ninfeo di Punta Epitaffio",
+                "stop_id": "parco-sommerso-di-baia--s1",
+                "detail": "Among the most valuable environments, which today are submerged, there is the nymphaeum of Punta Epitaffio, a triclinium serving as a banquet hall dating back to the era of Emperor Claudius, whose statues have been moved inside the Archaeological Museum of the Phlegraean Fields where the room has been reconstructed."
+              },
+              {
+                "name": "Capo Miseno",
+                "stop_id": "parco-sommerso-di-baia--s5",
+                "detail": "Further north was the port of Capo Miseno, the historic seat of the Roman imperial fleet."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for parco sommerso di Baia before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_sommerso_di_Baia"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_sommerso_di_Baia"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:06:45.638247+00:00"
       }
     }
   }

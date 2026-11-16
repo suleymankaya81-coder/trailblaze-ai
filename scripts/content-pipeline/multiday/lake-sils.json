@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Sils Maria",
+      "quote": "Drei- bis viermal täglich legt ein Motorboot in Sils Maria, Chastè, Plaun da Lej, Isola und Maloja an, diesen Linienverkehr gibt es bereits seit 1907.",
+      "english": "Three to four times a day a motorboat docks in Sils Maria, Chastè, Plaun da Lej, Isola and Maloja; this regular service has existed since 1907."
+    },
+    {
+      "id": "s2",
+      "name": "Nietzsche-Haus",
+      "quote": "In seinem damaligen Wohnhaus, dem heutigen Nietzsche-Haus, ist ein Museum untergebracht, in dem unter anderem Originalschriften, Briefe und Erstausgaben besichtigt werden können.",
+      "english": "A museum is housed in his former residence, today's Nietzsche House, where original writings, letters, and first editions, among other things, can be viewed."
+    },
+    {
+      "id": "s3",
+      "name": "Chastè",
+      "quote": "Als Hauptfundort gilt die südlich der Halbinsel Chastè liegende Bucht.",
+      "english": "The bay located south of the Chastè peninsula is considered the main discovery site."
+    },
+    {
+      "id": "s4",
+      "name": "Isola",
+      "quote": "Dort befindet sich auf einer Aufschüttung das Maiensäss Isola.",
+      "english": "There, on an embankment, is the Maiensäss Isola."
+    },
+    {
+      "id": "s5",
+      "name": "Val Fedoz",
+      "quote": "Diese Aufschüttung etwa in der Mitte des südlichen Ufers geschieht durch den Zufluss der Aua da Fedoz aus dem kaum erschlossenen Val Fedoz.",
+      "english": "This embankment, roughly in the middle of the southern shore, is created by the inflow of the Aua da Fedoz from the barely developed Val Fedoz."
+    },
+    {
+      "id": "s6",
+      "name": "Plaun da Lej",
+      "quote": "Der See ist beliebt bei Windsurfern, die durch den Malojawind vom Malojapass her unterstützt werden, auch gibt es eine Segelschule in Plaun da Lej.",
+      "english": "The lake is popular with windsurfers who are aided by the Maloja wind from the Maloja Pass; there is also a sailing school in Plaun da Lej."
+    },
+    {
+      "id": "s7",
+      "name": "Grevasalvas",
+      "quote": "Nördlich des Sees gibt es keine Seitentäler, jedoch das durch einen Heidi-Film bekannte Maiensäss Grevasalvas.",
+      "english": "To the north of the lake there are no side valleys, but there is the Maiensäss Grevasalvas, known from a Heidi film."
+    },
+    {
+      "id": "s8",
+      "name": "Hotel Cristallina",
+      "quote": "Seither ist es im Besitz der Familie Walther und heisst «Hotel Cristallina».",
+      "english": "Since then it has been owned by the Walther family and is called \"Hotel Cristallina\"."
+    }
+  ],
+  "days": [
+    {
+      "title": "Culture and History in Sils Maria",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Southern Shores and Alpine Valleys",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Northern Lakeshore and Film History",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "d91373b382b74e605ac7f3b74e44cb4d11be13fdd4bbe29e38f3efe029e4cf8e"
+}
