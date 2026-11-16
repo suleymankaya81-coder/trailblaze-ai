@@ -4,25 +4,25 @@
       "id": "s1",
       "name": "Trischen",
       "quote": "Teil des Nationalparks sind unbewohnte Inseln, Halligen und Sandbänke wie Trischen, Blauort oder die Nordfriesischen Außensände.",
-      "english": "Part of the national park are uninhabited islands, halligen and sandbanks such as Trischen, Blauort or the North Frisian Outer Sands."
+      "english": "Part of the national park are uninhabited islands, Halligen, and sandbanks such as Trischen, Blauort, or the North Frisian Outer Sands."
     },
     {
       "id": "s2",
       "name": "Blauort",
       "quote": "Teil des Nationalparks sind unbewohnte Inseln, Halligen und Sandbänke wie Trischen, Blauort oder die Nordfriesischen Außensände.",
-      "english": "Part of the national park are uninhabited islands, halligen and sandbanks such as Trischen, Blauort or the North Frisian Outer Sands."
+      "english": "Part of the national park are uninhabited islands, Halligen, and sandbanks such as Trischen, Blauort, or the North Frisian Outer Sands."
     },
     {
       "id": "s3",
-      "name": "Nordfriesische Außensände",
+      "name": "Nordfriesischen Außensände",
       "quote": "Teil des Nationalparks sind unbewohnte Inseln, Halligen und Sandbänke wie Trischen, Blauort oder die Nordfriesischen Außensände.",
-      "english": "Part of the national park are uninhabited islands, halligen and sandbanks such as Trischen, Blauort or the North Frisian Outer Sands."
+      "english": "Part of the national park are uninhabited islands, Halligen, and sandbanks such as Trischen, Blauort, or the North Frisian Outer Sands."
     },
     {
       "id": "s4",
       "name": "Amrum",
       "quote": "Im nördlichen Bereich (bis etwa Amrum) verläuft die Nationalparkgrenze an der Zwölfmeilenlinie, südlich davon etwa auf der Dreimeilenlinie.",
-      "english": "In the northern area (up to about Amrum), the national park border runs along the twelve-mile line, south of that approximately on the three-mile line."
+      "english": "In the northern area (up to about Amrum), the national park boundary runs along the twelve-mile line, and south of it approximately along the three-mile line."
     },
     {
       "id": "s5",
@@ -32,34 +32,35 @@
     },
     {
       "id": "s6",
-      "name": "Sylt",
-      "quote": "Es erstreckt sich entlang der gesamten westlichen Sylter Küste und hat eine Größe von 124.000 ha.",
-      "english": "It extends along the entire western coast of Sylt and has a size of 124,000 ha."
+      "name": "Hindenburgdamms",
+      "quote": "Geplant war zunächst, dass diese Schutzzone das Watt nördlich des Hindenburgdamms umfassen sollte – zwischen diesem, der Insel Sylt, der dänischen Grenze und dem Festland.",
+      "english": "It was initially planned that this protection zone should include the mudflats north of the Hindenburg Dam – between it, the island of Sylt, the Danish border, and the mainland."
     },
     {
       "id": "s7",
-      "name": "Wattforschungsstation in List",
-      "quote": "Dies wäre durch die bestehende Wattforschungsstation in List perfekt zu beobachten gewesen.",
-      "english": "This would have been perfectly observable through the existing mudflat research station in List."
+      "name": "Sylt",
+      "quote": "Dieses Sperrgebiet umfasst kein einziges Prielsystem, sondern lediglich landnahe Wattflächen.",
+      "english": "This restricted area does not include a single tidal creek system, but only mudflats near the land."
     }
   ],
   "days": [
     {
-      "title": "Northern Islands and Research Sites",
+      "title": "Northern Islands and Coastal Infrastructure",
       "stop_ids": [
         "s4",
-        "s7",
-        "s5",
-        "s6"
+        "s6",
+        "s7"
       ]
     },
     {
-      "title": "Outer Sandbanks and Islands",
+      "title": "Outer Sandbanks and Wildlife Protection",
       "stop_ids": [
         "s1",
         "s2",
-        "s3"
+        "s3",
+        "s5"
       ]
     }
-  ]
+  ],
+  "_text_sha": "890548dbc6df834aca0b8a8f7b85e33eae97cc34be7b22357d06334ad1fff796"
 }

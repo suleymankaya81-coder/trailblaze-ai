@@ -4,48 +4,48 @@
       "id": "s1",
       "name": "Isole della Gaiola",
       "quote": "Il parco sommerso di Gaiola è un'area marina protetta di 42 ettari di mare che circonda le Isole della Gaiola nel golfo di Napoli e che si estende dal Borgo di Marechiaro alla Baia di Trentaremi, istituita congiuntamente dai Ministeri dell'Ambiente e dei Beni Culturali nel 2002.",
-      "english": "The Gaiola underwater park is a protected marine area of 42 hectares of sea surrounding the Gaiola Islands in the Gulf of Naples and extending from the Village of Marechiaro to the Bay of Trentaremi, jointly established by the Ministries of the Environment and Cultural Heritage in 2002."
+      "english": "The underwater park of Gaiola is a marine protected area of 42 hectares of sea that surrounds the Islands of Gaiola in the Gulf of Naples and extends from the Village of Marechiaro to the Bay of Trentaremi, established jointly by the Ministries of Environment and Cultural Heritage in 2002."
     },
     {
       "id": "s2",
       "name": "Borgo di Marechiaro",
       "quote": "Il parco sommerso di Gaiola è un'area marina protetta di 42 ettari di mare che circonda le Isole della Gaiola nel golfo di Napoli e che si estende dal Borgo di Marechiaro alla Baia di Trentaremi, istituita congiuntamente dai Ministeri dell'Ambiente e dei Beni Culturali nel 2002.",
-      "english": "The Gaiola underwater park is a protected marine area of 42 hectares of sea surrounding the Gaiola Islands in the Gulf of Naples and extending from the Village of Marechiaro to the Bay of Trentaremi, jointly established by the Ministries of the Environment and Cultural Heritage in 2002."
+      "english": "The underwater park of Gaiola is a marine protected area of 42 hectares of sea that surrounds the Islands of Gaiola in the Gulf of Naples and extends from the Village of Marechiaro to the Bay of Trentaremi, established jointly by the Ministries of Environment and Cultural Heritage in 2002."
     },
     {
       "id": "s3",
       "name": "Baia di Trentaremi",
       "quote": "Il parco sommerso di Gaiola è un'area marina protetta di 42 ettari di mare che circonda le Isole della Gaiola nel golfo di Napoli e che si estende dal Borgo di Marechiaro alla Baia di Trentaremi, istituita congiuntamente dai Ministeri dell'Ambiente e dei Beni Culturali nel 2002.",
-      "english": "The Gaiola underwater park is a protected marine area of 42 hectares of sea surrounding the Gaiola Islands in the Gulf of Naples and extending from the Village of Marechiaro to the Bay of Trentaremi, jointly established by the Ministries of the Environment and Cultural Heritage in 2002."
+      "english": "The underwater park of Gaiola is a marine protected area of 42 hectares of sea that surrounds the Islands of Gaiola in the Gulf of Naples and extends from the Village of Marechiaro to the Bay of Trentaremi, established jointly by the Ministries of Environment and Cultural Heritage in 2002."
     },
     {
       "id": "s4",
       "name": "Villa Imperiale di Pausilypon",
       "quote": "Tutti questi sono in gran parte afferenti alla Villa Imperiale di Pausilypon, affiancata dai resti dell'imponente Teatro del I secolo a.C., appartenuti al liberto romano Publio Vedio Pollione e oggi parte del Parco archeologico di Posillipo.",
-      "english": "All of these largely pertain to the Imperial Villa of Pausilypon, flanked by the remains of the imposing 1st-century BC Theater, which belonged to the Roman freedman Publius Vedius Pollio and are now part of the Posillipo Archaeological Park."
+      "english": "All these largely belong to the Imperial Villa of Pausilypon, flanked by the remains of the impressive 1st-century BC Theater, which belonged to the Roman freedman Publius Vedius Pollio and are now part of the Posillipo Archaeological Park."
     },
     {
       "id": "s5",
       "name": "Teatro del I secolo a.C.",
       "quote": "Tutti questi sono in gran parte afferenti alla Villa Imperiale di Pausilypon, affiancata dai resti dell'imponente Teatro del I secolo a.C., appartenuti al liberto romano Publio Vedio Pollione e oggi parte del Parco archeologico di Posillipo.",
-      "english": "All of these largely pertain to the Imperial Villa of Pausilypon, flanked by the remains of the imposing 1st-century BC Theater, which belonged to the Roman freedman Publius Vedius Pollio and are now part of the Posillipo Archaeological Park."
+      "english": "All these largely belong to the Imperial Villa of Pausilypon, flanked by the remains of the impressive 1st-century BC Theater, which belonged to the Roman freedman Publius Vedius Pollio and are now part of the Posillipo Archaeological Park."
     },
     {
       "id": "s6",
-      "name": "Parco archeologico di Posillipo",
-      "quote": "Tutti questi sono in gran parte afferenti alla Villa Imperiale di Pausilypon, affiancata dai resti dell'imponente Teatro del I secolo a.C., appartenuti al liberto romano Publio Vedio Pollione e oggi parte del Parco archeologico di Posillipo.",
-      "english": "All of these largely pertain to the Imperial Villa of Pausilypon, flanked by the remains of the imposing 1st-century BC Theater, which belonged to the Roman freedman Publius Vedius Pollio and are now part of the Posillipo Archaeological Park."
+      "name": "Centro Visite",
+      "quote": "Il Centro Visite del Parco è aperto al pubblico tutti i giorni tranne il lunedì dalle 10:00 alle 16:00 (fino alle 14:00 nel periodo invernale).",
+      "english": "The Park Visitor Center is open to the public every day except Monday from 10:00 to 16:00 (until 14:00 in the winter period)."
     },
     {
       "id": "s7",
-      "name": "Centro Visite",
+      "name": "CeRD",
       "quote": "Il Centro Visite è ubicato presso il CeRD, Centro Ricerca e Divulgazione scientifica del Parco, dove vengono svolte attività didattico-educative per le scuole e attività formative.",
-      "english": "The Visitor Center is located at the CeRD, the Park's Research and Scientific Dissemination Center, where didactic-educational activities for schools and training activities are carried out."
+      "english": "The Visitor Center is located at the CeRD, the Park's Center for Research and Scientific Dissemination, where educational activities for schools and training activities are carried out."
     }
   ],
   "days": [
     {
-      "title": "Coastal Boundaries and Islands",
+      "title": "Coastal and Marine Landscapes",
       "stop_ids": [
         "s1",
         "s2",
@@ -53,13 +53,19 @@
       ]
     },
     {
-      "title": "Roman Archeology and Information",
+      "title": "Roman Archeology of Posillipo",
       "stop_ids": [
         "s4",
-        "s5",
+        "s5"
+      ]
+    },
+    {
+      "title": "Research and Visitor Services",
+      "stop_ids": [
         "s6",
         "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "167635a470b40f31a9afbd42010e94cc032ebd9e62424754f3667c38a583137f"
 }

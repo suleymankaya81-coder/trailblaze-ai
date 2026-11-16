@@ -3,63 +3,76 @@
     {
       "id": "s1",
       "name": "Heidelberg",
-      "quote": "Zwischen Heidelberg, Mosbach und Hardheim verbindet unser Naturpark Natur, Kultur und Genuss.",
-      "english": "Between Heidelberg, Mosbach and Hardheim, our nature park combines nature, culture and enjoyment."
+      "quote": "Heidelberg mit Heidelberger Schloss",
+      "english": "Heidelberg with Heidelberg Castle"
     },
     {
       "id": "s2",
-      "name": "Mosbach",
-      "quote": "Zwischen Heidelberg, Mosbach und Hardheim verbindet unser Naturpark Natur, Kultur und Genuss.",
-      "english": "Between Heidelberg, Mosbach and Hardheim, our nature park combines nature, culture and enjoyment."
+      "name": "via naturae",
+      "quote": "Waldlehrpfade, Naturpfade, Obstlehrpfade, Gewässerlehrpfade, Jugend-Erlebnispfade sowie ein Rotwildlehrpfad, ein Weinbaulehrpfad, ein landwirtschaftlicher Lehrpfad, die \"via naturae\" in Heidelberg und ein Heilkräutergarten in Eberbach",
+      "english": "Forest trails, nature trails, orchard trails, water trails, youth adventure trails as well as a red deer trail, a viticulture trail, an agricultural trail, the \"via naturae\" in Heidelberg and a medicinal herb garden in Eberbach"
     },
     {
       "id": "s3",
-      "name": "Hardheim",
-      "quote": "Zwischen Heidelberg, Mosbach und Hardheim verbindet unser Naturpark Natur, Kultur und Genuss.",
-      "english": "Between Heidelberg, Mosbach and Hardheim, our nature park combines nature, culture and enjoyment."
+      "name": "Margarethenschlucht",
+      "quote": "Margarethenschlucht bei Neckargerach",
+      "english": "Margarethenschlucht near Neckargerach"
     },
     {
       "id": "s4",
-      "name": "Burgen",
-      "quote": "Wo der Neckar sich durch Wälder, Wiesen und Streuobstbestände schlängelt, wo Burgen, Fachwerkorte und sanfte Hügel den Blick prägen – dort liegt er: der Naturpark Neckartal-Odenwald.",
-      "english": "Where the Neckar meanders through forests, meadows and orchards, where castles, half-timbered villages and gentle hills shape the view – that is where it lies: the Neckar Valley-Odenwald Nature Park."
+      "name": "Wolfschlucht",
+      "quote": "Wolfschlucht bei Zwingenberg (Neckar-Odenwald-Kreis)",
+      "english": "Wolfschlucht near Zwingenberg (Neckar-Odenwald-Kreis)"
     },
     {
       "id": "s5",
-      "name": "Neckar",
-      "quote": "Wo der Neckar sich durch Wälder, Wiesen und Streuobstbestände schlängelt, wo Burgen, Fachwerkorte und sanfte Hügel den Blick prägen – dort liegt er: der Naturpark Neckartal-Odenwald.",
-      "english": "Where the Neckar meanders through forests, meadows and orchards, where castles, half-timbered villages and gentle hills shape the view – that is where it lies: the Neckar Valley-Odenwald Nature Park."
+      "name": "Katzenbuckel",
+      "quote": "Katzenbuckel – mit 626,8 m Höhe die höchste Erhebung des Odenwalds",
+      "english": "Katzenbuckel – at 626.8 m height the highest elevation of the Odenwald"
     },
     {
       "id": "s6",
-      "name": "Weinberge",
-      "quote": "Hier finden seltene Tiere wie die Wildkatze oder die Äskulapnatter noch ein Zuhause, während Burgen, Weinberge und Kulturlandschaften Geschichten unserer Region erzählen.",
-      "english": "Here rare animals like the wildcat or the Aesculapian snake still find a home, while castles, vineyards and cultural landscapes tell stories of our region."
+      "name": "Steinbruch Kallenberg",
+      "quote": "Steinbruch Kallenberg bei Eschelbronn",
+      "english": "Kallenberg Quarry near Eschelbronn"
     },
     {
       "id": "s7",
-      "name": "Trekkingcamp",
-      "quote": "Ob beim Wandern, Radeln, Klettern oder im Trekkingcamp unter Sternen – bei uns im Naturpark Neckartal-Odenwald wartet euer nächstes Abenteuer.",
-      "english": "Whether hiking, cycling, climbing or in a trekking camp under the stars – your next adventure awaits you here in the Neckar Valley-Odenwald Nature Park."
+      "name": "Eberstadter Tropfsteinhöhle",
+      "quote": "Eberstadter Tropfsteinhöhle bei Buchen (Odenwald)",
+      "english": "Eberstadt Dripstone Cave near Buchen (Odenwald)"
+    },
+    {
+      "id": "s8",
+      "name": "Odenwälder Freilandmuseum",
+      "quote": "Odenwälder Freilandmuseum in Walldürn-Gottersdorf",
+      "english": "Odenwald Open Air Museum in Walldürn-Gottersdorf"
     }
   ],
   "days": [
     {
-      "title": "Towns and River Trails",
+      "title": "Heidelberg and Local Nature Trails",
       "stop_ids": [
         "s1",
-        "s2",
+        "s2"
+      ]
+    },
+    {
+      "title": "Neckar Gorges and Volcanic Peaks",
+      "stop_ids": [
         "s3",
+        "s4",
         "s5"
       ]
     },
     {
-      "title": "Castles, Vineyards and Wilderness",
+      "title": "Caves, Quarries and Open Air History",
       "stop_ids": [
-        "s4",
         "s6",
-        "s7"
+        "s7",
+        "s8"
       ]
     }
-  ]
+  ],
+  "_text_sha": "55c9f4b284887c26eb9b31f480166f6eab3aa0ce9864b570eff3550d2e2a7626"
 }

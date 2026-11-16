@@ -1,4 +1,99 @@
 {
-  "stops": [],
-  "days": []
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Großer Arber",
+      "quote": "Mit 1456 Metern ist der Große Arber der höchste Berg im bayerisch-böhmischen Mittelgebirge.",
+      "english": "At 1456 meters, the Großer Arber is the highest mountain in the Bavarian-Bohemian low mountain range."
+    },
+    {
+      "id": "s2",
+      "name": "Großer Arbersee",
+      "quote": "Der ca. zwei Hektar große Schwingrasen mit typischer Moorpflanzenvegetation am Westufer des eiszeitlichen Großen Arbersees besteht aus einem dichten, etwa ein bis zwei Meter mächtigen Wurzelgeflecht.",
+      "english": "The approximately two-hectare quaking bog with typical moor plant vegetation on the western shore of the glacial Großer Arbersee consists of a dense network of roots about one to two meters thick."
+    },
+    {
+      "id": "s3",
+      "name": "Arberseewand",
+      "quote": "Im Urwaldgebiet der Arberseewand kommen noch viele seltene, auf naturnahe und totholzreiche Wälder angewiesene Vogelarten wie der Dreizehenspecht vor.",
+      "english": "In the primeval forest area of the Arberseewand, many rare bird species that depend on near-natural forests rich in deadwood, such as the three-toed woodpecker, still occur."
+    },
+    {
+      "id": "s4",
+      "name": "Pfahl",
+      "quote": "Eine ökologisch sehr reichhaltige Felsformation ist der Pfahl.",
+      "english": "The Pfahl is an ecologically very rich rock formation."
+    },
+    {
+      "id": "s5",
+      "name": "Pfahlinfostelle",
+      "quote": "Die Pfahlinfostelle in Viechtach gibt nähere Informationen über das weltweit einmalige geologische Phänomen des Quarzpfahls.",
+      "english": "The Pfahl Information Center in Viechtach provides more detailed information about the globally unique geological phenomenon of the Quartz Pfahl."
+    },
+    {
+      "id": "s6",
+      "name": "Silberberg",
+      "quote": "Das Stollensystem des Silberberges bei Bodenmais bildet das größte Fledermauswinterquartier in Mitteleuropa, unter anderem mit mehreren hundert Exemplaren der Mopsfledermaus.",
+      "english": "The tunnel system of the Silberberg near Bodenmais forms the largest bat winter quarters in Central Europe, including several hundred specimens of the barbastelle bat."
+    },
+    {
+      "id": "s7",
+      "name": "Ilz",
+      "quote": "Der Flusslauf der Ilz ist eine der letzten Wildflusslandschaften der Bundesrepublik Deutschland.",
+      "english": "The course of the Ilz river is one of the last wild river landscapes in the Federal Republic of Germany."
+    },
+    {
+      "id": "s8",
+      "name": "Schloss Fürsteneck",
+      "quote": "Mit der Eröffnung der Ilz-Infostelle im Schloss Fürsteneck im Oktober 2008 hat der Naturpark sein Ziel erreicht, in jedem der vier Mitgliedslandkreise mindestens mit einer Infostelle vertreten zu sein.",
+      "english": "With the opening of the Ilz Information Center in Fürsteneck Castle in October 2008, the nature park achieved its goal of being represented by at least one information center in each of the four member districts."
+    },
+    {
+      "id": "s9",
+      "name": "Bogenberg",
+      "quote": "In der Infostelle im Bahnhof von Bogen werden Informationen zu den Themen Donau, Donaurandbruch und zum Bogenberg bereitgestellt.",
+      "english": "Information on the topics of the Danube, the Danube edge fracture, and the Bogenberg is provided in the information center at Bogen station."
+    },
+    {
+      "id": "s10",
+      "name": "Infozentrum Grenzbahnhof",
+      "quote": "Ein weiterer Beitrag zur Bildungs- und Öffentlichkeitsarbeit ist das grenzüberschreitend errichtete Infozentrum Grenzbahnhof in Bayerisch Eisenstein.",
+      "english": "Another contribution to educational and public relations work is the cross-border Border Station Information Center in Bayerisch Eisenstein."
+    },
+    {
+      "id": "s11",
+      "name": "Naturpark-Informationshaus",
+      "quote": "Im Februar 2002 wurde ein eigenes Naturpark-Informationshaus am südlichen Ortsrand von Zwiesel geschaffen.",
+      "english": "In February 2002, a dedicated Nature Park Information House was created on the southern outskirts of Zwiesel."
+    }
+  ],
+  "days": [
+    {
+      "title": "Arber Peaks and Forests",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s10"
+      ]
+    },
+    {
+      "title": "Geology and Tunnels",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s11"
+      ]
+    },
+    {
+      "title": "Rivers and Castles",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "32fbc9b068cafbfc72d05e4540acdbd1e72b331a6dd4e4ff820fd14418bec2a5"
 }

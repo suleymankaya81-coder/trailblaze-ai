@@ -2,45 +2,70 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Lake Starnberg",
-      "quote": "In a privileged location, five minutes' walk from Lake Starnberg, lies the only DEHOGA-classified four-star superior hotel in the region.",
-      "english": "In a privileged location, five minutes' walk from Lake Starnberg, lies the only DEHOGA-classified four-star superior hotel in the region."
+      "name": "Votivkapelle",
+      "quote": "An dieses Ereignis erinnern noch heute eine Votivkapelle und ein Holzkreuz im See nahe der Unglücksstelle in Berg.",
+      "english": "A votive chapel and a wooden cross in the lake near the site of the accident in Berg still commemorate this event today."
     },
     {
       "id": "s2",
-      "name": "Hotel Vier Jahreszeiten Starnberg",
-      "quote": "The privately run Hotel Vier Jahreszeiten Starnberg was designed to be accessible, so that all areas in the hotel can also be used by guests with limited mobility.",
-      "english": "The privately run Hotel Vier Jahreszeiten Starnberg was designed to be accessible, so that all areas in the hotel can also be used by guests with limited mobility."
+      "name": "Holzkreuz im See",
+      "quote": "An dieses Ereignis erinnern noch heute eine Votivkapelle und ein Holzkreuz im See nahe der Unglücksstelle in Berg.",
+      "english": "A votive chapel and a wooden cross in the lake near the site of the accident in Berg still commemorate this event today."
     },
     {
       "id": "s3",
-      "name": "gourmet restaurant Aubergine",
-      "quote": "On the ground floor there is the open lobby, an accessible WC with a baby changing unit, toys and toiletries, as well as the 400m² conference area, the gourmet restaurant Aubergine, the restaurant Oliv's and the Hemingway Bar in English style.",
-      "english": "On the ground floor there is the open lobby, an accessible WC with a baby changing unit, toys and toiletries, as well as the 400m² conference area, the gourmet restaurant Aubergine, the restaurant Oliv's and the Hemingway Bar in English style."
+      "name": "Bismarckturm bei Assenhausen",
+      "quote": "Auf den Seiten- und Endmoränen liegen zahlreiche Aussichtspunkte wie die Ilkahöhe in Tutzing im Westen oder der Bismarckturm bei Assenhausen im Osten.",
+      "english": "Numerous viewpoints are located on the lateral and terminal moraines, such as the Ilkahöhe in Tutzing in the west or the Bismarckturm near Assenhausen in the east."
     },
     {
       "id": "s4",
-      "name": "restaurant Oliv's",
-      "quote": "On the ground floor there is the open lobby, an accessible WC with a baby changing unit, toys and toiletries, as well as the 400m² conference area, the gourmet restaurant Aubergine, the restaurant Oliv's and the Hemingway Bar in English style.",
-      "english": "On the ground floor there is the open lobby, an accessible WC with a baby changing unit, toys and toiletries, as well as the 400m² conference area, the gourmet restaurant Aubergine, the restaurant Oliv's and the Hemingway Bar in English style."
+      "name": "Roseninsel",
+      "quote": "Vor dem westlichen Ufer, auf Höhe von Feldafing, liegt eine kleine Insel, die Roseninsel.",
+      "english": "Off the western shore, level with Feldafing, lies a small island, the Roseninsel."
     },
     {
       "id": "s5",
-      "name": "Hemingway Bar",
-      "quote": "On the ground floor there is the open lobby, an accessible WC with a baby changing unit, toys and toiletries, as well as the 400m² conference area, the gourmet restaurant Aubergine, the restaurant Oliv's and the Hemingway Bar in English style.",
-      "english": "On the ground floor there is the open lobby, an accessible WC with a baby changing unit, toys and toiletries, as well as the 400m² conference area, the gourmet restaurant Aubergine, the restaurant Oliv's and the Hemingway Bar in English style."
+      "name": "Ilkahöhe in Tutzing",
+      "quote": "Auf den Seiten- und Endmoränen liegen zahlreiche Aussichtspunkte wie die Ilkahöhe in Tutzing im Westen oder der Bismarckturm bei Assenhausen im Osten.",
+      "english": "Numerous viewpoints are located on the lateral and terminal moraines, such as the Ilkahöhe in Tutzing in the west or the Bismarckturm near Assenhausen in the east."
+    },
+    {
+      "id": "s6",
+      "name": "Leutstettener Moos",
+      "quote": "Am Ende der letzten Eiszeit formte das letzte ablaufende Schmelzwasser das Würmtal, der nördlichste Teil des Seebeckens verlandete seither und bildet heute das Leutstettener Moos.",
+      "english": "At the end of the last ice age, the last receding meltwater formed the Würm Valley; the northernmost part of the lake basin has since silted up and today forms the Leutstettener Moos."
+    },
+    {
+      "id": "s7",
+      "name": "Mühltal",
+      "quote": "Den geringen Zuflüssen steht der ebenfalls geringe Abfluss über die Würm durch das Leutstettener Moos und das Mühltal gegenüber.",
+      "english": "The low inflows are offset by the equally low outflow via the Würm through the Leutstettener Moos and the Mühltal."
     }
   ],
   "days": [
     {
-      "title": "Starnberg Lakeside and Hotel Dining",
+      "title": "Eastern Shore Memorials and Views",
       "stop_ids": [
         "s1",
         "s2",
-        "s3",
+        "s3"
+      ]
+    },
+    {
+      "title": "Western Island and Heights",
+      "stop_ids": [
         "s4",
         "s5"
       ]
+    },
+    {
+      "title": "Northern Valley Landscapes",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
     }
-  ]
+  ],
+  "_text_sha": "8d8ad983aa393977cb21acdd584272ce1171c330b66916039f35b7a086c43f54"
 }

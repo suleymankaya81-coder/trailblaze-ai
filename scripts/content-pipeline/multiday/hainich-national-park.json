@@ -2,83 +2,77 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Canopy Walk",
-      "quote": "Canopy Walk",
-      "english": "Canopy Walk"
+      "name": "Forsthaus Thiemsburg",
+      "quote": "Im Ostteil des Nationalparks befindet sich das Forsthaus Thiemsburg.",
+      "english": "In the eastern part of the national park is the Forsthaus Thiemsburg."
     },
     {
       "id": "s2",
-      "name": "National Park Centre Thiemsburg",
-      "quote": "National Park Centre Thiemsburg",
-      "english": "National Park Centre Thiemsburg"
+      "name": "Baumkronenpfad",
+      "quote": "Seit August 2005 kann man auf einem 310 Meter langen Baumkronenpfad knapp unterhalb der Baumspitzen die Kronenregion eines Waldes in Augenschein nehmen (im Mai 2009 auf 530 Meter verlängert).",
+      "english": "Since August 2005, one can examine the canopy region of a forest from a 310-meter-long canopy walkway just below the treetops (extended to 530 meters in May 2009)."
     },
     {
       "id": "s3",
-      "name": "Wildcat Village Hütscheroda",
-      "quote": "Wildcat Village Hütscheroda",
-      "english": "Wildcat Village Hütscheroda"
+      "name": "Aussichtsturm Hainichblick",
+      "quote": "Der im Juni 2011 eröffnete Aussichtsturm Hainichblick am Generalshügel ermöglicht einen umfassenden Blick über das Gebiet.",
+      "english": "The Hainichblick observation tower on the Generalshügel, opened in June 2011, allows for a comprehensive view over the area."
     },
     {
       "id": "s4",
-      "name": "Adventure Trail Brunstal",
-      "quote": "Adventure Trail Brunstal",
-      "english": "Adventure Trail Brunstal"
+      "name": "Generalshügel",
+      "quote": "Der im Juni 2011 eröffnete Aussichtsturm Hainichblick am Generalshügel ermöglicht einen umfassenden Blick über das Gebiet.",
+      "english": "The Hainichblick observation tower on the Generalshügel, opened in June 2011, allows for a comprehensive view over the area."
     },
     {
       "id": "s5",
-      "name": "Adventure Trail Silberborn",
-      "quote": "Adventure Trail Silberborn",
-      "english": "Adventure Trail Silberborn"
+      "name": "Urwald-Life-Camp",
+      "quote": "Auf dem Harsberg bei Lauterbach wurde im Jahr 2006 das Urwald-Life-Camp eröffnet, es bietet zahlreiche Angebote für Schulklassen und Jugendliche.",
+      "english": "The Urwald-Life-Camp was opened on the Harsberg near Lauterbach in 2006, offering numerous programs for school classes and young people."
     },
     {
       "id": "s6",
-      "name": "Fairytale Nature Path Feensteig",
-      "quote": "Fairytale Nature Path Feensteig",
-      "english": "Fairytale Nature Path Feensteig"
+      "name": "Harsberg",
+      "quote": "Auf dem Harsberg bei Lauterbach wurde im Jahr 2006 das Urwald-Life-Camp eröffnet, es bietet zahlreiche Angebote für Schulklassen und Jugendliche.",
+      "english": "The Urwald-Life-Camp was opened on the Harsberg near Lauterbach in 2006, offering numerous programs for school classes and young people."
     },
     {
       "id": "s7",
-      "name": "Urwald-Life-Camp",
-      "quote": "Urwald-Life-Camp",
-      "english": "Primeval Forest Life Camp"
+      "name": "Hünenteich",
+      "quote": "Seit März 2009 besteht im Bereich der Hünenburg – Hünenteich ein „Germanischer Kultpfad“.",
+      "english": "Since March 2009, a \"Germanic Cult Path\" has existed in the area of the Hünenburg – Hünenteich."
     },
     {
       "id": "s8",
-      "name": "Wildcat Secret Path",
-      "quote": "Wildcat Secret Path",
-      "english": "Wildcat Secret Path"
-    },
-    {
-      "id": "s9",
-      "name": "Primeval Forest Path",
-      "quote": "Primeval Forest Path",
-      "english": "Primeval Forest Path"
+      "name": "Germanischer Kultpfad",
+      "quote": "Seit März 2009 besteht im Bereich der Hünenburg – Hünenteich ein „Germanischer Kultpfad“.",
+      "english": "Since March 2009, a \"Germanic Cult Path\" has existed in the area of the Hünenburg – Hünenteich."
     }
   ],
   "days": [
     {
-      "title": "Thiemsburg Discovery and Adventure",
+      "title": "East and Center Forest Exploration",
       "stop_ids": [
         "s1",
-        "s2",
-        "s6"
+        "s2"
       ]
     },
     {
-      "title": "Wildcat Encounters and Forest Camps",
+      "title": "Southern Views and History",
       "stop_ids": [
         "s3",
-        "s8",
-        "s7"
+        "s4",
+        "s7",
+        "s8"
       ]
     },
     {
-      "title": "Primeval Forest Exploration Trails",
+      "title": "Western Wilderness Camp",
       "stop_ids": [
-        "s4",
         "s5",
-        "s9"
+        "s6"
       ]
     }
-  ]
+  ],
+  "_text_sha": "c399391d631bb9a27c9713f5d810dd4ec6eb3695db5a1b598852106a517586ab"
 }

@@ -2,38 +2,70 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Wasserkuppe",
-      "quote": "During the warmer months, head up to the region's highest mountain, the Wasserkuppe, to take to the skies on a para- or hang glide or hurtle back down the slopes on a 700m summer toboggan run.",
-      "english": "During the warmer months, head up to the region's highest mountain, the Wasserkuppe, to take to the skies on a para- or hang glide or hurtle back down the slopes on a 700m summer toboggan run."
+      "name": "Abtsrodaer Kuppe",
+      "quote": "Der Nordausläufer des Berges ist die Abtsrodaer Kuppe (904,8 m) und ihr Südwestausläufer der Pferdskopf (874,9 m).",
+      "english": "The northern spur of the mountain is the Abtsrodaer Kuppe (904.8 m) and its southwestern spur is the Pferdskopf (874.9 m)."
     },
     {
       "id": "s2",
-      "name": "summer toboggan run",
-      "quote": "During the warmer months, head up to the region's highest mountain, the Wasserkuppe, to take to the skies on a para- or hang glide or hurtle back down the slopes on a 700m summer toboggan run.",
-      "english": "During the warmer months, head up to the region's highest mountain, the Wasserkuppe, to take to the skies on a para- or hang glide or hurtle back down the slopes on a 700m summer toboggan run."
+      "name": "Pferdskopf",
+      "quote": "Im Mittelalter war das Gebiet zwischen der Wasserkuppe und dem Pferdskopf besiedelt.",
+      "english": "In the Middle Ages, the area between the Wasserkuppe and the Pferdskopf was settled."
     },
     {
       "id": "s3",
-      "name": "Fulda Valley",
-      "quote": "Separated from the volcanic region of Vogelsberg by the Fulda Valley and its winding river, the region's largely woodless volcanic mountains and valleys offer magnificent panoramic views, unique flora and fauna and seemingly endless opportunities for bracing outdoor activities.",
-      "english": "Separated from the volcanic region of Vogelsberg by the Fulda Valley and its winding river, the region's largely woodless volcanic mountains and valleys offer magnificent panoramic views, unique flora and fauna and seemingly endless opportunities for bracing outdoor activities."
+      "name": "Kleine Wasserkuppe",
+      "quote": "Im Ostsüdosten der Gipfelregion befindet sich eine 904 m hohe Kuppe, die gelegentlich als Kleine Wasserkuppe bezeichnet wird.",
+      "english": "In the east-southeast of the summit region, there is a 904 m high peak, which is occasionally referred to as the Kleine Wasserkuppe."
     },
     {
       "id": "s4",
-      "name": "Fulda",
-      "quote": "The town of Bad Hersfeld boasts some 200 listed medieval buildings as well as historic monastry ruins, and in Fulda, you'll find gorgeous Baroque architecture and a stunning cathedral built on the burial site of St Boniface.",
-      "english": "The town of Bad Hersfeld boasts some 200 listed medieval buildings as well as historic monastry ruins, and in Fulda, you'll find gorgeous Baroque architecture and a stunning cathedral built on the burial site of St Boniface."
+      "name": "Radom",
+      "quote": "Es handelte sich dabei um eine einfache, etwa 24 m² große Wetterschutzhütte, ungefähr an dem Platz, an dem sich heute noch das Radom befindet.",
+      "english": "It was a simple, approximately 24 m² weather protection hut, located roughly at the spot where the Radom is still situated today."
+    },
+    {
+      "id": "s5",
+      "name": "Fliegerdenkmal",
+      "quote": "Seit 1923 steht das Fliegerdenkmal, ein Bronzeadler auf einem vulkanischen Basaltschlot.",
+      "english": "Since 1923, the Fliegerdenkmal (Aviator Monument) has stood there, a bronze eagle on a volcanic basalt chimney."
+    },
+    {
+      "id": "s6",
+      "name": "Ursinus Haus",
+      "quote": "Zu Ehren des Mitbegründers der Rhönsegelflugwettbewerbe erhielt dieses Gebäude den Namen Ursinus Haus.",
+      "english": "In honor of the co-founder of the Rhön gliding competitions, this building was named Ursinus Haus."
+    },
+    {
+      "id": "s7",
+      "name": "Märchenwiese",
+      "quote": "Die Mehrzahl waren Jugendliche, junge Modellflieger und einige Mitglieder des Jungvolks, die auf der Wasserkuppe im Bereich der Märchenwiese ihr Zeltlager hatten.",
+      "english": "The majority were youths, young model flyers, and some members of the Jungvolk who had their tent camp on the Wasserkuppe in the area of the Märchenwiese."
     }
   ],
   "days": [
     {
-      "title": "Mountains and Valleys of the Rhön",
+      "title": "Northern Peaks and Historical Landmarks",
       "stop_ids": [
         "s1",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Gliding History and Meadows",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Southern Ridges and Summits",
+      "stop_ids": [
         "s2",
-        "s3",
-        "s4"
+        "s3"
       ]
     }
-  ]
+  ],
+  "_text_sha": "4d89891c58a8d4b507fb9baf561fadf5aea591497685202ceb034185f42e116b"
 }

@@ -2,59 +2,77 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Altmühltal Dinosaur Museum",
-      "quote": "Little amateur archaeologists will be sure to get to the bottom of these and other questions in the primaeval forest of the Altmühltal Dinosaur Museum",
-      "english": "Little amateur archaeologists will be sure to get to the bottom of these and other questions in the primaeval forest of the Altmühltal Dinosaur Museum"
+      "name": "Altmühltal-Panoramaweg",
+      "quote": "Seit dem Jahr 2005 führt der Altmühltal-Panoramaweg von Gunzenhausen nach Kelheim.",
+      "english": "Since the year 2005, the Altmühltal-Panoramaweg has led from Gunzenhausen to Kelheim."
     },
     {
       "id": "s2",
-      "name": "Dinopark",
-      "quote": "Children can experience science through play at the Dinopark near Denkendorf in the Altmühltal Valley Nature Park.",
-      "english": "Children can experience science through play at the Dinopark near Denkendorf in the Altmühltal Valley Nature Park."
+      "name": "Gungoldinger Wacholderheide",
+      "quote": "Gungoldinger Wacholderheide (NSG-00076.01)",
+      "english": "Gungoldinger Juniper Heath (NSG-00076.01)"
     },
     {
       "id": "s3",
-      "name": "museum hall",
-      "quote": "You can admire both dinos in the museum hall.",
-      "english": "You can admire both dinos in the museum hall."
+      "name": "Felsgruppe Zwölf Apostel",
+      "quote": "Juratrockenhang mit der Felsgruppe Zwölf Apostel (NSG-00216.01)",
+      "english": "Jurassic dry slope with the Twelve Apostles rock group (NSG-00216.01)"
     },
     {
       "id": "s4",
-      "name": "adventure trail",
-      "quote": "Outdoors, a one-and-a-half-kilometre-long adventure trail brings the giants of prehistory close enough for young and old to touch.",
-      "english": "Outdoors, a one-and-a-half-kilometre-long adventure trail brings the giants of prehistory close enough for young and old to touch."
+      "name": "Schloß Prunn",
+      "quote": "Schloß Prunn (NSG-00075.01)",
+      "english": "Prunn Castle (NSG-00075.01)"
     },
     {
       "id": "s5",
-      "name": "Hands-on Hall",
-      "quote": "A wide range of stations in the “Hands-on Hall” – such as the search for fossil shark teeth or the uncovering of a Diplodocus skeleton – will inspire the children and encourage them to explore and discover.",
-      "english": "A wide range of stations in the “Hands-on Hall” – such as the search for fossil shark teeth or the uncovering of a Diplodocus skeleton – will inspire the children and encourage them to explore and discover."
+      "name": "Schulerloch",
+      "quote": "Schulerloch (NSG-00087.01)",
+      "english": "Schulerloch (NSG-00087.01)"
     },
     {
       "id": "s6",
-      "name": "restaurant by the lake",
-      "quote": "When it’s time for a break, there is the restaurant by the lake or the secluded forest beer garden.",
-      "english": "When it’s time for a break, there is the restaurant by the lake or the secluded forest beer garden."
+      "name": "Weltenburger Enge",
+      "quote": "Weltenburger Enge (NSG-00089.01)",
+      "english": "Weltenburg Narrows (NSG-00089.01)"
     },
     {
       "id": "s7",
-      "name": "forest beer garden",
-      "quote": "They offer delicious organic dishes, as well as vegetarian and vegan alternatives.",
-      "english": "They offer delicious organic dishes, as well as vegetarian and vegan alternatives."
+      "name": "Burgstein",
+      "quote": "Dollnstein: Burgstein mit über 30 Routen",
+      "english": "Dollnstein: Burgstein with over 30 routes"
+    },
+    {
+      "id": "s8",
+      "name": "Dohlenfelsen",
+      "quote": "Konstein/Aicha: Dohlenfelsen (59 Touren/35 Meter), Turm Madonna (16 Routen/25 Meter); Kinderkletterfelsen „Asterix und Obelix“",
+      "english": "Konstein/Aicha: Dohlenfelsen (59 tours/35 meters), Madonna Tower (16 routes/25 meters); children's climbing rocks “Asterix and Obelix”"
     }
   ],
   "days": [
     {
-      "title": "Dinosaur Discovery and Nature Trails",
+      "title": "Panoramic Trails and Local Heaths",
       "stop_ids": [
         "s1",
         "s2",
-        "s3",
+        "s3"
+      ]
+    },
+    {
+      "title": "Castles and Caves of the Lower Valley",
+      "stop_ids": [
         "s4",
         "s5",
-        "s6",
-        "s7"
+        "s6"
+      ]
+    },
+    {
+      "title": "Climbing and Rocks in the Frankenjura",
+      "stop_ids": [
+        "s7",
+        "s8"
       ]
     }
-  ]
+  ],
+  "_text_sha": "fbb2e3a0fa54aff914dc92921bdfd62cad44952e03a1e29391049af0b13f8650"
 }

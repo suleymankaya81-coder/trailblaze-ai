@@ -4,48 +4,48 @@
       "id": "s1",
       "name": "Himmelpforter Heide",
       "quote": "Im Westen des Naturparks liegt das Waldgebiet Himmelpforter Heide.",
-      "english": "The forest area Himmelpforter Heide is located in the west of the nature park."
+      "english": "In the west of the nature park lies the forest area Himmelpforter Heide."
     },
     {
       "id": "s2",
       "name": "Naturschutzgebiet Thymen",
-      "quote": "Der Naturpark schließt folgende Schutzgebiete ein: Landschaftsschutzgebiet Norduckermärkische Seenlandschaft Landschaftsschutzgebiet Neuruppin – Rheinsberg – Fürstenberger Wald- und Seengebiet Naturschutzgebiet Thymen",
-      "english": "The nature park includes the following protected areas: North Uckermark Lake Landscape Protection Area, Neuruppin – Rheinsberg – Fürstenberg Forest and Lake Protection Area, Thymen Nature Reserve."
+      "quote": "Naturschutzgebiet Thymen",
+      "english": "Thymen Nature Reserve"
     },
     {
       "id": "s3",
       "name": "Naturschutzgebiet Boitzenburger Tiergarten",
-      "quote": "Der Naturpark schließt folgende Schutzgebiete ein: Naturschutzgebiet Boitzenburger Tiergarten",
-      "english": "The nature park includes the following protected areas: Boitzenburger Tiergarten Nature Reserve."
+      "quote": "Naturschutzgebiet Boitzenburger Tiergarten",
+      "english": "Boitzenburger Tiergarten Nature Reserve"
     },
     {
       "id": "s4",
       "name": "Naturschutzgebiet Mellensee bei Lychen",
-      "quote": "Der Naturpark schließt folgende Schutzgebiete ein: Naturschutzgebiet Mellensee bei Lychen",
-      "english": "The nature park includes the following protected areas: Mellensee near Lychen Nature Reserve."
+      "quote": "Naturschutzgebiet Mellensee bei Lychen",
+      "english": "Mellensee Nature Reserve near Lychen"
     },
     {
       "id": "s5",
-      "name": "Naturschutzgebiet Klapperberge",
-      "quote": "Der Naturpark schließt folgende Schutzgebiete ein: Naturschutzgebiet Klapperberge",
-      "english": "The nature park includes the following protected areas: Klapperberge Nature Reserve."
+      "name": "Bürgergarten in Templin",
+      "quote": "Die Naturparkverwaltung hat ihren Sitz in der Hyparschale im Bürgergarten in Templin.",
+      "english": "The nature park administration has its seat in the Hyparschale in the Bürgergarten in Templin."
     },
     {
       "id": "s6",
-      "name": "Bürgergarten in Templin",
-      "quote": "Die Naturparkverwaltung hat ihren Sitz in der Hyparschale im Bürgergarten in Templin.",
-      "english": "The nature park administration is located in the Hyparschale in the Bürgergarten in Templin."
+      "name": "Naturschutzgebiet Klapperberge",
+      "quote": "Naturschutzgebiet Klapperberge",
+      "english": "Klapperberge Nature Reserve"
     },
     {
       "id": "s7",
-      "name": "Naturschutzgebiet Küstrinchenbach und Oberpfuhlmoor",
-      "quote": "Der Naturpark schließt folgende Schutzgebiete ein: Naturschutzgebiet Küstrinchenbach und Oberpfuhlmoor",
-      "english": "The nature park includes the following protected areas: Küstrinchenbach and Oberpfuhlmoor Nature Reserve."
+      "name": "Naturschutzgebiet Knehdenmoor",
+      "quote": "Naturschutzgebiet Knehdenmoor",
+      "english": "Knehdenmoor Nature Reserve"
     }
   ],
   "days": [
     {
-      "title": "Western Forests and Nature Reserves",
+      "title": "Western Forests and Waterways",
       "stop_ids": [
         "s1",
         "s2",
@@ -53,18 +53,19 @@
       ]
     },
     {
-      "title": "Templin Administration and Central Moors",
+      "title": "Central Templin Parklands",
       "stop_ids": [
-        "s6",
+        "s5",
         "s7"
       ]
     },
     {
-      "title": "Eastern and Southern Protected Areas",
+      "title": "Eastern Reserves and Hills",
       "stop_ids": [
         "s3",
-        "s5"
+        "s6"
       ]
     }
-  ]
+  ],
+  "_text_sha": "73963114fd7aaf4184eb2b579d979c359c33307ada043c6890135cbb11cf5102"
 }

@@ -2,76 +2,65 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Lake Geierswalder",
-      "quote": "Leisure captains can already sail across the Koschen Canal from Lake Senftenberg to Lake Geierswalder.",
-      "english": "Leisure captains can already sail across the Koschen Canal from Lake Senftenberg to Lake Geierswalder."
+      "name": "Geierswalder See",
+      "quote": "Am Geierswalder See wurden eine Wasserskianlage, ein Sportboothafen und eine Marina mit schwimmenden Häusern gebaut.",
+      "english": "A water ski facility, a sports boat harbor and a marina with floating houses were built at Lake Geierswalde."
     },
     {
       "id": "s2",
-      "name": "Koschen Canal",
-      "quote": "Leisure captains can already sail across the Koschen Canal from Lake Senftenberg to Lake Geierswalder.",
-      "english": "Leisure captains can already sail across the Koschen Canal from Lake Senftenberg to Lake Geierswalder."
+      "name": "Sedlitzer See",
+      "quote": "Eine Besonderheit soll der Wasserflugplatz am nördlichen Ufer des Sedlitzer Sees sein.",
+      "english": "A special feature is intended to be the water airfield on the northern shore of Lake Sedlitz."
     },
     {
       "id": "s3",
-      "name": "Lake Senftenberg",
-      "quote": "Leisure captains can already sail across the Koschen Canal from Lake Senftenberg to Lake Geierswalder.",
-      "english": "Leisure captains can already sail across the Koschen Canal from Lake Senftenberg to Lake Geierswalder."
+      "name": "Senftenberger See",
+      "quote": "Nach Abschluss aller Arbeiten ist das Ziel, die Wasserqualität des naturierten, von Erholungssuchenden genutzten Senftenberger Sees zu erreichen.",
+      "english": "After all work is completed, the goal is to reach the water quality of the renatured Lake Senftenberg, which is used by recreation seekers."
     },
     {
       "id": "s4",
-      "name": "Knappenrode energy factory",
-      "quote": "For 150 years, mining and coal production shaped the professional and social life of Lusatia.",
-      "english": "For 150 years, mining and coal production shaped the professional and social life of Lusatia."
+      "name": "Partwitzer See",
+      "quote": "Der erste fertiggestellte Überleiter war im Dezember 2003 der Barbara-Kanal, der Geierswalder und Partwitzer See miteinander verband.",
+      "english": "The first completed transfer canal was the Barbara Canal in December 2003, which connected Lake Geierswalde and Lake Partwitz."
     },
     {
       "id": "s5",
-      "name": "ENERGY route",
-      "quote": "Those who follow the ENERGY route of the Lausitz industrial culture will learn how the region is changing from coal mining to vacation paradise and how the landscape is changing its face.",
-      "english": "Those who follow the ENERGY route of the Lausitz industrial culture will learn how the region is changing from coal mining to vacation paradise and how the landscape is changing its face."
+      "name": "Bärwalder See",
+      "quote": "Am Bärwalder See, der bis zur Flutung der noch aktiven Tagebaue Nochten und Reichwalde der flächenmäßig größte See Sachsens ist, wurde 2008 ein Sportboothafen am südlichen Seeufer eröffnet.",
+      "english": "At Lake Bärwalde, which is the largest lake in Saxony by area until the flooding of the still active open-cast mines Nochten and Reichwalde, a sports boat harbor was opened on the southern shore in 2008."
     },
     {
       "id": "s6",
-      "name": "Lakeland Route",
-      "quote": "The Lakeland Route is a 191-kilometer long-distance cycle route that connects 16 lakes.",
-      "english": "The Lakeland Route is a 191-kilometer long-distance cycle route that connects 16 lakes."
+      "name": "Talsperre Spremberg",
+      "quote": "Während die Talsperre Quitzdorf geschaffen wurde, um genügend Brauchwasser für das Kraftwerk Boxberg bereitstellen zu können, wurde die Talsperre Spremberg vorwiegend für den Hochwasserschutz im Seenland geplant, allerdings auch für Brauchwasser für Kraftwerke benutzt.",
+      "english": "While the Quitzdorf dam was created to provide enough industrial water for the Boxberg power plant, the Spremberg dam was primarily planned for flood protection in the lake district, although it is also used for industrial water for power plants."
     },
     {
       "id": "s7",
-      "name": "Großräschener See",
-      "quote": "The cycle path leads from Großräschener See in the north to Bärwalder See in the south and back again.",
-      "english": "The cycle path leads from Großräschener See in the north to Bärwalder See in the south and back again."
-    },
-    {
-      "id": "s8",
-      "name": "Bärwalder See",
-      "quote": "The cycle path leads from Großräschener See in the north to Bärwalder See in the south and back again.",
-      "english": "The cycle path leads from Großräschener See in the north to Bärwalder See in the south and back again."
+      "name": "Olbasee",
+      "quote": "Die Nutzung von Tagebaurestlöchern, die durch das Ende der Sümpfung zu Seen wurden, als Badegewässer, existiert in der Lausitz seit den 1950er Jahren z. B. an der Blauen Adria und dem Olbasee sowie diversen aufgelassenen Steinbrüchen (→ Lausitzer Granit).",
+      "english": "The use of open-cast mine residual holes, which became lakes after the end of drainage, as bathing waters has existed in Lusatia since the 1950s, e.g., at the Blue Adriatic and Lake Olba, as well as various abandoned quarries (→ Lusatian Granite)."
     }
   ],
   "days": [
     {
-      "title": "Connected Waterways and Canals",
+      "title": "Central Lake Chain and Water Sports",
       "stop_ids": [
         "s1",
         "s2",
-        "s3"
+        "s3",
+        "s4"
       ]
     },
     {
-      "title": "Industrial Heritage and Mining History",
+      "title": "Southern Reservoirs and Historic Bathing",
       "stop_ids": [
-        "s4",
-        "s5"
-      ]
-    },
-    {
-      "title": "Long-Distance Lakeside Cycling",
-      "stop_ids": [
+        "s5",
         "s6",
-        "s7",
-        "s8"
+        "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "6d36766056333a025e7a3eeb6b67d8da5af1084b0e458c3bfe0bd585fc32519f"
 }

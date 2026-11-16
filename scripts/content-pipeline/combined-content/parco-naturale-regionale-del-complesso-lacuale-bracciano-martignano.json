@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lazio",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco naturale regionale di Bracciano-Martignano"
+        "Caldara di Manziana",
+        "fosso della Caldara"
       ],
       "seo_title": "Parco naturale regionale del complesso lacuale Bracciano - M"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco naturale regionale del complesso lacuale Bracciano - Martignano",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Volcanic Wonders and Streams",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco naturale regionale di Bracciano-Martignano",
-                "stop_id": "parco-naturale-regionale-del-complesso-lacuale-bracciano-martignano",
-                "detail": "The regional natural park of Bracciano-Martignano is a protected natural area of Lazio established in 1999."
+                "name": "Caldara di Manziana",
+                "stop_id": "parco-naturale-regionale-del-complesso-lacuale-bracciano-martignano--s6",
+                "detail": "The natural monument of the Caldara di Manziana extends for 90 ha and is located at the extreme foothills of the Sabatino volcano."
+              },
+              {
+                "name": "fosso della Caldara",
+                "stop_id": "parco-naturale-regionale-del-complesso-lacuale-bracciano-martignano--s7",
+                "detail": "The area is interesting due to the presence along the Caldara stream of forests of black alder, Turkey oak, Hungarian oak, downy oak, Montpellier maple, field elm, and black hornbeam."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale regionale del complesso lacuale Bracciano - Martignano before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "UNESCO Peaks and Low-Altitude Beech Forests",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "monte Termine",
+                "stop_id": "parco-naturale-regionale-del-complesso-lacuale-bracciano-martignano--s3",
+                "detail": "The most important locations are Mount Termine (590 m) and Mount Raschio (552 m)."
+              },
+              {
+                "name": "monte Raschio",
+                "stop_id": "parco-naturale-regionale-del-complesso-lacuale-bracciano-martignano--s4",
+                "detail": "A UNESCO World Natural Heritage Site, it is a beech forest with an extension of 73.73 ha that is part of SIC IT6010034 and has the peculiarity of growing between 450 m and 552 m above sea level on Mount Raschio, elevations much lower than the beech forests of the Apennines which grow above 900 m."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco naturale regionale del complesso lacuale Bracciano - Martignano before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_di_Bracciano-Martignano"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_di_Bracciano-Martignano"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:30:16.535191+00:00"
       }
     }
   }

@@ -2,38 +2,70 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Berchtesgadener Land",
-      "quote": "The Berchtesgadener Land in southeastern Upper Bavaria has been designated a biosphere reserve by the United Nations Educational, Scientific and Cultural Organization (UNESCO).",
-      "english": "The Berchtesgadener Land in southeastern Upper Bavaria has been designated a biosphere reserve by the United Nations Educational, Scientific and Cultural Organization (UNESCO)."
+      "name": "Nationalpark Berchtesgaden",
+      "quote": "Kernzone dieses Reservats ist in seinem Südteil der 210 km² große Nationalpark Berchtesgaden.",
+      "english": "The core zone of this reserve in its southern part is the 210 km² Berchtesgaden National Park."
     },
     {
       "id": "s2",
-      "name": "high mountains",
-      "quote": "Our biosphere extends from the rugged high mountains to the gentle foothills of the Alps – this is unique in Germany.",
-      "english": "Our biosphere extends from the rugged high mountains to the gentle foothills of the Alps – this is unique in Germany."
+      "name": "Berchtesgaden",
+      "quote": "Das Biosphärenreservat Berchtesgadener Land liegt in den Berchtesgadener Alpen rund um Berchtesgaden und damit im äußersten Südostteil des deutschen Bundeslands Bayern an der Grenze zu Österreich (dortiges Bundesland Salzburg).",
+      "english": "The Berchtesgadener Land Biosphere Reserve is located in the Berchtesgaden Alps around Berchtesgaden and thus in the extreme southeastern part of the German state of Bavaria on the border with Austria (state of Salzburg)."
     },
     {
       "id": "s3",
-      "name": "foothills of the Alps",
-      "quote": "Our biosphere extends from the rugged high mountains to the gentle foothills of the Alps – this is unique in Germany.",
-      "english": "Our biosphere extends from the rugged high mountains to the gentle foothills of the Alps – this is unique in Germany."
+      "name": "Bischofswiesen",
+      "quote": "Sein Vorläufer, das Biosphärenreservat Berchtesgaden, beschränkte sich noch neben Berchtesgaden auf die Gemeinden Bischofswiesen, Ramsau, Schönau und Marktschellenberg sowie auf Teile der Stadt Bad Reichenhall und der Gemeinden Bayerisch Gmain und Schneizlreuth.",
+      "english": "Its predecessor, the Berchtesgaden Biosphere Reserve, was limited to Berchtesgaden as well as the municipalities of Bischofswiesen, Ramsau, Schönau and Marktschellenberg and parts of the town of Bad Reichenhall and the municipalities of Bayerisch Gmain and Schneizlreuth."
     },
     {
       "id": "s4",
-      "name": "alpine national park",
-      "quote": "The core zone is protected by Germany’s only alpine national park.",
-      "english": "The core zone is protected by Germany’s only alpine national park."
+      "name": "Bad Reichenhall",
+      "quote": "Das Biosphärenreservat Berchtesgaden umfasste bereits neben Berchtesgaden die Gemeinden Bischofswiesen, Ramsau, Schönau und Marktschellenberg sowie Teile der Stadt Bad Reichenhall und der Gemeinden Bayerisch Gmain und Schneizlreuth.",
+      "english": "In addition to Berchtesgaden, the Berchtesgaden Biosphere Reserve already included the municipalities of Bischofswiesen, Ramsau, Schönau and Marktschellenberg as well as parts of the town of Bad Reichenhall and the municipalities of Bayerisch Gmain and Schneizlreuth."
+    },
+    {
+      "id": "s5",
+      "name": "Königssee",
+      "quote": "Seinen Anfang hat das Biosphärenreservat Berchtesgadener Land als Biosphärenreservat Berchtesgaden bzw. Alpenpark Berchtesgaden genommen, dessen Einrichtung von der Bayerischen Staatsregierung am 7. Mai 1974 mit der Geographie und den drei Zonen (dem aus dem einstigen Naturschutzgebiet Königssee hierfür gebildeten Nationalpark Berchtesgaden als Kernzone sowie eine Erschließungs- und eine Erholungszone) gleich dem jetzigen Biosphärenreservat beschlossen wurde.",
+      "english": "The Berchtesgadener Land Biosphere Reserve began as the Berchtesgaden Biosphere Reserve or Berchtesgaden Alpine Park, the establishment of which was decided by the Bavarian state government on May 7, 1974, with the same geography and three zones as the current biosphere reserve (including the Berchtesgaden National Park formed from the former Königssee nature reserve as the core zone, as well as a development and recreation zone)."
+    },
+    {
+      "id": "s6",
+      "name": "Laufen",
+      "quote": "Für die Erweiterung zum Biosphärenreservat Berchtesgadener Land sind 2010 die Kommunen Laufen, Saaldorf-Surheim, Teisendorf, Freilassing, Ainring, Anger und Piding hinzugekommen.",
+      "english": "The municipalities of Laufen, Saaldorf-Surheim, Teisendorf, Freilassing, Ainring, Anger and Piding were added for the expansion to the Berchtesgadener Land Biosphere Reserve in 2010."
+    },
+    {
+      "id": "s7",
+      "name": "Teisendorf",
+      "quote": "Hinzugekommen sind die Kommunen Laufen, Saaldorf-Surheim, Teisendorf, Freilassing, Ainring, Anger und Piding.",
+      "english": "The municipalities of Laufen, Saaldorf-Surheim, Teisendorf, Freilassing, Ainring, Anger and Piding have been added."
     }
   ],
   "days": [
     {
-      "title": "Alpine Landscapes and National Park",
+      "title": "National Park and Alpine Lake",
       "stop_ids": [
         "s1",
+        "s5"
+      ]
+    },
+    {
+      "title": "Historic Southern Municipalities",
+      "stop_ids": [
         "s2",
         "s3",
         "s4"
       ]
+    },
+    {
+      "title": "Northern Expansion Towns",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
     }
-  ]
+  ],
+  "_text_sha": "272ded371177aacb338befb83e07125df4dd15514908442bb2d3e4344b79c375"
 }

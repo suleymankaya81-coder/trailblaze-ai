@@ -2,15 +2,15 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Torre della Meloria",
+      "name": "Faro meridionale della Meloria",
       "quote": "Le secche sono segnalate dal Faro meridionale della Meloria, che è stato costruito nei pressi della preesistente Torre della Meloria, e dal Faro settentrionale della Meloria situato sullo scoglio all'estremità settentrionale dell'area delle secche.",
       "english": "The shallows are marked by the Southern Meloria Lighthouse, which was built near the pre-existing Meloria Tower, and by the Northern Meloria Lighthouse located on the rock at the northern end of the shallows area."
     },
     {
       "id": "s2",
-      "name": "Faro meridionale della Meloria",
-      "quote": "Le secche sono segnalate dal Faro meridionale della Meloria, che è stato costruito nei pressi della preesistente Torre della Meloria, e dal Faro settentrionale della Meloria situato sullo scoglio all'estremità settentrionale dell'area delle secche.",
-      "english": "The shallows are marked by the Southern Meloria Lighthouse, which was built near the pre-existing Meloria Tower, and by the Northern Meloria Lighthouse located on the rock at the northern end of the shallows area."
+      "name": "Torre della Meloria",
+      "quote": "Le profondità sono tra -1 e -4 metri nel tratto marino compreso tra lo scoglio del Faro settentrionale della Meloria e lo scoglio della Torre della Meloria.",
+      "english": "The depths are between -1 and -4 meters in the stretch of sea between the rock of the Northern Meloria Lighthouse and the rock of the Meloria Tower."
     },
     {
       "id": "s3",
@@ -20,27 +20,21 @@
     },
     {
       "id": "s4",
-      "name": "scoglio del Faro settentrionale della Meloria",
-      "quote": "Le profondità sono tra -1 e -4 metri nel tratto marino compreso tra lo scoglio del Faro settentrionale della Meloria e lo scoglio della Torre della Meloria.",
-      "english": "The depths are between -1 and -4 meters in the stretch of sea between the rock of the Northern Meloria Lighthouse and the rock of the Meloria Tower."
-    },
-    {
-      "id": "s5",
-      "name": "scoglio della Torre della Meloria",
-      "quote": "Le profondità sono tra -1 e -4 metri nel tratto marino compreso tra lo scoglio del Faro settentrionale della Meloria e lo scoglio della Torre della Meloria.",
-      "english": "The depths are between -1 and -4 meters in the stretch of sea between the rock of the Northern Meloria Lighthouse and the rock of the Meloria Tower."
+      "name": "Faglia della Meloria",
+      "quote": "Geologicamente le secche sono costituite da una panchina calcareo-arenacea, con alcuni tratti affioranti ed emersi, e corrispondono a una faglia sottomarina attiva, denominata Faglia della Meloria, responsabile finora di terremoti di media intensità, che in alcuni casi hanno innescato anche maremoti di moderata entità.",
+      "english": "Geologically, the shoals consist of a limestone-sandstone bench, with some outcropping and emerged sections, and correspond to an active submarine fault, called the Meloria Fault, responsible so far for medium-intensity earthquakes, which in some cases have also triggered moderate tsunamis."
     }
   ],
   "days": [
     {
-      "title": "Meloria Lighthouses and Towers",
+      "title": "Towers and Lighthouses of the Shoals",
       "stop_ids": [
         "s1",
         "s2",
         "s3",
-        "s4",
-        "s5"
+        "s4"
       ]
     }
-  ]
+  ],
+  "_text_sha": "a33891635df68d8b041d5109db828dcff6c4f2663e2bf6a40c3a06bef759f0cd"
 }

@@ -3,63 +3,52 @@
     {
       "id": "s1",
       "name": "Liechtensteinklamm",
-      "quote": "The Liechtensteinklamm, located at the entrance to Grossarltal in St. Johann im Pongau, stands as one of the longest and deepest gorges in the Alps.",
-      "english": "The Liechtensteinklamm, located at the entrance to Grossarltal in St. Johann im Pongau, stands as one of the longest and deepest gorges in the Alps."
+      "quote": "Die Liechtensteinklamm ist eine Klamm, wenige Kilometer südlich von St. Johann im Pongau, Land Salzburg, Österreich.",
+      "english": "The Liechtensteinklamm is a gorge, a few kilometers south of St. Johann im Pongau, State of Salzburg, Austria."
     },
     {
       "id": "s2",
-      "name": "\"Helix\" Staircase",
-      "quote": "The new highlight is the impressively constructed \"Helix\" staircase, a spiral stairway that descends 30 meters into the depths.",
-      "english": "The new highlight is the impressively constructed \"Helix\" staircase, a spiral stairway that descends 30 meters into the depths."
+      "name": "Holzstege",
+      "quote": "Die Klamm ist über Holzstege zu besichtigen, die ständig auf ihre Sicherheit überwacht und gewartet werden.",
+      "english": "The gorge can be visited via wooden walkways, which are constantly monitored for their safety and maintained."
     },
     {
       "id": "s3",
-      "name": "big waterfall",
-      "quote": "At the end of the gorge, you will find a viewing platform offering a breathtaking view of the big waterfall.",
-      "english": "At the end of the gorge, you will find a viewing platform offering a breathtaking view of the big waterfall."
+      "name": "Wasserfall",
+      "quote": "Am Ende der Klamm befindet sich ein Wasserfall.",
+      "english": "At the end of the gorge, there is a waterfall."
     },
     {
       "id": "s4",
-      "name": "Gasthof Obersteiner",
-      "quote": "Two restaurants, Gasthof Obersteiner and Klammwirtin, are located right at the entrance to Liechtensteinklamm, perfect for grabbing something to eat or drink before or after your visit.",
-      "english": "Two restaurants, Gasthof Obersteiner and Klammwirtin, are located right at the entrance to Liechtensteinklamm, perfect for grabbing something to eat or drink before or after your visit."
+      "name": "Großarler Ache",
+      "quote": "Das Wasser des Gebirgsbaches Großarler Ache (Großarlbach) bildete durch Jahrtausende währende Tiefenerosion die heutige Liechtensteinklamm.",
+      "english": "The water of the mountain stream Großarler Ache (Großarlbach) formed today's Liechtensteinklamm through thousands of years of deep erosion."
     },
     {
       "id": "s5",
-      "name": "Klammwirtin",
-      "quote": "Two restaurants, Gasthof Obersteiner and Klammwirtin, are located right at the entrance to Liechtensteinklamm, perfect for grabbing something to eat or drink before or after your visit.",
-      "english": "Two restaurants, Gasthof Obersteiner and Klammwirtin, are located right at the entrance to Liechtensteinklamm, perfect for grabbing something to eat or drink before or after your visit."
+      "name": "Gasthaus an der Klamm",
+      "quote": "1924 wurde ein Gasthaus an der Klamm errichtet, das 2011 abgerissen und 2012 durch einen Neubau ersetzt wurde.",
+      "english": "An inn at the gorge was built in 1924, which was demolished in 2011 and replaced by a new building in 2012."
     },
     {
       "id": "s6",
-      "name": "Grossarler Ache",
-      "quote": "The waters of the Grossarler Ache formed today's Liechtensteinklamm over the course of millennia.",
-      "english": "The waters of the Grossarler Ache formed today's Liechtensteinklamm over the course of millennia."
-    },
-    {
-      "id": "s7",
-      "name": "viewing platform",
-      "quote": "At the end of the gorge, you will find a viewing platform offering a breathtaking view of the big waterfall.",
-      "english": "At the end of the gorge, you will find a viewing platform offering a breathtaking view of the big waterfall."
+      "name": "Schlucht",
+      "quote": "Voller Wut und Zorn überflog er die Schlucht und schleuderte Wasser in sie hinein.",
+      "english": "Full of rage and anger, he flew over the canyon and hurled water into it."
     }
   ],
   "days": [
     {
-      "title": "Liechtensteinklamm Gorge Exploration",
+      "title": "Gorge Experience",
       "stop_ids": [
         "s1",
         "s2",
-        "s6",
-        "s7"
-      ]
-    },
-    {
-      "title": "Gorge Entrance Amenities and Sights",
-      "stop_ids": [
         "s3",
         "s4",
-        "s5"
+        "s5",
+        "s6"
       ]
     }
-  ]
+  ],
+  "_text_sha": "574c7217d2460cbf3fcc7705ef572541f812936f38c6fcf3f9f185cb5afa3ae4"
 }

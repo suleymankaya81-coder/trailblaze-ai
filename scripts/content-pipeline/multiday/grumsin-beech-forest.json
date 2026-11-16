@@ -2,45 +2,70 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Altkünkendorf Information Center",
-      "quote": "Welcome to the website of the Altkünkendorf Information Center at the Buchenwald Grumsin UNESCO World Natural Heritage Site—Brandenburg’s only UNESCO World Natural Heritage Site!",
-      "english": "Welcome to the website of the Altkünkendorf Information Center at the Buchenwald Grumsin UNESCO World Natural Heritage Site—Brandenburg’s only UNESCO World Natural Heritage Site!"
+      "name": "Buchenwald Grumsin",
+      "quote": "Ein Teil des Naturschutzgebietes Grumsiner Forst/Redernswalde, der Buchenwald Grumsin, ist als Teilstätte des UNESCO-Weltnaturerbes „Alte Buchenwälder und Buchenurwälder der Karpaten und anderer Regionen Europas“ ausgezeichnet (Anerkennung durch die UNESCO im Jahr 2011).",
+      "english": "A part of the Grumsiner Forst/Redernswalde nature reserve, the Grumsin Beech Forest, is designated as a sub-site of the UNESCO World Natural Heritage 'Ancient Beech Forests and Primeval Beech Forests of the Carpathians and Other Regions of Europe' (recognized by UNESCO in 2011)."
     },
     {
       "id": "s2",
-      "name": "Grumsin Beech Forest",
-      "quote": "The beech forest of Grumsin is located in the heart of the Schorfheide-Chorin biosphere reserve, about 80 kilometres northeast of Berlin.",
-      "english": "The beech forest of Grumsin is located in the heart of the Schorfheide-Chorin biosphere reserve, about 80 kilometres northeast of Berlin."
+      "name": "Blocksberg",
+      "quote": "Die Oberflächengestalt des Biosphärenreservats ist wesentlich gekennzeichnet durch bewaldete Endmoränenbögen, die sich von Nordwesten nach Südosten durch das ganze Biosphärenreservat ziehen und bis zu 100 m über die umgebende Landschaft erheben (höchster Punkt: Blocksberg im Grumsin, 139 m ü. NN).",
+      "english": "The surface shape of the biosphere reserve is essentially characterized by forested terminal moraine arches, which stretch from northwest to southeast through the entire biosphere reserve and rise up to 100 m above the surrounding landscape (highest point: Blocksberg in Grumsin, 139 m above sea level)."
     },
     {
       "id": "s3",
-      "name": "Infopunkt in Altkünkendorf",
-      "quote": "Visit the Grumsin Beech Forest World Heritage Site and start a hike from the Infopunkt in Altkünkendorf.",
-      "english": "Visit the Grumsin Beech Forest World Heritage Site and start a hike from the Infopunkt in Altkünkendorf."
+      "name": "Werbellinsee",
+      "quote": "Südwestlich der Endmoränen fächern sich Sander-Ebenen auf, die größte davon ist die Schorfheide westlich des Werbellinsees.",
+      "english": "Southwest of the terminal moraines, sandur plains fan out, the largest of which is the Schorfheide west of Lake Werbellin."
     },
     {
       "id": "s4",
-      "name": "yellow and green Beech Leaf trails",
-      "quote": "Caution: Hunting in progress! Closure of the yellow and green Beech Leaf trails on 2026-11-06 and 2026-11-07",
-      "english": "Caution: Hunting in progress! Closure of the yellow and green Beech Leaf trails on 2026-11-06 and 2026-11-07"
+      "name": "Parsteinsee",
+      "quote": "Charakteristische Elemente des Biosphärenreservates sind die 240 sehr verschiedenartigen Seen, die Gletscherzungenbeckenseen (z. B. Parsteinsee), tiefe Rinnenseen (z. B. Werbellinsee) und Flachseen bis hin zu seenartig erweiterten Altarmen der Oder (Oderberger See).",
+      "english": "Characteristic elements of the biosphere reserve are the 240 very diverse lakes, the glacial tongue basin lakes (e.g., Lake Parstein), deep channel lakes (e.g., Lake Werbellin), and shallow lakes up to lake-like expanded oxbows of the Oder (Lake Oderberg)."
     },
     {
       "id": "s5",
-      "name": "Outdoor exhibition “Capturing Beech Forests”",
-      "quote": "Outdoor exhibition “Capturing Beech Forests” in Altkünkendorf To mark the 15th anniversary of the World Heritage designation, this outdoor exhibition",
-      "english": "Outdoor exhibition “Capturing Beech Forests” in Altkünkendorf To mark the 15th anniversary of the World Heritage designation, this outdoor exhibition"
+      "name": "Oderberger See",
+      "quote": "Charakteristische Elemente des Biosphärenreservates sind die 240 sehr verschiedenartigen Seen, die Gletscherzungenbeckenseen (z. B. Parsteinsee), tiefe Rinnenseen (z. B. Werbellinsee) und Flachseen bis hin zu seenartig erweiterten Altarmen der Oder (Oderberger See).",
+      "english": "Characteristic elements of the biosphere reserve are the 240 very diverse lakes, the glacial tongue basin lakes (e.g., Lake Parstein), deep channel lakes (e.g., Lake Werbellin), and shallow lakes up to lake-like expanded oxbows of the Oder (Lake Oderberg)."
+    },
+    {
+      "id": "s6",
+      "name": "Pinnowseen",
+      "quote": "Erst vor kurzem wurde entdeckt, dass einige langgestreckte Seen wie die Pinnowseen erst nach dem Rückzug der Eiszeitgletscher entstanden, indem sich das darunterliegende Zechstein-Salinar ausdehnte und oberflächige Risse verursachte.",
+      "english": "It was only recently discovered that some elongated lakes like the Pinnow lakes only emerged after the retreat of the Ice Age glaciers when the underlying Zechstein salt expanded and caused surface cracks."
+    },
+    {
+      "id": "s7",
+      "name": "Zisterzienserkloster Chorin",
+      "quote": "Das im 13. Jahrhundert erbaute Zisterzienserkloster Chorin symbolisiert mit seiner Backstein-Gotik die reichhaltige Kulturgeschichte des Raumes.",
+      "english": "The Cistercian Chorin Abbey, built in the 13th century, symbolizes the rich cultural history of the area with its Brick Gothic style."
     }
   ],
   "days": [
     {
-      "title": "Altkünkendorf Visitor Sites and Forest Trails",
+      "title": "Grumsin Core and Heights",
       "stop_ids": [
         "s1",
-        "s2",
+        "s2"
+      ]
+    },
+    {
+      "title": "Glacial Lakes and Waters",
+      "stop_ids": [
         "s3",
         "s4",
         "s5"
       ]
+    },
+    {
+      "title": "Culture and Geological Wonders",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
     }
-  ]
+  ],
+  "_text_sha": "469545132dc3a75378e357dbe3aa142db43ae20bc3d32655a933427cb19ca28e"
 }

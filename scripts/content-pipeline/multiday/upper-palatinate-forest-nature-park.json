@@ -2,64 +2,77 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Steinwald",
-      "quote": "In the Steinwald, mighty granite formations like the Oberpfalzturm or the Weißenstein castle ruins rise above the treetops.",
-      "english": "In the Steinwald, mighty granite formations like the Oberpfalzturm or the Weißenstein castle ruins rise above the treetops."
+      "name": "Naab",
+      "quote": "Naab und Schwarzach sind die Hauptflüsse des Naturparks.",
+      "english": "Naab and Schwarzach are the main rivers of the nature park."
     },
     {
       "id": "s2",
-      "name": "Oberpfalzturm",
-      "quote": "In the Steinwald, mighty granite formations like the Oberpfalzturm or the Weißenstein castle ruins rise above the treetops.",
-      "english": "In the Steinwald, mighty granite formations like the Oberpfalzturm or the Weißenstein castle ruins rise above the treetops."
+      "name": "Schwarzach",
+      "quote": "Naab und Schwarzach sind die Hauptflüsse des Naturparks.",
+      "english": "Naab and Schwarzach are the main rivers of the nature park."
     },
     {
       "id": "s3",
-      "name": "Weißenstein castle ruins",
-      "quote": "In the Steinwald, mighty granite formations like the Oberpfalzturm or the Weißenstein castle ruins rise above the treetops.",
-      "english": "In the Steinwald, mighty granite formations like the Oberpfalzturm or the Weißenstein castle ruins rise above the treetops."
+      "name": "Charlottenhofer Weihergebietes",
+      "quote": "Die seit dem Mittelalter begonnene Stillgewässerlandschaft des Charlottenhofer Weihergebietes ist auch Teil des Naturparks und als Naturschutzgebiet gesichert.",
+      "english": "The landscape of standing waters of the Charlottenhofer Weihergebiet, which began in the Middle Ages, is also part of the nature park and is secured as a nature reserve."
     },
     {
       "id": "s4",
-      "name": "Waldnaabtal",
-      "quote": "The Waldnaabtal is particularly refreshing, where the river has carved its way through high granite blocks.",
-      "english": "The Waldnaabtal is particularly refreshing, where the river has carved its way through high granite blocks."
+      "name": "Hirschberg-Aussichtsturm",
+      "quote": "Seit März 2025 ist der neue Hirschberg-Aussichtsturm im Naturschutzgebiet Pfahl bei Fuhrn (Neunburg vorm Wald) errichtet.",
+      "english": "Since March 2025, the new Hirschberg-Aussichtsturm has been erected in the Pfahl nature reserve near Fuhrn (Neunburg vorm Wald)."
     },
     {
       "id": "s5",
-      "name": "Tirschenreuth Pond District",
-      "quote": "The Tirschenreuth Pond District, known as the 'Land of a Thousand Ponds', offers a unique aquatic landscape.",
-      "english": "The Tirschenreuth Pond District, known as the 'Land of a Thousand Ponds', offers a unique aquatic landscape."
+      "name": "Naturschutzgebiet Pfahl",
+      "quote": "Seit März 2025 ist der neue Hirschberg-Aussichtsturm im Naturschutzgebiet Pfahl bei Fuhrn (Neunburg vorm Wald) errichtet.",
+      "english": "Since March 2025, the new Hirschberg-Aussichtsturm has been erected in the Pfahl nature reserve near Fuhrn (Neunburg vorm Wald)."
     },
     {
       "id": "s6",
-      "name": "Goldsteig",
-      "quote": "The Goldsteig trail leads through the varied landscape of the Upper Palatinate Forest.",
-      "english": "The Goldsteig trail leads through the varied landscape of the Upper Palatinate Forest."
+      "name": "Weingartenfelsen",
+      "quote": "Seit 1983 ist auf dem Gipfelplatteau des Weingartenfelsen der Böhmerwaldturm in Holzbauweise aufgestellt.",
+      "english": "Since 1983, the Böhmerwaldturm has been erected in wooden construction on the summit plateau of the Weingartenfelsen."
     },
     {
       "id": "s7",
-      "name": "Bärnau-Tachov History Park",
-      "quote": "Cultural history can be experienced at the Bärnau-Tachov History Park, an archaeological open-air museum.",
-      "english": "Cultural history can be experienced at the Bärnau-Tachov History Park, an archaeological open-air museum."
+      "name": "Böhmerwaldturm",
+      "quote": "Seit 1983 ist auf dem Gipfelplatteau des Weingartenfelsen der Böhmerwaldturm in Holzbauweise aufgestellt.",
+      "english": "Since 1983, the Böhmerwaldturm has been erected in wooden construction on the summit plateau of the Weingartenfelsen."
+    },
+    {
+      "id": "s8",
+      "name": "Naturschutzgebiet Prackendorfer und Kulzer Moos",
+      "quote": "Naturschutzgebiet Prackendorfer und Kulzer Moos",
+      "english": "Prackendorfer and Kulzer Moos Nature Reserve"
     }
   ],
   "days": [
     {
-      "title": "Granite Heights and River Valleys",
+      "title": "Rivers and Wetlands",
       "stop_ids": [
         "s1",
         "s2",
-        "s3",
-        "s4"
+        "s3"
       ]
     },
     {
-      "title": "Water Landscapes and Cultural History",
+      "title": "Observation Towers and Geology",
       "stop_ids": [
-        "s5",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "High Peaks and Moorlands",
+      "stop_ids": [
         "s6",
-        "s7"
+        "s7",
+        "s8"
       ]
     }
-  ]
+  ],
+  "_text_sha": "bf259286a69343dd14ccf2ad69f5c890104b63ea88dd72c490d2278d325643de"
 }

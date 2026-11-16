@@ -2,59 +2,65 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Irrhausen",
-      "quote": "Irrhausen Open today..",
-      "english": "Irrhausen Open today.."
+      "name": "Sauer",
+      "quote": "Er umfasst Teile der Eifel beiderseits von Sauer und Our.",
+      "english": "It encompasses parts of the Eifel on both sides of the Sauer and Our."
     },
     {
       "id": "s2",
-      "name": "Prümer Burg Castle",
-      "quote": "From the keep of Prümer Burg on the steep cliff, you have a wonderful view over the Prüm Valley.",
-      "english": "From the keep of Prümer Burg on the steep cliff, you have a wonderful view over the Prüm Valley."
+      "name": "Our",
+      "quote": "Die nationalen Naturparks arbeiten im Rahmen von INTERREG-Projekten zusammen, beispielsweise im „Projekt Nat’OUR“ zur Renaturierung der Our.",
+      "english": "The national nature parks work together within the framework of INTERREG projects, for example in the \"Project Nat’OUR\" for the restoration of the Our."
     },
     {
       "id": "s3",
-      "name": "Prüm Valley",
-      "quote": "From the keep of Prümer Burg on the steep cliff, you have a wonderful view over the Prüm Valley.",
-      "english": "From the keep of Prümer Burg on the steep cliff, you have a wonderful view over the Prüm Valley."
+      "name": "Luxemburger Schweiz",
+      "quote": "Auf luxemburgischer Seite gibt es kein exaktes Naturparkpendant, vielmehr überlappen sich hier der bestehende Naturpark Our, die Luxemburger Schweiz bei Echternach und weitere, noch entsprechend zu entwickelnde Gebiete.",
+      "english": "On the Luxembourg side, there is no exact nature park counterpart; rather, the existing Our Nature Park, the Luxembourg Switzerland near Echternach, and other areas yet to be developed accordingly overlap here."
     },
     {
       "id": "s4",
-      "name": "Chapel of the Sorrowful Mother of God",
-      "quote": "The Chapel of the Sorrowful Mother of God (municipality of Dockendorf) is located on the circular hiking trail no. 89 of the Southern Eifel Nature Park.",
-      "english": "The Chapel of the Sorrowful Mother of God (municipality of Dockendorf) is located on the circular hiking trail no. 89 of the Southern Eifel Nature Park."
+      "name": "Echternach",
+      "quote": "Auf luxemburgischer Seite gibt es kein exaktes Naturparkpendant, vielmehr überlappen sich hier der bestehende Naturpark Our, die Luxemburger Schweiz bei Echternach und weitere, noch entsprechend zu entwickelnde Gebiete.",
+      "english": "On the Luxembourg side, there is no exact nature park counterpart; rather, the existing Our Nature Park, the Luxembourg Switzerland near Echternach, and other areas yet to be developed accordingly overlap here."
     },
     {
       "id": "s5",
-      "name": "Spangdahlem entombment group of Christ",
-      "quote": "In the chapel there are three sculpture groups: the Entombment group from 1643, the Lamentation, or \"Holy Grave\" group, and the Resurrection group created in 1750.",
-      "english": "In the chapel there are three sculpture groups: the Entombment group from 1643, the Lamentation, or \"Holy Grave\" group, and the Resurrection group created in 1750."
+      "name": "Irrel",
+      "quote": "Die Naturparkverwaltung ist seit Mitte 2006 in den Gebäuden der Verbandsgemeindeverwaltung Irrel angesiedelt.",
+      "english": "The nature park administration has been located in the buildings of the Irrel municipal administration since mid-2006."
     },
     {
       "id": "s6",
-      "name": "Wikingerburg",
-      "quote": "The meter-high rampart of fallen stones is the remains of a millennia-old fortification on the edge of the Ferschweiler plateau.",
-      "english": "The meter-high rampart of fallen stones is the remains of a millennia-old fortification on the edge of the Ferschweiler plateau."
+      "name": "Europadenkmal",
+      "quote": "Zu den Sehenswürdigkeiten des Naturparks zählt neben seiner Landschaft das Europadenkmal am Dreiländereck Belgien–Deutschland–Luxemburg.",
+      "english": "Among the sights of the nature park, alongside its landscape, is the Europe Monument at the border triangle of Belgium, Germany, and Luxembourg."
     },
     {
       "id": "s7",
-      "name": "Mindener-Layen",
-      "quote": "The old vineyard terraces in the Sûre Valley are a biotope and cultural monument particularly worthy of protection.",
-      "english": "The old vineyard terraces in the Sûre Valley are a biotope and cultural monument particularly worthy of protection."
+      "name": "Dreiländereck Belgien–Deutschland–Luxemburg",
+      "quote": "Zu den Sehenswürdigkeiten des Naturparks zählt neben seiner Landschaft das Europadenkmal am Dreiländereck Belgien–Deutschland–Luxemburg.",
+      "english": "Among the sights of the nature park, alongside its landscape, is the Europe Monument at the border triangle of Belgium, Germany, and Luxembourg."
     }
   ],
   "days": [
     {
-      "title": "Castles, Valleys, and Villages of the South Eifel",
+      "title": "Rivers and Administration",
       "stop_ids": [
         "s1",
         "s2",
+        "s5"
+      ]
+    },
+    {
+      "title": "Luxembourgish Switzerland and Border Monuments",
+      "stop_ids": [
         "s3",
         "s4",
-        "s5",
         "s6",
         "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "43245b9c3c0a84f109413cad19a8b024817d4b35d03620f790900e32e10a4906"
 }

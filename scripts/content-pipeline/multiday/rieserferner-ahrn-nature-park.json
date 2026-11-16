@@ -2,76 +2,70 @@
   "stops": [
     {
       "id": "s1",
-      "name": "lago di Anterselva",
-      "quote": "È un ambiente costituito da laghi alpini, come il lago di Anterselva, cascate, e monti come la Finestra dei Tauri e le Vedrette di Ries.",
-      "english": "It is an environment consisting of alpine lakes, such as Lake Anterselva, waterfalls, and mountains like the Tauern Window and the Rieserferner."
+      "name": "Valle Aurina",
+      "quote": "È delimitato a nord-ovest dal fondovalle della Valle Aurina, ad est fino al passo Stalle dal confine di Stato, a sud-est dalla valle di Anterselva e a sud dalla val Pusteria.",
+      "english": "It is bordered to the northwest by the valley floor of the Valle Aurina, to the east as far as the Stalle Pass by the state border, to the southeast by the Anterselva valley and to the south by the Pusteria valley."
     },
     {
       "id": "s2",
-      "name": "Finestra dei Tauri",
+      "name": "lago di Anterselva",
       "quote": "È un ambiente costituito da laghi alpini, come il lago di Anterselva, cascate, e monti come la Finestra dei Tauri e le Vedrette di Ries.",
-      "english": "It is an environment consisting of alpine lakes, such as Lake Anterselva, waterfalls, and mountains like the Tauern Window and the Rieserferner."
+      "english": "It is an environment consisting of alpine lakes, such as Lake Anterselva, waterfalls, and mountains such as the Finestra dei Tauri and the Vedrette di Ries."
     },
     {
       "id": "s3",
       "name": "Vedrette di Ries",
-      "quote": "È un ambiente costituito da laghi alpini, come il lago di Anterselva, cascate, e monti come la Finestra dei Tauri e le Vedrette di Ries.",
-      "english": "It is an environment consisting of alpine lakes, such as Lake Anterselva, waterfalls, and mountains like the Tauern Window and the Rieserferner."
+      "quote": "Il rifugio Roma alle Vedrette di Ries si trova all'interno dell'area protetta.",
+      "english": "The Roma refuge at the Vedrette di Ries is located within the protected area."
     },
     {
       "id": "s4",
       "name": "torbiera di Rasun",
       "quote": "La torbiera di Rasun (Anterselva), che occupa circa 20 ettari all'interno del parco, ospita l'unica stazione italiana dell'orchidea Malaxis paludosa, specie localmente in pericolo critico di estinzione.",
-      "english": "The Rasun peat bog (Anterselva), which occupies about 20 hectares within the park, hosts the only Italian station of the Bog Orchid, a species locally in critical danger of extinction."
+      "english": "The Rasun bog (Anterselva), which occupies about 20 hectares within the park, hosts the only Italian station of the Malaxis paludosa orchid, a species locally in critical danger of extinction."
     },
     {
       "id": "s5",
       "name": "Biotopo Torbiera di Rasun",
-      "quote": "Biotopo Torbiera di Rasun",
-      "english": "Rasun Peat Bog Biotope"
+      "quote": "Il Biotopo Torbiera di Rasun è uno dei luoghi d'interesse del parco.",
+      "english": "The Rasun Bog Biotope is one of the places of interest in the park."
     },
     {
       "id": "s6",
       "name": "centro informativo del parco",
       "quote": "Il centro informativo del parco ha sede a Casere di Predoi, il centro visite ha sede a Campo Tures.",
-      "english": "The park's information center is located in Casere di Predoi, the visitor center is located in Campo Tures."
+      "english": "The park information center is based in Casere di Predoi, the visitor center is based in Campo Tures."
     },
     {
       "id": "s7",
-      "name": "centro visite",
-      "quote": "Il centro informativo del parco ha sede a Casere di Predoi, il centro visite ha sede a Campo Tures.",
-      "english": "The park's information center is located in Casere di Predoi, the visitor center is located in Campo Tures."
-    },
-    {
-      "id": "s8",
-      "name": "Rifugio Roma alle Vedrette di Ries",
-      "quote": "Rifugio Roma alle Vedrette di Ries",
-      "english": "Roma Hut at the Rieserferner"
+      "name": "Rifugio Roma",
+      "quote": "Rifugio Roma alle Vedrette di Ries si trova a quota elevata.",
+      "english": "Roma Refuge at the Vedrette di Ries is located at a high altitude."
     }
   ],
   "days": [
     {
-      "title": "Anterselva Lakes and Peat Bogs",
+      "title": "Anterselva Lakes and Peatlands",
       "stop_ids": [
-        "s1",
+        "s2",
         "s4",
         "s5"
       ]
     },
     {
-      "title": "Glaciers and Mountain Peaks",
+      "title": "Valle Aurina and High Peaks",
       "stop_ids": [
-        "s2",
+        "s1",
         "s3",
-        "s8"
+        "s7"
       ]
     },
     {
-      "title": "Park Discovery and Visitor Centers",
+      "title": "Visitor Services",
       "stop_ids": [
-        "s6",
-        "s7"
+        "s6"
       ]
     }
-  ]
+  ],
+  "_text_sha": "1534a55b3b184278d8c057898b236af7ff117ac3914d6f6a8105df91ecc1a036"
 }

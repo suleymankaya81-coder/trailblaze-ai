@@ -2,38 +2,58 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Langenberg Wildlife Park",
-      "quote": "Our Förderverein supports Langenberg Wildlife Park and the Sihlwald Nature Discovery Park.",
-      "english": "Our support association supports Langenberg Wildlife Park and the Sihlwald Nature Discovery Park."
+      "name": "Sihlwald forest",
+      "quote": "It includes the Sihlwald forest, the largest mixed deciduous and coniferous forest in the Swiss Plateau (Swiss Mittelland), and the Langenberg Wildlife Park, the oldest Swiss wildlife park.",
+      "english": "It includes the Sihlwald forest, the largest mixed deciduous and coniferous forest in the Swiss Plateau (Swiss Mittelland), and the Langenberg Wildlife Park, the oldest Swiss wildlife park."
     },
     {
       "id": "s2",
-      "name": "Sihlwald Nature Discovery Park",
-      "quote": "Watch lynx and bison at Langenberg Wildlife Park, or discover how the wilderness is reclaiming the forest at Sihlwald Nature Discovery Park.",
-      "english": "Watch lynx and bison at Langenberg Wildlife Park, or discover how the wilderness is reclaiming the forest at Sihlwald Nature Discovery Park."
+      "name": "Langenberg Wildlife Park",
+      "quote": "In 1869, Langenberg Wildlife Park was founded by the city forester Carl Anton Ludwig von Orelli.",
+      "english": "In 1869, Langenberg Wildlife Park was founded by the city forester Carl Anton Ludwig von Orelli."
     },
     {
       "id": "s3",
-      "name": "Winterwald",
-      "quote": "Im Winterwald suchen Sie nach Spuren, wie Wildtiere die kalte Jahreszeit meistern.",
-      "english": "In the winter forest you look for tracks of how wild animals master the cold season."
+      "name": "Sihl Valley",
+      "quote": "Both sites are situated in the Sihl Valley to the south of Zürich, but are separated from each other by the town of Langnau am Albis.",
+      "english": "Both sites are situated in the Sihl Valley to the south of Zürich, but are separated from each other by the town of Langnau am Albis."
     },
     {
       "id": "s4",
-      "name": "Wildnispark Zürich Sihlwald",
-      "quote": "Geniessen Sie mit der Familie oder Freunden einen reichhaltigen Brunch inklusive geführtem kurzweiligem Spaziergang zu einem Wildtier im Park.",
-      "english": "Enjoy a rich brunch with family or friends, including a guided, entertaining walk to a wild animal in the park."
+      "name": "museum",
+      "quote": "Today, the park welcomes more than half a million yearly visitors, who are encouraged to barbecue, hike, cycle, and even ride horseback through the park, as well as visit its museum and attend various outdoor events.",
+      "english": "Today, the park welcomes more than half a million yearly visitors, who are encouraged to barbecue, hike, cycle, and even ride horseback through the park, as well as visit its museum and attend various outdoor events."
+    },
+    {
+      "id": "s5",
+      "name": "Albis hills",
+      "quote": "It is situated on both banks of the Sihl river, although mostly on the western slopes rising up to the Albis hills.",
+      "english": "It is situated on both banks of the Sihl river, although mostly on the western slopes rising up to the Albis hills."
+    },
+    {
+      "id": "s6",
+      "name": "Sihl river",
+      "quote": "It is situated on both banks of the Sihl river, although mostly on the western slopes rising up to the Albis hills.",
+      "english": "It is situated on both banks of the Sihl river, although mostly on the western slopes rising up to the Albis hills."
     }
   ],
   "days": [
     {
-      "title": "Wildlife and Forest Discovery",
+      "title": "Sihl Valley and Local Wildlife",
       "stop_ids": [
-        "s1",
         "s2",
         "s3",
         "s4"
       ]
+    },
+    {
+      "title": "Sihlwald Forest and Albis Slopes",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6"
+      ]
     }
-  ]
+  ],
+  "_text_sha": "b184c728c453bb00f99bb2672a63b53af2bc375832ad3f1d9036c7dd84a5e94c"
 }

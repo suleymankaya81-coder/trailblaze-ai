@@ -3,44 +3,64 @@
     {
       "id": "s1",
       "name": "Breitachklamm",
-      "quote": "Erwandern Sie auf bestens begehbaren und gesicherten Pfaden das faszinierende Naturerlebnis Breitachklamm und erleben Sie die Kraft des Wassers.",
-      "english": "Hike the fascinating Breitachklamm nature experience on well-accessible and secured paths and experience the power of the water."
+      "quote": "Die Breitachklamm ist eine durch die Breitach geschaffene Klamm im Allgäu.",
+      "english": "The Breitachklamm is a gorge created by the Breitach river in the Allgäu region."
     },
     {
       "id": "s2",
-      "name": "Tiefenbach",
-      "quote": "Sie zählt zu den imposantesten Geotopen Bayerns und gehört zudem zu den beliebtesten Attraktionen der Region und erstreckt sich vom Oberstdorfer Ortsteil Tiefenbach bis ins benachbarte Kleinwalsertal.",
-      "english": "It is one of the most impressive geotopes in Bavaria and is also one of the most popular attractions in the region, extending from the Oberstdorf district of Tiefenbach to the neighboring Kleinwalsertal."
+      "name": "Wanderweg",
+      "quote": "Jährlich begeben sich rund 300.000 Besucher auf den 2,5 km langen Wanderweg durch die Klamm.",
+      "english": "Every year, around 300,000 visitors set out on the 2.5 km long hiking trail through the gorge."
     },
     {
       "id": "s3",
-      "name": "Kleinwalsertal",
-      "quote": "Sie zählt zu den imposantesten Geotopen Bayerns und gehört zudem zu den beliebtesten Attraktionen der Region und erstreckt sich vom Oberstdorfer Ortsteil Tiefenbach bis ins benachbarte Kleinwalsertal.",
-      "english": "It is one of the most impressive geotopes in Bavaria and is also one of the most popular attractions in the region, extending from the Oberstdorf district of Tiefenbach to the neighboring Kleinwalsertal."
+      "name": "Eingangsgebäude in Tiefenbach",
+      "quote": "Im Dezember 2004 wurde ein neues Eingangsgebäude in Tiefenbach in Betrieb genommen.",
+      "english": "In December 2004, a new entrance building in Tiefenbach was put into operation."
     },
     {
       "id": "s4",
-      "name": "Walserschanz",
-      "quote": "Am historischen Grenzort Walserschanz erfolgt derzeit die Sanierung des denkmalgeschützten Gebäudes mit der Zielsetzung der Eröffnung der Klamm-Erlebniswelten: eine interaktive Ausstellung .",
-      "english": "At the historic border location Walserschanz, the renovation of the listed building is currently taking place with the goal of opening the Gorge Discovery Worlds: an interactive exhibition."
+      "name": "Bergschau",
+      "quote": "Im Oktober 2005 wurde dort eine Außenstelle der Bergschau untergebracht, die sich mittels interaktiver Modelle mit der Wirkung von Wasser auf die Berge beschäftigte.",
+      "english": "In October 2005, a branch of the Bergschau was established there, which used interactive models to deal with the effects of water on the mountains."
     },
     {
       "id": "s5",
-      "name": "Klamm-Erlebniswelten",
-      "quote": "Am historischen Grenzort Walserschanz erfolgt derzeit die Sanierung des denkmalgeschützten Gebäudes mit der Zielsetzung der Eröffnung der Klamm-Erlebniswelten: eine interaktive Ausstellung .",
-      "english": "At the historic border location Walserschanz, the renovation of the listed building is currently taking place with the goal of opening the Gorge Discovery Worlds: an interactive exhibition."
+      "name": "Walserschanz",
+      "quote": "Das Gebäude an der Walserschanz steht seit 2013 leer und wurde 2016 mitsamt angrenzendem Areal vom Breitachklammverein erworben.",
+      "english": "The building at Walserschanz has been empty since 2013 and was acquired by the Breitachklammverein in 2016 along with the adjacent area."
+    },
+    {
+      "id": "s6",
+      "name": "Klammweg",
+      "quote": "Am 23. März 1996 um 11:30 Uhr brach das Wasser durch, verwüstete den Klammweg vollständig und richtete dabei Schäden in Höhe von rund 300.000 DM an.",
+      "english": "On March 23, 1996, at 11:30 a.m., the water broke through, completely devastating the gorge path and causing damage amounting to around 300,000 DM."
+    },
+    {
+      "id": "s7",
+      "name": "Geotop",
+      "quote": "Die Breitachklamm ist vom Bayerischen Landesamt für Umwelt als Geotop (Geotop-Nummer: 780R017) ausgewiesen.",
+      "english": "The Breitachklamm is designated as a geotope (Geotope number: 780R017) by the Bavarian State Office for the Environment."
     }
   ],
   "days": [
     {
-      "title": "Gorge Exploration and Discovery",
+      "title": "Breitachklamm Gorge and Hiking Paths",
       "stop_ids": [
         "s1",
         "s2",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Visitor Centres and Entrances",
+      "stop_ids": [
         "s3",
         "s4",
         "s5"
       ]
     }
-  ]
+  ],
+  "_text_sha": "cbc6a67eb753ac8a6d5a8b93429ff71920319a16abed66338112eed1633e4e5f"
 }

@@ -2,69 +2,77 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Oeschinen Lake",
-      "quote": "From here, you can either take the Cable car walk up to the shore of Lake Oeschinen.",
-      "english": "From here, you can either take the Cable car walk up to the shore of Lake Oeschinen."
+      "name": "Oeschinensee",
+      "quote": "Der Oeschinensee liegt oberhalb von Kandersteg (Berner Oberland) in der Schweiz.",
+      "english": "Oeschinen Lake is located above Kandersteg (Bernese Oberland) in Switzerland."
     },
     {
       "id": "s2",
-      "name": "mountain coaster",
-      "quote": "Rushing down the mountain on the 750 meter long mountain coaster is fun for the whole family!",
-      "english": "Rushing down the mountain on the 750 meter long mountain coaster is fun for the whole family!"
+      "name": "Blüemlisalphütte",
+      "quote": "Am Oeschinensee vorbei verlaufen die Zustiege zur Blüemlisalp- (2834 m) und Fründenhütte (2562 m) des Schweizer Alpen-Clubs.",
+      "english": "The access routes to the Blüemlisalp (2834 m) and Fründen huts (2562 m) of the Swiss Alpine Club run past Oeschinen Lake."
     },
     {
       "id": "s3",
-      "name": "Oeschinensee Mountain Restaurant",
-      "quote": "Oeschinensee Mountain Restaurant (on the lakeshore): “Open” self-service daily from 9:00 a.m. to 4:00 p.m.",
-      "english": "Oeschinensee Mountain Restaurant (on the lakeshore): “Open” self-service daily from 9:00 a.m. to 4:00 p.m."
+      "name": "Fründenhütte",
+      "quote": "Die Gras- und Felsbänder der sogenannten «Fründenschnur» über dem Ostufer des Sees erlauben auf etwa 1800 m Höhe eine luftige Traversierung von der Alp Underbärgli zum Aufstiegsweg zur Fründenhütte.",
+      "english": "The grass and rock ledges of the so-called \"Fründenschnur\" above the eastern shore of the lake allow an airy traverse at about 1800 m altitude from the Underbärgli alp to the ascent path to the Fründen hut."
     },
     {
       "id": "s4",
-      "name": "Hiking trail (D)Oeschinensee Läger",
-      "quote": "Hiking trail (D)Oeschinensee Läger: ‘Open’ Approx. 35 min.",
-      "english": "Hiking trail (D)Oeschinensee Läger: ‘Open’ Approx. 35 min."
+      "name": "Heuberg",
+      "quote": "Eine Wanderung führt von der Bergstation über den Heuberg (1940 m, mit Blick auf den See und die umgebenden Dreitausender) zur im Sommer bewirtschafteten Alp Oberbärgli (1978 m), von wo man über die Alp Underbärgli zu den Restaurants am See absteigen kann.",
+      "english": "A hike leads from the mountain station over the Heuberg (1940 m, with a view of the lake and the surrounding three-thousand-meter peaks) to the Alp Oberbärgli (1978 m), which is managed in summer, from where you can descend via the Alp Underbärgli to the restaurants at the lake."
     },
     {
       "id": "s5",
-      "name": "Mountain Hiking Trail (G) Läger–Heuberg–Oberbärgli",
-      "quote": "Mountain Hiking Trail (G) Läger–Heuberg–Oberbärgli: “Open” approx. 1h30.",
-      "english": "Mountain Hiking Trail (G) Läger–Heuberg–Oberbärgli: “Open” approx. 1h30."
+      "name": "Alp Oberbärgli",
+      "quote": "Eine Wanderung führt von der Bergstation über den Heuberg (1940 m, mit Blick auf den See und die umgebenden Dreitausender) zur im Sommer bewirtschafteten Alp Oberbärgli (1978 m), von wo man über die Alp Underbärgli zu den Restaurants am See absteigen kann.",
+      "english": "A hike leads from the mountain station over the Heuberg (1940 m, with a view of the lake and the surrounding three-thousand-meter peaks) to the Alp Oberbärgli (1978 m), which is managed in summer, from where you can descend via the Alp Underbärgli to the restaurants at the lake."
     },
     {
       "id": "s6",
-      "name": "Öschibach",
-      "quote": "Be it the hiking trail in the forest high above the Öschibach (A) or the two mountain trails (B, F) along the Cable car with perfect views of the Kandertal valley.",
-      "english": "Be it the hiking trail in the forest high above the Öschibach (A) or the two mountain trails (B, F) along the Cable car with perfect views of the Kandertal valley."
+      "name": "Alp Underbärgli",
+      "quote": "Die Gras- und Felsbänder der sogenannten «Fründenschnur» über dem Ostufer des Sees erlauben auf etwa 1800 m Höhe eine luftige Traversierung von der Alp Underbärgli zum Aufstiegsweg zur Fründenhütte.",
+      "english": "The grass and rock ledges of the so-called \"Fründenschnur\" above the eastern shore of the lake allow an airy traverse at about 1800 m altitude from the Underbärgli alp to the ascent path to the Fründen hut."
     },
     {
       "id": "s7",
-      "name": "Chalet Arva Hotel and Restaurant",
-      "quote": "Chalet Arva Hotel and Restaurant: “CLOSED” Season opens in May 2027",
-      "english": "Chalet Arva Hotel and Restaurant: “CLOSED” Season opens in May 2027"
+      "name": "Sommerrodelbahn",
+      "quote": "Bei der Bergstation der Gondelbahn befindet sich eine Sommerrodelbahn.",
+      "english": "A summer toboggan run is located at the mountain station of the gondola lift."
+    },
+    {
+      "id": "s8",
+      "name": "Fründenschnur",
+      "quote": "Die Gras- und Felsbänder der sogenannten «Fründenschnur» über dem Ostufer des Sees erlauben auf etwa 1800 m Höhe eine luftige Traversierung von der Alp Underbärgli zum Aufstiegsweg zur Fründenhütte.",
+      "english": "The grass and rock ledges of the so-called \"Fründenschnur\" above the eastern shore of the lake allow an airy traverse at about 1800 m altitude from the Underbärgli alp to the ascent path to the Fründen hut."
     }
   ],
   "days": [
     {
-      "title": "Lake Activities and Dining",
+      "title": "Lake Activities and Tobogganing",
       "stop_ids": [
         "s1",
-        "s3",
         "s7"
       ]
     },
     {
-      "title": "Mountain Trails and Adventure",
+      "title": "Heuberg and High Alpine Pastures",
       "stop_ids": [
-        "s2",
-        "s4"
-      ]
-    },
-    {
-      "title": "Kandertal Exploration",
-      "stop_ids": [
+        "s4",
         "s5",
         "s6"
       ]
+    },
+    {
+      "title": "Alpine Huts and Mountain Ledges",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s8"
+      ]
     }
-  ]
+  ],
+  "_text_sha": "54f1707f3f1ff87e6c345b820b95624c25d4b85ab3e1b2a4e0f632ee530e21cb"
 }

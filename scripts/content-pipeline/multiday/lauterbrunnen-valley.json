@@ -2,76 +2,79 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Staubbachfall",
-      "quote": "Its landmark is the Staubbachfall: see how it cascades 300 metres over the vertical rock face.",
-      "english": "Its landmark is the Staubbachfall: see how it cascades 300 metres over the vertical rock face."
+      "name": "Wengen",
+      "quote": "Die Einwohnerzahl der Ortschaft Lauterbrunnen (2023: 782) liegt unter der von Wengen (2023: 1'116), ist aber höher als die der anderen vier Ortschaften.",
+      "english": "The population of the village of Lauterbrunnen (2023: 782) is lower than that of Wengen (2023: 1,116), but higher than those of the other four villages."
     },
     {
       "id": "s2",
-      "name": "Trümmelbachfälle",
-      "quote": "The Trümmelbachfälle also lets you feel the tremendous energy of the water: the glacier water thunders through a labyrinth of rocks inside the mountain.",
-      "english": "The Trümmelbachfälle also lets you feel the tremendous energy of the water: the glacier water thunders through a labyrinth of rocks inside the mountain."
+      "name": "Mürren",
+      "quote": "Die Gemeinde liegt im Lauterbrunnental und besteht aus den Ortschaften Lauterbrunnen, Wengen, Mürren, Gimmelwald, Stechelberg und Isenfluh.",
+      "english": "The municipality lies in the Lauterbrunnen Valley and consists of the villages of Lauterbrunnen, Wengen, Mürren, Gimmelwald, Stechelberg, and Isenfluh."
     },
     {
       "id": "s3",
-      "name": "Mürrenbachfall",
-      "quote": "The Mürrenbachfall, which plunges 750 meters into the depths in five cascades, is a mighty sight.",
-      "english": "The Mürrenbachfall, which plunges 750 meters into the depths in five cascades, is a mighty sight."
+      "name": "Gimmelwald",
+      "quote": "Die Gesamtgemeinde umfasst die Ortschaften Lauterbrunnen, Wengen, Mürren, Gimmelwald, Stechelberg und Isenfluh.",
+      "english": "The entire municipality includes the villages of Lauterbrunnen, Wengen, Mürren, Gimmelwald, Stechelberg, and Isenfluh."
     },
     {
       "id": "s4",
-      "name": "Wengen",
-      "quote": "Then the best photo spot can be found in the car-free postcard village Wengen.",
-      "english": "Then the best photo spot can be found in the car-free postcard village Wengen."
+      "name": "Trümmelbachfälle",
+      "quote": "Die berühmteste und spektakulärste Touristenattraktion des Ortes sind die Trümmelbachfälle, mehrere Wasserfälle im Innern eines Berges.",
+      "english": "The most famous and spectacular tourist attraction of the place are the Trümmelbach Falls, several waterfalls inside a mountain."
     },
     {
       "id": "s5",
-      "name": "Männlichen",
-      "quote": "The trip up to the Männlichen is worth the ride alone – on the roof of the cable car.",
-      "english": "The trip up to the Männlichen is worth the ride alone – on the roof of the cable car."
+      "name": "Staubbachfall",
+      "quote": "Der Staubbachfall ist mit seinen 297 Metern der höchste frei fallende Wasserfall der Schweiz.",
+      "english": "The Staubbach Fall, at 297 meters, is the highest free-falling waterfall in Switzerland."
     },
     {
       "id": "s6",
-      "name": "Mürren",
-      "quote": "From Mürren the cable car takes you up to Schilthorn with its revolving restaurant Piz Gloria.",
-      "english": "From Mürren the cable car takes you up to Schilthorn with its revolving restaurant Piz Gloria."
+      "name": "Talmuseum",
+      "quote": "Sie steht heute im Talmuseum.",
+      "english": "It stands today in the valley museum."
     },
     {
       "id": "s7",
-      "name": "Schilthorn",
-      "quote": "Swiss skyline with revolving restaurant",
-      "english": "Swiss skyline with revolving restaurant"
+      "name": "Mürrenbachfall",
+      "quote": "Der Mürrenbachfall mit einer Fallhöhe von 417 Metern und der Buchenbachfall mit einer Fallhöhe von 380 Metern gelten als die beiden höchsten Wasserfälle der Schweiz.",
+      "english": "The Mürrenbach Fall with a drop height of 417 meters and the Buchenbach Fall with a drop height of 380 meters are considered the two highest waterfalls in Switzerland."
     },
     {
       "id": "s8",
+      "name": "Mattenbachfall",
+      "quote": "Der Mattenbachfall als Kaskadenwasserfall ist mit seinen 930 Metern europaweit der höchste und weltweit der dritthöchste Wasserfall.",
+      "english": "The Mattenbach Fall as a cascade waterfall is, at 930 meters, the highest in Europe and the third highest in the world."
+    },
+    {
+      "id": "s9",
       "name": "Kleine Scheidegg",
-      "quote": "Depending on what takes your fancy at the time, either take the cogwheel railway to Kleine Scheidegg or the cable car to Mürren.",
-      "english": "Depending on what takes your fancy at the time, either take the cogwheel railway to Kleine Scheidegg or the cable car to Mürren."
+      "quote": "Dort besteht Anschluss an die Wengernalpbahn nach Wengen, auf die Kleine Scheidegg und nach Grindelwald sowie an die Bergbahn Lauterbrunnen–Mürren (BLM).",
+      "english": "There is a connection there to the Wengernalp Railway to Wengen, to Kleine Scheidegg and to Grindelwald, as well as to the Lauterbrunnen–Mürren mountain railway (BLM)."
     }
   ],
   "days": [
     {
-      "title": "Waterfalls of the Valley",
+      "title": "Villages and History",
       "stop_ids": [
         "s1",
         "s2",
-        "s3"
+        "s3",
+        "s6"
       ]
     },
     {
-      "title": "Wengen Peaks and Heights",
+      "title": "Spectacular Waterfalls and High Peaks",
       "stop_ids": [
         "s4",
         "s5",
-        "s8"
-      ]
-    },
-    {
-      "title": "Mürren Skyline Experience",
-      "stop_ids": [
-        "s6",
-        "s7"
+        "s7",
+        "s8",
+        "s9"
       ]
     }
-  ]
+  ],
+  "_text_sha": "4207a64e3c49c6a21b9eeca51c39f821b62c12ad8f9f35dff01c668306538eb9"
 }

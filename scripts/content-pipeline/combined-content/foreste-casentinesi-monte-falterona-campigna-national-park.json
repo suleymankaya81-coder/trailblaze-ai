@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Emilia Romagna",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Foreste Casentinesi, Monte Falterona, Campigna"
+        "Lago degli Idoli",
+        "Monte Falterona",
+        "Monte Falco"
       ],
       "seo_title": "Foreste Casentinesi, Monte Falterona, Campigna National Park"
     },
@@ -32,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Foreste Casentinesi, Monte Falterona, Campigna National Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "High Peaks and Ancient Waters",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Foreste Casentinesi, Monte Falterona, Campigna",
-                "stop_id": "foreste-casentinesi-monte-falterona-campigna-national-park",
-                "detail": "The Parco Nazionale delle Foreste Casentinesi, Monte Falterona, Campigna is a national park in Italy. Created in 1993, it covers an area of about 368 square kilometres (142 sq mi), on the two sides of the Apennine watershed between Romagna and Tuscany, and is divided between the provinces of Forlì Cesena, Arezzo and Florence."
+                "name": "Lago degli Idoli",
+                "stop_id": "foreste-casentinesi-monte-falterona-campigna-national-park--s1",
+                "detail": "The history of this territory begins in ancient times, with the first Etruscan settlements that found in \"Lago degli Idoli\" the most important site of the Tuscan-Romagnolo Apennines (at the foot of Monte Falterona) where they could worship their deities."
+              },
+              {
+                "name": "Monte Falterona",
+                "stop_id": "foreste-casentinesi-monte-falterona-campigna-national-park--s2",
+                "detail": "The altitudes of the Park vary from 400 to 1,658 meters: Monte Falco (1,658 m) and Monte Falterona (1,654 m), from which the Arno river rises, are the highest peaks."
+              },
+              {
+                "name": "Monte Falco",
+                "stop_id": "foreste-casentinesi-monte-falterona-campigna-national-park--s3",
+                "detail": "The highest peak in the Park, Monte Falco, also has an Integral Nature Reserve on its northern slope."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Foreste Casentinesi, Monte Falterona, Campigna National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Northern Cascades and Valleys",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "San Benedetto in Alpe",
+                "stop_id": "foreste-casentinesi-monte-falterona-campigna-national-park--s5",
+                "detail": "The territory of the Park is also characterized by the presence of inhabited centers rich in history, such as Badia Prataglia, Camaldoli, La Verna, and San Benedetto in Alpe."
+              },
+              {
+                "name": "invaso artificiale di Ridracoli",
+                "stop_id": "foreste-casentinesi-monte-falterona-campigna-national-park--s7",
+                "detail": "Natural lake basins are absent, while there is the presence of the artificial reservoir of Ridracoli which holds about 33 million cubic meters of water from the basin of the Bidente arm of the same name and from those of Corniolo and Rabbi."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Foreste Casentinesi, Monte Falterona, Campigna National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +109,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Foreste_Casentinesi%2C_Monte_Falterona%2C_Campigna_National_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_nazionale_delle_Foreste_Casentinesi%2C_Monte_Falterona_e_Campigna"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:24:35.386724+00:00"
       }
     }
   }

@@ -4,7 +4,7 @@
       "id": "s1",
       "name": "sepolcro della Torraccia",
       "quote": "Molti altri ruderi antichi e torri punteggiano il paesaggio, appartenuti a castra e ville romane, sepolcri (tra cui quello della Torraccia, con cella a croce greca) e mausolei.",
-      "english": "Many other ancient ruins and towers dot the landscape, belonging to Roman castra and villas, sepulchers (including the Torraccia one, with a Greek cross cell) and mausoleums."
+      "english": "Many other ancient ruins and towers dot the landscape, belonging to Roman forts and villas, tombs (including that of the Torraccia, with a Greek cross cell) and mausoleums."
     },
     {
       "id": "s2",
@@ -32,20 +32,20 @@
     },
     {
       "id": "s6",
-      "name": "Via della Selciatella",
-      "quote": "Via della Selciatella/Via Tor Mastorta che passano esternamente nell'area di Tor Mastorta e i laghetti.",
-      "english": "Via della Selciatella/Via Tor Mastorta which pass externally in the area of Tor Mastorta and the lakes."
-    },
-    {
-      "id": "s7",
       "name": "Via dell'Inviolata",
       "quote": "Via dell'Inviolata che attraversa il parco al centro, partendo dalla rotatoria all'uscita dell'autostrada A1 su Via di Casal Bianco e uscendo sulla Via Palombarese a Santa Lucia di Fonte Nuova, tagliando il parco a metà.",
       "english": "Via dell'Inviolata which crosses the park in the center, starting from the roundabout at the A1 motorway exit on Via di Casal Bianco and exiting on Via Palombarese at Santa Lucia di Fonte Nuova, cutting the park in half."
+    },
+    {
+      "id": "s7",
+      "name": "Castrum Sancti Honesti",
+      "quote": "Altre testimonianze provengono da una necropoli protovillanoviana scoperta nel sito delle Caprine, e dai pressi di un insediamento fortificato medioevale nella zona dell'abitato di Marco Simone, il Castrum Sancti Honesti, nei cui pressi è stato trovato vario materiale di età orientalizzante e arcaica (secoli VII-VI a. C.).",
+      "english": "Other evidence comes from a Proto-Villanovan necropolis discovered at the Caprine site, and from near a medieval fortified settlement in the area of the town of Marco Simone, the Castrum Sancti Honesti, near which various material from the Orientalizing and Archaic periods (7th-6th centuries BC) was found."
     }
   ],
   "days": [
     {
-      "title": "East Lakes and Streams",
+      "title": "Eastern Lakes and Streams",
       "stop_ids": [
         "s2",
         "s3",
@@ -54,12 +54,13 @@
       ]
     },
     {
-      "title": "Roads and Ancient Ruins",
+      "title": "Archaeological Ruins and Central Routes",
       "stop_ids": [
         "s1",
         "s6",
         "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "ef831c70f09bc261ab5ce3b9ce49acb8b639dfd6075cac8c415da9b2409f69f2"
 }

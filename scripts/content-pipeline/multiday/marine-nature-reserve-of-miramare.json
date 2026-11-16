@@ -2,52 +2,44 @@
   "stops": [
     {
       "id": "s1",
-      "name": "promontorio di Miramare",
+      "name": "Castello di Miramare",
       "quote": "La Riserva naturale marina di Miramare, oggi AMP (Area Marina Protetta) Miramare, si trova nel Golfo di Trieste, e si snoda tutt'attorno al promontorio di Miramare, dove sorge anche l'omonimo Castello di Miramare.",
-      "english": "The Miramare marine nature reserve, today the Miramare MPA (Marine Protected Area), is located in the Gulf of Trieste, and winds all around the Miramare promontory, where the eponymous Miramare Castle also stands."
+      "english": "The Marine Nature Reserve of Miramare, today the Miramare Marine Protected Area (MPA), is located in the Gulf of Trieste and winds all around the promontory of Miramare, where the namesake Miramare Castle also stands."
     },
     {
       "id": "s2",
-      "name": "Castello di Miramare",
-      "quote": "La Riserva naturale marina di Miramare, oggi AMP (Area Marina Protetta) Miramare, si trova nel Golfo di Trieste, e si snoda tutt'attorno al promontorio di Miramare, dove sorge anche l'omonimo Castello di Miramare.",
-      "english": "The Miramare marine nature reserve, today the Miramare MPA (Marine Protected Area), is located in the Gulf of Trieste, and winds all around the Miramare promontory, where the eponymous Miramare Castle also stands."
+      "name": "Ex Scuderie",
+      "quote": "Il centro visite è situato all'interno del parco di Miramare, in un edificio noto come Ex Scuderie.",
+      "english": "The visitor center is located within the park of Miramare, in a building known as Ex Scuderie."
     },
     {
       "id": "s3",
-      "name": "centro visite",
-      "quote": "Il centro visite è situato all'interno del parco di Miramare, in un edificio noto come Ex Scuderie.",
-      "english": "The visitor centre is located inside the Miramare park, in a building known as the Former Stables."
+      "name": "zona di marea",
+      "quote": "Nei tre ambienti della riserva (zona di marea, zona di scogliera e fondali sabbiosi e fangosi) vive una fauna ricca e variegata, composta da poriferi, celenterati, anellidi, molluschi, crostacei, echinodermi e pesci ossei.",
+      "english": "A rich and varied fauna lives in the three environments of the reserve (tidal zone, cliff zone, and sandy and muddy seabeds), composed of sponges, coelenterates, annelids, mollusks, crustaceans, echinoderms, and bony fish."
     },
     {
       "id": "s4",
-      "name": "Ex Scuderie",
-      "quote": "Il centro visite è situato all'interno del parco di Miramare, in un edificio noto come Ex Scuderie.",
-      "english": "The visitor centre is located inside the Miramare park, in a building known as the Former Stables."
-    },
-    {
-      "id": "s5",
-      "name": "parco di Miramare",
-      "quote": "L'accesso alla riserva può avvenire dal porticciolo di Grignano o attraverso l'ingresso principale del Parco di Miramare.",
-      "english": "Access to the reserve can take place from the small port of Grignano or through the main entrance of the Miramare Park."
-    },
-    {
-      "id": "s6",
       "name": "porticciolo di Grignano",
       "quote": "L'accesso alla riserva può avvenire dal porticciolo di Grignano o attraverso l'ingresso principale del Parco di Miramare.",
-      "english": "Access to the reserve can take place from the small port of Grignano or through the main entrance of the Miramare Park."
+      "english": "Access to the reserve can take place from the small harbor of Grignano or through the main entrance of the Park of Miramare."
     }
   ],
   "days": [
     {
-      "title": "Miramare Landmarks and Visitor Services",
+      "title": "Castles and Visitor Centers",
       "stop_ids": [
         "s1",
-        "s2",
+        "s2"
+      ]
+    },
+    {
+      "title": "Coastal Access and Marine Zones",
+      "stop_ids": [
         "s3",
-        "s4",
-        "s5",
-        "s6"
+        "s4"
       ]
     }
-  ]
+  ],
+  "_text_sha": "cf8fac860457bf9327e680174d64da02a865a3d068e8271476bf98657b2b47fe"
 }

@@ -2,69 +2,65 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Stolberg",
-      "quote": "The Karst Landscape South Harz Biosphere Reserve lies between the European city of Stolberg in the west and the Rose City of Sangerhausen in the east.",
-      "english": "The Karst Landscape South Harz Biosphere Reserve lies between the European city of Stolberg in the west and the Rose City of Sangerhausen in the east."
+      "name": "Roßla",
+      "quote": "2002 nahm die Reservatsverwaltung in Roßla ihre Arbeit auf.",
+      "english": "In 2002, the reserve administration began its work in Roßla."
     },
     {
       "id": "s2",
-      "name": "Sangerhausen",
-      "quote": "The Karst Landscape South Harz Biosphere Reserve lies between the European city of Stolberg in the west and the Rose City of Sangerhausen in the east.",
-      "english": "The Karst Landscape South Harz Biosphere Reserve lies between the European city of Stolberg in the west and the Rose City of Sangerhausen in the east."
+      "name": "Pölsfeld",
+      "quote": "Es erstreckt sich am Südrand des Harzes von der Landesgrenze zu Niedersachsen bis zu den Südausläufern des Mansfelder Berglandes in Pölsfeld.",
+      "english": "It extends along the southern edge of the Harz from the state border with Lower Saxony to the southern foothills of the Mansfeld Uplands in Pölsfeld."
     },
     {
       "id": "s3",
-      "name": "Karstwanderweg an der Dinsterbachschwinde bei Questenberg",
-      "quote": "Karstwanderweg an der Dinsterbachschwinde bei Questenberg",
-      "english": "Karst hiking trail at the Dinsterbach swallow hole near Questenberg"
+      "name": "Sangerhausen",
+      "quote": "Bei Sangerhausen befindet sich eine Bergbaufolgelandschaft mit Stollen und Halden.",
+      "english": "Near Sangerhausen, there is a post-mining landscape with tunnels and slag heaps."
     },
     {
       "id": "s4",
-      "name": "Hörninger Sattelköpfe",
-      "quote": "Hörninger Sattelköpfe im Herbst",
-      "english": "Hörninger Sattelköpfe in autumn"
+      "name": "Heimkehle",
+      "quote": "Das Biosphärenreservat gliedert sich in „Kernzone“ (918 ha, 3,1 %) und „Pflegezone“ (9.760 ha, 32.5 %), die die sechs Naturschutzgebiete Alter Stolberg (Sachsen-Anhalt) und Grasburger Wiesen Gipskarstlandschaft Heimkehle Gipskarstlandschaft Pölsfeld Gipskarstlandschaft Questenberg Großer Ronneberg–Bielstein Pferdekopf sowie sechs Natura-2000-Gebiete umfassen.",
+      "english": "The biosphere reserve is divided into a \"core zone\" (918 ha, 3.1%) and a \"maintenance zone\" (9,760 ha, 32.5%), which include the six nature reserves Alter Stolberg (Saxony-Anhalt) and Grasburger Wiesen, Gipskarstlandschaft Heimkehle, Gipskarstlandschaft Pölsfeld, Gipskarstlandschaft Questenberg, Großer Ronneberg-Bielstein, Pferdekopf, as well as six Natura 2000 areas."
     },
     {
       "id": "s5",
-      "name": "Karsthöhle Kelle",
-      "quote": "Karsthöhle Kelle",
-      "english": "Kelle Karst Cave"
+      "name": "Karstwanderweg",
+      "quote": "Durch das Biosphärenreservat führt der östliche Teil des Karstwanderwegs.",
+      "english": "The eastern part of the Karst Hiking Trail runs through the biosphere reserve."
     },
     {
       "id": "s6",
-      "name": "Bat Conservation Competence Centre",
-      "quote": "Based in the South Harz Biosphere Reserve in the western part of the Mansfeld-Südharz district, it organises conservation measures, records bat populations and deals with scientific questions.",
-      "english": "Based in the South Harz Biosphere Reserve in the western part of the Mansfeld-Südharz district, it organises conservation measures, records bat populations and deals with scientific questions."
+      "name": "Bösenrode",
+      "quote": "Im Biosphärenreservat werden an zwei Standorten (Bösenrode und Wallhausen) Schafe und Burenziegen zur Beweidung von offenen Obstbaumwiesen eingesetzt.",
+      "english": "In the biosphere reserve, sheep and Boer goats are used at two locations (Bösenrode and Wallhausen) for grazing open orchard meadows."
     },
     {
       "id": "s7",
-      "name": "Heimkehle Cave",
-      "quote": "Bat habitat in the Heimkehle Cave",
-      "english": "Bat habitat in the Heimkehle Cave"
+      "name": "Wallhausen",
+      "quote": "Im Biosphärenreservat werden an zwei Standorten (Bösenrode und Wallhausen) Schafe und Burenziegen zur Beweidung von offenen Obstbaumwiesen eingesetzt.",
+      "english": "In the biosphere reserve, sheep and Boer goats are used at two locations (Bösenrode and Wallhausen) for grazing open orchard meadows."
     }
   ],
   "days": [
     {
-      "title": "Western Gateway and Rare Habitats",
+      "title": "Administration and Mining Heritage",
       "stop_ids": [
         "s1",
-        "s6",
+        "s3",
         "s5"
       ]
     },
     {
-      "title": "Karst Trails and Geological Formations",
+      "title": "Karst Landscapes and Pastures",
       "stop_ids": [
-        "s3",
-        "s4"
-      ]
-    },
-    {
-      "title": "Eastern Border and Subterranean Wonders",
-      "stop_ids": [
-        "s2",
-        "s7"
+        "s4",
+        "s6",
+        "s7",
+        "s2"
       ]
     }
-  ]
+  ],
+  "_text_sha": "1d61383f9341c99041e8970ffd3dbe629631e957466a79a6b03b2a9bb6882941"
 }

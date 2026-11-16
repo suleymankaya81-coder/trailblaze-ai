@@ -2,7 +2,7 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Alpi Feltrine",
+      "name": "Vette di Feltre",
       "quote": "Il Parco comprende i gruppi montuosi delle Alpi Feltrine (Vette di Feltre, Cimonega, Pizzocco, Brendol, Agnelezze), Monti del Sole, Schiara, Talvéna, Prampèr e Piz di Mezzodì.",
       "english": "The Park includes the mountain groups of the Alpi Feltrine (Vette di Feltre, Cimonega, Pizzocco, Brendol, Agnelezze), Monti del Sole, Schiara, Talvéna, Prampèr and Piz di Mezzodì."
     },
@@ -27,31 +27,25 @@
     {
       "id": "s5",
       "name": "Valle del Mis",
-      "quote": "Valle del Mis",
-      "english": "Mis Valley"
+      "quote": "Wikimedia Commons contiene immagini o altri file su parco nazionale delle Dolomiti Bellunesi\nWikivoyage contiene informazioni turistiche su parco nazionale delle Dolomiti Bellunesi\n\n\n== Collegamenti esterni ==\nSito istituzionale, su dolomitipark.it.\nParco nazionale delle Dolomiti Bellunesi su Parks.it, il Portale dei Parchi italiani\n\n== Voci correlate ==\nParchi nazionali d'Italia\nValle del Mis",
+      "english": "Wikimedia Commons contains images or other files on Dolomiti Bellunesi National Park\nWikivoyage contains tourist information on Dolomiti Bellunesi National Park\n\n\n== External links ==\nInstitutional site, on dolomitipark.it.\nDolomiti Bellunesi National Park on Parks.it, the Portal of Italian Parks\n\n== Related items ==\nNational parks of Italy\nMis Valley"
     },
     {
       "id": "s6",
-      "name": "Mis",
-      "quote": "Il territorio del parco, fatta eccezione per alcune aree carsiche di alta quota, si presenta estremamente ricco di risorse idriche: sorgenti, paludi e corsi d'acqua tra i quali: Cordevole, Mis, Caorame, Stién (affluente del Caorame), Falcìna (affluente del Mis), Ardo, Vescovà (affluente del Cordevole), Prampèra (affluente del Maè) che concorrono alla ricchezza biologica del Parco.",
-      "english": "The territory of the park, with the exception of some high-altitude karst areas, is extremely rich in water resources: springs, marshes and watercourses including: Cordevole, Mis, Caorame, Stién (tributary of the Caorame), Falcìna (tributary of the Mis), Ardo, Vescovà (tributary of the Cordevole), Prampèra (tributary of the Maè) which contribute to the biological richness of the Park."
+      "name": "Stién",
+      "quote": "Cordevole, Mis, Caorame, Stién (affluente del Caorame), Falcìna (affluente del Mis), Ardo, Vescovà (affluente del Cordevole), Prampèra (affluente del Maè) che concorrono alla ricchezza biologica del Parco.",
+      "english": "Cordevole, Mis, Caorame, Stién (tributary of the Caorame), Falcìna (tributary of the Mis), Ardo, Vescovà (tributary of the Cordevole), Prampèra (tributary of the Maè) which contribute to the biological richness of the Park."
     },
     {
       "id": "s7",
-      "name": "Falcìna",
-      "quote": "Il territorio del parco, fatta eccezione per alcune aree carsiche di alta quota, si presenta estremamente ricco di risorse idriche: sorgenti, paludi e corsi d'acqua tra i quali: Cordevole, Mis, Caorame, Stién (affluente del Caorame), Falcìna (affluente del Mis), Ardo, Vescovà (affluente del Cordevole), Prampèra (affluente del Maè) che concorrono alla ricchezza biologica del Parco.",
-      "english": "The territory of the park, with the exception of some high-altitude karst areas, is extremely rich in water resources: springs, marshes and watercourses including: Cordevole, Mis, Caorame, Stién (tributary of the Caorame), Falcìna (tributary of the Mis), Ardo, Vescovà (tributary of the Cordevole), Prampèra (tributary of the Maè) which contribute to the biological richness of the Park."
-    },
-    {
-      "id": "s8",
-      "name": "Cordevole",
-      "quote": "Il territorio del parco, fatta eccezione per alcune aree carsiche di alta quota, si presenta estremamente ricco di risorse idriche: sorgenti, paludi e corsi d'acqua tra i quali: Cordevole, Mis, Caorame, Stién (affluente del Caorame), Falcìna (affluente del Mis), Ardo, Vescovà (affluente del Cordevole), Prampèra (affluente del Maè) che concorrono alla ricchezza biologica del Parco.",
-      "english": "The territory of the park, with the exception of some high-altitude karst areas, is extremely rich in water resources: springs, marshes and watercourses including: Cordevole, Mis, Caorame, Stién (tributary of the Caorame), Falcìna (tributary of the Mis), Ardo, Vescovà (tributary of the Cordevole), Prampèra (tributary of the Maè) which contribute to the biological richness of the Park."
+      "name": "Prampèra",
+      "quote": "Cordevole, Mis, Caorame, Stién (affluente del Caorame), Falcìna (affluente del Mis), Ardo, Vescovà (affluente del Cordevole), Prampèra (affluente del Maè) che concorrono alla ricchezza biologica del Parco.",
+      "english": "Cordevole, Mis, Caorame, Stién (tributary of the Caorame), Falcìna (tributary of the Mis), Ardo, Vescovà (tributary of the Cordevole), Prampèra (tributary of the Maè) which contribute to the biological richness of the Park."
     }
   ],
   "days": [
     {
-      "title": "Mountain Peaks and Groups",
+      "title": "Mountain Peaks and Massifs",
       "stop_ids": [
         "s1",
         "s2",
@@ -60,13 +54,13 @@
       ]
     },
     {
-      "title": "Mis Valley and Waterways",
+      "title": "Valleys and Tributaries",
       "stop_ids": [
         "s5",
         "s6",
-        "s7",
-        "s8"
+        "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "bd1e175232ffe9c815916e72d7c50c63882b50b91e0e8827aac465fffff5378c"
 }

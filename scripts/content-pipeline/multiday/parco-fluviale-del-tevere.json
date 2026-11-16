@@ -4,36 +4,42 @@
       "id": "s1",
       "name": "Valle del Tevere",
       "quote": "Il territorio del parco si trova nella Valle del Tevere nella Regione Umbria ed è compreso nei Comuni di Baschi, Orvieto, Montecchio, Guardea, Alviano, Todi e Monte Castello di Vibio alcuni dei quali a confine con la Regione Lazio.",
-      "english": "The territory of the park is located in the Tiber Valley in the Umbria Region and is included in the Municipalities of Baschi, Orvieto, Montecchio, Guardea, Alviano, Todi, and Monte Castello di Vibio, some of which border the Lazio Region."
+      "english": "The territory of the park is located in the Tiber Valley in the Umbria Region and is included in the Municipalities of Baschi, Orvieto, Montecchio, Guardea, Alviano, Todi and Monte Castello di Vibio, some of which border the Lazio Region."
     },
     {
       "id": "s2",
+      "name": "Baschi",
+      "quote": "Nel parco sono presenti aree archeologiche nei comuni di Baschi e Orvieto.",
+      "english": "Archaeological areas are present within the park in the municipalities of Baschi and Orvieto."
+    },
+    {
+      "id": "s3",
       "name": "Gola del Forello",
       "quote": "Gola del Forello",
       "english": "Forello Gorge"
     },
     {
-      "id": "s3",
+      "id": "s4",
       "name": "Oasi naturalistica Lago di Alviano",
       "quote": "Oasi naturalistica Lago di Alviano",
-      "english": "Lake Alviano Nature Oasis"
-    },
-    {
-      "id": "s4",
-      "name": "Baschi",
-      "quote": "Nel parco sono presenti aree archeologiche nei comuni di Baschi e Orvieto.",
-      "english": "In the park, there are archaeological areas in the municipalities of Baschi and Orvieto."
+      "english": "Alviano Lake naturalistic oasis"
     }
   ],
   "days": [
     {
-      "title": "Tiber Valley Nature and Archeology",
+      "title": "Tiber Valley and Archaeological Sites",
       "stop_ids": [
         "s1",
-        "s2",
+        "s2"
+      ]
+    },
+    {
+      "title": "Natural Gorges and Oases",
+      "stop_ids": [
         "s3",
         "s4"
       ]
     }
-  ]
+  ],
+  "_text_sha": "232fc27cf56c87b97a6604dd475c3fcb88c6b9b9d05149f80b96f6da20768ce5"
 }

@@ -2,50 +2,50 @@
   "stops": [
     {
       "id": "s1",
-      "name": "bric Burcina",
+      "name": "colle, o bric, Burcina",
       "quote": "La riserva sorge sul colle, o bric, Burcina e si occupa della tutela delle caratteristiche naturali, ambientali e paesaggistiche della zona.",
-      "english": "The reserve rises on the hill, or bric, Burcina and takes care of the protection of the natural, environmental and landscape characteristics of the area."
+      "english": "The reserve rises on the hill, or bric, Burcina and handles the protection of the natural, environmental and landscape characteristics of the area."
     },
     {
       "id": "s2",
-      "name": "laghetto con fontane",
+      "name": "piccolo laghetto",
       "quote": "Le prime piante esotiche ad essere impiantate (prettamente grosse sequoie) riguardarono la parte bassa della collina dove, contestualmente alla creazione dei primi sentieri, venne realizzato nel 1848 un piccolo laghetto con fontane, presente ancor oggi.",
-      "english": "The first exotic plants to be planted (mostly large sequoias) concerned the lower part of the hill where, simultaneously with the creation of the first paths, a small pond with fountains was created in 1848, which is still present today."
+      "english": "The first exotic plants to be planted (mostly large sequoias) concerned the lower part of the hill where, simultaneously with the creation of the first trails, a small pond with fountains was created in 1848, which is still present today."
     },
     {
       "id": "s3",
       "name": "conca di rododendri",
       "quote": "L'opera di ampliamento del parco fu poi portata avanti da Felice Piacenza che vi dedicò oltre cinquant'anni della sua vita, facendo realizzare una spettacolare conca di rododendri e implementando la realizzazione di sentieri, strade e vialetti oltre naturalmente la messa a dimora di ulteriori specie esotiche.",
-      "english": "The work of expanding the park was then carried out by Felice Piacenza who dedicated over fifty years of his life to it, creating a spectacular valley of rhododendrons and implementing the creation of paths, roads and walkways in addition to the planting of further exotic species."
+      "english": "The work of expanding the park was then carried forward by Felice Piacenza who dedicated over fifty years of his life to it, creating a spectacular rhododendron valley and implementing the creation of paths, roads and alleys in addition to the planting of further exotic species."
     },
     {
       "id": "s4",
       "name": "ponte sul rio Vandorba",
       "quote": "Acquisito dal Comune di Biella nel 1934, il parco ha visto poi il realizzarsi nel secondo dopoguerra ulteriori modifiche con l'apertura di un nuovo varco di accesso con un ponte sul rio Vandorba, progettato dall'architetto Pietro Porcinai.",
-      "english": "Acquired by the Municipality of Biella in 1934, the park then saw further modifications in the post-war period with the opening of a new access point with a bridge over the Vandorba stream, designed by the architect Pietro Porcinai."
+      "english": "Acquired by the Municipality of Biella in 1934, the park then saw further changes in the post-war period with the opening of a new access gate with a bridge over the Vandorba stream, designed by architect Pietro Porcinai."
     },
     {
       "id": "s5",
       "name": "busto in bronzo dedicato a Felice Piacenza",
       "quote": "Venne inoltre posto un busto in bronzo dedicato a Felice Piacenza, opera dello scultore Leonardo Bistolfi.",
-      "english": "Furthermore, a bronze bust dedicated to Felice Piacenza, the work of the sculptor Leonardo Bistolfi, was placed."
+      "english": "A bronze bust dedicated to Felice Piacenza, a work by the sculptor Leonardo Bistolfi, was also placed there."
     },
     {
       "id": "s6",
-      "name": "insediamento protostorico",
-      "quote": "Sul Bric Burcina è anche documentata la presenza di un insediamento protostorico risalente alle età del bronzo e del ferro.",
-      "english": "On Bric Burcina, the presence of a protohistoric settlement dating back to the Bronze and Iron Ages is also documented."
+      "name": "Torre Martini",
+      "quote": "Il bosco fa da sfondo naturale al Parco della Burcina, la cui vetta è raggiungibile da una strada che conduce alla sovrastante Torre Martini.",
+      "english": "The forest serves as a natural backdrop to the Burcina Park, whose peak is reachable via a road leading to the Martini Tower above."
     },
     {
       "id": "s7",
-      "name": "Torre Martini",
-      "quote": "Il bosco fa da sfondo naturale al Parco della Burcina, la cui vetta è raggiungibile da una strada che conduce alla sovrastante Torre Martini.",
-      "english": "The forest serves as the natural background for Burcina Park, whose summit can be reached by a road leading to the Martini Tower above."
+      "name": "insediamento protostorico",
+      "quote": "Sul Bric Burcina è anche documentata la presenza di un insediamento protostorico risalente alle età del bronzo e del ferro.",
+      "english": "On the Bric Burcina the presence of a protohistoric settlement dating back to the Bronze and Iron Ages is also documented."
     }
   ],
   "days": [
     {
-      "title": "Lower Slopes and Sculptures",
+      "title": "Lower Slopes and Monumental History",
       "stop_ids": [
         "s2",
         "s4",
@@ -53,18 +53,19 @@
       ]
     },
     {
-      "title": "Summit and Ancient Settlements",
+      "title": "Botanical Splendor and Ancient Traces",
       "stop_ids": [
-        "s1",
-        "s6",
+        "s3",
         "s7"
       ]
     },
     {
-      "title": "The Rhododendron Valley",
+      "title": "Bric Burcina Summit and Views",
       "stop_ids": [
-        "s3"
+        "s1",
+        "s6"
       ]
     }
-  ]
+  ],
+  "_text_sha": "5ef4efb0c89e9b4a5c45c39cb165c74b99740ac3d1d914603d46861b3046df41"
 }

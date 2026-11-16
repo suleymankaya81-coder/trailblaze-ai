@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Marche",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco regionale del Conero"
+        "Passetto",
+        "Portonovo",
+        "Lago Grande"
       ],
       "seo_title": "Parco regionale del Conero Visit Guide"
     },
@@ -32,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco regionale del Conero",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Northern Coast and Portonovo",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco regionale del Conero",
-                "stop_id": "parco-regionale-del-conero",
-                "detail": "The Conero Regional Park is a protected natural area of the Marches established in 1987 that extends over the homonymous promontory, in the province of Ancona. The Mediterranean vegetation gives the mountain the characteristic dark and brilliant green color. One of the most common trees is the corbezzole; the name Conero derives from the ancient Greek name of the corbezzole: 'κόμαρος (kómaros)."
+                "name": "Passetto",
+                "stop_id": "parco-regionale-del-conero--s2",
+                "detail": "the cable car from Passetto to Portonovo and Sirolo, for a total of 20 kilometers;"
+              },
+              {
+                "name": "Portonovo",
+                "stop_id": "parco-regionale-del-conero--s3",
+                "detail": "in the early 60s, the lakes of Portonovo had been subject to landfilling to create some parking lots and a campsite, various buildings had been constructed between the Lago Grande and the sea preventing the waves from entering, and finally the famous Portonovo Spring had been destroyed to make room for a hotel."
+              },
+              {
+                "name": "Lago Grande",
+                "stop_id": "parco-regionale-del-conero--s4",
+                "detail": "the Lago Grande of Portonovo to be transformed into a tourist port, a proposal, like the previous one, by the Tourist Board;"
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco regionale del Conero before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Southern Heights and Villages",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Sirolo",
+                "stop_id": "parco-regionale-del-conero--s5",
+                "detail": "a tourist village in Sirolo of 46,000 cubic meters in an area subject to landscape restrictions;"
+              },
+              {
+                "name": "Monte Colombo",
+                "stop_id": "parco-regionale-del-conero--s6",
+                "detail": "an illegal excavation at Monte Colombo, measuring 8,000 square meters."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco regionale del Conero before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +109,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_regionale_del_Conero"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_regionale_del_Conero"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:31:47.711127+00:00"
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Piedmont",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Lagoni di Mercurago"
+        "zona umida",
+        "insediamenti"
       ],
       "seo_title": "Lagoni di Mercurago Natural Park Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Lagoni di Mercurago Natural Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Wetlands and Archaeology",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Lagoni di Mercurago",
-                "stop_id": "lagoni-di-mercurago-natural-park",
-                "detail": "The Lagoni di Mercurago Nature Park, established in 1980, is a natural reserve in Piedmont, located in Mercurago, a hamlet near Arona, consisting of many lakes with swamp vegetation."
+                "name": "zona umida",
+                "stop_id": "lagoni-di-mercurago-natural-park--s2",
+                "detail": "The Park includes a heterogeneous series of ecosystems: the wetland area, rich in ponds, peat bogs and marshes, represents the true beating heart of the park; in the meadows and pastures, thoroughbred horses are bred and raised, all within a lightly urbanized context rich in woods and heaths."
+              },
+              {
+                "name": "insediamenti",
+                "stop_id": "lagoni-di-mercurago-natural-park--s4",
+                "detail": "Over the years, in fact, several settlements dating back to the Bronze Age and some Roman domus have been discovered."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lagoni di Mercurago Natural Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Visitor Center and Equestrian History",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "centro visite",
+                "stop_id": "lagoni-di-mercurago-natural-park--s1",
+                "detail": "The main access to the Lagoni Park is that of the headquarters and the visitor center, in via Gattico 6 in Mercurago, a hamlet of Arona."
+              },
+              {
+                "name": "pascoli e i maneggi",
+                "stop_id": "lagoni-di-mercurago-natural-park--s5",
+                "detail": "Alongside this \"spontaneous\" type of fauna are the pastures and riding stables set up a few decades ago by Federico Tesio as horse breeding centers."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Lagoni di Mercurago Natural Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Lagoni_di_Mercurago_Natural_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_dei_Lagoni_di_Mercurago"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:25:11.246278+00:00"
       }
     }
   }

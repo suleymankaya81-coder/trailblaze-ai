@@ -2,69 +2,53 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Monte Vulture",
-      "quote": "In tale perimetro sono inclusi la ZSC/ZPS \"Monte Vulture\" (codice IT9210210) e il SIC/ZPS \"Lago del Rendina\" (codice IT9210201).",
-      "english": "Included within this perimeter are the SAC/SPA \"Monte Vulture\" (code IT9210210) and the SCI/SPA \"Lago del Rendina\" (code IT9210201)."
+      "name": "Laghi di Monticchio",
+      "quote": "Partendo dai Laghi di Monticchio è possibile fare un'escursione suggestiva nei boschi del Vulture per raggiungere la Fontana dei Faggi, unica risorsa d'acqua ancora presente in zona e situata nei pressi di un'area pic-nic.",
+      "english": "Starting from the Monticchio Lakes, it is possible to take a suggestive excursion through the Vulture woods to reach the Fontana dei Faggi, the only water resource still present in the area and located near a picnic area."
     },
     {
       "id": "s2",
-      "name": "Lago del Rendina",
-      "quote": "In tale perimetro sono inclusi la ZSC/ZPS \"Monte Vulture\" (codice IT9210210) e il SIC/ZPS \"Lago del Rendina\" (codice IT9210201).",
-      "english": "Included within this perimeter are the SAC/SPA \"Monte Vulture\" (code IT9210210) and the SCI/SPA \"Lago del Rendina\" (code IT9210201)."
+      "name": "Fontana dei Faggi",
+      "quote": "Partendo dai Laghi di Monticchio è possibile fare un'escursione suggestiva nei boschi del Vulture per raggiungere la Fontana dei Faggi, unica risorsa d'acqua ancora presente in zona e situata nei pressi di un'area pic-nic.",
+      "english": "Starting from the Monticchio Lakes, it is possible to take a suggestive excursion through the Vulture woods to reach the Fontana dei Faggi, the only water resource still present in the area and located near a picnic area."
     },
     {
       "id": "s3",
       "name": "sentieri dei Briganti",
       "quote": "Molto suggestivi sono i sentieri dei Briganti che ancora oggi è possibile ripercorrere all'interno del Parco.",
-      "english": "The Brigands' trails are very evocative and can still be retraced today inside the Park."
+      "english": "The Brigands' paths are very suggestive and can still be retraced today within the Park."
     },
     {
       "id": "s4",
-      "name": "Laghi di Monticchio",
-      "quote": "Partendo dai Laghi di Monticchio è possibile fare un'escursione suggestiva nei boschi del Vulture per raggiungere la Fontana dei Faggi, unica risorsa d'acqua ancora presente in zona e situata nei pressi di un'area pic-nic.",
-      "english": "Starting from the Lakes of Monticchio, it is possible to take a suggestive excursion through the Vulture woods to reach the Beech Fountain, the only water resource still present in the area and located near a picnic area."
+      "name": "Lago del Rendina",
+      "quote": "In tale perimetro sono inclusi la ZSC/ZPS \"Monte Vulture\" (codice IT9210210) e il SIC/ZPS \"Lago del Rendina\" (codice IT9210201).",
+      "english": "Included in this perimeter are the SAC/SPA \"Monte Vulture\" (code IT9210210) and the SCI/SPA \"Lago del Rendina\" (code IT9210201)."
     },
     {
       "id": "s5",
-      "name": "boschi del Vulture",
-      "quote": "Partendo dai Laghi di Monticchio è possibile fare un'escursione suggestiva nei boschi del Vulture per raggiungere la Fontana dei Faggi, unica risorsa d'acqua ancora presente in zona e situata nei pressi di un'area pic-nic.",
-      "english": "Starting from the Lakes of Monticchio, it is possible to take a suggestive excursion through the Vulture woods to reach the Beech Fountain, the only water resource still present in the area and located near a picnic area."
+      "name": "Monte Vulture",
+      "quote": "In tale perimetro sono inclusi la ZSC/ZPS \"Monte Vulture\" (codice IT9210210) e il SIC/ZPS \"Lago del Rendina\" (codice IT9210201).",
+      "english": "Included in this perimeter are the SAC/SPA \"Monte Vulture\" (code IT9210210) and the SCI/SPA \"Lago del Rendina\" (code IT9210201)."
     },
     {
       "id": "s6",
-      "name": "Fontana dei Faggi",
-      "quote": "Partendo dai Laghi di Monticchio è possibile fare un'escursione suggestiva nei boschi del Vulture per raggiungere la Fontana dei Faggi, unica risorsa d'acqua ancora presente in zona e situata nei pressi di un'area pic-nic.",
-      "english": "Starting from the Lakes of Monticchio, it is possible to take a suggestive excursion through the Vulture woods to reach the Beech Fountain, the only water resource still present in the area and located near a picnic area."
-    },
-    {
-      "id": "s7",
       "name": "Il Sentiero dei Briganti - Sentiero CAI 102",
       "quote": "Il Sentiero dei Briganti - Sentiero CAI 102 Partendo dai Laghi di Monticchio è possibile fare un'escursione suggestiva nei boschi del Vulture per raggiungere la Fontana dei Faggi, unica risorsa d'acqua ancora presente in zona e situata nei pressi di un'area pic-nic.",
-      "english": "The Brigands' Trail - CAI Trail 102 Starting from the Lakes of Monticchio, it is possible to take a suggestive excursion through the Vulture woods to reach the Beech Fountain, the only water resource still present in the area and located near a picnic area."
+      "english": "The Brigands' Path - CAI Path 102 Starting from the Monticchio Lakes, it is possible to take a suggestive excursion through the Vulture woods to reach the Fontana dei Faggi, the only water resource still present in the area and located near a picnic area."
     }
   ],
   "days": [
     {
-      "title": "Vulture Peaks and Waters",
+      "title": "Natural Landmarks and Historical Paths of Vulture",
       "stop_ids": [
         "s1",
-        "s2"
-      ]
-    },
-    {
-      "title": "Historic Brigand Trails",
-      "stop_ids": [
+        "s2",
         "s3",
-        "s7"
-      ]
-    },
-    {
-      "title": "Monticchio Woods and Fountains",
-      "stop_ids": [
         "s4",
         "s5",
         "s6"
       ]
     }
-  ]
+  ],
+  "_text_sha": "40a7c300b36b9c44ed21132454581628a15b9ac00231e961da78255c75755876"
 }

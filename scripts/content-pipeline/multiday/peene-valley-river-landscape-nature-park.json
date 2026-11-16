@@ -4,67 +4,68 @@
       "id": "s1",
       "name": "Stolpe an der Peene",
       "quote": "Sitz des Naturparks ist in Stolpe an der Peene.",
-      "english": "The headquarters of the nature park is in Stolpe an der Peene."
+      "english": "The headquarters of the nature park is located in Stolpe an der Peene."
     },
     {
       "id": "s2",
       "name": "Kummerower See",
       "quote": "Der Naturpark umfasst auf etwa 33.400 Hektar das Peenetal vom Auslauf am Kummerower See bis zur Mündung in den Peenestrom und somit einen Großteil der Flächen des Naturschutzgroßprojektes Peenetallandschaft.",
-      "english": "Covering approximately 33,400 hectares, the nature park encompasses the Peene Valley from its outlet at Lake Kummerow to its mouth at the Peenestrom, and thus a large part of the areas of the major conservation project Peene Valley Landscape."
+      "english": "The nature park covers approximately 33,400 hectares of the Peene Valley from the outlet at Lake Kummerow to the mouth into the Peenestrom and thus a large part of the areas of the Peene Valley Landscape large-scale conservation project."
     },
     {
       "id": "s3",
-      "name": "Naturschutzgebiet Peenetal von Salem bis Jarmen",
-      "quote": "Innerhalb des Naturparks liegen – von West nach Ost – folgende Naturschutzgebiete: Naturschutzgebiet Peenetal von Salem bis Jarmen.",
-      "english": "The following nature reserves lie within the nature park – from west to east: the Peene Valley Nature Reserve from Salem to Jarmen."
+      "name": "Peenestrom",
+      "quote": "Der Naturpark umfasst auf etwa 33.400 Hektar das Peenetal vom Auslauf am Kummerower See bis zur Mündung in den Peenestrom und somit einen Großteil der Flächen des Naturschutzgroßprojektes Peenetallandschaft.",
+      "english": "The nature park covers approximately 33,400 hectares of the Peene Valley from the outlet at Lake Kummerow to the mouth into the Peenestrom and thus a large part of the areas of the Peene Valley Landscape large-scale conservation project."
     },
     {
       "id": "s4",
-      "name": "Naturschutzgebiet Peenetal von Jarmen bis Anklam",
-      "quote": "Naturschutzgebiet Peenetal von Jarmen bis Anklam (Neuausweisung 2010 mit den bisherigen NSG Peenetal westlich des Gützkower Fährdammes, Peenewiesen bei Gützkow und Teilbereichen des NSG Unteres Peenetal (Peenetalmoor)).",
-      "english": "Peene Valley Nature Reserve from Jarmen to Anklam (newly designated in 2010 with the previous nature reserves Peene Valley west of the Gützkow ferry embankment, Peene meadows near Gützkow and parts of the Lower Peene Valley nature reserve (Peene Valley bog))."
+      "name": "Naturschutzgebiet Peenetal von Salem bis Jarmen",
+      "quote": "Innerhalb des Naturparks liegen – von West nach Ost – folgende Naturschutzgebiete: Naturschutzgebiet Peenetal von Salem bis Jarmen",
+      "english": "Within the nature park lie – from west to east – the following nature reserves: Peenetal from Salem to Jarmen Nature Reserve"
     },
     {
       "id": "s5",
       "name": "Naturschutzgebiet Schwingetal und Peenewiesen bei Trantow",
-      "quote": "Naturschutzgebiet Schwingetal und Peenewiesen bei Trantow.",
-      "english": "Schwingetal and Peenewiesen near Trantow Nature Reserve."
+      "quote": "Naturschutzgebiet Schwingetal und Peenewiesen bei Trantow",
+      "english": "Schwingetal and Peenewiesen near Trantow Nature Reserve"
     },
     {
       "id": "s6",
       "name": "Naturschutzgebiet Unteres Peenetal (Peenetalmoor)",
-      "quote": "Naturschutzgebiet Unteres Peenetal (Peenetalmoor).",
-      "english": "Lower Peene Valley Nature Reserve (Peene Valley Bog)."
+      "quote": "Naturschutzgebiet Unteres Peenetal (Peenetalmoor)",
+      "english": "Lower Peene Valley (Peene Valley Mire) Nature Reserve"
     },
     {
       "id": "s7",
       "name": "Naturschutzgebiet Anklamer Stadtbruch",
-      "quote": "Naturschutzgebiet Anklamer Stadtbruch.",
-      "english": "Anklam City Marsh Nature Reserve."
+      "quote": "Naturschutzgebiet Anklamer Stadtbruch",
+      "english": "Anklamer Stadtbruch Nature Reserve"
     }
   ],
   "days": [
     {
-      "title": "Western Lakes and Upper Peene Valley",
-      "stop_ids": [
-        "s2",
-        "s3"
-      ]
-    },
-    {
-      "title": "Central Valleys and Park Headquarters",
+      "title": "Western Valley and Park Headquarters",
       "stop_ids": [
         "s1",
-        "s4",
-        "s5"
+        "s2",
+        "s4"
       ]
     },
     {
-      "title": "Lower Peene Marshes and Bogs",
+      "title": "Central Marshlands and Meadows",
       "stop_ids": [
-        "s6",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Eastern Estuary and Wetlands",
+      "stop_ids": [
+        "s3",
         "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "f0c8ab9875be84cf3bb413751a88e526d6a18f1422c528265dcf43f863948812"
 }

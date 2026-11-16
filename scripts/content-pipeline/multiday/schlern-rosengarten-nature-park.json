@@ -20,46 +20,47 @@
     },
     {
       "id": "s4",
-      "name": "Lago di Fiè",
-      "quote": "Oltre a questo centro visite, presso il lago di Fiè si trova un punto informativo (Infostelle Völser Weiher).",
-      "english": "In addition to this visitor center, an information point (Infostelle Völser Weiher) is located at the lake of Fiè."
-    },
-    {
-      "id": "s5",
-      "name": "Siusi",
+      "name": "centro visite del parco",
       "quote": "In 2022 è stato aperto a Siusi il centro visite del parco che dedica molto spazio alla geologia unica del parco, nonché alla vegetazione e alla fauna.",
       "english": "In 2022, the park's visitor center was opened in Siusi, which dedicates much space to the park's unique geology, as well as its vegetation and fauna."
     },
     {
-      "id": "s6",
+      "id": "s5",
       "name": "punto informativo Steger Säge",
       "quote": "Nei pressi dei Bagni di Lavina Bianca (Weißlahnbad), nel comune di Tires, è situato il \"punto informativo Steger Säge\", allestito dentro ad un vecchio mulino ad acqua che faceva funzionare una segheria idraulica, attiva sin dal lontano 1598 fino alla fine degli anni 1950.",
-      "english": "Near the Bagni di Lavina Bianca (Weißlahnbad), in the municipality of Tires, is the \"Steger Säge information point\", set up inside an old water mill that operated a hydraulic sawmill, active from as far back as 1598 until the late 1950s."
+      "english": "Near the Bagni di Lavina Bianca (Weißlahnbad), in the municipality of Tires, the \"Steger Säge information point\" is located, set up inside an old water mill that operated a hydraulic sawmill, active from 1598 until the end of the 1950s."
+    },
+    {
+      "id": "s6",
+      "name": "lago di Fiè",
+      "quote": "Oltre a questo centro visite, presso il lago di Fiè si trova un punto informativo (Infostelle Völser Weiher).",
+      "english": "In addition to this visitor center, an information point (Infostelle Völser Weiher) is located at Lake Fiè."
     },
     {
       "id": "s7",
       "name": "Catinaccio",
       "quote": "Dall'anno 2003 anche il Catinaccio fa parte dell'area naturale.",
-      "english": "Since the year 2003, the Catinaccio has also been part of the natural area."
+      "english": "Since 2003, the Catinaccio has also been part of the natural area."
     }
   ],
   "days": [
     {
-      "title": "Peaks of Sciliar and Catinaccio",
+      "title": "Peaks of Sciliar and Siusi Info",
       "stop_ids": [
         "s1",
         "s2",
         "s3",
-        "s7"
+        "s4"
       ]
     },
     {
-      "title": "Visitor Centres and Lakes",
+      "title": "Catinaccio and Local Water Heritage",
       "stop_ids": [
-        "s4",
         "s5",
-        "s6"
+        "s6",
+        "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "3e692549df8181d039e0cf30f887ff438b83d0d195bbbb9bd4c08b96a77aa236"
 }

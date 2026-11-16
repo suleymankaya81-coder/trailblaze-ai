@@ -2,38 +2,77 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Lower Saale Valley",
-      "quote": "A trail for all the senses - and in the middle of it all, the Lower Saale Valley and Saale-Unstrut-Triasland nature parks with quiet paths, rare species and a diverse landscape.",
-      "english": "A trail for all the senses - and in the middle of it all, the Lower Saale Valley and Saale-Unstrut-Triasland nature parks with quiet paths, rare species and a diverse landscape."
+      "name": "Himmelsscheibe von Nebra",
+      "quote": "Fundort der Himmelsscheibe von Nebra",
+      "english": "Discovery site of the Nebra Sky Disk"
     },
     {
       "id": "s2",
-      "name": "ducal vineyard in Freyburg",
-      "quote": "Visitors to the ducal vineyard in Freyburg (Unstrut) will find a vineyard landscape.",
-      "english": "Visitors to the ducal vineyard in Freyburg (Unstrut) will find a vineyard landscape."
+      "name": "Herzoglicher Weinberg",
+      "quote": "Herzoglicher Weinberg, Schauweinberg in Freyburg",
+      "english": "Ducal Vineyard, a showcase vineyard in Freyburg"
     },
     {
       "id": "s3",
-      "name": "Eckartsberga",
-      "quote": "From Jerichow to Eckartsberga, hikers follow the old route towards Santiago de Compostela.",
-      "english": "From Jerichow to Eckartsberga, hikers follow the old route towards Santiago de Compostela."
+      "name": "Neuenburg",
+      "quote": "Burgen und Schlösser: Neuenburg, Rudelsburg, Schloss Burgscheidungen, Schloss Steinburg, Burg Saaleck, Burg Schönburg, Eckartsburg, Schloss Neu-Augustusburg, Schloss Moritzburg, Pfalz Allstedt, Burg Querfurt",
+      "english": "Castles and palaces: Neuenburg, Rudelsburg, Burgscheidungen Castle, Steinburg Castle, Saaleck Castle, Schönburg Castle, Eckartsburg, Neu-Augustusburg Castle, Moritzburg Castle, Allstedt Palatinate, Querfurt Castle"
     },
     {
       "id": "s4",
-      "name": "Horburg-Maßlau",
-      "quote": "In Saxony-Anhalt, it runs for over 80 kilometers from Horburg-Maßlau to Eckartsberga.",
-      "english": "In Saxony-Anhalt, it runs for over 80 kilometers from Horburg-Maßlau to Eckartsberga."
+      "name": "Naumburger Dom",
+      "quote": "Dom und Kirchen: Kloster Pforta, Naumburger Dom, Kloster Goseck, Kirche Steinbach, Kloster Zscheiplitz und Pfalz und Kloster Memleben",
+      "english": "Cathedrals and churches: Pforta Monastery, Naumburg Cathedral, Goseck Monastery, Steinbach Church, Zscheiplitz Monastery and the Palatinate and Monastery of Memleben"
+    },
+    {
+      "id": "s5",
+      "name": "Sonnenobservatorium Goseck",
+      "quote": "Archäologische Denkmale: Klein-Friedenthal, Burgstelle Rabenswalde, Steinkreuze, Sonnenobservatorium Goseck",
+      "english": "Archaeological monuments: Klein-Friedenthal, Rabenswalde castle site, stone crosses, Goseck Solar Observatory"
+    },
+    {
+      "id": "s6",
+      "name": "Gradierwerke in Bad Kösen",
+      "quote": "Technische Denkmale: Gradierwerke in Bad Kösen und Bad Sulza, Glockenmuseum Laucha an der Unstrut, historische Mühlen",
+      "english": "Technical monuments: Graduation towers in Bad Kösen and Bad Sulza, Bell Museum in Laucha an der Unstrut, historical mills"
+    },
+    {
+      "id": "s7",
+      "name": "Saale-Radweg",
+      "quote": "Saale-Radweg",
+      "english": "Saale Cycle Path"
+    },
+    {
+      "id": "s8",
+      "name": "Weinstraße Saale-Unstrut",
+      "quote": "Weinstraße Saale-Unstrut",
+      "english": "Saale-Unstrut Wine Route"
     }
   ],
   "days": [
     {
-      "title": "Rivers, Vineyards and Pilgrimage Sites of Saale-Unstrut",
+      "title": "Archaeo-Astronomy and Ancient Valleys",
       "stop_ids": [
         "s1",
-        "s2",
-        "s3",
+        "s5",
         "s4"
       ]
+    },
+    {
+      "title": "Castles and Technical Heritage",
+      "stop_ids": [
+        "s3",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Vineyards and Wine Culture",
+      "stop_ids": [
+        "s2",
+        "s8"
+      ]
     }
-  ]
+  ],
+  "_text_sha": "32953878e9ee23510ba50a051991ff14a8928397efd8c7156d0a16c476b0f568"
 }

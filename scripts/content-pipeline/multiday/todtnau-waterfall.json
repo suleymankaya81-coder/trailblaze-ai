@@ -10,51 +10,62 @@
       "id": "s2",
       "name": "Hangloch",
       "quote": "Unterhalb des Zinkens Hangloch ist der Talboden bewaldet, und der Bach stürzt unvermittelt in eine Felskerbe mit zwei wenige Meter hohen Fallstufen.",
-      "english": "Below the Zinken Hangloch, the valley floor is forested, and the stream suddenly plunges into a rocky notch with two drop steps a few meters high."
+      "english": "Below the Hangloch spur, the valley floor is forested, and the stream suddenly plunges into a rocky cleft with two drop steps a few meters high."
     },
     {
       "id": "s3",
-      "name": "Schatzstein",
-      "quote": "In einer Entfernung von 300 Metern östlich der oberen Fallstufe befindet sich der Monolith Schatzstein.",
-      "english": "At a distance of 300 meters east of the upper drop step is the monolith Schatzstein."
+      "name": "Stiebenmatte",
+      "quote": "Nach einem letzten, 4 Meter hohen Absatz rauscht das Stübenbächle weitere 140 Meter zunächst steil hinab zur Stiebenmatte und dann zur Mündung in den Schönenbach.",
+      "english": "After a final 4-meter-high step, the Stübenbächle rushes another 140 meters steeply down to the Stiebenmatte and then to the confluence with the Schönenbach."
     },
     {
       "id": "s4",
+      "name": "Schatzstein",
+      "quote": "In einer Entfernung von 300 Metern östlich der oberen Fallstufe befindet sich der Monolith Schatzstein.",
+      "english": "At a distance of 300 meters east of the upper waterfall step is the Schatzstein monolith."
+    },
+    {
+      "id": "s5",
       "name": "Mariengrotte",
       "quote": "Auf einem Weg von Aftersteg zu den Wasserfällen befindet sich auf halber Strecke eine Mariengrotte.",
       "english": "On a path from Aftersteg to the waterfalls, there is a Mary's Grotto halfway along."
     },
     {
-      "id": "s5",
+      "id": "s6",
       "name": "Aftersteg",
       "quote": "Der Weg von Aftersteg zum Fußpunkt des Wasserfalls wurde barrierefrei angelegt, unterstützt vom Naturpark Südschwarzwald.",
-      "english": "The path from Aftersteg to the base of the waterfall was made barrier-free, supported by the Southern Black Forest Nature Park."
-    },
-    {
-      "id": "s6",
-      "name": "Rotbuche",
-      "quote": "Der Zugang von Aftersteg führt an einem weiteren Naturdenkmal vorbei, einer ca. 300 Jahre alten Rotbuche (frühere Weidbuche).",
-      "english": "The access from Aftersteg passes another natural monument, a copper beech (formerly a pasture beech) approx. 300 years old."
+      "english": "The path from Aftersteg to the base of the waterfall was designed to be barrier-free, supported by the Southern Black Forest Nature Park."
     },
     {
       "id": "s7",
       "name": "Blackforestline",
       "quote": "Zu Pfingsten 2023 wurde eine 450 Meter lange Hängeseilbrücke „Blackforestline“ über den Todtnauer Wasserfall eröffnet, die in etwa 120 Meter Höhe über dem Talgrund verläuft.",
-      "english": "At Whitsun 2023, a 450-meter-long suspension bridge \"Blackforestline\" was opened over the Todtnau Waterfall, which runs at a height of about 120 meters above the valley floor."
+      "english": "At Whitsun 2023, a 450-meter-long suspension bridge \"Blackforestline\" was opened over the Todtnau Waterfall, running about 120 meters above the valley floor."
     }
   ],
   "days": [
     {
-      "title": "Waterfalls and Surrounding Sights",
+      "title": "Upper Valley and High Sights",
       "stop_ids": [
         "s1",
-        "s2",
-        "s3",
         "s4",
-        "s5",
-        "s6",
         "s7"
       ]
+    },
+    {
+      "title": "Waterfall Clefts and Lower Slopes",
+      "stop_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Aftersteg Access and Grottos",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
     }
-  ]
+  ],
+  "_text_sha": "28fe6a6baaa4c837e7e4f06863dc467d7c020a62b32f6d97f24cf9ea3108a59f"
 }

@@ -2,24 +2,91 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Swiss Alps Jungfrau-Aletsch",
-      "quote": "Set out now to discover the Swiss Alps Jungfrau-Aletsch and find out everything you need to know about the first Alpine World Heritage Site on this site.",
-      "english": "Set out now to discover the Swiss Alps Jungfrau-Aletsch and find out everything you need to know about the first Alpine World Heritage Site on this site."
+      "name": "Eiger",
+      "quote": "Das Welterbegebiet Schweizer Alpen Jungfrau-Aletsch beginnt im Norden am Fusse der bekannten Berner Oberländer Berge Eiger, Mönch und Jungfrau.",
+      "english": "The Swiss Alps Jungfrau-Aletsch World Heritage area begins in the north at the foot of the famous Bernese Oberland mountains Eiger, Mönch and Jungfrau."
     },
     {
       "id": "s2",
-      "name": "World Nature Forum",
-      "quote": "World Nature Forum",
-      "english": "World Nature Forum"
+      "name": "Mönch",
+      "quote": "Eindrucksvolle Berglandschaft von Eiger, Mönch und Jungfrau",
+      "english": "Impressive mountain landscape of Eiger, Mönch and Jungfrau"
+    },
+    {
+      "id": "s3",
+      "name": "Jungfraujoch",
+      "quote": "Jungfraujoch mit der höchstgelegenen Bahnstation Europas auf 3454 m ü. M.",
+      "english": "Jungfraujoch with the highest railway station in Europe at 3454 m above sea level."
+    },
+    {
+      "id": "s4",
+      "name": "Trümmelbachfälle",
+      "quote": "Trümmelbachfälle",
+      "english": "Trümmelbach Falls"
+    },
+    {
+      "id": "s5",
+      "name": "Gletscherschlucht Rosenlaui",
+      "quote": "Gletscherschlucht Rosenlaui",
+      "english": "Rosenlaui Glacier Gorge"
+    },
+    {
+      "id": "s6",
+      "name": "Aargletscher",
+      "quote": "Aargletscher",
+      "english": "Aar Glaciers"
+    },
+    {
+      "id": "s7",
+      "name": "Grosser Aletschgletscher",
+      "quote": "Grosser Aletschgletscher (mit 23 km längster Gletscher der Alpen)",
+      "english": "Great Aletsch Glacier (at 23 km the longest glacier in the Alps)"
+    },
+    {
+      "id": "s8",
+      "name": "Aletschwald",
+      "quote": "Aletschwald im Gletschervorfeld mit dem ältesten Baum der Schweiz",
+      "english": "Aletsch Forest in the glacier foreland with the oldest tree in Switzerland"
+    },
+    {
+      "id": "s9",
+      "name": "Mund",
+      "quote": "Safran-Äcker in Mund",
+      "english": "Saffron fields in Mund"
+    },
+    {
+      "id": "s10",
+      "name": "Petersgrat",
+      "quote": "Petersgrat",
+      "english": "Petersgrat"
     }
   ],
   "days": [
     {
-      "title": "World Heritage Discovery",
+      "title": "Jungfrau Peaks and Waterfalls",
       "stop_ids": [
         "s1",
-        "s2"
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Glaciers and Gorges",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Forests, Ridges and Valleys",
+      "stop_ids": [
+        "s8",
+        "s9",
+        "s10"
       ]
     }
-  ]
+  ],
+  "_text_sha": "b9563c9ed5c80230e13a4e9d1839e8757da2534e8e307dd34aabc7b758eb97d7"
 }

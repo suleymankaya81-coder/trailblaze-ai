@@ -2,38 +2,70 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Silvretta-Bielerhöhe",
-      "quote": "Tauchen Sie ein in die Welt der illwerke vkw: Kraftwerksbesichtigungen, speziell für Schulklassen konzipierte Erlebnispakete und ein zeitgenössisches Kunstangebot auf der und um die Silvretta-Bielerhöhe warten auf Sie.",
-      "english": "Immerse yourself in the world of illwerke vkw: power plant tours, adventure packages specially designed for school classes and a contemporary art offering on and around the Silvretta-Bielerhöhe await you."
+      "name": "Silvretta-Gebiet",
+      "quote": "Das Unternehmen betreibt große Wasserkraftwerke in ganz Vorarlberg, wobei insbesondere die Pumpspeicherkraftwerke im Silvretta-Gebiet zu den leistungsstarken Kraftwerksanlagen des Unternehmens gehören.",
+      "english": "The company operates large hydroelectric power plants throughout Vorarlberg, whereby the pumped-storage power plants in the Silvretta area in particular are among the company's high-performance power plant facilities."
     },
     {
       "id": "s2",
-      "name": "Lünersee",
-      "quote": "Perfekt eingebettet in eine bestehende Infrastruktur soll Österreichs größtes Pumpspeicherkraftwerk am Lünersee im Brandnertal entstehen.",
-      "english": "Perfectly embedded into an existing infrastructure, Austria's largest pumped-storage power plant is to be built at Lünersee in the Brandner Valley."
+      "name": "Lünerseewerk II",
+      "quote": "2022 wurden die Pläne für das Pumpspeicherkraftwerk Lünerseewerk II in der Gemeinde Bürs öffentlich gemacht.",
+      "english": "In 2022, the plans for the Lünerseewerk II pumped-storage power plant in the municipality of Bürs were made public."
     },
     {
       "id": "s3",
-      "name": "Brandnertal",
-      "quote": "Perfekt eingebettet in eine bestehende Infrastruktur soll Österreichs größtes Pumpspeicherkraftwerk am Lünersee im Brandnertal entstehen.",
-      "english": "Perfectly embedded into an existing infrastructure, Austria's largest pumped-storage power plant is to be built at Lünersee in the Brandner Valley."
+      "name": "Bürs",
+      "quote": "Dieses soll bis 2036 mit Kosten in Höhe von rund 2,65 Milliarden Euro entstehen und das größte Pumpspeicherkraftwerk Österreichs werden.",
+      "english": "This is to be built by 2036 at a cost of around 2.65 billion euros and will become Austria's largest pumped-storage power plant."
     },
     {
       "id": "s4",
+      "name": "Vandans",
+      "quote": "Neben dem Verwaltungshauptsitz in Bregenz verfügt die illwerke vkw über einen weiteren Standort in Vandans im Montafon.",
+      "english": "In addition to the administrative headquarters in Bregenz, illwerke vkw has another location in Vandans in the Montafon."
+    },
+    {
+      "id": "s5",
       "name": "Montafon",
-      "quote": "Die Kraftwerke der illwerke vkw sind in allen Landesteilen zu finden, wobei sich die leistungsstärksten Anlagen aufgrund der topographischen Bedingungen im Montafon und im Bregenzerwald befinden.",
-      "english": "The power plants of illwerke vkw can be found in all parts of the state, with the most powerful facilities located in Montafon and the Bregenz Forest due to topographical conditions."
+      "quote": "Im Montafon befinden sich viele Kraftwerksanlagen der illwerke vkw, insbesondere die großen Pumpspeicherkraftwerke und Stauseen.",
+      "english": "In the Montafon, there are many illwerke vkw power plant facilities, especially the large pumped-storage power plants and reservoirs."
+    },
+    {
+      "id": "s6",
+      "name": "LCT TWO",
+      "quote": "Das Gebäude mit der Bezeichnung LCT TWO reicht zu einem Viertel in ein Speicherbecken hinein.",
+      "english": "The building designated LCT TWO extends a quarter of the way into a reservoir basin."
+    },
+    {
+      "id": "s7",
+      "name": "Bregenzerwald",
+      "quote": "Die Wasserkraftwerke der illwerke vkw befinden sich aufgrund der topografischen Gegebenheiten vorwiegend im Montafon und im Bregenzerwald.",
+      "english": "Due to the topographical conditions, the hydroelectric power plants of illwerke vkw are primarily located in the Montafon and the Bregenzerwald."
     }
   ],
   "days": [
     {
-      "title": "Mountain Reservoirs and Valleys",
+      "title": "Montafon Reservoirs and Hybrid Architecture",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Silvretta and Bregenzerwald High Peaks",
       "stop_ids": [
         "s1",
+        "s7"
+      ]
+    },
+    {
+      "title": "Future Infrastructure in Bürs",
+      "stop_ids": [
         "s2",
-        "s3",
-        "s4"
+        "s3"
       ]
     }
-  ]
+  ],
+  "_text_sha": "e98c3b431295d8e248c1a9957cdf81022061d92d4f5519f667de9c52a3870ea8"
 }

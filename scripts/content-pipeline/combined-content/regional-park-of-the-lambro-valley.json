@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lombardy",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco regionale della Valle del Lambro"
+        "lago di Alserio",
+        "Rio Pegorino"
       ],
       "seo_title": "Regional Park of the Lambro Valley Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Regional Park of the Lambro Valley",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Northern Lakes and Tributaries",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco regionale della Valle del Lambro",
-                "stop_id": "regional-park-of-the-lambro-valley",
-                "detail": "The Lambro Valley Regional Park is a protected natural area of Lombardy established in 1983. It is in management to a consortium consisting of 36 municipalities of the provinces of Como, Lecco and Monza and Brianza."
+                "name": "lago di Alserio",
+                "stop_id": "regional-park-of-the-lambro-valley--s1",
+                "detail": "In the north of the Regional Park, there are two lakes entirely included within the park: Lake Alserio and Lake Pusiano, into which the Lambro first flows as the Lambrone, then exits and continues its path until it meets the Po at Orio Litta."
+              },
+              {
+                "name": "Rio Pegorino",
+                "stop_id": "regional-park-of-the-lambro-valley--s3",
+                "detail": "It includes numerous urban areas, but especially wooded areas that emerge along the Lambro and its tributaries Bevere and Rii (Rio Pegorino, Rio Cantalupo)."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Regional Park of the Lambro Valley before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Southern Parklands and Administration",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Parco di Monza",
+                "stop_id": "regional-park-of-the-lambro-valley--s5",
+                "detail": "The southern part of the park is included in the Monza Park."
+              },
+              {
+                "name": "Ente di Diritto Pubblico Parco Regionale della Valle del Lambro",
+                "stop_id": "regional-park-of-the-lambro-valley--s6",
+                "detail": "It is managed by the Regional Park of the Lambro Valley Public Body, which is headquartered at via Vittorio Veneto, 19 in Triuggio (MB)."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Regional Park of the Lambro Valley before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_regionale_della_Valle_del_Lambro"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_regionale_della_Valle_del_Lambro"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:33:21.790205+00:00"
       }
     }
   }

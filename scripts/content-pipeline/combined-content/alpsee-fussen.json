@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Bavaria",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Alpsee"
+        "Alpsee",
+        "Hohenschwangau",
+        "Alpseebad"
       ],
       "seo_title": "Alpsee (Füssen) Visit Guide"
     },
@@ -32,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Alpsee (Füssen)",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Castles and Lake Recreation",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
                 "name": "Alpsee",
-                "stop_id": "alpsee-fussen",
-                "detail": "The Alpsee (German pronunciation: [ˈalpzeː]) is a lake in the Ostallgäu district of Bavaria, Germany, located about 4 kilometres southeast of Füssen. It is close to the Neuschwanstein and Hohenschwangau castles. The lake has just under five kilometres of shoreline and a depth of up to 62 metres."
+                "stop_id": "alpsee-fussen--s1",
+                "detail": "The Alpsee is an 88-hectare lake in Bavaria in the district of Ostallgäu."
+              },
+              {
+                "name": "Hohenschwangau",
+                "stop_id": "alpsee-fussen--s2",
+                "detail": "It has a circumference of 4.70 kilometers, belongs to the municipality of Schwangau and is located in the immediate vicinity of the royal castles of Hohenschwangau and Neuschwanstein, directly at the foot of the mountain Säuling."
+              },
+              {
+                "name": "Alpseebad",
+                "stop_id": "alpsee-fussen--s4",
+                "detail": "The lake is considered one of the cleanest lakes in Germany and is used in summer as a bathing lake in a specially created bathing establishment (Alpseebad, on the south shore)."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Alpsee (Füssen) before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "History and Lake Views",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Bootshaus",
+                "stop_id": "alpsee-fussen--s5",
+                "detail": "There is also a boathouse where pedal boats and rowing boats can be rented."
+              },
+              {
+                "name": "Pindarplatz",
+                "stop_id": "alpsee-fussen--s7",
+                "detail": "There is also a viewpoint on a rocky outcrop, the Pindarplatz."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Alpsee (Füssen) before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +109,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Alpsee"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Alpsee"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:23:18.043385+00:00"
       }
     }
   }

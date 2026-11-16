@@ -4,57 +4,75 @@
       "id": "s1",
       "name": "Königsstuhl",
       "quote": "Der Königsstuhl ist eine Kreidefelsformation der Stubbenkammer im Nationalpark Jasmund auf der Ostseeinsel Rügen.",
-      "english": "The Königsstuhl is a chalk cliff formation of the Stubbenkammer in the Jasmund National Park on the Baltic Sea island of Rügen."
+      "english": "The Königsstuhl is a chalk rock formation of the Stubbenkammer in the Jasmund National Park on the Baltic Sea island of Rügen."
     },
     {
       "id": "s2",
+      "name": "Skywalk",
+      "quote": "2023 wurde darauf ein Skywalk eröffnet.",
+      "english": "In 2023, a skywalk was opened on top of it."
+    },
+    {
+      "id": "s3",
       "name": "Nationalpark-Zentrum",
       "quote": "Von dort fährt ganzjährig auf einer für den privaten Verkehr gesperrten Straße ein Pendelbus zum Nationalpark-Zentrum.",
       "english": "From there, a shuttle bus runs year-round on a road closed to private traffic to the National Park Center."
     },
     {
-      "id": "s3",
+      "id": "s4",
       "name": "Hochuferweg Jasmund",
       "quote": "Wanderer erreichen den Königsstuhl über den insgesamt etwa 12 km langen Hochuferweg Jasmund, der von Sassnitz bis nach Lohme führt.",
-      "english": "Hikers reach the Königsstuhl via the approximately 12 km long Jasmund high shore trail, which leads from Sassnitz to Lohme."
-    },
-    {
-      "id": "s4",
-      "name": "Skywalk",
-      "quote": "2023 wurde darauf ein Skywalk eröffnet.",
-      "english": "A skywalk was opened on it in 2023."
+      "english": "Hikers reach the Königsstuhl via the approximately 12 km long Jasmund high bank path, which leads from Sassnitz to Lohme."
     },
     {
       "id": "s5",
       "name": "Viktoriasicht",
       "quote": "Den Königsstuhl selbst betrachtet man besser von der etwas südlicher gelegenen Viktoriasicht.",
-      "english": "The Königsstuhl itself is better viewed from the Viktoriasicht, located a bit further south."
+      "english": "The Königsstuhl itself is better viewed from the Viktoriasicht located slightly to the south."
     },
     {
       "id": "s6",
-      "name": "Kreidemuseum",
-      "quote": "Eine ähnliche Formation, der „Kleine Königsstuhl“ befindet sich im aufgelassenen Kreidebruch Gummanz bei dem dortigen Kreidemuseum.",
-      "english": "A similar formation, the \"Little Königsstuhl,\" is located in the abandoned Gummanz chalk quarry at the chalk museum there."
+      "name": "Holztreppe",
+      "quote": "Unweit südlich vom Königsstuhl zum Strand hinunter führt seit alter Zeit eine Holztreppe mit 412 Stufen vorbei am alten Pumpenhaus (Baudenkmal).",
+      "english": "Not far south of the Königsstuhl, a wooden staircase with 412 steps has led down to the beach since ancient times, passing the old pump house (architectural monument)."
     },
     {
       "id": "s7",
-      "name": "Pumpenhaus",
+      "name": "Altes Pumpenhaus",
       "quote": "Unweit südlich vom Königsstuhl zum Strand hinunter führt seit alter Zeit eine Holztreppe mit 412 Stufen vorbei am alten Pumpenhaus (Baudenkmal).",
-      "english": "Not far south of the Königsstuhl, an old wooden staircase with 412 steps leads down to the beach past the old pump house (a protected monument)."
+      "english": "Not far south of the Königsstuhl, a wooden staircase with 412 steps has led down to the beach since ancient times, passing the old pump house (architectural monument)."
+    },
+    {
+      "id": "s8",
+      "name": "Wissower Klinken",
+      "quote": "Beispiel dafür sind die durch ein Gemälde C. D. Friedrich bekannten Wissower Klinken, die es so nicht mehr gibt.",
+      "english": "An example of this are the Wissower Klinken, known through a painting by C. D. Friedrich, which no longer exist in that form."
     }
   ],
   "days": [
     {
-      "title": "Königsstuhl Core and Trails",
+      "title": "Königsstuhl Core Sights",
       "stop_ids": [
         "s1",
         "s2",
-        "s3",
+        "s3"
+      ]
+    },
+    {
+      "title": "Coastal Hiking and Views",
+      "stop_ids": [
         "s4",
         "s5",
+        "s8"
+      ]
+    },
+    {
+      "title": "Historical Coastal Access",
+      "stop_ids": [
         "s6",
         "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "f0ef99331cd28bc9b58f42944f9e5b917aedb2c97b58dae2dabdf4b7eef522f5"
 }

@@ -2,71 +2,70 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Möhnesee-Turm",
-      "quote": "Möhnesee-Turm und Lörmecke-Turm",
-      "english": "Möhnesee Tower and Lörmecke Tower"
+      "name": "Möhnesee",
+      "quote": "Das bekannteste Stillgewässer im Naturpark Arnsberger Wald ist der Möhnesee, der sich im Möhnetal zwischen dem Haarstrang im Norden und dem Arnsberger Wald im Süden ausbreitet.",
+      "english": "The most famous still water in the Arnsberg Forest Nature Park is the Möhnesee, which spreads out in the Möhne valley between the Haarstrang to the north and the Arnsberg Forest to the south."
     },
     {
       "id": "s2",
-      "name": "Lörmecke-Turm",
-      "quote": "Treffpunkt ist um 10 Uhr der Wanderparkplatz Plackweg/Lörmecketurm in 59581 Warstein.",
-      "english": "The meeting point is at 10 a.m. at the Plackweg/Lörmecketurm hiking car park in 59581 Warstein."
+      "name": "Plackweghöhe",
+      "quote": "Plackweghöhe (581,5 m), nordnordöstlich von Eversberg (am Plackweg); mit Lörmecke-Turm",
+      "english": "Plackweghöhe (581.5 m), north-northeast of Eversberg (on the Plackweg); with the Lörmecke Tower"
     },
     {
       "id": "s3",
-      "name": "Sauerland-Waldroute",
-      "quote": "Sauerland-Waldroute",
-      "english": "Sauerland Forest Route"
+      "name": "Lörmecke-Turm",
+      "quote": "Plackweghöhe (581,5 m), nordnordöstlich von Eversberg (am Plackweg); mit Lörmecke-Turm",
+      "english": "Plackweghöhe (581.5 m), north-northeast of Eversberg (on the Plackweg); with the Lörmecke Tower"
     },
     {
       "id": "s4",
-      "name": "Klangwald",
-      "quote": "Klangwald",
-      "english": "Sound Forest"
+      "name": "Bilsteinhöhle",
+      "quote": "Im Naturpark Arnsberger Wald liegen die Bilsteinhöhle südwestlich Warsteins und die Höhle Hohler Stein südwestlich von Rüthen-Kallenhardt.",
+      "english": "The Bilstein Cave southwest of Warstein and the Hollow Stone Cave southwest of Rüthen-Kallenhardt are located in the Arnsberg Forest Nature Park."
     },
     {
       "id": "s5",
-      "name": "Bilsteintal",
-      "quote": "Bilsteintal",
-      "english": "Bilstein Valley"
+      "name": "Hohler Stein",
+      "quote": "Im Naturpark Arnsberger Wald liegen die Bilsteinhöhle südwestlich Warsteins und die Höhle Hohler Stein südwestlich von Rüthen-Kallenhardt.",
+      "english": "The Bilstein Cave southwest of Warstein and the Hollow Stone Cave southwest of Rüthen-Kallenhardt are located in the Arnsberg Forest Nature Park."
     },
     {
       "id": "s6",
-      "name": "Liz - Erlebniszentrum",
-      "quote": "Liz - Erlebniszentrum",
-      "english": "Liz - Experience Center"
+      "name": "Küppelturm",
+      "quote": "Küppel (422,6 m), nordöstlich von Freienohl; mit Küppelturm",
+      "english": "Küppel (422.6 m), northeast of Freienohl; with the Küppel Tower"
     },
     {
       "id": "s7",
-      "name": "Waldschiff",
-      "quote": "Waldschiff",
-      "english": "Forest Ship"
-    },
-    {
-      "id": "s8",
-      "name": "Große Schmalenau",
-      "quote": "Das neue Baufeld befindet sich im Bereich der Großen Schmalenau mitten im Arnsberger Wald auf Flächen des Landesbetriebs Wald und Holz NRW.",
-      "english": "The new construction area is located in the region of the Große Schmalenau in the middle of the Arnsberg Forest on land belonging to the state enterprise Wald und Holz NRW."
+      "name": "Delecker Bismarckturm",
+      "quote": "Namenlose Kuppe (285,8 m), nördlich von Delecke; mit Delecker Bismarckturm",
+      "english": "Unnamed summit (285.8 m), north of Delecke; with the Delecke Bismarck Tower"
     }
   ],
   "days": [
     {
-      "title": "Towers and Forest Trails",
+      "title": "Northern Lakes and Towers",
       "stop_ids": [
         "s1",
-        "s2",
-        "s3",
-        "s4"
+        "s7"
       ]
     },
     {
-      "title": "Valleys and Information Centres",
+      "title": "Central Ridges and Caves",
       "stop_ids": [
-        "s5",
-        "s6",
-        "s7",
-        "s8"
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Southern Peaks",
+      "stop_ids": [
+        "s6"
       ]
     }
-  ]
+  ],
+  "_text_sha": "ce390f179debb603b0fb4b22abc27eebb55bd8a8b6ec30623c3589ca4fcd9743"
 }

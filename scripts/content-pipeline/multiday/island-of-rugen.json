@@ -2,90 +2,77 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Ostseebad Binz",
-      "quote": "Rügen´s largest seaside resort.",
-      "english": "Rügen's largest seaside resort."
+      "name": "Königsstuhl",
+      "quote": "Auf der Halbinsel Jasmund befinden sich mit dem Piekberg (161 m ü. NHN) die höchste Erhebung und mit dem Königsstuhl, einem 118 Meter hohen Kreidefelsen der Stubbenkammer, das markanteste Wahrzeichen der Insel Rügen.",
+      "english": "On the Jasmund peninsula are the Piekberg (161 m above sea level), the highest elevation, and the Königsstuhl, a 118-meter-high chalk cliff of the Stubbenkammer, the most prominent landmark of the island of Rügen."
     },
     {
       "id": "s2",
-      "name": "Ostseebad Sellin",
-      "quote": "Popular seaside resort with famous pier.",
-      "english": "Popular seaside resort with famous pier."
+      "name": "Piekberg",
+      "quote": "Auf der Halbinsel Jasmund befinden sich mit dem Piekberg (161 m ü. NHN) die höchste Erhebung und mit dem Königsstuhl, einem 118 Meter hohen Kreidefelsen der Stubbenkammer, das markanteste Wahrzeichen der Insel Rügen.",
+      "english": "On the Jasmund peninsula are the Piekberg (161 m above sea level), the highest elevation, and the Königsstuhl, a 118-meter-high chalk cliff of the Stubbenkammer, the most prominent landmark of the island of Rügen."
     },
     {
       "id": "s3",
-      "name": "Ostseebad Göhren",
-      "quote": "Seaside and hydrotherapy resort on Rügen island",
-      "english": "Seaside and hydrotherapy resort on Rügen island"
+      "name": "Kap Arkona",
+      "quote": "Die Halbinsel Wittow schließt nach Norden mit dem Kap Arkona ab.",
+      "english": "The Wittow peninsula concludes to the north with Cape Arkona."
     },
     {
       "id": "s4",
-      "name": "Ostseebad Baabe",
-      "quote": "Seaside resort at the edge of the Baltic sea.",
-      "english": "Seaside resort at the edge of the Baltic sea."
+      "name": "Siebenschneiderstein",
+      "quote": "Vor diesem Kliff (Gellort) liegt der Siebenschneiderstein – der viertgrößte Findling Rügens – am Ufer.",
+      "english": "In front of this cliff (Gellort) lies the Siebenschneiderstein – the fourth largest erratic boulder on Rügen – on the shore."
     },
     {
       "id": "s5",
-      "name": "Sassnitz",
-      "quote": "Old fishing village with a lovely old town.",
-      "english": "Old fishing village with a lovely old town."
+      "name": "Rugard",
+      "quote": "Östlich der Stadt Bergen auf Rügen werden 90 m ü. NHN erreicht (Rugard mit Aussichtsturm) und im südöstlichen Hügelland der Granitz 107 m ü. NHN.",
+      "english": "East of the town of Bergen on Rügen, 90 m above sea level is reached (Rugard with observation tower) and in the southeastern hill country of Granitz 107 m above sea level."
     },
     {
       "id": "s6",
-      "name": "Nationalpark-Zentrum KÖNIGSSTUHL",
-      "quote": "Visit Rügen`s most famous landmark as well as the exhibition center.",
-      "english": "Visit Rügen's most famous landmark as well as the exhibition center."
+      "name": "Granitz",
+      "quote": "Östlich der Stadt Bergen auf Rügen werden 90 m ü. NHN erreicht (Rugard mit Aussichtsturm) und im südöstlichen Hügelland der Granitz 107 m ü. NHN.",
+      "english": "East of the town of Bergen on Rügen, 90 m above sea level is reached (Rugard with observation tower) and in the southeastern hill country of Granitz 107 m above sea level."
     },
     {
       "id": "s7",
-      "name": "Hunting lodge Granitz",
-      "quote": "Hunting lodge built between 1837 and 1846.",
-      "english": "Hunting lodge built between 1837 and 1846."
+      "name": "Reddevitzer Höft",
+      "quote": "Im Westen der Halbinsel Mönchgut teilt eine fünf Kilometer lange schmale Landzunge, das Reddevitzer Höft, die beiden Buchten Having und Hagensche Wiek.",
+      "english": "In the west of the Mönchgut peninsula, a five-kilometer-long narrow spit of land, the Reddevitzer Höft, divides the two bays of Having and Hagensche Wiek."
     },
     {
       "id": "s8",
-      "name": "Naturerbe Zentrum Rügen",
-      "quote": "Tree-top path and exhibition center.",
-      "english": "Tree-top path and exhibition center."
-    },
-    {
-      "id": "s9",
-      "name": "Cape Arkona",
-      "quote": "Light houses, tracking tower and most north-eastern point.",
-      "english": "Light houses, tracking tower and most north-eastern point."
-    },
-    {
-      "id": "s10",
-      "name": "Prora",
-      "quote": "The “KdF sea bath for 20000”",
-      "english": "The “KdF sea bath for 20,000”"
+      "name": "Tempelburg Arkona",
+      "quote": "Bedeutung weit über die Grenzen des Ranenreiches hinaus erlangte die dem Gott Svantovit geweihte Tempelburg Arkona, die nach dem Fall Rethras zum Hauptheiligtum aller heidnischen Nordwestslawen wurde.",
+      "english": "The temple fortress of Arkona, dedicated to the god Svantovit, achieved significance far beyond the borders of the Rani empire, becoming the main sanctuary of all pagan Northwest Slavs after the fall of Rethra."
     }
   ],
   "days": [
     {
-      "title": "Southeastern Resorts and Heritage Rail",
+      "title": "Jasmund Peninsula Heights",
       "stop_ids": [
         "s1",
-        "s2",
-        "s3",
-        "s4"
+        "s2"
       ]
     },
     {
-      "title": "Northern Cliffs and History",
+      "title": "Northern Cape and Cliffs",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s8"
+      ]
+    },
+    {
+      "title": "Central Ridges and Southern Spits",
       "stop_ids": [
         "s5",
         "s6",
-        "s9"
-      ]
-    },
-    {
-      "title": "Architecture and Nature Centers",
-      "stop_ids": [
-        "s7",
-        "s8",
-        "s10"
+        "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "425b5c60968e6a8a39825514b512887e5f990a0b562f33428c3dc58ecd368b74"
 }

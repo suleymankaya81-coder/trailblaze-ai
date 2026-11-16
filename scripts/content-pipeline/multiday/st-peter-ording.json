@@ -2,38 +2,77 @@
   "stops": [
     {
       "id": "s1",
-      "name": "St. Peter-Kirche",
-      "quote": "Um 10.00 Uhr findet ein Gottesdienst in der St. Peter-Kirche im Dorf statt, der anschließende Empfang mit Grußworten und Beisammensein im benachbarten Gemeindehaus.",
-      "english": "At 10:00 a.m. a church service will take place in the St. Peter Church in the village, followed by a reception with greetings and a get-together in the neighboring community center."
+      "name": "weitläufige Strand",
+      "quote": "Charakteristisch für Sankt Peter-Ording ist der weitläufige Strand.",
+      "english": "Characteristic of Sankt Peter-Ording is the extensive beach."
     },
     {
       "id": "s2",
-      "name": "Gemeindehaus",
-      "quote": "Um 10.00 Uhr findet ein Gottesdienst in der St. Peter-Kirche im Dorf statt, der anschließende Empfang mit Grußworten und Beisammensein im benachbarten Gemeindehaus.",
-      "english": "At 10:00 a.m. a church service will take place in the St. Peter Church in the village, followed by a reception with greetings and a get-together in the neighboring community center."
+      "name": "Dünengürtel",
+      "quote": "Daran schließt sich vor den Ortsteilen Bad und Ording ein Dünengürtel an.",
+      "english": "A dune belt connects to it in front of the districts of Bad and Ording."
     },
     {
       "id": "s3",
-      "name": "Museum Landschaft Eiderstedt",
-      "quote": "Damit dieses Kapitel unserer Geschichte nicht vergessen wird, soll im Museum Landschaft Eiderstedt in SPO jetzt eine Multimedia-Station entstehen, die aufklärt, erinnert und eine Möglichkeit zum Dialog bietet.",
-      "english": "To ensure that this chapter of our history is not forgotten, a multimedia station is now to be created in the Museum Landschaft Eiderstedt in SPO, which will educate, remind, and provide an opportunity for dialogue."
+      "name": "Maleens Knoll",
+      "quote": "Hier befindet sich auch die mit 16,6 Meter über NHN höchste natürliche Erhebung der Gemeinde, Maleens Knoll.",
+      "english": "Here is also the highest natural elevation of the community at 16.6 meters above sea level, Maleens Knoll."
     },
     {
       "id": "s4",
-      "name": "Bürgerbüro",
-      "quote": "Sollten Sie noch keinen blauen EU-Behindertenparkausweis besitzen, können Sie diesen im Bürgerbüro beantragen.",
-      "english": "If you do not yet have a blue EU disabled parking permit, you can apply for one at the Citizens' Office."
+      "name": "Salzwiesenlandschaft",
+      "quote": "Vor dem Deich hat sich vom südlichen Ortsende bis hinter die Seebrücke eine Salzwiesenlandschaft ausgebildet.",
+      "english": "A salt marsh landscape has developed in front of the dike from the southern end of the village to behind the pier."
+    },
+    {
+      "id": "s5",
+      "name": "Seebrücke",
+      "quote": "1926 entstand die erste Seebrücke zwischen dem Ortsteil Bad und der vorgelagerten Sandbank; 1932 folgte der Anschluss an das Eisenbahnnetz durch die Verlängerung der Bahnstrecke von Husum nach Garding bis nach Ording.",
+      "english": "In 1926, the first pier was built between the Bad district and the offshore sandbank; in 1932, the connection to the railway network followed with the extension of the railway line from Husum to Garding as far as Ording."
+    },
+    {
+      "id": "s6",
+      "name": "Pfahlbauten",
+      "quote": "Wahrzeichen sind die Pfahlbauten am rund zwölf Kilometer langen Sandstrand und der Leuchtturm in Sankt Peter-Böhl.",
+      "english": "Landmarks are the pile dwellings on the approximately twelve-kilometer-long sandy beach and the lighthouse in Sankt Peter-Böhl."
+    },
+    {
+      "id": "s7",
+      "name": "Leuchtturm in Sankt Peter-Böhl",
+      "quote": "Wahrzeichen sind die Pfahlbauten am rund zwölf Kilometer langen Sandstrand und der Leuchtturm in Sankt Peter-Böhl.",
+      "english": "Landmarks are the pile dwellings on the approximately twelve-kilometer-long sandy beach and the lighthouse in Sankt Peter-Böhl."
+    },
+    {
+      "id": "s8",
+      "name": "Dünen-Therme",
+      "quote": "Sankt Peter-Ording verfügt über ein modernes Freizeit- und Erlebnisbad mit großer Saunalandschaft – die Dünen-Therme.",
+      "english": "Sankt Peter-Ording has a modern leisure and adventure pool with a large sauna area – the Dünen-Therme."
     }
   ],
   "days": [
     {
-      "title": "Village Center Culture and History",
+      "title": "Natural Landmarks and Heights",
       "stop_ids": [
         "s1",
         "s2",
-        "s3",
-        "s4"
+        "s3"
+      ]
+    },
+    {
+      "title": "Coastal Structures and Marshes",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Southern Landmarks and Wellness",
+      "stop_ids": [
+        "s7",
+        "s8"
       ]
     }
-  ]
+  ],
+  "_text_sha": "b32de07761e9693f9c8405e90130c0e2aef20315e8b17679ebd4a8edf218f818"
 }

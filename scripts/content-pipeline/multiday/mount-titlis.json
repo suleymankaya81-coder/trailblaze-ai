@@ -2,86 +2,79 @@
   "stops": [
     {
       "id": "s1",
-      "name": "TITLIS Tower",
-      "quote": "At over 3,000 meters above sea level, a new architectural landmark has taken shape, designed by the renowned architecture firm Herzog & de Meuron."
+      "name": "Titlis",
+      "quote": "Der Titlis ist ein 3238 m ü. M. hoher Berg in der Gebirgsgruppe der Urner Alpen und eines der beliebtesten Wintersport- und Ausflugsziele in der Zentralschweiz.",
+      "english": "The Titlis is a 3238 m above sea level mountain in the Uri Alps mountain group and one of the most popular winter sports and excursion destinations in Central Switzerland."
     },
     {
       "id": "s2",
-      "name": "Joseph's Restaurant",
-      "quote": "Joseph’s Restaurant in the spectacular TITLIS Tower at 3,020 metres is now open."
+      "name": "Titlisgletscher",
+      "quote": "Wie die meisten Alpengletscher ist auch der Titlisgletscher stark vom Schwund durch globale Klimaerwärmung betroffen.",
+      "english": "Like most Alpine glaciers, the Titlis Glacier is also heavily affected by shrinkage due to global climate warming."
     },
     {
       "id": "s3",
-      "name": "TITLIS Rotair",
-      "quote": "Experience the glacier panorama from a spectacular 360-degree perspective in the world's first revolving cable car!"
+      "name": "Klein Titlis",
+      "quote": "Im März 1967 wurde die Seilbahn zum Klein Titlis eröffnet.",
+      "english": "In March 1967, the cable car to Klein Titlis was opened."
     },
     {
       "id": "s4",
-      "name": "Ice Flyer",
-      "quote": "The experience of flying high above the deep-blue crevasses will change you."
+      "name": "Titlis Tower",
+      "quote": "Ende Mai 2026 eröffneten die Titlis Bergbahnen am Klein Titlis den «Titlis Tower».",
+      "english": "At the end of May 2026, the Titlis cable cars opened the \"Titlis Tower\" on Klein Titlis."
     },
     {
       "id": "s5",
-      "name": "Glacier Cave",
-      "quote": "Pioneers can explore the 5,000-year-old heart of the glacier and feel its energy with their own hands."
+      "name": "Gerschnialp",
+      "quote": "Von Engelberg aus verlaufen Seilbahnen in vier grossen Etappen über die Zwischenstationen Gerschnialp, Trübsee und Stand bis zur Bergstation Klein Titlis (3020 m) unter dem Nebengipfel (3061 m) des Titlis.",
+      "english": "From Engelberg, cable cars run in four major stages via the intermediate stations Gerschnialp, Trübsee, and Stand to the Klein Titlis mountain station (3020 m) below the sub-peak (3061 m) of the Titlis."
     },
     {
       "id": "s6",
-      "name": "Cliff Walk",
-      "quote": "Courage and a spirit of adventure are called for on Europe's highest suspension bridge."
+      "name": "Trübsee",
+      "quote": "Von Engelberg aus verlaufen Seilbahnen in vier grossen Etappen über die Zwischenstationen Gerschnialp, Trübsee und Stand bis zur Bergstation Klein Titlis (3020 m) unter dem Nebengipfel (3061 m) des Titlis.",
+      "english": "From Engelberg, cable cars run in four major stages via the intermediate stations Gerschnialp, Trübsee, and Stand to the Klein Titlis mountain station (3020 m) below the sub-peak (3061 m) of the Titlis."
     },
     {
       "id": "s7",
-      "name": "Berghotel Trübsee",
-      "quote": "Temporary facilities will also remain in place near the Berghotel Trübsee as part of the project."
+      "name": "Stand",
+      "quote": "Von Engelberg aus verlaufen Seilbahnen in vier grossen Etappen über die Zwischenstationen Gerschnialp, Trübsee und Stand bis zur Bergstation Klein Titlis (3020 m) unter dem Nebengipfel (3061 m) des Titlis.",
+      "english": "From Engelberg, cable cars run in four major stages via the intermediate stations Gerschnialp, Trübsee, and Stand to the Klein Titlis mountain station (3020 m) below the sub-peak (3061 m) of the Titlis."
     },
     {
       "id": "s8",
-      "name": "Lago Torbido",
-      "quote": "Located at Trübsee middle station, Lago Torbido offers authentic Italian cuisine, bags of style and plenty of charm!"
+      "name": "Titlis Cliff Walk",
+      "quote": "Im Dezember 2012 wurde knapp neben dem Klein Titlis auf 3041 m ü. M. der rund hundert Meter lange Titlis Cliff Walk eröffnet.",
+      "english": "In December 2012, the approximately one hundred meter long Titlis Cliff Walk was opened right next to Klein Titlis at 3041 m above sea level."
     },
     {
       "id": "s9",
-      "name": "Truebsee Self-Service",
-      "quote": "The newly renovated self-service restaurant at Truebsee offers high-quality food in a modern setting."
-    },
-    {
-      "id": "s10",
-      "name": "Atelier Hess",
-      "quote": "At 1,800 metres above sea level, we combine tradition and innovation to create a unique culinary experience."
-    },
-    {
-      "id": "s11",
-      "name": "Stand Ski Hut",
-      "quote": "Stand ski hut has a classic hut vibe!"
+      "name": "Ice-Flyer",
+      "quote": "Das andere Ende der Brücke führt zur Bergstation der Gletscher-Sesselbahn Ice-Flyer.",
+      "english": "The other end of the bridge leads to the mountain station of the Ice-Flyer glacier chairlift."
     }
   ],
   "days": [
     {
-      "title": "Glacier and Peak Architecture",
+      "title": "Summit and Glacier Experience",
       "stop_ids": [
         "s1",
         "s2",
-        "s3",
-        "s6"
+        "s8",
+        "s9"
       ]
     },
     {
-      "title": "Icy Adventures and Slopes",
+      "title": "Stations and Infrastructure",
       "stop_ids": [
+        "s3",
         "s4",
         "s5",
-        "s11"
-      ]
-    },
-    {
-      "title": "Trübsee Middle Station Dining",
-      "stop_ids": [
-        "s7",
-        "s8",
-        "s9",
-        "s10"
+        "s6",
+        "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "ab1458a50e5059552b7502ffe66633c7c464319a528e09bee12463a37ce05b3c"
 }

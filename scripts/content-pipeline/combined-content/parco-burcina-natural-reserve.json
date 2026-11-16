@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Piedmont",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Burcina"
+        "conca di rododendri",
+        "insediamento protostorico"
       ],
       "seo_title": "Parco Burcina Natural Reserve Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco Burcina Natural Reserve",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Botanical Splendor and Ancient Traces",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Burcina",
-                "stop_id": "parco-burcina-natural-reserve",
-                "detail": "The Burcina Park “Felice Piacenza” Nature Reserve is a protected, wooded, about 57 hectares wide area. It was established in 1980 with a law of the Piedmont Region Government. It is located within the municipalities of Pollone and Biella. The Municipality of Biella owns almost three quarters of the whole surface."
+                "name": "conca di rododendri",
+                "stop_id": "parco-burcina-natural-reserve--s3",
+                "detail": "The work of expanding the park was then carried forward by Felice Piacenza who dedicated over fifty years of his life to it, creating a spectacular rhododendron valley and implementing the creation of paths, roads and alleys in addition to the planting of further exotic species."
+              },
+              {
+                "name": "insediamento protostorico",
+                "stop_id": "parco-burcina-natural-reserve--s7",
+                "detail": "On the Bric Burcina the presence of a protohistoric settlement dating back to the Bronze and Iron Ages is also documented."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco Burcina Natural Reserve before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Bric Burcina Summit and Views",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "colle, o bric, Burcina",
+                "stop_id": "parco-burcina-natural-reserve--s1",
+                "detail": "The reserve rises on the hill, or bric, Burcina and handles the protection of the natural, environmental and landscape characteristics of the area."
+              },
+              {
+                "name": "Torre Martini",
+                "stop_id": "parco-burcina-natural-reserve--s6",
+                "detail": "The forest serves as a natural backdrop to the Burcina Park, whose peak is reachable via a road leading to the Martini Tower above."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco Burcina Natural Reserve before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Parco_Burcina_Natural_Reserve"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Riserva_naturale_del_Parco_Burcina_Felice_Piacenza"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:26:39.504453+00:00"
       }
     }
   }

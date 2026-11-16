@@ -4,11 +4,11 @@
       "id": "s1",
       "name": "Buchberg",
       "quote": "Der Buchberg ist ein 801 m ü. A. hoher Berg auf dem Gebiet der Gemeinde Mattsee im Bezirk Salzburg-Umgebung im Land Salzburg.",
-      "english": "The Buchberg is an 801 m above sea level high mountain in the area of the municipality of Mattsee in the Salzburg-Umgebung district in the state of Salzburg."
+      "english": "The Buchberg is an 801 m above sea level high mountain in the territory of the municipality of Mattsee in the district of Salzburg-Umgebung in the state of Salzburg."
     },
     {
       "id": "s2",
-      "name": "Aussichtsplateau am Gipfel",
+      "name": "Gipfel",
       "quote": "Von dem kleinen Aussichtsplateau am Gipfel sieht man das Salzburger Seengebiet, das Alpenvorland in Oberösterreich und die schroffen Nördlichen Kalkalpen.",
       "english": "From the small viewing plateau at the summit, one can see the Salzburg Lake District, the Alpine foothills in Upper Austria, and the rugged Northern Limestone Alps."
     },
@@ -16,31 +16,39 @@
       "id": "s3",
       "name": "bäuerlichen Weilern",
       "quote": "Die Umgebung ist eine ausschließlich naturnahe Kulturlandschaft, die sich vornehmlich aus ausgedehnten landwirtschaftlich, teilweise intensiv genutzten Wiesenflächen und bäuerlichen Weilern, die durch ein ländliches Wegenetz verbunden werden, zusammensetzt.",
-      "english": "The surrounding area is an exclusively near-natural cultural landscape, which consists primarily of extensive agricultural, partly intensively used meadows and rural hamlets, which are connected by a rural network of paths."
+      "english": "The surrounding area is an exclusively near-natural cultural landscape, which consists primarily of extensive agricultural, partly intensively used meadows and rural hamlets, which are connected by a rural path network."
     },
     {
       "id": "s4",
-      "name": "ländliches Wegenetz",
+      "name": "Waldgebiete",
       "quote": "Die dazwischenliegenden Waldgebiete zeigen eine naturnahe Artenzusammensetzung aus Buche, Tanne, Ahorn und Fichte und sind vegetationsmäßig dem Buchen-Tannenwald zuzuordnen, Fichtenmonokulturen treten jedoch vermehrt auf.",
       "english": "The intervening forest areas show a near-natural species composition of beech, fir, maple and spruce and are vegetationally assigned to the beech-fir forest, although spruce monocultures are increasingly occurring."
     },
     {
       "id": "s5",
-      "name": "Buchberggipfel",
+      "name": "Wegenetz",
       "quote": "Der Buchberggipfel selbst und die unmittelbare und mittelbare Umgebung sind durch ein dichtes Wegenetz erschlossen.",
-      "english": "The Buchberg summit itself and the immediate and indirect surroundings are developed by a dense network of paths."
+      "english": "The Buchberg summit itself and the immediate and indirect surroundings are made accessible by a dense network of paths."
+    },
+    {
+      "id": "s6",
+      "name": "Buchberggipfel",
+      "quote": "1970 kaufte der Naturschutzbund Österreich den Buchberggipfel mit 2,5 ha als Aussichtsberg und widmete damit Bauland zurück in Grünland.",
+      "english": "In 1970, the Austrian Nature Conservation Union bought the Buchberg summit with 2.5 ha as a lookout mountain and thus rezoned building land back into green space."
     }
   ],
   "days": [
     {
-      "title": "Buchberg Summit and Rural Landscapes",
+      "title": "Summit and Forest Exploration",
       "stop_ids": [
         "s1",
         "s2",
-        "s3",
         "s4",
-        "s5"
+        "s5",
+        "s6",
+        "s3"
       ]
     }
-  ]
+  ],
+  "_text_sha": "bf35d7efe63db8371cb0d3f22fb6f49357a9dcdcf859975b6669491cc33284c5"
 }

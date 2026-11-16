@@ -2,38 +2,79 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Lake Cauma",
-      "quote": "Lake Cauma with its crystal-clear, turquoise waters is a place of longing where nature and pleasure meet.",
-      "english": "Lake Cauma with its crystal-clear, turquoise waters is a place of longing where nature and pleasure meet."
+      "name": "Caumasee",
+      "quote": "Der Caumasee (rätoromanisch Lag la Cauma, manchmal auch Lai da Cauma) liegt im Grosswald Uaul Grond der Gemeinde Flims im Schweizer Kanton Graubünden.",
+      "english": "Lake Cauma (Romansh Lag la Cauma, sometimes also Lai da Cauma) is located in the Grosswald Uaul Grond forest in the municipality of Flims in the Swiss canton of Grisons."
     },
     {
       "id": "s2",
-      "name": "Rhine Gorge",
-      "quote": "The Rhine Gorge in Graubünden is one of the most majestic and diverse landscapes in the Alps.",
-      "english": "The Rhine Gorge in Graubünden is one of the most majestic and diverse landscapes in the Alps."
+      "name": "Standseilbahn",
+      "quote": "Er liegt mit jahreszeitlich schwankendem Pegel auf circa 997 m Höhe und wird mit einer eigens dazu gebauten Standseilbahn erschlossen.",
+      "english": "It is situated at an altitude of approximately 997 m with seasonally fluctuating water levels and is accessed by a specially built funicular."
     },
     {
       "id": "s3",
-      "name": "Uraltbuchenwald",
-      "quote": "You will experience an unforgettable hike with amazing information about the Surselva over the last 250 million years.",
-      "english": "You will experience an unforgettable hike with amazing information about the Surselva over the last 250 million years."
+      "name": "Lag Prau Pulté",
+      "quote": "In anderen Senken dieses grösstenteils bewaldeten, coupierten Geländes liegen auch die andern drei Flimser Seen: Lag Prau Pulté, Lag Prau Tuleritg und Crestasee.",
+      "english": "In other hollows of this largely forested, undulating terrain lie the other three Flims lakes: Lag Prau Pulté, Lag Prau Tuleritg and Crestasee."
     },
     {
       "id": "s4",
-      "name": "UNESCO World Heritage Swiss Tectonic Arena Sardona",
-      "quote": "Flims: This multifaceted holiday region boasts a top winter sports area, mountain lakes, the Rhine Gorge and the UNESCO World Heritage Swiss Tectonic Arena Sardona.",
-      "english": "Flims: This multifaceted holiday region boasts a top winter sports area, mountain lakes, the Rhine Gorge and the UNESCO World Heritage Swiss Tectonic Arena Sardona."
+      "name": "Lag Prau Tuleritg",
+      "quote": "In anderen Senken dieses grösstenteils bewaldeten, coupierten Geländes liegen auch die andern drei Flimser Seen: Lag Prau Pulté, Lag Prau Tuleritg und Crestasee.",
+      "english": "In other hollows of this largely forested, undulating terrain lie the other three Flims lakes: Lag Prau Pulté, Lag Prau Tuleritg and Crestasee."
+    },
+    {
+      "id": "s5",
+      "name": "Crestasee",
+      "quote": "In anderen Senken dieses grösstenteils bewaldeten, coupierten Geländes liegen auch die andern drei Flimser Seen: Lag Prau Pulté, Lag Prau Tuleritg und Crestasee.",
+      "english": "In other hollows of this largely forested, undulating terrain lie the other three Flims lakes: Lag Prau Pulté, Lag Prau Tuleritg and Crestasee."
+    },
+    {
+      "id": "s6",
+      "name": "La Mutta",
+      "quote": "Südwestlich des Caumasees liegt der höchste Hügel der Seeregion, die Anhöhe La Mutta (1236 m).",
+      "english": "Southwest of Lake Cauma lies the highest hill in the lake region, the La Mutta elevation (1236 m)."
+    },
+    {
+      "id": "s7",
+      "name": "Isla",
+      "quote": "Fast in der Mitte des Sees liegt eine rund 3000 Quadratmeter grosse, zum Teil bewaldete Insel, die als Isla bezeichnet wird.",
+      "english": "Almost in the middle of the lake lies a roughly 3000-square-meter, partly forested island known as Isla."
+    },
+    {
+      "id": "s8",
+      "name": "Badi",
+      "quote": "Im Hitzesommer 2018 tummelten sich an Spitzentagen bis zu 3000 Gäste auf den Liegewiesen der Badi.",
+      "english": "In the hot summer of 2018, up to 3000 guests flocked to the sunbathing lawns of the lido on peak days."
+    },
+    {
+      "id": "s9",
+      "name": "Restaurant",
+      "quote": "Seit Dezember 2024 ist das neue Restaurant auch in der Wintersaison geöffnet.",
+      "english": "Since December 2024, the new restaurant has also been open during the winter season."
     }
   ],
   "days": [
     {
-      "title": "Flims Nature and Landscapes",
+      "title": "Lake Cauma Discovery and Funicular",
       "stop_ids": [
         "s1",
         "s2",
+        "s7",
+        "s8",
+        "s9"
+      ]
+    },
+    {
+      "title": "Surrounding Peaks and Lakes",
+      "stop_ids": [
         "s3",
-        "s4"
+        "s4",
+        "s5",
+        "s6"
       ]
     }
-  ]
+  ],
+  "_text_sha": "0508799d163b8f574b037d38f5fa9165e32a8b9963167dd148c6d635b5c91917"
 }

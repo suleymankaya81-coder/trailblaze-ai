@@ -4,67 +4,63 @@
       "id": "s1",
       "name": "MuMAB - Museo Mare Antico e Biodiversità",
       "quote": "Da settembre 2020 in località Millepioppi a Salsomaggiore Terme ha sede il MuMAB - Museo Mare Antico e Biodiversità.",
-      "english": "Since September 2020, the MuMAB - Ancient Sea and Biodiversity Museum has been located in Millepioppi, Salsomaggiore Terme."
+      "english": "Since September 2020, in the locality of Millepioppi in Salsomaggiore Terme, the MuMAB - Museum of Ancient Sea and Biodiversity has been located."
     },
     {
       "id": "s2",
-      "name": "torrente Stirone",
-      "quote": "Gli scopi principali del parco sono la tutela e la salvaguardia dell'alveo del torrente Stirone e dell'ecosistema circostante, con una particolare attenzione alla protezione delle aree fossilifere affioranti lungo il corso del torrente stesso e nei siti dell'ex Riserva.",
-      "english": "The main goals of the park are the protection and preservation of the Stirone stream bed and the surrounding ecosystem, with particular attention to the protection of the fossiliferous areas emerging along the course of the stream itself and in the sites of the former Reserve."
+      "name": "Biblioteca Alfredo Martignoni",
+      "quote": "La sezione Biologica è dedicata alla biodiversità floreale e faunistica dell'attuale parco mentre la biblioteca Alfredo Martignoni raccoglie più di 5000 volumi a carattere scientifico-ambientale.",
+      "english": "The Biological section is dedicated to the floral and faunal biodiversity of the current park, while the Alfredo Martignoni library collects more than 5000 volumes of a scientific-environmental nature."
     },
     {
       "id": "s3",
       "name": "Museo dei fossili di Salsomaggiore",
       "quote": "Buona parte di questi reperti sono conservati nel Museo dei fossili di Salsomaggiore e nel Museo dei fossili di Fidenza.",
-      "english": "A large part of these findings are kept in the Fossil Museum of Salsomaggiore and in the Fossil Museum of Fidenza."
+      "english": "A good part of these artifacts are preserved in the Fossil Museum of Salsomaggiore and in the Fossil Museum of Fidenza."
     },
     {
       "id": "s4",
       "name": "Museo dei fossili di Fidenza",
       "quote": "Buona parte di questi reperti sono conservati nel Museo dei fossili di Salsomaggiore e nel Museo dei fossili di Fidenza.",
-      "english": "A large part of these findings are kept in the Fossil Museum of Salsomaggiore and in the Fossil Museum of Fidenza."
+      "english": "A good part of these artifacts are preserved in the Fossil Museum of Salsomaggiore and in the Fossil Museum of Fidenza."
     },
     {
       "id": "s5",
-      "name": "tre pioppi",
-      "quote": "Da non perdere i famosi \"tre pioppi\", alberi monumentali siti in località Scipione Ponte.",
-      "english": "Do not miss the famous \"three poplars\", monumental trees located in the locality of Scipione Ponte."
+      "name": "Torrente Stirone",
+      "quote": "La zona del greto del Torrente Stirone è occupata da specie erbacee per lo più annuali, quali il poligono nodoso, la salcerella, il meliloto bianco, l'erba viperina, e da elementi arbustivi, rappresentati prevalentemente da cespugli di salici.",
+      "english": "The riverbed area of the Stirone Torrent is occupied by mostly annual herbaceous species, such as knotted polygonum, purple loosestrife, white sweet clover, and viper's bugloss, and by shrubby elements, mainly represented by willow bushes."
     },
     {
       "id": "s6",
-      "name": "calanchi",
-      "quote": "Nell'area del Piacenziano, invece, i calanchi e i prati aridi sono il luogo perfetto per osservare le bellissime orchidee, oltre all'aglio orsino, Psoralea bituminosa, il mughetto, il dente di cane, il campanellino, la scilla bifolia, la pervinca minore, il tiglio selvatico, il maggiociondolo, il ciavardello, lo scotano e il pungitopo.",
-      "english": "In the Piacenziano area, however, the badlands and arid meadows are the perfect place to observe beautiful orchids, as well as wild garlic, Psoralea bituminosa, lily of the valley, dog's tooth violet, spring snowflake, alpine squill, lesser periwinkle, wild lime, common laburnum, wild service tree, smoke tree, and butcher's broom."
+      "name": "Tre pioppi",
+      "quote": "Da non perdere i famosi \"tre pioppi\", alberi monumentali siti in località Scipione Ponte.",
+      "english": "Do not miss the famous \"three poplars\", monumental trees located in the Scipione Ponte area."
     },
     {
       "id": "s7",
-      "name": "Museo geologico G. Cortesi di Castell'Arquato",
-      "quote": "Museo geologico G. Cortesi di Castell'Arquato",
-      "english": "G. Cortesi Geological Museum of Castell'Arquato"
+      "name": "Calanchi del Piacenziano",
+      "quote": "Nell'area del Piacenziano, invece, i calanchi e i prati aridi sono il luogo perfetto per osservare le bellissime orchidee, oltre all'aglio orsino, Psoralea bituminosa, il mughetto, il dente di cane, il campanellino, la scilla bifolia, la pervinca minore, il tiglio selvatico, il maggiociondolo, il ciavardello, lo scotano e il pungitopo.",
+      "english": "In the Piacenziano area, on the other hand, the gullies and dry meadows are the perfect place to observe beautiful orchids, in addition to wild garlic, Psoralea bituminosa, lily of the valley, dog's tooth violet, spring snowflake, Scilla bifolia, lesser periwinkle, wild lime, laburnum, wild service tree, smoke tree, and butcher's broom."
     }
   ],
   "days": [
     {
-      "title": "Stirone Valley Fossils and Nature",
+      "title": "Museums and Nature of Salsomaggiore",
       "stop_ids": [
+        "s1",
         "s2",
-        "s5",
-        "s1"
-      ]
-    },
-    {
-      "title": "Paleontology Collections of the Local Towns",
-      "stop_ids": [
         "s3",
-        "s4"
+        "s6"
       ]
     },
     {
-      "title": "Piacenziano Badlands and History",
+      "title": "Fossils and River Landscapes",
       "stop_ids": [
-        "s6",
+        "s4",
+        "s5",
         "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "8c30efe4d3797ea55f9916bce2fa977d263553b937c5fcd01bc30e0c58565604"
 }

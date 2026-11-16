@@ -3,20 +3,20 @@
     {
       "id": "s1",
       "name": "Monte Cucco",
-      "quote": "Il Monte Cucco di 1.566 m s.l.m. è la montagna più alta e più estesa del parco.",
-      "english": "Monte Cucco, at 1,566 m above sea level, is the highest and most extensive mountain in the park."
+      "quote": "Il Monte Cucco di 1.566 m s.l.m. è la montagna più alta e più estesa del parco; a seguire in ordine di altezza, tutte le cime superiori ai mille metri di quota: Balze degli Spicchi 1.520 m, monte Le Gronde 1.373 m, monte Motette 1.331 m, Colle D'Orlando 1.292 m, punta Sasso Pecoraro 1.262 m, monte Culumeo 1.261 m, Colle Lo Scoglio 1.243 m, monte Cielo 1.228 m, Montarone 1.208 m, monte Lo Spicchio 1.200 m, Corno del Catria 1.185 m, monte Testagrossa 1.175 m, monte Ranco Giovannello 1.158 m, monte Le Costarelle 1.153 m, cima Filetta 1.120 m, monte Foria 1.115 m, monte Aguzzo 1.110 m, monte Orneti 1.104 m, monte Forcello 1.087 m, monte Le Cese 1.025 m e monte Nofegge 1.015 m.",
+      "english": "Monte Cucco at 1,566 m a.s.l. is the highest and most extensive mountain in the park; followed in order of height, by all the peaks above one thousand meters of altitude: Balze degli Spicchi 1,520 m, mount Le Gronde 1,373 m, mount Motette 1,331 m, Colle D'Orlando 1,292 m, Sasso Pecoraro point 1,262 m, mount Culumeo 1,261 m, Colle Lo Scoglio 1,243 m, mount Cielo 1,228 m, Montarone 1,208 m, mount Lo Spicchio 1,200 m, Corno del Catria 1,185 m, mount Testagrossa 1,175 m, mount Ranco Giovannello 1,158 m, mount Le Costarelle 1,153 m, Cima Filetta 1,120 m, mount Foria 1,115 m, mount Aguzzo 1,110 m, mount Orneti 1,104 m, mount Forcello 1,087 m, mount Le Cese 1,025 m and mount Nofegge 1,015 m."
     },
     {
       "id": "s2",
-      "name": "Pian delle Macinare",
-      "quote": "L'altopiano di Pian delle Macinare rappresenta uno snodo principale di sentieri da escursionismo che si sviluppano per circa 100 km in tutto il parco.",
-      "english": "The Pian delle Macinare plateau represents a main hub of hiking trails that extend for about 100 km throughout the park."
+      "name": "Grotta di Monte Cucco",
+      "quote": "L'attrazione principale del parco è la Grotta di Monte Cucco, una delle grotte più estese d'Italia: meta di speleologi e ricercatori, nella quale è stata realizzata una parte attrezzata con luci, scale e passerelle, visitabile a livello turistico accompagnati da guide specializzate.",
+      "english": "The main attraction of the park is the Grotta di Monte Cucco, one of the most extensive caves in Italy: a destination for speleologists and researchers, in which an area equipped with lights, stairs and walkways has been created, visitable for tourism accompanied by specialized guides."
     },
     {
       "id": "s3",
-      "name": "Grotta di Monte Cucco",
-      "quote": "L'attrazione principale del parco è la Grotta di Monte Cucco, una delle grotte più estese d'Italia.",
-      "english": "The main attraction of the park is the Grotta di Monte Cucco, one of the most extensive caves in Italy."
+      "name": "Pian delle Macinare",
+      "quote": "L'altopiano di Pian delle Macinare rappresenta uno snodo principale di sentieri da escursionismo che si sviluppano per circa 100 km in tutto il parco.",
+      "english": "The Pian delle Macinare plateau represents a main hub for hiking trails that develop for about 100 km throughout the park."
     },
     {
       "id": "s4",
@@ -27,44 +27,45 @@
     {
       "id": "s5",
       "name": "Val di Ranco",
-      "quote": "È inoltre localizzato il paese di Val di Ranco, piccola località turistica situata a 1.000 m di quota.",
-      "english": "Furthermore, the village of Val di Ranco is located there, a small tourist resort situated at an altitude of 1,000 m."
+      "quote": "è inoltre localizzato il paese di Val di Ranco, piccola località turistica situata a 1.000 m di quota.",
+      "english": "the village of Val di Ranco is also located there, a small tourist resort situated at 1,000 m altitude."
     },
     {
       "id": "s6",
-      "name": "Corno del Catria",
-      "quote": "I punti di nidificazione si trovano all'estremo nord del parco, sulle pareti del Corno del Catria.",
-      "english": "Nesting sites are found at the far north of the park, on the walls of the Corno del Catria."
+      "name": "Grotta di Santa Agnese",
+      "quote": "Di grande fascino è anche la Grotta di Santa Agnese, un antro di ragguardevoli dimensioni facilmente raggiungibile a piedi, in cui si fondono storia e leggenda.",
+      "english": "Of great charm is also the Grotta di Santa Agnese, a cavern of considerable size easily reachable on foot, where history and legend merge."
     },
     {
       "id": "s7",
-      "name": "Grotta di Santa Agnese",
-      "quote": "Di grande fascino è anche la Grotta di Santa Agnese, un antro di ragguardevoli dimensioni facilmente raggiungibile a piedi, in cui si fondono storia e leggenda.",
-      "english": "Also of great charm is the Grotta di Santa Agnese, a cavern of considerable size easily reachable on foot, where history and legend merge."
+      "name": "Corno del Catria",
+      "quote": "Raramente vengono avvistate aquile (ma non è proprio raro avvistare falchi) i punti di nidificazione si trovano all'estremo nord del parco, sulle pareti del Corno del Catria.",
+      "english": "Eagles are rarely spotted (but it is not quite rare to spot hawks) the nesting sites are located at the far north of the park, on the walls of Corno del Catria."
     }
   ],
   "days": [
     {
-      "title": "Central Massif and Caves",
+      "title": "Central Massif and Caving",
       "stop_ids": [
         "s1",
         "s2",
-        "s3"
+        "s6"
       ]
     },
     {
-      "title": "Canyons and Southern Villages",
+      "title": "Plateaus and Northern Canyons",
       "stop_ids": [
-        "s4",
-        "s5"
+        "s3",
+        "s4"
       ]
     },
     {
-      "title": "Northern Wilderness and Peaks",
+      "title": "Northern Peaks and Mountain Resorts",
       "stop_ids": [
-        "s6",
+        "s5",
         "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "baf9e669a6fd5620dee100d2ff87804c2838868687d9faa12e242a292ef19272"
 }

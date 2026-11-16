@@ -2,64 +2,65 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Porto Selvaggio",
-      "quote": "La costa è rocciosa e frastagliata, e caratterizzata da pinete e macchia mediterranea.",
-      "english": "The coast is rocky and jagged, and characterized by pine forests and Mediterranean scrub."
+      "name": "palude del Capitano",
+      "quote": "Comprende la zona del parco naturale regionale attrezzato di \"Porto Selvaggio - Torre Uluzzo\" (istituito nel 1980) e la palude del Capitano (classificata come area naturale nel 1997).",
+      "english": "It includes the area of the regional natural equipped park of \"Porto Selvaggio - Torre Uluzzo\" (established in 1980) and the Captain's Marsh (classified as a natural area in 1997)."
     },
     {
       "id": "s2",
-      "name": "Palude del Capitano",
-      "quote": "Comprende la zona del parco naturale regionale attrezzato di \"Porto Selvaggio - Torre Uluzzo\" (istituito nel 1980) e la palude del Capitano (classificata come area naturale nel 1997).",
-      "english": "It includes the area of the equipped regional natural park of \"Porto Selvaggio - Torre Uluzzo\" (established in 1980) and the Capitano marsh (classified as a natural area in 1997)."
+      "name": "Torre dell'Alto",
+      "quote": "Lungo il litorale sono dislocate la Torre dell'Alto, la Torre Uluzzo e la Torre Inserraglio.",
+      "english": "Along the coastline are located the Tower of the High, the Uluzzo Tower and the Inserraglio Tower."
     },
     {
       "id": "s3",
-      "name": "Torre dell'Alto",
+      "name": "Torre Uluzzo",
       "quote": "Lungo il litorale sono dislocate la Torre dell'Alto, la Torre Uluzzo e la Torre Inserraglio.",
-      "english": "Located along the coastline are the Torre dell'Alto, the Torre Uluzzo and the Torre Inserraglio."
+      "english": "Along the coastline are located the Tower of the High, the Uluzzo Tower and the Inserraglio Tower."
     },
     {
       "id": "s4",
-      "name": "Torre Uluzzo",
+      "name": "Torre Inserraglio",
       "quote": "Lungo il litorale sono dislocate la Torre dell'Alto, la Torre Uluzzo e la Torre Inserraglio.",
-      "english": "Located along the coastline are the Torre dell'Alto, the Torre Uluzzo and the Torre Inserraglio."
+      "english": "Along the coastline are located the Tower of the High, the Uluzzo Tower and the Inserraglio Tower."
     },
     {
       "id": "s5",
-      "name": "Torre Inserraglio",
-      "quote": "Lungo il litorale sono dislocate la Torre dell'Alto, la Torre Uluzzo e la Torre Inserraglio.",
-      "english": "Located along the coastline are the Torre dell'Alto, the Torre Uluzzo and the Torre Inserraglio."
+      "name": "grotta del Cavallo",
+      "quote": "Nel territorio del parco si trova anche la grotta del Cavallo, una grotta naturale costiera calcarea, parte di un sistema più ampio di caverne naturali ubicate nella baia di Uluzzo.",
+      "english": "In the territory of the park there is also the Horse Cave, a natural coastal limestone cave, part of a wider system of natural caverns located in the bay of Uluzzo."
     },
     {
       "id": "s6",
-      "name": "grotta del Cavallo",
+      "name": "baia di Uluzzo",
       "quote": "Nel territorio del parco si trova anche la grotta del Cavallo, una grotta naturale costiera calcarea, parte di un sistema più ampio di caverne naturali ubicate nella baia di Uluzzo.",
-      "english": "Inside the park territory one also finds the Cavallo cave, a natural coastal limestone cave, part of a wider system of natural caverns located in the bay of Uluzzo."
+      "english": "In the territory of the park there is also the Horse Cave, a natural coastal limestone cave, part of a wider system of natural caverns located in the bay of Uluzzo."
     },
     {
       "id": "s7",
-      "name": "baia di Uluzzo",
-      "quote": "Nel territorio del parco si trova anche la grotta del Cavallo, una grotta naturale costiera calcarea, parte di un sistema più ampio di caverne naturali ubicate nella baia di Uluzzo.",
-      "english": "Inside the park territory one also finds the Cavallo cave, a natural coastal limestone cave, part of a wider system of natural caverns located in the bay of Uluzzo."
+      "name": "Portoselvaggio",
+      "quote": "Il rimboschimento di Portoselvaggio fu effettuato dal Corpo Forestale dello Stato a partire dagli anni 1952-54 su un'estensione di 102 ettari nell'ambito di un progetto che aveva come scopo il recupero di 1.500 ettari di terreni denudati e pietrosi situati lungo la costa in provincia di Lecce.",
+      "english": "The reforestation of Portoselvaggio was carried out by the State Forestry Corps starting from the years 1952-54 on an area of 102 hectares as part of a project aimed at recovering 1,500 hectares of denuded and stony land located along the coast in the province of Lecce."
     }
   ],
   "days": [
     {
-      "title": "Coastal Towers and Bays",
+      "title": "Coastal Towers and Marshes",
       "stop_ids": [
         "s1",
-        "s3",
-        "s4",
-        "s7"
+        "s2",
+        "s4"
       ]
     },
     {
-      "title": "Caves and Wetlands",
+      "title": "Caves and Bays of Uluzzo",
       "stop_ids": [
-        "s2",
+        "s3",
         "s5",
-        "s6"
+        "s6",
+        "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "7c93ae3b66389f0721b0e416e9fb85c11040df0f16d986bfdcdcf34d8a2d8489"
 }

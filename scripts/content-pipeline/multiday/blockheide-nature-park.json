@@ -2,38 +2,79 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Pyramide",
-      "quote": "Riesige Granitblöcke, teilweise originell geformt wie z.B. Pyramide oder Brotlaib, zum Teil als Wackelsteine ausgeprägt, sind in die Landschaft eingestreut.",
-      "english": "Huge granite blocks, some uniquely shaped like the Pyramid or Loaf of Bread, partially formed as rocking stones, are scattered throughout the landscape."
+      "name": "Aussichtsturm",
+      "quote": "Über dem Wasserbehälter wurde 2003 ein 23,2 m hoher hölzerner Aussichtsturm errichtet, der einen guten Blick über den Naturpark bis über die nahe gelegene Grenze nach Tschechien bietet.",
+      "english": "A 23.2 m high wooden observation tower was built over the water reservoir in 2003, offering a good view over the nature park as far as the nearby border with the Czech Republic."
     },
     {
       "id": "s2",
-      "name": "Brotlaib",
-      "quote": "Riesige Granitblöcke, teilweise originell geformt wie z.B. Pyramide oder Brotlaib, zum Teil als Wackelsteine ausgeprägt, sind in die Landschaft eingestreut.",
-      "english": "Huge granite blocks, some uniquely shaped like the Pyramid or Loaf of Bread, partially formed as rocking stones, are scattered throughout the landscape."
+      "name": "Informationszentrum",
+      "quote": "Im Naturpark gibt es eine Ausstellung über die Entstehung der Heidelandschaft mit ihren Granitrestlingen sowie eine Dioramen-Schau unter dem Titel „Die Geburt der Wackelsteine“ zu sehen, die im ehemaligen 1908 errichteten Wasserreservoir untergebracht sind, sowie ein angeschlossenes Informationszentrum.",
+      "english": "In the nature park, there is an exhibition on the formation of the heath landscape with its granite boulders and a diorama show entitled \"The Birth of the Rocking Stones\" housed in the former water reservoir built in 1908, as well as an attached information center."
     },
     {
       "id": "s3",
-      "name": "Wackelsteine",
-      "quote": "Riesige Granitblöcke, teilweise originell geformt wie z.B. Pyramide oder Brotlaib, zum Teil als Wackelsteine ausgeprägt, sind in die Landschaft eingestreut.",
-      "english": "Huge granite blocks, some uniquely shaped like the Pyramid or Loaf of Bread, partially formed as rocking stones, are scattered throughout the landscape."
+      "name": "Geologisches Freilichtmuseum",
+      "quote": "Es gibt im Kirchenwald ein geologisches Freilichtmuseum, in dem verschiedene Granit-, Gneis-, Marmor- und Magmatitformen aus dem Waldviertel zu sehen sind, einen Natur-Kinderspielplatz mit Steinlabyrinth und einen Picknickplatz.",
+      "english": "In the Kirchenwald forest there is a geological open-air museum where various forms of granite, gneiss, marble and magmatite from the Waldviertel can be seen, as well as a natural children's playground with a stone labyrinth and a picnic area."
     },
     {
       "id": "s4",
-      "name": "Marienkäferweg",
-      "quote": "Der Marienkäferweg führt durch bäuerliche Kulturlandschaft mit Feldern, Wiesen, Büheln und Hecken.",
-      "english": "The Ladybug Trail leads through a rural cultural landscape with fields, meadows, mounds, and hedges."
+      "name": "Steinlabyrinth",
+      "quote": "Es gibt im Kirchenwald ein geologisches Freilichtmuseum, in dem verschiedene Granit-, Gneis-, Marmor- und Magmatitformen aus dem Waldviertel zu sehen sind, einen Natur-Kinderspielplatz mit Steinlabyrinth und einen Picknickplatz.",
+      "english": "In the Kirchenwald forest there is a geological open-air museum where various forms of granite, gneiss, marble and magmatite from the Waldviertel can be seen, as well as a natural children's playground with a stone labyrinth and a picnic area."
+    },
+    {
+      "id": "s5",
+      "name": "Christophsstein",
+      "quote": "Einige der Steingebilde sind zusätzlich noch vom Land Niederösterreich als Naturdenkmale ausgewiesen (Vgl. Liste der Naturdenkmäler im Bezirk Gmünd): Christophsstein ().",
+      "english": "Some of the stone formations are also designated as natural monuments by the state of Lower Austria (cf. list of natural monuments in the Gmünd district): Christophsstein ()."
+    },
+    {
+      "id": "s6",
+      "name": "Teufelsbett",
+      "quote": "Einige der Steingebilde sind zusätzlich noch vom Land Niederösterreich als Naturdenkmale ausgewiesen (Vgl. Liste der Naturdenkmäler im Bezirk Gmünd): Teufelsbett ().",
+      "english": "Some of the stone formations are also designated as natural monuments by the state of Lower Austria (cf. list of natural monuments in the Gmünd district): Teufelsbett ()."
+    },
+    {
+      "id": "s7",
+      "name": "Teufelsbrotlaib",
+      "quote": "Einige der Steingebilde sind zusätzlich noch vom Land Niederösterreich als Naturdenkmale ausgewiesen (Vgl. Liste der Naturdenkmäler im Bezirk Gmünd): Teufelsbrotlaib ().",
+      "english": "Some of the stone formations are also designated as natural monuments by the state of Lower Austria (cf. list of natural monuments in the Gmünd district): Teufelsbrotlaib ()."
+    },
+    {
+      "id": "s8",
+      "name": "GranitkulTOUR",
+      "quote": "Zur Erkundung des Gebietes wurden Themenwege wie die GranitkulTOUR, MythologieTOUR, oder die LandschaftskulTOUR eingerichtet.",
+      "english": "Themed trails such as the GranitkulTOUR, MythologieTOUR, or the LandschaftskulTOUR were established to explore the area."
+    },
+    {
+      "id": "s9",
+      "name": "Meridianweg",
+      "quote": "Der Meridianweg folgt dem 15. östlichen Meridian.",
+      "english": "The Meridian Trail follows the 15th east meridian."
     }
   ],
   "days": [
     {
-      "title": "Granite Formations and Cultural Trails",
+      "title": "Visitor Center and Forest Museum",
       "stop_ids": [
         "s1",
         "s2",
         "s3",
         "s4"
       ]
+    },
+    {
+      "title": "Stone Formations and Themed Trails",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9"
+      ]
     }
-  ]
+  ],
+  "_text_sha": "731047be844aaf7efd7fb9ea454923764b2ee3ca92f80507de5aa235ef30d63f"
 }

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Basilicata",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Appennino Lucano - Val d'Agri - Lagonegrese National Park"
+        "Volturino",
+        "abetina di Laurenzana"
       ],
       "seo_title": "Appennino Lucano - Val d'Agri - Lagonegrese National Park Vi"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Appennino Lucano - Val d'Agri - Lagonegrese National Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Northern Peaks and Forests",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Appennino Lucano - Val d'Agri - Lagonegrese National Park",
-                "stop_id": "appennino-lucano-val-d-agri-lagonegrese-national-park",
-                "detail": "The Appennino Lucano - Val d'Agri - Lagonegrese National Park (Italian: Parco Nazionale dell'Appennino Lucano - Val d'Agri - Lagonegrese) is an Italian national park located in the province of Potenza of Basilicata region."
+                "name": "Volturino",
+                "stop_id": "appennino-lucano-val-d-agri-lagonegrese-national-park--s1",
+                "detail": "Its perimeter stands out over a large part of the Lucanian Apennines, along an articulated border that extends from the peaks of the Volturino and Pierfaone mountains to the Sirino massif, which includes some of the highest peaks of the southern Apennines."
+              },
+              {
+                "name": "abetina di Laurenzana",
+                "stop_id": "appennino-lucano-val-d-agri-lagonegrese-national-park--s6",
+                "detail": "The residual fir forest of Laurenzana is worth highlighting."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Appennino Lucano - Val d'Agri - Lagonegrese National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "The Agri Valley Basin",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "massiccio della Maddalena",
+                "stop_id": "appennino-lucano-val-d-agri-lagonegrese-national-park--s4",
+                "detail": "Between these two complexes, imposing and jagged, the gentler peaks of the Maddalena massif open out like a fan, a mountain range with a gentle and lower profile that encloses the upper valley of the Agri river."
+              },
+              {
+                "name": "fiume Agri",
+                "stop_id": "appennino-lucano-val-d-agri-lagonegrese-national-park--s7",
+                "detail": "Among the various animals present, the wolf, the deer, the Italian roe deer, the wild boar and the otter along the Agri river should be noted in particular."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Appennino Lucano - Val d'Agri - Lagonegrese National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Appennino_Lucano_-_Val_d%27Agri_-_Lagonegrese_National_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_nazionale_dell%27Appennino_Lucano_Val_d%27Agri_Lagonegrese"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:23:18.760947+00:00"
       }
     }
   }

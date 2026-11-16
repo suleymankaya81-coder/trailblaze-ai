@@ -2,24 +2,39 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Wupper river",
-      "quote": "The area stretches from Cologne (west) to the Sauerland (east) or from the Wupper river (north) and to the Sieg river (south).",
-      "english": "The area stretches from Cologne (west) to the Sauerland (east) or from the Wupper river (north) and to the Sieg river (south)."
+      "name": "Cronenberg",
+      "quote": "2006 wurde er erweitert und umfasst nun auch den Wuppertaler Stadtteil Cronenberg und weitere Teile des Wuppertaler Südens bis zur Wupper sowie einige Stadtteile aus Solingen und Remscheid und die kreisangehörige Stadt Leichlingen (Rheinland).",
+      "english": "In 2006 it was expanded and now also includes the Wuppertal district of Cronenberg and other parts of the south of Wuppertal as far as the Wupper, as well as some districts from Solingen and Remscheid and the town of Leichlingen (Rhineland)."
     },
     {
       "id": "s2",
-      "name": "Sieg river",
-      "quote": "The area stretches from Cologne (west) to the Sauerland (east) or from the Wupper river (north) and to the Sieg river (south).",
-      "english": "The area stretches from Cologne (west) to the Sauerland (east) or from the Wupper river (north) and to the Sieg river (south)."
+      "name": "Wupper",
+      "quote": "2006 wurde er erweitert und umfasst nun auch den Wuppertaler Stadtteil Cronenberg und weitere Teile des Wuppertaler Südens bis zur Wupper sowie einige Stadtteile aus Solingen und Remscheid und die kreisangehörige Stadt Leichlingen (Rheinland).",
+      "english": "In 2006 it was expanded and now also includes the Wuppertal district of Cronenberg and other parts of the south of Wuppertal as far as the Wupper, as well as some districts from Solingen and Remscheid and the town of Leichlingen (Rhineland)."
+    },
+    {
+      "id": "s3",
+      "name": "Leichlingen (Rheinland)",
+      "quote": "2006 wurde er erweitert und umfasst nun auch den Wuppertaler Stadtteil Cronenberg und weitere Teile des Wuppertaler Südens bis zur Wupper sowie einige Stadtteile aus Solingen und Remscheid und die kreisangehörige Stadt Leichlingen (Rheinland).",
+      "english": "In 2006 it was expanded and now also includes the Wuppertal district of Cronenberg and other parts of the south of Wuppertal as far as the Wupper, as well as some districts from Solingen and Remscheid and the town of Leichlingen (Rhineland)."
+    },
+    {
+      "id": "s4",
+      "name": "Mühlen",
+      "quote": "Die frühen Spuren der Industrialisierung (Mühlen etc.) sind Gegenstand der Arbeit.",
+      "english": "The early traces of industrialization (mills etc.) are the subject of the work."
     }
   ],
   "days": [
     {
-      "title": "Northern and Southern River Borders",
+      "title": "Northern Districts and Waterways",
       "stop_ids": [
         "s1",
-        "s2"
+        "s2",
+        "s3",
+        "s4"
       ]
     }
-  ]
+  ],
+  "_text_sha": "d4e94d359077a06283d62f86942367d12848eb357f12235de43524b3013ffe1c"
 }

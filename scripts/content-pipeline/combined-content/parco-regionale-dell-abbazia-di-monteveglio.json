@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Emilia Romagna",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco regionale dell'Abbazia di Monteveglio"
+        "abbazia di Monteveglio",
+        "calanchi",
+        "vigneti e coltivi"
       ],
       "seo_title": "Parco regionale dell' Abbazia di Monteveglio Visit Guide"
     },
@@ -32,16 +34,54 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco regionale dell' Abbazia di Monteveglio",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Historical Center and Natural Landscapes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco regionale dell'Abbazia di Monteveglio",
-                "stop_id": "parco-regionale-dell-abbazia-di-monteveglio",
-                "detail": "The regional park of the Abbey of Monteveglio is a protected natural area of Emilia-Romagna established in 1995."
+                "name": "abbazia di Monteveglio",
+                "stop_id": "parco-regionale-dell-abbazia-di-monteveglio--s1",
+                "detail": "The park coincides with the site of community interest Monteveglio Abbey (IT40500016)."
+              },
+              {
+                "name": "calanchi",
+                "stop_id": "parco-regionale-dell-abbazia-di-monteveglio--s4",
+                "detail": "Worthy of note are the badlands, which host a particular flora: some herbs are present such as the goldilocks aster (Aster linosyris) and to a lesser extent the wild carrot, the clay scorzonera (Podospermum canum);"
+              },
+              {
+                "name": "vigneti e coltivi",
+                "stop_id": "parco-regionale-dell-abbazia-di-monteveglio--s6",
+                "detail": "The park area, strongly anthropized and characterized by vineyards and cultivated land, alternates with an area covered by woods, prairies, and uncultivated land."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco regionale dell' Abbazia di Monteveglio before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Woods and Waterways",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "zone boschive",
+                "stop_id": "parco-regionale-dell-abbazia-di-monteveglio--s2",
+                "detail": "Numerous small mammals are present in the Park: the European hedgehog is found almost everywhere, while the red squirrel, the hazel dormouse, the dormouse and the bank vole live only in the wooded areas;"
+              },
+              {
+                "name": "sponde dei torrenti",
+                "stop_id": "parco-regionale-dell-abbazia-di-monteveglio--s3",
+                "detail": "the European hare and the common vole frequent the meadows and fields and the European water vole, an excellent swimmer, makes its den on the banks of the torrents."
+              },
+              {
+                "name": "ristagni tra i calanchi",
+                "stop_id": "parco-regionale-dell-abbazia-di-monteveglio--s5",
+                "detail": "in the stagnant waters among the badlands one finds coltsfoot (Tussilago farfara), woody fleabane (Dittrichia viscosa), and yellow-wort (Blackstonia perfoliata);"
+              },
+              {
+                "name": "fiumi",
+                "stop_id": "parco-regionale-dell-abbazia-di-monteveglio--s7",
+                "detail": "Among the birds of prey, the Kestrel and the Common Buzzard should be mentioned, while along the rivers live Grey Herons and Night Herons."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco regionale dell' Abbazia di Monteveglio before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +119,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_regionale_dell%27Abbazia_di_Monteveglio"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_regionale_dell%27Abbazia_di_Monteveglio"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:32:04.966694+00:00"
       }
     }
   }

@@ -4,36 +4,51 @@
       "id": "s1",
       "name": "lama Balice",
       "quote": "Il parco regionale prende il nome dalla lama Balice che, con i suoi 37 km di lunghezza costituisce una delle più lunghe lame presenti nella città metropolitana di Bari.",
-      "english": "The regional park takes its name from the Balice blade which, with its 37 km length, constitutes one of the longest blades present in the metropolitan city of Bari."
+      "english": "The regional park takes its name from the lama Balice which, with its 37 km of length, constitutes one of the longest 'lame' present in the metropolitan city of Bari."
     },
     {
       "id": "s2",
       "name": "Tiflis",
       "quote": "Il torrente che vi scorre era un tempo chiamato Tiflis: normalmente in secca, in occasione di precipitazioni più abbondanti si gonfia per l'apporto di acqua piovana.",
-      "english": "The stream that flows there was once called Tiflis: normally dry, during more abundant rainfall it swells due to the contribution of rainwater."
+      "english": "The stream that flows there was once called Tiflis: normally dry, on the occasion of more abundant rainfall it swells due to the contribution of rainwater."
     },
     {
       "id": "s3",
-      "name": "Villa Framarino",
-      "quote": "Al suo interno è situata Villa Framarino, un'antica masseria, che dopo i recenti restauri è diventata sede del primo centro di documentazione barese sulla conservazione della natura.",
-      "english": "Villa Framarino is located inside it, an ancient farmhouse, which after recent restorations has become the site of the first documentation center in Bari on nature conservation."
+      "name": "cavità naturali",
+      "quote": "La natura carsica del territorio è evidente per la presenza di numerose cavità naturali alle quali si aggiunsero le caverne scavate dall'uomo, che hanno restituito resti di epoca protostorica.",
+      "english": "The karst nature of the territory is evident from the presence of numerous natural cavities to which were added the caverns excavated by man, which have returned remains from the protohistoric era."
     },
     {
       "id": "s4",
+      "name": "Villa Framarino",
+      "quote": "Al suo interno è situata Villa Framarino, un'antica masseria, che dopo i recenti restauri è diventata sede del primo centro di documentazione barese sulla conservazione della natura.",
+      "english": "Inside it is situated Villa Framarino, an ancient farmhouse, which after recent restorations has become the headquarters of the first documentation center in Bari on nature conservation."
+    },
+    {
+      "id": "s5",
       "name": "grotte di Chianchiarello",
       "quote": "Vi sono delle grotte, le \"grotte di Chianchiarello\", che rappresentano delle testimonianze sulla vita paleolitica della città.",
-      "english": "There are some caves, the \"Chianchiarello caves\", which represent evidence of the Paleolithic life of the city."
+      "english": "There are some caves, the \"caves of Chianchiarello\", which represent evidence of the Paleolithic life of the city."
+    },
+    {
+      "id": "s6",
+      "name": "cava",
+      "quote": "Nella vicina cava, ormai dismessa, sono state rilevate orme di dinosauri.",
+      "english": "In the nearby quarry, now decommissioned, dinosaur footprints have been detected."
     }
   ],
   "days": [
     {
-      "title": "Natural and Historical Exploration of Lama Balice",
+      "title": "Natural Valleys and Ancient History",
       "stop_ids": [
         "s1",
         "s2",
         "s3",
-        "s4"
+        "s4",
+        "s5",
+        "s6"
       ]
     }
-  ]
+  ],
+  "_text_sha": "f97220e3d41644ca7fce621a7095f345317dc5d11f916a13653fc3124e693144"
 }

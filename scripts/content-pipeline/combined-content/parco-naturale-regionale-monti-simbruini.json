@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lazio",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco naturale regionale Monti Simbruini"
+        "monte Viglio",
+        "Camposecco"
       ],
       "seo_title": "Parco naturale regionale Monti Simbruini Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco naturale regionale Monti Simbruini",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "High Peaks and Plateau Sights",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco naturale regionale Monti Simbruini",
-                "stop_id": "parco-naturale-regionale-monti-simbruini",
-                "detail": "The Regional Natural Park Monti Simbruini is a natural area protected among the largest natural reserves and parks of the Lazio Region, with peaks reaching and exceeding 2100 m asl."
+                "name": "monte Viglio",
+                "stop_id": "parco-naturale-regionale-monti-simbruini--s1",
+                "detail": "The northern limit of the largest protected area in the Lazio Region coincides with the border of the Abruzzo Region, while to the south-west it follows the crest of Monte Viglio, the highest peak in the Park (2156 meters), then descends towards Pratiglio S.Onofrio following the valley down to Capodacqua, an area downstream from Trevi nel Lazio."
+              },
+              {
+                "name": "Camposecco",
+                "stop_id": "parco-naturale-regionale-monti-simbruini--s3",
+                "detail": "It is typical of the Simbruini to encounter wide high-altitude plateaus (Camposecco, Campaegli, Fondi di Jenne, Campo della Pietra), which reach 500 hectares in surface area, and where one can observe the abundant presence of \"holes\" in the ground shaped like large funnels, namely sinkholes or swallow holes."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale regionale Monti Simbruini before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "River Valleys and Local Villages",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "fiume Aniene",
+                "stop_id": "parco-naturale-regionale-monti-simbruini--s2",
+                "detail": "From that point up to Subiaco the border corresponds with the course of the Aniene river."
+              },
+              {
+                "name": "Vallepietra",
+                "stop_id": "parco-naturale-regionale-monti-simbruini--s7",
+                "detail": "Among the birds, the golden eagle is of notable importance (especially near Vallepietra) in addition to the peregrine falcon (chosen as the symbol of the park) on the rocky walls."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco naturale regionale Monti Simbruini before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_Monti_Simbruini"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_Monti_Simbruini"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:31:18.731101+00:00"
       }
     }
   }

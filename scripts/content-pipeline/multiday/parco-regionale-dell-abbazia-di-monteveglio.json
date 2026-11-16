@@ -4,36 +4,63 @@
       "id": "s1",
       "name": "abbazia di Monteveglio",
       "quote": "Il parco coincide con il sito di interesse comunitario abbazia di Monteveglio (IT40500016).",
-      "english": "The park coincides with the community interest site Abbey of Monteveglio (IT40500016)."
+      "english": "The park coincides with the site of community interest Monteveglio Abbey (IT40500016)."
     },
     {
       "id": "s2",
       "name": "zone boschive",
-      "quote": "Nel Parco sono presenti numerosi piccoli mammiferi: il Riccio europeo lo si trova quasi ovunque, mentre lo Scoiattolo rosso, il Ghiro, il Moscardino e l'Arvicola rossastra vivono solo nelle zone boschive; la Lepre europea e l'Arvicola campestre frequentano i prati e i campi e l'Arvicola terrestre, ottima nuotatrice, fa la tana sulle sponde dei torrenti.",
-      "english": "In the Park there are numerous small mammals: the European hedgehog is found almost everywhere, while the red squirrel, the dormouse, the hazel dormouse and the bank vole live only in the wooded areas; the European hare and the field vole frequent the meadows and fields and the water vole, an excellent swimmer, makes its den on the banks of the streams."
+      "quote": "Nel Parco sono presenti numerosi piccoli mammiferi: il Riccio europeo lo si trova quasi ovunque, mentre lo Scoiattolo rosso, il Ghiro, il Moscardino e l'Arvicola rossastra vivono solo nelle zone boschive;",
+      "english": "Numerous small mammals are present in the Park: the European hedgehog is found almost everywhere, while the red squirrel, the hazel dormouse, the dormouse and the bank vole live only in the wooded areas;"
     },
     {
       "id": "s3",
       "name": "sponde dei torrenti",
-      "quote": "L'avifauna è molto diffusa: numerosi Passeriformi (Usignolo, Capinera Scricciolo, Pettirosso, Merlo, Fringuello, Luì piccolo), tipici agli ambienti forestali italiani, vivono e nidificano nella zona.",
-      "english": "The birdlife is very widespread: numerous Passerines (Nightingale, Blackcap, Wren, Robin, Blackbird, Chaffinch, Chiffchaff), typical of Italian forest environments, live and nest in the area."
+      "quote": "la Lepre europea e l'Arvicola campestre frequentano i prati e i campi e l'Arvicola terrestre, ottima nuotatrice, fa la tana sulle sponde dei torrenti.",
+      "english": "the European hare and the common vole frequent the meadows and fields and the European water vole, an excellent swimmer, makes its den on the banks of the torrents."
     },
     {
       "id": "s4",
       "name": "calanchi",
-      "quote": "Degni di nota i calanchi, che ospitano una flora particolare: sono presenti alcune erbe come l'astro spillo d'oro (Aster linosyris) e in misura minore la carota selvatica, la scorzonera delle argille (Podospermum canum); l'ononide di Masquillieri (Ononis masquillierii) è occasionale; nei ristagni tra i calanchi si trovano il farfaro (Tussilago farfara), l'erba ceppitoni (Dittrichia viscosa), il centauro giallo (Blackstonia perfoliata); nelle zone di terreno stabilizzato si incontrano arbusti pionieri come il ginepro, la ginestra, la rosa selvatica, il sanguinello e il salicone (Salix caprea).",
-      "english": "Worthy of note are the badlands, which host a particular flora: some herbs are present such as the goldilocks aster (Aster linosyris) and to a lesser extent the wild carrot, the clay scorzonera (Podospermum canum); Masquillier's restharrow (Ononis masquillierii) is occasional; in the stagnant water between the badlands are coltsfoot (Tussilago farfara), woody fleabane (Dittrichia viscosa), yellowwort (Blackstonia perfoliata); in areas of stabilized soil, pioneer shrubs such as juniper, broom, wild rose, dogwood and pussy willow (Salix caprea) are found."
+      "quote": "Degni di nota i calanchi, che ospitano una flora particolare: sono presenti alcune erbe come l'astro spillo d'oro (Aster linosyris) e in misura minore la carota selvatica, la scorzonera delle argille (Podospermum canum);",
+      "english": "Worthy of note are the badlands, which host a particular flora: some herbs are present such as the goldilocks aster (Aster linosyris) and to a lesser extent the wild carrot, the clay scorzonera (Podospermum canum);"
+    },
+    {
+      "id": "s5",
+      "name": "ristagni tra i calanchi",
+      "quote": "nei ristagni tra i calanchi si trovano il farfaro (Tussilago farfara), l'erba ceppitoni (Dittrichia viscosa), il centauro giallo (Blackstonia perfoliata);",
+      "english": "in the stagnant waters among the badlands one finds coltsfoot (Tussilago farfara), woody fleabane (Dittrichia viscosa), and yellow-wort (Blackstonia perfoliata);"
+    },
+    {
+      "id": "s6",
+      "name": "vigneti e coltivi",
+      "quote": "L'area del parco fortemente antropizzata e caratterizzata da vigneti e coltivi si alterna a un'area coperta da boschi, praterie e incolti.",
+      "english": "The park area, strongly anthropized and characterized by vineyards and cultivated land, alternates with an area covered by woods, prairies, and uncultivated land."
+    },
+    {
+      "id": "s7",
+      "name": "fiumi",
+      "quote": "Tra i rapaci, vanno ricordati il Gheppio e la Poiana comune, mentre lungo i fiumi vivono gli Aironi cenerini e le Nitticore.",
+      "english": "Among the birds of prey, the Kestrel and the Common Buzzard should be mentioned, while along the rivers live Grey Herons and Night Herons."
     }
   ],
   "days": [
     {
-      "title": "Monteveglio Abbey and Natural Landscapes",
+      "title": "Historical Center and Natural Landscapes",
       "stop_ids": [
         "s1",
+        "s4",
+        "s6"
+      ]
+    },
+    {
+      "title": "Woods and Waterways",
+      "stop_ids": [
         "s2",
         "s3",
-        "s4"
+        "s5",
+        "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "862480c4e5410a738856d1dcd587b8225444bf9f6cbb9b73e711d8cc0b172d46"
 }

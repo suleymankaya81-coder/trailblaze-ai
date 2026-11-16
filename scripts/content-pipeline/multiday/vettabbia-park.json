@@ -4,22 +4,28 @@
       "id": "s1",
       "name": "Naviglio Vettabbia",
       "quote": "Prende il nome dal Naviglio Vettabbia che lo attraversa, è situato a sud della città di Milano nel Municipio 5, e confina con il territorio comunale di Opera.",
-      "english": "It takes its name from the Vettabbia Canal that crosses it, is located south of the city of Milan in District 5, and borders the municipal territory of Opera."
+      "english": "It takes its name from the Naviglio Vettabbia which flows through it, is located south of the city of Milan in District 5, and borders the municipal territory of Opera."
     },
     {
       "id": "s2",
       "name": "Valle dei Monaci",
       "quote": "La zona è stata bonificata e coltivata fin dal XII secolo dai monaci dell'Abbazia di Chiaravalle e nella parte iniziale prende il nome di Valle dei Monaci, lungo un percorso che, proseguendo fino al Po (che raggiunge a Corte sant'Andrea), collega Milano alla Via Francigena.",
-      "english": "The area has been reclaimed and cultivated since the 12th century by the monks of Chiaravalle Abbey and in the initial part takes the name of Valle dei Monaci, along a route that, continuing to the Po (which it reaches at Corte sant'Andrea), connects Milan to the Via Francigena."
+      "english": "The area has been reclaimed and cultivated since the 12th century by the monks of Chiaravalle Abbey and in the initial part takes the name of Valle dei Monaci, along a path that, continuing to the Po (which it reaches at Corte sant'Andrea), connects Milan to the Via Francigena."
     },
     {
       "id": "s3",
-      "name": "antico mulino",
-      "quote": "All'inizio del parco, su un diverticolo di via Ripamonti, esiste ancora, seppure ristrutturato ad uso abitativo, l'omonimo antico mulino.",
-      "english": "At the beginning of the park, on a branch of via Ripamonti, the ancient mill of the same name still exists, although renovated for residential use."
+      "name": "Abbazia di Chiaravalle",
+      "quote": "La zona è stata bonificata e coltivata fin dal XII secolo dai monaci dell'Abbazia di Chiaravalle e nella parte iniziale prende il nome di Valle dei Monaci, lungo un percorso che, proseguendo fino al Po (che raggiunge a Corte sant'Andrea), collega Milano alla Via Francigena.",
+      "english": "The area has been reclaimed and cultivated since the 12th century by the monks of Chiaravalle Abbey and in the initial part takes the name of Valle dei Monaci, along a path that, continuing to the Po (which it reaches at Corte sant'Andrea), connects Milan to the Via Francigena."
     },
     {
-      "id": "s4",
+      "id": "antico mulino",
+      "name": "antico mulino",
+      "quote": "All'inizio del parco, su un diverticolo di via Ripamonti, esiste ancora, seppure ristrutturato ad uso abitativo, l'omonimo antico mulino.",
+      "english": "At the beginning of the park, on a bypass of via Ripamonti, there still exists, although renovated for residential use, the ancient mill of the same name."
+    },
+    {
+      "id": "s5",
       "name": "Sentiero di Chiaravalle",
       "quote": "Sentiero di Chiaravalle",
       "english": "Chiaravalle Path"
@@ -27,13 +33,15 @@
   ],
   "days": [
     {
-      "title": "Historical Waterways and Paths of Vettabbia",
+      "title": "History and Nature of Vettabbia Park",
       "stop_ids": [
         "s1",
         "s2",
         "s3",
-        "s4"
+        "antico mulino",
+        "s5"
       ]
     }
-  ]
+  ],
+  "_text_sha": "cabf13bead2ad8ff25bc194cd715d87ff460765f247b58df4d4f1817178015f9"
 }

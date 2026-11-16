@@ -2,38 +2,65 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Feldatal",
-      "quote": "Feldatal, the valley of the mills, is located on the northern edge of the Vogelsberg Volcanic Region Nature Park and is one of the most beautiful valleys.",
-      "english": "Feldatal, the valley of the mills, is located on the northern edge of the Vogelsberg Volcanic Region Nature Park and is one of the most beautiful valleys."
+      "name": "Oberwald",
+      "quote": "Er umfasst das Gebiet von elf Gemeinden, die rings um den Oberwald liegen, wie der waldbestandene, höchstgelegene Teil des Mittelgebirges genannt wird.",
+      "english": "It encompasses the area of eleven municipalities located around the Oberwald, as the forested, highest part of the low mountain range is called."
     },
     {
       "id": "s2",
-      "name": "Feldataler Sternwarte",
-      "quote": "Zwischen weiten Feldern und Wiesen liegt in einer Talsenke ein Gebäudekomplex der Feldataler Sternwarte.",
-      "english": "A building complex of the Feldatal observatory is situated in a valley hollow between wide fields and meadows."
+      "name": "Taufstein",
+      "quote": "Maßnahmen zur Besucherlenkung, um die natürlichen Ruhezonen für die Tierwelt zu schützen, zählen ebenso zum Aufgabenbereich des Zweckverbands wie die Pflege des Skiloipennetzes im Bereich der Gipfelgebiete des Taufsteins und der Herchenhainer Höhe.",
+      "english": "Visitor management measures to protect the natural rest zones for wildlife are just as much a part of the association's area of responsibility as the maintenance of the cross-country ski trail network in the area of the summit regions of the Taufstein and the Herchenhainer Höhe."
     },
     {
       "id": "s3",
-      "name": "Stumpertenrod",
-      "quote": "Since the construction of the observatory in the OT Stumpertenrod, the visitor comes even closer to the sky.",
-      "english": "Since the construction of the observatory in the district of Stumpertenrod, the visitor comes even closer to the sky."
+      "name": "Herchenhainer Höhe",
+      "quote": "Maßnahmen zur Besucherlenkung, um die natürlichen Ruhezonen für die Tierwelt zu schützen, zählen ebenso zum Aufgabenbereich des Zweckverbands wie die Pflege des Skiloipennetzes im Bereich der Gipfelgebiete des Taufsteins und der Herchenhainer Höhe.",
+      "english": "Visitor management measures to protect the natural rest zones for wildlife are just as much a part of the association's area of responsibility as the maintenance of the cross-country ski trail network in the area of the summit regions of the Taufstein and the Herchenhainer Höhe."
     },
     {
       "id": "s4",
-      "name": "Hotel Schloss Romrod",
-      "quote": "Hotel Schloss Romrod Alsfelder Straße 7, 36329 Romrod",
-      "english": "Hotel Castle Romrod Alsfelder Straße 7, 36329 Romrod"
+      "name": "Hoherodskopf",
+      "quote": "Auf dem Gipfel des Hoherodskopfs besteht ein Naturschutz- und Informationszentrum, das als Gemeinschaftsprojekt des Naturparks mit dem Geopark Vulkanregion Vogelsberg betrieben wird.",
+      "english": "On the summit of the Hoherodskopf, there is a nature conservation and information center, which is operated as a joint project of the nature park and the Vogelsberg Volcanic Region Geopark."
+    },
+    {
+      "id": "s5",
+      "name": "Herbstein",
+      "quote": "Vor der Wiedervereinigung lag der „physikalische Schwerpunkt“ der Bundesrepublik bei Herbstein im Naturpark Hoher Vogelsberg.",
+      "english": "Before reunification, the \"physical center of gravity\" of the Federal Republic was located near Herbstein in the Hoher Vogelsberg Nature Park."
+    },
+    {
+      "id": "s6",
+      "name": "Grebenhain",
+      "quote": "Bei Grebenhain verläuft eine der Hauptwasserscheiden Deutschlands.",
+      "english": "One of Germany's main watersheds runs near Grebenhain."
+    },
+    {
+      "id": "s7",
+      "name": "Deutsche Ferienstraße Alpen-Ostsee",
+      "quote": "Die Deutsche Ferienstraße Alpen-Ostsee führt mitten durch den Naturpark.",
+      "english": "The German Alpine-Baltic Holiday Road leads right through the middle of the nature park."
     }
   ],
   "days": [
     {
-      "title": "Astronomy and Valley Exploration",
+      "title": "Summit Peaks and High Forests",
       "stop_ids": [
         "s1",
         "s2",
         "s3",
         "s4"
       ]
+    },
+    {
+      "title": "Geographic Landmarks and Scenic Routes",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
     }
-  ]
+  ],
+  "_text_sha": "c462b3ff7beabf72ffd40615236083723c85ddf1bbbcaefe6057ceb65df42fa1"
 }

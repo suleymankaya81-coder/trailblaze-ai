@@ -22,25 +22,25 @@
       "id": "s4",
       "name": "Prato",
       "quote": "La sede del parco si trova nella frazione Prato del comune di Resia.",
-      "english": "The park headquarters are located in the hamlet of Prato in the municipality of Resia."
+      "english": "The park headquarters is located in the hamlet of Prato in the municipality of Resia."
     },
     {
       "id": "s5",
-      "name": "ricovero alpino Rio Nero Casera",
-      "quote": "Nel parco naturale sono presenti i seguenti rifugi: ricovero alpino Rio Nero Casera a 865 m s.l.m.; ricovero alpino Borgo Miniera a 966 m s.l.m.; ricovero alpino Marsinska Planina a 1401 m s.l.m.; ricovero alpino Montemaggiore-Gran Monte a 1648 m s.l.m.; ricovero alpino Bellina Dino a 1405 m s.l.m..",
-      "english": "The following refuges are present in the natural park: Rio Nero Casera alpine shelter at 865 m above sea level; Borgo Miniera alpine shelter at 966 m above sea level; Marsinska Planina alpine shelter at 1401 m above sea level; Montemaggiore-Gran Monte alpine shelter at 1648 m above sea level; Bellina Dino alpine shelter at 1405 m above sea level."
+      "name": "Val Resia",
+      "quote": "In Val Resia, sul torrione Mulaz 1804, parete NNE, il 18 ottobre 2013 è stata attrezzata la L. Ron Hubbard Route - Mulaz Climbing Route.",
+      "english": "In Val Resia, on the Mulaz tower 1804, NNE face, the L. Ron Hubbard Route - Mulaz Climbing Route was equipped on October 18, 2013."
     },
     {
       "id": "s6",
-      "name": "Val Resia",
+      "name": "torrione Mulaz",
       "quote": "In Val Resia, sul torrione Mulaz 1804, parete NNE, il 18 ottobre 2013 è stata attrezzata la L. Ron Hubbard Route - Mulaz Climbing Route.",
-      "english": "In Val Resia, on the Mulaz 1804 tower, NNE face, the L. Ron Hubbard Route - Mulaz Climbing Route was equipped on October 18, 2013."
+      "english": "In Val Resia, on the Mulaz tower 1804, NNE face, the L. Ron Hubbard Route - Mulaz Climbing Route was equipped on October 18, 2013."
     },
     {
       "id": "s7",
-      "name": "torrione Mulaz 1804",
-      "quote": "In Val Resia, sul torrione Mulaz 1804, parete NNE, il 18 ottobre 2013 è stata attrezzata la L. Ron Hubbard Route - Mulaz Climbing Route.",
-      "english": "In Val Resia, on the Mulaz 1804 tower, NNE face, the L. Ron Hubbard Route - Mulaz Climbing Route was equipped on October 18, 2013."
+      "name": "ricovero alpino Rio Nero Casera",
+      "quote": "Nel parco naturale sono presenti i seguenti rifugi: ricovero alpino Rio Nero Casera a 865 m s.l.m.;",
+      "english": "The following shelters are present in the natural park: Rio Nero Casera alpine shelter at 865 m above sea level;"
     },
     {
       "id": "s8",
@@ -51,27 +51,23 @@
   ],
   "days": [
     {
-      "title": "High Summits and Bivouacs",
+      "title": "High Peaks and Shelters",
       "stop_ids": [
         "s1",
         "s2",
+        "s3",
         "s8"
       ]
     },
     {
-      "title": "Valleys and Climbing Routes",
+      "title": "Resia Valley and Climbing Routes",
       "stop_ids": [
+        "s4",
+        "s5",
         "s6",
-        "s7",
-        "s4"
-      ]
-    },
-    {
-      "title": "Alpine Shelters and Ridges",
-      "stop_ids": [
-        "s3",
-        "s5"
+        "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "87413bff6d42bcfe4a042bf6082f24843a5a546f15a5b25014d8c343d980ffdc"
 }

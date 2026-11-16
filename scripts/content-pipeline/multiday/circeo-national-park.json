@@ -4,67 +4,68 @@
       "id": "s1",
       "name": "Monte Circeo",
       "quote": "È la cima montuosa del Monte Circeo che tocca i 541 m e che ha dato il nome all'intero Parco Nazionale.",
-      "english": "It is the mountain peak of Mount Circeo that reaches 541 m and which gave its name to the entire National Park."
+      "english": "It is the mountain peak of Monte Circeo which reaches 541 m and gave its name to the entire National Park."
     },
     {
       "id": "s2",
       "name": "Mezzomonte",
       "quote": "Nel sottobosco si trovano erica, ginestra e corbezzolo mentre, verso la foresta di pianura, nella zona di “Mezzomonte”, si trova una sughereta di circa 25 ha.",
-      "english": "In the undergrowth, heather, broom, and strawberry tree are found, while towards the lowland forest, in the \"Mezzomonte\" area, there is a cork oak grove of about 25 hectares."
+      "english": "In the undergrowth you can find heather, broom, and strawberry tree, while towards the lowland forest, in the area of “Mezzomonte”, there is a cork oak forest of about 25 hectares."
     },
     {
       "id": "s3",
       "name": "grotta Guattari",
       "quote": "In tal senso, la più conosciuta è la grotta Guattari, al cui interno, nel 1939, fu rinvenuto un cranio di tipo neanderthaliano.",
-      "english": "In this sense, the most well-known is the Guattari cave, inside which, in 1939, a Neanderthal-type skull was discovered."
+      "english": "In this sense, the best known is the Guattari cave, inside which, in 1939, a Neanderthal-type skull was found."
     },
     {
       "id": "s4",
       "name": "grotta delle Capre",
       "quote": "Altra grotta interessante, facilmente raggiungibile via terra, è la grotta delle Capre, in prossimità della quale si trovano anche la grotta dell'Impiso e la grotta del Fossellone.",
-      "english": "Another interesting cave, easily accessible by land, is the Goat Cave, in the vicinity of which the Hangman's Cave and the Big Hole Cave are also located."
+      "english": "Another interesting cave, easily reachable by land, is the Grotto of the Goats, near which are also found the Grotto of the Hanged Man and the Grotto of the Big Hole."
     },
     {
       "id": "s5",
       "name": "grotta Azzurra",
       "quote": "Altre grotte sono: la grotta Azzurra, celebre per i suoi riflessi di colore; la grotta del Presepe, così chiamata per le sue caratteristiche colate stalagmitiche che, viste dal mare, sembrano statuine inginocchiate; le \"Cinque grotte\" o \"Cattedrale\", così chiamate per la forma che ricorda quella delle cattedrali gotiche, piene di guglie; la grotta Barbara; la grotta della Maga Circe, che la leggenda vuole sia stata indicata dalla maga Circe a Ulisse affinché egli vi ricoverasse la propria barca.",
-      "english": "Other caves are: the Blue Grotto, famous for its color reflections; the Manger Cave, so named for its characteristic stalagmitic flows that, seen from the sea, look like kneeling figurines; the \"Five Caves\" or \"Cathedral\", so named for the shape that resembles Gothic cathedrals, full of spires; the Barbara cave; the Cave of the Sorceress Circe, which legend has it was pointed out by the sorceress Circe to Ulysses so that he could shelter his boat there."
+      "english": "Other caves include: the Blue Grotto, famous for its color reflections; the Crib Grotto, named for its characteristic stalagmitic flows that, seen from the sea, look like kneeling figurines; the \"Five Caves\" or \"Cathedral\", named for the shape that resembles Gothic cathedrals, full of spires; the Barbara cave; the Grotto of the Sorceress Circe, which legend has it was pointed out by the sorceress Circe to Ulysses so that he could shelter his boat there."
     },
     {
       "id": "s6",
-      "name": "Piscina delle Bagnature",
-      "quote": "Nella foresta esistono tre aree di Riserva Naturale Integrale: la Piscina delle Bagnature, la Piscina della Gattuccia e la Lestra della Coscia.",
-      "english": "In the forest there are three Integral Natural Reserve areas: the Bathing Pool, the Little Cat Pool, and the Thigh Hut."
+      "name": "Isola di Zannone",
+      "quote": "Vi sono 5 habitat f (La Foresta, I Laghi e le Zone Umide, La Duna, Il Promontorio e l'Isola di Zannone) a cui si può aggiungere il sistema dei beni archeostorici del Comprensorio del Circeo gestito dal Ministero della Cultura con il quale negli anni il Parco a sviluppato intese e progetti comuni.",
+      "english": "There are 5 habitats (The Forest, The Lakes and Wetlands, The Dune, The Promontory and the Island of Zannone) to which can be added the system of archaeological and historical heritage of the Circeo District managed by the Ministry of Culture, with which the Park has developed joint agreements and projects over the years."
     },
     {
       "id": "s7",
-      "name": "torre Paola",
-      "quote": "Nel territorio del parco è compresa una fascia costiera sabbiosa che si estende, in lunghezza, per circa 22 km, partendo dalla scogliera calcarea del promontorio del Circeo, appena sotto torre Paola, proseguendo oltre il territorio del parco (che termina in località Capoportiere) fino al capo d'Astura.",
-      "english": "The park territory includes a sandy coastal strip that extends in length for about 22 km, starting from the limestone cliff of the Circeo promontory, just below Paola Tower, continuing beyond the park territory (which ends in the locality of Capoportiere) up to Cape Astura."
+      "name": "Piscina delle Bagnature",
+      "quote": "Nella foresta esistono tre aree di Riserva Naturale Integrale: la Piscina delle Bagnature, la Piscina della Gattuccia e la Lestra della Coscia.",
+      "english": "In the forest there are three areas of Integral Natural Reserve: the Pool of the Soakings, the Pool of the Kitten, and the Lestra of the Thigh."
     }
   ],
   "days": [
     {
-      "title": "Promontory Peaks and Inland Forests",
+      "title": "Peaks and Inland Forests",
       "stop_ids": [
         "s1",
         "s2",
-        "s6"
-      ]
-    },
-    {
-      "title": "Coastal Caves and Grottoes",
-      "stop_ids": [
-        "s3",
-        "s4",
-        "s5"
-      ]
-    },
-    {
-      "title": "Coastal Dunes and Towers",
-      "stop_ids": [
         "s7"
       ]
+    },
+    {
+      "title": "Coastal Grottoes and Caves",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Marine Myths and Island Habitats",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
     }
-  ]
+  ],
+  "_text_sha": "22e23ae30eea8fc924cc5cbae2200466e641ad9014e77b0b2e86339209a5c013"
 }

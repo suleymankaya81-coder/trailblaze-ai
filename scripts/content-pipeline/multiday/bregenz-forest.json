@@ -2,17 +2,70 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Bregenzerwald",
-      "quote": "Among Austria's most heavily forested regions are the Waldviertel in Lower Austria, the Bregenzerwald in Vorarlberg, the Lungau in SalzburgerLand, the Nockberge Biosphere Reserve in Carinthia and the Silberregion Karwendel in Tirol.",
-      "english": "Among Austria's most heavily forested regions are the Bregenzerwald in Vorarlberg, the Waldviertel in Lower Austria, the Lungau in SalzburgerLand, the Nockberge Biosphere Reserve in Carinthia and the Silberregion Karwendel in Tirol."
+      "name": "Bezegg-Sul",
+      "quote": "Heute erinnert dort die Bezegg-Sul, eine steinerne Säule, an das frühere Rathaus.",
+      "english": "Today, the Bezegg-Sul, a stone column, stands there as a reminder of the former town hall."
+    },
+    {
+      "id": "s2",
+      "name": "Bregenzerachschlucht",
+      "quote": "Folgende Europaschutzgebiete liegen teilweise oder ganz Im Bregenzerwald: Bregenzerachschlucht Witmoos (Langen bei Bregenz) Fohramoos (Schwarzenberg) Unterargenstein (Au) Unter Stellerhöhe (Egg) Unter der Winterstaude (Egg) Widdersteinmähder (Warth) Ifen (Egg, Mittelberg, Sibratsgfäll)",
+      "english": "The following European protected areas lie partially or entirely in the Bregenzerwald: Bregenzerachschlucht, Witmoos (Langen bei Bregenz), Fohramoos (Schwarzenberg), Unterargenstein (Au), Unter Stellerhöhe (Egg), Unter der Winterstaude (Egg), Widdersteinmähder (Warth), Ifen (Egg, Mittelberg, Sibratsgfäll)."
+    },
+    {
+      "id": "s3",
+      "name": "Naturpark Nagelfluhkette",
+      "quote": "Der Naturpark Nagelfluhkette ist der erste grenzüberschreitende Naturpark zwischen Deutschland und Österreich und damit ein internationales Pilotprojekt.",
+      "english": "The Nagelfluhkette Nature Park is the first cross-border nature park between Germany and Austria and is thus an international pilot project."
+    },
+    {
+      "id": "s4",
+      "name": "Körbersee",
+      "quote": "Pflanzenschutzgebiete: Hochifen und Gottesacker-Plateau (Bezau, Egg, Mittelberg) Körbersee (Schröcken)",
+      "english": "Plant protection areas: Hochifen and Gottesacker-Plateau (Bezau, Egg, Mittelberg), Körbersee (Schröcken)."
+    },
+    {
+      "id": "s5",
+      "name": "Kanisfluh",
+      "quote": "Folgende Naturschutzgebiete liegen teilweise oder ganz Im Bregenzerwald: Rossbad (Krumbach) Hirschberg (Langen bei Bregenz) Farnacher Moos (Alberschwende, Bildstein) Kojen-Moos (Riefensberg) Hohe Kugel – Hoher Freschen – Mellental (Mellau und Rheintalgemeinden) Auer Ried (Au) Kanisfluh (Au, Mellau und Schnepfau)",
+      "english": "The following nature reserves lie partially or entirely in the Bregenzerwald: Rossbad (Krumbach), Hirschberg (Langen bei Bregenz), Farnacher Moos (Alberschwende, Bildstein), Kojen-Moos (Riefensberg), Hohe Kugel – Hoher Freschen – Mellental (Mellau and Rhine Valley communities), Auer Ried (Au), Kanisfluh (Au, Mellau and Schnepfau)."
+    },
+    {
+      "id": "s6",
+      "name": "Fohramoos",
+      "quote": "Folgende Europaschutzgebiete liegen teilweise oder ganz Im Bregenzerwald: Bregenzerachschlucht Witmoos (Langen bei Bregenz) Fohramoos (Schwarzenberg) Unterargenstein (Au) Unter Stellerhöhe (Egg) Unter der Winterstaude (Egg) Widdersteinmähder (Warth) Ifen (Egg, Mittelberg, Sibratsgfäll)",
+      "english": "The following European protected areas lie partially or entirely in the Bregenzerwald: Bregenzerachschlucht, Witmoos (Langen bei Bregenz), Fohramoos (Schwarzenberg), Unterargenstein (Au), Unter Stellerhöhe (Egg), Unter der Winterstaude (Egg), Widdersteinmähder (Warth), Ifen (Egg, Mittelberg, Sibratsgfäll)."
+    },
+    {
+      "id": "s7",
+      "name": "Rossbad",
+      "quote": "Folgende Naturschutzgebiete liegen teilweise oder ganz Im Bregenzerwald: Rossbad (Krumbach) Hirschberg (Langen bei Bregenz) Farnacher Moos (Alberschwende, Bildstein) Kojen-Moos (Riefensberg) Hohe Kugel – Hoher Freschen – Mellental (Mellau und Rheintalgemeinden) Auer Ried (Au) Kanisfluh (Au, Mellau und Schnepfau)",
+      "english": "The following nature reserves lie partially or entirely in the Bregenzerwald: Rossbad (Krumbach), Hirschberg (Langen bei Bregenz), Farnacher Moos (Alberschwende, Bildstein), Kojen-Moos (Riefensberg), Hohe Kugel – Hoher Freschen – Mellental (Mellau and Rhine Valley communities), Auer Ried (Au), Kanisfluh (Au, Mellau and Schnepfau)."
     }
   ],
   "days": [
     {
-      "title": "Vorarlberg Forest Exploration",
+      "title": "Natural Parks and Monuments",
       "stop_ids": [
-        "s1"
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "High Lakes and Alpine Peaks",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Moors and Protected Marshes",
+      "stop_ids": [
+        "s6",
+        "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "04d6277f76143c42f3ae6cad80f7d199b9b6b12fe93ae54563aec7ebe4779c8f"
 }

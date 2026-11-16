@@ -2,38 +2,72 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Brocken peak",
-      "quote": "Height varies from approximately 240 m in the north and 270 m on the southern edge up to 1,141 m on Brocken peak.",
-      "english": "Height varies from approximately 240 m in the north and 270 m on the southern edge up to 1,141 m on Brocken peak."
+      "name": "Brocken",
+      "quote": "In seinen Randgebieten liegt der Park auf Höhen von 230 m im Norden bis 270 m im Süden und steigt bis auf 1141,2 m ü. NHN am Gipfel des Brocken an.",
+      "english": "In its peripheral areas, the park lies at altitudes from 230 m in the north to 270 m in the south and rises up to 1141.2 m above sea level at the summit of the Brocken."
     },
     {
       "id": "s2",
-      "name": "Brocken",
-      "quote": "View to the Brocken - the highest mountain in the Harz (Photo: Mirko Lehmann)",
-      "english": "View to the Brocken - the highest mountain in the Harz (Photo: Mirko Lehmann)"
+      "name": "Oderteich",
+      "quote": "Die Oder fließt durch den Oderteich und speist die an der südöstlichen Grenze des Parkes gelegene Odertalsperre.",
+      "english": "The Oder flows through the Oderteich and feeds the Oder Dam located on the southeastern border of the park."
     },
     {
       "id": "s3",
-      "name": "National Park Visitor Centres",
-      "quote": "A group of 39 rangers and several National Park Visitor Centres contribute a great deal to the services for the visitors.",
-      "english": "A group of 39 rangers and several National Park Visitor Centres contribute a great deal to the services for the visitors."
+      "name": "Eckertalsperre",
+      "quote": "Weitere Talsperren und stehende Gewässer innerhalb oder am Rand des Nationalparks sind unter anderem die Eckertalsperre und der Silberteich.",
+      "english": "Other dams and standing waters inside or on the edge of the national park include the Ecker Dam and the Silberteich."
     },
     {
       "id": "s4",
-      "name": "rocky biotopes",
-      "quote": "Scientific research has identified numerous habitats which are, based on Middle-European standards, quite close to a natural state, such as the high and middle regions or zones of the Harz, rocky biotopes, many running waters, and a large beech, spruce and mixed forest area.",
-      "english": "Scientific research has identified numerous habitats which are, based on Middle-European standards, quite close to a natural state, such as the high and middle regions or zones of the Harz, rocky biotopes, many running waters, and a large beech, spruce and mixed forest area."
+      "name": "Silberteich",
+      "quote": "Weitere Talsperren und stehende Gewässer innerhalb oder am Rand des Nationalparks sind unter anderem die Eckertalsperre und der Silberteich.",
+      "english": "Other dams and standing waters inside or on the edge of the national park include the Ecker Dam and the Silberteich."
+    },
+    {
+      "id": "s5",
+      "name": "Bruchberg",
+      "quote": "Die höchsten Erhebungen sind der Brocken, der Bruchberg und der Achtermann.",
+      "english": "The highest elevations are the Brocken, the Bruchberg and the Achtermann."
+    },
+    {
+      "id": "s6",
+      "name": "Achtermann",
+      "quote": "Die höchsten Erhebungen sind der Brocken, der Bruchberg und der Achtermann.",
+      "english": "The highest elevations are the Brocken, the Bruchberg and the Achtermann."
+    },
+    {
+      "id": "s7",
+      "name": "Hohnekamm",
+      "quote": "Der Park umfasste den östlichen Hochharz rund um den Brocken zwischen Eckertalsperre, Hohnekamm und Schierke, später erweitert nach Ilsenburg.",
+      "english": "The park included the eastern High Harz around the Brocken between the Ecker Dam, Hohnekamm and Schierke, later extended to Ilsenburg."
+    },
+    {
+      "id": "s8",
+      "name": "Nationalparkhaus in Sankt Andreasberg",
+      "quote": "Zusätzlich befindet sich im Nationalparkhaus in Sankt Andreasberg das Nationalpark-Bildungszentrum.",
+      "english": "Additionally, the National Park Education Center is located in the National Park House in Sankt Andreasberg."
     }
   ],
   "days": [
     {
-      "title": "Mountain Heights and Educational Centers",
+      "title": "High Peaks and Eastern Ridges",
       "stop_ids": [
         "s1",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Water Reservoirs and Education Centers",
+      "stop_ids": [
         "s2",
         "s3",
-        "s4"
+        "s4",
+        "s8"
       ]
     }
-  ]
+  ],
+  "_text_sha": "876eeba6000525c8c9403bb9d526192a4ff176311e93611558505de08624e810"
 }

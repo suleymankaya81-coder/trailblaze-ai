@@ -2,45 +2,70 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Haus der Berge",
-      "quote": "Das Bild zeigt das Nationalparkzentrum Haus der Berge im Winter.",
-      "english": "The picture shows the national park center Haus der Berge in winter."
+      "name": "Watzmann",
+      "quote": "Die höchste Erhebung innerhalb des Nationalparks ist der Watzmann, das zentrale Bergmassiv der Berchtesgadener Alpen.",
+      "english": "The highest elevation within the national park is the Watzmann, the central mountain massif of the Berchtesgaden Alps."
     },
     {
       "id": "s2",
-      "name": "Vertical Wilderness",
-      "quote": "Last admission to the «Vertical Wilderness» exhibition at 4 pm!",
-      "english": "Last admission to the «Vertical Wilderness» exhibition at 4 pm!"
+      "name": "Blaueis-Gletscher",
+      "quote": "Im Nationalpark Berchtesgaden liegen unter anderem der Watzmann, der Blaueis-Gletscher und der Großteil des Königssees.",
+      "english": "The Watzmann, the Blaueis Glacier and the majority of the Königssee are located in the Berchtesgaden National Park."
     },
     {
       "id": "s3",
-      "name": "hiking trails",
-      "quote": "About 260 kilometers of hiking trails and alpine paths open up the Berchtesgaden National Park.",
-      "english": "About 260 kilometers of hiking trails and alpine paths open up the Berchtesgaden National Park."
+      "name": "Königssee",
+      "quote": "An den Park, der sich auf einer Höhe von 603,3 (Königssee) bis 2713 m ü. NHN (Watzmann) befindet, schließt sich im Norden das rund 259 km² große Nationalparkvorfeld an.",
+      "english": "Adjoining the park, which is located at an altitude of 603.3 (Königssee) to 2713 m above sea level (Watzmann), is the approximately 259 km² national park apron to the north."
     },
     {
       "id": "s4",
-      "name": "alpine paths",
-      "quote": "About 260 kilometers of hiking trails and alpine paths open up the Berchtesgaden National Park.",
-      "english": "About 260 kilometers of hiking trails and alpine paths open up the Berchtesgaden National Park."
+      "name": "Wimbachgries",
+      "quote": "Besonders zu erwähnen ist noch das Wimbachgries, ein Tal, das nach einer geologischen Theorie durch den Einsturz eines Gewölbes über Watzmann und Hochkalter entstanden ist.",
+      "english": "Particularly worthy of mention is the Wimbachgries, a valley which, according to a geological theory, was formed by the collapse of a vault over the Watzmann and Hochkalter."
     },
     {
       "id": "s5",
-      "name": "Königssee",
-      "quote": "External link to the video Garbage, wild campers and illegal fireplaces at Königssee on the Berchtesgaden National Park YouTube channel",
-      "english": "External link to the video Garbage, wild campers and illegal fireplaces at Königssee on the Berchtesgaden National Park YouTube channel"
+      "name": "Funtensee",
+      "quote": "Der Funtensee, ein Bergsee, an dem im Winter regelmäßig die tiefsten Temperaturen ganz Deutschlands gemessen werden, liegt ebenfalls im Gebiet des Nationalparks Berchtesgaden.",
+      "english": "The Funtensee, a mountain lake where the lowest temperatures in all of Germany are regularly measured in winter, is also located in the area of the Berchtesgaden National Park."
+    },
+    {
+      "id": "s6",
+      "name": "Obersee",
+      "quote": "Er war rund 83 km² groß und umfasste den südlichen Teil des Königssees, den Obersee sowie die umgebenden Gebirgsmassive.",
+      "english": "It was around 83 km² in size and included the southern part of the Königssee, the Obersee, and the surrounding mountain massifs."
+    },
+    {
+      "id": "s7",
+      "name": "Wimbachschloss",
+      "quote": "In der Diskussion steht auch die Erweiterung der Kernzone des Nationalparks in den Bereich jahrhundertealter Kulturlandschaften mit almwirtschaftlicher Nutzung und alten Berggasthäusern wie dem historischen Wimbachschloss.",
+      "english": "Also under discussion is the expansion of the national park's core zone into the area of centuries-old cultural landscapes with alpine farming and old mountain inns such as the historical Wimbachschloss."
     }
   ],
   "days": [
     {
-      "title": "Visitor Center and Local Trails",
+      "title": "Glaciers and High Peaks",
       "stop_ids": [
         "s1",
-        "s2",
+        "s2"
+      ]
+    },
+    {
+      "title": "Alps Lakes and Waters",
+      "stop_ids": [
         "s3",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Wimbach Valley Exploration",
+      "stop_ids": [
         "s4",
-        "s5"
+        "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "3b0e44ce0242f6aa57ad5b7e2b50d375fff443139f70f559d478dcc97675c342"
 }

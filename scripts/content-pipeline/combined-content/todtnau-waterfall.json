@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Baden Wurttemberg",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Todtnauer Wasserfall"
+        "Todtnauberg",
+        "Schatzstein"
       ],
       "seo_title": "Todtnau Waterfall Visit Guide"
     },
@@ -32,16 +33,57 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Todtnau Waterfall",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Upper Valley and High Sights",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Todtnauer Wasserfall",
-                "stop_id": "todtnau-waterfall",
-                "detail": "The Todtnauer Waterfall, also known as Todtnauberger Waterfall or Hangloch Waterfall, is located between Todtnauberg and Aftersteg, two villages belonging to Todtnau. At this waterfall, the water plunges over five steps partly free, partly sliding a total of 97 meters into the depth. The Hangloch waterfall is thus one of Germany’s highest waterfalls. The penultimate and highest step measures 60 meters and is thus by far the highest single step of the German low mountain range."
+                "name": "Todtnauberg",
+                "stop_id": "todtnau-waterfall--s1",
+                "detail": "It first flows through the high valley of Todtnauberg, which is open to the southwest and characterized by meadows."
+              },
+              {
+                "name": "Schatzstein",
+                "stop_id": "todtnau-waterfall--s4",
+                "detail": "At a distance of 300 meters east of the upper waterfall step is the Schatzstein monolith."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Todtnau Waterfall before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Waterfall Clefts and Lower Slopes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Hangloch",
+                "stop_id": "todtnau-waterfall--s2",
+                "detail": "Below the Hangloch spur, the valley floor is forested, and the stream suddenly plunges into a rocky cleft with two drop steps a few meters high."
+              },
+              {
+                "name": "Stiebenmatte",
+                "stop_id": "todtnau-waterfall--s3",
+                "detail": "After a final 4-meter-high step, the Stübenbächle rushes another 140 meters steeply down to the Stiebenmatte and then to the confluence with the Schönenbach."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Todtnau Waterfall before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Aftersteg Access and Grottos",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Mariengrotte",
+                "stop_id": "todtnau-waterfall--s5",
+                "detail": "On a path from Aftersteg to the waterfalls, there is a Mary's Grotto halfway along."
+              },
+              {
+                "name": "Aftersteg",
+                "stop_id": "todtnau-waterfall--s6",
+                "detail": "The path from Aftersteg to the base of the waterfall was designed to be barrier-free, supported by the Southern Black Forest Nature Park."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Todtnau Waterfall before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +121,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://de.wikipedia.org/wiki/Todtnauer_Wasserfall"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Todtnauer_Wasserfall"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:27:47.726462+00:00"
       }
     }
   }

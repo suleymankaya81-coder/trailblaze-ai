@@ -2,50 +2,70 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Feldberger Seenlandschaft",
-      "quote": "Weite Wälder, Hügel, Täler, sandige Ebenen, klare Seen und versteckte Moore, blühende Hecken, Äcker und Wiesen, historische Bauwerke in hübschen Orten, Heimatstuben, Museen und Herrenhäuser - all das ist die Feldberger Seenlandschaft.",
-      "english": "Vast forests, hills, valleys, sandy plains, clear lakes and hidden bogs, blooming hedges, fields and meadows, historical buildings in pretty villages, local history rooms, museums and manor houses - all that is the Feldberger Seenlandschaft."
+      "name": "Breiter Luzin",
+      "quote": "Der Breite Luzin ist mit 58,3 Metern der zweittiefste See von Mecklenburg-Vorpommern.",
+      "english": "The Breiter Luzin is the second deepest lake in Mecklenburg-Vorpommern at 58.3 meters."
     },
     {
       "id": "s2",
-      "name": "Feldberger Wiesenpark",
-      "quote": "Im Feldberger Wiesenpark sind Orchideen wie das Breitblättrige Knabenkraut zu sehen, aber auch andere Pflanzen wie Kuckuckslichtnelke, Bachnelkenwurz und Sumpfdotterblume können Sie hier finden.",
-      "english": "In the Feldberger Wiesenpark, orchids such as the broad-leaved marsh orchid can be seen, but you can also find other plants such as ragged-robin, water avens and marsh marigold here."
+      "name": "Vogelkirsche",
+      "quote": "Der höchste Berg ist die Vogelkirsche (beim Dorf Schlicht nördlich des Breiten Luzin) mit einer Höhe von 166,6 m ü. NHN.",
+      "english": "The highest mountain is the Vogelkirsche (near the village of Schlicht north of the Breiter Luzin) with a height of 166.6 m above sea level."
     },
     {
       "id": "s3",
-      "name": "Hans-Fallada-Museum",
-      "quote": "Mit allen Sinnen Herbst genießen: Obstsorten-Verkostung und literarische Gartenführung im Garten des Hans-Fallada-Museums im schönen Carwitz.",
-      "english": "Enjoy autumn with all your senses: fruit variety tasting and literary garden tour in the garden of the Hans-Fallada-Museum in beautiful Carwitz."
+      "name": "Heilige Hallen",
+      "quote": "Die Besonderheit des Parkes sind die Kesselmoore und der älteste Buchenwald Deutschlands im Naturschutzgebiet Heilige Hallen.",
+      "english": "The special features of the park are the kettle bogs and Germany's oldest beech forest in the Heilige Hallen nature reserve."
     },
     {
       "id": "s4",
-      "name": "Carwitz",
-      "quote": "Am Samstag, den 17. Oktober luden Naturpark und Hans-Fallada-Museum herzlich zum gemeinsamen Spazieren und Probieren ein.",
-      "english": "On Saturday, October 17th, the Nature Park and the Hans-Fallada-Museum cordially invited everyone to walk and taste together."
+      "name": "Carwitzer See",
+      "quote": "Durch den Krüselinsee, den Großen Mechowsee und den Südteil des Carwitzer Sees verläuft die Landesgrenze zu Brandenburg.",
+      "english": "The state border with Brandenburg runs through Lake Krüselin, Lake Großer Mechow and the southern part of Lake Carwitz."
     },
     {
       "id": "s5",
-      "name": "Hauptmannsberg",
-      "quote": "Am 29. September wurde im Kreis von Familie und Wegbegleitern der Gedenkstein für Dr. Lebrecht Jeschke am Hauptmannsberg eingeweiht.",
-      "english": "On September 29th, the memorial stone for Dr. Lebrecht Jeschke was inaugurated at Hauptmannsberg in the circle of family and companions."
+      "name": "Krüselinsee",
+      "quote": "Durch den Krüselinsee, den Großen Mechowsee und den Südteil des Carwitzer Sees verläuft die Landesgrenze zu Brandenburg.",
+      "english": "The state border with Brandenburg runs through Lake Krüselin, Lake Großer Mechow and the southern part of Lake Carwitz."
+    },
+    {
+      "id": "s6",
+      "name": "Feldberger Haussee",
+      "quote": "Der Naturpark Feldberger Seenlandschaft wird durch seine großen Seen (Breiter Luzin, der Carwitzer See, der Schmale Luzin, der Große Fürstenseer See sowie der Feldberger Haussee) und Wälder mit vielen, auch seltenen Tieren und Pflanzen, aber auch durch seine Kulturlandschaft gekennzeichnet.",
+      "english": "The Feldberg Lake District Nature Park is characterized by its large lakes (Breiter Luzin, Carwitzer See, Schmaler Luzin, Großer Fürstenseer See and Feldberger Haussee) and forests with many, including rare, animals and plants, but also by its cultural landscape."
+    },
+    {
+      "id": "s7",
+      "name": "Schmaler Luzin",
+      "quote": "Der Naturpark Feldberger Seenlandschaft wird durch seine großen Seen (Breiter Luzin, der Carwitzer See, der Schmale Luzin, der Große Fürstenseer See sowie der Feldberger Haussee) und Wälder mit vielen, auch seltenen Tieren und Pflanzen, aber auch durch seine Kulturlandschaft gekennzeichnet.",
+      "english": "The Feldberg Lake District Nature Park is characterized by its large lakes (Breiter Luzin, Carwitzer See, Schmaler Luzin, Großer Fürstenseer See and Feldberger Haussee) and forests with many, including rare, animals and plants, but also by its cultural landscape."
     }
   ],
   "days": [
     {
-      "title": "Nature and Culture in Feldberg",
+      "title": "Northern Peaks and Deep Waters",
       "stop_ids": [
         "s1",
-        "s2",
+        "s2"
+      ]
+    },
+    {
+      "title": "Ancient Forests and Border Lakes",
+      "stop_ids": [
+        "s3",
+        "s4",
         "s5"
       ]
     },
     {
-      "title": "Literary Heritage in Carwitz",
+      "title": "Central Feldberg Lakes",
       "stop_ids": [
-        "s3",
-        "s4"
+        "s6",
+        "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "ee1d296b4bd64ceec97c8f69eeff59145242ab3d4a81527f04e60abab47c482f"
 }

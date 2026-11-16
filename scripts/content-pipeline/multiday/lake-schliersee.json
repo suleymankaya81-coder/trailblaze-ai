@@ -2,69 +2,77 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Lake Spitzingsee",
-      "quote": "In the early morning, the banks of fog quietly push their way through the powdered spruces around the snow-covered Lake Spitzingsee.",
-      "english": "In the early morning, the banks of fog quietly push their way through the powdered spruces around the snow-covered Lake Spitzingsee."
+      "name": "Schliersee",
+      "quote": "Der Schliersee ist ein See in den bayerischen Alpen im Landkreis Miesbach.",
+      "english": "Lake Schliersee is a lake in the Bavarian Alps in the district of Miesbach."
     },
     {
       "id": "s2",
-      "name": "Mount Brecherspitze",
-      "quote": "They glide between the steep flanks of Mounts Brecherspitze and Jägerkamp over the Spitzingsattel down into the Alpine foothills.",
-      "english": "They glide between the steep flanks of Mounts Brecherspitze and Jägerkamp over the Spitzingsattel down into the Alpine foothills."
+      "name": "Insel Wörth",
+      "quote": "Im See befindet sich die 2,4 ha große, mit einem Gasthaus bebaute Insel Wörth.",
+      "english": "In the lake lies the 2.4-hectare Wörth Island, which is developed with an inn."
     },
     {
       "id": "s3",
-      "name": "Jägerkamp",
-      "quote": "Antonia Rüede-Passul is assigned to the Jägerkamp.",
-      "english": "Antonia Rüede-Passul is assigned to the Jägerkamp."
+      "name": "Halbinsel Freudenberg",
+      "quote": "Von Nordwesten ragt die Halbinsel Freudenberg in den See, die Teil eines weiteren, nur noch teilweise vorhandenen Querriegels ist, der früher eine Verbindung bis zum Weinberg(hügel) mit der Kapelle St. Georg am Nordostufer des Sees darstellte.",
+      "english": "The Freudenberg peninsula juts into the lake from the northwest, forming part of another only partially preserved transverse bar that formerly provided a link to the Weinberg (hill) and the Chapel of St. George on the northeastern shore of the lake."
     },
     {
       "id": "s4",
-      "name": "Spitzingsattel",
-      "quote": "They glide between the steep flanks of Mounts Brecherspitze and Jägerkamp over the Spitzingsattel down into the Alpine foothills.",
-      "english": "They glide between the steep flanks of Mounts Brecherspitze and Jägerkamp over the Spitzingsattel down into the Alpine foothills."
+      "name": "Weinberg(hügel)",
+      "quote": "Von Nordwesten ragt die Halbinsel Freudenberg in den See, die Teil eines weiteren, nur noch teilweise vorhandenen Querriegels ist, der früher eine Verbindung bis zum Weinberg(hügel) mit der Kapelle St. Georg am Nordostufer des Sees darstellte.",
+      "english": "The Freudenberg peninsula juts into the lake from the northwest, forming part of another only partially preserved transverse bar that formerly provided a link to the Weinberg (hill) and the Chapel of St. George on the northeastern shore of the lake."
     },
     {
       "id": "s5",
-      "name": "Lake Schliersee",
-      "quote": "Lake Schliersee with Wörth Island",
-      "english": "Lake Schliersee with Wörth Island."
+      "name": "Kapelle St. Georg",
+      "quote": "Von Nordwesten ragt die Halbinsel Freudenberg in den See, die Teil eines weiteren, nur noch teilweise vorhandenen Querriegels ist, der früher eine Verbindung bis zum Weinberg(hügel) mit der Kapelle St. Georg am Nordostufer des Sees darstellte.",
+      "english": "The Freudenberg peninsula juts into the lake from the northwest, forming part of another only partially preserved transverse bar that formerly provided a link to the Weinberg (hill) and the Chapel of St. George on the northeastern shore of the lake."
     },
     {
       "id": "s6",
-      "name": "Wörth Island",
-      "quote": "Lake Schliersee with Wörth Island",
-      "english": "Lake Schliersee with Wörth Island."
+      "name": "Neuhaus",
+      "quote": "Der Schliersee gehört vollständig zum Markt Schliersee; dieser gehört mit seinem Hauptort und den Gemeindeteilen Neuhaus und Fischhausen zu den beliebtesten Urlaubs- und Ausflugsregionen Bayerns.",
+      "english": "Lake Schliersee belongs entirely to the municipality of Schliersee; this, along with its main town and the districts of Neuhaus and Fischhausen, belongs to the most popular holiday and excursion regions of Bavaria."
     },
     {
       "id": "s7",
-      "name": "Taubenstein",
-      "quote": "“From my point of view, sanctioning should never be the first step,” says Thorsten Schär, whom I meet a little later at the valley station of the Taubenstein, the starting point of the tours on the Jägerkamp.",
-      "english": "“From my point of view, sanctioning should never be the first step,” says Thorsten Schär, whom I meet a little later at the valley station of the Taubenstein, the starting point of the tours on the Jägerkamp."
+      "name": "Fischhausen",
+      "quote": "Der Schliersee gehört vollständig zum Markt Schliersee; dieser gehört mit seinem Hauptort und den Gemeindeteilen Neuhaus und Fischhausen zu den beliebtesten Urlaubs- und Ausflugsregionen Bayerns.",
+      "english": "Lake Schliersee belongs entirely to the municipality of Schliersee; this, along with its main town and the districts of Neuhaus and Fischhausen, belongs to the most popular holiday and excursion regions of Bavaria."
+    },
+    {
+      "id": "s8",
+      "name": "Schlierseer Tal",
+      "quote": "Große Teile des Schlierseer Tals sind mit einer Größe von 17,54 km² unter dem Namen Schutz des Schliersees und seiner Umgebung als Landschaftsschutzgebiet (LSG-00052.01) ausgewiesen.",
+      "english": "Large parts of the Schliersee Valley are designated as a landscape conservation area covering 17.54 km² under the name Protection of Lake Schliersee and its Surroundings."
     }
   ],
   "days": [
     {
-      "title": "Lakes and Islands",
+      "title": "Lake Exploration and the Island Inn",
       "stop_ids": [
         "s1",
-        "s5",
-        "s6"
+        "s2",
+        "s8"
       ]
     },
     {
-      "title": "Summit Routes and Slopes",
+      "title": "Northwestern Peninsula and Hilltop Chapel",
       "stop_ids": [
         "s3",
-        "s7"
+        "s4",
+        "s5"
       ]
     },
     {
-      "title": "Alpine Ridges and Passes",
+      "title": "Traditional Villages of the Shoreline",
       "stop_ids": [
-        "s2",
-        "s4"
+        "s6",
+        "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "5d28a820deeed3c62f0662aa7e0ea819fb0704e9adcd413d966d910bda0d7b01"
 }

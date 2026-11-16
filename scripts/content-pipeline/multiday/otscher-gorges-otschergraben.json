@@ -2,38 +2,77 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Ötscher-Basis",
-      "quote": "Der Eintritt kann auf der Ötscher-Basis in Wienerbruck oder den Spendenkassen direkt bei den Naturpark-Eingängen gelöst werden.",
-      "english": "The entrance fee can be paid at the Ötscher-Basis in Wienerbruck or at the donation boxes directly at the nature park entrances."
+      "name": "Ötschergräben",
+      "quote": "In Wienerbruck (Gemeinde Annaberg), am Eingang zu den Ötschergräben, entstand in enger Zusammenarbeit mit der Niederösterreichischen Landesausstellung 2015 ein neues Naturparkzentrum direkt am Wienerbrucker Stausee.",
+      "english": "In Wienerbruck (municipality of Annaberg), at the entrance to the Ötschergräben, a new nature park center was built directly on the Wienerbruck reservoir in close cooperation with the Lower Austrian Provincial Exhibition 2015."
     },
     {
       "id": "s2",
-      "name": "Stausee in Wienerbruck",
-      "quote": "Der Stausee in Wienerbruck lädt mit seiner Liegewiese zum Sonnenbaden ein.",
-      "english": "The reservoir in Wienerbruck invites you to sunbathe with its sunbathing lawn."
+      "name": "Ötscher-Basis",
+      "quote": "Die Ötscher-Basis beherbergt ein Restaurant mit Seeterrasse und ist Ausgangspunkt für viele Wanderungen.",
+      "english": "The Ötscher-Basis houses a restaurant with a lake terrace and is the starting point for many hikes."
     },
     {
       "id": "s3",
-      "name": "Schutzhaus Vorderötscher",
-      "quote": "Wer sein Zelt aufschlagen mag, kann dies im Garten der Ötscher-Basis oder auch beim Schutzhaus Vorderötscher tun.",
-      "english": "Anyone who wants to pitch their tent can do so in the garden of the Ötscher-Basis or also at the Schutzhaus Vorderötscher."
+      "name": "Wienerbrucker Stausee",
+      "quote": "In Wienerbruck (Gemeinde Annaberg), am Eingang zu den Ötschergräben, entstand in enger Zusammenarbeit mit der Niederösterreichischen Landesausstellung 2015 ein neues Naturparkzentrum direkt am Wienerbrucker Stausee.",
+      "english": "In Wienerbruck (municipality of Annaberg), at the entrance to the Ötschergräben, a new nature park center was built directly on the Wienerbruck reservoir in close cooperation with the Lower Austrian Provincial Exhibition 2015."
     },
     {
       "id": "s4",
-      "name": "Ötscher",
-      "quote": "Rund um den weithin sichtbaren Ötscher - dem Wahrzeichen des Mostviertels - erstreckt sich auf den Gemeindegebieten Annaberg, Mitterbach, Gaming, St. Anton und Puchenstuben der größte Naturpark Niederösterreichs.",
-      "english": "Around the widely visible Ötscher - the landmark of the Mostviertel - the largest nature park in Lower Austria extends across the municipal areas of Annaberg, Mitterbach, Gaming, St. Anton and Puchenstuben."
+      "name": "Erlaufstausee",
+      "quote": "In der Gemeinde Mitterbach steht am Erlaufstausee das Stapelhaus als Eingang in den Naturpark und als Schänke.",
+      "english": "In the municipality of Mitterbach, the Stapelhaus stands at the Erlauf reservoir as an entrance to the nature park and as a tavern."
+    },
+    {
+      "id": "s5",
+      "name": "Stapelhaus",
+      "quote": "In der Gemeinde Mitterbach steht am Erlaufstausee das Stapelhaus als Eingang in den Naturpark und als Schänke.",
+      "english": "In the municipality of Mitterbach, the Stapelhaus stands at the Erlauf reservoir as an entrance to the nature park and as a tavern."
+    },
+    {
+      "id": "s6",
+      "name": "Gemeindealpe",
+      "quote": "Der Ötscher (bis zum Ötscherschutzhaus) und die Gemeindealpe sind im Sommer und im Winter mit Sesselliften erreichbar.",
+      "english": "The Ötscher (up to the Ötscherschutzhaus) and the Gemeindealpe can be reached by chairlift in summer and winter."
+    },
+    {
+      "id": "s7",
+      "name": "Terzerhaus",
+      "quote": "Das Terzerhaus auf der Gemeindealpe bietet eine Einkehrmöglichkeit.",
+      "english": "The Terzerhaus on the Gemeindealpe offers a place to stop for refreshments."
+    },
+    {
+      "id": "s8",
+      "name": "Schutzhaus Vorderötscher",
+      "quote": "Das am Ende der Ötschergräben gelegene Schutzhaus Vorderötscher wurde 2015 renoviert.",
+      "english": "The Schutzhaus Vorderötscher, located at the end of the Ötschergräben, was renovated in 2015."
     }
   ],
   "days": [
     {
-      "title": "Wienerbruck and Alpine Surroundings",
+      "title": "Wienerbruck Gateways",
       "stop_ids": [
         "s1",
         "s2",
-        "s3",
-        "s4"
+        "s3"
+      ]
+    },
+    {
+      "title": "Mitterbach and High Peaks",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Deep Gorges Retreat",
+      "stop_ids": [
+        "s8"
       ]
     }
-  ]
+  ],
+  "_text_sha": "9684bcfb8b962bb3f4c74b89d2fb4293fb71493dfa709a2f71cfdc0df5e14cb9"
 }

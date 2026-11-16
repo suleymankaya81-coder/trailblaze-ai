@@ -2,50 +2,56 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Wasserkuppe",
-      "quote": "Besucher*innen und Einheimischen bietet die Rhön, das \"Land der offenen Fernen\", zahlreiche touristische Leuchttürme wie Wasserkuppe, Kreuzberg, Schwarzes und Rotes Moor oder Point Alpha.",
-      "english": "The Rhön, the \"land of open distances\", offers visitors and locals numerous tourist highlights such as Wasserkuppe, Kreuzberg, Schwarzes and Rotes Moor or Point Alpha."
+      "name": "Haus der Langen Rhön",
+      "quote": "Biosphärenzentrum Rhön „Haus der Langen Rhön“ in Oberelsbach",
+      "english": "Biosphere Center Rhön \"House of the Long Rhön\" in Oberelsbach"
     },
     {
       "id": "s2",
-      "name": "Kreuzberg",
-      "quote": "Besucher*innen und Einheimischen bietet die Rhön, das \"Land der offenen Fernen\", zahlreiche touristische Leuchttürme wie Wasserkuppe, Kreuzberg, Schwarzes und Rotes Moor oder Point Alpha.",
-      "english": "The Rhön, the \"land of open distances\", offers visitors and locals numerous tourist highlights such as Wasserkuppe, Kreuzberg, Schwarzes and Rotes Moor or Point Alpha."
+      "name": "Haus der Schwarzen Berge",
+      "quote": "Biosphärenzentrum Rhön „Haus der Schwarzen Berge“ in Oberbach",
+      "english": "Biosphere Center Rhön \"House of the Black Mountains\" in Oberbach"
     },
     {
       "id": "s3",
-      "name": "Schwarzes Moor",
-      "quote": "Ab Montag, den 16. November 2026 bleiben Aussichtsturm und Naturlehrpfad im Schwarzen Moor bis voraussichtlich 15. März 2027 gesperrt.",
-      "english": "From Monday, November 16, 2026, the observation tower and nature trail in the Schwarzes Moor will remain closed until probably March 15, 2027."
+      "name": "Propstei Zella",
+      "quote": "Biosphären-Infozentrum Propstei Zella in Zella/Rhön",
+      "english": "Biosphere Information Center Propstei Zella in Zella/Rhön"
     },
     {
       "id": "s4",
-      "name": "Rotes Moor",
-      "quote": "Besucher*innen und Einheimischen bietet die Rhön, das \"Land der offenen Fernen\", zahlreiche touristische Leuchttürme wie Wasserkuppe, Kreuzberg, Schwarzes und Rotes Moor oder Point Alpha.",
-      "english": "The Rhön, the \"land of open distances\", offers visitors and locals numerous tourist highlights such as Wasserkuppe, Kreuzberg, Schwarzes and Rotes Moor or Point Alpha."
+      "name": "Point Alpha",
+      "quote": "Infozentrum „Haus auf der Grenze“ – Point Alpha",
+      "english": "Information Center \"House on the Border\" – Point Alpha"
     },
     {
       "id": "s5",
-      "name": "Point Alpha",
-      "quote": "Besucher*innen und Einheimischen bietet die Rhön, das \"Land der offenen Fernen\", zahlreiche touristische Leuchttürme wie Wasserkuppe, Kreuzberg, Schwarzes und Rotes Moor oder Point Alpha.",
-      "english": "The Rhön, the \"land of open distances\", offers visitors and locals numerous tourist highlights such as Wasserkuppe, Kreuzberg, Schwarzes and Rotes Moor or Point Alpha."
+      "name": "Schwarzes Moor",
+      "quote": "Infostelle Schwarzes Moor",
+      "english": "Information Point Black Moor"
     },
     {
       "id": "s6",
-      "name": "DER HOCHRHÖNER",
-      "quote": "Erlebbar werden diese dank dem Premiumwanderweg „DER HOCHRHÖNER“ und den zahlreichen Extratouren.",
-      "english": "These can be experienced thanks to the premium hiking trail \"DER HOCHRHÖNER\" and the numerous extra tours."
+      "name": "Wildpark Klaushof",
+      "quote": "Naturerlebniszentrum Rhön mit Standorten im Kellereischloss in Hammelburg und dem Wildpark Klaushof bei Bad Kissingen (im Aufbau)",
+      "english": "Nature Experience Center Rhön with locations in the Kellerei Castle in Hammelburg and the Klaushof Wildlife Park near Bad Kissingen (under construction)"
     },
     {
       "id": "s7",
-      "name": "Ehrenberg-Rhön",
-      "quote": "Mittwoch 30.12.2026 - 20:00 bis 22:00 Uhr Ehrenberg-Rhön",
-      "english": "Wednesday 30.12.2026 - 8:00 p.m. to 10:00 p.m. Ehrenberg-Rhön"
+      "name": "Lösershag",
+      "quote": "Ein Teil der Kernzonen ist bereits seit mehreren Jahrzehnten als Naturwaldreservat ausgewiesen, zum Beispiel der Lösershag oder der Gangolfsberg.",
+      "english": "A part of the core zones has already been designated as a natural forest reserve for several decades, for example the Lösershag or the Gangolfsberg."
+    },
+    {
+      "id": "s8",
+      "name": "Gangolfsberg",
+      "quote": "Ein Teil der Kernzonen ist bereits seit mehreren Jahrzehnten als Naturwaldreservat ausgewiesen, zum Beispiel der Lösershag oder der Gangolfsberg.",
+      "english": "A part of the core zones has already been designated as a natural forest reserve for several decades, for example the Lösershag or the Gangolfsberg."
     }
   ],
   "days": [
     {
-      "title": "High Peaks and Historical Moors",
+      "title": "Biosphere Education and Regional Centers",
       "stop_ids": [
         "s1",
         "s2",
@@ -53,18 +59,20 @@
       ]
     },
     {
-      "title": "Natural Wetlands and Cultural Sites",
+      "title": "History and Nature Exploration",
       "stop_ids": [
         "s4",
         "s5"
       ]
     },
     {
-      "title": "Long Distance Trails and Villages",
+      "title": "Forest Reserves and Wildlife",
       "stop_ids": [
         "s6",
-        "s7"
+        "s7",
+        "s8"
       ]
     }
-  ]
+  ],
+  "_text_sha": "8e4dd72ecba265559418f23f74cae285ab769bfb138af9f4d52ec7afbab9aaae"
 }

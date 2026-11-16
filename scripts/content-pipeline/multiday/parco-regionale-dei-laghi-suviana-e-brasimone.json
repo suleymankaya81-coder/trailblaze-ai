@@ -4,67 +4,63 @@
       "id": "s1",
       "name": "lago di Suviana",
       "quote": "L'area è ubicata attorno a due ampi bacini artificiali realizzati a partire dai primi del Novecento a scopo idroelettrico, il lago di Suviana, contornato da una folta pineta, e il bacino del Brasimone, con le sponde erbose.",
-      "english": "The area is located around two large artificial basins created starting from the early twentieth century for hydroelectric purposes, Lake Suviana, surrounded by a thick pine forest, and the Brasimone basin, with its grassy shores."
+      "english": "The area is located around two large artificial basins created starting from the early twentieth century for hydroelectric purposes, Lake Suviana, surrounded by a thick pine forest, and the Brasimone basin, with grassy shores."
     },
     {
       "id": "s2",
       "name": "bacino del Brasimone",
       "quote": "L'area è ubicata attorno a due ampi bacini artificiali realizzati a partire dai primi del Novecento a scopo idroelettrico, il lago di Suviana, contornato da una folta pineta, e il bacino del Brasimone, con le sponde erbose.",
-      "english": "The area is located around two large artificial basins created starting from the early twentieth century for hydroelectric purposes, Lake Suviana, surrounded by a thick pine forest, and the Brasimone basin, with its grassy shores."
+      "english": "The area is located around two large artificial basins created starting from the early twentieth century for hydroelectric purposes, Lake Suviana, surrounded by a thick pine forest, and the Brasimone basin, with grassy shores."
     },
     {
       "id": "s3",
       "name": "bacino di Pavana",
-      "quote": "Il territorio del parco è racchiuso fra le valli dei torrenti Brasimone e Limentra Orientale, principali immissari dei due laghi; il confine meridionale del parco è però sulla sponda destra del bacino di Pavana, nella valle del Limentra Occidentale.",
-      "english": "The territory of the park is enclosed between the valleys of the Brasimone and Limentra Orientale streams, the main tributaries of the two lakes; the southern border of the park is, however, on the right bank of the Pavana basin, in the Limentra Occidentale valley."
+      "quote": "Il confine meridionale del parco è però sulla sponda destra del bacino di Pavana, nella valle del Limentra Occidentale.",
+      "english": "The southern boundary of the park, however, is on the right bank of the Pavana basin, in the Western Limentra valley."
     },
     {
       "id": "s4",
       "name": "valle del Limentra Occidentale",
-      "quote": "Il territorio del parco è racchiuso fra le valli dei torrenti Brasimone e Limentra Orientale, principali immissari dei due laghi; il confine meridionale del parco è però sulla sponda destra del bacino di Pavana, nella valle del Limentra Occidentale.",
-      "english": "The territory of the park is enclosed between the valleys of the Brasimone and Limentra Orientale streams, the main tributaries of the two lakes; the southern border of the park is, however, on the right bank of the Pavana basin, in the Limentra Occidentale valley."
+      "quote": "Il confine meridionale del parco è però sulla sponda destra del bacino di Pavana, nella valle del Limentra Occidentale.",
+      "english": "The southern boundary of the park, however, is on the right bank of the Pavana basin, in the Western Limentra valley."
     },
     {
       "id": "s5",
       "name": "Centro visita Sala della Terra",
       "quote": "Centro visita Sala della Terra, dedicato alla geologia del parco, a Castiglione dei Pepoli.",
-      "english": "Sala della Terra Visitor Center, dedicated to the geology of the park, in Castiglione dei Pepoli."
+      "english": "Sala della Terra visitor centre, dedicated to the geology of the park, in Castiglione dei Pepoli."
     },
     {
       "id": "s6",
       "name": "Centro visita Museo del Bosco",
       "quote": "Centro visita Museo del Bosco, dedicato al secolare Bosco del Poranceto",
-      "english": "Bosco Museum Visitor Center, dedicated to the secular Poranceto Woods"
+      "english": "Museo del Bosco visitor centre, dedicated to the centuries-old Poranceto Forest"
     },
     {
       "id": "s7",
       "name": "Bosco del Poranceto",
       "quote": "Centro visita Museo del Bosco, dedicato al secolare Bosco del Poranceto",
-      "english": "Bosco Museum Visitor Center, dedicated to the secular Poranceto Woods"
+      "english": "Museo del Bosco visitor centre, dedicated to the centuries-old Poranceto Forest"
     }
   ],
   "days": [
     {
-      "title": "Major Lakes and Basins",
+      "title": "Lakes and Western Valleys",
       "stop_ids": [
         "s1",
-        "s2"
+        "s2",
+        "s3",
+        "s4"
       ]
     },
     {
-      "title": "Visitor Education and Ancient Woods",
+      "title": "Geology and Forest Education",
       "stop_ids": [
         "s5",
         "s6",
         "s7"
       ]
-    },
-    {
-      "title": "Southern Valley Explorations",
-      "stop_ids": [
-        "s3",
-        "s4"
-      ]
     }
-  ]
+  ],
+  "_text_sha": "030dc0605a2d0e567a294769999ebee89ee15e95e0a3e4baf76f6323be26dc86"
 }

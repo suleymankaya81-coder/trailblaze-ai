@@ -2,68 +2,77 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Lake Tegernsee",
-      "quote": "On a sunny Saturday morning, after the people of Munich have finished their second latte, got into the car and joined the caravan heading south, addicted to the mountains, it can get crowded a little later around Lake Tegernsee and Lake Schliersee."
+      "name": "Kloster Tegernsee",
+      "quote": "Der Name des Sees ist erstmals in der Form Tegarinseo aus dem Jahr 796 überliefert, als die fürstlichen Brüder Oatkar und Adalbert ein Kloster am tegarin seo, das ist althochdeutsch und heißt großer See, gründeten.",
+      "english": "The name of the lake is first recorded in the form Tegarinseo from the year 796, when the princely brothers Oatkar and Adalbert founded a monastery at the tegarin seo, which is Old High German and means great lake."
     },
     {
       "id": "s2",
-      "name": "Lake Schliersee",
-      "quote": "View from the Jägerkamp onto Lake Schliersee and the Pre-Alps."
+      "name": "Schloss Tegernsee",
+      "quote": "Maximilian I Joseph und Karoline verliebten sich in das Tal und kauften 1817 das ehemalige Kloster und nachmalige Schloss Tegernsee.",
+      "english": "Maximilian I Joseph and Karoline fell in love with the valley and bought the former monastery and later Tegernsee Castle in 1817."
     },
     {
       "id": "s3",
-      "name": "Wörth Island",
-      "quote": "Lake Schliersee with Wörth Island."
+      "name": "St. Laurentius",
+      "quote": "Die Bucht wird im lokalen Sprachgebrauch Malerwinkel genannt, da früher sehr oft Maler am Ufer saßen und die Kirche St. Laurentius in Egern malten.",
+      "english": "In local parlance, the bay is called Malerwinkel because in the past painters very often sat on the shore and painted the church of St. Laurentius in Egern."
     },
     {
       "id": "s4",
-      "name": "Lake Spitzingsee",
-      "quote": "In the early morning, the banks of fog quietly push their way through the powdered spruces around the snow-covered Lake Spitzingsee."
+      "name": "Kühzagl-Alm",
+      "quote": "1914 wurde eine weitere Bronzenadel an der Kühzagl-Alm südlich des Lahnerkopf gefunden.",
+      "english": "In 1914, another bronze needle was found at the Kühzagl-Alm south of the Lahnerkopf."
     },
     {
       "id": "s5",
-      "name": "Spitzingsattel",
-      "quote": "They glide between the steep flanks of Mounts Brecherspitze and Jägerkamp over the Spitzingsattel down into the Alpine foothills."
+      "name": "Ringseeinsel",
+      "quote": "Dem Ringsee vorgelagert ist die kleine Ringseeinsel.",
+      "english": "The small Ringsee Island lies in front of the Ringsee."
     },
     {
       "id": "s6",
-      "name": "Mount Brecherspitze",
-      "quote": "They glide between the steep flanks of Mounts Brecherspitze and Jägerkamp over the Spitzingsattel down into the Alpine foothills."
+      "name": "Malerwinkel",
+      "quote": "Die Bucht wird im lokalen Sprachgebrauch Malerwinkel genannt, da früher sehr oft Maler am Ufer saßen und die Kirche St. Laurentius in Egern malten.",
+      "english": "In local parlance, the bay is called Malerwinkel because in the past painters very often sat on the shore and painted the church of St. Laurentius in Egern."
     },
     {
       "id": "s7",
-      "name": "Jägerkamp",
-      "quote": "Antonia Rüede-Passul is assigned to the Jägerkamp."
+      "name": "Halbinsel Point",
+      "quote": "Am Ausgang der Egerner Bucht existiert bereits seit 500 Jahren ein Fährbetrieb zwischen dem Seehotel Überfahrt in Rottach-Egern und der Halbinsel Point in Tegernsee.",
+      "english": "At the exit of Egerner Bucht, a ferry service has existed for 500 years between the Seehotel Überfahrt in Rottach-Egern and the Point peninsula in Tegernsee."
     },
     {
       "id": "s8",
-      "name": "Taubenstein",
-      "quote": "From my point of view, sanctioning should never be the first step,” says Thorsten Schär, whom I meet a little later at the valley station of the Taubenstein, the starting point of the tours on the Jägerkamp."
+      "name": "Finnerbucht",
+      "quote": "Eine weitere namentlich bezeichnete 200 Meter tiefe Einbuchtung ist die Finnerbucht am nördlichen Ortsausgang von Bad Wiessee, in der Nähe des kleinen Ortsteils Winner (Winnerhof, mit der Spielbank), jedoch benannt nach dem unmittelbar südlich davon gelegenen Finnerhof.",
+      "english": "Another named 200-meter-deep indentation is the Finnerbucht at the northern exit of Bad Wiessee, near the small district of Winner (Winnerhof, with the casino), but named after the Finnerhof located immediately to the south."
     }
   ],
   "days": [
     {
-      "title": "Tegernsee and Schliersee Basins",
+      "title": "Town History and Famous Sights",
       "stop_ids": [
         "s1",
         "s2",
-        "s3"
+        "s7"
       ]
     },
     {
-      "title": "Spitzingsee Alpine Highlights",
+      "title": "Scenic Bays and Landmarks",
       "stop_ids": [
-        "s4",
-        "s5",
+        "s3",
+        "s6",
         "s8"
       ]
     },
     {
-      "title": "High Summit Peaks",
+      "title": "Nature and Mountainside Pastures",
       "stop_ids": [
-        "s6",
-        "s7"
+        "s4",
+        "s5"
       ]
     }
-  ]
+  ],
+  "_text_sha": "33edbe0ec9b055e5d939bcfd5dbcb53a728b24c974e2518fdf79b19ff1f912c2"
 }

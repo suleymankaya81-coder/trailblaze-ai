@@ -4,67 +4,63 @@
       "id": "s1",
       "name": "laghi della Lavagnina",
       "quote": "Si estende per 9.551,84 ettari, a un'altitudine compresa tra i 335 m s.l.m. (laghi della Lavagnina) e 1172 m (monte delle Figne).",
-      "english": "It covers 9,551.84 hectares, at an altitude between 335 m above sea level (Lavagnina lakes) and 1172 m (Mount delle Figne)."
+      "english": "It covers 9,551.84 hectares, at an altitude between 335 m above sea level (Lavagnina lakes) and 1172 m (Mount Figne)."
     },
     {
       "id": "s2",
       "name": "monte delle Figne",
       "quote": "Tra le principali montagne del parco si possono ricordare il monte Pracaban (946 m), la costa Lavezzara (1081 m), il monte Poggio (1081 m), il monte delle Figne (1172 m, il più alto dell'area protetta), i monti Taccone (1113 m) e Leco (1072 m), collocati nei pressi dei confini meridionali del parco, e il monte Tobbio (1092 m), che si trova invece pressappoco al suo centro.",
-      "english": "Among the main mountains of the park, one can mention Mount Pracaban (946 m), Costa Lavezzara (1081 m), Mount Poggio (1081 m), Mount delle Figne (1172 m, the highest in the protected area), Mounts Taccone (1113 m) and Leco (1072 m), located near the southern borders of the park, and Mount Tobbio (1092 m), which is instead located roughly in its center."
+      "english": "Among the main mountains of the park we can mention Mount Pracaban (946 m), Costa Lavezzara (1081 m), Mount Poggio (1081 m), Mount delle Figne (1172 m, the highest in the protected area), Mounts Taccone (1113 m) and Leco (1072 m), located near the southern borders of the park, and Mount Tobbio (1092 m), which is instead located roughly in its center."
     },
     {
       "id": "s3",
       "name": "sacrario della Benedicta",
       "quote": "Ospita al suo interno il sacrario della Benedicta dedicato alla strage della Benedicta vicino ai ruderi dell'ex abbazia della Benedicta, nei pressi di Capanne di Marcarolo.",
-      "english": "Inside, it houses the Benedicta shrine dedicated to the Benedicta massacre near the ruins of the former Benedicta abbey, close to Capanne di Marcarolo."
+      "english": "It hosts inside the Benedicta shrine dedicated to the Benedicta massacre near the ruins of the former Benedicta abbey, close to Capanne di Marcarolo."
     },
     {
       "id": "s4",
       "name": "monte Tobbio",
-      "quote": "Il monte Tobbio (1092 m), che si trova invece pressappoco al suo centro.",
-      "english": "Mount Tobbio (1092 m), which is instead located roughly in its center."
+      "quote": "Tra le principali montagne del parco si possono ricordare il monte Pracaban (946 m), la costa Lavezzara (1081 m), il monte Poggio (1081 m), il monte delle Figne (1172 m, il più alto dell'area protetta), i monti Taccone (1113 m) e Leco (1072 m), collocati nei pressi dei confini meridionali del parco, e il monte Tobbio (1092 m), che si trova invece pressappoco al suo centro.",
+      "english": "Among the main mountains of the park we can mention Mount Pracaban (946 m), Costa Lavezzara (1081 m), Mount Poggio (1081 m), Mount delle Figne (1172 m, the highest in the protected area), Mounts Taccone (1113 m) and Leco (1072 m), located near the southern borders of the park, and Mount Tobbio (1092 m), which is instead located roughly in its center."
     },
     {
       "id": "s5",
       "name": "laghi del Gorzente",
       "quote": "Estremamente ricco dal punto di vista idrografico, dispone di bacini artificiali (laghi della Lavagnina, laghi del Gorzente), utilizzati per la produzione di energia idroelettrica nonché per usi potabili per l'Acquedotto De Ferrari Galliera del comune di Genova.",
-      "english": "Extremely rich from a hydrographic point of view, it features artificial basins (Lavagnina lakes, Gorzente lakes), used for the production of hydroelectric energy as well as for drinking water for the De Ferrari Galliera Aqueduct of the municipality of Genoa."
+      "english": "Extremely rich from a hydrographic point of view, it has artificial basins (Lavagnina lakes, Gorzente lakes), used for the production of hydroelectric energy as well as for drinking purposes for the De Ferrari Galliera Aqueduct of the municipality of Genoa."
     },
     {
       "id": "s6",
-      "name": "Monte Ovile",
-      "quote": "Nella zona del Monte Ovile e Ferriere sono state attive miniere d'oro.",
-      "english": "In the area of Monte Ovile and Ferriere, gold mines were active."
+      "name": "passo della Bocchetta",
+      "quote": "Il territorio è attraversato da alcuni corsi d'acqua tra i quali il Lemme, dal passo della Bocchetta verso il Monferrato, il Gorzente tra i laghi del Gorzente e i laghi della Lavagnina, il Piota da Capanne, anch'egli, verso il Monferrato.",
+      "english": "The territory is crossed by several watercourses including the Lemme, from the Bocchetta pass towards Monferrato, the Gorzente between the Gorzente lakes and the Lavagnina lakes, and the Piota from Capanne, also towards Monferrato."
     },
     {
       "id": "s7",
-      "name": "Giardino botanico di Pratorondanino",
-      "quote": "Giardino botanico di Pratorondanino",
-      "english": "Pratorondanino Botanical Garden"
+      "name": "Monte Ovile",
+      "quote": "Nella zona del Monte Ovile e Ferriere sono state attive miniere d'oro.",
+      "english": "Gold mines were active in the area of Monte Ovile and Ferriere."
     }
   ],
   "days": [
     {
-      "title": "High Summits and Memorials",
-      "stop_ids": [
-        "s2",
-        "s3",
-        "s4"
-      ]
-    },
-    {
-      "title": "Water Basins and Mining Heritage",
+      "title": "Central Peaks and Lakes",
       "stop_ids": [
         "s1",
-        "s5",
-        "s6"
+        "s2",
+        "s4",
+        "s5"
       ]
     },
     {
-      "title": "Nature and Botanical Exploration",
+      "title": "History and Passageways",
       "stop_ids": [
+        "s3",
+        "s6",
         "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "15802d2cca73a14dd1db24ba07a9a4c36ce4511d409af4c096b96dcc86ae2f2f"
 }

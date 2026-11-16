@@ -1,4 +1,85 @@
 {
-  "stops": [],
-  "days": []
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Granitz",
+      "quote": "Zum Biosphärenreservat gehören mehrere Kernzonen (Totalreservate), hierzu gehört auch das Gebiet des in der Granitz gelegenen Schwarzen Sees sowie die Insel Vilm und Teile der Halbinseln Mönchgut und Zicker.",
+      "english": "The biosphere reserve includes several core zones (total reserves), which also includes the area of the Black Lake located in the Granitz as well as the island of Vilm and parts of the peninsulas of Mönchgut and Zicker."
+    },
+    {
+      "id": "s2",
+      "name": "Schwarzer See",
+      "quote": "Hierzu gehört auch das Gebiet des in der Granitz gelegenen Schwarzen Sees sowie die Insel Vilm und Teile der Halbinseln Mönchgut und Zicker.",
+      "english": "This also includes the area of the Black Lake located in the Granitz as well as the island of Vilm and parts of the peninsulas of Mönchgut and Zicker."
+    },
+    {
+      "id": "s3",
+      "name": "Insel Vilm",
+      "quote": "Die Insel Vilm gehört zu den von der European Wilderness Society zertifizierten WILDIsland-Gebieten.",
+      "english": "The island of Vilm is one of the WILDIsland areas certified by the European Wilderness Society."
+    },
+    {
+      "id": "s4",
+      "name": "Mönchgut",
+      "quote": "Die Halbinsel Mönchgut wurde durch diese Gletschervorstöße und die anschließende Entwicklung der Ostsee mit ihren küstendynamischen Prozessen (Wind und Wasser) geformt.",
+      "english": "The Mönchgut peninsula was formed by these glacial advances and the subsequent development of the Baltic Sea with its coastal dynamic processes (wind and water)."
+    },
+    {
+      "id": "s5",
+      "name": "Bakenberg",
+      "quote": "Beispielsweise ist der „Bakenberg“ mit 66 m die höchste Erhebung des Inselkerns.",
+      "english": "For example, the 'Bakenberg' at 66 m is the highest elevation of the island core."
+    },
+    {
+      "id": "s6",
+      "name": "Nordperd",
+      "quote": "Mit 43–45 m weisen das Nordperd und das Zickersche Höft die höchsten Kliffs des Gebietes auf.",
+      "english": "At 43–45 m, the Nordperd and the Zickersche Höft have the highest cliffs in the area."
+    },
+    {
+      "id": "s7",
+      "name": "Zickersche Höft",
+      "quote": "Mit 43–45 m weisen das Nordperd und das Zickersche Höft die höchsten Kliffs des Gebietes auf.",
+      "english": "At 43–45 m, the Nordperd and the Zickersche Höft have the highest cliffs in the area."
+    },
+    {
+      "id": "s8",
+      "name": "Groß Zicker",
+      "quote": "Kleinflächig finden sich kleine Durchströmungsmoore und auf Groß Zicker auch Hangquellmoore.",
+      "english": "Small percolation mires are found in small areas, and on Groß Zicker there are also spring mires."
+    },
+    {
+      "id": "s9",
+      "name": "Herzogsgrab",
+      "quote": "Wanderziele sind unter anderem die Granitz, der Bakenberg und das Herzogsgrab.",
+      "english": "Hiking destinations include the Granitz, the Bakenberg and the Duke's Grave."
+    }
+  ],
+  "days": [
+    {
+      "title": "Granitz Forest and Wilderness",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Mönchgut Cliffs and Peaks",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Zicker Hills and Ancient Sites",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "960c78bce37ade2c6f0856e4e0b7344da7f077283710cec4ba768375f63ac829"
 }

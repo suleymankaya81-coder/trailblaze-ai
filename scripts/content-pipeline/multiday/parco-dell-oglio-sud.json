@@ -2,76 +2,70 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Ostiano",
-      "quote": "Gli enti locali interessati sono: Provincia di Cremona e comuni di Ostiano, Volongo, Pessina Cremonese, Isola Dovarese, Drizzona, Piadena, Calvatone; Provincia di Mantova e comuni di Casalromano, Canneto sull'Oglio, Acquanegra sul Chiese, Bozzolo, Marcaria, San Martino dell'Argine, Gazzuolo, Commessaggio, Viadana.",
-      "english": "The local authorities involved are: Province of Cremona and the municipalities of Ostiano, Volongo, Pessina Cremonese, Isola Dovarese, Drizzona, Piadena, Calvatone; Province of Mantova and the municipalities of Casalromano, Canneto sull'Oglio, Acquanegra sul Chiese, Bozzolo, Marcaria, San Martino dell'Argine, Gazzuolo, Commessaggio, Viadana."
+      "name": "foce del fiume Mella",
+      "quote": "Alla foce del fiume Mella (affluente dell'Oglio) vi è il confine nord del Parco, la cui area è inserita tra le province di Cremona e Mantova e termina alla confluenza dell'Oglio nel fiume Po, presso Torre d'Oglio.",
+      "english": "At the mouth of the Mella river (a tributary of the Oglio) there is the northern border of the Park, whose area is inserted between the provinces of Cremona and Mantova and ends at the confluence of the Oglio into the Po river, near Torre d'Oglio."
     },
     {
       "id": "s2",
-      "name": "fiume Mella",
-      "quote": "Alla foce del fiume Mella (affluente dell'Oglio) vi è il confine nord del Parco, la cui area è inserita tra le province di Cremona e Mantova e termina alla confluenza dell'Oglio nel fiume Po, presso Torre d'Oglio.",
-      "english": "At the mouth of the Mella river (a tributary of the Oglio) is the northern border of the Park, whose area is located between the provinces of Cremona and Mantua and ends at the confluence of the Oglio into the Po river, near Torre d'Oglio."
+      "name": "Torre d'Oglio",
+      "quote": "Il tratto planiziale precedente, dall'uscita dal lago d'Iseo è, invece, protetto dal parco Oglio Nord.",
+      "english": "The preceding plain section, from the exit of Lake Iseo, is instead protected by the Oglio Nord park."
     },
     {
       "id": "s3",
-      "name": "Ecomuseo Valli Oglio Chiese",
-      "quote": "Ecomuseo Valli Oglio Chiese",
-      "english": "Ecomuseum of the Oglio Chiese Valleys"
+      "name": "Ponte di Torre d'Oglio",
+      "quote": "Ponte di Torre d'Oglio",
+      "english": "Torre d'Oglio Bridge"
     },
     {
       "id": "s4",
-      "name": "Ecomuseo Terre d'Acqua fra Oglio e Po",
-      "quote": "Ecomuseo Terre d'Acqua fra Oglio e Po",
-      "english": "Ecomuseum of the Water Lands between Oglio and Po"
+      "name": "Ecomuseo Valli Oglio Chiese",
+      "quote": "Ecomuseo Valli Oglio Chiese",
+      "english": "Valli Oglio Chiese Ecomuseum"
     },
     {
       "id": "s5",
-      "name": "Ponte di Torre d'Oglio",
-      "quote": "Ponte di Torre d'Oglio",
-      "english": "Bridge of Torre d'Oglio"
+      "name": "Ecomuseo Terre d'Acqua fra Oglio e Po",
+      "quote": "Ecomuseo Terre d'Acqua fra Oglio e Po",
+      "english": "Ecomuseum of the Lands of Water between Oglio and Po"
     },
     {
       "id": "s6",
-      "name": "Torre d'Oglio",
-      "quote": "Il tratto planiziale precedente, dall'uscita dal lago d'Iseo è, invece, protetto dal parco Oglio Nord.",
-      "english": "The previous plain stretch, from the exit of Lake Iseo, is instead protected by the Oglio Nord park."
+      "name": "Rete ciclopedonale della provincia di Mantova",
+      "quote": "Rete ciclopedonale della provincia di Mantova",
+      "english": "Cycle-pedestrian network of the province of Mantova"
     },
     {
       "id": "s7",
       "name": "Riserva naturale Le Bine",
       "quote": "Riserva naturale Le Bine",
       "english": "Le Bine Nature Reserve"
-    },
-    {
-      "id": "s8",
-      "name": "fiume Po",
-      "quote": "Alla foce del fiume Mella (affluente dell'Oglio) vi è il confine nord del Parco, la cui area è inserita tra le province di Cremona e Mantova e termina alla confluenza dell'Oglio nel fiume Po, presso Torre d'Oglio.",
-      "english": "At the mouth of the Mella river (a tributary of the Oglio) is the northern border of the Park, whose area is located between the provinces of Cremona and Mantua and ends at the confluence of the Oglio into the Po river, near Torre d'Oglio."
     }
   ],
   "days": [
     {
-      "title": "Northern Villages and River Confluences",
+      "title": "Riverside Landmarks and Bridges",
       "stop_ids": [
         "s1",
         "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Cultural Heritage and Museums",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Nature Reserves and Cycling Trails",
+      "stop_ids": [
+        "s6",
         "s7"
       ]
-    },
-    {
-      "title": "Southern Confluence and Historic Crossings",
-      "stop_ids": [
-        "s5",
-        "s6",
-        "s8"
-      ]
-    },
-    {
-      "title": "Ecomuseums and Water Culture",
-      "stop_ids": [
-        "s3",
-        "s4"
-      ]
     }
-  ]
+  ],
+  "_text_sha": "480a04354a9cddac2bb704831a9599c223342ac1c94f834529c2371fd8e9d2b4"
 }

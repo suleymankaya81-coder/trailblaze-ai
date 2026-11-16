@@ -2,24 +2,91 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Binntal Hut",
-      "quote": "The Binntal Hut of the Delémont SAC section is situated by the historic road across the Albrun Pass, a half-hour below the pass height.",
-      "english": "The Binntal Hut of the Delémont SAC section is situated by the historic road across the Albrun Pass, a half-hour below the pass height."
+      "name": "Helsenhorn",
+      "quote": "Den höchsten Punkt des Landschaftsparks Binntal bildet das Helsenhorn südlich von Binn mit der Höhe von 3272 m. ü. M.",
+      "english": "The highest point of the Binntal Landscape Park is formed by the Helsenhorn south of Binn at an altitude of 3272 m above sea level."
     },
     {
       "id": "s2",
-      "name": "Albrun Pass",
-      "quote": "The Binntal Hut of the Delémont SAC section is situated by the historic road across the Albrun Pass, a half-hour below the pass height.",
-      "english": "The Binntal Hut of the Delémont SAC section is situated by the historic road across the Albrun Pass, a half-hour below the pass height."
+      "name": "Blausee",
+      "quote": "Im Gebirge des Landschaftsparks liegen mehrere kleine Bergseen wie der Blausee im Saflischtal (Grengiols), der Chumme-Stausee der Alp Chumme, der Geisspfadsee am Geisspfadpass, der Feldbachsee sowie die Gruppen kleinerer Bergseen oberhalb von Grengiols und Blitzingen; die Gewässer sind in der Liste der Seen im Kanton Wallis aufgeführt.",
+      "english": "In the mountains of the landscape park lie several small mountain lakes such as the Blausee in the Saflischtal (Grengiols), the Chumme reservoir of Alp Chumme, the Geisspfadsee at the Geisspfad Pass, the Feldbachsee as well as groups of smaller mountain lakes above Grengiols and Blitzingen; the waters are listed in the list of lakes in the canton of Valais."
+    },
+    {
+      "id": "s3",
+      "name": "Hanschbiel",
+      "quote": "Die alte Alphütte auf dem Hanschbiel ist mit den ursprünglichen Sennereieinrichtungen erhalten geblieben und dient als Alpkäsereimuseum für Besucher des Binntals.",
+      "english": "The old alpine hut on the Hanschbiel has been preserved with its original dairy facilities and serves as an alpine dairy museum for visitors to the Binntal."
+    },
+    {
+      "id": "s4",
+      "name": "Mineraliengrube Lengenbach",
+      "quote": "In der Region wurden über 320 verschiedene Mineralarten gefunden, über 150 davon in der Mineraliengrube Lengenbach, die zu den bedeutendsten Mineralienfundstellen der Erde gehört.",
+      "english": "Over 320 different types of minerals have been found in the region, more than 150 of them in the Lengenbach mineral mine, which is one of the most important mineral discovery sites on earth."
+    },
+    {
+      "id": "s5",
+      "name": "Twingischlucht",
+      "quote": "In der Twingischlucht sind die Spuren einer alten Römerstrasse noch heute sichtbar.",
+      "english": "In the Twingi Gorge, the traces of an old Roman road are still visible today."
+    },
+    {
+      "id": "s6",
+      "name": "Albrunpass",
+      "quote": "Der alte Saumpfad über den Albrunpass (italienisch Bocchetta d'Arbola), der den Landschaftspark Binntal und den benachbarten Parco Naturale Veglia-Devero miteinander verbindet, ist der wichtigste historische Weg des Gebietes.",
+      "english": "The old mule track over the Albrun Pass (Italian: Bocchetta d'Arbola), which connects the Binntal Landscape Park and the neighboring Parco Naturale Veglia-Devero, is the most important historical path in the area."
+    },
+    {
+      "id": "s7",
+      "name": "Binntalhütte",
+      "quote": "An den Gebirgsrouten bieten Schutzhütten, wie die Binntalhütte der Sektion Delémont des Schweizer Alpen-Clubs (SAC) und die Mittlenberghütte, eine Unterkunft an.",
+      "english": "On the mountain routes, mountain huts such as the Binntal Hut of the Delémont section of the Swiss Alpine Club (SAC) and the Mittlenberg Hut offer accommodation."
+    },
+    {
+      "id": "s8",
+      "name": "Mühlebach",
+      "quote": "Mühlebach besitzt den ältesten Dorfkern der Schweiz in Holzbauweise.",
+      "english": "Mühlebach possesses the oldest village center in Switzerland built in wood."
+    },
+    {
+      "id": "s9",
+      "name": "Zendenrathaus",
+      "quote": "Zendenrathaus, Ernen, mit Museum und Archiv",
+      "english": "Zendenrathaus, Ernen, with museum and archive"
+    },
+    {
+      "id": "s10",
+      "name": "Wallfahrtskapelle Heiligkreuz",
+      "quote": "Wallfahrtskapelle Heiligkreuz",
+      "english": "Heiligkreuz Pilgrimage Chapel"
     }
   ],
   "days": [
     {
-      "title": "Albrun Pass Area",
+      "title": "History and Heritage in the Valley",
+      "stop_ids": [
+        "s8",
+        "s9",
+        "s10",
+        "s5"
+      ]
+    },
+    {
+      "title": "High Peaks and Alpine Traditions",
       "stop_ids": [
         "s1",
-        "s2"
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Minerals and High Passes",
+      "stop_ids": [
+        "s4",
+        "s6",
+        "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "fa40e0c5d0e18aa6c18335247d8106e5cca6b148161991a3ee19adc7977956ab"
 }

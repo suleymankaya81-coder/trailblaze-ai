@@ -3,38 +3,38 @@
     {
       "id": "s1",
       "name": "monte Arpone",
-      "quote": "Il parco naturale comprende i versanti nord-occidentale e sud occidentale dal monte Arpone, a est del Colle del Lis (1.310 m) e a monte della strada di accesso al santuario della Madonna della Bassa (1.157 m), che ne rappresenta l'estremo limite meridionale.",
-      "english": "The natural park includes the north-western and south-western slopes of Mount Arpone, east of the Colle del Lis (1,310 m) and upstream of the access road to the sanctuary of the Madonna della Bassa (1,157 m), which represents its extreme southern limit."
+      "quote": "Le pendici del monte Arpone incluse nel parco si presentano piuttosto ampie e arrotondate e sono cosparse di massi.",
+      "english": "The slopes of Mount Arpone included in the park appear rather wide and rounded and are scattered with boulders."
     },
     {
       "id": "s2",
       "name": "Colle del Lis",
-      "quote": "In particolare, attorno al Colle del Lis si è svolta, tra il 1º e il 2 luglio 1944, una battaglia tra i partigiani della 17ª Brigata Garibaldi e le truppe nazifasciste, al termine della quale ventisei giovani partigiani vennero catturati, torturati e trucidati sul posto.",
-      "english": "In particular, around the Colle del Lis a battle took place between July 1st and 2nd, 1944, between the partisans of the 17th Garibaldi Brigade and the Nazi-Fascist troops, at the end of which twenty-six young partisans were captured, tortured and slaughtered on the spot."
+      "quote": "Il parco naturale comprende i versanti nord-occidentale e sud occidentale dal monte Arpone, a est del Colle del Lis (1.310 m) e a monte della strada di accesso al santuario della Madonna della Bassa (1.157 m), che ne rappresenta l'estremo limite meridionale.",
+      "english": "The natural park includes the north-western and south-western slopes of Mount Arpone, to the east of Colle del Lis (1,310 m) and upstream of the access road to the sanctuary of the Madonna della Bassa (1,157 m), which represents its extreme southern limit."
     },
     {
       "id": "s3",
       "name": "santuario della Madonna della Bassa",
       "quote": "Al santuario della Madonna della Bassa salgono annualmente tre processioni, a giugno, agosto e settembre; quella di agosto parte da Mompellato ed è la più importante.",
-      "english": "Three processions ascend annually to the sanctuary of the Madonna della Bassa in June, August and September; the one in August starts from Mompellato and is the most important."
+      "english": "Three annual processions climb to the sanctuary of the Madonna della Bassa in June, August, and September; the one in August starts from Mompellato and is the most important."
     },
     {
       "id": "s4",
       "name": "centro visite",
       "quote": "In borgata Favella di Rubiana è situato il centro visite (o \"Casa del Parco\").",
-      "english": "The visitor center (or \"House of the Park\") is located in the Favella hamlet of Rubiana."
+      "english": "In the hamlet of Favella di Rubiana, the visitor center (or \"House of the Park\") is located."
     },
     {
       "id": "s5",
       "name": "ecomuseo della Resistenza",
       "quote": "Nel 2000, in un edificio accanto al bar posto sul piazzale del Colle, è stato allestito l'ecomuseo della Resistenza, visitabile nei periodi primaverile ed estivo.",
-      "english": "In 2000, in a building next to the bar located on the square of the Pass, the Resistance ecomuseum was set up, which can be visited in the spring and summer periods."
+      "english": "In 2000, the Ecomuseum of the Resistance was set up in a building next to the bar on the Colle square, and can be visited in the spring and summer periods."
     },
     {
       "id": "s6",
       "name": "Colle della Portia",
       "quote": "Nel territorio del parco insistono alcuni itinerari escursionistici e una breve pista da fondo che dal Colle del Lis si dirige verso il Colle della Portia.",
-      "english": "Within the park territory there are several hiking itineraries and a short cross-country ski track that leads from Colle del Lis towards Colle della Portia."
+      "english": "Within the park territory, there are several hiking itineraries and a short cross-country ski trail that leads from Colle del Lis towards Colle della Portia."
     },
     {
       "id": "s7",
@@ -45,21 +45,22 @@
   ],
   "days": [
     {
-      "title": "Historical Landmarks and Peaks of Colle del Lys",
+      "title": "History and Information near Colle del Lis",
       "stop_ids": [
         "s2",
+        "s4",
         "s5",
-        "s1",
         "s7"
       ]
     },
     {
-      "title": "Sacred Paths and Park Information",
+      "title": "Peaks and Mountain Sanctuaries",
       "stop_ids": [
+        "s1",
         "s3",
-        "s4",
         "s6"
       ]
     }
-  ]
+  ],
+  "_text_sha": "438ed1ead8a9d6783871b07dad5b50cad71fdb2a15f9ca9f533aff39ec876ae8"
 }

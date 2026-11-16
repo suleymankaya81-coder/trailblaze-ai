@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Marche",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco naturale regionale della Gola della Rossa e di Frasassi"
+        "eremo di Grottafucile",
+        "Gola della Rossa"
       ],
       "seo_title": "Parco naturale regionale della Gola della Rossa e di Frasass"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco naturale regionale della Gola della Rossa e di Frasassi",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Castelletta and the Rossa Gorge",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco naturale regionale della Gola della Rossa e di Frasassi",
-                "stop_id": "parco-naturale-regionale-della-gola-della-rossa-e-di-frasassi",
-                "detail": "The regional natural park of the Gola della Rossa and Frasassi is a protected natural area of the Marche region and has its headquarters in the monumental complex of Santa Lucia, near Serra San Quirico."
+                "name": "eremo di Grottafucile",
+                "stop_id": "parco-naturale-regionale-della-gola-della-rossa-e-di-frasassi--s3",
+                "detail": "Inside the park there is also the hermitage of Grottafucile, overlooking the Rossa Gorge, near the village of Castelletta."
+              },
+              {
+                "name": "Gola della Rossa",
+                "stop_id": "parco-naturale-regionale-della-gola-della-rossa-e-di-frasassi--s6",
+                "detail": "The beauty of the Rossa Gorge is threatened by the continuous opening of quarries, the impact of which seems not to be sufficiently considered by local political environments."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale regionale della Gola della Rossa e di Frasassi before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Genga Caves and Temples",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Grotte di Frasassi",
+                "stop_id": "parco-naturale-regionale-della-gola-della-rossa-e-di-frasassi--s2",
+                "detail": "Extending for approximately 9170 hectares on the Apennine side of the province of Ancona, the park directly concerns the municipalities of Serra San Quirico, Genga (with the well-known Frasassi Caves), Arcevia, Cerreto d'Esi and Fabriano, a territory still immersed in an intact and lush nature."
+              },
+              {
+                "name": "tempio del Valadier",
+                "stop_id": "parco-naturale-regionale-della-gola-della-rossa-e-di-frasassi--s5",
+                "detail": "Other points of interest are the famous Valadier temple and the hermitage of Santa Maria Infra Saxa, along the Frasassi Gorge, near Genga."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco naturale regionale della Gola della Rossa e di Frasassi before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_della_Gola_della_Rossa_e_di_Frasassi"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_della_Gola_della_Rossa_e_di_Frasassi"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:30:34.998786+00:00"
       }
     }
   }

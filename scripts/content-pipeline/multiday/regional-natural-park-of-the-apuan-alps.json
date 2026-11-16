@@ -2,59 +2,77 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Monte Procinto",
-      "quote": "Anche da un punto di vista escursionistico, alpinistico e speleologico, le Apuane sono un territorio di pregio, ricco di sentieri, vie ferrate (quella del Monte Procinto, aperta nel 1893, è la più antica d'Italia), vie d'arrampicata e cavità carsiche, spesso minacciate dalle cave.",
-      "english": "Also from a hiking, mountaineering, and speleological point of view, the Apuans are a prestigious territory, rich in paths, via ferratas (that of Monte Procinto, opened in 1893, is the oldest in Italy), climbing routes, and karst cavities, often threatened by quarries."
+      "name": "Grotta del Vento",
+      "quote": "Questa grotta è considerata dagli esperti una vera e propria enciclopedia naturale considerata l'incredibile varietà di rocce e minerali presenti.",
+      "english": "This cave is considered by experts to be a true natural encyclopedia given the incredible variety of rocks and minerals present."
     },
     {
       "id": "s2",
-      "name": "Grotta del Vento",
-      "quote": "Inoltre è anche l'unica grotta a livello europeo ad offrire la possibilità di scegliere fra tre percorsi differenti sia per la lunghezza del tragitto che per la durata.",
-      "english": "Furthermore, it is also the only cave in Europe to offer the possibility of choosing between three different routes, both in terms of the length of the journey and the duration."
-    },
-    {
-      "id": "s3",
-      "name": "Antro del Corchia",
-      "quote": "l'Antro del Corchia, una grotta aperta al pubblico e recentemente attrezzata per visite, è la grotta più estesa d'Italia ed è situata sul monte Corchia nel versante della Versilia.",
-      "english": "The Antro del Corchia, a cave open to the public and recently equipped for visits, is the most extensive cave in Italy and is located on Mount Corchia on the Versilia side."
-    },
-    {
-      "id": "s4",
-      "name": "Buca d'Equi Terme",
-      "quote": "la Buca d'Equi Terme, situata nel versante massese.",
-      "english": "The Buca d'Equi Terme, located on the Massa side."
-    },
-    {
-      "id": "s5",
       "name": "Eremo dei Calomini",
       "quote": "Il più grande dei due è l'Eremo dei Calomini, nel Comune di Fabbriche di Vergemoli, mentre l'altro è l'eremo di San Viano, situato a poco distanza da Vagli Sopra.",
       "english": "The larger of the two is the Hermitage of Calomini, in the Municipality of Fabbriche di Vergemoli, while the other is the hermitage of San Viano, located a short distance from Vagli Sopra."
     },
     {
+      "id": "s3",
+      "name": "Antro del Corchia",
+      "quote": "l'Antro del Corchia, una grotta aperta al pubblico e recentemente attrezzata per visite, è la grotta più estesa d'Italia ed è situata sul monte Corchia nel versante della Versilia.",
+      "english": "The Corchia Antro, a cave open to the public and recently equipped for visits, is the most extensive cave in Italy and is located on Mount Corchia on the Versilia side."
+    },
+    {
+      "id": "s4",
+      "name": "lago di Vagli",
+      "quote": "Il lago di Vagli, il più grande che, a livello massimo, ha una capienza di 36 milioni di metri cubi.",
+      "english": "Lake Vagli, the largest one which, at its maximum level, has a capacity of 36 million cubic meters."
+    },
+    {
+      "id": "s5",
+      "name": "Monte Forato",
+      "quote": "Situate sul versante sud del Monte Sumbra sono presenti due rarità naturalistiche: il grande arco naturale del Monte Forato e le \"marmitte dei giganti\" (pozzi glaciali).",
+      "english": "Located on the southern slope of Mount Sumbra are two natural rarities: the great natural arch of Monte Forato and the \"giants' kettles\" (glacial potholes)."
+    },
+    {
       "id": "s6",
-      "name": "eremo di San Viano",
-      "quote": "Il più grande dei due è l'Eremo dei Calomini, nel Comune di Fabbriche di Vergemoli, mentre l'altro è l'eremo di San Viano, situato a poco distanza da Vagli Sopra.",
-      "english": "The larger of the two is the Hermitage of Calomini, in the Municipality of Fabbriche di Vergemoli, while the other is the hermitage of San Viano, located a short distance from Vagli Sopra."
+      "name": "Buca d'Equi Terme",
+      "quote": "la Buca d'Equi Terme, situata nel versante massese.",
+      "english": "The Buca d'Equi Terme, located on the Massa side."
     },
     {
       "id": "s7",
-      "name": "Monte Forato",
-      "quote": "Situate sul versante sud del Monte Sumbra sono presenti due rarità naturalistiche: il grande arco naturale del Monte Forato e le \"marmitte dei giganti\" (pozzi glaciali).",
-      "english": "Located on the southern slope of Monte Sumbra are two natural rarities: the large natural arch of Monte Forato and the \"marmitte dei giganti\" (glacial potholes)."
+      "name": "lago di Isola Santa",
+      "quote": "Il lago di Isola Santa, sito nel Comune di Careggine",
+      "english": "The lake of Isola Santa, located in the Municipality of Careggine"
+    },
+    {
+      "id": "s8",
+      "name": "Parco Nazionale della Pace di Sant'Anna di Stazzema",
+      "quote": "Sono inoltre presenti testimonianze della Linea Gotica, delle lotte partigiane e della Seconda Guerra Mondiale, come il Parco Nazionale della Pace di Sant'Anna di Stazzema e il Parco della Resistenza al Monte Brugiana.",
+      "english": "There are also testimonies of the Gothic Line, of the partisan struggles and of the Second World War, such as the National Peace Park of Sant'Anna di Stazzema and the Resistance Park at Monte Brugiana."
     }
   ],
   "days": [
     {
-      "title": "Caves and Peaks of the Apuan Alps",
+      "title": "Caves and Religious Hermitages of Garfagnana",
       "stop_ids": [
         "s1",
         "s2",
+        "s4"
+      ]
+    },
+    {
+      "title": "Versilia Peaks and Subterranean Wonders",
+      "stop_ids": [
         "s3",
-        "s4",
         "s5",
+        "s8"
+      ]
+    },
+    {
+      "title": "Alpine Lakes and Northern Grottoes",
+      "stop_ids": [
         "s6",
         "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "f8b8bdc681f262743b0679d08bd328ad11794dc2a9804e04f3d0d65c16b61b63"
 }

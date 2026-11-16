@@ -3,68 +3,76 @@
     {
       "id": "s1",
       "name": "Piz Beverin",
-      "quote": "Rund um den Piz Beverin (2998 m ü. M.) erstreckt sich das Gebiet des Naturpark Beverin.",
-      "english": "The area of the Beverin Nature Park extends around Piz Beverin (2998 m above sea level)."
+      "quote": "Der Naturpark Beverin (romanisch, Idiom Sutsilvan: Parc natiral Bavregn) ist ein regionaler Naturpark im Kanton Graubünden in der Schweiz, der sich um den namensgebenden Piz Beverin (2998 m ü. M) erstreckt.",
+      "english": "The Beverin Nature Park (Romansh, Sutsilvan idiom: Parc natiral Bavregn) is a regional nature park in the canton of Graubünden in Switzerland, which extends around the namesake Piz Beverin (2998 m above sea level)."
     },
     {
       "id": "s2",
-      "name": "Center da Capricorns",
-      "quote": "Center da Capricorns Naturpark Beverin Geschäftsstelle.",
-      "english": "Center da Capricorns Beverin Nature Park office."
+      "name": "Viamala-Schlucht",
+      "quote": "Drei Schluchten durchziehen das Gebiet des Naturparks: Die Viamala-Schlucht und Roflaschlucht des Hinterrheins sowie die Rheinschlucht/Ruinaulta des Vorderrheins.",
+      "english": "Three gorges run through the area of the nature park: the Viamala Gorge and Rofla Gorge of the Hinterrhein as well as the Rhine Gorge/Ruinaulta of the Vorderrhein."
     },
     {
       "id": "s3",
-      "name": "Cufercalhütte",
-      "quote": "Kommst du mit auf zwei Tage voller Berg-Abenteuer mit anderen Jugendlichen? Wir erklimmen einen Gipfel, übernachten in der Cufercalhütte und stellen beim Klettern unsere Geschicklichkeit auf die Probe.",
-      "english": "Are you coming along for two days full of mountain adventures with other young people? We will climb a peak, stay overnight in the Cufercalhütte and put our skills to the test while climbing."
+      "name": "Roflaschlucht",
+      "quote": "Drei Schluchten durchziehen das Gebiet des Naturparks: Die Viamala-Schlucht und Roflaschlucht des Hinterrheins sowie die Rheinschlucht/Ruinaulta des Vorderrheins.",
+      "english": "Three gorges run through the area of the nature park: the Viamala Gorge and Rofla Gorge of the Hinterrhein as well as the Rhine Gorge/Ruinaulta of the Vorderrhein."
     },
     {
       "id": "s4",
-      "name": "Alp Anorosa",
-      "quote": "16. – 17. Juli 2026 | Cufercalhütte & Alp Anorosa.",
-      "english": "July 16 – 17, 2026 | Cufercalhütte & Alp Anorosa."
+      "name": "Rheinschlucht/Ruinaulta",
+      "quote": "Drei Schluchten durchziehen das Gebiet des Naturparks: Die Viamala-Schlucht und Roflaschlucht des Hinterrheins sowie die Rheinschlucht/Ruinaulta des Vorderrheins.",
+      "english": "Three gorges run through the area of the nature park: the Viamala Gorge and Rofla Gorge of the Hinterrhein as well as the Rhine Gorge/Ruinaulta of the Vorderrhein."
     },
     {
       "id": "s5",
-      "name": "Bergbau Museum Ferrera",
-      "quote": "Im neu eröffneten Bergbau Museum Ferrera wird der Naturpark Beverin im Foyer präsentiert.",
-      "english": "In the newly opened Ferrera Mining Museum, the Beverin Nature Park is presented in the foyer."
+      "name": "Center da Capricorns",
+      "quote": "Im Jahr 2003 wurde daher zunächst das Projekt Center da Capricorns für nachhaltige Regionalentwicklung am Schamserberg ins Leben gerufen.",
+      "english": "In 2003, the Center da Capricorns project for sustainable regional development on the Schamserberg was therefore initially launched."
     },
     {
       "id": "s6",
-      "name": "Splügen",
-      "quote": "Das Passdorf Splügen im Naturpark Beverin wird für innovative und transformative Ansätze in der touristischen Entwicklung geehrte, welche es im Einklang mit der Nachhaltigkeit fördert.",
-      "english": "The pass village of Splügen in the Beverin Nature Park is honored for innovative and transformative approaches in tourism development, which it promotes in harmony with sustainability."
+      "name": "Kirche St. Martin in Zillis",
+      "quote": "Die Kirche St. Martin in Zillis ist besonders für ihre kunstvolle romanische Bilderdecke aus dem frühen 12. Jahrhundert bekannt und gilt als ein bedeutendes Beispiel romanischer Architektur.",
+      "english": "The Church of St. Martin in Zillis is particularly well known for its artistic Romanesque painted ceiling from the early 12th century and is considered a significant example of Romanesque architecture."
     },
     {
       "id": "s7",
-      "name": "Alp Nurdagn",
-      "quote": "Alp- und Naturpark-Fest auf der Alp Nurdagn (Reiner Schilling).",
-      "english": "Alpine and Nature Park Festival on Alp Nurdagn (Reiner Schilling)."
+      "name": "Kirche in Tenna",
+      "quote": "Die Kirche in Tenna, mit ihren Wandmalereien von nationaler Bedeutung, ist ein weiteres Beispiel für das kulturelle Erbe der Walser.",
+      "english": "The church in Tenna, with its wall paintings of national importance, is another example of the cultural heritage of the Walser."
+    },
+    {
+      "id": "s8",
+      "name": "Solarskilift in Tenna",
+      "quote": "Ein innovatives Beispiel erneuerbarer Energien der Region ist der Solarskilift in Tenna.",
+      "english": "An innovative example of renewable energy in the region is the solar ski lift in Tenna."
     }
   ],
   "days": [
     {
-      "title": "Mountain Peaks and Alpine Huts",
-      "stop_ids": [
-        "s1",
-        "s3",
-        "s4"
-      ]
-    },
-    {
-      "title": "Cultural Heritage and Village Life",
+      "title": "Gorges and Historic Churches of the Hinterrhein",
       "stop_ids": [
         "s2",
+        "s3",
         "s6"
       ]
     },
     {
-      "title": "Museums and High Pastures",
+      "title": "Peak, Plateau, and Sustainable Development",
       "stop_ids": [
-        "s5",
-        "s7"
+        "s1",
+        "s5"
+      ]
+    },
+    {
+      "title": "Walser Culture and Innovation in the North",
+      "stop_ids": [
+        "s4",
+        "s7",
+        "s8"
       ]
     }
-  ]
+  ],
+  "_text_sha": "849e2e0652e99758773daa940c72d59987aaaafd8022d4454963cd2b928515ec"
 }

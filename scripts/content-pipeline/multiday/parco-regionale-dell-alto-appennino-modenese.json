@@ -2,43 +2,39 @@
   "stops": [
     {
       "id": "s1",
-      "name": "monte Rondinaio",
-      "quote": "Tra i mammiferi, sono presenti: il riccio, lo scoiattolo, la talpa, il moscardino, il ghiro, la volpe, l'istrice, la faina, la donnola, il cinghiale, il capriolo, il muflone, il daino, il cervo, ma anche la marmotta alpina, introdotta (negli anni cinquanta) nel gruppo del monte Rondinaio e del monte Giovo, e la rara arvicola delle nevi.",
-      "english": "Among the mammals present are: the hedgehog, the squirrel, the mole, the hazel dormouse, the dormouse, the fox, the porcupine, the beech marten, the weasel, the wild boar, the roe deer, the mouflon, the fallow deer, the red deer, but also the alpine marmot, introduced (in the fifties) in the Mount Rondinaio and Mount Giovo group, and the rare snow vole."
+      "name": "Pievepelago",
+      "quote": "Ha sede a Pievepelago ed è stato costituito grazie alla cooperazione di varie istituzioni: la Provincia di Modena, le Comunità montana del Frignano e di Modena Ovest (ora Unione di comuni montani Valli Dolo, Dragone e Secchia) ed i Comuni di Fanano, Fiumalbo, Frassinoro, Montecreto, Pievepelago, Riolunato e Sestola.",
+      "english": "It is based in Pievepelago and was established thanks to the cooperation of various institutions: the Province of Modena, the mountain communities of Frignano and Modena Ovest (now the Union of Mountain Municipalities of the Dolo, Dragone, and Secchia Valleys), and the Municipalities of Fanano, Fiumalbo, Frassinoro, Montecreto, Pievepelago, Riolunato, and Sestola."
     },
     {
       "id": "s2",
-      "name": "monte Giovo",
-      "quote": "Le specie ornitologiche sono innumerevoli, sia stanziali che di passo: da segnalare, in particolare, la presenza, nel gruppo Rondinaio-Giovo, dell'Aquila Reale, mentre a settembre avviene il passaggio del Piviere tortolino.",
-      "english": "The ornithological species are innumerable, both resident and migratory: of particular note is the presence, in the Rondinaio-Giovo group, of the Golden Eagle, while in September the passage of the Eurasian Dotterel occurs."
+      "name": "monte Rondinaio",
+      "quote": "Tra i mammiferi, sono presenti: il riccio, lo scoiattolo, la talpa, il moscardino, il ghiro, la volpe, l'istrice, la faina, la donnola, il cinghiale, il capriolo, il muflone, il daino, il cervo, ma anche la marmotta alpina, introdotta (negli anni cinquanta) nel gruppo del monte Rondinaio e del monte Giovo, e la rara arvicola delle nevi.",
+      "english": "Among the mammals present are: the hedgehog, the squirrel, the mole, the hazel dormouse, the edible dormouse, the fox, the porcupine, the beech marten, the weasel, the wild boar, the roe deer, the mouflon, the fallow deer, the red deer, but also the alpine marmot, introduced (in the fifties) in the group of Monte Rondinaio and Monte Giovo, and the rare snow vole."
     },
     {
       "id": "s3",
-      "name": "monte Cimone",
-      "quote": "Fiore all'occhiello del parco la presenza del monte Cimone (2165 m s.l.m.), massima vetta dell'Appennino settentrionale, e il vicino orto botanico con numerose varietà protette di fiori spontanei.",
-      "english": "The flagship of the park is the presence of Mount Cimone (2165 m a.s.l.), the highest peak of the northern Apennines, and the nearby botanical garden with numerous protected varieties of wild flowers."
+      "name": "monte Giovo",
+      "quote": "Le specie ornitologiche sono innumerevoli, sia stanziali che di passo: da segnalare, in particolare, la presenza, nel gruppo Rondinaio-Giovo, dell'Aquila Reale, mentre a settembre avviene il passaggio del Piviere tortolino.",
+      "english": "The ornithological species are countless, both sedentary and migratory: to be noted, in particular, is the presence of the Golden Eagle in the Rondinaio-Giovo group, while in September the passage of the Eurasian dotterel occurs."
     },
     {
       "id": "s4",
-      "name": "orto botanico",
+      "name": "monte Cimone",
       "quote": "Fiore all'occhiello del parco la presenza del monte Cimone (2165 m s.l.m.), massima vetta dell'Appennino settentrionale, e il vicino orto botanico con numerose varietà protette di fiori spontanei.",
-      "english": "The flagship of the park is the presence of Mount Cimone (2165 m a.s.l.), the highest peak of the northern Apennines, and the nearby botanical garden with numerous protected varieties of wild flowers."
+      "english": "The pride of the park is the presence of Monte Cimone (2165 m a.s.l.), the highest peak of the northern Apennines, and the nearby botanical garden with numerous protected varieties of wild flowers."
     }
   ],
   "days": [
     {
-      "title": "Peaks and Flora of Cimone",
+      "title": "Villages and High Peaks",
       "stop_ids": [
+        "s1",
+        "s2",
         "s3",
         "s4"
       ]
-    },
-    {
-      "title": "Wildlife of the Rondinaio-Giovo Group",
-      "stop_ids": [
-        "s1",
-        "s2"
-      ]
     }
-  ]
+  ],
+  "_text_sha": "cc904d4047a824f65e88fc06e834a8b833e091ef797bca67609a13279ebf777a"
 }

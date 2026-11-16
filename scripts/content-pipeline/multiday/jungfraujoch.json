@@ -2,48 +2,50 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Kleine Scheidegg",
-      "quote": "All through the year, the cog railway runs steeply up through a tunnel to the Jungfraujoch from Kleine Scheidegg."
+      "name": "Jungfraufirn",
+      "quote": "Auf der Südseite des Jungfraujochs erstreckt sich der Jungfraufirn, einer der Ursprünge des Aletschgletschers, der grösste und längste Gletscher der Alpen.",
+      "english": "On the south side of the Jungfraujoch stretches the Jungfraufirn, one of the origins of the Aletsch Glacier, the largest and longest glacier in the Alps."
     },
     {
       "id": "s2",
-      "name": "Eigergletscher",
-      "quote": "From the terminal in Grindelwald, a 3S cableway takes you directly to the station Eigergletscher (Eiger Glacier) in 15 minutes."
+      "name": "Mönchsjochhütte",
+      "quote": "Ein im Sommer üblicherweise für Spaziergänger präparierter Weg führt vom Jungfraujoch zur Mönchsjochhütte.",
+      "english": "In summer, a path usually prepared for walkers leads from the Jungfraujoch to the Mönchsjochhütte."
     },
     {
       "id": "s3",
-      "name": "Eiger North Face",
-      "quote": "One stop within the tunnel offers spectacular views onto the glacier world outside through windows in the Eiger North Face."
+      "name": "Eispalast",
+      "quote": "In Handarbeit, mit Eispickel und Säge, entstand ein 1'000 Quadratmeter grosses Labyrinth – der Eispalast.",
+      "english": "By hand, with ice axes and saws, a 1,000 square meter labyrinth was created – the Ice Palace."
     },
     {
       "id": "s4",
       "name": "Sphinx",
-      "quote": "All of this can be marvelled at from the viewing platforms “ Sphinx” and “Plateau” on the Aletsch glacier or from the “Ice Palace”."
+      "quote": "Etwa 600 Meter östlich des Jochs erhebt sich die Sphinx, eine markante kleine Spitze mit einer Höhe von 3571 Metern.",
+      "english": "About 600 meters east of the col rises the Sphinx, a prominent small peak with a height of 3571 meters."
     },
     {
       "id": "s5",
-      "name": "Plateau",
-      "quote": "All of this can be marvelled at from the viewing platforms “ Sphinx” and “Plateau” on the Aletsch glacier or from the “Ice Palace”."
+      "name": "Sphinx-Observatorium",
+      "quote": "Die Sphinx trägt eine Aussichtsplattform und ein wissenschaftliches Observatorium, das Sphinx-Observatorium.",
+      "english": "The Sphinx carries a viewing platform and a scientific observatory, the Sphinx Observatory."
     },
     {
       "id": "s6",
-      "name": "Ice Palace",
-      "quote": "All of this can be marvelled at from the viewing platforms “ Sphinx” and “Plateau” on the Aletsch glacier or from the “Ice Palace”."
+      "name": "Top of Europe",
+      "quote": "Der Gewinner war Ernst E. Anderegg mit dem im Hang eingefügten «Top of Europe», das 1987 eingeweiht wurde.",
+      "english": "The winner was Ernst E. Anderegg with the 'Top of Europe' integrated into the slope, which was inaugurated in 1987."
     },
     {
       "id": "s7",
-      "name": "Aletsch glacier",
-      "quote": "Specials: Europe’s highest-altitude station at 3454 m a.s.l., Europe’s highest-altitude post office with its own area code (3801), Aletsch glacier – at 23 kilometres the longest Alpine glacier."
-    },
-    {
-      "id": "s8",
-      "name": "Eiger Trail",
-      "quote": "The Eiger Trail goes within touching distance of the north face of the Eiger."
+      "name": "Aussichtslaube",
+      "quote": "Auf der Aussichtslaube stand man am Ursprung des längsten und grössten zusammenhängenden Gletschers der Alpen, dem Aletschgletscher.",
+      "english": "On the lookout arbor, one stood at the source of the longest and largest continuous glacier in the Alps, the Aletsch Glacier."
     }
   ],
   "days": [
     {
-      "title": "Glacier Access and Mountain Ascent",
+      "title": "Glacial Experiences and High Altitude Huts",
       "stop_ids": [
         "s1",
         "s2",
@@ -51,19 +53,19 @@
       ]
     },
     {
-      "title": "Summit Viewpoints and Ice Wonders",
+      "title": "The Sphinx Peak and Research Facilities",
       "stop_ids": [
         "s4",
-        "s5",
-        "s6"
+        "s5"
       ]
     },
     {
-      "title": "Alpine Nature and Glacier Trails",
+      "title": "Modern Architecture and Scenic Viewpoints",
       "stop_ids": [
-        "s7",
-        "s8"
+        "s6",
+        "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "6240a4cab47753392cebbb86fec57d3837a5fbad05d53cbe2075e6df281cfa28"
 }

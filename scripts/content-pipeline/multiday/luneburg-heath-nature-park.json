@@ -2,38 +2,70 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Pietzmoor",
-      "quote": "Pietzmoor im Herbst ist ein Moor-Besuch besonders reizvoll",
-      "english": "Pietzmoor in autumn is a particularly attractive bog to visit"
+      "name": "Wilseder Berg",
+      "quote": "Der Verein kaufte Flächen um den Wilseder Berg an.",
+      "english": "The association purchased areas around the Wilseder Berg."
     },
     {
       "id": "s2",
-      "name": "Heidelandschaft",
-      "quote": "Heidelandschaft zu jeder Jahreszeit beeindruckend!",
-      "english": "Heath landscape impressive at any time of year!"
+      "name": "Naturschutzgebiet Lüneburger Heide",
+      "quote": "Im Kern des Naturparks Lüneburger Heide liegt das etwa 234 km² große Naturschutzgebiet Lüneburger Heide (auch Naturschutzpark Lüneburger Heide genannt).",
+      "english": "In the core of the Lüneburg Heath Nature Park lies the approximately 234 km² Lüneburg Heath Nature Reserve (also called the Lüneburg Heath Nature Conservation Park)."
     },
     {
       "id": "s3",
-      "name": "Undeloh",
-      "quote": "Wetter in Undeloh: 9° Mäßiger Regen",
-      "english": "Weather in Undeloh: 9° Moderate rain"
+      "name": "Oberes Fintautal",
+      "quote": "Naturschutzgebiete mit einer Fläche von mehr als 1 km² sind z. B.: Naturschutzgebiet Lüneburger Heide, 234 km² Oberes Fintautal, 4 km².",
+      "english": "Nature reserves with an area of more than 1 km² are, for example: Lüneburg Heath Nature Reserve, 234 km² Upper Fintau Valley, 4 km²."
     },
     {
       "id": "s4",
-      "name": "Naturpark-Kiosk",
-      "quote": "Becher, Schnuckenkötel, Heide-Hocker oder auch \"einfach nur\" Broschüren... ...finden Sie in unserem Naturpark-Kiosk .",
-      "english": "Cups, Schnuckenkötel, heath-stools or even \"just\" brochures... ...can be found in our Nature Park kiosk."
+      "name": "Stichter See",
+      "quote": "Riensheide mit Stichter See und Sägenmoor, 2,5 km².",
+      "english": "Riensheide with Stichter Lake and Sägenmoor, 2.5 km²."
+    },
+    {
+      "id": "s5",
+      "name": "Höllental",
+      "quote": "Lohbergen, Höllental und angrenzende Flächen, 5,5 km².",
+      "english": "Lohbergen, Höllen Valley and adjacent areas, 5.5 km²."
+    },
+    {
+      "id": "s6",
+      "name": "Quelle des Schwindebaches",
+      "quote": "die Quelle des Schwindebaches (ein linker Nebenfluss der Luhe), die zu den stärksten Quellen Norddeutschlands zählt (60 l/s), sie steht seit 1936 unter Naturschutz (Nummer des Naturdenkmals: ND-LG 127),",
+      "english": "the source of the Schwindebach (a left tributary of the Luhe), which is one of the strongest springs in Northern Germany (60 l/s), has been under nature protection since 1936 (nature monument number: ND-LG 127),"
+    },
+    {
+      "id": "s7",
+      "name": "Heinbusch",
+      "quote": "Wanderblock im Heinbusch bei Raven (Gemeinde Soderstorf) (Nummer des Naturdenkmals: ND-",
+      "english": "Erratic block in the Heinbusch near Raven (municipality of Soderstorf) (nature monument number: ND-"
     }
   ],
   "days": [
     {
-      "title": "Moors, Heathland and Village Life",
+      "title": "Heath Nature Reserve and Peaks",
       "stop_ids": [
         "s1",
         "s2",
-        "s3",
-        "s4"
+        "s3"
+      ]
+    },
+    {
+      "title": "Lakes, Valleys and Moors",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Natural Monuments and Springs",
+      "stop_ids": [
+        "s6",
+        "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "947ace1b9a8573baf73d8226d244b8b2b7fac182de6ef1909f5b314a0767c1ec"
 }

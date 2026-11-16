@@ -2,37 +2,37 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Valle del Curone",
-      "quote": "Il parco regionale di Montevecchia e della Valle del Curone è un'area naturale protetta della Lombardia situata nel territorio dell'area di Merate, nella Brianza lecchese.",
-      "english": "The regional park of Montevecchia and the Curone Valley is a protected natural area of Lombardy located in the territory of the Merate area, in the Brianza region of Lecco."
+      "name": "Montevecchia",
+      "quote": "Il Parco si estende per una superficie di circa 3.809 ettari, che interessa dodici comuni: Airuno, Cernusco Lombardone, La Valletta Brianza, Lomagna, Merate, Missaglia, Montevecchia (che ne è sede), Olgiate Molgora, Osnago, Sirtori, Valgreghentino, Viganò.",
+      "english": "The Park extends over an area of approximately 3,809 hectares, covering twelve municipalities: Airuno, Cernusco Lombardone, La Valletta Brianza, Lomagna, Merate, Missaglia, Montevecchia (which is its headquarters), Olgiate Molgora, Osnago, Sirtori, Valgreghentino, Viganò."
     },
     {
       "id": "s2",
-      "name": "Montevecchia",
-      "quote": "Il Parco si estende per una superficie di circa 3.809 ettari, che interessa dodici comuni: Airuno, Cernusco Lombardone, La Valletta Brianza, Lomagna, Merate, Missaglia, Montevecchia (che ne è sede), Olgiate Molgora, Osnago, Sirtori, Valgreghentino, Viganò.",
-      "english": "The Park extends over an area of approximately 3,809 hectares, which involves twelve municipalities: Airuno, Cernusco Lombardone, La Valletta Brianza, Lomagna, Merate, Missaglia, Montevecchia (which is its headquarters), Olgiate Molgora, Osnago, Sirtori, Valgreghentino, Viganò."
+      "name": "Valle del Curone",
+      "quote": "Il parco regionale di Montevecchia e della Valle del Curone è un'area naturale protetta della Lombardia situata nel territorio dell'area di Merate, nella Brianza lecchese.",
+      "english": "The Montevecchia and Valle del Curone regional park is a protected natural area of Lombardy located in the territory of the Merate area, in the Brianza of Lecco."
     },
     {
       "id": "s3",
-      "name": "torrente Curone",
+      "name": "Curone",
       "quote": "Dal punto di vista idrografico, è attraversato dai torrenti Curone, Molgora, Lavandaia e Molgoretta.",
       "english": "From a hydrographic point of view, it is crossed by the Curone, Molgora, Lavandaia and Molgoretta streams."
     },
     {
       "id": "s4",
-      "name": "torrente Molgora",
+      "name": "Molgora",
       "quote": "Dal punto di vista idrografico, è attraversato dai torrenti Curone, Molgora, Lavandaia e Molgoretta.",
       "english": "From a hydrographic point of view, it is crossed by the Curone, Molgora, Lavandaia and Molgoretta streams."
     },
     {
       "id": "s5",
-      "name": "torrente Lavandaia",
+      "name": "Lavandaia",
       "quote": "Dal punto di vista idrografico, è attraversato dai torrenti Curone, Molgora, Lavandaia e Molgoretta.",
       "english": "From a hydrographic point of view, it is crossed by the Curone, Molgora, Lavandaia and Molgoretta streams."
     },
     {
       "id": "s6",
-      "name": "torrente Molgoretta",
+      "name": "Molgoretta",
       "quote": "Dal punto di vista idrografico, è attraversato dai torrenti Curone, Molgora, Lavandaia e Molgoretta.",
       "english": "From a hydrographic point of view, it is crossed by the Curone, Molgora, Lavandaia and Molgoretta streams."
     },
@@ -40,12 +40,12 @@
       "id": "s7",
       "name": "anfiteatro morenico",
       "quote": "Dal punto di vista geologico, il parco costituisce un luogo interessante poiché è l'ultima propaggine di un anfiteatro morenico.",
-      "english": "From a geological point of view, the park constitutes an interesting place since it is the last offshoot of a morainic amphitheater."
+      "english": "From a geological point of view, the park constitutes an interesting place because it is the last offshoot of a moraine amphitheater."
     }
   ],
   "days": [
     {
-      "title": "Heart of the Park and Valley",
+      "title": "Villages and Valleys of the Park",
       "stop_ids": [
         "s1",
         "s2",
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "title": "The Streams of the Brianza",
+      "title": "Waterways and Streams Exploration",
       "stop_ids": [
         "s3",
         "s4",
@@ -61,5 +61,6 @@
         "s6"
       ]
     }
-  ]
+  ],
+  "_text_sha": "2ace400c956934585df82c5ead9ec0e96493d0989ae239fdab8e162c748f6b7f"
 }

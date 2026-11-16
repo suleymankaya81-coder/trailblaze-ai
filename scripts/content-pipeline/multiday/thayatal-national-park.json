@@ -2,59 +2,65 @@
   "stops": [
     {
       "id": "s1",
-      "name": "wildcat facility",
-      "quote": "At the wildcat facility next to the National Park House you can observe the elegance and wildness of these rare wild animals.",
-      "english": "At the wildcat facility next to the National Park House you can observe the elegance and wildness of these rare wild animals."
+      "name": "Thayatal",
+      "quote": "Das Thayatal mit seinen steilen Hangwäldern zählt zu den schönsten Durchbruchstälern Österreichs.",
+      "english": "The Thaya Valley, with its steep slope forests, is one of the most beautiful breakthrough valleys in Austria."
     },
     {
       "id": "s2",
-      "name": "National Park House",
-      "quote": "At the wildcat facility next to the National Park House you can observe the elegance and wildness of these rare wild animals.",
-      "english": "At the wildcat facility next to the National Park House you can observe the elegance and wildness of these rare wild animals."
+      "name": "Umlaufberg",
+      "quote": "Die höchste Erhebung ist der aus Gneis bestehende Umlaufberg, um den die Thaya fließt.",
+      "english": "The highest elevation is the Umlaufberg, consisting of gneiss, around which the Thaya flows."
     },
     {
       "id": "s3",
-      "name": "Exhibition",
-      "quote": "In & around the National Park House: Exhibition, Nature adventure world, European wildcat facility, Café-Restaurant.",
-      "english": "In & around the National Park House: Exhibition, Nature adventure world, European wildcat facility, Café-Restaurant."
+      "name": "Thaya",
+      "quote": "2 km der Thaya sind zudem als WILDRiver zertifiziert.",
+      "english": "2 km of the Thaya are additionally certified as a WILD River."
     },
     {
       "id": "s4",
-      "name": "Nature adventure world",
-      "quote": "In & around the National Park House: Exhibition, Nature adventure world, European wildcat facility, Café-Restaurant.",
-      "english": "In & around the National Park House: Exhibition, Nature adventure world, European wildcat facility, Café-Restaurant."
+      "name": "Stadt Hardegg",
+      "quote": "Im Nationalpark liegen neben der Stadt Hardegg auch die gleichnamige Burg Hardegg und die Ruine Kaja.",
+      "english": "In addition to the town of Hardegg, the castle of the same name, Burg Hardegg, and the Kaja ruins are also located in the national park."
     },
     {
       "id": "s5",
-      "name": "Thaya",
-      "quote": "In a very small area, the Thaya has created habitats and forest types with a surprising diversity.",
-      "english": "In a very small area, the Thaya has created habitats and forest types with a surprising diversity."
+      "name": "Burg Hardegg",
+      "quote": "Im Nationalpark liegen neben der Stadt Hardegg auch die gleichnamige Burg Hardegg und die Ruine Kaja.",
+      "english": "In addition to the town of Hardegg, the castle of the same name, Burg Hardegg, and the Kaja ruins are also located in the national park."
     },
     {
       "id": "s6",
-      "name": "Town of Hardegg",
-      "quote": "Tourism & region: Excursion destinations, Eating & sleeping, Town of Hardegg, Camper site, E-bike rental.",
-      "english": "Tourism & region: Excursion destinations, Eating & sleeping, Town of Hardegg, Camper site, E-bike rental."
+      "name": "Ruine Kaja",
+      "quote": "Im Nationalpark liegen neben der Stadt Hardegg auch die gleichnamige Burg Hardegg und die Ruine Kaja.",
+      "english": "In addition to the town of Hardegg, the castle of the same name, Burg Hardegg, and the Kaja ruins are also located in the national park."
     },
     {
       "id": "s7",
-      "name": "Camper site",
-      "quote": "Tourism & region: Excursion destinations, Eating & sleeping, Town of Hardegg, Camper site, E-bike rental.",
-      "english": "Tourism & region: Excursion destinations, Eating & sleeping, Town of Hardegg, Camper site, E-bike rental."
+      "name": "Brücke über die Thaya",
+      "quote": "Vom österreichischen Teil führen Wander- und Fahrradwege über die Brücke über die Thaya, die die Staatsgrenze bildet, in den tschechischen Nationalpark.",
+      "english": "From the Austrian part, hiking and cycling paths lead across the bridge over the Thaya, which forms the national border, into the Czech national park."
     }
   ],
   "days": [
     {
-      "title": "Visitor Center and River Discovery",
+      "title": "Historical Landmarks and River Crossings of Hardegg",
       "stop_ids": [
-        "s1",
-        "s2",
-        "s3",
         "s4",
         "s5",
         "s6",
         "s7"
       ]
+    },
+    {
+      "title": "Natural Highlights of the Thaya Valley",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
     }
-  ]
+  ],
+  "_text_sha": "08c63df5a6bf025470a9fd97ad7c8c51806d627605a5043c031e96fb2e3cf158"
 }

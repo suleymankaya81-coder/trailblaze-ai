@@ -2,69 +2,84 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Mittersill National Park Centre",
-      "quote": "Starting points for adventures: Mittersill National Park Centre",
-      "english": "Starting points for adventures: Mittersill National Park Centre"
+      "name": "Großglockner",
+      "quote": "Einige der höchsten Gipfel Österreichs, Großglockner (3798 m ü. A.) und Großvenediger (3657 m), liegen in der Kernzone, in der dem Naturschutz absoluter Vorrang gegeben wird (IUCN-Kategorie II).",
+      "english": "Some of Austria's highest peaks, Großglockner (3798 m above sea level) and Großvenediger (3657 m), are located in the core zone, where nature conservation is given absolute priority (IUCN Category II)."
     },
     {
       "id": "s2",
-      "name": "Mallnitz Visitor Centre",
-      "quote": "Starting points for adventures: Mallnitz Visitor Centre",
-      "english": "Starting points for adventures: Mallnitz Visitor Centre"
+      "name": "Großvenediger",
+      "quote": "Einige der höchsten Gipfel Österreichs, Großglockner (3798 m ü. A.) und Großvenediger (3657 m), liegen in der Kernzone, in der dem Naturschutz absoluter Vorrang gegeben wird (IUCN-Kategorie II).",
+      "english": "Some of Austria's highest peaks, Großglockner (3798 m above sea level) and Großvenediger (3657 m), are located in the core zone, where nature conservation is given absolute priority (IUCN Category II)."
     },
     {
       "id": "s3",
-      "name": "National Park House Matrei",
-      "quote": "Starting points for adventures: National Park House Matrei",
-      "english": "Starting points for adventures: National Park House Matrei"
+      "name": "Krimmler Wasserfälle",
+      "quote": "Bekannte Sehenswürdigkeiten des Nationalparks sind die Krimmler Wasserfälle, die Umbalfälle, der Gletscherweg Innergschlöß (Matrei in Osttirol) und die Franz-Josefs-Höhe am Großglockner.",
+      "english": "Well-known sights of the national park are the Krimml Waterfalls, the Umbal Falls, the Innergschlöß Glacier Trail (Matrei in East Tyrol) and the Franz-Josefs-Höhe on the Großglockner."
     },
     {
       "id": "s4",
-      "name": "Kaiser-Franz-Josefs-Höhe",
-      "quote": "Starting points for adventures: Kaiser-Franz-Josefs-Höhe",
-      "english": "Starting points for adventures: Kaiser-Franz-Josefs-Höhe"
+      "name": "Umbalfälle",
+      "quote": "Bekannte Sehenswürdigkeiten des Nationalparks sind die Krimmler Wasserfälle, die Umbalfälle, der Gletscherweg Innergschlöß (Matrei in Osttirol) und die Franz-Josefs-Höhe am Großglockner.",
+      "english": "Well-known sights of the national park are the Krimml Waterfalls, the Umbal Falls, the Innergschlöß Glacier Trail (Matrei in East Tyrol) and the Franz-Josefs-Höhe on the Großglockner."
     },
     {
       "id": "s5",
-      "name": "Science Center Mittersill",
-      "quote": "Education centres: Science Center Mittersill",
-      "english": "Education centres: Science Center Mittersill"
+      "name": "Gletscherweg Innergschlöß",
+      "quote": "Bekannte Sehenswürdigkeiten des Nationalparks sind die Krimmler Wasserfälle, die Umbalfälle, der Gletscherweg Innergschlöß (Matrei in Osttirol) und die Franz-Josefs-Höhe am Großglockner.",
+      "english": "Well-known sights of the national park are the Krimml Waterfalls, the Umbal Falls, the Innergschlöß Glacier Trail (Matrei in East Tyrol) and the Franz-Josefs-Höhe on the Großglockner."
     },
     {
       "id": "s6",
-      "name": "House of Water",
-      "quote": "Education centres: House of Water",
-      "english": "Education centres: House of Water"
+      "name": "Franz-Josefs-Höhe",
+      "quote": "Bekannte Sehenswürdigkeiten des Nationalparks sind die Krimmler Wasserfälle, die Umbalfälle, der Gletscherweg Innergschlöß (Matrei in Osttirol) und die Franz-Josefs-Höhe am Großglockner.",
+      "english": "Well-known sights of the national park are the Krimml Waterfalls, the Umbal Falls, the Innergschlöß Glacier Trail (Matrei in East Tyrol) and the Franz-Josefs-Höhe on the Großglockner."
     },
     {
       "id": "s7",
-      "name": "Großglockner",
-      "quote": "Pasterze mit Großglockner",
-      "english": "Pasterze with Grossglockner"
+      "name": "Großglockner-Hochalpenstraße",
+      "quote": "Der Nationalpark ist durch einen der meistbefahrenen Übergänge der Alpen erschlossen, die Großglockner-Hochalpenstraße, die das Gebiet vollständig durchquert und auch zerteilt.",
+      "english": "The national park is accessed via one of the busiest mountain passes in the Alps, the Grossglockner High Alpine Road, which completely crosses and also divides the area."
+    },
+    {
+      "id": "s8",
+      "name": "Sulzbachtäler",
+      "quote": "Im August 2019 wurde dieses Gebiet (Sulzbachtäler) von der Weltnaturschutzunion (IUCN) als zweites Gebiet in Österreich (nach dem Wildnisgebiet Dürrenstein) in die Kategorie Ib – Wilderness Area eingestuft.",
+      "english": "In August 2019, this area (Sulzbach Valleys) was classified by the World Conservation Union (IUCN) as the second area in Austria (after the Dürrenstein Wilderness Area) in Category Ib – Wilderness Area."
+    },
+    {
+      "id": "s9",
+      "name": "Gamsgrube",
+      "quote": "Ein bedeutendes botanisches Refugium ist das Sonderschutzgebiet Gamsgrube unterhalb des Fuscherkarkopfs.",
+      "english": "A significant botanical refuge is the Gamsgrube special protection area below the Fuscherkarkopf."
     }
   ],
   "days": [
     {
-      "title": "Adventures and Glaciers",
+      "title": "Waterfalls and Wilderness Valleys",
       "stop_ids": [
-        "s4",
-        "s7"
+        "s3",
+        "s8"
       ]
     },
     {
-      "title": "Mittersill Learning Centres",
+      "title": "Großglockner Peaks and Alpine Roads",
       "stop_ids": [
         "s1",
-        "s5"
+        "s6",
+        "s7",
+        "s9"
       ]
     },
     {
-      "title": "Regional Education and Information",
+      "title": "East Tyrolean Glaciers and Falls",
       "stop_ids": [
         "s2",
-        "s3",
-        "s6"
+        "s4",
+        "s5"
       ]
     }
-  ]
+  ],
+  "_text_sha": "8a838e206257a13cad8760167cb8545da18639c36cef599b8214fbe86c502c57"
 }

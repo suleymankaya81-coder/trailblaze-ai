@@ -2,71 +2,77 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Monte Fenera",
-      "quote": "Il parco naturale del Monte Fenera è un'area naturale protetta di 3378 ettari, situata sulle colline della bassa Valsesia, attorno al monte Fenera (899 m s.l.m.).",
-      "english": "The Monte Fenera natural park is a protected natural area of 3378 hectares, located on the hills of lower Valsesia, around mount Fenera (899 m a.s.l.)."
+      "name": "monte Fenera",
+      "quote": "Il monte è una cima isolata molto arrotondata nella Valsesia meridionale alta 899 M.s.l.m., a 894 metri di altitudine si trova la chiesa di san Bernardo.",
+      "english": "The mountain is a very rounded isolated peak in southern Valsesia, 899 meters above sea level, and at 894 meters of altitude, the church of San Bernardo is located."
     },
     {
       "id": "s2",
-      "name": "Ciutarun",
-      "quote": "Il carsismo ha infatti formato varie cavità, tra cui il Ciutarun, la Ciota Ciara e la grotta del Belvedere, nelle quali sono stati effettuati tali ritrovamenti.",
-      "english": "Karst processes have in fact formed various cavities, including the Ciutarun, the Ciota Ciara and the Belvedere cave, in which these discoveries were made."
+      "name": "chiesa di san Bernardo",
+      "quote": "Il monte è una cima isolata molto arrotondata nella Valsesia meridionale alta 899 M.s.l.m., a 894 metri di altitudine si trova la chiesa di san Bernardo.",
+      "english": "The mountain is a very rounded isolated peak in southern Valsesia, 899 meters above sea level, and at 894 meters of altitude, the church of San Bernardo is located."
     },
     {
       "id": "s3",
-      "name": "Ciota Ciara",
+      "name": "Ciutarun",
       "quote": "Il carsismo ha infatti formato varie cavità, tra cui il Ciutarun, la Ciota Ciara e la grotta del Belvedere, nelle quali sono stati effettuati tali ritrovamenti.",
-      "english": "Karst processes have in fact formed various cavities, including the Ciutarun, the Ciota Ciara and the Belvedere cave, in which these discoveries were made."
+      "english": "The karst phenomena have in fact formed various cavities, including the Ciutarun, the Ciota Ciara and the Belvedere cave, in which these discoveries were made."
     },
     {
       "id": "s4",
-      "name": "grotta del Belvedere",
+      "name": "Ciota Ciara",
       "quote": "Il carsismo ha infatti formato varie cavità, tra cui il Ciutarun, la Ciota Ciara e la grotta del Belvedere, nelle quali sono stati effettuati tali ritrovamenti.",
-      "english": "Karst processes have in fact formed various cavities, including the Ciutarun, the Ciota Ciara and the Belvedere cave, in which these discoveries were made."
+      "english": "The karst phenomena have in fact formed various cavities, including the Ciutarun, the Ciota Ciara and the Belvedere cave, in which these discoveries were made."
     },
     {
       "id": "s5",
-      "name": "chiesa di san Bernardo",
-      "quote": "A 894 metri di altitudine si trova la chiesa di san Bernardo.",
-      "english": "At 894 meters of altitude lies the church of San Bernardo."
+      "name": "grotta del Belvedere",
+      "quote": "Il carsismo ha infatti formato varie cavità, tra cui il Ciutarun, la Ciota Ciara e la grotta del Belvedere, nelle quali sono stati effettuati tali ritrovamenti.",
+      "english": "The karst phenomena have in fact formed various cavities, including the Ciutarun, the Ciota Ciara and the Belvedere cave, in which these discoveries were made."
     },
     {
       "id": "s6",
       "name": "sentiero 768",
       "quote": "Il parco è attraversato da sentieri per il trekking tra cui il sentiero 768, 769 e 772.",
-      "english": "The park is crossed by trekking trails including trail 768, 769 and 772."
+      "english": "The park is crossed by trekking trails including trails 768, 769 and 772."
     },
     {
       "id": "s7",
       "name": "sentiero 769",
       "quote": "Il parco è attraversato da sentieri per il trekking tra cui il sentiero 768, 769 e 772.",
-      "english": "The park is crossed by trekking trails including trail 768, 769 and 772."
+      "english": "The park is crossed by trekking trails including trails 768, 769 and 772."
     },
     {
       "id": "s8",
       "name": "sentiero 772",
       "quote": "Il parco è attraversato da sentieri per il trekking tra cui il sentiero 768, 769 e 772.",
-      "english": "The park is crossed by trekking trails including trail 768, 769 and 772."
+      "english": "The park is crossed by trekking trails including trails 768, 769 and 772."
     }
   ],
   "days": [
     {
-      "title": "Summit and Caves",
+      "title": "Summit and Sanctuary",
       "stop_ids": [
         "s1",
-        "s2",
-        "s3",
-        "s4"
+        "s2"
       ]
     },
     {
-      "title": "Heritage and Trails",
+      "title": "Karst Caves and Archeology",
       "stop_ids": [
-        "s5",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Natural Park Trekking Trails",
+      "stop_ids": [
         "s6",
         "s7",
         "s8"
       ]
     }
-  ]
+  ],
+  "_text_sha": "0122adc020c66046eadf90c6b5f94d71dbf7cae35f6710c09f7419f4a7af6983"
 }

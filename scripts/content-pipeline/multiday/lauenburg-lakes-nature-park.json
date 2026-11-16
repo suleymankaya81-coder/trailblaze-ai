@@ -2,69 +2,84 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Salem Moor",
-      "quote": "Its diversity of species and habitats is what makes it so special: white-tailed eagles circle above the waters, cranes trumpet as they fly in at dusk, moor frogs croak in the Salem Moor, and orchids grow in the ice age Hellbach Valley.",
-      "english": "Its diversity of species and habitats is what makes it so special: white-tailed eagles circle above the waters, cranes trumpet as they fly in at dusk, moor frogs croak in the Salem Moor, and orchids grow in the ice age Hellbach Valley."
+      "name": "Ratzeburger See",
+      "quote": "Die größten Seen im Naturpark sind der Ratzeburger See und der Schaalsee, die durch den bei Salem beginnenden Schaalsee-Kanal miteinander verbunden sind.",
+      "english": "The largest lakes in the nature park are Lake Ratzeburg and Lake Schaalsee, which are connected to each other by the Schaalsee Canal, which begins near Salem."
     },
     {
       "id": "s2",
-      "name": "Hellbach Valley",
-      "quote": "Its diversity of species and habitats is what makes it so special: white-tailed eagles circle above the waters, cranes trumpet as they fly in at dusk, moor frogs croak in the Salem Moor, and orchids grow in the ice age Hellbach Valley.",
-      "english": "Its diversity of species and habitats is what makes it so special: white-tailed eagles circle above the waters, cranes trumpet as they fly in at dusk, moor frogs croak in the Salem Moor, and orchids grow in the ice age Hellbach Valley."
+      "name": "Schaalsee",
+      "quote": "Der Naturpark Lauenburgische Seen umfasst 40 Seen, grenzt direkt an das mecklenburgische Biosphärenreservat Schaalsee an und bildet mit diesem zusammen ein großes Schutzgebiet entlang der ehemaligen innerdeutschen Grenze.",
+      "english": "The Lauenburg Lakes Nature Park comprises 40 lakes, borders directly on the Mecklenburg Schaalsee Biosphere Reserve and, together with it, forms a large protected area along the former inner-German border."
     },
     {
       "id": "s3",
-      "name": "lake Schaalsee",
-      "quote": "Between lake Schaalsee and the Elbe-Lübeck canal, between Lübeck and Büchen, there is a vast mosaic landscape consisting of water, forest, meadows, fields and hedge walls.",
-      "english": "Between lake Schaalsee and the Elbe-Lübeck canal, between Lübeck and Büchen, there is a vast mosaic landscape consisting of water, forest, meadows, fields and hedge walls."
+      "name": "Schaalsee-Kanal",
+      "quote": "Die größten Seen im Naturpark sind der Ratzeburger See und der Schaalsee, die durch den bei Salem beginnenden Schaalsee-Kanal miteinander verbunden sind.",
+      "english": "The largest lakes in the nature park are Lake Ratzeburg and Lake Schaalsee, which are connected to each other by the Schaalsee Canal, which begins near Salem."
     },
     {
       "id": "s4",
-      "name": "Elbe-Lübeck canal",
-      "quote": "Between lake Schaalsee and the Elbe-Lübeck canal, between Lübeck and Büchen, there is a vast mosaic landscape consisting of water, forest, meadows, fields and hedge walls.",
-      "english": "Between lake Schaalsee and the Elbe-Lübeck canal, between Lübeck and Büchen, there is a vast mosaic landscape consisting of water, forest, meadows, fields and hedge walls."
+      "name": "Ratzeburg",
+      "quote": "Im Naturpark liegen weiter die Kreisstadt Ratzeburg und Mölln mit dem Hellbachtal.",
+      "english": "The district town of Ratzeburg and Mölln with the Hellbach Valley are also located in the nature park."
     },
     {
       "id": "s5",
-      "name": "Naturparkzentrum Uhlenkolk",
-      "quote": "Exciting and diverse information is available at the nature park center “Naturparkzentrum Uhlenkolk” in Mölln.",
-      "english": "Exciting and diverse information is available at the nature park center “Naturparkzentrum Uhlenkolk” in Mölln."
+      "name": "Mölln",
+      "quote": "Im Naturpark liegen weiter die Kreisstadt Ratzeburg und Mölln mit dem Hellbachtal.",
+      "english": "The district town of Ratzeburg and Mölln with the Hellbach Valley are also located in the nature park."
     },
     {
       "id": "s6",
-      "name": "viewing towers",
-      "quote": "The nature park with its hiking trails, viewing towers, information points, educational trails and picnic facilities is an interactive sanctuary for you to touch, experience and join in.",
-      "english": "The nature park with its hiking trails, viewing towers, information points, educational trails and picnic facilities is an interactive sanctuary for you to touch, experience and join in."
+      "name": "Hellbachtal",
+      "quote": "Im Naturpark liegen weiter die Kreisstadt Ratzeburg und Mölln mit dem Hellbachtal.",
+      "english": "The district town of Ratzeburg and Mölln with the Hellbach Valley are also located in the nature park."
     },
     {
       "id": "s7",
-      "name": "educational trails",
-      "quote": "The nature park with its hiking trails, viewing towers, information points, educational trails and picnic facilities is an interactive sanctuary for you to touch, experience and join in.",
-      "english": "The nature park with its hiking trails, viewing towers, information points, educational trails and picnic facilities is an interactive sanctuary for you to touch, experience and join in."
+      "name": "Alte Salzstraße",
+      "quote": "Durch den Naturpark verläuft – an einigen Stellen, wie bei Fredeburg, noch als mittelalterliche Trasse – die Alte Salzstraße von Lüneburg nach Lübeck.",
+      "english": "The Old Salt Road from Lüneburg to Lübeck runs through the nature park – in some places, such as near Fredeburg, still as a medieval route."
+    },
+    {
+      "id": "s8",
+      "name": "Naturparkweg",
+      "quote": "Durch die Landschaft verläuft der Naturparkweg, der die fünf Naturparke in Schleswig-Holstein für Wanderer verbindet.",
+      "english": "The Nature Park Trail, which connects the five nature parks in Schleswig-Holstein for hikers, runs through the landscape."
+    },
+    {
+      "id": "s9",
+      "name": "Elbe-Lübeck-Kanal",
+      "quote": "Der Naturpark wird nach Westen zwischen Berkenthin und Büchen in etwa durch den Elbe-Lübeck-Kanal begrenzt.",
+      "english": "The nature park is bounded to the west between Berkenthin and Büchen roughly by the Elbe-Lübeck Canal."
     }
   ],
   "days": [
     {
-      "title": "Moors and Valleys",
+      "title": "Towns and Valleys of the Park",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Great Lakes and Waterways",
       "stop_ids": [
         "s1",
-        "s2"
+        "s2",
+        "s3"
       ]
     },
     {
-      "title": "Waterways and Canals",
+      "title": "Historic Trails and Western Borders",
       "stop_ids": [
-        "s3",
-        "s4"
-      ]
-    },
-    {
-      "title": "Visitor Centers and Trails",
-      "stop_ids": [
-        "s5",
-        "s6",
-        "s7"
+        "s7",
+        "s8",
+        "s9"
       ]
     }
-  ]
+  ],
+  "_text_sha": "0a07506f65f70624d31e52175fa54605965bc3238894f11a70bf04ca3e6e826d"
 }

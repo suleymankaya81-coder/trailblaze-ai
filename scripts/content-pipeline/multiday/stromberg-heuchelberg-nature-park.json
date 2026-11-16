@@ -2,17 +2,39 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Natural Park Stromberg-Heuchelberg",
-      "quote": "With its 33,000 ha is Stromberg-Heuchelberg a small natural park, but for the many cities in the surrounding area the natural park is an important local recreation area.",
-      "english": "With its 33,000 ha, Stromberg-Heuchelberg is a small nature park, but for the many cities in the surrounding area, the nature park is an important local recreation area."
+      "name": "Stromberg",
+      "quote": "Der Naturpark ist geprägt durch die beiden Höhenzüge Stromberg und Heuchelberg.",
+      "english": "The nature park is characterized by the two ridges Stromberg and Heuchelberg."
+    },
+    {
+      "id": "s2",
+      "name": "Heuchelberg",
+      "quote": "Geologisch gehört der Naturpark zum Keuperbergland.",
+      "english": "Geologically, the nature park belongs to the Keuper highlands."
+    },
+    {
+      "id": "s3",
+      "name": "Ehmetsklinge",
+      "quote": "Im Mai 2009 wurde am Zaberfelder Stausee Ehmetsklinge das neue Naturparkzentrum eröffnet, das als zentrale Anlaufstelle für Besucher dient.",
+      "english": "In May 2009, the new nature park center was opened at the Zaberfeld reservoir Ehmetsklinge, which serves as a central contact point for visitors."
+    },
+    {
+      "id": "s4",
+      "name": "Naturparkzentrum",
+      "quote": "Es beherbergt die Geschäftsstelle und eine Erlebnisausstellung.",
+      "english": "It houses the administrative office and an interactive exhibition."
     }
   ],
   "days": [
     {
-      "title": "Stromberg-Heuchelberg Exploration",
+      "title": "Ridges and Reservoir Center",
       "stop_ids": [
-        "s1"
+        "s1",
+        "s2",
+        "s3",
+        "s4"
       ]
     }
-  ]
+  ],
+  "_text_sha": "77ab2bd8033d2091284cfc72c2e9b8a0c2a2a1020543d4d0bdfd7212f54b34c5"
 }

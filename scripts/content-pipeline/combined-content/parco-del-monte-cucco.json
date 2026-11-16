@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Umbria",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco del Monte Cucco"
+        "Grotta di Monte Cucco",
+        "Grotta di Santa Agnese"
       ],
       "seo_title": "Parco del Monte Cucco Visit Guide"
     },
@@ -32,16 +33,57 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco del Monte Cucco",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Central Massif and Caving",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco del Monte Cucco",
-                "stop_id": "parco-del-monte-cucco",
-                "detail": "The park of Monte Cucco is a protected natural area of the Umbria region, established in 1995, which incorporates the adjacent territories to the mountain from which it takes its name."
+                "name": "Grotta di Monte Cucco",
+                "stop_id": "parco-del-monte-cucco--s2",
+                "detail": "The main attraction of the park is the Grotta di Monte Cucco, one of the most extensive caves in Italy: a destination for speleologists and researchers, in which an area equipped with lights, stairs and walkways has been created, visitable for tourism accompanied by specialized guides."
+              },
+              {
+                "name": "Grotta di Santa Agnese",
+                "stop_id": "parco-del-monte-cucco--s6",
+                "detail": "Of great charm is also the Grotta di Santa Agnese, a cavern of considerable size easily reachable on foot, where history and legend merge."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco del Monte Cucco before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Plateaus and Northern Canyons",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Pian delle Macinare",
+                "stop_id": "parco-del-monte-cucco--s3",
+                "detail": "The Pian delle Macinare plateau represents a main hub for hiking trails that develop for about 100 km throughout the park."
+              },
+              {
+                "name": "Forra di Rio Freddo",
+                "stop_id": "parco-del-monte-cucco--s4",
+                "detail": "The eastern slope of the mountain is furrowed by the Forra di Rio Freddo, an imposing canyon descended every year by hundreds of canyoning enthusiasts."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco del Monte Cucco before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Northern Peaks and Mountain Resorts",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Val di Ranco",
+                "stop_id": "parco-del-monte-cucco--s5",
+                "detail": "the village of Val di Ranco is also located there, a small tourist resort situated at 1,000 m altitude."
+              },
+              {
+                "name": "Corno del Catria",
+                "stop_id": "parco-del-monte-cucco--s7",
+                "detail": "Eagles are rarely spotted (but it is not quite rare to spot hawks) the nesting sites are located at the far north of the park, on the walls of Corno del Catria."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco del Monte Cucco before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +121,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_del_Monte_Cucco"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_del_Monte_Cucco"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:27:01.300980+00:00"
       }
     }
   }

@@ -2,38 +2,84 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Hunte",
-      "quote": "Ob auf einer Radtour oder auf Wanderwegen , bei einer Kanutour auf der Hunte oder in stiller Natur – der Naturpark bietet Erholung für Körper und Geist.",
-      "english": "Whether on a bike tour or on hiking trails, on a canoe trip on the Hunte or in peaceful nature – the nature park offers relaxation for body and soul."
+      "name": "Pestruper Gräberfeld (Wildeshausen)",
+      "quote": "Die bekanntesten sind die Anlagen: ... Pestruper Gräberfeld (Wildeshausen).",
+      "english": "The best known sites are: ... Pestruper Gräberfeld (Wildeshausen)."
     },
     {
       "id": "s2",
-      "name": "Klosterareal Hude",
-      "quote": "Zu deinen Aufgaben gehören unter anderem die Weiterentwicklung des Klosterareals Hude für Tourismus & Kultur, die Planung von Workshops & Veranstaltungen, Fördermittelakquise und Öffentlichkeitsarbeit.",
-      "english": "Your tasks include, among others, the further development of the Hude Monastery grounds for tourism & culture, the planning of workshops & events, fundraising and public relations."
+      "name": "Alexanderkirche",
+      "quote": "Zu den wichtigsten historischen Gebäuden aus Mittelalter und früher Neuzeit zählen die Stiftskirche in Bassum, die Klosterruine in Hude, das gotische Rathaus und die Alexanderkirche in Wildeshausen und der Amtshof in Syke.",
+      "english": "The most important historical buildings from the Middle Ages and early modern period include the collegiate church in Bassum, the monastery ruins in Hude, the Gothic town hall and the Alexander Church in Wildeshausen and the Amtshof in Syke."
     },
     {
       "id": "s3",
-      "name": "Naturpark-Huus",
-      "quote": "Am 13.06.2026 öffnet das Naturpark-Huus für Alle.",
-      "english": "On June 13, 2026, the Naturpark-Huus opens for everyone."
+      "name": "Ahlhorner Kellersteine",
+      "quote": "Die bekanntesten sind die Anlagen: Ahlhorner Kellersteine (2 Anlagen).",
+      "english": "The best known sites are: Ahlhorner Kellersteine (2 sites)."
     },
     {
       "id": "s4",
-      "name": "Großsteingräber",
-      "quote": "Großsteingräber, Hügelgräber und Wallhecken zeugen von jahrtausendealter Besiedlung.",
-      "english": "Megalithic tombs, burial mounds and hedgerows bear witness to thousands of years of settlement."
+      "name": "Glaner Braut",
+      "quote": "Die bekanntesten sind die Anlagen: ... Glaner Braut (4 Anlagen).",
+      "english": "The best known sites are: ... Glaner Braut (4 sites)."
+    },
+    {
+      "id": "s5",
+      "name": "Arkeburg",
+      "quote": "Von der Arkeburg ist heute noch der Ringwall erhalten.",
+      "english": "The ring wall of the Arkeburg is still preserved today."
+    },
+    {
+      "id": "s6",
+      "name": "Hünenburg",
+      "quote": "Die Hüneburg wurde teilrekonstruiert; nachgebaut wurden die Toranlage sowie ein Wirtschaftsgebäude der ehemaligen Burg.",
+      "english": "The Hüneburg was partially reconstructed; the gate system and a farm building of the former castle were rebuilt."
+    },
+    {
+      "id": "s7",
+      "name": "Scheunenviertel Neubruchhausen",
+      "quote": "In Neubruchhausen gibt es außer der historischen Oberförsterei das kleine Scheunenviertel Neubruchhausen.",
+      "english": "In Neubruchhausen, in addition to the historical head forester's office, there is the small Neubruchhausen barn quarter."
+    },
+    {
+      "id": "s8",
+      "name": "Goldenstedter Moor",
+      "quote": "„Zünftig“ sind auch Fahrten durch das Goldenstedter Moor mit der Moorbahn bzw. der Bimmelbahn „Jan Spieker“.",
+      "english": "'Authentic' are also trips through the Goldenstedter Moor with the moor railway or the 'Jan Spieker' slow-train."
+    },
+    {
+      "id": "s9",
+      "name": "Sage War Cemetery",
+      "quote": "Im Naturpark Wildeshauser Geest liegt auch der Friedhof „Sage War Cemetery“, auf dem Soldaten aus Ländern des Commonwealth of Nations beigesetzt sind, die am Ende des Zweiten Weltkriegs bei der Besetzung Deutschlands und seiner Befreiung von der Herrschaft des Nationalsozialismus ihr Leben ließen.",
+      "english": "In the Wildeshauser Geest Nature Park lies the 'Sage War Cemetery', where soldiers from Commonwealth of Nations countries are buried who lost their lives at the end of the Second World War during the occupation of Germany and its liberation from National Socialist rule."
     }
   ],
   "days": [
     {
-      "title": "Culture and River Adventures",
+      "title": "Wildeshausen Heritage and Monuments",
       "stop_ids": [
         "s1",
         "s2",
+        "s9"
+      ]
+    },
+    {
+      "title": "Megaliths and Fortifications",
+      "stop_ids": [
         "s3",
-        "s4"
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Moors and Rural Architecture",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
       ]
     }
-  ]
+  ],
+  "_text_sha": "ef02fe7fdb291d02b4dd413f1037341ff1a39683b0f13c493ce4f3f13a12bfa6"
 }

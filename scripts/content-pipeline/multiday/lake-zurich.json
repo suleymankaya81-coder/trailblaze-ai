@@ -2,64 +2,77 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Lake Zurich",
-      "quote": "Discover the diversity of Zurich: From the old town to Bahnhofstrasse and Lake Zurich – experience the unique mix of city and nature.",
-      "english": "Discover the diversity of Zurich: From the old town to Bahnhofstrasse and Lake Zurich – experience the unique mix of city and nature."
+      "name": "Obersee",
+      "quote": "Der durch den Seedamm von Rapperswil vom grösseren Seeteil abgegrenzte Seeteil zwischen Rapperswil und Schmerikon wird Obersee genannt.",
+      "english": "The part of the lake between Rapperswil and Schmerikon, separated from the larger part of the lake by the Rapperswil causeway, is called the Obersee."
     },
     {
       "id": "s2",
-      "name": "Bahnhofstrasse",
-      "quote": "Discover the diversity of Zurich: From the old town to Bahnhofstrasse and Lake Zurich – experience the unique mix of city and nature.",
-      "english": "Discover the diversity of Zurich: From the old town to Bahnhofstrasse and Lake Zurich – experience the unique mix of city and nature."
+      "name": "Ufenau",
+      "quote": "Zwischen Rapperswil und Pfäffikon liegen zwei Inseln, die bewohnte Ufenau und die unbewohnte, unter Naturschutz stehende Lützelau.",
+      "english": "Between Rapperswil and Pfäffikon lie two islands, the inhabited Ufenau and the uninhabited Lützelau, which is under nature protection."
     },
     {
       "id": "s3",
-      "name": "Albis ridge",
-      "quote": "Enjoyable hike with superb views along the Albis ridge.",
-      "english": "Enjoyable hike with superb views along the Albis ridge."
+      "name": "Lützelau",
+      "quote": "Zwischen Rapperswil und Pfäffikon liegen zwei Inseln, die bewohnte Ufenau und die unbewohnte, unter Naturschutz stehende Lützelau.",
+      "english": "Between Rapperswil and Pfäffikon lie two islands, the inhabited Ufenau and the uninhabited Lützelau, which is under nature protection."
     },
     {
       "id": "s4",
-      "name": "Üetliberg",
-      "quote": "The trail follows the spectacular Albis mountain chain from the Üetliberg to the Albishorn before descending to Ebertswil, where the milk soup stone commemorates the Kappel milk soup of 1529.",
-      "english": "The trail follows the spectacular Albis mountain chain from the Üetliberg to the Albishorn before descending to Ebertswil, where the milk soup stone commemorates the Kappel milk soup of 1529."
+      "name": "Schönenwirt",
+      "quote": "Das Inselchen Schönenwirt vor Richterswil ist die drittgrösste natürliche Insel im See.",
+      "english": "The islet of Schönenwirt off Richterswil is the third largest natural island in the lake."
     },
     {
       "id": "s5",
-      "name": "Albishorn",
-      "quote": "The trail follows the spectacular Albis mountain chain from the Üetliberg to the Albishorn before descending to Ebertswil, where the milk soup stone commemorates the Kappel milk soup of 1529.",
-      "english": "The trail follows the spectacular Albis mountain chain from the Üetliberg to the Albishorn before descending to Ebertswil, where the milk soup stone commemorates the Kappel milk soup of 1529."
+      "name": "Schanzengraben",
+      "quote": "Als zweiter Seeabfluss in Zürich dient seit 1642 der Schanzengraben, der anlässlich der Schleifung der Schanzen der Zürcher Stadtbefestigungen um 1834 der Auffüllung entging.",
+      "english": "Since 1642, the Schanzengraben has served as the second lake outlet in Zurich, which escaped being filled in during the demolition of the Zurich city fortifications around 1834."
     },
     {
       "id": "s6",
-      "name": "old town",
-      "quote": "Discover the diversity of Zurich: From the old town to Bahnhofstrasse and Lake Zurich – experience the unique mix of city and nature.",
-      "english": "Discover the diversity of Zurich: From the old town to Bahnhofstrasse and Lake Zurich – experience the unique mix of city and nature."
+      "name": "Lindenhof",
+      "quote": "Er wird durch den Höhenrücken zwischen dem See und dem Sihltal, durch die Höhe beim Lindenhof in der Altstadt und durch das Burghölzli markiert, während das Sihltal den Schmelzwasserstrom am Rand des Gletschers aufnahm.",
+      "english": "It is marked by the ridge between the lake and the Sihl Valley, by the elevation near the Lindenhof in the old town, and by the Burghölzli, while the Sihl Valley took in the meltwater flow at the edge of the glacier."
     },
     {
       "id": "s7",
-      "name": "Zürich-Zugerland-Panoramaweg",
-      "quote": "The trail follows the spectacular Albis mountain chain from the Üetliberg to the Albishorn before descending to Ebertswil, where the milk soup stone commemorates the Kappel milk soup of 1529.",
-      "english": "The trail follows the spectacular Albis mountain chain from the Üetliberg to the Albishorn before descending to Ebertswil, where the milk soup stone commemorates the Kappel milk soup of 1529."
+      "name": "Burghölzli",
+      "quote": "Er wird durch den Höhenrücken zwischen dem See und dem Sihltal, durch die Höhe beim Lindenhof in der Altstadt und durch das Burghölzli markiert, während das Sihltal den Schmelzwasserstrom am Rand des Gletschers aufnahm.",
+      "english": "It is marked by the ridge between the lake and the Sihl Valley, by the elevation near the Lindenhof in the old town, and by the Burghölzli, while the Sihl Valley took in the meltwater flow at the edge of the glacier."
+    },
+    {
+      "id": "s8",
+      "name": "Etzel",
+      "quote": "Das schmale Tal, in dem der See liegt, ist auf der Südwestseite von den Höhenzügen des Etzels und des Albis und auf der Nordostseite von der Hügellandschaft des Zürcher Oberlandes und vom Pfannenstiel flankiert.",
+      "english": "The narrow valley in which the lake lies is flanked on the southwest side by the ridges of the Etzel and the Albis and on the northeast side by the hilly landscape of the Zurich Highlands and the Pfannenstiel."
     }
   ],
   "days": [
     {
-      "title": "City Center and Lakeside Exploration",
+      "title": "Islands and Waters of the Upper Lake",
       "stop_ids": [
         "s1",
         "s2",
-        "s6"
+        "s3"
       ]
     },
     {
-      "title": "Albis Ridge Mountain Trails",
+      "title": "Historic Defenses and Island Views",
       "stop_ids": [
-        "s3",
         "s4",
-        "s5",
-        "s7"
+        "s5"
+      ]
+    },
+    {
+      "title": "Historic Heights and Southern Ridges",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
       ]
     }
-  ]
+  ],
+  "_text_sha": "6b153c18336817086848752c6ca89f52762dfb7c19ae82a5313942c107f90109"
 }

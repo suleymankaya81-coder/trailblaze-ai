@@ -2,7 +2,7 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Punta Palascìa",
+      "name": "faro di Punta Palascìa",
       "quote": "Il parco comprende anche la zona dove sorge il faro di Punta Palascìa, punto più orientale d'Italia.",
       "english": "The park also includes the area where the Punta Palascìa lighthouse stands, the easternmost point of Italy."
     },
@@ -10,56 +10,38 @@
       "id": "s2",
       "name": "grotta dei Cervi",
       "quote": "Tra le grotte più importanti sono da citare: la grotta dei Cervi;",
-      "english": "Among the most important caves, the grotta dei Cervi should be mentioned;"
+      "english": "Among the most important caves, the following should be mentioned: the Cervi cave;"
     },
     {
       "id": "s3",
       "name": "grotta Romanelli",
       "quote": "Tra le grotte più importanti sono da citare: la grotta Romanelli;",
-      "english": "Among the most important caves, the grotta Romanelli should be mentioned;"
+      "english": "Among the most important caves, the following should be mentioned: the Romanelli cave;"
     },
     {
       "id": "s4",
       "name": "grotta Zinzulusa",
       "quote": "Tra le grotte più importanti sono da citare: la grotta Zinzulusa.",
-      "english": "Among the most important caves, the grotta Zinzulusa should be mentioned."
+      "english": "Among the most important caves, the following should be mentioned: the Zinzulusa cave."
     },
     {
       "id": "s5",
-      "name": "Bosco di Tricase",
-      "quote": "Il parco naturale regionale Costa Otranto-Santa Maria di Leuca e Bosco di Tricase è un'area naturale protetta della Puglia istituita con la legge regionale del 26 ottobre 2006, n. 30.",
-      "english": "The Costa Otranto-Santa Maria di Leuca and Bosco di Tricase regional natural park is a protected natural area of Puglia established by regional law on October 26, 2006, n. 30."
-    },
-    {
-      "id": "s6",
       "name": "Le Orte",
       "quote": "Nella zona sono presenti inoltre la macchia mediterranea, caratterizzata dalla presenza di quercia spinosa (splendida quella in località Le Orte) e boschetti a quercia vallonea e leccio.",
-      "english": "In the area there is also Mediterranean scrub, characterized by the presence of kermes oak (splendid is the one in the locality of Le Orte) and groves of Vallonea oak and holm oak."
-    },
-    {
-      "id": "s7",
-      "name": "Santa Maria di Leuca",
-      "quote": "Il parco naturale regionale Costa Otranto-Santa Maria di Leuca e Bosco di Tricase è un'area naturale protetta della Puglia istituita con la legge regionale del 26 ottobre 2006, n. 30.",
-      "english": "The Costa Otranto-Santa Maria di Leuca and Bosco di Tricase regional natural park is a protected natural area of Puglia established by regional law on October 26, 2006, n. 30."
+      "english": "In the area there is also the Mediterranean scrub, characterized by the presence of kermes oak (splendid is the one in the locality of Le Orte) and groves of Vallonea oak and holm oak."
     }
   ],
   "days": [
     {
-      "title": "Otranto and the Coastal Caves",
+      "title": "Caves and Coastal Landmarks",
       "stop_ids": [
         "s1",
         "s2",
         "s3",
-        "s6"
-      ]
-    },
-    {
-      "title": "Southern Forests and Coastal Cavities",
-      "stop_ids": [
         "s4",
-        "s5",
-        "s7"
+        "s5"
       ]
     }
-  ]
+  ],
+  "_text_sha": "aa860f58b7a84840510fb4b98144fffceb68f1f1bfcb77956be02d15432e9875"
 }

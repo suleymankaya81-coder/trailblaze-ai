@@ -2,38 +2,65 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Villa Picchetta",
-      "quote": "Situata nel comune di Cameri la villa - di proprietà della regione - è nota anche con il nome di \"Cascina Picchetta\" e, al suo interno, trova la sede dell'Ente di gestione delle aree protette del Ticino e del Lago Maggiore.",
-      "english": "Located in the municipality of Cameri, the villa - owned by the region - is also known by the name \"Cascina Picchetta\" and, inside it, is the headquarters of the Management Body of the protected areas of Ticino and Lake Maggiore."
+      "name": "fiume Ticino",
+      "quote": "Nelle zone umide, invece, tra gli anfibi vi è il pelobate fosco, mentre a livello di fauna ittica del fiume si possono trovare trote, lucci e cavedani.",
+      "english": "In the wetlands, on the other hand, among the amphibians there is the common spadefoot toad, while regarding the fish fauna of the river, trout, pike and chubs can be found."
     },
     {
       "id": "s2",
-      "name": "Mulino Vecchio di Bellinzago Novarese",
+      "name": "Bellinzago Novarese",
       "quote": "Situato nel comune di Bellinzago Novarese, è l'unico mulino ad acqua funzionante nella valle del Ticino, oggi Centro regionale di Educazione Ambientale.",
-      "english": "Located in the municipality of Bellinzago Novarese, it is the only functioning water mill in the Ticino valley, today a regional Center for Environmental Education."
+      "english": "Located in the municipality of Bellinzago Novarese, it is the only working water mill in the Ticino valley, today a regional Environmental Education Center."
     },
     {
       "id": "s3",
-      "name": "Bellinzago Novarese",
-      "quote": "Il parco Valle Ticino si estende in una porzione della provincia di Novara, a sud del Lago Maggiore, su di una superficie di circa 6.561 ettari che comprende una serie di comuni del Piemonte posti vicino fiume Ticino: Bellinzago Novarese, Cameri, Castelletto Sopra Ticino, Cerano, Galliate, Marano Ticino, Oleggio, Pombia, Romentino, Trecate, Varallo Pombia.",
-      "english": "The Valle Ticino park extends in a portion of the province of Novara, south of Lake Maggiore, over an area of approximately 6,561 hectares which includes a series of municipalities in Piedmont located near the Ticino river: Bellinzago Novarese, Cameri, Castelletto Sopra Ticino, Cerano, Galliate, Marano Ticino, Oleggio, Pombia, Romentino, Trecate, Varallo Pombia."
+      "name": "Cameri",
+      "quote": "Situata nel comune di Cameri la villa - di proprietà della regione - è nota anche con il nome di \"Cascina Picchetta\" e, al suo interno, trova la sede dell'Ente di gestione delle aree protette del Ticino e del Lago Maggiore.",
+      "english": "Located in the municipality of Cameri, the villa - owned by the region - is also known by the name \"Cascina Picchetta\" and, inside it, is the headquarters of the Management Body for the protected areas of Ticino and Lake Maggiore."
     },
     {
       "id": "s4",
-      "name": "Cameri",
-      "quote": "Quest'area, con sede presso la tenuta Villa Picchetta, nel comune di Cameri, è stata istituita per mezzo di una legge regionale del 1978 e nel corso degli anni è diventata Sito di interesse comunitario.",
-      "english": "This area, with headquarters at the Villa Picchetta estate, in the municipality of Cameri, was established by means of a regional law of 1978 and over the years has become a Site of Community Interest."
+      "name": "Mulino Vecchio di Bellinzago Novarese",
+      "quote": "La struttura, menzionata nei documenti del XVI secolo, è stata acquistata dal Parco che - nel corso degli anni, con l'aiuto della regione - si è occupato di recuperarla e restaurarla, facendola diventare così centro di visita.",
+      "english": "The structure, mentioned in 16th-century documents, was purchased by the Park which - over the years, with the help of the region - took care of recovering and restoring it, thus making it a visitor center."
+    },
+    {
+      "id": "s5",
+      "name": "Villa Picchetta",
+      "quote": "Il complesso architettonico, già noto nei documenti del XVI secolo, è costituito da rustici e da un palazzo che si distingue per i caratteri signorili.",
+      "english": "The architectural complex, already known in 16th-century documents, consists of rustic buildings and a palace that stands out for its noble character."
+    },
+    {
+      "id": "s6",
+      "name": "Castelletto Sopra Ticino",
+      "quote": "Il parco Valle Ticino si estende in una porzione della provincia di Novara, a sud del Lago Maggiore, su di una superficie di circa 6.561 ettari che comprende una serie di comuni del Piemonte posti vicino fiume Ticino: Bellinzago Novarese, Cameri, Castelletto Sopra Ticino, Cerano, Galliate, Marano Ticino, Oleggio, Pombia, Romentino, Trecate, Varallo Pombia.",
+      "english": "The Ticino Valley park extends across a portion of the province of Novara, south of Lake Maggiore, over an area of approximately 6,561 hectares which includes a series of Piedmontese municipalities located near the Ticino river: Bellinzago Novarese, Cameri, Castelletto Sopra Ticino, Cerano, Galliate, Marano Ticino, Oleggio, Pombia, Romentino, Trecate, Varallo Pombia."
+    },
+    {
+      "id": "s7",
+      "name": "Galliate",
+      "quote": "Il parco Valle Ticino si estende in una porzione della provincia di Novara, a sud del Lago Maggiore, su di una superficie di circa 6.561 ettari che comprende una serie di comuni del Piemonte posti vicino fiume Ticino: Bellinzago Novarese, Cameri, Castelletto Sopra Ticino, Cerano, Galliate, Marano Ticino, Oleggio, Pombia, Romentino, Trecate, Varallo Pombia.",
+      "english": "The Ticino Valley park extends across a portion of the province of Novara, south of Lake Maggiore, over an area of approximately 6,561 hectares which includes a series of Piedmontese municipalities located near the Ticino river: Bellinzago Novarese, Cameri, Castelletto Sopra Ticino, Cerano, Galliate, Marano Ticino, Oleggio, Pombia, Romentino, Trecate, Varallo Pombia."
     }
   ],
   "days": [
     {
-      "title": "Villages and Historic Mills",
+      "title": "Villages and Waterways of the Ticino",
       "stop_ids": [
-        "s2",
-        "s3",
         "s1",
-        "s4"
+        "s2",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Historical Architecture and Visitor Centres",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
       ]
     }
-  ]
+  ],
+  "_text_sha": "c4c0c4d975fad736268d5b8e2b3360431611867a94a486914302be632c78a85f"
 }

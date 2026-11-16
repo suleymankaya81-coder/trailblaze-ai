@@ -2,69 +2,70 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Dreiborn Plateau",
-      "quote": "Watch wild animals, roam the natural beech and mixed forests, and enjoy magical panoramic views of the impressive lakelands or the open grassland of the Dreiborn Plateau.",
-      "english": "Watch wild animals, roam the natural beech and mixed forests, and enjoy magical panoramic views of the impressive lakelands or the open grassland of the Dreiborn Plateau."
+      "name": "Urfttalsperre",
+      "quote": "Das Gebiet ist ca. 10.770 Hektar groß, grenzt im Nordwesten an den Rurstausee und umfasst die Urfttalsperre und den ehemaligen Truppenübungsplatz Vogelsang, jedoch nicht die ehemalige NS-Ordensburg Vogelsang.",
+      "english": "The area is approximately 10,770 hectares in size, borders the Rurstausee to the northwest and includes the Urfttalsperre and the former Vogelsang military training area, but not the former NS-Ordensburg Vogelsang."
     },
     {
       "id": "s2",
-      "name": "Wilderness Trail",
-      "quote": "The entire length of the trail is marked with the stylised wildcat symbol. The Wilderness-Trail.",
-      "english": "The entire length of the trail is marked with the stylised wildcat symbol. The Wilderness-Trail."
+      "name": "Truppenübungsplatz Vogelsang",
+      "quote": "Der Bereich des früher vom belgischen Militär verwalteten und genutzten Truppenübungsplatzes Vogelsang auf der Dreiborner Hochfläche macht ca. 3.300 Hektar der Gesamtfläche aus und ist erst seit dem 1. Januar 2006 für die Öffentlichkeit zugänglich.",
+      "english": "The area of the Vogelsang military training area on the Dreiborn Plateau, formerly managed and used by the Belgian military, accounts for approximately 3,300 hectares of the total area and has only been open to the public since January 1, 2006."
     },
     {
       "id": "s3",
-      "name": "National Park Centre",
-      "quote": "Eifel National Park Centre offers guided tours, special programmes for groups, school classes and pre-schoolers as well as excellent barrier-free accessibility.",
-      "english": "Eifel National Park Centre offers guided tours, special programmes for groups, school classes and pre-schoolers as well as excellent barrier-free accessibility."
+      "name": "Dreiborner Hochfläche",
+      "quote": "Der Bereich des früher vom belgischen Militär verwalteten und genutzten Truppenübungsplatzes Vogelsang auf der Dreiborner Hochfläche macht ca. 3.300 Hektar der Gesamtfläche aus und ist erst seit dem 1. Januar 2006 für die Öffentlichkeit zugänglich.",
+      "english": "The area of the Vogelsang military training area on the Dreiborn Plateau, formerly managed and used by the Belgian military, accounts for approximately 3,300 hectares of the total area and has only been open to the public since January 1, 2006."
     },
     {
       "id": "s4",
-      "name": "Dreams of the Wilderness",
-      "quote": "\"Dreams of the Wilderness\" Exhibition The exhibition invites you to embark on a journey of discovery.",
-      "english": "\"Dreams of the Wilderness\" Exhibition The exhibition invites you to embark on a journey of discovery."
+      "name": "Kermeter",
+      "quote": "Ein großes unzerschnittenes Waldgebiet mit hohem Buchenwaldanteil ist der Kermeter, innerhalb dessen die Naturwaldzelle Schäferheld und Wiegelskammer liegt.",
+      "english": "A large unfragmented forest area with a high proportion of beech forest is the Kermeter, within which the natural forest cells Schäferheld and Wiegelskammer are located."
     },
     {
       "id": "s5",
-      "name": "Dark Sky Park",
-      "quote": "Experience the protected night sky Wilderness Trail Explore the entire conservation area in four days Guided walks Discover the conservation area with rangers and forest guides Dark Sky Park.",
-      "english": "Experience the protected night sky Wilderness Trail Explore the entire conservation area in four days Guided walks Discover the conservation area with rangers and forest guides Dark Sky Park."
+      "name": "Naturwaldzelle Schäferheld",
+      "quote": "Ein großes unzerschnittenes Waldgebiet mit hohem Buchenwaldanteil ist der Kermeter, innerhalb dessen die Naturwaldzelle Schäferheld und Wiegelskammer liegt.",
+      "english": "A large unfragmented forest area with a high proportion of beech forest is the Kermeter, within which the natural forest cells Schäferheld and Wiegelskammer are located."
     },
     {
       "id": "s6",
-      "name": "Wilder Weg",
-      "quote": "Enlarge image (Wilder Weg_Net Apart Fotodesign1.jpg)",
-      "english": "Enlarge image (Wilder Weg_Net Apart Fotodesign1.jpg)"
+      "name": "Wiegelskammer",
+      "quote": "Ein großes unzerschnittenes Waldgebiet mit hohem Buchenwaldanteil ist der Kermeter, innerhalb dessen die Naturwaldzelle Schäferheld und Wiegelskammer liegt.",
+      "english": "A large unfragmented forest area with a high proportion of beech forest is the Kermeter, within which the natural forest cells Schäferheld and Wiegelskammer are located."
     },
     {
       "id": "s7",
-      "name": "Malsbenden",
-      "quote": "Enlarge image (mauereidechse_podarcis muralis_wachhäuschen schießbahn malsbenden_urfttal_140917_07.jpg)",
-      "english": "Enlarge image (wall lizard_podarcis muralis_guard house shooting range malsbenden_urft valley_140917_07.jpg)"
+      "name": "Wildnis-Trail",
+      "quote": "In vier anspruchsvollen Tagesetappen können Besucher den gesamten Nationalpark mit seinen verschiedenen Landschaften durchqueren.",
+      "english": "In four challenging daily stages, visitors can cross the entire national park with its various landscapes."
     }
   ],
   "days": [
     {
-      "title": "Plateau and Discovery Centres",
+      "title": "Lakes and Military History",
       "stop_ids": [
         "s1",
-        "s3",
-        "s4"
+        "s2",
+        "s3"
       ]
     },
     {
-      "title": "Wilderness Trails and Paths",
+      "title": "Central Forest Reserves",
       "stop_ids": [
-        "s2",
+        "s4",
+        "s5",
         "s6"
       ]
     },
     {
-      "title": "Dark Skies and Valleys",
+      "title": "Park Crossing",
       "stop_ids": [
-        "s5",
         "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "e5f4fc08a96ea2fb5da04201e2a27a58cc8d348b0424a2ba9eb24a254e09bf1c"
 }

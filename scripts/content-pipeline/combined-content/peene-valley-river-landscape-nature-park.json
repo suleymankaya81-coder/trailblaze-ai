@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Mecklenburg Vorpommern",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Naturpark Flusslandschaft Peenetal"
+        "Stolpe an der Peene",
+        "Kummerower See"
       ],
       "seo_title": "Peene Valley River Landscape Nature Park Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Peene Valley River Landscape Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Western Valley and Park Headquarters",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Naturpark Flusslandschaft Peenetal",
-                "stop_id": "peene-valley-river-landscape-nature-park",
-                "detail": "The Nature Park River Landscape Peenetal is a nature park in Mecklenburg-Vorpommern. It was established on 19 July [dated source] by a state ordinance. The seat of the nature park is in Stolpe an der Peene. The Peene Valley is considered the largest contiguous low moor area in Central Europe. There were 156 bird and 37 fish species counted, which is why the Peene is named as the probably most biodiverse river of Mecklenburg-Vorpommern."
+                "name": "Stolpe an der Peene",
+                "stop_id": "peene-valley-river-landscape-nature-park--s1",
+                "detail": "The headquarters of the nature park is located in Stolpe an der Peene."
+              },
+              {
+                "name": "Kummerower See",
+                "stop_id": "peene-valley-river-landscape-nature-park--s2",
+                "detail": "The nature park covers approximately 33,400 hectares of the Peene Valley from the outlet at Lake Kummerow to the mouth into the Peenestrom and thus a large part of the areas of the Peene Valley Landscape large-scale conservation project."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Peene Valley River Landscape Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Central Marshlands and Meadows",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Naturschutzgebiet Schwingetal und Peenewiesen bei Trantow",
+                "stop_id": "peene-valley-river-landscape-nature-park--s5",
+                "detail": "Schwingetal and Peenewiesen near Trantow Nature Reserve"
+              },
+              {
+                "name": "Naturschutzgebiet Unteres Peenetal (Peenetalmoor)",
+                "stop_id": "peene-valley-river-landscape-nature-park--s6",
+                "detail": "Lower Peene Valley (Peene Valley Mire) Nature Reserve"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Peene Valley River Landscape Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://de.wikipedia.org/wiki/Naturpark_Flusslandschaft_Peenetal"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Naturpark_Flusslandschaft_Peenetal"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:26:03.327027+00:00"
       }
     }
   }

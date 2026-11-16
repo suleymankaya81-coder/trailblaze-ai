@@ -4,62 +4,68 @@
       "id": "s1",
       "name": "centro visite",
       "quote": "L'accesso principale al Parco dei Lagoni è quello della sede e del centro visite, in via Gattico 6 a Mercurago, frazione di Arona.",
-      "english": "The main access to the Lagoni Park is that of the headquarters and the visitor centre, in via Gattico 6 in Mercurago, a hamlet of Arona."
+      "english": "The main access to the Lagoni Park is that of the headquarters and the visitor center, in via Gattico 6 in Mercurago, a hamlet of Arona."
     },
     {
       "id": "s2",
       "name": "zona umida",
-      "quote": "La zona umida, ricca di stagni, torbiere e paludi, rappresenta il vero cuore pulsante del parco.",
-      "english": "The wetland, rich in ponds, peat bogs and marshes, represents the true beating heart of the park."
+      "quote": "Il Parco comprende una serie eterogenea di ecosistemi: la zona umida, ricca di stagni, torbiere e paludi, rappresenta il vero cuore pulsante del parco; nei prati e nei pascoli si coltiva e si pratica l'allevamento di cavalli da corsa, il tutto in un contesto poco urbanizzato e ricco di boschi e brughiere.",
+      "english": "The Park includes a heterogeneous series of ecosystems: the wetland area, rich in ponds, peat bogs and marshes, represents the true beating heart of the park; in the meadows and pastures, thoroughbred horses are bred and raised, all within a lightly urbanized context rich in woods and heaths."
     },
     {
       "id": "s3",
-      "name": "prati e nei pascoli",
-      "quote": "Nei prati e nei pascoli si coltiva e si pratica l'allevamento di cavalli da corsa, il tutto in un contesto poco urbanizzato e ricco di boschi e brughiere.",
-      "english": "In the meadows and pastures racehorses are cultivated and bred, all in a context with little urbanization and rich in woods and heaths."
-    },
-    {
-      "id": "s4",
       "name": "torbiera del Lagone",
       "quote": "Nel 1860, nella torbiera del Lagone, sono stati rinvenuti - per la prima volta in Italia - i resti di alcune palafitte (impalcati di legno e pali sprofondati nel limo e nella torba).",
       "english": "In 1860, in the Lagone peat bog, the remains of some pile dwellings (wooden decks and poles sunk in silt and peat) were found for the first time in Italy."
     },
     {
-      "id": "s5",
-      "name": "insediamenti, risalenti all'età del bronzo",
+      "id": "s4",
+      "name": "insediamenti",
       "quote": "Nel corso degli anni, infatti, sono stati rinvenuti diversi insediamenti, risalenti all'età del bronzo e alcune domus romane.",
-      "english": "Over the years, in fact, several settlements dating back to the Bronze Age and some Roman domus have been found."
+      "english": "Over the years, in fact, several settlements dating back to the Bronze Age and some Roman domus have been discovered."
+    },
+    {
+      "id": "s5",
+      "name": "pascoli e i maneggi",
+      "quote": "Accanto a questa fauna di tipo \"spontaneo\" sono collocati i pascoli e i maneggi allestiti, alcuni decenni fa, da Federico Tesio come centri per l'allevamento di cavalli.",
+      "english": "Alongside this \"spontaneous\" type of fauna are the pastures and riding stables set up a few decades ago by Federico Tesio as horse breeding centers."
     },
     {
       "id": "s6",
-      "name": "domus romane",
-      "quote": "Nel corso degli anni, infatti, sono stati rinvenuti diversi insediamenti, risalenti all'età del bronzo e alcune domus romane.",
-      "english": "Over the years, in fact, several settlements dating back to the Bronze Age and some Roman domus have been found."
+      "name": "colline moreniche",
+      "quote": "Il Parco naturale si estende su di una superficie di circa 473 ettari circa, sulle ampie colline moreniche - vecchie di oltre diecimila anni - che circondano la parte piemontese del Lago Maggiore.",
+      "english": "The Natural Park extends over an area of approximately 473 hectares, on the wide moraine hills - over ten thousand years old - which surround the Piedmontese part of Lake Maggiore."
     },
     {
       "id": "s7",
-      "name": "Villaggio delle Macine",
-      "quote": "Villaggio delle Macine",
-      "english": "Village of the Millstones"
+      "name": "boschi e brughiere",
+      "quote": "Il tutto in un contesto poco urbanizzato e ricco di boschi e brughiere.",
+      "english": "All within a lightly urbanized context rich in woods and heaths."
     }
   ],
   "days": [
     {
-      "title": "Visitor Center and Ancient Archeology",
-      "stop_ids": [
-        "s1",
-        "s5",
-        "s6",
-        "s7"
-      ]
-    },
-    {
-      "title": "Wetlands and Natural Habitats",
+      "title": "Wetlands and Archaeology",
       "stop_ids": [
         "s2",
         "s3",
         "s4"
       ]
+    },
+    {
+      "title": "Visitor Center and Equestrian History",
+      "stop_ids": [
+        "s1",
+        "s5"
+      ]
+    },
+    {
+      "title": "Natural Landscapes and Moraine Hills",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
     }
-  ]
+  ],
+  "_text_sha": "aceceda0742894b142c0df7de0280f6625d51165f381866d327bf20f82d49577"
 }

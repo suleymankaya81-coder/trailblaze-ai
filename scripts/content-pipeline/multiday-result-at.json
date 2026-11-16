@@ -229,26 +229,6 @@
       "stops": 5
     },
     {
-      "slug": "blockheide-nature-park",
-      "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "bregenz-forest",
-      "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "buchberg-nature-park",
-      "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "dachstein-massif",
-      "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
       "slug": "eisenwurzen-nature-park-lower-austria",
       "status": "multiday",
       "days": 2,
@@ -261,29 +241,9 @@
       "stops": 6
     },
     {
-      "slug": "fohrenberge-nature-park",
-      "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "gesause-national-park",
-      "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "geschriebenstein-irottko-nature-park",
-      "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
       "slug": "gosau-lakes",
       "status": "one_day",
       "reason": "Source too short for a multi-day plan; stays 1 day"
-    },
-    {
-      "slug": "grosses-walsertal-biosphere-park",
-      "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "grossglockner-and-pasterze-glacier",
@@ -309,16 +269,6 @@
       "stops": 4
     },
     {
-      "slug": "hohe-tauern-national-park",
-      "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "hohe-wand-nature-park",
-      "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
       "slug": "kaprun-glacier-kitzsteinhorn",
       "status": "multiday",
       "days": 2,
@@ -334,16 +284,6 @@
       "slug": "lake-zell-zell-am-see",
       "status": "one_day",
       "reason": "Source too short for a multi-day plan; stays 1 day"
-    },
-    {
-      "slug": "lech-valley-nature-park",
-      "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "liechtensteinklamm",
-      "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "lurgrotte",
@@ -364,44 +304,14 @@
       "stops": 4
     },
     {
-      "slug": "otscher-gorges-otschergraben",
-      "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "plansee",
-      "status": "one_day",
-      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "pollauer-tal-nature-park",
-      "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
       "slug": "raab-orseg-goricko-nature-park",
       "status": "one_day",
       "reason": "Source too short for a multi-day plan; stays 1 day"
     },
     {
-      "slug": "rax-and-schneeberg",
-      "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
       "slug": "riedingtal-nature-park",
       "status": "one_day",
       "reason": "Source too short for a multi-day plan; stays 1 day"
-    },
-    {
-      "slug": "rosalia-kogelberg-nature-park",
-      "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
-    },
-    {
-      "slug": "salzburger-lungau-and-karntner-nockberge-biosphere",
-      "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "schafberg",
@@ -415,14 +325,104 @@
       "reason": "Source too short for a multi-day plan; stays 1 day"
     },
     {
-      "slug": "silvretta-high-alpine-road",
+      "slug": "blockheide-nature-park",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "bregenz-forest",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "buchberg-nature-park",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "dachstein-massif",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "fohrenberge-nature-park",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "gesause-national-park",
+      "status": "one_day",
+      "reason": "HELD: stop lacks exact official evidence: Hochtor"
+    },
+    {
+      "slug": "geschriebenstein-irottko-nature-park",
+      "status": "one_day",
+      "reason": "HELD: stop lacks exact official evidence: Geschriebenstein"
+    },
+    {
+      "slug": "grosses-walsertal-biosphere-park",
+      "status": "one_day",
+      "reason": "HELD: stop lacks exact official evidence: Stausee"
+    },
+    {
+      "slug": "hohe-tauern-national-park",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "hohe-wand-nature-park",
       "status": "one_day",
       "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
     },
     {
-      "slug": "sparbach-nature-park",
+      "slug": "lech-valley-nature-park",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "liechtensteinklamm",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "otscher-gorges-otschergraben",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "plansee",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "pollauer-tal-nature-park",
       "status": "one_day",
       "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "rax-and-schneeberg",
+      "status": "one_day",
+      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "rosalia-kogelberg-nature-park",
+      "status": "one_day",
+      "reason": "HELD: stop lacks exact official evidence: Rosaliengebirge"
+    },
+    {
+      "slug": "salzburger-lungau-and-karntner-nockberge-biosphere",
+      "status": "one_day",
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
+    },
+    {
+      "slug": "silvretta-high-alpine-road",
+      "status": "one_day",
+      "reason": "HELD: stop lacks exact official evidence: Silvretta-Gebiet"
+    },
+    {
+      "slug": "sparbach-nature-park",
+      "status": "one_day",
+      "reason": "HELD: stop lacks exact official evidence: Dianawiese"
     },
     {
       "slug": "stuibenfall",
@@ -432,12 +432,12 @@
     {
       "slug": "styrian-eisenwurzen-nature-park",
       "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+      "reason": "Only 1 verified day(s) of sights in the source; stays 1 day"
     },
     {
       "slug": "thayatal-national-park",
       "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+      "reason": "HELD: stop lacks exact official evidence: Thayatal"
     },
     {
       "slug": "untersberg",
@@ -447,7 +447,7 @@
     {
       "slug": "wienerwald-biosphere-reserve",
       "status": "one_day",
-      "reason": "Only 0 verified day(s) of sights in the source; stays 1 day"
+      "reason": "HELD: stop lacks exact official evidence: Schöpfl"
     },
     {
       "slug": "zirbitzkogel-grebenzen-nature-park",

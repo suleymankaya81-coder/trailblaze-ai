@@ -10,19 +10,19 @@
       "id": "s2",
       "name": "Hohenschwangau",
       "quote": "Er hat einen Umfang von 4,70 Kilometer, gehört zur Gemeinde Schwangau und liegt in unmittelbarer Nähe der Königsschlösser Hohenschwangau und Neuschwanstein, direkt am Fuße des Berges Säuling.",
-      "english": "It has a circumference of 4.70 kilometers, belongs to the municipality of Schwangau and is located in the immediate vicinity of the royal castles Hohenschwangau and Neuschwanstein, directly at the foot of Mount Säuling."
+      "english": "It has a circumference of 4.70 kilometers, belongs to the municipality of Schwangau and is located in the immediate vicinity of the royal castles of Hohenschwangau and Neuschwanstein, directly at the foot of the mountain Säuling."
     },
     {
       "id": "s3",
       "name": "Neuschwanstein",
       "quote": "Er hat einen Umfang von 4,70 Kilometer, gehört zur Gemeinde Schwangau und liegt in unmittelbarer Nähe der Königsschlösser Hohenschwangau und Neuschwanstein, direkt am Fuße des Berges Säuling.",
-      "english": "It has a circumference of 4.70 kilometers, belongs to the municipality of Schwangau and is located in the immediate vicinity of the royal castles Hohenschwangau and Neuschwanstein, directly at the foot of Mount Säuling."
+      "english": "It has a circumference of 4.70 kilometers, belongs to the municipality of Schwangau and is located in the immediate vicinity of the royal castles of Hohenschwangau and Neuschwanstein, directly at the foot of the mountain Säuling."
     },
     {
       "id": "s4",
       "name": "Alpseebad",
       "quote": "Der See gilt als einer der saubersten Seen in Deutschland und wird im Sommer als Badesee in einer eigens dazu geschaffenen Badeanstalt (Alpseebad, am Südufer) genutzt.",
-      "english": "The lake is considered one of the cleanest lakes in Germany and is used in summer as a swimming lake in a specially created bathing facility (Alpseebad, on the south shore)."
+      "english": "The lake is considered one of the cleanest lakes in Germany and is used in summer as a bathing lake in a specially created bathing establishment (Alpseebad, on the south shore)."
     },
     {
       "id": "s5",
@@ -40,21 +40,27 @@
       "id": "s7",
       "name": "Pindarplatz",
       "quote": "Zudem gibt es einen Aussichtspunkt auf einem Felsvorsprung, den Pindarplatz.",
-      "english": "In addition, there is a viewpoint on a rocky outcrop, the Pindarplatz."
+      "english": "There is also a viewpoint on a rocky outcrop, the Pindarplatz."
     }
   ],
   "days": [
     {
-      "title": "Alpsee Lake and Royal Sights",
+      "title": "Castles and Lake Recreation",
       "stop_ids": [
         "s1",
         "s2",
         "s3",
-        "s4",
+        "s4"
+      ]
+    },
+    {
+      "title": "History and Lake Views",
+      "stop_ids": [
         "s5",
         "s6",
         "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "3648c071ec78a55f0c3620638a8e19e42db83e2d528526094e3891ae1f1939ea"
 }

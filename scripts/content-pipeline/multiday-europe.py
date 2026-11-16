@@ -31,7 +31,7 @@ def extract(slug, name, text):
     path = CACHE / f'{slug}.json'
     if path.exists():
         cached = json.loads(path.read_text())
-        if cached.get('_text_sha', hashlib.sha256(text.encode()).hexdigest()) == hashlib.sha256(text.encode()).hexdigest(): return cached
+        if cached.get('_text_sha') == hashlib.sha256(text.encode()).hexdigest(): return cached
     path = CACHE / f'{slug}.json'
     clean_text = re.sub(r'https?://\S+', '', re.sub(r'!?\[([^\]]*)\]\([^)]*\)', r'\1', text))[:9000]
     out = call_ai_json(PROMPT.format(name=name, text=clean_text))

@@ -4,36 +4,63 @@
       "id": "s1",
       "name": "Isola di Sant'Andrea",
       "quote": "Sull'Isola di Sant'Andrea nidifica la rara specie del Gabbiano corso.",
-      "english": "The rare species of Audouin's gull nests on the Island of Sant'Andrea."
+      "english": "On the Island of Sant'Andrea, the rare species of Audouin's gull nests."
     },
     {
       "id": "s2",
-      "name": "Punta della Suina",
-      "quote": "Punta della Suina è una esclusiva località turistica sul mare del golfo di Gallipoli posto su un lieve promontorio roccioso che degrada verso il mare.",
-      "english": "Punta della Suina is an exclusive tourist resort on the sea of the Gulf of Gallipoli located on a slight rocky promontory that slopes down towards the sea."
+      "name": "Li Foggi",
+      "quote": "Il parco è stato istituito con la legge n° 20 del 10/07/2006 e comprende l'Isola di Sant'Andrea e il tratto di litoranea sud di Gallipoli fra le località \"Li Foggi\", \"Punta della Suina\" e \"Torre del Pizzo\".",
+      "english": "The park was established by Law No. 20 of 10/07/2006 and includes the Island of Sant'Andrea and the stretch of the southern coast of Gallipoli between the localities of \"Li Foggi\", \"Punta della Suina\" and \"Torre del Pizzo\"."
     },
     {
       "id": "s3",
-      "name": "Li Foggi",
-      "quote": "Il parco è stato istituito con la legge n° 20 del 10/07/2006 e comprende l'Isola di Sant'Andrea e il tratto di litoranea sud di Gallipoli fra le località \"Li Foggi\", \"Punta della Suina\" e \"Torre del Pizzo\".",
-      "english": "The park was established by law no. 20 of 10/07/2006 and includes the Island of Sant'Andrea and the stretch of southern coastline of Gallipoli between the localities of \"Li Foggi\", \"Punta della Suina\" and \"Torre del Pizzo\"."
+      "name": "Punta della Suina",
+      "quote": "Il tratto costiero di \"Punta della Suina\", immerso in un mare cristallino e in una vasta pineta, è uno dei principali polmoni verdi del Salento.",
+      "english": "The coastal stretch of \"Punta della Suina\", immersed in a crystalline sea and a vast pine forest, is one of the main green lungs of Salento."
     },
     {
       "id": "s4",
       "name": "Torre del Pizzo",
       "quote": "Il parco è stato istituito con la legge n° 20 del 10/07/2006 e comprende l'Isola di Sant'Andrea e il tratto di litoranea sud di Gallipoli fra le località \"Li Foggi\", \"Punta della Suina\" e \"Torre del Pizzo\".",
-      "english": "The park was established by law no. 20 of 10/07/2006 and includes the Island of Sant'Andrea and the stretch of southern coastline of Gallipoli between the localities of \"Li Foggi\", \"Punta della Suina\" and \"Torre del Pizzo\"."
+      "english": "The park was established by Law No. 20 of 10/07/2006 and includes the Island of Sant'Andrea and the stretch of the southern coast of Gallipoli between the localities of \"Li Foggi\", \"Punta della Suina\" and \"Torre del Pizzo\"."
+    },
+    {
+      "id": "s5",
+      "name": "Punta Pizzo",
+      "quote": "Il 19 marzo 2020 sulla rivista internazionale di botanica e scienza della vegetazione PHYTOTAXA viene pubblicato a cura dei ricercatori salentini Roberto Gennaio e Quintino Manni lo studio riguardo al rinvenimento di una nuova specie a cui viene dato il nome di Centaurea akroteriensis (Gennaio & Q.G.Manni 2020), il fiordaliso di Punta Pizzo, una nuova specie botanica endemica del luogo!",
+      "english": "On March 19, 2020, in the international journal of botany and vegetation science PHYTOTAXA, a study was published by Salento researchers Roberto Gennaio and Quintino Manni regarding the discovery of a new species given the name Centaurea akroteriensis (Gennaio & Q.G.Manni 2020), the cornflower of Punta Pizzo, a new botanical species endemic to the place!"
+    },
+    {
+      "id": "s6",
+      "name": "scoglio piatto",
+      "quote": "Di fronte alla Punta della Suina c'è un grande scoglio piatto dove è possibile piantare l'ombrellone e prendere il sole.",
+      "english": "In front of Punta della Suina there is a large flat rock where it is possible to set up a beach umbrella and sunbathe."
+    },
+    {
+      "id": "s7",
+      "name": "Chiesa di San Pietro dei Samari",
+      "quote": "Chiesa di San Pietro dei Samari",
+      "english": "Church of Saint Peter of the Samari"
     }
   ],
   "days": [
     {
-      "title": "Coastal Landmarks and Islet",
+      "title": "Coastal Localities and Pine Forests",
       "stop_ids": [
-        "s1",
         "s2",
         "s3",
-        "s4"
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Island and Southern Cape",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5"
       ]
     }
-  ]
+  ],
+  "_text_sha": "c545919164a230673d93c5e4c3a4e4f08b13cc27c64c54d91527977ccd497dd1"
 }

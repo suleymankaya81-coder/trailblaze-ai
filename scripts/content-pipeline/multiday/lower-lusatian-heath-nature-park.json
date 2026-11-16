@@ -2,31 +2,84 @@
   "stops": [
     {
       "id": "s1",
-      "name": "nature conservation station",
-      "quote": "The nature conservation station in the Lower Lusatian Heath Nature Park offers various tours to particularly beautiful spots and on specific topics on set dates every year.",
-      "english": "The nature conservation station in the Lower Lusatian Heath Nature Park offers various tours to particularly beautiful spots and on specific topics on set dates every year."
+      "name": "Güterbank bei Elsterwerda",
+      "quote": "Höchste Erhebung: Güterbank bei Elsterwerda (153 m)",
+      "english": "Highest elevation: Güterbank near Elsterwerda (153 m)"
     },
     {
       "id": "s2",
-      "name": "Naturparadies Grünhaus",
-      "quote": "NABU Reise ins Naturparadies Grünhaus, Foto: Stefan Röhrscheid",
-      "english": "NABU journey to the Grünhaus natural paradise, photo: Stefan Röhrscheid"
+      "name": "Naturschutzgebiet Forsthaus Prösa",
+      "quote": "Kern des Naturparks ist das Naturschutzgebiet Forsthaus Prösa.",
+      "english": "The core of the nature park is the Forsthaus Prösa nature reserve."
     },
     {
       "id": "s3",
-      "name": "Bad Liebenwerda",
-      "quote": "This provider is located in the region Elbe-Elster-Land",
-      "english": "This provider is located in the region Elbe-Elster-Land"
+      "name": "Kleine Wiesen – An den Horsten bei Kahla",
+      "quote": "Mit einer Fläche von 21 ha ist das Naturschutzgebiet Kleine Wiesen – An den Horsten bei Kahla das erste vom Landkreis Elbe-Elster selbst ausgewiesene Schutzgebiet.",
+      "english": "With an area of 21 hectares, the Kleine Wiesen – An den Horsten near Kahla nature reserve is the first protected area designated by the Elbe-Elster district itself."
+    },
+    {
+      "id": "s4",
+      "name": "Loben",
+      "quote": "Im Südosten des Naturparks befindet sich zwischen den Naturparkgemeinden Gorden, Hohenleipisch, Döllingen und Grünewalde das sagenumwobene Moorgebiet Loben, dessen Torf seit 1904 für medizinische Behandlungen in der Bad Liebenwerdaer Kurklinik genutzt wird.",
+      "english": "In the southeast of the nature park, between the nature park communities of Gorden, Hohenleipisch, Döllingen, and Grünewalde, lies the legendary Loben moorland, whose peat has been used for medical treatments in the Bad Liebenwerda spa clinic since 1904."
+    },
+    {
+      "id": "s5",
+      "name": "NSG Hohenleipisch",
+      "quote": "Außerdem ist hier nördlich von Hohenleipisch das dem Loben benachbarte das NSG Hohenleipisch zu finden, welches auf dem Gelände einer einstigen Munitionsanstalt entstand, das nach dem Zweiten Weltkrieg bis zur politischen Wende in der DDR durch die sowjetische Rote Armee militärisch weiter genutzt wurde.",
+      "english": "In addition, north of Hohenleipisch is the NSG Hohenleipisch, adjacent to the Loben, which was created on the site of a former ammunition plant that continued to be used militarily by the Soviet Red Army after the Second World War until the political turnaround in the GDR."
+    },
+    {
+      "id": "s6",
+      "name": "NSG Grünhaus",
+      "quote": "Weitere Naturschutzgebiete sind der Seewald, der Welkteich, der Suden, die Alte Röder bei Prieschka, das NSG Schadewitz, das NSG Hohe Warte nordwestlich von Doberlug-Kirchhain, das NSG Buchwald sowie das sich im ehemaligen Tagebau Kleinleipisch befindliche NSG Grünhaus, welches von der NABU-Stiftung „Nationales Naturerbe“ betreut wird.",
+      "english": "Other nature reserves include the Seewald, the Welkteich, the Suden, the Alte Röder near Prieschka, the NSG Schadewitz, the NSG Hohe Warte northwest of Doberlug-Kirchhain, the NSG Buchwald, as well as the NSG Grünhaus located in the former Kleinleipisch open-cast mine, which is managed by the NABU Foundation 'National Natural Heritage'."
+    },
+    {
+      "id": "s7",
+      "name": "Schloss Doberlug",
+      "quote": "2018 wurde im Schloss Doberlug in Doberlug-Kirchhain das neue Besucherinformationszentrum und die multimediale und interaktive Dauerausstellung erlebnisREICH Naturpark als neue zentrale Anlaufstelle des Naturparks Niederlausitzer Heidelandschaft eröffnet.",
+      "english": "In 2018, the new visitor information center and the multimedia and interactive permanent exhibition erlebnisREICH Naturpark were opened in Doberlug Castle in Doberlug-Kirchhain as the new central contact point for the Lower Lusatian Heath Nature Park."
+    },
+    {
+      "id": "s8",
+      "name": "Naturparkhaus",
+      "quote": "Das Naturparkhaus in Bad Liebenwerda ist Sitz der Naturparkverwaltung und der Naturwacht.",
+      "english": "The Nature Park House in Bad Liebenwerda is the seat of the nature park administration and the nature watch."
+    },
+    {
+      "id": "s9",
+      "name": "Pomologischer Schau- und Lehrgarten",
+      "quote": "Zum Zentrum der einstigen und heutigen Streuobstregion ist der Pomologische Schau- und Lehrgarten in Döllingen – ein lebendiges Obstbaumuseum geworden.",
+      "english": "The Pomological Demonstration and Educational Garden in Döllingen has become the center of the former and current orchard region—a living fruit tree museum."
     }
   ],
   "days": [
     {
-      "title": "Nature Conservation and Exploration",
+      "title": "Exhibitions and Orchards in the North and East",
       "stop_ids": [
-        "s1",
-        "s2",
+        "s7",
+        "s9",
+        "s6"
+      ]
+    },
+    {
+      "title": "Moors and Military History in the South",
+      "stop_ids": [
+        "s4",
+        "s5",
         "s3"
       ]
+    },
+    {
+      "title": "High Points and Visitor Centers in the West",
+      "stop_ids": [
+        "s1",
+        "s8",
+        "s2"
+      ]
     }
-  ]
+  ],
+  "_text_sha": "25e8ef829f660fbb3218ab67a72dea22b32d3e10fb147500c1ec446530aa78a0"
 }

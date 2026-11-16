@@ -3,68 +3,71 @@
     {
       "id": "s1",
       "name": "spiaggia di Mezzavalle",
-      "quote": "Il comune di Ancona, infatti, ritira il suo piano e di conseguenza, Mezzavalle resta una spiaggia completamente libera.",
-      "english": "The municipality of Ancona, in fact, withdraws its plan and consequently, Mezzavalle remains a completely free beach."
+      "quote": "Nel 2003 il Comune di Ancona elabora un piano per la spiaggia di Mezzavalle che prevede attrezzature e un pontile per l'attracco di imbarcazioni.",
+      "english": "In 2003, the Municipality of Ancona developed a plan for the beach of Mezzavalle that included facilities and a pier for boat docking."
     },
     {
       "id": "s2",
-      "name": "Lago Grande di Portonovo",
-      "quote": "il Lago Grande di Portonovo da trasformare in porto turistico, proposta, come la precedente, dell'Azienda di Soggiorno;",
-      "english": "the Lago Grande di Portonovo to be transformed into a tourist port, a proposal, like the previous one, by the Tourist Board;"
+      "name": "Passetto",
+      "quote": "la funivia dal Passetto a Portonovo e a Sirolo, per complessivi 20 chilometri;",
+      "english": "the cable car from Passetto to Portonovo and Sirolo, for a total of 20 kilometers;"
     },
     {
       "id": "s3",
-      "name": "Fonte di Portonovo",
-      "quote": "infine la celebre Fonte di Portonovo era stata distrutta per fare posto ad un albergo.",
-      "english": "finally the famous Fountain of Portonovo had been destroyed to make room for a hotel."
+      "name": "Portonovo",
+      "quote": "nei primi anni '60, i laghi di Portonovo erano stati oggetto di interramenti per realizzare alcuni parcheggi e un campeggio, tra il Lago Grande e il mare erano stati costruiti vari edifici impedendo l'ingresso delle onde e infine la celebre Fonte di Portonovo era stata distrutta per fare posto ad un albergo.",
+      "english": "in the early 60s, the lakes of Portonovo had been subject to landfilling to create some parking lots and a campsite, various buildings had been constructed between the Lago Grande and the sea preventing the waves from entering, and finally the famous Portonovo Spring had been destroyed to make room for a hotel."
     },
     {
       "id": "s4",
-      "name": "Monte Colombo",
-      "quote": "uno sbancamento abusivo a Monte Colombo, di 8.000 metri quadrati.",
-      "english": "an illegal excavation at Monte Colombo, of 8,000 square meters."
+      "name": "Lago Grande",
+      "quote": "il Lago Grande di Portonovo da trasformare in porto turistico, proposta, come la precedente, dell'Azienda di Soggiorno;",
+      "english": "the Lago Grande of Portonovo to be transformed into a tourist port, a proposal, like the previous one, by the Tourist Board;"
     },
     {
       "id": "s5",
-      "name": "valli di Pietralacroce",
-      "quote": "Nel 2013, ancora una marcia della associazioni naturalistiche, unite in questo caso anche al mondo dell'associazionismo giovanile; questa volta si tratta della paventata interruzione del sentiero delle valli di Pietralacroce (itinerario n. 313), a causa di un privato che intende recintare.",
-      "english": "In 2013, another march by naturalistic associations, joined in this case also by the world of youth associations; this time it concerns the feared interruption of the path of the Pietralacroce valleys (itinerary no. 313), due to a private individual who intends to fence it off."
+      "name": "Sirolo",
+      "quote": "un villaggio turistico a Sirolo di 46.000 metri cubi in una zona soggetta a vincolo paesistico;",
+      "english": "a tourist village in Sirolo of 46,000 cubic meters in an area subject to landscape restrictions;"
     },
     {
       "id": "s6",
-      "name": "Passetto",
-      "quote": "la funivia dal Passetto a Portonovo e a Sirolo, per complessivi 20 chilometri;",
-      "english": "the cable car from Passetto to Portonovo and to Sirolo, for a total of 20 kilometers;"
+      "name": "Monte Colombo",
+      "quote": "uno sbancamento abusivo a Monte Colombo, di 8.000 metri quadrati.",
+      "english": "an illegal excavation at Monte Colombo, measuring 8,000 square meters."
     },
     {
       "id": "s7",
-      "name": "Scalaccia",
-      "quote": "nonostante il parco sia già istituito e funzionante, lungo un sentiero ufficiale che conduce alle scogliere sottostanti percorrendo le valli di Pietralacroce (quello della Scalaccia) un rudere viene abbattuto e al suo posto viene costruita una abitazione, con regolare licenza rilasciata dal Comune di Ancona;",
-      "english": "although the park is already established and functioning, along an official path that leads to the cliffs below passing through the valleys of Pietralacroce (that of Scalaccia) a ruin is demolished and a house is built in its place, with a regular license issued by the Municipality of Ancona;"
+      "name": "valli di Pietralacroce",
+      "quote": "Nel 1994 le associazioni naturalistiche di nuovo si sentono costrette a scendere in piazza: nonostante il parco sia già istituito e funzionante, lungo un sentiero ufficiale che conduce alle scogliere sottostanti percorrendo le valli di Pietralacroce (quello della Scalaccia) un rudere viene abbattuto e al suo posto viene costruita una abitazione, con regolare licenza rilasciata dal Comune di Ancona;",
+      "english": "In 1994, the naturalistic associations again felt forced to take to the streets: although the park was already established and functioning, along an official path leading to the cliffs below through the valleys of Pietralacroce (the Scalaccia one), a ruin was demolished and a house was built in its place, with a regular license issued by the Municipality of Ancona;"
+    },
+    {
+      "id": "s8",
+      "name": "Numana",
+      "quote": "Un esempio di cosa potrebbe succedere in assenza della tutela garantita da un parco è ciò che accade a Numana; si è ancora nel pieno degli anni del boom edilizio delle case per vacanza e in questo comune dal 1961 al 1971 le abitazioni erano aumentate del 120% per costruire doppie case.",
+      "english": "An example of what could happen in the absence of the protection guaranteed by a park is what occurs in Numana; it was still the height of the holiday home building boom and in this municipality from 1961 to 1971 housing increased by 120% to build double houses."
     }
   ],
   "days": [
     {
-      "title": "Portonovo and Northern Slopes",
+      "title": "Northern Coast and Portonovo",
       "stop_ids": [
+        "s1",
         "s2",
         "s3",
         "s4"
       ]
     },
     {
-      "title": "Coastal Paths and Beaches",
-      "stop_ids": [
-        "s1",
-        "s6"
-      ]
-    },
-    {
-      "title": "Valleys of Pietralacroce",
+      "title": "Southern Heights and Villages",
       "stop_ids": [
         "s5",
-        "s7"
+        "s6",
+        "s7",
+        "s8"
       ]
     }
-  ]
+  ],
+  "_text_sha": "2eced293f6e5435194841edd4400fded817a848e1e6d5815b6efbccba6d7f342"
 }

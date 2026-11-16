@@ -2,69 +2,70 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Noiraigue",
-      "quote": "The tour starts at the historical railway station in Noraigue.",
-      "english": "The tour starts at the historical railway station in Noraigue."
+      "name": "Val de Travers",
+      "quote": "Der Creux du Van [ˈkʀødyˌvɑ̃] ist ein Kar im Schweizer Jura an der Grenze zwischen den Kantonen Neuenburg und Waadt im Val de Travers.",
+      "english": "The Creux du Van is a cirque in the Swiss Jura on the border between the cantons of Neuchâtel and Vaud in the Val de Travers."
     },
     {
       "id": "s2",
-      "name": "River Areuse",
-      "quote": "Now you get to experience the sunny side of cycling: sit on the bike, step on the pedals and off you go for a short trip along the River Areuse through the Val de Travers.",
-      "english": "Now you get to experience the sunny side of cycling: sit on the bike, step on the pedals and off you go for a short trip along the River Areuse through the Val de Travers."
+      "name": "Mont Soliat",
+      "quote": "Das Gebiet liegt beim Mont Soliat auf 1200 bis 1450 m ü. M.",
+      "english": "The area is located near Mont Soliat at 1200 to 1450 m above sea level."
     },
     {
       "id": "s3",
-      "name": "Val de Travers",
-      "quote": "Now you get to experience the sunny side of cycling: sit on the bike, step on the pedals and off you go for a short trip along the River Areuse through the Val de Travers.",
-      "english": "Now you get to experience the sunny side of cycling: sit on the bike, step on the pedals and off you go for a short trip along the River Areuse through the Val de Travers."
+      "name": "Fontaine Froide",
+      "quote": "In der Mitte unter dem oben unbewaldeten Teil des Kessels liegt die Quelle Fontaine Froide, deren Wasser das ganze Jahr über gleichmässig 4 °C kalt ist.",
+      "english": "In the middle, below the treeless upper part of the basin, lies the Fontaine Froide spring, whose water is a constant 4 °C cold all year round."
     },
     {
       "id": "s4",
-      "name": "Creux du Van",
-      "quote": "Around 300 m from Creux du Van, park your e-bike at the restaurant Le Soliat and continue the rest of the way on foot.",
-      "english": "Around 300 m from Creux du Van, park your e-bike at the restaurant Le Soliat and continue the rest of the way on foot."
+      "name": "Noiraigue",
+      "quote": "Das geologisch und botanisch wertvolle Gebiet ist auch ein beliebtes Ausflugsziel, das zu Fuss am besten von Noiraigue zu erreichen ist.",
+      "english": "The geologically and botanically valuable area is also a popular excursion destination, which is best reached on foot from Noiraigue."
     },
     {
       "id": "s5",
-      "name": "Le Soliat",
-      "quote": "Around 300 m from Creux du Van, park your e-bike at the restaurant Le Soliat and continue the rest of the way on foot.",
-      "english": "Around 300 m from Creux du Van, park your e-bike at the restaurant Le Soliat and continue the rest of the way on foot."
+      "name": "Ferme du Soliat",
+      "quote": "Mit dem Auto gelangt man via Couvet oder Saint-Aubin-Sauges zum Restaurant Ferme du Soliat am oberen Rand des Felskessels.",
+      "english": "By car, you can reach the Ferme du Soliat restaurant at the upper edge of the rocky basin via Couvet or Saint-Aubin-Sauges."
     },
     {
       "id": "s6",
-      "name": "Lake Neuenburg",
-      "quote": "Encompassing 15.5 square kilometres of area and offering superb views of Lake Neuenburg, this is the largest natural reserve in the Canton of Neuchâtel.",
-      "english": "Encompassing 15.5 square kilometres of area and offering superb views of Lake Neuenburg, this is the largest natural reserve in the Canton of Neuchâtel."
+      "name": "Mauer der Freundschaft",
+      "quote": "Die Mauer wurde von einer internationalen Gruppe unentgeltlich erstellt und wird deshalb auch Mauer der Freundschaft genannt.",
+      "english": "The wall was built free of charge by an international group and is therefore also called the Wall of Friendship."
     },
     {
       "id": "s7",
-      "name": "Couvet",
-      "quote": "After a reviving snack, enjoy a relaxed cycle through the tranquil landscape via Couvet back to the starting point in Noiraigue.",
-      "english": "After a reviving snack, enjoy a relaxed cycle through the tranquil landscape via Couvet back to the starting point in Noiraigue."
+      "name": "Hochebene",
+      "quote": "Bei einer Wanderung auf der Hochebene sind viele Dolinen zu sehen.",
+      "english": "During a hike on the high plateau, many sinkholes can be seen."
     }
   ],
   "days": [
     {
-      "title": "Valley Exploration and River Trails",
+      "title": "Valleys and Approaches",
       "stop_ids": [
         "s1",
+        "s4"
+      ]
+    },
+    {
+      "title": "High Plateau Sights",
+      "stop_ids": [
         "s2",
-        "s3"
-      ]
-    },
-    {
-      "title": "The High Cliffs and Panoramic Peaks",
-      "stop_ids": [
-        "s4",
         "s5",
-        "s6"
-      ]
-    },
-    {
-      "title": "Tranquil Return Through the Jura",
-      "stop_ids": [
+        "s6",
         "s7"
       ]
+    },
+    {
+      "title": "Natural Springs",
+      "stop_ids": [
+        "s3"
+      ]
     }
-  ]
+  ],
+  "_text_sha": "8570e8cbcbdb6531079d066b25c58fa890e2a5d076049e28a083b2f90a2f205b"
 }

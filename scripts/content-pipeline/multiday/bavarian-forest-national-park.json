@@ -2,69 +2,70 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Nationalparkzentrum Lusen",
-      "quote": "Erste Anlaufstellen für Besucher sind die Nationalparkzentren Lusen und Falkenstein mit den Tier-Freigeländen sowie dem Hans-Eisenmann-Haus und dem Haus zur Wildnis.",
-      "english": "First points of contact for visitors are the Lusen and Falkenstein national park centers with the animal enclosures as well as the Hans Eisenmann House and the House to the Wilderness."
+      "name": "Großer Rachel",
+      "quote": "Zu den höchsten und bekanntesten Gipfeln des Nationalparks zählen der Große Rachel (1453 m), der Lusen (1373 m) und der Große Falkenstein (1315 m).",
+      "english": "Among the highest and most well-known peaks of the national park are the Großer Rachel (1453 m), the Lusen (1373 m), and the Große Falkenstein (1315 m)."
     },
     {
       "id": "s2",
-      "name": "Nationalparkzentrum Falkenstein",
-      "quote": "Erste Anlaufstellen für Besucher sind die Nationalparkzentren Lusen und Falkenstein mit den Tier-Freigeländen sowie dem Hans-Eisenmann-Haus und dem Haus zur Wildnis.",
-      "english": "First points of contact for visitors are the Lusen and Falkenstein national park centers with the animal enclosures as well as the Hans Eisenmann House and the House to the Wilderness."
+      "name": "Lusen",
+      "quote": "Der Nationalpark erstreckt sich entlang des Hauptkamms des Bayerischen Waldes von Bayerisch Eisenstein über den Großen Falkenstein (1315 m) im Nordwesten, den Großen Rachel (1453 m), den Lusen (1373 m) im Südosten bis nach Mauth.",
+      "english": "The national park extends along the main ridge of the Bavarian Forest from Bayerisch Eisenstein via the Großer Falkenstein (1315 m) in the northwest, the Großer Rachel (1453 m), [and] the Lusen (1373 m) in the southeast as far as Mauth."
     },
     {
       "id": "s3",
-      "name": "Tier-Freigeländen",
-      "quote": "Erste Anlaufstellen für Besucher sind die Nationalparkzentren Lusen und Falkenstein mit den Tier-Freigeländen sowie dem Hans-Eisenmann-Haus und dem Haus zur Wildnis.",
-      "english": "First points of contact for visitors are the Lusen and Falkenstein national park centers with the animal enclosures as well as the Hans Eisenmann House and the House to the Wilderness."
+      "name": "Großer Falkenstein",
+      "quote": "Zwieslerwaldhaus am Fuß des Großen Falkensteins, gehört zur Gemeinde Lindberg.",
+      "english": "Zwieslerwaldhaus at the foot of the Großer Falkenstein belongs to the municipality of Lindberg."
     },
     {
       "id": "s4",
-      "name": "Hans-Eisenmann-Haus",
-      "quote": "Erste Anlaufstellen für Besucher sind die Nationalparkzentren Lusen und Falkenstein mit den Tier-Freigeländen sowie dem Hans-Eisenmann-Haus und dem Haus zur Wildnis.",
-      "english": "First points of contact for visitors are the Lusen and Falkenstein national park centers with the animal enclosures as well as the Hans Eisenmann House and the House to the Wilderness."
+      "name": "Latschensee",
+      "quote": "Neben den Hochwäldern erstrecken sich dort auch ökologisch wertvolle Hochmoore mit Moorseen wie dem Latschensee und ehemalige Hochweiden („Schachten“).",
+      "english": "In addition to the high forests, ecologically valuable raised bogs with bog lakes such as the Latschensee and former high pastures (\"Schachten\") also extend there."
     },
     {
       "id": "s5",
-      "name": "Haus zur Wildnis",
-      "quote": "Erste Anlaufstellen für Besucher sind die Nationalparkzentren Lusen und Falkenstein mit den Tier-Freigeländen sowie dem Hans-Eisenmann-Haus und dem Haus zur Wildnis.",
-      "english": "First points of contact for visitors are the Lusen and Falkenstein national park centers with the animal enclosures as well as the Hans Eisenmann House and the House to the Wilderness."
+      "name": "Zwieslerwaldhaus",
+      "quote": "Im Nationalparkgebiet, besonders an den Rändern, befinden sich viele Enklaven: Zwieslerwaldhaus am Fuß des Großen Falkensteins, gehört zur Gemeinde Lindberg.",
+      "english": "In the national park area, especially at the edges, there are many enclaves: Zwieslerwaldhaus at the foot of the Großer Falkenstein, [which] belongs to the municipality of Lindberg."
     },
     {
       "id": "s6",
-      "name": "Waldgeschichtliches Museum",
-      "quote": "Waldgeschichtliches Museum, Waldspielgelände und Co. sind weitere Höhepunkte.",
-      "english": "Forest History Museum, forest playground and co. are further highlights."
+      "name": "Waldhäuser",
+      "quote": "Waldhäuser am Lusen, gehört zu Neuschönau, größte Enklave des Nationalparks",
+      "english": "Waldhäuser at the Lusen belongs to Neuschönau, the largest enclave of the national park."
     },
     {
       "id": "s7",
-      "name": "Waldspielgelände",
-      "quote": "Waldgeschichtliches Museum, Waldspielgelände und Co. sind weitere Höhepunkte.",
-      "english": "Forest History Museum, forest playground and co. are further highlights."
+      "name": "Rachelsee",
+      "quote": "Die Flächen zwischen Bayerisch Eisenstein und dem Rachelsee bestehen aus Gneisen.",
+      "english": "The areas between Bayerisch Eisenstein and the Rachelsee consist of gneisses."
     }
   ],
   "days": [
     {
-      "title": "National Park Centers and Animal Enclosures",
+      "title": "Peaks and Lakes of the Interior",
       "stop_ids": [
         "s1",
-        "s2",
-        "s3"
+        "s4",
+        "s7"
       ]
     },
     {
-      "title": "Educational Houses and Exhibits",
+      "title": "Northwestern Slopes and Enclaves",
       "stop_ids": [
-        "s4",
+        "s3",
         "s5"
       ]
     },
     {
-      "title": "Forest History and Play",
+      "title": "Southeastern Heights",
       "stop_ids": [
-        "s6",
-        "s7"
+        "s2",
+        "s6"
       ]
     }
-  ]
+  ],
+  "_text_sha": "e0abbe834a256cf8c55d39e00995f6422b221b0ad9fe8ad0c6f9c683761d242d"
 }

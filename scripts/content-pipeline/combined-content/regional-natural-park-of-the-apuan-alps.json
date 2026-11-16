@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Tuscany",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco naturale regionale delle Alpi Apuane"
+        "Eremo dei Calomini",
+        "lago di Vagli"
       ],
       "seo_title": "Regional Natural Park of the Apuan Alps Visit Guide"
     },
@@ -32,16 +33,62 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Regional Natural Park of the Apuan Alps",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Caves and Religious Hermitages of Garfagnana",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco naturale regionale delle Alpi Apuane",
-                "stop_id": "regional-natural-park-of-the-apuan-alps",
-                "detail": "The regional natural park of the Apuan Alps is a protected natural area with registered office in the Municipality of Stazzema, but also has offices in Castelnuovo di Garfagnana, Massa e Seravezza (Versilia)."
+                "name": "Eremo dei Calomini",
+                "stop_id": "regional-natural-park-of-the-apuan-alps--s2",
+                "detail": "The larger of the two is the Hermitage of Calomini, in the Municipality of Fabbriche di Vergemoli, while the other is the hermitage of San Viano, located a short distance from Vagli Sopra."
+              },
+              {
+                "name": "lago di Vagli",
+                "stop_id": "regional-natural-park-of-the-apuan-alps--s4",
+                "detail": "Lake Vagli, the largest one which, at its maximum level, has a capacity of 36 million cubic meters."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Regional Natural Park of the Apuan Alps before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Versilia Peaks and Subterranean Wonders",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Antro del Corchia",
+                "stop_id": "regional-natural-park-of-the-apuan-alps--s3",
+                "detail": "The Corchia Antro, a cave open to the public and recently equipped for visits, is the most extensive cave in Italy and is located on Mount Corchia on the Versilia side."
+              },
+              {
+                "name": "Monte Forato",
+                "stop_id": "regional-natural-park-of-the-apuan-alps--s5",
+                "detail": "Located on the southern slope of Mount Sumbra are two natural rarities: the great natural arch of Monte Forato and the \"giants' kettles\" (glacial potholes)."
+              },
+              {
+                "name": "Parco Nazionale della Pace di Sant'Anna di Stazzema",
+                "stop_id": "regional-natural-park-of-the-apuan-alps--s8",
+                "detail": "There are also testimonies of the Gothic Line, of the partisan struggles and of the Second World War, such as the National Peace Park of Sant'Anna di Stazzema and the Resistance Park at Monte Brugiana."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Regional Natural Park of the Apuan Alps before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Alpine Lakes and Northern Grottoes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Buca d'Equi Terme",
+                "stop_id": "regional-natural-park-of-the-apuan-alps--s6",
+                "detail": "The Buca d'Equi Terme, located on the Massa side."
+              },
+              {
+                "name": "lago di Isola Santa",
+                "stop_id": "regional-natural-park-of-the-apuan-alps--s7",
+                "detail": "The lake of Isola Santa, located in the Municipality of Careggine"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Regional Natural Park of the Apuan Alps before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +126,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_delle_Alpi_Apuane"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_regionale_delle_Alpi_Apuane"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:33:16.573237+00:00"
       }
     }
   }

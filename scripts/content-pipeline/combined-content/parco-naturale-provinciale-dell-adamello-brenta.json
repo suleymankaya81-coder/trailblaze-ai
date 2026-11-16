@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Trentino South Tyrol",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Adamello Brenta Natural Park"
+        "val Genova",
+        "Val di Fumo"
       ],
       "seo_title": "Parco naturale provinciale dell' Adamello Brenta Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco naturale provinciale dell' Adamello Brenta",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Valleys and Lakes of the Adamello Sector",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Adamello Brenta Natural Park",
-                "stop_id": "parco-naturale-provinciale-dell-adamello-brenta",
-                "detail": "The Adamello Brenta Natural Park (Italian: Parco naturale Adamello Brenta) is a nature reserve in Trentino, Italy. Established in 1967, it encompasses most of the Adamello-Presanella Alps as well as the Brenta Dolomites; it is the largest natural park in Trentino and along with the adjacent Stelvio National Park, Swiss National Park and Adamello Regional Park, it forms the largest protected area in the Alps, nearly 400,000 hectares. It joined the Global Geoparks Network in [dated source], becoming a UNESCO Global Geopark when the designation was ratified in [dated source]."
+                "name": "val Genova",
+                "stop_id": "parco-naturale-provinciale-dell-adamello-brenta--s4",
+                "detail": "Where this has not occurred, pure beech woods have been able to develop freely (Val Daone, Val Genova and the Outer Giudicarie)."
+              },
+              {
+                "name": "Val di Fumo",
+                "stop_id": "parco-naturale-provinciale-dell-adamello-brenta--s6",
+                "detail": "The stone pine occupies small forested areas in the park's territories with a more continental climate (Val di Fumo and the area of Lake Malghette)."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale provinciale dell' Adamello Brenta before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "The Brenta Peaks and Tovel Waters",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Val di Tovel",
+                "stop_id": "parco-naturale-provinciale-dell-adamello-brenta--s1",
+                "detail": "He proposes to establish a protected area only in the Val di Tovel, his hope being that as it was a small patch of land, between 5,000 and 10,000 hectares, devoid of housing, the bureaucratic complications should be minor and instead, once again, inertia won out."
+              },
+              {
+                "name": "Dolomiti di Brenta",
+                "stop_id": "parco-naturale-provinciale-dell-adamello-brenta--s3",
+                "detail": "It extends into western Trentino between the Val di Non, the Giudicarie and the Val di Sole, over a territory of more than 620 square kilometers, which includes the mountain groups of Adamello-Presanella (where one of the largest European glaciers is located) and the Brenta Dolomites."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco naturale provinciale dell' Adamello Brenta before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Adamello_Brenta_Natural_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_Adamello_Brenta"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T14:29:56.200843+00:00"
       }
     }
   }

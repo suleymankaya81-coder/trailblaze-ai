@@ -2,17 +2,98 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Wutach gorge",
-      "quote": "Wutach gorge: Loeffingen",
-      "english": "Wutach gorge: Loeffingen"
+      "name": "Haslachschlucht",
+      "quote": "Der Höhepunkt der von rechts einmündenden Haslachschlucht ist der Rechenfelsen, eine kurze, gut 20 Meter tiefe Klamm.",
+      "english": "The highlight of the Haslachschlucht, which joins from the right, is the Rechenfelsen, a short gorge a good 20 meters deep."
+    },
+    {
+      "id": "s2",
+      "name": "Rötenbachschlucht",
+      "quote": "Die bald darauf von links einmündende Rötenbachschlucht kulminiert in einem zweistufigen Wasserfall von 6 Metern Höhe.",
+      "english": "The Rötenbachschlucht, which joins from the left shortly thereafter, culminates in a two-stage waterfall 6 meters high."
+    },
+    {
+      "id": "s3",
+      "name": "Burg Stallegg",
+      "quote": "Unterhalb der wenigen Reste von Burg Stallegg beruhigt sich die Wutach im kleinen Stausee des Elektrizitätswerks Stallegg von 1895.",
+      "english": "Below the few remains of Stallegg Castle, the Wutach calms down in the small reservoir of the Stallegg electricity works from 1895."
+    },
+    {
+      "id": "s4",
+      "name": "Stallegger Brücke",
+      "quote": "Kurz darauf passiert sie die hölzerne, gedeckte Stallegger Brücke am einstigen Verbindungsweg zwischen fürstenbergischen Besitzungen beiderseits der Schlucht.",
+      "english": "Shortly afterwards, it passes the wooden, covered Stallegg Bridge on the former connecting path between the Fürstenberg estates on both sides of the gorge."
+    },
+    {
+      "id": "s5",
+      "name": "Räuberschlössle",
+      "quote": "Sie endet am Felsen Räuberschlössle mit der Burgruine Neu-Blumberg (auch Neu-Blumegg), einer nördlich der Wutach bis 80 Meter aufragenden Quarzporphyr-Formation, die nach dem Vorkommen von Pfingstnelken auch Nägelefels heißt und von der Wutach klammartig durchschnitten wird.",
+      "english": "It ends at the Räuberschlössle rock with the Neu-Blumberg castle ruins (also Neu-Blumegg), a quartz porphyry formation rising up to 80 meters north of the Wutach, which is also called Nägelefels after the occurrence of Cheddar pinks and is cut through like a canyon by the Wutach."
+    },
+    {
+      "id": "s6",
+      "name": "Lotenbachklamm",
+      "quote": "Bei der Schattenmühle und der querenden Straße mündet von rechts die Lotenbachklamm, eine Granitschlucht mit vier Wasserfällen bis 8 Meter Höhe, sowie einem etwa 20 Meter tief hineinstürzenden Nebenbach.",
+      "english": "At the Schattenmühle and the crossing road, the Lotenbachklamm joins from the right, a granite gorge with four waterfalls up to 8 meters high, as well as a side stream plunging about 20 meters deep into it."
+    },
+    {
+      "id": "s7",
+      "name": "Schelmenhalde",
+      "quote": "So kragen an der sonnseitigen Schelmenhalde ausgedehnte Kalktuffbildungen mit breitem Schleierwasserfall über den Wanderweg aus, und talabwärts gegenüber gleitet ein einst durchlöchertes, inzwischen zerfallendes und seitdem Drei Zinnen genanntes Muschelkalk-Felsgebilde auf Rutschmassen des Mittleren Muschelkalkes zur Wutach.",
+      "english": "Extensive tufa formations with a wide veil waterfall project over the hiking trail at the sunny Schelmenhalde, and downstream opposite, a shell limestone rock formation that was once perforated, has since decayed and since then been called Drei Zinnen, slides on sliding masses of the middle shell limestone towards the Wutach."
+    },
+    {
+      "id": "s8",
+      "name": "Rappenfelsen",
+      "quote": "Weiter talabwärts werden, zunächst an den Oberhängen, langgestreckte Felswände aus Schichten des Oberen Muschelkalks prägend, besonders links die etwa einen Kilometer langen Rappenfelsen über nachsackendem Untergrund.",
+      "english": "Further downstream, elongated rock walls made of layers of upper shell limestone become characteristic, initially on the upper slopes, especially on the left the Rappenfelsen, about one kilometer long, over subsiding subsoil."
+    },
+    {
+      "id": "s9",
+      "name": "Boller Wasserfall",
+      "quote": "Unmittelbar darunter stürzt der Boller Wasserfall zweistufig etwa 40 Meter tief von rechts zur Wutach.",
+      "english": "Immediately below it, the Boll Waterfall plunges in two stages about 40 meters deep from the right to the Wutach."
+    },
+    {
+      "id": "s10",
+      "name": "Tannegger Wasserfall",
+      "quote": "Am Felsenweiher, einem Altwasserrest unter einer Wand des Oberen Muschelkalks, stürzt der Tannegger Wasserfall (benannt nach der Ruine Alt-Tannegg) 15 Meter tief über eine bizarre Kalktuffbildung.",
+      "english": "At the Felsenweiher, a remnant of an old backwater under a wall of the upper shell limestone, the Tannegg Waterfall (named after the Alt-Tannegg ruins) plunges 15 meters deep over a bizarre tufa formation."
+    },
+    {
+      "id": "s11",
+      "name": "Amselfels",
+      "quote": "Gleich zu Beginn wird fast 70 Meter hoch der Amselfels gequert mit Blick auf den Großen Kanzelfels im Norden.",
+      "english": "Right at the beginning, the Amselfels is crossed at a height of almost 70 meters with a view of the Großer Kanzelfels to the north."
     }
   ],
   "days": [
     {
-      "title": "Wutach Gorge Exploration",
+      "title": "Upper Gorge and Historical Ruins",
       "stop_ids": [
-        "s1"
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Granite Cliffs and Waterfalls",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Limestone Walls and High Cascades",
+      "stop_ids": [
+        "s8",
+        "s9",
+        "s10",
+        "s11"
       ]
     }
-  ]
+  ],
+  "_text_sha": "fb4fbad6458c84a9decefd02ecf5303236104369369e4030a9edf0051b2f27a1"
 }

@@ -2,38 +2,70 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Großes Walsertal",
-      "quote": "Großes Walsertal has been a UNESCO Biosphere Reserve since 2000.",
-      "english": "Großes Walsertal has been a UNESCO Biosphere Reserve since 2000."
+      "name": "Gadental",
+      "quote": "Die Kernzonen umfassen das Gadental (Naturschutzgebiet sowie Natura-2000-Gebiet), Faludriga-Nova (Naturschutzgebiet), das Hochmoor Tiefenwald (Hochmoorschutz), der Oberlauf der Lutz (Fließgewässerschutz), Kirschwald-Ischkarnei und die Rote Wand (Schutz der Alpinregion).",
+      "english": "The core zones include the Gadental (nature reserve and Natura 2000 area), Faludriga-Nova (nature reserve), the Tiefenwald raised bog (raised bog protection), the upper reaches of the Lutz (river protection), Kirschwald-Ischkarnei, and the Rote Wand (protection of the alpine region)."
     },
     {
       "id": "s2",
-      "name": "alpine dairy",
-      "quote": "Whether hiking, joining a guided nature or cultural experience, or visiting a traditional alpine dairy, there are many ways to discover the close relationship between the landscape, local farming and the way of life.",
-      "english": "Whether hiking, joining a guided nature or cultural experience, or visiting a traditional alpine dairy, there are many ways to discover the close relationship between the landscape, local farming and the way of life."
+      "name": "Rote Wand",
+      "quote": "Die Kernzonen umfassen das Gadental (Naturschutzgebiet sowie Natura-2000-Gebiet), Faludriga-Nova (Naturschutzgebiet), das Hochmoor Tiefenwald (Hochmoorschutz), der Oberlauf der Lutz (Fließgewässerschutz), Kirschwald-Ischkarnei und die Rote Wand (Schutz der Alpinregion).",
+      "english": "The core zones include the Gadental (nature reserve and Natura 2000 area), Faludriga-Nova (nature reserve), the Tiefenwald raised bog (raised bog protection), the upper reaches of the Lutz (river protection), Kirschwald-Ischkarnei, and the Rote Wand (protection of the alpine region)."
     },
     {
       "id": "s3",
-      "name": "core zone",
-      "quote": "Explore the core zone of the UNESCO Biosphere Reserve Großes Walsertal on a snowshoe hike",
-      "english": "Explore the core zone of the UNESCO Biosphere Reserve Großes Walsertal on a snowshoe hike"
+      "name": "Stausee",
+      "quote": "Im Großwalsertal ist der ausgeleitete Lutz-Fluss unterhalb des Stausees als Regenerationszone ausgewiesen.",
+      "english": "In the Großwalsertal, the diverted Lutz River below the reservoir is designated as a restoration zone."
     },
     {
       "id": "s4",
-      "name": "Grosses Walsertal biosphere park",
-      "quote": "Ski and hiking tours in the Grosses Walsertal biosphere park take you to pristine mountain scenery",
-      "english": "Ski and hiking tours in the Grosses Walsertal biosphere park take you to pristine mountain scenery"
+      "name": "biosphärenpark.haus",
+      "quote": "Das biosphärenpark.haus ist das Besucherzentrum des Biosphärenparks Großes Walsertal.",
+      "english": "The biosphärenpark.haus is the visitor center of the Großes Walsertal Biosphere Park."
+    },
+    {
+      "id": "s5",
+      "name": "Walderlebnispfad Marul",
+      "quote": "Der Walderlebnispfad Marul ist ein Wanderweg mit Geschicklichkeitsspielen und informativer Beschilderung zu Natur und Geologie.",
+      "english": "The Marul Forest Discovery Trail is a hiking trail with skill games and informative signage about nature and geology."
+    },
+    {
+      "id": "s6",
+      "name": "Propstei St. Gerold",
+      "quote": "Die Propstei St. Gerold ist seit dem 10. Jahrhundert im Besitz des Benediktinerordens.",
+      "english": "The St. Gerold Provostry has been owned by the Benedictine Order since the 10th century."
+    },
+    {
+      "id": "s7",
+      "name": "Lutz",
+      "quote": "In Zukunft soll in der Entnahmestrecke der Lutz wieder genügend Wasser fließen.",
+      "english": "In the future, sufficient water should flow again in the withdrawal section of the Lutz."
     }
   ],
   "days": [
     {
-      "title": "Großes Walsertal Heritage and Wilderness",
+      "title": "Nature Reserves and Alpine Peaks",
       "stop_ids": [
         "s1",
-        "s2",
+        "s2"
+      ]
+    },
+    {
+      "title": "Educational Trails and Cultural Heritage",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Riverside Exploration and Water Ecology",
+      "stop_ids": [
         "s3",
-        "s4"
+        "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "8a1d085a130c992011a269d6bd18f04cd61f628b07aff75527910f9e6f469ba5"
 }

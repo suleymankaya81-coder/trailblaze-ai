@@ -3,42 +3,71 @@
     {
       "id": "s1",
       "name": "Schaalsee",
-      "quote": "The 24 km² Schaalsee is the centre of the UNESCO biosphere reserve and gives it its name.",
-      "english": "The 24 km² Schaalsee is the centre of the UNESCO biosphere reserve and gives it its name."
+      "quote": "Im Januar 2000 nahm die UNESCO den Schaalsee (mit dem mecklenburgischen Landschaftsschutzgebiet Schaalseelandschaft) in das internationale Netz der damaligen 411 Biosphärenreservate auf.",
+      "english": "In January 2000, UNESCO included the Schaalsee (with the Mecklenburg landscape conservation area Schaalseelandschaft) in the international network of the then 411 biosphere reserves."
     },
     {
       "id": "s2",
-      "name": "PAHLHUUS",
-      "quote": "35 000 guests visit the PAHLHUUS",
-      "english": "35,000 guests visit the PAHLHUUS."
+      "name": "Kampenwerder",
+      "quote": "Im See befinden sich mehrere Inseln, unter anderem Kampenwerder, die Stintenburginsel und Rethwiese.",
+      "english": "In the lake there are several islands, including Kampenwerder, the Stintenburg Island and Rethwiese."
     },
     {
       "id": "s3",
-      "name": "moors",
-      "quote": "Discover the 310 km² protected area between the metropolitan areas of Hamburg, Lübeck and Schwerin - characterised by moors and lakes, fields, pastures and wet meadows as well as beech forests.",
-      "english": "Discover the 310 km² protected area between the metropolitan areas of Hamburg, Lübeck and Schwerin - characterised by moors and lakes, fields, pastures and wet meadows as well as beech forests."
+      "name": "Stintenburginsel",
+      "quote": "Im See befinden sich mehrere Inseln, unter anderem Kampenwerder, die Stintenburginsel und Rethwiese.",
+      "english": "In the lake there are several islands, including Kampenwerder, the Stintenburg Island and Rethwiese."
     },
     {
       "id": "s4",
-      "name": "beech forests",
-      "quote": "Discover the 310 km² protected area between the metropolitan areas of Hamburg, Lübeck and Schwerin - characterised by moors and lakes, fields, pastures and wet meadows as well as beech forests.",
-      "english": "Discover the 310 km² protected area between the metropolitan areas of Hamburg, Lübeck and Schwerin - characterised by moors and lakes, fields, pastures and wet meadows as well as beech forests."
+      "name": "Rethwiese",
+      "quote": "Im See befinden sich mehrere Inseln, unter anderem Kampenwerder, die Stintenburginsel und Rethwiese.",
+      "english": "In the lake there are several islands, including Kampenwerder, the Stintenburg Island and Rethwiese."
+    },
+    {
+      "id": "s5",
+      "name": "Pahlhuus",
+      "quote": "Das Pahlhuus (niederdeutsch, so viel wie Pfahlhaus = Haus auf Pfählen) in Zarrentin am Schaalsee ist das Informationszentrum des Biosphärenreservates Schaalsee und gleichzeitig Sitz des Biosphärenreservatsamtes Schaalsee-Elbe.",
+      "english": "The Pahlhuus (Low German for pile house = house on stilts) in Zarrentin am Schaalsee is the information center of the Schaalsee Biosphere Reserve and also the headquarters of the Schaalsee-Elbe Biosphere Reserve Office."
+    },
+    {
+      "id": "s6",
+      "name": "Zarrentin am Schaalsee",
+      "quote": "Die Gemeinden Dechow, Groß Molzahn, Kneese, Roggendorf, Rögnitz, Schlagsdorf und Utecht liegen ganz im Biosphärenreservat.",
+      "english": "The municipalities of Dechow, Groß Molzahn, Kneese, Roggendorf, Rögnitz, Schlagsdorf and Utecht lie entirely within the biosphere reserve."
+    },
+    {
+      "id": "s7",
+      "name": "Moorsteg",
+      "quote": "Direkt hinter dem Pahlhuus beginnt der Moorsteg, der in die Natur der Schaalseelandschaft führt.",
+      "english": "Directly behind the Pahlhuus begins the Moorsteg (moor path), which leads into the nature of the Schaalsee landscape."
+    },
+    {
+      "id": "s8",
+      "name": "Schlagsdorf",
+      "quote": "Die Gemeinden Dechow, Groß Molzahn, Kneese, Roggendorf, Rögnitz, Schlagsdorf und Utecht liegen ganz im Biosphärenreservat.",
+      "english": "The municipalities of Dechow, Groß Molzahn, Kneese, Roggendorf, Rögnitz, Schlagsdorf and Utecht lie entirely within the biosphere reserve."
     }
   ],
   "days": [
     {
-      "title": "Central Lakes and Visitor Facilities",
+      "title": "Islands of the Schaalsee",
       "stop_ids": [
         "s1",
-        "s2"
-      ]
-    },
-    {
-      "title": "Natural Landscapes and Forest Habitats",
-      "stop_ids": [
+        "s2",
         "s3",
         "s4"
       ]
+    },
+    {
+      "title": "Discovery in Zarrentin",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
     }
-  ]
+  ],
+  "_text_sha": "e644892acaa41f960a9c71e62c132504e9d63b74fb941d443aa96a86eca4f30c"
 }

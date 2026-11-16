@@ -2,27 +2,27 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Rio Pegorino",
-      "quote": "Include numerose aree urbane, ma soprattutto zone boschive che affiorano lungo il Lambro e i suoi affluenti Bevere e Rii (Rio Pegorino, Rio Cantalupo).",
-      "english": "It includes numerous urban areas, but especially wooded zones that emerge along the Lambro and its tributaries Bevere and Rii (Rio Pegorino, Rio Cantalupo)."
+      "name": "lago di Alserio",
+      "quote": "A nord del Parco regionale si trovano due laghi compresi per tutta la loro superficie all'interno parco: il lago di Alserio e il lago di Pusiano, nel quale il Lambro, prima si getta col nome di Lambrone, poi esce e continua il suo percorso fino ad incontrare il Po presso Orio Litta.",
+      "english": "In the north of the Regional Park, there are two lakes entirely included within the park: Lake Alserio and Lake Pusiano, into which the Lambro first flows as the Lambrone, then exits and continues its path until it meets the Po at Orio Litta."
     },
     {
       "id": "s2",
-      "name": "Rio Cantalupo",
-      "quote": "Include numerose aree urbane, ma soprattutto zone boschive che affiorano lungo il Lambro e i suoi affluenti Bevere e Rii (Rio Pegorino, Rio Cantalupo).",
-      "english": "It includes numerous urban areas, but especially wooded zones that emerge along the Lambro and its tributaries Bevere and Rii (Rio Pegorino, Rio Cantalupo)."
+      "name": "lago di Pusiano",
+      "quote": "A nord del Parco regionale si trovano due laghi compresi per tutta la loro superficie all'interno parco: il lago di Alserio e il lago di Pusiano, nel quale il Lambro, prima si getta col nome di Lambrone, poi esce e continua il suo percorso fino ad incontrare il Po presso Orio Litta.",
+      "english": "In the north of the Regional Park, there are two lakes entirely included within the park: Lake Alserio and Lake Pusiano, into which the Lambro first flows as the Lambrone, then exits and continues its path until it meets the Po at Orio Litta."
     },
     {
       "id": "s3",
-      "name": "lago di Alserio",
-      "quote": "A nord del Parco regionale si trovano due laghi compresi per tutta la loro superficie all'interno parco: il lago di Alserio e il lago di Pusiano, nel quale il Lambro, prima si getta col nome di Lambrone, poi esce e continua il suo percorso fino ad incontrare il Po presso Orio Litta.",
-      "english": "In the north of the regional Park there are two lakes entirely included within the park: Lake Alserio and Lake Pusiano, into which the Lambro first flows under the name Lambrone, then exits and continues its path until meeting the Po at Orio Litta."
+      "name": "Rio Pegorino",
+      "quote": "Include numerose aree urbane, ma soprattutto zone boschive che affiorano lungo il Lambro e i suoi affluenti Bevere e Rii (Rio Pegorino, Rio Cantalupo).",
+      "english": "It includes numerous urban areas, but especially wooded areas that emerge along the Lambro and its tributaries Bevere and Rii (Rio Pegorino, Rio Cantalupo)."
     },
     {
       "id": "s4",
-      "name": "lago di Pusiano",
-      "quote": "A nord del Parco regionale si trovano due laghi compresi per tutta la loro superficie all'interno parco: il lago di Alserio e il lago di Pusiano, nel quale il Lambro, prima si getta col nome di Lambrone, poi esce e continua il suo percorso fino ad incontrare il Po presso Orio Litta.",
-      "english": "In the north of the regional Park there are two lakes entirely included within the park: Lake Alserio and Lake Pusiano, into which the Lambro first flows under the name Lambrone, then exits and continues its path until meeting the Po at Orio Litta."
+      "name": "Rio Cantalupo",
+      "quote": "Include numerose aree urbane, ma soprattutto zone boschive che affiorano lungo il Lambro e i suoi affluenti Bevere e Rii (Rio Pegorino, Rio Cantalupo).",
+      "english": "It includes numerous urban areas, but especially wooded areas that emerge along the Lambro and its tributaries Bevere and Rii (Rio Pegorino, Rio Cantalupo)."
     },
     {
       "id": "s5",
@@ -32,39 +32,35 @@
     },
     {
       "id": "s6",
-      "name": "Bosco del Chignolo",
-      "quote": "Bosco del Chignolo",
-      "english": "Chignolo Wood"
+      "name": "Ente di Diritto Pubblico Parco Regionale della Valle del Lambro",
+      "quote": "Viene gestito dal Ente di Diritto Pubblico Parco Regionale della Valle del Lambro che ha sede in via Vittorio Veneto, 19 a Triuggio (MB).",
+      "english": "It is managed by the Regional Park of the Lambro Valley Public Body, which is headquartered at via Vittorio Veneto, 19 in Triuggio (MB)."
     },
     {
       "id": "s7",
-      "name": "Triuggio",
-      "quote": "Viene gestito dal Ente di Diritto Pubblico Parco Regionale della Valle del Lambro che ha sede in via Vittorio Veneto, 19 a Triuggio (MB).",
-      "english": "It is managed by the Regional Park of the Lambro Valley Public Body, which has its headquarters in via Vittorio Veneto, 19 in Triuggio (MB)."
+      "name": "Bosco del Chignolo",
+      "quote": "Bosco del Chignolo",
+      "english": "Chignolo Wood"
     }
   ],
   "days": [
     {
-      "title": "Northern Lakes and Woods",
-      "stop_ids": [
-        "s3",
-        "s4",
-        "s6"
-      ]
-    },
-    {
-      "title": "Central River Tributaries and Headquarters",
+      "title": "Northern Lakes and Tributaries",
       "stop_ids": [
         "s1",
         "s2",
-        "s7"
+        "s3",
+        "s4"
       ]
     },
     {
-      "title": "Southern Park Lands",
+      "title": "Southern Parklands and Administration",
       "stop_ids": [
-        "s5"
+        "s5",
+        "s6",
+        "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "5b4ecebec99230395ab4deebd11f7d31463f4f5114a17d7aeb9821ef2f047ed1"
 }

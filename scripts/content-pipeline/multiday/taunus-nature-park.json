@@ -2,50 +2,70 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Taunus-Informationszentrums",
-      "quote": "Mit den Seminarräumen im Taunus-Informationszentrums an der Hohemark kein Problem!",
-      "english": "With the seminar rooms in the Taunus Information Center at Hohemark, it's no problem!"
+      "name": "Taunus-Informationszentrum (TIZ)",
+      "quote": "Der Sitz der Geschäftsstelle des Zweckverbandes ist das Taunus-Informationszentrum (TIZ) an der Hohemarkstraße in Oberursel.",
+      "english": "The headquarters of the association is the Taunus Information Center (TIZ) on Hohemarkstraße in Oberursel."
     },
     {
       "id": "s2",
-      "name": "Hohemark",
-      "quote": "Mit den Seminarräumen im Taunus-Informationszentrums an der Hohemark kein Problem!",
-      "english": "With the seminar rooms in the Taunus Information Center at Hohemark, it's no problem!"
+      "name": "Großer Feldberg",
+      "quote": "Hier verläuft der Taunushauptkamm mit dem Großen Feldberg (881,5 m) als höchster Taunusberg.",
+      "english": "The main ridge of the Taunus runs here with the Großer Feldberg (881.5 m) as the highest Taunus mountain."
     },
     {
       "id": "s3",
-      "name": "Waldtraut",
-      "quote": "Die Bewirtung erfolgt durch das Team des Waldtraut.",
-      "english": "Catering is provided by the Waldtraut team."
+      "name": "Weiltal",
+      "quote": "Weiltal – mit Weilquelle am Kastell Kleiner Feldberg",
+      "english": "Weil Valley – with the source of the Weil at the Kleiner Feldberg fort."
     },
     {
       "id": "s4",
-      "name": "Jugendzeltplatz „Kammerforst“",
-      "quote": "Entdecke das Abenteuer Natur im Jugendzeltplatz „Kammerforst“!",
-      "english": "Discover the nature adventure at the \"Kammerforst\" youth campsite!"
+      "name": "Pferdskopf",
+      "quote": "Pferdskopf (662,6 m), bei Schmitten-Treisberg",
+      "english": "Pferdskopf (662.6 m), near Schmitten-Treisberg."
     },
     {
       "id": "s5",
-      "name": "Weilrod",
-      "quote": "Eingebettet in die malerische Landschaft von Weilrod, reserviert für Jugendgruppen und Familien, ist unser Zeltplatz der ideale Ort für bis zu 60 Naturbegeisterte.",
-      "english": "Nestled in the picturesque landscape of Weilrod, reserved for youth groups and families, our campsite is the ideal place for up to 60 nature enthusiasts."
+      "name": "Kastell Saalburg",
+      "quote": "Kastell Saalburg – bei Bad Homburg vor der Höhe",
+      "english": "Saalburg Roman Fort – near Bad Homburg vor der Höhe."
+    },
+    {
+      "id": "s6",
+      "name": "Herzberg",
+      "quote": "Herzberg (591,4 m), bei Bad Homburg vor der Höhe",
+      "english": "Herzberg (591.4 m), near Bad Homburg vor der Höhe."
+    },
+    {
+      "id": "s7",
+      "name": "Eschbacher Klippen",
+      "quote": "Eschbacher Klippen – bei Usingen",
+      "english": "Eschbach Cliffs – near Usingen."
     }
   ],
   "days": [
     {
-      "title": "Hohemark Information and Hospitality",
+      "title": "High Peaks and Information",
       "stop_ids": [
         "s1",
-        "s2",
-        "s3"
+        "s2"
       ]
     },
     {
-      "title": "Outdoor Adventure in Weilrod",
+      "title": "Valleys and High Ridges",
       "stop_ids": [
-        "s4",
-        "s5"
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Roman History and Cliffs",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
       ]
     }
-  ]
+  ],
+  "_text_sha": "4648414fdf9b84f5cdbe3a78ab9dced52647a3860c8413f9dbc1cc3c652c2aa5"
 }

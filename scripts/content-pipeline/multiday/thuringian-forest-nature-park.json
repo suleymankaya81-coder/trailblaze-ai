@@ -3,16 +3,90 @@
     {
       "id": "s1",
       "name": "Rennsteig",
-      "quote": "Jemand zeigt ein stilles Waldstück in der Story, ein anderes Profil filmt Morgennebel am Rennsteig, irgendwo taucht ein Aussichtspunkt auf, den man vorher gar nicht auf dem Schirm hatte.",
-      "english": "Someone shows a quiet patch of forest in a story, another profile films morning mist on the Rennsteig, somewhere a viewpoint appears that wasn't even on the radar before."
+      "quote": "Der Naturpark Thüringer Wald erstreckt sich über das Gebiet rund um den Rennsteig im Thüringer Wald, im Hohen Thüringer Schiefergebirge mit dem Schwarzatal und an der Westflanke des Frankenwaldes zwischen Eisenach im Nordwesten und Sonneberg im Südosten.",
+      "english": "The Thuringian Forest Nature Park extends over the area around the Rennsteig in the Thuringian Forest, in the High Thuringian Slate Mountains with the Schwarzatal valley and on the western flank of the Franconian Forest between Eisenach in the northwest and Sonneberg in the southeast."
+    },
+    {
+      "id": "s2",
+      "name": "Großer Beerberg",
+      "quote": "Höchste Erhebungen im Naturpark Thüringer Wald sind der Große Beerberg (982 m ü. NN) und der Schneekopf (978 m ü. NN) im Thüringer Wald.",
+      "english": "The highest elevations in the Thuringian Forest Nature Park are the Großer Beerberg (982 m above sea level) and the Schneekopf (978 m above sea level) in the Thuringian Forest."
+    },
+    {
+      "id": "s3",
+      "name": "Schneekopf",
+      "quote": "Höchste Erhebungen im Naturpark Thüringer Wald sind der Große Beerberg (982 m ü. NN) und der Schneekopf (978 m ü. NN) im Thüringer Wald.",
+      "english": "The highest elevations in the Thuringian Forest Nature Park are the Großer Beerberg (982 m above sea level) and the Schneekopf (978 m above sea level) in the Thuringian Forest."
+    },
+    {
+      "id": "s4",
+      "name": "Biosphärenreservat Vessertal-Thüringer Wald",
+      "quote": "Das 170 km² große Biosphärenreservat Vessertal-Thüringer Wald wird vom Naturpark umschlossen.",
+      "english": "The 170 km² Vessertal-Thuringian Forest Biosphere Reserve is surrounded by the nature park."
+    },
+    {
+      "id": "s5",
+      "name": "Rennsteiggarten Oberhof",
+      "quote": "Naturparkinformationszentrum Oberhof (Mittlerer Thüringer Wald) im Rennsteiggarten Oberhof",
+      "english": "Oberhof Nature Park Information Center (Central Thuringian Forest) in the Oberhof Rennsteig Garden"
+    },
+    {
+      "id": "s6",
+      "name": "Talsperre Schönbrunn",
+      "quote": "Er umfasst unter anderem die sogenannte Talsperrenregion um die Alte Gothaer Talsperre (auch Talsperre Tambach-Dietharz genannt), die Schmalwasser-, die Ohra- sowie die Lütschetalsperre, die Talsperre Erletor, die Talsperre Schönbrunn am Übergang vom Thüringer Wald zum Schiefergebirge, aber auch das Schwarzatal mit der Talsperre Scheibe-Alsbach und dem Pumpspeicherwerk Goldisthal und das Lichtetal mit der Trinkwassertalsperre Leibis-Lichte.",
+      "english": "It includes, among others, the so-called dam region around the Alte Gotha Dam (also called the Tambach-Dietharz Dam), the Schmalwasser, the Ohra and the Lütsche dams, the Erletor Dam, the Schönbrunn Dam at the transition from the Thuringian Forest to the Slate Mountains, but also the Schwarzatal with the Scheibe-Alsbach Dam and the Goldisthal pumped storage plant and the Lichtetal with the Leibis-Lichte drinking water dam."
+    },
+    {
+      "id": "s7",
+      "name": "Großer Inselsberg",
+      "quote": "Natur- und Geoparkinformation mit Ausstellung auf dem Großen Inselsberg (Mittlerer Thüringer Wald)",
+      "english": "Nature and Geopark information with exhibition on the Großer Inselsberg (Central Thuringian Forest)"
+    },
+    {
+      "id": "s8",
+      "name": "Schloss Altenstein",
+      "quote": "Naturparkinformationszentrum Bad Liebenstein / OT Altenstein (Thüringer Wald) bei Schloss Altenstein",
+      "english": "Bad Liebenstein Nature Park Information Center / Altenstein district (Thuringian Forest) at Altenstein Castle"
+    },
+    {
+      "id": "s9",
+      "name": "Pumpspeicherwerk Goldisthal",
+      "quote": "Haus der Natur im ehemaligen Gasthaus „Zum fröhlichen Mann“ in Goldisthal (Thüringer Schiefergebirge)",
+      "english": "House of Nature in the former guesthouse \"Zum fröhlichen Mann\" in Goldisthal (Thuringian Slate Mountains)"
+    },
+    {
+      "id": "s10",
+      "name": "Talsperre Leibis/Lichte",
+      "quote": "Besucherzentrum an der Talsperre Leibis/Lichte",
+      "english": "Visitor center at the Leibis/Lichte dam"
     }
   ],
   "days": [
     {
-      "title": "A Day on the Rennsteig",
+      "title": "High Peaks and Botanical Gardens",
       "stop_ids": [
+        "s2",
+        "s3",
+        "s5",
         "s1"
       ]
+    },
+    {
+      "title": "Reservoirs and Biosphere Reserve",
+      "stop_ids": [
+        "s4",
+        "s6",
+        "s10"
+      ]
+    },
+    {
+      "title": "Castles and Geoparks",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9"
+      ]
     }
-  ]
+  ],
+  "_text_sha": "b898dcb324985884f177d5e0c401c9c7ce9b2118008e66dd59a38421c9371f24"
 }

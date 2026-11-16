@@ -2,45 +2,77 @@
   "stops": [
     {
       "id": "s1",
-      "name": "Bettmeralp",
-      "quote": "The ski pistes at the two car-free villages of Bettmeralp and Riederalp afford unobstructed views of the highest mountains in Switzerland.",
-      "english": "The ski pistes at the two car-free villages of Bettmeralp and Riederalp afford unobstructed views of the highest mountains in Switzerland."
+      "name": "Jungfraujoch",
+      "quote": "Forschungsstationen gibt es seit 1937 auf dem Jungfraujoch und seit 1976 auf der Riederfurka oberhalb der Riederalp.",
+      "english": "Research stations have existed since 1937 on the Jungfraujoch and since 1976 on the Riederfurka above the Riederalp."
     },
     {
       "id": "s2",
-      "name": "Riederalp",
-      "quote": "From there the run follows a blue-marked trail back to the Riederalp.",
-      "english": "From there the run follows a blue-marked trail back to the Riederalp."
+      "name": "Konkordiaplatz",
+      "quote": "Später käme es dann zur Bildung eines Sees unter der „Vorderen Rinnerture“ sowie eines Sees am Konkordiaplatz, wo die Mächtigkeit des Eises etwa 900 Meter betrug.",
+      "english": "Later on, a lake would form under the \"Vordere Rinnerture\" as well as a lake at Konkordiaplatz, where the ice thickness was about 900 meters."
     },
     {
       "id": "s3",
-      "name": "Bettmerhorn",
-      "quote": "This intermediate run begins with magnificent views near the cable car top station at the Bettmerhorn.",
-      "english": "This intermediate run begins with magnificent views near the cable car top station at the Bettmerhorn."
+      "name": "Märjelensee",
+      "quote": "In der Senke zwischen dem Strahlhorn und dem Eggishorn liegt der Märjelensee, der im 19. Jahrhundert beim Gletscherhochstand zu einem Gletscherrandsee aufgestaut wurde.",
+      "english": "The Märjelensee lies in the depression between the Strahlhorn and the Eggishorn; it was dammed into a proglacial lake during the glacier's peak in the 19th century."
     },
     {
       "id": "s4",
-      "name": "Aletsch Piste",
-      "quote": "The Aletsch Piste guarantees fun on the snow with direct views of Switzerland’s highest mountains – on the opposite side of the Rhone Valley you will see the magnificent four-thousand-metre-high Valais peaks against the deep blue sky.",
-      "english": "The Aletsch Piste guarantees fun on the snow with direct views of Switzerland’s highest mountains – on the opposite side of the Rhone Valley you will see the magnificent four-thousand-metre-high Valais peaks against the deep blue sky."
+      "name": "Eggishorn",
+      "quote": "Durch zahlreiche Luftseilbahnen besonders gut erschlossen ist der Berggrat zwischen dem Riederhorn und dem Eggishorn, der sehr schöne Einblicke in den Zungenbereich des Gletschers gewährt.",
+      "english": "The mountain ridge between the Riederhorn and the Eggishorn is particularly well developed by numerous cable cars, offering beautiful views into the tongue area of the glacier."
     },
     {
       "id": "s5",
-      "name": "Blausee chairlift",
-      "quote": "The red-marked trail on the sunny southern slope takes you westwards to the route followed by the Blausee chairlift.",
-      "english": "The red-marked trail on the sunny southern slope takes you westwards to the route followed by the Blausee chairlift."
+      "name": "Massaschlucht",
+      "quote": "Aus ihr entspringt der Bach Massa, welcher nach der Massaschlucht und einer Nutzung in einem Wasserkraftwerk, in Bitsch, oberhalb von Naters, in die Rhone (Rotten) fliesst.",
+      "english": "The Massa stream originates from it and flows into the Rhône (Rotten) after passing through the Massa Gorge and being utilized in a hydroelectric power plant in Bitsch, above Naters."
+    },
+    {
+      "id": "s6",
+      "name": "Riederfurka",
+      "quote": "Forschungsstationen gibt es seit 1937 auf dem Jungfraujoch und seit 1976 auf der Riederfurka oberhalb der Riederalp.",
+      "english": "Research stations have existed since 1937 on the Jungfraujoch and since 1976 on the Riederfurka above the Riederalp."
+    },
+    {
+      "id": "s7",
+      "name": "Bettmerhorn",
+      "quote": "Er zeichnet dann eine grosse Rechtskurve und biegt immer mehr nach Südwesten ab, nun durch den Grat des Eggishorns und Bettmerhorns vom Rhonetal getrennt.",
+      "english": "It then describes a large curve to the right and turns more and more to the southwest, now separated from the Rhône valley by the ridge of the Eggishorn and Bettmerhorn."
+    },
+    {
+      "id": "s8",
+      "name": "Riederhorn",
+      "quote": "Durch zahlreiche Luftseilbahnen besonders gut erschlossen ist der Berggrat zwischen dem Riederhorn und dem Eggishorn, der sehr schöne Einblicke in den Zungenbereich des Gletschers gewährt.",
+      "english": "The mountain ridge between the Riederhorn and the Eggishorn is particularly well developed by numerous cable cars, offering beautiful views into the tongue area of the glacier."
     }
   ],
   "days": [
     {
-      "title": "Aletsch Arena Villages and Pistes",
+      "title": "High Alpine Origins",
       "stop_ids": [
         "s1",
-        "s2",
+        "s2"
+      ]
+    },
+    {
+      "title": "Eastern Panoramas and Lakes",
+      "stop_ids": [
         "s3",
         "s4",
-        "s5"
+        "s7"
+      ]
+    },
+    {
+      "title": "Western Ridges and Gorges",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s8"
       ]
     }
-  ]
+  ],
+  "_text_sha": "b2352267e191ffc4f2b5d558c23332d0abef8aaf487b65d30f731805a789d900"
 }
