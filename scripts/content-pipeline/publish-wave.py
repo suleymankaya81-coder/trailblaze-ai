@@ -41,7 +41,7 @@ for slug in sys.argv[1:]:
     problems = [msg for ok, msg in [
         (slug not in {r["slug"] for r in review.get("photoNeeds", [])}, "reviewed photo blocker"),
         (d["hero_image"] and d["photo_credit"], "cover photo"),
-        (d["lat"] is not None and d["lng"] is not None and d["nearest_airport_code"] and (d["drive_minutes"] or d.get("access_type") == "fly-in"), "location/airport/drive"),
+        (d["lat"] is not None and d["lng"] is not None and d["nearest_airport_code"] and (d["drive_minutes"] or d.get("access_type") in ("fly-in", "ferry")), "location/airport/drive"),
         (len(offers) >= required_offer_count(d['country_code'], d.get('travel_plan')), f"offers {len(offers)}"),
         (slug in routes, "route line"),
         (d["permit_note"], "reservation note"),

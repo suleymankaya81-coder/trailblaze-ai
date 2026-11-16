@@ -39,7 +39,8 @@ def allows_wikipedia_overview(packet):
 def overview_source(source, packet):
     host = urlparse(source.get('url', '')).hostname or ''
     return source.get('kind') == 'official' or (allows_wikipedia_overview(packet)
-        and source.get('kind') == 'wikipedia' and host in ('en.wikipedia.org', 'de.wikipedia.org', 'it.wikipedia.org'))
+        and ((source.get('kind') == 'wikipedia' and host in ('en.wikipedia.org', 'de.wikipedia.org', 'it.wikipedia.org'))
+             or (source.get('kind') == 'wikivoyage' and host == 'en.wikivoyage.org')))
 
 def load_packet(slug):
     path = PACKETS / (slug + '.json')
