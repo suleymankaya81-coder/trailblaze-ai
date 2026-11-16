@@ -238,6 +238,7 @@
 - [x] Finish Germany publication: 168/168 published with stored German versions; machine translation is not independently language-certified.
 
 ## Italy (Southern Europe wave)
-- [x] 171 of 198 Italian places published (English); results in south-europe/italy-result-2026-11-16.json.
-- [ ] 27 held: 16 article never names the place, 4 boat/island (ferry evidence), 4 missing/ambiguous article, 3 cover/coordinates/short text.
+- [x] 190 of 198 Italian places published (English).
+- [ ] 8 held: Capri and Aeolian Islands (ferry evidence), 3 source text never names the place, Great Dolomite Road article, Chianti coordinates, Monti Lattari cover.
+- [ ] Europe plans (DACH + Italy, 506 places) are all 1-day; multi-day plans need a decision on paid generation.
 - [ ] German versions of Italian pages (translation run) not done yet.

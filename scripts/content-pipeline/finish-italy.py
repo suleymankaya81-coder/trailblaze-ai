@@ -15,14 +15,31 @@ def sitelink(qid):
         if lang+'wiki' in e: return e[lang+'wiki']['title'], lang
     raise ValueError('No en/it Wikipedia article for '+qid)
 
+# Reviewed article identities for curated rows without a Wikidata ID or with a short English article.
+TITLE_OVERRIDES = {'gorropu-gorge':('Gola di Gorropu','it'), 'great-dolomite-road':('Grande Strada delle Dolomiti','it'),
+    'seceda-and-val-gardena':('Seceda','it'), 'grotta-giusti-and-tuscan-hot-springs-saturnia':('Terme di Saturnia','it'),
+    'chianti':('Monti del Chianti','it')}
+ITWIKI = {'monte-barro':'Monte Barro'}
+ROAD_REACHABLE = {'marine-nature-reserve-of-miramare','marine-protected-area-capo-rizzuto'}  # mainland coast, reached by road
+
 def packet_and_page(row, title, lang='en'):
     """QID-identified English article; the opening paragraph is the reviewed exact-place excerpt."""
     page = flex.article(title, lang)
     text = page.get('extract','').strip()
     paras = [p.strip() for p in text.split('\n') if len(p.strip()) >= 80]
+    if (len(text) < 200 or not paras) and lang == 'en' and ITWIKI.get(row['slug']): return packet_and_page(row, ITWIKI[row['slug']], 'it')
     if len(text) < 200 or not paras: raise ValueError('English article too short; Italian-only text is not shown untranslated')
     name = page['title'].split(' (')[0]
     hit = [p for p in paras if name.casefold() in p.casefold()]
+    if not hit:
+        # Long official names are often shortened in the text; require every distinctive word of the title.
+        generic = {'parco','park','national','natural','naturale','regionale','regional','nature','reserve','riserva','del','dei','della','delle','di','e','and','the','of','nord'}
+        words = [w for w in flex.re.findall(r"[\w']+", name.casefold()) if w not in generic and len(w) > 3]
+        hit = [p for p in paras if words and all(w in p.casefold() for w in words)]
+        if hit:
+            low = hit[0].casefold(); pos = [low.index(w) for w in words]
+            start, end = min(pos), max(low.index(w) + len(w) for w in words)
+            if end - start <= 80: name = hit[0][start:end]  # exact wording used by the source
     if not hit: raise ValueError('Article text never names the place exactly')
     excerpt = hit[0]
     url = f'https://{lang}.wikipedia.org/wiki/' + flex.quote(page['title'].replace(' ','_'))
@@ -51,8 +68,10 @@ def main():
     for row in todo:
         slug=row['slug']; row.setdefault('authority', row.get('official_site') or '')
         try:
+            if slug in ROAD_REACHABLE: row['access']='road'
             if row['access']!='road': raise ValueError('Boat/island arrival needs ferry evidence; no invented drive')
-            if row.get('wikidata'):
+            if slug in TITLE_OVERRIDES: title, lang = TITLE_OVERRIDES[slug]
+            elif row.get('wikidata'):
                 title, lang = sitelink(row['wikidata'])
             else: title, lang = row['name'].split(' (')[0], 'en'
             packet,page,lang = packet_and_page(row, title, lang)

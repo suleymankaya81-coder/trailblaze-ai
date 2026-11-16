@@ -140,8 +140,9 @@ export function DestinationPageView({ dest, landingLinks, crumbs }: { dest: Dest
         </section>
 
         {/* Budget + preparation: equal panels, never sticky (prevents overlap) */}
-        <div className="grid gap-6 md:grid-cols-2 md:items-stretch">
-          <TripBudget ai={ai} loading={aiLoading} />
+        <div className={`grid gap-6 md:items-stretch ${(dest.countryCode ?? "us") === "us" ? "md:grid-cols-2" : ""}`}>
+          {/* Budget estimates exist only for US places; elsewhere the panel would be empty. */}
+          {(dest.countryCode ?? "us") === "us" && <TripBudget ai={ai} loading={aiLoading} />}
           <TravelServices dest={dest} />
         </div>
 
