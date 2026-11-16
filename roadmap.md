@@ -1,7 +1,11 @@
+## November 16 complete DACH audit
+- [x] Audit all 316 catalog destinations: 168 DE / 81 AT / 67 CH published; final park completed with licensed Purbach cover and sourced nature-park-office map anchor; 316 cached German versions saved, routing identities retained.
+- [x] Verify all 632 English/German pages (200, heading and metadata), all 316 displayed covers in Chromium, unique covers and published regions; six desktop/phone visits per language and German itinerary navigation checked, 296 JS / 78 Python tests pass. Source gaps remain explicit; offline German language quality and claim-by-claim factual accuracy are not certified. No app publication performed.
+
 ## November 16 flexible DACH completion
 - [x] Process all previous 63 holds without model calls: 62 published with Wikipedia overviews, coordinates and licensed covers; operational gaps remain unknown.
 - [x] Read back all 62 published records and check all 62 pages (HTTP 200); three browser checks, 75 policy tests and preview build OK.
-- [ ] Publish Neusiedler See–Leithagebirge Nature Park; blocker: exact-place coordinates absent from its Wikipedia/Wikidata record. No guessed point applied.
+- [x] Publish Neusiedler See–Leithagebirge Nature Park using the officially named Haus am Kellerplatz visitor-office anchor and matching independently mapped point; no park-centroid claim.
 
 ## November 16 Gemini completion for the remaining 79 DACH places
 - [x] Process all 79 in one bounded sequential Gemini batch after cached evidence/photo/location preparation; 16 calls, no replays or research subagents.
@@ -15,7 +19,7 @@
 
 ## November 15 remaining DACH production
 - [x] Process all 300 unpublished DACH destinations in one no-model batch: Berchtesgaden published, 299 held; previously published rows skipped.
-- [ ] Complete 299 remaining destinations; blocker: 298 lack approved official evidence, one lacks a usable photo. Source discovery returned HTTP 429; retained failure records and added stop-on-403/429 without retries.
+- [x] Complete the earlier 299 destination holds through subsequent cached batches and the approved DACH Wikipedia-overview policy; final 316-place readback is recorded above.
 - [x] Record baseline 173.67 credits separately from zero content-model calls; verify new published record and run regression checks.
 
 ## November 15 flexible UK production
@@ -230,5 +234,5 @@
 - [x] Germany English discovery and publication batch: 157 checked, 24 new English packets, 18 new places published; 133 discovery holds, six coordinate holds and one photo hold remain. Country-matched Wikipedia is background only. Lake Chiemsee HTTP 200/heading/Expedia/Vrbo verified; 13 Python tests and build pass. Balance snapshots 162.72→161.62, not final task attribution.
 - [x] Expand Austria English discovery through cached national/regional sitemaps: 27 approved packets, 15 new destinations published, 12 held for coordinates; 50 source-discovery holds retained. No model calls, translation service or subagents. Lake Attersee HTTP 200, heading and Expedia/Vrbo checked; 10 Python tests and preview build pass. Workspace balance snapshots 165.82→164.22, not final task attribution.
 - [x] Chunk 1 Switzerland: 25 more published; held for coordinates (8), photos (5), quote check (1), no official page found (~25).
-- [ ] Finish Austria: 12 approved destinations lack verified coordinates; 50 others still lack usable English official excerpts. Discovery and publication batch completed for available evidence (19/81 now published).
-- [ ] Finish Germany: 126 remain (113 source discovery, eight coordinates, one photo, four exact-excerpt validation holds); German Wikipedia returned five additional park-centre candidates but these are not yet applied/reviewed. Retained translations require language review; no full completion claimed.
+- [x] Finish Austria publication: 81/81 published in the final catalog audit under the approved flexible source policy; unknown current rules remain unknown.
+- [x] Finish Germany publication: 168/168 published with stored German versions; machine translation is not independently language-certified.
