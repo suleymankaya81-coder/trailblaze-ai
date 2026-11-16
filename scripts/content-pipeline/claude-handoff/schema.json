@@ -1,0 +1,26 @@
+{
+ "$schema":"https://json-schema.org/draft/2020-12/schema",
+ "type":"array",
+ "items":{"type":"object","additionalProperties":false,
+  "required":["slug","status","tagline","summary","best_season","days","sources"],
+  "properties":{
+   "slug":{"type":"string","description":"Exactly as in the catalog"},
+   "status":{"enum":["ok","skip"]},
+   "skip_reason":{"type":"string"},
+   "tagline":{"type":"string","maxLength":90},
+   "summary":{"type":"string","minLength":250,"maxLength":900},
+   "best_season":{"enum":["spring","summer","autumn","winter","year_round","spring_autumn","summer_autumn"]},
+   "reservation_note":{"type":["string","null"],"description":"Only if a cited source states it; else null"},
+   "access_note":{"type":["string","null"],"description":"Ferry/boat/cable car info for island or non-road places, else null"},
+   "days":{"type":"array","minItems":1,"maxItems":3,"items":{"type":"object","additionalProperties":false,
+     "required":["day","title","stops"],
+     "properties":{"day":{"type":"integer"},"title":{"type":"string"},
+      "stops":{"type":"array","minItems":1,"maxItems":5,"items":{"type":"object","additionalProperties":false,
+        "required":["name","what","source_url"],
+        "properties":{"name":{"type":"string","description":"Real named place (village, viewpoint, trail, lake)"},
+         "what":{"type":"string","maxLength":280},
+         "lat":{"type":["number","null"]},"lng":{"type":["number","null"]},
+         "source_url":{"type":"string"}}}}}}},
+   "sources":{"type":"array","minItems":1,"items":{"type":"string"}}
+  }}
+}

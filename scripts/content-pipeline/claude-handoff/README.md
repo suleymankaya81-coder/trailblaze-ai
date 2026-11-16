@@ -1,0 +1,1 @@
+Files for external (Claude) content generation. Catalogs: fr (91), pt (38), gr (38). Results come back as `<cc>-result-partN.json`; Lovable validates stops/coordinates, adds licensed photos, writes to the database and German translations. Curated FR rows with `verify_wikidata` need QID check on import.
