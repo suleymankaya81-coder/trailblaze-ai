@@ -6,7 +6,7 @@ import { DayRouteActions } from "@/components/ui-kit/DayRouteActions";
 import { dayPoints } from "@/lib/routes/dayRoute";
 import { Link } from "@/components/site/LocalLink";
 import { SlidersHorizontal } from "lucide-react";
-import { isNonRoadDestination } from "@/lib/data/destinationAccess";
+import { isFerryDestination, isNonRoadDestination } from "@/lib/data/destinationAccess";
 
 type Nudge = { href: string; label: string };
 /** One quiet booking link per day: arrival → vehicle, middle → tours, last → stays. */
@@ -18,7 +18,8 @@ export function dayNudge(i: number, total: number, airportCode?: string | null):
 }
 
 export function TravelFlow({ name, plan, airportCode, nudges = false, region, slug }: { name: string; plan: TravelPlan; airportCode?: string | null; nudges?: boolean; region?: string; slug?: string }) {
-  const nonRoad = !!slug && isNonRoadDestination(slug);
+  const ferry = !!slug && isFerryDestination(slug);
+  const nonRoad = !!slug && isNonRoadDestination(slug) && !ferry;
   function download() {
     const text = [name, ...plan.days.flatMap((day, i) => [`\n${nonRoad ? "Stage" : "Day"} ${i + 1}: ${day.title}`, day.start, ...day.stops.map(s => `${s.name}: ${s.detail}`), day.driving, day.note]), "\nLOCAL NOTES", ...plan.intel.map(t => `${t.title}: ${t.text}`), ...plan.sources.map(s => `${s.label}: ${s.url}`)].join("\n");
     const url = URL.createObjectURL(new Blob([text], { type: "text/plain;charset=utf-8" }));
@@ -27,7 +28,7 @@ export function TravelFlow({ name, plan, airportCode, nudges = false, region, sl
   return <section id="flow" className="scroll-mt-40">
     <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
       <div><p className="mb-2 text-xs font-semibold uppercase text-sage-deep"><T>A little structure. Plenty of freedom.</T></p><h2 className="text-2xl text-foreground md:text-3xl">{nonRoad ? <T>Expedition planning stages</T> : plan.days.length === 1 ? <T>Visit highlights:</T> : <>{plan.days.length} <T>days in</T></>} <T>{name}</T></h2>{nonRoad && <p className="mt-2 text-sm text-muted-foreground"><T>These are planning stages, not a three-day sightseeing circuit. Transfers, duration and return arrangements must be confirmed with your operator.</T></p>}</div>
-      <div className="flex flex-wrap gap-2">{slug && !nonRoad && <Button asChild variant="outline"><Link to="/trip-builder/$slug" params={{ slug }}><SlidersHorizontal /> <T>Customize this trip</T></Link></Button>}<Button variant="outline" onClick={download}><Download /> <T>Save trip</T></Button></div>
+      <div className="flex flex-wrap gap-2">{slug && !nonRoad && !ferry && <Button asChild variant="outline"><Link to="/trip-builder/$slug" params={{ slug }}><SlidersHorizontal /> <T>Customize this trip</T></Link></Button>}<Button variant="outline" onClick={download}><Download /> <T>Save trip</T></Button></div>
     </div>
     {!nonRoad && <DayRouteActions title={`${name} trip`} points={plan.days.flatMap(d => dayPoints(d, plan.markers, name, region, slug))} mapsLabel="Open whole trip in Google Maps" />}
     <div className="mb-4" />

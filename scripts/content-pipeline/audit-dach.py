@@ -66,12 +66,17 @@ def translate_row(row):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--translate', action='store_true')
+    parser.add_argument('--shard', default='0/1', help='i/n: translate only every n-th row (parallel runs)')
+    parser.add_argument('--countries', default='de,at,ch', help='comma-separated ISO codes, e.g. it')
     args = parser.parse_args()
+    lit = lambda v: "'" + str(v).replace("'", "''") + "'"
     prepare = module('dach_audit_prepare', 'prepare-wave.py')
-    rows = json.loads(prepare.q("select coalesce(json_agg(d),'[]') from (select * from destinations where country_code in ('de','at','ch') order by slug) d"))
+    rows = json.loads(prepare.q("select coalesce(json_agg(d),'[]') from (select * from destinations where country_code in (" + ','.join(lit(c) for c in args.countries.split(',')) + ") order by slug) d"))
     existing = set(prepare.q("select entity_id from content_translations where entity_type='destination' and locale='de' and status='published'").splitlines())
     results = []
-    lit = lambda v: "'" + str(v).replace("'", "''") + "'"
+    lit2 = lambda v: "'" + str(v).replace("'", "''") + "'"
+    si, sn = map(int, args.shard.split('/'))
+    if sn > 1: rows = rows[si::sn]
     for row in rows:
         result = {'slug': row['slug'], 'country': row['country_code'], 'status': row['status'], 'missing': issues(row)}
         if args.translate and row['status'] == 'published' and row['slug'] not in existing and not result['missing']:
@@ -87,7 +92,7 @@ def main():
         result['german'] = row['slug'] in existing
         results.append(result)
         print(json.dumps(result, ensure_ascii=False), flush=True)
-        (ROOT/'dach'/'full-audit-2026-11-16.json').write_text(json.dumps({'total': len(rows), 'content_model_calls': 0,
+        (ROOT/'dach'/('full-audit-2026-11-16.json' if args.countries == 'de,at,ch' else f"german-audit-{args.countries.replace(',','-')}-{si}.json")).write_text(json.dumps({'total': len(rows), 'content_model_calls': 0,
             'results': results}, ensure_ascii=False, indent=2))
 
 if __name__ == '__main__': main()

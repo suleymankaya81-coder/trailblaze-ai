@@ -85,7 +85,7 @@ import { destinationCrumbs, type Crumb } from "@/lib/seo/breadcrumbs";
 import { offerPhoto, type Photo } from "@/lib/data/destinationCardPhotos";
 import { ROAD_PREPARATION_PARTNERS, preparationLink } from "@/lib/affiliates/travelpayouts";
 import { commonsFilePage, parsePhotoCredit } from "@/lib/seo/imageCredit";
-import { isNonRoadDestination } from "@/lib/data/destinationAccess";
+import { isFerryDestination, isNonRoadDestination } from "@/lib/data/destinationAccess";
 import { CANADA_PRICE_BASIS } from "@/lib/data/canadaPricing";
 
 
@@ -812,6 +812,7 @@ function ServiceRow({ service, destinationSlug }: { service: OfferView; destinat
 ========================================================= */
 function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
   const nonRoad = isNonRoadDestination(dest.slug, dest.accessType);
+  const ferry = isFerryDestination(dest.slug, dest.accessType);
   const hasGeo =
     dest.lat != null && dest.lng != null && dest.airportLat != null && dest.airportLng != null;
   const from: [number, number] | null = dest.airportLng != null && dest.airportLat != null ? [dest.airportLng, dest.airportLat] : null;
@@ -824,7 +825,7 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
 
   return (
     <section id="road-trip" className="scroll-mt-24">
-      <SectionHeader title={nonRoad ? "Locate your expedition" : "Plan your road trip"} />
+      <SectionHeader title={ferry ? "Find the island" : nonRoad ? "Locate your expedition" : "Plan your road trip"} />
       <div className="grid grid-cols-[minmax(0,1fr)] gap-6 rounded-lg border border-border bg-card p-4 shadow-soft sm:p-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
         <div className="relative min-h-[300px] overflow-hidden rounded-xl border border-border bg-beige/60">
           {from && to ? (
@@ -848,7 +849,7 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
                 <T>From</T> {dest.airportName}
               </p>
               <p className="mt-1 font-serif text-2xl font-semibold text-foreground">
-                {nonRoad ? <T>Flight or boat transfer required</T> : dest.driveMinutes != null ? formatDrive(dest.driveMinutes) : "—"}
+                {ferry ? <T>Ferry or hydrofoil crossing required</T> : nonRoad ? <T>Flight or boat transfer required</T> : dest.driveMinutes != null ? formatDrive(dest.driveMinutes) : "—"}
               </p>
               {!nonRoad && dest.driveMiles != null && (
                 <p className="text-xs text-muted-foreground">
@@ -866,11 +867,11 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
             <Navigation className="h-4 w-4" /> <T>{nonRoad ? "View place in Google Maps" : "Get directions"}</T>
           </a>
           <p className="mt-2 text-center text-[11px] text-muted-foreground">
-            <T>{nonRoad ? "Location only; this is not a road route. Confirm transfers with the park authority." : "Airport-to-destination drive; sightseeing stops are separate markers."}</T>
+            <T>{ferry ? "Location only; reach the island by scheduled boat. Check current timetables with the operators." : nonRoad ? "Location only; this is not a road route. Confirm transfers with the park authority." : "Airport-to-destination drive; sightseeing stops are separate markers."}</T>
           </p>
           {nearbyStays.length > 0 && (
             <>
-              <p className="mt-5 text-xs font-semibold text-foreground"><T>{nonRoad ? "Check accommodation with your expedition operator" : "Stays near the end of your drive"}</T></p>
+              <p className="mt-5 text-xs font-semibold text-foreground"><T>{ferry ? "Stays near the island" : nonRoad ? "Check accommodation with your expedition operator" : "Stays near the end of your drive"}</T></p>
               <ul className="mt-2 space-y-2">
                 {nearbyStays.map((s) => (
                   <li key={s.id}>

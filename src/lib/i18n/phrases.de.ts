@@ -4,6 +4,10 @@ import generated from "./phrases.de.generated.json";
 export const DE_PHRASES: Record<string, string> = {
   ...(generated as Record<string, string>),
   "Before you go": "Vor der Reise",
+  "Ferry or hydrofoil crossing required": "Überfahrt mit Fähre oder Tragflächenboot nötig",
+  "Find the island": "Die Insel finden",
+  "Location only; reach the island by scheduled boat. Check current timetables with the operators.": "Nur Lage; die Insel erreichen Sie mit Linienschiffen. Aktuelle Fahrpläne bei den Reedereien prüfen.",
+  "Stays near the island": "Unterkünfte auf der Insel",
   "Flights": "Flüge",
   "Vehicle & RV": "Fahrzeug & Wohnmobil",
   "Gear": "Ausrüstung",

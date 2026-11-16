@@ -42,7 +42,7 @@ def ferry_source(slug):
     if not hit: raise ValueError('Ferry evidence not found in Wikivoyage')
     line = hit[0]; sentence = line[line.index(start):]
     # Capri's line carries dated fares; keep only the undated port list.
-    sentence = sentence.split(' (')[0] + ', Amalfi, Positano and from Sorrento' if 'Capri' in title else flex.re.split(r'(?<=\.)\s+', sentence)[0]
+    sentence = sentence.split(' (')[0] if 'Capri' in title else flex.re.split(r'(?<=\.)\s+', sentence)[0]
     if sentence not in text: raise ValueError('Ferry excerpt is not exact')
     return {'url':url,'kind':'wikivoyage','text':text,'generation_excerpts':[sentence]}, sentence
 
