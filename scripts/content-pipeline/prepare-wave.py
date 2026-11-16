@@ -384,7 +384,7 @@ def airports(lat, lng, n=4, country="us"):
         if not os.path.exists("/tmp/airports.csv"):
             urllib.request.urlretrieve("https://davidmegginson.github.io/ourairports-data/airports.csv", "/tmp/airports.csv")
         with open("/tmp/airports.csv") as f:
-            AIRPORTS.extend(r for r in csv.DictReader(f) if r["iso_country"] in ("US", "CA", "GB", "DE", "AT", "CH")
+            AIRPORTS.extend(r for r in csv.DictReader(f) if r["iso_country"] in ("US", "CA", "GB", "DE", "AT", "CH", "IT")
                 and r["scheduled_service"] == "yes" and r["iata_code"]
                 and r["type"] in ("large_airport", "medium_airport"))
     pool = [a for a in AIRPORTS if a["iso_country"] == country.upper()]
