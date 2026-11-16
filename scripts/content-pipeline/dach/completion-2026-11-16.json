@@ -1,0 +1,491 @@
+{
+  "requested": 100,
+  "new_published": 21,
+  "remaining": 79,
+  "content_model_calls": 0,
+  "research_subagents": 0,
+  "new_pages": [
+    {
+      "name": "Brocken",
+      "url": "https://wildparkroutes.com/destinations/de/saxony-anhalt/brocken"
+    },
+    {
+      "name": "Wutach Gorge",
+      "url": "https://wildparkroutes.com/destinations/de/baden-wurttemberg/wutach-gorge"
+    },
+    {
+      "name": "Wasserkuppe",
+      "url": "https://wildparkroutes.com/destinations/de/hesse/wasserkuppe"
+    },
+    {
+      "name": "Lusatian Lake District",
+      "url": "https://wildparkroutes.com/destinations/de/brandenburg/lusatian-lake-district"
+    },
+    {
+      "name": "Island of Rügen",
+      "url": "https://wildparkroutes.com/destinations/de/mecklenburg-vorpommern/island-of-rugen"
+    },
+    {
+      "name": "Fischland-Darß-Zingst",
+      "url": "https://wildparkroutes.com/destinations/de/mecklenburg-vorpommern/fischland-dar-zingst"
+    },
+    {
+      "name": "Odenwald",
+      "url": "https://wildparkroutes.com/destinations/de/hesse/odenwald"
+    },
+    {
+      "name": "Röthbach Waterfall",
+      "url": "https://wildparkroutes.com/destinations/de/bavaria/rothbach-waterfall"
+    },
+    {
+      "name": "Externsteine",
+      "url": "https://wildparkroutes.com/destinations/de/north-rhine-westphalia/externsteine"
+    },
+    {
+      "name": "Wimbachklamm",
+      "url": "https://wildparkroutes.com/destinations/de/bavaria/wimbachklamm"
+    },
+    {
+      "name": "Thayatal National Park",
+      "url": "https://wildparkroutes.com/destinations/at/lower-austria/thayatal-national-park"
+    },
+    {
+      "name": "Liechtensteinklamm",
+      "url": "https://wildparkroutes.com/destinations/at/salzburg/liechtensteinklamm"
+    },
+    {
+      "name": "Dachstein Massif",
+      "url": "https://wildparkroutes.com/destinations/at/styria/dachstein-massif"
+    },
+    {
+      "name": "Swiss Alps Jungfrau-Aletsch",
+      "url": "https://wildparkroutes.com/destinations/ch/bern/swiss-alps-jungfrau-aletsch"
+    },
+    {
+      "name": "Val d'Hérens",
+      "url": "https://wildparkroutes.com/destinations/ch/valais/val-dh-rens"
+    },
+    {
+      "name": "Mount Rigi",
+      "url": "https://wildparkroutes.com/destinations/ch/lucerne/mount-rigi"
+    },
+    {
+      "name": "Lake Thun",
+      "url": "https://wildparkroutes.com/destinations/ch/bern/lake-thun"
+    },
+    {
+      "name": "Stromberg-Heuchelberg Nature Park",
+      "url": "https://wildparkroutes.com/destinations/de/baden-wurttemberg/stromberg-heuchelberg-nature-park"
+    },
+    {
+      "name": "Rhine-Westerwald Nature Park",
+      "url": "https://wildparkroutes.com/destinations/de/rhineland-palatinate/rhine-westerwald-nature-park"
+    },
+    {
+      "name": "Lauenburg Lakes Nature Park",
+      "url": "https://wildparkroutes.com/destinations/de/schleswig-holstein/lauenburg-lakes-nature-park"
+    },
+    {
+      "name": "Lower Lusatian Heath Nature Park",
+      "url": "https://wildparkroutes.com/destinations/de/brandenburg/lower-lusatian-heath-nature-park"
+    }
+  ],
+  "held": [
+    {
+      "slug": "southern-black-forest-biosphere-area",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: southern-black-forest-biosphere-area"
+    },
+    {
+      "slug": "elbe-river-landscape-biosphere-reserve",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "vessertal-thuringian-forest-biosphere-reserve",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: vessertal-thuringian-forest-biosphere-reserve"
+    },
+    {
+      "slug": "upper-lusatian-heath-and-pond-landscape",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: upper-lusatian-heath-and-pond-landscape"
+    },
+    {
+      "slug": "teutoburg-forest-nature-park",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "ore-mountains-nature-park",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: ore-mountains-nature-park"
+    },
+    {
+      "slug": "wendelstein",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: wendelstein"
+    },
+    {
+      "slug": "feldberg-black-forest",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: feldberg-black-forest"
+    },
+    {
+      "slug": "danube-gorge-weltenburg-narrows",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: danube-gorge-weltenburg-narrows"
+    },
+    {
+      "slug": "lake-eibsee",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: lake-eibsee"
+    },
+    {
+      "slug": "lake-walchensee",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "alpsee-fussen",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: alpsee-fussen"
+    },
+    {
+      "slug": "lake-constance-german-shore",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: lake-constance-german-shore"
+    },
+    {
+      "slug": "titisee",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: titisee"
+    },
+    {
+      "slug": "mummelsee",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: mummelsee"
+    },
+    {
+      "slug": "lake-edersee",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: lake-edersee"
+    },
+    {
+      "slug": "eifel-maars-daun",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: eifel-maars-daun"
+    },
+    {
+      "slug": "rugen-chalk-cliffs-konigsstuhl",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: rugen-chalk-cliffs-konigsstuhl"
+    },
+    {
+      "slug": "island-of-usedom",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "island-of-amrum",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "island-of-fohr",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "island-of-borkum",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "island-of-norderney",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: island-of-norderney"
+    },
+    {
+      "slug": "island-of-juist",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: island-of-juist"
+    },
+    {
+      "slug": "island-of-spiekeroog",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "herreninsel-chiemsee",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: herreninsel-chiemsee"
+    },
+    {
+      "slug": "elbe-sandstone-mountains-bastei",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: elbe-sandstone-mountains-bastei"
+    },
+    {
+      "slug": "kyffhauser",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: kyffhauser"
+    },
+    {
+      "slug": "grumsin-beech-forest",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "triberg-waterfalls",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: triberg-waterfalls"
+    },
+    {
+      "slug": "todtnau-waterfall",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "barenhohle-swabian-alb",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: barenhohle-swabian-alb"
+    },
+    {
+      "slug": "teufelshohle-pottenstein",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: teufelshohle-pottenstein"
+    },
+    {
+      "slug": "grosses-walsertal-biosphere-park",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "salzburger-lungau-and-karntner-nockberge-biosphere",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: salzburger-lungau-and-karntner-nockberge-biosphere"
+    },
+    {
+      "slug": "grossglockner-and-pasterze-glacier",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: grossglockner-and-pasterze-glacier"
+    },
+    {
+      "slug": "eisriesenwelt-ice-cave",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "dachstein-ice-cave-and-five-fingers",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: dachstein-ice-cave-and-five-fingers"
+    },
+    {
+      "slug": "hallstatt-and-lake-hallstatt",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: hallstatt-and-lake-hallstatt"
+    },
+    {
+      "slug": "plansee",
+      "status": "held",
+      "reason": "only 0 supporting photos for 1 sourced sights"
+    },
+    {
+      "slug": "gosau-lakes",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "stubai-valley-and-glacier",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: stubai-valley-and-glacier"
+    },
+    {
+      "slug": "kaunertal-glacier-road",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "kaprun-glacier-kitzsteinhorn",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: kaprun-glacier-kitzsteinhorn"
+    },
+    {
+      "slug": "tscheppaschlucht",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: tscheppaschlucht"
+    },
+    {
+      "slug": "golling-waterfall",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "stuibenfall",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: stuibenfall"
+    },
+    {
+      "slug": "umbalfalle",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: umbalfalle"
+    },
+    {
+      "slug": "grindelwald-and-eiger",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: grindelwald-and-eiger"
+    },
+    {
+      "slug": "schilthorn-and-murren",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: schilthorn-and-murren"
+    },
+    {
+      "slug": "rhine-gorge-ruinaulta",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: rhine-gorge-ruinaulta"
+    },
+    {
+      "slug": "stoos-and-fronalpstock",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: stoos-and-fronalpstock"
+    },
+    {
+      "slug": "ebenalp-and-seealpsee",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: ebenalp-and-seealpsee"
+    },
+    {
+      "slug": "lake-geneva-and-lavaux",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "lake-maggiore-swiss-shore",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: lake-maggiore-swiss-shore"
+    },
+    {
+      "slug": "holloch-cave",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: holloch-cave"
+    },
+    {
+      "slug": "vall-e-de-joux",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: vall-e-de-joux"
+    },
+    {
+      "slug": "black-forest-central-north-nature-park",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: black-forest-central-north-nature-park"
+    },
+    {
+      "slug": "upper-palatinate-forest-nature-park",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "bavarian-rhon-nature-park",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: bavarian-rhon-nature-park"
+    },
+    {
+      "slug": "rhine-taunus-nature-park",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: rhine-taunus-nature-park"
+    },
+    {
+      "slug": "vogelsberg-volcanic-region-nature-park",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "south-eifel-nature-park",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "nassau-nature-park",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: nassau-nature-park"
+    },
+    {
+      "slug": "peene-valley-river-landscape-nature-park",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: peene-valley-river-landscape-nature-park"
+    },
+    {
+      "slug": "nossentin-schwinz-heath-nature-park",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: nossentin-schwinz-heath-nature-park"
+    },
+    {
+      "slug": "uckermark-lakes-nature-park",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: uckermark-lakes-nature-park"
+    },
+    {
+      "slug": "schlaube-valley-nature-park",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: schlaube-valley-nature-park"
+    },
+    {
+      "slug": "south-harz-nature-park",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: south-harz-nature-park"
+    },
+    {
+      "slug": "saale-unstrut-triasland-nature-park",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "harz-nature-park-saxony-anhalt",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: harz-nature-park-saxony-anhalt"
+    },
+    {
+      "slug": "dromling-nature-park",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: dromling-nature-park"
+    },
+    {
+      "slug": "karst-landscape-south-harz-biosphere-reserve",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "wadden-sea-and-halligen-biosphere-reserve",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: wadden-sea-and-halligen-biosphere-reserve"
+    },
+    {
+      "slug": "lower-saxon-elbe-valley-biosphere-reserve",
+      "status": "held",
+      "reason": "no coordinates"
+    },
+    {
+      "slug": "lech-valley-nature-park",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: lech-valley-nature-park"
+    },
+    {
+      "slug": "buchberg-nature-park",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: buchberg-nature-park"
+    },
+    {
+      "slug": "eisenwurzen-nature-park-lower-austria",
+      "status": "held",
+      "reason": "HELD: collect and review official source packet before generation: eisenwurzen-nature-park-lower-austria"
+    },
+    {
+      "slug": "neusiedler-see-leithagebirge-nature-park",
+      "status": "held",
+      "reason": "no photos"
+    }
+  ],
+  "note": "AI recollection not used to fabricate facts. Wikipedia missing-article stubs excluded; downloaded article identity remains unverified unless separately reviewed."
+}

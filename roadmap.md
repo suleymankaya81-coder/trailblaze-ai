@@ -1,3 +1,8 @@
+## November 16 remaining 100 DACH places
+- [x] Collect tourism search candidates and Wikipedia page responses for 100 places without research subagents; missing Wikipedia articles excluded, remaining background requires identity review.
+- [x] Review exact-place excerpts and publish 21 eligible pages without content-model calls; three new pages return HTTP 200 with correct titles.
+- [ ] Complete 79 places; blockers: reviewed official excerpts, verified coordinates or licensed photos. Per-place reasons are in dach/completion-2026-11-16.json; AI cannot establish absent facts.
+
 ## November 15 remaining DACH production
 - [x] Process all 300 unpublished DACH destinations in one no-model batch: Berchtesgaden published, 299 held; previously published rows skipped.
 - [ ] Complete 299 remaining destinations; blocker: 298 lack approved official evidence, one lacks a usable photo. Source discovery returned HTTP 429; retained failure records and added stop-on-403/429 without retries.
