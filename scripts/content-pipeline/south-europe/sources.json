@@ -1,0 +1,49 @@
+{
+ "authority_country_pages": {
+  "it": "/eu/it/it.htm",
+  "es": "/eu/sp/sp.htm",
+  "pt": "/eu/pr/pr.htm",
+  "gr": "/eu/gr/gr.htm"
+ },
+ "note": "world-national-parks.net only linked a country index for these four countries; Wayback CDX shows those pages returned 404 from 2000-2011 and no park-level pages exist. /eu/es is Estonia, not Spain.",
+ "excluded": [
+  {
+   "qid": "Q1537757",
+   "name": "Ligurian Sea Cetacean Sanctuary",
+   "reason": "offshore cetacean sanctuary; no visitor access point"
+  },
+  {
+   "qid": "Q1658753",
+   "name": "Cíes Islands",
+   "reason": "part of Atlantic Islands of Galicia National Park"
+  },
+  {
+   "qid": "Q80344",
+   "name": "Mount Olympus",
+   "reason": "duplicate of Olympos National Park"
+  },
+  {
+   "qid": "Q1989158",
+   "name": "Pindus National Park",
+   "reason": "merged into North Pindos National Park"
+  },
+  {
+   "qid": "Q6879409",
+   "name": "Missolonghi–Aitoliko Lagoons",
+   "reason": "duplicate of National Park of Messolonghi - Aitoliko lagoons"
+  },
+  {
+   "qid": null,
+   "name": "Vikos Gorge and Zagori",
+   "reason": "covered by Vikos–Aoös National Park"
+  }
+ ],
+ "curated_skipped_as_duplicates": [
+  [
+   "Cíes Islands",
+   [
+    "Cíes Islands"
+   ]
+  ]
+ ]
+}
