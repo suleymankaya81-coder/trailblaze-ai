@@ -1,7 +1,12 @@
+## November 16 Gemini completion for the remaining 79 DACH places
+- [x] Process all 79 in one bounded sequential Gemini batch after cached evidence/photo/location preparation; 16 calls, no replays or research subagents.
+- [x] Publish 16 eligible pages; all return HTTP 200, operational fields read back, 70 Python tests pass. List: dach/gemini-completion-2026-11-16.md.
+- [ ] Complete the remaining 63; blockers: 51 exact-place official excerpts, 10 verified coordinates and two licensed covers. AI cannot establish absent facts.
+
 ## November 16 remaining 100 DACH places
 - [x] Collect tourism search candidates and Wikipedia page responses for 100 places without research subagents; missing Wikipedia articles excluded, remaining background requires identity review.
 - [x] Review exact-place excerpts and publish 21 eligible pages without content-model calls; three new pages return HTTP 200 with correct titles.
-- [ ] Complete 79 places; blockers: reviewed official excerpts, verified coordinates or licensed photos. Per-place reasons are in dach/completion-2026-11-16.json; AI cannot establish absent facts.
+- [x] Process 79 places through the requested Gemini batch; 16 published and 63 explicit holds recorded in the completion task above.
 
 ## November 15 remaining DACH production
 - [x] Process all 300 unpublished DACH destinations in one no-model batch: Berchtesgaden published, 299 held; previously published rows skipped.

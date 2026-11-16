@@ -1,4 +1,8 @@
 """Offer completeness follows real visit scope, not invented extra attractions."""
+def requires_activity_photos(country):
+    """DACH compact visits need a licensed cover, not extra image quotas."""
+    return country not in {'de', 'at', 'ch'}
+
 def required_offer_count(country, plan):
     if country == 'us':
         return 15

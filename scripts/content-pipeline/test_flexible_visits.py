@@ -2,7 +2,7 @@ import copy
 import unittest
 from combined_content import module
 from compact_evidence import approved_stops
-from visit_policy import required_offer_count
+from visit_policy import required_offer_count, requires_activity_photos
 
 travel = module('flexible_travel_test', 'generate-travel-content.py')
 
@@ -18,6 +18,14 @@ def item(days=1):
                 'sources': [{'url': 'https://park.test/visit'}]}}
 
 class FlexibleVisitTests(unittest.TestCase):
+    def test_dach_cover_only_does_not_require_supporting_photos(self):
+        for country in ('de', 'at', 'ch'):
+            self.assertFalse(requires_activity_photos(country))
+
+    def test_existing_uk_and_us_activity_photo_gates_remain(self):
+        self.assertTrue(requires_activity_photos('gb'))
+        self.assertTrue(requires_activity_photos('us'))
+
     def test_compact_uk_offer_count_follows_actual_sights(self):
         self.assertEqual(required_offer_count('gb', item()['plan']), 10)
         plan = item()['plan']

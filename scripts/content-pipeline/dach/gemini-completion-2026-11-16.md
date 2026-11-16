@@ -1,0 +1,86 @@
+# DACH Gemini batch — 16 November 2026
+
+79 processed; 16 published; 63 held. 16 Gemini calls, no research subagents or model replays.
+
+## New pages
+- [Teutoburg Forest Nature Park](https://wildparkroutes.com/destinations/de/north-rhine-westphalia/teutoburg-forest-nature-park)
+- [Wendelstein](https://wildparkroutes.com/destinations/de/bavaria/wendelstein)
+- [Lake Walchensee](https://wildparkroutes.com/destinations/de/bavaria/lake-walchensee)
+- [Island of Usedom](https://wildparkroutes.com/destinations/de/mecklenburg-vorpommern/island-of-usedom)
+- [Island of Borkum](https://wildparkroutes.com/destinations/de/lower-saxony/island-of-borkum)
+- [Island of Spiekeroog](https://wildparkroutes.com/destinations/de/lower-saxony/island-of-spiekeroog)
+- [Grumsin Beech Forest](https://wildparkroutes.com/destinations/de/brandenburg/grumsin-beech-forest)
+- [Großes Walsertal Biosphere Park](https://wildparkroutes.com/destinations/at/vorarlberg/grosses-walsertal-biosphere-park)
+- [Kaunertal Glacier Road](https://wildparkroutes.com/destinations/at/tyrol/kaunertal-glacier-road)
+- [Lake Geneva and Lavaux](https://wildparkroutes.com/destinations/ch/vaud/lake-geneva-and-lavaux)
+- [Hölloch Cave](https://wildparkroutes.com/destinations/ch/schwyz/holloch-cave)
+- [Upper Palatinate Forest Nature Park](https://wildparkroutes.com/destinations/de/bavaria/upper-palatinate-forest-nature-park)
+- [Vogelsberg Volcanic Region Nature Park](https://wildparkroutes.com/destinations/de/hesse/vogelsberg-volcanic-region-nature-park)
+- [South Eifel Nature Park](https://wildparkroutes.com/destinations/de/rhineland-palatinate/south-eifel-nature-park)
+- [Saale-Unstrut-Triasland Nature Park](https://wildparkroutes.com/destinations/de/saxony-anhalt/saale-unstrut-triasland-nature-park)
+- [Karst Landscape South Harz Biosphere Reserve](https://wildparkroutes.com/destinations/de/saxony-anhalt/karst-landscape-south-harz-biosphere-reserve)
+
+## Remaining blockers
+- Southern Black Forest Biosphere Area (de/baden-wurttemberg): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Elbe River Landscape Biosphere Reserve (de/saxony-anhalt): Verified same-place coordinates missing
+- Vessertal-Thuringian Forest Biosphere Reserve (de/thuringia): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Upper Lusatian Heath and Pond Landscape (de/saxony): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Ore Mountains Nature Park (de/saxony): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Feldberg (Black Forest) (de/baden-wurttemberg): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Danube Gorge (Weltenburg Narrows) (de/bavaria): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Lake Eibsee (de/bavaria): Verified same-place coordinates missing
+- Alpsee (Füssen) (de/bavaria): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Lake Constance (German shore) (de/baden-wurttemberg): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Titisee (de/baden-wurttemberg): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Mummelsee (de/baden-wurttemberg): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Lake Edersee (de/hesse): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Eifel Maars (Daun) (de/rhineland-palatinate): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Rügen Chalk Cliffs (Königsstuhl) (de/mecklenburg-vorpommern): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Island of Amrum (de/schleswig-holstein): Verified same-place coordinates missing
+- Island of Föhr (de/schleswig-holstein): Verified same-place coordinates missing
+- Island of Norderney (de/lower-saxony): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Island of Juist (de/lower-saxony): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Herreninsel (Chiemsee) (de/bavaria): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Elbe Sandstone Mountains (Bastei) (de/saxony): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Kyffhäuser (de/thuringia): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Triberg Waterfalls (de/baden-wurttemberg): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Todtnau Waterfall (de/baden-wurttemberg): Verified same-place coordinates missing
+- Bärenhöhle (Swabian Alb) (de/baden-wurttemberg): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Teufelshöhle Pottenstein (de/bavaria): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Salzburger Lungau and Kärntner Nockberge Biosphere (at/carinthia): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Grossglockner and Pasterze Glacier (at/carinthia): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Eisriesenwelt Ice Cave (at/salzburg): Licensed exact-place cover missing
+- Dachstein Ice Cave and Five Fingers (at/upper-austria): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Hallstatt and Lake Hallstatt (at/upper-austria): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Plansee (at/tyrol): Licensed exact-place cover missing
+- Gosau Lakes (at/upper-austria): Verified same-place coordinates missing
+- Stubai Valley and Glacier (at/tyrol): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Kaprun Glacier (Kitzsteinhorn) (at/salzburg): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Tscheppaschlucht (at/carinthia): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Golling Waterfall (at/salzburg): Verified same-place coordinates missing
+- Stuibenfall (at/tyrol): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Umbalfälle (at/tyrol): Verified same-place coordinates missing
+- Grindelwald and Eiger (ch/bern): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Schilthorn and Mürren (ch/bern): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Rhine Gorge (Ruinaulta) (ch/graubunden): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Stoos and Fronalpstock (ch/schwyz): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Ebenalp and Seealpsee (ch/appenzell): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Lake Maggiore (Swiss shore) (ch/ticino): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Vallée de Joux (ch/vaud): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Black Forest Central/North Nature Park (de/baden-wurttemberg): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Bavarian Rhön Nature Park (de/bavaria): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Rhine-Taunus Nature Park (de/hesse): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Nassau Nature Park (de/rhineland-palatinate): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Peene Valley River Landscape Nature Park (de/mecklenburg-vorpommern): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Nossentin-Schwinz Heath Nature Park (de/mecklenburg-vorpommern): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Uckermark Lakes Nature Park (de/brandenburg): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Schlaube Valley Nature Park (de/brandenburg): No exact-place official excerpt; Gemini cannot establish absent source facts
+- South Harz Nature Park (de/thuringia): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Harz Nature Park (Saxony-Anhalt) (de/saxony-anhalt): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Drömling Nature Park (de/saxony-anhalt): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Wadden Sea and Halligen Biosphere Reserve (de/schleswig-holstein): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Lower Saxon Elbe Valley Biosphere Reserve (de/lower-saxony): Verified same-place coordinates missing
+- Lech Valley Nature Park (at/tyrol): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Buchberg Nature Park (at/salzburg): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Eisenwurzen Nature Park (Lower Austria) (at/lower-austria): No exact-place official excerpt; Gemini cannot establish absent source facts
+- Neusiedler See-Leithagebirge Nature Park (at/burgenland): Verified same-place coordinates missing
