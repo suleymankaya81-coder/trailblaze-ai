@@ -16,6 +16,7 @@ import { lazy, useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { initAnalytics, trackPageView } from "../lib/analytics";
+import { getAnalyticsMeasurementId } from "../lib/analytics.functions";
 import { localeFromPath } from "../lib/i18n/locales";
 
 function NotFoundComponent() {
@@ -141,11 +142,19 @@ function RootComponent() {
       script.setAttribute('data-minialife-travelpayouts', 'true');
       document.body.appendChild(script);
     }
-    initAnalytics();
+    let active = true;
+    void getAnalyticsMeasurementId().then((measurementId) => {
+      if (active && measurementId) initAnalytics(measurementId);
+    }).catch(() => {
+      console.warn("Analytics configuration could not be loaded.");
+    });
     const unsubscribe = router.subscribe("onResolved", ({ toLocation }) => {
       trackPageView(toLocation.pathname + toLocation.searchStr);
     });
-    return unsubscribe;
+    return () => {
+      active = false;
+      unsubscribe();
+    };
   }, [router]);
 
   return (
