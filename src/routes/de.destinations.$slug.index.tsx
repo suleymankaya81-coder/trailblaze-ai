@@ -2,7 +2,7 @@ import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 import { SITE_ORIGIN } from "@/config/site";
 import { GeoDirectory } from "@/components/destination/GeoDirectory";
 import { getCountryRegions, getDestinationGeo, type GeoRegion } from "@/lib/data/geo.functions";
-import { COUNTRIES, countryPath, isCountry, regionPath } from "@/lib/routes/paths";
+import { regionUnit, deIn, COUNTRIES, countryPath, isCountry, regionPath } from "@/lib/routes/paths";
 import { breadcrumbScript } from "@/lib/seo/breadcrumbs";
 import { deGeoCrumbs, deMeta } from "@/lib/i18n/deSeo";
 import { hreflangLinks } from "@/lib/seo/hreflang";
@@ -21,8 +21,9 @@ export const Route = createFileRoute("/de/destinations/$slug/")({
     if (!loaderData) return { meta: [{ title: "Nicht verfügbar — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
     const name = COUNTRIES[loaderData.country].nameDe;
     const total = loaderData.regions.reduce((n, r) => n + r.count, 0);
-    const title = `${name}: Nationalparks & Roadtrip-Ziele nach Bundesstaat`;
-    const description = `${total} Parks und Outdoor-Ziele in ${loaderData.regions.length} Bundesstaaten der ${name}: Flughäfen, Mietwagen, Reisepläne und beste Reisezeit.`;
+    const u = regionUnit(loaderData.country);
+    const title = `${name}: Nationalparks & Roadtrip-Ziele nach ${u.de}`;
+    const description = `${total} Parks und Outdoor-Ziele ${deIn(loaderData.country, name)} in ${loaderData.regions.length} ${u.dePlural}: Flughäfen, Mietwagen, Reisepläne und beste Reisezeit.`;
     const url = `${SITE_ORIGIN}${countryPath(loaderData.country, "de")}`;
     return {
       meta: [...deMeta(title, description, url), { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }],
@@ -38,13 +39,14 @@ export const Route = createFileRoute("/de/destinations/$slug/")({
 function Page() {
   const { country, regions } = Route.useLoaderData();
   const name = COUNTRIES[country].nameDe;
+  const u = regionUnit(country);
   return (
     <GeoDirectory
       kicker="Reiseziele"
-      title={`Reiseziele in den ${name} nach Bundesstaat`}
-      intro="Wähle einen Bundesstaat und entdecke Nationalparks, Outdoor-Regionen und Roadtrip-Ausgangspunkte."
+      title={`Reiseziele ${deIn(country, name)} nach ${u.de}`}
+      intro={`Nach ${u.de} sortiert: Nationalparks, Outdoor-Regionen und Roadtrip-Ausgangspunkte.`}
       crumbs={deGeoCrumbs(country)}
-      heading="Nach Bundesstaat"
+      heading={`Nach ${u.de}`}
       action="Reiseziele ansehen"
       image={regions[0]?.heroImage}
       items={regions.map((r) => ({ to: regionPath(country, r.slug, "de"), title: r.name, image: r.heroImage, info: `${r.count} Reiseziele` }))}

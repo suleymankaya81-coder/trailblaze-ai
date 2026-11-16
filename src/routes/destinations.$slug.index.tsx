@@ -2,7 +2,7 @@ import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 import { SITE_ORIGIN } from "@/config/site";
 import { GeoDirectory } from "@/components/destination/GeoDirectory";
 import { getCountryRegions, getDestinationGeo, type GeoRegion } from "@/lib/data/geo.functions";
-import { COUNTRIES, countryPath, isCountry, regionPath } from "@/lib/routes/paths";
+import { regionUnit, COUNTRIES, countryPath, isCountry, regionPath } from "@/lib/routes/paths";
 import { breadcrumbScript, countryCrumbs } from "@/lib/seo/breadcrumbs";
 import { hreflangLinks } from "@/lib/seo/hreflang";
 
@@ -22,7 +22,8 @@ export const Route = createFileRoute("/destinations/$slug/")({
     if (!loaderData) return { meta: [{ title: "Destination not found — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
     const name = COUNTRIES[loaderData.country].name;
     const total = loaderData.regions.reduce((n, r) => n + r.count, 0);
-    const unit = loaderData.country === "gb" ? ["Nation", "nations"] : loaderData.country === "ca" ? ["Province", "provinces and territories"] : ["State", "states"];
+    const ru = regionUnit(loaderData.country);
+    const unit = [ru.en[0].toUpperCase() + ru.en.slice(1), ru.enPlural];
     const title = `${name} National Parks & Road Trip Destinations by ${unit[0]}`;
     const description = `Plan trips to ${total} ${name} parks and outdoor destinations across ${loaderData.regions.length} ${unit[1]}: airports, rentals, itineraries and when to go.`;
     const url = `${SITE_ORIGIN}${countryPath(loaderData.country)}`;
@@ -48,13 +49,14 @@ export const Route = createFileRoute("/destinations/$slug/")({
 function CountryPage() {
   const { country, regions } = Route.useLoaderData();
   const name = COUNTRIES[country].name;
+  const u = regionUnit(country);
   return (
     <GeoDirectory
       kicker="Destinations"
-      title={`${name} destinations by state`}
-      intro="Pick a state to see its national parks, outdoor regions and road trip bases."
+      title={`${name} destinations by ${u.en}`}
+      intro={`Pick a ${u.en} to see its national parks, outdoor regions and road trip bases.`}
       crumbs={countryCrumbs(country)}
-      heading="Browse by state"
+      heading={`Browse by ${u.en}`}
       action="See destinations"
       image={regions[0]?.heroImage}
       items={regions.map((r) => ({ to: regionPath(country, r.slug), title: r.name, image: r.heroImage, info: `${r.count} destinations` }))}

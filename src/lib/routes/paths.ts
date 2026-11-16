@@ -125,3 +125,15 @@ export function canonicalPath(input: string): string {
   }
   return input;
 }
+
+/** Name of a country's first-level region in page wording, e.g. state, canton or region. */
+export function regionUnit(country: string): { en: string; enPlural: string; de: string; dePlural: string } {
+  if (country === "us") return { en: "state", enPlural: "states", de: "Bundesstaat", dePlural: "Bundesstaaten" };
+  if (country === "ca") return { en: "province", enPlural: "provinces and territories", de: "Provinz", dePlural: "Provinzen und Territorien" };
+  if (country === "gb") return { en: "nation", enPlural: "nations", de: "Landesteil", dePlural: "Landesteilen" };
+  if (country === "de" || country === "at") return { en: "state", enPlural: "states", de: "Bundesland", dePlural: "Bundesländern" };
+  if (country === "ch") return { en: "canton", enPlural: "cantons", de: "Kanton", dePlural: "Kantonen" };
+  return { en: "region", enPlural: "regions", de: "Region", dePlural: "Regionen" };
+}
+/** German "in the USA" vs "in Spanien". */
+export const deIn = (country: string, nameDe: string) => (country === "us" ? `in den ${nameDe}` : `in ${nameDe}`);
