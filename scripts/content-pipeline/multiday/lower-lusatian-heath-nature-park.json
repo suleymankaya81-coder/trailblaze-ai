@@ -1,0 +1,32 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "nature conservation station",
+      "quote": "The nature conservation station in the Lower Lusatian Heath Nature Park offers various tours to particularly beautiful spots and on specific topics on set dates every year.",
+      "english": "The nature conservation station in the Lower Lusatian Heath Nature Park offers various tours to particularly beautiful spots and on specific topics on set dates every year."
+    },
+    {
+      "id": "s2",
+      "name": "Naturparadies Grünhaus",
+      "quote": "NABU Reise ins Naturparadies Grünhaus, Foto: Stefan Röhrscheid",
+      "english": "NABU journey to the Grünhaus natural paradise, photo: Stefan Röhrscheid"
+    },
+    {
+      "id": "s3",
+      "name": "Bad Liebenwerda",
+      "quote": "This provider is located in the region Elbe-Elster-Land",
+      "english": "This provider is located in the region Elbe-Elster-Land"
+    }
+  ],
+  "days": [
+    {
+      "title": "Nature Conservation and Exploration",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ]
+}

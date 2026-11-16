@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Röthbach Waterfall",
+      "quote": "At 470 metres, the Röthbach Waterfall in Berchtesgaden National Park is Germany’s highest.",
+      "english": "At 470 metres, the Röthbach Waterfall in Berchtesgaden National Park is Germany’s highest."
+    },
+    {
+      "id": "s2",
+      "name": "Berchtesgaden National Park",
+      "quote": "Röthbach Waterfall in Berchtesgaden National Park plunges over a height of 470 metres, cascading down the rock and overcoming two large steps.",
+      "english": "Röthbach Waterfall in Berchtesgaden National Park plunges over a height of 470 metres, cascading down the rock and overcoming two large steps."
+    },
+    {
+      "id": "s3",
+      "name": "Königssee Lake",
+      "quote": "The mighty rock barrier, up to 700 metres high, separates the basin of Königsee Lake from the Röth, a plateau that stretches between the Steinernes Meer and the Hagengebirge mountains.",
+      "english": "The mighty rock barrier, up to 700 metres high, separates the basin of Königsee Lake from the Röth, a plateau that stretches between the Steinernes Meer and the Hagengebirge mountains."
+    },
+    {
+      "id": "s4",
+      "name": "Röth",
+      "quote": "The mighty rock barrier, up to 700 metres high, separates the basin of Königsee Lake from the Röth, a plateau that stretches between the Steinernes Meer and the Hagengebirge mountains.",
+      "english": "The mighty rock barrier, up to 700 metres high, separates the basin of Königsee Lake from the Röth, a plateau that stretches between the Steinernes Meer and the Hagengebirge mountains."
+    },
+    {
+      "id": "s5",
+      "name": "Saletalm",
+      "quote": "You can reach Röthbach Waterfall by taking a boat trip across Königssee Lake to the Saletalm exit.",
+      "english": "You can reach Röthbach Waterfall by taking a boat trip across Königssee Lake to the Saletalm exit."
+    },
+    {
+      "id": "s6",
+      "name": "Obersee Lake",
+      "quote": "Afterwards, you can hike along the small Obersee Lake to the Fischunkelalm pasture in about an hour.",
+      "english": "Afterwards, you can hike along the small Obersee Lake to the Fischunkelalm pasture in about an hour."
+    },
+    {
+      "id": "s7",
+      "name": "Fischunkelalm",
+      "quote": "Afterwards, you can hike along the small Obersee Lake to the Fischunkelalm pasture in about an hour.",
+      "english": "Afterwards, you can hike along the small Obersee Lake to the Fischunkelalm pasture in about an hour."
+    },
+    {
+      "id": "s8",
+      "name": "Landtal Waterfall",
+      "quote": "A little to the north, another impressive cascade spills down into the depths: the 410-metre Landtal Waterfall, the second highest waterfall in Germany.",
+      "english": "A little to the north, another impressive cascade spills down into the depths: the 410-metre Landtal Waterfall, the second highest waterfall in Germany."
+    }
+  ],
+  "days": [
+    {
+      "title": "Waterfalls and National Park",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s8"
+      ]
+    },
+    {
+      "title": "Lake Königssee Basin and High Plateaus",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Lakeshore and Pasture Hike",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Piz Sardona",
+      "quote": "The seldom line along the rock face around the Piz Sardona marks the Glarus overthrust - a phenomenon of world interest.",
+      "english": "The seldom line along the rock face around the Piz Sardona marks the Glarus overthrust - a phenomenon of world interest."
+    },
+    {
+      "id": "s2",
+      "name": "Murgsee lake",
+      "quote": "Few places illustrate the history of the Alps as impressively as the UNESCO World Heritage Site between the Murgsee lake, Pizol and Martin's Hole near Elm.",
+      "english": "Few places illustrate the history of the Alps as impressively as the UNESCO World Heritage Site between the Murgsee lake, Pizol and Martin's Hole near Elm."
+    },
+    {
+      "id": "s3",
+      "name": "Pizol",
+      "quote": "Few places illustrate the history of the Alps as impressively as the UNESCO World Heritage Site between the Murgsee lake, Pizol and Martin's Hole near Elm.",
+      "english": "Few places illustrate the history of the Alps as impressively as the UNESCO World Heritage Site between the Murgsee lake, Pizol and Martin's Hole near Elm."
+    },
+    {
+      "id": "s4",
+      "name": "Martin's Hole",
+      "quote": "The Glarus overthrust, particularly attractive to discover around the Martin’s Hole, forms the heart of the 300 square meter Sarganserland- Walensee-Glarnerland Geopark.",
+      "english": "The Glarus overthrust, particularly attractive to discover around the Martin’s Hole, forms the heart of the 300 square meter Sarganserland- Walensee-Glarnerland Geopark."
+    },
+    {
+      "id": "s5",
+      "name": "Tschinglen Alp",
+      "quote": "The excursion begins on the gondola lift from Elm to the Tschinglen Alp – right through the awe-inspiring gorge.",
+      "english": "The excursion begins on the gondola lift from Elm to the Tschinglen Alp – right through the awe-inspiring gorge."
+    },
+    {
+      "id": "s6",
+      "name": "Firstboden viewpoint",
+      "quote": "The Alp is the departure point for an approx. 1 ½ hour circular hike to the Firstboden viewpoint.",
+      "english": "The Alp is the departure point for an approx. 1 ½ hour circular hike to the Firstboden viewpoint."
+    },
+    {
+      "id": "s7",
+      "name": "Martinsmad",
+      "quote": "The panorama extends from Martinsloch across Martinsmad and Mittagshorn down to the deep-cut valley floor.",
+      "english": "The panorama extends from Martinsloch across Martinsmad and Mittagshorn down to the deep-cut valley floor."
+    },
+    {
+      "id": "s8",
+      "name": "Mittagshorn",
+      "quote": "The panorama extends from Martinsloch across Martinsmad and Mittagshorn down to the deep-cut valley floor.",
+      "english": "The panorama extends from Martinsloch across Martinsmad and Mittagshorn down to the deep-cut valley floor."
+    }
+  ],
+  "days": [
+    {
+      "title": "Peaks and Overthrust Landmarks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Martins Hole and Surroundings",
+      "stop_ids": [
+        "s4",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Expedition Tschinglen Hike",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

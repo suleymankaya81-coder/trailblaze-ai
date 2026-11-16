@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lake Spitzingsee",
+      "quote": "In the early morning, the banks of fog quietly push their way through the powdered spruces around the snow-covered Lake Spitzingsee.",
+      "english": "In the early morning, the banks of fog quietly push their way through the powdered spruces around the snow-covered Lake Spitzingsee."
+    },
+    {
+      "id": "s2",
+      "name": "Mount Brecherspitze",
+      "quote": "They glide between the steep flanks of Mounts Brecherspitze and Jägerkamp over the Spitzingsattel down into the Alpine foothills.",
+      "english": "They glide between the steep flanks of Mounts Brecherspitze and Jägerkamp over the Spitzingsattel down into the Alpine foothills."
+    },
+    {
+      "id": "s3",
+      "name": "Jägerkamp",
+      "quote": "Antonia Rüede-Passul is assigned to the Jägerkamp.",
+      "english": "Antonia Rüede-Passul is assigned to the Jägerkamp."
+    },
+    {
+      "id": "s4",
+      "name": "Spitzingsattel",
+      "quote": "They glide between the steep flanks of Mounts Brecherspitze and Jägerkamp over the Spitzingsattel down into the Alpine foothills.",
+      "english": "They glide between the steep flanks of Mounts Brecherspitze and Jägerkamp over the Spitzingsattel down into the Alpine foothills."
+    },
+    {
+      "id": "s5",
+      "name": "Lake Schliersee",
+      "quote": "Lake Schliersee with Wörth Island",
+      "english": "Lake Schliersee with Wörth Island."
+    },
+    {
+      "id": "s6",
+      "name": "Wörth Island",
+      "quote": "Lake Schliersee with Wörth Island",
+      "english": "Lake Schliersee with Wörth Island."
+    },
+    {
+      "id": "s7",
+      "name": "Taubenstein",
+      "quote": "“From my point of view, sanctioning should never be the first step,” says Thorsten Schär, whom I meet a little later at the valley station of the Taubenstein, the starting point of the tours on the Jägerkamp.",
+      "english": "“From my point of view, sanctioning should never be the first step,” says Thorsten Schär, whom I meet a little later at the valley station of the Taubenstein, the starting point of the tours on the Jägerkamp."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lakes and Islands",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Summit Routes and Slopes",
+      "stop_ids": [
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Alpine Ridges and Passes",
+      "stop_ids": [
+        "s2",
+        "s4"
+      ]
+    }
+  ]
+}

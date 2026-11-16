@@ -1,0 +1,46 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Buchberg",
+      "quote": "Der Buchberg ist ein 801 m ü. A. hoher Berg auf dem Gebiet der Gemeinde Mattsee im Bezirk Salzburg-Umgebung im Land Salzburg.",
+      "english": "The Buchberg is an 801 m above sea level high mountain in the area of the municipality of Mattsee in the Salzburg-Umgebung district in the state of Salzburg."
+    },
+    {
+      "id": "s2",
+      "name": "Aussichtsplateau am Gipfel",
+      "quote": "Von dem kleinen Aussichtsplateau am Gipfel sieht man das Salzburger Seengebiet, das Alpenvorland in Oberösterreich und die schroffen Nördlichen Kalkalpen.",
+      "english": "From the small viewing plateau at the summit, one can see the Salzburg Lake District, the Alpine foothills in Upper Austria, and the rugged Northern Limestone Alps."
+    },
+    {
+      "id": "s3",
+      "name": "bäuerlichen Weilern",
+      "quote": "Die Umgebung ist eine ausschließlich naturnahe Kulturlandschaft, die sich vornehmlich aus ausgedehnten landwirtschaftlich, teilweise intensiv genutzten Wiesenflächen und bäuerlichen Weilern, die durch ein ländliches Wegenetz verbunden werden, zusammensetzt.",
+      "english": "The surrounding area is an exclusively near-natural cultural landscape, which consists primarily of extensive agricultural, partly intensively used meadows and rural hamlets, which are connected by a rural network of paths."
+    },
+    {
+      "id": "s4",
+      "name": "ländliches Wegenetz",
+      "quote": "Die dazwischenliegenden Waldgebiete zeigen eine naturnahe Artenzusammensetzung aus Buche, Tanne, Ahorn und Fichte und sind vegetationsmäßig dem Buchen-Tannenwald zuzuordnen, Fichtenmonokulturen treten jedoch vermehrt auf.",
+      "english": "The intervening forest areas show a near-natural species composition of beech, fir, maple and spruce and are vegetationally assigned to the beech-fir forest, although spruce monocultures are increasingly occurring."
+    },
+    {
+      "id": "s5",
+      "name": "Buchberggipfel",
+      "quote": "Der Buchberggipfel selbst und die unmittelbare und mittelbare Umgebung sind durch ein dichtes Wegenetz erschlossen.",
+      "english": "The Buchberg summit itself and the immediate and indirect surroundings are developed by a dense network of paths."
+    }
+  ],
+  "days": [
+    {
+      "title": "Buchberg Summit and Rural Landscapes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    }
+  ]
+}

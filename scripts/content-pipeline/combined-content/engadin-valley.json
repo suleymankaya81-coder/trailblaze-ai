@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Graubunden",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Engadin"
+        "St. Moritz",
+        "Chesa Veglia",
+        "Muottas Muragl"
       ],
       "seo_title": "Engadin Valley Visit Guide"
     },
     "travel": {
       "slug": "engadin-valley",
+      "overview_name": "Engadin Valley",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Engadin Valley before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.myswitzerland.com/en-ch/destinations/engadin/",
@@ -31,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Engadin Valley",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "St. Moritz and Panorama Views",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Engadin",
-                "stop_id": "engadin-valley",
-                "detail": "The many sunny days, the clear air, the Maloja wind: the Engadin lends itself perfectly to aquatic and winter sports. Discover the beautiful Engadin lakes, mountains such as the Bernina, Corvatsch and Corviglia, villages such as Pontresina, Bever, Zuoz – and of course St. Moritz."
+                "name": "St. Moritz",
+                "stop_id": "engadin-valley--s1",
+                "detail": "For the illustrious White Turf horse racing event, the frozen Lake St. Moritz is transformed into a racecourse in winter."
+              },
+              {
+                "name": "Chesa Veglia",
+                "stop_id": "engadin-valley--s2",
+                "detail": "On a short foray through the illustrious town, discover the Chesa Veglia, one of the Engadin’s oldest farmhouses."
+              },
+              {
+                "name": "Muottas Muragl",
+                "stop_id": "engadin-valley--s3",
+                "detail": "You can enjoy a spectacular view of the Engadin from popular excursion mountain Muottas Muragl."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Engadin Valley before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Lakes and National Park Gateway",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Lake Silvaplana",
+                "stop_id": "engadin-valley--s6",
+                "detail": "When the Maloja wind blows, windsurfing and kitesurfing fans can be seen having fun on Lake Silvaplana."
+              },
+              {
+                "name": "Zernez",
+                "stop_id": "engadin-valley--s10",
+                "detail": "At the other end of the valley is Zernez, gateway to the wilderness of the national park."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Engadin Valley before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +111,8 @@
             "url": "https://www.myswitzerland.com/en-ch/destinations/engadin/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:45:40.927562+00:00"
       }
     }
   }

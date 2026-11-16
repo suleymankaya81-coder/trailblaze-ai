@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Sesto Calende",
+      "quote": "Uscito dal Lago Maggiore, nei pressi di Sesto Calende, il Ticino attraversa l'intera pianura lombarda, creando una propria valle, per poi sfociare nel Po a pochi chilometri a sud di Pavia, presso il Ponte della Becca.",
+      "english": "Leaving Lake Maggiore, near Sesto Calende, the Ticino crosses the entire Lombard plain, creating its own valley, before flowing into the Po a few kilometers south of Pavia, at the Ponte della Becca."
+    },
+    {
+      "id": "s2",
+      "name": "Somma Lombardo",
+      "quote": "Dal Lago Maggiore a Somma Lombardo, il Ticino scorre formando meandri inseriti in profonde gole, scavate nei depositi morenici.",
+      "english": "From Lake Maggiore to Somma Lombardo, the Ticino flows forming meanders set in deep gorges, carved into moraine deposits."
+    },
+    {
+      "id": "s3",
+      "name": "Motta Visconti",
+      "quote": "Da Somma Lombardo a Motta Visconti il fiume cambia fisionomia: il letto del fiume si allarga per coprire una larghezza di circa tre chilometri, formando numerose isole di ghiaia o sabbia.",
+      "english": "From Somma Lombardo to Motta Visconti, the river changes its appearance: the riverbed widens to cover a width of about three kilometers, forming numerous gravel or sand islands."
+    },
+    {
+      "id": "s4",
+      "name": "Ponte della Becca",
+      "quote": "Uscito dal Lago Maggiore, nei pressi di Sesto Calende, il Ticino attraversa l'intera pianura lombarda, creando una propria valle, per poi sfociare nel Po a pochi chilometri a sud di Pavia, presso il Ponte della Becca.",
+      "english": "Leaving Lake Maggiore, near Sesto Calende, the Ticino crosses the entire Lombard plain, creating its own valley, before flowing into the Po a few kilometers south of Pavia, at the Ponte della Becca."
+    },
+    {
+      "id": "s5",
+      "name": "Ponte Vecchio",
+      "quote": "La sede istituzionale e degli uffici tecnici ed amministrativi dell'ente che gestisce il parco si trova a Magenta, in località Ponte Vecchio.",
+      "english": "The institutional headquarters and the technical and administrative offices of the entity that manages the park are located in Magenta, in the locality of Ponte Vecchio."
+    },
+    {
+      "id": "s6",
+      "name": "Pavia",
+      "quote": "Da Motta Visconti a Pavia e alla sua foce nel Po, infine, il letto del fiume diventa più regolare e il fiume diventa più profondo e navigabile.",
+      "english": "Finally, from Motta Visconti to Pavia and its mouth in the Po, the riverbed becomes more regular and the river becomes deeper and navigable."
+    },
+    {
+      "id": "s7",
+      "name": "Magenta",
+      "quote": "La sede istituzionale e degli uffici tecnici ed amministrativi dell'ente che gestisce il parco si trova a Magenta, in località Ponte Vecchio.",
+      "english": "The institutional headquarters and the technical and administrative offices of the entity that manages the park are located in Magenta, in the locality of Ponte Vecchio."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Gorges and Riverside Towns",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Park Administration and Widening Banks",
+      "stop_ids": [
+        "s5",
+        "s7",
+        "s3"
+      ]
+    },
+    {
+      "title": "Deep Waters and Southern Confluence",
+      "stop_ids": [
+        "s6",
+        "s4"
+      ]
+    }
+  ]
+}

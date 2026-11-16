@@ -1,0 +1,91 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "central rock",
+      "quote": "So, take courage: don’t miss the journey and climb to the central rock.",
+      "english": "So, take courage: don’t miss the journey and climb to the central rock."
+    },
+    {
+      "id": "s2",
+      "name": "Schloss Laufen",
+      "quote": "The illumination of the Schloss Laufen on the Rhine Falls during the winter season is magical.",
+      "english": "The illumination of the Schloss Laufen on the Rhine Falls during the winter season is magical."
+    },
+    {
+      "id": "s3",
+      "name": "Fischetz platform",
+      "quote": "From Schloss Laufen, a footpath leads you past the thundering waters to the Fischetz platform.",
+      "english": "From Schloss Laufen, a footpath leads you past the thundering waters to the Fischetz platform."
+    },
+    {
+      "id": "s4",
+      "name": "Rhyality Immersive Art Hall",
+      "quote": "01. Rhyality Immersive Art Hall",
+      "english": "01. Rhyality Immersive Art Hall"
+    },
+    {
+      "id": "s5",
+      "name": "Smilestones - Miniature World at the Rhine Falls",
+      "quote": "06. Smilestones - Miniature World at the Rhine Falls",
+      "english": "06. Smilestones - Miniature World at the Rhine Falls"
+    },
+    {
+      "id": "s6",
+      "name": "Adventure Park Rhine Falls",
+      "quote": "09. Adventure Park Rhine Falls",
+      "english": "09. Adventure Park Rhine Falls"
+    },
+    {
+      "id": "s7",
+      "name": "Schlössli Wörth",
+      "quote": "Erstmals vereinen sich zwei historische Schlösser, zwei Kantone und zwei mittelalterliche Weihnachtsmärkte zu einem einzigen grossen Erlebnis am grössten Wasserfall Europas. Rund um den gewaltigen Rheinfall öffnen Schloss Laufen und das Schlössli Wörth ihre ehrwürdigen Tore für Händler, Handwerker, Musikanten, Gaukler und fahrendes Volk.",
+      "english": "For the first time, two historical castles, two cantons and two medieval Christmas markets combine to create a single great experience at Europe's largest waterfall. Around the mighty Rhine Falls, Laufen Castle and Wörth Castle open their venerable gates to merchants, craftsmen, musicians, jugglers and traveling folk."
+    },
+    {
+      "id": "s8",
+      "name": "SBB-Brücke",
+      "quote": "Wer lieber festen Boden unter den Füssen hat, gelangt über die berühmte SBB-Brücke mit ihrem eindrucksvollen Blick auf den Rheinfall von einem Markt zum anderen.",
+      "english": "Those who prefer firm ground under their feet can get from one market to the other via the famous SBB bridge with its impressive view of the Rhine Falls."
+    },
+    {
+      "id": "s9",
+      "name": "Historama, Laufen Castle on the Rhine Falls",
+      "quote": "05. Historama, Laufen Castle on the Rhine Falls",
+      "english": "05. Historama, Laufen Castle on the Rhine Falls"
+    },
+    {
+      "id": "s10",
+      "name": "Platform trail",
+      "quote": "10. Platform trail",
+      "english": "10. Platform trail"
+    }
+  ],
+  "days": [
+    {
+      "title": "Castles and Historic Views",
+      "stop_ids": [
+        "s2",
+        "s7",
+        "s8",
+        "s9"
+      ]
+    },
+    {
+      "title": "Nature and Waterfall Trails",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s10"
+      ]
+    },
+    {
+      "title": "Art and Family Attractions",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

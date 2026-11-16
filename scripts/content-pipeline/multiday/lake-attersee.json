@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lake Attersee",
+      "quote": "Everyday grey gives way to the clear turquoise of Austria's largest inland lake.",
+      "english": "Everyday grey gives way to the clear turquoise of Austria's largest inland lake."
+    },
+    {
+      "id": "s2",
+      "name": "Attersee Water Park",
+      "quote": "The Attersee Water Park combines beach and outdoor pool: a heated pool (26 °C), slides into the lake, a white-water channel, a geyser, massage jets and a waterfall.",
+      "english": "The Attersee Water Park combines beach and outdoor pool: a heated pool (26 °C), slides into the lake, a white-water channel, a geyser, massage jets and a waterfall."
+    },
+    {
+      "id": "s3",
+      "name": "Seewalchen",
+      "quote": "Sport, dirndls, and Klimt – Seewalchen has much to offer beyond its lakeshore.",
+      "english": "Sport, dirndls, and Klimt – Seewalchen has much to offer beyond its lakeshore."
+    },
+    {
+      "id": "s4",
+      "name": "Schörfling",
+      "quote": "Restaurant Langostinos in Schörfling: 1 toque, regional fish specialities",
+      "english": "Restaurant Langostinos in Schörfling: 1 toque, regional fish specialities."
+    },
+    {
+      "id": "s5",
+      "name": "Weyregg Lido",
+      "quote": "At Weyregg Lido, you'll find a sunbathing lawn, a jetty, a children's area with a solar-heated pool, a floating island, and a café on the catamaran.",
+      "english": "At Weyregg Lido, you'll find a sunbathing lawn, a jetty, a children's area with a solar-heated pool, a floating island, and a café on the catamaran."
+    },
+    {
+      "id": "s6",
+      "name": "Nixenfall",
+      "quote": "Today, a sculpture at the Nixenfall in Steinbach commemorates her.",
+      "english": "Today, a sculpture at the Nixenfall in Steinbach commemorates her."
+    },
+    {
+      "id": "s7",
+      "name": "Unterach",
+      "quote": "A mix of magnificent villas from the turn of the century, Unterach has preserved its village character to this day.",
+      "english": "A mix of magnificent villas from the turn of the century, Unterach has preserved its village character to this day."
+    },
+    {
+      "id": "s8",
+      "name": "Gustav Mahler's holiday home",
+      "quote": "Gustav Mahler's holiday home is still almost unchanged - come and have a look around!",
+      "english": "Gustav Mahler's holiday home is still almost unchanged - come and have a look around!"
+    },
+    {
+      "id": "s9",
+      "name": "Attersee-Traunsee Star Park",
+      "quote": "The Attersee-Traunsee Star Park – Austria's first Dark Sky Park – stands for the conscious use of light at night.",
+      "english": "The Attersee-Traunsee Star Park – Austria's first Dark Sky Park – stands for the conscious use of light at night."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Shore and Water Fun",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Eastern Villages and Waterfalls",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s9"
+      ]
+    },
+    {
+      "title": "Culture and Southern Shores",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

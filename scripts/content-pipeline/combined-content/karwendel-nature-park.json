@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Tyrol",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Karwendel"
+        "Eng",
+        "Großer Ahornboden",
+        "small Ahornboden"
       ],
       "seo_title": "Karwendel Nature Park Visit Guide"
     },
     "travel": {
       "slug": "karwendel-nature-park",
+      "overview_name": "Karwendel Nature Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Karwendel Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.tyrol.com/activities/attractions/nature-parks/karwendel-nature-park",
@@ -31,16 +34,54 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Karwendel Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Eng Village and the Maple Plateaus",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Karwendel",
-                "stop_id": "karwendel-nature-park",
-                "detail": "You have to be fit to climb the 2,106 metre high Mondscheinspitze. Mountaineers are rewarded with a magnificent view of the Karwendel and Rofan mountains, the Venediger group and the Zillertal Alps. Nearby, ibexes may even leap past."
+                "name": "Eng",
+                "stop_id": "karwendel-nature-park--s1",
+                "detail": "So just pause for a moment, take in the magnificent nature and pay a visit to the pretty alpine village of Eng!"
+              },
+              {
+                "name": "Großer Ahornboden",
+                "stop_id": "karwendel-nature-park--s2",
+                "detail": "Highlights in the Karwendel Nature Park include the Großer Ahornboden with its old maple trees, the spectacular Karwendel Gorge and the Karwendel Alpine Park, which serves as a visitor centre."
+              },
+              {
+                "name": "small Ahornboden",
+                "stop_id": "karwendel-nature-park--s3",
+                "detail": "The small Ahornboden, the Karwendel railway with views over Innsbruck and the Isar spring are further sights that will delight nature lovers."
+              },
+              {
+                "name": "Mondscheinspitze",
+                "stop_id": "karwendel-nature-park--s6",
+                "detail": "You have to be fit to climb the 2,106 metre high Mondscheinspitze."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Karwendel Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Nordkette Peaks and Halltal Valley",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Hafelekar",
+                "stop_id": "karwendel-nature-park--s4",
+                "detail": "The Innsbruck Nordkettenbahnen cable car takes you up to the Hafelekar, where hikers have Innsbruck at their feet on the south side and the nature park on the north side."
+              },
+              {
+                "name": "Frau Hitt",
+                "stop_id": "karwendel-nature-park--s5",
+                "detail": "A little greeting over to the stone landmark \"Frau Hitt\" is a must, while the Alpine choughs circle in the updraft."
+              },
+              {
+                "name": "Halltal valley",
+                "stop_id": "karwendel-nature-park--s7",
+                "detail": "The Halltal valley is located to the north of the former salt works town of Hall in Tirol."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Karwendel Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +121,8 @@
             "url": "https://www.tyrol.com/activities/attractions/nature-parks/karwendel-nature-park"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:45:33.030616+00:00"
       }
     }
   }

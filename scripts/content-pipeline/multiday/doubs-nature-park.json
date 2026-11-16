@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lake Moron",
+      "quote": "A chance to admire the beautiful Lake Moron, the Saut-du-Doubs waterfall and Lake Brenets.",
+      "english": "A chance to admire the beautiful Lake Moron, the Saut-du-Doubs waterfall and Lake Brenets."
+    },
+    {
+      "id": "s2",
+      "name": "Lac des Brenets",
+      "quote": "The water of the river Doubs, which has been dammed up by landslide debris, forms the four kilometer long, but only 200 meter wide, winding Lac des Brenets.",
+      "english": "The water of the river Doubs, which has been dammed up by landslide debris, forms the four kilometer long, but only 200 meter wide, winding Lac des Brenets."
+    },
+    {
+      "id": "s3",
+      "name": "Saut du Doubs",
+      "quote": "The trail leads to the Saut du Doubs, a spectacular, 27m high waterfall.",
+      "english": "The trail leads to the Saut du Doubs, a spectacular, 27m high waterfall."
+    },
+    {
+      "id": "s4",
+      "name": "Le Theusseret",
+      "quote": "Today only a few signs of this intense industrial activity remain, as in Le Theusseret shortly before Goumois, the finish of the second stage.",
+      "english": "Today only a few signs of this intense industrial activity remain, as in Le Theusseret shortly before Goumois, the finish of the second stage."
+    },
+    {
+      "id": "s5",
+      "name": "Soubey",
+      "quote": "15 kilometres of meditative hiking pleasure and one of Switzerland's most beautiful \"water trails\" run between Soubey and St-Ursanne.",
+      "english": "15 kilometres of meditative hiking pleasure and one of Switzerland's most beautiful \"water trails\" run between Soubey and St-Ursanne."
+    },
+    {
+      "id": "s6",
+      "name": "St-Ursanne",
+      "quote": "The hike along the south bank from St-Ursanne to La Charbonnière is almost always along nature trails, close to the shimmering, blue-green waters.",
+      "english": "The hike along the south bank from St-Ursanne to La Charbonnière is almost always along nature trails, close to the shimmering, blue-green waters."
+    },
+    {
+      "id": "s7",
+      "name": "La Charbonnière",
+      "quote": "The hike along the south bank from St-Ursanne to La Charbonnière is almost always along nature trails, close to the shimmering, blue-green waters.",
+      "english": "The hike along the south bank from St-Ursanne to La Charbonnière is almost always along nature trails, close to the shimmering, blue-green waters."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lakes and Waterfalls of the High Doubs",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Industrial Heritage and River Villages",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Nature Trails of the South Bank",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

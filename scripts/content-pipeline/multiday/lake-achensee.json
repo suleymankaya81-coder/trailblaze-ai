@@ -1,0 +1,98 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Achenkirch",
+      "quote": "Farming traditions and the Sixenhof local heritage museum shape Achenkirch as much as water sports and golf.",
+      "english": "Farming traditions and the Sixenhof local heritage museum shape Achenkirch as much as water sports and golf."
+    },
+    {
+      "id": "s2",
+      "name": "Sixenhof local heritage museum",
+      "quote": "Farming traditions and the Sixenhof local heritage museum shape Achenkirch as much as water sports and golf.",
+      "english": "Farming traditions and the Sixenhof local heritage museum shape Achenkirch as much as water sports and golf."
+    },
+    {
+      "id": "s3",
+      "name": "Achensee Nord beach",
+      "quote": "On the northern shore is the Achensee Nord beach at Achenkirch; at Maurach, the Atoll Achensee has a lake pool with a lawn for sunbathing.",
+      "english": "On the northern shore is the Achensee Nord beach at Achenkirch; at Maurach, the Atoll Achensee has a lake pool with a lawn for sunbathing."
+    },
+    {
+      "id": "s4",
+      "name": "Maurach",
+      "quote": "The village sits at the southern end of the lake, between the Atoll Achensee leisure centre on the shore and the valley station of the Rofan cable car.",
+      "english": "The village sits at the southern end of the lake, between the Atoll Achensee leisure centre on the shore and the valley station of the Rofan cable car."
+    },
+    {
+      "id": "s5",
+      "name": "Atoll Achensee",
+      "quote": "On the northern shore is the Achensee Nord beach at Achenkirch; at Maurach, the Atoll Achensee has a lake pool with a lawn for sunbathing.",
+      "english": "On the northern shore is the Achensee Nord beach at Achenkirch; at Maurach, the Atoll Achensee has a lake pool with a lawn for sunbathing."
+    },
+    {
+      "id": "s6",
+      "name": "Rofan cable car",
+      "quote": "The village sits at the southern end of the lake, between the Atoll Achensee leisure centre on the shore and the valley station of the Rofan cable car.",
+      "english": "The village sits at the southern end of the lake, between the Atoll Achensee leisure centre on the shore and the valley station of the Rofan cable car."
+    },
+    {
+      "id": "s7",
+      "name": "Wusel lake trail",
+      "quote": "The Wusel lake trail runs for 3.8 kilometres along the eastern shore of the Achensee.",
+      "english": "The Wusel lake trail runs for 3.8 kilometres along the eastern shore of the Achensee."
+    },
+    {
+      "id": "s8",
+      "name": "Pertisau",
+      "quote": "On the western shore of the lake, Pertisau is a starting point for walks and a landing stage for the Achensee boat services.",
+      "english": "On the western shore of the lake, Pertisau is a starting point for walks and a landing stage for the Achensee boat services."
+    },
+    {
+      "id": "s9",
+      "name": "Vitalberg",
+      "quote": "At the Vitalberg in Pertisau, you can follow the story of the shale-oil distillers and see how the oil is extracted from the rock.",
+      "english": "At the Vitalberg in Pertisau, you can follow the story of the shale-oil distillers and see how the oil is extracted from the rock."
+    },
+    {
+      "id": "s10",
+      "name": "Strandbad Pertisau",
+      "quote": "On the western shore, the Strandbad Pertisau has a large lawn right by the water.",
+      "english": "On the western shore, the Strandbad Pertisau has a large lawn right by the water."
+    },
+    {
+      "id": "s11",
+      "name": "Seebergspitze",
+      "quote": "Walking routes range from easy circuits along the shore to alpine ascents of the Seebergspitze.",
+      "english": "Walking routes range from easy circuits along the shore to alpine ascents of the Seebergspitze."
+    }
+  ],
+  "days": [
+    {
+      "title": "Culture and Recreation in Achenkirch",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Leisure and Heights in Maurach",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Lakeside Activity in Pertisau",
+      "stop_ids": [
+        "s8",
+        "s9",
+        "s10",
+        "s11"
+      ]
+    }
+  ]
+}

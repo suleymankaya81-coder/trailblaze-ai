@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Trentino South Tyrol",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco naturale Tre Cime"
+        "Tre Cime di Lavaredo",
+        "monte Paterno",
+        "lago dei Piani"
       ],
       "seo_title": "Parco naturale Dolomiti di Sesto Visit Guide"
     },
@@ -32,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco naturale Dolomiti di Sesto",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Peaks and Glacial Lakes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco naturale Tre Cime",
-                "stop_id": "parco-naturale-dolomiti-di-sesto",
-                "detail": "The Tre Cime Nature Park (German: Naturpark Drei Zinnen) is one of the protected natural areas of the autonomous province of Bolzano, a large part of South Tyrol in the Sesto Dolomites."
+                "name": "Tre Cime di Lavaredo",
+                "stop_id": "parco-naturale-dolomiti-di-sesto--s1",
+                "detail": "The park is renowned as many famous Dolomite peaks are located within it, among which the north faces of the Tre Cime di Lavaredo stand out."
+              },
+              {
+                "name": "monte Paterno",
+                "stop_id": "parco-naturale-dolomiti-di-sesto--s2",
+                "detail": "Other important peaks are the Punta dei Tre Scarperi (3,152 m), Monte Popera (3,046 m), Croda dei Baranci (2,922 m), Monte Paterno (2,744 m), Cima Una (2,698 m), Cima Undici (3,092 m) and Croda dei Toni (3,094 m)."
+              },
+              {
+                "name": "lago dei Piani",
+                "stop_id": "parco-naturale-dolomiti-di-sesto--s3",
+                "detail": "Above this layer there are layers of riebl, grey dolomite and clayey marls, which allowed, for example, the formation of the Piani lake."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale Dolomiti di Sesto before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "History and Nature Entry",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "forte Haideck",
+                "stop_id": "parco-naturale-dolomiti-di-sesto--s4",
+                "detail": "In the territory of the park there is an Austrian fort from the First World War, fort Haideck."
+              },
+              {
+                "name": "lago di Landro",
+                "stop_id": "parco-naturale-dolomiti-di-sesto--s5",
+                "detail": "The only significant lake in the park is the Landro lake."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco naturale Dolomiti di Sesto before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +109,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://it.wikipedia.org/wiki/Parco_naturale_Tre_Cime"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_Tre_Cime"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:45:09.767954+00:00"
       }
     }
   }

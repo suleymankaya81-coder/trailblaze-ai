@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lombardy",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Alto Garda Bresciano Regional Park"
+        "lago di Garda",
+        "lago di Valvestino",
+        "Monte Caplone"
       ],
       "seo_title": "Alto Garda Bresciano Regional Park Visit Guide"
     },
@@ -32,16 +34,49 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Alto Garda Bresciano Regional Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Lakes and High Peaks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Alto Garda Bresciano Regional Park",
-                "stop_id": "alto-garda-bresciano-regional-park",
-                "detail": "The Alto Garda Bresciano Regional Park (Italian: Parco regionale dell'Alto Garda Bresciano) is a nature reserve in Lombardy, Italy. Established in 1989, it covers the western coast of Lake Garda between Salò and Limone sul Garda (Riviera dei Limoni), the Valle Sabbia and the mountains between the lake and the border with Trentino. The highest point is the peak of Monte Caplone, 1,976 meters above sea level, whereas the lowest point is the lake, 65 meters above sea level."
+                "name": "lago di Garda",
+                "stop_id": "alto-garda-bresciano-regional-park--s7",
+                "detail": "Its territory coincides with that of the Garda Lemon Riviera and extends from the shores of Lake Garda to the long mountain ridge that in the North coincides with the border between Lombardy and the autonomous province of Trento (Ledro Valley) and in the east with the Sabbia Valley, including nine municipalities for a total of about 27,000 inhabitants."
+              },
+              {
+                "name": "lago di Valvestino",
+                "stop_id": "alto-garda-bresciano-regional-park--s1",
+                "detail": "Inside, in the main valley, the park hosts Lake Valvestino, an artificial reservoir from the sixties, a venue for sport fishing."
+              },
+              {
+                "name": "Monte Caplone",
+                "stop_id": "alto-garda-bresciano-regional-park--s2",
+                "detail": "The highest point of the park is Mount Caplone which reaches 1,976 meters above sea level."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Alto Garda Bresciano Regional Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Nature Reserves and Historical Ridges",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "riserva naturale dell'ex lago di Bondo",
+                "stop_id": "alto-garda-bresciano-regional-park--s3",
+                "detail": "The nature reserve of the former Lake Bondo is included in the park."
+              },
+              {
+                "name": "fienili di Cima Rest",
+                "stop_id": "alto-garda-bresciano-regional-park--s4",
+                "detail": "Characteristic are the barns of Cima Rest (1,200 m) in the municipality of Magasa, with very pointed thatched roofs (according to some of Lombard origin, according to others Austro-Hungarian), and the military road excavated along the border ridges during the First World War."
+              },
+              {
+                "name": "Monte Tombea",
+                "stop_id": "alto-garda-bresciano-regional-park--s6",
+                "detail": "Among all the Saxifraga tombeanensis, which takes its name from Mount Tombea, the second peak of the Park (1,950 m)."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Alto Garda Bresciano Regional Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +114,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Alto_Garda_Bresciano_Regional_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_regionale_dell%27Alto_Garda_Bresciano"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:44:26.853477+00:00"
       }
     }
   }

@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "The Earth Pyramids of Euseigne",
+      "quote": "The gate to Val d'Hérens (Eringer Valley) is formed by the famous earth pyramids of Euseigne, steep stone towers crowned with rock boulders.",
+      "english": "The gate to Val d'Hérens (Eringer Valley) is formed by the famous earth pyramids of Euseigne, steep stone towers crowned with rock boulders."
+    },
+    {
+      "id": "s2",
+      "name": "Grande Dixence Dam",
+      "quote": "The large dam wall of the Grande Dixence, at 285 meters the world’s highest dam wall, is located in the side valley of Val d'Hérémence.",
+      "english": "The large dam wall of the Grande Dixence, at 285 meters the world’s highest dam wall, is located in the side valley of Val d'Hérémence."
+    },
+    {
+      "id": "s3",
+      "name": "Hérémence Church",
+      "quote": "Learn more about: Val d'Hérens Hérémence Church",
+      "english": "Learn more about: Val d'Hérens Hérémence Church"
+    },
+    {
+      "id": "s4",
+      "name": "Evolène - A sports via ferrata",
+      "quote": "Learn more about: Evolène Evolène - A sports via ferrata",
+      "english": "Learn more about: Evolène Evolène - A sports via ferrata"
+    },
+    {
+      "id": "s5",
+      "name": "Centre de géologie et glaciologie",
+      "quote": "Learn more about: Les Haudères Centre de géologie et glaciologie",
+      "english": "Learn more about: Les Haudères Centre de géologie et glaciologie"
+    },
+    {
+      "id": "s6",
+      "name": "Arolla Glacier Trail",
+      "quote": "Learn more about: Arolla Arolla Glacier Trail",
+      "english": "Learn more about: Arolla Arolla Glacier Trail"
+    },
+    {
+      "id": "s7",
+      "name": "The \"suonen\" of Tsa Crêta",
+      "quote": "Learn more about: Mase The \"suonen\" of Tsa Crêta",
+      "english": "Learn more about: Mase The \"suonen\" of Tsa Crêta"
+    },
+    {
+      "id": "s8",
+      "name": "The Forest of the Barolins",
+      "quote": "Learn more about: Nax / Mont-Nobl The Forest of the Barolins",
+      "english": "Learn more about: Nax / Mont-Nobl The Forest of the Barolins"
+    },
+    {
+      "id": "s9",
+      "name": "Dent Blanche",
+      "quote": "Framed by a superb peak crown, the mighty Dent Blanche towers over it in all its glittering glory.",
+      "english": "Framed by a superb peak crown, the mighty Dent Blanche towers over it in all its glittering glory."
+    }
+  ],
+  "days": [
+    {
+      "title": "Geological Wonders and Engineering",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Active Adventures in Evolène and Arolla",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s9"
+      ]
+    },
+    {
+      "title": "Forest Trails and Waterways",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

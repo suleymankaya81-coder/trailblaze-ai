@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Watzmann",
+      "quote": "Or perhaps she was also delighted by the venison he brought back from his forays in the shadow of the Watzmann and Kehlstein mountains, which offered a change from the never-ending grain groats that otherwise dominated meal times at Sulzbach Castle.",
+      "english": "Or perhaps she was also delighted by the venison he brought back from his forays in the shadow of the Watzmann and Kehlstein mountains, which offered a change from the never-ending grain groats that otherwise dominated meal times at Sulzbach Castle."
+    },
+    {
+      "id": "s2",
+      "name": "Kehlstein",
+      "quote": "Today, the brine pipeline path leads along the former route with a view over the roofs of Berchtesgaden as well as to Jenner, Watzmann and the Kehlstein.",
+      "english": "Today, the brine pipeline path leads along the former route with a view over the roofs of Berchtesgaden as well as to Jenner, Watzmann and the Kehlstein."
+    },
+    {
+      "id": "s3",
+      "name": "collegiate church of Berchtesgaden",
+      "quote": "It was exactly where he had suffered the hunting accident that the collegiate church of Berchtesgaden was later erected, built by son Berengar, who redeemed his mother’s vow.",
+      "english": "It was exactly where he had suffered the hunting accident that the collegiate church of Berchtesgaden was later erected, built by son Berengar, who redeemed his mother’s vow."
+    },
+    {
+      "id": "s4",
+      "name": "Royal Castle",
+      "quote": "This stands just a few metres from the market square with its façade-painted houses.",
+      "english": "This stands just a few metres from the market square with its façade-painted houses."
+    },
+    {
+      "id": "s5",
+      "name": "Haus der Berge",
+      "quote": "Where today visitors to the “Watzmann Therme” springs can enjoy a splash in the warm brine water or experience the vertical wilderness of the national park in the “Haus der Berge”, the monks found “treacherous forest and snow-starved wasteland”, where they even suspected a breeding ground for dragons, as can be read in their writings.",
+      "english": "Where today visitors to the “Watzmann Therme” springs can enjoy a splash in the warm brine water or experience the vertical wilderness of the national park in the “Haus der Berge”, the monks found “treacherous forest and snow-starved wasteland”, where they even suspected a breeding ground for dragons, as can be read in their writings."
+    },
+    {
+      "id": "s6",
+      "name": "Priesbergalm",
+      "quote": "“After a small glass of gentian, you can handle any dragon,” says mountain distiller Max Irlinger on the Priesbergalm.",
+      "english": "“After a small glass of gentian, you can handle any dragon,” says mountain distiller Max Irlinger on the Priesbergalm."
+    },
+    {
+      "id": "s7",
+      "name": "Jenner",
+      "quote": "It would be hard to drink gentian more authentically than on a wooden bench situated in front of the hut in the Jenner region above Berchtesgaden.",
+      "english": "It would be hard to drink gentian more authentically than on a wooden bench situated in front of the hut in the Jenner region above Berchtesgaden."
+    },
+    {
+      "id": "s8",
+      "name": "Obersalzberg Documentation Center",
+      "quote": "The history of the site during the Nazi era is retraced in a permanent exhibition at the Obersalzberg Documentation Center",
+      "english": "The history of the site during the Nazi era is retraced in a permanent exhibition at the Obersalzberg Documentation Center"
+    },
+    {
+      "id": "s9",
+      "name": "Lake Königsee",
+      "quote": "The mountain world of the National Park and UNESCO Biosphere Reserve is interactively presented on several floors, from the depths of Lake Königsee up to its tree-free peaks.",
+      "english": "The mountain world of the National Park and UNESCO Biosphere Reserve is interactively presented on several floors, from the depths of Lake Königsee up to its tree-free peaks."
+    }
+  ],
+  "days": [
+    {
+      "title": "Town History and Sacred Architecture",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "High Peaks and Alpine Meadows",
+      "stop_ids": [
+        "s1",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Lakeside Depths and Mountain Slopes",
+      "stop_ids": [
+        "s2",
+        "s8",
+        "s9"
+      ]
+    }
+  ]
+}

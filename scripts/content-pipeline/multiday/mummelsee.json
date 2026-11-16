@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Mummelsee",
+      "quote": "Der Mummelsee ist ein Karsee auf 1028,5 m ü. NN Höhe am Abhang der Hornisgrinde im Schwarzwald.",
+      "english": "The Mummelsee is a cirque lake at 1028.5 m above sea level on the slope of the Hornisgrinde in the Black Forest."
+    },
+    {
+      "id": "s2",
+      "name": "Hornisgrinde",
+      "quote": "Nach Westen steigt das Seeufer zum Katzenkopf (1123 m ü. NHN) und nach Norden zur Hornisgrinde an, dem mit 1163 Meter höchsten Berg des Nordschwarzwalds.",
+      "english": "To the west the lakeshore rises to the Katzenkopf (1123 m above sea level) and to the north to the Hornisgrinde, the highest mountain in the Northern Black Forest at 1163 meters."
+    },
+    {
+      "id": "s3",
+      "name": "Katzenkopf",
+      "quote": "Nach Westen steigt das Seeufer zum Katzenkopf (1123 m ü. NHN) und nach Norden zur Hornisgrinde an, dem mit 1163 Meter höchsten Berg des Nordschwarzwalds.",
+      "english": "To the west the lakeshore rises to the Katzenkopf (1123 m above sea level) and to the north to the Hornisgrinde, the highest mountain in the Northern Black Forest at 1163 meters."
+    },
+    {
+      "id": "s4",
+      "name": "Berghotel Mummelsee",
+      "quote": "Lediglich nach Süden sind die Ufer des Mummelsees (fast) flach, dort stehen das Berghotel Mummelsee und die nahegelegene St. Michaelskapelle.",
+      "english": "Only to the south are the shores of the Mummelsee (almost) flat; the Berghotel Mummelsee and the nearby St. Michael's Chapel are located there."
+    },
+    {
+      "id": "s5",
+      "name": "St. Michaelskapelle",
+      "quote": "Lediglich nach Süden sind die Ufer des Mummelsees (fast) flach, dort stehen das Berghotel Mummelsee und die nahegelegene St. Michaelskapelle.",
+      "english": "Only to the south are the shores of the Mummelsee (almost) flat; the Berghotel Mummelsee and the nearby St. Michael's Chapel are located there."
+    },
+    {
+      "id": "s6",
+      "name": "Hirtensteinquelle",
+      "quote": "Aus der an der Hornisgrinde gelegenen Hirtensteinquelle hat der See im Norden einen Zulauf.",
+      "english": "The lake has an inlet in the north from the Hirtenstein spring located on the Hornisgrinde."
+    },
+    {
+      "id": "s7",
+      "name": "Kunstpfad am Mummelsee",
+      "quote": "Heute ist er bekannt als Kunstpfad am Mummelsee.",
+      "english": "Today it is known as the Art Trail at the Mummelsee."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lakeside Charm and Art",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5",
+        "s7"
+      ]
+    },
+    {
+      "title": "Peaks and Springs",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s6"
+      ]
+    }
+  ]
+}

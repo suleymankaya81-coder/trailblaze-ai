@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Chapel Bridge",
+      "quote": "The Chapel Bridge with its cycle of paintings is the undisputed landmark of Lucerne.",
+      "english": "The Chapel Bridge with its cycle of paintings is the undisputed landmark of Lucerne."
+    },
+    {
+      "id": "s2",
+      "name": "Musegg Wall",
+      "quote": "There is a fantastic view of the city, lake and mountains from the Musegg Wall with its nine towers.",
+      "english": "There is a fantastic view of the city, lake and mountains from the Musegg Wall with its nine towers."
+    },
+    {
+      "id": "s3",
+      "name": "Jesuit Church",
+      "quote": "Between the two iconic wooden bridges over the Reuss is the Jesuit Church with its onion domes.",
+      "english": "Between the two iconic wooden bridges over the Reuss is the Jesuit Church with its onion domes."
+    },
+    {
+      "id": "s4",
+      "name": "Swiss Museum of Transport",
+      "quote": "Take a stroll along the wide waterfront promenade opposite with its elegant hotels to the Museum of Transport.",
+      "english": "Take a stroll along the wide waterfront promenade opposite with its elegant hotels to the Museum of Transport."
+    },
+    {
+      "id": "s5",
+      "name": "Pilatus",
+      "quote": "Lucerne’s local mountain scores points for its fondue gondola and the largest suspension rope park in Switzerland on the Fräkmüntegg.",
+      "english": "Lucerne’s local mountain scores points for its fondue gondola and the largest suspension rope park in Switzerland on the Fräkmüntegg."
+    },
+    {
+      "id": "s6",
+      "name": "Rigi",
+      "quote": "Discover the top excursion destinations in the region: Brunnen on the “ Swiss Path”, Vitznau with the Rigi or Alpnachstad with the Pilatus.",
+      "english": "Discover the top excursion destinations in the region: Brunnen on the “ Swiss Path”, Vitznau with the Rigi or Alpnachstad with the Pilatus."
+    },
+    {
+      "id": "s7",
+      "name": "Lion Monument Lucerne",
+      "quote": "The path through the picturesque old town with its squares and fountains leads you to another popular sight with photographers, the “ Lion of Lucerne”.",
+      "english": "The path through the picturesque old town with its squares and fountains leads you to another popular sight with photographers, the “ Lion of Lucerne”."
+    },
+    {
+      "id": "s8",
+      "name": "KKL",
+      "quote": "Start your tour around the lake at the unique KKL next to the train station.",
+      "english": "Start your tour around the lake at the unique KKL next to the train station."
+    },
+    {
+      "id": "s9",
+      "name": "Schlössli Utenberg",
+      "quote": "Learn more about: Lucerne Schlössli Utenberg",
+      "english": "Learn more about: Lucerne Schlössli Utenberg"
+    }
+  ],
+  "days": [
+    {
+      "title": "Historic Old Town Landmarks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Culture and Waterfront Leisure",
+      "stop_ids": [
+        "s8",
+        "s4",
+        "s9"
+      ]
+    },
+    {
+      "title": "Alpine Peak Excursions",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

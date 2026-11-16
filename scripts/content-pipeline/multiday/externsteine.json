@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "grotto",
+      "quote": "The inhabitants of the time erected a Christian place of worship with a grotto, a grave and an artistic relief depicting a biblical scene.",
+      "english": "The inhabitants of the time erected a Christian place of worship with a grotto, a grave and an artistic relief depicting a biblical scene."
+    },
+    {
+      "id": "s2",
+      "name": "grave",
+      "quote": "The inhabitants of the time erected a Christian place of worship with a grotto, a grave and an artistic relief depicting a biblical scene.",
+      "english": "The inhabitants of the time erected a Christian place of worship with a grotto, a grave and an artistic relief depicting a biblical scene."
+    },
+    {
+      "id": "s3",
+      "name": "Descent from the Cross",
+      "quote": "Today, this relief of the Descent from the Cross is considered a work of art of European significance.",
+      "english": "Today, this relief of the Descent from the Cross is considered a work of art of European significance."
+    },
+    {
+      "id": "s4",
+      "name": "viewing platform",
+      "quote": "In the 19th century, secular elements were added: stairs and a viewing platform were carved into the rocks.",
+      "english": "In the 19th century, secular elements were added: stairs and a viewing platform were carved into the rocks."
+    },
+    {
+      "id": "s5",
+      "name": "lake",
+      "quote": "When you visit the Externsteine, you should definitely pause for a moment to admire the reflection of the rocks towering high into the sky in the clear water of the adjacent lake.",
+      "english": "When you visit the Externsteine, you should definitely pause for a moment to admire the reflection of the rocks towering high into the sky in the clear water of the adjacent lake."
+    },
+    {
+      "id": "s6",
+      "name": "Infozentrum Externsteine",
+      "quote": "Infozentrum Externsteine Externsteiner Str. 35 32805 Horn-Bad Meinberg.",
+      "english": "Infozentrum Externsteine Externsteiner Str. 35 32805 Horn-Bad Meinberg."
+    },
+    {
+      "id": "s7",
+      "name": "Velmerstot",
+      "quote": "The summit is calling: the Velmerstot route leads up to the highest elevation in the Eggegebirge mountains, the Velmerstot.",
+      "english": "The summit is calling: the Velmerstot route leads up to the highest elevation in the Eggegebirge mountains, the Velmerstot."
+    },
+    {
+      "id": "s8",
+      "name": "Silberbach valley",
+      "quote": "It descends through the Silberbach valley.",
+      "english": "It descends through the Silberbach valley."
+    }
+  ],
+  "days": [
+    {
+      "title": "Religious History and Rock Art",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Visitor Center and Scenic Views",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Eggegebirge Mountain Hiking",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

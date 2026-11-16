@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Neues Schloss Herrenchiemsee",
+      "quote": "Bekannt ist sie für das von Ludwig II. erbaute Neue Schloss Herrenchiemsee.",
+      "english": "It is famous for the New Herrenchiemsee Palace built by Ludwig II."
+    },
+    {
+      "id": "s2",
+      "name": "Altes Schloss Herrenchiemsee",
+      "quote": "Außer dem Neuen Schloss Herrenchiemsee befindet sich auf der Insel auch das als Altes Schloss Herrenchiemsee bekannte ehemalige Chorherrenstift (Kloster Herrenchiemsee) mit dem sogenannten Inseldom, der von 2019 bis 2021 für 2,1 Mio. Euro saniert wurde und während der Sommermonate der Öffentlichkeit zugänglich ist.",
+      "english": "In addition to the New Herrenchiemsee Palace, the island also contains the former Augustinian monastery (Herrenchiemsee Monastery) known as the Old Herrenchiemsee Palace with the so-called Island Cathedral, which was renovated from 2019 to 2021 for 2.1 million euros and is open to the public during the summer months."
+    },
+    {
+      "id": "s3",
+      "name": "Dauerausstellung",
+      "quote": "Über den Verfassungskonvent ist an diesem Ort eine Dauerausstellung eingerichtet.",
+      "english": "A permanent exhibition regarding the constitutional convention has been established at this location."
+    },
+    {
+      "id": "s4",
+      "name": "Rundweg",
+      "quote": "Ein etwa acht Kilometer langer Rundweg führt in Ufernähe um die Insel.",
+      "english": "A circular trail approximately eight kilometers long leads around the island near the shore."
+    },
+    {
+      "id": "s5",
+      "name": "Ottos Ruh",
+      "quote": "An der südwestlichen Ecke steigt der Weg zum Aussichtspunkt „Ottos Ruh“ mit einem pilzartigen Unterstand auf bis zu 20 Höhenmeter über dem See und fällt dann zur südöstlichen Ecke mit dem Aussichtspunkt „Pauls Ruh“ auf Seeniveau wieder ab.",
+      "english": "At the southwestern corner, the path rises to the 'Ottos Ruh' viewpoint with a mushroom-like shelter up to 20 meters above the lake and then drops back down to lake level at the southeastern corner with the 'Pauls Ruh' viewpoint."
+    },
+    {
+      "id": "s6",
+      "name": "Pauls Ruh",
+      "quote": "An der südwestlichen Ecke steigt der Weg zum Aussichtspunkt „Ottos Ruh“ mit einem pilzartigen Unterstand auf bis zu 20 Höhenmeter über dem See und fällt dann zur südöstlichen Ecke mit dem Aussichtspunkt „Pauls Ruh“ auf Seeniveau wieder ab.",
+      "english": "At the southwestern corner, the path rises to the 'Ottos Ruh' viewpoint with a mushroom-like shelter up to 20 meters above the lake and then drops back down to lake level at the southeastern corner with the 'Pauls Ruh' viewpoint."
+    },
+    {
+      "id": "s7",
+      "name": "Wildgehege",
+      "quote": "Das Gebiet hat parkähnlichen Charakter und besitzt ein Wildgehege.",
+      "english": "The area has a park-like character and possesses a game enclosure."
+    }
+  ],
+  "days": [
+    {
+      "title": "Royal Palaces and History",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Island Nature and Viewpoints",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

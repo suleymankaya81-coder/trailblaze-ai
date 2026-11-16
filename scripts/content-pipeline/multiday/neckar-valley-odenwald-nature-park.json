@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Heidelberg",
+      "quote": "Zwischen Heidelberg, Mosbach und Hardheim verbindet unser Naturpark Natur, Kultur und Genuss.",
+      "english": "Between Heidelberg, Mosbach and Hardheim, our nature park combines nature, culture and enjoyment."
+    },
+    {
+      "id": "s2",
+      "name": "Mosbach",
+      "quote": "Zwischen Heidelberg, Mosbach und Hardheim verbindet unser Naturpark Natur, Kultur und Genuss.",
+      "english": "Between Heidelberg, Mosbach and Hardheim, our nature park combines nature, culture and enjoyment."
+    },
+    {
+      "id": "s3",
+      "name": "Hardheim",
+      "quote": "Zwischen Heidelberg, Mosbach und Hardheim verbindet unser Naturpark Natur, Kultur und Genuss.",
+      "english": "Between Heidelberg, Mosbach and Hardheim, our nature park combines nature, culture and enjoyment."
+    },
+    {
+      "id": "s4",
+      "name": "Burgen",
+      "quote": "Wo der Neckar sich durch Wälder, Wiesen und Streuobstbestände schlängelt, wo Burgen, Fachwerkorte und sanfte Hügel den Blick prägen – dort liegt er: der Naturpark Neckartal-Odenwald.",
+      "english": "Where the Neckar meanders through forests, meadows and orchards, where castles, half-timbered villages and gentle hills shape the view – that is where it lies: the Neckar Valley-Odenwald Nature Park."
+    },
+    {
+      "id": "s5",
+      "name": "Neckar",
+      "quote": "Wo der Neckar sich durch Wälder, Wiesen und Streuobstbestände schlängelt, wo Burgen, Fachwerkorte und sanfte Hügel den Blick prägen – dort liegt er: der Naturpark Neckartal-Odenwald.",
+      "english": "Where the Neckar meanders through forests, meadows and orchards, where castles, half-timbered villages and gentle hills shape the view – that is where it lies: the Neckar Valley-Odenwald Nature Park."
+    },
+    {
+      "id": "s6",
+      "name": "Weinberge",
+      "quote": "Hier finden seltene Tiere wie die Wildkatze oder die Äskulapnatter noch ein Zuhause, während Burgen, Weinberge und Kulturlandschaften Geschichten unserer Region erzählen.",
+      "english": "Here rare animals like the wildcat or the Aesculapian snake still find a home, while castles, vineyards and cultural landscapes tell stories of our region."
+    },
+    {
+      "id": "s7",
+      "name": "Trekkingcamp",
+      "quote": "Ob beim Wandern, Radeln, Klettern oder im Trekkingcamp unter Sternen – bei uns im Naturpark Neckartal-Odenwald wartet euer nächstes Abenteuer.",
+      "english": "Whether hiking, cycling, climbing or in a trekking camp under the stars – your next adventure awaits you here in the Neckar Valley-Odenwald Nature Park."
+    }
+  ],
+  "days": [
+    {
+      "title": "Towns and River Trails",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s5"
+      ]
+    },
+    {
+      "title": "Castles, Vineyards and Wilderness",
+      "stop_ids": [
+        "s4",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

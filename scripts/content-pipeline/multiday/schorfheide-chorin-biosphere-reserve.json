@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "monastery ruins",
+      "quote": "The traditional Chorin Summer of Music in the restored monastery ruins attracts hundreds of thousands of music enthusiasts each year.",
+      "english": "The traditional Chorin Summer of Music in the restored monastery ruins attracts hundreds of thousands of music enthusiasts each year."
+    },
+    {
+      "id": "s2",
+      "name": "Gut Temmen",
+      "quote": "Am Freitag, 13. November 2026, laden die Verwaltung des UNESCO-Biosphärenreservats Schorfheide-Chorin und die Naturwacht Brandenburg auf das Gut Temmen ein.",
+      "english": "On Friday, November 13, 2026, the administration of the UNESCO Schorfheide-Chorin Biosphere Reserve and the Brandenburg Nature Guard invite you to Gut Temmen."
+    },
+    {
+      "id": "s3",
+      "name": "Breitenteichschen Mühle",
+      "quote": "Gemeinsam mit Freiwilligen hat die Naturwacht Brandenburg die wertvollen Trockenrasen an der Breitenteichschen Mühle bei Frauenhagen im UNESCO-Biosphärenreservat Schorfheide-Chorin entbuscht.",
+      "english": "Together with volunteers, the Brandenburg Nature Guard cleared bushes from the valuable dry grasslands at the Breitenteich Mill near Frauenhagen in the UNESCO Schorfheide-Chorin Biosphere Reserve."
+    },
+    {
+      "id": "s4",
+      "name": "Werbellinsee",
+      "quote": "Beim Bildungsprojekt #Klimawandel erforschten die Kinder an Bord des solarbetriebenen Forschungsschiffs Solar Explorer auf dem Werbellinsee die Ursachen und Folgen der Erderwärmung und entwickelten gemeinsam mit regionalen Klimapaten eigene Lösungsansätze zum Schutz des Klimas.",
+      "english": "During the #ClimateChange education project, children on board the solar-powered research vessel Solar Explorer on Lake Werbellin explored the causes and consequences of global warming and developed their own solutions for climate protection together with regional climate mentors."
+    },
+    {
+      "id": "s5",
+      "name": "Engelsburg",
+      "quote": "Auch im Biosphärenreservat Schorfheide-Chorin sind diese wertvollen Wiesen zu finden – zum Beispiel an der Engelsburg und am Kanonenberg.",
+      "english": "These valuable meadows can also be found in the Schorfheide-Chorin Biosphere Reserve – for example at Engelsburg and Kanonenberg."
+    },
+    {
+      "id": "s6",
+      "name": "Kanonenberg",
+      "quote": "Auch im Biosphärenreservat Schorfheide-Chorin sind diese wertvollen Wiesen zu finden – zum Beispiel an der Engelsburg und am Kanonenberg.",
+      "english": "These valuable meadows can also be found in the Schorfheide-Chorin Biosphere Reserve – for example at Engelsburg and Kanonenberg."
+    },
+    {
+      "id": "s7",
+      "name": "Grumsin",
+      "quote": "Diesen und weiteren Fragen widmeten sich Fachleute aus Wissenschaft, Naturschutz und Politik am 16. und 17. September anlässlich des 15-jährigen Jubiläums des UNESCO-Weltnaturerbes „Alte Buchenwälder“ in Eberswalde und im Welterbe-Teilgebiet Grumsin.",
+      "english": "Specialists from science, nature conservation and politics addressed these and other questions on September 16 and 17 on the occasion of the 15th anniversary of the UNESCO World Natural Heritage 'Ancient Beech Forests' in Eberswalde and in the Grumsin world heritage sub-area."
+    },
+    {
+      "id": "s8",
+      "name": "historischen Ringofen Altglietzen",
+      "quote": "Diesmal führte der Weg zum historischen Ringofen Altglietzen, wo auf die Beratung eine Führung durch die Geschichte der ehemaligen Ziegelei folgte.",
+      "english": "This time the path led to the historical Altglietzen ring kiln, where the consultation was followed by a guided tour through the history of the former brickworks."
+    },
+    {
+      "id": "s9",
+      "name": "Parsteinsee",
+      "quote": "NABU-Landesvorsitzender Björn Ellner führte durch den Termin, bei dem Fachleute am Parsteinsee und am bereits ausgetrockneten Wesensee die Ursachen für die sinkenden Wasserstände und mögliche Handlungsansätze erläuterten.",
+      "english": "NABU state chairman Björn Ellner led the appointment, during which experts at Lake Parstein and at the already dried-up Lake Wese explained the causes for the sinking water levels and possible approaches for action."
+    }
+  ],
+  "days": [
+    {
+      "title": "Historical Ruins and Meadows",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Industrial Heritage and Estates",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s8"
+      ]
+    },
+    {
+      "title": "Lakes and Ancient Forests",
+      "stop_ids": [
+        "s4",
+        "s7",
+        "s9"
+      ]
+    }
+  ]
+}

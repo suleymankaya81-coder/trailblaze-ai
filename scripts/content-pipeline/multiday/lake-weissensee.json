@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Strandbad Stockenboi",
+      "quote": "The Strandbad Stockenboi has a lakeside swimming area, water sports, a diving school and spacious lawns for sunbathing.",
+      "english": "The Strandbad Stockenboi has a lakeside swimming area, water sports, a diving school and spacious lawns for sunbathing."
+    },
+    {
+      "id": "s2",
+      "name": "Strandbad Knaller",
+      "quote": "The Strandbad Knaller combines swimming, wellness and lake views with a beach café, saunas and leisure facilities right on the Weissensee.",
+      "english": "The Strandbad Knaller combines swimming, wellness and lake views with a beach café, saunas and leisure facilities right on the Weissensee."
+    },
+    {
+      "id": "s3",
+      "name": "Naggler Alm",
+      "quote": "The Naggler Alm can also be reached from here.",
+      "english": "The Naggler Alm can also be reached from here."
+    },
+    {
+      "id": "s4",
+      "name": "Gatschach",
+      "quote": "From the hamlet of Gatschach, the view stretches across Lake Weissensee and the surrounding mountains.",
+      "english": "From the hamlet of Gatschach, the view stretches across Lake Weissensee and the surrounding mountains."
+    },
+    {
+      "id": "s5",
+      "name": "Neusach",
+      "quote": "Neusach is situated on the western shore of Lake Weissensee.",
+      "english": "Neusach is situated on the western shore of Lake Weissensee."
+    },
+    {
+      "id": "s6",
+      "name": "Techendorf",
+      "quote": "Techendorf is the centre of Weissensee.",
+      "english": "Techendorf is the centre of Weissensee."
+    },
+    {
+      "id": "s7",
+      "name": "Slow Trail",
+      "quote": "The Slow Trail runs along the eastern bank, taking in viewpoints, rest areas and sections right by the water.",
+      "english": "The Slow Trail runs along the eastern bank, taking in viewpoints, rest areas and sections right by the water."
+    },
+    {
+      "id": "s8",
+      "name": "Hermagorer Bodenalm",
+      "quote": "This short tour leads through forest and alpine pastures to the Bodenalm, with its own cheese shop.",
+      "english": "This short tour leads through forest and alpine pastures to the Bodenalm, with its own cheese shop."
+    },
+    {
+      "id": "s9",
+      "name": "Kohlröselhütte",
+      "quote": "The ascent leads through the forest to the Jadersdorfer Alm and later the Kohlröselhütte with views overlooking the entire valley.",
+      "english": "The ascent leads through the forest to the Jadersdorfer Alm and later the Kohlröselhütte with views overlooking the entire valley."
+    }
+  ],
+  "days": [
+    {
+      "title": "Villages and Beaches of the Western Shore",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s2"
+      ]
+    },
+    {
+      "title": "Alpine Pastures and Mountain Huts",
+      "stop_ids": [
+        "s3",
+        "s8",
+        "s9"
+      ]
+    },
+    {
+      "title": "Eastern Shore Trails and Swimming",
+      "stop_ids": [
+        "s1",
+        "s7"
+      ]
+    }
+  ]
+}

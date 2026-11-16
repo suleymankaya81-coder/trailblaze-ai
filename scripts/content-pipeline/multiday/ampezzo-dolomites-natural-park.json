@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "monte Cristallo",
+      "quote": "Il territorio del parco comprende molti famosi gruppi dolomitici: il monte Cristallo, le Tofane, la cima Fanes, il Col Bechei e la Croda Rossa d'Ampezzo, rispettivamente divisi dalla Val Travenanzes, Val di Fanes, alta Valle del Boite e Val Felizon.",
+      "english": "The park's territory includes many famous Dolomite groups: mount Cristallo, the Tofane, the Fanes peak, Col Bechei and the Croda Rossa d'Ampezzo, respectively divided by the Travenanzes Valley, Fanes Valley, upper Boite Valley and Felizon Valley."
+    },
+    {
+      "id": "s2",
+      "name": "Tofane",
+      "quote": "Le formazioni più antiche dell'area, localizzate nelle zone alla base dei massicci del Cristallo e delle Tofane, sono formate da argille e marne ricchissime di testimonianze fossili.",
+      "english": "The oldest formations of the area, located in the zones at the base of the Cristallo and Tofane massifs, are made of clay and marl very rich in fossil records."
+    },
+    {
+      "id": "s3",
+      "name": "Croda Rossa d'Ampezzo",
+      "quote": "Il territorio del parco comprende molti famosi gruppi dolomitici: il monte Cristallo, le Tofane, la cima Fanes, il Col Bechei e la Croda Rossa d'Ampezzo, rispettivamente divisi dalla Val Travenanzes, Val di Fanes, alta Valle del Boite e Val Felizon.",
+      "english": "The park's territory includes many famous Dolomite groups: mount Cristallo, the Tofane, the Fanes peak, Col Bechei and the Croda Rossa d'Ampezzo, respectively divided by the Travenanzes Valley, Fanes Valley, upper Boite Valley and Felizon Valley."
+    },
+    {
+      "id": "s4",
+      "name": "Gola di Fanes",
+      "quote": "Questo particolare scenario prende il nome di Gola di Fanes.",
+      "english": "This particular scenario takes the name Gola di Fanes."
+    },
+    {
+      "id": "s5",
+      "name": "Val Travenanzes",
+      "quote": "Solo la Val Travenanzes rimane priva di piante ad alto fusto, per via della scarsa insolazione e della particolare asprezza del terreno.",
+      "english": "Only the Travenanzes Valley remains devoid of tall trees, due to the lack of sunlight and the particular harshness of the terrain."
+    },
+    {
+      "id": "s6",
+      "name": "Ponte Alto",
+      "quote": "Sulle rispettive forre esistono piccoli ed arditissimi ponti, utilizzati già nelle epoche più antiche come vie di comunicazione tra Ampezzo e le vicine località di Marebbe e Val Pusteria: \"Ponte Alto\" (in ladino: Ponte Outo) e \"Ponte dei Cadorini\" (in ladino: Ponte dei Cadorìs) sul Travenanzes, e \"Ponte Felizón\" sull'omonimo rio.",
+      "english": "Over the respective gorges there are small and very daring bridges, used since ancient times as communication routes between Ampezzo and the nearby locations of Marebbe and Val Pusteria: \"Ponte Alto\" (in Ladin: Ponte Outo) and \"Ponte dei Cadorini\" (in Ladin: Ponte dei Cadorìs) over the Travenanzes, and \"Ponte Felizón\" over the stream of the same name."
+    },
+    {
+      "id": "s7",
+      "name": "altopiano di Fosses",
+      "quote": "Tanto le formazioni dolomiche quanto quelle calcaree sono possono essere soggette a fenomeni di carsismo (fenomeno dei campi carreggiati), che genera complesse reti di grotte sotterranee fino ad una profondità massima di un chilometro (altopiano di Fosses, grotte sotto la Rozes e Cima Fanes).",
+      "english": "Both the dolomite and limestone formations can be subject to karst phenomena (the limestone pavement phenomenon), which generates complex networks of underground caves up to a maximum depth of one kilometer (Fosses plateau, caves under Rozes and Cima Fanes)."
+    },
+    {
+      "id": "s8",
+      "name": "Busc de Tofana",
+      "quote": "Una curiosità geomorfologica è, infine, la presenza di alcuni fori che bucano la roccia formando particolarissime figure ad anello, derivanti da fenomeni di erosione su sottili creste calcaree (due tipici esempi sono il Busc de Tofana e il Busc de r'Ancona).",
+      "english": "A geomorphological curiosity is, finally, the presence of some holes that pierce the rock forming very particular ring shapes, resulting from erosion phenomena on thin limestone ridges (two typical examples are the Busc de Tofana and the Busc de r'Ancona)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Tofane Massifs and Geological Wonders",
+      "stop_ids": [
+        "s2",
+        "s8",
+        "s7"
+      ]
+    },
+    {
+      "title": "Travenanzes Valley and Historic Bridges",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Peaks and Gorges of the Northern Park",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

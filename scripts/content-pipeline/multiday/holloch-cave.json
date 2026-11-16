@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hölloch Center & Ausstellung",
+      "quote": "Öffnungszeiten Hölloch Center & Ausstellung: Mo – Sa 8.30 – 12.15 h / 13.15 – 17.30 h",
+      "english": "Opening hours Hölloch Center & Exhibition: Mon – Sat 8.30 am – 12.15 pm / 1.15 pm – 5.30 pm"
+    },
+    {
+      "id": "s2",
+      "name": "Biwak",
+      "quote": "Auf den langen Tages- und Mehrtages-Touren gibt es an verschiedenen Stellen Toiletten oder andere Möglichkeiten, das kleine Geschäft zu verrichten – unter anderem natürlich auch im Biwak wo übernachtet wird.",
+      "english": "On the long day and multi-day tours, there are toilets or other facilities at various points – including, of course, in the bivouac where overnight stays take place."
+    },
+    {
+      "id": "s3",
+      "name": "Felsformationen",
+      "quote": "Ob abenteuerlich oder gemütlich – lassen auch Sie sich auf einer Höhlenwanderung begeistern von dieser verborgenen Welt voller faszinierenden Felsformationen und märchenhaften Tropfsteinen !",
+      "english": "Whether adventurous or leisurely – let yourself be inspired on a cave hike by this hidden world full of fascinating rock formations and fairytale stalactites!"
+    },
+    {
+      "id": "s4",
+      "name": "Tropfsteinen",
+      "quote": "Entdecken Sie auf einer unserer Führungen die gewaltige Arbeit des unterirdischen Wassers, das während nahezu einer Million Jahren gewirkt hat.",
+      "english": "Discover the powerful work of subterranean water on one of our tours, which has been in action for nearly a million years."
+    },
+    {
+      "id": "s5",
+      "name": "Restaurant Hölloch",
+      "quote": "Es hat eine E-Ladestation direkt vis à vis vom Restaurant Hölloch.",
+      "english": "There is an e-charging station directly opposite the Hölloch Restaurant."
+    },
+    {
+      "id": "s6",
+      "name": "Bistro",
+      "quote": "Das EG mit Shop, Bistro & einem Teil der Ausstellung ist gut zugänglich mit dem Rollstuhl.",
+      "english": "The ground floor with the shop, bistro & part of the exhibition is easily accessible by wheelchair."
+    },
+    {
+      "id": "s7",
+      "name": "Shop",
+      "quote": "Beeinträchtigte Personen dürfen ihr Auto nach Voranmeldung direkt vor dem Hölloch Center parkieren.",
+      "english": "Impaired persons may park their car directly in front of the Hölloch Center by prior appointment."
+    }
+  ],
+  "days": [
+    {
+      "title": "Visitor Center and Interior Wonders",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4",
+        "s2"
+      ]
+    },
+    {
+      "title": "Hospitality and Services",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

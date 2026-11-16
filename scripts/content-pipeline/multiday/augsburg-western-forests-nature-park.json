@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "KZ-Außenlager",
+      "quote": "Zwischen 1944 und 1945 wurden im heutigen Naturpark Augsburg – Westliche Wälder in Gablingen, Burgau (mit Waldwerk Kuno) sowie Horgau KZ-Außenlager errichtet, in denen Teile für das Düsenflugzeug Me262 produziert werden sollten.",
+      "english": "Between 1944 and 1945, satellite concentration camps were established in today's Augsburg – Western Forests Nature Park in Gablingen, Burgau (with the Kuno forest factory), and Horgau, where parts for the Me262 jet aircraft were to be produced."
+    },
+    {
+      "id": "s2",
+      "name": "Waldwerk Kuno",
+      "quote": "Zwischen 1944 und 1945 wurden im heutigen Naturpark Augsburg – Westliche Wälder in Gablingen, Burgau (mit Waldwerk Kuno) sowie Horgau KZ-Außenlager errichtet, in denen Teile für das Düsenflugzeug Me262 produziert werden sollten.",
+      "english": "Between 1944 and 1945, satellite concentration camps were established in today's Augsburg – Western Forests Nature Park in Gablingen, Burgau (with the Kuno forest factory), and Horgau, where parts for the Me262 jet aircraft were to be produced."
+    },
+    {
+      "id": "s3",
+      "name": "Burgholz",
+      "quote": "Schöne kleine Wanderung bei Schwabegg: Ins Burgholz mit Abstecher zum Walderlebnispfad und zur ehem. Haldenburg.",
+      "english": "Beautiful little hike near Schwabegg: Into the Burgholz with a detour to the forest adventure trail and the former Haldenburg."
+    },
+    {
+      "id": "s4",
+      "name": "Walderlebnispfad",
+      "quote": "Schöne kleine Wanderung bei Schwabegg: Ins Burgholz mit Abstecher zum Walderlebnispfad und zur ehem. Haldenburg.",
+      "english": "Beautiful little hike near Schwabegg: Into the Burgholz with a detour to the forest adventure trail and the former Haldenburg."
+    },
+    {
+      "id": "s5",
+      "name": "Haldenburg",
+      "quote": "Schöne kleine Wanderung bei Schwabegg: Ins Burgholz mit Abstecher zum Walderlebnispfad und zur ehem. Haldenburg.",
+      "english": "Beautiful little hike near Schwabegg: Into the Burgholz with a detour to the forest adventure trail and the former Haldenburg."
+    },
+    {
+      "id": "s6",
+      "name": "Ganghofer-Hütte",
+      "quote": "Von der Ortsmitte (Gasthof zum Hirsch) aus geht es südwärts im Wald zur Ganghofer-Hütte.",
+      "english": "From the center of the village (Gasthof zum Hirsch), the route leads southwards in the forest to the Ganghofer-Hütte."
+    },
+    {
+      "id": "s7",
+      "name": "Naturpark-Haus",
+      "quote": "Wir suchen ab sofort 2 Aufsichten im Naturpark-Haus (m/w/d) in Teilzeit (7 Std.).",
+      "english": "We are looking for 2 supervisors for the Nature Park House (m/f/d) in part-time (7 hours) effective immediately."
+    }
+  ],
+  "days": [
+    {
+      "title": "Historical Sites and Information",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Schwabegg Hiking Circuit",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Holzwinkel Forest Walk",
+      "stop_ids": [
+        "s6"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Niederen Tauern",
+      "quote": "Im Südosten von Salzburg, in den Niederen Tauern , ist dieses landschaftliche Juwel mit wilden Karen und hohen Gipfeln, aber auch sanften Tälern und lieblichen, bewirtschafteten Almen zu finden.",
+      "english": "In the southeast of Salzburg, in the Lower Tauern, this scenic jewel can be found with wild cirques and high peaks, but also gentle valleys and lovely, cultivated alpine pastures."
+    },
+    {
+      "id": "s2",
+      "name": "Almen",
+      "quote": "Der Bus bringt die Gäste in das verkehrsberuhigte Naturpark-Gebiet, zu den Almen und Startpunkten von beliebten Wanderrouten und wieder zurück.",
+      "english": "The bus takes guests into the traffic-calmed nature park area, to the alpine pastures and starting points of popular hiking routes and back again."
+    },
+    {
+      "id": "s3",
+      "name": "Almhütten",
+      "quote": "Am Weg, der durch typische Almenlandschaft, über Wiesen, durch Wälder und über Bäche führt, liegen einige bewirtschaftete Almhütten; bei jeder Almhütte befindet sich auch eine Thementafel, die den Wandernden die Geschichte, die Menschen, die Arbeit und den Naturraum des Riedingtales näher bringt.",
+      "english": "Along the path, which leads through typical alpine scenery, across meadows, through forests and over streams, there are several managed alpine huts; at each alpine hut there is also a theme board that brings the history, the people, the work and the natural area of the Riedingtal closer to hikers."
+    },
+    {
+      "id": "s4",
+      "name": "Waschberghütte",
+      "quote": "Im Naturpark Riedingtal wurde dazu die alte „Waschberghütte“ zu einem Schulungszentrum umgebaut.",
+      "english": "In the Riedingtal Nature Park, the old 'Waschberghütte' was converted into a training center for this purpose."
+    },
+    {
+      "id": "s5",
+      "name": "Gebirgsseen",
+      "quote": "Bei acht Gebirgsseen im Naturpark kommt in den Nasswiesen und Flachmooren das Schmalblättrige Wollgras vor, ein bis zu 50 cm hohes Riedgrasgewächs mit einem undeutlich 3-kantigen, aufrechten oder nickenden Stängel.",
+      "english": "At eight mountain lakes in the nature park, the narrow-leaved cotton grass occurs in the wet meadows and fens, a sedge plant up to 50 cm high with an indistinctly 3-edged, upright or nodding stem."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Alpine Meadows",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    }
+  ]
+}

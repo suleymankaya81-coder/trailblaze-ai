@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lucerne",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Pilatus"
+        "Alpnachstad",
+        "Eselwand",
+        "Pilatus Kulm"
       ],
       "seo_title": "Pilatus Visit Guide"
     },
     "travel": {
       "slug": "pilatus",
+      "overview_name": "Pilatus",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Pilatus before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.myswitzerland.com/en-ch/experiences/pilatus/",
@@ -31,16 +34,54 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Pilatus",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Alpnachstad and the Summit Experience",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Pilatus",
-                "stop_id": "pilatus",
-                "detail": "Easily accessible by public transport from Lucerne, Mount Pilatus is the ideal adventure mountain for the entire family."
+                "name": "Alpnachstad",
+                "stop_id": "pilatus--s1",
+                "detail": "The world’s steepest cogwheel railway starts its climb at Alpnachstad and tackles a maximum gradient of 48 percent, thereby passing forests, meadows and rock faces."
+              },
+              {
+                "name": "Eselwand",
+                "stop_id": "pilatus--s2",
+                "detail": "The world’s steepest cog railway from Alpnachstad to Pilatus (48% gradient), spectacular passage “Eselwand”"
+              },
+              {
+                "name": "Pilatus Kulm",
+                "stop_id": "pilatus--s5",
+                "detail": "On the north side, a gondola cableway and an aerial cableway connect Kriens to Pilatus Kulm."
+              },
+              {
+                "name": "Hotel Pilatus-Kulm",
+                "stop_id": "pilatus--s7",
+                "detail": "Evening summit rendezvous in summer (from Alpnachstad), Restaurant Krienseregg and Restaurant Chalet, Hotel Pilatus-Kulm"
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Pilatus before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "North Slope and Intermediate Heights",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Krienseregg",
+                "stop_id": "pilatus--s4",
+                "detail": "Gondola from Kriens (Lucerne) via Krienseregg to Fräkmuntegg, aerial cableway to Pilatus Kulm or cog railway (only during summer) from Alpnachstad (boat or train from Lucerne) to Pilatus Kulm"
+              },
+              {
+                "name": "Fräkmüntegg",
+                "stop_id": "pilatus--s3",
+                "detail": "It takes the cableway a mere 3.5 minutes to reach Pilatus (2,132 m a.s.l.) from the intermediate station Fräkmüntegg (1,416 m a.s.l.)."
+              },
+              {
+                "name": "Oberhaupt",
+                "stop_id": "pilatus--s6",
+                "detail": "Cliff walk and secured trails to the viewpoint Oberhaupt"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Pilatus before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +121,8 @@
             "url": "https://www.myswitzerland.com/en-ch/experiences/pilatus/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:48:40.255447+00:00"
       }
     }
   }

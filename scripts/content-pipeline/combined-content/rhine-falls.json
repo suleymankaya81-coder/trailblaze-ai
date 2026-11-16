@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Schaffhausen",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Rhine Falls"
+        "Schloss Laufen",
+        "Schlössli Wörth",
+        "SBB-Brücke"
       ],
       "seo_title": "Rhine Falls Visit Guide"
     },
     "travel": {
       "slug": "rhine-falls",
+      "overview_name": "Rhine Falls",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Rhine Falls before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.rheinfall.ch/en/",
@@ -31,16 +34,49 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Rhine Falls",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Castles and Historic Views",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Rhine Falls",
-                "stop_id": "rhine-falls",
-                "detail": "13 November [dated source] to 3 January [dated source]: The illumination of the Schloss Laufen on the Rhine Falls during the winter season is magical."
+                "name": "Schloss Laufen",
+                "stop_id": "rhine-falls--s2",
+                "detail": "The illumination of the Schloss Laufen on the Rhine Falls during the winter season is magical."
+              },
+              {
+                "name": "Schlössli Wörth",
+                "stop_id": "rhine-falls--s7",
+                "detail": "For the first time, two historical castles, two cantons and two medieval Christmas markets combine to create a single great experience at Europe's largest waterfall. Around the mighty Rhine Falls, Laufen Castle and Wörth Castle open their venerable gates to merchants, craftsmen, musicians, jugglers and traveling folk."
+              },
+              {
+                "name": "SBB-Brücke",
+                "stop_id": "rhine-falls--s8",
+                "detail": "Those who prefer firm ground under their feet can get from one market to the other via the famous SBB bridge with its impressive view of the Rhine Falls."
+              },
+              {
+                "name": "Historama, Laufen Castle on the Rhine Falls",
+                "stop_id": "rhine-falls--s9",
+                "detail": "05. Historama, Laufen Castle on the Rhine Falls"
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Rhine Falls before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Nature and Waterfall Trails",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "central rock",
+                "stop_id": "rhine-falls--s1",
+                "detail": "So, take courage: don’t miss the journey and climb to the central rock."
+              },
+              {
+                "name": "Fischetz platform",
+                "stop_id": "rhine-falls--s3",
+                "detail": "From Schloss Laufen, a footpath leads you past the thundering waters to the Fischetz platform."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Rhine Falls before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +116,8 @@
             "url": "https://www.rheinfall.ch/en/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:48:50.425355+00:00"
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lower Austria",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Donau-Auen National Park"
+        "Schloss Orth",
+        "Schlossinsel area"
       ],
       "seo_title": "Donau-Auen National Park Visit Guide"
     },
     "travel": {
       "slug": "donau-auen-national-park",
+      "overview_name": "Donau-Auen National Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Donau-Auen National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.donauauen.at/en",
@@ -31,16 +33,57 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Donau-Auen National Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "National Park Centre and Island",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Donau-Auen National Park",
-                "stop_id": "donau-auen-national-park",
-                "detail": "The Donau-Auen National Park preserves the last great floodplain landscape in Central Europe on an area of more than 9,600 hectares. With its foundation in 1996, this nature jewel was placed under international protection sustainably. Since then, nature has been able to develop here free from economic constraints.\n\nWith its diverse range of visitor facilities, excursions and events, the Donau-Auen National Park can be experienced by guests, is a regional centre for environmental education and a popular destination for excursions.\n\nEnvironmental education is one of our central tasks - national park rangers impart knowledge in an exciting way. As a large open-air laboratory, the Donau-Auen National Park also offers a great variety of opportunities to science to explore natural processes and interrelationships.\n\nSince the founding of the national park, the ecological equilibrium of the Danube wetlands has been improved. New perspectives have been created for the protected riverine landscape."
+                "name": "Schloss Orth",
+                "stop_id": "donau-auen-national-park--s1",
+                "detail": "Visit Schloss Orth, National Park Centre and museum"
+              },
+              {
+                "name": "Schlossinsel area",
+                "stop_id": "donau-auen-national-park--s2",
+                "detail": "National Park information, exhibitions, Schlossinsel area"
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Donau-Auen National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Educational Wetlands Discovery",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "outdoors class room",
+                "stop_id": "donau-auen-national-park--s3",
+                "detail": "Schools and youth groups are welcome in our outdoors class room."
+              },
+              {
+                "name": "fascinating wetlands landscape",
+                "stop_id": "donau-auen-national-park--s4",
+                "detail": "Together with national park rangers, the fascinating wetlands landscape can be experienced on land and water."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Donau-Auen National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "River Restoration and Science",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "side waters",
+                "stop_id": "donau-auen-national-park--s5",
+                "detail": "By means of innovative river revitalization projects, side waters are reconnected to the river and natural Danube banks are fostered."
+              },
+              {
+                "name": "open-air laboratory",
+                "stop_id": "donau-auen-national-park--s7",
+                "detail": "As a large open-air laboratory, the Donau-Auen National Park also offers a great variety of opportunities to science to explore natural processes and interrelationships."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Donau-Auen National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -84,7 +127,8 @@
             "url": "https://www.nationalparksaustria.at/en/donau-auen.html"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:44:53.608666+00:00"
       }
     }
   }

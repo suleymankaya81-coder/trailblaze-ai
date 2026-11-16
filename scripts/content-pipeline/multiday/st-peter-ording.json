@@ -1,0 +1,39 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "St. Peter-Kirche",
+      "quote": "Um 10.00 Uhr findet ein Gottesdienst in der St. Peter-Kirche im Dorf statt, der anschließende Empfang mit Grußworten und Beisammensein im benachbarten Gemeindehaus.",
+      "english": "At 10:00 a.m. a church service will take place in the St. Peter Church in the village, followed by a reception with greetings and a get-together in the neighboring community center."
+    },
+    {
+      "id": "s2",
+      "name": "Gemeindehaus",
+      "quote": "Um 10.00 Uhr findet ein Gottesdienst in der St. Peter-Kirche im Dorf statt, der anschließende Empfang mit Grußworten und Beisammensein im benachbarten Gemeindehaus.",
+      "english": "At 10:00 a.m. a church service will take place in the St. Peter Church in the village, followed by a reception with greetings and a get-together in the neighboring community center."
+    },
+    {
+      "id": "s3",
+      "name": "Museum Landschaft Eiderstedt",
+      "quote": "Damit dieses Kapitel unserer Geschichte nicht vergessen wird, soll im Museum Landschaft Eiderstedt in SPO jetzt eine Multimedia-Station entstehen, die aufklärt, erinnert und eine Möglichkeit zum Dialog bietet.",
+      "english": "To ensure that this chapter of our history is not forgotten, a multimedia station is now to be created in the Museum Landschaft Eiderstedt in SPO, which will educate, remind, and provide an opportunity for dialogue."
+    },
+    {
+      "id": "s4",
+      "name": "Bürgerbüro",
+      "quote": "Sollten Sie noch keinen blauen EU-Behindertenparkausweis besitzen, können Sie diesen im Bürgerbüro beantragen.",
+      "english": "If you do not yet have a blue EU disabled parking permit, you can apply for one at the Citizens' Office."
+    }
+  ],
+  "days": [
+    {
+      "title": "Village Center Culture and History",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

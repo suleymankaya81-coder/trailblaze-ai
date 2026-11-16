@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "sandstone cliffs",
+      "quote": "Experience the beauty of Saxony's only national park and discover the wealth of flora and fauna on and between the sandstone cliffs in the national park region.",
+      "english": "Experience the beauty of Saxony's only national park and discover the wealth of flora and fauna on and between the sandstone cliffs in the national park region."
+    },
+    {
+      "id": "s2",
+      "name": "table mountains",
+      "quote": "The majestic table mountains and the deeply carved Elbe valley characterise the cross-border Elbe Sandstone Mountains on a large scale.",
+      "english": "The majestic table mountains and the deeply carved Elbe valley characterise the cross-border Elbe Sandstone Mountains on a large scale."
+    },
+    {
+      "id": "s3",
+      "name": "Elbe valley",
+      "quote": "The majestic table mountains and the deeply carved Elbe valley characterise the cross-border Elbe Sandstone Mountains on a large scale.",
+      "english": "The majestic table mountains and the deeply carved Elbe valley characterise the cross-border Elbe Sandstone Mountains on a large scale."
+    },
+    {
+      "id": "s4",
+      "name": "rock formations",
+      "quote": "Saxon Switzerland offers unforgettable nature experiences for locals and visitors alike, from hikes between bizarre rock formations to breathtaking viewpoints.",
+      "english": "Saxon Switzerland offers unforgettable nature experiences for locals and visitors alike, from hikes between bizarre rock formations to breathtaking viewpoints."
+    },
+    {
+      "id": "s5",
+      "name": "network of hiking trails",
+      "quote": "Nature lovers, active holidaymakers, or lovers of quiet relaxation will find impressive nature experiences on the well-marked network of hiking trails with over 100 views.",
+      "english": "Nature lovers, active holidaymakers, or lovers of quiet relaxation will find impressive nature experiences on the well-marked network of hiking trails with over 100 views."
+    },
+    {
+      "id": "s6",
+      "name": "viewpoints",
+      "quote": "Saxon Switzerland offers unforgettable nature experiences for locals and visitors alike, from hikes between bizarre rock formations to breathtaking viewpoints.",
+      "english": "Saxon Switzerland offers unforgettable nature experiences for locals and visitors alike, from hikes between bizarre rock formations to breathtaking viewpoints."
+    },
+    {
+      "id": "s7",
+      "name": "National Park Centre",
+      "quote": "Call the National Park Centre Daily from 9 am to 5 pm under 00-49-35022-502-40",
+      "english": "Call the National Park Centre Daily from 9 am to 5 pm under 00-49-35022-502-40"
+    }
+  ],
+  "days": [
+    {
+      "title": "Elbe Valley and Cliffs",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Formations and Trails",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Viewpoints and Information",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

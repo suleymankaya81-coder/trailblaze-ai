@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Geschriebenstein",
+      "quote": "Den Rahmen dieses grenzüberschreitenden Naturparks bildet ein großes Waldgebiet mit ausgedehnten Eichen-Hainbuchenwäldern um die höchste Erhebung des Burgenlandes – den Geschriebenstein.",
+      "english": "The framework of this cross-border nature park is formed by a large forest area with extensive oak-hornbeam forests around the highest elevation in Burgenland – the Geschriebenstein."
+    },
+    {
+      "id": "s2",
+      "name": "Burg Lockenhaus",
+      "quote": "Die Wimperfledermaus verbringt im Naturpark Geschriebenstein-Írottkö den Sommer unter anderem in der Burg Lockenhaus.",
+      "english": "In the Geschriebenstein-Írottkő Nature Park, the Geoffroy's bat spends the summer, among other places, in Lockenhaus Castle."
+    },
+    {
+      "id": "s3",
+      "name": "Baumwipfelweg",
+      "quote": "Der neu angelegte Baumwipfelweg ist komplett barrierefrei.",
+      "english": "The newly created treetop path is completely barrier-free."
+    },
+    {
+      "id": "s4",
+      "name": "Weg der Sinne",
+      "quote": "Der „Weg der Sinne“ im Naturpark Geschriebenstein-Írottkő ist ein naturtouristisches Projekt für Menschen mit Sehbehinderungen.",
+      "english": "The 'Path of the Senses' in the Geschriebenstein-Írottkő Nature Park is a nature tourism project for people with visual impairments."
+    },
+    {
+      "id": "s5",
+      "name": "Bienenlehrpfad",
+      "quote": "Um das Bewusstsein über die Wichtigkeit von Insekten und vor allem der Biene zu stärken, wird 2021 in Zusammenarbeit mit dem Bienenzuchtverein Lockenhaus ein Bienenlehrpfad errichtet sowie ein Bienenschaukasten in der Naturpark-Gemeinde Lockenhaus aufgestellt.",
+      "english": "In order to strengthen awareness of the importance of insects and especially the bee, a bee educational trail will be built in 2021 in cooperation with the Lockenhaus Beekeepers' Association, and a bee showcase will be set up in the nature park municipality of Lockenhaus."
+    },
+    {
+      "id": "s6",
+      "name": "Lockenhaus",
+      "quote": "Um das Bewusstsein über die Wichtigkeit von Insekten und vor allem der Biene zu stärken, wird 2021 in Zusammenarbeit mit dem Bienenzuchtverein Lockenhaus ein Bienenlehrpfad errichtet sowie ein Bienenschaukasten in der Naturpark-Gemeinde Lockenhaus aufgestellt.",
+      "english": "In order to strengthen awareness of the importance of insects and especially the bee, a bee educational trail will be built in 2021 in cooperation with the Lockenhaus Beekeepers' Association, and a bee showcase will be set up in the nature park municipality of Lockenhaus."
+    },
+    {
+      "id": "s7",
+      "name": "Weiden bei Rechnitz",
+      "quote": "Im Naturpark Geschriebenstein-Irottkö erhält die Volksschule Weiden bei Rechnitz das Prädikat „Naturpark-Schule“ – ein starkes Zeichen für ganzheitliches Lernen in und mit der Natur Der Verband der Naturparke Österreichs feiert",
+      "english": "In the Geschriebenstein-Irottkö Nature Park, the primary school in Weiden bei Rechnitz receives the 'Nature Park School' title – a strong sign for holistic learning in and with nature as the Association of Austrian Nature Parks celebrates."
+    }
+  ],
+  "days": [
+    {
+      "title": "Summit and Accessibility Trails",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Heritage and Nature Education in Lockenhaus",
+      "stop_ids": [
+        "s2",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Nature Park Communities",
+      "stop_ids": [
+        "s7"
+      ]
+    }
+  ]
+}

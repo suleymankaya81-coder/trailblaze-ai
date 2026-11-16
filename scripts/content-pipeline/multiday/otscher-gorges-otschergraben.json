@@ -1,0 +1,39 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Ötscher-Basis",
+      "quote": "Der Eintritt kann auf der Ötscher-Basis in Wienerbruck oder den Spendenkassen direkt bei den Naturpark-Eingängen gelöst werden.",
+      "english": "The entrance fee can be paid at the Ötscher-Basis in Wienerbruck or at the donation boxes directly at the nature park entrances."
+    },
+    {
+      "id": "s2",
+      "name": "Stausee in Wienerbruck",
+      "quote": "Der Stausee in Wienerbruck lädt mit seiner Liegewiese zum Sonnenbaden ein.",
+      "english": "The reservoir in Wienerbruck invites you to sunbathe with its sunbathing lawn."
+    },
+    {
+      "id": "s3",
+      "name": "Schutzhaus Vorderötscher",
+      "quote": "Wer sein Zelt aufschlagen mag, kann dies im Garten der Ötscher-Basis oder auch beim Schutzhaus Vorderötscher tun.",
+      "english": "Anyone who wants to pitch their tent can do so in the garden of the Ötscher-Basis or also at the Schutzhaus Vorderötscher."
+    },
+    {
+      "id": "s4",
+      "name": "Ötscher",
+      "quote": "Rund um den weithin sichtbaren Ötscher - dem Wahrzeichen des Mostviertels - erstreckt sich auf den Gemeindegebieten Annaberg, Mitterbach, Gaming, St. Anton und Puchenstuben der größte Naturpark Niederösterreichs.",
+      "english": "Around the widely visible Ötscher - the landmark of the Mostviertel - the largest nature park in Lower Austria extends across the municipal areas of Annaberg, Mitterbach, Gaming, St. Anton and Puchenstuben."
+    }
+  ],
+  "days": [
+    {
+      "title": "Wienerbruck and Alpine Surroundings",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Nockalmstraße",
+      "quote": "1979 war mit dem Bau der Nockalmstraße begonnen worden, die das Liesertal mit dem obersten Gurktal verband.",
+      "english": "In 1979, construction began on the Nockalm Road, which connected the Lieser Valley with the uppermost Gurk Valley."
+    },
+    {
+      "id": "s2",
+      "name": "Turracher Höhe",
+      "quote": "Skigebiete entstanden stattdessen in der Innerkrems und auf der Turracher Höhe.",
+      "english": "Ski resorts were established instead in Innerkrems and on the Turracher Höhe."
+    },
+    {
+      "id": "s3",
+      "name": "Innerkrems",
+      "quote": "Skigebiete entstanden stattdessen in der Innerkrems und auf der Turracher Höhe.",
+      "english": "Ski resorts were established instead in Innerkrems and on the Turracher Höhe."
+    },
+    {
+      "id": "s4",
+      "name": "Tamsweg",
+      "quote": "Hauptorte sind Tamsweg, Mauterndorf, Sankt Margarethen im Lungau und Bad Kleinkirchheim in Kärnten.",
+      "english": "Main towns are Tamsweg, Mauterndorf, Sankt Margarethen im Lungau and Bad Kleinkirchheim in Carinthia."
+    },
+    {
+      "id": "s5",
+      "name": "Mauterndorf",
+      "quote": "Hauptorte sind Tamsweg, Mauterndorf, Sankt Margarethen im Lungau und Bad Kleinkirchheim in Kärnten.",
+      "english": "Main towns are Tamsweg, Mauterndorf, Sankt Margarethen im Lungau and Bad Kleinkirchheim in Carinthia."
+    },
+    {
+      "id": "s6",
+      "name": "Bad Kleinkirchheim",
+      "quote": "Hauptorte sind Tamsweg, Mauterndorf, Sankt Margarethen im Lungau und Bad Kleinkirchheim in Kärnten.",
+      "english": "Main towns are Tamsweg, Mauterndorf, Sankt Margarethen im Lungau and Bad Kleinkirchheim in Carinthia."
+    },
+    {
+      "id": "s7",
+      "name": "Speikkogel",
+      "quote": "Speikkogel (größeres Naturschutzgebiet) im Osten, die Lungauer Anteile am Nationalpark Hohe Tauern im Westen (wo die Fortsetzung gewährleistet ist), die Gipfelregionen des Hochgollingmassivs im Norden (Anschluss an Schutzgebiete in der Steiermark).",
+      "english": "Speikkogel (larger nature reserve) in the east, the Lungau portions of the Hohe Tauern National Park in the west (where continuation is guaranteed), the summit regions of the Hochgolling massif in the north (connection to protected areas in Styria)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Carinthian Nockberge Resorts and Roads",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Historic Towns of Lungau and Carinthia",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Eastern Peaks and Nature Reserves",
+      "stop_ids": [
+        "s7"
+      ]
+    }
+  ]
+}

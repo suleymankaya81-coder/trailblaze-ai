@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lake Lucerne",
+      "quote": "The ride and views of Lake Lucerne are stunning.",
+      "english": "The ride and views of Lake Lucerne are stunning."
+    },
+    {
+      "id": "s2",
+      "name": "Küssnacht",
+      "quote": "A total of nine different cable cars provide access to the imposing Rigi massif, which stretches from Küssnacht in the north to Brunnen in the south.",
+      "english": "A total of nine different cable cars provide access to the imposing Rigi massif, which stretches from Küssnacht in the north to Brunnen in the south."
+    },
+    {
+      "id": "s3",
+      "name": "Brunnen",
+      "quote": "A total of nine different cable cars provide access to the imposing Rigi massif, which stretches from Küssnacht in the north to Brunnen in the south.",
+      "english": "A total of nine different cable cars provide access to the imposing Rigi massif, which stretches from Küssnacht in the north to Brunnen in the south."
+    },
+    {
+      "id": "s4",
+      "name": "alpine cheese dairy",
+      "quote": "Test your skills at mini golf or look over the cheesemaker's shoulder in the alpine cheese dairy.",
+      "english": "Test your skills at mini golf or look over the cheesemaker's shoulder in the alpine cheese dairy."
+    },
+    {
+      "id": "s5",
+      "name": "Rigi Event Tent",
+      "quote": "From the exclusive top location in the multifunctional Rigi Event Tent to the 100,000-year-old, unique Gruebisbalm cave, Mount Rigi offers the perfect venue for an event close to nature.",
+      "english": "From the exclusive top location in the multifunctional Rigi Event Tent to the 100,000-year-old, unique Gruebisbalm cave, Mount Rigi offers the perfect venue for an event close to nature."
+    },
+    {
+      "id": "s6",
+      "name": "Gruebisbalm cave",
+      "quote": "From the exclusive top location in the multifunctional Rigi Event Tent to the 100,000-year-old, unique Gruebisbalm cave, Mount Rigi offers the perfect venue for an event close to nature.",
+      "english": "From the exclusive top location in the multifunctional Rigi Event Tent to the 100,000-year-old, unique Gruebisbalm cave, Mount Rigi offers the perfect venue for an event close to nature."
+    },
+    {
+      "id": "s7",
+      "name": "Vitznau",
+      "quote": "Vitznau Christmas Market Takes place on Sat. at 8:00 AM",
+      "english": "Vitznau Christmas Market Takes place on Sat. at 8:00 AM"
+    },
+    {
+      "id": "s8",
+      "name": "Vitznau Circular Route",
+      "quote": "5.11 km Vitznau Circular Route - Hike",
+      "english": "5.11 km Vitznau Circular Route - Hike"
+    }
+  ],
+  "days": [
+    {
+      "title": "Massif Access and Lake Views",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Village Highlights and Trails",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Summit Caves and Alpine Traditions",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

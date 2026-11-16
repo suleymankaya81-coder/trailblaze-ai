@@ -1,0 +1,105 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Trin",
+      "quote": "In der Schlucht liegen die Bahnhöfe von Trin, Versam-Safien und Valendas-Sagogn, die von den Ortschaften auf den Anhöhen und Plateaus der Umgebung über Strassen erreichbar sind.",
+      "english": "In the gorge lie the stations of Trin, Versam-Safien, and Valendas-Sagogn, which are accessible by road from the villages on the surrounding heights and plateaus."
+    },
+    {
+      "id": "s2",
+      "name": "Punt Ruinaulta",
+      "quote": "Beim Bahnhof von Trin überspannt die Fussgängerbrücke Punt Ruinaulta den Rhein.",
+      "english": "At the Trin station, the pedestrian bridge Punt Ruinaulta spans the Rhine."
+    },
+    {
+      "id": "s3",
+      "name": "Isla Bella",
+      "quote": "An der Isla Bella vorbei führt ein Wanderweg von Trin und über die Eisenbahnbrücke zur Station Versam.",
+      "english": "A hiking trail leads past Isla Bella from Trin and over the railway bridge to Versam station."
+    },
+    {
+      "id": "s4",
+      "name": "Versam-Safien",
+      "quote": "In der Schlucht liegen die Bahnhöfe von Trin, Versam-Safien und Valendas-Sagogn, die von den Ortschaften auf den Anhöhen und Plateaus der Umgebung über Strassen erreichbar sind.",
+      "english": "In the gorge lie the stations of Trin, Versam-Safien, and Valendas-Sagogn, which are accessible by road from the villages on the surrounding heights and plateaus."
+    },
+    {
+      "id": "s5",
+      "name": "Islabord",
+      "quote": "Islabord an der Strasse von Versam zur RhB-Station Versam-Safien",
+      "english": "Islabord on the road from Versam to the Rhaetian Railway station Versam-Safien"
+    },
+    {
+      "id": "s6",
+      "name": "Spitg",
+      "quote": "Spitg an der Ostseite des Versamertobels",
+      "english": "Spitg on the east side of the Versamer Tobel."
+    },
+    {
+      "id": "s7",
+      "name": "Valendas-Sagogn",
+      "quote": "Beim Bahnhof Valendas-Sagogn steht eine Strassenbrücke, die von Sagogn her den Zugang zum Bahnhof ermöglicht.",
+      "english": "At the Valendas-Sagogn station stands a road bridge that provides access to the station from Sagogn."
+    },
+    {
+      "id": "s8",
+      "name": "Alix",
+      "quote": "Alix bei Valendas",
+      "english": "Alix near Valendas"
+    },
+    {
+      "id": "s9",
+      "name": "Crap Signina",
+      "quote": "Crap Signina oberhalb Sagogn, erstellt 2015",
+      "english": "Crap Signina above Sagogn, created in 2015"
+    },
+    {
+      "id": "s10",
+      "name": "Isla Sut",
+      "quote": "Daneben liegt das Flachmoor von Isla Sut.",
+      "english": "Next to it lies the fen of Isla Sut."
+    },
+    {
+      "id": "s11",
+      "name": "Il spir",
+      "quote": "Il spir bei Flims-Conn, erstellt 2006 von Corinna Menn",
+      "english": "Il spir near Flims-Conn, created in 2006 by Corinna Menn"
+    },
+    {
+      "id": "s12",
+      "name": "Burg Wackenau",
+      "quote": "Wackenau beim Burghügel der Burg Wackenau",
+      "english": "Wackenau at the castle hill of Wackenau Castle."
+    }
+  ],
+  "days": [
+    {
+      "title": "Eastern Gate and River Crossings",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s12"
+      ]
+    },
+    {
+      "title": "Central Cliffs and Gorge Views",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s11"
+      ]
+    },
+    {
+      "title": "Western Wetlands and High Plateaus",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9",
+        "s10"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Carinthia",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Weissensee"
+        "Gatschach",
+        "Strandbad Knaller",
+        "Lake Weissensee"
       ],
       "seo_title": "Weissensee Nature Park Visit Guide"
     },
     "travel": {
       "slug": "weissensee-nature-park",
+      "overview_name": "Weissensee Nature Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Weissensee Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.austria.info/en-gb/locations/lake-weissensee/",
@@ -31,16 +34,72 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Weissensee Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Central Villages and Lido Beaches",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Weissensee",
-                "stop_id": "weissensee-nature-park",
-                "detail": "Lake Weissensee in Carinthia is one of Austria's best-known swimming lakes. Depending on the light, the water shimmers in different shades of blue and green, from turquoise to emerald. A morning swim, a hike through Carinthia's mountain landscape, or an outing by kayak, SUP or boat – around Lake Weissensee, water, active pursuits and scenic views shape the holiday experience."
+                "name": "Gatschach",
+                "stop_id": "weissensee-nature-park--s6",
+                "detail": "From the hamlet of Gatschach, the view stretches across Lake Weissensee and the surrounding mountains."
+              },
+              {
+                "name": "Strandbad Knaller",
+                "stop_id": "weissensee-nature-park--s3",
+                "detail": "The Strandbad Knaller combines swimming, wellness and lake views with a beach café, saunas and leisure facilities right on the Weissensee."
+              },
+              {
+                "name": "Lake Weissensee",
+                "stop_id": "weissensee-nature-park--s1",
+                "detail": "Lake Weissensee in Carinthia is one of Austria's best-known swimming lakes."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Weissensee Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Western Shore and Alpine Pastures",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Neusach",
+                "stop_id": "weissensee-nature-park--s7",
+                "detail": "Neusach is situated on the western shore of Lake Weissensee."
+              },
+              {
+                "name": "Naggl",
+                "stop_id": "weissensee-nature-park--s4",
+                "detail": "From Naggl, trails lead to alpine pastures, viewpoints and hiking areas in the mountains surrounding Lake Weissensee."
+              },
+              {
+                "name": "Naggler Alm",
+                "stop_id": "weissensee-nature-park--s5",
+                "detail": "The Naggler Alm can also be reached from here."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Weissensee Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Eastern Shore and Lakeshore Trails",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Strandbad Stockenboi",
+                "stop_id": "weissensee-nature-park--s2",
+                "detail": "The Strandbad Stockenboi has a lakeside swimming area, water sports, a diving school and spacious lawns for sunbathing."
+              },
+              {
+                "name": "Slow Trail",
+                "stop_id": "weissensee-nature-park--s9",
+                "detail": "The Slow Trail runs along the eastern bank, taking in viewpoints, rest areas and sections right by the water."
+              },
+              {
+                "name": "Nordufer-Weg",
+                "stop_id": "weissensee-nature-park--s10",
+                "detail": "Weissensee – Nordufer-Weg : Demanding hike with paths along the lakeshore and ascents and descents over stone walls."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Weissensee Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +139,8 @@
             "url": "https://www.austria.info/en-gb/locations/lake-weissensee/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:51:20.073490+00:00"
       }
     }
   }

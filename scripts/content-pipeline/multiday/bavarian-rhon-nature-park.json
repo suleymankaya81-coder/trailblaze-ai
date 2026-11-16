@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hammelburg",
+      "quote": "Die Süd- und Südostgrenze verläuft entlang von Verkehrswegen (zu größeren Teilen B 287, abschnittsweise jedoch auch Kreisstraßen und Eisenbahntrassen) dergestalt, dass das Tal der Fränkischen Saale flussaufwärts über Hammelburg bis Bad Neustadt an der Saale noch gerade innerhalb liegt.",
+      "english": "The southern and southeastern boundary runs along traffic routes (largely the B 287, but in sections also district roads and railway lines) in such a way that the valley of the Franconian Saale upstream via Hammelburg to Bad Neustadt an der Saale still lies just within."
+    },
+    {
+      "id": "s2",
+      "name": "Bad Neustadt an der Saale",
+      "quote": "Wolfgang Haber (Hrsg.): Plan zur Einrichtung und Entwicklung des Naturparkes Rhön, Bayerischer Teil. Zweckverband Naturpark Bayerische Rhön, Bad Neustadt an der Saale 1970, DNB 760455082.",
+      "english": "Wolfgang Haber (Ed.): Plan for the establishment and development of the Rhön Nature Park, Bavarian part. Bavarian Rhön Nature Park Association, Bad Neustadt an der Saale 1970, DNB 760455082."
+    },
+    {
+      "id": "s3",
+      "name": "Mellrichstadt",
+      "quote": "Nordnordöstlich der Kreisstadt folgt sie in etwa der Streu über Mellrichstadt bis Stockheim, von wo aus sie im Östlichen Rhönvorland in etwa entlang der Gesteinsgrenze vom Buntsandstein im Westen zum Muschelkalk im Osten in Form eines nach Osten offenen Halbkreises zur thüringischen Landesgrenze verläuft.",
+      "english": "North-northeast of the district town, it roughly follows the Streu river via Mellrichstadt to Stockheim, from where it runs in the Eastern Rhön Foreland approximately along the rock boundary from Buntsandstein in the west to Muschelkalk in the east in the form of a semicircle open to the east towards the Thuringian state border."
+    },
+    {
+      "id": "s4",
+      "name": "Stockheim",
+      "quote": "Nordnordöstlich der Kreisstadt folgt sie in etwa der Streu über Mellrichstadt bis Stockheim, von wo aus sie im Östlichen Rhönvorland in etwa entlang der Gesteinsgrenze vom Buntsandstein im Westen zum Muschelkalk im Osten in Form eines nach Osten offenen Halbkreises zur thüringischen Landesgrenze verläuft.",
+      "english": "North-northeast of the district town, it roughly follows the Streu river via Mellrichstadt to Stockheim, from where it runs in the Eastern Rhön Foreland approximately along the rock boundary from Buntsandstein in the west to Muschelkalk in the east in the form of a semicircle open to the east towards the Thuringian state border."
+    },
+    {
+      "id": "s5",
+      "name": "Haus der Langen Rhön",
+      "quote": "Biosphärenzentrum Rhön „Haus der Langen Rhön“ in Oberelsbach",
+      "english": "Rhön Biosphere Center \"House of the Long Rhön\" in Oberelsbach"
+    },
+    {
+      "id": "s6",
+      "name": "Haus der Schwarzen Berge",
+      "quote": "Biosphärenzentrum Rhön „Haus der Schwarzen Berge“ in Oberbach",
+      "english": "Rhön Biosphere Center \"House of the Black Mountains\" in Oberbach"
+    },
+    {
+      "id": "s7",
+      "name": "Bayerische Hohe Rhön",
+      "quote": "FFH-Gebiet 5526-371 Bayerische Hohe Rhön",
+      "english": "FFH Area 5526-371 Bavarian High Rhön"
+    }
+  ],
+  "days": [
+    {
+      "title": "Saale Valley and Information Centers",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s6"
+      ]
+    },
+    {
+      "title": "Northern High Rhön Sights",
+      "stop_ids": [
+        "s5",
+        "s7"
+      ]
+    },
+    {
+      "title": "Eastern Rhön Foreland Towns",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Nationalparkzentrum Lusen",
+      "quote": "Erste Anlaufstellen für Besucher sind die Nationalparkzentren Lusen und Falkenstein mit den Tier-Freigeländen sowie dem Hans-Eisenmann-Haus und dem Haus zur Wildnis.",
+      "english": "First points of contact for visitors are the Lusen and Falkenstein national park centers with the animal enclosures as well as the Hans Eisenmann House and the House to the Wilderness."
+    },
+    {
+      "id": "s2",
+      "name": "Nationalparkzentrum Falkenstein",
+      "quote": "Erste Anlaufstellen für Besucher sind die Nationalparkzentren Lusen und Falkenstein mit den Tier-Freigeländen sowie dem Hans-Eisenmann-Haus und dem Haus zur Wildnis.",
+      "english": "First points of contact for visitors are the Lusen and Falkenstein national park centers with the animal enclosures as well as the Hans Eisenmann House and the House to the Wilderness."
+    },
+    {
+      "id": "s3",
+      "name": "Tier-Freigeländen",
+      "quote": "Erste Anlaufstellen für Besucher sind die Nationalparkzentren Lusen und Falkenstein mit den Tier-Freigeländen sowie dem Hans-Eisenmann-Haus und dem Haus zur Wildnis.",
+      "english": "First points of contact for visitors are the Lusen and Falkenstein national park centers with the animal enclosures as well as the Hans Eisenmann House and the House to the Wilderness."
+    },
+    {
+      "id": "s4",
+      "name": "Hans-Eisenmann-Haus",
+      "quote": "Erste Anlaufstellen für Besucher sind die Nationalparkzentren Lusen und Falkenstein mit den Tier-Freigeländen sowie dem Hans-Eisenmann-Haus und dem Haus zur Wildnis.",
+      "english": "First points of contact for visitors are the Lusen and Falkenstein national park centers with the animal enclosures as well as the Hans Eisenmann House and the House to the Wilderness."
+    },
+    {
+      "id": "s5",
+      "name": "Haus zur Wildnis",
+      "quote": "Erste Anlaufstellen für Besucher sind die Nationalparkzentren Lusen und Falkenstein mit den Tier-Freigeländen sowie dem Hans-Eisenmann-Haus und dem Haus zur Wildnis.",
+      "english": "First points of contact for visitors are the Lusen and Falkenstein national park centers with the animal enclosures as well as the Hans Eisenmann House and the House to the Wilderness."
+    },
+    {
+      "id": "s6",
+      "name": "Waldgeschichtliches Museum",
+      "quote": "Waldgeschichtliches Museum, Waldspielgelände und Co. sind weitere Höhepunkte.",
+      "english": "Forest History Museum, forest playground and co. are further highlights."
+    },
+    {
+      "id": "s7",
+      "name": "Waldspielgelände",
+      "quote": "Waldgeschichtliches Museum, Waldspielgelände und Co. sind weitere Höhepunkte.",
+      "english": "Forest History Museum, forest playground and co. are further highlights."
+    }
+  ],
+  "days": [
+    {
+      "title": "National Park Centers and Animal Enclosures",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Educational Houses and Exhibits",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Forest History and Play",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Graubunden",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Bernina"
+        "Piz Bernina",
+        "Biancograt",
+        "Bernina Massif"
       ],
       "seo_title": "Bernina Pass Visit Guide"
     },
     "travel": {
       "slug": "bernina-pass",
+      "overview_name": "Bernina Pass",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Bernina Pass before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.myswitzerland.com/en-ch/search/?q=Bernina#Header",
@@ -31,16 +34,62 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Bernina Pass",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "High Peaks and Glaciers",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Bernina",
-                "stop_id": "bernina-pass",
-                "detail": "During the Bernina Standard Helicopter Round Flight, you'll discover the glacier world of the Bernina Massif. You'll fly close to Piz Bernina, the Biancograt, and past glaciers. The return flight over the lake landscape of the Upper Engadine completes your flying experience."
+                "name": "Piz Bernina",
+                "stop_id": "bernina-pass--s1",
+                "detail": "Piz Bernina stands out due to its almost freestanding nature and as a result also offers unique far-reaching views from its summit."
+              },
+              {
+                "name": "Biancograt",
+                "stop_id": "bernina-pass--s2",
+                "detail": "You'll fly close to Piz Bernina, the Biancograt, and past glaciers."
+              },
+              {
+                "name": "Bernina Massif",
+                "stop_id": "bernina-pass--s3",
+                "detail": "During the Bernina Standard Helicopter Round Flight, you'll discover the glacier world of the Bernina Massif."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Bernina Pass before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Lakes and Valley Exploration",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Upper Engadine",
+                "stop_id": "bernina-pass--s4",
+                "detail": "The return flight over the lake landscape of the Upper Engadine completes your flying experience."
+              },
+              {
+                "name": "Valposchiavo",
+                "stop_id": "bernina-pass--s6",
+                "detail": "A journey on the Bernina Herb Express to Le Prese is a chance for passengers to experience the UNESCO World Heritage Site up close and immerse themselves in the world of herbs in Valposchiavo."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Bernina Pass before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Southern Villages and Vineyards",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Poschiavo",
+                "stop_id": "bernina-pass--s5",
+                "detail": "On the Bernina Express you travel from the glaciers of the Engadine to an ice cream cone at the Mediterranean piazza of Poschiavo with many trail highlights in between."
+              },
+              {
+                "name": "La Gatta winery",
+                "stop_id": "bernina-pass--s7",
+                "detail": "The highlight is a visit to the La Gatta winery, where you can enjoy a local lunch paired with matching wines."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Bernina Pass before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +129,8 @@
             "url": "https://www.myswitzerland.com/en-ch/search/?q=Bernina#Header"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:44:56.541948+00:00"
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Tyrol",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Ötztal Valley"
+        "Stuiben Falls",
+        "Ötzi Village"
       ],
       "seo_title": "Ötztal Valley Visit Guide"
     },
     "travel": {
       "slug": "otztal-valley",
+      "overview_name": "Ötztal Valley",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Ötztal Valley before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.austria.info/en-gb/regions/oetztal/",
@@ -31,16 +33,67 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Ötztal Valley",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Umhausen Waterfalls and Prehistoric Life",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Ötztal Valley",
-                "stop_id": "otztal-valley",
-                "detail": "A region that enchants in both summer and winter – welcome to the Ötztal Valley . A place where the mountains push your limits while offering a profound sense of freedom. In summer, immerse yourself in the breathtaking natural beauty along over 1,600 km of hiking trails and 860 km of bike routes . Towering three-thousand-metre peaks provide a backdrop that amazes even seasoned adventurers. Highlights like the impressive Stuiben Falls and the thermal baths of Aqua Dome perfectly blend relaxation with action."
+                "name": "Stuiben Falls",
+                "stop_id": "otztal-valley--s1",
+                "detail": "Highlights like the impressive Stuiben Falls and the thermal baths of Aqua Dome perfectly blend relaxation with action."
+              },
+              {
+                "name": "Ötzi Village",
+                "stop_id": "otztal-valley--s9",
+                "detail": "Umhausen : Features the Stuiben Falls, Tirol’s highest waterfall, and the Ötzi Village."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Ötztal Valley before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Längenfeld Wellness and Nature Learning",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Aqua Dome",
+                "stop_id": "otztal-valley--s2",
+                "detail": "Längenfeld : Home to the Aqua Dome, a large thermal spa."
+              },
+              {
+                "name": "Windachtal",
+                "stop_id": "otztal-valley--s3",
+                "detail": "Nature takes centre stage in the Ötztal Nature Park: glacier worlds in the quiet zones of the Ötztal and Stubai Alps, rustic Swiss pine forests in the Windachtal, and the towering Engelswand near Umhausen, home to rare flora and fauna."
+              },
+              {
+                "name": "Wildspitze",
+                "stop_id": "otztal-valley--s7",
+                "detail": "The highest mountain in the Ötztal is the Wildspitze, standing at 3,768 metres above sea level."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Ötztal Valley before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "High Alpine Roads and Valley Entrances",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Timmelsjoch High Alpine Road",
+                "stop_id": "otztal-valley--s8",
+                "detail": "Obergurgl : Famous for the Timmelsjoch High Alpine Road and alpine activities."
+              },
+              {
+                "name": "Lake Piburg",
+                "stop_id": "otztal-valley--s5",
+                "detail": "At Lake Piburg, shimmering waters contrast with dramatic rockfall scenery, while the Naturpark House in Längenfeld offers a multimedia experience of the natural world."
+              },
+              {
+                "name": "AREA 47",
+                "stop_id": "otztal-valley--s10",
+                "detail": "Thrill-seekers can try canyoning , rafting , or climbing in the AREA 47 outdoor park ."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Ötztal Valley before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +133,8 @@
             "url": "https://www.austria.info/en-gb/regions/oetztal/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:49:12.312795+00:00"
       }
     }
   }

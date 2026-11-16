@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Chasseral peak",
+      "quote": "The Chasseral peak rises to a height of 1,606 metres and offers breathtaking 360° panoramic views.",
+      "english": "The Chasseral peak rises to a height of 1,606 metres and offers breathtaking 360° panoramic views."
+    },
+    {
+      "id": "s2",
+      "name": "antenna of the Chasseral",
+      "quote": "The bravest will embark on the adventure of reaching the antenna of the Chasseral via the Combe-Grède nature reserve, a strenuous climb involving ladders to reach the final destination.",
+      "english": "The bravest will embark on the adventure of reaching the antenna of the Chasseral via the Combe-Grède nature reserve, a strenuous climb involving ladders to reach the final destination."
+    },
+    {
+      "id": "s3",
+      "name": "Combe-Grède nature reserve",
+      "quote": "The bravest will embark on the adventure of reaching the antenna of the Chasseral via the Combe-Grède nature reserve, a strenuous climb involving ladders to reach the final destination.",
+      "english": "The bravest will embark on the adventure of reaching the antenna of the Chasseral via the Combe-Grède nature reserve, a strenuous climb involving ladders to reach the final destination."
+    },
+    {
+      "id": "s4",
+      "name": "Nordic Centre in Les Prés-d'Orvin",
+      "quote": "In winter, the Chasseral is the ideal place for cross-country skiing on the trails of the Nordic Centre in Les Prés-d'Orvin.",
+      "english": "In winter, the Chasseral is the ideal place for cross-country skiing on the trails of the Nordic Centre in Les Prés-d'Orvin."
+    },
+    {
+      "id": "s5",
+      "name": "Ridge trail to the Chasseral",
+      "quote": "Learn more about: Nods Ridge trail to the Chasseral",
+      "english": "Learn more about: Nods Ridge trail to the Chasseral"
+    },
+    {
+      "id": "s6",
+      "name": "Sculpture Trail on Mont Sujet",
+      "quote": "Learn more about: Nods Sculpture Trail on Mont Sujet",
+      "english": "Learn more about: Nods Sculpture Trail on Mont Sujet"
+    },
+    {
+      "id": "s7",
+      "name": "Lamboing Botanical trail",
+      "quote": "Learn more about: Lamboing Botanical trail",
+      "english": "Learn more about: Lamboing Botanical trail"
+    },
+    {
+      "id": "s8",
+      "name": "Sculptures walking trail",
+      "quote": "Learn more about: Lamboing Sculptures walking trail",
+      "english": "Learn more about: Lamboing Sculptures walking trail"
+    },
+    {
+      "id": "s9",
+      "name": "Historical trail",
+      "quote": "Learn more about: Prêles Historical trail",
+      "english": "Learn more about: Prêles Historical trail"
+    }
+  ],
+  "days": [
+    {
+      "title": "Chasseral Summit and Reserve",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Nods High Ridges and Winter Sports",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Lamboing and Prêles Educational Walks",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ]
+}

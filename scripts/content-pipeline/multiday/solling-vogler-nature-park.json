@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Weser river valley",
+      "quote": "As part of the Weser Uplands, this walking region offers the best of both worlds: bordered by the romantic Weser river valley and dotted with picturesque towns and villages, it rises into a dramatic low mountain landscape with rugged cliffs and sweeping views.",
+      "english": "As part of the Weser Uplands, this walking region offers the best of both worlds: bordered by the romantic Weser river valley and dotted with picturesque towns and villages, it rises into a dramatic low mountain landscape with rugged cliffs and sweeping views."
+    },
+    {
+      "id": "s2",
+      "name": "Weser Uplands Route (Weserbergland-Weg)",
+      "quote": "Two long-distance routes, the Weser Uplands Route (Weserbergland-Weg) and the Ith-Hils-Weg , complete the walking experience, ensuring there’s something for everyone.",
+      "english": "Two long-distance routes, the Weser Uplands Route (Weserbergland-Weg) and the Ith-Hils-Weg , complete the walking experience, ensuring there’s something for everyone."
+    },
+    {
+      "id": "s3",
+      "name": "Ith-Hils-Weg",
+      "quote": "Two long-distance routes, the Weser Uplands Route (Weserbergland-Weg) and the Ith-Hils-Weg , complete the walking experience, ensuring there’s something for everyone.",
+      "english": "Two long-distance routes, the Weser Uplands Route (Weserbergland-Weg) and the Ith-Hils-Weg , complete the walking experience, ensuring there’s something for everyone."
+    },
+    {
+      "id": "s4",
+      "name": "Solling-Vogler Nature Park",
+      "quote": "Narrow ridges, steep slopes and deeply carved valleys, interspersed with traditional orchards and dry grasslands lined with hedgerows: the Solling-Vogler Nature Park , at the heart of the Weser Uplands, offers a rich and varied landscape full of discovery.",
+      "english": "Narrow ridges, steep slopes and deeply carved valleys, interspersed with traditional orchards and dry grasslands lined with hedgerows: the Solling-Vogler Nature Park , at the heart of the Weser Uplands, offers a rich and varied landscape full of discovery."
+    },
+    {
+      "id": "s5",
+      "name": "Wildpark-Haus",
+      "quote": "At the Wildpark-Haus , you can explore a range of fascinating topics in an interactive exhibition, including the diverse habitats found in the Solling.",
+      "english": "At the Wildpark-Haus , you can explore a range of fascinating topics in an interactive exhibition, including the diverse habitats found in the Solling."
+    },
+    {
+      "id": "s6",
+      "name": "Neuhaus Wildlife Park",
+      "quote": "Our tip: Visit the Neuhaus Wildlife Park next door, where native wildlife can be observed in naturalistic enclosures.",
+      "english": "Our tip: Visit the Neuhaus Wildlife Park next door, where native wildlife can be observed in naturalistic enclosures."
+    },
+    {
+      "id": "s7",
+      "name": "Solling",
+      "quote": "At the Wildpark-Haus , you can explore a range of fascinating topics in an interactive exhibition, including the diverse habitats found in the Solling.",
+      "english": "At the Wildpark-Haus , you can explore a range of fascinating topics in an interactive exhibition, including the diverse habitats found in the Solling."
+    }
+  ],
+  "days": [
+    {
+      "title": "Rivers and Long Trails",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Nature Park Explorations",
+      "stop_ids": [
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Wildlife and Exhibitions",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

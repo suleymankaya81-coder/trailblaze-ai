@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Windhain",
+      "quote": "Genau auf der Grenze dazwischen befindet sich mit dem Berg Windhain 629,3 m ü. NHN der höchste Punkt des Naturparks Rhein-Taunus.",
+      "english": "Exactly on the border between them is the mountain Windhain at 629.3 m above sea level, the highest point of the Rhine-Taunus Nature Park."
+    },
+    {
+      "id": "s2",
+      "name": "Wispertal",
+      "quote": "Entsprechend finden sich Zeichen geologischer Aktivitäten wie zahlreiche mehr oder weniger warme bis heiße Quellen („Sauerbrunnen“ oder „Kochbrunnen“) in den Tälern von Wisper, Aar und Rhein, sowie eine regelmäßige seismische Aktivität.",
+      "english": "Accordingly, signs of geological activity can be found, such as numerous more or less warm to hot springs (\"Sauerbrunnen\" or \"Kochbrunnen\") in the valleys of the Wisper, Aar and Rhine, as well as regular seismic activity."
+    },
+    {
+      "id": "s3",
+      "name": "Kloster Eberbach",
+      "quote": "Dieser Westen des Naturparks mit Einschluss der Weinbauortschaften Lorchhausen, Lorch und Rauenthal sowie des Klosters Eberbach gehört dem Rheingau zu.",
+      "english": "This western part of the nature park, including the wine-growing villages of Lorchhausen, Lorch and Rauenthal as well as the Eberbach Abbey, belongs to the Rheingau."
+    },
+    {
+      "id": "s4",
+      "name": "Rheinsteig",
+      "quote": "Im Naturpark gibt es derzeit rund 400 km zertifizierte Premium- oder Qualitätswanderwege; genannt seien: Rheinsteig, Wispertalsteig, Limeserlebnispfad, Via Mattiacorum.",
+      "english": "In the nature park there are currently around 400 km of certified premium or quality hiking trails; to be mentioned are: Rheinsteig, Wispertalsteig, Limes Experience Trail, Via Mattiacorum."
+    },
+    {
+      "id": "s5",
+      "name": "Wispertalsteig",
+      "quote": "Im Naturpark gibt es derzeit rund 400 km zertifizierte Premium- oder Qualitätswanderwege; genannt seien: Rheinsteig, Wispertalsteig, Limeserlebnispfad, Via Mattiacorum.",
+      "english": "In the nature park there are currently around 400 km of certified premium or quality hiking trails; to be mentioned are: Rheinsteig, Wispertalsteig, Limes Experience Trail, Via Mattiacorum."
+    },
+    {
+      "id": "s6",
+      "name": "Limeserlebnispfad",
+      "quote": "Im Naturpark gibt es derzeit rund 400 km zertifizierte Premium- oder Qualitätswanderwege; genannt seien: Rheinsteig, Wispertalsteig, Limeserlebnispfad, Via Mattiacorum.",
+      "english": "In the nature park there are currently around 400 km of certified premium or quality hiking trails; to be mentioned are: Rheinsteig, Wispertalsteig, Limes Experience Trail, Via Mattiacorum."
+    },
+    {
+      "id": "s7",
+      "name": "Hallgarter Zange",
+      "quote": "Bekanntes Ausflugsziel ist z. B. oberhalb des Rheingaus die 580 m hohe Hallgarter Zange als Aussichtspunkt nach Süden.",
+      "english": "A well-known excursion destination is, for example, the 580 m high Hallgarter Zange above the Rheingau as a viewpoint to the south."
+    }
+  ],
+  "days": [
+    {
+      "title": "Eastern Peaks and Valleys",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Rheingau Culture and Trails",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "West Taunus Discovery Paths",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Staubbachfall",
+      "quote": "Its landmark is the Staubbachfall: see how it cascades 300 metres over the vertical rock face.",
+      "english": "Its landmark is the Staubbachfall: see how it cascades 300 metres over the vertical rock face."
+    },
+    {
+      "id": "s2",
+      "name": "Trümmelbachfälle",
+      "quote": "The Trümmelbachfälle also lets you feel the tremendous energy of the water: the glacier water thunders through a labyrinth of rocks inside the mountain.",
+      "english": "The Trümmelbachfälle also lets you feel the tremendous energy of the water: the glacier water thunders through a labyrinth of rocks inside the mountain."
+    },
+    {
+      "id": "s3",
+      "name": "Mürrenbachfall",
+      "quote": "The Mürrenbachfall, which plunges 750 meters into the depths in five cascades, is a mighty sight.",
+      "english": "The Mürrenbachfall, which plunges 750 meters into the depths in five cascades, is a mighty sight."
+    },
+    {
+      "id": "s4",
+      "name": "Wengen",
+      "quote": "Then the best photo spot can be found in the car-free postcard village Wengen.",
+      "english": "Then the best photo spot can be found in the car-free postcard village Wengen."
+    },
+    {
+      "id": "s5",
+      "name": "Männlichen",
+      "quote": "The trip up to the Männlichen is worth the ride alone – on the roof of the cable car.",
+      "english": "The trip up to the Männlichen is worth the ride alone – on the roof of the cable car."
+    },
+    {
+      "id": "s6",
+      "name": "Mürren",
+      "quote": "From Mürren the cable car takes you up to Schilthorn with its revolving restaurant Piz Gloria.",
+      "english": "From Mürren the cable car takes you up to Schilthorn with its revolving restaurant Piz Gloria."
+    },
+    {
+      "id": "s7",
+      "name": "Schilthorn",
+      "quote": "Swiss skyline with revolving restaurant",
+      "english": "Swiss skyline with revolving restaurant"
+    },
+    {
+      "id": "s8",
+      "name": "Kleine Scheidegg",
+      "quote": "Depending on what takes your fancy at the time, either take the cogwheel railway to Kleine Scheidegg or the cable car to Mürren.",
+      "english": "Depending on what takes your fancy at the time, either take the cogwheel railway to Kleine Scheidegg or the cable car to Mürren."
+    }
+  ],
+  "days": [
+    {
+      "title": "Waterfalls of the Valley",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Wengen Peaks and Heights",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s8"
+      ]
+    },
+    {
+      "title": "Mürren Skyline Experience",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Weißachtal",
+      "quote": "In the forest of the Weißachtal hundreds of birds make the forest come alive with their songs.",
+      "english": "In the forest of the Weißachtal hundreds of birds make the forest come alive with their songs."
+    },
+    {
+      "id": "s2",
+      "name": "Balderschwang",
+      "quote": "The people of Balderschwang call their home \"Bavarian Siberia\".",
+      "english": "The people of Balderschwang call their home \"Bavarian Siberia\"."
+    },
+    {
+      "id": "s3",
+      "name": "Riedberger Horn",
+      "quote": "North of the pass rises the Riedberger Horn, which, with snow guaranteed until spring, is popular among alpine skiers and ski tourers.",
+      "english": "North of the pass rises the Riedberger Horn, which, with snow guaranteed until spring, is popular among alpine skiers and ski tourers."
+    },
+    {
+      "id": "s4",
+      "name": "old yew tree in Balderschwang",
+      "quote": "The old yew tree in Balderschwang is said to have been standing here for up to 2,000 years.",
+      "english": "The old yew tree in Balderschwang is said to have been standing here for up to 2,000 years."
+    },
+    {
+      "id": "s5",
+      "name": "path of the old trees",
+      "quote": "There you will find the path of the old trees, where one veteran tree follows the next.",
+      "english": "There you will find the path of the old trees, where one veteran tree follows the next."
+    },
+    {
+      "id": "s6",
+      "name": "Riedberg",
+      "quote": "The Riedberg is Germany's highest road pass.",
+      "english": "The Riedberg is Germany's highest road pass."
+    },
+    {
+      "id": "s7",
+      "name": "Ostertaltobeln",
+      "quote": "Indeed, this is also evident in the Ostertaltobeln, which can only be visited in winter in the company of the rangers.",
+      "english": "Indeed, this is also evident in the Ostertaltobeln, which can only be visited in winter in the company of the rangers."
+    },
+    {
+      "id": "s8",
+      "name": "Gunzesrieder Valley",
+      "quote": "The Gunzesrieder Valley lies in the middle of the nature park.",
+      "english": "The Gunzesrieder Valley lies in the middle of the nature park."
+    },
+    {
+      "id": "s9",
+      "name": "Siplinger Kopf",
+      "quote": "A popular Nagelfluh peak and also the highest point is the Siplinger Kopf.",
+      "english": "A popular Nagelfluh peak and also the highest point is the Siplinger Kopf."
+    },
+    {
+      "id": "s10",
+      "name": "AlpSeeHaus",
+      "quote": "We end our tour where all the water comes together, near Immenstadt at the Nagelfluhkette Nature Park Centre, also known as the \"AlpSeeHaus\".",
+      "english": "We end our tour where all the water comes together, near Immenstadt at the Nagelfluhkette Nature Park Centre, also known as the \"AlpSeeHaus\"."
+    },
+    {
+      "id": "s11",
+      "name": "Big Alpsee",
+      "quote": "It is beautifully situated on the Big Alpsee, the largest natural lake in the Allgäu.",
+      "english": "It is beautifully situated on the Big Alpsee, the largest natural lake in the Allgäu."
+    }
+  ],
+  "days": [
+    {
+      "title": "Ancient Trees and Peaks of Balderschwang",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s5",
+        "s9"
+      ]
+    },
+    {
+      "title": "High Passes and Winter Valleys",
+      "stop_ids": [
+        "s6",
+        "s3",
+        "s1",
+        "s7"
+      ]
+    },
+    {
+      "title": "Nature Centers and Lowland Waters",
+      "stop_ids": [
+        "s10",
+        "s11",
+        "s8"
+      ]
+    }
+  ]
+}

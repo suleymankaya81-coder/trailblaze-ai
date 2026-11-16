@@ -1,0 +1,91 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lake Geneva",
+      "quote": "Lake Geneva (known in French as Lac Léman) is located in the southwest of Switzerland in the cantons of Vaud, Geneva and Valais.",
+      "english": "Lake Geneva (known in French as Lac Léman) is located in the southwest of Switzerland in the cantons of Vaud, Geneva and Valais."
+    },
+    {
+      "id": "s2",
+      "name": "Jet d’eau",
+      "quote": "Geneva UN headquarters and the Jet d’eau",
+      "english": "Geneva UN headquarters and the Jet d’eau"
+    },
+    {
+      "id": "s3",
+      "name": "Lavaux",
+      "quote": "Enjoy a cruise or take a stroll through the vineyard terraces of Lavaux.",
+      "english": "Enjoy a cruise or take a stroll through the vineyard terraces of Lavaux."
+    },
+    {
+      "id": "s4",
+      "name": "Chillon Castle",
+      "quote": "The most visited historical monument in Switzerland, the castle is known for its mystical beauty.",
+      "english": "The most visited historical monument in Switzerland, the castle is known for its mystical beauty."
+    },
+    {
+      "id": "s5",
+      "name": "Mont-Pèlerin",
+      "quote": "The winegrowing area of Lavaux with its charming winegrowing villages is a well known attraction, as are the mountains of Mont-Pèlerin and Rochers-de-Naye.",
+      "english": "The winegrowing area of Lavaux with its charming winegrowing villages is a well known attraction, as are the mountains of Mont-Pèlerin and Rochers-de-Naye."
+    },
+    {
+      "id": "s6",
+      "name": "Rochers-de-Naye",
+      "quote": "Montreux - Rochers-de-Naye cogwheel railroad Mountain and lake panorama",
+      "english": "Montreux - Rochers-de-Naye cogwheel railroad Mountain and lake panorama"
+    },
+    {
+      "id": "s7",
+      "name": "Musée du Léman",
+      "quote": "A tsunami on Lake Geneva - Musée du Léman",
+      "english": "A tsunami on Lake Geneva - Musée du Léman"
+    },
+    {
+      "id": "s8",
+      "name": "Musée historique",
+      "quote": "Vevey Musée historique",
+      "english": "Vevey historical museum"
+    },
+    {
+      "id": "s9",
+      "name": "Alimentarium",
+      "quote": "Alimentarium - Food Museum Vevey",
+      "english": "Alimentarium - Food Museum Vevey"
+    },
+    {
+      "id": "s10",
+      "name": "CERN Science Gateway",
+      "quote": "Meyrin CERN Science Gateway",
+      "english": "Meyrin CERN Science Gateway"
+    }
+  ],
+  "days": [
+    {
+      "title": "Geneva City Sights and Science",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s10"
+      ]
+    },
+    {
+      "title": "Lavaux Vineyards and Montreux Riviera",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Lakeside Culture and Museums",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ]
+}

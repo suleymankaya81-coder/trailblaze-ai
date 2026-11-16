@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Geysir Museum",
+      "quote": "Your starting point is the museum visit in the interactive Geysir Museum.",
+      "english": "Your starting point is the museum visit in the interactive Geysir Museum."
+    },
+    {
+      "id": "s2",
+      "name": "KaffeeBar",
+      "quote": "Coffee, cake and views in the KaffeeBar",
+      "english": "Coffee, cake and views in the KaffeeBar"
+    },
+    {
+      "id": "s3",
+      "name": "museum shop",
+      "quote": "Discover beautiful and exciting things in the museum shop",
+      "english": "Discover beautiful and exciting things in the museum shop"
+    },
+    {
+      "id": "s4",
+      "name": "MS Namedy",
+      "quote": "Afterwards, the research vessel \" MS Namedy \" will take you on a relaxing trip across the Rhine to the Namedyer Werth peninsula a unique nature reserve.",
+      "english": "Afterwards, the research vessel \" MS Namedy \" will take you on a relaxing trip across the Rhine to the Namedyer Werth peninsula a unique nature reserve."
+    },
+    {
+      "id": "s5",
+      "name": "Namedyer Werth peninsula",
+      "quote": "Afterwards, the research vessel \" MS Namedy \" will take you on a relaxing trip across the Rhine to the Namedyer Werth peninsula a unique nature reserve.",
+      "english": "Afterwards, the research vessel \" MS Namedy \" will take you on a relaxing trip across the Rhine to the Namedyer Werth peninsula a unique nature reserve."
+    },
+    {
+      "id": "s6",
+      "name": "Geysir site",
+      "quote": "The boat trip and the visit to the Geysir site are barrier-free.",
+      "english": "The boat trip and the visit to the Geysir site are barrier-free."
+    },
+    {
+      "id": "s7",
+      "name": "geyser",
+      "quote": "The geyser experience at the end is just great.",
+      "english": "The geyser experience at the end is just great."
+    }
+  ],
+  "days": [
+    {
+      "title": "Museum and Visitor Center",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "River Transit and Peninsula Exploration",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Geyser Site Spectacle",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Ghiacciaio del Leone",
+      "quote": "l'origine glaciale delle conche è testimoniata dalla persistenza di alcuni residui di antichissimi ghiacciai, come il Ghiacciaio del Leone e il Ghiacciaio d'Aurona dall'alpe Veglia o il Ghiacciaio della Rossa dalla parte dell'alpe Devero.",
+      "english": "The glacial origin of the basins is evidenced by the persistence of some residues of ancient glaciers, such as the Leone Glacier and the Aurona Glacier from Alpe Veglia or the Rossa Glacier from the Alpe Devero side."
+    },
+    {
+      "id": "s2",
+      "name": "Monte Leone",
+      "quote": "L'Alpe Veglia a nord è cinta dal monte Helsenhorn (3.272 m s.l.m.), dal Monte Mottiscia (3.156 m s.l.m.) dal Monte Rebbio (3.192 m s.l.m.), dalla Punta d'Aurona (2.984 m s.l.m.), la Punta di Terrarossa (3.246 m s.l.m.) e dal Monte Leone (3.553 m s.l.m.).",
+      "english": "To the north, Alpe Veglia is surrounded by Mount Helsenhorn (3,272 m a.s.l.), Mount Mottiscia (3,156 m a.s.l.), Mount Rebbio (3,192 m a.s.l.), Punta d'Aurona (2,984 m a.s.l.), Punta di Terrarossa (3,246 m a.s.l.), and Mount Leone (3,553 m a.s.l.)."
+    },
+    {
+      "id": "s3",
+      "name": "Lago delle Streghe",
+      "quote": "Si trova una sorgente di acqua ferruginosa e il Lago delle Streghe.",
+      "english": "There is a ferruginous water spring and the Witches' Lake."
+    },
+    {
+      "id": "s4",
+      "name": "piana di Crampiolo",
+      "quote": "A sud del territorio del parco è stata istituita nel 1990 l'area contigua dell'Alpe Devero con una superficie di 2197 ettari e che comprende la piana di Devero, la piana di Crampiolo e la valle di Bondolero.",
+      "english": "To the south of the park territory, the contiguous area of Alpe Devero was established in 1990 with a surface area of 2197 hectares, which includes the Devero plain, the Crampiolo plain, and the Bondolero valley."
+    },
+    {
+      "id": "s5",
+      "name": "Lago di Devero",
+      "quote": "Al centro della velle Devero si trova il Lago di Devero, un lago artificiale costruito tra il 1908 e il 1924.",
+      "english": "In the center of the Devero valley lies Lake Devero, an artificial lake built between 1908 and 1924."
+    },
+    {
+      "id": "s6",
+      "name": "Pizzo Cervandone",
+      "quote": "L'Alpe Devero è anch'essa una conca di origine glaciale ed è cinta a nord dalla Punta d'Arbola (3.235 m s.l.m.), dall'Albrunhorn (2.840 m s.l.m., noto anche come Monte Figascian), dalla Punta di Valdeserta (2.939 m s.l.m.), dalla Punta della Rossa (2.888 m s.l.m.), dalla Punta Marani (3.108 m s.l.m.), dal Pizzo Cervandone (3.155 m s.l.m.) e dal Pizzo Cornera (3.083 m s.l.m.).",
+      "english": "Alpe Devero is also a basin of glacial origin and is surrounded to the north by Punta d'Arbola (3,235 m a.s.l.), Albrunhorn (2,840 m a.s.l., also known as Mount Figascian), Punta di Valdeserta (2,939 m a.s.l.), Punta della Rossa (2,888 m a.s.l.), Punta Marani (3,108 m a.s.l.), Pizzo Cervandone (3,155 m a.s.l.), and Pizzo Cornera (3,083 m a.s.l.)."
+    },
+    {
+      "id": "s7",
+      "name": "Monte Cazzola",
+      "quote": "In inverno sono disponibili impianti di risalita sul Monte Cazzola ma anche piste di sci di fondo e svariate passeggiate (da scegliere in base al proprio livello di esperienza) praticabili con sci d'alpinismo e racchette da neve.",
+      "english": "In winter, ski lifts are available on Mount Cazzola as well as cross-country ski trails and various walks (to be chosen based on one's experience level) practicable with ski mountaineering and snowshoes."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glaciers and Peaks of Alpe Veglia",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Lakes and Plains of Alpe Devero",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Winter Sports and High Summits",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

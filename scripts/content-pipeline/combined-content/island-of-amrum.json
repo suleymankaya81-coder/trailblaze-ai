@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Schleswig Holstein",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Amrum"
+        "Nebel",
+        "St.-Clemens-Kirche",
+        "Steenodde"
       ],
       "seo_title": "Island of Amrum Visit Guide"
     },
@@ -32,16 +34,67 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Island of Amrum",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Central Villages and History",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Amrum",
-                "stop_id": "island-of-amrum",
-                "detail": "Amrum (German pronunciation: [ˈamʁʊm] ; Öömrang North Frisian: Oomram) is one of the North Frisian Islands on the German North Sea coast, south of Sylt and west of Föhr. It is part of the Nordfriesland district in the federal state of Schleswig-Holstein and has approximately 2,300 inhabitants."
+                "name": "Nebel",
+                "stop_id": "island-of-amrum--s1",
+                "detail": "Nebel, located on the mudflat side, is today the largest village on the island."
+              },
+              {
+                "name": "St.-Clemens-Kirche",
+                "stop_id": "island-of-amrum--s2",
+                "detail": "The first houses of this new settlement clustered around St. Clemens Church, which had previously stood in the open field between Norddorf and Süddorf for two centuries."
+              },
+              {
+                "name": "Steenodde",
+                "stop_id": "island-of-amrum--s3",
+                "detail": "Steenodde, also a district of Nebel and located on the mudflat side, was for many years the island's only port until Wittdün replaced it as the most important ferry port."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Island of Amrum before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Southern Landmarks and Beach",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Wittdün",
+                "stop_id": "island-of-amrum--s4",
+                "detail": "The North Sea spa Wittdün is located at the southern tip of the island and is most significantly shaped by tourism."
+              },
+              {
+                "name": "Amrumer Leuchtturm",
+                "stop_id": "island-of-amrum--s5",
+                "detail": "The striking Amrum Lighthouse stands here, a few hundred meters west of the village of Wittdün."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Island of Amrum before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Northern Nature and Heights",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Norddorf",
+                "stop_id": "island-of-amrum--s7",
+                "detail": "The northernmost place on the island is the North Sea spa Norddorf."
+              },
+              {
+                "name": "A Siatler",
+                "stop_id": "island-of-amrum--s8",
+                "detail": "The highest elevation is the dune A Siatler (German: Setzerdüne) at 32 meters above sea level."
+              },
+              {
+                "name": "Amrum-Odde",
+                "stop_id": "island-of-amrum--s9",
+                "detail": "In the extreme northeast of the island lies the Amrum-Odde, which has not yet benefited from the development of the Kniepsand."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Island of Amrum before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +132,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Amrum"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Amrum"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:46:25.740681+00:00"
       }
     }
   }

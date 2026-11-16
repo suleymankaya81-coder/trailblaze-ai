@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "St. Wolfgang",
+      "quote": "Since 1964, St. Wolfgang has officially held the title of a climatic health resort.",
+      "english": "Since 1964, St. Wolfgang has officially held the title of a climatic health resort."
+    },
+    {
+      "id": "s2",
+      "name": "Schafberg Railway",
+      "quote": "Highlights include rides on the Schafberg Railway, boat trips between the lakeside villages, and swimming areas along the shore.",
+      "english": "Highlights include rides on the Schafberg Railway, boat trips between the lakeside villages, and swimming areas along the shore."
+    },
+    {
+      "id": "s3",
+      "name": "Schafberg",
+      "quote": "Geographically, Lake Wolfgangsee is situated in an idyllic alpine landscape, nestled between the Schafberg to the west and the Zwölferhorn to the east – two prominent mountains popular with families for outings.",
+      "english": "Geographically, Lake Wolfgangsee is situated in an idyllic alpine landscape, nestled between the Schafberg to the west and the Zwölferhorn to the east – two prominent mountains popular with families for outings."
+    },
+    {
+      "id": "s4",
+      "name": "St. Gilgen",
+      "quote": "In the birthplace of Wolfgang Amadeus Mozart’s mother and the home of his sister ‘Nannerl’, sophisticated chic meets lakeside living.",
+      "english": "In the birthplace of Wolfgang Amadeus Mozart’s mother and the home of his sister ‘Nannerl’, sophisticated chic meets lakeside living."
+    },
+    {
+      "id": "s5",
+      "name": "Ochsenkreuz",
+      "quote": "On a small island near Falkenstein in St. Gilgen stands the Ochsenkreuz, a historic wayside shrine linked to the legend of a butcher and his ox.",
+      "english": "On a small island near Falkenstein in St. Gilgen stands the Ochsenkreuz, a historic wayside shrine linked to the legend of a butcher and his ox."
+    },
+    {
+      "id": "s6",
+      "name": "Strobl",
+      "quote": "Sunbathing lawn in Strobl with trees, bathing jetty, playground, buffet and boat hire.",
+      "english": "Sunbathing lawn in Strobl with trees, bathing jetty, playground, buffet and boat hire."
+    },
+    {
+      "id": "s7",
+      "name": "Postalm",
+      "quote": "Around 12 kilometres above Strobl lies the Postalm, Austria's largest connected alpine pasture area.",
+      "english": "Around 12 kilometres above Strobl lies the Postalm, Austria's largest connected alpine pasture area."
+    }
+  ],
+  "days": [
+    {
+      "title": "Pilgrimage and Peaks in St. Wolfgang",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Culture and Legends in St. Gilgen",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Alps and Relaxation in Strobl",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

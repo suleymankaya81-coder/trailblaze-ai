@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Solothurn",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Naturpark Thal"
+        "Balsthal",
+        "Thalstation",
+        "Holzweg Thal"
       ],
       "seo_title": "Thal Nature Park Visit Guide"
     },
     "travel": {
       "slug": "thal-nature-park",
+      "overview_name": "Thal Nature Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Thal Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.naturparkthal.ch/en/",
@@ -31,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Thal Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Balsthal Arrival and Local Trails",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Naturpark Thal",
-                "stop_id": "thal-nature-park",
-                "detail": "Naturpark Thal offers a variety of exciting discoveries and experiences for adults and children: Hiking or biking through beautiful landscapes and on exciting theme trails, having a picnic at an open fire, enjoying fantastic views of the countryside, and much more."
+                "name": "Balsthal",
+                "stop_id": "thal-nature-park--s1",
+                "detail": "From the freeway exit Oensingen you will reach Balsthal in five minutes."
+              },
+              {
+                "name": "Thalstation",
+                "stop_id": "thal-nature-park--s2",
+                "detail": "At the information point \"Thalstation\" in Balsthal, we are happy to advise you on the best routes, excursions, and other activities in the region, complete with restaurant vouchers, hiking maps and much more."
+              },
+              {
+                "name": "Holzweg Thal",
+                "stop_id": "thal-nature-park--s3",
+                "detail": "Holzweg Thal: On this adventure trail you will experience forest and wood in a creative and playful way with your head, your hand, and your heart."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Thal Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "High Ridges and Gorges",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Jura Höhenweg",
+                "stop_id": "thal-nature-park--s4",
+                "detail": "Hike the Jura Höhenweg from Balsthal to the top of the Weissenstein mountain overlooking the city of Solothurn."
+              },
+              {
+                "name": "Wolfschlucht-Trail",
+                "stop_id": "thal-nature-park--s6",
+                "detail": "The Wolfschlucht-Trail will take you through deep ravines and show you the wild and romantic face of Naturpark Thal."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Thal Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +111,8 @@
             "url": "https://www.naturparkthal.ch/en/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:49:33.910038+00:00"
       }
     }
   }

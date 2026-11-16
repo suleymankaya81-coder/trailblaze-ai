@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Bern",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Lake Brienz"
+        "Brunngasse",
+        "Lake Brienz",
+        "Giessbach Falls"
       ],
       "seo_title": "Lake Brienz Visit Guide"
     },
     "travel": {
       "slug": "lake-brienz",
+      "overview_name": "Lake Brienz",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Lake Brienz before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.myswitzerland.com/en-ch/destinations/brienz/",
@@ -31,16 +34,49 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Lake Brienz",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Village Heritage and Lake Adventures",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
+                "name": "Brunngasse",
+                "stop_id": "lake-brienz--s4",
+                "detail": "Brunngasse, with its cobblestones and its wooden chalets decorated with flowers and carvings, is a must-see."
+              },
+              {
                 "name": "Lake Brienz",
-                "stop_id": "lake-brienz",
-                "detail": "Brienz looks like it could have been lifted straight out of a picture book. Be enchanted by the richly decorated wooden chalets in the village centre, by the glacier-blue lake and by the beautiful mountain backdrop. Discover Lake Brienz along with the Giessbach Falls and the Brienzer Rothorn."
+                "stop_id": "lake-brienz--s1",
+                "detail": "Discover Lake Brienz along with the Giessbach Falls and the Brienzer Rothorn."
+              },
+              {
+                "name": "Giessbach Falls",
+                "stop_id": "lake-brienz--s2",
+                "detail": "The top excursion destination on Lake Brienz is the Giessbach Falls: you travel by boat from Brienz to Giessbach station, and from there you’ll take the nostalgic funicular up to the Grandhotel Giessbach."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Brienz before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Mountain Peaks and Woodcarving Trails",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Brienzer Rothorn",
+                "stop_id": "lake-brienz--s3",
+                "detail": "Between June and October, experience a ride on the historic steam-powered cog railway to the Brienzer Rothorn."
+              },
+              {
+                "name": "Schnitzlerweg",
+                "stop_id": "lake-brienz--s5",
+                "detail": "You can also marvel at the art of wood carving on the Schnitzlerweg woodcarving trail on the Axalp above Brienz."
+              },
+              {
+                "name": "Hinterburgseeli",
+                "stop_id": "lake-brienz--s6",
+                "detail": "Perhaps with a detour to the enchanting Hinterburgseeli lake along the way."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Lake Brienz before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +116,8 @@
             "url": "https://www.myswitzerland.com/en-ch/destinations/brienz/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:46:40.419631+00:00"
       }
     }
   }

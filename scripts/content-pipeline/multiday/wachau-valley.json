@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Melk Abbey",
+      "quote": "Cultural highlights like castle ruins, Melk Abbey , and villages like Dürnstein and Weißenkirchen add to the area's calm, timeless appeal."
+    },
+    {
+      "id": "s2",
+      "name": "Melk",
+      "quote": "Notable places in the Wachau include: Melk : Known for the baroque Melk Abbey, one of Europe’s most impressive monastic buildings."
+    },
+    {
+      "id": "s3",
+      "name": "Spitz an der Donau",
+      "quote": "Spitz an der Donau : A charming wine village, famous for the Tausendeimerberg, a steeply terraced vineyard."
+    },
+    {
+      "id": "s4",
+      "name": "1000-Eimerberg",
+      "quote": "White wines thrive here, particularly on hillsides like the 1000-Eimerberg and the vineyards of Domäne Wachau."
+    },
+    {
+      "id": "s5",
+      "name": "Dürnstein",
+      "quote": "Dürnstein : Renowned for the ruins of Dürnstein Castle, where Richard the Lionheart was held captive in the Middle Ages."
+    },
+    {
+      "id": "s6",
+      "name": "Dürnstein Castle",
+      "quote": "Dürnstein : Renowned for the ruins of Dürnstein Castle, where Richard the Lionheart was held captive in the Middle Ages."
+    },
+    {
+      "id": "s7",
+      "name": "Weißenkirchen in der Wachau",
+      "quote": "Weißenkirchen in der Wachau : A wine-growing centre surrounded by terraced vineyards and historic churches."
+    },
+    {
+      "id": "s8",
+      "name": "Krems an der Donau",
+      "quote": "Krems an der Donau : One of Austria’s oldest cities, with a vibrant cultural scene, including museums and festivals."
+    },
+    {
+      "id": "s9",
+      "name": "Kunsthalle Krems",
+      "quote": "Highlights include the Danube Festival in Krems, the Glatt & Verkehrt Festival in Spitz, the Summer Plays in Melk, and the Kunsthalle Krems ."
+    }
+  ],
+  "days": [
+    {
+      "title": "Abbeys and Vineyards of Melk and Spitz",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Castles and Culture of Dürnstein and Krems",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ]
+}

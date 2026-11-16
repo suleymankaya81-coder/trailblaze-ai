@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lake Zurich",
+      "quote": "Discover the diversity of Zurich: From the old town to Bahnhofstrasse and Lake Zurich – experience the unique mix of city and nature.",
+      "english": "Discover the diversity of Zurich: From the old town to Bahnhofstrasse and Lake Zurich – experience the unique mix of city and nature."
+    },
+    {
+      "id": "s2",
+      "name": "Bahnhofstrasse",
+      "quote": "Discover the diversity of Zurich: From the old town to Bahnhofstrasse and Lake Zurich – experience the unique mix of city and nature.",
+      "english": "Discover the diversity of Zurich: From the old town to Bahnhofstrasse and Lake Zurich – experience the unique mix of city and nature."
+    },
+    {
+      "id": "s3",
+      "name": "Albis ridge",
+      "quote": "Enjoyable hike with superb views along the Albis ridge.",
+      "english": "Enjoyable hike with superb views along the Albis ridge."
+    },
+    {
+      "id": "s4",
+      "name": "Üetliberg",
+      "quote": "The trail follows the spectacular Albis mountain chain from the Üetliberg to the Albishorn before descending to Ebertswil, where the milk soup stone commemorates the Kappel milk soup of 1529.",
+      "english": "The trail follows the spectacular Albis mountain chain from the Üetliberg to the Albishorn before descending to Ebertswil, where the milk soup stone commemorates the Kappel milk soup of 1529."
+    },
+    {
+      "id": "s5",
+      "name": "Albishorn",
+      "quote": "The trail follows the spectacular Albis mountain chain from the Üetliberg to the Albishorn before descending to Ebertswil, where the milk soup stone commemorates the Kappel milk soup of 1529.",
+      "english": "The trail follows the spectacular Albis mountain chain from the Üetliberg to the Albishorn before descending to Ebertswil, where the milk soup stone commemorates the Kappel milk soup of 1529."
+    },
+    {
+      "id": "s6",
+      "name": "old town",
+      "quote": "Discover the diversity of Zurich: From the old town to Bahnhofstrasse and Lake Zurich – experience the unique mix of city and nature.",
+      "english": "Discover the diversity of Zurich: From the old town to Bahnhofstrasse and Lake Zurich – experience the unique mix of city and nature."
+    },
+    {
+      "id": "s7",
+      "name": "Zürich-Zugerland-Panoramaweg",
+      "quote": "The trail follows the spectacular Albis mountain chain from the Üetliberg to the Albishorn before descending to Ebertswil, where the milk soup stone commemorates the Kappel milk soup of 1529.",
+      "english": "The trail follows the spectacular Albis mountain chain from the Üetliberg to the Albishorn before descending to Ebertswil, where the milk soup stone commemorates the Kappel milk soup of 1529."
+    }
+  ],
+  "days": [
+    {
+      "title": "City Center and Lakeside Exploration",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s6"
+      ]
+    },
+    {
+      "title": "Albis Ridge Mountain Trails",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s7"
+      ]
+    }
+  ]
+}

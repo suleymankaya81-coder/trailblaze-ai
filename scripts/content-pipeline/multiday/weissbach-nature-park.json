@@ -1,0 +1,51 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Bergsteigerdorfes Weißbach",
+      "quote": "Im Naturparkgebiet des Bergsteigerdorfes Weißbach kommen alle Besucher:innen mit unterschiedlichen alpinistischen Interessen auf ihre Kosten.",
+      "english": "In the nature park area of the mountaineering village Weißbach, all visitors with different mountaineering interests get their money's worth."
+    },
+    {
+      "id": "s2",
+      "name": "Hirschbichl",
+      "quote": "Die Wanderung beginnt an einem geschichtsträchtigen Ausgangspunkt, dem Hirschbichl.",
+      "english": "The hike begins at a starting point steeped in history, the Hirschbichl."
+    },
+    {
+      "id": "s3",
+      "name": "Almgebiete",
+      "quote": "Die traditionell bewirtschafteten weitläufigen Almgebiete und die artenreichen Bergmähwiesen bringen naturkundliche Besonderheiten wie Frauenschuh , Türkenbund oder Apollofalter hervor.",
+      "english": "The traditionally managed, extensive alpine pasture areas and the species-rich mountain meadows produce natural history specialities such as lady's slipper, martagon lily or Apollo butterfly."
+    },
+    {
+      "id": "s4",
+      "name": "Pürzlbach",
+      "quote": "Der Naturpark hat ein Pflegemanagement für einige besonders bedeutsame Flächen in Pürzlbach erstellt.",
+      "english": "The nature park has created a maintenance management plan for several particularly significant areas in Pürzlbach."
+    },
+    {
+      "id": "s5",
+      "name": "Volksschule Weißbach",
+      "quote": "Anschließend konnten die 17 Schüler*innen der Volksschule das zuvor gewonnene Wissen beim Stationenbetrieb spielerisch vertiefen.",
+      "english": "Afterwards, the 17 students of the elementary school were able to playfully deepen the knowledge they had previously gained at station-based activities."
+    }
+  ],
+  "days": [
+    {
+      "title": "Village Heritage and Alpine Pastures",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s5"
+      ]
+    },
+    {
+      "title": "High Border Trails and Habitats",
+      "stop_ids": [
+        "s2",
+        "s4"
+      ]
+    }
+  ]
+}

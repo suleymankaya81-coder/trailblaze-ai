@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Mittersill National Park Centre",
+      "quote": "Starting points for adventures: Mittersill National Park Centre",
+      "english": "Starting points for adventures: Mittersill National Park Centre"
+    },
+    {
+      "id": "s2",
+      "name": "Mallnitz Visitor Centre",
+      "quote": "Starting points for adventures: Mallnitz Visitor Centre",
+      "english": "Starting points for adventures: Mallnitz Visitor Centre"
+    },
+    {
+      "id": "s3",
+      "name": "National Park House Matrei",
+      "quote": "Starting points for adventures: National Park House Matrei",
+      "english": "Starting points for adventures: National Park House Matrei"
+    },
+    {
+      "id": "s4",
+      "name": "Kaiser-Franz-Josefs-Höhe",
+      "quote": "Starting points for adventures: Kaiser-Franz-Josefs-Höhe",
+      "english": "Starting points for adventures: Kaiser-Franz-Josefs-Höhe"
+    },
+    {
+      "id": "s5",
+      "name": "Science Center Mittersill",
+      "quote": "Education centres: Science Center Mittersill",
+      "english": "Education centres: Science Center Mittersill"
+    },
+    {
+      "id": "s6",
+      "name": "House of Water",
+      "quote": "Education centres: House of Water",
+      "english": "Education centres: House of Water"
+    },
+    {
+      "id": "s7",
+      "name": "Großglockner",
+      "quote": "Pasterze mit Großglockner",
+      "english": "Pasterze with Grossglockner"
+    }
+  ],
+  "days": [
+    {
+      "title": "Adventures and Glaciers",
+      "stop_ids": [
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Mittersill Learning Centres",
+      "stop_ids": [
+        "s1",
+        "s5"
+      ]
+    },
+    {
+      "title": "Regional Education and Information",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s6"
+      ]
+    }
+  ]
+}

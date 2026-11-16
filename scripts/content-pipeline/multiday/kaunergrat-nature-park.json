@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Wazespitze",
+      "quote": "The valley lies at the foot of the Wazespitze (3,533 metres) - the highest mountain in the Kaunergrat - and offers exciting mountain tours as well as climbing routes of all levels of difficulty.",
+      "english": "The valley lies at the foot of the Wazespitze (3,533 metres) - the highest mountain in the Kaunergrat - and offers exciting mountain tours as well as climbing routes of all levels of difficulty."
+    },
+    {
+      "id": "s2",
+      "name": "glacier nature trail",
+      "quote": "The glacier nature trail reveals fascinating details about the glacier world and leads from the moraine (around 1850) to the Gepatschferner glacier gate.",
+      "english": "The glacier nature trail reveals fascinating details about the glacier world and leads from the moraine (around 1850) to the Gepatschferner glacier gate."
+    },
+    {
+      "id": "s3",
+      "name": "Gepatschferner glacier gate",
+      "quote": "The glacier nature trail reveals fascinating details about the glacier world and leads from the moraine (around 1850) to the Gepatschferner glacier gate.",
+      "english": "The glacier nature trail reveals fascinating details about the glacier world and leads from the moraine (around 1850) to the Gepatschferner glacier gate."
+    },
+    {
+      "id": "s4",
+      "name": "Piller Moor nature trail",
+      "quote": "The family-friendly hike along the largely barrier-free Piller Moor nature trail leads through exciting moorland to the peat cutting, where valuable peat was mined until the 1970s.",
+      "english": "The family-friendly hike along the largely barrier-free Piller Moor nature trail leads through exciting moorland to the peat cutting, where valuable peat was mined until the 1970s."
+    },
+    {
+      "id": "s5",
+      "name": "Nature Park House",
+      "quote": "Visitors can discover exciting exhibitions in the Nature Park House and experience the diverse nature on guided tours or on their own.",
+      "english": "Visitors can discover exciting exhibitions in the Nature Park House and experience the diverse nature on guided tours or on their own."
+    },
+    {
+      "id": "s6",
+      "name": "3000 m VERTIKAL",
+      "quote": "A highlight is the Kaunergrat Nature Park House with its interactive exhibition \"3000 m VERTIKAL\".",
+      "english": "A highlight is the Kaunergrat Nature Park House with its interactive exhibition \"3000 m VERTIKAL\"."
+    },
+    {
+      "id": "s7",
+      "name": "Kaunertal glacier hike",
+      "quote": "Themed hiking trails such as the Piller Moor nature trail and the Kaunertal glacier hike are particularly popular.",
+      "english": "Themed hiking trails such as the Piller Moor nature trail and the Kaunertal glacier hike are particularly popular."
+    },
+    {
+      "id": "s8",
+      "name": "upland moor in the Pillertal",
+      "quote": "The upland moor in the Pillertal, a small side valley of the Pitztal, in the centre of the Kaunergrat Nature Park, has fascinated visitors for thousands of years with its extraordinary flora and fauna.",
+      "english": "The upland moor in the Pillertal, a small side valley of the Pitztal, in the centre of the Kaunergrat Nature Park, has fascinated visitors for thousands of years with its extraordinary flora and fauna."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glaciers and High Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Nature Education and Exhibits",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Moorland Discovery",
+      "stop_ids": [
+        "s4",
+        "s8"
+      ]
+    }
+  ]
+}

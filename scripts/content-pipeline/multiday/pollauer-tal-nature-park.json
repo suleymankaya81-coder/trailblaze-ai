@@ -1,0 +1,32 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Schloss 1",
+      "quote": "Tourismusverband Oststeiermark | Geschäftstelle Naturpark Pöllauer Tal | Schloss 1 | 8225 Pöllau T: +43 3335 4210 E: naturpark-poellauertal@oststeiermark.com W: www.naturpark-poellauertal.at",
+      "english": "East Styria Tourism Association | Pöllauer Tal Nature Park Office | Castle 1 | 8225 Pöllau T: +43 3335 4210 E: naturpark-poellauertal@oststeiermark.com W: www.naturpark-poellauertal.at"
+    },
+    {
+      "id": "s2",
+      "name": "Kulturzentrum Ebersdorf",
+      "quote": "Am Mittwoch, 22. April 2026 um 19 Uhr findet im Kulturzentrum Ebersdorf (8273 Ebersdorf 222) eine kostenlose Informationsveranstaltung statt.",
+      "english": "On Wednesday, April 22, 2026 at 7 p.m., a free information event will take place at the Ebersdorf Cultural Center (8273 Ebersdorf 222)."
+    },
+    {
+      "id": "s3",
+      "name": "Pircherhof",
+      "quote": "Pircherhof...",
+      "english": "Pircherhof..."
+    }
+  ],
+  "days": [
+    {
+      "title": "Local Culture and Regional Centers",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ]
+}

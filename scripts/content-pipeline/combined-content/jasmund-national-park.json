@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Mecklenburg Vorpommern",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Nationalpark Jasmund"
+        "Buchenwälder",
+        "Piekberg",
+        "Wanderrouten"
       ],
       "seo_title": "Jasmund National Park Visit Guide"
     },
     "travel": {
       "slug": "jasmund-national-park",
+      "overview_name": "Jasmund National Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Jasmund National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.nationalpark-jasmund.de/",
@@ -31,16 +34,49 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Jasmund National Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Forest Peaks and Hiking Trails",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Nationalpark Jasmund",
-                "stop_id": "jasmund-national-park",
-                "detail": "With its shiny-slimy skin, the beech mucilage catches the eye and also reveals the rangers where special care is required in the Jasmund National Park."
+                "name": "Buchenwälder",
+                "stop_id": "jasmund-national-park--s1",
+                "detail": "The largest beech forests on the Baltic coast stretch here over hills and stream valleys, enclosing sparse moors and springs."
+              },
+              {
+                "name": "Piekberg",
+                "stop_id": "jasmund-national-park--s4",
+                "detail": "high is the highest elevation, the Piekberg"
+              },
+              {
+                "name": "Wanderrouten",
+                "stop_id": "jasmund-national-park--s7",
+                "detail": "Discover the wild nature along selected hiking routes"
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Jasmund National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Chalk Coast and Visitor Centers",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Kreideküste",
+                "stop_id": "jasmund-national-park--s3",
+                "detail": "At the famous white chalk coast, shady green forests meet the blue of the sea."
+              },
+              {
+                "name": "Nationalpark-Zentrum KÖNIGSSTUHL",
+                "stop_id": "jasmund-national-park--s5",
+                "detail": "The National Park Centre KÖNIGSSTUHL invites you to a varied program from October 12th to 30th."
+              },
+              {
+                "name": "UNESCO-Welterbeforum Waldhalle",
+                "stop_id": "jasmund-national-park--s6",
+                "detail": "On September 27th from 12 p.m. to 4 p.m., the forest festival at the UNESCO World Heritage Forum Waldhalle invites you to live music, hands-on activities, and stick bread."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Jasmund National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +116,8 @@
             "url": "https://www.nationalpark-jasmund.de/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:46:42.309677+00:00"
       }
     }
   }

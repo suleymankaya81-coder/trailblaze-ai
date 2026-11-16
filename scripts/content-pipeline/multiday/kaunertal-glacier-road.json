@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hinteres Kaunertal",
+      "quote": "As a result of the retreating glacier, a unique natural landscape has opened up in Hinteres Kaunertal (rear Kauner Valley), which to the attentive visitor becomes an ever-changing natural spectacle.",
+      "english": "As a result of the retreating glacier, a unique natural landscape has opened up in the rear Kauner Valley, which becomes an ever-changing natural spectacle for the attentive visitor."
+    },
+    {
+      "id": "s2",
+      "name": "Kaunergrat Nature Park",
+      "quote": "The Kaunergrat Nature Park covers an area of 58,920 hectares and extends over the Kaunergrat and the two neighboring valleys Pitztal and Kaunertal.",
+      "english": "The Kaunergrat Nature Park covers an area of 58,920 hectares and extends over the Kaunergrat and the two neighboring valleys Pitztal and Kaunertal."
+    },
+    {
+      "id": "s3",
+      "name": "Gepatschferner",
+      "quote": "A varied journey from the valley floor up to the glacier ice of the Gepatschferner and Weißseeferner.",
+      "english": "A varied journey from the valley floor up to the glacier ice of the Gepatschferner and Weißseeferner."
+    },
+    {
+      "id": "s4",
+      "name": "Weißseeferner",
+      "quote": "A varied journey from the valley floor up to the glacier ice of the Gepatschferner and Weißseeferner.",
+      "english": "A varied journey from the valley floor up to the glacier ice of the Gepatschferner and Weißseeferner."
+    },
+    {
+      "id": "s5",
+      "name": "Falginjoch",
+      "quote": "The road leads up to the edge of the glacier at 2,750 meters and from there you can take the gondola to hover over the glacier field and get to the Falginjoch at over 3,100 meters to enjoy a panoramic view of the Italian and Swiss Alps.",
+      "english": "The road leads up to the edge of the glacier at 2,750 meters and from there you can take the gondola to hover over the glacier field and get to the Falginjoch at over 3,100 meters to enjoy a panoramic view of the Italian and Swiss Alps."
+    },
+    {
+      "id": "s6",
+      "name": "Schnapsloch",
+      "quote": "Motorcyclists love the density of serpentines in the Schnapsloch while enjoying the ride through the mountainous landscape.",
+      "english": "Motorcyclists love the density of serpentines in the Schnapsloch while enjoying the ride through the mountainous landscape."
+    },
+    {
+      "id": "s7",
+      "name": "Fendels Summer Mountain",
+      "quote": "Mountaincarting at Fendels Summer Mountain Here Find & book accommodation find & book Give joy with our voucher world Online voucher Events in Kaunertal Discover",
+      "english": "Mountaincarting at Fendels Summer Mountain - Find and book accommodation here, give joy with our voucher world, discover events in Kaunertal."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glacier Heights and Peaks",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Nature Park and Valley Views",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Mountain Curves and Recreation",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

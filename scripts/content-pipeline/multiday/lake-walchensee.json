@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Walchensee",
+      "quote": "Walchensee (lake) is also called the \"Bavarian Caribbean\", because of its turquoise-green water.",
+      "english": "Walchensee (lake) is also called the \"Bavarian Caribbean\", because of its turquoise-green water."
+    },
+    {
+      "id": "s2",
+      "name": "Einsiedl",
+      "quote": "The villages of Walchensee, Einsiedl, Urfeld and Zwergern lie directly on the shore of the lake.",
+      "english": "The villages of Walchensee, Einsiedl, Urfeld and Zwergern lie directly on the shore of the lake."
+    },
+    {
+      "id": "s3",
+      "name": "Urfeld",
+      "quote": "One of the most tranquil places on the lake is the traffic-free eastern shore between Urfeld and Niedernach.",
+      "english": "One of the most tranquil places on the lake is the traffic-free eastern shore between Urfeld and Niedernach."
+    },
+    {
+      "id": "s4",
+      "name": "Zwergern",
+      "quote": "The Zwergern Walchensee peninsula offers another great swimming opportunity – and a magnificent view of the mountains and villages.",
+      "english": "The Zwergern Walchensee peninsula offers another great swimming opportunity – and a magnificent view of the mountains and villages."
+    },
+    {
+      "id": "s5",
+      "name": "Jochberg",
+      "quote": "The mountains around Walchensee are among Munich's most popular landmarks– such as the Jochberg (1,565 m).",
+      "english": "The mountains around Walchensee are among Munich's most popular landmarks– such as the Jochberg (1,565 m)."
+    },
+    {
+      "id": "s6",
+      "name": "Jocheralm",
+      "quote": "From the top, you have a magnificent view of Kochelsee and Walchensee (lakes), and you can stop for a snack at Jocheralm.",
+      "english": "From the top, you have a magnificent view of Kochelsee and Walchensee (lakes), and you can stop for a snack at Jocheralm."
+    },
+    {
+      "id": "s7",
+      "name": "Herzogstand",
+      "quote": "Maybe the Herzogstand (mountain) (1,731 m) is an even more popular destination – especially because of the Herzogstand cable car.",
+      "english": "Maybe the Herzogstand (mountain) (1,731 m) is an even more popular destination – especially because of the Herzogstand cable car."
+    },
+    {
+      "id": "s8",
+      "name": "Herzogstand mountain inn",
+      "quote": "But you can also just sit on the terrace of the Herzogstand mountain inn and enjoy the picturesque view of the surrounding lakes and the Karwendel mountains.",
+      "english": "But you can also just sit on the terrace of the Herzogstand mountain inn and enjoy the picturesque view of the surrounding lakes and the Karwendel mountains."
+    }
+  ],
+  "days": [
+    {
+      "title": "Shoreline Villages and Beaches",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Jochberg Ascent and Alpine Snacks",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Herzogstand Summit and Panoramic Views",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

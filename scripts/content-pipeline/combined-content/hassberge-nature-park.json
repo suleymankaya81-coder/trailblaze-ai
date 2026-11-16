@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Bavaria",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Hassberge"
+        "Ritterkapelle",
+        "Abt-Degen-Weintal Valley",
+        "Zeil am Main"
       ],
       "seo_title": "Hassberge Nature Park Visit Guide"
     },
     "travel": {
       "slug": "hassberge-nature-park",
+      "overview_name": "Hassberge Nature Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Hassberge Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://bavaria.travel/stories/gravel-biking-hassberge-nature-park/",
@@ -31,16 +34,72 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Hassberge Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Towns and Valleys of the South",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Hassberge",
-                "stop_id": "hassberge-nature-park",
-                "detail": "Nature park Hassberge is considered a gravel biking paradise. The region is perfectly suited to these all-terrain road bikes: on gravel tracks, paved sections or root-covered paths, the route winds up and down hills to castles, half-timbered architecture, craft beer and Franconian wine."
+                "name": "Ritterkapelle",
+                "stop_id": "hassberge-nature-park--s1",
+                "detail": "But for the market square and the Ritterkapelle, rising more than 17 metres high, we barely spare them a glance at the moment."
+              },
+              {
+                "name": "Abt-Degen-Weintal Valley",
+                "stop_id": "hassberge-nature-park--s2",
+                "detail": "Abt-Degen-Weintal Valley: below flows the River Main, above it is gravel biker sweat"
+              },
+              {
+                "name": "Zeil am Main",
+                "stop_id": "hassberge-nature-park--s3",
+                "detail": "We only unclip again when we roll into the half-timbered town of Zeil am Main and marvel at the coexistence of beer and wine."
+              },
+              {
+                "name": "Zeiler Käppele",
+                "stop_id": "hassberge-nature-park--s4",
+                "detail": "We head through them – uff, why is there no e-gravel bike? – steeply uphill to the pilgrimage church of Zeiler Käppele."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Hassberge Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "The Historic High Ridge Route",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Gutshof Andres",
+                "stop_id": "hassberge-nature-park--s6",
+                "detail": "This is also the case on the way to Gutshof Andres, where Bernd Andres has earned a Michelin mention for his cooking, with fish as his speciality."
+              },
+              {
+                "name": "Königsberg",
+                "stop_id": "hassberge-nature-park--s9",
+                "detail": "To get there, we speed along the Rennweg until we reach one of the few connecting roads and then hurtle downhill towards Königsberg at speeds of over 60 kilometres per hour."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Hassberge Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Riverside Villages and Moats",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Köslau",
+                "stop_id": "hassberge-nature-park--s8",
+                "detail": "The same applies to what Susanne tells us about the host in Köslau."
+              },
+              {
+                "name": "Kleinbardorf Moated Castle",
+                "stop_id": "hassberge-nature-park--s10",
+                "detail": "Kleinbardorf Moated Castle: A treat for gravel cyclists with a sculpture garden"
+              },
+              {
+                "name": "Schäferwagenhotel",
+                "stop_id": "hassberge-nature-park--s11",
+                "detail": "A relaxed campsite atmosphere at the “Schäferwagenhotel” in Sulzfeld"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Hassberge Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +139,8 @@
             "url": "https://bavaria.travel/stories/gravel-biking-hassberge-nature-park/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:46:15.627453+00:00"
       }
     }
   }

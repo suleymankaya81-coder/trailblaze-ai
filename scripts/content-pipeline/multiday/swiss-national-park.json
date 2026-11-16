@@ -1,0 +1,72 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Seenplatte von Macun",
+      "quote": "Auf der Seenplatte von Macun befinden sich viele alpine Gewässer und spannende geomorphologische Formationen wie Blockgletscher.",
+      "english": "On the Macun lake plateau there are many alpine waters and exciting geomorphological formations such as rock glaciers."
+    },
+    {
+      "id": "s2",
+      "name": "Chamanna Cluozza",
+      "quote": "Die Chamanna Cluozza inmitten des Lärchenwaldes",
+      "english": "The Cluozza hut in the middle of the larch forest"
+    },
+    {
+      "id": "s3",
+      "name": "Alp la Schera",
+      "quote": "View from Alp la Schera towards Val da l'Acqua",
+      "english": "View from Alp la Schera towards Val da l'Acqua"
+    },
+    {
+      "id": "s4",
+      "name": "Val da l'Acqua",
+      "quote": "View from Alp la Schera towards Val da l'Acqua",
+      "english": "View from Alp la Schera towards Val da l'Acqua"
+    },
+    {
+      "id": "s5",
+      "name": "Schmelzra Museum",
+      "quote": "Schmelzra Museum",
+      "english": "Schmelzra Museum"
+    },
+    {
+      "id": "s6",
+      "name": "National Park Centre",
+      "quote": "Mehr zu den Auswirkungen des Klimawandels erfahren Sie im Nationalparkzentrum oder hier:",
+      "english": "You can find out more about the effects of climate change at the National Park Centre or here:"
+    },
+    {
+      "id": "s7",
+      "name": "Val Müstair",
+      "quote": "Eine Masterarbeit hat nun ein deutliches Aufwärtsstreben bei Schlangenarten in der Val Müstair festgestellt.",
+      "english": "A master's thesis has now established a clear upward trend for snake species in the Val Müstair."
+    },
+    {
+      "id": "s8",
+      "name": "Spöl",
+      "quote": "Ende Oktober konnten die Arbeiten zur Sanierung der PCB-Belastung im Spöl im #schweizernationalpark abgeschlossen werden.",
+      "english": "At the end of October, the work to remediate the PCB contamination in the Spöl in the Swiss National Park was completed."
+    }
+  ],
+  "days": [
+    {
+      "title": "Mountains and Mountain Huts",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Museums and Valleys",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

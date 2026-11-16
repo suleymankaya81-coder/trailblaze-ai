@@ -1,0 +1,25 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Wupper river",
+      "quote": "The area stretches from Cologne (west) to the Sauerland (east) or from the Wupper river (north) and to the Sieg river (south).",
+      "english": "The area stretches from Cologne (west) to the Sauerland (east) or from the Wupper river (north) and to the Sieg river (south)."
+    },
+    {
+      "id": "s2",
+      "name": "Sieg river",
+      "quote": "The area stretches from Cologne (west) to the Sauerland (east) or from the Wupper river (north) and to the Sieg river (south).",
+      "english": "The area stretches from Cologne (west) to the Sauerland (east) or from the Wupper river (north) and to the Sieg river (south)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern and Southern River Borders",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ]
+}

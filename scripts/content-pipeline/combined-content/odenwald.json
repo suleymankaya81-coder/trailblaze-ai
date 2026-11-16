@@ -1,29 +1,31 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Hesse",
-      "tagline": "Hessen's southernmost region, bordering the states of Bavaria, Baden-Württemberg and the Rhineland-Palatinate,",
+      "tagline": "The Geo-Naturpark Bergstraße-Odenwald, shaped by over 500 million years of geological activity, spill over the",
       "best_season": "Check official seasonal information",
       "best_seasons": [],
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Odenwald"
+        "Burgensteig",
+        "Alemannenweg"
       ],
       "seo_title": "Odenwald Visit Guide"
     },
     "travel": {
       "slug": "odenwald",
+      "overview_name": "Odenwald",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Odenwald before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://en.hessen-tourismus.de/where-to-go/regions/bergstrasse-odenwald",
@@ -31,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Odenwald",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Natural Landscapes and Scenic Trails",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Odenwald",
-                "stop_id": "odenwald",
-                "detail": "Hessen's southernmost region, bordering the states of Bavaria, Baden-Württemberg and the Rhineland-Palatinate, The Bergstrasse-Odenwald is celebrated for its unspoiled and diverse natural landscapes."
+                "name": "Burgensteig",
+                "stop_id": "odenwald--s1",
+                "detail": "For castles and exquisite views of the Upper Rhine Plan (Oberrheingraben), hike the Burgensteig from Darmstadt all the way to Heidelberg."
+              },
+              {
+                "name": "Alemannenweg",
+                "stop_id": "odenwald--s2",
+                "detail": "The circular Alemannenweg hiking trail crosses the low mountains of Odenwald, leading visitors through forests, orchards, fields and vineyards along the way."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Odenwald before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Ancient History and World Heritage",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Neckar-Odenwald Limes",
+                "stop_id": "odenwald--s5",
+                "detail": "The Neckar-Odenwald Limes (Neckar-Odenwald-Limes) features two portions of the former external Roman defensive frontier line complete with fortresses and watchtowers; and the Messel Pit (Grube Messel), a disused quarry home to an extraordinary wealth of fossils, provides a remarkable insight into 50 million years of Earth's history."
+              },
+              {
+                "name": "Einhardsbasilika",
+                "stop_id": "odenwald--s8",
+                "detail": "Take a side trip to the neighbouring town of Steinbach to visit the 9th century Einhard's Basilica (Einhardsbasilika)."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Odenwald before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +105,8 @@
             "url": "https://en.hessen-tourismus.de/where-to-go/regions/bergstrasse-odenwald"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:49:59.749049+00:00"
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Salzburg",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Wolfgangsee"
+        "Schafberg Railway",
+        "Schafberg"
       ],
       "seo_title": "Wolfgangsee Visit Guide"
     },
     "travel": {
       "slug": "wolfgangsee",
+      "overview_name": "Wolfgangsee",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Wolfgangsee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.austria.info/en-gb/locations/lake-wolfgangsee/",
@@ -31,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Wolfgangsee",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Pilgrimage and Peaks in St. Wolfgang",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Wolfgangsee",
-                "stop_id": "wolfgangsee",
-                "detail": "Lake Wolfgangsee is shared by two provinces: SalzburgerLand and Upper Austria. In the Salzkammergut, it is one of those swimming lakes you do not simply visit, but truly experience. It is the landscape around the lake, the many ways to enjoy the outdoors, and the way of life of the people who call this place home: relaxed, welcoming and guided by a fine sense of what feels good. They call it 'Alles gschmah' - when everything feels just right and follows its own rhythm."
+                "name": "Schafberg Railway",
+                "stop_id": "wolfgangsee--s2",
+                "detail": "Highlights include rides on the Schafberg Railway, boat trips between the lakeside villages, and swimming areas along the shore."
+              },
+              {
+                "name": "Schafberg",
+                "stop_id": "wolfgangsee--s3",
+                "detail": "Geographically, Lake Wolfgangsee is situated in an idyllic alpine landscape, nestled between the Schafberg to the west and the Zwölferhorn to the east – two prominent mountains popular with families for outings."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Wolfgangsee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Alps and Relaxation in Strobl",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Strobl",
+                "stop_id": "wolfgangsee--s6",
+                "detail": "Sunbathing lawn in Strobl with trees, bathing jetty, playground, buffet and boat hire."
+              },
+              {
+                "name": "Postalm",
+                "stop_id": "wolfgangsee--s7",
+                "detail": "Around 12 kilometres above Strobl lies the Postalm, Austria's largest connected alpine pasture area."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Wolfgangsee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +105,8 @@
             "url": "https://www.austria.info/en-gb/locations/lake-wolfgangsee/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:51:30.163273+00:00"
       }
     }
   }

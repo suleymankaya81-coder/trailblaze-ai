@@ -1,0 +1,51 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Feldberger Seenlandschaft",
+      "quote": "Weite Wälder, Hügel, Täler, sandige Ebenen, klare Seen und versteckte Moore, blühende Hecken, Äcker und Wiesen, historische Bauwerke in hübschen Orten, Heimatstuben, Museen und Herrenhäuser - all das ist die Feldberger Seenlandschaft.",
+      "english": "Vast forests, hills, valleys, sandy plains, clear lakes and hidden bogs, blooming hedges, fields and meadows, historical buildings in pretty villages, local history rooms, museums and manor houses - all that is the Feldberger Seenlandschaft."
+    },
+    {
+      "id": "s2",
+      "name": "Feldberger Wiesenpark",
+      "quote": "Im Feldberger Wiesenpark sind Orchideen wie das Breitblättrige Knabenkraut zu sehen, aber auch andere Pflanzen wie Kuckuckslichtnelke, Bachnelkenwurz und Sumpfdotterblume können Sie hier finden.",
+      "english": "In the Feldberger Wiesenpark, orchids such as the broad-leaved marsh orchid can be seen, but you can also find other plants such as ragged-robin, water avens and marsh marigold here."
+    },
+    {
+      "id": "s3",
+      "name": "Hans-Fallada-Museum",
+      "quote": "Mit allen Sinnen Herbst genießen: Obstsorten-Verkostung und literarische Gartenführung im Garten des Hans-Fallada-Museums im schönen Carwitz.",
+      "english": "Enjoy autumn with all your senses: fruit variety tasting and literary garden tour in the garden of the Hans-Fallada-Museum in beautiful Carwitz."
+    },
+    {
+      "id": "s4",
+      "name": "Carwitz",
+      "quote": "Am Samstag, den 17. Oktober luden Naturpark und Hans-Fallada-Museum herzlich zum gemeinsamen Spazieren und Probieren ein.",
+      "english": "On Saturday, October 17th, the Nature Park and the Hans-Fallada-Museum cordially invited everyone to walk and taste together."
+    },
+    {
+      "id": "s5",
+      "name": "Hauptmannsberg",
+      "quote": "Am 29. September wurde im Kreis von Familie und Wegbegleitern der Gedenkstein für Dr. Lebrecht Jeschke am Hauptmannsberg eingeweiht.",
+      "english": "On September 29th, the memorial stone for Dr. Lebrecht Jeschke was inaugurated at Hauptmannsberg in the circle of family and companions."
+    }
+  ],
+  "days": [
+    {
+      "title": "Nature and Culture in Feldberg",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s5"
+      ]
+    },
+    {
+      "title": "Literary Heritage in Carwitz",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

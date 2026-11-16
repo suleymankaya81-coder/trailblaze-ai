@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Traunstein",
+      "quote": "One highlight is the distinctive Traunstein, which rises to 1,691 metres and offers a challenging day hike with panoramic views of the surrounding peaks.",
+      "english": "One highlight is the distinctive Traunstein, which rises to 1,691 metres and offers a challenging day hike with panoramic views of the surrounding peaks."
+    },
+    {
+      "id": "s2",
+      "name": "Seeschloss Ort",
+      "quote": "Seeschloss Ort, located on a small island in Lake Traunsee, is one of the oldest buildings in the Salzkammergut.",
+      "english": "Seeschloss Ort, located on a small island in Lake Traunsee, is one of the oldest buildings in the Salzkammergut."
+    },
+    {
+      "id": "s3",
+      "name": "Gmunden",
+      "quote": "Gmunden, the most well-known town on Traunsee, lies on the northern shore, while Ebensee is located on the southern shore.",
+      "english": "Gmunden, the most well-known town on Traunsee, lies on the northern shore, while Ebensee is located on the southern shore."
+    },
+    {
+      "id": "s4",
+      "name": "Grünberg",
+      "quote": "Handicrafts, regional cuisine, boat trips on the lake and the ‘Lichterzauber’ light display on the Grünberg are just some of the many Advent attractions on offer.",
+      "english": "Handicrafts, regional cuisine, boat trips on the lake and the ‘Lichterzauber’ light display on the Grünberg are just some of the many Advent attractions on offer."
+    },
+    {
+      "id": "s5",
+      "name": "Ebensee",
+      "quote": "Gmunden, the most well-known town on Traunsee, lies on the northern shore, while Ebensee is located on the southern shore.",
+      "english": "Gmunden, the most well-known town on Traunsee, lies on the northern shore, while Ebensee is located on the southern shore."
+    },
+    {
+      "id": "s6",
+      "name": "Traunkirchen",
+      "quote": "To the west of the lake are Traunkirchen and Altmünster.",
+      "english": "To the west of the lake are Traunkirchen and Altmünster."
+    },
+    {
+      "id": "s7",
+      "name": "Altmünster",
+      "quote": "To the west of the lake are Traunkirchen and Altmünster.",
+      "english": "To the west of the lake are Traunkirchen and Altmünster."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Shore and Peaks",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Island Castle and Western Shore",
+      "stop_ids": [
+        "s2",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Southern Gateway",
+      "stop_ids": [
+        "s5"
+      ]
+    }
+  ]
+}

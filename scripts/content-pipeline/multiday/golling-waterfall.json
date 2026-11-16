@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Gollinger Wasserfall",
+      "quote": "Der Gollinger Wasserfall, eigentlich zwei hintereinanderliegende Wasserfälle, liegt am Osthang des Göllmassivs, links im Salzachtal am Nikolausberg oberhalb der Wallfahrtskirche.",
+      "english": "The Golling Waterfall, actually two consecutive waterfalls, is located on the eastern slope of the Göll massif, on the left side of the Salzach Valley on the Nikolausberg above the pilgrimage church."
+    },
+    {
+      "id": "s2",
+      "name": "Schwarzbachfall-Höhle",
+      "quote": "Die Fallhöhe des Wassers beträgt um die 100 Meter, das Wasser kommt direkt aus der Schwarzbachfall-Höhle.",
+      "english": "The height of the waterfall is around 100 meters, and the water comes directly from the Schwarzbachfall Cave."
+    },
+    {
+      "id": "s3",
+      "name": "Göllmassiv",
+      "quote": "Der Gollinger Wasserfall, eigentlich zwei hintereinanderliegende Wasserfälle, liegt am Osthang des Göllmassivs, links im Salzachtal am Nikolausberg oberhalb der Wallfahrtskirche.",
+      "english": "The Golling Waterfall, actually two consecutive waterfalls, is located on the eastern slope of the Göll massif, on the left side of the Salzach Valley on the Nikolausberg above the pilgrimage church."
+    },
+    {
+      "id": "s4",
+      "name": "Nikolausberg",
+      "quote": "Der Gollinger Wasserfall, eigentlich zwei hintereinanderliegende Wasserfälle, liegt am Osthang des Göllmassivs, links im Salzachtal am Nikolausberg oberhalb der Wallfahrtskirche.",
+      "english": "The Golling Waterfall, actually two consecutive waterfalls, is located on the eastern slope of the Göll massif, on the left side of the Salzach Valley on the Nikolausberg above the pilgrimage church."
+    },
+    {
+      "id": "s5",
+      "name": "Wallfahrtskirche",
+      "quote": "Der Gollinger Wasserfall, eigentlich zwei hintereinanderliegende Wasserfälle, liegt am Osthang des Göllmassivs, links im Salzachtal am Nikolausberg oberhalb der Wallfahrtskirche.",
+      "english": "The Golling Waterfall, actually two consecutive waterfalls, is located on the eastern slope of the Göll massif, on the left side of the Salzach Valley on the Nikolausberg above the pilgrimage church."
+    },
+    {
+      "id": "s6",
+      "name": "Naturbrücke",
+      "quote": "Die obere Stufe ist von einer Naturbrücke überspannt.",
+      "english": "The upper stage is spanned by a natural bridge."
+    },
+    {
+      "id": "s7",
+      "name": "Schwarzbachhöhle",
+      "quote": "Außerdem ist er bei der als Besonders geschützte Höhle nach den Höhlenschutzbestimmungen ausgewiesenen Schwarzbachhöhle (BGH Nr. 16) miterfasst.",
+      "english": "In addition, it is included in the Schwarzbach Cave (BGH No. 16), which is designated as a Specially Protected Cave according to cave protection regulations."
+    }
+  ],
+  "days": [
+    {
+      "title": "Waterfall and Natural Architecture",
+      "stop_ids": [
+        "s1",
+        "s6"
+      ]
+    },
+    {
+      "title": "Cave Systems and Springs",
+      "stop_ids": [
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Nikolausberg Slopes and Sights",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    }
+  ]
+}

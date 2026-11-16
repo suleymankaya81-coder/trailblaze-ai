@@ -1,0 +1,147 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Castel del Monte",
+      "quote": "Tra le principali attrazioni del parco va annoverato Castel del Monte, uno dei più famosi castelli del meridione italiano nonché patrimonio dell'umanità.",
+      "english": "Among the main attractions of the park, Castel del Monte must be included, one of the most famous castles in the Italian south as well as a World Heritage site."
+    },
+    {
+      "id": "s2",
+      "name": "miniere di bauxite",
+      "quote": "Le miniere di bauxite in località Murgetta in territorio di Spinazzola;",
+      "english": "The bauxite mines in the locality of Murgetta in the territory of Spinazzola;"
+    },
+    {
+      "id": "s3",
+      "name": "castello svevo di Gravina in Puglia",
+      "quote": "Il castello svevo di Gravina in Puglia;",
+      "english": "The Swabian castle of Gravina in Puglia;"
+    },
+    {
+      "id": "s4",
+      "name": "museo erbario di Ruvo di Puglia",
+      "quote": "Il museo erbario di Ruvo di Puglia",
+      "english": "The herbarium museum of Ruvo di Puglia"
+    },
+    {
+      "id": "s5",
+      "name": "parco comunale Robinson",
+      "quote": "Il parco comunale Robinson con l'annessa pineta di Gravina in Puglia;",
+      "english": "The Robinson municipal park with the annexed pine forest of Gravina in Puglia;"
+    },
+    {
+      "id": "s6",
+      "name": "pineta Galietti",
+      "quote": "La pineta Galietti di Santeramo in Colle;",
+      "english": "The Galietti pine forest of Santeramo in Colle;"
+    },
+    {
+      "id": "s7",
+      "name": "bosco Mesola",
+      "quote": "Il bosco Mesola di Cassano delle Murge;",
+      "english": "The Mesola wood of Cassano delle Murge;"
+    },
+    {
+      "id": "s8",
+      "name": "pineta comunale Lagopetto",
+      "quote": "La pineta comunale Lagopetto di Grumo Appula",
+      "english": "The Lagopetto municipal pine forest of Grumo Appula"
+    },
+    {
+      "id": "s9",
+      "name": "foresta Mercadante",
+      "quote": "la foresta Mercadante nel territorio di Cassano delle Murge e di Altamura",
+      "english": "the Mercadante forest in the territory of Cassano delle Murge and Altamura"
+    },
+    {
+      "id": "s10",
+      "name": "grotta di Lamalunga",
+      "quote": "la grotta di Lamalunga, una cavità che ospita l'Uomo di Altamura uno scheletro di uomo di Neanderthal vissuto 150 mila anni fa.",
+      "english": "the Lamalunga cave, a cavity that houses the Altamura Man, a Neanderthal skeleton who lived 150 thousand years ago."
+    },
+    {
+      "id": "s11",
+      "name": "cava dei dinosauri",
+      "quote": "la cava dei dinosauri, ad Altamura, dove nel 1999 sono state ritrovate circa trentamila orme di dinosauri che ne fa il giacimento più ricco al mondo;",
+      "english": "the dinosaur quarry, in Altamura, where in 1999 about thirty thousand dinosaur footprints were found, making it the richest deposit in the world;"
+    },
+    {
+      "id": "s12",
+      "name": "Pulo di Altamura",
+      "quote": "il Pulo di Altamura, rappresentante la più grande dolina carsica del territorio, a circa 6 chilometri a nord della città di Altamura;",
+      "english": "the Pulo of Altamura, representing the largest karst sinkhole in the territory, about 6 kilometers north of the city of Altamura;"
+    },
+    {
+      "id": "s13",
+      "name": "Pulicchio di Gravina",
+      "quote": "il Pulicchio di Gravina, una dolina carsica molto estesa, a 10 km dall'abitato di Gravina in Puglia;",
+      "english": "the Pulicchio of Gravina, a very extensive karst sinkhole, 10 km from the town of Gravina in Puglia;"
+    },
+    {
+      "id": "s14",
+      "name": "Grave di Faraualla",
+      "quote": "la Grave di Faraualla, un profondo inghiottitoio di origine carsica nel territorio di Gravina in Puglia;",
+      "english": "the Grave of Faraualla, a deep swallowhole of karst origin in the territory of Gravina in Puglia;"
+    },
+    {
+      "id": "s15",
+      "name": "parco archeologico di Botromagno e Padre Eterno",
+      "quote": "il parco archeologico di Botromagno e Padre Eterno di Gravina in Puglia;",
+      "english": "the archaeological park of Botromagno and Padre Eterno of Gravina in Puglia;"
+    },
+    {
+      "id": "s16",
+      "name": "necropoli di San Magno",
+      "quote": "la necropoli di San Magno a Corato;",
+      "english": "the necropolis of San Magno in Corato;"
+    },
+    {
+      "id": "s17",
+      "name": "grotta di Santa Maria degli Angeli",
+      "quote": "la grotta di Santa Maria degli Angeli a Cassano delle Murge;",
+      "english": "the cave of Santa Maria degli Angeli in Cassano delle Murge;"
+    },
+    {
+      "id": "s18",
+      "name": "Bosco di Acquatetta",
+      "quote": "Il Bosco di Acquatetta è un bosco, in parte artificiale, situato tra i comuni di Minervino Murge e Spinazzola, di elevata importanza naturalistica.",
+      "english": "The Acquatetta Wood is a forest, partly artificial, located between the municipalities of Minervino Murge and Spinazzola, of high naturalistic importance."
+    }
+  ],
+  "days": [
+    {
+      "title": "Historical Castles and Ruvo Culture",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4",
+        "s16"
+      ]
+    },
+    {
+      "title": "Natural Forests and Cavities of Cassano",
+      "stop_ids": [
+        "s7",
+        "s9",
+        "s17",
+        "s8",
+        "s6"
+      ]
+    },
+    {
+      "title": "Altamura Fossils and Gravina Sinkholes",
+      "stop_ids": [
+        "s10",
+        "s11",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s5",
+        "s2",
+        "s18"
+      ]
+    }
+  ]
+}

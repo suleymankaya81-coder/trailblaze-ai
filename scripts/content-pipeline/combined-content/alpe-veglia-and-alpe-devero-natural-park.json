@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Piedmont",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Alpe Veglia and Alpe Devero Natural Park"
+        "Ghiacciaio del Leone",
+        "Monte Leone",
+        "Lago delle Streghe"
       ],
       "seo_title": "Alpe Veglia and Alpe Devero Natural Park Visit Guide"
     },
@@ -32,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Alpe Veglia and Alpe Devero Natural Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Glaciers and Peaks of Alpe Veglia",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Alpe Veglia and Alpe Devero Natural Park",
-                "stop_id": "alpe-veglia-and-alpe-devero-natural-park",
-                "detail": "The Alpe Veglia and Alpe Devero Natural Park was established in 1995 and is in the Ossola valley, in the Province of Verbania, Piedmont, Italy. It is part of the Western Alps."
+                "name": "Ghiacciaio del Leone",
+                "stop_id": "alpe-veglia-and-alpe-devero-natural-park--s1",
+                "detail": "The glacial origin of the basins is evidenced by the persistence of some residues of ancient glaciers, such as the Leone Glacier and the Aurona Glacier from Alpe Veglia or the Rossa Glacier from the Alpe Devero side."
+              },
+              {
+                "name": "Monte Leone",
+                "stop_id": "alpe-veglia-and-alpe-devero-natural-park--s2",
+                "detail": "To the north, Alpe Veglia is surrounded by Mount Helsenhorn (3,272 m a.s.l.), Mount Mottiscia (3,156 m a.s.l.), Mount Rebbio (3,192 m a.s.l.), Punta d'Aurona (2,984 m a.s.l.), Punta di Terrarossa (3,246 m a.s.l.), and Mount Leone (3,553 m a.s.l.)."
+              },
+              {
+                "name": "Lago delle Streghe",
+                "stop_id": "alpe-veglia-and-alpe-devero-natural-park--s3",
+                "detail": "There is a ferruginous water spring and the Witches' Lake."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Alpe Veglia and Alpe Devero Natural Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Winter Sports and High Summits",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Pizzo Cervandone",
+                "stop_id": "alpe-veglia-and-alpe-devero-natural-park--s6",
+                "detail": "Alpe Devero is also a basin of glacial origin and is surrounded to the north by Punta d'Arbola (3,235 m a.s.l.), Albrunhorn (2,840 m a.s.l., also known as Mount Figascian), Punta di Valdeserta (2,939 m a.s.l.), Punta della Rossa (2,888 m a.s.l.), Punta Marani (3,108 m a.s.l.), Pizzo Cervandone (3,155 m a.s.l.), and Pizzo Cornera (3,083 m a.s.l.)."
+              },
+              {
+                "name": "Monte Cazzola",
+                "stop_id": "alpe-veglia-and-alpe-devero-natural-park--s7",
+                "detail": "In winter, ski lifts are available on Mount Cazzola as well as cross-country ski trails and various walks (to be chosen based on one's experience level) practicable with ski mountaineering and snowshoes."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Alpe Veglia and Alpe Devero Natural Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +109,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Alpe_Veglia_and_Alpe_Devero_Natural_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_dell%27Alpe_Veglia_e_dell%27Alpe_Devero"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:44:02.626435+00:00"
       }
     }
   }

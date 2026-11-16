@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Aletschwald",
+      "quote": "The grey-white of ice and rock contrasting with shades of green in the Aletschwald (forest) provides stunning scenic beauty.",
+      "english": "The grey-white of ice and rock contrasting with shades of green in the Aletschwald (forest) provides stunning scenic beauty."
+    },
+    {
+      "id": "s2",
+      "name": "Villa Cassel",
+      "quote": "Villa Cassel looms like an eagle's nest on the Riederfurka ridge, surrounded by the magnificent Valais mountains.",
+      "english": "Villa Cassel looms like an eagle's nest on the Riederfurka ridge, surrounded by the magnificent Valais mountains."
+    },
+    {
+      "id": "s3",
+      "name": "Aletschhorn",
+      "quote": "The highly glaciated Aletschhorn towers over the UNESCO-listed Jungfrau-Aletsch area.",
+      "english": "The highly glaciated Aletschhorn towers over the UNESCO-listed Jungfrau-Aletsch area."
+    },
+    {
+      "id": "s4",
+      "name": "Märjelensee lake",
+      "quote": "On the gentle descent to the Märjelensee lake, cotton grasses and small tarns contrast with the rock and ice.",
+      "english": "On the gentle descent to the Märjelensee lake, cotton grasses and small tarns contrast with the rock and ice."
+    },
+    {
+      "id": "s5",
+      "name": "Bettmerhorn",
+      "quote": "This area’s most striking downhill run takes you from the Bettmerhorn to the Riederalp.",
+      "english": "This area’s most striking downhill run takes you from the Bettmerhorn to the Riederalp."
+    },
+    {
+      "id": "s6",
+      "name": "Aspi-Titter suspension bridge",
+      "quote": "The 160-metre-long Aspi-Titter suspension bridge points the way to the idyllic Goms mountain village of Bellwald.",
+      "english": "The 160-metre-long Aspi-Titter suspension bridge points the way to the idyllic Goms mountain village of Bellwald."
+    },
+    {
+      "id": "s7",
+      "name": "TFI Snowpark",
+      "quote": "Ein Hotspot für alle Freestyler: Denn auf den Kicker-Lines oder der Rail-Line des TFI Snowparks kann man sich so richtig austoben.",
+      "english": "A hotspot for all freestylers: because you can really let off steam on the kicker lines or the rail line of the TFI Snowpark."
+    }
+  ],
+  "days": [
+    {
+      "title": "Forest Exploration and High Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Glacial Lakes and Mountain Activities",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Bridges and Freestyle Parks",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

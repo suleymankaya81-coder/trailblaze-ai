@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Stein an der Enns",
+      "quote": "Auch die Fauna hat sich der Höhenverteilung zwischen ca. 700 m (Stein an der Enns) und den höchsten alpinen Gipfeln (Knallstein mit 2599 m).",
+      "english": "The fauna has also adapted to the altitudinal distribution between approx. 700 m (Stein an der Enns) and the highest alpine peaks (Knallstein at 2599 m)."
+    },
+    {
+      "id": "s2",
+      "name": "Knallstein",
+      "quote": "Auch die Fauna hat sich der Höhenverteilung zwischen ca. 700 m (Stein an der Enns) und den höchsten alpinen Gipfeln (Knallstein mit 2599 m).",
+      "english": "The fauna has also adapted to the altitudinal distribution between approx. 700 m (Stein an der Enns) and the highest alpine peaks (Knallstein at 2599 m)."
+    },
+    {
+      "id": "s3",
+      "name": "Schloss Großsölk",
+      "quote": "Ein Teil des Schlosses Großsölk beherbergt verschiedene Ausstellungen und einen Veranstaltungsraum.",
+      "english": "A part of Großsölk Castle houses various exhibitions and an event room."
+    },
+    {
+      "id": "s4",
+      "name": "Breitlahnalm",
+      "quote": "Die leichte, aber sehr abwechslungsreiche Wanderung führt Sie von der Breitlahnalm im Kleinsölktal zum Schwarzensee und weiter zu den urigen Hütten der Putzental Almen, wo man Spezialitäten des Naturparks (z.B. frische Bachforellen, Steirerkäsbrot u.v.m.) genießen kann.",
+      "english": "The easy but very varied hike leads you from the Breitlahnalm in the Kleinsölk valley to the Schwarzensee lake and further to the rustic huts of the Putzental Almen, where you can enjoy specialities of the nature park (e.g. fresh brook trout, Steirerkäsbrot and much more)."
+    },
+    {
+      "id": "s5",
+      "name": "Schwarzensee",
+      "quote": "Eine ausführliche Beschreibung über diese Wanderung finden Sie hier: Tourdetails Schwarzensee und Putzentalalm",
+      "english": "A detailed description of this hike can be found here: Tour details Schwarzensee and Putzentalalm"
+    },
+    {
+      "id": "s6",
+      "name": "Putzental Almen",
+      "quote": "Die leichte, aber sehr abwechslungsreiche Wanderung führt Sie von der Breitlahnalm im Kleinsölktal zum Schwarzensee und weiter zu den urigen Hütten der Putzental Almen, wo man Spezialitäten des Naturparks (z.B. frische Bachforellen, Steirerkäsbrot u.v.m.) genießen kann.",
+      "english": "The easy but very varied hike leads you from the Breitlahnalm in the Kleinsölk valley to the Schwarzensee lake and further to the rustic huts of the Putzental Almen, where you can enjoy specialities of the nature park (e.g. fresh brook trout, Steirerkäsbrot and much more)."
+    },
+    {
+      "id": "s7",
+      "name": "Kaltenbachalm",
+      "quote": "Oberhalb der Kaltenbachalm, an der scharfen Straßenkehre, ist ein kleiner Parkplatz.",
+      "english": "Above the Kaltenbachalm, at the sharp bend in the road, there is a small parking lot."
+    },
+    {
+      "id": "s8",
+      "name": "ersten Kaltenbachsee",
+      "quote": "Von dort führt der Steig über den Bach u. dann in vielen Serpentinen hinauf zum ersten Kaltenbachsee.",
+      "english": "From there, the trail leads over the stream and then in many serpentines up to the first Kaltenbach lake."
+    },
+    {
+      "id": "s9",
+      "name": "Oberen Kaltenbachsee",
+      "quote": "Oberhalb der Baumgrenze führt der Steig über eine lang gezogene Hanglehne hinauf zum Oberen Kaltenbachsee.",
+      "english": "Above the tree line, the trail leads up over a long slope to the Upper Kaltenbach lake."
+    }
+  ],
+  "days": [
+    {
+      "title": "Village Culture and High Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Hiking the Kleinsölktal Valley",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Alpine Lakes and Pastures",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ]
+}

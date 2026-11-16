@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hesshütte",
+      "quote": "die Hesshütte bei Nacht",
+      "english": "the Hesshütte at night"
+    },
+    {
+      "id": "s2",
+      "name": "Enns",
+      "quote": "You can really experience the Gesäuse National Park on foot or by raft on the Enns.",
+      "english": "You can really experience the Gesäuse National Park on foot or by raft on the Enns."
+    },
+    {
+      "id": "s3",
+      "name": "Johnsbach",
+      "quote": "While the common sandpiper breeds next to the gravel banks of the rivers Enns and Johnsbach, the pretty feathered pink, an endemite of the northern Limestone Alps, grows on the slopes of the harsh and unapproachable mountains.",
+      "english": "While the common sandpiper breeds next to the gravel banks of the rivers Enns and Johnsbach, the pretty feathered pink, an endemite of the northern Limestone Alps, grows on the slopes of the harsh and unapproachable mountains."
+    },
+    {
+      "id": "s4",
+      "name": "Weidendom",
+      "quote": "There are visitor centres at the Weidendom and in Gstatterboden.",
+      "english": "There are visitor centres at the Weidendom and in Gstatterboden."
+    },
+    {
+      "id": "s5",
+      "name": "Gstatterboden",
+      "quote": "There are visitor centres at the Weidendom and in Gstatterboden.",
+      "english": "There are visitor centres at the Weidendom and in Gstatterboden."
+    },
+    {
+      "id": "s6",
+      "name": "Gscheideggkogel",
+      "quote": "Gscheideggkogel Altitude 1788m",
+      "english": "Gscheideggkogel Altitude 1788m"
+    },
+    {
+      "id": "s7",
+      "name": "Hochtor group",
+      "quote": "View of Hochtor group to Lugauer",
+      "english": "View of Hochtor group to Lugauer"
+    }
+  ],
+  "days": [
+    {
+      "title": "Rivers and Visitor Centres",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Mountain Peaks and Huts",
+      "stop_ids": [
+        "s1",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

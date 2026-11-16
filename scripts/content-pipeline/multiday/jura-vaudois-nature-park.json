@@ -1,0 +1,98 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "La Dôle",
+      "quote": "The Jura Vaudois Nature Park extends from the summit of La Dôle to the medieval monastic town of Romainmôtier.",
+      "english": "The Jura Vaudois Nature Park extends from the summit of La Dôle to the medieval monastic town of Romainmôtier."
+    },
+    {
+      "id": "s2",
+      "name": "Romainmôtier",
+      "quote": "The Jura Vaudois Nature Park extends from the summit of La Dôle to the medieval monastic town of Romainmôtier.",
+      "english": "The Jura Vaudois Nature Park extends from the summit of La Dôle to the medieval monastic town of Romainmôtier."
+    },
+    {
+      "id": "s3",
+      "name": "Vallée de Joux",
+      "quote": "To the north lies the Vallée de Joux at an altitude of 1,000m.",
+      "english": "To the north lies the Vallée de Joux at an altitude of 1,000m."
+    },
+    {
+      "id": "s4",
+      "name": "Nozon Gorge",
+      "quote": "Learn more about: Romainmôtier Nozon Gorge",
+      "english": "Learn more about: Romainmôtier Nozon Gorge"
+    },
+    {
+      "id": "s5",
+      "name": "Mont Risoux massif",
+      "quote": "The park areas can be divided into the gorges of the Orbe and Nozon rivers, the Jura ridge between Col de la Givrine and Col du Mollendruz / Dent de Vaulion, the southern foot of the Jura, the Mont Risoux massif and the Vallée de Joux.",
+      "english": "The park areas can be divided into the gorges of the Orbe and Nozon rivers, the Jura ridge between Col de la Givrine and Col du Mollendruz / Dent de Vaulion, the southern foot of the Jura, the Mont Risoux massif and the Vallée de Joux."
+    },
+    {
+      "id": "s6",
+      "name": "Lac de Joux",
+      "quote": "A unique location, interesting geology and extraordinary climatic conditions shape the character of the landscape at Lac de Joux, the Jura Mountains’ largest lake.",
+      "english": "A unique location, interesting geology and extraordinary climatic conditions shape the character of the landscape at Lac de Joux, the Jura Mountains’ largest lake."
+    },
+    {
+      "id": "s7",
+      "name": "Nature Trail \"Sapin à Siméon\"",
+      "quote": "Learn more about: Marchairuz Nature Trail \"Sapin à Siméon\"",
+      "english": "Learn more about: Marchairuz Nature Trail \"Sapin à Siméon\""
+    },
+    {
+      "id": "s8",
+      "name": "Maison du Prieur",
+      "quote": "Learn more about: Romainmôtier Maison du Prieur",
+      "english": "Learn more about: Romainmôtier Maison du Prieur"
+    },
+    {
+      "id": "s9",
+      "name": "Espace Horloger - Vallée de Joux",
+      "quote": "Learn more about: Le Sentier Espace Horloger - Vallée de Joux",
+      "english": "Learn more about: Le Sentier Espace Horloger - Vallée de Joux"
+    },
+    {
+      "id": "s10",
+      "name": "Moulin-Scierie à Saint-George",
+      "quote": "Learn more about: St-George Moulin-Scierie à Saint-George",
+      "english": "Learn more about: St-George Moulin-Scierie à Saint-George"
+    },
+    {
+      "id": "s11",
+      "name": "Musée Romand de l'Agriculture",
+      "quote": "Learn more about: Gingins Musée Romand de l'Agriculture",
+      "english": "Learn more about: Gingins Musée Romand de l'Agriculture"
+    }
+  ],
+  "days": [
+    {
+      "title": "Romainmôtier and Southern Gorges",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s8",
+        "s10"
+      ]
+    },
+    {
+      "title": "Vallée de Joux and Jura Peaks",
+      "stop_ids": [
+        "s3",
+        "s6",
+        "s9",
+        "s5"
+      ]
+    },
+    {
+      "title": "Summits and Cultural Trails",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s11"
+      ]
+    }
+  ]
+}

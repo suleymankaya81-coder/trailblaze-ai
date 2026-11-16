@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Bavaria",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Bavarian Rhön Nature Park"
+        "Hammelburg",
+        "Haus der Schwarzen Berge"
       ],
       "seo_title": "Bavarian Rhön Nature Park Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Bavarian Rhön Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Saale Valley and Information Centers",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Bavarian Rhön Nature Park",
-                "stop_id": "bavarian-rhon-nature-park",
-                "detail": "The Bavarian Rhön Nature Park  (Naturpark Bayerische Rhön) straddles the junction of the German states of Bavaria,"
+                "name": "Hammelburg",
+                "stop_id": "bavarian-rhon-nature-park--s1",
+                "detail": "The southern and southeastern boundary runs along traffic routes (largely the B 287, but in sections also district roads and railway lines) in such a way that the valley of the Franconian Saale upstream via Hammelburg to Bad Neustadt an der Saale still lies just within."
+              },
+              {
+                "name": "Haus der Schwarzen Berge",
+                "stop_id": "bavarian-rhon-nature-park--s6",
+                "detail": "Rhön Biosphere Center \"House of the Black Mountains\" in Oberbach"
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Bavarian Rhön Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Northern High Rhön Sights",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Haus der Langen Rhön",
+                "stop_id": "bavarian-rhon-nature-park--s5",
+                "detail": "Rhön Biosphere Center \"House of the Long Rhön\" in Oberelsbach"
+              },
+              {
+                "name": "Bayerische Hohe Rhön",
+                "stop_id": "bavarian-rhon-nature-park--s7",
+                "detail": "FFH Area 5526-371 Bavarian High Rhön"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Bavarian Rhön Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Bavarian_Rh%C3%B6n_Nature_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Naturpark_Bayerische_Rh%C3%B6n"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:45:08.542077+00:00"
       }
     }
   }

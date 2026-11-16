@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Walenstadt",
+      "quote": "Das Ortsmuseum widmet sich der Geschichte von Walenstadt.",
+      "english": "The local museum is dedicated to the history of Walenstadt."
+    },
+    {
+      "id": "s2",
+      "name": "Walenpfad",
+      "quote": "Here is a chance for unique mountain adventures and mountain railway experiences - the Walen Trail is a sophisticated pleasure tour with panoramic views.",
+      "english": "Here is a chance for unique mountain adventures and mountain railway experiences - the Walen Trail is a sophisticated pleasure tour with panoramic views."
+    },
+    {
+      "id": "s3",
+      "name": "Walensee Bike",
+      "quote": "A bike tour for aficionados on the south side of Lake Walen, with the most magnificent views of the fjord-like lake and the commanding Churfirsten Mountains, which tower steeply on the other side of the lake.",
+      "english": "A bike tour for aficionados on the south side of Lake Walen, with the most magnificent views of the fjord-like lake and the commanding Churfirsten Mountains, which tower steeply on the other side of the lake."
+    },
+    {
+      "id": "s4",
+      "name": "Churfirsten",
+      "quote": "Experience Lake Walensee with the Churfirsten, the top excursion destination Quinten, the Seerenbach Falls and the leisure destinations Flumserberg and Amden.",
+      "english": "Experience Lake Walensee with the Churfirsten, the top excursion destination Quinten, the Seerenbach Falls and the leisure destinations Flumserberg and Amden."
+    },
+    {
+      "id": "s5",
+      "name": "Quinten",
+      "quote": "Experience Lake Walensee with the Churfirsten, the top excursion destination Quinten, the Seerenbach Falls and the leisure destinations Flumserberg and Amden.",
+      "english": "Experience Lake Walensee with the Churfirsten, the top excursion destination Quinten, the Seerenbach Falls and the leisure destinations Flumserberg and Amden."
+    },
+    {
+      "id": "s6",
+      "name": "Seerenbach Falls",
+      "quote": "Experience Lake Walensee with the Churfirsten, the top excursion destination Quinten, the Seerenbach Falls and the leisure destinations Flumserberg and Amden.",
+      "english": "Experience Lake Walensee with the Churfirsten, the top excursion destination Quinten, the Seerenbach Falls and the leisure destinations Flumserberg and Amden."
+    },
+    {
+      "id": "s7",
+      "name": "Schnittlauch Island",
+      "quote": "Schnittlauch Island in the Walensee",
+      "english": "Schnittlauch Island in the Walensee"
+    }
+  ],
+  "days": [
+    {
+      "title": "Mountains and Trails",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Villages and Sights",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

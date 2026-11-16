@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lake Geierswalder",
+      "quote": "Leisure captains can already sail across the Koschen Canal from Lake Senftenberg to Lake Geierswalder.",
+      "english": "Leisure captains can already sail across the Koschen Canal from Lake Senftenberg to Lake Geierswalder."
+    },
+    {
+      "id": "s2",
+      "name": "Koschen Canal",
+      "quote": "Leisure captains can already sail across the Koschen Canal from Lake Senftenberg to Lake Geierswalder.",
+      "english": "Leisure captains can already sail across the Koschen Canal from Lake Senftenberg to Lake Geierswalder."
+    },
+    {
+      "id": "s3",
+      "name": "Lake Senftenberg",
+      "quote": "Leisure captains can already sail across the Koschen Canal from Lake Senftenberg to Lake Geierswalder.",
+      "english": "Leisure captains can already sail across the Koschen Canal from Lake Senftenberg to Lake Geierswalder."
+    },
+    {
+      "id": "s4",
+      "name": "Knappenrode energy factory",
+      "quote": "For 150 years, mining and coal production shaped the professional and social life of Lusatia.",
+      "english": "For 150 years, mining and coal production shaped the professional and social life of Lusatia."
+    },
+    {
+      "id": "s5",
+      "name": "ENERGY route",
+      "quote": "Those who follow the ENERGY route of the Lausitz industrial culture will learn how the region is changing from coal mining to vacation paradise and how the landscape is changing its face.",
+      "english": "Those who follow the ENERGY route of the Lausitz industrial culture will learn how the region is changing from coal mining to vacation paradise and how the landscape is changing its face."
+    },
+    {
+      "id": "s6",
+      "name": "Lakeland Route",
+      "quote": "The Lakeland Route is a 191-kilometer long-distance cycle route that connects 16 lakes.",
+      "english": "The Lakeland Route is a 191-kilometer long-distance cycle route that connects 16 lakes."
+    },
+    {
+      "id": "s7",
+      "name": "Großräschener See",
+      "quote": "The cycle path leads from Großräschener See in the north to Bärwalder See in the south and back again.",
+      "english": "The cycle path leads from Großräschener See in the north to Bärwalder See in the south and back again."
+    },
+    {
+      "id": "s8",
+      "name": "Bärwalder See",
+      "quote": "The cycle path leads from Großräschener See in the north to Bärwalder See in the south and back again.",
+      "english": "The cycle path leads from Großräschener See in the north to Bärwalder See in the south and back again."
+    }
+  ],
+  "days": [
+    {
+      "title": "Connected Waterways and Canals",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Industrial Heritage and Mining History",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Long-Distance Lakeside Cycling",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

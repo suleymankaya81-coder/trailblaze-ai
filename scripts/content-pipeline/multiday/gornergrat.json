@@ -1,0 +1,91 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Gornergrat Railway",
+      "quote": "The adventure begins with the ride on the Gornergrat Railway which offers magnificent views of the Matterhorn.",
+      "english": "The adventure begins with the ride on the Gornergrat Railway which offers magnificent views of the Matterhorn."
+    },
+    {
+      "id": "s2",
+      "name": "Matterhorn",
+      "quote": "In summer, marvel at the reflection of the Matterhorn in the surface of the Riffelsee and enjoy scenic hiking trails to the Alpine Garden or the famous Valais Blacknose Sheep.",
+      "english": "In summer, marvel at the reflection of the Matterhorn in the surface of the Riffelsee and enjoy scenic hiking trails to the Alpine Garden or the famous Valais Blacknose Sheep."
+    },
+    {
+      "id": "s3",
+      "name": "Riffelsee",
+      "quote": "In summer, marvel at the reflection of the Matterhorn in the surface of the Riffelsee and enjoy scenic hiking trails to the Alpine Garden or the famous Valais Blacknose Sheep.",
+      "english": "In summer, marvel at the reflection of the Matterhorn in the surface of the Riffelsee and enjoy scenic hiking trails to the Alpine Garden or the famous Valais Blacknose Sheep."
+    },
+    {
+      "id": "s4",
+      "name": "Alpine Garden",
+      "quote": "In summer, marvel at the reflection of the Matterhorn in the surface of the Riffelsee and enjoy scenic hiking trails to the Alpine Garden or the famous Valais Blacknose Sheep.",
+      "english": "In summer, marvel at the reflection of the Matterhorn in the surface of the Riffelsee and enjoy scenic hiking trails to the Alpine Garden or the famous Valais Blacknose Sheep."
+    },
+    {
+      "id": "s5",
+      "name": "Rotenboden",
+      "quote": "In winter, the beautiful tobogganing route from Rotenboden to Riffelberg is just one of the experiences on offer.",
+      "english": "In winter, the beautiful tobogganing route from Rotenboden to Riffelberg is just one of the experiences on offer."
+    },
+    {
+      "id": "s6",
+      "name": "Riffelberg",
+      "quote": "In winter, the beautiful tobogganing route from Rotenboden to Riffelberg is just one of the experiences on offer.",
+      "english": "In winter, the beautiful tobogganing route from Rotenboden to Riffelberg is just one of the experiences on offer."
+    },
+    {
+      "id": "s7",
+      "name": "ZOOOM the Matterhorn",
+      "quote": "The Gornergrat is also home to the multimedia experience “ZOOOM the Matterhorn”, the “Golden Spot” photo point, and a viewing platform, which can be visited all year round.",
+      "english": "The Gornergrat is also home to the multimedia experience “ZOOOM the Matterhorn”, the “Golden Spot” photo point, and a viewing platform, which can be visited all year round."
+    },
+    {
+      "id": "s8",
+      "name": "Golden Spot",
+      "quote": "The Gornergrat is also home to the multimedia experience “ZOOOM the Matterhorn”, the “Golden Spot” photo point, and a viewing platform, which can be visited all year round.",
+      "english": "The Gornergrat is also home to the multimedia experience “ZOOOM the Matterhorn”, the “Golden Spot” photo point, and a viewing platform, which can be visited all year round."
+    },
+    {
+      "id": "s9",
+      "name": "viewing platform",
+      "quote": "The Gornergrat is also home to the multimedia experience “ZOOOM the Matterhorn”, the “Golden Spot” photo point, and a viewing platform, which can be visited all year round.",
+      "english": "The Gornergrat is also home to the multimedia experience “ZOOOM the Matterhorn”, the “Golden Spot” photo point, and a viewing platform, which can be visited all year round."
+    },
+    {
+      "id": "s10",
+      "name": "Dufourspitze",
+      "quote": "Surrounded by more than two dozen four-thousand-metre peaks – including the Matterhorn, the imposing Dufourspitze and the Dom – and several glaciers, Gornergrat rewards with an unforgettable panorama.",
+      "english": "Surrounded by more than two dozen four-thousand-metre peaks – including the Matterhorn, the imposing Dufourspitze and the Dom – and several glaciers, Gornergrat rewards with an unforgettable panorama."
+    }
+  ],
+  "days": [
+    {
+      "title": "Summit Experience and Multimedia",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9",
+        "s10"
+      ]
+    },
+    {
+      "title": "Summer Lakes and Alpine Trails",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Winter Slopes and Rail Journey",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

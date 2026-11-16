@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Wiesmahdweg",
+      "quote": "Ranger Deniz Göcen is now also completely in her element on the “Wiesmahdweg” during the guided tour through “her” Ammergau Alps Nature Park.",
+      "english": "Ranger Deniz Göcen is now also completely in her element on the “Wiesmahdweg” during the guided tour through “her” Ammergau Alps Nature Park."
+    },
+    {
+      "id": "s2",
+      "name": "Oberammergau",
+      "quote": "The southern slopes above the picture-postcard silhouettes of Oberammergau and Unterammergau are as rich in species as they are in panoramic views.",
+      "english": "The southern slopes above the picture-postcard silhouettes of Oberammergau and Unterammergau are as rich in species as they are in panoramic views."
+    },
+    {
+      "id": "s3",
+      "name": "Unterammergau",
+      "quote": "Speaking of irises: down by the Ammer, where whole fields of them grow and blossom, behind them the onion tower of the church of Unterammergau peaks up offering a pretty contrast.",
+      "english": "Speaking of irises: down by the Ammer, where whole fields of them grow and blossom, behind them the onion tower of the church of Unterammergau peaks up offering a pretty contrast."
+    },
+    {
+      "id": "s4",
+      "name": "Kreuzspitze",
+      "quote": "In order to gain a proper overview, you can climb to the top of the region and reach the summit of the 2,185-metre Kreuzspitze.",
+      "english": "In order to gain a proper overview, you can climb to the top of the region and reach the summit of the 2,185-metre Kreuzspitze."
+    },
+    {
+      "id": "s5",
+      "name": "Ammertal valley",
+      "quote": "The Ammertal valley has preserved one of the largest mountain, meadow and pasture landscapes in Bavaria.",
+      "english": "The Ammertal valley has preserved one of the largest mountain, meadow and pasture landscapes in Bavaria."
+    },
+    {
+      "id": "s6",
+      "name": "Schleifmühlklamm gorge",
+      "quote": "One literally refreshing side trip on this hot summer day is a visit to the Schleifmühlklamm gorge near Unterammergau, at the entrance of which the whetstone makers used to be active.",
+      "english": "One literally refreshing side trip on this hot summer day is a visit to the Schleifmühlklamm gorge near Unterammergau, at the entrance of which the whetstone makers used to be active."
+    },
+    {
+      "id": "s7",
+      "name": "Soier See",
+      "quote": "A rather quiet body of water, on the other hand, can be found with Soier See, a landscape conservation area situated almost dead centre in Bad Bayersoien, whose shores were home to settlers stretching all the way back to the Celts.",
+      "english": "A rather quiet body of water, on the other hand, can be found with Soier See, a landscape conservation area situated almost dead centre in Bad Bayersoien, whose shores were home to settlers stretching all the way back to the Celts."
+    },
+    {
+      "id": "s8",
+      "name": "war memorial chapel in Bad Bayersoien",
+      "quote": "Panoramic view from the war memorial chapel above Lake Soier See",
+      "english": "Panoramic view from the war memorial chapel above Lake Soier See"
+    },
+    {
+      "id": "s9",
+      "name": "Wetzstein Ridge",
+      "quote": "At the end of the tour, we head up to the heights once more: in the evening, we make our way to the Wetzstein Ridge near Saulgrub.",
+      "english": "At the end of the tour, we head up to the heights once more: in the evening, we make our way to the Wetzstein Ridge near Saulgrub."
+    }
+  ],
+  "days": [
+    {
+      "title": "Villages and Peaks of the Ammergau",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Gorges and History in Unterammergau",
+      "stop_ids": [
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "Lakes and Ridges near Saulgrub",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ]
+}

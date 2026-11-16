@@ -1,0 +1,44 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Schaalsee",
+      "quote": "The 24 km² Schaalsee is the centre of the UNESCO biosphere reserve and gives it its name.",
+      "english": "The 24 km² Schaalsee is the centre of the UNESCO biosphere reserve and gives it its name."
+    },
+    {
+      "id": "s2",
+      "name": "PAHLHUUS",
+      "quote": "35 000 guests visit the PAHLHUUS",
+      "english": "35,000 guests visit the PAHLHUUS."
+    },
+    {
+      "id": "s3",
+      "name": "moors",
+      "quote": "Discover the 310 km² protected area between the metropolitan areas of Hamburg, Lübeck and Schwerin - characterised by moors and lakes, fields, pastures and wet meadows as well as beech forests.",
+      "english": "Discover the 310 km² protected area between the metropolitan areas of Hamburg, Lübeck and Schwerin - characterised by moors and lakes, fields, pastures and wet meadows as well as beech forests."
+    },
+    {
+      "id": "s4",
+      "name": "beech forests",
+      "quote": "Discover the 310 km² protected area between the metropolitan areas of Hamburg, Lübeck and Schwerin - characterised by moors and lakes, fields, pastures and wet meadows as well as beech forests.",
+      "english": "Discover the 310 km² protected area between the metropolitan areas of Hamburg, Lübeck and Schwerin - characterised by moors and lakes, fields, pastures and wet meadows as well as beech forests."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Lakes and Visitor Facilities",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Natural Landscapes and Forest Habitats",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

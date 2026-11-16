@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Neusiedler See-Seewinkel National Park",
+      "quote": "In the Neusiedler See-Seewinkel National Park , birdwatchers move gently and quietly.",
+      "english": "In the Neusiedler See-Seewinkel National Park, birdwatchers move gently and quietly."
+    },
+    {
+      "id": "s2",
+      "name": "Neusiedl",
+      "quote": "Lake Neusiedl has been known as the \"Sea of the Viennese\" since 1927, when the first bathing facility opened in Neusiedl - today a modern, well-kept, quiet lido.",
+      "english": "Lake Neusiedl has been known as the \"Sea of the Viennese\" since 1927, when the first bathing facility opened in Neusiedl - today a modern, well-kept, quiet lido."
+    },
+    {
+      "id": "s3",
+      "name": "Fritz",
+      "quote": "There's always something going on at Fritz!",
+      "english": "There's always something going on at Fritz!"
+    },
+    {
+      "id": "s4",
+      "name": "Wine Academy Austria in Rust",
+      "quote": "Tip: Pay a visit to the Wine Academy Austria in Rust!",
+      "english": "Tip: Pay a visit to the Wine Academy Austria in Rust!"
+    },
+    {
+      "id": "s5",
+      "name": "salt pans",
+      "quote": "Salt pans, reed beds and incredible biodiversity – Neusiedler See–Seewinkel National Park is a landscape full of contrasts and surprises.",
+      "english": "Salt pans, reed beds and incredible biodiversity – Neusiedler See–Seewinkel National Park is a landscape full of contrasts and surprises."
+    },
+    {
+      "id": "s6",
+      "name": "visitor centre in Illmitz",
+      "quote": "Tours start at the visitor centre in Illmitz – the ideal gateway to exploring this vast, peaceful steppe lake.",
+      "english": "Tours start at the visitor centre in Illmitz – the ideal gateway to exploring this vast, peaceful steppe lake."
+    },
+    {
+      "id": "s7",
+      "name": "Velich Winery",
+      "quote": "Velich Winery",
+      "english": "Velich Winery"
+    },
+    {
+      "id": "s8",
+      "name": "Hans Tschida - Angerhof",
+      "quote": "Hans Tschida - Angerhof",
+      "english": "Hans Tschida - Angerhof"
+    }
+  ],
+  "days": [
+    {
+      "title": "National Park Nature and Wildlife",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Towns and Lakeside Leisure",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Regional Wine Estates",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

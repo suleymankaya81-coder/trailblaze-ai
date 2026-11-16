@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Burgenland",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Lake Neusiedl"
+        "Neusiedler See-Seewinkel National Park",
+        "salt pans",
+        "visitor centre in Illmitz"
       ],
       "seo_title": "Lake Neusiedl Visit Guide"
     },
     "travel": {
       "slug": "lake-neusiedl",
+      "overview_name": "Lake Neusiedl",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Lake Neusiedl before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.austria.info/en-gb/locations/lake-neusiedl/",
@@ -31,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Lake Neusiedl",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "National Park Nature and Wildlife",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Lake Neusiedl",
-                "stop_id": "lake-neusiedl",
-                "detail": "Lake Neusiedl is a unique steppe lake whose shallow, reed-fringed waters evoke a sense of vastness and tranquillity. Unlike Austria's alpine lakes, Lake Neusiedl captivates its visitors with an open, seemingly endless landscape, surrounded by gentle hills and vineyards. It’s a beautiful place—soft and serene. Here, holidaymakers experience a blend of nature and culture: Burgenland is a region renowned for its excellent wines, and the cosy lakeside restaurants are perfect for a relaxed sunset drink."
+                "name": "Neusiedler See-Seewinkel National Park",
+                "stop_id": "lake-neusiedl--s1",
+                "detail": "In the Neusiedler See-Seewinkel National Park, birdwatchers move gently and quietly."
+              },
+              {
+                "name": "salt pans",
+                "stop_id": "lake-neusiedl--s5",
+                "detail": "Salt pans, reed beds and incredible biodiversity – Neusiedler See–Seewinkel National Park is a landscape full of contrasts and surprises."
+              },
+              {
+                "name": "visitor centre in Illmitz",
+                "stop_id": "lake-neusiedl--s6",
+                "detail": "Tours start at the visitor centre in Illmitz – the ideal gateway to exploring this vast, peaceful steppe lake."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Neusiedl before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Towns and Lakeside Leisure",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Fritz",
+                "stop_id": "lake-neusiedl--s3",
+                "detail": "There's always something going on at Fritz!"
+              },
+              {
+                "name": "Wine Academy Austria in Rust",
+                "stop_id": "lake-neusiedl--s4",
+                "detail": "Tip: Pay a visit to the Wine Academy Austria in Rust!"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Lake Neusiedl before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +111,8 @@
             "url": "https://www.austria.info/en-gb/locations/lake-neusiedl/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:46:03.761319+00:00"
       }
     }
   }

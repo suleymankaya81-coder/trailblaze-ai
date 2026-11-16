@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Tyrol",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Ötztal"
+        "Lake Piburg",
+        "Längenfeld",
+        "Aqua Dome"
       ],
       "seo_title": "Ötztal Nature Park Visit Guide"
     },
     "travel": {
       "slug": "otztal-nature-park",
+      "overview_name": "Ötztal Nature Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Ötztal Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.austria.info/en-gb/regions/oetztal/",
@@ -31,16 +34,49 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Ötztal Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Park Discovery and Relaxation",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Ötztal",
-                "stop_id": "otztal-nature-park",
-                "detail": "A region that enchants in both summer and winter – welcome to the Ötztal Valley . A place where the mountains push your limits while offering a profound sense of freedom. In summer, immerse yourself in the breathtaking natural beauty along over 1,600 km of hiking trails and 860 km of bike routes . Towering three-thousand-metre peaks provide a backdrop that amazes even seasoned adventurers. Highlights like the impressive Stuiben Falls and the thermal baths of Aqua Dome perfectly blend relaxation with action."
+                "name": "Lake Piburg",
+                "stop_id": "otztal-nature-park--s3",
+                "detail": "At Lake Piburg, shimmering waters contrast with dramatic rockfall scenery, while the Naturpark House in Längenfeld offers a multimedia experience of the natural world."
+              },
+              {
+                "name": "Längenfeld",
+                "stop_id": "otztal-nature-park--s5",
+                "detail": "Home to the Aqua Dome, a large thermal spa."
+              },
+              {
+                "name": "Aqua Dome",
+                "stop_id": "otztal-nature-park--s6",
+                "detail": "For relaxation, the Aqua Dome in Längenfeld offers rejuvenation, while the Ötzi Village provides fascinating insights into prehistoric life."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Ötztal Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "High Alpine Peaks and Forests",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Windachtal",
+                "stop_id": "otztal-nature-park--s1",
+                "detail": "Nature takes centre stage in the Ötztal Nature Park: glacier worlds in the quiet zones of the Ötztal and Stubai Alps, rustic Swiss pine forests in the Windachtal, and the towering Engelswand near Umhausen, home to rare flora and fauna."
+              },
+              {
+                "name": "Wildspitze",
+                "stop_id": "otztal-nature-park--s9",
+                "detail": "The highest mountain in the Ötztal is the Wildspitze, standing at 3,768 metres above sea level."
+              },
+              {
+                "name": "Timmelsjoch High Alpine Road",
+                "stop_id": "otztal-nature-park--s10",
+                "detail": "Obergurgl : Famous for the Timmelsjoch High Alpine Road and Alpine activities."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Ötztal Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +116,8 @@
             "url": "https://www.austria.info/en-gb/regions/oetztal/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:49:06.153550+00:00"
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Upper Austria",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Traunsee"
+        "Traunstein",
+        "Gmunden",
+        "Grünberg"
       ],
       "seo_title": "Lake Traunsee Visit Guide"
     },
     "travel": {
       "slug": "lake-traunsee",
+      "overview_name": "Lake Traunsee",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Lake Traunsee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.austria.info/en-gb/locations/traunsee-almtal/",
@@ -31,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Lake Traunsee",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Northern Shore and Peaks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Traunsee",
-                "stop_id": "lake-traunsee",
-                "detail": "Gmunden lies on the northern shore of Traunsee and has a long history dating back to the Middle Ages. A stroll through the old town reveals well-preserved historic buildings, narrow lanes and picturesque squares. Gmunden is often described as both romantic and lively – a perfect place to enjoy coffee by the lakeside promenade, take in the mountain views and soak up the Alpine atmosphere."
+                "name": "Traunstein",
+                "stop_id": "lake-traunsee--s1",
+                "detail": "One highlight is the distinctive Traunstein, which rises to 1,691 metres and offers a challenging day hike with panoramic views of the surrounding peaks."
+              },
+              {
+                "name": "Gmunden",
+                "stop_id": "lake-traunsee--s3",
+                "detail": "Gmunden, the most well-known town on Traunsee, lies on the northern shore, while Ebensee is located on the southern shore."
+              },
+              {
+                "name": "Grünberg",
+                "stop_id": "lake-traunsee--s4",
+                "detail": "Handicrafts, regional cuisine, boat trips on the lake and the ‘Lichterzauber’ light display on the Grünberg are just some of the many Advent attractions on offer."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Traunsee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Island Castle and Western Shore",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Seeschloss Ort",
+                "stop_id": "lake-traunsee--s2",
+                "detail": "Seeschloss Ort, located on a small island in Lake Traunsee, is one of the oldest buildings in the Salzkammergut."
+              },
+              {
+                "name": "Traunkirchen",
+                "stop_id": "lake-traunsee--s6",
+                "detail": "To the west of the lake are Traunkirchen and Altmünster."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Lake Traunsee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +111,8 @@
             "url": "https://www.austria.info/en-gb/locations/traunsee-almtal/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:46:07.185685+00:00"
       }
     }
   }

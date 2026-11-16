@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Salzburg",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Krimml Waterfalls"
+        "Krimml Waterfalls",
+        "lowest waterfall",
+        "uppermost waterfall"
       ],
       "seo_title": "Krimml Waterfalls Visit Guide"
     },
     "travel": {
       "slug": "krimml-waterfalls",
+      "overview_name": "Krimml Waterfalls",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Krimml Waterfalls before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.austria.info/en-gb/locations/krimml-waterfalls/",
@@ -31,16 +34,54 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Krimml Waterfalls",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Waterfalls and Trails",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
                 "name": "Krimml Waterfalls",
-                "stop_id": "krimml-waterfalls",
-                "detail": "It's a truly impressive natural spectacle – and one you can experience up close: the trail follows the course of the Krimml Waterfalls and links several viewpoints. From the first panoramic spot to the top, the water is constantly changing shape. Each section of the trail reveals a different interplay between water and rock."
+                "stop_id": "krimml-waterfalls--s1",
+                "detail": "The Krimml Waterfalls in the Hohe Tauern National Park are the highest waterfalls in Europe."
+              },
+              {
+                "name": "lowest waterfall",
+                "stop_id": "krimml-waterfalls--s2",
+                "detail": "The barrier-free path leads from the car parks to the lowest waterfall, including wheelchair-accessible toilets."
+              },
+              {
+                "name": "uppermost waterfall",
+                "stop_id": "krimml-waterfalls--s3",
+                "detail": "Those continuing to the uppermost waterfall should be reasonably fit and sure-footed."
+              },
+              {
+                "name": "Krimml Waterfall Trail",
+                "stop_id": "krimml-waterfalls--s4",
+                "detail": "The Krimml Waterfall Trail is open every day from 1st May until the end of October (admission fee applies)."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Krimml Waterfalls before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Village and Nearby Sights",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Krimml WaterWorlds",
+                "stop_id": "krimml-waterfalls--s5",
+                "detail": "The Krimml WaterWorlds offer an interactive experience centred around the element of water, located right next to the Krimml Waterfalls."
+              },
+              {
+                "name": "village of Krimml",
+                "stop_id": "krimml-waterfalls--s6",
+                "detail": "The Krimml Waterfalls are situated in the village of Krimml in the Hohe Tauern National Park in SalzburgerLand."
+              },
+              {
+                "name": "Tauern Cycle Path",
+                "stop_id": "krimml-waterfalls--s7",
+                "detail": "A leisurely ride along great rivers, cultural highlights and culinary discoveries: the Tauern Cycle Path through the Alps never fails to impress."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Krimml Waterfalls before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +121,8 @@
             "url": "https://www.austria.info/en-gb/locations/krimml-waterfalls/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:45:45.421301+00:00"
       }
     }
   }

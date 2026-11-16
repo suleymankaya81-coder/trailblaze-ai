@@ -1,0 +1,98 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lake Weissensee",
+      "quote": "Lake Weissensee in Carinthia is one of Austria's best-known swimming lakes.",
+      "english": "Lake Weissensee in Carinthia is one of Austria's best-known swimming lakes."
+    },
+    {
+      "id": "s2",
+      "name": "Strandbad Stockenboi",
+      "quote": "The Strandbad Stockenboi has a lakeside swimming area, water sports, a diving school and spacious lawns for sunbathing.",
+      "english": "The Strandbad Stockenboi has a lakeside swimming area, water sports, a diving school and spacious lawns for sunbathing."
+    },
+    {
+      "id": "s3",
+      "name": "Strandbad Knaller",
+      "quote": "The Strandbad Knaller combines swimming, wellness and lake views with a beach café, saunas and leisure facilities right on the Weissensee.",
+      "english": "The Strandbad Knaller combines swimming, wellness and lake views with a beach café, saunas and leisure facilities right on the Weissensee."
+    },
+    {
+      "id": "s4",
+      "name": "Naggl",
+      "quote": "From Naggl, trails lead to alpine pastures, viewpoints and hiking areas in the mountains surrounding Lake Weissensee.",
+      "english": "From Naggl, trails lead to alpine pastures, viewpoints and hiking areas in the mountains surrounding Lake Weissensee."
+    },
+    {
+      "id": "s5",
+      "name": "Naggler Alm",
+      "quote": "The Naggler Alm can also be reached from here.",
+      "english": "The Naggler Alm can also be reached from here."
+    },
+    {
+      "id": "s6",
+      "name": "Gatschach",
+      "quote": "From the hamlet of Gatschach, the view stretches across Lake Weissensee and the surrounding mountains.",
+      "english": "From the hamlet of Gatschach, the view stretches across Lake Weissensee and the surrounding mountains."
+    },
+    {
+      "id": "s7",
+      "name": "Neusach",
+      "quote": "Neusach is situated on the western shore of Lake Weissensee.",
+      "english": "Neusach is situated on the western shore of Lake Weissensee."
+    },
+    {
+      "id": "s8",
+      "name": "Techendorf",
+      "quote": "Techendorf is the centre of Weissensee.",
+      "english": "Techendorf is the centre of Weissensee."
+    },
+    {
+      "id": "s9",
+      "name": "Slow Trail",
+      "quote": "The Slow Trail runs along the eastern bank, taking in viewpoints, rest areas and sections right by the water.",
+      "english": "The Slow Trail runs along the eastern bank, taking in viewpoints, rest areas and sections right by the water."
+    },
+    {
+      "id": "s10",
+      "name": "Nordufer-Weg",
+      "quote": "Weissensee – Nordufer-Weg : Demanding hike with paths along the lakeshore and ascents and descents over stone walls.",
+      "english": "Weissensee – Nordufer-Weg : Demanding hike with paths along the lakeshore and ascents and descents over stone walls."
+    },
+    {
+      "id": "s11",
+      "name": "Hermagorer Bodenalm",
+      "quote": "This short tour leads through forest and alpine pastures to the Bodenalm, with its own cheese shop.",
+      "english": "This short tour leads through forest and alpine pastures to the Bodenalm, with its own cheese shop."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Villages and Lido Beaches",
+      "stop_ids": [
+        "s8",
+        "s6",
+        "s3",
+        "s1"
+      ]
+    },
+    {
+      "title": "Western Shore and Alpine Pastures",
+      "stop_ids": [
+        "s7",
+        "s4",
+        "s5",
+        "s11"
+      ]
+    },
+    {
+      "title": "Eastern Shore and Lakeshore Trails",
+      "stop_ids": [
+        "s2",
+        "s9",
+        "s10"
+      ]
+    }
+  ]
+}

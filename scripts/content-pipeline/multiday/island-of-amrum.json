@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Nebel",
+      "quote": "Nebel, an der Wattseite gelegen, ist heute der größte Ort der Insel.",
+      "english": "Nebel, located on the mudflat side, is today the largest village on the island."
+    },
+    {
+      "id": "s2",
+      "name": "St.-Clemens-Kirche",
+      "quote": "Die ersten Häuser dieser neuen Siedlung gruppierten sich um die zuvor für zwei Jahrhunderte zwischen Norddorf und Süddorf auf freiem Feld stehende St.-Clemens-Kirche.",
+      "english": "The first houses of this new settlement clustered around St. Clemens Church, which had previously stood in the open field between Norddorf and Süddorf for two centuries."
+    },
+    {
+      "id": "s3",
+      "name": "Steenodde",
+      "quote": "Steenodde, ebenfalls ein Ortsteil von Nebel und an der Wattseite gelegen, war über lange Jahre der einzige Hafenort der Insel, bis ihn Wittdün als wichtigster Fährhafen ablöste.",
+      "english": "Steenodde, also a district of Nebel and located on the mudflat side, was for many years the island's only port until Wittdün replaced it as the most important ferry port."
+    },
+    {
+      "id": "s4",
+      "name": "Wittdün",
+      "quote": "Das Nordseeheilbad Wittdün liegt an der Südspitze der Insel und ist am deutlichsten vom Tourismus geprägt.",
+      "english": "The North Sea spa Wittdün is located at the southern tip of the island and is most significantly shaped by tourism."
+    },
+    {
+      "id": "s5",
+      "name": "Amrumer Leuchtturm",
+      "quote": "Hier steht der markante Amrumer Leuchtturm einige hundert Meter westlich des Ortes Wittdün.",
+      "english": "The striking Amrum Lighthouse stands here, a few hundred meters west of the village of Wittdün."
+    },
+    {
+      "id": "s6",
+      "name": "Kniepsand",
+      "quote": "Er stellt einen der breitesten Sandstrände Europas dar.",
+      "english": "It represents one of the widest sandy beaches in Europe."
+    },
+    {
+      "id": "s7",
+      "name": "Norddorf",
+      "quote": "Der nördlichste Ort der Insel ist das Nordseeheilbad Norddorf.",
+      "english": "The northernmost place on the island is the North Sea spa Norddorf."
+    },
+    {
+      "id": "s8",
+      "name": "A Siatler",
+      "quote": "Höchste Erhebung ist die Düne A Siatler (deutsch: Setzerdüne) mit 32 Metern über NHN.",
+      "english": "The highest elevation is the dune A Siatler (German: Setzerdüne) at 32 meters above sea level."
+    },
+    {
+      "id": "s9",
+      "name": "Amrum-Odde",
+      "quote": "Im äußersten Nordosten der Insel liegt die Amrum-Odde, die von der Entwicklung des Kniepsandes noch nicht profitiert hat.",
+      "english": "In the extreme northeast of the island lies the Amrum-Odde, which has not yet benefited from the development of the Kniepsand."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Villages and History",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Southern Landmarks and Beach",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Northern Nature and Heights",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ]
+}

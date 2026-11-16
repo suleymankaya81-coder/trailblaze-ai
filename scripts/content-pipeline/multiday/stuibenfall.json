@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Stuibenfall",
+      "quote": "Der Stuibenfall ist mit 159 Metern Fallhöhe (in zwei Stufen) der höchste Wasserfall Tirols.",
+      "english": "The Stuibenfall is the highest waterfall in Tyrol with a drop height of 159 meters (in two stages)."
+    },
+    {
+      "id": "s2",
+      "name": "Niederthai",
+      "quote": "Auch sind noch die Reste des Sees als Uferterrassen in Niederthai erkennbar.",
+      "english": "The remains of the lake are also still recognizable as shore terraces in Niederthai."
+    },
+    {
+      "id": "s3",
+      "name": "Tauferberg",
+      "quote": "Beim Einsturz des Bergmassivs bei Köfels, ungefähr 7000 v. Chr., türmte sich auf der gegenüberliegenden Seite der heutige Tauferberg auf.",
+      "english": "During the collapse of the mountain massif near Köfels, around 7000 BC, today's Tauferberg piled up on the opposite side."
+    },
+    {
+      "id": "s4",
+      "name": "Hängebrücke",
+      "quote": "Der Wasserfall ist mit Wanderwegen und Gastronomie als Touristenattraktion gut erschlossen, seit 2007 auch mit einer Hängebrücke ganz oben und fünf verteilten Aussichtsplattformen.",
+      "english": "The waterfall is well developed as a tourist attraction with hiking trails and gastronomy, since 2007 also with a suspension bridge at the very top and five scattered viewing platforms."
+    },
+    {
+      "id": "s5",
+      "name": "Aussichtsplattformen",
+      "quote": "Nach zweijähriger Bauzeit führt nun eine Stahlkonstruktion mit 728 Stufen und einer 80 Meter langen Hängebrücke zu den Aussichtsplattformen und nach Niederthai.",
+      "english": "After a two-year construction period, a steel construction with 728 steps and an 80-meter-long suspension bridge now leads to the viewing platforms and to Niederthai."
+    },
+    {
+      "id": "s6",
+      "name": "Klettersteig",
+      "quote": "Seit 2008 gibt es auch noch einen 450 Meter langen, familienfreundlichen Klettersteig, der im letzten Teil den Wasserfall quert.",
+      "english": "Since 2008, there has also been a 450-meter-long, family-friendly via ferrata that crosses the waterfall in the final section."
+    },
+    {
+      "id": "s7",
+      "name": "natürliche Brücke",
+      "quote": "Ein kleiner Rest des abgetragenen Massivs ist als natürliche Brücke erhalten geblieben.",
+      "english": "A small remnant of the eroded massif has been preserved as a natural bridge."
+    }
+  ],
+  "days": [
+    {
+      "title": "Waterfall Adventure and Climbing",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s6"
+      ]
+    },
+    {
+      "title": "Geology and Views",
+      "stop_ids": [
+        "s3",
+        "s5",
+        "s7"
+      ]
+    },
+    {
+      "title": "Terraces and Villages",
+      "stop_ids": [
+        "s2"
+      ]
+    }
+  ]
+}

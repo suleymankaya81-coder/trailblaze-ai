@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "World Nature Forum",
+      "quote": "World Nature Forum – the most modern and fascinating museum in the Alps.",
+      "english": "World Nature Forum – the most modern and fascinating museum in the Alps."
+    },
+    {
+      "id": "s2",
+      "name": "Mund",
+      "quote": "The saffron village of Mund is located on a sunny hillside at 1200 m above sea level, on the right side of the Vallée du Rhône, within the Jungfrau-Aletsch UNESCO World Natural Heritage Site.",
+      "english": "The saffron village of Mund is located on a sunny hillside at 1200 m above sea level, on the right side of the Vallée du Rhône, within the Jungfrau-Aletsch UNESCO World Natural Heritage Site."
+    },
+    {
+      "id": "s3",
+      "name": "Massa Gorge",
+      "quote": "While in the past it was only courageous crystal hunters who braved the Massa Gorge, it is now accessible to the general public thanks to the building of the Gibidem Dam.",
+      "english": "While in the past it was only courageous crystal hunters who braved the Massa Gorge, it is now accessible to the general public thanks to the building of the Gibidem Dam."
+    },
+    {
+      "id": "s4",
+      "name": "Great Aletsch Glacier",
+      "quote": "10 billions tonnes of ice make the Great Aletsch Glacier the Alps' largest glacier, which is easily accessible thanks to many hiking trails and glacier tour offers.",
+      "english": "10 billions tonnes of ice make the Great Aletsch Glacier the Alps' largest glacier, which is easily accessible thanks to many hiking trails and glacier tour offers."
+    },
+    {
+      "id": "s5",
+      "name": "Eggishorn",
+      "quote": "The 360° panoramic view from the Eggishorn is just as impressive: Eiger, Mönch, Jungfrau, Wannenhorn and Finsteraarhorn – and to the west the Weisshorn, the Mischabel with the Dom as well as Matterhorn in all its glory.",
+      "english": "The 360° panoramic view from the Eggishorn is just as impressive: Eiger, Mönch, Jungfrau, Wannenhorn and Finsteraarhorn – and to the west the Weisshorn, the Mischabel with the Dom as well as Matterhorn in all its glory."
+    },
+    {
+      "id": "s6",
+      "name": "Jungfraujoch",
+      "quote": "A visit to the Jungfraujoch puts a jewel in the crown of any visit to Switzerland.",
+      "english": "A visit to the Jungfraujoch puts a jewel in the crown of any visit to Switzerland."
+    },
+    {
+      "id": "s7",
+      "name": "Lake Oeschinen",
+      "quote": "Take the Kandersteg – Oeschinensee gondola to the UNESCO World Heritage Jungfrau-Aletsch.",
+      "english": "Take the Kandersteg – Oeschinensee gondola to the UNESCO World Heritage Jungfrau-Aletsch."
+    },
+    {
+      "id": "s8",
+      "name": "Rosenlaui Glacier Gorge",
+      "quote": "The Rosenlaui Glacier Gorge: Discover narrow passages, thundering waterfalls and bizarre rock formations in the UNESCO World Heritage Swiss Alps Jungfrau-Aletsch.",
+      "english": "The Rosenlaui Glacier Gorge: Discover narrow passages, thundering waterfalls and bizarre rock formations in the UNESCO World Heritage Swiss Alps Jungfrau-Aletsch."
+    }
+  ],
+  "days": [
+    {
+      "title": "Valais Culture and Canyons",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Glacial Peaks and Panoramas",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Alpine Lakes and Gorges",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

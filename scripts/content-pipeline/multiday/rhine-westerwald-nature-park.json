@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Wäller Tour Bärenkopp - Waldbreitbach",
+      "quote": "Wäller Tour Bärenkopp - Waldbreitbach Difficult 4.1 h 12 km 346 hm 326 hm",
+      "english": "Wäller Tour Bärenkopp - Waldbreitbach Difficult 4.1 h 12 km 346 hm 326 hm"
+    },
+    {
+      "id": "s2",
+      "name": "Wied cycle path",
+      "quote": "Cycling on the Wied cycle path through splendid river valleys Moderate 7.5 h 98 km 237 hm 619 hm",
+      "english": "Cycling on the Wied cycle path through splendid river valleys Moderate 7.5 h 98 km 237 hm 619 hm"
+    },
+    {
+      "id": "s3",
+      "name": "Laubach Wasserfall",
+      "quote": "Neuwied Laubach Wasserfall",
+      "english": "Neuwied Laubach Waterfall"
+    },
+    {
+      "id": "s4",
+      "name": "Raiffeisen Museum Flammersfeld",
+      "quote": "Flammersfeld Raiffeisen Museum Flammersfeld",
+      "english": "Flammersfeld Raiffeisen Museum Flammersfeld"
+    },
+    {
+      "id": "s5",
+      "name": "Touristik-Verband Wiedtal",
+      "quote": "Our tourist information offices in the Rhine-Westerwald Nature Park & Wiedtal Touristik-Verband Wiedtal Neuwieder Straße 61 56588 Waldbreitbach info@wiedtal.de +49 2638 40 17 Zur Website",
+      "english": "Our tourist information offices in the Rhine-Westerwald Nature Park & Wiedtal Touristik-Verband Wiedtal Neuwieder Straße 61 56588 Waldbreitbach info@wiedtal.de +49 2638 40 17 To website"
+    },
+    {
+      "id": "s6",
+      "name": "Touristikbüro Dierdorf",
+      "quote": "Touristikbüro Dierdorf Poststraße 5 56269 Dierdorf tourismus@vg-dierdorf.de +49 2689 29 10 Zur Website",
+      "english": "Tourist Office Dierdorf Poststraße 5 56269 Dierdorf tourismus@vg-dierdorf.de +49 2689 29 10 To website"
+    },
+    {
+      "id": "s7",
+      "name": "Tourist-Information Puderbach",
+      "quote": "Tourist-Information Puderbach Hauptstraße 13 56395 Puderbach touristik@puderbacher-land.de +49 2684 85 81 60 Zur Website",
+      "english": "Tourist Information Puderbach Hauptstraße 13 56395 Puderbach touristik@puderbacher-land.de +49 2684 85 81 60 To website"
+    },
+    {
+      "id": "s8",
+      "name": "Tourist-Information Verbandsgemeinde Asbach",
+      "quote": "Tourist-Information Verbandsgemeinde Asbach Flammersfelder Straße 1 53567 Asbach tourismus@vg-asbach.de +49 2683 912 431 Zur Website",
+      "english": "Tourist Information Verbandsgemeinde Asbach Flammersfelder Straße 1 53567 Asbach tourismus@vg-asbach.de +49 2683 912 431 To website"
+    },
+    {
+      "id": "s9",
+      "name": "Tourismusbüro Flammersfeld",
+      "quote": "Tourismusbüro Flammersfeld Rheinstraße 17 57632 Flammersfeld tourist-info@vg-ak-ff.de +49 268185193 Zur Website",
+      "english": "Tourist Office Flammersfeld Rheinstraße 17 57632 Flammersfeld tourist-info@vg-ak-ff.de +49 268185193 To website"
+    }
+  ],
+  "days": [
+    {
+      "title": "Hiking and River Valleys of Wiedtal",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s5"
+      ]
+    },
+    {
+      "title": "Heritage and Nature in Flammersfeld and Asbach",
+      "stop_ids": [
+        "s4",
+        "s9",
+        "s8"
+      ]
+    },
+    {
+      "title": "Waterfalls and Regional Centers",
+      "stop_ids": [
+        "s3",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

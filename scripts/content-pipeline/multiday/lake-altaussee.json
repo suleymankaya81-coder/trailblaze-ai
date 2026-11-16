@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lake Altaussee",
+      "quote": "Author Barbara Frischmuth grew up by Lake Altaussee.",
+      "english": "Author Barbara Frischmuth grew up by Lake Altaussee."
+    },
+    {
+      "id": "s2",
+      "name": "Seewiese",
+      "quote": "The rocks at Seewiese, the forests and the peaks of Loser and Trisselwand are reflected in the lake, shaping the scenery.",
+      "english": "The rocks at Seewiese, the forests and the peaks of Loser and Trisselwand are reflected in the lake, shaping the scenery."
+    },
+    {
+      "id": "s3",
+      "name": "Loser",
+      "quote": "The local mountain is the Loser (1,838 m), offering impressive views of the surrounding landscapes, including Lake Altaussee, Lake Grundlsee, and the Dachstein massif.",
+      "english": "The local mountain is the Loser (1,838 m), offering impressive views of the surrounding landscapes, including Lake Altaussee, Lake Grundlsee, and the Dachstein massif."
+    },
+    {
+      "id": "s4",
+      "name": "Trisselwand",
+      "quote": "The rocks at Seewiese, the forests and the peaks of Loser and Trisselwand are reflected in the lake, shaping the scenery.",
+      "english": "The rocks at Seewiese, the forests and the peaks of Loser and Trisselwand are reflected in the lake, shaping the scenery."
+    },
+    {
+      "id": "s5",
+      "name": "Totes Gebirge",
+      "quote": "Altaussee sits in the Totes Gebirge, a mountain range in the Northern Limestone Alps.",
+      "english": "Altaussee sits in the Totes Gebirge, a mountain range in the Northern Limestone Alps."
+    },
+    {
+      "id": "s6",
+      "name": "Altaussee salt mine",
+      "quote": "Altaussee has a graduation and Kneipp facility that uses brine from the Altaussee salt mine.",
+      "english": "Altaussee has a graduation and Kneipp facility that uses brine from the Altaussee salt mine."
+    },
+    {
+      "id": "s7",
+      "name": "graduation and Kneipp facility",
+      "quote": "Altaussee has a graduation and Kneipp facility that uses brine from the Altaussee salt mine.",
+      "english": "Altaussee has a graduation and Kneipp facility that uses brine from the Altaussee salt mine."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lakeshore and Health Infrastructure",
+      "stop_ids": [
+        "s1",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Mountain Peaks and Geological Formations",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Wilderness Scenery and Mountain Ranges",
+      "stop_ids": [
+        "s2",
+        "s5"
+      ]
+    }
+  ]
+}

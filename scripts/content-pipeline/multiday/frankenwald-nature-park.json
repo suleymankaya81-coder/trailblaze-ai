@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Alte Schneidmühle",
+      "quote": "Die Alte Schneidmühle am Hochofen am Eingang zum Steinachtal bietet Informationen rund ums Thema Holzverarbeitung und Schneidvorführungen für Gruppen auf Anfrage.",
+      "english": "The Old Sawmill at the Hochofen at the entrance to the Steinachtal valley offers information on the subject of wood processing and cutting demonstrations for groups on request."
+    },
+    {
+      "id": "s2",
+      "name": "Steinachtal",
+      "quote": "Der Informationspunkt am Campingplatz Stadtsteinach informiert über die diversen Sehenswürdigkeiten im Naturpark und speziell die des Steinachtals.",
+      "english": "The information point at the Stadtsteinach campsite provides information about the various sights in the nature park and specifically those of the Steinachtal valley."
+    },
+    {
+      "id": "s3",
+      "name": "Forsthaus Gerlas",
+      "quote": "Bergbau und Geologie sind die Themenschwerpunkte im Wanderheim \"Forsthaus Gerlas\".",
+      "english": "Mining and geology are the main themes in the \"Forsthaus Gerlas\" hiking home."
+    },
+    {
+      "id": "s4",
+      "name": "Bahnhof Marktschorgast",
+      "quote": "Im Bahnhof Marktschorgast werden allgemeine Informationen zum Naturpark sowie zu den Verleihstationen für E-Bikes und dem 3fmobil (Radlbus) für Radfahrer vermittelt.",
+      "english": "At Marktschorgast station, general information about the nature park as well as e-bike rental stations and the 3fmobil (cycling bus) for cyclists is provided."
+    },
+    {
+      "id": "s5",
+      "name": "Naturpark-Infozentrum Blechschmidtenhammer",
+      "quote": "Besuchen Sie unser Naturpark-Infozentrum Blechschmidtenhammer bei Lichtenberg, bevor Sie das malerische Höllental erkunden.",
+      "english": "Visit our Blechschmidtenhammer Nature Park Information Centre near Lichtenberg before exploring the picturesque Höllental valley."
+    },
+    {
+      "id": "s6",
+      "name": "Höllental",
+      "quote": "Besuchen Sie unser Naturpark-Infozentrum Blechschmidtenhammer bei Lichtenberg, bevor Sie das malerische Höllental erkunden.",
+      "english": "Visit our Blechschmidtenhammer Nature Park Information Centre near Lichtenberg before exploring the picturesque Höllental valley."
+    },
+    {
+      "id": "s7",
+      "name": "Naturpark-Infozentrum Spechtsbrunn",
+      "quote": "Das Naturpark-Infozentrum Spechtsbrunn befindet sich im südöstlichsten Ausläufer des Naturparks Thüringer Wald, unmittelbar an der Landesgrenze zum Freistaat Bayern.",
+      "english": "The Spechtsbrunn Nature Park Information Centre is located in the southeasternmost foothills of the Thuringian Forest Nature Park, directly on the state border with the Free State of Bavaria."
+    },
+    {
+      "id": "s8",
+      "name": "Bahnhofstraße 9, 96349 Steinwiesen",
+      "quote": "Themenschwerpunkt: Die Kulturlandschaft des Frankenwaldes.",
+      "english": "Main theme: The cultural landscape of the Franconian Forest."
+    }
+  ],
+  "days": [
+    {
+      "title": "Valleys and Mills of Stadtsteinach",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s4"
+      ]
+    },
+    {
+      "title": "Northern Forests and Mining Heritage",
+      "stop_ids": [
+        "s3",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Cultural Landscapes and Borders",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

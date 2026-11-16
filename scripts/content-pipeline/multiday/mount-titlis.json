@@ -1,0 +1,87 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "TITLIS Tower",
+      "quote": "At over 3,000 meters above sea level, a new architectural landmark has taken shape, designed by the renowned architecture firm Herzog & de Meuron."
+    },
+    {
+      "id": "s2",
+      "name": "Joseph's Restaurant",
+      "quote": "Joseph’s Restaurant in the spectacular TITLIS Tower at 3,020 metres is now open."
+    },
+    {
+      "id": "s3",
+      "name": "TITLIS Rotair",
+      "quote": "Experience the glacier panorama from a spectacular 360-degree perspective in the world's first revolving cable car!"
+    },
+    {
+      "id": "s4",
+      "name": "Ice Flyer",
+      "quote": "The experience of flying high above the deep-blue crevasses will change you."
+    },
+    {
+      "id": "s5",
+      "name": "Glacier Cave",
+      "quote": "Pioneers can explore the 5,000-year-old heart of the glacier and feel its energy with their own hands."
+    },
+    {
+      "id": "s6",
+      "name": "Cliff Walk",
+      "quote": "Courage and a spirit of adventure are called for on Europe's highest suspension bridge."
+    },
+    {
+      "id": "s7",
+      "name": "Berghotel Trübsee",
+      "quote": "Temporary facilities will also remain in place near the Berghotel Trübsee as part of the project."
+    },
+    {
+      "id": "s8",
+      "name": "Lago Torbido",
+      "quote": "Located at Trübsee middle station, Lago Torbido offers authentic Italian cuisine, bags of style and plenty of charm!"
+    },
+    {
+      "id": "s9",
+      "name": "Truebsee Self-Service",
+      "quote": "The newly renovated self-service restaurant at Truebsee offers high-quality food in a modern setting."
+    },
+    {
+      "id": "s10",
+      "name": "Atelier Hess",
+      "quote": "At 1,800 metres above sea level, we combine tradition and innovation to create a unique culinary experience."
+    },
+    {
+      "id": "s11",
+      "name": "Stand Ski Hut",
+      "quote": "Stand ski hut has a classic hut vibe!"
+    }
+  ],
+  "days": [
+    {
+      "title": "Glacier and Peak Architecture",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "Icy Adventures and Slopes",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s11"
+      ]
+    },
+    {
+      "title": "Trübsee Middle Station Dining",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9",
+        "s10"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Upper Austria",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Nationalpark Kalkalpen"
+        "Reichraminger Hintergebirge",
+        "Buchenwälder"
       ],
       "seo_title": "Kalkalpen National Park Visit Guide"
     },
     "travel": {
       "slug": "kalkalpen-national-park",
+      "overview_name": "Kalkalpen National Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Kalkalpen National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.kalkalpen.at/",
@@ -31,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Kalkalpen National Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Mountain Ranges and Primeval Forests",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Nationalpark Kalkalpen",
-                "stop_id": "kalkalpen-national-park",
-                "detail": "The Kalkalpen National Park impresses with its wild forests, its hidden gorges and its promising mountain peaks. It is home to rare animal species. The ancient beech forests are recognized as UNESCO World Heritage sites. Water is another precious treasure. Over 800 springs feed the longest natural creek system in the Northern Limestone Alps."
+                "name": "Reichraminger Hintergebirge",
+                "stop_id": "kalkalpen-national-park--s1",
+                "detail": "The protected area includes the Reichraminger Hintergebirge and the Sengsengebirge in the southeast of Upper Austria."
+              },
+              {
+                "name": "Buchenwälder",
+                "stop_id": "kalkalpen-national-park--s3",
+                "detail": "The ancient beech forests are recognized as a UNESCO World Natural Heritage site."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Kalkalpen National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Water Sources and Information Centers",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Quellen",
+                "stop_id": "kalkalpen-national-park--s4",
+                "detail": "Over 800 springs feed the longest natural stream system of the Northern Limestone Alps."
+              },
+              {
+                "name": "Besucherzentren",
+                "stop_id": "kalkalpen-national-park--s5",
+                "detail": "In our visitor centers, you can receive information about the Kalkalpen National Park even during the winter months."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Kalkalpen National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +105,8 @@
             "url": "https://www.kalkalpen.at/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:45:22.098992+00:00"
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Graubunden",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Ruinaulta"
+        "Trin",
+        "Punt Ruinaulta",
+        "Isla Bella"
       ],
       "seo_title": "Rhine Gorge (Ruinaulta) Visit Guide"
     },
@@ -32,16 +34,67 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Rhine Gorge (Ruinaulta)",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Eastern Gate and River Crossings",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Ruinaulta",
-                "stop_id": "rhine-gorge-ruinaulta",
-                "detail": "Ruinaulta, also known as the Rhine Gorge, is a canyon in the canton of Graubünden (Grisons), Switzerland, carved by the Anterior Rhine between the villages of Ilanz/Glion and Reichenau. It was formed by the prehistoric Flims rockslide, which blocked the river and eventually gave rise to the present-day gorge."
+                "name": "Trin",
+                "stop_id": "rhine-gorge-ruinaulta--s1",
+                "detail": "In the gorge lie the stations of Trin, Versam-Safien, and Valendas-Sagogn, which are accessible by road from the villages on the surrounding heights and plateaus."
+              },
+              {
+                "name": "Punt Ruinaulta",
+                "stop_id": "rhine-gorge-ruinaulta--s2",
+                "detail": "At the Trin station, the pedestrian bridge Punt Ruinaulta spans the Rhine."
+              },
+              {
+                "name": "Isla Bella",
+                "stop_id": "rhine-gorge-ruinaulta--s3",
+                "detail": "A hiking trail leads past Isla Bella from Trin and over the railway bridge to Versam station."
+              },
+              {
+                "name": "Burg Wackenau",
+                "stop_id": "rhine-gorge-ruinaulta--s12",
+                "detail": "Wackenau at the castle hill of Wackenau Castle."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Rhine Gorge (Ruinaulta) before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Central Cliffs and Gorge Views",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Islabord",
+                "stop_id": "rhine-gorge-ruinaulta--s5",
+                "detail": "Islabord on the road from Versam to the Rhaetian Railway station Versam-Safien"
+              },
+              {
+                "name": "Spitg",
+                "stop_id": "rhine-gorge-ruinaulta--s6",
+                "detail": "Spitg on the east side of the Versamer Tobel."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Rhine Gorge (Ruinaulta) before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Western Wetlands and High Plateaus",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Valendas-Sagogn",
+                "stop_id": "rhine-gorge-ruinaulta--s7",
+                "detail": "At the Valendas-Sagogn station stands a road bridge that provides access to the station from Sagogn."
+              },
+              {
+                "name": "Isla Sut",
+                "stop_id": "rhine-gorge-ruinaulta--s10",
+                "detail": "Next to it lies the fen of Isla Sut."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Rhine Gorge (Ruinaulta) before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +132,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Ruinaulta"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Ruinaulta"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:48:56.049542+00:00"
       }
     }
   }

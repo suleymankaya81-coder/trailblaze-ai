@@ -1,0 +1,72 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Grabenstätter Moos",
+      "quote": "In the early morning, the fog in the Grabenstätter Moos has almost absorbed the reeds and the gnarled willows.",
+      "english": "In the early morning, the fog in the Grabenstätter Moos has almost absorbed the reeds and the gnarled willows."
+    },
+    {
+      "id": "s2",
+      "name": "Hirschau Bay",
+      "quote": "The Hirschau Bay was quite a bustling swimming area in the 1970s.",
+      "english": "The Hirschau Bay was quite a bustling swimming area in the 1970s."
+    },
+    {
+      "id": "s3",
+      "name": "wooden observation tower in the Hirschauer Bucht",
+      "quote": "In preparation for a multimedia lecture, he stands on the wooden observation tower in the Hirschauer Bucht this morning and holds the fluffy microphone into the fog.",
+      "english": "In preparation for a multimedia lecture, he stands on the wooden observation tower in the Hirschauer Bucht this morning and holds the fluffy microphone into the fog."
+    },
+    {
+      "id": "s4",
+      "name": "Achen Delta",
+      "quote": "The lake shore is lined with thick tree trunks, which the Tyrolean Achen brought with them from the mountains when the last snow melted and piled up like Mikado sticks here in the Achen Delta.",
+      "english": "The lake shore is lined with thick tree trunks, which the Tyrolean Achen brought with them from the mountains when the last snow melted and piled up like Mikado sticks here in the Achen Delta."
+    },
+    {
+      "id": "s5",
+      "name": "observation tower in Irschener Winkel",
+      "quote": "Bird watching from the observation tower in Irschener Winkel",
+      "english": "Bird watching from the observation tower in Irschener Winkel"
+    },
+    {
+      "id": "s6",
+      "name": "Irschener Bay",
+      "quote": "At the Irschener Bay between Bernau and Prien, where this morning swarms of coots cavort and cormorants crouch on dead wood to dry their feathers, the Chile flamingo looks a bit lost.",
+      "english": "At the Irschener Bay between Bernau and Prien, where this morning swarms of coots cavort and cormorants crouch on dead wood to dry their feathers, the Chile flamingo looks a bit lost."
+    },
+    {
+      "id": "s7",
+      "name": "Prien estuary",
+      "quote": "View of the Prien estuary",
+      "english": "View of the Prien estuary"
+    },
+    {
+      "id": "s8",
+      "name": "observation platform Chieming",
+      "quote": "View from the observation platform Chieming",
+      "english": "View from the observation platform Chieming"
+    }
+  ],
+  "days": [
+    {
+      "title": "East Bank and Delta Wetlands",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "West and North Shore Exploration",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

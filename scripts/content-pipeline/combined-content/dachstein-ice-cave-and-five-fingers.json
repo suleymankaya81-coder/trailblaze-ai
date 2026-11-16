@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Upper Austria",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Dachstein-Rieseneishöhle"
+        "Schönbergalm",
+        "Korsa"
       ],
       "seo_title": "Dachstein Ice Cave and Five Fingers Visit Guide"
     },
@@ -32,16 +33,57 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Dachstein Ice Cave and Five Fingers",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Cave Entrance and Ice-Free Formations",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Dachstein-Rieseneishöhle",
-                "stop_id": "dachstein-ice-cave-and-five-fingers",
-                "detail": "The Dachstein-Rieseneishöhle is an ice cave in the Dachstein massif in the municipal area of Obertraun in the Upper Austrian part of the Salzkammergut. The total length of the cave, known so far, is 2700 m, of which 800 m are touristically developed as a show cave. Dachstein-Rieseneishöhle is an important tourist destination in Upper Austria, which receives around 150,000 visits annually."
+                "name": "Schönbergalm",
+                "stop_id": "dachstein-ice-cave-and-five-fingers--s1",
+                "detail": "An asphalted footpath leads from the Schönbergalm to the entrance and exit of the areas developed for tourism."
+              },
+              {
+                "name": "Korsa",
+                "stop_id": "dachstein-ice-cave-and-five-fingers--s2",
+                "detail": "The guided tour path begins in the ice-free part of the cave and leads through the Korsa stream bed to the Lehmhallenlabyrinth, a hall with stalactites."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Dachstein Ice Cave and Five Fingers before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "History and Deep Caverns",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Bärenfriedhof",
+                "stop_id": "dachstein-ice-cave-and-five-fingers--s4",
+                "detail": "Already the first cave explorers found bones of cave bears there, which is why this area is also called Bärenfriedhof."
+              },
+              {
+                "name": "Parsivaldom",
+                "stop_id": "dachstein-ice-cave-and-five-fingers--s5",
+                "detail": "Behind a weather door, the ice part of the cave begins with the Parsivaldom."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Dachstein Ice Cave and Five Fingers before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Grand Ice Halls and Highlights",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Tristandom",
+                "stop_id": "dachstein-ice-cave-and-five-fingers--s6",
+                "detail": "After the Kristallogletscher, the Tristandom begins as the last large hall of the show part of the cave."
+              },
+              {
+                "name": "Eiskapelle",
+                "stop_id": "dachstein-ice-cave-and-five-fingers--s7",
+                "detail": "Highlights of the nearly one-hour tour are the Eiskapelle and the Gralsburg."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Dachstein Ice Cave and Five Fingers before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +121,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://de.wikipedia.org/wiki/Dachstein-Rieseneish%C3%B6hle"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Dachstein-Rieseneish%C3%B6hle"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:44:39.153883+00:00"
       }
     }
   }

@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Ponte Brolla",
+      "quote": "At Ponte Brolla the force of the River Maggia has cleft the rock, gouging out and polishing the gneiss.",
+      "english": "At Ponte Brolla the force of the River Maggia has cleft the rock, gouging out and polishing the gneiss."
+    },
+    {
+      "id": "s2",
+      "name": "Valle del Salto",
+      "quote": "The itinerary «Valle del Salto» in Maggia leads on nice paths and represents no important differences in height.",
+      "english": "The itinerary «Valle del Salto» in Maggia leads on nice paths and represents no important differences in height."
+    },
+    {
+      "id": "s3",
+      "name": "Gordevio",
+      "quote": "Plunge into the invigorating waters of the crystal-clear Maggia River, take a walk and listen to the sounds of the magical forest, or start a crackling little fire on a rocky plateau by the shore: days and nights in Gordevio are made for people who want to get close to nature.",
+      "english": "Plunge into the invigorating waters of the crystal-clear Maggia River, take a walk and listen to the sounds of the magical forest, or start a crackling little fire on a rocky plateau by the shore: days and nights in Gordevio are made for people who want to get close to nature."
+    },
+    {
+      "id": "s4",
+      "name": "Bignasco",
+      "quote": "The Sentiero Cristallina links Bignasco in Valle Maggia with Airolo in Val Bedretto.",
+      "english": "The Sentiero Cristallina links Bignasco in Valle Maggia with Airolo in Val Bedretto."
+    },
+    {
+      "id": "s5",
+      "name": "Lake Sambuco",
+      "quote": "The road leads through a dense forest of evergreens and past Lake Sambuco until it reaches Lake Narèt at alt. 2310 m.",
+      "english": "The road leads through a dense forest of evergreens and past Lake Sambuco until it reaches Lake Narèt at alt. 2310 m."
+    },
+    {
+      "id": "s6",
+      "name": "Lake Narèt",
+      "quote": "The road leads through a dense forest of evergreens and past Lake Sambuco until it reaches Lake Narèt at alt. 2310 m.",
+      "english": "The road leads through a dense forest of evergreens and past Lake Sambuco until it reaches Lake Narèt at alt. 2310 m."
+    },
+    {
+      "id": "s7",
+      "name": "Fusio",
+      "quote": "Boutique Hotel Fusio is set in the peaceful mountain village of Fusio at the far end of the Maggia Valley.",
+      "english": "Boutique Hotel Fusio is set in the peaceful mountain village of Fusio at the far end of the Maggia Valley."
+    },
+    {
+      "id": "s8",
+      "name": "Mario Botta Church in Mogno",
+      "quote": "Visit the famous Mario Botta Church in the Ticino village of Mogno: A masterpiece of white and black Ticino natural stone in the Maggia Valley.",
+      "english": "Visit the famous Mario Botta Church in the Ticino village of Mogno: A masterpiece of white and black Ticino natural stone in the Maggia Valley."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lower Valley Gorges and Nature",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Middle Valley Trails and Lakes",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Upper Valley Heritage and Peaks",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

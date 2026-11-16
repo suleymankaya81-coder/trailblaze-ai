@@ -1,0 +1,91 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Tomasee lake",
+      "quote": "From the Oberalppass, a steep climb leads to the source of the Rhine at the Tomasee lake.",
+      "english": "From the Oberalppass, a steep climb leads to the source of the Rhine at the Tomasee lake."
+    },
+    {
+      "id": "s2",
+      "name": "Val Maighels",
+      "quote": "After hiking through the wetlands of Val Maighels you start the climb to the Maighelspass and the idyllic Portgerensee lake.",
+      "english": "After hiking through the wetlands of Val Maighels you start the climb to the Maighelspass and the idyllic Portgerensee lake."
+    },
+    {
+      "id": "s3",
+      "name": "Portgerensee lake",
+      "quote": "After hiking through the wetlands of Val Maighels you start the climb to the Maighelspass and the idyllic Portgerensee lake.",
+      "english": "After hiking through the wetlands of Val Maighels you start the climb to the Maighelspass and the idyllic Portgerensee lake."
+    },
+    {
+      "id": "s4",
+      "name": "Maighels Hut",
+      "quote": "The circular bike route from Sedrun to the Maighels Hut first leads straight to the source of the Rhine before crossing the Oberalp Pass and returning to Sedrun.",
+      "english": "The circular bike route from Sedrun to the Maighels Hut first leads straight to the source of the Rhine before crossing the Oberalp Pass and returning to Sedrun."
+    },
+    {
+      "id": "s5",
+      "name": "Piz Calmot mountain inn",
+      "quote": "The Piz Calmot mountain inn is located at the top of the Oberalp Pass at 2,048 meters above sea level, in the immediate vicinity of the source of the Rhine.",
+      "english": "The Piz Calmot mountain inn is located at the top of the Oberalp Pass at 2,048 meters above sea level, in the immediate vicinity of the source of the Rhine."
+    },
+    {
+      "id": "s6",
+      "name": "Rhine Gorge",
+      "quote": "Visit Chur, Disentis, and Andermatt, and travel through the Rhine Gorge via the Oberalp Pass.",
+      "english": "Visit Chur, Disentis, and Andermatt, and travel through the Rhine Gorge via the Oberalp Pass."
+    },
+    {
+      "id": "s7",
+      "name": "Pazolastock",
+      "quote": "The hut is reached from the Oberalp Pass via Pazolastock or from Maighels in two to three hours.",
+      "english": "The hut is reached from the Oberalp Pass via Pazolastock or from Maighels in two to three hours."
+    },
+    {
+      "id": "s8",
+      "name": "Piz Badus",
+      "quote": "This four-hour ski tour on the Gotthard massif takes you up 2,928-metre Piz Badus before descending more than 1,300 metres via the Maighelshütte to Tschamut.",
+      "english": "This four-hour ski tour on the Gotthard massif takes you up 2,928-metre Piz Badus before descending more than 1,300 metres via the Maighelshütte to Tschamut."
+    },
+    {
+      "id": "s9",
+      "name": "Cuolm Val",
+      "quote": "But even the more demanding skiers enjoy the most beautiful piste in the area – the pleasantly wide Sedrun Ride from Cuolm Val to Dieni.",
+      "english": "But even the more demanding skiers enjoy the most beautiful piste in the area – the pleasantly wide Sedrun Ride from Cuolm Val to Dieni."
+    },
+    {
+      "id": "s10",
+      "name": "Dieni",
+      "quote": "But even the more demanding skiers enjoy the most beautiful piste in the area – the pleasantly wide Sedrun Ride from Cuolm Val to Dieni.",
+      "english": "But even the more demanding skiers enjoy the most beautiful piste in the area – the pleasantly wide Sedrun Ride from Cuolm Val to Dieni."
+    }
+  ],
+  "days": [
+    {
+      "title": "Rhine Source and Mountain Peaks",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s8",
+        "s5"
+      ]
+    },
+    {
+      "title": "Maighels Valley Exploration",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Sedrun Slopes and Gorges",
+      "stop_ids": [
+        "s9",
+        "s10",
+        "s6"
+      ]
+    }
+  ]
+}

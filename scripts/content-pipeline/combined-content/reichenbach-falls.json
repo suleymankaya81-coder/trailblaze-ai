@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Bern",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Reichenbach Falls"
+        "Sherlock Holmes Museum",
+        "Aare Gorge"
       ],
       "seo_title": "Reichenbach Falls Visit Guide"
     },
     "travel": {
       "slug": "reichenbach-falls",
+      "overview_name": "Reichenbach Falls",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Reichenbach Falls before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.myswitzerland.com/en-ch/search/?q=Reichenbach#Header",
@@ -31,16 +33,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Reichenbach Falls",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Meiringen Holmes History and Aare Gorge",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Reichenbach Falls",
-                "stop_id": "reichenbach-falls",
-                "detail": "Take the nostalgic Reichenbach Falls cable car to the 120-meter-high waterfall near Meiringen and walk in the footsteps of Sherlock Holmes."
+                "name": "Sherlock Holmes Museum",
+                "stop_id": "reichenbach-falls--s2",
+                "detail": "The Sherlock Holmes Museum is one of the highlights, besides the bronze statue and the roaring Reichenbach Falls with the fateful battle site."
+              },
+              {
+                "name": "Aare Gorge",
+                "stop_id": "reichenbach-falls--s3",
+                "detail": "Discover Meiringen-Hasliberg in the Bernese Oberland: The Aare Gorge, Reichenbach Falls, family-friendly ski area and magnificent hiking trails await you."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Reichenbach Falls before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Exploration of Reichenbachtal and Rosenlaui",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Reichenbachtal",
+                "stop_id": "reichenbach-falls--s4",
+                "detail": "Easy, long ascent through Reichenbachtal up to Grosse Scheidegg at the foot of the mighty Wetterhorn cliffs."
+              },
+              {
+                "name": "Rosenlaui Hotel",
+                "stop_id": "reichenbach-falls--s5",
+                "detail": "Hike past the nostalgic Rosenlaui Hotel and glacier gorge, enchanted by the Wetterhorn."
+              },
+              {
+                "name": "Rosenlauischlucht (gorge)",
+                "stop_id": "reichenbach-falls--s7",
+                "detail": "Along the Lütschine up to Grindelwald, the glacier village at the foot of the majestic Eiger, Mönch & Jungfrau peaks, on over Grosse Scheidegg, past Rosenlauischlucht (gorge) and the Reichenbach Falls, where Sherlock Holmes fell to his death, to Meiringen."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Reichenbach Falls before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +110,8 @@
             "url": "https://www.myswitzerland.com/en-ch/search/?q=Reichenbach#Header"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:48:45.138540+00:00"
       }
     }
   }

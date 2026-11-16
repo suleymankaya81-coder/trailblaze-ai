@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lombardy",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parco naturale lombardo della Valle del Ticino"
+        "Sesto Calende",
+        "Somma Lombardo"
       ],
       "seo_title": "Parco naturale lombardo della Valle del Ticino Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Parco naturale lombardo della Valle del Ticino",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Northern Gorges and Riverside Towns",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parco naturale lombardo della Valle del Ticino",
-                "stop_id": "parco-naturale-lombardo-della-valle-del-ticino",
-                "detail": "The Parco Naturale Lombardo Della Valle Del Ticino is a Nature reserve established on 9 January 1974. It was the first Italian regional park to be established and the first European river park. The park is located along the banks of the river Ticino, in Lombardy, in the provinces of Milan, Pavia and Varese, in an area of 91,410 hectares (2,2588 acres) between Lake Maggiore and the Po. The park borders the Parco naturale della Valle del Ticino, located on the other side of the river in Piedmont, created in 1978. In [dated source] the two Parks were included by UNESCO in the World Network of Biosphere Reserves."
+                "name": "Sesto Calende",
+                "stop_id": "parco-naturale-lombardo-della-valle-del-ticino--s1",
+                "detail": "Leaving Lake Maggiore, near Sesto Calende, the Ticino crosses the entire Lombard plain, creating its own valley, before flowing into the Po a few kilometers south of Pavia, at the Ponte della Becca."
+              },
+              {
+                "name": "Somma Lombardo",
+                "stop_id": "parco-naturale-lombardo-della-valle-del-ticino--s2",
+                "detail": "From Lake Maggiore to Somma Lombardo, the Ticino flows forming meanders set in deep gorges, carved into moraine deposits."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Parco naturale lombardo della Valle del Ticino before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Park Administration and Widening Banks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Ponte Vecchio",
+                "stop_id": "parco-naturale-lombardo-della-valle-del-ticino--s5",
+                "detail": "The institutional headquarters and the technical and administrative offices of the entity that manages the park are located in Magenta, in the locality of Ponte Vecchio."
+              },
+              {
+                "name": "Motta Visconti",
+                "stop_id": "parco-naturale-lombardo-della-valle-del-ticino--s3",
+                "detail": "From Somma Lombardo to Motta Visconti, the river changes its appearance: the riverbed widens to cover a width of about three kilometers, forming numerous gravel or sand islands."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Parco naturale lombardo della Valle del Ticino before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Parco_naturale_lombardo_della_Valle_del_Ticino"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_naturale_lombardo_della_Valle_del_Ticino"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:45:18.493056+00:00"
       }
     }
   }

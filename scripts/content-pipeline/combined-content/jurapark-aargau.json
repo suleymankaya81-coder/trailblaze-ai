@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Aargau",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Jurapark Aargau"
+        "Roman amphitheatre",
+        "Aare"
       ],
       "seo_title": "Jurapark Aargau Visit Guide"
     },
     "travel": {
       "slug": "jurapark-aargau",
+      "overview_name": "Jurapark Aargau",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Jurapark Aargau before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.myswitzerland.com/en-ch/experiences/route/jurapark-aargau-route/",
@@ -31,16 +33,57 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Jurapark Aargau",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Roman History and River Landscapes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Jurapark Aargau",
-                "stop_id": "jurapark-aargau",
-                "detail": "The Jurapark Aargau route leads through Switzerland's green treasure trove – across fields, past gnarled high-crowned trees, through the sparse forests of the Tafeljura and Kettenjura. In two stages, you cross unique cultivated landscapes and experience the Jurapark Aargau in all its diversity."
+                "name": "Roman amphitheatre",
+                "stop_id": "jurapark-aargau--s1",
+                "detail": "In Brugg and Windisch, at the southern foot of the Jura, you can immerse yourself in the history of two empires from the first few minutes: the Roman amphitheatre, the Vindonissa Legionnaires' path with the only Roman legionnaires' camp in Switzerland and the Habsburg monastery of Königsfelden take you on a journey into the past."
+              },
+              {
+                "name": "Aare",
+                "stop_id": "jurapark-aargau--s3",
+                "detail": "Along the Aare, alluvial zones, secluded bays, wooded islands and sandbanks will delight you."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Jurapark Aargau before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Rhine Banks and Historic Towns",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Rhine",
+                "stop_id": "jurapark-aargau--s4",
+                "detail": "Passing quiet hamlets, you reach the banks of the Rhine."
+              },
+              {
+                "name": "Laufenburg",
+                "stop_id": "jurapark-aargau--s5",
+                "detail": "Laufenburg's terraced old town, with its towers and historic town wall nestled in the bend of the Rhine, is fascinating."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Jurapark Aargau before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Fricktal Orchards and Riverside Paths",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "upper Fricktal",
+                "stop_id": "jurapark-aargau--s6",
+                "detail": "A little later, you enter the upper Fricktal with its high-crowned orchards."
+              },
+              {
+                "name": "Aare riverside path",
+                "stop_id": "jurapark-aargau--s7",
+                "detail": "Along the beautiful Aare riverside path, you leisurely coast to Brugg."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Jurapark Aargau before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +123,8 @@
             "url": "https://www.myswitzerland.com/en-ch/experiences/route/jurapark-aargau-route/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:46:35.960016+00:00"
       }
     }
   }

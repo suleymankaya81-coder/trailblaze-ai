@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Schloss Orth",
+      "quote": "Visit Schloss Orth, National Park Centre and museum",
+      "english": "Visit Schloss Orth, National Park Centre and museum"
+    },
+    {
+      "id": "s2",
+      "name": "Schlossinsel area",
+      "quote": "National Park information, exhibitions, Schlossinsel area",
+      "english": "National Park information, exhibitions, Schlossinsel area"
+    },
+    {
+      "id": "s3",
+      "name": "outdoors class room",
+      "quote": "Schools and youth groups are welcome in our outdoors class room.",
+      "english": "Schools and youth groups are welcome in our outdoors class room."
+    },
+    {
+      "id": "s4",
+      "name": "fascinating wetlands landscape",
+      "quote": "Together with national park rangers, the fascinating wetlands landscape can be experienced on land and water.",
+      "english": "Together with national park rangers, the fascinating wetlands landscape can be experienced on land and water."
+    },
+    {
+      "id": "s5",
+      "name": "side waters",
+      "quote": "By means of innovative river revitalization projects, side waters are reconnected to the river and natural Danube banks are fostered.",
+      "english": "By means of innovative river revitalization projects, side waters are reconnected to the river and natural Danube banks are fostered."
+    },
+    {
+      "id": "s6",
+      "name": "natural Danube banks",
+      "quote": "By means of innovative river revitalization projects, side waters are reconnected to the river and natural Danube banks are fostered.",
+      "english": "By means of innovative river revitalization projects, side waters are reconnected to the river and natural Danube banks are fostered."
+    },
+    {
+      "id": "s7",
+      "name": "open-air laboratory",
+      "quote": "As a large open-air laboratory, the Donau-Auen National Park also offers a great variety of opportunities to science to explore natural processes and interrelationships.",
+      "english": "As a large open-air laboratory, the Donau-Auen National Park also offers a great variety of opportunities to science to explore natural processes and interrelationships."
+    }
+  ],
+  "days": [
+    {
+      "title": "National Park Centre and Island",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Educational Wetlands Discovery",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "River Restoration and Science",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

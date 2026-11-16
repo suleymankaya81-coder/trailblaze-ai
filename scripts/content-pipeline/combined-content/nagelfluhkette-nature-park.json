@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Bavaria",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Nagelfluhkette Nature Park"
+        "Balderschwang",
+        "old yew tree in Balderschwang",
+        "path of the old trees"
       ],
       "seo_title": "Nagelfluhkette Nature Park Visit Guide"
     },
     "travel": {
       "slug": "nagelfluhkette-nature-park",
+      "overview_name": "Nagelfluhkette Nature Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Nagelfluhkette Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://bavaria.travel/stories/ranger-tour-nagelfluhkette-nature-park/",
@@ -31,16 +34,82 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Nagelfluhkette Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Ancient Trees and Peaks of Balderschwang",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Nagelfluhkette Nature Park",
-                "stop_id": "nagelfluhkette-nature-park",
-                "detail": "We accompanied ranger Theresa in the Nagelfluhkette Nature Park to dwarfish ancient trees, hidden waterfalls, snow-white dream landscapes and in search of the Apollo butterfly."
+                "name": "Balderschwang",
+                "stop_id": "nagelfluhkette-nature-park--s2",
+                "detail": "The people of Balderschwang call their home \"Bavarian Siberia\"."
+              },
+              {
+                "name": "old yew tree in Balderschwang",
+                "stop_id": "nagelfluhkette-nature-park--s4",
+                "detail": "The old yew tree in Balderschwang is said to have been standing here for up to 2,000 years."
+              },
+              {
+                "name": "path of the old trees",
+                "stop_id": "nagelfluhkette-nature-park--s5",
+                "detail": "There you will find the path of the old trees, where one veteran tree follows the next."
+              },
+              {
+                "name": "Siplinger Kopf",
+                "stop_id": "nagelfluhkette-nature-park--s9",
+                "detail": "A popular Nagelfluh peak and also the highest point is the Siplinger Kopf."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Nagelfluhkette Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "High Passes and Winter Valleys",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Riedberg",
+                "stop_id": "nagelfluhkette-nature-park--s6",
+                "detail": "The Riedberg is Germany's highest road pass."
+              },
+              {
+                "name": "Riedberger Horn",
+                "stop_id": "nagelfluhkette-nature-park--s3",
+                "detail": "North of the pass rises the Riedberger Horn, which, with snow guaranteed until spring, is popular among alpine skiers and ski tourers."
+              },
+              {
+                "name": "Weißachtal",
+                "stop_id": "nagelfluhkette-nature-park--s1",
+                "detail": "In the forest of the Weißachtal hundreds of birds make the forest come alive with their songs."
+              },
+              {
+                "name": "Ostertaltobeln",
+                "stop_id": "nagelfluhkette-nature-park--s7",
+                "detail": "Indeed, this is also evident in the Ostertaltobeln, which can only be visited in winter in the company of the rangers."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Nagelfluhkette Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Nature Centers and Lowland Waters",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "AlpSeeHaus",
+                "stop_id": "nagelfluhkette-nature-park--s10",
+                "detail": "We end our tour where all the water comes together, near Immenstadt at the Nagelfluhkette Nature Park Centre, also known as the \"AlpSeeHaus\"."
+              },
+              {
+                "name": "Big Alpsee",
+                "stop_id": "nagelfluhkette-nature-park--s11",
+                "detail": "It is beautifully situated on the Big Alpsee, the largest natural lake in the Allgäu."
+              },
+              {
+                "name": "Gunzesrieder Valley",
+                "stop_id": "nagelfluhkette-nature-park--s8",
+                "detail": "The Gunzesrieder Valley lies in the middle of the nature park."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Nagelfluhkette Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +149,8 @@
             "url": "https://bavaria.travel/stories/ranger-tour-nagelfluhkette-nature-park/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:49:47.650417+00:00"
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Styria",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Sölktäler"
+        "Breitlahnalm",
+        "Schwarzensee"
       ],
       "seo_title": "Sölktäler Nature Park Visit Guide"
     },
     "travel": {
       "slug": "solktaler-nature-park",
+      "overview_name": "Sölktäler Nature Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Sölktäler Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.naturparke.at/naturpark/steiermark/soelktaeler/",
@@ -31,16 +33,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Sölktäler Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Hiking the Kleinsölktal Valley",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Sölktäler",
-                "stop_id": "solktaler-nature-park",
-                "detail": "Far from the hustle and bustle of everyday life, the Sölktäler are the ideal place to rest and regain strength. Here there are no crowds, here there are not even cable cars, but lonely mountains, magnificent peaks and crystal clear water. Take a deep breath and enjoy the freshness of the air, experiencing the original beauty of this region. Finally vacation, finally arrive – finally rest."
+                "name": "Breitlahnalm",
+                "stop_id": "solktaler-nature-park--s4",
+                "detail": "The easy but very varied hike leads you from the Breitlahnalm in the Kleinsölk valley to the Schwarzensee lake and further to the rustic huts of the Putzental Almen, where you can enjoy specialities of the nature park (e.g. fresh brook trout, Steirerkäsbrot and much more)."
+              },
+              {
+                "name": "Schwarzensee",
+                "stop_id": "solktaler-nature-park--s5",
+                "detail": "A detailed description of this hike can be found here: Tour details Schwarzensee and Putzentalalm"
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Sölktäler Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Alpine Lakes and Pastures",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Kaltenbachalm",
+                "stop_id": "solktaler-nature-park--s7",
+                "detail": "Above the Kaltenbachalm, at the sharp bend in the road, there is a small parking lot."
+              },
+              {
+                "name": "ersten Kaltenbachsee",
+                "stop_id": "solktaler-nature-park--s8",
+                "detail": "From there, the trail leads over the stream and then in many serpentines up to the first Kaltenbach lake."
+              },
+              {
+                "name": "Oberen Kaltenbachsee",
+                "stop_id": "solktaler-nature-park--s9",
+                "detail": "Above the tree line, the trail leads up over a long slope to the Upper Kaltenbach lake."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Sölktäler Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +110,8 @@
             "url": "https://www.naturparke.at/naturpark/steiermark/soelktaeler/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:49:57.273203+00:00"
       }
     }
   }

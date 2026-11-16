@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Campania",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Amalfi Coast"
+        "Amalfi",
+        "Duomo",
+        "Atrani"
       ],
       "seo_title": "Amalfi Coast Visit Guide"
     },
@@ -32,16 +34,77 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Amalfi Coast",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Central Maritime Traditions and Amalfi",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Amalfi Coast",
-                "stop_id": "amalfi-coast",
-                "detail": "The Amalfi Coast (Italian: Costiera amalfitana [koˈstjɛːra amalfiˈtaːna] or Costa d'Amalfi) is a stretch of coastline overlooking the Tyrrhenian Sea and the Gulf of Salerno. It is located in the Province of Salerno, in the Campania region of southern Italy, south of the Sorrentine Peninsula and north of the Cilentan Coast."
+                "name": "Amalfi",
+                "stop_id": "amalfi-coast--s1",
+                "detail": "It takes its name from the city of Amalfi, its geographic and historical core."
+              },
+              {
+                "name": "Duomo",
+                "stop_id": "amalfi-coast--s2",
+                "detail": "Amalfi with the Cathedral and the Cloister of Paradise;"
+              },
+              {
+                "name": "Atrani",
+                "stop_id": "amalfi-coast--s9",
+                "detail": "Atrani with the churches of San Salvatore del Birecto and Santa Maria Maddalena Penitente;"
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Amalfi Coast before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Western Views and Coastal Villas",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Positano",
+                "stop_id": "amalfi-coast--s5",
+                "detail": "From the end of the nineteenth century onwards, the Coast had a great international tourism development, with Positano considered one of the main destinations to visit."
+              },
+              {
+                "name": "Grotta dello Smeraldo",
+                "stop_id": "amalfi-coast--s10",
+                "detail": "Conca dei Marini; the village of the sfogliatella, with its Emerald Grotto and the Patronal Church of San Giovanni Battista;"
+              },
+              {
+                "name": "Ravello",
+                "stop_id": "amalfi-coast--s12",
+                "detail": "Ravello the city of music with its Cathedral and the prestigious Villa Cimbrone and Villa Rufolo, as well as the Oscar Niemeyer Auditorium;"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Amalfi Coast before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Eastern Ceramics and Roman Ruins",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Minori",
+                "stop_id": "amalfi-coast--s4",
+                "detail": "In ancient times the territory of the Coast formed part of the Roman Empire, as evidenced by the presence of numerous patrician villas, the most extensive of which is located in Minori."
+              },
+              {
+                "name": "Cetara",
+                "stop_id": "amalfi-coast--s7",
+                "detail": "Among the coastal specialties, the anchovies and the 'colatura' produced in Cetara can also be mentioned, as well as the ceramics made and hand-painted in Vietri sul Mare."
+              },
+              {
+                "name": "Vietri sul Mare",
+                "stop_id": "amalfi-coast--s8",
+                "detail": "Vietri sul Mare known throughout the world for the ancient tradition of ceramic processing and its hamlet Albori, which is part of the club of the most beautiful villages in Italy."
+              },
+              {
+                "name": "Castello di San Nicola de Thoro Plano",
+                "stop_id": "amalfi-coast--s11",
+                "detail": "Maiori with the Collegiate Church of Santa Maria a Mare and the Castle of San Nicola de Thoro Plano;"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Amalfi Coast before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +142,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Amalfi_Coast"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Costiera_amalfitana"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:44:34.520541+00:00"
       }
     }
   }

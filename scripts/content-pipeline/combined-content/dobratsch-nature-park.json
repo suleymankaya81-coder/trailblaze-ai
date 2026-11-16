@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Carinthia",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Dobratsch"
+        "Schütt",
+        "Gipfel des Dobratsch"
       ],
       "seo_title": "Dobratsch Nature Park Visit Guide"
     },
     "travel": {
       "slug": "dobratsch-nature-park",
+      "overview_name": "Dobratsch Nature Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Dobratsch Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.naturparke.at/naturpark/kaernten/dobratsch/",
@@ -31,16 +33,62 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Dobratsch Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Summit and Southern Slopes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Dobratsch",
-                "stop_id": "dobratsch-nature-park",
-                "detail": "In the middle of the idyllic lake landscape of Carinthia lies the first nature park in Carinthia, the Dobratsch. The pouring on the southern slope of the mountain is the largest mountain fall area in the Eastern Alps and is called the melting pot of nature. The species-rich fauna and flora is additionally favored here by the dry warm climate and the largely untouched."
+                "name": "Schütt",
+                "stop_id": "dobratsch-nature-park--s1",
+                "detail": "The Schütt on the southern slope of the mountain is the largest landslide area in the Eastern Alps and is described as a melting pot of nature."
+              },
+              {
+                "name": "Gipfel des Dobratsch",
+                "stop_id": "dobratsch-nature-park--s2",
+                "detail": "The summit of the Dobratsch is easily accessible for families with children during a leisurely winter hike."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Dobratsch Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Mining Heritage and Underground Worlds",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Stollenwanderweg",
+                "stop_id": "dobratsch-nature-park--s3",
+                "detail": "The Stollenwanderweg is a circular hiking trail and was established by idealists from the Mining Cultural Association."
+              },
+              {
+                "name": "Terra Mystica",
+                "stop_id": "dobratsch-nature-park--s4",
+                "detail": "The underground world can be visited in Terra Mystica and Terra Montana."
+              },
+              {
+                "name": "Erzberges",
+                "stop_id": "dobratsch-nature-park--s5",
+                "detail": "It leads along the Erzberg and offers insights into the mining tradition of the Bleiberg Valley through old tunnels."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Dobratsch Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Educational Theme Trails",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Maibacherl",
+                "stop_id": "dobratsch-nature-park--s6",
+                "detail": "On this circular hiking trail, numerous display boards designed by children explain the nature of the region with its plants and animals; furthermore, the hiker learns interesting facts about hiking in the footsteps of the Romans along the Roman road, and a special feature is the “Maibacherl” – a seasonal thermal water spring right next to the path."
+              },
+              {
+                "name": "Bienenlehrpfad",
+                "stop_id": "dobratsch-nature-park--s7",
+                "detail": "Together with the students of the Dobratsch Nature Park school – VS Arnoldstein, the beekeeping association, the Dobratsch Nature Park, and the market town of Arnoldstein, a public bee educational trail was established."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Dobratsch Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +128,8 @@
             "url": "https://www.naturparke.at/naturpark/kaernten/dobratsch/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:44:48.321338+00:00"
       }
     }
   }

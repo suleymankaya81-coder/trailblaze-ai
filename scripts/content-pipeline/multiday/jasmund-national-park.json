@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Buchenwälder",
+      "quote": "Die größten Buchenwälder an der Ostseeküste erstrecken sich hier über Hügel und Bachtäler, umschließen lichte Moore und Quellen.",
+      "english": "The largest beech forests on the Baltic coast stretch here over hills and stream valleys, enclosing sparse moors and springs."
+    },
+    {
+      "id": "s2",
+      "name": "Bachtäler",
+      "quote": "Die größten Buchenwälder an der Ostseeküste erstrecken sich hier über Hügel und Bachtäler, umschließen lichte Moore und Quellen.",
+      "english": "The largest beech forests on the Baltic coast stretch here over hills and stream valleys, enclosing sparse moors and springs."
+    },
+    {
+      "id": "s3",
+      "name": "Kreideküste",
+      "quote": "An der berühmten weißen Kreideküste treffen schattige grüne Wälder auf das Blau des Meeres.",
+      "english": "At the famous white chalk coast, shady green forests meet the blue of the sea."
+    },
+    {
+      "id": "s4",
+      "name": "Piekberg",
+      "quote": "hoch ist die höchste Erhebung, der Piekberg",
+      "english": "high is the highest elevation, the Piekberg"
+    },
+    {
+      "id": "s5",
+      "name": "Nationalpark-Zentrum KÖNIGSSTUHL",
+      "quote": "Das Nationalpark-Zentrum KÖNIGSSTUHL lädt vom 12. bis 30. Oktober zu einem abwechslungsreichen Programm ein.",
+      "english": "The National Park Centre KÖNIGSSTUHL invites you to a varied program from October 12th to 30th."
+    },
+    {
+      "id": "s6",
+      "name": "UNESCO-Welterbeforum Waldhalle",
+      "quote": "Am 27. September von 12 bis 16 Uhr lädt das Waldfest am UNESCO-Welterbeforum Waldhalle zu Live-Musik, Mitmachangeboten und Stockbrot ein.",
+      "english": "On September 27th from 12 p.m. to 4 p.m., the forest festival at the UNESCO World Heritage Forum Waldhalle invites you to live music, hands-on activities, and stick bread."
+    },
+    {
+      "id": "s7",
+      "name": "Wanderrouten",
+      "quote": "Entdecken Sie die wilde Natur entlang ausgewählter Wanderrouten",
+      "english": "Discover the wild nature along selected hiking routes"
+    }
+  ],
+  "days": [
+    {
+      "title": "Forest Peaks and Hiking Trails",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Chalk Coast and Visitor Centers",
+      "stop_ids": [
+        "s3",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Valleys and Wilderness",
+      "stop_ids": [
+        "s2"
+      ]
+    }
+  ]
+}

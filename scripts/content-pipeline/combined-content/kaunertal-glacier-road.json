@@ -1,39 +1,31 @@
 {
-  "fingerprint": "8fa4ea683b1dfb4b7a4428bd37584a84870be1475d7ced88356949e6a01b5802",
   "status": "validated",
-  "prompt_chars": 5693,
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Tyrol",
-      "tagline": "A high-alpine journey from the valley floor to the edge of eternal ice.",
-      "best_season": "summer",
-      "trip_duration_days": "1",
-      "recommended_duration": "1 day",
-      "permit_level": "none",
-      "seo_title": "Kaunertal Glacier Road Alpine Driving Guide",
-      "best_seasons": [
-        "summer"
-      ],
-      "scenic_score": 5,
-      "camping_score": 0,
+      "tagline": "The Kaunertal Glacier Road meanders from the valley floor to the edge of the eternal ice and is home to extrao",
+      "best_season": "Check official seasonal information",
+      "best_seasons": [],
+      "scenic_score": null,
+      "camping_score": null,
       "avg_daily_budget": null,
-      "aliases": [
-        "Kaunertaler Gletscherstraße"
-      ],
-      "gateway_cities": [
-        "Feichten"
-      ],
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
+      "permit_level": "moderate",
+      "aliases": [],
+      "gateway_cities": [],
       "similar_slugs": [],
-      "trip_tags": [
-        "scenic drive",
-        "alpine"
-      ],
+      "trip_tags": [],
       "activities": [
-        "Kaunertal Glacier Road"
-      ]
+        "Gepatschferner",
+        "Falginjoch"
+      ],
+      "seo_title": "Kaunertal Glacier Road Visit Guide"
     },
     "travel": {
       "slug": "kaunertal-glacier-road",
+      "overview_name": "Kaunertal Glacier Road",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Kaunertal Glacier Road before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.kaunertaler-gletscher.at/en/kaunertal-glacier/summer/kaunertal-scenic-road.html",
@@ -41,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Kaunertal Glacier Road",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Glacier Heights and Peaks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Kaunertal Glacier Road",
-                "stop_id": "kaunertal-glacier-road",
-                "detail": "The Kaunertal Glacier Road meanders from the valley floor to the edge of the eternal ice and is home to extraordinary stories about people, animals and plants beyond the norm."
+                "name": "Gepatschferner",
+                "stop_id": "kaunertal-glacier-road--s3",
+                "detail": "A varied journey from the valley floor up to the glacier ice of the Gepatschferner and Weißseeferner."
+              },
+              {
+                "name": "Falginjoch",
+                "stop_id": "kaunertal-glacier-road--s5",
+                "detail": "The road leads up to the edge of the glacier at 2,750 meters and from there you can take the gondola to hover over the glacier field and get to the Falginjoch at over 3,100 meters to enjoy a panoramic view of the Italian and Swiss Alps."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Kaunertal Glacier Road before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Nature Park and Valley Views",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Hinteres Kaunertal",
+                "stop_id": "kaunertal-glacier-road--s1",
+                "detail": "As a result of the retreating glacier, a unique natural landscape has opened up in the rear Kauner Valley, which becomes an ever-changing natural spectacle for the attentive visitor."
+              },
+              {
+                "name": "Kaunergrat Nature Park",
+                "stop_id": "kaunertal-glacier-road--s2",
+                "detail": "The Kaunergrat Nature Park covers an area of 58,920 hectares and extends over the Kaunergrat and the two neighboring valleys Pitztal and Kaunertal."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Kaunertal Glacier Road before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -90,100 +105,9 @@
             "url": "https://www.kaunertaler-gletscher.at/en/kaunertal-glacier/summer/kaunertal-scenic-road.html"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:45:41.918791+00:00"
       }
     }
-  },
-  "original_gemini_bundle": {
-    "summary": {
-      "region": "Tyrol",
-      "tagline": "A high-alpine journey from the valley floor to the edge of eternal ice.",
-      "best_season": "summer",
-      "trip_duration_days": "1",
-      "recommended_duration": "1 day",
-      "permit_level": "none",
-      "seo_title": "Kaunertal Glacier Road Alpine Driving Guide",
-      "best_seasons": [
-        "summer"
-      ],
-      "scenic_score": 5,
-      "camping_score": 0,
-      "avg_daily_budget": null,
-      "aliases": [
-        "Kaunertaler Gletscherstraße"
-      ],
-      "gateway_cities": [
-        "Feichten"
-      ],
-      "similar_slugs": [],
-      "trip_tags": [
-        "scenic drive",
-        "alpine"
-      ],
-      "activities": [
-        "Kaunertal Glacier Road"
-      ]
-    },
-    "travel": {
-      "slug": "kaunertal-glacier-road",
-      "headline": "Check seasonal road status and toll requirements",
-      "reservation": "Access to the high-alpine route typically involves a toll fee at the valley entrance. While advance reservations for the road itself are not standard, travelers should verify seasonal opening dates and current weather conditions via the official Kaunertal Glacier site before departure.",
-      "source_url": "https://www.kaunertaler-gletscher.at/en/kaunertal-glacier/summer/kaunertal-scenic-road.html",
-      "plan": {
-        "version": 1,
-        "days": [
-          {
-            "title": "Ascent to the Eternal Ice",
-            "start": "Suggested: 9 AM from Feichten",
-            "stops": [
-              {
-                "name": "Kaunertal Glacier Road",
-                "detail": "Drive the meandering route from the valley floor to the glacier's edge, observing the transition of high-altitude flora and fauna.",
-                "stop_id": "kaunertal-glacier-road"
-              }
-            ],
-            "driving": "Allow 2 to 4 hours for the round-trip drive; conditions vary with elevation.",
-            "note": "Expect steep gradients and hairpins as the road climbs into the high-alpine zone."
-          }
-        ],
-        "intel": [
-          {
-            "kind": "parking",
-            "title": "Glacier Access",
-            "text": "Parking is available at the end of the road near the glacier. Evidence does not specify fill times, so arrive early during peak summer periods."
-          },
-          {
-            "kind": "signal",
-            "title": "Connectivity Gaps",
-            "text": "Mobile reception may be intermittent or unavailable in deep valley sections and high-altitude peaks. Download offline maps before leaving the valley floor."
-          },
-          {
-            "kind": "fuel",
-            "title": "Valley Services",
-            "text": "Ensure your vehicle is fully fueled in Feichten or the lower valley. There are no documented fuel stations along the steep ascent to the glacier."
-          },
-          {
-            "kind": "timing",
-            "title": "Weather Awareness",
-            "text": "High-altitude conditions can change rapidly even in summer. Check the local forecast for fog or snow that may impact visibility on the scenic curves."
-          },
-          {
-            "kind": "access",
-            "title": "Road Restrictions",
-            "text": "The road is a high-altitude alpine route with numerous switchbacks. Verify if there are specific length or weight restrictions for larger vehicles like motorhomes."
-          }
-        ],
-        "arrival": "Begin in the town of Feichten to check road status, secure supplies, and begin the ascent toward the glacier terminal.",
-        "vehicle": "Suitable for cars and motorcycles; RV drivers should check for hairpin turn restrictions and braking requirements for the descent.",
-        "goldenHour": "The glacier terminus offers expansive views, though sunset timing varies significantly by month in the high Alps.",
-        "sources": [
-          {
-            "label": "Kaunertaler Gletscher Official",
-            "url": "https://www.kaunertaler-gletscher.at/en/kaunertal-glacier/summer/kaunertal-scenic-road.html"
-          }
-        ]
-      }
-    }
-  },
-  "review_note": "Gemini summary retained; exact-source compact visit and explicit operational unknowns applied without additional inference."
+  }
 }

@@ -1,0 +1,79 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Biodiversitätslehrpfad",
+      "quote": "Naturpark Mürzer Oberland macht preisgekrönten Biodiversitätslehrpfad wieder fit für die Zukunft – erneuerte Stege, Brücken und ein weitgehend barrierearmer Rundweg ermöglichen ein noch besseres Naturerlebnis für Menschen mit besonderen Bedürfnissen.",
+      "english": "Mürzer Oberland Nature Park is making its award-winning biodiversity trail fit for the future – renewed walkways, bridges and a largely barrier-free circular path enable an even better nature experience for people with special needs."
+    },
+    {
+      "id": "s2",
+      "name": "Rax",
+      "quote": "Es ist wohl eine der bekanntesten Touren auf den Hausberg der Wiener, auf die Rax – und sicher der bekannteste Anstieg auf der steirischen Seite dieses Gebirges.",
+      "english": "It is arguably one of the most famous tours on the Viennese local mountain, the Rax – and certainly the most famous ascent on the Styrian side of this mountain range."
+    },
+    {
+      "id": "s3",
+      "name": "Karl Ludwig Haus",
+      "quote": "Nur bei Nebel ist der letzte Teil vom Karl Ludwig Haus bis zur Heukuppe nicht empfehlenswert.",
+      "english": "Only in fog is the final part from the Karl Ludwig Haus to the Heukuppe not recommended."
+    },
+    {
+      "id": "s4",
+      "name": "Heukuppe",
+      "quote": "Nur bei Nebel ist der letzte Teil vom Karl Ludwig Haus bis zur Heukuppe nicht empfehlenswert.",
+      "english": "Only in fog is the final part from the Karl Ludwig Haus to the Heukuppe not recommended."
+    },
+    {
+      "id": "s5",
+      "name": "Knopperwiese",
+      "quote": "Interessante Alpenflora, seltene Wildtiere wie Gams, Murmeltier, Adler und Bergmolch, bei der Knopperwiese eine Riesendoline (Vorsicht!), am Windberggipfel tolle Rundumsicht.",
+      "english": "Interesting Alpine flora, rare wild animals such as chamois, marmot, eagle and alpine newt, a giant sinkhole at the Knopperwiese (caution!), great panoramic views at the Windberg peak."
+    },
+    {
+      "id": "s6",
+      "name": "Windberggipfel",
+      "quote": "Interessante Alpenflora, seltene Wildtiere wie Gams, Murmeltier, Adler und Bergmolch, bei der Knopperwiese eine Riesendoline (Vorsicht!), am Windberggipfel tolle Rundumsicht.",
+      "english": "Interesting Alpine flora, rare wild animals such as chamois, marmot, eagle and alpine newt, a giant sinkhole at the Knopperwiese (caution!), great panoramic views at the Windberg peak."
+    },
+    {
+      "id": "s7",
+      "name": "Tirolbach",
+      "quote": "Bei heißen Temperaturen ist ein Bad im Tirolbach eine willkommene Erfrischung.",
+      "english": "In hot temperatures, a dip in the Tirolbach is a welcome refreshment."
+    },
+    {
+      "id": "s8",
+      "name": "Wald der Sinne",
+      "quote": "Der Wald der Sinne befindet sich auf dem Bergbauernhof der Familie Holzer vgl. Steinwandtner in Neuberg/Mürz mitten im Naturpark Mürzer Oberland.",
+      "english": "The Forest of the Senses is located on the mountain farm of the Holzer family, also known as Steinwandtner, in Neuberg/Mürz in the middle of the Mürzer Oberland Nature Park."
+    },
+    {
+      "id": "s9",
+      "name": "Erlebnisweg klimawandeln",
+      "quote": "Der Erlebnisweg klimawandeln stellt die Themen Biodiversität und Naturschutz an 14 Erlebnisstationen mit je einem speziellen Lebensraumbezug in den Mittelpunkt.",
+      "english": "The 'klimawandeln' discovery trail focuses on the topics of biodiversity and nature conservation at 14 adventure stations, each with a specific habitat reference."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Mountain Summits and Peaks",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Educational Nature Trails",
+      "stop_ids": [
+        "s1",
+        "s8",
+        "s9",
+        "s7"
+      ]
+    }
+  ]
+}

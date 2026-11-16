@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Schauinsland",
+      "quote": "Parallel zur Einrichtung des Nationalparks Schwarzwald 2014 im Nordschwarzwald wurde innerhalb des bestehenden Naturparks Südschwarzwald ein Teilgebiet zwischen Schauinsland, Feldberg und Belchen, Schluchsee und Wiesental zur Ausweisung als zweites Biosphärengebiet vorbereitet.",
+      "english": "Parallel to the establishment of the Black Forest National Park in 2014 in the Northern Black Forest, a sub-area within the existing Southern Black Forest Nature Park between Schauinsland, Feldberg and Belchen, Schluchsee and Wiesental was prepared for designation as the second biosphere area."
+    },
+    {
+      "id": "s2",
+      "name": "Belchen",
+      "quote": "Parallel zur Einrichtung des Nationalparks Schwarzwald 2014 im Nordschwarzwald wurde innerhalb des bestehenden Naturparks Südschwarzwald ein Teilgebiet zwischen Schauinsland, Feldberg und Belchen, Schluchsee und Wiesental zur Ausweisung als zweites Biosphärengebiet vorbereitet.",
+      "english": "Parallel to the establishment of the Black Forest National Park in 2014 in the Northern Black Forest, a sub-area within the existing Southern Black Forest Nature Park between Schauinsland, Feldberg and Belchen, Schluchsee and Wiesental was prepared for designation as the second biosphere area."
+    },
+    {
+      "id": "s3",
+      "name": "Schluchsee",
+      "quote": "Parallel zur Einrichtung des Nationalparks Schwarzwald 2014 im Nordschwarzwald wurde innerhalb des bestehenden Naturparks Südschwarzwald ein Teilgebiet zwischen Schauinsland, Feldberg und Belchen, Schluchsee und Wiesental zur Ausweisung als zweites Biosphärengebiet vorbereitet.",
+      "english": "Parallel to the establishment of the Black Forest National Park in 2014 in the Northern Black Forest, a sub-area within the existing Southern Black Forest Nature Park between Schauinsland, Feldberg and Belchen, Schluchsee and Wiesental was prepared for designation as the second biosphere area."
+    },
+    {
+      "id": "s4",
+      "name": "Wiesental",
+      "quote": "Parallel zur Einrichtung des Nationalparks Schwarzwald 2014 im Nordschwarzwald wurde innerhalb des bestehenden Naturparks Südschwarzwald ein Teilgebiet zwischen Schauinsland, Feldberg und Belchen, Schluchsee und Wiesental zur Ausweisung als zweites Biosphärengebiet vorbereitet.",
+      "english": "Parallel to the establishment of the Black Forest National Park in 2014 in the Northern Black Forest, a sub-area within the existing Southern Black Forest Nature Park between Schauinsland, Feldberg and Belchen, Schluchsee and Wiesental was prepared for designation as the second biosphere area."
+    },
+    {
+      "id": "s5",
+      "name": "Bernau",
+      "quote": "Am 4. Januar 2016 wurde die Verordnung zum neuen Biosphärengebiet Schwarzwald auf ca. 63.000 ha Fläche durch Naturschutzminister Alexander Bonde (Grüne) in Bernau unterzeichnet.",
+      "english": "On January 4, 2016, the ordinance for the new Black Forest Biosphere Area covering approximately 63,000 hectares was signed by Nature Conservation Minister Alexander Bonde (Greens) in Bernau."
+    },
+    {
+      "id": "s6",
+      "name": "Schönau im Schwarzwald",
+      "quote": "Am 19. Februar 2016 erfolgte in Schönau im Schwarzwald durch Ministerpräsident Winfried Kretschmann (Grüne), Minister Alexander Bonde, Regierungspräsidentin Bärbel Schäfer, den Landräten und den Bürgermeistern die Unterzeichnung einer Vereinbarung zur Zusammenarbeit zwischen Land, Landkreisen, Städten und Gemeinden.",
+      "english": "On February 19, 2016, the signing of an agreement on cooperation between the state, districts, cities, and municipalities took place in Schönau im Schwarzwald by Minister President Winfried Kretschmann (Greens), Minister Alexander Bonde, District President Bärbel Schäfer, the district administrators, and the mayors."
+    },
+    {
+      "id": "s7",
+      "name": "St. Blasien",
+      "quote": "Landkreis Waldshut: Albbruck*, Bernau, Dachsberg, Höchenschwand*, Häusern, Ibach, St. Blasien, Ühlingen-Birkendorf*, Wehr*",
+      "english": "Waldshut District: Albbruck*, Bernau, Dachsberg, Höchenschwand*, Häusern, Ibach, St. Blasien, Ühlingen-Birkendorf*, Wehr*"
+    },
+    {
+      "id": "s8",
+      "name": "Hinterzarten",
+      "quote": "Landkreis Breisgau-Hochschwarzwald: Hinterzarten*, Horben, Oberried, Schluchsee*",
+      "english": "Breisgau-Hochschwarzwald District: Hinterzarten*, Horben, Oberried, Schluchsee*"
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Valleys of the South",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s4"
+      ]
+    },
+    {
+      "title": "Lakeside and Administrative Centers",
+      "stop_ids": [
+        "s3",
+        "s6",
+        "s8"
+      ]
+    },
+    {
+      "title": "Waldshut Forest Communities",
+      "stop_ids": [
+        "s5",
+        "s7"
+      ]
+    }
+  ]
+}

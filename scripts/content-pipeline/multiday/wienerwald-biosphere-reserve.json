@@ -1,0 +1,25 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Wienerwald",
+      "quote": "Blick über die Hügel des Wienerwaldes auf Wien",
+      "english": "View over the hills of the Wienerwald towards Vienna."
+    },
+    {
+      "id": "s2",
+      "name": "Lainzer Tiergarten",
+      "quote": "Four Nature Parks and the Viennese Lainzer Tiergarten, an extensive game park, are among the 15 nature preserves in this region.",
+      "english": "Four Nature Parks and the Viennese Lainzer Tiergarten, an extensive game park, are among the 15 nature preserves in this region."
+    }
+  ],
+  "days": [
+    {
+      "title": "Vienna Hills and Wildlife",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ]
+}

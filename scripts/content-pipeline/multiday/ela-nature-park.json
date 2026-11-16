@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Piz Ela",
+      "quote": "Namensgeber ist der Piz Ela zwischen dem Albulatal und dem Oberhalbstein.",
+      "english": "The namesake is Piz Ela between the Albula Valley and the Oberhalbstein."
+    },
+    {
+      "id": "s2",
+      "name": "Ortsmuseum Bergün",
+      "quote": "Ausstellung «Nossa Naira Mega» im Ortsmuseum Bergün",
+      "english": "Exhibition \"Nossa Naira Mega\" at the Bergün Local Museum"
+    },
+    {
+      "id": "s3",
+      "name": "Savurando Parc Ela",
+      "quote": "Die genussvolle Tageswanderung mit Rätselspass führt dich durch die Landschaften und Dörfer des Parc Ela.",
+      "english": "The enjoyable day hike with puzzle fun leads you through the landscapes and villages of Parc Ela."
+    },
+    {
+      "id": "s4",
+      "name": "Parc Ela Trek",
+      "quote": "In 17 Tagesetappen können Sie alpine Pässe und Alpweiden rund um den Naturpark Parc Ela erwandern.",
+      "english": "In 17 daily stages, you can hike alpine passes and alpine pastures around the Parc Ela Nature Park."
+    },
+    {
+      "id": "s5",
+      "name": "Bahnhof in Tiefencastel",
+      "quote": "Ab sofort steht am Bahnhof in Tiefencastel ein vollelektrischer Skoda Enyaq 4x4 zur Miete zur Verfügung.",
+      "english": "As of now, a fully electric Skoda Enyaq 4x4 is available for rent at the station in Tiefencastel."
+    },
+    {
+      "id": "s6",
+      "name": "Schmitten",
+      "quote": "Sensationsfund im Parc Ela: Standort der Senf-Blauschillersandbiene in Schmitten entdeckt",
+      "english": "Sensational find in Parc Ela: Location of the mustard-blue-shining sand bee discovered in Schmitten"
+    },
+    {
+      "id": "s7",
+      "name": "Filisur",
+      "quote": "Rund 50 Mitglieder folgten der Einladung nach Filisur.",
+      "english": "Around 50 members followed the invitation to Filisur."
+    }
+  ],
+  "days": [
+    {
+      "title": "Village Heritage and Discovery",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s5"
+      ]
+    },
+    {
+      "title": "Alpine Summits and Long Trails",
+      "stop_ids": [
+        "s1",
+        "s4"
+      ]
+    },
+    {
+      "title": "Nature and Local Meetings",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

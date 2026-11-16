@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Diemtigtal Nature Park",
+      "quote": "Holidays packed with both adventure and leisure await near deep blue Lake Thun and the Diemtigtal Nature Park.",
+      "english": "Holidays packed with both adventure and leisure await near deep blue Lake Thun and the Diemtigtal Nature Park."
+    },
+    {
+      "id": "s2",
+      "name": "Aare",
+      "quote": "Im Frühling zieren Blumen die Promenaden, die entlang der Aare bis in das Zentrum der Stadt Thun führen",
+      "english": "In spring, flowers adorn the promenades that lead along the Aare into the center of the city of Thun"
+    },
+    {
+      "id": "s3",
+      "name": "Aussichtsturm Blueme in Sigriswil",
+      "quote": "Aussichtsturm Blueme in Sigriswil im Herbst mit Blick auf den Thunersee",
+      "english": "Blueme observation tower in Sigriswil in autumn with a view of Lake Thun"
+    },
+    {
+      "id": "s4",
+      "name": "Morgenberghorn",
+      "quote": "Drei Wanderer auf dem Grat auf dem Weg zum Morgenberghorn und im Hintergrund der Thunersee",
+      "english": "Three hikers on the ridge on the way to the Morgenberghorn and Lake Thun in the background"
+    },
+    {
+      "id": "s5",
+      "name": "Schloss Oberhofen",
+      "quote": "Märchenhaftes Schloss Oberhofen mit Dampfschiff Blümlisalp, das über den Thunersee gleitet.",
+      "english": "Fairytale Oberhofen Castle with the steamboat Blümlisalp gliding across Lake Thun."
+    },
+    {
+      "id": "s6",
+      "name": "Niesen",
+      "quote": "Im Hintergrund der Niesen.",
+      "english": "The Niesen in the background."
+    },
+    {
+      "id": "s7",
+      "name": "Bühne der Thunerseespiele",
+      "quote": "Bühne der Thunerseespiele am Thunersee in der Abendstimmung mit Bergpanorama im Hintergrund",
+      "english": "Stage of the Lake Thun Festival on Lake Thun in the evening atmosphere with mountain panorama in the background"
+    },
+    {
+      "id": "s8",
+      "name": "Honu Wassersportcenter",
+      "quote": "Wakeboarder unterwegs mit Honu Wassersportcenter auf dem Thunersee",
+      "english": "Wakeboarders on the move with Honu Water Sports Center on Lake Thun"
+    },
+    {
+      "id": "s9",
+      "name": "Niederhorn",
+      "quote": "Die Familie geniesst die rundum Aussicht vom Niederhorn auf den Thunersee und die Berge",
+      "english": "The family enjoys the panoramic view from the Niederhorn of Lake Thun and the mountains"
+    }
+  ],
+  "days": [
+    {
+      "title": "Riverside City and Nature Park",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Castles and Lake Activities",
+      "stop_ids": [
+        "s5",
+        "s8",
+        "s3"
+      ]
+    },
+    {
+      "title": "Mountain Peaks and Ridges",
+      "stop_ids": [
+        "s4",
+        "s6",
+        "s9"
+      ]
+    }
+  ]
+}

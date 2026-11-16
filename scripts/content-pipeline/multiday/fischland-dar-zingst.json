@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Western Pomerania Lagoon Area National Park",
+      "quote": "The third largest national park in Germany is the Baltic Sea National Park, covering 786 km².",
+      "english": "The third largest national park in Germany is the Baltic Sea National Park, covering 786 km²."
+    },
+    {
+      "id": "s2",
+      "name": "West beach",
+      "quote": "The 14 km long western beach in the National Park is wild and constantly changing.",
+      "english": "The 14 km long western beach in the National Park is wild and constantly changing."
+    },
+    {
+      "id": "s3",
+      "name": "Lighthouse Darßer Ort",
+      "quote": "The lighthouse Darßer Ort is the only active lighthouse in the region and has been in operation since 1849.",
+      "english": "The lighthouse Darßer Ort is the only active lighthouse in the region and has been in operation since 1849."
+    },
+    {
+      "id": "s4",
+      "name": "Prerower See Bridge",
+      "quote": "At 720 metres, the Prerower See Bridge is the longest on the Baltic coast.",
+      "english": "At 720 metres, the Prerower See Bridge is the longest on the Baltic coast."
+    },
+    {
+      "id": "s5",
+      "name": "island harbor",
+      "quote": "At the end is the newly horseshoe-shaped island harbor.",
+      "english": "At the end is the newly horseshoe-shaped island harbor."
+    },
+    {
+      "id": "s6",
+      "name": "Baltic Sea Cycle Route",
+      "quote": "On the Baltic Sea Cycle Route you pass wide beaches, native forests and quiet lagoon-landscapes.",
+      "english": "On the Baltic Sea Cycle Route you pass wide beaches, native forests and quiet lagoon-landscapes."
+    },
+    {
+      "id": "s7",
+      "name": "Ahrenshoop",
+      "quote": "Explore Ahrenshoop as a place of art, walk in the footsteps of former artists and experience numerous galleries, studios and exhibitions.",
+      "english": "Explore Ahrenshoop as a place of art, walk in the footsteps of former artists and experience numerous galleries, studios and exhibitions."
+    }
+  ],
+  "days": [
+    {
+      "title": "National Park and Wild West Coast",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Prerow Coastal Architecture",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Culture and Cycling",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

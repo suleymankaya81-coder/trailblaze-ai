@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Dachstein Glacier",
+      "quote": "The high plateau of Ramsau am Dachstein offers a variaty of trails for classic technique and skating with up to 220 kilometers. In addition to highlights such as the high-altitude trails on the Dachstein or the night trail in the Ramsau stadium, the valley trails complete the cross-country skiing offer in the Schladming-Dachstein region.",
+      "english": "The high plateau of Ramsau am Dachstein offers a variety of trails for classic technique and skating with up to 220 kilometers. In addition to highlights such as the high-altitude trails on the Dachstein or the night trail in the Ramsau stadium, the valley trails complete the cross-country skiing offer in the Schladming-Dachstein region."
+    },
+    {
+      "id": "s2",
+      "name": "Ramsau stadium",
+      "quote": "In addition to highlights such as the high-altitude trails on the Dachstein or the night trail in the Ramsau stadium, the valley trails complete the cross-country skiing offer in the Schladming-Dachstein region.",
+      "english": "In addition to highlights such as the high-altitude trails on the Dachstein or the night trail in the Ramsau stadium, the valley trails complete the cross-country skiing offer in the Schladming-Dachstein region."
+    },
+    {
+      "id": "s3",
+      "name": "Hauser Kaibling",
+      "quote": "At the heart of it all is the 4-mountain Schladming ski area with Hauser Kaibling, Planai, Hochwurzen and Reiteralm.",
+      "english": "At the heart of it all is the 4-mountain Schladming ski area with Hauser Kaibling, Planai, Hochwurzen and Reiteralm."
+    },
+    {
+      "id": "s4",
+      "name": "Planai",
+      "quote": "At the heart of it all is the 4-mountain Schladming ski area with Hauser Kaibling, Planai, Hochwurzen and Reiteralm.",
+      "english": "At the heart of it all is the 4-mountain Schladming ski area with Hauser Kaibling, Planai, Hochwurzen and Reiteralm."
+    },
+    {
+      "id": "s5",
+      "name": "Hochwurzen",
+      "quote": "In December, the Ski Opening and evening activities on the Hochwurzen will provide even more winter highlights.",
+      "english": "In December, the Ski Opening and evening activities on the Hochwurzen will provide even more winter highlights."
+    },
+    {
+      "id": "s6",
+      "name": "Reiteralm",
+      "quote": "2 Wanderer am Weg auf dem Gasselhöhe Rundweg auf der Reiteralm | © Peter Burgstaller",
+      "english": "2 hikers on the way on the Gasselhöhe circular trail on the Reiteralm | © Peter Burgstaller"
+    },
+    {
+      "id": "s7",
+      "name": "Gasselhöhe Rundweg",
+      "quote": "2 Wanderer am Weg auf dem Gasselhöhe Rundweg auf der Reiteralm | © Peter Burgstaller",
+      "english": "2 hikers on the way on the Gasselhöhe circular trail on the Reiteralm | © Peter Burgstaller"
+    }
+  ],
+  "days": [
+    {
+      "title": "Nordic Center and Glacier Trails",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Schladming 4-Mountain Ski Area",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Hiking and Peaks of Reiteralm",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "South Styrian Wine Route",
+      "quote": "The South Styrian Wine Route winds its way through the gentle hills of the region and offers breathtaking views of the vineyards.",
+      "english": "The South Styrian Wine Route winds its way through the gentle hills of the region and offers breathtaking views of the vineyards."
+    },
+    {
+      "id": "s2",
+      "name": "Klapotetzweg trail",
+      "quote": "The Klapotetzweg trail combines nature, culture and enjoyment.",
+      "english": "The Klapotetzweg trail combines nature, culture and enjoyment."
+    },
+    {
+      "id": "s3",
+      "name": "Ehrenhausen an der Weinstraße",
+      "quote": "Ehrenhausen an der Weinstraße : A pretty wine village that often serves as a starting point for tours along the South Styrian Wine Route.",
+      "english": "Ehrenhausen an der Weinstraße : A pretty wine village that often serves as a starting point for tours along the South Styrian Wine Route."
+    },
+    {
+      "id": "s4",
+      "name": "Leutschach an der Weinstraße",
+      "quote": "Leutschach an der Weinstraße : A central town along the South Styrian Wine Route.",
+      "english": "Leutschach an der Weinstraße : A central town along the South Styrian Wine Route."
+    },
+    {
+      "id": "s5",
+      "name": "Sulztal an der Weinstraße",
+      "quote": "Sulztal an der Weinstraße: A smaller village that is particularly appreciated for its quiet charm and proximity to first-class wineries.",
+      "english": "Sulztal an der Weinstraße: A smaller village that is particularly appreciated for its quiet charm and proximity to first-class wineries."
+    },
+    {
+      "id": "s6",
+      "name": "Kitzeck im Sausal",
+      "quote": "One of the most beautiful viewing points in Southern Styria is located in Kitzeck im Sausal, the highest wine-growing region in Austria at 564 meters.",
+      "english": "One of the most beautiful viewing points in Southern Styria is located in Kitzeck im Sausal, the highest wine-growing region in Austria at 564 meters."
+    },
+    {
+      "id": "s7",
+      "name": "Gamlitz",
+      "quote": "Gamlitz : One of the best-known wine-growing regions in southern Styria.",
+      "english": "Gamlitz : One of the best-known wine-growing regions in southern Styria."
+    },
+    {
+      "id": "s8",
+      "name": "Straß in Styria",
+      "quote": "Straß in Styria: Another popular wine-growing village, which is also a good starting point for exploring the region.",
+      "english": "Straß in Styria: Another popular wine-growing village, which is also a good starting point for exploring the region."
+    }
+  ],
+  "days": [
+    {
+      "title": "Heart of the South Styrian Wine Route",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Villages and Vistas of the Wine Country",
+      "stop_ids": [
+        "s5",
+        "s8",
+        "s2"
+      ]
+    },
+    {
+      "title": "High Elevations and Rolling Hills",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

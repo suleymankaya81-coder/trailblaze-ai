@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Styria",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Lake Altaussee"
+        "Lake Altaussee",
+        "Altaussee salt mine"
       ],
       "seo_title": "Lake Altaussee Visit Guide"
     },
     "travel": {
       "slug": "lake-altaussee",
+      "overview_name": "Lake Altaussee",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Lake Altaussee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.austria.info/en-gb/regions/altaussee/",
@@ -31,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Lake Altaussee",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Lakeshore and Health Infrastructure",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
                 "name": "Lake Altaussee",
-                "stop_id": "lake-altaussee",
-                "detail": "Altaussee in the Styrian Salzkammergut is known as the ‘inkwell of literature’, attracting writers for generations. Hugo von Hofmannsthal first came here for a summer retreat in 1892, drawn by the spa town’s healthy mountain climate. He was followed by Egon Friedell, Friedrich Torberg and Arthur Schnitzler. Author Barbara Frischmuth grew up by Lake Altaussee."
+                "stop_id": "lake-altaussee--s1",
+                "detail": "Author Barbara Frischmuth grew up by Lake Altaussee."
+              },
+              {
+                "name": "Altaussee salt mine",
+                "stop_id": "lake-altaussee--s6",
+                "detail": "Altaussee has a graduation and Kneipp facility that uses brine from the Altaussee salt mine."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Altaussee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Wilderness Scenery and Mountain Ranges",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Seewiese",
+                "stop_id": "lake-altaussee--s2",
+                "detail": "The rocks at Seewiese, the forests and the peaks of Loser and Trisselwand are reflected in the lake, shaping the scenery."
+              },
+              {
+                "name": "Totes Gebirge",
+                "stop_id": "lake-altaussee--s5",
+                "detail": "Altaussee sits in the Totes Gebirge, a mountain range in the Northern Limestone Alps."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Lake Altaussee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +105,8 @@
             "url": "https://www.austria.info/en-gb/regions/altaussee/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:45:55.118280+00:00"
       }
     }
   }

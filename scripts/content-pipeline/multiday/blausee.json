@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Blausee",
+      "quote": "Discover one of the most beautiful mountain lakes in Switzerland in the Kandertal Region of the Bernese Oberland.",
+      "english": "Discover one of the most beautiful mountain lakes in Switzerland in the Kandertal Region of the Bernese Oberland."
+    },
+    {
+      "id": "s2",
+      "name": "organic trout farm",
+      "quote": "The entrance fee to the Blausee includes several offers: The picnic areas and barbecue areas, the natural playground for children and a visit to the organic trout farm with the natural ponds.",
+      "english": "The entrance fee to the Blausee includes several offers: The picnic areas and barbecue areas, the natural playground for children and a visit to the organic trout farm with the natural ponds."
+    },
+    {
+      "id": "s3",
+      "name": "stone sculpture",
+      "quote": "Tree trunks, rocks and a mysterious stone sculpture at the bottom of the lake seem to be lying just below the surface of the water.",
+      "english": "Tree trunks, rocks and a mysterious stone sculpture at the bottom of the lake seem to be lying just below the surface of the water."
+    },
+    {
+      "id": "s4",
+      "name": "lakeside path",
+      "quote": "The lakeside path with a wooden bridge and platform out onto the lake is absolutely picturesque.",
+      "english": "The lakeside path with a wooden bridge and platform out onto the lake is absolutely picturesque."
+    },
+    {
+      "id": "s5",
+      "name": "Lake Oeschinen",
+      "quote": "In the Kandertal Region lies a second top excursion destination: the Lake Oeschinen above Kandersteg.",
+      "english": "In the Kandertal Region lies a second top excursion destination: the Lake Oeschinen above Kandersteg."
+    },
+    {
+      "id": "s6",
+      "name": "Kandersteg",
+      "quote": "Buses run from Frutigen and Kandersteg to the Blausee stop.",
+      "english": "Buses run from Frutigen and Kandersteg to the Blausee stop."
+    },
+    {
+      "id": "s7",
+      "name": "Allmenalp",
+      "quote": "Opposite on the Allmenalp you can climb through one of the most spectacular via ferratas in Switzerland.",
+      "english": "Opposite on the Allmenalp you can climb through one of the most spectacular via ferratas in Switzerland."
+    },
+    {
+      "id": "s8",
+      "name": "Choleren Gorge",
+      "quote": "Learn more about: Adelboden Choleren Gorge",
+      "english": "Learn more about: Adelboden Choleren Gorge"
+    },
+    {
+      "id": "s9",
+      "name": "Engstligenalp",
+      "quote": "Learn more about: Adelboden Engstligenalp",
+      "english": "Learn more about: Adelboden Engstligenalp"
+    }
+  ],
+  "days": [
+    {
+      "title": "Heart of the Nature Park",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Kandertal Peaks and Lakes",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Adelboden Adventures",
+      "stop_ids": [
+        "s8",
+        "s9"
+      ]
+    }
+  ]
+}

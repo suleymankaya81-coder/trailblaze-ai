@@ -1,0 +1,91 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Stuiben Falls",
+      "quote": "Highlights like the impressive Stuiben Falls and the thermal baths of Aqua Dome perfectly blend relaxation with action.",
+      "english": "Highlights like the impressive Stuiben Falls and the thermal baths of Aqua Dome perfectly blend relaxation with action."
+    },
+    {
+      "id": "s2",
+      "name": "Aqua Dome",
+      "quote": "Längenfeld : Home to the Aqua Dome, a large thermal spa.",
+      "english": "Längenfeld : Home to the Aqua Dome, a large thermal spa."
+    },
+    {
+      "id": "s3",
+      "name": "Windachtal",
+      "quote": "Nature takes centre stage in the Ötztal Nature Park: glacier worlds in the quiet zones of the Ötztal and Stubai Alps, rustic Swiss pine forests in the Windachtal, and the towering Engelswand near Umhausen, home to rare flora and fauna.",
+      "english": "Nature takes centre stage in the Ötztal Nature Park: glacier worlds in the quiet zones of the Ötztal and Stubai Alps, rustic Swiss pine forests in the Windachtal, and the towering Engelswand near Umhausen, home to rare flora and fauna."
+    },
+    {
+      "id": "s4",
+      "name": "Engelswand",
+      "quote": "Nature takes centre stage in the Ötztal Nature Park: glacier worlds in the quiet zones of the Ötztal and Stubai Alps, rustic Swiss pine forests in the Windachtal, and the towering Engelswand near Umhausen, home to rare flora and fauna.",
+      "english": "Nature takes centre stage in the Ötztal Nature Park: glacier worlds in the quiet zones of the Ötztal and Stubai Alps, rustic Swiss pine forests in the Windachtal, and the towering Engelswand near Umhausen, home to rare flora and fauna."
+    },
+    {
+      "id": "s5",
+      "name": "Lake Piburg",
+      "quote": "At Lake Piburg, shimmering waters contrast with dramatic rockfall scenery, while the Naturpark House in Längenfeld offers a multimedia experience of the natural world.",
+      "english": "At Lake Piburg, shimmering waters contrast with dramatic rockfall scenery, while the Naturpark House in Längenfeld offers a multimedia experience of the natural world."
+    },
+    {
+      "id": "s6",
+      "name": "Naturpark House",
+      "quote": "At Lake Piburg, shimmering waters contrast with dramatic rockfall scenery, while the Naturpark House in Längenfeld offers a multimedia experience of the natural world.",
+      "english": "At Lake Piburg, shimmering waters contrast with dramatic rockfall scenery, while the Naturpark House in Längenfeld offers a multimedia experience of the natural world."
+    },
+    {
+      "id": "s7",
+      "name": "Wildspitze",
+      "quote": "The highest mountain in the Ötztal is the Wildspitze, standing at 3,768 metres above sea level.",
+      "english": "The highest mountain in the Ötztal is the Wildspitze, standing at 3,768 metres above sea level."
+    },
+    {
+      "id": "s8",
+      "name": "Timmelsjoch High Alpine Road",
+      "quote": "Obergurgl : Famous for the Timmelsjoch High Alpine Road and alpine activities.",
+      "english": "Obergurgl : Famous for the Timmelsjoch High Alpine Road and alpine activities."
+    },
+    {
+      "id": "s9",
+      "name": "Ötzi Village",
+      "quote": "Umhausen : Features the Stuiben Falls, Tirol’s highest waterfall, and the Ötzi Village.",
+      "english": "Umhausen : Features the Stuiben Falls, Tirol’s highest waterfall, and the Ötzi Village."
+    },
+    {
+      "id": "s10",
+      "name": "AREA 47",
+      "quote": "Thrill-seekers can try canyoning , rafting , or climbing in the AREA 47 outdoor park .",
+      "english": "Thrill-seekers can try canyoning , rafting , or climbing in the AREA 47 outdoor park ."
+    }
+  ],
+  "days": [
+    {
+      "title": "Umhausen Waterfalls and Prehistoric Life",
+      "stop_ids": [
+        "s1",
+        "s9",
+        "s4"
+      ]
+    },
+    {
+      "title": "Längenfeld Wellness and Nature Learning",
+      "stop_ids": [
+        "s2",
+        "s6",
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "High Alpine Roads and Valley Entrances",
+      "stop_ids": [
+        "s8",
+        "s5",
+        "s10"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lower Saxony",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Solling-Vogler"
+        "Weser river valley",
+        "Weser Uplands Route (Weserbergland-Weg)"
       ],
       "seo_title": "Solling-Vogler Nature Park Visit Guide"
     },
     "travel": {
       "slug": "solling-vogler-nature-park",
+      "overview_name": "Solling-Vogler Nature Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Solling-Vogler Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.niedersachsen-tourism.com/experience-discover/active-adventures/hiking/themed-trails/solling-vogler-hiking-region",
@@ -31,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Solling-Vogler Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Rivers and Long Trails",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Solling-Vogler",
-                "stop_id": "solling-vogler-nature-park",
-                "detail": "The Solling-Vogler region invites you to explore nature and adventure in a truly captivating setting. As part of the Weser Uplands, this walking region offers the best of both worlds: bordered by the romantic Weser river valley and dotted with picturesque towns and villages, it rises into a dramatic low mountain landscape with rugged cliffs and sweeping views. In [dated source], the region was awarded the ‘Walkable Germany’ quality certification ( ‘Wanderbares Deutschland’ Quality Region ) by the Deutscher Wanderverband (German Hiking Association)."
+                "name": "Weser river valley",
+                "stop_id": "solling-vogler-nature-park--s1",
+                "detail": "As part of the Weser Uplands, this walking region offers the best of both worlds: bordered by the romantic Weser river valley and dotted with picturesque towns and villages, it rises into a dramatic low mountain landscape with rugged cliffs and sweeping views."
+              },
+              {
+                "name": "Weser Uplands Route (Weserbergland-Weg)",
+                "stop_id": "solling-vogler-nature-park--s2",
+                "detail": "Two long-distance routes, the Weser Uplands Route (Weserbergland-Weg) and the Ith-Hils-Weg , complete the walking experience, ensuring there’s something for everyone."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Solling-Vogler Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Wildlife and Exhibitions",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Wildpark-Haus",
+                "stop_id": "solling-vogler-nature-park--s5",
+                "detail": "At the Wildpark-Haus , you can explore a range of fascinating topics in an interactive exhibition, including the diverse habitats found in the Solling."
+              },
+              {
+                "name": "Neuhaus Wildlife Park",
+                "stop_id": "solling-vogler-nature-park--s6",
+                "detail": "Our tip: Visit the Neuhaus Wildlife Park next door, where native wildlife can be observed in naturalistic enclosures."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Solling-Vogler Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +105,8 @@
             "url": "https://www.niedersachsen-tourism.com/experience-discover/active-adventures/hiking/themed-trails/solling-vogler-hiking-region"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:50:57.762655+00:00"
       }
     }
   }

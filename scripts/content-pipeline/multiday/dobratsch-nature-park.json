@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Schütt",
+      "quote": "Die Schütt am Südhang des Berges ist das größte Bergsturzgebiet der Ostalpen und wird als Schmelztiegel der Natur bezeichnet.",
+      "english": "The Schütt on the southern slope of the mountain is the largest landslide area in the Eastern Alps and is described as a melting pot of nature."
+    },
+    {
+      "id": "s2",
+      "name": "Gipfel des Dobratsch",
+      "quote": "Der Gipfel des Dobratsch ist bei einer gemütlichen Winterwanderung auch für Familien mit Kindern leicht zu erreichen.",
+      "english": "The summit of the Dobratsch is easily accessible for families with children during a leisurely winter hike."
+    },
+    {
+      "id": "s3",
+      "name": "Stollenwanderweg",
+      "quote": "Der Stollenwanderweg ist ein Rundwanderweg und wurde von Ideallisten des Bergmännischen Kulturvereins errichtet.",
+      "english": "The Stollenwanderweg is a circular hiking trail and was established by idealists from the Mining Cultural Association."
+    },
+    {
+      "id": "s4",
+      "name": "Terra Mystica",
+      "quote": "Die Untertagwelt kann in der Terra Mystica und Terra Montana besichtigt werden.",
+      "english": "The underground world can be visited in Terra Mystica and Terra Montana."
+    },
+    {
+      "id": "s5",
+      "name": "Erzberges",
+      "quote": "Er führt entlang des Erzberges und bietet anhand alter Stollen Einblicke in die Bergbautradition des Bleiberger Tales.",
+      "english": "It leads along the Erzberg and offers insights into the mining tradition of the Bleiberg Valley through old tunnels."
+    },
+    {
+      "id": "s6",
+      "name": "Maibacherl",
+      "quote": "Auf diesem Rundwanderweg erklären zahlreiche von Kindern gestaltete Schautafeln die Natur der Region mit ihren Pflanzen und Tieren; zudem erfährt der Wanderer Wissenswertes zum Thema Wandern auf den Spuren der Römer – entlang der Römerstraße und eine Besonderheitbietet das „Maibacherl“ – eine saisonale Thermalwasserquelle direkt neben dem Weg.",
+      "english": "On this circular hiking trail, numerous display boards designed by children explain the nature of the region with its plants and animals; furthermore, the hiker learns interesting facts about hiking in the footsteps of the Romans along the Roman road, and a special feature is the “Maibacherl” – a seasonal thermal water spring right next to the path."
+    },
+    {
+      "id": "s7",
+      "name": "Bienenlehrpfad",
+      "quote": "Gemeinsam mit den Schüler:innen der Naturpark-Schule Dobratsch – VS Arnoldstein, dem Imkerverein, dem Naturpark Dobratsch und der Marktgemeinde Arnoldstein wurde ein öffentlicher Bienenlehrpfad errichtet.",
+      "english": "Together with the students of the Dobratsch Nature Park school – VS Arnoldstein, the beekeeping association, the Dobratsch Nature Park, and the market town of Arnoldstein, a public bee educational trail was established."
+    }
+  ],
+  "days": [
+    {
+      "title": "Summit and Southern Slopes",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Mining Heritage and Underground Worlds",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Educational Theme Trails",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

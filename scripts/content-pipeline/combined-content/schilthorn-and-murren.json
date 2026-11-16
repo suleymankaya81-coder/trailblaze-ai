@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Bern",
@@ -10,15 +10,17 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Schilthorn"
+        "Schilthorn",
+        "Piz Gloria",
+        "Birg"
       ],
       "seo_title": "Schilthorn and Mürren Visit Guide"
     },
@@ -32,16 +34,54 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Schilthorn and Mürren",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Schilthorn Summit and High Alpine Slopes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
                 "name": "Schilthorn",
-                "stop_id": "schilthorn-and-murren",
-                "detail": "The Schilthorn is a mountain in the Bernese Alps of Switzerland, Europe. The 2970 m (9744 ft) summit overlooks the valley of Lauterbrunnen in the Bernese Oberland, and is the highest mountain in the range lying north of the Sefinenfurgge Pass. The Schilthorn lies above the village of Mürren, from where a cable car leads to its summit, holding the record of the steepest cable car in the world."
+                "stop_id": "schilthorn-and-murren--s1",
+                "detail": "The Schilthorn is a well-known and much-visited Swiss observation peak in the Bernese Alps in the Canton of Bern at 2970 m above sea level."
+              },
+              {
+                "name": "Piz Gloria",
+                "stop_id": "schilthorn-and-murren--s3",
+                "detail": "The Piz Gloria revolving restaurant is located on the summit."
+              },
+              {
+                "name": "Birg",
+                "stop_id": "schilthorn-and-murren--s5",
+                "detail": "The steepest slope in the area (Slope 9) leads from Birg into the Engetal and has a gradient of 88%, making it the steepest slope in the entire Jungfrau region."
+              },
+              {
+                "name": "Engetal",
+                "stop_id": "schilthorn-and-murren--s6",
+                "detail": "Only one black slope (Slope 10) leads from the Schilthorn with a 75% incline into the Engetal."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Schilthorn and Mürren before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Mountain Villages and Valley Descents",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Mürren",
+                "stop_id": "schilthorn-and-murren--s2",
+                "detail": "It is accessible from Stechelberg and Mürren by an aerial cableway."
+              },
+              {
+                "name": "Gimmelwald",
+                "stop_id": "schilthorn-and-murren--s4",
+                "detail": "A special feature is the station in Gimmelwald."
+              },
+              {
+                "name": "Saus Tal",
+                "stop_id": "schilthorn-and-murren--s7",
+                "detail": "The 'Nordhang' and 'Totenkopf' descents are very popular, as is the descent through the picturesque 'Saus Tal' to Isenfluh."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Schilthorn and Mürren before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +119,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Schilthorn"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Schilthorn"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:49:06.388020+00:00"
       }
     }
   }

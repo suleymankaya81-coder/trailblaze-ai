@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Burg Egloffstein",
+      "quote": "Burg Egloffstein The symbol of Franconian Switzerland towers high above the Trubachtal valley.",
+      "english": "Egloffstein Castle, the symbol of Franconian Switzerland, towers high above the Trubachtal valley."
+    },
+    {
+      "id": "s2",
+      "name": "Trubachtal valley",
+      "quote": "Burg Egloffstein The symbol of Franconian Switzerland towers high above the Trubachtal valley.",
+      "english": "Egloffstein Castle, the symbol of Franconian Switzerland, towers high above the Trubachtal valley."
+    },
+    {
+      "id": "s3",
+      "name": "Markt Thurnau",
+      "quote": "The market town of Thurnau is home of numerous potters, artists and craftsmen.",
+      "english": "The market town of Thurnau is home to numerous potters, artists and craftsmen."
+    },
+    {
+      "id": "s4",
+      "name": "Thurnau Pottery Museum",
+      "quote": "The Thurnau Pottery Museum and the Christmas market in the castle are particularly worth seeing.",
+      "english": "The Thurnau Pottery Museum and the Christmas market in the castle are particularly worth seeing."
+    },
+    {
+      "id": "s5",
+      "name": "Limmersdorf",
+      "quote": "In the Franconian town of Limmersdorf, they celebrate the founding of the Lindenkirche at the end of August each year, around St. Bartholomew’s Day.",
+      "english": "In the Franconian town of Limmersdorf, they celebrate the founding of the Lindenkirche at the end of August each year, around St. Bartholomew’s Day."
+    },
+    {
+      "id": "s6",
+      "name": "Sankt Johannes der Täufer",
+      "quote": "The Limmersdorfer Lindenkirchweih dates back to the year 1540 and the consecration of the church known as “Sankt Johannes der Täufer” (St. John the Baptist).",
+      "english": "The Limmersdorfer Lindenkirchweih dates back to the year 1540 and the consecration of the church known as “St. John the Baptist”."
+    },
+    {
+      "id": "s7",
+      "name": "Tanzlinden-Radrundweg",
+      "quote": "The 31-kilometre circular cycle route connects the three Tanzlinden lime trees in Peesten, Limmersdorf and Langenstadt.",
+      "english": "The 31-kilometer circular cycle route connects the three Tanzlinden lime trees in Peesten, Limmersdorf, and Langenstadt."
+    }
+  ],
+  "days": [
+    {
+      "title": "Towns, Museums and Cycling",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s7"
+      ]
+    },
+    {
+      "title": "Historic Castles and Valleys",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s6"
+      ]
+    }
+  ]
+}

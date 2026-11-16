@@ -1,0 +1,105 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Brocken",
+      "quote": "The Brocken is the highest peak in the Harz Mountains at 1,141 metres.",
+      "english": "The Brocken is the highest peak in the Harz Mountains at 1,141 metres."
+    },
+    {
+      "id": "s2",
+      "name": "Heinrich Heine Trail",
+      "quote": "Probably the most beautiful ascent to the Brocken starts in Ilsenburg and follows the footsteps of Heinrich Heine along the mountain stream Ilse.",
+      "english": "Probably the most beautiful ascent to the Brocken starts in Ilsenburg and follows the footsteps of Heinrich Heine along the mountain stream Ilse."
+    },
+    {
+      "id": "s3",
+      "name": "Eckerloch",
+      "quote": "For experienced and well-equipped hikers, the charming ascent from Schierke through the Eckerloch to the Brocken is recommended.",
+      "english": "For experienced and well-equipped hikers, the charming ascent from Schierke through the Eckerloch to the Brocken is recommended."
+    },
+    {
+      "id": "s4",
+      "name": "Devil’s Trail",
+      "quote": "The Devil’s Trail is the most difficult ascent to the Brocken.",
+      "english": "The Devil’s Trail is the most difficult ascent to the Brocken."
+    },
+    {
+      "id": "s5",
+      "name": "Goethe Trail",
+      "quote": "Just as Goethe once started from Torfhaus in the west to climb the Brocken, this is probably the most popular hiking trail across the Great Torfhaus Moor to the Brocken.",
+      "english": "Just as Goethe once started from Torfhaus in the west to climb the Brocken, this is probably the most popular hiking trail across the Great Torfhaus Moor to the Brocken."
+    },
+    {
+      "id": "s6",
+      "name": "Great Torfhaus Moor",
+      "quote": "Just as Goethe once started from Torfhaus in the west to climb the Brocken, this is probably the most popular hiking trail across the Great Torfhaus Moor to the Brocken.",
+      "english": "Just as Goethe once started from Torfhaus in the west to climb the Brocken, this is probably the most popular hiking trail across the Great Torfhaus Moor to the Brocken."
+    },
+    {
+      "id": "s7",
+      "name": "Dreieckiger Pfahl",
+      "quote": "On this hiking trail, you reach the Brocken via the Dreieckiger Pfahl and the Harz Border Trail.",
+      "english": "On this hiking trail, you reach the Brocken via the Dreieckiger Pfahl and the Harz Border Trail."
+    },
+    {
+      "id": "s8",
+      "name": "Harz Border Trail",
+      "quote": "On this hiking trail, you reach the Brocken via the Dreieckiger Pfahl and the Harz Border Trail.",
+      "english": "On this hiking trail, you reach the Brocken via the Dreieckiger Pfahl and the Harz Border Trail."
+    },
+    {
+      "id": "s9",
+      "name": "Devil’s Pulpit",
+      "quote": "Take your time for the Brocken circular walk with the Devil’s Pulpit and Witch’s Altar.",
+      "english": "Take your time for the Brocken circular walk with the Devil’s Pulpit and Witch’s Altar."
+    },
+    {
+      "id": "s10",
+      "name": "Witch’s Altar",
+      "quote": "Take your time for the Brocken circular walk with the Devil’s Pulpit and Witch’s Altar.",
+      "english": "Take your time for the Brocken circular walk with the Devil’s Pulpit and Witch’s Altar."
+    },
+    {
+      "id": "s11",
+      "name": "Brockengarten",
+      "quote": "In the Brocken Garden, founded in 1890, around 1,800 alpine species from all over the world grow today.",
+      "english": "In the Brocken Garden, founded in 1890, around 1,800 alpine species from all over the world grow today."
+    },
+    {
+      "id": "s12",
+      "name": "Brockenhaus",
+      "quote": "Inside, a modern and extensive exhibition on the history and nature of the Brocken summit awaits you.",
+      "english": "Inside, a modern and extensive exhibition on the history and nature of the Brocken summit awaits you."
+    }
+  ],
+  "days": [
+    {
+      "title": "Summit Sights and Nature",
+      "stop_ids": [
+        "s1",
+        "s9",
+        "s10",
+        "s11",
+        "s12"
+      ]
+    },
+    {
+      "title": "Famous Literary Ascents",
+      "stop_ids": [
+        "s2",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Rugged Border Trails",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

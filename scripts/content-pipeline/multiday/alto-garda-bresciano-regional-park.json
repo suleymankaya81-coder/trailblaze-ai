@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "lago di Valvestino",
+      "quote": "Al suo interno, nella valle principale, il parco accoglie il lago di Valvestino, invaso artificiale degli anni sessanta, sede di pesca sportiva.",
+      "english": "Inside, in the main valley, the park hosts Lake Valvestino, an artificial reservoir from the sixties, a venue for sport fishing."
+    },
+    {
+      "id": "s2",
+      "name": "Monte Caplone",
+      "quote": "Il punto più alto del parco è il Monte Caplone che raggiunge i 1 976 metri s.l.m.",
+      "english": "The highest point of the park is Mount Caplone which reaches 1,976 meters above sea level."
+    },
+    {
+      "id": "s3",
+      "name": "riserva naturale dell'ex lago di Bondo",
+      "quote": "La riserva naturale dell'ex lago di Bondo è compresa nel parco.",
+      "english": "The nature reserve of the former Lake Bondo is included in the park."
+    },
+    {
+      "id": "s4",
+      "name": "fienili di Cima Rest",
+      "quote": "Caratteristici sono i fienili di Cima Rest (1 200 m) nel comune di Magasa, con i tetti in paglia assai appuntiti (secondo alcuni di derivazione longobarda, secondo altri austro-ungarica), e la strada militare scavata lungo le creste di confine durante la prima guerra mondiale.",
+      "english": "Characteristic are the barns of Cima Rest (1,200 m) in the municipality of Magasa, with very pointed thatched roofs (according to some of Lombard origin, according to others Austro-Hungarian), and the military road excavated along the border ridges during the First World War."
+    },
+    {
+      "id": "s5",
+      "name": "strada militare",
+      "quote": "Caratteristici sono i fienili di Cima Rest (1 200 m) nel comune di Magasa, con i tetti in paglia assai appuntiti (secondo alcuni di derivazione longobarda, secondo altri austro-ungarica), e la strada militare scavata lungo le creste di confine durante la prima guerra mondiale.",
+      "english": "Characteristic are the barns of Cima Rest (1,200 m) in the municipality of Magasa, with very pointed thatched roofs (according to some of Lombard origin, according to others Austro-Hungarian), and the military road excavated along the border ridges during the First World War."
+    },
+    {
+      "id": "s6",
+      "name": "Monte Tombea",
+      "quote": "Fra tutti la Saxifraga tombeanensis, che prende il nome dal Monte Tombea, seconda cima del Parco (1.950 m).",
+      "english": "Among all the Saxifraga tombeanensis, which takes its name from Mount Tombea, the second peak of the Park (1,950 m)."
+    },
+    {
+      "id": "s7",
+      "name": "lago di Garda",
+      "quote": "Il suo territorio coincide con quello della Riviera dei Limoni gardesana e si estende dalle sponde del lago di Garda sino al lungo crinale montuoso che a Nord coincide con il confine fra Lombardia e provincia autonoma di Trento (Valle di Ledro) e ad est con la Valle Sabbia, comprendendo nove comuni per un totale di circa 27 000 abitanti.",
+      "english": "Its territory coincides with that of the Garda Lemon Riviera and extends from the shores of Lake Garda to the long mountain ridge that in the North coincides with the border between Lombardy and the autonomous province of Trento (Ledro Valley) and in the east with the Sabbia Valley, including nine municipalities for a total of about 27,000 inhabitants."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lakes and High Peaks",
+      "stop_ids": [
+        "s7",
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Nature Reserves and Historical Ridges",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

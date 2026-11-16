@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Saxony",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Saxon Switzerland"
+        "sandstone cliffs",
+        "table mountains"
       ],
       "seo_title": "Saxon Switzerland National Park Visit Guide"
     },
     "travel": {
       "slug": "saxon-switzerland-national-park",
+      "overview_name": "Saxon Switzerland National Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Saxon Switzerland National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.nationalpark-saechsische-schweiz.de/en/",
@@ -31,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Saxon Switzerland National Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Elbe Valley and Cliffs",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Saxon Switzerland",
-                "stop_id": "saxon-switzerland-national-park",
-                "detail": "Learn more about the nature and history of Saxon Switzerland through educational programmes, or through the work of our department for nature conservation and research.\n\nEngage with activities in the National Park Region! Seize our opportunities and get involved as a volunteer for the National Park and the cultural landscape of Saxon Switzerland.\n\nBizarre rocks and wild gorges. Experience the beauty of Saxony's only national park and discover the wealth of flora and fauna on and between the sandstone cliffs in the national park region. The majestic table mountains and the deeply carved Elbe valley characterise the cross-border Elbe Sandstone Mountains on a large scale. Countless small-scale rock formations, deeply carved narrow gorges, and species-rich forests offer the opportunity to immerse yourself in unspoilt nature. Nature lovers, active holidaymakers, or lovers of quiet relaxation will find impressive nature experiences on the well-marked network of hiking trails with over 100 views. Certified national park guides offer many exciting hiking experiences. The Bohemian Switzerland National Park borders seamlessly on the Czech side."
+                "name": "sandstone cliffs",
+                "stop_id": "saxon-switzerland-national-park--s1",
+                "detail": "Experience the beauty of Saxony's only national park and discover the wealth of flora and fauna on and between the sandstone cliffs in the national park region."
+              },
+              {
+                "name": "table mountains",
+                "stop_id": "saxon-switzerland-national-park--s2",
+                "detail": "The majestic table mountains and the deeply carved Elbe valley characterise the cross-border Elbe Sandstone Mountains on a large scale."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Saxon Switzerland National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Formations and Trails",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "rock formations",
+                "stop_id": "saxon-switzerland-national-park--s4",
+                "detail": "Saxon Switzerland offers unforgettable nature experiences for locals and visitors alike, from hikes between bizarre rock formations to breathtaking viewpoints."
+              },
+              {
+                "name": "network of hiking trails",
+                "stop_id": "saxon-switzerland-national-park--s5",
+                "detail": "Nature lovers, active holidaymakers, or lovers of quiet relaxation will find impressive nature experiences on the well-marked network of hiking trails with over 100 views."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Saxon Switzerland National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -84,7 +109,8 @@
             "url": "https://www.saechsische-schweiz.de/en/national-park"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:50:43.784701+00:00"
       }
     }
   }

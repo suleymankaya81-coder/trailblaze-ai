@@ -1,0 +1,39 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hitzacker",
+      "quote": "Die Verwaltung des Biosphärenreservats „Niedersächsische Elbtalaue“ wird durch die Biosphärenreservatsverwaltung Niedersächsische Elbtalaue wahrgenommen, die zunächst eine Außenstelle der inzwischen aufgelösten Bezirksregierung Lüneburg war und in Hitzacker ansässig ist.",
+      "english": "The administration of the Lower Saxon Elbe Valley Biosphere Reserve is carried out by the Lower Saxon Elbe Valley Biosphere Reserve Authority, which was initially a branch office of the now dissolved Lüneburg regional government and is based in Hitzacker."
+    },
+    {
+      "id": "s2",
+      "name": "Elbschloss Bleckede",
+      "quote": "Das Elbschloss Bleckede, das Informationszentrum für die Elbtalaue, leistet die gebietsbezogene Informations- und Bildungsarbeit.",
+      "english": "The Elbe Castle Bleckede, the information center for the Elbe Valley, provides area-related information and educational work."
+    },
+    {
+      "id": "s3",
+      "name": "Schnackenburg",
+      "quote": "Ausdehnung: von Schnackenburg (Elbe-Kilometer 472,5) bis Lauenburg/Elbe (Elbe-Kilometer 569) beidseits der Elbe",
+      "english": "Extent: from Schnackenburg (Elbe kilometer 472.5) to Lauenburg/Elbe (Elbe kilometer 569) on both sides of the Elbe."
+    },
+    {
+      "id": "s4",
+      "name": "Lauenburg/Elbe",
+      "quote": "Ausdehnung: von Schnackenburg (Elbe-Kilometer 472,5) bis Lauenburg/Elbe (Elbe-Kilometer 569) beidseits der Elbe",
+      "english": "Extent: from Schnackenburg (Elbe kilometer 472.5) to Lauenburg/Elbe (Elbe kilometer 569) on both sides of the Elbe."
+    }
+  ],
+  "days": [
+    {
+      "title": "Towns and Education along the Elbe",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Burgensteig",
+      "quote": "For castles and exquisite views of the Upper Rhine Plan (Oberrheingraben), hike the Burgensteig from Darmstadt all the way to Heidelberg.",
+      "english": "For castles and exquisite views of the Upper Rhine Plan (Oberrheingraben), hike the Burgensteig from Darmstadt all the way to Heidelberg."
+    },
+    {
+      "id": "s2",
+      "name": "Alemannenweg",
+      "quote": "The circular Alemannenweg hiking trail crosses the low mountains of Odenwald, leading visitors through forests, orchards, fields and vineyards along the way.",
+      "english": "The circular Alemannenweg hiking trail crosses the low mountains of Odenwald, leading visitors through forests, orchards, fields and vineyards along the way."
+    },
+    {
+      "id": "s3",
+      "name": "Felsenmeer",
+      "quote": "More open air highlights include the Sea of Stones (Felsenmeer), a spectacular sea of large crystalline rocks cascading down a wide path on Felsberg Hill, and the English gardens of the Fürstenlager State Park (Staatspark Fürstenlager), home to exotic plants and trees including one of Germany's oldest sequoias as well as gingko and Japanese cedar trees.",
+      "english": "More open air highlights include the Sea of Stones (Felsenmeer), a spectacular sea of large crystalline rocks cascading down a wide path on Felsberg Hill, and the English gardens of the Fürstenlager State Park (Staatspark Fürstenlager), home to exotic plants and trees including one of Germany's oldest sequoias as well as gingko and Japanese cedar trees."
+    },
+    {
+      "id": "s4",
+      "name": "Fürstenlager State Park",
+      "quote": "More open air highlights include the Sea of Stones (Felsenmeer), a spectacular sea of large crystalline rocks cascading down a wide path on Felsberg Hill, and the English gardens of the Fürstenlager State Park (Staatspark Fürstenlager), home to exotic plants and trees including one of Germany's oldest sequoias as well as gingko and Japanese cedar trees.",
+      "english": "More open air highlights include the Sea of Stones (Felsenmeer), a spectacular sea of large crystalline rocks cascading down a wide path on Felsberg Hill, and the English gardens of the Fürstenlager State Park (Staatspark Fürstenlager), home to exotic plants and trees including one of Germany's oldest sequoias as well as gingko and Japanese cedar trees."
+    },
+    {
+      "id": "s5",
+      "name": "Neckar-Odenwald Limes",
+      "quote": "The Neckar-Odenwald Limes (Neckar-Odenwald-Limes) features two portions of the former external Roman defensive frontier line complete with fortresses and watchtowers; and the Messel Pit (Grube Messel), a disused quarry home to an extraordinary wealth of fossils, provides a remarkable insight into 50 million years of Earth's history.",
+      "english": "The Neckar-Odenwald Limes (Neckar-Odenwald-Limes) features two portions of the former external Roman defensive frontier line complete with fortresses and watchtowers; and the Messel Pit (Grube Messel), a disused quarry home to an extraordinary wealth of fossils, provides a remarkable insight into 50 million years of Earth's history."
+    },
+    {
+      "id": "s6",
+      "name": "Messel Pit",
+      "quote": "The Neckar-Odenwald Limes (Neckar-Odenwald-Limes) features two portions of the former external Roman defensive frontier line complete with fortresses and watchtowers; and the Messel Pit (Grube Messel), a disused quarry home to an extraordinary wealth of fossils, provides a remarkable insight into 50 million years of Earth's history.",
+      "english": "The Neckar-Odenwald Limes (Neckar-Odenwald-Limes) features two portions of the former external Roman defensive frontier line complete with fortresses and watchtowers; and the Messel Pit (Grube Messel), a disused quarry home to an extraordinary wealth of fossils, provides a remarkable insight into 50 million years of Earth's history."
+    },
+    {
+      "id": "s7",
+      "name": "Kloster Lorsch",
+      "quote": "The Bergstrasse-Odenwald's numerous cultural highlights include the Jugendstil architecture and arts and science museums of Darmstadt, and the UNESCO World Heritage abbey at Lorsch (Kloster Lorsch).",
+      "english": "The Bergstrasse-Odenwald's numerous cultural highlights include the Jugendstil architecture and arts and science museums of Darmstadt, and the UNESCO World Heritage abbey at Lorsch (Kloster Lorsch)."
+    },
+    {
+      "id": "s8",
+      "name": "Einhardsbasilika",
+      "quote": "Take a side trip to the neighbouring town of Steinbach to visit the 9th century Einhard's Basilica (Einhardsbasilika).",
+      "english": "Take a side trip to the neighbouring town of Steinbach to visit the 9th century Einhard's Basilica (Einhardsbasilika)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Natural Landscapes and Scenic Trails",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Ancient History and World Heritage",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

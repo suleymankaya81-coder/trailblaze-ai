@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Bad Gastein",
+      "quote": "Bad Gastein impresses with its Belle Époque architecture and roaring waterfalls.",
+      "english": "Bad Gastein impresses with its Belle Époque architecture and roaring waterfalls."
+    },
+    {
+      "id": "s2",
+      "name": "Bad Hofgastein",
+      "quote": "Bad Hofgastein offers family-friendly trails, bike parks and small mountain lakes.",
+      "english": "Bad Hofgastein offers family-friendly trails, bike parks and small mountain lakes."
+    },
+    {
+      "id": "s3",
+      "name": "Dorfgastein",
+      "quote": "Around Dorfgastein, you’ll find quiet Alpine paths, historic mills and regional cuisine.",
+      "english": "Around Dorfgastein, you’ll find quiet Alpine paths, historic mills and regional cuisine."
+    },
+    {
+      "id": "s4",
+      "name": "Felsentherme",
+      "quote": "At the Felsentherme in Bad Gastein you bathe in it inside the rock itself, across four separate spa areas, with the surrounding mountains in view.",
+      "english": "At the Felsentherme in Bad Gastein you bathe in it inside the rock itself, across four separate spa areas, with the surrounding mountains in view."
+    },
+    {
+      "id": "s5",
+      "name": "Alpentherme",
+      "quote": "The Alpentherme in Bad Hofgastein has water areas, saunas and quiet rooms.",
+      "english": "The Alpentherme in Bad Hofgastein has water areas, saunas and quiet rooms."
+    },
+    {
+      "id": "s6",
+      "name": "Gadaunerer Gorge",
+      "quote": "Many of them can be visited – the Gadaunerer Gorge, the Entrische Kirche show cave, the glacial mills above Bad Gastein.",
+      "english": "Many of them can be visited – the Gadaunerer Gorge, the Entrische Kirche show cave, the glacial mills above Bad Gastein."
+    },
+    {
+      "id": "s7",
+      "name": "Entrische Kirche",
+      "quote": "Many of them can be visited – the Gadaunerer Gorge, the Entrische Kirche show cave, the glacial mills above Bad Gastein.",
+      "english": "Many of them can be visited – the Gadaunerer Gorge, the Entrische Kirche show cave, the glacial mills above Bad Gastein."
+    },
+    {
+      "id": "s8",
+      "name": "Gastein Healing Gallery (Heilstollen)",
+      "quote": "The water is used at the Felsentherme in Bad Gastein, the Alpentherme in Bad Hofgastein and the Gastein Healing Gallery (Heilstollen).",
+      "english": "The water is used at the Felsentherme in Bad Gastein, the Alpentherme in Bad Hofgastein and the Gastein Healing Gallery (Heilstollen)."
+    },
+    {
+      "id": "s9",
+      "name": "Gamskarkogel",
+      "quote": "The highest peak in the area is the Ankogel (3,252 m), while within the valley the Gamskarkogel (2,467 m) dominates the landscape.",
+      "english": "The highest peak in the area is the Ankogel (3,252 m), while within the valley the Gamskarkogel (2,467 m) dominates the landscape."
+    }
+  ],
+  "days": [
+    {
+      "title": "Historical Center and Rock Spas",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s8"
+      ]
+    },
+    {
+      "title": "Alpine Leisure and Thermal Waters",
+      "stop_ids": [
+        "s2",
+        "s5",
+        "s9"
+      ]
+    },
+    {
+      "title": "Natural Wonders and Quiet Paths",
+      "stop_ids": [
+        "s3",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

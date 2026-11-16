@@ -1,0 +1,98 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Balderschwang Yew",
+      "quote": "For example, at the foot of the Balderschwang Yew.",
+      "english": "For example, at the foot of the Balderschwang Yew."
+    },
+    {
+      "id": "s2",
+      "name": "Lake Alpsee",
+      "quote": "The “Wasserläufer” traverses the foothills of the Alps, full of rivers, waterfalls and lakes, including the Lech, Lake Alpsee and the Scheidegger waterfall.",
+      "english": "The “Wasserläufer” traverses the foothills of the Alps, full of rivers, waterfalls and lakes, including the Lech, Lake Alpsee and the Scheidegger waterfall."
+    },
+    {
+      "id": "s3",
+      "name": "Scheidegger waterfall",
+      "quote": "The “Wasserläufer” traverses the foothills of the Alps, full of rivers, waterfalls and lakes, including the Lech, Lake Alpsee and the Scheidegger waterfall.",
+      "english": "The “Wasserläufer” traverses the foothills of the Alps, full of rivers, waterfalls and lakes, including the Lech, Lake Alpsee and the Scheidegger waterfall."
+    },
+    {
+      "id": "s4",
+      "name": "Alpspitz",
+      "quote": "The higher mountain country is crossed by the “Himmelsstürmer”, which encompasses peaks such as the Alpspitz in Nesselwang, the Grünten near Burgberg and the Nebelhorn, or “foghorn”, near Oberstdorf.",
+      "english": "The higher mountain country is crossed by the “Himmelsstürmer”, which encompasses peaks such as the Alpspitz in Nesselwang, the Grünten near Burgberg and the Nebelhorn, or “foghorn”, near Oberstdorf."
+    },
+    {
+      "id": "s5",
+      "name": "Grünten",
+      "quote": "The higher mountain country is crossed by the “Himmelsstürmer”, which encompasses peaks such as the Alpspitz in Nesselwang, the Grünten near Burgberg and the Nebelhorn, or “foghorn”, near Oberstdorf.",
+      "english": "The higher mountain country is crossed by the “Himmelsstürmer”, which encompasses peaks such as the Alpspitz in Nesselwang, the Grünten near Burgberg and the Nebelhorn, or “foghorn”, near Oberstdorf."
+    },
+    {
+      "id": "s6",
+      "name": "Nebelhorn",
+      "quote": "Winter paradise on the Nebelhorn: off-piste in fresh snow and a night in the \"Igloo Lodge\" at 2,000 metres.",
+      "english": "Winter paradise on the Nebelhorn: off-piste in fresh snow and a night in the \"Igloo Lodge\" at 2,000 metres."
+    },
+    {
+      "id": "s7",
+      "name": "Hochgratbahn",
+      "quote": "And when you run out of steam, mountain railways such as the Hörnerbahn in Bolsterlang or the Hochgratbahn in Oberstaufen make the ascent much easier to manage.",
+      "english": "And when you run out of steam, mountain railways such as the Hörnerbahn in Bolsterlang or the Hochgratbahn in Oberstaufen make the ascent much easier to manage."
+    },
+    {
+      "id": "s8",
+      "name": "Neuschwanstein Castle",
+      "quote": "Füssen, on Lake Forggensee, is overshadowed by Neuschwanstein Castle, the realisation of the medieval dream and spectacular hideaway of Ludwig II.",
+      "english": "Füssen, on Lake Forggensee, is overshadowed by Neuschwanstein Castle, the realisation of the medieval dream and spectacular hideaway of Ludwig II."
+    },
+    {
+      "id": "s9",
+      "name": "Princely Abbey",
+      "quote": "The 18th century Princely Abbey is a truly splendid building.",
+      "english": "The 18th century Princely Abbey is a truly splendid building."
+    },
+    {
+      "id": "s10",
+      "name": "Benedictine Abbey",
+      "quote": "Ottobeuren is famous for its remarkable work of art, the Baroque Benedictine Abbey.",
+      "english": "Ottobeuren is famous for its remarkable work of art, the Baroque Benedictine Abbey."
+    },
+    {
+      "id": "s11",
+      "name": "Nagelfluhkette Nature Park",
+      "quote": "We accompanied ranger Theresa in the Nagelfluhkette Nature Park to waterfalls, through snow-white dream landscapes and in search of Apollo butterflies",
+      "english": "We accompanied ranger Theresa in the Nagelfluhkette Nature Park to waterfalls, through snow-white dream landscapes and in search of Apollo butterflies"
+    }
+  ],
+  "days": [
+    {
+      "title": "Allgäu Peaks and Mountain Railways",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Lakes, Waterfalls and Ancient Nature",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s11"
+      ]
+    },
+    {
+      "title": "Historic Castles and Abbeys",
+      "stop_ids": [
+        "s8",
+        "s9",
+        "s10"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Monte Marsicano",
+      "quote": "Le cime più alte sono la montagna Grande (monte Argatone, che arriva a 2149 m s.l.m.), la Serra della Terratta, il monte Godi e il monte Marsicano, che raggiunge i 2245 m s.l.m..",
+      "english": "The highest peaks are the Grande mountain (Mount Argatone, which reaches 2149 m a.s.l.), the Serra della Terratta, Mount Godi and Mount Marsicano, which reaches 2245 m a.s.l.."
+    },
+    {
+      "id": "s2",
+      "name": "Val Fondillo",
+      "quote": "Se infatti le sorgenti in quota sono limitate e a portata piuttosto discreta, alle falde dei principali complessi montuosi attorno a circa 1 000-1100 m s.l.m. sgorgano abbondanti le acque delle sorgenti Tornareccia e Grotta delle Fate in val Fondillo nel comune di Opi, Aia Santilli, Iannanghera e Sorgente delle Donne di Civitella Alfedena, Rio Torto di Alfedena e valle di Canneto a Settefrati (sorgente del Melfa), e la polla cristallina lungo il fiume Sangro di Fonte della Regina a Villetta Barrea con la portata media di 2 000 litri d'acqua al secondo.",
+      "english": "In fact, while high-altitude springs are limited and have a rather modest flow, at the foot of the main mountain complexes at about 1,000-1,100 m a.s.l., the waters of the Tornareccia and Grotta delle Fate springs gush abundantly in Val Fondillo in the municipality of Opi, Aia Santilli, Iannanghera and Sorgente delle Donne in Civitella Alfedena, Rio Torto in Alfedena and the Canneto valley in Settefrati (Melfa spring), and the crystalline pool along the Sangro river of Fonte della Regina in Villetta Barrea with an average flow of 2,000 liters of water per second."
+    },
+    {
+      "id": "s3",
+      "name": "Lago di Barrea",
+      "quote": "A Barrea una diga genera con le sue acque il lago di Barrea.",
+      "english": "In Barrea, a dam generates the lake of Barrea with its waters."
+    },
+    {
+      "id": "s4",
+      "name": "Macchiarvana",
+      "quote": "Si sviluppa tra Pescasseroli, Alvito e Campoli Appennino, caratterizzato dalla presenza di evidenti fenomeni carsici quali campi di doline (Macchiarvana, La Difesa), inghiottitoi, grotte e corsi d'acqua sotterranei affioranti per brevi tratti (Capo d'Acqua a Campoli Appennino).",
+      "english": "It develops between Pescasseroli, Alvito and Campoli Appennino, characterized by the presence of evident karst phenomena such as sinkhole fields (Macchiarvana, La Difesa), swallow holes, caves and underground watercourses surfacing for short stretches (Capo d'Acqua in Campoli Appennino)."
+    },
+    {
+      "id": "s5",
+      "name": "Cascata di Acqua Ventilata",
+      "quote": "Grotte e inghiottitoi si trovano in località Cicerana (Lecce nei Marsi), mentre nel comune di Gioia dei Marsi è situata la cascata di Acqua Ventilata.",
+      "english": "Caves and swallow holes are found in the locality of Cicerana (Lecce nei Marsi), while the Acqua Ventilata waterfall is located in the municipality of Gioia dei Marsi."
+    },
+    {
+      "id": "s6",
+      "name": "Monte Petroso",
+      "quote": "Le cime più alte sono il monte Petroso (2247 m s.l.m.) e il monte Meta (2242 m s.l.m.) situato al confine tra il versante laziale, molisano ed abruzzese.",
+      "english": "The highest peaks are Mount Petroso (2247 m a.s.l.) and Mount Meta (2242 m a.s.l.) located on the border between the Lazio, Molise and Abruzzo sides."
+    },
+    {
+      "id": "s7",
+      "name": "Valle di Canneto",
+      "quote": "Nel settore laziale del parco ricade nello spartiacque del Liri ed entro i margini della riserva ricadono i fiumi Melfa a Settefrati e Mollarino che sorge presso San Biagio Saracinisco.",
+      "english": "In the Lazio sector of the park, it falls within the Liri watershed and within the margins of the reserve fall the Melfa rivers at Settefrati and Mollarino which rises near San Biagio Saracinisco."
+    },
+    {
+      "id": "s8",
+      "name": "Lago Vivo",
+      "quote": "Nel comprensorio del parco esistono alcuni interessanti laghi naturali come il lago Vivo, stagionale, il lago Pantaniello, la cui riserva statale importante per l'elevata altitudine e per le presenze ittiche ricade fra le cime del monte Godi, e il lago di Scanno, sorto a seguito di una frana nella valle del fiume Sagittario, presso Villalago e ai piedi dell'abitato di Frattura nel territorio comunale di Scanno.",
+      "english": "In the park area there are some interesting natural lakes such as Lake Vivo, which is seasonal, Lake Pantaniello, whose state reserve—important for its high altitude and fish presence—falls among the peaks of Mount Godi, and Lake Scanno, created following a landslide in the Sagittario river valley, near Villalago and at the foot of the town of Frattura in the municipal territory of Scanno."
+    }
+  ],
+  "days": [
+    {
+      "title": "Upper Sangro Peaks and Lakes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Karst Phenomena and Waterfalls",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Lazio and Molise Borderlands",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

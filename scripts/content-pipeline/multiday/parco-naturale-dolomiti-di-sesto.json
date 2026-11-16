@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Tre Cime di Lavaredo",
+      "quote": "Il parco è rinomato in quanto al suo interno si trovano molte famose cime dolomitiche, tra cui spiccano le pareti nord delle Tre Cime di Lavaredo.",
+      "english": "The park is renowned as many famous Dolomite peaks are located within it, among which the north faces of the Tre Cime di Lavaredo stand out."
+    },
+    {
+      "id": "s2",
+      "name": "monte Paterno",
+      "quote": "Altre cime importanti sono la Punta dei Tre Scarperi (m 3.152), il monte Popera (m 3.046), la Croda dei Baranci (m 2.922), il monte Paterno (m 2.744), la cima Una (m 2.698), la cima Undici (m 3.092) e la Croda dei Toni (m 3.094).",
+      "english": "Other important peaks are the Punta dei Tre Scarperi (3,152 m), Monte Popera (3,046 m), Croda dei Baranci (2,922 m), Monte Paterno (2,744 m), Cima Una (2,698 m), Cima Undici (3,092 m) and Croda dei Toni (3,094 m)."
+    },
+    {
+      "id": "s3",
+      "name": "lago dei Piani",
+      "quote": "Sopra questo strato si trovano strati di riebl, dolomia grigia e marne argillose, che hanno permesso ad esempio la formazione del lago dei Piani.",
+      "english": "Above this layer there are layers of riebl, grey dolomite and clayey marls, which allowed, for example, the formation of the Piani lake."
+    },
+    {
+      "id": "s4",
+      "name": "forte Haideck",
+      "quote": "Nel territorio del parco si trova un forte austriaco della prima guerra mondiale, il forte Haideck.",
+      "english": "In the territory of the park there is an Austrian fort from the First World War, fort Haideck."
+    },
+    {
+      "id": "s5",
+      "name": "lago di Landro",
+      "quote": "L'unico lago rilevante del parco è il lago di Landro.",
+      "english": "The only significant lake in the park is the Landro lake."
+    },
+    {
+      "id": "s6",
+      "name": "centro visite del Parco naturale Dolomiti di Sesto",
+      "quote": "Il centro visite del Parco naturale Dolomiti di Sesto ha sede nel suggestivo centro culturale Grand Hotel di Dobbiaco (46.72304°N 12.225591°E46°43′22.94″N, 12°13′32.13″E).",
+      "english": "The visitor centre of the Dolomiti di Sesto Natural Park is located in the suggestive Grand Hotel cultural centre in Dobbiaco (46.72304°N 12.225591°E46°43′22.94″N, 12°13′32.13″E)."
+    },
+    {
+      "id": "s7",
+      "name": "Strada degli Alpini",
+      "quote": "Voci correlate: Aree naturali protette del Trentino-Alto Adige, Dolomiti di Sesto, Parchi regionali d'Italia, Strada degli Alpini.",
+      "english": "Related entries: Protected natural areas of Trentino-Alto Adige, Sesto Dolomites, Regional parks of Italy, Strada degli Alpini."
+    }
+  ],
+  "days": [
+    {
+      "title": "Peaks and Glacial Lakes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "History and Nature Entry",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Visitor Services and Alpine Trails",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

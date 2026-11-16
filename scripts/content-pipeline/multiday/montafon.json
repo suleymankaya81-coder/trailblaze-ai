@@ -1,0 +1,105 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Schruns",
+      "quote": "Schruns: The Montafon's main town with a lively atmosphere and good infrastructure.",
+      "english": "Schruns: The Montafon's main town with a lively atmosphere and good infrastructure."
+    },
+    {
+      "id": "s2",
+      "name": "Tschagguns",
+      "quote": "Tschagguns: Traditional architecture and a postcard-perfect setting.",
+      "english": "Tschagguns: Traditional architecture and a postcard-perfect setting."
+    },
+    {
+      "id": "s3",
+      "name": "Bartholomäberg",
+      "quote": "Bartholomäberg: Historic village where guests can experience authentic Montafon culture.",
+      "english": "Bartholomäberg: Historic village where guests can experience authentic Montafon culture."
+    },
+    {
+      "id": "s4",
+      "name": "Vandans",
+      "quote": "Vandans: Typical mountain village with alpine charm and hiking trails.",
+      "english": "Vandans: Typical mountain village with alpine charm and hiking trails."
+    },
+    {
+      "id": "s5",
+      "name": "Silvretta Montafon",
+      "quote": "In addition to the best-known ski area of Silvretta Montafon, there are also Gargellen, Golm, Kristberg and Silvretta-Bielerhöhe.",
+      "english": "In addition to the best-known ski area of Silvretta Montafon, there are also Gargellen, Golm, Kristberg and Silvretta-Bielerhöhe."
+    },
+    {
+      "id": "s6",
+      "name": "Golm",
+      "quote": "Skiing with children: the Silvretta Montafon ski area, the Golm ski area and skiing on the Kristberg in Silbertal are known for being especially family-friendly, with wide, easy-to-navigate slopes and ski schools.",
+      "english": "Skiing with children: the Silvretta Montafon ski area, the Golm ski area and skiing on the Kristberg in Silbertal are known for being especially family-friendly, with wide, easy-to-navigate slopes and ski schools."
+    },
+    {
+      "id": "s7",
+      "name": "Gauertaler AlpkulTour",
+      "quote": "Family-friendly hikes: easy themed trails such as the Gauertaler AlpkulTour or Golmi’s Adventure World .",
+      "english": "Family-friendly hikes: easy themed trails such as the Gauertaler AlpkulTour or Golmi’s Adventure World ."
+    },
+    {
+      "id": "s8",
+      "name": "Golmi’s Adventure World",
+      "quote": "Family-friendly hikes: easy themed trails such as the Gauertaler AlpkulTour or Golmi’s Adventure World .",
+      "english": "Family-friendly hikes: easy themed trails such as the Gauertaler AlpkulTour or Golmi’s Adventure World ."
+    },
+    {
+      "id": "s9",
+      "name": "Kristberg",
+      "quote": "In addition to the best-known ski area of Silvretta Montafon, there are also Gargellen, Golm, Kristberg and Silvretta-Bielerhöhe.",
+      "english": "In addition to the best-known ski area of Silvretta Montafon, there are also Gargellen, Golm, Kristberg and Silvretta-Bielerhöhe."
+    },
+    {
+      "id": "s10",
+      "name": "Silbertal",
+      "quote": "Silbertal: A great place for nature lovers.",
+      "english": "Silbertal: A great place for nature lovers."
+    },
+    {
+      "id": "s11",
+      "name": "Gaschurn-Partenen",
+      "quote": "Gaschurn-Partenen: Starting point for the Silvretta High Alpine Road, perfect for hikes and mountain tours.",
+      "english": "Gaschurn-Partenen: Starting point for the Silvretta High Alpine Road, perfect for hikes and mountain tours."
+    },
+    {
+      "id": "s12",
+      "name": "Gargellen",
+      "quote": "Gargellen: Highest village in the Montafon, perfect for ski tours and alpine hikes.",
+      "english": "Gargellen: Highest village in the Montafon, perfect for ski tours and alpine hikes."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Villages and Heritage",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Family Mountain Adventures",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "High Alpine Nature and Vistas",
+      "stop_ids": [
+        "s9",
+        "s10",
+        "s11",
+        "s12"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Styria",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Naturpark Mürzer Oberland"
+        "Rax",
+        "Karl Ludwig Haus",
+        "Knopperwiese"
       ],
       "seo_title": "Mürzer Oberland Nature Park Visit Guide"
     },
     "travel": {
       "slug": "murzer-oberland-nature-park",
+      "overview_name": "Mürzer Oberland Nature Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Mürzer Oberland Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.naturparke.at/naturpark/steiermark/muerzer-oberland/",
@@ -31,16 +34,54 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Mürzer Oberland Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "High Mountain Summits and Peaks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Naturpark Mürzer Oberland",
-                "stop_id": "murzer-oberland-nature-park",
-                "detail": "Nature Park Mürzer Oberland makes award-winning biodiversity trail fit for the future again – renewed bridges, bridges and a largely barrier-poor circular path enable an even better nature experience for people with special needs."
+                "name": "Rax",
+                "stop_id": "murzer-oberland-nature-park--s2",
+                "detail": "It is arguably one of the most famous tours on the Viennese local mountain, the Rax – and certainly the most famous ascent on the Styrian side of this mountain range."
+              },
+              {
+                "name": "Karl Ludwig Haus",
+                "stop_id": "murzer-oberland-nature-park--s3",
+                "detail": "Only in fog is the final part from the Karl Ludwig Haus to the Heukuppe not recommended."
+              },
+              {
+                "name": "Knopperwiese",
+                "stop_id": "murzer-oberland-nature-park--s5",
+                "detail": "Interesting Alpine flora, rare wild animals such as chamois, marmot, eagle and alpine newt, a giant sinkhole at the Knopperwiese (caution!), great panoramic views at the Windberg peak."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Mürzer Oberland Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Educational Nature Trails",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Biodiversitätslehrpfad",
+                "stop_id": "murzer-oberland-nature-park--s1",
+                "detail": "Mürzer Oberland Nature Park is making its award-winning biodiversity trail fit for the future – renewed walkways, bridges and a largely barrier-free circular path enable an even better nature experience for people with special needs."
+              },
+              {
+                "name": "Wald der Sinne",
+                "stop_id": "murzer-oberland-nature-park--s8",
+                "detail": "The Forest of the Senses is located on the mountain farm of the Holzer family, also known as Steinwandtner, in Neuberg/Mürz in the middle of the Mürzer Oberland Nature Park."
+              },
+              {
+                "name": "Erlebnisweg klimawandeln",
+                "stop_id": "murzer-oberland-nature-park--s9",
+                "detail": "The 'klimawandeln' discovery trail focuses on the topics of biodiversity and nature conservation at 14 adventure stations, each with a specific habitat reference."
+              },
+              {
+                "name": "Tirolbach",
+                "stop_id": "murzer-oberland-nature-park--s7",
+                "detail": "In hot temperatures, a dip in the Tirolbach is a welcome refreshment."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Mürzer Oberland Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +121,8 @@
             "url": "https://www.naturparke.at/naturpark/steiermark/muerzer-oberland/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:46:45.506616+00:00"
       }
     }
   }

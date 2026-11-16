@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Piz Beverin",
+      "quote": "Rund um den Piz Beverin (2998 m ü. M.) erstreckt sich das Gebiet des Naturpark Beverin.",
+      "english": "The area of the Beverin Nature Park extends around Piz Beverin (2998 m above sea level)."
+    },
+    {
+      "id": "s2",
+      "name": "Center da Capricorns",
+      "quote": "Center da Capricorns Naturpark Beverin Geschäftsstelle.",
+      "english": "Center da Capricorns Beverin Nature Park office."
+    },
+    {
+      "id": "s3",
+      "name": "Cufercalhütte",
+      "quote": "Kommst du mit auf zwei Tage voller Berg-Abenteuer mit anderen Jugendlichen? Wir erklimmen einen Gipfel, übernachten in der Cufercalhütte und stellen beim Klettern unsere Geschicklichkeit auf die Probe.",
+      "english": "Are you coming along for two days full of mountain adventures with other young people? We will climb a peak, stay overnight in the Cufercalhütte and put our skills to the test while climbing."
+    },
+    {
+      "id": "s4",
+      "name": "Alp Anorosa",
+      "quote": "16. – 17. Juli 2026 | Cufercalhütte & Alp Anorosa.",
+      "english": "July 16 – 17, 2026 | Cufercalhütte & Alp Anorosa."
+    },
+    {
+      "id": "s5",
+      "name": "Bergbau Museum Ferrera",
+      "quote": "Im neu eröffneten Bergbau Museum Ferrera wird der Naturpark Beverin im Foyer präsentiert.",
+      "english": "In the newly opened Ferrera Mining Museum, the Beverin Nature Park is presented in the foyer."
+    },
+    {
+      "id": "s6",
+      "name": "Splügen",
+      "quote": "Das Passdorf Splügen im Naturpark Beverin wird für innovative und transformative Ansätze in der touristischen Entwicklung geehrte, welche es im Einklang mit der Nachhaltigkeit fördert.",
+      "english": "The pass village of Splügen in the Beverin Nature Park is honored for innovative and transformative approaches in tourism development, which it promotes in harmony with sustainability."
+    },
+    {
+      "id": "s7",
+      "name": "Alp Nurdagn",
+      "quote": "Alp- und Naturpark-Fest auf der Alp Nurdagn (Reiner Schilling).",
+      "english": "Alpine and Nature Park Festival on Alp Nurdagn (Reiner Schilling)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Mountain Peaks and Alpine Huts",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Cultural Heritage and Village Life",
+      "stop_ids": [
+        "s2",
+        "s6"
+      ]
+    },
+    {
+      "title": "Museums and High Pastures",
+      "stop_ids": [
+        "s5",
+        "s7"
+      ]
+    }
+  ]
+}

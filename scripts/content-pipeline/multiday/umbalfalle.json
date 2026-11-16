@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Umbalfälle",
+      "quote": "Die Umbalfälle sind Wasserfälle des Oberlaufs der Isel (dort noch Umbalbach genannt) im Umbaltal westlich von Hinterbichl im Nationalpark Hohe Tauern in Österreich.",
+      "english": "The Umbal Waterfalls are waterfalls of the upper reaches of the Isel (still called Umbalbach there) in the Umbal Valley west of Hinterbichl in the Hohe Tauern National Park in Austria."
+    },
+    {
+      "id": "s2",
+      "name": "Virgental",
+      "quote": "Am Ende des Virgentals führt von Hinterbichl die Straße weiter nach Ströden.",
+      "english": "At the end of the Virgen Valley, the road continues from Hinterbichl to Ströden."
+    },
+    {
+      "id": "s3",
+      "name": "Pebellalm",
+      "quote": "In einer knappen halben Stunde erreicht man über einen ausgebauten Wirtschaftsweg zu Fuß die beiden Jausenstationen Pebellalm und Islitzeralm; in etwas weniger Zeit auch mit einer Pferdekutsche.",
+      "english": "In just under half an hour, one can reach the two snack stations Pebellalm and Islitzeralm on foot via a developed farm track; in slightly less time also by horse-drawn carriage."
+    },
+    {
+      "id": "s4",
+      "name": "Islitzeralm",
+      "quote": "An diesen Almen beginnt der Wasserschaupfad entlang der Umbalfälle mit mehreren Aussichtskanzeln und erläuternden Schautafeln.",
+      "english": "At these alpine pastures, the water nature trail begins along the Umbal Waterfalls with several viewing platforms and explanatory display boards."
+    },
+    {
+      "id": "s5",
+      "name": "Wasserschaupfad",
+      "quote": "An diesen Almen beginnt der Wasserschaupfad entlang der Umbalfälle mit mehreren Aussichtskanzeln und erläuternden Schautafeln.",
+      "english": "At these alpine pastures, the water nature trail begins along the Umbal Waterfalls with several viewing platforms and explanatory display boards."
+    },
+    {
+      "id": "s6",
+      "name": "Aussichtskanzeln",
+      "quote": "An diesen Almen beginnt der Wasserschaupfad entlang der Umbalfälle mit mehreren Aussichtskanzeln und erläuternden Schautafeln.",
+      "english": "At these alpine pastures, the water nature trail begins along the Umbal Waterfalls with several viewing platforms and explanatory display boards."
+    },
+    {
+      "id": "s7",
+      "name": "Umbaltal",
+      "quote": "Die Umbalfälle sind Wasserfälle des Oberlaufs der Isel (dort noch Umbalbach genannt) im Umbaltal westlich von Hinterbichl im Nationalpark Hohe Tauern in Österreich.",
+      "english": "The Umbal Waterfalls are waterfalls of the upper reaches of the Isel (still called Umbalbach there) in the Umbal Valley west of Hinterbichl in the Hohe Tauern National Park in Austria."
+    }
+  ],
+  "days": [
+    {
+      "title": "Arrival and Valley Exploration",
+      "stop_ids": [
+        "s2",
+        "s7",
+        "s3"
+      ]
+    },
+    {
+      "title": "Waterfalls and Nature Trail",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Canopy Walk",
+      "quote": "Canopy Walk",
+      "english": "Canopy Walk"
+    },
+    {
+      "id": "s2",
+      "name": "National Park Centre Thiemsburg",
+      "quote": "National Park Centre Thiemsburg",
+      "english": "National Park Centre Thiemsburg"
+    },
+    {
+      "id": "s3",
+      "name": "Wildcat Village Hütscheroda",
+      "quote": "Wildcat Village Hütscheroda",
+      "english": "Wildcat Village Hütscheroda"
+    },
+    {
+      "id": "s4",
+      "name": "Adventure Trail Brunstal",
+      "quote": "Adventure Trail Brunstal",
+      "english": "Adventure Trail Brunstal"
+    },
+    {
+      "id": "s5",
+      "name": "Adventure Trail Silberborn",
+      "quote": "Adventure Trail Silberborn",
+      "english": "Adventure Trail Silberborn"
+    },
+    {
+      "id": "s6",
+      "name": "Fairytale Nature Path Feensteig",
+      "quote": "Fairytale Nature Path Feensteig",
+      "english": "Fairytale Nature Path Feensteig"
+    },
+    {
+      "id": "s7",
+      "name": "Urwald-Life-Camp",
+      "quote": "Urwald-Life-Camp",
+      "english": "Primeval Forest Life Camp"
+    },
+    {
+      "id": "s8",
+      "name": "Wildcat Secret Path",
+      "quote": "Wildcat Secret Path",
+      "english": "Wildcat Secret Path"
+    },
+    {
+      "id": "s9",
+      "name": "Primeval Forest Path",
+      "quote": "Primeval Forest Path",
+      "english": "Primeval Forest Path"
+    }
+  ],
+  "days": [
+    {
+      "title": "Thiemsburg Discovery and Adventure",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s6"
+      ]
+    },
+    {
+      "title": "Wildcat Encounters and Forest Camps",
+      "stop_ids": [
+        "s3",
+        "s8",
+        "s7"
+      ]
+    },
+    {
+      "title": "Primeval Forest Exploration Trails",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s9"
+      ]
+    }
+  ]
+}

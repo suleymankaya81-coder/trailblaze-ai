@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lower Austria",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Naturpark Kamptal-Schönberg"
+        "Kamp",
+        "Fluss-Lehrpfades"
       ],
       "seo_title": "Kamptal-Schönberg Nature Park Visit Guide"
     },
     "travel": {
       "slug": "kamptal-schonberg-nature-park",
+      "overview_name": "Kamptal-Schönberg Nature Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Kamptal-Schönberg Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.naturparke.at/naturpark/niederoesterreich/kamptal-schoenberg/",
@@ -31,16 +33,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Kamptal-Schönberg Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Riverside Exploration and Wine Tasting",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Naturpark Kamptal-Schönberg",
-                "stop_id": "kamptal-schonberg-nature-park",
-                "detail": "You will also find the Grüner Veltliner here, the grape variety most frequently grown in Lower Austria. On the meadows in the Kamptal-Schönberg Nature Park, for example, the Schopfige grape hyacinthe thrives, which is highly endangered in the northern pre-Alpine region. However, it can only be found early in the year, because it is an onion plant that retreats completely into the soil until the summer."
+                "name": "Kamp",
+                "stop_id": "kamptal-schonberg-nature-park--s1",
+                "detail": "The nature park in the southeastern Waldviertel at the transition to the Weinviertel is characterized by the river landscape along the Kamp (from the Celtic word \"kambos\" - the \"curved one\")."
+              },
+              {
+                "name": "Fluss-Lehrpfades",
+                "stop_id": "kamptal-schonberg-nature-park--s7",
+                "detail": "Along the River Educational Trail, the breathtaking fauna and flora as well as the great scenic diversity are presented in more detail at various stations."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Kamptal-Schönberg Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Vineyards and Forest Peaks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Manhartsberges",
+                "stop_id": "kamptal-schonberg-nature-park--s3",
+                "detail": "Other striking landscape elements are the slopes of the vineyards and the forests of the Manhartsberg, which line the river here."
+              },
+              {
+                "name": "Kamptal",
+                "stop_id": "kamptal-schonberg-nature-park--s4",
+                "detail": "The path leads through the vineyards that characterize the area and offers beautiful views into the Kamp Valley; information boards along the path provide information about viticulture in the Kamp Valley."
+              },
+              {
+                "name": "Kalvarienberg",
+                "stop_id": "kamptal-schonberg-nature-park--s5",
+                "detail": "The circular hiking trail leads over former terraces to the Manhartsberg with a magnificent view and distant view and via the Kalvarienberg back to Schönberg."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Kamptal-Schönberg Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +110,8 @@
             "url": "https://www.naturparke.at/naturpark/niederoesterreich/kamptal-schoenberg/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:45:27.076248+00:00"
       }
     }
   }

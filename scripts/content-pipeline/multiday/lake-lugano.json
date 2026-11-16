@@ -1,0 +1,91 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Piazza della Riforma",
+      "quote": "Enjoy the hustle and bustle alongside an espresso on the Piazza della Riforma.",
+      "english": "Enjoy the hustle and bustle alongside an espresso on the Piazza della Riforma."
+    },
+    {
+      "id": "s2",
+      "name": "Ciani Park",
+      "quote": "Ciani Park is the green lung of the city.",
+      "english": "Ciani Park is the green lung of the city."
+    },
+    {
+      "id": "s3",
+      "name": "Via Nassa",
+      "quote": "You can feel this as you stroll through the old city centre and the Via Nassa with its 270-metre-long arcades or the Via Nassa.",
+      "english": "You can feel this as you stroll through the old city centre and the Via Nassa with its 270-metre-long arcades or the Via Nassa."
+    },
+    {
+      "id": "s4",
+      "name": "Monte San Salvatore",
+      "quote": "San Salvatore is Lugano’s local mountain.",
+      "english": "San Salvatore is Lugano’s local mountain."
+    },
+    {
+      "id": "s5",
+      "name": "Monte Brè",
+      "quote": "From the upper station of Monte Brè, it is well worth taking a walk to the artists’ village of Brè.",
+      "english": "From the upper station of Monte Brè, it is well worth taking a walk to the artists’ village of Brè."
+    },
+    {
+      "id": "s6",
+      "name": "Gandria",
+      "quote": "By boat from Lugano, you can reach Gandria or Morcote – both charming locations on the shores of Lake Lugano.",
+      "english": "By boat from Lugano, you can reach Gandria or Morcote – both charming locations on the shores of Lake Lugano."
+    },
+    {
+      "id": "s7",
+      "name": "Swissminiatur",
+      "quote": "In Melide, you will find Swissminiatur, a miniature museum of Switzerland on a smaller scale.",
+      "english": "In Melide, you will find Swissminiatur, a miniature museum of Switzerland on a smaller scale."
+    },
+    {
+      "id": "s8",
+      "name": "Hermann Hesse Museum",
+      "quote": "Speaking of artists: in Montagnola, around 20 minutes from Lugano, is the Hermann Hesse Museum.",
+      "english": "Speaking of artists: in Montagnola, around 20 minutes from Lugano, is the Hermann Hesse Museum."
+    },
+    {
+      "id": "s9",
+      "name": "Monte Generoso",
+      "quote": "Monte Generoso is also known for its numerous hiking trails.",
+      "english": "Monte Generoso is also known for its numerous hiking trails."
+    },
+    {
+      "id": "s10",
+      "name": "Monte Tamaro",
+      "quote": "And another hiking highlight is Monte Tamaro.",
+      "english": "And another hiking highlight is Monte Tamaro."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lugano City Center and Parks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Lakeside Villages and Local Peaks",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Culture and Regional Hiking",
+      "stop_ids": [
+        "s8",
+        "s9",
+        "s10"
+      ]
+    }
+  ]
+}

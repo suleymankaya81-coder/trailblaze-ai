@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Bavaria",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Steigerwald"
+        "Handthal",
+        "Stollburg Castle",
+        "Ebrach monastery"
       ],
       "seo_title": "Steigerwald Visit Guide"
     },
     "travel": {
       "slug": "steigerwald",
+      "overview_name": "Steigerwald",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Steigerwald before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://bavaria.travel/stories/steigerwald-hiking/",
@@ -31,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Steigerwald",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Wine Culture and History",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Steigerwald",
-                "stop_id": "steigerwald",
-                "detail": "Hiking and enjoying wine? Of course! The sunny western slopes of the Steigerwald make it possible. We hiked along the Steigerwald Panorama Trail and other routes through low mountain landscapes rich in history and species. Text: Christian Haas, Photos: Frank Heuer"
+                "name": "Handthal",
+                "stop_id": "steigerwald--s1",
+                "detail": "In fact, a lot revolves around the liquid grape gold for this cheerful character from Handthal in Lower Franconia."
+              },
+              {
+                "name": "Stollburg Castle",
+                "stop_id": "steigerwald--s2",
+                "detail": "The “Weg der Erkenntnis” (path of knowledge) leading up to Stollburg Castle helps to combat incomplete wine knowledge."
+              },
+              {
+                "name": "Ebrach monastery",
+                "stop_id": "steigerwald--s3",
+                "detail": "It is also about the Cistercians who once lived in the nearby Ebrach monastery and introduced viticulture to the region."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Steigerwald before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Nature Education and Forest Trails",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Francis Trail",
+                "stop_id": "steigerwald--s4",
+                "detail": "One would love to join the regular hikers passing by, be it on one of the many trails starting here or at least on the short “Francis Trail” with its thought-provoking stations such as a walk-in bee house."
+              },
+              {
+                "name": "Steigerwald Centre",
+                "stop_id": "steigerwald--s5",
+                "detail": "The bee house is located next to the Steigerwald Centre, the ideal starting point for any tour."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Steigerwald before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +111,8 @@
             "url": "https://bavaria.travel/stories/steigerwald-hiking/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:51:25.868457+00:00"
       }
     }
   }

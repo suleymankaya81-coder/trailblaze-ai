@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hohen Meißner",
+      "quote": "Statue der Frau Holle am Frau-Holle-Teich auf dem Hohen Meißner im Geo-Naturpark Frau-Holle-Land.",
+      "english": "Statue of Mother Holle at the Mother Holle Pond on the Hoher Meißner in the Geo-Nature Park Frau-Holle-Land."
+    },
+    {
+      "id": "s2",
+      "name": "Frau-Holle-Teich",
+      "quote": "Statue der Frau Holle am Frau-Holle-Teich auf dem Hohen Meißner im Geo-Naturpark Frau-Holle-Land.",
+      "english": "Statue of Mother Holle at the Mother Holle Pond on the Hoher Meißner in the Geo-Nature Park Frau-Holle-Land."
+    },
+    {
+      "id": "s3",
+      "name": "Kirschenland Witzenhausen",
+      "quote": "Leuchtendes Herbstlaub an Kirschbäumen im Kirschenland Witzenhausen, Geo-Naturpark Frau-Holle-Land.",
+      "english": "Bright autumn foliage on cherry trees in the cherry country Witzenhausen, Geo-Nature Park Frau-Holle-Land."
+    },
+    {
+      "id": "s4",
+      "name": "Werra",
+      "quote": "Kanufahren auf der Werra (c)schellenberger",
+      "english": "Canoeing on the Werra (c)schellenberger"
+    },
+    {
+      "id": "s5",
+      "name": "Alten Hafen Wanfried",
+      "quote": "Radfahrer am Alten Hafen Wanfried (c)schellenberger",
+      "english": "Cyclists at the Old Port of Wanfried (c)schellenberger"
+    },
+    {
+      "id": "s6",
+      "name": "Grünen Band",
+      "quote": "Abwechslungsreiche Landschaft, kleine Fachwerkstädte, die sich schlängelnde Werra mit ihren Burgen und Schlössern - auf Wanderwegen, per Fahrrad oder mit dem Kanu, im Urlaub oder in der Freizeit, erkunden Sie die Heimat der Sagen- und Märchenfigur Frau Holle direkt am Grünen Band.",
+      "english": "Varied landscape, small half-timbered towns, the meandering Werra with its castles and palaces - on hiking trails, by bicycle or by canoe, on vacation or in your leisure time, explore the home of the legendary and fairy-tale figure Mother Holle directly on the Green Belt."
+    },
+    {
+      "id": "s7",
+      "name": "Frau Holles Blumenwiesen",
+      "quote": "Frau Holles Blumenwiesen im Geo-Naturpark Frau-Holle-Land.",
+      "english": "Mother Holle's flower meadows in the Geo-Nature Park Frau-Holle-Land."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Fairy Tale Ponds",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Riverside Trails and Historic Ports",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Cherry Orchards and Flower Meadows",
+      "stop_ids": [
+        "s3",
+        "s7"
+      ]
+    }
+  ]
+}

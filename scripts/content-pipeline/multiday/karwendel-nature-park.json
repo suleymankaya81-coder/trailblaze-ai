@@ -1,0 +1,91 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Eng",
+      "quote": "So just pause for a moment, take in the magnificent nature and pay a visit to the pretty alpine village of Eng!",
+      "english": "So just pause for a moment, take in the magnificent nature and pay a visit to the pretty alpine village of Eng!"
+    },
+    {
+      "id": "s2",
+      "name": "Großer Ahornboden",
+      "quote": "Highlights in the Karwendel Nature Park include the Großer Ahornboden with its old maple trees, the spectacular Karwendel Gorge and the Karwendel Alpine Park, which serves as a visitor centre.",
+      "english": "Highlights in the Karwendel Nature Park include the Großer Ahornboden with its old maple trees, the spectacular Karwendel Gorge and the Karwendel Alpine Park, which serves as a visitor centre."
+    },
+    {
+      "id": "s3",
+      "name": "small Ahornboden",
+      "quote": "The small Ahornboden, the Karwendel railway with views over Innsbruck and the Isar spring are further sights that will delight nature lovers.",
+      "english": "The small Ahornboden, the Karwendel railway with views over Innsbruck and the Isar spring are further sights that will delight nature lovers."
+    },
+    {
+      "id": "s4",
+      "name": "Hafelekar",
+      "quote": "The Innsbruck Nordkettenbahnen cable car takes you up to the Hafelekar, where hikers have Innsbruck at their feet on the south side and the nature park on the north side.",
+      "english": "The Innsbruck Nordkettenbahnen cable car takes you up to the Hafelekar, where hikers have Innsbruck at their feet on the south side and the nature park on the north side."
+    },
+    {
+      "id": "s5",
+      "name": "Frau Hitt",
+      "quote": "A little greeting over to the stone landmark \"Frau Hitt\" is a must, while the Alpine choughs circle in the updraft.",
+      "english": "A little greeting over to the stone landmark \"Frau Hitt\" is a must, while the Alpine choughs circle in the updraft."
+    },
+    {
+      "id": "s6",
+      "name": "Mondscheinspitze",
+      "quote": "You have to be fit to climb the 2,106 metre high Mondscheinspitze.",
+      "english": "You have to be fit to climb the 2,106 metre high Mondscheinspitze."
+    },
+    {
+      "id": "s7",
+      "name": "Halltal valley",
+      "quote": "The Halltal valley is located to the north of the former salt works town of Hall in Tirol.",
+      "english": "The Halltal valley is located to the north of the former salt works town of Hall in Tirol."
+    },
+    {
+      "id": "s8",
+      "name": "Hinterautal valley",
+      "quote": "A bike tour through the wild Hinterautal valley is the best way to explore the source of the Isar.",
+      "english": "A bike tour through the wild Hinterautal valley is the best way to explore the source of the Isar."
+    },
+    {
+      "id": "s9",
+      "name": "Isar spring",
+      "quote": "The small Ahornboden, the Karwendel railway with views over Innsbruck and the Isar spring are further sights that will delight nature lovers.",
+      "english": "The small Ahornboden, the Karwendel railway with views over Innsbruck and the Isar spring are further sights that will delight nature lovers."
+    },
+    {
+      "id": "s10",
+      "name": "Karwendel Gorge",
+      "quote": "Highlights in the Karwendel Nature Park include the Großer Ahornboden with its old maple trees, the spectacular Karwendel Gorge and the Karwendel Alpine Park, which serves as a visitor centre.",
+      "english": "Highlights in the Karwendel Nature Park include the Großer Ahornboden with its old maple trees, the spectacular Karwendel Gorge and the Karwendel Alpine Park, which serves as a visitor centre."
+    }
+  ],
+  "days": [
+    {
+      "title": "Eng Village and the Maple Plateaus",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "Nordkette Peaks and Halltal Valley",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s7"
+      ]
+    },
+    {
+      "title": "Isar Source and Gorges",
+      "stop_ids": [
+        "s8",
+        "s9",
+        "s10"
+      ]
+    }
+  ]
+}

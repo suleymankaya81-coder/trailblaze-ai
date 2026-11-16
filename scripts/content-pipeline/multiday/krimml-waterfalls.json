@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Krimml Waterfalls",
+      "quote": "The Krimml Waterfalls in the Hohe Tauern National Park are the highest waterfalls in Europe.",
+      "english": "The Krimml Waterfalls in the Hohe Tauern National Park are the highest waterfalls in Europe."
+    },
+    {
+      "id": "s2",
+      "name": "lowest waterfall",
+      "quote": "The barrier-free path leads from the car parks to the lowest waterfall, including wheelchair-accessible toilets.",
+      "english": "The barrier-free path leads from the car parks to the lowest waterfall, including wheelchair-accessible toilets."
+    },
+    {
+      "id": "s3",
+      "name": "uppermost waterfall",
+      "quote": "Those continuing to the uppermost waterfall should be reasonably fit and sure-footed.",
+      "english": "Those continuing to the uppermost waterfall should be reasonably fit and sure-footed."
+    },
+    {
+      "id": "s4",
+      "name": "Krimml Waterfall Trail",
+      "quote": "The Krimml Waterfall Trail is open every day from 1st May until the end of October (admission fee applies).",
+      "english": "The Krimml Waterfall Trail is open every day from 1st May until the end of October (admission fee applies)."
+    },
+    {
+      "id": "s5",
+      "name": "Krimml WaterWorlds",
+      "quote": "The Krimml WaterWorlds offer an interactive experience centred around the element of water, located right next to the Krimml Waterfalls.",
+      "english": "The Krimml WaterWorlds offer an interactive experience centred around the element of water, located right next to the Krimml Waterfalls."
+    },
+    {
+      "id": "s6",
+      "name": "village of Krimml",
+      "quote": "The Krimml Waterfalls are situated in the village of Krimml in the Hohe Tauern National Park in SalzburgerLand.",
+      "english": "The Krimml Waterfalls are situated in the village of Krimml in the Hohe Tauern National Park in SalzburgerLand."
+    },
+    {
+      "id": "s7",
+      "name": "Tauern Cycle Path",
+      "quote": "A leisurely ride along great rivers, cultural highlights and culinary discoveries: the Tauern Cycle Path through the Alps never fails to impress.",
+      "english": "A leisurely ride along great rivers, cultural highlights and culinary discoveries: the Tauern Cycle Path through the Alps never fails to impress."
+    }
+  ],
+  "days": [
+    {
+      "title": "Waterfalls and Trails",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Village and Nearby Sights",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

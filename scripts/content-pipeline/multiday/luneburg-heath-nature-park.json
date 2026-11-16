@@ -1,0 +1,39 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Pietzmoor",
+      "quote": "Pietzmoor im Herbst ist ein Moor-Besuch besonders reizvoll",
+      "english": "Pietzmoor in autumn is a particularly attractive bog to visit"
+    },
+    {
+      "id": "s2",
+      "name": "Heidelandschaft",
+      "quote": "Heidelandschaft zu jeder Jahreszeit beeindruckend!",
+      "english": "Heath landscape impressive at any time of year!"
+    },
+    {
+      "id": "s3",
+      "name": "Undeloh",
+      "quote": "Wetter in Undeloh: 9° Mäßiger Regen",
+      "english": "Weather in Undeloh: 9° Moderate rain"
+    },
+    {
+      "id": "s4",
+      "name": "Naturpark-Kiosk",
+      "quote": "Becher, Schnuckenkötel, Heide-Hocker oder auch \"einfach nur\" Broschüren... ...finden Sie in unserem Naturpark-Kiosk .",
+      "english": "Cups, Schnuckenkötel, heath-stools or even \"just\" brochures... ...can be found in our Nature Park kiosk."
+    }
+  ],
+  "days": [
+    {
+      "title": "Moors, Heathland and Village Life",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

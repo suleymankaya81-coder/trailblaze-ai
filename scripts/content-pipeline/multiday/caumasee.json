@@ -1,0 +1,39 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lake Cauma",
+      "quote": "Lake Cauma with its crystal-clear, turquoise waters is a place of longing where nature and pleasure meet.",
+      "english": "Lake Cauma with its crystal-clear, turquoise waters is a place of longing where nature and pleasure meet."
+    },
+    {
+      "id": "s2",
+      "name": "Rhine Gorge",
+      "quote": "The Rhine Gorge in Graubünden is one of the most majestic and diverse landscapes in the Alps.",
+      "english": "The Rhine Gorge in Graubünden is one of the most majestic and diverse landscapes in the Alps."
+    },
+    {
+      "id": "s3",
+      "name": "Uraltbuchenwald",
+      "quote": "You will experience an unforgettable hike with amazing information about the Surselva over the last 250 million years.",
+      "english": "You will experience an unforgettable hike with amazing information about the Surselva over the last 250 million years."
+    },
+    {
+      "id": "s4",
+      "name": "UNESCO World Heritage Swiss Tectonic Arena Sardona",
+      "quote": "Flims: This multifaceted holiday region boasts a top winter sports area, mountain lakes, the Rhine Gorge and the UNESCO World Heritage Swiss Tectonic Arena Sardona.",
+      "english": "Flims: This multifaceted holiday region boasts a top winter sports area, mountain lakes, the Rhine Gorge and the UNESCO World Heritage Swiss Tectonic Arena Sardona."
+    }
+  ],
+  "days": [
+    {
+      "title": "Flims Nature and Landscapes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

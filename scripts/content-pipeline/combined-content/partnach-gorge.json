@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Bavaria",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Partnach"
+        "Ludwigstraße",
+        "Gasthof Fraundorfer",
+        "Philosophenweg"
       ],
       "seo_title": "Partnach Gorge Visit Guide"
     },
     "travel": {
       "slug": "partnach-gorge",
+      "overview_name": "Partnach Gorge",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Partnach Gorge before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://bavaria.travel/stories/garmisch-partenkirchen/",
@@ -31,16 +34,49 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Partnach Gorge",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Partenkirchen Culture and Panoramic Trails",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Partnach",
-                "stop_id": "partnach-gorge",
-                "detail": "At the foot of the Zugspitze mountain and at the confluence of the Loisach and Partnach rivers, unforgettable nature experiences, cultural enjoyment and plenty of Bavarian lifestyle are waiting. Our reporter had a look around. Text: Markus Stein"
+                "name": "Ludwigstraße",
+                "stop_id": "partnach-gorge--s5",
+                "detail": "Ludwigstraße in Partenkirchen: once a commercial street, today a promenade, regional jewel and picture book."
+              },
+              {
+                "name": "Gasthof Fraundorfer",
+                "stop_id": "partnach-gorge--s6",
+                "detail": "One example of many: the “Gasthof Fraundorfer”, a well-known and popular inn."
+              },
+              {
+                "name": "Philosophenweg",
+                "stop_id": "partnach-gorge--s7",
+                "detail": "There is a beautiful view over both places from the Philosophers' Trail."
+              },
+              {
+                "name": "St. Anton",
+                "stop_id": "partnach-gorge--s8",
+                "detail": "It leads from the Wank cable car valley station to the pilgrimage church of St. Anton, past benches whose backrests are adorned with special sayings."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Partnach Gorge before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Garmisch Gardens and Alpine Meadows",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Kochelberg",
+                "stop_id": "partnach-gorge--s9",
+                "detail": "In this mountain world, on the Kochelberg at an altitude of about 900 metres, Ursula Höger has her meadow full of alpine flowers and medicinal herbs."
+              },
+              {
+                "name": "Schneggensteg",
+                "stop_id": "partnach-gorge--s11",
+                "detail": "Follow Kramerstraße, cross the wooden Schneggensteg and reach Loisachstraße."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Partnach Gorge before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +116,8 @@
             "url": "https://bavaria.travel/stories/garmisch-partenkirchen/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:50:06.162131+00:00"
       }
     }
   }

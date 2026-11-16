@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Upper Austria",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Lake Attersee"
+        "Attersee Water Park",
+        "Seewalchen",
+        "Schörfling"
       ],
       "seo_title": "Lake Attersee Visit Guide"
     },
     "travel": {
       "slug": "lake-attersee",
+      "overview_name": "Lake Attersee",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Lake Attersee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.austria.info/en-gb/locations/lake-attersee/",
@@ -31,16 +34,67 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Lake Attersee",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Northern Shore and Water Fun",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Lake Attersee",
-                "stop_id": "lake-attersee",
-                "detail": "Blooming fruit trees in spring, wildflower meadows in summer and forests glowing with autumn colour: the Attersee-Attergau region is a cultural landscape shaped by people for centuries. This long-established connection between land use and landscape is still visible today. Immersing yourself in Lake Attersee and its surroundings fulfils a very particular longing: for an Alpine way of life between mountains and lake, with a close connection to music and art. Lake Attersee brings both into harmony: relaxation and inspiration."
+                "name": "Attersee Water Park",
+                "stop_id": "lake-attersee--s2",
+                "detail": "The Attersee Water Park combines beach and outdoor pool: a heated pool (26 °C), slides into the lake, a white-water channel, a geyser, massage jets and a waterfall."
+              },
+              {
+                "name": "Seewalchen",
+                "stop_id": "lake-attersee--s3",
+                "detail": "Sport, dirndls, and Klimt – Seewalchen has much to offer beyond its lakeshore."
+              },
+              {
+                "name": "Schörfling",
+                "stop_id": "lake-attersee--s4",
+                "detail": "Restaurant Langostinos in Schörfling: 1 toque, regional fish specialities."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Attersee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Eastern Villages and Waterfalls",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Weyregg Lido",
+                "stop_id": "lake-attersee--s5",
+                "detail": "At Weyregg Lido, you'll find a sunbathing lawn, a jetty, a children's area with a solar-heated pool, a floating island, and a café on the catamaran."
+              },
+              {
+                "name": "Nixenfall",
+                "stop_id": "lake-attersee--s6",
+                "detail": "Today, a sculpture at the Nixenfall in Steinbach commemorates her."
+              },
+              {
+                "name": "Attersee-Traunsee Star Park",
+                "stop_id": "lake-attersee--s9",
+                "detail": "The Attersee-Traunsee Star Park – Austria's first Dark Sky Park – stands for the conscious use of light at night."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Attersee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Culture and Southern Shores",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Unterach",
+                "stop_id": "lake-attersee--s7",
+                "detail": "A mix of magnificent villas from the turn of the century, Unterach has preserved its village character to this day."
+              },
+              {
+                "name": "Gustav Mahler's holiday home",
+                "stop_id": "lake-attersee--s8",
+                "detail": "Gustav Mahler's holiday home is still almost unchanged - come and have a look around!"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Lake Attersee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +134,8 @@
             "url": "https://www.austria.info/en-gb/locations/lake-attersee/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:45:59.241052+00:00"
       }
     }
   }

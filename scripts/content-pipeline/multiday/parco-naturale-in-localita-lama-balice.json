@@ -1,0 +1,39 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "lama Balice",
+      "quote": "Il parco regionale prende il nome dalla lama Balice che, con i suoi 37 km di lunghezza costituisce una delle più lunghe lame presenti nella città metropolitana di Bari.",
+      "english": "The regional park takes its name from the Balice blade which, with its 37 km length, constitutes one of the longest blades present in the metropolitan city of Bari."
+    },
+    {
+      "id": "s2",
+      "name": "Tiflis",
+      "quote": "Il torrente che vi scorre era un tempo chiamato Tiflis: normalmente in secca, in occasione di precipitazioni più abbondanti si gonfia per l'apporto di acqua piovana.",
+      "english": "The stream that flows there was once called Tiflis: normally dry, during more abundant rainfall it swells due to the contribution of rainwater."
+    },
+    {
+      "id": "s3",
+      "name": "Villa Framarino",
+      "quote": "Al suo interno è situata Villa Framarino, un'antica masseria, che dopo i recenti restauri è diventata sede del primo centro di documentazione barese sulla conservazione della natura.",
+      "english": "Villa Framarino is located inside it, an ancient farmhouse, which after recent restorations has become the site of the first documentation center in Bari on nature conservation."
+    },
+    {
+      "id": "s4",
+      "name": "grotte di Chianchiarello",
+      "quote": "Vi sono delle grotte, le \"grotte di Chianchiarello\", che rappresentano delle testimonianze sulla vita paleolitica della città.",
+      "english": "There are some caves, the \"Chianchiarello caves\", which represent evidence of the Paleolithic life of the city."
+    }
+  ],
+  "days": [
+    {
+      "title": "Natural and Historical Exploration of Lama Balice",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

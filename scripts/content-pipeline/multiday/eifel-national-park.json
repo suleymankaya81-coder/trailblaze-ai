@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Dreiborn Plateau",
+      "quote": "Watch wild animals, roam the natural beech and mixed forests, and enjoy magical panoramic views of the impressive lakelands or the open grassland of the Dreiborn Plateau.",
+      "english": "Watch wild animals, roam the natural beech and mixed forests, and enjoy magical panoramic views of the impressive lakelands or the open grassland of the Dreiborn Plateau."
+    },
+    {
+      "id": "s2",
+      "name": "Wilderness Trail",
+      "quote": "The entire length of the trail is marked with the stylised wildcat symbol. The Wilderness-Trail.",
+      "english": "The entire length of the trail is marked with the stylised wildcat symbol. The Wilderness-Trail."
+    },
+    {
+      "id": "s3",
+      "name": "National Park Centre",
+      "quote": "Eifel National Park Centre offers guided tours, special programmes for groups, school classes and pre-schoolers as well as excellent barrier-free accessibility.",
+      "english": "Eifel National Park Centre offers guided tours, special programmes for groups, school classes and pre-schoolers as well as excellent barrier-free accessibility."
+    },
+    {
+      "id": "s4",
+      "name": "Dreams of the Wilderness",
+      "quote": "\"Dreams of the Wilderness\" Exhibition The exhibition invites you to embark on a journey of discovery.",
+      "english": "\"Dreams of the Wilderness\" Exhibition The exhibition invites you to embark on a journey of discovery."
+    },
+    {
+      "id": "s5",
+      "name": "Dark Sky Park",
+      "quote": "Experience the protected night sky Wilderness Trail Explore the entire conservation area in four days Guided walks Discover the conservation area with rangers and forest guides Dark Sky Park.",
+      "english": "Experience the protected night sky Wilderness Trail Explore the entire conservation area in four days Guided walks Discover the conservation area with rangers and forest guides Dark Sky Park."
+    },
+    {
+      "id": "s6",
+      "name": "Wilder Weg",
+      "quote": "Enlarge image (Wilder Weg_Net Apart Fotodesign1.jpg)",
+      "english": "Enlarge image (Wilder Weg_Net Apart Fotodesign1.jpg)"
+    },
+    {
+      "id": "s7",
+      "name": "Malsbenden",
+      "quote": "Enlarge image (mauereidechse_podarcis muralis_wachhäuschen schießbahn malsbenden_urfttal_140917_07.jpg)",
+      "english": "Enlarge image (wall lizard_podarcis muralis_guard house shooting range malsbenden_urft valley_140917_07.jpg)"
+    }
+  ],
+  "days": [
+    {
+      "title": "Plateau and Discovery Centres",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Wilderness Trails and Paths",
+      "stop_ids": [
+        "s2",
+        "s6"
+      ]
+    },
+    {
+      "title": "Dark Skies and Valleys",
+      "stop_ids": [
+        "s5",
+        "s7"
+      ]
+    }
+  ]
+}

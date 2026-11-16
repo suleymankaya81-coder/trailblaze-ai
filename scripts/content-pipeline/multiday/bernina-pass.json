@@ -1,0 +1,69 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Piz Bernina",
+      "quote": "Piz Bernina stands out due to its almost freestanding nature and as a result also offers unique far-reaching views from its summit."
+    },
+    {
+      "id": "s2",
+      "name": "Biancograt",
+      "quote": "You'll fly close to Piz Bernina, the Biancograt, and past glaciers.",
+      "english": "You'll fly close to Piz Bernina, the Biancograt, and past glaciers."
+    },
+    {
+      "id": "s3",
+      "name": "Bernina Massif",
+      "quote": "During the Bernina Standard Helicopter Round Flight, you'll discover the glacier world of the Bernina Massif.",
+      "english": "During the Bernina Standard Helicopter Round Flight, you'll discover the glacier world of the Bernina Massif."
+    },
+    {
+      "id": "s4",
+      "name": "Upper Engadine",
+      "quote": "The return flight over the lake landscape of the Upper Engadine completes your flying experience.",
+      "english": "The return flight over the lake landscape of the Upper Engadine completes your flying experience."
+    },
+    {
+      "id": "s5",
+      "name": "Poschiavo",
+      "quote": "On the Bernina Express you travel from the glaciers of the Engadine to an ice cream cone at the Mediterranean piazza of Poschiavo with many trail highlights in between.",
+      "english": "On the Bernina Express you travel from the glaciers of the Engadine to an ice cream cone at the Mediterranean piazza of Poschiavo with many trail highlights in between."
+    },
+    {
+      "id": "s6",
+      "name": "Valposchiavo",
+      "quote": "A journey on the Bernina Herb Express to Le Prese is a chance for passengers to experience the UNESCO World Heritage Site up close and immerse themselves in the world of herbs in Valposchiavo.",
+      "english": "A journey on the Bernina Herb Express to Le Prese is a chance for passengers to experience the UNESCO World Heritage Site up close and immerse themselves in the world of herbs in Valposchiavo."
+    },
+    {
+      "id": "s7",
+      "name": "La Gatta winery",
+      "quote": "The highlight is a visit to the La Gatta winery, where you can enjoy a local lunch paired with matching wines.",
+      "english": "The highlight is a visit to the La Gatta winery, where you can enjoy a local lunch paired with matching wines."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Glaciers",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Lakes and Valley Exploration",
+      "stop_ids": [
+        "s4",
+        "s6"
+      ]
+    },
+    {
+      "title": "Southern Villages and Vineyards",
+      "stop_ids": [
+        "s5",
+        "s7"
+      ]
+    }
+  ]
+}

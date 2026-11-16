@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Valais",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Gornergrat"
+        "ZOOOM the Matterhorn",
+        "Dufourspitze"
       ],
       "seo_title": "Gornergrat Visit Guide"
     },
     "travel": {
       "slug": "gornergrat",
+      "overview_name": "Gornergrat",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Gornergrat before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.myswitzerland.com/en-ch/experiences/gornergrat/",
@@ -31,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Gornergrat",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Summit Experience and Multimedia",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Gornergrat",
-                "stop_id": "gornergrat",
-                "detail": "Surrounded by no fewer than 29 peaks above 4,000 meters, such as the majestic Matterhorn and the Dufourspitze as well as the third-longest glacier of the Alps, Gornergrat rewards visitors with unparalleled views."
+                "name": "ZOOOM the Matterhorn",
+                "stop_id": "gornergrat--s7",
+                "detail": "The Gornergrat is also home to the multimedia experience “ZOOOM the Matterhorn”, the “Golden Spot” photo point, and a viewing platform, which can be visited all year round."
+              },
+              {
+                "name": "Dufourspitze",
+                "stop_id": "gornergrat--s10",
+                "detail": "Surrounded by more than two dozen four-thousand-metre peaks – including the Matterhorn, the imposing Dufourspitze and the Dom – and several glaciers, Gornergrat rewards with an unforgettable panorama."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Gornergrat before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Winter Slopes and Rail Journey",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Gornergrat Railway",
+                "stop_id": "gornergrat--s1",
+                "detail": "The adventure begins with the ride on the Gornergrat Railway which offers magnificent views of the Matterhorn."
+              },
+              {
+                "name": "Rotenboden",
+                "stop_id": "gornergrat--s5",
+                "detail": "In winter, the beautiful tobogganing route from Rotenboden to Riffelberg is just one of the experiences on offer."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Gornergrat before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +105,8 @@
             "url": "https://www.myswitzerland.com/en-ch/experiences/gornergrat/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:46:00.558406+00:00"
       }
     }
   }

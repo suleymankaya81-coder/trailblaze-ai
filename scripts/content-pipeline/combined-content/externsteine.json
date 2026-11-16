@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "North Rhine Westphalia",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Externsteine"
+        "grotto",
+        "Descent from the Cross"
       ],
       "seo_title": "Externsteine Visit Guide"
     },
     "travel": {
       "slug": "externsteine",
+      "overview_name": "Externsteine",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Externsteine before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.nrw-tourism.com/natural-wonders/externsteine",
@@ -31,16 +33,57 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Externsteine",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Religious History and Rock Art",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Externsteine",
-                "stop_id": "externsteine",
+                "name": "grotto",
+                "stop_id": "externsteine--s1",
+                "detail": "The inhabitants of the time erected a Christian place of worship with a grotto, a grave and an artistic relief depicting a biblical scene."
+              },
+              {
+                "name": "Descent from the Cross",
+                "stop_id": "externsteine--s3",
+                "detail": "Today, this relief of the Descent from the Cross is considered a work of art of European significance."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Externsteine before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Visitor Center and Scenic Views",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "viewing platform",
+                "stop_id": "externsteine--s4",
+                "detail": "In the 19th century, secular elements were added: stairs and a viewing platform were carved into the rocks."
+              },
+              {
+                "name": "lake",
+                "stop_id": "externsteine--s5",
                 "detail": "When you visit the Externsteine, you should definitely pause for a moment to admire the reflection of the rocks towering high into the sky in the clear water of the adjacent lake."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Externsteine before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Eggegebirge Mountain Hiking",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Velmerstot",
+                "stop_id": "externsteine--s7",
+                "detail": "The summit is calling: the Velmerstot route leads up to the highest elevation in the Eggegebirge mountains, the Velmerstot."
+              },
+              {
+                "name": "Silberbach valley",
+                "stop_id": "externsteine--s8",
+                "detail": "It descends through the Silberbach valley."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Externsteine before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +123,8 @@
             "url": "https://www.nrw-tourism.com/natural-wonders/externsteine"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:45:35.051104+00:00"
       }
     }
   }

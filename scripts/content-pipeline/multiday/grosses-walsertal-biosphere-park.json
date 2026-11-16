@@ -1,0 +1,39 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Großes Walsertal",
+      "quote": "Großes Walsertal has been a UNESCO Biosphere Reserve since 2000.",
+      "english": "Großes Walsertal has been a UNESCO Biosphere Reserve since 2000."
+    },
+    {
+      "id": "s2",
+      "name": "alpine dairy",
+      "quote": "Whether hiking, joining a guided nature or cultural experience, or visiting a traditional alpine dairy, there are many ways to discover the close relationship between the landscape, local farming and the way of life.",
+      "english": "Whether hiking, joining a guided nature or cultural experience, or visiting a traditional alpine dairy, there are many ways to discover the close relationship between the landscape, local farming and the way of life."
+    },
+    {
+      "id": "s3",
+      "name": "core zone",
+      "quote": "Explore the core zone of the UNESCO Biosphere Reserve Großes Walsertal on a snowshoe hike",
+      "english": "Explore the core zone of the UNESCO Biosphere Reserve Großes Walsertal on a snowshoe hike"
+    },
+    {
+      "id": "s4",
+      "name": "Grosses Walsertal biosphere park",
+      "quote": "Ski and hiking tours in the Grosses Walsertal biosphere park take you to pristine mountain scenery",
+      "english": "Ski and hiking tours in the Grosses Walsertal biosphere park take you to pristine mountain scenery"
+    }
+  ],
+  "days": [
+    {
+      "title": "Großes Walsertal Heritage and Wilderness",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

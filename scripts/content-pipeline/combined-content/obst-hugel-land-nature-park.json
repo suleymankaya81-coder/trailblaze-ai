@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Upper Austria",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Naturpark Obst-Hügel-Land"
+        "Scharten",
+        "St. Marienkirchen an der Polsenz",
+        "Mostmuseum St. Marienkirchen an der Polsenz"
       ],
       "seo_title": "Obst-Hügel-Land Nature Park Visit Guide"
     },
     "travel": {
       "slug": "obst-hugel-land-nature-park",
+      "overview_name": "Obst-Hügel-Land Nature Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Obst-Hügel-Land Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.naturparke.at/naturpark/oberoesterreich/obst-huegel-land/",
@@ -31,16 +34,49 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Obst-Hügel-Land Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Villages and Museums of the Nature Park",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Naturpark Obst-Hügel-Land",
-                "stop_id": "obst-hugel-land-nature-park",
-                "detail": "Stray orchards, rows of trees and orchards characterize the gentle hilly cultural landscape in the Nature Park Obst-Hügel-Land, in the municipalities Scharten and St. Marienkirchen on the Polsenz."
+                "name": "Scharten",
+                "stop_id": "obst-hugel-land-nature-park--s1",
+                "detail": "Orchards, rows of trees and fruit plantations shape the gently rolling cultural landscape in the Obst-Hügel-Land Nature Park, in the municipalities of Scharten and St. Marienkirchen an der Polsenz."
+              },
+              {
+                "name": "St. Marienkirchen an der Polsenz",
+                "stop_id": "obst-hugel-land-nature-park--s2",
+                "detail": "Beautiful circular trail in St. Marienkirchen an der Polsenz through the orchard landscape in the Obst-Hügel-Land Nature Park."
+              },
+              {
+                "name": "Mostmuseum St. Marienkirchen an der Polsenz",
+                "stop_id": "obst-hugel-land-nature-park--s5",
+                "detail": "Attractions: especially the Cider Museum St. Marienkirchen an der Polsenz."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Obst-Hügel-Land Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Panoramic Heights and Farm Stops",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Schartner Höhe",
+                "stop_id": "obst-hugel-land-nature-park--s6",
+                "detail": "This extensive circular hiking trail (starting point: Schartner Höhe car park, Cafe Kronberg) rewards you with wonderful views."
+              },
+              {
+                "name": "Jausenstation Beißl",
+                "stop_id": "obst-hugel-land-nature-park--s7",
+                "detail": "after approx. 100 m turn right over the bridge towards Herrnholz – Jausenstation Beißl – approx. 100 m to the Herrnholzer municipal road."
+              },
+              {
+                "name": "Obsthof Pachinger/Bischläger",
+                "stop_id": "obst-hugel-land-nature-park--s8",
+                "detail": "left towards Obsthof Pachinger/Bischläger (sign) – turn left directly at the house – towards Kronberg to Güterweg Kronberg – continue right along the freight road to Schartner Höhe."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Obst-Hügel-Land Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +116,8 @@
             "url": "https://www.naturparke.at/naturpark/oberoesterreich/obst-huegel-land/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:46:51.789671+00:00"
       }
     }
   }

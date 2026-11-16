@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Abruzzo",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Abruzzo, Lazio and Molise National Park"
+        "Monte Marsicano",
+        "Lago di Barrea"
       ],
       "seo_title": "Abruzzo, Lazio and Molise National Park Visit Guide"
     },
@@ -32,16 +33,57 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Abruzzo, Lazio and Molise National Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Upper Sangro Peaks and Lakes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Abruzzo, Lazio and Molise National Park",
-                "stop_id": "abruzzo-lazio-and-molise-national-park",
-                "detail": "Abruzzo, Lazio and Molise National Park (Italian: Parco Nazionale d'Abruzzo, Lazio e Molise) is an Italian national park established in 1923. The majority of the park is located in the Abruzzo region, with smaller parts in Lazio and Molise. It is sometimes called by its former name Abruzzo National Park. The park headquarters are in Pescasseroli in the Province of L'Aquila. The park's area is 496.80 km2 (191.82 sq mi)."
+                "name": "Monte Marsicano",
+                "stop_id": "abruzzo-lazio-and-molise-national-park--s1",
+                "detail": "The highest peaks are the Grande mountain (Mount Argatone, which reaches 2149 m a.s.l.), the Serra della Terratta, Mount Godi and Mount Marsicano, which reaches 2245 m a.s.l.."
+              },
+              {
+                "name": "Lago di Barrea",
+                "stop_id": "abruzzo-lazio-and-molise-national-park--s3",
+                "detail": "In Barrea, a dam generates the lake of Barrea with its waters."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Abruzzo, Lazio and Molise National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Karst Phenomena and Waterfalls",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Macchiarvana",
+                "stop_id": "abruzzo-lazio-and-molise-national-park--s4",
+                "detail": "It develops between Pescasseroli, Alvito and Campoli Appennino, characterized by the presence of evident karst phenomena such as sinkhole fields (Macchiarvana, La Difesa), swallow holes, caves and underground watercourses surfacing for short stretches (Capo d'Acqua in Campoli Appennino)."
+              },
+              {
+                "name": "Cascata di Acqua Ventilata",
+                "stop_id": "abruzzo-lazio-and-molise-national-park--s5",
+                "detail": "Caves and swallow holes are found in the locality of Cicerana (Lecce nei Marsi), while the Acqua Ventilata waterfall is located in the municipality of Gioia dei Marsi."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Abruzzo, Lazio and Molise National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Lazio and Molise Borderlands",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Monte Petroso",
+                "stop_id": "abruzzo-lazio-and-molise-national-park--s6",
+                "detail": "The highest peaks are Mount Petroso (2247 m a.s.l.) and Mount Meta (2242 m a.s.l.) located on the border between the Lazio, Molise and Abruzzo sides."
+              },
+              {
+                "name": "Lago Vivo",
+                "stop_id": "abruzzo-lazio-and-molise-national-park--s8",
+                "detail": "In the park area there are some interesting natural lakes such as Lake Vivo, which is seasonal, Lake Pantaniello, whose state reserve—important for its high altitude and fish presence—falls among the peaks of Mount Godi, and Lake Scanno, created following a landslide in the Sagittario river valley, near Villalago and at the foot of the town of Frattura in the municipal territory of Scanno."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Abruzzo, Lazio and Molise National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +121,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Abruzzo%2C_Lazio_and_Molise_National_Park"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://it.wikipedia.org/wiki/Parco_nazionale_d%27Abruzzo%2C_Lazio_e_Molise"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:43:56.186521+00:00"
       }
     }
   }

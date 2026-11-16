@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Tyrol",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Kaunergrat Nature Park"
+        "Wazespitze",
+        "Kaunertal glacier hike"
       ],
       "seo_title": "Kaunergrat Nature Park Visit Guide"
     },
     "travel": {
       "slug": "kaunergrat-nature-park",
+      "overview_name": "Kaunergrat Nature Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Kaunergrat Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.tyrol.com/activities/attractions/nature-parks/kaunergrat-nature-park",
@@ -31,16 +33,57 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Kaunergrat Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Glaciers and High Peaks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Kaunergrat Nature Park",
-                "stop_id": "kaunergrat-nature-park",
-                "detail": "Good Swarovski binoculars and a little patience are required for the Nature Watch excursions through the Kaunergrat Nature Park. But the guides know how to stalk the natural wonders. And then a chamois, an ibex or a marmot will cross your path."
+                "name": "Wazespitze",
+                "stop_id": "kaunergrat-nature-park--s1",
+                "detail": "The valley lies at the foot of the Wazespitze (3,533 metres) - the highest mountain in the Kaunergrat - and offers exciting mountain tours as well as climbing routes of all levels of difficulty."
+              },
+              {
+                "name": "Kaunertal glacier hike",
+                "stop_id": "kaunergrat-nature-park--s7",
+                "detail": "Themed hiking trails such as the Piller Moor nature trail and the Kaunertal glacier hike are particularly popular."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Kaunergrat Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Nature Education and Exhibits",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Nature Park House",
+                "stop_id": "kaunergrat-nature-park--s5",
+                "detail": "Visitors can discover exciting exhibitions in the Nature Park House and experience the diverse nature on guided tours or on their own."
+              },
+              {
+                "name": "3000 m VERTIKAL",
+                "stop_id": "kaunergrat-nature-park--s6",
+                "detail": "A highlight is the Kaunergrat Nature Park House with its interactive exhibition \"3000 m VERTIKAL\"."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Kaunergrat Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Moorland Discovery",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Piller Moor nature trail",
+                "stop_id": "kaunergrat-nature-park--s4",
+                "detail": "The family-friendly hike along the largely barrier-free Piller Moor nature trail leads through exciting moorland to the peat cutting, where valuable peat was mined until the 1970s."
+              },
+              {
+                "name": "upland moor in the Pillertal",
+                "stop_id": "kaunergrat-nature-park--s8",
+                "detail": "The upland moor in the Pillertal, a small side valley of the Pitztal, in the centre of the Kaunergrat Nature Park, has fascinated visitors for thousands of years with its extraordinary flora and fauna."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Kaunergrat Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +123,8 @@
             "url": "https://www.tyrol.com/activities/attractions/nature-parks/kaunergrat-nature-park"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:45:38.022449+00:00"
       }
     }
   }

@@ -1,29 +1,32 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Bern",
-      "tagline": "Holidays packed with both adventure and leisure await near deep blue Lake Thun and the Diemtigtal Nature Park.",
+      "tagline": "You will find everything you could wish for around Lake Thun, from invigorating water sports activities to mel",
       "best_season": "Check official seasonal information",
       "best_seasons": [],
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Lake Thun"
+        "Diemtigtal Nature Park",
+        "Aare",
+        "Bühne der Thunerseespiele"
       ],
       "seo_title": "Lake Thun Visit Guide"
     },
     "travel": {
       "slug": "lake-thun",
+      "overview_name": "Lake Thun",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Lake Thun before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.thunersee.ch/en/",
@@ -31,16 +34,67 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Lake Thun",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Riverside City and Nature Park",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Lake Thun",
-                "stop_id": "lake-thun",
-                "detail": "Holidays packed with both adventure and leisure await near deep blue Lake Thun and the Diemtigtal Nature Park. Relax in a wellness hotel with stunning views, or embark on a hike overlooking the majestic mountains of the Bernese Oberland. Ride a boat across the biggest lake in the Canton of Bern and visit the castles of Lake Thun. You will find everything you could wish for around Lake Thun, from invigorating water sports activities to melodious music."
+                "name": "Diemtigtal Nature Park",
+                "stop_id": "lake-thun--s1",
+                "detail": "Holidays packed with both adventure and leisure await near deep blue Lake Thun and the Diemtigtal Nature Park."
+              },
+              {
+                "name": "Aare",
+                "stop_id": "lake-thun--s2",
+                "detail": "In spring, flowers adorn the promenades that lead along the Aare into the center of the city of Thun"
+              },
+              {
+                "name": "Bühne der Thunerseespiele",
+                "stop_id": "lake-thun--s7",
+                "detail": "Stage of the Lake Thun Festival on Lake Thun in the evening atmosphere with mountain panorama in the background"
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Thun before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Castles and Lake Activities",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Schloss Oberhofen",
+                "stop_id": "lake-thun--s5",
+                "detail": "Fairytale Oberhofen Castle with the steamboat Blümlisalp gliding across Lake Thun."
+              },
+              {
+                "name": "Honu Wassersportcenter",
+                "stop_id": "lake-thun--s8",
+                "detail": "Wakeboarders on the move with Honu Water Sports Center on Lake Thun"
+              },
+              {
+                "name": "Aussichtsturm Blueme in Sigriswil",
+                "stop_id": "lake-thun--s3",
+                "detail": "Blueme observation tower in Sigriswil in autumn with a view of Lake Thun"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Thun before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Mountain Peaks and Ridges",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Morgenberghorn",
+                "stop_id": "lake-thun--s4",
+                "detail": "Three hikers on the ridge on the way to the Morgenberghorn and Lake Thun in the background"
+              },
+              {
+                "name": "Niederhorn",
+                "stop_id": "lake-thun--s9",
+                "detail": "The family enjoys the panoramic view from the Niederhorn of Lake Thun and the mountains"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Lake Thun before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +134,8 @@
             "url": "https://www.thunersee.ch/en/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:47:03.653896+00:00"
       }
     }
   }

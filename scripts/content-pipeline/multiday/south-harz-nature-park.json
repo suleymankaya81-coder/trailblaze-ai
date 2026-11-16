@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Große Ehrenberg",
+      "quote": "Die höchste Erhebung des Naturparks Südharz ist der Große Ehrenberg (635,5 m ü. NN).",
+      "english": "The highest elevation of the South Harz Nature Park is the Große Ehrenberg (635.5 m above sea level)."
+    },
+    {
+      "id": "s2",
+      "name": "Bachschwinden",
+      "quote": "Im Naturpark finden sich Bachschwinden, Karstquellen, Erdfallseen und Dolinen neben Gipssteilwänden.",
+      "english": "In the nature park there are sinkholes, karst springs, sinkhole lakes and dolines next to steep gypsum walls."
+    },
+    {
+      "id": "s3",
+      "name": "Karstquellen",
+      "quote": "Im Naturpark finden sich Bachschwinden, Karstquellen, Erdfallseen und Dolinen neben Gipssteilwänden.",
+      "english": "In the nature park there are sinkholes, karst springs, sinkhole lakes and dolines next to steep gypsum walls."
+    },
+    {
+      "id": "s4",
+      "name": "Erdfallseen",
+      "quote": "Im Naturpark finden sich Bachschwinden, Karstquellen, Erdfallseen und Dolinen neben Gipssteilwänden.",
+      "english": "In the nature park there are sinkholes, karst springs, sinkhole lakes and dolines next to steep gypsum walls."
+    },
+    {
+      "id": "s5",
+      "name": "Dolinen",
+      "quote": "Im Naturpark finden sich Bachschwinden, Karstquellen, Erdfallseen und Dolinen neben Gipssteilwänden.",
+      "english": "In the nature park there are sinkholes, karst springs, sinkhole lakes and dolines next to steep gypsum walls."
+    },
+    {
+      "id": "s6",
+      "name": "Gipssteilwänden",
+      "quote": "Im Naturpark finden sich Bachschwinden, Karstquellen, Erdfallseen und Dolinen neben Gipssteilwänden.",
+      "english": "In the nature park there are sinkholes, karst springs, sinkhole lakes and dolines next to steep gypsum walls."
+    },
+    {
+      "id": "s7",
+      "name": "Trockenrasenflächen",
+      "quote": "Trockenrasenflächen mit Orchideen sind die Reste ehemaliger Weiden und Wiesen auf den Karstflächen.",
+      "english": "Dry grasslands with orchids are the remains of former pastures and meadows on the karst surfaces."
+    }
+  ],
+  "days": [
+    {
+      "title": "Natural Geological Features",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Highlands and Landscapes",
+      "stop_ids": [
+        "s1",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

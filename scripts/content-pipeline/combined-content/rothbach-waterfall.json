@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Bavaria",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Röthbach Waterfall"
+        "Berchtesgaden National Park",
+        "Landtal Waterfall"
       ],
       "seo_title": "Röthbach Waterfall Visit Guide"
     },
     "travel": {
       "slug": "rothbach-waterfall",
+      "overview_name": "Röthbach Waterfall",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Röthbach Waterfall before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://bavaria.travel/listicles/most-beautiful-waterfalls-in-bavaria-tips/",
@@ -31,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Röthbach Waterfall",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Waterfalls and National Park",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Röthbach Waterfall",
-                "stop_id": "rothbach-waterfall",
+                "name": "Berchtesgaden National Park",
+                "stop_id": "rothbach-waterfall--s2",
                 "detail": "Röthbach Waterfall in Berchtesgaden National Park plunges over a height of 470 metres, cascading down the rock and overcoming two large steps."
+              },
+              {
+                "name": "Landtal Waterfall",
+                "stop_id": "rothbach-waterfall--s8",
+                "detail": "A little to the north, another impressive cascade spills down into the depths: the 410-metre Landtal Waterfall, the second highest waterfall in Germany."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Röthbach Waterfall before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Lake Königssee Basin and High Plateaus",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Röth",
+                "stop_id": "rothbach-waterfall--s4",
+                "detail": "The mighty rock barrier, up to 700 metres high, separates the basin of Königsee Lake from the Röth, a plateau that stretches between the Steinernes Meer and the Hagengebirge mountains."
+              },
+              {
+                "name": "Saletalm",
+                "stop_id": "rothbach-waterfall--s5",
+                "detail": "You can reach Röthbach Waterfall by taking a boat trip across Königssee Lake to the Saletalm exit."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Röthbach Waterfall before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +105,8 @@
             "url": "https://bavaria.travel/listicles/most-beautiful-waterfalls-in-bavaria-tips/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:50:33.301047+00:00"
       }
     }
   }

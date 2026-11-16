@@ -1,0 +1,39 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Langenberg Wildlife Park",
+      "quote": "Our Förderverein supports Langenberg Wildlife Park and the Sihlwald Nature Discovery Park.",
+      "english": "Our support association supports Langenberg Wildlife Park and the Sihlwald Nature Discovery Park."
+    },
+    {
+      "id": "s2",
+      "name": "Sihlwald Nature Discovery Park",
+      "quote": "Watch lynx and bison at Langenberg Wildlife Park, or discover how the wilderness is reclaiming the forest at Sihlwald Nature Discovery Park.",
+      "english": "Watch lynx and bison at Langenberg Wildlife Park, or discover how the wilderness is reclaiming the forest at Sihlwald Nature Discovery Park."
+    },
+    {
+      "id": "s3",
+      "name": "Winterwald",
+      "quote": "Im Winterwald suchen Sie nach Spuren, wie Wildtiere die kalte Jahreszeit meistern.",
+      "english": "In the winter forest you look for tracks of how wild animals master the cold season."
+    },
+    {
+      "id": "s4",
+      "name": "Wildnispark Zürich Sihlwald",
+      "quote": "Geniessen Sie mit der Familie oder Freunden einen reichhaltigen Brunch inklusive geführtem kurzweiligem Spaziergang zu einem Wildtier im Park.",
+      "english": "Enjoy a rich brunch with family or friends, including a guided, entertaining walk to a wild animal in the park."
+    }
+  ],
+  "days": [
+    {
+      "title": "Wildlife and Forest Discovery",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Bavaria",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Fichtelgebirge"
+        "Steinwald Nature Park",
+        "Saubadloipe",
+        "Zipfeltannenfelsen"
       ],
       "seo_title": "Fichtelgebirge Nature Park Visit Guide"
     },
     "travel": {
       "slug": "fichtelgebirge-nature-park",
+      "overview_name": "Fichtelgebirge Nature Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Fichtelgebirge Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://bavaria.travel/stories/winter-sports-fichtelgebirge/",
@@ -31,16 +34,77 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Fichtelgebirge Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Granite Formations of Steinwald",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Fichtelgebirge",
-                "stop_id": "fichtelgebirge-nature-park",
-                "detail": "Snow is guaranteed from December to the end of March on the heights of the Fichtelgebirge mountains. Around Mount Ochsenkopf and Saubadfelsen, several hundred kilometres of trails and cross-country tracks await cross-country skiers, tourers and snowshoe hikers in addition to four kilometres of pistes. Text and photos: Thomas Linkel"
+                "name": "Steinwald Nature Park",
+                "stop_id": "fichtelgebirge-nature-park--s4",
+                "detail": "Three to four lynx appear from time to time in the photo traps in the Steinwald Nature Park, but because their hunting grounds cover up to 400 square kilometres, it would be almost impossible to encounter a lynx."
+              },
+              {
+                "name": "Saubadloipe",
+                "stop_id": "fichtelgebirge-nature-park--s5",
+                "detail": "The forest history trail that Jonas wants to show me starts just a few minutes’ walk away at the entrance to the Saubadloipe (Saubad ski trail)."
+              },
+              {
+                "name": "Zipfeltannenfelsen",
+                "stop_id": "fichtelgebirge-nature-park--s3",
+                "detail": "Last winter would almost have passed without a trip to Ochsenkopf and Zipfeltannenfelsen if Schorsch hadn't called me on a Wednesday shortly before April 1st."
+              },
+              {
+                "name": "Saubadfelsen",
+                "stop_id": "fichtelgebirge-nature-park--s2",
+                "detail": "A few snowdrifts and stream crossings later, we laboriously scrambled up the icy steps to the viewing platform at Saubadfelsen."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Fichtelgebirge Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Wildlife and Slopes near Mehlmeisel",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "red deer enclosure",
+                "stop_id": "fichtelgebirge-nature-park--s6",
+                "detail": "We continue towards the red deer enclosure, the last point of the hike."
+              },
+              {
+                "name": "Klausenhang",
+                "stop_id": "fichtelgebirge-nature-park--s8",
+                "detail": "The first snow falls shortly beforehand on Mehlmeisel’s Klausenhang, a 700-metre-long snow-covered ribbon opposite the Ochsenkopf where skiers and tobogganers whizz downhill and which has floodlights."
+              },
+              {
+                "name": "Fichtelsee",
+                "stop_id": "fichtelgebirge-nature-park--s7",
+                "detail": "At lake Fichtelsee just outside the village of Fichtelberg, the car park is framed by snowy mountains."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Fichtelgebirge Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "High Peaks and Forest Trails",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Mount Ochsenkopf",
+                "stop_id": "fichtelgebirge-nature-park--s1",
+                "detail": "Around Mount Ochsenkopf and Saubadfelsen, several hundred kilometres of trails and cross-country tracks await cross-country skiers, tourers and snowshoe hikers in addition to four kilometres of pistes."
+              },
+              {
+                "name": "Weißmain-Ochsenkopf-Steig",
+                "stop_id": "fichtelgebirge-nature-park--s9",
+                "detail": "Via well-marked winter hiking trails, we walk on touring skis through deeply snow-covered forest to the Weißmain-Ochsenkopf-Steig trail, crossing cross-country ski trails with cross-country skiers who emit clouds of breath like steam locomotives."
+              },
+              {
+                "name": "Felsendach",
+                "stop_id": "fichtelgebirge-nature-park--s10",
+                "detail": "At some point we take a tea break at the so-called Felsendach, a bench below large granite boulders not far from the source of the Fichtelnaab, which Schorsch had recommended to me: “You won’t find better water, it’ll shoot you right to the top.”"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Fichtelgebirge Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +144,8 @@
             "url": "https://bavaria.travel/stories/winter-sports-fichtelgebirge/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:45:41.387296+00:00"
       }
     }
   }

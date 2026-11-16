@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Handthal",
+      "quote": "In fact, a lot revolves around the liquid grape gold for this cheerful character from Handthal in Lower Franconia.",
+      "english": "In fact, a lot revolves around the liquid grape gold for this cheerful character from Handthal in Lower Franconia."
+    },
+    {
+      "id": "s2",
+      "name": "Stollburg Castle",
+      "quote": "The “Weg der Erkenntnis” (path of knowledge) leading up to Stollburg Castle helps to combat incomplete wine knowledge.",
+      "english": "The “Weg der Erkenntnis” (path of knowledge) leading up to Stollburg Castle helps to combat incomplete wine knowledge."
+    },
+    {
+      "id": "s3",
+      "name": "Ebrach monastery",
+      "quote": "It is also about the Cistercians who once lived in the nearby Ebrach monastery and introduced viticulture to the region.",
+      "english": "It is also about the Cistercians who once lived in the nearby Ebrach monastery and introduced viticulture to the region."
+    },
+    {
+      "id": "s4",
+      "name": "Francis Trail",
+      "quote": "One would love to join the regular hikers passing by, be it on one of the many trails starting here or at least on the short “Francis Trail” with its thought-provoking stations such as a walk-in bee house.",
+      "english": "One would love to join the regular hikers passing by, be it on one of the many trails starting here or at least on the short “Francis Trail” with its thought-provoking stations such as a walk-in bee house."
+    },
+    {
+      "id": "s5",
+      "name": "Steigerwald Centre",
+      "quote": "The bee house is located next to the Steigerwald Centre, the ideal starting point for any tour.",
+      "english": "The bee house is located next to the Steigerwald Centre, the ideal starting point for any tour."
+    },
+    {
+      "id": "s6",
+      "name": "Steigerwald Treetop Path",
+      "quote": "The Steigerwald Treetop Path near Ebrach, which opened in 2016, makes a major – if not the largest – contribution to this identity.",
+      "english": "The Steigerwald Treetop Path near Ebrach, which opened in 2016, makes a major – if not the largest – contribution to this identity."
+    },
+    {
+      "id": "s7",
+      "name": "Methusalempfad",
+      "quote": "Apt name for the three-kilometre loop: the Methuselah path, or Methusalempfad .",
+      "english": "Apt name for the three-kilometre loop: the Methuselah path, or Methusalempfad ."
+    }
+  ],
+  "days": [
+    {
+      "title": "Wine Culture and History",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Nature Education and Forest Trails",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Ancient Woods and Aerial Views",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

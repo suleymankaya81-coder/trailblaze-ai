@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Val Müstair",
+      "quote": "In winter, the valley comes to rest and reveals itself as a fairytale world covered in deep snow.",
+      "english": "In winter, the valley comes to rest and reveals itself as a fairytale world covered in deep snow."
+    },
+    {
+      "id": "s2",
+      "name": "Observatori astronomic Lü",
+      "quote": "Afterwards, take a guided “eye walk” under the starry sky and peer through the Observatori astronomic's telescope to discover distant constellations and galaxies.",
+      "english": "Afterwards, take a guided “eye walk” under the starry sky and peer through the Observatori astronomic's telescope to discover distant constellations and galaxies."
+    },
+    {
+      "id": "s3",
+      "name": "Lü",
+      "quote": "Enjoy a delicious stargazer's menu at the cozy Pension Hirschen in Lü.",
+      "english": "Enjoy a delicious stargazer's menu at the cozy Pension Hirschen in Lü."
+    },
+    {
+      "id": "s4",
+      "name": "St. Johann Monastery",
+      "quote": "On the road at St. Johann Monastery with Babette",
+      "english": "On the road at St. Johann Monastery with Babette"
+    },
+    {
+      "id": "s5",
+      "name": "Valchava",
+      "quote": "On the first Sunday in October, locals and guests come together for the harvest festival in Valchava.",
+      "english": "On the first Sunday in October, locals and guests come together for the harvest festival in Valchava."
+    },
+    {
+      "id": "s6",
+      "name": "Alp Champatsch",
+      "quote": "Humour and enjoyment: video tour through the Lower Engadine and Val Müstair «The Culinary Grand Tour of Switzerland» sends food influencers Nico Franzoni and Noah Bachofen to meet people who love food – stopping off in the Lower Engadine and Val Müstair.",
+      "english": "Humour and enjoyment: video tour through the Lower Engadine and Val Müstair «The Culinary Grand Tour of Switzerland» sends food influencers Nico Franzoni and Noah Bachofen to meet people who love food – stopping off in the Lower Engadine and Val Müstair."
+    },
+    {
+      "id": "s7",
+      "name": "village streets",
+      "quote": "On the morning of the first of March, schoolchildren parade through the streets and alleyways of the villages to celebrate «Chalandamarz».",
+      "english": "On the morning of the first of March, schoolchildren parade through the streets and alleyways of the villages to celebrate «Chalandamarz»."
+    }
+  ],
+  "days": [
+    {
+      "title": "Astronomy and Valley Culture",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "History and Village Tradition",
+      "stop_ids": [
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Alpine Harvest and Culinary Tours",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ]
+}

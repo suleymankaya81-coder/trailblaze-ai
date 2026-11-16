@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Carinthia",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Tscheppaschlucht"
+        "Tscheppaschlucht",
+        "Tschaukofalls"
       ],
       "seo_title": "Tscheppaschlucht Visit Guide"
     },
@@ -32,16 +33,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Tscheppaschlucht",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Gorge and Waterfalls",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
                 "name": "Tscheppaschlucht",
-                "stop_id": "tscheppaschlucht",
-                "detail": "The Tscheppa gorge is a gorge section (clamb) of the Loiblbach in the Karawanken south of Ferlach."
+                "stop_id": "tscheppaschlucht--s1",
+                "detail": "The Tscheppaschlucht is a gorge section of the Loiblbach in the Karawanken south of Ferlach."
+              },
+              {
+                "name": "Tschaukofalls",
+                "stop_id": "tscheppaschlucht--s4",
+                "detail": "There is an exit from the gorge above the Tschaukofall (protected as a natural monument (list entry))."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Tscheppaschlucht before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Valley Trails and Streams",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Goldenen Brünnl",
+                "stop_id": "tscheppaschlucht--s2",
+                "detail": "It extends from the so-called \"Goldenen Brünnl\" valley-up for nearly two kilometers to just above the confluence of the Bodenbach into the Loiblbach."
+              },
+              {
+                "name": "Bodental",
+                "stop_id": "tscheppaschlucht--s5",
+                "detail": "Otherwise, the gorge hike ends in the Bodental."
+              },
+              {
+                "name": "Bodenbach",
+                "stop_id": "tscheppaschlucht--s6",
+                "detail": "Between Bodental, Bodenbach and Loibltal run the Carinthian Border Trail, the South Alps Panorama Trail and the 2nd stage of the Julius Kugy Alpine Trail."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Tscheppaschlucht before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +108,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://de.wikipedia.org/wiki/Tscheppaschlucht"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Tscheppaschlucht"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:50:27.250706+00:00"
       }
     }
   }

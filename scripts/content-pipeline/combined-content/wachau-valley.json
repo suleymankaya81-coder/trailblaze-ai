@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lower Austria",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Wachau"
+        "Melk Abbey",
+        "Spitz an der Donau"
       ],
       "seo_title": "Wachau Valley Visit Guide"
     },
     "travel": {
       "slug": "wachau-valley",
+      "overview_name": "Wachau Valley",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Wachau Valley before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.austria.info/en-gb/regions/wachau-valley/",
@@ -31,16 +33,49 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Wachau Valley",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Abbeys and Vineyards of Melk and Spitz",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Wachau",
-                "stop_id": "wachau-valley",
-                "detail": "In the Wachau, the Danube flows between centuries-old, steep vineyards, merging spectacular nature with history—a quality that earned it UNESCO World Heritage status. The region is known for its Wachau apricots and wine terraces that produce Riesling and Grüner Veltliner. Time seems to move more slowly here."
+                "name": "Melk Abbey",
+                "stop_id": "wachau-valley--s1",
+                "detail": "Cultural highlights like castle ruins, Melk Abbey , and villages like Dürnstein and Weißenkirchen add to the area's calm, timeless appeal."
+              },
+              {
+                "name": "Spitz an der Donau",
+                "stop_id": "wachau-valley--s3",
+                "detail": "A charming wine village, famous for the Tausendeimerberg, a steeply terraced vineyard."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Wachau Valley before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Castles and Culture of Dürnstein and Krems",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Dürnstein",
+                "stop_id": "wachau-valley--s5",
+                "detail": "Renowned for the ruins of Dürnstein Castle, where Richard the Lionheart was hero captive in the Middle Ages."
+              },
+              {
+                "name": "Weißenkirchen in der Wachau",
+                "stop_id": "wachau-valley--s7",
+                "detail": "A wine-growing centre surrounded by terraced vineyards and historic churches."
+              },
+              {
+                "name": "Krems an der Donau",
+                "stop_id": "wachau-valley--s8",
+                "detail": "One of Austria’s oldest cities, with a vibrant cultural scene, including museums and festivals."
+              },
+              {
+                "name": "Kunsthalle Krems",
+                "stop_id": "wachau-valley--s9",
+                "detail": "Highlights include the Danube Festival in Krems, the Glatt & Verkehrt Festival in Spitz, the Summer Plays in Melk, and the Kunsthalle Krems."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Wachau Valley before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +115,8 @@
             "url": "https://www.austria.info/en-gb/regions/wachau-valley/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:51:10.710466+00:00"
       }
     }
   }

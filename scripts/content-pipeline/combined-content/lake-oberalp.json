@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Uri",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Oberalp"
+        "Tomasee lake",
+        "Pazolastock",
+        "Piz Badus"
       ],
       "seo_title": "Lake Oberalp Visit Guide"
     },
     "travel": {
       "slug": "lake-oberalp",
+      "overview_name": "Lake Oberalp",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Lake Oberalp before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.myswitzerland.com/en-ch/search/?q=Oberalp#Header",
@@ -31,16 +34,67 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Lake Oberalp",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Rhine Source and Mountain Peaks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Oberalp",
-                "stop_id": "lake-oberalp",
-                "detail": "The circular bike route from Sedrun to the Maighels Hut first leads straight to the source of the Rhine before crossing the Oberalp Pass and returning to Sedrun. Pleasant resting areas, SAC Huts and restaurants along the route entice you to take a break."
+                "name": "Tomasee lake",
+                "stop_id": "lake-oberalp--s1",
+                "detail": "From the Oberalppass, a steep climb leads to the source of the Rhine at the Tomasee lake."
+              },
+              {
+                "name": "Pazolastock",
+                "stop_id": "lake-oberalp--s7",
+                "detail": "The hut is reached from the Oberalp Pass via Pazolastock or from Maighels in two to three hours."
+              },
+              {
+                "name": "Piz Badus",
+                "stop_id": "lake-oberalp--s8",
+                "detail": "This four-hour ski tour on the Gotthard massif takes you up 2,928-metre Piz Badus before descending more than 1,300 metres via the Maighelshütte to Tschamut."
+              },
+              {
+                "name": "Piz Calmot mountain inn",
+                "stop_id": "lake-oberalp--s5",
+                "detail": "The Piz Calmot mountain inn is located at the top of the Oberalp Pass at 2,048 meters above sea level, in the immediate vicinity of the source of the Rhine."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Oberalp before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Maighels Valley Exploration",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Val Maighels",
+                "stop_id": "lake-oberalp--s2",
+                "detail": "After hiking through the wetlands of Val Maighels you start the climb to the Maighelspass and the idyllic Portgerensee lake."
+              },
+              {
+                "name": "Maighels Hut",
+                "stop_id": "lake-oberalp--s4",
+                "detail": "The circular bike route from Sedrun to the Maighels Hut first leads straight to the source of the Rhine before crossing the Oberalp Pass and returning to Sedrun."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Oberalp before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Sedrun Slopes and Gorges",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Cuolm Val",
+                "stop_id": "lake-oberalp--s9",
+                "detail": "But even the more demanding skiers enjoy the most beautiful piste in the area – the pleasantly wide Sedrun Ride from Cuolm Val to Dieni."
+              },
+              {
+                "name": "Rhine Gorge",
+                "stop_id": "lake-oberalp--s6",
+                "detail": "Visit Chur, Disentis, and Andermatt, and travel through the Rhine Gorge via the Oberalp Pass."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Lake Oberalp before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +134,8 @@
             "url": "https://www.myswitzerland.com/en-ch/search/?q=Oberalp#Header"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:46:58.773956+00:00"
       }
     }
   }

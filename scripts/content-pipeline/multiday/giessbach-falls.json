@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Giessbach Falls",
+      "quote": "Experience the Giessbach Falls with their 400 meters drop height on Lake Brienz.",
+      "english": "Experience the Giessbach Falls with their 400 meters drop height on Lake Brienz."
+    },
+    {
+      "id": "s2",
+      "name": "Giessbach Funicular",
+      "quote": "The Giessbachbahn, the oldest tourist funicular in Europe, takes you from Lake Brienz to the Grandhotel.",
+      "english": "The Giessbachbahn, the oldest tourist funicular in Europe, takes you from Lake Brienz to the Grandhotel."
+    },
+    {
+      "id": "s3",
+      "name": "Grandhotel Giessbach",
+      "quote": "The legendary Grand Hotel combines the charm of the turn of the century before last with modern comfort.",
+      "english": "The legendary Grand Hotel combines the charm of the turn of the century before last with modern comfort."
+    },
+    {
+      "id": "s4",
+      "name": "Restaurant Les Cascades",
+      "quote": "The restaurant with a breathtaking view of the Giessbach Falls convinces with its lovingly furnished niches and warm, rich decor.",
+      "english": "The restaurant with a breathtaking view of the Giessbach Falls convinces with its lovingly furnished niches and warm, rich decor."
+    },
+    {
+      "id": "s5",
+      "name": "Elisa - Bistro & Terrasse",
+      "quote": "\"Elisa - Bistro & Terrace\" is a new chapter and we look forward to welcoming you on this culinary journey.",
+      "english": "\"Elisa - Bistro & Terrace\" is a new chapter and we look forward to welcoming you on this culinary journey."
+    },
+    {
+      "id": "s6",
+      "name": "historic vegetable garden",
+      "quote": "In 2019, efforts began to restore the historic vegetable garden from 1897.",
+      "english": "In 2019, efforts began to restore the historic vegetable garden from 1897."
+    },
+    {
+      "id": "s7",
+      "name": "natural swimming pool",
+      "quote": "Elegant banquet rooms and quiet conference rooms, 22 hectares of gardens and parks and a natural swimming pool round off the offerings.",
+      "english": "Elegant banquet rooms and quiet conference rooms, 22 hectares of gardens and parks and a natural swimming pool round off the offerings."
+    },
+    {
+      "id": "s8",
+      "name": "Park restaurant",
+      "quote": "The cuisine at the Park restaurant, which overlooks the waterfall is just as exclusive as the view.",
+      "english": "The cuisine at the Park restaurant, which overlooks the waterfall is just as exclusive as the view."
+    }
+  ],
+  "days": [
+    {
+      "title": "Waterfalls and Historic Transit",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Grandhotel Dining and Nature",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s8"
+      ]
+    },
+    {
+      "title": "Gardens and Leisure Grounds",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

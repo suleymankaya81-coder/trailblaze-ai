@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lake Brienz",
+      "quote": "Discover Lake Brienz along with the Giessbach Falls and the Brienzer Rothorn.",
+      "english": "Discover Lake Brienz along with the Giessbach Falls and the Brienzer Rothorn."
+    },
+    {
+      "id": "s2",
+      "name": "Giessbach Falls",
+      "quote": "The top excursion destination on Lake Brienz is the Giessbach Falls: you travel by boat from Brienz to Giessbach station, and from there you’ll take the nostalgic funicular up to the Grandhotel Giessbach.",
+      "english": "The top excursion destination on Lake Brienz is the Giessbach Falls: you travel by boat from Brienz to Giessbach station, and from there you’ll take the nostalgic funicular up to the Grandhotel Giessbach."
+    },
+    {
+      "id": "s3",
+      "name": "Brienzer Rothorn",
+      "quote": "Between June and October, experience a ride on the historic steam-powered cog railway to the Brienzer Rothorn.",
+      "english": "Between June and October, experience a ride on the historic steam-powered cog railway to the Brienzer Rothorn."
+    },
+    {
+      "id": "s4",
+      "name": "Brunngasse",
+      "quote": "Brunngasse, with its cobblestones and its wooden chalets decorated with flowers and carvings, is a must-see.",
+      "english": "Brunngasse, with its cobblestones and its wooden chalets decorated with flowers and carvings, is a must-see."
+    },
+    {
+      "id": "s5",
+      "name": "Schnitzlerweg",
+      "quote": "You can also marvel at the art of wood carving on the Schnitzlerweg woodcarving trail on the Axalp above Brienz.",
+      "english": "You can also marvel at the art of wood carving on the Schnitzlerweg woodcarving trail on the Axalp above Brienz."
+    },
+    {
+      "id": "s6",
+      "name": "Hinterburgseeli",
+      "quote": "Perhaps with a detour to the enchanting Hinterburgseeli lake along the way.",
+      "english": "Perhaps with a detour to the enchanting Hinterburgseeli lake along the way."
+    },
+    {
+      "id": "s7",
+      "name": "Ballenberg - Open-air museum of Switzerland",
+      "quote": "Other top excursion destinations include the Ballenberg open-air museum, Lake Lunger, the Aare Gorge and the neighbouring Lake Thun.",
+      "english": "Other top excursion destinations include the Ballenberg open-air museum, Lake Lunger, the Aare Gorge and the neighbouring Lake Thun."
+    },
+    {
+      "id": "s8",
+      "name": "Aare Gorge",
+      "quote": "An exciting adventure trail",
+      "english": "An exciting adventure trail"
+    }
+  ],
+  "days": [
+    {
+      "title": "Village Heritage and Lake Adventures",
+      "stop_ids": [
+        "s4",
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Mountain Peaks and Woodcarving Trails",
+      "stop_ids": [
+        "s3",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Regional Museums and Gorges",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

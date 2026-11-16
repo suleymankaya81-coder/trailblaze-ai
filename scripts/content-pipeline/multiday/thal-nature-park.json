@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Balsthal",
+      "quote": "From the freeway exit Oensingen you will reach Balsthal in five minutes.",
+      "english": "From the freeway exit Oensingen you will reach Balsthal in five minutes."
+    },
+    {
+      "id": "s2",
+      "name": "Thalstation",
+      "quote": "At the information point \"Thalstation\" in Balsthal, we are happy to advise you on the best routes, excursions, and other activities in the region, complete with restaurant vouchers, hiking maps and much more.",
+      "english": "At the information point \"Thalstation\" in Balsthal, we are happy to advise you on the best routes, excursions, and other activities in the region, complete with restaurant vouchers, hiking maps and much more."
+    },
+    {
+      "id": "s3",
+      "name": "Holzweg Thal",
+      "quote": "Holzweg Thal: On this adventure trail you will experience forest and wood in a creative and playful way with your head, your hand, and your heart.",
+      "english": "Holzweg Thal: On this adventure trail you will experience forest and wood in a creative and playful way with your head, your hand, and your heart."
+    },
+    {
+      "id": "s4",
+      "name": "Jura Höhenweg",
+      "quote": "Hike the Jura Höhenweg from Balsthal to the top of the Weissenstein mountain overlooking the city of Solothurn.",
+      "english": "Hike the Jura Höhenweg from Balsthal to the top of the Weissenstein mountain overlooking the city of Solothurn."
+    },
+    {
+      "id": "s5",
+      "name": "Weissenstein",
+      "quote": "Webcam Weissenstein",
+      "english": "Webcam Weissenstein"
+    },
+    {
+      "id": "s6",
+      "name": "Wolfschlucht-Trail",
+      "quote": "The Wolfschlucht-Trail will take you through deep ravines and show you the wild and romantic face of Naturpark Thal.",
+      "english": "The Wolfschlucht-Trail will take you through deep ravines and show you the wild and romantic face of Naturpark Thal."
+    },
+    {
+      "id": "s7",
+      "name": "Welschenrohr",
+      "quote": "Webcam Welschenrohr",
+      "english": "Webcam Welschenrohr"
+    },
+    {
+      "id": "s8",
+      "name": "Vogelberg",
+      "quote": "Webcam Vogelberg",
+      "english": "Webcam Vogelberg"
+    },
+    {
+      "id": "s9",
+      "name": "Wasserfallen",
+      "quote": "Webcam Wasserfallen",
+      "english": "Webcam Wasserfallen"
+    }
+  ],
+  "days": [
+    {
+      "title": "Balsthal Arrival and Local Trails",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "High Ridges and Gorges",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Peaks and Village Vistas",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ]
+}

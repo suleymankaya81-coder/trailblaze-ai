@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Scharten",
+      "quote": "Streuobstwiesen, Baumreihen und Obstanlagen prägen die sanfthügelige Kulturlandschaft im Naturpark Obst-Hügel-Land, in den Gemeinden Scharten und St. Marienkirchen an der Polsenz.",
+      "english": "Orchards, rows of trees and fruit plantations shape the gently rolling cultural landscape in the Obst-Hügel-Land Nature Park, in the municipalities of Scharten and St. Marienkirchen an der Polsenz."
+    },
+    {
+      "id": "s2",
+      "name": "St. Marienkirchen an der Polsenz",
+      "quote": "Schöner Rundweg in St. Marienkirchen an der Polsenz durch die Streuobstlandschaft im Naturpark Obst-Hügel-Land.",
+      "english": "Beautiful circular trail in St. Marienkirchen an der Polsenz through the orchard landscape in the Obst-Hügel-Land Nature Park."
+    },
+    {
+      "id": "s3",
+      "name": "Kirschblütenweg",
+      "quote": "Elf beschilderte Rundwanderwege laden zum Wandern, Nordic Walking oder Laufen im Naturpark ein, am bekanntesten sind der Kirschblütenweg in Scharten und der Weberbartlweg in St. Marienkirchen .",
+      "english": "Eleven signposted circular hiking trails invite you to hike, Nordic walk or run in the nature park; the best known are the Kirschblütenweg in Scharten and the Weberbartlweg in St. Marienkirchen."
+    },
+    {
+      "id": "s4",
+      "name": "Weberbartlweg",
+      "quote": "Im Naturpark gibt es einen Weberbartl-Wanderweg, die Weberbartl-Apfel-Wanderung im September und es wird ein sortenreiner Weberbartl- Most erzeugt.",
+      "english": "In the nature park there is a Weberbartl hiking trail, the Weberbartl apple hike in September and a single-variety Weberbartl cider is produced."
+    },
+    {
+      "id": "s5",
+      "name": "Mostmuseum St. Marienkirchen an der Polsenz",
+      "quote": "Attraktionen: v.a. Mostmuseum St. Marienkirchen an der Polsenz.",
+      "english": "Attractions: especially the Cider Museum St. Marienkirchen an der Polsenz."
+    },
+    {
+      "id": "s6",
+      "name": "Schartner Höhe",
+      "quote": "Dieser ausgedehnte Rundwanderweg (Ausgangspunkt: Parkplatz Schartner Höhe, Cafe Kronberg) belohnt einen mit herrlichen Ausblicken.",
+      "english": "This extensive circular hiking trail (starting point: Schartner Höhe car park, Cafe Kronberg) rewards you with wonderful views."
+    },
+    {
+      "id": "s7",
+      "name": "Jausenstation Beißl",
+      "quote": "nach ca. 100 m rechts über Brücke Richtung Herrnholz – Jausenstation Beißl – ca. 100 m bis zur Herrnholzer Gemeindestr.",
+      "english": "after approx. 100 m turn right over the bridge towards Herrnholz – Jausenstation Beißl – approx. 100 m to the Herrnholzer municipal road."
+    },
+    {
+      "id": "s8",
+      "name": "Obsthof Pachinger/Bischläger",
+      "quote": "links Richtung Obsthof Pachinger/Bischläger (Schild) – direkt bei Haus links abbiegen – Richtung Kronberg bis Güterweg Kronberg – rechts den Güterweg weiter entlang bis Schartner Höhe.",
+      "english": "left towards Obsthof Pachinger/Bischläger (sign) – turn left directly at the house – towards Kronberg to Güterweg Kronberg – continue right along the freight road to Schartner Höhe."
+    }
+  ],
+  "days": [
+    {
+      "title": "Villages and Museums of the Nature Park",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s5"
+      ]
+    },
+    {
+      "title": "Famous Orchard Trails",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Panoramic Heights and Farm Stops",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

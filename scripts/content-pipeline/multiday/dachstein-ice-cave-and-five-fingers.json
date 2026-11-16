@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Schönbergalm",
+      "quote": "Ein asphaltierter Fußweg führt von der Schönbergalm zum Ein- und Ausgang der touristisch erschlossenen Bereiche.",
+      "english": "An asphalted footpath leads from the Schönbergalm to the entrance and exit of the areas developed for tourism."
+    },
+    {
+      "id": "s2",
+      "name": "Korsa",
+      "quote": "Der Führungsweg beginnt im eisfreien Teil der Höhle und führt durch den Bachlauf Korsa zum Lehmhallenlabyrinth, einer Halle mit Tropfsteinen.",
+      "english": "The guided tour path begins in the ice-free part of the cave and leads through the Korsa stream bed to the Lehmhallenlabyrinth, a hall with stalactites."
+    },
+    {
+      "id": "s3",
+      "name": "König-Artus-Dom",
+      "quote": "Über den alten Flusslauf Plimisoel gelangt man zum König-Artus-Dom, mit 1384 m ü. A. der tiefste Punkt der Höhle.",
+      "english": "Via the old riverbed Plimisoel one reaches the König-Artus-Dom, the deepest point of the cave at 1384 m above sea level."
+    },
+    {
+      "id": "s4",
+      "name": "Bärenfriedhof",
+      "quote": "Bereits die ersten Höhlenforscher fanden dort Knochen von Höhlenbären, wodurch dieser Bereich auch Bärenfriedhof genannt wird.",
+      "english": "Already the first cave explorers found bones of cave bears there, which is why this area is also called Bärenfriedhof."
+    },
+    {
+      "id": "s5",
+      "name": "Parsivaldom",
+      "quote": "Hinter einer Wettertür beginnt mit dem Parsivaldom der Eisteil der Höhle.",
+      "english": "Behind a weather door, the ice part of the cave begins with the Parsivaldom."
+    },
+    {
+      "id": "s6",
+      "name": "Tristandom",
+      "quote": "Nach dem Kristallogletscher beginnt mit den Tristandom die letzte große Halle des Schauteils der Höhle.",
+      "english": "After the Kristallogletscher, the Tristandom begins as the last large hall of the show part of the cave."
+    },
+    {
+      "id": "s7",
+      "name": "Eiskapelle",
+      "quote": "Höhepunkte der knapp einstündigen Führung sind die Eiskapelle und die Gralsburg.",
+      "english": "Highlights of the nearly one-hour tour are the Eiskapelle and the Gralsburg."
+    }
+  ],
+  "days": [
+    {
+      "title": "Cave Entrance and Ice-Free Formations",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "History and Deep Caverns",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Grand Ice Halls and Highlights",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

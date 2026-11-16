@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Stolberg",
+      "quote": "The Karst Landscape South Harz Biosphere Reserve lies between the European city of Stolberg in the west and the Rose City of Sangerhausen in the east.",
+      "english": "The Karst Landscape South Harz Biosphere Reserve lies between the European city of Stolberg in the west and the Rose City of Sangerhausen in the east."
+    },
+    {
+      "id": "s2",
+      "name": "Sangerhausen",
+      "quote": "The Karst Landscape South Harz Biosphere Reserve lies between the European city of Stolberg in the west and the Rose City of Sangerhausen in the east.",
+      "english": "The Karst Landscape South Harz Biosphere Reserve lies between the European city of Stolberg in the west and the Rose City of Sangerhausen in the east."
+    },
+    {
+      "id": "s3",
+      "name": "Karstwanderweg an der Dinsterbachschwinde bei Questenberg",
+      "quote": "Karstwanderweg an der Dinsterbachschwinde bei Questenberg",
+      "english": "Karst hiking trail at the Dinsterbach swallow hole near Questenberg"
+    },
+    {
+      "id": "s4",
+      "name": "Hörninger Sattelköpfe",
+      "quote": "Hörninger Sattelköpfe im Herbst",
+      "english": "Hörninger Sattelköpfe in autumn"
+    },
+    {
+      "id": "s5",
+      "name": "Karsthöhle Kelle",
+      "quote": "Karsthöhle Kelle",
+      "english": "Kelle Karst Cave"
+    },
+    {
+      "id": "s6",
+      "name": "Bat Conservation Competence Centre",
+      "quote": "Based in the South Harz Biosphere Reserve in the western part of the Mansfeld-Südharz district, it organises conservation measures, records bat populations and deals with scientific questions.",
+      "english": "Based in the South Harz Biosphere Reserve in the western part of the Mansfeld-Südharz district, it organises conservation measures, records bat populations and deals with scientific questions."
+    },
+    {
+      "id": "s7",
+      "name": "Heimkehle Cave",
+      "quote": "Bat habitat in the Heimkehle Cave",
+      "english": "Bat habitat in the Heimkehle Cave"
+    }
+  ],
+  "days": [
+    {
+      "title": "Western Gateway and Rare Habitats",
+      "stop_ids": [
+        "s1",
+        "s6",
+        "s5"
+      ]
+    },
+    {
+      "title": "Karst Trails and Geological Formations",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Eastern Border and Subterranean Wonders",
+      "stop_ids": [
+        "s2",
+        "s7"
+      ]
+    }
+  ]
+}

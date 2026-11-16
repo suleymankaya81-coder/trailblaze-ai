@@ -1,0 +1,77 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Haslach Textile Centre",
+      "quote": "If you’re interested in the region’s textile industry, head to the Haslach Textile Centre —a historic factory site with a museum, production facilities, and training centre.",
+      "english": "If you’re interested in the region’s textile industry, head to the Haslach Textile Centre —a historic factory site with a museum, production facilities, and training centre."
+    },
+    {
+      "id": "s2",
+      "name": "Mühlviertel Nature Park",
+      "quote": "Hike and cycle along the St Johan's pilgramage route  or explore the 200 kilometres of hiking trails in the Mühlviertel Nature Park.",
+      "english": "Hike and cycle along the St Johan's pilgramage route  or explore the 200 kilometres of hiking trails in the Mühlviertel Nature Park."
+    },
+    {
+      "id": "s3",
+      "name": "St Johan's pilgramage route",
+      "quote": "Hike and cycle along the St Johan's pilgramage route  or explore the 200 kilometres of hiking trails in the Mühlviertel Nature Park.",
+      "english": "Hike and cycle along the St Johan's pilgramage route  or explore the 200 kilometres of hiking trails in the Mühlviertel Nature Park."
+    },
+    {
+      "id": "s4",
+      "name": "Plöckenstein",
+      "quote": "The Plöckenstein, the highest peak at 1,379 metres, offers magnificent views.",
+      "english": "The Plöckenstein, the highest peak at 1,379 metres, offers magnificent views."
+    },
+    {
+      "id": "s5",
+      "name": "Gothic Street",
+      "quote": "The Gothic Street leads to historic buildings such as the Church of Our Lady in Freistadt.",
+      "english": "The Gothic Street leads to historic buildings such as the Church of Our Lady in Freistadt."
+    },
+    {
+      "id": "s6",
+      "name": "Church of Our Lady in Freistadt",
+      "quote": "The Gothic Street leads to historic buildings such as the Church of Our Lady in Freistadt.",
+      "english": "The Gothic Street leads to historic buildings such as the Church of Our Lady in Freistadt."
+    },
+    {
+      "id": "s7",
+      "name": "Bayrische Au raised bog",
+      "quote": "Those seeking tranquility will find places of power like the Bayrische Au raised bog.",
+      "english": "Those seeking tranquility will find places of power like the Bayrische Au raised bog."
+    },
+    {
+      "id": "s8",
+      "name": "Nature.Show.Place",
+      "quote": "The Nature.Show.Place combines nature, enjoyment, culture, and activities: hiking, cycling, winter sports, regional cuisine, and authentic handicrafts.",
+      "english": "The Nature.Show.Place combines nature, enjoyment, culture, and activities: hiking, cycling, winter sports, regional cuisine, and authentic handicrafts."
+    }
+  ],
+  "days": [
+    {
+      "title": "Pilgrimage and Nature Trails",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s8"
+      ]
+    },
+    {
+      "title": "Gothic Architecture and History",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "High Peaks and Bogs",
+      "stop_ids": [
+        "s4",
+        "s7"
+      ]
+    }
+  ]
+}

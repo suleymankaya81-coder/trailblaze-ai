@@ -1,0 +1,39 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "St. Beatus Caves",
+      "quote": "In the St. Beatus Caves by Lake Thun near Interlaken.",
+      "english": "In the St. Beatus Caves by Lake Thun near Interlaken."
+    },
+    {
+      "id": "s2",
+      "name": "walkways",
+      "quote": "Explore around one kilometre of safe and well-lit walkways inside the mountain.",
+      "english": "Explore around one kilometre of safe and well-lit walkways inside the mountain."
+    },
+    {
+      "id": "s3",
+      "name": "stalactites",
+      "quote": "Discover stalactites and stalagmites that have been formed by nature over millions of years as you immerse yourself in this unique underground world.",
+      "english": "Discover stalactites and stalagmites that have been formed by nature over millions of years as you immerse yourself in this unique underground world."
+    },
+    {
+      "id": "s4",
+      "name": "Cave Museum",
+      "quote": "A visit to the Cave Museum is a chance to learn more about this natural wonder, with an audio guide telling you all you need to know about caves and caving.",
+      "english": "A visit to the Cave Museum is a chance to learn more about this natural wonder, with an audio guide telling you all you need to know about caves and caving."
+    }
+  ],
+  "days": [
+    {
+      "title": "St. Beatus Underground Exploration",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

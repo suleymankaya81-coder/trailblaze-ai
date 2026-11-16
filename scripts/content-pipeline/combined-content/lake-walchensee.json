@@ -1,39 +1,32 @@
 {
-  "fingerprint": "4ce7adcb1d06f349bc6eac57c4db2f1bbc8e583f52266e5cf219d9cedb221323",
   "status": "validated",
-  "prompt_chars": 5659,
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
-      "region": "Bavarian Alps",
-      "tagline": "A high-altitude Alpine reservoir serving the historic Walchensee power station.",
-      "best_season": "summer",
-      "trip_duration_days": "1",
-      "recommended_duration": "1 day",
-      "permit_level": "none",
-      "seo_title": "Visiting Lake Walchensee",
-      "best_seasons": [
-        "spring",
-        "summer",
-        "fall"
-      ],
-      "scenic_score": 5,
-      "camping_score": 0,
+      "region": "Bavaria",
+      "tagline": "Since 1924, it has also served as a water reservoir for the power station of the same name - the Walchensee po",
+      "best_season": "Check official seasonal information",
+      "best_seasons": [],
+      "scenic_score": null,
+      "camping_score": null,
       "avg_daily_budget": null,
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
+      "permit_level": "moderate",
       "aliases": [],
-      "gateway_cities": [
-        "Munich"
-      ],
+      "gateway_cities": [],
       "similar_slugs": [],
-      "trip_tags": [
-        "alpine",
-        "lake"
-      ],
+      "trip_tags": [],
       "activities": [
-        "Walchensee"
-      ]
+        "Walchensee",
+        "Urfeld",
+        "Zwergern"
+      ],
+      "seo_title": "Lake Walchensee Visit Guide"
     },
     "travel": {
       "slug": "lake-walchensee",
+      "overview_name": "Lake Walchensee",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Lake Walchensee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.munich.travel/en/pois/lakes-mountains/walchensee",
@@ -41,16 +34,62 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Lake Walchensee",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Shoreline Villages and Beaches",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
                 "name": "Walchensee",
-                "stop_id": "lake-walchensee",
-                "detail": "Since 1924, it has also served as a water reservoir for the power station of the same name - the Walchensee power station, which, however, is located 200 metres lower down on the neighbouring Kochelsee (lake)."
+                "stop_id": "lake-walchensee--s1",
+                "detail": "Walchensee (lake) is also called the \"Bavarian Caribbean\", because of its turquoise-green water."
+              },
+              {
+                "name": "Urfeld",
+                "stop_id": "lake-walchensee--s3",
+                "detail": "One of the most tranquil places on the lake is the traffic-free eastern shore between Urfeld and Niedernach."
+              },
+              {
+                "name": "Zwergern",
+                "stop_id": "lake-walchensee--s4",
+                "detail": "The Zwergern Walchensee peninsula offers another great swimming opportunity – and a magnificent view of the mountains and villages."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Walchensee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Jochberg Ascent and Alpine Snacks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Jochberg",
+                "stop_id": "lake-walchensee--s5",
+                "detail": "The mountains around Walchensee are among Munich's most popular landmarks– such as the Jochberg (1,565 m)."
+              },
+              {
+                "name": "Jocheralm",
+                "stop_id": "lake-walchensee--s6",
+                "detail": "From the top, you have a magnificent view of Kochelsee and Walchensee (lakes), and you can stop for a snack at Jocheralm."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Walchensee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Herzogstand Summit and Panoramic Views",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Herzogstand",
+                "stop_id": "lake-walchensee--s7",
+                "detail": "Maybe the Herzogstand (mountain) (1,731 m) is an even more popular destination – especially because of the Herzogstand cable car."
+              },
+              {
+                "name": "Herzogstand mountain inn",
+                "stop_id": "lake-walchensee--s8",
+                "detail": "But you can also just sit on the terrace of the Herzogstand mountain inn and enjoy the picturesque view of the surrounding lakes and the Karwendel mountains."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Lake Walchensee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -90,100 +129,9 @@
             "url": "https://www.munich.travel/en/pois/lakes-mountains/walchensee"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:49:15.926260+00:00"
       }
     }
-  },
-  "original_gemini_bundle": {
-    "summary": {
-      "region": "Bavarian Alps",
-      "tagline": "A high-altitude Alpine reservoir serving the historic Walchensee power station.",
-      "best_season": "summer",
-      "trip_duration_days": "1",
-      "recommended_duration": "1 day",
-      "permit_level": "none",
-      "seo_title": "Visiting Lake Walchensee",
-      "best_seasons": [
-        "spring",
-        "summer",
-        "fall"
-      ],
-      "scenic_score": 5,
-      "camping_score": 0,
-      "avg_daily_budget": null,
-      "aliases": [],
-      "gateway_cities": [
-        "Munich"
-      ],
-      "similar_slugs": [],
-      "trip_tags": [
-        "alpine",
-        "lake"
-      ],
-      "activities": [
-        "Walchensee"
-      ]
-    },
-    "travel": {
-      "slug": "lake-walchensee",
-      "headline": "Check Local Access for the Walchensee Reservoir",
-      "reservation": "Access to the lake typically does not require a formal entry permit, but visitors should check for any localized restrictions related to the power station operations. Accommodation in the surrounding Alpine region often requires advance booking during peak seasons; check official Bavarian tourism portals for current stay requirements.",
-      "source_url": "https://www.munich.travel/en/pois/lakes-mountains/walchensee",
-      "plan": {
-        "version": 1,
-        "days": [
-          {
-            "title": "Alpine Reservoir and Power Station History",
-            "start": "Suggested: 9 AM from Munich",
-            "stops": [
-              {
-                "name": "Walchensee",
-                "detail": "Explore the high-altitude lake which has functioned as a water reservoir for the nearby Walchensee power station since the early twentieth century.",
-                "stop_id": "lake-walchensee"
-              }
-            ],
-            "driving": "Allow approximately two hours from Munich; conditions vary by mountain road traffic.",
-            "note": "Note the elevation difference as the associated power station is located 200 metres lower on the shores of Kochelsee."
-          }
-        ],
-        "intel": [
-          {
-            "kind": "parking",
-            "title": "Lakeside Parking",
-            "text": "Evidence does not specify parking capacity or exact locations at the reservoir. Visitors should verify designated parking areas upon arrival in the Walchensee village area."
-          },
-          {
-            "kind": "signal",
-            "title": "Connectivity Gaps",
-            "text": "Mobile signal strength in the high-altitude Alpine basin is unconfirmed in official sources. Prepare with offline maps before ascending from the Kochelsee level."
-          },
-          {
-            "kind": "fuel",
-            "title": "Alpine Refueling",
-            "text": "Specific fuel station locations in the immediate vicinity of the lake are not provided in the source material. It is recommended to refuel in larger gateway towns before entering the mountain passes."
-          },
-          {
-            "kind": "timing",
-            "title": "Seasonal Considerations",
-            "text": "The reservoir's appearance and access may be influenced by seasonal water management for the power station. Early morning visits are suggested to account for changing mountain weather patterns."
-          },
-          {
-            "kind": "access",
-            "title": "Reservoir Operations",
-            "text": "Be aware that the lake serves active industrial purposes for hydroelectric power. Respect all posted signage regarding restricted zones near water intake structures."
-          }
-        ],
-        "arrival": "Arrive via the mountain roads from the north, passing Kochelsee before ascending to the Walchensee basin for local check-in or day-use area access.",
-        "vehicle": "Standard passenger cars are suitable for paved mountain roads; check for winter tire requirements or rental restrictions if traveling outside of summer.",
-        "goldenHour": "Lakeside vistas are best at sunset, though mountain shadows vary by season.",
-        "sources": [
-          {
-            "label": "Munich Official Travel Portal",
-            "url": "https://www.munich.travel/en/pois/lakes-mountains/walchensee"
-          }
-        ]
-      }
-    }
-  },
-  "review_note": "Gemini summary retained; exact-source compact visit and explicit operational unknowns applied without additional inference."
+  }
 }

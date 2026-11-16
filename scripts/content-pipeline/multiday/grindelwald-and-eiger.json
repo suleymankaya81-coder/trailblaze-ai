@@ -1,0 +1,91 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Eiger",
+      "quote": "Der Eiger ist ein Berg in den Berner Alpen mit einer Höhe von 3967 m ü. M.",
+      "english": "The Eiger is a mountain in the Bernese Alps with a height of 3967 m above sea level."
+    },
+    {
+      "id": "s2",
+      "name": "Mönch",
+      "quote": "Zusammen mit Mönch und Jungfrau, deren Gipfel auf der Grenze zum Kanton Wallis liegen, dominiert der Eiger die Landschaft des zentralen Berner Oberlandes.",
+      "english": "Together with the Mönch and the Jungfrau, whose peaks lie on the border of the canton of Valais, the Eiger dominates the landscape of the central Bernese Oberland."
+    },
+    {
+      "id": "s3",
+      "name": "Jungfrau",
+      "quote": "Zusammen mit dem Mönch und der Jungfrau (4158 m ü. M.) bildet der Eiger das «Dreigestirn», bei dem der Eiger den nordöstlichen und die Jungfrau den südwestlichen Endpunkt bildet.",
+      "english": "Together with the Mönch and the Jungfrau (4158 m above sea level), the Eiger forms the \"Dreigestirn\" (triumvirate), in which the Eiger forms the northeastern and the Jungfrau the southwestern end point."
+    },
+    {
+      "id": "s4",
+      "name": "Eiger-Nordwand",
+      "quote": "Insbesondere die Nordwand des Eigers fasziniert sowohl Bergsteiger als auch Touristen.",
+      "english": "In particular, the north face of the Eiger fascinates both mountaineers and tourists."
+    },
+    {
+      "id": "s5",
+      "name": "Kleine Scheidegg",
+      "quote": "Sie ist von Grindelwald und dem gesamten Talkessel bis zur Kleinen Scheidegg gut einsehbar.",
+      "english": "It is clearly visible from Grindelwald and the entire valley basin as far as the Kleine Scheidegg."
+    },
+    {
+      "id": "s6",
+      "name": "Jungfraubahn",
+      "quote": "Die Jungfraubahn mit ihrem Tunnel durch den Eigerfels ist seit ihrer Eröffnung im Jahr 1912 ein Touristenmagnet.",
+      "english": "The Jungfraubahn with its tunnel through the Eiger rock has been a tourist magnet since its opening in 1912."
+    },
+    {
+      "id": "s7",
+      "name": "Grindelwald",
+      "quote": "Der Eiger erhebt sich direkt südwestlich von Grindelwald (Amtsbezirk Interlaken).",
+      "english": "The Eiger rises directly southwest of Grindelwald (district of Interlaken)."
+    },
+    {
+      "id": "s8",
+      "name": "Mittellegigrat",
+      "quote": "Sie bildet die Basis für den scharfen Mittellegigrat, der vom Unteren Grindelwaldgletscher zum Gipfel zieht.",
+      "english": "It forms the basis for the sharp Mittellegigrat ridge, which stretches from the Lower Grindelwald Glacier to the summit."
+    },
+    {
+      "id": "s9",
+      "name": "Unterer Grindelwaldgletscher",
+      "quote": "Am 13. Juli 2006 um 19:24 Uhr stürzten rund 500'000 Kubikmeter Felsbrocken auf den Unteren Grindelwaldgletscher.",
+      "english": "On July 13, 2006 at 7:24 p.m., around 500,000 cubic meters of boulders fell onto the Lower Grindelwald Glacier."
+    },
+    {
+      "id": "s10",
+      "name": "Eigergletscher",
+      "quote": "Ihm folgt die Westflanke, in welcher sich der Eigergletscher und der Klein Eiger befinden.",
+      "english": "It is followed by the west flank, in which the Eiger Glacier and the Klein Eiger are located."
+    }
+  ],
+  "days": [
+    {
+      "title": "Grindelwald Valley and Glaciers",
+      "stop_ids": [
+        "s7",
+        "s9",
+        "s8"
+      ]
+    },
+    {
+      "title": "Eiger Face and Railway",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s10"
+      ]
+    },
+    {
+      "title": "High Alpine Dreigestirn Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ]
+}

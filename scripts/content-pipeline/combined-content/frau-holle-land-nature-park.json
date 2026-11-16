@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Hesse",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Geo-Naturpark Frau-Holle-Land"
+        "Werra",
+        "Alten Hafen Wanfried",
+        "Grünen Band"
       ],
       "seo_title": "Frau-Holle-Land Nature Park Visit Guide"
     },
     "travel": {
       "slug": "frau-holle-land-nature-park",
+      "overview_name": "Frau-Holle-Land Nature Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Frau-Holle-Land Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.naturparkfrauholle.land/",
@@ -31,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Frau-Holle-Land Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Riverside Trails and Historic Ports",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Geo-Naturpark Frau-Holle-Land",
-                "stop_id": "frau-holle-land-nature-park",
-                "detail": "Statue of Mrs. Holle at the Frau-Holle-Teich on the Hohe Meißner in the Geo-Natural Park Frau-Holle-Land. Copyright: Marco Lenarduzzi"
+                "name": "Werra",
+                "stop_id": "frau-holle-land-nature-park--s4",
+                "detail": "Canoeing on the Werra (c)schellenberger"
+              },
+              {
+                "name": "Alten Hafen Wanfried",
+                "stop_id": "frau-holle-land-nature-park--s5",
+                "detail": "Cyclists at the Old Port of Wanfried (c)schellenberger"
+              },
+              {
+                "name": "Grünen Band",
+                "stop_id": "frau-holle-land-nature-park--s6",
+                "detail": "Varied landscape, small half-timbered towns, the meandering Werra with its castles and palaces - on hiking trails, by bicycle or by canoe, on vacation or in your leisure time, explore the home of the legendary and fairy-tale figure Mother Holle directly on the Green Belt."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Frau-Holle-Land Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Cherry Orchards and Flower Meadows",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Kirschenland Witzenhausen",
+                "stop_id": "frau-holle-land-nature-park--s3",
+                "detail": "Bright autumn foliage on cherry trees in the cherry country Witzenhausen, Geo-Nature Park Frau-Holle-Land."
+              },
+              {
+                "name": "Frau Holles Blumenwiesen",
+                "stop_id": "frau-holle-land-nature-park--s7",
+                "detail": "Mother Holle's flower meadows in the Geo-Nature Park Frau-Holle-Land."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Frau-Holle-Land Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +111,8 @@
             "url": "https://www.naturparkfrauholle.land/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:45:59.080006+00:00"
       }
     }
   }

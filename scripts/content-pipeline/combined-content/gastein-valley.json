@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Salzburg",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Gastein Valley"
+        "Bad Gastein",
+        "Felsentherme",
+        "Gastein Healing Gallery (Heilstollen)"
       ],
       "seo_title": "Gastein Valley Visit Guide"
     },
     "travel": {
       "slug": "gastein-valley",
+      "overview_name": "Gastein Valley",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Gastein Valley before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.austria.info/en-gb/regions/gastein/",
@@ -31,16 +34,67 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Gastein Valley",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Historical Center and Rock Spas",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Gastein Valley",
-                "stop_id": "gastein-valley",
-                "detail": "In the three main towns of the Gastein Valley, Alpine life can be experienced in many ways throughout the year: Bad Gastein impresses with its Belle Époque architecture and roaring waterfalls. Bad Hofgastein offers family-friendly trails, bike parks and small mountain lakes. Around Dorfgastein, you’ll find quiet Alpine paths, historic mills and regional cuisine."
+                "name": "Bad Gastein",
+                "stop_id": "gastein-valley--s1",
+                "detail": "Bad Gastein impresses with its Belle Époque architecture and roaring waterfalls."
+              },
+              {
+                "name": "Felsentherme",
+                "stop_id": "gastein-valley--s4",
+                "detail": "At the Felsentherme in Bad Gastein you bathe in it inside the rock itself, across four separate spa areas, with the surrounding mountains in view."
+              },
+              {
+                "name": "Gastein Healing Gallery (Heilstollen)",
+                "stop_id": "gastein-valley--s8",
+                "detail": "The water is used at the Felsentherme in Bad Gastein, the Alpentherme in Bad Hofgastein and the Gastein Healing Gallery (Heilstollen)."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Gastein Valley before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Alpine Leisure and Thermal Waters",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Bad Hofgastein",
+                "stop_id": "gastein-valley--s2",
+                "detail": "Bad Hofgastein offers family-friendly trails, bike parks and small mountain lakes."
+              },
+              {
+                "name": "Alpentherme",
+                "stop_id": "gastein-valley--s5",
+                "detail": "The Alpentherme in Bad Hofgastein has water areas, saunas and quiet rooms."
+              },
+              {
+                "name": "Gamskarkogel",
+                "stop_id": "gastein-valley--s9",
+                "detail": "The highest peak in the area is the Ankogel (3,252 m), while within the valley the Gamskarkogel (2,467 m) dominates the landscape."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Gastein Valley before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Natural Wonders and Quiet Paths",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Dorfgastein",
+                "stop_id": "gastein-valley--s3",
+                "detail": "Around Dorfgastein, you’ll find quiet Alpine paths, historic mills and regional cuisine."
+              },
+              {
+                "name": "Gadaunerer Gorge",
+                "stop_id": "gastein-valley--s6",
+                "detail": "Many of them can be visited – the Gadaunerer Gorge, the Entrische Kirche show cave, the glacial mills above Bad Gastein."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Gastein Valley before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +134,8 @@
             "url": "https://www.austria.info/en-gb/regions/gastein/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:44:59.385451+00:00"
       }
     }
   }

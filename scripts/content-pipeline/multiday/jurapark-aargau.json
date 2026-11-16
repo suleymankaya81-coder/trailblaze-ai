@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Roman amphitheatre",
+      "quote": "In Brugg and Windisch, at the southern foot of the Jura, you can immerse yourself in the history of two empires from the first few minutes: the Roman amphitheatre, the Vindonissa Legionnaires' path with the only Roman legionnaires' camp in Switzerland and the Habsburg monastery of Königsfelden take you on a journey into the past.",
+      "english": "In Brugg and Windisch, at the southern foot of the Jura, you can immerse yourself in the history of two empires from the first few minutes: the Roman amphitheatre, the Vindonissa Legionnaires' path with the only Roman legionnaires' camp in Switzerland and the Habsburg monastery of Königsfelden take you on a journey into the past."
+    },
+    {
+      "id": "s2",
+      "name": "Königsfelden",
+      "quote": "In Brugg and Windisch, at the southern foot of the Jura, you can immerse yourself in the history of two empires from the first few minutes: the Roman amphitheatre, the Vindonissa Legionnaires' path with the only Roman legionnaires' camp in Switzerland and the Habsburg monastery of Königsfelden take you on a journey into the past.",
+      "english": "In Brugg and Windisch, at the southern foot of the Jura, you can immerse yourself in the history of two empires from the first few minutes: the Roman amphitheatre, the Vindonissa Legionnaires' path with the only Roman legionnaires' camp in Switzerland and the Habsburg monastery of Königsfelden take you on a journey into the past."
+    },
+    {
+      "id": "s3",
+      "name": "Aare",
+      "quote": "Along the Aare, alluvial zones, secluded bays, wooded islands and sandbanks will delight you.",
+      "english": "Along the Aare, alluvial zones, secluded bays, wooded islands and sandbanks will delight you."
+    },
+    {
+      "id": "s4",
+      "name": "Rhine",
+      "quote": "Passing quiet hamlets, you reach the banks of the Rhine.",
+      "english": "Passing quiet hamlets, you reach the banks of the Rhine."
+    },
+    {
+      "id": "s5",
+      "name": "Laufenburg",
+      "quote": "Laufenburg's terraced old town, with its towers and historic town wall nestled in the bend of the Rhine, is fascinating.",
+      "english": "Laufenburg's terraced old town, with its towers and historic town wall nestled in the bend of the Rhine, is fascinating."
+    },
+    {
+      "id": "s6",
+      "name": "upper Fricktal",
+      "quote": "A little later, you enter the upper Fricktal with its high-crowned orchards.",
+      "english": "A little later, you enter the upper Fricktal with its high-crowned orchards."
+    },
+    {
+      "id": "s7",
+      "name": "Aare riverside path",
+      "quote": "Along the beautiful Aare riverside path, you leisurely coast to Brugg.",
+      "english": "Along the beautiful Aare riverside path, you leisurely coast to Brugg."
+    }
+  ],
+  "days": [
+    {
+      "title": "Roman History and River Landscapes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Rhine Banks and Historic Towns",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Fricktal Orchards and Riverside Paths",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

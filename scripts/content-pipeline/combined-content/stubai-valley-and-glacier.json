@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Tyrol",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Stubaital"
+        "Zuckerhütl",
+        "Stubaier Gletscher"
       ],
       "seo_title": "Stubai Valley and Glacier Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Stubai Valley and Glacier",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Glaciers and High Peaks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Stubaital",
-                "stop_id": "stubai-valley-and-glacier",
-                "detail": "The Stubai Valley or Stubaital (German pronunciation: [ˈʃtuːbaɪ̯ˌtaːl] ) is an alpine valley in Tyrol, Austria. It is the central valley of the Stubai Alps. The river Ruetz flows through the valley."
+                "name": "Zuckerhütl",
+                "stop_id": "stubai-valley-and-glacier--s5",
+                "detail": "In the rear section, the valley increasingly narrows and finds a striking conclusion with the Zuckerhütl."
+              },
+              {
+                "name": "Stubaier Gletscher",
+                "stop_id": "stubai-valley-and-glacier--s8",
+                "detail": "The Stubai Alps quiet area covers a large part of the Stubai Alps (excluding the Stubai Glacier ski area) and extends east of the Ötz Valley to Ranalt in the Stubai Valley."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Stubai Valley and Glacier before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Northern Ridges and Mountain Faces",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Serles",
+                "stop_id": "stubai-valley-and-glacier--s4",
+                "detail": "The valley is located in the Stubai Alps; significant peaks are the Serles (2717 m), the Habicht (3277 m), the Wilde Freiger (3418 m), the Stubai Wildspitze (3341 m), the Ruderhofspitze (3473 m), and the Zuckerhütl (3507 m), the highest peak of the Stubai Alps."
+              },
+              {
+                "name": "Kalkkögel",
+                "stop_id": "stubai-valley-and-glacier--s9",
+                "detail": "The Kalkkögel quiet area is located in the northern part of the Stubai Valley and borders the Stubai Alps quiet area to the southwest."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Stubai Valley and Glacier before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://en.wikipedia.org/wiki/Stubaital"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Stubaital"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:50:13.463190+00:00"
       }
     }
   }

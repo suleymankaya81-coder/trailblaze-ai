@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Ahlbeck pier",
+      "quote": "View of the Ahlbeck pier and the beach promenade",
+      "english": "View of the Ahlbeck pier and the beach promenade"
+    },
+    {
+      "id": "s2",
+      "name": "Heringsdorf Pier",
+      "quote": "The Heringsdorf Pier at Sunrise",
+      "english": "The Heringsdorf Pier at Sunrise"
+    },
+    {
+      "id": "s3",
+      "name": "Villa Staudt",
+      "quote": "Villa Staudt with the Statue of Kaiser Wilhelm in Heringsdorf",
+      "english": "Villa Staudt with the Statue of Kaiser Wilhelm in Heringsdorf"
+    },
+    {
+      "id": "s4",
+      "name": "Streckelsberg",
+      "quote": "Baltic Sea surf in front of the Streckelsberg",
+      "english": "Baltic Sea surf in front of the Streckelsberg"
+    },
+    {
+      "id": "s5",
+      "name": "Koserow Coastal Forest",
+      "quote": "Hiking in the Koserow Coastal Forest",
+      "english": "Hiking in the Koserow Coastal Forest"
+    },
+    {
+      "id": "s6",
+      "name": "Karlshagen Marina",
+      "quote": "Karlshagen Marina",
+      "english": "Karlshagen Marina"
+    },
+    {
+      "id": "s7",
+      "name": "Usedom Island Nature Park",
+      "quote": "Or on the trails through Usedom Island Nature Park, which is so important for Usedom’s unique flora and fauna.",
+      "english": "Or on the trails through Usedom Island Nature Park, which is so important for Usedom’s unique flora and fauna."
+    }
+  ],
+  "days": [
+    {
+      "title": "Imperial Resort Piers and Architecture",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Coastal Nature and Heights",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Maritime and Inland Discovery",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

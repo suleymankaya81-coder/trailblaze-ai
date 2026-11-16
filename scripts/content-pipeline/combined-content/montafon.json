@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Vorarlberg",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Montafon"
+        "Schruns",
+        "Tschagguns",
+        "Bartholomäberg"
       ],
       "seo_title": "Montafon Visit Guide"
     },
     "travel": {
       "slug": "montafon",
+      "overview_name": "Montafon",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Montafon before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.austria.info/en-gb/regions/montafon/",
@@ -31,16 +34,77 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Montafon",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Central Villages and Heritage",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Montafon",
-                "stop_id": "montafon",
-                "detail": "Pause for a moment and absorb your surroundings. The Montafon offers a glimpse into real life in the Vorarlberg mountains: between rugged peaks you'll discover lively village life, local culture and regional cuisine."
+                "name": "Schruns",
+                "stop_id": "montafon--s1",
+                "detail": "Schruns: The Montafon's main town with a lively atmosphere and good infrastructure."
+              },
+              {
+                "name": "Tschagguns",
+                "stop_id": "montafon--s2",
+                "detail": "Tschagguns: Traditional architecture and a postcard-perfect setting."
+              },
+              {
+                "name": "Bartholomäberg",
+                "stop_id": "montafon--s3",
+                "detail": "Bartholomäberg: Historic village where guests can experience authentic Montafon culture."
+              },
+              {
+                "name": "Vandans",
+                "stop_id": "montafon--s4",
+                "detail": "Vandans: Typical mountain village with alpine charm and hiking trails."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Montafon before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Family Mountain Adventures",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Silvretta Montafon",
+                "stop_id": "montafon--s5",
+                "detail": "In addition to the best-known ski area of Silvretta Montafon, there are also Gargellen, Golm, Kristberg and Silvretta-Bielerhöhe."
+              },
+              {
+                "name": "Golm",
+                "stop_id": "montafon--s6",
+                "detail": "Skiing with children: the Silvretta Montafon ski area, the Golm ski area and skiing on the Kristberg in Silbertal are known for being especially family-friendly, with wide, easy-to-navigate slopes and ski schools."
+              },
+              {
+                "name": "Gauertaler AlpkulTour",
+                "stop_id": "montafon--s7",
+                "detail": "Family-friendly hikes: easy themed trails such as the Gauertaler AlpkulTour or Golmi’s Adventure World ."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Montafon before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "High Alpine Nature and Vistas",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Silbertal",
+                "stop_id": "montafon--s10",
+                "detail": "Silbertal: A great place for nature lovers."
+              },
+              {
+                "name": "Gaschurn-Partenen",
+                "stop_id": "montafon--s11",
+                "detail": "Gaschurn-Partenen: Starting point for the Silvretta High Alpine Road, perfect for hikes and mountain tours."
+              },
+              {
+                "name": "Gargellen",
+                "stop_id": "montafon--s12",
+                "detail": "Gargellen: Highest village in the Montafon, perfect for ski tours and alpine hikes."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Montafon before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +144,8 @@
             "url": "https://www.austria.info/en-gb/regions/montafon/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:46:36.116294+00:00"
       }
     }
   }

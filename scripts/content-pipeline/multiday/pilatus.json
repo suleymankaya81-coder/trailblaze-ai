@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Alpnachstad",
+      "quote": "The world’s steepest cogwheel railway starts its climb at Alpnachstad and tackles a maximum gradient of 48 percent, thereby passing forests, meadows and rock faces.",
+      "english": "The world’s steepest cogwheel railway starts its climb at Alpnachstad and tackles a maximum gradient of 48 percent, thereby passing forests, meadows and rock faces."
+    },
+    {
+      "id": "s2",
+      "name": "Eselwand",
+      "quote": "The world’s steepest cog railway from Alpnachstad to Pilatus (48% gradient), spectacular passage “Eselwand”",
+      "english": "The world’s steepest cog railway from Alpnachstad to Pilatus (48% gradient), spectacular passage “Eselwand”"
+    },
+    {
+      "id": "s3",
+      "name": "Fräkmüntegg",
+      "quote": "It takes the cableway a mere 3.5 minutes to reach Pilatus (2,132 m a.s.l.) from the intermediate station Fräkmüntegg (1,416 m a.s.l.).",
+      "english": "It takes the cableway a mere 3.5 minutes to reach Pilatus (2,132 m a.s.l.) from the intermediate station Fräkmüntegg (1,416 m a.s.l.)."
+    },
+    {
+      "id": "s4",
+      "name": "Krienseregg",
+      "quote": "Gondola from Kriens (Lucerne) via Krienseregg to Fräkmuntegg, aerial cableway to Pilatus Kulm or cog railway (only during summer) from Alpnachstad (boat or train from Lucerne) to Pilatus Kulm",
+      "english": "Gondola from Kriens (Lucerne) via Krienseregg to Fräkmuntegg, aerial cableway to Pilatus Kulm or cog railway (only during summer) from Alpnachstad (boat or train from Lucerne) to Pilatus Kulm"
+    },
+    {
+      "id": "s5",
+      "name": "Pilatus Kulm",
+      "quote": "On the north side, a gondola cableway and an aerial cableway connect Kriens to Pilatus Kulm.",
+      "english": "On the north side, a gondola cableway and an aerial cableway connect Kriens to Pilatus Kulm."
+    },
+    {
+      "id": "s6",
+      "name": "Oberhaupt",
+      "quote": "Cliff walk and secured trails to the viewpoint Oberhaupt",
+      "english": "Cliff walk and secured trails to the viewpoint Oberhaupt"
+    },
+    {
+      "id": "s7",
+      "name": "Hotel Pilatus-Kulm",
+      "quote": "Evening summit rendezvous in summer (from Alpnachstad), Restaurant Krienseregg and Restaurant Chalet, Hotel Pilatus-Kulm",
+      "english": "Evening summit rendezvous in summer (from Alpnachstad), Restaurant Krienseregg and Restaurant Chalet, Hotel Pilatus-Kulm"
+    }
+  ],
+  "days": [
+    {
+      "title": "Alpnachstad and the Summit Experience",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s5",
+        "s7"
+      ]
+    },
+    {
+      "title": "North Slope and Intermediate Heights",
+      "stop_ids": [
+        "s4",
+        "s3",
+        "s6"
+      ]
+    }
+  ]
+}

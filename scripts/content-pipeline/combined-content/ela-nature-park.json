@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Graubunden",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Parc Ela"
+        "Ortsmuseum Bergün",
+        "Bahnhof in Tiefencastel"
       ],
       "seo_title": "Ela Nature Park Visit Guide"
     },
     "travel": {
       "slug": "ela-nature-park",
+      "overview_name": "Ela Nature Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Ela Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.parc-ela.ch",
@@ -31,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Ela Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Village Heritage and Discovery",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Parc Ela",
-                "stop_id": "ela-nature-park",
-                "detail": "Parc Ela, gelegen im Herzen Graubündens, vereint die drei Sprachkulturen Romanisch, Deutsch und Italienisch. Namensgeber ist der Piz Ela zwischen dem Albulatal und dem Oberhalbstein. Der Park steht für wertvolle Landschaft, gelebte Kultur, innovative Projekte und Produkte sowie ein Netzwerk von Menschen, die gemeinsam an zukunftsfähigen Ideen und Lösungen arbeiten."
+                "name": "Ortsmuseum Bergün",
+                "stop_id": "ela-nature-park--s2",
+                "detail": "Exhibition \"Nossa Naira Mega\" at the Bergün Local Museum"
+              },
+              {
+                "name": "Bahnhof in Tiefencastel",
+                "stop_id": "ela-nature-park--s5",
+                "detail": "As of now, a fully electric Skoda Enyaq 4x4 is available for rent at the station in Tiefencastel."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Ela Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Nature and Local Meetings",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Schmitten",
+                "stop_id": "ela-nature-park--s6",
+                "detail": "Sensational find in Parc Ela: Location of the mustard-blue-shining sand bee discovered in Schmitten"
+              },
+              {
+                "name": "Filisur",
+                "stop_id": "ela-nature-park--s7",
+                "detail": "Around 50 members followed the invitation to Filisur."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Ela Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +105,8 @@
             "url": "https://www.parc-ela.ch"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:45:35.353914+00:00"
       }
     }
   }

@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Ödenburger-Gebirge",
+      "quote": "Die Landschaft ist durch die Gebirgszüge des Ödenburger- und des Rosalien-Gebirges sowie durch das weitläufige, fruchtbare Wulkatal gekennzeichnet und zeigt ein sehr abwechslungsreiches Bild mit Hecken und Streuobstwiesen, Weingärten und Kastanienhainen.",
+      "english": "The landscape is characterized by the mountain ranges of the Ödenburg and Rosalia mountains as well as the extensive, fertile Wulka Valley and shows a very varied picture with hedges and meadow orchards, vineyards and chestnut groves."
+    },
+    {
+      "id": "s2",
+      "name": "Rosalien-Gebirge",
+      "quote": "Die Landschaft ist durch die Gebirgszüge des Ödenburger- und des Rosalien-Gebirges sowie durch das weitläufige, fruchtbare Wulkatal gekennzeichnet und zeigt ein sehr abwechslungsreiches Bild mit Hecken und Streuobstwiesen, Weingärten und Kastanienhainen.",
+      "english": "The landscape is characterized by the mountain ranges of the Ödenburg and Rosalia mountains as well as the extensive, fertile Wulka Valley and shows a very varied picture with hedges and meadow orchards, vineyards and chestnut groves."
+    },
+    {
+      "id": "s3",
+      "name": "Wulkatal",
+      "quote": "Die Landschaft ist durch die Gebirgszüge des Ödenburger- und des Rosalien-Gebirges sowie durch das weitläufige, fruchtbare Wulkatal gekennzeichnet und zeigt ein sehr abwechslungsreiches Bild mit Hecken und Streuobstwiesen, Weingärten und Kastanienhainen.",
+      "english": "The landscape is characterized by the mountain ranges of the Ödenburg and Rosalia mountains as well as the extensive, fertile Wulka Valley and shows a very varied picture with hedges and meadow orchards, vineyards and chestnut groves."
+    },
+    {
+      "id": "s4",
+      "name": "Hangwiesen Rohrbach-Schattendorf- Loipersbach",
+      "quote": "Er umfasst das Europaschutzgebiet „Hangwiesen Rohrbach-Schattendorf- Loipersbach“, das innerhalb des Vogelschutzgebiets „Mattersburger Hügelland“ liegt.",
+      "english": "It includes the European protected area \"Hangwiesen Rohrbach-Schattendorf-Loipersbach\", which lies within the bird sanctuary \"Mattersburger Hügelland\"."
+    },
+    {
+      "id": "s5",
+      "name": "Herrentisch",
+      "quote": "Heute ist der Herrentisch im Ödenburger Gebirge an der österreichisch-ungarischen Grenze das Symbol für die Zusammenarbeit der Naturparke Soproner Gebirge, Landseer Berge und Rosalia Kogelberg.",
+      "english": "Today, the Herrentisch in the Ödenburg Mountains on the Austrian-Hungarian border is the symbol for the cooperation between the Sopron Mountains, Landsee Hills and Rosalia Kogelberg nature parks."
+    },
+    {
+      "id": "s6",
+      "name": "Rundweg Teichwiesen",
+      "quote": "Die Erlebnisstationen entlang des „Rundwegs Teichwiesen“ und die Erlebnisstation in Schattendorf, sowie zwischen Pöttsching, Bad Sauerbrunn und Forchtenstein präsentieren sich den Wanderern barrierefrei.",
+      "english": "The experience stations along the \"Teichwiesen circular trail\" and the experience station in Schattendorf, as well as between Pöttsching, Bad Sauerbrunn and Forchtenstein, are barrier-free for hikers."
+    },
+    {
+      "id": "s7",
+      "name": "Eulenweg",
+      "quote": "Das Projekt umfasste u. a. die Konzeption und Errichtung von insgesamt elf barrierefreien Erlebnis- und Raststationen entlang des sogenannten Eulenwegs bzw. entlang des „Rundgang Teichwiesen“.",
+      "english": "The project included, among other things, the conception and construction of a total of eleven barrier-free experience and rest stations along the so-called Owl Path or along the \"Teichwiesen Tour\"."
+    }
+  ],
+  "days": [
+    {
+      "title": "Mountain Ranges and Border Landmarks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s5"
+      ]
+    },
+    {
+      "title": "Valleys and Protected Meadows",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Themed Circular Trails",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

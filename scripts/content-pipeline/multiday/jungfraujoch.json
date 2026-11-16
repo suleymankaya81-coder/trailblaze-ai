@@ -1,0 +1,69 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kleine Scheidegg",
+      "quote": "All through the year, the cog railway runs steeply up through a tunnel to the Jungfraujoch from Kleine Scheidegg."
+    },
+    {
+      "id": "s2",
+      "name": "Eigergletscher",
+      "quote": "From the terminal in Grindelwald, a 3S cableway takes you directly to the station Eigergletscher (Eiger Glacier) in 15 minutes."
+    },
+    {
+      "id": "s3",
+      "name": "Eiger North Face",
+      "quote": "One stop within the tunnel offers spectacular views onto the glacier world outside through windows in the Eiger North Face."
+    },
+    {
+      "id": "s4",
+      "name": "Sphinx",
+      "quote": "All of this can be marvelled at from the viewing platforms “ Sphinx” and “Plateau” on the Aletsch glacier or from the “Ice Palace”."
+    },
+    {
+      "id": "s5",
+      "name": "Plateau",
+      "quote": "All of this can be marvelled at from the viewing platforms “ Sphinx” and “Plateau” on the Aletsch glacier or from the “Ice Palace”."
+    },
+    {
+      "id": "s6",
+      "name": "Ice Palace",
+      "quote": "All of this can be marvelled at from the viewing platforms “ Sphinx” and “Plateau” on the Aletsch glacier or from the “Ice Palace”."
+    },
+    {
+      "id": "s7",
+      "name": "Aletsch glacier",
+      "quote": "Specials: Europe’s highest-altitude station at 3454 m a.s.l., Europe’s highest-altitude post office with its own area code (3801), Aletsch glacier – at 23 kilometres the longest Alpine glacier."
+    },
+    {
+      "id": "s8",
+      "name": "Eiger Trail",
+      "quote": "The Eiger Trail goes within touching distance of the north face of the Eiger."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glacier Access and Mountain Ascent",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Summit Viewpoints and Ice Wonders",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Alpine Nature and Glacier Trails",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

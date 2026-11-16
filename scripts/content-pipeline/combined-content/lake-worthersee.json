@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Carinthia",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Lake Wörthersee"
+        "Klagenfurt lido",
+        "Restaurant Maria Loretto"
       ],
       "seo_title": "Lake Wörthersee Visit Guide"
     },
     "travel": {
       "slug": "lake-worthersee",
+      "overview_name": "Lake Wörthersee",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Lake Wörthersee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.austria.info/en-gb/locations/lake-woerthersee/",
@@ -31,16 +33,67 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Lake Wörthersee",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Eastern Bay and Klagenfurt Sights",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Lake Wörthersee",
-                "stop_id": "lake-worthersee",
-                "detail": "It is these classic Wörthersee moments that make a stay by the lake so special: an early morning swim near Kapuziner Island, freshly caught whitefish enjoyed by the water at lunchtime, and a leisurely cycle ride past historic villas and lakeside lidos in Pörtschach or Velden in the afternoon. Lake Wörthersee combines a summer holiday in Carinthia with swimming, water sports and destinations that have long been associated with summer relaxation."
+                "name": "Klagenfurt lido",
+                "stop_id": "lake-worthersee--s6",
+                "detail": "Despite its peaceful setting, the nature reserve is only a few minutes from Europapark, Klagenfurt lido and the city centre."
+              },
+              {
+                "name": "Restaurant Maria Loretto",
+                "stop_id": "lake-worthersee--s10",
+                "detail": "In Klagenfurt, Restaurant Maria Loretto enjoys a unique location on a peninsula, with a spacious terrace overlooking the lake."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Wörthersee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Central Architecture and Islands",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Kapuziner Island",
+                "stop_id": "lake-worthersee--s1",
+                "detail": "Prehistoric pile dwellings and artefacts dating from the 4th millennium BC have been discovered in the area around Kapuziner Island."
+              },
+              {
+                "name": "Maria Wörth",
+                "stop_id": "lake-worthersee--s4",
+                "detail": "The church island of Maria Wörth is one of the most famous spots on Lake Wörthersee – with lake views, a wedding chapel and peaceful paths along the peninsula."
+              },
+              {
+                "name": "Pörtschach am Wörthersee",
+                "stop_id": "lake-worthersee--s5",
+                "detail": "With 2 km of lakeside promenade, magnificent villas and historic charm, Pörtschach am Wörthersee is characterised by its lakeside setting and spa architecture."
+              },
+              {
+                "name": "Promenadenbad Pörtschach",
+                "stop_id": "lake-worthersee--s11",
+                "detail": "Numerous lidos line the shores of Lake Wörthersee, including Klagenfurt Lido , Promenadenbad Pörtschach and Velden Lido ."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Wörthersee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Western Shore and Viewpoints",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Pyramidenkogel observation tower",
+                "stop_id": "lake-worthersee--s2",
+                "detail": "Around the lake, promenades lead to cafés, lakeside terraces and bathing spots, while attractions such as the Pyramidenkogel observation tower, Minimundus and cruises on Lake Wörthersee can easily be combined with a day by the water."
+              },
+              {
+                "name": "Velden",
+                "stop_id": "lake-worthersee--s9",
+                "detail": "Boutique hotels, lakeside terraces, and bars are a defining feature of Velden's townscape – particularly during the summer months along the lakeside promenade."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Lake Wörthersee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +133,8 @@
             "url": "https://www.austria.info/en-gb/locations/lake-woerthersee/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:46:18.887940+00:00"
       }
     }
   }

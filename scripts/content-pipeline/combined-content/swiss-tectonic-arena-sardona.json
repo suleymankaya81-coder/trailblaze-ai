@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Graubunden",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Swiss Tectonic Arena Sardona"
+        "Piz Sardona",
+        "Murgsee lake"
       ],
       "seo_title": "Swiss Tectonic Arena Sardona Visit Guide"
     },
     "travel": {
       "slug": "swiss-tectonic-arena-sardona",
+      "overview_name": "Swiss Tectonic Arena Sardona",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Swiss Tectonic Arena Sardona before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.myswitzerland.com/en-ch/experiences/tectonic-arena-sardona/",
@@ -31,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Swiss Tectonic Arena Sardona",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Peaks and Overthrust Landmarks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Swiss Tectonic Arena Sardona",
-                "stop_id": "swiss-tectonic-arena-sardona",
-                "detail": "Clearly visible from a great distance: the distinctive notch around the Piz Sardona separates the 250-million-year-old Verrucano rock from the 35 to 50 million years “young” Flysch rock. Extraordinary is that ancient stone formations overlie those that are millions of years younger - which was long an enigma for geologists, and a fact so unique that led it to the addition of the Swiss Tectonic Arena Sardona on the UNESCO World Heritage list in [dated source]."
+                "name": "Piz Sardona",
+                "stop_id": "swiss-tectonic-arena-sardona--s1",
+                "detail": "The seldom line along the rock face around the Piz Sardona marks the Glarus overthrust - a phenomenon of world interest."
+              },
+              {
+                "name": "Murgsee lake",
+                "stop_id": "swiss-tectonic-arena-sardona--s2",
+                "detail": "Few places illustrate the history of the Alps as impressively as the UNESCO World Heritage Site between the Murgsee lake, Pizol and Martin's Hole near Elm."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Swiss Tectonic Arena Sardona before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Expedition Tschinglen Hike",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Tschinglen Alp",
+                "stop_id": "swiss-tectonic-arena-sardona--s5",
+                "detail": "The excursion begins on the gondola lift from Elm to the Tschinglen Alp – right through the awe-inspiring gorge."
+              },
+              {
+                "name": "Firstboden viewpoint",
+                "stop_id": "swiss-tectonic-arena-sardona--s6",
+                "detail": "The Alp is the departure point for an approx. 1 ½ hour circular hike to the Firstboden viewpoint."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Swiss Tectonic Arena Sardona before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +105,8 @@
             "url": "https://www.myswitzerland.com/en-ch/experiences/tectonic-arena-sardona/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:49:29.690293+00:00"
       }
     }
   }

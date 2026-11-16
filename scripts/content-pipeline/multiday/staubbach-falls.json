@@ -1,0 +1,98 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Staubbach Falls",
+      "quote": "Experience one of the highest free-falling waterfalls in Europe: The Staubbach Falls in Lauterbrunnen plunge 297 meters into the depths.",
+      "english": "Experience one of the highest free-falling waterfalls in Europe: The Staubbach Falls in Lauterbrunnen plunge 297 meters into the depths."
+    },
+    {
+      "id": "s2",
+      "name": "Jungfrau",
+      "quote": "Popular holiday park at the foot of the mountains Jungfrau, Mönch and Eiger, Schilthorn and the Staubbach waterfall.",
+      "english": "Popular holiday park at the foot of the mountains Jungfrau, Mönch and Eiger, Schilthorn and the Staubbach waterfall."
+    },
+    {
+      "id": "s3",
+      "name": "Mönch",
+      "quote": "Popular holiday park at the foot of the mountains Jungfrau, Mönch and Eiger, Schilthorn and the Staubbach waterfall.",
+      "english": "Popular holiday park at the foot of the mountains Jungfrau, Mönch and Eiger, Schilthorn and the Staubbach waterfall."
+    },
+    {
+      "id": "s4",
+      "name": "Eiger",
+      "quote": "Popular holiday park at the foot of the mountains Jungfrau, Mönch and Eiger, Schilthorn and the Staubbach waterfall.",
+      "english": "Popular holiday park at the foot of the mountains Jungfrau, Mönch and Eiger, Schilthorn and the Staubbach waterfall."
+    },
+    {
+      "id": "s5",
+      "name": "Schilthorn",
+      "quote": "Popular holiday park at the foot of the mountains Jungfrau, Mönch and Eiger, Schilthorn and the Staubbach waterfall.",
+      "english": "Popular holiday park at the foot of the mountains Jungfrau, Mönch and Eiger, Schilthorn and the Staubbach waterfall."
+    },
+    {
+      "id": "s6",
+      "name": "Lütschine River",
+      "quote": "You'll ride with motor assistance along the Lütschine River to the Staubbach Falls and Trümmelbach Falls.",
+      "english": "You'll ride with motor assistance along the Lütschine River to the Staubbach Falls and Trümmelbach Falls."
+    },
+    {
+      "id": "s7",
+      "name": "Trümmelbach Falls",
+      "quote": "You'll ride with motor assistance along the Lütschine River to the Staubbach Falls and Trümmelbach Falls.",
+      "english": "You'll ride with motor assistance along the Lütschine River to the Staubbach Falls and Trümmelbach Falls."
+    },
+    {
+      "id": "s8",
+      "name": "Lauterbrunnen Valley",
+      "quote": "A total of 72 waterfalls gush down into the Lauterbrunnen Valley from the vertical cliff faces, some of which are as high as 400m.",
+      "english": "A total of 72 waterfalls gush down into the Lauterbrunnen Valley from the vertical cliff faces, some of which are as high as 400m."
+    },
+    {
+      "id": "s9",
+      "name": "Stechelberg",
+      "quote": "The roar and rush of these unique natural spectacles accompanies hikers on this picturesque trail from Lauterbrunnen to Stechelberg.",
+      "english": "The roar and rush of these unique natural spectacles accompanies hikers on this picturesque trail from Lauterbrunnen to Stechelberg."
+    },
+    {
+      "id": "s10",
+      "name": "Wengen",
+      "quote": "Wengen – enjoy the idyllic and sun-drenched mountain village at the foot of the Jungfrau and marvel at the spectacular views over the Lauterbrunnen Valley.",
+      "english": "Wengen – enjoy the idyllic and sun-drenched mountain village at the foot of the Jungfrau and marvel at the spectacular views over the Lauterbrunnen Valley."
+    },
+    {
+      "id": "s11",
+      "name": "Mürren",
+      "quote": "Discover the mountain village of Mürren high above the Lauterbrunnen Valley.",
+      "english": "Discover the mountain village of Mürren high above the Lauterbrunnen Valley."
+    }
+  ],
+  "days": [
+    {
+      "title": "Waterfalls and Valley Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Riverside Trails and High Villages",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s11"
+      ]
+    },
+    {
+      "title": "Valley Exploration and Scenic Outposts",
+      "stop_ids": [
+        "s8",
+        "s9",
+        "s10"
+      ]
+    }
+  ]
+}

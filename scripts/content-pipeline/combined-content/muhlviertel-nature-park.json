@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Upper Austria",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Mühlviertel"
+        "Haslach Textile Centre",
+        "Gothic Street"
       ],
       "seo_title": "Mühlviertel Nature Park Visit Guide"
     },
     "travel": {
       "slug": "muhlviertel-nature-park",
+      "overview_name": "Mühlviertel Nature Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Mühlviertel Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.austria.info/en-gb/regions/muehlviertel/",
@@ -31,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Mühlviertel Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Gothic Architecture and History",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Mühlviertel",
-                "stop_id": "muhlviertel-nature-park",
-                "detail": "Between the Danube in the south and the Bohemian Forest in the north sits the Mühlviertel. The rivers Große Mühl and the Kleine Mühl, after which the Upper Austrian region is named, meander powerfully through the landscapes – both tributaries of the Danube."
+                "name": "Haslach Textile Centre",
+                "stop_id": "muhlviertel-nature-park--s1",
+                "detail": "If you’re interested in the region’s textile industry, head to the Haslach Textile Centre —a historic factory site with a museum, production facilities, and training centre."
+              },
+              {
+                "name": "Gothic Street",
+                "stop_id": "muhlviertel-nature-park--s5",
+                "detail": "The Gothic Street leads to historic buildings such as the Church of Our Lady in Freistadt."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Mühlviertel Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "High Peaks and Bogs",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Plöckenstein",
+                "stop_id": "muhlviertel-nature-park--s4",
+                "detail": "The Plöckenstein, the highest peak at 1,379 metres, offers magnificent views."
+              },
+              {
+                "name": "Bayrische Au raised bog",
+                "stop_id": "muhlviertel-nature-park--s7",
+                "detail": "Those seeking tranquility will find places of power like the Bayrische Au raised bog."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Mühlviertel Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +105,8 @@
             "url": "https://www.austria.info/en-gb/regions/muehlviertel/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:46:40.300309+00:00"
       }
     }
   }

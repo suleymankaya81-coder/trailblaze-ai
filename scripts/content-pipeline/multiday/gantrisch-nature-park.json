@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Gantrisch-Panoramaweg",
+      "quote": "The Gantrisch Panoraweg Path offers a scenic pre-Alps hike with many spectacular viewpoints.",
+      "english": "The Gantrisch Panoraweg Path offers a scenic pre-Alps hike with many spectacular viewpoints."
+    },
+    {
+      "id": "s2",
+      "name": "Gantrisch Königsroute",
+      "quote": "The Königsroute – the route of kings –combines the best parts into a fantastic circular tour.",
+      "english": "The Königsroute – the route of kings –combines the best parts into a fantastic circular tour."
+    },
+    {
+      "id": "s3",
+      "name": "Alpbeizli Gantrischli",
+      "quote": "We are happy to spoil you with regional delicacies in our Alpbeizli.",
+      "english": "We are happy to spoil you with regional delicacies in our Alpbeizli."
+    },
+    {
+      "id": "s4",
+      "name": "Gantrisch Bike-Panoramaweg",
+      "quote": "The «Gantrisch Bike-Panoramaweg» is considered a beginners tour in the Gantrisch Biking portfolio and allows plenty of time to enjoy the beautiful scenery.",
+      "english": "The «Gantrisch Bike-Panoramaweg» is considered a beginners tour in the Gantrisch Biking portfolio and allows plenty of time to enjoy the beautiful scenery."
+    },
+    {
+      "id": "s5",
+      "name": "Gurnigel",
+      "quote": "The Gantrisch landscape reserve provides the delightful context for this loop featuring the Gurnigel, a pass popular with local cyclists.",
+      "english": "The Gantrisch landscape reserve provides the delightful context for this loop featuring the Gurnigel, a pass popular with local cyclists."
+    },
+    {
+      "id": "s6",
+      "name": "Schloss Schwarzenburg",
+      "quote": "Mit dem Adventsfenster laden wir zu einem gemütlichen Abend im Schloss Schwarzenburg ein.",
+      "english": "With the Advent window, we invite you to a cozy evening at Schwarzenburg Castle."
+    },
+    {
+      "id": "s7",
+      "name": "Schwarzsee",
+      "quote": "Diemtigtal, Gantrisch & Gruyère Pays-d‘Enhaut Wild roses and untouched forests in the Diemtigtal, rough and rugged peaks in the Gantrisch and the romantic Schwarzsee followed by the lovely Jauntal:…",
+      "english": "Diemtigtal, Gantrisch & Gruyère Pays-d‘Enhaut Wild roses and untouched forests in the Diemtigtal, rough and rugged peaks in the Gantrisch and the romantic Schwarzsee followed by the lovely Jauntal:…"
+    }
+  ],
+  "days": [
+    {
+      "title": "Panoramic Heights and Local Flavors",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Cycling Routes and Mountain Passes",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Historic Castles",
+      "stop_ids": [
+        "s6"
+      ]
+    }
+  ]
+}

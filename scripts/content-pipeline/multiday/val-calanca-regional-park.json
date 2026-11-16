@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Rossa",
+      "quote": "Walk to three historic chapels in Rossa",
+      "english": "Walk to three historic chapels in Rossa"
+    },
+    {
+      "id": "s2",
+      "name": "Via Alta Calanca (sentiero alpino Calanca)",
+      "quote": "Via Alta Calanca (sentiero alpino Calanca)",
+      "english": "Via Alta Calanca (Calanca alpine trail)"
+    },
+    {
+      "id": "s3",
+      "name": "Capanna Buffalora",
+      "quote": "Capanna Buffalora",
+      "english": "Buffalora Hut"
+    },
+    {
+      "id": "s4",
+      "name": "ViaCalanca",
+      "quote": "ViaCalanca",
+      "english": "ViaCalanca"
+    },
+    {
+      "id": "s5",
+      "name": "Braggio",
+      "quote": "Braggio and Landarenca",
+      "english": "Braggio and Landarenca"
+    },
+    {
+      "id": "s6",
+      "name": "Landarenca",
+      "quote": "Braggio and Landarenca",
+      "english": "Braggio and Landarenca"
+    },
+    {
+      "id": "s7",
+      "name": "Lago di Calvaresc",
+      "quote": "Parco Val Calanca is the smallest nature reserve in Switzerland, but has a big heart – just like the heart-shaped Lago di Calvaresc, whose distinctive shape is reflected in its logo.",
+      "english": "Parco Val Calanca is the smallest nature reserve in Switzerland, but has a big heart – just like the heart-shaped Lake Calvaresc, whose distinctive shape is reflected in its logo."
+    }
+  ],
+  "days": [
+    {
+      "title": "Villages and Trails of Calanca",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "High Alpine Peaks and Huts",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s7"
+      ]
+    }
+  ]
+}

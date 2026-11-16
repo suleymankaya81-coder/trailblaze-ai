@@ -1,0 +1,91 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Ostseebad Binz",
+      "quote": "Rügen´s largest seaside resort.",
+      "english": "Rügen's largest seaside resort."
+    },
+    {
+      "id": "s2",
+      "name": "Ostseebad Sellin",
+      "quote": "Popular seaside resort with famous pier.",
+      "english": "Popular seaside resort with famous pier."
+    },
+    {
+      "id": "s3",
+      "name": "Ostseebad Göhren",
+      "quote": "Seaside and hydrotherapy resort on Rügen island",
+      "english": "Seaside and hydrotherapy resort on Rügen island"
+    },
+    {
+      "id": "s4",
+      "name": "Ostseebad Baabe",
+      "quote": "Seaside resort at the edge of the Baltic sea.",
+      "english": "Seaside resort at the edge of the Baltic sea."
+    },
+    {
+      "id": "s5",
+      "name": "Sassnitz",
+      "quote": "Old fishing village with a lovely old town.",
+      "english": "Old fishing village with a lovely old town."
+    },
+    {
+      "id": "s6",
+      "name": "Nationalpark-Zentrum KÖNIGSSTUHL",
+      "quote": "Visit Rügen`s most famous landmark as well as the exhibition center.",
+      "english": "Visit Rügen's most famous landmark as well as the exhibition center."
+    },
+    {
+      "id": "s7",
+      "name": "Hunting lodge Granitz",
+      "quote": "Hunting lodge built between 1837 and 1846.",
+      "english": "Hunting lodge built between 1837 and 1846."
+    },
+    {
+      "id": "s8",
+      "name": "Naturerbe Zentrum Rügen",
+      "quote": "Tree-top path and exhibition center.",
+      "english": "Tree-top path and exhibition center."
+    },
+    {
+      "id": "s9",
+      "name": "Cape Arkona",
+      "quote": "Light houses, tracking tower and most north-eastern point.",
+      "english": "Light houses, tracking tower and most north-eastern point."
+    },
+    {
+      "id": "s10",
+      "name": "Prora",
+      "quote": "The “KdF sea bath for 20000”",
+      "english": "The “KdF sea bath for 20,000”"
+    }
+  ],
+  "days": [
+    {
+      "title": "Southeastern Resorts and Heritage Rail",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Northern Cliffs and History",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s9"
+      ]
+    },
+    {
+      "title": "Architecture and Nature Centers",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s10"
+      ]
+    }
+  ]
+}

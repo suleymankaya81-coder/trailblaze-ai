@@ -1,0 +1,70 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Salem Moor",
+      "quote": "Its diversity of species and habitats is what makes it so special: white-tailed eagles circle above the waters, cranes trumpet as they fly in at dusk, moor frogs croak in the Salem Moor, and orchids grow in the ice age Hellbach Valley.",
+      "english": "Its diversity of species and habitats is what makes it so special: white-tailed eagles circle above the waters, cranes trumpet as they fly in at dusk, moor frogs croak in the Salem Moor, and orchids grow in the ice age Hellbach Valley."
+    },
+    {
+      "id": "s2",
+      "name": "Hellbach Valley",
+      "quote": "Its diversity of species and habitats is what makes it so special: white-tailed eagles circle above the waters, cranes trumpet as they fly in at dusk, moor frogs croak in the Salem Moor, and orchids grow in the ice age Hellbach Valley.",
+      "english": "Its diversity of species and habitats is what makes it so special: white-tailed eagles circle above the waters, cranes trumpet as they fly in at dusk, moor frogs croak in the Salem Moor, and orchids grow in the ice age Hellbach Valley."
+    },
+    {
+      "id": "s3",
+      "name": "lake Schaalsee",
+      "quote": "Between lake Schaalsee and the Elbe-Lübeck canal, between Lübeck and Büchen, there is a vast mosaic landscape consisting of water, forest, meadows, fields and hedge walls.",
+      "english": "Between lake Schaalsee and the Elbe-Lübeck canal, between Lübeck and Büchen, there is a vast mosaic landscape consisting of water, forest, meadows, fields and hedge walls."
+    },
+    {
+      "id": "s4",
+      "name": "Elbe-Lübeck canal",
+      "quote": "Between lake Schaalsee and the Elbe-Lübeck canal, between Lübeck and Büchen, there is a vast mosaic landscape consisting of water, forest, meadows, fields and hedge walls.",
+      "english": "Between lake Schaalsee and the Elbe-Lübeck canal, between Lübeck and Büchen, there is a vast mosaic landscape consisting of water, forest, meadows, fields and hedge walls."
+    },
+    {
+      "id": "s5",
+      "name": "Naturparkzentrum Uhlenkolk",
+      "quote": "Exciting and diverse information is available at the nature park center “Naturparkzentrum Uhlenkolk” in Mölln.",
+      "english": "Exciting and diverse information is available at the nature park center “Naturparkzentrum Uhlenkolk” in Mölln."
+    },
+    {
+      "id": "s6",
+      "name": "viewing towers",
+      "quote": "The nature park with its hiking trails, viewing towers, information points, educational trails and picnic facilities is an interactive sanctuary for you to touch, experience and join in.",
+      "english": "The nature park with its hiking trails, viewing towers, information points, educational trails and picnic facilities is an interactive sanctuary for you to touch, experience and join in."
+    },
+    {
+      "id": "s7",
+      "name": "educational trails",
+      "quote": "The nature park with its hiking trails, viewing towers, information points, educational trails and picnic facilities is an interactive sanctuary for you to touch, experience and join in.",
+      "english": "The nature park with its hiking trails, viewing towers, information points, educational trails and picnic facilities is an interactive sanctuary for you to touch, experience and join in."
+    }
+  ],
+  "days": [
+    {
+      "title": "Moors and Valleys",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Waterways and Canals",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Visitor Centers and Trails",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

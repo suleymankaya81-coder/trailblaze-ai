@@ -1,0 +1,51 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Reichraminger Hintergebirge",
+      "quote": "Das Schutzgebiet umfasst das Reichraminger Hintergebirge und das Sengsengebirge im Südosten von Oberösterreich.",
+      "english": "The protected area includes the Reichraminger Hintergebirge and the Sengsengebirge in the southeast of Upper Austria."
+    },
+    {
+      "id": "s2",
+      "name": "Sengsengebirge",
+      "quote": "Das Schutzgebiet umfasst das Reichraminger Hintergebirge und das Sengsengebirge im Südosten von Oberösterreich.",
+      "english": "The protected area includes the Reichraminger Hintergebirge and the Sengsengebirge in the southeast of Upper Austria."
+    },
+    {
+      "id": "s3",
+      "name": "Buchenwälder",
+      "quote": "Die uralten Buchenwälder sind als UNESCO-Weltnaturerbe anerkannt.",
+      "english": "The ancient beech forests are recognized as a UNESCO World Natural Heritage site."
+    },
+    {
+      "id": "s4",
+      "name": "Quellen",
+      "quote": "Über 800 Quellen speisen das längste natürliche Bachsystem der Nördlichen Kalkalpen.",
+      "english": "Over 800 springs feed the longest natural stream system of the Northern Limestone Alps."
+    },
+    {
+      "id": "s5",
+      "name": "Besucherzentren",
+      "quote": "In unseren Besucherzentren erhalten Sie auch in den Wintermonaten Informationen über den Nationalpark Kalkalpen.",
+      "english": "In our visitor centers, you can receive information about the Kalkalpen National Park even during the winter months."
+    }
+  ],
+  "days": [
+    {
+      "title": "Mountain Ranges and Primeval Forests",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Water Sources and Information Centers",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    }
+  ]
+}

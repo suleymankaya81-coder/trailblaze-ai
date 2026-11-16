@@ -1,0 +1,79 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Ellmau",
+      "quote": "Ellmau : A traditional mountain village that retains its charm while offering modern attractions like the KaiserBad and Ellmi's Zauberwelt , perfect for families.",
+      "english": "Ellmau: A traditional mountain village that retains its charm while offering modern attractions like the KaiserBad and Ellmi's Zauberwelt, perfect for families."
+    },
+    {
+      "id": "s2",
+      "name": "KaiserBad",
+      "quote": "Ellmau : A traditional mountain village that retains its charm while offering modern attractions like the KaiserBad and Ellmi's Zauberwelt , perfect for families.",
+      "english": "Ellmau: A traditional mountain village that retains its charm while offering modern attractions like the KaiserBad and Ellmi's Zauberwelt, perfect for families."
+    },
+    {
+      "id": "s3",
+      "name": "Ellmi's Zauberwelt",
+      "quote": "Families can explore interactive attractions like Ellmi's Zauberwelt or Hexenwasser , while adventurers tackle rugged rock faces or enjoy paragliding with breathtaking views.",
+      "english": "Families can explore interactive attractions like Ellmi's Zauberwelt or Hexenwasser, while adventurers tackle rugged rock faces or enjoy paragliding with breathtaking views."
+    },
+    {
+      "id": "s4",
+      "name": "Going",
+      "quote": "Going : Known for its tranquillity, it appeals to those seeking peace and direct access to nature, with a well-developed network of hiking trails.",
+      "english": "Going: Known for its tranquillity, it appeals to those seeking peace and direct access to nature, with a well-developed network of hiking trails."
+    },
+    {
+      "id": "s5",
+      "name": "Scheffau",
+      "quote": "Scheffau : Focused on family tourism with attractions like KaiserWelt, it also serves as a key gateway to the Kaisergebirge nature reserve, ideal for day hikes.",
+      "english": "Scheffau: Focused on family tourism with attractions like KaiserWelt, it also serves as a key gateway to the Kaisergebirge nature reserve, ideal for day hikes."
+    },
+    {
+      "id": "s6",
+      "name": "KaiserWelt",
+      "quote": "Scheffau : Focused on family tourism with attractions like KaiserWelt, it also serves as a key gateway to the Kaisergebirge nature reserve, ideal for day hikes.",
+      "english": "Scheffau: Focused on family tourism with attractions like KaiserWelt, it also serves as a key gateway to the Kaisergebirge nature reserve, ideal for day hikes."
+    },
+    {
+      "id": "s7",
+      "name": "Hintersteiner See",
+      "quote": "In summer, countless hiking trails lead through fragrant alpine meadows to hidden mountain lakes like the crystal-clear Hintersteiner See .",
+      "english": "In summer, countless hiking trails lead through fragrant alpine meadows to hidden mountain lakes like the crystal-clear Hintersteiner See."
+    },
+    {
+      "id": "s8",
+      "name": "Söll",
+      "quote": "Söll : Home to Hexenwasser, an interactive experience combining local traditions with educational elements about water.",
+      "english": "Söll: Home to Hexenwasser, an interactive experience combining local traditions with educational elements about water."
+    },
+    {
+      "id": "s9",
+      "name": "Hexenwasser",
+      "quote": "Söll is also a hub for hikers and winter sports enthusiasts.",
+      "english": "Söll is also a hub for hikers and winter sports enthusiasts."
+    }
+  ],
+  "days": [
+    {
+      "title": "Family Fun in Ellmau and Tranquil Nature in Going",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Mountain Lakes and Family Adventures in Scheffau and Söll",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Bern",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Blausee"
+        "organic trout farm",
+        "stone sculpture",
+        "lakeside path"
       ],
       "seo_title": "Blausee Visit Guide"
     },
     "travel": {
       "slug": "blausee",
+      "overview_name": "Blausee",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Blausee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.myswitzerland.com/en-ch/destinations/blausee/",
@@ -31,16 +34,67 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Blausee",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Heart of the Nature Park",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Blausee",
-                "stop_id": "blausee",
-                "detail": "Blue, crystal clear and indescribably beautiful – that’s the Blausee. Discover one of the most beautiful mountain lakes in Switzerland in the Kandertal Region of the Bernese Oberland. Enjoy the peace and quiet by the lake and the fairytale nature park with walking paths, fire pits and picnic areas."
+                "name": "organic trout farm",
+                "stop_id": "blausee--s2",
+                "detail": "The entrance fee to the Blausee includes several offers: The picnic areas and barbecue areas, the natural playground for children and a visit to the organic trout farm with the natural ponds."
+              },
+              {
+                "name": "stone sculpture",
+                "stop_id": "blausee--s3",
+                "detail": "Tree trunks, rocks and a mysterious stone sculpture at the bottom of the lake seem to be lying just below the surface of the water."
+              },
+              {
+                "name": "lakeside path",
+                "stop_id": "blausee--s4",
+                "detail": "The lakeside path with a wooden bridge and platform out onto the lake is absolutely picturesque."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Blausee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Kandertal Peaks and Lakes",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Lake Oeschinen",
+                "stop_id": "blausee--s5",
+                "detail": "In the Kandertal Region lies a second top excursion destination: the Lake Oeschinen above Kandersteg."
+              },
+              {
+                "name": "Kandersteg",
+                "stop_id": "blausee--s6",
+                "detail": "Buses run from Frutigen and Kandersteg to the Blausee stop."
+              },
+              {
+                "name": "Allmenalp",
+                "stop_id": "blausee--s7",
+                "detail": "Opposite on the Allmenalp you can climb through one of the most spectacular via ferratas in Switzerland."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Blausee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Adelboden Adventures",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Choleren Gorge",
+                "stop_id": "blausee--s8",
+                "detail": "Learn more about: Adelboden Choleren Gorge"
+              },
+              {
+                "name": "Engstligenalp",
+                "stop_id": "blausee--s9",
+                "detail": "Learn more about: Adelboden Engstligenalp"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Blausee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +134,8 @@
             "url": "https://www.myswitzerland.com/en-ch/destinations/blausee/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:45:09.747996+00:00"
       }
     }
   }

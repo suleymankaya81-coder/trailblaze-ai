@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Salzburg",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Naturpark Weißbach"
+        "Bergsteigerdorfes Weißbach",
+        "Almgebiete"
       ],
       "seo_title": "Weissbach Nature Park Visit Guide"
     },
     "travel": {
       "slug": "weissbach-nature-park",
+      "overview_name": "Weissbach Nature Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Weissbach Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.naturparke.at/naturpark/salzburg/weissbach/",
@@ -31,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Weissbach Nature Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Village Heritage and Alpine Pastures",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Naturpark Weißbach",
-                "stop_id": "weissbach-nature-park",
-                "detail": "Nestled in the Salzburg limestone high Alps, the Weissbach Nature Park and the Berchtesgaden National Park form a common natural space that bears witness to a lived border culture. In the nature park area of the mountaineering village of Weißbach, all visitors come to their expense: women with different alpinistic interests."
+                "name": "Bergsteigerdorfes Weißbach",
+                "stop_id": "weissbach-nature-park--s1",
+                "detail": "In the nature park area of the mountaineering village Weißbach, all visitors with different mountaineering interests get their money's worth."
+              },
+              {
+                "name": "Almgebiete",
+                "stop_id": "weissbach-nature-park--s3",
+                "detail": "The traditionally managed, extensive alpine pasture areas and the species-rich mountain meadows produce natural history specialities such as lady's slipper, martagon lily or Apollo butterfly."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Weissbach Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "High Border Trails and Habitats",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Hirschbichl",
+                "stop_id": "weissbach-nature-park--s2",
+                "detail": "The hike begins at a starting point steeped in history, the Hirschbichl."
+              },
+              {
+                "name": "Pürzlbach",
+                "stop_id": "weissbach-nature-park--s4",
+                "detail": "The nature park has created a maintenance management plan for several particularly significant areas in Pürzlbach."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Weissbach Nature Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +105,8 @@
             "url": "https://www.naturparke.at/naturpark/salzburg/weissbach/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:51:14.891563+00:00"
       }
     }
   }

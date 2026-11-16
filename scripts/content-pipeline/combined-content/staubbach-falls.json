@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Bern",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Staubbach Falls"
+        "Staubbach Falls",
+        "Jungfrau"
       ],
       "seo_title": "Staubbach Falls Visit Guide"
     },
     "travel": {
       "slug": "staubbach-falls",
+      "overview_name": "Staubbach Falls",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Staubbach Falls before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.myswitzerland.com/en-ch/search/?q=Staubbach#Header",
@@ -31,16 +33,62 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Staubbach Falls",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Waterfalls and Valley Peaks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
                 "name": "Staubbach Falls",
-                "stop_id": "staubbach-falls",
-                "detail": "Experience one of the highest free-falling waterfalls in Europe: The Staubbach Falls in Lauterbrunnen plunge 297 meters into the depths. Plan your trip."
+                "stop_id": "staubbach-falls--s1",
+                "detail": "Experience one of the highest free-falling waterfalls in Europe: The Staubbach Falls in Lauterbrunnen plunge 297 meters into the depths."
+              },
+              {
+                "name": "Jungfrau",
+                "stop_id": "staubbach-falls--s2",
+                "detail": "Popular holiday park at the foot of the mountains Jungfrau, Mönch and Eiger, Schilthorn and the Staubbach waterfall."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Staubbach Falls before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Riverside Trails and High Villages",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Lütschine River",
+                "stop_id": "staubbach-falls--s6",
+                "detail": "You'll ride with motor assistance along the Lütschine River to the Staubbach Falls and Trümmelbach Falls."
+              },
+              {
+                "name": "Mürren",
+                "stop_id": "staubbach-falls--s11",
+                "detail": "Discover the mountain village of Mürren high above the Lauterbrunnen Valley."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Staubbach Falls before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Valley Exploration and Scenic Outposts",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Lauterbrunnen Valley",
+                "stop_id": "staubbach-falls--s8",
+                "detail": "A total of 72 waterfalls gush down into the Lauterbrunnen Valley from the vertical cliff faces, some of which are as high as 400m."
+              },
+              {
+                "name": "Stechelberg",
+                "stop_id": "staubbach-falls--s9",
+                "detail": "The roar and rush of these unique natural spectacles accompanies hikers on this picturesque trail from Lauterbrunnen to Stechelberg."
+              },
+              {
+                "name": "Wengen",
+                "stop_id": "staubbach-falls--s10",
+                "detail": "Wengen – enjoy the idyllic and sun-drenched mountain village at the foot of the Jungfrau and marvel at the spectacular views over the Lauterbrunnen Valley."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Staubbach Falls before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +128,8 @@
             "url": "https://www.myswitzerland.com/en-ch/search/?q=Staubbach#Header"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:49:18.614810+00:00"
       }
     }
   }

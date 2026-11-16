@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Bavaria",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Allgäu Alps"
+        "Alpspitz",
+        "Nebelhorn",
+        "Hochgratbahn"
       ],
       "seo_title": "Allgäu Alps Visit Guide"
     },
     "travel": {
       "slug": "allgau-alps",
+      "overview_name": "Allgäu Alps",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Allgäu Alps before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://bavaria.travel/guide/allgaeu-bavarian-swabia/",
@@ -31,16 +34,72 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Allgäu Alps",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Allgäu Peaks and Mountain Railways",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Allgäu Alps",
-                "stop_id": "allgau-alps",
-                "detail": "The old towns of Memmingen and Mindelheim exude medieval flair. Marktoberdorf offers an attractive balance between nature and town life. Sonthofen, on the northern edge of the Allgäu Alps, is the heart and hub of the Upper Allgäu. Füssen, on Lake Forggensee, is overshadowed by Neuschwanstein Castle, the realisation of the medieval dream and spectacular hideaway of Ludwig II. Ottobeuren is famous for its remarkable work of art, the Baroque Benedictine Abbey."
+                "name": "Alpspitz",
+                "stop_id": "allgau-alps--s4",
+                "detail": "The higher mountain country is crossed by the “Himmelsstürmer”, which encompasses peaks such as the Alpspitz in Nesselwang, the Grünten near Burgberg and the Nebelhorn, or “foghorn”, near Oberstdorf."
+              },
+              {
+                "name": "Nebelhorn",
+                "stop_id": "allgau-alps--s6",
+                "detail": "Winter paradise on the Nebelhorn: off-piste in fresh snow and a night in the \"Igloo Lodge\" at 2,000 metres."
+              },
+              {
+                "name": "Hochgratbahn",
+                "stop_id": "allgau-alps--s7",
+                "detail": "And when you run out of steam, mountain railways such as the Hörnerbahn in Bolsterlang or the Hochgratbahn in Oberstaufen make the ascent much easier to manage."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Allgäu Alps before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Lakes, Waterfalls and Ancient Nature",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Balderschwang Yew",
+                "stop_id": "allgau-alps--s1",
+                "detail": "For example, at the foot of the Balderschwang Yew."
+              },
+              {
+                "name": "Lake Alpsee",
+                "stop_id": "allgau-alps--s2",
+                "detail": "The “Wasserläufer” traverses the foothills of the Alps, full of rivers, waterfalls and lakes, including the Lech, Lake Alpsee and the Scheidegger waterfall."
+              },
+              {
+                "name": "Nagelfluhkette Nature Park",
+                "stop_id": "allgau-alps--s11",
+                "detail": "We accompanied ranger Theresa in the Nagelfluhkette Nature Park to waterfalls, through snow-white dream landscapes and in search of Apollo butterflies"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Allgäu Alps before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Historic Castles and Abbeys",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Neuschwanstein Castle",
+                "stop_id": "allgau-alps--s8",
+                "detail": "Füssen, on Lake Forggensee, is overshadowed by Neuschwanstein Castle, the realisation of the medieval dream and spectacular hideaway of Ludwig II."
+              },
+              {
+                "name": "Princely Abbey",
+                "stop_id": "allgau-alps--s9",
+                "detail": "The 18th century Princely Abbey is a truly splendid building."
+              },
+              {
+                "name": "Benedictine Abbey",
+                "stop_id": "allgau-alps--s10",
+                "detail": "Ottobeuren is famous for its remarkable work of art, the Baroque Benedictine Abbey."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Allgäu Alps before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +139,8 @@
             "url": "https://bavaria.travel/guide/allgaeu-bavarian-swabia/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:44:28.059381+00:00"
       }
     }
   }

@@ -1,0 +1,84 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Fulpmes",
+      "quote": "Das Stubaital liegt höher als das Unterinntal und das Wipptal, Fulpmes im nördlichen Bereich auf 907 m ü. A., Volderau bereits auf 1130 m ü. A. und reicht bis zum Alpenhauptkamm.",
+      "english": "The Stubai Valley is higher than the Lower Inn Valley and the Wipp Valley, with Fulpmes in the northern area at 907 m above sea level, Volderau already at 1130 m above sea level, and extends to the main alpine ridge."
+    },
+    {
+      "id": "s2",
+      "name": "Volderau",
+      "quote": "Das Stubaital liegt höher als das Unterinntal und das Wipptal, Fulpmes im nördlichen Bereich auf 907 m ü. A., Volderau bereits auf 1130 m ü. A. und reicht bis zum Alpenhauptkamm.",
+      "english": "The Stubai Valley is higher than the Lower Inn Valley and the Wipp Valley, with Fulpmes in the northern area at 907 m above sea level, Volderau already at 1130 m above sea level, and extends to the main alpine ridge."
+    },
+    {
+      "id": "s3",
+      "name": "Schönberg",
+      "quote": "Das Stubaital ist das größte Seitental des Wipptals, es mündet bei Schönberg, rund 10 km südlich des Inntals, ein.",
+      "english": "The Stubai Valley is the largest side valley of the Wipp Valley; it opens out at Schönberg, about 10 km south of the Inn Valley."
+    },
+    {
+      "id": "s4",
+      "name": "Serles",
+      "quote": "Das Tal liegt in den Stubaier Alpen, wesentliche Gipfel sind die Serles (2717 m ü. A.), der Habicht (3277 m ü. A.), der Wilde Freiger (3418 m ü. A.), die Stubaier Wildspitze (3341 m ü. A.), die Ruderhofspitze (3473 m ü. A.) und das Zuckerhütl (3507 m ü. A.), der höchste Gipfel der Stubaier Alpen.",
+      "english": "The valley is located in the Stubai Alps; significant peaks are the Serles (2717 m), the Habicht (3277 m), the Wilde Freiger (3418 m), the Stubai Wildspitze (3341 m), the Ruderhofspitze (3473 m), and the Zuckerhütl (3507 m), the highest peak of the Stubai Alps."
+    },
+    {
+      "id": "s5",
+      "name": "Zuckerhütl",
+      "quote": "Im hinteren Abschnitt verengt sich das Tal zunehmend und findet mit dem Zuckerhütl einen markanten Abschluss.",
+      "english": "In the rear section, the valley increasingly narrows and finds a striking conclusion with the Zuckerhütl."
+    },
+    {
+      "id": "s6",
+      "name": "Neustift im Stubaital",
+      "quote": "Im Stubaital liegen fünf Gemeinden (Einwohnerzahlen Stand 1. Jänner 2026), die wirtschaftsstarken Hauptorte sind Fulpmes und Neustift im Stubaital, wobei Neustift das touristische Zentrum ist.",
+      "english": "There are five municipalities in the Stubai Valley (population figures as of January 1, 2026); the economically strong main towns are Fulpmes and Neustift im Stubaital, with Neustift being the tourist center."
+    },
+    {
+      "id": "s7",
+      "name": "Mutterbergalm",
+      "quote": "Auch die Brennerstraße (B 182) führt an den Taleingang; dort zweigt die Stubaitalstraße (B 183) ab, die das komplette Tal durchquert und erst an der Mutterbergalm auf 1748 m ü. A. endet.",
+      "english": "The Brenner Road (B 182) also leads to the entrance of the valley; there the Stubai Valley Road (B 183) branches off, which crosses the entire valley and only ends at the Mutterbergalm at 1748 m above sea level."
+    },
+    {
+      "id": "s8",
+      "name": "Stubaier Gletscher",
+      "quote": "Das Ruhegebiet Stubaier Alpen umfasst einen Großteil der Stubaier Alpen (ausgenommen das Schigebiet Stubaier Gletscher) und erstreckt sich östlich des Ötztales bis Ranalt im Stubaital.",
+      "english": "The Stubai Alps quiet area covers a large part of the Stubai Alps (excluding the Stubai Glacier ski area) and extends east of the Ötz Valley to Ranalt in the Stubai Valley."
+    },
+    {
+      "id": "s9",
+      "name": "Kalkkögel",
+      "quote": "Das Ruhegebiet Kalkkögel liegt im nördlichen Teil des Stubaitals und schließt südwestlich an das Ruhegebiet Stubaier Alpen an.",
+      "english": "The Kalkkögel quiet area is located in the northern part of the Stubai Valley and borders the Stubai Alps quiet area to the southwest."
+    }
+  ],
+  "days": [
+    {
+      "title": "Villages and Valley Entrance",
+      "stop_ids": [
+        "s3",
+        "s1",
+        "s6"
+      ]
+    },
+    {
+      "title": "Glaciers and High Peaks",
+      "stop_ids": [
+        "s5",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Northern Ridges and Mountain Faces",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s9"
+      ]
+    }
+  ]
+}

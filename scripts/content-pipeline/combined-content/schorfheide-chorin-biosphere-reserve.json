@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Brandenburg",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Schorfheide-Chorin Biosphere Reserve"
+        "monastery ruins",
+        "Engelsburg"
       ],
       "seo_title": "Schorfheide-Chorin Biosphere Reserve Visit Guide"
     },
     "travel": {
       "slug": "schorfheide-chorin-biosphere-reserve",
+      "overview_name": "Schorfheide-Chorin Biosphere Reserve",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Schorfheide-Chorin Biosphere Reserve before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.schorfheide-chorin-biosphaerenreservat.de/en/",
@@ -31,16 +33,62 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Schorfheide-Chorin Biosphere Reserve",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Historical Ruins and Meadows",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Schorfheide-Chorin Biosphere Reserve",
-                "stop_id": "schorfheide-chorin-biosphere-reserve",
-                "detail": "The Schorfheide-Chorin Biosphere Reserve north-east of Berlin features an impressive cultural landscape with about 240 lakes, thousands of moors and extensive meadows and fields. Generations of humans have left their mark on the diverse landscapes.\n\nHistorical settlements and buildings are silent witnesses of the history of Schorfheide. The traditional Chorin Summer of Music in the restored monastery ruins attracts hundreds of thousands of music enthusiasts each year.\n\nThis is one of worldwide 669 UNESCO model regions where, according to the UNESCO ‘Man and biosphere’ (MAB) programme, human presence and activities in harmony with nature are to contribute to protecting and sustainably further developing the historical cultural landscape.\n\nThe biosphere reserve was created in 1990 and is one of the largest protected areas in Germany with 129,161 hectare (ca. 319,156 acres). It is a paradise for hikers. Extensive and interconnected circular walks lead through forests, past lakes and moors and many lakes provide perfect bathing conditions with their crystal-clear water."
+                "name": "monastery ruins",
+                "stop_id": "schorfheide-chorin-biosphere-reserve--s1",
+                "detail": "The traditional Chorin Summer of Music in the restored monastery ruins attracts hundreds of thousands of music enthusiasts each year."
+              },
+              {
+                "name": "Engelsburg",
+                "stop_id": "schorfheide-chorin-biosphere-reserve--s5",
+                "detail": "These valuable meadows can also be found in the Schorfheide-Chorin Biosphere Reserve – for example at Engelsburg and Kanonenberg."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Schorfheide-Chorin Biosphere Reserve before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Industrial Heritage and Estates",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Breitenteichschen Mühle",
+                "stop_id": "schorfheide-chorin-biosphere-reserve--s3",
+                "detail": "Together with volunteers, the Brandenburg Nature Guard cleared bushes from the valuable dry grasslands at the Breitenteich Mill near Frauenhagen in the UNESCO Schorfheide-Chorin Biosphere Reserve."
+              },
+              {
+                "name": "historischen Ringofen Altglietzen",
+                "stop_id": "schorfheide-chorin-biosphere-reserve--s8",
+                "detail": "This time the path led to the historical Altglietzen ring kiln, where the consultation was followed by a guided tour through the history of the former brickworks."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Schorfheide-Chorin Biosphere Reserve before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Lakes and Ancient Forests",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Werbellinsee",
+                "stop_id": "schorfheide-chorin-biosphere-reserve--s4",
+                "detail": "During the ClimateChange education project, children on board the solar-powered research vessel Solar Explorer on Lake Werbellin explored the causes and consequences of global warming and developed their own solutions for climate protection together with regional climate mentors."
+              },
+              {
+                "name": "Grumsin",
+                "stop_id": "schorfheide-chorin-biosphere-reserve--s7",
+                "detail": "Specialists from science, nature conservation and politics addressed these and other questions on September 16 and 17 on the occasion of the 15th anniversary of the UNESCO World Natural Heritage 'Ancient Beech Forests' in Eberswalde and in the Grumsin world heritage sub-area."
+              },
+              {
+                "name": "Parsteinsee",
+                "stop_id": "schorfheide-chorin-biosphere-reserve--s9",
+                "detail": "NABU state chairman Björn Ellner led the appointment, during which experts at Lake Parstein and at the already dried-up Lake Wese explained the causes for the sinking water levels and possible approaches for action."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Schorfheide-Chorin Biosphere Reserve before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +128,8 @@
             "url": "https://www.schorfheide-chorin-biosphaerenreservat.de/en/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:50:53.292151+00:00"
       }
     }
   }

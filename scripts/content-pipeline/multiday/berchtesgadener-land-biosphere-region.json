@@ -1,0 +1,39 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Berchtesgadener Land",
+      "quote": "The Berchtesgadener Land in southeastern Upper Bavaria has been designated a biosphere reserve by the United Nations Educational, Scientific and Cultural Organization (UNESCO).",
+      "english": "The Berchtesgadener Land in southeastern Upper Bavaria has been designated a biosphere reserve by the United Nations Educational, Scientific and Cultural Organization (UNESCO)."
+    },
+    {
+      "id": "s2",
+      "name": "high mountains",
+      "quote": "Our biosphere extends from the rugged high mountains to the gentle foothills of the Alps – this is unique in Germany.",
+      "english": "Our biosphere extends from the rugged high mountains to the gentle foothills of the Alps – this is unique in Germany."
+    },
+    {
+      "id": "s3",
+      "name": "foothills of the Alps",
+      "quote": "Our biosphere extends from the rugged high mountains to the gentle foothills of the Alps – this is unique in Germany.",
+      "english": "Our biosphere extends from the rugged high mountains to the gentle foothills of the Alps – this is unique in Germany."
+    },
+    {
+      "id": "s4",
+      "name": "alpine national park",
+      "quote": "The core zone is protected by Germany’s only alpine national park.",
+      "english": "The core zone is protected by Germany’s only alpine national park."
+    }
+  ],
+  "days": [
+    {
+      "title": "Alpine Landscapes and National Park",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ]
+}

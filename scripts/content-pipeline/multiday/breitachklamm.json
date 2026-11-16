@@ -1,0 +1,46 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Breitachklamm",
+      "quote": "Erwandern Sie auf bestens begehbaren und gesicherten Pfaden das faszinierende Naturerlebnis Breitachklamm und erleben Sie die Kraft des Wassers.",
+      "english": "Hike the fascinating Breitachklamm nature experience on well-accessible and secured paths and experience the power of the water."
+    },
+    {
+      "id": "s2",
+      "name": "Tiefenbach",
+      "quote": "Sie zählt zu den imposantesten Geotopen Bayerns und gehört zudem zu den beliebtesten Attraktionen der Region und erstreckt sich vom Oberstdorfer Ortsteil Tiefenbach bis ins benachbarte Kleinwalsertal.",
+      "english": "It is one of the most impressive geotopes in Bavaria and is also one of the most popular attractions in the region, extending from the Oberstdorf district of Tiefenbach to the neighboring Kleinwalsertal."
+    },
+    {
+      "id": "s3",
+      "name": "Kleinwalsertal",
+      "quote": "Sie zählt zu den imposantesten Geotopen Bayerns und gehört zudem zu den beliebtesten Attraktionen der Region und erstreckt sich vom Oberstdorfer Ortsteil Tiefenbach bis ins benachbarte Kleinwalsertal.",
+      "english": "It is one of the most impressive geotopes in Bavaria and is also one of the most popular attractions in the region, extending from the Oberstdorf district of Tiefenbach to the neighboring Kleinwalsertal."
+    },
+    {
+      "id": "s4",
+      "name": "Walserschanz",
+      "quote": "Am historischen Grenzort Walserschanz erfolgt derzeit die Sanierung des denkmalgeschützten Gebäudes mit der Zielsetzung der Eröffnung der Klamm-Erlebniswelten: eine interaktive Ausstellung .",
+      "english": "At the historic border location Walserschanz, the renovation of the listed building is currently taking place with the goal of opening the Gorge Discovery Worlds: an interactive exhibition."
+    },
+    {
+      "id": "s5",
+      "name": "Klamm-Erlebniswelten",
+      "quote": "Am historischen Grenzort Walserschanz erfolgt derzeit die Sanierung des denkmalgeschützten Gebäudes mit der Zielsetzung der Eröffnung der Klamm-Erlebniswelten: eine interaktive Ausstellung .",
+      "english": "At the historic border location Walserschanz, the renovation of the listed building is currently taking place with the goal of opening the Gorge Discovery Worlds: an interactive exhibition."
+    }
+  ],
+  "days": [
+    {
+      "title": "Gorge Exploration and Discovery",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    }
+  ]
+}

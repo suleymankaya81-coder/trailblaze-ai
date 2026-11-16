@@ -1,0 +1,91 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Munot Fortress",
+      "quote": "One particular highlight is the Munot Fortress.",
+      "english": "One particular highlight is the Munot Fortress."
+    },
+    {
+      "id": "s2",
+      "name": "Rhine Falls",
+      "quote": "The Rhine Falls are around ten minutes away from Schaffhausen.",
+      "english": "The Rhine Falls are around ten minutes away from Schaffhausen."
+    },
+    {
+      "id": "s3",
+      "name": "Haus zum Ritter",
+      "quote": "Marvel at historic buildings such as the Haus zum Ritter and make a stop at Herrenacker: the largest square in the old town is surrounded by restaurants and cafés, making it an ideal place to take a break.",
+      "english": "Marvel at historic buildings such as the Haus zum Ritter and make a stop at Herrenacker: the largest square in the old town is surrounded by restaurants and cafés, making it an ideal place to take a break."
+    },
+    {
+      "id": "s4",
+      "name": "Museum zu Allerheiligen",
+      "quote": "From here, visit the Museum zu Allerheiligen.",
+      "english": "From here, visit the Museum zu Allerheiligen."
+    },
+    {
+      "id": "s5",
+      "name": "Fronwagplatz",
+      "quote": "Or continue to roam through the city’s alleyways and take a break at one of the fountains on Fronwagplatz.",
+      "english": "Or continue to roam through the city’s alleyways and take a break at one of the fountains on Fronwagplatz."
+    },
+    {
+      "id": "s6",
+      "name": "Lindli Promenade",
+      "quote": "Bring the day to a close with a stroll along the Lindli Promenade, a picturesque path right by the River Rhine.",
+      "english": "Bring the day to a close with a stroll along the Lindli Promenade, a picturesque path right by the River Rhine."
+    },
+    {
+      "id": "s7",
+      "name": "Stein am Rhein",
+      "quote": "The small town of Stein am Rhein is also well worth visiting.",
+      "english": "The small town of Stein am Rhein is also well worth visiting."
+    },
+    {
+      "id": "s8",
+      "name": "Thurauen Nature Centre",
+      "quote": "The Thurauen Nature Centre is a popular excursion destination.",
+      "english": "The Thurauen Nature Centre is a popular excursion destination."
+    },
+    {
+      "id": "s9",
+      "name": "Hallau",
+      "quote": "In villages such as Hallau or Wilchingen, you’ll get an insight into the cultivation of Pinot Noir.",
+      "english": "In villages such as Hallau or Wilchingen, you’ll get an insight into the cultivation of Pinot Noir."
+    },
+    {
+      "id": "s10",
+      "name": "Blauburgunderland Panoramaweg",
+      "quote": "On the trail of wine",
+      "english": "On the trail of wine"
+    }
+  ],
+  "days": [
+    {
+      "title": "Old Town Landmarks",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Rhine Views and Nature",
+      "stop_ids": [
+        "s2",
+        "s6",
+        "s8"
+      ]
+    },
+    {
+      "title": "Wine Country and Historic Towns",
+      "stop_ids": [
+        "s7",
+        "s9",
+        "s10"
+      ]
+    }
+  ]
+}

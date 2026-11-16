@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Graubunden",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Swiss National Park"
+        "Seenplatte von Macun",
+        "Chamanna Cluozza",
+        "Alp la Schera"
       ],
       "seo_title": "Swiss National Park Visit Guide"
     },
     "travel": {
       "slug": "swiss-national-park",
+      "overview_name": "Swiss National Park",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Swiss National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.nationalpark.ch/en/",
@@ -31,16 +34,44 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Swiss National Park",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Mountains and Mountain Huts",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Swiss National Park",
-                "stop_id": "swiss-national-park",
-                "detail": "Schweizerischer NationalparkThe SNP in the Engadine/Val Müstair is the largest wilderness area in Switzerland and its only national park.51'272 Followers\n\nThe Swiss National Park encompasses a particularly impressive piece of Alpine landscape with a wealth of flora and fauna. Within its boundaries nature is left to develop freely. Founded in 1914, it is the oldest national park in the Alps and central Europe. Together with the Regional Nature Park Biosfera Val Müstair, the Swiss National Park now forms a UNESCO Biosphere Reserve.\n\nIn the Swiss National Park, countless animal and plant species find an undisturbed refuge. The influence of natural changes is particularly visible in this landscape dominated by dolomite and large temperature differences. Find out more about nature in the National Park.\n\nWould you like to experience the extraordinary wealth of animals and plants in the National Park? Numerous hiking trails with varying degrees of difficulty allow unique nature observations. The National Park Centre in Zernez is the perfect place to get ready for your visit. Welcome to the largest wilderness area in Switzerland!"
+                "name": "Seenplatte von Macun",
+                "stop_id": "swiss-national-park--s1",
+                "detail": "On the Macun lake plateau there are many alpine waters and exciting geomorphological formations such as rock glaciers."
+              },
+              {
+                "name": "Chamanna Cluozza",
+                "stop_id": "swiss-national-park--s2",
+                "detail": "The Cluozza hut in the middle of the larch forest"
+              },
+              {
+                "name": "Alp la Schera",
+                "stop_id": "swiss-national-park--s3",
+                "detail": "View from Alp la Schera towards Val da l'Acqua"
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Swiss National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Museums and Valleys",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Val Müstair",
+                "stop_id": "swiss-national-park--s7",
+                "detail": "A master's thesis has now established a clear upward trend for snake species in the Val Müstair."
+              },
+              {
+                "name": "Spöl",
+                "stop_id": "swiss-national-park--s8",
+                "detail": "At the end of October, the work to remediate the PCB contamination in the Spöl in the Swiss National Park was completed."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Swiss National Park before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +111,8 @@
             "url": "https://www.nationalpark.ch/en/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:49:25.495899+00:00"
       }
     }
   }

@@ -1,0 +1,72 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Schilthorn",
+      "quote": "Das Schilthorn ist ein bekannter und vielbesuchter Schweizer Aussichtsgipfel in den Berner Alpen im Kanton Bern auf 2970 m ü. M. Höhe.",
+      "english": "The Schilthorn is a well-known and much-visited Swiss observation peak in the Bernese Alps in the Canton of Bern at 2970 m above sea level."
+    },
+    {
+      "id": "s2",
+      "name": "Mürren",
+      "quote": "Es ist von Stechelberg und Mürren durch eine Luftseilbahn erschlossen.",
+      "english": "It is accessible from Stechelberg and Mürren by an aerial cableway."
+    },
+    {
+      "id": "s3",
+      "name": "Piz Gloria",
+      "quote": "Auf dem Gipfel steht das Drehrestaurant Piz Gloria.",
+      "english": "The Piz Gloria revolving restaurant is located on the summit."
+    },
+    {
+      "id": "s4",
+      "name": "Gimmelwald",
+      "quote": "Eine Besonderheit bildet die Station in Gimmelwald.",
+      "english": "A special feature is the station in Gimmelwald."
+    },
+    {
+      "id": "s5",
+      "name": "Birg",
+      "quote": "Die steilste Piste im Gebiet (Piste 9) führt von Birg ins Engetal und hat eine Steigung von 88 %, womit sie die steilste Piste in der gesamten Jungfrau-Region ist.",
+      "english": "The steepest slope in the area (Slope 9) leads from Birg into the Engetal and has a gradient of 88%, making it the steepest slope in the entire Jungfrau region."
+    },
+    {
+      "id": "s6",
+      "name": "Engetal",
+      "quote": "Lediglich eine schwarze Piste (Piste 10) führt vom Schilthorn mit 75 % Neigung ins Engetal.",
+      "english": "Only one black slope (Slope 10) leads from the Schilthorn with a 75% incline into the Engetal."
+    },
+    {
+      "id": "s7",
+      "name": "Saus Tal",
+      "quote": "Sehr beliebt ist die Abfahrt \"Nordhang\" und \"Totenkopf\" sowie die Abfahrt durch das malerische \"Saus Tal\" nach Isenfluh.",
+      "english": "The 'Nordhang' and 'Totenkopf' descents are very popular, as is the descent through the picturesque 'Saus Tal' to Isenfluh."
+    },
+    {
+      "id": "s8",
+      "name": "Lauterbrunnen",
+      "quote": "Die Strecke führt von knapp unterhalb des Schilthorns über 14,9 Kilometer und 1990 Höhenmeter bis ins Tal nach Lauterbrunnen.",
+      "english": "The route leads from just below the Schilthorn over 14.9 kilometers and 1990 meters of altitude down into the valley to Lauterbrunnen."
+    }
+  ],
+  "days": [
+    {
+      "title": "Schilthorn Summit and High Alpine Slopes",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Mountain Villages and Valley Descents",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s7",
+        "s8"
+      ]
+    }
+  ]
+}

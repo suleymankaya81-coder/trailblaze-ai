@@ -1,0 +1,69 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lake Tegernsee",
+      "quote": "On a sunny Saturday morning, after the people of Munich have finished their second latte, got into the car and joined the caravan heading south, addicted to the mountains, it can get crowded a little later around Lake Tegernsee and Lake Schliersee."
+    },
+    {
+      "id": "s2",
+      "name": "Lake Schliersee",
+      "quote": "View from the Jägerkamp onto Lake Schliersee and the Pre-Alps."
+    },
+    {
+      "id": "s3",
+      "name": "Wörth Island",
+      "quote": "Lake Schliersee with Wörth Island."
+    },
+    {
+      "id": "s4",
+      "name": "Lake Spitzingsee",
+      "quote": "In the early morning, the banks of fog quietly push their way through the powdered spruces around the snow-covered Lake Spitzingsee."
+    },
+    {
+      "id": "s5",
+      "name": "Spitzingsattel",
+      "quote": "They glide between the steep flanks of Mounts Brecherspitze and Jägerkamp over the Spitzingsattel down into the Alpine foothills."
+    },
+    {
+      "id": "s6",
+      "name": "Mount Brecherspitze",
+      "quote": "They glide between the steep flanks of Mounts Brecherspitze and Jägerkamp over the Spitzingsattel down into the Alpine foothills."
+    },
+    {
+      "id": "s7",
+      "name": "Jägerkamp",
+      "quote": "Antonia Rüede-Passul is assigned to the Jägerkamp."
+    },
+    {
+      "id": "s8",
+      "name": "Taubenstein",
+      "quote": "From my point of view, sanctioning should never be the first step,” says Thorsten Schär, whom I meet a little later at the valley station of the Taubenstein, the starting point of the tours on the Jägerkamp."
+    }
+  ],
+  "days": [
+    {
+      "title": "Tegernsee and Schliersee Basins",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Spitzingsee Alpine Highlights",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s8"
+      ]
+    },
+    {
+      "title": "High Summit Peaks",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}

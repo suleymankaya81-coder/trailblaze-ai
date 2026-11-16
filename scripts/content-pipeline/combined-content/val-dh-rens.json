@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Valais",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Val d'Hérens"
+        "Evolène - A sports via ferrata",
+        "Centre de géologie et glaciologie",
+        "Arolla Glacier Trail"
       ],
       "seo_title": "Val d'Hérens Visit Guide"
     },
     "travel": {
       "slug": "val-dh-rens",
+      "overview_name": "Val d'Hérens",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Val d'Hérens before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.myswitzerland.com/en-gb/destinations/val-dherens/",
@@ -31,16 +34,49 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Val d'Hérens",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Active Adventures in Evolène and Arolla",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Val d'Hérens",
-                "stop_id": "val-dh-rens",
-                "detail": "The gate to Val d'Hérens (Eringer Valley) is formed by the famous earth pyramids of Euseigne, steep stone towers crowned with rock boulders."
+                "name": "Evolène - A sports via ferrata",
+                "stop_id": "val-dh-rens--s4",
+                "detail": "Learn more about: Evolène Evolène - A sports via ferrata"
+              },
+              {
+                "name": "Centre de géologie et glaciologie",
+                "stop_id": "val-dh-rens--s5",
+                "detail": "Learn more about: Les Haudères Centre de géologie et glaciologie"
+              },
+              {
+                "name": "Arolla Glacier Trail",
+                "stop_id": "val-dh-rens--s6",
+                "detail": "Learn more about: Arolla Arolla Glacier Trail"
+              },
+              {
+                "name": "Dent Blanche",
+                "stop_id": "val-dh-rens--s9",
+                "detail": "Framed by a superb peak crown, the mighty Dent Blanche towers over it in all its glittering glory."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Val d'Hérens before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Forest Trails and Waterways",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "The \"suonen\" of Tsa Crêta",
+                "stop_id": "val-dh-rens--s7",
+                "detail": "Learn more about: Mase The \"suonen\" of Tsa Crêta"
+              },
+              {
+                "name": "The Forest of the Barolins",
+                "stop_id": "val-dh-rens--s8",
+                "detail": "Learn more about: Nax / Mont-Nobl The Forest of the Barolins"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Val d'Hérens before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +116,8 @@
             "url": "https://www.myswitzerland.com/en-gb/destinations/val-dherens/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:49:41.763643+00:00"
       }
     }
   }

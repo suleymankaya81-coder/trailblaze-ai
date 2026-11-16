@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Bavaria",
@@ -10,20 +10,23 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Lake Chiemsee"
+        "Grabenstätter Moos",
+        "Hirschau Bay",
+        "wooden observation tower in the Hirschauer Bucht"
       ],
       "seo_title": "Lake Chiemsee Visit Guide"
     },
     "travel": {
       "slug": "lake-chiemsee",
+      "overview_name": "Lake Chiemsee",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Lake Chiemsee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://bavaria.travel/stories/birding-lake-chiemsee/",
@@ -31,16 +34,54 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Lake Chiemsee",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "East Bank and Delta Wetlands",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Lake Chiemsee",
-                "stop_id": "lake-chiemsee",
-                "detail": "On Lake Chiemsee, birds live an excellent life. This also got about with species that were not present up until a few years ago. The observation stations offer great sightings, especially during the quiet winter time. Text and photos: Dietmar Denger"
+                "name": "Grabenstätter Moos",
+                "stop_id": "lake-chiemsee--s1",
+                "detail": "In the early morning, the fog in the Grabenstätter Moos has almost absorbed the reeds and the gnarled willows."
+              },
+              {
+                "name": "Hirschau Bay",
+                "stop_id": "lake-chiemsee--s2",
+                "detail": "The Hirschau Bay was quite a bustling swimming area in the 1970s."
+              },
+              {
+                "name": "wooden observation tower in the Hirschauer Bucht",
+                "stop_id": "lake-chiemsee--s3",
+                "detail": "In preparation for a multimedia lecture, he stands on the wooden observation tower in the Hirschauer Bucht this morning and holds the fluffy microphone into the fog."
+              },
+              {
+                "name": "Achen Delta",
+                "stop_id": "lake-chiemsee--s4",
+                "detail": "The lake shore is lined with thick tree trunks, which the Tyrolean Achen brought with them from the mountains when the last snow melted and piled up like Mikado sticks here in the Achen Delta."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Chiemsee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "West and North Shore Exploration",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "observation tower in Irschener Winkel",
+                "stop_id": "lake-chiemsee--s5",
+                "detail": "Bird watching from the observation tower in Irschener Winkel"
+              },
+              {
+                "name": "Irschener Bay",
+                "stop_id": "lake-chiemsee--s6",
+                "detail": "At the Irschener Bay between Bernau and Prien, where this morning swarms of coots cavort and cormorants crouch on dead wood to dry their feathers, the Chile flamingo looks a bit lost."
+              },
+              {
+                "name": "observation platform Chieming",
+                "stop_id": "lake-chiemsee--s8",
+                "detail": "View from the observation platform Chieming"
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Lake Chiemsee before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +121,8 @@
             "url": "https://bavaria.travel/stories/birding-lake-chiemsee/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:46:50.110012+00:00"
       }
     }
   }

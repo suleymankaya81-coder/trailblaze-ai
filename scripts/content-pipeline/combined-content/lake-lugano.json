@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Ticino",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "3 visit days",
+      "recommended_duration": "3 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Lake Lugano"
+        "Piazza della Riforma",
+        "Via Nassa"
       ],
       "seo_title": "Lake Lugano Visit Guide"
     },
     "travel": {
       "slug": "lake-lugano",
+      "overview_name": "Lake Lugano",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Lake Lugano before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.myswitzerland.com/en-ch/destinations/lugano/",
@@ -31,16 +33,57 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Lake Lugano",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Lugano City Center and Parks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Lake Lugano",
-                "stop_id": "lake-lugano",
-                "detail": "The Ticinese city of Lugano is sunny, Mediterranean and really very pleasant. With its historic city centre, the Piazza della Riforma with its cafés and bistros, Lake Lugano, and the surrounding mountains such as Monte Brè or Monte San Salvatore: Lugano is sure to inspire you."
+                "name": "Piazza della Riforma",
+                "stop_id": "lake-lugano--s1",
+                "detail": "Enjoy the hustle and bustle alongside an espresso on the Piazza della Riforma."
+              },
+              {
+                "name": "Via Nassa",
+                "stop_id": "lake-lugano--s3",
+                "detail": "You can feel this as you stroll through the old city centre and the Via Nassa with its 270-metre-long arcades or the Via Nassa."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Lugano before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Lakeside Villages and Local Peaks",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Monte Brè",
+                "stop_id": "lake-lugano--s5",
+                "detail": "From the upper station of Monte Brè, it is well worth taking a walk to the artists’ village of Brè."
+              },
+              {
+                "name": "Swissminiatur",
+                "stop_id": "lake-lugano--s7",
+                "detail": "In Melide, you will find Swissminiatur, a miniature museum of Switzerland on a smaller scale."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Lake Lugano before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Culture and Regional Hiking",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Hermann Hesse Museum",
+                "stop_id": "lake-lugano--s8",
+                "detail": "Speaking of artists: in Montagnola, around 20 minutes from Lugano, is the Hermann Hesse Museum."
+              },
+              {
+                "name": "Monte Tamaro",
+                "stop_id": "lake-lugano--s10",
+                "detail": "And another hiking highlight is Monte Tamaro."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Lake Lugano before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +123,8 @@
             "url": "https://www.myswitzerland.com/en-ch/destinations/lugano/"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:46:53.427786+00:00"
       }
     }
   }

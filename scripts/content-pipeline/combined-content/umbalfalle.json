@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "wikipedia-overview-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Tyrol",
@@ -10,15 +10,16 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Umbalfälle"
+        "Virgental",
+        "Pebellalm"
       ],
       "seo_title": "Umbalfälle Visit Guide"
     },
@@ -32,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Umbalfälle",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Arrival and Valley Exploration",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "Virgental",
+                "stop_id": "umbalfalle--s2",
+                "detail": "At the end of the Virgen Valley, the road continues from Hinterbichl to Ströden."
+              },
+              {
+                "name": "Pebellalm",
+                "stop_id": "umbalfalle--s3",
+                "detail": "In just under half an hour, one can reach the two snack stations Pebellalm and Islitzeralm on foot via a developed farm track; in slightly less time also by horse-drawn carriage."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Umbalfälle before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Waterfalls and Nature Trail",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
                 "name": "Umbalfälle",
-                "stop_id": "umbalfalle",
-                "detail": "The Umbal Falls are waterfalls of the upper reaches of the Isel (there also called Umbalbach) in the Umbal Valley west of Hinterbichl in the Hohe Tauern National Park in Austria. The falls were declared a natural monument in 1991."
+                "stop_id": "umbalfalle--s1",
+                "detail": "The Umbal Waterfalls are waterfalls of the upper reaches of the Isel (still called Umbalbach there) in the Umbal Valley west of Hinterbichl in the Hohe Tauern National Park in Austria."
+              },
+              {
+                "name": "Wasserschaupfad",
+                "stop_id": "umbalfalle--s5",
+                "detail": "At these alpine pastures, the water nature trail begins along the Umbal Waterfalls with several viewing platforms and explanatory display boards."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Umbalfälle before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -79,9 +103,14 @@
           {
             "label": "Wikipedia · CC BY-SA",
             "url": "https://de.wikipedia.org/wiki/Umbalf%C3%A4lle"
+          },
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://de.wikipedia.org/wiki/Umbalf%C3%A4lle"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:50:31.516404+00:00"
       }
     }
   }

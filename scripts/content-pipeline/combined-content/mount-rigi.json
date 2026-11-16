@@ -1,6 +1,6 @@
 {
   "status": "validated",
-  "method": "official-excerpts-no-model",
+  "method": "multiday-verbatim-quotes",
   "bundle": {
     "summary": {
       "region": "Lucerne",
@@ -10,20 +10,22 @@
       "scenic_score": null,
       "camping_score": null,
       "avg_daily_budget": null,
-      "trip_duration_days": "1 visit day",
-      "recommended_duration": "1 visit day",
+      "trip_duration_days": "2 visit days",
+      "recommended_duration": "2 visit days",
       "permit_level": "moderate",
       "aliases": [],
       "gateway_cities": [],
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Mount Rigi"
+        "Lake Lucerne",
+        "Küssnacht"
       ],
       "seo_title": "Mount Rigi Visit Guide"
     },
     "travel": {
       "slug": "mount-rigi",
+      "overview_name": "Mount Rigi",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Mount Rigi before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
       "source_url": "https://www.luzern.com/en/poi/rigi",
@@ -31,16 +33,39 @@
         "version": 1,
         "days": [
           {
-            "title": "Visit highlights: Mount Rigi",
-            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "title": "Massif Access and Lake Views",
+            "start": "Suggested: 9 AM start, after checking official access hours",
             "stops": [
               {
-                "name": "Mount Rigi",
-                "stop_id": "mount-rigi",
+                "name": "Lake Lucerne",
+                "stop_id": "mount-rigi--s1",
+                "detail": "The ride and views of Lake Lucerne are stunning."
+              },
+              {
+                "name": "Küssnacht",
+                "stop_id": "mount-rigi--s2",
+                "detail": "A total of nine different cable cars provide access to the imposing Rigi massif, which stretches from Küssnacht in the north to Brunnen in the south."
+              }
+            ],
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
+            "note": "Check the official visitor information for Mount Rigi before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          },
+          {
+            "title": "Summit Caves and Alpine Traditions",
+            "start": "Suggested: 9 AM start, after checking official access hours",
+            "stops": [
+              {
+                "name": "alpine cheese dairy",
+                "stop_id": "mount-rigi--s4",
+                "detail": "Test your skills at mini golf or look over the cheesemaker's shoulder in the alpine cheese dairy."
+              },
+              {
+                "name": "Rigi Event Tent",
+                "stop_id": "mount-rigi--s5",
                 "detail": "From the exclusive top location in the multifunctional Rigi Event Tent to the 100,000-year-old, unique Gruebisbalm cave, Mount Rigi offers the perfect venue for an event close to nature."
               }
             ],
-            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "driving": "Allow time between these sights; local travel times are not verified and conditions vary.",
             "note": "Check the official visitor information for Mount Rigi before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
           }
         ],
@@ -80,7 +105,8 @@
             "url": "https://www.luzern.com/en/poi/rigi"
           }
         ],
-        "markers": []
+        "markers": [],
+        "reviewedAt": "2026-11-16T13:47:27.365656+00:00"
       }
     }
   }

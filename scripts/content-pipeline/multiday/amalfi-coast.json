@@ -1,0 +1,105 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Amalfi",
+      "quote": "Prende il nome dalla città di Amalfi, suo nucleo geografico e storico.",
+      "english": "It takes its name from the city of Amalfi, its geographic and historical core."
+    },
+    {
+      "id": "s2",
+      "name": "Duomo",
+      "quote": "Amalfi con il Duomo e il chiostro del Paradiso;",
+      "english": "Amalfi with the Cathedral and the Cloister of Paradise;"
+    },
+    {
+      "id": "s3",
+      "name": "chiostro del Paradiso",
+      "quote": "Amalfi con il Duomo e il chiostro del Paradiso;",
+      "english": "Amalfi with the Cathedral and the Cloister of Paradise;"
+    },
+    {
+      "id": "s4",
+      "name": "Minori",
+      "quote": "In tempi antichi il territorio della Costa costituì parte dell'Impero romano, come testimoniato dalla presenza di numerose ville patrizie, la più estesa delle quali è situata a Minori.",
+      "english": "In ancient times the territory of the Coast formed part of the Roman Empire, as evidenced by the presence of numerous patrician villas, the most extensive of which is located in Minori."
+    },
+    {
+      "id": "s5",
+      "name": "Positano",
+      "quote": "Dalla fine dell'Ottocento in poi la Costiera ha avuto un grande sviluppo turistico di livello internazionale, con Positano considerata come una delle principali mete da visitare.",
+      "english": "From the end of the nineteenth century onwards, the Coast had a great international tourism development, with Positano considered one of the main destinations to visit."
+    },
+    {
+      "id": "s6",
+      "name": "Li Galli",
+      "quote": "Tra le numerosissime celebrità che negli anni hanno scelto la Costa d'Amalfi quale oasi di soggiorno sono menzionabili... il ballerino Rudol'f Nureev (che negli ultimi anni di vita si ritirò nella sua villa di Li Galli).",
+      "english": "Among the numerous celebrities who over the years have chosen the Amalfi Coast as an oasis for their stay, mention can be made of... the dancer Rudolf Nureyev (who in the last years of his life retired to his villa of Li Galli)."
+    },
+    {
+      "id": "s7",
+      "name": "Cetara",
+      "quote": "Tra le specialità costierane sono menzionabili anche le alici e la colatura prodotta a Cetara, nonché le ceramiche realizzate e dipinte a mano a Vietri sul Mare.",
+      "english": "Among the coastal specialties, the anchovies and the 'colatura' produced in Cetara can also be mentioned, as well as the ceramics made and hand-painted in Vietri sul Mare."
+    },
+    {
+      "id": "s8",
+      "name": "Vietri sul Mare",
+      "quote": "Vietri sul Mare nota in tutto il mondo per l'antica tradizione di lavorazione della ceramica e la sua frazione Albori, che fa parte del club I borghi più belli d'Italia.",
+      "english": "Vietri sul Mare known throughout the world for the ancient tradition of ceramic processing and its hamlet Albori, which is part of the club of the most beautiful villages in Italy."
+    },
+    {
+      "id": "s9",
+      "name": "Atrani",
+      "quote": "Atrani con le chiese di San Salvatore del Birecto e di Santa Maria Maddalena Penitente;",
+      "english": "Atrani with the churches of San Salvatore del Birecto and Santa Maria Maddalena Penitente;"
+    },
+    {
+      "id": "s10",
+      "name": "Grotta dello Smeraldo",
+      "quote": "Conca dei Marini; il paese della sfogliatella, con la sua Grotta dello Smeraldo e la Chiesa Patronale di San Giovanni Battista;",
+      "english": "Conca dei Marini; the village of the sfogliatella, with its Emerald Grotto and the Patronal Church of San Giovanni Battista;"
+    },
+    {
+      "id": "s11",
+      "name": "Castello di San Nicola de Thoro Plano",
+      "quote": "Maiori con la Collegiata di Santa Maria a Mare e il Castello di San Nicola de Thoro Plano;",
+      "english": "Maiori with the Collegiate Church of Santa Maria a Mare and the Castle of San Nicola de Thoro Plano;"
+    },
+    {
+      "id": "s12",
+      "name": "Ravello",
+      "quote": "Ravello la città della musica con il suo Duomo e le prestigiose Villa Cimbrone e Villa Rufolo, nonché l'Auditorium Oscar Niemeyer;",
+      "english": "Ravello the city of music with its Cathedral and the prestigious Villa Cimbrone and Villa Rufolo, as well as the Oscar Niemeyer Auditorium;"
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Maritime Traditions and Amalfi",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s9"
+      ]
+    },
+    {
+      "title": "Western Views and Coastal Villas",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s10",
+        "s12"
+      ]
+    },
+    {
+      "title": "Eastern Ceramics and Roman Ruins",
+      "stop_ids": [
+        "s4",
+        "s7",
+        "s8",
+        "s11"
+      ]
+    }
+  ]
+}

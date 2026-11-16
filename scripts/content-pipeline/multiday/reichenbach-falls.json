@@ -1,0 +1,65 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Reichenbach Falls Funicular",
+      "quote": "Take the nostalgic Reichenbach Falls cable car to the 120-meter-high waterfall near Meiringen and walk in the footsteps of Sherlock Holmes.",
+      "english": "Take the nostalgic Reichenbach Falls cable car to the 120-meter-high waterfall near Meiringen and walk in the footsteps of Sherlock Holmes."
+    },
+    {
+      "id": "s2",
+      "name": "Sherlock Holmes Museum",
+      "quote": "The Sherlock Holmes Museum is one of the highlights, besides the bronze statue and the roaring Reichenbach Falls with the fateful battle site.",
+      "english": "The Sherlock Holmes Museum is one of the highlights, besides the bronze statue and the roaring Reichenbach Falls with the fateful battle site."
+    },
+    {
+      "id": "s3",
+      "name": "Aare Gorge",
+      "quote": "Discover Meiringen-Hasliberg in the Bernese Oberland: The Aare Gorge, Reichenbach Falls, family-friendly ski area and magnificent hiking trails await you.",
+      "english": "Discover Meiringen-Hasliberg in the Bernese Oberland: The Aare Gorge, Reichenbach Falls, family-friendly ski area and magnificent hiking trails await you."
+    },
+    {
+      "id": "s4",
+      "name": "Reichenbachtal",
+      "quote": "Easy, long ascent through Reichenbachtal up to Grosse Scheidegg at the foot of the mighty Wetterhorn cliffs.",
+      "english": "Easy, long ascent through Reichenbachtal up to Grosse Scheidegg at the foot of the mighty Wetterhorn cliffs."
+    },
+    {
+      "id": "s5",
+      "name": "Rosenlaui Hotel",
+      "quote": "Hike past the nostalgic Rosenlaui Hotel and glacier gorge, enchanted by the Wetterhorn.",
+      "english": "Hike past the nostalgic Rosenlaui Hotel and glacier gorge, enchanted by the Wetterhorn."
+    },
+    {
+      "id": "s6",
+      "name": "Gasthaus Zwirgi",
+      "quote": "Zwirgi Inn Gateway to the mystical, rustic Reichenbach valley.",
+      "english": "Zwirgi Inn Gateway to the mystical, rustic Reichenbach valley."
+    },
+    {
+      "id": "s7",
+      "name": "Rosenlauischlucht (gorge)",
+      "quote": "Along the Lütschine up to Grindelwald, the glacier village at the foot of the majestic Eiger, Mönch & Jungfrau peaks, on over Grosse Scheidegg, past Rosenlauischlucht (gorge) and the Reichenbach Falls, where Sherlock Holmes fell to his death, to Meiringen.",
+      "english": "Along the Lütschine up to Grindelwald, the glacier village at the foot of the majestic Eiger, Mönch & Jungfrau peaks, on over Grosse Scheidegg, past Rosenlauischlucht (gorge) and the Reichenbach Falls, where Sherlock Holmes fell to his death, to Meiringen."
+    }
+  ],
+  "days": [
+    {
+      "title": "Meiringen Holmes History and Aare Gorge",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Exploration of Reichenbachtal and Rosenlaui",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ]
+}
