@@ -211,6 +211,7 @@
 - [x] Run regressions and guarded readback: 288 application / 37 Python tests; 11 England + New Forest saved, 34 England held with per-place reasons.
 
 ## November 16 DACH chunks
+- [ ] Complete Germany media/coordinate holds using exact-place anchors; translate retained German official excerpts locally with original evidence preserved, then publish valid remaining bundles. Wikipedia stays background only.
 - [x] Germany English discovery and publication batch: 157 checked, 24 new English packets, 18 new places published; 133 discovery holds, six coordinate holds and one photo hold remain. Country-matched Wikipedia is background only. Lake Chiemsee HTTP 200/heading/Expedia/Vrbo verified; 13 Python tests and build pass. Balance snapshots 162.72→161.62, not final task attribution.
 - [x] Expand Austria English discovery through cached national/regional sitemaps: 27 approved packets, 15 new destinations published, 12 held for coordinates; 50 source-discovery holds retained. No model calls, translation service or subagents. Lake Attersee HTTP 200, heading and Expedia/Vrbo checked; 10 Python tests and preview build pass. Workspace balance snapshots 165.82→164.22, not final task attribution.
 - [x] Chunk 1 Switzerland: 25 more published; held for coordinates (8), photos (5), quote check (1), no official page found (~25).

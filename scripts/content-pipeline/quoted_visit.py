@@ -9,14 +9,15 @@ def clean(value):
 def quoted_bundle(row, packet):
     evidence = compact_packet(packet)
     sources = evidence['sources']
-    excerpts = [clean(s['text']) for s in sources]
+    translations = {s['url']: s['display_translation'] for s in packet['sources'] if s.get('display_translation')}
+    excerpts = [clean(translations.get(s['url'], s['text'])) for s in sources]
     stops = evidence['approved_stops'][:3]
     url = stops[0]['source_url']
     note = ('Check the official visitor information for ' + row['name'] + ' before departure. '
             'Entry, activity permissions and overnight accommodation are separate checks; '
             'the source excerpts below do not establish availability for your dates.')
     gap = lambda topic: f'The reviewed sources do not establish {topic} for {row["name"]}. Check the official visitor information before departure.'
-    detail = {s['url']: clean(s['text']) for s in sources}
+    detail = {s['url']: clean(translations.get(s['url'], s['text'])) for s in sources}
     plan = {'version': 1, 'days': [{'title': 'Visit highlights: ' + row['name'],
         'start': 'Suggested: choose a daytime visit after checking official access hours',
         'stops': [{'name': s['name'], 'stop_id': s['id'], 'detail': detail[s['source_url']]} for s in stops],

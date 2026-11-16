@@ -20,6 +20,12 @@ BAD = re.compile(r"map|logo|seal|sign|diagram|chart|plan|stamp|coin|flag|icon|sv
 # Use an explicitly named, verifiable landmark for broad regions or catalog aliases.
 # These are map anchors, not claims that a region has one exact point.
 WIKI_ANCHORS = {
+    "altmuhltal-nature-park": "Altmühltal",
+    "franconian-switzerland-nature-park": "Franconian Switzerland–Veldenstein Forest Nature Park",
+    "lake-konigssee": "Königssee",
+    "ammergau-alps-nature-park": "Ammergau Alps",
+    "bergisches-land-nature-park": "Bergisches Land",
+    "hohe-mark-westmunsterland-nature-park": "Naturpark Hohe Mark",
     "spreewald-biosphere-reserve": "Spreewald",
     "berchtesgadener-land-biosphere-region": "Berchtesgadener Land",
     "wienerwald-biosphere-reserve": "Wienerwald",
@@ -201,6 +207,7 @@ def relevant_photo(slug, filename):
     pattern = PHOTO_IDENTITIES.get(slug)
     return pattern is None or re.search(pattern, filename, re.I) is not None
 SEARCH_TERMS = {
+    "berchtesgadener-land-biosphere-region": ["Berchtesgadener Land landscape", "Berchtesgadener Land mountains"],
     "cranborne-chase-national-landscape": ["Cranborne Chase geograph"],
     "causeway-coast-aonb": ["Causeway Coast geograph"],
     "cornwall-national-landscape": ["Cornwall coast geograph", "Cornwall landscape geograph", "Cape Cornwall landscape"],

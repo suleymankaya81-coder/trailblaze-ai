@@ -46,7 +46,7 @@ def tourism_pages(row):
     links = [l for l in r.json().get('data', {}).get('links', []) if '/planning/offers/' not in l and key in l.lower()]
     return sorted(dict.fromkeys(links), key=len)[:2]
 
-def build(row, site):
+def build(row, site, translate_german=False):
     urls = []
     if QID[row['country']] in site.get('countries', []):
         base = next((u.replace('http://', 'https://', 1) for u in site.get('urls', [])), None)
@@ -74,16 +74,21 @@ def build(row, site):
     if not found:
         raise ValueError('official site has no paragraph naming the place')
     src, name, quote, lang = found
-    if row['country'] in ('at', 'de') and lang != 'en':
+    if row['country'] in ('at', 'de') and lang != 'en' and not translate_german:
         raise ValueError('official German evidence retained in cache; English excerpt still missing (no automatic translation)')
     background = wikipedia_background(row, site) if row['country'] in ('at', 'de') else None
+    translation = {}
+    if lang == 'de' and translate_german:
+        from local_translation import translate_excerpt
+        translation = {'display_translation': translate_excerpt(quote), 'translation_method': 'Argos offline de-en; original excerpt retained'}
     return {'slug': row['slug'], 'approved_for_generation': True, 'language': lang,
-        'sources': [{**src, 'kind': 'official', 'generation_excerpts': [quote]}] + ([background] if background else []),
+        'sources': [{**src, 'kind': 'official', 'generation_excerpts': [quote], **translation}] + ([background] if background else []),
         'approved_stops': [{'id': row['slug'], 'name': name, 'quote': quote, 'source_url': src['url']}],
         'review_note': f'DACH chunk: automated exact {lang} excerpt from country-matched official website; no model.'}
 
 def main():
     p = argparse.ArgumentParser(); p.add_argument('--country'); p.add_argument('--kind'); p.add_argument('--limit', type=int, default=40)
+    p.add_argument('--translate-german', action='store_true')
     a = p.parse_args()
     sites = json.loads((ROOT/'dach/official-sites.json').read_text())
     rows = [r for r in json.loads((ROOT/'dach/catalog.json').read_text())
@@ -92,7 +97,7 @@ def main():
     ok = []
     for r in rows:
         try:
-            pk = build(r, sites.get(r['slug'], {}))
+            pk = build(r, sites.get(r['slug'], {}), a.translate_german)
             (ROOT/'source-packets'/f"{r['slug']}.json").write_text(json.dumps(pk, ensure_ascii=False, indent=1))
             ok.append(r['slug']); print('approved', r['slug'], pk['language'], flush=True)
         except Exception as e:
