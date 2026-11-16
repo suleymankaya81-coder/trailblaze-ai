@@ -27,7 +27,7 @@ export function HomeCountries({ covers }: { covers: Record<string, string> }) {
         <ul className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
           {list.map((c) => (
             <li key={c.code}>
-              <Link to={countryPath(c.code)} className="group relative block aspect-[4/5] overflow-hidden rounded-2xl bg-muted">
+              <Link to={countryPath(c.code, locale)} className="group relative block aspect-[4/5] overflow-hidden rounded-2xl bg-muted">
                 {covers[c.code] && <img src={covers[c.code]} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105" />}
                 <span className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/20 to-transparent" />
                 <span className="absolute inset-x-0 bottom-0 p-4 text-off-white">

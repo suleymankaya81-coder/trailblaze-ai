@@ -3,6 +3,23 @@ import generated from "./phrases.de.generated.json";
 // Missing phrases fall back to English.
 export const DE_PHRASES: Record<string, string> = {
   ...(generated as Record<string, string>),
+  "National parks and scenic road trips": "Nationalparks und Roadtrips",
+  "around the world": "weltweit",
+  "From the Rockies to the Dolomites and the Picos de Europa: day-by-day plans, route maps and honest booking advice for every country we cover.": "Von den Rocky Mountains bis zu den Dolomiten und den Picos de Europa: Tagespläne, Routenkarten und ehrliche Buchungstipps für jedes Land, das wir abdecken.",
+  "Try 'Dolomites', 'Yellowstone' or 'Black Forest'": "Z. B. „Dolomiten“, „Yellowstone“ oder „Schwarzwald“",
+  "Browse by country": "Nach Land entdecken",
+  "Places from three countries": "Orte aus drei Ländern",
+  "Explore by country": "Nach Land entdecken",
+  "Pick a country, then a region": "Erst ein Land, dann eine Region wählen",
+  "Europe": "Europa",
+  "North America": "Nordamerika",
+  "places": "Orte",
+  "regions": "Regionen",
+  "All countries": "Alle Länder",
+  "All U.S. regions": "Alle US-Regionen",
+  "Free road trip plans for national parks worldwide.": "Kostenlose Roadtrip-Pläne für Nationalparks weltweit.",
+  "1,400+ outdoor places across North America and Europe, plus multi-park loops and airport road trips.": "Über 1.400 Naturziele in Nordamerika und Europa, dazu Rundreisen und Roadtrips ab Flughafen.",
+  "Guided tours travelers book most at the world's iconic parks.": "Die beliebtesten geführten Touren in den bekanntesten Parks der Welt.",
   "Before you go": "Vor der Reise",
   "Ferry or hydrofoil crossing required": "Überfahrt mit Fähre oder Tragflächenboot nötig",
   "Find the island": "Die Insel finden",
@@ -330,6 +347,8 @@ export const DE_PHRASES: Record<string, string> = {
 
 // Phrases with a variable part ($1, $2 are kept as-is).
 export const DE_PATTERNS: [RegExp, string][] = [
+  [/^(\d+) countries · (\d+)\+ wild places$/, "$1 Länder · über $2 Naturziele"],
+  [/^These guides currently cover (.+)\. Other countries are listed under Destinations\.$/, "Diese Ratgeber decken derzeit $1 ab. Weitere Länder finden Sie unter Reiseziele."],
   [/^Tours & experiences near (.+)$/, "Touren & Erlebnisse bei $1"],
   [/^Visit highlights: (.+)$/, "Besuchshighlights: $1"],
   [/^(\d+) visit day$/, "$1 Besuchstag"],

@@ -27,7 +27,7 @@ export function HomeHero({ scenes = [] }: { scenes?: HeroScene[] }) {
     <section className="home-collage-hero" aria-labelledby="home-hero-title">
       <div className="container-page home-collage-layout">
         <div className="home-collage-copy">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground"><T>{`${countries} countries · ${rounded.toLocaleString('en-US')}+ wild places`}</T></p>
+          <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground"><T>{`${countries} countries · ${rounded}+ wild places`}</T></p>
           <h1 id="home-hero-title" className="mt-5 font-display text-[36px] leading-[1.08] text-primary md:text-[46px] xl:text-[58px]"><T>National parks and scenic road trips</T> <span className="text-sage-deep"><T>around the world</T></span></h1>
           <p className="mt-5 max-w-md text-base leading-relaxed text-muted-foreground md:text-lg"><T>From the Rockies to the Dolomites and the Picos de Europa: day-by-day plans, route maps and honest booking advice for every country we cover.</T></p>
           <form className="mt-7 flex items-center gap-2 rounded-full border border-border bg-card p-1.5 shadow-soft" role="search" onSubmit={(event) => {
@@ -42,7 +42,7 @@ export function HomeHero({ scenes = [] }: { scenes?: HeroScene[] }) {
           <p className="mt-7 text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground"><T>Browse by country</T></p>
           <ul className="mt-3 flex flex-wrap gap-2">
             {COUNTRY_DIRECTORY.map((c) => <li key={c.code}>
-              <Link to={countryPath(c.code)} className="inline-flex min-h-10 items-center gap-2 rounded-full border border-border bg-card px-3 text-sm font-medium text-foreground transition hover:border-primary">
+              <Link to={countryPath(c.code, locale)} className="inline-flex min-h-10 items-center gap-2 rounded-full border border-border bg-card px-3 text-sm font-medium text-foreground transition hover:border-primary">
                 <span aria-hidden="true">{c.flag}</span>{countryLabel(c.code, locale)}<span className="text-xs text-muted-foreground">{c.places}</span>
               </Link>
             </li>)}

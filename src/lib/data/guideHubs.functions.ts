@@ -6,7 +6,7 @@ import { flyDriveSlug } from "@/lib/seo/flyDrive";
 import { isNoReservationEligible, isRvEligible, type GuideDest } from "@/lib/seo/guides";
 
 export type HubFamily = "fly-and-drive" | "no-reservation" | "rv-camping";
-export type HubEntry = { slug: string; name: string; state: string; heroImage: string; airportCode: string | null; driveMinutes: number | null };
+export type HubEntry = { slug: string; name: string; state: string; heroImage: string; airportCode: string | null; driveMinutes: number | null; countryCode: string };
 
 /** Every published destination eligible for a guide family, using the same rules as the guide pages and sitemaps. */
 export const getHubEntries = createServerFn({ method: "GET" })
@@ -16,7 +16,7 @@ export const getHubEntries = createServerFn({ method: "GET" })
     for (let from = 0; ; from += 1000) {
       const { data: page, error } = await supabase
         .from("destinations")
-        .select("slug,name,state,hero_image,nearest_airport_code,nearest_airport_name,drive_minutes,drive_miles,permit_level,permit_note,permit_headline,camping_score,best_season")
+        .select("slug,name,state,country_code,hero_image,nearest_airport_code,nearest_airport_name,drive_minutes,drive_miles,permit_level,permit_note,permit_headline,camping_score,best_season")
         .eq("status", "published")
         .order("name")
         .range(from, from + 999);
@@ -31,7 +31,7 @@ export const getHubEntries = createServerFn({ method: "GET" })
       if (data.family === "fly-and-drive") slug = flyDriveSlug({ ...g, driveMiles: d.drive_miles });
       else if (data.family === "no-reservation" && !isNoReservationEligible(g)) slug = null;
       else if (data.family === "rv-camping" && !isRvEligible(g)) slug = null;
-      if (slug) out.push({ slug, name: d.name, state: d.state ?? "", heroImage: d.hero_image ?? "", airportCode: d.nearest_airport_code, driveMinutes: d.drive_minutes });
+      if (slug) out.push({ slug, name: d.name, state: d.state ?? "", heroImage: d.hero_image ?? "", airportCode: d.nearest_airport_code, driveMinutes: d.drive_minutes, countryCode: d.country_code ?? "us" });
     }
     return out;
   });

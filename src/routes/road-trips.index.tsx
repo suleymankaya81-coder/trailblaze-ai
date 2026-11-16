@@ -42,7 +42,7 @@ function Page() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <PageHero crumbs={[HOME, ROAD_TRIPS]} image={Object.values(covers)[0]} kicker="Road trips" title="All road trips in one place" intro="Self-drive loops linking parks and towns, with suggested days per stop and approximate distances. Flying in? Start from an airport loop.">
+      <PageHero crumbs={[HOME, ROAD_TRIPS]} image={Object.values(covers)[0]} kicker="Road trips" title="All road trips in one place" intro="Self-drive loops linking parks and towns, with suggested days per stop and approximate distances. Loops currently cover the USA; for Europe and Canada, browse places by country under Destinations.">
         <nav aria-label="Road trip types" className="flex flex-wrap gap-2">
           <Link to="/corridors" className="rounded-full bg-card px-5 py-2.5 text-sm font-semibold text-foreground">From an airport (24)</Link>
           <a href="#loops" className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground">Multi-park loops ({LOOPS.length})</a>
