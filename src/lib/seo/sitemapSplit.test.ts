@@ -11,7 +11,12 @@ describe("country-split sitemaps", () => {
     expect(parseChild("de-us-destinations")).toEqual({ country: "us", kind: "de-destinations" });
   });
   it("keeps old names answerable", () => expect(parseChild("destinations")).toEqual({ country: null, kind: "destinations" }));
-  it("rejects unknown names", () => expect(parseChild("fr-destinations")).toBeNull());
+  it("rejects unknown names", () => expect(parseChild("jp-destinations")).toBeNull());
+  it("parses the new France/Portugal/Greece children", () => {
+    expect(parseChild("fr-destinations")).toEqual({ country: "fr", kind: "destinations" });
+    expect(parseChild("pt-guides-glamping")).toEqual({ country: "pt", kind: "guides-glamping" });
+    expect(parseChild("gr-destinations")).toEqual({ country: "gr", kind: "destinations" });
+  });
   it("emits en/de/x-default hreflang", () => {
     const xml = urlsetXml([{ loc: "https://wildparkroutes.com/destinations/us/maine/acadia", alternates: destinationAlternates("acadia") }]);
     expect(xml).toContain('hreflang="de" href="https://wildparkroutes.com/de/destinations/us/maine/acadia"');

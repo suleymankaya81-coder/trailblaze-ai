@@ -40,9 +40,14 @@ const GONE_PREFIXES = [
 /** Switch on once the first UK places are published, so old UK pages land on the UK country page. */
 export const UK_PAGES_LIVE = true;
 
-/** Old directory country pages (archive-verified codes) → our live country pages. "/eu/au" is Austria, "/eu/es" Estonia, "/au" Australia. */
+/**
+ * Old directory country pages (archive-verified codes) → our live country pages. "/eu/au" is Austria, "/eu/es" Estonia, "/au" Australia.
+ * "/eu/pr" is Portugal (Wayback-verified via south-europe/sources.json, not "/eu/pt"); "/eu/fr" for France is unverified —
+ * no Wayback record exists for it, carried over as given rather than guessed from scratch. See fr/pt/gr report for detail.
+ */
 export const AUTHORITY_COUNTRY: Record<string, string> = {
   "/eu/au": "at", "/eu/ge": "de", "/eu/it": "it", "/eu/sp": "es", "/eu/uk": "gb", "/ca": "ca", "/us": "us",
+  "/eu/pr": "pt", "/eu/gr": "gr", "/eu/fr": "fr",
 };
 
 export function authorityTarget(path: string, onAuthorityHost: boolean): string | null {

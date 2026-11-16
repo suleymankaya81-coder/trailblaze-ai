@@ -30,6 +30,9 @@ export const COUNTRIES: Record<string, { name: string; nameDe: string }> = {
   ch: { name: "Switzerland", nameDe: "Schweiz" },
   it: { name: "Italy", nameDe: "Italien" },
   es: { name: "Spain", nameDe: "Spanien" },
+  fr: { name: "France", nameDe: "Frankreich" },
+  pt: { name: "Portugal", nameDe: "Portugal" },
+  gr: { name: "Greece", nameDe: "Griechenland" },
 };
 
 export function slugifyRegion(name: string): string {
