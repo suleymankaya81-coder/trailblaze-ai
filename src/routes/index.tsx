@@ -15,6 +15,8 @@ import { PhotoCredit } from "@/components/shared/PhotoCredit";
 import { HomeExperiences } from "@/components/home/HomeExperiences";
 import { StartHere } from "@/components/home/StartHere";
 import { HomeHero } from "@/components/home/HomeHero";
+import { HomeCountries } from "@/components/home/HomeCountries";
+import { countryFlag, countryLabel } from "@/lib/data/countryDirectory";
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { motorhomeRepublicLink } from "@/lib/affiliates/webjet";
 import { isMhrBlackFridayLive } from "@/lib/affiliates/mhrBlackFriday";
@@ -77,7 +79,12 @@ function HomePage() {
 /** Shared homepage body; German pages pass the slugs that have a German place page. */
 export function HomePageView({ homeDestinations, localSlugs }: { homeDestinations: HomepageDestination[]; localSlugs?: Set<string> }) {
   const tp = useTp();
-  const featured = homeDestinations.slice(0, 5);
+  const covers: Record<string, string> = {};
+  for (const d of homeDestinations) if (d.countryCode && !covers[d.countryCode] && d.heroImage) covers[d.countryCode] = d.heroImage;
+  const heroPick = ["it", "us", "es"].map((c) => homeDestinations.find((d) => d.countryCode === c)).filter((d): d is HomepageDestination => !!d);
+  const heroSlugs = new Set(heroPick.map((d) => d.slug));
+  const coverImages = new Set(Object.values(covers));
+  const featured = homeDestinations.filter((d) => !heroSlugs.has(d.slug) && !coverImages.has(d.heroImage)).slice(0, 5);
   const used = new Set(featured.map((d) => d.heroImage));
   const fallbacks = [roadImg, mapImg, rvImg, flightImg];
   const loopImage = (stops: readonly string[], i: number) => { const hit = homeDestinations.find((d) => stops.includes(d.slug) && !used.has(d.heroImage))?.heroImage; if (hit) { used.add(hit); return hit; } return fallbacks[i % fallbacks.length]; };
@@ -85,7 +92,8 @@ export function HomePageView({ homeDestinations, localSlugs }: { homeDestination
   return (
     <div className="bg-background">
       <Header />
-      <HomeHero />
+      <HomeHero scenes={heroPick.map((d) => ({ image: d.heroImage, name: d.name, countryCode: d.countryCode ?? "us" }))} />
+      <HomeCountries covers={covers} />
       <StartHere parkImage={homeDestinations[0]?.heroImage} />
 
       {featured.length > 0 && (
@@ -97,7 +105,7 @@ export function HomePageView({ homeDestinations, localSlugs }: { homeDestination
                 <div key={d.slug} className={i === 0 ? "md:col-span-2 md:row-span-2" : ""}>
                   <PlaceCard to={localSlugs?.has(d.slug) ? "/de/destinations/$slug" : "/destinations/$slug"} params={{ slug: d.slug }} image={d.heroImage} alt={d.name} large={i === 0}
                     badges={[d.bestSeason ? tp(`Best: ${d.bestSeason}`) : null, d.tripDurationDays].filter((x): x is string => !!x)}
-                    title={d.name} info={d.region} action="See the plan" />
+                    title={d.name} info={`${countryFlag(d.countryCode)} ${[d.region, countryLabel(d.countryCode, localSlugs ? "de" : "en")].filter(Boolean).join(", ")}`.trim()} action="See the plan" />
                 </div>
               ))}
             </SwipeRow>

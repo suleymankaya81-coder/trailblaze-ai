@@ -34,11 +34,11 @@ export const HUB_SEO = {
   ),
   // "national parks usa" 9.9k/mo.
   destinations: hub(
-    "national parks usa",
-    [`USA National Parks & Outdoor Destinations${BRAND}`, `USA Outdoor Destinations${BRAND}`],
+    "national parks",
+    [`National Parks & Outdoor Destinations by Country${BRAND}`, `National Parks by Country${BRAND}`],
     [
-      "Explore 500 USA national parks, scenic towns and outdoor destinations: free travel guides with itineraries, entry notes, stays and rental options.",
-      "Explore 500 USA national parks and outdoor destinations: free travel guides with itineraries, entry notes and stays.",
+      "Explore 1,400+ national parks and outdoor places in the USA, Canada, UK, Germany, Austria, Switzerland, Italy and Spain: free itineraries and entry notes.",
+      "Explore 1,400+ national parks and outdoor places across North America and Europe: free itineraries, entry notes and stays.",
     ],
   ),
   // "road trip" 60.5k/mo; loops already own "<region> road trip" phrases.

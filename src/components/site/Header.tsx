@@ -5,6 +5,8 @@ import { Menu, X } from "lucide-react";
 import { Wordmark } from "@/components/site/Wordmark";
 import { useLocale, t, type DictKey } from "@/lib/i18n";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { COUNTRY_DIRECTORY, CONTINENTS, countryLabel } from "@/lib/data/countryDirectory";
+import { countryPath } from "@/lib/routes/paths";
 
 const NAV = [
   { to: "/destinations", de: "/de/destinations", key: "nav.destinations" },
@@ -29,7 +31,28 @@ export function Header() {
           <Wordmark />
         </Link>
         <nav className="hidden flex-1 items-center justify-end gap-7 text-sm font-medium md:flex">
-          {items.map((n) => (
+          {items.map((n, i) => i === 0 ? (
+            <div key={n.to} className="group relative">
+              <Link to={n.to} className="text-foreground/80 hover:text-foreground" activeProps={active} aria-haspopup="true">
+                <T>{n.label}</T>
+              </Link>
+              <div className="invisible absolute left-1/2 top-full z-50 w-[520px] -translate-x-1/2 pt-4 opacity-0 transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
+                <div className="grid grid-cols-2 gap-6 rounded-2xl border border-border bg-card p-5 shadow-soft">
+                  {CONTINENTS.map((ct) => (
+                    <div key={ct.key}>
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground"><T>{ct.label}</T></p>
+                      <ul className="mt-2 space-y-1">
+                        {COUNTRY_DIRECTORY.filter((c) => c.continent === ct.key).map((c) => (
+                          <li key={c.code}><Link to={countryPath(c.code, locale === "de" ? "de" : "en")} className="flex items-center gap-2 rounded-lg px-2 py-1.5 text-sm text-foreground hover:bg-muted"><span aria-hidden="true">{c.flag}</span>{countryLabel(c.code, locale === "de" ? "de" : "en")}<span className="ml-auto text-xs text-muted-foreground">{c.places}</span></Link></li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                  <Link to={n.to} className="col-span-2 border-t border-border pt-3 text-sm font-semibold text-primary hover:underline"><T>All destinations</T> →</Link>
+                </div>
+              </div>
+            </div>
+          ) : (
             <Link key={n.to} to={n.to} className="text-foreground/80 hover:text-foreground" activeProps={active}>
               <T>{n.label}</T>
             </Link>
@@ -62,6 +85,13 @@ export function Header() {
                 <T>{n.label}</T>
               </Link>
             ))}
+            <div className="flex flex-wrap gap-2 py-3">
+              {COUNTRY_DIRECTORY.map((c) => (
+                <Link key={c.code} to={countryPath(c.code, locale === "de" ? "de" : "en")} onClick={() => setOpen(false)} className="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-border px-3 text-sm text-foreground">
+                  <span aria-hidden="true">{c.flag}</span>{countryLabel(c.code, locale === "de" ? "de" : "en")}
+                </Link>
+              ))}
+            </div>
           </div>
         </nav>
       )}

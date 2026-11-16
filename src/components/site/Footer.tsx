@@ -3,8 +3,11 @@ import { useEffect, useState } from "react";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Link } from "@/components/site/LocalLink";
 import { Wordmark } from "@/components/site/Wordmark";
+import { COUNTRY_DIRECTORY } from "@/lib/data/countryDirectory";
+import { countryPath } from "@/lib/routes/paths";
 
 const groups = [
+  { title: "Countries", links: COUNTRY_DIRECTORY.map((c) => ({ to: countryPath(c.code), label: c.name })) },
   { title: "Road Trips", links: [
     { to: "/road-trips", label: "Road Trip Loops" },
     { to: "/corridors", label: "Gateway Road Trips" },
@@ -29,7 +32,7 @@ const groups = [
     { to: "/privacy", label: "Privacy Policy" },
     { to: "/terms", label: "Terms of Use" },
   ] },
-] as const;
+];
 
 export function Footer() {
   const [wide, setWide] = useState(true);
@@ -52,7 +55,7 @@ export function Footer() {
           </p>
         </div>
 
-        <nav className="mt-10 border-t border-border pt-2 text-sm md:grid md:grid-cols-4 md:gap-8 md:pt-8">
+        <nav className="mt-10 border-t border-border pt-2 text-sm md:grid md:grid-cols-5 md:gap-8 md:pt-8">
           {groups.map((g) => (
             <details key={g.title} className="group border-b border-border md:border-0" open={wide}>
               <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground md:pointer-events-none md:min-h-0"><T>{g.title}</T><span className="md:hidden transition group-open:rotate-45">+</span></summary>

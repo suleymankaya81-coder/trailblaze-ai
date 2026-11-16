@@ -292,6 +292,7 @@ export type HomepageDestination = {
   heroImage: string;
   bestSeason: string | null;
   tripDurationDays: string | null;
+  countryCode?: string;
 };
 
 // Homepage module: a handful of published destinations for the "3 large +
@@ -300,20 +301,45 @@ export type HomepageDestination = {
 // as a stable tiebreaker.
 export const getHomepageDestinations = createServerFn({ method: "GET" }).handler(
   async (): Promise<HomepageDestination[]> => {
-    const { data, error } = await supabase
+    const { COUNTRIES } = await import("@/lib/routes/paths");
+    // One small query per country: scenic scores are not comparable across country catalogs.
+    // Signature places lead each country so covers show recognisable scenery.
+    const SIGNATURE = ["the-dolomites", "yosemite", "picos-de-europa-national-park", "saxon-switzerland-national-park", "grossglockner-high-alpine-road", "jungfraujoch", "banff-national-park", "lake-district-national-park", "cinque-terre-national-park", "zion", "teide-national-park", "berchtesgaden-national-park", "hohe-tauern-national-park", "swiss-national-park", "jasper-national-park", "eryri-snowdonia-national-park"];
+    const sig = await supabase
       .from("destinations")
-      .select("id, slug, name, region, hero_image, best_season, trip_duration_days")
+      .select("id, slug, name, region, hero_image, best_season, trip_duration_days, country_code")
       .eq("status", "published")
+      .in("slug", SIGNATURE)
+      .not("hero_image", "is", null);
+    const sigRows = (sig.data ?? []).sort((x, y) => SIGNATURE.indexOf(x.slug) - SIGNATURE.indexOf(y.slug));
+    const results = await Promise.all(Object.keys(COUNTRIES).map((code) => supabase
+      .from("destinations")
+      .select("id, slug, name, region, hero_image, best_season, trip_duration_days, country_code")
+      .eq("status", "published")
+      .eq("country_code", code)
+      .not("hero_image", "is", null)
       .order("scenic_score", { ascending: false, nullsFirst: false })
       .order("name", { ascending: true })
-      .limit(6);
+      .limit(3)));
+    const error = results.find((r) => r.error)?.error;
+    if (error) console.error("[getHomepageDestinations] query failed", error);
+    const seen = new Set(sigRows.map((r) => r.slug));
+    const data = [...sigRows, ...results.flatMap((r) => r.data ?? []).filter((r) => !seen.has(r.slug))];
 
-    if (error) {
-      console.error("[getHomepageDestinations] query failed", error);
-      return [];
+    // Round-robin by country so the homepage shows the whole catalog, not one country.
+    const byCountry = new Map<string, NonNullable<typeof data>>();
+    for (const d of data ?? []) {
+      const c = d.country_code ?? "us";
+      if (!byCountry.has(c)) byCountry.set(c, []);
+      byCountry.get(c)!.push(d);
+    }
+    const queues = [...byCountry.values()];
+    const picked: NonNullable<typeof data> = [];
+    for (let i = 0; picked.length < 16 && queues.some((q) => q.length > i); i++) {
+      for (const q of queues) if (q[i] && picked.length < 16) picked.push(q[i]);
     }
 
-    return (data ?? []).map((d) => ({
+    return picked.map((d) => ({
       id: d.id,
       slug: d.slug,
       name: d.name,
@@ -321,6 +347,7 @@ export const getHomepageDestinations = createServerFn({ method: "GET" }).handler
       heroImage: d.hero_image ?? "",
       bestSeason: d.best_season,
       tripDurationDays: d.trip_duration_days,
+      countryCode: d.country_code ?? "us",
     }));
   },
 );
@@ -380,7 +407,7 @@ export const DESTINATIONS_PAGE_SIZE = 24;
 // HomepageDestination — both are "just enough to render a destination card."
 export const getDestinationsList = createServerFn({ method: "GET" })
   .inputValidator((input: unknown) =>
-    z.object({ tag: z.string().optional(), region: z.string().optional(), season: z.string().optional(), q: z.string().max(80).optional(), page: z.number().int().min(1).optional() }).parse(input),
+    z.object({ country: z.string().regex(/^[a-z]{2}$/).optional(), tag: z.string().optional(), region: z.string().optional(), season: z.string().optional(), q: z.string().max(80).optional(), page: z.number().int().min(1).optional() }).parse(input),
   )
   .handler(async ({ data }): Promise<{ destinations: HomepageDestination[]; total: number }> => {
     const page = data.page ?? 1;
@@ -389,15 +416,16 @@ export const getDestinationsList = createServerFn({ method: "GET" })
 
     let query = supabase
       .from("destinations")
-      .select("id, slug, name, region, hero_image, best_season, trip_duration_days, trip_tags", {
+      .select("id, slug, name, region, hero_image, best_season, trip_duration_days, trip_tags, country_code", {
         count: "exact",
       })
       .eq("status", "published")
       .order("name", { ascending: true });
 
+    if (data.country) query = query.eq("country_code", data.country);
     if (data.tag) query = query.contains("trip_tags", [data.tag]);
     const { US_REGIONS, isRegionKey, SEASONS } = await import("./usRegions");
-    if (isRegionKey(data.region)) query = query.in("state", [...US_REGIONS[data.region].states]);
+    if (isRegionKey(data.region) && (!data.country || data.country === "us")) query = query.in("state", [...US_REGIONS[data.region].states]);
     if (data.season && (SEASONS as readonly string[]).includes(data.season)) query = query.contains("best_seasons", [data.season]);
     const nameQ = data.q?.trim().replace(/[%_,()]/g, "");
     if (nameQ) query = query.ilike("name", `%${nameQ}%`);
@@ -418,6 +446,7 @@ export const getDestinationsList = createServerFn({ method: "GET" })
         heroImage: d.hero_image ?? "",
         bestSeason: d.best_season,
         tripDurationDays: d.trip_duration_days,
+        countryCode: d.country_code ?? "us",
       })),
       total: count ?? 0,
     };

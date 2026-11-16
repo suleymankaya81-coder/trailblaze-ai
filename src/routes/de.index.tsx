@@ -6,8 +6,8 @@ import { deMeta } from "@/lib/i18n/deSeo";
 import { hreflangLinks } from "@/lib/seo/hreflang";
 import { HomePageView } from "./index";
 
-const title = "USA-Roadtrip planen: Nationalpark-Reisepläne | WildParkRoutes";
-const description = "Fertige Reisepläne für Yellowstone, Grand Canyon, Zion & mehr: Tag-für-Tag-Routen, Reservierungshinweise und Tipps für Ihren USA-Roadtrip.";
+const title = "Nationalparks & Roadtrips weltweit planen | WildParkRoutes";
+const description = "Fertige Reisepläne für Nationalparks in USA, Kanada, Deutschland, Österreich, Schweiz, Italien, Spanien & UK: Tag-für-Tag-Routen und Karten.";
 
 export const Route = createFileRoute("/de/")({
   loader: async () => {

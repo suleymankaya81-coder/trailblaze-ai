@@ -5,7 +5,7 @@ import { motorhomeRepublicLink, airportRentalsLink } from "@/lib/affiliates/webj
 import { Button } from "@/components/ui/button";
 
 const TABS = {
-  rv: { label: "RV & Campervan", icon: Truck, brand: "Motorhome Republic", host: "www.motorhomerepublic.com", extra: "&country=", fallback: motorhomeRepublicLink(), blurb: "Compare motorhomes and campervans from professional rental fleets across the USA." },
+  rv: { label: "RV & Campervan", icon: Truck, brand: "Motorhome Republic", host: "www.motorhomerepublic.com", extra: "&country=", fallback: motorhomeRepublicLink(), blurb: "Compare motorhomes and campervans from professional rental fleets in North America and Europe." },
   car: { label: "Car Rental", icon: Car, brand: "Airport Rentals", host: "www.airportrentals.com", extra: "", fallback: airportRentalsLink(), blurb: "Compare airport car rentals and return to the same airport to avoid one-way fees." },
 } as const;
 type Tab = keyof typeof TABS;
@@ -75,7 +75,7 @@ export function RentalSearch() {
         <p className="text-xs font-bold uppercase tracking-[0.22em] text-foreground/60">Live search · {t.brand}</p>
         <p className="mt-2 max-w-xl text-sm text-muted-foreground"><T>{t.blurb}</T></p>
         <ul className="mt-3 flex flex-wrap gap-1.5">
-          {(tab === "rv" ? ["Compare RV & campervan suppliers", "Pickup across the USA"] : ["Compare airport suppliers", "Free cancellation on many rates", "Same-airport return"]).map((b) => (
+          {(tab === "rv" ? ["Compare RV & campervan suppliers", "Pickup in the USA, Canada & Europe"] : ["Compare airport suppliers", "Free cancellation on many rates", "Same-airport return"]).map((b) => (
             <li key={b} className="rounded-full bg-secondary px-2.5 py-1 text-[11px] font-medium text-foreground">✓ <T>{b}</T></li>
           ))}
         </ul>

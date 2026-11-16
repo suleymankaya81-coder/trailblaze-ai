@@ -19,8 +19,11 @@ import { SEASONS, US_REGIONS } from "@/lib/data/usRegions";
 import { FilterPanel } from "@/components/site/FilterPanel";
 import { HUB_SEO } from "@/lib/seo/hubSeo";
 import { Button } from "@/components/ui/button";
+import { COUNTRY_DIRECTORY, CONTINENTS, countryFlag, countryLabel } from "@/lib/data/countryDirectory";
+import { countryPath } from "@/lib/routes/paths";
 
 const SearchSchema = z.object({
+  country: z.string().regex(/^[a-z]{2}$/).optional(),
   tag: z.string().optional(),
   region: z.string().optional(),
   season: z.string().optional(),
@@ -30,18 +33,18 @@ const SearchSchema = z.object({
 
 export const Route = createFileRoute("/destinations/")({
   validateSearch: (search) => SearchSchema.parse(search),
-  loaderDeps: ({ search }) => ({ tag: search.tag, region: search.region, season: search.season, q: search.q, page: search.page ?? 1 }),
+  loaderDeps: ({ search }) => ({ country: search.country, tag: search.tag, region: search.region, season: search.season, q: search.q, page: search.page ?? 1 }),
   loader: async ({ deps }) => {
     const result = await getDestinationsList({
-      data: { tag: deps.tag, region: deps.region, season: deps.season, q: deps.q, page: deps.page },
+      data: { country: deps.country, tag: deps.tag, region: deps.region, season: deps.season, q: deps.q, page: deps.page },
     }).catch((err) => {
       console.error("[/destinations] getDestinationsList failed", err);
       return { destinations: [], total: 0 };
     });
-    return { ...result, tag: deps.tag ?? null, region: deps.region ?? "", season: deps.season ?? "", q: deps.q ?? "", page: deps.page };
+    return { ...result, country: deps.country ?? "", tag: deps.tag ?? null, region: deps.region ?? "", season: deps.season ?? "", q: deps.q ?? "", page: deps.page };
   },
   head: ({ loaderData }) => {
-    const isFiltered = Boolean(loaderData?.tag || loaderData?.region || loaderData?.season || loaderData?.q) || (loaderData?.page ?? 1) > 1;
+    const isFiltered = Boolean(loaderData?.country || loaderData?.tag || loaderData?.region || loaderData?.season || loaderData?.q) || (loaderData?.page ?? 1) > 1;
     return {
       meta: [
         { title: HUB_SEO.destinations.title },
@@ -77,8 +80,8 @@ function paginationLinkClass(disabled: boolean) {
 }
 
 function DestinationsIndexPage() {
-  const { destinations, total, tag, region, season, q, page } = Route.useLoaderData();
-  const keep = { tag: tag ?? undefined, region: region || undefined, season: season || undefined, q: q || undefined };
+  const { destinations, total, country, tag, region, season, q, page } = Route.useLoaderData();
+  const keep = { country: country || undefined, tag: tag ?? undefined, region: region || undefined, season: season || undefined, q: q || undefined };
   const activeTag = TRIP_TAG_OPTIONS.find((t) => t.value === tag);
   const totalPages = Math.max(1, Math.ceil(total / DESTINATIONS_PAGE_SIZE));
 
@@ -87,6 +90,24 @@ function DestinationsIndexPage() {
       <Header />
       <PageHero crumbs={[HOME, DESTINATIONS]} image={destinations[0]?.heroImage} kicker={`${total} destination${total === 1 ? "" : "s"}`} title={activeTag ? activeTag.label : "All destinations"} intro="National parks, outdoor towns and scenic places, each with a day-by-day plan, arrival airport and where to stay." />
       <main className="container-page py-10 md:py-14">
+        <section aria-labelledby="by-country" className="mb-10">
+          <h2 id="by-country" className="text-xl md:text-2xl"><T>Browse by country</T></h2>
+          {CONTINENTS.map((ct) => (
+            <div key={ct.key} className="mt-5">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground"><T>{ct.label}</T></p>
+              <ul className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+                {COUNTRY_DIRECTORY.filter((c) => c.continent === ct.key).map((c) => (
+                  <li key={c.code}>
+                    <Link to={countryPath(c.code)} className="flex min-h-16 items-center gap-3 rounded-xl border border-border bg-card px-4 py-3 transition hover:border-primary">
+                      <span className="text-2xl" aria-hidden="true">{c.flag}</span>
+                      <span><span className="block text-sm font-semibold text-foreground">{c.name}</span><span className="text-xs text-muted-foreground">{c.places} <T>places</T></span></span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </section>
         <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 md:mx-0 md:flex-wrap md:px-0">
           <Link to="/destinations" className={pageLinkClass(!tag)}>
             All
@@ -103,11 +124,15 @@ function DestinationsIndexPage() {
           ))}
         </div>
 
-        <div className="mt-6"><FilterPanel><form method="get" action="/destinations" className="grid gap-3 md:grid-cols-[1fr_auto_auto_auto]">
+        <div className="mt-6"><FilterPanel><form method="get" action="/destinations" className="grid gap-3 md:grid-cols-[1fr_auto_auto_auto_auto]">
           {tag && <input type="hidden" name="tag" value={tag} />}
+          <select name="country" defaultValue={country} aria-label="Country" className="h-12 rounded-lg border border-border bg-card px-3 text-sm">
+            <option value=""><T>All countries</T></option>
+            {COUNTRY_DIRECTORY.map((c) => <option key={c.code} value={c.code}>{c.flag} {c.name}</option>)}
+          </select>
           <input name="q" defaultValue={q} placeholder="Search by name" aria-label="Search destinations by name" className="h-12 rounded-lg border border-border bg-card px-3 text-sm" />
           <select name="region" defaultValue={region} aria-label="Region" className="h-12 rounded-lg border border-border bg-card px-3 text-sm">
-            <option value=""><T>All regions</T></option>
+            <option value=""><T>All U.S. regions</T></option>
             {Object.entries(US_REGIONS).map(([k, r]) => <option key={k} value={k}><T>{r.label}</T></option>)}
           </select>
           <select name="season" defaultValue={season} aria-label="Best season" className="h-12 rounded-lg border border-border bg-card px-3 text-sm">
@@ -131,7 +156,7 @@ function DestinationsIndexPage() {
             <div className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {destinations.map((d) => (
                 <PlaceCard key={d.slug} to="/destinations/$slug" params={{ slug: d.slug }} image={d.heroImage} alt={d.name} title={d.name}
-                  badges={[d.bestSeason ? `Best: ${d.bestSeason}` : "", d.tripDurationDays ?? ""].filter(Boolean)} info={d.region} />
+                  badges={[d.bestSeason ? `Best: ${d.bestSeason}` : "", d.tripDurationDays ?? ""].filter(Boolean)} info={`${countryFlag(d.countryCode)} ${[d.region, countryLabel(d.countryCode)].filter(Boolean).join(", ")}`.trim()} />
               ))}
             </div>
 

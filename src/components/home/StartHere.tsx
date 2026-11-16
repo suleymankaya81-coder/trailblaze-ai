@@ -9,7 +9,7 @@ import gearImg from '@/assets/thumbs/gear.jpg';
 import roadImg from '@/assets/thumbs/road.jpg';
 
 const steps = [
-  { img: mapImg, title: 'Choose a park or route', text: '500+ outdoor places, 30 multi-park loops and 24 road trips that start at an airport.' },
+  { img: mapImg, title: 'Choose a park or route', text: '1,400+ outdoor places across North America and Europe, plus multi-park loops and airport road trips.' },
   { img: planImg, title: 'See your plan on one page', text: 'Day-by-day stops, a route map, arrival airport, reservation notes and where to stay.' },
   { img: carImg, title: 'Book with the partner', text: 'Compare flights, cars, RVs, stays and tours, then check the final price on the partner site.' },
 ];
@@ -28,7 +28,7 @@ export function StartHere({ parkImage }: { parkImage?: string }) {
       <div className="container-page grid gap-10 lg:grid-cols-[1fr_2fr] lg:gap-16">
         <div>
           <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-sage-deep"><T>What is WildParkRoutes?</T></p>
-          <h2 className="mt-2 text-[26px] leading-tight md:text-4xl"><T>Free U.S. road trip plans, ready to book.</T></h2>
+          <h2 className="mt-2 text-[26px] leading-tight md:text-4xl"><T>Free road trip plans for national parks worldwide.</T></h2>
           <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground"><T>We write independent self-drive guides for national parks and outdoor places. You pick the trip; you book directly with trusted travel partners.</T></p>
         </div>
         <ol className="grid gap-6 md:grid-cols-3">
