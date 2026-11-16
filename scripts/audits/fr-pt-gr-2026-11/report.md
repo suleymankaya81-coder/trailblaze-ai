@@ -9,7 +9,16 @@ Everything below either edits code (committed) or is DRAFT content/SQL for the o
 - **Step B (catalog hygiene): done.**
 - **Step C (source collection): running** in a separate network-enabled session (this sandbox blocks
   Wikidata/Wikipedia/Commons/OSRM outright — see "Environment constraints" below). Results will be filled
-  in here once it reports back.
+  in here once it reports back. (First attempt stalled on an unapprovable interactive permission prompt
+  before doing any real work and was archived; a replacement session is running the same job.)
+- **Owner instruction received mid-task: hold all France overseas-territory places from this wave.**
+  No source packet or combined-content bundle will be built for them regardless of what automatic
+  identity resolution would have found; they are marked held with reason "overseas territory — held
+  from this wave per owner instruction" and excluded from the owner checklist / apply-ready SQL. The six
+  rows: `reunion-national-park`, `guadeloupe-national-park`, `guiana-amazonian-park`,
+  `parc-naturel-regional-de-guyane`, `mayotte-marine-natural-park`, `parc-naturel-regional-de-la-martinique`.
+  (These are the same six rows flagged earlier in Step B for their `access:"road"` oversight and the
+  French-Guiana double-entry — holding them sidesteps needing to resolve either question in this wave.)
 - **Step D (content generation): pending**, depends on Step C's packets.
 - **Step E (offline verification): script written** (`scripts/audits/fr-pt-gr-2026-11/verify.py`),
   not yet run against real data.
