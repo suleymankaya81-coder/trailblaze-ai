@@ -24,9 +24,17 @@ def core(name):
     c = re.sub(r'\s+', ' ', GENERIC.sub(' ', name)).strip(' -')
     return c if len(c) >= 5 else None
 
+NEWS = re.compile(r'\b(gestern|gestrigen|heute|yesterday|today|\d{1,2}\. (Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember) \d{4}|(January|February|March|April|May|June|July|August|September|October|November|December) \d{1,2},? \d{4})\b', re.I)
+
+def is_news(para):
+    # Dated news items and truncated teasers are not visitor evidence.
+    return bool(NEWS.search(para)) or not para.rstrip().endswith(('.', '!', '?'))
+
 def pick(row, text):
     names = [n for n in [row['name'], row['authority'], core(row['name'])] if n]
     for para in paragraphs(text):
+        if is_news(para):
+            continue
         for n in names:
             if n.casefold() in para.casefold():
                 return n, para
