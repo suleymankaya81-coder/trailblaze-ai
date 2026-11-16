@@ -473,6 +473,22 @@ def run(slug, facts_only=False, combined=False):
     return f"ok airport={prepared['airport']['code']} drive={prepared['route']['minutes']}min"
 
 
+
+GERMAN_KIND = {"Nature Park": "Naturpark", "National Park": "Nationalpark", "Biosphere Reserve": "Biosphärenreservat", "Regional Park": "Regionalpark", "Landscape Park": "Landschaftspark"}
+
+def geocode_anchors(slug, d):
+    """Same named place only: English name, local-language protected-area name, then the bare name in its region."""
+    if slug in WIKI_ANCHORS:
+        return [WIKI_ANCHORS[slug]]
+    name = d["name"]
+    out = [f"{name}, {d['state']}"]
+    if d.get("country_code") in ("de", "at", "ch"):
+        for en, local in GERMAN_KIND.items():
+            if name.endswith(" " + en):
+                out.append(f"{local} {name[:-len(en)].strip()}")
+        out.append(name)
+    return list(dict.fromkeys(out))
+
 def prepare_facts(slug):
     d = json.loads(q(f"select row_to_json(t) from (select slug,name,state,destination_type,trip_tags,"
                      f"experience_tags,country_code,access_type from destinations where slug='{slug}') t"))
@@ -484,12 +500,13 @@ def prepare_facts(slug):
         pimg2, lat, lng = wiki(f"{d['name']}, {d['state']}")
         pimg = pimg or pimg2
     if lat is None:  # free OpenStreetMap geocoder fallback for the same named anchor
-        anchor = WIKI_ANCHORS.get(slug, f"{d['name']}, {d['state']}")
-        r = requests.get("https://nominatim.openstreetmap.org/search", headers=UA, timeout=30,
-                         params={"q": anchor, "format": "json", "limit": 1, "countrycodes": d.get("country_code") or "us"}).json()
-        time.sleep(1)
-        if r:
-            lat, lng = float(r[0]["lat"]), float(r[0]["lon"])
+        for anchor in geocode_anchors(slug, d):
+            r = requests.get("https://nominatim.openstreetmap.org/search", headers=UA, timeout=30,
+                             params={"q": anchor, "format": "json", "limit": 1, "countrycodes": d.get("country_code") or "us"}).json()
+            time.sleep(1)
+            if r:
+                lat, lng = float(r[0]["lat"]), float(r[0]["lon"])
+                break
     if lat is None and slug in COORDS:  # verified town/visitor-center anchor
         lat, lng = COORDS[slug]
     if lat is None:
