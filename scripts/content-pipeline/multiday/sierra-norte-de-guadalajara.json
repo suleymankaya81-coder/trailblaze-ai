@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "pico del Lobo",
+      "quote": "En este relieve están presentes las mayores altitudes de la provincia de Guadalajara, entre las que destacan las del pico del Lobo (2273 m s. n. m.), el Cerrón (2199 m s. n. m.) y la peña Cebollera Vieja o Tres Provincias (2129 m s. n. m.).",
+      "english": "In this relief, the highest altitudes in the province of Guadalajara are present, among which those of the Pico del Lobo (2273 m above sea level), the Cerrón (2199 m above sea level), and the Peña Cebollera Vieja or Tres Provincias (2129 m above sea level) stand out."
+    },
+    {
+      "id": "s2",
+      "name": "Cerrón",
+      "quote": "Las mayores cumbres se encuentran en la sierra de Ayllón y superan muchas los dos mil metros de altitud. Destacan el pico del Lobo (2273 m s. n. m.), el Cerrón (2199 m s. n. m.), la peña Cebollera Vieja (2129 m s. n. m.), el pico Ocejón (2049 m s. n. m.), el pico de la Buitrera (2038 m s. n. m.), la peña de la Tiñosa (1971 m s. n. m.), la peña de la Silla (1937 m s. n. m.), el pico Santuy (1927 m s. n. m.) y el pico de la Tornera (1865 m s. n. m.).",
+      "english": "The highest peaks are found in the Sierra de Ayllón and many exceed two thousand meters in altitude, highlighting the Pico del Lobo (2273 m), the Cerrón (2199 m), the Peña Cebollera Vieja (2129 m), the Pico Ocejón (2049 m), the Pico de la Buitrera (2038 m), the Peña de la Tiñosa (1971 m), the Peña de la Silla (1937 m), the Pico Santuy (1927 m), and the Pico de la Tornera (1865 m)."
+    },
+    {
+      "id": "s3",
+      "name": "Hayedo de Tejera Negra",
+      "quote": "Engloba a las sierras de Ayllón y de Pela, entre otras menores, así como los preexistentes parque natural del Hayedo de Tejera Negra, reserva natural del Macizo del Pico del Lobo-Cebollera, la reserva fluvial del Río Pelagallinas y la reserva de caza de Sonsaz, entre otros espacios naturales de la zona.",
+      "english": "It encompasses the Ayllón and Pela mountain ranges, among other smaller ones, as well as the pre-existing Hayedo de Tejera Negra natural park, the Pico del Lobo-Cebollera Massif natural reserve, the Pelagallinas River fluvial reserve, and the Sonsaz hunting reserve, among other natural spaces in the area."
+    },
+    {
+      "id": "s4",
+      "name": "Alto Rey",
+      "quote": "Por su parte, la sierra de Alto Rey está dominada por el Alto Rey (1848 m s. n. m.).",
+      "english": "For its part, the Sierra de Alto Rey is dominated by the Alto Rey (1848 m above sea level)."
+    },
+    {
+      "id": "s5",
+      "name": "chorreras de Despeñalagua",
+      "quote": "Gran cantidad de cursos meandriniformes (destacando el río Jaramilla y el río Sorbe), cañones, cascadas (por ejemplo, las chorreras de Despeñalagua en Valverde de los Arroyos), barrancos, cárcavas (las más representativas localizadas en las proximidades del Pontón de la Oliva, en Puebla de Valles y en Zarzuela de Jadraque) y depósitos aluviales se encuentran en numerosos lugares de la sierra norte de Guadalajara.",
+      "english": "A large number of meandering watercourses (notably the Jaramilla and Sorbe rivers), canyons, waterfalls (for example, the Despeñalagua waterfalls in Valverde de los Arroyos), ravines, gullies (the most representative located in the vicinity of Pontón de la Oliva, in Puebla de Valles, and in Zarzuela de Jadraque), and alluvial deposits are found in numerous places in the Sierra Norte de Guadalajara."
+    },
+    {
+      "id": "s6",
+      "name": "Tamajón",
+      "quote": "El mayor desarrollo de morfologías kársticas tiene lugar en los afloramientos carbonatados cercanos a Tamajón, donde se desarrolla un interesante karst con predominio de formas exokársticas y endokársticas.",
+      "english": "The greatest development of karst morphologies takes place in the carbonate outcrops near Tamajón, where an interesting karst with a predominance of exokarstic and endokarstic forms develops."
+    },
+    {
+      "id": "s7",
+      "name": "Pontón de la Oliva",
+      "quote": "El punto más bajo del parque natural se localiza en el suroeste, en las proximidades de la presa del Pontón de la Oliva (725 m s. n. m.).",
+      "english": "The lowest point of the natural park is located in the southwest, in the vicinity of the Pontón de la Oliva dam (725 m above sea level)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Ayllón Peaks and Beech Forests",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Central Sierras and Waterfalls",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Southern Karst and Dams",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "0c48889b0a3b4d534478924506063d2ae80a7654ae15a6c12e003141275bc9d5"
+}

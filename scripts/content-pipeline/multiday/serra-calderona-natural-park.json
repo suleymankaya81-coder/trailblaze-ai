@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Montemayor",
+      "quote": "Esta sierra ocupa una vasta superficie que se desarrolla principalmente por debajo de los 1000 metros de altitud, con excepción del Montemayor, en el extremo noroccidental, donde se alcanza una cota de 1015 metros sobre el nivel del mar.",
+      "english": "This mountain range covers a vast area that develops mainly below 1000 meters of altitude, with the exception of Montemayor, in the northwestern tip, where a peak of 1015 meters above sea level is reached."
+    },
+    {
+      "id": "s2",
+      "name": "Gorgo",
+      "quote": "Otras alturas importantes son el Gorgo (907 metros), Pico del Águila (878 metros) Rebalsadors (802 metros), Oronet (742 metros) y el Garbí del municipio de Alfara de la Baronía(600 metros).",
+      "english": "Other important heights are the Gorgo (907 meters), Pico del Águila (878 meters) Rebalsadors (802 meters), Oronet (742 meters) and the Garbí of the municipality of Alfara de la Baronía (600 meters)."
+    },
+    {
+      "id": "s3",
+      "name": "Mola de Segart",
+      "quote": "Como rasgos más sobresalientes de la orografía de la zona, cabe destacar por una parte el núcleo triásico oriental, donde se puede encontrar la presencia de muelas calizas como Mola de Segart, Xocainet o la Redona y, sobre todo, una parte del territorio con predominio silíceo en que aparecen espectaculares crestas de areniscas rojas (Gorgo, Garbí, Picaio) que envuelven núcleos carbonatados como Rebalsadors, Alt del Pí, Oronet y Peñas blancas.",
+      "english": "As the most outstanding features of the area's orography, it is worth noting on one hand the eastern Triassic core, where the presence of limestone massifs such as Mola de Segart, Xocainet or la Redona can be found and, above all, a part of the territory with siliceous predominance in which spectacular red sandstone ridges appear."
+    },
+    {
+      "id": "s4",
+      "name": "Garbí",
+      "quote": "De entre todas las cumbres de la sierra, sin duda la más visitada es el Garbí, entre los términos municipales de Serra, Estivella y Albalat de Taronchers, debido a la facilidad de acceso y al mirador existente que permite una bella panorámica sobre las comarcas de Huerta Norte y el Campo de Murviedro y de ser una de las zonas más próximas a Valencia para los que buscan alguna nevada del invierno.",
+      "english": "Among all the peaks of the range, undoubtedly the most visited is the Garbí, between the municipalities of Serra, Estivella and Albalat de Taronchers, due to the ease of access and the existing viewpoint that allows a beautiful panoramic view over the regions of Huerta Norte and Campo de Murviedro."
+    },
+    {
+      "id": "s5",
+      "name": "Cartuja de Porta Coeli",
+      "quote": "Dentro de la sierra se encuentran tres importantes construcciones religiosas: la Cartuja de Porta Coeli, donde Fray Bonifacio Ferrer realizó la primera traducción a una lengua romance (al valenciano) de la biblia, la Cartuja de Vall de Cristo en la Villa de Altura, donde el Propio Fray Bonifacio Ferrer pasó sus últimos días, y en donde yacieron sus restos mortales.",
+      "english": "Within the range there are three important religious constructions: the Carthusian Monastery of Porta Coeli, where Friar Bonifacio Ferrer made the first translation of the Bible into a Romance language (Valencian)."
+    },
+    {
+      "id": "s6",
+      "name": "monasterio de Sant Esperit",
+      "quote": "También fue visitada por San Ignacio de Loyola o el antipapa Benedicto XIII; y el monasterio de Sant Esperit, en Gilet.",
+      "english": "It was also visited by Saint Ignatius of Loyola or the antipope Benedict XIII; and the monastery of Sant Esperit, in Gilet."
+    },
+    {
+      "id": "s7",
+      "name": "Castillo de Serra",
+      "quote": "También son reseñables toda una serie de restos históricos como el Castillo de Serra o el poblado ibérico del Puntal dels Llops en Olocau.",
+      "english": "Also noteworthy are a series of historical remains such as the Castle of Serra or the Iberian settlement of Puntal dels Llops in Olocau."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Limestone Massifs",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Famous Viewpoints and Ancient Monasteries",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Gilet and Serra History",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "62374f7bdfb3cb58fd702984a49662efd863281454c7d576466a5b1e5bf28db8"
+}

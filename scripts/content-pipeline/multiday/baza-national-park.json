@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Sierra de Baza",
+      "quote": "Ubicado en un entorno semiárido de la Hoya de Baza, y caracterizado por unas precipitaciones escasas y de distribución irregular, se eleva el macizo montañoso de la Sierra de Baza hasta superar los 2200 m s. n. m., siendo el Calar de Santa Bárbara con 2269 m s. n. m. la cumbre de este parque natural.",
+      "english": "Located in a semi-arid environment of the Hoya de Baza, and characterized by scarce and irregularly distributed rainfall, the mountain massif of the Sierra de Baza rises to over 2200 m above sea level, with the Calar de Santa Bárbara at 2269 m above sea level being the peak of this natural park."
+    },
+    {
+      "id": "s2",
+      "name": "Calar de Santa Bárbara",
+      "quote": "Ubicado en un entorno semiárido de la Hoya de Baza, y caracterizado por unas precipitaciones escasas y de distribución irregular, se eleva el macizo montañoso de la Sierra de Baza hasta superar los 2200 m s. n. m., siendo el Calar de Santa Bárbara con 2269 m s. n. m. la cumbre de este parque natural.",
+      "english": "Located in a semi-arid environment of the Hoya de Baza, and characterized by scarce and irregularly distributed rainfall, the mountain massif of the Sierra de Baza rises to over 2200 m above sea level, with the Calar de Santa Bárbara at 2269 m above sea level being the peak of this natural park."
+    },
+    {
+      "id": "s3",
+      "name": "valles más húmedos de la zona caliza",
+      "quote": "El microclima reinante en este entorno serrano permite que junto a la vegetación esclerófila propia del monte mediterráneo, se localice otra vegetación residual de épocas más húmedas, como ocurre con los acerales, unos bosques caducifolios que podemos encontrar en los valles más húmedos de la zona caliza del parque, en los que se localizan casi 1500 especies de plantas diferentes.",
+      "english": "The prevailing microclimate in this mountain environment allows for the location of residual vegetation from wetter periods alongside the sclerophyllous vegetation typical of the Mediterranean forest, as is the case with the maple groves, deciduous forests that can be found in the wetter valleys of the limestone area of the park, where nearly 1500 different plant species are located."
+    },
+    {
+      "id": "s4",
+      "name": "acerales",
+      "quote": "El microclima reinante en este entorno serrano permite que junto a la vegetación esclerófila propia del monte mediterráneo, se localice otra vegetación residual de épocas más húmedas, como ocurre con los acerales, unos bosques caducifolios que podemos encontrar en los valles más húmedos de la zona caliza del parque, en los que se localizan casi 1500 especies de plantas diferentes.",
+      "english": "The prevailing microclimate in this mountain environment allows for the location of residual vegetation from wetter periods alongside the sclerophyllous vegetation typical of the Mediterranean forest, as is the case with the maple groves, deciduous forests that can be found in the wetter valleys of the limestone area of the park, where nearly 1500 different plant species are located."
+    },
+    {
+      "id": "s5",
+      "name": "bosques de galería",
+      "quote": "Uno de los paisajes más singulares y peculiares de esta Sierra es el de sus bosques de galería, que a modo de venas de vida, destacan entre las inmensas extensiones de pinar de reforestación.",
+      "english": "One of the most unique and peculiar landscapes of this Sierra is its gallery forests, which, like veins of life, stand out among the vast expanses of reforested pine forests."
+    },
+    {
+      "id": "s6",
+      "name": "sotos y ribera",
+      "quote": "La vegetación natural de estos sotos y ribera forma parte del ambiente atlántico y centroeuropeo, que está integrada por flora eurosiberiana, delatada por su carácter caducifolio, y que en lugares con clima típicamente mediterráneo, como la Sierra de Baza, está condicionada a la presencia de agua abundante.",
+      "english": "The natural vegetation of these groves and riverbanks is part of the Atlantic and Central European environment, composed of Eurosiberian flora, revealed by its deciduous character, and which in places with a typically Mediterranean climate, such as the Sierra de Baza, is conditioned by the presence of abundant water."
+    },
+    {
+      "id": "s7",
+      "name": "bosques de ribera mediterráneos",
+      "quote": "De modo que bosques de ribera mediterráneos, como estos, rodeados de una zona especialmente árida, en la que como hemos significado apenas se superan los 350 mm anuales, constituyen comunidades relicticas o residuales de aquellos bosques caducifolios postwümienses.",
+      "english": "Thus, Mediterranean riparian forests such as these, surrounded by an especially arid zone where, as we have indicated, annual rainfall barely exceeds 350 mm, constitute relict or residual communities of those post-Würm deciduous forests."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Limestone Valleys",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Riverside Groves and Gallery Forests",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "5a69b4451b72639ffaf5101a29a1d3080979f0d1f1eff2518f8d127ba936f890"
+}

@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lago de Sanabria",
+      "quote": "El lago de Sanabria es el elemento más característico de este territorio, el mayor lago de origen glaciar de la península ibérica, con 318,7 ha y una profundidad máxima de 53 m.",
+      "english": "Lake Sanabria is the most characteristic element of this territory, the largest lake of glacial origin in the Iberian Peninsula, with 318.7 ha and a maximum depth of 53 m."
+    },
+    {
+      "id": "s2",
+      "name": "Peña Trevinca",
+      "quote": "El parque ocupa en la actualidad una superficie de 32 302 ha. que afectan, parcial o totalmente, a los términos municipales de Galende, Cobreros, Trefacio y Porto, con una altitud que varía entre los 997 m s. n. m. en las orillas del lago, hasta los 2127 m s. n. m. del pico de Peña Trevinca.",
+      "english": "The park currently occupies an area of 32,302 ha. which partially or totally affects the municipalities of Galende, Cobreros, Trefacio and Porto, with an altitude that varies between 997 m above sea level on the shores of the lake, up to 2127 m above sea level at the Peña Trevinca peak."
+    },
+    {
+      "id": "s3",
+      "name": "río Tera",
+      "quote": "El lago está situado en el parque natural del lago de Sanabria, y se enmarcado en una cuenca exorreica donde el río Tera constituye el principal sistema hídrico de entrada y salida del sistema lacustre.",
+      "english": "The lake is located in the Lake Sanabria Natural Park, and is framed in an exorheic basin where the Tera River constitutes the main water system for entry and exit of the lacustrine system."
+    },
+    {
+      "id": "s4",
+      "name": "embalse de Puente Porto",
+      "quote": "Existen seis embalses en la cuenca hidrográfica del lago, denominados: embalse de Puente Porto, embalse de Playa, embalse de Cárdena, embalse de Garandones, embalse de Vega de Tera y embalse de Vega de Conde.",
+      "english": "There are six reservoirs in the lake's hydrographic basin, named: Puente Porto reservoir, Playa reservoir, Cárdena reservoir, Garandones reservoir, Vega de Tera reservoir and Vega de Conde reservoir."
+    },
+    {
+      "id": "s5",
+      "name": "embalse de Playa",
+      "quote": "Existen seis embalses en la cuenca hidrográfica del lago, denominados: embalse de Puente Porto, embalse de Playa, embalse de Cárdena, embalse de Garandones, embalse de Vega de Tera y embalse de Vega de Conde.",
+      "english": "There are six reservoirs in the lake's hydrographic basin, named: Puente Porto reservoir, Playa reservoir, Cárdena reservoir, Garandones reservoir, Vega de Tera reservoir and Vega de Conde reservoir."
+    },
+    {
+      "id": "s6",
+      "name": "embalse de Cárdena",
+      "quote": "Existen seis embalses en la cuenca hidrográfica del lago, denominados: embalse de Puente Porto, embalse de Playa, embalse de Cárdena, embalse de Garandones, embalse de Vega de Tera y embalse de Vega de Conde.",
+      "english": "There are six reservoirs in the lake's hydrographic basin, named: Puente Porto reservoir, Playa reservoir, Cárdena reservoir, Garandones reservoir, Vega de Tera reservoir and Vega de Conde reservoir."
+    },
+    {
+      "id": "s7",
+      "name": "Ribadelago",
+      "quote": "La estación meteorológica de Ribadelago de la AEMET, con coordenadas 42°07′15″N-06°44′52″W y a 1015 m s. n. m., situada en la orilla occidental del lago de Sanabria, muestra series climáticas que revelan una precipitación media anual de 1402,3 mm y una temperatura media anual de 8.1 °C.",
+      "english": "The Ribadelago meteorological station of AEMET, with coordinates 42°07′15″N-06°44′52″W and at 1015 m above sea level, located on the western shore of Lake Sanabria, shows climate series revealing an average annual precipitation of 1402.3 mm and an average annual temperature of 8.1 °C."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glacial Lake and Western Shores",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s3"
+      ]
+    },
+    {
+      "title": "High Peaks and Reservoirs",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "902c779b65aa9febccbe5ba96944e96ed6bd7da1626479c391947856cdf5d10d"
+}

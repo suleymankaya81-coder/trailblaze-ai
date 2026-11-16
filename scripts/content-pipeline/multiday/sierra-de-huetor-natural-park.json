@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Sierra de la Alfaguara",
+      "quote": "Además de la sierra de Huétor, que le da nombre, también comprende la sierra de la Alfaguara, la sierra de Cogollos, la sierra de Diezma, la sierra de Beas y estribaciones sur de la sierra de Arana, entre otras.",
+      "english": "In addition to the Sierra de Huétor, which gives it its name, it also includes the Sierra de la Alfaguara, the Sierra de Cogollos, the Sierra de Diezma, the Sierra de Beas and the southern foothills of the Sierra de Arana, among others."
+    },
+    {
+      "id": "s2",
+      "name": "Mirador de Sierra Nevada",
+      "quote": "Destaca el \"Mirador de Sierra Nevada\", en el municipio de Diezma a 1233 m s. n. m., que ofrece unas mejores vistas panorámicas de esta emblemática sierra.",
+      "english": "The \"Mirador de Sierra Nevada\" stands out, in the municipality of Diezma at 1233 m above sea level, which offers some of the best panoramic views of this emblematic mountain range."
+    },
+    {
+      "id": "s3",
+      "name": "Peñón del Majalijar",
+      "quote": "La máxima altura del parque es el Peñón del Majalijar con 1878 m s. n. m., aunque es superado por el Peñón de la Cruz (2027 m s. n. m.), pero se encuentra fuera de los límites del parque (pertenece a Sierra Harana).",
+      "english": "The maximum height of the park is the Peñón del Majalijar at 1878 m above sea level, although it is exceeded by the Peñón de la Cruz (2027 m above sea level), but it is outside the limits of the park (belonging to Sierra Harana)."
+    },
+    {
+      "id": "s4",
+      "name": "río Darro",
+      "quote": "Esta zona de media montaña, fuente de los ríos Darro y Fardes que forman estrechos valles que separan las verdes lomas, posee masas vegetales autóctonas compuestas por encinares ricos en matorral espinoso.",
+      "english": "This mid-mountain area, source of the Darro and Fardes rivers that form narrow valleys separating the green hills, possesses indigenous plant masses composed of holm oak forests rich in thorny scrub."
+    },
+    {
+      "id": "s5",
+      "name": "río Fardes",
+      "quote": "Esta zona de media montaña, fuente de los ríos Darro y Fardes que forman estrechos valles que separan las verdes lomas, posee masas vegetales autóctonas compuestas por encinares ricos en matorral espinoso.",
+      "english": "This mid-mountain area, source of the Darro and Fardes rivers that form narrow valleys separating the green hills, possesses indigenous plant masses composed of holm oak forests rich in thorny scrub."
+    },
+    {
+      "id": "s6",
+      "name": "Alfacar",
+      "quote": "Industria panadera de Alfacar.",
+      "english": "Bakery industry of Alfacar."
+    },
+    {
+      "id": "s7",
+      "name": "puerto de la Mora",
+      "quote": "La autovía A-92 corta el parque en dos partes (km 259) y pasa por su puerto más importante, el puerto de la Mora a 1380 m s. n. m.",
+      "english": "The A-92 highway cuts the park into two parts (km 259) and passes through its most important pass, the Puerto de la Mora at 1380 m above sea level."
+    }
+  ],
+  "days": [
+    {
+      "title": "Rivers and Valleys",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "High Peaks and Viewpoints",
+      "stop_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Mountain Passes and Ranges",
+      "stop_ids": [
+        "s1",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "7e305c29941fd062124f4fef90a24ac64c7656b2140b6d4732a0d4fa93204bae"
+}

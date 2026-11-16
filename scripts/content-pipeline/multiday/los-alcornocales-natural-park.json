@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "pico del Aljibe",
+      "quote": "La geomorfología del parque natural responde principalmente a la disposición y litología de los materiales aflorantes principales, esto es, las areniscas y arcillas de la Unidad del Aljibe, dando lugar a un conjunto de sierras de relieve abrupto y acusadas pendientes, siguiendo una dirección general norte-sur en el área septentrional y Sureste-Noroeste en el tercio meridional, presentando el punto más alto en el pico del Aljibe (1092 metros).",
+      "english": "The geomorphology of the natural park responds mainly to the arrangement and lithology of the main outcropping materials, that is, the sandstones and clays of the Aljibe Unit, giving rise to a set of mountains with abrupt relief and steep slopes, following a general north-south direction in the northern area and Southeast-Northwest in the southern third, reaching its highest point at the Aljibe peak (1092 meters)."
+    },
+    {
+      "id": "s2",
+      "name": "canutos",
+      "quote": "El terreno es de sierras relativamente suaves, de hasta 1000 m s. n. m., con algunos valles encajonados denominados canutos, en los que corren pequeños arroyos de montaña, que propician la otra característica fundamental del parque y la comunidad vegetal más relevante desde el punto de vista científico, unos bosques de galería de tipo subtropical o laurisilva que son únicos en la Europa continental, con presencia de laurel, rododendro, avellanillo, durillo, aliso, acompañados por acebo y numerosas especies de helechos, sumamente raro en estas latitudes, aunque este tipo de vegetación ocupaba la mayor parte del centro y sur de Europa durante la Era Terciaria.",
+      "english": "The terrain consists of relatively gentle mountains, up to 1000 m above sea level, with some narrow valleys called 'canutos', in which small mountain streams flow, fostering the other fundamental characteristic of the park and the most scientifically relevant plant community, subtropical or laurel-type gallery forests that are unique in continental Europe, with the presence of laurel, rhododendron, hazel, laurustinus, and alder, accompanied by holly and numerous species of ferns, extremely rare at these latitudes, although this type of vegetation occupied most of central and southern Europe during the Tertiary Era."
+    },
+    {
+      "id": "s3",
+      "name": "estrecho de Gibraltar",
+      "quote": "La cercanía del estrecho de Gibraltar y la disposición norte-sur de las serranías más litorales, condiciona su frecuencia e intensidad, llegándose a alcanzar los valores más altos de toda la península ibérica, prueba de lo cual es la existencia del mayor campo de producción de energía eólica de toda España.",
+      "english": "The proximity of the Strait of Gibraltar and the north-south arrangement of the more coastal mountain ranges condition its frequency and intensity, reaching the highest values in the entire Iberian Peninsula, proof of which is the existence of the largest wind energy production field in all of Spain."
+    },
+    {
+      "id": "s4",
+      "name": "Tarifa",
+      "quote": "Este espacio natural protegido comprende una gran franja con orientación sur-norte entre la zona costera de Tarifa, en el mismo estrecho de Gibraltar, hasta las sierras del interior, en los municipios de Cortes de la Frontera, Ubrique y El Bosque.",
+      "english": "This protected natural space comprises a large strip with a south-north orientation between the coastal area of Tarifa, right at the Strait of Gibraltar, up to the inland mountain ranges, in the municipalities of Cortes de la Frontera, Ubrique, and El Bosque."
+    },
+    {
+      "id": "s5",
+      "name": "Cortes de la Frontera",
+      "quote": "La mayor parte del parque natural pertenece a la provincia de Cádiz y sólo una parte es de la provincia de Málaga, con territorio de 18 municipios diferentes, Alcalá de los Gazules, Algar, Algeciras, Arcos de la Frontera, Benalup-Casas Viejas, Benaocaz, Castellar de la Frontera, El Bosque, Jerez de la Frontera, Jimena de la Frontera, Los Barrios, Medina Sidonia, Prado del Rey, San José del Valle, San Roque, Tarifa, Ubrique y Cortes de la Frontera y una población total de unas 380 000 personas.",
+      "english": "Most of the natural park belongs to the province of Cádiz and only a part is in the province of Málaga, with territory from 18 different municipalities: Alcalá de los Gazules, Algar, Algeciras, Arcos de la Frontera, Benalup-Casas Viejas, Benaocaz, Castellar de la Frontera, El Bosque, Jerez de la Frontera, Jimena de la Frontera, Los Barrios, Medina Sidonia, Prado del Rey, San José del Valle, San Roque, Tarifa, Ubrique, and Cortes de la Frontera, and a total population of about 380,000 people."
+    },
+    {
+      "id": "s6",
+      "name": "Ubrique",
+      "quote": "Este espacio natural protegido comprende una gran franja con orientación sur-norte entre la zona costera de Tarifa, en el mismo estrecho de Gibraltar, hasta las sierras del interior, en los municipios de Cortes de la Frontera, Ubrique y El Bosque.",
+      "english": "This protected natural space comprises a large strip with a south-north orientation between the coastal area of Tarifa, right at the Strait of Gibraltar, up to the inland mountain ranges, in the municipalities of Cortes de la Frontera, Ubrique, and El Bosque."
+    },
+    {
+      "id": "s7",
+      "name": "El Bosque",
+      "quote": "Este espacio natural protegido comprende una gran franja con orientación sur-norte entre la zona costera de Tarifa, en el mismo estrecho de Gibraltar, hasta las sierras del interior, en los municipios de Cortes de la Frontera, Ubrique y El Bosque.",
+      "english": "This protected natural space comprises a large strip with a south-north orientation between the coastal area of Tarifa, right at the Strait of Gibraltar, up to the inland mountain ranges, in the municipalities of Cortes de la Frontera, Ubrique, and El Bosque."
+    }
+  ],
+  "days": [
+    {
+      "title": "Coastal Heights and Southern Strait",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Valleys and Peaks of the Interior",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Northern Gateway Villages",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "7dfe7b4818d8c46f6da8bdc2ffab9aa7d5cea9e70661e35eb49e97ccbc269494"
+}

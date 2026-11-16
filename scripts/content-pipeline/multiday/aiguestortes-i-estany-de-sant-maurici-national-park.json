@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "valle del río San Nicolás",
+      "quote": "Destacan, entre todos, dos valles: al oeste el valle del río San Nicolás, con sus característicos prados y meandros de los que proviene el nombre de \"Aigüestortes\" (aguas tortuosas).",
+      "english": "Two valleys stand out among all: to the west the valley of the San Nicolás river, with its characteristic meadows and meanders from which the name \"Aigüestortes\" (winding waters) originates."
+    },
+    {
+      "id": "s2",
+      "name": "lago de San Mauricio",
+      "quote": "Al este el valle del río Escrita con el lago de San Mauricio.",
+      "english": "To the east is the valley of the Escrita river with the lake of San Mauricio."
+    },
+    {
+      "id": "s3",
+      "name": "Los Encantados",
+      "quote": "El lago se encuentra a los pies de los imponentes Los Encantados.",
+      "english": "The lake is located at the foot of the imposing Los Encantados."
+    },
+    {
+      "id": "s4",
+      "name": "lago Llong",
+      "quote": "Entre los lagos Llong y Llebreta el río de San Nicolás forma los característicos meandros origen del nombre Aigüestortes, estos meandros, que no son exclusivos de este lugar, se forman en lugares llanos, al rellenarse de sedimentos el espacio ocupado por un antiguo lago.",
+      "english": "Between the Llong and Llebreta lakes, the San Nicolás river forms the characteristic meanders that are the origin of the name Aigüestortes; these meanders, which are not exclusive to this place, form in flat areas when the space occupied by an ancient lake fills with sediment."
+    },
+    {
+      "id": "s5",
+      "name": "lago Llebreta",
+      "quote": "En la vertiente de Bohí ha de distinguirse el valle de San Nicolás y la cabecera del valle del río Noguera de Tor.",
+      "english": "On the Bohí slope, the San Nicolás valley and the head of the Noguera de Tor river valley must be distinguished."
+    },
+    {
+      "id": "s6",
+      "name": "bosque de la Mata de Valencia de Aneu",
+      "quote": "En esta zona periférica existen rincones de gran belleza y valor naturalista, como el bosque de la Mata de Valencia de Aneu, los valles de Gerber y Cabanes, el circo de Colomers, el circo de Saboredo, la ribera de Valarties, el valle de Besiberri, los lagos de Cabdella, el pico de Montardo y muchos otros.",
+      "english": "In this peripheral zone there are corners of great beauty and naturalist value, such as the Mata de Valencia de Aneu forest, the Gerber and Cabanes valleys, the Colomers circus, the Saboredo circus, the Valarties riverbank, the Besiberri valley, the Cabdella lakes, the Montardo peak and many others."
+    },
+    {
+      "id": "s7",
+      "name": "pico de Montardo",
+      "quote": "En esta zona periférica existen rincones de gran belleza y valor naturalista, como el bosque de la Mata de Valencia de Aneu, los valles de Gerber y Cabanes, el circo de Colomers, el circo de Saboredo, la ribera de Valarties, el valle de Besiberri, los lagos de Cabdella, el pico de Montardo y muchos otros.",
+      "english": "In this peripheral zone there are corners of great beauty and naturalist value, such as the Mata de Valencia de Aneu forest, the Gerber and Cabanes valleys, the Colomers circus, the Saboredo circus, the Valarties riverbank, the Besiberri valley, the Cabdella lakes, the Montardo peak and many others."
+    }
+  ],
+  "days": [
+    {
+      "title": "Valleys and Lakes of San Nicolás",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "San Mauricio and the Enchanted Peaks",
+      "stop_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Peripheral Forests and High Peaks",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "8e7662a2b68dd2d9d36206cb272bc2a0932be248fdb3312818f20a4f9a256953"
+}

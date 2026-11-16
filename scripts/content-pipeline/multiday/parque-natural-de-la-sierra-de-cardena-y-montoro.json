@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "río Yeguas",
+      "quote": "Frente a este paisaje de equilibrio, el río Yeguas, línea divisoria natural con el parque vecino, recorre su vertiente oriental a través de grandes barranqueras y excava a su paso un valle escarpado de enorme belleza.",
+      "english": "Against this landscape of balance, the Yeguas River, a natural dividing line with the neighboring park, runs through its eastern slope across large gullies and carves out a steep valley of enormous beauty as it passes."
+    },
+    {
+      "id": "s2",
+      "name": "Picos Colmena",
+      "quote": "Las alturas oscilan entre los 180 y los 828 m y las máximas cotas se sitúan en los Picos Colmena (828 m) y Pingajo (805 m).",
+      "english": "The heights range between 180 and 828 m, and the highest points are located at Picos Colmena (828 m) and Pingajo (805 m)."
+    },
+    {
+      "id": "s3",
+      "name": "Pingajo",
+      "quote": "Las alturas oscilan entre los 180 y los 828 m y las máximas cotas se sitúan en los Picos Colmena (828 m) y Pingajo (805 m).",
+      "english": "The heights range between 180 and 828 m, and the highest points are located at Picos Colmena (828 m) and Pingajo (805 m)."
+    },
+    {
+      "id": "s4",
+      "name": "Cerro Cabezas",
+      "quote": "Cerro Cabezas: Afloramiento granítico del batolito de Los Pedroches.",
+      "english": "Cerro Cabezas: Granitic outcrop of the Los Pedroches batholith."
+    },
+    {
+      "id": "s5",
+      "name": "Barranco del arroyo Arenosillo",
+      "quote": "Este barranco se ha originado por el encajonamiento de la red fluvial a favor de las fracturas y fallas en las rocas graníticas del Batolito; por el sur, su trazado enlaza la plataforma granítica con las laderas pizarrosas del Carbonífero y pone de manifiesto las diferencias morfológicas entre ambas.",
+      "english": "This ravine originated from the narrowing of the fluvial network due to fractures and faults in the granitic rocks of the Batholith; to the south, its path links the granitic platform with the Carboniferous slate slopes and reveals the morphological differences between the two."
+    },
+    {
+      "id": "s6",
+      "name": "Fuente de la Peñuela",
+      "quote": "Situada en el interior de la plataforma granítica de Carde– ña, es un ejemplo de los escasos recursos de aguas subterráneas de esta región.",
+      "english": "Located in the interior of the Cardeña granitic platform, it is an example of the scarce groundwater resources of this region."
+    },
+    {
+      "id": "s7",
+      "name": "Cerro de la Minilla",
+      "quote": "Cerro de la Minilla: Lugar de transición entre el granito y las pizarras carboníferas con laderas abarrancadas.",
+      "english": "Cerro de la Minilla: A place of transition between granite and carboniferous slates with gullied slopes."
+    },
+    {
+      "id": "s8",
+      "name": "Ventorrillo de la Niña",
+      "quote": "Sucesión estratigráfica del Ventorrillo de la Niña: Ladera formada por varios barrancos, donde se pueden observar los materiales sedimentarios del Parque y sus relaciones estratigráficas.",
+      "english": "Stratigraphic succession of Ventorrillo de la Niña: A slope formed by several ravines, where the sedimentary materials of the Park and their stratigraphic relationships can be observed."
+    }
+  ],
+  "days": [
+    {
+      "title": "Rivers and Summits of the East",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Geological Formations of the Batholith",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Sedimentary Slopes and Transitions",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "a295d3d8def56318f69d8c7689cea371a9e1a47218119bde2464f9e114ae6e93"
+}

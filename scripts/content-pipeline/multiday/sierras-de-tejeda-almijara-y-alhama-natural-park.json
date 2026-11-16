@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "acantilados de Maro",
+      "quote": "Es de dirección aproximadamente noroeste a sureste y llega hasta el mar en la zona del paraje natural los acantilados de Maro.​",
+      "english": "It runs approximately from northwest to southeast and reaches the sea in the area of the cliffs of Maro natural site."
+    },
+    {
+      "id": "s2",
+      "name": "cañón del río Verde",
+      "quote": "El paisaje es escarpado y abrupto, con numerosas crestas y profundos valles, como el cañón del río Verde.",
+      "english": "The landscape is steep and rugged, with numerous ridges and deep valleys, such as the Green River canyon."
+    },
+    {
+      "id": "s3",
+      "name": "pico de La Maroma",
+      "quote": "Sierra Tejeda es la parte la más elevada de este conjunto montañoso, llegando a los 2066 metros en el pico de La Maroma.",
+      "english": "Sierra Tejeda is the highest part of this mountain group, reaching 2,066 meters at the La Maroma peak."
+    },
+    {
+      "id": "s4",
+      "name": "Cueva de Nerja",
+      "quote": "Se pueden encontrar algunas cuevas en el lugar, entre las cuales destaca la Cueva de Nerja.",
+      "english": "Some caves can be found in the place, among which the Nerja Cave stands out."
+    },
+    {
+      "id": "s5",
+      "name": "La Resinera",
+      "quote": "Los principales enclaves de interés botánico están representados por las altas cumbre, valles y barrancos, teniendo como localizaciones más características la vertiente meridional de la sierra de Tejeda, sierra de Játar, la Resinera, la cuenca alta del río Verde y sierra Cázulas, sierra de Nerja y sierras de Cómpeta y Enmedio.",
+      "english": "The main enclaves of botanical interest are represented by high peaks, valleys, and ravines, with the most characteristic locations being the southern slope of the Sierra de Tejeda, Sierra de Játar, La Resinera, the upper basin of the Green River and Sierra Cázulas, Sierra de Nerja, and the Sierras of Cómpeta and Enmedio."
+    },
+    {
+      "id": "s6",
+      "name": "El Acebuchal",
+      "quote": "Existen iniciativas de turismo rural que han logrado volver a poblar El Acebuchal.​",
+      "english": "There are rural tourism initiatives that have managed to repopulate El Acebuchal."
+    },
+    {
+      "id": "s7",
+      "name": "La Maroma",
+      "quote": "La zona más alta (La Maroma) sufre una afluencia masiva de visitantes.",
+      "english": "The highest area (La Maroma) suffers from a massive influx of visitors."
+    }
+  ],
+  "days": [
+    {
+      "title": "Caves and Coastal Cliffs",
+      "stop_ids": [
+        "s1",
+        "s4"
+      ]
+    },
+    {
+      "title": "River Canyons and Rural Villages",
+      "stop_ids": [
+        "s2",
+        "s6"
+      ]
+    },
+    {
+      "title": "High Peaks and Botanical Enclaves",
+      "stop_ids": [
+        "s3",
+        "s5",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "333f24f07d42f243a65fc1a1f194ddad354d9e6cd3a8d9c6d34fd47258066703"
+}

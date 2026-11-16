@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Aldeadávila de la Ribera",
+      "quote": "24 pertenecientes a la provincia de Salamanca: Ahigal de los Aceiteros, Aldeadávila de la Ribera, Almendra, Barruecopardo, Bermellar, La Bouza, Cabeza del Caballo, Cerezal de Peñahorcada, La Fregeneda, Hinojosa de Duero, Lumbrales, Masueco, Mieza, La Peña, Pereña de la Ribera, Puerto Seguro, Saldeana, San Felices de los Gallegos, Saucelle, Sobradillo, Trabanca, Villarino de los Aires, Vilvestre y La Zarza de Pumareda.",
+      "english": "24 belonging to the province of Salamanca: Ahigal de los Aceiteros, Aldeadávila de la Ribera, Almendra, Barruecopardo, Bermellar, La Bouza, Cabeza del Caballo, Cerezal de Peñahorcada, La Fregeneda, Hinojosa de Duero, Lumbrales, Masueco, Mieza, La Peña, Pereña de la Ribera, Puerto Seguro, Saldeana, San Felices de los Gallegos, Saucelle, Sobradillo, Trabanca, Villarino de los Aires, Vilvestre and La Zarza de Pumareda."
+    },
+    {
+      "id": "s2",
+      "name": "Masueco",
+      "quote": "Dentro de estos 37 términos municipales existen otras localidades anejas o pedanías que también forman parte del parque.",
+      "english": "Within these 37 municipal districts there are other annexed locations or hamlets that also form part of the park."
+    },
+    {
+      "id": "s3",
+      "name": "garganta del Duero",
+      "quote": "La profunda hendidura abierta por el encajonamiento del Duero y sus afluentes suaviza el régimen térmico hasta el punto de permitir el desarrollo de una inusual vegetación termóﬁla y de cultivos típicamente mediterráneos en bancales, ya que la garganta del Duero se comporta como un condensador de calor.",
+      "english": "The deep crevice opened by the boxing in of the Duero and its tributaries softens the thermal regime to the point of allowing the development of unusual thermophilic vegetation and typically Mediterranean terrace crops, since the Duero gorge behaves like a heat condenser."
+    },
+    {
+      "id": "s4",
+      "name": "Cañones del Duero",
+      "quote": "La primera de las zonas protegidas es la denominada Cañones del Duero (ZEPA-ES0000206, con 17 374 ha, y ZEC-ES4190102, con 13 611 ha) que comprende la ribera del Duero aguas arriba del límite con Portugal, entre la confluencia con el río Esla y la ciudad de Zamora, y que incluye el embalse de Villalcampo.",
+      "english": "The first of the protected zones is called Cañones del Duero (ZEPA-ES0000206, with 17,374 ha, and ZEC-ES4190102, with 13,611 ha) which comprises the Duero riverbank upstream from the border with Portugal, between the confluence with the Esla river and the city of Zamora, and which includes the Villalcampo reservoir."
+    },
+    {
+      "id": "s5",
+      "name": "embalse de Villalcampo",
+      "quote": "La primera de las zonas protegidas es la denominada Cañones del Duero (ZEPA-ES0000206, con 17 374 ha, y ZEC-ES4190102, con 13 611 ha) que comprende la ribera del Duero aguas arriba del límite con Portugal, entre la confluencia con el río Esla y la ciudad de Zamora, y que incluye el embalse de Villalcampo.",
+      "english": "The first of the protected zones is called Cañones del Duero (ZEPA-ES0000206, with 17,374 ha, and ZEC-ES4190102, with 13,611 ha) which comprises the Duero riverbank upstream from the border with Portugal, between the confluence with the Esla river and the city of Zamora, and which includes the Villalcampo reservoir."
+    },
+    {
+      "id": "s6",
+      "name": "Fermoselle",
+      "quote": "13 pertenecientes a la provincia de Zamora: Argañín, Fariza, Fermoselle, Fonfría, Gamones, Moral de Sayago, Moralina, Pino del Oro, Torregamones, Villadepera, Villalcampo, Villar del Buey y Villardiegua de la Ribera.",
+      "english": "13 belonging to the province of Zamora: Argañín, Fariza, Fermoselle, Fonfría, Gamones, Moral de Sayago, Moralina, Pino del Oro, Torregamones, Villadepera, Villalcampo, Villar del Buey and Villardiegua de la Ribera."
+    },
+    {
+      "id": "s7",
+      "name": "Salto de Aldeadávila",
+      "quote": "Son Badilla, Carbajosa, Castro de Alcañices, Corporario, Cozcurrita, Fuentes de Masueco, Fornillos de Fermoselle, Formariz, Mámoles, Palazuelo de Sayago, Pinilla de Fermoselle, Salto de Aldeadávila, Salto de Castro, Salto de Saucelle, Salto de Villalcampo, Tudera y Zafara.",
+      "english": "They are Badilla, Carbajosa, Castro de Alcañices, Corporario, Cozcurrita, Fuentes de Masueco, Fornillos de Fermoselle, Formariz, Mámoles, Palazuelo de Sayago, Pinilla de Fermoselle, Salto de Aldeadávila, Salto de Castro, Salto de Saucelle, Salto de Villalcampo, Tudera and Zafara."
+    }
+  ],
+  "days": [
+    {
+      "title": "Villages and Canyons of Salamanca",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Zamora River Gorges and Dams",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Historical Settlements and Hydroelectric Views",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "6c63103691900cf8d87a96d4226af902042669646bb822cc508d97a7163e014c"
+}

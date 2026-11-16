@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "desfiladero de los Gaitanes",
+      "quote": "El Caminito del Rey es un paso construido en las paredes del desfiladero de los Gaitanes, entre los términos municipales de Ardales, Álora y Antequera, en la provincia de Málaga, comunidad autónoma de Andalucía, España.",
+      "english": "The Caminito del Rey is a passage built into the walls of the Gaitanes Gorge, between the municipal terms of Ardales, Álora and Antequera, in the province of Málaga, autonomous community of Andalusia, Spain."
+    },
+    {
+      "id": "s2",
+      "name": "Saltos del Gaitanejo",
+      "quote": "La Sociedad Hidroeléctrica del Chorro, propietaria de los Saltos del Gaitanejo y del Chorro, necesitaba un acceso a ambos para facilitar el paso de los operarios de mantenimiento, transporte de materiales y vigilancia.",
+      "english": "The Chorro Hydroelectric Society, owner of the Gaitanejo and Chorro Falls, needed access to both to facilitate the passage of maintenance workers, transport of materials and surveillance."
+    },
+    {
+      "id": "s3",
+      "name": "embalse Guadalhorce-Guadalteba",
+      "quote": "En 1921 el rey Alfonso XIII presidió la inauguración de los embalses Guadalhorce-Guadalteba, cruzando para ello el camino previamente construido, o al menos lo visitó.",
+      "english": "In 1921 King Alfonso XIII presided over the inauguration of the Guadalhorce-Guadalteba reservoirs, crossing the previously built path for this purpose, or at least visited it."
+    },
+    {
+      "id": "s4",
+      "name": "Balconcillo de los Gaitanes",
+      "quote": "Estas dos paredes rocosas unidas por el denominado «Balconcillo de los Gaitanes» son de las más famosas de la provincia.",
+      "english": "These two rocky walls joined by the so-called 'Balconcillo de los Gaitanes' are some of the most famous in the province."
+    },
+    {
+      "id": "s5",
+      "name": "centro de visitantes",
+      "quote": "Actualmente se está construyendo un centro de visitantes cerca del acceso norte, dirección Ardales, que incluirá un punto de información y souvenirs, una cafetería, aseos y 200 plazas de aparcamiento para coches y diecisiete para autobuses.",
+      "english": "A visitor center is currently being built near the northern access, towards Ardales, which will include an information and souvenir point, a cafeteria, toilets and 200 parking spaces for cars and seventeen for buses."
+    },
+    {
+      "id": "s6",
+      "name": "estación de El Chorro-Caminito del Rey",
+      "quote": "También se puede llegar desde Málaga hasta la estación de El Chorro-Caminito del Rey con los servicios de la línea 67 de Media Distancia de Renfe, que suele tardar entre 45 minutos y una hora.",
+      "english": "It is also possible to get from Málaga to the El Chorro-Caminito del Rey station with the Renfe Media Distancia line 67 services, which usually take between 45 minutes and an hour."
+    },
+    {
+      "id": "s7",
+      "name": "Restaurante el Kiosko",
+      "quote": "Hay dos caminos para acceder, por el túnel que hay junto al Restaurante el Kiosko con una distancia de 2,7 km y la otra es por el túnel pequeño que hay a unos 100 metros de la zona de aparcamiento, con una distancia de 1,5 km.",
+      "english": "There are two paths to access, through the tunnel next to the El Kiosko Restaurant with a distance of 2.7 km and the other is through the small tunnel about 100 meters from the parking area, with a distance of 1.5 km."
+    }
+  ],
+  "days": [
+    {
+      "title": "Gorge Heights and Engineering Marvels",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s2"
+      ]
+    },
+    {
+      "title": "Northern Access and Reservoirs",
+      "stop_ids": [
+        "s5",
+        "s7",
+        "s3"
+      ]
+    },
+    {
+      "title": "Southern Gateway",
+      "stop_ids": [
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "fefd4de43bf101ad24dce3a63b4bdd00c63ea6bc604fcf9d0ddbcb7abfd1c3f6"
+}

@@ -66,7 +66,7 @@ def fuller_source(src, country):
     if not m: return None
     from urllib.parse import unquote, quote
     lang, title = m[1], unquote(m[2]).replace('_', ' ')
-    local = 'it' if country == 'it' else 'de'
+    local = country if country in ('it', 'es') else 'de'
     if lang != local:
         d = wiki_json(f'https://{lang}.wikipedia.org/w/api.php', {'action':'query','format':'json','formatversion':2,'titles':title,'redirects':1,'prop':'langlinks','lllang':local})
         links = d['query']['pages'][0].get('langlinks', [])
@@ -119,7 +119,7 @@ def main():
                     src, text = extra, extra['text']
             if len(text) < 1500: raise ValueError('Source too short for a multi-day plan; stays 1 day')
             m = re.match(r'https://(\w\w)\.wikipedia', src['url'])
-            lang = m[1] if m else ('de' if row['country_code'] in ('de','at','ch') else 'it' if row['country_code'] == 'it' else 'en')
+            lang = m[1] if m else ('de' if row['country_code'] in ('de','at','ch') else row['country_code'] if row['country_code'] in ('it', 'es') else 'en')
             stops, days = verified(extract(slug, row['name'], text), text, lang)
             if len(days) < 2: raise ValueError(f'Only {len(days)} verified day(s) of sights in the source; stays 1 day')
             base = packet['approved_stops'][:1]

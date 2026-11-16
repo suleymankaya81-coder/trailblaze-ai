@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Roque de los Muchachos",
+      "quote": "La depresión que forma la Caldera se encuentra entre los 600 y los 900 metros sobre el nivel del mar, mientras que la crestería que forma el cerco rocoso que la rodea alcanza los 2426 metros en el punto más alto, el llamado Roque de los Muchachos, lugar en el que se ubica el Observatorio del Roque de los Muchachos.",
+      "english": "The depression that forms the Caldera is located between 600 and 900 meters above sea level, while the crest that forms the rocky fence surrounding it reaches 2,426 meters at its highest point, the so-called Roque de los Muchachos, where the Roque de los Muchachos Observatory is located."
+    },
+    {
+      "id": "s2",
+      "name": "Observatorio del Roque de los Muchachos",
+      "quote": "La depresión que forma la Caldera se encuentra entre los 600 y los 900 metros sobre el nivel del mar, mientras que la crestería que forma el cerco rocoso que la rodea alcanza los 2426 metros en el punto más alto, el llamado Roque de los Muchachos, lugar en el que se ubica el Observatorio del Roque de los Muchachos.",
+      "english": "The depression that forms the Caldera is located between 600 and 900 meters above sea level, while the crest that forms the rocky fence surrounding it reaches 2,426 meters at its highest point, the so-called Roque de los Muchachos, where the Roque de los Muchachos Observatory is located."
+    },
+    {
+      "id": "s3",
+      "name": "Barranco de las Angustias",
+      "quote": "Por estos motivos se puede ver en el inicio del Barranco de las Angustias que los dos últimos afluentes en las paredes originales de la caldera drenan hacia el centro de la misma, lo que no podría explicarse mediante una erupción explosiva.",
+      "english": "For these reasons, it can be seen at the beginning of the Barranco de las Angustias that the last two tributaries in the original walls of the caldera drain toward its center, which could not be explained by an explosive eruption."
+    },
+    {
+      "id": "s4",
+      "name": "Salto de la Desfondada",
+      "quote": "Sirva de ejemplo el Salto de la Desfondada tiene una caída de unos 150 m.",
+      "english": "As an example, the Salto de la Desfondada has a drop of about 150 m."
+    },
+    {
+      "id": "s5",
+      "name": "Río de Almendro Amargo",
+      "quote": "En la mayoría de las fuentes encontramos aguas limpias y cristalinas, pero existen también otras alteradas en su composición por gran cantidad de materiales, como las procedentes del Río de Almendro Amargo, de un color amarillo rojizo debido a los materiales férricos de la zona.",
+      "english": "In most sources we find clean and crystalline waters, but there are also others altered in their composition by a large amount of materials, such as those coming from the Río de Almendro Amargo, with a reddish-yellow color due to the iron materials in the area."
+    },
+    {
+      "id": "s6",
+      "name": "Taburiente",
+      "quote": "Las dos cuencas hidrológicas principales son las de Taburiente y Almendro Amargo, las cuales confluyen en el punto donde se inicia el Barranco de las Angustias, única salida natural de la Caldera, donde desemboca en el mar.",
+      "english": "The two main hydrological basins are those of Taburiente and Almendro Amargo, which converge at the point where the Barranco de las Angustias begins, the only natural outlet of the Caldera, where it flows into the sea."
+    },
+    {
+      "id": "s7",
+      "name": "Almendro Amargo",
+      "quote": "Las dos cuencas hidrológicas principales son las de Taburiente y Almendro Amargo, las cuales confluyen en el punto donde se inicia el Barranco de las Angustias, única salida natural de la Caldera, donde desemboca en el mar.",
+      "english": "The two main hydrological basins are those of Taburiente and Almendro Amargo, which converge at the point where the Barranco de las Angustias begins, the only natural outlet of the Caldera, where it flows into the sea."
+    }
+  ],
+  "days": [
+    {
+      "title": "Peaks and Basins of Taburiente",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Waterfalls and River Gorges",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "576db09934ea0f325aceb5a8437e18e8392a6c41ab21c9c17214ab9fa0d6263b"
+}

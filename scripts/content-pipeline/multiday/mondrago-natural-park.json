@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Es Cap des Moro",
+      "quote": "Testimonio de esta actividad son las antiguas canteras que vemos en Es Cap des Moro y s'Estret des Temps.",
+      "english": "Evidence of this activity are the old quarries that we see in Es Cap des Moro and s'Estret des Temps."
+    },
+    {
+      "id": "s2",
+      "name": "s'Estret des Temps",
+      "quote": "Testimonio de esta actividad son las antiguas canteras que vemos en Es Cap des Moro y s'Estret des Temps.",
+      "english": "Evidence of this activity are the old quarries that we see in Es Cap des Moro and s'Estret des Temps."
+    },
+    {
+      "id": "s3",
+      "name": "Ses Fonts de n'Alis",
+      "quote": "La vegetación que encontramos en el estanque de Ses Fonts de n'Alis es propia de ambientes salobres donde la sal impone sus condiciones.",
+      "english": "The vegetation that we find in the Ses Fonts de n'Alis pond is typical of brackish environments where salt imposes its conditions."
+    },
+    {
+      "id": "s4",
+      "name": "s'Amarador",
+      "quote": "En el estanque de s'Amarador encontramos una vegetación más propia de ambientes menos salinos, en el cual destaca el cañizo (Phragmites australis).",
+      "english": "In the s'Amarador pond we find a vegetation more typical of less saline environments, in which reed (Phragmites australis) stands out."
+    },
+    {
+      "id": "s5",
+      "name": "Playa de s'Amarador",
+      "quote": "La encontraremos principalmente en la playa de s'Amarador. donde se pueden ver lagunas plantas propias de ambientes arenosos.",
+      "english": "We will find it mainly at the s'Amarador beach, where some plants typical of sandy environments can be seen."
+    },
+    {
+      "id": "s6",
+      "name": "Caló den Garrot",
+      "quote": "En la playa del Caló den Garrot esta vegetación se encuentra muy degradada debido al exceso de circulación rodada asociada a los equipamientos turísticos.",
+      "english": "At the Caló den Garrot beach, this vegetation is very degraded due to the excess of wheeled traffic associated with tourist facilities."
+    },
+    {
+      "id": "s7",
+      "name": "Mondragó",
+      "quote": "Todo ello tiene como resultado la formación de valles torrenciales o barrancos largos y estrechos, la desembocadura de los cuales queda invadida por el mar creando de esta manera las calas como la de Mondragón.",
+      "english": "All this results in the formation of torrential valleys or long and narrow ravines, the mouths of which are invaded by the sea, thus creating coves like that of Mondragón."
+    }
+  ],
+  "days": [
+    {
+      "title": "Coastal Quarries and Coves",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Wetlands and Sandy Shores",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "de8b590a804b2100f7f061551f0af8d2b8828b59bb92c6bf7de5569b44dd7f6c"
+}

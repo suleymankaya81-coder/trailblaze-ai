@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "castillo de Eramprunyá",
+      "quote": "Muy distinta es la zona del castillo de Eramprunyá, caracterizada por asperones y conglomerados de colores rojizos que conforman un paisaje muy escarpado.",
+      "english": "Very different is the area of the Eramprunyá castle, characterized by sandstones and conglomerates of reddish colors that make up a very steep landscape."
+    },
+    {
+      "id": "s2",
+      "name": "río subterráneo de la Falconera",
+      "quote": "De esta manera, la cuenca de drenaje viene definida por las aguas superficiales, prácticamente nulas, y las aguas subterráneas, entre las que destaca el río subterráneo de la Falconera, con un recorrido de 600 m, una profundidad sobre el nivel del mar de 81 m y un caudal medio del orden de 500 l/s, llegando a los 200 l/s en períodos de veraneo y a los 10 000 l/s en fuertes avenidas.",
+      "english": "In this way, the drainage basin is defined by surface waters, which are practically non-existent, and groundwater, among which the underground Falconera river stands out, with a course of 600 m, a depth of 81 m above sea level and an average flow in the order of 500 l/s, reaching 200 l/s in summer periods and 10,000 l/s during heavy floods."
+    },
+    {
+      "id": "s3",
+      "name": "Olivella",
+      "quote": "El resto de los castillos de Eramprunyà y Olivella, entre las rutas más clásicas del excursionismo en el Garraf, ilustran el período de las guerras de Marca contra los sarracenos.",
+      "english": "The remains of the Eramprunyà and Olivella castles, among the most classic hiking routes in Garraf, illustrate the period of the March wars against the Saracens."
+    },
+    {
+      "id": "s4",
+      "name": "iglesia de Olivella",
+      "quote": "Un buen ejemplo del románico de la zona es la pequeña iglesia de Olivella.",
+      "english": "A good example of the Romanesque style in the area is the small church of Olivella."
+    },
+    {
+      "id": "s5",
+      "name": "Campdàsens",
+      "quote": "Aún encontramos algún rebaño de cabras en la zona de Campdàsens.",
+      "english": "We still find some goat herds in the Campdàsens area."
+    },
+    {
+      "id": "s6",
+      "name": "Plana Novella",
+      "quote": "Aunque de forma muy escasa, la actividad de segunda residencia ha generado movimiento económico: prueba de ello son una única urbanización en Plana Novella y la reciente restauración de algunas masías.",
+      "english": "Although to a very small extent, second home activity has generated economic movement: proof of this is a single housing development in Plana Novella and the recent restoration of some farmhouses."
+    },
+    {
+      "id": "s7",
+      "name": "El fondo de Vallgrassa",
+      "quote": "El fondo de Vallgrassa",
+      "english": "The bottom of Vallgrassa"
+    },
+    {
+      "id": "s8",
+      "name": "Camino de les Costas",
+      "quote": "Camino de les Costas",
+      "english": "The Costas path"
+    }
+  ],
+  "days": [
+    {
+      "title": "Castles and Coastline",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s8"
+      ]
+    },
+    {
+      "title": "Villages and Valleys",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Rural Settlements",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "cbe0f14f82e733fdc3a870440e7fc3224b854f2e34b3e8cf74437bc843a1acfa"
+}

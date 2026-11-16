@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Cueva Huerta",
+      "quote": "Los valles están formados por las cuencas del río Taja, el del río Valdecarzana y el del río Val de Sampedro o río Páramo, en este último está situada el monumento natural de Cueva Huerta.",
+      "english": "The valleys are formed by the basins of the Taja River, the Valdecarzana River, and the Val de Sampedro or Páramo River, in the latter of which the natural monument of Cueva Huerta is located."
+    },
+    {
+      "id": "s2",
+      "name": "Puertos de Marabio",
+      "quote": "Monumento natural de los Puertos de Marabio",
+      "english": "Natural monument of the Puertos de Marabio."
+    },
+    {
+      "id": "s3",
+      "name": "Abrigos Rupestres de Fresnedo",
+      "quote": "Es una zona de gran valor arqueológico, de los que destaca los Abrigos Rupestres de Fresnedo, cercanos al pueblo de Fresnedo (Teverga), los castros de Focella y Barrio (Teverga) o Ricabo y El Collao (Quirós).",
+      "english": "It is an area of great archaeological value, highlighting the Fresnedo Rock Shelters, near the village of Fresnedo (Teverga), the hillforts of Focella and Barrio (Teverga) or Ricabo and El Collao (Quirós)."
+    },
+    {
+      "id": "s4",
+      "name": "Camino Real del Puerto de la Mesa",
+      "quote": "En este parque también está presente el Camino Real del Puerto de la Mesa, calzada romana asentada sobre una senda ya utilizada por los primeros pobladores de la zona.",
+      "english": "Also present in this park is the Camino Real del Puerto de la Mesa, a Roman road built upon a path already used by the first inhabitants of the area."
+    },
+    {
+      "id": "s5",
+      "name": "lago El Llegu",
+      "quote": "De estas últimas destacan las de la zona del lago El Llegu en Lena.",
+      "english": "Of these latter types, those in the area of Lake El Llegu in Lena stand out."
+    },
+    {
+      "id": "s6",
+      "name": "puertos de Agüeria",
+      "quote": "Dentro de esta especie se puede destacar la rana de San Antón (Hyla arborea) en los puertos de Agüeria y de rana común (Pelophylax perezi) en el puerto de La Cubilla.",
+      "english": "Within this species, the San Antón frog (Hyla arborea) in the Agüeria passes and the common frog (Pelophylax perezi) in the La Cubilla pass can be highlighted."
+    },
+    {
+      "id": "s7",
+      "name": "puerto de La Cubilla",
+      "quote": "Dentro de esta especie se puede destacar la rana de San Antón (Hyla arborea) en los puertos de Agüeria y de rana común (Pelophylax perezi) en el puerto de La Cubilla.",
+      "english": "Within this species, the San Antón frog (Hyla arborea) in the Agüeria passes and the common frog (Pelophylax perezi) in the La Cubilla pass can be highlighted."
+    }
+  ],
+  "days": [
+    {
+      "title": "Natural Monuments and Ancient Paths",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s4"
+      ]
+    },
+    {
+      "title": "Archaeology and High Mountain Lakes",
+      "stop_ids": [
+        "s3",
+        "s5"
+      ]
+    },
+    {
+      "title": "High Mountain Passes and Wildlife",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "cbd13f4e1f6d3d62419fd2fc9415007c91572b6407fd0033043f0c58aa4f99aa"
+}

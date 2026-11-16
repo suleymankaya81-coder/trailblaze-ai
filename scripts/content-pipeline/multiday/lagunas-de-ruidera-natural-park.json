@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "laguna Blanca",
+      "quote": "La laguna Blanca, donde desemboca el río Pinilla, a veces se comporta como \"charca o laguna manantial\", cediendo, en épocas extraordinarias, aguas surgentes.",
+      "english": "Laguna Blanca, where the Pinilla River flows into, sometimes behaves as a \"spring pond or lagoon\", yielding, in extraordinary times, rising waters."
+    },
+    {
+      "id": "s2",
+      "name": "laguna de San Pedro",
+      "quote": "Las lagunas medias se inician en la confluencia del arroyo Alarconcillo con la Lagua de San Pedro, y sus rasgos son muy diferentes a las altas.",
+      "english": "The middle lagoons begin at the confluence of the Alarconcillo stream with the Laguna de San Pedro, and their features are very different from the upper ones."
+    },
+    {
+      "id": "s3",
+      "name": "laguna Colgada",
+      "quote": "La extensión de las lagunas es generalmente pequeña (800 m x 250 m), salvo alguna excepción, como la laguna San Pedro o la laguna Colgada (esta última es considerada como un lago, por su mayor extensión).",
+      "english": "The size of the lagoons is generally small (800 m x 250 m), with some exceptions, such as the San Pedro lagoon or the Colgada lagoon (the latter is considered a lake, due to its greater extent)."
+    },
+    {
+      "id": "s4",
+      "name": "embalse de Peñarroya",
+      "quote": "Como formación artificial aparte dentro de este mismo parque natural, también se incluye al embalse de Peñarroya.",
+      "english": "As a separate artificial formation within this same natural park, the Peñarroya reservoir is also included."
+    },
+    {
+      "id": "s5",
+      "name": "castillo de Peñarroya",
+      "quote": "Dentro de los límites del parque se encuentran también el castillo de Peñarroya, las ruinas del castillo de Rochafrida, la cueva de Montesinos (donde desciende Don Quijote en la novela del mismo nombre) y la casa del Rey en el pueblo de Ruidera.",
+      "english": "Within the limits of the park are also the Peñarroya castle, the ruins of the Rochafrida castle, the Montesinos cave (where Don Quixote descends in the novel of the same name) and the King's house in the village of Ruidera."
+    },
+    {
+      "id": "s6",
+      "name": "castillo de Rochafrida",
+      "quote": "Dentro de los límites del parque se encuentran también el castillo de Peñarroya, las ruinas del castillo de Rochafrida, la cueva de Montesinos (donde desciende Don Quijote en la novela del mismo nombre) y la casa del Rey en el pueblo de Ruidera.",
+      "english": "Within the limits of the park are also the Peñarroya castle, the ruins of the Rochafrida castle, the Montesinos cave (where Don Quixote descends in the novel of the same name) and the King's house in the village of Ruidera."
+    },
+    {
+      "id": "s7",
+      "name": "cueva de Montesinos",
+      "quote": "Dentro de los límites del parque se encuentran también el castillo de Peñarroya, las ruinas del castillo de Rochafrida, la cueva de Montesinos (donde desciende Don Quijote en la novela del mismo nombre) y la casa del Rey en el pueblo de Ruidera.",
+      "english": "Within the limits of the park are also the Peñarroya castle, the ruins of the Rochafrida castle, the Montesinos cave (where Don Quixote descends in the novel of the same name) and the King's house in the village of Ruidera."
+    }
+  ],
+  "days": [
+    {
+      "title": "Historical Castles and Caves",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Major Lagoons and Reservoirs",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Upper and Middle Waterways",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "_text_sha": "f45ec418d12fd59329978ae7bd3973933062f8d98acf033fd04d4c2bd848f57c"
+}

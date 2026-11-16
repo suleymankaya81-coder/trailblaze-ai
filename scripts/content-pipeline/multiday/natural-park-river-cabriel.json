@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "río Cabriel",
+      "quote": "El parque se articula en torno a la margen izquierda del río Cabriel, el cual es el mayor afluente del Júcar y uno de los más caudalosos ríos valencianos.",
+      "english": "The park is structured around the left bank of the Cabriel River, which is the main tributary of the Júcar and one of the most voluminous Valencian rivers."
+    },
+    {
+      "id": "s2",
+      "name": "los Cuchillos",
+      "quote": "Además existe otra formación, denominada los Cuchillos originada por la erosión de la parte blanda de la roca que ha generado una impresionante cresta vertical.",
+      "english": "Additionally, there is another formation called 'los Cuchillos' (the Knives), originated by the erosion of the soft part of the rock which has generated an impressive vertical crest."
+    },
+    {
+      "id": "s3",
+      "name": "puente de Vadocañas",
+      "quote": "Destacan sin embargo el puente de Vadocañas del siglo XVI aunque asentado en una base romana, la noria de los Basilios, la noria de Casas del Río que data del siglo XVIII y todavía está en pleno funcionamiento o la presa de Contreras la más grande de toda la Comunidad Valenciana.",
+      "english": "Highlights include the 16th-century Vadocañas bridge, although settled on a Roman base, the Basilios waterwheel, the Casas del Río waterwheel dating from the 18th century and still in full operation, or the Contreras dam, the largest in the entire Valencian Community."
+    },
+    {
+      "id": "s4",
+      "name": "noria de los Basilios",
+      "quote": "Destacan sin embargo el puente de Vadocañas del siglo XVI aunque asentado en una base romana, la noria de los Basilios, la noria de Casas del Río que data del siglo XVIII y todavía está en pleno funcionamiento o la presa de Contreras la más grande de toda la Comunidad Valenciana.",
+      "english": "Highlights include the 16th-century Vadocañas bridge, although settled on a Roman base, the Basilios waterwheel, the Casas del Río waterwheel dating from the 18th century and still in full operation, or the Contreras dam, the largest in the entire Valencian Community."
+    },
+    {
+      "id": "s5",
+      "name": "noria de Casas del Río",
+      "quote": "Destacan sin embargo el puente de Vadocañas del siglo XVI aunque asentado en una base romana, la noria de los Basilios, la noria de Casas del Río que data del siglo XVIII y todavía está en pleno funcionamiento o la presa de Contreras la más grande de toda la Comunidad Valenciana.",
+      "english": "Highlights include the 16th-century Vadocañas bridge, although settled on a Roman base, the Basilios waterwheel, the Casas del Río waterwheel dating from the 18th century and still in full operation, or the Contreras dam, the largest in the entire Valencian Community."
+    },
+    {
+      "id": "s6",
+      "name": "presa de Contreras",
+      "quote": "Destacan sin embargo el puente de Vadocañas del siglo XVI aunque asentado en una base romana, la noria de los Basilios, la noria de Casas del Río que data del siglo XVIII y todavía está en pleno funcionamiento o la presa de Contreras la más grande de toda la Comunidad Valenciana.",
+      "english": "Highlights include the 16th-century Vadocañas bridge, although settled on a Roman base, the Basilios waterwheel, the Casas del Río waterwheel dating from the 18th century and still in full operation, or the Contreras dam, the largest in the entire Valencian Community."
+    },
+    {
+      "id": "s7",
+      "name": "Villargordo del Cabriel",
+      "quote": "La mejor forma de visitar los \"Cuchillos\" es salir de la A-3 en Villargordo del Cabriel, coger la N-3 dirección Madrid, cruzar la presa de Contreras, primera desviación a la izquierda \"Reserva Natural Hoces del Cabriel\".",
+      "english": "The best way to visit the 'Cuchillos' is to exit the A-3 at Villargordo del Cabriel, take the N-3 towards Madrid, cross the Contreras dam, and take the first left turnoff to 'Reserva Natural Hoces del Cabriel'."
+    }
+  ],
+  "days": [
+    {
+      "title": "Riverside and Geological Wonders",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Historic Bridges and Engineering",
+      "stop_ids": [
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "Traditional Waterwheels of the Valley",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "161370f5e1b86d4e216835f00af2881f0b11e19dea0db5755d6d833eec4b7c3a"
+}

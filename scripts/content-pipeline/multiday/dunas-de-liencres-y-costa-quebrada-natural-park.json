@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "playa de Valdearenas",
+      "quote": "Las dos playas principales son la de Valdearenas (arena dorada, fina y dunas) y la de Canallave que se orienta al noroeste y ofrece excelentes condiciones para el surfing, con olas sobre fondos de arena, de recorrido no muy largo, pero muy intenso.",
+      "english": "The two main beaches are Valdearenas (fine golden sand and dunes) and Canallave, which faces northwest and offers excellent surfing conditions, with sand-bottom waves that are not very long but very intense."
+    },
+    {
+      "id": "s2",
+      "name": "playa de Canallave",
+      "quote": "Los límites de este parque inicial, descritos en la Ley de Cantabria 4/2006, de 19 de mayo, fijaban una extensión de apenas 194,55 hectáreas, por lo que solo protegía las dunas, las playas de Valdearenas y Canallave y el pinar adyacente a las mismas.",
+      "english": "The limits of this initial park, described in Cantabria Law 4/2006 of May 19, fixed an extension of barely 194.55 hectares, so it only protected the dunes, the Valdearenas and Canallave beaches, and the pine forest adjacent to them."
+    },
+    {
+      "id": "s3",
+      "name": "estuario del río Pas",
+      "quote": "Este territorio se incorpora al parque natural, el cual pasa a contener el estuario del río Pas y la franja costera entre la Punta del Águila, al oeste (municipio de Miengo), y la Canal de Hoz, al este (límite entre Santa Cruz de Bezana y Santander).",
+      "english": "This territory is incorporated into the natural park, which now contains the Pas river estuary and the coastal strip between Punta del Águila to the west (municipality of Miengo) and Canal de Hoz to the east (boundary between Santa Cruz de Bezana and Santander)."
+    },
+    {
+      "id": "s4",
+      "name": "Costa Quebrada",
+      "quote": "Por otra parte, la denominada \"Costa Quebrada\", que se extiende entre la Punta del Cuerno (Miengo) y la Canal de Hoz, incluye elementos geomorfológicos y paisajísticos de gran valor.",
+      "english": "On the other hand, the so-called \"Costa Quebrada\", which extends between Punta del Cuerno (Miengo) and Canal de Hoz, includes geomorphological and landscape elements of great value."
+    },
+    {
+      "id": "s5",
+      "name": "pinar de Liencres",
+      "quote": "En el interior del recinto del parque cabe destacar dos elementos: El pinar de Liencres y El monte Tolío.",
+      "english": "Inside the park grounds, two elements are worth noting: The Liencres pine forest and Mount Tolío."
+    },
+    {
+      "id": "s6",
+      "name": "monte Tolío",
+      "quote": "En el interior del recinto del parque cabe destacar dos elementos: El pinar de Liencres y El monte Tolío.",
+      "english": "Inside the park grounds, two elements are worth noting: The Liencres pine forest and Mount Tolío."
+    },
+    {
+      "id": "s7",
+      "name": "Urros de Liencres",
+      "quote": "Islas e islotes: isla de Los Conejos, Urros de Liencres, isla del Castro, así como los islotes existentes en el entorno de la playa de San Juan de la Canal.",
+      "english": "Islands and islets: Los Conejos island, Urros de Liencres, Castro island, as well as the islets existing in the surroundings of San Juan de la Canal beach."
+    },
+    {
+      "id": "s8",
+      "name": "La Picota",
+      "quote": "Destaca la subida a La Picota (239 metros).",
+      "english": "The climb to La Picota (239 meters) is a highlight."
+    },
+    {
+      "id": "s9",
+      "name": "playa de Somocuevas",
+      "quote": "Se puede recorrer la costa desde la punta y ensenada de Somocuevas, a 500 metros de la localidad de Liencres (Piélagos), y seguir hasta la ría de Mogro, donde desemboca el río Pas y volver al punto de partida.",
+      "english": "It is possible to travel along the coast from the point and cove of Somocuevas, 500 meters from the town of Liencres (Piélagos), and continue to the Mogro estuary, where the Pas river flows out, and return to the starting point."
+    }
+  ],
+  "days": [
+    {
+      "title": "Dunes and Estuary",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Forest and Peaks",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s8"
+      ]
+    },
+    {
+      "title": "Geological Coastline",
+      "stop_ids": [
+        "s4",
+        "s7",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "2a9c0466731147cd9d404719c962f1230296a98eaae4766a4806af05783b7f35"
+}

@@ -107,7 +107,7 @@ def prepared_facts(row, page, lang, prepare, used):
             coords = [{'lat':point['latitude'],'lon':point['longitude']}]
     if not coords: raise ValueError('Exact article coordinates missing')
     lat,lng = coords[0]['lat'], coords[0]['lon']
-    bounds = {'de':(47,55.2,5.5,15.5),'at':(46.3,49.1,9.4,17.2),'ch':(45.8,47.9,5.8,10.6),'it':(35.4,47.2,6.5,18.6)}[row['country']]
+    bounds = {'de':(47,55.2,5.5,15.5),'at':(46.3,49.1,9.4,17.2),'ch':(45.8,47.9,5.8,10.6),'it':(35.4,47.2,6.5,18.6),'es':(27.5,43.9,-18.3,4.4)}[row['country']]
     if not (bounds[0]<=lat<=bounds[1] and bounds[2]<=lng<=bounds[3]): raise ValueError('Coordinate country mismatch')
     hero = prepare.file_info(page['pageimage']) if page.get('pageimage') else None
     if hero and (hero['url'] in used or prepare.BAD.search(hero['file']) or hero['credit']=='Unknown' or hero['license'] in ('','See source')): hero = None

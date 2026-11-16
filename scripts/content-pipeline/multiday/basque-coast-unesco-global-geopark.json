@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "playa de Itzurun",
+      "quote": "En los afloramientos rocosos de la playa de Itzurun de Zumaya, la Unión Internacional de Ciencias Geológicas ha establecido la sección y punto de estratotipo de límite global (GSSP) de las bases de los pisos Selandiense y Thanetiense, segundo y tercer pisos de la serie Paleoceno, respectivamente, referentes mundiales para estas unidades cronoestratigráficas de la escala temporal geológica.",
+      "english": "In the rocky outcrops of Itzurun beach in Zumaia, the International Union of Geological Sciences has established the Global Boundary Stratotype Section and Point (GSSP) for the bases of the Selandian and Thanetian stages, the second and third stages of the Paleocene series, respectively, which are world references for these chronostratigraphic units of the geological time scale."
+    },
+    {
+      "id": "s2",
+      "name": "Centro de Interpretación Algorri",
+      "quote": "El Centro de Interpretación de Algorri toma el nombre del lugar donde se ubica en Zumaya el estrato que marca el Límite K/Pg, popular por señalar la quinta gran extinción a escala planetaria, donde se cree que se extinguieron la mayoría de las especies de dinosaurios.",
+      "english": "The Algorri Interpretation Center takes its name from the place in Zumaia where the stratum marking the K/Pg Boundary is located, famous for indicating the fifth great extinction on a planetary scale, where it is believed most dinosaur species became extinct."
+    },
+    {
+      "id": "s3",
+      "name": "Z Espacio Cultural",
+      "quote": "Ubicado en el margen derecho de la ría del Urola, en Zumaya, se encuentra el Z Espacio Cultural, que ha sido integrado dentro de las instalaciones culturales del Geoparque de la Costa Vasca.",
+      "english": "Located on the right bank of the Urola estuary in Zumaia, the Z Cultural Space is found, which has been integrated into the cultural facilities of the Basque Coast Geopark."
+    },
+    {
+      "id": "s4",
+      "name": "Cueva de Ekain",
+      "quote": "En el ámbito del geoparque destacan lugares de interés etnográfico e histórico como el puerto y el casco histórico de Motrico y Zumaya, la Cueva de Ekain en Deba, las zonas rurales de Itziar, Lastur o Sasiola, y el valle en el tramo final del río Deba.",
+      "english": "Within the geopark, places of ethnographic and historical interest stand out, such as the port and the historic center of Mutriku and Zumaia, the Ekain Cave in Deba, the rural areas of Itziar, Lastur or Sasiola, and the valley in the final stretch of the Deba River."
+    },
+    {
+      "id": "s5",
+      "name": "HAB-Valle de la prehistoria",
+      "quote": "Es un museo al aire libre en forma de itinerario guiado de 3,5 km de longitud en el cual se muestran, con más de 50 piezas arqueológicas y paleontológicas y mediante paneles informativos, las formas de vida en tiempos prehistóricos, abarcando unos 200 000 años de historia.",
+      "english": "It is an open-air museum in the form of a 3.5 km guided itinerary in which, with more than 50 archaeological and paleontological pieces and through informative panels, prehistoric lifestyles are shown, covering some 200,000 years of history."
+    },
+    {
+      "id": "s6",
+      "name": "Centro de Interpretación Geológica Nautilus",
+      "quote": "El Centro de Interpretación Geológica Nautilus se ubica en Motrico y expone una importante colección de fósiles realizada por Jesús María Narváez y Esperanza Azkarraga, proveniente del flysch negro que conforma los acantilados del paraje costero de la localidad.",
+      "english": "The Nautilus Geological Interpretation Center is located in Mutriku and displays an important collection of fossils gathered by Jesús María Narváez and Esperanza Azkarraga, coming from the black flysch that forms the cliffs of the town's coastal area."
+    },
+    {
+      "id": "s7",
+      "name": "Siete playas",
+      "quote": "El área de este entorno, conocido como Siete playas, es de 112,54 ha.",
+      "english": "The area of this environment, known as Siete playas (Seven beaches), is 112.54 hectares."
+    }
+  ],
+  "days": [
+    {
+      "title": "Geology and Art in Zumaia",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Prehistory and Valleys of Deba",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Black Flysch and Fossils in Mutriku",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "47fefade1a9411c3143febd40d02271d8bebde47a0ec9ebbe6d6702ca7ef02f7"
+}

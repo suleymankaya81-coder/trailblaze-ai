@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "ensenada de Getares",
+      "quote": "El Parque natural del Estrecho se encuentra en el extremo sur de la península ibérica y protege el espacio marítimo-terrestre del litoral desde la ensenada de Getares (Algeciras) hasta el cabo de Gracia (Tarifa).",
+      "english": "El Estrecho Natural Park is located at the southern tip of the Iberian Peninsula and protects the maritime-terrestrial space of the coastline from the Getares inlet (Algeciras) to the Cape of Gracia (Tarifa)."
+    },
+    {
+      "id": "s2",
+      "name": "punta de San García",
+      "quote": "El límite terrestre sur del parque va desde la punta de Gracia en el término municipal de Tarifa hasta la punta de San García en el término municipal de Algeciras.",
+      "english": "The southern land limit of the park goes from the point of Gracia in the municipality of Tarifa to the point of San García in the municipality of Algeciras."
+    },
+    {
+      "id": "s3",
+      "name": "Cala Arenas",
+      "quote": "Son zonas de reserva submarina los tramos de costa situados frente a las playas de Bolonia y Los Lances o la costa frente punta de San García, Cala Arenas, isla Cabrita o la isla de Las Palomas.",
+      "english": "Submarine reserve zones are the stretches of coast located in front of the beaches of Bolonia and Los Lances or the coast in front of San García point, Cala Arenas, Cabrita island, or Las Palomas island."
+    },
+    {
+      "id": "s4",
+      "name": "isla Cabrita",
+      "quote": "Son zonas de reserva submarina los tramos de costa situados frente a las playas de Bolonia y Los Lances o la costa frente punta de San García, Cala Arenas, isla Cabrita o la isla de Las Palomas.",
+      "english": "Submarine reserve zones are the stretches of coast located in front of the beaches of Bolonia and Los Lances or the coast in front of San García point, Cala Arenas, Cabrita island, or Las Palomas island."
+    },
+    {
+      "id": "s5",
+      "name": "sierra del Cabrito",
+      "quote": "Al interior la zona oriental del parque se encuentra en su totalidad delimitada por la carretera nacional N-340 e incluye parte de la sierra del Cabrito y cerros del Estrecho.",
+      "english": "Inland, the eastern zone of the park is entirely delimited by the N-340 national highway and includes part of the Cabrito mountain range and the Estrecho hills."
+    },
+    {
+      "id": "s6",
+      "name": "cerros del Estrecho",
+      "quote": "Al interior la zona oriental del parque se encuentra en su totalidad delimitada por la carretera nacional N-340 e incluye parte de la sierra del Cabrito y cerros del Estrecho.",
+      "english": "Inland, the eastern zone of the park is entirely delimited by the N-340 national highway and includes part of the Cabrito mountain range and the Estrecho hills."
+    },
+    {
+      "id": "s7",
+      "name": "playa de Los Lances",
+      "quote": "Dentro de sus límites se encuentra el Paraje natural playa de los Lances, declarado espacio natural en 1989, con una extensión de 226 hectáreas que se corresponden con la playa de Los Lances y el humedal formado en la desembocadura de los ríos Jara y de la Vega.",
+      "english": "Within its limits is the Playa de los Lances Natural Area, declared a natural space in 1989, with an area of 226 hectares corresponding to Los Lances beach and the wetland formed at the mouth of the Jara and De la Vega rivers."
+    },
+    {
+      "id": "s8",
+      "name": "isla de Las Palomas",
+      "quote": "El ámbito marino del parque incluye una milla marina medida desde la línea perpendicular de la costa en todo el tramo desde punta de Gracia hasta punta de San García salvo en el frente litoral de la ciudad de Tarifa al este de la isla de Las Palomas que se mantiene como zona de reserva para la Autoridad Portuaria de la Bahía de Algeciras para futuras ampliaciones del puerto de Tarifa.",
+      "english": "The marine area of the park includes one nautical mile measured from the perpendicular line of the coast in the entire section from Gracia point to San García point, except for the coastal front of the city of Tarifa to the east of Las Palomas island, which is maintained as a reserve zone for the Port Authority of the Bay of Algeciras for future expansions of the port of Tarifa."
+    },
+    {
+      "id": "s9",
+      "name": "Duna de Bolonia",
+      "quote": "Dentro de sus límites se encuentra [...] el Monumento natural Duna de Bolonia de aproximadamente 131 675 m² de extensión que, con sus 30 metros de altura supone uno de los mejores ejemplos de dunas activas del litoral andaluz.",
+      "english": "Within its limits is [...] the Bolonia Dune Natural Monument, approximately 131,675 m² in size, which, at 30 meters high, is one of the best examples of active dunes on the Andalusian coast."
+    },
+    {
+      "id": "s10",
+      "name": "sierra de la Plata",
+      "quote": "La zona occidental tiene su primer tramo, el correspondiente con la playa de Los Lances delimitado por la N-340 mientras que su extremo oeste toma como límite la cima de la loma de San Bartolomé y casi la totalidad de la sierra de la Plata.",
+      "english": "The western zone has its first section, corresponding to Los Lances beach, delimited by the N-340, while its western end takes the summit of San Bartolomé hill and almost the entirety of the Plata mountain range as its limit."
+    }
+  ],
+  "days": [
+    {
+      "title": "Algeciras Coastal Sights",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Eastern Hills and Tarifa Wetlands",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Bolonia and Western Ranges",
+      "stop_ids": [
+        "s8",
+        "s9",
+        "s10"
+      ]
+    }
+  ],
+  "_text_sha": "411510b82d274c6b8374c884b309a506319ced67dcfb9b8070d4c66b653dc496"
+}

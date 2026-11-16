@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "El Plano",
+      "quote": "Ográficamente, El Plano se distingue por ser una meseta que se eleva unos 100 metros sobre los territorios colindantes.",
+      "english": "Orographically, El Plano is distinguished by being a plateau that rises about 100 meters above the surrounding territories."
+    },
+    {
+      "id": "s2",
+      "name": "embalse de El Ferial",
+      "quote": "En esta área se ubica el embalse de El Ferial.",
+      "english": "The El Ferial reservoir is located in this area."
+    },
+    {
+      "id": "s3",
+      "name": "Bardena Blanca",
+      "quote": "Es la zona central del territorio y la más desértica.",
+      "english": "It is the central zone of the territory and the most desert-like."
+    },
+    {
+      "id": "s4",
+      "name": "Landazuría",
+      "quote": "Se extiende a los pies del cerro de la Virgen de Nuestra Señora del Yugo al oeste de la Bardena Blanca.",
+      "english": "It extends at the foot of the hill of the Virgin of Our Lady of Yugo to the west of the Bardena Blanca."
+    },
+    {
+      "id": "s5",
+      "name": "El Rincón del Bú",
+      "quote": "El Rincón del Bú es una pequeña zona de 460 ha situada en la parte sur de la Bardena Blanca.",
+      "english": "El Rincón del Bú is a small area of 460 hectares located in the southern part of the Bardena Blanca."
+    },
+    {
+      "id": "s6",
+      "name": "El Vedado de Eguarás",
+      "quote": "En el interior de las Bardenas Reales se encuentra el denominado Vedado de Eguarás, que pertenece al término municipal de Valtierra, aunque geográficamente sea un enclave dentro de las Bardenas.",
+      "english": "Inside the Bardenas Reales is the so-called Vedado de Eguarás, which belongs to the municipality of Valtierra, although geographically it is an enclave within the Bardenas."
+    },
+    {
+      "id": "s7",
+      "name": "castillo de Peñaflor",
+      "quote": "En el interior de esta área se encuentran las ruinas del castillo de Peñaflor, también llamado de Doña Blanca por la leyenda que cuenta que Blanca I de Navarra fue encerrada por su padre en la torre de esta fortaleza cuando se negó a casarse con el príncipe de Aragón, Martín el Joven.",
+      "english": "Inside this area are the ruins of the Peñaflor castle, also called Doña Blanca's because of the legend that says Blanche I of Navarre was locked in the tower of this fortress by her father when she refused to marry the prince of Aragon, Martin the Younger."
+    },
+    {
+      "id": "s8",
+      "name": "Bardena Negra",
+      "quote": "La Bardena Negra es la zona más meridional del territorio bardenero, en el límite con Aragón.",
+      "english": "The Bardena Negra is the southernmost area of the Bardenas territory, on the border with Aragon."
+    },
+    {
+      "id": "s9",
+      "name": "Caídas de la Negra",
+      "quote": "El paraje de Las Caídas de la Negra ocupa una extensión de 1925 ha y se ubica en la Bardena Negra.",
+      "english": "The site of Las Caídas de la Negra occupies an area of 1925 hectares and is located in the Bardena Negra."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Plateau and Reservoir",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "White Desert and Historic Enclaves",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Southern Dark Woods and Cliffs",
+      "stop_ids": [
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "0e629c0c42b307f796d2daa517280d0d9aac3ad2e511d181036bb48f37fc6f5c"
+}

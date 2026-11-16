@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Aragosa",
+      "quote": "Tiene una extensión total de 8347,95 ha, de las cuales 1419,73 ha corresponden al término municipal de Algora, 759,86 ha a Mandayona (Aragosa), 199,12 ha a Mirabueno, 2180,16 ha a Saúca (Jodra del Pinar), 3216,53 ha a Sigüenza (La Cabrera y Pelegrina) y 572,55 ha a Torremocha del Campo.",
+      "english": "It has a total area of 8,347.95 ha, of which 1,419.73 ha correspond to the municipality of Algora, 759.86 ha to Mandayona (Aragosa), 199.12 ha to Mirabueno, 2,180.16 ha to Saúca (Jodra del Pinar), 3,216.53 ha to Sigüenza (La Cabrera and Pelegrina) and 572.55 ha to Torremocha del Campo."
+    },
+    {
+      "id": "s2",
+      "name": "fábrica de papel de los Heros",
+      "quote": "En el parque natural, se encuentra como ejemplo de arqueología industrial, la antigua fábrica de papel de los Heros entre las localidades de La Cabrera y Aragosa.",
+      "english": "In the natural park, the old Los Heros paper factory is found as an example of industrial archaeology between the towns of La Cabrera and Aragosa."
+    },
+    {
+      "id": "s3",
+      "name": "La Cabrera",
+      "quote": "Es una ruta lineal de 1.5 km, partiendo del pueblo de La Cabrera, que se dirige por la derecha del río Dulce aguas abajo, y ofrece una serie de elementos interpretativos del medio natural adaptados para invidentes.",
+      "english": "It is a 1.5 km linear route, starting from the village of La Cabrera, which heads downstream along the right side of the Dulce river, and offers a series of interpretive elements of the natural environment adapted for the blind."
+    },
+    {
+      "id": "s4",
+      "name": "hoz de Pelegrina",
+      "quote": "Recorre el paraje más abrupto del parque, la hoz de Pelegrina, descendiendo desde el pueblo hacia el río.",
+      "english": "It traverses the steepest spot in the park, the Pelegrina gorge, descending from the village toward the river."
+    },
+    {
+      "id": "s5",
+      "name": "cascada del Gollorio",
+      "quote": "Se puede visitar la cascada del Gollorio, que se domina desde el mirador de Félix Rodríguez de la Fuente, en la carretera GU-118, que va desde Torremocha del Campo hacia Sigüenza.",
+      "english": "The Gollorio waterfall can be visited, which is overlooked from the Félix Rodríguez de la Fuente viewpoint, on the GU-118 road, which goes from Torremocha del Campo towards Sigüenza."
+    },
+    {
+      "id": "s6",
+      "name": "mirador de Félix Rodríguez de la Fuente",
+      "quote": "Se puede visitar la cascada del Gollorio, que se domina desde el mirador de Félix Rodríguez de la Fuente, en la carretera GU-118, que va desde Torremocha del Campo hacia Sigüenza.",
+      "english": "The Gollorio waterfall can be visited, which is overlooked from the Félix Rodríguez de la Fuente viewpoint, on the GU-118 road, which goes from Torremocha del Campo towards Sigüenza."
+    },
+    {
+      "id": "s7",
+      "name": "castillo roquero",
+      "quote": "En la cúspide de un alcor, se erige un castillo roquero, en ruinas, de los siglos XI-XII.",
+      "english": "On the peak of a hill stands a rock castle, in ruins, from the 11th-12th centuries."
+    },
+    {
+      "id": "s8",
+      "name": "Sigüenza",
+      "quote": "Es un camino de 5 km, que comienza en la ciudad medieval de Sigüenza, y acaba en el corazón del parque natural, siguiendo la Ruta del Quijote, atravesando un robledal.",
+      "english": "It is a 5 km path, which begins in the medieval city of Sigüenza, and ends in the heart of the natural park, following the Quixote Route, crossing an oak grove."
+    }
+  ],
+  "days": [
+    {
+      "title": "Villages and Industrial Heritage of the Dulce",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "The Pelegrina Gorge and Landmark Views",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Medieval Fortifications and Sigüenza Trails",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "c2b19e7595c6fc004460826db98be8b314d661b1c2e34fb61b22e9cd2268528a"
+}

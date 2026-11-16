@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "valle medio del río Arlanza",
+      "quote": "El territorio del parque natural \"Sabinares del Arlanza-La Yecla\" incluye: el valle medio del río Arlanza, las Peñas de Cervera, el cañón del Matavicias, la meseta de Carazo, el monte Gayubar, la sierra de Las Mamblas y, por descontado, el desfiladero de La Yecla, que da nombre al parque.",
+      "english": "The territory of the \"Sabinares del Arlanza-La Yecla\" natural park includes: the middle valley of the Arlanza river, the Peñas de Cervera, the Matavicias canyon, the Carazo plateau, Mount Gayubar, the Las Mamblas mountain range and, of course, the La Yecla gorge, which gives the park its name."
+    },
+    {
+      "id": "s2",
+      "name": "Peñas de Cervera",
+      "quote": "Se trata de una profunda y estrecha garganta, excavada en la caliza de las Peñas de Cervera por el arroyo del Cauce.",
+      "english": "It is a deep and narrow gorge, carved into the limestone of the Peñas de Cervera by the Cauce stream."
+    },
+    {
+      "id": "s3",
+      "name": "desfiladero de La Yecla",
+      "quote": "El desfiladero, a cuyo fondo apenas llegan los rayos del sol, está equipado con una serie de puentes y pasarelas colgantes, que permiten recorrerlo de extremo a extremo.",
+      "english": "The gorge, to whose bottom the sun's rays barely reach, is equipped with a series of bridges and hanging walkways, which allow it to be traversed from end to end."
+    },
+    {
+      "id": "s4",
+      "name": "río Arlanza",
+      "quote": "Se han generado así valles, como los de los ríos Cauce, Arlanza o Mataviejas, con paredes verticales de roca caliza, salpicadas por sabinas, encinas, quejigos y alguna fuente que alimenta la corriente.",
+      "english": "Valleys have thus been created, such as those of the Cauce, Arlanza or Mataviejas rivers, with vertical limestone rock walls, dotted with junipers, holm oaks, gall oaks and some spring that feeds the current."
+    },
+    {
+      "id": "s5",
+      "name": "monasterio de San Pedro de Arlanza",
+      "quote": "Además de los atractivos naturales que posee el parque, es de destacar la presencia en su entorno de tres elementos patrimoniales de gran valor: las ruinas del monasterio de San Pedro de Arlanza, la villa de Covarrubias y el claustro románico de Santo Domingo de Silos.",
+      "english": "In addition to the natural attractions that the park possesses, it is worth highlighting the presence in its surroundings of three highly valuable heritage elements: the ruins of the monastery of San Pedro de Arlanza, the town of Covarrubias and the Romanesque cloister of Santo Domingo de Silos."
+    },
+    {
+      "id": "s6",
+      "name": "villa de Covarrubias",
+      "quote": "Además de los atractivos naturales que posee el parque, es de destacar la presencia en su entorno de tres elementos patrimoniales de gran valor: las ruinas del monasterio de San Pedro de Arlanza, la villa de Covarrubias y el claustro románico de Santo Domingo de Silos.",
+      "english": "In addition to the natural attractions that the park possesses, it is worth highlighting the presence in its surroundings of three highly valuable heritage elements: the ruins of the monastery of San Pedro de Arlanza, the town of Covarrubias and the Romanesque cloister of Santo Domingo de Silos."
+    },
+    {
+      "id": "s7",
+      "name": "Santo Domingo de Silos",
+      "quote": "La orogénesis Alpina produjo en ellos plegamientos, cañones y sinclinales, que fueron luego erosionados por ríos y arroyos, dando lugar a un relieve típicamente calizo conforme: depresión sinclinal del río Mataviejas y la loma anticlinal rebajada de Santo Domingo de Silos, que la flanquea por el norte.",
+      "english": "The Alpine orogeny produced folds, canyons and synclines in them, which were then eroded by rivers and streams, giving rise to a typically limestone relief according to: the synclinal depression of the Mataviejas river and the lowered anticlinal hill of Santo Domingo de Silos, which flanks it to the north."
+    }
+  ],
+  "days": [
+    {
+      "title": "Gorges and Limestone Formations",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Arlanza River Heritage",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "3c05b703546d2101ed4c3a3537a814256b62b98e05ca0fc577e7a9e0e84db66b"
+}

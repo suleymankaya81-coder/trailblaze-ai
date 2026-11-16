@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Cerro del Trigo",
+      "quote": "Dichas excavaciones fueron realizadas en el paraje denominado Cerro del Trigo y financiadas por los duques de Tarifa, entonces propietarios de Doñana.",
+      "english": "These excavations were carried out in the site called Cerro del Trigo and financed by the Dukes of Tarifa, who were then the owners of Doñana."
+    },
+    {
+      "id": "s2",
+      "name": "El Palacio",
+      "quote": "Según otros, de Ana Mallarte, casada con Sancho de Herrera, arrendatario de los pastos de la parte de El Palacio en 1545.",
+      "english": "According to others, from Ana Mallarte, married to Sancho de Herrera, lessee of the pastures in the El Palacio area in 1545."
+    },
+    {
+      "id": "s3",
+      "name": "Arroyo de La Rocina",
+      "quote": "En 1255, tras reconquistar el reino vasallo de Niebla, el rey Alfonso X estableció entre el río Tinto y el Guadalquivir una zona de caza o «Cazadero Real» en el bosque de Las Rocinas, debido en parte a la abundancia de ciervos existente, y el pequeño santuario de Santa Olalla, ya desaparecido, en el Arroyo de La Rocina.",
+      "english": "In 1255, after reconquering the vassal kingdom of Niebla, King Alfonso X established a hunting zone or 'Royal Hunting Ground' between the Tinto and Guadalquivir rivers in the Las Rocinas forest, partly due to the abundance of deer there, and the small sanctuary of Santa Olalla, now vanished, in the La Rocina Stream."
+    },
+    {
+      "id": "s4",
+      "name": "bosque de Las Rocinas",
+      "quote": "En 1255, tras reconquistar el reino vasallo de Niebla, el rey Alfonso X estableció entre el río Tinto y el Guadalquivir una zona de caza o «Cazadero Real» en el bosque de Las Rocinas, debido en parte a la abundancia de ciervos existente, y el pequeño santuario de Santa Olalla, ya desaparecido, en el Arroyo de La Rocina.",
+      "english": "In 1255, after reconquering the vassal kingdom of Niebla, King Alfonso X established a hunting zone or 'Royal Hunting Ground' between the Tinto and Guadalquivir rivers in the Las Rocinas forest, partly due to the abundance of deer there, and the small sanctuary of Santa Olalla, now vanished, in the La Rocina Stream."
+    },
+    {
+      "id": "s5",
+      "name": "Coto de Doña Ana",
+      "quote": "A finales de siglo su esposa, Ana de Silva y Mendoza, hija de la princesa de Éboli, se mudó a una casa de recreo llamada Coto de Doña Ana, que derivó en el término actual Doñana.",
+      "english": "At the end of the century his wife, Ana de Silva y Mendoza, daughter of the Princess of Éboli, moved to a recreational house called Coto de Doña Ana, which led to the current term Doñana."
+    },
+    {
+      "id": "s6",
+      "name": "El Rocío",
+      "quote": "En 1493, los Reyes Católicos donaron parte de las tierras de la actual aldea de El Rocío a su secretario, cuyo hijo las vendió más tarde al municipio de Almonte.",
+      "english": "In 1493, the Catholic Monarchs donated part of the lands of the current village of El Rocío to their secretary, whose son later sold them to the municipality of Almonte."
+    },
+    {
+      "id": "s7",
+      "name": "dunas de Doñana",
+      "quote": "En este sentido, en 1923 el arqueólogo alemán Adolf Schulten, en compañía de Lammerer y J. Bonsor, buscó la ubicación de la capital tartésica en las dunas de Doñana, no hallando nada de interés.",
+      "english": "In this sense, in 1923 the German archaeologist Adolf Schulten, accompanied by Lammerer and J. Bonsor, searched for the location of the Tartessian capital in the dunes of Doñana, finding nothing of interest."
+    }
+  ],
+  "days": [
+    {
+      "title": "Historical Palaces and Dunes",
+      "stop_ids": [
+        "s2",
+        "s5",
+        "s7",
+        "s1"
+      ]
+    },
+    {
+      "title": "Waterways and Ancient Woodlands",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "bee5fcaed18d0e0ab28d886d5ddef760683603f86098c4b92d42f8fc31a7837c"
+}

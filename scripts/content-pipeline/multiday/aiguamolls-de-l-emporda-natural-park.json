@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "playas",
+      "english": "An example are the beaches included in the park that, in the summer season, can be visited daily by about 23,000 people.",
+      "quote": "Un ejemplo son las playas incluidas en el parque que, en época estival, pueden ser visitadas diariamente por unas 23 000 personas."
+    },
+    {
+      "id": "s2",
+      "name": "isla de Caramany",
+      "english": "A section of the Fluviá River that includes Caramany Island is a partial natural reserve for the protection of the otter.",
+      "quote": "Una sección del río Fluviá que incluye la isla de Caramany, es reserva natural parcial para la protección de la nutria (Decreto 123/1987)."
+    },
+    {
+      "id": "s3",
+      "name": "Vilaüt",
+      "english": "The most emblematic is that of Vilaüt.",
+      "quote": "El más emblemático es el de Vilaüt."
+    },
+    {
+      "id": "s4",
+      "name": "laguna del Cortalet",
+      "english": "The natural park has promoted the recovery and creation of new lagoons, such as the Cortalet lagoon or the 'of Europe' lagoons.",
+      "quote": "El parque natural ha promovido la recuperación y creación de nuevas lagunas, como la del Cortalet o las lagunas \"de Europa\"."
+    },
+    {
+      "id": "s5",
+      "name": "lagunas \"de Europa\"",
+      "english": "The natural park has promoted the recovery and creation of new lagoons, such as the Cortalet lagoon or the \"of Europe\" lagoons.",
+      "quote": "El parque natural ha promovido la recuperación y creación de nuevas lagunas, como la del Cortalet o las lagunas \"de Europa\"."
+    },
+    {
+      "id": "s6",
+      "name": "Torre del Viento (Torre del Vent)",
+      "english": "They have dryland crops, scrub and grasslands, cork oak groves, holm oaks and oaks, as well as pine enclosures in some areas, such as the Wind Tower (Torre del Vent), the highest point of the park.",
+      "quote": "Tienen cultivos de secano, matorral y pastizales, bosquetes de alcornoque, encinas y robles, así como cercados de pinos en algunas zonas, como por ejemplo la Torre del Viento (Torre del Vent), el punto más elevado del parque."
+    },
+    {
+      "id": "s7",
+      "name": "río Fluviá",
+      "english": "Apart from the Muga and the Fluviá, the two largest rivers in the park, in the Marshes there is an extensive network of ravines and ditches.",
+      "quote": "Aparte del Muga y del Fluviá, los dos ríos mayores del parque, en las Marismas hay una extensa red de ramblas y acequias."
+    },
+    {
+      "id": "s8",
+      "name": "río Muga",
+      "english": "Apart from the Muga and the Fluviá, the two largest rivers in the park, in the Marshes there is an extensive network of ravines and ditches.",
+      "quote": "Aparte del Muga y del Fluviá, los dos ríos mayores del parque, en las Marismas hay una extensa red de ramblas y acequias."
+    }
+  ],
+  "days": [
+    {
+      "title": "Rivers and Coastal Wetlands",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Inland Lagoons and Summits",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "5a2ec1e0e5aba7aef155bc9c0ed33f06bc6c90776e9756d4e8ce7edc44fcf983"
+}

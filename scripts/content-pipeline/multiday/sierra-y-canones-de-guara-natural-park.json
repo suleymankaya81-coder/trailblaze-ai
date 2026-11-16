@@ -1,0 +1,106 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "pico de Guara",
+      "quote": "Sus cotas de altitud oscilan entre los 430 metros en el río Alcanadre hasta los 2 077 del pico de Guara.",
+      "english": "Its altitude levels range from 430 meters at the Alcanadre river to 2,077 at the Guara peak."
+    },
+    {
+      "id": "s2",
+      "name": "barrancos del río Balcés",
+      "quote": "Cabe destacar, por su espectacularidad, los barrancos del río Balcés, con sus más de 20 km de longitud y desniveles superiores a los 800 m, así como la sima de la Grallera Alta de Guara, con 277 m de caída vertical.",
+      "english": "It is worth noting, for their spectacular nature, the canyons of the Balcés River, with their more than 20 km in length and drops exceeding 800 m, as well as the Grallera Alta de Guara chasm, with a 277 m vertical drop."
+    },
+    {
+      "id": "s3",
+      "name": "sima de la Grallera Alta de Guara",
+      "quote": "Cabe destacar, por su espectacularidad, los barrancos del río Balcés, con sus más de 20 km de longitud y desniveles superiores a los 800 m, así como la sima de la Grallera Alta de Guara, con 277 m de caída vertical.",
+      "english": "It is worth noting, for their spectacular nature, the canyons of the Balcés River, with their more than 20 km in length and drops exceeding 800 m, as well as the Grallera Alta de Guara chasm, with a 277 m vertical drop."
+    },
+    {
+      "id": "s4",
+      "name": "carrasca o encina milenaria de la localidad oscense de Lecina",
+      "quote": "En el año 2020, la carrasca o encina milenaria de la localidad oscense de Lecina fue elegida «Árbol del Año en España», con 9 929 votos, el 30,45% del total, compitiendo con otros diez árboles singulares.",
+      "english": "In the year 2020, the thousand-year-old holm oak of the Huescan town of Lecina was chosen as 'Tree of the Year in Spain', with 9,929 votes, 30.45% of the total, competing with ten other singular trees."
+    },
+    {
+      "id": "s5",
+      "name": "cueva de Chaves",
+      "quote": "La cueva de Chaves, en Bastarás, término municipal de Casbas de Huesca, albergaba unos de los yacimientos neolíticos más importantes de la península ibérica antes de ser destruido.",
+      "english": "The Chaves cave, in Bastarás, in the municipality of Casbas de Huesca, housed one of the most important Neolithic sites on the Iberian Peninsula before being destroyed."
+    },
+    {
+      "id": "s6",
+      "name": "Fuente del Trucho",
+      "quote": "Existen pinturas rupestres del Paleolítico Superior en la Fuente del Trucho.",
+      "english": "There are Upper Paleolithic cave paintings at the Fuente del Trucho."
+    },
+    {
+      "id": "s7",
+      "name": "Centro de interpretación de Arguis",
+      "quote": "Centro de interpretación de Arguis Oficina de información de Santa Cilia de Panzano Centro de interpretación de Bierge Estos centros constituyen infraestructuras básicas para la interpretación y educación ambiental de la diversidad ecológica del Parque.",
+      "english": "Arguis Interpretation Center, Santa Cilia de Panzano Information Office, Bierge Interpretation Center: These centers constitute basic infrastructures for the interpretation and environmental education of the Park's ecological diversity."
+    },
+    {
+      "id": "s8",
+      "name": "Centro de interpretación de Bierge",
+      "quote": "Centro de interpretación de Bierge Estos centros constituyen infraestructuras básicas para la interpretación y educación ambiental de la diversidad ecológica del Parque.",
+      "english": "Bierge Interpretation Center: These centers constitute basic infrastructures for the interpretation and environmental education of the Park's ecological diversity."
+    },
+    {
+      "id": "s9",
+      "name": "Barranco del Vero",
+      "quote": "Entre los cientos de barrancos destacan: Barranco del Vero Barranco de Mascún Barranco de la Peonera Barranco de Gorgas Negras",
+      "english": "Among the hundreds of canyons, the following stand out: Vero Canyon, Mascún Canyon, La Peonera Canyon, Gorgas Negras Canyon."
+    },
+    {
+      "id": "s10",
+      "name": "Barranco de Mascún",
+      "quote": "Entre los cientos de barrancos destacan: Barranco del Vero Barranco de Mascún Barranco de la Peonera Barranco de Gorgas Negras",
+      "english": "Among the hundreds of canyons, the following stand out: Vero Canyon, Mascún Canyon, La Peonera Canyon, Gorgas Negras Canyon."
+    },
+    {
+      "id": "s11",
+      "name": "Barranco de la Peonera",
+      "quote": "Entre los cientos de barrancos destacan: Barranco del Vero Barranco de Mascún Barranco de la Peonera Barranco de Gorgas Negras",
+      "english": "Among the hundreds of canyons, the following stand out: Vero Canyon, Mascún Canyon, La Peonera Canyon, Gorgas Negras Canyon."
+    },
+    {
+      "id": "s12",
+      "name": "Barranco de Gorgas Negras",
+      "quote": "Entre los cientos de barrancos destacan: Barranco del Vero Barranco de Mascún Barranco de la Peonera Barranco de Gorgas Negras",
+      "english": "Among the hundreds of canyons, the following stand out: Vero Canyon, Mascún Canyon, La Peonera Canyon, Gorgas Negras Canyon."
+    }
+  ],
+  "days": [
+    {
+      "title": "Peaks and Northern Interpretation",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Canyons and River Adventure",
+      "stop_ids": [
+        "s8",
+        "s9",
+        "s10",
+        "s11",
+        "s12"
+      ]
+    },
+    {
+      "title": "Ancient History and Nature",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "c770ded5eb74eab2fa0b9a2f9fbed6d01e7d0745dba590a5b42c7f2fe31c28a0"
+}

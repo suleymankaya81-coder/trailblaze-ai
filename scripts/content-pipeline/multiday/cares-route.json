@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Posada de Valdeón",
+      "quote": "La ruta o senda del Cares es una ruta de senderismo del norte de España ubicada entre la provincia de León y Asturias, en el parque nacional de los Picos de Europa —sendero de Pequeño Recorrido PR-PNPE 3​—, concretamente entre la localidad leonesa de Posada de Valdeón y el municipio asturiano de Poncebos.",
+      "english": "The Cares route or trail is a hiking route in northern Spain located between the province of León and Asturias, in the Picos de Europa National Park —Short Distance path PR-PNPE 3​—, specifically between the Leonese town of Posada de Valdeón and the Asturian municipality of Poncebos."
+    },
+    {
+      "id": "s2",
+      "name": "Caín",
+      "quote": "Actualmente, una parte de la travesía, la que discurría entre Posada de Valdeón y Caín, ya puede hacerse por carretera -además de sendero- y por eso apenas es recorrida.",
+      "english": "Currently, a part of the traverse, the one that ran between Posada de Valdeón and Caín, can now be done by road -in addition to the trail- and for that reason it is hardly traveled."
+    },
+    {
+      "id": "s3",
+      "name": "la garganta divina",
+      "quote": "La ruta más popular es el tramo de algo más de 12 km que corresponde a Caín-Poncebos (o Poncebos-Caín): discurre a media altura en la parte más agreste del desfiladero —también conocido como «la garganta divina»—, excavado en las paredes casi verticales de caliza gris, la mayor parte del tiempo sobrevolando peligrosos precipicios sin protección alguna.",
+      "english": "The most popular route is the section of just over 12 km corresponding to Caín-Poncebos (or Poncebos-Caín): it runs at mid-height in the wildest part of the gorge —also known as \"the divine throat\"—, excavated in the almost vertical gray limestone walls, most of the time flying over dangerous precipices without any protection."
+    },
+    {
+      "id": "s4",
+      "name": "Camarmeña",
+      "quote": "El primer camino del Cares se excavó en la roca entre 1915 y 1921, durante la construcción de un amplio canal destinado al suministro de agua de la cámara de carga de Camarmeña, desde donde por una doble conducción con una caída de 230 m se alimenta las turbinas de la central hidroeléctrica de Poncebos.",
+      "english": "The first Cares path was excavated in the rock between 1915 and 1921, during the construction of a wide canal intended for the water supply of the Camarmeña loading chamber, from where a double pipe with a drop of 230 m feeds the turbines of the Poncebos hydroelectric plant."
+    },
+    {
+      "id": "s5",
+      "name": "Poncebos",
+      "quote": "Una caminata a buen ritmo permite hacer la ruta Poncebos-Caín en 2 horas y media.",
+      "english": "A walk at a good pace allows for the Poncebos-Caín route to be done in 2 and a half hours."
+    },
+    {
+      "id": "s6",
+      "name": "valle de Valdeón",
+      "quote": "Nace en lo alto del valle de Valdeón, en el municipio leonés de Posada de Valdeón (459 hab.) en las Hoyas de Freñana, a más de 1600 m, de la confluencia de varios manantiales de montaña que descienden de los picos Cebolleda (2044 m) y Gildar (2078 m).",
+      "english": "It rises at the top of the Valdeón valley, in the Leonese municipality of Posada de Valdeón (459 inhab.) in the Hoyas de Freñana, at more than 1600 m, from the confluence of several mountain springs that descend from the Cebolleda (2044 m) and Gildar (2078 m) peaks."
+    },
+    {
+      "id": "s7",
+      "name": "Cordiñanes de Valdeón",
+      "quote": "Sigue su avance el Cares pasando por la aldea de Cordiñanes de Valdeón (43 hab.) hasta llegar a Caín de Valdeón (58 hab.), donde el valle se estrangula y encajona dando inicio del verdadero desfiladero o garganta del Cares.",
+      "english": "The Cares continues its progress passing through the village of Cordiñanes de Valdeón (43 inhab.) until reaching Caín de Valdeón (58 inhab.), where the valley narrows and boxes in, marking the start of the true Cares gorge or canyon."
+    }
+  ],
+  "days": [
+    {
+      "title": "Valdeón Valley and High Path",
+      "stop_ids": [
+        "s6",
+        "s1",
+        "s7"
+      ]
+    },
+    {
+      "title": "The Divine Throat Traverse",
+      "stop_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Poncebos and Hydroelectric Heritage",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "af061ce185d9f875b5c71764b632e7e534af135be8d4a77f7f643e924cef65fc"
+}

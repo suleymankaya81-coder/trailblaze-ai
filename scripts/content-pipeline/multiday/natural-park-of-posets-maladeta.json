@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Aneto",
+      "quote": "Tiene una extensión de 33 440,60 ha y su altura oscila entre los 1500 m (en el valle) y los 3404 m (la cumbre del Aneto, el pico más alto de los Pirineos).",
+      "english": "It has an extension of 33,440.60 ha and its height oscillates between 1500 m (in the valley) and 3404 m (the summit of Aneto, the highest peak in the Pyrenees)."
+    },
+    {
+      "id": "s2",
+      "name": "Pico Posets",
+      "quote": "Además del Aneto, también se encuentran en él otros picos como el Pico Posets (3369 m), la Punta de Astorg (3355 m), el Pico Maldito (3350 m), el Pico del Medio (3346 m), el Pico de Coronas (3293 m), el Pico de Tempestades (3290 m) y el Pico del Alba (3118 m).",
+      "english": "In addition to Aneto, other peaks are also found in it such as the Posets Peak (3369 m), the Astorg Point (3355 m), the Maldito Peak (3350 m), the Medio Peak (3346 m), the Coronas Peak (3293 m), the Tempestades Peak (3290 m) and the Alba Peak (3118 m)."
+    },
+    {
+      "id": "s3",
+      "name": "valle de Benasque",
+      "quote": "Además del valle de Benasque, que es el principal, hay otros valles dentro del parque natural como el valle de Estós y el valle de Vallibierna.",
+      "english": "In addition to the Benasque valley, which is the main one, there are other valleys within the natural park such as the Estós valley and the Vallibierna valley."
+    },
+    {
+      "id": "s4",
+      "name": "valle de Estós",
+      "quote": "Además del valle de Benasque, que es el principal, hay otros valles dentro del parque natural como el valle de Estós y el valle de Vallibierna.",
+      "english": "In addition to the Benasque valley, which is the main one, there are other valleys within the natural park such as the Estós valley and the Vallibierna valley."
+    },
+    {
+      "id": "s5",
+      "name": "valle de Vallibierna",
+      "quote": "Además del valle de Benasque, que es el principal, hay otros valles dentro del parque natural como el valle de Estós y el valle de Vallibierna.",
+      "english": "In addition to the Benasque valley, which is the main one, there are other valleys within the natural park such as the Estós valley and the Vallibierna valley."
+    },
+    {
+      "id": "s6",
+      "name": "Batisielles",
+      "quote": "Son de interés sus morrenas e ibones (Vallibierna, Cregüeña, Batisielles, los Millares, Remuñe), además de la flora y fauna propias del clima de alta montaña.",
+      "english": "Its moraines and glacial lakes are of interest (Vallibierna, Cregüeña, Batisielles, los Millares, Remuñe), in addition to the flora and fauna typical of high mountain climates."
+    },
+    {
+      "id": "s7",
+      "name": "Glaciares Pirenaicos",
+      "quote": "La reserva natural cuenta además con otras figuras de protección: Monumento natural de los Glaciares Pirenaicos.",
+      "english": "The nature reserve also has other protection figures: Natural Monument of the Pyrenean Glaciers."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Glaciers",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Valleys and Glacial Lakes",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "bea3112b55758e74ca7a3e2665b653d533a07858ffb24967e79025f6b4a57e1e"
+}

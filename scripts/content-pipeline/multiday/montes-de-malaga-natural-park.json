@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lagar de Torrijos",
+      "quote": "En la actualidad, esta actividad es marginal, realizándose dentro del Parque aún de forma tradicional la «pisa» en el lagar de Torrijos, así como la obtención del vino denominado de «los montes», con una finalidad más bien demostrativa y de exposición.",
+      "english": "Currently, this activity is marginal, with the traditional 'treading' still being carried out within the Park at the Torrijos wine press, as well as the production of the wine known as 'los montes', for more of a demonstrative and exhibition purpose."
+    },
+    {
+      "id": "s2",
+      "name": "Monte Matanza",
+      "quote": "El Mirador de La Unidad se encuentra en la frontera oriental del Parque natural Montes de Málaga, en la cumbre del Monte Matanza, uno de los montes más altos del Municipio de Málaga, a una altitud de unos 773,5 metros sobre el nivel del mar Mediterráneo.",
+      "english": "The La Unidad Viewpoint is located on the eastern border of the Montes de Málaga Natural Park, at the summit of Monte Matanza, one of the highest mountains in the Municipality of Málaga, at an altitude of about 773.5 meters above the Mediterranean Sea level."
+    },
+    {
+      "id": "s3",
+      "name": "Aula de la Naturaleza Las Contadoras",
+      "quote": "En el Parque encontramos algunos edificios bien conservados, algunos de ellos de una gran importancia patrimonial a nivel local, como por ejemplo, el Hotel Humaina, el Museo Lagar de Torrijos, el Aula de la Naturaleza Las Contadoras (cuyo edificio es uno de los más antiguos del municipio de Málaga) y la Casa Forestal de Boticario, (futuro centro de interpretación del PN).",
+      "english": "In the Park we find some well-preserved buildings, some of them of great local heritage importance, such as the Hotel Humaina, the Torrijos Wine Press Museum, the Las Contadoras Nature School (whose building is one of the oldest in the municipality of Málaga) and the Boticario Forest House, (future interpretation center of the NP)."
+    },
+    {
+      "id": "s4",
+      "name": "Mirador de Francisco Vázquez Sell",
+      "quote": "El parque natural también dispone de varios miradores, como el Mirador de Francisco Vázquez Sell, situado en las cercanías del Aula de la Naturaleza Las Contadoras, y desde donde se puede observar una gran parte de la provincia de Málaga, el Mirador de Martínez Falero, situado en el llamado Camino Amarillo, que conduce desde la Explanada de Las Contadoras hacia el Museo Lagar de Torrijos, y desde donde se puede ver parte de la cuenca del Arroyo Chaperas, el Mirador de Pocopán, situado al final del sendero de su mismo nombre y en la cima del Cerro de Pocopán, desde donde se contemplan unas excelentes vistas del Valle del Río Guadalmedina, el Mirador del Cochino, en el sendero de El Cerrado, con unas buenas vistas de la ciudad de Málaga y del Valle del Arroyo Humaina, el Mirador del Palomar, recientemente restaurado y situado en las cercanías del Museo Lagar de Torrijos, y el Mirador de La Unidad, el más reciente de estos miradores, hecho durante los años 2012 al 2019 por los voluntarios del Parque natural Montes de Málaga en la cumbre del Monte Matanza, y desde donde se contemplan unas excelentes vistas hacia todas las direcciones.",
+      "english": "The natural park also has several viewpoints, such as the Francisco Vázquez Sell Viewpoint, located near the Las Contadoras Nature School, from which a large part of the province of Málaga can be observed."
+    },
+    {
+      "id": "s5",
+      "name": "Mirador de Pocopán",
+      "quote": "El Mirador de Pocopán, situado al final del sendero de su mismo nombre y en la cima del Cerro de Pocopán, desde donde se contemplan unas excelentes vistas del Valle del Río Guadalmedina.",
+      "english": "The Pocopán Viewpoint, located at the end of the trail of the same name and at the top of Pocopán Hill, from where excellent views of the Guadalmedina River Valley can be enjoyed."
+    },
+    {
+      "id": "s6",
+      "name": "Mirador del Cochino",
+      "quote": "El Mirador del Cochino, en el sendero de El Cerrado, con unas buenas vistas de la ciudad de Málaga y del Valle del Arroyo Humaina.",
+      "english": "The Cochino Viewpoint, on the El Cerrado trail, with good views of the city of Málaga and the Humaina Stream Valley."
+    },
+    {
+      "id": "s7",
+      "name": "Mirador del Palomar",
+      "quote": "El Mirador del Palomar, recientemente restaurado y situado en las cercanías del Museo Lagar de Torrijos.",
+      "english": "The Palomar Viewpoint, recently restored and located in the vicinity of the Torrijos Wine Press Museum."
+    }
+  ],
+  "days": [
+    {
+      "title": "Torrijos Heritage and Trails",
+      "stop_ids": [
+        "s1",
+        "s7"
+      ]
+    },
+    {
+      "title": "Heights and Nature Education",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Eastern Peaks and City Views",
+      "stop_ids": [
+        "s2",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "80b0ca83afd2b414a6c834eaf87a352e0e55a8a20bcc923d35e22c6da914ecc5"
+}

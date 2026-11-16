@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "El Alto de San Antonio",
+      "quote": "El espacio natural protegido abarca unas 2298 hectáreas, y comprende la alineación montañosa de El Alto de San Antonio (L'Alt de Sant Antoni), El Carrascal de la Fuente Roja (El Carrascar de la Font Roja) y La Teixereta.",
+      "english": "The protected natural area covers about 2298 hectares and includes the mountain alignment of El Alto de San Antonio, El Carrascal de la Fuente Roja, and La Teixereta."
+    },
+    {
+      "id": "s2",
+      "name": "La Teixereta",
+      "quote": "El espacio natural protegido abarca unas 2298 hectáreas, y comprende la alineación montañosa de El Alto de San Antonio (L'Alt de Sant Antoni), El Carrascal de la Fuente Roja (El Carrascar de la Font Roja) y La Teixereta.",
+      "english": "The protected natural area covers about 2298 hectares and includes the mountain alignment of El Alto de San Antonio, El Carrascal de la Fuente Roja, and La Teixereta."
+    },
+    {
+      "id": "s3",
+      "name": "Sierra de Menachaor",
+      "quote": "La cumbre de la Sierra de Menachaor (Serra del Menejador), con 1356 m de altura, es la cota más elevada del parque.",
+      "english": "The summit of the Sierra de Menachaor (Serra del Menejador), at 1356 m high, is the highest point of the park."
+    },
+    {
+      "id": "s4",
+      "name": "Cueva Helada",
+      "quote": "La Cueva Helada, muy próxima al Santuario de la Fuente Roja, prueba la existencia de los procesos de karstificación que comúnmente se asocia a este tipo de roca.",
+      "english": "The Cueva Helada, very close to the Sanctuary of the Fuente Roja, proves the existence of the karstification processes commonly associated with this type of rock."
+    },
+    {
+      "id": "s5",
+      "name": "Santuario de la Fuente Roja",
+      "quote": "La Cueva Helada, muy próxima al Santuario de la Fuente Roja, prueba la existencia de los procesos de karstificación que comúnmente se asocia a este tipo de roca.",
+      "english": "The Cueva Helada, very close to the Sanctuary of the Fuente Roja, proves the existence of the karstification processes commonly associated with this type of rock."
+    },
+    {
+      "id": "s6",
+      "name": "neveros",
+      "quote": "En la cumbre de esta se pueden encontrar restos de algunos prehistóricos neveros o pozos destinados a conservar la nieve.",
+      "english": "At its summit, remains of some prehistoric snowfields or wells intended to preserve snow can be found."
+    },
+    {
+      "id": "s7",
+      "name": "ermita de Polop",
+      "quote": "Existe otro acceso desde la carretera CV-795 que va desde Alcoy a Bañeres, cerca de la ermita de Polop se encuentra la conexión con la carretera CV-797 hacia la Font Roja.",
+      "english": "There is another access from the CV-795 road that goes from Alcoy to Bañeres; near the Polop hermitage is the connection with the CV-797 road towards Font Roja."
+    },
+    {
+      "id": "s8",
+      "name": "cavas",
+      "quote": "Testimonio de este comercio lo encontramos en construcciones de alto valor arquitectónico y también etnológico, como las cavas o pozos de nieve.",
+      "english": "We find testimony of this trade in constructions of high architectural and ethnological value, such as the 'cavas' or snow wells."
+    }
+  ],
+  "days": [
+    {
+      "title": "Summits and Highlands",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "Sanctuary and Heritage Sites",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "aba0ad6826c8340b7eb87b9c190aa9f5ec0d51a687434f5312232b4a9b7e1b6f"
+}

@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "La Morera de Montsant",
+      "quote": "Incluye parte de los municipios de La Morera de Montsant, Ulldemolins, Margalef, Cabacés, Cornudella de Montsant, La Vilella Alta, La Vilella Baixa, La Bisbal de Montsant y La Figuera.",
+      "english": "It includes part of the municipalities of La Morera de Montsant, Ulldemolins, Margalef, Cabacés, Cornudella de Montsant, La Vilella Alta, La Vilella Baixa, La Bisbal de Montsant and La Figuera."
+    },
+    {
+      "id": "s2",
+      "name": "Ulldemolins",
+      "quote": "Incluye parte de los municipios de La Morera de Montsant, Ulldemolins, Margalef, Cabacés, Cornudella de Montsant, La Vilella Alta, La Vilella Baixa, La Bisbal de Montsant y La Figuera.",
+      "english": "It includes part of the municipalities of La Morera de Montsant, Ulldemolins, Margalef, Cabacés, Cornudella de Montsant, La Vilella Alta, La Vilella Baixa, La Bisbal de Montsant and La Figuera."
+    },
+    {
+      "id": "s3",
+      "name": "Margalef",
+      "quote": "Incluye parte de los municipios de La Morera de Montsant, Ulldemolins, Margalef, Cabacés, Cornudella de Montsant, La Vilella Alta, La Vilella Baixa, La Bisbal de Montsant y La Figuera.",
+      "english": "It includes part of the municipalities of La Morera de Montsant, Ulldemolins, Margalef, Cabacés, Cornudella de Montsant, La Vilella Alta, La Vilella Baixa, La Bisbal de Montsant and La Figuera."
+    },
+    {
+      "id": "s4",
+      "name": "Cabacés",
+      "quote": "Incluye parte de los municipios de La Morera de Montsant, Ulldemolins, Margalef, Cabacés, Cornudella de Montsant, La Vilella Alta, La Vilella Baixa, La Bisbal de Montsant y La Figuera.",
+      "english": "It includes part of the municipalities of La Morera de Montsant, Ulldemolins, Margalef, Cabacés, Cornudella de Montsant, La Vilella Alta, La Vilella Baixa, La Bisbal de Montsant and La Figuera."
+    },
+    {
+      "id": "s5",
+      "name": "Cornudella de Montsant",
+      "quote": "Incluye parte de los municipios de La Morera de Montsant, Ulldemolins, Margalef, Cabacés, Cornudella de Montsant, La Vilella Alta, La Vilella Baixa, La Bisbal de Montsant y La Figuera.",
+      "english": "It includes part of the municipalities of La Morera de Montsant, Ulldemolins, Margalef, Cabacés, Cornudella de Montsant, La Vilella Alta, La Vilella Baixa, La Bisbal de Montsant and La Figuera."
+    },
+    {
+      "id": "s6",
+      "name": "La Vilella Alta",
+      "quote": "Incluye parte de los municipios de La Morera de Montsant, Ulldemolins, Margalef, Cabacés, Cornudella de Montsant, La Vilella Alta, La Vilella Baixa, La Bisbal de Montsant y La Figuera.",
+      "english": "It includes part of the municipalities of La Morera de Montsant, Ulldemolins, Margalef, Cabacés, Cornudella de Montsant, La Vilella Alta, La Vilella Baixa, La Bisbal de Montsant and La Figuera."
+    },
+    {
+      "id": "s7",
+      "name": "La Vilella Baixa",
+      "quote": "Incluye parte de los municipios de La Morera de Montsant, Ulldemolins, Margalef, Cabacés, Cornudella de Montsant, La Vilella Alta, La Vilella Baixa, La Bisbal de Montsant y La Figuera.",
+      "english": "It includes part of the municipalities of La Morera de Montsant, Ulldemolins, Margalef, Cabacés, Cornudella de Montsant, La Vilella Alta, La Vilella Baixa, La Bisbal de Montsant and La Figuera."
+    },
+    {
+      "id": "s8",
+      "name": "La Bisbal de Montsant",
+      "quote": "Incluye parte de los municipios de La Morera de Montsant, Ulldemolins, Margalef, Cabacés, Cornudella de Montsant, La Vilella Alta, La Vilella Baixa, La Bisbal de Montsant y La Figuera.",
+      "english": "It includes part of the municipalities of La Morera de Montsant, Ulldemolins, Margalef, Cabacés, Cornudella de Montsant, La Vilella Alta, La Vilella Baixa, La Bisbal de Montsant and La Figuera."
+    },
+    {
+      "id": "s9",
+      "name": "La Figuera",
+      "quote": "Incluye parte de los municipios de La Morera de Montsant, Ulldemolins, Margalef, Cabacés, Cornudella de Montsant, La Vilella Alta, La Vilella Baixa, La Bisbal de Montsant y La Figuera.",
+      "english": "It includes part of the municipalities of La Morera de Montsant, Ulldemolins, Margalef, Cabacés, Cornudella de Montsant, La Vilella Alta, La Vilella Baixa, La Bisbal de Montsant and La Figuera."
+    },
+    {
+      "id": "s10",
+      "name": "Roca Corbatera",
+      "quote": "La cima de la Roca Corbatera de 1163 metros es la máxima altitud del parque.",
+      "english": "The peak of Roca Corbatera at 1163 meters is the highest altitude in the park."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern and Western Villages",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Southern Villages and High Peaks",
+      "stop_ids": [
+        "s5",
+        "s10",
+        "s6"
+      ]
+    },
+    {
+      "title": "Lower Valley Villages",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "90dfa7ea8006848ee281c10845b566f81a8efeade220aa2fa4f922f1eab99cf5"
+}

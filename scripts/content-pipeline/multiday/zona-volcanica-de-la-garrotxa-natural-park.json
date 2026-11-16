@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Fageda d'en Jordà",
+      "quote": "Destaca la Fageda d'en Jordà o Hayedo de Jordá, un gran bosque de hayas que resulta excepcional por crecer en una llanura a solo 550 m de altitud.",
+      "english": "The Fageda d'en Jordà or Jordan Beech Forest stands out, a large beech forest that is exceptional for growing on a plain at only 550 m altitude."
+    },
+    {
+      "id": "s2",
+      "name": "Santa Margarita",
+      "quote": "Otro sector importante lo constituye el valle tectónico del Río Ter, al pie de la escarpa de falla de las sierras del Corb y de Finestres, donde se encuentran los volcanes más importantes (Santa Margarita y el Croscat).",
+      "english": "Another important sector is the tectonic valley of the Ter River, at the foot of the fault escarpment of the Corb and Finestres mountain ranges, where the most important volcanoes (Santa Margarita and Croscat) are found."
+    },
+    {
+      "id": "s3",
+      "name": "Croscat",
+      "quote": "El Croscat es el volcán más grande de la península ibérica, con una altura sobre el nivel del mar de 786 m, 160 m de altura, 600 m de longitud y 350 m de anchura máximas.",
+      "english": "The Croscat is the largest volcano on the Iberian Peninsula, with a height above sea level of 786 m, 160 m in height, 600 m in length and 350 m maximum width."
+    },
+    {
+      "id": "s4",
+      "name": "Castellfullit de la Roca",
+      "quote": "Existen asimismo mesas de lava (elevaciones volcánicas producidas por una colada que rebaja profundamente el terreno circundante), como en Castellfullit de la Roca o en San Juan les Fonts, donde puede verse la característica constitución en estratos horizontales de basalto (columnatas basálticas).",
+      "english": "Lava tables also exist (volcanic elevations produced by a flow that deeply lowers the surrounding terrain), as in Castellfullit de la Roca or in San Juan les Fonts, where the characteristic constitution of horizontal basalt strata (basaltic colonnades) can be seen."
+    },
+    {
+      "id": "s5",
+      "name": "Puigsallança",
+      "quote": "El terreno de la zona es de montaña media, abarcando desde los 200 m de altura de Castellfullit de la Roca hasta los 1100 m del Puigsallança, punto culminante de la sierra de Finestres.",
+      "english": "The terrain of the area is mid-mountain, ranging from 200 m high in Castellfullit de la Roca to 1100 m in Puigsallança, the highest point of the Finestres mountain range."
+    },
+    {
+      "id": "s6",
+      "name": "Montsacopa",
+      "quote": "Los hay con cráter central (Montsacopa), con cráteres laterales (Garrinada, Santa Margarida), constituidos por piroclastos uniformes y de pequeño tamaño (Croscat) o piroclastos heterométricos (Montolivet, Montsacopa).",
+      "english": "There are those with a central crater (Montsacopa), with lateral craters (Garrinada, Santa Margarida), consisting of uniform and small-sized pyroclasts (Croscat) or heterometric pyroclasts (Montolivet, Montsacopa)."
+    },
+    {
+      "id": "s7",
+      "name": "San Juan les Fonts",
+      "quote": "Existen asimismo mesas de lava (elevaciones volcánicas producidas por una colada que rebaja profundamente el terreno circundante), como en Castellfullit de la Roca o en San Juan les Fonts, donde puede verse la característica constitución en estratos horizontales de basalto.",
+      "english": "Lava tables also exist (volcanic elevations produced by a flow that deeply lowers the surrounding terrain), such as in Castellfullit de la Roca or in San Juan les Fonts, where the characteristic constitution in horizontal basalt strata can be seen."
+    },
+    {
+      "id": "s8",
+      "name": "Garrinada",
+      "quote": "Los hay con cráter central (Montsacopa), con cráteres laterales (Garrinada, Santa Margarida), constituidos por piroclastos uniformes y de pequeño tamaño (Croscat) o piroclastos heterométricos (Montolivet, Montsacopa).",
+      "english": "There are those with a central crater (Montsacopa), with lateral craters (Garrinada, Santa Margarida), consisting of uniform and small-sized pyroclasts (Croscat) or heterometric pyroclasts (Montolivet, Montsacopa)."
+    },
+    {
+      "id": "s9",
+      "name": "Montolivet",
+      "quote": "Los hay con cráter central (Montsacopa), con cráteres laterales (Garrinada, Santa Margarida), constituidos por piroclastos uniformes y de pequeño tamaño (Croscat) o piroclastos heterométricos (Montolivet, Montsacopa).",
+      "english": "There are those with a central crater (Montsacopa), with lateral craters (Garrinada, Santa Margarida), consisting of uniform and small-sized pyroclasts (Croscat) or heterometric pyroclasts (Montolivet, Montsacopa)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Volcanoes and Beech Forest",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Olot Craters and Peaks",
+      "stop_ids": [
+        "s6",
+        "s8",
+        "s9",
+        "s5"
+      ]
+    },
+    {
+      "title": "Basaltic Cliffs and Lava Tables",
+      "stop_ids": [
+        "s4",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "97206cf59535dbcc9688dba090a2cc0c53ba908bdafd1d9067f537758ae2150f"
+}

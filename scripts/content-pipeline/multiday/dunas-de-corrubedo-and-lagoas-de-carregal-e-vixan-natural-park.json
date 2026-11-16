@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Casa da Costa",
+      "quote": "En la entrada de O Vilar se encuentran el centro de recepción de visitantes Casa da Costa y el centro de interpretación del ecosistema dunar.",
+      "english": "At the entrance of O Vilar, you will find the Casa da Costa visitor reception center and the dune ecosystem interpretation center."
+    },
+    {
+      "id": "s2",
+      "name": "gran duna móvil",
+      "quote": "En las playas encontramos el cordón dunar, con la gran duna móvil, las más grande de Galicia, que da nombre al parque.",
+      "english": "On the beaches we find the dune chain, with the great mobile dune, the largest in Galicia, which gives the park its name."
+    },
+    {
+      "id": "s3",
+      "name": "laguna de Carregal",
+      "quote": "En las marismas se mezclan las aguas saladas del mar con las dulces procedentes del río Longo o de los arroyos de Sanchanás y de Sirves, que forman la laguna de Carregal.",
+      "english": "In the marshes, salt water from the sea mixes with fresh water from the Longo River or the Sanchanás and Sirves streams, which form the Carregal lagoon."
+    },
+    {
+      "id": "s4",
+      "name": "laguna de Vixán",
+      "quote": "La laguna de Vixán, situada en el extremo sur del parque y alimentada por el arroyo do Vilar, es de agua dulce.",
+      "english": "The Vixán lagoon, located at the southern end of the park and fed by the Vilar stream, is freshwater."
+    },
+    {
+      "id": "s5",
+      "name": "playa de Ladeira",
+      "quote": "La zona más próxima a Corrubedo, formada por las playas de Ladeira y As dunas o Da Ferreira, presenta arenas finas y corrientes menos acusadas que en las playas del sur.",
+      "english": "The area closest to Corrubedo, formed by the beaches of Ladeira and As dunas or Da Ferreira, features fine sands and less pronounced currents than in the southern beaches."
+    },
+    {
+      "id": "s6",
+      "name": "playa do Vilar",
+      "quote": "Tras la desembocadura de la laguna do Carregal se extienden las playas do Castro, do Vilar y Anquieira, de arenas más gruesas y corrientes laterales bastante peligrosas.",
+      "english": "After the mouth of the Carregal lagoon lie the beaches of do Castro, do Vilar, and Anquieira, with coarser sands and quite dangerous side currents."
+    },
+    {
+      "id": "s7",
+      "name": "centro de interpretación del ecosistema dunar",
+      "quote": "En la entrada de O Vilar se encuentran el centro de recepción de visitantes Casa da Costa y el centro de interpretación del ecosistema dunar.",
+      "english": "At the entrance of O Vilar, you will find the Casa da Costa visitor reception center and the dune ecosystem interpretation center."
+    }
+  ],
+  "days": [
+    {
+      "title": "Visitor Centers and Northern Sands",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s5"
+      ]
+    },
+    {
+      "title": "Great Dunes and Central Lagoons",
+      "stop_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Southern Wetlands and Coastal Trails",
+      "stop_ids": [
+        "s4",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "5aff17ba78f4047746085e682e99da6dd46f3bd0ff32a0cca0179ed4b03c5dce"
+}

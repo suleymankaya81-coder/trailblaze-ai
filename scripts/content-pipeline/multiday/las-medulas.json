@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "lago de Carucedo",
+      "quote": "El paisaje creado recoge las variaciones que los trabajos de explotación realizaron, desde la desaparición de las montañas encauzando sus escombros a lugares concretos para su posterior cribado y filtrado, hasta la creación de un lago artificial debido a los sedimentos acumulados, el lago de Carucedo, así como la inmensa infraestructura hidráulica construida, hay más de 400 km de canales, algunos de más de 100 km de longitud, necesaria para ello.",
+      "english": "The created landscape reflects the variations produced by the mining works, from the disappearance of mountains by channeling their debris to specific locations for subsequent screening and filtering, to the creation of an artificial lake due to accumulated sediment, the lake of Carucedo, as well as the immense hydraulic infrastructure built, with more than 400 km of canals, some over 100 km long, necessary for this purpose."
+    },
+    {
+      "id": "s2",
+      "name": "Senda de las Valiñas",
+      "quote": "Al mirador se accede desde un sendero en la senda de la Valiñas o por la perimetral.",
+      "english": "The viewpoint is accessed from a path on the Senda de las Valiñas or via the perimeter trail."
+    },
+    {
+      "id": "s3",
+      "name": "Mirador de Orellán",
+      "quote": "Al mirador se accede desde un sendero en la senda de la Valiñas o por la perimetral.",
+      "english": "The viewpoint is accessed from a path on the Senda de las Valiñas or via the perimeter trail."
+    },
+    {
+      "id": "s4",
+      "name": "Galería de Orellán",
+      "quote": "Galería de agua visitable, de unos 100 metros de longitud, horadada en las Médulas.",
+      "english": "Visitable water gallery, about 100 meters long, hollowed out in Las Médulas."
+    },
+    {
+      "id": "s5",
+      "name": "monte Placias",
+      "quote": "A partir de ahí el paseo se hará a pie bordeando el monte Placias (1025 m s. n. m.) hasta el Campo de la Braña, desde donde el camino desciende hacia las excavaciones de las Medulillas en las cuevas de Reirigo o la cueva de la Chaira, de más de 250 metros de largo.",
+      "english": "From there the walk will be done on foot skirting Mount Placias (1025 m above sea level) to Campo de la Braña, from where the path descends towards the excavations of the Medulillas in the Reirigo caves or the Chaira cave, more than 250 meters long."
+    },
+    {
+      "id": "s6",
+      "name": "Campo de la Braña",
+      "quote": "A partir de ahí el paseo se hará a pie bordeando el monte Placias (1025 m s. n. m.) hasta el Campo de la Braña, desde donde el camino desciende hacia las excavaciones de las Medulillas en las cuevas de Reirigo o la cueva de la Chaira, de más de 250 metros de largo.",
+      "english": "From there the walk will be done on foot skirting Mount Placias (1025 m above sea level) to Campo de la Braña, from where the path descends towards the excavations of the Medulillas in the Reirigo caves or the Chaira cave, more than 250 meters long."
+    },
+    {
+      "id": "s7",
+      "name": "cueva de la Chaira",
+      "quote": "A partir de ahí el paseo se hará a pie bordeando el monte Placias (1025 m s. n. m.) hasta el Campo de la Braña, desde donde el camino desciende hacia las excavaciones de las Medulillas en las cuevas de Reirigo o la cueva de la Chaira, de más de 250 metros de largo.",
+      "english": "From there the walk will be done on foot skirting Mount Placias (1025 m above sea level) to Campo de la Braña, from where the path descends towards the excavations of the Medulillas in the Reirigo caves or the Chaira cave, more than 250 meters long."
+    },
+    {
+      "id": "s8",
+      "name": "pueblo de las Médulas",
+      "quote": "El camino lleva a la bifurcación de las Pedrices (nombre dado a las piedras de «murias»), desde donde se vuelve al pueblo de las Médulas.",
+      "english": "The path leads to the Las Pedrices junction (name given to the 'murias' stones), from where you return to the village of Las Médulas."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lakeside and Valley Village",
+      "stop_ids": [
+        "s1",
+        "s8"
+      ]
+    },
+    {
+      "title": "Orellán Viewpoints and Trails",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "High Peaks and Caves",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "54b1cf2c23c48756e5a6952839cbc5a5a4f1c98c1e7e2ecb705882de1d41a954"
+}

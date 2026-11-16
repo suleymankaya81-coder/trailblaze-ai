@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "El Turó de l'Home",
+      "quote": "Tres grandes conjuntos montañosos configuran el macizo: la carena de El Turó de l'Home (1706 m) y Les Agudes (1703 m), El Matagalls (1697 m) y El Pla de la Calma (El Puig Drau, 1344 m), que, unidos por los collados de Sant Marçal y de Coll Formic, respectivamente, rodean la cuenca alta del río Tordera.",
+      "english": "Three large mountain groups make up the massif: the ridge of El Turó de l'Home (1706 m) and Les Agudes (1703 m), El Matagalls (1697 m), and El Pla de la Calma (El Puig Drau, 1344 m), which, joined by the Sant Marçal and Coll Formic passes, respectively, surround the upper basin of the Tordera River."
+    },
+    {
+      "id": "s2",
+      "name": "Les Agudes",
+      "quote": "Tres grandes conjuntos montañosos configuran el macizo: la carena de El Turó de l'Home (1706 m) y Les Agudes (1703 m), El Matagalls (1697 m) y El Pla de la Calma (El Puig Drau, 1344 m), que, unidos por los collados de Sant Marçal y de Coll Formic, respectivamente, rodean la cuenca alta del río Tordera.",
+      "english": "Three large mountain groups make up the massif: the ridge of El Turó de l'Home (1706 m) and Les Agudes (1703 m), El Matagalls (1697 m), and El Pla de la Calma (El Puig Drau, 1344 m), which, joined by the Sant Marçal and Coll Formic passes, respectively, surround the upper basin of the Tordera River."
+    },
+    {
+      "id": "s3",
+      "name": "El Matagalls",
+      "quote": "Tres grandes conjuntos montañosos configuran el macizo: la carena de El Turó de l'Home (1706 m) y Les Agudes (1703 m), El Matagalls (1697 m) y El Pla de la Calma (El Puig Drau, 1344 m), que, unidos por los collados de Sant Marçal y de Coll Formic, respectivamente, rodean la cuenca alta del río Tordera.",
+      "english": "Three large mountain groups make up the massif: the ridge of El Turó de l'Home (1706 m) and Les Agudes (1703 m), El Matagalls (1697 m), and El Pla de la Calma (El Puig Drau, 1344 m), which, joined by the Sant Marçal and Coll Formic passes, respectively, surround the upper basin of the Tordera River."
+    },
+    {
+      "id": "s4",
+      "name": "El Pla de la Calma",
+      "quote": "Tres grandes conjuntos montañosos configuran el macizo: la carena de El Turó de l'Home (1706 m) y Les Agudes (1703 m), El Matagalls (1697 m) y El Pla de la Calma (El Puig Drau, 1344 m), que, unidos por los collados de Sant Marçal y de Coll Formic, respectivamente, rodean la cuenca alta del río Tordera.",
+      "english": "Three large mountain groups make up the massif: the ridge of El Turó de l'Home (1706 m) and Les Agudes (1703 m), El Matagalls (1697 m), and El Pla de la Calma (El Puig Drau, 1344 m), which, joined by the Sant Marçal and Coll Formic passes, respectively, surround the upper basin of the Tordera River."
+    },
+    {
+      "id": "s5",
+      "name": "castillo del turó de Montgrós",
+      "quote": "Así lo evidencian el castillo del turó de Montgrós en Brull y los asentamientos fortificados de Montclús en San Esteban de Palautordera y de can Flaquer en Samalús.",
+      "english": "This is evidenced by the castle of the Turó de Montgrós in Brull and the fortified settlements of Montclús in San Esteban de Palautordera and can Flaquer in Samalús."
+    },
+    {
+      "id": "s6",
+      "name": "Vila romana de Can Tarrés",
+      "quote": "Del periodo romano datan construcciones como la Vila romana de Can Tarrés y otras en los llanos vecinos siguiendo la Vía Augusta y la Vía Ausa.",
+      "english": "From the Roman period date constructions such as the Roman Villa of Can Tarrés and others in the neighboring plains following the Via Augusta and the Via Ausa."
+    },
+    {
+      "id": "s7",
+      "name": "castillo de Montsoriu",
+      "quote": "De esta época datan la iglesia con pinturas prerrománicas de San Pedro Desplá (Arbucias) y el castillo de Montsoriu, muestra de arquitectura militar de la época.",
+      "english": "From this era date the church with pre-Romanesque paintings of San Pedro Desplá (Arbucias) and the castle of Montsoriu, a sample of military architecture of the time."
+    },
+    {
+      "id": "s8",
+      "name": "San Pedro Desplá",
+      "quote": "De esta época datan la iglesia con pinturas prerrománicas de San Pedro Desplá (Arbucias) y el castillo de Montsoriu, muestra de arquitectura militar de la época.",
+      "english": "From this era date the church with pre-Romanesque paintings of San Pedro Desplá (Arbucias) and the castle of Montsoriu, a sample of military architecture of the time."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Mountain Ridges",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Historical Fortifications and Heritage",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "af5a926901be1392e659404fe8ed6ae19bc4fcc2fd6b2f26638150a5e604c6e7"
+}

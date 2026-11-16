@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Bembézar",
+      "quote": "Está surcado por varios ríos: el Bembézar, junto con su afluente Guadalora, el Retortillo y el Guadiato; embalses como el del Bembézar.",
+      "english": "It is crossed by several rivers: the Bembézar, along with its tributary Guadalora, the Retortillo and the Guadiato; reservoirs such as the Bembézar reservoir."
+    },
+    {
+      "id": "s2",
+      "name": "Hornachuelos",
+      "quote": "Dentro de los límites del parque se asientan las poblaciones de Hornachuelos, Posadas, Almodóvar del Río y Villaviciosa de Córdoba; el conjunto arquitectónico de San Calixto, que alberga una comunidad de Carmelitas Descalzos, además de caseríos y fincas.​",
+      "english": "Within the limits of the park lie the towns of Hornachuelos, Posadas, Almodóvar del Río and Villaviciosa de Córdoba; the architectural complex of San Calixto, which houses a community of Discalced Carmelites, in addition to farmhouses and estates."
+    },
+    {
+      "id": "s3",
+      "name": "San Calixto",
+      "quote": "Dentro de los límites del parque se asientan las poblaciones de Hornachuelos, Posadas, Almodóvar del Río y Villaviciosa de Córdoba; el conjunto arquitectónico de San Calixto, que alberga una comunidad de Carmelitas Descalzos, además de caseríos y fincas.​",
+      "english": "Within the limits of the park lie the towns of Hornachuelos, Posadas, Almodóvar del Río and Villaviciosa de Córdoba; the architectural complex of San Calixto, which houses a community of Discalced Carmelites, in addition to farmhouses and estates."
+    },
+    {
+      "id": "s4",
+      "name": "Centro de Visitantes Huerta del Rey",
+      "quote": "Centro de Visitantes Huerta del Rey",
+      "english": "Huerta del Rey Visitor Centre"
+    },
+    {
+      "id": "s5",
+      "name": "Guadalora",
+      "quote": "Está surcado por varios ríos: el Bembézar, junto con su afluente Guadalora, el Retortillo y el Guadiato; embalses como el del Bembézar.",
+      "english": "It is crossed by several rivers: the Bembézar, along with its tributary Guadalora, the Retortillo and the Guadiato; reservoirs such as the Bembézar reservoir."
+    },
+    {
+      "id": "s6",
+      "name": "Retortillo",
+      "quote": "Está surcado por varios ríos: el Bembézar, junto con su afluente Guadalora, el Retortillo y el Guadiato; embalses como el del Bembézar.",
+      "english": "It is crossed by several rivers: the Bembézar, along with its tributary Guadalora, the Retortillo and the Guadiato; reservoirs such as the Bembézar reservoir."
+    },
+    {
+      "id": "s7",
+      "name": "Guadiato",
+      "quote": "Está surcado por varios ríos: el Bembézar, junto con su afluente Guadalora, el Retortillo y el Guadiato; embalses como el del Bembézar.",
+      "english": "It is crossed by several rivers: the Bembézar, along with its tributary Guadalora, the Retortillo and the Guadiato; reservoirs such as the Bembézar reservoir."
+    }
+  ],
+  "days": [
+    {
+      "title": "Rivers and Reservoirs",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Towns and Visitors",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "d71568f30f75bc7797489171486494586353baf369881db7d22747302164f58a"
+}

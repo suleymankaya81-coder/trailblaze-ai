@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "sierra de Padre Caro",
+      "quote": "Nace en la sierra de Padre Caro y tras recorrer casi 100 km llega hasta la ría de Huelva, donde se funde con el Odiel.",
+      "english": "It rises in the Sierra de Padre Caro and after traveling almost 100 km it reaches the Huelva estuary, where it merges with the Odiel."
+    },
+    {
+      "id": "s2",
+      "name": "embalse Marismilla",
+      "quote": "La RTC también construyó, en 1878, el embalse Marismilla con el objetivo de sacar agua procedente del río Tinto que sería empleada para la obtención de cobre por vía húmeda a través de la Cementación Planes y, posteriormente, de la Cementación Naya.",
+      "english": "The RTC also built, in 1878, the Marismilla reservoir with the objective of extracting water from the Tinto River to be used for wet-process copper production through the Planes Cementation and, later, the Naya Cementation."
+    },
+    {
+      "id": "s3",
+      "name": "Peña del Hierro",
+      "quote": "Próxima a su nacimiento se sitúa la corta a cielo abierto de la mina de Peña del Hierro en Nerva, encontrándose algo más adelante Corta Atalaya, el que fuera el mayor yacimiento minero a cielo abierto de Europa, ya en el municipio de Minas de Riotinto.",
+      "english": "Close to its source is the open-pit cut of the Peña del Hierro mine in Nerva, with Corta Atalaya located a bit further ahead, which was the largest open-pit mining deposit in Europe, already in the municipality of Minas de Riotinto."
+    },
+    {
+      "id": "s4",
+      "name": "Corta Atalaya",
+      "quote": "Próxima a su nacimiento se sitúa la corta a cielo abierto de la mina de Peña del Hierro en Nerva, encontrándose algo más adelante Corta Atalaya, el que fuera el mayor yacimiento minero a cielo abierto de Europa, ya en el municipio de Minas de Riotinto.",
+      "english": "Close to its source is the open-pit cut of the Peña del Hierro mine in Nerva, with Corta Atalaya located a bit further ahead, which was the largest open-pit mining deposit in Europe, already in the municipality of Minas de Riotinto."
+    },
+    {
+      "id": "s5",
+      "name": "ría de Huelva",
+      "quote": "Nace en la sierra de Padre Caro y desemboca en la ría de Huelva, donde confluye con el río Odiel.",
+      "english": "It rises in the Sierra de Padre Caro and flows into the Huelva estuary, where it converges with the Odiel River."
+    },
+    {
+      "id": "s6",
+      "name": "puerto de Huelva",
+      "quote": "Destacaría en este sentido la Rio Tinto Company Limited (RTC), que llegó a construir una línea férrea que seguía el curso del río hasta llegar al puerto de Huelva.",
+      "english": "Notable in this sense was the Rio Tinto Company Limited (RTC), which went as far as building a railway line that followed the course of the river until reaching the port of Huelva."
+    },
+    {
+      "id": "s7",
+      "name": "Niebla",
+      "quote": "Del norte, donde se sitúa su nacimiento, al sur, donde desemboca, el río atraviesa los municipios onubenses de Nerva, Minas de Río Tinto, El Campillo, Zalamea la Real, Berrocal, Valverde del Camino, Paterna del Campo, Niebla, La Palma del Condado, Villarrasa, Bonares, Trigueros, Lucena del Puerto, San Juan del Puerto, Moguer, Palos de la Frontera y Huelva.",
+      "english": "From the north, where its source is located, to the south, where it flows out, the river crosses the Huelva municipalities of Nerva, Minas de Río Tinto, El Campillo, Zalamea la Real, Berrocal, Valverde del Camino, Paterna del Campo, Niebla, La Palma del Condado, Villarrasa, Bonares, Trigueros, Lucena del Puerto, San Juan del Puerto, Moguer, Palos de la Frontera, and Huelva."
+    }
+  ],
+  "days": [
+    {
+      "title": "Highlands and Open Pit Mines",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Industrial Infrastructure and River Towns",
+      "stop_ids": [
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "The Estuary and Port",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "4ff2464cfa993f0c83544587e99f1d199ab3e59b87c5dee9d6d50332899b919b"
+}

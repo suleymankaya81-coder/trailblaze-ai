@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "pico Humión",
+      "quote": "Presentan un modélico relieve estructural de estilo jurásico y sus máxima altura es el pico Humión, con 1437 metros de altura.",
+      "english": "They feature a model structural relief of Jurassic style and their maximum height is the Humión peak, at 1437 meters high."
+    },
+    {
+      "id": "s2",
+      "name": "sierra de Oña",
+      "quote": "Limitado al norte por el río Ebro, en su interior comprende las sierras de Oña, La Llana, Pancorbo, Árcena y los propiamente llamados Montes Obarenes.",
+      "english": "Bounded to the north by the Ebro River, its interior includes the mountain ranges of Oña, La Llana, Pancorbo, Árcena and the so-called Montes Obarenes."
+    },
+    {
+      "id": "s3",
+      "name": "Valpuesta",
+      "quote": "Tiene una superficie de 33 064 ha, comprende 53 núcleos de población con 6806 habitantes y afecta totalmente a los siguientes términos municipales: Cillaperlata, Partido de la Sierra en Tobalina y Jurisdicción de San Zadornil, incluida la entidad local menor de Valpuesta.",
+      "english": "It has an area of 33,064 ha, includes 53 population centers with 6,806 inhabitants and fully affects the following municipalities: Cillaperlata, Partido de la Sierra en Tobalina and Jurisdicción de San Zadornil, including the minor local entity of Valpuesta."
+    },
+    {
+      "id": "s4",
+      "name": "cerro del Castillo",
+      "quote": "Atraviesa Pancorbo a la altura del cerro del Castillo y continúa por el límite sur de los siguientes montes: M.U.P. n.º 668 Mancubo y Otros, de Pancorbo (parcela Las Navas y los Campazos).",
+      "english": "It crosses Pancorbo at the height of the Castle hill and continues along the southern limit of the following mountains: M.U.P. No. 668 Mancubo and Others, of Pancorbo (Las Navas and Los Campazos plot)."
+    },
+    {
+      "id": "s5",
+      "name": "desfiladero del Río Purón",
+      "quote": "Es destacable el pinar natural de pino silvestre que rodea el desfiladero del Río Purón, en el norte del parque.",
+      "english": "The natural Scots pine forest surrounding the Purón River gorge, in the north of the park, is noteworthy."
+    },
+    {
+      "id": "s6",
+      "name": "centro de interpretación en Pancorbo",
+      "quote": "Y un centro de interpretación en Pancorbo.",
+      "english": "And an interpretation center in Pancorbo."
+    },
+    {
+      "id": "s7",
+      "name": "red de 22 senderos",
+      "quote": "El parque natural cuenta con una red de 22 senderos de pequeño recorrido.",
+      "english": "The natural park has a network of 22 short-distance trails."
+    }
+  ],
+  "days": [
+    {
+      "title": "Peaks and Trails of Oña",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Northern Valleys and Gorges",
+      "stop_ids": [
+        "s3",
+        "s5"
+      ]
+    },
+    {
+      "title": "Historical Landmarks of Pancorbo",
+      "stop_ids": [
+        "s4",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "ce75e4c036dcfb8a4fb7348a3f3e934ca529cb169a1d741296984260f45c8f5e"
+}

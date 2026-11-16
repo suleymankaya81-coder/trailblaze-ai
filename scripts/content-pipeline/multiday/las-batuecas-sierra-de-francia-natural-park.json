@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Pico Hastiala",
+      "quote": "Sus cotas más altas se sitúan en el Pico Hastiala (1735 m) y en la cresta de la Peña de Francia, que con sus 1723 m domina el conjunto de la comarca.",
+      "english": "Its highest levels are located at the Hastiala Peak (1735 m) and on the ridge of the Peña de Francia, which at 1723 m dominates the entire region."
+    },
+    {
+      "id": "s2",
+      "name": "Peña de Francia",
+      "quote": "La Peña de Francia, aun no siendo el pico más alto del conjunto, es el más famoso de la zona, haciendo de frontera natural con el Valle del Agadón, cuya cabecera, en los términos municipales de Monsagro y Serradilla del Arroyo, también se incluye en este espacio.",
+      "english": "The Peña de Francia, although not being the highest peak of the group, is the most famous in the area, acting as a natural border with the Agadón Valley, whose headwaters, in the municipalities of Monsagro and Serradilla del Arroyo, are also included in this space."
+    },
+    {
+      "id": "s3",
+      "name": "valle de Las Batuecas",
+      "quote": "Dentro de esta geografía plena de rincones apartados e íntimos, se diferencia por su aislamiento y personalidad el valle de Las Batuecas, que cuenta con un monasterio de Carmelitas Descalzos.",
+      "english": "Within this geography full of remote and intimate corners, the Las Batuecas valley stands out for its isolation and personality, featuring a monastery of Discalced Carmelites."
+    },
+    {
+      "id": "s4",
+      "name": "Valle del Agadón",
+      "quote": "La Peña de Francia, aun no siendo el pico más alto del conjunto, es el más famoso de la zona, haciendo de frontera natural con el Valle del Agadón, cuya cabecera, en los términos municipales de Monsagro y Serradilla del Arroyo, también se incluye en este espacio.",
+      "english": "The Peña de Francia, although not being the highest peak of the group, is the most famous in the area, acting as a natural border with the Agadón Valley, whose headwaters, in the municipalities of Monsagro and Serradilla del Arroyo, are also included in this space."
+    },
+    {
+      "id": "s5",
+      "name": "La Alberca",
+      "quote": "La cultura y la arquitectura tradicional altamente conservadas en los municipios de la sierra han llevado a conseguir la declaración de conjunto histórico-artístico a varias villas de la comarca: Mogarraz, San Martín del Castañar, Sequeros, Villanueva del Conde, Miranda del Castañar y La Alberca.",
+      "english": "The highly preserved culture and traditional architecture in the mountain municipalities have led to the declaration of several towns in the region as historic-artistic sites: Mogarraz, San Martín del Castañar, Sequeros, Villanueva del Conde, Miranda del Castañar, and La Alberca."
+    },
+    {
+      "id": "s6",
+      "name": "Mogarraz",
+      "quote": "La cultura y la arquitectura tradicional altamente conservadas en los municipios de la sierra han llevado a conseguir la declaración de conjunto histórico-artístico a varias villas de la comarca: Mogarraz, San Martín del Castañar, Sequeros, Villanueva del Conde, Miranda del Castañar y La Alberca.",
+      "english": "The highly preserved culture and traditional architecture in the mountain municipalities have led to the declaration of several towns in the region as historic-artistic sites: Mogarraz, San Martín del Castañar, Sequeros, Villanueva del Conde, Miranda del Castañar, and La Alberca."
+    },
+    {
+      "id": "s7",
+      "name": "San Martín del Castañar",
+      "quote": "La cultura y la arquitectura tradicional altamente conservadas en los municipios de la sierra han llevado a conseguir la declaración de conjunto histórico-artístico a varias villas de la comarca: Mogarraz, San Martín del Castañar, Sequeros, Villanueva del Conde, Miranda del Castañar y La Alberca.",
+      "english": "The highly preserved culture and traditional architecture in the mountain municipalities have led to the declaration of several towns in the region as historic-artistic sites: Mogarraz, San Martín del Castañar, Sequeros, Villanueva del Conde, Miranda del Castañar, and La Alberca."
+    },
+    {
+      "id": "s8",
+      "name": "Miranda del Castañar",
+      "quote": "La cultura y la arquitectura tradicional altamente conservadas en los municipios de la sierra han llevado a conseguir la declaración de conjunto histórico-artístico a varias villas de la comarca: Mogarraz, San Martín del Castañar, Sequeros, Villanueva del Conde, Miranda del Castañar y La Alberca.",
+      "english": "The highly preserved culture and traditional architecture in the mountain municipalities have led to the declaration of several towns in the region as historic-artistic sites: Mogarraz, San Martín del Castañar, Sequeros, Villanueva del Conde, Miranda del Castañar, and La Alberca."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Valleys",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s4"
+      ]
+    },
+    {
+      "title": "Traditional Historic Villages",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Monastic Valley and Castles",
+      "stop_ids": [
+        "s3",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "1d82b1fccfb99de35e6e25b1ebbe8593f5e86c846fba4f51e611b28a1e8d41ab"
+}

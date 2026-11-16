@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "isla del Trocadero",
+      "quote": "La isla del Trocadero una de las pocas colonias de espátulas de la península ibérica.",
+      "english": "The island of Trocadero is one of the few spoonbill colonies on the Iberian Peninsula."
+    },
+    {
+      "id": "s2",
+      "name": "isla de Sancti Petri",
+      "quote": "La isla de Sancti Petri",
+      "english": "The island of Sancti Petri"
+    },
+    {
+      "id": "s3",
+      "name": "caño de Sancti Petri",
+      "quote": "Comprende marismas, playas, pinares, arenales y zonas de matorral​ que son ribera de la bahía de Cádiz y las marismas asociadas a las desembocaduras del río Guadalete y río Iro, y también los espacios naturales adyacentes al caño de Sancti Petri.",
+      "english": "It includes marshes, beaches, pine forests, sandy areas and scrubland zones that are the banks of the Bay of Cádiz and the marshes associated with the mouths of the Guadalete and Iro rivers, and also the natural spaces adjacent to the Sancti Petri channel."
+    },
+    {
+      "id": "s4",
+      "name": "Parque Metropolitano de los Toruños",
+      "quote": "Uno situado en Valdelagrana, en El Puerto de Santa María que sirve de acceso al Parque Metropolitano de los Toruños",
+      "english": "One located in Valdelagrana, in El Puerto de Santa María, which serves as access to the Los Toruños Metropolitan Park"
+    },
+    {
+      "id": "s5",
+      "name": "playa de Camposoto",
+      "quote": "El centro de recepción de visitantes de San Fernando situado en el acceso a la playa de Camposoto.",
+      "english": "The San Fernando visitor reception center located at the access to Camposoto beach."
+    },
+    {
+      "id": "s6",
+      "name": "Centro de interpretación de las salinas",
+      "quote": "Centro de interpretación de las salinas en Chiclana de la Frontera",
+      "english": "Salt Pan Interpretation Center in Chiclana de la Frontera"
+    },
+    {
+      "id": "s7",
+      "name": "Pinar de la Algaida",
+      "quote": "Hasta el día de hoy se están haciendo esfuerzos para ir recuperando el espacio natural, gestión que se realiza también dentro del ámbito del Parque Metropolitano Marismas de Los Toruños y Pinar de la Algaida incluido dentro del parque.",
+      "english": "To this day, efforts are being made to recover the natural space, management that is also carried out within the scope of the Los Toruños Marshes and Pinar de la Algaida Metropolitan Park included within the park."
+    }
+  ],
+  "days": [
+    {
+      "title": "San Fernando and Islands",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s5"
+      ]
+    },
+    {
+      "title": "Los Toruños Nature Reserve",
+      "stop_ids": [
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Sancti Petri and Salt Pans",
+      "stop_ids": [
+        "s3",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "ad697fb0457910e668057d54590ee5d0da34a0ece31eedf0aa1075b51e155555"
+}

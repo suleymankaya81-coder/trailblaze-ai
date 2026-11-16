@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "sierra Bermeja",
+      "quote": "Se trata de un área con suaves relieves que únicamente se ven interrumpidos por las alineaciones montañosas de sierra Bermeja y sierra del Moro, que conforman el límite sur del espacio.",
+      "english": "It is an area with gentle reliefs that are only interrupted by the mountain alignments of Sierra Bermeja and Sierra del Moro, which form the southern boundary of the space."
+    },
+    {
+      "id": "s2",
+      "name": "sierra del Moro",
+      "quote": "Se trata de un área con suaves relieves que únicamente se ven interrumpidos por las alineaciones montañosas de sierra Bermeja y sierra del Moro, que conforman el límite sur del espacio.",
+      "english": "It is an area with gentle reliefs that are only interrupted by the mountain alignments of Sierra Bermeja and Sierra del Moro, which form the southern boundary of the space."
+    },
+    {
+      "id": "s3",
+      "name": "río Aljucén",
+      "quote": "El río Aljucén, junto con los arroyos del Muelas y de la Fresneda son los principales cursos fluviales, presentando una vegetación de rivera con un buen grado de conservación.",
+      "english": "The Aljucén River, along with the Muelas and Fresneda streams are the main watercourses, presenting riverside vegetation with a good degree of conservation."
+    },
+    {
+      "id": "s4",
+      "name": "arroyo del Muelas",
+      "quote": "El río Aljucén, junto con los arroyos del Muelas y de la Fresneda son los principales cursos fluviales, presentando una vegetación de rivera con un buen grado de conservación.",
+      "english": "The Aljucén River, along with the Muelas and Fresneda streams are the main watercourses, presenting riverside vegetation with a good degree of conservation."
+    },
+    {
+      "id": "s5",
+      "name": "arroyo de la Fresneda",
+      "quote": "El río Aljucén, junto con los arroyos del Muelas y de la Fresneda son los principales cursos fluviales, presentando una vegetación de rivera con un buen grado de conservación.",
+      "english": "The Aljucén River, along with the Muelas and Fresneda streams are the main watercourses, presenting riverside vegetation with a good degree of conservation."
+    },
+    {
+      "id": "s6",
+      "name": "presa de Cornalvo",
+      "quote": "En el corazón del parque se encuentra la presa de Cornalvo, de origen romano y declarada como Monumento Nacional en 1912, ubicada en un entorno paisajístico de gran belleza, propiciando que sea un lugar de gran interés cultural y recreativo.",
+      "english": "In the heart of the park is the Cornalvo dam, of Roman origin and declared a National Monument in 1912, located in a landscape of great beauty, making it a place of great cultural and recreational interest."
+    },
+    {
+      "id": "s7",
+      "name": "alcornocales de Cornalvo",
+      "quote": "Existen dos especies de gran valor por estar catalogadas “en peligro de extinción”, como es el caso del jarabugo (Anaecypris hispanica), un pez endémico de la cuenca del Guadiana que fue descubierto para la ciencia en el río Aljucén, o la cigüeña negra (Ciconia nigra), que cuenta con varias parejas nidificantes en los densos alcornocales de Cornalvo.",
+      "english": "There are two species of great value because they are cataloged as \"in danger of extinction\", such as the jarabugo (Anaecypris hispanica), an endemic fish of the Guadiana basin that was discovered for science in the Aljucén river, or the black stork (Ciconia nigra), which has several nesting pairs in the dense cork oak forests of Cornalvo."
+    }
+  ],
+  "days": [
+    {
+      "title": "Rivers and Ancient Dams",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Southern Sierras and Cork Forests",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "51f7895446bf583897d2954d43a6fbf201acfe9e311ec9588117f65da489b894"
+}

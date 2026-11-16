@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Peña Ubiña",
+      "quote": "Bajo la vigilancia de la inmensa mole rocosa de Peña Ubiña (2417 m) se desarrolla el abrupto paisaje montañoso del valle de San Emiliano.",
+      "english": "Under the watch of the immense rocky mass of Peña Ubiña (2417 m), the steep mountainous landscape of the San Emiliano valley unfolds."
+    },
+    {
+      "id": "s2",
+      "name": "valle de San Emiliano",
+      "quote": "El valle de San Emiliano conserva interesantes núcleos rurales.",
+      "english": "The San Emiliano valley preserves interesting rural centers."
+    },
+    {
+      "id": "s3",
+      "name": "Mirantes de Luna",
+      "quote": "Entre la vegetación presente destacan las masas de haya, roble y el relicto sabinar —el más occidental de la península ibérica— de Mirantes de Luna.",
+      "english": "Among the present vegetation, the masses of beech, oak, and the relic juniper grove —the westernmost in the Iberian Peninsula— of Mirantes de Luna stand out."
+    },
+    {
+      "id": "s4",
+      "name": "Riolago de Babia",
+      "quote": "Entre ellos destaca el conjunto de Riolago de Babia, con su palacio renacentista de los Quiñones y su sobrio recinto amurallado.",
+      "english": "Among them, the complex of Riolago de Babia stands out, with its Renaissance palace of the Quiñones and its sober walled enclosure."
+    },
+    {
+      "id": "s5",
+      "name": "embalse de Barrios de Luna",
+      "quote": "La presencia del embalse de Barrios de Luna permite la existencia de poblaciones más o menos numerosas de aves acuáticas (Anátidas, Rállidas, Ardeidas, etc.).",
+      "english": "The presence of the Barrios de Luna reservoir allows for the existence of more or less numerous populations of aquatic birds (Anatidae, Rallidae, Ardeidae, etc.)."
+    },
+    {
+      "id": "s6",
+      "name": "puerto de Ventana",
+      "quote": "Desde Asturias también se accede por la carretera Trubia-Puente Orugo, a través del puerto de Ventana.",
+      "english": "From Asturias, it is also accessed via the Trubia-Puente Orugo road, through the Ventana pass."
+    },
+    {
+      "id": "s7",
+      "name": "Irede de Luna",
+      "quote": "Toma esta carretera para luego seguir por la que conduce a Irede de Luna.",
+      "english": "Take this road and then continue on the one that leads to Irede de Luna."
+    },
+    {
+      "id": "s8",
+      "name": "Quintanilla de Babia",
+      "quote": "En este pueblo toma la carretera que lleva a Piedrafita de Babia y en éste la comarcal C-623 hasta su cruce con el límite de términos municipales entre Cabrillanes y Villablino, siguiéndolo, en dirección norte, hasta el alto de Las Moruecas, punto donde confluye con el límite provincial entre Asturias y León.",
+      "english": "In this village, take the road that leads to Piedrafita de Babia and there take the local C-623 until its intersection with the municipal boundary between Cabrillanes and Villablino, following it north to the Las Moruecas peak, the point where it meets the provincial border between Asturias and León."
+    }
+  ],
+  "days": [
+    {
+      "title": "Peaks and Villages of San Emiliano",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s4",
+        "s8"
+      ]
+    },
+    {
+      "title": "Reservoirs and Groves of Luna",
+      "stop_ids": [
+        "s3",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "1d9bd2919e601663f13db19181bc8ddd707e2ee832d37c43112a7159c8e1869a"
+}

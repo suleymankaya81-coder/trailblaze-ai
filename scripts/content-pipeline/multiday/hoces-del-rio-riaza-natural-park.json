@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "río Riaza",
+      "quote": "Se trata de un espacio en torno a las hoces del río Riaza, de gran valor geomorfológico, botánico y, sobre todo, con gran variedad y cantidad de aves rupículas y rapaces.",
+      "english": "This is a space surrounding the Riaza river gorges, of great geomorphological and botanical value and, above all, with a great variety and quantity of rock-dwelling birds and raptors."
+    },
+    {
+      "id": "s2",
+      "name": "Montejo de la Vega de la Serrezuela",
+      "quote": "El Parque Natural de las Hoces del Río Riaza​ está situado en el noreste de la provincia de Segovia (España), cerca del límite con la provincia de Burgos, abarcando 6470 ha de los municipios de Montejo de la Vega de la Serrezuela, Valdevacas de Montejo y Maderuelo, y están declaradas parque natural desde el 18 de enero de 2005, aunque desde 1987 ha tenido distintos niveles de protección.",
+      "english": "The Hoces del Río Riaza Natural Park is located in the northeast of the province of Segovia (Spain), near the border with the province of Burgos, covering 6470 ha of the municipalities of Montejo de la Vega de la Serrezuela, Valdevacas de Montejo and Maderuelo, and they have been declared a natural park since January 18, 2005, although since 1987 it has had different levels of protection."
+    },
+    {
+      "id": "s3",
+      "name": "Valdevacas de Montejo",
+      "quote": "El Parque Natural de las Hoces del Río Riaza​ está situado en el noreste de la provincia de Segovia (España), cerca del límite con la provincia de Burgos, abarcando 6470 ha de los municipios de Montejo de la Vega de la Serrezuela, Valdevacas de Montejo y Maderuelo, y están declaradas parque natural desde el 18 de enero de 2005, aunque desde 1987 ha tenido distintos niveles de protección.",
+      "english": "The Hoces del Río Riaza Natural Park is located in the northeast of the province of Segovia (Spain), near the border with the province of Burgos, covering 6470 ha of the municipalities of Montejo de la Vega de la Serrezuela, Valdevacas de Montejo and Maderuelo, and they have been declared a natural park since January 18, 2005, although since 1987 it has had different levels of protection."
+    },
+    {
+      "id": "s4",
+      "name": "Maderuelo",
+      "quote": "El Parque Natural de las Hoces del Río Riaza​ está situado en el noreste de la provincia de Segovia (España), cerca del límite con la provincia de Burgos, abarcando 6470 ha de los municipios de Montejo de la Vega de la Serrezuela, Valdevacas de Montejo y Maderuelo, y están declaradas parque natural desde el 18 de enero de 2005, aunque desde 1987 ha tenido distintos niveles de protección.",
+      "english": "The Hoces del Río Riaza Natural Park is located in the northeast of the province of Segovia (Spain), near the border with the province of Burgos, covering 6470 ha of the municipalities of Montejo de la Vega de la Serrezuela, Valdevacas de Montejo and Maderuelo, and they have been declared a natural park since January 18, 2005, although since 1987 it has had different levels of protection."
+    },
+    {
+      "id": "s5",
+      "name": "cerro del Portillo",
+      "quote": "Los riscos donde se observan mayores concentraciones de aves de presa son el cerro del Portillo, la peña de la Zorra y la Murcielaguera.",
+      "english": "The cliffs where the highest concentrations of birds of prey are observed are the Portillo hill, the Fox's crag and the Murcielaguera."
+    },
+    {
+      "id": "s6",
+      "name": "peña de la Zorra",
+      "quote": "Los riscos donde se observan mayores concentraciones de aves de prey son el cerro del Portillo, la peña de la Zorra y la Murcielaguera.",
+      "english": "The cliffs where the highest concentrations of birds of prey are observed are the Portillo hill, the Fox's crag and the Murcielaguera."
+    },
+    {
+      "id": "s7",
+      "name": "Murcielaguera",
+      "quote": "En esta última existe una gran colonia de murciélagos ratoneros.",
+      "english": "In this last one [the Murcielaguera] there is a large colony of mouse-eared bats."
+    }
+  ],
+  "days": [
+    {
+      "title": "Villages of the Riaza Gorges",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Riverside and High Cliffs",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "5fab8cba7f7b6eefe6f5591cf24c13a93020c55547d5c85e8e5ee34767905b39"
+}

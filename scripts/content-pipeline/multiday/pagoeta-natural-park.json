@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Pagoeta",
+      "quote": "El parque incluye, como núcleo central, las fincas de la Diputación Foral de Guipúzcoa, Pagoeta y Alzola, junto con las cabeceras de los arroyos Manterola y Almizuri y las estribaciones de la cumbre de Pagoeta.",
+      "english": "The park includes, as its central core, the estates of the Provincial Council of Guipúzcoa, Pagoeta and Alzola, together with the headwaters of the Manterola and Almizuri streams and the foothills of the Pagoeta summit."
+    },
+    {
+      "id": "s2",
+      "name": "Alzola",
+      "quote": "El parque incluye, como núcleo central, las fincas de la Diputación Foral de Guipúzcoa, Pagoeta y Alzola, junto con las cabeceras de los arroyos Manterola y Almizuri y las estribaciones de la cumbre de Pagoeta.",
+      "english": "The park includes, as its central core, the estates of the Provincial Council of Guipúzcoa, Pagoeta and Alzola, together with the headwaters of the Manterola and Almizuri streams and the foothills of the Pagoeta summit."
+    },
+    {
+      "id": "s3",
+      "name": "Manterola",
+      "quote": "El parque incluye, como núcleo central, las fincas de la Diputación Foral de Guipúzcoa, Pagoeta y Alzola, junto con las cabeceras de los arroyos Manterola y Almizuri y las estribaciones de la cumbre de Pagoeta.",
+      "english": "The park includes, as its central core, the estates of the Provincial Council of Guipúzcoa, Pagoeta and Alzola, together with the headwaters of the Manterola and Almizuri streams and the foothills of the Pagoeta summit."
+    },
+    {
+      "id": "s4",
+      "name": "Almizuri",
+      "quote": "El parque incluye, como núcleo central, las fincas de la Diputación Foral de Guipúzcoa, Pagoeta y Alzola, junto con las cabeceras de los arroyos Manterola y Almizuri y las estribaciones de la cumbre de Pagoeta.",
+      "english": "The park includes, as its central core, the estates of the Provincial Council of Guipúzcoa, Pagoeta and Alzola, together with the headwaters of the Manterola and Almizuri streams and the foothills of the Pagoeta summit."
+    },
+    {
+      "id": "s5",
+      "name": "Iturrarán",
+      "quote": "Cuentan con el centro de acogida de Iturrarán, el albergue y escuela de la naturaleza, un colmenar didáctico, un arboreto-fruticeto con más de 1300 ejemplares, diversas áreas recreativas y la ferrería de Agorregui.​​",
+      "english": "They feature the Iturrarán visitor center, the hostel and nature school, an educational apiary, an arboretum-fruticetum with more than 1300 specimens, various recreational areas and the Agorregui ironworks."
+    },
+    {
+      "id": "s6",
+      "name": "Agorregui",
+      "quote": "Cuentan con el centro de acogida de Iturrarán, el albergue y escuela de la naturaleza, un colmenar didáctico, un arboreto-fruticeto con más de 1300 ejemplares, diversas áreas recreativas y la ferrería de Agorregui.​​",
+      "english": "They feature the Iturrarán visitor center, the hostel and nature school, an educational apiary, an arboretum-fruticetum with more than 1300 specimens, various recreational areas and the Agorregui ironworks."
+    },
+    {
+      "id": "s7",
+      "name": "Alzolaras",
+      "quote": "Las repoblaciones tienen también una apreciable importancia, destacando las situadas en la margen izquierda del río Alzolaras.",
+      "english": "Reforestation efforts also have significant importance, especially those located on the left bank of the Alzolaras River."
+    }
+  ],
+  "days": [
+    {
+      "title": "Summit and Core Estates",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Rivers and Reforestation",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Cultural and Visitor Centers",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "16bf360f9f10c10aac87e568dbe717c64498d536c288c63323c2b2e459eddadc"
+}

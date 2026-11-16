@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Puig Mayor",
+      "quote": "Su principal altura es el Puig Mayor, con 1445 metros de altura, que es la montaña más alta de Mallorca, así como de las Islas Baleares.",
+      "english": "Its main peak is the Puig Mayor, at 1445 meters high, which is the highest mountain in Mallorca, as well as the Balearic Islands."
+    },
+    {
+      "id": "s2",
+      "name": "Cúber",
+      "quote": "En ella se hallan los tres grandes embalses de Mallorca: el Cúber, el Gorg Blau y el militar para uso de la base del Puig Mayor, de menor tamaño.",
+      "english": "In it are found the three large reservoirs of Mallorca: the Cúber, the Gorg Blau and the military one for the use of the Puig Mayor base, which is smaller in size."
+    },
+    {
+      "id": "s3",
+      "name": "Gorg Blau",
+      "quote": "En ella se hallan los tres grandes embalses de Mallorca: el Cúber, el Gorg Blau y el militar para uso de la base del Puig Mayor, de menor tamaño.",
+      "english": "In it are found the three large reservoirs of Mallorca: the Cúber, the Gorg Blau and the military one for the use of the Puig Mayor base, which is smaller in size."
+    },
+    {
+      "id": "s4",
+      "name": "Cova de sa Campana",
+      "quote": "Este macizo calcáreo posee abundantes zonas kársticas con cuevas, simas (una de las más famosas es la \"Cova de sa Campana\" de -358 m) y profundos cañones, el más conocido y reconocido a nivel mundial por su alta dificultad es el de \"Sa Fosca\", que sale desde el embalse del Gorg Blau en dirección al Torrent de Lluch, allí se unen formando el famoso Torrente de Pareis, con paredes verticales de hasta 300 m.",
+      "english": "This limestone massif possesses abundant karst areas with caves, sinkholes (one of the most famous is the \"Cova de sa Campana\" at -358 m) and deep canyons, the best known and globally recognized for its high difficulty being \"Sa Fosca\", which leaves from the Gorg Blau reservoir towards Torrent de Lluch, where they join forming the famous Torrente de Pareis, with vertical walls of up to 300 m."
+    },
+    {
+      "id": "s5",
+      "name": "Sa Fosca",
+      "quote": "Este macizo calcáreo posee abundantes zonas kársticas con cuevas, simas (una de las más famosas es la \"Cova de sa Campana\" de -358 m) y profundos cañones, el más conocido y reconocido a nivel mundial por su alta dificultad es el de \"Sa Fosca\", que sale desde el embalse del Gorg Blau en dirección al Torrent de Lluch, allí se unen formando el famoso Torrente de Pareis, con paredes verticales de hasta 300 m.",
+      "english": "This limestone massif possesses abundant karst areas with caves, sinkholes (one of the most famous is the \"Cova de sa Campana\" at -358 m) and deep canyons, the best known and globally recognized for its high difficulty being \"Sa Fosca\", which leaves from the Gorg Blau reservoir towards Torrent de Lluch, where they join forming the famous Torrente de Pareis, with vertical walls of up to 300 m."
+    },
+    {
+      "id": "s6",
+      "name": "Torrente de Pareis",
+      "quote": "Este macizo calcáreo posee abundantes zonas kársticas con cuevas, simas (una de las más famosas es la \"Cova de sa Campana\" de -358 m) y profundos cañones, el más conocido y reconocido a nivel mundial por su alta dificultad es el de \"Sa Fosca\", que sale desde el embalse del Gorg Blau en dirección al Torrent de Lluch, allí se unen formando el famoso Torrente de Pareis, con paredes verticales de hasta 300 m.",
+      "english": "This limestone massif possesses abundant karst areas with caves, sinkholes (one of the most famous is the \"Cova de sa Campana\" at -358 m) and deep canyons, the best known and globally recognized for its high difficulty being \"Sa Fosca\", which leaves from the Gorg Blau reservoir towards Torrent de Lluch, where they join forming the famous Torrente de Pareis, with vertical walls of up to 300 m."
+    },
+    {
+      "id": "s7",
+      "name": "Barranc de Biniaraix",
+      "quote": "Además, la sierra presenta otros accidentes geográficos relevantes, como: Torrent de Pareis Barranc de Biniaraix Torrent de Mortitx Torrent des Lli Coma de n'Arbona Torrent del Filiat",
+      "english": "Additionally, the mountain range presents other relevant geographical features, such as: Torrent de Pareis Barranc de Biniaraix Torrent de Mortitx Torrent des Lli Coma de n'Arbona Torrent del Filiat"
+    }
+  ],
+  "days": [
+    {
+      "title": "Peaks and Reservoirs of the High Tramuntana",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Caves and Canyons Exploration",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Valleys and Famous Torrents",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "d3686f60fe6ebba28195349291dec9d772ff58a127718236d117b8796574643d"
+}

@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Urdaibai Bird Center",
+      "quote": "El proyecto de mejora ambiental promovido por la Dirección de Biodiversidad y Participación Ambiental del Gobierno vasco ejecutado entre los años 2008 y 2009, ha dado lugar a un centro de estudios ornitológicos y conservación del medio ambiente, llamado Urdaibai Bird Center, que es visitable y desde el cual se puede apreciar la diversidad ornitológica de la zona.",
+      "english": "The environmental improvement project promoted by the Directorate of Biodiversity and Environmental Participation of the Basque Government executed between 2008 and 2009, has resulted in an ornithological studies and environmental conservation center, called Urdaibai Bird Center, which is visitable and from which the ornithological diversity of the area can be appreciated."
+    },
+    {
+      "id": "s2",
+      "name": "monte Oiz",
+      "quote": "El río Oca nace en la ladera norte del monte Oiz (1036 m de altitud) y recorre el valle que lleva su nombre y en el que se encuentra la villa de Guernica.",
+      "english": "The Oca river rises on the northern slope of Mount Oiz (1036 m altitude) and runs through the valley that bears its name and in which the town of Guernica is located."
+    },
+    {
+      "id": "s3",
+      "name": "Guernica",
+      "quote": "Desde Guernica hasta su desembocadura en el mar Cantábrico, el Oca forma un estuario con amplios arenales.",
+      "english": "From Guernica to its mouth in the Cantabrian Sea, the Oca forms an estuary with wide sandy areas."
+    },
+    {
+      "id": "s4",
+      "name": "isla de Ízaro",
+      "quote": "La costa es abrupta, con altos acantilados y algunas islas e islotes, entre los que destaca la isla de Ízaro.",
+      "english": "The coast is steep, with high cliffs and some islands and islets, among which the island of Izaro stands out."
+    },
+    {
+      "id": "s5",
+      "name": "cueva de Santimamiñe",
+      "quote": "Los yacimientos prehistóricos, como la cueva de Santimamiñe, son testigos de la presencia humana desde tiempos prehistóricos, que queda confirmada por la necrópolis de Forua, en donde se hallan enterramientos continuados desde la ocupación romana hasta el siglo XIX.",
+      "english": "Prehistoric sites, such as the Santimamiñe cave, are witnesses of human presence since prehistoric times, which is confirmed by the necropolis of Forua, where continuous burials are found from the Roman occupation until the 19th century."
+    },
+    {
+      "id": "s6",
+      "name": "puerto de Bermeo",
+      "quote": "El puerto de Bermeo es un importante puerto pesquero, de los más relevantes de la costa norte peninsular, y mantiene alguna actividad mercante después de su ampliación, pero la proximidad del puerto de Bilbao hace que la misma sea muy limitada.",
+      "english": "The port of Bermeo is an important fishing port, one of the most relevant on the northern coast of the peninsula, and maintains some merchant activity after its expansion, but the proximity of the port of Bilbao makes it very limited."
+    },
+    {
+      "id": "s7",
+      "name": "Elanchove",
+      "quote": "Esta zona se cubre con la BI-3238 y otras pequeñas carreteras como la BI-3234, que recorre toda la costa de la ría hasta Elanchove.",
+      "english": "This area is covered by the BI-3238 and other small roads such as the BI-3234, which runs along the entire coast of the estuary to Elanchove."
+    },
+    {
+      "id": "s8",
+      "name": "Mundaca",
+      "quote": "Los principales núcleos de población son los municipios de Bermeo, Guernica y Luno y Mundaca.",
+      "english": "The main population centers are the municipalities of Bermeo, Guernica y Luno and Mundaca."
+    }
+  ],
+  "days": [
+    {
+      "title": "Towns and Ports of the Estuary",
+      "stop_ids": [
+        "s8",
+        "s6",
+        "s3"
+      ]
+    },
+    {
+      "title": "History and Bird Watching",
+      "stop_ids": [
+        "s5",
+        "s1",
+        "s7"
+      ]
+    },
+    {
+      "title": "Peaks and Islands",
+      "stop_ids": [
+        "s2",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "351fb9896f0121e5e8f23229ab908b2eb0519709b44816cbcbdbc43204c9b408"
+}

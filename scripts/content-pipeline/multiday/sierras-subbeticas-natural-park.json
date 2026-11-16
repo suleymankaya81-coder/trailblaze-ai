@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Santa Rita",
+      "quote": "Como principales instalaciones de atracción turística, el parque cuenta con un centro de visitantes (Santa Rita), un ecomuseo (Cueva de los murciélagos), varios miradores y nueve senderos.",
+      "english": "As the main tourist attractions, the park has a visitor center (Santa Rita), an ecomuseum (Cueva de los Murciélagos), several viewpoints, and nine trails."
+    },
+    {
+      "id": "s2",
+      "name": "Cueva de los Murciélagos",
+      "quote": "Cueva de los Murciélagos. Próxima a Zuheros.",
+      "english": "Cueva de los Murciélagos. Near Zuheros."
+    },
+    {
+      "id": "s3",
+      "name": "La Tiñosa",
+      "quote": "En ella se encuentra el pico de la Tiñosa de 1568 metros, máxima altura de la provincia de Córdoba, y el pico Bermejo (1476 metros).",
+      "english": "In it is the peak of La Tiñosa at 1568 meters, the highest point in the province of Córdoba, and the Bermejo peak (1476 meters)."
+    },
+    {
+      "id": "s4",
+      "name": "Pico Bermejo",
+      "quote": "Carcabuey - Pico Bermejo: ascensos al Pico Bermejo, Lobatejo, Peñón del Nervo, etc.",
+      "english": "Carcabuey - Pico Bermejo: ascents to Pico Bermejo, Lobatejo, Peñón del Nervo, etc."
+    },
+    {
+      "id": "s5",
+      "name": "Lapiaz de los Lanchares",
+      "quote": "Sierra de los Lanchares: con interesantes formaciones como el Lapiaz de los Lanchares.",
+      "english": "Sierra de los Lanchares: with interesting formations such as the Lapiaz de los Lanchares."
+    },
+    {
+      "id": "s6",
+      "name": "Picacho de la Sierra de Cabra",
+      "quote": "Picacho de la Sierra de Cabra (1217 metros): isla tectónica o klippe en cuya cima se encuentra la ermita de la Virgen de la Sierra.",
+      "english": "Picacho de la Sierra de Cabra (1217 meters): tectonic island or klippe on whose summit is the hermitage of the Virgen de la Sierra."
+    },
+    {
+      "id": "s7",
+      "name": "Cañón del río Bailón",
+      "quote": "Cañón del río Bailón: desde Carcabuey a Zuheros por el Navazuelo, Fuentefría y cauce del Bailón.",
+      "english": "Cañón del río Bailón: from Carcabuey to Zuheros via Navazuelo, Fuentefría and the Bailón riverbed."
+    },
+    {
+      "id": "s8",
+      "name": "Poljé de la Nava",
+      "quote": "Sendero de la Nava: desde la Sierra de Cabra a Zuheros, atravesando el poljé de La Nava y siguiendo el cauce del río Bailón.",
+      "english": "Sendero de la Nava: from the Sierra de Cabra to Zuheros, crossing the La Nava polje and following the Bailón riverbed."
+    },
+    {
+      "id": "s9",
+      "name": "Sima de Cabra",
+      "quote": "Sima de Cabra. Posee más de 100 metros de profundidad.",
+      "english": "Sima de Cabra. It is more than 100 meters deep."
+    },
+    {
+      "id": "s10",
+      "name": "Vía Verde de la Subbética",
+      "quote": "Vía Verde de la Subbética: une Puente Genil con el límite provincial de Jaén, pasando por Lucena, Cabra, Doña Mencía y Zuheros, unos 57 km, antigua línea ferroviaria Linares-Puente Genil.",
+      "english": "Vía Verde de la Subbética: connects Puente Genil with the provincial border of Jaén, passing through Lucena, Cabra, Doña Mencía and Zuheros, about 57 km, an old Linares-Puente Genil railway line."
+    }
+  ],
+  "days": [
+    {
+      "title": "Zuheros and Geological Wonders",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7",
+        "s10"
+      ]
+    },
+    {
+      "title": "High Peaks of Horconera",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Cabra Mountains and Karst Formations",
+      "stop_ids": [
+        "s6",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "20ea24756a98e4db991dd7d2eead526a4a63e29378036cdf975f5c945f448415"
+}

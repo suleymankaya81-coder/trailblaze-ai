@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "colada de lava",
+      "quote": "En él se reúnen los mejores ejemplos de colada de lava y de campos de lapilli.",
+      "english": "In it are gathered the best examples of lava flows and lapilli fields."
+    },
+    {
+      "id": "s2",
+      "name": "campos de lapilli",
+      "quote": "El conjunto de lavas más recientes y los elementos asociados a ella es de un gran interés geomorfológico, confiriéndole el rango de interés paisajístico.",
+      "english": "The group of more recent lavas and the elements associated with them are of great geomorphological interest, granting it the status of scenic interest."
+    },
+    {
+      "id": "s3",
+      "name": "Janubio",
+      "quote": "La presencia de comunidades de aves marinas sobre el sitio de Janubio, da a este espacio un valor científico adicional.",
+      "english": "The presence of seabird communities at the Janubio site gives this space an additional scientific value."
+    },
+    {
+      "id": "s4",
+      "name": "zona de especial protección para las aves",
+      "quote": "Este espacio fue declarado zona de especial protección para las aves (ZEPA).",
+      "english": "This space was declared a special protection area for birds (SPA)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Geological and Biological Features of Janubio",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "d8a62cc07bd59fb686098faf7664f4d929a15d0152f3a04bea328e3e262d0887"
+}

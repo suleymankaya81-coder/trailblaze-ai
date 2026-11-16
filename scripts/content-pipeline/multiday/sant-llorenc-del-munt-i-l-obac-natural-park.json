@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Montcau",
+      "quote": "Sus cimas principales son el Montcau (1052 m) y la Mola (1104 m), donde se encuentra el monasterio de Sant Llorenç del Munt, que da nombre al macizo.​",
+      "english": "Its main peaks are Montcau (1052 m) and la Mola (1104 m), where the monastery of Sant Llorenç del Munt is located, which gives the massif its name."
+    },
+    {
+      "id": "s2",
+      "name": "la Mola",
+      "quote": "Las precipitaciones oscilan entre los 800 mm. anuales de La Mola y los 700 del Obac, que se concentran durante el otoño y la primavera, aunque en el verano se pueden originar tormentas locales y en invierno puede nevar ocasionalmente.​",
+      "english": "Precipitation ranges between 800 mm annually at La Mola and 700 at Obac, concentrated during autumn and spring, although local storms can occur in summer and it can occasionally snow in winter."
+    },
+    {
+      "id": "s3",
+      "name": "monasterio de Sant Llorenç del Munt",
+      "quote": "Sus cimas principales son el Montcau (1052 m) y la Mola (1104 m), donde se encuentra el monasterio de Sant Llorenç del Munt, que da nombre al macizo.​",
+      "english": "Its main peaks are Montcau (1052 m) and la Mola (1104 m), where the monastery of Sant Llorenç del Munt is located, which gives the massif its name."
+    },
+    {
+      "id": "s4",
+      "name": "Castellsapera",
+      "quote": "Ambos conjuntos montañosos están separados en el sur por la riera de las Arenas y al norte por el torrente de Estenalles, uniéndose a través del collado de Estenalles (870,4 m), donde hay un centro de información.",
+      "english": "Both mountain groups are separated in the south by the Arenas stream and to the north by the Estenalles torrent, joining through the Estenalles pass (870.4 m), where there is an information center."
+    },
+    {
+      "id": "s5",
+      "name": "collado de Estenalles",
+      "quote": "Ambos conjuntos montañosos están separados en el sur por la riera de las Arenas y al norte por el torrente de Estenalles, uniéndose a través del collado de Estenalles (870,4 m), donde hay un centro de información.",
+      "english": "Both mountain groups are separated in the south by the Arenas stream and to the north by the Estenalles torrent, joining through the Estenalles pass (870.4 m), where there is an information center."
+    },
+    {
+      "id": "s6",
+      "name": "cueva Simanya",
+      "quote": "Entre todas ellas destaca la conocida como cueva Simanya, que sirve de drenaje al Montcau: su boca de entrada tiene diez metros de altura, que dan paso a una primera galería de 100 metros de longitud, luego a otra de 110 y finalmente a dos ramificaciones de 45 y 60 metros más respectivamente.",
+      "english": "Among all of them, the one known as the Simanya cave stands out, which serves as drainage for Montcau: its entrance mouth is ten meters high, leading to a first gallery 100 meters long, then another of 110 and finally to two branches of 45 and 60 meters more respectively."
+    },
+    {
+      "id": "s7",
+      "name": "cueva del Manel",
+      "quote": "También significativas son la cueva del Manel (con 932 m entre las distintas galerías), de las Ànimes (276 m) y el avenc del Daví (65 m de profundidad y 250 de recorrido), todas ellas en Sant Llorenç del Munt.​",
+      "english": "Also significant are the Manel cave (with 932 m between the different galleries), the Ànimes cave (276 m) and the Daví chasm (65 m deep and 250 m long), all of them in Sant Llorenç del Munt."
+    },
+    {
+      "id": "s8",
+      "name": "Cuevas o Mina de Mura",
+      "quote": "En la sierra del Obac se han de mencionar las Cuevas o Mina de Mura, de 180 m de longitud y con una gran sala llena de estalactitas, estalagmitas y rocas de formas curiosas.​",
+      "english": "In the Obac mountain range, the Mura Caves or Mine should be mentioned, 180 m long and with a large room full of stalactites, stalagmites and rocks of curious shapes."
+    }
+  ],
+  "days": [
+    {
+      "title": "Sant Llorenç Peaks and Caves",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Obac Range and Information",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "a54d90334f17f5f6263a73e36884dc0cb77bae2496218dbcfd6492ee13e47c54"
+}

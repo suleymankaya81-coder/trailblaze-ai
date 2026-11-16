@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "palacio",
+      "quote": "Al sur, en la zona más baja a orillas del río Bidasoa en la localidad de Oyeregui, se encuentran el palacio y los jardines, en 3,4 ha que acogen una abundante colección botánica, con especies traídas de todos los lugares del mundo.",
+      "english": "In the south, in the lowest area on the banks of the Bidasoa river in the town of Oyeregui, the palace and the gardens are located, covering 3.4 hectares that host an abundant botanical collection, with species brought from all over the world."
+    },
+    {
+      "id": "s2",
+      "name": "jardines",
+      "quote": "Al sur, en la zona más baja a orillas del río Bidasoa en la localidad de Oyeregui, se encuentran el palacio y los jardines, en 3,4 ha que acogen una abundante colección botánica, con especies traídas de todos los lugares del mundo.",
+      "english": "In the south, in the lowest area on the banks of the Bidasoa river in the town of Oyeregui, the palace and the gardens are located, covering 3.4 hectares that host an abundant botanical collection, with species brought from all over the world."
+    },
+    {
+      "id": "s3",
+      "name": "monte Aizkolegi",
+      "quote": "En la cima del monte Aizkolegi se encuentra un chalet modernista, hoy abandonado, desde el que se disfrutan unas magníficas vistas del Parque y al que se llega mediante una pista forestal.",
+      "english": "At the top of Mount Aizkolegi there is a modernist chalet, now abandoned, from which magnificent views of the Park are enjoyed and which is reached via a forest track."
+    },
+    {
+      "id": "s4",
+      "name": "chalet modernista",
+      "quote": "En la cima del monte Aizkolegi se encuentra un chalet modernista, hoy abandonado, desde el que se disfrutan unas magníficas vistas del Parque y al que se llega mediante una pista forestal.",
+      "english": "At the top of Mount Aizkolegi there is a modernist chalet, now abandoned, from which magnificent views of the Park are enjoyed and which is reached via a forest track."
+    },
+    {
+      "id": "s5",
+      "name": "valles",
+      "quote": "El resto del territorio al norte es una sucesión de valles y montes cubiertos de bosque atlántico autóctono, muy bien conservados dada la escasa explotación que de ellos se ha venido haciendo, abundando las hayas, los robles y las alisedas.",
+      "english": "The rest of the territory to the north is a succession of valleys and mountains covered in native Atlantic forest, very well preserved given the scant exploitation that has been carried out on them, with beech, oak and alder trees abounding."
+    },
+    {
+      "id": "s6",
+      "name": "montes",
+      "quote": "El resto del territorio al norte es una sucesión de valles y montes cubiertos de bosque atlántico autóctono, muy bien conservados dada la escasa explotación que de ellos se ha venido haciendo, abundando las hayas, los robles y las alisedas.",
+      "english": "The rest of the territory to the north is a succession of valleys and mountains covered in native Atlantic forest, very well preserved given the scant exploitation that has been carried out on them, with beech, oak and alder trees abounding."
+    },
+    {
+      "id": "s7",
+      "name": "pista forestal",
+      "quote": "En la cima del monte Aizkolegi se encuentra un chalet modernista, hoy abandonado, desde el que se disfrutan unas magníficas vistas del Parque y al que se llega mediante una pista forestal.",
+      "english": "At the top of Mount Aizkolegi there is a modernist chalet, now abandoned, from which magnificent views of the Park are enjoyed and which is reached via a forest track."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lowland Palace and Botanical Gardens",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Mountain Peaks and Forest Trails",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Wild Valleys and Atlantic Mountains",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "e8fd20a9111f00b3cddfb6c8cb6a02bf69c1ce3e451ee1a9c7fb48404966e1f8"
+}

@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "dehesa del Saler",
+      "quote": "Está separada del mar por una estrecha barra litoral (restinga) arenosa con dunas estabilizadas por un bosque de pinos (dehesa del Saler).",
+      "english": "It is separated from the sea by a narrow sandy coastal bar (restinga) with dunes stabilized by a pine forest (dehesa del Saler)."
+    },
+    {
+      "id": "s2",
+      "name": "El Saler",
+      "quote": "La principal vía de acceso al parque es la autopista de El Saler (V-15) que partiendo de Valencia atraviesa el parque de norte a sur hasta El Saler, donde se prolonga en forma de carretera convencional hasta Sueca (CV-500), y en Les Palmeres enlaza con la carretera CV-502, que se dirige a Cullera.",
+      "english": "The main access road to the park is the El Saler highway (V-15) which, starting from Valencia, crosses the park from north to south to El Saler, where it continues as a conventional road to Sueca (CV-500), and at Les Palmeres connects with the CV-502 road, which leads to Cullera."
+    },
+    {
+      "id": "s3",
+      "name": "El Palmar",
+      "quote": "También existen distintos puertos fluviales, como los de Catarroja, El Tremolar, Silla y Sollana, así como embarcaderos en El Palmar y El Saler.",
+      "english": "There are also various river ports, such as those of Catarroja, El Tremolar, Silla and Sollana, as well as piers in El Palmar and El Saler."
+    },
+    {
+      "id": "s4",
+      "name": "Puerto de Catarroja",
+      "quote": "Mientras que la Acequia de Favara, una de las ocho acequias de la Vega de Valencia que están bajo la jurisdicción del Tribunal de las Aguas de Valencia, riega las huertas y campos del margen derecho del antiguo río Turia dominados por esta acequia hasta la acequia de Rovella y los arrozales del noroeste de la Albufera de Valencia, terminando en el canal del Port de Catarroja.",
+      "english": "Meanwhile, the Favara Acequia, one of the eight irrigation canals of the Vega de Valencia under the jurisdiction of the Water Court of Valencia, irrigates the orchards and fields on the right bank of the ancient Turia river dominated by this canal up to the Rovella canal and the rice fields of the northwest of the Albufera of Valencia, ending in the Port of Catarroja canal."
+    },
+    {
+      "id": "s5",
+      "name": "Puerto de El Saler",
+      "quote": "Al igual que la Acequia del Oro, la cual es la última acequia de la Huerta de Valencia, que da riego a las tierras del margen derecho del río Turia comprendidas entre el cauce del río, al sur del mismo, y el mar Mediterráneo, en su mayor parte tierras del arrozal de la zona norte del parque natural de la Albufera, terminando sus aguas en la Albufera por el canal del Port de El Saler y la acequia de Rabisanxo.",
+      "english": "Just like the Acequia del Oro, which is the last irrigation canal of the Huerta de Valencia, providing irrigation to the lands on the right bank of the Turia river comprised between the riverbed, to the south of it, and the Mediterranean Sea, mostly rice field lands in the northern area of the Albufera Natural Park, ending its waters in the Albufera through the Port of El Saler canal and the Rabisanxo irrigation canal."
+    },
+    {
+      "id": "s6",
+      "name": "Silla",
+      "quote": "Al suroeste del parque transcurre la N-332, la cual atraviesa el parque desde Sollana hasta Sueca, aunque en la actualidad se están llevando a cabo las obras para convertir esta carretera en la Autovía Valencia-Almería por la costa.",
+      "english": "To the southwest of the park runs the N-332, which crosses the park from Sollana to Sueca, although works are currently being carried out to convert this road into the Valencia-Almería Highway along the coast."
+    },
+    {
+      "id": "s7",
+      "name": "El Tremolar",
+      "quote": "También existen distintos puertos fluviales, como los de Catarroja, El Tremolar, Silla y Sollana, así como embarcaderos en El Palmar y El Saler.",
+      "english": "There are also various river ports, such as those of Catarroja, El Tremolar, Silla and Sollana, as well as piers in El Palmar and El Saler."
+    }
+  ],
+  "days": [
+    {
+      "title": "Coastal Forest and Saler Piers",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s5"
+      ]
+    },
+    {
+      "title": "Western River Ports and Canals",
+      "stop_ids": [
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Southern Villages and Fishing Ports",
+      "stop_ids": [
+        "s3",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "1861d92fe6990d7148cd5fe0d5b6e1d5b8ec7eabd5892e143a5a7cf6b7e5f9d0"
+}

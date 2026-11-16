@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Buseo",
+      "quote": "Cuenta además con un hermoso embalse, Buseo, integrado en el paisaje.",
+      "english": "It also has a beautiful reservoir, Buseo, integrated into the landscape."
+    },
+    {
+      "id": "s2",
+      "name": "Pico Ropé",
+      "quote": "A caballo entre las comarcas valencianas de la plana de Requena-Utiel y La Serranía este parque natural tiene un relieve abrupto y montañoso situados en el interior de una enorme fosa tectónica y rodeada de picos con alturas en torno a los 1100 metros como el Pico Ropé y el Morrón que es un saliente rocoso que se alza sobre el pueblo de Sot de Chera cuya panorámica de esta atalaya de 200 metros es impresionante.",
+      "english": "Straddling the Valencian regions of the Plana de Requena-Utiel and La Serranía, this natural park has an abrupt and mountainous relief situated inside an enormous tectonic trench and surrounded by peaks with heights around 1100 meters such as Pico Ropé and the Morrón, which is a rocky protrusion that rises above the village of Sot de Chera whose panoramic view from this 200-meter watchtower is impressive."
+    },
+    {
+      "id": "s3",
+      "name": "barranco de la Hoz",
+      "quote": "Desfiladeros y barrancos como el angosto barranco de la Hoz, junto al embalse de Buseo, y el río Sot o Reatillo a los pies de Sot de Chera, formando parajes tan extraordinarios como la Canal, se alternan con la vegetación de pinos, enebros, romero y esparto, y abundantes fuentes naturales como la fuente Fech, Santa María, Tío Fausto y la fuente Borregueras en la Hoya Cherales, sin dejar de nombrar las cascadas de las Toscas.",
+      "english": "Gorges and ravines such as the narrow Hoz ravine, next to the Buseo reservoir, and the Sot or Reatillo river at the feet of Sot de Chera, forming extraordinary places such as the Canal, alternate with vegetation of pines, junipers, rosemary and esparto, and abundant natural springs like the Fech, Santa María, Tío Fausto and Borregueras springs in the Hoya Cherales, without forgetting to mention the Las Toscas waterfalls."
+    },
+    {
+      "id": "s4",
+      "name": "cascadas de las Toscas",
+      "quote": "Desfiladeros y barrancos como el angosto barranco de la Hoz, junto al embalse de Buseo, y el río Sot o Reatillo a los pies de Sot de Chera, formando parajes tan extraordinarios como la Canal, se alternan con la vegetación de pinos, enebros, romero y esparto, y abundantes fuentes naturales como la fuente Fech, Santa María, Tío Fausto y la fuente Borregueras en la Hoya Cherales, sin dejar de nombrar las cascadas de las Toscas.",
+      "english": "Gorges and ravines such as the narrow Hoz ravine, next to the Buseo reservoir, and the Sot or Reatillo river at the feet of Sot de Chera, forming extraordinary places such as the Canal, alternate with vegetation of pines, junipers, rosemary and esparto, and abundant natural springs like the Fech, Santa María, Tío Fausto and Borregueras springs in the Hoya Cherales, without forgetting to mention the Las Toscas waterfalls."
+    },
+    {
+      "id": "s5",
+      "name": "Anticlinorio de Sot de Chera",
+      "quote": "Además, atravesando la garganta se pueden diferentes tipos de deformaciones de las capas de piedras, debidas a la formación conocida geológicamente como el Anticlinorio de Sot de Chera.",
+      "english": "Furthermore, crossing the gorge you can see different types of deformations of the stone layers, due to the formation known geologically as the Anticlinorium of Sot de Chera."
+    },
+    {
+      "id": "s6",
+      "name": "cueva del Morrón",
+      "quote": "También podemos encontrar en la zona cuevas de diferentes profundidades y formas, desde los abrigos más abiertos y superficiales como la cueva del Morrón, en el término de Sot de Chera, a cuevas con estalactitas y estalagmitas, con diversas bifurcaciones que llegan a ser verdaderos laberintos, como por ejemplo la Cueva del Risco del Fraile, la Sima de la Arcolla, el Chorrero de la Castellana, el Desfiladero del Tormagal, etc.",
+      "english": "We can also find in the area caves of different depths and shapes, from the most open and superficial shelters like the Morrón cave, in the municipality of Sot de Chera, to caves with stalactites and stalagmites, with various bifurcations that become true labyrinths, such as for example the Risco del Fraile Cave, the Arcolla Chasm, the Chorrero de la Castellana, the Tormagal Gorge, etc."
+    },
+    {
+      "id": "s7",
+      "name": "Desfiladero del Tormagal",
+      "quote": "También podemos encontrar en la zona cuevas de diferentes profundidades y formas, desde los abrigos más abiertos y superficiales como la cueva del Morrón, en el término de Sot de Chera, a cuevas con estalactitas y estalagmitas, con diversas bifurcaciones que llegan a ser verdaderos laberintos, como por ejemplo la Cueva del Risco del Fraile, la Sima de la Arcolla, el Chorrero de la Castellana, el Desfiladero del Tormagal, etc.",
+      "english": "We can also find in the area caves of different depths and shapes, from the most open and superficial shelters like the Morrón cave, in the municipality of Sot de Chera, to caves with stalactites and stalagmites, with various bifurcations that become true labyrinths, such as for example the Risco del Fraile Cave, the Arcolla Chasm, the Chorrero de la Castellana, the Tormagal Gorge, etc."
+    }
+  ],
+  "days": [
+    {
+      "title": "Geology and Heights of Sot de Chera",
+      "stop_ids": [
+        "s2",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Water and Ravines of Buseo",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "2d12f48048f2ce3390e4702dbfb30a5fd6118bd5bf7e4494dc37945cad62372a"
+}

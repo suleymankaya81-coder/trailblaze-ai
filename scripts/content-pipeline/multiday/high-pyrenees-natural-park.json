@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Massís del Mont-roig",
+      "english": "It is endemic to a small area of the Pyrenees between the massifs of Mont-roig and western Andorra, such that the majority of its world population is found within the limits of the natural park.",
+      "quote": "Es endémica de una pequeña zona de los Pirineos comprendida entre los macizos del Mont-roig y del oeste de Andorra, de tal modo que la mayor parte de su población mundial se encuentra dentro de los límites del parque natural."
+    },
+    {
+      "id": "s2",
+      "name": "Vall de Cardós",
+      "english": "The territory of the natural park has been historically very frequented by the brown bear, as evidenced by numerous historical data collected especially in the valleys of Àneu, the Vall de Cardós and the Vall Ferrera.",
+      "quote": "El territorio del parque natural ha sido históricamente muy frecuentado por el oso pardo, como lo testimonian numerosos datos históricos recogidos sobre todo en los valles de Àneu, la Vall de Cardós y la Vall Ferrera."
+    },
+    {
+      "id": "s3",
+      "name": "Tavascan",
+      "english": "This municipality coincides with the beginning of the Cardós valley, has an area of 14,700 ha and includes the villages of Aineto, Boldis Jussà, Boldis Sobirà, Lladorre, Lleret and Tavascan.",
+      "quote": "Este municipio coincide con el arranque del valle de Cardós, tiene una superficie de 14 700 ha y comprende los pueblos de Aineto, Boldis Jussà, Boldis Sobirà, Lladorre, Lleret y Tavascan."
+    },
+    {
+      "id": "s4",
+      "name": "Alins",
+      "english": "The last documented bear that was hunted in Catalonia was in 1948 in the municipality of Alins.",
+      "quote": "El último oso documentado que se cazó en Cataluña lo fue en 1948 en el municipio de Alins."
+    },
+    {
+      "id": "s5",
+      "name": "Vall Ferrera",
+      "english": "The Ferrera Valley extends along the Noguera de Vallferrera river.",
+      "quote": "Valle de Ferrera que se extiende a lo largo del río Noguera de Vallferrera"
+    },
+    {
+      "id": "s6",
+      "name": "Alt Àneu",
+      "english": "Although plants typical of siliceous terrains widely predominate in the park, the presence in Alt Àneu of a group of high mountain species from calcareous terrains, which are very rare in the whole of Catalonia, is very noteworthy.",
+      "quote": "Aunque en el parque predominan ampliamente las plantas propias de terrenos silíceos, es muy destacable la presencia en el Alt Àneu de un grupo de especies de alta montaña de terrenos calcáreos, muy raras en el conjunto de Cataluña."
+    },
+    {
+      "id": "s7",
+      "name": "Valles de Aneu",
+      "english": "Aneu Valleys whose landscape is made up of a large number of lakes.",
+      "quote": "Valles de Aneu cuyo paisaje lo conforman gran número de lagos."
+    },
+    {
+      "id": "s8",
+      "name": "Tírvia",
+      "english": "The villages of Tírvia (located on a promontory overlooking the Noguera de Cardós river), La Bana and Terveu are found there.",
+      "quote": "Se encuentran los pueblos de Tírvia (enclavado sobre un promontorio que se asoma al río Noguera de Cardós), La Bana y Terveu."
+    }
+  ],
+  "days": [
+    {
+      "title": "Cardós Valley and the High Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Eastern Valleys and Traditional Villages",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s8"
+      ]
+    },
+    {
+      "title": "Glacial Landscapes of Aneu",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "4bf71a71e878335eea9bbb23299e4581d4e1e7b1b4722beffc67774755ca0ac7"
+}

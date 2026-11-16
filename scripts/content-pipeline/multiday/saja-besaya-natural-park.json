@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Bárcena Mayor",
+      "quote": "El único núcleo urbano asentado dentro del parque natural es el conjunto histórico de Bárcena Mayor, perteneciente al término municipal de Los Tojos.",
+      "english": "The only urban center located within the natural park is the historic site of Bárcena Mayor, belonging to the municipality of Los Tojos."
+    },
+    {
+      "id": "s2",
+      "name": "Cueto Iján",
+      "quote": "La diversidad de sus ecosistemas está determinada por el contraste altimétrico existente entre sus cotas mínimas, que rondan los 200 metros, y las cimas del Cueto Iján, con 2084 m, y Cueto Cordel, con 2061 metros de altitud.",
+      "english": "The diversity of its ecosystems is determined by the altimetric contrast existing between its minimum elevations, which are around 200 meters, and the peaks of Cueto Iján, at 2084 m, and Cueto Cordel, at 2061 meters of altitude."
+    },
+    {
+      "id": "s3",
+      "name": "Cueto Cordel",
+      "quote": "La diversidad de sus ecosistemas está determinada por el contraste altimétrico existente entre sus cotas mínimas, que rondan los 200 metros, y las cimas del Cueto Iján, con 2084 m, y Cueto Cordel, con 2061 metros de altitud.",
+      "english": "The diversity of its ecosystems is determined by the altimetric contrast existing between its minimum elevations, which are around 200 meters, and the peaks of Cueto Iján, at 2084 m, and Cueto Cordel, at 2061 meters of altitude."
+    },
+    {
+      "id": "s4",
+      "name": "Cureñas-Canal del infierno",
+      "quote": "Cureñas-Canal del infierno, 575 hectáreas.",
+      "english": "Cureñas-Canal del infierno, 575 hectares."
+    },
+    {
+      "id": "s5",
+      "name": "Monte Quemado",
+      "quote": "Monte Quemado, 195 hectáreas.",
+      "english": "Monte Quemado, 195 hectares."
+    },
+    {
+      "id": "s6",
+      "name": "Centro de interpretación del Parque Natural Saja Besaya",
+      "quote": "El centro de interpretación y recepción de visitantes del parque natural, se localiza a kilómetro y medio del pueblo de Saja (municipio de Los Tojos), en la carretera del puerto de Palombera.",
+      "english": "The interpretation and visitor reception center of the natural park is located a kilometer and a half from the village of Saja (municipality of Los Tojos), on the Palombera pass road."
+    },
+    {
+      "id": "s7",
+      "name": "Sierra del Cordel",
+      "quote": "Todo su territorio queda dentro de la ZEC de los valles altos del Nansa, Saja y Alto Campoo, y la parte suroccidental se encuadra en la ZEPA de la sierra del Cordel.",
+      "english": "All of its territory lies within the ZEC of the high valleys of Nansa, Saja and Alto Campoo, and the southwestern part falls within the ZEPA of the Sierra del Cordel."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Southern Ranges",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Historical Centers and Visitors Services",
+      "stop_ids": [
+        "s1",
+        "s6"
+      ]
+    },
+    {
+      "title": "Protected Reserve Zones",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "6557ff4bfb5de8b865a4afc827453e3c4bffa048e214504caa1fa7c80407ab85"
+}

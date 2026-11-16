@@ -1,0 +1,99 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Corres",
+      "quote": "El único núcleo poblado dentro de los límites del parque es Corres, y en él se encuentra el centro de interpretación del parque natural de Izki.",
+      "english": "The only inhabited nucleus within the park limits is Corres, and in it is located the interpretation center of the Izki natural park."
+    },
+    {
+      "id": "s2",
+      "name": "centro de interpretación del parque natural de Izki",
+      "quote": "El único núcleo poblado dentro de los límites del parque es Corres, y en él se encuentra el centro de interpretación del parque natural de Izki.",
+      "english": "The only inhabited nucleus within the park limits is Corres, and in it is located the interpretation center of the Izki natural park."
+    },
+    {
+      "id": "s3",
+      "name": "Kapildui",
+      "quote": "La máxima altitud de la zona es el monte Kapildui, con 1177 m s. n. m., siendo su cota mínima la parte más baja del río Izki, y 800 m s. n. m. la media del parque.",
+      "english": "The maximum altitude of the area is Mount Kapildui, at 1177 m above sea level, with its minimum elevation being the lowest part of the Izki River, and 800 m above sea level the park average."
+    },
+    {
+      "id": "s4",
+      "name": "río Izki",
+      "quote": "La máxima altitud de la zona es el monte Kapildui, con 1177 m s. n. m., siendo su cota mínima la parte más baja del río Izki, y 800 m s. n. m. la media del parque.",
+      "english": "The maximum altitude of the area is Mount Kapildui, at 1177 m above sea level, with its minimum elevation being the lowest part of the Izki River, and 800 m above sea level the park average."
+    },
+    {
+      "id": "s5",
+      "name": "Muela",
+      "quote": "Igualmente, destacan cotas como San Cristóbal (1057 m), San Justi (1028 m), Muela (1055 m), Soila (990 m), Belabia (970 m) y Mantxibio (937 m).",
+      "english": "Likewise, peaks such as San Cristóbal (1057 m), San Justi (1028 m), Muela (1055 m), Soila (990 m), Belabia (970 m) and Mantxibio (937 m) stand out."
+    },
+    {
+      "id": "s6",
+      "name": "Soila",
+      "quote": "La ascensión desde Antoñana a Soila atravesando un bosque con las distintas especies de árboles catalogadas, entre las que sobresalen un tilo y un tejo (agin) de gran antigüedad y envergadura.",
+      "english": "The ascent from Antoñana to Soila crossing a forest with different cataloged tree species, among which a lime tree and a yew tree of great antiquity and size stand out."
+    },
+    {
+      "id": "s7",
+      "name": "acantilado de Bujanda a Corres",
+      "quote": "El acantilado de Bujanda a Corres.",
+      "english": "The cliff from Bujanda to Corres."
+    },
+    {
+      "id": "s8",
+      "name": "Belabia",
+      "quote": "La ascensión de Marquinez al monte Belabia y la visita a las cuevas artificiales.",
+      "english": "The ascent from Marquinez to Mount Belabia and the visit to the artificial caves."
+    },
+    {
+      "id": "s9",
+      "name": "cuevas artificiales",
+      "quote": "La ascensión de Marquinez al monte Belabia y la visita a las cuevas artificiales.",
+      "english": "The ascent from Marquinez to Mount Belabia and the visit to the artificial caves."
+    },
+    {
+      "id": "s10",
+      "name": "San Cristóbal",
+      "quote": "La excursión desde Apellaniz a Arluzea pasando por los montes San Cristóbal y San Justi.",
+      "english": "The excursion from Apellaniz to Arluzea passing through the San Cristóbal and San Justi mountains."
+    },
+    {
+      "id": "s11",
+      "name": "San Justi",
+      "quote": "La excursión desde Apellaniz a Arluzea pasando por los montes San Cristóbal y San Justi.",
+      "english": "The excursion from Apellaniz to Arluzea passing through the San Cristóbal and San Justi mountains."
+    }
+  ],
+  "days": [
+    {
+      "title": "Village Heritage and River Cliffs",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Eastern Peaks and Ancient Trees",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s10",
+        "s11"
+      ]
+    },
+    {
+      "title": "Western High Points and Caves",
+      "stop_ids": [
+        "s3",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "3504b28a38a4ec3e0711fc024ec36f3b1a5e54acda7bbf69e5fe6a496896492f"
+}

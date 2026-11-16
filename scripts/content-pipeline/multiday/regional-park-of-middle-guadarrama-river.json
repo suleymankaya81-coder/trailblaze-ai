@@ -1,0 +1,80 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "embalse de Las Nieves",
+      "quote": "Ocupa una superficie de 22 116 hectáreas y se extiende, siguiendo la vertical norte-sur, desde el término municipal de Galapagar (a la altura del embalse de Las Nieves) hasta el de Batres, en el límite con la provincia de Toledo.",
+      "english": "It occupies an area of 22,116 hectares and extends, following the north-south vertical, from the municipality of Galapagar (at the level of the Las Nieves reservoir) to Batres, on the border with the province of Toledo."
+    },
+    {
+      "id": "s2",
+      "name": "río Aulencia",
+      "quote": "En su parte septentrional, la franja se amplía, para integrar parte del curso del río Aulencia, principal afluente del Guadarrama.",
+      "english": "In its northern part, the strip expands to integrate part of the course of the Aulencia River, the main tributary of the Guadarrama."
+    },
+    {
+      "id": "s3",
+      "name": "embalse de Valmayor",
+      "quote": "El embalse de Valmayor, formado por el Aulencia, también se encuentra incluido dentro de este espacio natural.",
+      "english": "The Valmayor reservoir, formed by the Aulencia, is also included within this natural space."
+    },
+    {
+      "id": "s4",
+      "name": "embalse del Molino de la Hoz",
+      "quote": "Queda fuera de esta última figura legal el embalse del Molino de la Hoz, construido sobre el río Guadarrama —en el término de Las Rozas de Madrid—, dada su titularidad privada.",
+      "english": "The Molino de la Hoz reservoir, built on the Guadarrama river —in the municipality of Las Rozas de Madrid—, remains outside of this last legal figure due to its private ownership."
+    },
+    {
+      "id": "s5",
+      "name": "puerto de Galapagar",
+      "quote": "A lo largo de sus 50 km de longitud, se salvan aproximadamente 350 m de desnivel, que van desde los 941 m del puerto de Galapagar —la máxima altitud— hasta los 600 m de las campiñas de Batres —la mínima—.",
+      "english": "Along its 50 km length, there is a difference in elevation of approximately 350 m, ranging from 941 m at the Galapagar pass —the maximum altitude— to 600 m in the countrysides of Batres —the minimum—."
+    },
+    {
+      "id": "s6",
+      "name": "falla de Torrelodones",
+      "quote": "La pendiente más pronunciada se encuentra en la denominada falla de Torrelodones, situada en el municipio homónimo —cerca de su límite con Las Rozas de Madrid—, que sirve de transición entre las citadas unidades geológicas.",
+      "english": "The steepest slope is found in the so-called Torrelodones fault, located in the municipality of the same name —near its border with Las Rozas de Madrid—, which serves as a transition between the aforementioned geological units."
+    },
+    {
+      "id": "s7",
+      "name": "Altos del Ahijón",
+      "quote": "Mediante esta falla, se pasa de una altura de 941 m (en los Altos del Ahijón, en el puerto de Galapagar) a los 675 m de la presa de El Gasco, ubicada en la confluencia de los términos de Torrelodones, Galapagar y Las Rozas de Madrid.",
+      "english": "Through this fault, the height goes from 941 m (at the Altos del Ahijón, in the Galapagar pass) to 675 m at the El Gasco dam, located at the confluence of the municipalities of Torrelodones, Galapagar, and Las Rozas de Madrid."
+    },
+    {
+      "id": "s8",
+      "name": "presa de El Gasco",
+      "quote": "El río Guadarrama se encaja en esta zona, configurando un desfiladero.",
+      "english": "The Guadarrama river fits into this area, forming a gorge."
+    },
+    {
+      "id": "s9",
+      "name": "Cárcavas del Arenal",
+      "quote": "Especialmente singulares son las Cárcavas del Arenal, en el término municipal de Batres.",
+      "english": "Especially unique are the Cárcavas del Arenal, in the municipality of Batres."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Reservoirs and Passes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s5"
+      ]
+    },
+    {
+      "title": "Geological Formations and Gorges",
+      "stop_ids": [
+        "s4",
+        "s6",
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "0081c2228136a19967aa975d2f37136439512c2ed8fa085a3f86c8309278a4ea"
+}

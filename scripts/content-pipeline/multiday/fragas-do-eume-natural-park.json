@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "río Eume",
+      "quote": "Fue creado el 30 de julio de 1997​ y protege 9126,65 ha​ en las riberas del río Eume, concretamente en los municipios de Cabañas, Capela, Monfero, Puentedeume y Puentes de García Rodríguez, todos ellos en la provincia de La Coruña.",
+      "english": "It was created on July 30, 1997, and protects 9126.65 ha on the banks of the Eume river, specifically in the municipalities of Cabañas, Capela, Monfero, Puentedeume, and Puentes de García Rodríguez, all of them in the province of La Coruña."
+    },
+    {
+      "id": "s2",
+      "name": "cañón del Eume",
+      "quote": "El incendio calcinó la parte superior del cañón del Eume, a 300 metros de altitud, y afectó solo al corazón del parque, siendo finalmente extinguido el día 3 de abril.",
+      "english": "The fire burned the upper part of the Eume canyon, at 300 meters above sea level, and only affected the heart of the park, being finally extinguished on April 3rd."
+    },
+    {
+      "id": "s3",
+      "name": "Fraga del Eume",
+      "quote": "El monasterio de Caaveiro se estableció en el año 934 en la Fraga del Eume, para dar cobijo a los numerosos ermitaños que vivían dispersos en la zona.",
+      "english": "The Caaveiro monastery was established in the year 934 in the Fraga del Eume, to provide shelter to the numerous hermits who lived scattered in the area."
+    },
+    {
+      "id": "s4",
+      "name": "monasterio de Caaveiro",
+      "quote": "El monasterio de Caaveiro se estableció en el año 934 en la Fraga del Eume, para dar cobijo a los numerosos ermitaños que vivían dispersos en la zona.",
+      "english": "The Caaveiro monastery was established in the year 934 in the Fraga del Eume, to provide shelter to the numerous hermits who lived scattered in the area."
+    },
+    {
+      "id": "s5",
+      "name": "monasterio de Monfero",
+      "quote": "Los orígenes del monasterio de Monfero se remontan al siglo X, cuando se fundó un Cenobio al pie de una capilla dedicada a San Marcos.",
+      "english": "The origins of the Monfero monastery date back to the 10th century, when a monastery was founded at the foot of a chapel dedicated to Saint Mark."
+    },
+    {
+      "id": "s6",
+      "name": "capilla dedicada a San Marcos",
+      "quote": "Los orígenes del monasterio de Monfero se remontan al siglo X, cuando se fundó un Cenobio al pie de una capilla dedicada a San Marcos.",
+      "english": "The origins of the Monfero monastery date back to the 10th century, when a monastery was founded at the foot of a chapel dedicated to Saint Mark."
+    },
+    {
+      "id": "s7",
+      "name": "monasterio de San Juan de Caaveiro",
+      "quote": "El monasterio de San Juan de Caaveiro es un monasterio del siglo XII para acoger a religiosos anacoretas.",
+      "english": "The monastery of San Juan de Caaveiro is a 12th-century monastery to house anchorite religious people."
+    }
+  ],
+  "days": [
+    {
+      "title": "Riverside and Canyons",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "History of Caaveiro",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "The Monfero Legacy",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "bf934e5e468a82f02dd254accf1d4c758bef43c64541743da400670219b0d80c"
+}

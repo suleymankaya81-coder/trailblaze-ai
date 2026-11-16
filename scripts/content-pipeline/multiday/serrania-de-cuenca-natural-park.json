@@ -1,0 +1,120 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Ciudad Encantada",
+      "quote": "Ciudad Encantada, declarada Sitio Natural de Interés Nacional.",
+      "english": "Ciudad Encantada, declared a Natural Site of National Interest."
+    },
+    {
+      "id": "s2",
+      "name": "Nacimiento del Río Cuervo",
+      "quote": "Nacimiento del Río Cuervo, Monumento Natural.",
+      "english": "Source of the Cuervo River, Natural Monument."
+    },
+    {
+      "id": "s3",
+      "name": "Parque Cinegético Experimental de El Hosquillo",
+      "quote": "Parque Cinegético Experimental de El Hosquillo.",
+      "english": "El Hosquillo Experimental Hunting Park."
+    },
+    {
+      "id": "s4",
+      "name": "Callejones de Las Majadas",
+      "quote": "Callejones de Las Majadas.",
+      "english": "The Alleys of Las Majadas."
+    },
+    {
+      "id": "s5",
+      "name": "Torcas de Lagunaseca",
+      "quote": "Torcas de Lagunaseca, Monumento Natural.",
+      "english": "Torcas de Lagunaseca, Natural Monument."
+    },
+    {
+      "id": "s6",
+      "name": "Valle del río Escabas",
+      "quote": "Valle del río Escabas.",
+      "english": "Valley of the Escabas river."
+    },
+    {
+      "id": "s7",
+      "name": "Reserva Natural de la Laguna del Marquesado",
+      "quote": "Reserva Natural de la Laguna del Marquesado.",
+      "english": "Laguna del Marquesado Nature Reserve."
+    },
+    {
+      "id": "s8",
+      "name": "Laguna de Uña",
+      "quote": "En la laguna del Tobar, o de Uña, hay concentraciones de fochas, ánades y otras aves acuáticas, así como nutrias.",
+      "english": "In the Tobar, or Uña lagoon, there are concentrations of coots, ducks and other aquatic birds, as well as otters."
+    },
+    {
+      "id": "s9",
+      "name": "Embalse de La Toba",
+      "quote": "Laguna de Uña y Embalse de La Toba.",
+      "english": "Uña Lagoon and La Toba Reservoir."
+    },
+    {
+      "id": "s10",
+      "name": "Nacimiento del río Júcar",
+      "quote": "Nacimiento del río Júcar.",
+      "english": "Source of the Júcar river."
+    },
+    {
+      "id": "s11",
+      "name": "Ventano del Diablo",
+      "quote": "Ventano del Diablo y cortados del Júcar.",
+      "english": "Devil's Window and the Júcar cliffs."
+    },
+    {
+      "id": "s12",
+      "name": "Laguna del Tobar",
+      "quote": "Laguna del Tobar.",
+      "english": "Tobar Lagoon."
+    },
+    {
+      "id": "s13",
+      "name": "Hoz del Solán de Cabras",
+      "quote": "Hoz del Solán de Cabras.",
+      "english": "Solán de Cabras Gorge."
+    },
+    {
+      "id": "s14",
+      "name": "Hoz de Tragavivos",
+      "quote": "Hoz de Tragavivos.",
+      "english": "Tragavivos Gorge."
+    }
+  ],
+  "days": [
+    {
+      "title": "Geological Wonders and Northern Gorges",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s11",
+        "s13"
+      ]
+    },
+    {
+      "title": "Rivers, Reservoirs and Water Interpretations",
+      "stop_ids": [
+        "s8",
+        "s9",
+        "s10",
+        "s12",
+        "s14"
+      ]
+    },
+    {
+      "title": "Natural Monuments and Highland Reserves",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "bbb4ab4a94732a34ce8c7a64bb4f7008cd63ea3f3edd7a466c704c0c16c8d516"
+}

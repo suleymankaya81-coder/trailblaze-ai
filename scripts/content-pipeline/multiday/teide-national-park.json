@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Teide",
+      "quote": "En esta zona se encuentra el volcán del Teide (en guanche y originariamente, Echeyde o Echeide) que con sus 3715 metros, es el pico más alto de Canarias, de España y de cualquier tierra emergida del océano Atlántico.",
+      "english": "In this area is the Teide volcano (in Guanche and originally, Echeyde or Echeide) which, with its 3,715 meters, is the highest peak in the Canary Islands, Spain, and any land emerging from the Atlantic Ocean."
+    },
+    {
+      "id": "s2",
+      "name": "Pico Viejo",
+      "quote": "Junto al Teide se encuentra la segunda montaña más alta del archipiélago canario, el Pico Viejo con 3135 metros sobre el nivel del mar, siendo ambos las únicas montañas canarias que sobrepasan los 3000 metros de altitud.",
+      "english": "Next to Teide is the second highest mountain in the Canary archipelago, Pico Viejo, at 3,135 meters above sea level, both being the only Canarian mountains that exceed 3,000 meters in altitude."
+    },
+    {
+      "id": "s3",
+      "name": "Boca Cangrejo",
+      "quote": "En el año 1492, justo cuando Cristóbal Colón partía de la isla colombina dispuesto a conquistar el Nuevo Mundo, el volcán Boca Cangrejo, cercano al Teide, se encontraba en erupción.",
+      "english": "In the year 1492, just as Christopher Columbus was departing from the Columbian island ready to conquer the New World, the Boca Cangrejo volcano, near Teide, was erupting."
+    },
+    {
+      "id": "s4",
+      "name": "Narices del Teide",
+      "quote": "En 1798, la última gran erupción producida, constituyó las denominadas Narices del Teide, en la que 12 millones de metros cúbicos de lava fueron vertidos durante tres meses desde el Pico Viejo.",
+      "english": "In 1798, the last major eruption produced constituted the so-called Narices del Teide, in which 12 million cubic meters of lava were poured over three months from Pico Viejo."
+    },
+    {
+      "id": "s5",
+      "name": "Centro de Investigación Atmosférica de Izaña",
+      "quote": "Ha sido en el Centro de Investigación Atmosférica de Izaña donde hubo más horas de sol en 2007 en España, con 3845, y también fue el lugar donde se registró la temperatura media más baja, 10,2 grados de media en todo el año.",
+      "english": "It was at the Izaña Atmospheric Research Center where there were the most hours of sunshine in 2007 in Spain, with 3,845, and it was also the place where the lowest average temperature was recorded, an average of 10.2 degrees throughout the year."
+    },
+    {
+      "id": "s6",
+      "name": "alto de Guajara",
+      "quote": "El alto de Guajara, el Llano de Ucanca, las Siete Cañadas, La Fortaleza, los roques de García y el Pico Viejo (o Chahorra) son ejemplos muy importantes y característicos que forman el paisaje natural del parque.",
+      "english": "The Guajara height, the Ucanca Plain, the Siete Cañadas, La Fortaleza, the Garcia rocks, and Pico Viejo (or Chahorra) are very important and characteristic examples that form the natural landscape of the park."
+    },
+    {
+      "id": "s7",
+      "name": "Llano de Ucanca",
+      "quote": "El alto de Guajara, el Llano de Ucanca, las Siete Cañadas, La Fortaleza, los roques de García y el Pico Viejo (o Chahorra) son ejemplos muy importantes y característicos que forman el paisaje natural del parque.",
+      "english": "The Guajara height, the Ucanca Plain, the Siete Cañadas, La Fortaleza, the Garcia rocks, and Pico Viejo (or Chahorra) are very important and characteristic examples that form the natural landscape of the park."
+    },
+    {
+      "id": "s8",
+      "name": "La Fortaleza",
+      "quote": "El alto de Guajara, el Llano de Ucanca, las Siete Cañadas, La Fortaleza, los roques de García y el Pico Viejo (o Chahorra) son ejemplos muy importantes y característicos que forman el paisaje natural del parque.",
+      "english": "The Guajara height, the Ucanca Plain, the Siete Cañadas, La Fortaleza, the Garcia rocks, and Pico Viejo (or Chahorra) are very important and characteristic examples that form the natural landscape of the park."
+    },
+    {
+      "id": "s9",
+      "name": "roques de García",
+      "quote": "El alto de Guajara, el Llano de Ucanca, las Siete Cañadas, La Fortaleza, los roques de García y el Pico Viejo (o Chahorra) son ejemplos muy importantes y característicos que forman el paisaje natural del parque.",
+      "english": "The Guajara height, the Ucanca Plain, the Siete Cañadas, La Fortaleza, the Garcia rocks, and Pico Viejo (or Chahorra) are very important and characteristic examples that form the natural landscape of the park."
+    },
+    {
+      "id": "s10",
+      "name": "parador de las Cañadas del Teide",
+      "quote": "Es el parque nacional de España que más visitantes recibe al año y cuenta en el apartado de hospedaje con el parador de las Cañadas del Teide.",
+      "english": "It is the national park in Spain that receives the most visitors per year and features the Parador de las Cañadas del Teide in its lodging section."
+    }
+  ],
+  "days": [
+    {
+      "title": "Volcanic Summits and Formations",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Geological Landmarks and Lodging",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s9",
+        "s10"
+      ]
+    },
+    {
+      "title": "Science and High Plateaus",
+      "stop_ids": [
+        "s5",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "ba851c70073a9fe401ac2037c9d5a19201daf0b25b252e52004cd373ef68fb1b"
+}

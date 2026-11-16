@@ -1,7 +1,7 @@
 import { airportRentalsLink, motorhomeRepublicLink } from "./webjet";
 
 /** Country eligibility for vehicle, RV and campground partners plus local price formatting. */
-export type CountryCode = "us" | "ca" | "gb" | "de" | "at" | "ch" | "it";
+export type CountryCode = "us" | "ca" | "gb" | "de" | "at" | "ch" | "it" | "es";
 export type PartnerKind = "rv" | "car" | "campground";
 
 interface CountryPartnerSet { currency: string; numberLocale: string; rv: string[]; car: string[]; campground: string[] }
@@ -14,6 +14,7 @@ export const COUNTRY_PARTNERS: Record<CountryCode, CountryPartnerSet> = {
   at: { currency: "EUR", numberLocale: "de-AT", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
   ch: { currency: "CHF", numberLocale: "de-CH", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
   it: { currency: "EUR", numberLocale: "it-IT", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
+  es: { currency: "EUR", numberLocale: "es-ES", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
 };
 
 export function normalizeCountry(code?: string | null): CountryCode {
@@ -51,6 +52,7 @@ export function rvLinkFor(country?: string | null, now = Date.now()): string | n
   if (c === "at") return motorhomeRepublicLink("/austria/", now);
   if (c === "ch") return motorhomeRepublicLink("/switzerland/", now);
   if (c === "it") return motorhomeRepublicLink("/italy/", now);
+  if (c === "es") return motorhomeRepublicLink("/spain/", now);
   return motorhomeRepublicLink(undefined, now);
 }
 

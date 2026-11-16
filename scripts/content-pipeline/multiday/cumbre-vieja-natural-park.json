@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Coladas del Volcán de Martín",
+      "quote": "Ambos fueron unidos por la Ley 12/1994, de 19 de diciembre, pero los Volcanes de Teneguía formaron un espacio protegido independiente.",
+      "english": "Both were joined by Law 12/1994, of December 19, but the Teneguía Volcanoes formed an independent protected area."
+    },
+    {
+      "id": "s2",
+      "name": "Ruta de los Volcanes",
+      "quote": "El Parque cubre gran parte del sur de la isla, abarcando los municipios de Breña Alta, Breña Baja, Mazo, El Paso y Fuencaliente y es atravesado de norte a sur por un sendero llamado popularmente Ruta de los Volcanes inaccesible para vehículos de ruedas y homologado de gran recorrido, que pasa por todos los conos importantes y que ofrece vistas impresionantes de ellos así como de la isla y de otras islas vecinas.",
+      "english": "The Park covers a large part of the south of the island, spanning the municipalities of Breña Alta, Breña Baja, Mazo, El Paso, and Fuencaliente, and is crossed from north to south by a path popularly called Ruta de los Volcanes, inaccessible to wheeled vehicles and approved as a long-distance trail, which passes through all the important cones and offers impressive views of them as well as the island and other neighboring islands."
+    },
+    {
+      "id": "s3",
+      "name": "eje central de la Cumbre Vieja",
+      "quote": "Todos estos procesos eruptivos se alinean siguiendo el eje central de la Cumbre Vieja con lavas que discurrieron por las pendientes, llegando al mar en ocasiones y llegando a ganar terreno al mar.",
+      "english": "All these eruptive processes align following the central axis of Cumbre Vieja with lavas that flowed down the slopes, reaching the sea on occasions and gaining ground from the sea."
+    },
+    {
+      "id": "s4",
+      "name": "Paleopalma",
+      "quote": "El sector más septentrional del parque pertenece a una unidad geológica mucho más antigua llamada Paleopalma.",
+      "english": "The northernmost sector of the park belongs to a much older geological unit called Paleopalma."
+    }
+  ],
+  "days": [
+    {
+      "title": "Volcanic Routes and Geological Formations",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "3131a5a2b6d5f11844a79b0451d31cd90d61e8d38bc931a86f1785c6327a4e03"
+}

@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Peñagolosa",
+      "quote": "Con sus 1814 metros, se trata de la segunda cima de la Comunidad Valenciana, sólo ligeramente superada por el Cerro Calderón, en el Javalambre valenciano del Rincón de Ademuz.",
+      "english": "With its 1,814 meters, it is the second highest peak in the Valencian Community, only slightly surpassed by Cerro Calderón, in the Valencian Javalambre of Rincón de Ademuz."
+    },
+    {
+      "id": "s2",
+      "name": "Poljé de Vistabella",
+      "quote": "Entre estos últimos destacan formas típicas de periglaciarismo, así como espectaculares formaciones kársticas como el Poljé de Vistabella con su engolidor del Quinyó, el Cañón del río Monleón, el río Carbo y distintas cuevas de interés.",
+      "english": "Among the latter, typical forms of periglaciarism stand out, as well as spectacular karst formations such as the Vistabella Polje with its Quinyó sinkhole, the Monleón River Canyon, the Carbo River and various caves of interest."
+    },
+    {
+      "id": "s3",
+      "name": "engolidor del Quinyó",
+      "quote": "Entre estos últimos destacan formas típicas de periglaciarismo, así como espectaculares formaciones kársticas como el Poljé de Vistabella con su engolidor del Quinyó, el Cañón del río Monleón, el río Carbo y distintas cuevas de interés.",
+      "english": "Among the latter, typical forms of periglaciarism stand out, as well as spectacular karst formations such as the Vistabella Polje with its Quinyó sinkhole, the Monleón River Canyon, the Carbo River and various caves of interest."
+    },
+    {
+      "id": "s4",
+      "name": "Cañón del río Monleón",
+      "quote": "Entre estos últimos destacan formas típicas de periglaciarismo, así como espectaculares formaciones kársticas como el Poljé de Vistabella con su engolidor del Quinyó, el Cañón del río Monleón, el río Carbo y distintas cuevas de interés.",
+      "english": "Among the latter, typical forms of periglaciarism stand out, as well as spectacular karst formations such as the Vistabella Polje with its Quinyó sinkhole, the Monleón River Canyon, the Carbo River and various caves of interest."
+    },
+    {
+      "id": "s5",
+      "name": "río Carbo",
+      "quote": "Entre estos últimos destacan formas típicas de periglaciarismo, así como espectaculares formaciones kársticas como el Poljé de Vistabella con su engolidor del Quinyó, el Cañón del río Monleón, el río Carbo y distintas cuevas de interés.",
+      "english": "Among the latter, typical forms of periglaciarism stand out, as well as spectacular karst formations such as the Vistabella Polje with its Quinyó sinkhole, the Monleón River Canyon, the Carbo River and various caves of interest."
+    },
+    {
+      "id": "s6",
+      "name": "Ermitorio de Santuario de San Juan Bautista de Peñagolosa y Santa Bárbara",
+      "quote": "El Ermitorio de Santuario de San Juan Bautista de Peñagolosa y Santa Bárbara, antiguo Convento de Cenobitas, está integrado por un conjunto arquitectónico de estilo neoclásico con origen en el siglo XIV, aunque la Cofradía de San Juan data del siglo XVII.",
+      "english": "The Hermitage Sanctuary of Saint John the Baptist of Peñagolosa and Saint Barbara, a former Cenobite Convent, is composed of a neoclassical architectural complex dating back to the 14th century, although the Brotherhood of Saint John dates from the 17th century."
+    },
+    {
+      "id": "s7",
+      "name": "mases",
+      "quote": "No menos importante es el patrimonio construido vinculado al medio rural tradicional, centrado en los mases y edificaciones relacionadas, cuyo conjunto posee un gran valor histórico y cultural.",
+      "english": "No less important is the built heritage linked to the traditional rural environment, centered on the farmhouses (mases) and related buildings, whose ensemble possesses great historical and cultural value."
+    }
+  ],
+  "days": [
+    {
+      "title": "Peak and Karst Formations",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Canyons and Rivers",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Heritage and Rural Architecture",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "dc2eb408a4cf477bff71a3c5b0f68034896b566b983cd9bf897c037b83c4a240"
+}

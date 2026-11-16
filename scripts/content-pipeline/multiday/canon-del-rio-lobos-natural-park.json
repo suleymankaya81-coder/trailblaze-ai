@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "río Lobos",
+      "quote": "El río Lobos es el eje del cañón del mismo nombre y el causante de la erosión que le ha dado forma.",
+      "english": "The Lobos River is the axis of the canyon of the same name and the cause of the erosion that shaped it."
+    },
+    {
+      "id": "s2",
+      "name": "Cueva Grande",
+      "quote": "Esta área se encuentra a 3,5 km de la entrada desde la Galiana, en la explanada que se extiende frente a la Cueva Grande, con pinturas rupestres.",
+      "english": "This area is located 3.5 km from the Galiana entrance, on the esplanade that extends in front of the Cueva Grande, which features cave paintings."
+    },
+    {
+      "id": "s3",
+      "name": "ermita de San Bartolomé",
+      "quote": "La ermita de San Bartolomé es una construcción románica del primer cuarto del siglo XIII con alguna influencia del gótico.",
+      "english": "The chapel of San Bartolomé is a Romanesque construction from the first quarter of the 13th century with some Gothic influence."
+    },
+    {
+      "id": "s4",
+      "name": "puente de los Siete Ojos",
+      "quote": "El segundo acceso se encuentra a 12 km del anterior, aproximadamente a mitad de recorrido, faltando 9 km para la salida de Ucero, y es el llamado puente de los Siete Ojos, que está en la carretera provincial SO-934, que une San Leonardo de Yagüe con Santa María de las Hoyas.",
+      "english": "The second access point is located 12 km from the previous one, approximately halfway along the route, 9 km from the Ucero exit, and is the so-called Siete Ojos bridge, located on the provincial road SO-934, which connects San Leonardo de Yagüe with Santa María de las Hoyas."
+    },
+    {
+      "id": "s5",
+      "name": "Casa del Parque",
+      "quote": "Cerca de la entrada de la Galiana se encuentra la Casa del Parque, centro de interpretación del espacio natural.",
+      "english": "Near the Galiana entrance is the Casa del Parque, the interpretation center for the natural area."
+    },
+    {
+      "id": "s6",
+      "name": "mirador de la Galiana",
+      "quote": "Además, hay cinco miradores oficiales en el parque natural: el mirador de Costalago, el mirador de la Lastrilla, el mirador del Castillo, el mirador de la Galiana y el mirador de las Gullurías.",
+      "english": "Additionally, there are five official viewpoints in the natural park: the Costalago viewpoint, the Lastrilla viewpoint, the Castillo viewpoint, the Galiana viewpoint, and the Gullurías viewpoint."
+    },
+    {
+      "id": "s7",
+      "name": "pico de Navas",
+      "quote": "Además, hay varias Rutas de Pequeño Recorrido: la PR-SO-03, ruta de las Sabinas; la senda al pico de Navas, la PO-BU-05, Senda Hontoria; la PR-SO-06; la PR-SO-46, El Torcajón; la PR-SO-47, Tres cruces; la PR-SO-49, cañada Real de la Merinas; la PRC-SO-66, senda del castillo y la PRC-SO-67, ruta de las Gullurías.",
+      "english": "Furthermore, there are several Short Distance Trails: the PR-SO-03, route of the Sabinas; the path to the Navas peak, the PO-BU-05, Hontoria Path; the PR-SO-06; the PR-SO-46, El Torcajón; the PR-SO-47, Three crosses; the PR-SO-49, Royal Cattle Track of the Merinas; the PRC-SO-66, castle path and the PRC-SO-67, Gullurías route."
+    }
+  ],
+  "days": [
+    {
+      "title": "Canyon River and Historic Landmarks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Bridges and Visitor Centers",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Peaks and Panoramic Views",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "e33612b2f43bcdbb92c732d2441a4377b513914fd274ef76c4cfefb10c960ac1"
+}

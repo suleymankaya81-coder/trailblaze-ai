@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Bisaurín",
+      "quote": "Su altitud oscila entre los 900 m s. n. m. en el fondo de valle y los 2 670 m s. n. m. en la cima del Bisaurín.",
+      "english": "Its altitude ranges between 900 m above sea level at the valley floor and 2,670 m above sea level at the summit of Bisaurín."
+    },
+    {
+      "id": "s2",
+      "name": "Aguas Tuertas",
+      "quote": "Éstos, debido al arrastre de materiales por los ríos tienden a rellenarse, originando pequeñas llanuras por donde el agua “zigzaguea” dando lugar a meandros como en Aguas Tuertas.",
+      "english": "These, due to the dragging of materials by the rivers, tend to fill up, creating small plains where the water \"zigzags,\" giving rise to meanders such as in Aguas Tuertas."
+    },
+    {
+      "id": "s3",
+      "name": "Selva de Oza",
+      "quote": "En la frondosa Selva de Oza las hayas y otras especies de árboles caducifolios se combinan armónicamente con altos abetos y bosques de pino negro.",
+      "english": "In the lush Selva de Oza, beech trees and other deciduous tree species combine harmoniously with tall firs and black pine forests."
+    },
+    {
+      "id": "s4",
+      "name": "Mesa de los Tres Reyes",
+      "quote": "En sus cumbres (Mesa de los Tres Reyes, Pico de Aspe, Bisaurín, etc.), habita la perdiz nival, el sarrio, el armiño, el treparriscos o el gorrión alpino y en sus ibones nutrias y tritones.",
+      "english": "In its summits (Mesa de los Tres Reyes, Pico de Aspe, Bisaurín, etc.), the rock ptarmigan, the Pyrenean chamois, the ermine, the wallcreeper, or the snowfinch inhabit, and in its mountain lakes, otters and newts."
+    },
+    {
+      "id": "s5",
+      "name": "Pico de Aspe",
+      "quote": "En sus cumbres (Mesa de los Tres Reyes, Pico de Aspe, Bisaurín, etc.), habita la perdiz nival, el sarrio, el armiño, el treparriscos o el gorrión alpino y en sus ibones nutrias y tritones.",
+      "english": "In its summits (Mesa de los Tres Reyes, Pico de Aspe, Bisaurín, etc.), the rock ptarmigan, the Pyrenean chamois, the ermine, the wallcreeper, or the snowfinch inhabit, and in its mountain lakes, otters and newts."
+    },
+    {
+      "id": "s6",
+      "name": "Foces de Fago",
+      "quote": "ZEPA: Los Valles, Salvatierra y Foces de Fago.",
+      "english": "ZEPA: Los Valles, Salvatierra and Foces de Fago."
+    },
+    {
+      "id": "s7",
+      "name": "Río Veral",
+      "quote": "ZEC: Los Valles, Los Valles Sur, Sierra de los Valles, Aísa y Borau, y Río Veral",
+      "english": "ZEC: Los Valles, Los Valles Sur, Sierra de los Valles, Aísa and Borau, and Río Veral"
+    }
+  ],
+  "days": [
+    {
+      "title": "High Summits and Alpine Fauna",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "River Valleys and Ancient Forests",
+      "stop_ids": [
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Glacial Landscapes and Gorges",
+      "stop_ids": [
+        "s2",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "9846e7c9e1667b357a4f0295cf81c819110e195e5a455a3b2b004d5af2ca2cb7"
+}

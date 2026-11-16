@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "playa de Aguas Santas",
+      "quote": "La playa de Las Catedrales (en gallego, praia das Catedrais) es el nombre turístico de la playa de Aguas Santas (en gallego, praia de Augas Santas), situada en el municipio gallego de Ribadeo (parroquia de Devesa), en la costa de la provincia de Lugo, España, sobre el mar Cantábrico.",
+      "english": "The Beach of the Cathedrals (in Galician, praia das Catedrais) is the tourist name of the Beach of Holy Waters (in Galician, praia de Augas Santas), located in the Galician municipality of Ribadeo (Devesa parish), on the coast of the province of Lugo, Spain, on the Cantabrian Sea."
+    },
+    {
+      "id": "s2",
+      "name": "acantilados",
+      "quote": "Es conocida por este nombre debido a la apariencia de sus acantilados.",
+      "english": "It is known by this name due to the appearance of its cliffs."
+    },
+    {
+      "id": "s3",
+      "name": "arcos",
+      "quote": "Lo característico de la playa son los arcos y las cuevas marinas, solo apreciables a pie de playa durante la bajamar.",
+      "english": "Characteristic of the beach are the arches and sea caves, only visible at the foot of the beach during low tide."
+    },
+    {
+      "id": "s4",
+      "name": "cuevas marinas",
+      "quote": "Lo característico de la playa son los arcos y las cuevas marinas, solo apreciables a pie de playa durante la bajamar.",
+      "english": "Characteristic of the beach are the arches and sea caves, only visible at the foot of the beach during low tide."
+    },
+    {
+      "id": "s5",
+      "name": "playa de Esteiro",
+      "quote": "Es interesante ver la playa con la marea alta recorriendo la parte superior de los acantilados en dirección oeste-este hacia la playa de Esteiro y verla con marea baja sobre la arena de la playa.",
+      "english": "It is interesting to see the beach at high tide by walking along the top of the cliffs in a west-east direction towards Esteiro beach and to see it at low tide on the beach sand."
+    },
+    {
+      "id": "s6",
+      "name": "grutas",
+      "quote": "Durante la marea baja puede accederse a un largo arenal delimitado por una pared rocosa de pizarra y esquisto erosionada en formas caprichosas: arcos de más de treinta metros de altura que recuerdan a arbotantes de una catedral, grutas de decenas de metros, pasillos de arena entre bloques de roca y otras curiosidades.",
+      "english": "During low tide, one can access a long sandy area bordered by a rocky wall of slate and schist eroded into whimsical shapes: arches over thirty meters high resembling cathedral flying buttresses, grottoes tens of meters long, sand corridors between rock blocks, and other curiosities."
+    },
+    {
+      "id": "s7",
+      "name": "miradores",
+      "quote": "Contiguo al aparcamiento de la playa se pueden encontrar dos miradores desde donde se puede contemplar en su totalidad unas magníficas vistas de La Mariña lucense.",
+      "english": "Adjacent to the beach parking lot, two viewpoints can be found from where you can contemplate in their entirety the magnificent views of the Mariña lucense."
+    }
+  ],
+  "days": [
+    {
+      "title": "Low Tide Formations and Arches",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4",
+        "s6"
+      ]
+    },
+    {
+      "title": "Cliff Views and Coastal Trails",
+      "stop_ids": [
+        "s2",
+        "s5",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "f7cb08ef378cf0893c42492801e576dd3aa3c6a2287d1fd93c0f658d88594fa6"
+}

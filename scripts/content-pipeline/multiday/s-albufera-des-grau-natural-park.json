@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "isla de Colom",
+      "quote": "Se distinguen tres áreas: la isla de Colom, la zona del faro de Favarich-prado de Morella y la laguna y el prado de la Albufera.",
+      "english": "Three areas are distinguished: the island of Colom, the Favarich lighthouse-Morella meadow area, and the lagoon and meadow of the Albufera."
+    },
+    {
+      "id": "s2",
+      "name": "faro de Favarich",
+      "quote": "Se distinguen tres áreas: la isla de Colom, la zona del faro de Favarich-prado de Morella y la laguna y el prado de la Albufera.",
+      "english": "Three areas are distinguished: the island of Colom, the Favarich lighthouse-Morella meadow area, and the lagoon and meadow of the Albufera."
+    },
+    {
+      "id": "s3",
+      "name": "playa del Grao",
+      "quote": "el itinerario de Sa Gola recorre el canal de sa Gola y la zona de dunas de la playa del Grao.",
+      "english": "The Sa Gola itinerary covers the Sa Gola canal and the dune area of the Grao beach."
+    },
+    {
+      "id": "s4",
+      "name": "Sa Torreta",
+      "quote": "La albufera cuenta con algunos restos arqueológicos entre las que se encuentran los vestigios de la cultura talayótica de la finca de Sa Torreta; incluye también algunos de los monumentos megalíticos más importantes de Menorca.",
+      "english": "The albufera has some archaeological remains among which are the vestiges of the Talayotic culture of the Sa Torreta estate; it also includes some of the most important megalithic monuments in Menorca."
+    },
+    {
+      "id": "s5",
+      "name": "Camí de Cavalls",
+      "quote": "Además, el parque comprende parte del antiguo Camí de Cavalls (\"camino de caballos\") que rodea la isla.",
+      "english": "Additionally, the park includes part of the ancient Camí de Cavalls (\"horse path\") that surrounds the island."
+    },
+    {
+      "id": "s6",
+      "name": "itinerario de Sa Gola",
+      "quote": "el itinerario de Sa Gola recorre el canal de sa Gola y la zona de dunas de la playa del Grao.",
+      "english": "The Sa Gola itinerary covers the Sa Gola canal and the dune area of the Grao beach."
+    },
+    {
+      "id": "s7",
+      "name": "itinerario de Santa Madrona",
+      "quote": "el itinerario de Santa Madrona bordea la ribera suroeste de la albufera, y permite observar las aves acuáticas, ya que se encuentra muy próximo a la laguna y dispone de varios miradores y observatorios.",
+      "english": "The Santa Madrona itinerary skirts the southwest shore of the albufera, and allows for the observation of aquatic birds, as it is very close to the lagoon and has several viewpoints and observatories."
+    },
+    {
+      "id": "s8",
+      "name": "itinerario del mirador de Cala Llimpa",
+      "quote": "el itinerario del mirador de Cala Llimpa recorre la parte sudeste de la laguna.",
+      "english": "The Cala Llimpa viewpoint itinerary covers the southeastern part of the lagoon."
+    },
+    {
+      "id": "s9",
+      "name": "cala Presili",
+      "quote": "Cada área incluye una gran variedad de ecosistemas: zonas húmedas, tierras de cultivo y pasto, montes boscosos, comunidades litorales, acantilados, dunas y numerosas playas: la Escala, cala Presili, el Arenal de Morella, cala Tortuga, cala en Caballero, cala de la Torreta, Tamarells del Norte, Tamarells del Sur, Arenal d'en Mor, (isla de Colom), los Tamarells (isla de Colom) y la playa del Grao.",
+      "english": "Each area includes a great variety of ecosystems: wetlands, farmland and pasture, wooded mountains, coastal communities, cliffs, dunes and numerous beaches: la Escala, Presili cove, the Morella Sands, Tortuga cove, en Caballero cove, de la Torreta cove, North Tamarells, South Tamarells, d'en Mor Sands (Colom island), the Tamarells (Colom island) and the Grao beach."
+    },
+    {
+      "id": "s10",
+      "name": "Arenal de Morella",
+      "quote": "Cada área incluye una gran variedad de ecosistemas: zonas húmedas, tierras de cultivo y pasto, montes boscosos, comunidades litorales, acantilados, dunas y numerosas playas: la Escala, cala Presili, el Arenal de Morella, cala Tortuga, cala en Caballero, cala de la Torreta, Tamarells del Norte, Tamarells del Sur, Arenal d'en Mor, (isla de Colom), los Tamarells (isla de Colom) y la playa del Grao.",
+      "english": "Each area includes a great variety of ecosystems: wetlands, farmland and pasture, wooded mountains, coastal communities, cliffs, dunes and numerous beaches: la Escala, Presili cove, the Morella Sands, Tortuga cove, en Caballero cove, de la Torreta cove, North Tamarells, South Tamarells, d'en Mor Sands (Colom island), the Tamarells (Colom island) and the Grao beach."
+    }
+  ],
+  "days": [
+    {
+      "title": "Wetlands and Historic Itineraries",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8",
+        "s3"
+      ]
+    },
+    {
+      "title": "Lighthouse and Northern Beaches",
+      "stop_ids": [
+        "s2",
+        "s9",
+        "s10"
+      ]
+    },
+    {
+      "title": "Ancient Estates and Islands",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "08614c90fb81fa5d4cd4604f04d6da0004f931827a2b62b7f5f154a6de013bb0"
+}

@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "monte de Muniellos",
+      "quote": "El monte de Muniellos constituye el corazón de la reserva y comprende la cabecera del corto río Muniellos, un afluente del Narcea.",
+      "english": "The Muniellos forest constitutes the heart of the reserve and comprises the headwaters of the short Muniellos River, a tributary of the Narcea."
+    },
+    {
+      "id": "s2",
+      "name": "La Viliella",
+      "quote": "En 1988 se amplió la reserva hasta entonces 2695 ha, a su superficie actual, con la anexión de los montes de Valdebois (en Ibias, 1623 ha) y la Viliella (en Cangas del Narcea, 1224 ha).",
+      "english": "In 1988 the reserve, until then 2695 ha, was expanded to its current surface area with the annexation of the Valdebois forests (in Ibias, 1623 ha) and La Viliella (in Cangas del Narcea, 1224 ha)."
+    },
+    {
+      "id": "s3",
+      "name": "monte de Valdebois",
+      "quote": "La reserva natural integral de Muniellos (en asturiano: Munieḷḷos) es una reserva natural localizada en el suroccidente del Principado de Asturias (España), entre los concejos de Cangas del Narcea e Ibias dentro del parque natural de las Fuentes del Narcea y del Ibias, y ocupa un espacio total de 59,7 km², comprende tres montes: el monte de Muniellos, La Viliella y el monte de Valdebois.",
+      "english": "The Muniellos integral natural reserve (in Asturian: Munieḷḷos) is a natural reserve located in the southwest of the Principality of Asturias (Spain), between the municipalities of Cangas del Narcea and Ibias within the Fuentes del Narcea and Ibias natural park, and occupies a total space of 59.7 km², comprising three mountains: the Muniellos mount, La Viliella and the Valdebois mount."
+    },
+    {
+      "id": "s4",
+      "name": "pico de la Candanosa",
+      "quote": "La altitud va de los 680 m en las zonas más bajas hasta los 1640 m del pico de la Candanosa.",
+      "english": "The altitude goes from 680 m in the lowest areas up to 1640 m at the Candanosa peak."
+    },
+    {
+      "id": "s5",
+      "name": "río Muniellos",
+      "quote": "El monte de Muniellos constituye el corazón de la reserva y comprende la cabecera del corto río Muniellos, un afluente del Narcea.",
+      "english": "The Muniellos forest constitutes the heart of the reserve and comprises the headwaters of the short Muniellos River, a tributary of the Narcea."
+    },
+    {
+      "id": "s6",
+      "name": "lagunas del pico de la Candanosa",
+      "quote": "Del origen glaciar de Munieḷḷos dan fe las lagunas del pico de la Candanosa.",
+      "english": "The lagoons of the Candanosa peak bear witness to the glacial origin of Muniellos."
+    },
+    {
+      "id": "s7",
+      "name": "Albergue de Vega de Hórreo",
+      "quote": "También, en el entorno de Muniellos se organizan cursillos y campamentos medioambientales, utilizando como base de operaciones el Albergue de Vega de Hórreo.",
+      "english": "Also, in the surroundings of Muniellos, environmental courses and camps are organized, using the Vega de Hórreo Hostel as a base of operations."
+    }
+  ],
+  "days": [
+    {
+      "title": "Heart of the Protected Forest",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s7"
+      ]
+    },
+    {
+      "title": "Glacial Peaks and High Ridges",
+      "stop_ids": [
+        "s4",
+        "s6"
+      ]
+    },
+    {
+      "title": "Extended Reserve Territories",
+      "stop_ids": [
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "_text_sha": "530a6eff5224af6325d4c3c4c4a97fe78e8a9df8b9c5e72644fcd00d1bd0c3c8"
+}

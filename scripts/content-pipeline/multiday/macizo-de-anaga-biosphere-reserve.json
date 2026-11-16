@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Cruz de Taborno",
+      "quote": "La montaña Cruz de Taborno, es con 1024 metros la máxima altitud del Macizo de Anaga.",
+      "english": "The Cruz de Taborno mountain, at 1024 meters, is the highest point of the Anaga Massif."
+    },
+    {
+      "id": "s2",
+      "name": "Punta de Anaga",
+      "quote": "Se extiende desde la Punta de Anaga, en el noreste, hasta la Cruz del Carmen, en dirección suroeste, reuniendo los roques y picos de Bichuelo, Anambro, Chinobre, Pico Limante, Pico del Inglés, Cruz de Taborno y la propia Cruz del Carmen.",
+      "english": "It extends from Punta de Anaga in the northeast to Cruz del Carmen in the southwest, bringing together the rocks and peaks of Bichuelo, Anambro, Chinobre, Pico Limante, Pico del Inglés, Cruz de Taborno and Cruz del Carmen itself."
+    },
+    {
+      "id": "s3",
+      "name": "Cruz del Carmen",
+      "quote": "Se extiende desde la Punta de Anaga, en el noreste, hasta la Cruz del Carmen, en dirección suroeste, reuniendo los roques y picos de Bichuelo, Anambro, Chinobre, Pico Limante, Pico del Inglés, Cruz de Taborno y la propia Cruz del Carmen.",
+      "english": "It extends from Punta de Anaga in the northeast to Cruz del Carmen in the southwest, bringing together the rocks and peaks of Bichuelo, Anambro, Chinobre, Pico Limante, Pico del Inglés, Cruz de Taborno and Cruz del Carmen itself."
+    },
+    {
+      "id": "s4",
+      "name": "San Andrés",
+      "quote": "Es en esta zona donde se ubican las localidades de San Andrés (la más poblada), Taganana, El Suculum, Igueste de San Andrés, Valleseco, María Jiménez, Cueva Bermeja y Barrio de la Alegría.",
+      "english": "It is in this area where the towns of San Andrés (the most populated), Taganana, El Suculum, Igueste de San Andrés, Valleseco, María Jiménez, Cueva Bermeja and Barrio de la Alegría are located."
+    },
+    {
+      "id": "s5",
+      "name": "Taganana",
+      "quote": "Mucho más localizadas están las huellas de una crisis climática anterior, cuyos depósitos correlativos aparecen cementados y resaltados sobre el curso de los barrancos actuales (Taganana y Punta del Hidalgo).",
+      "english": "Much more localized are the traces of a previous climatic crisis, whose correlative deposits appear cemented and highlighted over the course of the current ravines (Taganana and Punta del Hidalgo)."
+    },
+    {
+      "id": "s6",
+      "name": "Roque de Las Ánimas",
+      "quote": "En todos los casos es llamativa la disyunción columnar (Roque de Las Ánimas, Aderno, Enmedio, etc.).",
+      "english": "In all cases, the columnar jointing is striking (Roque de Las Ánimas, Aderno, Enmedio, etc.)."
+    },
+    {
+      "id": "s7",
+      "name": "Barranco de Tahodio",
+      "quote": "La génesis de los valles en V de Anaga parece datar de finales del Terciario, durante el plioceno, pues dentro de algunos de ellos, como el barranco de Tahodio, se sitúan planchas de materiales sálicos o formas volcánicas pertenecientes al cuaternario medio y antiguo.",
+      "english": "The genesis of the V-shaped valleys of Anaga seems to date from the end of the Tertiary, during the Pliocene, since within some of them, such as the Tahodio ravine, there are slabs of salic materials or volcanic forms belonging to the middle and ancient Quaternary."
+    },
+    {
+      "id": "s8",
+      "name": "Almáciga",
+      "quote": "Sin embargo, no toda la morfología litoral de Anaga es encuadrable dentro de estos tipos de acantilados ya mencionados, sino que por el contrario también aparecen algunas playas, localizadas en áreas abrigadas del embate de las olas (Almáciga, Taganana, Antequera, etc.); callaos, que se sitúan en las desembocaduras de los barrancos; y algunos ejemplos de formas de acumulación dunar (Antequera, etc.).",
+      "english": "However, not all of Anaga's coastal morphology can be categorized within these aforementioned types of cliffs, but on the contrary, some beaches also appear, located in areas sheltered from the impact of the waves (Almáciga, Taganana, Antequera, etc.); pebbles, which are located at the mouths of the ravines; and some examples of dune accumulation forms (Antequera, etc.)."
+    },
+    {
+      "id": "s9",
+      "name": "Antequera",
+      "quote": "Sin embargo, no toda la morfología litoral de Anaga es encuadrable dentro de estos tipos de acantilados ya mencionados, sino que por el contrario también aparecen algunas playas, localizadas en áreas abrigadas del embate de las olas (Almáciga, Taganana, Antequera, etc.); callaos, que se sitúan en las desembocaduras de los barrancos; y algunos ejemplos de formas de acumulación dunar (Antequera, etc.).",
+      "english": "However, not all of Anaga's coastal morphology can be categorized within these aforementioned types of cliffs, but on the contrary, some beaches also appear, located in areas sheltered from the impact of the waves (Almáciga, Taganana, Antequera, etc.); pebbles, which are located at the mouths of the ravines; and some examples of dune accumulation forms (Antequera, etc.)."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Ridge Views",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Historic Villages and Valleys",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s7"
+      ]
+    },
+    {
+      "title": "Coastal Landscapes and Geological Wonders",
+      "stop_ids": [
+        "s6",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "c6e45bb58430aa98ca611868e724f1c52514f926f39125108299677150a1ba46"
+}

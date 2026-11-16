@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "pico de Torrecerredo",
+      "quote": "La cota más alta del parque se sitúa en los 2648 m. s. n. m. en el pico de Torrecerredo y la más pequeña de 75 m. s. n. m. en el río Deva lo que supone una diferencia de 2573 m.",
+      "english": "The highest point of the park is located at 2648 m above sea level at the Torrecerredo peak and the lowest at 75 m above sea level at the Deva river, which represents a difference of 2573 m."
+    },
+    {
+      "id": "s2",
+      "name": "río Deva",
+      "quote": "La cota más alta del parque se sitúa en los 2648 m. s. n. m. en el pico de Torrecerredo y la más pequeña de 75 m. s. n. m. en el río Deva lo que supone una diferencia de 2573 m.",
+      "english": "The highest point of the park is located at 2648 m above sea level at the Torrecerredo peak and the lowest at 75 m above sea level at the Deva river, which represents a difference of 2573 m."
+    },
+    {
+      "id": "s3",
+      "name": "Vega de Liordes",
+      "quote": "Vega de Liordes, enclave del sector leonés del parque nacional de Picos de Europa perteneciente al municipio de Posada de Valdeón registró -35,8 °C el 7 de enero de 2021.",
+      "english": "Vega de Liordes, an enclave in the Leonese sector of the Picos de Europa National Park belonging to the municipality of Posada de Valdeón, recorded -35.8 °C on January 7, 2021."
+    },
+    {
+      "id": "s4",
+      "name": "desfiladero de los Beyos",
+      "quote": "De esta manera, gracias a la erosión de los hielos cuaternarios y de los posteriores ríos formados se cuenta, entre otros, con el desfiladero de los Beyos y la garganta del Cares, dos de las hoces más espectaculares de España.",
+      "english": "In this way, thanks to the erosion of quaternary ice and subsequent rivers formed, there are, among others, the Los Beyos gorge and the Cares gorge, two of the most spectacular gorges in Spain."
+    },
+    {
+      "id": "s5",
+      "name": "garganta del Cares",
+      "quote": "De esta manera, gracias a la erosión de los hielos cuaternarios y de los posteriores ríos formados se cuenta, entre otros, con el desfiladero de los Beyos y la garganta del Cares, dos de las hoces más espectaculares de España.",
+      "english": "In this way, thanks to the erosion of quaternary ice and subsequent rivers formed, there are, among others, the Los Beyos gorge and the Cares gorge, two of the most spectacular gorges in Spain."
+    },
+    {
+      "id": "s6",
+      "name": "monte Corona",
+      "quote": "En Posada de Valdeón está el monte Corona que es el único bosque autóctono de tilos de Europa.",
+      "english": "In Posada de Valdeón is Mount Corona, which is the only indigenous linden forest in Europe."
+    },
+    {
+      "id": "s7",
+      "name": "Fuente Dé",
+      "quote": "Existe un funicular que sube desde el enclave de Fuente Dé, a una altitud de 1070 m, hasta El Portal de Picos a 1823 m, donde se sitúa un mirador desde el que se pueden divisar las cumbres del macizo central al norte o de los urrielles de Picos de Europa.",
+      "english": "There is a funicular that goes up from the enclave of Fuente Dé, at an altitude of 1070 m, to El Portal de Picos at 1823 m, where a viewpoint is located from which the peaks of the central massif to the north or the Urrielles of Picos de Europa can be seen."
+    },
+    {
+      "id": "s8",
+      "name": "El Portal de Picos",
+      "quote": "Existe un funicular que sube desde el enclave de Fuente Dé, a una altitud de 1070 m, hasta El Portal de Picos a 1823 m, donde se sitúa un mirador desde el que se pueden divisar las cumbres del macizo central al norte o de los urrielles de Picos de Europa.",
+      "english": "There is a funicular that goes up from the enclave of Fuente Dé, at an altitude of 1070 m, to El Portal de Picos at 1823 m, where a viewpoint is located from which the peaks of the central massif to the north or the Urrielles of Picos de Europa can be seen."
+    },
+    {
+      "id": "s9",
+      "name": "refugio Verónica",
+      "quote": "Desde la cumbre se pueden iniciar rutas senderistas de ida y vuelta hasta el refugio Verónica al oeste o circular al este, en bajada, de vuelta a Fuente Dé, pasando por el Chalet Real (1738 m), cuyo nombre hace referencia a Alfonso XIII, el primero en estrenarla, y el refugio Áliva (1660 m).",
+      "english": "From the summit you can start round-trip hiking routes to the Verónica refuge to the west or a circular route to the east, downhill, back to Fuente Dé, passing by the Chalet Real (1738 m), whose name refers to Alfonso XIII, the first to use it, and the Áliva refuge (1660 m)."
+    },
+    {
+      "id": "s10",
+      "name": "refugio Áliva",
+      "quote": "Desde la cumbre se pueden iniciar rutas senderistas de ida y vuelta hasta el refugio Verónica al oeste o circular al este, en bajada, de vuelta a Fuente Dé, pasando por el Chalet Real (1738 m), cuyo nombre hace referencia a Alfonso XIII, el primero en estrenarla, y el refugio Áliva (1660 m).",
+      "english": "From the summit you can start round-trip hiking routes to the Verónica refuge to the west or a circular route to the east, downhill, back to Fuente Dé, passing by the Chalet Real (1738 m), whose name refers to Alfonso XIII, the first to use it, and the Áliva refuge (1660 m)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Gorges and High Peaks",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Valdeón Enclaves and Forests",
+      "stop_ids": [
+        "s3",
+        "s6",
+        "s2"
+      ]
+    },
+    {
+      "title": "Fuente Dé Heights and Refuges",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9",
+        "s10"
+      ]
+    }
+  ],
+  "_text_sha": "59c1c6511af5be0257b1224bd90aad03aa283da84851e7e4ee4a95fd782cac71"
+}

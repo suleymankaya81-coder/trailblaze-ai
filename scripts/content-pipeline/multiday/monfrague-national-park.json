@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "río Tajo",
+      "quote": "Atraviesan el parque dos ríos, el Tajo y el Tiétar.",
+      "english": "Two rivers cross the park, the Tagus and the Tiétar."
+    },
+    {
+      "id": "s2",
+      "name": "río Tiétar",
+      "quote": "Atraviesan el parque dos ríos, el Tajo y el Tiétar.",
+      "english": "Two rivers cross the park, the Tagus and the Tiétar."
+    },
+    {
+      "id": "s3",
+      "name": "castillo",
+      "quote": "En la pequeña ermita, junto al castillo, se guarda la talla de la Virgen de Monfragüe, del siglo XVII-XVIII, imagen traída de Palestina por los caballeros de la Orden de Santiago.",
+      "english": "In the small chapel, next to the castle, the carving of the Virgin of Monfragüe is kept, from the 17th-18th century, an image brought from Palestine by the knights of the Order of Santiago."
+    },
+    {
+      "id": "s4",
+      "name": "ermita",
+      "quote": "En la pequeña ermita, junto al castillo, se guarda la talla de la Virgen de Monfragüe, del siglo XVII-XVIII, imagen traída de Palestina por los caballeros de la Orden de Santiago.",
+      "english": "In the small chapel, next to the castle, the carving of the Virgin of Monfragüe is kept, from the 17th-18th century, an image brought from Palestine by the knights of the Order of Santiago."
+    },
+    {
+      "id": "s5",
+      "name": "bosque y matorral mediterráneo",
+      "quote": "Predominan tres hábitats principales: el bosque y matorral mediterráneo, las dehesas, los roquedos y las masas de agua (ríos y embalses).",
+      "english": "Three main habitats predominate: the Mediterranean forest and scrubland, the dehesas, the rocky outcrops, and the bodies of water (rivers and reservoirs)."
+    },
+    {
+      "id": "s6",
+      "name": "dehesas",
+      "quote": "Predominan tres hábitats principales: el bosque y matorral mediterráneo, las dehesas, los roquedos y las masas de agua (ríos y embalses).",
+      "english": "Three main habitats predominate: the Mediterranean forest and scrubland, the dehesas, the rocky outcrops, and the bodies of water (rivers and reservoirs)."
+    },
+    {
+      "id": "s7",
+      "name": "roquedos",
+      "quote": "Predominan tres hábitats principales: el bosque y matorral mediterráneo, las dehesas, los roquedos y las masas de agua (ríos y embalses).",
+      "english": "Three main habitats predominate: the Mediterranean forest and scrubland, the dehesas, the rocky outcrops, and the bodies of water (rivers and reservoirs)."
+    },
+    {
+      "id": "s8",
+      "name": "embalses",
+      "quote": "Predominan tres hábitats principales: el bosque y matorral mediterráneo, las dehesas, los roquedos y las masas de agua (ríos y embalses).",
+      "english": "Three main habitats predominate: the Mediterranean forest and scrubland, the dehesas, the rocky outcrops, and the bodies of water (rivers and reservoirs)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Rivers and Landscapes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s8"
+      ]
+    },
+    {
+      "title": "Castles and Chapels",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Mediterranean Habitats",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "782810ec6035d95f79b05f558e3205cd8a92cac958f019acbd6a08a755b933cf"
+}

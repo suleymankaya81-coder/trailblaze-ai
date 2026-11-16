@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "sierra de Jurés",
+      "quote": "Está ubicado en el sur de la provincia de Orense, y se extiende por la sierra de Jurés y el valle del Limia, en los municipios de Entrimo, Lovios y Muiños hasta la frontera con Portugal, donde limita con el parque nacional de Peneda-Gerez.",
+      "english": "It is located in the south of the province of Orense, and extends through the Jurés mountain range and the Limia valley, in the municipalities of Entrimo, Lovios and Muiños to the border with Portugal, where it borders the Peneda-Gerez National Park."
+    },
+    {
+      "id": "s2",
+      "name": "valle del Limia",
+      "quote": "Está ubicado en el sur de la provincia de Orense, y se extiende por la sierra de Jurés y el valle del Limia, en los municipios de Entrimo, Lovios y Muiños hasta la frontera con Portugal, donde limita con el parque nacional de Peneda-Gerez.",
+      "english": "It is located in the south of the province of Orense, and extends through the Jurés mountain range and the Limia valley, in the municipalities of Entrimo, Lovios and Muiños to the border with Portugal, where it borders the Peneda-Gerez National Park."
+    },
+    {
+      "id": "s3",
+      "name": "circos glaciares",
+      "quote": "Dentro de sus límites están los circos glaciares de menor altitud de la península.",
+      "english": "Within its limits are the lowest altitude glacial cirques on the peninsula."
+    },
+    {
+      "id": "s4",
+      "name": "Sierras Galaico-Miñotas",
+      "quote": "Gerês-Xurés es una Reserva de la Biosfera Transfronteriza situada entre España y Portugal que se ha establecido sobre la base de la continuidad biogeográfica de las Sierras Galaico-Miñotas y sus valles compartida por ambos países.",
+      "english": "Gerês-Xurés is a Transboundary Biosphere Reserve located between Spain and Portugal that has been established based on the biogeographical continuity of the Galaico-Miñotas mountain ranges and their valleys shared by both countries."
+    }
+  ],
+  "days": [
+    {
+      "title": "Mountains and Valleys of Xurés",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "6a7672a42cdc14829af278fa0db0d316cab3e17348540d4e2bd592f4f35940a2"
+}

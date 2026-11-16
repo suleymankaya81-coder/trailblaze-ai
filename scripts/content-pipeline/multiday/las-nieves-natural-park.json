@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Centro de Interpretación del Parque Natural de las Nieves y del Bosque de los Tilos",
+      "quote": "En el municipio de Los Sauces está situado el Centro de Interpretación del Parque Natural de las Nieves y del Bosque de los Tilos.",
+      "english": "The Interpretation Center of the Las Nieves Natural Park and the Los Tilos Forest is located in the municipality of Los Sauces."
+    },
+    {
+      "id": "s2",
+      "name": "Los Tilos",
+      "quote": "Dentro del parque se encuentran Los Tilos, declarado Reserva de la Biosfera por la Unesco en 1983; y Los Sables considerado Lugar de Importancia Comunitaria.",
+      "english": "Inside the park you can find Los Tilos, declared a Biosphere Reserve by Unesco in 1983; and Los Sables, considered a Site of Community Importance."
+    },
+    {
+      "id": "s3",
+      "name": "Los Sables",
+      "quote": "La Zona de Especial Conservación “Los Sables”, es un ambiente fragmentado, que ha sido protegido gracias al hábitat de Interés Prioritario “Brezales macaronésicos endémicos”, caracterizado por la comunidad fayal–brezal que crece en una zona de barrancos.",
+      "english": "The Special Area of Conservation “Los Sables” is a fragmented environment, which has been protected thanks to the Priority Interest habitat “Endemic Macaronesian heaths”, characterized by the faya-heath community that grows in an area of ravines."
+    },
+    {
+      "id": "s4",
+      "name": "manantiales de Marcos y Cordero",
+      "quote": "A lo largo de este cauce, afloran numerosos nacientes como los manantiales de Marcos y Cordero, de los más importantes de Canarias.",
+      "english": "Along this riverbed, numerous springs emerge such as the Marcos and Cordero springs, among the most important in the Canary Islands."
+    },
+    {
+      "id": "s5",
+      "name": "sector meridional",
+      "quote": "De la misma manera, el sector meridional incluye un pinar endémico de pino canario en buen estado de conservación, con especies amenazadas y protegidas como el retamón (Genista benehoavensis) o el cabezón (Cheirolophus abreui).",
+      "english": "Likewise, the southern sector includes an endemic Canary Island pine forest in a good state of conservation, with threatened and protected species such as the retamón or the cabezón."
+    },
+    {
+      "id": "s6",
+      "name": "barranco",
+      "quote": "La actividad erosiva desarrolló un profundo barranco, con paredes casi verticales incidiendo incluso en el complejo basal (materiales más antiguos de la isla).",
+      "english": "Erosive activity developed a deep ravine, with almost vertical walls cutting even into the basal complex (the oldest materials on the island)."
+    },
+    {
+      "id": "s7",
+      "name": "pinar endémico de pino canario",
+      "quote": "De la misma manera, el sector meridional incluye un pinar endémico de pino canario en buen estado de conservación, con especies amenazadas y protegidas como el retamón (Genista benehoavensis) o el cabezón (Cheirolophus abreui).",
+      "english": "In the same way, the southern sector includes an endemic Canary Island pine forest in a good state of conservation, with threatened and protected species such as the retamón or the cabezón."
+    }
+  ],
+  "days": [
+    {
+      "title": "Laurisilva Forest and Interpretation",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s6"
+      ]
+    },
+    {
+      "title": "Springs and Pine Forests",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s7"
+      ]
+    },
+    {
+      "title": "Special Conservation Zones",
+      "stop_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "_text_sha": "a57074cea9b2a67b2821c0c6b5714c88125aba5c6eb56fd6c03685994d5f5a70"
+}

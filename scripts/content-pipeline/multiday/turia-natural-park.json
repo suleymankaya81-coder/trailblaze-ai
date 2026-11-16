@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Poblado de la Loma de Betxí",
+      "quote": "Entre ellos destacan yacimientos de la edad de Bronce (Poblado de la Loma de Betxí); los restos de un gran acueducto de época romana; y de época visigoda (castro fortificado de Valencia la Vella) podemos encontrar formaciones jurásica y miocenas, y una gran infraestructura arquitectónica (como azudes, acequias, acueductos y embalses) utilizada para aprovechar el agua del río Turia con fines agrícolas.",
+      "english": "Among them, Bronze Age sites (Poblado de la Loma de Betxí) stand out; the remains of a large Roman-era aqueduct; and from the Visigothic era (fortified settlement of Valencia la Vella) we can find Jurassic and Miocene formations, and a large architectural infrastructure (such as weirs, irrigation ditches, aqueducts, and reservoirs) used to harness the water of the Turia River for agricultural purposes."
+    },
+    {
+      "id": "s2",
+      "name": "Valencia la Vella",
+      "quote": "Entre ellos destacan yacimientos de la edad de Bronce (Poblado de la Loma de Betxí); los restos de un gran acueducto de época romana; y de época visigoda (castro fortificado de Valencia la Vella) podemos encontrar formaciones jurásica y miocenas, y una gran infraestructura arquitectónica (como azudes, acequias, acueductos y embalses) utilizada para aprovechar el agua del río Turia con fines agrícolas.",
+      "english": "Among them, Bronze Age sites (Poblado de la Loma de Betxí) stand out; the remains of a large Roman-era aqueduct; and from the Visigothic era (fortified settlement of Valencia la Vella) we can find Jurassic and Miocene formations, and a large architectural infrastructure (such as weirs, irrigation ditches, aqueducts, and reservoirs) used to harness the water of the Turia River for agricultural purposes."
+    },
+    {
+      "id": "s3",
+      "name": "la Vallesa",
+      "quote": "Comprenderá tres masas boscosas -la Vallesa, Les Rodanes y La Pea- y las riberas del Turia.",
+      "english": "It will include three forested masses -la Vallesa, Les Rodanes and La Pea- and the banks of the Turia."
+    },
+    {
+      "id": "s4",
+      "name": "Les Rodanes",
+      "quote": "Los montes de Les Rodanes y de la Vallesa son las últimas lomas (elevación natural del terreno de poca altura) rodeadas de llanos, antes de llegar a las llanuras próximas a la desembocadura del río Turia.",
+      "english": "The mountains of Les Rodanes and la Vallesa are the last hills (natural elevation of the land of low height) surrounded by plains, before reaching the plains near the mouth of the Turia River."
+    },
+    {
+      "id": "s5",
+      "name": "La Pea",
+      "quote": "La orografía (o elevación) más abrupta se encuentra al oeste del Parque en los montes del Palmeral y de la Pea.",
+      "english": "The steepest orography (or elevation) is found to the west of the Park in the mountains of Palmeral and La Pea."
+    },
+    {
+      "id": "s6",
+      "name": "montes del Palmeral",
+      "quote": "La orografía (o elevación) más abrupta se encuentra al oeste del Parque en los montes del Palmeral y de la Pea.",
+      "english": "The steepest orography (or elevation) is found to the west of the Park in the mountains of Palmeral and La Pea."
+    },
+    {
+      "id": "s7",
+      "name": "río Turia",
+      "quote": "El río Turia-Guadalaviar y su ribera, de gran interés ecológico, bosques mediterráneos de pinar y matorral y la huerta valenciana de origen medieval son ambientes representativos de esta área natural.​",
+      "english": "The Turia-Guadalaviar River and its bank, of great ecological interest, Mediterranean pine and scrub forests and the Valencian orchard of medieval origin are representative environments of this natural area."
+    },
+    {
+      "id": "s8",
+      "name": "río Sot",
+      "quote": "Esta ampliación conecta con la parte sur de la sierra del Negrete y la parte baja del río Sot con el río Turia, quedando comunicado y conectado el Parque Natural de Chera-Sot de Chera con el eje fluvial alto y bajo Turia.​",
+      "english": "This extension connects with the southern part of the Sierra del Negrete and the lower part of the Sot River with the Turia River, leaving the Chera-Sot de Chera Natural Park communicated and connected with the upper and lower Turia fluvial axis."
+    }
+  ],
+  "days": [
+    {
+      "title": "Riverside and Ancient Settlements",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Eastern Hills and Forests",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Western Peaks and Connected Valleys",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "5168769ecc64ff68b49bb1bc26a83359be23a3d32130abeb5aaa6b3089d0357e"
+}

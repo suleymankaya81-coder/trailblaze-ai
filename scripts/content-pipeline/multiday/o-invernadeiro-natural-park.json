@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "río Ribeira Grande",
+      "quote": "Es un paisaje de carácter montañoso situado al sur del macizo Central, en la provincia de Orense, entre los ríos Ribeira Grande y Ribeira Pequeña, y formado por la sierra de San Mamede, Queixa, Manzaneda y el Fial das Corzas, que constituyen el macizo Central orensano, con altitudes de alrededor de 1000-1600 m, situadas en el término municipal de Vilariño de Conso.",
+      "english": "It is a mountainous landscape located south of the Central Massif, in the province of Ourense, between the Ribeira Grande and Ribeira Pequeña rivers, and formed by the San Mamede, Queixa, Manzaneda, and Fial das Corzas mountain ranges, which constitute the Ourense Central Massif, with altitudes around 1000-1600 m, located in the municipality of Vilariño de Conso."
+    },
+    {
+      "id": "s2",
+      "name": "río Ribeira Pequeña",
+      "quote": "Es un paisaje de carácter montañoso situado al sur del macizo Central, en la provincia de Orense, entre los ríos Ribeira Grande y EIRibeira Pequeña, y formado por la sierra de San Mamede, Queixa, Manzaneda y el Fial das Corzas, que constituyen el macizo Central orensano, con altitudes de alrededor de 1000-1600 m, situadas en el término municipal de Vilariño de Conso.",
+      "english": "It is a mountainous landscape located south of the Central Massif, in the province of Ourense, between the Ribeira Grande and Ribeira Pequeña rivers, and formed by the San Mamede, Queixa, Manzaneda, and Fial das Corzas mountain ranges, which constitute the Ourense Central Massif, with altitudes around 1000-1600 m, located in the municipality of Vilariño de Conso."
+    },
+    {
+      "id": "s3",
+      "name": "sierra de Queixa",
+      "quote": "La sierra de Queixa funciona como un importante núcleo de dispersión hidrográfica.",
+      "english": "The Queixa mountain range functions as an important core of hydrographic dispersion."
+    },
+    {
+      "id": "s4",
+      "name": "Fial das Corzas",
+      "quote": "Es un paisaje de carácter montañoso situado al sur del macizo Central, en la provincia de Orense, entre los ríos Ribeira Grande y Ribeira Pequeña, y formado por la sierra de San Mamede, Queixa, Manzaneda y el Fial das Corzas, que constituyen el macizo Central orensano, con altitudes de alrededor de 1000-1600 m, situadas en el término municipal de Vilariño de Conso.",
+      "english": "It is a mountainous landscape located south of the Central Massif, in the province of Ourense, between the Ribeira Grande and Ribeira Pequeña rivers, and formed by the San Mamede, Queixa, Manzaneda, and Fial das Corzas mountain ranges, which constitute the Ourense Central Massif, with altitudes around 1000-1600 m, located in the municipality of Vilariño de Conso."
+    },
+    {
+      "id": "s5",
+      "name": "arroyo Cabadoiro",
+      "quote": "De aquella época quedan topónimos como el arroyo Cabadoiro.",
+      "english": "From that era, toponyms like the Cabadoiro stream remain."
+    },
+    {
+      "id": "s6",
+      "name": "Castelo de Cerveira",
+      "quote": "Los restos arqueológicos de la zona reflejan una civilización antigua con indicios de la existencia de dolmenes, castros, y restos romanos (como la presencia de un antiguo campamento romano en Castelo de Cerveira, cerca del parque).",
+      "english": "The archaeological remains of the area reflect an ancient civilization with evidence of the existence of dolmens, hillforts, and Roman remains (such as the presence of an ancient Roman camp in Castelo de Cerveira, near the park)."
+    },
+    {
+      "id": "s7",
+      "name": "aula de la naturaleza",
+      "quote": "Aunque no está permitido pernoctar, existe un aula de la naturaleza que dispone de cuatro dormitorios, dos con 28 literas y dos con una litera y los servicios.",
+      "english": "Although overnight stays are not allowed, there is a nature classroom that has four bedrooms, two with 28 bunks and two with one bunk and services."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Massif Rivers and Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Historical Remains and Visitor Education",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "0deae882e1c5bfc568bb7c288234a17b3eca47a926fab3b4a23b1f64708c5d0e"
+}

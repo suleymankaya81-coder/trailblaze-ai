@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Chinobre",
+      "quote": "Los elementos geomorfológicos encuentran una óptima y variada expresión en Anaga, algunos altamente representativos de la geología insular y de excepcional singularidad e interés científico (pitones de Chinobre, Anambro, arco de Taganana, Roques de Anaga, etc.).",
+      "english": "The geomorphological elements find an optimal and varied expression in Anaga, some highly representative of the island's geology and of exceptional singularity and scientific interest (peaks of Chinobre, Anambro, Taganana arch, Roques de Anaga, etc.)."
+    },
+    {
+      "id": "s2",
+      "name": "Anambro",
+      "quote": "Los elementos geomorfológicos encuentran una óptima y variada expresión en Anaga, algunos altamente representativos de la geología insular y de excepcional singularidad e interés científico (pitones de Chinobre, Anambro, arco de Taganana, Roques de Anaga, etc.).",
+      "english": "The geomorphological elements find an optimal and varied expression in Anaga, some highly representative of the island's geology and of exceptional singularity and scientific interest (peaks of Chinobre, Anambro, Taganana arch, Roques de Anaga, etc.)."
+    },
+    {
+      "id": "s3",
+      "name": "Taganana",
+      "quote": "La población se encuentra diseminada en pequeños caseríos (El Batán, Chinamada, Bejía y Las Carboneras, pertenecientes al municipio de La Laguna; y Taborno, Chamorga, Afur, Casas de La Cumbre, Roque Negro, Catalanes, Valle Crispín, Valle Grande, Valle Brosque, Lomo de Las Bodegas, La Cumbrilla, Taganana, Almáciga, San Andrés, Igueste de San Andrés, El Suculum, El Draguillo y Benijo, que pertenecen a Santa Cruz de Tenerife).",
+      "english": "The population is scattered in small hamlets (El Batán, Chinamada, Bejía and Las Carboneras, belonging to the municipality of La Laguna; and Taborno, Chamorga, Afur, Casas de La Cumbre, Roque Negro, Catalanes, Valle Crispín, Valle Grande, Valle Brosque, Lomo de Las Bodegas, La Cumbrilla, Taganana, Almáciga, San Andrés, Igueste de San Andrés, El Suculum, El Draguillo and Benijo, which belong to Santa Cruz de Tenerife)."
+    },
+    {
+      "id": "s4",
+      "name": "Roques de Anaga",
+      "quote": "Contiene en su interior las Reservas Naturales Integrales de El Pijaral, Ijuana y los Roques de Anaga.",
+      "english": "It contains within it the Integral Natural Reserves of El Pijaral, Ijuana and the Roques de Anaga."
+    },
+    {
+      "id": "s5",
+      "name": "Cruz del Carmen",
+      "quote": "En la Cruz del Carmen se encuentra un centro de visitantes con información sobre el parque así como rutas por los senderos que discurren por el mismo.",
+      "english": "In Cruz del Carmen there is a visitor center with information about the park as well as routes along the trails that run through it."
+    },
+    {
+      "id": "s6",
+      "name": "El Pijaral",
+      "quote": "Contiene en su interior las Reservas Naturales Integrales de El Pijaral, Ijuana y los Roques de Anaga.",
+      "english": "It contains within it the Integral Natural Reserves of El Pijaral, Ijuana and the Roques de Anaga."
+    },
+    {
+      "id": "s7",
+      "name": "Ijuana",
+      "quote": "Contiene en su interior las Reservas Naturales Integrales de El Pijaral, Ijuana y los Roques de Anaga.",
+      "english": "It contains within it the Integral Natural Reserves of El Pijaral, Ijuana and the Roques de Anaga."
+    },
+    {
+      "id": "s8",
+      "name": "Chinamada",
+      "quote": "La población se encuentra diseminada en pequeños caseríos (El Batán, Chinamada, Bejía y Las Carboneras, pertenecientes al municipio de La Laguna; y Taborno, Chamorga, Afur, Casas de La Cumbre, Roque Negro, Catalanes, Valle Crispín, Valle Grande, Valle Brosque, Lomo de Las Bodegas, La Cumbrilla, Taganana, Almáciga, San Andrés, Igueste de San Andrés, El Suculum, El Draguillo y Benijo, que pertenecen a Santa Cruz de Tenerife).",
+      "english": "The population is scattered in small hamlets (El Batán, Chinamada, Bejía and Las Carboneras, belonging to the municipality of La Laguna; and Taborno, Chamorga, Afur, Casas de La Cumbre, Roque Negro, Catalanes, Valle Crispín, Valle Grande, Valle Brosque, Lomo de Las Bodegas, La Cumbrilla, Taganana, Almáciga, San Andrés, Igueste de San Andrés, El Suculum, El Draguillo and Benijo, which belong to Santa Cruz de Tenerife)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Peaks and Visitor Hub",
+      "stop_ids": [
+        "s5",
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Northern Reserves and Hamlets",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Coastal Roques and Taganana",
+      "stop_ids": [
+        "s4",
+        "s3"
+      ]
+    }
+  ],
+  "_text_sha": "81a329e10180cdd70123544bf23bf912fe24f32119bdf4e25cdde0713522dd6f"
+}

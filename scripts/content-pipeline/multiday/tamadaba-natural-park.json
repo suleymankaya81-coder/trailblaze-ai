@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "riscos de Guayedra",
+      "quote": "En los riscos de Guayedra se encuentran varias especies amenazadas, algunas de las cuales son exclusivas de este lugar.",
+      "english": "In the Guayedra cliffs, several threatened species are found, some of which are exclusive to this place."
+    },
+    {
+      "id": "s2",
+      "name": "valle de Guayedra",
+      "quote": "Desde un punto de vista cultural, también destacan algunos caseríos aislados, y la importancia arqueológica de zonas como El Risco y el valle de Guayedra.",
+      "english": "From a cultural point of view, some isolated hamlets also stand out, along with the archaeological importance of areas such as El Risco and the Guayedra valley."
+    },
+    {
+      "id": "s3",
+      "name": "El Risco",
+      "quote": "Este espacio ha sido declarado zona de especial protección para las aves.",
+      "english": "This space has been declared a special protection area for birds."
+    },
+    {
+      "id": "s4",
+      "name": "lomo de Faneque",
+      "quote": "Este pinar húmedo, único en el archipiélago, aparece en el área delimitada por el lomo de Faneque, el pico de Tamadaba y el lomo de La Cañada de Cho Marco.",
+      "english": "This humid pine forest, unique in the archipelago, appears in the area delimited by the Faneque ridge, the Tamadaba peak and the La Cañada de Cho Marco ridge."
+    },
+    {
+      "id": "s5",
+      "name": "pico de Tamadaba",
+      "quote": "Este pinar húmedo, único en el archipiélago, aparece en el área delimitada por el lomo de Faneque, el pico de Tamadaba y el lomo de La Cañada de Cho Marco.",
+      "english": "This humid pine forest, unique in the archipelago, appears in the area delimited by the Faneque ridge, the Tamadaba peak and the La Cañada de Cho Marco ridge."
+    },
+    {
+      "id": "s6",
+      "name": "lomo de La Cañada de Cho Marco",
+      "quote": "Este pinar húmedo, único en el archipiélago, aparece en el área delimitada por el lomo de Faneque, el pico de Tamadaba y el lomo de La Cañada de Cho Marco.",
+      "english": "This humid pine forest, unique in the archipelago, appears in the area delimited by the Faneque ridge, the Tamadaba peak and the La Cañada de Cho Marco ridge."
+    },
+    {
+      "id": "s7",
+      "name": "punta de las Arenas",
+      "quote": "Allí donde aparecen playas litorales, especialmente en la Estancia del Manso y en la punta de las Arenas, estas están formadas por dunas móviles que no llegan a estabilizarse por acción del viento y la arena depositada penetra varios metros al interior.",
+      "english": "Where coastal beaches appear, especially in Estancia del Manso and at punta de las Arenas, these are formed by mobile dunes that do not manage to stabilize due to wind action and the deposited sand penetrates several meters inland."
+    },
+    {
+      "id": "s8",
+      "name": "Estancia del Manso",
+      "quote": "Allí donde aparecen playas litorales, especialmente en la Estancia del Manso y en la punta de las Arenas, estas están formadas por dunas móviles que no llegan a estabilizarse por acción del viento y la arena depositada penetra varios metros al interior.",
+      "english": "Where coastal beaches appear, especially in Estancia del Manso and at punta de las Arenas, these are formed by mobile dunes that do not manage to stabilize due to wind action and the deposited sand penetrates several meters inland."
+    }
+  ],
+  "days": [
+    {
+      "title": "Valleys and Cultural Heritage of Guayedra and El Risco",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "High Ridges and Humid Pine Forests",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Coastal Dunes and Sandy Points",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "fcbf3d854caa2a8bb365ff80dccf2a72edfa1010aa47f298e70560cb52182e2a"
+}

@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "río Guadiana",
+      "quote": "El humedal se forma en la confluencia del río Guadiana y su afluente Cigüela y es uno de los ecosistemas acuáticos más importantes de la península ibérica por la variedad y calidad de la fauna y flora que habitan en ella, así como por aquellas aves que la emplean en los pasos migratorios.",
+      "english": "The wetland is formed at the confluence of the Guadiana river and its tributary Cigüela and is one of the most important aquatic ecosystems in the Iberian Peninsula due to the variety and quality of the fauna and flora that inhabit it, as well as for the birds that use it in migratory passages."
+    },
+    {
+      "id": "s2",
+      "name": "río Cigüela",
+      "quote": "Ya en 1325 el infante Don Juan Manuel en su Libro de la caza pone de manifiesto las cualidades de las orillas del río Cigüela para la cetrería.",
+      "english": "As early as 1325, the infant Don Juan Manuel in his Book of the Hunt highlights the qualities of the banks of the Cigüela river for falconry."
+    },
+    {
+      "id": "s3",
+      "name": "zona de restauración",
+      "quote": "La zona oeste del parque —hoy denominada zona de restauración— fue roturada, desecada y puesta en cultivo, al tiempo que la maquinaria pesada se iba adentrando en el corazón del humedal desde el suroeste (cauce del Guadiana) y por el noreste (Gigüela, Guadiana-Azuer), excavando profundos canales rectilíneos en los lechos meandriformes de los ríos.",
+      "english": "The western area of the park —today called the restoration zone— was plowed, drained, and put into cultivation, while heavy machinery moved into the heart of the wetland from the southwest (Guadiana riverbed) and northeast (Gigüela, Guadiana-Azuer), digging deep rectilinear channels in the meandering beds of the rivers."
+    },
+    {
+      "id": "s4",
+      "name": "Ojos del Guadiana",
+      "quote": "Sin embargo, la desecación de estas zonas húmedas en las márgenes de estos ríos tuvo una nefasta consecuencia para toda la zona: la amenaza de la desecación definitiva planeaba sobre lugares tan característicos aguas abajo como los Ojos del Guadiana o las propias Tablas.",
+      "english": "However, the drying of these humid zones on the banks of these rivers had a disastrous consequence for the entire area: the threat of permanent drying loomed over such characteristic places downstream as the Ojos del Guadiana or the Tablas themselves."
+    },
+    {
+      "id": "s5",
+      "name": "río Azuer",
+      "quote": "En su estado original e inalterado, buena parte de los aportes hídricos a las Tablas provenían del río Guadiana, que era en realidad la suma de dos corrientes: las aguas del río Azuer (primer afluente del Guadiana por su margen izquierda) más las procedentes de las surgencias denominadas Ojos del Guadiana, situadas a 14 km del parque en dirección este.",
+      "english": "In its original and unaltered state, a good part of the water contributions to the Tablas came from the Guadiana river, which was actually the sum of two currents: the waters of the Azuer river (the first tributary of the Guadiana on its left bank) plus those coming from the springs called Ojos del Guadiana, located 14 km from the park in an easterly direction."
+    },
+    {
+      "id": "s6",
+      "name": "molino de Zuacorta",
+      "quote": "Se contabilizaban numerosas surgencias u ojos, situados en un tramo de aproximadamente 5 km sobre el valle de la denominada Cañada del Lencero—desde el actual cruce con la N-430 hasta 1 km aguas abajo del molino de Zuacorta— con un caudal conjunto entre 8 y 9 m³/s que fluían de forma constante durante todo el año, ya que su procedencia no era fluvial sino subterránea.",
+      "english": "Numerous springs or eyes were counted, located in a section of approximately 5 km over the valley of the so-called Cañada del Lencero—from the current intersection with the N-430 to 1 km downstream from the Zuacorta mill—with a combined flow between 8 and 9 m³/s that flowed constantly throughout the year, as their origin was not fluvial but underground."
+    },
+    {
+      "id": "s7",
+      "name": "Cañada del Lencero",
+      "quote": "Se contabilizaban numerosas surgencias u ojos, situados en un tramo de aproximadamente 5 km sobre el valle de la denominada Cañada del Lencero—desde el actual cruce con la N-430 hasta 1 km aguas abajo del molino de Zuacorta— con un caudal conjunto entre 8 y 9 m³/s que fluían de forma constante durante todo el año, ya que su procedencia no era fluvial sino subterránea.",
+      "english": "Numerous springs or eyes were counted, located in a stretch of approximately 5 km over the valley of the so-called Cañada del Lencero—from the current intersection with the N-430 to 1 km downstream of the Zuacorta mill—with a combined flow of between 8 and 9 m³/s that flowed constantly throughout the year, as their origin was not fluvial but underground."
+    }
+  ],
+  "days": [
+    {
+      "title": "Wetland Confluences and History",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Water Sources and Historical Landmarks",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Springs and Valley Trails",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "561efb48e65f3524cac101860c85a824a89c86d3d5a650a94f54ba8bc33b9975"
+}

@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Sierra de Urbasa",
+      "quote": "La sierra de Urbasa es en realidad una meseta, con una altura media de 1000 m, que se extiende hacia el sur en el llamado Monte de las Limitaciones de las Améscoas, del que solo se distingue por sus cogozantes.",
+      "english": "The Sierra de Urbasa is actually a plateau, with an average height of 1000 m, which extends to the south into what is called the Monte de las Limitaciones de las Améscoas, from which it is only distinguished by its markers."
+    },
+    {
+      "id": "s2",
+      "name": "Sierra de Andía",
+      "quote": "La sierra de Andía tiene una estructura geofísica más compleja, pues, además de la continuación hacia el este del sinclinal colgado que conforma Urbasa, en el norte presenta de este a oeste la Sierra de San Donato, un sinclinal enhiesto, separado del resto del Andía, por el anticlinal desventrado de Ergoyena.",
+      "english": "The Sierra de Andía has a more complex geophysical structure, because, in addition to the eastward continuation of the perched syncline that forms Urbasa, in the north it presents from east to west the Sierra de San Donato, an upright syncline separated from the rest of Andía by the gutted anticline of Ergoyena."
+    },
+    {
+      "id": "s3",
+      "name": "Nacedero del río Urederra",
+      "quote": "En la reserva natural pueden observarse cortinas de agua y pozas, rodeadas de una rica vegetación arbórea.",
+      "english": "In the natural reserve, water curtains and pools can be observed, surrounded by rich arboreal vegetation."
+    },
+    {
+      "id": "s4",
+      "name": "Beriáin",
+      "quote": "En esta sierra se encuentra la cumbre más alta: beriáin o San Donato, con 1493 ,m s. n. m.",
+      "english": "In this mountain range is the highest summit: Beriáin or San Donato, at 1493 m above sea level."
+    },
+    {
+      "id": "s5",
+      "name": "Palacio de Urbasa",
+      "quote": "En el raso de Urbasa se conserva el conocido como Palacio de Urbasa, construido en el siglo XVII por el marqués de Andía.",
+      "english": "In the plain of Urbasa, the building known as the Palace of Urbasa is preserved, built in the 17th century by the Marquis of Andía."
+    },
+    {
+      "id": "s6",
+      "name": "Ermita de San Donato y San Cayetano",
+      "quote": "En la sierra de San Donato se encuentra la ermita de San Donato y San Cayetano, hay constancia de su existencia y reconstrucción en 1797, habiendo sido restaurada en 1902 y 1958.",
+      "english": "In the Sierra de San Donato is the hermitage of San Donato and San Cayetano; there is evidence of its existence and reconstruction in 1797, having been restored in 1902 and 1958."
+    },
+    {
+      "id": "s7",
+      "name": "Falla de Zumbelz",
+      "quote": "Tanto al norte como al sur, tras una ligera elevación (hasta 1,181 m al norte, y 1014 m al sur) la meseta desciende abruptamente, hacia el corredor del Araquil al norte, y a la Amescoas al sur. Se trata de un sinclinal colgado que se continúa sin cambios geográficos hacia el oeste, en la Sierra de Encía, y que al este se separa de Andía por efecto de la falla de Zumbelz; siguiendo esta falla se sitúa un valle transversal que es recorrido por la carretera NA-120 de Estella a Beasáin, entrando en el corredor del Araquil por Lizarraga.",
+      "english": "Both to the north and south, after a slight elevation (up to 1,181 m to the north, and 1,014 m to the south) the plateau descends abruptly, towards the Araquil corridor to the north, and to the Améscoas to the south. It is a perched syncline that continues without geographical changes to the west, in the Sierra de Encía, and that to the east is separated from Andía by the effect of the Zumbelz fault; following this fault is a transverse valley traversed by the NA-120 road from Estella to Beasáin, entering the Araquil corridor through Lizarraga."
+    }
+  ],
+  "days": [
+    {
+      "title": "Plateaus and Palaces of Urbasa",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s7"
+      ]
+    },
+    {
+      "title": "Peaks and Heritage of Andía",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s6"
+      ]
+    },
+    {
+      "title": "Natural Springs of Urederra",
+      "stop_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "_text_sha": "a18183dffbffc08f2f761a89901be062d36e1d4213540b148a9826a4d4b5ecdf"
+}

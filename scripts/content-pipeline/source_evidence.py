@@ -33,13 +33,13 @@ def fetch_source(url):
 
 def allows_wikipedia_overview(packet):
     return (packet.get('evidence_policy') == 'dach-wikipedia-overview'
-            and packet.get('country_code') in ('de', 'at', 'ch', 'it')
+            and packet.get('country_code') in ('de', 'at', 'ch', 'it', 'es')
             and packet.get('identity_verified') is True)
 
 def overview_source(source, packet):
     host = urlparse(source.get('url', '')).hostname or ''
     return source.get('kind') == 'official' or (allows_wikipedia_overview(packet)
-        and ((source.get('kind') == 'wikipedia' and host in ('en.wikipedia.org', 'de.wikipedia.org', 'it.wikipedia.org'))
+        and ((source.get('kind') == 'wikipedia' and host in ('en.wikipedia.org', 'de.wikipedia.org', 'it.wikipedia.org', 'es.wikipedia.org'))
              or (source.get('kind') == 'wikivoyage' and host == 'en.wikivoyage.org')))
 
 def load_packet(slug):

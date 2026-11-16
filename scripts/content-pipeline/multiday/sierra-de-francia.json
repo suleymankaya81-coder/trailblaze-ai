@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "La Hastiala",
+      "quote": "El punto más alto de todo el conjunto montañoso es el pico de La Hastiala (1735 m s. n. m.), situado entre los términos municipales de Monsagro y El Maíllo, pero el más famoso es el de la Peña de Francia (1727 m s. n. m.), que se encuentra entre los términos de El Cabaco y Monsagro.",
+      "english": "The highest point of the entire mountain range is the peak of La Hastiala (1735 m a.s.l.), located between the municipalities of Monsagro and El Maíllo, but the most famous is that of Peña de Francia (1727 m a.s.l.), which is located between the terms of El Cabaco and Monsagro."
+    },
+    {
+      "id": "s2",
+      "name": "Peña de Francia",
+      "quote": "En su cima hay un santuario mariano, un repetidor de RTVE y un mirador.",
+      "english": "At its summit there is a Marian sanctuary, an RTVE repeater and a viewpoint."
+    },
+    {
+      "id": "s3",
+      "name": "Mesa del Francés",
+      "quote": "También son reseñables las cumbres de la Mesa del Francés (1638 m s. n. m.) y el Pico Robledo (1614 m s. n. m.).",
+      "english": "Also noteworthy are the summits of Mesa del Francés (1638 m a.s.l.) and Pico Robledo (1614 m a.s.l.)."
+    },
+    {
+      "id": "s4",
+      "name": "Pico Robledo",
+      "quote": "También son reseñables las cumbres de la Mesa del Francés (1638 m s. n. m.) y el Pico Robledo (1614 m s. n. m.).",
+      "english": "Also noteworthy are the summits of Mesa del Francés (1638 m a.s.l.) and Pico Robledo (1614 m a.s.l.)."
+    },
+    {
+      "id": "s5",
+      "name": "valle de Las Batuecas",
+      "quote": "La sierra de Francia es atravesada por varios cursos fluviales que producen numerosas cascadas, como la del Chorro, en el valle de Las Batuecas.",
+      "english": "The Sierra de Francia is crossed by several river courses that produce numerous waterfalls, such as that of Chorro, in the Las Batuecas valley."
+    },
+    {
+      "id": "s6",
+      "name": "la del Chorro",
+      "quote": "La sierra de Francia es atravesada por varios cursos fluviales que producen numerosas cascadas, como la del Chorro, en el valle de Las Batuecas.",
+      "english": "The Sierra de Francia is crossed by several river courses that produce numerous waterfalls, such as that of Chorro, in the Las Batuecas valley."
+    },
+    {
+      "id": "s7",
+      "name": "río Alagón",
+      "quote": "El principal de todos ellos es el río Alagón, en el que desembocan el río Ladrillar, el río Francia y el río Quilamas.",
+      "english": "The main one of all of them is the Alagón River, into which the Ladrillar River, the Francia River and the Quilamas River flow."
+    },
+    {
+      "id": "s8",
+      "name": "río Francia",
+      "quote": "El principal de todos ellos es el río Alagón, en el que desembocan el río Ladrillar, el río Francia y el río Quilamas.",
+      "english": "The main one of all of them is the Alagón River, into which the Ladrillar River, the Francia River and the Quilamas River flow."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks of the Sierra",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Valleys and Rivers",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "d549a3b7230a228f693464171bf1fd0c53607b54f15eace7c8957fbcd4778442"
+}

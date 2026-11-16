@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Monte de las Cenizas",
+      "quote": "Aflora en el Monte de las Cenizas y continúa por la zona de Portmán.",
+      "english": "It surfaces at the Monte de las Cenizas and continues through the Portmán area."
+    },
+    {
+      "id": "s2",
+      "name": "Peña del Águila",
+      "quote": "El parque de Calblanque, Monte de las Cenizas y Peña del Águila se encuentra situado en el sector oriental de la Sierra minera de Cartagena-La Unión, cerca del Mar Menor y Cabo de Palos, entre los municipios de Cartagena y La Unión en la comunidad autónoma de Murcia en España.​​",
+      "english": "The Calblanque, Monte de las Cenizas and Peña del Águila park is located in the eastern sector of the Cartagena-La Unión mining mountain range, near the Mar Menor and Cabo de Palos, between the municipalities of Cartagena and La Unión in the autonomous community of Murcia in Spain."
+    },
+    {
+      "id": "s3",
+      "name": "Salinas de Rasall",
+      "quote": "El Humedal de las Salinas de Rasall o Calblanque se sitúa en la parte sur de la laguna y pertenece al parque de Calblanque, Monte de las Cenizas y Peña del Águila; la otra parte de las laderas pertenecen a la cuenca del mar Mediterráneo.",
+      "english": "The Wetlands of the Salinas de Rasall or Calblanque is located in the southern part of the lagoon and belongs to the Calblanque, Monte de las Cenizas and Peña del Águila park; the other part of the slopes belong to the Mediterranean Sea basin."
+    },
+    {
+      "id": "s4",
+      "name": "Cala Reona",
+      "quote": "Aflora en forma de rocas de aspecto pizarroso muy oscuro en la zona más oriental de la sierra, en el entorno de Calblanque, Cala Reona y Cabo de Palos.",
+      "english": "It surfaces in the form of very dark slate-like rocks in the easternmost area of the mountain range, in the surroundings of Calblanque, Cala Reona and Cabo de Palos."
+    },
+    {
+      "id": "s5",
+      "name": "Batería de Cenizas",
+      "quote": "Dentro del ámbito de protección del parque regional existen vestigios del pasado histórico como la Batería de Cenizas.",
+      "english": "Within the scope of protection of the regional park there are vestiges of the historical past such as the Batería de Cenizas."
+    },
+    {
+      "id": "s6",
+      "name": "Cala de las Mulas",
+      "quote": "Actualmente el complejo Manga Club, dentro del término de Los Belones, está ampliando sus instalaciones, y haciendo su fachada al mar aún más visible; creando un impacto visual negativo en la bahía de la cala de las Mulas y en la playa Larga de Calblanque.",
+      "english": "Currently the Manga Club complex, within the district of Los Belones, is expanding its facilities, making its facade to the sea even more visible; creating a negative visual impact in the bay of the Cala de las Mulas and in the Larga beach of Calblanque."
+    },
+    {
+      "id": "s7",
+      "name": "Playa Larga",
+      "quote": "Actualmente el complejo Manga Club está creando un impacto visual negativo en la bahía de la cala de las Mulas y en la playa Larga de Calblanque.",
+      "english": "Currently the Manga Club complex is creating a negative visual impact in the bay of the Cala de las Mulas and in the Larga beach of Calblanque."
+    }
+  ],
+  "days": [
+    {
+      "title": "Peaks and Coastal Coves",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s6"
+      ]
+    },
+    {
+      "title": "Wetlands and Sandy Shores",
+      "stop_ids": [
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "History and Heights",
+      "stop_ids": [
+        "s1",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "1f90f41d3dd17af829b0411501f9859725aad5c781c22f46281e7014cc034b80"
+}

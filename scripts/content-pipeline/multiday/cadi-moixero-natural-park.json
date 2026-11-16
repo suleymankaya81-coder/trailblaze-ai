@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "sierra del Cadí",
+      "quote": "La sierra del Cadí es una alineación montañosa situada en los Prepirineos, sierra paralela a los Pirineos, formada por un tipo de roca, calcárea, que provoca el relieve abrupto.",
+      "english": "The Cadí range is a mountain alignment located in the Pre-Pyrenees, a range parallel to the Pyrenees, formed by a type of rock, limestone, which causes the rugged relief."
+    },
+    {
+      "id": "s2",
+      "name": "Pedraforca",
+      "quote": "Dentro del parque natural se encuentra el Pedraforca, montaña de forma característica situado en la zona sur, y constituye uno de los símbolos del excursionismo en Cataluña.",
+      "english": "Within the natural park lies the Pedraforca, a mountain with a characteristic shape located in the southern area, and it constitutes one of the symbols of hiking in Catalonia."
+    },
+    {
+      "id": "s3",
+      "name": "Vulturó",
+      "quote": "Sus altitudes se sitúan entre los 900 metros en los valles y los 2648,6 metros del pico más alto, el Vulturó.",
+      "english": "Its altitudes range between 900 meters in the valleys and 2,648.6 meters at the highest peak, the Vulturó."
+    },
+    {
+      "id": "s4",
+      "name": "sierras del Cadí y del Moixeró",
+      "quote": "Las sierras del Cadí y del Moixeró unidas en el puerto de Tancalaporta (2357 m) forman una barrera de impresionante altura que separa el valle del Segre de la cabecera del río Llobregat.",
+      "english": "The Cadí and Moixeró ranges joined at the Tancalaporta pass (2357 m) form a barrier of impressive height that separates the Segre valley from the headwaters of the Llobregat river."
+    },
+    {
+      "id": "s5",
+      "name": "puerto de Tancalaporta",
+      "quote": "Las sierras del Cadí y del Moixeró unidas en el puerto de Tancalaporta (2357 m) forman una barrera de impresionante altura que separa el valle del Segre de la cabecera del río Llobregat.",
+      "english": "The Cadí and Moixeró ranges joined at the Tancalaporta pass (2357 m) form a barrier of impressive height that separates the Segre valley from the headwaters of the Llobregat river."
+    },
+    {
+      "id": "s6",
+      "name": "valle del Segre",
+      "quote": "Las sierras del Cadí y del Moixeró unidas en el puerto de Tancalaporta (2357 m) forman una barrera de impresionante altura que separa el valle del Segre de la cabecera del río Llobregat.",
+      "english": "The Cadí and Moixeró ranges joined at the Tancalaporta pass (2357 m) form a barrier of impressive height that separates the Segre valley from the headwaters of the Llobregat river."
+    },
+    {
+      "id": "s7",
+      "name": "río Llobregat",
+      "quote": "Las sierras del Cadí y del Moixeró unidas en el puerto de Tancalaporta (2357 m) forman una barrera de impresionante altura que separa el valle del Segre de la cabecera del río Llobregat.",
+      "english": "The Cadí and Moixeró ranges joined at the Tancalaporta pass (2357 m) form a barrier of impressive height that separates the Segre valley from the headwaters of the Llobregat river."
+    },
+    {
+      "id": "s8",
+      "name": "Bagá",
+      "quote": "Órgano rector: Junta Rectora del parc i Consell Directiu, con sede en el municipio de Bagá",
+      "english": "Governing body: Governing Board of the park and Directive Council, with headquarters in the municipality of Bagá"
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Peaks and the Segre Watershed",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "High Mountain Pass and River Valleys",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s7"
+      ]
+    },
+    {
+      "title": "Southern Sights and Park Headquarters",
+      "stop_ids": [
+        "s2",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "8725ac92cbbf3a9a7bf6069deae1299e22da195cb42687203c0ad40f27c4e44b"
+}

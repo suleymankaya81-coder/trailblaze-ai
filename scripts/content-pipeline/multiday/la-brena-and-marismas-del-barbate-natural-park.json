@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "pinar de la Breña",
+      "quote": "La mayor parte del parque está ocupada por el extenso pinar de la Breña, de pino piñonero (Pinus pinea), procedente de repoblación de finales del siglo XIX, con el objeto de frenar el avance de la duna de la playa de la Hierbabuena.",
+      "english": "Most of the park is occupied by the extensive Breña pine forest, of stone pine (Pinus pinea), coming from reforestation at the end of the 19th century, with the aim of slowing the advance of the dune at Hierbabuena beach."
+    },
+    {
+      "id": "s2",
+      "name": "playa de la Hierbabuena",
+      "quote": "La mayor parte del parque está ocupada por el extenso pinar de la Breña, de pino piñonero (Pinus pinea), procedente de repoblación de finales del siglo XIX, con el objeto de frenar el avance de la duna de la playa de la Hierbabuena.",
+      "english": "Most of the park is occupied by the extensive Breña pine forest, of stone pine (Pinus pinea), coming from reforestation at the end of the 19th century, with the aim of slowing the advance of the dune at Hierbabuena beach."
+    },
+    {
+      "id": "s3",
+      "name": "acantilado del Tajo",
+      "quote": "El acantilado del Tajo alcanza los 100 metros de altura sobre el mar en su punto más elevado, donde se encuentra la Torre del Tajo, una antigua torre de vigilancia del siglo XVI.",
+      "english": "The Tajo cliff reaches 100 meters in height above the sea at its highest point, where the Tajo Tower, an ancient 16th-century watchtower, is located."
+    },
+    {
+      "id": "s4",
+      "name": "Torre del Tajo",
+      "quote": "El acantilado del Tajo alcanza los 100 metros de altura sobre el mar en su punto más elevado, donde se encuentra la Torre del Tajo, una antigua torre de vigilancia del siglo XVI.",
+      "english": "The Tajo cliff reaches 100 meters in height above the sea at its highest point, where the Tajo Tower, an ancient 16th-century watchtower, is located."
+    },
+    {
+      "id": "s5",
+      "name": "marismas del río Barbate",
+      "quote": "Protege el pinar de la Breña, comprendido entre Los Caños de Meca y Barbate, junto al acantilado y la franja marítima que lo bordean, así como las marismas del río Barbate, que se extienden desde La Barca de Vejer hasta la desembocadura del río, bordeando las lomas de la sierra del Retín.",
+      "english": "It protects the Breña pine forest, comprised between Los Caños de Meca and Barbate, next to the cliff and the maritime strip that border it, as well as the Barbate river marshes, which extend from La Barca de Vejer to the mouth of the river, bordering the hills of the Retín mountain range."
+    },
+    {
+      "id": "s6",
+      "name": "Palomar de La Breña",
+      "quote": "Igualmente se están recuperando infraestructuras, como el Palomar de La Breña, el más grande de Europa.",
+      "english": "Infrastructure is also being recovered, such as the La Breña Dovecote, the largest in Europe."
+    },
+    {
+      "id": "s7",
+      "name": "Los Caños de Meca",
+      "quote": "El acantilado está formado básicamente por roca calcarenita con capas horizontales de margas arenosas impermeables, lo que provoca que los acuíferos del monte superior surjan en distintos puntos de la pared del acantilado, formando los famosos 'caños' que dan nombre a la localidad de Los Caños de Meca.",
+      "english": "The cliff is basically formed by calcarenite rock with horizontal layers of impermeable sandy marls, which causes the aquifers of the upper mountain to emerge at different points of the cliff wall, forming the famous 'spouts' that give the town of Los Caños de Meca its name."
+    }
+  ],
+  "days": [
+    {
+      "title": "Cliffs and Coastal Landscapes",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Pine Forests and Dunes",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Marshes and Historical Heritage",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "8785083fafd95bd2da527b4210a39a990c587dc90c99236a7e06447ea0c0de96"
+}

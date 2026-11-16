@@ -1,0 +1,54 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "peñón de Ifach",
+      "quote": "El parque está situado en un peñón aislado en la costa norte de la provincia de Alicante, constituyendo el peñón una de las últimas estribaciones de las cordilleras Béticas y alcanzando una altitud de 332 metros.",
+      "english": "The park is located on an isolated rock on the north coast of the province of Alicante, the rock constituting one of the last foothills of the Betic mountain ranges and reaching an altitude of 332 meters."
+    },
+    {
+      "id": "s2",
+      "name": "cima del peñón de Ifach",
+      "quote": "Existe una ruta de senderismo que lleva hasta la cima del peñón de Ifach.",
+      "english": "There is a hiking route that leads to the summit of the Peñón de Ifach."
+    },
+    {
+      "id": "s3",
+      "name": "vertiente septentrional",
+      "quote": "En las zonas altas de la vertiente septentrional se puede encontrar vegetación arbustiva, como el palmito, la sabina negra, el aladierno y la uva de mar, mientras que en las zonas inferiores de dicha ladera se encuentran el lentisco, el bayón, la madreselva, la esparraguera, el enebro, la rubia y el jazmín de monte.",
+      "english": "In the upper areas of the northern slope, shrubby vegetation can be found, such as heart of palm, black juniper, buckthorn and sea grape, while in the lower areas of said slope are found mastic, bayón, honeysuckle, asparagus, juniper, madder and mountain jasmine."
+    },
+    {
+      "id": "s4",
+      "name": "murallón meridional",
+      "quote": "Las rapaces y las abundantes gaviotas hacen sus nidos en los cantiles del soleado murallón meridional.",
+      "english": "Raptors and abundant seagulls make their nests on the cliffs of the sunny southern wall."
+    },
+    {
+      "id": "s5",
+      "name": "casas de la base del peñón",
+      "quote": "Asimismo, en la zona en torno a las casas de la base del peñón se desarrolla una vegetación nitrófila, propia de lugares muy antropizados sometidos a un elevado aporte de materia orgánica.",
+      "english": "Likewise, in the area around the houses at the base of the rock, nitrophilous vegetation develops, typical of highly anthropized places subject to a high contribution of organic matter."
+    },
+    {
+      "id": "s6",
+      "name": "senda de subida a la cima",
+      "quote": "A partir del año 2020, se ha establecido un cupo máximo de trescientas personas al día en la senda de subida a la cima.",
+      "english": "Starting in 2020, a maximum quota of three hundred people per day has been established on the path up to the summit."
+    }
+  ],
+  "days": [
+    {
+      "title": "Summit Trail and Slopes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "8e2bd3b8c917f07a239b495dc9e0f504e0b9a0c07cd62c3f381fb7d515d3b626"
+}

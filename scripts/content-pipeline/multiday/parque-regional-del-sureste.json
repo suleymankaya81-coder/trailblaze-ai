@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Cerros de la Marañosa",
+      "quote": "Uno de sus enclaves más emblemáticos son los Cerros de la Marañosa, cuya altura máxima es de 698 m.",
+      "english": "One of its most emblematic enclaves is the Cerros de la Marañosa, whose maximum height is 698 m."
+    },
+    {
+      "id": "s2",
+      "name": "Soto de las Juntas",
+      "quote": "El parque sigue en periodo de restauración (2006) en Soto de las Juntas, en una finca propiedad de la comunidad de Madrid de 82 ha en el término municipal de Rivas-Vaciamadrid que es zona degradada por la explotación en la extracción de áridos.",
+      "english": "The park is still in a restoration period (2006) in Soto de las Juntas, on an 82 ha estate owned by the Community of Madrid in the municipality of Rivas-Vaciamadrid, which is an area degraded by aggregate extraction mining."
+    },
+    {
+      "id": "s3",
+      "name": "Laguna del Soto de las Cuevas",
+      "quote": "Laguna del Soto de las Cuevas (Aranjuez)",
+      "english": "Soto de las Cuevas Lagoon (Aranjuez)"
+    },
+    {
+      "id": "s4",
+      "name": "Lagunas de las Madres",
+      "quote": "Lagunas de las Madres (Arganda del Rey)",
+      "english": "Las Madres Lagoons (Arganda del Rey)"
+    },
+    {
+      "id": "s5",
+      "name": "Lagunas de Ciempozuelos",
+      "quote": "Lagunas de Ciempozuelos (Ciempozuelos)",
+      "english": "Ciempozuelos Lagoons (Ciempozuelos)"
+    },
+    {
+      "id": "s6",
+      "name": "Laguna del Campillo",
+      "quote": "Laguna del Campillo (Rivas-Vaciamadrid)",
+      "english": "El Campillo Lagoon (Rivas-Vaciamadrid)"
+    },
+    {
+      "id": "s7",
+      "name": "Lagunas de Velilla",
+      "quote": "Lagunas de Velilla (Velilla de San Antonio)",
+      "english": "Velilla Lagoons (Velilla de San Antonio)"
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Peaks and Lagoons of Rivas",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s6"
+      ]
+    },
+    {
+      "title": "Eastern Water Bodies",
+      "stop_ids": [
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Southern Wetlands",
+      "stop_ids": [
+        "s3",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "2c707a4878b9e8830acc46627f6a59166b9cc3e202f55f80d486d3b75517b5ac"
+}

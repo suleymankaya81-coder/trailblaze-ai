@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "San Juan de Beleño",
+      "quote": "El pueblo de San Juan de Beleño también merece un paseo.",
+      "english": "The village of San Juan de Beleño also deserves a walk."
+    },
+    {
+      "id": "s2",
+      "name": "centro de interpretación de Ponga",
+      "quote": "El centro de interpretación de Ponga está actualmente concluido y abierto al público desde septiembre de 2010.",
+      "english": "The Ponga visitor centre is currently finished and open to the public since September 2010."
+    },
+    {
+      "id": "s3",
+      "name": "Tiatordos",
+      "quote": "El Tiatordos es impresionante.",
+      "english": "The Tiatordos is impressive."
+    },
+    {
+      "id": "s4",
+      "name": "bosque de Peloño",
+      "quote": "bosque de Peloño: ruta de gran belleza que va de Les Bedules al bosque de Peloño, en uno de los hayedos más bonitos de Asturias.",
+      "english": "Peloño forest: a route of great beauty that goes from Les Bedules to the Peloño forest, in one of the most beautiful beech forests in Asturias."
+    },
+    {
+      "id": "s5",
+      "name": "puerto de Ventaniella",
+      "quote": "al puerto de Ventaniella: desde Sobrefoz parte la subida al puerto de Ventaniella, que discurre al lado del río Ponga durante toda la ruta, pasando por La Venta y las casas de La Faeda hasta llegar al albergue y la ermita.",
+      "english": "to the Ventaniella pass: from Sobrefoz starts the climb to the Ventaniella pass, which runs alongside the Ponga river for the entire route, passing through La Venta and the houses of La Faeda until reaching the hostel and the chapel."
+    },
+    {
+      "id": "s6",
+      "name": "área recreativa de Las Mestas",
+      "quote": "área recreativa de Las Mestas, al inicio de la carretera a Taranes.",
+      "english": "Las Mestas recreational area, at the beginning of the road to Taranes."
+    },
+    {
+      "id": "s7",
+      "name": "Valle Moro",
+      "quote": "Valle Moro es una aldea perdida en los confines del concejo o municipio de Ponga.",
+      "english": "Valle Moro is a village lost in the ends of the council or municipality of Ponga."
+    },
+    {
+      "id": "s8",
+      "name": "picu Pierzu",
+      "quote": "excursión montañera al picu Pierzu: se inicia en la pista que sale desde la collada de la Llomera (entre San Juan y Viego) a la izquierda, hasta la majada de Excueño.",
+      "english": "mountain excursion to the Pierzu peak: it starts on the track that leaves from the Llomera pass (between San Juan and Viego) to the left, as far as the Excueño sheepfold."
+    },
+    {
+      "id": "s9",
+      "name": "mirador de la iglesia de Taranes",
+      "quote": "subida a Taranes pasando por Tanda, con buenas vistas desde el mirador de la iglesia de Taranes.",
+      "english": "climb to Taranes passing through Tanda, with good views from the Taranes church viewpoint."
+    },
+    {
+      "id": "s10",
+      "name": "senda del cartero",
+      "quote": "senda del cartero.",
+      "english": "postman's path."
+    }
+  ],
+  "days": [
+    {
+      "title": "Mountains and Village of San Juan",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s8"
+      ]
+    },
+    {
+      "title": "Forests and High Passes",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s10"
+      ]
+    },
+    {
+      "title": "Valleys and Riversides",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "76ceead31f7a9b41f0d4ce7f2f554099498a00e82531f665349b42950c5a896b"
+}

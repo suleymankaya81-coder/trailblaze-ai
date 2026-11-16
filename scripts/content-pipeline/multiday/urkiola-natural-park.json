@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "centro de interpretación",
+      "quote": "El puerto de montaña de Urquiola, que forma la carretera BI-623 que atraviesa el Parque por el paraje así denominado, es el corazón del mismo y en él se hallan el centro de interpretación y las instalaciones administrativas y formativas, así como el Santuario de Urquiola y algunos establecimientos hosteleros y de servicios.",
+      "english": "The Urquiola mountain pass, formed by the BI-623 road that crosses the Park through the area so named, is the heart of it, and in it are located the interpretation center and administrative and educational facilities, as well as the Sanctuary of Urquiola and some hotel and service establishments."
+    },
+    {
+      "id": "s2",
+      "name": "Santuario de los Santos Antonios Abad y de Padua",
+      "quote": "El Santuario de los Santos Antonios Abad y de Padua tomó el relevo de la devoción y espiritualidad del lugar siendo uno de los santuarios más apreciados por los fieles y la población del País Vasco.",
+      "english": "The Sanctuary of the Saints Anthony Abbot and of Padua took over the devotion and spirituality of the place, being one of the most appreciated sanctuaries by the faithful and the population of the Basque Country."
+    },
+    {
+      "id": "s3",
+      "name": "monte Amboto",
+      "quote": "La mayor altitud del parque natural es la cumbre del monte Amboto (1337 m s. n. m.).",
+      "english": "The highest altitude of the natural park is the summit of Mount Amboto (1337 m above sea level)."
+    },
+    {
+      "id": "s4",
+      "name": "desfiladero de Atxarte",
+      "quote": "Destaca los itinerarios de montaña que incluyen desde sencillos paseos hasta ascensiones con desniveles superiores a los 1000 metros de altitud y las vías de escalada ubicadas en las paredes que rodean el desfiladero de Atxarte.",
+      "english": "Mountain itineraries stand out, ranging from simple walks to climbs with elevation gains of over 1000 meters, as well as climbing routes located on the walls surrounding the Atxarte gorge."
+    },
+    {
+      "id": "s5",
+      "name": "Leungane",
+      "quote": "La sierra de Aramotz oscila entre los 789 m de Urtemondo y los 1008 m de Leungane; Ezkubaratz tiene en la cumbre de Arrietabaso su punto más alto con 1018 m.",
+      "english": "The Aramotz range fluctuates between 789 m at Urtemondo and 1008 m at Leungane; Ezkubaratz has its highest point at the summit of Arrietabaso at 1018 m."
+    },
+    {
+      "id": "s6",
+      "name": "Tellamendi",
+      "quote": "El cordal Amboto-Alluitz alcanza los 1331 m en la cima del primero y se rebaja en los 894 m de Tellamendi.",
+      "english": "The Amboto-Alluitz ridge reaches 1331 m at the peak of the former and drops to 894 m at Tellamendi."
+    },
+    {
+      "id": "s7",
+      "name": "Orisol",
+      "quote": "La sierra de Arangio, dispuesta ortogonalmente al eje Amboto-Alluitz, tiene su máxima altitud en la cumbre del Orisol con 1128 m.",
+      "english": "The Arangio range, arranged orthogonally to the Amboto-Alluitz axis, has its maximum altitude at the summit of Orisol at 1128 m."
+    },
+    {
+      "id": "s8",
+      "name": "ermita de San Martín",
+      "quote": "Desde este mojón se sigue la línea que separa Mañaria y Dima hasta la ermita de San Martín y rodea el monte Untzillaitz pasando por encima de la cantera llamada Muchate hasta llegar de nuevo a al línea divisoria entre Mañaria y Izurza que se sigue hasta llegar al término de Abadiño siguiendo la demarcación de este municipio hasta el mojón 1 que está en Untxillaitz.",
+      "english": "From this marker the line separating Mañaria and Dima is followed to the San Martín chapel and goes around Mount Untzillaitz passing above the quarry called Muchate until reaching again the dividing line between Mañaria and Izurza which is followed until reaching the Abadiño boundary following the demarcation of this municipality to marker 1 which is on Untxillaitz."
+    }
+  ],
+  "days": [
+    {
+      "title": "Mountain Peaks and Summits",
+      "stop_ids": [
+        "s3",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Spiritual Heart and Education",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Gorges and Chapels",
+      "stop_ids": [
+        "s4",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "7db16372c46771dd1e84e990487b82711c8974a576dcf332986438177c668db5"
+}

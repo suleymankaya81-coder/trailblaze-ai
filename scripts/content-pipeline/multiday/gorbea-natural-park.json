@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Gorbea",
+      "quote": "Toma su nombre de su cumbre más alta, el Gorbea (Gorbeia o Gorbeiagane en euskera), de 1481 metros de altitud.",
+      "english": "It takes its name from its highest peak, Gorbea (Gorbeia or Gorbeiagane in Basque), at 1481 meters of altitude."
+    },
+    {
+      "id": "s2",
+      "name": "Peña Aldamin",
+      "quote": "Otras cimas de interés son la Peña Aldamin de 1373 metros y las Peñas de Itxina.​",
+      "english": "Other peaks of interest are Peña Aldamin at 1373 meters and the Peñas de Itxina."
+    },
+    {
+      "id": "s3",
+      "name": "Ojo de Atxular",
+      "quote": "Las formaciones como el Ojo de Atxular o Atxular en el karst de Itxina y la cueva de Mairuelegorreta en Álava son los accidentes más reseñables.",
+      "english": "Formations such as the Ojo de Atxular or Atxular in the Itxina karst and the Mairuelegorreta cave in Álava are the most noteworthy features."
+    },
+    {
+      "id": "s4",
+      "name": "cueva de Mairuelegorreta",
+      "quote": "Existen 500 cavidades catalogadas en el parque, de las cuales la cueva de Mairuelegorreta y Supelegor​ son las más populares.",
+      "english": "There are 500 cataloged cavities in the park, of which the Mairuelegorreta and Supelegor caves are the most popular."
+    },
+    {
+      "id": "s5",
+      "name": "Supelegor",
+      "quote": "Destacan el Ojo de Atxular, la gran grieta central, la dolina de Axlaor y la cueva de Supelegor.",
+      "english": "The Ojo de Atxular, the great central crack, the Axlaor sinkhole and the Supelegor cave stand out."
+    },
+    {
+      "id": "s6",
+      "name": "Karst de Itxina",
+      "quote": "En el gran gran afloramiento de calizas del complejo Urgoniano se han producido diferentes fenómenos kársticos dando lugar al complejo conocido como Karst de Itxina.",
+      "english": "In the large limestone outcrop of the Urgonian complex, different karst phenomena have occurred, giving rise to the complex known as the Itxina Karst."
+    },
+    {
+      "id": "s7",
+      "name": "Cruz del Gorbea",
+      "quote": "La cumbre de la montaña está coronada por una cruz de 17 m de altura (la primera que se instaló tenía 33,33 m y la segunda 22 m) instalada a principios del siglo XX y que se ha convertido en un símbolo para todos los vascos llegando a formar parte de la cultura popular.",
+      "english": "The summit of the mountain is crowned by a 17 m high cross (the first one installed was 33.33 m and the second 22 m) installed at the beginning of the 20th century and which has become a symbol for all Basques, becoming part of popular culture."
+    },
+    {
+      "id": "s8",
+      "name": "Campas de Arraba",
+      "quote": "Encontramos diversos paisajes que merecen la pena visitar, pero los lugares más conocidos son los siguientes: Cruz del Gorbea, Karst de Itxina, Campas de Arraba, cueva de Mairuelegorreta, cascada de Gujuli y humedal de Saldropo.",
+      "english": "We find various landscapes worth visiting, but the best-known places are the following: Cruz del Gorbea, Karst de Itxina, Campas de Arraba, Mairuelegorreta cave, Gujuli waterfall and Saldropo wetland."
+    },
+    {
+      "id": "s9",
+      "name": "cascada de Gujuli",
+      "quote": "Encontramos diversos paisajes que merecen la pena visitar, pero los lugares más conocidos son los siguientes: Cruz del Gorbea, Karst de Itxina, Campas de Arraba, cueva de Mairuelegorreta, cascada de Gujuli y humedal de Saldropo.",
+      "english": "We find various landscapes worth visiting, but the best-known places are the following: Cruz del Gorbea, Karst de Itxina, Campas de Arraba, Mairuelegorreta cave, Gujuli waterfall and Saldropo wetland."
+    },
+    {
+      "id": "s10",
+      "name": "humedal de Saldropo",
+      "quote": "Encontramos diversos paisajes que merecen la pena visitar, pero los lugares más conocidos son los siguientes: Cruz del Gorbea, Karst de Itxina, Campas de Arraba, cueva de Mairuelegorreta, cascada de Gujuli y humedal de Saldropo.",
+      "english": "We find various landscapes worth visiting, but the best-known places are the following: Cruz del Gorbea, Karst de Itxina, Campas de Arraba, Mairuelegorreta cave, Gujuli waterfall and Saldropo wetland."
+    }
+  ],
+  "days": [
+    {
+      "title": "Peaks and Monuments of Gorbea",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s2"
+      ]
+    },
+    {
+      "title": "Karst Formations and Caves of Itxina",
+      "stop_ids": [
+        "s6",
+        "s3",
+        "s5",
+        "s8"
+      ]
+    },
+    {
+      "title": "Waterfalls, Wetlands and Hidden Caverns",
+      "stop_ids": [
+        "s4",
+        "s9",
+        "s10"
+      ]
+    }
+  ],
+  "_text_sha": "e2d74c05c6891f7e9fab776b24b5940e660728efde70305a5b7f50acb5c78059"
+}

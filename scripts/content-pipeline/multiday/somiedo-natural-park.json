@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Pola de Somiedo",
+      "quote": "El centro de interpretación y recepción de visitantes del parque natural de Somiedo está situado en Pola de Somiedo.",
+      "english": "The interpretation and visitor reception center of the Somiedo Natural Park is located in Pola de Somiedo."
+    },
+    {
+      "id": "s2",
+      "name": "Saliencia",
+      "quote": "Abundan los bosques de hayas, con zonas de gran importancia en Saliencia y Valle, robles, fresnos, arces y tilos.",
+      "english": "Beech forests abound, with areas of great importance in Saliencia and Valle, oaks, ashes, maples and lindens."
+    },
+    {
+      "id": "s3",
+      "name": "Valle",
+      "quote": "Abundan los bosques de hayas, con zonas de gran importancia en Saliencia y Valle, robles, fresnos, arces y tilos.",
+      "english": "Beech forests abound, with areas of great importance in Saliencia and Valle, oaks, ashes, maples and lindens."
+    },
+    {
+      "id": "s4",
+      "name": "lago Somiedo",
+      "quote": "A principios del siglo XX existían pinos silvestres autóctonos a orillas del lago Somiedo.",
+      "english": "At the beginning of the 20th century, there were native Scots pines on the shores of Lake Somiedo."
+    },
+    {
+      "id": "s5",
+      "name": "ruta del Cornon",
+      "quote": "Estas son algunas de las rutas que se pueden hacer por el parque: ruta del Cornon",
+      "english": "These are some of the routes that can be taken through the park: Cornon route"
+    },
+    {
+      "id": "s6",
+      "name": "ruta de la braña de Mumian",
+      "quote": "Estas son algunas de las rutas que se pueden hacer por el parque: ruta de la braña de Mumian",
+      "english": "These are some of the routes that can be taken through the park: Mumian braña route"
+    },
+    {
+      "id": "s7",
+      "name": "ruta de Castro",
+      "quote": "Estas son algunas de las rutas que se pueden hacer por el parque: ruta de Castro",
+      "english": "These are some of the routes that can be taken through the park: Castro route"
+    },
+    {
+      "id": "s8",
+      "name": "Villar de Vildas",
+      "quote": "Estas son algunas de las rutas que se pueden hacer por el parque: ruta La Peral - Villar de Vildas",
+      "english": "These are some of the routes that can be taken through the park: La Peral - Villar de Vildas route"
+    },
+    {
+      "id": "s9",
+      "name": "ruta de los Lagos",
+      "quote": "Estas son algunas de las rutas que se pueden hacer por el parque: ruta de los Lagos",
+      "english": "These are some of the routes that can be taken through the park: Lakes route"
+    },
+    {
+      "id": "s10",
+      "name": "ruta del Valle del Lago",
+      "quote": "Estas son algunas de las rutas que se pueden hacer por el parque: ruta del Valle del Lago",
+      "english": "These are some of the routes that can be taken through the park: Lake Valley route"
+    }
+  ],
+  "days": [
+    {
+      "title": "Valleys and Interpretation",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s7",
+        "s10"
+      ]
+    },
+    {
+      "title": "Lakes and Peaks",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s5",
+        "s9"
+      ]
+    },
+    {
+      "title": "Traditional Brañas",
+      "stop_ids": [
+        "s6",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "1c7922fd14d51103bd39b2e5adabaae04163690f5a68e49940c64ea03240de4e"
+}

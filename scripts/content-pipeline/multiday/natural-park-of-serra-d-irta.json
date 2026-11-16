@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "pico Campanilles",
+      "quote": "El parque natural está formado por dos alineaciones montañosas con una altitud máxima de 572 metros (el pico Campanilles) paralelas a la costa y separadas por el valle de Estopet.",
+      "english": "The natural park is formed by two mountain ranges with a maximum altitude of 572 meters (the Campanilles peak) parallel to the coast and separated by the Estopet valley."
+    },
+    {
+      "id": "s2",
+      "name": "valle de Estopet",
+      "quote": "El parque natural está formado por dos alineaciones montañosas con una altitud máxima de 572 metros (el pico Campanilles) paralelas a la costa y separadas por el valle de Estopet.",
+      "english": "The natural park is formed by two mountain ranges with a maximum altitude of 572 meters (the Campanilles peak) parallel to the coast and separated by the Estopet valley."
+    },
+    {
+      "id": "s3",
+      "name": "Torre Badum",
+      "quote": "El acantilado más importante es el de Torre Badum.",
+      "english": "The most important cliff is that of Torre Badum."
+    },
+    {
+      "id": "s4",
+      "name": "castillo de Alcalá de Chivert",
+      "quote": "El parque es rico en patrimonio artístico, destacando los castillos de Alcalá de Chivert y Santa Magdalena de Pulpis, pertenecientes a la Orden del Temple existiendo los restos de un poblado ibero del siglo VII a. C. junto al primero de ellos.",
+      "english": "The park is rich in artistic heritage, highlighting the castles of Alcalá de Chivert and Santa Magdalena de Pulpis, belonging to the Order of the Temple, with the remains of an Iberian settlement from the 7th century B.C. existing next to the first of them."
+    },
+    {
+      "id": "s5",
+      "name": "castillo de Santa Magdalena de Pulpis",
+      "quote": "El parque es rico en patrimonio artístico, destacando los castillos de Alcalá de Chivert y Santa Magdalena de Pulpis, pertenecientes a la Orden del Temple existiendo los restos de un poblado ibero del siglo VII a. C. junto al primero de ellos.",
+      "english": "The park is rich in artistic heritage, highlighting the castles of Alcalá de Chivert and Santa Magdalena de Pulpis, belonging to the Order of the Temple, with the remains of an Iberian settlement from the 7th century B.C. existing next to the first of them."
+    },
+    {
+      "id": "s6",
+      "name": "torre de Ebrí",
+      "quote": "Además existe una red de torres de vigía destinadas a la protección de la zona de las incursiones marítimas, siendo las más importantes de ellas la torre de Ebrí y la torre Badum.",
+      "english": "Additionally, there is a network of watchtowers intended for the protection of the area from maritime incursions, the most important of them being the Ebrí tower and the Badum tower."
+    },
+    {
+      "id": "s7",
+      "name": "ermita de Santa Lucía",
+      "quote": "También son destacables las ermitas de Santa Lucía y San Antonio Abad, ambas del siglo XVII.",
+      "english": "Also noteworthy are the hermitages of Santa Lucía and San Antonio Abad, both from the 17th century."
+    },
+    {
+      "id": "s8",
+      "name": "ermita de San Antonio Abad",
+      "quote": "También son destacables las ermitas de Santa Lucía y San Antonio Abad, ambas del siglo XVII.",
+      "english": "Also noteworthy are the hermitages of Santa Lucía and San Antonio Abad, both from the 17th century."
+    }
+  ],
+  "days": [
+    {
+      "title": "Peaks and Valleys of the Interior",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s4"
+      ]
+    },
+    {
+      "title": "Coastal Watchtowers and Cliffs",
+      "stop_ids": [
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "Historic Castles and Hermitages",
+      "stop_ids": [
+        "s5",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "22cc7ae303e83eedefc129472d3d58f7fa0c8b522d7be8c88c072310009c17db"
+}

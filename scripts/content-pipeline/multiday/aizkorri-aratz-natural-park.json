@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Araya",
+      "quote": "Las entradas principales al parque natural de Aizkorri-Aratz se encuentran en Álava (Zalduendo de Álava y Araya, donde se sitúa la Casa del Parque o Parketxea) y en Guipúzcoa (Cegama y el Santuario de Aránzazu cerca de Oñate).",
+      "english": "The main entrances to the Aizkorri-Aratz natural park are located in Álava (Zalduendo de Álava and Araya, where the Park House or Parketxea is situated) and in Guipúzcoa (Cegama and the Sanctuary of Aránzazu near Oñate)."
+    },
+    {
+      "id": "s2",
+      "name": "Santuario de Aránzazu",
+      "quote": "Las entradas principales al parque natural de Aizkorri-Aratz se encuentran en Álava (Zalduendo de Álava y Araya, donde se sitúa la Casa del Parque o Parketxea) y en Guipúzcoa (Cegama y el Santuario de Aránzazu cerca de Oñate).",
+      "english": "The main entrances to the Aizkorri-Aratz natural park are located in Álava (Zalduendo de Álava and Araya, where the Park House or Parketxea is situated) and in Guipúzcoa (Cegama and the Sanctuary of Aránzazu near Oñate)."
+    },
+    {
+      "id": "s3",
+      "name": "campas de Urbía",
+      "quote": "Forman parte del parque natural las sierra de Aitzkorri y las campas de Urbía.",
+      "english": "The Aitzkorri mountain range and the Urbía fields form part of the natural park."
+    },
+    {
+      "id": "s4",
+      "name": "sierra de Aloña",
+      "quote": "Destaca el paredón rocoso que se extiende entre los montes Aratz​ y la sierra de Aloña en el que se alcanzan las mayores altitudes del País Vasco: Aquetegui 1551 m, Aizkorri 1528 m.",
+      "english": "The rocky wall that extends between the Aratz mountains and the Aloña mountain range stands out, where the highest altitudes of the Basque Country are reached: Aquetegui 1551 m, Aizkorri 1528 m."
+    },
+    {
+      "id": "s5",
+      "name": "Aquetegui",
+      "quote": "Destaca el paredón rocoso que se extiende entre los montes Aratz​ y la sierra de Aloña en el que se alcanzan las mayores altitudes del País Vasco: Aquetegui 1551 m, Aizkorri 1528 m.",
+      "english": "The rocky wall that extends between the Aratz mountains and the Aloña mountain range stands out, where the highest altitudes of the Basque Country are reached: Aquetegui 1551 m, Aizkorri 1528 m."
+    },
+    {
+      "id": "s6",
+      "name": "San Adrian",
+      "quote": "Debido al paso del tiempo,al viento y al agua, el paisaje se ha transformado creadondo cavidades naturales en la roca, ejemplo de ello son San Adrian, por donde transcurre el camino de Santiago, un lugar lleno de historia y leyendas o la cueva de la Leze, en el pueblo de Ilarduia.​",
+      "english": "Due to the passage of time, wind, and water, the landscape has been transformed creating natural cavities in the rock, an example of which is San Adrian, through which the Way of St. James passes, a place full of history and legends, or the Leze cave, in the village of Ilarduia."
+    },
+    {
+      "id": "s7",
+      "name": "cueva de la Leze",
+      "quote": "Debido al paso del tiempo,al viento y al agua, el paisaje se ha transformado creadondo cavidades naturales en la roca, ejemplo de ello son San Adrian, por donde transcurre el camino de Santiago, un lugar lleno de historia y leyendas o la cueva de la Leze, en el pueblo de Ilarduia.​",
+      "english": "Due to the passage of time, wind, and water, the landscape has been transformed creating natural cavities in the rock, an example of which is San Adrian, through which the Way of St. James passes, a place full of history and legends, or the Leze cave, in the village of Ilarduia."
+    }
+  ],
+  "days": [
+    {
+      "title": "Alava Entrances and Caves",
+      "stop_ids": [
+        "s1",
+        "s7"
+      ]
+    },
+    {
+      "title": "Guipuzcoa Peaks and Sanctuaries",
+      "stop_ids": [
+        "s2",
+        "s6"
+      ]
+    },
+    {
+      "title": "High Mountain Summits and Fields",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "a95172312dad4beee239183cf876c1b26d9580a1d07cc3d8bbe893cc5c036dd5"
+}

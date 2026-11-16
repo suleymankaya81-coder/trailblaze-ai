@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "museo etnográfico",
+      "quote": "La localidad de Puebla de San Miguel posee un museo etnográfico, y en la entrada de pueblo, procedentes de Ademuz, hay una ermita dedicada a San Roque y otra a la salida, en dirección Losilla de Aras, que se halla bajo la advocación de la Inmaculada Concepción, popularmente conocida como la Purísima.",
+      "english": "The town of Puebla de San Miguel has an ethnographic museum, and at the entrance of the town, coming from Ademuz, there is a chapel dedicated to San Roque and another at the exit, towards Losilla de Aras, which is under the invocation of the Immaculate Conception, popularly known as the Purísima."
+    },
+    {
+      "id": "s2",
+      "name": "ermita dedicada a San Roque",
+      "quote": "La localidad de Puebla de San Miguel posee un museo etnográfico, y en la entrada de pueblo, procedentes de Ademuz, hay una ermita dedicada a San Roque y otra a la salida, en dirección Losilla de Aras, que se halla bajo la advocación de la Inmaculada Concepción, popularmente conocida como la Purísima.",
+      "english": "The town of Puebla de San Miguel has an ethnographic museum, and at the entrance of the town, coming from Ademuz, there is a chapel dedicated to San Roque and another at the exit, towards Losilla de Aras, which is under the invocation of the Immaculate Conception, popularly known as the Purísima."
+    },
+    {
+      "id": "s3",
+      "name": "Alto de las Barracas",
+      "quote": "La máxima altura se sitúa en el Alto de las Barracas que con sus 1839 metros representa la cumbre de la Comunidad Valenciana.",
+      "english": "The maximum height is located at Alto de las Barracas which, with its 1839 meters, represents the summit of the Valencian Community."
+    },
+    {
+      "id": "s4",
+      "name": "Pico Gavilán",
+      "quote": "Dentro del parque natural se encuentra el Alto de Las Barracas, también llamado Cerro Calderón, que con 1837 metros es el pico de máxima altura de la Comunidad valenciana y el Pico Gavilán de 1747 metros.",
+      "english": "Inside the natural park is the Alto de Las Barracas, also called Cerro Calderón, which at 1837 meters is the highest peak in the Valencian Community, and the Pico Gavilán at 1747 meters."
+    },
+    {
+      "id": "s5",
+      "name": "mirador de \"Mirar Bueno\"",
+      "quote": "Uno de los lugares de mayor interés del parque es el mirador de \"Mirar Bueno\", desde donde contemplar uno de los paisajes más espectaculares de la comarca.",
+      "english": "One of the most interesting places in the park is the \"Mirar Bueno\" viewpoint, from which to contemplate one of the most spectacular landscapes in the region."
+    },
+    {
+      "id": "s6",
+      "name": "Sabinar de las Blancas",
+      "quote": "Es de notable interés el paraje denominado Sabinar de las Blancas, zona declarada Microrreserva de Flora donde se hallan unas sabinas centenarias.",
+      "english": "Of notable interest is the spot called Sabinar de las Blancas, an area declared a Flora Micro-reserve where centenarian junipers are found."
+    },
+    {
+      "id": "s7",
+      "name": "Pino Vicente Tortajada",
+      "quote": "Destaca también el pino albar centenario denominado Pino Vicente Tortajada de 14,5 metros de altura y un diámetro de tronco de 3,9 metros, y la Ruta Geológica, ubicada en el extremo septentrional del parque natural, aprovechando los desmontes de las minas de caolín que hubo en el lugar.",
+      "english": "Also noteworthy is the centenarian Scots pine called Pino Vicente Tortajada, 14.5 meters high with a trunk diameter of 3.9 meters, and the Geological Route, located at the northern end of the natural park, taking advantage of the clearings of the kaolin mines that were in the place."
+    },
+    {
+      "id": "s8",
+      "name": "Ruta Geológica",
+      "quote": "Destaca también el pino albar centenario denominado Pino Vicente Tortajada de 14,5 metros de altura y un diámetro de tronco de 3,9 metros, y la Ruta Geológica, ubicada en el extremo septentrional del parque natural, aprovechando los desmontes de las minas de caolín que hubo en el lugar.",
+      "english": "Also noteworthy is the centenarian Scots pine called Pino Vicente Tortajada, 14.5 meters high with a trunk diameter of 3.9 meters, and the Geological Route, located at the northern end of the natural park, taking advantage of the clearings of the kaolin mines that were in the place."
+    }
+  ],
+  "days": [
+    {
+      "title": "Town Heritage and Landmarks",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "High Peaks and Natural Views",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Ancient Trees and Geological Trails",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "4957668c4bdff34ad30ac0210bea991e0adb3290757632ec31b0cd9fd5ac1cda"
+}

@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "río Rons",
+      "quote": "El parque está situado en la desembocadura del río Rons en el río Lérez y la ría de Pontevedra, al sur de la parroquia civil de Alba, a pocos metros de la zona norte de la ciudad de Pontevedra.",
+      "english": "The park is located at the mouth of the Rons river in the Lérez river and the Pontevedra estuary, south of the civil parish of Alba, a few meters from the northern area of the city of Pontevedra."
+    },
+    {
+      "id": "s2",
+      "name": "parque de A Gándara",
+      "quote": "Este nuevo espacio verde denominado parque de A Gándara fue abierto al público el 9 de abril de 2024.",
+      "english": "This new green space called A Gándara park was opened to the public on April 9, 2024."
+    },
+    {
+      "id": "s3",
+      "name": "sendero del río Rons",
+      "quote": "Se habilitó un sendero entre el sendero del río Rons y esta nueva zona verde abierta, dotada de alumbrado público y mobiliario urbano.",
+      "english": "A path was set up between the Rons river path and this new open green area, equipped with public lighting and urban furniture."
+    },
+    {
+      "id": "s4",
+      "name": "marisma",
+      "quote": "En este parque de 80 hectáreas se distinguen tres zonas características: la marisma, el matorral y la llanura pantanosa de la desembocadura del río Rons.",
+      "english": "In this 80-hectare park, three characteristic zones are distinguished: the marsh, the scrubland and the swampy plain at the mouth of the Rons river."
+    },
+    {
+      "id": "s5",
+      "name": "llanura pantanosa",
+      "quote": "En este parque de 80 hectáreas se distinguen tres zonas características: la marisma, el matorral y la llanura pantanosa de la desembocadura del río Rons.",
+      "english": "In this 80-hectare park, three characteristic zones are distinguished: the marsh, the scrubland and the swampy plain at the mouth of the Rons river."
+    },
+    {
+      "id": "s6",
+      "name": "tres miradores",
+      "quote": "En el parque hay tres miradores para observar las aves en su hábitat natural.",
+      "english": "In the park there are three viewpoints to observe the birds in their natural habitat."
+    },
+    {
+      "id": "s7",
+      "name": "parque canino",
+      "quote": "En una de las entradas al parque hay un parque canino inaugurado en 2010, que consiste en un gran recinto vallado donde los perros pueden correr y jugar libremente.",
+      "english": "At one of the entrances to the park there is a dog park inaugurated in 2010, which consists of a large fenced enclosure where dogs can run and play freely."
+    }
+  ],
+  "days": [
+    {
+      "title": "Riverside Trails and New Green Spaces",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Wetlands and Wildlife Observation",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Viewpoints and Leisure Areas",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "cd692d994cd0409d3a2e473817399ecb936c73052e89e7563a0f3af872f30b03"
+}

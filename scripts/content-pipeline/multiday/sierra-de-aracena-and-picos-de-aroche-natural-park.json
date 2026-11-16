@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Monte Bonales",
+      "quote": "En cuanto a atractivos naturales, destaca, entre otros, el Monte Bonales, el punto más alto de la provincia de Huelva,​ en el término de Arroyomolinos de León.",
+      "english": "Regarding natural attractions, Monte Bonales stands out among others as the highest point in the province of Huelva, in the municipality of Arroyomolinos de León."
+    },
+    {
+      "id": "s2",
+      "name": "Arroyomolinos de León",
+      "quote": "Cuenta con una superficie de 186 827 ha, repartidas entre los términos municipales de Alájar, Almonaster la Real, Aracena, Aroche, Arroyomolinos de León, Cala, Cañaveral de León, Castaño del Robledo, Corteconcepción, Cortegana, Cortelazor, Cumbres de Enmedio, Cumbres de San Bartolomé, Cumbres Mayores, Encinasola, Fuenteheridos, Galaroza, Higuera de la Sierra, Hinojales, Jabugo, Linares de la Sierra, Los Marines, La Nava, Puerto Moral, Santa Ana la Real, Santa Olalla del Cala, Valdelarco y Zufre.",
+      "english": "It has an area of 186,827 ha, distributed among the municipal districts of Alájar, Almonaster la Real, Aracena, Aroche, Arroyomolinos de León, Cala, Cañaveral de León, Castaño del Robledo, Corteconcepción, Cortegana, Cortelazor, Cumbres de Enmedio, Cumbres de San Bartolomé, Cumbres Mayores, Encinasola, Fuenteheridos, Galaroza, Higuera de la Sierra, Hinojales, Jabugo, Linares de la Sierra, Los Marines, La Nava, Puerto Moral, Santa Ana la Real, Santa Olalla del Cala, Valdelarco and Zufre."
+    },
+    {
+      "id": "s3",
+      "name": "Gruta de las Maravillas",
+      "quote": "Otro de los grandes atractivos del parque es la Gruta de las Maravillas, en Aracena.",
+      "english": "Another of the park's great attractions is the Gruta de las Maravillas, in Aracena."
+    },
+    {
+      "id": "s4",
+      "name": "Aracena",
+      "quote": "El parque natural de Sierra de Aracena y Picos de Aroche es un espacio natural situado en el norte de la provincia de Huelva (Andalucía, España), declarado parque natural por la Junta de Andalucía el 18 de julio de 1989.​",
+      "english": "The Sierra de Aracena and Picos de Aroche Natural Park is a natural space located in the north of the province of Huelva (Andalusia, Spain), declared a natural park by the Regional Government of Andalusia on July 18, 1989."
+    },
+    {
+      "id": "s5",
+      "name": "Destilerías Martes Santo",
+      "quote": "Una de las destilerías más antiguas de España, fundada en 1870, Destilerías Martes Santo, posee un museo de entrada gratuita y degustación gratis de sus productos en plena travesía de la localidad de Higuera de la Sierra, donde en un edificio del arquitecto Aníbal González, realizan un recorrido etnográfico en la relación del medio natural y la utilización del mismo para el uso de productos tradicionales que conviven con respeto donde se desarrollan.",
+      "english": "One of the oldest distilleries in Spain, founded in 1870, Destilerías Martes Santo, has a museum with free entry and free tasting of its products in the middle of the town of Higuera de la Sierra, where in a building by architect Aníbal González, they conduct an ethnographic tour regarding the relationship between the natural environment and its use for traditional products that coexist with respect where they are developed."
+    },
+    {
+      "id": "s6",
+      "name": "Higuera de la Sierra",
+      "quote": "Destaca el uso de frutos naturales del parque para la elaboración de productos tradicionales, como los licores, que por maceración de guindas, castañas o hierbas, consiguen caldos de gran valor.",
+      "english": "The use of natural fruits from the park for the preparation of traditional products stands out, such as liqueurs, which through the maceration of cherries, chestnuts or herbs, achieve high-value spirits."
+    },
+    {
+      "id": "s7",
+      "name": "Jabugo",
+      "quote": "El interés de la visita a este parque se justifica por la riqueza de sus paisajes de dehesas de encinas y alcornoques, de bosques de castaños y de bosques de ribera; así como por la calidad de sus productos gastronómicos, entre ellos el jamón ibérico de bellota de la Denominación de Origen Protegida Jabugo.",
+      "english": "The interest of visiting this park is justified by the richness of its landscapes of oak and cork oak pastures, chestnut forests and riverside forests; as well as by the quality of its gastronomic products, including the acorn-fed Iberian ham of the Jabugo Protected Designation of Origin."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Peaks and Arroyomolinos",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Aracena Caves and Local Heritage",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Higuera Traditions and Jabugo Gastronomy",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "8a0ea14fdfb592d25dd32dbecd2ed1e8c1dadca07afb03366fe7633f88ed10c9"
+}

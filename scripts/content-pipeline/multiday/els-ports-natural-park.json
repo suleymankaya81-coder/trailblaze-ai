@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "monte Caro",
+      "quote": "La cima más alta de todo el macizo es el monte Caro, con 1441 metros.",
+      "english": "The highest peak of the entire massif is Mount Caro, at 1441 meters."
+    },
+    {
+      "id": "s2",
+      "name": "Hayedo del Retablo",
+      "quote": "Queda una población relicta de haya (Fagus sylvatica), una de las más meridionales de Europa, llamado Hayedo del Retablo, el cual se encuentra protegido bajo el nombre de Reserva Natural Parcial de los Hayedos dels Ports.​",
+      "english": "A relict population of beech (Fagus sylvatica) remains, one of the southernmost in Europe, called Hayedo del Retablo, which is protected under the name of Partial Natural Reserve of the Hayedos dels Ports."
+    },
+    {
+      "id": "s3",
+      "name": "Arnes",
+      "quote": "Tierra Alta: Arnes, Horta de San Juan, Prat de Compte.",
+      "english": "Tierra Alta: Arnes, Horta de San Juan, Prat de Compte."
+    },
+    {
+      "id": "s4",
+      "name": "Horta de San Juan",
+      "quote": "Tierra Alta: Arnes, Horta de San Juan, Prat de Compte.",
+      "english": "Tierra Alta: Arnes, Horta de San Juan, Prat de Compte."
+    },
+    {
+      "id": "s5",
+      "name": "Prat de Compte",
+      "quote": "Tierra Alta: Arnes, Horta de San Juan, Prat de Compte.",
+      "english": "Tierra Alta: Arnes, Horta de San Juan, Prat de Compte."
+    },
+    {
+      "id": "s6",
+      "name": "Roquetas",
+      "quote": "Bajo Ebro: Alfara, Pauls, Roquetas, Tortosa.",
+      "english": "Bajo Ebro: Alfara, Pauls, Roquetas, Tortosa."
+    },
+    {
+      "id": "s7",
+      "name": "Cenia",
+      "quote": "Montsiá: Mas de Barberáns, Cenia.",
+      "english": "Montsiá: Mas de Barberáns, Cenia."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Ancient Beech Forests",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Villages of Tierra Alta",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Southern Gateway Settlements",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "b2d7dadcb4dd795375d44743e5233fe66a2d9300fc529bb6c725a7d35ee0305f"
+}

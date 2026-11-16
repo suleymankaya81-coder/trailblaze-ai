@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hoya San Miguel",
+      "quote": "La montaña tiene tres circos, que reciben el nombre de hoyas; estas son Hoya San Miguel, San Gaudioso y Morca.",
+      "english": "The mountain has three cirques, which receive the name of hoyas; these are Hoya San Miguel, San Gaudioso, and Morca."
+    },
+    {
+      "id": "s2",
+      "name": "San Gaudioso",
+      "quote": "La montaña tiene tres circos, que reciben el nombre de hoyas; estas son Hoya San Miguel, San Gaudioso y Morca.",
+      "english": "The mountain has three cirques, which receive the name of hoyas; these are Hoya San Miguel, San Gaudioso, and Morca."
+    },
+    {
+      "id": "s3",
+      "name": "Morca",
+      "quote": "Otras secundarias son San Juan, de 2283 m; Morca, de 2273 m; y Peña Negrilla, de 2171 m.",
+      "english": "Other secondary ones are San Juan, at 2283 m; Morca, at 2273 m; and Peña Negrilla, at 2171 m."
+    },
+    {
+      "id": "s4",
+      "name": "Lobera",
+      "quote": "El macizo del Moncayo consta de tres cumbres que superan los 2000 m de altitud; el Moncayo de Castilla o Peña Negra, de 2118 m; el propio Moncayo, de 2316 m; y Lobera, de 2226 m.",
+      "english": "The Moncayo massif consists of three peaks that exceed 2000 m in altitude; Moncayo de Castilla or Peña Negra, at 2118 m; Moncayo itself, at 2316 m; and Lobera, at 2226 m."
+    },
+    {
+      "id": "s5",
+      "name": "San Juan",
+      "quote": "Otras secundarias son San Juan, de 2283 m; Morca, de 2273 m; y Peña Negrilla, de 2171 m.",
+      "english": "Other secondary ones are San Juan, at 2283 m; Morca, at 2273 m; and Peña Negrilla, at 2171 m."
+    },
+    {
+      "id": "s6",
+      "name": "Peña Negrilla",
+      "quote": "Otras secundarias son San Juan, de 2283 m; Morca, de 2273 m; y Peña Negrilla, de 2171 m.",
+      "english": "Other secondary ones are San Juan, at 2283 m; Morca, at 2273 m; and Peña Negrilla, at 2171 m."
+    },
+    {
+      "id": "s7",
+      "name": "Centro de Interpretación de la Naturaleza en Agramonte",
+      "quote": "Existe un Centro de Interpretación de la Naturaleza en Agramonte.",
+      "english": "There is a Nature Interpretation Centre in Agramonte."
+    },
+    {
+      "id": "s8",
+      "name": "Hayedo de Peña Roya",
+      "quote": "Destaca el Hayedo de Peña Roya, en la vertiente zaragozana.",
+      "english": "The Peña Roya Beech Forest stands out on the Zaragoza slope."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glacial Cirques and Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "High Summits of the Massif",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Nature and Forests of the Northern Slope",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "34060413301c2ce02070ccf10569b2e660b78b1bf6e260199eafc51aa99b4055"
+}

@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "pico de la Rápita",
+      "quote": "No posee una altitud demasiado elevada ya que sus montañas más altas apenas superan los mil metros como el pico de la Rápita (1106 metros) el pico del Pinar (1101 metros) o el pico Espadán (1099 metros).",
+      "english": "It does not have a very high altitude since its highest mountains barely exceed one thousand meters, such as the Pico de la Rápita (1106 meters), the Pico del Pinar (1101 meters), or the Pico Espadán (1099 meters)."
+    },
+    {
+      "id": "s2",
+      "name": "pico del Pinar",
+      "quote": "No posee una altitud demasiado elevada ya que sus montañas más altas apenas superan los mil metros como el pico de la Rápita (1106 metros) el pico del Pinar (1101 metros) o el pico Espadán (1099 metros).",
+      "english": "It does not have a very high altitude since its highest mountains barely exceed one thousand meters, such as the Pico de la Rápita (1106 meters), the Pico del Pinar (1101 meters), or the Pico Espadán (1099 meters)."
+    },
+    {
+      "id": "s3",
+      "name": "pico Espadán",
+      "quote": "No posee una altitud demasiado elevada ya que sus montañas más altas apenas superan los mil metros como el pico de la Rápita (1106 metros) el pico del Pinar (1101 metros) o el pico Espadán (1099 metros).",
+      "english": "It does not have a very high altitude since its highest mountains barely exceed one thousand meters, such as the Pico de la Rápita (1106 meters), the Pico del Pinar (1101 meters), or the Pico Espadán (1099 metros)."
+    },
+    {
+      "id": "s4",
+      "name": "río Veo",
+      "quote": "El único río de cierta importancia que surca el parque es el río Veo.",
+      "english": "The only river of some importance that crosses the park is the Veo River."
+    },
+    {
+      "id": "s5",
+      "name": "Aín",
+      "quote": "Por ello es recomendable visitar los diversos pueblos que aún mantienen su estructura medieval como Veo, Aín o Almedíjar, además de los restos de la multitud de castillos moriscos que existen en cada uno de los municipios del parque natural.",
+      "english": "For this reason, it is recommended to visit the various villages that still maintain their medieval structure, such as Veo, Aín, or Almedíjar, in addition to the remains of the multitude of Moorish castles that exist in each of the municipalities of the natural park."
+    },
+    {
+      "id": "s6",
+      "name": "Almedíjar",
+      "quote": "Por ello es recomendable visitar los diversos pueblos que aún mantienen su estructura medieval como Veo, Aín o Almedíjar, además de los restos de la multitud de castillos moriscos que existen en cada uno de los municipios del parque natural.",
+      "english": "For this reason, it is recommended to visit the various villages that still maintain their medieval structure, such as Veo, Aín, or Almedíjar, in addition to the remains of the multitude of Moorish castles that exist in each of the municipalities of the natural park."
+    },
+    {
+      "id": "s7",
+      "name": "nevera de Castro",
+      "quote": "Muy interesantes son las «neveras», edificios de piedra construidos en los siglos XVIII y XIX para almacenar nieve durante todo el año, como la de Castro, situada en Alfondeguilla, la de Espadán entre Algimia de Almonacid y Alcudia de Veo o la de Cuatro Caminos en Villamalur.",
+      "english": "Very interesting are the \"neveras\" (ice houses), stone buildings constructed in the 18th and 19th centuries to store snow throughout the year, such as the one in Castro, located in Alfondeguilla, the one in Espadán between Algimia de Almonacid and Alcudia de Veo, or the one in Cuatro Caminos in Villamalur."
+    },
+    {
+      "id": "s8",
+      "name": "nevera de Espadán",
+      "quote": "Muy interesantes son las «neveras», edificios de piedra construidos en los siglos XVIII y XIX para almacenar nieve durante todo el año, como la de Castro, situada en Alfondeguilla, la de Espadán entre Algimia de Almonacid y Alcudia de Veo o la de Cuatro Caminos en Villamalur.",
+      "english": "Very interesting are the \"neveras\" (ice houses), stone buildings constructed in the 18th and 19th centuries to store snow throughout the year, such as the one in Castro, located in Alfondeguilla, the one in Espadán between Algimia de Almonacid and Alcudia de Veo, or the one in Cuatro Caminos in Villamalur."
+    },
+    {
+      "id": "s9",
+      "name": "nevera de Cuatro Caminos",
+      "quote": "Muy interesantes son las «neveras», edificios de piedra construidos en los siglos XVIII y XIX para almacenar nieve durante todo el año, como la de Castro, situada en Alfondeguilla, la de Espadán entre Algimia de Almonacid y Alcudia de Veo o la de Cuatro Caminos en Villamalur.",
+      "english": "Very interesting are the \"neveras\" (ice houses), stone buildings constructed in the 18th and 19th centuries to store snow throughout the year, such as the one in Castro, located in Alfondeguilla, the one in Espadán between Algimia de Almonacid and Alcudia de Veo, or the one in Cuatro Caminos in Villamalur."
+    },
+    {
+      "id": "s10",
+      "name": "Embalse de Benitandús",
+      "quote": "También es de gran valor paisajístico el paraje del Embalse de Benitandús cercano a estas localidades.",
+      "english": "The area of the Benitandús Reservoir, near these towns, is also of great scenic value."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Summits and Rivers",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Medieval Villages and Reservoir",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s10"
+      ]
+    },
+    {
+      "title": "Historic Stone Ice Houses",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "683dac8e0cb1d046ae1d79e3fe150cdadd80d9205ead99b0857f8bed74c18873"
+}

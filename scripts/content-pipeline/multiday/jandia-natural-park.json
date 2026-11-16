@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "pico de la Zarza",
+      "quote": "Aquí se encuentran las máximas elevaciones de la isla con una cota máxima de 807 metros en el pico de la Zarza.",
+      "english": "The maximum elevations of the island are found here with a maximum height of 807 meters at the Zarza peak."
+    },
+    {
+      "id": "s2",
+      "name": "Cofete",
+      "quote": "Destaca como núcleo poblado del parque la villa y playa de Cofete.",
+      "english": "The village and beach of Cofete stands out as the populated center of the park."
+    },
+    {
+      "id": "s3",
+      "name": "barrancos abiertos en forma de U",
+      "quote": "En la parte meridional hay grandes barrancos abiertos en forma de U.",
+      "english": "In the southern part there are large open U-shaped ravines."
+    },
+    {
+      "id": "s4",
+      "name": "riscos y acantilados",
+      "quote": "el guirre (Neophron percnopterus majorensis), que encuentra refugio en sus riscos y acantilados.",
+      "english": "the Egyptian vulture (Neophron percnopterus majorensis), which finds refuge in its crags and cliffs."
+    }
+  ],
+  "days": [
+    {
+      "title": "Cofete Village and the Southern Heights",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "17412f737c87e4a620fdb1ec97f649bc25e5dac1f15feaa37a078d5ca165da99"
+}

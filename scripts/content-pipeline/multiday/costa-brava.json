@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Blanes",
+      "quote": "Comienza en Blanes y acaba en Portbou, en la frontera con Francia, abarcando las comarcas catalanas del Alto Ampurdán, el Bajo Ampurdán y La Selva.",
+      "english": "It begins in Blanes and ends in Portbou, on the border with France, covering the Catalan regions of Alto Ampurdán, Bajo Ampurdán and La Selva."
+    },
+    {
+      "id": "s2",
+      "name": "Portbou",
+      "quote": "Comienza en Blanes y acaba en Portbou, en la frontera con Francia, abarcando las comarcas catalanas del Alto Ampurdán, el Bajo Ampurdán y La Selva.",
+      "english": "It begins in Blanes and ends in Portbou, on the border with France, covering the Catalan regions of Alto Ampurdán, Bajo Ampurdán and La Selva."
+    },
+    {
+      "id": "s3",
+      "name": "Ullastret",
+      "quote": "Está situado en la localidad de Ullastret, en la comarca del Bajo Ampurdán.",
+      "english": "It is located in the town of Ullastret, in the region of Bajo Ampurdán."
+    },
+    {
+      "id": "s4",
+      "name": "San Martín de Ampurias",
+      "quote": "Este recinto está situado en San Martín de Ampurias, a dos kilómetros de La Escala, en la comarca del Alto Ampurdán.",
+      "english": "This site is located in San Martín de Ampurias, two kilometers from La Escala, in the region of Alto Ampurdán."
+    },
+    {
+      "id": "s5",
+      "name": "Poblado ibérico de Puig de Castellet",
+      "quote": "Se encuentra en la población de Lloret de Mar, en la comarca de la Selva.",
+      "english": "It is found in the town of Lloret de Mar, in the region of La Selva."
+    },
+    {
+      "id": "s6",
+      "name": "Gerona",
+      "quote": "Esta ciudad que recibió el nombre de Gerunda –la actual Gerona– se convertiría en un punto de comunicación de gran relevancia, al servir de escala entre algunas de las ciudades ubicadas en la Vía Augusta, como es el caso de Barcino (Barcelona) y Tarraco (Tarragona).",
+      "english": "This city that received the name Gerunda –the current Gerona– would become a very relevant communication point, serving as a stopover between some of the cities located on the Via Augusta, such as Barcino (Barcelona) and Tarraco (Tarragona)."
+    },
+    {
+      "id": "s7",
+      "name": "Parque natural de Cabo de Creus",
+      "quote": "Está ubicado en torno al accidente geográfico del Cabo de Creus, el punto más oriental de toda la península ibérica.",
+      "english": "It is located around the geographical feature of Cape Creus, the easternmost point of the entire Iberian Peninsula."
+    }
+  ],
+  "days": [
+    {
+      "title": "Historical Landmarks and Cities",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s6"
+      ]
+    },
+    {
+      "title": "Southern Gateway and Ancient Settlements",
+      "stop_ids": [
+        "s1",
+        "s5"
+      ]
+    },
+    {
+      "title": "Northern Coastal Frontiers",
+      "stop_ids": [
+        "s2",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "0990c86fcf73959d7312bbdd381f491f2a1cf118a5ff40c61c3be2bcc92a9ae4"
+}

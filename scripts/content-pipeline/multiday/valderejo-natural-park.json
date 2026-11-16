@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lalastra",
+      "quote": "El acceso al parque se realiza desde Lalastra donde se encuentra el centro de interpretación del parque natural de Valderejo o desde la localidad burgalesa de Herrán.",
+      "english": "Access to the park is from Lalastra, where the Valderejo Natural Park interpretation center is located, or from the town of Herrán in Burgos."
+    },
+    {
+      "id": "s2",
+      "name": "centro de interpretación del parque natural de Valderejo",
+      "quote": "El acceso al parque se realiza desde Lalastra donde se encuentra el centro de interpretación del parque natural de Valderejo o desde la localidad burgalesa de Herrán.",
+      "english": "Access to the park is from Lalastra, where the Valderejo Natural Park interpretation center is located, or from the town of Herrán in Burgos."
+    },
+    {
+      "id": "s3",
+      "name": "cuenca del río Purón",
+      "quote": "Al norte del parque natural se dispone la cuenca del río Purón, con un valle amplio en la zona alavesa cuyo aislamiento y escasa población ha permitido una magnífica conservación de su patrimonio natural en flora y fauna.",
+      "english": "In the north of the natural park lies the Purón River basin, with a wide valley in the Alava area whose isolation and sparse population have allowed for magnificent conservation of its natural heritage in flora and fauna."
+    },
+    {
+      "id": "s4",
+      "name": "Ribera",
+      "quote": "De época la romana quedan restos de una calzada, y, en Ribera, por ejemplo, se conserva en pie una iglesia con restos románicos y pinturas medievales.",
+      "english": "From the Roman period, remains of a road remain, and, in Ribera, for example, a church with Romanesque remains and medieval paintings is preserved standing."
+    },
+    {
+      "id": "s5",
+      "name": "desfiladero del río Purón",
+      "quote": "El desfiladero del río Purón es una muestra perfectamente visible de la acción kárstica del agua sobre la roca caliza.",
+      "english": "The Purón River gorge is a perfectly visible example of the karstic action of water on limestone rock."
+    },
+    {
+      "id": "s6",
+      "name": "Lahoz",
+      "quote": "Además de Lalastra, existen otros tres núcleos rurales en Valderejo; Lahoz, Villamardones y Ribera.",
+      "english": "In addition to Lalastra, there are three other rural centers in Valderejo; Lahoz, Villamardones and Ribera."
+    },
+    {
+      "id": "s7",
+      "name": "Villamardones",
+      "quote": "Además de Lalastra, existen otros tres núcleos rurales en Valderejo; Lahoz, Villamardones y Ribera.",
+      "english": "In addition to Lalastra, there are three other rural centers in Valderejo; Lahoz, Villamardones and Ribera."
+    },
+    {
+      "id": "s8",
+      "name": "túmulo de San Lorenzo",
+      "quote": "El ser humano habita este valle desde tiempos inmemorables; prueba de ello es su patrimonio cultural y arquitectónico, que alberga desde monumentos megalíticos (túmulo de San Lorenzo, monolito del monte Lerón) hasta iglesias y ermitas de diferentes épocas.",
+      "english": "Humans have inhabited this valley since immemorial times; proof of this is its cultural and architectural heritage, which houses everything from megalithic monuments (San Lorenzo tumulus, Mount Lerón monolith) to churches and hermitages from different periods."
+    },
+    {
+      "id": "s9",
+      "name": "monolito del monte Lerón",
+      "quote": "El ser humano habita este valle desde tiempos inmemorables; prueba de ello es su patrimonio cultural y arquitectónico, que alberga desde monumentos megalíticos (túmulo de San Lorenzo, monolito del monte Lerón) hasta iglesias y ermitas de diferentes épocas.",
+      "english": "Humans have inhabited this valley since immemorial times; proof of this is its cultural and architectural heritage, which houses everything from megalithic monuments (San Lorenzo tumulus, Mount Lerón monolith) to churches and hermitages from different periods."
+    }
+  ],
+  "days": [
+    {
+      "title": "Visitor Center and Northern Basin",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Gorge and Abandoned Villages",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Megalithic Monuments",
+      "stop_ids": [
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "1fac0277969d4ac9dd2b9c67d749c4e8dfb27c2c893c45741e2d774f83e81da5"
+}

@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Laguna Negra",
+      "quote": "Destacan la laguna Negra, la laguna Larga, la laguna Helada, la laguna Mansegosa y laguna del Hornillo.",
+      "english": "The highlights are the Black Lagoon, the Long Lagoon, the Frozen Lagoon, the Mansegosa Lagoon, and the Hornillo Lagoon."
+    },
+    {
+      "id": "s2",
+      "name": "Laguna Larga",
+      "quote": "Destacan la laguna Negra, la laguna Larga, la laguna Helada, la laguna Mansegosa y laguna del Hornillo.",
+      "english": "The highlights are the Black Lagoon, the Long Lagoon, the Frozen Lagoon, the Mansegosa Lagoon, and the Hornillo Lagoon."
+    },
+    {
+      "id": "s3",
+      "name": "Laguna Helada",
+      "quote": "Destacan la laguna Negra, la laguna Larga, la laguna Helada, la laguna Mansegosa y laguna del Hornillo.",
+      "english": "The highlights are the Black Lagoon, the Long Lagoon, the Frozen Lagoon, the Mansegosa Lagoon, and the Hornillo Lagoon."
+    },
+    {
+      "id": "pico Urbión",
+      "name": "pico Urbión",
+      "quote": "El pico Urbión, con sus 2228 metros de altura, es la mayor cota del parque y una de las cumbres más altas de la provincia de Soria; en él nace el río Duero.",
+      "english": "Urbión Peak, with its 2228 meters of height, is the highest point of the park and one of the highest summits in the province of Soria; the Duero river is born there."
+    },
+    {
+      "id": "s5",
+      "name": "mirador de Castroviejo",
+      "quote": "El mirador de Castroviejo da una bonita vista sobre el valle y llama la atención el trabajo creado por la erosión.",
+      "english": "The Castroviejo viewpoint gives a beautiful view over the valley and draws attention to the work created by erosion."
+    },
+    {
+      "id": "s6",
+      "name": "Cueva y cascada Serena",
+      "quote": "Cerca están la Cueva y cascada Serena.",
+      "english": "Nearby are the Serena Cave and Waterfall."
+    },
+    {
+      "id": "s7",
+      "name": "puente de Santo Domingo",
+      "quote": "Covaleda es una población en la que destacan los puentes sobre el río Duero, que se encuentran entre los más interesantes de Soria, como el puente de Santo Domingo y el Puente Soria.",
+      "english": "Covaleda is a town in which the bridges over the Duero river stand out, which are among the most interesting in Soria, such as the Santo Domingo bridge and the Soria Bridge."
+    },
+    {
+      "id": "s8",
+      "name": "Puente Soria",
+      "quote": "Covaleda es una población en la que destacan los puentes sobre el río Duero, que se encuentran entre los más interesantes de Soria, como el puente de Santo Domingo y el Puente Soria.",
+      "english": "Covaleda is a town in which the bridges over the Duero river stand out, which are among the most interesting in Soria, such as the Santo Domingo bridge and the Soria Bridge."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glacial Lagoons and High Summits",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "pico Urbión"
+      ]
+    },
+    {
+      "title": "Natural Landmarks of Duruelo",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Historic Bridges of Covaleda",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "b380f6a171308a407e0c1a8dcf99ab3830450a3c695671b694e37b06636772c6"
+}

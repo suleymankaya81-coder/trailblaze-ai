@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "río Tajo",
+      "quote": "El curso fluvial del río Tajo que sirve de frontera natural entre España y Portugal, divide una zona de idénticas características entre ambos países.",
+      "english": "The river course of the Tagus River, which serves as a natural border between Spain and Portugal, divides an area of identical characteristics between both countries."
+    },
+    {
+      "id": "s2",
+      "name": "río Sever",
+      "quote": "Hoy día ha desaparecido la población de cangrejo de río autóctono del río Sever, donde se localizan los últimos fiables en Extremadura a mediados de los años 1970, convirtiendo a esta especie hasta hace muy poco en el invertebrado más importante del parque.",
+      "english": "Today the population of the native crayfish of the Sever River has disappeared, where the last reliable ones in Extremadura were located in the mid-1970s, making this species until very recently the most important invertebrate in the park."
+    },
+    {
+      "id": "s3",
+      "name": "presa de Cedillo",
+      "quote": "La construcción de la presa de Cedillo en los años 1970 representó un duro golpe para los peces del río Tajo.",
+      "english": "The construction of the Cedillo dam in the 1970s represented a hard blow for the fish of the Tagus River."
+    },
+    {
+      "id": "s4",
+      "name": "centro de interpretación Tajo Internacional",
+      "quote": "El centro de interpretación Tajo Internacional se aloja en Casa Natalio una antigua casa señorial del siglo XVI rodeada de casas solariegas.",
+      "english": "The Tajo Internacional interpretation center is housed in Casa Natalio, an old 16th-century manor house surrounded by ancestral homes."
+    },
+    {
+      "id": "s5",
+      "name": "Alcántara",
+      "quote": "El parque natural do Tejo Internacional comprende (total o parcialmente) 2 concelhos portugueses (Castelo Branco e Idanha-a-Nova) y 11 municipios españoles (Alcántara, Brozas, Carbajo, Cedillo, Herrera de Alcántara, Membrío, Salorino, Herreruela, Santiago de Alcántara, Valencia de Alcántara y Zarza la Mayor).",
+      "english": "The International Tagus Natural Park comprises (totally or partially) 2 Portuguese municipalities (Castelo Branco and Idanha-a-Nova) and 11 Spanish municipalities (Alcántara, Brozas, Carbajo, Cedillo, Herrera de Alcántara, Membrío, Salorino, Herreruela, Santiago de Alcántara, Valencia de Alcántara, and Zarza la Mayor)."
+    },
+    {
+      "id": "s6",
+      "name": "Casa Natalio",
+      "quote": "El centro de interpretación Tajo Internacional se aloja en Casa Natalio una antigua casa señorial del siglo XVI rodeada de casas solariegas.",
+      "english": "The Tajo Internacional interpretation center is housed in Casa Natalio, an old 16th-century manor house surrounded by ancestral homes."
+    },
+    {
+      "id": "s7",
+      "name": "Barco Balcón del Tajo",
+      "quote": "Desde 2011, el Barco Balcón del Tajo, realiza rutas fluviales por el parque natural.",
+      "english": "Since 2011, the Balcón del Tajo Boat has carried out river routes through the natural park."
+    }
+  ],
+  "days": [
+    {
+      "title": "Rivers and Reservoir of the Park",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Alcántara Heritage and Information",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Fluvial Navigation",
+      "stop_ids": [
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "546fb7e717b43d27e601174927747e91de334e581f9de8f78a1b690c5f64bb11"
+}

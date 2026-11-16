@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "río Castril",
+      "quote": "La orografía del parque natural comprende la cabecera del río Castril, según la orientación noreste del río, marcado por la Sierra de Castril, al oeste, y Sierra Seca, al este, hasta las cercanías del municipio del mismo nombre.",
+      "english": "The orography of the natural park includes the headwaters of the Castril River, following the river's northeast orientation, marked by the Sierra de Castril to the west and Sierra Seca to the east, as far as the vicinity of the municipality of the same name."
+    },
+    {
+      "id": "s2",
+      "name": "Sierra Seca",
+      "quote": "La abundancia de rocas duras (calizas y dolomías), principalmente desarrollado en la Sierra de Castril y Sierra Seca, origina el desarrollo del modelado kárstico, manifestándose en gran variedad de sus formas (dolinas, grutas, galerías, lapiaces, simas, uvalas...).",
+      "english": "The abundance of hard rocks (limestones and dolomites), mainly developed in the Sierra de Castril and Sierra Seca, originates the development of karst modeling, manifesting in a great variety of its forms (sinkholes, grottos, galleries, lapies, chasms, uvalas...)."
+    },
+    {
+      "id": "s3",
+      "name": "El Tornajuelo",
+      "quote": "Posee picos por encima de los 2000 metros de altitud, tales como El Tornajuelo, Las Empanadas o el Cerro del Buitre.",
+      "english": "It has peaks above 2000 meters in altitude, such as El Tornajuelo, Las Empanadas or the Cerro del Buitre."
+    },
+    {
+      "id": "s4",
+      "name": "Las Empanadas",
+      "quote": "Posee picos por encima de los 2000 metros de altitud, tales como El Tornajuelo, Las Empanadas o el Cerro del Buitre.",
+      "english": "It has peaks above 2000 meters in altitude, such as El Tornajuelo, Las Empanadas or the Cerro del Buitre."
+    },
+    {
+      "id": "s5",
+      "name": "Cerro del Buitre",
+      "quote": "Posee picos por encima de los 2000 metros de altitud, tales como El Tornajuelo, Las Empanadas o el Cerro del Buitre.",
+      "english": "It has peaks above 2000 meters in altitude, such as El Tornajuelo, Las Empanadas or the Cerro del Buitre."
+    },
+    {
+      "id": "s6",
+      "name": "Cueva del Muerto",
+      "quote": "Posee importantes cuevas, como la Cueva del Muerto y la Cueva de Don Fernando, la de mayor longitud y profundidad de la provincia, con la Sala de la Colada.",
+      "english": "It has important caves, such as the Cueva del Muerto and the Cueva de Don Fernando, the longest and deepest in the province, with the Sala de la Colada."
+    },
+    {
+      "id": "s7",
+      "name": "Cueva de Don Fernando",
+      "quote": "Posee importantes cuevas, como la Cueva del Muerto y la Cueva de Don Fernando, la de mayor longitud y profundidad de la provincia, con la Sala de la Colada.",
+      "english": "It has important caves, such as the Cueva del Muerto and the Cueva de Don Fernando, the longest and deepest in the province, with the Sala de la Colada."
+    },
+    {
+      "id": "s8",
+      "name": "Sala de la Colada",
+      "quote": "Posee importantes cuevas, como la Cueva del Muerto y la Cueva de Don Fernando, la de mayor longitud y profundidad de la provincia, con la Sala de la Colada.",
+      "english": "It has important caves, such as the Cueva del Muerto and the Cueva de Don Fernando, the longest and deepest in the province, with the Sala de la Colada."
+    }
+  ],
+  "days": [
+    {
+      "title": "River and Karst Formations",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "High Mountain Summits",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Subterranean Exploration",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "9e86504c21e1c28ba40bca2ddc3e28d1a24c0e17a725da5a76f86a1125f9c6e5"
+}

@@ -1,0 +1,52 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "alto de Garajonay",
+      "quote": "El parque toma su nombre del alto de Garajonay, la mayor altura de la isla con 1487 m s. n. m.",
+      "english": "The park takes its name from the Garajonay peak, the highest point on the island at 1487 m above sea level."
+    },
+    {
+      "id": "s2",
+      "name": "caserío del Cedro",
+      "quote": "La cota mínima del parque es de 650 m s. n. m., en el caserío del Cedro.",
+      "english": "The minimum elevation of the park is 650 m above sea level, in the hamlet of El Cedro."
+    },
+    {
+      "id": "s3",
+      "name": "Laguna Grande",
+      "quote": "En el interior del parque hay un área recreativa, llamada Laguna Grande; y en el lugar conocido como Juego de Bolas, en el municipio de Agulo, está el centro de visitantes.",
+      "english": "Inside the park there is a recreational area called Laguna Grande; and in the place known as Juego de Bolas, in the municipality of Agulo, is the visitor center."
+    },
+    {
+      "id": "s4",
+      "name": "Juego de Bolas",
+      "quote": "En el interior del parque hay un área recreativa, llamada Laguna Grande; y en el lugar conocido como Juego de Bolas, en el municipio de Agulo, está el centro de visitantes.",
+      "english": "Inside the park there is a recreational area called Laguna Grande; and in the place known as Juego de Bolas, in the municipality of Agulo, is the visitor center."
+    },
+    {
+      "id": "s5",
+      "name": "Bosque del Cedro",
+      "quote": "Bosque del Cedro",
+      "english": "El Cedro Forest"
+    }
+  ],
+  "days": [
+    {
+      "title": "Peaks and Hamlets of Garajonay",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s5"
+      ]
+    },
+    {
+      "title": "Leisure and Visitor Facilities",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "e5b3e6e2f525422339c46b30b7131ee812c0fa42bf85da993710648fbfa55750"
+}

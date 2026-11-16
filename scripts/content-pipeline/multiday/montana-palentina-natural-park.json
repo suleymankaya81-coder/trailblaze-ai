@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Fuentes Carrionas",
+      "quote": "Debía su nombre original a los dos parajes conocidos como Fuentes Carrionas y Fuente del Cobre, considerados los nacimientos de los ríos Carrión y Pisuerga, respectivamente, y posteriormente fue renombrado con el nombre de la comarca donde se encuentra situado, la Montaña Palentina.",
+      "english": "It owed its original name to the two spots known as Fuentes Carrionas and Fuente del Cobre, considered the sources of the Carrión and Pisuerga rivers, respectively, and was later renamed after the region where it is located, the Montaña Palentina."
+    },
+    {
+      "id": "s2",
+      "name": "Fuente del Cobre",
+      "quote": "Debía su nombre original a los dos parajes conocidos como Fuentes Carrionas y Fuente del Cobre, considerados los nacimientos de los ríos Carrión y Pisuerga, respectivamente, y posteriormente fue renombrado con el nombre de la comarca donde se encuentra situado, la Montaña Palentina.",
+      "english": "It owed its original name to the two spots known as Fuentes Carrionas and Fuente del Cobre, considered the sources of the Carrión and Pisuerga rivers, respectively, and was later renamed after the region where it is located, the Montaña Palentina."
+    },
+    {
+      "id": "s3",
+      "name": "Tejeda de Tosande",
+      "quote": "Tejeda de Tosande, una de las tejedas más notables de la Europa Occidental; el Pinar de Velilla, uno de los pocos pinares naturales de la Cordillera; Enebral de Peñas Lampas, la formación más septentrional de sabina albar de toda su área de distribución.",
+      "english": "Tejeda de Tosande, one of the most notable yew forests in Western Europe; the Pinar de Velilla, one of the few natural pine forests in the Mountain Range; Enebral de Peñas Lampas, the northernmost formation of Spanish juniper in its entire distribution area."
+    },
+    {
+      "id": "s4",
+      "name": "Pinar de Velilla",
+      "quote": "Tejeda de Tosande, una de las tejedas más notables de la Europa Occidental; el Pinar de Velilla, uno de los pocos pinares naturales de la Cordillera; Enebral de Peñas Lampas, la formación más septentrional de sabina albar de toda su área de distribución.",
+      "english": "Tejeda de Tosande, one of the most notable yew forests in Western Europe; the Pinar de Velilla, one of the few natural pine forests in the Mountain Range; Enebral de Peñas Lampas, the northernmost formation of Spanish juniper in its entire distribution area."
+    },
+    {
+      "id": "s5",
+      "name": "Cueva del Cobre",
+      "quote": "Cueva del Cobre: Interesante cavidad, no solo por ser el nacimiento del río Pisuerga, sino por las formaciones y dimensiones de sus galerías.",
+      "english": "Cueva del Cobre: Interesting cavity, not only for being the source of the Pisuerga River, but also for the formations and dimensions of its galleries."
+    },
+    {
+      "id": "s6",
+      "name": "sumidero del Sel de la Fuente",
+      "quote": "sumidero del Sel de la Fuente, en la Sierra de Híjar: Cavidad que recoge las aguas del circo glaciar del pico Valdecebollas.",
+      "english": "Sel de la Fuente sinkhole, in the Sierra de Híjar: Cavity that collects the waters of the glacial cirque of the Valdecebollas peak."
+    },
+    {
+      "id": "s7",
+      "name": "pico Valdecebollas",
+      "quote": "sumidero del Sel de la Fuente, en la Sierra de Híjar: Cavidad que recoge las aguas del circo glaciar del pico Valdecebollas.",
+      "english": "Sel de la Fuente sinkhole, in the Sierra de Híjar: Cavity that collects the waters of the glacial cirque of the Valdecebollas peak."
+    },
+    {
+      "id": "s8",
+      "name": "San Salvador de Cantamuda",
+      "quote": "En la zona norte de Palencia se concentra además uno de los mayores y más notables conjuntos de arte Románico de todo el mundo, y en San Salvador de Cantamuda y San Cebrián de Mudá se encuentran algunas de las mejores muestras.",
+      "english": "In the northern area of Palencia, one of the largest and most notable collections of Romanesque art in the world is also concentrated, and in San Salvador de Cantamuda and San Cebrián de Mudá some of the best examples are found."
+    }
+  ],
+  "days": [
+    {
+      "title": "Rivers and Valleys",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s5"
+      ]
+    },
+    {
+      "title": "Natural Forests and Peaks",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Romanesque Heritage",
+      "stop_ids": [
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "4e656641d730b4424692673a2928b86b4681c327dd3bf5b6163a7727f50eb968"
+}

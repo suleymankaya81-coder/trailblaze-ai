@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Monte Perdido",
+      "english": "Its altitude ranges between 700 m above sea level at the Bellós river and 3348 m above sea level at Monte Perdido.",
+      "quote": "Su altitud oscila entre los 700 m s. n. m. en el río Bellós y los 3348 m s. n. m. del Monte Perdido."
+    },
+    {
+      "id": "s2",
+      "name": "valle de Ordesa",
+      "english": "The most characteristic and emblematic is the Ordesa valley, traversed by the Arazas river, origin of the national park, which opens in an east-west direction.",
+      "quote": "El más característico y emblemático es el valle de Ordesa, recorrido por el río Arazas, origen del parque nacional, que se abre en dirección este-oeste."
+    },
+    {
+      "id": "s3",
+      "name": "cañón de Añisclo",
+      "english": "In general, the climate is typically Pyrenean, although the difference in altitude ranging from 750 meters at the entrance of the Añisclo canyon to 3355 meters at Monte Perdido makes for an enormous climatic variety.",
+      "quote": "En general el clima es típicamente pirenaico, si bien la diferencia de altitud que va desde los 750 metros en la entrada del cañón de Añisclo hasta los 3355 metros del Monte Perdido y la orientación original de cada valle, hace que exista una enorme variedad climática."
+    },
+    {
+      "id": "s4",
+      "name": "gargantas de Escuaín",
+      "english": "Here the Añisclo Canyon and the Escuaín Gorges must be highlighted, in which glacial circles appear at their headwaters, but which later narrow into deep gorges.",
+      "quote": "Aquí hay que destacar el Cañón de Añisclo y las Gargantas de Escuaín, en los que aparecen circos glaciares en sus cabeceras, pero que posteriormente se encajonan en profundas gargantas."
+    },
+    {
+      "id": "s5",
+      "name": "valle de Pineta",
+      "english": "The basic morphology of the park is due to two orogenies, but mainly to the Alpine folding and elevation of the Tertiary era, later molded by glacial erosion during the Quaternary era, giving rise to a series of very defined glacial circles and valleys, such as the Ordesa valley and the Pineta valley.",
+      "quote": "La morfología básica del parque se debe a dos orogenias, pero principalmente al plegamiento y elevación alpina de la era Terciaria, posteriormente moldeada por la erosión glaciar durante la era Cuaternaria, dando lugar a una serie de circos y valles glaciares muy definidos, como el valle de Ordesa y el valle de Pineta."
+    },
+    {
+      "id": "s6",
+      "name": "valle de Bujaruelo",
+      "english": "Likewise, although it does not belong to the central zone of the park but to its peripheral zone, the Bujaruelo valley in the western area is worth highlighting.",
+      "quote": "Asimismo, aunque no pertenece a la zona central del parque pero si a su zona periférica, cabe destacar el valle de Bujaruelo en la zona oeste."
+    },
+    {
+      "id": "s7",
+      "name": "macizo de las Tres Sorores",
+      "english": "The orography of the park is dominated by the Tres Sorores massif, Treserols, the highest limestone massif in Europe.",
+      "quote": "La orografía del parque está dominada por el macizo de las Tres Sorores, Treserols, el macizo calcáreo más alto de Europa."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Massif and Main Valleys",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Canyons and Gorges of the South and East",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Eastern and Peripheral Valleys",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "6b9300e3373e694ee9e4fb722d4e2f3324d4cc344ad8659285394158ff086574"
+}

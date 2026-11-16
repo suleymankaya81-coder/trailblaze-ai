@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Tibidabo",
+      "quote": "De las numerosas colinas que componen su perfil, el Tibidabo es la más alta (512 m).",
+      "english": "Of the numerous hills that make up its profile, Tibidabo is the highest (512 m)."
+    },
+    {
+      "id": "s2",
+      "name": "Font Groga",
+      "quote": "Dentro de los límites del parque hay espacios de interés como la reserva natural parcial de la Font Groga o la Riada-Can Balasc.",
+      "english": "Within the park boundaries there are areas of interest such as the Font Groga partial natural reserve or the Riada-Can Balasc."
+    },
+    {
+      "id": "s3",
+      "name": "Fuente de la Budellera",
+      "quote": "Hay una gran cantidad de fuentes como la Fuente de la Budellera y la Fuente de Ribas.",
+      "english": "There are a large number of springs such as the Budellera Spring and the Ribas Spring."
+    },
+    {
+      "id": "s4",
+      "name": "San Medir",
+      "quote": "Ejemplos destacarían San Medir, San Bartolomé de la Cuadra, Santa Cruz de Olorde y San Acisclo y Santa Victoria de las Feixas, y Can Masdeu.",
+      "english": "Notable examples would include San Medir, San Bartolomé de la Cuadra, Santa Cruz de Olorde and San Acisclo and Santa Victoria de las Feixas, and Can Masdeu."
+    },
+    {
+      "id": "s5",
+      "name": "Can Coll",
+      "quote": "La masía de Can Coll, alberga el museo de la vida rural y la exposición permanente \"El hombre y la Sierra\".",
+      "english": "The Can Coll farmhouse houses the rural life museum and the permanent exhibition \"Man and the Sierra\"."
+    },
+    {
+      "id": "s6",
+      "name": "Riada-Can Balasc",
+      "quote": "Dentro de los límites del parque hay espacios de interés como la reserva natural parcial de la Font Groga o la Riada-Can Balasc.",
+      "english": "Within the park boundaries there are areas of interest such as the Font Groga partial natural reserve or the Riada-Can Balasc."
+    },
+    {
+      "id": "s7",
+      "name": "Fuente de Ribas",
+      "quote": "Hay una gran cantidad de fuentes como la Fuente de la Budellera y la Fuente de Ribas.",
+      "english": "There are a large number of springs such as the Budellera Spring and the Ribas Spring."
+    }
+  ],
+  "days": [
+    {
+      "title": "Hills and Natural Springs",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Historical Architecture and Valleys",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Natural Reserves and Waters",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "87c58a052178a665354f2aafe2c492d55575bb92ecb6accf186fb6ae9bc0a234"
+}

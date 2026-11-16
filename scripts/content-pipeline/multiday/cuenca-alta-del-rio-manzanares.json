@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Manzanares el Real",
+      "quote": "Sus principales municipios de referencia son Manzanares el Real y Hoyo de Manzanares.",
+      "english": "Its main reference municipalities are Manzanares el Real and Hoyo de Manzanares."
+    },
+    {
+      "id": "s2",
+      "name": "Hoyo de Manzanares",
+      "quote": "De ellos, solo tres —Hoyo de Manzanares, Manzanares el Real y Tres Cantos (salvo las urbanizaciones Soto de Viñuelas y Nuevo Tres Cantos)— tienen integrados sus núcleos poblacionales totalmente.",
+      "english": "Of them, only three —Hoyo de Manzanares, Manzanares el Real and Tres Cantos (except for the Soto de Viñuelas and Nuevo Tres Cantos developments)— have their population centers fully integrated."
+    },
+    {
+      "id": "s3",
+      "name": "La Pedriza",
+      "quote": "El parque regional de la Cuenca Alta del Manzanares tiene sus límite norte en La Pedriza.",
+      "english": "The regional park of the Cuenca Alta del Manzanares has its northern limit in La Pedriza."
+    },
+    {
+      "id": "s4",
+      "name": "embalse de Santillana",
+      "quote": "Además, los dos grandes embalses integrados dentro del parque, el de Santillana y el de El Pardo, se encuentran protegidos por la Ley 7/1990, de 28 de junio, de Protección de Embalses y Zonas Húmedas de la Comunidad de Madrid.",
+      "english": "Furthermore, the two large reservoirs integrated within the park, Santillana and El Pardo, are protected by Law 7/1990, of June 28, on the Protection of Reservoirs and Wetlands of the Community of Madrid."
+    },
+    {
+      "id": "s5",
+      "name": "La Maliciosa",
+      "quote": "En esta zona se encuentra la cabecera del río Manzanares, que configura una especie de cuenco, delimitado por el pico de La Maliciosa (2227 m), el Alto de Guarramillas o Bola del Mundo (2265 m) y las Cabezas de Hierro (2383 m), crestería conocida como la Cuerda Larga.",
+      "english": "In this area lies the headwaters of the Manzanares River, which forms a sort of bowl, delimited by the peak of La Maliciosa (2227 m), the Alto de Guarramillas or Bola del Mundo (2265 m) and the Cabezas de Hierro (2383 m), a ridgeline known as the Cuerda Larga."
+    },
+    {
+      "id": "s6",
+      "name": "Alto de Guarramillas",
+      "quote": "En esta zona se encuentra la cabecera del río Manzanares, que configura una especie de cuenco, delimitado por el pico de La Maliciosa (2227 m), el Alto de Guarramillas o Bola del Mundo (2265 m) y las Cabezas de Hierro (2383 m), crestería conocida como la Cuerda Larga.",
+      "english": "In this area lies the headwaters of the Manzanares River, which forms a sort of bowl, delimited by the peak of La Maliciosa (2227 m), the Alto de Guarramillas or Bola del Mundo (2265 m) and the Cabezas de Hierro (2383 m), a ridgeline known as the Cuerda Larga."
+    },
+    {
+      "id": "s7",
+      "name": "Cabezas de Hierro",
+      "quote": "En esta zona se encuentra la cabecera del río Manzanares, que configura una especie de cuenco, delimitado por el pico de La Maliciosa (2227 m), el Alto de Guarramillas o Bola del Mundo (2265 m) y las Cabezas de Hierro (2383 m), crestería conocida como la Cuerda Larga.",
+      "english": "In this area lies the headwaters of the Manzanares River, which forms a sort of bowl, delimited by the peak of La Maliciosa (2227 m), the Alto de Guarramillas or Bola del Mundo (2265 m) and the Cabezas de Hierro (2383 m), a ridgeline known as the Cuerda Larga."
+    },
+    {
+      "id": "s8",
+      "name": "Torres de La Pedriza",
+      "quote": "Este paraje tiene una superficie aproximada de 3200 hectáreas, con una altitud máxima de 2029 m, en las Torres de La Pedriza, y mínima de 890 m, a los pies del embalse de Santillana.",
+      "english": "This area has an approximate surface of 3200 hectares, with a maximum altitude of 2029 m at the Torres de La Pedriza, and a minimum of 890 m at the foot of the Santillana reservoir."
+    },
+    {
+      "id": "s9",
+      "name": "pico de El Estepar",
+      "quote": "Su altura máxima, de 1404 m, se sitúa en el pico de El Estepar.",
+      "english": "Its maximum height, 1404 m, is located at the El Estepar peak."
+    }
+  ],
+  "days": [
+    {
+      "title": "Towns and Reservoirs of the Basin",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s4"
+      ]
+    },
+    {
+      "title": "High Summits of Cuerda Larga",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Granite Formations of La Pedriza",
+      "stop_ids": [
+        "s3",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "609b0061fbf889a15efd325c74f928c113cc944d8649f32ac9e73dc81cbb21f1"
+}

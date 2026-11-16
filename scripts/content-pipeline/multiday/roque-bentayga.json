@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "roque Bentayga",
+      "quote": "El roque Bentayga es una formación geológica monolítica de Gran Canaria (Canarias, España).",
+      "english": "The Bentayga rock is a monolithic geological formation of Gran Canaria (Canaries, Spain)."
+    },
+    {
+      "id": "s2",
+      "name": "caldera volcánica de Tejeda",
+      "quote": "Se halla dentro de la caldera volcánica de Tejeda, en el municipio del mismo nombre, en el centro aproximado de la isla.",
+      "english": "It is located inside the Tejeda volcanic caldera, in the municipality of the same name, in the approximate center of the island."
+    },
+    {
+      "id": "s3",
+      "name": "almogarén aborigen",
+      "quote": "Es, además, un yacimiento arqueológico, pues en su base existe un almogarén aborigen.​",
+      "english": "It is, furthermore, an archaeological site, since at its base there is an aboriginal 'almogarén' (place of worship)."
+    },
+    {
+      "id": "s4",
+      "name": "parque rural del Nublo",
+      "quote": "El roque se encuentra dentro del parque rural del Nublo.​​",
+      "english": "The rock is found inside the Nublo rural park."
+    },
+    {
+      "id": "s5",
+      "name": "Cuevas del Rey",
+      "quote": "Cerca del roque Bentayga se encuentran los antiguos asentamientos aborígenes canarios de Cuevas del Rey y roque Camello, que constan de un centenar de cuevas con habitaciones, enterramientos, silos, etc.​",
+      "english": "Near the Bentayga rock are the ancient Canarian aboriginal settlements of Cuevas del Rey and Roque Camello, which consist of a hundred caves with rooms, burials, silos, etc."
+    },
+    {
+      "id": "s6",
+      "name": "roque Camello",
+      "quote": "Cerca del roque Bentayga se encuentran los antiguos asentamientos aborígenes canarios de Cuevas del Rey y roque Camello, que constan de un centenar de cuevas con habitaciones, enterramientos, silos, etc.​",
+      "english": "Near the Bentayga rock are the ancient Canarian aboriginal settlements of Cuevas del Rey and Roque Camello, which consist of a hundred caves with rooms, burials, silos, etc."
+    },
+    {
+      "id": "s7",
+      "name": "almogarén del Bentayga",
+      "quote": "En el lado oriental de la base del roque se halla el llamado “almogarén del Bentayga”, construcción que debió ser lugar de culto de los aborígenes.",
+      "english": "On the eastern side of the base of the rock lies the so-called “almogarén of Bentayga”, a construction that must have been a place of worship for the aborigines."
+    }
+  ],
+  "days": [
+    {
+      "title": "Bentayga Monolith and Volcanic Surroundings",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s4"
+      ]
+    },
+    {
+      "title": "Sacred Archaeological Sites",
+      "stop_ids": [
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Ancient Cave Settlements",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "ce9c6f38fff9d711a53b184856c400ef41a75b80fe7d3bc384019b9cc21d7f74"
+}

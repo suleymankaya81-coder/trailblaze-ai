@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "el tormo alto",
+      "quote": "Existe un recorrido señalizado, de unos 3 kilómetros de longitud, de dificultad mínima, que se realiza en aproximadamente una hora y media, para visitar las diversas rocas y formaciones a las que se han dado nombres de animales y de objetos como el tormo alto (símbolo de la Ciudad Encantada), que se encuentra justo a la entrada del recorrido.",
+      "english": "There is a signposted route, about 3 kilometers long, of minimal difficulty, which takes approximately one hour and a half, to visit the various rocks and formations that have been given names of animals and objects such as the high rock (symbol of the Enchanted City), which is located right at the entrance of the route."
+    },
+    {
+      "id": "s2",
+      "name": "Los barcos",
+      "quote": "El resto de figuras del itinerario actual son: Los barcos.",
+      "english": "The rest of the figures in the current itinerary are: The ships."
+    },
+    {
+      "id": "s3",
+      "name": "El perro",
+      "quote": "El resto de figuras del itinerario actual son: El perro.",
+      "english": "The rest of the figures in the current itinerary are: The dog."
+    },
+    {
+      "id": "s4",
+      "name": "El tobogán",
+      "quote": "El resto de figuras del itinerario actual son: El tobogán.",
+      "english": "The rest of the figures in the current itinerary are: The slide."
+    },
+    {
+      "id": "s5",
+      "name": "El puente romano",
+      "quote": "El resto de figuras del itinerario actual son: El puente romano.",
+      "english": "The rest of the figures in the current itinerary are: The Roman bridge."
+    },
+    {
+      "id": "s6",
+      "name": "Mar de piedra",
+      "quote": "El resto de figuras del itinerario actual son: Mar de piedra.",
+      "english": "The rest of the figures in the current itinerary are: Sea of stone."
+    },
+    {
+      "id": "s7",
+      "name": "El convento",
+      "quote": "El resto de figuras del itinerario actual son: El convento.",
+      "english": "The rest of the figures in the current itinerary are: The convent."
+    }
+  ],
+  "days": [
+    {
+      "title": "Entrance and Main Formations",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Central Sculptures",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Final Formations",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "968422b163e012f5e2435c7c2a5c9f36ce93c7f355104153492859d28d79cb21"
+}

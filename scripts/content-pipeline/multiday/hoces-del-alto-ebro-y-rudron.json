@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Pozo Verde",
+      "quote": "Cabe destacar las siguientes trece áreas de interés geológico: Pozo Verde.",
+      "english": "Thirteen areas of geological interest should be highlighted: Pozo Verde."
+    },
+    {
+      "id": "s2",
+      "name": "Tobas de Tubilla del Agua",
+      "quote": "Cabe destacar las siguientes trece áreas de interés geológico: Tobas de Tubilla del Agua.",
+      "english": "Thirteen areas of geological interest should be highlighted: Tufas of Tubilla del Agua."
+    },
+    {
+      "id": "s3",
+      "name": "Pozo Azul",
+      "quote": "Poco antes de Valdelateja, en Covanera, está el Pozo Azul, un nacedero en forma de pozo cuyas aguas cristalinas aparentan ser azuladas.",
+      "english": "Shortly before Valdelateja, in Covanera, is the Pozo Azul, a spring in the form of a well whose crystalline waters appear bluish."
+    },
+    {
+      "id": "s4",
+      "name": "Hoz de las Palancas",
+      "quote": "Cabe destacar las siguientes trece áreas de interés geológico: Hoz de las Palancas.",
+      "english": "Thirteen areas of geological interest should be highlighted: Gorge of the Palancas."
+    },
+    {
+      "id": "s5",
+      "name": "Pliegues de Tudanca",
+      "quote": "Cabe destacar las siguientes trece áreas de interés geológico: Pliegues de Tudanca.",
+      "english": "Thirteen areas of geological interest should be highlighted: Folds of Tudanca."
+    },
+    {
+      "id": "s6",
+      "name": "Orbaneja del Castillo",
+      "quote": "El río Ebro atraviesa el norte de la provincia de Burgos desde Orbaneja del Castillo hasta más allá de Miranda de Ebro durante 150 km en una sucesión de cañones (hoces) alternados con valles abiertos, así como otros elementos naturales en los alrededores que constituyen una zona de interés naturístico.",
+      "english": "The Ebro river crosses the north of the province of Burgos from Orbaneja del Castillo to beyond Miranda de Ebro for 150 km in a succession of canyons (gorges) alternating with open valleys, as well as other natural elements in the surroundings that constitute an area of natural interest."
+    },
+    {
+      "id": "s7",
+      "name": "Cueva de Piscarciano",
+      "quote": "Cabe destacar las siguientes trece áreas de interés geológico: Cueva de Piscarciano.",
+      "english": "Thirteen areas of geological interest should be highlighted: Cave of Piscarciano."
+    },
+    {
+      "id": "s8",
+      "name": "Hoya de Huidobro",
+      "quote": "La Hoya de Huidobro, cuenca cerrada al sueste de Valdelateja con un gran bosque de hayas y robles y donde se encuentra el dolmen del moreco.",
+      "english": "The Hoya de Huidobro, a closed basin southeast of Valdelateja with a large forest of beech and oak trees and where the El Moreco dolmen is located."
+    },
+    {
+      "id": "s9",
+      "name": "Garganta de los Hocinos",
+      "quote": "La Garganta de los Hocinos entre Hocina y Valdenoceda.",
+      "english": "The Throat of the Hocinos between Hocina and Valdenoceda."
+    },
+    {
+      "id": "s10",
+      "name": "hoz de Sobrón",
+      "quote": "La hoz de Sobrón, profundo cañón con una gran colonia de buitres y que sirve de frontera.",
+      "english": "The Sobrón gorge, a deep canyon with a large colony of vultures and which serves as a border."
+    }
+  ],
+  "days": [
+    {
+      "title": "Geological Wonders and Blue Springs",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Canyons and Mountain Folds",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Forest Basins and Deep Throats",
+      "stop_ids": [
+        "s8",
+        "s9",
+        "s10"
+      ]
+    }
+  ],
+  "_text_sha": "20be55bb9285df8adac8af71b56f6b9ca0f6e0c3acfe9a96f877ae1a3c246225"
+}

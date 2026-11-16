@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "El Cueto de Arbas",
+      "quote": "Dentro del parque el pico más importante es El Cueto de Arbas que da nombre a la reserva, con 2006 metros de altitud.",
+      "english": "Within the park, the most important peak is El Cueto de Arbas, which gives the reserve its name, standing at 2006 meters in altitude."
+    },
+    {
+      "id": "s2",
+      "name": "Lagunas de Arbas",
+      "quote": "Destaca también su extensa red hidrográfica que cuenta con numerosas lagunas y turberas como las de Arbas, Chauchina, Fuentes del Narcea, Reconco, Chagueños o Changreiro entre otros que acogen una rica vida animal y vegetal que por su tamaño muchas veces pasa desapercibida.",
+      "english": "Also notable is its extensive hydrographic network that features numerous lagoons and peat bogs such as those of Arbas, Chauchina, Fuentes del Narcea, Reconco, Chagueños, or Changreiro, among others, which host a rich animal and plant life that often goes unnoticed due to its size."
+    },
+    {
+      "id": "s3",
+      "name": "Valle de Degaña",
+      "quote": "El parque natural cuenta a su vez con un gran número de valles entre el que destaca el Valle de Degaña.",
+      "english": "The natural park also has a large number of valleys, among which the Degaña Valley stands out."
+    },
+    {
+      "id": "s4",
+      "name": "Bosque de Munieḷḷos",
+      "quote": "En el parque existe uno de los robledales más extensos de Europa, denominado bosque de Munieḷḷos que se encuentra en el valle del mismo nombre.",
+      "english": "In the park there is one of the most extensive oak forests in Europe, called the Munieḷḷos forest, which is located in the valley of the same name."
+    },
+    {
+      "id": "s5",
+      "name": "Valle De Hermo",
+      "quote": "El hayedo más importante que se encuentra dentro del parque es el de Valle De Hermo con una extensión de 10 km.",
+      "english": "The most important beech forest found within the park is the one in Valle De Hermo, covering an area of 10 km."
+    },
+    {
+      "id": "s6",
+      "name": "Turberas de Reconco",
+      "quote": "También podemos encontrar en determinadas zonas el nenúfar amarillo pequeño que se encuentra en las turberas de Reconco, el único lugar de la península donde crece o el ranúnculo de Muniellos, especie endémica que nace en los pedregales.​​",
+      "english": "We can also find in certain areas the small yellow water lily found in the Reconco peat bogs, the only place on the peninsula where it grows, or the Muniellos buttercup, an endemic species that grows in stony ground."
+    },
+    {
+      "id": "s7",
+      "name": "Monasterio de Corias",
+      "quote": "El centro de interpretación está situado en las antiguas cuadras del monasterio de San Juan Bautista de Corias a la entrada de la localidád de Cangas del Narcea.",
+      "english": "The visitor center is located in the old stables of the monastery of San Juan Bautista de Corias at the entrance to the town of Cangas del Narcea."
+    }
+  ],
+  "days": [
+    {
+      "title": "Cangas Peaks and Heritage",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Ancient Forests and Peat Bogs",
+      "stop_ids": [
+        "s4",
+        "s6"
+      ]
+    },
+    {
+      "title": "Southern Valleys and Beeches",
+      "stop_ids": [
+        "s3",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "4cbb768cb2f5930940324cb8e1097cec926a308969dbee475a570cb354ed95e5"
+}

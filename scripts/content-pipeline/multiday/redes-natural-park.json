@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Cascada del Tabayón de Mongayu",
+      "quote": "El discurso de muchos de estos arroyos atraviesa formaciones calcáreas dando encajamientos muy bonitos como puede apreciarse por ejemplo en la ruta del Alba, o incluso alguna hermosa cascada cómo la Cascada del Tabayón de Mongayu.",
+      "english": "The flow of many of these streams crosses limestone formations creating very beautiful narrowings as can be seen for example in the Alba route, or even a beautiful waterfall like the Tabayón de Mongayu Waterfall."
+    },
+    {
+      "id": "s2",
+      "name": "Llagu Ubales",
+      "quote": "En la zona del Llagu Ubales aparece el helecho juncal, especie de alto valor ecológico, protegida y que también se encuentra en la Laguna de Arbás, en el parque natural de las Fuentes del Narcea y del Ibias.",
+      "english": "In the Llagu Ubales area the quillwort appears, a species of high ecological value, protected and also found in the Arbás Lagoon, in the Fuentes del Narcea and Ibias natural park."
+    },
+    {
+      "id": "s3",
+      "name": "Vega Brañagallones",
+      "quote": "Ruta de la Vega Brañagallones, desde el pueblo de Bezanes sale una pista forestal, de unos 10 km de longitud, que nos conducirirá directamente hasta la antigua braña, la cual aún conserva en pie muchas de sus tradicionales cabañas y un albergue de montaña.",
+      "english": "Vega Brañagallones Route, from the village of Bezanes a forest track starts, about 10 km long, which will lead us directly to the old summer pasture, which still has many of its traditional cabins and a mountain hostel standing."
+    },
+    {
+      "id": "s4",
+      "name": "Peña'l Vientu",
+      "quote": "Ascensión a la Peña'l Vientu, con sus 2000 m es uno de los picos más altos de la zona.",
+      "english": "Ascent to Peña'l Vientu, with its 2000 m it is one of the highest peaks in the area."
+    },
+    {
+      "id": "s5",
+      "name": "Museo de la madera",
+      "quote": "El museo de la madera de Campo de Caso, se centra en el uso y comercialización de este recurso dentro de los pueblos de la zona.",
+      "english": "The wood museum of Campo de Caso focuses on the use and commercialization of this resource within the villages of the area."
+    },
+    {
+      "id": "s6",
+      "name": "Museo de la madreña",
+      "quote": "El museo de la madreña de Beneros, iniciado por voluntad de una asociación vecinal local, muestra la fabricación e historia de este calzado típico.",
+      "english": "The clog museum of Beneros, started by the will of a local neighborhood association, shows the manufacture and history of this typical footwear."
+    },
+    {
+      "id": "s7",
+      "name": "Casa del Agua",
+      "quote": "Se trata de un aula temática sobre el agua, la Casa del Agua, situada en Rioseco y con abundante material didáctico sobre los recursos hídricos del parque, no hay que olvidar que el parque es uno de los grandes suministradores de agua para consumo humano de Asturias con la presencia de varios embalses en las inmediaciones en el denominado eje Tanes-Rioseco que abastece al 80% de la población de Asturias.",
+      "english": "It is a themed classroom about water, the Water House, located in Rioseco and with abundant teaching material about the park's water resources; it should not be forgotten that the park is one of the great suppliers of water for human consumption in Asturias with the presence of several reservoirs in the vicinity in the so-called Tanes-Rioseco axis that supplies 80% of the population of Asturias."
+    }
+  ],
+  "days": [
+    {
+      "title": "Water and Heritage in Rioseco and Beneros",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "High Peaks and Glacial Lakes",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Waterfalls and Traditional Woodwork",
+      "stop_ids": [
+        "s1",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "ce35f4b527ca55db10b91224564559126a8c1259ed46b254af5fe755893da602"
+}

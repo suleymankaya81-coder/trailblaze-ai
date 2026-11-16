@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Sierra de la Lastra",
+      "quote": "El parque natural de la Sierra de la Lastra (en gallego: Serra da Enciña da Lastra) es un espacio natural protegido español situado en el noreste de la provincia de Orense, en el municipio de Rubiana, comarca de Valdeorras, que fue declarado parque natural en el año 2002 por la Junta de Galicia.",
+      "english": "The Sierra de la Lastra Natural Park (in Galician: Serra da Enciña da Lastra) is a Spanish protected natural area located in the northeast of the province of Ourense, in the municipality of Rubiana, Valdeorras region, which was declared a natural park in 2002 by the Xunta de Galicia."
+    },
+    {
+      "id": "s2",
+      "name": "Aciñeira de Covas",
+      "quote": "Árboles singulares como la Aciñeira de Covas",
+      "english": "Singular trees such as the Aciñeira de Covas"
+    },
+    {
+      "id": "s3",
+      "name": "palas",
+      "quote": "La abundancia de cuevas - que aquí se denominan palas - propicia la existencia de numerosas colonias de murciélagos, las más importantes de Galicia.",
+      "english": "The abundance of caves - which are called palas here - favors the existence of numerous bat colonies, the most important in Galicia."
+    },
+    {
+      "id": "s4",
+      "name": "valle de piedra caliza",
+      "quote": "Se trata de un valle de piedra caliza de pendientes pronunciadas y cantiles en los que se instalan bosques mediterráneos.",
+      "english": "It is a limestone valley with steep slopes and cliffs where Mediterranean forests are established."
+    }
+  ],
+  "days": [
+    {
+      "title": "Limestone Valley and Natural Wonders",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "f97e95cec143fb99fb89cb6946ea5ba0b5f60647a2b855e4961823461fd2ac80"
+}

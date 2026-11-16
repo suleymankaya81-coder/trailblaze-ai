@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Quintanilla del Rebollar",
+      "quote": "Existe un centro de interpretación del complejo kárstico en Quintanilla del Rebollar, a 6 km de la cueva.",
+      "english": "There is an interpretation center for the karst complex in Quintanilla del Rebollar, 6 km from the cave."
+    },
+    {
+      "id": "s2",
+      "name": "cueva y ermita de San Bernabé",
+      "quote": "Las más importantes son: cueva Covaneria, cueva Cornejo, las Diaclasas, sima de Dolencias, cueva y ermita de San Bernabé, sumidero del río Guareña, sima de los Huesos, cueva de Kaite, cueva Kubía, cueva de la Mina, cueva del Moro, cueva Palomera, sima Rizuelos, sima de Jaime, resurgencia el Torcón, resurgencia La Torcona, sumideros del Trema, último sumidero del Trema y sima Villallana.",
+      "english": "The most important ones are: Covaneria cave, Cornejo cave, the Diaclases, Dolencias chasm, San Bernabé cave and hermitage, Guareña river sinkhole, Bones chasm, Kaite cave, Kubía cave, Mine cave, Moor's cave, Palomera cave, Rizuelos chasm, Jaime's chasm, the Torcón resurgence, the La Torcona resurgence, Trema sinkholes, the last Trema sinkhole, and Villallana chasm."
+    },
+    {
+      "id": "s3",
+      "name": "cueva Palomera",
+      "quote": "En la cueva Palomera se encuentran pintura rupestres, cuyas dataciones les asignan una edad de 10 000 años BP (Magdaleniense Superior-Aziliense).",
+      "english": "In the Palomera cave there are cave paintings, whose dating assigns them an age of 10,000 years BP (Upper Magdalenian-Azilian)."
+    },
+    {
+      "id": "s4",
+      "name": "Sala de las huellas",
+      "quote": "En la Sala de las huellas se encuentran pisadas de pies descalzos que realizan un recorrido de ida y vuelta; la datación por radiocarbono de dos fragmentos de antorcha dio como resultado una antigüedades de 15 600 y 3600 años, por lo que se deduce que esas cuevas fueron transitadas durante milenios.",
+      "english": "In the Room of the Footprints, barefoot tracks are found forming a round-trip route; the radiocarbon dating of two torch fragments resulted in ages of 15,600 and 3,600 years, from which it is deduced that these caves were traveled for millennia."
+    },
+    {
+      "id": "s5",
+      "name": "cueva de Prado Vargas",
+      "quote": "Las señales más antiguas de presencia humana en el complejo de Ojo Guareña se encuentran en la cueva de Prado Vargas; después de una excavación se encontró industria lítica del Musteriense de hace 70 000 años.",
+      "english": "The oldest signs of human presence in the Ojo Guareña complex are found in the Prado Vargas cave; after an excavation, Mousterian lithic industry from 70,000 years ago was found."
+    },
+    {
+      "id": "s6",
+      "name": "cueva de Kaite",
+      "quote": "En la Cueva de Kaite aparecen pinturas que representan a cérvidos, y en las paredes y la bóveda de la Sala de la Fuente se encuentran dibujos antropomorfos, zoomorfos y geométricos, que abarcan un periodo de tiempo comprendido entre el Neolítico final y el principio de la Edad de Bronce.",
+      "english": "In the Kaite Cave, paintings representing cervids appear, and on the walls and vault of the Fountain Room, anthropomorphic, zoomorphic, and geometric drawings are found, spanning a period between the late Neolithic and the beginning of the Bronze Age."
+    },
+    {
+      "id": "s7",
+      "name": "Sala de la Fuente",
+      "quote": "En la Cueva de Kaite aparecen pinturas que representan a cérvidos, y en las paredes y la bóveda de la Sala de la Fuente se encuentran dibujos antropomorfos, zoomorfos y geométricos, que abarcan un periodo de tiempo comprendido entre el Neolítico final y el principio de la Edad de Bronce.",
+      "english": "In the Kaite Cave, paintings representing cervids appear, and on the walls and vault of the Fountain Room, anthropomorphic, zoomorphic, and geometric drawings are found, spanning a period between the late Neolithic and the beginning of the Bronze Age."
+    }
+  ],
+  "days": [
+    {
+      "title": "Visitor Center and Principal Caves",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Paleolithic Art and Ancient Tracks",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Neolithic Murals and Sacred Spaces",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "04d8e3b04bf5d647a4a27b72867f061366aa4abd9be20c9c76adf3bb08159e0b"
+}

@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Siete Picos",
+      "quote": "En cualquier caso, durante buena parte de la Edad Media a la sierra de Guadarrama se la conoció como la «sierra del Dragón», probablemente por la silueta de Siete Picos, que se asemeja al lomo de un dragón, y con este nombre la citan, por ejemplo, el arzobispo Rodrigo Jiménez de Rada en De rebus Hispaniae o Alfonso X el Sabio en Estoria de España.",
+      "english": "In any case, during a good part of the Middle Ages, the Sierra de Guadarrama was known as the \"Dragon's Range\", probably because of the silhouette of Siete Picos, which resembles the back of a dragon, and with this name it is cited, for example, by Archbishop Rodrigo Jiménez de Rada in De rebus Hispaniae or Alfonso X the Wise in Estoria de España."
+    },
+    {
+      "id": "s2",
+      "name": "Peñalara",
+      "quote": "La prominencia media de los principales picos es de 1000 metros, y el más alto de ellos es Peñalara con 2428 metros.",
+      "english": "The average prominence of the main peaks is 1000 meters, and the highest of them is Peñalara at 2428 meters."
+    },
+    {
+      "id": "s3",
+      "name": "Río Guadarrama",
+      "quote": "El parque nacional Sierra de Guadarrama recibe su nombre del río Guadarrama, cuyo cauce discurre por la sierra de Guadarrama.",
+      "english": "The Sierra de Guadarrama National Park receives its name from the Guadarrama River, whose channel flows through the Guadarrama mountain range."
+    },
+    {
+      "id": "s4",
+      "name": "Río Lozoya",
+      "quote": "La sierra de Guadarrama comienza en el valle del río Alberche (extremo suroeste), que la separa de la sierra de Gredos y termina en el puerto de Somosierra (extremo noreste), sirviendo de separación a las cuencas hidrográficas de los ríos Tajo y Duero y aportando a ambos algunos de sus principales afluentes, como son los ríos Lozoya, Manzanares, Guadarrama y Cofio al Tajo, y el Duratón, Cega, Pirón, Eresma, Moros y Voltoya al Duero.",
+      "english": "The Guadarrama range begins in the Alberche river valley (southwest end), which separates it from the Gredos range, and ends at the Somosierra pass (northeast end), serving as a separation between the Tagus and Douro river basins and providing both with some of their main tributaries, such as the Lozoya, Manzanares, Guadarrama and Cofio rivers to the Tagus, and the Duratón, Cega, Pirón, Eresma, Moros and Voltoya to the Douro."
+    },
+    {
+      "id": "s5",
+      "name": "Río Manzanares",
+      "quote": "La sierra de Guadarrama... aportando a ambos algunos de sus principales afluentes, como son los ríos Lozoya, Manzanares, Guadarrama y Cofio al Tajo...",
+      "english": "The Guadarrama range... providing both with some of their main tributaries, such as the Lozoya, Manzanares, Guadarrama and Cofio rivers to the Tagus..."
+    },
+    {
+      "id": "s6",
+      "name": "Valle del río Alberche",
+      "quote": "La sierra de Guadarrama comienza en el valle del río Alberche (extremo suroeste), que la separa de la sierra de Gredos.",
+      "english": "The Guadarrama mountain range begins in the Alberche River valley (southwest end), which separates it from the Gredos mountain range."
+    },
+    {
+      "id": "s7",
+      "name": "Puerto de Somosierra",
+      "quote": "La sierra de Guadarrama comienza en el valle del río Alberche (extremo suroeste), que la separa de la sierra de Gredos y termina en el puerto de Somosierra (extremo noreste).",
+      "english": "The Guadarrama mountain range begins in the Alberche river valley (southwest end), which separates it from the Gredos range and ends at the Somosierra pass (northeast end)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central High Peaks and Waters",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Eastern Pass and River Basins",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s7"
+      ]
+    },
+    {
+      "title": "Southwestern Valleys",
+      "stop_ids": [
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "208069f74d056f5758237af2e91888ea7ade000e0d1bd404498d89d763e1d46b"
+}

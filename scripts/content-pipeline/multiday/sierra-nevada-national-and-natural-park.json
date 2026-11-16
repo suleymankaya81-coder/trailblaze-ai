@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "laguna del Padul",
+      "quote": "Algunas zonas situadas dentro del parque natural, como la laguna del Padul, gozan de la misma protección que la del área del parque nacional.",
+      "english": "Some areas located inside the natural park, such as the Padul lagoon, enjoy the same protection as the national park area."
+    },
+    {
+      "id": "s2",
+      "name": "Observatorio de Sierra Nevada",
+      "quote": "Dentro de este parque se encuentra el Observatorio de Sierra Nevada, y la estación de esquí situada más al sur de Europa, conocida por sus suaves temperaturas y abundante número de horas de Sol.",
+      "english": "Inside this park is the Sierra Nevada Observatory and the southernmost ski resort in Europe, known for its mild temperatures and abundant hours of sunshine."
+    },
+    {
+      "id": "s3",
+      "name": "estación de esquí de Sierra Nevada",
+      "quote": "Dentro del parque se pueden practicar diferentes actividades, destacando las propias de la estación de esquí de Sierra Nevada, como el esquí o el snowboarding.",
+      "english": "Within the park different activities can be practiced, highlighting those of the Sierra Nevada ski resort, such as skiing or snowboarding."
+    },
+    {
+      "id": "s4",
+      "name": "Pico Mulhacén",
+      "quote": "Pico Mulhacén, con una altitud de 3479 metros s. n. m., es el pico más alto de la península ibérica.",
+      "english": "Mulhacén Peak, with an altitude of 3479 meters above sea level, is the highest peak in the Iberian Peninsula."
+    },
+    {
+      "id": "s5",
+      "name": "Jardín Botánico de la Cortijuela",
+      "quote": "En el borde del parque se encuentra el Jardín Botánico de la Cortijuela, donde las especies endémicas de Sierra Nevada son estudiados, preservados y vigilados.",
+      "english": "On the edge of the park is the Cortijuela Botanical Garden, where the endemic species of Sierra Nevada are studied, preserved, and monitored."
+    },
+    {
+      "id": "s6",
+      "name": "Centro Botánico Hoya de Pedraza",
+      "quote": "Dentro del parque se ubican: el Jardín Botánico de la Cortijuela, el Centro Botánico Hoya de Pedraza, ambos dependientes de la junta de Andalucía, y el Jardín Botánico de Sierra Nevada dependiente de la Universidad de Granada, en todos ellos, se investiga y se preservan las especies endémicas de la Sierra.",
+      "english": "Located within the park are: the Cortijuela Botanical Garden, the Hoya de Pedraza Botanical Center, both dependent on the Junta de Andalucía, and the Sierra Nevada Botanical Garden dependent on the University of Granada; in all of them, the endemic species of the Sierra are researched and preserved."
+    },
+    {
+      "id": "s7",
+      "name": "Jardín Botánico de Sierra Nevada",
+      "quote": "Dentro del parque se ubican: el Jardín Botánico de la Cortijuela, el Centro Botánico Hoya de Pedraza, ambos dependientes de la junta de Andalucía, y el Jardín Botánico de Sierra Nevada dependiente de la Universidad de Granada, en todos ellos, se investiga y se preservan las especies endémicas de la Sierra.",
+      "english": "Located within the park are: the Cortijuela Botanical Garden, the Hoya de Pedraza Botanical Center, both dependent on the Junta de Andalucía, and the Sierra Nevada Botanical Garden dependent on the University of Granada; in all of them, the endemic species of the Sierra are researched and preserved."
+    }
+  ],
+  "days": [
+    {
+      "title": "Science and High Peaks",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Botanical Heritage and Lagoons",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "7a90c023d879d404b347300474f8eb737c8ed426ebb4763ebd76bdcf7cd1ff3f"
+}

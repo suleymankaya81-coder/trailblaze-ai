@@ -1,0 +1,134 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "tormo alto",
+      "quote": "Existe un recorrido señalizado, de unos 3 kilómetros de longitud, de dificultad mínima, que se realiza en aproximadamente una hora y media, para visitar las diversas rocas y formaciones a las que se han dado nombres de animales y de objetos como el tormo alto (símbolo de la Ciudad Encantada), que se encuentra justo a la entrada del recorrido.",
+      "english": "There is a signposted route, about 3 kilometers long, of minimum difficulty, which takes approximately an hour and a half, to visit the various rocks and formations that have been given the names of animals and objects such as the tormo alto (symbol of the Enchanted City), which is located right at the entrance of the route."
+    },
+    {
+      "id": "s2",
+      "name": "Los barcos",
+      "quote": "El resto de figuras del itinerario actual son: Los barcos.",
+      "english": "The rest of the figures on the current itinerary are: The ships."
+    },
+    {
+      "id": "s3",
+      "name": "El perro",
+      "quote": "El resto de figuras del itinerario actual son: El perro.",
+      "english": "The rest of the figures on the current itinerary are: The dog."
+    },
+    {
+      "id": "s4",
+      "name": "Cara de hombre",
+      "quote": "El resto de figuras del itinerario actual son: Cara de hombre",
+      "english": "The rest of the figures on the current itinerary are: Face of a man"
+    },
+    {
+      "id": "s5",
+      "name": "La foca",
+      "quote": "El resto de figuras del itinerario actual son: La foca.",
+      "english": "The rest of the figures on the current itinerary are: The seal."
+    },
+    {
+      "id": "s6",
+      "name": "El tobogán",
+      "quote": "El resto de figuras del itinerario actual son: El tobogán.",
+      "english": "The rest of the figures on the current itinerary are: The slide."
+    },
+    {
+      "id": "s7",
+      "name": "El puente romano",
+      "quote": "El resto de figuras del itinerario actual son: El puente romano.",
+      "english": "The rest of the figures on the current itinerary are: The Roman bridge."
+    },
+    {
+      "id": "s8",
+      "name": "Mar de piedra",
+      "quote": "El resto de figuras del itinerario actual son: Mar de piedra.",
+      "english": "The rest of the figures on the current itinerary are: Sea of stone."
+    },
+    {
+      "id": "s9",
+      "name": "Lucha elefante cocodrilo",
+      "quote": "El resto de figuras del itinerario actual son: Lucha elefante cocodrilo.",
+      "english": "The rest of the figures on the current itinerary are: Elephant crocodile fight."
+    },
+    {
+      "id": "s10",
+      "name": "El convento",
+      "quote": "El resto de figuras del itinerario actual son: El convento.",
+      "english": "The rest of the figures on the current itinerary are: The convent."
+    },
+    {
+      "id": "s11",
+      "name": "Hongos",
+      "quote": "El resto de figuras del itinerario actual son: Hongos.",
+      "english": "The rest of the figures on the current itinerary are: Mushrooms."
+    },
+    {
+      "id": "s12",
+      "name": "Teatro",
+      "quote": "El resto de figuras del itinerario actual son: Teatro.",
+      "english": "The rest of the figures on the current itinerary are: Theater."
+    },
+    {
+      "id": "s13",
+      "name": "La tortuga",
+      "quote": "El resto de figuras del itinerario actual son: La tortuga.",
+      "english": "The rest of the figures on the current itinerary are: The tortoise."
+    },
+    {
+      "id": "s14",
+      "name": "Los osos",
+      "quote": "El resto de figuras del itinerario actual son: Los osos.",
+      "english": "The rest of the figures on the current itinerary are: The bears."
+    },
+    {
+      "id": "s15",
+      "name": "Los amantes de Teruel",
+      "quote": "El resto de figuras del itinerario actual son: Los amantes de Teruel.",
+      "english": "The rest of the figures on the current itinerary are: The lovers of Teruel."
+    },
+    {
+      "id": "s16",
+      "name": "La cara de Ariadna",
+      "quote": "El resto de figuras del itinerario actual son: La cara de Ariadna.",
+      "english": "The rest of the figures on the current itinerary are: Ariadna's face."
+    }
+  ],
+  "days": [
+    {
+      "title": "Entrance and Early Formations",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Central Geologic Wonders",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s10"
+      ]
+    },
+    {
+      "title": "Final Figures and Legends",
+      "stop_ids": [
+        "s11",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s16"
+      ]
+    }
+  ],
+  "_text_sha": "968422b163e012f5e2435c7c2a5c9f36ce93c7f355104153492859d28d79cb21"
+}
