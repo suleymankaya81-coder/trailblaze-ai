@@ -15,8 +15,9 @@ Checks, per place that has both a source-packets/<slug>.json and combined-conten
   7. no duplicate cover photo URL across all places examined.
 
 Run: python3 scripts/audits/fr-pt-gr-2026-11/verify.py
-Writes scripts/audits/fr-pt-gr-2026-11/report.md (counts only; the full narrative report is assembled
-separately by the parent task from this script's JSON side-output, report-data.json).
+Writes scripts/audits/fr-pt-gr-2026-11/verification-findings.md (per-place findings only) and
+report-data.json (machine-readable); the consolidated report.md deliverable is assembled separately
+and incorporates this script's totals.
 """
 import json
 import re
@@ -154,7 +155,7 @@ def main():
             lines.append(f"## {slug}")
             lines += [f"- {f}" for f in findings]
             lines.append("")
-    (OUT / "report.md").write_text("\n".join(lines))
+    (OUT / "verification-findings.md").write_text("\n".join(lines))
     print(json.dumps(report["totals"], indent=2))
 
 
