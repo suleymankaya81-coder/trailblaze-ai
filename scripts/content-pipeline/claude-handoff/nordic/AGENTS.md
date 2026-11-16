@@ -1,0 +1,2 @@
+- Nordic handoff catalogs preserve the existing country-array fields and add per-place references, access caveats and coverage ledgers; unknown coordinates and identities remain null rather than guessed. Why: external generation must distinguish discovery from verified navigation.
+- Coverage checks reconcile enumerated official park/route lists and authority names with catalog slugs or documented aliases, not estimated country totals. Why: large catalogs alone do not demonstrate completeness.

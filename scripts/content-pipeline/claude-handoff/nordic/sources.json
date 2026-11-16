@@ -1,0 +1,462 @@
+{
+  "checked_at": "2026-11-16",
+  "norway_iceland": {
+    "scope": "Travel-scope candidate discovery, not publication-ready destination content. Exhaustive official park and Norwegian scenic route sets; broad non-finite nature-destination candidate set. Distinct nested travel identities retained; coextensive labels collapsed. No AI generation endpoints used.",
+    "official_inventory_urls": {
+      "norway_mainland": [
+        "https://www.norgesnasjonalparker.no/en/nationalparks/",
+        "https://www.norgesnasjonalparker.no/nasjonalparker/ostmarka/",
+        "https://www.ssb.no/en/natur-og-miljo/areal/statistikk/vernede-omrader"
+      ],
+      "svalbard": [
+        "https://www.norgesnasjonalparker.no/en/nationalparks/svalbard/"
+      ],
+      "norway_routes": [
+        "https://www.nasjonaleturistveger.no/en/routes/",
+        "https://www.nasjonaleturistveger.no/en/gpx-files/"
+      ],
+      "iceland": [
+        "https://www.nattura.is/en",
+        "https://ust.is/english/visiting-iceland/protected-areas/national-parks/",
+        "https://www.visiticeland.com/scenic-routes-in-iceland/"
+      ]
+    },
+    "expected_names": {
+      "norway_mainland_parks": [
+        "Anárjohka National Park",
+        "Ånderdalen National Park",
+        "Blåfjella-Skjækerfjella National Park",
+        "Børgefjell National Park",
+        "Breheimen National Park",
+        "Dovre National Park",
+        "Dovrefjell-Sunndalsfjella National Park",
+        "Færder National Park",
+        "Femundsmarka National Park",
+        "Folgefonna National Park",
+        "Forollhogna National Park",
+        "Fulufjellet National Park",
+        "Gutulia National Park",
+        "Hallingskarvet National Park",
+        "Hardangervidda National Park",
+        "Jomfruland National Park",
+        "Jostedalsbreen National Park",
+        "Jotunheimen National Park",
+        "Junkerdal National Park",
+        "Láhko National Park",
+        "Langsua National Park",
+        "Lierne National Park",
+        "Lofotodden National Park",
+        "Lomsdal-Visten National Park",
+        "Møysalen National Park",
+        "Øvre Dividal National Park",
+        "Øvre Pasvik National Park",
+        "Raet National Park",
+        "Rago National Park",
+        "Reinheimen National Park",
+        "Reisa National Park",
+        "Rohkunborri National Park",
+        "Rondane National Park",
+        "Saltfjellet-Svartisen National Park",
+        "Seiland National Park",
+        "Sjunkhatten National Park",
+        "Skarvan and Roltdalen National Park",
+        "Stabbursdalen National Park",
+        "Varangerhalvøya National Park",
+        "Ytre Hvaler National Park",
+        "Østmarka National Park"
+      ],
+      "svalbard_parks": [
+        "Sør-Spitsbergen National Park",
+        "Nordvest-Spitsbergen National Park",
+        "Forlandet National Park",
+        "Van Mijenfjorden National Park",
+        "Nordre Isfjorden National Park",
+        "Sassen-Bünsow Land National Park",
+        "Indre Wijdefjorden National Park"
+      ],
+      "norway_designated_routes": [
+        "Varanger Norwegian Scenic Route",
+        "Havøysund Norwegian Scenic Route",
+        "Senja Norwegian Scenic Route",
+        "Andøya Norwegian Scenic Route",
+        "Lofoten Norwegian Scenic Route",
+        "Helgelandskysten Norwegian Scenic Route",
+        "Atlanterhavsvegen Norwegian Scenic Route",
+        "Geiranger – Trollstigen Norwegian Scenic Route",
+        "Gamle Strynefjellsvegen Norwegian Scenic Route",
+        "Rondane Norwegian Scenic Route",
+        "Sognefjellet Norwegian Scenic Route",
+        "Valdresflye Norwegian Scenic Route",
+        "Gaularfjellet Norwegian Scenic Route",
+        "Aurlandsfjellet Norwegian Scenic Route",
+        "Hardanger Norwegian Scenic Route",
+        "Hardangervidda Norwegian Scenic Route",
+        "Ryfylke Norwegian Scenic Route",
+        "Jæren Norwegian Scenic Route"
+      ],
+      "iceland_current_parks": [
+        "Þingvellir National Park",
+        "Snæfellsjökull National Park",
+        "Vatnajökull National Park"
+      ]
+    },
+    "inventory_comparison": {
+      "mainland": {
+        "expected": 41,
+        "actual": 41,
+        "finding": "English national park inventory lists 40 mainland parks; add Østmarka from Norwegian official page (2023). Statistics Norway reports 41. Visit Norway promotional page still says 47 total and is stale."
+      },
+      "svalbard": {
+        "expected": 7,
+        "actual": 7,
+        "renamed": "Van Mijenfjorden supersedes Nordenskiöld Land; no duplicate old-name park."
+      },
+      "norway_routes": {
+        "expected": 18,
+        "actual": 18
+      },
+      "iceland": {
+        "expected": 3,
+        "actual": 3,
+        "merged_aliases": {
+          "Vatnajökull National Park": [
+            "Skaftafell National Park",
+            "Jökulsárgljúfur National Park"
+          ]
+        },
+        "finding": "Skaftafell and Jökulsárgljúfur retained only as park_sector tourism records, never current separate national parks. Legacy UST fetch returned almost no text; search result and successor Nattura confirm three."
+      }
+    },
+    "exclusions": [
+      "Tiny protected reserves without distinct travel identity",
+      "Urban/historic-only attractions and cities",
+      "Former Gressåmoen National Park: merged into Blåfjella-Skjækerfjella",
+      "Former Øvre Anárjohka naming: same current Anárjohka identity",
+      "Former Nordenskiöld Land National Park: renamed/expanded Van Mijenfjorden",
+      "Former Skaftafell and Jökulsárgljúfur park pages as standalone current parks",
+      "Rallarvegen is a cycling route, not a scenic drive",
+      "Kjeragbolten collapsed into Kjerag",
+      "Hverir collapsed into Námafjall",
+      "Lakagígar collapsed into Laki",
+      "Snæfellsnes scenic circuit represented by peninsula identity, not duplicate"
+    ],
+    "field_conventions": {
+      "region": "Norwegian current county slugs where known; Iceland tourism regions. Null means unresolved; also_regions intentionally conservative, not exhaustive boundary coverage.",
+      "access": "foot means destination exploration, not absence of road to gateway; null means unverified; no remote park labelled road.",
+      "wikidata_lat_lng": "All null: native Wikipedia API refused HTTP 403; identifiers and coordinates not guessed.",
+      "enwiki": "true only where destination link matched a fetched reference; null otherwise.",
+      "identity_status": "unverified_individual_reference_requires_review means URL is a candidate, not a validated fetched article; must verify before handoff publication."
+    },
+    "unresolved_issues": [
+      "Candidate set outside mandatory inventories is broad but not provably exhaustive; no authoritative finite inventory of all hiking hubs/fjords exists.",
+      "Many individually constructed Wikipedia URLs have not been fetched; those rows are explicitly flagged and are not verified identity evidence.",
+      "QIDs and coordinates remain null because native API returned HTTP 403.",
+      "Cross-county also_regions and route counties remain incomplete.",
+      "Most non-park official_site values remain null; authoritative destination-level source enrichment still required.",
+      "Iceland volcanic-area closures, highland F-road access, Svalbard landing rules, and ferry requirements need current per-destination checks.",
+      "General nature_region classification includes some waterfalls and glaciers; normalize taxonomy before importing."
+    ],
+    "counts": {
+      "no": {
+        "total": 215,
+        "by_kind": {
+          "national_park": 48,
+          "scenic_route": 18,
+          "fjord": 28,
+          "island": 28,
+          "waterfall": 20,
+          "hiking_hub": 51,
+          "nature_region": 17,
+          "scenic_drive": 5
+        },
+        "unverified_reference_rows": 108
+      },
+      "is": {
+        "total": 181,
+        "by_kind": {
+          "national_park": 3,
+          "park_sector": 2,
+          "nature_region": 112,
+          "island": 6,
+          "geothermal_area": 18,
+          "hiking_hub": 4,
+          "waterfall": 27,
+          "scenic_route": 7,
+          "scenic_drive": 2
+        },
+        "unverified_reference_rows": 107
+      }
+    }
+  },
+  "denmark": {
+    "scope": "Denmark proper plus separately flagged fo/gl territories; scenic candidates explicitly marked, not all individually verified. Null QIDs/coordinates/enwiki mean unverified.",
+    "national_parks": {
+      "source_url": "https://danmarksnationalparker.dk/",
+      "complete_names": [
+        "Nationalpark Thy",
+        "Nationalpark Vadehavet",
+        "Nationalpark Mols Bjerge",
+        "Nationalpark Kongernes Nordsjælland",
+        "Nationalpark Skjoldungernes Land"
+      ]
+    },
+    "nature_parks": {
+      "source_url": "https://danskenaturparker.dk/oversigt-over-naturparker",
+      "complete_inventory_names": [
+        "Naturpark Amager",
+        "Naturpark Christiansø",
+        "Naturpark Flyndersø - Sønder Lem Vig",
+        "Naturpark Lillebælt",
+        "Naturpark Maribosøerne",
+        "Naturpark Mølleåen",
+        "Naturpark Nakskov Fjord",
+        "Naturpark Nissum Fjord",
+        "Naturpark Nordals",
+        "Naturpark Randers Fjord",
+        "Naturpark Tolne",
+        "Naturpark Tryggevælde Ådal",
+        "Naturpark Vesterhavet",
+        "Naturpark Åmosen",
+        "Pilotnaturpark Gudenåen",
+        "Pilotnaturpark Nordfyn",
+        "Pilotnaturpark Svanegrund",
+        "Sven-Åge Westphalen"
+      ],
+      "listed_nonpilot_count": 14,
+      "listed_pilot_count": 3,
+      "caveat": "Inventory mixes recognized and pilot parks. Nordals image alt says pilot although heading says Naturpark; verify certification before publication. May 2025 council news certifies Sønder Lem Vig and Tryggevælde Ådal; former Flyndersø name must be reconciled, not blindly counted twice.",
+      "update_source_url": "https://friluftsraadet.dk/aktuelt/danske-naturparker-udvider-to-genmaerkninger-to-nye-naturparker-godkendt"
+    },
+    "counts": {
+      "total_records": 65,
+      "denmark_proper": 55,
+      "faroe": 4,
+      "greenland": 6
+    },
+    "schema_notes": "country=dk is realm catalog membership; territory uses ISO dk/fo/gl and must control routing/access. Mainland five parks exclude Greenland national park. Scenic coverage is broad but not exhaustive; candidates require source validation."
+  },
+  "sweden_finland": {
+    "se": {
+      "url": "https://www.sverigesnationalparker.se/en/parks/",
+      "names": [
+        "Abisko National Park",
+        "Björnlandet National Park",
+        "Blå Jungfrun National Park",
+        "Dalby Söderskog National Park",
+        "Djurö National Park",
+        "Fulufjället National Park",
+        "Färnebofjärden National Park",
+        "Garphyttan National Park",
+        "Gotska Sandön National Park",
+        "Hamra National Park",
+        "Haparanda Skärgård National Park",
+        "Kosterhavet National Park",
+        "Muddus/Muttos National Park",
+        "Norra Kvill National Park",
+        "Nämdöskärgården National Park",
+        "Padjelanta/Badjelánnda National Park",
+        "Pieljekaise National Park",
+        "Sarek National Park",
+        "Skuleskogen National Park",
+        "Sonfjället National Park",
+        "Stenshuvud National Park",
+        "Stora Sjöfallet/Stuor Muorkke National Park",
+        "Store Mosse National Park",
+        "Söderåsen National Park",
+        "Tiveden National Park",
+        "Tresticklan National Park",
+        "Tyresta National Park",
+        "Töfsingdalen National Park",
+        "Vadvetjåkka National Park",
+        "Åsnen National Park",
+        "Ängsö National Park"
+      ],
+      "rendered_count": 31,
+      "declared_count": 31
+    },
+    "fi": {
+      "url": "https://luontoon.fi/en/articles/national-parks",
+      "names": [
+        "Archipelago National Park",
+        "Bothnian Bay National Park",
+        "Ekenäs Archipelago National Park",
+        "Gulf of Finland National Park",
+        "Helvetinjärvi National Park",
+        "Hiidenportti National Park",
+        "Hossa National Park",
+        "Isojärvi National Park",
+        "Kauhaneva-Pohjankangas National Park",
+        "Koli National Park",
+        "Kolovesi National Park",
+        "Kurjenrahka National Park",
+        "Lauhanvuori National Park",
+        "Leivonmäki National Park",
+        "Lemmenjoki National Park",
+        "Liesjärvi National Park",
+        "Linnansaari National Park",
+        "Nuuksio National Park",
+        "Oulanka National Park",
+        "Pallas-Yllästunturi National Park",
+        "Patvinsuo National Park",
+        "Petkeljärvi National Park",
+        "Puurijärvi and Isosuo National Park",
+        "Pyhä-Häkki National Park",
+        "Pyhä-Luosto National Park",
+        "Päijänne National Park",
+        "Repovesi National Park",
+        "Riisitunturi National Park",
+        "Rokua National Park",
+        "Salla National Park",
+        "Salamajärvi National Park",
+        "Seitseminen National Park",
+        "Sipoonkorpi National Park",
+        "Southern Konnevesi National Park",
+        "Syöte National Park",
+        "Teijo National Park",
+        "Tiilikkajärvi National Park",
+        "Torronsuo National Park",
+        "Urho Kekkonen National Park",
+        "Valkmusa National Park"
+      ],
+      "rendered_count": 40,
+      "declared_count": 41
+    }
+  },
+  "assembly_notes": {
+    "merged": [
+      {
+        "country": "fi",
+        "from": "torronsuo",
+        "to": "torronsuo-national-park",
+        "reason": "same destination or overlapping historical park label; no duplicate page"
+      },
+      {
+        "country": "fi",
+        "from": "riisitunturi",
+        "to": "riisitunturi-national-park",
+        "reason": "same destination or overlapping historical park label; no duplicate page"
+      },
+      {
+        "country": "fi",
+        "from": "pallas",
+        "to": "pallas-yllastunturi-national-park",
+        "reason": "same destination or overlapping historical park label; no duplicate page"
+      },
+      {
+        "country": "dk",
+        "from": "naturpark-sonder-lem-vig",
+        "to": "naturpark-flynderso-sonder-lem-vig",
+        "reason": "same destination or overlapping historical park label; no duplicate page"
+      }
+    ],
+    "reference_failures": [
+      {
+        "country": "se",
+        "slug": "vindelfjallen-nature-reserve",
+        "issue": "individual reference failed/empty; destination retained, not certified"
+      },
+      {
+        "country": "se",
+        "slug": "lake-vattern",
+        "issue": "individual reference failed/empty; destination retained, not certified"
+      },
+      {
+        "country": "se",
+        "slug": "funasfjallen",
+        "issue": "individual reference failed/empty; destination retained, not certified"
+      },
+      {
+        "country": "fi",
+        "slug": "martinselkonen",
+        "issue": "individual reference failed/empty; destination retained, not certified"
+      },
+      {
+        "country": "fi",
+        "slug": "elimyssalo",
+        "issue": "individual reference failed/empty; destination retained, not certified"
+      },
+      {
+        "country": "fi",
+        "slug": "ulvinsalo-strict-nature-reserve",
+        "issue": "individual reference failed/empty; destination retained, not certified"
+      },
+      {
+        "country": "fi",
+        "slug": "siikaneva",
+        "issue": "individual reference failed/empty; destination retained, not certified"
+      },
+      {
+        "country": "fi",
+        "slug": "oro",
+        "issue": "individual reference failed/empty; destination retained, not certified"
+      },
+      {
+        "country": "fi",
+        "slug": "uto",
+        "issue": "individual reference failed/empty; destination retained, not certified"
+      },
+      {
+        "country": "fi",
+        "slug": "jurmo",
+        "issue": "individual reference failed/empty; destination retained, not certified"
+      },
+      {
+        "country": "fi",
+        "slug": "kilpisjarvi",
+        "issue": "individual reference failed/empty; destination retained, not certified"
+      },
+      {
+        "country": "fi",
+        "slug": "saana",
+        "issue": "individual reference failed/empty; destination retained, not certified"
+      },
+      {
+        "country": "fi",
+        "slug": "karhunkierros",
+        "issue": "individual reference failed/empty; destination retained, not certified"
+      },
+      {
+        "country": "fi",
+        "slug": "hetta-pallas-trail",
+        "issue": "individual reference failed/empty; destination retained, not certified"
+      },
+      {
+        "country": "fi",
+        "slug": "sevettijarvi-pulmanki-trail",
+        "issue": "individual reference failed/empty; destination retained, not certified"
+      },
+      {
+        "country": "fi",
+        "slug": "ukk-trail",
+        "issue": "individual reference failed/empty; destination retained, not certified"
+      },
+      {
+        "country": "fi",
+        "slug": "peuran-polku",
+        "issue": "individual reference failed/empty; destination retained, not certified"
+      },
+      {
+        "country": "fi",
+        "slug": "lake-inari",
+        "issue": "individual reference failed/empty; destination retained, not certified"
+      },
+      {
+        "country": "fi",
+        "slug": "lake-saimaa",
+        "issue": "individual reference failed/empty; destination retained, not certified"
+      },
+      {
+        "country": "fi",
+        "slug": "lake-paijanne",
+        "issue": "individual reference failed/empty; destination retained, not certified"
+      }
+    ]
+  },
+  "additional_discovery": "Country-filtered Wikidata protected areas with English article; selected tourism-significant identities, not every reserve. Exact article matches enrich coordinates, which are not navigation points.",
+  "scope_exclusions": [
+    "urban/historical-only sites",
+    "micro-reserves without distinct tourism identity",
+    "former parks as duplicate current parks"
+  ],
+  "territory_supplement": "Faroe/Greenland retained in realm-territories-supplement.json; NOT import-ready under dk country routes."
+}

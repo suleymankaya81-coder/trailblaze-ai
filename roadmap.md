@@ -1,3 +1,8 @@
+## November 16 Nordic Claude handoff
+- [x] Prepare 658 source-linked NO/IS/SE/FI/DK candidate records (224/188/82/100/64) in the Claude format; all 128 current national parks and 18 Norwegian scenic routes reconciled, plus Finnish hiking and Danish nature/pilot inventories. Unknown coordinates/regions and candidate references remain explicit; 10 realm-territory candidates are a separate supplement.
+- [x] Inspect recovered authority Europe navigation and Nordic country captures; country paths confirmed, but File Not Found/missing captures prevent historical park-name recovery. Archive evidence retained; no claim of complete historical park coverage.
+- [x] Validate all catalog structures and nine enumerated inventory mappings, eight tests and 28 lossless handoff batches; deliver inspected ZIP with reports/instructions. No destination publication requested.
+
 ## November 16 complete DACH audit
 - [x] Audit all 316 catalog destinations: 168 DE / 81 AT / 67 CH published; final park completed with licensed Purbach cover and sourced nature-park-office map anchor; 316 cached German versions saved, routing identities retained.
 - [x] Verify all 632 English/German pages (200, heading and metadata), all 316 displayed covers in Chromium, unique covers and published regions; six desktop/phone visits per language and German itinerary navigation checked, 296 JS / 78 Python tests pass. Source gaps remain explicit; offline German language quality and claim-by-claim factual accuracy are not certified. No app publication performed.
