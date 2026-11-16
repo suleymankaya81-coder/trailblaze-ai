@@ -373,6 +373,9 @@ def hav(a, b, c, d):
 
 def airports(lat, lng, n=4, country="us"):
     if not AIRPORTS:
+        import os, urllib.request
+        if not os.path.exists("/tmp/airports.csv"):
+            urllib.request.urlretrieve("https://davidmegginson.github.io/ourairports-data/airports.csv", "/tmp/airports.csv")
         with open("/tmp/airports.csv") as f:
             AIRPORTS.extend(r for r in csv.DictReader(f) if r["iso_country"] in ("US", "CA", "GB", "DE", "AT", "CH")
                 and r["scheduled_service"] == "yes" and r["iata_code"]

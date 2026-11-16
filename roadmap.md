@@ -209,3 +209,8 @@
 - [ ] Complete 34 England holds: individual official visitor/access evidence, tidal/island arrival checks and compact single-day presentation are missing; see dated review report.
 - [x] Repair apply/runner outcome checks and guarded draft readback; single cached batch saved 12 reviewed drafts including New Forest. New pages remain drafts pending final audit.
 - [x] Run regressions and guarded readback: 288 application / 37 Python tests; 11 England + New Forest saved, 34 England held with per-place reasons.
+
+## November 16 DACH chunks
+- [x] Chunk 1 Switzerland: 25 more published; held for coordinates (8), photos (5), quote check (1), no official page found (~25).
+- [ ] Chunk 2 Austria (official tourism search does not return results; needs another official page source)
+- [ ] Chunks 3–5 Germany
