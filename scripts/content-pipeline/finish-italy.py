@@ -22,14 +22,16 @@ def packet_and_page(row, title, lang='en'):
     paras = [p.strip() for p in text.split('\n') if len(p.strip()) >= 80]
     if len(text) < 200 or not paras: raise ValueError('English article too short; Italian-only text is not shown untranslated')
     name = page['title'].split(' (')[0]
-    excerpt = next((p for p in paras if name.casefold() in p.casefold()), paras[0])
+    hit = [p for p in paras if name.casefold() in p.casefold()]
+    if not hit: raise ValueError('Article text never names the place exactly')
+    excerpt = hit[0]
     url = f'https://{lang}.wikipedia.org/wiki/' + flex.quote(page['title'].replace(' ','_'))
     packet = {'slug':row['slug'],'approved_for_generation':True,'country_code':'it',
         'evidence_policy':'dach-wikipedia-overview','identity_verified':True,
         'review_note':'Wikidata-identified article; descriptive overview only, no current operational rules.',
         'sources':[{'url':url,'kind':'wikipedia','text':text,'generation_excerpts':[excerpt]}
                    | ({'display_translation':translate_excerpt(excerpt,'it'),'translation_method':'Argos offline it-en; original excerpt retained'} if lang=='it' else {})],
-        'approved_stops':[{'id':row['slug'],'name':row['name'],'quote':excerpt,'source_url':url}]}
+        'approved_stops':[{'id':row['slug'],'name':name,'quote':excerpt,'source_url':url}]}
     (ROOT/'source-packets'/f"{row['slug']}.json").write_text(json.dumps(packet,ensure_ascii=False,indent=2))
     return packet, page, lang
 

@@ -236,3 +236,8 @@
 - [x] Chunk 1 Switzerland: 25 more published; held for coordinates (8), photos (5), quote check (1), no official page found (~25).
 - [x] Finish Austria publication: 81/81 published in the final catalog audit under the approved flexible source policy; unknown current rules remain unknown.
 - [x] Finish Germany publication: 168/168 published with stored German versions; machine translation is not independently language-certified.
+
+## Italy (Southern Europe wave)
+- [x] 171 of 198 Italian places published (English); results in south-europe/italy-result-2026-11-16.json.
+- [ ] 27 held: 16 article never names the place, 4 boat/island (ferry evidence), 4 missing/ambiguous article, 3 cover/coordinates/short text.
+- [ ] German versions of Italian pages (translation run) not done yet.
