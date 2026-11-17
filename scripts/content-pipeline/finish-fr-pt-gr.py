@@ -59,7 +59,10 @@ GENERIC_WORDS = {
 
 
 def norm_words(name):
-    return [w for w in re.findall(r"[\w']+", name.casefold()) if w not in GENERIC_WORDS and len(w) > 3]
+    # Apostrophe excluded from the word class: an elision like "d'Annecy" or "d'Étretat" must
+    # split into "d" (stripped as a generic word, same as the space-separated "du"/"des"/"de")
+    # and "Annecy"/"Étretat", or it never matches a title spelled "Lake Annecy" / "Site d'Étretat".
+    return [w for w in re.findall(r"[\w]+", name.casefold()) if w not in GENERIC_WORDS and len(w) > 3]
 
 
 def sitelink(qid, local_lang, cache_dir):
@@ -112,7 +115,16 @@ def identity_and_packet(row, cc, local_lang, cache_dir):
         # row's own name here, or a bad QID silently pulls in an unrelated real article
         # (observed: a QID typo'd to an unrelated entity, e.g. a band or a video game).
         cat_words = set(norm_words(row['name']))
-        if cat_words and not (cat_words & set(norm_words(title))):
+        # A pure translation pair (e.g. "Pink Granite Coast" / "Côte de Granit Rose") can share
+        # no word with the sitelink title at all; check Wikidata's own recorded labels/aliases in
+        # every language too, not just the one title being fetched, before calling it a mismatch.
+        entity_words = set(norm_words(title))
+        for block in (entity.get('labels', {}), entity.get('aliases', {})):
+            for lang_entries in block.values():
+                entries = lang_entries if isinstance(lang_entries, list) else [lang_entries]
+                for entry in entries:
+                    entity_words.update(norm_words(entry['value']))
+        if cat_words and not (cat_words & entity_words):
             raise ValueError(f'identity mismatch: catalog name {row["name"]!r} vs '
                               f'Wikidata-resolved title {title!r} (wrong QID {row["wikidata"]})')
     else:

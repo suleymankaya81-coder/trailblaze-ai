@@ -1,8 +1,12 @@
 # fr/pt/gr offline verification (Step E)
 
-Checked 109 places with a combined-content bundle; 0 clean, 109 with findings, 0 with a packet but no bundle yet.
+Checked 125 places with a combined-content bundle; 0 clean, 125 with findings, 0 with a packet but no bundle yet.
 
 Duplicate cover photos within this batch: 0
+
+## aiguille-du-midi
+- tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'The Aiguille du Midi (French pronunciation: [eɡɥij dy midi], "Needle of the Mid-day") is a 3,842-metre-tall (1'
+- INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
 
 ## ainos-national-park
 - tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'Mount Ainos National Park (Greek: Εθνικός δρυμός Αίνου) is a national park in Cephalonia, Greece. It is locate'
@@ -64,8 +68,16 @@ Duplicate cover photos within this batch: 0
 - tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'Calanques National Park (French: Parc national des Calanques; Occitan: Parc Nacional dels Calanques) is a Fren'
 - INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
 
+## calanques-of-piana
+- tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'Calanques de Piana (Corsican: calanchi di Piana or calanche di Piana) are Corsican calanques located in Piana,'
+- INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
+
 ## camargue-regional-natural-park
 - tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'The Parc naturel régional de Camargue (Occitan: Parc natural regional de Camarga) is a protected area which wa'
+- INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
+
+## cap-frehel
+- tagline 110 chars (within pipeline cap but over the task's 90-char bar): "Cap Fréhel is a peninsula in Côtes-d'Armor, in northern Brittany, France which extends off the Côte d'Émeraude"
 - INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
 
 ## catalan-pyrenees-regional-natural-park
@@ -89,6 +101,10 @@ Duplicate cover photos within this batch: 0
 - tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'Mont Blanc (UK: ; US: ) is a mountain in the Alps, rising 4,807.3 m (15,771.9 ft) above sea level, located rig'
 - INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
 
+## cirque-de-gavarnie
+- tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'The Cirque de Gavarnie (French pronunciation: [siʁk də ɡavaʁni]) is a vast cirque in the central Pyrenees, in '
+- INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
+
 ## corno-do-bico-protected-landscape
 - tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'Corno do Bico Protected Landscape is a protected landscape in Portugal, entirely located in Paredes de Coura. '
 - INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
@@ -106,12 +122,20 @@ Duplicate cover photos within this batch: 0
 - tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'The Comunidade Intermunicipal do Douro (Portuguese pronunciation: [ˈdoɾu]) is an administrative division in Po'
 - INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
 
+## dune-of-pilat
+- tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'The Dune of Pilat (French: Dune du Pilat [dyn dy pila], official name), also called Grande Dune du Pilat, is t'
+- INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
+
 ## ecrins-national-park
 - tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'Écrins National Park (French: parc national des Écrins, pronounced [paʁk nɑsjɔnal dez‿ekʁɛ̃]; Occitan: parc Na'
 - INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
 
 ## elafonisi
 - tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'Elafonisi (Greek: Ελαφονήσι [elafoˈnisi], "Deer Island") is an island located close to the southwestern corner'
+- INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
+
+## etretat-cliffs
+- tagline 110 chars (within pipeline cap but over the task's 90-char bar): "Le site d'Étretat est un site naturel remarquable de la Côte d'Albâtre situé sur le territoire de la commune d"
 - INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
 
 ## evros-delta-national-park
@@ -144,6 +168,18 @@ Duplicate cover photos within this batch: 0
 
 ## forets-national-park
 - tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'Forêts National Park (French: Parc national de forêts) is a French national park located in the northeastern p'
+- INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
+
+## gorges-du-tarn
+- tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'The Gorges du Tarn (Occitan: Gòrjas de Tarn) is a canyon formed by the Tarn (river) between the Causse Méjean '
+- INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
+
+## gorges-du-verdon
+- tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'The Verdon Gorge (French: Gorges du Verdon; Occitan: Gòrja de Verdon) is a river canyon located in the Provenc'
+- INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
+
+## gouffre-de-padirac
+- tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'The Padirac Chasm (French: Gouffre de Padirac) is a cave located near Gramat, in the Lot department, Occitanie'
 - INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
 
 ## grands-causses-regional-natural-park
@@ -179,6 +215,10 @@ Duplicate cover photos within this batch: 0
 ## kotychi-and-strofylia-wetlands-national-park
 - stop detail is not an exact substring of its cited source: 'υγροτόπων λιμνοθάλασσας Κοτυχίου και δάσους Στροφυλιάς'
 - tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'Το εθνικό πάρκο υγροτόπων λιμνοθάλασσας Κοτυχίου και δάσους Στροφυλιάς είναι προστατευόμενη περιοχή στους νομο'
+- INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
+
+## lac-d-annecy
+- tagline 110 chars (within pipeline cap but over the task's 90-char bar): "Lake Annecy (French: Lac d'Annecy, [lak dansi]) is a perialpine lake in Haute-Savoie in France. It is named af"
 - INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
 
 ## lac-du-bourget
@@ -375,6 +415,18 @@ Duplicate cover photos within this batch: 0
 - tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'Pilat Regional Natural Park (French: Parc naturel régional du Pilat) is a protected area of mountainous countr'
 - INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
 
+## pink-granite-coast
+- tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'The Côte de granite rose or Pink Granite Coast (Breton: Arvor greunvaen roz) is a stretch of coastline in the '
+- INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
+
+## pointe-du-raz
+- tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'The Pointe du Raz (Breton: Poent ar Raz) is a promontory that extends into the Atlantic from western Brittany,'
+- INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
+
+## pont-d-arc
+- tagline 110 chars (within pipeline cap but over the task's 90-char bar): "The Pont d'Arc (French pont = bridge) is a large natural bridge, located in the Ardèche département in the sou"
+- INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
+
 ## ponta-da-piedade
 - tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'Ponta da Piedade (Portuguese for "point of mercy") is a headland with a group of rock formations along the coa'
 - INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
@@ -389,6 +441,10 @@ Duplicate cover photos within this batch: 0
 
 ## psiloritis-natural-park
 - tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'Psiloritis Natural Park extends on the Psiloritis mountain and its northern foothills till the Cretan Sea. It '
+- INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
+
+## puy-de-dome
+- tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'Puy de Dôme (US: , French: [pɥi də dom] ) is a lava dome and one of the youngest volcanoes in the Chaîne des P'
 - INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
 
 ## pyrenees-national-park
@@ -411,6 +467,10 @@ Duplicate cover photos within this batch: 0
 
 ## rodopi-mountain-range-national-park
 - tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'The Rodopi Mountain Range National Park (Greek: Εθνικό Πάρκο Οροσειράς Ροδόπης) is a national park in Greece, '
+- INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
+
+## route-des-grandes-alpes
+- tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'The Route des Grandes Alpes (RdGA) is a tourist itinerary through the French Alps between Lake Geneva and the '
 - INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
 
 ## sainte-baume-regional-nature-park
@@ -444,6 +504,10 @@ Duplicate cover photos within this batch: 0
 
 ## southwest-alentejo-and-vicentine-coast-natural-park
 - tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'Southwest Alentejo and Vicentine Coast Natural Park (PNSACV) is a natural park located in southwest Portugal. '
+- INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
+
+## valensole-plateau
+- tagline 110 chars (within pipeline cap but over the task's 90-char bar): 'Le plateau de Valensole est une région naturelle de France située dans les Alpes-de-Haute-Provence, au sud-oue'
 - INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)
 
 ## vanoise-national-park

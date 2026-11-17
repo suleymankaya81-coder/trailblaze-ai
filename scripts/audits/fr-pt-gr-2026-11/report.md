@@ -7,8 +7,9 @@ Everything below either edits code (committed) or is DRAFT content/SQL for the o
 
 - **Step A (country enablement): done.**
 - **Step B (catalog hygiene): done.**
-- **Step C (source collection): done.** 109/167 ready, 58 held with reason — see "Step C/D" below, including
-  a bad-Wikidata-QID bug this run caught and fixed in France's catalog before anything was reported.
+- **Step C (source collection): done.** 125/167 ready, 42 held with reason — see "Step C/D" below, including
+  a bad-Wikidata-QID bug this run caught before anything was reported, and a follow-up pass that found and
+  applied the correct QID for 16 of the 17 affected France rows.
 - **Owner instruction received mid-task: hold all France overseas-territory places from this wave.**
   No source packet or combined-content bundle will be built for them regardless of what automatic
   identity resolution would have found; they are marked held with reason "overseas territory — held
@@ -153,22 +154,66 @@ re-scan of all 109 final "ready" rows (fr+pt+gr) found no further mismatches. **
 catalog data-quality issue, not generated/invented content — nothing was published, and no wrong content
 survived into any output artifact.**
 
+## Step C/D follow-up: fixing the 17 bad Wikidata QIDs
+
+Per owner instruction, went back through the 17 identity-mismatch holds (16 of the 17 above, plus
+`cap-frehel` from the orphaned-packet case) one at a time and searched Wikidata directly by the catalog's
+own place name, accepting a replacement QID only when the match was exact: same name (including a
+Wikidata-recorded alias, not a self-made translation guess), a matching protected-area/landform `P31`
+type, country France (`P17=Q142`), and a coordinate within a few miles of the catalog's own lat/lng.
+**All 17 resolved to a confident exact match** — no uncertain cases, nothing left to list as candidates:
+
+| slug | wrong QID (held) | correct QID | match basis |
+|---|---|---|---|
+| gorges-du-verdon | Q1061209 (Pokrovka, Russia) | Q687057 | exact name "Gorges du Verdon"/"Verdon Gorge", canyon, France, 1.9mi |
+| mont-saint-michel-and-its-bay | Q180074 (Vasanello, Italy) | Q17117964 | exact name match, World Heritage Site, France, 0.0mi — **no Wikipedia sitelink exists for this exact-name entity, so it stays held** |
+| etretat-cliffs | Q217831 (Greenock, Scotland) | Q113840948 | exact name, France, 0.5mi, fr-only Wikipedia article |
+| dune-of-pilat | Q1263553 (Duclos-Lassalle surname) | Q501726 | exact name, tallest dune in Europe, France, 0.1mi |
+| cirque-de-gavarnie | Q1093370 (Coronation of the Virgin) | Q1093112 | exact name, glacial cirque, France, 0.1mi |
+| gorges-du-tarn | Q1537340 (Gonzalo Castellanos Yumar) | Q1538251 | exact name, canyon, France, 11.6mi (a long gorge; coordinate is one point along it) |
+| aiguille-du-midi | Q207306 (Godsmack) | Q404728 | exact name, mountain, France, 0.0mi |
+| pink-granite-coast | Q2996452 (a 1942 deportation convoy) | Q1150945 | "Pink Granite Coast" is a Wikidata-recorded English alias of this entity (fr label "Côte de Granit Rose"), coastline, France, 7.6mi |
+| calanques-of-piana | Q1025796 (Southern Bessarabia) | Q1026237 | exact name "Calanques de Piana", calanque, France, 5.9mi |
+| valensole-plateau | Q3238183 (Lielpilseta, Latvia) | Q3391918 | exact name "Plateau de Valensole" (French word order of the catalog's English gloss), plateau, France, 4.5mi |
+| route-des-grandes-alpes | Q1135389 (generic "subtitle" concept) | Q1471539 | exact name, tourist itinerary, France, 21.5mi (a ~700km route) |
+| pont-d-arc | Q1424549 (Jan Tábor) | Q1062180 | exact name, natural arch, France, 0.0mi |
+| puy-de-dome | Q842474 (Death Crimson OX video game) | Q607372 | exact name, volcano, France, 0.1mi |
+| lac-d-annecy | Q271210 (coat of arms of Liberia) | Q576704 | exact name "Lac d'Annecy"/"Lake Annecy", lake, France, 0.7mi |
+| gouffre-de-padirac | Q1544577 (an unrelated heritage-monument list) | Q1540116 | exact name, pit cave, France, 0.0mi |
+| cap-frehel | Q1034237 (Cape Hillsborough NP, Australia) | Q175676 | exact name, protected headland, France, 0.0mi |
+| pointe-du-raz | Q1415773 (Hildegard Trabant) | Q1500472 | exact name, cape, France, 0.2mi |
+
+Caught and fixed one more bug while verifying these: the identity cross-check's word-matching treated a
+French elision like `d'Annecy` or `d'Étretat` as one glued token, so it never matched a title spelled
+`Lake Annecy` or `Site d'Étretat` — `etretat-cliffs` and `lac-d-annecy` were briefly re-flagged as
+"mismatch" by the cross-check itself even with the correct QID now in place. Fixed `norm_words()` to split
+on the apostrophe (so "d'" is stripped as a generic word, same as the space-separated "du"/"des"/"de"
+already were) and broadened the cross-check to also match against the Wikidata entity's own recorded
+labels/aliases in any language, not just the one sitelink title being fetched (this is what let
+`pink-granite-coast` resolve correctly — not a translation guess, but Wikidata's own English alias field).
+
+Applied the 17 corrected QIDs to `scripts/content-pipeline/france/catalog.json` (minimal diff, only the
+`wikidata` field per row changed) and re-ran `finish-fr-pt-gr.py fr`. **16 of the 17 are now ready**; the
+17th (`mont-saint-michel-and-its-bay`) is identity-confirmed correct but stays held because the correct
+Wikidata entity has no English or French Wikipedia article at all — not a guess, just nothing to fetch.
+Per instruction, the 6 held overseas-territory rows were not touched.
+
 ### Final per-country results
 
 | country | ready | held | total |
 |---|---|---|---|
-| fr | 62 | 29 | 91 |
+| fr | 78 | 13 | 91 |
 | pt | 25 | 13 | 38 |
 | gr | 22 | 16 | 38 |
-| **total** | **109** | **58** | **167** |
+| **total** | **125** | **42** | **167** |
 
 Held-reason breakdown:
 
-- **fr (29 held):** 13 identity mismatch (bad catalog Wikidata QID — see above, includes `cap-frehel`),
-  6 overseas territory (owner instruction, exact 6 named rows), 4 no licensed unique cover photo,
-  3 no en/fr Wikipedia sitelink, 1 ferry/boat access (`scandola-nature-reserve`), 1 Wikidata entity fetch
-  404 (`route-napoleon`), 1 article never names the place exactly (`gorges-du-verdon` — correctly caught
-  independently of the QID-mismatch fix, since its bad QID happened to also fail the self-naming check).
+- **fr (13 held):** 6 overseas territory (owner instruction, exact 6 named rows), 4 no licensed unique
+  cover photo, 1 ferry/boat access (`scandola-nature-reserve`), 1 Wikidata entity fetch 404
+  (`route-napoleon` — a QID that doesn't resolve at all, distinct from and not part of the 17 "wrong QID"
+  rows above, so left as-is), 1 identity-confirmed-correct but no Wikipedia article
+  (`mont-saint-michel-and-its-bay`, see above).
 - **pt (13 held):** 6 article missing or ambiguous (title guess with no Wikidata QID didn't resolve),
   3 no licensed unique cover photo, 2 ferry/boat access (`landscape-of-the-pico-island-vineyard-culture`,
   `berlengas`), 1 no coordinate within country bounds (`laurisilva-of-madeira`), 1 article never names the
@@ -181,7 +226,7 @@ Both owner-specified hold lists are honored exactly: all 6 named overseas-territ
 ferry/island rows are held for those specific reasons, nowhere else.
 
 Artifacts written (all draft, nothing published): `scripts/content-pipeline/source-packets/<slug>.json`
-and `combined-content/<slug>.json` for the 109 ready places; `france/fr-result.json`,
+and `combined-content/<slug>.json` for the 125 ready places; `france/fr-result.json`,
 `south-europe/pt-result.json`, `south-europe/gr-result.json` (full per-row status); `france/apply-ready.sql`,
 `south-europe/apply-pt-ready.sql`, `south-europe/apply-gr-ready.sql` (ready-to-run draft inserts, never
 executed by this work); discovery-cache and europe-prepare-cache directories (raw fetched pages, for
@@ -189,7 +234,7 @@ reproducibility/audit, no secrets).
 
 ## Step E: offline verification (verify.py)
 
-Ran `scripts/audits/fr-pt-gr-2026-11/verify.py` against the final 109 ready bundles: 109 checked, 0 with
+Ran `scripts/audits/fr-pt-gr-2026-11/verify.py` against the final 125 ready bundles: 125 checked, 0 with
 uncited sources, 0 with an unapproved stop, 0 duplicate cover photos, every hero photo has a non-empty
 credit and licence. Remaining findings (none blocking):
 - Many taglines run 91–110 chars (within the pipeline's own 110 cap, over the task's tighter 90-char
@@ -213,12 +258,13 @@ applies the SQL and runs the publish pipeline.
 
 ## Owner checklist
 
-1. Review the 109 ready `source-packets/`/`combined-content/` pairs (or a sample) before applying anything.
+1. Review the 125 ready `source-packets/`/`combined-content/` pairs (or a sample) before applying anything.
 2. Review and, if correct, run `france/apply-ready.sql`, `south-europe/apply-pt-ready.sql`,
    `south-europe/apply-gr-ready.sql` by hand with real DB credentials — not run by this work.
-3. **Fix the 17 bad Wikidata QIDs in `france/catalog.json`** (listed in the identity-mismatch held reasons)
-   if those 12+ places should be included in a future wave — this needs a human to find the *correct* QID
-   per place, which this zero-model pipeline deliberately does not guess.
+3. ~~Fix the 17 bad Wikidata QIDs in `france/catalog.json`~~ — **done**, see "Step C/D follow-up" above.
+   16 are now ready; `mont-saint-michel-and-its-bay` is identity-confirmed correct but still held (no
+   Wikipedia article exists for that exact entity) — if this place matters for this wave, it needs a
+   source other than Wikipedia, which this pipeline doesn't fetch.
 4. Decide on the 6 held overseas-territory rows and 6 held ferry/island rows per the existing policy notes
    above (manual Wikivoyage-arrival review needed for ferry rows, per `finish-italy.py`'s `FERRY` pattern).
 5. Verify the unverified items already flagged in Step A: the `/eu/fr -> fr` legacy redirect (no Wayback

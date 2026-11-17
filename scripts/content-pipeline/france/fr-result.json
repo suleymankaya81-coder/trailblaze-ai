@@ -682,20 +682,6 @@
       "drive_minutes": 84
     },
     {
-      "slug": "gorges-du-verdon",
-      "status": "held",
-      "reason": "article text never names the place exactly: Pokrovka, Dyurtyulinsky District, Republic of Bashkortostan",
-      "country": "fr",
-      "region": "provence-alpes-cote-d-azur"
-    },
-    {
-      "slug": "gorges-du-tarn",
-      "status": "held",
-      "reason": "no en/fr Wikipedia sitelink",
-      "country": "fr",
-      "region": "occitania"
-    },
-    {
       "slug": "chamonix-and-mont-blanc",
       "status": "ready",
       "country": "fr",
@@ -720,109 +706,171 @@
       "region": "provence-alpes-cote-d-azur"
     },
     {
-      "slug": "pont-d-arc",
-      "status": "held",
-      "reason": "no en/fr Wikipedia sitelink",
+      "slug": "gorges-du-verdon",
+      "status": "ready",
       "country": "fr",
-      "region": "auvergne-rhone-alpes"
-    },
-    {
-      "slug": "gouffre-de-padirac",
-      "status": "held",
-      "reason": "no en/fr Wikipedia sitelink",
-      "country": "fr",
-      "region": "occitania"
+      "region": "provence-alpes-cote-d-azur",
+      "wikipedia_lang": "en",
+      "coordinate_source": "wikipedia-article-coordinates",
+      "airport": "TLN",
+      "drive_minutes": 114
     },
     {
       "slug": "mont-saint-michel-and-its-bay",
       "status": "held",
-      "reason": "identity mismatch: catalog name 'Mont-Saint-Michel and its Bay' vs Wikidata-resolved title 'Vasanello' (wrong QID Q180074)",
-      "country": "fr",
-      "region": "normandy"
-    },
-    {
-      "slug": "etretat-cliffs",
-      "status": "held",
-      "reason": "identity mismatch: catalog name 'Étretat Cliffs' vs Wikidata-resolved title 'Greenock' (wrong QID Q217831)",
+      "reason": "no en/fr Wikipedia sitelink",
       "country": "fr",
       "region": "normandy"
     },
     {
       "slug": "dune-of-pilat",
-      "status": "held",
-      "reason": "identity mismatch: catalog name 'Dune of Pilat' vs Wikidata-resolved title 'Duclos-Lassalle' (wrong QID Q1263553)",
+      "status": "ready",
       "country": "fr",
-      "region": "nouvelle-aquitaine"
+      "region": "nouvelle-aquitaine",
+      "wikipedia_lang": "en",
+      "coordinate_source": "wikipedia-article-coordinates",
+      "airport": "BOD",
+      "drive_minutes": 59
     },
     {
       "slug": "cirque-de-gavarnie",
-      "status": "held",
-      "reason": "identity mismatch: catalog name 'Cirque de Gavarnie' vs Wikidata-resolved title 'Coronation of the Virgin' (wrong QID Q1093370)",
+      "status": "ready",
       "country": "fr",
-      "region": "occitania"
+      "region": "occitania",
+      "wikipedia_lang": "en",
+      "coordinate_source": "wikipedia-article-coordinates",
+      "airport": "LDE",
+      "drive_minutes": 66
+    },
+    {
+      "slug": "gorges-du-tarn",
+      "status": "ready",
+      "country": "fr",
+      "region": "occitania",
+      "wikipedia_lang": "en",
+      "coordinate_source": "wikipedia-article-coordinates",
+      "airport": "RDZ",
+      "drive_minutes": 78
     },
     {
       "slug": "aiguille-du-midi",
-      "status": "held",
-      "reason": "identity mismatch: catalog name 'Aiguille du Midi' vs Wikidata-resolved title 'Godsmack' (wrong QID Q207306)",
+      "status": "ready",
       "country": "fr",
-      "region": "auvergne-rhone-alpes"
-    },
-    {
-      "slug": "pink-granite-coast",
-      "status": "held",
-      "reason": "identity mismatch: catalog name 'Pink Granite Coast' vs Wikidata-resolved title 'Convoi no 12 du 10 octobre 1942' (wrong QID Q2996452)",
-      "country": "fr",
-      "region": "brittany"
+      "region": "auvergne-rhone-alpes",
+      "wikipedia_lang": "en",
+      "coordinate_source": "wikipedia-article-coordinates",
+      "airport": "NCY",
+      "drive_minutes": 71
     },
     {
       "slug": "calanques-of-piana",
-      "status": "held",
-      "reason": "identity mismatch: catalog name 'Calanques of Piana' vs Wikidata-resolved title 'Southern Bessarabia' (wrong QID Q1025796)",
+      "status": "ready",
       "country": "fr",
-      "region": "corsica"
+      "region": "corsica",
+      "wikipedia_lang": "en",
+      "coordinate_source": "wikipedia-article-coordinates",
+      "airport": "AJA",
+      "drive_minutes": 81
     },
     {
       "slug": "valensole-plateau",
-      "status": "held",
-      "reason": "identity mismatch: catalog name 'Valensole Plateau' vs Wikidata-resolved title 'Lielpilseta' (wrong QID Q3238183)",
+      "status": "ready",
       "country": "fr",
-      "region": "provence-alpes-cote-d-azur"
+      "region": "provence-alpes-cote-d-azur",
+      "wikipedia_lang": "fr",
+      "coordinate_source": "wikipedia-article-coordinates",
+      "airport": "MRS",
+      "drive_minutes": 90
     },
     {
       "slug": "route-des-grandes-alpes",
-      "status": "held",
-      "reason": "identity mismatch: catalog name 'Route des Grandes Alpes' vs Wikidata-resolved title 'Subtitle (titling)' (wrong QID Q1135389)",
+      "status": "ready",
       "country": "fr",
-      "region": "auvergne-rhone-alpes"
+      "region": "auvergne-rhone-alpes",
+      "wikipedia_lang": "en",
+      "coordinate_source": "wikidata-P625",
+      "airport": "CMF",
+      "drive_minutes": 144
+    },
+    {
+      "slug": "pont-d-arc",
+      "status": "ready",
+      "country": "fr",
+      "region": "auvergne-rhone-alpes",
+      "wikipedia_lang": "en",
+      "coordinate_source": "wikipedia-article-coordinates",
+      "airport": "AVN",
+      "drive_minutes": 87
     },
     {
       "slug": "puy-de-dome",
-      "status": "held",
-      "reason": "identity mismatch: catalog name 'Puy de Dôme' vs Wikidata-resolved title 'Death Crimson OX' (wrong QID Q842474)",
+      "status": "ready",
       "country": "fr",
-      "region": "auvergne-rhone-alpes"
+      "region": "auvergne-rhone-alpes",
+      "wikipedia_lang": "en",
+      "coordinate_source": "wikipedia-article-coordinates",
+      "airport": "CFE",
+      "drive_minutes": 39
     },
     {
-      "slug": "lac-d-annecy",
-      "status": "held",
-      "reason": "identity mismatch: catalog name \"Lac d'Annecy\" vs Wikidata-resolved title 'Coat of arms of Liberia' (wrong QID Q271210)",
+      "slug": "gouffre-de-padirac",
+      "status": "ready",
       "country": "fr",
-      "region": "auvergne-rhone-alpes"
-    },
-    {
-      "slug": "pointe-du-raz",
-      "status": "held",
-      "reason": "identity mismatch: catalog name 'Pointe du Raz' vs Wikidata-resolved title 'Hildegard Trabant' (wrong QID Q1415773)",
-      "country": "fr",
-      "region": "brittany"
+      "region": "occitania",
+      "wikipedia_lang": "en",
+      "coordinate_source": "wikipedia-article-coordinates",
+      "airport": "BVE",
+      "drive_minutes": 46
     },
     {
       "slug": "cap-frehel",
-      "status": "held",
-      "reason": "identity mismatch: catalog name 'Cap Fréhel' vs Wikidata-resolved title 'Cape Hillsborough National Park' (wrong QID Q1034237)",
+      "status": "ready",
       "country": "fr",
-      "region": "brittany"
+      "region": "brittany",
+      "wikipedia_lang": "en",
+      "coordinate_source": "wikipedia-article-coordinates",
+      "airport": "RNS",
+      "drive_minutes": 104
+    },
+    {
+      "slug": "pointe-du-raz",
+      "status": "ready",
+      "country": "fr",
+      "region": "brittany",
+      "wikipedia_lang": "en",
+      "coordinate_source": "wikipedia-article-coordinates",
+      "airport": "BES",
+      "drive_minutes": 110
+    },
+    {
+      "slug": "etretat-cliffs",
+      "status": "ready",
+      "country": "fr",
+      "region": "normandy",
+      "wikipedia_lang": "fr",
+      "coordinate_source": "wikidata-P625",
+      "airport": "DOL",
+      "drive_minutes": 67
+    },
+    {
+      "slug": "pink-granite-coast",
+      "status": "ready",
+      "country": "fr",
+      "region": "brittany",
+      "wikipedia_lang": "en",
+      "coordinate_source": "wikipedia-article-coordinates",
+      "airport": "BES",
+      "drive_minutes": 98
+    },
+    {
+      "slug": "lac-d-annecy",
+      "status": "ready",
+      "country": "fr",
+      "region": "auvergne-rhone-alpes",
+      "wikipedia_lang": "en",
+      "coordinate_source": "wikipedia-article-coordinates",
+      "airport": "NCY",
+      "drive_minutes": 27
     }
   ]
 }
