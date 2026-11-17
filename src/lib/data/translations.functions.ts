@@ -14,7 +14,7 @@ export type DestinationTranslation = {
 const localeSchema = z.enum(["de"]);
 
 export const getDestinationTranslation = createServerFn({ method: "GET" })
-  .inputValidator((d: unknown) => z.object({ slug: z.string().max(80), locale: localeSchema }).parse(d))
+  .inputValidator((d: unknown) => z.object({ slug: z.string().max(100), locale: localeSchema }).parse(d))
   .handler(async ({ data }): Promise<DestinationTranslation | null> => {
     const { data: row } = await supabase
       .from("content_translations").select("fields")
@@ -25,7 +25,7 @@ export const getDestinationTranslation = createServerFn({ method: "GET" })
 
 /** Locales (besides English) with a published translation for this place. */
 export const getDestinationLocales = createServerFn({ method: "GET" })
-  .inputValidator((d: unknown) => z.object({ slug: z.string().max(80) }).parse(d))
+  .inputValidator((d: unknown) => z.object({ slug: z.string().max(100) }).parse(d))
   .handler(async ({ data }): Promise<string[]> => {
     const { data: rows } = await supabase
       .from("content_translations").select("locale")

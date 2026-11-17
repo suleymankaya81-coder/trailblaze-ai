@@ -5,7 +5,7 @@ import { supabase } from "@/integrations/supabase/client";
 export type GeoPlace = { slug: string; name: string; heroImage: string; tagline: string | null; bestSeason: string | null };
 export type GeoRegion = { slug: string; name: string; count: number; heroImage: string };
 
-const code = z.string().regex(/^[a-z0-9-]{2,60}$/);
+const code = z.string().regex(/^[a-z0-9-]{2,100}$/);
 
 /** Regions of one country with their published destination counts and a cover. */
 export const getCountryRegions = createServerFn({ method: "GET" })
