@@ -106,6 +106,15 @@ def find_excerpt(text, name):
 def identity_and_packet(row, cc, local_lang, cache_dir):
     if row.get('wikidata'):
         title, lang, entity = sitelink(row['wikidata'], local_lang, cache_dir)
+        # find_excerpt below only checks the resolved title against its OWN article text,
+        # which is nearly always true (a page's lead names itself) even when the catalog's
+        # Wikidata QID is simply wrong. Cross-check the resolved title against the catalog
+        # row's own name here, or a bad QID silently pulls in an unrelated real article
+        # (observed: a QID typo'd to an unrelated entity, e.g. a band or a video game).
+        cat_words = set(norm_words(row['name']))
+        if cat_words and not (cat_words & set(norm_words(title))):
+            raise ValueError(f'identity mismatch: catalog name {row["name"]!r} vs '
+                              f'Wikidata-resolved title {title!r} (wrong QID {row["wikidata"]})')
     else:
         title, lang, entity = row['name'].split(' (')[0], 'en', None
     page = fetch_article(title, lang, cache_dir)

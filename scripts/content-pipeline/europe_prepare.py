@@ -33,14 +33,17 @@ def api(host, **params):
     path = _cached(url)
     if path.exists():
         return json.loads(path.read_text())
-    for attempt in range(5):
+    for attempt in range(8):
         r = requests.get(f"https://{host}/w/api.php", params=params, headers=UA, timeout=30)
         if r.ok:
             time.sleep(1)
             data = r.json()
             path.write_text(json.dumps(data, ensure_ascii=False))
             return data
-        time.sleep(5 * (2 ** attempt))
+        if r.headers.get("Retry-After", "").isdigit():
+            time.sleep(int(r.headers["Retry-After"]) + 1)
+        else:
+            time.sleep(min(60, 5 * (2 ** attempt)))
     r.raise_for_status()
 
 

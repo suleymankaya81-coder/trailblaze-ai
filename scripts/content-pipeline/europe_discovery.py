@@ -20,8 +20,14 @@ def get(url, cache_dir):
             raise ValueError("cached HTTP " + str(value["status"]))
         return value
     response = None
-    for attempt in range(6):
-        time.sleep(1 if attempt == 0 else 5 * (2 ** (attempt - 1)))
+    for attempt in range(8):
+        if attempt == 0:
+            delay = 1
+        elif response is not None and response.headers.get("Retry-After", "").isdigit():
+            delay = int(response.headers["Retry-After"]) + 1
+        else:
+            delay = min(60, 5 * (2 ** (attempt - 1)))
+        time.sleep(delay)
         response = SESSION.get(url, timeout=30)
         if response.status_code != 429:
             break
