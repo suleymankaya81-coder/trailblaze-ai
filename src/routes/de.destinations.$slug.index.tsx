@@ -15,7 +15,9 @@ export const Route = createFileRoute("/de/destinations/$slug/")({
       if (geo) throw redirect({ href: `/de/destinations/${geo.country}/${geo.region}/${params.slug}`, statusCode: 301 });
       throw notFound();
     }
-    return { country: params.slug, regions: await getCountryRegions({ data: { country: params.slug } }) };
+    const regions = await getCountryRegions({ data: { country: params.slug } });
+    if (regions.length === 0) throw notFound(); // Enabled country, nothing published yet: no empty page.
+    return { country: params.slug, regions };
   },
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Nicht verfügbar — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
