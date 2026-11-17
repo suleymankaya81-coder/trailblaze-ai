@@ -1,0 +1,47 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kopparhatten",
+      "quote": "Vom höchsten Punkt des Parks, Kopparhatten, überblickt man das tiefste Spaltental, Skäralid.",
+      "english": "From the highest point of the park, Kopparhatten, you can overlook the deepest rift valley, Skäralid."
+    },
+    {
+      "id": "s2",
+      "name": "Skäralid",
+      "quote": "Vom höchsten Punkt des Parks, Kopparhatten, überblickt man das tiefste Spaltental, Skäralid.",
+      "english": "From the highest point of the park, Kopparhatten, you can overlook the deepest rift valley, Skäralid."
+    },
+    {
+      "id": "s3",
+      "name": "Skäralid",
+      "quote": "Der Haupteingang des Parks befindet sich in Skäralid, wo auch eine Ausstellung im Naturum über Natur- und Kulturgeschichte des Gebiets informiert.",
+      "english": "The main entrance of the park is located in Skäralid, where an exhibition in the Naturum provides information about the natural and cultural history of the area."
+    },
+    {
+      "id": "s4",
+      "name": "Naturum",
+      "quote": "Der Haupteingang des Parks befindet sich in Skäralid, wo auch eine Ausstellung im Naturum über Natur- und Kulturgeschichte des Gebiets informiert.",
+      "english": "The main entrance of the park is located in Skäralid, where an exhibition in the Naturum provides information about the natural and cultural history of the area."
+    },
+    {
+      "id": "s5",
+      "name": "Odensjön",
+      "quote": "Angeln ist nur mit Angelschein und nur im See Odensjön zugelassen.",
+      "english": "Fishing is only permitted with a fishing license and only in Lake Odensjön."
+    }
+  ],
+  "days": [
+    {
+      "title": "Skäralid Valley and Lake Odensjön",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "6348d7c4295e167b45c749f1998286604d0ac4e2ea90a6549e935999c0c673b5"
+}

@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Njoatosvágge",
+      "quote": "Die von den Samen benutzten Wege führten im Sarek durch das Njoatosvágge, das Guhkesvágge, das Ruohtesvágge und Guohpervágge.",
+      "english": "The paths used by the Sami led in Sarek through the Njoatosvágge, the Guhkesvágge, the Ruohtesvágge and Guohpervágge."
+    },
+    {
+      "id": "s2",
+      "name": "Guhkesvágge",
+      "quote": "In dem Park gibt es keine Unterkünfte, keine markierten Wege und nur vier Brücken, z. B. im Zentrum des Parkes bei Skarja über den Smájllájåhkå und über den Gletscherfluss Guhkesvákkjåhkå.",
+      "english": "In the park there are no accommodations, no marked paths and only four bridges, e.g. in the center of the park at Skarja over the Smájllájåhkå and over the glacial river Guhkesvákkjåhkå."
+    },
+    {
+      "id": "s3",
+      "name": "Sarektjåhkkå",
+      "quote": "Zu den wichtigsten Gebirgsmassiven gehören der Ähpártjåhkkå (1925 m), der Sarektjåhkkå (2089 m), der Áhkátjåhkkå (1983 m), der Rouhtes (1804 m), das Pårte-Massiv (2016 m) und der Skårki (1845 m).",
+      "english": "Among the most important mountain massifs are the Ähpártjåhkkå (1925 m), the Sarektjåhkkå (2089 m), the Áhkátjåhkkå (1983 m), the Rouhtes (1804 m), the Pårte Massif (2016 m) and the Skårki (1845 m)."
+    },
+    {
+      "id": "s4",
+      "name": "Bierikjávrre",
+      "quote": "Einer der schönsten Gletscherseen im Sarek ist der Bierikjávrre.",
+      "english": "One of the most beautiful glacier lakes in Sarek is the Bierikjávrre."
+    },
+    {
+      "id": "s5",
+      "name": "Skarja",
+      "quote": "In dem Park gibt es keine Unterkünfte, keine markierten Wege und nur vier Brücken, z. B. im Zentrum des Parkes bei Skarja über den Smájllájåhkå und über den Gletscherfluss Guhkesvákkjåhkå.",
+      "english": "In the park there are no accommodations, no marked paths and only four bridges, e.g. in the center of the park at Skarja over the Smájllájåhkå and over the glacial river Guhkesvákkjåhkå."
+    },
+    {
+      "id": "s6",
+      "name": "Låddebákte",
+      "quote": "Ein lohnender Aussichtspunkt auf den Rapaädno befindet sich auf dem Låddebákte (etwa zwei Tagesmärsche von Aktse entfernt).",
+      "english": "A rewarding viewpoint over the Rapaädno is located on the Låddebákte (about two days' march from Aktse)."
+    },
+    {
+      "id": "s7",
+      "name": "Rovdjurstorg",
+      "quote": "Im Rapaselet befindet sich auch der sogenannte Rovdjurstorg (Raubtierplatz), so benannt, da hier an einem Morgen Spuren von allen vier Raubtieren gefunden wurden, die im Sarek leben: Bär, Vielfraß, Luchs und Polarfuchs.",
+      "english": "In the Rapaselet is also the so-called Rovdjurstorg (Predator Square), so named because traces of all four predators living in Sarek were found here one morning: bear, wolverine, lynx and arctic fox."
+    },
+    {
+      "id": "s8",
+      "name": "Kapelle von Alkavare",
+      "quote": "Die Ruine der historischen Kapelle von Alkavare wurde 1961 rekonstruiert.",
+      "english": "The ruins of the historical chapel of Alkavare were reconstructed in 1961."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Valleys and High Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Glacial Waters and Central Crossings",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Rapa Valley Views and History",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "88b4416c86e7a440c3f8a96c1b2d16629a59ac1ef9f20945eba9681c9200528c"
+}

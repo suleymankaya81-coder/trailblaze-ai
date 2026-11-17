@@ -1,0 +1,106 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Nordgipfel",
+      "quote": "Der Kebnekaise (samisch Giebnegáisi oder Giebmegáisi, auf Deutsch etwa „Kessel-Kamm“) ist mit 2096,8 Metern (Nordgipfel, bestehend aus Fels) der höchste Berg Schwedens.",
+      "english": "Kebnekaise (Sami Giebnegáisi or Giebmegáisi, in German roughly \"Cauldron-Ridge\") is the highest mountain in Sweden at 2096.8 meters (North Peak, consisting of rock)."
+    },
+    {
+      "id": "s2",
+      "name": "Südgipfel",
+      "quote": "Früher war der vergletscherte Südgipfel höher als der Nordgipfel (er wird seit 1880 vermessen).",
+      "english": "Previously, the glaciated South Peak was higher than the North Peak (it has been measured since 1880)."
+    },
+    {
+      "id": "s3",
+      "name": "Kebnekaise fjällstation",
+      "quote": "Vom Ausgangspunkt in Nikkaluokta sind es etwa 19 zumeist leicht zu gehende Kilometer bis zur Kebnekaise fjällstation, wobei 6 km am See Ladtjojaure mit einem Boot zurückgelegt werden können.",
+      "english": "From the starting point in Nikkaluokta, it is about 19 mostly easy-to-walk kilometers to the Kebnekaise mountain station, whereby 6 km can be covered by boat on Lake Ladtjojaure."
+    },
+    {
+      "id": "s4",
+      "name": "Ladtjojaure",
+      "quote": "Vom Ausgangspunkt in Nikkaluokta sind es etwa 19 zumeist leicht zu gehende Kilometer bis zur Kebnekaise fjällstation, wobei 6 km am See Ladtjojaure mit einem Boot zurückgelegt werden können.",
+      "english": "From the starting point in Nikkaluokta, it is about 19 mostly easy-to-walk kilometers to the Kebnekaise mountain station, whereby 6 km can be covered by boat on Lake Ladtjojaure."
+    },
+    {
+      "id": "s5",
+      "name": "Kungsleden",
+      "quote": "13 km hinter der Kebnekaise fjällstation trifft der Weg bei Singi auf den beliebten Wanderweg Kungsleden.",
+      "english": "13 km past the Kebnekaise mountain station, the path meets the popular Kungsleden hiking trail at Singi."
+    },
+    {
+      "id": "s6",
+      "name": "Västra Leden",
+      "quote": "Der westliche (Normal-)Weg führt ausschließlich über steinige Hänge und über den Vorgipfel Vieranvarri zur vergletscherten Gipfelpyramide.",
+      "english": "The western (Normal) path leads exclusively over stony slopes and via the pre-peak Vieranvarri to the glaciated summit pyramid."
+    },
+    {
+      "id": "s7",
+      "name": "Vieranvarri",
+      "quote": "Der westliche (Normal-)Weg führt ausschließlich über steinige Hänge und über den Vorgipfel Vieranvarri zur vergletscherten Gipfelpyramide.",
+      "english": "The western (Normal) path leads exclusively over stony slopes and via the pre-peak Vieranvarri to the glaciated summit pyramid."
+    },
+    {
+      "id": "s8",
+      "name": "Östra Leden",
+      "quote": "Diese Route führt über Gletscher und felsige Passagen (I. bis II. Schwierigkeitsgrad nach UIAA) und beinhaltet fest montierte, klettersteigartige Eisendrähte und -sicherungen in luftiger Höhe.",
+      "english": "This route leads over glaciers and rocky passages (UIAA difficulty grade I to II) and includes fixed, via ferrata-like iron wires and anchors at airy heights."
+    },
+    {
+      "id": "s9",
+      "name": "Durlings led",
+      "quote": "Ein dritter Weg, genannt Durlings led, geht vom Kungsleden zwischen den Hütten Singi und Sälka aus.",
+      "english": "A third path, called Durlings led, starts from the Kungsleden between the Singi and Sälka huts."
+    },
+    {
+      "id": "s10",
+      "name": "Kaffeedalen",
+      "quote": "Dieser Weg geht kontinuierlich bergauf, verlangt keine Kletterei und vermeidet den Umweg über den Vierranvarri, führt jedoch größtenteils durch ein Geröllfeld und vereint sich mit dem Västra Leden am Kaffeedalen.",
+      "english": "This path goes continuously uphill, requires no climbing and avoids the detour via Vierranvarri, but leads mostly through a boulder field and joins the Västra Leden at Kaffeedalen."
+    },
+    {
+      "id": "s11",
+      "name": "Tuolpagorni",
+      "quote": "Dem Kebnekaise vorgelagert ist der Berg Tuolpagorni (1662 m).",
+      "english": "In front of Kebnekaise lies the mountain Tuolpagorni (1662 m)."
+    },
+    {
+      "id": "s12",
+      "name": "Tarfalatal",
+      "quote": "An der Ostflanke des Berges befindet sich im Tal von Tarfala eine glaziologische Forschungsstation, wo man in einer in der Saison bewirtschafteten Hütte auch übernachten kann.",
+      "english": "On the eastern flank of the mountain, in the Tarfala valley, there is a glaciological research station where one can also stay overnight in a hut that is managed during the season."
+    }
+  ],
+  "days": [
+    {
+      "title": "Approach and Basecamp",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s11",
+        "s12"
+      ]
+    },
+    {
+      "title": "Summit Routes and Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s6",
+        "s8"
+      ]
+    },
+    {
+      "title": "The Kungsleden and Alternate Trails",
+      "stop_ids": [
+        "s5",
+        "s7",
+        "s9",
+        "s10"
+      ]
+    }
+  ],
+  "_text_sha": "7604923d9570f2d3245ee51a5463507309cb3470cef1a689f66886751c13f8fd"
+}

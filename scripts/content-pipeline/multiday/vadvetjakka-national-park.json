@@ -1,0 +1,59 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kalksteinhöhlen",
+      "quote": "Er beherbergt seltene alpine Gebirgspflanzen und Kalksteinhöhlen.",
+      "english": "It is home to rare alpine mountain plants and limestone caves."
+    },
+    {
+      "id": "s2",
+      "name": "Vádvečohkka",
+      "quote": "Dies ist auch der Name des etwa mittig liegenden, 1109 Meter hohen Zentralberges.",
+      "english": "This is also the name of the approximately centrally located, 1109-meter-high central mountain."
+    },
+    {
+      "id": "s3",
+      "name": "Čunučohkka",
+      "quote": "Dieser bildet mit dem nördlichen Čunučohkka einen quer durch den Nationalpark laufenden Gebirgssattel mit einem mittigen Passgebiet an dem nach Westen und Osten Gebirgsbäche abgehen, die sich im Süden in kleineren Seen sammeln und über das Cunuluoppal Delta in den Njuoraeatnu zum Torneträsk abfließen.",
+      "english": "This forms, with the northern Čunučohkka, a mountain saddle running across the national park with a central pass area from which mountain streams flow to the west and east, gathering in smaller lakes to the south and flowing via the Cunuluoppal Delta into the Njuoraeatnu towards Torneträsk."
+    },
+    {
+      "id": "s4",
+      "name": "Cunuluoppal Delta",
+      "quote": "Dieser bildet mit dem nördlichen Čunučohkka einen quer durch den Nationalpark laufenden Gebirgssattel mit einem mittigen Passgebiet an dem nach Westen und Osten Gebirgsbäche abgehen, die sich im Süden in kleineren Seen sammeln und über das Cunuluoppal Delta in den Njuoraeatnu zum Torneträsk abfließen.",
+      "english": "This forms, with the northern Čunučohkka, a mountain saddle running across the national park with a central pass area from which mountain streams flow to the west and east, gathering in smaller lakes to the south and flowing via the Cunuluoppal Delta into the Njuoraeatnu towards Torneträsk."
+    },
+    {
+      "id": "s5",
+      "name": "Njuoraeatnu",
+      "quote": "Dieser bildet mit dem nördlichen Čunučohkka einen quer durch den Nationalpark laufenden Gebirgssattel mit einem mittigen Passgebiet an dem nach Westen und Osten Gebirgsbäche abgehen, die sich im Süden in kleineren Seen sammeln und über das Cunuluoppal Delta in den Njuoraeatnu zum Torneträsk abfließen.",
+      "english": "This forms, with the northern Čunučohkka, a mountain saddle running across the national park with a central pass area from which mountain streams flow to the west and east, gathering in smaller lakes to the south and flowing via the Cunuluoppal Delta into the Njuoraeatnu towards Torneträsk."
+    },
+    {
+      "id": "s6",
+      "name": "Čunujökeln",
+      "quote": "Schwedens nördlichster Nationalpark hatte zugleich Schwedens nördlichsten Gletscher Čunujökeln, der aber durch den Klimawandel nahezu abgeschmolzenen ist und seit 2017 von schwedischen Glaziologen nicht mehr als Gletscher angesehen wird.",
+      "english": "Sweden's northernmost national park also had Sweden's northernmost glacier, Čunujökeln, which however has almost completely melted due to climate change and has no longer been considered a glacier by Swedish glaciologists since 2017."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Mountains and Glacial Features",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "Waterways and Limestone Caves",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "e084bf7f29c45fa8bdf3370ca5a0301842880363758e9d2e0c41c8b4a15b889f"
+}

@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Slåttatjåhka",
+      "quote": "Die höchsten Berge im Nationalpark sind der Slåttatjåhka mit 1191 m und der Nuolja mit 1169 m.",
+      "english": "The highest mountains in the national park are the Slåttatjåhka with 1191 m and the Nuolja with 1169 m."
+    },
+    {
+      "id": "s2",
+      "name": "Nuolja",
+      "quote": "Zudem weist das Gebiet die niedrigste Niederschlagswahrscheinlichkeit in Schweden auf, da der benachbarte Berg Nuolja die Wolken abhält (dies entspricht auch der Übersetzung seines Namens).",
+      "english": "Furthermore, the area has the lowest probability of precipitation in Sweden, as the neighboring mountain Nuolja keeps the clouds away (this also corresponds to the translation of its name)."
+    },
+    {
+      "id": "s3",
+      "name": "Torneträsk-See",
+      "quote": "Der Nationalpark besteht aus einem Tal, das von Bergketten im Süden und Westen und dem Torneträsk-See im Norden umrahmt wird.",
+      "english": "The national park consists of a valley framed by mountain ranges in the south and west and the Torneträsk lake in the north."
+    },
+    {
+      "id": "s4",
+      "name": "Abiskojåkka",
+      "quote": "Der Fluss Abiskojåkka, der durch den ganzen Park verläuft, fließt kurz vor seiner Mündung durch eine Schlucht von etwa 20 m Tiefe.",
+      "english": "The Abiskojåkka river, which runs through the entire park, flows through a gorge about 20 m deep shortly before its mouth."
+    },
+    {
+      "id": "s5",
+      "name": "Abisko Turiststation",
+      "quote": "Einer der bedeutendsten schwedischen Fernwanderwege, der Kungsleden, beginnt bei der Abisko Turiststation, die auch über die gleichnamige Bahnstation erreichbar ist, und führt durch den Nationalpark südwärts.",
+      "english": "One of the most important Swedish long-distance hiking trails, the Kungsleden, starts at the Abisko Turiststation, which is also accessible via the railway station of the same name, and leads southwards through the national park."
+    },
+    {
+      "id": "s6",
+      "name": "Kungsleden",
+      "quote": "Einer der bedeutendsten schwedischen Fernwanderwege, der Kungsleden, beginnt bei der Abisko Turiststation, die auch über die gleichnamige Bahnstation erreichbar ist, und führt durch den Nationalpark südwärts.",
+      "english": "One of the most important Swedish long-distance hiking trails, the Kungsleden, starts at the Abisko Turiststation, which is also accessible via the railway station of the same name, and leads southwards through the national park."
+    },
+    {
+      "id": "s7",
+      "name": "Vuolep Njakajaure",
+      "quote": "Die größten Seen sind der Vuolep Njakajaure, Abiskojaure und Påtjojaure.",
+      "english": "The largest lakes are the Vuolep Njakajaure, Abiskojaure and Påtjojaure."
+    },
+    {
+      "id": "s8",
+      "name": "Abiskojaure",
+      "quote": "Die größten Seen sind der Vuolep Njakajaure, Abiskojaure und Påtjojaure.",
+      "english": "The largest lakes are the Vuolep Njakajaure, Abiskojaure and Påtjojaure."
+    },
+    {
+      "id": "s9",
+      "name": "Påtjojaure",
+      "quote": "Die größten Seen sind der Vuolep Njakajaure, Abiskojaure und Påtjojaure.",
+      "english": "The largest lakes are the Vuolep Njakajaure, Abiskojaure and Påtjojaure."
+    }
+  ],
+  "days": [
+    {
+      "title": "Mountains and Northern Lights",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Rivers, Gorges and Lake Shores",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Hiking and Hinterland Lakes",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "152938697801084561a8a301030675d8c887d078615cdfaea71fd6d45b79cdca"
+}

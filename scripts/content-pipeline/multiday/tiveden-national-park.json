@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Stora Trehörningen",
+      "quote": "Im Jahr 2017 wurde der Park nach Westen und Osten um 677 ha erweitert, sodass der See Stora Trehörningen nun fast vollständig im Gebiet des Nationalparks liegt.",
+      "english": "In 2017, the park was expanded by 677 hectares to the west and east, so that Lake Stora Trehörningen is now almost entirely within the national park area."
+    },
+    {
+      "id": "s2",
+      "name": "Steinkälla",
+      "quote": "So wurde vielerorts Geröll abgelagert – z. B. ist die Steinkälla so entstanden.",
+      "english": "Thus, boulders were deposited in many places – for example, the Steinkälla was formed this way."
+    },
+    {
+      "id": "s3",
+      "name": "Tivedsleden",
+      "quote": "Der Nationalpark ist durch eine kleine, geschotterte Straße, den Tivedsleden, erschlossen und erreichbar vom Riksväg 49 zwischen Karlsborg und Askersund oder der E 20 zwischen Hova und Laxå.",
+      "english": "The national park is developed and accessible via a small gravel road, the Tivedsleden, and can be reached from Riksväg 49 between Karlsborg and Askersund or the E 20 between Hova and Laxå."
+    },
+    {
+      "id": "s4",
+      "name": "Besucherzentrum",
+      "quote": "Der Park verfügt über ein Besucherzentrum, Toiletten, Grillplätze und einen Badestrand.",
+      "english": "The park has a visitor center, toilets, barbecue areas, and a swimming beach."
+    },
+    {
+      "id": "s5",
+      "name": "Trollkyrkarunde",
+      "quote": "Die Trollkyrkarunde ist ein etwa 6 km langer unwegsamer Rundweg, der die Sehenswürdigkeiten des Parkes erschließt.",
+      "english": "The Trollkyrkarunde is an approximately 6 km long rough circular trail that opens up the sights of the park."
+    },
+    {
+      "id": "s6",
+      "name": "Oxaberget",
+      "quote": "Der Oxaberget ist einer der hohen felsen, auf dem einige große Findlinge liegen.",
+      "english": "The Oxaberget is one of the high rocks on which several large boulders lie."
+    },
+    {
+      "id": "s7",
+      "name": "Lilla Trollkyrka",
+      "quote": "Die Lilla Trollkyrka (kleine Trollkirche) ist knapp über 200 m hoch.",
+      "english": "The Lilla Trollkyrka (Little Troll Church) is just over 200 m high."
+    },
+    {
+      "id": "s8",
+      "name": "Stora Trollkyrka",
+      "quote": "Viele Sagen sind mit der Stora Trollkyrka (große Trollkirche) verbunden.",
+      "english": "Many legends are associated with the Stora Trollkyrka (Great Troll Church)."
+    },
+    {
+      "id": "s9",
+      "name": "Trollkyrkosjön",
+      "quote": "Der Trollkyrkosjön (Trollkirchensee) hat klares, grünschimmerndes Wasser, das auf Spiegelung des Waldes beruht.",
+      "english": "The Trollkyrkosjön (Troll Church Lake) has clear, green-shimmering water, which is based on the reflection of the forest."
+    },
+    {
+      "id": "s10",
+      "name": "Metesee",
+      "quote": "Der Metesee ist ein typischer Waldsee des Tiveden.",
+      "english": "The Metesee is a typical forest lake of Tiveden."
+    }
+  ],
+  "days": [
+    {
+      "title": "Park Access and Central Lakes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Trollkyrka Circuit Highlights",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Legends and Forest Lakes",
+      "stop_ids": [
+        "s8",
+        "s9",
+        "s10"
+      ]
+    }
+  ],
+  "_text_sha": "d6a1a3ee17c4773d70095ad697cb51503a94fa0138ecf516753e745db2bf61f5"
+}

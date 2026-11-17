@@ -1,0 +1,59 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Slåtterdalskrevan",
+      "quote": "Die größte Sehenswürdigkeit des Parks ist die Slåtterdalskrevan, eine vermutlich durch schnellere Verwitterung eines Diabasganges entstandene etwa 200 m lange Schlucht mit 40 m hohen senkrechten Wänden.",
+      "english": "The park's greatest attraction is the Slåtterdalskrevan, a gorge approximately 200 m long with 40 m high vertical walls, presumably formed by the faster weathering of a diabase vein."
+    },
+    {
+      "id": "s2",
+      "name": "Naturum",
+      "quote": "Es existieren 30 km markierte Wanderpfade (inklusive des Weitwanderweges Höga kustenleden, der durch das Gebiet führt) mit kostenlosen, frei zugänglichen Übernachtungs- und Rasthütten sowie ein Informationszentrum (Naturum) an der Europastraße 4.",
+      "english": "There are 30 km of marked hiking trails (including the long-distance trail Höga kustenleden, which leads through the area) with free, publicly accessible overnight and rest huts as well as an information center (Naturum) on European route E4."
+    },
+    {
+      "id": "s3",
+      "name": "Höga kustenleden",
+      "quote": "Es existieren 30 km markierte Wanderpfade (inklusive des Weitwanderweges Höga kustenleden, der durch das Gebiet führt) mit kostenlosen, frei zugänglichen Übernachtungs- und Rasthütten sowie ein Informationszentrum (Naturum) an der Europastraße 4.",
+      "english": "There are 30 km of marked hiking trails (including the long-distance trail Höga kustenleden, which leads through the area) with free, publicly accessible overnight and rest huts as well as an information center (Naturum) on European route E4."
+    },
+    {
+      "id": "s4",
+      "name": "Bergseen",
+      "quote": "Markante, felsige Bergkuppen, Kiefernwälder, tiefe, durch Inlandeis überformte Täler sowie ruhige Bergseen prägen den Park.",
+      "english": "Striking, rocky mountain peaks, pine forests, deep valleys shaped by inland ice, and quiet mountain lakes characterize the park."
+    },
+    {
+      "id": "s5",
+      "name": "Bergkuppen",
+      "quote": "Markante, felsige Bergkuppen, Kiefernwälder, tiefe, durch Inlandeis überformte Täler sowie ruhige Bergseen prägen den Park.",
+      "english": "Striking, rocky mountain peaks, pine forests, deep valleys shaped by inland ice, and quiet mountain lakes characterize the park."
+    },
+    {
+      "id": "s6",
+      "name": "Täler",
+      "quote": "Markante, felsige Bergkuppen, Kiefernwälder, tiefe, durch Inlandeis überformte Täler sowie ruhige Bergseen prägen den Park.",
+      "english": "Striking, rocky mountain peaks, pine forests, deep valleys shaped by inland ice, and quiet mountain lakes characterize the park."
+    }
+  ],
+  "days": [
+    {
+      "title": "Gorges, Peaks and Lakes",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Visitor Center and Long Distance Trails",
+      "stop_ids": [
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "_text_sha": "d73110b69922fc2c1fcf22c61dbbb493e49599fd5ca2304285e2c36f9d112b75"
+}

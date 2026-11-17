@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Akka-Massiv",
+      "quote": "Im gesamten Westen erheben sich höhere, zum Teil vergletscherte, Gipfel des Skanden-Gebirges, von denen das Akka-Massiv im Südwesten das eindrucksvollste ist.",
+      "english": "In the entire west, higher, partly glaciated peaks of the Scandinavian Mountains rise, of which the Akka Massif in the southwest is the most impressive."
+    },
+    {
+      "id": "s2",
+      "name": "Stora Sjöfallet",
+      "quote": "Auch der Wasserfall Stora Sjöfallet kann von hier erreicht werden.",
+      "english": "The Stora Sjöfallet waterfall can also be reached from here."
+    },
+    {
+      "id": "s3",
+      "name": "Kårtjejaure",
+      "quote": "Seinen Namen erhielt das Schutzgebiet von einem der mächtigsten Wasserfälle Europas, dem rund 50 Meter hohen Stora Sjöfallet, der die Seen Kårtjejaure und Langas miteinander verbindet.",
+      "english": "The protected area received its name from one of Europe's mightiest waterfalls, the approximately 50-meter-high Stora Sjöfallet, which connects the lakes Kårtjejaure and Langas with each other."
+    },
+    {
+      "id": "s4",
+      "name": "Langas",
+      "quote": "Im Herbst 2014 wurde auf einer in den Langas reichenden Landzunge bei Vietas/Viedás das Besucherzentrum „naturum Laponia“ eröffnet, das über die Natur und Kulturgeschichte des Welterbes informiert.",
+      "english": "In autumn 2014, the visitor center 'naturum Laponia' was opened on a spit of land reaching into the Langas near Vietas/Viedás, providing information about the natural and cultural history of the World Heritage site."
+    },
+    {
+      "id": "s5",
+      "name": "naturum Laponia",
+      "quote": "Im Herbst 2014 wurde auf einer in den Langas reichenden Landzunge bei Vietas/Viedás das Besucherzentrum „naturum Laponia“ eröffnet, das über die Natur und Kulturgeschichte des Welterbes informiert.",
+      "english": "In autumn 2014, the visitor center 'naturum Laponia' was opened on a spit of land reaching into the Langas near Vietas/Viedás, providing information about the natural and cultural history of the World Heritage site."
+    },
+    {
+      "id": "s6",
+      "name": "Soldalen",
+      "quote": "Von Vietas gibt es einen unmarkierten Wanderweg durch die alten Kiefernwälder des Nationalparks zu einem Aussichtshügel sowie in das „Soldalen“.",
+      "english": "From Vietas, there is an unmarked hiking trail through the old pine forests of the national park to a viewing hill and into the 'Soldalen'."
+    },
+    {
+      "id": "s7",
+      "name": "Akkastugorna",
+      "quote": "Durch den Nordteil verläuft eine Kungsleden-Etappe (Vakkotavare – Teusajaure), an der Westgrenze des Südteils eine Etappe des Padjelantaledens (Gisuris – Akkastugorna).",
+      "english": "A Kungsleden stage (Vakkotavare – Teusajaure) runs through the northern part, and a stage of the Padjelantaleden (Gisuris – Akkastugorna) runs along the western border of the southern part."
+    }
+  ],
+  "days": [
+    {
+      "title": "Akka Massif and South-West Trails",
+      "stop_ids": [
+        "s1",
+        "s7"
+      ]
+    },
+    {
+      "title": "Waterfalls and Lake Views",
+      "stop_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Vietas Valley and Visitor Centre",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "e0e59ad7df6f47debebc0f819fffa2ecdd93287db04cf4e65b7e69dcb1404bad"
+}

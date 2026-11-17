@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kävsjön",
+      "quote": "Die Feuchtgebiete um den See Kävsjön sind im Sommer Brutgebiete für ca. 100 Vogelarten, unter anderem Schwäne, Reiher, Enten, Gänse und Kraniche.",
+      "english": "The wetlands around Lake Kävsjön are breeding grounds for about 100 bird species in summer, including swans, herons, ducks, geese, and cranes."
+    },
+    {
+      "id": "s2",
+      "name": "Stora Gungflyet",
+      "quote": "Im südöstlichen Teil des Sees befindet sich der etwa zwei Kilometer lange und einen Kilometer breite Schwingrasen Stora Gungflyet.",
+      "english": "In the southeastern part of the lake lies the approximately two-kilometer-long and one-kilometer-wide quaking bog Stora Gungflyet."
+    },
+    {
+      "id": "s3",
+      "name": "Naturum",
+      "quote": "In dem 2004 eingerichteten Besucherzentrum Naturum wird eine Ausstellung zur Entstehung der Moore, zur Pflanzen- und Tierwelt und zur menschlichen Besiedlung der Moorgebiete gezeigt.",
+      "english": "In the visitor center Naturum, established in 2004, an exhibition on the formation of the moors, the flora and fauna, and human settlement of the moorlands is shown."
+    },
+    {
+      "id": "s4",
+      "name": "Kittlakull",
+      "quote": "Das Haus Kittlakull diente früher dem Verwalter der Torfindustrie als Wohnhaus, unmittelbar hinter der Bahnlinie, die durch das Moor führt, sind dort auch noch Ruinen der alten Torf-Abbaustätten zu finden.",
+      "english": "The house Kittlakull formerly served as the residence for the manager of the peat industry; directly behind the railway line that runs through the moor, ruins of the old peat mining sites can still be found there."
+    },
+    {
+      "id": "s5",
+      "name": "Kävsjön runt",
+      "quote": "Die Kävsjön runt umrundet den See Kävsjön auf insgesamt 14 Kilometer Länge.",
+      "english": "The Kävsjön runt circles Lake Kävsjön over a total length of 14 kilometers."
+    },
+    {
+      "id": "s6",
+      "name": "Svartgölsleden",
+      "quote": "Sie verläuft im nördlichen Teil des Parks, ebenso wie die 4 Kilometer lange Östra Rockne runt und die 3,5 km Svartgölsleden.",
+      "english": "It runs in the northern part of the park, as do the 4-kilometer-long Östra Rockne runt and the 3.5 km Svartgölsleden."
+    },
+    {
+      "id": "s7",
+      "name": "Lilla Lövö",
+      "quote": "Eine Insel im südwestlichen Teil des Moors ist Lilla Lövö.",
+      "english": "An island in the southwestern part of the moor is Lilla Lövö."
+    },
+    {
+      "id": "s8",
+      "name": "Blådöpet runt",
+      "quote": "Ebenso können die Lövö runt, die Blådöpet runt und der Andersberg-Kvarnaberget-Lövö Weg mit 3,6, 5,2 und 7,5 Kilometer Länge.",
+      "english": "Likewise, the Lövö runt, the Blådöpet runt, and the Andersberg-Kvarnaberget-Lövö path with lengths of 3.6, 5.2, and 7.5 kilometers can be [walked]."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Lake and Visitor Center",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Southern Bogs and Islands",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "dc8bca06430d3b304e9b204e7740e0f3a417b5f93f9c5710548733bfccd96f2a"
+}

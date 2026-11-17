@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Brattfjället",
+      "quote": "Er bedeckt 384,14 km² (davon 230,48 km² Wildniszone) und reicht von einer Seehöhe von ca. 500 m bis auf 1042 m (Brattfjället).",
+      "english": "It covers 384.14 km² (of which 230.48 km² is a wilderness zone) and ranges from an altitude of approx. 500 m up to 1042 m (Brattfjället)."
+    },
+    {
+      "id": "s2",
+      "name": "Njupeskär",
+      "quote": "Außerdem liegt mit dem 93 Meter hohen Njupeskär Schwedens höchster Wasserfall im Nationalpark.",
+      "english": "In addition, Sweden's highest waterfall, the 93-meter-high Njupeskär, is located in the national park."
+    },
+    {
+      "id": "s3",
+      "name": "Altarringen",
+      "quote": "Eine archäologische Stätte ist der in der Mitte des Fjälls liegende Altarringen.",
+      "english": "An archaeological site is the Altarringen, located in the middle of the fell."
+    },
+    {
+      "id": "s4",
+      "name": "Old Tjikko",
+      "quote": "Im Nationalpark steht auch die wegen ihres hohen Alters bekannte Fichte Old Tjikko.",
+      "english": "The spruce Old Tjikko, known for its great age, also stands in the national park."
+    },
+    {
+      "id": "s5",
+      "name": "Göljån",
+      "quote": "Besonders betroffen war der Fluss Göljån im Osten des Nationalparks, dessen Wassermassen auf das 500-fache anschwollen.",
+      "english": "The Göljån river in the east of the national park was particularly affected, its water masses swelling to 500 times their volume."
+    },
+    {
+      "id": "s6",
+      "name": "Mörkret",
+      "quote": "Das liegt im Ort Mörkret ca. 20 km westlich von Särna im Nordosten des Fulufjälls nahe dem Wasserfall Njupeskär.",
+      "english": "That is located in the village of Mörkret approx. 20 km west of Särna in the northeast of Fulufjäll near the Njupeskär waterfall."
+    },
+    {
+      "id": "s7",
+      "name": "Kungsleden",
+      "quote": "140 km markierte Wanderwege führen durch den Park, darunter mit dem südlichen Abschnitt des Kungsleden auch der bekannteste Fernwanderweg Schwedens.",
+      "english": "140 km of marked hiking trails lead through the park, including the southern section of the Kungsleden, Sweden's most famous long-distance hiking trail."
+    }
+  ],
+  "days": [
+    {
+      "title": "Waterfalls and Gateway Trails",
+      "stop_ids": [
+        "s2",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "High Peaks and Ancient History",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "e4f2feb324e61fa578bcd135a79929a37b24d9d30dbcf51bdf24aafe49618960"
+}

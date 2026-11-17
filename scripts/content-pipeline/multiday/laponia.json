@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Muddus",
+      "quote": "Zum Welterbe gehören vier Nationalparks (Muddus, Sarek, Padjelanta und Stora Sjöfallet) sowie die Naturreservate Sjaunja, Stubba, Sulitelma, Tjuoltadalen und Rapadalen.",
+      "english": "The world heritage site includes four national parks (Muddus, Sarek, Padjelanta and Stora Sjöfallet) as well as the nature reserves Sjaunja, Stubba, Sulitelma, Tjuoltadalen and Rapadalen."
+    },
+    {
+      "id": "s2",
+      "name": "Sjaunja",
+      "quote": "Noch weiter östlich erstreckt sich das moor- und waldreiche Vorgebirge der Skanden, das von Sjaunja bis zum Muddusgebiet immer flacher wird.",
+      "english": "Further east, the boggy and forested foothills of the Scandes extend, which become flatter and flatter from Sjaunja to the Muddus area."
+    },
+    {
+      "id": "s3",
+      "name": "Stubba",
+      "quote": "Zum Welterbe gehören vier Nationalparks (Muddus, Sarek, Padjelanta und Stora Sjöfallet) sowie die Naturreservate Sjaunja, Stubba, Sulitelma, Tjuoltadalen und Rapadalen.",
+      "english": "The world heritage site includes four national parks (Muddus, Sarek, Padjelanta and Stora Sjöfallet) as well as the nature reserves Sjaunja, Stubba, Sulitelma, Tjuoltadalen and Rapadalen."
+    },
+    {
+      "id": "s4",
+      "name": "Sarek",
+      "quote": "Im Sarek – bekannt für seine tiefen U-förmigen Täler – liegen einige der höchsten Berge Schwedens.",
+      "english": "In Sarek – known for its deep U-shaped valleys – lie some of Sweden's highest mountains."
+    },
+    {
+      "id": "s5",
+      "name": "Stora Sjöfallet",
+      "quote": "Bereits 1919 wurde der erst zehn Jahre zuvor eingerichtete Stora Sjöfallet-Nationalpark aus wirtschaftlichen Interessen verkleinert.",
+      "english": "As early as 1919, the Stora Sjöfallet National Park, which had been established only ten years earlier, was reduced in size for economic interests."
+    },
+    {
+      "id": "s6",
+      "name": "Padjelanta",
+      "quote": "Im Westen Laponias liegt die seenreiche Hochebene Padjelantas, die nach Osten in die Hochgebirgsregionen Sareks und Stora Sjöfallets übergehen, deren Gipfelregionen einige Gletscher aufweisen.",
+      "english": "In the west of Laponia lies the lake-rich high plateau of Padjelanta, which merges to the east into the high mountain regions of Sarek and Stora Sjöfallet, whose summit regions feature some glaciers."
+    },
+    {
+      "id": "s7",
+      "name": "Rapadalen",
+      "quote": "Zum Welterbe gehören vier Nationalparks (Muddus, Sarek, Padjelanta und Stora Sjöfallet) sowie die Naturreservate Sjaunja, Stubba, Sulitelma, Tjuoltadalen und Rapadalen.",
+      "english": "The world heritage site includes four national parks (Muddus, Sarek, Padjelanta and Stora Sjöfallet) as well as the nature reserves Sjaunja, Stubba, Sulitelma, Tjuoltadalen and Rapadalen."
+    },
+    {
+      "id": "s8",
+      "name": "Akkajaure",
+      "quote": "Mit dem Staudamm am Akkajaure entstanden deutliche Veränderungen der Uferzone, die wegen der Wasserstandsschwankungen (423–453 m) negative Auswirkungen auf die Vegetation hat.",
+      "english": "With the dam at Akkajaure, significant changes to the shoreline zone occurred, which has negative effects on the vegetation due to water level fluctuations (423–453 m)."
+    },
+    {
+      "id": "s9",
+      "name": "Sulitelma",
+      "quote": "Zum Welterbe gehören vier Nationalparks (Muddus, Sarek, Padjelanta und Stora Sjöfallet) sowie die Naturreservate Sjaunja, Stubba, Sulitelma, Tjuoltadalen und Rapadalen.",
+      "english": "The world heritage site includes four national parks (Muddus, Sarek, Padjelanta and Stora Sjöfallet) as well as the nature reserves Sjaunja, Stubba, Sulitelma, Tjuoltadalen and Rapadalen."
+    },
+    {
+      "id": "s10",
+      "name": "Tjuoltadalen",
+      "quote": "Zum Welterbe gehören vier Nationalparks (Muddus, Sarek, Padjelanta und Stora Sjöfallet) sowie die Naturreservate Sjaunja, Stubba, Sulitelma, Tjuoltadalen und Rapadalen.",
+      "english": "The world heritage site includes four national parks (Muddus, Sarek, Padjelanta and Stora Sjöfallet) as well as the nature reserves Sjaunja, Stubba, Sulitelma, Tjuoltadalen and Rapadalen."
+    }
+  ],
+  "days": [
+    {
+      "title": "Eastern Forests and Bogs",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "High Mountains and Deep Valleys",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Western Plateaus and Remote Reserves",
+      "stop_ids": [
+        "s6",
+        "s9",
+        "s10"
+      ]
+    }
+  ],
+  "_text_sha": "abd91409c7fa4f83847612e54f26e144e31321d28d39d5a4fe039a223010a0c5"
+}

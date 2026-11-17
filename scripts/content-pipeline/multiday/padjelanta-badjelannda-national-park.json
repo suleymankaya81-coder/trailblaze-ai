@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Vastenjaure",
+      "quote": "Die beiden großen Seen Vastenjaure und Virihaure liegen innerhalb des Nationalparks.",
+      "english": "The two large lakes Vastenjaure and Virihaure are located within the national park."
+    },
+    {
+      "id": "s2",
+      "name": "Virihaure",
+      "quote": "Die beiden großen Seen Vastenjaure und Virihaure liegen innerhalb des Nationalparks.",
+      "english": "The two large lakes Vastenjaure and Virihaure are located within the national park."
+    },
+    {
+      "id": "s3",
+      "name": "Staloluokta",
+      "quote": "Das Gebiet wird jedoch als primäres Sommerweidegebiet der samischen Rentierzüchter-Gemeinschaften Tuorpon, Jåhkågasska und Sirgas genutzt, welche während der Sommermonate hier u. a. die beiden Dörfer Staloluokta und Arasluokta bewohnen.",
+      "english": "The area is used as the primary summer grazing area for the Sami reindeer herding communities of Tuorpon, Jåhkågasska and Sirgas, who live in the two villages of Staloluokta and Arasluokta, among others, during the summer months."
+    },
+    {
+      "id": "s4",
+      "name": "Arasluokta",
+      "quote": "Das Gebiet wird jedoch als primäres Sommerweidegebiet der samischen Rentierzüchter-Gemeinschaften Tuorpon, Jåhkågasska und Sirgas genutzt, welche während der Sommermonate hier u. a. die beiden Dörfer Staloluokta und Arasluokta bewohnen.",
+      "english": "The area is used as the primary summer grazing area for the Sami reindeer herding communities of Tuorpon, Jåhkågasska and Sirgas, who live in the two villages of Staloluokta and Arasluokta, among others, during the summer months."
+    },
+    {
+      "id": "s5",
+      "name": "Padjelantaleden",
+      "quote": "Von Ritsem im Norden und Kvikkjokk im Süden führt der Wanderweg Padjelantaleden in den Park.",
+      "english": "From Ritsem in the north and Kvikkjokk in the south, the Padjelantaleden hiking trail leads into the park."
+    },
+    {
+      "id": "s6",
+      "name": "Sorjus-Hütte",
+      "quote": "Ebenso kann man von Sulitjelma aus von Norwegen über die Sorjus-Hütte der Norwegischen Bergwandervereinigung DNT (verschlossen, Schlüssel in Sulitjelma auszuleihen) nach Osten in den Padjelanta hineinwandern.",
+      "english": "Similarly, one can hike eastward into Padjelanta from Sulitjelma in Norway via the Sorjus-Hütte of the Norwegian Mountain Touring Association DNT (locked, key to be borrowed in Sulitjelma)."
+    },
+    {
+      "id": "s7",
+      "name": "Torf- und Zeltkohten",
+      "quote": "Hier stehen noch einige der traditionellen samischen Torf- und Zeltkohten.",
+      "english": "Some of the traditional Sami turf and tent huts (kohten) still stand here."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lakes and Traditional Dwellings",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Sami Villages and Hiking Trails",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "beee90f4c0315cb732300e3b004691bed31d168595dc666e6f64d9b7735232c2"
+}

@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Tjörn",
+      "quote": "Bohuslän liegt in Westschweden nördlich von Göteborg und ist durch felsige Küsten mit vorgelagerten Inseln (zum Beispiel Tjörn, Orust, Marstrand) und Schären gekennzeichnet.",
+      "english": "Bohuslän is located in western Sweden north of Gothenburg and is characterized by rocky coasts with offshore islands (for example Tjörn, Orust, Marstrand) and skerries."
+    },
+    {
+      "id": "s2",
+      "name": "Orust",
+      "quote": "Bohuslän liegt in Westschweden nördlich von Göteborg und ist durch felsige Küsten mit vorgelagerten Inseln (zum Beispiel Tjörn, Orust, Marstrand) und Schären gekennzeichnet.",
+      "english": "Bohuslän is located in western Sweden north of Gothenburg and is characterized by rocky coasts with offshore islands (for example Tjörn, Orust, Marstrand) and skerries."
+    },
+    {
+      "id": "s3",
+      "name": "Marstrand",
+      "quote": "Bohuslän liegt in Westschweden nördlich von Göteborg und ist durch felsige Küsten mit vorgelagerten Inseln (zum Beispiel Tjörn, Orust, Marstrand) und Schären gekennzeichnet.",
+      "english": "Bohuslän is located in western Sweden north of Gothenburg and is characterized by rocky coasts with offshore islands (for example Tjörn, Orust, Marstrand) and skerries."
+    },
+    {
+      "id": "s4",
+      "name": "Gullmarsfjorden",
+      "quote": "In Bohuslän befindet sich mit Gullmarsfjorden Schwedens einziger Fjord.",
+      "english": "Gullmarsfjorden, Sweden's only fjord, is located in Bohuslän."
+    },
+    {
+      "id": "s5",
+      "name": "Uddevalla",
+      "quote": "Die größte Stadt in Bohuslän ist Uddevalla.",
+      "english": "The largest city in Bohuslän is Uddevalla."
+    },
+    {
+      "id": "s6",
+      "name": "Bohusleden",
+      "quote": "Für Reisende sind vor allem die landschaftliche Vielfalt und die zahlreichen Sehenswürdigkeiten von Interesse, die sich auch durch den beliebten Sommer-Wanderweg Bohusleden erschließen lassen.",
+      "english": "For travelers, the scenic diversity and the numerous sights, which can also be explored via the popular summer hiking trail Bohusleden, are of particular interest."
+    },
+    {
+      "id": "s7",
+      "name": "Tanumshede",
+      "quote": "Ein weiterer touristischer Anziehungspunkt sind die Felsritzungen, hällristningar, in und um Tanumshede, die zum Weltkulturerbe gehören.",
+      "english": "Another tourist attraction are the rock carvings, hällristningar, in and around Tanumshede, which are part of the World Heritage Site."
+    }
+  ],
+  "days": [
+    {
+      "title": "Coastal Islands and Fjord Wonders",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Culture and History in the North",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "8f02fd396d0df6db4147797268916852de3c060991f6f255722c41066a670563"
+}

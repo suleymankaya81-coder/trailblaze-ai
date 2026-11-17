@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Listerland",
+      "quote": "Der Schärengarten von Blekinge erstreckt sich östlich von Listerland an der Südküste Blekinges und umfasst knapp eintausend Inseln, von denen etwa 800 länger als 50 Meter sind.",
+      "english": "The Blekinge archipelago extends east of Listerland on the southern coast of Blekinge and comprises almost a thousand islands, of which about 800 are longer than 50 meters."
+    },
+    {
+      "id": "s2",
+      "name": "Utklippan",
+      "quote": "Dem Festland weit vorgelagert ist die Inselgruppe Utklippan.",
+      "english": "The Utklippan group of islands is located far offshore from the mainland."
+    },
+    {
+      "id": "s3",
+      "name": "Aspö",
+      "quote": "Größere Inseln sind Aspö, Hasslö, Tärnö, Sturkö und Utlängan.",
+      "english": "Larger islands are Aspö, Hasslö, Tärnö, Sturkö and Utlängan."
+    },
+    {
+      "id": "s4",
+      "name": "Hasslö",
+      "quote": "Größere Inseln sind Aspö, Hasslö, Tärnö, Sturkö und Utlängan.",
+      "english": "Larger islands are Aspö, Hasslö, Tärnö, Sturkö and Utlängan."
+    },
+    {
+      "id": "s5",
+      "name": "Tärnö",
+      "quote": "Größere Inseln sind Aspö, Hasslö, Tärnö, Sturkö und Utlängan.",
+      "english": "Larger islands are Aspö, Hasslö, Tärnö, Sturkö and Utlängan."
+    },
+    {
+      "id": "s6",
+      "name": "Sturkö",
+      "quote": "Größere Inseln sind Aspö, Hasslö, Tärnö, Sturkö und Utlängan.",
+      "english": "Larger islands are Aspö, Hasslö, Tärnö, Sturkö and Utlängan."
+    },
+    {
+      "id": "s7",
+      "name": "Utlängan",
+      "quote": "Größere Inseln sind Aspö, Hasslö, Tärnö, Sturkö und Utlängan.",
+      "english": "Larger islands are Aspö, Hasslö, Tärnö, Sturkö and Utlängan."
+    },
+    {
+      "id": "s8",
+      "name": "Karlskrona",
+      "quote": "Inmitten des Schärengartens wurde nach der Eroberung des zuvor zu Dänemark gehörenden Blekinges 1679 die Stadt Karlskrona als Flottenstützpunkt von König Karl XI. errichtet.",
+      "english": "In the middle of the archipelago, the city of Karlskrona was built as a naval base by King Karl XI after the conquest of Blekinge, which previously belonged to Denmark, in 1679."
+    }
+  ],
+  "days": [
+    {
+      "title": "Western Gateway and Distant Outposts",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Major Central and Eastern Islands",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Naval City and Outer Settlements",
+      "stop_ids": [
+        "s8",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "daaae88c0d776f317a166115a405710610037772ecf620cecd602c7975bc5dcc"
+}

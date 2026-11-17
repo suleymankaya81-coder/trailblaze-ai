@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Naturum-Zentrum",
+      "quote": "Ausgangspunkt aller Wege ist ein Naturum-Zentrum im Süden des Trollskogens, in dem über die öländischen Landschaften informiert wird.",
+      "english": "The starting point for all paths is a Naturum center in the south of Trollskogen, where information about the landscapes of Öland is provided."
+    },
+    {
+      "id": "s2",
+      "name": "Grankullaviken",
+      "quote": "Der Strand zur Bucht Grankullaviken ist anders als die Ostseestrände von offenen Uferwiesen geprägt, die als Weidefläche dienen.",
+      "english": "The beach facing the Grankullaviken bay is characterized by open coastal meadows serving as grazing land, unlike the Baltic Sea beaches."
+    },
+    {
+      "id": "s3",
+      "name": "Trolleken",
+      "quote": "In der Nähe der Ostküste steht die besonders alte und verwachsene Eiche Trolleken (deutsch Zaubereiche).",
+      "english": "Located near the east coast is the particularly old and gnarled oak Trolleken (German: Magic Oak)."
+    },
+    {
+      "id": "s4",
+      "name": "Grabhügel und Steinsetzungen",
+      "quote": "So gibt es auf dem Areal des Naturschutzgebiets etwa 15 Grabhügel und Steinsetzungen prähistorischer Grabanlagen.",
+      "english": "In the area of the nature reserve, there are about 15 burial mounds and stone settings of prehistoric grave sites."
+    },
+    {
+      "id": "s5",
+      "name": "Jaktmuren",
+      "quote": "Bemerkenswert ist auch die im Süden verlaufende Jaktmuren aus dem 16. Jahrhundert.",
+      "english": "Also noteworthy is the Jaktmuren (Hunting Wall) dating from the 16th century, which runs through the south."
+    },
+    {
+      "id": "s6",
+      "name": "Wrack des Schoners Swiks",
+      "quote": "An der Ostseeküste liegt das Wrack des Schoners Swiks, der während eines Sturms zu Weihnachten 1926 am Ufer des Trollskogens strandete.",
+      "english": "On the Baltic coast lies the wreck of the schooner Swiks, which ran aground on the shore of Trollskogen during a storm at Christmas 1926."
+    },
+    {
+      "id": "s7",
+      "name": "Steinstrände der Ostsee",
+      "quote": "In der Nähe der Steinstrände der Ostsee sorgt der oft starke Wind für den ungewöhnlichen Wuchs der in ungeschützter Lage stehenden Bäume.",
+      "english": "Near the stone beaches of the Baltic Sea, the often strong wind causes the unusual growth of the trees standing in unprotected locations."
+    }
+  ],
+  "days": [
+    {
+      "title": "Coastal Discoveries and Historic Ruins",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Ancient Oaks and Prehistoric Sites",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "ad7b4c060d3720d45b3715256ca9d52b75f9e36c6c72a8e768b4afe9e67eb29e"
+}

@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Abisko",
+      "quote": "Er führt vorwiegend als Trekkingroute von Abisko (Nordende) nach Hemavan (Südende) durch die nahezu unbesiedelten Skanden.",
+      "english": "It runs primarily as a trekking route from Abisko (northern end) to Hemavan (southern end) through the almost uninhabited Scandes."
+    },
+    {
+      "id": "s2",
+      "name": "Tjäktjapass",
+      "quote": "Der höchste Punkt liegt am Tjäktjapass in 1150 Metern Höhe, der niedrigste Punkt ist Kvikkjokk mit 302 Metern Höhe.",
+      "english": "The highest point is at the Tjäktja Pass at an altitude of 1150 meters, the lowest point is Kvikkjokk at 302 meters."
+    },
+    {
+      "id": "s3",
+      "name": "Sälka",
+      "quote": "Von Abisko bis nach Sälka gehört der Kungsleden zum grenzüberschreitenden Nordkalottleden.",
+      "english": "From Abisko to Sälka, the Kungsleden is part of the cross-border Nordkalottleden."
+    },
+    {
+      "id": "s4",
+      "name": "Kebnekaise",
+      "quote": "Die Wanderroute zwischen Abisko am gleichnamigen Nationalpark in Norrbottens län und Hemavan am Wildnisreservat Vindelfjällen in Västerbottens län schließt einen „Abstecher“ über Kebnekaise – Schwedens höchstem Berg und geplantem Nationalpark – nach Nikkaluokta ein.",
+      "english": "The hiking route between Abisko at the national park of the same name in Norrbotten County and Hemavan at the Vindelfjällen wilderness reserve in Västerbotten County includes a \"detour\" via Kebnekaise – Sweden's highest mountain and a planned national park – to Nikkaluokta."
+    },
+    {
+      "id": "s5",
+      "name": "Nikkaluokta",
+      "quote": "Aufgrund seiner Abgeschiedenheit kann der Kungsleden nur von (Nennung von Nord nach Süd) Abisko, Nikkaluokta, Saltoluokta (bzw. Kebnats nach Süden und Vakkotavarre nach Norden am Länsväg BD 827) Kvikkjokk, Jäkkvik, Adolfström und Hemavan begangen werden.",
+      "english": "Due to its remoteness, the Kungsleden can only be accessed from (listed from north to south) Abisko, Nikkaluokta, Saltoluokta (or Kebnats to the south and Vakkotavarre to the north on Länsväg BD 827) Kvikkjokk, Jäkkvik, Adolfström, and Hemavan."
+    },
+    {
+      "id": "s6",
+      "name": "Stora Sjöfallet",
+      "quote": "Zudem verläuft ein Teilstück des Weges durch das UNESCO-Welterbe Laponia – den Nationalpark Stora Sjöfallet und am Rand des Nationalparks Sarek – sowie den Nationalpark Pieljekaise.",
+      "english": "In addition, a section of the trail runs through the UNESCO World Heritage site Laponia – the Stora Sjöfallet National Park and on the edge of the Sarek National Park – as well as the Pieljekaise National Park."
+    },
+    {
+      "id": "s7",
+      "name": "Kvikkjokk",
+      "quote": "Stärker begangen ist nur die nördliche Hälfte zwischen Abisko und Kvikkjokk und insbesondere zwischen Abisko und Kebnekaise bzw. Nikkaluokta, insbesondere durch das alljährlich stattfindende Trekking-Event Fjällräven Classic des gleichnamigen Ausrüstungsherstellers.",
+      "english": "Only the northern half between Abisko and Kvikkjokk is more heavily traveled, and especially between Abisko and Kebnekaise or Nikkaluokta, particularly due to the annual trekking event Fjällräven Classic by the equipment manufacturer of the same name."
+    },
+    {
+      "id": "s8",
+      "name": "Vindelfjällen",
+      "quote": "In der Kebnekaise-Region und im Vindelfjällen lebt ein Teil der seltenen Polarfuchs-Population Schwedens (schwed. „Fjällräv“).",
+      "english": "In the Kebnekaise region and in Vindelfjällen lives a part of Sweden's rare Arctic fox population (Swedish \"Fjällräv\")."
+    },
+    {
+      "id": "s9",
+      "name": "Hemavan",
+      "quote": "Die Flughäfen von Hemavan, Gällivare und Kiruna in der Nähe des nördlichen Kungsleden werden auch direkt aus Stockholm angeflogen.",
+      "english": "The airports of Hemavan, Gällivare, and Kiruna near the northern Kungsleden are also served by direct flights from Stockholm."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Peaks and Passes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Kebnekaise Massif and National Parks",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Southern Wilderness and Reservates",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "1f52387ce06b0e1fe5cca95327548e23b87de5a3df7f18f80fbfeb9c75aad224"
+}

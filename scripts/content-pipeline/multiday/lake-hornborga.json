@@ -1,0 +1,52 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hornborgasjön",
+      "quote": "Hornborgasjön ist einer der bekanntesten Vogelseen Schwedens.",
+      "english": "Lake Hornborga is one of Sweden's most famous bird lakes."
+    },
+    {
+      "id": "s2",
+      "name": "Broddetorp",
+      "quote": "Am östlichen Seeufer (einige Kilometer nördlich der Ortschaft Broddetorp) befindet sich eine Vogelstation mit Museum und Vogelwarte (Naturum Hornborga).",
+      "english": "On the eastern shore of the lake (a few kilometers north of the village of Broddetorp), there is a bird station with a museum and bird observatory (Naturum Hornborga)."
+    },
+    {
+      "id": "s3",
+      "name": "Naturum Hornborga",
+      "quote": "Am östlichen Seeufer (einige Kilometer nördlich der Ortschaft Broddetorp) befindet sich eine Vogelstation mit Museum und Vogelwarte (Naturum Hornborga).",
+      "english": "On the eastern shore of the lake (a few kilometers north of the lake village Broddetorp), there is a bird station with a museum and bird observatory (Naturum Hornborga)."
+    },
+    {
+      "id": "s4",
+      "name": "Bjurum",
+      "quote": "Am Südufer (bei Bjurum) befindet sich eine weitere Vogelstation (Naturum Trandansen), bei der im Frühjahr und Herbst Tausende von Kranichen beobachtet werden können.",
+      "english": "On the southern shore (near Bjurum) there is another bird station (Naturum Trandansen), where thousands of cranes can be observed in spring and autumn."
+    },
+    {
+      "id": "s5",
+      "name": "Naturum Trandansen",
+      "quote": "Am Südufer (bei Bjurum) befindet sich eine weitere Vogelstation (Naturum Trandansen), bei der im Frühjahr und Herbst Tausende von Kranichen beobachtet werden können.",
+      "english": "On the southern shore (near Bjurum) is another bird station (Naturum Trandansen), where thousands of cranes can be observed in spring and autumn."
+    }
+  ],
+  "days": [
+    {
+      "title": "Eastern Shore and Village Exploration",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Southern Shore Crane Observation",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "2947022bff8d2df435ea48bace350b9f9b615816a3cb661bb38c8a87c6625cf6"
+}

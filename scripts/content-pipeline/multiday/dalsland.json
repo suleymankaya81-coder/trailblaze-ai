@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kroppefjäll",
+      "quote": "Beim Kroppefjäll handelt es sich allerdings nicht um eine Fjellregion über der Waldgrenze wie in den Skanden, sondern um einen Granitberg mit teils unbewachsenen Felsflächen.",
+      "english": "The Kroppefjäll is not a fell region above the treeline like in the Scandes, but a granite mountain with partly barren rock surfaces."
+    },
+    {
+      "id": "s2",
+      "name": "Tresticklan",
+      "quote": "Wildmarkcharakter hat vor allem die Region an der norwegischen Grenze mit dem Nationalpark Tresticklan.",
+      "english": "The region on the Norwegian border with the Tresticklan National Park especially has a wilderness character."
+    },
+    {
+      "id": "s3",
+      "name": "Dalboslätten",
+      "quote": "Zwischen dem Bergland und dem See Vänern liegt die Ebene Dalboslätten.",
+      "english": "The Dalboslätten plain lies between the highlands and Lake Vänern."
+    },
+    {
+      "id": "s4",
+      "name": "Trogbrücke am Dalsland-Kanal in Håverud",
+      "quote": "Trogbrücke am Dalsland-Kanal in Håverud, erbaut 1886 von Nils Ericson",
+      "english": "Aqueduct at the Dalsland Canal in Håverud, built in 1886 by Nils Ericson"
+    },
+    {
+      "id": "s5",
+      "name": "Högsbyn",
+      "quote": "Petroglyphen von Högsbyn",
+      "english": "Petroglyphs of Högsbyn"
+    },
+    {
+      "id": "s6",
+      "name": "Fengersfors bruk",
+      "quote": "Fengersfors bruk, ehemalige Papierfabrik von 1906, heute Künstler- und Kunsthandwerkerkolonie",
+      "english": "Fengersfors bruk, a former paper mill from 1906, today an artists' and craftsmen's colony"
+    },
+    {
+      "id": "s7",
+      "name": "Gammelgården",
+      "quote": "Gammelgården, Westschwedens größtes Freilichtmuseum, mit dem Strohflechtermuseum Halmens Hus in Bengtsfors",
+      "english": "Gammelgården, West Sweden's largest open-air museum, with the straw weaving museum Halmens Hus in Bengtsfors"
+    },
+    {
+      "id": "s8",
+      "name": "Baldersnäs Herrgård",
+      "quote": "Baldersnäs Herrgård von 1912 bei Dals Långed, mit englischem Landschaftspark",
+      "english": "Baldersnäs Herrgård from 1912 near Dals Långed, with an English landscape park"
+    }
+  ],
+  "days": [
+    {
+      "title": "Wilderness and Natural Landscapes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Industrial Heritage and Engineering",
+      "stop_ids": [
+        "s4",
+        "s6",
+        "s8"
+      ]
+    },
+    {
+      "title": "History and Folk Culture",
+      "stop_ids": [
+        "s5",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "4538e3ef58b895b793248159c5f7afe4b1cebe1dbeb56cfd0f93eaa571879b7e"
+}

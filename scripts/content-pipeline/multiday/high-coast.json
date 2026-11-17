@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Högakustenbrücke",
+      "quote": "Die Region ist namensgebend für die Högakustenbrücke, eine Hängebrücke über den Fluss Ångermanälven.",
+      "english": "The region gives its name to the High Coast Bridge, a suspension bridge over the Ångermanälven River."
+    },
+    {
+      "id": "s2",
+      "name": "Nationalpark Skuleskogen",
+      "quote": "Im Gebiet des Weltnaturerbes Höga Kusten befindet sich der Nationalpark Skuleskogen.",
+      "english": "Skuleskogen National Park is located within the High Coast World Natural Heritage area."
+    },
+    {
+      "id": "s3",
+      "name": "Skuleberget",
+      "quote": "Skuleberget",
+      "english": "Skuleberget"
+    },
+    {
+      "id": "s4",
+      "name": "Fäberget",
+      "quote": "Fäberget",
+      "english": "Fäberget"
+    },
+    {
+      "id": "s5",
+      "name": "Ögeltjärnsberget",
+      "quote": "Ögeltjärnsberget",
+      "english": "Ögeltjärnsberget"
+    },
+    {
+      "id": "s6",
+      "name": "Högklinten",
+      "quote": "Högklinten",
+      "english": "Högklinten"
+    },
+    {
+      "id": "s7",
+      "name": "Getsvedjeberget",
+      "quote": "Getsvedjeberget",
+      "english": "Getsvedjeberget"
+    }
+  ],
+  "days": [
+    {
+      "title": "Bridges and National Parks",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Mountain Peaks and Viewpoints",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "faa8dc80b5ff5f870ed8b8f0eea06eb8fdc8b13918994c1040cb153fbced64fa"
+}

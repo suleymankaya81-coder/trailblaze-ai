@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Muddusjaure",
+      "quote": "Etwa die Hälfte der Fläche des Parks ist ein Urwaldgebiet, die andere Hälfte besteht aus Seen wie dem Muddusjaure, dem Luobbalape und dem Stuor-Muddus sowie ausgedehnten Moorgebieten.",
+      "english": "About half of the park's area is primeval forest, while the other half consists of lakes such as the Muddusjaure, the Luobbalape and the Stuor-Muddus as well as extensive marshlands."
+    },
+    {
+      "id": "s2",
+      "name": "Luobbalape",
+      "quote": "Etwa die Hälfte der Fläche des Parks ist ein Urwaldgebiet, die andere Hälfte besteht aus Seen wie dem Muddusjaure, dem Luobbalape und dem Stuor-Muddus sowie ausgedehnten Moorgebieten.",
+      "english": "About half of the park's area is primeval forest, while the other half consists of lakes such as the Muddusjaure, the Luobbalape and the Stuor-Muddus as well as extensive marshlands."
+    },
+    {
+      "id": "s3",
+      "name": "Stuor-Muddus",
+      "quote": "Etwa die Hälfte der Fläche des Parks ist ein Urwaldgebiet, die andere Hälfte besteht aus Seen wie dem Muddusjaure, dem Luobbalape und dem Stuor-Muddus sowie ausgedehnten Moorgebieten.",
+      "english": "About half of the park's area is primeval forest, while the other half consists of lakes such as the Muddusjaure, the Luobbalape and the Stuor-Muddus as well as extensive marshlands."
+    },
+    {
+      "id": "s4",
+      "name": "Vogelschutzgebiete",
+      "quote": "Im Park befinden sich zwei Vogelschutzgebiete, zu denen der Zutritt während der Sommermonate verboten ist, ein großes im Zentrum des Parks und eines am Südrand.",
+      "english": "There are two bird sanctuaries in the park, to which access is prohibited during the summer months, a large one in the center of the park and one at the southern edge."
+    },
+    {
+      "id": "s5",
+      "name": "Eingang am südlichen Ende",
+      "quote": "Von der Nationalstraße 45 (bzw. 97) führt ein 12 km langer Stichweg zum Eingang am südlichen Ende des Parks.",
+      "english": "From national road 45 (or 97), a 12 km long dead-end road leads to the entrance at the southern end of the park."
+    },
+    {
+      "id": "s6",
+      "name": "Muddus-Wasserfall",
+      "quote": "Muddus-Wasserfall mit 42 m Höhe etwa 10 km nördlich des Eingangs",
+      "english": "Muddus waterfall with a height of 42 m about 10 km north of the entrance"
+    },
+    {
+      "id": "s7",
+      "name": "Moskoskoru",
+      "quote": "Moskoskoru, eine 100 m tiefe Schlucht",
+      "english": "Moskoskoru, a 100 m deep gorge"
+    }
+  ],
+  "days": [
+    {
+      "title": "Lakes and Sanctuaries",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Southern Entrance and Gorges",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "735d0290af82cb910480f4be51356de540f94f29f9c3b906f08c064e7db56f2d"
+}

@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Stora Gla",
+      "quote": "Das Reservat ist überwiegend mit Nadelwald bewaldet, es gibt jedoch auch fast 80 größere und kleinere Seen, der größte ist der Stora Gla mit einer Fläche von ca. 32 Quadratkilometern.",
+      "english": "The reserve is predominantly forested with coniferous forest, but there are also almost 80 larger and smaller lakes, the largest being Stora Gla with an area of approximately 32 square kilometers."
+    },
+    {
+      "id": "s2",
+      "name": "Lenungshammar",
+      "quote": "Das Dorf Lenungshammar, das mitten im Naturreservat liegt, bietet zudem einen Campingplatz, einen Supermarkt und einen Kanuverleih.",
+      "english": "The village of Lenungshammar, which is located in the middle of the nature reserve, also offers a campsite, a supermarket, and a canoe rental."
+    },
+    {
+      "id": "s3",
+      "name": "Wanderwege",
+      "quote": "Das trotz seiner Naturbelassenheit touristisch gut erschlossene Gebiet bietet über 300 km beschilderte Wanderwege sowie die Möglichkeit für Kanutouren.",
+      "english": "The area, which is well-developed for tourism despite its natural state, offers over 300 km of signposted hiking trails as well as the possibility for canoe trips."
+    },
+    {
+      "id": "s4",
+      "name": "offenen Holzhütten",
+      "quote": "Es gibt sowohl für Wanderer wie auch für Paddler an diversen Stellen im Wald primitive Übernachtungsmöglichkeiten mit offenen Holzhütten, Feuerstellen und Plumpsklos.",
+      "english": "There are primitive overnight accommodations with open wooden huts, fireplaces, and outhouses at various locations in the forest for both hikers and paddlers."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glaskogen Lake and Wilderness Exploration",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "b71f8a09e09e335bd20f45e51dc9599e6a9ff74c5f3ed70897850abe0015ab05"
+}

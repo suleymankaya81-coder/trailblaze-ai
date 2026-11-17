@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "höchster Punkt",
+      "quote": "Ihr höchster Punkt liegt 86 Meter über dem Meeresspiegel.",
+      "english": "Its highest point is 86 meters above sea level."
+    },
+    {
+      "id": "s2",
+      "name": "nördliche Teil",
+      "quote": "Während der nördliche Teil schroff und kahl ist, ist der südliche Bereich flacher und mit Laubwald bewachsen.",
+      "english": "While the northern part is rugged and barren, the southern area is flatter and covered with deciduous forest."
+    },
+    {
+      "id": "s3",
+      "name": "südliche Bereich",
+      "quote": "Während der nördliche Teil schroff und kahl ist, ist der südliche Bereich flacher und mit Laubwald bewachsen.",
+      "english": "While the northern part is rugged and barren, the southern area is flatter and covered with deciduous forest."
+    },
+    {
+      "id": "s4",
+      "name": "Granitklippen",
+      "quote": "Die Insel besteht aus großen, verblockten Gebieten und vom Eis polierten Granitklippen.",
+      "english": "The island consists of large, bouldery areas and granite cliffs polished by ice."
+    },
+    {
+      "id": "s5",
+      "name": "Granithöhlen",
+      "quote": "Bei den eindrucksvollen Granithöhlen auf Blå Jungfrun handelt es sich um Gletschertöpfe, die als jättegrytor („Riesentöpfe“) bezeichnet werden.",
+      "english": "The impressive granite caves on Blå Jungfrun are glacier pots, which are referred to as jättegrytor (\"giant's kettles\")."
+    },
+    {
+      "id": "s6",
+      "name": "jättegrytor",
+      "quote": "Bei den eindrucksvollen Granithöhlen auf Blå Jungfrun handelt es sich um Gletschertöpfe, die als jättegrytor („Riesentöpfe“) bezeichnet werden.",
+      "english": "The impressive granite caves on Blå Jungfrun are glacier pots, which are referred to as jättegrytor (\"giant's kettles\")."
+    },
+    {
+      "id": "s7",
+      "name": "Labyrinth",
+      "quote": "An der Südspitze der Insel befindet sich ein Labyrinth in Form einer Steinsetzung (trojeborgen, Trojaburg).",
+      "english": "At the southern tip of the island there is a labyrinth in the form of a stone setting (trojeborgen, Troy Town)."
+    },
+    {
+      "id": "s8",
+      "name": "Südspitze",
+      "quote": "An der Südspitze der Insel befindet sich ein Labyrinth in Form einer Steinsetzung (trojeborgen, Trojaburg).",
+      "english": "At the southern tip of the island there is a labyrinth in the form of a stone setting (trojeborgen, Troy Town)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Geological Features and Peaks",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Northern and Southern Landscapes",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "0b9c3ddd2b20b651809a09a674f2353ead86bf2fc2b88b5a0f28710380e6f2bb"
+}

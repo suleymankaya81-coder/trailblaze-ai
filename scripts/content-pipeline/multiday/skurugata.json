@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Skurugata",
+      "quote": "Skurugata (Skurustraße) ist eine Felsformation in der Gemeinde Eksjö, Jönköpings län in Süd-Schweden.",
+      "english": "Skurugata (Skuru Street) is a rock formation in the municipality of Eksjö, Jönköping County in southern Sweden."
+    },
+    {
+      "id": "s2",
+      "name": "Canyon",
+      "quote": "Sie bildet einen 800 Meter langen Canyon, der etwa 20 bis 50 Meter tief und 7 bis 24 Meter breit ist.",
+      "english": "It forms an 800 meter long canyon, which is about 20 to 50 meters deep and 7 to 24 meters wide."
+    },
+    {
+      "id": "s3",
+      "name": "Schlucht",
+      "quote": "Das Gestein in der Schlucht besteht größtenteils aus graubraunem und dunkelbraunem Porphyr mit Anteilen an Quarz und Rotem Feldspat.",
+      "english": "The rock in the gorge consists largely of gray-brown and dark-brown porphyry with portions of quartz and red feldspar."
+    },
+    {
+      "id": "s4",
+      "name": "Loch mit einem Gästebuch",
+      "quote": "Etwa in der Mitte der Schlucht ist ein loser, mit einer Markierung versehener Stein in die Wand eingelassen, hinter dem sich ein Loch mit einem Gästebuch befindet.",
+      "english": "Roughly in the middle of the gorge, a loose, marked stone is embedded in the wall, behind which is a hole with a guest book."
+    },
+    {
+      "id": "s5",
+      "name": "Naturreservat",
+      "quote": "Die Gegend der Skurugata ist seit 1967 als Naturreservat mit einer Größe von etwa 42 Hektar ausgewiesen, deshalb gilt hier nicht das schwedische Jedermannsrecht und Campen ist hier nicht gestattet.",
+      "english": "The Skurugata area has been designated as a nature reserve with a size of about 42 hectares since 1967, which is why the Swedish Right of Public Access does not apply here and camping is not permitted."
+    },
+    {
+      "id": "s6",
+      "name": "Wanderweg",
+      "quote": "Ein Wanderweg führt von der Schlucht hinauf auf den 337 Meter hohen Skuruhatt, von dem man einen schönen Ausblick auf die bewaldete Landschaft Smålands hat.",
+      "english": "A hiking trail leads from the gorge up to the 337-meter-high Skuruhatt, from which one has a beautiful view of the forested landscape of Småland."
+    },
+    {
+      "id": "s7",
+      "name": "Skuruhatt",
+      "quote": "Ein Wanderweg führt von der Schlucht hinauf auf den 337 Meter hohen Skuruhatt, von dem man einen schönen Ausblick auf die bewaldete Landschaft Smålands hat.",
+      "english": "A hiking trail leads from the gorge up to the 337-meter-high Skuruhatt, from which one has a beautiful view of the forested landscape of Småland."
+    }
+  ],
+  "days": [
+    {
+      "title": "The Deep Gorge Exploration",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Hidden Secrets and Protected Land",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Highland Trail to the Summit",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "eb230359f1a42776b8a72dec0e03fb40e8e3bdc9aa480880508cd986e25df250"
+}

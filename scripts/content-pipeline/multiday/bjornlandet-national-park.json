@@ -1,0 +1,59 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Storberget",
+      "quote": "Der Norden wird durch eine Bergkette (höchste Erhebung ist der 550 Meter hohe Storberget) mit nach Süden hin zum Teil senkrecht abfallenden Felswänden dominiert.",
+      "english": "The north is dominated by a mountain range (the highest elevation is the 550-meter-high Storberget) with rock faces that drop off vertically in parts to the south."
+    },
+    {
+      "id": "s2",
+      "name": "Angsjön",
+      "quote": "In einer Senke dieses Tals, rund 200 Meter unterhalb des Storberget, liegt im Osten des Nationalparks der See Angsjön, an den sich ausgedehnte Moorgebiete anschließen.",
+      "english": "In a depression of this valley, around 200 meters below Storberget, lies Lake Angsjön in the east of the national park, which is followed by extensive bog areas."
+    },
+    {
+      "id": "s3",
+      "name": "Björnberget",
+      "quote": "Man erreicht den lediglich im Ostteil durch einen Wanderpfad zum Aussichtspunkt Björnberget erschlossenen Nationalpark, indem man von der Straße 92 (Frederika – Åsele) der Ausschilderung zum Nationalpark folgt (Schotterstraße).",
+      "english": "One reaches the national park, which is developed only in the eastern part via a hiking trail to the Björnberget viewpoint, by following the signs to the national park from Road 92 (Frederika – Åsele) (gravel road)."
+    },
+    {
+      "id": "s4",
+      "name": "Angsjöbäcken",
+      "quote": "Am Angsjöbäcken lassen sich Reste einer Floßmauer und hölzerne Schwimmbarrieren entdecken.",
+      "english": "At Angsjöbäcken, remains of a timber floating wall and wooden floating barriers can be discovered."
+    },
+    {
+      "id": "s5",
+      "name": "Svärmorsbäcken",
+      "quote": "Auf den Moorwiesen am Svärmorsbäcken, Björkbäcken und Angsjön wurden in geringem Umfang Moormahd betrieben.",
+      "english": "Peat mowing was carried out to a small extent on the moor meadows at Svärmorsbäcken, Björkbäcken and Angsjön."
+    },
+    {
+      "id": "s6",
+      "name": "Björkbäcken",
+      "quote": "Auf den Moorwiesen am Svärmorsbäcken, Björkbäcken und Angsjön wurden in geringem Umfang Moormahd betrieben.",
+      "english": "Peat mowing was carried out to a small extent on the moor meadows at Svärmorsbäcken, Björkbäcken and Angsjön."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Peaks and Valleys",
+      "stop_ids": [
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "title": "Eastern Lakes and Heritage Streams",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "fd9bf17a266081e71d64234c58292f1afbed706bba806d0a5c85cb948233b8be"
+}

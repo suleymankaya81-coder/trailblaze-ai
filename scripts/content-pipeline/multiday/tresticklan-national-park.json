@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Stora Tresticklan",
+      "quote": "Der Name Tresticklan bedeutet Dreizack und hängt mit der Form des Sees Stora Tresticklan zusammen.",
+      "english": "The name Tresticklan means trident and is related to the shape of Lake Stora Tresticklan."
+    },
+    {
+      "id": "s2",
+      "name": "Råbocken",
+      "quote": "Der Parkplatz Råbocken liegt etwa 600 m vom östlichen Rand entfernt und ist Ausgangspunkt für Wanderungen.",
+      "english": "The Råbocken car park is located about 600 m from the eastern edge and is the starting point for hikes."
+    },
+    {
+      "id": "s3",
+      "name": "Bodalsviken",
+      "quote": "Bis zur norwegischen Grenze (Bodalsviken) sind es etwa 3,5 km, die Hütte Budalsvika bietet unter anderem auch Übernachtungen an.",
+      "english": "It is about 3.5 km to the Norwegian border (Bodalsviken), and the Budalsvika hut offers overnight stays among other things."
+    },
+    {
+      "id": "s4",
+      "name": "Budalsvika",
+      "quote": "Bis zur norwegischen Grenze (Bodalsviken) sind es etwa 3,5 km, die Hütte Budalsvika bietet unter anderem auch Übernachtungen an.",
+      "english": "It is about 3.5 km to the Norwegian border (Bodalsviken), and the Budalsvika hut offers overnight stays among other things."
+    },
+    {
+      "id": "s5",
+      "name": "Tresticklaleden",
+      "quote": "Der Rundweg Tresticklaleden ist etwa 8 km lang.",
+      "english": "The Tresticklaleden circular trail is about 8 km long."
+    },
+    {
+      "id": "s6",
+      "name": "Bråtane",
+      "quote": "Am südlichen Abzweig Bråtane ist ein kurzer Abstecher zum Orshöjden möglich, welcher mit 276 m die größte Erhebung im Nationalpark darstellt.",
+      "english": "At the southern Bråtane junction, a short detour to Orshöjden is possible, which at 276 m represents the highest elevation in the national park."
+    },
+    {
+      "id": "s7",
+      "name": "Orshöjden",
+      "quote": "Am südlichen Abzweig Bråtane ist ein kurzer Abstecher zum Orshöjden möglich, welcher mit 276 m die größte Erhebung im Nationalpark darstellt.",
+      "english": "At the southern Bråtane junction, a short detour to Orshöjden is possible, which at 276 m represents the highest elevation in the national park."
+    }
+  ],
+  "days": [
+    {
+      "title": "East Entrance and Central Lakes",
+      "stop_ids": [
+        "s2",
+        "s1",
+        "s5"
+      ]
+    },
+    {
+      "title": "Southern Heights",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Western Border and Cabins",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "05940a8efc95e91cfebd1cacc72ae191078b2acab3fc0dbac2202d3ad27d9fe7"
+}

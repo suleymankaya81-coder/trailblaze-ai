@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Visby",
+      "quote": "Hauptort und einzige Stadt der Insel ist die frühere Hansestadt Visby.",
+      "english": "The main settlement and only city on the island is the former Hanseatic city of Visby."
+    },
+    {
+      "id": "s2",
+      "name": "Gotlands Fornsal",
+      "quote": "Das Freilichtmuseum von Bunge und Gotlands Fornsal in Visby zeigen viel davon.",
+      "english": "The Bunge open-air museum and Gotlands Fornsal in Visby show a lot of it."
+    },
+    {
+      "id": "s3",
+      "name": "Bläse kalkbruksmuseum",
+      "quote": "In Bläse befindet sich ein Kalkwerksmuseum (schwed. Bläse kalkbruksmuseum).",
+      "english": "In Bläse, there is a lime works museum (Swedish: Bläse kalkbruksmuseum)."
+    },
+    {
+      "id": "s4",
+      "name": "Bäste träsk",
+      "quote": "Es gibt auf Gotland insgesamt etwa 50 ständig mit Wasser gefüllte Seen, von denen vier eine Fläche von mehr als einem Quadratkilometer haben: Bäste träsk, Tingstädeträsk, Fardumeträsk und Bogeviken.",
+      "english": "There are a total of about 50 lakes on Gotland that are constantly filled with water, four of which have an area of more than one square kilometer: Bäste träsk, Tingstädeträsk, Fardumeträsk, and Bogeviken."
+    },
+    {
+      "id": "s5",
+      "name": "Tingstädeträsk",
+      "quote": "Das Bulverket, ein Pfahlbau im Tingstädeträsk, ist eine einmalige Anlage aus dieser Zeit.",
+      "english": "The Bulverket, a pile dwelling in Tingstädeträsk, is a unique structure from this era."
+    },
+    {
+      "id": "s6",
+      "name": "Torsburg",
+      "quote": "Zahlreiche Naturreservate wurden auf der gesamten Insel eingerichtet, darunter das Uppstaigreservat und eines auf der Torsburg sowie zwei weitere auf den westlich vorgelagerten Felseninseln Lilla Karlsö und Stora Karlsö (kleine und große Karlsinsel).",
+      "english": "Numerous nature reserves have been established throughout the island, including the Uppstaig reserve and one on the Torsburg, as well as two more on the offshore rocky islands to the west, Lilla Karlsö and Stora Karlsö (Little and Great Karl Island)."
+    },
+    {
+      "id": "s7",
+      "name": "Lilla Karlsö",
+      "quote": "Gotland ist eine Insel mit einigen Nebeninseln (u. a. Fårö, Lilla und Stora Karlsö und Östergarnsholm), die nach der letzten Eiszeit aufgrund der Landhebung und unterschiedlicher Meeresstände der Ostsee in mehreren Etappen aus der Ancylussee emporwuchs.",
+      "english": "Gotland is an island with several neighboring islands (including Fårö, Lilla and Stora Karlsö, and Östergarnsholm), which emerged from the Ancylus Lake in several stages after the last Ice Age due to land uplift and different Baltic Sea levels."
+    },
+    {
+      "id": "s8",
+      "name": "Stora Karlsö",
+      "quote": "Zahlreiche Naturreservate wurden auf der gesamten Insel eingerichtet, darunter das Uppstaigreservat und eines auf der Torsburg sowie zwei weitere auf den westlich vorgelagerten Felseninseln Lilla Karlsö und Stora Karlsö (kleine und große Karlsinsel).",
+      "english": "Numerous nature reserves have been established throughout the island, including the Uppstaig reserve and one on the Torsburg, as well as two more on the offshore rocky islands to the west, Lilla Karlsö and Stora Karlsö (Little and Great Karl Island)."
+    },
+    {
+      "id": "s9",
+      "name": "Vallhagar",
+      "quote": "Rinder, Ziegen, Schafe, Hausschweine und Hühner sind in der prähistorischen Siedlung Vallhagar belegt.",
+      "english": "Cattle, goats, sheep, domestic pigs, and chickens are documented in the prehistoric settlement of Vallhagar."
+    },
+    {
+      "id": "s10",
+      "name": "Freilichtmuseum von Bunge",
+      "quote": "Das Freilichtmuseum von Bunge und Gotlands Fornsal in Visby zeigen viel davon.",
+      "english": "The Bunge open-air museum and Gotlands Fornsal in Visby show a lot of it."
+    }
+  ],
+  "days": [
+    {
+      "title": "Hanseatic City and Island Heritage",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s9"
+      ]
+    },
+    {
+      "title": "Northern Lakes and Industrial History",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s10"
+      ]
+    },
+    {
+      "title": "Western Nature Reserves and Ancient Forts",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "7dfd3167635308cb0e9d6e3897bf1f8bc797e93a249bbd71ad1d29046046e9c8"
+}

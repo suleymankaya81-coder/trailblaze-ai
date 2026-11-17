@@ -1,0 +1,52 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Orsasjön",
+      "quote": "Ein weiterer Zufluss kommt vom nördlich gelegenen Orsasjön, der vom Oreälven gespeist wird.",
+      "english": "Another tributary comes from Lake Orsa in the north, which is fed by the Oreälven."
+    },
+    {
+      "id": "s2",
+      "name": "Sollerön",
+      "quote": "Im Siljan befinden sich mehrere Inseln, von denen die 7,5 km lange und 4 km breite Insel Sollerön die größte ist.",
+      "english": "There are several islands in Siljan, the largest of which is the 7.5 km long and 4 km wide island of Sollerön."
+    },
+    {
+      "id": "s3",
+      "name": "Leksand",
+      "quote": "Am Ufer des Siljans liegen unter anderem die Orte Leksand, Mora und Rättvik.",
+      "english": "The towns of Leksand, Mora and Rättvik, among others, are located on the shores of Siljan."
+    },
+    {
+      "id": "s4",
+      "name": "Mora",
+      "quote": "Heutzutage gibt es Ausflugsboote, die Sightseeingtouren von den oben genannten Orten aus unternehmen.",
+      "english": "Nowadays there are excursion boats that undertake sightseeing tours from the above-mentioned places."
+    },
+    {
+      "id": "s5",
+      "name": "Rättvik",
+      "quote": "Am Ufer des Siljans liegen unter anderem die Orte Leksand, Mora und Rättvik.",
+      "english": "The towns of Leksand, Mora and Rättvik, among others, are located on the shores of Siljan."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Lake and Island Exploration",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Lakeside Towns and Boat Tours",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "3b1910196c28165a8e504eaf152359ad9a0ed9c783399f58282fd2fec6016e8b"
+}

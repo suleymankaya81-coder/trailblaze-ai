@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Naturum",
+      "quote": "Oben auf dem Berg gibt es eine Reihe von Pfaden und Kletterrouten vom Typ Via Ferrata, die neben dem Informationszentrum Naturum beginnen.",
+      "english": "At the top of the mountain there are a number of paths and climbing routes of the Via Ferrata type, which start next to the Naturum information center."
+    },
+    {
+      "id": "s2",
+      "name": "Via Ferrata",
+      "quote": "Oben auf dem Berg gibt es eine Reihe von Pfaden und Kletterrouten vom Typ Via Ferrata, die neben dem Informationszentrum Naturum beginnen.",
+      "english": "At the top of the mountain there are a number of paths and climbing routes of the Via Ferrata type, which start next to the Naturum information center."
+    },
+    {
+      "id": "s3",
+      "name": "Skianlage",
+      "quote": "Unter anderem die größte alpine Skianlage der Gemeinde Kramfors mit drei Liften (darunter ein fester Vierersessellift, eingeweiht im Hochsommer 2021, der den Zweiersessellift von 1965 ersetzte) und vier Pisten (sechs Pisten gezählt mit zwei Verbindungspassagen).",
+      "english": "Among other things, the largest alpine ski facility in the municipality of Kramfors with three lifts (including a fixed four-seater chairlift, inaugurated in midsummer 2021, which replaced the two-seater chairlift from 1965) and four runs (six runs counted with two connecting passages)."
+    },
+    {
+      "id": "s4",
+      "name": "Friluftsbyn",
+      "quote": "Auf der Südseite von Skuleberget befindet sich der Erlebniskomplex Friluftsbyn mit u. a. einem Spielplatz, Gemeinschaftsbereichen, einem Badestrand und einem ehemaligen Labyrinth.",
+      "english": "On the south side of Skuleberget is the Friluftsbyn adventure complex with, among other things, a playground, common areas, a bathing beach and a former labyrinth."
+    },
+    {
+      "id": "s5",
+      "name": "Badestrand",
+      "quote": "Auf der Südseite von Skuleberget befindet sich der Erlebniskomplex Friluftsbyn mit u. a. einem Spielplatz, Gemeinschaftsbereichen, einem Badestrand und einem ehemaligen Labyrinth.",
+      "english": "On the south side of Skuleberget is the Friluftsbyn adventure complex with, among other things, a playground, common areas, a bathing beach and a former labyrinth."
+    },
+    {
+      "id": "s6",
+      "name": "Rövargrottan",
+      "quote": "Diese Räuber kamen laut Historie des Nordischen Museums im 17. Jahrhundert nach Skuleskogen und Skuleberget und beschlagnahmten die Höhle, die später als Rövargrottan bekannt wurde.",
+      "english": "According to the history of the Nordic Museum, these robbers came to Skuleskogen and Skuleberget in the 17th century and seized the cave, which later became known as Rövargrottan."
+    },
+    {
+      "id": "s7",
+      "name": "Kungsgrottan",
+      "quote": "Die Höhle, die abwechselnd Kungsgrottan, Skulegrottan und Rövargrottan genannt wird, ist von der Straße aus als großer dunkler Fleck in der Mitte der fast senkrechten Felswand sichtbar.",
+      "english": "The cave, which is alternately called Kungsgrottan, Skulegrottan and Rövargrottan, is visible from the road as a large dark spot in the middle of the almost vertical rock face."
+    }
+  ],
+  "days": [
+    {
+      "title": "Adventure and Information",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Outdoor Recreation and Caves",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "225477b8031837a777d030e0b5d8f71f6ff0df34286d543f0c46a4027282a7f1"
+}

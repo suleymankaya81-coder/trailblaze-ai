@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Stora Alvaret",
+      "quote": "Da die Erdschicht aufgrund von Erosion nur dünn ist, bestehen große Teile der Insel – vor allem im Süden – aus einer Karst- und Heidelandschaft (Stora Alvaret) mit entsprechender Fauna.",
+      "english": "As the soil layer is thin due to erosion, large parts of the island – especially in the south – consist of a karst and heath landscape (Stora Alvaret) with corresponding fauna."
+    },
+    {
+      "id": "s2",
+      "name": "Raukar von Byrum",
+      "quote": "Im Norden zeigen die Raukar von Byrum an, dass die Insel aus dem Meer aufstieg.",
+      "english": "In the north, the Raukar of Byrum indicate that the island rose from the sea."
+    },
+    {
+      "id": "s3",
+      "name": "Blå Jungfrun",
+      "quote": "Zwischen dem Festland und der Insel liegt mitten im Kalmarsund die als Nationalpark geschützte Granitinsel Blå Jungfrun (deutsch Blaue Jungfrau).",
+      "english": "Between the mainland and the island, in the middle of the Kalmar Strait, lies the granite island of Blå Jungfrun (German: Blue Virgin), protected as a national park."
+    },
+    {
+      "id": "s4",
+      "name": "Blå rör",
+      "quote": "In dieser Zeit wurden große Hügelgräber angelegt, darunter der Blå rör, der größte der etwa 100 Tumuli auf der Insel.",
+      "english": "During this period, large burial mounds were created, including the Blå rör, the largest of the approximately 100 tumuli on the island."
+    },
+    {
+      "id": "s5",
+      "name": "Gettlinge",
+      "quote": "Schiffssetzungen (Gettlinge) und Treuddar (Vi alvar, Resmo, Segerstad) sind hingegen selten.",
+      "english": "Ship settings (Gettlinge) and treuddar (Vi alvar, Resmo, Segerstad) are, however, rare."
+    },
+    {
+      "id": "s6",
+      "name": "Eketorp",
+      "quote": "Aus der Zeit zwischen 400 und 550 n. Chr. stammen die großen Burganlagen wie die Gråborg, Ismantorp und Eketorp.",
+      "english": "The large castle complexes such as Gråborg, Ismantorp and Eketorp date from the period between 400 and 550 AD."
+    },
+    {
+      "id": "s7",
+      "name": "Sandviks Kvarn",
+      "quote": "Weitere bekannte Mühlen sind die Mühlen von Lerkaka, von Störlinge, Sandviks Kvarn, die Mühle von Strandtorp und die Scheuermühle Jordhamn.",
+      "english": "Other well-known mills are the mills of Lerkaka, of Störlinge, Sandviks Kvarn, the mill of Strandtorp and the Jordhamn scrubbing mill."
+    },
+    {
+      "id": "s8",
+      "name": "Schloss Solliden",
+      "quote": "In der Nähe der größten öländischen Stadt, Borgholm, hat die schwedische Königsfamilie ihren Sommerwohnsitz Schloss Solliden.",
+      "english": "Near the largest city on Öland, Borgholm, the Swedish royal family has its summer residence, Solliden Palace."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Nature and Royal Sights",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Southern Landscapes and Ancient Monuments",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "3aa1e033e18751402bd14c2343f02eb3b47a06fc2cf1d4b6fbad61e927679555"
+}

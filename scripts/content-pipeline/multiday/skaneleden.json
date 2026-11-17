@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kust till kustleden",
+      "quote": "Der Kust till kustleden erstreckt sich über 370 Kilometer von Sölvesborg im Osten bis nach Örlid bei Ängelholm im Westen.",
+      "english": "The Coast to Coast trail extends over 370 kilometers from Sölvesborg in the east to Örlid near Ängelholm in the west."
+    },
+    {
+      "id": "s2",
+      "name": "Bjärehalvön",
+      "quote": "Er verbindet dabei die Ost- (hier hat man Anschluss an den Blekingeleden) mit der Westküste (wobei man zuletzt die Halbinsel Bjärehalvön umrundet) und verläuft im Norden von Schonen.",
+      "english": "It connects the east coast (where you have a connection to the Blekinge Trail) with the west coast (where you finally circumnavigate the Bjäre Peninsula) and runs through the north of Scania."
+    },
+    {
+      "id": "s3",
+      "name": "Skrylle",
+      "quote": "Von einer Alternativroute durch das Naherholungsgebiet Skrylle führt ein Abstecher in den Dalby Söderskog, einen der kleinsten und ältesten Nationalparks in Schwedens.",
+      "english": "From an alternative route through the Skrylle recreation area, a detour leads into Dalby Söderskog, one of Sweden's smallest and oldest national parks."
+    },
+    {
+      "id": "s4",
+      "name": "Dalby Söderskog",
+      "quote": "Von einer Alternativroute durch das Naherholungsgebiet Skrylle führt ein Abstecher in den Dalby Söderskog, einen der kleinsten und ältesten Nationalparks in Schwedens.",
+      "english": "From an alternative route through the Skrylle recreation area, a detour leads into Dalby Söderskog, one of Sweden's smallest and oldest national parks."
+    },
+    {
+      "id": "s5",
+      "name": "Nationalpark Söderåsen",
+      "quote": "Diese 162 Kilometer lange Route des Skåneleden, der die Provinz von Nordwesten nach Südosten durchquert, führt unter anderem durch den Nationalpark Söderåsen.",
+      "english": "This 162-kilometer-long route of the Skåneleden, which crosses the province from northwest to southeast, leads among other things through the Söderåsen National Park."
+    },
+    {
+      "id": "s6",
+      "name": "Nationalpark Stenshuvud",
+      "quote": "Zwischen Simrishamn und Kivik passiert man den Nationalpark Stenshuvud.",
+      "english": "Between Simrishamn and Kivik, one passes the Stenshuvud National Park."
+    },
+    {
+      "id": "s7",
+      "name": "Ven",
+      "quote": "Außerdem ist ein Rundweg auf der Insel Ven markiert.",
+      "english": "Additionally, a circular route is marked on the island of Ven."
+    },
+    {
+      "id": "s8",
+      "name": "Vattenriket",
+      "quote": "Der Abschnitt Vattenriket verläuft derzeit zwischen Kristianstad und Yngsjö.",
+      "english": "The Vattenriket section currently runs between Kristianstad and Yngsjö."
+    }
+  ],
+  "days": [
+    {
+      "title": "North and West Coast Trails",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Central Parks and Recreation Areas",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Eastern Biospheres and Parks",
+      "stop_ids": [
+        "s6",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "203f78d5c047609151b3494d15d88b472ab9e7abcac55afdab14ecc8f15e3d86"
+}

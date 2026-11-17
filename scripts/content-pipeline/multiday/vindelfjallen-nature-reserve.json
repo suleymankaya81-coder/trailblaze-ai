@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Norra Sytertoppen",
+      "quote": "Die Höhe des Gebiets reicht von 500 m ö.h. in den Tälern bis zu den 1768 m ö.h. des höchsten Gipfels im Reservat, dem Norra Sytertoppen.",
+      "english": "The altitude of the area ranges from 500 m above sea level in the valleys to the 1768 m above sea level of the highest peak in the reserve, the Norra Sytertoppen."
+    },
+    {
+      "id": "s2",
+      "name": "Vindelälven",
+      "quote": "Der Oberlauf des Vindelälven durchfließt das Gebiet.",
+      "english": "The upper reaches of the Vindelälven flow through the area."
+    },
+    {
+      "id": "s3",
+      "name": "Tärnasjö",
+      "quote": "So wurden am See Tärnasjö u. a. Pfeilspitzen gefunden, die auf das Jahr 8000 v. Chr. datiert wurden.",
+      "english": "For instance, arrowheads were found at Lake Tärnasjö that were dated back to 8000 BC."
+    },
+    {
+      "id": "s4",
+      "name": "Kungsleden",
+      "quote": "Der Weitwanderweg Kungsleden, entlang dem einige Übernachtungshütten liegen, durchquert auf 78 km das Gebiet und führt von Hemavan nach Ammarnäs.",
+      "english": "The Kungsleden long-distance hiking trail, along which several overnight cabins are located, traverses the area for 78 km and leads from Hemavan to Ammarnäs."
+    },
+    {
+      "id": "s5",
+      "name": "Hemavan",
+      "quote": "Ausgangspunkte für Exkursionen sind die Orte Hemavan, Tärnaby sowie Ammarnäs.",
+      "english": "Starting points for excursions are the villages of Hemavan, Tärnaby and Ammarnäs."
+    },
+    {
+      "id": "s6",
+      "name": "Tärnaby",
+      "quote": "Ausgangspunkte für Exkursionen sind die Orte Hemavan, Tärnaby sowie Ammarnäs.",
+      "english": "Starting points for excursions are the villages of Hemavan, Tärnaby and Ammarnäs."
+    },
+    {
+      "id": "s7",
+      "name": "Ammarnäs",
+      "quote": "In Ammarnäs und in Hemavan befindet sich auch ein Naturum, in dem die Besucher eine Ausstellung über das Naturreservat besuchen können.",
+      "english": "In Ammarnäs and in Hemavan there is also a Naturum, where visitors can visit an exhibition about the nature reserve."
+    }
+  ],
+  "days": [
+    {
+      "title": "Southern Gateway and Alpine Peaks",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s1"
+      ]
+    },
+    {
+      "title": "Rivers and Ancient Lakes",
+      "stop_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "The King's Trail and Northern Hub",
+      "stop_ids": [
+        "s4",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "b6d1d146925be798a6926664600e32949b8f5d17fb9416fd55f1221afeef2212"
+}
