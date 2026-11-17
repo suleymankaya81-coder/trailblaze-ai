@@ -30,7 +30,7 @@ describe("country partners", () => {
     expect(rvLinkFor("gr", AFTER_BF)).toBe("https://www.motorhomerepublic.com/greece/?affiliate=minialife");
   });
   it("Nordic countries use their own currencies and no US campgrounds", () => {
-    expect(["no", "is", "se", "fi", "dk"].map(countryCurrency)).toEqual(["NOK", "ISK", "SEK", "EUR", "DKK"]);
+    expect(["no", "is", "se", "fi", "dk"].map((c) => countryCurrency(c))).toEqual(["NOK", "ISK", "SEK", "EUR", "DKK"]);
     expect(partnersFor("no", "campground")).toEqual([]);
   });
 });
