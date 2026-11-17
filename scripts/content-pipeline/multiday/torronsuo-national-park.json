@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Torronsuo",
+      "quote": "Der Nationalpark umfasst den Torronsuo, das größte noch in natürlichem Zustand befindliche Moorgebiet Südfinnlands.",
+      "english": "The national park encompasses Torronsuo, the largest bog area in southern Finland still in its natural state."
+    },
+    {
+      "id": "s2",
+      "name": "Plateuregenmooren",
+      "quote": "Es setzt sich aus mehreren konzentrisch wachsenden Plateuregenmooren mit dem typischen Bult-Schlenken-Relief zusammen und ist mit tausenden Mooraugen durchsetzt.",
+      "english": "It is composed of several concentrically growing plateau bogs with typical hummock-hollow relief and is interspersed with thousands of bog pools."
+    },
+    {
+      "id": "s3",
+      "name": "Mooraugen",
+      "quote": "Es setzt sich aus mehreren konzentrisch wachsenden Plateuregenmooren mit dem typischen Bult-Schlenken-Relief zusammen und ist mit tausenden Mooraugen durchsetzt.",
+      "english": "It is composed of several concentrically growing plateau bogs with typical hummock-hollow relief and is interspersed with thousands of bog pools."
+    },
+    {
+      "id": "s4",
+      "name": "angrenzenden Wäldern",
+      "quote": "In den angrenzenden Wäldern findet sich eine Population des seltenen Gleithörnchens.",
+      "english": "In the adjacent forests, there is a population of the rare flying squirrel."
+    }
+  ],
+  "days": [
+    {
+      "title": "Bogs and Forests of Torronsuo",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "552e4782bfc46cac5c63aca55108b68a4607eab2aba7a2e1d1bb3fe421522f2b"
+}

@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Tiilikka-See",
+      "quote": "Die Grenze verlief damals durch den Tiilikka-See (finnisch Tiilikkajärvi).",
+      "english": "Back then, the border ran through Lake Tiilikka (Finnish Tiilikkajärvi)."
+    },
+    {
+      "id": "s2",
+      "name": "Grenzstein",
+      "quote": "Im Nationalpark befindet sich noch heute ein Grenzstein aus dieser Zeit, der das Symbol des Nationalparks darstellt.",
+      "english": "A boundary stone from this era, which represents the symbol of the national park, is still located in the national park today."
+    },
+    {
+      "id": "s3",
+      "name": "Oser",
+      "quote": "Die Landschaft des Nationalparks Tiilikkajärvi ist geprägt durch den See, nach dem der Nationalpark benannt ist, und die den See prägenden Oser und Sandstrände.",
+      "english": "The landscape of Tiilikkajärvi National Park is characterized by the lake after which the national park is named, and the eskers and sandy beaches that shape the lake."
+    },
+    {
+      "id": "s4",
+      "name": "Sandstrände",
+      "quote": "Die Landschaft des Nationalparks Tiilikkajärvi ist geprägt durch den See, nach dem der Nationalpark benannt ist, und die den See prägenden Oser und Sandstrände.",
+      "english": "The landscape of Tiilikkajärvi National Park is characterized by the lake after which the national park is named, and the eskers and sandy beaches that shape the lake."
+    },
+    {
+      "id": "s5",
+      "name": "Kate",
+      "quote": "Auf dem Gebiet des Nationalparks gibt es eine Kate, die bis in die Mitte des 19. Jahrhunderts bewohnt war.",
+      "english": "In the area of the national park, there is a cottage that was inhabited until the middle of the 19th century."
+    },
+    {
+      "id": "s6",
+      "name": "Itkonjoki",
+      "quote": "Der Fluss Itkonjoki wurde dazu ausgebaggert und 1946 eine Flößerlagerstätte errichtet.",
+      "english": "The Itkonjoki river was dredged for this purpose and a log driving camp was established in 1946."
+    },
+    {
+      "id": "s7",
+      "name": "Flößercamps",
+      "quote": "Weitere mögliche Aktivitäten im Park sind Geocaching, Angeln, Beeren und Pilze sammeln, Besichtigung der Kate, des Grenzsteins und des Flößercamps sowie Schwimmen.",
+      "english": "Other possible activities in the park include geocaching, fishing, picking berries and mushrooms, visiting the cottage, the boundary stone and the log driving camp, as well as swimming."
+    }
+  ],
+  "days": [
+    {
+      "title": "Historic Borders and Landmarks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Natural Lake Landscapes",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Rivers and Heritage Sites",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "34f9df461dd5457a62edb35d307a66248180a9c0590515a9280d7cf1f84fc83f"
+}

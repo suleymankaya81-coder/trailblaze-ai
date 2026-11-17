@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lemmenjoki",
+      "quote": "Seinen Namen gibt dem Nationalpark der Fluss Lemmenjoki.",
+      "english": "The river Lemmenjoki gives the national park its name."
+    },
+    {
+      "id": "s2",
+      "name": "Maarestatunturi",
+      "quote": "Die Landschaft des Nationalparks wird durch den Fluss Lemmenjoki, der an den Fjells Maarestatunturi und Viipustunturi vorbeifließt, und zahlreichen kleineren Flüssen geprägt.",
+      "english": "The landscape of the national park is shaped by the river Lemmenjoki, which flows past the Maarestatunturi and Viipustunturi fells, and numerous smaller rivers."
+    },
+    {
+      "id": "s3",
+      "name": "Viipustunturi",
+      "quote": "Die Landschaft des Nationalparks wird durch den Fluss Lemmenjoki, der an den Fjells Maarestatunturi und Viipustunturi vorbeifließt, und zahlreichen kleineren Flüssen geprägt.",
+      "english": "The landscape of the national park is shaped by the river Lemmenjoki, which flows past the Maarestatunturi and Viipustunturi fells, and numerous smaller rivers."
+    },
+    {
+      "id": "s4",
+      "name": "Njurkalahti",
+      "quote": "Im Dorf Njurkalahti gibt es ein Naturzentrum und einen 4,5 km langen Naturpfad.",
+      "english": "In the village of Njurkalahti there is a nature center and a 4.5 km long nature trail."
+    },
+    {
+      "id": "s5",
+      "name": "Naturzentrum",
+      "quote": "Im Dorf Njurkalahti gibt es ein Naturzentrum und einen 4,5 km langen Naturpfad.",
+      "english": "In the village of Njurkalahti there is a nature center and a 4.5 km long nature trail."
+    },
+    {
+      "id": "s6",
+      "name": "Naturpfad",
+      "quote": "Im Dorf Njurkalahti gibt es ein Naturzentrum und einen 4,5 km langen Naturpfad.",
+      "english": "In the village of Njurkalahti there is a nature center and a 4.5 km long nature trail."
+    },
+    {
+      "id": "s7",
+      "name": "Tal des Lemmenjoki",
+      "quote": "Bis ins 19. Jahrhundert lebten im Tal des Lemmenjoki Waldsamen, die mittels Fallgruben die wilden Waldrentiere bejagten.",
+      "english": "Until the 19th century, Forest Sami lived in the valley of the Lemmenjoki, hunting wild forest reindeer using pitfall traps."
+    }
+  ],
+  "days": [
+    {
+      "title": "Njurkalahti Village and Local Trails",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Lemmenjoki River and Valley Exploration",
+      "stop_ids": [
+        "s1",
+        "s7"
+      ]
+    },
+    {
+      "title": "Fjell and Wilderness Peaks",
+      "stop_ids": [
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "_text_sha": "d55eafc3e44090af6dda79977b38a81eeddbaad78df5b25133065bbab7171309"
+}

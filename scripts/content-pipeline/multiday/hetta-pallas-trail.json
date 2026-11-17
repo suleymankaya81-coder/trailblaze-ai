@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Pyhäkerö",
+      "quote": "Beliebte Tageswanderungen sind beispielsweise die Pyhäkerö-Tagestour, der Taivaskero-Rundweg, der Pirunkurun ponnistus, der Varkaankuru-Pfad, der Kesänkijärvi-Rundweg und der Tuomikuru-Rundweg.",
+      "english": "Popular day hikes include, for example, the Pyhäkerö day tour, the Taivaskero circular trail, the Pirunkurun ponnistus, the Varkaankuru path, the Kesänkijärvi circular trail, and the Tuomikuru circular trail."
+    },
+    {
+      "id": "s2",
+      "name": "Taivaskero",
+      "quote": "Der höchste Punkt im Nationalpark ist der Taivaskero von Pallastunturi mit 809 Metern über dem Meeresspiegel.",
+      "english": "The highest point in the national park is Taivaskero of Pallastunturi at 809 meters above sea level."
+    },
+    {
+      "id": "s3",
+      "name": "Lumikero",
+      "quote": "Andere hohe Gipfel sind zum Beispiel der Pyhäkero, Lumikero, Laukukero und Palkaskero.",
+      "english": "Other high peaks are, for example, Pyhäkero, Lumikero, Laukukero, and Palkaskero."
+    },
+    {
+      "id": "s4",
+      "name": "Laukukero",
+      "quote": "Andere hohe Gipfel sind zum Beispiel der Pyhäkero, Lumikero, Laukukero und Palkaskero.",
+      "english": "Other high peaks are, for example, Pyhäkero, Lumikero, Laukukero, and Palkaskero."
+    },
+    {
+      "id": "s5",
+      "name": "Palkaskero",
+      "quote": "Andere hohe Gipfel sind zum Beispiel der Pyhäkero, Lumikero, Laukukero und Palkaskero.",
+      "english": "Other high peaks are, for example, Pyhäkero, Lumikero, Laukukero, and Palkaskero."
+    },
+    {
+      "id": "s6",
+      "name": "Pallasjärvi",
+      "quote": "Der größte See des Parks ist der See Pallasjärvi, der südöstlich vom Naturzentrum Pallastunturi liegt.",
+      "english": "The largest lake in the park is Lake Pallasjärvi, which lies southeast of the Pallastunturi Visitor Centre."
+    },
+    {
+      "id": "s7",
+      "name": "Sammaltunturi",
+      "quote": "Im Nationalpark wird die Luftreinheit an der Wetterstation von Sammaltunturi ständig gemessen.",
+      "english": "In the national park, air purity is constantly measured at the Sammaltunturi weather station."
+    },
+    {
+      "id": "s8",
+      "name": "Naturzentrum Pallastunturi",
+      "quote": "Im Nationalpark Pallas-Yllästunturi gibt es drei Naturzentren: Das Yllästunturi-Naturzentrum Kellokas, das Naturzentrum Pallastunturi und das Naturzentrum Tunturi-Lappi in Heta.",
+      "english": "In Pallas-Yllästunturi National Park, there are three visitor centres: The Yllästunturi Visitor Centre Kellokas, the Pallastunturi Visitor Centre, and the Tunturi-Lappi Visitor Centre in Heta."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Peaks and Trails",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Central Heights and Pallas Water",
+      "stop_ids": [
+        "s2",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Visitor Education and Air Quality",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "acf76482c1eeef54829a78ebdc2c31584e87ca53da00f3d3003f8a38138d526d"
+}

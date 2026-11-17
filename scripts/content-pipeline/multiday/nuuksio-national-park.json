@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Nuuksionpää",
+      "quote": "So fahren die Buslinien 245 von Espoon keskus nach Nuuksionpää und Kattila (nur im Sommer) täglich.",
+      "english": "Thus, bus lines 245 run daily from Espoon keskus to Nuuksionpää and Kattila (only in summer)."
+    },
+    {
+      "id": "s2",
+      "name": "Kattila",
+      "quote": "So fahren die Buslinien 245 von Espoon keskus nach Nuuksionpää und Kattila (nur im Sommer) täglich.",
+      "english": "Thus, bus lines 245 run daily from Espoon keskus to Nuuksionpää and Kattila (only in summer)."
+    },
+    {
+      "id": "s3",
+      "name": "Seen und Weiher",
+      "quote": "Das Gelände ist von steilen Felsen, Wäldern, Mooren und Seen geprägt; im Park gibt es über 80 Seen und Weiher.",
+      "english": "The terrain is characterized by steep cliffs, forests, moors, and lakes; there are over 80 lakes and ponds in the park."
+    },
+    {
+      "id": "s4",
+      "name": "Rundwanderwege",
+      "quote": "Es gibt sechs markierte Rundwanderwege zwischen 2 und 7,2 km Länge, von denen einer auch rollstuhlgerecht ist.",
+      "english": "There are six marked circular hiking trails between 2 and 7.2 km in length, one of which is also wheelchair accessible."
+    }
+  ],
+  "days": [
+    {
+      "title": "Natural Landmarks and Transport Hubs",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "8851f047c7ecf60d9fe180b8d6c288962dd451608ad09ce35473d8a8280cbca0"
+}

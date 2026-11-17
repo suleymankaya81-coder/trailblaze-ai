@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kilpisjärvi",
+      "quote": "Kilpisjärvi liegt in der Käsivarsi genannten Ausbuchtung im Nordwesten Finnlands rund neun Kilometer vom Dreiländereck zwischen Finnland, Schweden und Norwegen entfernt am Ufer des gleichnamigen Sees Kilpisjärvi auf einer Höhe von 473 m über dem Meeresspiegel.",
+      "english": "Kilpisjärvi is located in the bulge in northwestern Finland called Käsivarsi, around nine kilometers from the tripoint between Finland, Sweden, and Norway, on the shore of the lake of the same name, Kilpisjärvi, at an altitude of 473 m above sea level."
+    },
+    {
+      "id": "s2",
+      "name": "Treriksröset",
+      "quote": "Kilpisjärvi liegt in der Käsivarsi genannten Ausbuchtung im Nordwesten Finnlands rund neun Kilometer vom Dreiländereck zwischen Finnland, Schweden und Norwegen (finnisch Kolmen valtakunnan rajapyykki, am bekanntesten unter dem schwedischen, etwa gleichbedeutenden Namen Treriksröset) entfernt am Ufer des gleichnamigen Sees Kilpisjärvi auf einer Höhe von 473 m über dem Meeresspiegel.",
+      "english": "Kilpisjärvi is located in the bulge in northwestern Finland called Käsivarsi, around nine kilometers from the tripoint between Finland, Sweden, and Norway (Finnish Kolmen valtakunnan rajapyykki, best known by the Swedish, roughly equivalent name Treriksröset) on the shore of the lake of the same name, Kilpisjärvi, at an altitude of 473 m above sea level."
+    },
+    {
+      "id": "s3",
+      "name": "Saana",
+      "quote": "Direkt neben dem Dorf erhebt sich der 1029 m hohe Fjell Saana (nordsamisch Sána) aus der Landschaft.",
+      "english": "Directly next to the village, the 1029 m high fell Saana (North Sami: Sána) rises from the landscape."
+    },
+    {
+      "id": "s4",
+      "name": "Haltitunturi",
+      "quote": "Zum höchsten Berg Finnlands, dem 1328 m hohen Haltitunturi, führt von Kilpisjärvi ein 50 km langer Wanderweg durch die ansonsten weglose Wildnis.",
+      "english": "A 50 km long hiking trail leads from Kilpisjärvi through the otherwise pathless wilderness to Finland's highest mountain, the 1328 m high Haltitunturi."
+    }
+  ],
+  "days": [
+    {
+      "title": "Fell Heights and Frontier Waters",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "94d70c2118712e80fe7d4cc1429f492ba08db16ed9656dd2b2e28c3cd05097d6"
+}

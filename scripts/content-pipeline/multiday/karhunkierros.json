@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Ristikallio",
+      "quote": "Ristikallio: Sehenswerte Felsenlandschaft mit zwei Schluchten",
+      "english": "Ristikallio: A rocky landscape worth seeing with two gorges"
+    },
+    {
+      "id": "s2",
+      "name": "Taivalköngäs",
+      "quote": "Taivalköngäs: Zwei Stromschnellen, die auf Hängebrücken überquert werden können.",
+      "english": "Taivalköngäs: Two rapids that can be crossed on suspension bridges."
+    },
+    {
+      "id": "s3",
+      "name": "Felsenschlucht Oulanka",
+      "quote": "Felsenschlucht Oulanka: Auf der Hautajärvi-Route",
+      "english": "Oulanka Gorge: On the Hautajärvi route"
+    },
+    {
+      "id": "s4",
+      "name": "Wasserfall Kiutaköngäs",
+      "quote": "Dazu gehören Ristikallio, die Felsenschlucht am Oulankajoki und die Wasserfälle Kiutaköngäs.",
+      "english": "These include Ristikallio, the rocky gorge on the Oulankajoki and the Kiutaköngäs waterfalls."
+    },
+    {
+      "id": "s5",
+      "name": "Wasserfall Jyrävä",
+      "quote": "Ganz in der Nähe des Wasserfalls Jyrävä befindet sich die Siilastupa, die Platz für 12 Personen bietet.",
+      "english": "Very close to the Jyrävä waterfall is the Siilastupa, which offers space for 12 people."
+    },
+    {
+      "id": "s6",
+      "name": "Myllykoski",
+      "quote": "Myllykoski: Eine restaurierte Mühle mit malerischen Stromschnellen.",
+      "english": "Myllykoski: A restored mill with picturesque rapids."
+    },
+    {
+      "id": "s7",
+      "name": "Konttainen",
+      "quote": "Konttainen und Valtavaara: Hügelkette, die einen hervorragenden Ausblick über die ansonsten flache Landschaft bietet.",
+      "english": "Konttainen and Valtavaara: A chain of hills that offers an excellent view over the otherwise flat landscape."
+    },
+    {
+      "id": "s8",
+      "name": "Valtavaara",
+      "quote": "Konttainen und Valtavaara: Hügelkette, die einen hervorragenden Ausblick über die ansonsten flache Landschaft bietet.",
+      "english": "Konttainen and Valtavaara: A chain of hills that offers an excellent view over the otherwise flat landscape."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Gorges and Rapids",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Central Waterfalls and Mills",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Southern Peaks",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "90690a1ef1c6ee95c84ab0b0a7aa8ea6ef7fc6c98440180b6833abca49c516c6"
+}

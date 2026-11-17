@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Puruvesi",
+      "quote": "Punkaharju ist berühmt für das gleichnamige Naturdenkmal Punkaharju (Os): Einen etwa 7 Kilometer langen und 25 Meter hohen Os (harju, Hügelrücken) zwischen den Seen Puruvesi und Pihlajavesi.",
+      "english": "Punkaharju is famous for the natural monument of the same name, Punkaharju (esker): an approximately 7-kilometer long and 25-meter high esker (harju, hill ridge) between the lakes Puruvesi and Pihlajavesi."
+    },
+    {
+      "id": "s2",
+      "name": "Pihlajavesi",
+      "quote": "Punkaharju ist berühmt für das gleichnamige Naturdenkmal Punkaharju (Os): Einen etwa 7 Kilometer langen und 25 Meter hohen Os (harju, Hügelrücken) zwischen den Seen Puruvesi und Pihlajavesi.",
+      "english": "Punkaharju is famous for the natural monument of the same name, Punkaharju (esker): an approximately 7-kilometer long and 25-meter high esker (harju, hill ridge) between the lakes Puruvesi and Pihlajavesi."
+    },
+    {
+      "id": "s3",
+      "name": "Arboretum Punkaharju",
+      "quote": "Hier befinden sich auch das Arboretum Punkaharju und das Forstmuseum Lusto.",
+      "english": "The Punkaharju Arboretum and the Lusto Forestry Museum are also located here."
+    },
+    {
+      "id": "s4",
+      "name": "Forstmuseum Lusto",
+      "quote": "Dieses moderne Museum (1994 eröffnet) befasst sich mit den Themen Holz und Wald.",
+      "english": "This modern museum (opened in 1994) deals with the topics of wood and forest."
+    },
+    {
+      "id": "s5",
+      "name": "Punkasalmi",
+      "quote": "Der Hauptort trägt den Namen Punkasalmi und zählt 1495 Einwohner.",
+      "english": "The main village is named Punkasalmi and has 1495 inhabitants."
+    },
+    {
+      "id": "s6",
+      "name": "Tuunaansalmi",
+      "quote": "Neben Punkasalmi befindet sich in Punkaharju mit dem Ort Tuunaansalmi (207 Einwohner; Stand jeweils 31. Dezember 2011) noch ein zweites Siedlungszentrum (taajama).",
+      "english": "In addition to Punkasalmi, there is a second settlement center (taajama) in Punkaharju with the village of Tuunaansalmi (207 inhabitants; as of December 31, 2011)."
+    },
+    {
+      "id": "s7",
+      "name": "Punkaharju (Os)",
+      "quote": "Der naturschöne Hügelrücken gilt als finnische „Nationallandschaft“.",
+      "english": "The naturally beautiful hill ridge is considered a Finnish 'national landscape'."
+    }
+  ],
+  "days": [
+    {
+      "title": "Esker Ridge and Surrounding Lakes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Culture and Forestry Museums",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Local Villages and Settlements",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "3ce5c5a0fdf379141138a1c95dbcde5a684414f3e626d49a7bf4ae8df2da4abc"
+}

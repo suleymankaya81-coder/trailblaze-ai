@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Haltitunturi",
+      "english": "Finland's highest peak, the Haltitunturi (Halti, 1324 m), is located in the extreme north of the area on the border with Norway.",
+      "quote": "Finnlands höchster Gipfel, der Haltitunturi (Halti, 1324 m) befindet sich im äußersten Norden des Gebiets an der Grenze zu Norwegen."
+    },
+    {
+      "id": "s2",
+      "name": "Kilpisjärvi-Halti",
+      "english": "The 55 km long hiking route Kilpisjärvi-Halti runs through the area, mostly following the 800 km long Nordkalotten Trail.",
+      "quote": "Die 55 km lange Wanderroute Kilpisjärvi-Halti verläuft durch das Gebiet, größtenteils im Verlauf des insgesamt 800 km langen Nordkalotten-Weges (finnisch Kalottireitti)."
+    },
+    {
+      "id": "s3",
+      "name": "Nordkalotten-Weg",
+      "english": "The 55 km long hiking route Kilpisjärvi-Halti runs through the area, mostly following the 800 km long Nordkalotten Trail (Finnish Kalottireitti).",
+      "quote": "Die 55 km lange Wanderroute Kilpisjärvi-Halti verläuft durch das Gebiet, größtenteils im Verlauf des insgesamt 800 km langen Nordkalotten-Weges (finnisch Kalottireitti)."
+    },
+    {
+      "id": "s4",
+      "name": "Besucherzentrum Kilpisjärvi",
+      "english": "The Kilpisjärvi Visitor Centre (Kilpisjärven luontokeskus) offers information about the land and hiking routes.",
+      "quote": "Das Besucherzentrum Kilpisjärvi (Kilpisjärven luontokeskus) bietet Informationen über Land und Wanderrouten."
+    }
+  ],
+  "days": [
+    {
+      "title": "Kilpisjärvi Gateway and Arctic Trails",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "fb5a17e8d3589ca316d7e4fd0676f507bc653f242db404da1c46d75341659b80"
+}

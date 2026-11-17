@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Inarijärvi",
+      "quote": "Sie liegt am See Inarijärvi und hat 7224 Einwohner (Stand 31. Dezember 2024) auf einer Fläche von etwa 17.300 Quadratkilometern.",
+      "english": "It is located on Lake Inarijärvi and has 7,224 inhabitants (as of December 31, 2024) in an area of approximately 17,300 square kilometers."
+    },
+    {
+      "id": "s2",
+      "name": "Ivalo",
+      "quote": "Verwaltungssitz der Gemeinde Inari ist der Ort Ivalo.",
+      "english": "The administrative seat of the municipality of Inari is the village of Ivalo."
+    },
+    {
+      "id": "s3",
+      "name": "Saariselkä",
+      "quote": "Neben der traditionellen Rentierzucht und Forstwirtschaft ist heute der Tourismus, vor allem dank des Wintersportorts Saariselkä, zum Haupterwerbszweig der Gemeinde geworden.",
+      "english": "In addition to traditional reindeer husbandry and forestry, tourism has today become the municipality's main source of income, primarily thanks to the winter sports resort of Saariselkä."
+    },
+    {
+      "id": "s4",
+      "name": "Viipustunturi",
+      "quote": "Aus der größtenteils eher flachen Umgebung erheben sich vereinzelte Fjells (tunturi), deren höchster der Viipustunturi mit 599 m ist.",
+      "english": "From the mostly rather flat surroundings rise isolated fells (tunturi), the highest of which is the Viipustunturi at 599 m."
+    },
+    {
+      "id": "s5",
+      "name": "Nationalpark Lemmenjoki",
+      "quote": "Im Gebiet der Gemeinde befindet sich der Großteil des Nationalparks Lemmenjoki, mit 2850 km² der größte Finnlands, ein kleiner Teil des Nationalparks Urho Kekkonen sowie die Wildnisgebiete Hammastunturi, Kaldoaivi, Muotkatunturi, Paistunturi, Tsarmitunturi und Vätsäri.",
+      "english": "The majority of the Lemmenjoki National Park, Finland's largest at 2,850 km², is located in the municipal area, as well as a small part of the Urho Kekkonen National Park and the wilderness areas of Hammastunturi, Kaldoaivi, Muotkatunturi, Paistunturi, Tsarmitunturi, and Vätsäri."
+    },
+    {
+      "id": "s6",
+      "name": "Mutusjärvi",
+      "quote": "Andere nennenswerte Seen sind der Mutusjärvi, Paatari und Patujärvi.",
+      "english": "Other noteworthy lakes are Mutusjärvi, Paatari, and Patujärvi."
+    },
+    {
+      "id": "s7",
+      "name": "Pielpajärvi",
+      "quote": "Ab 1630 bekehrte der Pfarrer Johan Pictorius aus Kemi die Einwohner Inaris zum Christentum, 1646 wurde die erste Kirche in Pielpajärvi errichtet.",
+      "english": "From 1630 onwards, the pastor Johan Pictorius from Kemi converted the inhabitants of Inari to Christianity; in 1646 the first church was built in Pielpajärvi."
+    }
+  ],
+  "days": [
+    {
+      "title": "Major Sights and Settlements",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Fells and Wilderness",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Lakes and Historic Sites",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "1512b2bc82647e972177b42506200f0d91d27f4f8ddbae350e148ea6a6356fc3"
+}

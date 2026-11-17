@@ -1,0 +1,47 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Haukivesi",
+      "quote": "Der Nationalpark umfasst ein 40 km langes und 5–10 km breites Gebiet auf dem See Haukivesi, einem Teil des Saimaa-Seensystems.",
+      "english": "The national park covers an area 40 km long and 5–10 km wide on Lake Haukivesi, a part of the Saimaa lake system."
+    },
+    {
+      "id": "s2",
+      "name": "Linnansaari",
+      "quote": "Auf der Hauptinsel Linnansaari finden sich mehrere Wanderwege sowie ein Aussichtspunkt auf dem Felsen Linnanvuori.",
+      "english": "On the main island of Linnansaari, there are several hiking trails as well as a viewpoint on the Linnanvuori rock."
+    },
+    {
+      "id": "s3",
+      "name": "Linnanvuori",
+      "quote": "Auf der Hauptinsel Linnansaari finden sich mehrere Wanderwege sowie ein Aussichtspunkt auf dem Felsen Linnanvuori.",
+      "english": "On the main island of Linnansaari, there are several hiking trails as well as a viewpoint on the Linnanvuori rock."
+    },
+    {
+      "id": "s4",
+      "name": "Kate von Linnansaari",
+      "quote": "1993 nahm man in der Umgebung der alten Kate von Linnansaari das Schwenden nach traditionellen Methoden wieder auf, um den Landschaftstyp des Schwendenwaldes zu erhalten.",
+      "english": "In 1993, slash-and-burn farming according to traditional methods was resumed in the vicinity of the old Linnansaari croft in order to preserve the slash-and-burn forest landscape type."
+    },
+    {
+      "id": "s5",
+      "name": "Naturzentrum Oskari",
+      "quote": "Das Informationszentrum des Nationalparks, das „Naturzentrum Oskari“, befindet sich im Gemeindezentrum von Rantasalmi.",
+      "english": "The national park's information center, the \"Oskari Nature Center\", is located in the municipal center of Rantasalmi."
+    }
+  ],
+  "days": [
+    {
+      "title": "Main Island and Lake Exploration",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "92bb0c17aae6d45dbb5d91394da95f923ddff8484ffd10188f8b8f00545b673f"
+}

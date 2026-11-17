@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Besucherzentrum",
+      "quote": "In der Nähe des Besucherzentrums befindet sich ein drei Kilometer langer Naturlehrpfad, der Natur, Geschichte und Kultur präsentiert.",
+      "english": "A three-kilometer nature trail that presents nature, history and culture is located near the visitor center."
+    },
+    {
+      "id": "s2",
+      "name": "Karhunkainalon",
+      "quote": "Das Zentrum betreibt ferner den Campingplatz Karhunkainalon, wo Ausrüstung zum Angeln und Jagen, Motorschlitten, Boote, Fahrräder sowie Camping-Ausrüstung verkauft und verliehen werden.",
+      "english": "The center also operates the Karhunkainalon campsite, where equipment for fishing and hunting, snowmobiles, boats, bicycles, and camping gear are sold and rented."
+    },
+    {
+      "id": "s3",
+      "name": "Julma-Ölkky",
+      "quote": "Julma-Ölkky mit dem größten Canyon-See Finnlands mit seinen Steilwänden ist ein beeindruckendes, zwei Mrd. Jahre altes Naturdenkmal.",
+      "english": "Julma-Ölkky, with Finland's largest canyon lake and its steep walls, is an impressive, two-billion-year-old natural monument."
+    },
+    {
+      "id": "s4",
+      "name": "Somerjärvi",
+      "quote": "Von der nordwestlichen Ecke des Wandergebiets beim See Somerjärvi führt eine 30 km lange Verbindungsroute zum Wandergebiet Kylmäluoma.",
+      "english": "A 30 km connecting route leads from the northwestern corner of the hiking area at Lake Somerjärvi to the Kylmäluoma hiking area."
+    },
+    {
+      "id": "s5",
+      "name": "Moilasenvaara",
+      "quote": "Moilasenvaara hingegen ist von Urwald geprägt, der einen besonderen Schutzwert hat.",
+      "english": "Moilasenvaara, on the other hand, is characterized by primeval forest, which has a special conservation value."
+    },
+    {
+      "id": "s6",
+      "name": "Värikallio",
+      "quote": "Das Felsbild von Värikallio befindet sich in Kainuu.",
+      "english": "The rock painting of Värikallio is located in Kainuu."
+    },
+    {
+      "id": "s7",
+      "name": "Lounatkoskesta",
+      "quote": "In der Umgebung gibt es Rentierherden, Lisää Lounatkoskesta ist eine alte, betriebsfähige Wassermühle.",
+      "english": "There are reindeer herds in the area, and Lisää Lounatkoskesta is an old, operational water mill."
+    },
+    {
+      "id": "s8",
+      "name": "UKK-Wanderweg",
+      "quote": "Der nach Präsident Urho Kaleva Kekkonen benannte nationale UKK-Wanderweg führt durch den Park bis nach Kylmäluoma.",
+      "english": "The national UKK hiking trail, named after President Urho Kaleva Kekkonen, leads through the park to Kylmäluoma."
+    }
+  ],
+  "days": [
+    {
+      "title": "Visitor Services and Trails",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s8"
+      ]
+    },
+    {
+      "title": "Ancient Canyons and Northern Forests",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Heritage and Culture",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "846eee8f296d4ac2208ade27acc6e892572712705158fd73f397cdc41a927cd0"
+}

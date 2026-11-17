@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Pyhätunturi",
+      "quote": "Er hat eine Fläche von 142 km² und besteht aus den Fjells Pyhätunturi und Luosto.",
+      "english": "It has an area of 142 km² and consists of the Pyhätunturi and Luosto fells."
+    },
+    {
+      "id": "s2",
+      "name": "Luosto",
+      "quote": "Der Nationalpark entstand 2005, als dem 1938 gegründeten Nationalpark Pyhätunturi das nordöstlich gelegene Gebiet um das Fjell Luosto angegliedert wurde.",
+      "english": "The national park was created in 2005, when the area around the Luosto fell, located to the northeast, was annexed to the Pyhätunturi National Park, founded in 1938."
+    },
+    {
+      "id": "s3",
+      "name": "Noitatunturi",
+      "quote": "Die höchsten Gipfel sind der Noitatunturi (540 m) und Ukko-Luosto (514 m).",
+      "english": "The highest peaks are the Noitatunturi (540 m) and Ukko-Luosto (514 m)."
+    },
+    {
+      "id": "s4",
+      "name": "Ukko-Luosto",
+      "quote": "Die Wälder südwestlich der Gipfel Ukko-Luosto und Lampivaara sind unberührte, über 400 Jahre alte Urwälder.",
+      "english": "The forests southwest of the peaks Ukko-Luosto and Lampivaara are untouched, over 400-year-old primeval forests."
+    },
+    {
+      "id": "s5",
+      "name": "Isokuru",
+      "quote": "Deren größtes ist das 220 Meter tiefe Tal Isokuru zwischen den Gipfeln Kultakero und Ukonhattu.",
+      "english": "The largest of these is the 220-meter deep Isokuru valley between the peaks Kultakero and Ukonhattu."
+    },
+    {
+      "id": "s6",
+      "name": "Lampivaara",
+      "quote": "Die Wälder südwestlich der Gipfel Ukko-Luosto und Lampivaara sind unberührte, über 400 Jahre alte Urwälder.",
+      "english": "The forests southwest of the peaks Ukko-Luosto and Lampivaara are untouched, over 400-year-old primeval forests."
+    },
+    {
+      "id": "s7",
+      "name": "Uhriharju",
+      "quote": "Auch Toponyme wie Noitatunturi („Hexenfjell“) oder Uhriharju („Opfergrat“) erinnern an die schamanistische Religion der Samen, während Namen wie Pyhäkasteenlampi („heiliger Taufen-Teich“) auf die Christianisierung der Samen zwischen 1620 und 1680 hinweist.",
+      "english": "Toponyms like Noitatunturi ('Witch's Fell') or Uhriharju ('Sacrifice Ridge') also recall the shamanistic religion of the Sámi, while names like Pyhäkasteenlampi ('Holy Baptism Pond') point to the Christianization of the Sámi between 1620 and 1680."
+    },
+    {
+      "id": "s8",
+      "name": "Pyhäkasteenlampi",
+      "quote": "Auch Toponyme wie Noitatunturi („Hexenfjell“) oder Uhriharju („Opfergrat“) erinnern an die schamanistische Religion der Samen, während Namen wie Pyhäkasteenlampi („heiliger Taufen-Teich“) auf die Christianisierung der Samen zwischen 1620 und 1680 hinweist.",
+      "english": "Toponyms like Noitatunturi ('Witch's Fell') or Uhriharju ('Sacrifice Ridge') also recall the shamanistic religion of the Sámi, while names like Pyhäkasteenlampi ('Holy Baptism Pond') point to the Christianization of the Sámi between 1620 and 1680."
+    }
+  ],
+  "days": [
+    {
+      "title": "Fells and Forests of Luosto",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s6"
+      ]
+    },
+    {
+      "title": "Ancient Peaks and Sacred Sites",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Deep Valleys and Holy Waters",
+      "stop_ids": [
+        "s5",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "6d93a17578dd7fb27c837d0ef9ec7303c52674ad7b49de8b4351c2ec663c4cff"
+}

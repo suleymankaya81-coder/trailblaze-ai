@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hyypän-mäki",
+      "quote": "Auf der Insel befand sich einer von insgesamt 265 Vermessungspunkten Hyypän-mäki () des Struve-Bogens, welcher 2005 in die Liste des UNESCO-Weltkulturerbes aufgenommen wurde und der Vermessung der Erdabplattung diente.",
+      "english": "On the island was one of a total of 265 survey points, Hyypän-mäki, of the Struve Geodetic Arc, which was included in the UNESCO World Heritage List in 2005 and served to measure the flattening of the earth."
+    },
+    {
+      "id": "s2",
+      "name": "Hanhinen",
+      "quote": "Bis vor ca. 200 Jahren war Hailuoto in drei Inseln, die Hauptinsel Luoto (dt. „kleine Insel“ oder „Schäre“), das an Vögeln reiche, durch Kirkkosalmi (dt. „Kirchensund“) getrennte Hanhinen (dt. „Gänseland“) im Südosten und die Sandbank Santonen im Osten geteilt.",
+      "english": "Until about 200 years ago, Hailuoto was divided into three islands: the main island Luoto, the bird-rich Hanhinen in the southeast, separated by Kirkkosalmi, and the Santonen sandbank in the east."
+    },
+    {
+      "id": "s3",
+      "name": "Santonen",
+      "quote": "Die Landhebung hat die Teile so verbunden, dass sogar Santonen, mittlerweile eine Landzunge, seit ca. 60 Jahren auch bei Hochwasser befahrbar bleibt.",
+      "english": "The post-glacial land uplift has connected the parts so that even Santonen, now a peninsula, has remained traversable even at high tide for about 60 years."
+    },
+    {
+      "id": "s4",
+      "name": "Huikku",
+      "quote": "Der Reisehafen befindet sich heute in der Ostspitze Huikku von Santonen.",
+      "english": "The travel port is currently located at the eastern tip, Huikku, of Santonen."
+    },
+    {
+      "id": "s5",
+      "name": "Ulkokarvo",
+      "quote": "Damals befuhr das Schiff HL Hailuoto die tägliche Verbindung nach Oulu vom damaligen Hafen Ulkokarvo aus, der im Volksmund auch Petsamo heißt.",
+      "english": "At that time, the ship HL Hailuoto operated the daily connection to Oulu from the former port of Ulkokarvo, which is also colloquially called Petsamo."
+    },
+    {
+      "id": "s6",
+      "name": "Marjaniemi",
+      "quote": "Eine letzte große Investition in den Tourismus in Hailuoto war der Umbau der Lotsenstation im Westhafen Marjaniemi zu einem Touristenzentrum mit seinem historischen Leuchtturm Marjaniemi nach dem Entwurf vom Architekten Hampus Dalström von 1871.",
+      "english": "A final major investment in tourism in Hailuoto was the conversion of the pilot station in the western port of Marjaniemi into a tourist center with its historical Marjaniemi lighthouse, based on the 1871 design by architect Hampus Dalström."
+    },
+    {
+      "id": "s7",
+      "name": "Kirkkosalmi",
+      "quote": "Bis vor ca. 200 Jahren war Hailuoto in drei Inseln, die Hauptinsel Luoto (dt. „kleine Insel“ oder „Schäre“), das an Vögeln reiche, durch Kirkkosalmi (dt. „Kirchensund“) getrennte Hanhinen (dt. „Gänseland“) im Südosten und die Sandbank Santonen im Osten geteilt.",
+      "english": "Until about 200 years ago, Hailuoto was divided into three islands: the main island Luoto, the bird-rich Hanhinen in the southeast, separated by Kirkkosalmi, and the Santonen sandbank in the east."
+    }
+  ],
+  "days": [
+    {
+      "title": "Eastern Peninsula and Harbours",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Western Coast and History",
+      "stop_ids": [
+        "s1",
+        "s6"
+      ]
+    },
+    {
+      "title": "Southern Nature and Waters",
+      "stop_ids": [
+        "s2",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "615b2a67c8691bddc171527d0a6f25a8fa50c3611b2cfb32ff7bd0a5cbbfe5f6"
+}

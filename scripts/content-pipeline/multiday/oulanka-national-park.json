@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Oulankajoki",
+      "quote": "Der Fluss Oulankajoki – mit seinen Nebenflüssen Savinajoki und Aventojoki die Hauptattraktion der Landschaft – durchfließt den Park in West-Ost-Richtung.",
+      "english": "The river Oulankajoki – with its tributaries Savinajoki and Aventojoki the main attraction of the landscape – flows through the park in a west-east direction."
+    },
+    {
+      "id": "s2",
+      "name": "Savinajoki",
+      "quote": "Im Bereich des Savinajoki liegt ein wichtiges Brutgebiet des Singschwans.",
+      "english": "In the area of the Savinajoki lies an important breeding ground for the whooper swan."
+    },
+    {
+      "id": "s3",
+      "name": "Aventojoki",
+      "quote": "Der Fluss Oulankajoki – mit seinen Nebenflüssen Savinajoki und Aventojoki die Hauptattraktion der Landschaft – durchfließt den Park in West-Ost-Richtung.",
+      "english": "The river Oulankajoki – with its tributaries Savinajoki and Aventojoki the main attraction of the landscape – flows through the park in a west-east direction."
+    },
+    {
+      "id": "s4",
+      "name": "Kitkajoki",
+      "quote": "Als weiterer landschaftsprägender Fluss ist der Kitkajoki zu nennen.",
+      "english": "Another river that shapes the landscape is the Kitkajoki."
+    },
+    {
+      "id": "s5",
+      "name": "Bärenrunde",
+      "quote": "viele Wanderer machen ein- oder mehrtägige Wanderungen über den Trail der Bärenrunde.",
+      "english": "many hikers take one- or multi-day hikes along the Bear's Ring trail."
+    },
+    {
+      "id": "s6",
+      "name": "Oulanka Visitors Centre",
+      "quote": "Es gibt zwei Informationsstützpunkte – das Oulanka Visitors Centre unweit der Stromschnellen des Oulankajoki im Zentrum des Parks sowie das Karhunkierros Visitor Centre mit Schautafeln, Informationen über die Pflanzen und Tiere im Park (Karhu ist das finnische Wort für den Braunbären).",
+      "english": "There are two information points – the Oulanka Visitors Centre near the rapids of the Oulankajoki in the center of the park and the Karhunkierros Visitor Centre with display boards and information about the plants and animals in the park (Karhu is the Finnish word for brown bear)."
+    },
+    {
+      "id": "s7",
+      "name": "Karhunkierros Visitor Centre",
+      "quote": "Es gibt zwei Informationsstützpunkte – das Oulanka Visitors Centre unweit der Stromschnellen des Oulankajoki im Zentrum des Parks sowie das Karhunkierros Visitor Centre mit Schautafeln, Informationen über die Pflanzen und Tiere im Park (Karhu ist das finnische Wort für den Braunbären).",
+      "english": "There are two information points – the Oulanka Visitors Centre near the rapids of the Oulankajoki in the center of the park and the Karhunkierros Visitor Centre with display boards and information about the plants and animals in the park (Karhu is the Finnish word for brown bear)."
+    },
+    {
+      "id": "s8",
+      "name": "Keroharju Hiking Trail",
+      "quote": "Die Trails haben durch das Übersetzen mit einem Cable Boat, wie beim Keroharju Hiking Trail, oder durch Hängebrücken und Ausblicke auf die Canyons einen eigenen Reiz.",
+      "english": "The trails have their own charm due to crossings with a cable boat, such as on the Keroharju Hiking Trail, or through suspension bridges and views of the canyons."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Rivers and Information",
+      "stop_ids": [
+        "s1",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Tributaries and Wilderness Trails",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s5"
+      ]
+    },
+    {
+      "title": "Southern Waters and Remote Trails",
+      "stop_ids": [
+        "s4",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "71d7a5adb6a487a47a706d15a2f124ef011c5be3f8f74a24fd4564230592c8f0"
+}
