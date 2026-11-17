@@ -1,5 +1,6 @@
 ## November 17 FR/PT/GR complete catalog and launch
-- [ ] Consolidate all original holds and the 32 French inventory additions into one durable assignment manifest and resumable runner; verify seasonal claims against saved official excerpts.
+- [x] Consolidate 42 original holds and 32 French inventory identities in one retained assignment runner; 7 regressions pass. 17/42 originals and 16/32 additions staged (13 newly staged this turn), only 2 official seasonal excerpts retained. DB remains 145 drafts; no publication or new database writes this turn.
+- [ ] Complete the 25 original and 16 inventory holds: exact-place licensed covers/article evidence, boat access and separate overseas geometry remain missing; 72 seasonal reviews incomplete. Apply newly staged content through guarded draft writes after review.
 - [ ] Recover all 42 catalog holds with exact identity, licensed covers and sourced access; keep overseas geography separate.
 - [ ] Reconcile and expand France against official park/site inventories without arbitrary count targets.
 - [ ] Prepare English plans, sourced seasonal notes and German versions for existing and added places; retain caches.

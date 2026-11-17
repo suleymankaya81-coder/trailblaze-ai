@@ -65,12 +65,19 @@ def main():
         runfile=MANIFEST.with_name('assignments-run.json')
         runfile.write_text(json.dumps(runnable,ensure_ascii=False,indent=2))
         subprocess.run([sys.executable,str(ROOT/'recover-fr-pt-gr.py'),'--review',str(runfile)],check=True)
+    outcomes={r['slug']:r for r in json.loads(MANIFEST.with_name('recovery-results.json').read_text())} if MANIFEST.with_name('recovery-results.json').exists() else {}
     report=[]
     for r in assignments:
         file=ROOT/'fr-pt-gr-completion'/f"{r['slug']}.json"
         data=json.loads(file.read_text()) if file.exists() else {}
+        blockers=[] if data.get('german') else r.get('blockers',[])
+        reason=outcomes.get(r['slug'],{}).get('reason')
+        if reason and reason not in blockers:
+            blockers=[*blockers,reason]
+        if not data.get('german') and not blockers:
+            blockers=['Exact identity, photo, access or overseas geography evidence still missing']
         report.append({'slug':r['slug'],'group':r['assignment_group'],'prepared':bool(data.get('german')),
-            'season_verified':bool(data.get('season_review')),'blockers':r.get('blockers',[]),
+            'season_verified':bool(data.get('season_review')),'blockers':blockers,
             'merge_into':r.get('merge_into')})
     MANIFEST.with_name('assignment-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
     print(json.dumps({'assignments':len(report),'prepared':sum(r['prepared'] for r in report),
