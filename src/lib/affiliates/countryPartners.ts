@@ -1,7 +1,7 @@
 import { airportRentalsLink, motorhomeRepublicLink } from "./webjet";
 
 /** Country eligibility for vehicle, RV and campground partners plus local price formatting. */
-export type CountryCode = "us" | "ca" | "gb" | "de" | "at" | "ch" | "it" | "es" | "fr" | "pt" | "gr";
+export type CountryCode = "us" | "ca" | "gb" | "de" | "at" | "ch" | "it" | "es" | "fr" | "pt" | "gr" | "no" | "is" | "se" | "fi" | "dk";
 export type PartnerKind = "rv" | "car" | "campground";
 
 interface CountryPartnerSet { currency: string; numberLocale: string; rv: string[]; car: string[]; campground: string[] }
@@ -18,6 +18,11 @@ export const COUNTRY_PARTNERS: Record<CountryCode, CountryPartnerSet> = {
   fr: { currency: "EUR", numberLocale: "fr-FR", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
   pt: { currency: "EUR", numberLocale: "pt-PT", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
   gr: { currency: "EUR", numberLocale: "el-GR", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
+  no: { currency: "NOK", numberLocale: "nb-NO", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
+  is: { currency: "ISK", numberLocale: "is-IS", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
+  se: { currency: "SEK", numberLocale: "sv-SE", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
+  fi: { currency: "EUR", numberLocale: "fi-FI", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
+  dk: { currency: "DKK", numberLocale: "da-DK", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
 };
 
 export function normalizeCountry(code?: string | null): CountryCode {
@@ -61,6 +66,12 @@ export function rvLinkFor(country?: string | null, now = Date.now()): string | n
   if (c === "fr") return motorhomeRepublicLink("/france/", now);
   if (c === "pt") return motorhomeRepublicLink("/portugal/", now);
   if (c === "gr") return motorhomeRepublicLink("/greece/", now);
+  // Nordic segments follow the same unverified country-name pattern; confirm on the live provider site.
+  if (c === "no") return motorhomeRepublicLink("/norway/", now);
+  if (c === "is") return motorhomeRepublicLink("/iceland/", now);
+  if (c === "se") return motorhomeRepublicLink("/sweden/", now);
+  if (c === "fi") return motorhomeRepublicLink("/finland/", now);
+  if (c === "dk") return motorhomeRepublicLink("/denmark/", now);
   return motorhomeRepublicLink(undefined, now);
 }
 

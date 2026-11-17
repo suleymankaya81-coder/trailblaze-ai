@@ -37,6 +37,9 @@ def seasonal_text(name, sources):
                 return quote
     return f'No verified visitor-season recommendation is available for {name}; consult the park authority for your travel dates.'
 
+COUNTRY_NAMES = dict(fr="France", pt="Portugal", gr="Greece", no="Norway", is_="Iceland", se="Sweden", fi="Finland", dk="Denmark")
+COUNTRY_NAMES["is"] = COUNTRY_NAMES.pop("is_")
+
 def english_bundle(row, packet, lang, original):
     bundle = copy.deepcopy(original)
     if lang != 'en':
@@ -59,10 +62,10 @@ def english_bundle(row, packet, lang, original):
     sentences = re.split(r'(?<=[.!?])\s+', detail)
     short = next((s for s in sentences if 30 <= len(s) <= 110), None)
     # A literal category/location sentence is preferable to a cut-off quote.
-    fallback = f'{row["name"]}: {row["kind"].replace("_", " ")} in {dict(fr="France",pt="Portugal",gr="Greece")[row["country"]]}.'
+    fallback = f'{row["name"]}: {row["kind"].replace("_", " ")} in {COUNTRY_NAMES.get(row["country"], row["country"].upper())}.'
     bundle['summary']['tagline'] = short or fallback
     if len(bundle['summary']['tagline']) > 110:
-        bundle['summary']['tagline'] = f'{row["kind"].replace("_", " ").capitalize()} in {dict(fr="France",pt="Portugal",gr="Greece")[row["country"]]}.'
+        bundle['summary']['tagline'] = f'{row["kind"].replace("_", " ").capitalize()} in {COUNTRY_NAMES.get(row["country"], row["country"].upper())}.'
     bundle['summary']['best_season'] = seasonal_text(row['name'], packet['sources'])
     return validate_bundle(bundle, row['slug'], compact_packet(packet))
 
