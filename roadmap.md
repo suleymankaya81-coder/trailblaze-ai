@@ -1,3 +1,9 @@
+## November 17 FR/PT/GR draft-only import and read-only audit
+- [x] Apply exact existing 0015 SQL through the normal migration tool; tool recorded 0016 as well, conflict-safe. Readback: 18/7/13 regions, all draft.
+- [x] Execute France, Portugal, then Greece SQL separately in order; readback: 78/25/22 destinations, all draft.
+- [x] Verify zero duplicate slugs globally and zero new publications; all 125 lack cover/credit/tagline/plan because supplied SQL inserts identities only. Preview and live country URLs 404; both sitemap indexes exclude these countries.
+- [x] Deliver read-only report and full 185-row findings table: database text absent; local bundles have 30 non-English places (25 FR/5 GR) and 125 seasonal placeholders. No application code/content fixes; only tool-owned migration metadata and this task record changed.
+
 ## November 16 Nordic Claude handoff
 - [x] Prepare 658 source-linked NO/IS/SE/FI/DK candidate records (224/188/82/100/64) in the Claude format; all 128 current national parks and 18 Norwegian scenic routes reconciled, plus Finnish hiking and Danish nature/pilot inventories. Unknown coordinates/regions and candidate references remain explicit; 10 realm-territory candidates are a separate supplement.
 - [x] Inspect recovered authority Europe navigation and Nordic country captures; country paths confirmed, but File Not Found/missing captures prevent historical park-name recovery. Archive evidence retained; no claim of complete historical park coverage.
