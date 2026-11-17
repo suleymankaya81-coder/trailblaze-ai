@@ -381,5 +381,60 @@
     "permit_headline": "Check visitor access before departure",
     "permit_note": "Check the official visitor information for Chamonix and Mont Blanc before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
     "permit_source_url": "https://en.wikipedia.org/wiki/Mont_Blanc"
+  },
+  "german": {
+    "name": "Chamonix and Mont Blanc",
+    "region": "Auvergne Rhone Alpes",
+    "tagline": "Chamonix and Mont Blanc: Bergtal in Frankreich.",
+    "bestSeason": "Keine verifizierte Empfehlung für die Besuchersaison ist für Chamonix and Mont Blanc verfügbar; konsultieren Sie die Parkbehörde für Ihre Reisedaten.",
+    "permitHeadline": "Überprüfen Sie den Besucherzugang vor der Abreise",
+    "permitNote": "Überprüfen Sie die offiziellen Besucherinformationen für Chamonix and Mont Blanc vor der Abreise. Eintritt, aktivitätsberechtigungen und Übernachtung sind separate Überprüfungen; die quellenauszüge unten stellen die verfügbarkeit für ihre daten nicht fest.",
+    "days": [
+      {
+        "title": "Highlights besuchen: Chamonix and Mont Blanc",
+        "start": "Vorgeschlagen: Wählen Sie einen Tagesbesuch nach Überprüfung der offiziellen Zugangszeiten",
+        "stops": [
+          {
+            "name": "Mont Blanc",
+            "stop_id": "chamonix-and-mont-blanc",
+            "detail": "Der Mont Blanc ist ein Berg in den Alpen und erhebt sich 4.807,3 m über dem Meeresspiegel, direkt an der französisch-italienischen Grenze. Es ist der höchste Berg Europas außerhalb des Kaukasus, der zweitwichtigste Berg Europas und der elftwichtigste Berg der Welt."
+          }
+        ],
+        "driving": "Wählen Sie einen lokalen Besuch; Reisezeit und Weiterleitungen werden nicht überprüft.",
+        "note": "Überprüfen Sie die offiziellen Besucherinformationen für Chamonix and Mont Blanc vor der Abreise. Eintritt, aktivitätsberechtigungen und Übernachtung sind separate Überprüfungen; die quellenauszüge unten stellen die verfügbarkeit für ihre daten nicht fest."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Parkkontrolle",
+        "text": "Die überprüften Quellen legen keine aktuellen Parkbedingungen für Chamonix and Mont Blanc fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise."
+      },
+      {
+        "kind": "signal",
+        "title": "Signalprüfung",
+        "text": "Die überprüften Quellen legen keine mobile Abdeckung für Chamonix and Mont Blanc fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise."
+      },
+      {
+        "kind": "fuel",
+        "title": "Kraftstoffprüfung",
+        "text": "Die überprüften Quellen stellen keine Kraftstoffverfügbarkeit für Chamonix and Mont Blanc fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise."
+      },
+      {
+        "kind": "timing",
+        "title": "Zeitplanungsprüfung",
+        "text": "Die überprüften Quellen erstellen keine Best-Saison-Empfehlung für Chamonix and Mont Blanc. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise."
+      },
+      {
+        "kind": "access",
+        "title": "Zugangskontrolle",
+        "text": "Die überprüften Quellen legen nicht alle aktuellen Zugangsbeschränkungen für Chamonix and Mont Blanc fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise."
+      }
+    ],
+    "arrival": "Die überprüften Quellen legen keinen gemessenen Ankunftsplan oder Versorgungsstopps für Chamonix and Mont Blanc fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise.",
+    "vehicle": "Die überprüften Quellen legen keine Fahrzeuggröße oder Mietbeschränkungen fest; nehmen Sie keinen RV-Zugang für Chamonix and Mont Blanc an. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise.",
+    "goldenHour": "Die überprüften Quellen legen keinen verifizierten Sonnenauf- oder -untergangsstandpunkt für Chamonix and Mont Blanc fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise.",
+    "metaTitle": "Chamonix and Mont Blanc – Reiseplan",
+    "metaDescription": "Chamonix and Mont Blanc: Besuchsplan, Karte und Hinweise zur Anreise. Zugang und saisonale Regeln vor der Reise bei offiziellen Stellen prüfen."
   }
 }

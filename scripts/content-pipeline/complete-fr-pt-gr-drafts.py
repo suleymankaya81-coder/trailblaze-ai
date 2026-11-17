@@ -53,6 +53,7 @@ def english_bundle(row, packet, lang, original):
     for day in bundle['travel']['plan']['days']:
         for stop in day['stops']:
             stop['detail'] = re.sub(r'\([^()]*\)', '', stop['detail'])
+            stop['detail'] = re.sub(r'\b20\d{2}\b', '[dated source]', stop['detail'])
             stop['detail'] = re.sub(r'\s+', ' ', stop['detail']).replace(' ,', ',').strip()
     detail = bundle['travel']['plan']['days'][0]['stops'][0]['detail']
     sentences = re.split(r'(?<=[.!?])\s+', detail)
@@ -94,10 +95,12 @@ def main():
     finisher = module('frptgr_finisher', 'finish-fr-pt-gr.py')
     german = module('frptgr_german', 'audit-dach.py')
     OUT.mkdir(exist_ok=True)
+    review_path = OUT / 'photo-review.json'
+    reviews = json.loads(review_path.read_text()) if review_path.exists() else {}
     used = set()
     for path in OUT.glob('*.json'):
         item = json.loads(path.read_text())
-        if item.get('hero'):
+        if isinstance(item, dict) and item.get('hero'):
             used.add(item['hero']['original_url'])
     for cc, cfg in finisher.COUNTRIES.items():
         if args.country and args.country != cc:
@@ -114,13 +117,14 @@ def main():
                 else:
                     packet, page, lang, entity = finisher.identity_and_packet(row,cc,cfg['local_lang'],cfg['cache'])
                     lat,lng,coordinate_source = finisher.resolve_coordinates(row,page,entity,cfg['bounds'])
-                    photo = finisher.resolve_hero(row,page,used)
+                    selected = reviews.get(slug, {}).get('file')
+                    photo = prepare.file_info(selected.removeprefix('File:')) if selected else finisher.resolve_hero(row,page,used)
                     if not licensed(photo):
                         raise ValueError('No approved reusable exact-place cover')
                     # Article image is linked to the identified exact-place article;
                     # search-only matches must be reviewed separately, never auto-approved.
                     article_file = 'File:' + page.get('pageimage','')
-                    if photo['file'].replace('_',' ') != article_file.replace('_',' '):
+                    if not selected and photo['file'].replace('_',' ') != article_file.replace('_',' '):
                         raise ValueError('Commons search cover requires explicit identity review')
                     airport, route = finisher.resolve_route(lat,lng,cc)
                     old = json.loads((ROOT/'combined-content'/f'{slug}.json').read_text())

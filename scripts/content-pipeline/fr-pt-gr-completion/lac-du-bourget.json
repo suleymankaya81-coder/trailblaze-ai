@@ -381,5 +381,60 @@
     "permit_headline": "Check visitor access before departure",
     "permit_note": "Check the official visitor information for Lac du Bourget before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
     "permit_source_url": "https://en.wikipedia.org/wiki/Lac_du_Bourget"
+  },
+  "german": {
+    "name": "Lac du Bourget",
+    "region": "Auvergne Rhone Alpes",
+    "tagline": "Lac du Bourget: Biosphäre in Frankreich.",
+    "bestSeason": "Keine verifizierte Empfehlung für die Besuchersaison ist für Lac du Bourget verfügbar; konsultieren Sie die Parkbehörde für Ihre Reisedaten.",
+    "permitHeadline": "Überprüfen Sie den Besucherzugang vor der Abreise",
+    "permitNote": "Überprüfen Sie die offiziellen Besucherinformationen für Lac du Bourget vor der Abreise. Eintritt, aktivitätsberechtigungen und Übernachtung sind separate Überprüfungen; die quellenauszüge unten stellen die verfügbarkeit für ihre daten nicht fest.",
+    "days": [
+      {
+        "title": "Highlights besuchen: Lac du Bourget",
+        "start": "Vorgeschlagen: Wählen Sie einen Tagesbesuch nach Überprüfung der offiziellen Zugangszeiten",
+        "stops": [
+          {
+            "name": "Lac du Bourget",
+            "stop_id": "lac-du-bourget",
+            "detail": "Lac du Bourget, auch lokal als Lac d'Aix bekannt, ist ein See am südlichsten Ende des Jura-Gebirges im Departement Savoie, Frankreich. Es ist der tiefste See ganz in Frankreich, und entweder der größte oder zweitgrößte nach Lac de Grand-Lieu je nach Saison."
+          }
+        ],
+        "driving": "Wählen Sie einen lokalen Besuch; Reisezeit und Weiterleitungen werden nicht überprüft.",
+        "note": "Überprüfen Sie die offiziellen Besucherinformationen für Lac du Bourget vor der Abreise. Eintritt, aktivitätsberechtigungen und Übernachtung sind separate Überprüfungen; die quellenauszüge unten stellen die verfügbarkeit für ihre daten nicht fest."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Parkkontrolle",
+        "text": "Die überprüften Quellen legen keine aktuellen Parkbedingungen für Lac du Bourget fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise."
+      },
+      {
+        "kind": "signal",
+        "title": "Signalprüfung",
+        "text": "Die überprüften Quellen legen keine mobile Abdeckung für Lac du Bourget fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise."
+      },
+      {
+        "kind": "fuel",
+        "title": "Kraftstoffprüfung",
+        "text": "Die überprüften Quellen stellen keine Kraftstoffverfügbarkeit für Lac du Bourget fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise."
+      },
+      {
+        "kind": "timing",
+        "title": "Zeitplanungsprüfung",
+        "text": "Die überprüften Quellen erstellen keine Best-Saison-Empfehlung für Lac du Bourget. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise."
+      },
+      {
+        "kind": "access",
+        "title": "Zugangskontrolle",
+        "text": "Die überprüften Quellen legen nicht alle aktuellen Zugangsbeschränkungen für Lac du Bourget fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise."
+      }
+    ],
+    "arrival": "Die überprüften Quellen legen keinen gemessenen Ankunftsplan oder Versorgungsstopps für Lac du Bourget fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise.",
+    "vehicle": "Die überprüften Quellen legen keine Fahrzeuggröße oder Mietbeschränkungen fest; nehmen Sie keinen RV-Zugang für Lac du Bourget an. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise.",
+    "goldenHour": "Die überprüften Quellen legen keinen verifizierten Sonnenauf- oder -untergangsstandpunkt für Lac du Bourget fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise.",
+    "metaTitle": "Lac du Bourget – Reiseplan",
+    "metaDescription": "Lac du Bourget: Besuchsplan, Karte und Hinweise zur Anreise. Zugang und saisonale Regeln vor der Reise bei offiziellen Stellen prüfen."
   }
 }

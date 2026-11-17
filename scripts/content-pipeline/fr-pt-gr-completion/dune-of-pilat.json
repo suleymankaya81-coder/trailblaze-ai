@@ -381,5 +381,60 @@
     "permit_headline": "Check visitor access before departure",
     "permit_note": "Check the official visitor information for Dune of Pilat before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
     "permit_source_url": "https://en.wikipedia.org/wiki/Dune_of_Pilat"
+  },
+  "german": {
+    "name": "Dune of Pilat",
+    "region": "Nouvelle Aquitaine",
+    "tagline": "Die Dune of Pilat, auch Grande Dune du Pilat genannt, ist die höchste Sanddüne Europas.",
+    "bestSeason": "Keine verifizierte Empfehlung für die Besuchersaison ist für Dune of Pilat verfügbar; konsultieren Sie die Parkbehörde für Ihre Reisedaten.",
+    "permitHeadline": "Überprüfen Sie den Besucherzugang vor der Abreise",
+    "permitNote": "Überprüfen Sie die offiziellen Besucherinformationen für Dune of Pilat vor der Abreise. Eintritt, aktivitätsberechtigungen und Übernachtung sind separate Überprüfungen; die quellenauszüge unten stellen die verfügbarkeit für ihre daten nicht fest.",
+    "days": [
+      {
+        "title": "Highlights besuchen: Dune of Pilat",
+        "start": "Vorgeschlagen: Wählen Sie einen Tagesbesuch nach Überprüfung der offiziellen Zugangszeiten",
+        "stops": [
+          {
+            "name": "Dune of Pilat",
+            "stop_id": "dune-of-pilat",
+            "detail": "Die Dune of Pilat, auch Grande Dune du Pilat genannt, ist die höchste Sanddüne Europas. Es befindet sich in La Teste-de-Buch in der Arcachon Bay, Frankreich, 60 km südwestlich von Bordeaux entlang der französischen Atlantikküste."
+          }
+        ],
+        "driving": "Wählen Sie einen lokalen Besuch; Reisezeit und Weiterleitungen werden nicht überprüft.",
+        "note": "Überprüfen Sie die offiziellen Besucherinformationen für Dune of Pilat vor der Abreise. Eintritt, aktivitätsberechtigungen und Übernachtung sind separate Überprüfungen; die quellenauszüge unten stellen die verfügbarkeit für ihre daten nicht fest."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Parkkontrolle",
+        "text": "Die überprüften Quellen legen keine aktuellen Parkbedingungen für Dune of Pilat fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise."
+      },
+      {
+        "kind": "signal",
+        "title": "Signalprüfung",
+        "text": "Die überprüften Quellen legen keine mobile Abdeckung für Dune of Pilat fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise."
+      },
+      {
+        "kind": "fuel",
+        "title": "Kraftstoffprüfung",
+        "text": "Die überprüften Quellen stellen keine Kraftstoffverfügbarkeit für Dune of Pilat fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise."
+      },
+      {
+        "kind": "timing",
+        "title": "Zeitplanungsprüfung",
+        "text": "Die überprüften Quellen erstellen keine Best-Saison-Empfehlung für Dune of Pilat. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise."
+      },
+      {
+        "kind": "access",
+        "title": "Zugangskontrolle",
+        "text": "Die überprüften Quellen legen nicht alle aktuellen Zugangsbeschränkungen für Dune of Pilat fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise."
+      }
+    ],
+    "arrival": "Die überprüften Quellen legen keinen gemessenen Ankunftsplan oder Versorgungsstopps für Dune of Pilat fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise.",
+    "vehicle": "Die überprüften Quellen legen keine Fahrzeuggröße oder Mietbeschränkungen fest; nehmen Sie keinen RV-Zugang für Dune of Pilat an. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise.",
+    "goldenHour": "Die überprüften Quellen legen keinen verifizierten Sonnenauf- oder -untergangsstandpunkt für Dune of Pilat fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise.",
+    "metaTitle": "Dune of Pilat – Reiseplan",
+    "metaDescription": "Dune of Pilat: Besuchsplan, Karte und Hinweise zur Anreise. Zugang und saisonale Regeln vor der Reise bei offiziellen Stellen prüfen."
   }
 }
