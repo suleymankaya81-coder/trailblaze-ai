@@ -86,8 +86,9 @@ def upload_photo(slug, photo):
         if not response.headers.get('content-type', '').startswith('image/'):
             raise ValueError('Cover response is not an image')
         raw.write_bytes(response.content)
-        with pointer.open('w') as output:
-            subprocess.run(['lovable-assets', 'create', '--file', str(raw), '--filename', f'{slug}.jpg'], stdout=output, check=True)
+        made = subprocess.run(['lovable-assets', 'create', '--file', str(raw), '--filename', f'{slug}.jpg'], capture_output=True, text=True, check=True)
+        json.loads(made.stdout)  # never leave an empty pointer if the upload is interrupted
+        pointer.write_text(made.stdout)
     return {**photo, 'original_url': photo['url'], 'url': json.loads(pointer.read_text())['url']}
 
 def main():
