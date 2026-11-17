@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Raumabane",
+      "quote": "Auf der Raumabane verkehrt an den Sommerwochenenden ein mit einer Dampflokomotive bespannter Museumszug von Åndalsnes bis Bjorli und zurück.",
+      "english": "On the Rauma Line, a museum train pulled by a steam locomotive runs from Åndalsnes to Bjorli and back on summer weekends."
+    },
+    {
+      "id": "s2",
+      "name": "Norwegische Gipfelmuseum",
+      "quote": "Das in Åndalsnes beheimatete Norwegische Gipfelmuseum zeigt die Geschichte des Bergsteigens in Norwegen.",
+      "english": "The Norwegian Summit Museum, located in Åndalsnes, shows the history of mountaineering in Norway."
+    },
+    {
+      "id": "s3",
+      "name": "Kapelle",
+      "quote": "Unmittelbar am Bahnhof wurde in einem alten norwegischen Eisenbahnwaggon eine kleine Kapelle eingerichtet.",
+      "english": "Directly at the train station, a small chapel was set up in an old Norwegian railway carriage."
+    },
+    {
+      "id": "s4",
+      "name": "Romsdalen-Gondelbahn",
+      "quote": "Die im Mai 2021 eröffnete Romsdalen-Gondelbahn liegt direkt am Hafen und fährt in 5 Minuten auf den Berg Nesaksla.",
+      "english": "The Romsdalen Gondola, opened in May 2021, is located directly at the harbor and travels to Mount Nesaksla in 5 minutes."
+    },
+    {
+      "id": "s5",
+      "name": "Nesaksla",
+      "quote": "Die Bergstation liegt 708 m über dem Fjord und von dort bietet sich ein weiter Ausblick über der Fjord und die umgebenden Berge.",
+      "english": "The mountain station is located 708 m above the fjord and from there offers a wide view over the fjord and the surrounding mountains."
+    },
+    {
+      "id": "s6",
+      "name": "Trollstigen",
+      "quote": "Åndalsnes ist darüber hinaus beliebt als Ausgangspunkt für die Fahrt über den Trollstigen, die sich auf 18 Kilometer Länge mit einer Steigung von 12 % in eindrucksvollen Serpentinen auf die Passhöhe hinaufschraubt, von wo aus in Richtung Åndalsnes ein herrlicher Ausblick vorhanden ist.",
+      "english": "Åndalsnes is also popular as a starting point for the trip over the Trollstigen, which winds up to the top of the pass over a length of 18 kilometers with a gradient of 12% in impressive serpentines, from where there is a wonderful view towards Åndalsnes."
+    },
+    {
+      "id": "s7",
+      "name": "Stabkirche Rødven",
+      "quote": "Die Stabkirche Rødven mit einem Hauptschiff und Südportal aus dem 13. Jahrhundert liegt ebenfalls unweit des Ortes.",
+      "english": "The Rødven Stave Church with a nave and south portal from the 13th century is also located not far from the village."
+    }
+  ],
+  "days": [
+    {
+      "title": "Town Center and Local Culture",
+      "stop_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Railway and Mountain Heights",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Scenic Drives and Historic Architecture",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "380e007467e7cc8b1bd1496656fed7f7b9fff776eabac681a25a2a16c7b7d019"
+}

@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Seilandsjøkelen",
+      "quote": "Die Landschaft im Park gestaltet sich sehr abwechslungsreich, da sich der Park neben den Fjorden und Küstenlandschaften über das Mittelgebirge auf der Insel erstreckt und sogar die beiden Gletscher Seilandsjøkelen und Nordmannsjøkelen umfasst.",
+      "english": "The landscape in the park is very diverse, as the park extends over the low mountain range on the island in addition to the fjords and coastal landscapes and even includes the two glaciers Seilandsjøkelen and Nordmannsjøkelen."
+    },
+    {
+      "id": "s2",
+      "name": "Nordmannsjøkelen",
+      "quote": "Letztere sind sowohl die beiden nördlichsten Gletscher Norwegens als auch mit 940 moh bzw. 1.040 moh die niedrigsten Gletscher Skandinaviens.",
+      "english": "The latter are both the two northernmost glaciers in Norway and, at 940 m and 1,040 m above sea level respectively, the lowest glaciers in Scandinavia."
+    },
+    {
+      "id": "s3",
+      "name": "Seilandstuva",
+      "quote": "Der höchste Berg im Park ist mit 1.079 m der Seilandstuva.",
+      "english": "The highest mountain in the park is the Seilandstuva at 1,079 m."
+    },
+    {
+      "id": "s4",
+      "name": "Store Kufjord",
+      "quote": "Die beiden größten Fjorde sind Store Kufjord und Jøfjord, welche im Süden der Insel liegen und beide in Nord-Süd-Richtung verlaufen.",
+      "english": "The two largest fjords are Store Kufjord and Jøfjord, which are located in the south of the island and both run in a north-south direction."
+    },
+    {
+      "id": "s5",
+      "name": "Jøfjord",
+      "quote": "Die beiden größten Fjorde sind Store Kufjord und Jøfjord, welche im Süden der Insel liegen und beide in Nord-Süd-Richtung verlaufen.",
+      "english": "The two largest fjords are Store Kufjord and Jøfjord, which are located in the south of the island and both run in a north-south direction."
+    },
+    {
+      "id": "s6",
+      "name": "Melkelva",
+      "quote": "Südöstlich des Seilandsjøkelen befindet sich ein Hochplateau, durch welches der Melkelva fließt.",
+      "english": "To the southeast of the Seilandsjøkelen there is a high plateau through which the Melkelva flows."
+    },
+    {
+      "id": "s7",
+      "name": "Wanderwege",
+      "quote": "Im Park gibt es einige nicht markierte Wanderwege und mehrere Übernachtungshütten.",
+      "english": "In the park there are some unmarked hiking trails and several overnight huts."
+    },
+    {
+      "id": "s8",
+      "name": "Übernachtungshütten",
+      "quote": "Im Park gibt es einige nicht markierte Wanderwege und mehrere Übernachtungshütten.",
+      "english": "In the park there are some unmarked hiking trails and several overnight huts."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glaciers and Summits",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Southern Fjords and Plateaus",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Backcountry Exploration",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "b157dfee82e9a4399fe05c0e179ba135799cb3be6aad0992ee1dd2a070590f26"
+}

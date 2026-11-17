@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Andenes",
+      "quote": "An der Nordspitze der Insel befindet sich Andenes, das Verwaltungszentrum von Andøy.",
+      "english": "At the northern tip of the island lies Andenes, the administrative center of Andøy."
+    },
+    {
+      "id": "s2",
+      "name": "Andenes fyr",
+      "quote": "Die Gewässer rund um die Insel werden von zwei Leuchttürmen markiert: dem Andenes fyr im Hafen von Andenes im Norden der Insel und dem Anda fyr auf der im Südwesten vorgelagerten Insel Anden.",
+      "english": "The waters around the island are marked by two lighthouses: the Andenes fyr in the port of Andenes in the north of the island and the Anda fyr on the offshore island of Anden to the southwest."
+    },
+    {
+      "id": "s3",
+      "name": "Andøya Spaceport",
+      "quote": "Auf der Oksebasis, einer Raketenabschussstation, dem so genannten Andøya Spaceport (früher Andøya Rakettskytefelt), befinden sich Forschungsstationen, die das Polarlicht und die Atmosphäre untersuchen, und ein Observatorium, das die Atmosphäre mit einem besonders starken Laserstrahl erforscht.",
+      "english": "At Oksebasis, a rocket launch site known as the Andøya Spaceport (formerly Andøya Rocket Range), there are research stations that study the aurora and the atmosphere, and an observatory that explores the atmosphere with a particularly powerful laser beam."
+    },
+    {
+      "id": "s4",
+      "name": "Ramsåfeltet",
+      "quote": "Eine geologische Besonderheit bildet das Steinkohlevorkommen im Fjell Ramsåfeltet.",
+      "english": "The coal deposits in the Ramsåfeltet fell form a geological specialty."
+    },
+    {
+      "id": "s5",
+      "name": "Åse",
+      "quote": "In der Ortschaft Åse, ungefähr 40 km südlich von Andenes, ist eine Ringwallanlage aus der älteren Eisenzeit ausgegraben worden, neben Engeløya und Borg ein weiterer Häuptlingssitz Hålogalands.",
+      "english": "In the village of Åse, about 40 km south of Andenes, a ring wall system from the early Iron Age has been excavated, which, alongside Engeløya and Borg, was another seat of power for Hålogaland chiefs."
+    },
+    {
+      "id": "s6",
+      "name": "Risøyhamn",
+      "quote": "Die Brücke überspannt den Risøysund bei der Ortschaft Risøyhamn im Südosten; dort machen auch Schiffe der Hurtigruten Station.",
+      "english": "The bridge spans the Risøysund at the village of Risøyhamn in the southeast; the Hurtigruten ships also call at port there."
+    },
+    {
+      "id": "s7",
+      "name": "Andøybrua",
+      "quote": "Angebunden an Hinnøya und somit ans Festland ist Andøya über die Brücke Andøybrua auf dem Fylkesvei 82.",
+      "english": "Andøya is connected to Hinnøya and thus to the mainland via the Andøybrua bridge on Fylkesvei 82."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Hub and Space Research",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Central Geology and Iron Age History",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Southeastern Gate to the Mainland",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "6eb84694be9655c6cb4424ccfc817199068b78806cfe21897672753c56320aff"
+}

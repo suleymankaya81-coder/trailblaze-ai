@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Svartisen Gletscher",
+      "quote": "Im westlichen Teil des Parks befindet sich der 370 km² große Svartisen Gletscher, welcher durch die Gletscherschmelze der letzten Jahrzehnte eigentlich zu zwei einzelnen Gletschern wurde.",
+      "english": "In the western part of the park is the 370 km² Svartisen Glacier, which has actually become two separate glaciers due to glacial melting in recent decades."
+    },
+    {
+      "id": "s2",
+      "name": "Saltfjellet",
+      "quote": "Im Osten umfasst der Park den Bergzug Saltfjellet.",
+      "english": "In the east, the park encompasses the Saltfjellet mountain range."
+    },
+    {
+      "id": "s3",
+      "name": "Ørfjellet",
+      "quote": "Dort liegt auch der höchste Berg im Nationalpark, der 1751 m hohe Ørfjellet.",
+      "english": "There also lies the highest mountain in the national park, the 1,751 m high Ørfjellet."
+    },
+    {
+      "id": "s4",
+      "name": "Lønsdalen",
+      "quote": "Seit dem 16. Jahrhundert wird im Park Rentierzucht betrieben, hauptsächlich aber im Lønsdalen.",
+      "english": "Reindeer husbandry has been practiced in the park since the 16th century, but mainly in Lønsdalen."
+    },
+    {
+      "id": "s5",
+      "name": "Nordland nasjonalparksenter",
+      "quote": "Das Nordland nasjonalparksenter liegt in Storjord zwischen den Nationalparks Saltfjellet-Svartisen und Junkerdal und dient als Informationszentrum für alle Nationalparks in der Provinz Nordland.",
+      "english": "The Nordland National Park Center is located in Storjord between the Saltfjellet-Svartisen and Junkerdal National Parks and serves as an information center for all national parks in the province of Nordland."
+    },
+    {
+      "id": "s6",
+      "name": "Karst-Grotten",
+      "quote": "Das vorherrschende Gesteinsmaterial, vor allem in der Mitte des Parks ist Kalkgestein, weshalb es dort auch zahlreiche Karst-Grotten gibt.",
+      "english": "The predominant rock material, especially in the center of the park, is limestone, which is why there are also numerous karst caves there."
+    },
+    {
+      "id": "s7",
+      "name": "Nordfjord",
+      "quote": "Vom Nordfjord im Westen erstreckt sich der Park über mehr als 1500 m hohe Berge und Gletscher bis zu fruchtbaren von Flüssen durchzogenen Tälern und offenen Hochebenen im Osten.",
+      "english": "From the Nordfjord in the west, the park extends over mountains more than 1500 m high and glaciers to fertile valleys traversed by rivers and open plateaus in the east."
+    }
+  ],
+  "days": [
+    {
+      "title": "Western Glaciers and Coastal Fjords",
+      "stop_ids": [
+        "s1",
+        "s7"
+      ]
+    },
+    {
+      "title": "Eastern Peaks and Valleys",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "cd3338284dcac2df9d6283c3b96e1700b4548abfdf1751980d53aa2af3cabc36"
+}

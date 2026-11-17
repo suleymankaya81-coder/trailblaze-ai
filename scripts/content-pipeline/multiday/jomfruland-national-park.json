@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Jomfruland",
+      "quote": "Der Kiesstrand auf der Meeresseite von Jomfruland ist ca. 7 km lang.",
+      "english": "The pebble beach on the sea side of Jomfruland is approx. 7 km long."
+    },
+    {
+      "id": "s2",
+      "name": "Stråholmen",
+      "quote": "Die Inseln Jomfruland und Stråholmen dienen als Rastplätze für verschiedene Zugvögel.",
+      "english": "The islands Jomfruland and Stråholmen serve as resting places for various migratory birds."
+    },
+    {
+      "id": "s3",
+      "name": "Vogelstation Jomfruland",
+      "quote": "Die Vogelstation Jomfruland hat mehr als 300 verschiedene Vogelarten registriert, was das zweithöchste Vorkommen in Norwegen darstellt.",
+      "english": "The Jomfruland Bird Station has registered more than 300 different bird species, which represents the second highest occurrence in Norway."
+    },
+    {
+      "id": "s4",
+      "name": "Stangnes",
+      "quote": "Insbesondere die Insel Jomfruland, aber auch Stråholmen, sowie die anderen Inseln und Stangnes auf dem Festland werden viel besucht.",
+      "english": "In particular, the island of Jomfruland, but also Stråholmen, as well as the other islands and Stangnes on the mainland are frequently visited."
+    }
+  ],
+  "days": [
+    {
+      "title": "Islands and Mainland Sights",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "64318c33daeb03415da7971e9e13e3c9cc9fbb08ba499dbca1d73ab90c21173a"
+}

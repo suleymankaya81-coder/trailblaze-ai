@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Trollfjordtindan",
+      "quote": "Die Westseite des Trollfjords wird durch den 830 Meter hohen Trollfjordtindan begrenzt, an der Nordseite steigen rund 500 Meter hohe Felswände fast senkrecht aus dem Wasser.",
+      "english": "The western side of the Trollfjord is bordered by the 830-meter-high Trollfjordtindan, while on the northern side, rock walls about 500 meters high rise almost vertically out of the water."
+    },
+    {
+      "id": "s2",
+      "name": "Raftsund",
+      "quote": "Der Trollfjord ist ein 2 Kilometer langer Seitenarm des Raftsunds, der die norwegischen Regionen Lofoten und Vesterålen voneinander trennt.",
+      "english": "The Trollfjord is a 2-kilometer-long side arm of the Raftsund, which separates the Norwegian regions of Lofoten and Vesterålen."
+    },
+    {
+      "id": "s3",
+      "name": "Turbinenhaus",
+      "quote": "Das hierzu notwendige kleine Turbinenhaus steht am Ufer des hinteren Fjordabschlusses am Rande einer Bergwiese.",
+      "english": "The small turbine house required for this purpose stands on the shore of the rear end of the fjord at the edge of a mountain meadow."
+    },
+    {
+      "id": "s4",
+      "name": "Bergwiese",
+      "quote": "Das hierzu notwendige kleine Turbinenhaus steht am Ufer des hinteren Fjordabschlusses am Rande einer Bergwiese.",
+      "english": "The small turbine house required for this purpose stands on the shore of the rear end of the fjord at the edge of a mountain meadow."
+    }
+  ],
+  "days": [
+    {
+      "title": "Trollfjord Peaks and Surrounding Waters",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "df307b7f73526e1c42ad7fdeded66282b7cbb7c3502da0b527935853edd00115"
+}

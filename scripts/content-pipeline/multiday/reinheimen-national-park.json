@@ -1,0 +1,59 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Tafjordfjella",
+      "quote": "Im Nordwesten des Parks liegt das Tafjordfjella Gebirge, dessen höchster Berg der 1982 moh. hohe Karitinden ist.",
+      "english": "In the northwest of the park lies the Tafjordfjella mountains, whose highest peak is the 1982 meter high Karitinden."
+    },
+    {
+      "id": "s2",
+      "name": "Karitinden",
+      "quote": "Im Nordwesten des Parks liegt das Tafjordfjella Gebirge, dessen höchster Berg der 1982 moh. hohe Karitinden ist.",
+      "english": "In the northwest of the park lies the Tafjordfjella mountains, whose highest peak is the 1982 meter high Karitinden."
+    },
+    {
+      "id": "s3",
+      "name": "Gråhøe",
+      "quote": "Im Zentrum des Parkes liegt der 2014 moh. hohe Gråhøe.",
+      "english": "In the center of the park lies the 2014 meter high Gråhøe."
+    },
+    {
+      "id": "s4",
+      "name": "Ottadalen",
+      "quote": "Im Südosten des Parks befinden sich das Ottadalen und der 1883 moh. hohe Skartind.",
+      "english": "In the southeast of the park are the Ottadalen and the 1883 meter high Skartind."
+    },
+    {
+      "id": "s5",
+      "name": "Skartind",
+      "quote": "Im Südosten des Parks befinden sich das Ottadalen und der 1883 moh. hohe Skartind.",
+      "english": "In the southeast of the park are the Ottadalen and the 1883 meter high Skartind."
+    },
+    {
+      "id": "s6",
+      "name": "Slådalsvegen",
+      "quote": "Die Böden im Park sind meist sehr unfruchtbar, lediglich um Slådalsvegen sind die Böden sehr kalkhaltig, was dort für eine üppige Pflanzenwelt sorgt.",
+      "english": "The soils in the park are mostly very infertile, only around Slådalsvegen are the soils very calcareous, which provides for lush flora there."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northwestern Mountains and High Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Southeastern Valleys and Botanical Areas",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "42fc4e6aa3519a6cafb9400fda81a4012022eac09b51d472051e0a3eac00eb63"
+}

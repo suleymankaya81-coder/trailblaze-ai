@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kiefern- und Birkenwäldern",
+      "quote": "Der Park wurde 1970 gegründet, um die nahezu unberührte Küstenlandschaft der Insel mit ihren Kiefern- und Birkenwäldern, Bergen, Fjorden, der Tier- und Pflanzenwelt und dem kulturellen Erbe zu erhalten und zu schützen und wurde in den Jahren 1975 und 2004 erweitert.",
+      "english": "The park was founded in 1970 to preserve and protect the island's virtually untouched coastal landscape with its pine and birch forests, mountains, fjords, flora and fauna and cultural heritage and was expanded in 1975 and 2004."
+    },
+    {
+      "id": "s2",
+      "name": "Seen",
+      "quote": "Die Landschaft ist geprägt von scharfkantigen Bergen, zahlreichen Seen, Flüssen, Mooren und Hochmooren und unberührtem Urwald.",
+      "english": "The landscape is characterized by sharp-edged mountains, numerous lakes, rivers, bogs and high moors and untouched virgin forest."
+    },
+    {
+      "id": "s3",
+      "name": "Flüssen",
+      "quote": "In den Flüssen leben Wandersaiblinge, Dreistachlige Stichlinge, Forellen und seltener auch Lachse.",
+      "english": "Arctic char, three-spined sticklebacks, trout and more rarely salmon live in the rivers."
+    },
+    {
+      "id": "s4",
+      "name": "Moorgebieten",
+      "quote": "In den Moorgebieten sind vor allem Wollgräser, Seggen und Moose u. a. Alpenhelm, Sumpf-Veilchen, Sumpf-Herzblatt und Geflecktes Knabenkraut verbreitet.",
+      "english": "Cotton grasses, sedges and mosses, including Alpine bartsia, marsh violet, marsh grass-of-Parnassus and heath spotted orchid are common in the marshy areas."
+    }
+  ],
+  "days": [
+    {
+      "title": "Forests and Waters of Ånderdalen",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "62a016e2cfbb2512d43f03c9f9a9f5d097f0fa5249b663934eba14a710516674"
+}

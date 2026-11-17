@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Rondslottet",
+      "quote": "Der höchste Berggipfel des Nationalparks ist Rondslottet mit 2.178 m.",
+      "english": "The highest mountain peak in the national park is Rondslottet at 2,178 m."
+    },
+    {
+      "id": "s2",
+      "name": "Rondvatnet",
+      "quote": "Zwischen den steil abfallenden Hängen dieses Tals liegt der schmale See Rondvatnet, der auch die Mitte des Parks bildet.",
+      "english": "Between the steeply sloping sides of this valley lies the narrow lake Rondvatnet, which also forms the center of the park."
+    },
+    {
+      "id": "s3",
+      "name": "Storronden",
+      "quote": "Die höchsten Gipfel bilden Rondslottet (das Rond-Schloss) mit 2.178 m, Storronden (der Große Rond) mit 2.138 m und Høgronden (der Hohe Rond) mit 2.118 m Höhe.",
+      "english": "The highest peaks are Rondslottet (the Rond Castle) at 2,178 m, Storronden (the Great Rond) at 2,138 m and Høgronden (the High Rond) at 2,118 m height."
+    },
+    {
+      "id": "s4",
+      "name": "Høgronden",
+      "quote": "Die höchsten Gipfel bilden Rondslottet (das Rond-Schloss) mit 2.178 m, Storronden (der Große Rond) mit 2.138 m und Høgronden (der Hohe Rond) mit 2.118 m Höhe.",
+      "english": "The highest peaks are Rondslottet (the Rond Castle) at 2,178 m, Storronden (the Great Rond) at 2,138 m and Høgronden (the High Rond) at 2,118 m height."
+    },
+    {
+      "id": "s5",
+      "name": "Jutulhogget",
+      "quote": "Rondane enthält einige kleine Schluchten (die bekanntesten sind Jutulhogget und Vesle-Ula), die durch Schmelzwasser eingeschnitten wurden.",
+      "english": "Rondane contains several small gorges (the best known are Jutulhogget and Vesle-Ula) that were carved by meltwater."
+    },
+    {
+      "id": "s6",
+      "name": "Vesle-Ula",
+      "quote": "Rondane enthält einige kleine Schluchten (die bekanntesten sind Jutulhogget und Vesle-Ula), die durch Schmelzwasser eingeschnitten wurden.",
+      "english": "Rondane contains several small gorges (the best known are Jutulhogget and Vesle-Ula) that were carved by meltwater."
+    },
+    {
+      "id": "s7",
+      "name": "Gravhø",
+      "quote": "Die großen zum Renfang benutzten Fallen können bei Gravhø und bei Bløyvangen besichtigt werden und sind auch im Park verbreitet.",
+      "english": "The large traps used for catching reindeer can be visited at Gravhø and at Bløyvangen and are also common throughout the park."
+    },
+    {
+      "id": "s8",
+      "name": "Bløyvangen",
+      "quote": "Die großen zum Renfang benutzten Fallen können bei Gravhø und bei Bløyvangen besichtigt werden und sind auch im Park verbreitet.",
+      "english": "The large traps used for catching reindeer can be visited at Gravhø and at Bløyvangen and are also common throughout the park."
+    },
+    {
+      "id": "s9",
+      "name": "Rondvassbu",
+      "quote": "In Rondane gibt es die zentrale Hütte Rondvassbu am südlichen Ende des Sees Rondvatnet.",
+      "english": "In Rondane, there is the central cabin Rondvassbu at the southern end of Lake Rondvatnet."
+    },
+    {
+      "id": "s10",
+      "name": "Bjørnhollia",
+      "quote": "Die Berghütten Grimsdalshytta, Øvre und Nedre Dørålseter (beide privat bewirtschaftet) und Bjørnhollia liegen am nördlichen beziehungsweise östlichen Rand des Parks.",
+      "english": "The mountain cabins Grimsdalshytta, Øvre and Nedre Dørålseter (both privately managed) and Bjørnhollia are located on the northern and eastern edges of the park, respectively."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Peaks and Lakes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s9"
+      ]
+    },
+    {
+      "title": "Gorges and Archaeological Sites",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Eastern Heights and Shelters",
+      "stop_ids": [
+        "s4",
+        "s10"
+      ]
+    }
+  ],
+  "_text_sha": "1eadea8e21746214139e1df9f12351c7908169113db0c20e20ab67f4980bd5b7"
+}

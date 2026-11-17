@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hulløya",
+      "quote": "Hulløya zwischen dem Kjøpsviksund und Hulløysund ist die größte Insel im Tysfjord mit einer Fläche von 22 km².",
+      "english": "Hulløya between Kjøpsviksund and Hulløysund is the largest island in Tysfjord with an area of 22 km²."
+    },
+    {
+      "id": "s2",
+      "name": "Litl-Hulløya",
+      "quote": "Südwestlich davon liegt die wesentlich kleinere Insel Litl-Hulløya (ca. 0,8 km²).",
+      "english": "Southwest of it lies the significantly smaller island Litl-Hulløya (approx. 0.8 km²)."
+    },
+    {
+      "id": "s3",
+      "name": "Lifjell",
+      "quote": "Kjøpsvik liegt bei Kjøpsnes eingeklemmt zwischen dem Fjord und dem 849 m hohen Lifjell.",
+      "english": "Kjøpsvik is located at Kjøpsnes squeezed between the fjord and the 849 m high Lifjell."
+    },
+    {
+      "id": "s4",
+      "name": "Stetind",
+      "quote": "Stetind (1391 m), Norwegens Nationalfjell am Stefjord ist der höchste Berg in der Umgebung des Tysfjords.",
+      "english": "Stetind (1391 m), Norway's national mountain at Stefjord, is the highest mountain in the Tysfjord area."
+    },
+    {
+      "id": "s5",
+      "name": "Musken",
+      "quote": "Musken, mitten am Hellmofjord, gilt als der einzige Ort mit rein lulesamischer Bevölkerung in Norwegen.",
+      "english": "Musken, in the middle of Hellmofjord, is considered the only place with a purely Lule Sámi population in Norway."
+    },
+    {
+      "id": "s6",
+      "name": "Hellmobotn",
+      "quote": "Hellmobotn ist ein beliebter Ausgangspunkt für Skilangläufer, mit markierten Loipen, die unter anderem bis nach Schweden führen.",
+      "english": "Hellmobotn is a popular starting point for cross-country skiers, with marked trails that lead to Sweden, among other places."
+    },
+    {
+      "id": "s7",
+      "name": "Råggejávrrerájgge",
+      "quote": "Höhlenwanderungen in der tiefsten Höhle Nordeuropas, Råggejávrrerájgge.",
+      "english": "Cave hiking in Northern Europe's deepest cave, Råggejávrrerájgge."
+    },
+    {
+      "id": "s8",
+      "name": "Grenseleden",
+      "quote": "Der Wanderweg Grenseleden (schwedisch Gränsleden) mit dem Ausgangspunkt am Sørfjord ist ein markierter Wanderweg, der früher als Handelsroute und im Zweiten Weltkrieg als Fluchtroute nach Schweden verwendet wurde.",
+      "english": "The Grenseleden hiking trail (Swedish Gränsleden) with its starting point at Sørfjord is a marked hiking trail that was used as a trade route in the past and as an escape route to Sweden during the Second World War."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Islands and Town Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "National Peaks and Inland Trails",
+      "stop_ids": [
+        "s4",
+        "s8"
+      ]
+    },
+    {
+      "title": "Hellmofjord Culture and Adventure",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "f30e20c8e11e2397753ab88c439d366eeead5831f94f028a52358281dd379d6b"
+}

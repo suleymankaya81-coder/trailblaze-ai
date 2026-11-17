@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Ragotjahkka",
+      "quote": "Der Ragotjahkka ist 1.312 m.ö.h der höchste Berg im Nationalpark.",
+      "english": "The Ragotjahkka is at 1,312 meters above sea level the highest mountain in the national park."
+    },
+    {
+      "id": "s2",
+      "name": "Litlverivatnet",
+      "quote": "Die größten Seen sind der Litlverivatnet und der Storskogvatnet.",
+      "english": "The largest lakes are Litlverivatnet and Storskogvatnet."
+    },
+    {
+      "id": "s3",
+      "name": "Storskogvatnet",
+      "quote": "Nördlich des Storskogvatnet gibt es auch einige Weiden, Vogelbeerensträucher, Alpen-Milchlattich und Trollblumen.",
+      "english": "North of Storskogvatnet there are also some willows, rowan shrubs, alpine blue-sow-thistles and globeflowers."
+    },
+    {
+      "id": "s4",
+      "name": "Værivassfossen",
+      "quote": "Der größte Wasserfall ist der Værivassfossen (auch Litlverivassfossen genannt), der vom Litlverivatnet 223 m tief in das Storskogdalen fällt.",
+      "english": "The largest waterfall is the Værivassfossen (also called Litlverivassfossen), which falls 223 meters deep from Litlverivatnet into the Storskogdalen."
+    },
+    {
+      "id": "s5",
+      "name": "Trollfossen",
+      "quote": "Bekannt ist auch der Trollfossen unterhalb des Storskogvatnet mit über 100 Metern Fallhöhe (er liegt trotz seines Namens nicht im Trolldalen).",
+      "english": "Also well-known is the Trollfossen below the Storskogvatnet with a drop of over 100 meters (despite its name, it is not located in the Trolldalen)."
+    },
+    {
+      "id": "s6",
+      "name": "Storskogdalen",
+      "quote": "Das Storskogdalen verläuft von Lakshol im Westen bis zum Storskogvatnet im Nordosten.",
+      "english": "The Storskogdalen runs from Lakshol in the west to Storskogvatnet in the northeast."
+    },
+    {
+      "id": "s7",
+      "name": "Storskogelva",
+      "quote": "Der Storskogelva (auch Nordfjordelva genannt) fließt durch Kiefernwälder und durch das Storskogdalen durch den Park.",
+      "english": "The Storskogelva (also called Nordfjordelva) flows through pine forests and through the Storskogdalen through the park."
+    },
+    {
+      "id": "s8",
+      "name": "Trolldalen",
+      "quote": "Das Trolldalen liegt etwas abgeschieden im Norden des Rago.",
+      "english": "The Trolldalen lies somewhat isolated in the north of the Rago."
+    },
+    {
+      "id": "s9",
+      "name": "Lappfjellet",
+      "quote": "Im Süden dominiert ein langer Bergrücken, mit dem Lappfjellet und dem Flatkjølen, welcher bis nach Schweden geht.",
+      "english": "In the south, a long mountain ridge dominates, featuring the Lappfjellet and the Flatkjølen, which extends to Sweden."
+    },
+    {
+      "id": "s10",
+      "name": "Flatkjølen",
+      "quote": "Im Süden dominiert ein langer Bergrücken, mit dem Lappfjellet und dem Flatkjølen, welcher bis nach Schweden geht.",
+      "english": "In the south, a long mountain ridge dominates, featuring the Lappfjellet and the Flatkjølen, which extends to Sweden."
+    }
+  ],
+  "days": [
+    {
+      "title": "Storskog Valley and Central Waterways",
+      "stop_ids": [
+        "s3",
+        "s6",
+        "s7",
+        "s5"
+      ]
+    },
+    {
+      "title": "High Plateaus and Waterfalls",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s1"
+      ]
+    },
+    {
+      "title": "Northern Valleys and Southern Ridges",
+      "stop_ids": [
+        "s8",
+        "s9",
+        "s10"
+      ]
+    }
+  ],
+  "_text_sha": "3824d265b8c81124e4ae22864fcca2d9e4b6e014cfa7457adf793c64662be93f"
+}

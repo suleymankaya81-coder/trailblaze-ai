@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Roltdalen-Tal",
+      "quote": "Die Topografie des Parks reicht von Mooren und Nadelwäldern im südwestlich verlaufenden Roltdalen-Tal bis hin zum 1.171 m hohen Skarvan im Norden.",
+      "english": "The topography of the park ranges from bogs and coniferous forests in the south-westerly Roltdalen Valley to the 1,171 m high Skarvan in the north."
+    },
+    {
+      "id": "s2",
+      "name": "Skarvan",
+      "quote": "Die Topografie des Parks reicht von Mooren und Nadelwäldern im südwestlich verlaufenden Roltdalen-Tal bis hin zum 1.171 m hohen Skarvan im Norden.",
+      "english": "The topography of the park ranges from bogs and coniferous forests in the south-westerly Roltdalen Valley to the 1,171 m high Skarvan in the north."
+    },
+    {
+      "id": "s3",
+      "name": "Fongen",
+      "quote": "Der höchste Berg des Nationalparks, mit 1.441 m der Fongen, gehört zur im Südosten gelegenen hochgebirgsartigen Bergkette.",
+      "english": "The highest mountain in the national park, the Fongen at 1,441 m, belongs to the high alpine mountain range located in the southeast."
+    },
+    {
+      "id": "s4",
+      "name": "Kvernfjellet",
+      "quote": "Das Kvernfjellet, eine etwa 1 km breite Felsader, verläuft von Brennrya im Norden entlang des Kvernfjellvatna-Sees über das Høgfjelletgebirge bis zum Rotla-Fluss bei Svartåsen im Süden.",
+      "english": "The Kvernfjellet, an approximately 1 km wide rock vein, runs from Brennrya in the north along the Kvernfjellvatna Lake over the Høgfjellet mountains to the Rotla River at Svartåsen in the south."
+    },
+    {
+      "id": "s5",
+      "name": "Kvernfjellvatna-Sees",
+      "quote": "Das Kvernfjellet, eine etwa 1 km breite Felsader, verläuft von Brennrya im Norden entlang des Kvernfjellvatna-Sees über das Høgfjelletgebirge bis zum Rotla-Fluss bei Svartåsen im Süden.",
+      "english": "The Kvernfjellet, an approximately 1 km wide rock vein, runs from Brennrya in the north along the Kvernfjellvatna Lake over the Høgfjellet mountains to the Rotla River at Svartåsen in the south."
+    },
+    {
+      "id": "s6",
+      "name": "Høgfjelletgebirge",
+      "quote": "Das Kvernfjellet, eine etwa 1 km breite Felsader, verläuft von Brennrya im Norden entlang des Kvernfjellvatna-Sees über das Høgfjelletgebirge bis zum Rotla-Fluss bei Svartåsen im Süden.",
+      "english": "The Kvernfjellet, an approximately 1 km wide rock vein, runs from Brennrya in the north along the Kvernfjellvatna Lake over the Høgfjellet mountains to the Rotla River at Svartåsen in the south."
+    },
+    {
+      "id": "s7",
+      "name": "Rotla-Fluss",
+      "quote": "Das Kvernfjellet, eine etwa 1 km breite Felsader, verläuft von Brennrya im Norden entlang des Kvernfjellvatna-Sees über das Høgfjelletgebirge bis zum Rotla-Fluss bei Svartåsen im Süden.",
+      "english": "The Kvernfjellet, an approximately 1 km wide rock vein, runs from Brennrya in the north along the Kvernfjellvatna Lake over the Høgfjellet mountains to the Rotla River at Svartåsen in the south."
+    },
+    {
+      "id": "s8",
+      "name": "Schultzhytta",
+      "quote": "Träger der bewirteten Schultzhytta Berghütte in der Mitte des Nationalparks ist ebenfalls der Norwegische Wanderverein.",
+      "english": "The Norwegian Hiking Association is also the operator of the managed Schultzhytta mountain hut in the center of the national park."
+    },
+    {
+      "id": "s9",
+      "name": "Litle Klepptjønna",
+      "quote": "Da die Berge auch mehr oder minder ertragreiche Kupfervorkommen aufwiesen, wurde mit Ausnahme von einigen Unterbrechungen von 1713 bis 1761 das Selbu Kobberverk und eine weitere Kupfermine bei Litle Klepptjønna (Meråker), aus der im 18. und 19. Jahrhundert eine Siedlung hervorging, betrieben.",
+      "english": "Since the mountains also had more or less productive copper deposits, the Selbu Kobberverk and another copper mine at Litle Klepptjønna (Meråker), from which a settlement emerged in the 18th and 19th centuries, were operated with a few interruptions from 1713 to 1761."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Peaks and the Millstone Ridge",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Central Valleys and Mining History",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s9"
+      ]
+    },
+    {
+      "title": "South Eastern High Mountains and Heart of the Park",
+      "stop_ids": [
+        "s3",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "ed3f848117d6887f413a2185b6b140466bada789798d6c5bacc3fe1e4fa02b69"
+}

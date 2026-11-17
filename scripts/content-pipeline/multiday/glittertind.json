@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Grjotbrean",
+      "quote": "Unmittelbar nördlich des Gipfels befindet sich unterhalb der Nordwand der große Gletscher Grjotbrean, der sich in zwei Arme aufteilt und bis auf eine Höhe von rund 1.800 Metern Seehöhe hinunter reicht.",
+      "english": "Immediately north of the peak, below the north face, lies the large Grjotbrean glacier, which divides into two arms and reaches down to an altitude of around 1,800 meters above sea level."
+    },
+    {
+      "id": "s2",
+      "name": "Gråsubrean",
+      "quote": "Nordöstlich schließt sich direkt an den Gipfelaufbau die Gletscherfläche des Gråsubrean an, direkt südöstlich des Gipfels zieht der Glitterbrean hinunter.",
+      "english": "To the northeast, the glacier surface of the Gråsubrean directly joins the peak structure, and to the direct southeast of the peak, the Glitterbrean stretches down."
+    },
+    {
+      "id": "s3",
+      "name": "Glitterbrean",
+      "quote": "Nordöstlich schließt sich direkt an den Gipfelaufbau die Gletscherfläche des Gråsubrean an, direkt südöstlich des Gipfels zieht der Glitterbrean hinunter.",
+      "english": "To the northeast, the glacier surface of the Gråsubrean directly joins the peak structure, and to the direct southeast of the peak, the Glitterbrean stretches down."
+    },
+    {
+      "id": "s4",
+      "name": "Oberer und Niederer Steinbuvatnet",
+      "quote": "Südlich befinden sich die Seen Oberer und Niederer Steinbuvatnet, die nur im Sommer eisfrei sind.",
+      "english": "To the south are the lakes Upper and Lower Steinbuvatnet, which are only ice-free in summer."
+    },
+    {
+      "id": "s5",
+      "name": "Glitterholet",
+      "quote": "Der Name des Glittertind stammt vermutlich vom nahe gelegenen Bach Glitra, der westlich des Berges durch das Hochtal Glitterholet fließt.",
+      "english": "The name of Glittertind probably comes from the nearby stream Glitra, which flows through the high valley Glitterholet to the west of the mountain."
+    },
+    {
+      "id": "s6",
+      "name": "Glitterheim",
+      "quote": "Der Berg kann von zwei Seiten bestiegen werden, wobei die DNT-Hütten Spiterstulen im Visdalen und Glitterheim im Veodalen als Stützpunkte dienen können.",
+      "english": "The mountain can be climbed from two sides, with the DNT huts Spiterstulen in Visdalen and Glitterheim in Veodalen serving as bases."
+    },
+    {
+      "id": "s7",
+      "name": "Spiterstulen",
+      "quote": "Der Berg kann von zwei Seiten bestiegen werden, wobei die DNT-Hütten Spiterstulen im Visdalen und Glitterheim im Veodalen als Stützpunkte dienen können.",
+      "english": "The mountain can be climbed from two sides, with the DNT huts Spiterstulen in Visdalen and Glitterheim in Veodalen serving as bases."
+    },
+    {
+      "id": "s8",
+      "name": "Skauthoe",
+      "quote": "Er führt zunächst steiler ansteigend den östlichen Hang des Visdalen hinauf auf eine Anhöhe und dann flacher um den Gipfel des Skauthoe herum in das weitläufige kupierte Gelände rund um den markanten Bach Skauta, der ohne Brücke auf im Bach liegenden Steinen überquert werden muss, was bei höherem Wasserstand schwierig werden kann (Schneeschmelze im Frühjahr, Starkregen).",
+      "english": "It first leads steeply up the eastern slope of the Visdalen to a rise and then flatter around the summit of Skauthoe into the extensive undulating terrain around the prominent Skauta stream, which must be crossed without a bridge on stones lying in the stream, which can be difficult if the water level is high (snowmelt in spring, heavy rain)."
+    },
+    {
+      "id": "s9",
+      "name": "Steindalens",
+      "quote": "Danach führt der markierte Pfad aufwärts durch den unteren Teil des Steindalens, wobei erneut ein Bach ohne Brücke überquert werden muss.",
+      "english": "After that, the marked path leads upwards through the lower part of the Steindalen, where another stream must be crossed without a bridge."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glaciers and Northern Heights",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Southern Lakes and Western Valleys",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Mountain Huts and Ascent Trails",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "329321394ac08a04f87533645872b3907a1af8033f3135c9ceecec41100c54c2"
+}

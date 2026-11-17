@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Jostedalsbreen",
+      "quote": "Im Nationalpark liegt der Jostedalsbreen, welcher der größte Gletscher des europäischen Festlandes ist.",
+      "english": "The Jostedalsbreen is located in the national park, which is the largest glacier on the European mainland."
+    },
+    {
+      "id": "s2",
+      "name": "Høgste Breakulen",
+      "quote": "Die höchsten Berge im Nationalpark sind der Høgste Breakulen (1.952 moh.) und der Lodalskåpa (2.083 moh.).",
+      "english": "The highest mountains in the national park are the Høgste Breakulen (1,952 m above sea level) and the Lodalskåpa (2,083 m above sea level)."
+    },
+    {
+      "id": "s3",
+      "name": "Lodalskåpa",
+      "quote": "Die höchsten Berge im Nationalpark sind der Høgste Breakulen (1.952 moh.) und der Lodalskåpa (2.083 moh.).",
+      "english": "The highest mountains in the national park are the Høgste Breakulen (1,952 m above sea level) and the Lodalskåpa (2,083 m above sea level)."
+    },
+    {
+      "id": "s4",
+      "name": "Flatbrehytta",
+      "quote": "Neben zahlreichen Wanderwegen im Nationalpark gibt es auch noch die Touristenhütten Flatbrehytta, Bødalssetra und Vetledalssetra.",
+      "english": "In addition to numerous hiking trails in the national park, there are also the tourist huts Flatbrehytta, Bødalssetra and Vetledalssetra."
+    },
+    {
+      "id": "s5",
+      "name": "Bødalssetra",
+      "quote": "Neben zahlreichen Wanderwegen im Nationalpark gibt es auch noch die Touristenhütten Flatbrehytta, Bødalssetra und Vetledalssetra.",
+      "english": "In addition to numerous hiking trails in the national park, there are also the tourist huts Flatbrehytta, Bødalssetra and Vetledalssetra."
+    },
+    {
+      "id": "s6",
+      "name": "Vetledalssetra",
+      "quote": "Neben zahlreichen Wanderwegen im Nationalpark gibt es auch noch die Touristenhütten Flatbrehytta, Bødalssetra und Vetledalssetra.",
+      "english": "In addition to numerous hiking trails in the national park, there are also the tourist huts Flatbrehytta, Bødalssetra and Vetledalssetra."
+    },
+    {
+      "id": "s7",
+      "name": "Breheimsenteret",
+      "quote": "Es gibt drei Museen im Nationalpark: das Breheimsenteret in Jostedalen bei Gaupne das Jostedalsbreen Nasjonalparksenter in Stryn und das Norsk Bremuseum in Fjærland.",
+      "english": "There are three museums in the national park: the Breheimsenteret in Jostedalen near Gaupne, the Jostedalsbreen Nasjonalparksenter in Stryn and the Norsk Bremuseum in Fjærland."
+    },
+    {
+      "id": "s8",
+      "name": "Jostedalsbreen Nasjonalparksenter",
+      "quote": "Es gibt drei Museen im Nationalpark: das Breheimsenteret in Jostedalen bei Gaupne das Jostedalsbreen Nasjonalparksenter in Stryn und das Norsk Bremuseum in Fjærland.",
+      "english": "There are three museums in the national park: the Breheimsenteret in Jostedalen near Gaupne, the Jostedalsbreen Nasjonalparksenter in Stryn and the Norsk Bremuseum in Fjærland."
+    },
+    {
+      "id": "s9",
+      "name": "Norsk Bremuseum",
+      "quote": "Es gibt drei Museen im Nationalpark: das Breheimsenteret in Jostedalen bei Gaupne das Jostedalsbreen Nasjonalparksenter in Stryn und das Norsk Bremuseum in Fjærland.",
+      "english": "There are three museums in the national park: the Breheimsenteret in Jostedalen near Gaupne, the Jostedalsbreen Nasjonalparksenter in Stryn and the Norsk Bremuseum in Fjærland."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glacier Peaks and Landscapes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Mountain Huts and Trails",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "National Park Museums",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "3b4d9cf17fa546f83bd3d447f49d8fc213a3d1a05a52d48db269b1f49701c999"
+}

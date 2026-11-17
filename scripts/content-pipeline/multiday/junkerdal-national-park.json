@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Skaitielva",
+      "quote": "Der Park liegt in einem bergigen Gebiet um den Skaitielva Fluss, nordöstlich des namensgebenden Junkerdalen Tal.",
+      "english": "The park is located in a mountainous area around the Skaitielva river, northeast of the eponymous Junkerdalen valley."
+    },
+    {
+      "id": "s2",
+      "name": "Balvatnet",
+      "quote": "Auf der Hochebene im Norden des Parks gibt es zahlreiche Seen, der größte davon ist der Balvatnet.",
+      "english": "On the plateau in the north of the park there are numerous lakes, the largest of which is Balvatnet."
+    },
+    {
+      "id": "s3",
+      "name": "zentrale Bergmassiv",
+      "quote": "In der Mitte des Parks liegt rund um den Balvatnet das zentrale Bergmassiv.",
+      "english": "In the middle of the park, surrounding Balvatnet, lies the central mountain massif."
+    },
+    {
+      "id": "s4",
+      "name": "Solvågtind",
+      "quote": "Einer der bekanntesten Berge im Park ist der Solvågtind.",
+      "english": "One of the most famous mountains in the park is the Solvågtind."
+    },
+    {
+      "id": "s5",
+      "name": "Sulitjelma",
+      "quote": "Der Nationalpark liegt zwischen dem Junkerdal Tal im Süden und dem Ort Sulitjelma im Norden.",
+      "english": "The national park lies between the Junkerdal valley in the south and the village of Sulitjelma in the north."
+    },
+    {
+      "id": "s6",
+      "name": "Almhütten der Samen",
+      "quote": "Des Weiteren existieren noch einige Almhütten der Samen im Nationalpark.",
+      "english": "Furthermore, several Sami alpine huts still exist in the national park."
+    },
+    {
+      "id": "s7",
+      "name": "Argaladhytta",
+      "quote": "Die bekannteste Hütte ist die Argaladhytta.",
+      "english": "The most well-known hut is the Argaladhytta."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Lakes and Highlands",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s5"
+      ]
+    },
+    {
+      "title": "Central Peaks and Rivers",
+      "stop_ids": [
+        "s1",
+        "s4"
+      ]
+    },
+    {
+      "title": "Heritage and Hiking Shelters",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "fbdb73c093851d92037cbdecdb48dc10d8a7968228078dfe7f9f9cd4de97f4d2"
+}

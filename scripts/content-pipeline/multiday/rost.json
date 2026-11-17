@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Røstlandet",
+      "quote": "Die größte Insel ist Røstlandet mit einer Fläche von etwa 3,6 km².",
+      "english": "The largest island is Røstlandet with an area of about 3.6 km²."
+    },
+    {
+      "id": "s2",
+      "name": "Vedøya",
+      "quote": "Inseln wie Vedøya, Storfjellet und Nykan sind als Vogelinseln bekannt und viele Gebiete stehen unter Naturschutz.",
+      "english": "Islands such as Vedøya, Storfjellet and Nykan are known as bird islands and many areas are under nature protection."
+    },
+    {
+      "id": "s3",
+      "name": "Storfjellet",
+      "quote": "Die Erhebung Storfjellet auf der gleichnamigen Insel stellt mit einer Höhe von 259,3 moh. den höchsten Punkt der Kommune Røst dar.",
+      "english": "The Storfjellet elevation on the island of the same name represents the highest point of the municipality of Røst at a height of 259.3 m above sea level."
+    },
+    {
+      "id": "s4",
+      "name": "Nykan",
+      "quote": "Inseln wie Vedøya, Storfjellet und Nykan sind als Vogelinseln bekannt und viele Gebiete stehen unter Naturschutz.",
+      "english": "Islands such as Vedøya, Storfjellet and Nykan are known as bird islands and many areas are under nature protection."
+    },
+    {
+      "id": "s5",
+      "name": "Sandøya",
+      "quote": "Auf der Insel Sandøya steht ein Denkmal für den venezianischen Kaufmann Pietro Querini, der im Januar 1432 nach einem Unglück mit einem Rettungsboot auf der Insel landete, da sein Schiff, die Querina gesunken war.",
+      "english": "On the island of Sandøya stands a monument to the Venetian merchant Pietro Querini, who landed on the island in January 1432 with a lifeboat after a disaster because his ship, the Querina, had sunk."
+    },
+    {
+      "id": "s6",
+      "name": "Røst kirke",
+      "quote": "Die Røst kirke ist eine Holzkirche aus dem Jahr 1900.",
+      "english": "The Røst church is a wooden church from the year 1900."
+    },
+    {
+      "id": "s7",
+      "name": "Sør-Tjyvsøya",
+      "quote": "An der Südküste der Insel Sør-Tjyvsøya legen Fähren in die Kommunen Værøy und Bodø ab.",
+      "english": "On the south coast of the island of Sør-Tjyvsøya, ferries depart for the municipalities of Værøy and Bodø."
+    }
+  ],
+  "days": [
+    {
+      "title": "Main Island and Culture",
+      "stop_ids": [
+        "s1",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Bird Islands and High Peaks",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Historical Monuments",
+      "stop_ids": [
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "d1be14df53c86ebdb1097f24d14dd89df5b11a8a794dbd16c7b15db811c398ff"
+}

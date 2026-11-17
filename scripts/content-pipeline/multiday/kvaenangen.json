@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Spildra",
+      "quote": "Die Insel Spildra liegt mitten im Fjord, wo dieser beginnt, sich ins Festland zu schneiden, aber Rødøya liegt weiter im Nordwesten.",
+      "english": "The island of Spildra lies in the middle of the fjord where it begins to cut into the mainland, while Rødøya lies further to the northwest."
+    },
+    {
+      "id": "s2",
+      "name": "Jøkelfjord",
+      "quote": "Am weitesten im Norden liegt der Olderfjord, dann folgt der Reinfjord, der Jøkelfjord, der von diesen Seitenfjorden am längsten ist und fast bis zum Gletscher Øksfjordjøkelen reicht, und zum Schluss der Lille Altafjord (deutsch Kleiner Altafjord) und der Burfjord.",
+      "english": "Furthest to the north is Olderfjord, followed by Reinfjord, then Jøkelfjord, which is the longest of these side fjords and reaches almost to the Øksfjordjøkelen glacier, and finally Lille Altafjord and Burfjord."
+    },
+    {
+      "id": "s3",
+      "name": "Valanhamn",
+      "quote": "Südlich von Spildra liegt die Insel Skorpa und auf der Westseite des Fjords zwischen diesen beiden Inseln liegt der straßenlose Weiler Valanhamn.",
+      "english": "South of Spildra lies the island of Skorpa, and on the west side of the fjord between these two islands lies the roadless hamlet of Valanhamn."
+    },
+    {
+      "id": "s4",
+      "name": "Badderfjord",
+      "quote": "Südöstlich von Skorpa liegt die Insel Nøklan und südlich von Nøklan zweigt der Badderfjord nach Osten ab.",
+      "english": "Southeast of Skorpa lies the island of Nøklan, and south of Nøklan, the Badderfjord branches off to the east."
+    },
+    {
+      "id": "s5",
+      "name": "Sørstraumen bru",
+      "quote": "Dort kreuzt die E6 den Fjord mit der 440 Meter langen Brücke Sørstraumen bru.",
+      "english": "There, the E6 crosses the fjord with the 440-meter-long bridge Sørstraumen bru."
+    },
+    {
+      "id": "s6",
+      "name": "Kjækan",
+      "quote": "Bei Sørstraumen liegt die Insel Årøyan in der Mitte des Fjords und der Weiler Kjækan liegt auf der Ostseite.",
+      "english": "At Sørstraumen, the island of Årøyan lies in the middle of the fjord, and the hamlet of Kjækan lies on the east side."
+    },
+    {
+      "id": "s7",
+      "name": "Sørfjord",
+      "quote": "Von hier führt der schmale Sund Lillestraumen bis zum innersten Teil des Fjords, der Sørfjord genannt wird.",
+      "english": "From here, the narrow strait Lillestraumen leads to the innermost part of the fjord, which is called Sørfjord."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Islands and Glacial Fjords",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Badderfjord and Central Settlements",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Southern Straits and the Fjord End",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "36a13c57ef77197410429da757bab1e92041597e8fda43d1b3467ea41b7dd383"
+}

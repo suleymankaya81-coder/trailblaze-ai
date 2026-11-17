@@ -1,0 +1,47 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Torghatten",
+      "quote": "Torghatten ist ein Berg in der Nähe von Brønnøysund in Norwegen mit einer besonderen geologischen Form.",
+      "english": "Torghatten is a mountain near Brønnøysund in Norway with a special geological shape."
+    },
+    {
+      "id": "s2",
+      "name": "Loch",
+      "quote": "In seiner Mitte hat er ein etwa 35 Meter hohes und rund 160 Meter langes Loch.",
+      "english": "In its center, it has a hole about 35 meters high and around 160 meters long."
+    },
+    {
+      "id": "s3",
+      "name": "Insel Torget",
+      "quote": "Der Torghatten liegt auf der Insel Torget, der größten Insel der Kommune Brønnøy.",
+      "english": "The Torghatten lies on the island of Torget, the largest island in the municipality of Brønnøy."
+    },
+    {
+      "id": "s4",
+      "name": "Wanderung",
+      "quote": "Von seinem Fuße kann man das Loch in einer zirka 20- bis 30-minütigen Wanderung erreichen und hat einen Ausblick auf die norwegische Schärenlandschaft.",
+      "english": "From its foot, the hole can be reached in a roughly 20 to 30-minute hike and offers a view of the Norwegian archipelago landscape."
+    },
+    {
+      "id": "s5",
+      "name": "Felsentor",
+      "quote": "Jonathan Christian Wilhelm Ritter (1775–1821), Geologe und Botaniker, schrieb 1806 über den Berg mit dem Felsentor: „Er hat seinen Namen, weil die Spitze einem Menschenkopf mit aufgesetztem Hute ähnlich ist.\"",
+      "english": "Jonathan Christian Wilhelm Ritter (1775–1821), geologist and botanist, wrote in 1806 about the mountain with the rock gate: 'It has its name because the peak resembles a human head with a hat on it.'"
+    }
+  ],
+  "days": [
+    {
+      "title": "Mountain peaks and natural passages",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "433c7134edcde743292a724eb0e5233a5ce0478ffea25022444a490d8887391c"
+}

@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kvitneset",
+      "quote": "Der Fjord mündet zwischen den Halbinseln Kvitneset in Hareidlandet und Eltraneset auf der Insel Sula.",
+      "english": "The fjord opens between the peninsulas of Kvitneset in Hareidlandet and Eltraneset on the island of Sula."
+    },
+    {
+      "id": "s2",
+      "name": "Sjøholt",
+      "quote": "Südlich der Insel Sula wendet sich der Storfjord landeinwärts, bis Sjøholt in östlicher, dann in südlicher Richtung.",
+      "english": "South of the island of Sula, the Storfjord turns inland, heading east until Sjøholt, then south."
+    },
+    {
+      "id": "s3",
+      "name": "Geiranger",
+      "quote": "An dessen Ende liegt der Ort Geiranger.",
+      "english": "At its end lies the village of Geiranger."
+    },
+    {
+      "id": "s4",
+      "name": "Hjørundfjord",
+      "quote": "Der größte Seitenast des Storfjords ist der Hjørundfjord.",
+      "english": "The largest side branch of the Storfjord is the Hjørundfjord."
+    },
+    {
+      "id": "s5",
+      "name": "Norangstfjord",
+      "quote": "Er erstreckt sich in südsüdöstlicher Richtung und verzweigt sich nach 22 km in den kleineren Ast Norangstfjord und den größeren Ast Storfjord, der zur Unterscheidung vom gleichnamigen Hauptfjord mit dem Gemeindenamen Ørsta Gekennzeichnet wird, obwohl der namengebende Kernort dieser Gemeinde an einem westlichen Seitenast des Vartdalsfjords (s. o.) liegt.",
+      "english": "It extends in a south-southeasterly direction and branches after 22 km into the smaller branch Norangstfjord and the larger branch Storfjord, which is identified by the municipality name Ørsta to distinguish it from the main fjord of the same name, even though the namesake central town of this municipality lies on a western side branch of the Vartdalsfjord."
+    },
+    {
+      "id": "s6",
+      "name": "Hellesylt",
+      "quote": "Letzterer erstreckt sich südwärts bis Hellesylt.",
+      "english": "The latter extends southwards as far as Hellesylt."
+    },
+    {
+      "id": "s7",
+      "name": "Adlerstraße",
+      "quote": "Entlang dem inneren Teil des Fjords, dem Sunnylvsfjorden und dem Geirangerfjord, gibt es keinerlei Straßen außer bei Hellesylt, wo der Fylkesvei 60 wieder für ein paar Kilometer dem Fjord folgt, und bei Geiranger, wo der Fv63 als Adlerstraße von Eidsdal über einen Pass kommt und dann zum Fjord abfällt und diesem bis Geiranger folgt.",
+      "english": "Along the inner part of the fjord, the Sunnylvsfjord and the Geirangerfjord, there are no roads at all except at Hellesylt, where Fylkesvei 60 follows the fjord again for a few kilometers, and at Geiranger, where Fv63 comes over a pass from Eidsdal as the Eagle Road and then drops down to the fjord and follows it to Geiranger."
+    }
+  ],
+  "days": [
+    {
+      "title": "Outer Fjord and Northern Shore",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Deep Inner Fjord Adventures",
+      "stop_ids": [
+        "s3",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Southern Side Branches",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "3af6a189ac0a3f4791feead03a90efeb5356203e0b234857b31149b78107f68a"
+}

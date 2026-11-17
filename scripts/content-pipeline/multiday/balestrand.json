@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Balehaugene",
+      "quote": "Das Motiv ist von der Statue des Königs Bele auf den Balehaugene inspiriert.",
+      "english": "The motif is inspired by the statue of King Bele on the Balehaugene."
+    },
+    {
+      "id": "s2",
+      "name": "Kviknes-Hotel",
+      "quote": "Das Kviknes-Hotel, im Schweizer Stil erbaut, gilt als Norwegens größtes Holzhaus.",
+      "english": "The Kviknes-Hotel, built in the Swiss style, is considered Norway's largest wooden house."
+    },
+    {
+      "id": "s3",
+      "name": "Sankt-Olav-Kirche",
+      "quote": "Ebenso sehenswert ist die Sankt-Olav-Kirche.",
+      "english": "The Saint Olaf Church is also worth seeing."
+    },
+    {
+      "id": "s4",
+      "name": "Künstlervillen",
+      "quote": "Heute finden in den restaurierten Künstlervillen Ausstellungen, Malkurse und andere künstlerische Veranstaltungen statt.",
+      "english": "Today, exhibitions, painting courses, and other artistic events take place in the restored artists' villas."
+    },
+    {
+      "id": "s5",
+      "name": "Esebotn",
+      "quote": "Esebotn",
+      "english": "Esebotn"
+    },
+    {
+      "id": "s6",
+      "name": "Tjugum / Dragsviki",
+      "quote": "Von Høyanger (in der Gemeinde Høyanger) kommend, führt die Straße durch den Høyangertunnel an den Lånefjord und weiter entlang des Ufers des Sognefjorden bis Tjugum/Dragsviki.",
+      "english": "Coming from Høyanger (in the municipality of Høyanger), the road leads through the Høyangertunnel to the Lånefjord and further along the shore of the Sognefjord to Tjugum/Dragsviki."
+    },
+    {
+      "id": "s7",
+      "name": "Vetlefjorddal",
+      "quote": "Der Riksvei 13 (Rv 13) führt von Tjugum / Dragsviki in Richtung Norden entlang des Fjærland-, Sværa- und Vetlefjords bis ins Vetlefjorddal.",
+      "english": "The Riksvei 13 (Rv 13) leads from Tjugum / Dragsviki northwards along the Fjærland, Sværa and Vetle fjords into the Vetlefjorddal."
+    },
+    {
+      "id": "s8",
+      "name": "Kvamsøy",
+      "quote": "Die kleine Insel Kvamsøy, die der Gemeinde Vik angehörte, wurde im Jahr 1964 der Gemeinde zugeschlagen.",
+      "english": "The small island of Kvamsøy, which belonged to the municipality of Vik, was added to the municipality in 1964."
+    }
+  ],
+  "days": [
+    {
+      "title": "Artistic Heritage and Architecture in Balestrand",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4",
+        "s1"
+      ]
+    },
+    {
+      "title": "Villages and Valleys of the Fjord Edge",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "c93085673e4f44ce6b6ad596cebdf389fe49db057c5f4aaa2b280175d16f6c66"
+}

@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lyngseidet",
+      "quote": "Größter Ort ist Lyngseidet auf dem Westufer mit ca. 800 Einwohnern.",
+      "english": "The largest town is Lyngseidet on the western shore with about 800 inhabitants."
+    },
+    {
+      "id": "s2",
+      "name": "Kåfjord",
+      "quote": "Sein größter Seitenarm ist der Kåfjord auf dem östlichen Ufer.",
+      "english": "Its largest branch is the Kåfjord on the eastern shore."
+    },
+    {
+      "id": "s3",
+      "name": "Uløya",
+      "quote": "Am Eingang des Lyngenfjords nahe seinem Ostufer liegt die Insel Uløya, die zur Gemeinde Skjervøy gehört.",
+      "english": "At the entrance of the Lyngenfjord near its eastern shore lies the island of Uløya, which belongs to the municipality of Skjervøy."
+    },
+    {
+      "id": "s4",
+      "name": "Havnnes",
+      "quote": "Auf ihr liegt der alte Fischer- und Handelsort Havnnes.",
+      "english": "Located on it is the old fishing and trading post of Havnnes."
+    },
+    {
+      "id": "s5",
+      "name": "Skibotnbukta",
+      "quote": "Skibotnbukta",
+      "english": "Skibotn Bay"
+    },
+    {
+      "id": "s6",
+      "name": "Storfjord",
+      "quote": "Storfjord",
+      "english": "Storfjord"
+    },
+    {
+      "id": "s7",
+      "name": "Olderdalen",
+      "quote": "Von dort ist der Flughafen Tromsø in etwa 2,5 Stunden mit dem Bus über Olderdalen und Lyngseidet erreichbar.",
+      "english": "From there, Tromsø Airport can be reached in about 2.5 hours by bus via Olderdalen and Lyngseidet."
+    }
+  ],
+  "days": [
+    {
+      "title": "Western Shore and Central Fjord",
+      "stop_ids": [
+        "s1",
+        "s7"
+      ]
+    },
+    {
+      "title": "Eastern Islands and Trading Posts",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Southern Inlets and Arms",
+      "stop_ids": [
+        "s2",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "3c6a82f3c912e354f94820b8bc8b1c682ebfe51887c57ec4659c4b6b47d8ea9f"
+}

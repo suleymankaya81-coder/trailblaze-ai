@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kiesstrände",
+      "quote": "Charakteristisch für diese Endmoränen sind die Kiesstrände, die vom Meer stark ausgewaschen sind.",
+      "english": "Characteristic of these terminal moraines are the pebble beaches, which are heavily washed out by the sea."
+    },
+    {
+      "id": "s2",
+      "name": "Sandstrände",
+      "quote": "An einigen geschützten Stellen finden sich jedoch auch feine Sandstrände, die zum Baden einladen.",
+      "english": "In some protected areas, however, there are also fine sandy beaches that invite you to swim."
+    },
+    {
+      "id": "s3",
+      "name": "Küstenheidegebiete",
+      "quote": "Küstenheidegebiete und Strandwiesen mit einer Vielzahl von Pflanzen, darunter seltene und geschützte Pflanzen, Pilze und Flechte haben dazu beigetragen, dass dieser Bereich einen Nationalparkstatus bekommen hat.",
+      "english": "Coastal heathlands and beach meadows with a variety of plants, including rare and protected plants, fungi and lichens, have contributed to this area being granted national park status."
+    },
+    {
+      "id": "s4",
+      "name": "Strandwiesen",
+      "quote": "Küstenheidegebiete und Strandwiesen mit einer Vielzahl von Pflanzen, darunter seltene und geschützte Pflanzen, Pilze und Flechte haben dazu beigetragen, dass dieser Bereich einen Nationalparkstatus bekommen hat.",
+      "english": "Coastal heathlands and beach meadows with a variety of plants, including rare and protected plants, fungi and lichens, have contributed to this area being granted national park status."
+    }
+  ],
+  "days": [
+    {
+      "title": "Beaches and Coastal Habitats",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "43efd550ba77ac7ecc8a87b46047377966e065c06a1e25550e3b97b991bfac48"
+}

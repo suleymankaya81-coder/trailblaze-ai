@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Okstindbreen",
+      "quote": "Das Gebirgsmassiv ist vom Gletscher Okstindbreen bedeckt.",
+      "english": "The mountain massif is covered by the glacier Okstindbreen."
+    },
+    {
+      "id": "s2",
+      "name": "Oksskolten",
+      "quote": "Der höchste Gipfel ist der Oksskolten (1916 moh.; Schartenhöhe ca. 1380 m), der auch der höchste Berg Nordnorwegens ist.",
+      "english": "The highest peak is Oksskolten (1916 m above sea level; prominence approx. 1380 m), which is also the highest mountain in Northern Norway."
+    },
+    {
+      "id": "s3",
+      "name": "Okshornet",
+      "quote": "Nach Süden hin folgen Okshornet (1901 moh.; Schartenhöhe gut 185 m), Svartfjell-Hauptgipfel (1872 moh.; Schartenhöhe ca. 155 m) und Svartfjell-Mittelgipfel (1749 moh.; Schartenhöhe knapp 150 m).",
+      "english": "To the south follow Okshornet (1901 m above sea level; prominence over 185 m), Svartfjell main peak (1872 m above sea level; prominence approx. 155 m) and Svartfjell middle peak (1749 m above sea level; prominence just under 150 m)."
+    },
+    {
+      "id": "s4",
+      "name": "Okstinden",
+      "quote": "Die Zentralkette des Okstindan-Massivs trägt von Norden nach Süden die Hauptgipfel Okskalvan-Nordgipfel (1580 moh.; Schartenhöhe ca. 115 m), Okskalvan-Südgipfel (1646 moh.; Schartenhöhe ca. 240 m), Okstinden (1805 moh.; Schartenhöhe ca. 250 m), Tvillingtindan (1824 moh.; Schartenhöhe ca. 340 m) und Bessedørtinden (1562 moh.; Schartenhöhe ca. 250 m).",
+      "english": "The central chain of the Okstindan massif bears from north to south the main peaks Okskalvan North Peak (1580 m), Okskalvan South Peak (1646 m), Okstinden (1805 m), Tvillingtindan (1824 m) and Bessedørtinden (1562 m)."
+    },
+    {
+      "id": "s5",
+      "name": "Vesttinden",
+      "quote": "Unmittelbar westlich des Tvillingtindan liegt der Vesttinden (1711 moh.; Schartenhöhe knapp 220 m), und weit nach Westen vorgeschoben der Gipfel Oksfjelltuva (1523 moh.; Schartenhöhe ca. 185 m).",
+      "english": "Immediately west of Tvillingtindan lies Vesttinden (1711 m above sea level; prominence just under 220 m), and far to the west pushed forward is the peak Oksfjelltuva (1523 m above sea level; prominence approx. 185 m)."
+    },
+    {
+      "id": "s6",
+      "name": "Store Bessedørdalen",
+      "quote": "Der Hauptgruppe des Okstindan-Massivs südlich vorgelagert und tief abgesetzt durch die Täler Store Bessedørdalen und Oksfjelldalen sind die Berge Litlokstinden (1514 moh.; Schartenhöhe ca. 535 m) und Sørtuva (1497 moh.; Schartenhöhe ca. 505 m).",
+      "english": "In front of the main group of the Okstindan massif to the south and set deep by the valleys Store Bessedørdalen and Oksfjelldalen are the mountains Litlokstinden (1514 m) and Sørtuva (1497 m)."
+    },
+    {
+      "id": "s7",
+      "name": "Røssvatnet",
+      "quote": "Südlich der Gebirgsgruppe liegt der See Røssvatnet.",
+      "english": "South of the mountain group lies the lake Røssvatnet."
+    },
+    {
+      "id": "s8",
+      "name": "Gresvatnet",
+      "quote": "Im Nordosten liegt der Stausee Gresvatnet, der über die Seen Kjennsvatnet und Stormålvatnet und den Fluss Bjerkaelva ebenfalls in den Sørfjord entwässert.",
+      "english": "In the northeast lies the reservoir Gresvatnet, which also drains into the Sørfjord via the lakes Kjennsvatnet and Stormålvatnet and the river Bjerkaelva."
+    },
+    {
+      "id": "s9",
+      "name": "Leirskardalen",
+      "quote": "Häufige Ausgangspunkte für Bergtouren sind das Tal Leirskardalen sowie der See Kjennsvatnet.",
+      "english": "Frequent starting points for mountain tours are the valley Leirskardalen and the lake Kjennsvatnet."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glaciers and Eastern Summits",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Central Peaks and Western Ridges",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s9"
+      ]
+    },
+    {
+      "title": "Southern Valleys and Border Lakes",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "8c62b9b9cbb2ad213d9852dcd4673524299c8b3e1b18afc1ca2ba5be2b0e0fe2"
+}

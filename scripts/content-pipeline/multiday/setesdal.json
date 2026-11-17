@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Valle",
+      "quote": "Heute umfasst der Distrikt Setesdal die vier Kommunen Valle, Bykle, Bygland und Evje og Hornnes, mit 6.530 Einwohnern (1. April 2009) und 4.595 km².",
+      "english": "Today, the district of Setesdal includes the four municipalities of Valle, Bykle, Bygland, and Evje og Hornnes, with 6,530 inhabitants (April 1, 2009) and 4,595 km²."
+    },
+    {
+      "id": "s2",
+      "name": "Bykle",
+      "quote": "Der Name Setesdal wurde ursprünglich nur für die beiden nördlichsten Kommunen der Provinz (Bykle und Valle) gebraucht.",
+      "english": "The name Setesdal was originally used only for the two northernmost municipalities of the province (Bykle and Valle)."
+    },
+    {
+      "id": "s3",
+      "name": "Byglandsfjord",
+      "quote": "Auf dem See Byglandsfjord verkehrt das historische Dampfschiff Bjoren.",
+      "english": "The historical steamboat Bjoren operates on the lake Byglandsfjord."
+    },
+    {
+      "id": "s4",
+      "name": "Evje",
+      "quote": "Das Zentrum der Region ist Evje.",
+      "english": "The center of the region is Evje."
+    },
+    {
+      "id": "s5",
+      "name": "Otra",
+      "quote": "Durch das Tal fließt von Nord nach Süd der Fluss Otra.",
+      "english": "The river Otra flows through the valley from north to south."
+    },
+    {
+      "id": "s6",
+      "name": "Setesdal-Bahn",
+      "quote": "Durch das Setesdal, entlang am Fluss Otra, führte die Strecke der inzwischen größtenteils stillgelegten oder umgespurten Setesdal-Bahn.",
+      "english": "The route of the Setesdal Railway, which has since been largely closed or regauged, ran through the Setesdal along the river Otra."
+    },
+    {
+      "id": "s7",
+      "name": "Grovane",
+      "quote": "Heute fährt eine Museumseisenbahn auf dem acht Kilometer langen Teilabschnitt zwischen den Stationen Grovane und Røyknes.",
+      "english": "Today, a museum railway runs on the eight-kilometer section between the stations of Grovane and Røyknes."
+    },
+    {
+      "id": "s8",
+      "name": "Røyknes",
+      "quote": "Heute fährt eine Museumseisenbahn auf dem acht Kilometer langen Teilabschnitt zwischen den Stationen Grovane und Røyknes.",
+      "english": "Today, a museum railway runs on the eight-kilometer section between the stations of Grovane and Røyknes."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Municipalities and the Otra River",
+      "stop_ids": [
+        "s2",
+        "s1",
+        "s5"
+      ]
+    },
+    {
+      "title": "Regional Center and Lake Byglandsfjord",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "The Historic Setesdal Railway",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "263590d41665805ad30daff65635b50fc6e96fbdb54ae747d91f1ba323dc6128"
+}

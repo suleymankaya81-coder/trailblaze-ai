@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Smøla vindpark",
+      "quote": "Mit dem Smøla vindpark liegt einer der größten Windparks Norwegens in der Kommune.",
+      "english": "With the Smøla windpark, one of Norway's largest wind farms is located in the municipality."
+    },
+    {
+      "id": "s2",
+      "name": "Skjølbergsvagen",
+      "quote": "Im Süden der Insel liegt der See Skjølbergsvagen.",
+      "english": "The lake Skjølbergsvagen is located in the south of the island."
+    },
+    {
+      "id": "s3",
+      "name": "Ramndalshaugen",
+      "quote": "Die Erhebung Ramndalshaugen auf der Insel Kuli stellt mit einer Höhe von 69,64 moh. den höchsten Punkt der Kommune Smøla dar.",
+      "english": "The Ramndalshaugen elevation on the island of Kuli represents the highest point of the Smøla municipality at a height of 69.64 meters above sea level."
+    },
+    {
+      "id": "s4",
+      "name": "Veiholmen",
+      "quote": "Im Norden der Kommune liegt das Fischerdorf Veiholmen auf mehrere Inseln verteilt.",
+      "english": "In the north of the municipality lies the fishing village of Veiholmen, spread over several islands."
+    },
+    {
+      "id": "s5",
+      "name": "Edøy kirke",
+      "quote": "Im Süden der Insel Smøla liegen die Holzkirche Edøy kirke.",
+      "english": "The wooden church Edøy kirke is located in the south of the island of Smøla."
+    },
+    {
+      "id": "s6",
+      "name": "Edøy gamle kirke",
+      "quote": "Die Edøy gamle kirke stammt aus dem Jahr 1190.",
+      "english": "The Edøy gamle kirke dates from the year 1190."
+    },
+    {
+      "id": "s7",
+      "name": "Hopen kirke",
+      "quote": "Weitere Kirchen sind die Hopen kirke, eine Holzkirche aus dem Jahr 1892, und die Brattvær kirke aus dem Jahr 1917.",
+      "english": "Other churches are the Hopen kirke, a wooden church from 1892, and the Brattvær kirke from 1917."
+    },
+    {
+      "id": "s8",
+      "name": "Haugjegla fyr",
+      "quote": "Auf den Inseln Smølas befinden sich die Leuchtfeuer Haugjegla fyr, Skalmen fyr und Tyrhaug fyr.",
+      "english": "The lighthouses Haugjegla fyr, Skalmen fyr and Tyrhaug fyr are located on the islands of Smøla."
+    }
+  ],
+  "days": [
+    {
+      "title": "Southern Heritage and Lakes",
+      "stop_ids": [
+        "s2",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Northern Fishing Village and Lighthouses",
+      "stop_ids": [
+        "s4",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "High Points and Modern Energy",
+      "stop_ids": [
+        "s1",
+        "s3"
+      ]
+    }
+  ],
+  "_text_sha": "f2382191b260070fdfe24e7e09603d9d16de7cf93480a55290e05fba2964cdb7"
+}

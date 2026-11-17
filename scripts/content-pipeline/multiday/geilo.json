@@ -1,0 +1,47 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hardangervidda",
+      "quote": "Er befindet sich in direkter Nachbarschaft des westlich gelegenen Nationalparks Hardangervidda.",
+      "english": "It is located in the direct vicinity of the Hardangervidda National Park to the west."
+    },
+    {
+      "id": "s2",
+      "name": "Bergenbahn",
+      "quote": "Geilo hat einen Bahnhof an der Bergenbahn.",
+      "english": "Geilo has a train station on the Bergen Line."
+    },
+    {
+      "id": "s3",
+      "name": "Loipennetz",
+      "quote": "Der Ort verfügt über ein 220 km langes Loipennetz sowie 20 Liftanlagen.",
+      "english": "The village has a 220 km long network of cross-country ski trails as well as 20 lift facilities."
+    },
+    {
+      "id": "s4",
+      "name": "Rallarweg",
+      "quote": "Der Rallarweg entlang der Hardangervidda wurde als Baustellenstraße für die Bergenbahn angelegt und wird nun als Radweg genutzt.",
+      "english": "The Rallarweg along the Hardangervidda was created as a construction road for the Bergen Line and is now used as a bicycle path."
+    },
+    {
+      "id": "s5",
+      "name": "Skigebiet",
+      "quote": "Das Skigebiet befindet sich in Höhen von 900 bis 1175 Metern (maximale Höhendifferenz: 275 Meter).",
+      "english": "The ski resort is located at altitudes of 900 to 1175 meters (maximum height difference: 275 meters)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Geilo Winter and Transport Infrastructure",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "14506893ac2f15372defae061bdcba8a2d3732bd457159026de66a612fc5bd2e"
+}

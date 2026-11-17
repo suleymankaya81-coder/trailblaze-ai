@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Stavsro",
+      "quote": "Der leichteste Aufstieg beginnt am Parkplatz Stavsro (1173 m) an der Straße zwischen Rjukan und Tuddal.",
+      "english": "The easiest ascent begins at the Stavsro parking lot (1173 m) on the road between Rjukan and Tuddal."
+    },
+    {
+      "id": "s2",
+      "name": "Selstali",
+      "quote": "Des Weiteren existiert ein Pfad von Selstali westlich des Gaustatoppen.",
+      "english": "Furthermore, a path exists from Selstali west of Gaustatoppen."
+    },
+    {
+      "id": "s3",
+      "name": "Felsgrat",
+      "quote": "Den Gipfel an sich erreicht man über einen schmalen Felsgrat.",
+      "english": "The summit itself is reached via a narrow rocky ridge."
+    },
+    {
+      "id": "s4",
+      "name": "Berghütte",
+      "quote": "Unterhalb des Funkturms, auf 1860 m, liegt eine Berghütte, die von Mittsommer bis Mitte September täglich von 10 bis 16:30 Uhr geöffnet ist.",
+      "english": "Below the radio tower, at 1860 m, lies a mountain hut which is open daily from 10 am to 4:30 pm from midsummer to mid-September."
+    },
+    {
+      "id": "s5",
+      "name": "Gaustabanen",
+      "quote": "Um den Gipfel ganzjährig erreichen zu können, wurde zwischen 1954 und 1959 von Rjukan aus eine Bergbahn („Gaustabanen“) in den Fels getrieben.",
+      "english": "In order to be able to reach the summit year-round, a mountain railway ('Gaustabanen') was driven into the rock from Rjukan between 1954 and 1959."
+    },
+    {
+      "id": "s6",
+      "name": "Transitstation",
+      "quote": "Nach einer Fahrtstrecke von 860 m befindet sich im Berginneren eine Transitstation, wo Passagiere umsteigen müssen.",
+      "english": "After a travel distance of 860 m, there is a transit station inside the mountain where passengers must change trains."
+    },
+    {
+      "id": "s7",
+      "name": "Bergstation",
+      "quote": "Die Bergstation befindet sich auf 1800 m und damit etwa 75 m unterhalb der Berghütte, am Ende eines Tunnels im Berg.",
+      "english": "The mountain station is located at 1800 m and thus about 75 m below the mountain hut, at the end of a tunnel in the mountain."
+    }
+  ],
+  "days": [
+    {
+      "title": "Gaustatoppen Ascent and Summit",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Gaustabanen Railway Experience",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "8e65209b0fd80ace4b7db39d3b7a73997513502e700ffe1df29c35e3ced0fc9d"
+}

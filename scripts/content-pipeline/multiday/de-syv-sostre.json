@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Botnkrona",
+      "quote": "Botnkrona (1072 m)",
+      "english": "Botnkrona (1072 m)"
+    },
+    {
+      "id": "s2",
+      "name": "Grytfoten",
+      "quote": "Grytfoten (1019 m)",
+      "english": "Grytfoten (1019 m)"
+    },
+    {
+      "id": "s3",
+      "name": "Skjæringen",
+      "quote": "Skjæringen (1037 m)",
+      "english": "Skjæringen (1037 m)"
+    },
+    {
+      "id": "s4",
+      "name": "Tvillingene",
+      "quote": "Tvillingene – dt.: Zwillinge (980 m und 945 m)",
+      "english": "Tvillingene – German: Twins (980 m and 945 m)"
+    },
+    {
+      "id": "s5",
+      "name": "Kvasstinden",
+      "quote": "Kvasstinden (1010 m)",
+      "english": "Kvasstinden (1010 m)"
+    },
+    {
+      "id": "s6",
+      "name": "Breitinden",
+      "quote": "Breitinden (910 m)",
+      "english": "Breitinden (910 m)"
+    },
+    {
+      "id": "s7",
+      "name": "Alsten",
+      "quote": "Die Sieben Schwestern erstrecken sich von Norden nach Süden auf der Insel Alsten südlich von Sandnessjøen.",
+      "english": "The Seven Sisters extend from north to south on the island of Alsten south of Sandnessjøen."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Peaks and Island Base",
+      "stop_ids": [
+        "s7",
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Central High Points",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Southern Summit Finale",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "978686d6c6c8e78414eeab1a7f8e2b19ce66341d1aded1423aa4104dcd4d8482"
+}

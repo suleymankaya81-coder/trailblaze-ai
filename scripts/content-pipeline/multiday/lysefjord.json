@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Preikestolen",
+      "quote": "Von der 604 Meter hohen Plattform hat man einen atemberaubenden Ausblick auf den Fjord.",
+      "english": "From the 604-meter-high platform, one has a breathtaking view of the fjord."
+    },
+    {
+      "id": "s2",
+      "name": "Lysefjord Center",
+      "quote": "Informationen zu den Themen Kultur, Geographie und Natur findet man im Lysefjord Center in Oanes am Beginn des Lysefjord in Ryfylke.",
+      "english": "Information on the topics of culture, geography, and nature can be found at the Lysefjord Center in Oanes at the beginning of the Lysefjord in Ryfylke."
+    },
+    {
+      "id": "s3",
+      "name": "Fantehola",
+      "quote": "In der Nähe liegt die Fantehola, eine Höhle mit einem Wasserfall.",
+      "english": "Nearby lies Fantehola, a cave with a waterfall."
+    },
+    {
+      "id": "s4",
+      "name": "Flørli",
+      "quote": "15 km vor Lysebotn liegt die Siedlung Flørli mit einem Elektrizitätswerk, das von 1917 bis 1921 erbaut wurde.",
+      "english": "15 km before Lysebotn lies the settlement of Flørli with a power station built from 1917 to 1921."
+    },
+    {
+      "id": "s5",
+      "name": "Kjerag",
+      "quote": "Etwa 5 Kilometer vor Ende des Lysefjords in Ryfylke steht die höchste Felswand, die Kjerag.",
+      "english": "About 5 kilometers before the end of the Lysefjord in Ryfylke stands the highest rock wall, the Kjerag."
+    },
+    {
+      "id": "s6",
+      "name": "Kjeragkeil",
+      "quote": "Hier ist auch der Kjeragkeil zu sehen, ein großer Stein, der zwischen zwei Felswänden eingeklemmt ist.",
+      "english": "The Kjeragkeil, a large stone wedged between two rock walls, can also be seen here."
+    },
+    {
+      "id": "s7",
+      "name": "Lysebotn",
+      "quote": "Am Ende des Lysefjords liegt die Siedlung Lysebotn.",
+      "english": "At the end of the Lysefjord lies the settlement of Lysebotn."
+    },
+    {
+      "id": "s8",
+      "name": "Øygardsstølen",
+      "quote": "Am Ende der Straße liegt die ehemalige Alm Øygardsstølen (auch Ørneredet – Adlernest – genannt) auf der sich heute ein Cafe mit einer schönen Aussicht auf den Lysefjord und die Straße nach Lysebotn befindet.",
+      "english": "At the end of the road lies the former mountain farm Øygardsstølen (also called Ørneredet – Eagle's Nest), where a cafe is located today with a beautiful view of the Lysefjord and the road to Lysebotn."
+    },
+    {
+      "id": "s9",
+      "name": "Landa",
+      "quote": "Die frühzeitliche Siedlung Landa (1000 v. Chr.) kann in Forsand besucht werden.",
+      "english": "The early settlement of Landa (1000 BC) can be visited in Forsand."
+    },
+    {
+      "id": "s10",
+      "name": "Eiane",
+      "quote": "In früheren Zeiten wurden von Eiane aus Granitblöcke exportiert.",
+      "english": "In former times, granite blocks were exported from Eiane."
+    }
+  ],
+  "days": [
+    {
+      "title": "Western Entry and Iconic Cliffs",
+      "stop_ids": [
+        "s2",
+        "s9",
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "title": "Industrial History and Fjord Side",
+      "stop_ids": [
+        "s4",
+        "s10"
+      ]
+    },
+    {
+      "title": "The High Peaks and Fjord's End",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "e9f9ea5d6157f4519b9957f394c8b46e68376f26fb63218260c466b78939bad1"
+}

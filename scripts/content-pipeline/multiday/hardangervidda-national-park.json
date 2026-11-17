@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hardangerjøkulen Gletscher",
+      "quote": "Der höchste Punkt im Park ist der Hardangerjøkulen Gletscher mit 1863 m.o.h.",
+      "english": "The highest point in the park is the Hardangerjøkulen glacier at 1863 m above sea level."
+    },
+    {
+      "id": "s2",
+      "name": "Hårteigen",
+      "quote": "Trotz der Größe von 3422 km² kann der 1690 Meter hohe Hårteigen von nahezu jedem Punkt im Park aus gesehen werden.",
+      "english": "Despite the size of 3422 km², the 1690 meter high Hårteigen can be seen from almost every point in the park."
+    },
+    {
+      "id": "s3",
+      "name": "Nordmannsslepa",
+      "quote": "Ein Beispiel hierfür ist der Nordmannsslepa, der Eidfjord und Veggli im Numedal-Tal mit Hol und Uvdal verband.",
+      "english": "An example of this is the Nordmannsslepa, which connected Eidfjord and Veggli in the Numedal valley with Hol and Uvdal."
+    },
+    {
+      "id": "s4",
+      "name": "Norsk Natursenter",
+      "quote": "Zum einen das Norsk Natursenter in Eidfjord und das Hardangervidda Nasjonalparksenter in Tinn, das im Sommer 2013 wiedereröffnet wurde.",
+      "english": "On one hand the Norsk Natursenter in Eidfjord and the Hardangervidda National Park Center in Tinn, which reopened in the summer of 2013."
+    },
+    {
+      "id": "s5",
+      "name": "Hardangervidda Nasjonalparksenter",
+      "quote": "Zum einen das Norsk Natursenter in Eidfjord und das Hardangervidda Nasjonalparksenter in Tinn, das im Sommer 2013 wiedereröffnet wurde.",
+      "english": "On one hand the Norsk Natursenter in Eidfjord and the Hardangervidda National Park Center in Tinn, which reopened in the summer of 2013."
+    },
+    {
+      "id": "s6",
+      "name": "Bergenbahn",
+      "quote": "Die Bergenbahn und die Reichsstraße 7 führen durch den Park.",
+      "english": "The Bergen Railway and National Road 7 run through the park."
+    },
+    {
+      "id": "s7",
+      "name": "Vøringsfoss",
+      "quote": "Sie fährt zwischen Juni und August zwischen Vøringsfoss und dem Måbø Gård Museum.",
+      "english": "It runs between June and August between Vøringsfoss and the Måbø Gård Museum."
+    },
+    {
+      "id": "s8",
+      "name": "Måbø Gård Museum",
+      "quote": "Sie fährt zwischen Juni und August zwischen Vøringsfoss und dem Måbø Gård Museum.",
+      "english": "It runs between June and August between Vøringsfoss and the Måbø Gård Museum."
+    }
+  ],
+  "days": [
+    {
+      "title": "Western Glaciers and Museums",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "High Plateau Trails and Centers",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "55149c93fbb770cff47837c75a9a2b75277117e0cf6a87a3a41c3bd306b18a6a"
+}

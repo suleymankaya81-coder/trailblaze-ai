@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Husøy",
+      "quote": "Die wenigen Fischerorte befinden sich in geschützten Buchten oder auf Schären (Husøy).",
+      "english": "The few fishing villages are located in sheltered bays or on skerries (Husøy)."
+    },
+    {
+      "id": "s2",
+      "name": "Fjordgård",
+      "quote": "Die Fischerorte an der Nordwestküste (Husøy, Fjordgård, Senjahopen, Skaland) sind teilweise erst seit Mitte der 1980er Jahre durch Tunnel an das Straßennetz angebunden.",
+      "english": "The fishing villages on the northwest coast (Husøy, Fjordgård, Senjahopen, Skaland) have partly only been connected to the road network via tunnels since the mid-1980s."
+    },
+    {
+      "id": "s3",
+      "name": "Senjahopen",
+      "quote": "Die Fischerorte an der Nordwestküste (Husøy, Fjordgård, Senjahopen, Skaland) sind teilweise erst seit Mitte der 1980er Jahre durch Tunnel an das Straßennetz angebunden.",
+      "english": "The fishing villages on the northwest coast (Husøy, Fjordgård, Senjahopen, Skaland) have partly only been connected to the road network via tunnels since the mid-1980s."
+    },
+    {
+      "id": "s4",
+      "name": "Skaland",
+      "quote": "Die Fischerorte an der Nordwestküste (Husøy, Fjordgård, Senjahopen, Skaland) sind teilweise erst seit Mitte der 1980er Jahre durch Tunnel an das Straßennetz angebunden.",
+      "english": "The fishing villages on the northwest coast (Husøy, Fjordgård, Senjahopen, Skaland) have partly only been connected to the road network via tunnels since the mid-1980s."
+    },
+    {
+      "id": "s5",
+      "name": "Gryllefjord",
+      "quote": "Autofähren gibt es von Andenes (Andøya/Vesterålen) nach Gryllefjord (nur im Sommer), von Brensholmen (Kvaløya) nach Botnhamn und von Harstad (Hinnøya/Vesterålen) nach Skrolsvik.",
+      "english": "Car ferries are available from Andenes (Andøya/Vesterålen) to Gryllefjord (summer only), from Brensholmen (Kvaløya) to Botnhamn and from Harstad (Hinnøya/Vesterålen) to Skrolsvik."
+    },
+    {
+      "id": "s6",
+      "name": "Botnhamn",
+      "quote": "Autofähren gibt es von Andenes (Andøya/Vesterålen) nach Gryllefjord (nur im Sommer), von Brensholmen (Kvaløya) nach Botnhamn und von Harstad (Hinnøya/Vesterålen) nach Skrolsvik.",
+      "english": "Car ferries are available from Andenes (Andøya/Vesterålen) to Gryllefjord (summer only), from Brensholmen (Kvaløya) to Botnhamn and from Harstad (Hinnøya/Vesterålen) to Skrolsvik."
+    },
+    {
+      "id": "s7",
+      "name": "Skrolsvik",
+      "quote": "Autofähren gibt es von Andenes (Andøya/Vesterålen) nach Gryllefjord (nur im Sommer), von Brensholmen (Kvaløya) nach Botnhamn und von Harstad (Hinnøya/Vesterålen) nach Skrolsvik.",
+      "english": "Car ferries are available from Andenes (Andøya/Vesterålen) to Gryllefjord (summer only), from Brensholmen (Kvaløya) to Botnhamn and from Harstad (Hinnøya/Vesterålen) to Skrolsvik."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northwest Coastal Fishing Villages",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Coastal Ferry Hubs",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "ab9350f4da342a841fabbf1f191e26e68eef4d4ff6e1c2d858542be7907eb7ad"
+}

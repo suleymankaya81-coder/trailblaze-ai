@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Fagernes",
+      "quote": "Die bedeutendste Stadt in dem Gebiet ist Fagernes, wo sich auch ein Flughafen befindet.",
+      "english": "The most significant town in the area is Fagernes, where an airport is also located."
+    },
+    {
+      "id": "s2",
+      "name": "Begna",
+      "quote": "Die bedeutendsten Flüsse sind die Begna und die Etna.",
+      "english": "The most significant rivers are the Begna and the Etna."
+    },
+    {
+      "id": "s3",
+      "name": "Etna",
+      "quote": "Die bedeutendsten Flüsse sind die Begna und die Etna.",
+      "english": "The most significant rivers are the Begna and the Etna."
+    },
+    {
+      "id": "s4",
+      "name": "Tyin",
+      "quote": "Bedeutende Seen sind der Tyin, Bygdin und Vinstre.",
+      "english": "Significant lakes are the Tyin, Bygdin and Vinstre."
+    },
+    {
+      "id": "s5",
+      "name": "Bygdin",
+      "quote": "Bedeutende Seen sind der Tyin, Bygdin und Vinstre.",
+      "english": "Significant lakes are the Tyin, Bygdin and Vinstre."
+    },
+    {
+      "id": "s6",
+      "name": "Vinstre",
+      "quote": "Bedeutende Seen sind der Tyin, Bygdin und Vinstre.",
+      "english": "Significant lakes are the Tyin, Bygdin and Vinstre."
+    },
+    {
+      "id": "s7",
+      "name": "Begnadalen",
+      "quote": "Die Wälder von Begnadalen und Vassfaret sowie die Berge von Jotunheimen ziehen durch Wanderwege aller Schwierigkeitsstufen die Reisenden an.",
+      "english": "The forests of Begnadalen and Vassfaret as well as the mountains of Jotunheimen attract travelers with hiking trails of all difficulty levels."
+    },
+    {
+      "id": "s8",
+      "name": "Vassfaret",
+      "quote": "Die Wälder von Begnadalen und Vassfaret sowie die Berge von Jotunheimen ziehen durch Wanderwege aller Schwierigkeitsstufen die Reisenden an.",
+      "english": "The forests of Begnadalen and Vassfaret as well as the mountains of Jotunheimen attract travelers with hiking trails of all difficulty levels."
+    },
+    {
+      "id": "s9",
+      "name": "Jotunheimen",
+      "quote": "Die Wälder von Begnadalen und Vassfaret sowie die Berge von Jotunheimen ziehen durch Wanderwege aller Schwierigkeitsstufen die Reisenden an.",
+      "english": "The forests of Begnadalen and Vassfaret as well as the mountains of Jotunheimen attract travelers with hiking trails of all difficulty levels."
+    }
+  ],
+  "days": [
+    {
+      "title": "Town and Waterways",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Highland Lakes",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Forest and Mountain Trails",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "150a57b04d78f798414ca4ae014169e45924730b21e6b37d3b1d91f589544235"
+}

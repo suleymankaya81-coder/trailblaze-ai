@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Øvre Årdal",
+      "quote": "Das enge Tal führt rund 20 Kilometer von der Ortschaft Øvre Årdal und dem See Årdalsvatnet aus in den Nordosten.",
+      "english": "The narrow valley leads about 20 kilometers from the village of Øvre Årdal and Lake Årdalsvatnet to the northeast."
+    },
+    {
+      "id": "s2",
+      "name": "Årdalsvatnet",
+      "quote": "Kurz darauf mündet die Utla in den See Årdalsvatnet.",
+      "english": "Shortly thereafter, the Utla flows into Lake Årdalsvatnet."
+    },
+    {
+      "id": "s3",
+      "name": "Hurrungane",
+      "quote": "Auf der Nord-West-Seite des Tals liegt die Gebirgsgruppe Hurrungane.",
+      "english": "On the north-west side of the valley lies the mountain group Hurrungane."
+    },
+    {
+      "id": "s4",
+      "name": "Vetle Utladalen",
+      "quote": "Der Fluss entsteht im Nordosten des Utladalens durch den Zusammenfluss der Vetlautla aus dem Tal Vetle Utladalen und der Storutla aus dem Storutladalen.",
+      "english": "The river originates in the northeast of Utladalen through the confluence of the Vetlautla from the valley Vetle Utladalen and the Storutla from Storutladalen."
+    },
+    {
+      "id": "s5",
+      "name": "Storutladalen",
+      "quote": "Der Fluss entsteht im Nordosten des Utladalens durch den Zusammenfluss der Vetlautla aus dem Tal Vetle Utladalen und der Storutla aus dem Storutladalen.",
+      "english": "The river originates in the northeast of Utladalen through the confluence of the Vetlautla from the valley Vetle Utladalen and the Storutla from Storutladalen."
+    },
+    {
+      "id": "s6",
+      "name": "Vettisfossen",
+      "quote": "Zu diesen zählt der Vettisfossen auf der Südostseite des Tals.",
+      "english": "These include the Vettisfossen on the southeast side of the valley."
+    },
+    {
+      "id": "s7",
+      "name": "Tyedalen",
+      "quote": "Zum geschützten Gebiet zählt auch das Seitental Tyedalen.",
+      "english": "The protected area also includes the side valley Tyedalen."
+    },
+    {
+      "id": "s8",
+      "name": "Tyin",
+      "quote": "Im Südosten reicht das Gebiet bis zum Ufer des Sees Tyin.",
+      "english": "In the southeast, the area reaches the shore of Lake Tyin."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lower Valley and Village Entrance",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Western Peaks and Cascades",
+      "stop_ids": [
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "Northeastern Headwaters and Side Valleys",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "34cfb9767e910ae73e68816db52b660c4fd51868c91a139ebf68f0145412a228"
+}

@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kvaløysletta",
+      "quote": "Ein Großteil der Inselbevölkerung lebt an der Ostseite in Kvaløysletta, dem Ortsteil von Tromsø, der gegenüber der Innenstadt liegt und starken Zuzug aus der Kernstadt verzeichnet.",
+      "english": "A large part of the island's population lives on the east side in Kvaløysletta, the district of Tromsø located opposite the city center which is recording a strong influx from the core city."
+    },
+    {
+      "id": "s2",
+      "name": "Ersfjordbotn",
+      "quote": "Zu diesen zählen Ersfjordbotn und Kaldfjord.",
+      "english": "These include Ersfjordbotn and Kaldfjord."
+    },
+    {
+      "id": "s3",
+      "name": "Kaldfjord",
+      "quote": "Zu diesen zählen Ersfjordbotn und Kaldfjord.",
+      "english": "These include Ersfjordbotn and Kaldfjord."
+    },
+    {
+      "id": "s4",
+      "name": "Skavberget",
+      "quote": "In der Nähe des Gutshofs Skavberget im Südosten der Insel am Rystraumen gibt es in den Fels gehauene Petroglyphen aus der Steinzeit.",
+      "english": "In the vicinity of the Skavberget estate in the southeast of the island at Rystraumen, there are petroglyphs carved into the rock from the Stone Age."
+    },
+    {
+      "id": "s5",
+      "name": "Kvitfjell og Raudfjell Vindkraftverk",
+      "quote": "Im Südwesten der Insel befindet sich das Kvitfjell og Raudfjell Vindkraftverk, einer der größten Windparks Norwegens.",
+      "english": "In the southwest of the island is the Kvitfjell og Raudfjell Vindkraftverk, one of Norway's largest wind farms."
+    },
+    {
+      "id": "s6",
+      "name": "Brensholmen",
+      "quote": "Es bestehen mehrere Fährverbindungen, z. B. von Brensholmen im Südwesten nach Botnhamn auf der Nachbarinsel Senja (seit Herbst 2021 ganzjährig) sowie von Bellvik am Kaldfjorden zu verschiedenen vorgelagerten Inseln (Vengsøya, Musvær, Risøya und Sandøya) und nach Laukvik, einem kleinen Dorf, das zwar ebenfalls auf Kvaløya liegt, aber keine feste Straßenanbindung hat.",
+      "english": "There are several ferry connections, e.g., from Brensholmen in the southwest to Botnhamn on the neighboring island of Senja (all year round since autumn 2021) as well as from Bellvik at Kaldfjorden to various offshore islands (Vengsøya, Musvær, Risøya and Sandøya) and to Laukvik, a small village that is also located on Kvaløya but has no fixed road connection."
+    },
+    {
+      "id": "s7",
+      "name": "Laukvik",
+      "quote": "Es bestehen mehrere Fährverbindungen, z. B. von Brensholmen im Südwesten nach Botnhamn auf der Nachbarinsel Senja (seit Herbst 2021 ganzjährig) sowie von Bellvik am Kaldfjorden zu verschiedenen vorgelagerten Inseln (Vengsøya, Musvær, Risøya und Sandøya) und nach Laukvik, einem kleinen Dorf, das zwar ebenfalls auf Kvaløya liegt, aber keine feste Straßenanbindung hat.",
+      "english": "There are several ferry connections, e.g., from Brensholmen in the southwest to Botnhamn on the neighboring island of Senja (all year round since autumn 2021) as well as from Bellvik at Kaldfjorden to various offshore islands (Vengsøya, Musvær, Risøya and Sandøya) and to Laukvik, a small village that is also located on Kvaløya but has no fixed road connection."
+    },
+    {
+      "id": "s8",
+      "name": "Larsenga",
+      "quote": "Der mautpflichtige Ryatunnel verbindet seit dem 29. September 2011 auf einer Länge von 2.675 m die Orte Larsenga und Balsnes.",
+      "english": "The toll-based Rya Tunnel has connected the towns of Larsenga and Balsnes over a length of 2,675 m since September 29, 2011."
+    }
+  ],
+  "days": [
+    {
+      "title": "East Coast and Fjords",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Southeast Landmarks",
+      "stop_ids": [
+        "s4",
+        "s8"
+      ]
+    },
+    {
+      "title": "Southwest Villages and Wind Farm",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "f8ea6693d405c06be4296d2a25e0b76528eb418584721fa3c7fd80940b248efa"
+}

@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lovatnet",
+      "quote": "Der Lovatnet (auch Loenvatnet und Lodalsvatnet) ist ein See in der Gemeinde Stryn in der Provinz Vestland in Norwegen.",
+      "english": "Lovatnet (also Loenvatnet and Lodalsvatnet) is a lake in the municipality of Stryn in the province of Vestland in Norway."
+    },
+    {
+      "id": "s2",
+      "name": "Loen",
+      "quote": "Der See befindet sich etwa zwei Kilometer südöstlich der Ortschaft Loen.",
+      "english": "The lake is located about two kilometers southeast of the village of Loen."
+    },
+    {
+      "id": "s3",
+      "name": "Jostedalsbreen",
+      "quote": "Der See wird von den Gletschern Jostedalsbreen und Tindefjellbreen gespeist.",
+      "english": "The lake is fed by the glaciers Jostedalsbreen and Tindefjellbreen."
+    },
+    {
+      "id": "s4",
+      "name": "Tindefjellbreen",
+      "quote": "Der See wird von den Gletschern Jostedalsbreen und Tindefjellbreen gespeist.",
+      "english": "The lake is fed by the glaciers Jostedalsbreen and Tindefjellbreen."
+    },
+    {
+      "id": "s5",
+      "name": "Loelva",
+      "quote": "Das Wasser des Sees fließt über den Fluss Loelva in den Nordfjord.",
+      "english": "The water of the lake flows via the river Loelva into the Nordfjord."
+    },
+    {
+      "id": "s6",
+      "name": "Ramnefjellet",
+      "quote": "Erdrutsche vom Berg Ramnefjellet in das südliche Ende des Sees verursachten 1905 und 1936 zwei große Tsunamis.",
+      "english": "Landslides from the mountain Ramnefjellet into the southern end of the lake caused two large tsunamis in 1905 and 1936."
+    },
+    {
+      "id": "s7",
+      "name": "Bødal",
+      "quote": "Die Wellen zerstörten die Dörfer Bødal und Nesdal nahe dem südlichen Ende des Sees, töteten 61 Menschen – die Hälfte ihrer Gesamtbevölkerung – und 261 Nutztiere und zerstörten 60 Häuser, alle örtlichen Bootshäuser und 70 bis 80 Boote wurden von der letzten Welle 300 Meter landeinwärts geworfen und zerstört.",
+      "english": "The waves destroyed the villages of Bødal and Nesdal near the southern end of the lake, killing 61 people – half of their total population – and 261 livestock, and destroyed 60 houses, all local boathouses, and 70 to 80 boats were thrown 300 meters inland by the last wave and destroyed."
+    },
+    {
+      "id": "s8",
+      "name": "Nesdal",
+      "quote": "Die Wellen zerstörten alle Bauernhöfe in Bødal und die meisten Bauernhöfe in Nesdal – spülten 16 Bauernhöfe vollständig weg – sowie 100 Häuser, Brücken, ein Kraftwerk, eine Werkstatt, ein Sägewerk, mehrere Getreidemühlen, ein Restaurant, ein Schulhaus und alle Boote auf dem See.",
+      "english": "The waves destroyed all farms in Bødal and most farms in Nesdal – washing away 16 farms completely – as well as 100 houses, bridges, a power station, a workshop, a sawmill, several grain mills, a restaurant, a schoolhouse and all boats on the lake."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Lake and Glaciers",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Southern Settlements and Peaks",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "a25546c7b8f564fce89f983466dd541d9c16ebf2d214e3273d5f1a692d0c4387"
+}

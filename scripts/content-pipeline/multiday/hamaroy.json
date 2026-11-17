@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Oppeid",
+      "quote": "Ihr Verwaltungszentrum heißt Oppeid.",
+      "english": "Its administrative center is called Oppeid."
+    },
+    {
+      "id": "s2",
+      "name": "Hamsund",
+      "quote": "Im Ortsteil Hamsund befindet sich der gleichnamige Hof, den die Eltern von Knut Hamsun seit 1862 bewohnten und auf dem der Dichter, der seinen Nachnamen nach dem Hof wählte, prägende Kindheitseindrücke erhielt.",
+      "english": "In the district of Hamsund is the farm of the same name, where Knut Hamsun's parents lived since 1862 and where the poet, who chose his surname after the farm, received formative childhood impressions."
+    },
+    {
+      "id": "s3",
+      "name": "Skogheim",
+      "quote": "Im Ortsteil Oppeid liegt der Hof Skogheim, den Hamsun von 1911 bis 1917 bewohnte.",
+      "english": "In the district of Oppeid lies the Skogheim farm, where Hamsun lived from 1911 to 1917."
+    },
+    {
+      "id": "s4",
+      "name": "Hamsun-Zentrum",
+      "quote": "Das Hamsun-Zentrum ist ein Literaturhaus und Dokumentationszentrum über den Schriftsteller Knut Hamsun.",
+      "english": "The Hamsun Center is a literature house and documentation center about the writer Knut Hamsun."
+    },
+    {
+      "id": "s5",
+      "name": "Presteidstraumen",
+      "quote": "Es liegt am Presteidstraumen, durch den im Wechsel der Gezeiten Meerwasser in die Bucht Glimma ein- und ausströmt.",
+      "english": "It is located at Presteidstraumen, through which seawater flows in and out of the Glimma bay with the changing tides."
+    },
+    {
+      "id": "s6",
+      "name": "Glimma",
+      "quote": "Es liegt am Presteidstraumen, durch den im Wechsel der Gezeiten Meerwasser in die Bucht Glimma ein- und ausströmt.",
+      "english": "It is located at Presteidstraumen, through which seawater flows in and out of the Glimma bay with the changing tides."
+    },
+    {
+      "id": "s7",
+      "name": "Musken",
+      "quote": "Rachel Nergård, Pädagogin und Sprachaktivistin, wuchs in der Ortschaft Musken auf",
+      "english": "Rachel Nergård, an educator and language activist, grew up in the village of Musken"
+    }
+  ],
+  "days": [
+    {
+      "title": "Hamsun's Heritage in Oppeid and Hamsund",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Coastal Architecture and Rural Hamarøy",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "377d0bdb973021b353b280fad3becbf1ad424b7e5a16a155ef4096aa5ded5dd5"
+}

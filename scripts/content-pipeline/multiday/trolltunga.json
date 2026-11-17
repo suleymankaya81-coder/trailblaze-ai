@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Trolltunga",
+      "quote": "Trolltunga (deutsch „Die Trollzunge“) ist ein horizontaler Felsvorsprung in Norwegen, der rund zehn Kilometer nordöstlich von Odda liegt.",
+      "english": "Trolltunga (German \"The Troll's Tongue\") is a horizontal rock ledge in Norway, located about ten kilometers northeast of Odda."
+    },
+    {
+      "id": "s2",
+      "name": "Ringedalsvatnet",
+      "quote": "Der Felsvorsprung befindet sich rund 700 Meter über dem künstlich angelegten Stausee Ringedalsvatnet.",
+      "english": "The rock ledge is located about 700 meters above the man-made reservoir Ringedalsvatnet."
+    },
+    {
+      "id": "s3",
+      "name": "Skjeggedal",
+      "quote": "Der Rundweg vom Dorf Skjeggedal aus weist 27 km Länge und 1200 Höhenmeter auf.",
+      "english": "The circular route starting from the village of Skjeggedal is 27 km long and has 1200 meters of elevation gain."
+    },
+    {
+      "id": "s4",
+      "name": "Mågelitopp",
+      "quote": "Von 1911 bis 2004 konnten die ersten 430 Höhenmeter von Skjeggedal bis zum darüberliegenden Hochebene Mågelitopp mittels der Mågelibane, einer Standseilbahn, gefahren werden, was den Zustieg um etwa zwei Stunden verkürzte.",
+      "english": "From 1911 to 2004, the first 430 meters of altitude from Skjeggedal to the plateau of Mågelitopp above could be traveled via the Mågelibane, a funicular, which shortened the approach by about two hours."
+    },
+    {
+      "id": "s5",
+      "name": "Mågelibane",
+      "quote": "Die Bahn wurde 2012 abgerissen, um eine Serpentinenstraße und einen Parkplatz am Mågelitopp zu errichten.",
+      "english": "The railway was demolished in 2012 to build a serpentine road and a parking lot at Mågelitopp."
+    },
+    {
+      "id": "s6",
+      "name": "Schutzhütten",
+      "quote": "So wurden zwei Schutzhütten, ein Hubschrauberlandeplatz und Auffüllmöglichkeiten für Wasserflaschen geschaffen.",
+      "english": "Thus, two mountain shelters, a helipad, and water bottle refill stations were created."
+    },
+    {
+      "id": "s7",
+      "name": "Klettersteig",
+      "quote": "Alternativ kann die Trolltunga über einen Klettersteig von 250 hm erreicht werden.",
+      "english": "Alternatively, Trolltunga can be reached via a via ferrata with 250 meters of elevation gain."
+    }
+  ],
+  "days": [
+    {
+      "title": "Skjeggedal Valley to Mågelitopp Plateau",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Climbing and Hiking Infrastructure",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Trolltunga Ledge and Ringedalsvatnet Views",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "_text_sha": "f01df8eae475c1c47cee4c8ee6a9bfc7c4177dd0ad3befc62441599c858bfe1f"
+}

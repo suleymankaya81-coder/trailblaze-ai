@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Geiranger",
+      "quote": "Am Ende des Geirangerfjords, etwa 100 km von der Küstenlinie entfernt, liegt der Ort Geiranger.",
+      "english": "At the end of the Geirangerfjord, about 100 km from the coastline, lies the village of Geiranger."
+    },
+    {
+      "id": "s2",
+      "name": "Skageflå",
+      "quote": "Der Hof Skageflå liegt auf der Südseite des Geirangerfjords in ca. 250 m ü. NN.",
+      "english": "The Skageflå farm is located on the south side of the Geirangerfjord at approximately 250 m above sea level."
+    },
+    {
+      "id": "s3",
+      "name": "Homlong",
+      "quote": "Man hat auf den Wiesen Heu getrocknet, welches mit Drahtseilwinden zum Fjord herabgelassen und von dort per Boot nach Homlong am Geirangerfjord gebracht wurde.",
+      "english": "Hay was dried on the meadows, which was lowered to the fjord by wire rope winches and from there brought by boat to Homlong on the Geirangerfjord."
+    },
+    {
+      "id": "s4",
+      "name": "Blomberg",
+      "quote": "Der Hof Blomberg liegt auf der Südseite des Geirangerfjords in ca. 452 m ü. NN.",
+      "english": "The Blomberg farm is located on the south side of the Geirangerfjord at approximately 452 m above sea level."
+    },
+    {
+      "id": "s5",
+      "name": "Knivsflå",
+      "quote": "Der Hof Knivsflå liegt auf der Nordseite des Geirangerfjords in ca. 250 m ü. NN beim Wasserfall „Die sieben Schwestern“.",
+      "english": "The Knivsflå farm is located on the north side of the Geirangerfjord at approximately 250 m above sea level near the \"Seven Sisters\" waterfall."
+    },
+    {
+      "id": "s6",
+      "name": "Die sieben Schwestern",
+      "quote": "Sehenswert sind die Wasserfälle „Die sieben Schwestern“ (norweg.: De syv søstre) oder die Wasserfälle Freier, Brautschleier, Ljosurfossen, Bringefossen, Gjerdefossen oder Grinddalsfossen.",
+      "english": "Worth seeing are the waterfalls \"The Seven Sisters\" (Norwegian: De syv søstre) or the waterfalls Freier, Brautschleier, Ljosurfossen, Bringefossen, Gjerdefossen or Grinddalsfossen."
+    },
+    {
+      "id": "s7",
+      "name": "Adlerstraße",
+      "quote": "Eine weitere Sehenswürdigkeit ist auch die Fahrt auf der „Adlerstraße“ (norw.: Ørneveien) mit ihren elf Haarnadelkurven und der schönen Aussicht auf den Geirangerfjord.",
+      "english": "Another sight is the drive on the \"Eagle Road\" (Norw.: Ørneveien) with its eleven hairpin bends and the beautiful view of the Geirangerfjord."
+    }
+  ],
+  "days": [
+    {
+      "title": "Villages and Southern Slopes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "High Farms and Waterfalls",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Panoramic Roads",
+      "stop_ids": [
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "eb9f6feb05fa880f48c6662c274247ccf6e44eeb7cb4070d71ec62066f5760ee"
+}

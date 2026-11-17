@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Saltfjord",
+      "quote": "Durch einen 2,5 Kilometer langen und etwa 150 Meter breiten Sund strömen im Wechsel der Gezeiten fast 400 Millionen Kubikmeter Wasser zwischen dem Saltfjord am Meer und dem Skjerstadfjord im Inland (auch „Innerer Saltfjord“) hin und her.",
+      "english": "Through a 2.5 kilometer long and about 150 meter wide sound, almost 400 million cubic meters of water flow back and forth between the Saltfjord at the sea and the Skjerstadfjord inland (also called \"Inner Saltfjord\") as the tides change."
+    },
+    {
+      "id": "s2",
+      "name": "Skjerstadfjord",
+      "quote": "Durch Tidal Choking fällt der Tidenhub im Skjerstadfjord im Vergleich zum Saltfjord geringer aus und ist zeitlich um 1 Stunde und 41 Minuten versetzt, somit auch der Zeitpunkt der Tidenumkehr.",
+      "english": "Due to tidal choking, the tidal range in the Skjerstadfjord is lower compared to the Saltfjord and is delayed by 1 hour and 41 minutes, as is the time of the tide reversal."
+    },
+    {
+      "id": "s3",
+      "name": "Brücke",
+      "quote": "Auf einer Brücke führt die Küstenstraße Fv17 über den Strom und bietet eindrucksvolle Aussichten.",
+      "english": "The coastal road Fv17 leads over the current on a bridge and offers impressive views."
+    },
+    {
+      "id": "s4",
+      "name": "Ufer des Saltstraumen",
+      "quote": "Die Ufer des Saltstraumen bieten begehrte Angelplätze, da das nährstoffreiche Wasser Fische anzieht.",
+      "english": "The banks of the Saltstraumen offer popular fishing spots, as the nutrient-rich water attracts fish."
+    },
+    {
+      "id": "s5",
+      "name": "Saltstraumen Museum",
+      "quote": "In der Sommersaison informiert das Saltstraumen Museum, Ripnesveien, mittwochs und am Wochenende über Lokal- und Naturgeschichte.",
+      "english": "In the summer season, the Saltstraumen Museum, Ripnesveien, provides information on local and natural history on Wednesdays and weekends."
+    },
+    {
+      "id": "s6",
+      "name": "Kongebautaen",
+      "quote": "Zehn Minuten Fußmarsch entfernt erinnert nordwestlich das Denkmal Kongebautaen an die Besuche dreier Majestäten.",
+      "english": "A ten-minute walk away to the northwest, the Kongebautaen monument commemorates the visits of three majesties."
+    },
+    {
+      "id": "s7",
+      "name": "Godøystraumen",
+      "quote": "Noch kleiner ist der Wasserstrom durch den Godøystraumen zwischen Knaplundsøya und dem Festland.",
+      "english": "The water flow through the Godøystraumen between Knaplundsøya and the mainland is even smaller."
+    }
+  ],
+  "days": [
+    {
+      "title": "Fjords and Small Currents",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Bridges and Riverbanks",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "History and Monuments",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "2ae568facf0a96a03133c4f4d4a7058e03d602f8966e4f50e560c481cf986457"
+}

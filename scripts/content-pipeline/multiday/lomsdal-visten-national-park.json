@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Vistfjellan Gebirge",
+      "quote": "Der Park erstreckt sich vom Meer und den Fjorden im Westen, über unterschiedliche Landschaften bis zum Visfjellan Gebirge im Westen, welches Teil des Skandinavischen Gebirges ist.",
+      "english": "The park extends from the sea and the fjords in the west, across various landscapes to the Vistfjellan mountains in the west, which is part of the Scandinavian Mountains."
+    },
+    {
+      "id": "s2",
+      "name": "Eiterådalen Tal",
+      "quote": "Im Süden befindet sich das Eiterådalen Tal und das Svenningsdalen Tal mit dem Fluss Svenningdalselva, zudem grenzt der Nationalpark dort auch fast an das Dorf Tosbotn am Tosen Fjord.",
+      "english": "In the south lies the Eiterådalen valley and the Svenningsdalen valley with the river Svenningdalselva; additionally, the national park there almost borders the village of Tosbotn on the Tosen Fjord."
+    },
+    {
+      "id": "s3",
+      "name": "Svenningsdalen Tal",
+      "quote": "Im Süden befindet sich das Eiterådalen Tal und das Svenningsdalen Tal mit dem Fluss Svenningdalselva, zudem grenzt der Nationalpark dort auch fast an das Dorf Tosbotn am Tosen Fjord.",
+      "english": "In the south lies the Eiterådalen valley and the Svenningsdalen valley with the river Svenningdalselva; additionally, the national park there almost borders the village of Tosbotn on the Tosen Fjord."
+    },
+    {
+      "id": "s4",
+      "name": "Svenningdalselva",
+      "quote": "Im Süden befindet sich das Eiterådalen Tal und das Svenningsdalen Tal mit dem Fluss Svenningdalselva, zudem grenzt der Nationalpark dort auch fast an das Dorf Tosbotn am Tosen Fjord.",
+      "english": "In the south lies the Eiterådalen valley and the Svenningsdalen valley with the river Svenningdalselva; additionally, the national park there almost borders the village of Tosbotn on the Tosen Fjord."
+    },
+    {
+      "id": "s5",
+      "name": "Vistkjerringa",
+      "quote": "Der Berg Vistkjerringa ist mit 1.239 moh. der höchste im Nationalpark.",
+      "english": "The mountain Vistkjerringa is at 1,239 m above sea level the highest in the national park."
+    },
+    {
+      "id": "s6",
+      "name": "Skjørlægda",
+      "quote": "Das Naturschutzgebiet Skjørlægda in Vefsn, und die Naturreservate Laksmarkdalen in Vevelstad und Strompdalen in Brønnøy gingen in den Nationalpark auf.",
+      "english": "The Skjørlægda nature conservation area in Vefsn, and the Laksmarkdalen nature reserves in Vevelstad and Strompdalen in Brønnøy were merged into the national park."
+    },
+    {
+      "id": "s7",
+      "name": "Laksmarkdalen",
+      "quote": "Das Naturschutzgebiet Skjørlægda in Vefsn, und die Naturreservate Laksmarkdalen in Vevelstad und Strompdalen in Brønnøy gingen in den Nationalpark auf.",
+      "english": "The Skjørlægda nature conservation area in Vefsn, and the Laksmarkdalen nature reserves in Vevelstad and Strompdalen in Brønnøy were merged into the national park."
+    },
+    {
+      "id": "s8",
+      "name": "Strompdalen",
+      "quote": "Das Naturschutzgebiet Skjørlægda in Vefsn, und die Naturreservate Laksmarkdalen in Vevelstad und Strompdalen in Brønnøy gingen in den Nationalpark auf.",
+      "english": "The Skjørlægda nature conservation area in Vefsn, and the Laksmarkdalen nature reserves in Vevelstad and Strompdalen in Brønnøy were merged into the national park."
+    }
+  ],
+  "days": [
+    {
+      "title": "Western Peaks and Central Valleys",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Southern Valleys and Rivers",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Merged Nature Reserves",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "cf456106e6e2c469aed287ec918d50872d36773ed65bbc8528e2eb780ef6f59e"
+}

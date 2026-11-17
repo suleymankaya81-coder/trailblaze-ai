@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Høgeloft",
+      "quote": "Die Erhebung Høgeloft auf der Grenze zu Lærdal stellt mit einer Höhe von 1921,21 moh. den höchsten Punkt der Kommune Hemsedal dar.",
+      "english": "The Høgeloft elevation on the border with Lærdal represents the highest point of the municipality of Hemsedal at a height of 1921.21 meters above sea level."
+    },
+    {
+      "id": "s2",
+      "name": "Helsingvatnet",
+      "quote": "In der Kommune liegen mehrere Seen, im Osten unter anderem das Helsingvatnet, das Storevatnet und ein Teil des Tisleifjorden.",
+      "english": "Several lakes are located in the municipality, including Helsingvatnet, Storevatnet, and part of Tisleifjorden in the east."
+    },
+    {
+      "id": "s3",
+      "name": "Hydnefossen",
+      "quote": "Etwas südlich des Flusses Hemsil befindet sich der Wasserfall Hydnefossen.",
+      "english": "Somewhat south of the Hemsil river is the Hydnefossen waterfall."
+    },
+    {
+      "id": "s4",
+      "name": "Hemsedal kyrkje",
+      "quote": "Die Hemsedal kyrkje ist eine Holzkirche aus dem Jahr 1882 im Zentrum der Ortschaft Hemsedal.",
+      "english": "The Hemsedal kyrkje is a wooden church from 1882 in the center of the village of Hemsedal."
+    },
+    {
+      "id": "s5",
+      "name": "Lykkja kapell",
+      "quote": "In der Kommune befindet sich zudem die Lykkja kapell, eine hölzerne Kapelle aus dem Jahr 1961.",
+      "english": "The Lykkja kapell, a wooden chapel from 1961, is also located in the municipality."
+    },
+    {
+      "id": "s6",
+      "name": "Mørkedalen",
+      "quote": "Die Straße setzt schließlich durch das Tal Mørkedalen weiter nach Lærdal fort.",
+      "english": "The road finally continues through the Mørkedalen valley towards Lærdal."
+    },
+    {
+      "id": "s7",
+      "name": "Hemsedal Skisenter",
+      "quote": "Die Alpinskianlage Hemsedal Skisenter zählt zu den größten Norwegens.",
+      "english": "The alpine ski resort Hemsedal Skisenter is one of the largest in Norway."
+    }
+  ],
+  "days": [
+    {
+      "title": "Hemsedal Center and Eastern Waters",
+      "stop_ids": [
+        "s4",
+        "s2",
+        "s5"
+      ]
+    },
+    {
+      "title": "Peaks, Valleys and Waterfalls",
+      "stop_ids": [
+        "s1",
+        "s6",
+        "s3",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "6745aa98c44ac2a51071a43234fc64aa6362737d411bc7cbf806ae84830c28dc"
+}

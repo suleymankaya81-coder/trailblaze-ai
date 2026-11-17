@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hillesøya",
+      "quote": "Der westliche Teil des Fischerdorfs liegt auf der Insel Hillesøya, der östliche auf Sommarøya.",
+      "english": "The western part of the fishing village is located on the island of Hillesøya, while the eastern part is on Sommarøya."
+    },
+    {
+      "id": "s2",
+      "name": "Sommarøya",
+      "quote": "Deren Kirche, die Sommarøy kirke, befindet sich auf Sommarøya.",
+      "english": "Their church, the Sommarøy Church, is located on Sommarøya."
+    },
+    {
+      "id": "s3",
+      "name": "Sommarøy kirke",
+      "quote": "Im Jahr 1892 wurde in Sommarøy eine eigene baptistische Gemeinde gegründet.",
+      "english": "In 1892, a separate Baptist congregation was founded in Sommarøy."
+    },
+    {
+      "id": "s4",
+      "name": "Fylkesvei 7766",
+      "quote": "Sommarøy ist über den Fylkesvei 7766 mit der weiter östlich gelegenen Kvaløya verbunden.",
+      "english": "Sommarøy is connected to Kvaløya, located further east, via the Fylkesvei 7766."
+    }
+  ],
+  "days": [
+    {
+      "title": "Islands and Landmarks of Sommarøy",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "a69934c69a31255dbd9e57171e3200e39778597af867562d82d49e712604a383"
+}

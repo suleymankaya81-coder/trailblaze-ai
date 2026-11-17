@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Borg",
+      "quote": "Eine Nachbildung ist in Borg wieder aufgebaut worden.",
+      "english": "A replica has been rebuilt in Borg."
+    },
+    {
+      "id": "s2",
+      "name": "Svolvær",
+      "quote": "Die größte Stadt und somit der wichtigste Ort in Lofoten ist Svolvær auf Austvågøya.",
+      "english": "The largest city and thus the most important place in Lofoten is Svolvær on Austvågøya."
+    },
+    {
+      "id": "s3",
+      "name": "Kabelvåg",
+      "quote": "Lofoten besitzt zwei Städte und mehrere kleinere Tettsteder: Kabelvåg (1920).",
+      "english": "Lofoten has two cities and several smaller urban areas: Kabelvåg (1920)."
+    },
+    {
+      "id": "s4",
+      "name": "Henningsvær",
+      "quote": "Ein britisches Kommandounternehmen besetzte die Ortschaften Henningsvær, Brettesnes, Stamsund und Svolvær für 6 Stunden und zerstörte die kriegswichtige Glycerinindustrie als Teil der Fischverarbeitung.",
+      "english": "A British commando unit occupied the villages of Henningsvær, Brettesnes, Stamsund, and Svolvær for 6 hours and destroyed the war-critical glycerin industry as part of fish processing."
+    },
+    {
+      "id": "s5",
+      "name": "Polarlichtzentrum in Laukvik",
+      "quote": "Informationen zu den genannten Nordlichtern finden sich im Polarlichtzentrum in Laukvik.",
+      "english": "Information about the mentioned Northern Lights can be found at the Polar Light Center in Laukvik."
+    },
+    {
+      "id": "s6",
+      "name": "Lofotodden-Nationalpark",
+      "quote": "Seit 2018 gehören die Westküste der südlichsten Insel Moskenesøy und vorgelagerte Inseln als Lofotodden-Nationalpark zu den Nationalparks in Norwegen.",
+      "english": "Since 2018, the west coast of the southernmost island Moskenesøy and offshore islands have belonged to the National Parks in Norway as Lofotodden National Park."
+    },
+    {
+      "id": "s7",
+      "name": "Mahlstrom oder Moskenstraumen",
+      "quote": "Am bekanntesten ist der so genannte Mahlstrom oder Moskenstraumen.",
+      "english": "The most famous is the so-called Maelstrom or Moskenstraumen."
+    },
+    {
+      "id": "s8",
+      "name": "Å i Lofoten",
+      "quote": "Die Europastraße 10 beginnt in Å i Lofoten und führt nach 170 km nach Fiskebøl.",
+      "english": "European route E10 begins in Å i Lofoten and leads after 170 km to Fiskebøl."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern History and Lights",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s5"
+      ]
+    },
+    {
+      "title": "Southern Parks and Natural Wonders",
+      "stop_ids": [
+        "s4",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "c64a7f345f82fed52bb1cb1e770db5375660ef50801131ab58f065cc573aa06a"
+}

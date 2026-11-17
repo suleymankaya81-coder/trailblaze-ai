@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Grøvelsjøen",
+      "quote": "Das Naturreservat Grøvelsjøen befindet sich innerhalb des Parks.",
+      "english": "The Grøvelsjøen nature reserve is located within the park."
+    },
+    {
+      "id": "s2",
+      "name": "Røa",
+      "quote": "Der Fluss Røa durchquert den Park von Osten nach Westen.",
+      "english": "The river Røa crosses the park from east to west."
+    },
+    {
+      "id": "s3",
+      "name": "Storvigelen",
+      "quote": "Der größte Berg im Park ist der Storvigelen mit 1.561 moh, welcher im Nordteil liegt.",
+      "english": "The largest mountain in the park is Storvigelen at 1,561 m above sea level, which is located in the northern part."
+    },
+    {
+      "id": "s4",
+      "name": "Elgåhogna",
+      "quote": "Die höchsten Berge im Süden sind Elgåhogna (1.460 moh), Store Svuku (1.415 moh) und Grøthogna (1.401 moh).",
+      "english": "The highest mountains in the south are Elgåhogna (1,460 m), Store Svuku (1,415 m) and Grøthogna (1,401 m)."
+    },
+    {
+      "id": "s5",
+      "name": "Store Svuku",
+      "quote": "Die höchsten Berge im Süden sind Elgåhogna (1.460 moh), Store Svuku (1.415 moh) und Grøthogna (1.401 moh).",
+      "english": "The highest mountains in the south are Elgåhogna (1,460 m), Store Svuku (1,415 m) and Grøthogna (1,401 m)."
+    },
+    {
+      "id": "s6",
+      "name": "Grøthogna",
+      "quote": "Die höchsten Berge im Süden sind Elgåhogna (1.460 moh), Store Svuku (1.415 moh) und Grøthogna (1.401 moh).",
+      "english": "The highest mountains in the south are Elgåhogna (1,460 m), Store Svuku (1,415 m) and Grøthogna (1,401 m)."
+    },
+    {
+      "id": "s7",
+      "name": "Muggsjølia",
+      "quote": "Im gesamten Nationalpark gibt es zahlreiche markierte Wanderwege und auch zwei Übernachtungshütten, die Muggsjølia und die Røvollen.",
+      "english": "Throughout the national park there are numerous marked hiking trails and also two overnight huts, the Muggsjølia and the Røvollen."
+    },
+    {
+      "id": "s8",
+      "name": "Røvollen",
+      "quote": "Im gesamten Nationalpark gibt es zahlreiche markierte Wanderwege und auch zwei Übernachtungshütten, die Muggsjølia und die Røvollen.",
+      "english": "Throughout the national park there are numerous marked hiking trails and also two overnight huts, the Muggsjølia and the Røvollen."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Summits and Huts",
+      "stop_ids": [
+        "s3",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Central River and Nature Reserve",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Southern Peaks",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "9a5343fe212237e3c796b1dc265f240bf52c5b5735a7029fbe0d12218745c059"
+}

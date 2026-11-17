@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Gulsvik",
+      "quote": "Es verläuft von Gulsvik am Nordende des Krøderen in nordwestlicher Richtung, bis in Gol das Hemsedal abzweigt.",
+      "english": "It runs from Gulsvik at the northern end of the Krøderen in a northwesterly direction until the Hemsedal branches off in Gol."
+    },
+    {
+      "id": "s2",
+      "name": "Krøderen",
+      "quote": "Es verläuft von Gulsvik am Nordende des Krøderen in nordwestlicher Richtung, bis in Gol das Hemsedal abzweigt.",
+      "english": "It runs from Gulsvik at the northern end of the Krøderen in a northwesterly direction until the Hemsedal branches off in Gol."
+    },
+    {
+      "id": "s3",
+      "name": "Hemsedal",
+      "quote": "Die höchste Erhebung ist der Folarskardnuten im Hallingskarvet mit einer Höhe von 1933 m, gefolgt vom Høgeloft im Hemsedal mit rund 1920 m.",
+      "english": "The highest elevation is the Folarskardnuten in Hallingskarvet with a height of 1933 m, followed by the Høgeloft in Hemsedal at around 1920 m."
+    },
+    {
+      "id": "s4",
+      "name": "Geilo",
+      "quote": "Das Haupttal läuft in südwestlicher Richtung weiter Richtung Geilo und Ustaoset.",
+      "english": "The main valley continues in a southwesterly direction towards Geilo and Ustaoset."
+    },
+    {
+      "id": "s5",
+      "name": "Ustaoset",
+      "quote": "Das Haupttal läuft in südwestlicher Richtung weiter Richtung Geilo und Ustaoset.",
+      "english": "The main valley continues in a southwesterly direction towards Geilo and Ustaoset."
+    },
+    {
+      "id": "s6",
+      "name": "Folarskardnuten",
+      "quote": "Die höchste Erhebung ist der Folarskardnuten im Hallingskarvet mit einer Höhe von 1933 m, gefolgt vom Høgeloft im Hemsedal mit rund 1920 m.",
+      "english": "The highest elevation is the Folarskardnuten in Hallingskarvet with a height of 1933 m, followed by the Høgeloft in Hemsedal at around 1920 m."
+    },
+    {
+      "id": "s7",
+      "name": "Hallingskarvet",
+      "quote": "Die höchste Erhebung ist der Folarskardnuten im Hallingskarvet mit einer Höhe von 1933 m, gefolgt vom Høgeloft im Hemsedal mit rund 1920 m.",
+      "english": "The highest elevation is the Folarskardnuten in Hallingskarvet with a height of 1933 m, followed by the Høgeloft in Hemsedal at around 1920 m."
+    },
+    {
+      "id": "s8",
+      "name": "Hallingdal Museum",
+      "quote": "Nesbyen ist der Sitz des Hallingdal Museums, das auch die Dorfmuseen in Ål, Gol und Hol sowie das Dagali Museum und das Freilichtmuseum Hemsedal bygdetun betreut und verwaltet.",
+      "english": "Nesbyen is the seat of the Hallingdal Museum, which also oversees and manages the village museums in Ål, Gol and Hol as well as the Dagali Museum and the Hemsedal bygdetun open-air museum."
+    },
+    {
+      "id": "s9",
+      "name": "Dagali Museum",
+      "quote": "Nesbyen ist der Sitz des Hallingdal Museums, das auch die Dorfmuseen in Ål, Gol und Hol sowie das Dagali Museum und das Freilichtmuseum Hemsedal bygdetun betreut und verwaltet.",
+      "english": "Nesbyen is the seat of the Hallingdal Museum, which also oversees and manages the village museums in Ål, Gol and Hol as well as the Dagali Museum and the Hemsedal bygdetun open-air museum."
+    },
+    {
+      "id": "s10",
+      "name": "Hemsedal bygdetun",
+      "quote": "Nesbyen ist der Sitz des Hallingdal Museums, das auch die Dorfmuseen in Ål, Gol und Hol sowie das Dagali Museum und das Freilichtmuseum Hemsedal bygdetun betreut und verwaltet.",
+      "english": "Nesbyen is the seat of the Hallingdal Museum, which also oversees and manages the village museums in Ål, Gol and Hol as well as the Dagali Museum and the Hemsedal bygdetun open-air museum."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lower Valley and Cultural Heritage",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s8",
+        "s9"
+      ]
+    },
+    {
+      "title": "High Peaks and Mountain Culture",
+      "stop_ids": [
+        "s3",
+        "s6",
+        "s10"
+      ]
+    },
+    {
+      "title": "Upper Valley Landscapes",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "fdcd91f3896b9eb365fb1ed3f92889cc71de806250d09881e9ef40a20791275b"
+}

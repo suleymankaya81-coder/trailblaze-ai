@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Runde",
+      "quote": "Die rund 100 Einwohner der Insel verteilen sich auf die Ortschaften Runde und Goksøyr.",
+      "english": "The island's approximately 100 inhabitants are distributed between the villages of Runde and Goksøyr."
+    },
+    {
+      "id": "s2",
+      "name": "Goksøyr",
+      "quote": "Neben einem Campingplatz in Goksøyr bieten zahlreiche Privatzimmer und Ferienwohnungen dem Besucher Unterkunft.",
+      "english": "In addition to a campsite in Goksøyr, numerous private rooms and holiday apartments offer accommodation to the visitor."
+    },
+    {
+      "id": "s3",
+      "name": "Rundabranden",
+      "quote": "Jedoch ist der 294 moh. hohe „Rundabranden“ im Westen der Insel laut dem „Store Norske Leksikon“ Norwegens südlichster großer Vogelfelsen.",
+      "english": "However, the 294 m high \"Rundabranden\" in the west of the island is Norway's southernmost large bird cliff according to the \"Store Norske Leksikon\"."
+    },
+    {
+      "id": "s4",
+      "name": "Runde Miljøsenter",
+      "quote": "Seit April 2011 wird ein Teil des Schatzes im Runde Miljøsenter ausgestellt.",
+      "english": "Since April 2011, a part of the treasure has been exhibited in the Runde Miljøsenter."
+    },
+    {
+      "id": "s5",
+      "name": "Runde fyr",
+      "quote": "Im Nordwesten der Insel befindet sich der Leuchtturm Runde fyr, der über einen Wanderweg von Goksøyr aus erreicht werden kann.",
+      "english": "In the northwest of the island is the lighthouse Runde fyr, which can be reached via a hiking trail from Goksøyr."
+    },
+    {
+      "id": "s6",
+      "name": "Hafen in Runde",
+      "quote": "Vom Hafen in Runde aus werden im Sommer Bootsfahrten zu den Vogelfelsen angeboten.",
+      "english": "In summer, boat trips to the bird cliffs are offered from the harbor in Runde."
+    },
+    {
+      "id": "s7",
+      "name": "Rundebrua",
+      "quote": "Die Insel ist durch eine Brücke (Rundebrua) mit der Nachbarinsel Remøya verbunden und daher sehr gut zugänglich.",
+      "english": "The island is connected to the neighboring island of Remøya by a bridge (Rundebrua) and is therefore very easily accessible."
+    }
+  ],
+  "days": [
+    {
+      "title": "Villages and Local Landmarks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Coastal Exploration and Science",
+      "stop_ids": [
+        "s4",
+        "s6"
+      ]
+    },
+    {
+      "title": "Natural Heights and Lighthouses",
+      "stop_ids": [
+        "s3",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "20a1a25c61e645289e4a2070003d8f44af61616b0bec5b2e02139c3c6c4b616e"
+}

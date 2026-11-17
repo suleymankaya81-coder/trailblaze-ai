@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Solfjellsjøen",
+      "quote": "Verwaltungssitz ist die Ortschaft Solfjellsjøen.",
+      "english": "The administrative center is the village of Solfjellsjøen."
+    },
+    {
+      "id": "s2",
+      "name": "Dønna",
+      "quote": "Die größten Inseln sind dabei Dønna (135 km²), Løkta (17,4 km²), Vandve (5,8 km²) und Slapøya.",
+      "english": "The largest islands are Dønna (135 km²), Løkta (17,4 km²), Vandve (5,8 km²), and Slapøya."
+    },
+    {
+      "id": "s3",
+      "name": "Løkta",
+      "quote": "Die größten Inseln sind dabei Dønna (135 km²), Løkta (17,4 km²), Vandve (5,8 km²) und Slapøya.",
+      "english": "The largest islands are Dønna (135 km²), Løkta (17,4 km²), Vandve (5,8 km²), and Slapøya."
+    },
+    {
+      "id": "s4",
+      "name": "Vandve",
+      "quote": "Die größten Inseln sind dabei Dønna (135 km²), Løkta (17,4 km²), Vandve (5,8 km²) und Slapøya.",
+      "english": "The largest islands are Dønna (135 km²), Løkta (17,4 km²), Vandve (5,8 km²), and Slapøya."
+    },
+    {
+      "id": "s5",
+      "name": "Slapøya",
+      "quote": "Die größten Inseln sind dabei Dønna (135 km²), Løkta (17,4 km²), Vandve (5,8 km²) und Slapøya.",
+      "english": "The largest islands are Dønna (135 km²), Løkta (17,4 km²), Vandve (5,8 km²), and Slapøya."
+    },
+    {
+      "id": "s6",
+      "name": "Dønnamannen",
+      "quote": "Die höchste Erhebung ist der Dønnamannen mit einer Höhe von 856 moh. im Südwesten dieser Insel.",
+      "english": "The highest elevation is the Dønnamannen with a height of 856 m above sea level in the southwest of this island."
+    },
+    {
+      "id": "s7",
+      "name": "Dønnes kirke",
+      "quote": "Im Norden der Insel Dønna liegt die Dønnes kirke, eine Steinkirche aus dem Jahr 1200.",
+      "english": "In the north of the island of Dønna lies the Dønnes kirke, a stone church from the year 1200."
+    }
+  ],
+  "days": [
+    {
+      "title": "Main Island and Peaks",
+      "stop_ids": [
+        "s2",
+        "s1",
+        "s6"
+      ]
+    },
+    {
+      "title": "Northern History and Island Hopping",
+      "stop_ids": [
+        "s7",
+        "s3"
+      ]
+    },
+    {
+      "title": "Outlying Island Exploration",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "e4b5499f0cc0d23e021bc2e2711907f0e2bc956dbe4522d62d91db4e08e576c7"
+}

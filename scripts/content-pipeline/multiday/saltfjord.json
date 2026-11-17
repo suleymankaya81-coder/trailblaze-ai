@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Skjerstadfjord",
+      "quote": "Inklusive des inneren Teils, dem Seitenarm Skjerstadfjord, von dem der Saltdalsfjord und der Misværfjord abzweigen, ist das gesamte Fjordsystem ca. 80 Kilometer lang.",
+      "english": "Including the inner part, the side arm Skjerstadfjord, from which the Saltdalsfjord and the Misværfjord branch off, the entire fjord system is approx. 80 kilometers long."
+    },
+    {
+      "id": "s2",
+      "name": "Saltdalsfjord",
+      "quote": "Inklusive des inneren Teils, dem Seitenarm Skjerstadfjord, von dem der Saltdalsfjord und der Misværfjord abzweigen, ist das gesamte Fjordsystem ca. 80 Kilometer lang.",
+      "english": "Including the inner part, the side arm Skjerstadfjord, from which the Saltdalsfjord and the Misværfjord branch off, the entire fjord system is approx. 80 kilometers long."
+    },
+    {
+      "id": "s3",
+      "name": "Misværfjord",
+      "quote": "Inklusive des inneren Teils, dem Seitenarm Skjerstadfjord, von dem der Saltdalsfjord und der Misværfjord abzweigen, ist das gesamte Fjordsystem ca. 80 Kilometer lang.",
+      "english": "Including the inner part, the side arm Skjerstadfjord, from which the Saltdalsfjord and the Misværfjord branch off, the entire fjord system is approx. 80 kilometers long."
+    },
+    {
+      "id": "s4",
+      "name": "Saltstraumen",
+      "quote": "Über die drei Meerengen Saltstraumen, Godøystraumen und Sundstraumen ist der äußere Teil des Fjords mit seinem inneren Teil verbunden.",
+      "english": "The outer part of the fjord is connected to its inner part via the three straits Saltstraumen, Godøystraumen and Sundstraumen."
+    },
+    {
+      "id": "s5",
+      "name": "Godøystraumen",
+      "quote": "Über die drei Meerengen Saltstraumen, Godøystraumen und Sundstraumen ist der äußere Teil des Fjords mit seinem inneren Teil verbunden.",
+      "english": "The outer part of the fjord is connected to its inner part via the three straits Saltstraumen, Godøystraumen and Sundstraumen."
+    },
+    {
+      "id": "s6",
+      "name": "Sundstraumen",
+      "quote": "Über die drei Meerengen Saltstraumen, Godøystraumen und Sundstraumen ist der äußere Teil des Fjords mit seinem inneren Teil verbunden.",
+      "english": "The outer part of the fjord is connected to its inner part via the three straits Saltstraumen, Godøystraumen and Sundstraumen."
+    },
+    {
+      "id": "s7",
+      "name": "Knaplundsøya",
+      "quote": "Zwischen dieser Verbindung liegen die zwei Inseln Knaplundsøya (Godøya) und Straumøya.",
+      "english": "Between this connection lie the two islands Knaplundsøya (Godøya) and Straumøya."
+    },
+    {
+      "id": "s8",
+      "name": "Straumøya",
+      "quote": "Zwischen dieser Verbindung liegen die zwei Inseln Knaplundsøya (Godøya) und Straumøya.",
+      "english": "Between this connection lie the two islands Knaplundsøya (Godøya) and Straumøya."
+    },
+    {
+      "id": "s9",
+      "name": "Sandhornøya",
+      "quote": "Neben diesen zwei Inseln gibt es an der Öffnung des Fjords im südlichen Bereich die Insel Sandhornøya und eine Anzahl kleinerer Inseln vor Sandhornøya als auch vor der Halbinsel Bodø.",
+      "english": "In addition to these two islands, there is the island of Sandhornøya at the mouth of the fjord in the southern area and a number of smaller islands in front of Sandhornøya as well as in front of the Bodø peninsula."
+    },
+    {
+      "id": "s10",
+      "name": "Tennholmen fyr",
+      "quote": "Im äußeren Bereich des Fjords liegt der Leuchtturm Tennholmen fyr.",
+      "english": "The Tennholmen fyr lighthouse is located in the outer area of the fjord."
+    }
+  ],
+  "days": [
+    {
+      "title": "Inner Fjord Branches",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Tidal Straits and Central Islands",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Outer Islands and Coastal Landmarks",
+      "stop_ids": [
+        "s9",
+        "s10"
+      ]
+    }
+  ],
+  "_text_sha": "871253b74bfb3d115c9f7bd7b586fc011afc8fdca865911d029230034672cc14"
+}

@@ -1,0 +1,52 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Sjusjøen",
+      "quote": "Benannt ist der Ort nach dem östlich des Ortszentrums gelegenen gleichnamigen See.",
+      "english": "The town is named after the lake of the same name located east of the town center."
+    },
+    {
+      "id": "s2",
+      "name": "Natrudstilen-Arena",
+      "quote": "Die Natrudstilen-Arena ist dabei Schauplatz der Rennen der Weltelite des Langlaufskisports.",
+      "english": "The Natrudstilen Arena is the venue for races of the world's elite cross-country skiers."
+    },
+    {
+      "id": "s3",
+      "name": "Sjusjøen Skisenter",
+      "quote": "Neben den Langlaufloipen gibt es mit dem Sjusjøen Skisenter, das ebenfalls am Natrudstilen liegt, auch ein kleines Alpinskizentrum.",
+      "english": "In addition to the cross-country ski trails, there is also a small alpine ski center with the Sjusjøen Skisenter, which is also located at Natrudstilen."
+    },
+    {
+      "id": "s4",
+      "name": "Natrudstilen",
+      "quote": "Sie wird für Trainingslager und Wettkämpfe genutzt.",
+      "english": "It is used for training camps and competitions."
+    },
+    {
+      "id": "s5",
+      "name": "Sjusjøparken",
+      "quote": "Daneben gibt es eine frei zugängliche Abfahrt für Kinder und den Sjusjøparken, mit Rails, Sprüngen und Abfahrten, die speziell für Snowboard und Twintips geeignet sind.",
+      "english": "In addition, there is a freely accessible run for children and the Sjusjøparken, with rails, jumps and runs that are specifically suitable for snowboards and twin tips."
+    }
+  ],
+  "days": [
+    {
+      "title": "Sjusjøen Lake and Local Ski Parks",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s5"
+      ]
+    },
+    {
+      "title": "Natrudstilen Sports Arena",
+      "stop_ids": [
+        "s2",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "4ca42f9b343657439d971fec9e4e1e981dffa230eae6ddab9f31129aa77a6b13"
+}

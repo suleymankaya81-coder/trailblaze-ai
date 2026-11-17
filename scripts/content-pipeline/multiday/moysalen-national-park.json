@@ -1,0 +1,59 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Møysalen",
+      "quote": "Im Zentrum des Parks steht der 1.262 moh. hohe Møysalen.",
+      "english": "In the center of the park stands the 1,262 m high Møysalen."
+    },
+    {
+      "id": "s2",
+      "name": "Vestpollen",
+      "quote": "Am östlichen Fuße des Berges endet der Fjordarm Vestpollen, der innerste Teil des Øksfjords.",
+      "english": "At the eastern foot of the mountain ends the fjord arm Vestpollen, the innermost part of the Øksfjord."
+    },
+    {
+      "id": "s3",
+      "name": "Storsnytinden",
+      "quote": "Im östlichen Teil des Parks befinden sich der Storsnytinden (996 moh.) und der Nordtinden (883 moh.).",
+      "english": "In the eastern part of the park are the Storsnytinden (996 m) and the Nordtinden (883 m)."
+    },
+    {
+      "id": "s4",
+      "name": "Nordtinden",
+      "quote": "Im östlichen Teil des Parks befinden sich der Storsnytinden (996 moh.) und der Nordtinden (883 moh.).",
+      "english": "In the eastern part of the park are the Storsnytinden (996 m) and the Nordtinden (883 m)."
+    },
+    {
+      "id": "s5",
+      "name": "Snytindhytta",
+      "quote": "Ein paar Kilometer nördlich des Parks liegt die Snytindhytta Touristenhütte, welche durch einen Wanderweg an der E10 mit dem Park verbunden ist.",
+      "english": "A few kilometers north of the park lies the Snytindhytta tourist hut, which is connected to the park by a hiking trail at the E10."
+    },
+    {
+      "id": "s6",
+      "name": "Nordbotn",
+      "quote": "Auf den Møysalen gibt es zwei markierte Wanderwege, einen im Südwesten, von Nordbotn aus, und einen im Südosten, vom Vestpollen Fjord aus.",
+      "english": "On the Møysalen there are two marked hiking trails, one in the southwest, starting from Nordbotn, and one in the southeast, starting from the Vestpollen Fjord."
+    }
+  ],
+  "days": [
+    {
+      "title": "Eastern Peaks and Fjord",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Møysalen Ascent and Northern Access",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "a9323cfa57141894167df5e6a532ef774f05cd0085d0d0c12adb79d033f6eafc"
+}

@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Keilhaus topp",
+      "quote": "Der Berg ist ringsum von Gletschern umgeben und hat im Südosten mit Keilhaus topp (2355 moh.) und Svellnose (2272 moh.) zwei Nebengipfel.",
+      "english": "The mountain is surrounded by glaciers on all sides and has two sub-peaks in the southeast, Keilhaus topp (2355 m above sea level) and Svellnose (2272 m above sea level)."
+    },
+    {
+      "id": "s2",
+      "name": "Svellnose",
+      "quote": "Der Berg ist ringsum von Gletschern umgeben und hat im Südosten mit Keilhaus topp (2355 moh.) und Svellnose (2272 moh.) zwei Nebengipfel.",
+      "english": "The mountain is surrounded by glaciers on all sides and has two sub-peaks in the southeast, Keilhaus topp (2355 m above sea level) and Svellnose (2272 m above sea level)."
+    },
+    {
+      "id": "s3",
+      "name": "Volehytta",
+      "quote": "Direkt unterhalb des Gipfels steht die bereits 1888 errichtete Volehytta - eine kleine, einfache Berghütte, die bei gutem Wetter im Sommer bewirtschaftet wird (Essen, Trinken; keine Übernachtungsmöglichkeit).",
+      "english": "Directly below the summit stands the Volehytta, built back in 1888 - a small, simple mountain hut that is managed in summer during good weather (food, drinks; no overnight accommodation)."
+    },
+    {
+      "id": "s4",
+      "name": "Juvasshütte",
+      "quote": "Die kürzeste, allerdings Gletscherausrüstung erfordernde Route führt von der Juvasshütte (1841 moh.), gelegen am See Juvvatnet, auf den Gipfel.",
+      "english": "The shortest route, which however requires glacier equipment, leads from the Juvasshütte (1841 m above sea level), located at Lake Juvvatnet, to the summit."
+    },
+    {
+      "id": "s5",
+      "name": "Juvvatnet",
+      "quote": "Die kürzeste, allerdings Gletscherausrüstung erfordernde Route führt von der Juvasshütte (1841 moh.), gelegen am See Juvvatnet, auf den Gipfel.",
+      "english": "The shortest route, which however requires glacier equipment, leads from the Juvasshütte (1841 m above sea level), located at Lake Juvvatnet, to the summit."
+    },
+    {
+      "id": "s6",
+      "name": "Styggebreen",
+      "quote": "Der weitere Aufstieg erfolgt dann über den nur mäßig ansteigenden, teils auch flachen Gletscher Styggebreen (Vorsicht Spalten!) zu einem blockigen Rücken zwischen den Gletschern Piggebrean (links) und Styggebrean (rechts), der dann schmaler werdend in einigen Steilstufen in den Nordostgrat des Galdhøpiggen übergeht.",
+      "english": "The further ascent then takes place over the only moderately rising, partly also flat Styggebreen glacier (beware of crevasses!) to a bouldery ridge between the Piggebrean (left) and Styggebrean (right) glaciers, which then becomes narrower and turns into the northeast ridge of Galdhøpiggen in several steep steps."
+    },
+    {
+      "id": "s7",
+      "name": "Spiterstulen",
+      "quote": "Der etwas weitere Weg, der dafür ohne Gletscherausrüstung machbar ist, geht von der Berghütte Spiterstulen (1104 moh.) im Visdalen aus, erreichbar durch eine bei Røysheim von der RV 55 (Sognjefjellet-Straße) abzweigende, teils ruppige rund 20 Kilometer lange Forststraße (Mautstraße die letzten 5 Kilometer, automatische Kennzeichenerfassung).",
+      "english": "The slightly longer path, which can be done without glacier equipment, starts from the Spiterstulen mountain hut (1104 m above sea level) in Visdalen, reachable via a partly rough forest road about 20 kilometers long (toll road for the last 5 kilometers, automatic license plate recognition) branching off from the RV 55 (Sognjefjellet road) at Røysheim."
+    },
+    {
+      "id": "s8",
+      "name": "Galdhøpiggen Sommerskisenter",
+      "quote": "Diese Skianlage heißt „Galdhøpiggen Sommerskisenter“ und ist folglich nur im Sommer, ab ca. Mitte Mai und dann so lange, wie es die Naturschneelage erlaubt, in Betrieb.",
+      "english": "This ski facility is called \"Galdhøpiggen Sommerskisenter\" and is consequently only in operation in summer, from around mid-May and then for as long as the natural snow conditions allow."
+    },
+    {
+      "id": "s9",
+      "name": "Vesljuvbrean",
+      "quote": "An der Juvasshütte gibt es auf dem Gletscher Vesljuvbrean (deutsch: Kleiner Juv-Gletscher) ein Alpinskigebiet.",
+      "english": "At the Juvasshütte there is an alpine ski area on the Vesljuvbrean glacier (German: Kleiner Juv-Gletscher)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Summit Sights and Sub-peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Juvasshütte and Summer Skiing",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s8",
+        "s9"
+      ]
+    },
+    {
+      "title": "Glaciers and Valley Approaches",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "854364997863322c058a9bed70dac2d52a5823fefda9e6bd3934dcfc701786f8"
+}

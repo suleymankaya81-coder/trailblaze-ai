@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hallingskarvethochplateau",
+      "quote": "Der Nationalpark umfasst größtenteils das Hallingskarvethochplateau, welches aufgrund der Kaledonischen Orogenese entstand.",
+      "english": "The national park largely comprises the Hallingskarvet high plateau, which was formed due to the Caledonian orogeny."
+    },
+    {
+      "id": "s2",
+      "name": "Folarskardnuten",
+      "quote": "Der höchste Berg ist der Folarskardnuten mit 1.933 m.",
+      "english": "The highest mountain is the Folarskardnuten at 1,933 m."
+    },
+    {
+      "id": "s3",
+      "name": "Flakavatnet",
+      "quote": "Im Hallingskarvet befindet sich auch Norwegens höchster See, der Flakavatnet, welcher auf 1.453 m Höhe liegt.",
+      "english": "In Hallingskarvet is also Norway's highest lake, the Flakavatnet, which lies at an altitude of 1,453 m."
+    },
+    {
+      "id": "s4",
+      "name": "Lordehytta",
+      "quote": "Im Jahre 1880 ließ der englische Graf Lord Garvagh eine steinerne Jagdhütte, die Lordehytta, errichten, um in der näheren Umgebung auf Rentierjagd zu gehen.",
+      "english": "In 1880, the English count Lord Garvagh had a stone hunting hut, the Lordehytta, built in order to go reindeer hunting in the surrounding area."
+    },
+    {
+      "id": "s5",
+      "name": "Finsehytta",
+      "quote": "Der Norwegische Wanderverein unterhält im Park die Hütten Finsehytta im Süden und Geiterygghytta im Norden.",
+      "english": "The Norwegian Trekking Association maintains the Finsehytta huts in the south and Geiterygghytta in the north of the park."
+    },
+    {
+      "id": "s6",
+      "name": "Geiterygghytta",
+      "quote": "Der Norwegische Wanderverein unterhält im Park die Hütten Finsehytta im Süden und Geiterygghytta im Norden.",
+      "english": "The Norwegian Trekking Association maintains the Finsehytta huts in the south and Geiterygghytta in the north of the park."
+    },
+    {
+      "id": "s7",
+      "name": "Raggsteindalen",
+      "quote": "Private Unterkünfte gibt es im Raggsteindalen und bei Haugastøl.",
+      "english": "Private accommodations are available in Raggsteindalen and near Haugastøl."
+    },
+    {
+      "id": "s8",
+      "name": "Skarverennet",
+      "quote": "Zwischen Finse und Ustaoset verläuft ein Stück des Skarverennet durch den Park.",
+      "english": "Between Finse and Ustaoset, a section of the Skarverennet runs through the park."
+    },
+    {
+      "id": "s9",
+      "name": "Rallarvegen",
+      "quote": "Im Süden des Parks verläuft zudem der Rallarvegen.",
+      "english": "The Rallarvegen also runs through the south of the park."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Plateau and Central Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Historical Huts and Northern Valleys",
+      "stop_ids": [
+        "s4",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Southern Trails and Lodging",
+      "stop_ids": [
+        "s5",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "a567928501f99aea4f6ae6a713ccc0df8b8004669e11bc19376c966676f0b85f"
+}

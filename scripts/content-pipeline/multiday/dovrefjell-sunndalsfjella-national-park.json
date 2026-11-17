@@ -1,0 +1,59 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Nationalpark-Zentrum",
+      "quote": "Das Nationalpark-Zentrum mit einer Ausstellung und einem kleinen botanischen Garten befindet sich in Kongsvoll an der E 6.",
+      "english": "The national park center with an exhibition and a small botanical garden is located in Kongsvoll on the E 6."
+    },
+    {
+      "id": "s2",
+      "name": "Stroplsjødalen",
+      "quote": "Die besten Chancen, Moschusochsen zu sichten, hat man im Stroplsjødalen und im Kaldvelldalen.",
+      "english": "The best chances to spot musk oxen are in Stroplsjødalen and Kaldvelldalen."
+    },
+    {
+      "id": "s3",
+      "name": "Kaldvelldalen",
+      "quote": "Die besten Chancen, Moschusochsen zu sichten, hat man im Stroplsjødalen und im Kaldvelldalen.",
+      "english": "The best chances to spot musk oxen are in Stroplsjødalen and Kaldvelldalen."
+    },
+    {
+      "id": "s4",
+      "name": "Snøhetta",
+      "quote": "Beliebtestes Wanderziel im Westteil des Parks ist die Snøhetta (2286 moh.), der höchste Gipfel des Gebiets.",
+      "english": "The most popular hiking destination in the western part of the park is Snøhetta (2286 m), the highest peak in the area."
+    },
+    {
+      "id": "s5",
+      "name": "Reinheim",
+      "quote": "Zu seinen Füßen liegt die selbstbediente DNT-Hütte Reinheim (Schlüssel in Kongsvoll erhältlich).",
+      "english": "At its feet lies the self-service DNT hut Reinheim (keys available in Kongsvoll)."
+    },
+    {
+      "id": "s6",
+      "name": "Bekkelegret",
+      "quote": "Bester Zugang ist von der E 6 über die RV 29 bis Dalen und weiter nach Bekkelegret, der (staatlichen) Pferdestation.",
+      "english": "Best access is from the E 6 via the RV 29 to Dalen and further to Bekkelegret, the (state) horse station."
+    }
+  ],
+  "days": [
+    {
+      "title": "Eastern Valleys and Visitor Center",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Western Peaks and Eastern Highlands",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "2794b96d61440341b0c179d45f8430493947dc87cd9a5fb2ce69ba313973f6ad"
+}

@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Honningsvåg",
+      "quote": "Hauptort der Insel ist das an der Südküste gelegene Honningsvåg mit einer Bevölkerung von 2367 (2009).",
+      "english": "The island's main town is Honningsvåg, located on the south coast with a population of 2367 (2009)."
+    },
+    {
+      "id": "s2",
+      "name": "Nordkap",
+      "quote": "Die wichtigste Touristenattraktion ist das im Norden der Insel liegende Nordkap.",
+      "english": "The most important tourist attraction is the North Cape, located in the north of the island."
+    },
+    {
+      "id": "s3",
+      "name": "Kamøyvær",
+      "quote": "Weitere Orte auf der Insel sind: Kamøyvær (70 Einwohner)",
+      "english": "Other places on the island are: Kamøyvær (70 inhabitants)"
+    },
+    {
+      "id": "s4",
+      "name": "Skarsvåg",
+      "quote": "Weitere Orte auf der Insel sind: Skarsvåg (60 Einwohner)",
+      "english": "Other places on the island are: Skarsvåg (60 inhabitants)"
+    },
+    {
+      "id": "s5",
+      "name": "Nordvågen",
+      "quote": "Weitere Orte auf der Insel sind: Nordvågen (415 Einwohner)",
+      "english": "Other places on the island are: Nordvågen (415 inhabitants)"
+    },
+    {
+      "id": "s6",
+      "name": "Gjesvær",
+      "quote": "Weitere Orte auf der Insel sind: Gjesvær (130 Einwohner)",
+      "english": "Other places on the island are: Gjesvær (130 inhabitants)"
+    },
+    {
+      "id": "s7",
+      "name": "Gråkollfjellet",
+      "quote": "Überquert man die Insel Magerøya vom Hauptort aus in Richtung Nordkap, liegt links auf etwa halber Strecke zum Nordkap die höchste Erhebung der Insel, das 417 Meter hohe Gråkollfjellet.",
+      "english": "If you cross the island of Magerøya from the main town in the direction of the North Cape, the island's highest elevation, the 417-meter-high Gråkollfjellet, lies on the left about halfway to the North Cape."
+    },
+    {
+      "id": "s8",
+      "name": "Helnes fyr",
+      "quote": "1908 wurde das Leuchtfeuer Helnes fyr erbaut.",
+      "english": "In 1908 the Helnes fyr lighthouse was built."
+    },
+    {
+      "id": "s9",
+      "name": "Flughafens Valan",
+      "quote": "So wurde im Bereich des heutigen Flughafens Valan eine Strandverteidigung mit Stellen zur Nahkampfverteidigung und Minen installiert.",
+      "english": "Thus, in the area of today's Valan Airport, a beach defense with positions for close combat defense and mines was installed."
+    }
+  ],
+  "days": [
+    {
+      "title": "Southern Ports and the Airport",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s8",
+        "s9"
+      ]
+    },
+    {
+      "title": "Northern Villages and the Cape",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Western Outpost and the Central Peak",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "056379966a1c8fe1a3edd2f617c035195940357c8cef9235c29c418362177ffa"
+}

@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Reisadalen",
+      "quote": "Der Reisa-Nationalpark (norwegisch Reisa nasjonalpark, Samisch Njállaávzi nasjonalpark) ist ein norwegischer Nationalpark, der hauptsächlich im Reisadalen liegt.",
+      "english": "The Reisa National Park (Norwegian: Reisa nasjonalpark, Sami: Njállaávzi nasjonalpark) is a Norwegian national park located mainly in Reisadalen."
+    },
+    {
+      "id": "s2",
+      "name": "Reisaelva",
+      "quote": "Der Park umfasst den oberen Teil des Reisaelva und verläuft entlang der Grenze zu Finnland.",
+      "english": "The park covers the upper part of the Reisaelva and runs along the border with Finland."
+    },
+    {
+      "id": "s3",
+      "name": "Mollisfossen-Wasserfall",
+      "quote": "Im Flusslauf der Reisaelva befindet sich der 269 Meter hohe Mollisfossen-Wasserfall, dessen Höhe des freien Falles 140 Meter beträgt.",
+      "english": "In the course of the Reisaelva lies the 269-meter-high Mollisfossen waterfall, whose free-fall height is 140 meters."
+    },
+    {
+      "id": "s4",
+      "name": "Imofossen-Wasserfall",
+      "quote": "In den Bergen nördlich des Imofossen-Wasserfalls gibt es teilweise sehr große Canyons, in welchen man auch gut die vielen verschiedenen Gesteinsablagerungen sehen kann.",
+      "english": "In the mountains north of the Imofossen waterfall, there are sometimes very large canyons where you can easily see the many different rock deposits."
+    },
+    {
+      "id": "s5",
+      "name": "Halti Nationalparkzentrum",
+      "quote": "Der Kvenischen Kultur ist eine Ausstellung im Halti Nationalparkzentrum gewidmet.",
+      "english": "An exhibition in the Halti National Park Center is dedicated to Kven culture."
+    },
+    {
+      "id": "s6",
+      "name": "Nedrefosshytta",
+      "quote": "Im Park gibt es einige unbewirtschaftete Hütten, wie die Nedrefosshytta, welche vom Norwegischen Wanderverein betrieben wird und an der Nordkalottruta liegt.",
+      "english": "In the park, there are several unstaffed huts, such as the Nedrefosshytta, which is operated by the Norwegian Trekking Association and is located on the Nordkalottruta."
+    },
+    {
+      "id": "s7",
+      "name": "Nordkalottruta",
+      "quote": "Im Park gibt es einige unbewirtschaftete Hütten, wie die Nedrefosshytta, welche vom Norwegischen Wanderverein betrieben wird und an der Nordkalottruta liegt.",
+      "english": "In the park, there are several unstaffed huts, such as the Nedrefosshytta, which is operated by the Norwegian Trekking Association and is located on the Nordkalottruta."
+    },
+    {
+      "id": "s8",
+      "name": "Ráisjávri See",
+      "quote": "Im Osten des Parks gibt es auch noch eine Hütte am Ráisjávri See.",
+      "english": "In the east of the park, there is also a hut by Lake Ráisjávri."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lower Valley and Cultural Hub",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s5"
+      ]
+    },
+    {
+      "title": "Waterfalls and Trekking Trails",
+      "stop_ids": [
+        "s3",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Canyons and Remote Lakes",
+      "stop_ids": [
+        "s4",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "59ea28d483a50e9a92337604567f46c480fb3797040ce29832bbda5d21da1798"
+}
