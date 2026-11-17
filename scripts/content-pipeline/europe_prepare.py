@@ -66,7 +66,7 @@ def info(page):
 
 
 def file_info(fname, width=1920):
-    j = api("commons.wikimedia.org", action="query", titles=f"File:{fname}", prop="imageinfo",
+    j = api("commons.wikimedia.org", action="query", titles=f"File:{fname.removeprefix('File:')}", prop="imageinfo",
             iiprop="url|extmetadata|size", iiurlwidth=width)
     p = j["query"]["pages"][0]
     return info(p) if "imageinfo" in p else None

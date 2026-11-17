@@ -44,11 +44,11 @@ def english_bundle(row, packet, lang, original):
             excerpts = source.get('generation_excerpts', [])
             source['display_translation'] = translate_excerpt('\n'.join(excerpts), lang)
             source['translation_method'] = f'Argos offline {lang}-en; original evidence retained'
-        displays = {s['url']: s['display_translation'] for s in packet['sources']}
         for day in bundle['travel']['plan']['days']:
             for stop in day['stops']:
                 identity = next(s for s in packet['approved_stops'] if s['id'] == stop['stop_id'])
-                stop['detail'] = displays[identity['source_url']]
+                source = next(s for s in packet['sources'] if s['url'] == identity['source_url'])
+                stop['detail'] = translate_excerpt(identity['quote'], source.get('language', lang))
     # Remove pronunciation/foreign-name parentheticals, not proper place names.
     for day in bundle['travel']['plan']['days']:
         for stop in day['stops']:

@@ -1,4 +1,5 @@
 ## November 17 FR/PT/GR complete catalog and launch
+- [ ] Consolidate all original holds and the 32 French inventory additions into one durable assignment manifest and resumable runner; verify seasonal claims against saved official excerpts.
 - [ ] Recover all 42 catalog holds with exact identity, licensed covers and sourced access; keep overseas geography separate.
 - [ ] Reconcile and expand France against official park/site inventories without arbitrary count targets.
 - [ ] Prepare English plans, sourced seasonal notes and German versions for existing and added places; retain caches.
