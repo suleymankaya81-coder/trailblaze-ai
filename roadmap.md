@@ -1,3 +1,8 @@
+## November 17 complete Finland holds
+- [ ] Recover exact-place sources, verified coordinates and licensed unique covers for the 30 unpublished Finland catalog places.
+- [ ] Prepare cached English/German content and publish through the existing completeness checks.
+- [ ] Verify published records, both-language pages, photos and Finnish sitemaps; record any actual blockers.
+
 ## November 17 resume Sweden
 - [ ] Resume cached facts and offline English/German translations for all 82 catalog places.
 - [ ] Publish complete places with retained photo credits, routes and partner cards; resolve remaining factual holds where evidence permits.

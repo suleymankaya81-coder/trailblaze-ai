@@ -6,6 +6,15 @@ from unittest.mock import patch
 
 
 class NordicRegionTest(unittest.TestCase):
+    def test_search_rejects_wrong_country(self):
+        spec = importlib.util.spec_from_file_location('nordic_country_test', Path(__file__).parent / 'nordic/produce.py')
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        wrong_entity = {'claims': {'P17': [{'mainsnak': {'datavalue': {'value': {'id': 'Q30'}}}}]}}
+        with patch.object(module.fin, 'fetch_article', return_value={'pageprops': {'wikibase_item': 'Q1'}}), patch.object(module.fin, 'identity_and_packet', return_value=({}, {}, 'en', wrong_entity)):
+            with self.assertRaisesRegex(ValueError, 'another country'):
+                module._identity({'country': 'fi', 'name': 'Arctic Circle Hiking Area', 'enwiki': 'Gates of the Arctic'}, 'fi')
+
     def test_county_query_uses_admin_detail(self):
         spec = importlib.util.spec_from_file_location('nordic_region_test', Path(__file__).parent / 'nordic/produce.py')
         module = importlib.util.module_from_spec(spec)

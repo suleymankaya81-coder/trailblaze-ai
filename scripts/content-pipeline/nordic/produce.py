@@ -93,7 +93,7 @@ def identity(row, lang):
 def _identity(row, lang):
     if row.get('wikidata'):
         return fin.identity_and_packet(row, row['country'], lang, CACHE)
-    title = row.get('enwiki')
+    title = row.get('enwiki') if isinstance(row.get('enwiki'), str) else None
     tl = 'en'
     if not title:
         want = set(words(row['name']))
@@ -107,7 +107,13 @@ def _identity(row, lang):
     page = fin.fetch_article(title, tl, CACHE)
     qid = page.get('pageprops', {}).get('wikibase_item')
     if qid:  # re-enter through the QID path so the same identity cross-check applies
-        return fin.identity_and_packet({**row, 'wikidata': qid}, row['country'], lang, CACHE)
+        result = fin.identity_and_packet({**row, 'wikidata': qid}, row['country'], lang, CACHE)
+        countries = {c.get('mainsnak', {}).get('datavalue', {}).get('value', {}).get('id')
+                     for c in result[3].get('claims', {}).get('P17', [])}
+        expected = {'no': 'Q20', 'is': 'Q189', 'se': 'Q34', 'fi': 'Q33', 'dk': 'Q35'}
+        if countries and expected[row['country']] not in countries:
+            raise ValueError('Wikipedia search identity belongs to another country')
+        return result
     raise ValueError(f'article {title!r} has no Wikidata identity')
 
 def bounds_for(row):
