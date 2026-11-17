@@ -12,6 +12,16 @@ import europe_prepare as prepare
 from europe_discovery import get
 from gateway_call import call_ai_json
 
+import types
+_tr = types.ModuleType('argostranslate.translate')
+def _translate(text, source, target):
+    # Gemini stands in for the offline translator when Argos is not installed; same cache files.
+    return call_ai_json(f'Translate from {source} to {target}. Keep place names, numbers and meaning exactly; no additions. '
+                        f'Return {{"t": "..."}}.\n\n{text}')['t']
+_tr.translate = _translate
+_pkg = types.ModuleType('argostranslate'); _pkg.translate = _tr
+sys.modules.setdefault('argostranslate', _pkg); sys.modules.setdefault('argostranslate.translate', _tr)
+
 ROOT = Path(__file__).parent
 OUT = ROOT / 'fr-pt-gr-completion'
 OVERSEAS = {'reunion': 'RE', 'guadeloupe': 'GP', 'guyane': 'GF', 'guiana': 'GF', 'mayotte': 'YT', 'martinique': 'MQ'}
@@ -67,12 +77,13 @@ def article_images(page_title, lang):
     return out
 
 def main():
-    done = {p.stem for p in OUT.glob('*.json')}
-    used = {json.loads(p.read_text()).get('hero', {}).get('original_url') for p in OUT.glob('*.json') if p.stem not in ('assignments', 'photo-review')}
+    items = {p.stem: json.loads(p.read_text()) for p in OUT.glob('*.json')}
+    items = {k: v for k, v in items.items() if isinstance(v, dict) and v.get('slug')}
+    used = {v.get('hero', {}).get('original_url') for v in items.values()}
     rows = json.loads((ROOT / 'france/catalog.json').read_text()) + [r for r in json.loads((ROOT / 'south-europe/catalog.json').read_text()) if r['country'] in ('pt', 'gr')]
     for row in rows:
         slug, cc = row['slug'], row['country']
-        if slug in done and json.loads((OUT / f'{slug}.json').read_text()).get('status') == 'prepared':
+        if items.get(slug, {}).get('status') == 'prepared':
             continue
         cfg = fin.COUNTRIES[cc]
         try:
