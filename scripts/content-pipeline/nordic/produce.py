@@ -117,7 +117,7 @@ def region_for(row, lat, lng):
     if row.get('region'): return row['region']
     import requests
     time.sleep(1)
-    r = requests.get('https://nominatim.openstreetmap.org/reverse', params={'lat': lat, 'lon': lng, 'format': 'json', 'zoom': 5, 'accept-language': 'en'},
+    r = requests.get('https://nominatim.openstreetmap.org/reverse', params={'lat': lat, 'lon': lng, 'format': 'json', 'zoom': 8, 'accept-language': 'en'},
                      headers={'User-Agent': 'wildparkroutes-content/1.0 (info@minialife.com)'}, timeout=30).json()
     a = r.get('address', {})
     name = a.get('state') or a.get('county') or a.get('region')
@@ -155,6 +155,7 @@ def facts(row, used):
 # ---------- Stage 3: translation (offline Argos) ----------
 def translate(row, item):
     german = module('ger', 'audit-dach.py')
+    row = {**row, 'region': item['region']}
     packet, lang = item['packet'], item['lang']
     bundle = comp.english_bundle(row, packet, lang, fin.validate_bundle(fin.quoted_bundle(row, packet), row['slug'], fin.compact_packet(packet)))
     s, t, a, r = bundle['summary'], bundle['travel'], item['airport'], item['route']

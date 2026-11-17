@@ -1,3 +1,8 @@
+## November 17 resume Sweden
+- [ ] Resume cached facts and offline English/German translations for all 82 catalog places.
+- [ ] Publish complete places with retained photo credits, routes and partner cards; resolve remaining factual holds where evidence permits.
+- [ ] Generate source-bound day plans, refresh German plans and verify database, country pages and sitemaps.
+
 ## November 17 publish all FR/PT/GR places
 - [x] Published all 199 catalog places (FR 123, PT 38, GR 38) with German versions; 41 former holds completed with AI-chosen articles/covers/locations; sitemaps and country pages live. Seasonal notes remain explicit "not verified" where no source exists.
 
