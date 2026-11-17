@@ -1,3 +1,9 @@
+## November 17 complete the 125 FR/PT/GR drafts
+- [ ] Recover and retain exact-place licensed covers, coordinates and airport facts from existing caches.
+- [ ] Correct English display text and replace seasonal placeholders with sourced information or explicit named unknowns.
+- [ ] Save all English content and German translations with draft-only guards; do not publish destinations or regions.
+- [ ] Verify all 125 records, image availability, translation structure, country 404s and sitemap exclusions.
+
 ## November 17 FR/PT/GR draft-only import and read-only audit
 - [x] Apply exact existing 0015 SQL through the normal migration tool; tool recorded 0016 as well, conflict-safe. Readback: 18/7/13 regions, all draft.
 - [x] Execute France, Portugal, then Greece SQL separately in order; readback: 78/25/22 destinations, all draft.
