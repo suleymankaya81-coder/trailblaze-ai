@@ -1,0 +1,771 @@
+{
+  "mode": "read_only_research",
+  "catalog_path": "scripts/content-pipeline/france/catalog.json",
+  "catalog_count": 91,
+  "scope": "Official current national parks, 60-PNR federation roster, 26 labelled Grands Sites; selective additional outdoor network sites. No numeric expansion target.",
+  "national_parks": {
+    "present": 11,
+    "official_total": 11,
+    "metropolitan": 8,
+    "overseas": 3,
+    "missing": [],
+    "official_source_url": "https://parcsnationaux.fr/qui-sommes-nous/les-parcs-nationaux-de-france"
+  },
+  "pnr": {
+    "present": 49,
+    "official_total": 60,
+    "missing": 11,
+    "metropolitan_present": 47,
+    "metropolitan_total": 58,
+    "overseas_present": 2,
+    "overseas_total": 2,
+    "source_url": "https://www.parcs-naturels-regionaux.fr/les-parcs/larchipel-des-60-parcs",
+    "notes": [
+      "Do not use stale 59-park pages. Current roster includes Comminges Barousse Pyrénées.",
+      "Mont Ventoux already represents the PNR identity; do not add a second Mont Ventoux row."
+    ]
+  },
+  "grands_sites": {
+    "official_labelled_total": 26,
+    "existing_primary_feature_matches": 4,
+    "missing_label_identities": 22,
+    "cross_category_missing_pnr_marais_poitevin": 1,
+    "additional_unique_label_candidates": 21,
+    "existing_matches": {
+      "Cap d’Erquy–Cap Fréhel": "cap-frehel",
+      "Chaîne des Puys–Puy de Dôme": "puy-de-dome",
+      "Gorges du Tarn, de la Jonte et Causses": "gorges-du-tarn",
+      "Pointe du Raz en Cap Sizun": "pointe-du-raz"
+    },
+    "note": "Four are feature-level coverage, not certification of full label perimeter. Expand metadata/content rather than duplicate. Current membership page says 54; June 2026 map enumerates 51: do not conflate membership with 26 labels."
+  },
+  "candidates": [
+    {
+      "unique_name": "Parc naturel régional Médoc",
+      "proposed_slug": "parc-naturel-regional-medoc",
+      "country": "fr",
+      "region": "nouvelle-aquitaine",
+      "scope": "metropolitan",
+      "category": "missing_pnr",
+      "official_source_url": "https://www.parcs-naturels-regionaux.fr/les-parcs/larchipel-des-60-parcs/parc-naturel-regional-medoc",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Parc naturel régional Vallée de la Rance–Côte d’Émeraude",
+      "proposed_slug": "parc-naturel-regional-vallee-de-la-rancecote-demeraude",
+      "country": "fr",
+      "region": "brittany",
+      "scope": "metropolitan",
+      "category": "missing_pnr",
+      "official_source_url": "https://www.parcs-naturels-regionaux.fr/les-parcs/larchipel-des-60-parcs/parc-vallee-de-la-rance-cote-demeraude",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Parc naturel régional Golfe du Morbihan",
+      "proposed_slug": "parc-naturel-regional-golfe-du-morbihan",
+      "country": "fr",
+      "region": "brittany",
+      "scope": "metropolitan",
+      "category": "missing_pnr",
+      "official_source_url": "https://www.parcs-naturels-regionaux.fr/les-parcs/larchipel-des-60-parcs/parc-naturel-regional-du-golfe-du-morbihan",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Parc naturel régional Gâtinais français",
+      "proposed_slug": "parc-naturel-regional-gatinais-francais",
+      "country": "fr",
+      "region": "ile-de-france",
+      "scope": "metropolitan",
+      "category": "missing_pnr",
+      "official_source_url": "https://www.parcs-naturels-regionaux.fr/les-parcs/larchipel-des-60-parcs/parc-naturel-regional-du-gatinais-francais",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Parc naturel régional Comminges Barousse Pyrénées",
+      "proposed_slug": "parc-naturel-regional-comminges-barousse-pyrenees",
+      "country": "fr",
+      "region": "occitania",
+      "scope": "metropolitan",
+      "category": "missing_pnr",
+      "official_source_url": "https://www.parcs-naturels-regionaux.fr/les-parcs/larchipel-des-60-parcs/parc-naturel-regional-comminges-barousse-pyrenees",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Parc naturel régional Massif des Bauges",
+      "proposed_slug": "parc-naturel-regional-massif-des-bauges",
+      "country": "fr",
+      "region": "auvergne-rhone-alpes",
+      "scope": "metropolitan",
+      "category": "missing_pnr",
+      "official_source_url": "https://www.parcs-naturels-regionaux.fr/les-parcs/larchipel-des-60-parcs/parc-naturel-regional-du-massif-des-bauges",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Parc naturel régional Marais poitevin",
+      "proposed_slug": "parc-naturel-regional-marais-poitevin",
+      "country": "fr",
+      "region": "nouvelle-aquitaine; pays-de-la-loire",
+      "scope": "metropolitan",
+      "category": "missing_pnr",
+      "official_source_url": "https://www.parcs-naturels-regionaux.fr/les-parcs/parc-naturel-regional-du-marais-poitevin",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Parc naturel régional Alpilles",
+      "proposed_slug": "parc-naturel-regional-alpilles",
+      "country": "fr",
+      "region": "provence-alpes-cote-d-azur",
+      "scope": "metropolitan",
+      "category": "missing_pnr",
+      "official_source_url": "https://www.parcs-naturels-regionaux.fr/les-parcs/larchipel-des-60-parcs/parc-naturel-regional-des-alpilles",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Parc naturel régional Aubrac",
+      "proposed_slug": "parc-naturel-regional-aubrac",
+      "country": "fr",
+      "region": "occitania; auvergne-rhone-alpes",
+      "scope": "metropolitan",
+      "category": "missing_pnr",
+      "official_source_url": "https://www.parcs-naturels-regionaux.fr/les-parcs/larchipel-des-60-parcs/parc-naturel-regional-de-laubrac",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Parc naturel régional Oise–Pays de France",
+      "proposed_slug": "parc-naturel-regional-oisepays-de-france",
+      "country": "fr",
+      "region": "hauts-de-france; ile-de-france",
+      "scope": "metropolitan",
+      "category": "missing_pnr",
+      "official_source_url": "https://www.parcs-naturels-regionaux.fr/les-parcs/larchipel-des-60-parcs/parc-naturel-regional-oise-pays-de-france",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Parc naturel régional Verdon",
+      "proposed_slug": "parc-naturel-regional-verdon",
+      "country": "fr",
+      "region": "provence-alpes-cote-d-azur",
+      "scope": "metropolitan",
+      "category": "missing_pnr",
+      "official_source_url": "https://www.parcs-naturels-regionaux.fr/les-parcs/larchipel-des-60-parcs/parc-naturel-regional-du-verdon",
+      "existing_duplicates": [],
+      "existing_overlaps": [
+        "gorges-du-verdon"
+      ],
+      "note": "Distinct park-wide identity; avoid duplicating the existing gorge itinerary.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Aven d’Orgnac",
+      "proposed_slug": "aven-dorgnac",
+      "country": "fr",
+      "region": "auvergne-rhone-alpes",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Baie de Somme",
+      "proposed_slug": "baie-de-somme",
+      "country": "fr",
+      "region": "hauts-de-france",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [
+        "baie-de-somme-picardie-maritime",
+        "marine-natural-park-of-picardy-and-opale-coast"
+      ],
+      "note": "Child or adjacent landscape is not an exact duplicate of a broader park; editorial merge remains possible.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Bibracte–Morvan des Sommets",
+      "proposed_slug": "bibractemorvan-des-sommets",
+      "country": "fr",
+      "region": "bourgogne-franche-comte",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [
+        "morvan-regional-natural-park"
+      ],
+      "note": "Child or adjacent landscape is not an exact duplicate of a broader park; editorial merge remains possible.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Camargue gardoise",
+      "proposed_slug": "camargue-gardoise",
+      "country": "fr",
+      "region": "occitania",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [
+        "camargue-regional-natural-park"
+      ],
+      "note": "Child or adjacent landscape is not an exact duplicate of a broader park; editorial merge remains possible.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Cirque de Navacelles",
+      "proposed_slug": "cirque-de-navacelles",
+      "country": "fr",
+      "region": "occitania",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Cité de Minerve, gorges de la Cesse et du Brian",
+      "proposed_slug": "cite-de-minerve-gorges-de-la-cesse-et-du-brian",
+      "country": "fr",
+      "region": "occitania",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [
+        "haut-languedoc-regional-natural-park"
+      ],
+      "note": "Child or adjacent landscape is not an exact duplicate of a broader park; editorial merge remains possible.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Conca d’Oru–Patrimonio–Golfe de Saint-Florent",
+      "proposed_slug": "conca-dorupatrimoniogolfe-de-saint-florent",
+      "country": "fr",
+      "region": "corsica",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Concors–Sainte-Victoire",
+      "proposed_slug": "concorssainte-victoire",
+      "country": "fr",
+      "region": "provence-alpes-cote-d-azur",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Dunes de Flandre",
+      "proposed_slug": "dunes-de-flandre",
+      "country": "fr",
+      "region": "hauts-de-france",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Dunes Sauvages de Gâvres à Quiberon",
+      "proposed_slug": "dunes-sauvages-de-gavres-a-quiberon",
+      "country": "fr",
+      "region": "brittany",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Estuaire de la Charente–Arsenal de Rochefort",
+      "proposed_slug": "estuaire-de-la-charentearsenal-de-rochefort",
+      "country": "fr",
+      "region": "nouvelle-aquitaine",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Gorges de l’Hérault–Saint-Guilhem-le-Désert",
+      "proposed_slug": "gorges-de-lheraultsaint-guilhem-le-desert",
+      "country": "fr",
+      "region": "occitania",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Îles Sanguinaires–Pointe de la Parata",
+      "proposed_slug": "iles-sanguinairespointe-de-la-parata",
+      "country": "fr",
+      "region": "corsica",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Les Deux-Caps Blanc-Nez, Gris-Nez",
+      "proposed_slug": "les-deux-caps-blanc-nez-gris-nez",
+      "country": "fr",
+      "region": "hauts-de-france",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [
+        "parc-naturel-regional-des-caps-et-marais-d-opale"
+      ],
+      "note": "Child or adjacent landscape is not an exact duplicate of a broader park; editorial merge remains possible.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Massif et balcons du Canigó",
+      "proposed_slug": "massif-et-balcons-du-canigo",
+      "country": "fr",
+      "region": "occitania",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [
+        "catalan-pyrenees-regional-natural-park"
+      ],
+      "note": "Child or adjacent landscape is not an exact duplicate of a broader park; editorial merge remains possible.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Montségur",
+      "proposed_slug": "montsegur",
+      "country": "fr",
+      "region": "occitania",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Puy Mary–Volcan du Cantal",
+      "proposed_slug": "puy-maryvolcan-du-cantal",
+      "country": "fr",
+      "region": "auvergne-rhone-alpes",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [
+        "parc-naturel-regional-des-volcans-d-auvergne"
+      ],
+      "note": "Child or adjacent landscape is not an exact duplicate of a broader park; editorial merge remains possible.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Salagou–Cirque de Mourèze",
+      "proposed_slug": "salagoucirque-de-moureze",
+      "country": "fr",
+      "region": "occitania",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Solutré Pouilly Vergisson",
+      "proposed_slug": "solutre-pouilly-vergisson",
+      "country": "fr",
+      "region": "bourgogne-franche-comte",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Vallée de la Vézère",
+      "proposed_slug": "vallee-de-la-vezere",
+      "country": "fr",
+      "region": "nouvelle-aquitaine",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": null,
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Vézelay",
+      "proposed_slug": "vezelay",
+      "country": "fr",
+      "region": "bourgogne-franche-comte",
+      "scope": "metropolitan",
+      "category": "missing_labelled_grand_site_identity",
+      "official_source_url": "https://www.grandsitedefrance.com/label",
+      "existing_duplicates": [],
+      "existing_overlaps": [
+        "morvan-regional-natural-park"
+      ],
+      "note": "Child or adjacent landscape is not an exact duplicate of a broader park; editorial merge remains possible.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Bonifacio cliffs",
+      "proposed_slug": "bonifacio-cliffs",
+      "country": "fr",
+      "region": "corsica",
+      "scope": "metropolitan",
+      "category": "significant_scenic_candidate_not_labelled",
+      "official_source_url": "https://www.grandsitedefrance.com/images/stories/pdf/cartes/carte-membres-rgsf.pdf",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": "Official June 2026 network map; membership or project is NOT the Grand Site de France label. Selective outdoor shortlist, not an exhaustive scenic inventory.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Cirque du Fer à Cheval",
+      "proposed_slug": "cirque-du-fer-a-cheval",
+      "country": "fr",
+      "region": "auvergne-rhone-alpes",
+      "scope": "metropolitan",
+      "category": "significant_scenic_candidate_not_labelled",
+      "official_source_url": "https://www.grandsitedefrance.com/images/stories/pdf/cartes/carte-membres-rgsf.pdf",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": "Official June 2026 network map; membership or project is NOT the Grand Site de France label. Selective outdoor shortlist, not an exhaustive scenic inventory.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Gorges de l’Ardèche",
+      "proposed_slug": "gorges-de-lardeche",
+      "country": "fr",
+      "region": "auvergne-rhone-alpes; occitania",
+      "scope": "metropolitan",
+      "category": "significant_scenic_candidate_not_labelled",
+      "official_source_url": "https://www.grandsitedefrance.com/images/stories/pdf/cartes/carte-membres-rgsf.pdf",
+      "existing_duplicates": [],
+      "existing_overlaps": [
+        "pont-d-arc"
+      ],
+      "note": "Official June 2026 network map; membership or project is NOT the Grand Site de France label. Selective outdoor shortlist, not an exhaustive scenic inventory.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Gorges du Gardon",
+      "proposed_slug": "gorges-du-gardon",
+      "country": "fr",
+      "region": "occitania",
+      "scope": "metropolitan",
+      "category": "significant_scenic_candidate_not_labelled",
+      "official_source_url": "https://www.grandsitedefrance.com/images/stories/pdf/cartes/carte-membres-rgsf.pdf",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": "Official June 2026 network map; membership or project is NOT the Grand Site de France label. Selective outdoor shortlist, not an exhaustive scenic inventory.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Havre du Payré",
+      "proposed_slug": "havre-du-payre",
+      "country": "fr",
+      "region": "pays-de-la-loire",
+      "scope": "metropolitan",
+      "category": "significant_scenic_candidate_not_labelled",
+      "official_source_url": "https://www.grandsitedefrance.com/images/stories/pdf/cartes/carte-membres-rgsf.pdf",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": "Official June 2026 network map; membership or project is NOT the Grand Site de France label. Selective outdoor shortlist, not an exhaustive scenic inventory.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Fontaine de Vaucluse",
+      "proposed_slug": "fontaine-de-vaucluse",
+      "country": "fr",
+      "region": "provence-alpes-cote-d-azur",
+      "scope": "metropolitan",
+      "category": "significant_scenic_candidate_not_labelled",
+      "official_source_url": "https://www.grandsitedefrance.com/images/stories/pdf/cartes/carte-membres-rgsf.pdf",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": "Official June 2026 network map; membership or project is NOT the Grand Site de France label. Selective outdoor shortlist, not an exhaustive scenic inventory.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "La Hague",
+      "proposed_slug": "la-hague",
+      "country": "fr",
+      "region": "normandy",
+      "scope": "metropolitan",
+      "category": "significant_scenic_candidate_not_labelled",
+      "official_source_url": "https://www.grandsitedefrance.com/images/stories/pdf/cartes/carte-membres-rgsf.pdf",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": "Official June 2026 network map; membership or project is NOT the Grand Site de France label. Selective outdoor shortlist, not an exhaustive scenic inventory.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Marais de Brouage",
+      "proposed_slug": "marais-de-brouage",
+      "country": "fr",
+      "region": "nouvelle-aquitaine",
+      "scope": "metropolitan",
+      "category": "significant_scenic_candidate_not_labelled",
+      "official_source_url": "https://www.grandsitedefrance.com/images/stories/pdf/cartes/carte-membres-rgsf.pdf",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": "Official June 2026 network map; membership or project is NOT the Grand Site de France label. Selective outdoor shortlist, not an exhaustive scenic inventory.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Massif de l’Estérel",
+      "proposed_slug": "massif-de-lesterel",
+      "country": "fr",
+      "region": "provence-alpes-cote-d-azur",
+      "scope": "metropolitan",
+      "category": "significant_scenic_candidate_not_labelled",
+      "official_source_url": "https://www.grandsitedefrance.com/images/stories/pdf/cartes/carte-membres-rgsf.pdf",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": "Official June 2026 network map; membership or project is NOT the Grand Site de France label. Selective outdoor shortlist, not an exhaustive scenic inventory.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Massif du Ballon d’Alsace",
+      "proposed_slug": "massif-du-ballon-dalsace",
+      "country": "fr",
+      "region": "grand-est; bourgogne-franche-comte",
+      "scope": "metropolitan",
+      "category": "significant_scenic_candidate_not_labelled",
+      "official_source_url": "https://www.grandsitedefrance.com/images/stories/pdf/cartes/carte-membres-rgsf.pdf",
+      "existing_duplicates": [],
+      "existing_overlaps": [
+        "ballons-des-vosges-regional-natural-park"
+      ],
+      "note": "Official June 2026 network map; membership or project is NOT the Grand Site de France label. Selective outdoor shortlist, not an exhaustive scenic inventory.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Ocres du Luberon",
+      "proposed_slug": "ocres-du-luberon",
+      "country": "fr",
+      "region": "provence-alpes-cote-d-azur",
+      "scope": "metropolitan",
+      "category": "significant_scenic_candidate_not_labelled",
+      "official_source_url": "https://www.grandsitedefrance.com/images/stories/pdf/cartes/carte-membres-rgsf.pdf",
+      "existing_duplicates": [],
+      "existing_overlaps": [
+        "luberon-regional-nature-park"
+      ],
+      "note": "Official June 2026 network map; membership or project is NOT the Grand Site de France label. Selective outdoor shortlist, not an exhaustive scenic inventory.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Presqu’île de Giens et Salins d’Hyères",
+      "proposed_slug": "presquile-de-giens-et-salins-dhyeres",
+      "country": "fr",
+      "region": "provence-alpes-cote-d-azur",
+      "scope": "metropolitan",
+      "category": "significant_scenic_candidate_not_labelled",
+      "official_source_url": "https://www.grandsitedefrance.com/images/stories/pdf/cartes/carte-membres-rgsf.pdf",
+      "existing_duplicates": [],
+      "existing_overlaps": [
+        "port-cros-national-park"
+      ],
+      "note": "Official June 2026 network map; membership or project is NOT the Grand Site de France label. Selective outdoor shortlist, not an exhaustive scenic inventory.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Vignobles et Reculées du Jura",
+      "proposed_slug": "vignobles-et-reculees-du-jura",
+      "country": "fr",
+      "region": "bourgogne-franche-comte",
+      "scope": "metropolitan",
+      "category": "significant_scenic_candidate_not_labelled",
+      "official_source_url": "https://www.grandsitedefrance.com/images/stories/pdf/cartes/carte-membres-rgsf.pdf",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": "Official June 2026 network map; membership or project is NOT the Grand Site de France label. Selective outdoor shortlist, not an exhaustive scenic inventory.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Gerbier–Mézenc",
+      "proposed_slug": "gerbiermezenc",
+      "country": "fr",
+      "region": "auvergne-rhone-alpes",
+      "scope": "metropolitan",
+      "category": "significant_scenic_candidate_not_labelled",
+      "official_source_url": "https://www.grandsitedefrance.com/images/stories/pdf/cartes/carte-membres-rgsf.pdf",
+      "existing_duplicates": [],
+      "existing_overlaps": [
+        "monts-d-ardeche"
+      ],
+      "note": "Official June 2026 network map; membership or project is NOT the Grand Site de France label. Selective outdoor shortlist, not an exhaustive scenic inventory.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Presqu’île de Crozon",
+      "proposed_slug": "presquile-de-crozon",
+      "country": "fr",
+      "region": "brittany",
+      "scope": "metropolitan",
+      "category": "significant_scenic_candidate_not_labelled",
+      "official_source_url": "https://www.grandsitedefrance.com/images/stories/pdf/cartes/carte-membres-rgsf.pdf",
+      "existing_duplicates": [],
+      "existing_overlaps": [
+        "armorique-regional-natural-park"
+      ],
+      "note": "Official June 2026 network map; membership or project is NOT the Grand Site de France label. Selective outdoor shortlist, not an exhaustive scenic inventory.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Vallée du Hérisson–Plateau des 7 Lacs",
+      "proposed_slug": "vallee-du-herissonplateau-des-7-lacs",
+      "country": "fr",
+      "region": "bourgogne-franche-comte",
+      "scope": "metropolitan",
+      "category": "significant_scenic_candidate_not_labelled",
+      "official_source_url": "https://www.grandsitedefrance.com/images/stories/pdf/cartes/carte-membres-rgsf.pdf",
+      "existing_duplicates": [],
+      "existing_overlaps": [],
+      "note": "Official June 2026 network map; membership or project is NOT the Grand Site de France label. Selective outdoor shortlist, not an exhaustive scenic inventory.",
+      "status": "research_only_not_generation_approved"
+    },
+    {
+      "unique_name": "Des Salines à la Baie des Anglais",
+      "proposed_slug": "des-salines-a-la-baie-des-anglais",
+      "country": "fr",
+      "region": "martinique",
+      "scope": "overseas",
+      "category": "significant_scenic_candidate_not_labelled",
+      "official_source_url": "https://www.grandsitedefrance.com/images/stories/pdf/cartes/carte-membres-rgsf.pdf",
+      "existing_duplicates": [],
+      "existing_overlaps": [
+        "parc-naturel-regional-de-la-martinique"
+      ],
+      "note": "Official June 2026 network map; membership or project is NOT the Grand Site de France label. Selective outdoor shortlist, not an exhaustive scenic inventory.",
+      "status": "research_only_not_generation_approved"
+    }
+  ],
+  "counts": {
+    "missing_pnr": 11,
+    "missing_labelled_grand_site_identity": 21,
+    "significant_scenic_candidate_not_labelled": 17
+  },
+  "exact_existing_duplicates": {
+    "slug": {},
+    "wikidata": {},
+    "name": {}
+  },
+  "overlap_warnings": [
+    {
+      "slugs": [
+        "chamonix-and-mont-blanc",
+        "aiguille-du-midi"
+      ],
+      "relationship": "nested but distinct visit identity; not an automatic duplicate"
+    },
+    {
+      "slugs": [
+        "gorges-du-verdon"
+      ],
+      "candidate": "Parc naturel régional Verdon",
+      "relationship": "gorge is not the whole park; editorial separation required"
+    }
+  ],
+  "authority_domain": {
+    "domain": "world-national-parks.net",
+    "cached_evidence": [
+      "scripts/content-pipeline/claude-handoff/nordic/authority-evidence/eu.txt",
+      "scripts/content-pipeline/claude-handoff/nordic/authority-evidence/all-www.json",
+      "scripts/content-pipeline/claude-handoff/nordic/authority-evidence/all-bare.json"
+    ],
+    "confirmed_france_path": "/eu/fr/fr.htm",
+    "recovery_url": "https://web.archive.org/web/19991117013346id_/http://www.world-national-parks.net/eu/fr/fr.htm",
+    "recovery_result": "Archived File Not Found: requested URL /eu/fr/fr.htm not found on server",
+    "french_entries_in_cached_cdx_indexes": 0,
+    "recovered_french_park_names": [],
+    "conclusion": "No name-level historical French omissions can be substantiated; archive navigation proves a link only, not park coverage or exhaustive history."
+  },
+  "source_policy": {
+    "read_instructions": [
+      "AGENTS.md",
+      "scripts/content-pipeline/AGENTS.md"
+    ],
+    "cached_sources_first": true,
+    "discovery_cache": "Wikidata and Wikipedia hints, not approved official operational evidence. Includes false candidates such as Pointe du Raz Ladies Classic; never treat cache presence as approval.",
+    "live_official_pages_saved_only_under": "/tmp",
+    "generation_approved": false,
+    "operational_claims_verified": false
+  },
+  "limitations": [
+    "Scenic shortlist is selective; absence is not a completeness claim for all French landscapes.",
+    "Overseas national parks and two PNR are complete; overseas scenic coverage is not complete. One separately flagged Martinique network project identified.",
+    "No coordinates, access, booking, safety or permit claims approved.",
+    "No project edits or database writes."
+  ]
+}

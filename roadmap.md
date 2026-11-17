@@ -1,3 +1,9 @@
+## November 17 FR/PT/GR complete catalog and launch
+- [ ] Recover all 42 catalog holds with exact identity, licensed covers and sourced access; keep overseas geography separate.
+- [ ] Reconcile and expand France against official park/site inventories without arbitrary count targets.
+- [ ] Prepare English plans, sourced seasonal notes and German versions for existing and added places; retain caches.
+- [ ] Validate, publish only complete destinations, refresh geography and verify country pages, itineraries and sitemaps.
+
 ## November 17 complete the 125 FR/PT/GR drafts
 - [ ] Recover and retain exact-place licensed covers, coordinates and airport facts from existing caches.
 - [ ] Correct English display text and replace seasonal placeholders with sourced information or explicit named unknowns.
