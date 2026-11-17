@@ -87,6 +87,10 @@ def main():
                              env={**os.environ, 'PYTHONPATH': str(ROOT)})
         print(out.stdout[-6000:], out.stderr[-2000:])
         live = [l.split()[0] for l in out.stdout.splitlines() if l.endswith(' published')]
+        geo_path = Path('src/data/destination-geo.json'); geo = json.loads(geo_path.read_text())
+        for s in live:
+            geo[s] = cat[s]['country'] + '/' + rq('GET', f'destinations?slug=eq.{s}&select=region_slug')[0]['region_slug']
+        geo_path.write_text(json.dumps(dict(sorted(geo.items())), separators=(',', ':')))
         for s in live:
             rq('PATCH', f'content_translations?entity_type=eq.destination&entity_id=eq.{s}&locale=eq.de', json={'status': 'published', 'reviewed_at': 'now()'})
 

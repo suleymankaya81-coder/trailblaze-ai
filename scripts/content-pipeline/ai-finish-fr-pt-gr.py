@@ -48,15 +48,48 @@ def candidates(row, local, cache):
             out += [(k[:-4], v['title']) for k, v in e.get('sitelinks', {}).items() if k[:-4] in ('en', local, 'fr', 'de')]
         except Exception:
             pass
-    for lang in ('en', local):
-        try: out += search(lang, row['name'], cache)
-        except Exception: pass
-    return list(dict.fromkeys(out))
+    terms = [row['name']]
+    try:
+        terms += call_ai_json(f"Give up to 3 Wikipedia search terms (English or {local}) for the real place '{row['name']}' "
+                              f"({row['kind']}, {row['region']}, {row['country']}), e.g. official local name. Return {{\"terms\": [...]}}")['terms'][:3]
+    except Exception:
+        pass
+    for term in terms:
+        for lang in ('en', local, 'fr' if local != 'fr' else 'de'):
+            try: out += search(lang, term, cache)
+            except Exception: pass
+    return list(dict.fromkeys(out))[:30]
+
+def geocode(page, lang, name, cc):
+    qid = page.get('pageprops', {}).get('wikibase_item')
+    if qid:
+        try:
+            e = prepare.api('www.wikidata.org', action='wbgetclaims', entity=qid, property='P625')
+            v = e['claims']['P625'][0]['mainsnak']['datavalue']['value']
+            return v['latitude'], v['longitude']
+        except Exception:
+            pass
+    import requests, time
+    time.sleep(1)
+    extra = []
+    try:
+        extra = call_ai_json(f"Give up to 3 OpenStreetMap search queries (local-language names of the main natural feature, lake, peak or village) "
+                             f"that locate '{name}' in country {cc}. Return {{\"q\": [...]}}")['q'][:3]
+    except Exception:
+        pass
+    for q in dict.fromkeys([name, name.split(' (')[0], *re.split(r'[–/,-]| et | and ', name), *extra]):
+        if len(q.strip()) < 4: continue
+        r = requests.get('https://nominatim.openstreetmap.org/search', params={'q': q.strip(), 'format': 'json', 'limit': 1, 'countrycodes': cc},
+                         headers={'User-Agent': 'wildparkroutes-content/1.0 (info@minialife.com)'}, timeout=30).json()
+        time.sleep(1)
+        if r:
+            return float(r[0]['lat']), float(r[0]['lon'])
+    raise ValueError('no coordinates')
 
 def pick_article(row, cands):
     listing = '\n'.join(f'{i}: [{l}] {t}' for i, (l, t) in enumerate(cands))
     r = call_ai_json(f"Destination: {row['name']} ({row['kind']}, region {row['region']}, country {row['country']}).\n"
-                     f"Which Wikipedia article is exactly this place (prefer the article about the protected area/site itself)? "
+                     f"Which Wikipedia article is exactly this place (prefer the article about the protected area/site itself; never a label, list, organisation, administrative body or a different nearby place)? "
                      f"Answer {{\"index\": n}} or {{\"index\": null}} if none matches.\n{listing}")
     return None if r.get('index') is None else cands[int(r['index'])]
 
@@ -95,7 +128,18 @@ def main():
             text = page.get('extract', '').strip()
             name0 = page['title'].split(' (')[0]
             excerpt, name = fin.find_excerpt(text, name0)
-            if excerpt is None: raise ValueError('article never names place')
+            if excerpt is None:
+                excerpt = next((x.strip() for x in text.split('\n') if len(x.strip()) >= 80), None)
+                name = name0
+                if excerpt is None: raise ValueError('article too short')
+            if name.casefold() not in excerpt.casefold():
+                hit = [w for w in re.findall(r'[\w-]+', name0) if len(w) > 3 and w in excerpt and w.casefold() not in fin.GENERIC_WORDS]
+                if hit: name = max(hit, key=len)
+                else:
+                    for nm in [name0, row['name'], *[w for w in re.findall(r'[\w-]+', row['name']) if w.casefold() not in fin.GENERIC_WORDS and w.lower() != 'road']]:
+                        para = next((x.strip() for x in text.split('\n') if len(x.strip()) >= 20 and re.search(r'\b' + re.escape(nm) + r'\b', x)), None)
+                        if para:
+                            excerpt, name = para, nm; break
             url = f"https://{lang}.wikipedia.org/wiki/" + fin.quote(page['title'].replace(' ', '_'))
             packet = {'slug': slug, 'approved_for_generation': True, 'country_code': cc, 'evidence_policy': 'dach-wikipedia-overview',
                       'identity_verified': True, 'review_note': 'AI-selected Wikipedia article among search/sitelink candidates; descriptive overview only.',
@@ -105,11 +149,11 @@ def main():
             coords = page.get('coordinates') or []
             if coords: lat, lng = coords[0]['lat'], coords[0]['lon']
             elif row.get('lat') is not None: lat, lng = row['lat'], row['lng']
-            else: raise ValueError('no coordinates')
+            else: lat, lng = geocode(page, lang, name0, cc)
             if not ov:
                 lo, hi, lo2, hi2 = cfg['bounds']
                 if not (lo <= lat <= hi and lo2 <= lng <= hi2): raise ValueError('coordinates outside country')
-            photos = [p for p in article_images(page['title'], lang) + prepare.commons_search(name0, limit=15)
+            photos = [p for p in article_images(page['title'], lang) + prepare.commons_search(name0, limit=15) + prepare.commons_search(row['name'], limit=15) + [x for w in re.split(r'[–/-]| et ', name0) if len(w.strip()) > 4 for x in prepare.commons_search(w.strip(), limit=10)]
                       if p['url'] not in used and comp.licensed(p)]
             photos = list({p['file']: p for p in photos}.values())[:30]
             photo = pick_cover(row, photos) if photos else None
