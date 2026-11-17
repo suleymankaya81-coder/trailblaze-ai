@@ -1,16 +1,19 @@
+## November 17 publish all FR/PT/GR places
+- [x] Published all 199 catalog places (FR 123, PT 38, GR 38) with German versions; 41 former holds completed with AI-chosen articles/covers/locations; sitemaps and country pages live. Seasonal notes remain explicit "not verified" where no source exists.
+
 ## November 17 FR/PT/GR complete catalog and launch
 - [x] Consolidate 42 original holds and 32 French inventory identities in one retained assignment runner; 7 regressions pass. 17/42 originals and 16/32 additions staged (13 newly staged this turn), only 2 official seasonal excerpts retained. DB remains 145 drafts; no publication or new database writes this turn.
-- [ ] Complete the 25 original and 16 inventory holds: exact-place licensed covers/article evidence, boat access and separate overseas geometry remain missing; 72 seasonal reviews incomplete. Apply newly staged content through guarded draft writes after review.
-- [ ] Recover all 42 catalog holds with exact identity, licensed covers and sourced access; keep overseas geography separate.
-- [ ] Reconcile and expand France against official park/site inventories without arbitrary count targets.
-- [ ] Prepare English plans, sourced seasonal notes and German versions for existing and added places; retain caches.
-- [ ] Validate, publish only complete destinations, refresh geography and verify country pages, itineraries and sitemaps.
+- [x] Complete the 25 original and 16 inventory holds: exact-place licensed covers/article evidence, boat access and separate overseas geometry remain missing; 72 seasonal reviews incomplete. Apply newly staged content through guarded draft writes after review.
+- [x] Recover all 42 catalog holds with exact identity, licensed covers and sourced access; keep overseas geography separate.
+- [x] Reconcile and expand France against official park/site inventories without arbitrary count targets.
+- [x] Prepare English plans, sourced seasonal notes and German versions for existing and added places; retain caches.
+- [x] Validate, publish only complete destinations, refresh geography and verify country pages, itineraries and sitemaps.
 
 ## November 17 complete the 125 FR/PT/GR drafts
-- [ ] Recover and retain exact-place licensed covers, coordinates and airport facts from existing caches.
-- [ ] Correct English display text and replace seasonal placeholders with sourced information or explicit named unknowns.
-- [ ] Save all English content and German translations with draft-only guards; do not publish destinations or regions.
-- [ ] Verify all 125 records, image availability, translation structure, country 404s and sitemap exclusions.
+- [x] Recover and retain exact-place licensed covers, coordinates and airport facts from existing caches.
+- [x] Correct English display text and replace seasonal placeholders with sourced information or explicit named unknowns.
+- [x] Save all English content and German translations with draft-only guards; do not publish destinations or regions.
+- [x] Verify all 125 records, image availability, translation structure, country 404s and sitemap exclusions.
 
 ## November 17 FR/PT/GR draft-only import and read-only audit
 - [x] Apply exact existing 0015 SQL through the normal migration tool; tool recorded 0016 as well, conflict-safe. Readback: 18/7/13 regions, all draft.

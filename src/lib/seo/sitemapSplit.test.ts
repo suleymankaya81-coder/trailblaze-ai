@@ -17,12 +17,12 @@ describe("country-split sitemaps", () => {
     expect(parseChild("pt-guides-glamping")).toEqual({ country: "pt", kind: "guides-glamping" });
     expect(parseChild("gr-destinations")).toEqual({ country: "gr", kind: "destinations" });
   });
-  it("omits France/Portugal/Greece sitemap children from the index until a place is published there", async () => {
+  it("lists France/Portugal/Greece sitemap children once their places are published", async () => {
     const res = await buildSitemapResponse();
     const body = await res.text();
-    expect(body).not.toMatch(/\/sitemaps\/fr-/);
-    expect(body).not.toMatch(/\/sitemaps\/pt-/);
-    expect(body).not.toMatch(/\/sitemaps\/gr-/);
+    expect(body).toMatch(/\/sitemaps\/fr-destinations\.xml/);
+    expect(body).toMatch(/\/sitemaps\/pt-destinations\.xml/);
+    expect(body).toMatch(/\/sitemaps\/gr-destinations\.xml/);
     expect(body).toMatch(/\/sitemaps\/us-destinations\.xml/);
   });
   it("emits en/de/x-default hreflang", () => {
