@@ -53,7 +53,7 @@ export default function CountryMapCanvas({ places, country, locale }: { places: 
         maps.textContent = locale === "de" ? "In Google Maps öffnen" : "Open in Google Maps"; content.append(maps);
       }
       new maplibre.Marker({ element: marker }).setLngLat([place.lng, place.lat])
-        .setPopup(new maplibre.Popup({ offset: 12 }).setDOMContent(content)).addTo(map);
+        .setPopup(new maplibre.Popup({ offset: 12, className: "[&_.maplibregl-popup-content]:bg-card [&_.maplibregl-popup-content]:text-card-foreground" }).setDOMContent(content)).addTo(map);
     });
     const resize = new ResizeObserver(() => map.resize()); resize.observe(container.current);
     return () => { disposed = true; clearTimeout(timer); resize.disconnect(); map.remove(); };
