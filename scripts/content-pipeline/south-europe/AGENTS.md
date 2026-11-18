@@ -1,0 +1,1 @@
+- Southern Europe places come from scripts/content-pipeline/south-europe/catalog.json (it/es/pt/gr; wave 1 national parks, 2 regional/natural parks and reserves, 3 curated iconic sights and drives; Wikidata QID, coordinates and region per row); sources.json records exclusions and authority-domain mappings. Why: one complete reviewed list, no duplicate parks.

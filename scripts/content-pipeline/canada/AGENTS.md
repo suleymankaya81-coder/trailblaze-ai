@@ -1,0 +1,2 @@
+- Canada places come from scripts/content-pipeline/canada/catalog.json (wave, authority, road/fly-in); CA regions stay draft until a place in them is published. Why: one reviewed source and no empty province pages.
+- Canadian corrections and rejected photo selections live in canada/review.json and override generation retries. Why: verified corrections must not revert to the original generated mistakes.

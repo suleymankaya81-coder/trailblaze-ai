@@ -1,0 +1,1 @@
+- DACH places come from scripts/content-pipeline/dach/catalog.json (country de/at/ch, kind, wave 1 parks/biospheres, 2 iconic sights, 3 wider regions); authority names are hints, never evidence. Why: one reviewed list for source-first production.
