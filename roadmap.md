@@ -1,3 +1,8 @@
+## November 18 Belgium and Denmark production
+- [ ] Collect cached source-bound facts for Belgium's 60 and Denmark's 64 catalog candidates using the existing Nordic stages; record factual holds.
+- [ ] Translate ready places offline into English/German and publish through existing completeness checks.
+- [ ] Generate cached source-supported multi-day plans, refresh German plans and verify counts, country maps, pages and sitemaps.
+
 ## November 18 Netherlands production
 - [ ] Enable NL country publication and resumable model-free facts from the retained catalog; preserve unknown access and reject wrong-place identities.
 - [ ] Collect facts, translate EN/DE offline and publish passing places; record all holds without repeatedly spending credits.
