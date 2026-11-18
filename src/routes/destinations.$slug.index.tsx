@@ -1,7 +1,9 @@
 import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 import { SITE_ORIGIN } from "@/config/site";
 import { GeoDirectory } from "@/components/destination/GeoDirectory";
-import { getCountryRegions, getDestinationGeo, type GeoRegion } from "@/lib/data/geo.functions";
+import { getCountryMapPlaces, getCountryRegions, getDestinationGeo, type GeoRegion } from "@/lib/data/geo.functions";
+import type { CountryMapPlace } from "@/lib/routes/countryMap";
+import { CountryExplorationMap } from "@/components/destination/CountryExplorationMap";
 import { regionUnit, COUNTRIES, countryPath, isCountry, regionPath } from "@/lib/routes/paths";
 import { breadcrumbScript, countryCrumbs } from "@/lib/seo/breadcrumbs";
 import { hreflangLinks } from "@/lib/seo/hreflang";
@@ -9,7 +11,7 @@ import { hreflangLinks } from "@/lib/seo/hreflang";
 // /destinations/{country}: country directory. Older flat destination
 // addresses (/destinations/{slug}) permanently redirect to the nested page.
 export const Route = createFileRoute("/destinations/$slug/")({
-  loader: async ({ params }): Promise<{ country: string; regions: GeoRegion[] }> => {
+  loader: async ({ params }): Promise<{ country: string; regions: GeoRegion[]; places: CountryMapPlace[] }> => {
     if (!isCountry(params.slug)) {
       const geo = await getDestinationGeo({ data: { slug: params.slug } }).catch(() => null);
       if (geo) throw redirect({ href: `/destinations/${geo.country}/${geo.region}/${params.slug}`, statusCode: 301 });
@@ -17,7 +19,8 @@ export const Route = createFileRoute("/destinations/$slug/")({
     }
     const regions = await getCountryRegions({ data: { country: params.slug } });
     if (regions.length === 0) throw notFound(); // Enabled country, nothing published yet: no empty page.
-    return { country: params.slug, regions };
+    const places = await getCountryMapPlaces({ data: { country: params.slug } });
+    return { country: params.slug, regions, places };
   },
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Destination not found — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
@@ -37,6 +40,10 @@ export const Route = createFileRoute("/destinations/$slug/")({
         { property: "og:url", content: url },
         { property: "og:type", content: "website" },
         { name: "twitter:card", content: "summary_large_image" },
+        ...(loaderData.regions[0]?.heroImage?.startsWith("https://") ? [
+          { property: "og:image", content: loaderData.regions[0].heroImage },
+          { name: "twitter:image", content: loaderData.regions[0].heroImage },
+        ] : []),
       ],
       links: [{ rel: "canonical", href: url }, ...hreflangLinks(countryPath(loaderData.country), ["en", "de"])],
       scripts: [breadcrumbScript(countryCrumbs(loaderData.country))],
@@ -48,7 +55,7 @@ export const Route = createFileRoute("/destinations/$slug/")({
 });
 
 function CountryPage() {
-  const { country, regions } = Route.useLoaderData();
+  const { country, regions, places } = Route.useLoaderData();
   const name = COUNTRIES[country].name;
   const u = regionUnit(country);
   return (
@@ -61,6 +68,6 @@ function CountryPage() {
       action="See destinations"
       image={regions[0]?.heroImage}
       items={regions.map((r) => ({ to: regionPath(country, r.slug), title: r.name, image: r.heroImage, info: `${r.count} destinations` }))}
-    />
+    ><CountryExplorationMap country={country} places={places} regions={regions} /></GeoDirectory>
   );
 }

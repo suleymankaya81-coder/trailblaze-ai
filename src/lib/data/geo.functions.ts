@@ -1,11 +1,23 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
+import { validMapCoordinate, type CountryMapPlace } from "@/lib/routes/countryMap";
 
 export type GeoPlace = { slug: string; name: string; heroImage: string; tagline: string | null; bestSeason: string | null };
 export type GeoRegion = { slug: string; name: string; count: number; heroImage: string };
 
 const code = z.string().regex(/^[a-z0-9-]{2,100}$/);
+
+/** Published geographic points only; no visit permission or driving availability is inferred. */
+export const getCountryMapPlaces = createServerFn({ method: "GET" })
+  .inputValidator((input: unknown) => z.object({ country: code }).parse(input))
+  .handler(async ({ data }): Promise<CountryMapPlace[]> => {
+    const { data: rows, error } = await supabase.from("destinations")
+      .select("slug,name,region_slug,lat,lng,access_type").eq("country_code", data.country).eq("status", "published").order("name");
+    if (error) throw error;
+    return (rows ?? []).flatMap(r => r.region_slug && r.lat != null && r.lng != null && validMapCoordinate(r.lat, r.lng)
+      ? [{ slug: r.slug, name: r.name, region: r.region_slug, lat: r.lat, lng: r.lng, access: r.access_type }] : []);
+  });
 
 /** Regions of one country with their published destination counts and a cover. */
 export const getCountryRegions = createServerFn({ method: "GET" })

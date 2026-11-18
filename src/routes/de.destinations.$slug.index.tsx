@@ -1,7 +1,9 @@
 import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 import { SITE_ORIGIN } from "@/config/site";
 import { GeoDirectory } from "@/components/destination/GeoDirectory";
-import { getCountryRegions, getDestinationGeo, type GeoRegion } from "@/lib/data/geo.functions";
+import { getCountryMapPlaces, getCountryRegions, getDestinationGeo, type GeoRegion } from "@/lib/data/geo.functions";
+import type { CountryMapPlace } from "@/lib/routes/countryMap";
+import { CountryExplorationMap } from "@/components/destination/CountryExplorationMap";
 import { regionUnit, deIn, COUNTRIES, countryPath, isCountry, regionPath } from "@/lib/routes/paths";
 import { breadcrumbScript } from "@/lib/seo/breadcrumbs";
 import { deGeoCrumbs, deMeta } from "@/lib/i18n/deSeo";
@@ -9,7 +11,7 @@ import { hreflangLinks } from "@/lib/seo/hreflang";
 
 // /de/destinations/{country}; older /de/destinations/{slug} addresses 301 to the nested page.
 export const Route = createFileRoute("/de/destinations/$slug/")({
-  loader: async ({ params }): Promise<{ country: string; regions: GeoRegion[] }> => {
+  loader: async ({ params }): Promise<{ country: string; regions: GeoRegion[]; places: CountryMapPlace[] }> => {
     if (!isCountry(params.slug)) {
       const geo = await getDestinationGeo({ data: { slug: params.slug } }).catch(() => null);
       if (geo) throw redirect({ href: `/de/destinations/${geo.country}/${geo.region}/${params.slug}`, statusCode: 301 });
@@ -17,7 +19,8 @@ export const Route = createFileRoute("/de/destinations/$slug/")({
     }
     const regions = await getCountryRegions({ data: { country: params.slug } });
     if (regions.length === 0) throw notFound(); // Enabled country, nothing published yet: no empty page.
-    return { country: params.slug, regions };
+    const places = await getCountryMapPlaces({ data: { country: params.slug } });
+    return { country: params.slug, regions, places };
   },
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Nicht verfügbar — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
@@ -28,7 +31,11 @@ export const Route = createFileRoute("/de/destinations/$slug/")({
     const description = `${total} Parks und Outdoor-Ziele ${deIn(loaderData.country, name)} in ${loaderData.regions.length} ${u.dePlural}: Flughäfen, Mietwagen, Reisepläne und beste Reisezeit.`;
     const url = `${SITE_ORIGIN}${countryPath(loaderData.country, "de")}`;
     return {
-      meta: [...deMeta(title, description, url), { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }],
+      meta: [...deMeta(title, description, url), { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
+        ...(loaderData.regions[0]?.heroImage?.startsWith("https://") ? [
+          { property: "og:image", content: loaderData.regions[0].heroImage },
+          { name: "twitter:image", content: loaderData.regions[0].heroImage },
+        ] : [])],
       links: [{ rel: "canonical", href: url }, ...hreflangLinks(countryPath(loaderData.country), ["en", "de"])],
       scripts: [breadcrumbScript(deGeoCrumbs(loaderData.country))],
     };
@@ -39,7 +46,7 @@ export const Route = createFileRoute("/de/destinations/$slug/")({
 });
 
 function Page() {
-  const { country, regions } = Route.useLoaderData();
+  const { country, regions, places } = Route.useLoaderData();
   const name = COUNTRIES[country].nameDe;
   const u = regionUnit(country);
   return (
@@ -52,6 +59,6 @@ function Page() {
       action="Reiseziele ansehen"
       image={regions[0]?.heroImage}
       items={regions.map((r) => ({ to: regionPath(country, r.slug, "de"), title: r.name, image: r.heroImage, info: `${r.count} Reiseziele` }))}
-    />
+    ><CountryExplorationMap country={country} places={places} regions={regions} locale="de" /></GeoDirectory>
   );
 }

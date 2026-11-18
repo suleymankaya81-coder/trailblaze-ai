@@ -1,3 +1,8 @@
+## November 18 country exploration maps
+- [x] Add shared English/German country maps using published destination coordinates, with region/search filters and destination links; countries without publications retain 404.
+- [x] Audit 2,108 published coordinates and 3,954 daily map URL targets across 3,953 days; no invalid targets or waypoint-limit failures. Google Maps resolution remains unverified without live provider checks.
+- [x] Verify all 15 country pages, desktop destination search/click and German mobile layout; 13 link tests pass and preview build OK.
+
 ## November 18 Iceland publication and multi-day plans
 - [ ] Resume the 40 cached facts, translate offline and publish complete places through existing checks.
 - [ ] Run cached source-bound AI day planning for published Iceland places and refresh German plans.
