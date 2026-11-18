@@ -110,7 +110,7 @@ def _identity(row, lang):
         result = fin.identity_and_packet({**row, 'wikidata': qid}, row['country'], lang, CACHE)
         countries = {c.get('mainsnak', {}).get('datavalue', {}).get('value', {}).get('id')
                      for c in result[3].get('claims', {}).get('P17', [])}
-        expected = {'no': 'Q20', 'is': 'Q189', 'se': 'Q34', 'fi': 'Q33', 'dk': 'Q35'}
+        expected = {'no': 'Q20', 'is': 'Q189', 'se': 'Q34', 'fi': 'Q33', 'dk': 'Q35', 'nl': 'Q55'}
         if countries and expected[row['country']] not in countries:
             raise ValueError('Wikipedia search identity belongs to another country')
         return result

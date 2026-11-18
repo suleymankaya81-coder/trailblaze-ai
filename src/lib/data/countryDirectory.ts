@@ -25,6 +25,7 @@ const META: Record<string, { flag: string; continent: Continent }> = {
   se: { flag: "🇸🇪", continent: "europe" },
   fi: { flag: "🇫🇮", continent: "europe" },
   dk: { flag: "🇩🇰", continent: "europe" },
+  nl: { flag: "🇳🇱", continent: "europe" },
 };
 
 export interface CountryEntry { code: string; name: string; nameDe: string; flag: string; continent: Continent; places: number; regions: number }

@@ -1,3 +1,8 @@
+## November 18 Netherlands production
+- [ ] Enable NL country publication and resumable model-free facts from the retained catalog; preserve unknown access and reject wrong-place identities.
+- [ ] Collect facts, translate EN/DE offline and publish passing places; record all holds without repeatedly spending credits.
+- [ ] Verify published counts, country/destination pages and sitemaps; report remaining candidates.
+
 ## November 18 Netherlands, Belgium, Denmark and Ireland catalogs
 - [x] Assemble source-linked NL 305 / BE 60 / IE 159 candidate catalogs and preserve/recheck all 64 Denmark records; 588 total research candidates, not publication-ready pages.
 - [x] Reconcile nine inventory ledgers and retained authority navigation; NL/IE archived country captures return 404, historic park-name completeness remains unknown; note coordinates/regions and scope-review gaps.

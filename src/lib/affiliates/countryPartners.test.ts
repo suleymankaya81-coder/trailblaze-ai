@@ -3,6 +3,10 @@ import { carLinkFor, countryCurrency, formatCountryPrice, partnersFor, rvLinkFor
 
 const AFTER_BF = Date.UTC(2027, 0, 10);
 describe("country partners", () => {
+  it("Netherlands uses EUR and excludes US campground partners", () => {
+    expect(countryCurrency("nl")).toBe("EUR");
+    expect(partnersFor("nl", "campground")).toEqual([]);
+  });
   it("US campgrounds are RoverPass, Campspot and Harvest Hosts", () => expect(partnersFor("us", "campground")).toEqual(["roverpass", "campspot", "harvest_hosts"]));
   it("Canada has no US-only campground partners", () => expect(partnersFor("CA", "campground")).toEqual([]));
   it("unknown countries get no partners", () => { expect(partnersFor("jp", "rv")).toEqual([]); expect(rvLinkFor("jp")).toBeNull(); expect(carLinkFor("jp")).toBeNull(); });

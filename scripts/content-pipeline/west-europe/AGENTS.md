@@ -1,0 +1,1 @@
+- Western country production reuses the Nordic stages with isolated per-country caches and exact country identity checks; never infer boat access from an unknown catalog field. Why: new production remains resumable without contaminating published country geometry.
