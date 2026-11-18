@@ -33,7 +33,7 @@ def fetch_source(url):
 
 def allows_wikipedia_overview(packet):
     return (packet.get('evidence_policy') == 'dach-wikipedia-overview'
-            and packet.get('country_code') in ('de', 'at', 'ch', 'it', 'es', 'fr', 'pt', 'gr', 'no', 'is', 'se', 'fi', 'dk', 'nl')
+            and packet.get('country_code') in ('de', 'at', 'ch', 'it', 'es', 'fr', 'pt', 'gr', 'no', 'is', 'se', 'fi', 'dk', 'nl', 'be', 'ie')
             and packet.get('identity_verified') is True)
 
 def overview_source(source, packet):

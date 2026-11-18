@@ -6,6 +6,17 @@ from unittest.mock import patch
 import source_evidence as evidence
 
 class SourceEvidenceTests(unittest.TestCase):
+    def test_belgium_uses_verified_nordic_overview_policy(self):
+        packet = {'country_code': 'be', 'evidence_policy': 'dach-wikipedia-overview', 'identity_verified': True}
+        source = {'kind': 'wikipedia', 'url': 'https://nl.wikipedia.org/wiki/Zwin'}
+        self.assertTrue(evidence.overview_source(source, packet))
+        self.assertFalse(evidence.overview_source(source, {**packet, 'identity_verified': False}))
+
+    def test_ireland_uses_verified_western_overview_policy(self):
+        packet = {'country_code': 'ie', 'evidence_policy': 'dach-wikipedia-overview', 'identity_verified': True}
+        self.assertTrue(evidence.overview_source({'kind': 'wikipedia', 'url': 'https://en.wikipedia.org/wiki/Killarney_National_Park'}, packet))
+        self.assertFalse(evidence.overview_source({'kind': 'wikipedia', 'url': 'https://example.com/wiki/Park'}, packet))
+
     def test_missing_source_blocks_generation(self):
         with tempfile.TemporaryDirectory() as root, patch.object(evidence, 'PACKETS', Path(root)):
             with self.assertRaisesRegex(ValueError, 'collect and review'):

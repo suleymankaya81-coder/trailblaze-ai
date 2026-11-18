@@ -1,5 +1,5 @@
 ## November 18 Belgium and Denmark production
-- [ ] Collect cached source-bound facts for Belgium's 60 and Denmark's 64 catalog candidates using the existing Nordic stages; record factual holds.
+- [x] Collect cached source-bound facts for Belgium's 60 and Denmark's 64 catalog candidates using the existing Nordic stages; 38 Belgium and 48 Denmark bundles ready for translation, 22 Belgium and 16 Denmark factual holds recorded.
 - [ ] Translate ready places offline into English/German and publish through existing completeness checks.
 - [ ] Generate cached source-supported multi-day plans, refresh German plans and verify counts, country maps, pages and sitemaps.
 
