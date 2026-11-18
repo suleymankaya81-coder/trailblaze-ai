@@ -1,3 +1,8 @@
+## November 18 Netherlands, Belgium, Denmark and Ireland catalogs
+- [x] Assemble source-linked NL 305 / BE 60 / IE 159 candidate catalogs and preserve/recheck all 64 Denmark records; 588 total research candidates, not publication-ready pages.
+- [x] Reconcile nine inventory ledgers and retained authority navigation; NL/IE archived country captures return 404, historic park-name completeness remains unknown; note coordinates/regions and scope-review gaps.
+- [x] Validate all country files and 26 lossless batches with five tests; package catalog sources and instructions without publishing.
+
 ## November 18 country exploration maps
 - [x] Add shared English/German country maps using published destination coordinates, with region/search filters and destination links; countries without publications retain 404.
 - [x] Audit 2,108 published coordinates and 3,954 daily map URL targets across 3,953 days; no invalid targets or waypoint-limit failures. Google Maps resolution remains unverified without live provider checks.

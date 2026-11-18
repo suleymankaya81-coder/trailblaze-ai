@@ -1,0 +1,1 @@
+- Western Europe catalogs preserve country-array inputs, original Denmark slugs, inventory ledgers and source snapshots; unknown navigation/access facts stay null. Why: resumable production must not mistake directory discovery for verified visits.

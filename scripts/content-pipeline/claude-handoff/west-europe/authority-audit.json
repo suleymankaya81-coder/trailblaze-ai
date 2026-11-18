@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-11-18",
+  "domain": "world-national-parks.net",
+  "navigation_snapshot": "../nordic/authority-evidence/eu.txt",
+  "confirmed_country_paths": {
+    "nl": "/eu/ne/ne.htm",
+    "ie": "/eu/ir/ir.htm"
+  },
+  "unconfirmed": [
+    "be",
+    "dk"
+  ],
+  "checks": [
+    {
+      "country": "nl",
+      "requested_url": "https://web.archive.org/web/19991117013346id_/http://www.world-national-parks.net/eu/ne/ne.htm",
+      "http_status": 404,
+      "result": "archive fetch unavailable; no historical park-name completeness claim"
+    },
+    {
+      "country": "ie",
+      "requested_url": "https://web.archive.org/web/19991117013346id_/http://www.world-national-parks.net/eu/ir/ir.htm",
+      "http_status": 404,
+      "result": "archive fetch unavailable; no historical park-name completeness claim"
+    }
+  ],
+  "recovered_park_names": [],
+  "conclusion": "Country navigation checked; archived park names unavailable. National inventory coverage is verified separately, historical name coverage remains unknown."
+}

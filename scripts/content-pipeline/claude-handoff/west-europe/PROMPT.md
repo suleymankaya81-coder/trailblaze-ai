@@ -1,0 +1,5 @@
+# Kaynaklı sayfa üretimi girdisi
+
+Her kayıt için aynı slug ile tek sonuç üret. Yalnız verilen ve gerçekten okunan kaynaklardan İngilizce içerik yaz; hatırladığın durak, sezon, giriş hakkı, ücret, kamp veya feribot bilgisi ekleme. Kaynak dizini linki tam yer kanıtı değildir. `research_candidate` ve `scope_review` kayıtlarını önce doğru kimlik ve ziyaretçi uygunluğu açısından incele; küçük biyotop, kapalı özel alan veya yalnız mimari yapı için `hold` döndür.
+
+Mevcut `schema.json` biçimini kullan. Duraklar kaynakta adıyla geçmeli, tam alıntı ve kaynak URL'si içermeli. 2–3 gün yalnız gerçek duraklar yeterliyse hazırlanır; kısa ziyaretleri uzatma. Güncel erişim resmî kaynaktan doğrulanmıyorsa bilinmiyor bırak. Konum yoksa null bırak; park merkezi giriş/otopark değildir. Fotoğraf ve lisansları bu metin üretim aşamasında uydurma. Bir ülkenin 25 kayıtlık dosyalarını sırayla işle; çıktıyı önbelleğe kaydet, aynı kaydı yeniden üretme. Hiçbir sonuç otomatik yayımlanmaz.
