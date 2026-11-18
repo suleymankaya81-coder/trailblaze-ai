@@ -26,6 +26,7 @@ const META: Record<string, { flag: string; continent: Continent }> = {
   fi: { flag: "🇫🇮", continent: "europe" },
   dk: { flag: "🇩🇰", continent: "europe" },
   nl: { flag: "🇳🇱", continent: "europe" },
+  be: { flag: "🇧🇪", continent: "europe" },
 };
 
 export interface CountryEntry { code: string; name: string; nameDe: string; flag: string; continent: Continent; places: number; regions: number }
@@ -37,11 +38,11 @@ function build(): CountryEntry[] {
     const [c, r] = v.split("/");
     places.set(c, (places.get(c) ?? 0) + 1);
     if (!regions.has(c)) regions.set(c, new Set());
-    regions.get(c)!.add(r);
+    regions.get(c)?.add(r);
   }
   return Object.entries(COUNTRIES)
     .filter(([code]) => (places.get(code) ?? 0) > 0 && META[code])
-    .map(([code, n]) => ({ code, name: n.name, nameDe: n.nameDe, ...META[code], places: places.get(code)!, regions: regions.get(code)!.size }))
+    .map(([code, n]) => ({ code, name: n.name, nameDe: n.nameDe, ...META[code], places: places.get(code) ?? 0, regions: regions.get(code)?.size ?? 0 }))
     .sort((a, b) => b.places - a.places);
 }
 

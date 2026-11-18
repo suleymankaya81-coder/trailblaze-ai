@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hallerbos",
+      "quote": "Der Hallerbos (niederländisch für Wald von Halle) ist ein Mischwald in der Provinz Flämisch-Brabant bei Halle in Belgien, etwa 25 km südwestlich der Hauptstadt Brüssel.",
+      "english": "The Hallerbos (Dutch for Forest of Halle) is a mixed forest in the province of Flemish Brabant near Halle in Belgium, about 25 km southwest of the capital Brussels."
+    },
+    {
+      "id": "s2",
+      "name": "Marksteine",
+      "quote": "Da es immer wieder zu Grenzstreitigkeiten kam, wurden im 18. Jahrhundert 24 Marksteine (Grenzpfähle) angebracht, von denen noch 19 im Wald zu finden sind.",
+      "english": "Since there were repeated border disputes, 24 boundary stones (boundary posts) were installed in the 18th century, 19 of which can still be found in the forest."
+    },
+    {
+      "id": "s3",
+      "name": "Sequoiawandeling",
+      "quote": "Der Hallerbos steht unter Naturschutz, aber es führen zahlreiche Wanderwege durch den Wald, u. a. die „Sequoiawandeling“ (dt. Sequoiawanderung, 3,5 km) oder die „Reebokwandeling“ (dt. Rehbockwanderung, 7,5 km).",
+      "english": "The Hallerbos is a nature reserve, but numerous hiking trails lead through the forest, including the \"Sequoiawandeling\" (German: Sequoia Hike, 3.5 km) or the \"Reebokwandeling\" (German: Roe Deer Hike, 7.5 km)."
+    },
+    {
+      "id": "s4",
+      "name": "Reebokwandeling",
+      "quote": "Der Hallerbos steht unter Naturschutz, aber es führen zahlreiche Wanderwege durch den Wald, u. a. die „Sequoiawandeling“ (dt. Sequoiawanderung, 3.5 km) oder die „Reebokwandeling“ (dt. Rehbockwanderung, 7.5 km).",
+      "english": "The Hallerbos is a nature reserve, but numerous hiking trails lead through the forest, including the \"Sequoiawandeling\" (German: Sequoia Hike, 3.5 km) or the \"Reebokwandeling\" (German: Roe Deer Hike, 7.5 km)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Hallerbos Forest and Trail Exploration",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "6404e32f0b5c8614d6d3d1631d946446eaeb441964a077c0b1800ba2caf509c2"
+}

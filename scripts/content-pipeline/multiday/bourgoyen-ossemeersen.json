@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "nassen, oft überfluteten Weiden",
+      "quote": "Es besteht zum größten Teil aus nassen, oft überfluteten Weiden mit Gräben und Kanälen und ist ein wichtiges Überwinterungsgebiet für Wasservögel.",
+      "english": "It consists for the most part of wet, often flooded meadows with ditches and canals and is an important overwintering area for waterfowl."
+    },
+    {
+      "id": "s2",
+      "name": "Gräben",
+      "quote": "Es besteht zum größten Teil aus nassen, oft überfluteten Weiden mit Gräben und Kanälen und ist ein wichtiges Überwinterungsgebiet für Wasservögel.",
+      "english": "It consists for the most part of wet, often flooded meadows with ditches and canals and is an important overwintering area for waterfowl."
+    },
+    {
+      "id": "s3",
+      "name": "Kanälen",
+      "quote": "Es besteht zum größten Teil aus nassen, oft überfluteten Weiden mit Gräben und Kanälen und ist ein wichtiges Überwinterungsgebiet für Wasservögel.",
+      "english": "It consists for the most part of wet, often flooded meadows with ditches and canals and is an important overwintering area for waterfowl."
+    },
+    {
+      "id": "s4",
+      "name": "drei Hauptwanderwege",
+      "quote": "Es gibt drei Hauptwanderwege durch das Reservat und im Zentrum befindet sich das Valkenhuis (Falknerei), ein historisches Gebäude, dass von den Falknern der Grafen von Flandern genutzt wurde.",
+      "english": "There are three main hiking trails through the reserve and in the center is the Valkenhuis (falconry), a historic building that was used by the falconers of the Counts of Flanders."
+    },
+    {
+      "id": "s5",
+      "name": "Valkenhuis (Falknerei)",
+      "quote": "Es gibt drei Hauptwanderwege durch das Reservat und im Zentrum befindet sich das Valkenhuis (Falknerei), ein historisches Gebäude, dass von den Falknern der Grafen von Flandern genutzt wurde.",
+      "english": "There are three main hiking trails through the reserve and in the center is the Valkenhuis (falconry), a historic building that was used by the falconers of the Counts of Flanders."
+    },
+    {
+      "id": "s6",
+      "name": "Besucherzentrum",
+      "quote": "2006 wurde ein Besucherzentrum am Eingang zum Reservat errichtet.",
+      "english": "In 2006, a visitor center was built at the entrance to the reserve."
+    },
+    {
+      "id": "s7",
+      "name": "Lärmschutzwälle",
+      "quote": "Lärmschutzwälle wurden errichtet, um die Lärmbelastung für die wildlebenden Tiere zu verringern.",
+      "english": "Noise barriers were built to reduce noise pollution for wildlife."
+    }
+  ],
+  "days": [
+    {
+      "title": "Wetlands and Waterways",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Historical Center and Trails",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Entrance and Infrastructure",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "c43d478d04411af2608a88e110278b590aa780bd523c8ffa063bc57b8cacd2ba"
+}

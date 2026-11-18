@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Botrange",
+      "quote": "Ein Naturparkzentrum ist auf der Botrange eingerichtet, zudem in der Hocheifel das Naturparkzentrum Prümer Land.",
+      "english": "A nature park center is established on the Botrange, as well as the nature park center Prümer Land in the High Eifel."
+    },
+    {
+      "id": "s2",
+      "name": "Naturparkzentrum Prümer Land",
+      "quote": "Ein Naturparkzentrum ist auf der Botrange eingerichtet, zudem in der Hocheifel das Naturparkzentrum Prümer Land.",
+      "english": "A nature park center is established on the Botrange, as well as the nature park center Prümer Land in the High Eifel."
+    },
+    {
+      "id": "s3",
+      "name": "Hohe Venn",
+      "quote": "Der Naturpark liegt zwischen Langerwehe und Eupen im Norden sowie Bad Münstereifel, Prüm und Sankt Vith im Süden und umfasst sechs Gebiete: die Rureifel, die Westliche Hocheifel, die Kalkeifel, das Ourtal, das Vennvorland und das Hohe Venn, eine Hochmoor- und Heidelandschaft, die am Ende der letzten Eiszeit vor 7500 Jahren entstand.",
+      "english": "The nature park is located between Langerwehe and Eupen in the north and Bad Münstereifel, Prüm and Sankt Vith in the south and comprises six areas: the Rur Eifel, the Western High Eifel, the Limestone Eifel, the Our Valley, the Venn Foreland and the High Fens, a high moor and heath landscape that was formed at the end of the last ice age 7,500 years ago."
+    },
+    {
+      "id": "s4",
+      "name": "Ourtal",
+      "quote": "Der Naturpark liegt zwischen Langerwehe und Eupen im Norden sowie Bad Münstereifel, Prüm und Sankt Vith im Süden und umfasst sechs Gebiete: die Rureifel, die Westliche Hocheifel, die Kalkeifel, das Ourtal, das Vennvorland und das Hohe Venn, eine Hochmoor- und Heidelandschaft, die am Ende der letzten Eiszeit vor 7500 Jahren entstand.",
+      "english": "The nature park is located between Langerwehe and Eupen in the north and Bad Münstereifel, Prüm and Sankt Vith in the south and comprises six areas: the Rur Eifel, the Western High Eifel, the Limestone Eifel, the Our Valley, the Venn Foreland and the High Fens, a high moor and heath landscape that was formed at the end of the last ice age 7,500 years ago."
+    },
+    {
+      "id": "s5",
+      "name": "Drover Heide",
+      "quote": "Es handelt sich um die Hänge westlich des Wehebaches bei Langerwehe, die Ruraue bei Kreuzau und die Drover Heide bei Vettweiß.",
+      "english": "These are the slopes west of the Wehebach near Langerwehe, the Rur floodplain near Kreuzau and the Drover Heath near Vettweiß."
+    },
+    {
+      "id": "s6",
+      "name": "Ruraue",
+      "quote": "Es handelt sich um die Hänge westlich des Wehebaches bei Langerwehe, die Ruraue bei Kreuzau und die Drover Heide bei Vettweiß.",
+      "english": "These are the slopes west of the Wehebach near Langerwehe, the Rur floodplain near Kreuzau and the Drover Heath near Vettweiß."
+    },
+    {
+      "id": "s7",
+      "name": "Urftstausee",
+      "quote": "Inmitten des Naturparks liegt, im Wesentlichen auf dem ehemaligen Truppenübungsplatz Vogelsang und um den Urftstausee, der 2004 gegründete und nach dem Abzug der belgischen Streitkräfte zum 1. Januar 2006 erweiterte Nationalpark Eifel.",
+      "english": "In the middle of the nature park lies the Eifel National Park, which was founded in 2004 and expanded after the withdrawal of the Belgian armed forces on January 1, 2006, essentially on the former Vogelsang military training area and around the Urft reservoir."
+    },
+    {
+      "id": "s8",
+      "name": "Vogelsang",
+      "quote": "Inmitten des Naturparks liegt, im Wesentlichen auf dem ehemaligen Truppenübungsplatz Vogelsang und um den Urftstausee, der 2004 gegründete und nach dem Abzug der belgischen Streitkräfte zum 1. Januar 2006 erweiterte Nationalpark Eifel.",
+      "english": "In the middle of the nature park lies the Eifel National Park, which was founded in 2004 and expanded after the withdrawal of the Belgian armed forces on January 1, 2006, essentially on the former Vogelsang military training area and around the Urft reservoir."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Fens and Southern Eifel Visitor Centres",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Northern Heath and River Landscapes",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s4"
+      ]
+    },
+    {
+      "title": "National Park Eifel Highlights",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "ee6dcd01ea35b0e667b1668f01f3da5cab5adbb33f6150cacf7f4c8a59cf42eb"
+}

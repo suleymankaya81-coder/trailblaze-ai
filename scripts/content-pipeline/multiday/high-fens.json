@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Botrange",
+      "quote": "Mit 694 m O.P. ist die Botrange sowohl die höchste Erhebung im Hohen Venn als auch der höchste Berg in Belgien.",
+      "english": "At 694 m O.P., the Botrange is both the highest elevation in the High Fens and the highest mountain in Belgium."
+    },
+    {
+      "id": "s2",
+      "name": "Mont-Rigi",
+      "quote": "Die früheste Schneedecke wurde am 3. Oktober 1994 an der Wetterstation nahe Mont-Rigi, die späteste am 22. Mai 1987 bei Botrange beobachtet.",
+      "english": "The earliest snow cover was observed on October 3, 1994, at the weather station near Mont-Rigi, the latest on May 22, 1987, near Botrange."
+    },
+    {
+      "id": "s3",
+      "name": "Wesertalsperre",
+      "quote": "Wesertalsperre bei Eupen (Trinkwasser)",
+      "english": "Weser Dam near Eupen (drinking water)"
+    },
+    {
+      "id": "s4",
+      "name": "Gileppetalsperre",
+      "quote": "Gileppetalsperre bei Eupen (Trinkwasser)",
+      "english": "Gileppe Dam near Eupen (drinking water)"
+    },
+    {
+      "id": "s5",
+      "name": "Kalltalsperre",
+      "quote": "Kalltalsperre bei Simmerath (Trinkwasser); Vennplateau, Naturraum Nr. 280.0",
+      "english": "Kall Dam near Simmerath (drinking water); Venn plateau, natural area No. 280.0"
+    },
+    {
+      "id": "s6",
+      "name": "Perlenbachtalsperre",
+      "quote": "Perlenbachtalsperre bei Monschau (Trinkwasser und Stromerzeugung)",
+      "english": "Perlenbach Dam near Monschau (drinking water and power generation)"
+    },
+    {
+      "id": "s7",
+      "name": "Richelsley",
+      "quote": "Die Erhebungen des Venns sind Härtlinge, die im Wesentlichen aus diesen Quarzit-Sandsteinen bestehen: Botrange, Pannensterz, Richelsley, Steling, Kaiser Karls Bettstatt, Hoscheit und Langschoß.",
+      "english": "The elevations of the Fens are monadnocks, which essentially consist of these quartzite sandstones: Botrange, Pannensterz, Richelsley, Steling, Kaiser Karls Bettstatt, Hoscheit and Langschoß."
+    },
+    {
+      "id": "s8",
+      "name": "Dreilägerbachtalsperre",
+      "quote": "Dreilägerbachtalsperre bei Roetgen (Trinkwasser); nördl. Vennvorland, Naturraum Nr. 280.1",
+      "english": "Dreilägerbach Dam near Roetgen (drinking water); northern Fen foothills, natural area No. 280.1"
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Weather Stations",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Belgian Border Reservoirs",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s8"
+      ]
+    },
+    {
+      "title": "Eifel Side Waterways",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "4f88fef0b32c792ac952739758d6db73892b278262782f9404625f6946c9a3e1"
+}

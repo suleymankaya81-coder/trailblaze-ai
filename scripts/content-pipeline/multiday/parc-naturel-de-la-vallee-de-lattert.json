@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Attert",
+      "quote": "Die Attert (luxemburgisch ) ist ein 38 Kilometer langer Fluss, der im südöstlichen Belgien entspringt, aber großteils durch Luxemburg fließt.",
+      "english": "The Attert (Luxembourgish ) is a 38-kilometer-long river that rises in southeastern Belgium but flows mostly through Luxembourg."
+    },
+    {
+      "id": "s2",
+      "name": "Thiaumont",
+      "quote": "Die Quelle befindet sich auf etwa 406 Meter über NN nahe der ostbelgischen Ortschaft Thiaumont, gut 11 Kilometer nordwestlich der Provinzhauptstadt Arlon.",
+      "english": "The source is located at approximately 406 meters above sea level near the East Belgian village of Thiaumont, a good 11 kilometers northwest of the provincial capital Arlon."
+    },
+    {
+      "id": "s3",
+      "name": "Grendel",
+      "quote": "Der Fluss verläuft in östlicher Richtung und erreicht kurz nach den belgischen Orten Attert und Grendel die Grenze zu Luxemburg.",
+      "english": "The river runs in an easterly direction and reaches the border with Luxembourg shortly after the Belgian towns of Attert and Grendel."
+    },
+    {
+      "id": "s4",
+      "name": "Redingen",
+      "quote": "Größere Orte am Flusslauf sind ferner Redingen, Useldingen (lux. Useldéng), Böwingen/Attert und Bissen.",
+      "english": "Larger towns along the river's course are also Redingen, Useldingen (Lux. Useldéng), Böwingen/Attert and Bissen."
+    }
+  ],
+  "days": [
+    {
+      "title": "Villages along the Attert river",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "4c887a7a4808ee0943bd18bd99fd69a30211a7a880be3a32d2d08d1e0bbfa826"
+}

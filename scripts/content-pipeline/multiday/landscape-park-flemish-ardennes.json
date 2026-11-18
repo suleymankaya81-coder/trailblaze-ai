@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Botrange",
+      "quote": "Höchste Erhebung ist die Botrange in der Provinz Lüttich mit 694 m über Peil bei Ostende.",
+      "english": "The highest elevation is the Botrange in the province of Liège at 694 m above the Ostend reference level."
+    },
+    {
+      "id": "s2",
+      "name": "Hohes Venn",
+      "quote": "Das Hohe Venn kann beiden Gebirgen zugerechnet werden.",
+      "english": "The High Fens can be attributed to both mountain ranges."
+    },
+    {
+      "id": "s3",
+      "name": "Baraque de Fraiture",
+      "quote": "Die höchste nur den Ardennen zuzurechnende Erhebung ist der Baraque de Fraiture im Norden der Provinz Luxemburg (Belgien) mit 652 m über Meeresspiegel.",
+      "english": "The highest elevation attributable only to the Ardennes is the Baraque de Fraiture in the north of the province of Luxembourg (Belgium) at 652 m above sea level."
+    },
+    {
+      "id": "s4",
+      "name": "Tal der Our",
+      "quote": "Südlich davon kann das Tal der Our als Grenze zwischen Eifel und Ardennen angesehen werden.",
+      "english": "South of there, the Our Valley can be seen as the border between the Eifel and the Ardennes."
+    },
+    {
+      "id": "s5",
+      "name": "Durchbruchstal der Maas",
+      "quote": "Das bedeutendste Ardennental ist das Durchbruchstal der Maas zwischen Charleville-Mézières und Namur, besonders tief eingeschnitten zwischen Charleville und Dinant.",
+      "english": "The most significant Ardennes valley is the Meuse Gorge between Charleville-Mézières and Namur, particularly deeply carved between Charleville and Dinant."
+    },
+    {
+      "id": "s6",
+      "name": "Tal der Sambre",
+      "quote": "Nördliche Begrenzung der Ardennen ist das Tal der Sambre und der anschließende Anschnitt des Maastales zwischen Namur und Lüttich.",
+      "english": "The northern boundary of the Ardennes is the Sambre Valley and the subsequent section of the Meuse Valley between Namur and Liège."
+    },
+    {
+      "id": "s7",
+      "name": "Crêtes Préardennaises",
+      "quote": "Dazu gehören ausgedehnte Höhenwälder (300 bis fast 400 m) nahe der Maas westlich von Fumay ebenso wie die Crêtes Préardennaises (Kämme der Vorardennen), die sich südlich der Linie Sedan – Charleville-Mézières – Hirson überwiegend in Ostwestrichtung erstrecken, zum Nordfranzösischen Schichtstufenland gehören und neben Wald viel Land- und Weidewirtschaft aufweisen, eine Heckenlandschaft (Bocage).",
+      "english": "This includes extensive high forests (300 to almost 400 m) near the Meuse west of Fumay as well as the Crêtes Préardennaises (Ridges of the Pre-Ardennes), which extend south of the Sedan – Charleville-Mézières – Hirson line predominantly in an east-west direction, belong to the Northern French scarp lands and feature much agriculture and pasture alongside forest, a hedgerow landscape (Bocage)."
+    },
+    {
+      "id": "s8",
+      "name": "Collines de la Thiérache",
+      "quote": "Westlich der Mündung des Gland in die Oise bei Hirson rechnen die Collines de la Thiérache (Hügelland der Thiérache) dazu, die sich bis an die für den Canal de la Sambre à l’Oise genutzte Furche erstrecken.",
+      "english": "West of the confluence of the Gland and the Oise near Hirson, the Collines de la Thiérache (Thiérache Hills) are included, extending to the furrow used for the Canal de la Sambre à l'Oise."
+    }
+  ],
+  "days": [
+    {
+      "title": "Eastern Peaks and Border Valleys",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Northern Valleys and Gorges",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Southwestern Ridges and Hills",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "a9c7c3d9c5a37850d10235c98e9eb981b5c6f14c4942b3c9d460e343ed186c79"
+}

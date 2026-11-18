@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Besucherzentrum",
+      "quote": "Website des Besucherzentrums",
+      "english": "Website of the visitor center"
+    },
+    {
+      "id": "s2",
+      "name": "Het Zwin (BE)",
+      "quote": "Offizielle Seite von Het Zwin (BE) (Memento vom 16. November 2011 im Internet Archive)",
+      "english": "Official page of Het Zwin (BE) (Memento from 16 November 2011 in the Internet Archive)"
+    },
+    {
+      "id": "s3",
+      "name": "Het Zwin (NL)",
+      "quote": "Offizielle Seite von Het Zwin (NL) (Memento vom 25. März 2012 im Internet Archive) – nur in Niederländisch",
+      "english": "Official page of Het Zwin (NL) (Memento from 25 March 2012 in the Internet Archive) – only in Dutch"
+    },
+    {
+      "id": "s4",
+      "name": "Naturschutzgebiet",
+      "quote": "Het Zwin wird auf Deutsch auch der Swin genannt und bildet mit rund 150 Hektar das größte Naturschutzgebiet der belgischen Küste.",
+      "english": "Het Zwin is also called the Swin in German and, at around 150 hectares, forms the largest nature reserve on the Belgian coast."
+    }
+  ],
+  "days": [
+    {
+      "title": "Zwin Nature Reserve and Visitor Facilities",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "65c40aee339ec55b099507ae0a62d306b2266abcef9b132ffc753189fcd5c8e0"
+}

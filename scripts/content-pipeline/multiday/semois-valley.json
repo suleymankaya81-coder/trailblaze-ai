@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Arlon",
+      "quote": "Die Semois entspringt in Arlon, einen halben Kilometer südöstlich der Altstadt, neben der Avenue de Longwy.",
+      "english": "The Semois rises in Arlon, half a kilometer southeast of the old town, next to the Avenue de Longwy."
+    },
+    {
+      "id": "s2",
+      "name": "Chassepierre",
+      "quote": "Erst 42 Kilometer weiter westlich, bei Chassepierre (nahe Florenville), gewinnt das Tal der Semois an Tiefe.",
+      "english": "Only 42 kilometers further west, at Chassepierre (near Florenville), does the Semois valley gain depth."
+    },
+    {
+      "id": "s3",
+      "name": "Cugnon",
+      "quote": "Bei Cugnon (zu Bertrix) befindet sich ein keltisches Oppidum der Spätlatènezeit, das wahrscheinlich während des Gallischen Krieges von den Römern erobert wurde.",
+      "english": "At Cugnon (belonging to Bertrix) there is a Celtic oppidum from the late La Tène period, which was probably conquered by the Romans during the Gallic Wars."
+    },
+    {
+      "id": "s4",
+      "name": "Burg von Bouillon",
+      "quote": "In einer engen Schleife der Semois liegt die Burg von Bouillon, Stammburg Gottfrieds von Bouillon, die im Laufe der Jahrhunderte zu einer mächtigen Festung ausgebaut wurde.",
+      "english": "In a narrow loop of the Semois lies the Castle of Bouillon, the ancestral castle of Godfrey of Bouillon, which was expanded into a powerful fortress over the centuries."
+    },
+    {
+      "id": "s5",
+      "name": "Bohan",
+      "quote": "Zwischen Bohan (nahe Vresse-sur-Semois) und Les Hautes-Rivières überquert der Fluss die Grenze zwischen Belgien und Frankreich und mündet nach 210 Kilometern Länge bei Monthermé in die Maas, deren Tal von Charleville-Mézières (15 Kilometer südlich) bis Namur (65 Kilometer nördlich) tief eingeschnitten ist.",
+      "english": "Between Bohan (near Vresse-sur-Semois) and Les Hautes-Rivières, the river crosses the border between Belgium and France and flows into the Meuse after 210 kilometers at Monthermé, whose valley is deeply carved from Charleville-Mézières (15 kilometers south) to Namur (65 kilometers north)."
+    },
+    {
+      "id": "s6",
+      "name": "Monthermé",
+      "quote": "Die Semois [sə.mwa] , für den Abschnitt in Frankreich auch Semoy (ebenfalls grammatisch weiblich), Sesbach (deutsch in Luxemburg), ist ein Fluss in den südlichen Ardennen, der in Arlon in der Provinz Luxemburg von Belgien entspringt und nach 210 Kilometern Lauf in Monthermé, Département Ardennes in Frankreich, mit einer mittleren Wasserführung von knapp 30 m³/s von rechts in die Maas mündet.",
+      "english": "The Semois, also known as the Semoy for the section in France (also grammatically feminine), Sesbach (German in Luxembourg), is a river in the southern Ardennes that rises in Arlon in the province of Luxembourg in Belgium and, after a 210-kilometer course, flows from the right into the Meuse at Monthermé, in the Ardennes department of France, with an average water flow of nearly 30 m³/s."
+    },
+    {
+      "id": "s7",
+      "name": "Regionalen Naturpark Ardennen",
+      "quote": "Im französischen Abschnitt verläuft die Semois im Regionalen Naturpark Ardennen.",
+      "english": "In the French section, the Semois runs through the Ardennes Regional Nature Park."
+    }
+  ],
+  "days": [
+    {
+      "title": "Upper Semois and Ancient History",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Fortresses and the French Border",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Natural Beauty of the Meuse Confluence",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "48df56571ac5443420c6a46bfa070407860658340cd3fa3ad1a93a88476ad8d2"
+}

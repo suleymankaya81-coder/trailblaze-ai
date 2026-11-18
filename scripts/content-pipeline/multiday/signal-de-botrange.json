@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Botrange",
+      "quote": "Die Botrange ist mit 694,24 m O.P. die höchste Erhebung Belgiens und liegt im Hohen Venn.",
+      "english": "The Botrange is at 694.24 m above sea level the highest elevation in Belgium and is located in the High Fens."
+    },
+    {
+      "id": "s2",
+      "name": "Baltia-Hügel",
+      "quote": "Der auf der Botrange aufgeschüttete Baltia-Hügel wurde angelegt, um Belgiens höchsten Punkt auf 700 m Höhe zu bringen.",
+      "english": "The Baltia Hill, piled up on the Botrange, was created to bring Belgium's highest point to an altitude of 700 m."
+    },
+    {
+      "id": "s3",
+      "name": "Turm",
+      "quote": "Die Spitze des 1933/34 von François Fagnoul aus Ovifat auf der Botrange erbauten Turms krönte bis zum Zweiten Weltkrieg eine stählerne Wetterfahne mit dem ausgesparten Namen SICCO CAMPO – am trockenen Ort.",
+      "english": "The top of the tower, built in 1933/34 by François Fagnoul from Ovifat on the Botrange, was crowned until the Second World War by a steel weather vane with the cut-out name SICCO CAMPO – at the dry place."
+    },
+    {
+      "id": "s4",
+      "name": "Naturparkzentrum Botrange",
+      "quote": "Etwa einen Kilometer südlich unterhalb der Botrange befindet sich das Naturparkzentrum Botrange mit wechselnden Ausstellungen zu regionalen und Naturthemen sowie einer Dauerausstellung.",
+      "english": "About one kilometer south below the Botrange is the Botrange Nature Park Center with changing exhibitions on regional and nature topics as well as a permanent exhibition."
+    },
+    {
+      "id": "s5",
+      "name": "Baraque Michel",
+      "quote": "Knapp drei Kilometer nordwestlich befindet sich die ehemalige Herberge Baraque Michel mit der etwa 100 Meter südlich davon stehenden Kapelle Fischbach.",
+      "english": "Just under three kilometers to the northwest is the former inn Baraque Michel with the Fischbach Chapel standing about 100 meters south of it."
+    },
+    {
+      "id": "s6",
+      "name": "Kapelle Fischbach",
+      "quote": "Knapp drei Kilometer nordwestlich befindet sich die ehemalige Herberge Baraque Michel mit der etwa 100 Meter südlich davon stehenden Kapelle Fischbach.",
+      "english": "Just under three kilometers to the northwest is the former inn Baraque Michel with the Fischbach Chapel standing about 100 meters south of it."
+    },
+    {
+      "id": "s7",
+      "name": "Steinhügels",
+      "quote": "Mit Hilfe des 1923 aufgeschütteten und vermessenen „Steinhügels“ als Referenzpunkt wurde mittels seiner Koordinaten und exakten Höhe von 700 m O.P. das Land eingemessen.",
+      "english": "With the help of the 'stone hill', piled up and surveyed in 1923 as a reference point, the land was surveyed using its coordinates and exact height of 700 m above sea level."
+    }
+  ],
+  "days": [
+    {
+      "title": "Summit and High Points of the High Fens",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Regional Heritage and Nature Exploration",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "04fb5c87923324ec908651dccac12ce845ee8089044be5eeb31d47d2912fe1c0"
+}
