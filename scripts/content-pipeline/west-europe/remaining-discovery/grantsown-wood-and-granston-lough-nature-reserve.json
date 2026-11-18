@@ -1,0 +1,190 @@
+{
+  "row": {
+    "slug": "grantsown-wood-and-granston-lough-nature-reserve",
+    "name": "Grantsown Wood and Granston Lough Nature Reserve",
+    "region": "laois",
+    "also_regions": [],
+    "country": "ie",
+    "kind": "nature_reserve",
+    "wave": 2,
+    "wikidata": null,
+    "enwiki": null,
+    "lat": null,
+    "lng": null,
+    "official_site": "https://www.npws.ie/nature-reserves/laois",
+    "access": "unknown",
+    "source": "official_inventory",
+    "source_urls": [
+      "https://www.npws.ie/nature-reserves/laois"
+    ],
+    "access_note": "Access, seasonal restrictions and visitor entry points require source verification; no road access or landing permission is implied.",
+    "identity_status": "named_in_official_directory",
+    "coordinate_role": "unknown_not_navigation",
+    "aliases": [],
+    "scope_review": "Official reserve identity only; small, private and restricted reserves require visitor-suitability review."
+  },
+  "photos": [],
+  "packet": {
+    "slug": "grantsown-wood-and-granston-lough-nature-reserve",
+    "approved_for_generation": true,
+    "country_code": "ie",
+    "evidence_policy": "dach-wikipedia-overview",
+    "identity_verified": true,
+    "review_note": "Wikidata-identified article; descriptive overview only, no current operational rules.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Grantstown_Wood_and_Grantstown_Lough",
+        "kind": "wikipedia",
+        "text": "Grantstown Wood and Grantstown Lough is a national nature reserve of approximately 120 acres (0.49 km2) located in County Laois, Ireland. It is managed by the Irish National Parks & Wildlife Service.\n\n\n== Features ==\nGrantstown Wood and Grantstown Lough, sometimes written Granston, was legally protected as a national nature reserve by the Irish government in 1982. It is very close to another nature reserve, Coolacurragh Wood. The area was formerly the demesne of Grantstown Manor.\nGrantstown Wood is a wet woodland, with rich base soils. The woodland is predominantly ash, alder and birch, with an under planting of hawthorn, meadowsweet, nettle and brambles. The lough has infilled gradually with fen to alder carr. The reserve also has a lake which provides fish for otters, kingfishers and cormorants. Perch, pike, eel, rudd and tench fish are found in the lake.\nThe site has two looped walks, a Lake Walk and a Wood Walk.\n\n\n== References ==",
+        "generation_excerpts": [
+          "Grantstown Wood and Grantstown Lough is a national nature reserve of approximately 120 acres (0.49 km2) located in County Laois, Ireland. It is managed by the Irish National Parks & Wildlife Service."
+        ]
+      }
+    ],
+    "approved_stops": [
+      {
+        "id": "grantsown-wood-and-granston-lough-nature-reserve",
+        "name": "Grantstown Wood and Grantstown Lough",
+        "quote": "Grantstown Wood and Grantstown Lough is a national nature reserve of approximately 120 acres (0.49 km2) located in County Laois, Ireland. It is managed by the Irish National Parks & Wildlife Service.",
+        "source_url": "https://en.wikipedia.org/wiki/Grantstown_Wood_and_Grantstown_Lough"
+      }
+    ]
+  },
+  "page": {
+    "pageid": 65243695,
+    "ns": 0,
+    "title": "Grantstown Wood and Grantstown Lough",
+    "extract": "Grantstown Wood and Grantstown Lough is a national nature reserve of approximately 120 acres (0.49 km2) located in County Laois, Ireland. It is managed by the Irish National Parks & Wildlife Service.\n\n\n== Features ==\nGrantstown Wood and Grantstown Lough, sometimes written Granston, was legally protected as a national nature reserve by the Irish government in 1982. It is very close to another nature reserve, Coolacurragh Wood. The area was formerly the demesne of Grantstown Manor.\nGrantstown Wood is a wet woodland, with rich base soils. The woodland is predominantly ash, alder and birch, with an under planting of hawthorn, meadowsweet, nettle and brambles. The lough has infilled gradually with fen to alder carr. The reserve also has a lake which provides fish for otters, kingfishers and cormorants. Perch, pike, eel, rudd and tench fish are found in the lake.\nThe site has two looped walks, a Lake Walk and a Wood Walk.\n\n\n== References ==",
+    "coordinates": [
+      {
+        "lat": 52.87,
+        "lon": -7.502,
+        "primary": true,
+        "globe": "earth"
+      }
+    ],
+    "pageprops": {
+      "wikibase-shortdesc": "Irish national nature reserve",
+      "wikibase_item": "Q104855358"
+    }
+  },
+  "lang": "en",
+  "entity": {
+    "pageid": 100268556,
+    "ns": 0,
+    "title": "Q104855358",
+    "lastrevid": 2563358494,
+    "modified": "2026-11-01T11:43:43Z",
+    "type": "item",
+    "id": "Q104855358",
+    "labels": {
+      "en": {
+        "language": "en",
+        "value": "Grantstown Wood and Grantstown Lough"
+      }
+    },
+    "descriptions": {
+      "en": {
+        "language": "en",
+        "value": "Irish national nature reserve"
+      }
+    },
+    "aliases": {},
+    "claims": {
+      "P2671": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P2671",
+            "hash": "50003f78d87daded4017e2acfec46289faf65bde",
+            "datavalue": {
+              "value": "/g/11hpmwmvgg",
+              "type": "string"
+            },
+            "datatype": "external-id"
+          },
+          "type": "statement",
+          "id": "Q104855358$8B8C837C-526E-427B-890B-03C04C625900",
+          "rank": "normal"
+        }
+      ],
+      "P625": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "fc661d10c73c73e50800b08e7486e377870dc033",
+            "datavalue": {
+              "value": {
+                "latitude": 52.87,
+                "longitude": -7.502,
+                "altitude": null,
+                "precision": 0.01,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "Q104855358$b75126d2-3397-48c2-8c3f-928eebbd9d4b",
+          "rank": "normal"
+        }
+      ],
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "aba3d89992230ef17d3b7db6500e076564158ab2",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 179049,
+                "id": "Q179049"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q104855358$7B3EB390-8CA5-49B3-8D53-25116CB37449",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": {
+      "enwiki": {
+        "site": "enwiki",
+        "title": "Grantstown Wood and Grantstown Lough",
+        "badges": [],
+        "url": "https://en.wikipedia.org/wiki/Grantstown_Wood_and_Grantstown_Lough"
+      }
+    }
+  },
+  "extra_photos": [
+    {
+      "file": "File:Road at Grantstown (Kilfeakle) - geograph.org.uk - 5586815.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Road_at_Grantstown_%28Kilfeakle%29_-_geograph.org.uk_-_5586815.jpg/1280px-Road_at_Grantstown_%28Kilfeakle%29_-_geograph.org.uk_-_5586815.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Road_at_Grantstown_(Kilfeakle)_-_geograph.org.uk_-_5586815.jpg",
+      "credit": "Peter Wood",
+      "license": "CC BY-SA 2.0",
+      "subject": "Road at Grantstown (Kilfeakle) - geograph.org.uk - 5586815",
+      "w": 4000,
+      "h": 3000
+    },
+    {
+      "file": "File:Road at Grantstown (Kilfeakle) - geograph.org.uk - 5586817.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Road_at_Grantstown_%28Kilfeakle%29_-_geograph.org.uk_-_5586817.jpg/1280px-Road_at_Grantstown_%28Kilfeakle%29_-_geograph.org.uk_-_5586817.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Road_at_Grantstown_(Kilfeakle)_-_geograph.org.uk_-_5586817.jpg",
+      "credit": "Peter Wood",
+      "license": "CC BY-SA 2.0",
+      "subject": "Road at Grantstown (Kilfeakle) - geograph.org.uk - 5586817",
+      "w": 4000,
+      "h": 3000
+    }
+  ],
+  "expanded": true,
+  "small_photos": [],
+  "small_checked": true
+}

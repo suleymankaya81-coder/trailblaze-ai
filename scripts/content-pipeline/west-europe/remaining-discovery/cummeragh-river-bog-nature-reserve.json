@@ -1,0 +1,210 @@
+{
+  "row": {
+    "slug": "cummeragh-river-bog-nature-reserve",
+    "name": "Cummeragh River Bog Nature Reserve",
+    "region": "kerry",
+    "also_regions": [],
+    "country": "ie",
+    "kind": "nature_reserve",
+    "wave": 2,
+    "wikidata": null,
+    "enwiki": null,
+    "lat": null,
+    "lng": null,
+    "official_site": "https://www.npws.ie/nature-reserves/kerry",
+    "access": "unknown",
+    "source": "official_inventory",
+    "source_urls": [
+      "https://www.npws.ie/nature-reserves/kerry"
+    ],
+    "access_note": "Access, seasonal restrictions and visitor entry points require source verification; no road access or landing permission is implied.",
+    "identity_status": "named_in_official_directory",
+    "coordinate_role": "unknown_not_navigation",
+    "aliases": [],
+    "scope_review": "Official reserve identity only; small, private and restricted reserves require visitor-suitability review."
+  },
+  "photos": [],
+  "packet": {
+    "slug": "cummeragh-river-bog-nature-reserve",
+    "approved_for_generation": true,
+    "country_code": "ie",
+    "evidence_policy": "dach-wikipedia-overview",
+    "identity_verified": true,
+    "review_note": "Wikidata-identified article; descriptive overview only, no current operational rules.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cummeragh_River_Bog",
+        "kind": "wikipedia",
+        "text": "Cummeragh River Bog is a national nature reserve of approximately 112.5 acres (0.455 km2) in County Kerry.\n\n\n== Features ==\nCummeragh River Bog was legally protected as a national nature reserve by the Irish government in 1994. The Bog was initially purchased by the Dutch Foundation for the Conservation of Irish Bogs in the 1990s with the Irish Peatland Conservation Council, along with Scragh Bog and Clochar na gCon. These three bogs were then later handed over to be managed by the Irish state.\nThe Bog is the most southerly intact Irish lowland blanket bog, and is deemed to be of international importance. The area is completely surrounded by the Cummeragh River and its tributary. The bog itself is in very good condition and is growing. It contains a network of hummocks and pools with a thick, established cover of vegetation. Among the fauna found on the reserve are curlews and the black slug as well as the rivers containing spawning areas for sea trout.\n\n\n== References ==",
+        "generation_excerpts": [
+          "Cummeragh River Bog is a national nature reserve of approximately 112.5 acres (0.455 km2) in County Kerry."
+        ]
+      }
+    ],
+    "approved_stops": [
+      {
+        "id": "cummeragh-river-bog-nature-reserve",
+        "name": "Cummeragh River Bog",
+        "quote": "Cummeragh River Bog is a national nature reserve of approximately 112.5 acres (0.455 km2) in County Kerry.",
+        "source_url": "https://en.wikipedia.org/wiki/Cummeragh_River_Bog"
+      }
+    ]
+  },
+  "page": {
+    "pageid": 65333200,
+    "ns": 0,
+    "title": "Cummeragh River Bog",
+    "extract": "Cummeragh River Bog is a national nature reserve of approximately 112.5 acres (0.455 km2) in County Kerry.\n\n\n== Features ==\nCummeragh River Bog was legally protected as a national nature reserve by the Irish government in 1994. The Bog was initially purchased by the Dutch Foundation for the Conservation of Irish Bogs in the 1990s with the Irish Peatland Conservation Council, along with Scragh Bog and Clochar na gCon. These three bogs were then later handed over to be managed by the Irish state.\nThe Bog is the most southerly intact Irish lowland blanket bog, and is deemed to be of international importance. The area is completely surrounded by the Cummeragh River and its tributary. The bog itself is in very good condition and is growing. It contains a network of hummocks and pools with a thick, established cover of vegetation. Among the fauna found on the reserve are curlews and the black slug as well as the rivers containing spawning areas for sea trout.\n\n\n== References ==",
+    "coordinates": [
+      {
+        "lat": 51.871,
+        "lon": -10.065,
+        "primary": true,
+        "globe": "earth"
+      }
+    ],
+    "pageprops": {
+      "wikibase-shortdesc": "Nature reserve in County Kerry, Ireland",
+      "wikibase_item": "Q104857259"
+    }
+  },
+  "lang": "en",
+  "entity": {
+    "pageid": 100270425,
+    "ns": 0,
+    "title": "Q104857259",
+    "lastrevid": 2563358538,
+    "modified": "2026-11-01T11:43:47Z",
+    "type": "item",
+    "id": "Q104857259",
+    "labels": {
+      "en": {
+        "language": "en",
+        "value": "Cummeragh River Bog"
+      }
+    },
+    "descriptions": {
+      "en": {
+        "language": "en",
+        "value": "nature reserve in County Kerry, Ireland"
+      }
+    },
+    "aliases": {},
+    "claims": {
+      "P2671": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P2671",
+            "hash": "846fc49b7aed51471d369a81d1bd407bf4234b76",
+            "datavalue": {
+              "value": "/g/11bvtcqh60",
+              "type": "string"
+            },
+            "datatype": "external-id"
+          },
+          "type": "statement",
+          "id": "Q104857259$A6CF9EA0-AFC7-4367-843A-F7A79CD8C675",
+          "rank": "normal"
+        }
+      ],
+      "P625": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "99d4a8f8a3cf681b3a2fef4acd136cd9799f81fb",
+            "datavalue": {
+              "value": {
+                "latitude": 51.871,
+                "longitude": -10.065,
+                "altitude": null,
+                "precision": 0.001,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "Q104857259$473a35b4-a910-4dac-a701-3ef4be955414",
+          "rank": "normal"
+        }
+      ],
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "aba3d89992230ef17d3b7db6500e076564158ab2",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 179049,
+                "id": "Q179049"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q104857259$AD420307-E465-48AF-92FE-24FD5355BEB7",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": {
+      "enwiki": {
+        "site": "enwiki",
+        "title": "Cummeragh River Bog",
+        "badges": [],
+        "url": "https://en.wikipedia.org/wiki/Cummeragh_River_Bog"
+      }
+    }
+  },
+  "extra_photos": [],
+  "expanded": true,
+  "small_photos": [
+    {
+      "file": "File:Ballads of Irish chivalry (IA balladsofirishch00joycrich).pdf",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Ballads_of_Irish_chivalry_%28IA_balladsofirishch00joycrich%29.pdf/page1-500px-Ballads_of_Irish_chivalry_%28IA_balladsofirishch00joycrich%29.pdf.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Ballads_of_Irish_chivalry_(IA_balladsofirishch00joycrich).pdf",
+      "credit": "Joyce, Robert Dwyer, 1836-1883\nJoyce, P. W. (Patrick Weston), 1827-1914",
+      "license": "Public domain",
+      "subject": "Ballads of Irish chivalry (IA balladsofirishch00joycrich)",
+      "w": 727,
+      "h": 1154
+    },
+    {
+      "file": "File:Ballads of Irish chivalry; (IA balladsofirishch00joyciala).pdf",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Ballads_of_Irish_chivalry%3B_%28IA_balladsofirishch00joyciala%29.pdf/page1-500px-Ballads_of_Irish_chivalry%3B_%28IA_balladsofirishch00joyciala%29.pdf.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Ballads_of_Irish_chivalry;_(IA_balladsofirishch00joyciala).pdf",
+      "credit": "Joyce, Robert Dwyer, 1836-1883",
+      "license": "Public domain",
+      "subject": "Ballads of Irish chivalry; (IA balladsofirishch00joyciala)",
+      "w": 545,
+      "h": 922
+    },
+    {
+      "file": "File:Volume Information (IA jstor-25489770).pdf",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Volume_Information_%28IA_jstor-25489770%29.pdf/page1-500px-Volume_Information_%28IA_jstor-25489770%29.pdf.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Volume_Information_(IA_jstor-25489770).pdf",
+      "credit": "Unknown",
+      "license": "Public domain",
+      "subject": "Volume Information (IA jstor-25489770)",
+      "w": 775,
+      "h": 1262
+    },
+    {
+      "file": "File:Notes on the Castles in the Freshford District (IA jstor-25489801).pdf",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Notes_on_the_Castles_in_the_Freshford_District_%28IA_jstor-25489801%29.pdf/page1-500px-Notes_on_the_Castles_in_the_Freshford_District_%28IA_jstor-25489801%29.pdf.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Notes_on_the_Castles_in_the_Freshford_District_(IA_jstor-25489801).pdf",
+      "credit": "Mease, James",
+      "license": "Public domain",
+      "subject": "Notes on the Castles in the Freshford District (IA jstor-25489801)",
+      "w": 775,
+      "h": 1262
+    }
+  ],
+  "small_checked": true
+}

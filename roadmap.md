@@ -1,3 +1,9 @@
+## November 18 remaining Ireland then Italy
+- [x] Reviewed all 35 holds; published 9 further sourced/credited EN/DE destinations, Ireland 133/159.
+- [ ] Complete the remaining 26: exact-place licensed cover/source/location/access blockers recorded in west-europe/ireland-followup-2026-11-18.md.
+- [x] Verified 18 new EN/DE pages, Google Maps link presence and German phone map 133/133; all 396 Italian EN/DE destination pages return 200 and 198/198 catalog places are already published.
+- [ ] Resume Italy production only after Ireland completion, as requested; no duplicate Italian pages created.
+
 ## November 18 Ireland remaining destinations and audit
 - [x] Published 19 former Irish holds with retained exact-place assignments and offline German translation; 124 destinations now published.
 - [ ] Complete the remaining 35 Irish places; blocked by exact-place licensed covers, reviewed location or visitor-access evidence; named list in west-europe/ireland-audit-2026-11-18.md.

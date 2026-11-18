@@ -1,0 +1,180 @@
+{
+  "row": {
+    "slug": "richmond-esker-nature-reserve",
+    "name": "Richmond Esker Nature Reserve",
+    "region": "galway",
+    "also_regions": [],
+    "country": "ie",
+    "kind": "nature_reserve",
+    "wave": 2,
+    "wikidata": null,
+    "enwiki": null,
+    "lat": null,
+    "lng": null,
+    "official_site": "https://www.npws.ie/nature-reserves/galway",
+    "access": "unknown",
+    "source": "official_inventory",
+    "source_urls": [
+      "https://www.npws.ie/nature-reserves/galway"
+    ],
+    "access_note": "Access, seasonal restrictions and visitor entry points require source verification; no road access or landing permission is implied.",
+    "identity_status": "named_in_official_directory",
+    "coordinate_role": "unknown_not_navigation",
+    "aliases": [],
+    "scope_review": "Official reserve identity only; small, private and restricted reserves require visitor-suitability review."
+  },
+  "photos": [],
+  "packet": {
+    "slug": "richmond-esker-nature-reserve",
+    "approved_for_generation": true,
+    "country_code": "ie",
+    "evidence_policy": "dach-wikipedia-overview",
+    "identity_verified": true,
+    "review_note": "Wikidata-identified article; descriptive overview only, no current operational rules.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Richmond_Esker",
+        "kind": "wikipedia",
+        "text": "Richmond Esker is a national nature reserve of approximately 39 acres (0.16 km2) located near Moylough, County Galway, Ireland. It is managed by the Irish National Parks & Wildlife Service.\n\n\n== Features ==\nRichmond Esker was legally protected as a national nature reserve by the Irish government in 1985.\nRichmond Esker, with Timahoe Esker, is one of only a small number of esker ridges that remain in Ireland and that have native woodland. The site has been planted with conifers and other non-native species, but the NPWS have stated the goal of expanding the native woods through management. A review of historical maps of the area concluded that there was a period around 1838 that the area was completely devoid of trees, and that the wood had been re-established by 1892. In 1951 Fagus sylvatica and Larix were planted on the site. Other species recorded on the reserve include Avenula pubescens, Luzula sylvatica,  Poa nemoralis, and Mnium hornum.\n\n\n== References ==",
+        "generation_excerpts": [
+          "Richmond Esker is a national nature reserve of approximately 39 acres (0.16 km2) located near Moylough, County Galway, Ireland. It is managed by the Irish National Parks & Wildlife Service."
+        ]
+      }
+    ],
+    "approved_stops": [
+      {
+        "id": "richmond-esker-nature-reserve",
+        "name": "Richmond Esker",
+        "quote": "Richmond Esker is a national nature reserve of approximately 39 acres (0.16 km2) located near Moylough, County Galway, Ireland. It is managed by the Irish National Parks & Wildlife Service.",
+        "source_url": "https://en.wikipedia.org/wiki/Richmond_Esker"
+      }
+    ]
+  },
+  "page": {
+    "pageid": 65154185,
+    "ns": 0,
+    "title": "Richmond Esker",
+    "extract": "Richmond Esker is a national nature reserve of approximately 39 acres (0.16 km2) located near Moylough, County Galway, Ireland. It is managed by the Irish National Parks & Wildlife Service.\n\n\n== Features ==\nRichmond Esker was legally protected as a national nature reserve by the Irish government in 1985.\nRichmond Esker, with Timahoe Esker, is one of only a small number of esker ridges that remain in Ireland and that have native woodland. The site has been planted with conifers and other non-native species, but the NPWS have stated the goal of expanding the native woods through management. A review of historical maps of the area concluded that there was a period around 1838 that the area was completely devoid of trees, and that the wood had been re-established by 1892. In 1951 Fagus sylvatica and Larix were planted on the site. Other species recorded on the reserve include Avenula pubescens, Luzula sylvatica,  Poa nemoralis, and Mnium hornum.\n\n\n== References ==",
+    "coordinates": [
+      {
+        "lat": 53.532,
+        "lon": -8.617,
+        "primary": true,
+        "globe": "earth"
+      }
+    ],
+    "pageprops": {
+      "wikibase-shortdesc": "Nature reserve in Ireland",
+      "wikibase_item": "Q104853550"
+    }
+  },
+  "lang": "en",
+  "entity": {
+    "pageid": 100266774,
+    "ns": 0,
+    "title": "Q104853550",
+    "lastrevid": 2563358456,
+    "modified": "2026-11-01T11:43:39Z",
+    "type": "item",
+    "id": "Q104853550",
+    "labels": {
+      "en": {
+        "language": "en",
+        "value": "Richmond Esker"
+      }
+    },
+    "descriptions": {
+      "en": {
+        "language": "en",
+        "value": "nature reserve in Ireland"
+      }
+    },
+    "aliases": {},
+    "claims": {
+      "P2671": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P2671",
+            "hash": "5c507f52b3b07818e8ea0332c7e59ff51249b509",
+            "datavalue": {
+              "value": "/g/11bvtlnvxc",
+              "type": "string"
+            },
+            "datatype": "external-id"
+          },
+          "type": "statement",
+          "id": "Q104853550$53197603-08F0-409F-A2F7-52A8C402E976",
+          "rank": "normal"
+        }
+      ],
+      "P625": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "2bcec26c3fee6de76505f7ae1e23ce4d34b0ca45",
+            "datavalue": {
+              "value": {
+                "latitude": 53.532,
+                "longitude": -8.617,
+                "altitude": null,
+                "precision": 0.001,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "Q104853550$26418bd5-69ef-4201-b89c-0ed890fa1850",
+          "rank": "normal"
+        }
+      ],
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "aba3d89992230ef17d3b7db6500e076564158ab2",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 179049,
+                "id": "Q179049"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q104853550$B0342EC6-2C99-49F2-A5A4-C58C66BE7960",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": {
+      "enwiki": {
+        "site": "enwiki",
+        "title": "Richmond Esker",
+        "badges": [],
+        "url": "https://en.wikipedia.org/wiki/Richmond_Esker"
+      }
+    }
+  },
+  "extra_photos": [
+    {
+      "file": "File:Extracts from reports on the district of Ungava, recently added to the province of Quebec under the name of the territory of New Quebec (1915) (14760113996).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Extracts_from_reports_on_the_district_of_Ungava%2C_recently_added_to_the_province_of_Quebec_under_the_name_of_the_territory_of_New_Quebec_%281915%29_%2814760113996%29.jpg/1280px-Extracts_from_reports_on_the_district_of_Ungava%2C_recently_added_to_the_province_of_Quebec_under_the_name_of_the_territory_of_New_Quebec_%281915%29_%2814760113996%29.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Extracts_from_reports_on_the_district_of_Ungava,_recently_added_to_the_province_of_Quebec_under_the_name_of_the_territory_of_New_Quebec_(1915)_(14760113996).jpg",
+      "credit": "Internet Archive Book Images",
+      "license": "No restrictions",
+      "subject": "Extracts from reports on the district of Ungava, recently added to the province of Quebec under the name of the territory of New Quebec (1915) (14760113996)",
+      "w": 1818,
+      "h": 1286
+    }
+  ],
+  "expanded": true,
+  "small_photos": [],
+  "small_checked": true
+}

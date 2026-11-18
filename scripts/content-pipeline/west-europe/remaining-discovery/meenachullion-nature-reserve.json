@@ -1,0 +1,322 @@
+{
+  "row": {
+    "slug": "meenachullion-nature-reserve",
+    "name": "Meenachullion Nature Reserve",
+    "region": "donegal",
+    "also_regions": [],
+    "country": "ie",
+    "kind": "nature_reserve",
+    "wave": 2,
+    "wikidata": null,
+    "enwiki": null,
+    "lat": null,
+    "lng": null,
+    "official_site": "https://www.npws.ie/nature-reserves/donegal",
+    "access": "unknown",
+    "source": "official_inventory",
+    "source_urls": [
+      "https://www.npws.ie/nature-reserves/donegal"
+    ],
+    "access_note": "Access, seasonal restrictions and visitor entry points require source verification; no road access or landing permission is implied.",
+    "identity_status": "named_in_official_directory",
+    "coordinate_role": "unknown_not_navigation",
+    "aliases": [],
+    "scope_review": "Official reserve identity only; small, private and restricted reserves require visitor-suitability review."
+  },
+  "photos": [],
+  "packet": {
+    "slug": "meenachullion-nature-reserve",
+    "approved_for_generation": true,
+    "country_code": "ie",
+    "evidence_policy": "dach-wikipedia-overview",
+    "identity_verified": true,
+    "review_note": "Wikidata-identified article; descriptive overview only, no current operational rules.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Meenachullion_Bog",
+        "kind": "wikipedia",
+        "text": "Meenachullion is a blanket bog, Ramsar site and national nature reserve of approximately 479 acres (1.94 km2) in County Donegal.\n\n\n== Features ==\nMeenachullion was legally protected as a national nature reserve by the Irish government in 1990. In 1990, the site was also declared Ramsar site number 475.\nMeenachullion is a lowland blanket bog, with vegetation that transitions into fen and wet grassy heath as it meets the slopes of Gubben Hill. On the flat top of the Hill there are small, eroded areas of highland blanket bog. The reserve also includes a part of the headwaters of a Gweebarra River tributary. A number of bird species use the reserve as a breeding site, and a small flock of Anser albifrons flavirostris overwinter on the reserve.\n\n\n== References ==",
+        "generation_excerpts": [
+          "Meenachullion is a blanket bog, Ramsar site and national nature reserve of approximately 479 acres (1.94 km2) in County Donegal."
+        ]
+      }
+    ],
+    "approved_stops": [
+      {
+        "id": "meenachullion-nature-reserve",
+        "name": "Meenachullion",
+        "quote": "Meenachullion is a blanket bog, Ramsar site and national nature reserve of approximately 479 acres (1.94 km2) in County Donegal.",
+        "source_url": "https://en.wikipedia.org/wiki/Meenachullion_Bog"
+      }
+    ]
+  },
+  "page": {
+    "pageid": 65409531,
+    "ns": 0,
+    "title": "Meenachullion Bog",
+    "extract": "Meenachullion is a blanket bog, Ramsar site and national nature reserve of approximately 479 acres (1.94 km2) in County Donegal.\n\n\n== Features ==\nMeenachullion was legally protected as a national nature reserve by the Irish government in 1990. In 1990, the site was also declared Ramsar site number 475.\nMeenachullion is a lowland blanket bog, with vegetation that transitions into fen and wet grassy heath as it meets the slopes of Gubben Hill. On the flat top of the Hill there are small, eroded areas of highland blanket bog. The reserve also includes a part of the headwaters of a Gweebarra River tributary. A number of bird species use the reserve as a breeding site, and a small flock of Anser albifrons flavirostris overwinter on the reserve.\n\n\n== References ==",
+    "coordinates": [
+      {
+        "lat": 54.904,
+        "lon": -8.121,
+        "primary": true,
+        "globe": "earth"
+      }
+    ],
+    "pageprops": {
+      "wikibase_item": "Q99583677"
+    }
+  },
+  "lang": "en",
+  "entity": {
+    "pageid": 97497585,
+    "ns": 0,
+    "title": "Q99583677",
+    "lastrevid": 2347767638,
+    "modified": "2025-05-12T13:31:51Z",
+    "type": "item",
+    "id": "Q99583677",
+    "labels": {
+      "en": {
+        "language": "en",
+        "value": "Meenachullion Bog"
+      }
+    },
+    "descriptions": {
+      "en": {
+        "language": "en",
+        "value": "a bog and nature reserve in County Donegal, Ireland"
+      },
+      "ar": {
+        "language": "ar",
+        "value": "محمية طبيعية في مقاطعة دونيجال، جمهورية أيرلندا"
+      }
+    },
+    "aliases": {
+      "en": [
+        {
+          "language": "en",
+          "value": "Meenachullion"
+        },
+        {
+          "language": "en",
+          "value": "Meenachullion Nature Reserve"
+        }
+      ]
+    },
+    "claims": {
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "9e595adfdc48497332a5ec5d7a55df2931781031",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 1681353,
+                "id": "Q1681353"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q99583677$2a288ca1-4f5d-e340-182b-16a4ff63f974",
+          "rank": "normal"
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "aba3d89992230ef17d3b7db6500e076564158ab2",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 179049,
+                "id": "Q179049"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q99583677$48ece5bb-40f7-0436-96c2-658f7d7c9953",
+          "rank": "normal"
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "489cbf01c2f972ee8492a0c972a78ff3d99189c4",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 19683138,
+                "id": "Q19683138"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q99583677$13e77fda-4c44-c22d-6dd5-efc7bc08f2b7",
+          "rank": "normal"
+        }
+      ],
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "f4ccb05f7faebc2073ed81093902b84d250e6695",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 27,
+                "id": "Q27"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q99583677$c6f56868-45c1-fac3-73cb-36f067007545",
+          "rank": "normal"
+        }
+      ],
+      "P131": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P131",
+            "hash": "747c7cc40b36b7142633302eb4f0cc05038d2d9b",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 179424,
+                "id": "Q179424"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q99583677$5148bf51-4cb0-29e0-df0a-c69a7658c69a",
+          "rank": "normal"
+        }
+      ],
+      "P625": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "746f9713cfa62dd60fe21feaa64c86a3a14bce63",
+            "datavalue": {
+              "value": {
+                "latitude": 54.903888888888886,
+                "longitude": -8.12111111111111,
+                "altitude": null,
+                "precision": 0.0002777777777777778,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "Q99583677$47ba8d81-48c8-fdd3-5ae7-1ba7d5a16d2e",
+          "rank": "normal"
+        }
+      ],
+      "P2525": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P2525",
+            "hash": "0420c15eaf751e818bc014736b7f7f82254cff67",
+            "datavalue": {
+              "value": "475",
+              "type": "string"
+            },
+            "datatype": "external-id"
+          },
+          "type": "statement",
+          "id": "Q99583677$4abe45ec-48c3-0156-9b6e-1106f8a7d325",
+          "rank": "normal"
+        }
+      ],
+      "P2671": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P2671",
+            "hash": "08e170f888e969ca691046c327129a140033fa0e",
+            "datavalue": {
+              "value": "/g/11hvh2sf51",
+              "type": "string"
+            },
+            "datatype": "external-id"
+          },
+          "type": "statement",
+          "id": "Q99583677$22DA502C-6748-44D5-A422-25389FE626EB",
+          "rank": "normal"
+        }
+      ],
+      "P7959": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P7959",
+            "hash": "879c3c1019c228c30571c74521ddf8b00d181c54",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 179424,
+                "id": "Q179424"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q99583677$af73c3eb-2697-4e05-84c4-412f35e024c6",
+          "rank": "normal"
+        }
+      ],
+      "P1435": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1435",
+            "hash": "7cffaf4b16373b9c725034adf3348e7c021c2b02",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 19683138,
+                "id": "Q19683138"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q99583677$065CD1D9-1DCE-4C64-9B54-5BC46F1D4439",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": {
+      "enwiki": {
+        "site": "enwiki",
+        "title": "Meenachullion Bog",
+        "badges": [],
+        "url": "https://en.wikipedia.org/wiki/Meenachullion_Bog"
+      }
+    }
+  },
+  "extra_photos": [],
+  "expanded": true,
+  "small_photos": [],
+  "small_checked": true
+}
