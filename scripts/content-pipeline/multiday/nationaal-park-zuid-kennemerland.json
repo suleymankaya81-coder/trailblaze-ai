@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Dünenseen",
+      "quote": "Es kommen aber auch Wälder mit einem alten Eichenbestand und Dünenseen mit reichem Vogelbestand vor.",
+      "english": "There are also forests with old oak populations and dune lakes with a rich bird population."
+    },
+    {
+      "id": "s2",
+      "name": "Kraansvlak",
+      "quote": "In einem umzäunten Bereich von 300 Hektar Fläche (Kraansvlak) leben seit 2007 inzwischen 24 Wisente der Flachlandlinie (Stand 2013), von denen der größte Teil dort geboren wurde.",
+      "english": "In a fenced area of 300 hectares (Kraansvlak), 24 European bison of the lowland line have been living since 2007 (as of 2013), most of which were born there."
+    },
+    {
+      "id": "s3",
+      "name": "Aussichtsturm",
+      "quote": "Das Gelände kann von einem frei zugänglichen Aussichtsturm aus eingesehen werden.",
+      "english": "The terrain can be viewed from a freely accessible observation tower."
+    },
+    {
+      "id": "s4",
+      "name": "IJmuiden an Zee",
+      "quote": "Im Norden bei IJmuiden an Zee, einem Ortsteil von Velsen, wurden während des Zweiten Weltkriegs von der Organisation Todt im Auftrag der deutschen Wehrmacht zahlreiche Bunker für den Atlantikwall errichtet.",
+      "english": "In the north near IJmuiden an Zee, a district of Velsen, numerous bunkers for the Atlantic Wall were built during the Second World War by the Organisation Todt on behalf of the German Wehrmacht."
+    },
+    {
+      "id": "s5",
+      "name": "Heerenduinbunker",
+      "quote": "Die Ruinen, wie z. B. die Heerenduinbunker, sind heute teilweise Rijksmonumente, können betreten werden und in IJmuiden gibt es ein Bunkermuseum.",
+      "english": "The ruins, such as the Heerenduin bunkers, are now partially national monuments, can be entered, and there is a bunker museum in IJmuiden."
+    },
+    {
+      "id": "s6",
+      "name": "Bunkermuseum",
+      "quote": "Die Ruinen, wie z. B. die Heerenduinbunker, sind heute teilweise Rijksmonumente, können betreten werden und in IJmuiden gibt es ein Bunkermuseum.",
+      "english": "The ruins, such as the Heerenduin bunkers, are now partially national monuments, can be entered, and there is a bunker museum in IJmuiden."
+    },
+    {
+      "id": "s7",
+      "name": "Ehrenfriedhof Bloemendaal",
+      "quote": "372 Opfer wurden auf den dazu neu errichteten Ehrenfriedhof Bloemendaal umgebettet und an den Hinrichtungsplätzen erinnern Gedenksteine an die Taten.",
+      "english": "372 victims were reburied in the newly established Bloemendaal Cemetery of Honour, and memorial stones at the execution sites commemorate the deeds."
+    }
+  ],
+  "days": [
+    {
+      "title": "Bison and Nature Observation",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Coastal Fortifications and History",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "f636a4ad2ca784d920ec1099ab29d6e622708f1bdd08ddaf3301175992af9633"
+}

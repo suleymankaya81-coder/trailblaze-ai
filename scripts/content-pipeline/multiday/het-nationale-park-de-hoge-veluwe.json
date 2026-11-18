@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Besucherzentrum",
+      "quote": "Beim Dorf Otterlo (Gemeinde Ede) befindet sich der Haupteingang mit dem Besucherzentrum.",
+      "english": "The main entrance with the visitor centre is located near the village of Otterlo (municipality of Ede)."
+    },
+    {
+      "id": "s2",
+      "name": "Museonder",
+      "quote": "Unter dem Besucherzentrum befindet sich das Museonder, ein auch für Kinder interessantes Museum für das unterirdische Leben.",
+      "english": "Located beneath the visitor centre is the Museonder, a museum for underground life that is also interesting for children."
+    },
+    {
+      "id": "s3",
+      "name": "Radwege",
+      "quote": "Zur Erkundung des Parks stehen den Besuchern nach Zahlung der Eintrittsgebühren 43 Kilometer Radwege und 1800 Leihfahrräder zur Verfügung.",
+      "english": "For exploring the park, 43 kilometres of cycle paths and 1800 rental bikes are available to visitors after payment of the entrance fees."
+    },
+    {
+      "id": "s4",
+      "name": "Jagdhaus St. Hubertus",
+      "quote": "Das Jagdhaus St. Hubertus, das aus der Luft gesehen einem Hirschgeweih gleicht, kann beschränkt besichtigt werden, jedoch nur mit Führung.",
+      "english": "The St. Hubertus Hunting Lodge, which resembles deer antlers when seen from the air, can be visited to a limited extent, but only with a guided tour."
+    },
+    {
+      "id": "s5",
+      "name": "Kröller-Müller Museum",
+      "quote": "Die bedeutende Kunstsammlung der Helene Kröller-Müller ist im Kröller-Müller Museum untergebracht, das im nördlichen Teil des Parks liegt.",
+      "english": "Helene Kröller-Müller's significant art collection is housed in the Kröller-Müller Museum, which is located in the northern part of the park."
+    },
+    {
+      "id": "s6",
+      "name": "Skulpturengarten des Museums",
+      "quote": "Sehr sehenswert ist der Skulpturengarten des Museums, mit Werken von Auguste Rodin, Henry Moore und anderen namhaften Bildhauern aus der Zeit nach dem Jahr 1900.",
+      "english": "The museum's sculpture garden, with works by Auguste Rodin, Henry Moore and other renowned sculptors from the period after 1900, is well worth seeing."
+    },
+    {
+      "id": "s7",
+      "name": "Sandmagerrasen",
+      "quote": "Im Norden des Naturparks befinden sich außerdem große Sandmagerrasen.",
+      "english": "In the north of the nature park, there are also large sandy grasslands."
+    }
+  ],
+  "days": [
+    {
+      "title": "Visitor Center and Underground Discovery",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Art and Northern Landscapes",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Historic Hunting Lodge",
+      "stop_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "b00fac04b9cee4eb332974f28c55ae596d92698d179a280e825bb0606328cdc5"
+}

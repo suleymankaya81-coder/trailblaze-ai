@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Grote Koningsbelt",
+      "quote": "höchste Erhebung des Parks ist der etwa 75 Meter hohe Grote Koningsbelt, der damit auch einer der höchstgelegenen Orte der Provinz ist.",
+      "english": "The highest elevation of the park is the approximately 75-meter-high Grote Koningsbelt, which is also one of the highest points in the province."
+    },
+    {
+      "id": "s2",
+      "name": "Landhaus De Sprengenberg",
+      "quote": "Im Westen des Nationalparks liegt das zwischen 1900 und 1910 erbaute Landhaus De Sprengenberg auf dem gleichnamigen Hügel.",
+      "english": "In the west of the national park lies the De Sprengenberg country house, built between 1900 and 1910 on the hill of the same name."
+    },
+    {
+      "id": "s3",
+      "name": "Holterberg",
+      "quote": "Auf dem Holterberg befindet sich der Holten Canadian War Cemetery, der durch die Commonwealth War Graves Commission unterhalten wird.",
+      "english": "On the Holterberg is the Holten Canadian War Cemetery, which is maintained by the Commonwealth War Graves Commission."
+    },
+    {
+      "id": "s4",
+      "name": "Holten Canadian War Cemetery",
+      "quote": "Hierbei handelt es sich um einen der größten militärischen Begräbnisplätze in den Niederlanden mit insgesamt 1394 Soldatengräbern.",
+      "english": "This is one of the largest military burial grounds in the Netherlands with a total of 1394 soldiers' graves."
+    },
+    {
+      "id": "s5",
+      "name": "Twilhaar-Monument",
+      "quote": "In der Nähe des Ortes Hellendoorn befindet sich seit dem 2. Oktober 2003 ein Monument, das an die jüdischen Zwangsarbeiter des Arbeitslagers Twilhaar erinnert.",
+      "english": "Near the town of Hellendoorn, there has been a monument since October 2, 2003, commemorating the Jewish forced laborers of the Twilhaar labor camp."
+    },
+    {
+      "id": "s6",
+      "name": "Informationszentrum der niederländischen Forstverwaltung Staatsbosbeheer",
+      "quote": "Im Osten des Nationalparks bei Nijverdal liegt ein Informationszentrum der niederländischen Forstverwaltung Staatsbosbeheer, in dem sich Besucher über Geschichte und Natur des Nationalparks informieren können.",
+      "english": "In the east of the national park near Nijverdal is an information center of the Dutch forestry administration Staatsbosbeheer, where visitors can learn about the history and nature of the national park."
+    },
+    {
+      "id": "s7",
+      "name": "Publiekssterrenwacht Hellendoorn",
+      "quote": "Teil dieses Zentrums ist auch die Publiekssterrenwacht Hellendoorn, eine für die Öffentlichkeit zugängliche Sternwarte, die am 19. April 2013 hierher verlegt wurde.",
+      "english": "Part of this center is also the Publiekssterrenwacht Hellendoorn, a public observatory that was moved here on April 19, 2013."
+    }
+  ],
+  "days": [
+    {
+      "title": "Historical Monuments and Hills",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Memorials and Science",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "ebee3b8e13da5465febdf9b808531e2b493f7683a49c73fee9cdb7b7991abccd"
+}

@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Zandleij",
+      "quote": "Der Park bietet eine Variation von trockenen Sandverwehungen und Nadelwald und umfasst auch die weitläufige Talzone des kleinen Flusses Zandleij.",
+      "english": "The park offers a variation of dry sand drifts and coniferous forest and also includes the extensive valley zone of the small river Zandleij."
+    },
+    {
+      "id": "s2",
+      "name": "De Brand",
+      "quote": "Hier liegt das Naturgebiet De Brand mit seiner Vielfalt an Niederwald, Feuchtwiesen und Sumpfabschnitten.",
+      "english": "The De Brand nature area is located here with its variety of coppice forest, wet meadows, and swamp sections."
+    },
+    {
+      "id": "s3",
+      "name": "Landgut Plantloon",
+      "quote": "Das Landgut Plantloon bei Waalwijk ist ein weitläufiges Wandergebiet mit landwirtschaftlichen Flächen und Alleen.",
+      "english": "The Plantloon estate near Waalwijk is an extensive hiking area with agricultural land and avenues."
+    },
+    {
+      "id": "s4",
+      "name": "Galgenwiel",
+      "quote": "Bekannt ist hier vor allem der See Galgenwiel, der durch einen Deichbruch der Maas entstanden ist.",
+      "english": "The lake Galgenwiel, which was created by a dike breach of the Maas, is particularly well known here."
+    },
+    {
+      "id": "s5",
+      "name": "Schloss und Landgut Strijdhoef",
+      "quote": "Das Schloss und Landgut Strijdhoef liegt ebenfalls im Zandleijgebiet.",
+      "english": "The Strijdhoef castle and estate is also located in the Zandleij area."
+    },
+    {
+      "id": "s6",
+      "name": "Hengstven",
+      "quote": "Das ca. 200 Hektar große Gebiet Hengstven im Osten des Parks mit ausgedehnten Blumenwiesen, die von Landwirten ökologisch bewirtschaftet werden.",
+      "english": "The approx. 200-hectare Hengstven area in the east of the park with extensive flower meadows that are managed ecologically by farmers."
+    },
+    {
+      "id": "s7",
+      "name": "'s-Hertogenbosch-Drongelen",
+      "quote": "Der Entwässerungskanal ’s-Hertogenbosch-Drongelen bildet die Nordgrenze des Parks.",
+      "english": "The 's-Hertogenbosch-Drongelen drainage canal forms the northern boundary of the park."
+    }
+  ],
+  "days": [
+    {
+      "title": "Wetlands and Estates of the Zandleij Valley",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s5"
+      ]
+    },
+    {
+      "title": "Northern Estates and Waterways",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Eastern Meadows",
+      "stop_ids": [
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "f11a77e4720a0814adaace5cb83faed665309b01bd4766f4cb0d45b62bc835ad"
+}

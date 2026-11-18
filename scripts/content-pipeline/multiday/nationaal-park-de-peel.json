@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "De Groote Peel",
+      "quote": "De Groote Peel wird in den Niederlanden als Nationalpark mit einer Fläche von gut 1400 ha geführt, allerdings entspricht das niederländische Verständnis von einem Nationalpark nicht unbedingt immer in jeder Hinsicht den internationalen Kriterien.",
+      "english": "De Groote Peel is managed as a national park in the Netherlands with an area of a good 1400 hectares, although the Dutch understanding of a national park does not necessarily always correspond to international criteria in every respect."
+    },
+    {
+      "id": "s2",
+      "name": "De Verheven Peel",
+      "quote": "Im Norden liegt De Verheven Peel.",
+      "english": "De Verheven Peel is located in the north."
+    },
+    {
+      "id": "s3",
+      "name": "ausgedehnte Wasserflächen",
+      "quote": "De Groote Peel weist ausgedehnte Wasserflächen auf, die durch frühere Abtorfungen entstanden sind.",
+      "english": "De Groote Peel features extensive areas of water that were created by former peat extraction."
+    },
+    {
+      "id": "s4",
+      "name": "Pfade",
+      "quote": "Sowohl zur Vogelbrutzeit als auch während der Zugzeiten sind daher die ins Moor führenden Pfade gesperrt.",
+      "english": "During the bird breeding season as well as during migration periods, the paths leading into the moor are therefore closed."
+    },
+    {
+      "id": "s5",
+      "name": "Ospel",
+      "quote": "Am südlichen Rand des Gebietes, in der Nähe des Orts Ospel, befindet sich ein Informationszentrum, von dem aus einige Knüppeldammwege entlang des Moorrandes führen.",
+      "english": "On the southern edge of the area, near the village of Ospel, there is an information center from which several log-paved paths lead along the edge of the moor."
+    },
+    {
+      "id": "s6",
+      "name": "Informationszentrum",
+      "quote": "Am südlichen Rand des Gebietes, in der Nähe des Orts Ospel, befindet sich ein Informationszentrum, von dem aus einige Knüppeldammwege entlang des Moorrandes führen.",
+      "english": "On the southern edge of the area, near the village of Ospel, there is an information center from which several log-paved paths lead along the edge of the moor."
+    },
+    {
+      "id": "s7",
+      "name": "Knüppeldammwege",
+      "quote": "Am südlichen Rand des Gebietes, in der Nähe des Orts Ospel, befindet sich ein Informationszentrum, von dem aus einige Knüppeldammwege entlang des Moorrandes führen.",
+      "english": "On the southern edge of the area, near the village of Ospel, there is an information center from which several log-paved paths lead along the edge of the moor."
+    }
+  ],
+  "days": [
+    {
+      "title": "Exploring the Southern Gateway",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Moors and Waterways",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "The Northern Extension",
+      "stop_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "_text_sha": "0f0b4a8d15ba4452bfcf02b81824539e87d217c4e70ad81c01ae44ed75e24a6d"
+}

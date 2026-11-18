@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Amer",
+      "quote": "Seine südliche Grenze bildet die Amer.",
+      "english": "Its southern border is formed by the Amer."
+    },
+    {
+      "id": "s2",
+      "name": "Hollands Diep",
+      "quote": "Damals entstanden das breite Hollands Diep und auch das undurchdringliche Sumpfgebiet „de Biesbosch“ (= Binsenwald).",
+      "english": "At that time, the wide Hollands Diep was formed, as well as the impenetrable swamp area 'de Biesbosch' (= rush forest)."
+    },
+    {
+      "id": "s3",
+      "name": "Biesboschmuseum",
+      "quote": "Zwölf Kilometer westsüdwestlich von Werkendam und von diesem Dorf aus zu erreichen befindet sich das Biesboschmuseum, ein Besucherzentrum.",
+      "english": "Twelve kilometers west-southwest of Werkendam and reachable from this village is the Biesboschmuseum, a visitor center."
+    },
+    {
+      "id": "s4",
+      "name": "Halve Maen",
+      "quote": "Fahrgastschiff Halve Maen",
+      "english": "Passenger ship Halve Maen"
+    }
+  ],
+  "days": [
+    {
+      "title": "Rivers and Museums of the Biesbosch",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "47de0ce614a5f2a046b747a75228e2773319160c7866d2db37d9f73045a0ee9b"
+}

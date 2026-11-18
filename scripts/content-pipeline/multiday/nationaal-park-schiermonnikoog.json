@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Nordsee",
+      "quote": "Der Nationalpark umfasst die an die Insel Schiermonnikoog angrenzenden Bereiche der offenen Nordsee im Norden sowie des Wattenmeeres im Süden, das bei Ebbe trockenfällt.",
+      "english": "The national park includes the areas of the open North Sea bordering the island of Schiermonnikoog to the north and the Wadden Sea to the south, which falls dry at low tide."
+    },
+    {
+      "id": "s2",
+      "name": "Wattenmeer",
+      "quote": "Das Wattenmeer um die Insel gehört außerdem zu den niederländischen Welterbestätten.",
+      "english": "The Wadden Sea around the island is also one of the Dutch World Heritage sites."
+    },
+    {
+      "id": "s3",
+      "name": "Duinen Schiermonnikoog",
+      "quote": "Drei Teilgebiete des Nationalparks, die sogenannten Duinen Schiermonnikoog, die Küstenzone der Nordsee und das Wattenmeer, sind zusätzlich als Teil des europäischen Naturschutznetzwerks Natura 2000 ausgewiesen.",
+      "english": "Three sub-areas of the national park, the so-called Schiermonnikoog Dunes, the coastal zone of the North Sea and the Wadden Sea, are additionally designated as part of the European nature conservation network Natura 2000."
+    },
+    {
+      "id": "s4",
+      "name": "Inselwälder",
+      "quote": "Ungewöhnlich sind die auf Schiermonnikoog vorhandenen Inselwälder, die sowohl aus Nadel- als auch aus Laubbäumen bestehen.",
+      "english": "The island forests on Schiermonnikoog, which consist of both coniferous and deciduous trees, are unusual."
+    },
+    {
+      "id": "s5",
+      "name": "Schorren",
+      "quote": "Im Sommer werden die Schorren vor allem durch den Gewöhnlichen Strandflieder optisch dominiert.",
+      "english": "In summer, the salt marshes are visually dominated primarily by the common sea lavender."
+    },
+    {
+      "id": "s6",
+      "name": "Strandabschnitten",
+      "quote": "Der terrestrische Teil des Parks bietet eine abwechslungsreiche Landschaft mit sich ständig verändernden Dünen, Strandabschnitten, Inselwäldern und Schorren.",
+      "english": "The terrestrial part of the park offers a varied landscape with constantly changing dunes, beach sections, island forests and salt marshes."
+    },
+    {
+      "id": "s7",
+      "name": "Vogelringstation Schiermonnikoog",
+      "quote": "Seit 1991 wird zur Erfassung der Vogelbestände und zur Nachverfolgung der Zugrouten eine Beringungsstation durch die Stiftung Vogelringstation Schiermonnikoog betrieben.",
+      "english": "Since 1991, a ringing station has been operated by the Schiermonnikoog Bird Ringing Station Foundation to record bird populations and track migration routes."
+    }
+  ],
+  "days": [
+    {
+      "title": "Coastal Waters and Dunes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Interior Landscapes and Forests",
+      "stop_ids": [
+        "s4",
+        "s6"
+      ]
+    },
+    {
+      "title": "Wildlife and Salt Marshes",
+      "stop_ids": [
+        "s5",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "23c47ba710ce5fc8edcd46a3adb3075ec7df848a8ab6c7b407389165de57e09b"
+}

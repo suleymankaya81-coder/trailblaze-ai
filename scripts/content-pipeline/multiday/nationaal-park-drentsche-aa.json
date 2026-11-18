@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Drentsche Aa",
+      "quote": "Der besondere Wert der Landschaft ergibt sich vor allem aus der Naturbelassenheit der Drentschen Aa und ihrer Umgebung.",
+      "english": "The special value of the landscape results primarily from the natural state of the Drentsche Aa and its surroundings."
+    },
+    {
+      "id": "s2",
+      "name": "Hondsrug",
+      "quote": "Der Nationalpark liegt teilweise auf dem etwa 25 Meter hohen Hügelrücken Hondsrug, der sich vom Drentschen Plateau bis zum Hogeland an der Küste zieht.",
+      "english": "The national park lies partly on the approximately 25-meter-high Hondsrug ridge, which stretches from the Drentsche Plateau to the Hogeland on the coast."
+    },
+    {
+      "id": "s3",
+      "name": "De Strubben-Kniphorstbosch",
+      "quote": "Neben schützenswerten Naturgebieten wie Heideflächen, Graslandschaften, kleinen Waldgebieten und Sandverwehungen umfasst der Park mit De Strubben-Kniphorstbosch auch das erste archäologische Reservat der Niederlande.",
+      "english": "In addition to nature areas worthy of protection such as heathlands, grasslands, small wooded areas and sand drifts, the park also includes the first archaeological reserve in the Netherlands with De Strubben-Kniphorstbosch."
+    },
+    {
+      "id": "s4",
+      "name": "Rolde",
+      "quote": "Innerhalb der Grenzen des Nationalparks liegen außerdem insgesamt 16 Dörfer und Weiler mit insgesamt etwa 10.000 Einwohnern, von denen Rolde und Tynarloo die größten sind.",
+      "english": "Within the boundaries of the national park there are also a total of 16 villages and hamlets with a total of about 10,000 inhabitants, of which Rolde and Tynarloo are the largest."
+    },
+    {
+      "id": "s5",
+      "name": "Tynarloo",
+      "quote": "Innerhalb der Grenzen des Nationalparks liegen außerdem insgesamt 16 Dörfer und Weiler mit insgesamt etwa 10.000 Einwohnern, von denen Rolde und Tynarloo die größten sind.",
+      "english": "Within the boundaries of the national park there are also a total of 16 villages and hamlets with a total of about 10,000 inhabitants, of which Rolde and Tynarloo are the largest."
+    },
+    {
+      "id": "s6",
+      "name": "Balloërveld",
+      "quote": "Ebenfalls Teil des Parkgebiets ist das ehemalige Truppenübungsgelände Balloërveld.",
+      "english": "Also part of the park area is the former military training area Balloërveld."
+    },
+    {
+      "id": "s7",
+      "name": "Frieslandriegel",
+      "quote": "Im Zweiten Weltkrieg gehörte dieser Ort zum sogenannten „Frieslandriegel“, einer Verteidigungslinie der deutschen Wehrmacht gegen die von Westen her anrückenden Streitkräfte der Alliierten.",
+      "english": "During the Second World War, this place belonged to the so-called \"Frieslandriegel\", a defense line of the German Wehrmacht against the Allied forces advancing from the west."
+    }
+  ],
+  "days": [
+    {
+      "title": "Natural River and Village Settlements",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Archaeology and Ridge Heights",
+      "stop_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Heathland History and Defense Lines",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "460308f40f9f158dd8a1b5b7224c4245665ed6d3fdf05a428ee54559ad7aabba"
+}

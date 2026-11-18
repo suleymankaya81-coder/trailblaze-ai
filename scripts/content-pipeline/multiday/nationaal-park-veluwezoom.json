@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Heuven",
+      "quote": "Im südlichen, meist hügeligen Teil des Parks liegen mehrere Landgüter wie Heuven und Beekhuizen.",
+      "english": "In the southern, mostly hilly part of the park lie several estates such as Heuven and Beekhuizen."
+    },
+    {
+      "id": "s2",
+      "name": "Beekhuizen",
+      "quote": "In der Senke des Beekhuizener Bachs kommen außerdem einige besondere, charakteristische Pflanzen wie das Gegenblättrige Milzkraut vor.",
+      "english": "In the hollow of the Beekhuizen stream, some special, characteristic plants such as the opposite-leaved golden-saxifrage also occur."
+    },
+    {
+      "id": "s3",
+      "name": "Posbank",
+      "quote": "Im Zentrum des Parks befindet sich der rund 90 Meter hohe Aussichtspunkt Posbank.",
+      "english": "The approximately 90-meter-high Posbank viewpoint is located in the center of the park."
+    },
+    {
+      "id": "s4",
+      "name": "Zijpenberg",
+      "quote": "Diese Hügel, wie der Zijpenberg und der Posbank, sind heute typisch für das Gebiet.",
+      "english": "These hills, such as the Zijpenberg and the Posbank, are typical of the area today."
+    },
+    {
+      "id": "s5",
+      "name": "Signaal Imbosch",
+      "quote": "Der höchste Punkt ist das ca. 110 Meter hohe Signaal Imbosch, das nördlich des Zijpenbergs in einem Wald liegt.",
+      "english": "The highest point is the approximately 110-meter-high Signaal Imbosch, which lies in a forest north of the Zijpenberg."
+    },
+    {
+      "id": "s6",
+      "name": "Carolinahoeve",
+      "quote": "Im Zentrum des Nationalparks befinden sich zwei gastronomische Einrichtungen: das Teehaus Paviljoen de Posbank und das Café Carolinahoeve.",
+      "english": "Two catering establishments are located in the center of the national park: the Paviljoen de Posbank teahouse and the Café Carolinahoeve."
+    },
+    {
+      "id": "s7",
+      "name": "Besucherzentrum Veluwezoom",
+      "quote": "Am südlichen Rand des Parks, in der Nähe des Dorfs Rheden, befindet sich das Besucherzentrum Veluwezoom, von dem aus verschiedene Routen in den Park führen.",
+      "english": "At the southern edge of the park, near the village of Rheden, is the Veluwezoom Visitor Centre, from which various routes lead into the park."
+    },
+    {
+      "id": "s8",
+      "name": "Elsberg",
+      "quote": "Im Nationalpark wurden zwei Hütten zur Beobachtung von Wildtieren gebaut: eine am Rande der ehemaligen landwirtschaftlichen Enklave Herikhuizen, von wo aus man die Ruinen eines ehemaligen Bauernhofes sehen kann; die andere auf dem Elsberg, von dem aus man einen weiten Blick über die Rheder- und Worthrederheide und die umliegenden Wälder hat.",
+      "english": "Two wildlife observation huts were built in the national park: one on the edge of the former agricultural enclave of Herikhuizen, from where the ruins of a former farm can be seen; the other on the Elsberg, from which there is a wide view over the Rheder- and Worthrederheide and the surrounding forests."
+    },
+    {
+      "id": "s9",
+      "name": "Rozendaalse Zand",
+      "quote": "Davon ist im Veluwezoom lediglich der kleine Rozendaalse Zand übrig.",
+      "english": "Of these, only the small Rozendaalse Zand remains in the Veluwezoom."
+    }
+  ],
+  "days": [
+    {
+      "title": "Southern Estates and Gateway",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Central Peaks and Vantage Points",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s6"
+      ]
+    },
+    {
+      "title": "Northern Wilderness and Sands",
+      "stop_ids": [
+        "s5",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "2a3585950e7e15fc637891ecbd117ba71bba4638c0bd77f1213bae0818f761ea"
+}

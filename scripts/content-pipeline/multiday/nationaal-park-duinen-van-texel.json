@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "De Koog",
+      "quote": "An der schmalsten Stelle bei der Ortschaft De Koog ist er hingegen nur wenige hundert Meter breit.",
+      "english": "In contrast, at the narrowest point near the village of De Koog, it is only a few hundred meters wide."
+    },
+    {
+      "id": "s2",
+      "name": "Ecomare",
+      "quote": "Des Weiteren befindet sich in der Nähe der Ortschaft De Koog am Rande des Parks das Naturkundemuseum und Aquarium Ecomare, indem die Tier- und Pflanzenwelt der Insel sowie das Wattenmeer und die Ökologie der Nordsee vorgestellt werden.",
+      "english": "Furthermore, the natural history museum and aquarium Ecomare is located near the village of De Koog at the edge of the park, where the flora and fauna of the island as well as the Wadden Sea and the ecology of the North Sea are presented."
+    },
+    {
+      "id": "s3",
+      "name": "De Slufter",
+      "quote": "Das Landschaftsbild besteht überwiegend aus dem Dünengürtel der Insel, es gibt aber auch Wälder, Strand-, Heide- und Wasserflächen sowie Priele (De Slufter).",
+      "english": "The landscape consists mainly of the island's dune belt, but there are also forests, beach, heath and water areas as well as tidal creeks (De Slufter)."
+    },
+    {
+      "id": "s4",
+      "name": "Wanderwege",
+      "quote": "Der Nationalpark bietet verschiedene Wanderwege und Routen zum Radfahren.",
+      "english": "The national park offers various hiking trails and routes for cycling."
+    }
+  ],
+  "days": [
+    {
+      "title": "Village and Nature Exploration",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "fbae4facc33a408ebaea08a4c591a7be3274887def0be64e987b1811668c4156"
+}

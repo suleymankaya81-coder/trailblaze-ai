@@ -1,0 +1,52 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Pettemer Zeewering",
+      "quote": "Es liegt in der Gemeinde Schagen (bis Ende 2012 Zijpe) hinter dem Deich „Pettemer Zeewering“.",
+      "english": "It is located in the municipality of Schagen (until the end of 2012 Zijpe) behind the dike \"Pettemer Zeewering\"."
+    },
+    {
+      "id": "s2",
+      "name": "Säule aus den Steinen der zerstörten Kirche",
+      "quote": "Zum Gedenken an dieses Ereignis steht in der Stadtmitte eine Säule aus den Steinen der zerstörten Kirche.",
+      "english": "In memory of this event, a column made from the stones of the destroyed church stands in the town center."
+    },
+    {
+      "id": "s3",
+      "name": "Energieforschungszentrum ECN",
+      "quote": "Internationale Bedeutung hat das niederländische Energieforschungszentrum ECN (das eigentlich näher an der Nachbargemeinde St. Maartenszee liegt, aber dennoch zu Petten zählt).",
+      "english": "The Dutch energy research center ECN has international significance (it is actually closer to the neighboring community of St. Maartenszee, but still counts as part of Petten)."
+    },
+    {
+      "id": "s4",
+      "name": "Hondsbossche Dünen",
+      "quote": "Mit dem Projekt „Kust op Kracht“ schuf Rijkswaterstaat, die zuständige Behörde für Wasserbau und Küstenschutz, die Hondsbosschen Dünen, die bis an die Schoorlser Dünen reichen.",
+      "english": "With the \"Kust op Kracht\" project, Rijkswaterstaat, the authority responsible for hydraulic engineering and coastal protection, created the Hondsbossche Dunes, which reach as far as the Schoorl Dunes."
+    },
+    {
+      "id": "s5",
+      "name": "zand tegen zee",
+      "quote": "Im Informationszentrum zum Küstenschutz „zand tegen zee“ werden die Historie und die Baumaßnahme in Wort und Bild dem Besucher nahegebracht.",
+      "english": "In the coastal protection information center \"zand tegen zee\", the history and construction measures are explained to the visitor in words and pictures."
+    }
+  ],
+  "days": [
+    {
+      "title": "Town History and Research",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Coastal Protection and Dunes",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "277165f6eb5c468a79adf9a3e40c5dc142bec500c6f187f60a009b0275512290"
+}

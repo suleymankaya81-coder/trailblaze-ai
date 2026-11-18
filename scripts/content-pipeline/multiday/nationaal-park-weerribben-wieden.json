@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "De Weerribben",
+      "quote": "Zusammen mit De Weerribben bildet De Wieden den etwa 90 km² großen Nationalpark Weerribben-Wieden in der niederländischen Provinz Overijssel.",
+      "english": "Together with De Weerribben, De Wieden forms the approximately 90 km² National Park Weerribben-Wieden in the Dutch province of Overijssel."
+    },
+    {
+      "id": "s2",
+      "name": "De Wieden",
+      "quote": "Als Folge davon vernichteten Stürme die schmalen Zwischendämme, wodurch große Teiche in den Wieden entstanden.",
+      "english": "As a result, storms destroyed the narrow intermediate dams, creating large ponds in the Wieden."
+    },
+    {
+      "id": "s3",
+      "name": "Kalenberg",
+      "quote": "Rund um Kalenberg, Dwarsgracht und Belt-Schutsloot entstanden dadurch viele Sumpfwälder, doch sind die Wälder um die Entenfallen noch sehr viel älter.",
+      "english": "Around Kalenberg, Dwarsgracht and Belt-Schutsloot, many swamp forests were created as a result, but the forests around the duck decoys are much older."
+    },
+    {
+      "id": "s4",
+      "name": "Dwarsgracht",
+      "quote": "Rund um Kalenberg, Dwarsgracht und Belt-Schutsloot entstanden dadurch viele Sumpfwälder, doch sind die Wälder um die Entenfallen noch sehr viel älter.",
+      "english": "Around Kalenberg, Dwarsgracht and Belt-Schutsloot, many swamp forests were created as a result, but the forests around the duck decoys are much older."
+    },
+    {
+      "id": "s5",
+      "name": "Belt-Schutsloot",
+      "quote": "Rund um Kalenberg, Dwarsgracht und Belt-Schutsloot entstanden dadurch viele Sumpfwälder, doch sind die Wälder um die Entenfallen noch sehr viel älter.",
+      "english": "Around Kalenberg, Dwarsgracht and Belt-Schutsloot, many swamp forests were created as a result, but the forests around the duck decoys are much older."
+    },
+    {
+      "id": "s6",
+      "name": "Entenfallen",
+      "quote": "In Westeuropa wurde der Fang von Wasservögeln in großem Maßstab in diesen sogenannten „Entenkojen“ durchgeführt.",
+      "english": "In Western Europe, the catching of waterfowl was carried out on a large scale in these so-called \"duck decoys.\""
+    },
+    {
+      "id": "s7",
+      "name": "Beulake",
+      "quote": "Nach zwei großen Stürmen (1775 und 1776) verschwand sogar das Dorf „Beulake“ in den Fluten.",
+      "english": "After two major storms (1775 and 1776), even the village of \"Beulake\" disappeared in the floods."
+    }
+  ],
+  "days": [
+    {
+      "title": "Major Landscapes and Lost Villages",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Forest Villages and Swamp Woodlands",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Waterways and Historic Duck Decoys",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "1a7730c7ef832c2aab71b39dd6a5180dc19c1b6810c4bf94dc096d4270a186e3"
+}

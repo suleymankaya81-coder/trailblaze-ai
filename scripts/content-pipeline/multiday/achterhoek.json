@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Doesburg",
+      "quote": "Doesburg, alte Hansestadt",
+      "english": "Doesburg, old Hanseatic city"
+    },
+    {
+      "id": "s2",
+      "name": "Doetinchem",
+      "quote": "Doetinchem, größte Stadt im westlichen Achterhoek",
+      "english": "Doetinchem, largest city in the western Achterhoek"
+    },
+    {
+      "id": "s3",
+      "name": "Winterswijk",
+      "quote": "Winterswijk, größte Stadt im östlichen Achterhoek",
+      "english": "Winterswijk, largest city in the eastern Achterhoek"
+    },
+    {
+      "id": "s4",
+      "name": "Zutphen",
+      "quote": "Zutphen, alte Stadt und Teil des Städte-Dreiecks mit Apeldoorn und Deventer (Overijssel)",
+      "english": "Zutphen, old city and part of the city triangle with Apeldoorn and Deventer (Overijssel)"
+    },
+    {
+      "id": "s5",
+      "name": "Aalten",
+      "quote": "Aalten, mit Aalten, Dinxperlo und Bredevoort",
+      "english": "Aalten, with Aalten, Dinxperlo and Bredevoort"
+    },
+    {
+      "id": "s6",
+      "name": "Dinxperlo",
+      "quote": "Aalten, mit Aalten, Dinxperlo und Bredevoort",
+      "english": "Aalten, with Aalten, Dinxperlo and Bredevoort"
+    },
+    {
+      "id": "s7",
+      "name": "Bredevoort",
+      "quote": "Aalten, mit Aalten, Dinxperlo und Bredevoort",
+      "english": "Aalten, with Aalten, Dinxperlo and Bredevoort"
+    },
+    {
+      "id": "s8",
+      "name": "Groenlo",
+      "quote": "Bekannt ist die ehemals in Groenlo hergestellte Biermarke Grolsch und die Mundart-Rockband Normaal.",
+      "english": "Known is the Grolsch beer brand, formerly produced in Groenlo, and the dialect rock band Normaal."
+    }
+  ],
+  "days": [
+    {
+      "title": "Historical Western Towns",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s4"
+      ]
+    },
+    {
+      "title": "Eastern Cities and Brewing Heritage",
+      "stop_ids": [
+        "s3",
+        "s8"
+      ]
+    },
+    {
+      "title": "Aalten Municipality Sights",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "6d58a07abb3cdba82256284fc5dc0fb0f40535e660c2dce9782eba658770b2df"
+}

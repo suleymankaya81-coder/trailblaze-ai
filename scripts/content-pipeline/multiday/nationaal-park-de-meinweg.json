@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Elfenmeer",
+      "quote": "Die zwei größten Moorseen, auf Niederländisch „vennen“ genannt, sind das „Elfenmeer“ und der „Rolvennen“-See.",
+      "english": "The two largest moor lakes, called 'vennen' in Dutch, are the 'Elfenmeer' and the 'Rolvennen' lake."
+    },
+    {
+      "id": "s2",
+      "name": "Rolvennen",
+      "quote": "Die zwei größten Moorseen, auf Niederländisch „vennen“ genannt, sind das „Elfenmeer“ und der „Rolvennen“-See.",
+      "english": "The two largest moor lakes, called 'vennen' in Dutch, are the 'Elfenmeer' and the 'Rolvennen' lake."
+    },
+    {
+      "id": "s3",
+      "name": "Besucherzentrum",
+      "quote": "Die Ausstellung in dem an der vom Grenzübergang zu Deutschland bei Rothenbach nach Roermond führenden Nationalstraße N 570 gelegene Besucherzentrum des Nationalparks zeigt die Natur- und Kulturgeschichte des Gebiets auf.",
+      "english": "The exhibition in the national park's visitor center, located on the N 570 national road leading from the border crossing to Germany at Rothenbach to Roermond, displays the natural and cultural history of the area."
+    },
+    {
+      "id": "s4",
+      "name": "Eisernen Rheins",
+      "quote": "Seit 1879 durchziehen die Gleise des Eisernen Rheins das Gebiet.",
+      "english": "Since 1879, the tracks of the Iron Rhine have run through the area."
+    },
+    {
+      "id": "s5",
+      "name": "Beatrixmine",
+      "quote": "1962 wurde die Beatrixmine kurz vor der Aufnahme der Förderung geschlossen.",
+      "english": "In 1962, the Beatrix Mine was closed shortly before production began."
+    },
+    {
+      "id": "s6",
+      "name": "Kolleg St. Ludwig",
+      "quote": "Direkt an der Grenze zu Deutschland befand sich seit 1909 das ehemalige Franziskaner-Internat und Kloster Kolleg St. Ludwig.",
+      "english": "Since 1909, the former Franciscan boarding school and monastery Kolleg St. Ludwig was located directly on the border with Germany."
+    },
+    {
+      "id": "s7",
+      "name": "Maharishi European Research University",
+      "quote": "Das Gelände nutzt heute die Maharishi European Research University, MERU, welche Grundstück und Gebäude im Jahr 1984 vom niederländischen Staat erworben hatte.",
+      "english": "Today, the site is used by the Maharishi European Research University, MERU, which acquired the land and buildings from the Dutch state in 1984."
+    }
+  ],
+  "days": [
+    {
+      "title": "Natural Waters and Information",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Industrial and Railway Heritage",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Monastic and Academic History",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "6c578cb3a1d63c582e5a7c22713ca52a03d87707eb9fdb88accc55e87e7bbbd5"
+}

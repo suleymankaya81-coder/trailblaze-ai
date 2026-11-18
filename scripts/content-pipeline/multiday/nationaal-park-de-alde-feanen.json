@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Earnewâld",
+      "quote": "Der circa 12 Kilometer südöstlich von Leeuwarden gelegene kleine Ort Earnewâld befindet sich im Osten des Nationalparks und wird von diesem vollständig umschlossen.",
+      "english": "The small village of Earnewâld, located about 12 kilometers southeast of Leeuwarden, is situated in the east of the national park and is completely surrounded by it."
+    },
+    {
+      "id": "s2",
+      "name": "Princenhof",
+      "quote": "In der Mitte des Nationalparks liegt der sogenannte Princenhof, ein Gebiet aus mehreren kleinen Seen, Buchten und Inseln.",
+      "english": "In the middle of the national park lies the so-called Princenhof, an area consisting of several small lakes, bays and islands."
+    },
+    {
+      "id": "s3",
+      "name": "Jan Durkspolder",
+      "quote": "Im Süden von Earnewâld liegt der Jan Durkspolder.",
+      "english": "The Jan Durkspolder is located in the south of Earnewâld."
+    },
+    {
+      "id": "s4",
+      "name": "petgaten",
+      "quote": "Hierdurch entstanden circa 1,5 Meter tiefe, langgestreckte Wasserflächen, die sogenannten petgaten.",
+      "english": "This created approximately 1.5-meter-deep, elongated bodies of water, the so-called petgaten."
+    },
+    {
+      "id": "s5",
+      "name": "legakkers",
+      "quote": "Zwischen diesen lagen schmale Streifen nicht abgegrabenen, trockenen Landes, auf denen der gestochene Torf zum Trocknen ausgelegt wurde, die sogenannten legakkers.",
+      "english": "Between these were narrow strips of unexcavated, dry land on which the cut peat was laid out to dry, the so-called legakkers."
+    },
+    {
+      "id": "s6",
+      "name": "Schwingrasen",
+      "quote": "Aus ökologischer Sicht sind vor allem die Zwischenstadien dieses Prozesses interessant, allen voran der sogenannte Schwingrasen, ein auf den ersten Blick wie fester Boden aussehender Untergrund, der jedoch noch unterspült ist und bei jedem Schritt „mitschwingt“.",
+      "english": "From an ecological point of view, the intermediate stages of this process are particularly interesting, above all the so-called quaking bog, a substrate that looks like solid ground at first glance but is still washed out underneath and \"vibrates\" with every step."
+    },
+    {
+      "id": "s7",
+      "name": "blauwgraslanden",
+      "quote": "Eine weitere besondere Vegetationsform sind die sogenannten blauwgraslanden.",
+      "english": "Another special form of vegetation are the so-called blue grasslands."
+    }
+  ],
+  "days": [
+    {
+      "title": "Village and Polder Landscapes",
+      "stop_ids": [
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "title": "Heart of the Lakes and Marshes",
+      "stop_ids": [
+        "s2",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Traces of Peat Harvesting",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "9dd7cef105111b8c7d30c31a8702ea899c99b6a2aa2825a95e52586af0aabe9e"
+}

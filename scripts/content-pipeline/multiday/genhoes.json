@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Schloss Genhoes",
+      "quote": "Das Schloss Genhoes (niederländisch Kasteel Genhoes, limburgisch Kesjtièl Genhoes) im Ortsteil Alt-Valkenburg der limburgischen Gemeinde Valkenburg aan de Geul ist ein Wasserschloss, das in seiner heutigen Form im 15. bis 18. Jahrhundert entstand.",
+      "english": "Genhoes Castle (Dutch: Kasteel Genhoes, Limburgish: Kesjtièl Genhoes) in the Alt-Valkenburg district of the Limburg municipality of Valkenburg aan de Geul is a moated castle that was built in its current form between the 15th and 18th centuries."
+    },
+    {
+      "id": "s2",
+      "name": "Tal der Göhl",
+      "quote": "Es steht im Tal der Göhl nur rund 390 Meter von Schloss Schaloen entfernt.",
+      "english": "It stands in the valley of the Göhl only about 390 meters away from Schaloen Castle."
+    },
+    {
+      "id": "s3",
+      "name": "Kellergeschoss",
+      "quote": "Ab wann sich am heutigen Standort ein festes Haus oder eine Burg befand, ist unklar, aber spätestens im 12./13. Jahrhundert stand dort ein Wohnturm, von dem Reste im heutigen Kellergeschoss erhalten sind.",
+      "english": "It is unclear when a permanent house or castle was first located at the current site, but by the 12th/13th century at the latest, a residential tower stood there, remains of which are preserved in today's basement level."
+    },
+    {
+      "id": "s4",
+      "name": "Nordflügel",
+      "quote": "Sein Sohn verkaufte das Anwesen Mitte des 18. Jahrhunderts an den Aachener Leonard Thimus, der es um den heutigen Nordflügel erweitern und einen barocken Garten anlegen ließ.",
+      "english": "His son sold the estate in the mid-18th century to Leonard Thimus from Aachen, who had it expanded by the current north wing and a Baroque garden laid out."
+    },
+    {
+      "id": "s5",
+      "name": "Vorburg",
+      "quote": "1955 von den Nachkommen der Pelser-Berensberg an die Vereniging tot Behoud van Natuurmonumenten (deutsch: Verein zur Erhaltung von Naturdenkmälern) veräußert, werden das Schloss und seine Vorburg seither als Wohnungen für mehrere Mietparteien genutzt.",
+      "english": "Sold in 1955 by the descendants of the Pelser-Berensbergs to the Vereniging tot Behoud van Natuurmonumenten (Society for the Preservation of Nature Monuments), the castle and its outer bailey have since been used as apartments for several tenants."
+    },
+    {
+      "id": "s6",
+      "name": "Westflügel",
+      "quote": "Zudem ließ Thimus den spätgotischen Westflügel instand setzen und modernisieren, unter anderem indem er neue Fenster installieren, ein neues Dach aufsetzen und im Inneren neues Parkett verlegen sowie Täfelungen mit geschnitzten Verzierungen anbringen ließ.",
+      "english": "In addition, Thimus had the late Gothic west wing repaired and modernized, including installing new windows, putting on a new roof, and laying new parquet flooring inside as well as installing paneling with carved decorations."
+    },
+    {
+      "id": "s7",
+      "name": "Südgarten",
+      "quote": "Er ließ 1824 den heutigen Südgarten mit Bäumen bepflanzen, jedoch nicht im Stil der damals beliebten englischen Landschaftsgärten, sondern im Boskett",
+      "english": "In 1824, he had today's south garden planted with trees, though not in the style of the English landscape gardens popular at the time, but as a bosquet."
+    }
+  ],
+  "days": [
+    {
+      "title": "Castles and Valleys of Alt-Valkenburg",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s5"
+      ]
+    },
+    {
+      "title": "Medieval Foundations and Gothic Wings",
+      "stop_ids": [
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "Baroque Extensions and Historic Gardens",
+      "stop_ids": [
+        "s4",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "2b27a1e59bf86c9dabc8daf3087e4c0c5f30c77ff1506ffb240b1f69f2969204"
+}

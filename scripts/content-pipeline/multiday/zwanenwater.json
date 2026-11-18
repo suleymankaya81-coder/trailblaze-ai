@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "ersten Sees",
+      "quote": "Man hat u. a. die Möglichkeit, aus zwei Beobachtungshütten heraus die Tiere des ersten Sees zu beobachten.",
+      "english": "Among other things, one has the opportunity to observe the animals of the first lake from two observation huts."
+    },
+    {
+      "id": "s2",
+      "name": "Beobachtungshütten",
+      "quote": "Man hat u. a. die Möglichkeit, aus zwei Beobachtungshütten heraus die Tiere des ersten Sees zu beobachten.",
+      "english": "Among other things, one has the opportunity to observe the animals of the first lake from two observation huts."
+    },
+    {
+      "id": "s3",
+      "name": "Insel des zweiten Sees",
+      "quote": "Eine ganz besondere Erscheinung ist der Löffelreiher, der nur noch selten anzutreffen ist und sich hier auf der Insel des zweiten Sees heimisch fühlt und dort brütet.",
+      "english": "A very special phenomenon is the spoonbill, which is only rarely encountered and feels at home here on the island of the second lake and breeds there."
+    },
+    {
+      "id": "s4",
+      "name": "Heuwiesen",
+      "quote": "Teile des Gebietes werden gemäht (Heuwiesen) und bieten damit beispielsweise Orchideen Platz.",
+      "english": "Parts of the area are mown (hay meadows) and thus offer space for orchids, for example."
+    },
+    {
+      "id": "s5",
+      "name": "Rundwanderwegen",
+      "quote": "Während der Wanderungen auf den Rundwanderwegen (2 oder 4,5 km) trifft man auf verschiedenste Landschaftsausprägungen.",
+      "english": "During the hikes on the circular hiking trails (2 or 4.5 km), one encounters a wide variety of landscape characteristics."
+    },
+    {
+      "id": "s6",
+      "name": "Tümpeln",
+      "quote": "Nachtigall und Kuckuck sind zu hören, Blessrallen streiten auf den Tümpeln.",
+      "english": "Nightingale and cuckoo can be heard, coots quarrel on the ponds."
+    },
+    {
+      "id": "s7",
+      "name": "Birkenwälder",
+      "quote": "Andere Stellen des Gebietes werden sich selbst überlassen, so dass hier kleine Birkenwälder entstehen.",
+      "english": "Other parts of the area are left to themselves, so that small birch forests develop here."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lakes and Observation Points",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Trails and Meadows",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Forests and Ponds",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "68575279bfbf8a1103819f25b129c1ca2716a165a5f1715981e6ae057074c2f5"
+}

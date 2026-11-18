@@ -1,0 +1,54 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Haringvliet",
+      "quote": "Die Insel liegt im Haringvliet, einem gemeinsamen Mündungsarm der Maas und der Waal, zwischen der (jetzt mit dem Festland verbundenen) Insel Goeree-Overflakkee und dem Festland südlich von Rotterdam.",
+      "english": "The island lies in the Haringvliet, a joint estuary arm of the Meuse and the Waal, between the island of Goeree-Overflakkee (now connected to the mainland) and the mainland south of Rotterdam."
+    },
+    {
+      "id": "s2",
+      "name": "Mariapolder",
+      "quote": "Der älteste der Polder Mariapolder liegt im Osten der Insel.",
+      "english": "The oldest of the polders, Mariapolder, is located in the east of the island."
+    },
+    {
+      "id": "s3",
+      "name": "Wehmut",
+      "quote": "„Wehmut“ (Weemoed) im Osten, ein rekonstruierter Polder mit historisch wiedererrichteten Deichen, Bauernhäusern und dem Anbau alter Getreidepflanzen,",
+      "english": "“Melancholy” (Weemoed) in the east, a reconstructed polder with historically rebuilt dikes, farmhouses and the cultivation of old grain plants,"
+    },
+    {
+      "id": "s4",
+      "name": "Fülle",
+      "quote": "„Fülle“ (Weelde) in der Mitte der Insel mit einem überwiegend eher naturbelassenen Überschwemmungsgebiet ohne landwirtschaftliche Nutzung und",
+      "english": "“Abundance” (Weelde) in the center of the island with a predominantly natural flood area without agricultural use and"
+    },
+    {
+      "id": "s5",
+      "name": "Wildnis",
+      "quote": "„Wildnis“ (Wildernis) im Süden und Westen mit der bis heute noch fast unberührten Natur, die größtenteils aus kaum zugänglichen Schilf- und Reetflächen besteht.",
+      "english": "“Wilderness” (Wildernis) in the south and west with nature that remains almost untouched to this day, consisting largely of barely accessible reed and thatch areas."
+    },
+    {
+      "id": "s6",
+      "name": "Warft",
+      "quote": "So soll z. B. eine neu angelegte Warft einen Überblick über die Insel verschaffen.",
+      "english": "For example, a newly created dwelling mound is intended to provide an overview of the island."
+    }
+  ],
+  "days": [
+    {
+      "title": "Exploring Tiengemeten Landscapes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "a7e2ddaa150b361770527f3f256a386175bda1e3356919f2b0efd8e4689cd3a9"
+}

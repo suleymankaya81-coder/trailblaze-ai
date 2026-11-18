@@ -1,0 +1,106 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Diverzand",
+      "quote": "Um das Gut Berkenheuvel und im Diverzand finden sich größere Tannenwälder.",
+      "english": "Larger fir forests can be found around the Berkenheuvel estate and in the Diverzand."
+    },
+    {
+      "id": "s2",
+      "name": "Gut Berkenheuvel",
+      "quote": "In den Wäldern befinden sich zahlreiche kleine Moorseen und Lichtungen mit Heidelandschaften, zum Beispiel Snoekveen und Grote Veen.",
+      "english": "In the forests there are numerous small moor lakes and clearings with heath landscapes, for example Snoekveen and Grote Veen."
+    },
+    {
+      "id": "s3",
+      "name": "Snoekveen",
+      "quote": "In den Wäldern befinden sich zahlreiche kleine Moorseen und Lichtungen mit Heidelandschaften, zum Beispiel Snoekveen und Grote Veen.",
+      "english": "In the forests there are numerous small moor lakes and clearings with heath landscapes, for example Snoekveen and Grote Veen."
+    },
+    {
+      "id": "s4",
+      "name": "Grote Veen",
+      "quote": "In den Wäldern befinden sich zahlreiche kleine Moorseen und Lichtungen mit Heidelandschaften, zum Beispiel Snoekveen und Grote Veen.",
+      "english": "In the forests there are numerous small moor lakes and clearings with heath landscapes, for example Snoekveen and Grote Veen."
+    },
+    {
+      "id": "s5",
+      "name": "Doldersummerveld",
+      "quote": "Ein weites Heidefeld befindet sich im Südwesten des Parks, das Doldersummerveld und das Wasperveld, das sich besonders zur Vogelbeobachtung (Brachvogel, Schwarzkehlchen, Kornweihe) eignet und über einen der zwei vorhandenen Aussichtstürme verfügt.",
+      "english": "A vast heath field is located in the southwest of the park, the Doldersummerveld and the Wasperveld, which is particularly suitable for bird watching (curlew, stonechat, hen harrier) and has one of the two existing observation towers."
+    },
+    {
+      "id": "s6",
+      "name": "Wasperveld",
+      "quote": "Ein weites Heidefeld befindet sich im Südwesten des Parks, das Doldersummerveld und das Wasperveld, das sich besonders zur Vogelbeobachtung (Brachvogel, Schwarzkehlchen, Kornweihe) eignet und über einen der zwei vorhandenen Aussichtstürme verfügt.",
+      "english": "A vast heath field is located in the southwest of the park, the Doldersummerveld and the Wasperveld, which is particularly suitable for bird watching (curlew, stonechat, hen harrier) and has one of the two existing observation towers."
+    },
+    {
+      "id": "s7",
+      "name": "De Vledder Aa",
+      "quote": "Hier befindet sich der Oberlauf des Bachs De Vledder Aa.",
+      "english": "The upper reaches of the De Vledder Aa stream are located here."
+    },
+    {
+      "id": "s8",
+      "name": "Aekingerzand",
+      "quote": "Aekingerzand ist die größte Flugsandverwehung.",
+      "english": "Aekingerzand is the largest drift sand area."
+    },
+    {
+      "id": "s9",
+      "name": "Grenspoel",
+      "quote": "Hier kommen auch die Heidelerche und der Schmätzer vor, am Grenspoel und auf Gut Berkenheuvel gibt es Chancen, Habichte und Schwarzspechte zu beobachten.",
+      "english": "The woodlark and the wheatear also occur here, and at the Grenspoel and on the Berkenheuvel estate there are chances to observe hawks and black woodpeckers."
+    },
+    {
+      "id": "s10",
+      "name": "Oude Willem",
+      "quote": "Mitten im Nationalpark befindet sich Oude Willem, ein ausgedehntes Landwirtschaftsgebiet, dessen Anbau von der Naturschutzverwaltung kontrolliert wird.",
+      "english": "In the middle of the national park is Oude Willem, an extensive agricultural area whose cultivation is controlled by the nature conservation administration."
+    },
+    {
+      "id": "s11",
+      "name": "Besucherzentrum in Appelscha",
+      "quote": "Der Nationalpark verfügt über ein Besucherzentrum in Appelscha und Diever sowie Informationstafeln an den sechs Großparkplätzen des Parks.",
+      "english": "The national park has a visitor center in Appelscha and Diever as well as information boards at the park's six large parking lots."
+    },
+    {
+      "id": "s12",
+      "name": "Besucherzentrum in Diever",
+      "quote": "Der Nationalpark verfügt über ein Besucherzentrum in Appelscha und Diever sowie Informationstafeln an den sechs Großparkplätzen des Parks.",
+      "english": "The national park has a visitor center in Appelscha and Diever as well as information boards at the park's six large parking lots."
+    }
+  ],
+  "days": [
+    {
+      "title": "Forests and Moor Lakes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Southwest Heathlands and Streams",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s12"
+      ]
+    },
+    {
+      "title": "Sand Dunes and Visitor Hubs",
+      "stop_ids": [
+        "s8",
+        "s9",
+        "s10",
+        "s11"
+      ]
+    }
+  ],
+  "_text_sha": "4a172557a805fd5fd898b6362e7e35c2827ec60ce43c7eb263a83dd6f7468c45"
+}

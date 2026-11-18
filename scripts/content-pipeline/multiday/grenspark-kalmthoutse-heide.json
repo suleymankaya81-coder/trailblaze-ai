@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Ravenhof-Moretusbos",
+      "quote": "Viele dieser Waldgebiete, wie etwa der Ravenhof-Moretusbos wurden einst von Großgrundbesitzern als Erholungsort angelegt.",
+      "english": "Many of these forest areas, such as the Ravenhof-Moretusbos, were once created by large landowners as a place of recreation."
+    },
+    {
+      "id": "s2",
+      "name": "ausgedehnten Heideflächen",
+      "quote": "Die Landschaft in dem Gebiet besteht hauptsächlich aus ausgedehnten Heideflächen, die das größte noch verbliebene, zusammenhängende Heidegebiet in Flandern bilden.",
+      "english": "The landscape in the area consists mainly of extensive heathlands, which form the largest remaining contiguous heathland area in Flanders."
+    },
+    {
+      "id": "s3",
+      "name": "Binnendünen",
+      "quote": "Unterbrochen wird die Heide von einigen Binnendünen und zahlreichen kleinen und flachen Mooren, die teilweise im Sommer trockenfallen.",
+      "english": "The heath is interrupted by some inland dunes and numerous small and shallow bogs, some of which dry up in summer."
+    },
+    {
+      "id": "s4",
+      "name": "flachen Mooren",
+      "quote": "Ab dem 13. Jahrhundert begann man des Weiteren damit die örtlichen Moore zur Gewinnung von Torf als Brennstoff zu entwässern.",
+      "english": "From the 13th century onwards, people also began to drain the local bogs to extract peat for use as fuel."
+    },
+    {
+      "id": "s5",
+      "name": "kleinen Seen",
+      "quote": "Entlang der Wege, an den Uferbereichen kleiner Seen und in Bereichen mit Plaggendüngung finden sich verschiedene Pionierpflanzen wie der Mittlere und Rundblättrige Sonnentau, das Braune und Weiße Schnabelried und gelegentlich auch der seltene Sumpf-Bärlapp.",
+      "english": "Along the paths, on the shores of small lakes and in areas with sod fertilisation, various pioneer plants can be found such as the oblong-leaved and round-leaved sundew, brown and white beak-sedge and occasionally the rare marsh clubmoss."
+    },
+    {
+      "id": "s6",
+      "name": "Landwirtschaftsenklaven",
+      "quote": "Des Weiteren beherbergt der Grenzpark einige kleine Landwirtschaftsenklaven, die etwa um 1900 herum durch die Entwässerung vormaliger feuchter Heidegebiete entstanden sind.",
+      "english": "Furthermore, the border park contains several small agricultural enclaves that were created around 1900 through the drainage of formerly moist heathlands."
+    },
+    {
+      "id": "s7",
+      "name": "niederländische Seite der Grenze",
+      "quote": "Vor allem auf der niederländischen Seite der Grenze finden sich noch größere Nadelwälder.",
+      "english": "Larger coniferous forests can still be found, especially on the Dutch side of the border."
+    }
+  ],
+  "days": [
+    {
+      "title": "Heathlands and Bogs of Flanders",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Dunes and Historic Enclaves",
+      "stop_ids": [
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "Northern Forests and Estates",
+      "stop_ids": [
+        "s1",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "c44f1cb75d4854260cca520669a432d277935a8cc209dade85968c6bf761287f"
+}

@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Huis Bergh",
+      "quote": "Huis Bergh in ’s-Heerenberg ist jetzt ein Museum mit bedeutender Kunstsammlung: viele Handschriften, Gemälde und Münzen aus dem späten Mittelalter.",
+      "english": "Huis Bergh in ’s-Heerenberg is now a museum with a significant art collection: many manuscripts, paintings, and coins from the late Middle Ages."
+    },
+    {
+      "id": "s2",
+      "name": "Schlossgarten",
+      "quote": "Um die Burg ein schöner Schlossgarten",
+      "english": "Around the castle is a beautiful castle garden"
+    },
+    {
+      "id": "s3",
+      "name": "Waldgebiet Montferland",
+      "quote": "Das hügelige (bis 93 Meter über NN) Waldgebiet Montferland, das sich jenseits der Grenze in Elten fortsetzt, bietet viele Möglichkeiten zum Radfahren und Wandern",
+      "english": "The hilly (up to 93 meters above sea level) forested area Montferland, which continues across the border in Elten, offers many opportunities for cycling and hiking"
+    },
+    {
+      "id": "s4",
+      "name": "Mühle von Zeddam",
+      "quote": "Die 1441 erbaute Mühle von Zeddam",
+      "english": "The Zeddam mill built in 1441"
+    },
+    {
+      "id": "s5",
+      "name": "Land van Jan Klaassen",
+      "quote": "In Braamt ist ein kleiner Vergnügungspark für kleine Kinder (Land van Jan Klaassen)",
+      "english": "In Braamt there is a small amusement park for young children (Land van Jan Klaassen)"
+    },
+    {
+      "id": "s6",
+      "name": "Stokkum",
+      "quote": "’s-Heerenberg, Stokkum und Beek liegen am Waldgebiet Montferland, an der deutschen Grenze, unweit von Elten und Emmerich am Rhein.",
+      "english": "’s-Heerenberg, Stokkum and Beek are located on the Montferland forest area, on the German border, not far from Elten and Emmerich am Rhein."
+    },
+    {
+      "id": "s7",
+      "name": "Azewijn",
+      "quote": "Das Bauerndorf Azewijn liegen etwas weiter nördlich im Gebiet De Liemers.",
+      "english": "The farming village Azewijn is located a bit further north in the De Liemers area."
+    }
+  ],
+  "days": [
+    {
+      "title": "Castles and Gardens of 's-Heerenberg",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Nature and Tradition in the Forest Heights",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s6"
+      ]
+    },
+    {
+      "title": "Family Fun and Village Life",
+      "stop_ids": [
+        "s5",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "0328518fef71e10cdeb5280e9657bfbdd246600ece81dc1fb5bcc437df6f95b1"
+}

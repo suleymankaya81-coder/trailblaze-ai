@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Nationalpark De Hoge Veluwe",
+      "quote": "Ein Teil des Gebietes wird durch den Nationalpark De Hoge Veluwe geschützt.",
+      "english": "A part of the area is protected by the De Hoge Veluwe National Park."
+    },
+    {
+      "id": "s2",
+      "name": "Signaal Imbosch",
+      "quote": "Die Ortshöhe verläuft von 10 Metern bis zur höchsten Erhebung, Signaal Imbosch, mit 109,90 m, nordöstlich von Arnheim; der Torenberg westlich von Apeldoorn erreicht 107 m.",
+      "english": "The elevation of the site ranges from 10 meters to the highest point, Signaal Imbosch, at 109.90 m, northeast of Arnhem; the Torenberg west of Apeldoorn reaches 107 m."
+    },
+    {
+      "id": "s3",
+      "name": "Torenberg",
+      "quote": "Die Ortshöhe verläuft von 10 Metern bis zur höchsten Erhebung, Signaal Imbosch, mit 109,90 m, nordöstlich von Arnheim; der Torenberg westlich von Apeldoorn erreicht 107 m.",
+      "english": "The elevation of the site ranges from 10 meters to the highest point, Signaal Imbosch, at 109.90 m, northeast of Arnhem; the Torenberg west of Apeldoorn reaches 107 m."
+    },
+    {
+      "id": "s4",
+      "name": "Openluchtmuseum",
+      "quote": "Wenige Kilometer nördlich von Arnheim finden sich noch ein Zoo und das Freilichtmuseum (niederländisch: Openluchtmuseum), wo die Wohnarchitektur aus vergangenen Zeiten und das frühere Leben in den niederländischen Provinzen gezeigt werden.",
+      "english": "A few kilometers north of Arnhem, there is also a zoo and the open-air museum (Dutch: Openluchtmuseum), where residential architecture from past times and former life in the Dutch provinces are shown."
+    },
+    {
+      "id": "s5",
+      "name": "Kröller-Müller-Museum",
+      "quote": "Der Nationalpark Hoge Veluwe bietet außerdem noch das bedeutende Kröller-Müller-Museum mit einer großen van Gogh-Sammlung und dem Skulpturenpark am Kröller-Müller-Museum mit modernen Skulpturen.",
+      "english": "The Hoge Veluwe National Park also offers the significant Kröller-Müller Museum with a large van Gogh collection and the sculpture park at the Kröller-Müller Museum with modern sculptures."
+    },
+    {
+      "id": "s6",
+      "name": "Palais Het Loo",
+      "quote": "Bei Apeldoorn liegt das ehemalige Palais Het Loo, Residenz der früheren Königin Wilhelmina, heute Museum des Königshauses Oranien-Nassau, sowie Radio Kootwijk, ein ehemaliger Langwellensender.",
+      "english": "Near Apeldoorn is the former Palais Het Loo, residence of the former Queen Wilhelmina, now a museum of the House of Orange-Nassau, as well as Radio Kootwijk, a former long-wave transmitter."
+    },
+    {
+      "id": "s7",
+      "name": "Radio Kootwijk",
+      "quote": "Bei Apeldoorn liegt das ehemalige Palais Het Loo, Residenz der früheren Königin Wilhelmina, heute Museum des Königshauses Oranien-Nassau, sowie Radio Kootwijk, ein ehemaliger Langwellensender.",
+      "english": "Near Apeldoorn is the former Palais Het Loo, residence of the former Queen Wilhelmina, now a museum of the House of Orange-Nassau, as well as Radio Kootwijk, a former long-wave transmitter."
+    }
+  ],
+  "days": [
+    {
+      "title": "National Park and High Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Art and Culture near Arnhem",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Royal History and Technology",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "4d6dd82cd28e0c9d8af6987e6139257c075c960e2ca789d9df7f0da905cd750c"
+}

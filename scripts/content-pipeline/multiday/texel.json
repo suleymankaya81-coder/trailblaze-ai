@@ -1,0 +1,106 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hoge Berg",
+      "quote": "Der Hoge Berg bei Oudeschild (15 Meter) ist ein Relikt aus der Entstehungsepoche und keine Düne.",
+      "english": "The Hoge Berg near Oudeschild (15 meters) is a relic from the formation era and not a dune."
+    },
+    {
+      "id": "s2",
+      "name": "Seetingsnollen",
+      "quote": "Der höchste Punkt der Insel ist nicht, wie man vermuten könnte, de Hoge Berg (15 m über dem Meeresspiegel), sondern die im Nationalpark Duinen van Texel gelegene Düne „Seetingsnollen“ mit 24,8 m.",
+      "english": "The highest point on the island is not, as one might expect, de Hoge Berg (15 m above sea level), but the 'Seetingsnollen' dune located in the Duinen van Texel National Park at 24.8 m."
+    },
+    {
+      "id": "s3",
+      "name": "Nationalpark Duinen van Texel",
+      "quote": "Der höchste Punkt der Insel ist nicht, wie man vermuten könnte, de Hoge Berg (15 m über dem Meeresspiegel), sondern die im Nationalpark Duinen van Texel gelegene Düne „Seetingsnollen“ mit 24,8 m.",
+      "english": "The highest point on the island is not, as one might expect, de Hoge Berg (15 m above sea level), but the 'Seetingsnollen' dune located in the Duinen van Texel National Park at 24.8 m."
+    },
+    {
+      "id": "s4",
+      "name": "De Hors",
+      "quote": "An der Südspitze gibt es dann ein mehrere Kilometer breites Sand- und Dünengebiet, De Hors.",
+      "english": "At the southern tip, there is a sand and dune area several kilometers wide, De Hors."
+    },
+    {
+      "id": "s5",
+      "name": "Rommelpot",
+      "quote": "In der Mitte der Insel befindet sich ein Feuchtgebiet, der Rommelpot.",
+      "english": "In the middle of the island there is a wetland, the Rommelpot."
+    },
+    {
+      "id": "s6",
+      "name": "Den Burg",
+      "quote": "Circa 7000 Einwohner leben im etwas südlich der Inselmitte gelegenen Den Burg, dem einzigen Ort mit wirklich städtischem Charakter, in dem sich auch die Inselverwaltung, andere behördliche Einrichtungen sowie viele Geschäfte befinden.",
+      "english": "About 7000 inhabitants live in Den Burg, located slightly south of the center of the island, the only town with a truly urban character, which also houses the island administration, other governmental institutions, and many shops."
+    },
+    {
+      "id": "s7",
+      "name": "De Koog",
+      "quote": "Nordwestlich liegt am Dünenrand De Koog, das größte Tourismuszentrum der Insel.",
+      "english": "To the northwest, on the edge of the dunes, lies De Koog, the island's largest tourism center."
+    },
+    {
+      "id": "s8",
+      "name": "Oudeschild",
+      "quote": "Oudeschild östlich von Den Burg ist durch Fischerei und ein wenig Industrie geprägt, De Cocksdorp an der Nordspitze der Insel ist ein kleinerer Küstenort.",
+      "english": "Oudeschild, east of Den Burg, is characterized by fishing and a little industry, while De Cocksdorp at the northern tip of the island is a smaller coastal town."
+    },
+    {
+      "id": "s9",
+      "name": "De Cocksdorp",
+      "quote": "Oudeschild östlich von Den Burg ist durch Fischerei und ein wenig Industrie geprägt, De Cocksdorp an der Nordspitze der Insel ist ein kleinerer Küstenort.",
+      "english": "Oudeschild, east of Den Burg, is characterized by fishing and a little industry, while De Cocksdorp at the northern tip of the island is a smaller coastal town."
+    },
+    {
+      "id": "s10",
+      "name": "De Slufter",
+      "quote": "Im Jahre 1851 brach diese Dünenreihe während einer Sturmflut an drei Stellen, dadurch entstanden De Muy und De Slufter.",
+      "english": "In 1851, this row of dunes broke in three places during a storm surge, resulting in De Muy and De Slufter."
+    },
+    {
+      "id": "s11",
+      "name": "De Muy",
+      "quote": "Im Jahre 1851 brach diese Dünenreihe während einer Sturmflut an drei Stellen, dadurch entstanden De Muy und De Slufter.",
+      "english": "In 1851, this row of dunes broke in three places during a storm surge, resulting in De Muy and De Slufter."
+    },
+    {
+      "id": "s12",
+      "name": "De Zandkuil",
+      "quote": "Das einzige Insektenschutzgebiet der Niederlande, De Zandkuil (Sandmulde), befindet sich auf dem Hoge Berg.",
+      "english": "The only insect protection area in the Netherlands, De Zandkuil (sand hollow), is located on the Hoge Berg."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Heritage and Wildlife",
+      "stop_ids": [
+        "s1",
+        "s12",
+        "s6",
+        "s5"
+      ]
+    },
+    {
+      "title": "Northern Dunes and Coastal Villages",
+      "stop_ids": [
+        "s9",
+        "s10",
+        "s11",
+        "s7"
+      ]
+    },
+    {
+      "title": "Southern Peaks and Scenic Harbors",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "cd7bdd4ca7ce2051344a745b62a7aed9ad9c920b7cb92703ed09f746a2548bf1"
+}
