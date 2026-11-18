@@ -5,11 +5,11 @@
   "lang": "en",
   "packet": {
     "slug": "gougane-barra",
-    "approved_for_generation": true,
     "country_code": "ie",
-    "evidence_policy": "dach-wikipedia-overview",
+    "approved_for_generation": true,
     "identity_verified": true,
-    "review_note": "Wikidata-identified article; descriptive overview only, no current operational rules.",
+    "evidence_policy": "dach-wikipedia-overview",
+    "review_note": "Corrected place-specific excerpt/photo; parent geography is contextual only.",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/Gougane_Barra",
@@ -30,14 +30,14 @@
     ]
   },
   "photo": {
-    "file": "File:Information board at Gougane Barra - geograph.org.uk - 8143171.jpg",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Information_board_at_Gougane_Barra_-_geograph.org.uk_-_8143171.jpg/1280px-Information_board_at_Gougane_Barra_-_geograph.org.uk_-_8143171.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Information_board_at_Gougane_Barra_-_geograph.org.uk_-_8143171.jpg",
-    "credit": "Marathon",
-    "license": "CC BY-SA 2.0",
-    "subject": "Information board at Gougane Barra - geograph.org.uk - 8143171",
-    "w": 3200,
-    "h": 2400
+    "file": "File:Lake reflections at Gougane Barra.JPG",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Lake_reflections_at_Gougane_Barra.JPG/1280px-Lake_reflections_at_Gougane_Barra.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Lake_reflections_at_Gougane_Barra.JPG",
+    "credit": "NicholasH",
+    "license": "CC BY-SA 4.0",
+    "subject": "Lake reflections at Gougane Barra",
+    "w": 4208,
+    "h": 2773
   },
   "lat": 51.83888889,
   "lng": -9.31916667,
@@ -386,7 +386,9 @@
     },
     "permit_headline": "Check visitor access before departure",
     "permit_note": "Check the official visitor information for Gougane Barra before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
-    "permit_source_url": "https://en.wikipedia.org/wiki/Gougane_Barra"
+    "permit_source_url": "https://en.wikipedia.org/wiki/Gougane_Barra",
+    "hero_image": "/__l5e/assets-v1/b5f163ec-e15a-418a-96a8-1964d8400dad/gougane-barra-corrected.jpg",
+    "photo_credit": "Hero: NicholasH / CC BY-SA 4.0 via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Lake_reflections_at_Gougane_Barra.JPG)"
   },
   "german": {
     "name": "Gougane Barra",
@@ -444,14 +446,14 @@
     "metaDescription": "Gougane Barra: Besuchsplan, Karte und Hinweise zur Anreise. Zugang und saisonale Regeln vor der Reise bei offiziellen Stellen prüfen."
   },
   "hero": {
-    "file": "File:Information board at Gougane Barra - geograph.org.uk - 8143171.jpg",
-    "url": "/__l5e/assets-v1/9611923a-f9e1-4316-8472-2e3cf34e28a7/gougane-barra.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Information_board_at_Gougane_Barra_-_geograph.org.uk_-_8143171.jpg",
-    "credit": "Marathon",
-    "license": "CC BY-SA 2.0",
-    "subject": "Information board at Gougane Barra - geograph.org.uk - 8143171",
-    "w": 3200,
-    "h": 2400,
-    "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Information_board_at_Gougane_Barra_-_geograph.org.uk_-_8143171.jpg/1280px-Information_board_at_Gougane_Barra_-_geograph.org.uk_-_8143171.jpg"
+    "file": "File:Lake reflections at Gougane Barra.JPG",
+    "url": "/__l5e/assets-v1/b5f163ec-e15a-418a-96a8-1964d8400dad/gougane-barra-corrected.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lake_reflections_at_Gougane_Barra.JPG",
+    "credit": "NicholasH",
+    "license": "CC BY-SA 4.0",
+    "subject": "Lake reflections at Gougane Barra",
+    "w": 4208,
+    "h": 2773,
+    "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Lake_reflections_at_Gougane_Barra.JPG/1280px-Lake_reflections_at_Gougane_Barra.JPG"
   }
 }

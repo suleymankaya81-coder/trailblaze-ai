@@ -1,3 +1,9 @@
+## November 18 Ireland remaining destinations and audit
+- [x] Published 19 former Irish holds with retained exact-place assignments and offline German translation; 124 destinations now published.
+- [ ] Complete the remaining 35 Irish places; blocked by exact-place licensed covers, reviewed location or visitor-access evidence; named list in west-europe/ireland-audit-2026-11-18.md.
+- [x] Audited all 124 publications for required fields and EN/DE plan structure; refreshed 27 stale German plans, corrected nine covers and targeted wrong-place prose/coordinates, removed mainland driving assumptions from five existing island pages. Full independent factual/language certification remains unavailable.
+- [x] Verified all 248 EN/DE destination pages, both Irish sitemaps, four desktop cover views and German phone country map (124/124, no overflow); five tests pass and build OK.
+
 ## November 18 Belgium and Denmark production
 - [x] Finish all 38 prepared Belgium publications with credited exact-place activity photographs; check all 38 EN/DE pages and refresh German texts for source-supported multi-day plans.
 - [x] Collect cached source-bound facts for Belgium's 60 and Denmark's 64 catalog candidates using the existing Nordic stages; 38 Belgium and 48 Denmark bundles ready for translation, 22 Belgium and 16 Denmark factual holds recorded.

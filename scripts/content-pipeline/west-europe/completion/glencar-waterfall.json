@@ -5,11 +5,11 @@
   "lang": "en",
   "packet": {
     "slug": "glencar-waterfall",
-    "approved_for_generation": true,
     "country_code": "ie",
-    "evidence_policy": "dach-wikipedia-overview",
+    "approved_for_generation": true,
     "identity_verified": true,
-    "review_note": "Wikidata-identified article; descriptive overview only, no current operational rules.",
+    "evidence_policy": "dach-wikipedia-overview",
+    "review_note": "Corrected place-specific excerpt/photo; parent geography is contextual only.",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/Glencar_Lough",
@@ -23,21 +23,21 @@
     "approved_stops": [
       {
         "id": "glencar-waterfall",
-        "name": "Glencar Lough",
+        "name": "Glencar Waterfall",
         "quote": "Glencar Lough (Irish: Loch Ghleann an Chairthe, meaning 'lake of the glen of the pillar stone'), locally known as Glencar Lake, is a freshwater lake in the northwest of Ireland. It covers an area of 1.15 square kilometres (284 acres) and lies mostly in County Leitrim with a smaller part in County Sligo. Glencar Waterfall is located near the lake's north shore on the Leitrim side.",
         "source_url": "https://en.wikipedia.org/wiki/Glencar_Lough"
       }
     ]
   },
   "photo": {
-    "file": "File:Glencar Lough and Benbulbin.jpg",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Glencar_Lough_and_Benbulbin.jpg/1920px-Glencar_Lough_and_Benbulbin.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Glencar_Lough_and_Benbulbin.jpg",
-    "credit": "Nogwater",
-    "license": "CC BY-SA 2.0",
-    "subject": "Glencar Lough and Benbulbin",
-    "w": 4000,
-    "h": 3000
+    "file": "File:Glencar Waterfall 002.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Glencar_Waterfall_002.jpg/1280px-Glencar_Waterfall_002.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Glencar_Waterfall_002.jpg",
+    "credit": "Dieglop",
+    "license": "CC BY-SA 4.0",
+    "subject": "Glencar Waterfall 002",
+    "w": 5184,
+    "h": 3456
   },
   "lat": 54.33944444,
   "lng": -8.38583333,
@@ -236,7 +236,7 @@
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Glencar Lough"
+        "Glencar Waterfall"
       ],
       "seo_title": "Glencar Waterfall Visit Guide"
     },
@@ -254,7 +254,7 @@
             "start": "Suggested: choose a daytime visit after checking official access hours",
             "stops": [
               {
-                "name": "Glencar Lough",
+                "name": "Glencar Waterfall",
                 "stop_id": "glencar-waterfall",
                 "detail": "Glencar Lough, locally known as Glencar Lake, is a freshwater lake in the northwest of Ireland. It covers an area of 1.15 square kilometres and lies mostly in County Leitrim with a smaller part in County Sligo. Glencar Waterfall is located near the lake's north shore on the Leitrim side."
               }
@@ -337,7 +337,7 @@
           "start": "Suggested: choose a daytime visit after checking official access hours",
           "stops": [
             {
-              "name": "Glencar Lough",
+              "name": "Glencar Waterfall",
               "stop_id": "glencar-waterfall",
               "detail": "Glencar Lough, locally known as Glencar Lake, is a freshwater lake in the northwest of Ireland. It covers an area of 1.15 square kilometres and lies mostly in County Leitrim with a smaller part in County Sligo. Glencar Waterfall is located near the lake's north shore on the Leitrim side."
             }
@@ -386,7 +386,9 @@
     },
     "permit_headline": "Check visitor access before departure",
     "permit_note": "Check the official visitor information for Glencar Waterfall before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
-    "permit_source_url": "https://en.wikipedia.org/wiki/Glencar_Lough"
+    "permit_source_url": "https://en.wikipedia.org/wiki/Glencar_Lough",
+    "hero_image": "/__l5e/assets-v1/3f5af53a-96cd-4ed9-aeda-cef58331d75d/glencar-waterfall-corrected.jpg",
+    "photo_credit": "Hero: Dieglop / CC BY-SA 4.0 via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Glencar_Waterfall_002.jpg)"
   },
   "german": {
     "name": "Glencar Waterfall",
@@ -401,7 +403,7 @@
         "start": "Vorgeschlagen: Wählen Sie einen Tagesbesuch nach Überprüfung der offiziellen Zugangszeiten",
         "stops": [
           {
-            "name": "Glencar Lough",
+            "name": "Glencar Waterfall",
             "stop_id": "glencar-waterfall",
             "detail": "Glencar Lough, lokal bekannt als Glencar Lake, ist ein Süßwassersee im Nordwesten Irlands. Es umfasst eine Fläche von 1,15 Quadratkilometern und liegt hauptsächlich in der Grafschaft Leitrim mit einem kleineren Teil in der Grafschaft Sligo. Glencar Waterfall befindet sich in der Nähe der Nordküste des Sees auf der Leitrim-Seite."
           }
@@ -444,14 +446,14 @@
     "metaDescription": "Glencar Waterfall: Besuchsplan, Karte und Hinweise zur Anreise. Zugang und saisonale Regeln vor der Reise bei offiziellen Stellen prüfen."
   },
   "hero": {
-    "file": "File:Glencar Lough and Benbulbin.jpg",
-    "url": "/__l5e/assets-v1/142bcf4e-1e5f-45c4-816d-c607e6b59ef4/glencar-waterfall.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Glencar_Lough_and_Benbulbin.jpg",
-    "credit": "Nogwater",
-    "license": "CC BY-SA 2.0",
-    "subject": "Glencar Lough and Benbulbin",
-    "w": 4000,
-    "h": 3000,
-    "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Glencar_Lough_and_Benbulbin.jpg/1920px-Glencar_Lough_and_Benbulbin.jpg"
+    "file": "File:Glencar Waterfall 002.jpg",
+    "url": "/__l5e/assets-v1/3f5af53a-96cd-4ed9-aeda-cef58331d75d/glencar-waterfall-corrected.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Glencar_Waterfall_002.jpg",
+    "credit": "Dieglop",
+    "license": "CC BY-SA 4.0",
+    "subject": "Glencar Waterfall 002",
+    "w": 5184,
+    "h": 3456,
+    "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Glencar_Waterfall_002.jpg/1280px-Glencar_Waterfall_002.jpg"
   }
 }

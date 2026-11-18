@@ -1,0 +1,46 @@
+# Ireland completion — 2026-11-18
+
+- 124 published destinations; 19 former holds published in English/German.
+- 248 destination pages return 200; four covers inspected in Chromium; German mobile country map shows 124/124 with no horizontal overflow.
+- Refreshed 27 stale German day plans; all 124 records pass required-field and EN/DE plan-structure audit.
+- Corrected nine covers, targeted wrong-place text and reserve coordinates; removed mainland driving assumptions from five existing island pages.
+- No paid content-model calls. Machine translation is not independently language-reviewed.
+- Remaining 35 destinations are not published: exact-place licensed covers and/or reviewed location/visitor access evidence still unavailable; national marine park official URL returned 404.
+- This is structural and targeted source/photo verification, not independent certification of every sentence.
+
+## Remaining destinations
+- Páirc Náisiúnta na Mara, Ciarraí (`pairc-naisiunta-na-mara-ciarrai`): HELD facts: ValueError('no coordinate within country bounds')
+- Ballykeeffe Wood Nature Reserve (`ballykeeffe-wood-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Ballyteigue Nature Reserve (`ballyteigue-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Caher (Murphy) Nature Reserve (`caher-murphy-nature-reserve`): HELD facts: ValueError('no Wikidata, enwiki or name-matching Wikipedia article')
+- Clochar na gCon/Bealacooan Bog Nature Reserve (`clochar-na-gcon-bealacooan-bog-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Coolacurragh Wood Nature Reserve (`coolacurragh-wood-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Cummeragh River Bog Nature Reserve (`cummeragh-river-bog-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Derrycrag Wood Nature Reserve (`derrycrag-wood-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Derrycunnihy Wood Nature Reserve (`derrycunnihy-wood-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Duntally Wood Nature Reserve (`duntally-wood-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Easkey Bog Nature Reserve (`easkey-bog-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Garryricken Woods Nature Reserve (`garryricken-woods-nature-reserve`): HELD facts: ValueError('no Wikidata, enwiki or name-matching Wikipedia article')
+- Grantsown Wood and Granston Lough Nature Reserve (`grantsown-wood-and-granston-lough-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Inch Levels Wildfowl Reserve (`inch-levels-wildfowl-reserve`): HELD facts: ValueError('Wikipedia search identity belongs to another country')
+- Knockmoyle Sheskin Nature Reserve (`knockmoyle-sheskin-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Knockomagh Wood Nature Reserve (`knockomagh-wood-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Kyledohir Wood Nature Reserve (`kyledohir-wood-nature-reserve`): HELD facts: ValueError('no Wikidata, enwiki or name-matching Wikipedia article')
+- Leam West Bog Nature Reserve (`leam-west-bog-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Lough Yganavan Nature Reserve (`lough-yganavan-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Meenachullion Nature Reserve (`meenachullion-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Newcastle Lough, private Nature Reserve. (`newcastle-lough-private-nature-reserve`): HELD facts: ValueError('no Wikidata, enwiki or name-matching Wikipedia article')
+- Pettigo Plateau Nature Reserve (`pettigo-plateau-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Pollnaknockaun Wood Nature Reserve (`pollnaknockaun-wood-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Puffin Island Nature Reserve (`puffin-island-nature-reserve`): HELD facts: ValueError('no coordinate within country bounds')
+- Raheenmore Bog Nature Reserve (`raheenmore-bog-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Rathmullen Wood Nature Reserve (`rathmullen-wood-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Redwood Bog Nature Reserve (`redwood-bog-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Richmond Esker Nature Reserve (`richmond-esker-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Rosturra Wood Nature Reserve (`rosturra-wood-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Scragh Bog Nature Reserve (`scragh-bog-nature-reserve`): HELD facts: ValueError('no licensed exact-place cover')
+- Tearaght Island Nature Reserve (`tearaght-island-nature-reserve`): HELD facts: ValueError('no Wikidata, enwiki or name-matching Wikipedia article')
+- Union Wood Nature Reserve (`union-wood-nature-reserve`): HELD facts: ValueError('Wikipedia search identity belongs to another country')
+- Coumshingaun Lake (`coumshingaun-lake`): HELD facts: ValueError('no Wikidata, enwiki or name-matching Wikipedia article')
+- Galtee Mountains (`galtee-mountains`): HELD facts: ValueError('article missing or ambiguous: Galtee')
+- Glenesh Pass (`glenesh-pass`): HELD facts: ValueError('no Wikidata, enwiki or name-matching Wikipedia article')

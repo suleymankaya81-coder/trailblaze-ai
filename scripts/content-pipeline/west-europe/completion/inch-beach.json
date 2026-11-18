@@ -5,11 +5,11 @@
   "lang": "en",
   "packet": {
     "slug": "inch-beach",
-    "approved_for_generation": true,
     "country_code": "ie",
-    "evidence_policy": "dach-wikipedia-overview",
+    "approved_for_generation": true,
     "identity_verified": true,
-    "review_note": "Wikidata-identified article; descriptive overview only, no current operational rules.",
+    "evidence_policy": "dach-wikipedia-overview",
+    "review_note": "Corrected place-specific excerpt/photo; parent geography is contextual only.",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/Inch%2C_County_Kerry",
@@ -30,14 +30,14 @@
     ]
   },
   "photo": {
-    "file": "File:Inch village - geograph.org.uk - 4669520.jpg",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Inch_village_-_geograph.org.uk_-_4669520.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Inch_village_-_geograph.org.uk_-_4669520.jpg",
-    "credit": "Oliver Dixon",
-    "license": "CC BY-SA 2.0",
-    "subject": "Inch village - geograph.org.uk - 4669520",
-    "w": 640,
-    "h": 480
+    "file": "File:Inch Beach, County Kerry, Ireland in winter 02.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Inch_Beach%2C_County_Kerry%2C_Ireland_in_winter_02.jpg/1280px-Inch_Beach%2C_County_Kerry%2C_Ireland_in_winter_02.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Inch_Beach,_County_Kerry,_Ireland_in_winter_02.jpg",
+    "credit": "Ridiculopathy",
+    "license": "CC0",
+    "subject": "Inch Beach, County Kerry, Ireland in winter 02",
+    "w": 4272,
+    "h": 2848
   },
   "lat": 52.1427,
   "lng": -9.981,
@@ -386,7 +386,9 @@
     },
     "permit_headline": "Check visitor access before departure",
     "permit_note": "Check the official visitor information for Inch Beach before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
-    "permit_source_url": "https://en.wikipedia.org/wiki/Inch%2C_County_Kerry"
+    "permit_source_url": "https://en.wikipedia.org/wiki/Inch%2C_County_Kerry",
+    "hero_image": "/__l5e/assets-v1/ee39548e-e4fa-4bbe-80f5-d05b5fc09418/inch-beach-corrected.jpg",
+    "photo_credit": "Hero: Ridiculopathy / CC0 via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Inch_Beach,_County_Kerry,_Ireland_in_winter_02.jpg)"
   },
   "german": {
     "name": "Inch Beach",
@@ -444,14 +446,14 @@
     "metaDescription": "Inch Beach: Besuchsplan, Karte und Hinweise zur Anreise. Zugang und saisonale Regeln vor der Reise bei offiziellen Stellen prüfen."
   },
   "hero": {
-    "file": "File:Inch village - geograph.org.uk - 4669520.jpg",
-    "url": "/__l5e/assets-v1/4767ec0b-3b22-4bc7-bc60-7d6ac020b6ca/inch-beach.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Inch_village_-_geograph.org.uk_-_4669520.jpg",
-    "credit": "Oliver Dixon",
-    "license": "CC BY-SA 2.0",
-    "subject": "Inch village - geograph.org.uk - 4669520",
-    "w": 640,
-    "h": 480,
-    "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Inch_village_-_geograph.org.uk_-_4669520.jpg"
+    "file": "File:Inch Beach, County Kerry, Ireland in winter 02.jpg",
+    "url": "/__l5e/assets-v1/ee39548e-e4fa-4bbe-80f5-d05b5fc09418/inch-beach-corrected.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Inch_Beach,_County_Kerry,_Ireland_in_winter_02.jpg",
+    "credit": "Ridiculopathy",
+    "license": "CC0",
+    "subject": "Inch Beach, County Kerry, Ireland in winter 02",
+    "w": 4272,
+    "h": 2848,
+    "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Inch_Beach%2C_County_Kerry%2C_Ireland_in_winter_02.jpg/1280px-Inch_Beach%2C_County_Kerry%2C_Ireland_in_winter_02.jpg"
   }
 }

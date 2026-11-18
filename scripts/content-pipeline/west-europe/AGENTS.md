@@ -1,1 +1,2 @@
 - Western country production reuses the Nordic stages with isolated per-country caches and exact country identity checks; never infer boat access from an unknown catalog field. Why: new production remains resumable without contaminating published country geometry.
+- Irish holds use finish-ireland.py with retained reviewed source/photo/location assignments; long routes label gateway coordinates and islands omit mainland drive estimates. Why: exact evidence must survive retries without inventing scenery or road access.

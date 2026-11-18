@@ -5,43 +5,43 @@
   "lang": "en",
   "packet": {
     "slug": "dublin-mountains",
-    "approved_for_generation": true,
     "country_code": "ie",
-    "evidence_policy": "dach-wikipedia-overview",
+    "approved_for_generation": true,
     "identity_verified": true,
-    "review_note": "Wikidata-identified article; descriptive overview only, no current operational rules.",
+    "evidence_policy": "dach-wikipedia-overview",
+    "review_note": "Corrected place-specific excerpt/photo; parent geography is contextual only.",
     "sources": [
       {
-        "url": "https://en.wikipedia.org/wiki/Dublin",
+        "url": "https://en.wikipedia.org/wiki/Wicklow_Mountains",
         "kind": "wikipedia",
-        "text": "Dublin is the capital and largest city of Ireland. Situated on Dublin Bay at the mouth of the River Liffey, it is in the province of Leinster, and is bordered on the south by the Dublin Mountains, part of the Wicklow Mountains range. Dublin is the largest city by population on the island of Ireland; at the 2022 census, the city council area had a population of 592,713, while the city, including suburbs, had a population of 1,263,219, and County Dublin had a population of 1,501,500. Various definitions of a metropolitan Greater Dublin Area exist.\nA settlement was established in the area by the Gaels during or before the 7th century, followed by the Vikings. As the Kingdom of Dublin grew, it became Ireland's principal settlement by the 12th century, following the Anglo-Norman invasion of Ireland. Dublin expanded rapidly from the 17th century and was briefly the second-largest city in the British Empire and sixth largest in Western Europe after the Acts of Union in 1800. Following independence in 1922, Dublin became the capital of the Irish Free State, renamed Ireland in 1937.\n\n\n== Etymology ==\n\nThe name Dublin comes from the Middle Irish Du(i)blind (literally \"Blackpool\"), from dubh [d...",
+        "text": "The Wicklow Mountains (Irish: Sléibhte Chill Mhantáin, archaic: Cualu) form the largest continuous upland area in Ireland. They occupy the whole centre of County Wicklow and stretch outside its borders into the counties of Dublin, Wexford and Carlow. Where the mountains extend into County Dublin, they are known locally as the Dublin Mountains (Sléibhte Bhaile Átha Cliath). The highest peak is Lugnaquilla at 925 metres (3,035 feet).\nThe mountains are primarily composed of granite surrounded by an envelope of mica-schist and much older rocks such as quartzite. They were pushed up during the Caledonian orogeny at the start of the Devonian period and form part of the Leinster Chain, the largest continuous area of granite in Ireland and Britain. The mountains owe much of their present topography to the effects of the last ice age, which deepened the glens and created corrie and ribbon lakes. Copper and lead have been the main metals mined in the mountains and a brief gold rush occurred in the 18th century.\nSeveral major river systems have their source in the mountains, such as the Liffey, Dargle, Slaney and Avoca rivers. Powerscourt Waterfall is the second tallest in Ireland at 121 metres...",
         "generation_excerpts": [
-          "Dublin is the capital and largest city of Ireland. Situated on Dublin Bay at the mouth of the River Liffey, it is in the province of Leinster, and is bordered on the south by the Dublin Mountains, part of the Wicklow Mountains range. Dublin is the largest city by population on the island of Ireland; at the 2022 census, the city council area had a population of 592,713, while the city, including suburbs, had a population of 1,263,219, and County Dublin had a population of 1,501,500. Various definitions of a metropolitan Greater Dublin Area exist."
+          "The Wicklow Mountains (Irish: Sléibhte Chill Mhantáin, archaic: Cualu) form the largest continuous upland area in Ireland. They occupy the whole centre of County Wicklow and stretch outside its borders into the counties of Dublin, Wexford and Carlow. Where the mountains extend into County Dublin, they are known locally as the Dublin Mountains (Sléibhte Bhaile Átha Cliath). The highest peak is Lugnaquilla at 925 metres (3,035 feet)."
         ]
       }
     ],
     "approved_stops": [
       {
         "id": "dublin-mountains",
-        "name": "Dublin",
-        "quote": "Dublin is the capital and largest city of Ireland. Situated on Dublin Bay at the mouth of the River Liffey, it is in the province of Leinster, and is bordered on the south by the Dublin Mountains, part of the Wicklow Mountains range. Dublin is the largest city by population on the island of Ireland; at the 2022 census, the city council area had a population of 592,713, while the city, including suburbs, had a population of 1,263,219, and County Dublin had a population of 1,501,500. Various definitions of a metropolitan Greater Dublin Area exist.",
-        "source_url": "https://en.wikipedia.org/wiki/Dublin"
+        "name": "Dublin Mountains",
+        "quote": "The Wicklow Mountains (Irish: Sléibhte Chill Mhantáin, archaic: Cualu) form the largest continuous upland area in Ireland. They occupy the whole centre of County Wicklow and stretch outside its borders into the counties of Dublin, Wexford and Carlow. Where the mountains extend into County Dublin, they are known locally as the Dublin Mountains (Sléibhte Bhaile Átha Cliath). The highest peak is Lugnaquilla at 925 metres (3,035 feet).",
+        "source_url": "https://en.wikipedia.org/wiki/Wicklow_Mountains"
       }
     ]
   },
   "photo": {
-    "file": "File:Dublin - aerial - 2025-07-07 01.jpg",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Dublin_-_aerial_-_2025-07-07_01.jpg/1920px-Dublin_-_aerial_-_2025-07-07_01.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Dublin_-_aerial_-_2025-07-07_01.jpg",
-    "credit": "瑞丽江的河水",
+    "file": "File:Wicklow Mountains viewed from the Hell fire club trail.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Wicklow_Mountains_viewed_from_the_Hell_fire_club_trail.jpg/1280px-Wicklow_Mountains_viewed_from_the_Hell_fire_club_trail.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Wicklow_Mountains_viewed_from_the_Hell_fire_club_trail.jpg",
+    "credit": "Finnfrog99",
     "license": "CC BY-SA 4.0",
-    "subject": "Dublin - aerial - 2025-07-07 01",
-    "w": 4032,
-    "h": 2268
+    "subject": "Wicklow Mountains viewed from the Hell fire club trail",
+    "w": 4080,
+    "h": 3060
   },
-  "lat": 53.35,
-  "lng": -6.26027778,
-  "coordinate_source": "wikipedia-article-coordinates",
+  "lat": 53.2517056,
+  "lng": -6.3303264,
+  "coordinate_source": "https://www.openstreetmap.org/node/9529954822",
   "region": "dublin",
   "airport": {
     "code": "DUB",
@@ -50,171 +50,179 @@
     "lng": -6.2621
   },
   "route": {
-    "minutes": 20,
-    "miles": 8.6,
+    "minutes": 28,
+    "miles": 17.7,
     "coords": [
       [
         -6.26283,
         53.42852
       ],
       [
-        -6.26724,
-        53.42468
+        -6.26742,
+        53.42443
       ],
       [
-        -6.28897,
-        53.42504
+        -6.29051,
+        53.42491
       ],
       [
-        -6.30489,
-        53.42454
+        -6.30524,
+        53.42439
       ],
       [
-        -6.30664,
-        53.42142
+        -6.30687,
+        53.42026
       ],
       [
-        -6.30698,
-        53.41828
+        -6.30705,
+        53.41766
       ],
       [
-        -6.30731,
-        53.41629
+        -6.30694,
+        53.41433
       ],
       [
-        -6.30726,
-        53.41276
+        -6.30697,
+        53.41112
       ],
       [
-        -6.30593,
-        53.41024
+        -6.30185,
+        53.40856
       ],
       [
-        -6.30081,
-        53.40778
+        -6.29964,
+        53.40643
       ],
       [
-        -6.2997,
-        53.40632
+        -6.30103,
+        53.40538
       ],
       [
-        -6.3014,
-        53.40489
+        -6.30242,
+        53.40281
       ],
       [
-        -6.30267,
-        53.40236
+        -6.30571,
+        53.40289
       ],
       [
-        -6.30311,
-        53.39997
+        -6.30945,
+        53.40206
       ],
       [
-        -6.30412,
-        53.3983
+        -6.31197,
+        53.40265
       ],
       [
-        -6.30403,
-        53.39725
+        -6.3281,
+        53.39805
       ],
       [
-        -6.30499,
-        53.3964
+        -6.35735,
+        53.38685
       ],
       [
-        -6.3044,
-        53.39294
+        -6.36992,
+        53.37634
       ],
       [
-        -6.29926,
-        53.38825
+        -6.3778,
+        53.36974
       ],
       [
-        -6.2945,
-        53.38455
+        -6.38204,
+        53.36365
       ],
       [
-        -6.28955,
-        53.38109
+        -6.3871,
+        53.34333
       ],
       [
-        -6.28757,
-        53.37857
+        -6.37671,
+        53.32759
       ],
       [
-        -6.28678,
-        53.37657
+        -6.36217,
+        53.31199
       ],
       [
-        -6.28408,
-        53.3731
+        -6.35087,
+        53.30517
       ],
       [
-        -6.28151,
-        53.37186
+        -6.3327,
+        53.29411
       ],
       [
-        -6.27781,
-        53.36976
+        -6.3236,
+        53.27928
       ],
       [
-        -6.27416,
-        53.36832
+        -6.32439,
+        53.27735
       ],
       [
-        -6.27165,
-        53.36738
+        -6.33071,
+        53.27666
       ],
       [
-        -6.27166,
-        53.36554
+        -6.33106,
+        53.27512
       ],
       [
-        -6.27045,
-        53.36432
+        -6.331,
+        53.27449
       ],
       [
-        -6.26388,
-        53.36281
+        -6.33022,
+        53.27311
       ],
       [
-        -6.2595,
-        53.36169
+        -6.32904,
+        53.27182
       ],
       [
-        -6.26095,
-        53.36
+        -6.32758,
+        53.27076
       ],
       [
-        -6.2608,
-        53.35847
+        -6.32684,
+        53.26998
       ],
       [
-        -6.25794,
-        53.35565
+        -6.32742,
+        53.26814
       ],
       [
-        -6.25815,
-        53.35381
+        -6.32543,
+        53.26532
       ],
       [
-        -6.25902,
-        53.3524
+        -6.32306,
+        53.26357
       ],
       [
-        -6.26021,
-        53.35001
+        -6.31944,
+        53.26121
       ],
       [
-        -6.26021,
-        53.35001
+        -6.3214,
+        53.25609
+      ],
+      [
+        -6.32063,
+        53.25002
+      ],
+      [
+        -6.32198,
+        53.24954
       ]
     ]
   },
   "bundle": {
     "summary": {
       "region": "Dublin",
-      "tagline": "Dublin is the capital and largest city of Ireland.",
+      "tagline": "The Wicklow Mountains form the largest continuous upland area in Ireland.",
       "best_season": "No verified visitor-season recommendation is available for Dublin Mountains; consult the park authority for your travel dates.",
       "best_seasons": [],
       "scenic_score": null,
@@ -228,7 +236,7 @@
       "similar_slugs": [],
       "trip_tags": [],
       "activities": [
-        "Dublin"
+        "Dublin Mountains"
       ],
       "seo_title": "Dublin Mountains Visit Guide"
     },
@@ -237,7 +245,7 @@
       "overview_name": "Dublin Mountains",
       "headline": "Check visitor access before departure",
       "reservation": "Check the official visitor information for Dublin Mountains before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
-      "source_url": "https://en.wikipedia.org/wiki/Dublin",
+      "source_url": "https://en.wikipedia.org/wiki/Wicklow_Mountains",
       "plan": {
         "version": 1,
         "days": [
@@ -246,9 +254,9 @@
             "start": "Suggested: choose a daytime visit after checking official access hours",
             "stops": [
               {
-                "name": "Dublin",
+                "name": "Dublin Mountains",
                 "stop_id": "dublin-mountains",
-                "detail": "Dublin is the capital and largest city of Ireland. Situated on Dublin Bay at the mouth of the River Liffey, it is in the province of Leinster, and is bordered on the south by the Dublin Mountains, part of the Wicklow Mountains range. Dublin is the largest city by population on the island of Ireland; at the [dated source] census, the city council area had a population of 592,713, while the city, including suburbs, had a population of 1,263,219, and County Dublin had a population of 1,501,500. Various definitions of a metropolitan Greater Dublin Area exist."
+                "detail": "The Wicklow Mountains form the largest continuous upland area in Ireland. They occupy the whole centre of County Wicklow and stretch outside its borders into the counties of Dublin, Wexford and Carlow. Where the mountains extend into County Dublin, they are known locally as the Dublin Mountains . The highest peak is Lugnaquilla at 925 metres ."
               }
             ],
             "driving": "Choose one local visit; travel time and onward transfers are not verified.",
@@ -288,7 +296,7 @@
         "sources": [
           {
             "label": "Wikipedia · CC BY-SA",
-            "url": "https://en.wikipedia.org/wiki/Dublin"
+            "url": "https://en.wikipedia.org/wiki/Wicklow_Mountains"
           }
         ],
         "markers": []
@@ -297,7 +305,7 @@
   },
   "payload": {
     "region": "Dublin",
-    "tagline": "Dublin is the capital and largest city of Ireland.",
+    "tagline": "The Wicklow Mountains form the largest continuous upland area in Ireland.",
     "best_season": "No verified visitor-season recommendation is available for Dublin Mountains; consult the park authority for your travel dates.",
     "best_seasons": [],
     "scenic_score": null,
@@ -312,15 +320,15 @@
     "trip_tags": [],
     "seo_title": "Dublin Mountains Visit Guide",
     "gallery": [],
-    "seo_description": "Dublin is the capital and largest city of Ireland.",
-    "lat": 53.35,
-    "lng": -6.26027778,
+    "seo_description": "The Wicklow Mountains form the largest continuous upland area in Ireland.",
+    "lat": 53.2517056,
+    "lng": -6.3303264,
     "nearest_airport_code": "DUB",
     "nearest_airport_name": "Dublin Airport",
     "airport_lat": 53.4287,
     "airport_lng": -6.2621,
-    "drive_minutes": 20,
-    "drive_miles": 8.6,
+    "drive_minutes": 28,
+    "drive_miles": 17.7,
     "travel_plan": {
       "version": 1,
       "days": [
@@ -329,9 +337,9 @@
           "start": "Suggested: choose a daytime visit after checking official access hours",
           "stops": [
             {
-              "name": "Dublin",
+              "name": "Dublin Mountains",
               "stop_id": "dublin-mountains",
-              "detail": "Dublin is the capital and largest city of Ireland. Situated on Dublin Bay at the mouth of the River Liffey, it is in the province of Leinster, and is bordered on the south by the Dublin Mountains, part of the Wicklow Mountains range. Dublin is the largest city by population on the island of Ireland; at the [dated source] census, the city council area had a population of 592,713, while the city, including suburbs, had a population of 1,263,219, and County Dublin had a population of 1,501,500. Various definitions of a metropolitan Greater Dublin Area exist."
+              "detail": "The Wicklow Mountains form the largest continuous upland area in Ireland. They occupy the whole centre of County Wicklow and stretch outside its borders into the counties of Dublin, Wexford and Carlow. Where the mountains extend into County Dublin, they are known locally as the Dublin Mountains . The highest peak is Lugnaquilla at 925 metres ."
             }
           ],
           "driving": "Choose one local visit; travel time and onward transfers are not verified.",
@@ -371,19 +379,21 @@
       "sources": [
         {
           "label": "Wikipedia · CC BY-SA",
-          "url": "https://en.wikipedia.org/wiki/Dublin"
+          "url": "https://en.wikipedia.org/wiki/Wicklow_Mountains"
         }
       ],
       "markers": []
     },
     "permit_headline": "Check visitor access before departure",
     "permit_note": "Check the official visitor information for Dublin Mountains before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
-    "permit_source_url": "https://en.wikipedia.org/wiki/Dublin"
+    "permit_source_url": "https://en.wikipedia.org/wiki/Wicklow_Mountains",
+    "hero_image": "/__l5e/assets-v1/37094856-51ee-46e3-98a0-0f672a9d9818/dublin-mountains-corrected.jpg",
+    "photo_credit": "Hero: Finnfrog99 / CC BY-SA 4.0 via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Wicklow_Mountains_viewed_from_the_Hell_fire_club_trail.jpg)"
   },
   "german": {
     "name": "Dublin Mountains",
     "region": "Dublin",
-    "tagline": "Dublin ist die Hauptstadt und größte Stadt Irlands.",
+    "tagline": "Die Wicklow Mountains bilden das größte zusammenhängende Hochland in Irland.",
     "bestSeason": "Keine verifizierte Empfehlung für die Besuchersaison ist für Dublin Mountains verfügbar; konsultieren Sie die Parkbehörde für Ihre Reisedaten.",
     "permitHeadline": "Überprüfen Sie den Besucherzugang vor der Abreise",
     "permitNote": "Überprüfen Sie die offiziellen Besucherinformationen für Dublin Mountains vor der Abreise. Eintritt, aktivitätsberechtigungen und Übernachtung sind separate Überprüfungen; die quellenauszüge unten stellen die verfügbarkeit für ihre daten nicht fest.",
@@ -393,9 +403,9 @@
         "start": "Vorgeschlagen: Wählen Sie einen Tagesbesuch nach Überprüfung der offiziellen Zugangszeiten",
         "stops": [
           {
-            "name": "Dublin",
+            "name": "Dublin Mountains",
             "stop_id": "dublin-mountains",
-            "detail": "Dublin ist die Hauptstadt und größte Stadt Irlands. In der Bucht von Dublin an der Mündung des Flusses Liffey gelegen, liegt es in der Provinz Leinster und grenzt im Süden an den Dublin Mountains, einen Teil der Wicklow Mountains. Dublin ist die größte Stadt nach Einwohnerzahl auf der Insel Irland; bei der Volkszählung hatte der Stadtrat eine Bevölkerung von 592.713, während die Stadt, einschließlich der Vororte, eine Bevölkerung von 1.263.219 hatte und County Dublin eine Bevölkerung von 1.501.500 hatte. Verschiedene Definitionen eines Metropolitan Greater Dublin Area existieren."
+            "detail": "Die Wicklow Mountains bilden das größte zusammenhängende Hochland in Irland. Sie besetzen das gesamte Zentrum der Grafschaft Wicklow und erstrecken sich außerhalb ihrer Grenzen in die Grafschaften Dublin, Wexford und Carlow. Wo sich die Berge bis in die Grafschaft Dublin erstrecken, sind sie lokal als Dublin Mountains bekannt. Der höchste Gipfel ist Lugnaquilla mit 925 Metern."
           }
         ],
         "driving": "Wählen Sie einen lokalen Besuch; Reisezeit und Weiterleitungen werden nicht überprüft.",
@@ -436,14 +446,15 @@
     "metaDescription": "Dublin Mountains: Besuchsplan, Karte und Hinweise zur Anreise. Zugang und saisonale Regeln vor der Reise bei offiziellen Stellen prüfen."
   },
   "hero": {
-    "file": "File:Dublin - aerial - 2025-07-07 01.jpg",
-    "url": "/__l5e/assets-v1/456bcd2a-abe3-43b8-bebd-319a3f043e24/dublin-mountains.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Dublin_-_aerial_-_2025-07-07_01.jpg",
-    "credit": "瑞丽江的河水",
+    "file": "File:Wicklow Mountains viewed from the Hell fire club trail.jpg",
+    "url": "/__l5e/assets-v1/37094856-51ee-46e3-98a0-0f672a9d9818/dublin-mountains-corrected.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Wicklow_Mountains_viewed_from_the_Hell_fire_club_trail.jpg",
+    "credit": "Finnfrog99",
     "license": "CC BY-SA 4.0",
-    "subject": "Dublin - aerial - 2025-07-07 01",
-    "w": 4032,
-    "h": 2268,
-    "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Dublin_-_aerial_-_2025-07-07_01.jpg/1920px-Dublin_-_aerial_-_2025-07-07_01.jpg"
-  }
+    "subject": "Wicklow Mountains viewed from the Hell fire club trail",
+    "w": 4080,
+    "h": 3060,
+    "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Wicklow_Mountains_viewed_from_the_Hell_fire_club_trail.jpg/1280px-Wicklow_Mountains_viewed_from_the_Hell_fire_club_trail.jpg"
+  },
+  "coordinate_role": "named Dublin mountain gateway: Montpelier Hill"
 }
