@@ -1,0 +1,1 @@
+- Remaining-Europe catalogs come from cached Wikidata queries (build_catalogs.py) plus an official national-park checklist (authority_parks.py); war zones/Turkey stay excluded in coverage.json. Why: free, rebuildable, no missing designated parks.
