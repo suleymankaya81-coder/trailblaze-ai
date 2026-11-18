@@ -1,7 +1,7 @@
 {
   "slug": "texel",
   "country": "nl",
-  "status": "facts",
+  "status": "prepared",
   "lang": "en",
   "packet": {
     "slug": "texel",
@@ -218,5 +218,229 @@
         53.05004
       ]
     ]
+  },
+  "bundle": {
+    "summary": {
+      "region": "North Holland",
+      "tagline": "Texel is a municipality and an island with a population of 13,846 in North Holland, Netherlands.",
+      "best_season": "No verified visitor-season recommendation is available for Texel; consult the park authority for your travel dates.",
+      "best_seasons": [],
+      "scenic_score": null,
+      "camping_score": null,
+      "avg_daily_budget": null,
+      "trip_duration_days": "1 visit day",
+      "recommended_duration": "1 visit day",
+      "permit_level": "moderate",
+      "aliases": [],
+      "gateway_cities": [],
+      "similar_slugs": [],
+      "trip_tags": [],
+      "activities": [
+        "Texel"
+      ],
+      "seo_title": "Texel Visit Guide"
+    },
+    "travel": {
+      "slug": "texel",
+      "overview_name": "Texel",
+      "headline": "Check visitor access before departure",
+      "reservation": "Check the official visitor information for Texel before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
+      "source_url": "https://en.wikipedia.org/wiki/Texel",
+      "plan": {
+        "version": 1,
+        "days": [
+          {
+            "title": "Visit highlights: Texel",
+            "start": "Suggested: choose a daytime visit after checking official access hours",
+            "stops": [
+              {
+                "name": "Texel",
+                "stop_id": "texel",
+                "detail": "Texel is a municipality and an island with a population of 13,846 in North Holland, Netherlands. It is the largest and most populated island of the West Frisian Islands in the Wadden Sea. The island is situated north of Den Helder, northeast of Noorderhaaks, and southwest of Vlieland."
+              }
+            ],
+            "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+            "note": "Check the official visitor information for Texel before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+          }
+        ],
+        "intel": [
+          {
+            "kind": "parking",
+            "title": "Parking check",
+            "text": "The reviewed sources do not establish current parking conditions for Texel. Check the official visitor information before departure."
+          },
+          {
+            "kind": "signal",
+            "title": "Signal check",
+            "text": "The reviewed sources do not establish mobile coverage for Texel. Check the official visitor information before departure."
+          },
+          {
+            "kind": "fuel",
+            "title": "Fuel check",
+            "text": "The reviewed sources do not establish fuel availability for Texel. Check the official visitor information before departure."
+          },
+          {
+            "kind": "timing",
+            "title": "Timing check",
+            "text": "The reviewed sources do not establish a best-season recommendation for Texel. Check the official visitor information before departure."
+          },
+          {
+            "kind": "access",
+            "title": "Access check",
+            "text": "The reviewed sources do not establish all current access restrictions for Texel. Check the official visitor information before departure."
+          }
+        ],
+        "arrival": "The reviewed sources do not establish a measured arrival schedule or supply stops for Texel. Check the official visitor information before departure.",
+        "vehicle": "The reviewed sources do not establish vehicle size or rental restrictions; do not assume RV access for Texel. Check the official visitor information before departure.",
+        "goldenHour": "The reviewed sources do not establish a verified sunrise or sunset viewpoint for Texel. Check the official visitor information before departure.",
+        "sources": [
+          {
+            "label": "Wikipedia · CC BY-SA",
+            "url": "https://en.wikipedia.org/wiki/Texel"
+          }
+        ],
+        "markers": []
+      }
+    }
+  },
+  "payload": {
+    "region": "North Holland",
+    "tagline": "Texel is a municipality and an island with a population of 13,846 in North Holland, Netherlands.",
+    "best_season": "No verified visitor-season recommendation is available for Texel; consult the park authority for your travel dates.",
+    "best_seasons": [],
+    "scenic_score": null,
+    "camping_score": null,
+    "avg_daily_budget": null,
+    "trip_duration_days": "1 visit day",
+    "recommended_duration": "1 visit day",
+    "permit_level": "moderate",
+    "aliases": [],
+    "gateway_cities": [],
+    "similar_slugs": [],
+    "trip_tags": [],
+    "seo_title": "Texel Visit Guide",
+    "gallery": [],
+    "seo_description": "Texel is a municipality and an island with a population of 13,846 in North Holland, Netherlands.",
+    "lat": 53.05,
+    "lng": 4.8,
+    "nearest_airport_code": "AMS",
+    "nearest_airport_name": "Amsterdam Airport Schiphol",
+    "airport_lat": 52.3086,
+    "airport_lng": 4.7639,
+    "drive_minutes": 110,
+    "drive_miles": 62.4,
+    "travel_plan": {
+      "version": 1,
+      "days": [
+        {
+          "title": "Visit highlights: Texel",
+          "start": "Suggested: choose a daytime visit after checking official access hours",
+          "stops": [
+            {
+              "name": "Texel",
+              "stop_id": "texel",
+              "detail": "Texel is a municipality and an island with a population of 13,846 in North Holland, Netherlands. It is the largest and most populated island of the West Frisian Islands in the Wadden Sea. The island is situated north of Den Helder, northeast of Noorderhaaks, and southwest of Vlieland."
+            }
+          ],
+          "driving": "Choose one local visit; travel time and onward transfers are not verified.",
+          "note": "Check the official visitor information for Texel before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates."
+        }
+      ],
+      "intel": [
+        {
+          "kind": "parking",
+          "title": "Parking check",
+          "text": "The reviewed sources do not establish current parking conditions for Texel. Check the official visitor information before departure."
+        },
+        {
+          "kind": "signal",
+          "title": "Signal check",
+          "text": "The reviewed sources do not establish mobile coverage for Texel. Check the official visitor information before departure."
+        },
+        {
+          "kind": "fuel",
+          "title": "Fuel check",
+          "text": "The reviewed sources do not establish fuel availability for Texel. Check the official visitor information before departure."
+        },
+        {
+          "kind": "timing",
+          "title": "Timing check",
+          "text": "The reviewed sources do not establish a best-season recommendation for Texel. Check the official visitor information before departure."
+        },
+        {
+          "kind": "access",
+          "title": "Access check",
+          "text": "The reviewed sources do not establish all current access restrictions for Texel. Check the official visitor information before departure."
+        }
+      ],
+      "arrival": "The reviewed sources do not establish a measured arrival schedule or supply stops for Texel. Check the official visitor information before departure.",
+      "vehicle": "The reviewed sources do not establish vehicle size or rental restrictions; do not assume RV access for Texel. Check the official visitor information before departure.",
+      "goldenHour": "The reviewed sources do not establish a verified sunrise or sunset viewpoint for Texel. Check the official visitor information before departure.",
+      "sources": [
+        {
+          "label": "Wikipedia · CC BY-SA",
+          "url": "https://en.wikipedia.org/wiki/Texel"
+        }
+      ],
+      "markers": []
+    },
+    "permit_headline": "Check visitor access before departure",
+    "permit_note": "Check the official visitor information for Texel before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.",
+    "permit_source_url": "https://en.wikipedia.org/wiki/Texel"
+  },
+  "german": {
+    "name": "Texel",
+    "region": "Nordholland",
+    "tagline": "Texel ist eine Gemeinde und eine Insel mit 13.846 Einwohnern in Nordholland, Niederlande.",
+    "bestSeason": "Keine verifizierte Empfehlung für die Besuchersaison ist für Texel verfügbar; konsultieren Sie die Parkbehörde für Ihre Reisedaten.",
+    "permitHeadline": "Überprüfen Sie den Besucherzugang vor der Abreise",
+    "permitNote": "Überprüfen Sie die offiziellen Besucherinformationen für Texel vor der Abreise. Eintritt, aktivitätsberechtigungen und Übernachtung sind separate Überprüfungen; die quellenauszüge unten stellen die verfügbarkeit für ihre daten nicht fest.",
+    "days": [
+      {
+        "title": "Highlights besuchen: Texel",
+        "start": "Vorgeschlagen: Wählen Sie einen Tagesbesuch nach Überprüfung der offiziellen Zugangszeiten",
+        "stops": [
+          {
+            "name": "Texel",
+            "stop_id": "texel",
+            "detail": "Texel ist eine Gemeinde und eine Insel mit 13.846 Einwohnern in Nordholland, Niederlande. Es ist die größte und am dichtesten besiedelte Insel der westfriesischen Inseln im Wattenmeer. Die Insel liegt nördlich von Den Helder, nordöstlich von Noorderhaaks und südwestlich von Vlieland."
+          }
+        ],
+        "driving": "Wählen Sie einen lokalen Besuch; Reisezeit und Weiterleitungen werden nicht überprüft.",
+        "note": "Überprüfen Sie die offiziellen Besucherinformationen für Texel vor der Abreise. Eintritt, aktivitätsberechtigungen und Übernachtung sind separate Überprüfungen; die quellenauszüge unten stellen die verfügbarkeit für ihre daten nicht fest."
+      }
+    ],
+    "intel": [
+      {
+        "kind": "parking",
+        "title": "Parkkontrolle",
+        "text": "Die überprüften Quellen legen keine aktuellen Parkbedingungen für Texel fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise."
+      },
+      {
+        "kind": "signal",
+        "title": "Signalprüfung",
+        "text": "Die überprüften Quellen legen keine mobile Abdeckung für Texel fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise."
+      },
+      {
+        "kind": "fuel",
+        "title": "Kraftstoffprüfung",
+        "text": "Die überprüften Quellen stellen keine Kraftstoffverfügbarkeit für Texel fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise."
+      },
+      {
+        "kind": "timing",
+        "title": "Zeitplanungsprüfung",
+        "text": "Die überprüften Quellen erstellen keine Best-Saison-Empfehlung für Texel. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise."
+      },
+      {
+        "kind": "access",
+        "title": "Zugangskontrolle",
+        "text": "Die überprüften Quellen legen nicht alle aktuellen Zugangsbeschränkungen für Texel fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise."
+      }
+    ],
+    "arrival": "Die überprüften Quellen legen keinen gemessenen Ankunftsplan oder Versorgungsstopps für Texel fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise.",
+    "vehicle": "Die überprüften Quellen legen keine Fahrzeuggröße oder Mietbeschränkungen fest; nehmen Sie keinen RV-Zugang für Texel an. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise.",
+    "goldenHour": "Die überprüften Quellen legen keinen verifizierten Sonnenauf- oder -untergangsstandpunkt für Texel fest. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise.",
+    "metaTitle": "Texel – Reiseplan",
+    "metaDescription": "Texel: Besuchsplan, Karte und Hinweise zur Anreise. Zugang und saisonale Regeln vor der Reise bei offiziellen Stellen prüfen."
   }
 }

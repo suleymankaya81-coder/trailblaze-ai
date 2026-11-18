@@ -24,9 +24,9 @@ REPORT = HERE / 'production-report.json'
 
 # Country settings. Bounds: (lat_min, lat_max, lng_min, lng_max).
 COUNTRIES = {
-    'nl': dict(lang='nl', currency='EUR', mhr=None, name='Netherlands', bounds=(50.7, 53.7, 3.2, 7.3)),
-    'be': dict(lang='nl', currency='EUR', mhr=None, name='Belgium', bounds=(49.4, 51.6, 2.4, 6.5)),
-    'ie': dict(lang='en', currency='EUR', mhr=None, name='Ireland', bounds=(51.3, 55.5, -10.7, -5.9)),
+    'nl': dict(lang='nl', currency='EUR', mhr='', name='Netherlands', bounds=(50.7, 53.7, 3.2, 7.3)),
+    'be': dict(lang='nl', currency='EUR', mhr='', name='Belgium', bounds=(49.4, 51.6, 2.4, 6.5)),
+    'ie': dict(lang='en', currency='EUR', mhr='', name='Ireland', bounds=(51.3, 55.5, -10.7, -5.9)),
 }
 prepare.EXTRA_COUNTRIES = tuple(prepare.EXTRA_COUNTRIES) + ('NL', 'BE', 'IE')
 
@@ -161,7 +161,7 @@ def translate(row, item):
 # ---------- Stage 3: publish ----------
 def publish(items, cat, apply):
     pub = module('pub', 'publish-fr-pt-gr.py')
-    pub.MHR.update({cc: c['mhr'] for cc, c in COUNTRIES.items() if c['mhr']})
+    pub.MHR.update({cc: c['mhr'] for cc, c in COUNTRIES.items() if c['mhr'] is not None})
     cols = set(pub.rq('GET', 'destinations?limit=1&select=*')[0].keys())
     routes_path = Path('src/data/routes.json'); routes = json.loads(routes_path.read_text())
     staged = []
