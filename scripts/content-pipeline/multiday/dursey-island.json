@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Seilbahn",
+      "quote": "Er ist zwischen Dursey Point an der Küste und dem Nordostende der Insel durch Irlands einzige Seilbahn überbrückt.",
+      "english": "It is bridged between Dursey Point on the coast and the northeast end of the island by Ireland's only cable car."
+    },
+    {
+      "id": "s2",
+      "name": "Ballynacallagh",
+      "quote": "Die Siedlungen Ballynacallagh, Killowen und Tilickatina blieben somit als beinahe verlassene Orte (Wüstungen) auf der Insel zurück.",
+      "english": "The settlements of Ballynacallagh, Killowen, and Tilickatina thus remained behind as almost abandoned places (deserted villages) on the island."
+    },
+    {
+      "id": "s3",
+      "name": "Killowen",
+      "quote": "Auch bei Killowen sind Bullaun Stones zu besichtigen, außerdem eine Bienenkorbhütte (Hut Site).",
+      "english": "Bullaun Stones can also be visited at Killowen, as well as a beehive hut (Hut Site)."
+    },
+    {
+      "id": "s4",
+      "name": "Tilickatina",
+      "quote": "Schließlich befindet sich auch bei Tilickatina 200 Jahre alter ehemaliger Leuchtturm sowie bei Dursey Head am äußersten südwestlichen Inselende und er gegenüber liegenden der Insel Calf je ein „Old Lighthouse“.",
+      "english": "Finally, there is also a 200-year-old former lighthouse at Tilickatina, as well as an \"Old Lighthouse\" at Dursey Head at the extreme southwestern end of the island and on the opposite island of Calf."
+    },
+    {
+      "id": "s5",
+      "name": "Beara Way",
+      "quote": "Die landschaftlich reizvolle Insel kann auf einem Abschnitt des Beara Way umrundet werden.",
+      "english": "The scenically attractive island can be circumnavigated on a section of the Beara Way."
+    },
+    {
+      "id": "s6",
+      "name": "Marked Stone",
+      "quote": "Bei Ballynacallagh befinden sich die gleichnamige 1602 zerstört Burgruine sowie der Marked Stone und die Bullaun Stones sowie die Ruine von Kirche und Friedhof.",
+      "english": "At Ballynacallagh are the castle ruins of the same name destroyed in 1602, as well as the Marked Stone and the Bullaun Stones, plus the ruins of a church and cemetery."
+    },
+    {
+      "id": "s7",
+      "name": "Bullaun Stones",
+      "quote": "Sehenswert sind am Ende der Insel der Blick auf die vorgelagerten Felseninseln Calf, Cow und Bull Rock mit seinem Leuchtturm.",
+      "english": "At the end of the island, the view of the offshore rocky islands of Calf, Cow, and Bull Rock with its lighthouse is worth seeing."
+    },
+    {
+      "id": "s8",
+      "name": "Dursey Head",
+      "quote": "Im Juli 1943 stürzte ein deutsches Aufklärungsflugzeug von Typ Junkers Ju 88 in den Ballinacarriga Hill auf der Landzunge Dursey Head ab, vor der die Insel liegt.",
+      "english": "In July 1943, a German reconnaissance aircraft of the type Junkers Ju 88 crashed into Ballinacarriga Hill on the Dursey Head headland, in front of which the island lies."
+    }
+  ],
+  "days": [
+    {
+      "title": "North-East Arrival and Village Settlements",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Hiking the Island Trails and Historical Stones",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "South-West Coast and Maritime Heritage",
+      "stop_ids": [
+        "s4",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "856167ce47684c8ba96a4e91e7520659e8aff89886f1af2fb7488a542df48bf6"
+}

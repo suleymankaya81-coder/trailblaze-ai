@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lough Leane",
+      "quote": "Auf einer Landzunge im Lough Leane liegt das Tower House Ross Castle, in dem man einen Einblick in das Alltagsleben eines Clanhäuptlings gewinnen kann.",
+      "english": "On a peninsula in Lough Leane lies the tower house Ross Castle, where one can gain an insight into the everyday life of a clan chief."
+    },
+    {
+      "id": "s2",
+      "name": "Mucross",
+      "quote": "Im Süden grenzt der über 100 km² große Nationalpark an die Stadt Killarney; er umfasst die drei Seen Lough Leane sowie Mucross und Upper Lake, welche zusammen im Park eine Fläche von 22 km² ausmachen.",
+      "english": "In the south, the over 100 km² national park borders the town of Killarney; it includes the three lakes Lough Leane as well as Mucross and Upper Lake, which together cover an area of 22 km² in the park."
+    },
+    {
+      "id": "s3",
+      "name": "Muckross House",
+      "quote": "Als touristischen Mittelpunkt des Killarney-Nationalparks kann man das Muckross House bezeichnen: Das 1843 errichtete Herrenhaus der Familie Herbert kann besichtigt werden und liegt in malerischer Lage am Ufer des Muckross Lake, umgeben von gepflegtem Rasen, einem schönen Blumen- und einem Steingarten.",
+      "english": "Muckross House can be described as the tourist center of Killarney National Park: the manor house of the Herbert family, built in 1843, can be visited and is situated in a picturesque location on the shores of Muckross Lake, surrounded by well-kept lawns, a beautiful flower garden, and a rock garden."
+    },
+    {
+      "id": "s4",
+      "name": "Ross Castle",
+      "quote": "Auf dem Ostufer des Laugh Leane liegt das teilweise in Ruinen liegende spätmittelalterliche Ross Castle.",
+      "english": "On the eastern shore of Lough Leane lies the late medieval Ross Castle, which is partially in ruins."
+    },
+    {
+      "id": "s5",
+      "name": "Torc-Wasserfall",
+      "quote": "Vom Muckross House aus kann man mit einachsigen Pferdekutschen oder auch zu Fuß die Umgebung erkunden; gern besuchtes Ziel ist der Torc-Wasserfall.",
+      "english": "From Muckross House, one can explore the surroundings by single-axle horse-drawn carriages or on foot; a popular destination is the Torc Waterfall."
+    },
+    {
+      "id": "s6",
+      "name": "Innisfallen Island",
+      "quote": "Die Insel Innisfallen Island kann mit ihren Resten des einst mächtigen Klosters Innisfallen Abbey besichtigt werden.",
+      "english": "The island of Innisfallen Island can be visited with the remains of the once mighty Innisfallen Abbey."
+    },
+    {
+      "id": "s7",
+      "name": "Ladies’ View",
+      "quote": "Einen Überblick über den Upper Lake erhält man vom Ladies’ View aus, einem beliebten Touristen-Haltepunkt am Ring of Kerry, den schon die Hofdamen Königin Victorias nutzten.",
+      "english": "An overview of the Upper Lake can be obtained from Ladies' View, a popular tourist stop on the Ring of Kerry that was already used by Queen Victoria's ladies-in-waiting."
+    },
+    {
+      "id": "s8",
+      "name": "Kerry Way",
+      "quote": "1981 wurde der Park von der UNESCO als Biosphärenreservat eingestuft; teilweise wird er vom Fernwanderweg Kerry Way durchquert.",
+      "english": "In 1981, the park was classified by UNESCO as a biosphere reserve; it is partially crossed by the long-distance hiking trail Kerry Way."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lakeside Estates and History",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s5"
+      ]
+    },
+    {
+      "title": "Castles and Islands of Lough Leane",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s6"
+      ]
+    },
+    {
+      "title": "Panoramic Views and Trails",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "37f1ca73f9360a8154c273e03e1f02d38667e36a7e0a61bfe5b8b1b998a299cb"
+}

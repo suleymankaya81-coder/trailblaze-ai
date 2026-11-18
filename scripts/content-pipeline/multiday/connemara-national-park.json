@@ -1,0 +1,45 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Besucherzentrum",
+      "quote": "Das Besucherzentrum hält Informationsmaterial über Flora, Fauna, Geologie und Ausflüge bereit, und in einer Ausstellung sind unter anderem die Entstehung des Moores und die Nutzung des Torfs anschaulich erklärt.",
+      "english": "The visitor centre provides information material about flora, fauna, geology, and excursions, and an exhibition clearly explains, among other things, the formation of the moor and the use of peat."
+    },
+    {
+      "id": "s2",
+      "name": "Diamond Hill",
+      "quote": "Durch den Park führen diverse Wanderwege, der längste beginnt am Besucherzentrum und führt bis auf den Gipfel des über 400 Meter hohen Diamond Hill.",
+      "english": "Various hiking trails lead through the park, the longest of which begins at the visitor centre and leads to the summit of the over 400-meter-high Diamond Hill."
+    },
+    {
+      "id": "s3",
+      "name": "Twelve Bens",
+      "quote": "Er befindet sich in Connemara im Westen von Irland, im County Galway nordwestlich der Twelve Bens (auch twelve pins genannt), einer Bergkette mit zwölf Gipfeln.",
+      "english": "It is located in Connemara in the west of Ireland, in County Galway northwest of the Twelve Bens (also called twelve pins), a mountain range with twelve peaks."
+    },
+    {
+      "id": "s4",
+      "name": "Megalithanlagen",
+      "quote": "Auf dem Gebiet finden sich Relikte früher menschlicher Besiedelung wie 4000 Jahre alte Megalithanlagen und Menhire.",
+      "english": "Relics of early human settlement such as 4000-year-old megalithic sites and standing stones can be found in the area."
+    }
+  ],
+  "days": [
+    {
+      "title": "Park Center and Heights",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Mountains and Ancient Relics",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "dd7d0b4d39e3c92857d924c8ba56257ec7849d6d098114e1679a4423648c7d8a"
+}

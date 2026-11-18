@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Lough Hyne",
+      "quote": "Lough Hyne (Irish: Loch Oighinn) ist ein mariner See in West Cork, Irland, rund 5 km südwestlich von Skibbereen gelegen.",
+      "english": "Lough Hyne (Irish: Loch Oighinn) is a marine lake in West Cork, Ireland, located about 5 km southwest of Skibbereen."
+    },
+    {
+      "id": "s2",
+      "name": "Barloge Creek",
+      "quote": "Inzwischen findet mit der Gezeitenströmung durch den Zu- und Ablauf Barloge Creek ein ständiger Austausch mit Meerwasser statt.",
+      "english": "Meanwhile, a constant exchange with seawater takes place via the tidal current through the inlet and outlet, Barloge Creek."
+    },
+    {
+      "id": "s3",
+      "name": "the rapids",
+      "quote": "Die Engstelle zwischen Barloge Creek und See wird als „the rapids“ (die Stromschnellen) bezeichnet.",
+      "english": "The narrows between Barloge Creek and the lake are referred to as \"the rapids\"."
+    },
+    {
+      "id": "s4",
+      "name": "Castle Island",
+      "quote": "In der Mitte des Sees befindet sich die Insel Castle Island.",
+      "english": "In the middle of the lake is the island Castle Island."
+    },
+    {
+      "id": "s5",
+      "name": "Cloghan Castle",
+      "quote": "Darauf sind die Ruinen des Cloghan Castle zu sehen, das einst dem O'Driscoll-Clan gehörte.",
+      "english": "On it, the ruins of Cloghan Castle can be seen, which once belonged to the O'Driscoll clan."
+    },
+    {
+      "id": "s6",
+      "name": "Saint-Bridgit-Kirche",
+      "quote": "Am Seeufer befinden sich die Ruinen der Saint-Bridgit-Kirche sowie die heiligen Brunnen „Tobarín Súl“ und „Skour Well“ am Hang des Knockomagh Hill.",
+      "english": "On the lake shore are the ruins of the Saint Bridgit Church as well as the holy wells \"Tobarín Súl\" and \"Skour Well\" on the slope of Knockomagh Hill."
+    },
+    {
+      "id": "s7",
+      "name": "Tobarín Súl",
+      "quote": "Die heiligen Quellen Tobarín Súl und Skour Well liegen beim Hügel Knockomagh Hill, auf den außerdem ein Wanderweg mit spektakulärem Gipfelblick über den See und seine Umgebung führt.",
+      "english": "The holy springs Tobarín Súl and Skour Well are located by the hill Knockomagh Hill, which also features a hiking trail with a spectacular summit view over the lake and its surroundings."
+    },
+    {
+      "id": "s8",
+      "name": "Skour Well",
+      "quote": "Am Seeufer befinden sich die Ruinen der Saint-Bridgit-Kirche sowie die heiligen Brunnen „Tobarín Súl“ und „Skour Well“ am Hang des Knockomagh Hill.",
+      "english": "On the lake shore are the ruins of the Saint Bridgit Church as well as the holy wells \"Tobarín Súl\" and \"Skour Well\" on the slope of Knockomagh Hill."
+    },
+    {
+      "id": "s9",
+      "name": "Knockomagh Hill",
+      "quote": "Die heiligen Quellen Tobarín Súl und Skour Well liegen beim Hügel Knockomagh Hill, auf den außerdem ein Wanderweg mit spektakulärem Gipfelblick über den See und seine Umgebung führt.",
+      "english": "The holy springs Tobarín Súl and Skour Well are located by the hill Knockomagh Hill, which also features a hiking trail with a spectacular summit view over the lake and its surroundings."
+    }
+  ],
+  "days": [
+    {
+      "title": "Marine Waters and Tidal Rapids",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Islands and Clan Fortifications",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Holy Wells and Hillside Views",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "90f0832be9e161edf3d98bc986362bc69ac60264ae767b67d6f625e6b9c72de5"
+}

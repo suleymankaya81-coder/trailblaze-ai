@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Glenveagh-Tal",
+      "quote": "Vom Glenveagh-Tal (Gleann Bheatha, dt. „Tal des Lebens“, eigtl. wohl gleann bheithe, „Tal der Birke“), das den Park in zwei Teile spaltet, hat er seinen Namen.",
+      "english": "The park takes its name from the Glenveagh Valley (Gleann Bheatha, German 'Valley of Life', actually probably gleann bheithe, 'Valley of the Birch'), which splits the park into two parts."
+    },
+    {
+      "id": "s2",
+      "name": "Derryveagh Mountains",
+      "quote": "Er hat eine Fläche von fast 16.548 Hektar und liegt in den Derryveagh Mountains.",
+      "english": "It has an area of almost 16,548 hectares and is located in the Derryveagh Mountains."
+    },
+    {
+      "id": "s3",
+      "name": "Mount Errigal",
+      "quote": "In seinem Gebiet befinden sich mit Mount Errigal (751 m über NN) und Slieve Snaght (683 m über NN) die beiden höchsten Berge Donegals.",
+      "english": "In its area, Mount Errigal (751 m above sea level) and Slieve Snaght (683 m above sea level) are the two highest mountains in Donegal."
+    },
+    {
+      "id": "s4",
+      "name": "Slieve Snaght",
+      "quote": "In seinem Gebiet befinden sich mit Mount Errigal (751 m über NN) und Slieve Snaght (683 m über NN) die beiden höchsten Berge Donegals.",
+      "english": "In its area, Mount Errigal (751 m above sea level) and Slieve Snaght (683 m above sea level) are the two highest mountains in Donegal."
+    },
+    {
+      "id": "s5",
+      "name": "Lough Veagh",
+      "quote": "Am See Lough Veagh befindet sich Glenveagh Castle mit seiner viktorianischen Gartenanlage und das Besucherzentrum.",
+      "english": "By the lake Lough Veagh, one finds Glenveagh Castle with its Victorian gardens and the visitor center."
+    },
+    {
+      "id": "s6",
+      "name": "Glenveagh Castle",
+      "quote": "Das Schloss mit seiner Einrichtung kann heute noch im fast ursprünglichen Zustand besichtigt werden.",
+      "english": "The castle with its furnishings can still be visited today in its almost original condition."
+    },
+    {
+      "id": "s7",
+      "name": "Besucherzentrum",
+      "quote": "Am See Lough Veagh befindet sich Glenveagh Castle mit seiner viktorianischen Gartenanlage und das Besucherzentrum.",
+      "english": "By the lake Lough Veagh, one finds Glenveagh Castle with its Victorian gardens and the visitor center."
+    },
+    {
+      "id": "s8",
+      "name": "Mullangore Wood",
+      "quote": "Der größte Wald ist Mullangore Wood am Südostufer von Lough Veagh.",
+      "english": "The largest forest is Mullangore Wood on the southeastern shore of Lough Veagh."
+    }
+  ],
+  "days": [
+    {
+      "title": "Mountains and Valleys",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Lakeside Castle and Heritage",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "f4f4d85e32d425a233c5966c24206092796cd1e7574487017c8611b370bbb33a"
+}

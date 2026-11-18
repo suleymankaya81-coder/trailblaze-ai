@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Knightstown",
+      "quote": "Außerdem gibt es zwischen April und September eine Fährverbindung von Reenard Point nach Knightstown (), der wichtigsten Siedlung der Insel.",
+      "english": "In addition, there is a ferry connection from Reenard Point to Knightstown, the most important settlement on the island, between April and September."
+    },
+    {
+      "id": "s2",
+      "name": "Glanleam House",
+      "quote": "Im Nordosten der Insel befindet sich das „Glanleam House“ (Teach Ghleann Laoim), dessen Garten subtropische Pflanzen aufweist.",
+      "english": "In the northeast of the island is \"Glanleam House\" (Teach Ghleann Laoim), whose garden features subtropical plants."
+    },
+    {
+      "id": "s3",
+      "name": "Mariengrotte",
+      "quote": "Eine weitere Attraktion der Insel ist die Mariengrotte in einem ehemaligen Steinbruch.",
+      "english": "Another attraction on the island is the Mariengrotte (Mary's Grotto) in a former quarry."
+    },
+    {
+      "id": "s4",
+      "name": "Menhir von Glanleam",
+      "quote": "Der Menhir von Glanleam steht in der Mitte eines Forts, nahe dem Cromwell Point und dessen Leuchtturm an einer der Nordspitzen von Valentia Island.",
+      "english": "The Glanleam Menhir (Standing Stone) stands in the center of a fort, near Cromwell Point and its lighthouse at one of the northern tips of Valentia Island."
+    },
+    {
+      "id": "s5",
+      "name": "Cromwell Point",
+      "quote": "Der Menhir von Glanleam steht in der Mitte eines Forts, nahe dem Cromwell Point und dessen Leuchtturm an einer der Nordspitzen von Valentia Island.",
+      "english": "The Glanleam Menhir stands in the center of a fort, near Cromwell Point and its lighthouse at one of the northern tips of Valentia Island."
+    },
+    {
+      "id": "s6",
+      "name": "Geokaun",
+      "quote": "Der Geokaun (irisch: an Geocán) ist der höchste Berg auf Valentia Island.",
+      "english": "The Geokaun (Irish: an Geocán) is the highest mountain on Valentia Island."
+    },
+    {
+      "id": "s7",
+      "name": "Wedge Tomb von Cool East",
+      "quote": "Auf der Insel liegt auch das Wedge Tomb von Cool East.",
+      "english": "The Wedge Tomb of Cool East is also located on the island."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Peaks and Gardens",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Town Life and Ancient Sites",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "5869e1f7c0b465b91833dfd95cd01835e291736eea29b21b63ba169fdaa6be9d"
+}

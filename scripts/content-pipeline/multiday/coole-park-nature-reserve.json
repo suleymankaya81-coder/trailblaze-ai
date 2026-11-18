@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Wäldern",
+      "quote": "Der Park gehört heute dem Irish National Parks & Wildlife Service und besteht aus Wäldern, einer Reihe von Turloughs, einem 6 km langen Waldpfad und einer, von Mauern umschlossenen, Gartenanlage.",
+      "english": "Today the park belongs to the Irish National Parks & Wildlife Service and consists of woods, a series of turloughs, a 6 km long forest trail and a walled garden area."
+    },
+    {
+      "id": "s2",
+      "name": "Turloughs",
+      "quote": "Das Gedicht The Wild Swans at Coole (Die wilden Schwäne von Coole), das von W. B. Yeats geschrieben wurde, beschreibt die Schönheit des Parks und die wilden Schwäne auf den dortigen Turloughs.",
+      "english": "The poem The Wild Swans at Coole, written by W. B. Yeats, describes the beauty of the park and the wild swans on the turloughs there."
+    },
+    {
+      "id": "s3",
+      "name": "Waldpfad",
+      "quote": "Der Park gehört heute dem Irish National Parks & Wildlife Service und besteht aus Wäldern, einer Reihe von Turloughs, einem 6 km langen Waldpfad und einer, von Mauern umschlossenen, Gartenanlage.",
+      "english": "Today the park belongs to the Irish National Parks & Wildlife Service and consists of woods, a series of turloughs, a 6 km long forest trail and a walled garden area."
+    },
+    {
+      "id": "s4",
+      "name": "Gartenanlage",
+      "quote": "Der Park gehört heute dem Irish National Parks & Wildlife Service und besteht aus Wäldern, einer Reihe von Turloughs, einem 6 km langen Waldpfad und einer, von Mauern umschlossenen, Gartenanlage.",
+      "english": "Today the park belongs to the Irish National Parks & Wildlife Service and consists of woods, a series of turloughs, a 6 km long forest trail and a walled garden area."
+    },
+    {
+      "id": "s5",
+      "name": "Besucherzentrum",
+      "quote": "Die Parkanlage ist ganzjährig geöffnet; das Besucherzentrum lediglich von April bis September.",
+      "english": "The park is open year-round; the visitor centre is only open from April to September."
+    },
+    {
+      "id": "s6",
+      "name": "Autograph Tree",
+      "quote": "Innerhalb der umschlossenen Gartenanlage steht der sog. Autograph Tree (Unterschriftenbaum), eine Blutbuche, in deren Rinde sich seit Sommer 1898 viele irische Literaten und Freunde von Lady Gregory verewigten – darunter W. B. Yeats und sein Bruder Jack, George Bernard Shaw, John Millington Synge, Seán O’Casey, John Masefield, G. W. Russell, George Moore, Augustus John und der spätere erste Präsident Irlands, Douglas Hyde.",
+      "english": "Inside the enclosed garden stands the so-called Autograph Tree, a copper beech, in whose bark many Irish men of letters and friends of Lady Gregory immortalized themselves since the summer of 1898 – including W. B. Yeats and his brother Jack, George Bernard Shaw, John Millington Synge, Seán O’Casey, John Masefield, G. W. Russell, George Moore, Augustus John and the later first President of Ireland, Douglas Hyde."
+    },
+    {
+      "id": "s7",
+      "name": "Seven Woods",
+      "quote": "Neben The Wild Swans at Coole waren dies I walked among the seven woods of Coole, In the Seven Woods, Coole Park, 1929 sowie Coole Park and Ballylee, 1931.",
+      "english": "In addition to The Wild Swans at Coole, these were I walked among the seven woods of Coole, In the Seven Woods, Coole Park, 1929 and Coole Park and Ballylee, 1931."
+    }
+  ],
+  "days": [
+    {
+      "title": "Woods and Waters of Coole",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Garden and Heritage Center",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "fd4c3413cf4be06785df96e93ef50743c43085a9bde6db320fa3aa6ad489e0e2"
+}

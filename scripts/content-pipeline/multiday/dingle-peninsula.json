@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Gallarus Oratory",
+      "quote": "Heraus ragt unter den Sehenswürdigkeiten das Gallarus Oratory, ein rustikaler Kraggewölbebau aus frühchristlicher Zeit, der wie die Beehive-huts von Fahan und das Killelton Oratory in Trockenmauertechnik errichtet wurde.",
+      "english": "Outstanding among the sights is the Gallarus Oratory, a rustic corbelled building from early Christian times, which was built in dry stone technique like the Beehive huts of Fahan and the Killelton Oratory."
+    },
+    {
+      "id": "s2",
+      "name": "Dunbeg Fort",
+      "quote": "Aber auch Wedge Tombs (The Giants Table, Maumnahaltora und Púicín an Chairn), Steinkisten (Knockane), Cup-and-Ring-Markierungen, Menhire (Cloonsharragh und Ballineetig), Ringforts, Steinreihen (Ardamore) und Promontory Forts (Caherconree, Dunbeg Fort, Dunmore) sowie Cross Slabs (Knockane), Ogam- (Ballintaggart, Coumeenoole North) Menhire und Bullaun-Steine findet man hier.",
+      "english": "But one also finds wedge tombs, stone cists, cup-and-ring markings, standing stones, ringforts, stone rows and promontory forts (Caherconree, Dunbeg Fort, Dunmore) as well as cross slabs, ogham stones and bullaun stones here."
+    },
+    {
+      "id": "s3",
+      "name": "Kilmalkedar",
+      "quote": "Eine weitere Gruppe sind frühchristliche Kirchenruinen (Kilmalkedar und auf einer der Magharee-Inseln).",
+      "english": "Another group are early Christian church ruins (Kilmalkedar and on one of the Magharee Islands)."
+    },
+    {
+      "id": "s4",
+      "name": "Minard",
+      "quote": "Relikte, wie die Cloghane church, die Garfinny Bridge und die Pillar Stones von Kilfountan und Reask, sowie die Ruinen von Kirchen (Kilvicadownig) und Klöstern (Raingiléis), alter Burgen (Minard) gehören zum Landschaftsbild der Halbinsel.",
+      "english": "Relics such as Cloghane church, the Garfinny Bridge and the pillar stones of Kilfountan and Reask, as well as the ruins of churches, monasteries, and old castles (Minard) belong to the landscape of the peninsula."
+    },
+    {
+      "id": "s5",
+      "name": "Caherconree",
+      "quote": "Der Osten, wo das 600 m hoch gelegene Fort Caherconree liegt, wird mit Cú Rois und Cú Chulainn in Verbindung gebracht.",
+      "english": "The east, where the 600 m high fort Caherconree is located, is associated with Cú Rois and Cú Chulainn."
+    },
+    {
+      "id": "s6",
+      "name": "Mount Brandon",
+      "quote": "Hier finden zum 952 m hohen dritthöchsten Berg Irlands, dem Mount Brandon, immer noch Prozessionen statt, die man vom Connor Pass wie eine Reihe Ameisen in der Ferne erkennt.",
+      "english": "Processions still take place here to Mount Brandon, the 952 m high third-highest mountain in Ireland, which can be seen from the Connor Pass like a row of ants in the distance."
+    },
+    {
+      "id": "s7",
+      "name": "Connor Pass",
+      "quote": "Hier finden zum 952 m hohen dritthöchsten Berg Irlands, dem Mount Brandon, immer noch Prozessionen statt, die man vom Connor Pass wie eine Reihe Ameisen in der Ferne erkennt.",
+      "english": "Processions still take place here to Mount Brandon, the 952 m high third-highest mountain in Ireland, which can be seen from the Connor Pass like a row of ants in the distance."
+    },
+    {
+      "id": "s8",
+      "name": "Inch",
+      "quote": "Touristisch interessant sind ein sehr flacher Sandstrand an der Nehrung von Inch und der Slea Head-Drive, die westliche Küstenstraße.",
+      "english": "Of tourist interest are a very flat sandy beach at the spit of Inch and the Slea Head Drive, the western coastal road."
+    },
+    {
+      "id": "s9",
+      "name": "Slea Head-Drive",
+      "quote": "Touristisch interessant sind ein sehr flacher Sandstrand an der Nehrung von Inch und der Slea Head-Drive, die westliche Küstenstraße.",
+      "english": "Of tourist interest are a very flat sandy beach at the spit of Inch and the Slea Head Drive, the western coastal road."
+    }
+  ],
+  "days": [
+    {
+      "title": "West Coast Antiquities and Sights",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s9"
+      ]
+    },
+    {
+      "title": "Mountain Heights and Southern Shore",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Eastern Forts and Southern Ruins",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "7d1d729e4550543808e93e8606fb3d440089ecf6c344946d9d12af7065506b0c"
+}

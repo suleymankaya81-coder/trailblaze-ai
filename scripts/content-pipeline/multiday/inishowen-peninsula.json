@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Malin Head",
+      "quote": "An der Spitze von Inishowen befindet sich Malin Head, der nördlichste Punkt Irlands.",
+      "english": "At the tip of Inishowen is Malin Head, the northernmost point of Ireland."
+    },
+    {
+      "id": "s2",
+      "name": "Slieve Snaght",
+      "quote": "Das Innere besteht großteils aus Hügelketten mit der höchsten Erhebung, dem Slieve Snaght, mit etwas über 600 m.",
+      "english": "The interior consists largely of hill ranges with the highest elevation, Slieve Snaght, at just over 600 m."
+    },
+    {
+      "id": "s3",
+      "name": "Greencastle",
+      "quote": "Von einigen Hafenorten, z. B. von Greencastle, Bunagee und Leenan aus wird noch kommerzieller Fischfang betrieben.",
+      "english": "Commercial fishing is still carried out from some port towns, e.g. from Greencastle, Bunagee and Leenan."
+    },
+    {
+      "id": "s4",
+      "name": "Buncrana",
+      "quote": "Eine weitere verbindet Buncrana über den Lough Swilly mit Rathmullan auf der Halbinsel Fanad im Westen.",
+      "english": "Another connects Buncrana via Lough Swilly with Rathmullan on the Fanad peninsula in the west."
+    },
+    {
+      "id": "s5",
+      "name": "Fahan",
+      "quote": "Im Ort Fahan gibt es einen kleinen Yachthafen.",
+      "english": "In the village of Fahan there is a small marina."
+    },
+    {
+      "id": "s6",
+      "name": "Inch Island",
+      "quote": "Inch Island ist genau genommen keine Insel mehr, da es, südlich von Fahan, eine Verbindung über einen Damm zum Land besitzt.",
+      "english": "Strictly speaking, Inch Island is no longer an island because, south of Fahan, it has a connection to the land via a dam."
+    },
+    {
+      "id": "s7",
+      "name": "Grianán von Aileach",
+      "quote": "Auf Inishowen befinden sich viele historische Monumente, die bis auf die früheste Besiedlung zurückdatiert werden, z. B. das berühmte Ringfort Grianán von Aileach und die Ruinen einiger Burgen.",
+      "english": "Inishowen is home to many historical monuments dating back to the earliest settlement, such as the famous ring fort Grianán of Aileach and the ruins of several castles."
+    },
+    {
+      "id": "s8",
+      "name": "Carrickabraghey",
+      "quote": "Zu den bekannten Burgruinen zählen Carrickabraghey auf der Insel Doagh, die normannische Burg in Greencastle, Inch Castle, Buncrana Castle und Elagh Castle.",
+      "english": "Well-known castle ruins include Carrickabraghey on the Isle of Doagh, the Norman castle in Greencastle, Inch Castle, Buncrana Castle and Elagh Castle."
+    },
+    {
+      "id": "s9",
+      "name": "Gap of Mamore",
+      "quote": "Gap of Mamore – eine Passstraße mit bis zu 30 % (!) Steigung",
+      "english": "Gap of Mamore – a pass road with a gradient of up to 30% (!)"
+    },
+    {
+      "id": "s10",
+      "name": "Dunree Fort",
+      "quote": "Dunree Fort (heute ein Militärmuseum) und Neds Point Fort im Westen der Halbinsel",
+      "english": "Dunree Fort (today a military museum) and Neds Point Fort in the west of the peninsula"
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Coast and Highlands",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s8"
+      ]
+    },
+    {
+      "title": "Eastern Ports and Historic Forts",
+      "stop_ids": [
+        "s3",
+        "s7",
+        "s10"
+      ]
+    },
+    {
+      "title": "Western Shore and Mountain Passes",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "d09cd0aebb6f860d855c61e25b6de8dfc5f5011cd2db6898eba367d1f5667f17"
+}

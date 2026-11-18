@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Croagh Patrick",
+      "quote": "Der Croagh Patrick (irisch: Cruach Phádraig) ist ein 764 Meter hoher Berg im County Mayo im Westen der Republik Irland.",
+      "english": "Croagh Patrick (Irish: Cruach Phádraig) is a 764-meter-high mountain in County Mayo in the west of the Republic of Ireland."
+    },
+    {
+      "id": "s2",
+      "name": "U-förmiges Tal",
+      "quote": "Der Ort, wo die Glocke angeblich landete, ist ein U-förmiges Tal.",
+      "english": "The place where the bell allegedly landed is a U-shaped valley."
+    },
+    {
+      "id": "s3",
+      "name": "Clew Bay",
+      "quote": "Es entstand während der Eiszeit und mündet in die Clew Bay.",
+      "english": "It was formed during the Ice Age and opens into Clew Bay."
+    },
+    {
+      "id": "s4",
+      "name": "Gipfel",
+      "quote": "Die kleine Kapelle auf dem Gipfel wurde am 30. Juli 1905 geweiht.",
+      "english": "The small chapel on the summit was consecrated on July 30, 1905."
+    },
+    {
+      "id": "s5",
+      "name": "Murrisk",
+      "quote": "Am Fuß des Berges liegt der Ort Murrisk, mit dem Croagh Patrick Visitor Centre, das eine Ausstellung zu den archäologischen Funden und zur Geschichte der Wallfahrt zeigt.",
+      "english": "At the foot of the mountain lies the village of Murrisk, with the Croagh Patrick Visitor Centre, which shows an exhibition on archaeological finds and the history of the pilgrimage."
+    },
+    {
+      "id": "s6",
+      "name": "Croagh Patrick Visitor Centre",
+      "quote": "Am Fuß des Berges liegt der Ort Murrisk, mit dem Croagh Patrick Visitor Centre, das eine Ausstellung zu den archäologischen Funden und zur Geschichte der Wallfahrt zeigt.",
+      "english": "At the foot of the mountain lies the village of Murrisk, with the Croagh Patrick Visitor Centre, which shows an exhibition on archaeological finds and the history of the pilgrimage."
+    },
+    {
+      "id": "s7",
+      "name": "Megalithen von Killadangan",
+      "quote": "Nördlich des Berges finden sich die Megalithen von Killadangan.",
+      "english": "To the north of the mountain are the megaliths of Killadangan."
+    }
+  ],
+  "days": [
+    {
+      "title": "Summit Climb and Sacred Sites",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Village Heritage and Ancient Stones",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "cb34a421547882a73a771365e31d13c5bd173eaec6615b7c242cf5201e4b0489"
+}

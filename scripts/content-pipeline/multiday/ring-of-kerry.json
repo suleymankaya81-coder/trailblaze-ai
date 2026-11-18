@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Cahergall",
+      "quote": "Abgesehen von der Küstenlandschaft und der Region um Killarney sind die restaurierten Steinforts von Cahergall, Leacanabuaile (bei Cahersiveen) und das Staigue Fort besonders sehenswert.",
+      "english": "Apart from the coastal landscape and the region around Killarney, the restored stone forts of Cahergall, Leacanabuaile (near Cahersiveen) and Staigue Fort are particularly worth seeing."
+    },
+    {
+      "id": "s2",
+      "name": "Heritage Center",
+      "quote": "In Caherciveen befindet sich das Heritage Center mit einem Museum in einem ehemaligen britischen Fort.",
+      "english": "In Caherciveen there is the Heritage Center with a museum in a former British fort."
+    },
+    {
+      "id": "s3",
+      "name": "Kerry Bog Village",
+      "quote": "Das Freilichtmuseum Kerry Bog Village befindet sich zwischen den Orten Killorglin und Glenbeigh.",
+      "english": "The open-air museum Kerry Bog Village is located between the towns of Killorglin and Glenbeigh."
+    },
+    {
+      "id": "s4",
+      "name": "Ladies’ View",
+      "quote": "Am Ring of Kerry liegt unter anderem der Ladies’ View, ein Aussichtspunkt mit Blick auf den Upper Lake des Killarney-Nationalparks.",
+      "english": "Located on the Ring of Kerry, among others, is Ladies' View, a viewpoint with a view of the Upper Lake of Killarney National Park."
+    },
+    {
+      "id": "s5",
+      "name": "Black Valley",
+      "quote": "Neben der in der Hauptsaison stark befahrenen Autostraße gibt es sowohl einen Ring of Kerry-Wanderweg, der aber einen anderen Verlauf nimmt, als auch einen Radweg durch das Black Valley, der über ruhige Wege führt.",
+      "english": "In addition to the motorway, which is heavily used in high season, there is both a Ring of Kerry hiking trail, which follows a different route, and a cycle path through the Black Valley, which leads via quiet paths."
+    },
+    {
+      "id": "s6",
+      "name": "Valentia Island",
+      "quote": "An der St. Finian’s Bay und auf Valentia Island sind zusätzliche Nebenrouten ausgeschildert, etwa 40 km lang, die nicht im offiziellen Teil der Strecke enthalten, aber genau so interessant und vor allem einsamer sind.",
+      "english": "On St. Finian's Bay and on Valentia Island, additional secondary routes are signposted, about 40 km long, which are not included in the official part of the route, but are just as interesting and, above all, lonelier."
+    },
+    {
+      "id": "s7",
+      "name": "Skellig Michael",
+      "quote": "Ein Ausflug nach Skellig Michael kann ebenfalls empfohlen werden.",
+      "english": "An excursion to Skellig Michael can also be recommended."
+    },
+    {
+      "id": "s8",
+      "name": "Kerry Woollen Mills",
+      "quote": "Die Kerry Woollen Mills sind Zeugen der Textilindustrie.",
+      "english": "The Kerry Woollen Mills are witnesses to the textile industry."
+    }
+  ],
+  "days": [
+    {
+      "title": "Heritage and Forts of the North",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "National Park Views and Valleys",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s8"
+      ]
+    },
+    {
+      "title": "Island and Coastal Excursions",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "854f237972f490ab40ca88111bcb33ded054f6a20bbdf752c33c4e9ce04b56a3"
+}

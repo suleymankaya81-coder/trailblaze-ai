@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Cuilcagh Mountains",
+      "quote": "Die Quelle des Shannon liegt 76 m ü.d.M in den Cuilcagh Mountains im County Cavan im Nordwesten des Landes.",
+      "english": "The source of the Shannon lies 76 m above sea level in the Cuilcagh Mountains in County Cavan in the northwest of the country."
+    },
+    {
+      "id": "s2",
+      "name": "Shannon Pot",
+      "quote": "Von hier aus fließt er zunächst durch ein unterirdisches Höhlensystem und kommt als Shannon Pot wieder an die Oberfläche.",
+      "english": "From here it first flows through an underground cave system and returns to the surface as Shannon Pot."
+    },
+    {
+      "id": "s3",
+      "name": "Lough Allen",
+      "quote": "Die größten von ihnen sind Lough Allen, Lough Ree und Lough Derg.",
+      "english": "The largest of them are Lough Allen, Lough Ree and Lough Derg."
+    },
+    {
+      "id": "s4",
+      "name": "Lough Ree",
+      "quote": "Der Royal Canal zweigt nördlich des Lough Ree vom Shannon ab und führt bis nach Dublin.",
+      "english": "The Royal Canal branches off from the Shannon north of Lough Ree and leads to Dublin."
+    },
+    {
+      "id": "s5",
+      "name": "Lecarrow",
+      "quote": "Den Lough Ree verbindet der Lecarrow Canal mit dem Dorf Lecarrow.",
+      "english": "The Lecarrow Canal connects Lough Ree with the village of Lecarrow."
+    },
+    {
+      "id": "s6",
+      "name": "Shannon Harbour",
+      "quote": "Weiter südlich verbindet der Grand Canal ab Shannon Harbour (bei Banagher) den Shannon mit dem River Barrow und führt ebenfalls bis Dublin.",
+      "english": "Further south, the Grand Canal connects the Shannon from Shannon Harbour (near Banagher) with the River Barrow and also leads to Dublin."
+    },
+    {
+      "id": "s7",
+      "name": "Lough Derg",
+      "quote": "Die größten von ihnen sind Lough Allen, Lough Ree und Lough Derg.",
+      "english": "The largest of them are Lough Allen, Lough Ree and Lough Derg."
+    },
+    {
+      "id": "s8",
+      "name": "Kilrush",
+      "quote": "Der Hafen von Kilrush an der Mündung des Shannon beherbergt den größten Yachthafen der irischen Westküste mit 120 Liegeplätzen.",
+      "english": "The port of Kilrush at the mouth of the Shannon is home to the largest marina on the Irish west coast with 120 berths."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Source and Lakes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Central Canals and Villages",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Southern Waters and Estuary",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "b5e364032b24dc70e87d92d3860f2f28fdbb5ea41d9c55783cae737584788c42"
+}

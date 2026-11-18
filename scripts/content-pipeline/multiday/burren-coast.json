@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Corcomroe Abbey",
+      "quote": "König Donal Mor O’Brien gründete 1182 die Corcomroe Abbey oder Saint Mary of the Fertile Rock, auch Abbey of Burren genannt.",
+      "english": "King Donal Mor O’Brien founded Corcomroe Abbey, also called Saint Mary of the Fertile Rock or Abbey of Burren, in 1182."
+    },
+    {
+      "id": "s2",
+      "name": "Burren-Nationalpark",
+      "quote": "1991 wurde auf 1150 ha der Burren-Nationalpark eingerichtet.",
+      "english": "In 1991, the Burren National Park was established on 1150 hectares."
+    },
+    {
+      "id": "s3",
+      "name": "Aillwee Cave",
+      "quote": "Südlich von Ballyvaughan kann die Tropfsteinhöhle Aillwee Cave (Bärenhöhle) besichtigt werden.",
+      "english": "South of Ballyvaughan, the dripstone cave Aillwee Cave (Bear Cave) can be visited."
+    },
+    {
+      "id": "s4",
+      "name": "Caherconnell",
+      "quote": "Hier konzentrieren sich viele Duns oder Ringforts, darunter Ballyallaban, Ballykinvarga, Caheranardurrish, Cahermore, das restaurierte Caherconnell, Cahermacnaughten, wo die irischen Brehon Laws (Richtergesetze) aufgezeichnet wurden, Caherminnaun, Fanygalvan und Cahermackirilla und das dreifach umwallte Promontory Fort Cahercommaun.",
+      "english": "Many duns or ringforts are concentrated here, including Ballyallaban, Ballykinvarga, Caheranardurrish, Cahermore, the restored Caherconnell, Cahermacnaughten, where the Irish Brehon Laws (judges' laws) were recorded, Caherminnaun, Fanygalvan and Cahermackirilla, and the triple-walled promontory fort Cahercommaun."
+    },
+    {
+      "id": "s5",
+      "name": "Leamaneh",
+      "quote": "Ruinen von Castles (Leamaneh, Newtown Castle), alten Kirchen und Klöstern (Carran Church, Kirchen von Oughtmama, Corcomroe Abbey, Kirche von Drumcreehy, Temple Cronan) und Keltenkreuze sind zu sehen.",
+      "english": "Ruins of castles (Leamaneh, Newtown Castle), old churches and monasteries (Carran Church, churches of Oughtmama, Corcomroe Abbey, Church of Drumcreehy, Temple Cronan) and Celtic crosses can be seen."
+    },
+    {
+      "id": "s6",
+      "name": "Poulnabrone-Dolmen",
+      "quote": "Weltbekannt ist der Poulnabrone-Dolmen.",
+      "english": "The Poulnabrone Dolmen is world-famous."
+    },
+    {
+      "id": "s7",
+      "name": "Glencurran Cave",
+      "quote": "Die im Burren gefundene Halskette der Glencurran Cave stammt aus jener Zeit.",
+      "english": "The necklace found in the Burren's Glencurran Cave dates from that time."
+    },
+    {
+      "id": "s8",
+      "name": "Caher Valley",
+      "quote": "Die Oberfläche des Burren ist – abgesehen vom Caher Valley – durch etwa knietiefe Karren in rechteckige Felder gegliedert.",
+      "english": "The surface of the Burren—apart from the Caher Valley—is divided into rectangular fields by approximately knee-deep grikes."
+    },
+    {
+      "id": "s9",
+      "name": "Newtown Castle",
+      "quote": "Ruinen von Castles (Leamaneh, Newtown Castle), alten Kirchen und Klöstern (Carran Church, Kirchen von Oughtmama, Corcomroe Abbey, Kirche von Drumcreehy, Temple Cronan) und Keltenkreuze sind zu sehen.",
+      "english": "Ruins of castles (Leamaneh, Newtown Castle), old churches and monasteries (Carran Church, churches of Oughtmama, Corcomroe Abbey, Church of Drumcreehy, Temple Cronan) and Celtic crosses can be seen."
+    },
+    {
+      "id": "s10",
+      "name": "Temple Cronan",
+      "quote": "Ruinen von Castles (Leamaneh, Newtown Castle), alten Kirchen und Klöstern (Carran Church, Kirchen von Oughtmama, Corcomroe Abbey, Kirche von Drumcreehy, Temple Cronan) und Keltenkreuze sind zu sehen.",
+      "english": "Ruins of castles (Leamaneh, Newtown Castle), old churches and monasteries (Carran Church, churches of Oughtmama, Corcomroe Abbey, Church of Drumcreehy, Temple Cronan) and Celtic crosses can be seen."
+    }
+  ],
+  "days": [
+    {
+      "title": "National Park and Caves",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Abbeys and Ancient Forts",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s10"
+      ]
+    },
+    {
+      "title": "Castles and Megalithic Tombs",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "4a4f43e3286f9278f54d65efa368b1b2918cee837d16d3847fa691dff71e7ab0"
+}

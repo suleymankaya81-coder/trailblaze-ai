@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Fanad Head",
+      "quote": "Ihr nördlichster Punkt ist der von einem Leuchtturm geschmückte Fanad Head.",
+      "english": "Its northernmost point is Fanad Head, which is adorned with a lighthouse."
+    },
+    {
+      "id": "s2",
+      "name": "Knockalla Mountain",
+      "quote": "Die höchste Erhebung auf Fanad ist der Knockalla Mountain mit 363 Metern.",
+      "english": "The highest elevation on Fanad is Knockalla Mountain at 363 meters."
+    },
+    {
+      "id": "s3",
+      "name": "Stocker Strand",
+      "quote": "Südlich des Seebades Portsalon liegt der Stocker Strand, einer der schönsten Strände Europas.",
+      "english": "South of the seaside resort of Portsalon lies Stocker Strand, one of the most beautiful beaches in Europe."
+    },
+    {
+      "id": "s4",
+      "name": "Fanad Drive",
+      "quote": "Der Fanad Drive ist eine schöne Rundtour auf den schmalen Sträßchen der Halbinsel.",
+      "english": "The Fanad Drive is a beautiful circular tour on the narrow roads of the peninsula."
+    },
+    {
+      "id": "s5",
+      "name": "Court Tomb von Crevary Upper",
+      "quote": "Court Tomb von Crevary Upper",
+      "english": "Court Tomb of Crevary Upper"
+    },
+    {
+      "id": "s6",
+      "name": "Seven Arches",
+      "quote": "Seven Arches, ein vom Meer ausgespülter Felsbogen",
+      "english": "Seven Arches, a rock arch hollowed out by the sea"
+    },
+    {
+      "id": "s7",
+      "name": "Felsen von Doagh Beg",
+      "quote": "Die Felsen von Doagh Beg",
+      "english": "The rocks of Doagh Beg"
+    },
+    {
+      "id": "s8",
+      "name": "Drumhallagh Cross",
+      "quote": "Drumhallagh Cross, ein 5 km vor Rathmullan gelegenes Hochkreuz",
+      "english": "Drumhallagh Cross, a high cross located 5 km before Rathmullan"
+    },
+    {
+      "id": "s9",
+      "name": "Karmeliterkloster von Rathmullan",
+      "quote": "Das ehemalige Karmeliterkloster von Rathmullan",
+      "english": "The former Carmelite monastery of Rathmullan"
+    },
+    {
+      "id": "s10",
+      "name": "Knockalla Fort",
+      "quote": "Knockalla Fort, eine im 19. Jahrhundert errichtete Burg bei Carrowkeel",
+      "english": "Knockalla Fort, a castle built in the 19th century near Carrowkeel"
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Coast and Scenic Driving",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Mountains, Fortifications and Beaches",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s10"
+      ]
+    },
+    {
+      "title": "Ancient Heritage and Rathmullan Sights",
+      "stop_ids": [
+        "s5",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "b7080b111b76a27af63364085b8b3067c959a2c2dda499c15ffdd51caebcce58"
+}

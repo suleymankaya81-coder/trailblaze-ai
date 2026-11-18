@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Ballycroy",
+      "quote": "Ein Besucherzentrum, finanziert von der irischen Regierung, liegt in Ballycroy.",
+      "english": "A visitor centre, funded by the Irish government, is located in Ballycroy."
+    },
+    {
+      "id": "s2",
+      "name": "Besucherzentrum",
+      "quote": "Das 700 m² große Gebäude soll die öffentliche Anerkennung des Parks und seiner Landschaft bestärken.",
+      "english": "The 700 m² building is intended to strengthen public appreciation of the park and its landscape."
+    },
+    {
+      "id": "s3",
+      "name": "Owenduff",
+      "quote": "Auch der Fluss Owenduff wird erhalten, da er der einzige Fluss in Westeuropa ist, der einem verhältnismäßig intaktem und umfangreichem Sumpfsystem einen Abfluss bietet.",
+      "english": "The Owenduff River is also being preserved, as it is the only river in Western Europe that provides drainage for a relatively intact and extensive bog system."
+    },
+    {
+      "id": "s4",
+      "name": "Wild Nephin",
+      "quote": "Wild Nephin ist eines der größten noch erhaltenen Sumpfgebiete Westeuropas.",
+      "english": "Wild Nephin is one of the largest remaining bog areas in Western Europe."
+    }
+  ],
+  "days": [
+    {
+      "title": "Ballycroy Hub and Owenduff River",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "5e8353ed52d3af554ff4332762a8f9d619c9ff859276898028469cc21cf1c073"
+}

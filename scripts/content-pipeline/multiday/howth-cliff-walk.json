@@ -1,0 +1,52 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Ireland’s Eye",
+      "quote": "Nördlich von Howth, nahe der Küste, befindet sich eine kleine Insel namens Ireland’s Eye.",
+      "english": "North of Howth, near the coast, is a small island called Ireland's Eye."
+    },
+    {
+      "id": "s2",
+      "name": "Aideen’s Grave",
+      "quote": "Aideen’s Grave (oder Finn mac Cools Quoit) ist der Name eines vorzeitlichen Portal Tombs auf Howth Head.",
+      "english": "Aideen’s Grave (or Finn mac Cools Quoit) is the name of a prehistoric portal tomb on Howth Head."
+    },
+    {
+      "id": "s3",
+      "name": "Howth Head",
+      "quote": "Howth liegt etwas östlich von Dublin, im nördlichen Teil der Halbinsel Howth Head, und ist mit dem nahen Sutton über einen Isthmus verbunden.",
+      "english": "Howth is located slightly east of Dublin, in the northern part of the Howth Head peninsula, and is connected to nearby Sutton via an isthmus."
+    },
+    {
+      "id": "s4",
+      "name": "Hafen von Howth",
+      "quote": "Fotogalerie der Hafen von Howth",
+      "english": "Photo gallery of the Port of Howth"
+    },
+    {
+      "id": "s5",
+      "name": "Bull Island",
+      "quote": "Südlich liegt die 5,0 km lange und 800 m breite Insel Bull Island.",
+      "english": "To the south lies the 5.0 km long and 800 m wide Bull Island."
+    }
+  ],
+  "days": [
+    {
+      "title": "Coastal Landmarks and Islands",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Ancient Monuments",
+      "stop_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "_text_sha": "54ab65c25970c5d827cdbd760ce99a41b36c633fe45477b0c0c28f64fd9f73bb"
+}

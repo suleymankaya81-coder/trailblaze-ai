@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Südgipfel (South Peak)",
+      "quote": "Skellig Michael ist etwa 22 Hektar groß, der höchste Punkt liegt mit 217 Metern auf dem Südgipfel (South Peak).",
+      "english": "Skellig Michael is about 22 hectares in size, with the highest point at 217 meters on the South Peak."
+    },
+    {
+      "id": "s2",
+      "name": "Nordgipfel",
+      "quote": "In fast gleicher Höhe (ca. 180 m ASL), aber auf dem benachbarten Nordgipfel befindet sich die kleine ehemalige Mönchssiedlung, die über 618 Stufen einer Steintreppe ohne Geländer erreichbar ist.",
+      "english": "At almost the same height (approx. 180 m ASL), but on the neighboring North Peak, lies the small former monastic settlement, which can be reached via 618 steps of a stone staircase without railings."
+    },
+    {
+      "id": "s3",
+      "name": "Mönchssiedlung",
+      "quote": "1986 begann die Restaurierung der Mönchssiedlung, die 1996 auf die Liste des UNESCO-Weltkulturerbes gesetzt wurde.",
+      "english": "In 1986, the restoration of the monastic settlement began, which was added to the UNESCO World Heritage List in 1996."
+    },
+    {
+      "id": "s4",
+      "name": "beehive huts",
+      "quote": "Die Mönche lebten in kleinen Zellen, die sie als Steinhütten (in Irland beehive huts „Bienenkorbhütten“ genannt) oberhalb steil abfallender Klippen in traditionell irischer Trockenmauerbauweise ohne Mörtel errichteten.",
+      "english": "The monks lived in small cells built as stone huts (called beehive huts in Ireland) above steep cliffs using traditional Irish dry stone construction without mortar."
+    },
+    {
+      "id": "s5",
+      "name": "Zisternen",
+      "quote": "Die gesamte Anlage ist sehr spartanisch eingerichtet, Trinkwasser wurde in Zisternen gesammelt.",
+      "english": "The entire complex is very spartanly furnished; drinking water was collected in cisterns."
+    },
+    {
+      "id": "s6",
+      "name": "Gartenbeete",
+      "quote": "Auf der windabgewandten Seite des Felsens hatten die Mönche kleine Gartenbeete eingerichtet, in denen sie Gemüse und Kräuter zogen.",
+      "english": "On the leeward side of the rock, the monks had established small garden beds where they grew vegetables and herbs."
+    },
+    {
+      "id": "s7",
+      "name": "Einsiedelei",
+      "quote": "Auf dem besonders schroff abfallenden und für Touristen nicht zugänglichen Südgipfel befand sich eine kleine Einsiedelei.",
+      "english": "A small hermitage was located on the particularly steeply sloping South Peak, which is not accessible to tourists."
+    },
+    {
+      "id": "s8",
+      "name": "Kapelle",
+      "quote": "Gegen 1000 wurde eine neue Kapelle auf dem Gelände errichtet.",
+      "english": "Around 1000, a new chapel was built on the site."
+    },
+    {
+      "id": "s9",
+      "name": "Leuchttürme",
+      "quote": "1826 erhielt Skellig Michael zwei Leuchttürme, einer davon, der obere, wurde allerdings 1870 bereits wieder aufgegeben.",
+      "english": "In 1826 Skellig Michael received two lighthouses, one of which, the upper one, was abandoned as early as 1870."
+    },
+    {
+      "id": "s10",
+      "name": "Kai",
+      "quote": "Täglich pendeln Boote zwischen dem Festland und Skellig Michael, die interessierten Touristen den Besuch des Klosters ermöglichen, sofern es das Wetter zulässt, da das Anlegen und Aussteigen am felsigen Kai selbst bei ruhiger See nicht ungefährlich ist.",
+      "english": "Boats commute daily between the mainland and Skellig Michael, allowing interested tourists to visit the monastery if weather permits, as docking and disembarking at the rocky quay is not without danger even in calm seas."
+    }
+  ],
+  "days": [
+    {
+      "title": "Peaks and Monastic Settlement",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s10"
+      ]
+    },
+    {
+      "title": "Monastic Living and Infrastructure",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Spiritual Sites and Navigation",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "40a8fddb4536a772757b59f0efb38d4974e16ee274f5b072535c81d6d6a6d64b"
+}

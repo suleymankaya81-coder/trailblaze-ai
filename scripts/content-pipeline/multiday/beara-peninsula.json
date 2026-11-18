@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Dursey Island",
+      "quote": "An ihrem Ende liegt Dursey Island.",
+      "english": "At its end lies Dursey Island."
+    },
+    {
+      "id": "s2",
+      "name": "Castletownbere",
+      "quote": "Südlich vor der Beara-Halbinsel bei Castletownbere, dem größten Ort der Halbinsel, liegt Bere Island.",
+      "english": "To the south of the Beara Peninsula, near Castletownbere, the largest town on the peninsula, lies Bere Island."
+    },
+    {
+      "id": "s3",
+      "name": "Bere Island",
+      "quote": "Auf Bere-Island befinden sich zahlreiche militärische Befestigungen aus historischer Zeit.",
+      "english": "On Bere Island, there are numerous military fortifications from historical times."
+    },
+    {
+      "id": "s4",
+      "name": "Healy Pass",
+      "quote": "Zwischen Lauragh und Adrigole wird das Gebirge durch eine schmale Straße über den Healy Pass gequert.",
+      "english": "Between Lauragh and Adrigole, the mountains are crossed by a narrow road over the Healy Pass."
+    },
+    {
+      "id": "s5",
+      "name": "Glenmore Lake",
+      "quote": "Hier blickt man auf das Tal mit dem See Glenmore Lake, um den im Mai Rhododendronbüsche blühen.",
+      "english": "From here, one looks down onto the valley with the lake Glenmore Lake, around which rhododendron bushes bloom in May."
+    },
+    {
+      "id": "s6",
+      "name": "Felsen von Kilcatherine",
+      "quote": "Die Halbinsel ist nach der altirischen Fruchtbarkeitsgöttin Beara (Caillech Bhéarra) benannt und hat außer dem Felsen von Kilcatherine an der Nordküste, der der Göttin gewidmet ist, eine Ansammlung an prähistorischen Monumenten.",
+      "english": "The peninsula is named after the Old Irish fertility goddess Beara (Caillech Bhéarra) and features, in addition to the Rock of Kilcatherine on the north coast which is dedicated to the goddess, a collection of prehistoric monuments."
+    },
+    {
+      "id": "s7",
+      "name": "Ardgroom",
+      "quote": "Unter ihnen ragen die von Ardgroom, Derrintaggart West, Dromroe, Kenmare und Uragh heraus.",
+      "english": "Among them, those of Ardgroom, Derrintaggart West, Dromroe, Kenmare, and Uragh stand out."
+    }
+  ],
+  "days": [
+    {
+      "title": "Islands and Coastal Settlements",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Mountain Passes and Ancient Monuments",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "821f9e76a310f907ee0f1f348bd5bcba4dcf948fd148ade4c16d3c4d8286a34d"
+}

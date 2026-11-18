@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hag’s Head",
+      "quote": "Am Südende, dem Hag’s Head, haben sie eine Höhe von ungefähr 120 m, nördlich des O’Brien’s Tower erreichen sie sogar 214 m.",
+      "english": "At the southern end, the Hag’s Head, they have a height of about 120m, while north of O'Brien's Tower they even reach 214m."
+    },
+    {
+      "id": "s2",
+      "name": "O’Brien’s Tower",
+      "quote": "Der O’Brien’s Tower liegt etwa auf der Hälfte der Uferstrecke und entstand 1835 im Auftrag von Sir Cornellius O’Brien als Wachturm.",
+      "english": "O'Brien's Tower is located roughly halfway along the coastal stretch and was built in 1835 as a watchtower commissioned by Sir Cornelius O'Brien."
+    },
+    {
+      "id": "s3",
+      "name": "Goat Island",
+      "quote": "Die interessantesten sind die atlantischen Papageientaucher, die in großen Kolonien an isolierten Stellen des Kliffs und auf Goat Island leben.",
+      "english": "The most interesting are the Atlantic puffins, which live in large colonies in isolated parts of the cliff and on Goat Island."
+    },
+    {
+      "id": "s4",
+      "name": "Besucherzentrum",
+      "quote": "Am 8. Februar 2007 wurde das Besucherzentrum mit befestigten Gehwegen fertiggestellt.",
+      "english": "On February 8, 2007, the visitor center was completed with paved walkways."
+    },
+    {
+      "id": "s5",
+      "name": "Aussichtsplattform",
+      "quote": "Ein breit ausgebauter Weg lenkt die Touristenströme zunächst einen Hügel hinauf zu den Klippen bis hin zu einer Aussichtsplattform.",
+      "english": "A broadly developed path directs the flow of tourists first up a hill to the cliffs and on to a viewing platform."
+    },
+    {
+      "id": "s6",
+      "name": "Cliffs Coastal Walk",
+      "quote": "Mit Eröffnung des Cliffs Coastal Walk am 14. Juni 2013 entstand ein neuer Weg am Rande der Klippen, der auf dem bisher abgesperrten basierte.",
+      "english": "With the opening of the Cliffs Coastal Walk on June 14, 2013, a new path was created at the edge of the cliffs, which was based on the previously closed-off one."
+    },
+    {
+      "id": "s7",
+      "name": "Moher O’Ruan",
+      "quote": "Auf der Klippe nahe Hag’s Head an der Westküste des County Clare stand einst ein solches Steinfort, genannt Moher O’Ruan (irisch Mothar Uí Ruain, „O’Ruans zerfallenes Fort“).",
+      "english": "On the cliff near Hag's Head on the west coast of County Clare once stood such a stone fort, called Moher O'Ruan (Irish Mothar Uí Ruain, 'O'Ruan's ruined fort')."
+    }
+  ],
+  "days": [
+    {
+      "title": "Historical Landmarks and Wildlife",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Visitor Amenities and Views",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Coastal Hiking and Southern Point",
+      "stop_ids": [
+        "s1",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "36a2f1a58abeff163b98797c457de818d9dbe52ab1ed17fa6c562a49f2f34580"
+}

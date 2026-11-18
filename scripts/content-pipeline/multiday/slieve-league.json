@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Bunglass Point",
+      "quote": "Bunglass Point bietet einen Ausblick über die gesamten Klippen.",
+      "english": "Bunglass Point offers a view over the entire cliffs."
+    },
+    {
+      "id": "s2",
+      "name": "One Man’s Pass",
+      "quote": "Der bereits ab Teelin beschilderte One Man’s Pass ist Teil eines Fußwegs über den Kamm der Klippen weiter nach dem nördlich gelegenen Malin Beg.",
+      "english": "The One Man’s Pass, which is already signposted from Teelin, is part of a footpath over the ridge of the cliffs further to Malin Beg in the north."
+    },
+    {
+      "id": "s3",
+      "name": "Carrigan Head",
+      "quote": "Mit dem Auto fährt man von Teelin, einem kleinen Ort südöstlich der Klippen, über eine 4,5 km lange durchgehend zweispurige Straße zum Carrigan Head mit einem Parkplatz.",
+      "english": "By car, one drives from Teelin, a small town southeast of the cliffs, via a 4.5 km long continuous two-lane road to Carrigan Head with a parking lot."
+    },
+    {
+      "id": "s4",
+      "name": "Pilgrim’s Pass",
+      "quote": "Zu Fuß kann man von An Charraig aus den Pilgrim’s Pass (auch Old Man’s Pass) wählen, der hinter den Klippen zur Kapelle auf den Gipfel führt.",
+      "english": "On foot, one can choose the Pilgrim’s Pass (also Old Man’s Pass) from An Charraig, which leads behind the cliffs to the chapel on the summit."
+    },
+    {
+      "id": "s5",
+      "name": "Teelin",
+      "quote": "Im Sommer können ab Killybegs und Teelin Bootstouren zum Fuß der Klippen gebucht werden.",
+      "english": "In summer, boat tours to the foot of the cliffs can be booked from Killybegs and Teelin."
+    },
+    {
+      "id": "s6",
+      "name": "An Charraig",
+      "quote": "Der übliche Ausgangspunkt für den Weg zum Slieve League ist das Dorf An Charraig (englisch: Carrick) nordwestlich von Cill Charthaigh (englisch: Kilcar).",
+      "english": "The usual starting point for the path to Slieve League is the village of An Charraig (English: Carrick) northwest of Cill Charthaigh (English: Kilcar)."
+    },
+    {
+      "id": "s7",
+      "name": "Bienenkorbhütte",
+      "quote": "Oben auf der Klippe befinden sich, geschützt von einer halbkreisförmigen Steinmauer, eine verfallene Bienenkorbhütte sowie die Ruine einer Kapelle.",
+      "english": "At the top of the cliff, protected by a semi-circular stone wall, there is a ruined beehive hut as well as the ruins of a chapel."
+    }
+  ],
+  "days": [
+    {
+      "title": "Coastal Viewpoints and Lower Access",
+      "stop_ids": [
+        "s3",
+        "s1",
+        "s5"
+      ]
+    },
+    {
+      "title": "Summit Hiking and Historic Ruins",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "284ee04eb863eed9cb8ed6b8f70e9bdeab83f2408612dcfc560a49a5e33523c3"
+}

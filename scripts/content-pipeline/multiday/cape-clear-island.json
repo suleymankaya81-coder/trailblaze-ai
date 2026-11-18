@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Nordhafen",
+      "quote": "Ihr Nordhafen ist von Baltimore oder von Schull auf der Mizen-Halbinsel aus per Boot zu erreichen.",
+      "english": "Its North Harbor can be reached by boat from Baltimore or from Schull on the Mizen Peninsula."
+    },
+    {
+      "id": "s2",
+      "name": "Südhafen",
+      "quote": "Der Südhafen ist Liegeplatz für Jachten.",
+      "english": "The South Harbor is a berth for yachts."
+    },
+    {
+      "id": "s3",
+      "name": "O’Driscoll Castle",
+      "quote": "das O’Driscoll Castle von 1200 n. Chr.",
+      "english": "the O’Driscoll Castle from 1200 AD."
+    },
+    {
+      "id": "s4",
+      "name": "Dún an Óir",
+      "quote": "ein gut erhaltenes Ringfort Dún an Óir („Dun aus Gold“)",
+      "english": "a well-preserved ring fort Dún an Óir (\"Fort of Gold\")"
+    },
+    {
+      "id": "s5",
+      "name": "Cape Clear Museum",
+      "quote": "ein Stein mit Cup-and-Ring-Markierungen, heute im Cape Clear Museum",
+      "english": "a stone with cup-and-ring markings, today in the Cape Clear Museum"
+    },
+    {
+      "id": "s6",
+      "name": "Steinreihe von Comillane",
+      "quote": "die Steinreihe von Comillane, im Norden",
+      "english": "the stone row of Comillane, in the north"
+    },
+    {
+      "id": "s7",
+      "name": "Marriage stones",
+      "quote": "zwei Menhire als Steinpaar (die „Marriage stones“, einer als Lochstein), datiert auf 4000–2500 v. Chr.",
+      "english": "two menhirs as a pair of stones (the \"Marriage stones\", one as a holed stone), dated to 4000–2500 BC."
+    },
+    {
+      "id": "s8",
+      "name": "Vogelstation",
+      "quote": "Die Insel ist ein Vogelparadies und beherbergt eine Vogelstation.",
+      "english": "The island is a bird paradise and houses a bird station."
+    }
+  ],
+  "days": [
+    {
+      "title": "Harbors and Coastal History",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Megalithic Relics and Nature",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "19734ef9a3df98918bf857b463f31b9a1a34ef8066ed4c128103946d372f2157"
+}

@@ -285,7 +285,7 @@
 - [x] Pilot wave: 14 of 15 national parks published
 - [x] New Forest: individual official walk pages now establish six stops; corrected retained output saved as draft, awaiting final audit.
 - [ ] UK price benchmarks (currently "Check live price")
-- [ ] Waves 2–5 (England, Scotland, Wales, Northern Ireland) after pilot approval
+- [x] Ireland: 105 published
 
 ## November 15 England reviewed batch
 - [x] Screen all 45 England source packets and New Forest; retain actual per-place evidence decisions, never auto-approve source fetch success.

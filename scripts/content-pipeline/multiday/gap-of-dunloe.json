@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Macgillycuddy’s Reeks",
+      "quote": "Das Gap of Dunloe (irisch Bearna an Choimín) ist ein tief eingeschnittenes, schmales Gebirgstal zwischen dem Gebirgszug der Macgillycuddy’s Reeks im Westen und dem Purple Mountain (irisch An Sliabh Corcra; 832 m) im Osten in der Region Dunloe (irisch Dún Lóich) in der Grafschaft Kerry im Südwesten der Republik Irland.",
+      "english": "The Gap of Dunloe (Irish Bearna an Choimín) is a deeply incised, narrow mountain valley between the Macgillycuddy’s Reeks mountain range to the west and Purple Mountain (Irish An Sliabh Corcra; 832 m) to the east in the Dunloe region (Irish Dún Lóich) in County Kerry in the southwest of the Republic of Ireland."
+    },
+    {
+      "id": "s2",
+      "name": "Purple Mountain",
+      "quote": "Das Gap of Dunloe (irisch Bearna an Choimín) ist ein tief eingeschnittenes, schmales Gebirgstal zwischen dem Gebirgszug der Macgillycuddy’s Reeks im Westen und dem Purple Mountain (irisch An Sliabh Corcra; 832 m) im Osten in der Region Dunloe (irisch Dún Lóich) in der Grafschaft Kerry im Südwesten der Republik Irland.",
+      "english": "The Gap of Dunloe (Irish Bearna an Choimín) is a deeply incised, narrow mountain valley between the Macgillycuddy’s Reeks mountain range to the west and Purple Mountain (Irish An Sliabh Corcra; 832 m) to the east in the Dunloe region (Irish Dún Lóich) in County Kerry in the southwest of the Republic of Ireland."
+    },
+    {
+      "id": "s3",
+      "name": "Loe",
+      "quote": "Durch das Tal, das von Norden nach Süden eine Länge von etwa 11 km hat, fließt in nördlicher Richtung der Fluss Loe, der auf dieser Strecke fünf Seen speist: Black Lough, Auger Lake, Cushnavally Lake, Black Lake und Coosaun Lough.",
+      "english": "Through the valley, which has a length of about 11 km from north to south, the river Loe flows in a northerly direction, feeding five lakes along this route: Black Lough, Auger Lake, Cushnavally Lake, Black Lake and Coosaun Lough."
+    },
+    {
+      "id": "s4",
+      "name": "Black Lough",
+      "quote": "Durch das Tal, das von Norden nach Süden eine Länge von etwa 11 km hat, fließt in nördlicher Richtung der Fluss Loe, der auf dieser Strecke fünf Seen speist: Black Lough, Auger Lake, Cushnavally Lake, Black Lake und Coosaun Lough.",
+      "english": "Through the valley, which has a length of about 11 km from north to south, the river Loe flows in a northerly direction, feeding five lakes along this route: Black Lough, Auger Lake, Cushnavally Lake, Black Lake and Coosaun Lough."
+    },
+    {
+      "id": "s5",
+      "name": "Auger Lake",
+      "quote": "Durch das Tal, das von Norden nach Süden eine Länge von etwa 11 km hat, fließt in nördlicher Richtung der Fluss Loe, der auf dieser Strecke fünf Seen speist: Black Lough, Auger Lake, Cushnavally Lake, Black Lake und Coosaun Lough.",
+      "english": "Through the valley, which has a length of about 11 km from north to south, the river Loe flows in a northerly direction, feeding five lakes along this route: Black Lough, Auger Lake, Cushnavally Lake, Black Lake and Coosaun Lough."
+    },
+    {
+      "id": "s6",
+      "name": "Wishing Bridge",
+      "quote": "Zwischen den letztgenannten beiden Seen spannt sich eine alte Bogenbrücke (Wishing Bridge).",
+      "english": "An old arched bridge (Wishing Bridge) spans between the last two mentioned lakes."
+    },
+    {
+      "id": "s7",
+      "name": "Gearhameen River",
+      "quote": "Im Süden erreicht das Gap of Dunloe mit 241 Metern seine höchste Höhe und gleichermaßen den Talausgang nach Süden hinab zum Gearhameen River.",
+      "english": "In the south, the Gap of Dunloe reaches its highest elevation at 241 meters and likewise the valley exit to the south down to the Gearhameen River."
+    }
+  ],
+  "days": [
+    {
+      "title": "Mountain Peaks and River Source",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Central Valley Lakes and Bridges",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Southern Valley Exit",
+      "stop_ids": [
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "6dd678de500a89f9ebcd703c71972712bc1a54d162d9643ef860c8e7c3bf8b44"
+}

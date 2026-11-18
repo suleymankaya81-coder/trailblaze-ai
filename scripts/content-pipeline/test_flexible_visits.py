@@ -19,7 +19,7 @@ def item(days=1):
 
 class FlexibleVisitTests(unittest.TestCase):
     def test_dach_cover_only_does_not_require_supporting_photos(self):
-        for country in ('de', 'at', 'ch'):
+        for country in ('de', 'at', 'ch', 'nl', 'ie'):
             self.assertFalse(requires_activity_photos(country))
 
     def test_existing_uk_and_us_activity_photo_gates_remain(self):

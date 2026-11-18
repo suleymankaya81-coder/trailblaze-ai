@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Macgillycuddy’s Reeks",
+      "quote": "Er liegt im Südwesten der Insel im County Kerry und gehört zu den Macgillycuddy’s Reeks.",
+      "english": "It is located in the southwest of the island in County Kerry and belongs to the Macgillycuddy's Reeks."
+    },
+    {
+      "id": "s2",
+      "name": "Cronins Yard",
+      "quote": "Der Berg wird meist von Norden vom Wanderparkplatz Cronins Yard entlang Hag’s Glen und über die steile wasserführende Devil’s Ladder und dann über den Südost-Grat bestiegen.",
+      "english": "The mountain is usually climbed from the north from the Cronins Yard hiking car park along Hag's Glen and via the steep, water-bearing Devil's Ladder and then over the southeast ridge."
+    },
+    {
+      "id": "s3",
+      "name": "Hag’s Glen",
+      "quote": "Der Berg wird meist von Norden vom Wanderparkplatz Cronins Yard entlang Hag’s Glen und über die steile wasserführende Devil’s Ladder und dann über den Südost-Grat bestiegen.",
+      "english": "The mountain is usually climbed from the north from the Cronins Yard hiking car park along Hag's Glen and via the steep, water-bearing Devil's Ladder and then over the southeast ridge."
+    },
+    {
+      "id": "s4",
+      "name": "Devil’s Ladder",
+      "quote": "Trittsicherheit und gute Bergstiefel sind jedoch in der Devil’s Ladder angebracht.",
+      "english": "Sure-footedness and good mountain boots are, however, appropriate in the Devil's Ladder."
+    },
+    {
+      "id": "s5",
+      "name": "Brother O’Shea’s Gully",
+      "quote": "Ein schwieriger Anstieg \"Brother O’Shea’s Gully\" führt über den Nordwest-Grat bei dem zwei leichte Kletterstellen im I. Grad zu überwinden sind zum Gipfel.",
+      "english": "A difficult ascent \"Brother O’Shea's Gully\" leads via the northwest ridge, where two easy climbing sections of grade I must be overcome to reach the summit."
+    },
+    {
+      "id": "s6",
+      "name": "Howling Ridge",
+      "quote": "Howling Ridge gilt als eine der spektakulärsten und beliebtesten Kletterrouten des Landes.",
+      "english": "Howling Ridge is considered one of the most spectacular and popular climbing routes in the country."
+    },
+    {
+      "id": "s7",
+      "name": "Heavenly Gates",
+      "quote": "Die Route Howling Ridge beginnt an einem hoch gelegenen Aussichtspunkt, der als „Heavenly Gates“ (Himmelspforte) bezeichnet wird.",
+      "english": "The Howling Ridge route begins at a high-elevation viewpoint referred to as the \"Heavenly Gates\"."
+    },
+    {
+      "id": "s8",
+      "name": "Collins’ Gully",
+      "quote": "Links davon, getrennt durch Collins’ Gully, liegt Pipets Ridge und rechts davon Primroses Ridge.",
+      "english": "To the left of it, separated by Collins' Gully, lies Pipets Ridge and to the right of it Primroses Ridge."
+    },
+    {
+      "id": "s9",
+      "name": "Pipets Ridge",
+      "quote": "Links davon, getrennt durch Collins’ Gully, liegt Pipets Ridge und rechts davon Primroses Ridge.",
+      "english": "To the left of it, separated by Collins' Gully, lies Pipets Ridge and to the right of it Primroses Ridge."
+    },
+    {
+      "id": "s10",
+      "name": "Primroses Ridge",
+      "quote": "Links davon, getrennt durch Collins’ Gully, liegt Pipets Ridge und rechts davon Primroses Ridge.",
+      "english": "To the left of it, separated by Collins' Gully, lies Pipets Ridge and to the right of it Primroses Ridge."
+    }
+  ],
+  "days": [
+    {
+      "title": "Classic Ascent from the North",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Rugged Ridges and Gully Routes",
+      "stop_ids": [
+        "s5",
+        "s8",
+        "s9",
+        "s10"
+      ]
+    },
+    {
+      "title": "Spectacular High Altitude Vistas",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "8645747631fad88d31b0df9838c35d3d3f60255fe33c52548feca0e1511ef430"
+}

@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Klostersiedlung",
+      "quote": "Es ist bekannt für seine Klostersiedlung – eine der berühmtesten der Insel Irland – am unteren der beiden Seen.",
+      "english": "It is known for its monastic settlement – one of the most famous on the island of Ireland – at the lower of the two lakes."
+    },
+    {
+      "id": "s2",
+      "name": "Rundturm",
+      "quote": "Das auffälligste Monument der verstreuten Klosteranlagen ist der 33 Meter hohe Rundturm, welcher um 1066 während der Wikingerinvasionen errichtet wurde, um die religiösen Reliquien, Bücher und Kelche zu schützen.",
+      "english": "The most striking monument of the scattered monastic sites is the 33-meter high round tower, which was built around 1066 during the Viking invasions to protect religious relics, books and chalices."
+    },
+    {
+      "id": "s3",
+      "name": "St. Kevin’s Church",
+      "quote": "Die gedrungene Kapelle St. Kevin’s Church aus dem 11. Jahrhundert erhielt wegen des an einen Kamin erinnernden Turms auch die Bezeichnung St. Kevin’s Kitchen.",
+      "english": "The compact 11th-century chapel St. Kevin’s Church was also given the name St. Kevin’s Kitchen because of the tower resembling a chimney."
+    },
+    {
+      "id": "s4",
+      "name": "St. Kevin’s Cross",
+      "quote": "Auch ein Keltenkreuz, St. Kevin’s Cross, kann besichtigt werden.",
+      "english": "A Celtic cross, St. Kevin’s Cross, can also be visited."
+    },
+    {
+      "id": "s5",
+      "name": "Überreste eines Bergbaubetriebes",
+      "quote": "In Ufernähe des zweiten Sees befinden sich einige weitere Gebäudereste aus der Gründerzeit des Klosters sowie die Überreste eines Bergbaubetriebes.",
+      "english": "Near the shore of the second lake are several other building remains from the founding period of the monastery as well as the remains of a mining operation."
+    },
+    {
+      "id": "s6",
+      "name": "Glendalough Visitor Center",
+      "quote": "Das Glendalough Visitor Center bietet Besuchern umfangreiche Informationen zur Geschichte des Klosters.",
+      "english": "The Glendalough Visitor Center offers visitors extensive information on the history of the monastery."
+    },
+    {
+      "id": "s7",
+      "name": "Wanderwege",
+      "quote": "Neben den historischen Sehenswürdigkeiten gibt es mehrere gut ausgeschilderte Wanderwege.",
+      "english": "In addition to the historical sights, there are several well-signposted hiking trails."
+    }
+  ],
+  "days": [
+    {
+      "title": "Monastic Heritage and Visitor Center",
+      "stop_ids": [
+        "s6",
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Lakeside Relics and Trails",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "031cdb43e723d6c004846dad0a34d6074ef5e881f4a42f61c42fafc378ee9205"
+}

@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Fauscoum",
+      "quote": "Der höchste Punkt mit 792 m ist zwar als Fauscoum bekannt; dieser Name taucht auf der offiziellen Karte des Ordnance Survey Ireland (OSI) nicht auf; hier ist lediglich ohne Name die Höhenangabe angegeben.",
+      "english": "The highest point at 792 m is known as Fauscoum; this name does not appear on the official map of the Ordnance Survey Ireland (OSI); here only the altitude is given without a name."
+    },
+    {
+      "id": "s2",
+      "name": "Coumfea",
+      "quote": "Ebenfalls haben die Nebengipfel des Coumfea keine eigene Bezeichnung.",
+      "english": "Likewise, the secondary peaks of Coumfea have no specific designation."
+    },
+    {
+      "id": "s3",
+      "name": "Mahon Falls",
+      "quote": "Mahon Falls (Easanna na Machan), ein 80 m hoher Wasserfall, der in Kaskaden vom Plateau in das Tal hinabstürzt.",
+      "english": "Mahon Falls (Easanna na Machan), an 80 m high waterfall that plunges in cascades from the plateau into the valley."
+    },
+    {
+      "id": "s4",
+      "name": "Coumshingaun",
+      "quote": "Coumshingaun (Loch Chom Seangán), ein während der letzten Eiszeit durch Erosion geformter See am Ende eines runden Tales in der Form eines Amphitheaters.",
+      "english": "Coumshingaun (Loch Chom Seangán), a lake formed by erosion during the last ice age at the end of a round valley in the shape of an amphitheater."
+    }
+  ],
+  "days": [
+    {
+      "title": "Peaks and Waters of the Comeraghs",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "934f21a467c44372c5bf514d0618820ee31bd6b2f09918c2e35f7889855231d4"
+}

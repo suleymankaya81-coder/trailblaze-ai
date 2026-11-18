@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Besucherzentrum",
+      "quote": "Es gibt ein Besucherzentrum und Museum.",
+      "english": "There is a visitor centre and museum."
+    },
+    {
+      "id": "s2",
+      "name": "Croaghmore",
+      "quote": "Der höchste Punkt der baumlosen Insel ist „Croaghmore“ mit 292 m.",
+      "english": "The highest point of the treeless island is “Croaghmore” at 292 m."
+    },
+    {
+      "id": "s3",
+      "name": "Sandstrand",
+      "quote": "Der von einem Felsriff geschützt gelegene Sandstrand am Ostende der Insel ist im Sommer jährlich wiederkehrend Gebärplatz für Seehunde.",
+      "english": "The sandy beach at the eastern end of the island, protected by a rocky reef, is an annually recurring birthing ground for seals in summer."
+    },
+    {
+      "id": "s4",
+      "name": "Siedlung",
+      "quote": "Am breiten und flachen Ostende der Insel befinden sich auf der Anhöhe über dem Sandstrand die Reste der ursprünglichen Siedlung.",
+      "english": "At the broad and flat eastern end of the island, the remains of the original settlement are located on the hill above the sandy beach."
+    },
+    {
+      "id": "s5",
+      "name": "Quelle",
+      "quote": "Eine Quelle versorgte die Siedlung mit Wasser.",
+      "english": "A spring supplied the settlement with water."
+    },
+    {
+      "id": "s6",
+      "name": "drei erhaltenen Häusern",
+      "quote": "In den drei erhaltenen Häusern können Übernachtungen gebucht werden.",
+      "english": "Overnight stays can be booked in the three preserved houses."
+    },
+    {
+      "id": "s7",
+      "name": "Ankerplatz",
+      "quote": "Segelschiffe finden am Strand von Great Blasket Island bei ruhigem Wetter einen guten Ankerplatz.",
+      "english": "Sailing ships find a good anchorage at the beach of Great Blasket Island in calm weather."
+    }
+  ],
+  "days": [
+    {
+      "title": "History and Facilities of Great Blasket",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s6"
+      ]
+    },
+    {
+      "title": "Natural Features and Peaks",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s5",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "50fb2b2da16917f46bad2f5716db9f5ba3930199f32740e4927a157ce43bafc1"
+}

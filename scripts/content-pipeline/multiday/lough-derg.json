@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Portumna",
+      "quote": "Der Zufluss des Shannon befindet sich bei Portumna, der Abfluss ist bei Killaloe.",
+      "english": "The Shannon's inflow is located at Portumna, while its outflow is at Killaloe."
+    },
+    {
+      "id": "s2",
+      "name": "Killaloe",
+      "quote": "Fotos von Killaloe/Ballina auf irland-photos.com",
+      "english": "Photos of Killaloe/Ballina on irland-photos.com"
+    },
+    {
+      "id": "s3",
+      "name": "Scariff–Youghal–Bay",
+      "quote": "Die größte Breite von 13 km misst der Lough mit seinen südlichen Ausläufern im Abschnitt der Scariff–Youghal–Bay.",
+      "english": "The lough measures its greatest width of 13 km with its southern foothills in the Scariff-Youghal Bay section."
+    },
+    {
+      "id": "s4",
+      "name": "Parkers Point",
+      "quote": "Die tiefste Stelle ist bei Parkers Point; dort fällt ein kleiner Graben bis auf 36 m ab.",
+      "english": "The deepest point is at Parkers Point; there, a small trench drops down to 36 m."
+    },
+    {
+      "id": "s5",
+      "name": "Dromineer",
+      "quote": "Am Ostufer, in der Nähe des Dorfes Dromineer, mündet der River Nenagh in den See.",
+      "english": "On the eastern shore, near the village of Dromineer, the River Nenagh flows into the lake."
+    },
+    {
+      "id": "s6",
+      "name": "Illaunmore",
+      "quote": "Die mit 0,61 km² größte Insel heißt Illaunmore.",
+      "english": "The largest island, measuring 0.61 km², is called Illaunmore."
+    },
+    {
+      "id": "s7",
+      "name": "Holy Island",
+      "quote": "Die bekannteste ist Holy Island, irisch Inis Cealtra; auf ihr stehen die Ruinen einer Abtei, aus dem 7. Jahrhundert, ein Bullaun und ein Rundturm.",
+      "english": "The most famous is Holy Island, Irish Inis Cealtra; on it stand the ruins of an abbey from the 7th century, a bullaun, and a round tower."
+    }
+  ],
+  "days": [
+    {
+      "title": "North and East Shores",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "South and West Bays",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "0e8b38a4d6c83b5152556036e2740bcc625466d10244377f0561011f0d917061"
+}

@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Slieve Mish Mountains",
+      "quote": "Die Stadt befindet sich am Fuß einer alten Straße, die über die Slieve Mish Mountains nach Süden führt.",
+      "english": "The city is located at the foot of an old road that leads south over the Slieve Mish Mountains."
+    },
+    {
+      "id": "s2",
+      "name": "Scotia’s Grave",
+      "quote": "Auf diesem alten Weg befindet sich ein großer Felsblock, der manchmal Scotia’s Grave genannt wird und angeblich die Grabstätte der Tochter eines ägyptischen Pharaos ist.",
+      "english": "On this old path is a large boulder, sometimes called Scotia's Grave, which is said to be the burial place of the daughter of an Egyptian pharaoh."
+    },
+    {
+      "id": "s3",
+      "name": "Tralee Castle",
+      "quote": "Anglo-Normannen gründeten die Stadt im 13. Jahrhundert, die zu einer Hochburg der Earls of Desmond wurde, die Tralee Castle erbauten.",
+      "english": "Anglo-Normans founded the city in the 13th century, which became a stronghold of the Earls of Desmond, who built Tralee Castle."
+    },
+    {
+      "id": "s4",
+      "name": "Ashe Memorial Hall",
+      "quote": "Die Ashe Memorial Hall wurde 1928 am Ende der Denny Street erbaut; sie ist dem Andenken an Thomas Ashe gewidmet, einen Offizier der Irish Volunteers im Osteraufstand von 1916.",
+      "english": "The Ashe Memorial Hall was built in 1928 at the end of Denny Street; it is dedicated to the memory of Thomas Ashe, an officer of the Irish Volunteers in the 1916 Easter Rising."
+    },
+    {
+      "id": "s5",
+      "name": "Kerry County Museum",
+      "quote": "Seit 1992 beherbergt es das Kerry County Museum, das eine Rekonstruktion von Tralee aus dem Jahr 1450, also vor der Kolonisierung, zeigt.",
+      "english": "Since 1992 it has housed the Kerry County Museum, which shows a reconstruction of Tralee from 1450, i.e. before colonization."
+    },
+    {
+      "id": "s6",
+      "name": "Bahnhof von Tralee",
+      "quote": "Der Bahnhof von Tralee ist der Endpunkt einer Strecke von Dublin.",
+      "english": "The Tralee railway station is the terminus of a route from Dublin."
+    },
+    {
+      "id": "s7",
+      "name": "Siamsa Tíre",
+      "quote": "Ein weiterer Höhepunkt ist das Kerry County Museum in der Ashe Memorial Hall sowie das nationale Folkloretheater Siamsa Tíre.",
+      "english": "Another highlight is the Kerry County Museum in the Ashe Memorial Hall as well as the national folklore theater Siamsa Tíre."
+    }
+  ],
+  "days": [
+    {
+      "title": "Town Center Culture and History",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s7"
+      ]
+    },
+    {
+      "title": "Ancient Paths and Landmarks",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Castles and Connections",
+      "stop_ids": [
+        "s3",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "697701fbc4adee33e80b1ce2cea563d44ce9d2ef689693e663a504d318b33cd6"
+}

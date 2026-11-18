@@ -40,6 +40,7 @@ export const COUNTRIES: Record<string, { name: string; nameDe: string }> = {
   dk: { name: "Denmark", nameDe: "Dänemark" },
   nl: { name: "Netherlands", nameDe: "Niederlande" },
   be: { name: "Belgium", nameDe: "Belgien" },
+  ie: { name: "Ireland", nameDe: "Irland" },
 };
 
 export function slugifyRegion(name: string): string {

@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Glendalough",
+      "quote": "Er liegt im Herzen der größtenteils im Paläozoikum während der kaledonischen Gebirgsfaltung entstandenen Wicklow Mountains im County Wicklow im Osten Irlands mit einem Besucherzentrum bei Glendalough, das mit „Tal der zwei Seen“ übersetzt werden kann.",
+      "english": "It lies in the heart of the Wicklow Mountains in County Wicklow in eastern Ireland, which were largely formed during the Caledonian orogeny in the Paleozoic era, with a visitor center at Glendalough, which can be translated as \"Valley of the Two Lakes.\""
+    },
+    {
+      "id": "s2",
+      "name": "Lower Lake",
+      "quote": "Es handelt sich bei der Ansammlung von Klosterruinen aus dem 6. Jahrhundert am Lower Lake um eine der berühmtesten auf der Insel.",
+      "english": "The collection of 6th-century monastic ruins at the Lower Lake is one of the most famous on the island."
+    },
+    {
+      "id": "s3",
+      "name": "Derrybawn Mountain",
+      "quote": "Er steht südlich von St. Kevin’s Church am Fuße des Derrybawn Mountain (Sliabh Dhoire Bán), neben dem Glenealo River.",
+      "english": "It stands south of St. Kevin's Church at the foot of Derrybawn Mountain (Sliabh Dhoire Bán), next to the Glenealo River."
+    },
+    {
+      "id": "s4",
+      "name": "Ballinabrocky",
+      "quote": "Unter den zahlreichen „Fulachta Fia“ ragt der Burnt Mound von Ballinabrocky (Buaile na Brocaí) am westlichen Rand des Parks heraus.",
+      "english": "Among the numerous \"Fulachta Fia,\" the burnt mound of Ballinabrocky (Buaile na Brocaí) on the western edge of the park stands out."
+    },
+    {
+      "id": "s5",
+      "name": "Upper Lake",
+      "quote": "Das archäologische Denkmal liegt neben dem Upper Lake.",
+      "english": "The archaeological monument is located next to the Upper Lake."
+    },
+    {
+      "id": "s6",
+      "name": "Reefert Church",
+      "quote": "Die Überreste der Reefert Church (Teampall Rífhearta) liegen in einem Waldgebiet am südöstlichen Ufer des Upper Lake.",
+      "english": "The remains of Reefert Church (Teampall Rífhearta) are located in a wooded area on the southeastern shore of the Upper Lake."
+    },
+    {
+      "id": "s7",
+      "name": "St. Kevin’s Bed",
+      "quote": "St. Kevins Bett ist eine winzige Höhle deren Eingang etwa acht Meter über dem See, in einer Felswand östlich Templenaskelligs liegt.",
+      "english": "St. Kevin's Bed is a tiny cave whose entrance is about eight meters above the lake, in a cliff face east of Templenaskellig."
+    },
+    {
+      "id": "s8",
+      "name": "Templenaskellig",
+      "quote": "Die Ruinen der kleinen Kirche Templenaskellig (Teampall na Sceilge) liegen am Fuß der Klippen am südlichen Ufer des Upper Lake.",
+      "english": "The ruins of the small church Templenaskellig (Teampall na Sceilge) lie at the foot of the cliffs on the southern shore of the Upper Lake."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glendalough Monastic Valley",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Upper Lake Shores",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Western Park Boundary",
+      "stop_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "9f8a5b041366a9f822ecf95af4dacb615bbcbdcdf3bb1607de20698e929425dc"
+}

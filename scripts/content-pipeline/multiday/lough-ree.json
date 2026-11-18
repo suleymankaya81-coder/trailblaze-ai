@@ -1,0 +1,59 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Athlone",
+      "quote": "Erreichbar ist der Lough Ree von Athlone am Südende des Sees aus, wo sich ein Hafen befindet, der zum See führt.",
+      "english": "Lough Ree is accessible from Athlone at the southern end of the lake, where there is a harbor leading to the lake."
+    },
+    {
+      "id": "s2",
+      "name": "Lanesborough",
+      "quote": "Am Nordende des Sees liegt der kleine Ort Lanesborough.",
+      "english": "At the northern end of the lake lies the small town of Lanesborough."
+    },
+    {
+      "id": "s3",
+      "name": "Inchcleraun",
+      "quote": "Im nördlichen Teil des Lough Ree liegt die Insel Inchcleraun (irisch Inis Cloithrinn), auf der sich die Überreste eines frühchristlichen Klosters sowie Kirchen befinden.",
+      "english": "In the northern part of Lough Ree lies the island of Inchcleraun (Irish Inis Cloithrinn), on which the remains of an early Christian monastery and churches are located."
+    },
+    {
+      "id": "s4",
+      "name": "Rindoon",
+      "quote": "Etwa in der Mitte der Westseite des Lough Ree an dessen Engstelle zwischen dem nördlichen und südlichen See liegt Rindoon, eine geschichtsträchtige Halbinsel.",
+      "english": "Approximately in the middle of the western side of Lough Ree, at its narrow point between the northern and southern lake, lies Rindoon, a peninsula steeped in history."
+    },
+    {
+      "id": "s5",
+      "name": "mushroom stones",
+      "quote": "In der Umgebung des Sees finden sich viele sogenannte mushroom stones, das sind pilzförmige Kalksteinformationen, die durch Ausspülung durch das Wasser entstanden sind.",
+      "english": "In the vicinity of the lake, many so-called mushroom stones are found; these are mushroom-shaped limestone formations created by water erosion."
+    },
+    {
+      "id": "s6",
+      "name": "Saints Island",
+      "quote": "Saints Island liegt westlich von Ballymahon im Ostarm des Lough Ree im County Longford.",
+      "english": "Saints Island is located west of Ballymahon in the eastern arm of Lough Ree in County Longford."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Isles and Shorelines",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "Southern Ports and Geological Formations",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "bd8bb58fe86334659393dacced435d7ae3ef1ebad4ada29fb94960f97d258991"
+}

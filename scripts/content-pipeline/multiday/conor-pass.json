@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Passhöhe",
+      "quote": "Auf der Passhöhe liegt ein Parkplatz, von dem aus man einen Blick nach Norden in Richtung Brandon Bay und Mount Brandon hat.",
+      "english": "At the summit of the pass is a parking lot from which one has a view to the north towards Brandon Bay and Mount Brandon."
+    },
+    {
+      "id": "s2",
+      "name": "Brandon Bay",
+      "quote": "„Connor Pass und Brandon Bay“ auf heikostreich.de",
+      "english": "\"Connor Pass and Brandon Bay\" on heikostreich.de"
+    },
+    {
+      "id": "s3",
+      "name": "Mount Brandon",
+      "quote": "Auf der Passhöhe liegt ein Parkplatz, von dem aus man einen Blick nach Norden in Richtung Brandon Bay und Mount Brandon hat.",
+      "english": "At the summit of the pass is a parking lot from which one has a view to the north towards Brandon Bay and Mount Brandon."
+    },
+    {
+      "id": "s4",
+      "name": "Lough Adoon",
+      "quote": "Die Seen Lough Adoon, Lough Camclaun und Lough Doon, letzterer nur einen Kilometer vom Pass entfernt, nahe der Straße gelegen, mit einem kleinen Wasserfall, liegen in so genannten Corries (Karen).",
+      "english": "The lakes Lough Adoon, Lough Camclaun and Lough Doon, the latter only one kilometer from the pass, located near the road with a small waterfall, lie in so-called corries (cirques)."
+    },
+    {
+      "id": "s5",
+      "name": "Lough Camclaun",
+      "quote": "Die Seen Lough Adoon, Lough Camclaun und Lough Doon, letzterer nur einen Kilometer vom Pass entfernt, nahe der Straße gelegen, mit einem kleinen Wasserfall, liegen in so genannten Corries (Karen).",
+      "english": "The lakes Lough Adoon, Lough Camclaun and Lough Doon, the latter only one kilometer from the pass, located near the road with a small waterfall, lie in so-called corries (cirques)."
+    },
+    {
+      "id": "s6",
+      "name": "Lough Doon",
+      "quote": "Tatsächlich wurde 1849 am Lough Doon ein wichtiger Durchbruch beim Verständnis der Vergletscherung gemacht, als der alpine Bergsteiger John Ball (1818–1889) erkannte, dass die Corries von derselben Art sind wie die Kare der Schweiz.",
+      "english": "In fact, an important breakthrough in the understanding of glaciation was made at Lough Doon in 1849 when the alpine mountaineer John Ball (1818–1889) recognized that the corries are of the same type as the cirques of Switzerland."
+    },
+    {
+      "id": "s7",
+      "name": "Cloghane",
+      "quote": "Vom Ort Cloghane ausgehend sieht man eine schnurgerade Pilgerstraße, die an ihnen vorbeiführt.",
+      "english": "Starting from the village of Cloghane, one can see a straight-as-a-die pilgrim road that leads past them."
+    }
+  ],
+  "days": [
+    {
+      "title": "Pass Summit and Northern Views",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Glacial Lakes and Corries",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Pilgrim Ways and Valleys",
+      "stop_ids": [
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "7884ef7235e99f782f84e13cb2c3b88cbbb922f32b39663620e37551474917db"
+}

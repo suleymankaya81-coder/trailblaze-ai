@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Sheep’s Head",
+      "quote": "Zur Spitze von Sheep’s Head führt einer der wenigen ausgeschilderten Rundwanderwege in West Cork.",
+      "english": "One of the few signposted circular hiking trails in West Cork leads to the tip of Sheep’s Head."
+    },
+    {
+      "id": "s2",
+      "name": "Mount Gabriel",
+      "quote": "Mit 407 m Höhe ist der Mount Gabriel der größte Berg nicht nur auf der Mizen-Halbinsel, sondern auch in der ganzen Region östlich und südlich von Bantry.",
+      "english": "At 407 m high, Mount Gabriel is the largest mountain not only on the Mizen Peninsula, but also in the entire region east and south of Bantry."
+    },
+    {
+      "id": "s3",
+      "name": "Schull",
+      "quote": "Schull ist ein Seglerort, der im Sommer mit Festivals und Regatten lockt und seine Saison hat, die im einzigen Planetarium Irlands bis in die Nacht geht.",
+      "english": "Schull is a sailing town that attracts visitors in summer with festivals and regattas and has its season that goes on into the night in Ireland's only planetarium."
+    },
+    {
+      "id": "s4",
+      "name": "Crookhaven",
+      "quote": "Hier liegt der kleine Ort Crookhaven mit seinem geschützten Hafen.",
+      "english": "Here lies the small village of Crookhaven with its protected harbor."
+    },
+    {
+      "id": "s5",
+      "name": "Mizen Head Visitor Centre",
+      "quote": "Über eine Brücke kann man zum Leuchtturm und zum Mizen Head Visitor Centre auf der vorgelagerten Klippe gelangen, wo die raue Brandung des Atlantiks hohe Gischt schlägt.",
+      "english": "Via a bridge you can reach the lighthouse and the Mizen Head Visitor Centre on the offshore cliff, where the rough surf of the Atlantic creates high spray."
+    },
+    {
+      "id": "s6",
+      "name": "Goleen",
+      "quote": "Das Dorf Goleen wurde im 19. Jahrhundert an einer Kreuzung gebaut, an der Viehausstellungen abgehalten wurden.",
+      "english": "The village of Goleen was built in the 19th century at a crossroads where cattle shows were held."
+    },
+    {
+      "id": "s7",
+      "name": "Wedge Tombs von Toormore und Altar",
+      "quote": "Nahe bei Toormore (Tuar Mór) liegen die Wedge Tombs von Toormore und Altar und das Portal Tomb von Arderawinny.",
+      "english": "Near Toormore (Tuar Mór) lie the wedge tombs of Toormore and Altar and the portal tomb of Arderawinny."
+    }
+  ],
+  "days": [
+    {
+      "title": "Mizen Tip and Harbor Villages",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Sailing, Mountains and Ancient Tombs",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Northern Peninsula Wilderness",
+      "stop_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "_text_sha": "a027474dc46962a3b2e866654e6c190c66573965d1473eff3df09e1978f10a68"
+}

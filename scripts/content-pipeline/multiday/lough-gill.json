@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Cairns Hill",
+      "quote": "Im Westen liegt der Cairns Hill.",
+      "english": "In the west lies Cairns Hill."
+    },
+    {
+      "id": "s2",
+      "name": "Church Island",
+      "quote": "Die bekanntesten sind Church Island, Cottage Island (auch: Beezie’s Island) und die Isle of Innisfree.",
+      "english": "The best known are Church Island, Cottage Island (also: Beezie’s Island) and the Isle of Innisfree."
+    },
+    {
+      "id": "s3",
+      "name": "Isle of Innisfree",
+      "quote": "Bekannt ist der See aus dem Gedicht The Lake Isle of Innisfree von William Butler Yeats.",
+      "english": "The lake is known from the poem The Lake Isle of Innisfree by William Butler Yeats."
+    },
+    {
+      "id": "s4",
+      "name": "Magheraghanrush",
+      "quote": "Die Megalithanlage Magheraghanrush und das Court Tomb von Carrownagh deuten auf eine frühe Besiedlung um den See herum hin.",
+      "english": "The megalithic site Magheraghanrush and the Carrownagh court tomb point to early settlement around the lake."
+    },
+    {
+      "id": "s5",
+      "name": "Killiney Towers",
+      "quote": "Nahe dem See befinden sich die Ruine des Killiney Towers, das Hazelwood House und das Parke’s Castle.",
+      "english": "Near the lake are the ruins of Killiney Towers, Hazelwood House, and Parke's Castle."
+    },
+    {
+      "id": "s6",
+      "name": "Hazelwood House",
+      "quote": "Nahe dem See befinden sich die Ruine des Killiney Towers, das Hazelwood House und das Parke’s Castle.",
+      "english": "Near the lake are the ruins of Killiney Towers, Hazelwood House, and Parke's Castle."
+    },
+    {
+      "id": "s7",
+      "name": "Parke’s Castle",
+      "quote": "Nahe dem See befinden sich die Ruine des Killiney Towers, das Hazelwood House und das Parke’s Castle.",
+      "english": "Near the lake are the ruins of Killiney Towers, Hazelwood House, and Parke's Castle."
+    },
+    {
+      "id": "s8",
+      "name": "Drumcondra Castle",
+      "quote": "Südlich davon liegt Drumcondra Castle.",
+      "english": "South of that lies Drumcondra Castle."
+    }
+  ],
+  "days": [
+    {
+      "title": "Islands and Western Hills",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Historic Estates and Ruins",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Ancient Sites and Southern Castles",
+      "stop_ids": [
+        "s4",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "683b042e38fb6ec93a70552afbed9e974555361270fa891e77995c84f35386da"
+}

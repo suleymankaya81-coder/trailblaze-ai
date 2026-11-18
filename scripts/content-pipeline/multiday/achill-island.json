@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Keel East",
+      "quote": "Keel East ist eine Megalithanlage, die während des 4. und 3. Jahrtausends v. Chr. im Neolithikum auf Acaill errichtet wurde.",
+      "english": "Keel East is a megalithic complex built on Achill during the 4th and 3rd millennia BC in the Neolithic."
+    },
+    {
+      "id": "s2",
+      "name": "Keem Bay",
+      "quote": "Keem Bay (irisch Trá na Coime) im äußersten Westen nahe Achill Head gilt als einer der schönsten Strände Irlands.",
+      "english": "Keem Bay (Irish: Trá na Coime) in the far west near Achill Head is considered one of Ireland's most beautiful beaches."
+    },
+    {
+      "id": "s3",
+      "name": "Cliffs of Croaghaun",
+      "quote": "Wer einen Blick auf die höchsten, noch nicht vom Fremdenverkehr erschlossenen Klippen Irlands (Cliffs of Croaghaun) werfen möchte, muss den recht steilen Aufstieg (ohne ausgewiesene Wege) auf den grasbewachsenen Achill Head auf sich nehmen.",
+      "english": "Those who wish to catch a glimpse of the highest cliffs in Ireland, not yet developed for tourism (Cliffs of Croaghaun), must undertake the quite steep ascent (without designated paths) onto the grass-covered Achill Head."
+    },
+    {
+      "id": "s4",
+      "name": "Atlantic Drive",
+      "quote": "Der Atlantic Drive (irisch Bóthar an Atlantaigh) im Süden und Westen der Insel bietet viele eindrucksvolle, teilweise sehr windanfällige Aussichtspunkte auf die Insel, auf Buchten und die Brandung des Atlantiks, wie beispielsweise bei Camport Bay, einer südöstlich von Dumha Éige gelegenen Bucht.",
+      "english": "The Atlantic Drive (Irish: Bóthar an Atlantaigh) in the south and west of the island offers many impressive, partly wind-prone viewpoints of the island, bays, and the Atlantic surf, such as at Camport Bay, a bay located southeast of Dooega."
+    },
+    {
+      "id": "s5",
+      "name": "Deserted Village",
+      "quote": "Das Ruinendorf Deserted Village (irisch Baile Tréigthe) liegt im Norden an den Ausläufern des 671 m hohen Slievemore.",
+      "english": "The ruined village of Deserted Village (Irish: Baile Tréigthe) is located in the north on the foothills of the 671 m high Slievemore."
+    },
+    {
+      "id": "s6",
+      "name": "Achill-henge",
+      "quote": "Als Achill-henge wird ein massiver runder Betonbau aus 30 etwa vier Meter hohen Säulen mit mehr als 100 m Umfang bezeichnet, der an Stonehenge erinnert.",
+      "english": "Achill-henge refers to a massive round concrete structure made of 30 columns about four meters high with a circumference of more than 100 m, which resembles Stonehenge."
+    },
+    {
+      "id": "s7",
+      "name": "Acaill Beag",
+      "quote": "An der Südspitze von Acaill Beag befindet sich ein Leuchtturm, der 1965 errichtet wurde.",
+      "english": "A lighthouse built in 1965 is located at the southern tip of Acaill Beag."
+    },
+    {
+      "id": "s8",
+      "name": "Strand von Dooagh",
+      "quote": "Mitte April 2017 wurden die Steine während eines Kälteeinbruchs bei ungewöhnlich starkem Wind mit Sand aus dem Meer überdeckt.",
+      "english": "In mid-April 2017, the stones were covered with sand from the sea during a cold snap with unusually strong winds."
+    },
+    {
+      "id": "s9",
+      "name": "Kildavnet Tower",
+      "quote": "Grace O’Malley unterhielt im 16. Jahrhundert eine Burg bei Kildavnet (Kildavnet Tower, irisch Túr Chill Dhamhnait) auf der Insel.",
+      "english": "In the 16th century, Grace O’Malley maintained a castle near Kildavnet (Kildavnet Tower, Irish: Túr Chill Dhamhnait) on the island."
+    }
+  ],
+  "days": [
+    {
+      "title": "Western Coast and Heights",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s8"
+      ]
+    },
+    {
+      "title": "Northern History and Monuments",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Southern Shores and Islands",
+      "stop_ids": [
+        "s4",
+        "s7",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "854a57d660462fb9f06c5e64523eb943da926d2bcabe5f1d10e6548c5f044680"
+}
