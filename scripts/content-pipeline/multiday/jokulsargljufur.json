@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Ásbyrgi",
+      "quote": "Der Jökulsárgljúfur-Nationalpark liegt im Norden Islands am westlich des Flusses Jökulsá á Fjöllum und erstreckt sich von der hufeisenförmigen Schlucht Ásbyrgi im Norden bis zum mächtigsten Wasserfall Europas, dem Dettifoss, im Süden.",
+      "english": "The Jökulsárgljúfur National Park is located in northern Iceland on the west side of the river Jökulsá á Fjöllum and extends from the horseshoe-shaped canyon Ásbyrgi in the north to the most powerful waterfall in Europe, Dettifoss, in the south."
+    },
+    {
+      "id": "s2",
+      "name": "Hljóðaklettar",
+      "quote": "Die Gegend wird als Hljóðaklettar (Echofelsen) bezeichnet.",
+      "english": "The area is referred to as Hljóðaklettar (Echo Rocks)."
+    },
+    {
+      "id": "s3",
+      "name": "Karl og Kerling",
+      "quote": "Andererseits findet man aber auch schöne Lavarosetten oder Formen, die phantasievolle Namen wie Karl og Kerling (Mann und Frau) tragen oder Kirkjan (Kirche).",
+      "english": "On the other hand, one also finds beautiful lava rosettes or shapes that bear imaginative names such as Karl og Kerling (Man and Woman) or Kirkjan (Church)."
+    },
+    {
+      "id": "s4",
+      "name": "Kirkjan",
+      "quote": "Andererseits findet man aber auch schöne Lavarosetten oder Formen, die phantasievolle Namen wie Karl og Kerling (Mann und Frau) tragen oder Kirkjan (Kirche).",
+      "english": "On the other hand, one also finds beautiful lava rosettes or shapes that bear imaginative names such as Karl og Kerling (Man and Woman) or Kirkjan (Church)."
+    },
+    {
+      "id": "s5",
+      "name": "Rauðhólar",
+      "quote": "Der höchste Berg im weiten Umkreis ist der Rauðhólar.",
+      "english": "The highest mountain in the wide surrounding area is the Rauðhólar."
+    },
+    {
+      "id": "s6",
+      "name": "Hafragilsundirlendi",
+      "quote": "Weiter südlich schließt sich die mächtige Schlucht Hafragilsundirlendi an, deren Wände teilweise über 100 m hoch sind.",
+      "english": "Further south lies the mighty canyon Hafragilsundirlendi, whose walls are in parts over 100 m high."
+    },
+    {
+      "id": "s7",
+      "name": "Dettifoss",
+      "quote": "Der Jökulsárgljúfur-Nationalpark liegt im Norden Islands am westlich des Flusses Jökulsá á Fjöllum und erstreckt sich von der hufeisenförmigen Schlucht Ásbyrgi im Norden bis zum mächtigsten Wasserfall Europas, dem Dettifoss, im Süden.",
+      "english": "The Jökulsárgljúfur National Park is located in northern Iceland on the west side of the river Jökulsá á Fjöllum and extends from the horseshoe-shaped canyon Ásbyrgi in the north to the most powerful waterfall in Europe, Dettifoss, in the south."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Canyons and Echo Rocks",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Lava Formations and Volcanic Peaks",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Southern Gorges and Waterfalls",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "e22ad527e8b16cc41c3d17a0b555a0fea475280ee964223711ec58e6832d5d30"
+}

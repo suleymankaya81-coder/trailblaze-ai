@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Skeggi",
+      "quote": "Sein höchster Gipfel, Skeggi, erhebt sich 803 m über das Meer.",
+      "english": "Its highest peak, Skeggi, rises 803 m above the sea."
+    },
+    {
+      "id": "s2",
+      "name": "Nesjavellir",
+      "quote": "Außerdem liegt hier der Ursprung der Lavafelder bei Nesjavellir, des sogenannten Nesjahraun.",
+      "english": "Furthermore, the origin of the lava fields near Nesjavellir, the so-called Nesjahraun, is located here."
+    },
+    {
+      "id": "s3",
+      "name": "Hellisheiði-Kraftwerk",
+      "quote": "Außerdem wurde ein weiteres noch größeres Kraftwerk auf der Hellisheiði gebaut, Hellisheiði-Kraftwerk, das ebenfalls die beträchtliche Energiequelle Hengill nutzt.",
+      "english": "In addition, another even larger power plant was built on the Hellisheiði, the Hellisheiði Power Plant, which also utilizes the substantial energy source of Hengill."
+    },
+    {
+      "id": "s4",
+      "name": "Innstidalur",
+      "quote": "So befindet sich etwa im Innstidalur zwischen Hengill und Skarðsmýrarfjall eine der ergiebigsten Dampfquellen des Landes.",
+      "english": "For instance, one of the most productive steam springs in the country is located in Innstidalur between Hengill and Skarðsmýrarfjall."
+    },
+    {
+      "id": "s5",
+      "name": "Sleggja",
+      "quote": "In einem Nebengipfel, dem Sleggja, findet man auch Liparit.",
+      "english": "In a secondary peak, the Sleggja, rhyolite is also found."
+    },
+    {
+      "id": "s6",
+      "name": "Tjarnarhnjúkur",
+      "quote": "Hrómundartindur mit seinem Hochtemperaturgebiet unter dem Vulkan Tjarnarhnjúkur und am Ölkelduháls liegt im Nordosten von ihm auf der Hellisheiði.",
+      "english": "Hrómundartindur, with its high-temperature area under the Tjarnarhnjúkur volcano and at Ölkelduháls, lies to the northeast of it on the Hellisheiði."
+    },
+    {
+      "id": "s7",
+      "name": "Hveragerði",
+      "quote": "Die kleine Stadt Hveragerði mit ihren heißen Quellen liegt etwa 10 km östlich des Hengill im Gebiet des Grensdalur-Vulkans.",
+      "english": "The small town of Hveragerði with its hot springs is located about 10 km east of Hengill in the area of the Grensdalur volcano."
+    }
+  ],
+  "days": [
+    {
+      "title": "High Peaks and Valleys",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Geothermal Power and Lava Fields",
+      "stop_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Eastern Volcanic Villages and Vents",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "0c3e1c4f41fcbcd7eea3b76c8a295848d9b04b69e660073adf38f957f6963f53"
+}

@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Forschungsstationen",
+      "quote": "Inzwischen befinden sich Forschungsstationen auf der unter strengem Naturschutz stehenden Insel.",
+      "english": "In the meantime, research stations are located on the island, which is under strict nature protection."
+    },
+    {
+      "id": "s2",
+      "name": "Pāhoehoe-Lavafeld",
+      "quote": "Die Insel selbst wird charakterisiert durch zwei Tuffberge und ein Pāhoehoe-Lavafeld, das den südlichen Teil von Surtsey bedeckt.",
+      "english": "The island itself is characterized by two tuff mountains and a pāhoehoe lava field that covers the southern part of Surtsey."
+    },
+    {
+      "id": "s3",
+      "name": "Vesturbunki",
+      "quote": "Die andauernden Eruptionen konzentrierten sich zunehmend auf zwei Krater, die später Vesturbunki und Austurbunki genannt wurden.",
+      "english": "The ongoing eruptions increasingly concentrated on two craters, which were later named Vesturbunki and Austurbunki."
+    },
+    {
+      "id": "s4",
+      "name": "Austurbunki",
+      "quote": "Austurbunki erreichte schon in dieser ersten Ausbruchsphase eine Höhe von 174 Meter (300 Meter über dem Meeresboden).",
+      "english": "Already in this first eruption phase, Austurbunki reached a height of 174 meters (300 meters above the seabed)."
+    },
+    {
+      "id": "s5",
+      "name": "Surtla",
+      "quote": "Am 28. Dezember 1963 begannen unterseeische Ausbrüche etwa 2,5 Kilometer nordöstlich von Surtsey, die einen 100 m langen, Surtla genannten Bergrücken am Meeresgrund formten, der jedoch nie den Meeresspiegel erreichte.",
+      "english": "On December 28, 1963, undersea eruptions began about 2.5 kilometers northeast of Surtsey, forming a 100-meter-long mountain ridge called Surtla on the seabed, which, however, never reached sea level."
+    },
+    {
+      "id": "s6",
+      "name": "Syrtlingur",
+      "quote": "Als dieser sich der Meeresoberfläche näherte, ging er in eine explosive Phase über und baute die Insel Syrtlingur auf.",
+      "english": "As this approached the sea surface, it entered an explosive phase and built up the island of Syrtlingur."
+    },
+    {
+      "id": "s7",
+      "name": "Jólnir",
+      "quote": "Dabei bildete sich die Insel Jólnir.",
+      "english": "In the process, the island of Jólnir was formed."
+    },
+    {
+      "id": "s8",
+      "name": "Norðurtangi",
+      "quote": "Im Gegenzug bildete sich an der Nordseite die Sandbank Norðurtangi (Nordpunkt), die die Insel etwas vergrößerte.",
+      "english": "In return, the sandbank Norðurtangi (North Point) formed on the north side, which slightly enlarged the island."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central craters and research",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Southern lava and northern sands",
+      "stop_ids": [
+        "s2",
+        "s8"
+      ]
+    },
+    {
+      "title": "Submarine ridges and satellite isles",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "2ffac49962630051d07fc05b945711b1d8e064d4212680c0cfc3c1527ae3f15e"
+}

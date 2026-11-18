@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Vestmannaeyjar",
+      "quote": "Auf Heimaey befindet sich die Stadt Vestmannaeyjar (gleichnamig zur Inselgruppe) mit 4523 Einwohnern (Stand: 1. Januar 2023).",
+      "english": "On Heimaey lies the town of Vestmannaeyjar (with the same name as the archipelago) with 4523 inhabitants (as of January 1, 2023)."
+    },
+    {
+      "id": "s2",
+      "name": "Herjólfsdalur",
+      "quote": "Am ersten Augustwochenende, dem sogenannten Verslunarmannahelgi, wird im Herjólfsdalur, einem halbmondförmigen, zur Meerseite offenen ehemaligen Vulkankrater, ein dreitägiges Fest gefeiert, zu dem auch viele – vor allem jugendliche – Gäste vom „Festland“ kommen.",
+      "english": "On the first weekend of August, the so-called Verslunarmannahelgi, a three-day festival is celebrated in Herjólfsdalur, a crescent-shaped former volcanic crater open to the sea, which attracts many guests—especially young people—from the \"mainland.\""
+    },
+    {
+      "id": "s3",
+      "name": "Skansinn",
+      "quote": "Die kleine Festungsanlage Skansinn in Hafennähe geht auf Anweisungen des dänischen Königs von 1515 zurück, der mit Hilfe der Anlage seinen Handelsbereich vor den Engländern schützen wollte.",
+      "english": "The small fortification Skansinn near the harbor dates back to instructions from the Danish King in 1515, who wanted to use the facility to protect his trading area from the English."
+    },
+    {
+      "id": "s4",
+      "name": "Stabkirche Heimaey",
+      "quote": "Innerhalb dieses befestigten Bereichs befindet sich die Stabkirche Heimaey, ein Geschenk Norwegens an Island aus dem Jahr 2000.",
+      "english": "Within this fortified area is the Heimaey Stave Church, a gift from Norway to Iceland from the year 2000."
+    },
+    {
+      "id": "s5",
+      "name": "Landakirkja",
+      "quote": "Die Landakirkja wurde ursprünglich 1573 errichtet.",
+      "english": "The Landakirkja was originally built in 1573."
+    },
+    {
+      "id": "s6",
+      "name": "Eldheimar",
+      "quote": "Pompei norðursins oder Eldheimar ist ein Museum, das an den Ausbruch des Eldfell vom 23. Januar 1973 erinnert.",
+      "english": "Pompei of the North or Eldheimar is a museum that commemorates the eruption of Eldfell on January 23, 1973."
+    },
+    {
+      "id": "s7",
+      "name": "Helgafell",
+      "quote": "Auf den Inseln gibt es zahlreiche kleinere Berge; so kann man z. B. auf Heimaey die Vulkane Helgafell und Eldfell besteigen.",
+      "english": "On the islands there are numerous small mountains; for example, on Heimaey one can climb the volcanoes Helgafell and Eldfell."
+    },
+    {
+      "id": "s8",
+      "name": "Eldfell",
+      "quote": "Ende Januar 1973 brach ein neuer Vulkan, der Eldfell, in direkter Nähe der Stadt Vestmannaeyjar auf Heimaey aus.",
+      "english": "At the end of January 1973, a new volcano, Eldfell, erupted in the direct vicinity of the town of Vestmannaeyjar on Heimaey."
+    }
+  ],
+  "days": [
+    {
+      "title": "Town Landmarks and Culture",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s2"
+      ]
+    },
+    {
+      "title": "Historical Fortifications and Remembrance",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s6"
+      ]
+    },
+    {
+      "title": "Volcanic Peaks Hike",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "cfc5fc4dd6eb2be06df7302d0986f6f1e2b388957094fa20617fe0d0bba36b7c"
+}

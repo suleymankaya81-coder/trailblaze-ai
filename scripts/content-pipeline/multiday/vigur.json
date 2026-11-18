@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hof",
+      "quote": "Ein einzelner Hof befindet sich auf der Insel.",
+      "english": "A single farm is located on the island."
+    },
+    {
+      "id": "s2",
+      "name": "Eiderenten",
+      "quote": "Das betrifft vor allem die Betreuung und Nutzung von Eiderenten, deren Daunen hier verarbeitet werden.",
+      "english": "This primarily concerns the care and use of eider ducks, whose down is processed here."
+    },
+    {
+      "id": "s3",
+      "name": "Windmühle",
+      "quote": "Außerdem kann man auf der Insel eine kleine Windmühle (1840), besichtigen, die bis 1917 in Betrieb war, die einzige noch erhaltene Windmühle auf Island ist und unter Denkmalschutz steht.",
+      "english": "In addition, one can visit a small windmill (1840) on the island, which was in operation until 1917, is the only remaining windmill in Iceland, and is a protected monument."
+    },
+    {
+      "id": "s4",
+      "name": "Vigur-Breiður",
+      "quote": "Ein Ruderboot, der Achtruderer Vigur-Breiður vom Anfang des 19. Jahrhunderts, wird immer noch benutzt, um Schafe vom Festland zu holen bzw. dorthin zu bringen.",
+      "english": "A rowing boat, the eight-oared Vigur-Breiður from the beginning of the 19th century, is still used to fetch sheep from the mainland or take them there."
+    }
+  ],
+  "days": [
+    {
+      "title": "Historical Farmstead and Wildlife of Vigur",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "9c56d5b211587d40a80748e78ff0df498ecb0fe09a5e1087677469670b3787ac"
+}

@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kaldbakur",
+      "quote": "Auch hier ragen die Berge bis über 1000 m auf, z. B. Kaldbakur (1167 m).",
+      "english": "Here, too, the mountains rise to over 1000 m, e.g. Kaldbakur (1167 m)."
+    },
+    {
+      "id": "s2",
+      "name": "Laufás",
+      "quote": "Am südlichen Fjordende liegt die Stadt Akureyri, am Westufer die Fischerorte Dalvík und Ólafsfjörður, am Ostufer das Freilichtmuseum Laufás und der Ort Grenivík.",
+      "english": "At the southern end of the fjord lies the town of Akureyri, on the west bank the fishing villages of Dalvík and Ólafsfjörður, and on the east bank the open-air museum Laufás and the town of Grenivík."
+    },
+    {
+      "id": "s3",
+      "name": "Grenivík",
+      "quote": "Am südlichen Fjordende liegt die Stadt Akureyri, am Westufer die Fischerorte Dalvík und Ólafsfjörður, am Ostufer das Freilichtmuseum Laufás und der Ort Grenivík.",
+      "english": "At the southern end of the fjord lies the town of Akureyri, on the west bank the fishing villages of Dalvík and Ólafsfjörður, and on the east bank the open-air museum Laufás and the town of Grenivík."
+    },
+    {
+      "id": "s4",
+      "name": "Hrísey",
+      "quote": "Im Fjord selbst liegt die Insel Hrísey.",
+      "english": "The island of Hrísey is located in the fjord itself."
+    },
+    {
+      "id": "s5",
+      "name": "Akureyri",
+      "quote": "Am südlichen Fjordende liegt die Stadt Akureyri, am Westufer die Fischerorte Dalvík und Ólafsfjörður, am Ostufer das Freilichtmuseum Laufás und der Ort Grenivík.",
+      "english": "At the southern end of the fjord lies the town of Akureyri, on the west bank the fishing villages of Dalvík and Ólafsfjörður, and on the east bank the open-air museum Laufás and the town of Grenivík."
+    },
+    {
+      "id": "s6",
+      "name": "Dalvík",
+      "quote": "Am südlichen Fjordende liegt die Stadt Akureyri, am Westufer die Fischerorte Dalvík und Ólafsfjörður, am Ostufer das Freilichtmuseum Laufás und der Ort Grenivík.",
+      "english": "At the southern end of the fjord lies the town of Akureyri, on the west bank the fishing villages of Dalvík and Ólafsfjörður, and on the east bank the open-air museum Laufás and the town of Grenivík."
+    },
+    {
+      "id": "s7",
+      "name": "Ólafsfjörður",
+      "quote": "Am südlichen Fjordende liegt die Stadt Akureyri, am Westufer die Fischerorte Dalvík und Ólafsfjörður, am Ostufer das Freilichtmuseum Laufás und der Ort Grenivík.",
+      "english": "At the southern end of the fjord lies the town of Akureyri, on the west bank the fishing villages of Dalvík and Ólafsfjörður, and on the east bank the open-air museum Laufás and the town of Grenivík."
+    },
+    {
+      "id": "s8",
+      "name": "Eyjafjarðardalur",
+      "quote": "Wie in Island üblich trägt das mit ihm verbundene Tal denselben Namen wie der Fjord bzw. Eyjafjarðardalur.",
+      "english": "As is common in Iceland, the valley connected to it bears the same name as the fjord, or Eyjafjarðardalur."
+    }
+  ],
+  "days": [
+    {
+      "title": "East Coast Mountains and Heritage",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Southern Hub and Interior Valley",
+      "stop_ids": [
+        "s5",
+        "s8"
+      ]
+    },
+    {
+      "title": "Island and Western Fishing Villages",
+      "stop_ids": [
+        "s4",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "c6e42f9182c0ec2f5b8bc19f8b84e44f965a10db87ae3370f9974c904c721857"
+}

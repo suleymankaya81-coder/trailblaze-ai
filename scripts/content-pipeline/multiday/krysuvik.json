@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Trölladyngja",
+      "quote": "Nördlich liegt das Vulkansystem und Geothermalgebiet Krýsuvík (Schreibung auch: Krísuvík), welches auch mit dem Namen Trölladyngjavulkansystem bezeichnet wird in Anspielung auf dessen westlich des Kleifarvatn gelegenen Zentralvulkan, den Schildvulkan Trölladyngja.",
+      "english": "To the north lies the Krýsuvík volcanic system and geothermal area (also spelled Krísuvík), which is also referred to by the name Trölladyngja volcanic system in reference to its central volcano, the shield volcano Trölladyngja, located west of Kleifarvatn."
+    },
+    {
+      "id": "s2",
+      "name": "Seltún",
+      "quote": "Dies erkennt man an den Solfataren von Seltún und einem weiteren in der Nähe gelegenen Gebiet mit heißen Quellen sowie an den Solfataren an den Berghängen des Sveifluháls.",
+      "english": "This can be seen in the solfataras of Seltún and another nearby area with hot springs, as well as the solfataras on the mountain slopes of Sveifluháls."
+    },
+    {
+      "id": "s3",
+      "name": "Sveifluháls",
+      "quote": "Weiterhin führen gekennzeichnete Wanderwege auf den Berg dahinter, Sveifluháls, an dessen Hängen man ebenfalls Fumarolen erkennen kann.",
+      "english": "Furthermore, marked hiking trails lead up the mountain behind it, Sveifluháls, on whose slopes fumaroles can also be seen."
+    },
+    {
+      "id": "s4",
+      "name": "Grænavatn",
+      "quote": "Einige kleinere Seen weisen ebenfalls auf vulkanischen Ursprung hin, so der Grænavatn, ein mit Wasser gefülltes Maar, das seine leuchtende Farbe der im Wasser enthaltenen Kieselgur verdankt.",
+      "english": "Several smaller lakes also indicate volcanic origin, such as Grænavatn, a water-filled maar that owes its vibrant color to the diatomaceous earth contained in the water."
+    },
+    {
+      "id": "s5",
+      "name": "Kleifarvatn",
+      "quote": "Der größte See der Umgebung, der dem Hochtemperaturgebiet benachbarte Kleifarvatn, begann nach einem schweren Erdbeben 2000 plötzlich zu schrumpfen und teilweise im Boden zu versickern.",
+      "english": "The largest lake in the area, Kleifarvatn, adjacent to the high-temperature area, suddenly began to shrink and partially seep into the ground after a severe earthquake in 2000."
+    },
+    {
+      "id": "s6",
+      "name": "Krýsuvíkurkirkja",
+      "quote": "Eine kleine Holzkirche, die Krýsuvíkurkirkja aus dem Jahre 1857 wurde zum isländischen Nationalerbe erklärt und stand unter Denkmalschutz.",
+      "english": "A small wooden church, the Krýsuvíkurkirkja from 1857, was declared an Icelandic national heritage site and was protected as a monument."
+    },
+    {
+      "id": "s7",
+      "name": "Krýsuvíkurbjarg",
+      "quote": "An der Südküste, nicht weit vom Dorf entfernt, liegt die Steilküste Krýsuvíkurbjarg, die im Sommer von großen Vogelkolonien zum Brüten genutzt wird.",
+      "english": "On the south coast, not far from the village, lies the Krýsuvíkurbjarg cliff, which is used by large bird colonies for breeding in summer."
+    }
+  ],
+  "days": [
+    {
+      "title": "Volcanic Peaks and Lakes",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s4"
+      ]
+    },
+    {
+      "title": "Geothermal Slopes and Trails",
+      "stop_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Heritage and Coastal Cliffs",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "b0468665cea7e52095128c0b0308cb7515681b33e04c99252c73f4ba0fcdaab6"
+}

@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hvannadalshnúkur",
+      "quote": "Dessen höchster Gipfel Hvannadalshnúkur ist mit 2110 m die höchste Erhebung Islands.",
+      "english": "Its highest peak Hvannadalshnúkur is, at 2110 m, the highest elevation in Iceland."
+    },
+    {
+      "id": "s2",
+      "name": "Hnappar",
+      "quote": "Der Vulkan hieß zuvor Hnappafellsjökull, man findet auch die Bezeichnung Knappafell für den Berg, andererseits heißen Bergspitzen am Gipfel Hnappar und ein Hof an seinem Fuße Hnappavellir.",
+      "english": "The volcano was previously called Hnappafellsjökull, the designation Knappafell is also found for the mountain, while on the other hand, mountain peaks at the summit are called Hnappar and a farm at its foot Hnappavellir."
+    },
+    {
+      "id": "s3",
+      "name": "Hnappavellir",
+      "quote": "Der Vulkan hieß zuvor Hnappafellsjökull, man findet auch die Bezeichnung Knappafell für den Berg, andererseits heißen Bergspitzen am Gipfel Hnappar und ein Hof an seinem Fuße Hnappavellir.",
+      "english": "The volcano was previously called Hnappafellsjökull, the designation Knappafell is also found for the mountain, while on the other hand, mountain peaks at the summit are called Hnappar and a farm at its foot Hnappavellir."
+    },
+    {
+      "id": "s4",
+      "name": "Svínafell",
+      "quote": "Beim Svínafell findet man Sedimentablagerungen aus der Eiszeit.",
+      "english": "At Svínafell, one finds sedimentary deposits from the Ice Age."
+    },
+    {
+      "id": "s5",
+      "name": "Svínafellsjökull",
+      "quote": "Zu den Auslassgletschern zählen z. B. der Svínafellsjökull (im Westen) oder der Kvíajökull (im Süden), bei dem sich mit 100 Metern die höchsten Gletschermoränen Islands finden.",
+      "english": "The outlet glaciers include, for example, Svínafellsjökull (in the west) or Kvíajökull (in the south), which has the highest glacier moraines in Iceland at 100 meters."
+    },
+    {
+      "id": "s6",
+      "name": "Kvíajökull",
+      "quote": "Zu den Auslassgletschern zählen z. B. der Svínafellsjökull (im Westen) oder der Kvíajökull (im Süden), bei dem sich mit 100 Metern die höchsten Gletschermoränen Islands finden.",
+      "english": "The outlet glaciers include, for example, Svínafellsjökull (in the west) or Kvíajökull (in the south), which has the highest glacier moraines in Iceland at 100 meters."
+    },
+    {
+      "id": "s7",
+      "name": "Fjallsjökull",
+      "quote": "Am Fuße des Fjallsjökull (im Osten) befindet sich ein kleiner Gletschersee mit Eisbergen und -schollen.",
+      "english": "At the foot of Fjallsjökull (in the east) there is a small glacier lake with icebergs and ice floes."
+    },
+    {
+      "id": "s8",
+      "name": "Ingólfshöfði",
+      "quote": "Obwohl in der Nähe bei Ingólfshöfði mit Ingólfur Arnarson um das Jahr 870 der erste Siedler an Land kam und sich dann in Reykjavík niederließ, wurde dieses Gebiet selbst erst viel später besiedelt.",
+      "english": "Although the first settler, Ingólfur Arnarson, came ashore nearby at Ingólfshöfði around the year 870 and then settled in Reykjavík, this area itself was not settled until much later."
+    }
+  ],
+  "days": [
+    {
+      "title": "Summit Peaks and Northern Slopes",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Western Glaciers and Geological Sites",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Southern Moraines and Eastern Lakes",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "d463c699721b4a22383e9ab382e80793498631db22c3ef587849d642676363e0"
+}

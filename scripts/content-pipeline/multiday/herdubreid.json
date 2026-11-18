@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Herðubreið",
+      "quote": "Herðubreið ['hεrðʏ̩prεiˑð] (deutsch: die Breitschultrige) gilt mit ihrer auffälligen Form eines Tafelvulkans als die „Königin der Berge Islands“.",
+      "english": "Herðubreið (German: the Broad-Shouldered) is considered the 'Queen of Iceland's Mountains' with its striking shape of a table volcano."
+    },
+    {
+      "id": "s2",
+      "name": "Gipfelkrater",
+      "quote": "Der Vulkan, Teil des Vulkansystems der Askja, weist einen Gipfelkrater und ganzjährige Schneefelder auf, jedoch keinen Gletscher.",
+      "english": "The volcano, part of the Askja volcanic system, features a summit crater and year-round snowfields, but no glacier."
+    },
+    {
+      "id": "s3",
+      "name": "Schneefelder",
+      "quote": "Der Vulkan, Teil des Vulkansystems der Askja, weist einen Gipfelkrater und ganzjährige Schneefelder auf, jedoch keinen Gletscher.",
+      "english": "The volcano, part of the Askja volcanic system, features a summit crater and year-round snowfields, but no glacier."
+    },
+    {
+      "id": "s4",
+      "name": "Herðubreiðarlindir",
+      "quote": "Am Fuß des Berges liegt die Oase Herðubreiðarlindir, von der aus man Wanderungen starten kann.",
+      "english": "At the foot of the mountain lies the Herðubreiðarlindir oasis, from which you can start hikes."
+    }
+  ],
+  "days": [
+    {
+      "title": "Exploring the Queen and her Oasis",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "04eab5c7002b2e0fc8fe7f609756325534e60394687aa0565fe49143d06d7107"
+}

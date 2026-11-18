@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Bakkagerði",
+      "quote": "Hat man dieses Kap umrundet, eröffnet sich der Blick auf den Ort Bakkagerði.",
+      "english": "Once you have rounded this cape, the view opens up to the village of Bakkagerði."
+    },
+    {
+      "id": "s2",
+      "name": "Álfaborg",
+      "quote": "Der Fjord leitet seinen Namen ab vom „Álfaborg“, zu deutsch „Elfenhügel“, ein steiniger Hügel in der unmittelbaren Nähe von Bakkagerði.",
+      "english": "The fjord derives its name from \"Álfaborg\", in German \"Elf Hill\", a stony hill in the immediate vicinity of Bakkagerði."
+    },
+    {
+      "id": "s3",
+      "name": "Staðarfjall",
+      "quote": "Ähnlich wie am Berufjörður weisen einige der Berge Basaltintrusionen u. a. am Gipfel auf, besonders fällt dies am Staðarfjall (620 m) auf.",
+      "english": "Similar to Berufjörður, some of the mountains show basalt intrusions, including at the summit; this is particularly noticeable on Staðarfjall (620 m)."
+    },
+    {
+      "id": "s4",
+      "name": "Dyrfjöll",
+      "quote": "Von Egilsstaðir an der Ringstraße verläuft der Borgarfjarðarvegur in Richtung Norden vorbei an dem Bergmassiv der Dyrfjöll (dt. = Türberge).",
+      "english": "From Egilsstaðir on the ring road, the Borgarfjarðarvegur runs north past the Dyrfjöll mountain massif (German = Door Mountains)."
+    },
+    {
+      "id": "s5",
+      "name": "Stórurð",
+      "quote": "Diese ragen bis über 1200 m auf und in der Mitte hat sich bei einem enormen Flankenkollaps eine Einbuchtung gebildet, die Stórurð heißt.",
+      "english": "These rise to over 1200 m and in the middle, an indentation called Stórurð has formed during an enormous flank collapse."
+    },
+    {
+      "id": "s6",
+      "name": "Vatnsskarð eystra",
+      "quote": "Weiter führt die Straße über den Pass Vatnsskarð eystra.",
+      "english": "The road continues over the Vatnsskarð eystra pass."
+    },
+    {
+      "id": "s7",
+      "name": "Njarðvíkurskriður",
+      "quote": "Oberhalb ist ein Erosionshang, der Njarðvíkurskriður genannt wird.",
+      "english": "Above is an erosion slope called Njarðvíkurskriður."
+    },
+    {
+      "id": "s8",
+      "name": "Hvítserkur",
+      "quote": "Die Trekkingpfade führen unter anderem an dem vielfarbigen, erloschenen Vulkan Hvítserkur vorbei.",
+      "english": "The trekking paths lead, among other places, past the multi-colored, extinct volcano Hvítserkur."
+    }
+  ],
+  "days": [
+    {
+      "title": "Village and Coastal Landmarks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Mountain Passes and Volcanic Trails",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "c02419cd4466cbaa6bb0759ea3da4b8a24c4dc6f29c9c1ca92fe4a32a4cf326f"
+}

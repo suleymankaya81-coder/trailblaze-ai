@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Stapafell",
+      "quote": "Der zum Vulkansystem des Snæfellsjökull zählende Berg Stapafell (dt. „Der verstopfte Berg“) beherrscht den Ort.",
+      "english": "The mountain Stapafell (German: \"The clogged mountain\"), which belongs to the Snæfellsjökull volcanic system, dominates the village."
+    },
+    {
+      "id": "s2",
+      "name": "schwarze Steilküste",
+      "quote": "Arnarstapi liegt auf der Südseite des Vulkans Snæfellsjökull und verfügt über eine auffallend erodierte schwarze Steilküste mit Höhlen und Felsentoren.",
+      "english": "Arnarstapi is located on the south side of the Snæfellsjökull volcano and features a strikingly eroded black cliff coast with caves and rock arches."
+    },
+    {
+      "id": "s3",
+      "name": "Wanderung in den Nachbarort Hellnar",
+      "quote": "Diese sieht man besonders gut auf einer etwa 3 km langen Wanderung in den Nachbarort Hellnar.",
+      "english": "These can be seen particularly well on an approximately 3 km long hike to the neighboring village of Hellnar."
+    },
+    {
+      "id": "s4",
+      "name": "Basaltsäulen am Strand",
+      "quote": "Das Meer hat bei Arnarstapi die Basaltsäulen am Strand umgeformt und unterschiedlichste Buchten und Höhlen gebildet, die unter die Klippen hineinreichen.",
+      "english": "The sea at Arnarstapi has reshaped the basalt columns on the beach and formed a wide variety of bays and caves that extend beneath the cliffs."
+    },
+    {
+      "id": "s5",
+      "name": "Hafen",
+      "quote": "Ab 1933, als das Zeitalter der Trawler in Snæfellsnes begann, baute man den Hafen aus.",
+      "english": "From 1933, when the era of trawlers began in Snæfellsnes, the harbor was expanded."
+    },
+    {
+      "id": "s6",
+      "name": "Statue von Ragnar Kjartansson",
+      "quote": "Am Meer steht eine Statue von Ragnar Kjartansson, die die Sagenfigur Bárður Snæfellsás darstellt.",
+      "english": "By the sea stands a statue by Ragnar Kjartansson, which represents the legendary figure Bárður Snæfellsás."
+    },
+    {
+      "id": "s7",
+      "name": "geschützte Landeplätze für Ruderboote",
+      "quote": "Schon seit dem Mittelalter befand sich hier ein bedeutender Fischereiplatz, zumal Arnarstapi über etliche geschützte Landeplätze für Ruderboote verfügte.",
+      "english": "Since the Middle Ages, this has been an important fishing spot, especially as Arnarstapi had several protected landing sites for rowboats."
+    }
+  ],
+  "days": [
+    {
+      "title": "Coastal Formations and Hiking",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Maritime History and Monuments",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Volcanic Peaks",
+      "stop_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "_text_sha": "af421f5104d2f88c8b9e3b38ae72c71948fe9517eb97a63d697313ebd81898f0"
+}

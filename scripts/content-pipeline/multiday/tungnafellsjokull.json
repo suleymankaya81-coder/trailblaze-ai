@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Vonarskarð",
+      "quote": "Das Hochtal Vonarskarð mit seinem Hochtemperaturgebiet gehört zum Vulkansystem des Tungnafellsjökull und liegt zwischen ihm und dem Vatnajökull.",
+      "english": "The high valley Vonarskarð with its high-temperature area belongs to the volcanic system of Tungnafellsjökull and lies between it and Vatnajökull."
+    },
+    {
+      "id": "s2",
+      "name": "Háhyrna",
+      "quote": "Der höchste Gipfel namens Háhyrna befindet sich auf der Westseite des Berges.",
+      "english": "The highest peak named Háhyrna is located on the west side of the mountain."
+    },
+    {
+      "id": "s3",
+      "name": "Hágöngur",
+      "quote": "Der Vulkan Hágöngur im Südwesten des Gletschers gehört zum selben Vulkansystem ebenso wie die Hochtemperaturgebiete am Vonarskarð.",
+      "english": "The volcano Hágöngur in the southwest of the glacier belongs to the same volcanic system as the high-temperature areas at Vonarskarð."
+    },
+    {
+      "id": "s4",
+      "name": "Þveralda",
+      "quote": "Nach Südwesten erstreckt sich das Vulkansystem bis zur Þveralda östlich der Sprengisandur-Piste.",
+      "english": "To the southwest, the volcanic system extends to Þveralda east of the Sprengisandur track."
+    },
+    {
+      "id": "s5",
+      "name": "Nýidalur",
+      "quote": "Falls man den Gipfel Háhyrna erklimmen möchte, fährt man von Nýidalur an der Sprengisandur zu den Hagakvíslar (866 m) und steigt von dort aus auf.",
+      "english": "If you want to climb the Háhyrna peak, you drive from Nýidalur at the Sprengisandur to the Hagakvíslar (866 m) and ascend from there."
+    },
+    {
+      "id": "s6",
+      "name": "Hagakvíslar",
+      "quote": "Falls man den Gipfel Háhyrna erklimmen möchte, fährt man von Nýidalur an der Sprengisandur zu den Hagakvíslar (866 m) und steigt von dort aus auf.",
+      "english": "If you want to climb the Háhyrna peak, you drive from Nýidalur at the Sprengisandur to the Hagakvíslar (866 m) and ascend from there."
+    },
+    {
+      "id": "s7",
+      "name": "Sprengisandur",
+      "quote": "Von dort hat man eine gute Aussicht über Vonarskarð und Sprengisandur.",
+      "english": "From there you have a good view over Vonarskarð and Sprengisandur."
+    }
+  ],
+  "days": [
+    {
+      "title": "Western Ascent and Highland Views",
+      "stop_ids": [
+        "s2",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Southern Volcanic Features",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "486d84eb7d8726708d9048e1896cdffe012398df0bfdfefde4feca667f8f76be"
+}

@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Þingvallavatn",
+      "quote": "ist ein Ort und ein Nationalpark im Südwesten von Island, etwa 40 km östlich der isländischen Hauptstadt Reykjavík am Nordufer des Sees Þingvallavatn.",
+      "english": "is a town and a national park in the southwest of Iceland, about 40 km east of the Icelandic capital Reykjavík on the northern shore of Lake Þingvallavatn."
+    },
+    {
+      "id": "s2",
+      "name": "Thingplatz",
+      "quote": "Hier, auf dem Thingplatz in der Nähe der Schlucht Almannagjá, wurde bereits um 930, also am Ende der Landnahme durch vor allem norwegische Wikinger, einmal jährlich während zwei Wochen im Juni die traditionelle Versammlung Althing abgehalten, die sowohl gesetzgeberische als auch gerichtliche Funktion hatte.",
+      "english": "Here, on the assembly site near the Almannagjá gorge, the traditional Althing assembly was held as early as 930—at the end of the settlement period primarily by Norwegian Vikings—once a year for two weeks in June, serving both legislative and judicial functions."
+    },
+    {
+      "id": "s3",
+      "name": "Almannagjá",
+      "quote": "In den letzten 10.000 Jahren ist das Land beiderseits der Schlucht Almannagjá um 70 Meter auseinandergedriftet und der Talboden hat sich um ca. 40 Meter gesenkt.",
+      "english": "In the last 10,000 years, the land on both sides of the Almannagjá gorge has drifted apart by 70 meters and the valley floor has subsided by about 40 meters."
+    },
+    {
+      "id": "s4",
+      "name": "Silfra-Spalte",
+      "quote": "An diesem Ort und im weiteren Umfeld wird auch das Auseinanderdriften der amerikanischen und eurasischen tektonischen Platten durch imposante Felsspalten und Risse sichtbar, vor allem an der Almannagjá (Allmännerschlucht) oder auch der Silfra-Spalte.",
+      "english": "In this place and the wider surroundings, the drifting apart of the American and Eurasian tectonic plates is also made visible by impressive rock fissures and cracks, especially at Almannagjá (Allman's Gorge) or the Silfra Fissure."
+    },
+    {
+      "id": "s5",
+      "name": "Öxará",
+      "quote": "Der Fluss Öxará durchströmt den Þingvellir-Nationalpark und formt an der Schlucht Almannagjá einen sehenswerten Wasserfall, den Öxarárfoss.",
+      "english": "The river Öxará flows through the Þingvellir National Park and forms a noteworthy waterfall, the Öxarárfoss, at the Almannagjá gorge."
+    },
+    {
+      "id": "s6",
+      "name": "Öxarárfoss",
+      "quote": "Der Fluss Öxará durchströmt den Þingvellir-Nationalpark und formt an der Schlucht Almannagjá einen sehenswerten Wasserfall, den Öxarárfoss.",
+      "english": "The river Öxará flows through the Þingvellir National Park and forms a noteworthy waterfall, the Öxarárfoss, at the Almannagjá gorge."
+    },
+    {
+      "id": "s7",
+      "name": "Silfragjá",
+      "quote": "Zu einem außergewöhnlichen Tauchplatz hat sich die Silfragjá (Silfra-Spalte) entwickelt.",
+      "english": "The Silfragjá (Silfra Fissure) has developed into an extraordinary diving spot."
+    }
+  ],
+  "days": [
+    {
+      "title": "Tectonic Gorges and Waterways",
+      "stop_ids": [
+        "s3",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Historic Assembly and Underwater Fissures",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "The Great Lake Border",
+      "stop_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "_text_sha": "a5ad9d9c64284404a4357c80410204eaab33dd01cc08fc6425e672c0e4a05c7a"
+}

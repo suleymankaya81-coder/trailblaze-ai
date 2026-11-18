@@ -1,0 +1,54 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Jökulsárgljúfur",
+      "quote": "Der Fluss Jökulsá á Fjöllum stürzt im Norden Islands, etwa 30 Kilometer vor der Mündung in den Arktischen Ozean, in die bis über 100 Meter tiefe Schlucht Jökulsárgljúfur.",
+      "english": "The river Jökulsá á Fjöllum plunges in northern Iceland, about 30 kilometers before its mouth in the Arctic Ocean, into the canyon Jökulsárgljúfur, which is over 100 meters deep."
+    },
+    {
+      "id": "s2",
+      "name": "Selfoss",
+      "quote": "Einen Kilometer nach der etwa 10 Meter hohen Stufe des Selfoss folgt der Dettifoss.",
+      "english": "One kilometer after the approximately 10-meter-high step of Selfoss, Dettifoss follows."
+    },
+    {
+      "id": "s3",
+      "name": "Dettifoss",
+      "quote": "Der Dettifoss im Nordosten Islands ist einer der größten Wasserfälle Europas.",
+      "english": "Dettifoss in northeast Iceland is one of the largest waterfalls in Europe."
+    },
+    {
+      "id": "s4",
+      "name": "Hafragilsfoss",
+      "quote": "Über eine Breite von etwa 100 Metern ergießen sich hier die grau-braunen Wassermassen über 44 Meter in die Tiefe und strömen dann etwa zwei Kilometer weiter dem 27 Meter hohen Hafragilsfoss zu.",
+      "english": "Over a width of about 100 meters, the gray-brown water masses pour 44 meters into the depths and then flow about two kilometers further towards the 27-meter-high Hafragilsfoss."
+    },
+    {
+      "id": "s5",
+      "name": "Parkplatz",
+      "quote": "Am Ende befindet sich ein großer, kostenloser Parkplatz, der auch über WCs verfügt.",
+      "english": "At the end there is a large, free parking lot, which also has toilets."
+    },
+    {
+      "id": "s6",
+      "name": "Wanderweg",
+      "quote": "Das letzte Stück zum Wasserfall (ca. 1,5 Kilometer) muss über einen Wanderweg zu Fuß zurückgelegt werden.",
+      "english": "The last stretch to the waterfall (approx. 1.5 kilometers) must be covered on foot via a hiking trail."
+    }
+  ],
+  "days": [
+    {
+      "title": "Canyon Waterfalls and Access",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "63baf0884cb1ad508e21748e2c249d729a5894b69751779d61dd73bbe51fea71"
+}

@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Bláhnjúkur",
+      "quote": "Aus graublauem Pechstein besteht der Vulkan Bláhnjúkur.",
+      "english": "The volcano Bláhnjúkur consists of gray-blue pitchstone."
+    },
+    {
+      "id": "s2",
+      "name": "Brennisteinsalda",
+      "quote": "Rötlich-braune Hänge (Rhyolithgestein oder Quarztrachyt) sind am Vulkan Brennisteinsalda zu finden, die auch streckenweise wegen Schwefel- und Kalkausfällungen graue, bläuliche und weiße Farbgebungen zeigen.",
+      "english": "Reddish-brown slopes (rhyolite rock or quartz trachyte) can be found at the volcano Brennisteinsalda, which also show gray, bluish and white colorations in places due to sulfur and lime precipitates."
+    },
+    {
+      "id": "s3",
+      "name": "Laugahraun",
+      "quote": "Ein schwarz glänzendes Obsidianlavafeld, das Laugahraun, reicht von den Solfataren an der Brennisteinsalda bis zum Fluss, an dem eine Hütte des Isländischen Wandervereins steht und wo in einem dampfenden Bach gebadet werden kann.",
+      "english": "A shiny black obsidian lava field, the Laugahraun, extends from the solfataras at Brennisteinsalda to the river where a hut of the Icelandic Hiking Association stands and where one can bathe in a steaming stream."
+    },
+    {
+      "id": "s4",
+      "name": "Frostastaðavatn",
+      "quote": "In der Nähe von Landmannalaugar liegt der reizvolle See Frostastaðavatn, bis zu dem man auf markierten Wegen wandern kann.",
+      "english": "Near Landmannalaugar lies the charming lake Frostastaðavatn, to which one can hike on marked trails."
+    },
+    {
+      "id": "s5",
+      "name": "Ljótipollur",
+      "quote": "Weitere Wege führen von dort etwa nach Landmannahellir oder zum Krater Ljótipollur.",
+      "english": "Other paths lead from there for example to Landmannahellir or to the crater Ljótipollur."
+    },
+    {
+      "id": "s6",
+      "name": "Laugavegur",
+      "quote": "Berühmt ist der Trekkingweg Laugavegur, der von hier über Þórsmörk weiter bis nach Skógar an die Küste führt.",
+      "english": "Famous is the Laugavegur trekking trail, which leads from here via Þórsmörk further to Skógar on the coast."
+    },
+    {
+      "id": "s7",
+      "name": "Grænagil",
+      "quote": "Ein markierter, relativ leicht zu begehender Rundweg führt an seinem Fuße entlang durch die Schlucht Grænagil, auf das Lavafeld Laugahraun und an den Fumarolen und Schlammtöpfen beim Vulkan Brennisteinsalda vorbei über den Laugavegur wieder zurück nach Landmannalaugar.",
+      "english": "A marked, relatively easy-to-walk circular path leads along its foot through the Grænagil gorge, onto the Laugahraun lava field and past the fumaroles and mud pots at the Brennisteinsalda volcano via the Laugavegur back to Landmannalaugar."
+    },
+    {
+      "id": "s8",
+      "name": "Litla Brandsgil",
+      "quote": "Eine anspruchsvollere Rundwanderung führt von der Hütte in Landmannalaugar, über die Schlucht Litla Brandsgil, den Berg Skalli und an der Brennisteinsalda vorbei wieder nach Landmannalaugar zurück.",
+      "english": "A more demanding circular hike leads from the hut in Landmannalaugar, via the Litla Brandsgil gorge, the Skalli mountain and past Brennisteinsalda back to Landmannalaugar."
+    },
+    {
+      "id": "s9",
+      "name": "Skalli",
+      "quote": "Eine anspruchsvollere Rundwanderung führt von der Hütte in Landmannalaugar, über die Schlucht Litla Brandsgil, den Berg Skalli und an der Brennisteinsalda vorbei wieder nach Landmannalaugar zurück.",
+      "english": "A more demanding circular hike leads from the hut in Landmannalaugar, via the Litla Brandsgil gorge, the Skalli mountain and past Brennisteinsalda back to Landmannalaugar."
+    }
+  ],
+  "days": [
+    {
+      "title": "Volcanic Peaks and Lava Fields",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Lakes, Craters and Long Trails",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Gorges and Mountain Ridges",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "67ddd7bfa13d4b6d3023eef2223360786ae4fde72935789e272fd56c98e2f40d"
+}

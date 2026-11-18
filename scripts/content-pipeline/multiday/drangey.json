@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Fjaran",
+      "quote": "Die Fänger hausten in Buden in Fjaran, einem Ort im südlichen Teil der Insel.",
+      "english": "The catchers lived in huts in Fjaran, a place in the southern part of the island."
+    },
+    {
+      "id": "s2",
+      "name": "Drangey",
+      "quote": "Drangey ist die Kuh, südlich von ihr steht das Trollweib, ein Fels im Meer.",
+      "english": "Drangey is the cow; south of it stands the troll woman, a rock in the sea."
+    },
+    {
+      "id": "s3",
+      "name": "Trollweib",
+      "quote": "Drangey ist die Kuh, südlich von ihr steht das Trollweib, ein Fels im Meer.",
+      "english": "Drangey is the cow; south of it stands the troll woman, a rock in the sea."
+    },
+    {
+      "id": "s4",
+      "name": "Hütte",
+      "quote": "Hier wurde er auch, dann todeskrank, in seiner Hütte von Þorbjörn Öngull und seinen Leuten im Kampf getötet.",
+      "english": "Here he was also killed in battle, then terminally ill, in his hut by Þorbjörn Öngull and his people."
+    }
+  ],
+  "days": [
+    {
+      "title": "Legends and Settlements of Drangey",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "e07e0b664adc8b06c20f0e2035a4fbeff2eb08778fa41ecad308149c6bf5c39f"
+}

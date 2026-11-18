@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Langhóll",
+      "quote": "Die höchste Erhebung des Massivs trägt den Namen Langhóll (385 m).",
+      "english": "The highest elevation of the massif bears the name Langhóll (385 m)."
+    },
+    {
+      "id": "s2",
+      "name": "Fagridalur",
+      "quote": "Der Name setzt sich aus den isländischen Wörtern fagur („schön“), dalur („Tal“) und fjall („Berg“) zusammen und ist nach dem im nordwestlichen Teil des Massivs gelegenen Tal Fagridalur ([ˈfaɣrɪˌtaːlʏr̥], „schönes Tal“) benannt.",
+      "english": "The name is composed of the Icelandic words fagur (\"beautiful\"), dalur (\"valley\") and fjall (\"mountain\") and is named after the valley Fagridalur (\"beautiful valley\") located in the northwestern part of the massif."
+    },
+    {
+      "id": "s3",
+      "name": "Fagradalshraun",
+      "quote": "Das 2021 entstandene Lavafeld hat den Namen Fagradalshraun [ˈfaɣraˌtalsˌr̥œiːn] erhalten, obwohl es auf der entgegengesetzten Seite des Tals liegt.",
+      "english": "The lava field created in 2021 was given the name Fagradalshraun, although it lies on the opposite side of the valley."
+    },
+    {
+      "id": "s4",
+      "name": "Ísólfsstaðir",
+      "quote": "Archäologen unternahmen Notgrabungen, um das Grab eines nordischen Siedlers, Ísólfur frá Ísólfsstöðum, zu finden, bevor es von der Lava dauerhaft bedeckt wäre.",
+      "english": "Archaeologists undertook emergency excavations to find the grave of a Norse settler, Ísólfur from Ísólfsstaðir, before it was permanently covered by lava."
+    }
+  ],
+  "days": [
+    {
+      "title": "Massif Peaks and Historical Sites",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "d6071781a70c242a3507079b4a29534555709029505ba816c65cd32e790e5e70"
+}

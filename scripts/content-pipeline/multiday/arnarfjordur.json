@@ -1,0 +1,106 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Dynjandivogur",
+      "quote": "Er liegt etwa in ihrer Mitte und reicht von Nordwesten nach Südosten etwa 30 km ins Land bis zur Bucht Dynjandivogur.",
+      "english": "It lies approximately in their middle and reaches from northwest to southeast about 30 km inland to the bay Dynjandivogur."
+    },
+    {
+      "id": "s2",
+      "name": "Geirþjófsfjörður",
+      "quote": "Einer dieser Seitenfjorde ist z. B. der Geirþjófsfjörður.",
+      "english": "One of these side fjords is, for example, Geirþjófsfjörður."
+    },
+    {
+      "id": "s3",
+      "name": "Borgarfjörður",
+      "quote": "Der nördlichen Arm wiederum teilt sich in den Borgarfjörður und Dynjandisvogur auf.",
+      "english": "The northern arm in turn splits into Borgarfjörður and Dynjandisvogur."
+    },
+    {
+      "id": "s4",
+      "name": "Tjaldanesfell",
+      "quote": "Dort war vor vielen Millionen Jahren der Tjaldanesvulkan aktiv, dessen Reste noch in den Bergen, u. a. am Tjaldanesfell selbst und am höchsten Berg der Westfjorde, am Kaldbakur, zu sehen sind.",
+      "english": "Many millions of years ago, the Tjaldanes volcano was active there, the remains of which can still be seen in the mountains, including on Tjaldanesfell itself and on the highest mountain in the Westfjords, Kaldbakur."
+    },
+    {
+      "id": "s5",
+      "name": "Kaldbakur",
+      "quote": "Dort war vor vielen Millionen Jahren der Tjaldanesvulkan aktiv, dessen Reste noch in den Bergen, u. a. am Tjaldanesfell selbst und am höchsten Berg der Westfjorde, am Kaldbakur, zu sehen sind.",
+      "english": "Many millions of years ago, the Tjaldanes volcano was active there, the remains of which can still be seen in the mountains, including on Tjaldanesfell itself and on the highest mountain in the Westfjords, Kaldbakur."
+    },
+    {
+      "id": "s6",
+      "name": "Hrafnseyrarheiði",
+      "quote": "Die steile Passstraße, die nach der Hochebene, die sie durchquert, Hrafnseyrarheiði genannt wird, führt durch diese Berge bis in eine Höhe von 552 m hinauf und hinüber in den nördlich benachbarten Dýrafjörður.",
+      "english": "The steep pass road, which is named Hrafnseyrarheiði after the high plateau it crosses, leads through these mountains up to a height of 552 m and over into the neighboring Dýrafjörður to the north."
+    },
+    {
+      "id": "s7",
+      "name": "Hrafnseyri",
+      "quote": "Unterhalb und etwas östlich dieser Berge liegt der Weiler Hrafnseyri, der eine große Vergangenheit hat.",
+      "english": "Below and slightly east of these mountains lies the hamlet of Hrafnseyri, which has a great past."
+    },
+    {
+      "id": "s8",
+      "name": "Hrafnseyrarkirkja",
+      "quote": "In Hrafnseyri steht die 1886 erbaute Holzkirche Hrafnseyrarkirkja mit einem Dachreiter von 1897.",
+      "english": "In Hrafnseyri stands the wooden church Hrafnseyrarkirkja, built in 1886, with a ridge turret from 1897."
+    },
+    {
+      "id": "s9",
+      "name": "Lokinhamradalur",
+      "quote": "Am Nordufer am Eingang des Fjordes hingegen liegt das Lokinhamradalur.",
+      "english": "On the north shore at the entrance of the fjord, however, lies Lokinhamradalur."
+    },
+    {
+      "id": "s10",
+      "name": "Bíldudalur",
+      "quote": "Am Südufer des Fjords liegt der Ort Bíldudalur.",
+      "english": "The village of Bíldudalur lies on the south shore of the fjord."
+    },
+    {
+      "id": "s11",
+      "name": "Selárdalur",
+      "quote": "Von dort führt eine Stichstraße zur Mündung des Fjordes bis zum Hof Selárdalur.",
+      "english": "From there, a dead-end road leads to the mouth of the fjord up to the farm Selárdalur."
+    },
+    {
+      "id": "s12",
+      "name": "Dynjandi",
+      "quote": "Am südöstlichen Ufer des Arnarfjörður befindet sich der Wasserfall Dynjandi.",
+      "english": "The waterfall Dynjandi is located on the southeastern shore of Arnarfjörður."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Shore Peaks and Valleys",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s9"
+      ]
+    },
+    {
+      "title": "History and Waterfalls of the Inner Fjord",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s8",
+        "s12"
+      ]
+    },
+    {
+      "title": "Southern Settlements and Branches",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s10",
+        "s11"
+      ]
+    }
+  ],
+  "_text_sha": "497ee5cc3804cbec69f55840ff53185dcf6f5d087dbe042292b9e691d49706ae"
+}

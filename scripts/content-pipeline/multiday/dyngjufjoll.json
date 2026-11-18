@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Askja",
+      "quote": "In ihm liegt auch die Caldera der Askja.",
+      "english": "The caldera of Askja is also located within it."
+    },
+    {
+      "id": "s2",
+      "name": "Dyngjudalur",
+      "quote": "Auf der Westseite schneidet das Tal Dyngjudalur in die Berge ein, so dass man hier von den Vestari-Dyngjufjöll spricht.",
+      "english": "On the western side, the valley Dyngjudalur cuts into the mountains, so that one speaks here of the Vestari-Dyngjufjöll."
+    },
+    {
+      "id": "s3",
+      "name": "Þorvaldstindur",
+      "quote": "Der höchste Gipfel ist der Þorvaldstindur mit einer Höhe von 1.510 m.",
+      "english": "The highest peak is the Þorvaldstindur with a height of 1,510 m."
+    },
+    {
+      "id": "s4",
+      "name": "Jónsskarð",
+      "quote": "Auch einer der Pässe zwischen den Gipfeln, Jónsskarð, ist nach einem isländischen Geologen benannt, und zwar nach Jón Þorkelsson, der als Erster den Vulkan Askja beschrieb.",
+      "english": "Also one of the passes between the peaks, Jónsskarð, is named after an Icelandic geologist, namely after Jón Þorkelsson, who was the first to describe the volcano Askja."
+    },
+    {
+      "id": "s5",
+      "name": "Öskjuop",
+      "quote": "Der tiefstliegende Pass zwischen diesen Bergen, die gleichzeitig den Rand der Caldera Askja ausmachen, ist der Öskjuop.",
+      "english": "The lowest-lying pass between these mountains, which simultaneously form the rim of the Askja caldera, is the Öskjuop."
+    },
+    {
+      "id": "s6",
+      "name": "Öskjuvatn",
+      "quote": "Hier öffnet sich die Caldera (dt. für „Askja“) nach Osten und durch ihn führt auch ein Wanderweg zum See Öskjuvatn.",
+      "english": "Here the caldera (German for \"Askja\") opens to the east and through it a hiking trail also leads to the lake Öskjuvatn."
+    },
+    {
+      "id": "s7",
+      "name": "Drekagil",
+      "quote": "Ebenfalls im Osten davon liegt eine Schlucht namens Drachenschlucht (isl. Drekagil).",
+      "english": "Also to the east of it lies a gorge called Dragon Gorge (Icelandic: Drekagil)."
+    },
+    {
+      "id": "s8",
+      "name": "Dreki",
+      "quote": "Dort befindet sich eine Hütte Dreki des Wandervereins Akureyri.",
+      "english": "There is a hut, Dreki, belonging to the Akureyri Hiking Association."
+    },
+    {
+      "id": "s9",
+      "name": "Dyngjufjöll-Hütte",
+      "quote": "Dieser Wanderverein betreibt auch die Dyngjufjöll-Hütte, die sich nordnordwestlich der Askja befindet.",
+      "english": "This hiking association also operates the Dyngjufjöll Hut, which is located north-northwest of Askja."
+    }
+  ],
+  "days": [
+    {
+      "title": "Caldera and Central Peaks",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Eastern Passages and Lake",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Valleys and Mountain Huts",
+      "stop_ids": [
+        "s2",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "0ee556351d48c1a84c8c4664d270e79e825690f75504b4ad1b45ac5c49edcf73"
+}

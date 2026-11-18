@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hraunfossar",
+      "quote": "Die Hraunfossar (von isländisch [ˈr̥øyːnˌfɔsːar] ‚Lavawasserfälle‘) sind Wasserfälle in den Fluss Hvítá in der Nähe der Orte Húsafell und Reykholt im Westen Islands.",
+      "english": "The Hraunfossar (from Icelandic [ˈr̥øyːnˌfɔsːar] 'Lava Waterfalls') are waterfalls into the river Hvítá near the towns of Húsafell and Reykholt in western Iceland."
+    },
+    {
+      "id": "s2",
+      "name": "Hvítá",
+      "quote": "Der vom Langjökull-Gletscher gespeiste Fluss namens Hvitá gräbt sich sein Flussbett entlang der Grenze des zum Hallmundarhraun gehörigen Lavastromes Gráhraun, der dort zum Stehen gekommen ist.",
+      "english": "The river named Hvitá, fed by the Langjökull glacier, digs its riverbed along the edge of the Gráhraun lava flow belonging to the Hallmundarhraun, which came to a stop there."
+    },
+    {
+      "id": "s3",
+      "name": "Barnafoss",
+      "quote": "In unmittelbarer Nachbarschaft der Hraunfossar befindet sich der Wasserfall Barnafoss.",
+      "english": "In the immediate vicinity of the Hraunfossar is the Barnafoss waterfall."
+    },
+    {
+      "id": "s4",
+      "name": "Hallmundarhraun",
+      "quote": "Auf einer Länge von ca. 700 Meter strömt in über hundert kleinen Wasserfällen schäumend und sprudelnd Wasser aus dem schwarzen Gestein des ca. 1.000 Jahre alten Lavafeldes Hallmundarhraun.",
+      "english": "Over a length of about 700 meters, foaming and bubbling water flows in over a hundred small waterfalls from the black rock of the approx. 1,000-year-old Hallmundarhraun lava field."
+    },
+    {
+      "id": "s5",
+      "name": "Gráhraun",
+      "quote": "Der vom Langjökull-Gletscher gespeiste Fluss namens Hvitá gräbt sich sein Flussbett entlang der Grenze des zum Hallmundarhraun gehörigen Lavastromes Gráhraun, der dort zum Stehen gekommen ist.",
+      "english": "The river named Hvitá, fed by the Langjökull glacier, digs its riverbed along the edge of the Gráhraun lava flow belonging to the Hallmundarhraun, which came to a stop there."
+    },
+    {
+      "id": "s6",
+      "name": "Schlucht",
+      "quote": "Über den schäumenden Fluss Hvítá in der kleinen Schlucht führt eine Fußgängerbrücke.",
+      "english": "A pedestrian bridge leads over the foaming Hvítá river in the small gorge."
+    },
+    {
+      "id": "s7",
+      "name": "Fußgängerbrücke",
+      "quote": "Von ihr kann man sehr gut die Hraunfossar und den Barnafoss überblicken.",
+      "english": "From it, one can have a very good view over the Hraunfossar and the Barnafoss."
+    }
+  ],
+  "days": [
+    {
+      "title": "Waterfalls and River Features",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Lava Fields and Scenic Views",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "d3e411c5ab11aaadc80c7deb0e13f9c923bc84fda25a60469b46f9c06fbbd90b"
+}

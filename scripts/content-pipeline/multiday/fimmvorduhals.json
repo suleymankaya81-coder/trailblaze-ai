@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Skógarheiði",
+      "quote": "Nach Norden zu grenzt der Fimmvörðuháls an die Þórsmörk, nach Süden an die Skógarheiði.",
+      "english": "To the north, the Fimmvörðuháls borders on Þórsmörk, to the south on Skógarheiði."
+    },
+    {
+      "id": "s2",
+      "name": "Hrunagil",
+      "quote": "Ein Lavastrom floss in die Schlucht Hrunagil.",
+      "english": "A lava flow ran into the Hrunagil gorge."
+    },
+    {
+      "id": "s3",
+      "name": "Hvannárgil",
+      "quote": "Die Lava floss in Richtung der Schlucht Hvannárgil ab.",
+      "english": "The lava flowed away in the direction of the Hvannárgil gorge."
+    },
+    {
+      "id": "s4",
+      "name": "Magni",
+      "quote": "Die beiden Vulkankegel haben die Namen Magni (82 m Höhe) und Móði (47 m Höhe) erhalten, nach zwei Söhnen des Gottes Thor.",
+      "english": "The two volcanic cones were given the names Magni (82 m height) and Móði (47 m height), after two sons of the god Thor."
+    },
+    {
+      "id": "s5",
+      "name": "Móði",
+      "quote": "Die beiden Vulkankegel haben die Namen Magni (82 m Höhe) und Móði (47 m Höhe) erhalten, nach zwei Söhnen des Gottes Thor.",
+      "english": "The two volcanic cones were given the names Magni (82 m height) and Móði (47 m height), after two sons of the god Thor."
+    },
+    {
+      "id": "s6",
+      "name": "Wanderweg von Skógar nach Þórsmörk",
+      "quote": "Über den Fimmvörðuháls führt ein bekannter Wanderweg von Skógar nach Þórsmörk.",
+      "english": "A well-known hiking trail leads over the Fimmvörðuháls from Skógar to Þórsmörk."
+    },
+    {
+      "id": "s7",
+      "name": "fünf dicht beisammenstehenden Steinmännern",
+      "quote": "Dort wird geschildert, dass, obwohl der vielgenutzte Weg über den Pass zwischen den Gletschern sehr beliebt war, dessen Kennzeichnung doch zu wünschen übrig ließ, abgesehen von den fünf dicht beisammenstehenden Steinmännern auf der Passhöhe.",
+      "english": "There it is described that, although the frequently used path over the pass between the glaciers was very popular, its marking left much to be desired, apart from the five closely spaced cairns on the summit of the pass."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glacial Highlands and Historical Markers",
+      "stop_ids": [
+        "s1",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Volcanic Cones and Eruption Gorges",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "855b7c4164784c5c0a430966d7a0a66a8b08f440dd28aea47cefae8cdf98f7ea"
+}

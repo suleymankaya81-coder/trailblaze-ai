@@ -1,3 +1,8 @@
+## November 18 Iceland publication and multi-day plans
+- [ ] Resume the 40 cached facts, translate offline and publish complete places through existing checks.
+- [ ] Run cached source-bound AI day planning for published Iceland places and refresh German plans.
+- [ ] Verify counts, English/German pages and sitemaps; report unsupported multi-day plans and separate 61 discovery holds.
+
 ## November 17 complete Finland holds
 - [ ] Recover exact-place sources, verified coordinates and licensed unique covers for the 30 unpublished Finland catalog places.
 - [ ] Prepare cached English/German content and publish through the existing completeness checks.

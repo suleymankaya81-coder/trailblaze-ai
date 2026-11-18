@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kollafjörður",
+      "quote": "Das langgestreckte Gebirgsmassiv ist ca. 20 km lang und erstreckt sich im engeren Sinne vom Kollafjörður bis zum Hátindur, eigentlich aber bis nach Kjós bis zum Berg Skálafell, wobei es die Bereiche von drei erloschenen Zentralvulkanen berührt, nämlich des Stardalsvulkans bei Kjós (mit dem Zentrum etwa unter dem heutigen Berg Skálafell), des Kollafjörðurvulkans sowie des Hvalfjörðurvulkans.",
+      "english": "The elongated mountain massif is approx. 20 km long and extends in the narrower sense from Kollafjörður to Hátindur, but actually as far as Kjós to Mount Skálafell, touching the areas of three extinct central volcanoes, namely the Stardal volcano near Kjós (with the center roughly under today's Mount Skálafell), the Kollafjörður volcano and the Hvalfjörður volcano."
+    },
+    {
+      "id": "s2",
+      "name": "Hátindur",
+      "quote": "Der östlichste Gipfel ist Hátindur (909 m).",
+      "english": "The easternmost peak is Hátindur (909 m)."
+    },
+    {
+      "id": "s3",
+      "name": "Gunnlaugsskarð",
+      "quote": "Lange hielt man ihn auch für den höchsten Gipfel, aber es erwies sich, dass die Anhöhe nördlich des Gunnlaugsskarð noch höher ist, nämlich 914 m.",
+      "english": "For a long time it was also considered the highest peak, but it turned out that the elevation north of Gunnlaugsskarð is even higher, namely 914 m."
+    },
+    {
+      "id": "s4",
+      "name": "Kistufell",
+      "quote": "Besonders auffallend ist der Berg Kistufell, der am meisten nach Süden vorragt und etwa auf der Höhe von Mosfellsbær liegt.",
+      "english": "Particularly striking is Mount Kistufell, which protrudes furthest to the south and is roughly level with Mosfellsbær."
+    },
+    {
+      "id": "s5",
+      "name": "Moskarðshnúkar",
+      "quote": "Die östlichsten Gipfel des Gebirgszuges, die Moskarðshnúkar, leuchten ungewöhnlich hell.",
+      "english": "The easternmost peaks of the mountain range, the Moskarðshnúkar, glow unusually brightly."
+    },
+    {
+      "id": "s6",
+      "name": "Þverfellshorn",
+      "quote": "Die beiden ausgeschilderten Wanderwege führen auf das Þverfellshorn und auf den Kerhólakambur (851 m), auch Helikopterflüge für Touristen werden angeboten.",
+      "english": "The two signposted hiking trails lead to Þverfellshorn and to Kerhólakambur (851 m); helicopter flights for tourists are also offered."
+    },
+    {
+      "id": "s7",
+      "name": "Kerhólakambur",
+      "quote": "Die beiden ausgeschilderten Wanderwege führen auf das Þverfellshorn und auf den Kerhólakambur (851 m), auch Helikopterflüge für Touristen werden angeboten.",
+      "english": "The two signposted hiking trails lead to Þverfellshorn and to Kerhólakambur (851 m); helicopter flights for tourists are also offered."
+    }
+  ],
+  "days": [
+    {
+      "title": "Western and Central Peaks",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Eastern Heights",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "0d0ec849cc661be28968ad7da8afb1c0fa95428787f9a3a03770f0045cf73b2d"
+}

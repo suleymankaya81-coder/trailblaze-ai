@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Djúpivogur",
+      "quote": "Er erstreckt sich vom Fischerdorf Djúpivogur in nordwestlicher Richtung ins Landesinnere.",
+      "english": "It extends from the fishing village of Djúpivogur in a northwesterly direction inland."
+    },
+    {
+      "id": "s2",
+      "name": "Breiðdalsvulkan",
+      "quote": "Am Ostufer befinden sich die Reste des großen tertiären Breiðdalsvulkans, dessen Schlote bei gutem Wetter deutlich erkennbar sind.",
+      "english": "On the eastern shore are the remains of the large tertiary Breiðdalsvulkan volcano, whose vents are clearly visible in good weather."
+    },
+    {
+      "id": "s3",
+      "name": "Búlandstindur",
+      "quote": "Auch der pyramidenförmige über 900 m hohe Gipfel Búlandstindur auf dem Westufer verdankt seine Form Feuer und Eis.",
+      "english": "The pyramid-shaped peak Búlandstindur, over 900 m high on the western shore, also owes its shape to fire and ice."
+    },
+    {
+      "id": "s4",
+      "name": "Teigarhorn",
+      "quote": "Zu seinen Füßen liegt am sogenannten Teigarhorn eine bedeutende Fundstelle für verschiedene Minerale wie unter anderem Calcit (auch „Islandspat“), das in der Optik für seine doppelte Lichtbrechung bekannt ist und aus diesem Grund hier abgebaut wurde.",
+      "english": "At its feet at the so-called Teigarhorn lies an important site for various minerals such as calcite (also \"Iceland spar\"), which is known in optics for its double refraction and was mined here for this reason."
+    },
+    {
+      "id": "s5",
+      "name": "Teigarhorn-Hof",
+      "quote": "Am Teigarhorn befindet sich zudem der gleichnamige „Teigarhorn-Hof“ der Familie Weywadt, auf dem auch Nicoline Weywadt lebte, die als erste Isländerin als Fotografin arbeitete.",
+      "english": "The \"Teigarhorn-Hof\" of the Weywadt family is also located at Teigarhorn, where Nicoline Weywadt, the first Icelandic woman to work as a photographer, lived."
+    },
+    {
+      "id": "s6",
+      "name": "Öxi",
+      "quote": "Auf dem 19 km langen Axarvegur über den Pass Öxi, der im Inneren des Fjordes abzweigt, kann man den Weg zwischen Djúpivogur und Egilsstaðir auf 85 km verkürzen.",
+      "english": "On the 19 km long Axarvegur over the Öxi pass, which branches off in the interior of the fjord, one can shorten the route between Djúpivogur and Egilsstaðir to 85 km."
+    },
+    {
+      "id": "s7",
+      "name": "Berunes",
+      "quote": "Am Ostufer des Fjords befindet sich die Jugendherberge Berunes in dem früheren Wohnhaus.",
+      "english": "The Berunes youth hostel is located in the former residence on the eastern shore of the fjord."
+    },
+    {
+      "id": "s8",
+      "name": "Beruneskirkja",
+      "quote": "Gegenüber befindet sich die Holzkirche Beruneskirkja, die 1874 mit einer Länge von 7,09 m und einer Breite von 4,12 m erbaut und 1963 um westlichen einen Vorbau (1,29 × 1,95 m) erweitert wurde.",
+      "english": "Opposite is the wooden church Beruneskirkja, which was built in 1874 with a length of 7.09 m and a width of 4.12 m and was extended in 1963 by a western porch (1.29 x 1.95 m)."
+    },
+    {
+      "id": "s9",
+      "name": "Berufjarðarkirkja",
+      "quote": "Auf dem Hof Berufjörður am nordwestlichen Ende des Fjords steht die 1938 erbaute und 1940 eingeweihte Holzkirche Berufjarðarkirkja.",
+      "english": "The wooden church Berufjarðarkirkja, built in 1938 and consecrated in 1940, stands on the Berufjörður farm at the northwestern end of the fjord."
+    }
+  ],
+  "days": [
+    {
+      "title": "Southern Village and Mineral Shores",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Eastern Peaks and Historic Parish",
+      "stop_ids": [
+        "s2",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Western Mountains and Inner Fjord Passes",
+      "stop_ids": [
+        "s3",
+        "s6",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "cda21d98621866ab3afb5edfba261a466b2b71d5b262f9654d38d72b1f534d31"
+}

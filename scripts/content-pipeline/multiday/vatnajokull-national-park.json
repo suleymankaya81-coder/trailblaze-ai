@@ -1,0 +1,99 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Askja",
+      "quote": "Die Vulkane Askja, Kverkfjöll und Snæfell beherrschen dieses Gebiet, ebenso wie der vulkanische Tafelberg Herðubreið.",
+      "english": "The volcanoes Askja, Kverkfjöll and Snæfell dominate this area, as does the volcanic table mountain Herðubreið."
+    },
+    {
+      "id": "s2",
+      "name": "Kverkfjöll",
+      "quote": "Das östliche Gebiet schließt neben dem Kverkfjöll-Gebirge und dem nordöstlichen Teil des Vatnajökulls auch Ausläufer des Snæfellsöræfi mit ein.",
+      "english": "The eastern area includes the Kverkfjöll mountains and the northeastern part of Vatnajökull as well as the foothills of Snæfellsöræfi."
+    },
+    {
+      "id": "s3",
+      "name": "Jökulsárgljúfur",
+      "quote": "Vor langer Zeit schnitten gewaltige Gletscherfluten die Jökulsárgljúfur Schlucht in den nördlichen Teil dieses Plateaus.",
+      "english": "Long ago, massive glacial floods cut the Jökulsárgljúfur canyon into the northern part of this plateau."
+    },
+    {
+      "id": "s4",
+      "name": "Dettifoss",
+      "quote": "Der mächtige Wasserfall Dettifoss donnert immer noch in das obere Ende dieser Schlucht, während die pittoresken Landschaften bei Hljóðaklettar und die hufeisenförmigen Klippen von Ásbyrgi weiter nördlich zu finden sind.",
+      "english": "The mighty Dettifoss waterfall still thunders into the upper end of this gorge, while the picturesque landscapes at Hljóðaklettar and the horseshoe-shaped cliffs of Ásbyrgi can be found further north."
+    },
+    {
+      "id": "s5",
+      "name": "Hljóðaklettar",
+      "quote": "Der mächtige Wasserfall Dettifoss donnert immer noch in das obere Ende dieser Schlucht, während die pittoresken Landschaften bei Hljóðaklettar und die hufeisenförmigen Klippen von Ásbyrgi weiter nördlich zu finden sind.",
+      "english": "The mighty Dettifoss waterfall still thunders into the upper end of this gorge, while the picturesque landscapes at Hljóðaklettar and the horseshoe-shaped cliffs of Ásbyrgi can be found further north."
+    },
+    {
+      "id": "s6",
+      "name": "Ásbyrgi",
+      "quote": "Ein Besucherzentrum und ein Zeltplatz sind in Ásbyrgi zu finden, ein weiterer Zeltplatz ist bei Vesturdalur.",
+      "english": "A visitor center and a campsite can be found in Ásbyrgi, another campsite is at Vesturdalur."
+    },
+    {
+      "id": "s7",
+      "name": "Skaftafell",
+      "quote": "Geschützt durch die hohen Eismassen, überblickt die bewachsene Oase von Skaftafell die schwarzen Sande, welche westlich von dem Fluss Skeiðará abgelagert wurden.",
+      "english": "Protected by the high ice masses, the vegetated oasis of Skaftafell overlooks the black sands deposited west of the river Skeiðará."
+    },
+    {
+      "id": "s8",
+      "name": "Hvannadalshnjúkur",
+      "quote": "Der südlichste Teil des Gletschers bedeckt den Zentralvulkan Öræfajökull und Islands höchsten Berggipfel, den Hvannadalshnjúkur.",
+      "english": "The southernmost part of the glacier covers the central volcano Öræfajökull and Iceland's highest mountain peak, Hvannadalshnjúkur."
+    },
+    {
+      "id": "s9",
+      "name": "Morsárfoss",
+      "quote": "Im Süden des Vatnajökull-Nationalparks befindet sich der Morsárfoss, der höchste Wasserfall Islands.",
+      "english": "In the south of Vatnajökull National Park is Morsárfoss, the highest waterfall in Iceland."
+    },
+    {
+      "id": "s10",
+      "name": "Lakagígar",
+      "quote": "Dort fanden zwei der weltgrößten Spaltenbildungen und Lava-Eruptionen in historischer Zeitrechnung statt: bei Eldgjá (934) und Lakagígar (1783–1784).",
+      "english": "Two of the world's largest fissure formations and lava eruptions in historical times took place there: at Eldgjá (934) and Lakagígar (1783–1784)."
+    },
+    {
+      "id": "s11",
+      "name": "Langisjór",
+      "quote": "Das westliche Gebiet erstreckt sich durch den südwestlichen Teil des Vatnajökulls und weite Gebiete außerhalb des Gletschers, inklusive der Lakagígar-Krater und Langisjór.",
+      "english": "The western area extends through the southwestern part of Vatnajökull and vast areas outside the glacier, including the Lakagígar craters and Langisjór."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Canyons and Highlands",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Southern Peaks and Oases",
+      "stop_ids": [
+        "s7",
+        "s8",
+        "s9"
+      ]
+    },
+    {
+      "title": "Volcanic West and Eastern Mountains",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s10",
+        "s11"
+      ]
+    }
+  ],
+  "_text_sha": "36dfd0fa6e0259ea609ec163e88c29e78e6b4d2ace94ef2a5b288a5bbcdc0616"
+}

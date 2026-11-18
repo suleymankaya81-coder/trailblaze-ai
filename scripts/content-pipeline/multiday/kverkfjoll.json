@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kverkjökull",
+      "quote": "In dieser fließt der Talgletscher Kverkjökull nach Nordwesten bis hinunter auf die 900 m hohe Hochebene vor den Bergen.",
+      "english": "In this gap, the valley glacier Kverkjökull flows northwest down to the 900 m high plateau in front of the mountains."
+    },
+    {
+      "id": "s2",
+      "name": "Skarphéðinstindur",
+      "quote": "Der höchste Gipfel Skarphéðinstindur erreicht eine Höhe von 1936 m.",
+      "english": "The highest peak Skarphéðinstindur reaches a height of 1936 m."
+    },
+    {
+      "id": "s3",
+      "name": "Gengissig",
+      "quote": "Die nördliche Caldera heißt Gengissig und liegt etwas südöstlich der Hütte des Gletschervereins (Jöklarannsóknarfélag), die andere Caldera heißt Galtarlón und liegt im Efri Hveradalur.",
+      "english": "The northern caldera is named Gengissig and is located slightly southeast of the glacier association hut (Jöklarannsóknarfélag), the other caldera is named Galtarlón and is located in the Efri Hveradalur."
+    },
+    {
+      "id": "s4",
+      "name": "Hveradalir",
+      "quote": "Dort liegt ein enges Tal, das sich in den westlichen Gebirgszug hineinzieht, die Hveradalir, zu denen eine anstrengende Gletscherwanderung hinaufführt.",
+      "english": "There lies a narrow valley that extends into the western mountain range, the Hveradalir, to which a strenuous glacier hike leads up."
+    },
+    {
+      "id": "s5",
+      "name": "Galtarlón",
+      "quote": "Innen im Hveradalir befindet sich der See Galtarlón in einer kleinen Caldera.",
+      "english": "Inside the Hveradalir is the lake Galtarlón in a small caldera."
+    },
+    {
+      "id": "s6",
+      "name": "Gámur",
+      "quote": "Dort liegt auch Gámur, eine große Fumarole.",
+      "english": "There also lies Gámur, a large fumarole."
+    },
+    {
+      "id": "s7",
+      "name": "Hveragil",
+      "quote": "Bewuchs findet man vor allem rund um die heißen Quellen in der Hveragil.",
+      "english": "Vegetation is found mainly around the hot springs in the Hveragil."
+    },
+    {
+      "id": "s8",
+      "name": "Sigurðarskáli",
+      "quote": "Die vergleichsweise komfortable Hütte Sigurðarskáli der Fljotsdalsherad and Husavik Touring Clubs liegt am Fuße der Kverkfjöll auf ca. 900 m Höhe ().",
+      "english": "The relatively comfortable Sigurðarskáli hut of the Fljotsdalsherad and Husavik Touring Clubs is located at the foot of the Kverkfjöll at an altitude of approx. 900 m ()."
+    },
+    {
+      "id": "s9",
+      "name": "Kverkfjallaskali",
+      "quote": "In unmittelbarer Nähe des aktiven Geothermalgebiets Hveradalir liegt auf 1718 m Höhe die Hütte Kverkfjallaskali ().",
+      "english": "In the immediate vicinity of the active geothermal area Hveradalir lies the Kverkfjallaskali hut at an altitude of 1718 m ()."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glacial Peaks and Base Huts",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s8"
+      ]
+    },
+    {
+      "title": "Calderas and High Altitude Lakes",
+      "stop_ids": [
+        "s3",
+        "s5",
+        "s9"
+      ]
+    },
+    {
+      "title": "Geothermal Valleys and Fumaroles",
+      "stop_ids": [
+        "s4",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "39582c5c424b06408c68b9893be62bd2958d79f70d10075327636fbe07484925"
+}

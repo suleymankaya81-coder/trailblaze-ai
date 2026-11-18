@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Jarlhettur",
+      "quote": "Etliche Berge und Gebirgszüge liegen am Rand des Gletschers, wie z. B. der vulkanische Gebirgszug Jarlhettur, welchen man gut von oberhalb des Wasserfalls Gullfoss sehen kann.",
+      "english": "Several mountains and mountain ranges lie at the edge of the glacier, such as the volcanic mountain range Jarlhettur, which can be clearly seen from above the Gullfoss waterfall."
+    },
+    {
+      "id": "s2",
+      "name": "Hvítárvatn",
+      "quote": "Dabei weist er eine Schmalstelle zwischen dem See Hvítárvatn an des Kjalvegurs und dem Talgletscher Þrístapajökull auf, der in Richtung Eiríksjökull nach Nordwesten hinunterreicht.",
+      "english": "It shows a narrow point between the lake Hvítárvatn on the Kjalvegur and the valley glacier Þrístapajökull, which reaches down to the northwest towards Eiríksjökull."
+    },
+    {
+      "id": "s3",
+      "name": "Skríðufell",
+      "quote": "Am See Hvítárvatn liegt der Gipfel Skríðufell.",
+      "english": "The peak Skríðufell is located at the lake Hvítárvatn."
+    },
+    {
+      "id": "s4",
+      "name": "Fjallkirkja",
+      "quote": "Weitere Gipfel sind Fjallkirkja (1177 m) und Hyrning (1320 m).",
+      "english": "Other peaks are Fjallkirkja (1177 m) and Hyrning (1320 m)."
+    },
+    {
+      "id": "s5",
+      "name": "Hyrning",
+      "quote": "Etwas östlich der Fjallkirkja befindet sich seit 1979 eine Hütte des isländischen Gletschervereins (Jöklarannskóknarfélag).",
+      "english": "A little east of Fjallkirkja, there has been a hut of the Icelandic Glacier Association (Jöklarannskóknarfélag) since 1979."
+    },
+    {
+      "id": "s6",
+      "name": "Þursaborg",
+      "quote": "Etwa nordwestlich des Sees Hvítárvatn ragen die Berge Þursaborg (1290 m) und Péturshorn (1370 m) auf.",
+      "english": "Approximately northwest of lake Hvítárvatn, the mountains Þursaborg (1290 m) and Péturshorn (1370 m) rise up."
+    },
+    {
+      "id": "s7",
+      "name": "Geitlandsjökull",
+      "quote": "Der bekannteste von ihnen ist Geitlandsjökull (1395 m), ein von einem Gletscher bedeckter Tafelberg, der mit dem Langjökull verbunden ist und im Südwesten aus ihm herausragt.",
+      "english": "The most well-known of them is Geitlandsjökull (1395 m), a table mountain covered by a glacier, which is connected to Langjökull and protrudes from it in the southwest."
+    },
+    {
+      "id": "s8",
+      "name": "Hveravellir",
+      "quote": "Das Hochtemperaturgebiet von Hveravellir gehört zu diesem Vulkansystem.",
+      "english": "The high-temperature area of Hveravellir belongs to this volcanic system."
+    }
+  ],
+  "days": [
+    {
+      "title": "Southern Ridges and Peaks",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Hvítárvatn Lake and Northern Sights",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s6",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "b0b44ebf3c624bfb8e8ae231c0dfb6b018200cd679704e71cb3a70c50efcad30"
+}

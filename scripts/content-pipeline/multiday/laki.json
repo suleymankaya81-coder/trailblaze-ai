@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Laki-Krater",
+      "quote": "Die Laki-Krater (isländisch Lakagígar) liegen im Süden Islands in der Nähe der Ausbruchsspalte Eldgjá.",
+      "english": "The Laki craters (Icelandic Lakagígar) are located in the south of Iceland near the Eldgjá fissure."
+    },
+    {
+      "id": "s2",
+      "name": "Eldgjá",
+      "quote": "Die Gegend, zu der auch die Eldgjá gehört, ist bekannt für einige der gewaltigsten Vulkanausbrüche Islands.",
+      "english": "The area, to which the Eldgjá also belongs, is known for some of Iceland's most powerful volcanic eruptions."
+    },
+    {
+      "id": "s3",
+      "name": "Skaftá",
+      "quote": "Der Fluss Skaftá, durch den normalerweise bis zu 100 m³/s an Wasser strömen, trocknete am 11. Juni durch Verdunstung völlig aus.",
+      "english": "The Skaftá river, through which up to 100 m³/s of water normally flows, dried up completely on June 11th due to evaporation."
+    },
+    {
+      "id": "s4",
+      "name": "Hverfisfljót",
+      "quote": "Ein weiterer sehr umfangreicher Lavastrom entsprang Anfang August und folgte dem Tal des Flusses Hverfisfljót.",
+      "english": "Another very extensive lava flow emerged at the beginning of August and followed the valley of the river Hverfisfljót."
+    },
+    {
+      "id": "s5",
+      "name": "Ytra-Eldhraun",
+      "quote": "Die beiden Lavaströme werden Ytra-Eldhraun und Eystra-Eldhraun genannt.",
+      "english": "The two lava flows are called Ytra-Eldhraun and Eystra-Eldhraun."
+    },
+    {
+      "id": "s6",
+      "name": "Eystra-Eldhraun",
+      "quote": "Die beiden Lavaströme werden Ytra-Eldhraun und Eystra-Eldhraun genannt.",
+      "english": "The two lava flows are called Ytra-Eldhraun and Eystra-Eldhraun."
+    },
+    {
+      "id": "s7",
+      "name": "Kirkjubæjarklaustur",
+      "quote": "Eine Kapelle in Kirkjubæjarklaustur erinnert an Jón Steingrímsson.",
+      "english": "A chapel in Kirkjubæjarklaustur commemorates Jón Steingrímsson."
+    }
+  ],
+  "days": [
+    {
+      "title": "Craters and Canyons of the Fire Districts",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Lava Fields and River Valleys",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Historical Sites of the Southern Region",
+      "stop_ids": [
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "467671c3729af2a9a3ff74163c92e3ff0f2cc6d9643d210dd90d4bb270ddf7ba"
+}

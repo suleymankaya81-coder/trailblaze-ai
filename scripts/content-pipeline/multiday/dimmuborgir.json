@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Dimmuborgir",
+      "quote": "In der isländischen Mythologie wird Dimmuborgir als Unterkunftsort von Elfen und Trollen gesehen.",
+      "english": "In Icelandic mythology, Dimmuborgir is seen as a place of residence for elves and trolls."
+    },
+    {
+      "id": "s2",
+      "name": "Hverfjall",
+      "quote": "Nordöstlich angrenzend liegt der Tuffring Hverfjall.",
+      "english": "The tuff ring Hverfjall is adjacent to the northeast."
+    },
+    {
+      "id": "s3",
+      "name": "Mývatn",
+      "quote": "Bei Dimmuborgir handelt es sich um ein Lavafeld und die Überreste eines Lavasees östlich des Sees Mývatn in Island.",
+      "english": "Dimmuborgir is a lava field and the remains of a lava lake east of Lake Mývatn in Iceland."
+    },
+    {
+      "id": "s4",
+      "name": "Wanderwege",
+      "quote": "Verschiedene ausgewiesene und beschilderte Wanderwege mit unterschiedlichen Längen und Schwierigkeitsgraden führen durch das Gebiet.",
+      "english": "Various designated and signposted hiking trails of different lengths and difficulty levels lead through the area."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lava Formations and Lake Views",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "8ef13b201431e2c5ec36ded4a708cbc5aaf681036f873d4ed64867d6f56340a2"
+}

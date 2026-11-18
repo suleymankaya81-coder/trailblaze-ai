@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Ísafjörður",
+      "quote": "Die wichtigsten Orte der Region sind Ísafjörður und Bolungarvík.",
+      "english": "The most important places in the region are Ísafjörður and Bolungarvík."
+    },
+    {
+      "id": "s2",
+      "name": "Bolungarvík",
+      "quote": "Die wichtigsten Orte der Region sind Ísafjörður und Bolungarvík.",
+      "english": "The most important places in the region are Ísafjörður and Bolungarvík."
+    },
+    {
+      "id": "s3",
+      "name": "Hornstrandir",
+      "quote": "Die nördliche Halbinsel Hornstrandir ist im Winter sogar gänzlich unbewohnt.",
+      "english": "The northern peninsula Hornstrandir is even completely uninhabited in winter."
+    },
+    {
+      "id": "s4",
+      "name": "Gjögur",
+      "quote": "Und das oft regnerische oder stürmische Wetter behindert den Flugverkehr (nach Ísafjörður und Gjögur).",
+      "english": "And the often rainy or stormy weather hinders air traffic (to Ísafjörður and Gjögur)."
+    },
+    {
+      "id": "s5",
+      "name": "Dynjandi",
+      "quote": "Touristisch wenig erschlossen ist etwa noch die Gegend nahe dem Dynjandi (auch Fjallfoss), des mit 100 m höchsten Wasserfalls der Westfjorde.",
+      "english": "The area near Dynjandi (also Fjallfoss), at 100 m the highest waterfall in the Westfjords, is still little developed for tourism."
+    },
+    {
+      "id": "s6",
+      "name": "Ísafjarðardjúp",
+      "quote": "Das Meeresgebiet am Ausgang des Eisfjords Ísafjarðardjúp bietet sehr gute Möglichkeiten zum Angeln von Dorsch, Heilbutt, Steinbeißer und teilweise auch Schellfisch, Seelachs und Rotbarsch.",
+      "english": "The sea area at the exit of the ice fjord Ísafjarðardjúp offers very good opportunities for fishing cod, halibut, wolffish and sometimes also haddock, saithe and redfish."
+    },
+    {
+      "id": "s7",
+      "name": "Súðavík",
+      "quote": "Zahlreiche Menschen ziehen in die Hauptstadtregion oder wandern in andere Länder aus, so beispielsweise nach einer Lawinenkatastrophe im Jahr 1995 (siehe auch: Súðavík).",
+      "english": "Numerous people move to the capital region or emigrate to other countries, for example after an avalanche disaster in 1995 (see also: Súðavík)."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Fjords and Settlements",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Remote Wilderness and Waterfalls",
+      "stop_ids": [
+        "s3",
+        "s5"
+      ]
+    },
+    {
+      "title": "Coastal Waters and Airfields",
+      "stop_ids": [
+        "s4",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "c50c00aeea825d58d2f99cacea3b352ea39075f746ac0d7b3b90f9e9b0b6e2b9"
+}

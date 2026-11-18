@@ -1,0 +1,59 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kleifarvatn",
+      "quote": "Der Kleifarvatn ist ein See auf der isländischen Reykjanes-Halbinsel.",
+      "english": "Kleifarvatn is a lake on the Icelandic Reykjanes Peninsula."
+    },
+    {
+      "id": "s2",
+      "name": "Sveifluháls",
+      "quote": "Berge rahmen den See von allen Seiten ein, darunter im Westen der 407 Meter hohe Palagonitrücken Sveifluháls.",
+      "english": "Mountains frame the lake on all sides, including the 407-meter-high palagonite ridge Sveifluháls in the west."
+    },
+    {
+      "id": "s3",
+      "name": "Krýsuvík",
+      "quote": "Die Gegend um den Kleifarvatn ist geprägt von den ihn umgebenden aktiven Vulkanen, er selbst liegt mitten im Gebiet des Vulkansystems von Krýsuvík.",
+      "english": "The area around Kleifarvatn is characterized by the active volcanoes surrounding it; it itself lies in the middle of the Krýsuvík volcanic system."
+    },
+    {
+      "id": "s4",
+      "name": "Seltún",
+      "quote": "In der Nähe des Sees befinden sich zwei Hochtemperaturgebiete, eines bei Seltún (siehe Bild bei Reykjanesskagi), ein weiteres im Osten des Sees.",
+      "english": "Two high-temperature areas are located near the lake, one at Seltún (see image at Reykjanesskagi), another in the east of the lake."
+    },
+    {
+      "id": "s5",
+      "name": "Ögmundarhraun",
+      "quote": "Ein alter Hof namens Krýsuvík wurde durch die Lava des Ögmundarhraun 1151 zerstört, gleichnamige Höfe waren an anderer Stelle bis 1857 bewohnt.",
+      "english": "An old farm named Krýsuvík was destroyed by the lava of the Ögmundarhraun in 1151; farms of the same name were inhabited elsewhere until 1857."
+    },
+    {
+      "id": "s6",
+      "name": "Krísuvíkurkirkjan",
+      "quote": "Von dem Weiler steht als einziges Gebäude noch im Südwesten des Sees das kleine Kirchlein Krísuvíkurkirkjan, das sich unter Denkmalschutz befindet und heute vom Nationalmuseum Þjóðminjasafn in Reykjavík betreut wird.",
+      "english": "The small church Krísuvíkurkirkjan is the only building of the hamlet still standing to the southwest of the lake; it is a listed building and is now maintained by the National Museum Þjóðminjasafn in Reykjavík."
+    }
+  ],
+  "days": [
+    {
+      "title": "Lake Landscapes and Volcanic Ridges",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Geothermal Systems and Historic Settlements",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "9fad2a5a0255d0c8d420d5447662298d3f4d130113bc9a46ba6d7ac7017b05c4"
+}

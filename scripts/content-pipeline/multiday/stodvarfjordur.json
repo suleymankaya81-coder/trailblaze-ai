@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Stöðvarfjörður",
+      "quote": "Der Ort liegt im gleichnamigen Fjord und seit November 2017 an der Ringstraße .",
+      "english": "The town lies in the fjord of the same name and has been on the Ring Road since November 2017."
+    },
+    {
+      "id": "s2",
+      "name": "Sammlung von Petra Sveinsdóttir",
+      "quote": "Die große private Sammlung von Petra Sveinsdóttir (1922–2012) zeigt vor allem viele unterschiedliche Kristalle, für die die Gegend berühmt sind.",
+      "english": "The large private collection of Petra Sveinsdóttir (1922–2012) primarily shows many different crystals, for which the region is famous."
+    },
+    {
+      "id": "s3",
+      "name": "Stöð",
+      "quote": "2003 wurden in der Nähe des Gehöftes Stöð durch Zufall die Fundamente zweier Langhäuser aus der Zeit der Wikinger entdeckt.",
+      "english": "In 2003, the foundations of two Viking-era longhouses were discovered by chance near the Stöð farm."
+    },
+    {
+      "id": "s4",
+      "name": "Schwimmbad",
+      "quote": "Stöðvarfjörður verfügt über eine Grundschule, Kindergarten, Bibliothek und über ein Schwimmbad.",
+      "english": "Stöðvarfjörður has a primary school, kindergarten, library, and a swimming pool."
+    },
+    {
+      "id": "s5",
+      "name": "Campingplatz",
+      "quote": "Im Ort befinden sich ein Campingplatz und andere Unterkünfte für Touristen.",
+      "english": "In the village, there is a campsite and other accommodations for tourists."
+    },
+    {
+      "id": "s6",
+      "name": "Stöðvarfjarðarkirkja",
+      "quote": "Als sie baufällig war, errichtete man im Ort 1925 die Kirche Stöðvarfjarðarkirkja.",
+      "english": "When it became dilapidated, the Stöðvarfjarðarkirkja church was built in the village in 1925."
+    },
+    {
+      "id": "s7",
+      "name": "Die neue Kirche",
+      "quote": "Die neue Kirche etwas außerhalb des Ortes wurde 1991 erbaut.",
+      "english": "The new church, located slightly outside the village, was built in 1991."
+    }
+  ],
+  "days": [
+    {
+      "title": "Natural Scenery and Historic Sites",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "title": "Local Culture and Village Life",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "8e8567133d12b3740cc2b69175bd6f13e64c840a706f8e48ee844ccd65a66efe"
+}

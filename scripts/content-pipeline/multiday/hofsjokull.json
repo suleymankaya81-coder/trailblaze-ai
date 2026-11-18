@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Arnarfell hið mikla",
+      "quote": "Im Süden Islands nannte man ihn allerdings Arnarfellsjökull nach dem im Südosten vorgelagerten Berg Arnarfell hið mikla.",
+      "english": "In the south of Iceland, however, it was called Arnarfellsjökull after the mountain Arnarfell hið mikla, which lies in front of it to the southeast."
+    },
+    {
+      "id": "s2",
+      "name": "Hásteinar",
+      "quote": "Eine Ausnahme bilden nur die Felsnadeln und -wände der Hásteinar im Süden des Gipfels, die aus saurem Gestein bestehen und ihre Umgebung um ca. 100 m überragen.",
+      "english": "The only exception is the rock pinnacles and walls of the Hásteinar to the south of the summit, which consist of acidic rock and tower about 100 m above their surroundings."
+    },
+    {
+      "id": "s3",
+      "name": "Múlajökull",
+      "quote": "Die tiefste vergletscherte Stelle befindet sich unter der Gletscherzunge Múlajökull auf 470 m und ist damit ca. 130 m tiefer als das umgebende Land.",
+      "english": "The deepest glaciated point is located under the Múlajökull glacier tongue at 470 m, which is approximately 130 m deeper than the surrounding land."
+    },
+    {
+      "id": "s4",
+      "name": "Álftabrekkur",
+      "quote": "Außer dem schon erwähnten Árnafell sind weitere Berge dem Gletscherschild vorgelagert: Álftabrekkur im Nordwesten, Miklafell und Klakkur im Osten, Hjartafell und Ólafsfell im Süden sowie Blágnípa im Westen.",
+      "english": "In addition to the already mentioned Árnafell, other mountains are situated in front of the ice sheet: Álftabrekkur in the northwest, Miklafell and Klakkur in the east, Hjartafell and Ólafsfell in the south, and Blágnípa in the west."
+    },
+    {
+      "id": "s5",
+      "name": "Miklafell",
+      "quote": "Außer dem schon erwähnten Árnafell sind weitere Berge dem Gletscherschild vorgelagert: Álftabrekkur im Nordwesten, Miklafell und Klakkur im Osten, Hjartafell und Ólafsfell im Süden sowie Blágnípa im Westen.",
+      "english": "In addition to the already mentioned Árnafell, other mountains are situated in front of the ice sheet: Álftabrekkur in the northwest, Miklafell and Klakkur in the east, Hjartafell and Ólafsfell in the south, and Blágnípa in the west."
+    },
+    {
+      "id": "s6",
+      "name": "Klakkur",
+      "quote": "Außer dem schon erwähnten Árnafell sind weitere Berge dem Gletscherschild vorgelagert: Álftabrekkur im Nordwesten, Miklafell und Klakkur im Osten, Hjartafell und Ólafsfell im Süden sowie Blágnípa im Westen.",
+      "english": "In addition to the already mentioned Árnafell, other mountains are situated in front of the ice sheet: Álftabrekkur in the northwest, Miklafell and Klakkur in the east, Hjartafell and Ólafsfell in the south, and Blágnípa in the west."
+    },
+    {
+      "id": "s7",
+      "name": "Hjartafell",
+      "quote": "Außer dem schon erwähnten Árnafell sind weitere Berge dem Gletscherschild vorgelagert: Álftabrekkur im Nordwesten, Miklafell und Klakkur im Osten, Hjartafell und Ólafsfell im Süden sowie Blágnípa im Westen.",
+      "english": "In addition to the already mentioned Árnafell, other mountains are situated in front of the ice sheet: Álftabrekkur in the northwest, Miklafell and Klakkur in the east, Hjartafell and Ólafsfell in the south, and Blágnípa in the west."
+    },
+    {
+      "id": "s8",
+      "name": "Ólafsfell",
+      "quote": "Außer dem schon erwähnten Árnafell sind weitere Berge dem Gletscherschild vorgelagert: Álftabrekkur im Nordwesten, Miklafell und Klakkur im Osten, Hjartafell und Ólafsfell im Süden sowie Blágnípa im Westen.",
+      "english": "In addition to the already mentioned Árnafell, other mountains are situated in front of the ice sheet: Álftabrekkur in the northwest, Miklafell and Klakkur in the east, Hjartafell and Ólafsfell in the south, and Blágnípa in the west."
+    },
+    {
+      "id": "s9",
+      "name": "Blágnípa",
+      "quote": "Außer dem schon erwähnten Árnafell sind weitere Berge dem Gletscherschild vorgelagert: Álftabrekkur im Nordwesten, Miklafell und Klakkur im Osten, Hjartafell und Ólafsfell im Süden sowie Blágnípa im Westen.",
+      "english": "In addition to the already mentioned Árnafell, other mountains are situated in front of the ice sheet: Álftabrekkur in the northwest, Miklafell and Klakkur in the east, Hjartafell and Ólafsfell in the south, and Blágnípa in the west."
+    }
+  ],
+  "days": [
+    {
+      "title": "Southeast Slopes and Rock Formations",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Eastern and Southern Peaks",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Northern and Western Mountain Range",
+      "stop_ids": [
+        "s4",
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "f2e69c8712a63076d0c4ccc67868cffefcda5b854b365b8b63ab0c59a9e34c15"
+}

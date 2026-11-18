@@ -1,0 +1,52 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hekla",
+      "quote": "Die Hekla ist ein 1491 m hoher Vulkan im Süden Islands, auf dem Gemeindegebiet von Rangárþing ytra.",
+      "english": "Hekla is a 1491 m high volcano in the south of Iceland, in the municipality of Rangárþing ytra."
+    },
+    {
+      "id": "s2",
+      "name": "Vatnafjöll",
+      "quote": "Zu dem 40 km langen Vulkansystem gehören zahlreiche Krater (unter anderem die Krater der Vatnafjöll), wobei der Berg Hekla der Zentralvulkan ist.",
+      "english": "Numerous craters belong to the 40 km long volcanic system (including the craters of Vatnafjöll), with Mount Hekla being the central volcano."
+    },
+    {
+      "id": "s3",
+      "name": "Heklugjá",
+      "quote": "Über den Hauptgipfel zieht sich eine 5 km lange Ausbruchsspalte, die Heklugjá, auf der sich in den Ausbrüchen der letzten Jahre ein Hauptkrater aufgebaut hat.",
+      "english": "A 5 km long eruption fissure, the Heklugjá, stretches across the main summit, where a main crater has built up during the eruptions of recent years."
+    },
+    {
+      "id": "s4",
+      "name": "Stöng",
+      "quote": "Sehr viele Bauernhöfe wurden zerstört oder in der Folge verlassen wie etwa der Hof von Stöng im oberen Þjórsárdalur, das zuvor dicht besiedelt war und darauf bis heute öde blieb.",
+      "english": "Very many farms were destroyed or subsequently abandoned, such as the farm of Stöng in the upper Þjórsárdalur, which was previously densely populated and has remained desolate until today."
+    },
+    {
+      "id": "s5",
+      "name": "Þjórsárdalur",
+      "quote": "Sehr viele Bauernhöfe wurden zerstört oder in der Folge verlassen wie etwa der Hof von Stöng im oberen Þjórsárdalur, das zuvor dicht besiedelt war und darauf bis heute öde blieb.",
+      "english": "Very many farms were destroyed or subsequently abandoned, such as the farm of Stöng in the upper Þjórsárdalur, which was previously densely populated and has remained desolate until today."
+    }
+  ],
+  "days": [
+    {
+      "title": "Hekla Volcanic Center and Surrounding Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Historic Ruins of Þjórsárdalur",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "a4f75e5a2ad80ec49705db574a90a4b0f018e44ac7621c79550223c753419540"
+}

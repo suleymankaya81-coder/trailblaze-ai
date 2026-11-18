@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Skjálfandi",
+      "quote": "Die Halbinsel liegt im Norden Islands, grenzt im Westen an die Bucht Skjálfandi, im Norden an das Nordpolarmeer und im Osten an den Öxarfjörður.",
+      "english": "The peninsula is located in the north of Iceland, bordering the bay Skjálfandi to the west, the Arctic Ocean to the north, and Öxarfjörður to the east."
+    },
+    {
+      "id": "s2",
+      "name": "Öxarfjörður",
+      "quote": "Die Halbinsel liegt im Norden Islands, grenzt im Westen an die Bucht Skjálfandi, im Norden an das Nordpolarmeer und im Osten an den Öxarfjörður.",
+      "english": "The peninsula is located in the north of Iceland, bordering the bay Skjálfandi to the west, the Arctic Ocean to the north, and Öxarfjörður to the east."
+    },
+    {
+      "id": "s3",
+      "name": "Húsavík",
+      "quote": "Der größte Ort ist das auf der Westseite an der Skjálfandi gelegene Húsavík, der Verwaltungssitz der Gemeinde Norðurþing.",
+      "english": "The largest town is Húsavík, located on the west side of Skjálfandi, which is the administrative seat of the municipality of Norðurþing."
+    },
+    {
+      "id": "s4",
+      "name": "Húsavík-Flatey-Fault",
+      "quote": "Die Hauptakteure diesbezüglich sind eine große tektonische Spalte, die sog. Húsavík-Flatey-Fault, auch Húsavík-Transform-Fault sowie das Vulkansystem von Þeistareykir.",
+      "english": "The main actors in this regard are a large tectonic fissure, the so-called Húsavík-Flatey-Fault, also known as Húsavík-Transform-Fault, and the Þeistareykir volcanic system."
+    },
+    {
+      "id": "s5",
+      "name": "Þeistareykir",
+      "quote": "Die Hauptakteure diesbezüglich sind eine große tektonische Spalte, die sog. Húsavík-Flatey-Fault, auch Húsavík-Transform-Fault sowie das Vulkansystem von Þeistareykir.",
+      "english": "The main actors in this regard are a large tectonic fissure, the so-called Húsavík-Flatey-Fault, also known as Húsavík-Transform-Fault, and the Þeistareykir volcanic system."
+    },
+    {
+      "id": "s6",
+      "name": "Þeistareykjabunga",
+      "quote": "Die tektonische Spalte durchschneidet das Stadtgebiet von Húsavík, wo sie auch deutlich zu sehen ist und einen natürlichen Hafen bildet, und verläuft dann in die Berge nach Osten, um im Zentralvulkan Þeistareykjabunga zu enden.",
+      "english": "The tectonic fissure cuts through the urban area of Húsavík, where it is clearly visible and forms a natural harbor, and then runs east into the mountains to end at the central volcano Þeistareykjabunga."
+    },
+    {
+      "id": "s7",
+      "name": "Kópasker",
+      "quote": "Das Hypozentrum lag nahe dem Ort Kópasker und die Erdstöße erreichten eine Stärke von Magn. 6,2.",
+      "english": "The hypocenter was near the village of Kópasker and the tremors reached a magnitude of 6.2."
+    }
+  ],
+  "days": [
+    {
+      "title": "Coastal Bays and Eastern Villages",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s7"
+      ]
+    },
+    {
+      "title": "Húsavík and Volcanic Faults",
+      "stop_ids": [
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "407b0fb727ddd0f7dfd6467bbf65ebb640986c70f89a21fc0218e1335aab4207"
+}

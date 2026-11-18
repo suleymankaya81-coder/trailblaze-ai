@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Snækollur",
+      "quote": "Der Kerlingarfjöll ist ein vulkanischer Gebirgszug in Island und erreicht mit dem Snækollur eine Höhe von 1.477 m.",
+      "english": "The Kerlingarfjöll is a volcanic mountain range in Iceland and reaches a height of 1,477 m with the Snækollur."
+    },
+    {
+      "id": "s2",
+      "name": "Hveradalir",
+      "quote": "Heute befindet sich ein Hochtemperaturgebiet in den sog. Hveradalir mit zahlreichen heißen Quellen, Schlammtöpfen, Fumarolen und dampfenden Bächen.",
+      "english": "Today there is a high-temperature area in the so-called Hveradalir with numerous hot springs, mud pots, fumaroles, and steaming streams."
+    },
+    {
+      "id": "s3",
+      "name": "Loðmundur",
+      "quote": "Im Gebiet der Kerlingarfjöll, an den Hängen des Loðmundur, befand sich von den 60er Jahren bis zum Jahre 2000 ein Sommerskigebiet.",
+      "english": "In the area of Kerlingarfjöll, on the slopes of Loðmundur, there was a summer ski resort from the 1960s until the year 2000."
+    },
+    {
+      "id": "s4",
+      "name": "Kerling",
+      "quote": "Die erste Tagesetappe führt zunächst nach Südwesten zum Felsen Kerling und von dort zur Hütte am Klakkur.",
+      "english": "The first day's stage leads first southwest to the Kerling rock and from there to the hut at Klakkur."
+    },
+    {
+      "id": "s5",
+      "name": "Klakkur",
+      "quote": "Die zweite Etappe führt zur Hütte Kisubotn und vorbei an den Bergen Klakkur, Grákollur und der Schlucht Kisugljúfur.",
+      "english": "The second stage leads to the Kisubotn hut and past the mountains Klakkur, Grákollur and the Kisugljúfur gorge."
+    },
+    {
+      "id": "s6",
+      "name": "Grákollur",
+      "quote": "Die zweite Etappe führt zur Hütte Kisubotn und vorbei an den Bergen Klakkur, Grákollur und der Schlucht Kisugljúfur.",
+      "english": "The second stage leads to the Kisubotn hut and past the mountains Klakkur, Grákollur and the Kisugljúfur gorge."
+    },
+    {
+      "id": "s7",
+      "name": "Kisugljúfur",
+      "quote": "Die Hütte liegt im Tal Kisubotn, der Verlängerung der Schlucht Kisugljúfur.",
+      "english": "The hut is located in the Kisubotn valley, the extension of the Kisugljúfur gorge."
+    },
+    {
+      "id": "s8",
+      "name": "Kisubotn",
+      "quote": "Die Hütte liegt im Tal Kisubotn, der Verlängerung der Schlucht Kisugljúfur.",
+      "english": "The hut is located in the Kisubotn valley, the extension of the Kisugljúfur gorge."
+    }
+  ],
+  "days": [
+    {
+      "title": "Geothermal Wonders and High Peaks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Southern Rock Formations and Huts",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Valleys and Gorges of the North",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "aa6dc82e9a22d6200d9406cf20d13cdd9a1e6636f7302310c6a471e5cf7c430d"
+}

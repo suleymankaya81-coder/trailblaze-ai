@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Dyngjufjöll-Bergmassiv",
+      "quote": "Der Vulkan setzt sich aus mindestens drei ineinander verschachtelten Calderen (ca. 45 km²) zusammen, welche zusammen das Dyngjufjöll-Bergmassiv bilden.",
+      "english": "The volcano is composed of at least three nested calderas (approx. 45 km²), which together form the Dyngjufjöll mountain massif."
+    },
+    {
+      "id": "s2",
+      "name": "Öskjuvatn",
+      "quote": "In der Mitte der jüngsten, in der vulkanotektonischen Episode von 1875 entstandenen Caldera befindet sich der See Öskjuvatn, mit 220 m einer der tiefsten Seen Islands.",
+      "english": "In the middle of the youngest caldera, formed during the volcano-tectonic episode of 1875, lies the lake Öskjuvatn, one of Iceland's deepest lakes at 220 m."
+    },
+    {
+      "id": "s3",
+      "name": "Víti-Krater",
+      "quote": "Auch der kleinere, ebenfalls von einem See ausgefüllte Víti-Krater befindet sich in der Caldera.",
+      "english": "The smaller Víti crater, also filled by a lake, is also located within the caldera."
+    },
+    {
+      "id": "s4",
+      "name": "Þorvaldstindur",
+      "quote": "Die Askja erhebt sich bis zu 800 m über die sie umgebenden Hochebenen und erreicht am Þorvaldstindur, am Rand der Caldera in den Dyngjufjöll, eine Höhe von 1510 m.",
+      "english": "Askja rises up to 800 m above the surrounding plateaus and reaches a height of 1510 m at Þorvaldstindur, on the edge of the caldera in the Dyngjufjöll."
+    },
+    {
+      "id": "s5",
+      "name": "Holuhraun",
+      "quote": "Größere Basalteruptionen im Holozän waren die Gígöldur sowie Ausbrüche, die die Lavafelder Holuhraun und Þorvaldshraun schufen.",
+      "english": "Major basaltic eruptions in the Holocene were the Gígöldur and eruptions that created the Holuhraun and Þorvaldshraun lava fields."
+    },
+    {
+      "id": "s6",
+      "name": "Þorvaldshraun",
+      "quote": "Während der zweiten Ausbruchsphase entstanden u. a. ein Schlackenkegel im See Öskjuvatn und das Lavafeld Þorvaldshraun.",
+      "english": "During the second eruption phase, among other things, a cinder cone in Lake Öskjuvatn and the Þorvaldshraun lava field were formed."
+    },
+    {
+      "id": "s7",
+      "name": "Vikrahraun",
+      "quote": "Die bislang letzte Ausbruchsserie ereignete sich in den 1960er Jahren. Vom 26. Oktober 1961 bis in den November desselben Jahres bauten sich neue Krater auf und schufen das Lavafeld Vikrahraun.",
+      "english": "The last series of eruptions to date occurred in the 1960s. From October 26, 1961, until November of the same year, new craters built up and created the Vikrahraun lava field."
+    }
+  ],
+  "days": [
+    {
+      "title": "Central Caldera and Lakes",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Massifs and Historical Lava Fields",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "35e99866196c99e84948f78201ad6776691ce813de9ae57bfa6ee0d628b5a31a"
+}

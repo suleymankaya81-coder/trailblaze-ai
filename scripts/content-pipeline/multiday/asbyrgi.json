@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "See",
+      "quote": "Am Ende der 3,5 km langen und ca. 1,1 km weiten Schlucht findet man einen kleinen See mit üppiger Entenpopulation.",
+      "english": "At the end of the 3.5 km long and approx. 1.1 km wide canyon, you will find a small lake with a rich duck population."
+    },
+    {
+      "id": "s2",
+      "name": "Botnslækjarfoss",
+      "quote": "Lediglich nach der Schneeschmelze und nach starken Regenfällen ist dieser Wasserfall (Botnslækjarfoss) deutlich zu sehen.",
+      "english": "This waterfall (Botnslækjarfoss) is only clearly visible after the snow melts and after heavy rainfall."
+    },
+    {
+      "id": "s3",
+      "name": "Mischwäldchen",
+      "quote": "Außerdem existiert hier ein für Island eher seltenes Mischwäldchen (v. a. Birken, Weiden, Ebereschen und auch Fichten) mit Bäumen, die teilweise über acht Meter hoch reichen.",
+      "english": "In addition, there is a mixed forest here that is rather rare for Iceland (mainly birch, willow, rowan, and also spruce) with trees that in some cases reach a height of over eight meters."
+    },
+    {
+      "id": "s4",
+      "name": "Eyjan",
+      "quote": "Vor dem Eingang zur Schlucht liegt der ca. 25 m hohe Felsen Eyjan (isl. die Insel) in der Ebene.",
+      "english": "In front of the entrance to the canyon lies the approx. 25 m high rock Eyjan (Icelandic for island) on the plain."
+    },
+    {
+      "id": "s5",
+      "name": "Campingplatz",
+      "quote": "Dennoch gibt es dort einen Campingplatz und einen Golfplatz am Anfang der Schlucht.",
+      "english": "Nevertheless, there is a campsite and a golf course at the beginning of the canyon."
+    },
+    {
+      "id": "s6",
+      "name": "Golfplatz",
+      "quote": "Dennoch gibt es dort einen Campingplatz und einen Golfplatz am Anfang der Schlucht.",
+      "english": "Nevertheless, there is a campsite and a golf course at the beginning of the canyon."
+    },
+    {
+      "id": "s7",
+      "name": "Besucherzentrum",
+      "quote": "Außerdem gibt es ein Besucherzentrum, eine E-Tankstelle, sowie eine Tankstelle mit kleinem Supermarkt und Fast-Food-Imbiss.",
+      "english": "There is also a visitor center, an e-charging station, and a gas station with a small supermarket and fast-food snack bar."
+    }
+  ],
+  "days": [
+    {
+      "title": "Canyon Floor and Nature",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Entrance Area and Landmarks",
+      "stop_ids": [
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Recreation at the Canyon Gateway",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "ae737b42c2df93e506088a20c11ae12ddc508902f3922ebb6b6745eca385708c"
+}

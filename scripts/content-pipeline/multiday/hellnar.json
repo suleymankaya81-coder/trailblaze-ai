@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Snæfellsjökull",
+      "quote": "Der kleine Ort Hellnar liegt am Fuße des Snæfellsjökull auf der Südseite der Halbinsel Snæfellsnes.",
+      "english": "The small village of Hellnar lies at the foot of Snæfellsjökull on the south side of the Snæfellsnes peninsula."
+    },
+    {
+      "id": "s2",
+      "name": "Ausstellungsräumen des Snæfellsjökull-Nationalparks",
+      "quote": "Er gehört zur Gemeinde Snæfellsbær und besteht aus einigen Bauernhöfen, einem Hotel, einem Kaffeehaus, das im Sommer offen ist, und den Ausstellungsräumen des Snæfellsjökull-Nationalparks.",
+      "english": "It belongs to the municipality of Snæfellsbær and consists of several farms, a hotel, a coffee house that is open in summer, and the exhibition rooms of the Snæfellsjökull National Park."
+    },
+    {
+      "id": "s3",
+      "name": "Wanderung entlang der Küste",
+      "quote": "Das geschieht allerdings noch vom Nachbarort Arnarstapi aus, zu dem man auf einer sehr lohnenden Wanderung entlang der Küste gelangen kann.",
+      "english": "However, this still happens from the neighboring village of Arnarstapi, which can be reached on a very rewarding hike along the coast."
+    },
+    {
+      "id": "s4",
+      "name": "Auskunftszentrum des Snæfellsjökull Nationalparks",
+      "quote": "Das Auskunftszentrum des Snæfellsjökull Nationalparks befindet sich im Ort.",
+      "english": "The information center of the Snæfellsjökull National Park is located in the village."
+    },
+    {
+      "id": "s5",
+      "name": "Kirche",
+      "quote": "Die kleine Kirche, die äußerst malerisch gelegen ist, wurde 1945 geweiht.",
+      "english": "The small church, which is situated in an extremely picturesque location, was consecrated in 1945."
+    },
+    {
+      "id": "s6",
+      "name": "Baðstofa",
+      "quote": "Am Meer liegen einige größere Höhlen, z. B. die Baðstofa, die vom Meer umspült werden.",
+      "english": "Some larger caves lie by the sea, e.g. the Baðstofa, which are washed by the sea."
+    },
+    {
+      "id": "s7",
+      "name": "Flugplatzes",
+      "quote": "Er hatte für den Ausbau des hiesigen Flugplatzes Sorge getragen.",
+      "english": "He had taken care of the expansion of the local airfield."
+    },
+    {
+      "id": "s8",
+      "name": "Friedhof",
+      "quote": "Sein Grab befindet sich auf dem kleinen Friedhof des Ortes.",
+      "english": "His grave is located in the village's small cemetery."
+    }
+  ],
+  "days": [
+    {
+      "title": "Natural Wonders and Coastal Trails",
+      "stop_ids": [
+        "s1",
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "National Park Education and Village Landmarks",
+      "stop_ids": [
+        "s2",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Local Infrastructure and Memorials",
+      "stop_ids": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "c4e0e25e582100dbdb21d044968636f155bc9c4c6096e1097cfc6c05187ca03e"
+}

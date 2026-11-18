@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Eldgjá",
+      "quote": "Die Eldgjá (isl. Feuerschlucht) ist eine ca. 8 km lange Schlucht auf Island.",
+      "english": "The Eldgjá (Ice. Fire Gorge) is a canyon about 8 km long in Iceland."
+    },
+    {
+      "id": "s2",
+      "name": "Schlackenkrater auf dem Boden der Eldgjá",
+      "quote": "Die Schlackenkrater auf dem Boden der Eldgjá dürften damals auch aktiv gewesen sein.",
+      "english": "The cinder craters on the floor of the Eldgjá are thought to have been active at that time."
+    },
+    {
+      "id": "s3",
+      "name": "Ófærufoss",
+      "quote": "Ein Wasserfall, der Ófærufoss, befindet sich in der Schlucht.",
+      "english": "A waterfall, the Ófærufoss, is located in the gorge."
+    },
+    {
+      "id": "s4",
+      "name": "Naturbrücke",
+      "quote": "Er war früher über eine Naturbrücke zu überqueren, die allerdings infolge der Schneeschmelze im Winter 1992/1993 einstürzte.",
+      "english": "It could formerly be crossed via a natural bridge, which however collapsed as a result of snowmelt in the winter of 1992/1993."
+    }
+  ],
+  "days": [
+    {
+      "title": "Eldgjá Gorge Exploration",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "dd9e669799fec62511c56f0f02319843ffc86ac8d786724220cc9cf5822ee4b1"
+}

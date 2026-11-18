@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Grýla",
+      "quote": "Am nördlichen Stadtrand liegt der kleine Geysir Grýla.",
+      "english": "On the northern edge of town lies the small geyser Grýla."
+    },
+    {
+      "id": "s2",
+      "name": "Hveragerðiskirkja",
+      "quote": "Die moderne Kirche Hveragerðiskirkja mit 200 Sitzplätzen und einem Altar aus geschliffenem Granit wurde 1967–72 als erste Kirche der Stadt erbaut.",
+      "english": "The modern church Hveragerðiskirkja with 200 seats and an altar made of polished granite was built in 1967–72 as the first church in the town."
+    },
+    {
+      "id": "s3",
+      "name": "Listasafn Árnesinga",
+      "quote": "Das Kunstmuseum Listasafn Árnesinga wurde 1963 gegründet und beherbergt rund 500 Kunstwerke.",
+      "english": "The art museum Listasafn Árnesinga was founded in 1963 and houses around 500 works of art."
+    },
+    {
+      "id": "s4",
+      "name": "Skjálftinn 2008",
+      "quote": "Die Ausstellung Skjálftinn 2008 im Einkaufszentrum Sunnumörk erinnert an das Erdbeben vom 29. Mai 2008.",
+      "english": "The exhibition Skjálftinn 2008 in the Sunnumörk shopping center commemorates the earthquake of May 29, 2008."
+    },
+    {
+      "id": "s5",
+      "name": "Hveragarðurinn",
+      "quote": "Bekannt ist auch der im Stadtzentrum gelegene geothermale Park Hveragarðurinn.",
+      "english": "The geothermal park Hveragarðurinn, located in the town center, is also well known."
+    },
+    {
+      "id": "s6",
+      "name": "Dynkur",
+      "quote": "Wanderwege führen hier u dem kleinen Geysir Dynkur sowie an zahlreichen heißen Quellen vorbei, die teilweise eigene Namen haben, z. B. Leirhver, Rauðihver, Bláhver, Gróuhver und zur Quelle Manndrápshver, in der 1906 ein Mann ertrank, nachdem er im Dunkeln in die Quelle gefallen war.",
+      "english": "Hiking trails lead here past the small geyser Dynkur as well as numerous hot springs, some of which have their own names, e.g. Leirhver, Rauðihver, Bláhver, Gróuhver and to the spring Manndrápshver, in which a man drowned in 1906 after falling into the spring in the dark."
+    },
+    {
+      "id": "s7",
+      "name": "Lystigarðurinn Fossflöt",
+      "quote": "In der ab 1983 angelegten Parkanlage Lystigarðurinn Fossflöt ist der Wasserfall Reykjafoss zu sehen, der bereits 1902 zur Energiegewinnung genutzt wurde.",
+      "english": "In the Lystigarðurinn Fossflöt park, laid out starting in 1983, one can see the Reykjafoss waterfall, which was already used for energy production in 1902."
+    }
+  ],
+  "days": [
+    {
+      "title": "Town Center Culture and History",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Geothermal Parks and Springs",
+      "stop_ids": [
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Nature and Northern Sights",
+      "stop_ids": [
+        "s1",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "438b130b08b03f0391612552535e9d67c77a84c05271993a334580d8de74332a"
+}

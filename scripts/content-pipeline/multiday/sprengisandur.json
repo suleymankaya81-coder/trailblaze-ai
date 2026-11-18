@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hrauneyjar",
+      "quote": "Wenn man die Hochlandroute von Süden nach Norden bereist, beginnt der Weg meist in Hrauneyjar.",
+      "english": "If you travel the highland route from south to north, the path usually begins in Hrauneyjar."
+    },
+    {
+      "id": "s2",
+      "name": "Þórisvatn",
+      "quote": "Es handelt sich um den Þórisvatn, mit einer Fläche zwischen 83 und 88 km² der größte See Islands und damit noch größer als der Þingvallavatn.",
+      "english": "It is Þórisvatn, with an area between 83 and 88 km² the largest lake in Iceland and thus even larger than Þingvallavatn."
+    },
+    {
+      "id": "s3",
+      "name": "Búðarháls",
+      "quote": "Búðarháls ist ein langgestreckter, von Südwesten nach Nordosten ausgerichteter Rücken, der bis in ca. 600–700 m Höhe reicht und im Westen der südlichen Sprengisandur-Piste liegt.",
+      "english": "Búðarháls is an elongated ridge, oriented from southwest to northeast, reaching a height of approx. 600–700 m and located to the west of the southern Sprengisandur track."
+    },
+    {
+      "id": "s4",
+      "name": "Innri-Háls",
+      "quote": "Die beste Aussicht hat man vom Innri-Háls (685 m), und zwar über 6 Gletscher Islands.",
+      "english": "The best view can be had from Innri-Háls (685 m), looking over 6 glaciers of Iceland."
+    },
+    {
+      "id": "s5",
+      "name": "Nýidalur",
+      "quote": "Westlich des Tungnafellsjökull befindet sich das Tal Nýidalur (deutsch „das neue Tal“).",
+      "english": "To the west of Tungnafellsjökull lies the valley Nýidalur (German 'the new valley')."
+    },
+    {
+      "id": "s6",
+      "name": "Nýidalsá",
+      "quote": "Das Tal wird durchströmt vom Fluss Nýidalsá.",
+      "english": "The valley is flowed through by the river Nýidalsá."
+    },
+    {
+      "id": "s7",
+      "name": "Kiðagil",
+      "quote": "Seine Begrenzungen sind etwas vage; im Süden wird er in etwa von Eyvindarver, einem Moorgebiet östlich des Flusses Þjórsá (Teil der Þjórsárver), im Norden von der Schlucht Kiðagil abgegrenzt.",
+      "english": "Its boundaries are somewhat vague; in the south it is roughly delimited by Eyvindarver, a marshland east of the river Þjórsá (part of the Þjórsárver), in the north by the gorge Kiðagil."
+    },
+    {
+      "id": "s8",
+      "name": "Aldeyjarfoss",
+      "quote": "In der Nähe des nördlichen Endes der Sprengisandur befindet sich der Wasserfall Aldeyjarfoss.",
+      "english": "Near the northern end of the Sprengisandur is the waterfall Aldeyjarfoss."
+    }
+  ],
+  "days": [
+    {
+      "title": "Southern Gateway and Highland Lakes",
+      "stop_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Ridges and Glacial Panoramas",
+      "stop_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Highland Valleys and Northern Gorges",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "_text_sha": "1e849248e902c3e998effc13a02bd5892a4f73bcc337c3710ef6db444d52a9f7"
+}

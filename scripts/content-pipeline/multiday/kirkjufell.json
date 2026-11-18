@@ -1,0 +1,47 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kirkjufell",
+      "quote": "Der Berg Kirkjufell (463 m) liegt im Westen von Island.",
+      "english": "The mountain Kirkjufell (463 m) is located in the west of Iceland."
+    },
+    {
+      "id": "s2",
+      "name": "Grundarfjörður",
+      "quote": "Er befindet sich nahe der Stadt Grundarfjörður am westlichen Ufer des gleichnamigen Fjordes Grundarfjörður im Norden der Halbinsel Snæfellsnes.",
+      "english": "It is located near the town of Grundarfjörður on the western shore of the fjord of the same name, Grundarfjörður, in the north of the Snæfellsnes peninsula."
+    },
+    {
+      "id": "s3",
+      "name": "Hálsvaðall",
+      "quote": "Der Berg fällt durch sein keilförmiges Äußeres auf und ragt als Halbinsel in den großen Fjord Breiðafjörður hinein, wobei er den Seitenfjord Grundarfjörður von der Lagune Hálsvaðall trennt.",
+      "english": "The mountain stands out due to its wedge-shaped exterior and protrudes as a peninsula into the large fjord Breiðafjörður, separating the side fjord Grundarfjörður from the Hálsvaðall lagoon."
+    },
+    {
+      "id": "s4",
+      "name": "Hof Hlein",
+      "quote": "Eine Anekdote aus dem 19. Jahrhundert berichtet von der Häuslersfrau Katrin auf dem Hof Hlein.",
+      "english": "An anecdote from the 19th century reports on the cottager Katrin at the Hlein farm."
+    },
+    {
+      "id": "s5",
+      "name": "Kirkjufellsfoss",
+      "quote": "Kirkjufellsfoss",
+      "english": "Kirkjufellsfoss"
+    }
+  ],
+  "days": [
+    {
+      "title": "Kirkjufell Mountain and Surrounding Waters",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "68ab3c14f6c9e8c5c1b10650c20cb78730655978d0060e9d4febcc95613d3905"
+}

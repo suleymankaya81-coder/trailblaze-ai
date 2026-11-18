@@ -1,0 +1,73 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Snæfellsjökull",
+      "quote": "Der Snæfellsjökull liegt an der Spitze der Halbinsel, es handelt sich um einen weithin sichtbaren, 1446 m hohen Stratovulkan.",
+      "english": "The Snæfellsjökull lies at the tip of the peninsula; it is a widely visible, 1446 m high stratovolcano."
+    },
+    {
+      "id": "s2",
+      "name": "Snæfellsjökull-Nationalpark",
+      "quote": "Um ihn herum liegt einer der vier Nationalparks Islands, der Snæfellsjökull-Nationalpark.",
+      "english": "Around it lies one of the four national parks of Iceland, the Snæfellsjökull National Park."
+    },
+    {
+      "id": "s3",
+      "name": "Dritvík",
+      "quote": "Er hat zahlreiche gekennzeichnete Wanderwege aufzuweisen, z. B. einen alten Weg die Küste entlang von Dritvík nach Djúpalónssandur.",
+      "english": "It features numerous marked hiking trails, e.g. an old path along the coast from Dritvík to Djúpalónssandur."
+    },
+    {
+      "id": "s4",
+      "name": "Djúpalónssandur",
+      "quote": "Er hat zahlreiche gekennzeichnete Wanderwege aufzuweisen, z. B. einen alten Weg die Küste entlang von Dritvík nach Djúpalónssandur.",
+      "english": "It features numerous marked hiking trails, e.g. an old path along the coast from Dritvík to Djúpalónssandur."
+    },
+    {
+      "id": "s5",
+      "name": "Gufuskálar",
+      "quote": "Der zu dieser Anlage gehörende Sendemast Gufuskálar ist 412 Meter hoch und dürfte das höchste Bauwerk in Westeuropa sein.",
+      "english": "The transmission mast Gufuskálar belonging to this plant is 412 meters high and is likely the tallest structure in Western Europe."
+    },
+    {
+      "id": "s6",
+      "name": "Berserkjahraun",
+      "quote": "Es reicht vom Lavafeld Berserkjahraun bei Stykkishólmur über den Schweißschlackenkegel Eldborg im Hnappadalur am Weg von Borgarnes nach Snæfellsnes bis zu den Grábrókkratern bei Bifröst.",
+      "english": "It stretches from the Berserkjahraun lava field near Stykkishólmur via the Eldborg spatter cone in Hnappadalur on the way from Borgarnes to Snæfellsnes to the Grábrók craters near Bifröst."
+    },
+    {
+      "id": "s7",
+      "name": "Eldborg",
+      "quote": "Es reicht vom Lavafeld Berserkjahraun bei Stykkishólmur über den Schweißschlackenkegel Eldborg im Hnappadalur am Weg von Borgarnes nach Snæfellsnes bis zu den Grábrókkratern bei Bifröst.",
+      "english": "It stretches from the Berserkjahraun lava field near Stykkishólmur via the Eldborg spatter cone in Hnappadalur on the way from Borgarnes to Snæfellsnes to the Grábrók craters near Bifröst."
+    },
+    {
+      "id": "s8",
+      "name": "Hofsstaðaskóg",
+      "quote": "Das ab 1956 angelegte Waldgebiet Hofsstaðaskóg an der Südküste der Halbinsel bedeckt eine Fläche von 12,5 ha.",
+      "english": "The Hofsstaðaskóg forest area, established in 1956 on the south coast of the peninsula, covers an area of 12.5 ha."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glacier and Coastal Trails",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Volcanic Fields and Southern Forests",
+      "stop_ids": [
+        "s6",
+        "s7",
+        "s8",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "e53a0996322153c08e6422785ee4917cb0607efa03aa6ce1591ccb02aa4610ff"
+}

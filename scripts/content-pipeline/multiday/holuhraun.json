@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Holuhraun",
+      "quote": "Holuhraun ist ein Lavafeld im isländischen Hochland nördlich des Vatnajökull, das durch Spalteneruptionen entstanden ist.",
+      "english": "Holuhraun is a lava field in the Icelandic highlands north of Vatnajökull that was formed by fissure eruptions."
+    },
+    {
+      "id": "s2",
+      "name": "Kvíslarhraun",
+      "quote": "Nach einer Forschungsexpedition von 1880 wurde das Lavafeld zunächst Kvíslarhraun genannt.",
+      "english": "After a research expedition in 1880, the lava field was initially called Kvíslarhraun."
+    },
+    {
+      "id": "s3",
+      "name": "Jökulsá á Fjöllum",
+      "quote": "Dies bezieht sich auf die darin und in der Nähe liegenden zahlreichen Quellflüsse (isländisch kvísl = Zweig; verzweigter Bach) der Jökulsá á Fjöllum, die hier aus dem Gletscher Dyngjujökull strömen.",
+      "english": "This refers to the numerous headwaters (Icelandic kvísl = branch; branched stream) of the Jökulsá á Fjöllum located within and near it, which flow here from the Dyngjujökull glacier."
+    },
+    {
+      "id": "s4",
+      "name": "Dyngjujökull",
+      "quote": "Dies bezieht sich auf die darin und in der Nähe liegenden zahlreichen Quellflüsse (isländisch kvísl = Zweig; verzweigter Bach) der Jökulsá á Fjöllum, die hier aus dem Gletscher Dyngjujökull strömen.",
+      "english": "This refers to the numerous headwaters (Icelandic kvísl = branch; branched stream) of the Jökulsá á Fjöllum located within and near it, which flow here from the Dyngjujökull glacier."
+    },
+    {
+      "id": "s5",
+      "name": "Bárðarbunga",
+      "quote": "Neuere Untersuchungen zeigen aber, dass die Zusammensetzung der Lava auf eine Zugehörigkeit zum System der Bárðarbunga schließen lässt.",
+      "english": "However, recent studies show that the composition of the lava suggests it belongs to the Bárðarbunga system."
+    },
+    {
+      "id": "s6",
+      "name": "Askja",
+      "quote": "Bis vor Kurzem wurde das Lavafeld dem Vulkansystem der Askja zugerechnet.",
+      "english": "Until recently, the lava field was attributed to the Askja volcanic system."
+    },
+    {
+      "id": "s7",
+      "name": "Hauptkrater mit einem Lavasee",
+      "quote": "Im weiteren Verlauf bildete sich ein Hauptkrater mit einem Lavasee aus, der die Lavaströme nun speiste.",
+      "english": "As the eruption progressed, a main crater with a lava lake formed, which now fed the lava flows."
+    }
+  ],
+  "days": [
+    {
+      "title": "History and Hydrology of the Lava Field",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "Volcanic Systems and Eruption Features",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "c62cfdc05572ecac20d070e097d60bc6639d7659a840eec70669fa1db93cc063"
+}

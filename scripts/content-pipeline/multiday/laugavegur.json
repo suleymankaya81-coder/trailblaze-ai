@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Landmannalaugar",
+      "quote": "Er liegt auf den Gemeindegebieten von Rangárþing ytra und Rangárþing eystra und führt von Landmannalaugar nach Þórsmörk.",
+      "english": "It is located in the municipalities of Rangárþing ytra and Rangárþing eystra and leads from Landmannalaugar to Þórsmörk."
+    },
+    {
+      "id": "s2",
+      "name": "Hrafntinnusker",
+      "quote": "Seine Gesamtlänge beträgt 54 km und an seiner höchsten Stelle erreicht er bei Hrafntinnusker 1050 m.",
+      "english": "Its total length is 54 km and at its highest point it reaches 1050 m at Hrafntinnusker."
+    },
+    {
+      "id": "s3",
+      "name": "Álftavatn",
+      "quote": "Hrafntinnusker – Álftavatn",
+      "english": "Hrafntinnusker – Álftavatn"
+    },
+    {
+      "id": "s4",
+      "name": "Emstrur",
+      "quote": "Álftavatn – Emstrur",
+      "english": "Álftavatn – Emstrur"
+    },
+    {
+      "id": "s5",
+      "name": "Þórsmörk",
+      "quote": "Emstrur – Þórsmörk",
+      "english": "Emstrur – Þórsmörk"
+    },
+    {
+      "id": "s6",
+      "name": "Fimmvörðuháls",
+      "quote": "Man konnte die Tour über den Pass Fimmvörðuháls an die Küste nach Skógar verlängern – man läuft dort über erkaltete Lava des Eyjafjallajökull, der im Mai 2010 ausgebrochen ist.",
+      "english": "One could extend the tour via the Fimmvörðuháls pass to the coast at Skógar – there you walk over cooled lava from Eyjafjallajökull, which erupted in May 2010."
+    },
+    {
+      "id": "s7",
+      "name": "Skógar",
+      "quote": "Die möglichen Ausgangs- und Endpunkte Landmannalaugar, Þórsmörk und Skógar sind im Sommer mit dem Bus von Reykjavík aus gut erreichbar.",
+      "english": "The possible starting and ending points Landmannalaugar, Þórsmörk and Skógar are easily accessible by bus from Reykjavík in summer."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Highlands to the Lake",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Through the Desert to the Woods",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Volcanic Extension to the Coast",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "40c2fb35539f51afb8e12d26e03fc0cbb4315e1d80b8e13e987939001592a710"
+}

@@ -1,0 +1,78 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Polarkreis",
+      "quote": "Grímsey befindet sich direkt am Polarkreis, der durch die Insel verläuft.",
+      "english": "Grímsey is located directly on the Arctic Circle, which runs through the island."
+    },
+    {
+      "id": "s2",
+      "name": "Flugplatz Grímsey",
+      "quote": "Die Insel verfügt über den kleinen Flugplatz Grímsey (IATA-Code GRY, ICAO-Code BIGR), der von Akureyri aus angeflogen wird.",
+      "english": "The island has the small Grímsey Airport (IATA code GRY, ICAO code BIGR), which is served by flights from Akureyri."
+    },
+    {
+      "id": "s3",
+      "name": "Wanderwegen",
+      "quote": "Das Inselinnere ist von verschiedenen Wanderwegen durchzogen.",
+      "english": "The interior of the island is crisscrossed by various hiking trails."
+    },
+    {
+      "id": "s4",
+      "name": "Denkmal",
+      "quote": "Eine der Hauptattraktionen der Insel ist ein Denkmal, das den Verlauf des nördlichen Polarkreises, der den Nordteil der Insel durchschneidet, anzeigt.",
+      "english": "One of the main attractions of the island is a monument indicating the course of the Arctic Circle, which cuts through the northern part of the island."
+    },
+    {
+      "id": "s5",
+      "name": "Richtungsanzeiger",
+      "quote": "Am Flugplatz gibt ein Richtungsanzeiger die Entfernungen nach Reykjavík (325 km), London, Moskau, New York, Tokio und Sydney an.",
+      "english": "At the airport, a signpost indicates the distances to Reykjavík (325 km), London, Moscow, New York, Tokyo and Sydney."
+    },
+    {
+      "id": "s6",
+      "name": "Sandvík",
+      "quote": "Die einzige Ortschaft auf Grímsey verfügt im nördlichen Ortsteil Sandvík über eine Schule, einen Laden zur Deckung des täglichen Bedarfs, eine Poststelle, ein Dorfgemeinschaftshaus, ein Hallenbad und eine Bücherei.",
+      "english": "The only village on Grímsey has a school, a shop for daily needs, a post office, a community center, an indoor swimming pool and a library in the northern district of Sandvík."
+    },
+    {
+      "id": "s7",
+      "name": "Miðgarður",
+      "quote": "Die Kirche im südlichen Ortsteil Miðgarður, in der unter der Leitung eines Pastors vom Festland viermal im Jahr ein Gottesdienst stattfand, wurde 1867 aus Treibholz erbaut und 1956 renoviert.",
+      "english": "The church in the southern district of Miðgarður, where services were held four times a year under the direction of a pastor from the mainland, was built of driftwood in 1867 and renovated in 1956."
+    },
+    {
+      "id": "s8",
+      "name": "Orbis et Globus",
+      "quote": "Infolgedessen wird das Kunstwerk \"Orbis et Globus\", eine Kugel, die jährlich 14 m nach Norden verschoben wird, in das Meer gerollt werden.",
+      "english": "As a result, the artwork \"Orbis et Globus\", a sphere that is moved 14 m north every year, will be rolled into the sea."
+    }
+  ],
+  "days": [
+    {
+      "title": "Arctic Circle Landmarks",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s8"
+      ]
+    },
+    {
+      "title": "Village and Interior Exploration",
+      "stop_ids": [
+        "s3",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Transport Hub Sights",
+      "stop_ids": [
+        "s2",
+        "s5"
+      ]
+    }
+  ],
+  "_text_sha": "583905942bf0084fc9ce1edf4788cf4da93176e00b0000a08e5fcf33c2470a06"
+}

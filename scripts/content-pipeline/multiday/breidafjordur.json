@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Stykkishólmur",
+      "quote": "Von dem kleinen Küstenort Stykkishólmur aus besteht eine Fährverbindung in die Westfjorde.",
+      "english": "From the small coastal town of Stykkishólmur, there is a ferry connection to the Westfjords."
+    },
+    {
+      "id": "s2",
+      "name": "Flatey",
+      "quote": "Bedeutend ist die Insel Flatey.",
+      "english": "The island of Flatey is significant."
+    },
+    {
+      "id": "s3",
+      "name": "Hrappsey",
+      "quote": "Auf der Insel Hrappsey befand sich im 18. Jahrhundert eine bedeutende Druckerei, die Hrappseyjarprentsmiðja.",
+      "english": "An important printing press, the Hrappseyjarprentsmiðja, was located on the island of Hrappsey in the 18th century."
+    },
+    {
+      "id": "s4",
+      "name": "Klakkseyjar",
+      "quote": "Die höchsten der Inseln, Klakkseyjar, erreichen eine Höhe von 95 m.",
+      "english": "The highest of the islands, Klakkseyjar, reach a height of 95 m."
+    },
+    {
+      "id": "s5",
+      "name": "Elliðaey",
+      "quote": "Weitere Inselgruppen bzw. Inseln sind: ... Elliðaey mit ihrem Leuchtturm.",
+      "english": "Other island groups or islands are: ... Elliðaey with its lighthouse."
+    },
+    {
+      "id": "s6",
+      "name": "Reykhólar",
+      "quote": "Nicht per Zufall lebte einer der reichsten Männer im frühen Mittelalter auf dem Hof Reykhólar auf der Reykjanes-Halbinsel.",
+      "english": "It is no coincidence that one of the richest men in the early Middle Ages lived at the farm Reykhólar on the Reykjanes peninsula."
+    },
+    {
+      "id": "s7",
+      "name": "Hvammsfjörður",
+      "quote": "Wenn es die Wetterverhältnisse erlauben, kann man auch mit dem Auto die Küste im Osten von Snæfellsnes entlang nach Norden hinauffahren am Hvammsfjörður (dt. Muldenfjord), dem schmalsten Ende des Fjordes, entlang und in die Region der Westfjorde, die den Fjord im Norden begrenzt.",
+      "english": "If weather conditions permit, you can also drive by car along the coast in the east of Snæfellsnes northwards along Hvammsfjörður (dt. Muldenfjord), the narrowest end of the fjord, and into the region of the Westfjords, which borders the fjord to the north."
+    }
+  ],
+  "days": [
+    {
+      "title": "Towns and Historical Islands",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Natural Landmarks and Lighthouses",
+      "stop_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "title": "Coastal Regions and Settlements",
+      "stop_ids": [
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "b990b0c4112712567b28db497e79e6c86948f3247a7a10a504df73d854803199"
+}

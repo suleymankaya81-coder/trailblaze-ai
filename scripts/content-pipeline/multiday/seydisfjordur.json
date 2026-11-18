@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hafen Seyðisfjörður",
+      "quote": "Der Hafen Seyðisfjörður ist der Anlaufhafen der Norröna, der einzigen Autofähre, die Island über die Färöer und Dänemark mit dem europäischen Festland verbindet.",
+      "english": "The port of Seyðisfjörður is the port of call for the Norröna, the only car ferry connecting Iceland with the European mainland via the Faroe Islands and Denmark."
+    },
+    {
+      "id": "s2",
+      "name": "Dalatangi",
+      "quote": "Er sorgte u. a. dafür, dass 1895 auf der Halbinsel Dalatangi östlich von Seyðisfjörður der erste Leuchtturm Islands gebaut wurde, so dass Schiffen die Einfahrt in den Fjord und damit die Fahrt nach Seyðisfjörður erheblich erleichtert wurde.",
+      "english": "He ensured, among other things, that Iceland's first lighthouse was built in 1895 on the Dalatangi peninsula east of Seyðisfjörður, making it considerably easier for ships to enter the fjord and thus travel to Seyðisfjörður."
+    },
+    {
+      "id": "s3",
+      "name": "Fjarðarsel",
+      "quote": "Das erste Wasserkraftwerk Islands wurde 1913 am Rande von Seyðisfjörður am Fluss Fjarðarsel errichtet.",
+      "english": "Iceland's first hydroelectric power plant was built in 1913 on the edge of Seyðisfjörður on the river Fjarðarsel."
+    },
+    {
+      "id": "s4",
+      "name": "Technikmuseum",
+      "quote": "Im 1894 erbauten Wohnhaus des Industriellen Otto Wathne, das zeitweise als Rathaus diente, wurde ein Technikmuseum (Tækniminjasafn) eingerichtet.",
+      "english": "A technical museum (Tækniminjasafn) was established in the residential house of the industrialist Otto Wathne, built in 1894, which at times served as the town hall."
+    },
+    {
+      "id": "s5",
+      "name": "Bjolfur",
+      "quote": "Durch Erdrutsche vom Berg Bjolfur (1 075 m) waren bereits 1895 24 und 1950 fünf Menschen ums Leben gekommen.",
+      "english": "Landslides from Mount Bjolfur (1,075 m) had already claimed 24 lives in 1895 and five in 1950."
+    },
+    {
+      "id": "s6",
+      "name": "Þórarinsstaðir",
+      "quote": "Unweit des Hofes Þórarinsstaðir, etwa 10 km östlich der Stadt, wurden 1998–1999 Gräber sowie die Fundamente einer Kirche aus dem 11. Jahrhundert freigelegt.",
+      "english": "Not far from the farm Þórarinsstaðir, about 10 km east of the town, graves and the foundations of an 11th-century church were excavated in 1998–1999."
+    },
+    {
+      "id": "s7",
+      "name": "Seyðisfjarðarkirkja",
+      "quote": "Die 1920 erbaute Seyðisfjarðarkirkja, in der im Sommer Konzerte stattfinden, ist unter dem Namen Bláa Kirkja (Blaue Kirche) bekannt.",
+      "english": "The Seyðisfjarðarkirkja, built in 1920, where concerts take place in summer, is known as the Bláa Kirkja (Blue Church)."
+    },
+    {
+      "id": "s8",
+      "name": "Fjarðarselsvirkjun",
+      "quote": "Das Wasserkraftwerk Fjarðarselsvirkjun, das erste Wasserkraftwerk Islands, das 1913 errichtet wurde und noch heute in Betrieb ist, beherbergt seit 2003 ebenfalls ein Museum.",
+      "english": "The Fjarðarselsvirkjun power plant, the first hydroelectric power plant in Iceland, which was built in 1913 and is still in operation today, has also housed a museum since 2003."
+    },
+    {
+      "id": "s9",
+      "name": "Skaftafell",
+      "quote": "Das Kulturzentrum Skaftafell wird für Ausstellungen und verschiedene Veranstaltungen genutzt.",
+      "english": "The Skaftafell cultural center is used for exhibitions and various events."
+    }
+  ],
+  "days": [
+    {
+      "title": "Maritime History and Technical Heritage",
+      "stop_ids": [
+        "s1",
+        "s4",
+        "s7"
+      ]
+    },
+    {
+      "title": "Hydropower and Cultural Centers",
+      "stop_ids": [
+        "s3",
+        "s8",
+        "s9"
+      ]
+    },
+    {
+      "title": "Coastal Peaks and Archaeological Sites",
+      "stop_ids": [
+        "s2",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "b4a05666c08174bd5e10cc040b648f3a804558788980e1f847078ded2f320786"
+}

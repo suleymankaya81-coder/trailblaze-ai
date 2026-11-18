@@ -1,0 +1,66 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Jökulsárlón",
+      "quote": "Der See Jökulsárlón ([ˈjœːkʏlsaurˌlouːn], isländisch jökull ‚Gletscher‘, á ‚Fluss‘, lón ‚Lagune‘, sprich „Gletscherflusslagune“) ist der bekannteste und größte einer Reihe von Gletscherseen in Island.",
+      "english": "The lake Jökulsárlón (Icelandic jökull 'glacier', á 'river', lón 'lagoon', pronounced \"glacier river lagoon\") is the best known and largest of a series of glacial lakes in Iceland."
+    },
+    {
+      "id": "s2",
+      "name": "Breiðamerkurjökull",
+      "quote": "Der Jökulsárlón ist bekannt für die auf ihm treibenden Eisberge, die sich von der Gletscherzunge des Breiðamerkurjökull ablösen und eine Höhe von bis zu 15 Meter erreichen.",
+      "english": "Jökulsárlón is known for the icebergs floating on it, which break off from the glacier tongue of Breiðamerkurjökull and reach heights of up to 15 meters."
+    },
+    {
+      "id": "s3",
+      "name": "Fjallsárlón",
+      "quote": "In der Nähe befinden sich zwei weitere Gletscherseen, der viel kleinere und abgelegenere Fjallsárlón, mit kleineren Eisbergen, sowie der Breiðárlón.",
+      "english": "Nearby are two other glacial lakes, the much smaller and more remote Fjallsárlón, with smaller icebergs, as well as the Breiðárlón."
+    },
+    {
+      "id": "s4",
+      "name": "Breiðárlón",
+      "quote": "In der Nähe befinden sich zwei weitere Gletscherseen, der viel kleinere und abgelegenere Fjallsárlón, mit kleineren Eisbergen, sowie der Breiðárlón.",
+      "english": "Nearby are two other glacial lakes, the much smaller and more remote Fjallsárlón, with smaller icebergs, as well as the Breiðárlón."
+    },
+    {
+      "id": "s5",
+      "name": "Jökulsá á Breiðamerkursandi",
+      "quote": "Der kurze Fluss von diesem See zum Meer heißt Jökulsá á Breiðamerkursandi, wie auch viele andere Flüsse in Island Jökulsá („Gletscherfluss“) heißen.",
+      "english": "The short river from this lake to the sea is called Jökulsá á Breiðamerkursandi, just as many other rivers in Iceland are called Jökulsá (\"glacier river\")."
+    },
+    {
+      "id": "s6",
+      "name": "Diamantstrand",
+      "quote": "Bei meerwärts gerichteter Strömung werden Eisberge aus dem See ins Meer gespült und teilweise am angrenzenden schwarzen Basaltsandstrand abgelagert, weshalb dieser mitunter Diamantstrand genannt wird.",
+      "english": "When the current is directed seaward, icebergs are washed out of the lake into the sea and partly deposited on the adjacent black basalt sand beach, which is why it is sometimes called Diamond Beach."
+    },
+    {
+      "id": "s7",
+      "name": "Eystri-Fellsfjara",
+      "quote": "Der richtige Name lautet Eystri-Fellsfjara.",
+      "english": "The correct name is Eystri-Fellsfjara."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glacial Lakes and Iceberg Tongues",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "title": "River and Diamond Beach Sands",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "e83b7bde61fbf9c4b9dc9f9b260c53771a8d7f1dec1397f1fd7b885a359df449"
+}

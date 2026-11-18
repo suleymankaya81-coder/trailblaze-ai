@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Schwimmbad",
+      "quote": "Neben einer größeren Kolonie von Sommerhäusern befinden sich im Ort ein Schwimmbad, ein Golfplatz, ein kleines Geschäft mit Restaurant und ein Campingplatz.",
+      "english": "In addition to a large colony of summer houses, there is a swimming pool, a golf course, a small shop with a restaurant and a campsite in the village."
+    },
+    {
+      "id": "s2",
+      "name": "Golfplatz",
+      "quote": "Neben einer größeren Kolonie von Sommerhäusern befinden sich im Ort ein Schwimmbad, ein Golfplatz, ein kleines Geschäft mit Restaurant und ein Campingplatz.",
+      "english": "In addition to a large colony of summer houses, there is a swimming pool, a golf course, a small shop with a restaurant and a campsite in the village."
+    },
+    {
+      "id": "s3",
+      "name": "Campingplatz",
+      "quote": "Neben einer größeren Kolonie von Sommerhäusern befinden sich im Ort ein Schwimmbad, ein Golfplatz, ein kleines Geschäft mit Restaurant und ein Campingplatz.",
+      "english": "In addition to a large colony of summer houses, there is a swimming pool, a golf course, a small shop with a restaurant and a campsite in the village."
+    },
+    {
+      "id": "s4",
+      "name": "Hraunfossar",
+      "quote": "Von touristischem Interesse ist Húsafell durch die zahlreichen Naturwunder, die sich in erreichbarer Nähe befinden, so die Lavawasserfälle Hraunfossar des Flusses Hvítá und der Barnafoss.",
+      "english": "Húsafell is of tourist interest due to the numerous natural wonders located within easy reach, such as the Hraunfossar lava waterfalls of the Hvítá River and the Barnafoss."
+    },
+    {
+      "id": "s5",
+      "name": "Barnafoss",
+      "quote": "Von touristischem Interesse ist Húsafell durch die zahlreichen Naturwunder, die sich in erreichbarer Nähe befinden, so die Lavawasserfälle Hraunfossar des Flusses Hvítá und der Barnafoss.",
+      "english": "Húsafell is of tourist interest due to the numerous natural wonders located within easy reach, such as the Hraunfossar lava waterfalls of the Hvítá River and the Barnafoss."
+    },
+    {
+      "id": "s6",
+      "name": "Hallmundarhraun",
+      "quote": "Die Höhlen des Lavafeldes Hallmundarhraun sind von hier aus gut zu erreichen, etwa Surtshellir.",
+      "english": "The caves of the Hallmundarhraun lava field are easy to reach from here, such as Surtshellir."
+    },
+    {
+      "id": "s7",
+      "name": "Surtshellir",
+      "quote": "Die Höhlen des Lavafeldes Hallmundarhraun sind von hier aus gut zu erreichen, etwa Surtshellir.",
+      "english": "The caves of the Hallmundarhraun lava field are easy to reach from here, such as Surtshellir."
+    },
+    {
+      "id": "s8",
+      "name": "Arnarvatnsheiði",
+      "quote": "Sie liegen auf der Hochebene der Arnarvatnsheiði, welche auch wegen der vielen Seen, etwa Arnarvatn stóra, in denen man Forellen fischen kann, einen größeren Bekanntheitsgrad erlangt hat.",
+      "english": "They are located on the Arnarvatnsheiði plateau, which has also achieved a greater degree of fame because of the many lakes, such as Arnarvatn stóra, where you can fish for trout."
+    },
+    {
+      "id": "s9",
+      "name": "Arnarvatn stóra",
+      "quote": "Sie liegen auf der Hochebene der Arnarvatnsheiði, welche auch wegen der vielen Seen, etwa Arnarvatn stóra, in denen man Forellen fischen kann, einen größeren Bekanntheitsgrad erlangt hat.",
+      "english": "They are located on the Arnarvatnsheiði plateau, which has also achieved a greater degree of fame because of the many lakes, such as Arnarvatn stóra, where you can fish for trout."
+    },
+    {
+      "id": "s10",
+      "name": "Wälder",
+      "quote": "Direkt bei Húsafell liegt einer der wenigen Wälder Islands, der 4 Meter hohe Birken aufweist.",
+      "english": "Right next to Húsafell is one of Iceland's few forests, which features 4-meter-high birches."
+    }
+  ],
+  "days": [
+    {
+      "title": "Village Amenities and Forest",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s10"
+      ]
+    },
+    {
+      "title": "Waterfalls and Lava Caves",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "title": "Plateau and Lakes",
+      "stop_ids": [
+        "s8",
+        "s9"
+      ]
+    }
+  ],
+  "_text_sha": "0b38bf8f0b940bcf77e16df5ead09e4de76e83e8db742014c48057c9347c877d"
+}

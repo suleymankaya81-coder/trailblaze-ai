@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Deildartunguhver",
+      "quote": "Der Deildartunguhver (isl. deila teilen, tunga Landzunge, hver heiße Quelle) ist eine Region heißer Quellen, die sich im Reykholtsdalur in Island befindet.",
+      "english": "The Deildartunguhver (Ice. deila to divide, tunga tongue of land, hver hot spring) is a region of hot springs located in Reykholtsdalur in Iceland."
+    },
+    {
+      "id": "s2",
+      "name": "Reykholtsdalur",
+      "quote": "Der Deildartunguhver liegt am Ausgang des Reykholtsdalur nach Nordwesten in Richtung Borgarnes am Ende des Deildartunguvegurs , der von der Borgarfjarðarbraut abzweigt.",
+      "english": "The Deildartunguhver is located at the exit of the Reykholtsdalur to the northwest in the direction of Borgarnes at the end of the Deildartunguvegur, which branches off from the Borgarfjarðarbraut."
+    },
+    {
+      "id": "s3",
+      "name": "Reykholt Geothermalgebiets",
+      "quote": "Es ist Bestandteil des Reykholt Geothermalgebiets, das insgesamt eine Fläche von 300 Quadratkilometer einnimmt und damit das größte Niedertemperatur-Geothermalgebiet der Insel ist.",
+      "english": "It is part of the Reykholt geothermal area, which covers a total area of 300 square kilometers, making it the largest low-temperature geothermal area on the island."
+    },
+    {
+      "id": "s4",
+      "name": "Deildartunga",
+      "quote": "Das Wasser zirkuliert in einem System von Spalten, die Quellen von Deildartunga auf dem Kreuzungspunkt zweier ost-westlicher und nord-südlicher Spaltensysteme, die auf tektonische Brüche in dem aktiven Erdbebengebiet zurückgehen.",
+      "english": "The water circulates in a system of fissures, the springs of Deildartunga at the intersection of two east-west and north-south fissure systems, which date back to tectonic fractures in the active earthquake zone."
+    }
+  ],
+  "days": [
+    {
+      "title": "Reykholtsdalur Geothermal Exploration",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "1fcc49241bf266ac3df8c28f815452594864780ec97dca48dda169823af1cb79"
+}

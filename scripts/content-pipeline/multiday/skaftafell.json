@@ -1,0 +1,85 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Kristínartindar",
+      "quote": "Benannt ist der Nationalpark nach dem Berg Skaftafell, einem erloschenen und erodierten Vulkan, dessen Überreste die Kristínartindar darstellen.",
+      "english": "The national park is named after the mountain Skaftafell, an extinct and eroded volcano whose remains are represented by the Kristínartindar."
+    },
+    {
+      "id": "s2",
+      "name": "Gömlutún",
+      "quote": "In früheren Jahrhunderten stand das Bauerngehöft Skaftafell direkt am Fuße der Berge, in Gömlutún sind heute noch einige Ruinen zu besichtigen.",
+      "english": "In earlier centuries, the Skaftafell farmstead stood directly at the foot of the mountains; in Gömlutún, some ruins can still be visited today."
+    },
+    {
+      "id": "s3",
+      "name": "Sel",
+      "quote": "Sel wurde vom Nationalmuseum restauriert und ist heute für Besucher zugänglich.",
+      "english": "Sel was restored by the National Museum and is open to visitors today."
+    },
+    {
+      "id": "s4",
+      "name": "Bæjarstaðarskógur",
+      "quote": "Die Birken in Bæjarstaðarskógur wachsen höher als die meisten übrigen einheimischen Birken.",
+      "english": "The birches in Bæjarstaðarskógur grow taller than most other native birches."
+    },
+    {
+      "id": "s5",
+      "name": "Skaftafellsjökull",
+      "quote": "Seit der Schafbetrieb in Skaftafell eingestellt wurde, durchlief die Vegetationskomposition große Veränderungen, und Pflanzen gedeihen weiter im Inland am Fuße des Skaftafellsjökull und im Tal Morsárdalur.",
+      "english": "Since sheep farming was discontinued in Skaftafell, the vegetation composition has undergone major changes, and plants thrive further inland at the foot of Skaftafellsjökull and in the Morsárdalur valley."
+    },
+    {
+      "id": "s6",
+      "name": "Morsárdalur",
+      "quote": "Arten, wie die echte Engelwurz, die Wald-Engelwurz, die Strand-Blatterbse oder das arktische Weidenröschen sind kaum auf Weideflächen zu finden, sind hier jedoch nun häufig anzutreffen.",
+      "english": "Species such as garden angelica, wild angelica, sea pea, or arctic riverbeauty are hardly found on grazing areas, but are now frequently encountered here."
+    },
+    {
+      "id": "s7",
+      "name": "Svartifoss",
+      "quote": "Ein berühmter Wasserfall liegt in diesem Nationalpark: der Svartifoss.",
+      "english": "A famous waterfall is located in this national park: the Svartifoss."
+    },
+    {
+      "id": "s8",
+      "name": "Morsárfoss",
+      "quote": "Er wurde Morsárfoss benannt.",
+      "english": "It was named Morsárfoss."
+    },
+    {
+      "id": "s9",
+      "name": "Skaftafell Besucherzentrum",
+      "quote": "Ganzjährig geöffnet, betreut das Skaftafell Besucherzentrum den südlichen Bereich des Vatnajökull Nationalparks und bietet Parkbesuchern Informationen über den Park, seine Umgebung, vorhandene Wanderwege, seine Natur und Geschichte sowie über weitere Freizeitmöglichkeiten und Angebote an.",
+      "english": "Open year-round, the Skaftafell Visitor Centre manages the southern area of the Vatnajökull National Park and offers park visitors information about the park, its surroundings, existing hiking trails, its nature and history, as well as further leisure opportunities and offers."
+    }
+  ],
+  "days": [
+    {
+      "title": "History and Information Hub",
+      "stop_ids": [
+        "s9",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Peaks and Waterfalls",
+      "stop_ids": [
+        "s1",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Glacial Valleys and Forests",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "f82b2fef17a2c94a260f61aa1843ffc51450ab75b5478304770a0c3d4dd6187a"
+}

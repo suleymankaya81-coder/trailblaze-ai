@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Vigur",
+      "quote": "Die größten sind Vigur, Æðey (nahe Snæfjallaströnd) und Borgarey (im Fjord Ísafjörður).",
+      "english": "The largest are Vigur, Æðey (near Snæfjallaströnd) and Borgarey (in the fjord Ísafjörður)."
+    },
+    {
+      "id": "s2",
+      "name": "Hornstrandir",
+      "quote": "Im Norden des Ísafjarðardjúp liegen die einsame und völlig unbewohnte Halbinsel Hornstrandir, ein beliebtes Wandergebiet, und Snæfjallaströnd, wo das ganze Jahr über Schnee liegt (unterhalb des Gletschers Drangajökull, ca. 620 km²).",
+      "english": "In the north of the Ísafjarðardjúp lie the lonely and completely uninhabited Hornstrandir peninsula, a popular hiking area, and Snæfjallaströnd, where there is snow all year round (below the Drangajökull glacier, approx. 620 km²)."
+    },
+    {
+      "id": "s3",
+      "name": "Kaldalón",
+      "quote": "Kaldalón, ein kleiner Fjord, reicht bis fast an eine der Gletscherzungen heran, man kann dorthin wandern.",
+      "english": "Kaldalón, a small fjord, reaches almost to one of the glacier tongues; you can hike there."
+    },
+    {
+      "id": "s4",
+      "name": "Ísafjörður",
+      "quote": "Skutulsfjörður (dt. „Harpunenfjord“), auf einer Halbinsel in ihm liegt die Stadt Ísafjörður",
+      "english": "Skutulsfjörður (German \"Harpoon Fjord\"), the town of Ísafjörður is located on a peninsula within it."
+    },
+    {
+      "id": "s5",
+      "name": "Borgarey",
+      "quote": "Die größten sind Vigur, Æðey (nahe Snæfjallaströnd) und Borgarey (im Fjord Ísafjörður).",
+      "english": "The largest are Vigur, Æðey (near Snæfjallaströnd) and Borgarey (in the fjord Ísafjörður)."
+    },
+    {
+      "id": "s6",
+      "name": "Drangajökull",
+      "quote": "Im Norden des Ísafjarðardjúp liegen die einsame und völlig unbewohnte Halbinsel Hornstrandir, ein beliebtes Wandergebiet, und Snæfjallaströnd, wo das ganze Jahr über Schnee liegt (unterhalb des Gletschers Drangajökull, ca. 620 km²).",
+      "english": "In the north of the Ísafjarðardjúp lie the lonely and completely uninhabited Hornstrandir peninsula, a popular hiking area, and Snæfjallaströnd, where there is snow all year round (below the Drangajökull glacier, approx. 620 km²)."
+    },
+    {
+      "id": "s7",
+      "name": "Bolungarvík",
+      "quote": "Bolungarvík (dt. „Holzhaufenbucht“)",
+      "english": "Bolungarvík (German \"Woodpile Bay\")"
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Peninsula and Glacier",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "title": "Islands of the Fjord",
+      "stop_ids": [
+        "s1",
+        "s5"
+      ]
+    },
+    {
+      "title": "Towns and Southern Inlets",
+      "stop_ids": [
+        "s4",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "e643b64f54a01ad827934533be1cfc2057d6f127f5477e8e3989fe9b360088ba"
+}

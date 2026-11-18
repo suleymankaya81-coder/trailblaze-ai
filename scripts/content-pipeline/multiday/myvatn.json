@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Skútustaðir",
+      "quote": "Im See selbst kann man auf Inseln und Halbinseln die Pseudokrater von Skútustaðir sehen, die jedoch nicht selbst vulkanisches Material ausgestoßen haben, sondern durch das explosive Zusammentreffen von Lava und Wasser entstanden sind.",
+      "english": "In the lake itself, on islands and peninsulas, you can see the pseudocraters of Skútustaðir, which did not eject volcanic material themselves but were formed by the explosive encounter of lava and water."
+    },
+    {
+      "id": "s2",
+      "name": "Vindbelgjarfjall",
+      "quote": "Die Gipfel des Vindbelgjarfjall im Norden des Sees und des dampfenden Námafjall im Nordosten bieten einen schönen Ausblick über den See.",
+      "english": "The peaks of Vindbelgjarfjall in the north of the lake and the steaming Námafjall in the northeast offer a beautiful view over the lake."
+    },
+    {
+      "id": "s3",
+      "name": "Námafjall",
+      "quote": "Auf beide führen Wanderwege.",
+      "english": "Hiking trails lead to both."
+    },
+    {
+      "id": "s4",
+      "name": "Hverfjall",
+      "quote": "Außerdem befindet sich der vulkanische Explosionskrater des Hverfjall (oder Hverfell) nicht weit vom See, den man auch besteigen kann.",
+      "english": "Additionally, the volcanic explosion crater of Hverfjall (or Hverfell) is located not far from the lake, and it can also be climbed."
+    },
+    {
+      "id": "s5",
+      "name": "Dimmuborgir",
+      "quote": "Unterhalb des Hverfjall liegt das Gebiet Dimmuborgir (deutsch „dunkle Burgen“), reizvolle Tuffsteinformationen, die aber in ihrer Existenz bedroht sind.",
+      "english": "Below Hverfjall lies the area Dimmuborgir (German \"dark castles\"), charming tuff stone formations that are however threatened in their existence."
+    },
+    {
+      "id": "s6",
+      "name": "Lúdentsborgir",
+      "quote": "In der Nähe des Sees findet man auch die Kraterreihe Lúdentsborgir, Tafelberge und Schildvulkane.",
+      "english": "In the vicinity of the lake, one also finds the Lúdentsborgir crater row, table mountains and shield volcanoes."
+    },
+    {
+      "id": "s7",
+      "name": "Grjótagjá",
+      "quote": "Die Badegrotten Grjótagjá und Stóragjá können aufgrund der inzwischen leicht gesunkenen Temperaturen wieder eingeschränkt zum Baden genutzt werden.",
+      "english": "The bathing caves Grjótagjá and Stóragjá can be used for bathing again to a limited extent due to the temperatures having dropped slightly in the meantime."
+    },
+    {
+      "id": "s8",
+      "name": "Stóragjá",
+      "quote": "In ihrer Nähe erkennt man eine sichtbare Spalte, die hier die eurasische von der amerikanischen Platte trennt.",
+      "english": "In their vicinity, a visible fissure can be recognized, which separates the Eurasian plate from the American plate here."
+    },
+    {
+      "id": "s9",
+      "name": "Reykjahlíð",
+      "quote": "Von einem Lavastrom im 18. Jahrhundert gerade noch verschont blieb die Kirche des Ortes Reykjahlíð am Ufer des Sees und mit ihr die damaligen Einwohner des Dorfes.",
+      "english": "The church of the village Reykjahlíð on the shore of the lake, and with it the inhabitants of the village at that time, was just barely spared by a lava flow in the 18th century."
+    },
+    {
+      "id": "s10",
+      "name": "Jarðböð",
+      "quote": "Als Ausgleich wurden Teile des Erlöses aus der Privatisierung zum Ausbau des Thermalbads „Jarðböð“ (deutsch Erdbäder) eingesetzt, um neue Arbeitsplätze zu schaffen.",
+      "english": "To compensate, parts of the proceeds from the privatization were used for the expansion of the \"Jarðböð\" (German Earth Baths) thermal bath to create new jobs."
+    }
+  ],
+  "days": [
+    {
+      "title": "Northern Peaks and the Village",
+      "stop_ids": [
+        "s2",
+        "s3",
+        "s9",
+        "s10"
+      ]
+    },
+    {
+      "title": "Volcanic Formations and Caves",
+      "stop_ids": [
+        "s4",
+        "s5",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "title": "Southern Craters and Ridges",
+      "stop_ids": [
+        "s1",
+        "s6"
+      ]
+    }
+  ],
+  "_text_sha": "ba69a91ca7bc357833bb8d4fcef2d5dd9aef331421f66169a212d2492ea53f47"
+}

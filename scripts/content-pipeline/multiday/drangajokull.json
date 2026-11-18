@@ -1,0 +1,92 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Hljóðabunga",
+      "quote": "Weitere bekannte Gipfel auf dem Gletscher sind Hljóðabunga (825 m), Reyðarbunga und Hrolleifsborg (851 m).",
+      "english": "Other well-known peaks on the glacier are Hljóðabunga (825 m), Reyðarbunga and Hrolleifsborg (851 m)."
+    },
+    {
+      "id": "s2",
+      "name": "Reyðarbunga",
+      "quote": "Einige Bergspitzen ragen als Nunataks aus dem Gletschereis heraus.",
+      "english": "Some mountain peaks protrude from the glacier ice as nunataks."
+    },
+    {
+      "id": "s3",
+      "name": "Hrolleifsborg",
+      "quote": "Weitere bekannte Gipfel auf dem Gletscher sind Hljóðabunga (825 m), Reyðarbunga und Hrolleifsborg (851 m).",
+      "english": "Other well-known peaks on the glacier are Hljóðabunga (825 m), Reyðarbunga and Hrolleifsborg (851 m)."
+    },
+    {
+      "id": "s4",
+      "name": "Kaldalón-Bucht",
+      "quote": "Diverse Talgletscher gehen vom Drangajökull aus, am bekanntesten ist die Gletscherzunge, die fast bis in die 5 km lange Kaldalón-Bucht hinabreicht.",
+      "english": "Various valley glaciers originate from Drangajökull; the best known is the glacier tongue, which reaches almost down into the 5 km long Kaldalón Bay."
+    },
+    {
+      "id": "s5",
+      "name": "Þaralátursfjarðarjökull",
+      "quote": "Die größten Gletscherzungen des Drangjökulls sind benannt nach den Fjorden, in deren Richtung sie fließen: Þaralátursfjarðarjökull, Reykjafjarðarjökull, Kaldalónsjökull, Leirufjarðarjökull und Bjarnarfjarðarjökull.",
+      "english": "The largest glacier tongues of Drangjökull are named after the fjords in whose direction they flow: Þaralátursfjarðarjökull, Reykjafjarðarjökull, Kaldalónsjökull, Leirufjarðarjökull and Bjarnarfjarðarjökull."
+    },
+    {
+      "id": "s6",
+      "name": "Reykjafjarðarjökull",
+      "quote": "Die größten Gletscherzungen des Drangjökulls sind benannt nach den Fjorden, in deren Richtung sie fließen: Þaralátursfjarðarjökull, Reykjafjarðarjökull, Kaldalónsjökull, Leirufjarðarjökull und Bjarnarfjarðarjökull.",
+      "english": "The largest glacier tongues of Drangjökull are named after the fjords in whose direction they flow: Þaralátursfjarðarjökull, Reykjafjarðarjökull, Kaldalónsjökull, Leirufjarðarjökull and Bjarnarfjarðarjökull."
+    },
+    {
+      "id": "s7",
+      "name": "Kaldalónsjökull",
+      "quote": "Die größten Gletscherzungen des Drangjökulls sind benannt nach den Fjorden, in deren Richtung sie fließen: Þaralátursfjarðarjökull, Reykjafjarðarjökull, Kaldalónsjökull, Leirufjarðarjökull und Bjarnarfjarðarjökull.",
+      "english": "The largest glacier tongues of Drangjökull are named after the fjords in whose direction they flow: Þaralátursfjarðarjökull, Reykjafjarðarjökull, Kaldalónsjökull, Leirufjarðarjökull and Bjarnarfjarðarjökull."
+    },
+    {
+      "id": "s8",
+      "name": "Leirufjarðarjökull",
+      "quote": "Die größten Gletscherzungen des Drangjökulls sind benannt nach den Fjorden, in deren Richtung sie fließen: Þaralátursfjarðarjökull, Reykjafjarðarjökull, Kaldalónsjökull, Leirufjarðarjökull und Bjarnarfjarðarjökull.",
+      "english": "The largest glacier tongues of Drangjökull are named after the fjords in whose direction they flow: Þaralátursfjarðarjökull, Reykjafjarðarjökull, Kaldalónsjökull, Leirufjarðarjökull and Bjarnarfjarðarjökull."
+    },
+    {
+      "id": "s9",
+      "name": "Bjarnarfjarðarjökull",
+      "quote": "Die größten Gletscherzungen des Drangjökulls sind benannt nach den Fjorden, in deren Richtung sie fließen: Þaralátursfjarðarjökull, Reykjafjarðarjökull, Kaldalónsjökull, Leirufjarðarjökull und Bjarnarfjarðarjökull.",
+      "english": "The largest glacier tongues of Drangjökull are named after the fjords in whose direction they flow: Þaralátursfjarðarjökull, Reykjafjarðarjökull, Kaldalónsjökull, Leirufjarðarjökull and Bjarnarfjarðarjökull."
+    },
+    {
+      "id": "s10",
+      "name": "Snæfjallaströnd",
+      "quote": "Die Schneefelder im Bezirk Snæfjallaströnd sind Reste des Gletschers, der in früheren Zeiten viel größer war.",
+      "english": "The snowfields in the district of Snæfjallaströnd are remains of the glacier, which was much larger in earlier times."
+    }
+  ],
+  "days": [
+    {
+      "title": "Glacial Peaks and Nunataks",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Northern Glacier Tongues",
+      "stop_ids": [
+        "s5",
+        "s6",
+        "s8",
+        "s9"
+      ]
+    },
+    {
+      "title": "Coastal Bay and Snowfields",
+      "stop_ids": [
+        "s4",
+        "s7",
+        "s10"
+      ]
+    }
+  ],
+  "_text_sha": "e7a34146487f02efdba7fe05b0c0e13b8973b9212f5f0f19c1b80c12ba5265a4"
+}

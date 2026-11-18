@@ -1,0 +1,71 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Þórshöfn",
+      "quote": "Der wichtigste Ort der Halbinsel, die in der nach ihr benannten Gemeinde Langanesbyggð liegt, ist das im Südwesten gelegene Þórshöfn.",
+      "english": "The most important place on the peninsula, which is located in the municipality of Langanesbyggð named after it, is Þórshöfn, located in the southwest."
+    },
+    {
+      "id": "s2",
+      "name": "Skálar",
+      "quote": "Der Ort Skálar war in den 1920er Jahren ein Fischerdorf und hatte mehr als 100 Einwohner.",
+      "english": "The village of Skálar was a fishing village in the 1920s and had more than 100 inhabitants."
+    },
+    {
+      "id": "s3",
+      "name": "Skoruvíkurbjarg",
+      "quote": "In der Gegend am Kap der Halbinsel, besonders am Vogelfelsen Skoruvíkurbjarg, finden sich viele Vögel, darunter Seeschwalben und Basstölpel; am Kap selbst, genannt Fontur, befindet sich der erstmals 1910 errichtete Leuchtturm Langanes.",
+      "english": "In the area at the cape of the peninsula, especially at the bird cliff Skoruvíkurbjarg, many birds are found, including terns and gannets; at the cape itself, called Fontur, is the Langanes lighthouse, first built in 1910."
+    },
+    {
+      "id": "s4",
+      "name": "Fontur",
+      "quote": "40 Kilometer östlich vor Fontur, der äußersten Spitze der Halbinsel, hat man im Dezember 2022 über 80 Seebeben gemessen, von denen vier eine Stärke von über 3 auf der Richterskala hatten.",
+      "english": "40 kilometers east of Fontur, the outermost tip of the peninsula, over 80 seaquakes were measured in December 2022, four of which had a magnitude of over 3 on the Richter scale."
+    },
+    {
+      "id": "s5",
+      "name": "Heiðarfjall",
+      "quote": "Bei dem Berg Heiðarfjall unterhielt die NATO von 1954 bis 1968 eine Radarstation.",
+      "english": "NATO maintained a radar station at the mountain Heiðarfjall from 1954 to 1968."
+    },
+    {
+      "id": "s6",
+      "name": "Gunnólfsvíkurfjall",
+      "quote": "Eine andere Radarstation errichtete die NATO 1989 auf dem Gunnólfsvíkurfjall, dem mit 719 Metern höchsten Berg auf der Halbinsel.",
+      "english": "NATO built another radar station in 1989 on Gunnólfsvíkurfjall, which at 719 meters is the highest mountain on the peninsula."
+    },
+    {
+      "id": "s7",
+      "name": "Leuchtturm Langanes",
+      "quote": "In der Gegend am Kap der Halbinsel, besonders am Vogelfelsen Skoruvíkurbjarg, finden sich viele Vögel, darunter Seeschwalben und Basstölpel; am Kap selbst, genannt Fontur, befindet sich der erstmals 1910 errichtete Leuchtturm Langanes.",
+      "english": "In the area at the cape of the peninsula, especially at the bird cliff Skoruvíkurbjarg, many birds are found, including terns and gannets; at the cape itself, called Fontur, is the Langanes lighthouse, first built in 1910."
+    }
+  ],
+  "days": [
+    {
+      "title": "Villages and Historic Radar Heights",
+      "stop_ids": [
+        "s1",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "title": "Eastern Cliffs and Abandoned Settlements",
+      "stop_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Remote Cape and Coastal Landmarks",
+      "stop_ids": [
+        "s4",
+        "s7"
+      ]
+    }
+  ],
+  "_text_sha": "042a7edab45558580f6204a5f8134d55c59523fe6fe194a7e54c6fed544ef17d"
+}

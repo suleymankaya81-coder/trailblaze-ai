@@ -1,0 +1,40 @@
+{
+  "stops": [
+    {
+      "id": "s1",
+      "name": "Surtshellir",
+      "quote": "Die Surtshellir entstand vor über 1000 Jahren durch fließende Lava.",
+      "english": "Surtshellir was formed over 1000 years ago by flowing lava."
+    },
+    {
+      "id": "s2",
+      "name": "Lavafeld Hallmundarhraun",
+      "quote": "Die Lavahöhle Surtshellir liegt ungefähr 8 Kilometer nordöstlich von Kalmanstunga im Lavafeld Hallmundarhraun westlich des Gletschers Langjökull auf Island.",
+      "english": "The lava cave Surtshellir is located approximately 8 kilometers northeast of Kalmanstunga in the Hallmundarhraun lava field west of the Langjökull glacier on Iceland."
+    },
+    {
+      "id": "s3",
+      "name": "Stefánshellir",
+      "quote": "Die Stefánshellir hat eine Gesamtganglänge von 1.520 m.",
+      "english": "Stefánshellir has a total passage length of 1,520 m."
+    },
+    {
+      "id": "s4",
+      "name": "Íshellir",
+      "quote": "Íshellir heißt übersetzt Eishöhle.",
+      "english": "Íshellir translates to ice cave."
+    }
+  ],
+  "days": [
+    {
+      "title": "Hallmundarhraun Lava Tube System",
+      "stop_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "_text_sha": "28dfe0667133dcbc92e999717bf50f6d36fb7c9f1f7b3e9173fd105e2689b191"
+}
