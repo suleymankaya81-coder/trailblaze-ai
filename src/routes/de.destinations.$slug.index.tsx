@@ -8,6 +8,8 @@ import { regionUnit, deIn, COUNTRIES, countryPath, isCountry, regionPath } from 
 import { breadcrumbScript } from "@/lib/seo/breadcrumbs";
 import { deGeoCrumbs, deMeta } from "@/lib/i18n/deSeo";
 import { hreflangLinks } from "@/lib/seo/hreflang";
+import { getTranslatedDestinationSlugs } from "@/lib/data/geo.de.functions";
+import { translatedCountryPlaces } from "@/lib/routes/translatedCountry";
 
 // /de/destinations/{country}; older /de/destinations/{slug} addresses 301 to the nested page.
 export const Route = createFileRoute("/de/destinations/$slug/")({
@@ -19,8 +21,16 @@ export const Route = createFileRoute("/de/destinations/$slug/")({
     }
     const regions = await getCountryRegions({ data: { country: params.slug } });
     if (regions.length === 0) throw notFound(); // Enabled country, nothing published yet: no empty page.
-    const places = await getCountryMapPlaces({ data: { country: params.slug } });
-    return { country: params.slug, regions, places };
+    const [allPlaces, translated] = await Promise.all([
+      getCountryMapPlaces({ data: { country: params.slug } }),
+      getTranslatedDestinationSlugs({ data: { locale: "de" } }),
+    ]);
+    const places = translatedCountryPlaces(allPlaces, translated);
+    if (!places.length) throw redirect({ href: countryPath(params.slug), statusCode: 302 });
+    const availableRegions = regions.map(region => ({
+      ...region, count: places.filter(place => place.region === region.slug).length,
+    })).filter(region => region.count > 0);
+    return { country: params.slug, regions: availableRegions, places };
   },
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Nicht verfügbar — WildParkRoutes" }, { name: "robots", content: "noindex" }] };

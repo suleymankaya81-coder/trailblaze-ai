@@ -1,9 +1,14 @@
+## November 19 live country and Norway verification
+- [x] Live rollout reached Norway: country page 200 with 140 destinations and authority link 301 to Norway.
+- [x] Audited 4,990 EN/DE destination targets: all 2,495 English and 2,207 published German pages return 200; 288 unavailable German CA/GB pages exposed by country maps.
+- [ ] Prevent German country maps linking untranslated CA/GB parks; verify and publish the navigation fix.
+
 ## November 19 authority-country and park recovery
 - [x] Recovered Europe menu and linked all eight remaining-country catalogs to their historical country identity; fixed Montenegro's list-page record and mapped Skadar to its existing real destination (819 candidates, no publications).
 - [x] Added six missing live-country redirects (NO/SE/FI/IS/IE/NL), retained eight future mappings with publication guards; 32 JS and three Python tests plus six preview redirect/target checks pass.
 - [x] Rechecked all 24 country mappings, then all 16 live country targets and one subsequent destination each across desktop/phone and light/dark (64 flows); all preview pages return 200 with no horizontal overflow. Authority domain DNS verified.
 - [ ] Recover exact historical park URLs: November 19 retry still returned archived country 404s and CDX 503; no guessed park links. Switzerland's old menu reused Slovenia's path, so no Swiss mapping was invented.
-- [ ] Confirm live rollout: publication requested November 19 at 05:56 UTC; first live check still served old generic redirects and Norway 404. Deployment completion remains outside this turn's verified result.
+- [x] Confirmed live rollout November 19 after propagation: Norway country target 200 and old Norway address 301 to its country directory.
 
 ## November 18 remaining Ireland then Italy
 - [x] Reviewed all 35 holds; published 9 further sourced/credited EN/DE destinations, Ireland 133/159.

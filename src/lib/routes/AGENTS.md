@@ -1,3 +1,4 @@
 - Daily Maps links use three intermediate waypoints and overlapping parts; mapsUrl rejects oversized input instead of truncating it. Why: mobile browser limits must not drop stops.
 - Single-sight visits open Google Maps place search, not an invented two-point route. Why: compact visits still need a working map handoff.
 - Canonical cached stop names survive translations via routingName; only sourced coordinates enable GPX, and unresolved points keep place-qualified text queries. Why: no invented locations or per-visit lookups.
+- German country maps and region navigation contain only published translated destinations; countries without any translated destinations redirect to their English directory. Why: country browsing must not expose nonexistent German park pages.
