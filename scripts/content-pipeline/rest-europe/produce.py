@@ -173,6 +173,14 @@ EE_EXCLUDED = {
     'lake-peipus-ee': 'Duplicate of the lake-peipus row.',
 }
 
+# Latvian catalog rows that are not one Latvian outdoor destination: the
+# transnational geodetic arc and the Lake Murati row whose slug Estonia
+# already publishes.
+LV_EXCLUDED = {
+    'struve-geodetic-arc': 'Transnational geodetic arc, not one natural destination.',
+    'lake-murati': 'Slug already published for Estonia\'s Lake Murati.',
+}
+
 # Reviewed coordinate/region corrections: Wikidata points on the wrong side of a
 # border or at a same-named place produce foreign regions and wrong routes.
 PLACE_FIXES = {
@@ -218,6 +226,7 @@ def outdoor_rows(countries):
             and not (r['country'] == 'hr' and r['slug'] in HR_EXCLUDED)
             and not (r['country'] == 'rs' and r['slug'] in RS_EXCLUDED)
             and not (r['country'] == 'ee' and r['slug'] in EE_EXCLUDED)
+            and not (r['country'] == 'lv' and r['slug'] in LV_EXCLUDED)
             and not (r['country'] == 'hu' and (r['slug'] in HU_EXCLUDED
                      or any(w in ' ' + r['name'].casefold() for w in HU_SQUARE_WORDS)))
             and not any(word in (r['name'] + ' ' + (r.get('enwiki') or '')).casefold()
