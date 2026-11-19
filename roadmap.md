@@ -1,3 +1,9 @@
+## November 19 authority-country and park recovery
+- [x] Recovered Europe menu and linked all eight remaining-country catalogs to their historical country identity; fixed Montenegro's list-page record and mapped Skadar to its existing real destination (819 candidates, no publications).
+- [x] Added six missing live-country redirects (NO/SE/FI/IS/IE/NL), retained eight future mappings with publication guards; 32 JS and three Python tests plus six preview redirect/target checks pass.
+- [ ] Recover exact historical park URLs: blocked by archived country 404s/connection errors and CDX 503; no guessed park links. Switzerland's old menu reused Slovenia's path, so no Swiss mapping was invented.
+- [ ] Publish updated redirect code: not requested; hosted Norway target returned 404 while all six preview country targets returned 200.
+
 ## November 18 remaining Ireland then Italy
 - [x] Reviewed all 35 holds; published 9 further sourced/credited EN/DE destinations, Ireland 133/159.
 - [ ] Complete the remaining 26: exact-place licensed cover/source/location/access blockers recorded in west-europe/ireland-followup-2026-11-18.md.

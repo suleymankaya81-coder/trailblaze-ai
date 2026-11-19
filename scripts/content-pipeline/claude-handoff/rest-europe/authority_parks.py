@@ -3,6 +3,7 @@ import json, re, requests, sys
 from pathlib import Path
 from build_catalogs import slug, UA
 ROOT=Path(__file__).parent
+TITLE_ALIASES = {'Skadar Lake National Park': 'Lake Skadar'}
 NP={
 'ee':['Lahemaa National Park','Soomaa National Park','Vilsandi National Park','Matsalu National Park','Karula National Park','Alutaguse National Park'],
 'me':['Durmitor National Park','Lovćen National Park','Biogradska Gora National Park','Skadar Lake National Park','Prokletije National Park (Montenegro)'],
@@ -25,9 +26,9 @@ NP={
 'ba':['Sutjeska National Park','Una National Park','Kozara National Park','Drina National Park','Kravica (waterfall)'],
 }
 def resolve(title):
-    r=requests.get('https://en.wikipedia.org/w/api.php',params=dict(action='query',titles=title,redirects=1,prop='pageprops|coordinates',format='json'),headers=UA,timeout=30).json()
+    r=requests.get('https://en.wikipedia.org/w/api.php',params=dict(action='query',titles=TITLE_ALIASES.get(title, title),redirects=1,prop='pageprops|coordinates',format='json'),headers=UA,timeout=30).json()
     p=next(iter(r['query']['pages'].values()))
-    if 'missing' in p: return None
+    if 'missing' in p or re.match(r'^(List of|National parks of|Protected areas of)\b', p['title'], re.I): return None
     c=(p.get('coordinates') or [{}])[0]
     return dict(title=p['title'],wikidata=p.get('pageprops',{}).get('wikibase_item'),lat=c.get('lat'),lng=c.get('lon'))
 if __name__=='__main__':

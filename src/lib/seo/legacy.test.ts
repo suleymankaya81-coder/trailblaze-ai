@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { authorityTarget, legacyResponse } from "./legacy";
+import { AUTHORITY_COUNTRY, authorityTarget, legacyResponse } from "./legacy";
 
 const loc = (u: string) => legacyResponse(new URL(u))?.headers.get("location");
 describe("authority domain mapping", () => {
@@ -16,6 +16,27 @@ describe("authority domain mapping", () => {
   it("authority homepage goes to destinations", () => expect(loc("https://world-national-parks.net/")).toBe("https://wildparkroutes.com/destinations"));
   it("authority host keeps modern paths", () => expect(loc("https://www.world-national-parks.net/destinations/us/maine/acadia")).toBe("https://wildparkroutes.com/destinations/us/maine/acadia"));
   it("our own homepage is untouched", () => expect(legacyResponse(new URL("https://wildparkroutes.com/"))).toBeNull());
+  it.each([
+    ["/eu/no/no.htm", "no"], ["/eu/sw/sw.htm", "se"], ["/eu/fi/fi", "fi"],
+    ["/eu/ic/ic.htm", "is"], ["/eu/ir/ir.htm", "ie"], ["/eu/ne/ne.htm", "nl"],
+  ])("recovers the live country link %s", (path, country) => {
+    const response = legacyResponse(new URL(`https://world-national-parks.net${path}`));
+    expect(response?.status).toBe(301);
+    expect(response?.headers.get("location")).toBe(`https://wildparkroutes.com/destinations/${country}`);
+  });
+  it.each([
+    ["cr", "hr"], ["es", "ee"], ["hu", "hu"], ["la", "lv"],
+    ["li", "lt"], ["po", "pl"], ["ro", "ro"], ["sl", "si"],
+  ])("retains %s identity without redirecting to an unpublished country", (oldCode, country) => {
+    expect(AUTHORITY_COUNTRY[`/eu/${oldCode}`]).toBe(country);
+    expect(authorityTarget(`/eu/${oldCode}/${oldCode}.htm`, true)).toBe("/destinations");
+  });
+  it("does not invent a Swiss, Belgian or Danish historical country code", () => {
+    expect(AUTHORITY_COUNTRY["/eu/sl"]).toBe("si");
+    expect(AUTHORITY_COUNTRY["/eu/ch"]).toBeUndefined();
+    expect(AUTHORITY_COUNTRY["/eu/be"]).toBeUndefined();
+    expect(AUTHORITY_COUNTRY["/eu/de"]).toBeUndefined();
+  });
 });
 
 import { legacyHostResponse } from "./legacy";

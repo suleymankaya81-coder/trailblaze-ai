@@ -7,9 +7,11 @@
  "me": {
   "checked": 5,
   "added": [],
-  "unresolved": [
-   "Skadar Lake National Park"
-  ]
+  "unresolved": [],
+  "resolved_aliases": {
+   "Skadar Lake National Park": "lake-skadar"
+  },
+  "removed_non_destination": "list-of-national-parks-of-montenegro"
  },
  "hr": {
   "checked": 8,
@@ -118,6 +120,7 @@
    "ru": "war zone"
   },
   "all_present": true,
-  "park_pages": "Internet Archive offline on 2026-11-18; park-level legacy pages not re-checked"
+  "park_pages": "2026-11-19: Europe menu recovered (HTTP 200); 18 country captures returned 404, six requests failed; CDX returned 503. No exact park URLs recovered; historical park coverage remains unknown.",
+  "country_link_manifest": "authority-country-links.json"
  }
 }

@@ -1,5 +1,6 @@
 import { AUTHORITY_HOSTS, LEGACY_HOSTS, MIGRATED, REDIRECT_HOSTS, SITE_ORIGIN } from "@/config/site";
 import { canonicalPath } from "@/lib/routes/paths";
+import destinationGeo from "@/data/destination-geo.json";
 // Addresses from the previous site design (deleted on purpose). Answer them
 // with 301 (clear modern equivalent) or 410 Gone so Google drops them fast.
 const REDIRECTS: Record<string, string> = {
@@ -34,7 +35,7 @@ const GONE_PREFIXES = [
 
 /**
  * Pages of the old world-national-parks.net directory (1998–2024 archive):
- * German park pages → German catalogue, other Europe → trip guides, everything else → destinations.
+ * Verified country paths → live country directories; unpublished countries keep the directory fallback.
  * Root "/" only maps on the authority host itself.
  */
 /** Switch on once the first UK places are published, so old UK pages land on the UK country page. */
@@ -42,20 +43,26 @@ export const UK_PAGES_LIVE = true;
 
 /**
  * Old directory country pages (archive-verified codes) → our live country pages. "/eu/au" is Austria, "/eu/es" Estonia, "/au" Australia.
- * "/eu/pr" is Portugal (Wayback-verified via south-europe/sources.json, not "/eu/pt"); "/eu/fr" for France is unverified —
- * no Wayback record exists for it, carried over as given rather than guessed from scratch. See fr/pt/gr report for detail.
+ * "/eu/pr" is Portugal, not "/eu/pt". The recovered Europe menu incorrectly reused
+ * Slovenia's "/eu/sl" link for Switzerland: do not guess a Swiss path or overwrite Slovenia.
  */
 export const AUTHORITY_COUNTRY: Record<string, string> = {
   "/eu/au": "at", "/eu/ge": "de", "/eu/it": "it", "/eu/sp": "es", "/eu/uk": "gb", "/ca": "ca", "/us": "us",
   "/eu/pr": "pt", "/eu/gr": "gr", "/eu/fr": "fr",
+  "/eu/no": "no", "/eu/sw": "se", "/eu/fi": "fi", "/eu/ic": "is",
+  "/eu/ir": "ie", "/eu/ne": "nl",
+  "/eu/cr": "hr", "/eu/es": "ee", "/eu/hu": "hu", "/eu/la": "lv",
+  "/eu/li": "lt", "/eu/po": "pl", "/eu/ro": "ro", "/eu/sl": "si",
 };
+
+const LIVE_AUTHORITY_COUNTRIES = new Set(Object.values(destinationGeo).map((location) => location.split("/")[0]));
 
 export function authorityTarget(path: string, onAuthorityHost: boolean): string | null {
   const p = path.toLowerCase().replace(/\.html?$/, "");
   for (const [prefix, cc] of Object.entries(AUTHORITY_COUNTRY)) {
     if (p === prefix || p.startsWith(prefix + "/") || p.startsWith(prefix + ".")) {
       if (cc === "gb" && !UK_PAGES_LIVE) return "/trip-guides";
-      return `/destinations/${cc}`;
+      return LIVE_AUTHORITY_COUNTRIES.has(cc) ? `/destinations/${cc}` : "/destinations";
     }
   }
   if (p === "/eu" || p.startsWith("/eu/")) return "/destinations";
