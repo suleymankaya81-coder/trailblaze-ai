@@ -1,7 +1,8 @@
 ## November 19 live country and Norway verification
 - [x] Live rollout reached Norway: country page 200 with 140 destinations and authority link 301 to Norway.
 - [x] Audited 4,990 EN/DE destination targets: all 2,495 English and 2,207 published German pages return 200; 288 unavailable German CA/GB pages exposed by country maps.
-- [ ] Prevent German country maps linking untranslated CA/GB parks; verify and publish the navigation fix.
+- [x] Fixed German country-map translation filtering; CA/GB without published German destinations redirect to English in preview; 26 tests pass and publication requested.
+- [ ] Confirm navigation fix in production: first live check still served old CA/GB German directories; awaiting deployment propagation.
 
 ## November 19 authority-country and park recovery
 - [x] Recovered Europe menu and linked all eight remaining-country catalogs to their historical country identity; fixed Montenegro's list-page record and mapped Skadar to its existing real destination (819 candidates, no publications).
