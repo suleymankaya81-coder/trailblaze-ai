@@ -1,6 +1,7 @@
 ## November 19 authority-country and park recovery
 - [x] Recovered Europe menu and linked all eight remaining-country catalogs to their historical country identity; fixed Montenegro's list-page record and mapped Skadar to its existing real destination (819 candidates, no publications).
 - [x] Added six missing live-country redirects (NO/SE/FI/IS/IE/NL), retained eight future mappings with publication guards; 32 JS and three Python tests plus six preview redirect/target checks pass.
+- [x] Rechecked all 24 country mappings, then all 16 live country targets and one subsequent destination each across desktop/phone and light/dark (64 flows); all preview pages return 200 with no horizontal overflow. Authority domain DNS verified.
 - [ ] Recover exact historical park URLs: blocked by archived country 404s/connection errors and CDX 503; no guessed park links. Switzerland's old menu reused Slovenia's path, so no Swiss mapping was invented.
 - [ ] Publish updated redirect code: not requested; hosted Norway target returned 404 while all six preview country targets returned 200.
 
