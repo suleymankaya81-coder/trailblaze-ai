@@ -9,3 +9,7 @@
 - Son erişim kontrolü: 24 eski ülke eşlemesinin tamamında 301 hedefi doğrulandı. Yayımlanmış 16 ülke telefon ve bilgisayarda, açık ve koyu görünümde 64 kez açıldı; her kontrolde sonraki gerçek destinasyon bağlantısı da 200 döndü, yatay taşma bulunmadı. Bu kontrol eski park adreslerinin kurtarıldığını veya tüm harita katmanlarının yüklendiğini göstermez. Otorite domaininin DNS ve sahiplik kontrolü ayrıca başarılıdır.
 
 Kod değişiklikleri: `legacy.ts` doğrulanmış ülke eşlemeleri ve yayın koruması; `legacy.test.ts` yönlendirme testleri; `authority_parks.py` Skadar ad eşlemesi ve liste sayfalarını reddetme; `test_authority_recovery.py` katalog denetimleri. Katalog, kapsam ve kaynak kayıtları ayrıca güncellendi.
+
+## Yayın isteği — 19 Kasım 05:56 UTC
+
+Kullanıcının tamamla talebi üzerine site yayını istendi. 32 JavaScript ve üç Python testi tekrar geçti. İlk canlı kontrolde altı eski adres hâlâ genel destinasyon dizinine yönlendi, Norveç ülke hedefi 404 verdi; yeni yayının canlıya ulaştığı henüz doğrulanmadı. Arşiv yeniden denendi: Norveç/Hırvatistan ülke kayıtları 404, CDX 503; eski park adresleri için dış kaynak engeli sürüyor. Yeni destinasyon yayımlanmadı.
