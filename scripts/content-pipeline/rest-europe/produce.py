@@ -111,6 +111,28 @@ HU_EXCLUDED = {
 }
 HU_SQUARE_WORDS = (' tér', ' tere', 'körtér', 'square')
 
+# Croatian catalog rows that are not one Croatian outdoor destination: the
+# transnational beech-forest listing whose Croatian components lie inside
+# Northern Velebit National Park (already a page), and the Una waterfall whose
+# published page already sits under Bosnia and Herzegovina.
+HR_EXCLUDED = {
+    'ancient-and-primeval-beech-forests-of-the-carpathians-and-other-regions-of-europe':
+        'Transnational serial listing; Croatian components lie inside Northern Velebit National Park, already a page.',
+    'strbacki-buk': 'Una-river waterfall already published under Bosnia and Herzegovina.',
+    'krndija': 'No licensed photograph of Krndija itself was found on Wikimedia Commons.',
+    'psunj': 'No licensed photograph of Psunj itself was found on Wikimedia Commons.',
+    'grabovaca': 'Commons results show neighbouring caves (Amidžina, Tabakuša), not Grabovača itself.',
+}
+# "Red Lake" is already Romania's slug; the Croatian Crveno jezero on Biokovo
+# keeps its own local name so neither page overwrites the other.
+HR_SLUGS = {'red-lake': 'crveno-jezero'}
+# Reviewed exact-place Commons files for Croatian candidates the automatic
+# search could not match; filled in only after each file is checked by hand.
+HR_COVERS = {
+    'sveta-gera': 'File:Trdinov vrh 02.jpg',
+    'crveno-jezero': 'File:Red Lake Imotski 002.jpg',
+}
+
 # Reviewed coordinate/region corrections: Wikidata points on the wrong side of a
 # border or at a same-named place produce foreign regions and wrong routes.
 PLACE_FIXES = {
@@ -128,6 +150,8 @@ def production_row(row):
             return {**row, 'slug': 'jizerskohorske-buciny', 'name': 'Jizerskohorské bučiny',
                     'wikidata': 'Q8546570', 'enwiki': None, 'lat': None, 'lng': None}
         return {**row, 'slug': CZ_SLUGS.get(row['slug'], row['slug']), 'region': CZ_REGIONS.get(row['slug'])}
+    if row['country'] == 'hr' and row['slug'] in HR_SLUGS:
+        return {**row, 'slug': HR_SLUGS[row['slug']]}
     if row['slug'] in PLACE_FIXES:
         return {**row, **PLACE_FIXES[row['slug']]}
     if row['country'] != 'sk':
@@ -141,6 +165,7 @@ def production_row(row):
 def outdoor_rows(countries):
     return [production_row(r) for r in original_rows(countries)
             if not (r['country'] == 'sk' and r['slug'] in SK_EXCLUDED)
+            and not (r['country'] == 'hr' and r['slug'] in HR_EXCLUDED)
             and not (r['country'] == 'hu' and (r['slug'] in HU_EXCLUDED
                      or any(w in ' ' + r['name'].casefold() for w in HU_SQUARE_WORDS)))
             and not any(word in (r['name'] + ' ' + (r.get('enwiki') or '')).casefold()
@@ -155,9 +180,11 @@ def reviewed_coordinates(row, page, entity, bounds):
     return original_coordinates(row, page, entity, bounds)
 base.fin.resolve_coordinates = reviewed_coordinates
 
+REVIEWED_COVERS = {**CZ_COVERS, **HR_COVERS}
+
 original_cover = base.cover
 def reviewed_cover(row, page, lang, used):
-    fname = CZ_COVERS.get(row['slug'])
+    fname = REVIEWED_COVERS.get(row['slug'])
     if fname:
         photo = base.prepare.file_info(fname)
         if photo and base.comp.licensed(photo):
