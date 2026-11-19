@@ -138,6 +138,11 @@ def main():
             keeper['wikidata']=other['wikidata'];keeper['enwiki']=other['enwiki'];keeper.setdefault('aliases',[]).append(new);keeper['source_urls']=list(dict.fromkeys(keeper['source_urls']+other['source_urls']))
     # Booderee is Jervis Bay Territory, not an overseas external territory.
     supplement=[r for r in supplement if r['name']!='Booderee National Park and Botanic Gardens']
+    audit_path=E/'audit-overrides.json'
+    overrides=json.loads(audit_path.read_text()) if audit_path.exists() else {}
+    for r in catalogs['au']+catalogs['nz']:
+        r.update(overrides.get(r['slug'],{}))
+        if r.get('official_site') and r['official_site'] not in r['source_urls']:r['source_urls'].append(r['official_site'])
     # Exact QID duplicates/redirected subfeatures share one destination; remap ledgers.
     remap={}
     for cc,rows in catalogs.items():

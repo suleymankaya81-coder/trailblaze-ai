@@ -9,8 +9,8 @@
     "wave": 1,
     "wikidata": "Q1410890",
     "enwiki": "https://en.wikipedia.org/wiki/Aoraki_/_Mount_Cook_National_Park",
-    "lat": null,
-    "lng": null,
+    "lat": -43.73333333,
+    "lng": 170.1,
     "official_site": null,
     "access": "unknown",
     "source": "retained_inventory",
@@ -20,9 +20,21 @@
     ],
     "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
     "identity_status": "inventory_candidate_not_publication_ready",
-    "coordinate_source": null,
+    "coordinate_source": "https://www.wikidata.org/wiki/Q1410890",
     "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "arthur-s-pass-national-park",
@@ -36,18 +48,35 @@
     "enwiki": "https://en.wikipedia.org/wiki/Arthur's_Pass_National_Park",
     "lat": -42.95,
     "lng": 171.56666667,
-    "official_site": null,
+    "official_site": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/arthurs-pass-national-park/",
     "access": "unknown",
     "source": "retained_inventory",
     "source_urls": [
       "https://en.wikipedia.org/wiki/Arthur's_Pass_National_Park",
-      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand",
+      "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/arthurs-pass-national-park/"
     ],
     "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
     "identity_status": "inventory_candidate_not_publication_ready",
     "coordinate_source": "https://en.wikipedia.org/wiki/Arthur's_Pass_National_Park",
     "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Westland District",
+      "Selwyn District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "tongariro-national-park",
@@ -61,18 +90,34 @@
     "enwiki": "https://en.wikipedia.org/wiki/Tongariro_National_Park",
     "lat": -39.29083333,
     "lng": 175.56222222,
-    "official_site": null,
+    "official_site": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/",
     "access": "unknown",
     "source": "retained_inventory",
     "source_urls": [
       "https://en.wikipedia.org/wiki/Tongariro_National_Park",
-      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand",
+      "https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/"
     ],
     "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
     "identity_status": "inventory_candidate_not_publication_ready",
     "coordinate_source": "https://en.wikipedia.org/wiki/Tongariro_National_Park",
     "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Manawatū-Whanganui Region"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "whanganui-national-park",
@@ -86,18 +131,34 @@
     "enwiki": "https://en.wikipedia.org/wiki/Whanganui_National_Park",
     "lat": -39.58333333,
     "lng": 175.08333333,
-    "official_site": null,
+    "official_site": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/manawatu-whanganui/places/whanganui-national-park/",
     "access": "unknown",
     "source": "retained_inventory",
     "source_urls": [
       "https://en.wikipedia.org/wiki/Whanganui_National_Park",
-      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand",
+      "https://www.doc.govt.nz/parks-and-recreation/places-to-go/manawatu-whanganui/places/whanganui-national-park/"
     ],
     "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
     "identity_status": "inventory_candidate_not_publication_ready",
     "coordinate_source": "https://en.wikipedia.org/wiki/Whanganui_National_Park",
     "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Manawatū-Whanganui Region"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "mount-aspiring-national-park",
@@ -111,18 +172,36 @@
     "enwiki": "https://en.wikipedia.org/wiki/Mount_Aspiring_National_Park",
     "lat": -44.38333333,
     "lng": 168.73333333,
-    "official_site": null,
+    "official_site": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/mount-aspiring-national-park/",
     "access": "unknown",
     "source": "retained_inventory",
     "source_urls": [
       "https://en.wikipedia.org/wiki/Mount_Aspiring_National_Park",
-      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand",
+      "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/mount-aspiring-national-park/"
     ],
     "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
     "identity_status": "inventory_candidate_not_publication_ready",
     "coordinate_source": "https://en.wikipedia.org/wiki/Mount_Aspiring_National_Park",
     "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Westland District",
+      "Queenstown Lakes District",
+      "Southland District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "fiordland-national-park",
@@ -136,18 +215,36 @@
     "enwiki": "https://en.wikipedia.org/wiki/Fiordland_National_Park",
     "lat": -45.41666667,
     "lng": 167.71666667,
-    "official_site": null,
+    "official_site": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/",
     "access": "unknown",
     "source": "retained_inventory",
     "source_urls": [
       "https://en.wikipedia.org/wiki/Fiordland_National_Park",
-      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand",
+      "https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/"
     ],
     "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
     "identity_status": "inventory_candidate_not_publication_ready",
     "coordinate_source": "https://en.wikipedia.org/wiki/Fiordland_National_Park",
     "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Southland Region",
+      "Queenstown Lakes District",
+      "Southland District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "rakiura-national-park",
@@ -161,18 +258,35 @@
     "enwiki": "https://en.wikipedia.org/wiki/Rakiura_National_Park",
     "lat": -46.9,
     "lng": 168.11666667,
-    "official_site": null,
+    "official_site": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/southland/places/stewart-island-rakiura/rakiura-national-park/",
     "access": "unknown",
     "source": "retained_inventory",
     "source_urls": [
       "https://en.wikipedia.org/wiki/Rakiura_National_Park",
-      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand",
+      "https://www.doc.govt.nz/parks-and-recreation/places-to-go/southland/places/stewart-island-rakiura/rakiura-national-park/"
     ],
     "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
     "identity_status": "inventory_candidate_not_publication_ready",
     "coordinate_source": "https://en.wikipedia.org/wiki/Rakiura_National_Park",
     "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Southland Region",
+      "Southland District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "te-papa-kura-o-taranaki",
@@ -201,7 +315,22 @@
     "aliases": [
       "Egmont National Park"
     ],
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Taranaki Region"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "abel-tasman-national-park",
@@ -215,18 +344,34 @@
     "enwiki": "https://en.wikipedia.org/wiki/Abel_Tasman_National_Park",
     "lat": -40.9,
     "lng": 172.971,
-    "official_site": null,
+    "official_site": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/abel-tasman-national-park/",
     "access": "unknown",
     "source": "retained_inventory",
     "source_urls": [
       "https://en.wikipedia.org/wiki/Abel_Tasman_National_Park",
-      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand",
+      "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/abel-tasman-national-park/"
     ],
     "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
     "identity_status": "inventory_candidate_not_publication_ready",
     "coordinate_source": "https://en.wikipedia.org/wiki/Abel_Tasman_National_Park",
     "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Tasman District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "kahurangi-national-park",
@@ -240,18 +385,36 @@
     "enwiki": "https://en.wikipedia.org/wiki/Kahurangi_National_Park",
     "lat": -41.13,
     "lng": 172.61,
-    "official_site": null,
+    "official_site": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/kahurangi-national-park/",
     "access": "unknown",
     "source": "retained_inventory",
     "source_urls": [
       "https://en.wikipedia.org/wiki/Kahurangi_National_Park",
-      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand",
+      "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/kahurangi-national-park/"
     ],
     "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
     "identity_status": "inventory_candidate_not_publication_ready",
     "coordinate_source": "https://en.wikipedia.org/wiki/Kahurangi_National_Park",
     "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "West Coast Region",
+      "Buller District",
+      "Tasman District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "nelson-lakes-national-park",
@@ -265,18 +428,35 @@
     "enwiki": "https://en.wikipedia.org/wiki/Nelson_Lakes_National_Park",
     "lat": -41.81916667,
     "lng": 172.8375,
-    "official_site": null,
+    "official_site": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/nelson-lakes-national-park/",
     "access": "unknown",
     "source": "retained_inventory",
     "source_urls": [
       "https://en.wikipedia.org/wiki/Nelson_Lakes_National_Park",
-      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand",
+      "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/nelson-lakes-national-park/"
     ],
     "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
     "identity_status": "inventory_candidate_not_publication_ready",
     "coordinate_source": "https://en.wikipedia.org/wiki/Nelson_Lakes_National_Park",
     "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Tasman District",
+      "Marlborough District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "paparoa-national-park",
@@ -290,18 +470,35 @@
     "enwiki": "https://en.wikipedia.org/wiki/Paparoa_National_Park",
     "lat": -42.08333333,
     "lng": 171.5,
-    "official_site": null,
+    "official_site": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/west-coast/places/paparoa-national-park/",
     "access": "unknown",
     "source": "retained_inventory",
     "source_urls": [
       "https://en.wikipedia.org/wiki/Paparoa_National_Park",
-      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand",
+      "https://www.doc.govt.nz/parks-and-recreation/places-to-go/west-coast/places/paparoa-national-park/"
     ],
     "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
     "identity_status": "inventory_candidate_not_publication_ready",
     "coordinate_source": "https://en.wikipedia.org/wiki/Paparoa_National_Park",
     "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Buller District",
+      "Grey District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "westland-tai-poutini-national-park",
@@ -315,243 +512,35 @@
     "enwiki": "https://en.wikipedia.org/wiki/Westland_Tai_Poutini_National_Park",
     "lat": -43.567,
     "lng": 170.083,
-    "official_site": null,
+    "official_site": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/west-coast/places/westland-tai-poutini-national-park/",
     "access": "unknown",
     "source": "retained_inventory",
     "source_urls": [
       "https://en.wikipedia.org/wiki/Westland_Tai_Poutini_National_Park",
-      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand",
+      "https://www.doc.govt.nz/parks-and-recreation/places-to-go/west-coast/places/westland-tai-poutini-national-park/"
     ],
     "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
     "identity_status": "inventory_candidate_not_publication_ready",
     "coordinate_source": "https://en.wikipedia.org/wiki/Westland_Tai_Poutini_National_Park",
     "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
-  },
-  {
-    "slug": "ahuriri-conservation-park",
-    "name": "Ahuriri Conservation Park",
-    "region": null,
-    "also_regions": [],
-    "country": "nz",
-    "kind": "nature_park",
-    "wave": 2,
-    "wikidata": "Q71924763",
-    "enwiki": "https://en.wikipedia.org/wiki/Ahuriri_Conservation_Park",
-    "lat": -44.33333333,
-    "lng": 169.66666667,
-    "official_site": null,
-    "access": "unknown",
-    "source": "retained_inventory",
-    "source_urls": [
-      "https://en.wikipedia.org/wiki/Ahuriri_Conservation_Park",
-      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "West Coast Region",
+      "Westland District"
     ],
-    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
-    "identity_status": "inventory_candidate_not_publication_ready",
-    "coordinate_source": "https://en.wikipedia.org/wiki/Ahuriri_Conservation_Park",
-    "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
-  },
-  {
-    "slug": "aorangi-forest-park",
-    "name": "Aorangi Forest Park",
-    "region": null,
-    "also_regions": [],
-    "country": "nz",
-    "kind": "nature_park",
-    "wave": 2,
-    "wikidata": "Q15182859",
-    "enwiki": "https://en.wikipedia.org/wiki/Aorangi_Forest_Park",
-    "lat": -41.421104,
-    "lng": 175.362396,
-    "official_site": null,
-    "access": "unknown",
-    "source": "retained_inventory",
-    "source_urls": [
-      "https://en.wikipedia.org/wiki/Aorangi_Forest_Park",
-      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
-    ],
-    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
-    "identity_status": "inventory_candidate_not_publication_ready",
-    "coordinate_source": "https://en.wikipedia.org/wiki/Aorangi_Forest_Park",
-    "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
-  },
-  {
-    "slug": "aotea-conservation-park",
-    "name": "Aotea Conservation Park",
-    "region": null,
-    "also_regions": [],
-    "country": "nz",
-    "kind": "nature_park",
-    "wave": 2,
-    "wikidata": "Q84310489",
-    "enwiki": "https://en.wikipedia.org/wiki/Aotea_Conservation_Park",
-    "lat": -36.192284,
-    "lng": 175.407852,
-    "official_site": null,
-    "access": "unknown",
-    "source": "retained_inventory",
-    "source_urls": [
-      "https://en.wikipedia.org/wiki/Aotea_Conservation_Park",
-      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
-    ],
-    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
-    "identity_status": "inventory_candidate_not_publication_ready",
-    "coordinate_source": "https://en.wikipedia.org/wiki/Aotea_Conservation_Park",
-    "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
-  },
-  {
-    "slug": "battle-hill-farm-forest-park",
-    "name": "Battle Hill Farm Forest Park",
-    "region": null,
-    "also_regions": [],
-    "country": "nz",
-    "kind": "nature_park",
-    "wave": 2,
-    "wikidata": "Q15197054",
-    "enwiki": "https://en.wikipedia.org/wiki/Battle_Hill_Farm_Forest_Park",
-    "lat": -41.0575,
-    "lng": 174.93527778,
-    "official_site": null,
-    "access": "unknown",
-    "source": "retained_inventory",
-    "source_urls": [
-      "https://en.wikipedia.org/wiki/Battle_Hill_Farm_Forest_Park",
-      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
-    ],
-    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
-    "identity_status": "inventory_candidate_not_publication_ready",
-    "coordinate_source": "https://en.wikipedia.org/wiki/Battle_Hill_Farm_Forest_Park",
-    "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
-  },
-  {
-    "slug": "catlins-conservation-park",
-    "name": "Catlins Conservation Park",
-    "region": null,
-    "also_regions": [],
-    "country": "nz",
-    "kind": "nature_park",
-    "wave": 2,
-    "wikidata": "Q84310451",
-    "enwiki": "https://en.wikipedia.org/wiki/Catlins_Conservation_Park",
-    "lat": -46.53333333,
-    "lng": 169.27222222,
-    "official_site": null,
-    "access": "unknown",
-    "source": "retained_inventory",
-    "source_urls": [
-      "https://en.wikipedia.org/wiki/Catlins_Conservation_Park",
-      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
-    ],
-    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
-    "identity_status": "inventory_candidate_not_publication_ready",
-    "coordinate_source": "https://en.wikipedia.org/wiki/Catlins_Conservation_Park",
-    "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
-  },
-  {
-    "slug": "coromandel-forest-park",
-    "name": "Coromandel Forest Park",
-    "region": null,
-    "also_regions": [],
-    "country": "nz",
-    "kind": "nature_park",
-    "wave": 2,
-    "wikidata": "Q86666363",
-    "enwiki": "https://en.wikipedia.org/wiki/Coromandel_Forest_Park",
-    "lat": -37.0254308,
-    "lng": 175.6640365,
-    "official_site": null,
-    "access": "unknown",
-    "source": "retained_inventory",
-    "source_urls": [
-      "https://en.wikipedia.org/wiki/Coromandel_Forest_Park",
-      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
-    ],
-    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
-    "identity_status": "inventory_candidate_not_publication_ready",
-    "coordinate_source": "https://en.wikipedia.org/wiki/Coromandel_Forest_Park",
-    "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
-  },
-  {
-    "slug": "craigieburn-forest-park",
-    "name": "Craigieburn Forest Park",
-    "region": null,
-    "also_regions": [],
-    "country": "nz",
-    "kind": "nature_park",
-    "wave": 2,
-    "wikidata": "Q3251168",
-    "enwiki": "https://en.wikipedia.org/wiki/Craigieburn_Forest_Park",
-    "lat": -43.1527,
-    "lng": 171.7315,
-    "official_site": null,
-    "access": "unknown",
-    "source": "retained_inventory",
-    "source_urls": [
-      "https://en.wikipedia.org/wiki/Craigieburn_Forest_Park",
-      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
-    ],
-    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
-    "identity_status": "inventory_candidate_not_publication_ready",
-    "coordinate_source": "https://en.wikipedia.org/wiki/Craigieburn_Forest_Park",
-    "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
-  },
-  {
-    "slug": "eyre-mountains-taka-ra-haka-conservation-park",
-    "name": "Eyre Mountains/Taka Ra Haka Conservation Park",
-    "region": null,
-    "also_regions": [],
-    "country": "nz",
-    "kind": "nature_park",
-    "wave": 2,
-    "wikidata": null,
-    "enwiki": "https://en.wikipedia.org/wiki/Eyre_Mountains/Taka_Ra_Haka_Conservation_Park",
-    "lat": null,
-    "lng": null,
-    "official_site": null,
-    "access": "unknown",
-    "source": "retained_inventory",
-    "source_urls": [
-      "https://en.wikipedia.org/wiki/Eyre_Mountains/Taka_Ra_Haka_Conservation_Park",
-      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
-    ],
-    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
-    "identity_status": "inventory_candidate_not_publication_ready",
-    "coordinate_source": null,
-    "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
-  },
-  {
-    "slug": "hakatere-conservation-park",
-    "name": "Hakatere Conservation Park",
-    "region": null,
-    "also_regions": [],
-    "country": "nz",
-    "kind": "nature_park",
-    "wave": 2,
-    "wikidata": "Q66309474",
-    "enwiki": "https://en.wikipedia.org/wiki/Hakatere_Conservation_Park",
-    "lat": -43.5,
-    "lng": 171.2,
-    "official_site": null,
-    "access": "unknown",
-    "source": "retained_inventory",
-    "source_urls": [
-      "https://en.wikipedia.org/wiki/Hakatere_Conservation_Park",
-      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
-    ],
-    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
-    "identity_status": "inventory_candidate_not_publication_ready",
-    "coordinate_source": "https://en.wikipedia.org/wiki/Hakatere_Conservation_Park",
-    "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "hanmer-conservation-park",
@@ -576,37 +565,377 @@
     "identity_status": "inventory_candidate_not_publication_ready",
     "coordinate_source": "https://en.wikipedia.org/wiki/Hanmer_Conservation_Park",
     "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_region",
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
-    "slug": "hawea-conservation-park",
-    "name": "Hāwea Conservation Park",
+    "slug": "northland-conservation-park",
+    "name": "Northland Conservation Park",
     "region": null,
     "also_regions": [],
     "country": "nz",
     "kind": "nature_park",
     "wave": 2,
-    "wikidata": "Q5684705",
-    "enwiki": "https://en.wikipedia.org/wiki/Hāwea_Conservation_Park",
-    "lat": -44.29,
-    "lng": 169.41,
+    "wikidata": "Q108672384",
+    "enwiki": "https://en.wikipedia.org/wiki/Northland_Conservation_Park",
+    "lat": -35.64,
+    "lng": 173.55,
     "official_site": null,
     "access": "unknown",
     "source": "retained_inventory",
     "source_urls": [
-      "https://en.wikipedia.org/wiki/Hāwea_Conservation_Park",
+      "https://en.wikipedia.org/wiki/Northland_Conservation_Park",
       "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
     ],
     "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
     "identity_status": "inventory_candidate_not_publication_ready",
-    "coordinate_source": "https://en.wikipedia.org/wiki/Hāwea_Conservation_Park",
+    "coordinate_source": "https://en.wikipedia.org/wiki/Northland_Conservation_Park",
     "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_region",
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
+  },
+  {
+    "slug": "pirongia-forest-park",
+    "name": "Pirongia Forest Park",
+    "region": null,
+    "also_regions": [],
+    "country": "nz",
+    "kind": "nature_park",
+    "wave": 2,
+    "wikidata": "Q15266787",
+    "enwiki": "https://en.wikipedia.org/wiki/Pirongia_Forest_Park",
+    "lat": -37.98333333,
+    "lng": 175.1,
+    "official_site": null,
+    "access": "unknown",
+    "source": "retained_inventory",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Pirongia_Forest_Park",
+      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+    ],
+    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
+    "identity_status": "inventory_candidate_not_publication_ready",
+    "coordinate_source": "https://en.wikipedia.org/wiki/Pirongia_Forest_Park",
+    "coordinate_role": "general_destination_point_not_navigation",
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_region",
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
+  },
+  {
+    "slug": "aotea-conservation-park",
+    "name": "Aotea Conservation Park",
+    "region": "auckland",
+    "also_regions": [],
+    "country": "nz",
+    "kind": "nature_park",
+    "wave": 2,
+    "wikidata": "Q84310489",
+    "enwiki": "https://en.wikipedia.org/wiki/Aotea_Conservation_Park",
+    "lat": -36.192284,
+    "lng": 175.407852,
+    "official_site": null,
+    "access": "unknown",
+    "source": "retained_inventory",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Aotea_Conservation_Park",
+      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+    ],
+    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
+    "identity_status": "inventory_candidate_not_publication_ready",
+    "coordinate_source": "https://en.wikipedia.org/wiki/Aotea_Conservation_Park",
+    "coordinate_role": "general_destination_point_not_navigation",
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Auckland Region"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    },
+    "region_source": "https://www.wikidata.org/wiki/Q84310489",
+    "region_note": "Administrative ancestry discovery hint; full park/track boundary not certified."
+  },
+  {
+    "slug": "kaimai-mamaku-conservation-park",
+    "name": "Kaimai Mamaku Conservation Park",
+    "region": "bay-of-plenty",
+    "also_regions": [],
+    "country": "nz",
+    "kind": "nature_park",
+    "wave": 2,
+    "wikidata": "Q60787413",
+    "enwiki": "https://en.wikipedia.org/wiki/Kaimai_Mamaku_Conservation_Park",
+    "lat": -37.721,
+    "lng": 175.888,
+    "official_site": null,
+    "access": "unknown",
+    "source": "retained_inventory",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Kaimai_Mamaku_Conservation_Park",
+      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+    ],
+    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
+    "identity_status": "inventory_candidate_not_publication_ready",
+    "coordinate_source": "https://en.wikipedia.org/wiki/Kaimai_Mamaku_Conservation_Park",
+    "coordinate_role": "general_destination_point_not_navigation",
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Western Bay of Plenty District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    },
+    "region_source": "https://www.wikidata.org/wiki/Q60787413",
+    "region_note": "Administrative ancestry discovery hint; full park/track boundary not certified."
+  },
+  {
+    "slug": "whakarewarewa-conservation-park",
+    "name": "Whakarewarewa Conservation Park",
+    "region": "bay-of-plenty",
+    "also_regions": [
+      "waikato"
+    ],
+    "country": "nz",
+    "kind": "nature_park",
+    "wave": 2,
+    "wikidata": "Q108427222",
+    "enwiki": "https://en.wikipedia.org/wiki/Whakarewarewa_Conservation_Park",
+    "lat": -38.186,
+    "lng": 176.324,
+    "official_site": null,
+    "access": "unknown",
+    "source": "retained_inventory",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Whakarewarewa_Conservation_Park",
+      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+    ],
+    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
+    "identity_status": "inventory_candidate_not_publication_ready",
+    "coordinate_source": "https://www.wikidata.org/wiki/Q108427222",
+    "coordinate_role": "general_destination_point_not_navigation",
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Rotorua Lakes District",
+      "Bay of Plenty Region"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    },
+    "region_source": "https://www.wikidata.org/wiki/Q108427222",
+    "region_note": "Administrative ancestry discovery hint; full park/track boundary not certified."
+  },
+  {
+    "slug": "whirinaki-te-pua-a-tane-conservation-park",
+    "name": "Whirinaki Te Pua-a-Tāne Conservation Park",
+    "region": "bay-of-plenty",
+    "also_regions": [
+      "hawkes-bay",
+      "waikato",
+      "manawatu-whanganui"
+    ],
+    "country": "nz",
+    "kind": "nature_park",
+    "wave": 2,
+    "wikidata": "Q313393",
+    "enwiki": "https://en.wikipedia.org/wiki/Whirinaki_Te_Pua-a-T%C4%81ne_Conservation_Park",
+    "lat": -38.66666667,
+    "lng": 176.68333333,
+    "official_site": null,
+    "access": "unknown",
+    "source": "retained_inventory",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Whirinaki_Te_Pua-a-Tāne_Conservation_Park",
+      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+    ],
+    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
+    "identity_status": "inventory_candidate_not_publication_ready",
+    "coordinate_source": "https://en.wikipedia.org/wiki/Whirinaki_Te_Pua-a-Tāne_Conservation_Park",
+    "coordinate_role": "general_destination_point_not_navigation",
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Whakatāne District",
+      "Wairoa District",
+      "Bay of Plenty Region",
+      "Hawke's Bay Region",
+      "Taupō District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    },
+    "region_source": "https://www.wikidata.org/wiki/Q313393",
+    "region_note": "Administrative ancestry discovery hint; full park/track boundary not certified."
+  },
+  {
+    "slug": "craigieburn-forest-park",
+    "name": "Craigieburn Forest Park",
+    "region": "canterbury",
+    "also_regions": [],
+    "country": "nz",
+    "kind": "nature_park",
+    "wave": 2,
+    "wikidata": "Q3251168",
+    "enwiki": "https://en.wikipedia.org/wiki/Craigieburn_Forest_Park",
+    "lat": -43.1527,
+    "lng": 171.7315,
+    "official_site": null,
+    "access": "unknown",
+    "source": "retained_inventory",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Craigieburn_Forest_Park",
+      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+    ],
+    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
+    "identity_status": "inventory_candidate_not_publication_ready",
+    "coordinate_source": "https://en.wikipedia.org/wiki/Craigieburn_Forest_Park",
+    "coordinate_role": "general_destination_point_not_navigation",
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Canterbury Region",
+      "Selwyn District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    },
+    "region_source": "https://www.wikidata.org/wiki/Q3251168",
+    "region_note": "Administrative ancestry discovery hint; full park/track boundary not certified."
+  },
+  {
+    "slug": "hakatere-conservation-park",
+    "name": "Hakatere Conservation Park",
+    "region": "canterbury",
+    "also_regions": [],
+    "country": "nz",
+    "kind": "nature_park",
+    "wave": 2,
+    "wikidata": "Q66309474",
+    "enwiki": "https://en.wikipedia.org/wiki/Hakatere_Conservation_Park",
+    "lat": -43.5,
+    "lng": 171.2,
+    "official_site": null,
+    "access": "unknown",
+    "source": "retained_inventory",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Hakatere_Conservation_Park",
+      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+    ],
+    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
+    "identity_status": "inventory_candidate_not_publication_ready",
+    "coordinate_source": "https://en.wikipedia.org/wiki/Hakatere_Conservation_Park",
+    "coordinate_role": "general_destination_point_not_navigation",
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Ashburton District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    },
+    "region_source": "https://www.wikidata.org/wiki/Q66309474",
+    "region_note": "Administrative ancestry discovery hint; full park/track boundary not certified."
   },
   {
     "slug": "ka-whata-tu-o-rakihouia-conservation-park",
     "name": "Ka Whata Tu O Rakihouia Conservation Park",
-    "region": null,
+    "region": "canterbury",
     "also_regions": [],
     "country": "nz",
     "kind": "nature_park",
@@ -626,6 +955,111 @@
     "identity_status": "inventory_candidate_not_publication_ready",
     "coordinate_source": "https://en.wikipedia.org/wiki/Ka_Whata_Tu_O_Rakihouia_Conservation_Park",
     "coordinate_role": "general_destination_point_not_navigation",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Kaikōura District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    },
+    "region_source": "https://www.wikidata.org/wiki/Q85124473",
+    "region_note": "Administrative ancestry discovery hint; full park/track boundary not certified."
+  },
+  {
+    "slug": "lake-sumner-forest-park",
+    "name": "Lake Sumner Forest Park",
+    "region": "canterbury",
+    "also_regions": [],
+    "country": "nz",
+    "kind": "nature_park",
+    "wave": 2,
+    "wikidata": "Q6477879",
+    "enwiki": "https://en.wikipedia.org/wiki/Lake_Sumner_Forest_Park",
+    "lat": -42.618,
+    "lng": 172.252,
+    "official_site": null,
+    "access": "unknown",
+    "source": "retained_inventory",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Lake_Sumner_Forest_Park",
+      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+    ],
+    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
+    "identity_status": "inventory_candidate_not_publication_ready",
+    "coordinate_source": "https://en.wikipedia.org/wiki/Lake_Sumner_Forest_Park",
+    "coordinate_role": "general_destination_point_not_navigation",
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Canterbury Region",
+      "Hurunui District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    },
+    "region_source": "https://www.wikidata.org/wiki/Q6477879",
+    "region_note": "Administrative ancestry discovery hint; full park/track boundary not certified."
+  },
+  {
+    "slug": "ruataniwha-conservation-park",
+    "name": "Ruataniwha Conservation Park",
+    "region": "canterbury",
+    "also_regions": [],
+    "country": "nz",
+    "kind": "nature_park",
+    "wave": 2,
+    "wikidata": "Q85423882",
+    "enwiki": "https://en.wikipedia.org/wiki/Ruataniwha_Conservation_Park",
+    "lat": -43.9999981,
+    "lng": 169.9824904,
+    "official_site": null,
+    "access": "unknown",
+    "source": "retained_inventory",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Ruataniwha_Conservation_Park",
+      "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+    ],
+    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
+    "identity_status": "inventory_candidate_not_publication_ready",
+    "coordinate_source": "https://en.wikipedia.org/wiki/Ruataniwha_Conservation_Park",
+    "coordinate_role": "general_destination_point_not_navigation",
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Mackenzie District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    },
+    "region_source": "https://www.wikidata.org/wiki/Q85423882",
+    "region_note": "Administrative ancestry discovery hint; full park/track boundary not certified."
   }
 ]

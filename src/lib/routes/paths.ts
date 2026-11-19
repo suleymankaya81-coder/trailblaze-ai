@@ -60,6 +60,8 @@ export const COUNTRIES: Record<string, { name: string; nameDe: string }> = {
   lu: { name: "Luxembourg", nameDe: "Luxemburg" },
   mt: { name: "Malta", nameDe: "Malta" },
   cy: { name: "Cyprus", nameDe: "Zypern" },
+  au: { name: "Australia", nameDe: "Australien" },
+  nz: { name: "New Zealand", nameDe: "Neuseeland" },
 };
 
 export function slugifyRegion(name: string): string {
@@ -160,6 +162,7 @@ export function canonicalPath(input: string): string {
 export function regionUnit(country: string): { en: string; enPlural: string; de: string; dePlural: string } {
   if (country === "us") return { en: "state", enPlural: "states", de: "Bundesstaat", dePlural: "Bundesstaaten" };
   if (country === "ca") return { en: "province", enPlural: "provinces and territories", de: "Provinz", dePlural: "Provinzen und Territorien" };
+  if (country === "au") return { en: "state or territory", enPlural: "states and territories", de: "Bundesstaat oder Territorium", dePlural: "Bundesstaaten und Territorien" };
   if (country === "gb") return { en: "nation", enPlural: "nations", de: "Landesteil", dePlural: "Landesteilen" };
   if (country === "de" || country === "at") return { en: "state", enPlural: "states", de: "Bundesland", dePlural: "Bundesländern" };
   if (country === "ch") return { en: "canton", enPlural: "cantons", de: "Kanton", dePlural: "Kantonen" };

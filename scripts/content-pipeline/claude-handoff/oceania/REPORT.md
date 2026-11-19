@@ -1,18 +1,18 @@
 # Avustralya ve Yeni Zelanda katalog raporu — 19 Kasım 2026
 
-**Toplam: 1.016 aday destinasyon; hiçbir sayfa yayımlanmadı.**
+**Güncellenmiş toplam: 1.006 aday destinasyon; hiçbir sayfa yayımlanmadı.**
 
 | Ülke | Aday | Milli park adayları | Diğer doğal yer/rota | Konumu belirsiz | Bölgesi belirsiz |
 |---|---:|---:|---:|---:|---:|
-| Avustralya | 887 | 835 | 52 | 13 | 0 |
-| Yeni Zelanda | 129 | 13 | 116 | 17 | 43 |
+| Avustralya | 877 | 825 | 52 | 7 | 0 |
+| Yeni Zelanda | 129 | 13 | 116 | 1 | 3 |
 
-Avustralya milli park adayları **güncel kamuya açık 835 park demek değildir**: CAPAD 2024 envanteri ile Wikipedia farklarını ve 9 scientific parkı da inceleme kaydı olarak içerir. Bunların ziyaretçi erişimi ve güncel statüsü üretimden önce doğrulanmalıdır.
+Avustralya milli park adayları **güncel kamuya açık 825 park demek değildir**: CAPAD 2024 envanteri ile Wikipedia farklarını ve 9 scientific parkı da inceleme kaydı olarak içerir. Bunların ziyaretçi erişimi ve güncel statüsü üretimden önce doğrulanmalıdır.
 
 ## Kapsam kontrolü
 
 - Resmî CAPAD hizmetinden 1.550 arazi kaydı indirildi. Seçili milli park türlerinde 796 eyalet/ad grubu tekil kayıt olarak uzlaştırıldı; aynı parkın parçaları ayrı destinasyon yapılmadı. Seçim dışındaki önerilen/kanun eki arazi kayıtları `exclusions.json` dosyasında gerekçeleriyle saklandı.
-- Avustralya: ACT 1, NSW 257, NT 27, QLD 339, SA 38, TAS 27, VIC 63, WA 134, Jervis Bay 1. Bunlar tüm aday türlerini içerir; eyalet başına milli park sayısı değildir.
+- Avustralya eyalet sayıları güncel `coverage.json` ve ülke dizisinden okunmalıdır; eski/yeni aynı-yer kimlikleri birleştirilerek 10 tekrar giderildi. Bunlar tüm aday türlerini içerir; eyalet başına milli park sayısı değildir.
 - Dış topraklar için 5 ayrı araştırma kaydı; Norfolk adasının iki arazi kesimi dahil. Ana kara kataloğuna karıştırılmadı; ada parçaları/alias birleşimi ve ulaşım üretimden önce ayrıca incelenmelidir.
 - Yeni Zelanda: 13 güncel milli park ve 11 resmî Great Walk tek tek katalog slug’larına bağlandı. Te Urewera milli park değil ayrı korunan alan; Egmont güncel Te Papa-Kura-o-Taranaki adı altında tutuldu.
 - Büyük doğal yerler ve manzaralı/yürüyüş rotaları mevcut Wikipedia makale kimlikleriyle keşif girdisi olarak eklendi. Lake St Clair’ın yanlış Kanada/ABD gölü eşleşmesi yakalanarak Tasmanya makalesiyle değiştirildi.
@@ -27,6 +27,12 @@ Avustralya milli park adayları **güncel kamuya açık 835 park demek değildir
 
 ## Doğrulananlar ve sınırlar
 
-Beş çevrimdışı test geçti: Nordik alanları, tekrar kimlikler, koordinat çiftleri/ülke sınırları, kaynak URL biçimleri, 13 güncel park, 11 Great Walk, tekilleştirilmiş arazi parçaları ve kayıpsız batch kontrolü. Uygulama derlemesi hatasız; uygulama sayfaları değiştirilmedi.
+Altı çevrimdışı katalog testi ve 11 ülke/harita bağlantı testi geçti. `Aoraki / Mount Cook` gibi adlarda eğik çizginin makale kimliğini bozması düzeltildi; kaynaklı konumlar geri kazanıldı. Avustralya/Yeni Zelanda adları ve Okyanusya sınıflaması mevcut ülke dizinine eklendi; boş/yayımlanmamış dizinler hâlâ 404 verir. Uygulama derlemesi hatasız.
 
-30 koordinat ve 43 Yeni Zelanda bölgesi doğrulanamadığından null bırakıldı. Konumu bulunan kayıtlar da ziyaretçi girişi veya navigasyon noktası olarak doğrulanmış değildir. Fotoğraflar, güncel yol/kamp/izin kuralları, kaynak URL’lerinin tek tek canlı kontrolü, Almanca çeviriler ve Webjet yer bazlı hizmet uygunluğu **üretim aşamasına bırakıldı**. Katalog hazırlığı içerik modeli çağrısı veya veritabanı yayını yapmadı; tüm saklanmış kaynaklar tekrar kullanılabilir.
+Kaynaklı 22 genel konum ve 40 Yeni Zelanda bölgesi tamamlandı; 8 konum ve 3 bölge belirsiz kaldı. Eksik bölgeler: Hanmer Conservation Park, Northland Conservation Park, Pirongia Forest Park. Eksik konumlar: Georges River Koala National Park, Great Koala National Park, Muundhi National Park, North East Island National Park, Larapinta Trail, Overland Track, Great Alpine Road ve Milford Track. Uzun rotalara uydurma merkez/başlangıç noktası atanmadı. North East Island makalesinin genel park listesine yönlendiği görüldü; yanlış QID bağlantısı kaldırıldı.
+
+83 benzersiz Wikipedia dışı kaynak adresinin 73’ü 200 döndü, 10’u zaman aşımına uğradı; erişilemeyenler bozuk ilan edilmedi. 832 makale kimliği API ile incelendi; 129 Yeni Zelanda adayının tamamında QID var. Resmî DOC park listesinden 12 ek park adresi kurtarıldı; Yeni Zelanda’da 23 kayıt tam resmî ziyaretçi adresine sahip. HTTP 200, metnin doğru veya güncel olduğu anlamına gelmez.
+
+Tam ham Wikidata dökümü kayıt boyutu sınırını geçti; geçici yerel kopyası yeniden okunarak doğrulandı, ancak ortam sıfırlanınca korunacağı doğrulanmadı. Aday düzeltmeleri ve denetim sonuçları kalıcı dosyalarda saklandı; tam ham yanıt gerektiğinde yeniden alınmalıdır.
+
+**İstenen sayfa/harita doğrulaması tamamlanamadı:** veritabanında AU/NZ yayımlanmış veya taslak kayıt yok. Dört ülke adresi İngilizce/Almanca ve telefon/bilgisayarda açıldı (8 kontrol); hepsi gerçek 404 ve harita yok. Park bağlantısı akışı henüz bulunmadığından çalışıyor denmedi. Fotoğraflar, exact-place ziyaretçi erişim kanıtları ve İngilizce/Almanca sayfa içerikleri üretilmeden ülkeleri yayına almak güvenilir değildir. Webjet AU/NZ adres kontrolleri zaman aşımına uğradı; partner uygunluğu doğrulanamadı. Hiçbir veritabanı veya yönlendirme değişikliği yapılmadı; `candidate-findings.json` her adayın kalan üretim engellerini saklar.

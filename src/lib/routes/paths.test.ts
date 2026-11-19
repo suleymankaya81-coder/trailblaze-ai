@@ -1,8 +1,15 @@
 import { describe, expect, it } from "vitest";
-import { canonicalPath, destinationPath, guidePath, parseLegacyGuidePath, regionPath } from "./paths";
+import { canonicalPath, countryPath, isCountry, regionUnit, destinationPath, guidePath, parseLegacyGuidePath, regionPath } from "./paths";
 import { absoluteUrl, SITE_ORIGIN } from "@/config/site";
 
 describe("paths", () => {
+  it("recognizes Oceania countries without changing locale placement", () => {
+    expect(isCountry("au")).toBe(true);
+    expect(isCountry("nz")).toBe(true);
+    expect(countryPath("au", "de")).toBe("/de/destinations/au");
+    expect(countryPath("nz")).toBe("/destinations/nz");
+    expect(regionUnit("au").enPlural).toBe("states and territories");
+  });
   it("builds country/region/place addresses", () => {
     expect(destinationPath("acadia")).toBe("/destinations/us/maine/acadia");
     expect(destinationPath("acadia", "de")).toBe("/de/destinations/us/maine/acadia");

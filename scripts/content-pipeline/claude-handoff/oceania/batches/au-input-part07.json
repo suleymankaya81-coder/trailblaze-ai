@@ -1,46 +1,5 @@
 [
   {
-    "slug": "mogriguy-national-park-nsw",
-    "name": "Mogriguy National Park",
-    "region": "new-south-wales",
-    "also_regions": [],
-    "country": "au",
-    "kind": "national_park",
-    "wave": 1,
-    "wikidata": null,
-    "enwiki": null,
-    "lat": -32.07931298,
-    "lng": 148.61665084,
-    "official_site": null,
-    "access": "unknown",
-    "source": "retained_inventory",
-    "source_urls": [
-      "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/FeatureServer/0"
-    ],
-    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
-    "identity_status": "inventory_candidate_not_publication_ready",
-    "coordinate_source": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/FeatureServer/0",
-    "coordinate_role": "largest_inventory_parcel_centroid_not_navigation",
-    "park_authority": [
-      "NSW_DCCEEW"
-    ],
-    "inventory_date": "2024-06-30",
-    "inventory_names": [
-      "Mogriguy"
-    ],
-    "inventory_ids": [
-      "NSW_N1061"
-    ],
-    "parcel_count": 1,
-    "region_iso_codes": [
-      "AU-NSW"
-    ],
-    "region_source": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/FeatureServer/0",
-    "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
-    "scientific_restriction_review": false,
-    "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide."
-  },
-  {
     "slug": "monga-national-park-nsw",
     "name": "Monga National Park",
     "region": "new-south-wales",
@@ -79,7 +38,19 @@
     "region_source": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/FeatureServer/0",
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
-    "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide."
+    "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [],
+      "publication_ready": false,
+      "issues": [
+        "missing_wikidata_identity",
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "mooball-national-park-nsw",
@@ -123,7 +94,23 @@
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
     "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "morton-national-park-nsw",
@@ -167,7 +154,25 @@
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
     "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales",
+      "City of Shoalhaven",
+      "Endrick"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "mount-clunie-national-park-nsw",
@@ -211,7 +216,23 @@
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
     "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "mount-grenfell-national-park-nsw",
@@ -252,7 +273,19 @@
     "region_source": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/FeatureServer/0",
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
-    "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide."
+    "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [],
+      "publication_ready": false,
+      "issues": [
+        "missing_wikidata_identity",
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "mount-imlay-national-park-nsw",
@@ -296,7 +329,25 @@
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
     "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales",
+      "Bega Valley Shire",
+      "Sturt"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "mount-jerusalem-national-park-nsw",
@@ -340,7 +391,25 @@
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
     "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales",
+      "Byron Shire",
+      "Toolond"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "mount-kaputar-national-park-nsw",
@@ -384,7 +453,24 @@
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
     "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales",
+      "Narrabri Shire"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "mount-nothofagus-national-park-nsw",
@@ -428,7 +514,23 @@
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
     "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "mount-pikapene-national-park-nsw",
@@ -472,7 +574,23 @@
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
     "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "mount-royal-national-park-nsw",
@@ -516,33 +634,23 @@
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
     "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
-  },
-  {
-    "slug": "mount-warning-national-park-nsw",
-    "name": "Mount Warning National Park",
-    "region": "new-south-wales",
-    "also_regions": [],
-    "country": "au",
-    "kind": "national_park",
-    "wave": 1,
-    "wikidata": "Q2347510",
-    "enwiki": "https://en.wikipedia.org/wiki/Wollumbin_National_Park",
-    "lat": -28.38972222,
-    "lng": 153.26861111,
-    "official_site": null,
-    "access": "unknown",
-    "source": "retained_inventory",
-    "source_urls": [
-      "https://en.wikipedia.org/wiki/Wollumbin_National_Park",
-      "https://en.wikipedia.org/wiki/List_of_national_parks_of_Australia"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales"
     ],
-    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
-    "identity_status": "wikipedia_inventory_discrepancy",
-    "coordinate_source": "https://en.wikipedia.org/wiki/Wollumbin_National_Park",
-    "coordinate_role": "general_destination_point_not_navigation",
-    "publication_hold": "Not exact-name matched to CAPAD 2024: review renaming, consolidation, newer designation or obsolete status.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "mummel-gulf-national-park-nsw",
@@ -586,7 +694,23 @@
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
     "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "mungo-national-park-nsw",
@@ -630,7 +754,24 @@
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
     "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales",
+      "Balranald Shire"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "murramarang-national-park-nsw",
@@ -674,7 +815,25 @@
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
     "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales",
+      "Eurobodalla Shire",
+      "Kioloa"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "murray-valley-national-park-nsw",
@@ -718,7 +877,23 @@
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
     "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "murrumbidgee-valley-national-park-nsw",
@@ -762,7 +937,23 @@
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
     "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "murrurundi-pass-national-park-nsw",
@@ -803,7 +994,19 @@
     "region_source": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/FeatureServer/0",
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
-    "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide."
+    "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [],
+      "publication_ready": false,
+      "issues": [
+        "missing_wikidata_identity",
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "mutawintji-national-park-nsw",
@@ -847,7 +1050,23 @@
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
     "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "myall-lakes-national-park-nsw",
@@ -891,7 +1110,25 @@
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
     "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales",
+      "Great Lakes Council",
+      "Eurunderee"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "nangar-national-park-nsw",
@@ -935,7 +1172,25 @@
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
     "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales",
+      "Cabonne Shire",
+      "Nangar"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "narriearra-caryapundy-swamp-national-park-nsw",
@@ -979,7 +1234,24 @@
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
     "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Unincorporated Far West Area",
+      "New South Wales"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "nattai-national-park-nsw",
@@ -1023,7 +1295,23 @@
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
     "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "new-england-national-park-nsw",
@@ -1067,6 +1355,146 @@
     "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
     "scientific_restriction_review": false,
     "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales",
+      "Bellingen Shire",
+      "Waverley"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
+  },
+  {
+    "slug": "nightcap-national-park-nsw",
+    "name": "Nightcap National Park",
+    "region": "new-south-wales",
+    "also_regions": [],
+    "country": "au",
+    "kind": "national_park",
+    "wave": 1,
+    "wikidata": "Q1573530",
+    "enwiki": "https://en.wikipedia.org/wiki/Nightcap_National_Park",
+    "lat": -28.55995262,
+    "lng": 153.32117727,
+    "official_site": null,
+    "access": "unknown",
+    "source": "retained_inventory",
+    "source_urls": [
+      "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/FeatureServer/0",
+      "https://en.wikipedia.org/wiki/List_of_national_parks_of_Australia",
+      "https://en.wikipedia.org/wiki/Nightcap_National_Park"
+    ],
+    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
+    "identity_status": "inventory_candidate_not_publication_ready",
+    "coordinate_source": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/FeatureServer/0",
+    "coordinate_role": "largest_inventory_parcel_centroid_not_navigation",
+    "park_authority": [
+      "NSW_DCCEEW"
+    ],
+    "inventory_date": "2024-06-30",
+    "inventory_names": [
+      "Nightcap"
+    ],
+    "inventory_ids": [
+      "NSW_N0062"
+    ],
+    "parcel_count": 1,
+    "region_iso_codes": [
+      "AU-NSW"
+    ],
+    "region_source": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/FeatureServer/0",
+    "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
+    "scientific_restriction_review": false,
+    "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales",
+      "Byron Shire",
+      "Whian Whian"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
+  },
+  {
+    "slug": "nowendoc-national-park-nsw",
+    "name": "Nowendoc National Park",
+    "region": "new-south-wales",
+    "also_regions": [],
+    "country": "au",
+    "kind": "national_park",
+    "wave": 1,
+    "wikidata": "Q1165129",
+    "enwiki": "https://en.wikipedia.org/wiki/Nowendoc_National_Park",
+    "lat": -31.55318901,
+    "lng": 151.5972171,
+    "official_site": null,
+    "access": "unknown",
+    "source": "retained_inventory",
+    "source_urls": [
+      "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/FeatureServer/0",
+      "https://en.wikipedia.org/wiki/List_of_national_parks_of_Australia",
+      "https://en.wikipedia.org/wiki/Nowendoc_National_Park"
+    ],
+    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
+    "identity_status": "inventory_candidate_not_publication_ready",
+    "coordinate_source": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/FeatureServer/0",
+    "coordinate_role": "largest_inventory_parcel_centroid_not_navigation",
+    "park_authority": [
+      "NSW_DCCEEW"
+    ],
+    "inventory_date": "2024-06-30",
+    "inventory_names": [
+      "Nowendoc"
+    ],
+    "inventory_ids": [
+      "NSW_N0130"
+    ],
+    "parcel_count": 1,
+    "region_iso_codes": [
+      "AU-NSW"
+    ],
+    "region_source": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/FeatureServer/0",
+    "official_directory": "https://www.nationalparks.nsw.gov.au/visit-a-park",
+    "scientific_restriction_review": false,
+    "publication_hold": "Exact-place public visitor access and current park identity require review; CAPAD is a 2024 land inventory, not a 2026 visitor guide.",
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "New South Wales"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q408"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   }
 ]

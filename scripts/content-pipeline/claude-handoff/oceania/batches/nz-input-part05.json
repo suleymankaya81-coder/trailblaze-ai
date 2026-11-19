@@ -1,103 +1,47 @@
 [
   {
-    "slug": "doubtful-sound",
-    "name": "Doubtful Sound",
+    "slug": "routeburn-track",
+    "name": "Routeburn Track",
     "region": "southland",
-    "also_regions": [],
+    "also_regions": [
+      "otago"
+    ],
     "country": "nz",
-    "kind": "natural_attraction",
+    "kind": "walking_route",
     "wave": 3,
-    "wikidata": "Q575365",
-    "enwiki": "https://en.wikipedia.org/wiki/Doubtful_Sound",
-    "lat": -45.31666667,
-    "lng": 166.98333333,
-    "official_site": null,
-    "access": "unknown",
+    "wikidata": "Q2170592",
+    "enwiki": "https://en.wikipedia.org/wiki/Routeburn_Track",
+    "lat": -44.726954,
+    "lng": 168.170337,
+    "official_site": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/routeburn-track/",
+    "access": "foot",
     "source": "retained_inventory",
     "source_urls": [
-      "https://en.wikipedia.org/wiki/Doubtful_Sound"
+      "https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/routeburn-track/",
+      "https://www.doc.govt.nz/parks-and-recreation/things-to-do/walking-and-tramping/great-walks/compare-great-walks/"
     ],
-    "access_note": "Island/marine destination: boat/ferry/flight access, vehicle carriage and suitable visitor gateways require exact-place verification; no mainland drive assumed.",
-    "identity_status": "existing_article_discovery_candidate",
-    "coordinate_source": "https://en.wikipedia.org/wiki/Doubtful_Sound",
+    "access_note": "Multi-day Great Walk: not a drivable loop; hut/campsite bookings, transport and seasonal access require current official review.",
+    "identity_status": "inventory_candidate_not_publication_ready",
+    "coordinate_source": "https://www.wikidata.org/wiki/Q2170592",
     "coordinate_role": "general_destination_point_not_navigation",
-    "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
-  },
-  {
-    "slug": "lake-manapouri",
-    "name": "Lake Manapouri",
-    "region": "southland",
-    "also_regions": [],
-    "country": "nz",
-    "kind": "natural_attraction",
-    "wave": 3,
-    "wikidata": "Q1192384",
-    "enwiki": "https://en.wikipedia.org/wiki/Lake_Manapouri",
-    "lat": -45.5,
-    "lng": 167.5,
-    "official_site": null,
-    "access": "unknown",
-    "source": "retained_inventory",
-    "source_urls": [
-      "https://en.wikipedia.org/wiki/Lake_Manapouri"
+    "administrative_area_hints": [
+      "Southland District",
+      "Queenstown Lakes District"
     ],
-    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
-    "identity_status": "existing_article_discovery_candidate",
-    "coordinate_source": "https://en.wikipedia.org/wiki/Lake_Manapouri",
-    "coordinate_role": "general_destination_point_not_navigation",
-    "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
-  },
-  {
-    "slug": "lake-te-anau",
-    "name": "Lake Te Anau",
-    "region": "southland",
-    "also_regions": [],
-    "country": "nz",
-    "kind": "natural_attraction",
-    "wave": 3,
-    "wikidata": "Q1140471",
-    "enwiki": "https://en.wikipedia.org/wiki/Lake_Te_Anau",
-    "lat": -45.2,
-    "lng": 167.8,
-    "official_site": null,
-    "access": "unknown",
-    "source": "retained_inventory",
-    "source_urls": [
-      "https://en.wikipedia.org/wiki/Lake_Te_Anau"
-    ],
-    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
-    "identity_status": "existing_article_discovery_candidate",
-    "coordinate_source": "https://en.wikipedia.org/wiki/Lake_Te_Anau",
-    "coordinate_role": "general_destination_point_not_navigation",
-    "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
-  },
-  {
-    "slug": "milford-sound",
-    "name": "Milford Sound",
-    "region": "southland",
-    "also_regions": [],
-    "country": "nz",
-    "kind": "natural_attraction",
-    "wave": 3,
-    "wikidata": "Q187197",
-    "enwiki": "https://en.wikipedia.org/wiki/Milford_Sound",
-    "lat": -44.64805556,
-    "lng": 167.90555556,
-    "official_site": null,
-    "access": "unknown",
-    "source": "retained_inventory",
-    "source_urls": [
-      "https://en.wikipedia.org/wiki/Milford_Sound"
-    ],
-    "access_note": "Island/marine destination: boat/ferry/flight access, vehicle carriage and suitable visitor gateways require exact-place verification; no mainland drive assumed.",
-    "identity_status": "existing_article_discovery_candidate",
-    "coordinate_source": "https://en.wikipedia.org/wiki/Milford_Sound",
-    "coordinate_role": "general_destination_point_not_navigation",
-    "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    },
+    "region_source": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/routeburn-track/",
+    "region_note": "Official DOC visitor region mapped to catalog primary region; full track boundary not certified."
   },
   {
     "slug": "southern-scenic-route",
@@ -122,7 +66,21 @@
     "coordinate_source": "https://en.wikipedia.org/wiki/Southern_Scenic_Route",
     "coordinate_role": "general_destination_point_not_navigation",
     "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "stewart-island-rakiura",
@@ -133,7 +91,7 @@
     "kind": "natural_attraction",
     "wave": 3,
     "wikidata": "Q41684",
-    "enwiki": "https://en.wikipedia.org/wiki/Stewart_Island_/_Rakiura",
+    "enwiki": "https://en.wikipedia.org/wiki/Stewart_Island",
     "lat": -47,
     "lng": 167.84,
     "official_site": null,
@@ -147,7 +105,23 @@
     "coordinate_source": "https://en.wikipedia.org/wiki/Stewart_Island_/_Rakiura",
     "coordinate_role": "general_destination_point_not_navigation",
     "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Southland District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "mount-taranaki",
@@ -172,7 +146,23 @@
     "coordinate_source": "https://en.wikipedia.org/wiki/Mount_Taranaki",
     "coordinate_role": "general_destination_point_not_navigation",
     "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Taranaki Region"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "pouakai-range",
@@ -183,7 +173,7 @@
     "kind": "natural_attraction",
     "wave": 3,
     "wikidata": "Q31675204",
-    "enwiki": "https://en.wikipedia.org/wiki/Pouakai_Range",
+    "enwiki": "https://en.wikipedia.org/wiki/Pou%C4%81kai_Range",
     "lat": -39.23805556,
     "lng": 174.01416667,
     "official_site": null,
@@ -197,7 +187,64 @@
     "coordinate_source": "https://en.wikipedia.org/wiki/Pouakai_Range",
     "coordinate_role": "general_destination_point_not_navigation",
     "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Taranaki Region"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
+  },
+  {
+    "slug": "abel-tasman-coast-track",
+    "name": "Abel Tasman Coast Track",
+    "region": "tasman",
+    "also_regions": [],
+    "country": "nz",
+    "kind": "walking_route",
+    "wave": 3,
+    "wikidata": "Q318501",
+    "enwiki": "https://en.wikipedia.org/wiki/Abel_Tasman_Coast_Track",
+    "lat": -40.9288,
+    "lng": 173.0486,
+    "official_site": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/abel-tasman-national-park/things-to-do/tracks/abel-tasman-coast-track/",
+    "access": "foot",
+    "source": "retained_inventory",
+    "source_urls": [
+      "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/abel-tasman-national-park/things-to-do/tracks/abel-tasman-coast-track/",
+      "https://www.doc.govt.nz/parks-and-recreation/things-to-do/walking-and-tramping/great-walks/compare-great-walks/"
+    ],
+    "access_note": "Multi-day Great Walk: not a drivable loop; hut/campsite bookings, transport and seasonal access require current official review.",
+    "identity_status": "inventory_candidate_not_publication_ready",
+    "coordinate_source": "https://www.wikidata.org/wiki/Q318501",
+    "coordinate_role": "general_destination_point_not_navigation",
+    "administrative_area_hints": [
+      "Tasman District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    },
+    "region_source": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/abel-tasman-national-park/things-to-do/tracks/abel-tasman-coast-track/",
+    "region_note": "Official DOC visitor region mapped to catalog primary region; full track boundary not certified."
   },
   {
     "slug": "farewell-spit",
@@ -222,7 +269,23 @@
     "coordinate_source": "https://en.wikipedia.org/wiki/Farewell_Spit",
     "coordinate_role": "general_destination_point_not_navigation",
     "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Tasman District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "golden-bay-mohua",
@@ -247,7 +310,63 @@
     "coordinate_source": "https://en.wikipedia.org/wiki/Golden_Bay_/_Mohua",
     "coordinate_role": "general_destination_point_not_navigation",
     "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
+  },
+  {
+    "slug": "heaphy-track",
+    "name": "Heaphy Track",
+    "region": "tasman",
+    "also_regions": [
+      "west-coast"
+    ],
+    "country": "nz",
+    "kind": "walking_route",
+    "wave": 3,
+    "wikidata": "Q1592359",
+    "enwiki": "https://en.wikipedia.org/wiki/Heaphy_Track",
+    "lat": -40.847925,
+    "lng": 172.449409,
+    "official_site": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/kahurangi-national-park/things-to-do/tracks/heaphy-track/",
+    "access": "foot",
+    "source": "retained_inventory",
+    "source_urls": [
+      "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/kahurangi-national-park/things-to-do/tracks/heaphy-track/",
+      "https://www.doc.govt.nz/parks-and-recreation/things-to-do/walking-and-tramping/great-walks/compare-great-walks/"
+    ],
+    "access_note": "Multi-day Great Walk: not a drivable loop; hut/campsite bookings, transport and seasonal access require current official review.",
+    "identity_status": "inventory_candidate_not_publication_ready",
+    "coordinate_source": "https://www.wikidata.org/wiki/Q1592359",
+    "coordinate_role": "general_destination_point_not_navigation",
+    "administrative_area_hints": [
+      "Tasman District",
+      "Buller District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    },
+    "region_source": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/kahurangi-national-park/things-to-do/tracks/heaphy-track/",
+    "region_note": "Official DOC visitor region mapped to catalog primary region; full track boundary not certified."
   },
   {
     "slug": "te-waikoropupu-springs",
@@ -271,7 +390,23 @@
     "identity_status": "existing_article_discovery_candidate",
     "coordinate_source": "https://en.wikipedia.org/wiki/Te_Waikoropup%C5%AB_Springs",
     "coordinate_role": "general_destination_point_not_navigation",
-    "region_note": "Curated discovery region, not verified boundary coverage."
+    "region_note": "Curated discovery region, not verified boundary coverage.",
+    "administrative_area_hints": [
+      "Tasman District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "totaranui",
@@ -295,7 +430,23 @@
     "identity_status": "existing_article_discovery_candidate",
     "coordinate_source": "https://en.wikipedia.org/wiki/T%C5%8Dtaranui",
     "coordinate_role": "general_destination_point_not_navigation",
-    "region_note": "Curated discovery region, not verified boundary coverage."
+    "region_note": "Curated discovery region, not verified boundary coverage.",
+    "administrative_area_hints": [
+      "Tasman District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "wharariki-beach",
@@ -320,7 +471,23 @@
     "coordinate_source": "https://en.wikipedia.org/wiki/Wharariki_Beach",
     "coordinate_role": "general_destination_point_not_navigation",
     "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Tasman District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "bridal-veil-falls-waikato",
@@ -345,7 +512,23 @@
     "coordinate_source": "https://en.wikipedia.org/wiki/Bridal_Veil_Falls_(Waikato)",
     "coordinate_role": "general_destination_point_not_navigation",
     "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Waikato District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "cathedral-cove",
@@ -356,7 +539,7 @@
     "kind": "natural_attraction",
     "wave": 3,
     "wikidata": "Q914581",
-    "enwiki": "https://en.wikipedia.org/wiki/Cathedral_Cove",
+    "enwiki": "https://en.wikipedia.org/wiki/Whanganui_A_Hei_(Cathedral_Cove)_Marine_Reserve",
     "lat": -36.82833333,
     "lng": 175.79,
     "official_site": null,
@@ -370,7 +553,23 @@
     "coordinate_source": "https://en.wikipedia.org/wiki/Cathedral_Cove",
     "coordinate_role": "general_destination_point_not_navigation",
     "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Thames-Coromandel District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "coromandel-peninsula",
@@ -395,7 +594,21 @@
     "coordinate_source": "https://en.wikipedia.org/wiki/Coromandel_Peninsula",
     "coordinate_role": "general_destination_point_not_navigation",
     "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "hot-water-beach",
@@ -420,7 +633,23 @@
     "coordinate_source": "https://en.wikipedia.org/wiki/Hot_Water_Beach",
     "coordinate_role": "general_destination_point_not_navigation",
     "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Thames-Coromandel District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "huka-falls",
@@ -432,8 +661,8 @@
     "wave": 3,
     "wikidata": "Q38477",
     "enwiki": "https://en.wikipedia.org/wiki/Huka_Falls",
-    "lat": null,
-    "lng": null,
+    "lat": -38.650917,
+    "lng": 176.089972,
     "official_site": null,
     "access": "unknown",
     "source": "retained_inventory",
@@ -442,10 +671,26 @@
     ],
     "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
     "identity_status": "existing_article_discovery_candidate",
-    "coordinate_source": null,
+    "coordinate_source": "https://www.wikidata.org/wiki/Q38477",
     "coordinate_role": "general_destination_point_not_navigation",
     "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Taupō District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "lake-taupo",
@@ -469,7 +714,23 @@
     "identity_status": "existing_article_discovery_candidate",
     "coordinate_source": "https://en.wikipedia.org/wiki/Lake_Taup%C5%8D",
     "coordinate_role": "general_destination_point_not_navigation",
-    "region_note": "Curated discovery region, not verified boundary coverage."
+    "region_note": "Curated discovery region, not verified boundary coverage.",
+    "administrative_area_hints": [
+      "Waikato Region"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "waitomo-caves",
@@ -480,7 +741,7 @@
     "kind": "natural_attraction",
     "wave": 3,
     "wikidata": "Q65122127",
-    "enwiki": "https://en.wikipedia.org/wiki/Waitomo_Caves",
+    "enwiki": "https://en.wikipedia.org/wiki/Waitomo",
     "lat": -38.26065,
     "lng": 175.10333889,
     "official_site": null,
@@ -494,7 +755,23 @@
     "coordinate_source": "https://en.wikipedia.org/wiki/Waitomo_Caves",
     "coordinate_role": "general_destination_point_not_navigation",
     "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Waitomo District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "cape-palliser",
@@ -519,7 +796,24 @@
     "coordinate_source": "https://en.wikipedia.org/wiki/Cape_Palliser",
     "coordinate_role": "general_destination_point_not_navigation",
     "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "South Wairarapa District",
+      "Wellington Region"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "kapiti-island",
@@ -544,7 +838,24 @@
     "coordinate_source": "https://en.wikipedia.org/wiki/Kapiti_Island",
     "coordinate_role": "general_destination_point_not_navigation",
     "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Kāpiti Coast District",
+      "Wellington Region"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "putangirua-pinnacles",
@@ -555,7 +866,7 @@
     "kind": "natural_attraction",
     "wave": 3,
     "wikidata": "Q7262177",
-    "enwiki": "https://en.wikipedia.org/wiki/Putangirua_Pinnacles",
+    "enwiki": "https://en.wikipedia.org/wiki/P%C5%ABtangirua_Pinnacles",
     "lat": -41.4467,
     "lng": 175.2467,
     "official_site": null,
@@ -569,7 +880,24 @@
     "coordinate_source": "https://en.wikipedia.org/wiki/Putangirua_Pinnacles",
     "coordinate_role": "general_destination_point_not_navigation",
     "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Wellington Region",
+      "South Wairarapa District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "fox-glacier",
@@ -594,7 +922,24 @@
     "coordinate_source": "https://en.wikipedia.org/wiki/Fox_Glacier",
     "coordinate_role": "general_destination_point_not_navigation",
     "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "Westland District",
+      "West Coast Region"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   },
   {
     "slug": "franz-josef-glacier",
@@ -619,6 +964,66 @@
     "coordinate_source": "https://en.wikipedia.org/wiki/Franz_Josef_Glacier",
     "coordinate_role": "general_destination_point_not_navigation",
     "region_note": "Curated discovery region, not verified boundary coverage.",
-    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review"
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "West Coast Region",
+      "Westland District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
+  },
+  {
+    "slug": "haast-pass",
+    "name": "Haast Pass",
+    "region": "west-coast",
+    "also_regions": [],
+    "country": "nz",
+    "kind": "natural_attraction",
+    "wave": 3,
+    "wikidata": "Q498788",
+    "enwiki": "https://en.wikipedia.org/wiki/Haast_Pass",
+    "lat": -44.105278,
+    "lng": 169.3561,
+    "official_site": null,
+    "access": "unknown",
+    "source": "retained_inventory",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Haast_Pass"
+    ],
+    "access_note": "Visitor access, road gateways, seasonal closures and permissions require exact-place official review; no vehicle access implied.",
+    "identity_status": "existing_article_discovery_candidate",
+    "coordinate_source": "https://en.wikipedia.org/wiki/Haast_Pass",
+    "coordinate_role": "general_destination_point_not_navigation",
+    "region_note": "Curated discovery region, not verified boundary coverage.",
+    "identity_evidence": "retained_exact_article_pageprops; country/location still requires production review",
+    "administrative_area_hints": [
+      "West Coast Region",
+      "Westland District",
+      "Queenstown Lakes District"
+    ],
+    "candidate_audit": {
+      "checked_at": "2026-11-19",
+      "country_claims": [
+        "Q664"
+      ],
+      "publication_ready": false,
+      "issues": [
+        "missing_exact_official_visitor_page",
+        "licensed_cover_not_collected",
+        "visitor_access_not_verified",
+        "english_german_content_not_produced"
+      ]
+    }
   }
 ]

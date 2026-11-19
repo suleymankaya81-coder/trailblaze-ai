@@ -2,10 +2,11 @@ import geo from "@/data/destination-geo.json";
 import { COUNTRIES } from "@/lib/routes/paths";
 
 /** Browser-safe country directory: flags, continents and published counts from the stored geo index. */
-export type Continent = "north-america" | "europe";
+export type Continent = "north-america" | "europe" | "oceania";
 export const CONTINENTS: { key: Continent; label: string }[] = [
   { key: "europe", label: "Europe" },
   { key: "north-america", label: "North America" },
+  { key: "oceania", label: "Oceania" },
 ];
 
 const META: Record<string, { flag: string; continent: Continent }> = {
@@ -47,6 +48,8 @@ const META: Record<string, { flag: string; continent: Continent }> = {
   lu: { flag: "🇱🇺", continent: "europe" },
   mt: { flag: "🇲🇹", continent: "europe" },
   cy: { flag: "🇨🇾", continent: "europe" },
+  au: { flag: "🇦🇺", continent: "oceania" },
+  nz: { flag: "🇳🇿", continent: "oceania" },
 };
 
 export interface CountryEntry { code: string; name: string; nameDe: string; flag: string; continent: Continent; places: number; regions: number }

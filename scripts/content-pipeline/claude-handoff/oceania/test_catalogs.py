@@ -1,5 +1,6 @@
 import json
 import unittest
+from audit_candidates import wiki_key
 from validate_catalogs import ROOT, validate_all, validate_rows
 
 class CatalogTests(unittest.TestCase):
@@ -28,5 +29,9 @@ class CatalogTests(unittest.TestCase):
         r=json.loads((ROOT/'nz-catalog.json').read_text())[0]
         r.update(lat=40,lng=-100)
         self.assertTrue(any('outside NZ' in e for e in validate_rows([r],'nz')))
+
+    def test_article_title_with_slash_survives(self):
+        self.assertEqual(wiki_key('https://en.wikipedia.org/wiki/Aoraki_/_Mount_Cook_National_Park'),'Aoraki / Mount Cook National Park')
+        self.assertEqual(wiki_key('https://en.wikipedia.org/wiki/Muundhi_(Jack_River)_National_Park?action=edit&redlink=1'),'Muundhi (Jack River) National Park')
 
 if __name__=='__main__':unittest.main()
