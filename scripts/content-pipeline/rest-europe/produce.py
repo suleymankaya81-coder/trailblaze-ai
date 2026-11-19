@@ -87,7 +87,23 @@ SK_EXCLUDED = {
     'st-francis-square': 'Urban square with incorrect Philippines coordinates; not a nature park.',
 }
 
+# Czech counterparts of cross-border summits keep their own slug; the shared
+# Polish record is never overwritten. Covers are reviewed exact-place Commons files.
+CZ_SLUGS = {s: s + '-cz' for s in ('snezka', 'kralicky-sneznik', 'szrenica', 'czantoria-wielka')}
+CZ_REGIONS = {'petrin': 'prague', 'czantoria-wielka': 'moravian-silesian-region', 'szrenica': 'liberec-region'}
+CZ_COVERS = {
+    'koneprusy-caves': 'File:Jeskyne Koneprusy.JPG',
+    'krivoklatsko-protected-landscape-area': 'File:Křivoklátsko - Podzimní bučina.JPG',
+    'kralicky-sneznik-cz': 'File:GlatzerSchneeberg-1.jpg',
+    'zbrasov-aragonite-caves': 'File:Národní přírodní památka Zbrašovské aragonitové jeskyně, okres Přerov (11).jpg',
+}
+
 def production_row(row):
+    if row['country'] == 'cz':
+        if row['slug'] == 'ancient-and-primeval-beech-forests-of-the-carpathians-and-other-regions-of-europe':
+            return {**row, 'slug': 'jizerskohorske-buciny', 'name': 'Jizerskohorské bučiny',
+                    'wikidata': 'Q8546570', 'enwiki': None, 'lat': None, 'lng': None}
+        return {**row, 'slug': CZ_SLUGS.get(row['slug'], row['slug']), 'region': CZ_REGIONS.get(row['slug'])}
     if row['country'] != 'sk':
         return row
     if row['slug'] == 'ancient-and-primeval-beech-forests-of-the-carpathians-and-other-regions-of-europe':
@@ -102,6 +118,16 @@ def outdoor_rows(countries):
             and not any(word in (r['name'] + ' ' + (r.get('enwiki') or '')).casefold()
                         for word in ('square', 'market', 'plaza', 'náměstí', 'nám.', 'zelný trh'))]
 base.rows = outdoor_rows
+
+original_cover = base.cover
+def reviewed_cover(row, page, lang, used):
+    fname = CZ_COVERS.get(row['slug'])
+    if fname:
+        photo = base.prepare.file_info(fname)
+        if photo and base.comp.licensed(photo):
+            return photo
+    return original_cover(row, page, lang, used)
+base.cover = reviewed_cover
 
 if __name__ == '__main__':
     # Delegate bounded stages to the proven implementation, not a second writer.
