@@ -1,3 +1,8 @@
+## November 19 Australia and New Zealand catalogs
+- [x] Assemble Nordic-format AU 887 / NZ 129 candidate arrays, separate external territories, retain 30 unknown coordinates and 43 unknown NZ regions; no publications or database writes.
+- [x] Reconcile CAPAD 2024 name groups, 13 NZ current parks, 11 Great Walks, natural discoveries and recovered AU authority names (261 mapped, 33 unresolved/ambiguous); NZ archived country page is File Not Found.
+- [x] Prepare 42 lossless batches, source-bound instructions/schema and retained evidence; five tests pass, build OK. Production-stage photo/access/partner/identity review remains explicit in oceania/REPORT.md.
+
 ## November 19 Czechia production
 - [ ] Collect retained exact-place sources and licensed covers for all 45 catalog candidates, translate passing places into German and publish through existing checks.
 - [ ] Verify actual EN/DE counts, country maps, park navigation and sitemaps; record named holds without fabricated facts.

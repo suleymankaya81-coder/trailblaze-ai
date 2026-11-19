@@ -1,0 +1,2 @@
+- AU/NZ catalogs retain the Nordic country-array fields and lossless batches; CAPAD national-park parcels are grouped by state/name with scientific/proposed and external-territory records separated. Why: land parcels and restricted reserves must not be presented as independent public road-trip parks.
+- Coverage ledgers map retained CAPAD IDs, NZ current parks/Great Walks and recovered historical authority names to catalog slugs or explicit unresolved/excluded records. Why: sourced inventory reconciliation, not estimated totals, establishes coverage.

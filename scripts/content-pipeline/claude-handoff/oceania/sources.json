@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-11-19",
+  "primary_inventory": {
+    "url": "https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024",
+    "snapshot_date": "2024-06-30",
+    "retained_service": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/FeatureServer/0",
+    "national_designations": [
+      "National Park",
+      "National Park Aboriginal",
+      "CCA Zone 1 National Park",
+      "National Park (Commonwealth)",
+      "National Park (Scientific)"
+    ],
+    "note": "Official inventory groups land parcels, not verified public visitor destinations."
+  },
+  "supporting_lists": [
+    "https://en.wikipedia.org/wiki/List_of_national_parks_of_Australia",
+    "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand",
+    "https://www.doc.govt.nz/parks-and-recreation/places-to-go/national-parks/",
+    "https://www.doc.govt.nz/parks-and-recreation/things-to-do/walking-and-tramping/great-walks/compare-great-walks/"
+  ],
+  "source_access_gaps": [
+    "QLD/NT/ACT directories returned 403 in direct fetch; no claim they were comprehensively visitor-audited.",
+    "NZ DOC national-park directory delivered introductory shell; named list corroboration uses retained Wikipedia and DOC Taranaki/Great Walk sources.",
+    "CAPAD explanatory page fetch timed out; official ArcGIS item and FeatureServer data were successfully retained.",
+    "Archived NZ country capture is File Not Found; no historical park-name completeness claim."
+  ],
+  "scope_exclusions": [
+    "All small municipal parks/private gardens/historical buildings",
+    "Unreviewed proposed national parks",
+    "Overseas territories excluded from mainland catalog, retained separately"
+  ],
+  "partner_verification": "Not verified per country or destination; use approved mapping at production.",
+  "publication": "No database writes, no destination or site publication."
+}
