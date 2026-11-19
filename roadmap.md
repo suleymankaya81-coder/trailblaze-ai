@@ -1,6 +1,6 @@
 ## November 19 Australia and New Zealand validation
 - [x] Audit all 1,016 original candidates, merge 10 same-identity duplicates (AU 877/NZ 129), complete 22 sourced general coordinates and 40 NZ regions; retain 8 coordinate and 3 region gaps and scientific/access holds.
-- [ ] EN/DE country map-to-park flow: blocked by zero AU/NZ database records, absent licensed covers, visitor-access evidence and EN/DE page content. Eight browser checks confirm actual country 404s; no fake empty maps or publications.
+- [ ] EN/DE country map-to-park flow: blocked by zero AU/NZ database records, absent licensed covers, visitor-access evidence and EN/DE page content. Final sixteen browser checks cover both languages, desktop/phone and light/dark: all country pages 404, zero maps or park links; no fake empty maps or publications.
 - [x] Retain per-place findings and 83 source-link checks (73 HTTP 200, 10 timeouts); repair slash-title parsing/list redirects, add country/Oceania metadata, pass six Python and eleven JS tests; report remaining blockers in oceania/REPORT.md.
 
 ## November 19 Australia and New Zealand catalogs
