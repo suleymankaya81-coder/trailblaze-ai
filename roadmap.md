@@ -354,6 +354,7 @@
 - [x] Produce MK → BG → BA → LT → ME → LU (EN/DE), verify country pages and maps (135 published; 18 named holds in production-report.json)
 
 ## November 19 Europe-wide audit
+- [ ] Publish the corrected authority redirects after owner approval and verify the live destinations.
 - [ ] Audit all published European destination data, translations, regions, routes and retained catalog holds.
 - [ ] Check English/German country, region and park links plus authority-domain redirects; repair verified failures.
 - [ ] Exercise country maps and park navigation; record evidence and external blockers in a dated report.
