@@ -129,6 +129,25 @@ def reviewed_cover(row, page, lang, used):
     return original_cover(row, page, lang, used)
 base.cover = reviewed_cover
 
+# Some countries (e.g. North Macedonia) expose no state in OSM; fall back to the
+# containing municipality at a finer zoom instead of holding the place.
+original_region = base.region_for
+def region_with_fallback(row, lat, lng):
+    try:
+        return original_region(row, lat, lng)
+    except ValueError:
+        import re, time, requests
+        time.sleep(1)
+        a = requests.get('https://nominatim.openstreetmap.org/reverse',
+                         params={'lat': lat, 'lon': lng, 'format': 'json', 'zoom': 10, 'accept-language': 'en'},
+                         headers={'User-Agent': 'wildparkroutes-content/1.0 (info@minialife.com)'}, timeout=30).json().get('address', {})
+        name = a.get('municipality') or a.get('county') or a.get('city') or a.get('town')
+        if not name:
+            raise
+        name = re.sub(r'^(Municipality of|Opština|Općina|Obshtina)\s+', '', name)
+        return re.sub(r'[^a-z0-9]+', '-', name.casefold()).strip('-')
+base.region_for = region_with_fallback
+
 if __name__ == '__main__':
     # Delegate bounded stages to the proven implementation, not a second writer.
     if '--country' not in sys.argv:

@@ -350,3 +350,5 @@
 - [x] RO 33, SK 53 yayında (Romanya adres hatası düzeltildi; Slovakya dokuz mevcut millî parkı kapsıyor).
 - [ ] Sıradaki ülkeler: cz, hu, si, hr, me, ba, rs, bg, al, mk, ee, lv, lt, lu, mt, cy (her biri: facts → translate → publish --apply)
 - [ ] Her ülke sonrası ülke sayfası + harita doğrulaması
+
+- [x] Produce MK → BG → BA → LT → ME → LU (EN/DE), verify country pages and maps (135 published; 18 named holds in production-report.json)
