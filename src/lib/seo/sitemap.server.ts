@@ -150,9 +150,17 @@ export async function buildChildSitemap(name: string): Promise<Response | null> 
       const rows = await fetchAll<{ entity_id: string; updated_at: string }>(
         "content_translations?select=entity_id,updated_at&entity_type=eq.destination&locale=eq.de&status=eq.published&order=entity_id.asc",
       );
+      const publishedRows = rows.filter(r => destinationGeo(r.entity_id) && inCountry(r.entity_id, country));
+      const translatedGeo = new Set<string>();
+      for (const row of publishedRows) {
+        const geo = destinationGeo(row.entity_id);
+        if (!geo) continue;
+        translatedGeo.add(countryPath(geo.country, "de"));
+        translatedGeo.add(regionPath(geo.country, geo.region, "de"));
+      }
       return urlset([
-        ...(country ? geoPathsOf(country, "de") : ["/de", "/de/destinations", "/de/road-trips", ...geoPaths("de")]).map((p) => ({ loc: `${BASE_URL}${p}` })),
-        ...rows.filter((r) => inCountry(r.entity_id, country)).map((r) => ({ loc: `${BASE_URL}/de/destinations/${r.entity_id}`, lastmod: new Date(r.updated_at).toISOString(), alternates: destinationAlternates(r.entity_id) })),
+        ...(country ? [...translatedGeo] : ["/de", "/de/destinations", "/de/road-trips", ...translatedGeo]).map((p) => ({ loc: `${BASE_URL}${p}` })),
+        ...publishedRows.map((r) => ({ loc: `${BASE_URL}/de/destinations/${r.entity_id}`, lastmod: new Date(r.updated_at).toISOString(), alternates: destinationAlternates(r.entity_id) })),
       ]);
     }
     if (name === "destinations") {

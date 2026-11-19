@@ -5,14 +5,16 @@ import { getRegionPlaces, type GeoPlace } from "@/lib/data/geo.functions";
 import { COUNTRIES, destinationPath, isCountry, regionPath } from "@/lib/routes/paths";
 import { breadcrumbScript, regionCrumbs } from "@/lib/seo/breadcrumbs";
 import { hreflangLinks } from "@/lib/seo/hreflang";
+import { getTranslatedDestinationSlugs } from "@/lib/data/geo.de.functions";
 
 // /destinations/{country}/{region}: all published destinations in one state/region.
 export const Route = createFileRoute("/destinations/$slug/$region/")({
-  loader: async ({ params }): Promise<{ country: string; region: string; name: string; places: GeoPlace[] }> => {
+  loader: async ({ params }): Promise<{ country: string; region: string; name: string; places: GeoPlace[]; hasGerman: boolean }> => {
     if (!isCountry(params.slug)) throw notFound();
     const data = await getRegionPlaces({ data: { country: params.slug, region: params.region } });
     if (!data) throw notFound();
-    return { country: params.slug, region: params.region, ...data };
+    const translated = await getTranslatedDestinationSlugs({ data: { locale: "de" } });
+    return { country: params.slug, region: params.region, ...data, hasGerman: data.places.some(place => translated.includes(place.slug)) };
   },
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Region not found — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
@@ -32,7 +34,7 @@ export const Route = createFileRoute("/destinations/$slug/$region/")({
         { name: "twitter:card", content: "summary_large_image" },
         ...(image ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : []),
       ],
-      links: [{ rel: "canonical", href: url }, ...hreflangLinks(regionPath(country, region), ["en", "de"])],
+      links: [{ rel: "canonical", href: url }, ...hreflangLinks(regionPath(country, region), loaderData.hasGerman ? ["en", "de"] : ["en"])],
       scripts: [breadcrumbScript(regionCrumbs(country, region, name))],
     };
   },

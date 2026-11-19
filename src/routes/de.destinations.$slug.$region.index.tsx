@@ -1,4 +1,4 @@
-import { createFileRoute, notFound } from "@tanstack/react-router";
+import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 import { SITE_ORIGIN } from "@/config/site";
 import { GeoDirectory } from "@/components/destination/GeoDirectory";
 import { getRegionPlaces, type GeoPlace } from "@/lib/data/geo.functions";
@@ -18,7 +18,7 @@ export const Route = createFileRoute("/de/destinations/$slug/$region/")({
     ]);
     if (!data) throw notFound();
     const places = data.places.filter((p) => translated.includes(p.slug));
-    if (!places.length) throw notFound();
+    if (!places.length) throw redirect({ href: regionPath(params.slug, params.region), statusCode: 302 });
     return { country: params.slug, region: params.region, name: data.name, places };
   },
   head: ({ loaderData }) => {

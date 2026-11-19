@@ -7,11 +7,12 @@ import { CountryExplorationMap } from "@/components/destination/CountryExplorati
 import { regionUnit, COUNTRIES, countryPath, isCountry, regionPath } from "@/lib/routes/paths";
 import { breadcrumbScript, countryCrumbs } from "@/lib/seo/breadcrumbs";
 import { hreflangLinks } from "@/lib/seo/hreflang";
+import { getTranslatedDestinationSlugs } from "@/lib/data/geo.de.functions";
 
 // /destinations/{country}: country directory. Older flat destination
 // addresses (/destinations/{slug}) permanently redirect to the nested page.
 export const Route = createFileRoute("/destinations/$slug/")({
-  loader: async ({ params }): Promise<{ country: string; regions: GeoRegion[]; places: CountryMapPlace[] }> => {
+  loader: async ({ params }): Promise<{ country: string; regions: GeoRegion[]; places: CountryMapPlace[]; hasGerman: boolean }> => {
     if (!isCountry(params.slug)) {
       const geo = await getDestinationGeo({ data: { slug: params.slug } }).catch(() => null);
       if (geo) throw redirect({ href: `/destinations/${geo.country}/${geo.region}/${params.slug}`, statusCode: 301 });
@@ -19,8 +20,11 @@ export const Route = createFileRoute("/destinations/$slug/")({
     }
     const regions = await getCountryRegions({ data: { country: params.slug } });
     if (regions.length === 0) throw notFound(); // Enabled country, nothing published yet: no empty page.
-    const places = await getCountryMapPlaces({ data: { country: params.slug } });
-    return { country: params.slug, regions, places };
+    const [places, translated] = await Promise.all([
+      getCountryMapPlaces({ data: { country: params.slug } }),
+      getTranslatedDestinationSlugs({ data: { locale: "de" } }),
+    ]);
+    return { country: params.slug, regions, places, hasGerman: places.some(place => translated.includes(place.slug)) };
   },
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Destination not found — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
@@ -45,7 +49,7 @@ export const Route = createFileRoute("/destinations/$slug/")({
           { name: "twitter:image", content: loaderData.regions[0].heroImage },
         ] : []),
       ],
-      links: [{ rel: "canonical", href: url }, ...hreflangLinks(countryPath(loaderData.country), ["en", "de"])],
+      links: [{ rel: "canonical", href: url }, ...hreflangLinks(countryPath(loaderData.country), loaderData.hasGerman ? ["en", "de"] : ["en"])],
       scripts: [breadcrumbScript(countryCrumbs(loaderData.country))],
     };
   },

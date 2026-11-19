@@ -45,7 +45,8 @@ export const Route = createFileRoute("/de/destinations/$slug/$region/$place/")({
       getDestinationPageData({ data: { slug: params.place } }),
       getDestinationGeo({ data: { slug: params.place } }).catch(() => null),
     ]);
-    if (!tr || !dest || !geo) throw notFound();
+    if (!dest || !geo) throw notFound();
+    if (!tr) throw redirect({ href: destinationPath(dest.slug), statusCode: 302 });
     if (geo.country !== params.slug || geo.region !== params.region) {
       throw redirect({ href: `/de/destinations/${geo.country}/${geo.region}/${dest.slug}`, statusCode: 301 });
     }
