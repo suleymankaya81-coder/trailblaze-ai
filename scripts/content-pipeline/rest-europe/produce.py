@@ -70,9 +70,36 @@ base.identity = identity
 # Urban squares accidentally entered the original broad Wikidata discovery.
 # Retain their catalog records, but do not publish them as outdoor destinations.
 original_rows = base.rows
+SK_SLUGS = {
+    'pieniny-national-park': 'pieniny-national-park-sk',
+    'tatra-national-park': 'tatra-national-park-sk',
+    'babia-gora': 'babia-gora-sk',
+    'kasprowy-wierch': 'kasprowy-wierch-sk',
+    'rysy': 'rysy-sk',
+    'swinica': 'swinica-sk',
+}
+SK_EXCLUDED = {
+    'national-park-podunajsko': 'Planned park shelved in 2024; not an existing national park.',
+    'danubian-limes': 'Transnational Roman cultural frontier, not one natural destination.',
+    'primate-s-square': 'Urban square, not a nature park.',
+    'snp-square': 'Urban square, not a nature park.',
+    'slovak-national-uprising-square-banska-bystrica': 'Urban square, not a nature park.',
+    'st-francis-square': 'Urban square with incorrect Philippines coordinates; not a nature park.',
+}
+
+def production_row(row):
+    if row['country'] != 'sk':
+        return row
+    if row['slug'] == 'ancient-and-primeval-beech-forests-of-the-carpathians-and-other-regions-of-europe':
+        return {**row, 'slug': 'stuzica-primeval-forest', 'name': 'Stužica Primeval Forest',
+                'wikidata': 'Q1786462', 'enwiki': 'https://en.wikipedia.org/wiki/Stu%C5%BEica',
+                'lat': 49.08333333, 'lng': 22.53333333}
+    return {**row, 'slug': SK_SLUGS.get(row['slug'], row['slug'])}
+
 def outdoor_rows(countries):
-    return [r for r in original_rows(countries) if not any(
-        word in r['name'].casefold() for word in ('square', 'market', 'plaza'))]
+    return [production_row(r) for r in original_rows(countries)
+            if not (r['country'] == 'sk' and r['slug'] in SK_EXCLUDED)
+            and not any(word in r['name'].casefold() for word in ('square', 'market', 'plaza'))]
 base.rows = outdoor_rows
 
 if __name__ == '__main__':

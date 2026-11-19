@@ -20,6 +20,21 @@ class ProductionRules(unittest.TestCase):
     def test_exclusions(self):
         self.assertTrue({'tr', 'ua', 'ru', 'by', 'md', 'xk', 'am', 'az', 'ge'}.isdisjoint(runner.SETTINGS))
 
+    def test_slovak_parks_do_not_reuse_polish_identity(self):
+        rows = {r['slug']: r for r in runner.base.rows(['sk'])}
+        self.assertEqual(rows['pieniny-national-park-sk']['wikidata'], 'Q1783680')
+        self.assertEqual(rows['tatra-national-park-sk']['wikidata'], 'Q1080683')
+        self.assertNotIn('pieniny-national-park', rows)
+
+    def test_cancelled_park_not_published(self):
+        self.assertNotIn('national-park-podunajsko', {r['slug'] for r in runner.base.rows(['sk'])})
+
+    def test_slovak_unesco_uses_actual_local_forest(self):
+        rows = {r['slug']: r for r in runner.base.rows(['sk'])}
+        forest = rows['stuzica-primeval-forest']
+        self.assertEqual(forest['wikidata'], 'Q1786462')
+        self.assertEqual((forest['lat'], forest['lng']), (49.08333333, 22.53333333))
+
     def test_wrong_country_rejected(self):
         original = runner.base.fin.identity_and_packet
         runner.base.fin.identity_and_packet = lambda *args: ({}, {}, 'en', {'claims': {'P17': [{'mainsnak': {'datavalue': {'value': {'id': 'Q218'}}}}]}})

@@ -1,4 +1,5 @@
 ## November 19 remaining Europe production
+- [x] Completed Slovakia missing-place reconciliation: ten additional EN/DE publications, 53 total, all nine existing national parks; six invalid/out-of-scope candidates excluded. All 106 live pages and EN/DE map-to-park flows checked; dated report retained. Live sitemap freshness not verified.
 - [ ] Produce Poland, Romania and Slovakia first, then the other 16 catalog countries (19 total, 819 candidates); do not invent two extra countries to match the requested count.
 - [ ] Reuse cached source-first Nordic stages; publish passing EN/DE places and retain named factual/photo/access holds.
 - [ ] Verify each produced country page, interactive map, park links and sitemap; report actual counts and blockers.
@@ -342,6 +343,6 @@
 ## Rest-Europe üretimi (devam)
 - [x] PL facts: 47 yeni kaynak paketi, 11 held (kapak/makale eksik)
 - [ ] PL translate: çalışıyor (/tmp/pl-translate.log) → ardından `publish --country pl --apply`
-- [x] RO 103, SK 43 yayında (Ro adres hatası düzeltildi)
+- [x] RO 33, SK 53 yayında (Romanya adres hatası düzeltildi; Slovakya dokuz mevcut millî parkı kapsıyor).
 - [ ] Sıradaki ülkeler: cz, hu, si, hr, me, ba, rs, bg, al, mk, ee, lv, lt, lu, mt, cy (her biri: facts → translate → publish --apply)
 - [ ] Her ülke sonrası ülke sayfası + harita doğrulaması
