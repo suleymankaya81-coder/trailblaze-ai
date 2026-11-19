@@ -133,6 +133,39 @@ HR_COVERS = {
     'crveno-jezero': 'File:Red Lake Imotski 002.jpg',
 }
 
+# Serbian catalog rows that are not one Serbian outdoor destination: Belgrade
+# squares and an urban quarter, the transnational Roman frontier, mountain rows
+# duplicated by their own national-park row, a summit inside Kopaonik National
+# Park, places already published under a neighbouring country, and the Kosovo
+# entries held back with the war-zone rule.
+RS_EXCLUDED = {
+    'cvetni-trg': 'Belgrade flower square, not a nature destination.',
+    'nikola-pasic-square': 'Belgrade city square, not a nature destination.',
+    'republic-square': 'Belgrade city square, not a nature destination.',
+    'slavija-square': 'Belgrade city square, not a nature destination.',
+    'studentski-trg': 'Belgrade city square, not a nature destination.',
+    'terazije': 'Belgrade city square, not a nature destination.',
+    'trg-kralja-aleksandra': 'Belgrade city square, not a nature destination.',
+    'kopitareva-gradina': 'Belgrade urban quarter, not a nature destination.',
+    'danubian-limes': 'Transnational Roman cultural frontier, not one natural destination.',
+    'fruska-gora': 'Mountain row duplicated by Fruška Gora National Park.',
+    'kopaonik': 'Mountain row duplicated by Kopaonik National Park.',
+    'tara': 'Mountain row duplicated by Tara National Park; the Tara River Canyon page sits under Bosnia and Herzegovina.',
+    'pancic-s-peak': 'Summit inside Kopaonik National Park, already a page.',
+    'ruy-mountain': 'Border massif already published under Bulgaria.',
+    'skopska-crna-gora': 'Border massif already published under North Macedonia.',
+    'zvornik-lake': 'Reservoir already published under Bosnia and Herzegovina.',
+    'sharr-mountains-national-park': 'National park lies in Kosovo; held back with the war-zone rule.',
+    'prokletije-national-park': 'Park lies in Kosovo; held back with the war-zone rule.',
+    'batllava-lake': 'Reservoir lies in Kosovo; held back with the war-zone rule.',
+    'gazivoda-lake': 'Reservoir lies in Kosovo; held back with the war-zone rule.',
+    'radoniq-lake': 'Reservoir lies in Kosovo; held back with the war-zone rule.',
+    'goljak': 'Mountain lies in Kosovo; held back with the war-zone rule.',
+}
+# Montenegro already publishes the Mokra Gora near Plav; the Serbian Mokra Gora
+# on the Drina side keeps its own address so neither page overwrites the other.
+RS_SLUGS = {'mokra-gora': 'mokra-gora-serbia'}
+
 # Reviewed coordinate/region corrections: Wikidata points on the wrong side of a
 # border or at a same-named place produce foreign regions and wrong routes.
 PLACE_FIXES = {
@@ -145,6 +178,11 @@ PLACE_FIXES = {
     'ferto-hansag-national-park': {'lat': 47.6567, 'lng': 16.8608, 'region': 'gyor-moson-sopron'},
     'neusiedl-lake': {'lat': 47.7211, 'lng': 16.6869, 'region': 'gyor-moson-sopron'},
     'danube-drava-national-park': {'region': 'baranya'},
+    # Kopaonik National Park's Wikidata point sits on the Kosovo side of the
+    # ridge; the park itself lies in Serbia's Raška district. Mokra Gora's
+    # Wikidata item is the Kosovo village, not the Serbian one above Užice.
+    'kopaonik-national-park': {'lat': 43.3200, 'lng': 20.6800, 'region': 'raska-administrative-district'},
+    'mokra-gora-serbia': {'lat': 43.8656, 'lng': 19.3472, 'region': 'zlatibor-administrative-district'},
 }
 
 def production_row(row):
@@ -155,6 +193,8 @@ def production_row(row):
         return {**row, 'slug': CZ_SLUGS.get(row['slug'], row['slug']), 'region': CZ_REGIONS.get(row['slug'])}
     if row['country'] == 'hr' and row['slug'] in HR_SLUGS:
         return {**row, 'slug': HR_SLUGS[row['slug']]}
+    if row['country'] == 'rs' and row['slug'] in RS_SLUGS:
+        return {**row, 'slug': RS_SLUGS[row['slug']]}
     if row['slug'] in PLACE_FIXES:
         return {**row, **PLACE_FIXES[row['slug']]}
     if row['country'] != 'sk':
@@ -169,6 +209,7 @@ def outdoor_rows(countries):
     return [production_row(r) for r in original_rows(countries)
             if not (r['country'] == 'sk' and r['slug'] in SK_EXCLUDED)
             and not (r['country'] == 'hr' and r['slug'] in HR_EXCLUDED)
+            and not (r['country'] == 'rs' and r['slug'] in RS_EXCLUDED)
             and not (r['country'] == 'hu' and (r['slug'] in HU_EXCLUDED
                      or any(w in ' ' + r['name'].casefold() for w in HU_SQUARE_WORDS)))
             and not any(word in (r['name'] + ' ' + (r.get('enwiki') or '')).casefold()
