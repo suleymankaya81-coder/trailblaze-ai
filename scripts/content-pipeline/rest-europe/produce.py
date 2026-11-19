@@ -181,6 +181,12 @@ LV_EXCLUDED = {
     'lake-murati': 'Slug already published for Estonia\'s Lake Murati.',
 }
 
+# Maltese catalog rows that are not one outdoor destination: Saqqajja is a
+# Rabat landmark loggia/fountain, not a nature place.
+MT_EXCLUDED = {
+    'saqqajja': 'Rabat landmark loggia, not a nature destination.',
+}
+
 # Reviewed coordinate/region corrections: Wikidata points on the wrong side of a
 # border or at a same-named place produce foreign regions and wrong routes.
 PLACE_FIXES = {
@@ -198,6 +204,9 @@ PLACE_FIXES = {
     # Wikidata item is the Kosovo village, not the Serbian one above Užice.
     'kopaonik-national-park': {'lat': 43.3200, 'lng': 20.6800, 'region': 'raska-administrative-district'},
     'mokra-gora-serbia': {'lat': 43.8656, 'lng': 19.3472, 'region': 'zlatibor-administrative-district'},
+    # The Blue Grotto's Wikidata point sits in the sea off Wied iż-Żurrieq, so
+    # no region resolves; the caves are reached from the Qrendi shore.
+    'blue-grotto-malta': {'lat': 35.8208, 'lng': 14.4572, 'region': 'southern-region'},
 }
 
 def production_row(row):
@@ -227,6 +236,7 @@ def outdoor_rows(countries):
             and not (r['country'] == 'rs' and r['slug'] in RS_EXCLUDED)
             and not (r['country'] == 'ee' and r['slug'] in EE_EXCLUDED)
             and not (r['country'] == 'lv' and r['slug'] in LV_EXCLUDED)
+            and not (r['country'] == 'mt' and r['slug'] in MT_EXCLUDED)
             and not (r['country'] == 'hu' and (r['slug'] in HU_EXCLUDED
                      or any(w in ' ' + r['name'].casefold() for w in HU_SQUARE_WORDS)))
             and not any(word in (r['name'] + ' ' + (r.get('enwiki') or '')).casefold()
