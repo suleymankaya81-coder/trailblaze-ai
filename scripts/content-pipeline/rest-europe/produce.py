@@ -136,6 +136,9 @@ HR_COVERS = {
 # Reviewed coordinate/region corrections: Wikidata points on the wrong side of a
 # border or at a same-named place produce foreign regions and wrong routes.
 PLACE_FIXES = {
+    'divjake-karavasta-national-park': {'lat': 40.9969, 'lng': 19.4992, 'region': 'fier-county'},
+    'karavasta-lagoon': {'lat': 40.9200, 'lng': 19.5030, 'region': 'fier-county'},
+    'lake-butrint': {'lat': 39.7700, 'lng': 20.0250, 'region': 'vlore-county'},
     'pericnik-falls': {'lat': 46.4419, 'lng': 13.8953, 'region': 'kranjska-gora'},
     'matajur': {'region': 'kobarid'},
     'aggtelek-national-park': {'lat': 48.4717, 'lng': 20.4950, 'region': 'borsod-abauj-zemplen'},
