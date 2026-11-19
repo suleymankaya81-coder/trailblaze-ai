@@ -3,6 +3,7 @@
 - [x] Audited 4,990 EN/DE destination targets: all 2,495 English and 2,207 published German pages return 200; 288 unavailable German CA/GB pages exposed by country maps.
 - [x] Fixed German country-map translation filtering; CA/GB without published German destinations redirect to English in preview; 26 tests pass and publication requested.
 - [ ] Confirm navigation fix in production: first live check still served old CA/GB German directories; awaiting deployment propagation.
+- [x] Swept shared card links, language switchers, country/region/destination loaders, translation readers, sitemap and production scripts; corrected unsupported EN hreflang, German region/place fallback and German sitemap geography. Eleven tests and preview endpoint checks pass; published rollout requested.
 
 ## November 19 authority-country and park recovery
 - [x] Recovered Europe menu and linked all eight remaining-country catalogs to their historical country identity; fixed Montenegro's list-page record and mapped Skadar to its existing real destination (819 candidates, no publications).
