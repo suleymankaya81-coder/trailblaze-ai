@@ -52,3 +52,16 @@ class ProductionRules(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+def test_hungarian_squares_and_cultural_sites_excluded():
+    import produce
+    assert 'budapest-metro-line-1' in produce.HU_EXCLUDED
+    rows = [{'country': 'hu', 'slug': 'kalvin-ter', 'name': 'Kálvin tér'},
+            {'country': 'hu', 'slug': 'lake-heviz', 'name': 'Lake Hévíz'},
+            {'country': 'hu', 'slug': 'szinva-terrace', 'name': 'Szinva Terrace'}]
+    orig = produce.original_rows
+    produce.original_rows = lambda c: rows
+    try:
+        assert [r['slug'] for r in produce.outdoor_rows(['hu'])] == ['lake-heviz']
+    finally:
+        produce.original_rows = orig

@@ -96,6 +96,30 @@ CZ_COVERS = {
     'krivoklatsko-protected-landscape-area': 'File:Křivoklátsko - Podzimní bučina.JPG',
     'kralicky-sneznik-cz': 'File:GlatzerSchneeberg-1.jpg',
     'zbrasov-aragonite-caves': 'File:Národní přírodní památka Zbrašovské aragonitové jeskyně, okres Přerov (11).jpg',
+    'orseg-national-park': 'File:OrsegiNemzetiPark1.jpg',
+    'planina-cave': 'File:Planina Cave Slovenia - entrance.JPG',
+    'velika-planina': 'File:Velika planina (8965483960).jpg',
+}
+
+# Hungarian urban squares (tér/körtér), transit lines and cultural sites are not
+# outdoor destinations even when the catalog lists them.
+HU_EXCLUDED = {
+    'budapest-metro-line-1': 'Underground railway line, not an outdoor destination.',
+    'danubian-limes': 'Transnational Roman cultural frontier, not one natural destination.',
+    'early-christian-necropolis-of-pecs': 'Cultural burial site, not a nature destination.',
+    'szinva-terrace': 'Urban riverside promenade in Miskolc, not a nature destination.',
+}
+HU_SQUARE_WORDS = (' tér', ' tere', 'körtér', 'square')
+
+# Reviewed coordinate/region corrections: Wikidata points on the wrong side of a
+# border or at a same-named place produce foreign regions and wrong routes.
+PLACE_FIXES = {
+    'pericnik-falls': {'lat': 46.4419, 'lng': 13.8953, 'region': 'kranjska-gora'},
+    'matajur': {'region': 'kobarid'},
+    'aggtelek-national-park': {'lat': 48.4717, 'lng': 20.4950, 'region': 'borsod-abauj-zemplen'},
+    'ferto-hansag-national-park': {'lat': 47.6567, 'lng': 16.8608, 'region': 'gyor-moson-sopron'},
+    'neusiedl-lake': {'lat': 47.7211, 'lng': 16.6869, 'region': 'gyor-moson-sopron'},
+    'danube-drava-national-park': {'region': 'baranya'},
 }
 
 def production_row(row):
@@ -104,6 +128,8 @@ def production_row(row):
             return {**row, 'slug': 'jizerskohorske-buciny', 'name': 'Jizerskohorské bučiny',
                     'wikidata': 'Q8546570', 'enwiki': None, 'lat': None, 'lng': None}
         return {**row, 'slug': CZ_SLUGS.get(row['slug'], row['slug']), 'region': CZ_REGIONS.get(row['slug'])}
+    if row['slug'] in PLACE_FIXES:
+        return {**row, **PLACE_FIXES[row['slug']]}
     if row['country'] != 'sk':
         return row
     if row['slug'] == 'ancient-and-primeval-beech-forests-of-the-carpathians-and-other-regions-of-europe':
@@ -115,9 +141,19 @@ def production_row(row):
 def outdoor_rows(countries):
     return [production_row(r) for r in original_rows(countries)
             if not (r['country'] == 'sk' and r['slug'] in SK_EXCLUDED)
+            and not (r['country'] == 'hu' and (r['slug'] in HU_EXCLUDED
+                     or any(w in ' ' + r['name'].casefold() for w in HU_SQUARE_WORDS)))
             and not any(word in (r['name'] + ' ' + (r.get('enwiki') or '')).casefold()
                         for word in ('square', 'market', 'plaza', 'náměstí', 'nám.', 'zelný trh'))]
 base.rows = outdoor_rows
+
+original_coordinates = base.fin.resolve_coordinates
+def reviewed_coordinates(row, page, entity, bounds):
+    fix = PLACE_FIXES.get(row['slug'], {})
+    if 'lat' in fix:
+        return fix['lat'], fix['lng'], 'reviewed-coordinate-correction'
+    return original_coordinates(row, page, entity, bounds)
+base.fin.resolve_coordinates = reviewed_coordinates
 
 original_cover = base.cover
 def reviewed_cover(row, page, lang, used):
