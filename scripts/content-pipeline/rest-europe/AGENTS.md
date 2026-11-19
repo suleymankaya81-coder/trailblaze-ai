@@ -1,0 +1,1 @@
+- Remaining Europe reuses west-europe production stages with its own catalog, caches and explicit Wikidata country check; requested order starts PL/RO/SK and excludes coverage.json's forbidden countries. Why: resumable low-credit production without wrong-country content.

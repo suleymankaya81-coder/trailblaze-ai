@@ -1,3 +1,8 @@
+## November 19 remaining Europe production
+- [ ] Produce Poland, Romania and Slovakia first, then the other 16 catalog countries (19 total, 819 candidates); do not invent two extra countries to match the requested count.
+- [ ] Reuse cached source-first Nordic stages; publish passing EN/DE places and retain named factual/photo/access holds.
+- [ ] Verify each produced country page, interactive map, park links and sitemap; report actual counts and blockers.
+
 ## November 19 live country and Norway verification
 - [x] Live rollout reached Norway: country page 200 with 140 destinations and authority link 301 to Norway.
 - [x] Audited 4,990 EN/DE destination targets: all 2,495 English and 2,207 published German pages return 200; 288 unavailable German CA/GB pages exposed by country maps.

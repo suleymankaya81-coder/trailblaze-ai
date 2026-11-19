@@ -1,0 +1,222 @@
+{
+  "slug": "bank-square",
+  "country": "pl",
+  "status": "facts",
+  "lang": "en",
+  "packet": {
+    "slug": "bank-square",
+    "approved_for_generation": true,
+    "country_code": "pl",
+    "evidence_policy": "dach-wikipedia-overview",
+    "identity_verified": true,
+    "review_note": "Wikidata-identified article; descriptive overview only, no current operational rules.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bank_Square%2C_Warsaw",
+        "kind": "wikipedia",
+        "text": "Bank Square (Polish: Plac Bankowy, formerly Plac Dzierżyńskiego) is one of Warsaw's principal squares. Located in the downtown district, adjacent to the Saxon Garden and Warsaw Arsenal, it is also a principal public-transport hub, with  bus and tram stops and a Warsaw Metro station.\n\n\n== History ==\nCreated in the 19th century, under the Congress Kingdom, the square was designed to be an elegant area of the country's capital. Notable buildings included the Palace of the Ministry of Revenues and Treasury (a building reconstructed by Antonio Corazzi), the Bank of Poland and the Warsaw Stock Exchange (also by Corazzi). The square was originally triangular-shaped.\n\nBetween 1875 and 1878, the Great Synagogue was built on the eastern side of the square, across from the palace. At the time of its building, it was the largest synagogue in Warsaw and one of the largest in the world. After the Warsaw Ghetto Uprising in 1943, the Nazi occupiers blew up the building, destroying it.\nIn the 1944 Warsaw Uprising, the remaining buildings on the square were destroyed. After the war, city planners reconstructed only its historic western part, changing it into a rectangle. The synagogue was not rebuilt and...",
+        "generation_excerpts": [
+          "Bank Square (Polish: Plac Bankowy, formerly Plac Dzierżyńskiego) is one of Warsaw's principal squares. Located in the downtown district, adjacent to the Saxon Garden and Warsaw Arsenal, it is also a principal public-transport hub, with  bus and tram stops and a Warsaw Metro station."
+        ]
+      }
+    ],
+    "approved_stops": [
+      {
+        "id": "bank-square",
+        "name": "Bank Square",
+        "quote": "Bank Square (Polish: Plac Bankowy, formerly Plac Dzierżyńskiego) is one of Warsaw's principal squares. Located in the downtown district, adjacent to the Saxon Garden and Warsaw Arsenal, it is also a principal public-transport hub, with  bus and tram stops and a Warsaw Metro station.",
+        "source_url": "https://en.wikipedia.org/wiki/Bank_Square%2C_Warsaw"
+      }
+    ]
+  },
+  "photo": {
+    "file": "File:Warszawa plac Bankowy (dron).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Warszawa_plac_Bankowy_%28dron%29.jpg/1280px-Warszawa_plac_Bankowy_%28dron%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Warszawa_plac_Bankowy_(dron).jpg",
+    "credit": "Kapitel",
+    "license": "CC BY-SA 4.0",
+    "subject": "Warszawa plac Bankowy (dron)",
+    "w": 4000,
+    "h": 3000
+  },
+  "lat": 52.24305556,
+  "lng": 21.00222222,
+  "coordinate_source": "wikipedia-article-coordinates",
+  "region": "masovian-voivodeship",
+  "airport": {
+    "code": "WAW",
+    "name": "Warsaw Chopin Airport",
+    "lat": 52.1657,
+    "lng": 20.9671
+  },
+  "route": {
+    "minutes": 27,
+    "miles": 10.3,
+    "coords": [
+      [
+        20.96158,
+        52.16196
+      ],
+      [
+        20.96112,
+        52.16123
+      ],
+      [
+        20.96333,
+        52.15991
+      ],
+      [
+        20.96388,
+        52.15701
+      ],
+      [
+        20.9629,
+        52.15593
+      ],
+      [
+        20.95918,
+        52.15631
+      ],
+      [
+        20.95179,
+        52.1565
+      ],
+      [
+        20.94659,
+        52.15744
+      ],
+      [
+        20.94281,
+        52.15868
+      ],
+      [
+        20.9388,
+        52.15988
+      ],
+      [
+        20.93526,
+        52.16117
+      ],
+      [
+        20.93208,
+        52.16248
+      ],
+      [
+        20.93137,
+        52.16439
+      ],
+      [
+        20.93444,
+        52.16688
+      ],
+      [
+        20.92221,
+        52.17046
+      ],
+      [
+        20.91572,
+        52.17306
+      ],
+      [
+        20.91405,
+        52.1763
+      ],
+      [
+        20.91591,
+        52.18245
+      ],
+      [
+        20.91933,
+        52.18991
+      ],
+      [
+        20.92864,
+        52.1959
+      ],
+      [
+        20.9366,
+        52.20145
+      ],
+      [
+        20.94761,
+        52.20882
+      ],
+      [
+        20.95625,
+        52.21447
+      ],
+      [
+        20.95944,
+        52.21557
+      ],
+      [
+        20.96077,
+        52.21704
+      ],
+      [
+        20.95991,
+        52.22063
+      ],
+      [
+        20.95814,
+        52.22422
+      ],
+      [
+        20.95752,
+        52.22758
+      ],
+      [
+        20.95681,
+        52.23076
+      ],
+      [
+        20.96065,
+        52.23229
+      ],
+      [
+        20.96567,
+        52.23339
+      ],
+      [
+        20.96877,
+        52.2339
+      ],
+      [
+        20.97283,
+        52.2348
+      ],
+      [
+        20.97636,
+        52.23572
+      ],
+      [
+        20.98023,
+        52.23689
+      ],
+      [
+        20.98514,
+        52.239
+      ],
+      [
+        20.98733,
+        52.23974
+      ],
+      [
+        20.99252,
+        52.24139
+      ],
+      [
+        20.99379,
+        52.24184
+      ],
+      [
+        20.99957,
+        52.24376
+      ],
+      [
+        21.00233,
+        52.24311
+      ]
+    ]
+  }
+}

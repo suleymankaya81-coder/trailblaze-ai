@@ -33,13 +33,13 @@ def fetch_source(url):
 
 def allows_wikipedia_overview(packet):
     return (packet.get('evidence_policy') == 'dach-wikipedia-overview'
-            and packet.get('country_code') in ('de', 'at', 'ch', 'it', 'es', 'fr', 'pt', 'gr', 'no', 'is', 'se', 'fi', 'dk', 'nl', 'be', 'ie')
+            and packet.get('country_code') in ('de', 'at', 'ch', 'it', 'es', 'fr', 'pt', 'gr', 'no', 'is', 'se', 'fi', 'dk', 'nl', 'be', 'ie', 'pl', 'ro', 'sk', 'cz', 'hu', 'si', 'hr', 'me', 'al', 'mk', 'ba', 'rs', 'bg', 'ee', 'lv', 'lt', 'lu', 'mt', 'cy')
             and packet.get('identity_verified') is True)
 
 def overview_source(source, packet):
     host = urlparse(source.get('url', '')).hostname or ''
     return source.get('kind') == 'official' or (allows_wikipedia_overview(packet)
-        and ((source.get('kind') == 'wikipedia' and host in ('en.wikipedia.org', 'de.wikipedia.org', 'it.wikipedia.org', 'es.wikipedia.org', 'fr.wikipedia.org', 'pt.wikipedia.org', 'el.wikipedia.org', 'no.wikipedia.org', 'is.wikipedia.org', 'sv.wikipedia.org', 'fi.wikipedia.org', 'da.wikipedia.org', 'nl.wikipedia.org'))
+        and ((source.get('kind') == 'wikipedia' and host in ('en.wikipedia.org', 'de.wikipedia.org', 'it.wikipedia.org', 'es.wikipedia.org', 'fr.wikipedia.org', 'pt.wikipedia.org', 'el.wikipedia.org', 'no.wikipedia.org', 'is.wikipedia.org', 'sv.wikipedia.org', 'fi.wikipedia.org', 'da.wikipedia.org', 'nl.wikipedia.org', 'pl.wikipedia.org', 'ro.wikipedia.org', 'sk.wikipedia.org', 'cs.wikipedia.org', 'hu.wikipedia.org', 'sl.wikipedia.org', 'hr.wikipedia.org', 'sr.wikipedia.org', 'sq.wikipedia.org', 'mk.wikipedia.org', 'bs.wikipedia.org', 'bg.wikipedia.org', 'et.wikipedia.org', 'lv.wikipedia.org', 'lt.wikipedia.org'))
              or (source.get('kind') == 'wikivoyage' and host == 'en.wikivoyage.org')))
 
 def load_packet(slug):
