@@ -338,3 +338,9 @@
 - [x] Multi-day plans: 239 of 506 Europe places now 2-3 days (IT 88, DE 69, AT 49, CH 33); German day texts refreshed for 151 DACH pages.
 - [ ] 267 places stay 1-day: their sources name too few separate sights.
 - [ ] German versions of Italian pages (translation run) not done yet.
+
+## Rest-Europe üretimi (devam)
+- [x] PL facts: 47 yeni kaynak paketi, 11 held (kapak/makale eksik)
+- [ ] PL translate: çalışıyor (/tmp/pl-translate.log) → ardından `publish --country pl --apply`
+- [ ] Sıradaki ülkeler: ro, sk, cz, hu, si, hr, me, ba, rs, bg, al, mk, ee, lv, lt, lu, mt, cy (her biri: facts → translate → publish --apply)
+- [ ] Her ülke sonrası ülke sayfası + harita doğrulaması
