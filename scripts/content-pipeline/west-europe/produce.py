@@ -167,6 +167,9 @@ def publish(items, cat, apply):
     staged = []
     for item in items:
         slug, row = item['slug'], cat[item['slug']]
+        if item.get('country') != row['country']:
+            print(slug, 'HELD: cached identity belongs to another country', flush=True)
+            continue
         cc, p = row['country'], item['payload']
         existing = pub.rq('GET', f'destinations?slug=eq.{slug}&select=id,status')
         if existing and existing[0]['status'] == 'published': continue

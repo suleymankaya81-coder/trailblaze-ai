@@ -99,7 +99,8 @@ def production_row(row):
 def outdoor_rows(countries):
     return [production_row(r) for r in original_rows(countries)
             if not (r['country'] == 'sk' and r['slug'] in SK_EXCLUDED)
-            and not any(word in r['name'].casefold() for word in ('square', 'market', 'plaza'))]
+            and not any(word in (r['name'] + ' ' + (r.get('enwiki') or '')).casefold()
+                        for word in ('square', 'market', 'plaza', 'náměstí', 'nám.', 'zelný trh'))]
 base.rows = outdoor_rows
 
 if __name__ == '__main__':

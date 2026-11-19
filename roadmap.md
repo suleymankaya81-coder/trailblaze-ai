@@ -1,3 +1,7 @@
+## November 19 Czechia production
+- [ ] Collect retained exact-place sources and licensed covers for all 45 catalog candidates, translate passing places into German and publish through existing checks.
+- [ ] Verify actual EN/DE counts, country maps, park navigation and sitemaps; record named holds without fabricated facts.
+
 ## November 19 remaining Europe production
 - [x] Completed Slovakia missing-place reconciliation: ten additional EN/DE publications, 53 total, all nine existing national parks; six invalid/out-of-scope candidates excluded. All 106 live pages and EN/DE map-to-park flows checked; dated report retained. Live sitemap freshness not verified.
 - [ ] Produce Poland, Romania and Slovakia first, then the other 16 catalog countries (19 total, 819 candidates); do not invent two extra countries to match the requested count.

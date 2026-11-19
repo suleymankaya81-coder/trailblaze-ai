@@ -20,6 +20,12 @@ class ProductionRules(unittest.TestCase):
     def test_exclusions(self):
         self.assertTrue({'tr', 'ua', 'ru', 'by', 'md', 'xk', 'am', 'az', 'ge'}.isdisjoint(runner.SETTINGS))
 
+    def test_czech_market_and_local_square_names_excluded(self):
+        slugs = {r['slug'] for r in runner.base.rows(['cz'])}
+        self.assertTrue({'zelny-trh', 'nam-premysla-otakara-ii', 'malostranske-namesti',
+                         'male-namesti', 'namesti-republiky-cz'}.isdisjoint(slugs))
+        self.assertEqual(sum(r['kind'] == 'national_park' for r in runner.base.rows(['cz'])), 4)
+
     def test_slovak_parks_do_not_reuse_polish_identity(self):
         rows = {r['slug']: r for r in runner.base.rows(['sk'])}
         self.assertEqual(rows['pieniny-national-park-sk']['wikidata'], 'Q1783680')
