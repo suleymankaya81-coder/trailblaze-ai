@@ -50,6 +50,24 @@ class ProductionRules(unittest.TestCase):
         finally:
             runner.base.fin.identity_and_packet = original
 
+    def test_serbian_renamed_place_keeps_reviewed_coordinates(self):
+        row = runner.production_row({'country': 'rs', 'slug': 'mokra-gora', 'lat': 42.83222222, 'lng': 20.36361111})
+        self.assertEqual((row['lat'], row['lng'], row['region']),
+                         (43.792478, 19.506933, 'zlatibor-administrative-district'))
+        self.assertEqual(row['wikidata'], 'Q1016709')
+
+    def test_retained_serbian_facts_receive_reviewed_coordinates_and_route(self):
+        from unittest.mock import patch
+        stale = {'slug': 'kopaonik-national-park', 'country': 'rs', 'lat': 43.26916667,
+                 'lng': 20.8225, 'region': 'district-of-mitrovica', 'payload': {'lat': 43.26916667}}
+        airport = {'lat': 43.818, 'lng': 20.587, 'code': 'KVO', 'name': 'Morava'}
+        route = {'minutes': 120, 'miles': 60, 'coords': [[20.587, 43.818], [20.68, 43.32]]}
+        with patch.object(runner, 'original_load', return_value=stale), patch.object(runner.base.fin, 'resolve_route', return_value=(airport, route)):
+            item = runner.reviewed_load('kopaonik-national-park')
+        self.assertEqual((item['lat'], item['lng'], item['region']), (43.32, 20.68, 'raska-administrative-district'))
+        self.assertEqual(item['payload']['lat'], 43.32)
+        self.assertEqual(item['route']['coords'][-1], [20.68, 43.32])
+
 if __name__ == '__main__':
     unittest.main()
 

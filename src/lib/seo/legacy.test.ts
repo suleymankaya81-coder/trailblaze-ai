@@ -5,7 +5,7 @@ const loc = (u: string) => legacyResponse(new URL(u))?.headers.get("location");
 describe("authority domain mapping", () => {
   it("German pages go to the Germany country page", () => { expect(authorityTarget("/eu/ge/ge.htm", false)).toBe("/destinations/de"); expect(authorityTarget("/eu/ge.htm", false)).toBe("/destinations/de"); });
   it("Austria, Italy, Spain, UK, Canada map to their country pages", () => { expect(authorityTarget("/eu/au/au.htm", false)).toBe("/destinations/at"); expect(authorityTarget("/eu/it/it.htm", false)).toBe("/destinations/it"); expect(authorityTarget("/eu/sp.htm", false)).toBe("/destinations/es"); expect(authorityTarget("/eu/uk/uk.htm", false)).toBe("/destinations/gb"); expect(authorityTarget("/ca/ca.htm", false)).toBe("/destinations/ca"); });
-  it("Estonia (/eu/es) is not Spain and Australia (/au) is not Austria", () => { expect(authorityTarget("/eu/es/es.htm", false)).toBe("/destinations"); expect(authorityTarget("/au/au.htm", false)).toBe("/destinations"); });
+  it("Estonia (/eu/es) is not Spain and Australia (/au) is not Austria", () => { expect(authorityTarget("/eu/es/es.htm", false)).toBe("/destinations/ee"); expect(authorityTarget("/au/au.htm", false)).toBe("/destinations"); });
   it("Portugal, Greece and France map to their country pages (/eu/pt is NOT Portugal)", () => {
     expect(authorityTarget("/eu/pr/pr.htm", false)).toBe("/destinations/pt");
     expect(authorityTarget("/eu/gr/gr.htm", false)).toBe("/destinations/gr");
@@ -27,9 +27,9 @@ describe("authority domain mapping", () => {
   it.each([
     ["cr", "hr"], ["es", "ee"], ["hu", "hu"], ["la", "lv"],
     ["li", "lt"], ["po", "pl"], ["ro", "ro"], ["sl", "si"],
-  ])("retains %s identity without redirecting to an unpublished country", (oldCode, country) => {
+  ])("retains %s identity and redirects to its now-published country", (oldCode, country) => {
     expect(AUTHORITY_COUNTRY[`/eu/${oldCode}`]).toBe(country);
-    expect(authorityTarget(`/eu/${oldCode}/${oldCode}.htm`, true)).toBe("/destinations");
+    expect(authorityTarget(`/eu/${oldCode}/${oldCode}.htm`, true)).toBe(`/destinations/${country}`);
   });
   it("does not invent a Swiss, Belgian or Danish historical country code", () => {
     expect(AUTHORITY_COUNTRY["/eu/sl"]).toBe("si");

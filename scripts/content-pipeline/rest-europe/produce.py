@@ -203,7 +203,7 @@ PLACE_FIXES = {
     # ridge; the park itself lies in Serbia's Raška district. Mokra Gora's
     # Wikidata item is the Kosovo village, not the Serbian one above Užice.
     'kopaonik-national-park': {'lat': 43.3200, 'lng': 20.6800, 'region': 'raska-administrative-district'},
-    'mokra-gora-serbia': {'lat': 43.8656, 'lng': 19.3472, 'region': 'zlatibor-administrative-district'},
+    'mokra-gora-serbia': {'lat': 43.792478, 'lng': 19.506933, 'region': 'zlatibor-administrative-district'},
     # The Blue Grotto's Wikidata point sits in the sea off Wied iż-Żurrieq, so
     # no region resolves; the caves are reached from the Qrendi shore.
     'blue-grotto-malta': {'lat': 35.8208, 'lng': 14.4572, 'region': 'southern-region'},
@@ -218,7 +218,9 @@ def production_row(row):
     if row['country'] == 'hr' and row['slug'] in HR_SLUGS:
         return {**row, 'slug': HR_SLUGS[row['slug']]}
     if row['country'] == 'rs' and row['slug'] in RS_SLUGS:
-        return {**row, 'slug': RS_SLUGS[row['slug']]}
+        slug = RS_SLUGS[row['slug']]
+        return {**row, 'slug': slug, 'wikidata': 'Q1016709',
+                'enwiki': 'https://en.wikipedia.org/wiki/Mokra_Gora', **PLACE_FIXES.get(slug, {})}
     if row['slug'] in PLACE_FIXES:
         return {**row, **PLACE_FIXES[row['slug']]}
     if row['country'] != 'sk':
@@ -250,6 +252,26 @@ def reviewed_coordinates(row, page, entity, bounds):
         return fix['lat'], fix['lng'], 'reviewed-coordinate-correction'
     return original_coordinates(row, page, entity, bounds)
 base.fin.resolve_coordinates = reviewed_coordinates
+
+# Retained facts can predate a reviewed correction. Fix the whole fact bundle
+# before translation/publication, not only coordinates during fresh discovery.
+original_load = base.load
+def reviewed_load(slug):
+    item = original_load(slug)
+    fix = PLACE_FIXES.get(slug)
+    if not item or not fix:
+        return item
+    corrected = {**item, **fix}
+    if 'lat' in fix and (item.get('lat'), item.get('lng')) != (fix['lat'], fix['lng']):
+        airport, route = base.fin.resolve_route(fix['lat'], fix['lng'], item['country'].upper())
+        corrected.update(airport=airport, route=route)
+        if item.get('payload'):
+            corrected['payload'] = {**item['payload'], 'lat': fix['lat'], 'lng': fix['lng'],
+                'airport_lat': airport['lat'], 'airport_lng': airport['lng'],
+                'nearest_airport_code': airport['code'], 'nearest_airport_name': airport['name'],
+                'drive_minutes': route['minutes'], 'drive_miles': route['miles']}
+    return corrected
+base.load = reviewed_load
 
 REVIEWED_COVERS = {**CZ_COVERS, **HR_COVERS}
 
