@@ -148,7 +148,7 @@ export function canonicalPath(input: string): string {
   const loc: Locale = base === "/de" || base.startsWith("/de/") ? "de" : "en";
   const path = loc === "de" ? base.slice(3) || "/" : base;
   const flat = path.match(/^\/destinations\/([a-z0-9-]+)\/?$/);
-  if (flat && GEO[flat[1]]) return destinationPath(flat[1], loc) + rest;
+  if (flat && GEO[flat[1]] && !isCountry(flat[1])) return destinationPath(flat[1], loc) + rest;
   if (loc === "en") {
     const lg = parseLegacyGuidePath(path);
     if (lg) return guidePath(lg.slug, lg.guide.segment) + rest;

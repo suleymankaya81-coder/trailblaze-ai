@@ -342,5 +342,6 @@
 ## Rest-Europe üretimi (devam)
 - [x] PL facts: 47 yeni kaynak paketi, 11 held (kapak/makale eksik)
 - [ ] PL translate: çalışıyor (/tmp/pl-translate.log) → ardından `publish --country pl --apply`
-- [ ] Sıradaki ülkeler: ro, sk, cz, hu, si, hr, me, ba, rs, bg, al, mk, ee, lv, lt, lu, mt, cy (her biri: facts → translate → publish --apply)
+- [x] RO 103, SK 43 yayında (Ro adres hatası düzeltildi)
+- [ ] Sıradaki ülkeler: cz, hu, si, hr, me, ba, rs, bg, al, mk, ee, lv, lt, lu, mt, cy (her biri: facts → translate → publish --apply)
 - [ ] Her ülke sonrası ülke sayfası + harita doğrulaması

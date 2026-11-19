@@ -31,3 +31,10 @@ describe("paths", () => {
     expect(absoluteUrl("/x")).toBe(`${SITE_ORIGIN}/x`);
   });
 });
+
+import { canonicalPath as cp } from "./paths";
+import { it as it2, expect as ex2 } from "vitest";
+it2("country directory /destinations/ro is not rewritten to a same-slug place", () => {
+  ex2(cp("/destinations/ro")).toBe("/destinations/ro");
+  ex2(cp("/de/destinations/ro")).toBe("/de/destinations/ro");
+});
