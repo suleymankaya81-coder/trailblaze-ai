@@ -12,6 +12,12 @@ class SourceEvidenceTests(unittest.TestCase):
         self.assertTrue(evidence.overview_source(source, packet))
         self.assertFalse(evidence.overview_source(source, {**packet, 'identity_verified': False}))
 
+    def test_australia_reuses_identity_verified_overviews(self):
+        packet = {'country_code': 'au', 'evidence_policy': 'dach-wikipedia-overview', 'identity_verified': True}
+        source = {'kind': 'wikipedia', 'url': 'https://en.wikipedia.org/wiki/Barrington_Tops_National_Park'}
+        self.assertTrue(evidence.overview_source(source, packet))
+        self.assertFalse(evidence.overview_source(source, {**packet, 'identity_verified': False}))
+
     def test_belgium_uses_verified_nordic_overview_policy(self):
         packet = {'country_code': 'be', 'evidence_policy': 'dach-wikipedia-overview', 'identity_verified': True}
         source = {'kind': 'wikipedia', 'url': 'https://nl.wikipedia.org/wiki/Zwin'}
@@ -47,3 +53,4 @@ class SourceEvidenceTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

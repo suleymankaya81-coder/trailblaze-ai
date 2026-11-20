@@ -20,9 +20,11 @@ base.CACHE = HERE / 'discovery-cache'
 base.REPORT = HERE / 'production-report.json'
 for directory in (base.OUT, base.CACHE):
     directory.mkdir(parents=True, exist_ok=True)
-base.COUNTRIES = {'nz': dict(lang='en', currency='NZD', name='New Zealand', mhr='new-zealand', bounds=(-47.5, -34, 166, 179))}
-base.prepare.EXTRA_COUNTRIES += ('NZ',)
-base.comp.COUNTRY_NAMES['nz'] = 'New Zealand'
+base.COUNTRIES = {'nz': dict(lang='en', currency='NZD', name='New Zealand', mhr='new-zealand', bounds=(-47.5, -34, 166, 179), qid='Q664'),
+                  'au': dict(lang='en', currency='AUD', name='Australia', mhr='australia', bounds=(-44, -10, 112, 154), qid='Q408')}
+base.prepare.EXTRA_COUNTRIES += ('NZ', 'AU')
+base.comp.COUNTRY_NAMES.update(nz='New Zealand', au='Australia')
+CC = 'nz'
 MEDIA_UA = {'User-Agent': 'WildParkRoutes/1.0 (https://wildparkroutes.com; info@minialife.com) python-requests/2.32'}
 
 def download_cover(photo, target):
@@ -53,12 +55,12 @@ def identity(row):
             return original_fetch(exact, 'en', cache)
     base.fin.fetch_article = fetch
     try:
-        result = base.fin.identity_and_packet(row, 'nz', 'en', base.CACHE)
+        result = base.fin.identity_and_packet(row, CC, 'en', base.CACHE)
     finally:
         base.fin.fetch_article = original_fetch
     entity = result[3]
     countries = {c.get('mainsnak', {}).get('datavalue', {}).get('value', {}).get('id') for c in entity.get('claims', {}).get('P17', [])}
-    if countries and 'Q664' not in countries:
+    if countries and base.COUNTRIES[CC]['qid'] not in countries:
         raise ValueError('identity belongs to another country')
     return result
 
@@ -87,14 +89,21 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('stage', choices=['facts', 'translate'])
     parser.add_argument('--existing', default='/tmp/nz-existing.json')
+    parser.add_argument('--country', default='nz', choices=['nz', 'au'])
+    parser.add_argument('--limit', type=int, default=10**6)
     parser.add_argument('--only', default='', help='comma-separated slugs')
     args = parser.parse_args()
-    rows = json.loads((PIPE / 'claude-handoff/oceania/nz-catalog.json').read_text())
+    global CC
+    CC = args.country
+    rows = json.loads((PIPE / f'claude-handoff/oceania/{CC}-catalog.json').read_text())
     existing = {r['slug'] for r in json.loads(Path(args.existing).read_text())['rows']}
     report = json.loads(base.REPORT.read_text()) if base.REPORT.exists() else {}
     used = {base.load(r['slug']).get('photo', {}).get('url') for r in rows}
+    done = 0
     for row in rows:
         slug = row['slug']
+        if done >= args.limit:
+            break
         if args.only and slug not in args.only.split(','):
             continue
         if slug in existing:
@@ -114,18 +123,18 @@ def main():
                     official = dict(url=reviewed['url'], kind=reviewed['kind'], text=reviewed['quote'], generation_excerpts=[reviewed['quote']])
                 if not quote:
                     raise ValueError('visitor road access not established in retained article')
-                lat, lng, source = base.fin.resolve_coordinates(row, page, entity, base.COUNTRIES['nz']['bounds'])
+                lat, lng, source = base.fin.resolve_coordinates(row, page, entity, base.COUNTRIES[CC]['bounds'])
                 photo = base.cover(row, page, lang, used)
                 if not photo:
                     raise ValueError('no licensed exact-place cover')
-                airport, route = base.fin.resolve_route(lat, lng, 'NZ')
+                airport, route = base.fin.resolve_route(lat, lng, CC.upper())
                 end = route['coords'][-1]
                 if base.prepare.hav(lat, lng, end[1], end[0]) > 1.25:
                     raise ValueError('route endpoint too far from reviewed destination point')
                 packet['road_access_quote'] = quote
                 if official and official['generation_excerpts']:
                     packet['sources'].append(official)
-                item = dict(slug=slug, country='nz', status='facts', lang=lang, packet=packet, photo=photo,
+                item = dict(slug=slug, country=CC, status='facts', lang=lang, packet=packet, photo=photo,
                     lat=lat, lng=lng, coordinate_source=source, region=base.region_for(row, lat, lng), airport=airport, route=route)
                 base.save(slug, item)
                 used.add(photo['url'])
@@ -138,6 +147,7 @@ def main():
             report[slug] = item.get('status', report.get(slug, 'held'))
         except Exception as error:
             report[slug] = 'HELD: ' + str(error)[:220]
+        done += 1
         print(slug, report[slug], flush=True)
         base.REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2))
     base.REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2))
