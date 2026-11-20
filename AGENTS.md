@@ -50,4 +50,3 @@
 - Origin/brand: config/site.ts; addresses: routes/paths.ts; refresh destination-geo.json on publish.
 
 - Country partners/currency: countryPartners.ts; country browsing UI: countryDirectory.ts. Why: one entry per country.
-- French (/fr) currently covers only the homepage and destination directory (countries, regions, places); localPath.hasTranslatedPage is locale-aware so other families stay English. Why: never link to French pages that do not exist.

@@ -1,0 +1,1 @@
+- French (/fr) currently covers only the homepage and destination directory (countries, regions, places); localPath.hasTranslatedPage is locale-aware so other families stay English. Why: never link to French pages that do not exist.
