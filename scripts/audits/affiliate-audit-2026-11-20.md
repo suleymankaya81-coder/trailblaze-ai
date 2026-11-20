@@ -104,3 +104,21 @@ REI bağlantıları bilerek doğrudan/komisyonsuzdur. Hipcamp, Glamping Hub, Arr
 - src/lib/affiliates/AGENTS.md (yeni): takip ve ülke hedefi kuralları; roadmap.md: bu denetimin durumu.
 
 Veritabanı teklifleri, ortak hesapları, secret’lar ve onaylı publisher/pid/mcid/affiliate kodları değiştirilmedi. **MiniaLife adı Webjet affiliate kodunda ve Harvest Hosts MINIALIFE20 kampanyasında bilinçli korundu; bunlar marka yazısı değil, verilmiş hesap/kampanya kimliğidir.**
+
+## 7. Son ortak-yol kontrolü
+**Kural:** Ziyaretçinin gördüğü ortaklık bağlantısı, verilmiş hesap kimliğini koruyarak doğru sağlayıcıya gitmelidir; farklı sayfa veya dil bunu değiştirmemelidir.
+
+| Ziyaretçinin karşılaştığı yol | Okunan/çalıştırılan yer | Kuralın durumu |
+|---|---|---|
+| Ana sayfa kiralama kartları ve sağlayıcı formu | RentalSearch.tsx; ortak Webjet üreticisi | Kod minialife, yedek bağlantılar ortak üreticiden. Sağlayıcı formunda gerçek tarihli arama henüz doğrulanmadı. |
+| İngilizce/Almanca destinasyon kartları | DestinationPageView, TopShowcase, trackAndRedirect, destinations.functions | Düzeltilmiş üretici/gerçek ülke ve tıklama yolu kullanılıyor; Norveç EN/DE gerçek geçişi çalıştırıldı. |
+| Ana sayfa, park üst/alt tur ve rota tur belgeleri | Üç experiences route dosyası, viatorPlace/corridorExperiences işlevleri | Gerçek API linkleri doğrulanıyor; gerçek Viator tıklaması çalıştırıldı. Önbellekten dönen tüm mevcut URL kimlikleri ayrıca tarandı. |
+| Fly & Drive, diğer rehberler, rota/koridor rezervasyonları | FlyDriveSections, CorridorBookings; ortak Webjet/Expedia/Vrbo/Travelpayouts üreticileri | Okunan bağlantı yolları ortak üreticileri kullanıyor. Bu turda her rehber sayfasında ayrı dış tıklama çalıştırılmadı. |
+| Arama rehberi ve eski teklif kartları | landingPages.functions, LandingOfferCard, ortak trackAndRedirect | Arama verisi yeni bir affiliate URL üretmiyor; kart tıklaması ortak düzeltmeden yararlanıyor. |
+| Trip Builder gecelik kamp araması | tripBuilder.ts | Campspot 22326 / RoverPass 32065 ve ortak Awin üreticisi; mevcut testler kapsıyor. |
+| Gear Shop kategorileri, ürün rehberleri, gezi ekipmanları | gearShop.functions, rockbrosGear, TripEssentials | Katalog/ortak Awin üreticisi; tüm katalog kimlikleri ve ilgili testler kontrol edildi. |
+| İçerik üretimi ve ürün beslemesi | apply-wave.py, publish-fr-pt-gr.py, build-gear-categories.py; Nordic produce çağrı noktası | Eski üreticiler hâlâ Viator Awin=11018 ve bazı etiketsiz ham Webjet URL’leri saklayabiliyor; ziyaretçiye çıkışta ortak düzeltici bunları doğru hesaba dönüştürüyor. Ham kayıtlar/üretim işleri çalıştırılmadı; yayın ve geçmiş kayıtlar değiştirilmedi. Ürün kategori üreticisi 3115962/58007 kontrolü yapıyor. |
+| Uçuş önbellek yenilemesi | flights.functions.ts | Fiyat bilgisi getiriyor, ziyaretçi takip linki üretmiyor; rezervasyon linki Travelpayouts üreticisinden. |
+| Veritabanı işlevleri/eski ağ ataması | Şema kartı ve ilgili migration tanımları | Eski migration Viator’a Awin metadata atamış; mevcut çıkış kuralı bunu düzeltir. Tıklama, geçmiş olay veya tamamlanmış işlem kayıtları değiştirilmedi. |
+
+Bu son kontrol yeni bir davranış hatası ortaya çıkarmadı; mevcut düzelticilerin farklı yapılmış yolları da kapsadığı kaynak okuyarak doğrulandı. Partner paneli, EKTA program onayı, sağlayıcı güvenlik engelleri, gerçek rezervasyon formu ve satış sonrası komisyon doğrulaması açık kalır.
