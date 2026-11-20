@@ -5,7 +5,7 @@ export const travelPlanSchema = z.object({
   version: z.literal(1),
   days: z.array(z.object({
     title: z.string().min(5), start: z.string().min(3),
-    stops: z.array(z.object({ name: z.string().min(3), detail: z.string().min(20), routingName: z.string().optional() })).min(1),
+    stops: z.array(z.object({ name: z.string().min(3), detail: z.string().min(20), routingName: z.string().optional(), placePath: z.string().startsWith("/destinations/").optional() })).min(1),
     driving: z.string().min(10), note: z.string().min(15),
   })).min(1),
   intel: z.array(z.object({
