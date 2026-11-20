@@ -19,3 +19,16 @@ describe("German link targets", () => {
     expect(localTarget("/about", "en")).toBeNull();
   });
 });
+
+describe("French link targets", () => {
+  it("localizes home, country and park pages", () => {
+    expect(localTarget("/", "fr")).toBe("/fr");
+    expect(localTarget("/destinations/fr", "fr")).toBe("/fr/destinations/fr");
+    expect(localTarget("/destinations/acadia", "fr")).toBe("/fr/destinations/us/maine/acadia");
+  });
+  it("does not invent French guide routes", () => {
+    expect(localTarget("/road-trips", "fr")).toBeNull();
+    expect(localTarget("/gear", "fr")).toBeNull();
+    expect(localTarget("/acadia-best-time-to-visit", "fr")).toBe("/destinations/us/maine/acadia/best-time");
+  });
+});

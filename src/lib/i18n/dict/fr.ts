@@ -1,7 +1,7 @@
 import type { DictKey } from "./en";
 
 // French interface text. Missing keys fall back to English automatically.
-export const fr: Partial<Record<DictKey, string>> = {
+export const fr: Record<DictKey, string> = {
   "nav.home": "Accueil",
   "nav.destinations": "Destinations",
   "nav.roadTrips": "Road trips",

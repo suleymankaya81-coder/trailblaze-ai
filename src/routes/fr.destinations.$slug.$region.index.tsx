@@ -30,7 +30,8 @@ export const Route = createFileRoute("/fr/destinations/$slug/$region/")({
     const description = `Guides de road trip et de parcs pour ${name} (${COUNTRIES[country].nameFr}) : ${places.slice(0, 4).map((p) => p.name).join(", ")} et plus.`.slice(0, 160);
     const url = `${SITE_ORIGIN}${regionPath(country, region, "fr")}`;
     return {
-      meta: [...frMeta(title, description, url), { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }],
+      meta: [...frMeta(title, description, url), { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
+        ...(places.find(p => p.heroImage)?.heroImage?.startsWith("https://") ? [{ property: "og:image", content: places.find(p => p.heroImage)?.heroImage ?? "" }, { name: "twitter:image", content: places.find(p => p.heroImage)?.heroImage ?? "" }] : [])],
       links: [{ rel: "canonical", href: url }, ...hreflangLinks(regionPath(country, region), locales)],
       scripts: [breadcrumbScript(frGeoCrumbs(country, { slug: region, name }))],
     };

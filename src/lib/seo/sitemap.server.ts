@@ -75,14 +75,14 @@ function canonicalLoc(loc: string): string {
 }
 
 // No country page (or region pages) once a country has zero published places: avoids an empty /destinations/{cc} URL in the sitemap.
-const geoPathsOf = (c: string, locale: "en" | "de") => (regionSlugsOf(c).length === 0 ? [] : [countryPath(c, locale), ...regionSlugsOf(c).map((r) => regionPath(c, r, locale))]);
-const geoPaths = (locale: "en" | "de") => Object.keys(COUNTRIES).flatMap((c) => geoPathsOf(c, locale));
+const geoPathsOf = (c: string, locale: "en" | "de" | "fr") => (regionSlugsOf(c).length === 0 ? [] : [countryPath(c, locale), ...regionSlugsOf(c).map((r) => regionPath(c, r, locale))]);
+const geoPaths = (locale: "en" | "de" | "fr") => Object.keys(COUNTRIES).flatMap((c) => geoPathsOf(c, locale));
 const inCountry = (slug: string, country: string | null) => !country || destinationGeo(slug)?.country === country;
 
 /** en / de / x-default alternates for a destination with a published German version. */
-export function destinationAlternates(slug: string): { lang: string; href: string }[] {
+export function destinationAlternates(slug: string, locales: ("de" | "fr")[] = ["de"]): { lang: string; href: string }[] {
   const en = SITE_ORIGIN + destinationPath(slug, "en");
-  return [{ lang: "en", href: en }, { lang: "de", href: SITE_ORIGIN + destinationPath(slug, "de") }, { lang: "x-default", href: en }];
+  return [{ lang: "en", href: en }, ...locales.map(lang => ({ lang, href: SITE_ORIGIN + destinationPath(slug, lang) })), { lang: "x-default", href: en }];
 }
 
 export function urlsetXml(urls: Url[]): string {
@@ -106,8 +106,8 @@ function urlset(urls: Url[]): Response {
 }
 
 // Destination and guide sitemaps are split per country (us-destinations, de-us-destinations, us-guides-glamping, ...).
-const PER_COUNTRY = ["destinations", "de-destinations", ...GUIDE_TYPES.map((t) => `guides-${t}`)];
-export const CHILDREN = ["pages", "fly-and-drive", "no-reservation", "rv-camping", "road-trips", ...Object.keys(COUNTRIES).flatMap((c) => PER_COUNTRY.map((n) => (n.startsWith("de-") ? `de-${c}-${n.slice(3)}` : `${c}-${n}`)))];
+const PER_COUNTRY = ["destinations", "de-destinations", "fr-destinations", ...GUIDE_TYPES.map((t) => `guides-${t}`)];
+export const CHILDREN = ["pages", "fly-and-drive", "no-reservation", "rv-camping", "road-trips", ...Object.keys(COUNTRIES).flatMap((c) => PER_COUNTRY.map((n) => (/^(de|fr)-/.test(n) ? `${n.slice(0, 2)}-${c}-${n.slice(3)}` : `${c}-${n}`)))];
 // Pre-split names stay answerable for crawlers that cached them; they are no longer listed.
 const ALIASES: Record<string, string> = { de: "de-destinations", destinations: "destinations", ...Object.fromEntries(GUIDE_TYPES.map((t) => [`guides-${t}`, `guides-${t}`])) };
 
@@ -115,12 +115,12 @@ const ALIASES: Record<string, string> = { de: "de-destinations", destinations: "
 export function parseChild(name: string): { country: string | null; kind: string } | null {
   if (name in ALIASES) return { country: null, kind: ALIASES[name] };
   if (!CHILDREN.includes(name)) return null;
-  const de = name.startsWith("de-");
-  const rest = de ? name.slice(3) : name;
+  const locale = /^(de|fr)-[a-z]{2}-/.test(name) ? name.slice(0, 2) : null;
+  const rest = locale ? name.slice(3) : name;
   const country = rest.split("-")[0];
   if (!(country in COUNTRIES)) return { country: null, kind: name };
   const kind = rest.slice(country.length + 1);
-  return { country, kind: de ? `de-${kind}` : kind };
+  return { country, kind: locale ? `${locale}-${kind}` : kind };
 }
 
 // A country keeps its sitemap children out of the index until it has at least one published
@@ -128,11 +128,16 @@ export function parseChild(name: string): { country: string | null; kind: string
 // and starts listing real URLs the moment destination-geo.json picks up its first published row.
 const hasPublishedPlaces = (country: string | null) => !country || regionSlugsOf(country).length > 0;
 export async function buildSitemapResponse(_origin?: string): Promise<Response> {
+  const french = await fetchAll<{ entity_id: string }>("content_translations?select=entity_id&entity_type=eq.destination&locale=eq.fr&status=eq.published&order=entity_id.asc");
+  const frenchCountries = new Set(french.map(row => destinationGeo(row.entity_id)?.country));
   return xml(
     [
       '<?xml version="1.0" encoding="UTF-8"?>',
       '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-      ...CHILDREN.filter((c) => hasPublishedPlaces(parseChild(c)?.country ?? null)).map((c) => `  <sitemap><loc>${BASE_URL}/sitemaps/${c}.xml</loc></sitemap>`),
+      ...CHILDREN.filter((c) => {
+        const child = parseChild(c);
+        return hasPublishedPlaces(child?.country ?? null) && (child?.kind !== "fr-destinations" || frenchCountries.has(child.country ?? ""));
+      }).map((c) => `  <sitemap><loc>${BASE_URL}/sitemaps/${c}.xml</loc></sitemap>`),
       "</sitemapindex>",
     ].join("\n"),
   );
@@ -144,27 +149,31 @@ export async function buildChildSitemap(name: string): Promise<Response | null> 
   if (!parsed) return null;
   const { country } = parsed;
   name = parsed.kind;
-  if (name === "pages") return urlset(STATIC_PATHS.map((p) => ({ loc: `${BASE_URL}${p}` })));
+  if (name === "pages") return urlset([...STATIC_PATHS, "/de", "/de/destinations", "/fr", "/fr/destinations"].map((p) => ({ loc: `${BASE_URL}${p}`, ...(["/", "/destinations", "/de", "/de/destinations", "/fr", "/fr/destinations"].includes(p) ? { alternates: ["en", "de", "fr", "x-default"].map(lang => ({ lang, href: `${BASE_URL}${lang === "en" || lang === "x-default" ? (p.endsWith("destinations") ? "/destinations" : "/") : `/${lang}${p.endsWith("destinations") ? "/destinations" : ""}`}` })) } : {}) })));
   try {
-    if (name === "de-destinations") {
+    if (name === "de-destinations" || name === "fr-destinations") {
+      const locale = name === "fr-destinations" ? "fr" : "de";
+      const otherLocale = locale === "fr" ? "de" : "fr";
+      const other = new Set((await fetchAll<{ entity_id: string }>(`content_translations?select=entity_id&entity_type=eq.destination&locale=eq.${otherLocale}&status=eq.published&order=entity_id.asc`)).map(r => r.entity_id));
       const rows = await fetchAll<{ entity_id: string; updated_at: string }>(
-        "content_translations?select=entity_id,updated_at&entity_type=eq.destination&locale=eq.de&status=eq.published&order=entity_id.asc",
+        `content_translations?select=entity_id,updated_at&entity_type=eq.destination&locale=eq.${locale}&status=eq.published&order=entity_id.asc`,
       );
       const publishedRows = rows.filter(r => destinationGeo(r.entity_id) && inCountry(r.entity_id, country));
       const translatedGeo = new Set<string>();
       for (const row of publishedRows) {
         const geo = destinationGeo(row.entity_id);
         if (!geo) continue;
-        translatedGeo.add(countryPath(geo.country, "de"));
-        translatedGeo.add(regionPath(geo.country, geo.region, "de"));
+        translatedGeo.add(countryPath(geo.country, locale));
+        translatedGeo.add(regionPath(geo.country, geo.region, locale));
       }
       return urlset([
-        ...(country ? [...translatedGeo] : ["/de", "/de/destinations", "/de/road-trips", ...translatedGeo]).map((p) => ({ loc: `${BASE_URL}${p}` })),
-        ...publishedRows.map((r) => ({ loc: `${BASE_URL}/de/destinations/${r.entity_id}`, lastmod: new Date(r.updated_at).toISOString(), alternates: destinationAlternates(r.entity_id) })),
+        ...(country ? [...translatedGeo] : [`/${locale}`, `/${locale}/destinations`, ...(locale === "de" ? ["/de/road-trips"] : []), ...translatedGeo]).map((p) => ({ loc: `${BASE_URL}${p}` })),
+        ...publishedRows.map((r) => ({ loc: `${BASE_URL}${destinationPath(r.entity_id, locale)}`, lastmod: new Date(r.updated_at).toISOString(), alternates: destinationAlternates(r.entity_id, (["de", "fr"] as const).filter(l => l === locale || other.has(r.entity_id))) })),
       ]);
     }
     if (name === "destinations") {
       const de = new Set((await fetchAll<{ entity_id: string }>("content_translations?select=entity_id&entity_type=eq.destination&locale=eq.de&status=eq.published")).map((r) => r.entity_id));
+      const fr = new Set((await fetchAll<{ entity_id: string }>("content_translations?select=entity_id&entity_type=eq.destination&locale=eq.fr&status=eq.published&order=entity_id.asc")).map((r) => r.entity_id));
       const rows = await fetchAll<{ slug: string; updated_at: string; hero_image: string | null; gallery: string[] | null }>(
         "destinations?select=slug,updated_at,hero_image,gallery&status=eq.published&order=slug.asc",
       );
@@ -174,7 +183,7 @@ export async function buildChildSitemap(name: string): Promise<Response | null> 
           loc: `${BASE_URL}/destinations/${d.slug}`,
           lastmod: new Date(d.updated_at).toISOString(),
           images: uniqueImages([d.hero_image, ...(d.gallery ?? [])]),
-          alternates: de.has(d.slug) ? destinationAlternates(d.slug) : undefined,
+          alternates: de.has(d.slug) || fr.has(d.slug) ? destinationAlternates(d.slug, (["de", "fr"] as const).filter(l => (l === "de" ? de : fr).has(d.slug))) : undefined,
         })),
       ]);
     }
@@ -213,6 +222,6 @@ export async function buildChildSitemap(name: string): Promise<Response | null> 
     );
   } catch (err) {
     console.error("[sitemap]", err);
-    return urlset([]);
+    return new Response("Sitemap temporarily unavailable", { status: 503 });
   }
 }

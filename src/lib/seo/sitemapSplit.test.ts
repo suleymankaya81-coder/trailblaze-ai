@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import { buildSitemapResponse, CHILDREN, destinationAlternates, parseChild, urlsetXml } from "./sitemap.server";
 
 describe("country-split sitemaps", () => {
@@ -18,12 +18,29 @@ describe("country-split sitemaps", () => {
     expect(parseChild("gr-destinations")).toEqual({ country: "gr", kind: "destinations" });
   });
   it("lists France/Portugal/Greece sitemap children once their places are published", async () => {
+    vi.stubEnv("SUPABASE_URL", "https://example.test");
+    vi.stubEnv("SUPABASE_PUBLISHABLE_KEY", "sb_publishable_test");
+    vi.stubGlobal("fetch", vi.fn().mockResolvedValue(new Response(JSON.stringify([{ entity_id: "acadia" }]))));
     const res = await buildSitemapResponse();
     const body = await res.text();
+    vi.unstubAllGlobals();
+    vi.unstubAllEnvs();
     expect(body).toMatch(/\/sitemaps\/fr-destinations\.xml/);
     expect(body).toMatch(/\/sitemaps\/pt-destinations\.xml/);
     expect(body).toMatch(/\/sitemaps\/gr-destinations\.xml/);
     expect(body).toMatch(/\/sitemaps\/us-destinations\.xml/);
+    expect(body).toContain("/sitemaps/fr-us-destinations.xml");
+    expect(body).not.toContain("/sitemaps/fr-nz-destinations.xml");
+  });
+  it("distinguishes France from the French language", () => {
+    expect(parseChild("fr-destinations")).toEqual({ country: "fr", kind: "destinations" });
+    expect(parseChild("fr-fr-destinations")).toEqual({ country: "fr", kind: "fr-destinations" });
+    expect(parseChild("fr-us-destinations")).toEqual({ country: "us", kind: "fr-destinations" });
+  });
+  it("emits only the available destination languages", () => {
+    const links = destinationAlternates("acadia", ["fr"]);
+    expect(links.map(l => l.lang)).toEqual(["en", "fr", "x-default"]);
+    expect(links[1]?.href).toBe("https://wildparkroutes.com/fr/destinations/us/maine/acadia");
   });
   it("emits en/de/x-default hreflang", () => {
     const xml = urlsetXml([{ loc: "https://wildparkroutes.com/destinations/us/maine/acadia", alternates: destinationAlternates("acadia") }]);

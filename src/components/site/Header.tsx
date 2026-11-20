@@ -26,7 +26,7 @@ export function Header() {
   const home = locale === "en" ? "/" : `/${locale}`;
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur">
-      <div className="container-page flex h-20 items-center justify-between gap-6 md:h-24">
+      <div className="container-page flex h-20 items-center justify-between gap-2 md:h-24 md:gap-6">
         <Link to={home} className="flex items-center text-foreground" aria-label="WildParkRoutes home">
           <Wordmark />
         </Link>

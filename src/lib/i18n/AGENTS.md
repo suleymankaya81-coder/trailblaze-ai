@@ -1,1 +1,2 @@
 - French (/fr) currently covers only the homepage and destination directory (countries, regions, places); localPath.hasTranslatedPage is locale-aware so other families stay English. Why: never link to French pages that do not exist.
+- Translated directories derive country counts and 24-item pages from published locale rows. Why: keep country navigation accurate and prevent thousands of cards in initial HTML.

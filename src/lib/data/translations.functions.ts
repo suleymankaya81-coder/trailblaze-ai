@@ -1,6 +1,7 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
+import { collectPages } from "./pagination";
 
 export type DestinationTranslation = {
   name: string; region?: string | null; tagline?: string | null; bestSeason?: string | null;
@@ -16,10 +17,11 @@ const localeSchema = z.enum(["de", "fr"]);
 export const getDestinationTranslation = createServerFn({ method: "GET" })
   .inputValidator((d: unknown) => z.object({ slug: z.string().max(100), locale: localeSchema }).parse(d))
   .handler(async ({ data }): Promise<DestinationTranslation | null> => {
-    const { data: row } = await supabase
+    const { data: row, error } = await supabase
       .from("content_translations").select("fields")
       .eq("entity_type", "destination").eq("entity_id", data.slug).eq("locale", data.locale).eq("status", "published")
       .maybeSingle();
+    if (error) throw error;
     return (row?.fields as DestinationTranslation | undefined) ?? null;
   });
 
@@ -27,9 +29,10 @@ export const getDestinationTranslation = createServerFn({ method: "GET" })
 export const getDestinationLocales = createServerFn({ method: "GET" })
   .inputValidator((d: unknown) => z.object({ slug: z.string().max(100) }).parse(d))
   .handler(async ({ data }): Promise<string[]> => {
-    const { data: rows } = await supabase
+    const { data: rows, error } = await supabase
       .from("content_translations").select("locale")
       .eq("entity_type", "destination").eq("entity_id", data.slug).eq("status", "published");
+    if (error) throw error;
     return (rows ?? []).map((r) => r.locale);
   });
 
@@ -38,13 +41,20 @@ export type TranslatedPlace = { slug: string; name: string; tagline: string | nu
 export const listTranslatedDestinations = createServerFn({ method: "GET" })
   .inputValidator((d: unknown) => z.object({ locale: localeSchema }).parse(d))
   .handler(async ({ data }): Promise<TranslatedPlace[]> => {
-    const { data: rows } = await supabase
-      .from("content_translations").select("entity_id, fields")
-      .eq("entity_type", "destination").eq("locale", data.locale).eq("status", "published");
-    if (!rows?.length) return [];
-    const { data: dests } = await supabase
-      .from("destinations").select("slug, hero_image").eq("status", "published")
-      .in("slug", rows.map((r) => r.entity_id));
+    const rows = await collectPages(async (from, to) => {
+      const { data: page, error } = await supabase.from("content_translations").select("entity_id, fields")
+        .eq("entity_type", "destination").eq("locale", data.locale).eq("status", "published")
+        .order("entity_id").range(from, to);
+      if (error) throw error;
+      return page ?? [];
+    });
+    if (!rows.length) return [];
+    const dests = await collectPages(async (from, to) => {
+      const { data: page, error } = await supabase.from("destinations").select("slug, hero_image")
+        .eq("status", "published").order("slug").range(from, to);
+      if (error) throw error;
+      return page ?? [];
+    });
     const hero = Object.fromEntries((dests ?? []).map((d) => [d.slug, d.hero_image ?? ""]));
     return rows
       .filter((r) => hero[r.entity_id] !== undefined)
