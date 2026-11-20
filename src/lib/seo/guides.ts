@@ -19,6 +19,7 @@ export type GuideDest = {
   permitHeadline: string | null;
   campingScore: number | null;
   bestSeason: string | null;
+  accessType?: string | null;
 };
 
 export const RV_MIN_CAMPING_SCORE = 7;
@@ -35,7 +36,7 @@ export function isNoReservationEligible(d: GuideDest): boolean {
 }
 
 export function isRvEligible(d: GuideDest): boolean {
-  if (isNonRoadDestination(d.slug)) return false;
+  if (isNonRoadDestination(d.slug, d.accessType)) return false;
   return (d.campingScore ?? 0) >= RV_MIN_CAMPING_SCORE && !!d.airportCode && !!d.airportName && d.driveMinutes != null;
 }
 

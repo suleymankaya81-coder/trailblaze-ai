@@ -3,7 +3,7 @@ import { COUNTRY_DIRECTORY, TOTAL_PLACES, countryFlag } from "./countryDirectory
 
 describe("country directory", () => {
   it("lists every published country with real counts", () => {
-    expect(COUNTRY_DIRECTORY.map((c) => c.code).sort()).toEqual(["at", "be", "ca", "ch", "de", "dk", "es", "fi", "fr", "gb", "gr", "ie", "is", "it", "nl", "no", "pt", "se", "us"]);
+    expect(COUNTRY_DIRECTORY.map((c) => c.code).sort()).toEqual(["al", "at", "au", "ba", "be", "bg", "ca", "ch", "cy", "cz", "de", "dk", "ee", "es", "fi", "fr", "gb", "gr", "hr", "hu", "ie", "is", "it", "lt", "lu", "lv", "me", "mk", "mt", "nl", "no", "nz", "pl", "pt", "ro", "rs", "se", "si", "sk", "us"]);
     expect(TOTAL_PLACES).toBe(COUNTRY_DIRECTORY.reduce((s, c) => s + c.places, 0));
     expect(COUNTRY_DIRECTORY.every((c) => c.places > 0 && c.regions > 0)).toBe(true);
   });
