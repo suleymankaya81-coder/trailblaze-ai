@@ -6,6 +6,12 @@ from unittest.mock import patch
 import source_evidence as evidence
 
 class SourceEvidenceTests(unittest.TestCase):
+    def test_new_zealand_reuses_identity_verified_nordic_overviews(self):
+        packet = {'country_code': 'nz', 'evidence_policy': 'dach-wikipedia-overview', 'identity_verified': True}
+        source = {'kind': 'wikipedia', 'url': 'https://en.wikipedia.org/wiki/Huka_Falls'}
+        self.assertTrue(evidence.overview_source(source, packet))
+        self.assertFalse(evidence.overview_source(source, {**packet, 'identity_verified': False}))
+
     def test_belgium_uses_verified_nordic_overview_policy(self):
         packet = {'country_code': 'be', 'evidence_policy': 'dach-wikipedia-overview', 'identity_verified': True}
         source = {'kind': 'wikipedia', 'url': 'https://nl.wikipedia.org/wiki/Zwin'}

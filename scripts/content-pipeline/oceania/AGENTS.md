@@ -1,0 +1,2 @@
+- Oceania production reuses the Nordic fact and translation helpers with isolated caches and explicit NZ/AU identities; database changes are emitted as reviewed SQL for database tools, never dependent on inaccessible privileged keys. Why: resumable production must work on Lovable Cloud without unsafe credentials.
+- Road routes require sourced visitor road access and a nearby route endpoint; island and walking-route candidates remain held without reviewed gateways. Why: an OSRM line to a park centroid does not establish public vehicle access.

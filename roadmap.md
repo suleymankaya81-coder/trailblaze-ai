@@ -1,3 +1,9 @@
+## November 20 New Zealand production
+- [x] Reconciled all 129 candidates against 43 existing EN/DE publications; four additional EN/DE bundles prepared; unsupported arrival claims withheld.
+- [x] Restored 43 existing geography mappings; EN/DE map-marker navigation, 86 park URLs, German phone map and both sitemaps verified.
+- [ ] Publish four newly prepared bundles: licensed Commons image downloads return HTTP 403; no replacement photos or invented routes used.
+- [x] Retained all 129 results in oceania/REPORT-2026-11-20.md; 82 additional candidates remain blocked by source/access/identity/routing evidence.
+
 ## November 19 Australia and New Zealand validation
 - [x] Audit all 1,016 original candidates, merge 10 same-identity duplicates (AU 877/NZ 129), complete 22 sourced general coordinates and 40 NZ regions; retain 8 coordinate and 3 region gaps and scientific/access holds.
 - [ ] EN/DE country map-to-park flow: blocked by zero AU/NZ database records, absent licensed covers, visitor-access evidence and EN/DE page content. Final sixteen browser checks cover both languages, desktop/phone and light/dark: all country pages 404, zero maps or park links; no fake empty maps or publications.
