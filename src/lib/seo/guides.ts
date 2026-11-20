@@ -19,6 +19,7 @@ export type GuideDest = {
   permitHeadline: string | null;
   campingScore: number | null;
   bestSeason: string | null;
+  accessType?: string | null;
 };
 
 export const RV_MIN_CAMPING_SCORE = 7;
