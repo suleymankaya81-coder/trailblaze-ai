@@ -19,7 +19,6 @@ import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as SearchRouteImport } from './routes/search'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as TripGuidesRouteImport } from './routes/trip-guides'
-import { Route as ApiTmpAuImportRouteImport } from './routes/api/tmp-au-import'
 import { Route as CorridorsIndexRouteImport } from './routes/corridors.index'
 import { Route as CorridorsSlugRouteImport } from './routes/corridors.$slug'
 import { Route as DeIndexRouteImport } from './routes/de.index'
@@ -113,11 +112,6 @@ const TermsRoute = TermsRouteImport.update({
 const TripGuidesRoute = TripGuidesRouteImport.update({
   id: '/trip-guides',
   path: '/trip-guides',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ApiTmpAuImportRoute = ApiTmpAuImportRouteImport.update({
-  id: '/api/tmp-au-import',
-  path: '/api/tmp-au-import',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CorridorsIndexRoute = CorridorsIndexRouteImport.update({
@@ -360,7 +354,6 @@ export interface FileRoutesByFullPath {
   '/search': typeof SearchRoute
   '/terms': typeof TermsRoute
   '/trip-guides': typeof TripGuidesRoute
-  '/api/tmp-au-import': typeof ApiTmpAuImportRoute
   '/corridors/$slug': typeof CorridorsSlugRoute
   '/de/about': typeof DeAboutRoute
   '/de/trip-guides': typeof DeTripGuidesRoute
@@ -416,7 +409,6 @@ export interface FileRoutesByTo {
   '/search': typeof SearchRoute
   '/terms': typeof TermsRoute
   '/trip-guides': typeof TripGuidesRoute
-  '/api/tmp-au-import': typeof ApiTmpAuImportRoute
   '/corridors/$slug': typeof CorridorsSlugRoute
   '/de/about': typeof DeAboutRoute
   '/de/trip-guides': typeof DeTripGuidesRoute
@@ -474,7 +466,6 @@ export interface FileRoutesById {
   '/search': typeof SearchRoute
   '/terms': typeof TermsRoute
   '/trip-guides': typeof TripGuidesRoute
-  '/api/tmp-au-import': typeof ApiTmpAuImportRoute
   '/corridors/$slug': typeof CorridorsSlugRoute
   '/de/about': typeof DeAboutRoute
   '/de/trip-guides': typeof DeTripGuidesRoute
@@ -533,7 +524,6 @@ export interface FileRouteTypes {
     | '/search'
     | '/terms'
     | '/trip-guides'
-    | '/api/tmp-au-import'
     | '/corridors/$slug'
     | '/de/about'
     | '/de/trip-guides'
@@ -589,7 +579,6 @@ export interface FileRouteTypes {
     | '/search'
     | '/terms'
     | '/trip-guides'
-    | '/api/tmp-au-import'
     | '/corridors/$slug'
     | '/de/about'
     | '/de/trip-guides'
@@ -646,7 +635,6 @@ export interface FileRouteTypes {
     | '/search'
     | '/terms'
     | '/trip-guides'
-    | '/api/tmp-au-import'
     | '/corridors/$slug'
     | '/de/about'
     | '/de/trip-guides'
@@ -704,7 +692,6 @@ export interface RootRouteChildren {
   SearchRoute: typeof SearchRoute
   TermsRoute: typeof TermsRoute
   TripGuidesRoute: typeof TripGuidesRoute
-  ApiTmpAuImportRoute: typeof ApiTmpAuImportRoute
   CorridorsSlugRoute: typeof CorridorsSlugRoute
   ExperiencesCorridorRoute: typeof ExperiencesCorridorRoute
   ExperiencesHomeRoute: typeof ExperiencesHomeRoute
@@ -802,13 +789,6 @@ declare module '@tanstack/react-router' {
       path: '/trip-guides'
       fullPath: '/trip-guides'
       preLoaderRoute: typeof TripGuidesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/api/tmp-au-import': {
-      id: '/api/tmp-au-import'
-      path: '/api/tmp-au-import'
-      fullPath: '/api/tmp-au-import'
-      preLoaderRoute: typeof ApiTmpAuImportRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/corridors/': {
@@ -1180,7 +1160,6 @@ const rootRouteChildren: RootRouteChildren = {
   SearchRoute: SearchRoute,
   TermsRoute: TermsRoute,
   TripGuidesRoute: TripGuidesRoute,
-  ApiTmpAuImportRoute: ApiTmpAuImportRoute,
   CorridorsSlugRoute: CorridorsSlugRoute,
   ExperiencesCorridorRoute: ExperiencesCorridorRoute,
   ExperiencesHomeRoute: ExperiencesHomeRoute,
