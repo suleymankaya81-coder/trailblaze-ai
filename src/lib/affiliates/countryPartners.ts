@@ -1,7 +1,7 @@
 import { airportRentalsLink, motorhomeRepublicLink } from "./webjet";
 
 /** Country eligibility for vehicle, RV and campground partners plus local price formatting. */
-export type CountryCode = "us" | "ca" | "gb" | "de" | "at" | "ch" | "it" | "es" | "fr" | "pt" | "gr" | "no" | "is" | "se" | "fi" | "dk" | "nl";
+export type CountryCode = "us" | "ca" | "gb" | "de" | "at" | "ch" | "it" | "es" | "fr" | "pt" | "gr" | "no" | "is" | "se" | "fi" | "dk" | "nl" | "nz";
 export type PartnerKind = "rv" | "car" | "campground";
 
 interface CountryPartnerSet { currency: string; numberLocale: string; rv: string[]; car: string[]; campground: string[] }
@@ -24,6 +24,7 @@ export const COUNTRY_PARTNERS: Record<CountryCode, CountryPartnerSet> = {
   fi: { currency: "EUR", numberLocale: "fi-FI", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
   dk: { currency: "DKK", numberLocale: "da-DK", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
   nl: { currency: "EUR", numberLocale: "nl-NL", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
+  nz: { currency: "NZD", numberLocale: "en-NZ", rv: ["motorhome_republic"], car: ["airport_rentals"], campground: [] },
 };
 
 export function normalizeCountry(code?: string | null): CountryCode {
@@ -74,6 +75,7 @@ export function rvLinkFor(country?: string | null, now = Date.now()): string | n
   if (c === "fi") return motorhomeRepublicLink("/finland/", now);
   if (c === "dk") return motorhomeRepublicLink("/denmark/", now);
   if (c === "nl") return motorhomeRepublicLink(undefined, now);
+  if (c === "nz") return motorhomeRepublicLink("/new-zealand-motorhome-rental", now);
   return motorhomeRepublicLink(undefined, now);
 }
 

@@ -23,6 +23,17 @@ for directory in (base.OUT, base.CACHE):
 base.COUNTRIES = {'nz': dict(lang='en', currency='NZD', name='New Zealand', mhr='new-zealand', bounds=(-47.5, -34, 166, 179))}
 base.prepare.EXTRA_COUNTRIES += ('NZ',)
 base.comp.COUNTRY_NAMES['nz'] = 'New Zealand'
+MEDIA_UA = {'User-Agent': 'WildParkRoutes/1.0 (https://wildparkroutes.com; info@minialife.com) python-requests/2.32'}
+
+def download_cover(photo, target):
+    """Identify the client as required by Wikimedia; retain licensed source metadata."""
+    url = photo['url'].replace('https://thumb.wikimedia.org/', 'https://upload.wikimedia.org/')
+    response = requests.get(url, headers=MEDIA_UA, timeout=60)
+    response.raise_for_status()
+    if not response.headers.get('Content-Type', '').startswith('image/'):
+        raise ValueError('cover response is not an image')
+    Path(target).write_bytes(response.content)
+    return Path(target)
 
 def road_evidence(text):
     sentences = re.split(r'(?<=[.!?])\s+|\n', text)
@@ -54,7 +65,9 @@ def identity(row):
 OFFICIAL = {'aoraki-mount-cook-national-park': 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/aoraki-mount-cook-national-park/'}
 
 def official_source(row):
-    url = OFFICIAL.get(row['slug']) or row.get('official_site')
+    matches_path = HERE / 'official-source-matches.json'
+    matches = json.loads(matches_path.read_text()) if matches_path.exists() else {}
+    url = OFFICIAL.get(row['slug']) or matches.get(row['slug']) or row.get('official_site')
     if not url:
         return None
     path = base.CACHE / (row['slug'] + '-official.json')

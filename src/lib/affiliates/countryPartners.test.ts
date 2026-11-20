@@ -3,6 +3,14 @@ import { carLinkFor, countryCurrency, formatCountryPrice, partnersFor, rvLinkFor
 
 const AFTER_BF = Date.UTC(2027, 0, 10);
 describe("country partners", () => {
+  it("New Zealand uses NZD and excludes US campground partners", () => {
+    expect(countryCurrency("nz")).toBe("NZD");
+    expect(partnersFor("nz", "campground")).toEqual([]);
+  });
+  it("New Zealand uses its verified RV page, not the US promotion", () => {
+    expect(rvLinkFor("nz", Date.UTC(2026, 10, 20))).toBe("https://www.motorhomerepublic.com/new-zealand-motorhome-rental?affiliate=minialife");
+    expect(carLinkFor("nz")).toBe("https://www.airportrentals.com/?affiliate=minialife");
+  });
   it("Netherlands uses EUR and excludes US campground partners", () => {
     expect(countryCurrency("nl")).toBe("EUR");
     expect(partnersFor("nl", "campground")).toEqual([]);

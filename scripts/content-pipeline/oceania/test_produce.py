@@ -1,5 +1,7 @@
 import importlib.util
 import unittest
+from unittest.mock import patch, Mock
+import tempfile
 from pathlib import Path
 
 spec = importlib.util.spec_from_file_location('oceania_production', Path(__file__).with_name('produce.py'))
@@ -7,6 +9,15 @@ production = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(production)
 
 class AccessEvidenceTests(unittest.TestCase):
+    def test_media_identifies_client_and_checks_image_response(self):
+        response = Mock(headers={'Content-Type': 'image/jpeg'}, content=b'photo')
+        with tempfile.TemporaryDirectory() as folder, patch.object(production.requests, 'get', return_value=response) as get:
+            target = Path(folder) / 'cover.jpg'
+            production.download_cover({'url': 'https://thumb.wikimedia.org/wikipedia/commons/test.jpg'}, target)
+            self.assertEqual(target.read_bytes(), b'photo')
+            self.assertEqual(get.call_args.args[0], 'https://upload.wikimedia.org/wikipedia/commons/test.jpg')
+            self.assertIn('WildParkRoutes/1.0', get.call_args.kwargs['headers']['User-Agent'])
+            response.raise_for_status.assert_called_once()
     def test_unknown_access_is_not_road_access(self):
         self.assertIsNone(production.road_evidence('The park is a forest reserve in New Zealand.'))
 

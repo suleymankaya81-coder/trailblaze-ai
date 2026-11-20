@@ -1,7 +1,9 @@
 ## November 20 New Zealand production
+- [x] Recovered four licensed photos using Wikimedia's required User-Agent; published four EN/DE destinations (47 total), retained exact publication readback, verified eight new pages, both map-pin flows and 360px phone layout.
 - [x] Reconciled all 129 candidates against 43 existing EN/DE publications; four additional EN/DE bundles prepared; unsupported arrival claims withheld.
 - [x] Restored 43 existing geography mappings; EN/DE map-marker navigation, 86 park URLs, German phone map and both sitemaps verified.
-- [ ] Publish four newly prepared bundles: licensed Commons image downloads return HTTP 403; no replacement photos or invented routes used.
+- [x] Published Aoraki / Mount Cook, Huka Falls, Wharariki Beach and Whirinaki with licensed photos, stored routes, ten approved offer rows each and German versions.
+- [ ] Complete 82 remaining candidates: 25 exact official source matches retained; three additional fact bundles require editorial access/identity review and offline German translation installation; other factual/photo/access holds remain named in the production report.
 - [x] Retained all 129 results in oceania/REPORT-2026-11-20.md; 82 additional candidates remain blocked by source/access/identity/routing evidence.
 
 ## November 19 Australia and New Zealand validation
