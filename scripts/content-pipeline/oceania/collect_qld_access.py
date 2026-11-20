@@ -30,15 +30,23 @@ def fetch(url):
     key.write_text(md)
     return md
 
+SECTION_BAD = re.compile(r'by boat only|accessible only by boat|access(?:ible)? (?:is )?by (?:private )?boat|no vehicle access to the park|four-wheel-drive vehicles only|high clearance four-wheel drive|4WD only|ferry services', re.I)
+DRIVE = re.compile(r'\b(turn (?:off|onto|into|left|right)|drive|travel|follow|take the|sealed road|signposted|conventional vehicles?)\b', re.I)
+
 def quote_for(md):
     i = md.find('## Getting there')
     if i < 0 or 'Page not found' in md[:1500]:
         return None
     section = re.split(r'\n## (?!Getting there)', md[i:])[0]
-    lines = [re.sub(r'\[([^\]]*)\]\([^)]*\)', r'\1', l).strip(' -*#') for l in section.splitlines()]
-    for line in lines:
+    plain = re.sub(r'\[([^\]]*)\]\([^)]*\)', r'\1', section)
+    if SECTION_BAD.search(plain):
+        return None
+    for line in plain.splitlines():
+        line = line.strip(' -*#')
+        if line.startswith('!') or '(PDF' in line:
+            continue
         for s in re.split(r'(?<=[.!?])\s+', line):
-            if len(s) > 40 and re.search(r'\bfrom\b|\bvia\b', s, re.I) and ROADISH.search(s) and (MEASURE.search(s) or re.search(r'turn|follow|signpost', s, re.I)) and not BAD.search(s):
+            if len(s) > 40 and ROADISH.search(s) and (DRIVE.search(s) or MEASURE.search(s)) and not BAD.search(s):
                 return s[:400]
     return None
 
