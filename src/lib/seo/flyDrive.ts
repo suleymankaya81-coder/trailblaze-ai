@@ -16,10 +16,12 @@ export type FlyDriveInput = {
   airportName: string | null;
   driveMinutes: number | null;
   driveMiles: number | null;
+  accessType?: string | null;
 };
 
+const TRANSLIT: Record<string, string> = { "ø": "o", "æ": "ae", "å": "a", "ð": "d", "þ": "th", "ß": "ss", "œ": "oe", "ł": "l", "đ": "d", "ı": "i" };
 const slugify = (s: string) =>
-  s.toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  s.toLowerCase().replace(/[øæåðþßœłđı]/g, (c) => TRANSLIT[c] ?? c).normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
 /** City part of the URL: a parenthetical city wins ("… (Knoxville)"), else the first word. */
 export function airportCity(airportName: string): string {
@@ -32,7 +34,7 @@ export function airportCity(airportName: string): string {
 
 /** Canonical slug, or null when the data needed for a useful page is missing. */
 export function flyDriveSlug(d: FlyDriveInput): string | null {
-  if (isNonRoadDestination(d.slug)) return null;
+  if (isNonRoadDestination(d.slug, d.accessType)) return null;
   if (!d.airportCode || !d.airportName || d.driveMinutes == null) return null;
   return `${airportCity(d.airportName)}-${d.airportCode.toLowerCase()}-${d.slug}`;
 }

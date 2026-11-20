@@ -179,25 +179,25 @@ export async function buildChildSitemap(name: string): Promise<Response | null> 
       ]);
     }
     if (name === "fly-and-drive") {
-      const rows = await fetchAll<{ slug: string; name: string; updated_at: string; hero_image: string | null; nearest_airport_code: string | null; nearest_airport_name: string | null; drive_minutes: number | null; drive_miles: number | null }>(
-        "destinations?select=slug,name,updated_at,hero_image,nearest_airport_code,nearest_airport_name,drive_minutes,drive_miles&status=eq.published&order=slug.asc",
+      const rows = await fetchAll<{ slug: string; name: string; updated_at: string; hero_image: string | null; nearest_airport_code: string | null; nearest_airport_name: string | null; drive_minutes: number | null; drive_miles: number | null; access_type: string | null }>(
+        "destinations?select=slug,name,updated_at,hero_image,nearest_airport_code,nearest_airport_name,drive_minutes,drive_miles,access_type&status=eq.published&order=slug.asc",
       );
       const urls: Url[] = [];
       for (const d of rows) {
-        const slug = flyDriveSlug({ slug: d.slug, name: d.name, airportCode: d.nearest_airport_code, airportName: d.nearest_airport_name, driveMinutes: d.drive_minutes, driveMiles: d.drive_miles });
+        const slug = flyDriveSlug({ slug: d.slug, name: d.name, airportCode: d.nearest_airport_code, airportName: d.nearest_airport_name, driveMinutes: d.drive_minutes, driveMiles: d.drive_miles, accessType: d.access_type });
         if (slug) urls.push({ loc: `${BASE_URL}/fly-and-drive/${slug}`, lastmod: new Date(d.updated_at).toISOString(), images: uniqueImages([d.hero_image]) });
       }
       return urlset(urls);
     }
     if (name === "road-trips") return urlset([{ loc: `${BASE_URL}/road-trips/north-coast-500` }, ...LOOPS.map((l) => ({ loc: `${BASE_URL}/road-trips/${l.slug}` }))]);
     if (name === "no-reservation" || name === "rv-camping") {
-      const rows = await fetchAll<{ slug: string; name: string; updated_at: string; hero_image: string | null; nearest_airport_code: string | null; nearest_airport_name: string | null; drive_minutes: number | null; permit_level: "high" | "moderate" | "none" | null; permit_note: string | null; permit_headline: string | null; camping_score: number | null; best_season: string | null }>(
-        "destinations?select=slug,name,updated_at,hero_image,nearest_airport_code,nearest_airport_name,drive_minutes,permit_level,permit_note,permit_headline,camping_score,best_season&status=eq.published&order=slug.asc",
+      const rows = await fetchAll<{ slug: string; name: string; updated_at: string; hero_image: string | null; nearest_airport_code: string | null; nearest_airport_name: string | null; drive_minutes: number | null; permit_level: "high" | "moderate" | "none" | null; permit_note: string | null; permit_headline: string | null; camping_score: number | null; best_season: string | null; access_type: string | null }>(
+        "destinations?select=slug,name,updated_at,hero_image,nearest_airport_code,nearest_airport_name,drive_minutes,permit_level,permit_note,permit_headline,camping_score,best_season,access_type&status=eq.published&order=slug.asc",
       );
       const ok = name === "no-reservation" ? isNoReservationEligible : isRvEligible;
       return urlset(
         rows
-          .filter((d) => ok({ slug: d.slug, name: d.name, airportCode: d.nearest_airport_code, airportName: d.nearest_airport_name, driveMinutes: d.drive_minutes, permitLevel: d.permit_level, permitNote: d.permit_note, permitHeadline: d.permit_headline, campingScore: d.camping_score, bestSeason: d.best_season }))
+          .filter((d) => ok({ slug: d.slug, name: d.name, airportCode: d.nearest_airport_code, airportName: d.nearest_airport_name, driveMinutes: d.drive_minutes, permitLevel: d.permit_level, permitNote: d.permit_note, permitHeadline: d.permit_headline, campingScore: d.camping_score, bestSeason: d.best_season, accessType: d.access_type }))
           .map((d) => ({ loc: `${BASE_URL}/${name}/${d.slug}`, lastmod: new Date(d.updated_at).toISOString(), images: uniqueImages([d.hero_image]) })),
       );
     }
