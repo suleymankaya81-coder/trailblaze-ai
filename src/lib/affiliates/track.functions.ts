@@ -30,7 +30,8 @@ export const trackAndRedirect = createServerFn({ method: "POST" })
       throw new Error("Offer is not bookable yet");
     }
 
-    const rentalUrl = rentalPartnerUrl(offer.partner);
+    const { data: destination } = await supabase.from("destinations").select("country_code").eq("slug", data.destinationSlug).eq("status", "published").maybeSingle();
+    const rentalUrl = rentalPartnerUrl(offer.partner, destination?.country_code ?? "us");
     if (rentalUrl) return { redirectUrl: rentalUrl };
     if (!isApprovedRental(offer.partner, offer.category)) throw new Error("Rental provider is no longer available");
 

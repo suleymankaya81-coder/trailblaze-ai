@@ -12,10 +12,31 @@ declare global {
 let initialized = false;
 let lastPath: string | null = null;
 
+function analyticsOwner(): Window {
+  try {
+    if (window.parent && window.parent !== window && window.parent.location.origin === window.location.origin) return window.parent;
+  } catch { /* Cross-origin embedding cannot share analytics. */ }
+  return window;
+}
+
+function installAffiliateClicks() {
+  document.addEventListener("click", (e) => {
+    const a = (e.target as Element | null)?.closest?.("a[href]") as HTMLAnchorElement | null;
+    if (!a) return;
+    const hit = classifyPartnerLink(a.href);
+    if (!hit) return;
+    const owner = analyticsOwner();
+    owner.gtag?.("event", "affiliate_click", { ...hit, ...pageContext(owner.location.pathname), link_url: a.href, transport_type: "beacon" });
+  }, { capture: true });
+}
+
 export function initAnalytics(measurementId: string) {
   if (initialized || typeof window === "undefined") return;
   if (!/^G-[A-Z0-9]+$/.test(measurementId)) return;
   initialized = true;
+  installAffiliateClicks();
+  // Embedded Viator documents report to the actual EN/DE page, not separate page views.
+  if (analyticsOwner() !== window) return;
 
   window.dataLayer = window.dataLayer || [];
   // gtag.js requires the native `arguments` object, not an array.
@@ -36,14 +57,6 @@ export function initAnalytics(measurementId: string) {
 
   trackPageView(window.location.pathname + window.location.search);
 
-  // One delegated listener reports every outbound partner click.
-  document.addEventListener("click", (e) => {
-    const a = (e.target as Element | null)?.closest?.("a[href]") as HTMLAnchorElement | null;
-    if (!a) return;
-    const hit = classifyPartnerLink(a.href);
-    if (!hit) return;
-    trackEvent("affiliate_click", { ...hit, ...pageContext(window.location.pathname), link_url: a.href });
-  }, { capture: true });
 }
 
 export function trackEvent(name: string, params: Record<string, unknown>) {
@@ -53,6 +66,7 @@ export function trackEvent(name: string, params: Record<string, unknown>) {
 
 export function trackPageView(path: string) {
   if (typeof window === "undefined" || !window.gtag) return;
+  if (analyticsOwner() !== window) return;
   if (path === lastPath) return;
   lastPath = path;
   window.gtag("event", "page_view", {

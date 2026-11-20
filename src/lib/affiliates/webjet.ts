@@ -6,6 +6,8 @@ export function withWebjetAffiliate(url: string): string {
   try {
     const u = new URL(url);
     if (!/(^|\.)(motorhomerepublic|airportrentals)\.com$/.test(u.hostname)) return url;
+    // The retired /usa/ address redirects to an untagged homepage.
+    if (/(^|\.)motorhomerepublic\.com$/.test(u.hostname) && /^\/usa\/?$/.test(u.pathname)) u.pathname = "/united-states-rv-rental";
     u.searchParams.set("affiliate", WEBJET_AFFILIATE);
     return u.toString();
   } catch {
@@ -13,5 +15,5 @@ export function withWebjetAffiliate(url: string): string {
   }
 }
 export const motorhomeRepublicLink = (path?: string, now = Date.now()) =>
-  withWebjetAffiliate(`https://www.motorhomerepublic.com${path ?? (isMhrBlackFridayLive(now) ? MHR_BF_DEAL_PATH : "/usa/")}`);
+  withWebjetAffiliate(`https://www.motorhomerepublic.com${path ?? (isMhrBlackFridayLive(now) ? MHR_BF_DEAL_PATH : "/united-states-rv-rental")}`);
 export const airportRentalsLink = () => withWebjetAffiliate("https://www.airportrentals.com/");

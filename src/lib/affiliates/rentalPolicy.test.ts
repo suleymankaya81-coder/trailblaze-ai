@@ -18,4 +18,7 @@ describe("exclusive rental partnerships", () => {
     }
     expect(rentalPartnerUrl("motorhome_republic")).toBe(motorhomeRepublicLink());
   });
+  it("preserves the Norwegian country target rather than the US campaign when redirecting", () => {
+    expect(rentalPartnerUrl("motorhome_republic", "no")).toBe("https://www.motorhomerepublic.com/norway/?affiliate=minialife");
+  });
 });

@@ -6,6 +6,18 @@ afterEach(() => {
 });
 
 describe("GA stream configuration", () => {
+  it("reports embedded Viator clicks once against the parent German park, without an iframe page view", async () => {
+    const listeners: Record<string, (event: unknown) => void> = {};
+    const gtag = vi.fn();
+    const parent = { location: { origin: "https://wildparkroutes.com", pathname: "/de/destinations/no/mre-og-romsdal/geirangerfjord" }, gtag };
+    vi.stubGlobal("window", { parent, location: { origin: "https://wildparkroutes.com", pathname: "/experiences/place/geirangerfjord" } });
+    vi.stubGlobal("document", { addEventListener: (name: string, listener: (event: unknown) => void) => { listeners[name] = listener; } });
+    const { initAnalytics } = await import("./analytics");
+    initAnalytics("G-TEST2026");
+    listeners['click']?.({ target: { closest: () => ({ href: "https://www.viator.com/tours/test?pid=P00327298&mcid=42383&medium=api" }) } });
+    expect(gtag).toHaveBeenCalledTimes(1);
+    expect(gtag).toHaveBeenCalledWith("event", "affiliate_click", expect.objectContaining({ partner: "viator", destination_slug: "geirangerfjord", page_type: "destination" }));
+  });
   it("uses the supplied stream once and preserves page views and affiliate clicks", async () => {
     const scripts: { src?: string }[] = [];
     const listeners: Record<string, (event: unknown) => void> = {};

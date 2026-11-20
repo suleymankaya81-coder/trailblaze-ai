@@ -12,4 +12,15 @@ describe("affiliate click tracking", () => {
   it("reads destination slug from path", () => {
     expect(pageContext("/destinations/grand-canyon")).toEqual({ page_type: "destination", destination_slug: "grand-canyon" });
   });
+  it("uses the park slug, not the country, on English and German pages", () => {
+    expect(pageContext("/destinations/us/wyoming/yellowstone")).toEqual({ page_type: "destination", destination_slug: "yellowstone" });
+    expect(pageContext("/de/destinations/no/mre-og-romsdal/geirangerfjord")).toEqual({ page_type: "destination", destination_slug: "geirangerfjord" });
+  });
+  it("does not label eSIM and luggage links as flights", () => {
+    expect(classifyPartnerLink("https://airalo.tpm.lv/Cl55ghx0")).toEqual({ partner: "airalo", category: "esim" });
+    expect(classifyPartnerLink("https://radicalstorage.tpm.lv/cRmtR6gn")).toEqual({ partner: "radicalstorage", category: "luggage" });
+  });
+  it("identifies Campspot separately from gear merchants", () => {
+    expect(classifyPartnerLink("https://www.awin1.com/cread.php?awinmid=22326&awinaffid=3115962")).toEqual({ partner: "campspot", category: "stay" });
+  });
 });

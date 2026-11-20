@@ -11,7 +11,7 @@ export function corridorPartnerLinks(slug: string) {
     car: airportRentalsLink(),
     esim: tpLink("airalo", slug),
     // Country-aware: Canadian places use the Canada search, never the US-only campaign page.
-    motorhome: countryOf(slug) === "us" ? motorhomeRepublicLink() : rvLinkFor(countryOf(slug)) ?? motorhomeRepublicLink("/canada/"),
+    motorhome: countryOf(slug) === "us" ? motorhomeRepublicLink() : rvLinkFor(countryOf(slug)) ?? motorhomeRepublicLink("/"),
     airportRentals: airportRentalsLink(),
   };
 }

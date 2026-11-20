@@ -1,17 +1,22 @@
 import type { AffiliateAdapter } from "./types";
-import { withTrackingParams } from "./util";
+export const VIATOR_PID = "P00327298";
+export const VIATOR_MCID = "42383";
 
-const HOMEPAGE = "https://www.viator.com";
+/** Manual links use the approved direct account; API-issued attribution stays intact. */
+export function withViatorAffiliate(value: string): string {
+  const url = new URL(value);
+  if (url.protocol !== "https:" || !/^(www\.)?viator\.com$/.test(url.hostname)) throw new Error("Invalid Viator booking URL");
+  url.searchParams.delete("aff_id");
+  url.searchParams.delete("sub_id");
+  url.searchParams.set("pid", VIATOR_PID);
+  url.searchParams.set("mcid", VIATOR_MCID);
+  if (url.searchParams.get("medium") !== "api") url.searchParams.set("medium", "link");
+  return url.toString();
+}
 
-// No affiliate program approved yet — aff_id/sub_id param names are
-// placeholders and should be swapped for Viator's real partner-link spec
-// (e.g. pid/mcid) once the program is live.
 export const viatorAdapter: AffiliateAdapter = {
   partner: "viator",
-  buildDeepLink(offer, context) {
-    const base = offer.externalUrl || HOMEPAGE;
-    const affId = process.env.VIATOR_AFF_ID;
-    if (!affId) return base;
-    return withTrackingParams(base, { aff_id: affId, sub_id: context.sessionId });
+  buildDeepLink(offer) {
+    return withViatorAffiliate(offer.externalUrl || "https://www.viator.com");
   },
 };

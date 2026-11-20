@@ -16,4 +16,7 @@ describe("Grand Circle partner attribution", () => {
     expect(verifiedViatorProductUrl(link.replace("P00327298", "OTHER"))).toBeNull();
     expect(verifiedViatorProductUrl(link.replace("www.viator.com", "example.com"))).toBeNull();
   });
+  it("does not send Polish parks to Canada's RV search", () => {
+    expect(corridorPartnerLinks("babia-gora").motorhome).toBe("https://www.motorhomerepublic.com/?affiliate=minialife");
+  });
 });

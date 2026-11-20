@@ -1,3 +1,11 @@
+## November 20 affiliate attribution audit
+- [ ] Verify Viator's reported two referrals and WildParkRoutes domain registration inside the partner account; blocked by unavailable account-report access.
+- [x] Inventory 35,529 offers, every cached Viator product URL and 7,521 ROCKBROS feed links; confirmed identifiers retained.
+- [x] Verify eight live pages, 100 representative outbound URLs and real EN/DE Viator/RV clicks; fix legacy Viator Awin/adaptor, parent-frame analytics, category/park context, US code loss, Netherlands and Canada-fallback errors; 111 tests pass.
+- [x] Deliver Turkish report with exact code changes and preserved partner codes; no purchases, database edits or app publication.
+- [ ] Restore EKTA booking link after Travelpayouts campaign subscription/approval; provider returns 400 "marker is not subscribed to campaign".
+- [ ] Verify provider-blocked final pages and commission recording; Viator/Klook/Go City block automated access, Expedia/Vrbo require human verification, and no purchase was requested. Publish corrected site before live rollout confirmation.
+
 ## November 20 address-change correction
 - [x] Redirect authority-domain root directly to the primary homepage; HTTP/HTTPS and www variants covered by regression tests.
 - [x] Preserve established country mappings and return 410 for unmatched removed parks rather than redirecting to missing or unrelated pages; reported Diawling address covered by response-flow tests. Live rollout awaits publication; preview rejects custom Host headers.

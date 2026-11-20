@@ -64,18 +64,17 @@ export function rvLinkFor(country?: string | null, now = Date.now()): string | n
   if (c === "ch") return motorhomeRepublicLink("/switzerland/", now);
   if (c === "it") return motorhomeRepublicLink("/italy/", now);
   if (c === "es") return motorhomeRepublicLink("/spain/", now);
-  // NOTE: these three path segments are unverified guesses by analogy with /italy/ and /spain/ — confirm against
-  // the live Motorhome Republic site before relying on them; see owner checklist in the fr/pt/gr report.
+  // Live redirects verified November 20, 2026; affiliate=minialife is retained.
   if (c === "fr") return motorhomeRepublicLink("/france/", now);
   if (c === "pt") return motorhomeRepublicLink("/portugal/", now);
   if (c === "gr") return motorhomeRepublicLink("/greece/", now);
-  // Nordic segments follow the same unverified country-name pattern; confirm on the live provider site.
+  // Nordic redirects also retain the affiliate code on the final country page.
   if (c === "no") return motorhomeRepublicLink("/norway/", now);
   if (c === "is") return motorhomeRepublicLink("/iceland/", now);
   if (c === "se") return motorhomeRepublicLink("/sweden/", now);
   if (c === "fi") return motorhomeRepublicLink("/finland/", now);
   if (c === "dk") return motorhomeRepublicLink("/denmark/", now);
-  if (c === "nl") return motorhomeRepublicLink(undefined, now);
+  if (c === "nl") return motorhomeRepublicLink("/netherlands-motorhome-rental", now);
   if (c === "nz") return motorhomeRepublicLink("/new-zealand-motorhome-rental", now);
   if (c === "au") return motorhomeRepublicLink("/australia-campervan-rental", now);
   return motorhomeRepublicLink(undefined, now);
