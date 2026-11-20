@@ -393,3 +393,5 @@
 - [ ] Audit all published European destination data, translations, regions, routes and retained catalog holds.
 - [ ] Check English/German country, region and park links plus authority-domain redirects; repair verified failures.
 - [ ] Exercise country maps and park navigation; record evidence and external blockers in a dated report.
+
+- [ ] French (fr): 10/3,231 places translated (pilot). Next: bulk translation, fr registry/dictionary/phrases, /fr routes, hreflang+sitemap.
