@@ -30,8 +30,20 @@ function installAffiliateClicks() {
   }, { capture: true });
 }
 
+const LIVE_HOSTS = new Set(["wildparkroutes.com", "www.wildparkroutes.com"]);
+const BOT_UA = /bot|crawl|spider|slurp|headless|lighthouse|pagespeed|uptime|monitor|pingdom|playwright|puppeteer|phantom|selenium/i;
+
+/** GA runs only for real visitors on the live domain: no previews, localhost, bots or automation. */
+export function shouldTrack(host: string, nav?: { webdriver?: boolean; userAgent?: string }): boolean {
+  if (!LIVE_HOSTS.has(host.toLowerCase())) return false;
+  if (nav?.webdriver) return false;
+  if (nav?.userAgent && BOT_UA.test(nav.userAgent)) return false;
+  return true;
+}
+
 export function initAnalytics(measurementId: string) {
   if (initialized || typeof window === "undefined") return;
+  if (!shouldTrack(window.location.hostname ?? "", typeof navigator === "undefined" ? undefined : navigator)) return;
   if (!/^G-[A-Z0-9]+$/.test(measurementId)) return;
   initialized = true;
   installAffiliateClicks();

@@ -5,12 +5,25 @@ afterEach(() => {
   vi.resetModules();
 });
 
+describe("GA traffic filter", () => {
+  it("tracks only real browsers on the live domain", async () => {
+    const { shouldTrack } = await import("./analytics");
+    expect(shouldTrack("wildparkroutes.com", { userAgent: "Mozilla/5.0 Chrome/130" })).toBe(true);
+    expect(shouldTrack("www.wildparkroutes.com")).toBe(true);
+    expect(shouldTrack("id-preview--abc.lovable.app")).toBe(false);
+    expect(shouldTrack("localhost")).toBe(false);
+    expect(shouldTrack("wildparkroutes.com", { webdriver: true })).toBe(false);
+    expect(shouldTrack("wildparkroutes.com", { userAgent: "Mozilla/5.0 (compatible; Googlebot/2.1)" })).toBe(false);
+    expect(shouldTrack("wildparkroutes.com", { userAgent: "HeadlessChrome/130" })).toBe(false);
+  });
+});
+
 describe("GA stream configuration", () => {
   it("reports embedded Viator clicks once against the parent German park, without an iframe page view", async () => {
     const listeners: Record<string, (event: unknown) => void> = {};
     const gtag = vi.fn();
     const parent = { location: { origin: "https://wildparkroutes.com", pathname: "/de/destinations/no/mre-og-romsdal/geirangerfjord" }, gtag };
-    vi.stubGlobal("window", { parent, location: { origin: "https://wildparkroutes.com", pathname: "/experiences/place/geirangerfjord" } });
+    vi.stubGlobal("window", { parent, location: { hostname: "wildparkroutes.com", origin: "https://wildparkroutes.com", pathname: "/experiences/place/geirangerfjord" } });
     vi.stubGlobal("document", { addEventListener: (name: string, listener: (event: unknown) => void) => { listeners[name] = listener; } });
     const { initAnalytics } = await import("./analytics");
     initAnalytics("G-TEST2026");
@@ -21,7 +34,7 @@ describe("GA stream configuration", () => {
   it("uses the supplied stream once and preserves page views and affiliate clicks", async () => {
     const scripts: { src?: string }[] = [];
     const listeners: Record<string, (event: unknown) => void> = {};
-    const browser = { location: { pathname: "/", search: "", href: "https://wildparkroutes.com/" }, dataLayer: [] as unknown[] };
+    const browser = { location: { hostname: "wildparkroutes.com", pathname: "/", search: "", href: "https://wildparkroutes.com/" }, dataLayer: [] as unknown[] };
     vi.stubGlobal("window", browser);
     vi.stubGlobal("document", {
       title: "WildParkRoutes",
