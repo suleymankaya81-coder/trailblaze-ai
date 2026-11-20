@@ -11,7 +11,7 @@ export type DestinationTranslation = {
   arrival?: string | null; vehicle?: string | null; goldenHour?: string | null;
 };
 
-const localeSchema = z.enum(["de"]);
+const localeSchema = z.enum(["de", "fr"]);
 
 export const getDestinationTranslation = createServerFn({ method: "GET" })
   .inputValidator((d: unknown) => z.object({ slug: z.string().max(100), locale: localeSchema }).parse(d))

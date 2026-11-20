@@ -4,7 +4,7 @@ import { supabase } from "@/integrations/supabase/client";
 
 /** Destination slugs with a published translation in the given locale. */
 export const getTranslatedDestinationSlugs = createServerFn({ method: "GET" })
-  .inputValidator((input: unknown) => z.object({ locale: z.enum(["de"]) }).parse(input))
+  .inputValidator((input: unknown) => z.object({ locale: z.enum(["de", "fr"]) }).parse(input))
   .handler(async ({ data }): Promise<string[]> => {
     const out: string[] = [];
     for (let from = 0; ; from += 1000) {

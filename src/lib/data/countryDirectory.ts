@@ -52,7 +52,7 @@ const META: Record<string, { flag: string; continent: Continent }> = {
   nz: { flag: "🇳🇿", continent: "oceania" },
 };
 
-export interface CountryEntry { code: string; name: string; nameDe: string; flag: string; continent: Continent; places: number; regions: number }
+export interface CountryEntry { code: string; name: string; nameDe: string; nameFr: string; flag: string; continent: Continent; places: number; regions: number }
 
 function build(): CountryEntry[] {
   const places = new Map<string, number>();
@@ -65,7 +65,7 @@ function build(): CountryEntry[] {
   }
   return Object.entries(COUNTRIES)
     .filter(([code]) => (places.get(code) ?? 0) > 0 && META[code])
-    .map(([code, n]) => ({ code, name: n.name, nameDe: n.nameDe, ...META[code], places: places.get(code) ?? 0, regions: regions.get(code)?.size ?? 0 }))
+    .map(([code, n]) => ({ code, name: n.name, nameDe: n.nameDe, nameFr: n.nameFr, ...META[code], places: places.get(code) ?? 0, regions: regions.get(code)?.size ?? 0 }))
     .sort((a, b) => b.places - a.places);
 }
 
@@ -73,7 +73,7 @@ export const COUNTRY_DIRECTORY: CountryEntry[] = build();
 export const TOTAL_PLACES = COUNTRY_DIRECTORY.reduce((s, c) => s + c.places, 0);
 export const countryEntry = (code?: string | null) => COUNTRY_DIRECTORY.find((c) => c.code === code?.toLowerCase());
 export const countryFlag = (code?: string | null) => countryEntry(code)?.flag ?? "";
-export const countryLabel = (code: string | null | undefined, locale: "en" | "de" = "en") => {
+export const countryLabel = (code: string | null | undefined, locale: "en" | "de" | "fr" = "en") => {
   const e = countryEntry(code);
-  return e ? (locale === "de" ? e.nameDe : e.name) : "";
+  return e ? (locale === "de" ? e.nameDe : locale === "fr" ? e.nameFr : e.name) : "";
 };

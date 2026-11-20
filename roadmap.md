@@ -394,4 +394,4 @@
 - [ ] Check English/German country, region and park links plus authority-domain redirects; repair verified failures.
 - [ ] Exercise country maps and park navigation; record evidence and external blockers in a dated report.
 
-- [ ] French (fr): 10/3,231 places translated (pilot). Next: bulk translation, fr registry/dictionary/phrases, /fr routes, hreflang+sitemap.
+- [ ] French (fr): /fr home, destinations, country/region/place pages + FR labels live; bulk place translation running (resumable: translate-content.py --locale fr --all). Next: French sitemap children, then road trips/guides in French.

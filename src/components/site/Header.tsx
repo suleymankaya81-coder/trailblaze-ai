@@ -9,12 +9,12 @@ import { COUNTRY_DIRECTORY, CONTINENTS, countryLabel } from "@/lib/data/countryD
 import { countryPath } from "@/lib/routes/paths";
 
 const NAV = [
-  { to: "/destinations", de: "/de/destinations", key: "nav.destinations" },
-  { to: "/road-trips", de: "/de/road-trips", key: "nav.roadTrips" },
-  { to: "/trip-guides", de: null, key: "nav.tripGuides" },
-  { to: "/gear", de: null, key: "nav.gear" },
-  { to: "/about", de: null, key: "nav.about" },
-] as const satisfies readonly { to: string; de: string | null; key: DictKey }[];
+  { to: "/destinations", de: "/de/destinations", fr: "/fr/destinations", key: "nav.destinations" },
+  { to: "/road-trips", de: "/de/road-trips", fr: null, key: "nav.roadTrips" },
+  { to: "/trip-guides", de: null, fr: null, key: "nav.tripGuides" },
+  { to: "/gear", de: null, fr: null, key: "nav.gear" },
+  { to: "/about", de: null, fr: null, key: "nav.about" },
+] as const satisfies readonly { to: string; de: string | null; fr: string | null; key: DictKey }[];
 
 const active = { className: "text-foreground underline decoration-forest decoration-2 underline-offset-8" };
 
@@ -22,8 +22,8 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const locale = useLocale();
   // German visitors see German-available sections first; English-only sections stay reachable.
-  const items = NAV.map((n) => ({ to: (locale === "de" && n.de) || n.to, label: t(locale, n.key) }));
-  const home = locale === "de" ? "/de" : "/";
+  const items = NAV.map((n) => ({ to: (locale === "de" && n.de) || (locale === "fr" && n.fr) || n.to, label: t(locale, n.key) }));
+  const home = locale === "en" ? "/" : `/${locale}`;
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur">
       <div className="container-page flex h-20 items-center justify-between gap-6 md:h-24">
@@ -43,7 +43,7 @@ export function Header() {
                       <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground"><T>{ct.label}</T></p>
                       <ul className="mt-2 space-y-1">
                         {COUNTRY_DIRECTORY.filter((c) => c.continent === ct.key).map((c) => (
-                          <li key={c.code}><Link to={countryPath(c.code, locale === "de" ? "de" : "en")} className="flex items-center gap-2 rounded-lg px-2 py-1.5 text-sm text-foreground hover:bg-muted"><span aria-hidden="true">{c.flag}</span>{countryLabel(c.code, locale === "de" ? "de" : "en")}<span className="ml-auto text-xs text-muted-foreground">{c.places}</span></Link></li>
+                          <li key={c.code}><Link to={countryPath(c.code, locale)} className="flex items-center gap-2 rounded-lg px-2 py-1.5 text-sm text-foreground hover:bg-muted"><span aria-hidden="true">{c.flag}</span>{countryLabel(c.code, locale)}<span className="ml-auto text-xs text-muted-foreground">{c.places}</span></Link></li>
                         ))}
                       </ul>
                     </div>
@@ -87,8 +87,8 @@ export function Header() {
             ))}
             <div className="flex flex-wrap gap-2 py-3">
               {COUNTRY_DIRECTORY.map((c) => (
-                <Link key={c.code} to={countryPath(c.code, locale === "de" ? "de" : "en")} onClick={() => setOpen(false)} className="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-border px-3 text-sm text-foreground">
-                  <span aria-hidden="true">{c.flag}</span>{countryLabel(c.code, locale === "de" ? "de" : "en")}
+                <Link key={c.code} to={countryPath(c.code, locale)} onClick={() => setOpen(false)} className="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-border px-3 text-sm text-foreground">
+                  <span aria-hidden="true">{c.flag}</span>{countryLabel(c.code, locale)}
                 </Link>
               ))}
             </div>

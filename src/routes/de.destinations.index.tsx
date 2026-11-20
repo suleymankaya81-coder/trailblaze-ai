@@ -24,7 +24,7 @@ export const Route = createFileRoute("/de/destinations/")({
       { name: "twitter:card", content: "summary_large_image" },
       ...(loaderData?.[0]?.heroImage?.startsWith("https://") ? [{ property: "og:image", content: loaderData[0].heroImage }, { name: "twitter:image", content: loaderData[0].heroImage }] : []),
     ],
-    links: [{ rel: "canonical", href: `${SITE_ORIGIN}/de/destinations` }, ...hreflangLinks("/destinations", ["en", "de"])],
+    links: [{ rel: "canonical", href: `${SITE_ORIGIN}/de/destinations` }, ...hreflangLinks("/destinations", ["en", "de", "fr"])],
     scripts: [breadcrumbScript(crumbs)],
   }),
   component: Page,

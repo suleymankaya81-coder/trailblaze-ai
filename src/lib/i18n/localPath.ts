@@ -6,8 +6,10 @@ import { canonicalPath } from "@/lib/routes/paths";
 const SLUG_FAMILIES = ["destinations", "trip-builder", "road-trips", "corridors", "fly-and-drive", "no-reservation", "rv-camping"];
 
 /** True when an English path has a version in another language (search guides and others do not). */
-export function hasTranslatedPage(path: string): boolean {
+export function hasTranslatedPage(path: string, locale: Locale = "de"): boolean {
   const clean = path.split(/[?#]/)[0].replace(/\/$/, "") || "/";
+  // French so far covers the homepage and the destination directory (countries, regions, places).
+  if (locale === "fr" && clean !== "/" && clean !== "/destinations" && !clean.startsWith("/destinations/")) return false;
   if ((STATIC_TRANSLATED_PATHS as readonly string[]).includes(clean)) return true;
   const parts = clean.split("/").filter(Boolean);
   // Country, region and destination pages (/destinations/us[/utah[/zion]]) all have German versions; guides do not.
@@ -25,7 +27,7 @@ export function localTarget(rawPath: string, locale: Locale): string | null {
   const path = rawPath.includes("$") ? rawPath : canonicalPath(rawPath);
   const moved = path !== rawPath ? path : null;
   if (locale === "en" || !path.startsWith("/") || path.startsWith(`/${locale}/`) || path === `/${locale}`) return moved;
-  if (path.includes("$") || !hasTranslatedPage(path)) return moved;
+  if (path.includes("$") || !hasTranslatedPage(path, locale)) return moved;
   const [base, rest = ""] = path.split(/(?=[?#])/);
   return localizePath(base, locale) + rest;
 }

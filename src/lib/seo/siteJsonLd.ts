@@ -7,7 +7,7 @@ export function siteJsonLd() {
     "@context": "https://schema.org",
     "@graph": [
       { "@type": "Organization", "@id": org, name: BRAND_NAME, url: `${SITE_ORIGIN}/`, logo: `${SITE_ORIGIN}/favicon.png`, email: CONTACT_EMAIL },
-      { "@type": "WebSite", "@id": `${SITE_ORIGIN}/#website`, name: BRAND_NAME, url: `${SITE_ORIGIN}/`, publisher: { "@id": org }, inLanguage: ["en", "de"],
+      { "@type": "WebSite", "@id": `${SITE_ORIGIN}/#website`, name: BRAND_NAME, url: `${SITE_ORIGIN}/`, publisher: { "@id": org }, inLanguage: ["en", "de", "fr"],
         potentialAction: { "@type": "SearchAction", target: `${SITE_ORIGIN}/search?q={search_term_string}`, "query-input": "required name=search_term_string" } },
     ],
   };

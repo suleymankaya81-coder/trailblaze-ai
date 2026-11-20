@@ -5,6 +5,7 @@ export const DEFAULT_LOCALE = "en" as const;
 export const LOCALES = [
   { code: "en", label: "English", short: "EN", hreflang: "en", prefix: "" },
   { code: "de", label: "Deutsch", short: "DE", hreflang: "de", prefix: "/de" },
+  { code: "fr", label: "Français", short: "FR", hreflang: "fr", prefix: "/fr" },
 ] as const;
 
 export type Locale = (typeof LOCALES)[number]["code"];

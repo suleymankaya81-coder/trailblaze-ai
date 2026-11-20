@@ -1,3 +1,5 @@
+import { directoryLocales } from "@/lib/i18n/geoLocales";
+import type { Locale } from "@/lib/i18n/locales";
 import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 import { SITE_ORIGIN } from "@/config/site";
 import { GeoDirectory } from "@/components/destination/GeoDirectory";
@@ -10,7 +12,7 @@ import { hreflangLinks } from "@/lib/seo/hreflang";
 
 // /de/destinations/{country}/{region}: German state directory (only places with a published German page).
 export const Route = createFileRoute("/de/destinations/$slug/$region/")({
-  loader: async ({ params }): Promise<{ country: string; region: string; name: string; places: GeoPlace[] }> => {
+  loader: async ({ params }): Promise<{ country: string; region: string; name: string; places: GeoPlace[]; locales: Locale[] }> => {
     if (!isCountry(params.slug)) throw notFound();
     const [data, translated] = await Promise.all([
       getRegionPlaces({ data: { country: params.slug, region: params.region } }),
@@ -19,17 +21,17 @@ export const Route = createFileRoute("/de/destinations/$slug/$region/")({
     if (!data) throw notFound();
     const places = data.places.filter((p) => translated.includes(p.slug));
     if (!places.length) throw redirect({ href: regionPath(params.slug, params.region), statusCode: 302 });
-    return { country: params.slug, region: params.region, name: data.name, places };
+    return { country: params.slug, region: params.region, name: data.name, places, locales: await directoryLocales(data.places.map((p) => p.slug)) };
   },
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Nicht verfügbar — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
-    const { name, places, country, region } = loaderData;
+    const { name, places, country, region, locales } = loaderData;
     const title = `${name}: Nationalparks & Outdoor-Reisen – ${places.length} Reiseziele`;
     const description = `Roadtrip- und Parkführer für ${name} (${COUNTRIES[country].nameDe}): ${places.slice(0, 4).map((p) => p.name).join(", ")} und mehr.`.slice(0, 160);
     const url = `${SITE_ORIGIN}${regionPath(country, region, "de")}`;
     return {
       meta: [...deMeta(title, description, url), { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }],
-      links: [{ rel: "canonical", href: url }, ...hreflangLinks(regionPath(country, region), ["en", "de"])],
+      links: [{ rel: "canonical", href: url }, ...hreflangLinks(regionPath(country, region), locales)],
       scripts: [breadcrumbScript(deGeoCrumbs(country, { slug: region, name }))],
     };
   },

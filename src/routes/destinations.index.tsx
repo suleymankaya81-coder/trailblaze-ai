@@ -58,7 +58,7 @@ export const Route = createFileRoute("/destinations/")({
         ...(isFiltered ? [{ name: "robots", content: "noindex, follow" }] : []),
         { property: "og:url", content: `${SITE_ORIGIN}/destinations` },
       ],
-      links: [{ rel: "canonical", href: `${SITE_ORIGIN}/destinations` }, ...(isFiltered ? [] : hreflangLinks("/destinations", ["en", "de"]))],
+      links: [{ rel: "canonical", href: `${SITE_ORIGIN}/destinations` }, ...(isFiltered ? [] : hreflangLinks("/destinations", ["en", "de", "fr"]))],
       scripts: [breadcrumbScript([HOME, DESTINATIONS])],
     };
   },

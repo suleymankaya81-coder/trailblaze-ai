@@ -1,3 +1,5 @@
+import { directoryLocales } from "@/lib/i18n/geoLocales";
+import type { Locale } from "@/lib/i18n/locales";
 import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 import { SITE_ORIGIN } from "@/config/site";
 import { GeoDirectory } from "@/components/destination/GeoDirectory";
@@ -13,7 +15,7 @@ import { translatedCountryPlaces } from "@/lib/routes/translatedCountry";
 
 // /de/destinations/{country}; older /de/destinations/{slug} addresses 301 to the nested page.
 export const Route = createFileRoute("/de/destinations/$slug/")({
-  loader: async ({ params }): Promise<{ country: string; regions: GeoRegion[]; places: CountryMapPlace[] }> => {
+  loader: async ({ params }): Promise<{ country: string; regions: GeoRegion[]; places: CountryMapPlace[]; locales: Locale[] }> => {
     if (!isCountry(params.slug)) {
       const geo = await getDestinationGeo({ data: { slug: params.slug } }).catch(() => null);
       if (geo) throw redirect({ href: `/de/destinations/${geo.country}/${geo.region}/${params.slug}`, statusCode: 301 });
@@ -30,7 +32,7 @@ export const Route = createFileRoute("/de/destinations/$slug/")({
     const availableRegions = regions.map(region => ({
       ...region, count: places.filter(place => place.region === region.slug).length,
     })).filter(region => region.count > 0);
-    return { country: params.slug, regions: availableRegions, places };
+    return { country: params.slug, regions: availableRegions, places, locales: await directoryLocales(allPlaces.map((p) => p.slug)) };
   },
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Nicht verfügbar — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
@@ -46,7 +48,7 @@ export const Route = createFileRoute("/de/destinations/$slug/")({
           { property: "og:image", content: loaderData.regions[0].heroImage },
           { name: "twitter:image", content: loaderData.regions[0].heroImage },
         ] : [])],
-      links: [{ rel: "canonical", href: url }, ...hreflangLinks(countryPath(loaderData.country), ["en", "de"])],
+      links: [{ rel: "canonical", href: url }, ...hreflangLinks(countryPath(loaderData.country), loaderData.locales)],
       scripts: [breadcrumbScript(deGeoCrumbs(loaderData.country))],
     };
   },

@@ -1,3 +1,4 @@
+import { useLocale } from "@/lib/i18n";
 import { SITE_ORIGIN } from "@/config/site";
 import { T, useTp } from "@/lib/i18n";
 import { hreflangLinks } from "@/lib/seo/hreflang";
@@ -56,7 +57,7 @@ export const Route = createFileRoute("/")({
       { property: "og:locale:alternate", content: "de_DE" },
       ...homeShareMeta(loaderData?.homeDestinations ?? []),
     ],
-    links: [{ rel: "canonical", href: `${SITE_ORIGIN}/` }, ...hreflangLinks("/", ["en", "de"])],
+    links: [{ rel: "canonical", href: `${SITE_ORIGIN}/` }, ...hreflangLinks("/", ["en", "de", "fr"])],
   }),
   component: HomePage,
 });
@@ -84,6 +85,7 @@ function HomePage() {
 
 /** Shared homepage body; German pages pass the slugs that have a German place page. */
 export function HomePageView({ homeDestinations, localSlugs }: { homeDestinations: HomepageDestination[]; localSlugs?: Set<string> }) {
+  const locale = useLocale();
   const tp = useTp();
   const covers: Record<string, string> = {};
   for (const d of homeDestinations) if (d.countryCode && !covers[d.countryCode] && d.heroImage) covers[d.countryCode] = d.heroImage;
@@ -109,9 +111,9 @@ export function HomePageView({ homeDestinations, localSlugs }: { homeDestination
             <SwipeRow className="md:grid-cols-4 md:grid-rows-2">
               {featured.map((d, i) => (
                 <div key={d.slug} className={i === 0 ? "md:col-span-2 md:row-span-2" : ""}>
-                  <PlaceCard to={localSlugs?.has(d.slug) ? "/de/destinations/$slug" : "/destinations/$slug"} params={{ slug: d.slug }} image={d.heroImage} alt={d.name} large={i === 0}
+                  <PlaceCard to={localSlugs?.has(d.slug) ? `/${locale}/destinations/$slug` as "/de/destinations/$slug" : "/destinations/$slug"} params={{ slug: d.slug }} image={d.heroImage} alt={d.name} large={i === 0}
                     badges={[d.bestSeason ? tp(`Best: ${d.bestSeason}`) : null, d.tripDurationDays].filter((x): x is string => !!x)}
-                    title={d.name} info={`${countryFlag(d.countryCode)} ${[d.region, countryLabel(d.countryCode, localSlugs ? "de" : "en")].filter(Boolean).join(", ")}`.trim()} action="See the plan" />
+                    title={d.name} info={`${countryFlag(d.countryCode)} ${[d.region, countryLabel(d.countryCode, locale)].filter(Boolean).join(", ")}`.trim()} action="See the plan" />
                 </div>
               ))}
             </SwipeRow>

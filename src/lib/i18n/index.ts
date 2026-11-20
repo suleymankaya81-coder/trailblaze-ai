@@ -1,12 +1,13 @@
 import { useRouterState } from "@tanstack/react-router";
 import { en, type DictKey } from "./dict/en";
 import { de } from "./dict/de";
+import { fr } from "./dict/fr";
 import { localeFromPath, type Locale } from "./locales";
 
 export * from "./locales";
 export type { DictKey } from "./dict/en";
 
-const DICTS: Record<Locale, Partial<Record<DictKey, string>>> = { en, de };
+const DICTS: Record<Locale, Partial<Record<DictKey, string>>> = { en, de, fr };
 
 /** SSR-safe lookup; usable in head(). Falls back to English for missing keys. */
 export function t(locale: Locale, key: DictKey): string {
@@ -23,9 +24,10 @@ export function useT() {
 }
 
 import { DE_PATTERNS, DE_PHRASES } from "./phrases.de";
+import { FR_PATTERNS, FR_PHRASES } from "./phrases.fr";
 import { createElement, Fragment, type ReactNode } from "react";
-const PATTERNS: Partial<Record<Locale, [RegExp, string][]>> = { de: DE_PATTERNS };
-const PHRASES: Partial<Record<Locale, Record<string, string>>> = { de: DE_PHRASES };
+const PATTERNS: Partial<Record<Locale, [RegExp, string][]>> = { de: DE_PATTERNS, fr: FR_PATTERNS };
+const PHRASES: Partial<Record<Locale, Record<string, string>>> = { de: DE_PHRASES, fr: FR_PHRASES };
 
 /** Translate a fixed English phrase; falls back to the English text. */
 export function tp(locale: Locale, text: string): string {

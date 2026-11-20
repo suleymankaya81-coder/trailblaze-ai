@@ -28,7 +28,7 @@ export const Route = createFileRoute("/de/")({
       { property: "og:locale:alternate", content: "en_US" },
       ...homeShareMeta(loaderData?.homeDestinations ?? []),
     ],
-    links: [{ rel: "canonical", href: `${SITE_ORIGIN}/de` }, ...hreflangLinks("/", ["en", "de"])],
+    links: [{ rel: "canonical", href: `${SITE_ORIGIN}/de` }, ...hreflangLinks("/", ["en", "de", "fr"])],
   }),
   component: Page,
 });

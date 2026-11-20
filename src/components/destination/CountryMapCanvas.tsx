@@ -46,11 +46,11 @@ export default function CountryMapCanvas({ places, country, locale }: { places: 
       const content = document.createElement("div"); content.className = "flex flex-col gap-2 text-foreground";
       const title = document.createElement("strong"); title.textContent = place.name;
       const link = document.createElement("a"); link.href = links.destination;
-      link.textContent = locale === "de" ? "Reiseziel ansehen →" : "View destination →";
+      link.textContent = locale === "de" ? "Reiseziel ansehen →" : locale === "fr" ? "Voir la destination →" : "View destination →";
       content.append(title, link);
       if (links.maps) {
         const maps = document.createElement("a"); maps.href = links.maps; maps.target = "_blank"; maps.rel = "noopener noreferrer";
-        maps.textContent = locale === "de" ? "In Google Maps öffnen" : "Open in Google Maps"; content.append(maps);
+        maps.textContent = locale === "de" ? "In Google Maps öffnen" : locale === "fr" ? "Ouvrir dans Google Maps" : "Open in Google Maps"; content.append(maps);
       }
       new maplibre.Marker({ element: marker }).setLngLat([place.lng, place.lat])
         .setPopup(new maplibre.Popup({ offset: 12, className: "[&_.maplibregl-popup-content]:bg-card [&_.maplibregl-popup-content]:text-card-foreground" }).setDOMContent(content)).addTo(map);
@@ -61,8 +61,8 @@ export default function CountryMapCanvas({ places, country, locale }: { places: 
   return <div className="relative h-[420px] w-full bg-muted md:h-[540px]" data-country-map>
     <div ref={container} className="h-full w-full" />
     {failed && <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-background/95" role="status">
-      <p>{locale === "de" ? "Karte nicht verfügbar" : "Map unavailable"}</p>
-      <Button variant="outline" onClick={() => setAttempt(a => a + 1)}><RefreshCw />{locale === "de" ? "Erneut versuchen" : "Try again"}</Button>
+      <p>{locale === "de" ? "Karte nicht verfügbar" : locale === "fr" ? "Carte indisponible" : "Map unavailable"}</p>
+      <Button variant="outline" onClick={() => setAttempt(a => a + 1)}><RefreshCw />{locale === "de" ? "Erneut versuchen" : locale === "fr" ? "Réessayer" : "Try again"}</Button>
     </div>}
   </div>;
 }

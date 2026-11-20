@@ -7,7 +7,7 @@ import { countryPath } from "@/lib/routes/paths";
 
 /** "Explore by country" band: continent tabs and photo cards for each published country. */
 export function HomeCountries({ covers }: { covers: Record<string, string> }) {
-  const locale = useLocale() === "de" ? "de" : "en";
+  const locale = useLocale();
   const continents = CONTINENTS.filter((c) => COUNTRY_DIRECTORY.some((d) => d.continent === c.key));
   const [tab, setTab] = useState<Continent>(continents[0]?.key ?? "europe");
   const [showAll, setShowAll] = useState(false);
