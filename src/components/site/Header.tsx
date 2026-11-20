@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 import { Wordmark } from "@/components/site/Wordmark";
 import { useLocale, t, type DictKey } from "@/lib/i18n";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { AnnouncementBar } from "./AnnouncementBar";
 import { COUNTRY_DIRECTORY, CONTINENTS, countryLabel } from "@/lib/data/countryDirectory";
 import { countryPath } from "@/lib/routes/paths";
 
@@ -25,6 +26,8 @@ export function Header() {
   const items = NAV.map((n) => ({ to: (locale === "de" && n.de) || (locale === "fr" && n.fr) || n.to, label: t(locale, n.key) }));
   const home = locale === "en" ? "/" : `/${locale}`;
   return (
+    <>
+    <AnnouncementBar />
     <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur">
       <div className="container-page flex h-20 items-center justify-between gap-2 md:h-24 md:gap-6">
         <Link to={home} className="flex items-center text-foreground" aria-label="WildParkRoutes home">
@@ -96,5 +99,6 @@ export function Header() {
         </nav>
       )}
     </header>
+    </>
   );
 }

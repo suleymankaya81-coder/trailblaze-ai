@@ -1,7 +1,12 @@
 import generated from "./phrases.fr.generated.json";
 // French wording for fixed English page text, keyed by the exact English phrase.
 // Missing phrases fall back to English; generated once, never per visit.
-export const FR_PHRASES: Record<string, string> = { ...(generated as Record<string, string>), FR: "FR", EN: "EN", DE: "DE" };
+export const FR_PHRASES: Record<string, string> = {
+  ...(generated as Record<string, string>),
+  FR: "FR", EN: "EN", DE: "DE",
+  "Black Friday: Cruise America & Cruise Canada motorhomes up to 35% off — ends 2 Dec.": "Black Friday : camping-cars Cruise America & Cruise Canada jusqu'à -35 % — se termine le 2 déc.",
+  "See the deal": "Voir l'offre",
+};
 
 export const FR_PATTERNS: [RegExp, string][] = [
   [new RegExp("^(\\d+) countries \\u00B7 (\\d+)\\+ wild places$", ""), "$1 pays · plus de $2 lieux sauvages"],

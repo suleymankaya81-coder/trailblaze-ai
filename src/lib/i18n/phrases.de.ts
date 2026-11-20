@@ -10,6 +10,8 @@ export const DE_PHRASES: Record<string, string> = {
   "Browse by country": "Nach Land entdecken",
   "Show all countries": "Alle Länder anzeigen",
   "Show fewer countries": "Weniger Länder anzeigen",
+  "Black Friday: Cruise America & Cruise Canada motorhomes up to 35% off — ends 2 Dec.": "Black Friday: Wohnmobile von Cruise America & Cruise Canada bis zu 35 % günstiger — endet am 2. Dez.",
+  "See the deal": "Angebot ansehen",
   "All 40 countries": "Alle 40 Länder",
   "Places from three countries": "Orte aus drei Ländern",
   "Explore by country": "Nach Land entdecken",
