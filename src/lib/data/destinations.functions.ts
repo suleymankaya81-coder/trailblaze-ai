@@ -338,6 +338,9 @@ export const getHomepageDestinations = createServerFn({ method: "GET" }).handler
     for (let i = 0; picked.length < 16 && queues.some((q) => q.length > i); i++) {
       for (const q of queues) if (q[i] && picked.length < 16) picked.push(q[i]);
     }
+    // Every country also needs one cover photo for the homepage country cards.
+    const pickedCountries = new Set(picked.map((d) => d.country_code ?? "us"));
+    for (const q of queues) if (q[0] && !pickedCountries.has(q[0].country_code ?? "us")) picked.push(q[0]);
 
     return picked.map((d) => ({
       id: d.id,

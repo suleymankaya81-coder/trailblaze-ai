@@ -10,7 +10,9 @@ export function HomeCountries({ covers }: { covers: Record<string, string> }) {
   const locale = useLocale() === "de" ? "de" : "en";
   const continents = CONTINENTS.filter((c) => COUNTRY_DIRECTORY.some((d) => d.continent === c.key));
   const [tab, setTab] = useState<Continent>(continents[0]?.key ?? "europe");
-  const list = COUNTRY_DIRECTORY.filter((c) => c.continent === tab);
+  const [showAll, setShowAll] = useState(false);
+  const all = COUNTRY_DIRECTORY.filter((c) => c.continent === tab);
+  const list = showAll ? all : all.slice(0, 8);
 
   return (
     <section id="countries" className="section-y border-b border-border bg-card">
@@ -18,7 +20,7 @@ export function HomeCountries({ covers }: { covers: Record<string, string> }) {
         <SectionHead kicker="Explore by country" title="Pick a country, then a region" action={<SectionLink to="/destinations"><T>All destinations</T></SectionLink>} />
         <div role="tablist" aria-label="Continents" className="-mt-2 mb-6 flex gap-2">
           {continents.map((c) => (
-            <button key={c.key} role="tab" type="button" aria-selected={tab === c.key} onClick={() => setTab(c.key)}
+            <button key={c.key} role="tab" type="button" aria-selected={tab === c.key} onClick={() => { setTab(c.key); setShowAll(false); }}
               className={"min-h-11 rounded-full px-5 text-sm font-semibold transition " + (tab === c.key ? "bg-primary text-primary-foreground" : "border border-border bg-background text-foreground hover:border-primary")}>
               <T>{c.label}</T> <span className="opacity-70">{COUNTRY_DIRECTORY.filter((d) => d.continent === c.key).length}</span>
             </button>
@@ -39,6 +41,14 @@ export function HomeCountries({ covers }: { covers: Record<string, string> }) {
             </li>
           ))}
         </ul>
+        {all.length > 8 && (
+          <div className="mt-6 flex justify-center">
+            <button type="button" onClick={() => setShowAll((v) => !v)} aria-expanded={showAll}
+              className="min-h-11 rounded-full border border-border bg-background px-6 text-sm font-semibold text-foreground transition hover:border-primary">
+              {showAll ? <T>Show fewer countries</T> : <><T>Show all countries</T> (+{all.length - 8})</>}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

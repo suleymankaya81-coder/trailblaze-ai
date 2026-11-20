@@ -93,8 +93,8 @@ export function HomePageView({ homeDestinations, localSlugs }: { homeDestination
     <div className="bg-background">
       <Header />
       <HomeHero scenes={heroPick.map((d) => ({ image: d.heroImage, name: d.name, countryCode: d.countryCode ?? "us" }))} />
-      <HomeCountries covers={covers} />
       <StartHere parkImage={homeDestinations[0]?.heroImage} />
+      <HomeCountries covers={covers} />
 
       {featured.length > 0 && (
         <section id="destinations" className="section-y border-t border-border">

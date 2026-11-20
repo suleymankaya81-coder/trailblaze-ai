@@ -41,11 +41,12 @@ export function HomeHero({ scenes = [] }: { scenes?: HeroScene[] }) {
           </form>
           <p className="mt-7 text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground"><T>Browse by country</T></p>
           <ul className="mt-3 flex flex-wrap gap-2">
-            {COUNTRY_DIRECTORY.map((c) => <li key={c.code}>
+            {COUNTRY_DIRECTORY.slice(0, 8).map((c) => <li key={c.code}>
               <Link to={countryPath(c.code, locale)} className="inline-flex min-h-10 items-center gap-2 rounded-full border border-border bg-card px-3 text-sm font-medium text-foreground transition hover:border-primary">
                 <span aria-hidden="true">{c.flag}</span>{countryLabel(c.code, locale)}<span className="text-xs text-muted-foreground">{c.places}</span>
               </Link>
             </li>)}
+            <li><a href="#countries" className="inline-flex min-h-10 items-center gap-1 rounded-full px-3 text-sm font-semibold text-primary underline-offset-4 hover:underline"><T>{`All ${countries} countries`}</T> <ArrowRight aria-hidden="true" className="h-3.5 w-3.5" /></a></li>
           </ul>
         </div>
         <div className="home-collage-scenes" aria-label={tp("Places from three countries")}>
