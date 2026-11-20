@@ -1,3 +1,8 @@
+## November 20 WildParkRoutes search appearance and authority
+- [x] Optimize EN/DE homepage and destination-directory metadata and verify four rendered heads and a credited 1200×630 matching share photo; 53 tests and preview build pass. New tags await next publication.
+- [x] Validate all 245 live sitemap children (16,584 entries, 12,907 unique URLs; correct origin) and submit sitemap.xml to the verified WildParkRoutes property; accepted, zero errors/warnings; homepage indexed.
+- [x] Verify 52 authority-domain redirects and audit both backlink profiles; retain report and link-update template in scripts/audits/wildparkroutes-seo-2026-11-20.md. External source-link updates/Change of Address completion need site-owner action; no disavow or ranking guarantee.
+
 ## November 20 affiliate attribution audit
 - [ ] Verify Viator's reported two referrals and WildParkRoutes domain registration inside the partner account; blocked by unavailable account-report access.
 - [x] Inventory 35,529 offers, every cached Viator product URL and 7,521 ROCKBROS feed links; confirmed identifiers retained.

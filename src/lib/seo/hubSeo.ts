@@ -24,11 +24,11 @@ export const HUB_SEO = {
   home: hub(
     "road trip planner",
     [
-      `Road Trip Planner: National Parks & Scenic Itineraries${BRAND}`,
+      `National Park Road Trip Planner${BRAND}`,
       `Worldwide Road Trip Planner${BRAND}`,
     ],
     [
-      "Free self-drive itineraries, national park guides, airport loops and RV routes worldwide — with interactive maps, entry rules and verified booking links.",
+      "Plan national park road trips across Europe, North America, Australia and New Zealand. Free multi-day itineraries, route maps and travel booking links.",
       "Free self-drive itineraries, national park guides, airport loops and RV routes worldwide — with maps, entry rules and booking links.",
     ],
   ),
@@ -37,8 +37,8 @@ export const HUB_SEO = {
     "national parks",
     [`National Parks & Outdoor Destinations by Country${BRAND}`, `National Parks by Country${BRAND}`],
     [
-      "Explore 1,400+ national parks and outdoor places in the USA, Canada, UK, Germany, Austria, Switzerland, Italy and Spain: free itineraries and entry notes.",
-      "Explore 1,400+ national parks and outdoor places across North America and Europe: free itineraries, entry notes and stays.",
+      "Explore national parks and scenic places by country across Europe, North America, Australia and New Zealand, with free itineraries, maps and entry notes.",
+      "Explore national parks and scenic places worldwide by country, with free itineraries, maps and entry notes.",
     ],
   ),
   // "road trip" 60.5k/mo; loops already own "<region> road trip" phrases.

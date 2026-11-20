@@ -1,3 +1,4 @@
 - travelMetadata composes route-family descriptions from stored location/type/duration/season facts; omit unknown facts and never infer camping availability. Why: search snippets must reflect the displayed trip rather than invented inventory.
 - North Coast 500 is an official-source road-trip overview, listed separately from inferred multi-park loops. Why: a full regional route must not become a one-day attraction or guessed navigation circuit.
 - Authority redirects use archive-confirmed country codes and only target countries present in published destination geography; retain unknown park URLs as country fallbacks rather than inventing identities. Why: no dead country links or guessed historical park mappings.
+- Homepage share metadata uses a credited 1200×630 rendition only when its source matches the displayed first collage photo. Why: keep previews lightweight without substituting unrelated imagery.

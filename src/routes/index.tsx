@@ -7,6 +7,7 @@ import { ArrowRight } from "lucide-react";
 
 import { LOOPS } from "@/lib/seo/guides";
 import { HUB_SEO } from "@/lib/seo/hubSeo";
+import { homeShareMeta } from "@/lib/seo/homeShare";
 
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
@@ -40,7 +41,7 @@ export const Route = createFileRoute("/")({
       return [];
     }),
   }),
-  head: () => ({
+  head: ({ loaderData }) => ({
     meta: [
       { title: HUB_SEO.home.title },
       { name: "description", content: HUB_SEO.home.description },
@@ -49,6 +50,11 @@ export const Route = createFileRoute("/")({
       { property: "og:url", content: `${SITE_ORIGIN}/` },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: HUB_SEO.home.title },
+      { name: "twitter:description", content: HUB_SEO.home.description },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:locale:alternate", content: "de_DE" },
+      ...homeShareMeta(loaderData?.homeDestinations ?? []),
     ],
     links: [{ rel: "canonical", href: `${SITE_ORIGIN}/` }, ...hreflangLinks("/", ["en", "de"])],
   }),

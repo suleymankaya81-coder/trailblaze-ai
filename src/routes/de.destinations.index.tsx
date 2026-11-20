@@ -11,8 +11,8 @@ import { DESTINATIONS_DE, HOME_DE, deMeta } from "@/lib/i18n/deSeo";
 import { breadcrumbScript } from "@/lib/seo/breadcrumbs";
 import { hreflangLinks } from "@/lib/seo/hreflang";
 
-const title = "Nationalparks USA: Reisepläne auf Deutsch | WildParkRoutes";
-const description = "Reisepläne für die beliebtesten Nationalparks der USA: Tagesrouten, beste Reisezeit, Reservierungen und Tipps vor Ort – auf Deutsch.";
+const title = "Nationalparks nach Land entdecken | WildParkRoutes";
+const description = "Nationalparks und Naturziele in Europa, Nordamerika, Australien und Neuseeland entdecken: kostenlose Reisepläne, Karten und Hinweise zum Parkbesuch.";
 const crumbs = [HOME_DE, DESTINATIONS_DE];
 
 export const Route = createFileRoute("/de/destinations/")({
