@@ -50,4 +50,3 @@
 - Origin/brand: config/site.ts; addresses: routes/paths.ts; refresh destination-geo.json on publish.
 
 - Country partners/currency: countryPartners.ts; country browsing UI: countryDirectory.ts. Why: one entry per country.
-- Single-sight plans are extended with 1–2 day trips to the nearest published road-access destinations in the same country (≤150 km), linked via stop placePath with matching German days; every stored plan must include reviewedAt. Why: multi-day plans without invented places, and plans failing the schema silently disappear from pages.
