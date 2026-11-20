@@ -38,7 +38,7 @@ def download_cover(photo, target):
 def road_evidence(text):
     sentences = re.split(r'(?<=[.!?])\s+|\n', text)
     return next((s.strip() for s in sentences if re.search(
-        r'(?:access|accessible|accessed|reached|reach|entrance|car park|carpark|parking).{0,90}(?:road|highway|drive|vehicle|car)|(?:road|highway).{0,90}(?:access|entrance|car park|carpark)', s, re.I)
+        r'(?:drive|by car|state highway|SH\s?\d+|road end).{0,120}(?:km|minutes?|hours?|from|turn)|(?:access|accessible|accessed|reached|reach|entrance|car park|carpark|parking).{0,90}(?:road|highway|drive|vehicle|car)|(?:road|highway).{0,90}(?:access|entrance|car park|carpark)', s, re.I)
         and not re.search(r'ferry|access ends|nearest beaches|closed|no road|not accessible|inaccessible', s, re.I)), None)
 
 def identity(row):
@@ -87,6 +87,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('stage', choices=['facts', 'translate'])
     parser.add_argument('--existing', default='/tmp/nz-existing.json')
+    parser.add_argument('--only', default='', help='comma-separated slugs')
     args = parser.parse_args()
     rows = json.loads((PIPE / 'claude-handoff/oceania/nz-catalog.json').read_text())
     existing = {r['slug'] for r in json.loads(Path(args.existing).read_text())['rows']}
@@ -94,6 +95,8 @@ def main():
     used = {base.load(r['slug']).get('photo', {}).get('url') for r in rows}
     for row in rows:
         slug = row['slug']
+        if args.only and slug not in args.only.split(','):
+            continue
         if slug in existing:
             report[slug] = 'existing published EN/DE'
             continue
@@ -105,6 +108,10 @@ def main():
                     raise ValueError('walking/boat route needs reviewed arrival gateway')
                 official = official_source(row)
                 quote = road_evidence(official['text']) if official else road_evidence(page.get('extract', ''))
+                reviewed = json.loads((HERE / 'access-evidence.json').read_text()).get(slug) if (HERE / 'access-evidence.json').exists() else None
+                if not quote and reviewed:
+                    quote = reviewed['quote']
+                    official = dict(url=reviewed['url'], kind=reviewed['kind'], text=reviewed['quote'], generation_excerpts=[reviewed['quote']])
                 if not quote:
                     raise ValueError('visitor road access not established in retained article')
                 lat, lng, source = base.fin.resolve_coordinates(row, page, entity, base.COUNTRIES['nz']['bounds'])
@@ -123,7 +130,8 @@ def main():
                 base.save(slug, item)
                 used.add(photo['url'])
             if args.stage == 'translate' and item.get('status') == 'facts':
-                if not road_evidence(item['packet'].get('road_access_quote', '')):
+                reviewed = json.loads((HERE / 'access-evidence.json').read_text()).get(slug, {}) if (HERE / 'access-evidence.json').exists() else {}
+                if not road_evidence(item['packet'].get('road_access_quote', '')) and item['packet'].get('road_access_quote') != reviewed.get('quote'):
                     raise ValueError('retained access quote does not establish visitor road access')
                 item = base.translate(row, item)
                 base.save(slug, item)
