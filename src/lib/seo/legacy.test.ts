@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { AUTHORITY_COUNTRY, authorityTarget, legacyResponse } from "./legacy";
+import { AUTHORITY_COUNTRY, authorityTarget, isLegacyHost, legacyResponse } from "./legacy";
 
 const loc = (u: string) => legacyResponse(new URL(u))?.headers.get("location");
 describe("authority domain mapping", () => {
@@ -13,8 +13,12 @@ describe("authority domain mapping", () => {
     expect(authorityTarget("/eu/pt/pt.htm", false)).toBe("/destinations");
   });
   it("Canada and old .htm pages go to destinations", () => { expect(authorityTarget("/index.html", false)).toBe("/destinations"); });
-  it("authority homepage goes to destinations", () => expect(loc("https://world-national-parks.net/")).toBe("https://wildparkroutes.com/destinations"));
-  it("authority host keeps modern paths", () => expect(loc("https://www.world-national-parks.net/destinations/us/maine/acadia")).toBe("https://wildparkroutes.com/destinations/us/maine/acadia"));
+  it.each(["http://world-national-parks.net/", "https://world-national-parks.net/", "http://www.world-national-parks.net/", "https://www.world-national-parks.net/"])("redirects authority homepage directly to the new homepage: %s", (address) => {
+    const response = legacyResponse(new URL(address));
+    expect(response?.status).toBe(301);
+    expect(response?.headers.get("location")).toBe("https://wildparkroutes.com/");
+  });
+  it("checks modern authority paths exist before forwarding", () => expect(legacyResponse(new URL("https://www.world-national-parks.net/destinations/us/maine/acadia"))).toBeNull());
   it("our own homepage is untouched", () => expect(legacyResponse(new URL("https://wildparkroutes.com/"))).toBeNull());
   it.each([
     ["/eu/no/no.htm", "no"], ["/eu/sw/sw.htm", "se"], ["/eu/fi/fi", "fi"],
@@ -41,6 +45,19 @@ describe("authority domain mapping", () => {
 
 import { legacyHostResponse } from "./legacy";
 describe("old domain after migration", () => {
+  it("checks unknown authority parks instead of blindly redirecting to a 404", () => {
+    const url = new URL("https://world-national-parks.net/mauritania/diawling");
+    expect(isLegacyHost(url.hostname)).toBe(true);
+    expect(legacyResponse(url)).toBeNull();
+    const response = legacyHostResponse(url, 404);
+    expect(response.status).toBe(410);
+    expect(response.headers.get("location")).toBeNull();
+  });
+  it("forwards an existing modern authority park after checking its response", () => {
+    const response = legacyHostResponse(new URL("https://www.world-national-parks.net/destinations/us/maine/acadia"), 200);
+    expect(response.status).toBe(301);
+    expect(response.headers.get("location")).toBe("https://wildparkroutes.com/destinations/us/maine/acadia");
+  });
   it("forwards a page that exists", () => expect(legacyHostResponse(new URL("https://minialife.com/destinations/acadia"), 200).headers.get("location")).toBe("https://wildparkroutes.com/destinations/us/maine/acadia"));
   it("answers missing old pages with 410", () => expect(legacyHostResponse(new URL("https://minialife.com/plans/x"), 404).status).toBe(410));
 });

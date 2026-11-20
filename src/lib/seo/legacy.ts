@@ -67,7 +67,7 @@ export function authorityTarget(path: string, onAuthorityHost: boolean): string 
   }
   if (p === "/eu" || p.startsWith("/eu/")) return "/destinations";
   if (/^\/(af|as|au|sa|ru|ce|me|in|ne|so)(\/|$)/.test(p) || /\.(html?|asp)$/.test(path.toLowerCase())) return "/destinations";
-  if (onAuthorityHost && p === "/") return "/destinations";
+  if (onAuthorityHost && p === "/") return "/";
   return null;
 }
 

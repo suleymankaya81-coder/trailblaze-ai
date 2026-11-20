@@ -1,3 +1,7 @@
+## November 20 address-change correction
+- [x] Redirect authority-domain root directly to the primary homepage; HTTP/HTTPS and www variants covered by regression tests.
+- [x] Preserve established country mappings and return 410 for unmatched removed parks rather than redirecting to missing or unrelated pages; reported Diawling address covered by response-flow tests. Live rollout awaits publication; preview rejects custom Host headers.
+
 ## November 20 New Zealand production
 - [x] Recovered four licensed photos using Wikimedia's required User-Agent; published four EN/DE destinations (47 total), retained exact publication readback, verified eight new pages, both map-pin flows and 360px phone layout.
 - [x] Reconciled all 129 candidates against 43 existing EN/DE publications; four additional EN/DE bundles prepared; unsupported arrival claims withheld.
