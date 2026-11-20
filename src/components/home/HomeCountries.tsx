@@ -26,9 +26,9 @@ export function HomeCountries({ covers }: { covers: Record<string, string> }) {
             </button>
           ))}
         </div>
-        <ul className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+        <ul className="-mx-4 flex snap-x snap-mandatory gap-3 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-4 sm:overflow-visible sm:px-0 md:grid-cols-3 lg:grid-cols-4">
           {list.map((c) => (
-            <li key={c.code}>
+            <li key={c.code} className="w-[68%] shrink-0 snap-start sm:w-auto">
               <Link to={countryPath(c.code, locale)} className="group relative block aspect-[4/5] overflow-hidden rounded-2xl bg-muted">
                 {covers[c.code] && <img src={covers[c.code]} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105" />}
                 <span className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/20 to-transparent" />

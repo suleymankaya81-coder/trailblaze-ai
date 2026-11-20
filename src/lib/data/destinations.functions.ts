@@ -304,7 +304,7 @@ export const getHomepageDestinations = createServerFn({ method: "GET" }).handler
     const { COUNTRIES } = await import("@/lib/routes/paths");
     // One small query per country: scenic scores are not comparable across country catalogs.
     // Signature places lead each country so covers show recognisable scenery.
-    const SIGNATURE = ["the-dolomites", "yosemite", "picos-de-europa-national-park", "saxon-switzerland-national-park", "grossglockner-high-alpine-road", "jungfraujoch", "banff-national-park", "lake-district-national-park", "cinque-terre-national-park", "zion", "teide-national-park", "berchtesgaden-national-park", "hohe-tauern-national-park", "swiss-national-park", "jasper-national-park", "eryri-snowdonia-national-park"];
+    const SIGNATURE = ["the-dolomites", "yosemite", "picos-de-europa-national-park", "saxon-switzerland-national-park", "grossglockner-high-alpine-road", "jungfraujoch", "banff-national-park", "lake-district-national-park", "cinque-terre-national-park", "zion", "teide-national-park", "berchtesgaden-national-park", "hohe-tauern-national-park", "swiss-national-park", "jasper-national-park", "eryri-snowdonia-national-park", "geirangerfjord"];
     const sig = await supabase
       .from("destinations")
       .select("id, slug, name, region, hero_image, best_season, trip_duration_days, country_code")
