@@ -1,802 +1,1347 @@
 {
- "lake-tekapo": {
-  "url": "https://en.wikivoyage.org/wiki/Lake_Tekapo",
-  "kind": "wikivoyage",
-  "quote": "By car [ edit | edit source ] It is about 60 km north of Twizel on State Highway 8, the Central Southern Alps Highway , 2.5 hours south-west of Christchurch and three hours north of Queenstown ."
- },
- "east-cape": {
-  "url": "https://en.wikivoyage.org/wiki/East_Cape",
-  "kind": "wikivoyage",
-  "quote": "Take State Highway 2 from Auckland , Tauranga or Wellington ."
- },
- "bay-of-islands": {
-  "url": "https://en.wikivoyage.org/wiki/Bay_of_Islands",
-  "kind": "wikivoyage",
-  "quote": "By car [ edit | edit source ] State Highway 1 from Whangarei and Auckland runs through Kawakawa on its way to Kaitaia ."
- },
- "hokianga": {
-  "url": "https://en.wikivoyage.org/wiki/Hokianga",
-  "kind": "wikivoyage",
-  "quote": "From Dargaville drive 54 km northwards on State Highway 12 (SH 12) past the Waipoua Forest info spot."
- },
- "waipoua-forest": {
-  "url": "https://en.wikivoyage.org/wiki/Waipoua_Forest",
-  "kind": "wikivoyage",
-  "quote": "The drive is roughly an hour from Dargaville or 20 minutes from Omapere."
- },
- "lake-te-anau": {
-  "url": "https://en.wikivoyage.org/wiki/Te_Anau",
-  "kind": "wikivoyage",
-  "quote": "Turn off the Queenstown - Invercargill highway just north of Lumsden onto SH94."
- },
- "coromandel-peninsula": {
-  "url": "https://en.wikivoyage.org/wiki/Coromandel_Peninsula",
-  "kind": "wikivoyage",
-  "quote": "Thames , the gateway to the Coromandel, is located within an hour and a half drive of the major centres of Auckland (115 km) and Hamilton (107 km) and their airports, and yet the region is a world away from the hustle and bustle of those cities."
- },
- "fox-glacier": {
-  "url": "https://en.wikivoyage.org/wiki/Fox_Glacier",
-  "kind": "wikivoyage",
-  "quote": "The drive from Franz Josef is about 30 minutes."
- },
- "abercrombie-river-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/abercrombie-river-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Turn onto the Arkstone Road from the Oberon-Goulburn Road, 7km south of Black Springs."
- },
- "arakoon-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/arakoon-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Take South West Rocks Road along the Macleay River from East Kempsey (37km) Or take Tourist Route 12 from South Kempsey to travel via Crescent Head (80km)."
- },
- "arakwal-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/arakwal-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Drive 3.2km from the town centre along Lawson Street and Lighthouse Road Turn right into Tallow Beach Road and drive to the end where the Cosy Corner carpark is located Park entry points Arakwal National Park See on map By bike Check out the Bicycle information for NSW website for more information."
- },
- "bald-rock-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/bald-rock-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Turn right onto Naas Street at the northern end of town and follow the sealed Mount Lindesay Road towards Woodenbong for 27km."
- },
- "barrington-tops-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/barrington-tops-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Dungog, take Chichester Dam Road for about 10km before turning left on Salisbury Road."
- },
- "beowa-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/beowa-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Drive south along the Princes Highway from Pambula for around 9km and turn left onto Haycock Road."
- },
- "boonoo-boonoo-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/boonoo-boonoo-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Drive for 21km down sealed Mount Lindesay Road, passing Basket Swamp National Park."
- },
- "border-ranges-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/border-ranges-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Travel 15km north along the Summerland Way to Wiangaree and then turn right onto Lynches Creek Road."
- },
- "brindingabba-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/brindingabba-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Drive 175km north-west of Bourke down scenic Hungerford-Bourke Road which is part of the Dowling Track outback route from Bourke to Birdsville."
- },
- "capertee-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/capertee-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Turn east onto Glen Davis Road Travel 29km to the junction with Glen Alice Road and veer left Drive another 21km through Glen Alice, towards Rylstone, and turn left onto the unsealed Port Macquarie Road."
- },
- "cascade-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/cascade-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Head north via Hickory Street and Vine Street Follow the signs to Megan (14km) via Coramba Road Continue onto Megan­–Briggsvale Road Turn left just before Megan Hall and continue along Megan–Briggsvale Road for another 7km before arriving at Cascade Park entry points Megan-Briggsvale Road access See on map By bike Check out the Bicycle information for NSW website for more information."
- },
- "berowra-valley-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/berowra-valley-national-park/visitor-info",
-  "kind": "official",
-  "quote": "For the Great North walk, Benowie walking track and Jungo walk from the M2 motorway: Take the Pennant Hills Road exit and head north Turn left at Observatory Park to stay on Pennant Hills Road Turn left onto Boundary Road in Pennant Hills Turn right onto Bellamy Street and follow all the way to the end of the road, where the tracks begin From"
- },
- "biamanga-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/biamanga-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Biamanga National Park is 23km north of Bega. To get there from Bega: Drive north-east along Dr George Mountain Road Turn left on to Mumbulla Creek Road at the Biamanga Cultural Area sign Continue along Mumbulla Creek Road and turn left at the intersection with Tee Ridge Road, to remain on Mumbulla Creek Road Turn right on to Mumbulla Creek Falls"
- },
- "bindarri-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/bindarri-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Coffs Harbour to the eastern precinct of the park: Take Coramba Road west from central Coffs Harbour Turn left at Karangi onto Upper Orara Road Turn right at Upper Orara onto Dairyville Road and follow to the park entrance From Coffs Harbour to the western precinct of the park: Take Coramba Road west from central Coffs Harbour Continue to"
- },
- "blue-mountains-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/blue-mountains-national-park/visitor-info",
-  "kind": "official",
-  "quote": "To get to Blue Mountains National Park there: From Sydney: Take the M4 and the Great Western Highway for Glenbrook, the southern side of the Lower Grose Valley, Katoomba and Blackheath areas. The Southern Blue Mountains area is accessed via Oberon or Jenolan Caves. From Richmond via Bells Line of Road: Take the Bells Line of Road for the northern"
- },
- "bongil-bongil-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/bongil-bongil-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Coffs Harbour and Urunga: Take the Reptom / Mylestom exit from the new Pacific Highway Take Perry's Hill Road from the old Pacific Highway Perry's Hill Road becomes Tuckers Road From Sawtell: Take Boronia Street to access Sawtell headland Take Lyons Road for Bonville Estuary and Bongil picnic area"
- },
- "booti-booti-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/booti-booti-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Forster: Head south along the Lakes Way It’s 20km to Ruins campground and the Great Lakes Park Office From Newcastle: Head north on the Pacific Highway Just past Bulahdelah, turn right onto The Lakes Way (signposted ‘Seal Rocks’). Follow The Lakes Way for approximately 55km to Pacific Palms Continue along The Lakes Way until you see Ruins"
- },
- "bouddi-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/bouddi-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Sydney Follow the F3 and take the Gosford exit. Follow the signs to Woy Woy, then Kincumber. Take Maitland Bay Drive, then Empire Bay Drive. Look for The Scenic Road at Killcare Heights and take Putty Beach Road. Driving from Gosford Follow the Central Coast Highway towards Erina. Turn right onto Avoca Drive and continue through Kincumber."
- },
- "bournda-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/bournda-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Tathra: Travel south towards Merimbula on Sapphire Coast Drive From Bega: Take the Tathra Road (Snowy Mountains Highway) toward Tathra Turn right onto Sapphire Coast Drive and continue south towards Merimbula From Merimbula: Travel north towards Tathra on Sapphire Coast Drive"
- },
- "brindabella-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/brindabella-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Canberra: Travel west along Uriarra Road to Brindabella Road The dirt road starts along Brindabella Road, which takes you to the southern edge of Brindabella National Park. There is no public access to the eastern side of the park from Mountain Creek Road. Doctors Flat Road is a private road, and is locked between Mountain Creek Road and"
- },
- "broadwater-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/broadwater-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Ballina: Follow Pacific Highway south Turn left onto Macdonald Street where there will be signs for Evans Head Continue onto Evans Head-Broadwater Road Park entrance is on the left"
- },
- "budawang-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/budawang-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Milton to Long Gully: Follow the signs to Pigeon House Mountain Didthul. Rather than turning onto Pigeon House Road, continue on Yadboro Road and cross Clyde River, merging onto the Western Distributor. Turn right onto Long Gully Road and continue to the campground From Braidwood or Mongarlowe to Mount Budawang: From Charleys Forest Road or"
- },
- "bungonia-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/bungonia-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Canberra: Take the Goulburn turnoff from the Hume Highway (at the Big Merino). Drive into town along Hume Street, which becomes Cowper Street. Turn right into Clinton Street and after a few minutes, you’ll see signs to Bungonia State Conservation Area, which will lead you to the park. Follow these signs for approximately 25 minutes From"
- },
- "carrai-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/carrai-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Armidale, head to Walcha and take the Oxley Highway to Kangaroo Flat Road. Follow the signs to Werrikimbe National Park, then take the Racecourse Trail through to Coachwood Road to Kookaburra, then Carrai Road."
- },
- "cathedral-rock-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/cathedral-rock-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Armidale: Drive east on Barney Street, which soon becomes Grafton Road and later Waterfall Way (all State Route 78) for 70km, passing through Argyle and Wollomombi. To access Barokee campground, take the Round Mountain Road turnoff on the left and after 8km of narrow gravel road, turn right into the campground. To access Native Dog"
- },
- "cattai-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/cattai-national-park/visitor-info",
-  "kind": "official",
-  "quote": "To get there from Windsor, take Metroroad 2 and turn left into Pitt Town Road. Turn right into Tourist Drive 15 and continue along Cattai Road to Cattai Creek, where the road becomes Wisemans Ferry Road. The park entry gate will be about 100m along on your left."
- },
- "chaelundi-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/chaelundi-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Nymboida: Drive 5km south along Armidale-Grafton Road, then turn right onto Boundary Creek Road. Follow Boundary Creek Road for around 23km, until you reach Link Road. From Dundurrabin: Take the Sheep Station Creek turn-off on Armidale-Grafton Road at Dundurrabin. Continue along Chaelundi Road, stopping at Vista Point for the views into"
- },
- "clyde-river-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/clyde-river-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Batemans Bay: Travel north on the Princes Highway, then turn left onto the Kings Highway at the roundabout after the Batemans Bay bridge. Drive for approximately 3km along the Kings Highway Turn left into Rotary Drive, which is the entrance to the park. From Braidwood: Travel on the Princes Highway towards Batemans Bay Continue through the"
- },
- "cocoparra-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/cocoparra-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Griffith: Travelling east along Burley Griffin Way from town centre, turn left onto Crossing Street. Turn right onto Wakaden Street. This becomes Rankin Springs Road, and then Beelbangera Road as you pass through Beelbangera. At Yenda, turn left onto Myall Park Road. Turn right onto Mount Bingar Road, which will take you into the park. Road"
- },
- "conimbla-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/conimbla-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Cowra: Travel 9km west along the Mid-Western Highway. Turn right onto Barryrennie Road, following the signs to Conimbla National Park. Continue for 17km, then turn left into the Wallaby picnic area carpark. From Gooloogong: From Gooloogong town centre, turn onto Kangarooby Road. Follow the signs to Conimbla National Park. Continue for 24km,"
- },
- "conjola-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/conjola-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Conjola National Park is accessible via a number of points along the Princes Highway – look for the signposts to particular areas. From Sussex Inlet, take The Springs Road to Goonawarra Drive and other park roads. From Ulladulla or Bendalong, turn north from Bendalong Road onto Cedar Road to reach the Monument Beach picnic area."
- },
- "coolah-tops-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/coolah-tops-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Coolah: Head east on the sealed Coolah Creek Road for approximately 19km Turn right onto unsealed The Tops Road Continue along this unsealed road with some steep climbs for another 11km before entering the park"
- },
- "coorabakh-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/coorabakh-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From the townships of Coopernook and Moorland: Take Forest Drive Road from south to north Travel through Coopernook State Forest and follow signs to Coorabakh National Park To access the park, visitors are strongly advised to contact the NSW Forestry Cooperation to ensure access via Comboyne State Forest and Lansdowne State Forest is open. Contact"
- },
- "cottan-bimbang-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/cottan-bimbang-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From either Walcha or Wauchope: Follow Oxley Highway , which leads directly through Cottan-Bimbang National Park."
- },
- "crowdy-bay-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/crowdy-bay-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Laurieton: For northern access to the park drive along Diamond Head Road From Harrington: For southern access to the park drive along Crowdy Head Road"
- },
- "culgoa-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/culgoa-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Bourke: One route follows the dirt River Road to Weilmoringle, where you turn left onto Enngonia Road. This is approximately 180km. A sealed road option via Brewarrina is approximately 220km, though the last 20km from Weilmoringle is unsealed"
- },
- "cunnawarra-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/cunnawarra-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Travel west along Waterfall Way towards Armidale Turn left to stay on Waterfall Way towards Armidale After about 7.6km, turn left onto Point Lookout Road."
- },
- "deua-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/deua-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Braidwood: Drive south along Cooma Road for 30 minutes Turn left at the sign to Berlang/The Big Hole From Moruya: Drive west along the Araluen Road for 45 minutes until you reach Deua River campgrounds From Cooma: Drive northeast along the Numeralla Road for 70 minutes to Middle Mountain Road and turn right into the park"
- },
- "dharawal-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/dharawal-national-park/visitor-info",
-  "kind": "official",
-  "quote": "You can access the park through any of three entry points. From Helensburgh to the park’s eastern entry, turn left onto Old Princes Highway/​State Route 60. Turn right onto Darkes Forest Road and continue along to the park entry at Maddens Falls. From Campbelltown to the park’s northwestern entry, head south on Wedderburn Road, then turn right"
- },
- "dharug-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/dharug-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Sydney take Galston Road from Hornsby or the Old Northern Road from Castle Hill or Dural, these roads join at Middle Dural to become the Old Northern Road. This takes you north to Wisemans Ferry, where you can take your car across the Hawkesbury river on the car ferry or leave it on the south side and cross as a pedestrian to enter the park."
- },
- "dooragan-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/dooragan-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Port Macquarie via Ocean Drive: Travel south out of Port Macquarie on Ocean Drive for around 33km, following signs via Lake Cathie, Bonny Hills, and then to Laurieton. At Laurieton, turn towards Kew and continue on Ocean Drive for around 0.5km. Travel 5km up Captain Cook Bicentennial Road From Port Macquarie via Pacific Highway: Follow Oxley"
- },
- "dorrigo-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/dorrigo-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Armidale, drive east along the Waterfall Way for about 90 minutes. You'll see the park turnoff on the left, about 2km past Dorrigo. From Coffs Harbour: Travel south along the Pacific Highway, cross the Bellinger River and take the Waterfall Way exit to Dorrigo via Bellingen. Approximately 2km before Dorrigo township, turn right at Dome Road"
- },
- "dthinna-dthinnawan-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/dthinna-dthinnawan-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Tenterfield: Follow Rouse Street/New England Highway north out of Tenterfield. After about 4km, you’ll turn left at Bruxner Highway and follow west for approximately 100km/1hr to Bonshaw (last petrol station/shop) From Bonshaw, continue west for 40km and turn right at the cream and pink house-shaped ‘Inverary Homestead’ mailbox. Directly"
- },
- "dunggir-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/dunggir-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Bowraville: Follow North Arm Road west from Bowraville for 2km Turn left into Buckra Bendinni Road and follow this for 7km Turn left into Hanging Rock Road and follow it for 11km to reach the park boundary"
- },
- "everlasting-swamp-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/everlasting-swamp-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Drive 20km north-east on Lawrence Road."
- },
- "gaagal-wanggaan-south-beach-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/gaagal-wanggaan-south-beach-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Macksville: Drive 4km south along Pacific Highway Take the turn-off to Scotts Head At Scotts Head, follow the directions to the boat ramp at Weir Reserve. Continue along South Pacific Drive and South Beach access trail"
- },
- "gardens-of-stone-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/gardens-of-stone-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Lithgow: Head north on the Castlereagh Highway to Ben Bullen Turn right for the 4WD road to Baal Bone Gap picnic area From Lidsdale: Follow the Wolgan Valley Road towards Newnes. The valley road descends below the cliffs of Gardens of Stone and Wollemi National Parks. Donkey Mountain is just past the Wolgan valley resort, great for climbing"
- },
- "garigal-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/garigal-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Garigal National Park starts 12km north of Sydney CBD and covers bushland from Middle Harbour Creek north to Mona Vale Road and east to the Wakehurst Parkway and Deep Creek."
- },
- "georges-river-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/georges-river-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Sutherland, head west on River Road, then turn right onto Alfords Point Road and turn left onto Henry Lawson Drive. The park entry is approximately 1.5km on the left. From Liverpool, head east along the M5 and continue for approximately 5.5km. Turn left towards the river at Carinya Road and follow the road along the river until you reach the"
- },
- "gibraltar-range-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/gibraltar-range-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Glen Innes: If travelling along the New England Highway, the park is best accessed via the Gwydir Highway, turning east at the roundabout in the middle of town and follow the signs towards Grafton. From Grafton If travelling via the Pacific Highway, turn west onto the Gwydir Highway in Grafton and follow the signs to Glen Innes. You will"
- },
- "goobang-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/goobang-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Dubbo: Travel 48km south on Newell Highway towards Parkes then turn left onto Gundong Road just before Tomingley, following the signs to Goobang National Park. The entrance to the park is 12km along Gundong Road on the right. From Parkes: Travel 70km north on Newell Highway towards Dubbo through Peak Hill and Tomingley. 3.5km north of"
- },
- "goolawah-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/goolawah-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Kempsey: Take Crescent Head Road from South Kempsey Just after entering the village of Crescent Head, take the prominent right turn on Point Plomer Road. You’ll find the entrance to Goolawah National Park about 1km along Point Plomer Road"
- },
- "goulburn-river-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/goulburn-river-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Goulburn River National Park is accessible from a number of towns in the area. From Mudgee, follow Wollar Road From Merriwa, follow Ringwood Road From Denman, go along the Denman to Wollar Road – it follows long stretches of the Goulburn River."
- },
- "gundabooka-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/gundabooka-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Bourke: Drive south from Bourke on Kidman Way for approximately 49km and turn right onto Ben Lomond Road"
- },
- "guula-ngurra-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/guula-ngurra-national-park/visitor-info",
-  "kind": "official",
-  "quote": "There are 3 entry points to Guula Ngurra National Park, 1 at each area (Little Forest West, Mount Penang and Tugalong). To get there from Sydney or Goulbourn: Follow the M31 and take the Illawarra Highway – Moss Vale exit, following signs to Canyonleigh. Continue for 10km on the Canyonleigh Road, then turn right onto Tugalong Road. From entering"
- },
- "guy-fawkes-river-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/guy-fawkes-river-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Dorrigo or Armidale: Access via Waterfall Way and Chaelundi Road From Grafton: Access via Old Grafton Road, then Chaelundi Road."
- },
- "hat-head-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/hat-head-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Kempsey: From the Pacific Highway take the South West Rocks Road to Kinchela. Follow the signs to Hat Head National Park From Nambucca Heads: From the Pacific Highway take the South West Rocks Road via Gladstone Turn right onto the Hat Head Road at Kinchela and follow to the park"
- },
- "heathcote-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/heathcote-national-park/visitor-info",
-  "kind": "official",
-  "quote": "There is no private vehicle access permitted in Heathcote National Park, which is 35km south of Sydney. From Heathcote: On foot, enter the park along any of the walking tracks or from the main fire trail located between Woronora Dam Road and Heathcote Road, along the Water Board pipeline. You can also enter from Heathcote via Oliver Street. From"
- },
- "horton-falls-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/horton-falls-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Travel for 10km, then turn right onto Horton Falls Road."
- },
- "hunter-wetlands-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/hunter-wetlands-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Newcastle: Drive north along the Pacific Highway towards Hexham Just before Hexham McDonalds (on the left at the lights), turn right across the Ash Island Bridge."
- },
- "jerrawangala-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/jerrawangala-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Nowra: Take Albatross Road until you can see HMAS Albatross Turn right onto Braidwood Road Once you meet Turpentine Road, the park adjoins Braidwood Road, mainly along the road’s eastern side."
- },
- "jervis-bay-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/jervis-bay-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Jervis Bay National Park is made up of several sections, so there are multiple entry points. From Nowra: Take the Princes Highway southwards, then: For Lake Wollumboola, turn into Kalandar Street, Nowra, and follow the signs for Culburra Beach For Coonemia creek, Red Point or Hammerhead Point, take Forest Road off the highway, then follow the"
- },
- "kalyarr-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kalyarr-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Continue for 46km, then turn north onto Oxley Road."
- },
- "kamay-botany-bay-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kamay-botany-bay-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Sydney: The La Perouse area is at the end of Anzac Parade The Kurnell area is off Captain Cook Drive, access is via Rocky Point Road, off the Princes Highway Motorcycles and vehicles must be kept on public roads."
- },
- "kanangra-boyd-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kanangra-boyd-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Oberon: Turn off the main street onto Ross Street at the National Australia Bank, then follow the signs to Jenolan Caves and Kanangra-Boyd National Park. A pleasant 25-minute drive will take you to the park entrance From Katoomba: Head west along the Great Western Highway through Mount Victoria and Hartley Turn left onto Jenolan Caves Road."
- },
- "karuah-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/karuah-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Sydney: Travel north on Pacific Highway Approximately 17km after Raymond Terrace, turn left onto Bucketts Way Continue for approximately 9km then turn right onto Hobarts Road, just past Limeburners Creek."
- },
- "kinchega-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kinchega-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Broken Hill: Take Menindee Road, which becomes Nr Menindee - Broken Hill Road as you leave town This takes you all the way to Menindee and the entrance of Kinchega National Park From Ivanhoe: Take the Cobb Highway for 4km out of Ivanhoe Turn left onto Ivanhoe-Menindee Road and follow for 200km to Menindee and the entrance to Kinchega National"
- },
- "kings-plains-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kings-plains-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Glen Innes: Follow the signs from Glen Innes (off Gwydir Highway west of town). Following the signs, turn right onto Kings Plain Road. The final 25km of road is unsealed."
- },
- "koonaburra-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/koonaburra-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Turn left onto The Wool Track, following it for 92km."
- },
- "koreelah-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/koreelah-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Woodenbong: Travel west along Mount Lindesay Highway for approximately 22km Turn right at Old Koreelah onto White Swamp Road Travel for 12km to the north and you’ll see the campground on your left"
- },
- "kosciuszko-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kosciuszko-national-park/visitor-info",
-  "kind": "official",
-  "quote": "There are 7 areas in Kosciuszko National Park. To get there: From Canberra via Jindabyne to Thredbo-Perisher and Lower Snowy River areas: Travel around 100km along the Monaro Highway and through Cooma Continue onto Jindabyne Road (signs for Kosciuszko Road) for 45km to Jindabyne For Thredbo: follow Kosciuszko Road through Jindabyne for 3km then"
- },
- "ku-ring-gai-chase-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/ku-ring-gai-chase-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Turramurra: Enter the park from Bobbin Head Road, at North Turramurra. This is a good route to Bobbin Head and Appletree Bay. From Mt Colah or Asquith: Enter the park from Ku-ring-gai Chase Road, off the Pacific Motorway. Or from Belmont Parade if you are driving from Mount Colah. This gives you easy access to the large parking areas and"
- },
- "kwiambal-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kwiambal-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Inverell: Travel along Byron Street through the town centre passing Kamilaroi Park on your left. Head north along Ashford Road for about an hour, and once at Ashford turn left onto Frazer Street. Follow Frazer Street as it turns onto Wallangra Road and head west to the intersection with Sandy Creek Road. Turn right onto Sandy CReek Road and"
- },
- "lane-cove-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/lane-cove-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Sydney take the Pacific Highway to Chatswood and turn left into Fullers Road: Turn right into Lady Game Drive just before crossing the bridge Take the first left into Max Allen Drive for the northern side of the river OR Cross Fullers Bridge and then turn right into Riverside Drive, this will take you to the southern side of the river From"
- },
- "livingstone-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/livingstone-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Wagga Wagga: The northern end of Livingstone National Park can be reached via Holbrook Wagga Road, O’Brian’s Creek Road and Wrigley’s Road, approximately 30km south of Wagga Wagga. To access the southern end of the park, take Holbrook Road from Wagga Wagga for approximately 33km. Turn left onto Burrandana Road and travel approximately 10km."
- },
- "macquarie-pass-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/macquarie-pass-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Take the Princes Highway and Southern Freeway to the Illawarra Highway turnoff at Haywards Bay Travel about 14km along the Illawarra Highway, which veers right in Albion Park, to Macquarie Pass National Park."
- },
- "marramarra-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/marramarra-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Hornsby: Follow Galston Road through Galston Gorge To access the southern precinct, turn right into Arcadia Road, then after approximately 4km, turn left into Cobah Road and continue along Bloodwood Road to the park. To access the northern precinct, continue through Galston and turn right onto Old Northern Road, then after approximately 18km,"
- },
- "mebbin-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mebbin-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Murwillumbah: Take Kyogle Road from Murwillumbah, then turn right onto Tyalgum Road. At Tyalgum Road, turn left onto Brays Creek Road, which continues on to Byrrill Creek Road. This road becomes unsealed for several kilometres. Turn right on to Mebbin Forest Road (be careful - this intersection is on a hairpin bend). This then leads into the"
- },
- "meroo-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/meroo-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Ulladulla: Drive approximately 5km south on Princes Highway to the start of Meroo National Park For the Lagoon Head precinct, turn left onto Pot Holes Road approximately 7km south of Ulladulla For the Termeil Point precinct, turn left onto Blackbutt Road approximately 14km south of Ulladulla For the Meroo Head precinct, turn left onto Meroo"
- },
- "middle-brother-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/middle-brother-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Port Macquarie: Drive west along Oxley Highway for about 15mins until you reach Pacific Highway. Turn left onto Pacific Highway, heading south for about 25mins. Turn right at Haydons Road or Middle Brother Road and follow the signs to the national park."
- },
- "mimosa-rocks-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mimosa-rocks-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Bermagui follow the main Tathra-Bermagui Road. From Bega, take the Tathra Road off of the Princes Highway at Bega and turn north on the Tathra - Bermagui Road. From Merimbula take Sapphire Coast Drive north to Tathra. Side roads from Tathra-Bermagui Road, north of Tathra will take you to all areas of the park."
- },
- "monga-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/monga-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Braidwood: Travel east along Kings Highway towards Batemans Bay After approximately 20km, turn right into River Forest Road. After approximately 2km, you’ll enter the park. From Batemans Bay : Travel west along Kings Highway towards Braidwood After approximately 40km, turn left into River Forest Road. After approximately 2km, you’ll enter the"
- },
- "morton-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/morton-national-park/visitor-info",
-  "kind": "official",
-  "quote": "It's half an hour drive from Moss Vale to Fitzroy Falls and Belmore Falls along Nowra Road. Turn north onto Myra Vale Road just east of Fitzroy Falls. From Nowra, take the Princes Highway to the Southern Highlands via Kangaroo Valley. From Wollongong it’s about an hour to Fitzroy Falls and Belmore Falls along the Illawarra Highway. Turn south at"
- },
- "mount-imlay-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mount-imlay-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Eden: Travel south on Princes Highway Turn right onto Burrawang Forest Road, also known as Mount Imlay Road, 19km south of Eden. Continue driving through East Boyd State Forest to Mount Imlay carpark and Burrawang picnic area"
- },
- "mount-jerusalem-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mount-jerusalem-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Follow Jubilee Ave, which becomes Coolamon Scenic Drive, for 2km."
- },
- "mount-kaputar-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mount-kaputar-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Mt Kaputar Summit from Narrabri: Drive south along Old Gunnedah Road, then turn left onto Kaputar Road. Continue along Kaputar Road for around 27km until you reach the park entrance From here the road to the summit is steep and winding, with sections of unsealed road. No caravans or large motorhomes are permitted beyond this point Sawn Rocks from"
- },
- "mount-royal-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mount-royal-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Singleton: Travelling north, drive through Singleton on New England Highway. Turn right onto Bridgeman Roa d at Dunolly and after approximately 15km, veer left into Mount Royal Road at Carrowbrook. Follow this unsealed road for about 7km"
- },
- "mummel-gulf-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mummel-gulf-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Oxley Highway, take Enfield Road and drive for 12km, turning right into Mummel Forest Road. From Nowendoc, take Brackendale Road and then turn right into Mummel Forest Road."
- },
- "mungo-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mungo-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Follow the signs to Ivanhoe (Ivanhoe Road) for 53km Turn left 3km after Box Creek Bridge (signposted) and follow this road until you reach the park From Wentworth:"
- },
- "murramarang-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/murramarang-national-park/visitor-info",
-  "kind": "official",
-  "quote": "There are multiple entry points to Murramarang National Park, leading from the Princes Highway. Take the Bawley Point and Kioloa turn off at Termeil to get to Pretty Beach Turn off at either Pebbly Beach Road or Mount Agony Road to get to Pebbly Beach Turn off at East Lynne onto Mount Agony Road, then take the right fork onto North Durras Road to"
- },
- "murrumbidgee-valley-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/murrumbidgee-valley-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Narrandera to Murrumbidgee Irrigation Area 1 (MIA 1): Travel northwest on Irrigation Way for about 12km. Turn left off Irrigation Way at the signpost for MIA 1. Follow access road in southerly direction for about 2.5km to grid. This is Grahams Grave entrance to MIA 1. From Narrandera to Murrumbidgee Irrigation Area 2 (MIA 2): Head south along"
- },
- "mutawintji-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mutawintji-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Broken Hill Take the Silver City Highway towards Tibooburra and look for the Mutawintji National Park turnoff or Take the Barrier Highway 75km from Broken Hill Consult maps, GPS and local visitor centre information for travel distances, times and road conditions."
- },
- "myall-lakes-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/myall-lakes-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From the Pacific Highway take: Tea Gardens Road to access the Myall River and Bombah Broadwater precincts of the park Bombah Point Road to access the Boolambayte and Bombah Broadwater precincts of the park Seal Rocks Road to access the Sugarloaf Point to Shelley Beach precinct of the park There is a vehicle ferry at Bombah Point which provides"
- },
- "nangar-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/nangar-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Eugowra: Travel 10km along Escort Way (Eugowra – Orange Road) The park entrance sign is at the intersection with Dripping Rock Road Turn right here and travel 2.5km along Dripping Rock Road, where you’ll cross a cattle grid into the park. From Orange: Travel 70km along Escort Way (otherwise known as Forbes Road) The park entrance sign is at"
- },
- "narriearra-caryapundy-swamp-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/narriearra-caryapundy-swamp-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Turn right onto Tibooburra Road and head towards Wanaaring for 26km, to where Tibooburra Road becomes Narriearra Road."
- },
- "nattai-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/nattai-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Vehicle access points are located at Wollondilly lookout off Wombeyan Caves Road (follow Wombeyan Caves Road from Mittagong heading west for approx 30km) and off Wattle Ridge Road (turn off Wilson Drive at Hill Top onto Coates Road then Wattle Ridge Road and follow for about 7km)."
- },
- "new-england-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/new-england-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Dorrigo: Travel west along Waterfall Way towards Armidale Turn left and continue through the township of Ebor After Ebor, turn left to stay on Waterfall Way heading towards Armidale. After about 7.6km, turn left onto Point Lookout Road which continues until the park entrance. From Armidale: Travel east along Waterfall Way towards Ebor and"
- },
- "nightcap-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/nightcap-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Lismore: Drive 35km to the northern rivers area of NSW Road access is from one of five roads from the Richmond Valley in the south, four of which are unsealed"
- },
- "nowendoc-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/nowendoc-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Nowendoc: Drive 6.5km south of Nowendoc on Thunderbolts Way, turn right into Wrights Road, and then access the park through Nowendoc State Forest. Alternatively, drive 18.5km north-west of Nowendoc on Thunderbolts Way, turn left into Wild Cattle Creek Road, and access the park through Nowendoc State Forest. Please note: there is no public"
- },
- "nymboi-binderay-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/nymboi-binderay-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Nymboida travel south for 2km, and turn left into Laytons Range Road. Black Mountain Road is 5.5km on the right. Access to The Junction camping area requires 4WD."
- },
- "nymboida-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/nymboida-national-park/visitor-info",
-  "kind": "official",
-  "quote": "To reach Nymboida River campground from Grafton (4WD required): Travel west along the Gwydir Highway from Grafton, and turn south onto Old Glen Innes Road 8km from Grafton. Travel along Old Glen Innes Road a further 32km to the top of the Buccarumbi Range Turn north onto Doboy Road, travelling a further 24km to Nymboida National Park and Nymboida"
- },
- "oolambeyan-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/oolambeyan-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Hay: Take Sturt Highway east towards Narrandera Turn right onto Carrathool-Conargo Road Turn right onto unsealed Gum Creek Road Turn right onto Oolambeyan Road, which leads to the homestead Please note the road into the park isn’t accessible after rain"
- },
- "oxley-wild-rivers-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/oxley-wild-rivers-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Walcha and Armidale there are numerous turnoffs along the Waterfall Way and Oxley Highway. Look for road signs to visitor sites within the park."
- },
- "paroo-darling-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/paroo-darling-national-park/visitor-info",
-  "kind": "official",
-  "quote": "To get to the Peery section of Paroo-Darling National Park: From the Barrier Highway at Wilcannia: Travel north along the sealed road to White Cliffs (90km) Then travel east along the unsealed Mandalay Road (20km) Or from Wilcannia, travel north up the unsealed Wanaaring Road (80km) To get to the Wilga section of Paroo-Darling National Park: From"
- },
- "popran-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/popran-national-park/visitor-info",
-  "kind": "official",
-  "quote": "After 13km turn left into Wisemans Ferry Road After a further 8km turn left into Ironbark Road."
- },
- "richmond-range-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/richmond-range-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Kyogle: Leave Summerland Way south of Kyogle at McDonalds Bridge Road Travel along Edenville Road, which becomes Sextonville Road. Turn right onto Cambridge Plateau scenic drive and travel north to Richmond Range National Park From Casino: Drive west along the Bruxner Highway along Route 44 Turn north at Cambridge Plateau scenic drive near"
- },
- "royal-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/royal-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Sydney: Royal National Park's main entry points are along the Princes Highway Turn off the highway at either Farnell Avenue, just south of Loftus, or at McKell Avenue at Waterfall. From Wollongong: You can reach the park along the Princes Highway, or via Otford which is north of Stanwell Park. Roads in the Royal National Park can be extremely"
- },
- "saltwater-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/saltwater-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Taree or the Pacific Highway: Take Old Bar Road then turn right at Saltwater Road. Follow Saltwater Road to Saltwater National Park."
- },
- "scheyville-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/scheyville-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Parramatta: Travel north-west on Windsor Road to Boundary Road, Vineyard (6km east of Windsor) Turn north onto Boundary Road , and then west on Old Pitt Town Road. Turn north-east on Scheyville Road From Windsor: Take Windsor Road and turn east onto Pitt Town Road, then onto Saunders Road, then Scheyville Road. There are numerous gates where"
- },
- "sea-acres-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/sea-acres-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Getting there and parking Sea Acres National Park is on Pacific Drive, 5km south of Port Macquarie and adjacent to Shelly Beach Road quality Sealed roads Vehicle access 2WD vehicles Weather restrictions All weather By bike Check out the Bicycle Info website for more information Best times to visit Summer Head to the cool rainforest to escape the summer heat."
- },
- "seven-mile-beach-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/seven-mile-beach-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Sydney or Wollongong: Turn off the Princes Highway to Gerringong Drive south through Gerroa to reach the park From Nowra: Turn right off the Princes Highway at Bolong Road in Bomaderry Follow Bolong Road which becomes Gerroa Road to reach the park"
- },
- "south-east-forest-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/south-east-forest-national-park/visitor-info",
-  "kind": "official",
-  "quote": "There are many access points for South East Forest National Park and directions will vary depending on which part of the park you would like to visit. General directions are below. From Merimbula or Pambula, travel south along the Princes Highway. Turn right at Mount Darragh Road for access to Goodenia Rainforest and Wolumla Peak or continue"
- },
- "tallaganda-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/tallaganda-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Take Kings Highway east of Queanbeyan for about 3km, then turn right onto Captains Flat Road."
- },
- "tapin-tops-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/tapin-tops-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From: Wingham Take Elands Road and Wherrol Flat Road to Wherrol Flat At Wherrol Flat, turn left onto Dingo Tops Road. Follow Dingo Tops Road to Tapin Tops National Park"
- },
- "thirlmere-lakes-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/thirlmere-lakes-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Picton: Travel south along Remembrance Drive. Turn right onto Thirlmere Way and then right onto Richardson Street, veering left at Westbourne Avenue and continuing on Barbour Road. You can enter the park on Slades Road or Pumphouse Road. From Bargo: Head northwest on Remembrance Drive. At Tahmoor, turn left onto Bargo River Road and at"
- },
- "tomaree-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/tomaree-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Tomaree National Park is easily accessible from Nelson Bay and Anna Bay. It surrounds the towns of Boat Harbour, Shoal Bay and Fingal Bay. Take the Pacific Highway from Newcastle or Buladelah, turn east into Richardson Road and continue along Nelson Bay Road. For Anna Bay and Boat Harbour, turn right into Gan Gan Road For Shoal Bay and Fingal Bay,"
- },
- "tooloom-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/tooloom-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Woodenbong: From Mount Lindsay Highway, turn towards Urbenville on Urbenville-Koreelah Road. Continue for approximately 20km to Tooloom picnic area"
- },
- "toonumbar-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/toonumbar-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Kyogle: Leave the Summerland Way and travel west via Kyogle and Murray Scrub Road (approximately 35km) To reach the northern end of the park, take Coxs Road, which leaves the Summerland Way about 8km west of Grevillea to join Toonumbar Forest Drive."
- },
- "toorale-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/toorale-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Travel 10.5km north from Bourke on Hungerford Road Continue for 21.5km and turn left at the sign to Louth, onto the unsealed Toorale Road (Rural Local Road 10)."
- },
- "towarri-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/towarri-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Scone: From the town centre, drive west on Liverpool Street for 1.5km. Turn right at the roundabout onto Middlebrook Road Follow Middlebrook for 20km until you reach Towarri National Park. Please note: this drive includes 2km of unsealed road. From the New England Highway: Turn west on to Cressfield Road off the New England Highway 12.5km"
- },
- "turon-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/turon-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Sydney: Drive to Richmond, then follow State Route 40 along Bells Line of Road, through to Lithgow. Turn right onto Great Western Highway, diverge right onto Castlereagh Highway and merge onto State Route 86, heading for Mudgee. At Capertree, drive 1km further west on Castlereagh Highway and turn left onto gravel road to Turon National Park."
- },
- "ulidarra-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/ulidarra-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Travel north on Pacific Highway for approximately 5km Turn left onto Bruxner Park Road and continue winding your way up the escarpment past the banana farms At the Sealy lookout turn-off, continue west for approximately 1.8km and turn left into Orara East State Forest."
- },
- "wallarah-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wallarah-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Swansea: From the Pacific Highway, turn left onto Bowman Street. Continue along into Park Avenue and turn right onto Caves Beach Road Continue until you reach the locked gate at the end of Spoon Rocks Road From Gosford or Newcastle: Take the F3 to the Motorway Link (exit to Swansea), then continue along the Pacific Highway towards Swansea."
- },
- "wallingat-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wallingat-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Forster: Travel 30km south along Lakes Way to Sugar Creek Road From Bulahdelah: Head north on Pacific Highway Turn right at Lakes Way – it is signposted Forster Follow Lakes Way for approximately 40km to Sugar Creek Road (2.5kms past Bungwahl)"
- },
- "warrabah-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/warrabah-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Muluerindie is located 60km (1hour) west of Uralla, via Retreat Road."
- },
- "warrumbungle-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/warrumbungle-national-park/visitor-info",
-  "kind": "official",
-  "quote": "The turn-off to Warrumbungle National Park is clearly signposted. From Coonabarabran: Take Dalgarno Street west from Newell Highway/John Street Turn right onto Namoi Street, then turn left onto Eden Street Following signs for Warrumbungle National Park, travel along Timor Road/John Renshaw Parkway for approx. 35km. Following the signs within the"
- },
- "washpool-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/washpool-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Glen Innes, head east for around 78km and take the Coachwood Drive turnoff from the Gwydir Highway From Grafton, head west for around 93km and take the Coachwood Drive turnoff from the Gwydir Highway"
- },
- "watagans-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/watagans-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Newcastle: Travel south along the F3 Expressway and take the Awaba exit at Ryhope Turn right onto Cessnock Road and then left onto Freemans Drive at Freemans Waterhole Turn right onto Mount Faulk Road from Freemans Drive just after crossing over the F3 expressway for the second time Follow Mount Faulk Road uphill into the park From Gosford:"
- },
- "weddin-mountains-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/weddin-mountains-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Grenfell to Ben Halls campground: Travel 5.5km west along the Mid-Western Highway towards West Wyalong. Turn left onto Back Piney Range Road and follow the signs to Weddin Mountains National Park. Follow the road around for 23km and then turn left onto the park entrance road over the grid. Go through the State Forest and then turn left and"
- },
- "werrikimbe-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/werrikimbe-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Wauchope: Drive towards Beechwood on Beechwood Road After approximately 6.5km, turn onto Bellangry Road and follow for approximately 18km to Bellangry. After Bellangry, the road is unsealed and becomes known as Hastings Forest Way. Follow Hastings Forest Way for about 30km through the forest to the park boundary, then continue on another 8km"
- },
- "willandra-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/willandra-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Hillston: Drive north along High Street, through the roundabout and turn left on Mossgiel Road Travel west for 3.9km, then turn left onto Mossgiel Trunk Road and follow for 53km At the Trida-Whealbah intersection, turn right and drive 20km to the park entrance"
- },
- "willi-willi-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/willi-willi-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Wauchope: Take the Beechwood Road to Beechwood Then turn onto Bellangary Road Turn onto Hastings Forest Way Turn into Wilson River Road to reach the picnic area From Kempsey: Take the Armidale Road from West Kempsey After 35km turn onto Carrai Road at Toorooka near Willawarrin Turn onto Coachwood Road at Kookaburra"
- },
- "woko-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/woko-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Drive 14km north along Thunderbolts Way Turn onto Curricabark Road, then drive another 14km."
- },
- "wollemi-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wollemi-national-park/visitor-info",
-  "kind": "official",
-  "quote": "To get to the Colo area from Windsor: Take Wilberforce Road and Putty Road Or, head through Richmond and follow Bells Line of Road to Kurrajong, then turn right onto Comleroy Road. To get to the Newnes area from Sydney: Take the Great Western Highway to Lithgow, then Castlereagh Highway towards Mudgee Turn right at Lisdale on to Wolgan Road and"
- },
- "wollumbin-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wollumbin-national-park/visitor-info",
-  "kind": "official",
-  "quote": "Approximately 12km from Murwillumbah, before you reach Uki, turn right into Mount Warning Road."
- },
- "woomargama-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/woomargama-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Albury: Travel north on Hume Highway Take the Woomargama exit Turn right into Tunnel Road and travel about 10km to the park’s boundary"
- },
- "wyrrabalong-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wyrrabalong-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From The Entrance: Drive north on Wilfred Barrett Drive to reach the northern section of the park Take The Entrance Road, then Bateau Bay Road to reach the southern section of the park"
- },
- "yanga-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/yanga-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Balranald, take the Sturt Highway east for 7km. Turn south onto Old Sturt Highway at Yanga rest area. Turn left at the Yanga National Park sign and drive 2km along the main road where you will arrive at the park office and Yanga Homestead."
- },
- "yarriabini-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/yarriabini-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Macksville: Travel south on the Pacific Highway for approximately 7km Turn left into Albert Drive and follow the signs for ‘Yarrahapinni Mountain’ or ‘Yarriabini National Park’ Turn left onto the continuation of Albert Drive and follow for 400m Turn right into Rosewood Road and follow all the way into the park From Kempsey: Travel north on"
- },
- "yengo-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/yengo-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Wisemans Ferry Travel across the Hawkesbury River by ferry from Old Northern Road After exiting the ferry turn left Drive along Settlers Road to the historic town of St Albans Follow Wollombi Road to Mogo campground and the southern precinct of the park. From Cessnock Follow Wollombi Road to Wollombi Turn right into Great North Road near"
- },
- "yuraygir-national-park-nsw": {
-  "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/yuraygir-national-park/visitor-info",
-  "kind": "official",
-  "quote": "From Grafton: Drive south on the Pacific Highway for 10km, then take the Wooli and Minnie Water turnoff. Continue for 25km then, at the T-intersection, turn left to Minnie Water to get to Illaroo camping area, or right to Wooli. From Wooli Road, turn left onto Diggers Camp Road to get to the Boorkoom camping area and Wilsons Headland picnic area."
- },
- "ben-lomond-national-park-tas": {
-  "url": "https://parks.tas.gov.au/explore-our-parks/ben-lomond-national-park",
-  "kind": "official",
-  "quote": "From Hobart, the park is a 3 hour drive north on the Midlands Highway (A1)."
- },
- "douglas-apsley-national-park-tas": {
-  "url": "https://parks.tas.gov.au/explore-our-parks/douglas-apsley-national-park",
-  "kind": "official",
-  "quote": "Thompsons Marshes, at the northern end of the park, can only be reached on foot or via high clearance 4WD using the Forestry ‘E’ Road 24km north of Bicheno.​​​​​ Where possible, please avoid driving in our reserves at night."
- },
- "franklin-gordon-wild-rivers-national-park-tas": {
-  "url": "https://parks.tas.gov.au/explore-our-parks/franklin-gordon-wild-rivers-national-park",
-  "kind": "official",
-  "quote": "From Hobart, travel west for 2.5 hours via the Lyell Highway."
- },
- "freycinet-national-park-tas": {
-  "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park",
-  "kind": "official",
-  "quote": "Turn off the Tasman Highway (A3) onto the Coles Bay  Road (C302), 12km south of Bicheno."
- },
- "hartz-mountains-national-park-tas": {
-  "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park",
-  "kind": "official",
-  "quote": "From Geeveston, turn right onto Arve Road (C632) and follow it for around 13 km until you reach the turn-off that is clearly signposted to the park."
- },
- "mount-william-national-park-tas": {
-  "url": "https://parks.tas.gov.au/explore-our-parks/mount-william-national-park",
-  "kind": "official",
-  "quote": "From Launceston, travel to Gladstone via Scottsdale (A3 and B82 – around 3 hours’ drive), or via the East Tamar and Bridport (A8 and B82 – around 2 hours’ drive)."
- },
- "narawntapu-national-park-tas": {
-  "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park",
-  "kind": "official",
-  "quote": "The main section of the park, Springlawn and Bakers Beach, is accessible from B71, 30 minutes east of Devonport and the ferry terminal, B72 north of Westbury or north west from Launceston following the Tamar Highway (A7) and turning left at Exeter on to the B71."
- },
- "rocky-cape-national-park-tas": {
-  "url": "https://parks.tas.gov.au/explore-our-parks/rocky-cape-national-park",
-  "kind": "official",
-  "quote": "Take the Bass Highway (A2) 12km west of Wynyard to the Boat Harbour turn off and travel 1.5km on the C232."
- },
- "southwest-national-park-tas": {
-  "url": "https://parks.tas.gov.au/explore-our-parks/southwest-national-park",
-  "kind": "official",
-  "quote": "Getting there Show more/less Buy a map from TasMap ​Via Cockle Creek​ ​​​To access Southwest National Park via Cockle Creek, drive 2 hours south of Hobart via Geeveston on the A6."
- },
- "tasman-national-park-tas": {
-  "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park",
-  "kind": "official",
-  "quote": "This is a 12km drive along an unsealed road but is suitable for 2WD vehicles and mountain bikes."
- },
- "walls-of-jerusalem-national-park-tas": {
-  "url": "https://parks.tas.gov.au/explore-our-parks/walls-of-jerusalem-national-park",
-  "kind": "official",
-  "quote": "Follow this road for 1.5km to the Walls of Jerusalem car park."
- }
+  "lake-tekapo": {
+    "url": "https://en.wikivoyage.org/wiki/Lake_Tekapo",
+    "kind": "wikivoyage",
+    "quote": "By car [ edit | edit source ] It is about 60 km north of Twizel on State Highway 8, the Central Southern Alps Highway , 2.5 hours south-west of Christchurch and three hours north of Queenstown ."
+  },
+  "east-cape": {
+    "url": "https://en.wikivoyage.org/wiki/East_Cape",
+    "kind": "wikivoyage",
+    "quote": "Take State Highway 2 from Auckland , Tauranga or Wellington ."
+  },
+  "bay-of-islands": {
+    "url": "https://en.wikivoyage.org/wiki/Bay_of_Islands",
+    "kind": "wikivoyage",
+    "quote": "By car [ edit | edit source ] State Highway 1 from Whangarei and Auckland runs through Kawakawa on its way to Kaitaia ."
+  },
+  "hokianga": {
+    "url": "https://en.wikivoyage.org/wiki/Hokianga",
+    "kind": "wikivoyage",
+    "quote": "From Dargaville drive 54 km northwards on State Highway 12 (SH 12) past the Waipoua Forest info spot."
+  },
+  "waipoua-forest": {
+    "url": "https://en.wikivoyage.org/wiki/Waipoua_Forest",
+    "kind": "wikivoyage",
+    "quote": "The drive is roughly an hour from Dargaville or 20 minutes from Omapere."
+  },
+  "lake-te-anau": {
+    "url": "https://en.wikivoyage.org/wiki/Te_Anau",
+    "kind": "wikivoyage",
+    "quote": "Turn off the Queenstown - Invercargill highway just north of Lumsden onto SH94."
+  },
+  "coromandel-peninsula": {
+    "url": "https://en.wikivoyage.org/wiki/Coromandel_Peninsula",
+    "kind": "wikivoyage",
+    "quote": "Thames , the gateway to the Coromandel, is located within an hour and a half drive of the major centres of Auckland (115 km) and Hamilton (107 km) and their airports, and yet the region is a world away from the hustle and bustle of those cities."
+  },
+  "fox-glacier": {
+    "url": "https://en.wikivoyage.org/wiki/Fox_Glacier",
+    "kind": "wikivoyage",
+    "quote": "The drive from Franz Josef is about 30 minutes."
+  },
+  "abercrombie-river-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/abercrombie-river-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Turn onto the Arkstone Road from the Oberon-Goulburn Road, 7km south of Black Springs."
+  },
+  "arakoon-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/arakoon-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Take South West Rocks Road along the Macleay River from East Kempsey (37km) Or take Tourist Route 12 from South Kempsey to travel via Crescent Head (80km)."
+  },
+  "arakwal-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/arakwal-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Drive 3.2km from the town centre along Lawson Street and Lighthouse Road Turn right into Tallow Beach Road and drive to the end where the Cosy Corner carpark is located Park entry points Arakwal National Park See on map By bike Check out the Bicycle information for NSW website for more information."
+  },
+  "bald-rock-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/bald-rock-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Turn right onto Naas Street at the northern end of town and follow the sealed Mount Lindesay Road towards Woodenbong for 27km."
+  },
+  "barrington-tops-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/barrington-tops-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Dungog, take Chichester Dam Road for about 10km before turning left on Salisbury Road."
+  },
+  "beowa-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/beowa-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Drive south along the Princes Highway from Pambula for around 9km and turn left onto Haycock Road."
+  },
+  "boonoo-boonoo-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/boonoo-boonoo-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Drive for 21km down sealed Mount Lindesay Road, passing Basket Swamp National Park."
+  },
+  "border-ranges-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/border-ranges-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Travel 15km north along the Summerland Way to Wiangaree and then turn right onto Lynches Creek Road."
+  },
+  "brindingabba-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/brindingabba-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Drive 175km north-west of Bourke down scenic Hungerford-Bourke Road which is part of the Dowling Track outback route from Bourke to Birdsville."
+  },
+  "capertee-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/capertee-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Turn east onto Glen Davis Road Travel 29km to the junction with Glen Alice Road and veer left Drive another 21km through Glen Alice, towards Rylstone, and turn left onto the unsealed Port Macquarie Road."
+  },
+  "cascade-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/cascade-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Head north via Hickory Street and Vine Street Follow the signs to Megan (14km) via Coramba Road Continue onto Megan­–Briggsvale Road Turn left just before Megan Hall and continue along Megan–Briggsvale Road for another 7km before arriving at Cascade Park entry points Megan-Briggsvale Road access See on map By bike Check out the Bicycle information for NSW website for more information."
+  },
+  "berowra-valley-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/berowra-valley-national-park/visitor-info",
+    "kind": "official",
+    "quote": "For the Great North walk, Benowie walking track and Jungo walk from the M2 motorway: Take the Pennant Hills Road exit and head north Turn left at Observatory Park to stay on Pennant Hills Road Turn left onto Boundary Road in Pennant Hills Turn right onto Bellamy Street and follow all the way to the end of the road, where the tracks begin From"
+  },
+  "biamanga-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/biamanga-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Biamanga National Park is 23km north of Bega. To get there from Bega: Drive north-east along Dr George Mountain Road Turn left on to Mumbulla Creek Road at the Biamanga Cultural Area sign Continue along Mumbulla Creek Road and turn left at the intersection with Tee Ridge Road, to remain on Mumbulla Creek Road Turn right on to Mumbulla Creek Falls"
+  },
+  "bindarri-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/bindarri-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Coffs Harbour to the eastern precinct of the park: Take Coramba Road west from central Coffs Harbour Turn left at Karangi onto Upper Orara Road Turn right at Upper Orara onto Dairyville Road and follow to the park entrance From Coffs Harbour to the western precinct of the park: Take Coramba Road west from central Coffs Harbour Continue to"
+  },
+  "blue-mountains-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/blue-mountains-national-park/visitor-info",
+    "kind": "official",
+    "quote": "To get to Blue Mountains National Park there: From Sydney: Take the M4 and the Great Western Highway for Glenbrook, the southern side of the Lower Grose Valley, Katoomba and Blackheath areas. The Southern Blue Mountains area is accessed via Oberon or Jenolan Caves. From Richmond via Bells Line of Road: Take the Bells Line of Road for the northern"
+  },
+  "bongil-bongil-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/bongil-bongil-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Coffs Harbour and Urunga: Take the Reptom / Mylestom exit from the new Pacific Highway Take Perry's Hill Road from the old Pacific Highway Perry's Hill Road becomes Tuckers Road From Sawtell: Take Boronia Street to access Sawtell headland Take Lyons Road for Bonville Estuary and Bongil picnic area"
+  },
+  "booti-booti-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/booti-booti-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Forster: Head south along the Lakes Way It’s 20km to Ruins campground and the Great Lakes Park Office From Newcastle: Head north on the Pacific Highway Just past Bulahdelah, turn right onto The Lakes Way (signposted ‘Seal Rocks’). Follow The Lakes Way for approximately 55km to Pacific Palms Continue along The Lakes Way until you see Ruins"
+  },
+  "bouddi-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/bouddi-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Sydney Follow the F3 and take the Gosford exit. Follow the signs to Woy Woy, then Kincumber. Take Maitland Bay Drive, then Empire Bay Drive. Look for The Scenic Road at Killcare Heights and take Putty Beach Road. Driving from Gosford Follow the Central Coast Highway towards Erina. Turn right onto Avoca Drive and continue through Kincumber."
+  },
+  "bournda-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/bournda-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Tathra: Travel south towards Merimbula on Sapphire Coast Drive From Bega: Take the Tathra Road (Snowy Mountains Highway) toward Tathra Turn right onto Sapphire Coast Drive and continue south towards Merimbula From Merimbula: Travel north towards Tathra on Sapphire Coast Drive"
+  },
+  "brindabella-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/brindabella-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Canberra: Travel west along Uriarra Road to Brindabella Road The dirt road starts along Brindabella Road, which takes you to the southern edge of Brindabella National Park. There is no public access to the eastern side of the park from Mountain Creek Road. Doctors Flat Road is a private road, and is locked between Mountain Creek Road and"
+  },
+  "broadwater-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/broadwater-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Ballina: Follow Pacific Highway south Turn left onto Macdonald Street where there will be signs for Evans Head Continue onto Evans Head-Broadwater Road Park entrance is on the left"
+  },
+  "budawang-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/budawang-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Milton to Long Gully: Follow the signs to Pigeon House Mountain Didthul. Rather than turning onto Pigeon House Road, continue on Yadboro Road and cross Clyde River, merging onto the Western Distributor. Turn right onto Long Gully Road and continue to the campground From Braidwood or Mongarlowe to Mount Budawang: From Charleys Forest Road or"
+  },
+  "bungonia-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/bungonia-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Canberra: Take the Goulburn turnoff from the Hume Highway (at the Big Merino). Drive into town along Hume Street, which becomes Cowper Street. Turn right into Clinton Street and after a few minutes, you’ll see signs to Bungonia State Conservation Area, which will lead you to the park. Follow these signs for approximately 25 minutes From"
+  },
+  "carrai-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/carrai-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Armidale, head to Walcha and take the Oxley Highway to Kangaroo Flat Road. Follow the signs to Werrikimbe National Park, then take the Racecourse Trail through to Coachwood Road to Kookaburra, then Carrai Road."
+  },
+  "cathedral-rock-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/cathedral-rock-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Armidale: Drive east on Barney Street, which soon becomes Grafton Road and later Waterfall Way (all State Route 78) for 70km, passing through Argyle and Wollomombi. To access Barokee campground, take the Round Mountain Road turnoff on the left and after 8km of narrow gravel road, turn right into the campground. To access Native Dog"
+  },
+  "cattai-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/cattai-national-park/visitor-info",
+    "kind": "official",
+    "quote": "To get there from Windsor, take Metroroad 2 and turn left into Pitt Town Road. Turn right into Tourist Drive 15 and continue along Cattai Road to Cattai Creek, where the road becomes Wisemans Ferry Road. The park entry gate will be about 100m along on your left."
+  },
+  "chaelundi-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/chaelundi-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Nymboida: Drive 5km south along Armidale-Grafton Road, then turn right onto Boundary Creek Road. Follow Boundary Creek Road for around 23km, until you reach Link Road. From Dundurrabin: Take the Sheep Station Creek turn-off on Armidale-Grafton Road at Dundurrabin. Continue along Chaelundi Road, stopping at Vista Point for the views into"
+  },
+  "clyde-river-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/clyde-river-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Batemans Bay: Travel north on the Princes Highway, then turn left onto the Kings Highway at the roundabout after the Batemans Bay bridge. Drive for approximately 3km along the Kings Highway Turn left into Rotary Drive, which is the entrance to the park. From Braidwood: Travel on the Princes Highway towards Batemans Bay Continue through the"
+  },
+  "cocoparra-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/cocoparra-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Griffith: Travelling east along Burley Griffin Way from town centre, turn left onto Crossing Street. Turn right onto Wakaden Street. This becomes Rankin Springs Road, and then Beelbangera Road as you pass through Beelbangera. At Yenda, turn left onto Myall Park Road. Turn right onto Mount Bingar Road, which will take you into the park. Road"
+  },
+  "conimbla-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/conimbla-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Cowra: Travel 9km west along the Mid-Western Highway. Turn right onto Barryrennie Road, following the signs to Conimbla National Park. Continue for 17km, then turn left into the Wallaby picnic area carpark. From Gooloogong: From Gooloogong town centre, turn onto Kangarooby Road. Follow the signs to Conimbla National Park. Continue for 24km,"
+  },
+  "conjola-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/conjola-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Conjola National Park is accessible via a number of points along the Princes Highway – look for the signposts to particular areas. From Sussex Inlet, take The Springs Road to Goonawarra Drive and other park roads. From Ulladulla or Bendalong, turn north from Bendalong Road onto Cedar Road to reach the Monument Beach picnic area."
+  },
+  "coolah-tops-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/coolah-tops-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Coolah: Head east on the sealed Coolah Creek Road for approximately 19km Turn right onto unsealed The Tops Road Continue along this unsealed road with some steep climbs for another 11km before entering the park"
+  },
+  "coorabakh-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/coorabakh-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From the townships of Coopernook and Moorland: Take Forest Drive Road from south to north Travel through Coopernook State Forest and follow signs to Coorabakh National Park To access the park, visitors are strongly advised to contact the NSW Forestry Cooperation to ensure access via Comboyne State Forest and Lansdowne State Forest is open. Contact"
+  },
+  "cottan-bimbang-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/cottan-bimbang-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From either Walcha or Wauchope: Follow Oxley Highway , which leads directly through Cottan-Bimbang National Park."
+  },
+  "crowdy-bay-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/crowdy-bay-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Laurieton: For northern access to the park drive along Diamond Head Road From Harrington: For southern access to the park drive along Crowdy Head Road"
+  },
+  "culgoa-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/culgoa-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Bourke: One route follows the dirt River Road to Weilmoringle, where you turn left onto Enngonia Road. This is approximately 180km. A sealed road option via Brewarrina is approximately 220km, though the last 20km from Weilmoringle is unsealed"
+  },
+  "cunnawarra-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/cunnawarra-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Travel west along Waterfall Way towards Armidale Turn left to stay on Waterfall Way towards Armidale After about 7.6km, turn left onto Point Lookout Road."
+  },
+  "deua-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/deua-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Braidwood: Drive south along Cooma Road for 30 minutes Turn left at the sign to Berlang/The Big Hole From Moruya: Drive west along the Araluen Road for 45 minutes until you reach Deua River campgrounds From Cooma: Drive northeast along the Numeralla Road for 70 minutes to Middle Mountain Road and turn right into the park"
+  },
+  "dharawal-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/dharawal-national-park/visitor-info",
+    "kind": "official",
+    "quote": "You can access the park through any of three entry points. From Helensburgh to the park’s eastern entry, turn left onto Old Princes Highway/​State Route 60. Turn right onto Darkes Forest Road and continue along to the park entry at Maddens Falls. From Campbelltown to the park’s northwestern entry, head south on Wedderburn Road, then turn right"
+  },
+  "dharug-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/dharug-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Sydney take Galston Road from Hornsby or the Old Northern Road from Castle Hill or Dural, these roads join at Middle Dural to become the Old Northern Road. This takes you north to Wisemans Ferry, where you can take your car across the Hawkesbury river on the car ferry or leave it on the south side and cross as a pedestrian to enter the park."
+  },
+  "dooragan-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/dooragan-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Port Macquarie via Ocean Drive: Travel south out of Port Macquarie on Ocean Drive for around 33km, following signs via Lake Cathie, Bonny Hills, and then to Laurieton. At Laurieton, turn towards Kew and continue on Ocean Drive for around 0.5km. Travel 5km up Captain Cook Bicentennial Road From Port Macquarie via Pacific Highway: Follow Oxley"
+  },
+  "dorrigo-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/dorrigo-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Armidale, drive east along the Waterfall Way for about 90 minutes. You'll see the park turnoff on the left, about 2km past Dorrigo. From Coffs Harbour: Travel south along the Pacific Highway, cross the Bellinger River and take the Waterfall Way exit to Dorrigo via Bellingen. Approximately 2km before Dorrigo township, turn right at Dome Road"
+  },
+  "dthinna-dthinnawan-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/dthinna-dthinnawan-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Tenterfield: Follow Rouse Street/New England Highway north out of Tenterfield. After about 4km, you’ll turn left at Bruxner Highway and follow west for approximately 100km/1hr to Bonshaw (last petrol station/shop) From Bonshaw, continue west for 40km and turn right at the cream and pink house-shaped ‘Inverary Homestead’ mailbox. Directly"
+  },
+  "dunggir-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/dunggir-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Bowraville: Follow North Arm Road west from Bowraville for 2km Turn left into Buckra Bendinni Road and follow this for 7km Turn left into Hanging Rock Road and follow it for 11km to reach the park boundary"
+  },
+  "everlasting-swamp-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/everlasting-swamp-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Drive 20km north-east on Lawrence Road."
+  },
+  "gaagal-wanggaan-south-beach-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/gaagal-wanggaan-south-beach-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Macksville: Drive 4km south along Pacific Highway Take the turn-off to Scotts Head At Scotts Head, follow the directions to the boat ramp at Weir Reserve. Continue along South Pacific Drive and South Beach access trail"
+  },
+  "gardens-of-stone-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/gardens-of-stone-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Lithgow: Head north on the Castlereagh Highway to Ben Bullen Turn right for the 4WD road to Baal Bone Gap picnic area From Lidsdale: Follow the Wolgan Valley Road towards Newnes. The valley road descends below the cliffs of Gardens of Stone and Wollemi National Parks. Donkey Mountain is just past the Wolgan valley resort, great for climbing"
+  },
+  "garigal-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/garigal-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Garigal National Park starts 12km north of Sydney CBD and covers bushland from Middle Harbour Creek north to Mona Vale Road and east to the Wakehurst Parkway and Deep Creek."
+  },
+  "georges-river-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/georges-river-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Sutherland, head west on River Road, then turn right onto Alfords Point Road and turn left onto Henry Lawson Drive. The park entry is approximately 1.5km on the left. From Liverpool, head east along the M5 and continue for approximately 5.5km. Turn left towards the river at Carinya Road and follow the road along the river until you reach the"
+  },
+  "gibraltar-range-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/gibraltar-range-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Glen Innes: If travelling along the New England Highway, the park is best accessed via the Gwydir Highway, turning east at the roundabout in the middle of town and follow the signs towards Grafton. From Grafton If travelling via the Pacific Highway, turn west onto the Gwydir Highway in Grafton and follow the signs to Glen Innes. You will"
+  },
+  "goobang-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/goobang-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Dubbo: Travel 48km south on Newell Highway towards Parkes then turn left onto Gundong Road just before Tomingley, following the signs to Goobang National Park. The entrance to the park is 12km along Gundong Road on the right. From Parkes: Travel 70km north on Newell Highway towards Dubbo through Peak Hill and Tomingley. 3.5km north of"
+  },
+  "goolawah-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/goolawah-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Kempsey: Take Crescent Head Road from South Kempsey Just after entering the village of Crescent Head, take the prominent right turn on Point Plomer Road. You’ll find the entrance to Goolawah National Park about 1km along Point Plomer Road"
+  },
+  "goulburn-river-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/goulburn-river-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Goulburn River National Park is accessible from a number of towns in the area. From Mudgee, follow Wollar Road From Merriwa, follow Ringwood Road From Denman, go along the Denman to Wollar Road – it follows long stretches of the Goulburn River."
+  },
+  "gundabooka-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/gundabooka-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Bourke: Drive south from Bourke on Kidman Way for approximately 49km and turn right onto Ben Lomond Road"
+  },
+  "guula-ngurra-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/guula-ngurra-national-park/visitor-info",
+    "kind": "official",
+    "quote": "There are 3 entry points to Guula Ngurra National Park, 1 at each area (Little Forest West, Mount Penang and Tugalong). To get there from Sydney or Goulbourn: Follow the M31 and take the Illawarra Highway – Moss Vale exit, following signs to Canyonleigh. Continue for 10km on the Canyonleigh Road, then turn right onto Tugalong Road. From entering"
+  },
+  "guy-fawkes-river-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/guy-fawkes-river-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Dorrigo or Armidale: Access via Waterfall Way and Chaelundi Road From Grafton: Access via Old Grafton Road, then Chaelundi Road."
+  },
+  "hat-head-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/hat-head-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Kempsey: From the Pacific Highway take the South West Rocks Road to Kinchela. Follow the signs to Hat Head National Park From Nambucca Heads: From the Pacific Highway take the South West Rocks Road via Gladstone Turn right onto the Hat Head Road at Kinchela and follow to the park"
+  },
+  "heathcote-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/heathcote-national-park/visitor-info",
+    "kind": "official",
+    "quote": "There is no private vehicle access permitted in Heathcote National Park, which is 35km south of Sydney. From Heathcote: On foot, enter the park along any of the walking tracks or from the main fire trail located between Woronora Dam Road and Heathcote Road, along the Water Board pipeline. You can also enter from Heathcote via Oliver Street. From"
+  },
+  "horton-falls-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/horton-falls-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Travel for 10km, then turn right onto Horton Falls Road."
+  },
+  "hunter-wetlands-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/hunter-wetlands-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Newcastle: Drive north along the Pacific Highway towards Hexham Just before Hexham McDonalds (on the left at the lights), turn right across the Ash Island Bridge."
+  },
+  "jerrawangala-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/jerrawangala-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Nowra: Take Albatross Road until you can see HMAS Albatross Turn right onto Braidwood Road Once you meet Turpentine Road, the park adjoins Braidwood Road, mainly along the road’s eastern side."
+  },
+  "jervis-bay-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/jervis-bay-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Jervis Bay National Park is made up of several sections, so there are multiple entry points. From Nowra: Take the Princes Highway southwards, then: For Lake Wollumboola, turn into Kalandar Street, Nowra, and follow the signs for Culburra Beach For Coonemia creek, Red Point or Hammerhead Point, take Forest Road off the highway, then follow the"
+  },
+  "kalyarr-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kalyarr-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Continue for 46km, then turn north onto Oxley Road."
+  },
+  "kamay-botany-bay-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kamay-botany-bay-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Sydney: The La Perouse area is at the end of Anzac Parade The Kurnell area is off Captain Cook Drive, access is via Rocky Point Road, off the Princes Highway Motorcycles and vehicles must be kept on public roads."
+  },
+  "kanangra-boyd-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kanangra-boyd-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Oberon: Turn off the main street onto Ross Street at the National Australia Bank, then follow the signs to Jenolan Caves and Kanangra-Boyd National Park. A pleasant 25-minute drive will take you to the park entrance From Katoomba: Head west along the Great Western Highway through Mount Victoria and Hartley Turn left onto Jenolan Caves Road."
+  },
+  "karuah-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/karuah-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Sydney: Travel north on Pacific Highway Approximately 17km after Raymond Terrace, turn left onto Bucketts Way Continue for approximately 9km then turn right onto Hobarts Road, just past Limeburners Creek."
+  },
+  "kinchega-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kinchega-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Broken Hill: Take Menindee Road, which becomes Nr Menindee - Broken Hill Road as you leave town This takes you all the way to Menindee and the entrance of Kinchega National Park From Ivanhoe: Take the Cobb Highway for 4km out of Ivanhoe Turn left onto Ivanhoe-Menindee Road and follow for 200km to Menindee and the entrance to Kinchega National"
+  },
+  "kings-plains-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kings-plains-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Glen Innes: Follow the signs from Glen Innes (off Gwydir Highway west of town). Following the signs, turn right onto Kings Plain Road. The final 25km of road is unsealed."
+  },
+  "koonaburra-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/koonaburra-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Turn left onto The Wool Track, following it for 92km."
+  },
+  "koreelah-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/koreelah-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Woodenbong: Travel west along Mount Lindesay Highway for approximately 22km Turn right at Old Koreelah onto White Swamp Road Travel for 12km to the north and you’ll see the campground on your left"
+  },
+  "kosciuszko-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kosciuszko-national-park/visitor-info",
+    "kind": "official",
+    "quote": "There are 7 areas in Kosciuszko National Park. To get there: From Canberra via Jindabyne to Thredbo-Perisher and Lower Snowy River areas: Travel around 100km along the Monaro Highway and through Cooma Continue onto Jindabyne Road (signs for Kosciuszko Road) for 45km to Jindabyne For Thredbo: follow Kosciuszko Road through Jindabyne for 3km then"
+  },
+  "ku-ring-gai-chase-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/ku-ring-gai-chase-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Turramurra: Enter the park from Bobbin Head Road, at North Turramurra. This is a good route to Bobbin Head and Appletree Bay. From Mt Colah or Asquith: Enter the park from Ku-ring-gai Chase Road, off the Pacific Motorway. Or from Belmont Parade if you are driving from Mount Colah. This gives you easy access to the large parking areas and"
+  },
+  "kwiambal-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kwiambal-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Inverell: Travel along Byron Street through the town centre passing Kamilaroi Park on your left. Head north along Ashford Road for about an hour, and once at Ashford turn left onto Frazer Street. Follow Frazer Street as it turns onto Wallangra Road and head west to the intersection with Sandy Creek Road. Turn right onto Sandy CReek Road and"
+  },
+  "lane-cove-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/lane-cove-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Sydney take the Pacific Highway to Chatswood and turn left into Fullers Road: Turn right into Lady Game Drive just before crossing the bridge Take the first left into Max Allen Drive for the northern side of the river OR Cross Fullers Bridge and then turn right into Riverside Drive, this will take you to the southern side of the river From"
+  },
+  "livingstone-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/livingstone-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Wagga Wagga: The northern end of Livingstone National Park can be reached via Holbrook Wagga Road, O’Brian’s Creek Road and Wrigley’s Road, approximately 30km south of Wagga Wagga. To access the southern end of the park, take Holbrook Road from Wagga Wagga for approximately 33km. Turn left onto Burrandana Road and travel approximately 10km."
+  },
+  "macquarie-pass-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/macquarie-pass-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Take the Princes Highway and Southern Freeway to the Illawarra Highway turnoff at Haywards Bay Travel about 14km along the Illawarra Highway, which veers right in Albion Park, to Macquarie Pass National Park."
+  },
+  "marramarra-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/marramarra-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Hornsby: Follow Galston Road through Galston Gorge To access the southern precinct, turn right into Arcadia Road, then after approximately 4km, turn left into Cobah Road and continue along Bloodwood Road to the park. To access the northern precinct, continue through Galston and turn right onto Old Northern Road, then after approximately 18km,"
+  },
+  "mebbin-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mebbin-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Murwillumbah: Take Kyogle Road from Murwillumbah, then turn right onto Tyalgum Road. At Tyalgum Road, turn left onto Brays Creek Road, which continues on to Byrrill Creek Road. This road becomes unsealed for several kilometres. Turn right on to Mebbin Forest Road (be careful - this intersection is on a hairpin bend). This then leads into the"
+  },
+  "meroo-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/meroo-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Ulladulla: Drive approximately 5km south on Princes Highway to the start of Meroo National Park For the Lagoon Head precinct, turn left onto Pot Holes Road approximately 7km south of Ulladulla For the Termeil Point precinct, turn left onto Blackbutt Road approximately 14km south of Ulladulla For the Meroo Head precinct, turn left onto Meroo"
+  },
+  "middle-brother-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/middle-brother-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Port Macquarie: Drive west along Oxley Highway for about 15mins until you reach Pacific Highway. Turn left onto Pacific Highway, heading south for about 25mins. Turn right at Haydons Road or Middle Brother Road and follow the signs to the national park."
+  },
+  "mimosa-rocks-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mimosa-rocks-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Bermagui follow the main Tathra-Bermagui Road. From Bega, take the Tathra Road off of the Princes Highway at Bega and turn north on the Tathra - Bermagui Road. From Merimbula take Sapphire Coast Drive north to Tathra. Side roads from Tathra-Bermagui Road, north of Tathra will take you to all areas of the park."
+  },
+  "monga-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/monga-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Braidwood: Travel east along Kings Highway towards Batemans Bay After approximately 20km, turn right into River Forest Road. After approximately 2km, you’ll enter the park. From Batemans Bay : Travel west along Kings Highway towards Braidwood After approximately 40km, turn left into River Forest Road. After approximately 2km, you’ll enter the"
+  },
+  "morton-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/morton-national-park/visitor-info",
+    "kind": "official",
+    "quote": "It's half an hour drive from Moss Vale to Fitzroy Falls and Belmore Falls along Nowra Road. Turn north onto Myra Vale Road just east of Fitzroy Falls. From Nowra, take the Princes Highway to the Southern Highlands via Kangaroo Valley. From Wollongong it’s about an hour to Fitzroy Falls and Belmore Falls along the Illawarra Highway. Turn south at"
+  },
+  "mount-imlay-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mount-imlay-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Eden: Travel south on Princes Highway Turn right onto Burrawang Forest Road, also known as Mount Imlay Road, 19km south of Eden. Continue driving through East Boyd State Forest to Mount Imlay carpark and Burrawang picnic area"
+  },
+  "mount-jerusalem-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mount-jerusalem-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Follow Jubilee Ave, which becomes Coolamon Scenic Drive, for 2km."
+  },
+  "mount-kaputar-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mount-kaputar-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Mt Kaputar Summit from Narrabri: Drive south along Old Gunnedah Road, then turn left onto Kaputar Road. Continue along Kaputar Road for around 27km until you reach the park entrance From here the road to the summit is steep and winding, with sections of unsealed road. No caravans or large motorhomes are permitted beyond this point Sawn Rocks from"
+  },
+  "mount-royal-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mount-royal-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Singleton: Travelling north, drive through Singleton on New England Highway. Turn right onto Bridgeman Roa d at Dunolly and after approximately 15km, veer left into Mount Royal Road at Carrowbrook. Follow this unsealed road for about 7km"
+  },
+  "mummel-gulf-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mummel-gulf-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Oxley Highway, take Enfield Road and drive for 12km, turning right into Mummel Forest Road. From Nowendoc, take Brackendale Road and then turn right into Mummel Forest Road."
+  },
+  "mungo-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mungo-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Follow the signs to Ivanhoe (Ivanhoe Road) for 53km Turn left 3km after Box Creek Bridge (signposted) and follow this road until you reach the park From Wentworth:"
+  },
+  "murramarang-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/murramarang-national-park/visitor-info",
+    "kind": "official",
+    "quote": "There are multiple entry points to Murramarang National Park, leading from the Princes Highway. Take the Bawley Point and Kioloa turn off at Termeil to get to Pretty Beach Turn off at either Pebbly Beach Road or Mount Agony Road to get to Pebbly Beach Turn off at East Lynne onto Mount Agony Road, then take the right fork onto North Durras Road to"
+  },
+  "murrumbidgee-valley-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/murrumbidgee-valley-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Narrandera to Murrumbidgee Irrigation Area 1 (MIA 1): Travel northwest on Irrigation Way for about 12km. Turn left off Irrigation Way at the signpost for MIA 1. Follow access road in southerly direction for about 2.5km to grid. This is Grahams Grave entrance to MIA 1. From Narrandera to Murrumbidgee Irrigation Area 2 (MIA 2): Head south along"
+  },
+  "mutawintji-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mutawintji-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Broken Hill Take the Silver City Highway towards Tibooburra and look for the Mutawintji National Park turnoff or Take the Barrier Highway 75km from Broken Hill Consult maps, GPS and local visitor centre information for travel distances, times and road conditions."
+  },
+  "myall-lakes-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/myall-lakes-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From the Pacific Highway take: Tea Gardens Road to access the Myall River and Bombah Broadwater precincts of the park Bombah Point Road to access the Boolambayte and Bombah Broadwater precincts of the park Seal Rocks Road to access the Sugarloaf Point to Shelley Beach precinct of the park There is a vehicle ferry at Bombah Point which provides"
+  },
+  "nangar-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/nangar-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Eugowra: Travel 10km along Escort Way (Eugowra – Orange Road) The park entrance sign is at the intersection with Dripping Rock Road Turn right here and travel 2.5km along Dripping Rock Road, where you’ll cross a cattle grid into the park. From Orange: Travel 70km along Escort Way (otherwise known as Forbes Road) The park entrance sign is at"
+  },
+  "narriearra-caryapundy-swamp-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/narriearra-caryapundy-swamp-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Turn right onto Tibooburra Road and head towards Wanaaring for 26km, to where Tibooburra Road becomes Narriearra Road."
+  },
+  "nattai-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/nattai-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Vehicle access points are located at Wollondilly lookout off Wombeyan Caves Road (follow Wombeyan Caves Road from Mittagong heading west for approx 30km) and off Wattle Ridge Road (turn off Wilson Drive at Hill Top onto Coates Road then Wattle Ridge Road and follow for about 7km)."
+  },
+  "new-england-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/new-england-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Dorrigo: Travel west along Waterfall Way towards Armidale Turn left and continue through the township of Ebor After Ebor, turn left to stay on Waterfall Way heading towards Armidale. After about 7.6km, turn left onto Point Lookout Road which continues until the park entrance. From Armidale: Travel east along Waterfall Way towards Ebor and"
+  },
+  "nightcap-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/nightcap-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Lismore: Drive 35km to the northern rivers area of NSW Road access is from one of five roads from the Richmond Valley in the south, four of which are unsealed"
+  },
+  "nowendoc-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/nowendoc-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Nowendoc: Drive 6.5km south of Nowendoc on Thunderbolts Way, turn right into Wrights Road, and then access the park through Nowendoc State Forest. Alternatively, drive 18.5km north-west of Nowendoc on Thunderbolts Way, turn left into Wild Cattle Creek Road, and access the park through Nowendoc State Forest. Please note: there is no public"
+  },
+  "nymboi-binderay-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/nymboi-binderay-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Nymboida travel south for 2km, and turn left into Laytons Range Road. Black Mountain Road is 5.5km on the right. Access to The Junction camping area requires 4WD."
+  },
+  "nymboida-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/nymboida-national-park/visitor-info",
+    "kind": "official",
+    "quote": "To reach Nymboida River campground from Grafton (4WD required): Travel west along the Gwydir Highway from Grafton, and turn south onto Old Glen Innes Road 8km from Grafton. Travel along Old Glen Innes Road a further 32km to the top of the Buccarumbi Range Turn north onto Doboy Road, travelling a further 24km to Nymboida National Park and Nymboida"
+  },
+  "oolambeyan-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/oolambeyan-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Hay: Take Sturt Highway east towards Narrandera Turn right onto Carrathool-Conargo Road Turn right onto unsealed Gum Creek Road Turn right onto Oolambeyan Road, which leads to the homestead Please note the road into the park isn’t accessible after rain"
+  },
+  "oxley-wild-rivers-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/oxley-wild-rivers-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Walcha and Armidale there are numerous turnoffs along the Waterfall Way and Oxley Highway. Look for road signs to visitor sites within the park."
+  },
+  "paroo-darling-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/paroo-darling-national-park/visitor-info",
+    "kind": "official",
+    "quote": "To get to the Peery section of Paroo-Darling National Park: From the Barrier Highway at Wilcannia: Travel north along the sealed road to White Cliffs (90km) Then travel east along the unsealed Mandalay Road (20km) Or from Wilcannia, travel north up the unsealed Wanaaring Road (80km) To get to the Wilga section of Paroo-Darling National Park: From"
+  },
+  "popran-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/popran-national-park/visitor-info",
+    "kind": "official",
+    "quote": "After 13km turn left into Wisemans Ferry Road After a further 8km turn left into Ironbark Road."
+  },
+  "richmond-range-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/richmond-range-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Kyogle: Leave Summerland Way south of Kyogle at McDonalds Bridge Road Travel along Edenville Road, which becomes Sextonville Road. Turn right onto Cambridge Plateau scenic drive and travel north to Richmond Range National Park From Casino: Drive west along the Bruxner Highway along Route 44 Turn north at Cambridge Plateau scenic drive near"
+  },
+  "royal-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/royal-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Sydney: Royal National Park's main entry points are along the Princes Highway Turn off the highway at either Farnell Avenue, just south of Loftus, or at McKell Avenue at Waterfall. From Wollongong: You can reach the park along the Princes Highway, or via Otford which is north of Stanwell Park. Roads in the Royal National Park can be extremely"
+  },
+  "saltwater-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/saltwater-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Taree or the Pacific Highway: Take Old Bar Road then turn right at Saltwater Road. Follow Saltwater Road to Saltwater National Park."
+  },
+  "scheyville-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/scheyville-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Parramatta: Travel north-west on Windsor Road to Boundary Road, Vineyard (6km east of Windsor) Turn north onto Boundary Road , and then west on Old Pitt Town Road. Turn north-east on Scheyville Road From Windsor: Take Windsor Road and turn east onto Pitt Town Road, then onto Saunders Road, then Scheyville Road. There are numerous gates where"
+  },
+  "sea-acres-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/sea-acres-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Getting there and parking Sea Acres National Park is on Pacific Drive, 5km south of Port Macquarie and adjacent to Shelly Beach Road quality Sealed roads Vehicle access 2WD vehicles Weather restrictions All weather By bike Check out the Bicycle Info website for more information Best times to visit Summer Head to the cool rainforest to escape the summer heat."
+  },
+  "seven-mile-beach-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/seven-mile-beach-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Sydney or Wollongong: Turn off the Princes Highway to Gerringong Drive south through Gerroa to reach the park From Nowra: Turn right off the Princes Highway at Bolong Road in Bomaderry Follow Bolong Road which becomes Gerroa Road to reach the park"
+  },
+  "south-east-forest-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/south-east-forest-national-park/visitor-info",
+    "kind": "official",
+    "quote": "There are many access points for South East Forest National Park and directions will vary depending on which part of the park you would like to visit. General directions are below. From Merimbula or Pambula, travel south along the Princes Highway. Turn right at Mount Darragh Road for access to Goodenia Rainforest and Wolumla Peak or continue"
+  },
+  "tallaganda-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/tallaganda-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Take Kings Highway east of Queanbeyan for about 3km, then turn right onto Captains Flat Road."
+  },
+  "tapin-tops-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/tapin-tops-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From: Wingham Take Elands Road and Wherrol Flat Road to Wherrol Flat At Wherrol Flat, turn left onto Dingo Tops Road. Follow Dingo Tops Road to Tapin Tops National Park"
+  },
+  "thirlmere-lakes-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/thirlmere-lakes-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Picton: Travel south along Remembrance Drive. Turn right onto Thirlmere Way and then right onto Richardson Street, veering left at Westbourne Avenue and continuing on Barbour Road. You can enter the park on Slades Road or Pumphouse Road. From Bargo: Head northwest on Remembrance Drive. At Tahmoor, turn left onto Bargo River Road and at"
+  },
+  "tomaree-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/tomaree-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Tomaree National Park is easily accessible from Nelson Bay and Anna Bay. It surrounds the towns of Boat Harbour, Shoal Bay and Fingal Bay. Take the Pacific Highway from Newcastle or Buladelah, turn east into Richardson Road and continue along Nelson Bay Road. For Anna Bay and Boat Harbour, turn right into Gan Gan Road For Shoal Bay and Fingal Bay,"
+  },
+  "tooloom-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/tooloom-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Woodenbong: From Mount Lindsay Highway, turn towards Urbenville on Urbenville-Koreelah Road. Continue for approximately 20km to Tooloom picnic area"
+  },
+  "toonumbar-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/toonumbar-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Kyogle: Leave the Summerland Way and travel west via Kyogle and Murray Scrub Road (approximately 35km) To reach the northern end of the park, take Coxs Road, which leaves the Summerland Way about 8km west of Grevillea to join Toonumbar Forest Drive."
+  },
+  "toorale-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/toorale-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Travel 10.5km north from Bourke on Hungerford Road Continue for 21.5km and turn left at the sign to Louth, onto the unsealed Toorale Road (Rural Local Road 10)."
+  },
+  "towarri-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/towarri-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Scone: From the town centre, drive west on Liverpool Street for 1.5km. Turn right at the roundabout onto Middlebrook Road Follow Middlebrook for 20km until you reach Towarri National Park. Please note: this drive includes 2km of unsealed road. From the New England Highway: Turn west on to Cressfield Road off the New England Highway 12.5km"
+  },
+  "turon-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/turon-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Sydney: Drive to Richmond, then follow State Route 40 along Bells Line of Road, through to Lithgow. Turn right onto Great Western Highway, diverge right onto Castlereagh Highway and merge onto State Route 86, heading for Mudgee. At Capertree, drive 1km further west on Castlereagh Highway and turn left onto gravel road to Turon National Park."
+  },
+  "ulidarra-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/ulidarra-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Travel north on Pacific Highway for approximately 5km Turn left onto Bruxner Park Road and continue winding your way up the escarpment past the banana farms At the Sealy lookout turn-off, continue west for approximately 1.8km and turn left into Orara East State Forest."
+  },
+  "wallarah-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wallarah-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Swansea: From the Pacific Highway, turn left onto Bowman Street. Continue along into Park Avenue and turn right onto Caves Beach Road Continue until you reach the locked gate at the end of Spoon Rocks Road From Gosford or Newcastle: Take the F3 to the Motorway Link (exit to Swansea), then continue along the Pacific Highway towards Swansea."
+  },
+  "wallingat-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wallingat-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Forster: Travel 30km south along Lakes Way to Sugar Creek Road From Bulahdelah: Head north on Pacific Highway Turn right at Lakes Way – it is signposted Forster Follow Lakes Way for approximately 40km to Sugar Creek Road (2.5kms past Bungwahl)"
+  },
+  "warrabah-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/warrabah-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Muluerindie is located 60km (1hour) west of Uralla, via Retreat Road."
+  },
+  "warrumbungle-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/warrumbungle-national-park/visitor-info",
+    "kind": "official",
+    "quote": "The turn-off to Warrumbungle National Park is clearly signposted. From Coonabarabran: Take Dalgarno Street west from Newell Highway/John Street Turn right onto Namoi Street, then turn left onto Eden Street Following signs for Warrumbungle National Park, travel along Timor Road/John Renshaw Parkway for approx. 35km. Following the signs within the"
+  },
+  "washpool-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/washpool-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Glen Innes, head east for around 78km and take the Coachwood Drive turnoff from the Gwydir Highway From Grafton, head west for around 93km and take the Coachwood Drive turnoff from the Gwydir Highway"
+  },
+  "watagans-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/watagans-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Newcastle: Travel south along the F3 Expressway and take the Awaba exit at Ryhope Turn right onto Cessnock Road and then left onto Freemans Drive at Freemans Waterhole Turn right onto Mount Faulk Road from Freemans Drive just after crossing over the F3 expressway for the second time Follow Mount Faulk Road uphill into the park From Gosford:"
+  },
+  "weddin-mountains-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/weddin-mountains-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Grenfell to Ben Halls campground: Travel 5.5km west along the Mid-Western Highway towards West Wyalong. Turn left onto Back Piney Range Road and follow the signs to Weddin Mountains National Park. Follow the road around for 23km and then turn left onto the park entrance road over the grid. Go through the State Forest and then turn left and"
+  },
+  "werrikimbe-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/werrikimbe-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Wauchope: Drive towards Beechwood on Beechwood Road After approximately 6.5km, turn onto Bellangry Road and follow for approximately 18km to Bellangry. After Bellangry, the road is unsealed and becomes known as Hastings Forest Way. Follow Hastings Forest Way for about 30km through the forest to the park boundary, then continue on another 8km"
+  },
+  "willandra-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/willandra-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Hillston: Drive north along High Street, through the roundabout and turn left on Mossgiel Road Travel west for 3.9km, then turn left onto Mossgiel Trunk Road and follow for 53km At the Trida-Whealbah intersection, turn right and drive 20km to the park entrance"
+  },
+  "willi-willi-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/willi-willi-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Wauchope: Take the Beechwood Road to Beechwood Then turn onto Bellangary Road Turn onto Hastings Forest Way Turn into Wilson River Road to reach the picnic area From Kempsey: Take the Armidale Road from West Kempsey After 35km turn onto Carrai Road at Toorooka near Willawarrin Turn onto Coachwood Road at Kookaburra"
+  },
+  "woko-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/woko-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Drive 14km north along Thunderbolts Way Turn onto Curricabark Road, then drive another 14km."
+  },
+  "wollemi-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wollemi-national-park/visitor-info",
+    "kind": "official",
+    "quote": "To get to the Colo area from Windsor: Take Wilberforce Road and Putty Road Or, head through Richmond and follow Bells Line of Road to Kurrajong, then turn right onto Comleroy Road. To get to the Newnes area from Sydney: Take the Great Western Highway to Lithgow, then Castlereagh Highway towards Mudgee Turn right at Lisdale on to Wolgan Road and"
+  },
+  "wollumbin-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wollumbin-national-park/visitor-info",
+    "kind": "official",
+    "quote": "Approximately 12km from Murwillumbah, before you reach Uki, turn right into Mount Warning Road."
+  },
+  "woomargama-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/woomargama-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Albury: Travel north on Hume Highway Take the Woomargama exit Turn right into Tunnel Road and travel about 10km to the park’s boundary"
+  },
+  "wyrrabalong-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wyrrabalong-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From The Entrance: Drive north on Wilfred Barrett Drive to reach the northern section of the park Take The Entrance Road, then Bateau Bay Road to reach the southern section of the park"
+  },
+  "yanga-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/yanga-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Balranald, take the Sturt Highway east for 7km. Turn south onto Old Sturt Highway at Yanga rest area. Turn left at the Yanga National Park sign and drive 2km along the main road where you will arrive at the park office and Yanga Homestead."
+  },
+  "yarriabini-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/yarriabini-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Macksville: Travel south on the Pacific Highway for approximately 7km Turn left into Albert Drive and follow the signs for ‘Yarrahapinni Mountain’ or ‘Yarriabini National Park’ Turn left onto the continuation of Albert Drive and follow for 400m Turn right into Rosewood Road and follow all the way into the park From Kempsey: Travel north on"
+  },
+  "yengo-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/yengo-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Wisemans Ferry Travel across the Hawkesbury River by ferry from Old Northern Road After exiting the ferry turn left Drive along Settlers Road to the historic town of St Albans Follow Wollombi Road to Mogo campground and the southern precinct of the park. From Cessnock Follow Wollombi Road to Wollombi Turn right into Great North Road near"
+  },
+  "yuraygir-national-park-nsw": {
+    "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/yuraygir-national-park/visitor-info",
+    "kind": "official",
+    "quote": "From Grafton: Drive south on the Pacific Highway for 10km, then take the Wooli and Minnie Water turnoff. Continue for 25km then, at the T-intersection, turn left to Minnie Water to get to Illaroo camping area, or right to Wooli. From Wooli Road, turn left onto Diggers Camp Road to get to the Boorkoom camping area and Wilsons Headland picnic area."
+  },
+  "ben-lomond-national-park-tas": {
+    "url": "https://parks.tas.gov.au/explore-our-parks/ben-lomond-national-park",
+    "kind": "official",
+    "quote": "From Hobart, the park is a 3 hour drive north on the Midlands Highway (A1)."
+  },
+  "douglas-apsley-national-park-tas": {
+    "url": "https://parks.tas.gov.au/explore-our-parks/douglas-apsley-national-park",
+    "kind": "official",
+    "quote": "Thompsons Marshes, at the northern end of the park, can only be reached on foot or via high clearance 4WD using the Forestry ‘E’ Road 24km north of Bicheno.​​​​​ Where possible, please avoid driving in our reserves at night."
+  },
+  "franklin-gordon-wild-rivers-national-park-tas": {
+    "url": "https://parks.tas.gov.au/explore-our-parks/franklin-gordon-wild-rivers-national-park",
+    "kind": "official",
+    "quote": "From Hobart, travel west for 2.5 hours via the Lyell Highway."
+  },
+  "freycinet-national-park-tas": {
+    "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park",
+    "kind": "official",
+    "quote": "Turn off the Tasman Highway (A3) onto the Coles Bay  Road (C302), 12km south of Bicheno."
+  },
+  "hartz-mountains-national-park-tas": {
+    "url": "https://parks.tas.gov.au/explore-our-parks/hartz-mountains-national-park",
+    "kind": "official",
+    "quote": "From Geeveston, turn right onto Arve Road (C632) and follow it for around 13 km until you reach the turn-off that is clearly signposted to the park."
+  },
+  "mount-william-national-park-tas": {
+    "url": "https://parks.tas.gov.au/explore-our-parks/mount-william-national-park",
+    "kind": "official",
+    "quote": "From Launceston, travel to Gladstone via Scottsdale (A3 and B82 – around 3 hours’ drive), or via the East Tamar and Bridport (A8 and B82 – around 2 hours’ drive)."
+  },
+  "narawntapu-national-park-tas": {
+    "url": "https://parks.tas.gov.au/explore-our-parks/narawntapu-national-park",
+    "kind": "official",
+    "quote": "The main section of the park, Springlawn and Bakers Beach, is accessible from B71, 30 minutes east of Devonport and the ferry terminal, B72 north of Westbury or north west from Launceston following the Tamar Highway (A7) and turning left at Exeter on to the B71."
+  },
+  "rocky-cape-national-park-tas": {
+    "url": "https://parks.tas.gov.au/explore-our-parks/rocky-cape-national-park",
+    "kind": "official",
+    "quote": "Take the Bass Highway (A2) 12km west of Wynyard to the Boat Harbour turn off and travel 1.5km on the C232."
+  },
+  "southwest-national-park-tas": {
+    "url": "https://parks.tas.gov.au/explore-our-parks/southwest-national-park",
+    "kind": "official",
+    "quote": "Getting there Show more/less Buy a map from TasMap ​Via Cockle Creek​ ​​​To access Southwest National Park via Cockle Creek, drive 2 hours south of Hobart via Geeveston on the A6."
+  },
+  "tasman-national-park-tas": {
+    "url": "https://parks.tas.gov.au/explore-our-parks/tasman-national-park",
+    "kind": "official",
+    "quote": "This is a 12km drive along an unsealed road but is suitable for 2WD vehicles and mountain bikes."
+  },
+  "walls-of-jerusalem-national-park-tas": {
+    "url": "https://parks.tas.gov.au/explore-our-parks/walls-of-jerusalem-national-park",
+    "kind": "official",
+    "quote": "Follow this road for 1.5km to the Walls of Jerusalem car park."
+  },
+  "apudthama-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/apudthama/visiting-safely",
+    "kind": "official",
+    "quote": "Follow the Peninsula Developmental Road 50km north from Archer River Roadhouse and turn on to the Telegraph Road."
+  },
+  "barron-gorge-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/barron-gorge/visiting-safely",
+    "kind": "official",
+    "quote": "From Kuranda, drive 3.5km along Barron Falls Road, following the signposts to the Barron Falls car park."
+  },
+  "bellthorpe-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/bellthorpe/visiting-safely",
+    "kind": "official",
+    "quote": "From Brisbane**, head north to Caboolture then follow the D’Aguliar Highway west through Woodford and take the Stony Creek Road exit approximately 6km out of Woodford."
+  },
+  "blackbraes-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/blackbraes/visiting-safely",
+    "kind": "official",
+    "quote": "From Townsville follow the Flinders Highway 380km south-west, or from Mount Isa, follow the Flinders Highway 520km east."
+  },
+  "blackdown-tableland-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/blackdown-tableland/visiting-safely",
+    "kind": "official",
+    "quote": "From the turn-off, follow Charlevue Road for 16km to the base of the tableland."
+  },
+  "bladensburg-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/bladensburg/visiting-safely",
+    "kind": "official",
+    "quote": "From Winton head south towards Lark Quarry road, turning left after 8km along the Route of the River Gum."
+  },
+  "bowling-green-bay-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/bowling-green-bay/visiting-safely",
+    "kind": "official",
+    "quote": "The entrance to the Mount Elliot section of the park, and Alligator Creek day-use area, is 6km from the highway."
+  },
+  "bribie-island-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/bribie-island/visiting-safely",
+    "kind": "official",
+    "quote": "Bribie Island is 65km north of Brisbane and 70km south of Caloundra, via the Bruce Highway."
+  },
+  "bulburin-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/bulburin/visiting-safely",
+    "kind": "official",
+    "quote": "From the Bruce Highway, travel to Builyan by turning west into Blackmans Gap Road, 98km north of Gin Gin, or 1.7km south of Miriam Vale."
+  },
+  "burrum-coast-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/burrum-coast/visiting-safely",
+    "kind": "official",
+    "quote": "Travel 14km south from Bundaberg on the Goodwood Road."
+  },
+  "byfield-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/byfield/visiting-safely",
+    "kind": "official",
+    "quote": "Byfield State Forest is 34km north of Yeppoon via Yeppoon–Byfield Road."
+  },
+  "cape-melville-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/cape-melville/visiting-safely",
+    "kind": "official",
+    "quote": "The coastal route can also be accessed by travelling 66km from Old Laura Homestead in Rinyirru (Lakefield) National Park (CYPAL) along Battle Camp Road to join the coastal route 45km north of Cooktown."
+  },
+  "capricorn-coast-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/capricorn-coast/visiting-safely",
+    "kind": "official",
+    "quote": "From Yeppoon, travel approximately 6km south along the Scenic Highway to the Vin E Jones Memorial Drive turnoff."
+  },
+  "conondale-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/conondale/visiting-safely",
+    "kind": "official",
+    "quote": "From Brisbane, follow the Bruce Highway north, and take the Kenilworth exit."
+  },
+  "conway-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/conway/visiting-safely",
+    "kind": "official",
+    "quote": "From Airlie Beach travel southwest along Shute Habour Road for about 11km and turn left onto Brandy Creek Road."
+  },
+  "crater-lakes-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/crater-lakes/visiting-safely",
+    "kind": "official",
+    "quote": "Lake Barrine is about 60km or one hour’s drive from Cairns via the Gillies Highway."
+  },
+  "culgoa-floodplain-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/culgoa-floodplain/visiting-safely",
+    "kind": "official",
+    "quote": "From Goodooga, turn right into Brenda Road and travel on the sealed road for 12km and a further 11km along the gravel road."
+  },
+  "daintree-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/daintree/visiting-safely",
+    "kind": "official",
+    "quote": "From Cairns drive 80km north along the Captain Cook Highway then just before Mossman town centre, turn left into Johnston Road and continue for 2km to the Mossman Gorge Centre near the entrance to the Mossman Gorge section of the park."
+  },
+  "dalrymple-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/dalrymple/visiting-safely",
+    "kind": "official",
+    "quote": "From the south, turn right onto the unsealed Leichhart Road at Fletcher Creek camping reserve(external link) and travel a further 3km to the national park entrance."
+  },
+  "deepwater-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/deepwater/visiting-safely",
+    "kind": "official",
+    "quote": "From Agnes Water travel along Springs Road for 4km, follow the unsealed, sand track to the park's northern boundary."
+  },
+  "djiru-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/djiru/visiting-safely",
+    "kind": "official",
+    "quote": "Lacey Creek day-use area is beside the El Arish–Mission Beach road, 8km from the junction with the Bruce Highway and 7.5km from Mission Beach township."
+  },
+  "dularcha-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/dularcha/visiting-safely",
+    "kind": "official",
+    "quote": "From Brisbane** (about 90km): Travel north on the Bruce Highway (M1) and take the Glass House Mountains tourist drive (24) turnoff onto Steve Irwin Way and follow the signs to the towns of Landsborough (park southern entrance off Beech Road) or Mooloolah (park northern entrance of Paget Street)."
+  },
+  "endeavour-river-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/endeavour-river/visiting-safely",
+    "kind": "official",
+    "quote": "Turn north onto the Mulligan Highway (Cooktown Development Road) and travel 181km to Lakeland Downs via the Palmer River Roadhouse."
+  },
+  "eubenangee-swamp-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/eubenangee-swamp/visiting-safely",
+    "kind": "official",
+    "quote": "Drive south from Cairns on the Bruce Highway to Mirriwinni (67km) and turn left towards Bramston Beach."
+  },
+  "eungella-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/eungella/visiting-safely",
+    "kind": "official",
+    "quote": "From Mackay, drive 80km west along the Mackay–Eungella Road to Eungella township."
+  },
+  "expedition-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/expedition/visiting-safely",
+    "kind": "official",
+    "quote": "After rain when the creeks rise it is best to travel north from Taroom on the Leichhardt Highway for 18km and turn left onto the Fitzroy Development Road."
+  },
+  "forest-den-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/forest-den/visiting-safely",
+    "kind": "official",
+    "quote": "Forest Den National Park is 100km north of Aramac, via Torrens Creek Road."
+  },
+  "girramay-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/girramay/visiting-safely",
+    "kind": "official",
+    "quote": "Alternatively, from Tully, travel south along the Bruce Highway for 16km and turn off at Murrigal."
+  },
+  "glass-house-mountains-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/glass-house-mountains/visiting-safely",
+    "kind": "official",
+    "quote": "From Brisbane, follow the Bruce Highway north, take the Glass House Mountains tourist drive turn-off and follow the signs to the Glass House Mountains."
+  },
+  "herberton-range-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/herberton-range/visiting-safely",
+    "kind": "official",
+    "quote": "From Herberton travel south on Longlands Gap Road for 3.2km."
+  },
+  "homevale-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/homevale/visiting-safely",
+    "kind": "official",
+    "quote": "From Nebo:** drive back towards Mackay along the Peak Downs Highway for 6km before turning left onto Nebo-Glenden Road."
+  },
+  "isla-gorge-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/isla-gorge/visiting-safely",
+    "kind": "official",
+    "quote": "Turn onto the Leichhardt Highway from the Warrego Highway at Miles or from the Dawson Highway at Banana."
+  },
+  "kalkajaka-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/kalkajaka/visiting-safely",
+    "kind": "official",
+    "quote": "From here turn onto the Mulligan Highway and head north-east towards Cooktown."
+  },
+  "kondalilla-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/kondalilla/visiting-safely",
+    "kind": "official",
+    "quote": "From Brisbane:** travel 54km north along the Bruce Highway (M1), take the Steve Irwin Way Exit 163 (also signed as Glass House Mountains Tourist Drive 24 and the exit for Beerwah)."
+  },
+  "kroombit-tops-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/kroombit-tops/visiting-safely",
+    "kind": "official",
+    "quote": "From Gladstone** (approximately 85km): travel south-west to Calliope, then follow the Dawson Highway south-west towards Biloela for 4km and turn left into Gladstone-Monto Road."
+  },
+  "kutini-payamu-iron-range-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/kutini-payamu/visiting-safely",
+    "kind": "official",
+    "quote": "From here, continue along Portland Roads Road to Rainforest (3.9km), Cooks Hut (4.8km) and Gordon Creek (5.5km) camping areas."
+  },
+  "lamington-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/lamington/visiting-safely",
+    "kind": "official",
+    "quote": "From Broadbeach, drive 40km to Canungra via Nerang."
+  },
+  "main-range-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/main-range/visiting-safely",
+    "kind": "official",
+    "quote": "The eastern approach to Spicers Gap is suitable for conventional vehicles and is reached via Lake Moogerah Road, which leaves the Cunningham Highway 5km west of Aratula, then Spicers Gap Road."
+  },
+  "mapleton-falls-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/mapleton-falls/visiting-safely",
+    "kind": "official",
+    "quote": "From Brisbane, travel 105km north along the Bruce Highway to Nambour, then travel 11km west to Mapleton."
+  },
+  "mariala-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/mariala/visiting-safely",
+    "kind": "official",
+    "quote": "Mariala can be reached by heading 128km west from Charleville on the road to Adavale."
+  },
+  "millstream-falls-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/millstream-falls/visiting-safely",
+    "kind": "official",
+    "quote": "Ravenshoe is 147km from Cairns via the Gillies Highway."
+  },
+  "moorrinya-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/moorrinya/visiting-safely",
+    "kind": "official",
+    "quote": "From Townsville, travel south-west for 296km to Torrens Creek on the Flinders Highway."
+  },
+  "mount-lewis-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/mount-lewis/visiting-safely",
+    "kind": "official",
+    "quote": "From Mount Molloy, travel north on the Mulligan Highway, turning right onto the Mossman–Mount Molloy Road just after crossing Rifle Creek."
+  },
+  "munga-thirri-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/munga-thirri/visiting-safely",
+    "kind": "official",
+    "quote": "From Birdsville take the sealed road 35km west to Big Red sand dune at the edge of the Simpson Desert."
+  },
+  "ngalba-bulal-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/ngalba-bulal/visiting-safely",
+    "kind": "official",
+    "quote": "The track begins at Home Rule Rainforest Lodge, a private property 3km from Rossville."
+  },
+  "noosa-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/noosa/visiting-safely",
+    "kind": "official",
+    "quote": "Noosa is 160km north of Brisbane via the Bruce Highway and the Sunshine Motorway."
+  },
+  "nuga-nuga-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/nuga-nuga/visiting-safely",
+    "kind": "official",
+    "quote": "From Roma on the Warrego Highway, turn onto Carnarvon Developmental Road and travel north 89km to Injune."
+  },
+  "oyala-thumotang-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/oyala-thumotang/visiting-safely",
+    "kind": "official",
+    "quote": "Access to the national park from Cairns is via the Peninsula Developmental Road, through Coen to the Rokeby Road turn-off."
+  },
+  "paluma-range-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/paluma-range/visiting-safely",
+    "kind": "official",
+    "quote": "To get to Jourama Falls, travel north from Townsville or south from Ingham on the Bruce Highway, then turn off onto Jourama Road."
+  },
+  "peak-range-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/peak-range/visiting-safely",
+    "kind": "official",
+    "quote": "Gemini Mountains section**: from Clermont travel for 13km north on the Gregory Highway to the Peak Downs Highway."
+  },
+  "porcupine-gorge-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/porcupine-gorge/visiting-safely",
+    "kind": "official",
+    "quote": "From Hughenden, follow the Kennedy Developmental Road north for 60km to reach the turn-off to the Gorge lookout."
+  },
+  "ravensbourne-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/ravensbourne/visiting-safely",
+    "kind": "official",
+    "quote": "From Toowoomba or Crows Nest, turn off the New England Highway at Hampton and head east towards Esk for 17km to the park turnoff."
+  },
+  "russell-river-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/russell-river/visiting-safely",
+    "kind": "official",
+    "quote": "From the park boundary, the unsealed road continues 5km to the mouth of the Bluemetal Creek."
+  },
+  "springbrook-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/springbrook/visiting-safely",
+    "kind": "official",
+    "quote": "Exit the Pacific Motorway at Mudgeeraba (exit 79 from the north, exit 80 from the south) and follow the Gold Coast–Springbrook Road."
+  },
+  "sundown-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/sundown/visiting-safely",
+    "kind": "official",
+    "quote": "Sundown is 250km (3–4 hrs drive) south-west of Brisbane via Stanthorpe and 70km north-west of Tenterfield."
+  },
+  "tamborine-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/tamborine/visiting-safely",
+    "kind": "official",
+    "quote": "Tamborine Mountain is about 80km south of Brisbane via Beenleigh and Tamborine Village or via the Pacific Highway and Oxenford–Tamborine Road."
+  },
+  "thrushton-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/thrushton/visiting-safely",
+    "kind": "official",
+    "quote": "The Homeboin turnoff to the park from this road is 51km north of Bollon or 156km south of Mitchell."
+  },
+  "undara-volcanic-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/undara-volcanic/visiting-safely",
+    "kind": "official",
+    "quote": "If travelling from Townsville head west along the Hervey Range Road for approximately 130km, then turn right onto the Gregory Developmental Road."
+  },
+  "venman-bushland-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/venman-bushland/visiting-safely",
+    "kind": "official",
+    "quote": "From the Pacific Motorway, take exit 30 and turn onto Beenleigh–Redland Bay Road, then left onto California Creek Road and left onto West Mount Cotton Road."
+  },
+  "welford-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/welford/visiting-safely",
+    "kind": "official",
+    "quote": "From Blackall (260km) drive south-west to Yaraka then continue on the Yaraka-Retreat Road, or from Quilpie (253km) and Windorah (110km) take the Diamantina Development Road, connecting with the Jundah-Quilpie Road and enter the park from the south."
+  },
+  "white-mountains-national-park-qld": {
+    "url": "https://parks.qld.gov.au/parks/white-mountains/visiting-safely",
+    "kind": "official",
+    "quote": "From the Burra Range lookout travel approximately 5km west on the Flinders Highway to the Flinders Shire Council truck and rest stop."
+  },
+  "namadgi-national-park-act": {
+    "url": "https://en.wikivoyage.org/wiki/Namadgi_National_Park",
+    "kind": "wikivoyage",
+    "quote": "From Tuggeranong, use Tharwa Drive from Drakeford Drive for  until the Naas Road/North Street junction."
+  },
+  "bellinger-river-national-park-nsw": {
+    "url": "https://en.wikivoyage.org/wiki/Bellinger_River_National_Park",
+    "kind": "wikivoyage",
+    "quote": "However, the two main ways to get into this region is either via the M1 Pacific Motorway from the north, or via the A1/M1 Pacific Highway/Motorway from the south."
+  },
+  "budderoo-national-park-nsw": {
+    "url": "https://en.wikivoyage.org/wiki/Budderoo_National_Park",
+    "kind": "wikivoyage",
+    "quote": "While Jamberoo Mountain Road also passes through the park, it doesn't have any parking spaces apart from a couple near lookouts, and this is not convenient for doing most of the park's walking trails."
+  },
+  "garrawilla-national-park-nsw": {
+    "url": "https://en.wikivoyage.org/wiki/Garrawilla_National_Park",
+    "kind": "wikivoyage",
+    "quote": "The town is about a two hour drive from Dubbo north via the A39 Newell Highway and is a 1.5-hour drive south from Narrabri via the A39 Newell Highway."
+  },
+  "mallanganee-national-park-nsw": {
+    "url": "https://en.wikivoyage.org/wiki/Mallanganee_National_Park",
+    "kind": "wikivoyage",
+    "quote": "The park is located approximately 570 kilometres (350 mi) north of Sydney and can be reached via Kyogle via the Bruxner Highway and the Summerland Way."
+  },
+  "mallee-cliffs-national-park-nsw": {
+    "url": "https://en.wikivoyage.org/wiki/Mallee_Cliffs_National_Park",
+    "kind": "wikivoyage",
+    "quote": "Sturt Highway (A20) from the Riverina (how most visitors from Sydney and the coast come from), and the Victorian side of the Murray (how most visitors from South Australia come from)."
+  },
+  "sturt-national-park-nsw": {
+    "url": "https://en.wikivoyage.org/wiki/Sturt_National_Park",
+    "kind": "wikivoyage",
+    "quote": "From car, the only way that most travellers usually come and visit this park is via a 4 hour drive north of Broken Hill via the Silver City Highway (B79), which, as of 2020, is paved up to Tibooburra before it becomes unpaved."
+  },
+  "sydney-harbour-national-park-nsw": {
+    "url": "https://en.wikivoyage.org/wiki/Sydney_Harbour_National_Park",
+    "kind": "wikivoyage",
+    "quote": "From Taronga, walk on the road away from the cul-de-sac and then you're there at Bradleys Head."
+  },
+  "werakata-national-park-nsw": {
+    "url": "https://en.wikivoyage.org/wiki/Werakata_National_Park",
+    "kind": "wikivoyage",
+    "quote": "The park is about a fifteen-minute drive from the nearby town of Kurri Kurri via the Sawyers Gully Road and Old Maitland Road."
+  },
+  "charles-darwin-national-park-nt": {
+    "url": "https://en.wikivoyage.org/wiki/Charles_Darwin_National_Park",
+    "kind": "wikivoyage",
+    "quote": "If you are travelling outside these times, it is still possible to catch bus 3, get off just after stop C (Jingili shops) just before the bus turns down Scales St, and walk the 2&nbsp;km down Henry Wrigley Drive to the Airport."
+  },
+  "elsey-national-park-nt": {
+    "url": "https://en.wikivoyage.org/wiki/Elsey_National_Park",
+    "kind": "wikivoyage",
+    "quote": "Katherine is around 3 hours' drive and around 300 km south of Darwin."
+  },
+  "judbarra-gregory-national-park-nt": {
+    "url": "https://en.wikivoyage.org/wiki/Judbarra_/_Gregory_National_Park",
+    "kind": "wikivoyage",
+    "quote": "From Katherine, the Victoria Highway takes you to the smaller part of the park, the so-called Victoria River section with access to the river of the same name, the Victoria River and further west is the significantly larger part of the park, the so-called Bullita section."
+  },
+  "kakadu-national-park-nt": {
+    "url": "https://en.wikivoyage.org/wiki/Kakadu_National_Park",
+    "kind": "wikivoyage",
+    "quote": "Access from Darwin to Jabiru is via the Arnhem Highway."
+  },
+  "litchfield-national-park-nt": {
+    "url": "https://en.wikivoyage.org/wiki/Litchfield_National_Park",
+    "kind": "wikivoyage",
+    "quote": "The only paved access road is via the small town of Batchelor off the Stuart Highway between Darwin and Katherine."
+  },
+  "nitmiluk-national-park-nt": {
+    "url": "https://en.wikivoyage.org/wiki/Nitmiluk_National_Park",
+    "kind": "wikivoyage",
+    "quote": "Katherine is around 3 hours' drive and around 300 km south of Darwin."
+  },
+  "tjoritja-west-macdonnell-national-park-nt": {
+    "url": "https://en.wikivoyage.org/wiki/Tjoritja_/_West_MacDonnell_National_Park",
+    "kind": "wikivoyage",
+    "quote": "Vehicle access to West MacDonnell National Park from Alice Springs is via Larapinta Drive and Namatjira Drive."
+  },
+  "uluru-kata-tjuta-national-park-nt": {
+    "url": "https://en.wikivoyage.org/wiki/Uluṟu-Kata_Tjuṯa_National_Park",
+    "kind": "wikivoyage",
+    "quote": "From the north, in Alice Springs take the Stuart Highway (A87) South for about 200&nbsp;km to Erldunda Roadhouse."
+  },
+  "watarrka-national-park-nt": {
+    "url": "https://en.wikivoyage.org/wiki/Watarrka_National_Park",
+    "kind": "wikivoyage",
+    "quote": "By car, there is only one sealed access from the Stuart Highway (linking Alice Springs and Adelaide)."
+  },
+  "boodjamulla-national-park-qld": {
+    "url": "https://en.wikivoyage.org/wiki/Boodjamulla_National_Park",
+    "kind": "wikivoyage",
+    "quote": "The second route is via the Barkly Highway but that again is 207km via Riversleigh, and only about 26%of the route is paved (around 57km)."
+  },
+  "carnarvon-national-park-qld": {
+    "url": "https://en.wikivoyage.org/wiki/Carnarvon_National_Park",
+    "kind": "wikivoyage",
+    "quote": "From Roma, take the Carnarvon Highway north and turn onto Wyseby Road."
+  },
+  "currawinya-national-park-qld": {
+    "url": "https://en.wikivoyage.org/wiki/Currawinya_National_Park",
+    "kind": "wikivoyage",
+    "quote": "Some maps, for example Google Maps, show an entrance frp, Thargomindah via the Old Thargomindah Road."
+  },
+  "fort-lytton-national-park-qld": {
+    "url": "https://en.wikivoyage.org/wiki/Fort_Lytton_National_Park",
+    "kind": "wikivoyage",
+    "quote": "From the M1 Gateway Motorway, use Exit 102 onto M4 Port of Brisbane Motorway and continue until just before the end of the rather short motorway, exit onto Lytton Road north (i.e."
+  },
+  "mount-archer-national-park-qld": {
+    "url": "https://en.wikivoyage.org/wiki/Mount_Archer_National_Park",
+    "kind": "wikivoyage",
+    "quote": "{{go | name=Rockhampton Airport | alt= | url=http://www.rockhamptonregion.qld.gov.au/Council_Services/Airport | email= | address= | lat=-23.381667 | long=150.475 | directions=just to the west of the city; signposted road access is from the Bruce Highway heading south from the city centre | phone= | tollfree= | hours= | price= | image=RockhamptonAirport8.jpg | wikidata=Q2501155 | lastedit=2022-10-0"
+  },
+  "adelaide-international-bird-sanctuary-national-parkwinaityinaityi-pangkara-sa": {
+    "url": "https://en.wikivoyage.org/wiki/Adelaide_International_Bird_Sanctuary_National_Park",
+    "kind": "wikivoyage",
+    "quote": "From Adelaide City, head north onto the M2 North-South Motorway, and exit the expressway at A1 Port Wakefield Highway."
+  },
+  "belair-national-park-sa": {
+    "url": "https://en.wikivoyage.org/wiki/Belair_National_Park",
+    "kind": "wikivoyage",
+    "quote": "From Adelaide City head down south onto Unley Road."
+  },
+  "coffin-bay-national-park-sa": {
+    "url": "https://en.wikivoyage.org/wiki/Coffin_Bay_National_Park",
+    "kind": "wikivoyage",
+    "quote": "The park is a little more than a half-hour drive from Port Lincoln, the regional centre of the Eyre Peninsula."
+  },
+  "gawler-ranges-national-park-sa": {
+    "url": "https://en.wikivoyage.org/wiki/Gawler_Ranges_National_Park",
+    "kind": "wikivoyage",
+    "quote": "From Minnipa, head NWN on the McKenzie Road and then use Yardea Road, which continues up to the park gate."
+  },
+  "glenthorne-national-parkityamaiitpinna-yarta-sa": {
+    "url": "https://en.wikivoyage.org/wiki/Glenthorne_National_Park–Ityamaiitpinna_Yarta",
+    "kind": "wikivoyage",
+    "quote": "Mclaren Vale is an easy 45 minute drive by car from the centre of Adelaide."
+  },
+  "great-australian-bight-marine-national-park-sa": {
+    "url": "https://en.wikivoyage.org/wiki/Great_Australian_Bight_Marine_National_Park",
+    "kind": "wikivoyage",
+    "quote": "Access is only via the Head of Bight visitor centre, which is a 20-minute deviation from the Eyre Highway."
+  },
+  "innes-national-park-sa": {
+    "url": "https://en.wikivoyage.org/wiki/Dhilba_Guuranda–Innes_National_Park",
+    "kind": "wikivoyage",
+    "quote": "To get to Marion Bay from Port Wakefield, exit onto Copper Coast Hwy (B85) from Augusta Hwy (A1) and take the first exit onto Yorke Hwy (B86) from the Federation Corner Roundabout."
+  },
+  "naracoorte-caves-national-park-sa": {
+    "url": "https://en.wikivoyage.org/wiki/Naracoorte_Caves_National_Park",
+    "kind": "wikivoyage",
+    "quote": "If you don't know how to drive or are not comfortable driving on the left side of the road, [https://vearstaxis.com/ Vear's taxis], offer long distance rides from Mount Gambier or [https://www.131008.com/mtgambier Lake City Taxis], also from Mount Gambier, although they don't always offer long distance services."
+  },
+  "nilpena-ediacara-national-park-sa": {
+    "url": "https://en.wikivoyage.org/wiki/Nilpena_Ediacara_National_Park",
+    "kind": "wikivoyage",
+    "quote": "Continue on that road up for about three hours up until just before Port Augusta, where you'll turn onto B83 Flinders Ranges Way, continue for about 220 km."
+  },
+  "bago-bluff-national-park-nsw": {
+    "url": "https://en.wikipedia.org/wiki/Bago_Bluff_National_Park",
+    "kind": "wikipedia",
+    "quote": "Bago Bluff offers splendid views of the Hastings Valley from the top of the bluff which can be accessed via several forest roads from the south, including Bago Road."
+  },
+  "burleigh-head-national-park-qld": {
+    "url": "https://en.wikipedia.org/wiki/Burleigh_Head_National_Park",
+    "kind": "wikipedia",
+    "quote": "Access is via the Gold Coast Highway which passes by the park."
+  },
+  "davies-creek-national-park-qld": {
+    "url": "https://en.wikipedia.org/wiki/Davies_Creek_National_Park",
+    "kind": "wikipedia",
+    "quote": "The park can be reached on the Kennedy Highway 21 km southwest of Kuranda."
+  },
+  "rinyirru-lakefield-national-park-qld": {
+    "url": "https://en.wikipedia.org/wiki/Rinyirru_(Lakefield)_National_Park",
+    "kind": "wikipedia",
+    "quote": "It can be accessed by road either through Cooktown or Laura."
+  },
+  "topaz-road-national-park-qld": {
+    "url": "https://en.wikipedia.org/wiki/Topaz_Road_National_Park",
+    "kind": "wikipedia",
+    "quote": "Topaz Road is a national park in Far North Queensland, Australia, 1,348 km northwest of Brisbane."
+  },
+  "ikara-flinders-ranges-national-park-sa": {
+    "url": "https://en.wikipedia.org/wiki/Ikara–Flinders_Ranges_National_Park",
+    "kind": "wikipedia",
+    "quote": "The park centre at Wilpena Pound is accessible by sealed road from Hawker."
+  },
+  "savage-river-national-park-tas": {
+    "url": "https://en.wikipedia.org/wiki/Savage_River_National_Park",
+    "kind": "wikipedia",
+    "quote": "Unlike other national parks of Tasmania, Savage River National Park remains inaccessible to the public, there is no road access or facilities in the park."
+  },
+  "bunurong-marine-national-park-vic": {
+    "url": "https://en.wikipedia.org/wiki/Bunurong_Marine_National_Park",
+    "kind": "wikipedia",
+    "quote": "Other attractions include Flat Rocks where there are large rockpools for rockpool rambling and direct access from Cape Paterson-Inverloch Road."
+  },
+  "grampians-national-park-vic": {
+    "url": "https://en.wikipedia.org/wiki/Grampians_National_Park",
+    "kind": "wikipedia",
+    "quote": "The 167,219-hectare (413,210-acre) national park is situated between Stawell and Horsham on the Western Highway and Dunkeld on the Glenelg Highway, 260 kilometres (160 mi) west of Melbourne and 460 kilometres (290 mi) east of Adelaide."
+  },
+  "geikie-gorge-national-park-wa": {
+    "url": "https://en.wikipedia.org/wiki/Danggu_Gorge_National_Park",
+    "kind": "wikipedia",
+    "quote": "The park is one of the most accessible in the Kimberley as it is only 20 km (12 mi) from Fitzroy Crossing and is serviced by a sealed road."
+  },
+  "greater-beedelup-national-park-wa": {
+    "url": "https://en.wikipedia.org/wiki/Greater_Beedelup_National_Park",
+    "kind": "wikipedia",
+    "quote": "It is situated on the Vasse Highway 10 km west of Pemberton."
+  },
+  "karlamilyi-national-park-wa": {
+    "url": "https://en.wikipedia.org/wiki/Karlamilyi_National_Park",
+    "kind": "wikipedia",
+    "quote": "It is best accessed from the Rudall River Road, which connects the Talawana Track in the south, and the Telfer Mine Road in the north."
+  },
+  "millstream-chichester-national-park-wa": {
+    "url": "https://en.wikipedia.org/wiki/Millstream_Chichester_National_Park",
+    "kind": "wikipedia",
+    "quote": "Both campgrounds are suitable for tent camping up to very large caravans and motorhomes, and can be accessed by two-wheel drive vehicles in good weather."
+  },
+  "mount-augustus-national-park-wa": {
+    "url": "https://en.wikipedia.org/wiki/Mount_Augustus_National_Park",
+    "kind": "wikipedia",
+    "quote": "Mount Augustus National Park is located 852 km north of Perth, 490 km by road east of Carnarvon and 390 km northwest of Meekatharra, in the Gascoyne region of Western Australia."
+  },
+  "purnululu-national-park-wa": {
+    "url": "https://en.wikipedia.org/wiki/Purnululu_National_Park",
+    "kind": "wikipedia",
+    "quote": "Access to the park by road is via Spring Creek Track, from the Great Northern Highway approximately 250 kilometres (160 mi) south of Kununurra, to the track's end at the visitor centre."
+  },
+  "tuart-forest-national-park-wa": {
+    "url": "https://en.wikipedia.org/wiki/Tuart_Forest_National_Park",
+    "kind": "wikipedia",
+    "quote": "It is accessible via a carpark along Layman Road."
+  }
 }
