@@ -13,6 +13,9 @@ Checks, per place that has both a source-packets/<slug>.json and combined-conten
      (noting separately when the hit is inside a verbatim Wikipedia quote, not generated prose).
   6. hero/cover photo licence+credit present (not "Unknown"/empty) wherever a hero record exists.
   7. no duplicate cover photo URL across all places examined.
+  8. BLOCKING: no placeholder text anywhere in the bundle ("[dated source]", "[source datée]",
+     "[datierter Quelle]", "[datiert Quelle]", "Check official seasonal information"); the same
+     list blocks publish-wave.py (scripts/content-pipeline/placeholder_gate.py).
 
 Run: python3 scripts/audits/fr-pt-gr-2026-11/verify.py
 Writes scripts/audits/fr-pt-gr-2026-11/verification-findings.md (per-place findings only) and
@@ -21,9 +24,12 @@ and incorporates this script's totals.
 """
 import json
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2] / "content-pipeline"
+sys.path.insert(0, str(ROOT))
+from placeholder_gate import find_blocked_text  # noqa: E402
 PACKETS = ROOT / "source-packets"
 BUNDLES = ROOT / "combined-content"
 FACTS_DIRS = [ROOT / "wave3-facts", ROOT / "france" / "wave3-facts"]
@@ -88,8 +94,8 @@ def check_place(slug, packet, bundle_doc):
     best_seasons = summary.get("best_seasons", [])
     if not set(best_seasons) <= SEASONS:
         findings.append(f"best_seasons has values outside spring/summer/fall/winter: {best_seasons}")
-    if summary.get("best_season") == "Check official seasonal information":
-        findings.append("INFO: best_season is the zero-model placeholder, not a sourced season (expected for this method, not an error)")
+    for where, marker in find_blocked_text(bundle):
+        findings.append(f"BLOCKING: placeholder text {marker!r} in {where} (publication gate)")
 
     haystacks = [tagline] + [d.get("detail", "") for day in travel.get("plan", {}).get("days", []) for d in day.get("stops", [])]
     for text in haystacks:

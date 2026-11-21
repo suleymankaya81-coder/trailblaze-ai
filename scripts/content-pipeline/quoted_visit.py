@@ -1,9 +1,15 @@
 """No-model compact visits made from reviewed verbatim official evidence."""
 import re
 from compact_evidence import compact_packet
+from dated_text import drop_dated
 
 def clean(value):
-    value = re.sub(r'\b20\d{2}\b', '[dated source]', value)
+    # Dated statements are dropped whole; never leave a "[dated source]" marker in page text.
+    value = drop_dated(value)
+    return re.sub(r'[*#]', '', value).strip()
+
+def clean_name(value):
+    # Stop names are routing identities: no sentence removal, only markup characters.
     return re.sub(r'[*#]', '', value).strip()
 
 def quoted_bundle(row, packet):
@@ -11,7 +17,7 @@ def quoted_bundle(row, packet):
     sources = evidence['sources']
     translations = {s['url']: s['display_translation'] for s in packet['sources'] if s.get('display_translation')}
     excerpts = [clean(translations.get(s['url'], s['text'])) for s in sources]
-    stops = [{**s, 'name': clean(s['name'])} for s in evidence['approved_stops'][:3]]
+    stops = [{**s, 'name': clean_name(s['name'])} for s in evidence['approved_stops'][:3]]
     url = stops[0]['source_url']
     note = ('Check the official visitor information for ' + row['name'] + ' before departure. '
             'Entry, activity permissions and overnight accommodation are separate checks; '
@@ -31,7 +37,8 @@ def quoted_bundle(row, packet):
         'goldenHour': gap('a verified sunrise or sunset viewpoint'),
         'sources': [{'label': 'Wikipedia · CC BY-SA' if s['kind'] == 'wikipedia' else 'Wikivoyage · CC BY-SA' if s['kind'] == 'wikivoyage' else 'Official visitor information', 'url': s['url']} for s in sources], 'markers': []}
     summary = {'region': row['region'].replace('-', ' ').title(), 'tagline': clean(excerpts[0]).split('\n')[0][:110],
-        'best_season': 'Check official seasonal information', 'best_seasons': [],
+        'best_season': f'No verified visitor-season recommendation is available for {row["name"]}; consult the park authority for your travel dates.',
+        'best_seasons': [],
         'scenic_score': None, 'camping_score': None, 'avg_daily_budget': None,
         'trip_duration_days': '1 visit day', 'recommended_duration': '1 visit day', 'permit_level': 'moderate',
         'aliases': [], 'gateway_cities': [], 'similar_slugs': [], 'trip_tags': [],

@@ -14,6 +14,7 @@ from pathlib import Path
 import europe_prepare as prepare
 from local_translation import translate_excerpt
 from compact_evidence import compact_packet
+from dated_text import drop_dated
 from combined_content import validate_bundle
 
 ROOT = Path(__file__).parent
@@ -56,7 +57,7 @@ def english_bundle(row, packet, lang, original):
     for day in bundle['travel']['plan']['days']:
         for stop in day['stops']:
             stop['detail'] = re.sub(r'\([^()]*\)', '', stop['detail'])
-            stop['detail'] = re.sub(r'\b20\d{2}\b', '[dated source]', stop['detail'])
+            stop['detail'] = drop_dated(stop['detail'])  # drop dated sentences; no '[dated source]' marker
             stop['detail'] = re.sub(r'\s+', ' ', stop['detail']).replace(' ,', ',').strip()
     detail = bundle['travel']['plan']['days'][0]['stops'][0]['detail']
     sentences = re.split(r'(?<=[.!?])\s+', detail)
