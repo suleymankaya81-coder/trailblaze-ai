@@ -2,3 +2,4 @@
 - Affiliate clicks inside same-origin experience frames use the parent page's analytics and park context without iframe page views. Why: EN/DE reports must reflect the page the visitor actually used.
 - Stored rental click redirects resolve the destination country before selecting a provider URL. Why: Norwegian or Australasian bookings must not silently switch to US campaigns.
 - Place search/API links share country names and explicit geographic aliases; match contiguous distinctive names, preserve geography nouns and full descriptions for cache checks, expire pre-revision caches and never cache API failures. Why: international expansion must not admit unrelated tours or hide valid tours indefinitely.
+- Empty or unavailable place responses include a server-derived tracked search URL; frames measure its actual height even with empty status. Why: shared international guides must not lose the booking handoff or clip the fallback.

@@ -5,6 +5,7 @@ import { verifiedViatorProductUrl } from "./corridorPartners";
 import { viatorProductImage } from "./viatorImages";
 import { isNearbyExperienceRelevant, isPlaceExperienceRelevant } from "./viatorRelevance";
 import { isViatorAreaAlias, isViatorPlaceCacheFresh, viatorCountryName, viatorPlaceQuery } from "./viatorPlaceIdentity";
+import { viatorPlaceSearchUrl } from "./viatorSearch";
 
 export type PlaceExperience = {
   code: string; title: string; url: string; image: string;
@@ -43,18 +44,19 @@ export function tourCategory(title: string): string {
 /** Live Viator listings for one destination, cached 24h per place. */
 export const getPlaceExperiences = createServerFn({ method: "GET" })
   .inputValidator((d: unknown) => z.object({ slug: z.string().regex(/^[a-z0-9-]{1,100}$/) }).parse(d))
-  .handler(async ({ data }): Promise<{ name: string; items: PlaceExperience[]; unavailable?: boolean }> => {
+  .handler(async ({ data }): Promise<{ name: string; items: PlaceExperience[]; searchUrl?: string; unavailable?: boolean }> => {
     const { data: dest } = await supabase.from("destinations").select("name, state, country_code, region, gateway_cities").eq("slug", data.slug).eq("status", "published").maybeSingle();
     if (!dest) return { name: "", items: [] };
+    const place = { name: dest.name, searchUrl: viatorPlaceSearchUrl(dest.name, dest.country_code ?? "us") };
     const { data: cached } = await supabase.from("viator_place_cache").select("items, fetched_at").eq("slug", data.slug).maybeSingle();
     const location = { countryCode: dest.country_code, region: dest.state ?? dest.region };
     const near = { gateways: dest.gateway_cities, area: dest.region, state: dest.state, countryCode: dest.country_code };
     const storedItems = (cached?.items as PlaceExperience[] | undefined) ?? [];
     const cachedItems = storedItems.filter((item) => isPlaceExperienceRelevant(dest.name, item.title, item.relevanceText ?? item.summary, location) || (item.nearby && isNearbyExperienceRelevant(item.title, item.relevanceText ?? item.summary, near))).map(item => isViatorAreaAlias(dest.name) ? { ...item, nearby: true } : item);
-    if (cached && isViatorPlaceCacheFresh(cached.fetched_at) && cachedItems.length === storedItems.length) return { name: dest.name, items: cachedItems };
+    if (cached && isViatorPlaceCacheFresh(cached.fetched_at) && cachedItems.length === storedItems.length) return { ...place, items: cachedItems };
 
     const key = process.env["VIATOR_API_KEY"];
-    if (!key) return { name: dest.name, items: cachedItems, unavailable: cachedItems.length === 0 };
+    if (!key) return { ...place, items: cachedItems, unavailable: cachedItems.length === 0 };
     let items: PlaceExperience[] = [];
     const suffix = viatorCountryName(dest.country_code ?? "us");
     const search = async (term: string, nearby: boolean): Promise<boolean> => {
@@ -81,15 +83,15 @@ export const getPlaceExperiences = createServerFn({ method: "GET" })
       return true;
     };
     try {
-      if (!(await search(viatorPlaceQuery(dest.name, dest.country_code ?? "us"), false))) return { name: dest.name, items: cachedItems, unavailable: cachedItems.length === 0 };
+      if (!(await search(viatorPlaceQuery(dest.name, dest.country_code ?? "us"), false))) return { ...place, items: cachedItems, unavailable: cachedItems.length === 0 };
       // No named listing: one bounded search around the gateway town / area.
       const gateway = dest.gateway_cities?.[0];
-      if (!items.length && gateway && !(await search(`${gateway} ${dest.region ?? ""} ${suffix}`.trim(), true))) return { name: dest.name, items: cachedItems, unavailable: cachedItems.length === 0 };
+      if (!items.length && gateway && !(await search(`${gateway} ${dest.region ?? ""} ${suffix}`.trim(), true))) return { ...place, items: cachedItems, unavailable: cachedItems.length === 0 };
     } catch (e) {
       console.error("[Viator place] failed", e instanceof Error ? e.message : e);
-      return { name: dest.name, items: cachedItems, unavailable: cachedItems.length === 0 };
+      return { ...place, items: cachedItems, unavailable: cachedItems.length === 0 };
     }
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     await supabaseAdmin.from("viator_place_cache").upsert({ slug: data.slug, items, fetched_at: new Date().toISOString() });
-    return { name: dest.name, items };
+    return { ...place, items };
   });

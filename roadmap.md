@@ -1,4 +1,5 @@
 ## November 21 international Viator repair
+- [x] Reverify published Alto Garda cards and 16 EN/DE preview pages across eight countries; restore country-aware tracked searches in empty/provider-unavailable guide frames, repair blank-height/state handshake, verify three guides and a real approved Viator click. Commission credit remains unverified; follow-up code awaits owner publication.
 - [x] Repair shared international place identity, country queries and tracked search links; invalidate pre-fix caches without deleting unrelated data.
 - [x] Test production-backed listings on 40 country samples, EN/DE destination pages and mobile; trace shared guide consumers and record incomplete guide/external booking verification in scripts/audits/viator-international-2026-11-21.md. Owner publication required.
 

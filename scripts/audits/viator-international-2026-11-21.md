@@ -24,3 +24,13 @@ Current v2 reference: https://docs.viator.com/partner-api/technical/
 - /destinations provides parent identifiers for provider-geography resolution. This implementation still uses conservative provider-text matching, not a complete provider geography hierarchy; future aliases require specific review rather than automatically accepting broad regions.
 
 No unrelated partners, security findings, destination content or database schema changed.
+
+## Follow-up implementation and checks — 11:35 UTC
+- Existing international identity/query/cache fixes were already present at the start of this follow-up. A fresh browser check confirms the **published** Alto Garda experience document now displays three real provider products with the approved API attribution. The dashboard screenshot alone does not establish API access tier or why only two referrals were recorded.
+- `src/lib/affiliates/viatorPlace.functions.ts`: every known-place response now includes the shared, country-aware, tracked search URL, including fresh empty caches and handled provider failures. No cache rows were deleted and no destination rows were modified.
+- `src/routes/experiences.place.$slug.tsx`: empty results retain a Search on Viator handoff without inventing a tour; the frame reports its real fallback height and answers same-origin parent measurement requests.
+- `src/components/destination/ViatorPlaceBlock.tsx`: removed iframe-body polling, which could preserve a large blank viewport and miss the empty state; parent/child measurement handshake now uses actual content height, while origin/source/status checks remain intact.
+- Browser verification: 16 EN/DE destination pages across Italy, Germany, France, UK, New Zealand, Australia, Switzerland and USA return 200 and retain approved tracked booking links. Six country samples have real products; Abercrombie River and Swiss National Park have search-only handoffs, not claimed inventory.
+- Real Fly & Drive and no-reservation guides for Alto Garda show three product links each. Swiss National Park's no-reservation guide retains a Switzerland-specific search link and a compact measured frame (48–150px), with the correct empty-state message. German Alto Garda checked at 390px without horizontal overflow; no page runtime errors.
+- Actual View on Viator click opens `www.viator.com` with `pid=P00327298`, `mcid=42383`, `medium=api`, `api_version=2.0`. No purchase or dashboard commission/referral recording was verified.
+- The 76 existing affiliate regression tests pass. This is representative end-to-end verification, **not** verification of all 3,231 destinations or every SEO guide. These follow-up changes require publication; previously deployed matching fixes are live.

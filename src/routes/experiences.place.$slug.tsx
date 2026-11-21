@@ -31,16 +31,21 @@ function Place({ slug }: { slug: string }) {
   const unavailable = isError || data?.unavailable === true;
   useEffect(() => {
     const status = isPending ? "loading" : unavailable ? "error" : items.length ? "results" : "empty";
-    const send = () => window.parent.postMessage({ type: limit === 1 ? "viator-place-top" : "viator-place", slug, status, height: status === "empty" ? 0 : ref.current?.scrollHeight ?? 120 }, window.location.origin);
+    const send = () => window.parent.postMessage({ type: limit === 1 ? "viator-place-top" : "viator-place", slug, status, height: ref.current?.scrollHeight ?? 120 }, window.location.origin);
+    const onMeasure = (event: MessageEvent) => {
+      if (event.origin === window.location.origin && event.source === window.parent && event.data?.type === "viator-place-measure" && event.data.slug === slug) send();
+    };
+    window.addEventListener("message", onMeasure);
     send();
-    if (!ref.current) return;
+    if (!ref.current) return () => window.removeEventListener("message", onMeasure);
     const ro = new ResizeObserver(send);
     ro.observe(ref.current);
-    return () => ro.disconnect();
-  }, [isPending, unavailable, items.length, slug, limit]);
+    return () => { ro.disconnect(); window.removeEventListener("message", onMeasure); };
+  }, [isPending, unavailable, items.length, data?.searchUrl, slug, limit]);
   if (isPending) return <div className={`grid gap-4 p-1 ${limit === 1 ? "" : "sm:grid-cols-3"}`}>{(limit === 1 ? [1] : [1, 2, 3]).map((n) => <div key={n} className="h-80 animate-pulse rounded-lg bg-muted" />)}</div>;
   return <div ref={ref} className="bg-background p-1">
     {unavailable && <div className="p-4"><p className="text-sm text-muted-foreground">Viator tours could not be loaded. Please try again.</p><Button variant="outline" className="mt-3 min-h-12" onClick={() => refetch()}>Try again</Button></div>}
+    {items.length === 0 && data?.searchUrl && <Button asChild variant="outline" className="min-h-12"><a href={data.searchUrl} target="_blank" rel="sponsored nofollow noopener noreferrer"><T>Search on Viator</T><ArrowUpRight /></a></Button>}
     {items.length > 0 && <>
       <div className={`grid grid-cols-1 gap-4 ${limit === 1 ? "" : "sm:grid-cols-3"}`}>
         {items.map((item) => <article key={item.code} className="flex min-w-0 flex-col overflow-hidden rounded-lg border border-border bg-card">
