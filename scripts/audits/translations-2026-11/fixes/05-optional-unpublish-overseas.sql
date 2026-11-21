@@ -1,7 +1,7 @@
 -- 05-optional-unpublish-overseas.sql
 -- ==================================================================================================
 --  OWNER DECISION — NOT part of the translation fixes. Run only if you decide these six French
---  overseas places should leave the site. Independent of 03-apply.sql; needs 00-backup.sql first
+--  overseas places should leave the site. Independent of 03a/03b; needs 00-backup.sql first
 --  (04-rollback.sql restores the statuses).
 -- ==================================================================================================
 --

@@ -1,4 +1,4 @@
--- 02-preview.sql — SELECT-only dry run of every rule in 03-apply.sql. Writes nothing.
+-- 02-preview.sql — SELECT-only dry run of every rule in 03a-apply-bcd.sql and 03b-apply-rule-a.sql (rule A: after 01b, version 2). Writes nothing.
 -- Needs 01-helper.sql (functions only). Each rule is evaluated independently on the current data.
 -- Every block returns: counts per locale, then up to 10 before/after examples (slug, field, old, new).
 -- Lists that need a person (rule A fallback/unresolved, D2 mismatches, D3 skipped names,
@@ -117,7 +117,7 @@ from public.content_translations t, jsonb_path_query(t.fields, '$.days[*].stops[
 where t.entity_type = 'destination' and t.locale in ('de', 'fr')
   and s.value::text ~ '\[(dated source|source datée|datierter Quelle|datiert Quelle)\]';
 
--- A6 search pages (seo_landing_pages) with a token — NOT changed by 03-apply.sql, count only:
+-- A6 search pages (seo_landing_pages) with a token — NOT changed by 03b-apply-rule-a.sql, count only:
 select count(*) as landing_pages_with_token
 from public.seo_landing_pages
 where concat_ws(' ', seo_title, seo_description, intro_content, content_sections::text)

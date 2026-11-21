@@ -3,7 +3,7 @@ import importlib.util
 import unittest
 from pathlib import Path
 
-from dated_text import drop_dated, drop_placeholder_sentences, has_year
+from dated_text import clause_problems, drop_dated, drop_placeholder_sentences, has_year, placeholder_rule_a
 from placeholder_gate import day_start_mismatches, find_blocked_text, publication_problems
 from quoted_visit import clean, quoted_bundle
 
@@ -45,6 +45,43 @@ class DatedTextTest(unittest.TestCase):
         self.assertEqual(drop_placeholder_sentences(
             'Salzburger Lungau et les Nockberge ont été classés réserve de biosphère par l\'UNESCO en juillet [source datée].'),
             'Salzburger Lungau et les Nockberge ont été classés réserve de biosphère par l\'UNESCO.')
+
+
+class RuleAVersion2Test(unittest.TestCase):
+    """Live preview 2026-11-21: v1 wrote these fragments; v2 must never write a fragment."""
+    BROKEN_V1 = ['Dieser regionale Naturpark wurde am 26. Januar.',
+                 'Breheimen National Park est un parc national qui.',
+                 'Lomsdal-Visten Nationalpark ist ein norwegischer Nationalpark, der am 26. Juni.',
+                 'With about 2,468 km2, it includes 138 communes since 1 January.',
+                 'Salpausselkä Geopark a été accepté le 13 avril.',
+                 'Der Marker Wadden ist ein künstliches Archipel, das im Markermeer.',
+                 'The Regional Natural Park of the Ardennes is a regional natural park established on December.']
+
+    def test_v1_fragments_fail_the_dangling_check(self):
+        for text in self.BROKEN_V1:
+            self.assertTrue(clause_problems(text.rstrip('.')), text)
+
+    def test_cut_back_to_last_complete_clause(self):
+        self.assertEqual(drop_placeholder_sentences(
+            'Lomsdal-Visten Nationalpark ist ein norwegischer Nationalpark, der am 26. Juni [datiert Quelle] gegründet wurde.'),
+            'Lomsdal-Visten Nationalpark ist ein norwegischer Nationalpark.')
+        self.assertEqual(drop_placeholder_sentences(
+            'Lomsdal–Visten National Park is a Norwegian national park that was established on 26 June [dated source].'),
+            'Lomsdal–Visten National Park is a Norwegian national park.')
+
+    def test_unresolved_is_left_unchanged(self):
+        for text in ('Dieser regionale Naturpark wurde am 26. Januar [datiert Quelle] gegründet.',
+                     'With about 2,468 km2, it includes 138 communes since 1 January [dated source] and 46,000 inhabitants.',
+                     'Salpausselkä Geopark a été accepté le 13 avril [dated source].'):
+            result, mode = placeholder_rule_a(text, 'tagline')
+            self.assertEqual((result, mode), (text, 'unresolved'))
+
+    def test_dated_opening_phrase_keeps_main_clause(self):
+        self.assertEqual(drop_placeholder_sentences('Created in [dated source], it encompasses the country\'s largest lagoon complex.'),
+                         "It encompasses the country's largest lagoon complex.")
+
+    def test_german_verb_final_subordinate_clause_is_complete(self):
+        self.assertEqual(clause_problems('Der Park wurde 1992 gegründet, obwohl De Wieden später hinzugefügt wurde'), [])
 
 
 class QuotedVisitTest(unittest.TestCase):

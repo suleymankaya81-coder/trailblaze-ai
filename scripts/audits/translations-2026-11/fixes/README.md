@@ -1,7 +1,14 @@
 # Çeviri düzeltmeleri (2026-11) — SQL dosyaları ve çalıştırma kılavuzu
 
-Bu klasördeki dosyalar **hiçbir yerde çalıştırılmadı**. Canlı veritabanına bağlanılmadı.
+Bu klasördeki dosyalar benim tarafımdan **hiçbir yerde çalıştırılmadı**. Canlı veritabanına bağlanılmadı.
 SQL'i siz gözden geçirip başka bir araçla çalıştıracaksınız.
+
+> **Durum (2026-11-21, 2. tur):**
+> - `00-backup.sql` ve `01-helper.sql` canlıda kurulu: `drizzle/migrations/0018_…`, `0019_…`.
+> - `02-preview.sql` canlıda çalıştırıldı; sonuçları `../preview-2026-11-21/` altında.
+> - B1–B5, C ve D1–D3 kuralları örneklerde doğru çıktı → **`03a-apply-bcd.sql` çalıştırılmaya hazır.**
+> - Kural A'nın v1 sürümü 368 fallback çıktısının yaklaşık 100–150'sinde kırık parça üretiyordu ("…, der am 26. Juni.", "… parc national qui."). Bu yüzden A, **`01b-helper-rule-a-v2.sql`** ile yeniden yazıldı ve **`03b-apply-rule-a.sql`** olarak ayrıldı.
+> - **03b henüz onaylı değil.** Önce 01b kurulmalı, 02 yeniden çalıştırılmalı ve A3/A4 listeleri okunmalı (bkz. bölüm 2 ve `../preview-2026-11-21b/summary.md`).
 
 Test için yalnızca bu oturumun içinde geçici, yerel bir PostgreSQL 16 kuruldu. İçine sadece
 `sample.json`'daki 100 satır yüklendi (99 yer, 50 de + 50 fr çeviri). Tablo ve sütun adları
@@ -26,10 +33,12 @@ Kaynaklar:
 | `00-backup.sql` | Yedek alır: tüm de/fr çeviri satırları, tüm `destinations` satırlarının değişebilecek sütunları ve `regions.status`. Hepsi özel `audit_backup` şemasına gider. | Sadece yedek tablo oluşturur |
 | `01-helper.sql` | Özel `translation_fix` şemasında yardımcı fonksiyonları kurar. Asıl parça, JSONB'yi özyinelemeli gezip her metin değerine kural uygulayan `jsonb_walk` fonksiyonu. | Hayır (sadece fonksiyon) |
 | `02-preview.sql` | Sadece SELECT içerir. Her kural için dil başına etkilenen satır sayısını ve 10 önce/sonra örneğini (slug, alan, eski, yeni) verir. Ayrıca bir kişinin bakması gereken listeleri çıkarır. | Hayır |
-| `03-apply.sql` | Gerçek güncellemeler. Tek bir transaction içindedir ve her kural ayrı açıklamalı bir blok. | Evet |
-| `04-rollback.sql` | `audit_backup` yedeğinden geri yükler (03 ve 05'in yaptığı her şeyi). | Evet (geri alma) |
+| `01b-helper-rule-a-v2.sql` | Kural A'nın 2. sürümü. A fonksiyonlarını yeniden yazar ve "sarkan parça" kontrolünü ekler (bkz. bölüm 3-A). `02-preview.sql` değişmeden v2 ile çalışır. | Hayır (sadece fonksiyon) |
+| `03a-apply-bcd.sql` | **Hazır.** Yalnızca B1–B5, C, D1–D3. Tek transaction, yapı/kimlik kontrolleri ve `fix_log` var. Tek başına çalışır, idempotent. | Evet |
+| `03b-apply-rule-a.sql` | **Henüz onaylı değil.** Yalnızca kural A (v2). Tek transaction ve aynı kontroller. 01b kurulu değilse çalışmayı reddeder. Sonda "unresolved" sayılarını da verir. | Evet |
+| `04-rollback.sql` | `audit_backup` yedeğinden geri yükler: 03a, 03b ve 05'in yaptığı her şeyi. | Evet (geri alma) |
 | `05-optional-unpublish-overseas.sql` | **Sahip kararı.** 6 denizaşırı Fransız yeri taslağa (draft) çeker. | Evet (isteğe bağlı) |
-| `fix_repo_caches.py` | Repodaki çeviri önbelleklerine aynı kuralları uygular. Bu dalda zaten çalıştırıldı ve sonucu commit'lendi. Veritabanına dokunmaz. | Sadece repo dosyaları |
+| `fix_repo_caches.py` | Repodaki çeviri önbelleklerine aynı kuralları uygular. Çalıştırıldı ve sonucu commit'lendi. 2. turda v1 ile temizlenmiş 8 Almanca yer önbelleği v2 ile yeniden üretildi. Veritabanına dokunmaz. | Sadece repo dosyaları |
 
 **Güvenlik:**
 
@@ -49,19 +58,21 @@ Her dosyayı **tek parça** çalıştırın: `psql -v ON_ERROR_STOP=1 -f <dosya>
    - Sondaki sayılar beklenen: `translations = 6318` (de 3.087 + fr 3.231) ve `destinations` = toplam satır sayısı.
    - `public` kontrolü 0 satır dönmeli.
    - İkinci kez çalıştırılırsa ilk yedeğin üzerine yazmaz (`create table if not exists`).
-2. **`01-helper.sql`**: yalnızca fonksiyonları kurar. Tekrar çalıştırılabilir.
-3. **`02-preview.sql`**: sonuçları okuyun (bkz. bölüm 3). Özellikle şunlara bakın:
-   - A3 "fallback" listesinin tamamı
-   - A4 "unresolved" listesi
+2. **`01-helper.sql`**: yalnızca fonksiyonları kurar. Tekrar çalıştırılabilir. *(Canlıda kurulu.)*
+3. **`01b-helper-rule-a-v2.sql`**: kural A v2'yi kurar. Tekrar çalıştırılabilir. *(Yeni; canlıda henüz yok.)*
+4. **`02-preview.sql`**: 01b kurulduktan sonra **yeniden** çalıştırın ve okuyun (bkz. bölüm 3). Özellikle:
+   - A3 fallback listesi (modlar artık: `fallback`, `fallback_cut`, `fallback_intro`, `fallback_next`)
+   - A4 unresolved listesi
    - A4b zamirle başlayan metinler
    - D2 uyuşmazlık listesi
-4. **`03-apply.sql`**: tek transaction. Sonunda iki tablo çıkar:
-   - kural başına `rows_changed`
-   - kalan sorun sayıları
-   - Yapı veya kimlik kontrolü başarısız olursa hiçbir şey kaydedilmez (ROLLBACK).
-5. **Sonucu kontrol edin** (bölüm 4). İsterseniz 03'ü bir kez daha çalıştırın: tüm `rows_changed` 0 olmalı.
-6. *(İsteğe bağlı, sahip kararı)* **`05-optional-unpublish-overseas.sql`**
-7. Bir sorun çıkarsa **`04-rollback.sql`**. Önce baştaki listeye bakın: yedekten sonra başka bir nedenle değişen satırlar da geri döner.
+5. **`03a-apply-bcd.sql`** (hazır): tek transaction. Sonunda kural başına `rows_changed` ve kalan sorunlar çıkar. Yapı veya kimlik kontrolü başarısız olursa hiçbir şey kaydedilmez. İkinci çalıştırmada tüm `rows_changed` 0 olmalı.
+6. **`03b-apply-rule-a.sql`**: yalnızca 4. adımdaki A3/A4 listesi onaylandıktan sonra çalıştırın.
+   - Tek transaction; aynı kontroller.
+   - Sonda "rule A unresolved fields" tablosu çıkar: değiştirilmeden kalan alanlar. Bunları bir kişi yazmalı.
+   - 03a ile sırası önemli değildir; ikisi birbirinden bağımsızdır.
+7. **Sonucu kontrol edin** (bölüm 4).
+8. *(İsteğe bağlı, sahip kararı)* **`05-optional-unpublish-overseas.sql`**
+9. Bir sorun çıkarsa **`04-rollback.sql`**: 03a, 03b ve 05'i birlikte geri alır. Önce baştaki listeye bakın: yedekten sonra başka bir nedenle değişen satırlar da geri döner.
 
 Her şey kesinleştikten sonra yardımcı fonksiyonlar silinebilir: `drop schema translation_fix cascade;`. Yedek şeması `audit_backup` kalsın; ne zaman silineceğine siz karar verin.
 
@@ -78,21 +89,46 @@ Hiçbir kural şunları değiştirmez:
 - `stop_id`
 - bağlantılar ve etiketler
 
-JSON yapısı korunur: anahtarlar, dizi uzunlukları ve metin olmayan değerler aynı kalır. 03 bunu yedekle karşılaştırarak kanıtlar.
+JSON yapısı korunur: anahtarlar, dizi uzunlukları ve metin olmayan değerler aynı kalır. 03a ve 03b bunu yedekle karşılaştırarak kanıtlar.
 
-### A — Yer tutucu cümleleri (İngilizce kaynak + de + fr)
+### A — Yer tutucu cümleleri (İngilizce kaynak + de + fr) — **v2, `01b` + `03b`**
 
 - `[dated source]`, `[source datée]`, `[datierter Quelle]` ya da `[datiert Quelle]` içeren **cümlenin tamamı** silinir.
   - Kapsam: `fields` içindeki tüm metin alanları (tagline, metaDescription, stops[].detail, intel, notlar…) ve `destinations` sütunları ile `travel_plan`.
 - Sonda kesilmiş belirteç de yakalanır, örn. "… en juillet [da".
-- **Kesin düzeltme (A0):** "Natura [dated source]" → "Natura 2000". Belirteç, AB koruma ağının adındaki "2000" sayısını yemişti. Bu bir tarih değil, isim.
-- **Alan boşalacaksa:**
-  - Belirteçten önceki ilk yan cümle tutulur.
-  - Sondaki asılı kelimeler atılır ("in", "en", "créé", "gegründet", "established in July" → "…").
-  - Böylece "in ." veya "créé en" kalmaz.
-  - Bunlar 02'de **A3 fallback** listesinde tek tek görünür.
-- **Yan cümlede 5 kelimeden az kalırsa** (örn. sadece yer adı), alan **değiştirilmez**. Bunlar **A4 unresolved** olarak listelenir ve bir kişi tarafından yazılmalıdır.
-- Cümle bölme kısaltmaları korur: "St. George", "ca.", "1. Januar".
+- **Kesin düzeltme (A0):** "Natura [dated source]" → "Natura 2000". Belirteç, AB koruma ağının adındaki "2000" sayısını yemişti. v2'de de korunuyor.
+- **v1'in sorunu:** alan boşalacağı zaman belirteçten önceki yan cümleyi tutuyordu. Ama bu yan cümle çoğu zaman yarım kalıyordu:
+  - „Dieser regionale Naturpark wurde am 26. Januar."
+  - „Breheimen National Park est un parc national qui."
+  - „…, der am 26. Juni."
+  - „With about 2,468 km2, it includes 138 communes since 1 January."
+  - „Salpausselkä Geopark a été accepté le 13 avril."
+- **v2'nin sarkan parça kontrolü** (`translation_fix.clause_problems`; en/de/fr). Yazılacak her metin kontrol edilir. Metin şu durumlarda **geçersiz** sayılır:
+  - Sonu şunlardan biriyle bitiyor:
+    - ilgi zamiri, bağlaç ya da yardımcı fiil: qui, que, dont, der, die, das, which, that, wurde, est, a été, ist…
+    - edat ya da artikel
+    - yıl kalmamış bir giriş fiili: established, gegründet, créé… (metinde 15xx–19xx yılı kalmışsa geçerli)
+  - Yılı olmayan gün + ay içeriyor („am 26. Juni", „le 13 avril", „1 January"), ayla bitiyor ya da „in/im/en/début + ay" içeriyor.
+  - Ana fiil kalmamış (en/de/fr fiil listesi).
+  - Parça gibi başlıyor:
+    - küçük harfle
+    - edat ya da bağlaçla: Mit, With, Avec, Since, Seit, Depuis…
+    - fiille: „Ist es …"
+  - „/", „n°" ya da „by Decree" ile bitiyor.
+  - Son yan cümlede fiil yok: „…, das im Markermeer".
+  - 5 kelimeden kısa. Baştaki „Ad :" öneki sayılmaz.
+  - Almanca fiil sonda yan cümle geçerlidir: „…, obwohl De Wieden später hinzugefügt wurde."
+- **Geçersizse sırayla:**
+  - **(a)** Son tam yan cümleye kadar geri keser. Sınırlar: virgül, ilgi zamiri, tarih ya da giriş fiili. Sonuç aynı kontrolden geçmeli: özne + fiil var, en az 5 kelime. Örnek: „Lomsdal-Visten Nationalpark ist ein norwegischer Nationalpark." Mod: `fallback_cut`.
+  - **(a2)** Belirteç kısa bir girişin içindeyse („Created in [t], it encompasses …", „En [t], son périmètre …"), virgülden sonraki ana cümle tutulur. Mod: `fallback_intro`.
+  - **(b)** tagline, seo_description ve metaDescription için: aynı alandaki bir sonraki belirteçli cümleden geçerli bir yan cümle. Mod: `fallback_next`.
+  - **(c)** Hiçbiri olmazsa alan **değiştirilmez**: mod `unresolved`. Bir kişi yazmalı.
+- Cümle silindikten sonra kalan son parça da kontrol edilir. Kesik bir slogan sonu („… Dieses") yazılmaz.
+- **Hiçbir zaman parça yazılmaz.** Aynı kurallar `scripts/content-pipeline/dated_text.py` içinde yeni içerik için de var. Python ve SQL 463 kayıtta birebir aynı sonucu verdi.
+- **Canlı önizlemedeki 463 kayıtta test** (ayrıntı: `../preview-2026-11-21b/summary.md`):
+  - geçerli sonuç: 336 (en 144, de 60, fr 132)
+  - unresolved: 127 (en 45, de 41, fr 41)
+  - sarkan sonuç: önce 148 (basit kalıp kontrolüyle 108) → sonra **0**
 
 ### B — Almanca şablon düzeltmeleri
 
@@ -170,18 +206,19 @@ Ek olarak 19 slogan noktalama işaretiyle bitmiyor. Bunların çoğu, İngilizce
 
 ## 4. Sonuç nasıl kontrol edilir
 
-- **03'ün sonunda:**
+- **03a ve 03b'nin sonunda:**
   - `fix_log` tablosu kural başına değişen satır sayısını verir.
   - "kalan" tablosu şunları gösterir:
     - kalan belirteçler (yalnızca A4 unresolved kadar olmalı)
     - `aktivitätsberechtigungen` sayısı: **0 olmalı**
     - „Timing" sayısı: **0 olmalı**
-- **İkinci çalıştırma:** 03 tekrar çalıştırılınca tüm `rows_changed` 0 olmalı.
+- **İkinci çalıştırma:** 03a/03b tekrar çalıştırılınca tüm `rows_changed` 0 olmalı.
+- **03b'den sonra:** "rule A unresolved fields" tablosu, bir kişinin yazması gereken alanları sayar. Canlı önizlemedeki 463 kayıt üzerinden beklenen: yaklaşık 127 alan (en 45, de 41, fr 41). Tam liste: `../preview-2026-11-21b/unresolved-v2.md`.
 - **Canlı sayımlarınızla karşılaştırma:**
   - B1, 2.457 de satırına yakın olmalı.
   - D1, 2.044 fr satırına yakın olmalı.
   - A için 02'nin ilk tablosu sizin token sayımlarınızı tekrar üretmeli: de 10/84/123, fr 229/76, en 307.
-  - Büyük bir fark varsa 03'ü çalıştırmadan önce durun.
+  - Büyük bir fark varsa 03a/03b'yi çalıştırmadan önce durun.
 - **Elle kontrol örneği:**
   ```sql
   select fields->'days'->2->>'start', fields->'days'->2->>'driving'
@@ -194,8 +231,9 @@ Ek olarak 19 slogan noktalama işaretiyle bitmiyor. Bunların çoğu, İngilizce
 
 ## 5. Riskli kurallar (yüksekten düşüğe)
 
-1. **A — cümle silme.**
+1. **A — cümle silme (v2, 03b).**
    - Bilgi kaybı var; bu bilinçli bir tercih.
+   - v2 parça yazmaz. Bunun bedeli, daha çok alanın unresolved kalması: 463 önizleme kaydında 127.
    - İlk cümle silinince metin zamirle başlayabilir. Örnek, are: „It is, however, not the seat of the municipality…". Bunlar 02'de **A4b** listesinde.
    - Fallback yan cümleleri (A3) mutlaka okunmalı.
    - Cümle bölme kuralı kısaltma listesine dayanıyor; listede olmayan bir kısaltma iki cümleyi birleştirebilir.
@@ -207,7 +245,7 @@ Ek olarak 19 slogan noktalama işaretiyle bitmiyor. Bunların çoğu, İngilizce
 
 ## 6. Otomatikleştirilmeyenler (bilerek)
 
-- A4 „unresolved" alanlar (örnekte: sjusjoen detayı en+fr, sparbach slogan/meta en+fr). Yazılması ya da alanın kaldırılması bir kişi işi.
+- A4 „unresolved" alanlar: canlı önizlemenin 463 kaydında v2 ile 127 alan (en 45, de 41, fr 41). Liste: `../preview-2026-11-21b/unresolved-v2.md`. Yazılması ya da alanın kaldırılması bir kişi işi.
 - Durak adı içinde belirteç varsa (A5) dokunulmaz: durak adları rota kimliği.
 - `seo_landing_pages` içindeki belirteçler (A6) yalnızca sayılır.
 - D2'de sayısı İngilizceden farklı mesafeler (örnek: folgefonna).
@@ -238,6 +276,13 @@ Ek olarak 19 slogan noktalama işaretiyle bitmiyor. Bunların çoğu, İngilizce
 
 ## 8. Yerel test sonuçları (sadece sample.json, PostgreSQL 16)
 
+**2. tur (v2):** 03 ikiye bölündü.
+
+- **03a**, sample üzerinde aynı sayıları verdi: B1 36, B2 36, B3 36, B4 25, B5 48, C 25, D1 38, D2 30, D3 41. İkinci çalıştırma 0.
+- **03b (v2)**, sample üzerinde: A en 25, de 3, fr 20. İkinci çalıştırma 0. Unresolved: en 3 satır/6 alan, fr 3 satır/6 alan.
+- 04 ile tam geri dönüş: 0 fark.
+- Aşağıdaki tablo 1. turdan (v1).
+
 | Kontrol | Sonuç |
 |---|---|
 | Belirteçli satır (örnek) | de 3 (datierter 2, datiert 1) · fr 24 kayıt (dated 21, source datée 3) · en 27 yer |
@@ -256,7 +301,7 @@ Ek olarak 19 slogan noktalama işaretiyle bitmiyor. Bunların çoğu, İngilizce
 
 Amaç, yeni içeriğin aynı hataları tekrarlamaması.
 
-- **`scripts/content-pipeline/dated_text.py`** (yeni):
+- **`scripts/content-pipeline/dated_text.py`** (2. turda v2 kurallarına güncellendi: sarkan parça kontrolü, a/a2/b/c adımları; SQL ile aynı sonuç):
   - Yıl içeren cümleyi tamamen siler, artık `[dated source]` yazmaz.
   - Tek cümleyse belirteçten önceki ilk yan cümleyi tutar.
   - „Natura 2000" bir isim olarak korunur.

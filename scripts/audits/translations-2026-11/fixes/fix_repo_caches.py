@@ -6,7 +6,7 @@ Touches only files in the repo (no database, no network, no model calls):
   * scripts/content-pipeline/dach/translations/en-de-*.json  Argos phrase cache (multi-day German)
   * data/translations/fr/phrases.json                         French phrase dictionary
   * data/translations/fr/reviewed-phrases.json                reviewed French overrides
-Rules (same wording as 01-helper.sql / 03-apply.sql):
+Rules (same wording as 01-helper.sql / 01b-helper-rule-a-v2.sql / 03a / 03b):
   A  sentences with [dated source]/[source datée]/[datierter Quelle]/[datiert Quelle] removed
      (per-slug German outputs only; phrase caches are keyed by their English source text)
   B1–B5 German templates, D1 "Timing" → "Horaires", D2 duplicate km/miles where the km equals English.
