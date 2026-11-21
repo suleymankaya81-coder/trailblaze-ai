@@ -33,7 +33,7 @@ export function viatorPlaceQuery(name: string, country: string): string {
 }
 
 // One-time invalidation of results produced by the old international matching rules.
-export const VIATOR_CACHE_REVIEWED_AFTER = Date.parse("2026-11-21T10:10:00Z");
+export const VIATOR_CACHE_REVIEWED_AFTER = Date.parse("2026-11-21T13:15:00Z");
 export function isViatorPlaceCacheFresh(fetchedAt: string, now = Date.now()): boolean {
   const fetched = Date.parse(fetchedAt);
   return fetched >= VIATOR_CACHE_REVIEWED_AFTER && fetched <= now && now - fetched < 24 * 60 * 60 * 1000;

@@ -14,6 +14,8 @@ export type PlaceExperience = {
   relevanceText?: string;
   freeCancellation?: boolean; mobileTicket?: boolean;
   nearby?: boolean;
+  /** Viator's own city/town used as the day-trip base when the place itself has no named listing. */
+  nearbyFrom?: string;
 };
 type Product = {
   productCode: string; title: string; productUrl: string; description?: string;
@@ -45,24 +47,34 @@ export function tourCategory(title: string): string {
 export const getPlaceExperiences = createServerFn({ method: "GET" })
   .inputValidator((d: unknown) => z.object({ slug: z.string().regex(/^[a-z0-9-]{1,100}$/) }).parse(d))
   .handler(async ({ data }): Promise<{ name: string; items: PlaceExperience[]; searchUrl?: string; unavailable?: boolean }> => {
-    const { data: dest } = await supabase.from("destinations").select("name, state, country_code, region, gateway_cities").eq("slug", data.slug).eq("status", "published").maybeSingle();
+    const { data: dest } = await supabase.from("destinations").select("name, state, country_code, region, gateway_cities, lat, lng").eq("slug", data.slug).eq("status", "published").maybeSingle();
     if (!dest) return { name: "", items: [] };
     const place = { name: dest.name, searchUrl: viatorPlaceSearchUrl(dest.name, dest.country_code ?? "us") };
     const { data: cached } = await supabase.from("viator_place_cache").select("items, fetched_at").eq("slug", data.slug).maybeSingle();
     const location = { countryCode: dest.country_code, region: dest.state ?? dest.region };
     const near = { gateways: dest.gateway_cities, area: dest.region, state: dest.state, countryCode: dest.country_code };
     const storedItems = (cached?.items as PlaceExperience[] | undefined) ?? [];
-    const cachedItems = storedItems.filter((item) => isPlaceExperienceRelevant(dest.name, item.title, item.relevanceText ?? item.summary, location) || (item.nearby && isNearbyExperienceRelevant(item.title, item.relevanceText ?? item.summary, near))).map(item => isViatorAreaAlias(dest.name) ? { ...item, nearby: true } : item);
+    const cachedItems = storedItems.filter((item) => isPlaceExperienceRelevant(dest.name, item.title, item.relevanceText ?? item.summary, location) || Boolean(item.nearby && item.nearbyFrom) || (item.nearby && isNearbyExperienceRelevant(item.title, item.relevanceText ?? item.summary, near))).map(item => isViatorAreaAlias(dest.name) ? { ...item, nearby: true } : item);
     if (cached && isViatorPlaceCacheFresh(cached.fetched_at) && cachedItems.length === storedItems.length) return { ...place, items: cachedItems };
 
     const key = process.env["VIATOR_API_KEY"];
     if (!key) return { ...place, items: cachedItems, unavailable: cachedItems.length === 0 };
     let items: PlaceExperience[] = [];
     const suffix = viatorCountryName(dest.country_code ?? "us");
+    const add = (p: Product, nearby: boolean, from?: string): boolean => {
+      if (items.some((i) => i.code === p.productCode)) return false;
+      const url = verifiedViatorProductUrl(p.productUrl);
+      const image = viatorProductImage(p.images);
+      if (!url || !image?.startsWith("https://")) return false;
+      const desc = (p.description ?? "").replace(/\s+/g, " ").trim();
+      const summary = desc ? (desc.length > 160 ? `${desc.slice(0, 157).replace(/\s\S*$/, "")}…` : desc) : undefined;
+      items.push({ code: p.productCode, title: p.title, url, image, price: p.pricing?.summary?.fromPrice ?? null, currency: p.pricing?.currency ?? "USD", rating: p.reviews?.combinedAverageRating ?? null, reviews: p.reviews?.totalReviews ?? 0, ...(summary ? { summary } : {}), relevanceText: desc, category: tourCategory(p.title), ...viatorAssurances(p.flags), ...(nearby || isViatorAreaAlias(dest.name) ? { nearby: true } : {}), ...(from ? { nearbyFrom: from } : {}) });
+      return items.length === 6;
+    };
+    const headers = { "exp-api-key": key, Accept: "application/json;version=2.0", "Accept-Language": "en-US", "Content-Type": "application/json" };
     const search = async (term: string, nearby: boolean): Promise<boolean> => {
       const res = await fetch("https://api.viator.com/partner/search/freetext", {
-        method: "POST",
-        headers: { "exp-api-key": key, Accept: "application/json;version=2.0", "Accept-Language": "en-US", "Content-Type": "application/json" },
+        method: "POST", headers,
         body: JSON.stringify({ searchTerm: term, searchTypes: [{ searchType: "PRODUCTS", pagination: { start: 1, count: 20 } }], currency: "USD" }),
         signal: AbortSignal.timeout(15000),
       });
@@ -71,15 +83,22 @@ export const getPlaceExperiences = createServerFn({ method: "GET" })
       if (!Array.isArray(body.products?.results)) return false;
       for (const p of body.products?.results ?? []) {
         const ok = nearby ? isNearbyExperienceRelevant(p.title, p.description, near) : isPlaceExperienceRelevant(dest.name, p.title, p.description, location);
-        if (!ok || items.some((i) => i.code === p.productCode)) continue;
-        const url = verifiedViatorProductUrl(p.productUrl);
-        const image = viatorProductImage(p.images);
-        if (!url || !image?.startsWith("https://")) continue;
-        const desc = (p.description ?? "").replace(/\s+/g, " ").trim();
-        const summary = desc ? (desc.length > 160 ? `${desc.slice(0, 157).replace(/\s\S*$/, "")}…` : desc) : undefined;
-        items.push({ code: p.productCode, title: p.title, url, image, price: p.pricing?.summary?.fromPrice ?? null, currency: p.pricing?.currency ?? "USD", rating: p.reviews?.combinedAverageRating ?? null, reviews: p.reviews?.totalReviews ?? 0, ...(summary ? { summary } : {}), relevanceText: desc, category: tourCategory(p.title), ...viatorAssurances(p.flags), ...(nearby || isViatorAreaAlias(dest.name) ? { nearby: true } : {}) });
-        if (items.length === 6) break;
+        if (ok && add(p, nearby)) break;
       }
+      return true;
+    };
+    // Viator's documented destination search: outdoor/nature products from its own nearest city or town.
+    const searchHub = async (hub: { id: number; name: string }): Promise<boolean> => {
+      const { VIATOR_OUTDOOR_TAG, isOutdoorListing } = await import("./viatorNearby");
+      const res = await fetch("https://api.viator.com/partner/products/search", {
+        method: "POST", headers,
+        body: JSON.stringify({ filtering: { destination: String(hub.id), tags: [VIATOR_OUTDOOR_TAG] }, sorting: { sort: "TRAVELER_RATING", order: "DESCENDING" }, pagination: { start: 1, count: 30 }, currency: "USD" }),
+        signal: AbortSignal.timeout(15000),
+      });
+      if (!res.ok) { console.error(`[Viator hub] ${res.status}`); return false; }
+      const body = (await res.json()) as { products?: Product[] };
+      if (!Array.isArray(body.products)) return false;
+      for (const p of body.products) if (isOutdoorListing(p.title) && add(p, true, hub.name)) break;
       return true;
     };
     try {
@@ -87,6 +106,11 @@ export const getPlaceExperiences = createServerFn({ method: "GET" })
       // No named listing: one bounded search around the gateway town / area.
       const gateway = dest.gateway_cities?.[0];
       if (!items.length && gateway && !(await search(`${gateway} ${dest.region ?? ""} ${suffix}`.trim(), true))) return { ...place, items: cachedItems, unavailable: cachedItems.length === 0 };
+      if (!items.length && dest.lat != null && dest.lng != null) {
+        const { nearestViatorHub } = await import("./viatorNearby");
+        const hub = nearestViatorHub(dest.lat, dest.lng, dest.country_code ?? "us");
+        if (hub && !(await searchHub(hub))) return { ...place, items: cachedItems, unavailable: cachedItems.length === 0 };
+      }
     } catch (e) {
       console.error("[Viator place] failed", e instanceof Error ? e.message : e);
       return { ...place, items: cachedItems, unavailable: cachedItems.length === 0 };

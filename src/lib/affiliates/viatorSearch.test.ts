@@ -19,8 +19,8 @@ it("uses the same geographic search identity in API and fallback links", () => {
 });
 it("invalidates pre-fix caches while bounding fresh empty searches to 24 hours", () => {
   const now = Date.parse("2026-11-22T10:04:00Z");
-  expect(isViatorPlaceCacheFresh("2026-11-21T10:09:59Z", now)).toBe(false);
-  expect(isViatorPlaceCacheFresh("2026-11-21T11:04:00Z", now)).toBe(true);
+  expect(isViatorPlaceCacheFresh("2026-11-21T13:14:59Z", now)).toBe(false);
+  expect(isViatorPlaceCacheFresh("2026-11-21T13:16:00Z", now)).toBe(true);
   expect(isViatorPlaceCacheFresh("2026-11-21T10:04:00Z", now)).toBe(false);
   expect(isViatorPlaceCacheFresh("2026-11-23T10:04:00Z", now)).toBe(false);
 });

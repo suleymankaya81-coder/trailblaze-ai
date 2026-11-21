@@ -51,7 +51,7 @@ function Place({ slug }: { slug: string }) {
         {items.map((item) => <article key={item.code} className="flex min-w-0 flex-col overflow-hidden rounded-lg border border-border bg-card">
           <SafeImage src={item.image} alt={item.title} loading="lazy" className={`${limit === 1 ? "aspect-[16/9]" : "aspect-[4/3]"} w-full object-cover`} />
           <div className="flex flex-1 flex-col p-4">
-            <p className="text-[10px] uppercase tracking-wide text-muted-foreground">{item.nearby ? "Nearby · " : ""}{item.category ?? tourCategory(item.title)}</p>
+            <p className="text-[10px] uppercase tracking-wide text-muted-foreground">{item.nearbyFrom ? `From ${item.nearbyFrom} · ` : item.nearby ? "Nearby · " : ""}{item.category ?? tourCategory(item.title)}</p>
             <h3 className="mt-1 font-display text-base font-semibold leading-snug text-foreground"><T>{item.title}</T></h3>
             {item.summary && <p className="mt-2 text-xs leading-relaxed text-muted-foreground"><T>{item.summary}</T></p>}
             {(item.freeCancellation || item.mobileTicket) && <ul className="mt-2 flex flex-wrap gap-1.5">{item.freeCancellation && <li className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-medium text-foreground">✓ Free cancellation</li>}{item.mobileTicket && <li className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-medium text-foreground">✓ Mobile ticket</li>}</ul>}

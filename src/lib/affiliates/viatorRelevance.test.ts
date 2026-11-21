@@ -79,3 +79,19 @@ describe("nearby Viator fallback", () => {
     expect(isNearbyExperienceRelevant("Alabama BBQ tour", "", { gateways: ["Fort Payne"], area: "Northeastern Alabama", state: "Alabama", countryCode: "us" })).toBe(false);
   });
 });
+
+describe("international word order and spelling", () => {
+  it("accepts Gorges du Verdon listings in either word order", () => {
+    expect(isPlaceExperienceRelevant("Gorges du Verdon", "Gorges du Verdon Shared Tour from Nice", "", { countryCode: "fr" })).toBe(true);
+    expect(isPlaceExperienceRelevant("Gorges du Verdon", "Rafting in the Verdon Gorge", "", { countryCode: "fr" })).toBe(true);
+  });
+  it("accepts Sierra spelling for Serra de Tramuntana", () => {
+    expect(isPlaceExperienceRelevant("Serra de Tramuntana", "Sierra de Tramuntana hiking day", "Mallorca", { countryCode: "es" })).toBe(true);
+  });
+  it("accepts a UK listing that names a British city instead of the country", () => {
+    expect(isPlaceExperienceRelevant("Lake District National Park", "Lake District day tour", "Departs Manchester", { countryCode: "gb", region: "Cumbria" })).toBe(true);
+  });
+  it("does not treat New York as British geography", () => {
+    expect(isPlaceExperienceRelevant("Lake District National Park", "Lake District tour", "Departs New York", { countryCode: "gb", region: "Cumbria" })).toBe(false);
+  });
+});

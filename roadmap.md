@@ -315,6 +315,7 @@
 - [x] Verify all seven product images, catalog prices, publisher/advertiser IDs, new-tab tracking, desktop/mobile layout, previous/next controls and FAQ interaction; five tests pass, build OK. Publishing remains deferred.
 
 ## Direct Viator activity integration
+- [x] International parks: any-order name matching, spelling variants, UK city geography and nearest Viator city/town outdoor fallback (sample 7/26 → 18/26 pages with real listings).
 - [x] Record confirmed direct affiliate parameters and review the supplied API licence conditions and sandbox/production status.
 - [x] Verify securely saved VIATOR_API_KEY against production search: real products and account-attributed links return 200. Bulk product access returns 403; use the permitted search endpoint.
 - [ ] Replace generic destination activity recommendations site-wide; outside the approved Grand Circle pilot scope, awaiting a separate rollout request.
