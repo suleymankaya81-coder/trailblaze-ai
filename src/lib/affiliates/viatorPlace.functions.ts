@@ -4,11 +4,13 @@ import { supabase } from "@/integrations/supabase/client";
 import { verifiedViatorProductUrl } from "./corridorPartners";
 import { viatorProductImage } from "./viatorImages";
 import { isNearbyExperienceRelevant, isPlaceExperienceRelevant } from "./viatorRelevance";
+import { isViatorAreaAlias, isViatorPlaceCacheFresh, viatorCountryName, viatorPlaceQuery } from "./viatorPlaceIdentity";
 
 export type PlaceExperience = {
   code: string; title: string; url: string; image: string;
   price: number | null; currency: string; rating: number | null; reviews: number;
   summary?: string; category?: string;
+  relevanceText?: string;
   freeCancellation?: boolean; mobileTicket?: boolean;
   nearby?: boolean;
 };
@@ -38,24 +40,23 @@ export function tourCategory(title: string): string {
   return rules.find(([re]) => re.test(t))?.[1] ?? "Tour & experience";
 }
 
-const DAY = 24 * 60 * 60 * 1000;
-
 /** Live Viator listings for one destination, cached 24h per place. */
 export const getPlaceExperiences = createServerFn({ method: "GET" })
-  .inputValidator((d: unknown) => z.object({ slug: z.string().regex(/^[a-z0-9-]{1,80}$/) }).parse(d))
+  .inputValidator((d: unknown) => z.object({ slug: z.string().regex(/^[a-z0-9-]{1,100}$/) }).parse(d))
   .handler(async ({ data }): Promise<{ name: string; items: PlaceExperience[]; unavailable?: boolean }> => {
     const { data: dest } = await supabase.from("destinations").select("name, state, country_code, region, gateway_cities").eq("slug", data.slug).eq("status", "published").maybeSingle();
     if (!dest) return { name: "", items: [] };
     const { data: cached } = await supabase.from("viator_place_cache").select("items, fetched_at").eq("slug", data.slug).maybeSingle();
     const location = { countryCode: dest.country_code, region: dest.state ?? dest.region };
     const near = { gateways: dest.gateway_cities, area: dest.region, state: dest.state, countryCode: dest.country_code };
-    const cachedItems = ((cached?.items as PlaceExperience[] | undefined) ?? []).filter((item) => item.nearby ? isNearbyExperienceRelevant(item.title, item.summary, near) : isPlaceExperienceRelevant(dest.name, item.title, item.summary, location));
-    if (cached && Date.now() - new Date(cached.fetched_at).getTime() < DAY) return { name: dest.name, items: cachedItems };
+    const storedItems = (cached?.items as PlaceExperience[] | undefined) ?? [];
+    const cachedItems = storedItems.filter((item) => isPlaceExperienceRelevant(dest.name, item.title, item.relevanceText ?? item.summary, location) || (item.nearby && isNearbyExperienceRelevant(item.title, item.relevanceText ?? item.summary, near))).map(item => isViatorAreaAlias(dest.name) ? { ...item, nearby: true } : item);
+    if (cached && isViatorPlaceCacheFresh(cached.fetched_at) && cachedItems.length === storedItems.length) return { name: dest.name, items: cachedItems };
 
     const key = process.env["VIATOR_API_KEY"];
     if (!key) return { name: dest.name, items: cachedItems, unavailable: cachedItems.length === 0 };
     let items: PlaceExperience[] = [];
-    const suffix = dest.country_code === "ca" ? " Canada" : dest.country_code === "gb" ? " UK" : "";
+    const suffix = viatorCountryName(dest.country_code ?? "us");
     const search = async (term: string, nearby: boolean): Promise<boolean> => {
       const res = await fetch("https://api.viator.com/partner/search/freetext", {
         method: "POST",
@@ -65,6 +66,7 @@ export const getPlaceExperiences = createServerFn({ method: "GET" })
       });
       if (!res.ok) { console.error(`[Viator place] ${res.status}`); return false; }
       const body = (await res.json()) as { products?: { results?: Product[] } };
+      if (!Array.isArray(body.products?.results)) return false;
       for (const p of body.products?.results ?? []) {
         const ok = nearby ? isNearbyExperienceRelevant(p.title, p.description, near) : isPlaceExperienceRelevant(dest.name, p.title, p.description, location);
         if (!ok || items.some((i) => i.code === p.productCode)) continue;
@@ -73,15 +75,16 @@ export const getPlaceExperiences = createServerFn({ method: "GET" })
         if (!url || !image?.startsWith("https://")) continue;
         const desc = (p.description ?? "").replace(/\s+/g, " ").trim();
         const summary = desc ? (desc.length > 160 ? `${desc.slice(0, 157).replace(/\s\S*$/, "")}…` : desc) : undefined;
-        items.push({ code: p.productCode, title: p.title, url, image, price: p.pricing?.summary?.fromPrice ?? null, currency: p.pricing?.currency ?? "USD", rating: p.reviews?.combinedAverageRating ?? null, reviews: p.reviews?.totalReviews ?? 0, summary, category: tourCategory(p.title), ...viatorAssurances(p.flags), ...(nearby ? { nearby: true } : {}) });
+        items.push({ code: p.productCode, title: p.title, url, image, price: p.pricing?.summary?.fromPrice ?? null, currency: p.pricing?.currency ?? "USD", rating: p.reviews?.combinedAverageRating ?? null, reviews: p.reviews?.totalReviews ?? 0, ...(summary ? { summary } : {}), relevanceText: desc, category: tourCategory(p.title), ...viatorAssurances(p.flags), ...(nearby || isViatorAreaAlias(dest.name) ? { nearby: true } : {}) });
         if (items.length === 6) break;
       }
       return true;
     };
     try {
-      if (!(await search(`${dest.name} ${dest.state ?? dest.region ?? ""}${suffix}`, false))) return { name: dest.name, items: cachedItems, unavailable: cachedItems.length === 0 };
+      if (!(await search(viatorPlaceQuery(dest.name, dest.country_code ?? "us"), false))) return { name: dest.name, items: cachedItems, unavailable: cachedItems.length === 0 };
       // No named listing: one bounded search around the gateway town / area.
-      if (!items.length) await search(`${dest.gateway_cities?.[0] ?? dest.region ?? ""} ${dest.region ?? ""}${suffix}`.trim(), true);
+      const gateway = dest.gateway_cities?.[0];
+      if (!items.length && gateway && !(await search(`${gateway} ${dest.region ?? ""} ${suffix}`.trim(), true))) return { name: dest.name, items: cachedItems, unavailable: cachedItems.length === 0 };
     } catch (e) {
       console.error("[Viator place] failed", e instanceof Error ? e.message : e);
       return { name: dest.name, items: cachedItems, unavailable: cachedItems.length === 0 };

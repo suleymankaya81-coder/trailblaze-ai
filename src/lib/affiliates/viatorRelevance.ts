@@ -1,11 +1,18 @@
-const GENERIC = new Set("national park parks country landscape aonb state forest forests wilderness area recreation preserve monument scenic trail river lake lakes beach beaches coast coastal valley mountain mountains region city town island islands the and of usa united states".split(" "));
-const words = (value: string) => value.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().match(/[a-z0-9]+/g) ?? [];
+import { placeWords as words, viatorPlaceTerms } from "./viatorPlaceIdentity";
+
+function hasPhrase(value: string, terms: string[]): boolean {
+  const tokens = words(value);
+  return tokens.some((_, index) => terms.every((term, offset) => tokens[index + offset] === term));
+}
 
 /** Free-text search can return unrelated destinations; require a place-specific name in provider text. */
 export function isPlaceExperienceRelevant(name: string, title: string, description = "", context?: { countryCode?: string | null; region?: string | null }): boolean {
-  const terms = words(name).filter((word) => word.length > 2 && !GENERIC.has(word));
+  const terms = viatorPlaceTerms(name);
   if (!terms.length) return false;
   const text = new Set(words(`${title} ${description}`));
+  // The word calanques also describes coves far outside the Marseille national park.
+  if (words(name).join(" ") === "calanques national park" &&
+    !["marseille", "cassis", "calanques national park"].some(anchor => hasPhrase(`${title} ${description}`, words(anchor)))) return false;
   // Same-name destinations abroad require affirmative Canadian geography.
   if (context?.countryCode === "ca") {
     const geography = [...words(context.region ?? "").filter(w => w.length > 2), "canada", "canadian"];
@@ -15,20 +22,21 @@ export function isPlaceExperienceRelevant(name: string, title: string, descripti
     const geography = [...words(context.region ?? "").filter(w => w.length > 2), "uk", "britain", "british", "england", "scotland", "wales", "english", "scottish", "welsh"];
     if (!geography.some(term => text.has(term))) return false;
   }
-  return terms.every((term) => text.has(term));
+  return hasPhrase(title, terms) || hasPhrase(description, terms);
 }
 
 /** Fallback for places with no named listing: a gateway town or the place's distinctive area must be named, with the same country checks. */
 export function isNearbyExperienceRelevant(title: string, description = "", context: { gateways?: string[] | null; area?: string | null; state?: string | null; countryCode?: string | null }): boolean {
   const text = new Set(words(`${title} ${description}`));
-  const geo = context.countryCode === "ca" ? [...words(context.state ?? ""), "canada", "canadian"]
+  const stateTerms = words(context.state ?? "").filter(w => w.length > 2 && w !== "and" && w !== "the");
+  const geo = context.countryCode === "ca" ? (stateTerms.length ? stateTerms : ["canada", "canadian"])
     : context.countryCode === "gb" ? [...words(context.state ?? ""), "uk", "britain", "british", "england", "scotland", "wales", "english", "scottish", "welsh", "ireland"]
     : null;
   if (geo && !geo.some((term) => text.has(term))) return false;
   const stateWords = new Set(words(context.state ?? ""));
   const has = (phrase: string, min: number) => {
-    const terms = words(phrase).filter((w) => w.length > 2 && !GENERIC.has(w) && !stateWords.has(w) && !DIRECTIONS.has(w));
-    return terms.length >= min && terms.every((t) => text.has(t));
+    const terms = viatorPlaceTerms(phrase).filter((w) => !stateWords.has(w) && !DIRECTIONS.has(w));
+    return terms.length >= min && (hasPhrase(title, terms) || hasPhrase(description, terms));
   };
   return (context.gateways ?? []).some((g) => has(g, 1)) || has(context.area ?? "", 2);
 }

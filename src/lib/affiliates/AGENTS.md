@@ -1,3 +1,4 @@
 - Viator historical Awin rows must resolve through the approved direct-account helper, preserving API medium/version; never use placeholder aff_id. Why: rejected network metadata must not lose attribution.
 - Affiliate clicks inside same-origin experience frames use the parent page's analytics and park context without iframe page views. Why: EN/DE reports must reflect the page the visitor actually used.
 - Stored rental click redirects resolve the destination country before selecting a provider URL. Why: Norwegian or Australasian bookings must not silently switch to US campaigns.
+- Place search/API links share country names and explicit geographic aliases; match contiguous distinctive names, preserve geography nouns and full descriptions for cache checks, expire pre-revision caches and never cache API failures. Why: international expansion must not admit unrelated tours or hide valid tours indefinitely.

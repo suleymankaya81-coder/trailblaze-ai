@@ -2,6 +2,38 @@ import { describe, expect, it } from "vitest";
 import { isPlaceExperienceRelevant } from "./viatorRelevance";
 
 describe("destination-specific real Viator results", () => {
+  it("accepts Lake Garda listings for the explicitly mapped Alto Garda park", () => {
+    expect(isPlaceExperienceRelevant("Alto Garda Bresciano Regional Park", "Lake Garda Boat Cruise", "Depart Sirmione, Italy", { countryCode: "it" })).toBe(true);
+  });
+  it("does not require international administrative suffixes", () => {
+    expect(isPlaceExperienceRelevant("Sierra Nevada Parque Nacional", "Sierra Nevada hiking tour in Spain", "", { countryCode: "es" })).toBe(true);
+    expect(isPlaceExperienceRelevant("Black Forest Nature Park", "Black Forest guided walk", "Germany", { countryCode: "de" })).toBe(true);
+  });
+  it("does not relax multiword names to arbitrary single words", () => {
+    expect(isPlaceExperienceRelevant("Grand Teton", "Grand Canyon tour")).toBe(false);
+    expect(isPlaceExperienceRelevant("Alto Garda Bresciano Regional Park", "Lake Como cruise in Italy")).toBe(false);
+  });
+  it("rejects Black River Gorges in Mauritius and scattered words for Black Forest", () => {
+    expect(isPlaceExperienceRelevant("Black Forest National Park", "Hiking in the Black River Gorges National Parc - Native Forest", "Mauritius")).toBe(false);
+    expect(isPlaceExperienceRelevant("Black Forest National Park", "Quebec forest walk", "See black bears in Canada")).toBe(false);
+    expect(isPlaceExperienceRelevant("Black Forest National Park", "Baden-Baden, Black Forest and Strasbourg Day Trip from Frankfurt")).toBe(true);
+  });
+  it("does not reduce the Swiss National Park to any Swiss tour", () => {
+    expect(isPlaceExperienceRelevant("Swiss National Park", "Lucerne Walking & Boat Tour: The Best Swiss Experience")).toBe(false);
+    expect(isPlaceExperienceRelevant("Swiss National Park", "Hiking in the Swiss National Park")).toBe(true);
+  });
+  it("does not reduce Finland's Archipelago National Park to generic island tours", () => {
+    expect(isPlaceExperienceRelevant("Archipelago National Park", "Stockholm Archipelago Boat Tour", "Sweden")).toBe(false);
+    expect(isPlaceExperienceRelevant("Archipelago National Park", "Archipelago National Park kayaking", "Finland")).toBe(true);
+  });
+  it("distinguishes Marseille's Calanques park from Esterel coves", () => {
+    expect(isPlaceExperienceRelevant("Calanques National Park", "Esterel Calanques Boat Tour from Saint-Raphael", "Cruise the Esterel coast")).toBe(false);
+    expect(isPlaceExperienceRelevant("Calanques National Park", "Beautiful boat tour in the Calanques", "Depart Marseille")).toBe(true);
+  });
+  it("normalizes Nordic and German letters without losing the place name", () => {
+    expect(isPlaceExperienceRelevant("Þingvellir National Park", "Thingvellir guided hike")).toBe(true);
+    expect(isPlaceExperienceRelevant("Ærø", "Aero island tour")).toBe(true);
+  });
   it("matches Seven Sisters without requiring the administrative country-park suffix", () => {
     expect(isPlaceExperienceRelevant("Seven Sisters Country Park", "Seven Sisters and South Downs Tour from Brighton", "Visit England's Seven Sisters", { countryCode: "gb", region: "England" })).toBe(true);
   });
@@ -34,6 +66,9 @@ describe("destination-specific real Viator results", () => {
 
 import { isNearbyExperienceRelevant } from "./viatorRelevance";
 describe("nearby Viator fallback", () => {
+  it("rejects Ontario gateway tours for a Newfoundland park", () => {
+    expect(isNearbyExperienceRelevant("Toronto–Wasaga Beach driving tour", "Ontario, Canada", { gateways: ["Toronto"], state: "Newfoundland and Labrador", countryCode: "ca" })).toBe(false);
+  });
   it("accepts a tour from the gateway town", () => {
     expect(isNearbyExperienceRelevant("Yorkshire Dales day trip from Skipton, England", "", { gateways: ["Skipton"], area: "Yorkshire Dales", state: "England", countryCode: "gb" })).toBe(true);
   });

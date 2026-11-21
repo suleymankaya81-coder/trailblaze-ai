@@ -1,3 +1,7 @@
+## November 21 international Viator repair
+- [x] Repair shared international place identity, country queries and tracked search links; invalidate pre-fix caches without deleting unrelated data.
+- [x] Test production-backed listings on 40 country samples, EN/DE destination pages and mobile; trace shared guide consumers and record incomplete guide/external booking verification in scripts/audits/viator-international-2026-11-21.md. Owner publication required.
+
 ## November 20 French completion
 - [x] Complete all 3,231 published French destination translations; 2,596 missing rows filled, six final exceptions reviewed without new calls; database readback confirms 3,231/3,231.
 - [x] Add 45 French country-split sitemaps with 3,231 canonical park URLs and reciprocal published-only alternates; French country, region, park and map-to-park browser checks pass; phone header spacing corrected.
