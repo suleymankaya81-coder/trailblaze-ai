@@ -2,6 +2,7 @@
 import { generateChatCompletion, GatewayError } from '@lovable.dev/ai-gateway';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
+import { finishFrench, fitTitle, fitDescription } from './french-fixes.mjs';
 
 const root = 'data/translations/fr';
 await mkdir(root, { recursive: true });
@@ -92,8 +93,12 @@ for (const d of pending) {
     const parent = at(fields, path.slice(0, -1)); parent[path.at(-1)] = translated.split('{{PLACE}}').join(d.name);
   });
   if (missing) { held.push(d.slug); continue; }
-  fields.metaTitle = `${d.name} : itinéraire et conseils`.slice(0, 60);
-  fields.metaDescription = `${d.name} : ${fields.tagline || 'itinéraire, carte et conseils pour préparer votre visite.'}`.slice(0, 160);
+  // Audit 2026-11: articles, "Timing", duplicate units; placeholders or wrong distances hold the page.
+  const finished = finishFrench(fields, d.travel_plan, d.name);
+  if (finished.held.length) { held.push(d.slug); console.log(`held ${d.slug}: ${finished.held.join('; ')}`); continue; }
+  Object.assign(fields, finished.fields);
+  fields.metaTitle = fitTitle(d.name, ' : itinéraire et conseils', 60);
+  fields.metaDescription = fitDescription(`${d.name} : ${fields.tagline || 'itinéraire, carte et conseils pour préparer votre visite.'}`, 160);
   const r = await fetch(`${url}/rest/v1/content_translations?on_conflict=entity_type,entity_id,locale`, { method: 'POST', headers: { ...headers, Prefer: 'resolution=ignore-duplicates' }, body: JSON.stringify({ entity_type: 'destination', entity_id: d.slug, locale: 'fr', fields, status: 'published', updated_at: new Date().toISOString() }) });
   if (!r.ok) { held.push(d.slug); console.log(`save held ${d.slug}: ${r.status}`); } else saved++;
 }

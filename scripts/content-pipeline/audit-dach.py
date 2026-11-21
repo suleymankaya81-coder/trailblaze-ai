@@ -2,11 +2,54 @@
 import argparse
 import hashlib
 import json
+import re
 from pathlib import Path
 from combined_content import module
+from placeholder_gate import day_start_mismatches, find_blocked_text
 
 ROOT = Path(__file__).parent
 CACHE = ROOT / 'dach' / 'german-page-cache'
+
+# Reviewed German for the fixed English template sentences (quoted_visit.py), keyed exactly as
+# translate_row() normalizes them (place name → WPRPLACE). These win over the Argos cache, which
+# produced lowercase nouns and wrong meanings (audit 2026-11, rules B1–B5).
+REVIEWED_DE = {
+    'Check the official visitor information for WPRPLACE before departure. Entry, activity permissions and overnight accommodation are separate checks; the source excerpts below do not establish availability for your dates.':
+        'Überprüfen Sie die offiziellen Besucherinformationen für WPRPLACE vor der Abreise. Eintritt, Aktivitätsgenehmigungen und Übernachtung müssen separat geprüft werden; die Quellenauszüge unten belegen keine Verfügbarkeit für Ihre Reisedaten.',
+    'The reviewed sources do not establish current parking conditions for WPRPLACE. Check the official visitor information before departure.':
+        'Die geprüften Quellen belegen keine aktuellen Parkbedingungen für WPRPLACE. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise.',
+    'The reviewed sources do not establish mobile coverage for WPRPLACE. Check the official visitor information before departure.':
+        'Die geprüften Quellen belegen keinen Mobilfunkempfang für WPRPLACE. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise.',
+    'The reviewed sources do not establish fuel availability for WPRPLACE. Check the official visitor information before departure.':
+        'Die geprüften Quellen belegen keine Tankmöglichkeiten für WPRPLACE. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise.',
+    'The reviewed sources do not establish a best-season recommendation for WPRPLACE. Check the official visitor information before departure.':
+        'Die geprüften Quellen belegen keine Empfehlung zur besten Reisezeit für WPRPLACE. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise.',
+    'The reviewed sources do not establish all current access restrictions for WPRPLACE. Check the official visitor information before departure.':
+        'Die geprüften Quellen belegen nicht alle aktuellen Zugangsbeschränkungen für WPRPLACE. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise.',
+    'The reviewed sources do not establish a measured arrival schedule or supply stops for WPRPLACE. Check the official visitor information before departure.':
+        'Die geprüften Quellen belegen weder einen gemessenen Ankunftsplan noch Versorgungsstopps für WPRPLACE. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise.',
+    'The reviewed sources do not establish vehicle size or rental restrictions; do not assume RV access for WPRPLACE. Check the official visitor information before departure.':
+        'Die geprüften Quellen belegen keine Beschränkungen für Fahrzeuggröße oder Mietwagen; gehen Sie nicht davon aus, dass WPRPLACE mit dem Wohnmobil erreichbar ist. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise.',
+    'The reviewed sources do not establish a verified sunrise or sunset viewpoint for WPRPLACE. Check the official visitor information before departure.':
+        'Die geprüften Quellen belegen keinen verifizierten Aussichtspunkt für Sonnenauf- oder -untergang bei WPRPLACE. Überprüfen Sie die offiziellen Besucherinformationen vor der Abreise.',
+    'Parking check': 'Parken',
+    'Access check': 'Zugang',
+    'Timing check': 'Beste Reisezeit',
+    'Fuel check': 'Tanken',
+    'Signal check': 'Mobilfunkempfang',
+    'Choose one local visit; travel time and onward transfers are not verified.':
+        'Wählen Sie einen Besuch vor Ort; Reisezeit und Anschlussverbindungen werden nicht geprüft.',
+    'Suggested: choose a daytime visit after checking official access hours':
+        'Vorschlag: Wählen Sie einen Tagesbesuch nach Überprüfung der offiziellen Zugangszeiten',
+    'Suggested: 9 AM start, after checking official access hours':
+        'Vorschlag: 9 Uhr Start, nach Überprüfung der offiziellen Zugangszeiten',
+}
+# Multi-day templates: the place is copied from the English text, never replaced by the row name.
+TEMPLATE_DE = [
+    (re.compile(r'^Suggested: morning departure from (.+)$'), r'Vorschlag: Abfahrt am Morgen ab \1'),
+    (re.compile(r'^About ([\d.,]+) km from (.+?) in a straight line; road distance is longer, so check the route before departure\.$'),
+     r'Etwa \1 km Luftlinie ab \2; die Straßenstrecke ist länger, prüfen Sie die Route vor der Abfahrt.'),
+]
 
 def issues(row):
     missing = [key for key in ('tagline', 'hero_image', 'photo_credit', 'seo_title',
@@ -29,9 +72,27 @@ def validate_translation(row, out):
         for a, b in zip(original['stops'], translated['stops']):
             if a['name'] != b['name'] or a.get('stop_id') != b.get('stop_id'):
                 raise ValueError('Translation changed routing identity')
+    if day_start_mismatches(plan, out):
+        raise ValueError('Translated day start names a different place than the English plan')
+    if find_blocked_text(out):
+        raise ValueError('Translation contains placeholder text')
     if not out['metaTitle'] or len(out['metaTitle']) > 60 or len(out['metaDescription']) > 160:
         raise ValueError('Invalid German search metadata')
     return out
+
+def fit_title(name, suffix, limit=60):
+    # Never cut a place name mid-word ("… National Pa – Reiseplan"): drop the suffix first,
+    # then whole trailing words of the name.
+    if len(name) + len(suffix) <= limit:
+        return name + suffix
+    if len(name) <= limit:
+        return name
+    kept = ''
+    for word in name.split():
+        if len((kept + ' ' + word).strip()) > limit:
+            break
+        kept = (kept + ' ' + word).strip()
+    return kept or name[:limit]
 
 def translate_row(row):
     import argostranslate.translate
@@ -41,6 +102,11 @@ def translate_row(row):
         if not value: return value
         # Reuse repeated source-gap sentences without sending place names to the translator.
         normalized = value.replace(name, 'WPRPLACE')
+        if normalized in REVIEWED_DE:
+            return REVIEWED_DE[normalized].replace('WPRPLACE', name)
+        for pattern, german in TEMPLATE_DE:
+            if pattern.match(value):
+                return pattern.sub(german, value)
         path = CACHE / (hashlib.sha256(normalized.encode()).hexdigest() + '.json')
         if path.exists(): result = json.loads(path.read_text())['translated']
         else:
@@ -59,7 +125,7 @@ def translate_row(row):
         'permitNote': text(row['permit_note']), 'days': days,
         'intel': [{**i, 'title': text(i['title']), 'text': text(i['text'])} for i in plan.get('intel', [])],
         **{k: text(plan.get(k)) for k in ('arrival', 'vehicle', 'goldenHour')},
-        'metaTitle': (name[:47] + ' – Reiseplan')[:60],
+        'metaTitle': fit_title(name, ' – Reiseplan'),
         'metaDescription': (f'{name}: Besuchsplan, Karte und Hinweise zur Anreise. Zugang und saisonale Regeln vor der Reise bei offiziellen Stellen prüfen.')[:160]}
     return validate_translation(row, out)
 

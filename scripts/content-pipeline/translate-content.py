@@ -4,6 +4,7 @@ Run: python scripts/content-pipeline/translate-content.py --locale de --pilot [s
 """
 import json, os, sys
 import requests
+from placeholder_gate import find_blocked_text
 
 LOCALE_NAMES = {"de": "German", "fr": "French", "es": "Spanish", "nl": "Dutch", "it": "Italian"}
 PILOT = ["yellowstone", "yosemite", "grand-canyon", "zion", "arches-national-park", "glacier",
@@ -21,6 +22,29 @@ run_all = "--all" in args
 if not run_all and ("--pilot" in args or not slugs):
     slugs = slugs or PILOT
 lang = LOCALE_NAMES[locale]
+# Reviewed terms from the 2026-11 translation audit (scripts/audits/translations-2026-11/report.md).
+GLOSSARY = {
+    "de": ('Glossary: "Parking check" = "Parken", "Access check" = "Zugang", "Timing check" = "Beste Reisezeit", '
+           '"Fuel check" = "Tanken", "Signal check" = "Mobilfunkempfang", "Suggested:" = "Vorschlag:", '
+           '"onward transfers" = "Anschlussverbindungen", "trailhead" = "Wanderparkplatz", "trail" = "Wanderweg" (never "Zug"), '
+           '"campground" = "Campingplatz", "timed entry permit" = "Zeitfenster-Ticket", "4WD" = "Allradantrieb", '
+           '"ferry" = "Fähre", "shuttle" = "Shuttle", "ranger station" = "Rangerstation", '
+           '"the reviewed sources do not establish" = "die geprüften Quellen belegen keine".'),
+    "fr": ('Glossaire : "Timing check" = "Horaires", "Parking check" = "Stationnement", "Fuel check" = "Carburant", '
+           '"trailhead" = "départ de sentier", "campground" = "camping", "timed entry permit" = "réservation à créneau horaire", '
+           '"4WD" = "4x4", "ferry" = "ferry", "shuttle" = "navette", "ranger station" = "poste des rangers". '
+           'Do not put "le/au/du" in front of a place name that has no French article (write "pour Ærø", "à Lovund", "de Sørøya"). '
+           'Use French typography: a space before : ; ! ? and « » quotes.'),
+}
+
+
+def fit_words(text: str, limit: int) -> str:
+    """Shorten at a word boundary; never leave a cut word such as "itinéraire et co"."""
+    text = text.strip()
+    if len(text) <= limit:
+        return text
+    cut = text[: limit - 1]
+    return cut[: cut.rfind(" ")].rstrip(" ,;:–-") + "…" if " " in cut else text[:limit]
 
 
 def ai_json(prompt: str) -> dict:
@@ -58,7 +82,9 @@ def work(d):
     }
     prompt = f"""Translate this U.S. road-trip guide content from English into natural, fluent {lang} for travellers from that country.
 Return JSON with exactly the same keys and structure, plus "metaTitle" (max 60 chars, includes the place name and a {lang} search phrase like "Roadtrip" or "Reiseplan") and "metaDescription" (max 155 chars).
-Rules: keep official proper names (park names, trails, roads, towns) in their usual form; keep miles but add km in brackets the first time distances appear; do not add facts, prices, guarantees or urgency; null stays null.
+Rules: keep official proper names (park names, trails, roads, towns) in their usual form; when the source gives miles, keep miles and add km in brackets the first time; when the source gives km, write only km and never add miles; do not add facts, prices, guarantees or urgency; null stays null.
+Never output the markers "[dated source]" or "Check official seasonal information" (drop that sentence instead). Capitalise every German noun.
+{GLOSSARY.get(locale, "")}
 SOURCE JSON:
 {json.dumps(source, ensure_ascii=False)}"""
     try:
@@ -72,8 +98,10 @@ SOURCE JSON:
           and len(out.get("days", [])) == len(source["days"]) and len(out.get("intel", [])) == len(source["intel"]))
     if not ok:
         print(d["slug"], "REJECTED (structure)", flush=True); return
-    out["metaTitle"] = out["metaTitle"][:60]
-    out["metaDescription"] = out["metaDescription"][:160]
+    out["metaTitle"] = fit_words(out["metaTitle"], 60)
+    out["metaDescription"] = fit_words(out["metaDescription"], 160)
+    if find_blocked_text(out):
+        print(d["slug"], "REJECTED (placeholder text)", flush=True); return
     res = requests.post(f"{REST}/content_translations?on_conflict=entity_type,entity_id,locale",
                         headers={**H, "Prefer": "resolution=merge-duplicates"},
                         json={"entity_type": "destination", "entity_id": d["slug"], "locale": locale,

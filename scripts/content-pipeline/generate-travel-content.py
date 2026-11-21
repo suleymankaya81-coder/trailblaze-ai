@@ -37,6 +37,8 @@ def unsupported_stops(plan, packet):
                 missing.append(st['name'])
     return missing
 
+from placeholder_gate import BLOCKED_TEXT
+
 def validate(item):
     p = item['plan']
     assert len(p['days']) >= 1, 'At least one visit day required'
@@ -50,8 +52,10 @@ def validate(item):
     assert p['sources'] and all(s['url'].startswith('https://') for s in p['sources'])
     assert 12 <= len(item['headline']) <= 70 and 160 <= len(item['reservation']) <= 700
     assert item['source_url'].startswith('https://')
-    text = json.dumps({**item, 'plan': {k: v for k, v in p.items() if k != 'reviewedAt'}}).lower()
+    text = json.dumps({**item, 'plan': {k: v for k, v in p.items() if k != 'reviewedAt'}}, ensure_ascii=False).lower()
+    text = re.sub(r'\bnatura[ -]2000\b', 'natura-network', text)  # EU network name, not a year
     assert not re.search(r'\b20\d{2}\b|ranger pick|cheapest|best deal|hurry', text), 'unsupported claim/year'
+    assert not any(marker.lower() in text for marker in BLOCKED_TEXT), 'placeholder text'
     return p
 
 PROMPT = '''You are WildParkRoutes's factual outdoor travel editor. Write fluent, polished English specific to EACH destination in the supplied facts and existing guides. Existing guides are context, not verified current policy. Use stable well-known landmarks and official sources. Never invent a place, a last gas station, a ranger endorsement, exact parking fill time, GPS coordinates, fares or current permit rules. Qualify changing access and distinguish suggested times from opening hours. Avoid repetitive generic park advice for towns, coasts, islands and urban destinations. Match geography and gateway: island itineraries must not assume mainland road access. Daily drives are rough suggestions, not measured routes; use 'Allow ...; conditions vary' or state walking/local transfer. No exact prices or specific years. No packing/gear-shopping content. No urgency/guarantees/discount copy. Reservation note must explain the actual bottleneck and official check. Golden hour is a named viewpoint and season-dependent suggestion, not an exact sunrise time. Vehicle advice must mention checking actual rental/road restrictions. Do not prescribe medical/safety guarantees. Every source_url and sources[].url must be copied exactly from a url in that destination's evidence packet; never cite a homepage or page that is not in the packet. Never write a four-digit year.
