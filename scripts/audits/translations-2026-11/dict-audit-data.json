@@ -1,0 +1,239 @@
+{
+  "nav_dict": {
+    "en_keys": 41,
+    "de_keys": 41,
+    "fr_keys": 41,
+    "findings": [
+      {
+        "locale": "de",
+        "issue": "identical_to_english",
+        "keys": [
+          "plan.region"
+        ]
+      },
+      {
+        "locale": "de",
+        "issue": "length_overflow_risk",
+        "entries": [
+          {
+            "key": "dest.intro",
+            "en": "Ready-made plans for the most popular parks.",
+            "translated": "Fertige ReiseplÃ¤ne fÃ¼r die beliebtesten Nationalparks der USA â auf Deutsch.",
+            "en_len": 44,
+            "translated_len": 80
+          },
+          {
+            "key": "road.loopsTitle",
+            "en": "Multi-park loops",
+            "translated": "Rundreisen durch mehrere Parks",
+            "en_len": 16,
+            "translated_len": 30
+          }
+        ]
+      },
+      {
+        "locale": "fr",
+        "issue": "identical_to_english",
+        "keys": [
+          "dest.kicker",
+          "home.ctaRoadTrips",
+          "nav.destinations",
+          "road.kicker"
+        ]
+      },
+      {
+        "locale": "fr",
+        "issue": "length_overflow_risk",
+        "entries": [
+          {
+            "key": "dest.intro",
+            "en": "Ready-made plans for the most popular parks.",
+            "translated": "Des itinÃ©raires prÃªts Ã  l'emploi pour les parcs nationaux d'Europe, d'AmÃ©rique du Nord, d'Australie et de Nouvelle-ZÃ©lande â en franÃ§ais.",
+            "en_len": 44,
+            "translated_len": 145
+          }
+        ]
+      }
+    ]
+  },
+  "de_phrases": {
+    "lang": "de",
+    "hand_written_count": 344,
+    "generated_count": 497,
+    "findings": [
+      {
+        "issue": "identical_to_english_passthrough",
+        "count": 66,
+        "examples": [
+          "Anbieter in BHB vergleichen",
+          "Anbieter in BZN vergleichen",
+          "Anbieter in FLG vergleichen",
+          "Anbieter in SGU vergleichen",
+          "Arkansas",
+          "Black Canyon of the Gunnison",
+          "Bleibt in Erinnerung",
+          "Blicken Sie in den tiefsten und klarsten See der USA, der sich im Krater eines schlafenden Vulkans befindet.",
+          "Court of the Patriarchs",
+          "Craters of the Moon National Monument"
+        ]
+      },
+      {
+        "issue": "no_lang_markers_rough_heuristic",
+        "count": 113,
+        "examples": [
+          "52MP photo · 1,200m range · full color at night",
+          "Airport road trip:",
+          "Alaska Glaciers & Denali Loop from Anchorage",
+          "Alaska Kenai & Denali Loop",
+          "All Categories",
+          "All states",
+          "Arizona Red Rock Loop",
+          "Arizona Red Rocks Loop from Phoenix",
+          "Arizona time zone",
+          "Arkansas Ozarks Loop"
+        ]
+      }
+    ]
+  },
+  "fr_phrases": {
+    "lang": "fr",
+    "hand_written_count": 2,
+    "generated_count": 832,
+    "findings": [
+      {
+        "issue": "identical_to_english_passthrough",
+        "count": 10,
+        "examples": [
+          "2026 Entry and Separate Stay Reservations",
+          "Trail of Time",
+          "Europe",
+          "SUV",
+          "Road Trips",
+          "RV & Camping",
+          "Contact",
+          "Phoenix Sky Harbor International Airport",
+          "San Francisco International Airport",
+          "Seattle–Tacoma International Airport"
+        ]
+      },
+      {
+        "issue": "cross_key_misattribution",
+        "count": 62,
+        "index_range": [
+          2,
+          118
+        ],
+        "total_entries": 832,
+        "note": "value is verbatim a different dict key's English text, and that other key has its own distinct value -- i.e. this entry shows unrelated English/scrambled content, not a translation of its own key. Confined to a contiguous low-index window; entries inside that window that do NOT trip this exact check are NOT thereby confirmed correct -- see report.md.",
+        "examples": [
+          {
+            "index": 2,
+            "key": "3″ HD display · 48MP photo · 8X digital zoom. Check park rules before using lights at nigh",
+            "shown_value": "3 · Where to park the rig near Yellowstone National Park",
+            "that_keys_own_value": "Réservations d'entrée et de séjour séparées pour 2026"
+          },
+          {
+            "index": 4,
+            "key": "52MP photo · 1,200m range · full color at night. Check park rules before using lights at n",
+            "shown_value": "3″ HD display · 48MP photo · 8X digital zoom. Check park rules before using lights at nigh",
+            "that_keys_own_value": "3 · Where to park the rig near Yellowstone National Park"
+          },
+          {
+            "index": 6,
+            "key": "; price, stock and shipping may change.",
+            "shown_value": "52MP photo · 1,200m range · full color at night",
+            "that_keys_own_value": "3 · Où garer votre véhicule près du parc national de Yellowstone"
+          },
+          {
+            "index": 8,
+            "key": "About WildParkRoutes — Outdoor Travel & Road Trip Guides",
+            "shown_value": "52MP photo · 1,200m range · full color at night. Check park rules before using lights at n",
+            "that_keys_own_value": "3″ HD display · 48MP photo · 8X digital zoom. Check park rules before using lights at nigh"
+          },
+          {
+            "index": 10,
+            "key": "Advance Planning for Alcatraz and Seasonal Microclimates",
+            "shown_value": "; Optics & Night Vision lists our WILDGUARDER partner models. Category photos are illustra",
+            "that_keys_own_value": "Écran HD 3″ · photo 48MP · zoom numérique 8X. Vérifiez les règles du parc avant d'utiliser"
+          },
+          {
+            "index": 12,
+            "key": "Alaska Glaciers & Denali Loop from Anchorage",
+            "shown_value": "; price, stock and shipping may change.",
+            "that_keys_own_value": "52MP photo · 1,200m range · full color at night"
+          },
+          {
+            "index": 14,
+            "key": "Albuquerque, Bandelier's cliff dwellings, Santa Fe and Taos.",
+            "shown_value": "A valid licence in the Latin alphabet is generally accepted for rentals; an International ",
+            "that_keys_own_value": "Photo 52MP · portée 1 200 m · plein écran couleur de nuit"
+          },
+          {
+            "index": 16,
+            "key": "All Categories",
+            "shown_value": "About WildParkRoutes — Outdoor Travel & Road Trip Guides",
+            "that_keys_own_value": "52MP photo · 1,200m range · full color at night. Check park rules before using lights at n"
+          },
+          {
+            "index": 18,
+            "key": "All five of Utah's national parks in one drive: Zion's canyon walls, Bryce Canyon's hoodoo",
+            "shown_value": "Advance Permit Planning for Angels Landing and Canyon Access",
+            "that_keys_own_value": "Photo 52MP · portée 1 200 m · plein écran couleur de nuit. Vérifiez les règles du parc ava"
+          },
+          {
+            "index": 20,
+            "key": "All states",
+            "shown_value": "Advance Planning for Alcatraz and Seasonal Microclimates",
+            "that_keys_own_value": "; Optics & Night Vision lists our WILDGUARDER partner models. Category photos are illustra"
+          },
+          {
+            "index": 22,
+            "key": "An optional support on uneven walks. Check trail rules, pole length and airline baggage ru",
+            "shown_value": "Airport road trip:",
+            "that_keys_own_value": "; Optique & Vision Nocturne liste nos modèles partenaires WILDGUARDER. Les photos de catég"
+          },
+          {
+            "index": 24,
+            "key": "Anbieter in BZN vergleichen",
+            "shown_value": "Alaska Glaciers & Denali Loop from Anchorage",
+            "that_keys_own_value": "; price, stock and shipping may change."
+          },
+          {
+            "index": 26,
+            "key": "Anbieter in SGU vergleichen",
+            "shown_value": "Alaska Kenai & Denali Loop",
+            "that_keys_own_value": "; le prix, le stock et l'expédition peuvent varier."
+          },
+          {
+            "index": 28,
+            "key": "Antelope Canyon can only be visited with a licensed Navajo tour operator. Book a time slot",
+            "shown_value": "Albuquerque, Bandelier's cliff dwellings, Santa Fe and Taos.",
+            "that_keys_own_value": "A valid licence in the Latin alphabet is generally accepted for rentals; an International "
+          },
+          {
+            "index": 30,
+            "key": "April–May and September–October bring milder temperatures. Summer is very hot in the deser",
+            "shown_value": "All",
+            "that_keys_own_value": "Un permis valide en alphabet latin est généralement accepté pour les locations ; un permis"
+          }
+        ]
+      },
+      {
+        "issue": "no_lang_markers_rough_heuristic",
+        "count": 165,
+        "examples": [
+          "3″ HD display · 48MP photo · 8X digital zoom. Check park rules before using lights at night.",
+          "52MP photo · 1,200m range · full color at night. Check park rules before using lights at night.",
+          "; price, stock and shipping may change.",
+          "About WildParkRoutes — Outdoor Travel & Road Trip Guides",
+          "Advance Planning for Alcatraz and Seasonal Microclimates",
+          "Alaska Glaciers & Denali Loop from Anchorage",
+          "Albuquerque, Bandelier's cliff dwellings, Santa Fe and Taos.",
+          "All Categories",
+          "All five of Utah's national parks in one drive: Zion's canyon walls, Bryce Canyon's hoodoos, Capitol Reef's orchards and slickrock, then Arches and Canyonlands near Moab.",
+          "All states"
+        ]
+      }
+    ]
+  }
+}

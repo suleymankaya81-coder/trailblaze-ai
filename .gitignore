@@ -33,3 +33,7 @@ scripts/output/
 *.njsproj
 *.sln
 *.sw?
+
+# Translation audit (2026-11): raw DB exports and the review sample stay local, never committed.
+scripts/audits/translations-2026-11/raw/
+scripts/audits/translations-2026-11/sample_for_review.json
