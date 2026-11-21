@@ -10,15 +10,22 @@ ROOT = Path(__file__).resolve().parents[3]
 I18N = ROOT / "src" / "lib" / "i18n"
 
 
+_ESCAPES = {'"': '"', "\\": "\\", "n": "\n", "t": "\t", "r": "\r", "'": "'"}
+
+
+def _unescape_ts_string(s):
+    # Undo only JS/TS backslash escapes; leave real (already-decoded) unicode characters alone --
+    # encode()/decode("unicode_escape") mangles multi-byte UTF-8 text like "ä", so don't use it.
+    return re.sub(r"\\(.)", lambda m: _ESCAPES.get(m.group(1), m.group(1)), s)
+
+
 def parse_ts_object(path):
     """Extract "key": "value" (or 'key': 'value') pairs from a simple TS object literal.
     Good enough for these flat string->string dictionaries; does not evaluate expressions."""
     text = path.read_text()
     pairs = {}
     for m in re.finditer(r'"((?:[^"\\]|\\.)*)"\s*:\s*"((?:[^"\\]|\\.)*)"', text):
-        key = m.group(1).encode().decode("unicode_escape")
-        val = m.group(2).encode().decode("unicode_escape")
-        pairs[key] = val
+        pairs[_unescape_ts_string(m.group(1))] = _unescape_ts_string(m.group(2))
     return pairs
 
 
