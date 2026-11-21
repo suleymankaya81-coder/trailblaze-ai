@@ -1,11 +1,13 @@
--- 03-apply.sql — the real updates for the 2026-11 translation fixes. ONE transaction.
+-- 03a-apply-bcd.sql — template rules B1–B5, C and D1–D3 only (NO rule A). ONE transaction.
+-- Ready to run: rules B/C/D were checked in the live preview of 2026-11-21 (rule-examples.txt).
+-- Runs on its own (needs 00-backup.sql and 01-helper.sql); independent of 03b-apply-rule-a.sql.
 --
 -- Prerequisites: 00-backup.sql and 01-helper.sql have been run, and 02-preview.sql was reviewed.
 -- Every rule updates only rows whose value really changes (WHERE new IS DISTINCT FROM old), and
 -- every rule function is idempotent, so a second run updates 0 rows.
 -- At the end, structure and identity checks compare every changed row with the backup; if any
 -- check fails, the DO block raises an exception and NOTHING is committed.
--- Run with psql -v ON_ERROR_STOP=1 -f 03-apply.sql, or paste the whole file into the SQL editor.
+-- Run with psql -v ON_ERROR_STOP=1 -f 03a-apply-bcd.sql, or paste the whole file into the SQL editor.
 
 begin;
 
@@ -22,51 +24,6 @@ begin
 end $$;
 
 create temp table fix_log (step int, rule text, target text, locale text, rows_changed int) on commit drop;
-
--- ============================================================================================
--- Rule A (English source): remove sentences containing [dated source] in destinations
--- (tagline, seo_title, seo_description, best_season, permit_headline, permit_note, notes and every
--- string inside travel_plan except stop names/ids, links and labels). "Natura [token]" becomes
--- "Natura 2000". If a field would become empty, its first clause before the token is kept;
--- fields with too little text are left unchanged ("unresolved", listed by 02-preview.sql).
--- ============================================================================================
-with cand as (
-  select id,
-         translation_fix.drop_placeholder_sentences(tagline)         as tagline,
-         translation_fix.drop_placeholder_sentences(seo_title)       as seo_title,
-         translation_fix.drop_placeholder_sentences(seo_description) as seo_description,
-         translation_fix.drop_placeholder_sentences(best_season)     as best_season,
-         translation_fix.drop_placeholder_sentences(permit_headline) as permit_headline,
-         translation_fix.drop_placeholder_sentences(permit_note)     as permit_note,
-         translation_fix.drop_placeholder_sentences(notes)           as notes,
-         translation_fix.rule_a(travel_plan)                         as travel_plan
-  from public.destinations
-), upd as (
-  update public.destinations d
-     set tagline = c.tagline, seo_title = c.seo_title, seo_description = c.seo_description,
-         best_season = c.best_season, permit_headline = c.permit_headline, permit_note = c.permit_note,
-         notes = c.notes, travel_plan = c.travel_plan, updated_at = now()
-    from cand c
-   where c.id = d.id
-     and (c.tagline, c.seo_title, c.seo_description, c.best_season, c.permit_headline, c.permit_note, c.notes, c.travel_plan)
-         is distinct from
-         (d.tagline, d.seo_title, d.seo_description, d.best_season, d.permit_headline, d.permit_note, d.notes, d.travel_plan)
-  returning d.id
-)
-insert into fix_log select 1, 'A', 'destinations', 'en', count(*) from upd;
-
--- ============================================================================================
--- Rule A (translations): the same sentence removal in German and French content_translations,
--- for [dated source], [source datée], [datierter Quelle] and [datiert Quelle].
--- ============================================================================================
-with upd as (
-  update public.content_translations t
-     set fields = translation_fix.rule_a(t.fields), updated_at = now()
-   where t.entity_type = 'destination' and t.locale in ('de', 'fr')
-     and translation_fix.rule_a(t.fields) is distinct from t.fields
-  returning t.locale
-)
-insert into fix_log select 2, 'A', 'content_translations', locale, count(*) from upd group by locale;
 
 -- ============================================================================================
 -- Rule B1 (de): permit/day note sentence with lowercase nouns →

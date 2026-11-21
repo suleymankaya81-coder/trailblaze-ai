@@ -1,4 +1,4 @@
--- 04-rollback.sql — restore everything 03-apply.sql (and, if run, 05-optional-unpublish-overseas.sql)
+-- 04-rollback.sql — restore everything 03a-apply-bcd.sql, 03b-apply-rule-a.sql and (if run) 05-optional-unpublish-overseas.sql
 -- changed, from the snapshot made by 00-backup.sql. One transaction. Safe to run twice.
 --
 -- Restores only rows that differ from the backup, so rows edited AFTER the backup for unrelated
