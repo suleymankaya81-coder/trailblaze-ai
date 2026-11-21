@@ -1,1 +1,1 @@
-- Country exploration uses CountryExplorationMap and lazy browser-only CountryMapCanvas on English/German country directories, with published coordinates and shared countryMapLinks. Why: one map per country without runtime routing or inferred access permission.
+- Country exploration uses CountryExplorationMap and lazy browser-only CountryMapCanvas on English/German/French country directories, with published coordinates and shared countryMapLinks. Why: one map per country without runtime routing or inferred access permission.
