@@ -10,7 +10,8 @@ import { getLandingLinksForDestination, type LandingLink } from "@/lib/data/land
 import { deGeoCrumbs, deMeta } from "@/lib/i18n/deSeo";
 import { destinationGeo } from "@/lib/routes/paths";
 import { regionName } from "@/lib/seo/breadcrumbs";
-import { breadcrumbJsonLd } from "@/lib/seo/breadcrumbs";
+import { buildDestinationJsonLd } from "@/lib/seo/destinationJsonLd";
+import { visibleAnswerFaqs } from "@/lib/seo/visibleAnswers";
 import { hreflangLinks } from "@/lib/seo/hreflang";
 import { translateDest } from "@/lib/i18n/translateDest";
 import { isLocale } from "@/lib/i18n/locales";
@@ -46,7 +47,8 @@ export const Route = createFileRoute("/de/destinations/$slug/$region/$place/")({
         ...(dest.heroImage.startsWith("https://") ? [{ property: "og:image", content: dest.heroImage }, { name: "twitter:image", content: dest.heroImage }] : []),
       ],
       links: [{ rel: "canonical", href: url }, ...hreflangLinks(destinationPath(dest.slug), ["en", ...loaderData.locales.filter(isLocale)])],
-      scripts: [{ type: "application/ld+json", children: JSON.stringify({ "@context": "https://schema.org", ...breadcrumbJsonLd(crumbs) }).replace(/</g, "\\u003c") }],
+      // Same types as the English page (TouristDestination, WebPage, TouristTrip, BreadcrumbList, FAQPage where shown), in de.
+      scripts: [{ id: "destination-jsonld", type: "application/ld+json", children: JSON.stringify(buildDestinationJsonLd(dest, url, visibleAnswerFaqs(dest.slug, "de"), { locale: "de", crumbs })).replace(/</g, "\\u003c") }],
     };
   },
   component: Page,
