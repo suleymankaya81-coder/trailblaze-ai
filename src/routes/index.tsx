@@ -100,6 +100,7 @@ export function HomePageView({ homeDestinations, localSlugs }: { homeDestination
   return (
     <div className="bg-background">
       <Header />
+      <main>
       <HomeHero scenes={heroPick.map((d) => ({ image: d.heroImage, name: d.name, countryCode: d.countryCode ?? "us" }))} />
       <StartHere parkImage={homeDestinations[0]?.heroImage} />
       <HomeCountries covers={covers} />
@@ -197,6 +198,7 @@ export function HomePageView({ homeDestinations, localSlugs }: { homeDestination
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );

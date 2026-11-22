@@ -190,12 +190,18 @@ function LandingPage() {
         <div className="container-page pt-2"><PhotoCredit photo={{ source: commonsFilePage(photoSource) ?? photoSource, credit: photoCredit, license: photoLicense ?? "See source" }} className="inline-block" /></div>
       )}
 
-      <TripSnapshot trip={{ airportCode: facts.airport, driveMinutes: facts.driveMinutes, tripDurationDays: facts.tripDays, bestSeason: facts.bestSeason, permitLevel: facts.permitLevel }} /><TripQuickNav />
-      <div id="trip-booking" className="container-page py-6"><BookingStepsStrip slug={destination.slug} name={destination.name} airportCode={facts.airport} /></div>
+      {/* Answer first, booking directly below: the stored 2–3 sentence intro answers the page's question. */}
+      <main>
+        {page.introContent && (
+          <section aria-label="Short answer" className="container-page pt-8">
+            <p id="answer" className="max-w-3xl text-lg leading-relaxed text-foreground">{page.introContent}</p>
+          </section>
+        )}
+        <div id="trip-booking" className="container-page pt-4"><BookingStepsStrip slug={destination.slug} name={destination.name} airportCode={facts.airport} compact /></div>
+        <TripSnapshot trip={{ airportCode: facts.airport, driveMinutes: facts.driveMinutes, tripDurationDays: facts.tripDays, bestSeason: facts.bestSeason, permitLevel: facts.permitLevel }} compact /><TripQuickNav />
 
-      <main className="container-page grid grid-cols-[minmax(0,1fr)] gap-10 py-10 lg:grid-cols-[minmax(0,1fr)_300px]">
+      <div className="container-page grid grid-cols-[minmax(0,1fr)] gap-10 py-10 lg:grid-cols-[minmax(0,1fr)_300px]">
         <article id="trip-plan" className="min-w-0 space-y-8 [overflow-wrap:anywhere]">
-          {page.introContent && <p className="text-lg leading-relaxed text-foreground">{page.introContent}</p>}
           {page.pageType === "best_time" && <SeasonPicker sections={sections} />}
           {sections.map((s, i) => {
             const o = offers[i];
@@ -275,9 +281,10 @@ function LandingPage() {
             </div>
           )}
         </aside>
-      </main>
+      </div>
       {dest && <div className="container-page pb-8"><PlanDeeper dest={dest} landingLinks={[]} current="landing" /></div>}
       <div className="container-page pb-14"><TripEssentials context={{ slug: destination.slug, name: destination.name, places: [destination], topic: `${h1} ${page.introContent ?? ""} ${sections.map(s => s.heading).join(" ")}` }} /></div>
+      </main>
       <Footer />
     </div>
   );

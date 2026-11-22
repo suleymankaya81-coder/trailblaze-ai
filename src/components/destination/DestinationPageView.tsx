@@ -1,4 +1,5 @@
-import { T, useTp } from "@/lib/i18n";
+import { T, tp as tpFor, useLocale, useTp } from "@/lib/i18n";
+import { destinationShortAnswer } from "@/lib/seo/destinationAnswer";
 import { TripSnapshot, BookingBar } from "@/components/destination/TripSnapshot";
 import { offerCtaLabel } from "@/lib/affiliates/ctaLabel";
 import { SafeImage } from "@/components/shared/SafeImage";
@@ -114,8 +115,9 @@ export function DestinationPageView({ dest, landingLinks, crumbs }: { dest: Dest
       <TripSnapshot trip={dest} compact />
       <BookingBar nonRoad={nonRoad} ferry={ferryAccess} />
 
-      {/* Order: showcase (vehicles + top tour) → know before you go → flights → vehicles → itinerary → map → stays → tours → budget/prep → gear */}
+      {/* Order: short answer → showcase (vehicles + top tour) → know before you go → flights → vehicles → itinerary → map → stays → tours → budget/prep → gear */}
       <main className="container-page max-w-[1200px] space-y-12 py-5 md:space-y-16 md:py-6">
+        <ShortAnswer dest={dest} />
         <TopShowcase slug={dest.slug} name={dest.name} airportCode={dest.airportCode} country={dest.countryCode} vehicleNote={dest.travelPlan?.vehicle} />
 
         <section id="trip-plan" aria-label={tp("Know before you go")} className="scroll-mt-40 space-y-8">
@@ -1149,3 +1151,17 @@ function FinalCta({ dest }: { dest: DestinationView }) {
   );
 }
 
+
+/* =========================================================
+   0 — SHORT ANSWER (answer first, booking directly below)
+========================================================= */
+function ShortAnswer({ dest }: { dest: DestinationView }) {
+  const locale = useLocale();
+  const lines = destinationShortAnswer(dest, locale);
+  if (!lines.length) return null;
+  return (
+    <section aria-label={tpFor(locale, "Short answer")} className="pt-2">
+      <p id="answer" className="max-w-3xl text-lg leading-relaxed text-foreground">{lines.join(" ")}</p>
+    </section>
+  );
+}
