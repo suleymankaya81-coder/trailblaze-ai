@@ -1,4 +1,5 @@
 import { SITE_ORIGIN } from "@/config/site";
+import { guideArticleJsonLd } from "@/lib/seo/guideArticleJsonLd";
 import { Button } from "@/components/ui/button";
 import { SafeImage } from "@/components/shared/SafeImage";
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
@@ -88,17 +89,7 @@ export const Route = createFileRoute("/destinations/$slug/$region/$place/$guide"
       : page.coverImage ?? destination.heroImage;
     // Passed as an object: "script:ld+json" serializes it once (a string would be double-encoded).
     const jsonLd = [
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        headline: h1,
-        description,
-        image: coverImage || undefined,
-        dateModified: page.updatedAt,
-        mainEntityOfPage: url,
-        publisher: { "@type": "Organization", name: "WildParkRoutes" },
-        articleSection: sections.map((s) => s.heading),
-      },
+      guideArticleJsonLd({ headline: h1, description, url, image: coverImage, sections, dateModified: page.updatedAt }),
       { "@context": "https://schema.org", ...breadcrumbJsonLd(placeGuideCrumbs(destination, LANDING_TYPE_LABEL[page.pageType] ?? "Guide", page.path)) },
       ...(faqs.length
         ? [{
