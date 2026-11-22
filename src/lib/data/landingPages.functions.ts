@@ -32,6 +32,9 @@ export type LandingPageView = {
   coverPhotoLicense: string | null;
   priority: number;
   updatedAt: string;
+  /** Real database dates; publishedAt is null for rows published before the column existed. */
+  createdAt: string;
+  publishedAt: string | null;
 };
 
 const PATH_RE = /^\/[a-z0-9]+(-[a-z0-9]+)*$/;
@@ -69,6 +72,8 @@ function toView(r: Tables<"seo_landing_pages">): LandingPageView {
     coverPhotoLicense: r.cover_photo_license,
     priority: r.priority,
     updatedAt: r.updated_at,
+    createdAt: r.created_at,
+    publishedAt: r.published_at,
   };
 }
 

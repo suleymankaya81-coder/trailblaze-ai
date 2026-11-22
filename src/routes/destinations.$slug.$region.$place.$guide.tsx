@@ -1,5 +1,5 @@
 import { SITE_ORIGIN } from "@/config/site";
-import { guideArticleJsonLd } from "@/lib/seo/guideArticleJsonLd";
+import { formatUpdated, guideArticleJsonLd, guideDates } from "@/lib/seo/guideArticleJsonLd";
 import { Button } from "@/components/ui/button";
 import { SafeImage } from "@/components/shared/SafeImage";
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
@@ -11,7 +11,7 @@ import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapsho
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 import { Link } from "@/components/site/LocalLink";
-import { canonicalPath, guideByPageType, guidePath, legacyGuidePath } from "@/lib/routes/paths";
+import { canonicalPath, destinationPath, guideByPageType, guidePath, legacyGuidePath } from "@/lib/routes/paths";
 import { getDestinationGeo } from "@/lib/data/geo.functions";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
@@ -89,7 +89,11 @@ export const Route = createFileRoute("/destinations/$slug/$region/$place/$guide"
       : page.coverImage ?? destination.heroImage;
     // Passed as an object: "script:ld+json" serializes it once (a string would be double-encoded).
     const jsonLd = [
-      guideArticleJsonLd({ headline: h1, description, url, image: coverImage, sections, dateModified: page.updatedAt }),
+      guideArticleJsonLd({
+        headline: h1, description, url, image: coverImage, sections,
+        publishedAt: page.publishedAt, createdAt: page.createdAt, updatedAt: page.updatedAt,
+        place: { name: destination.name, url: `${BASE}${destinationPath(destination.slug)}` },
+      }),
       { "@context": "https://schema.org", ...breadcrumbJsonLd(placeGuideCrumbs(destination, LANDING_TYPE_LABEL[page.pageType] ?? "Guide", page.path)) },
       ...(faqs.length
         ? [{
@@ -157,6 +161,8 @@ function LandingPage() {
   const rest = offers.slice(bundle.sections.length);
   const { page, h1, sections, destination, siblings } = bundle;
   const label = LANDING_TYPE_LABEL[page.pageType] ?? "Guide";
+  // Same real database date as Article.dateModified; no line when the date is unknown.
+  const updated = guideDates(page).dateModified;
   const coverImage = landingCoverAssets[page.path] ?? page.coverImage ?? destination.heroImage;
   const usesDestinationPhoto = !landingCoverAssets[page.path] && !page.coverImage;
   const destinationCredit = parsePhotoCredit(destination.photoCredit).hero;
@@ -177,6 +183,7 @@ function LandingPage() {
         <div className={`container-page relative ${coverImage ? "flex min-h-[340px] flex-col justify-end pb-8 md:min-h-[420px]" : ""}`}>
           <Breadcrumbs crumbs={placeGuideCrumbs(destination, label, page.path)} className="mb-3 text-off-white/80" />
           <h1 className="max-w-3xl font-display text-[34px] leading-tight text-off-white md:text-[56px]">{h1}</h1>
+          {updated && <p className="mt-3 text-sm text-off-white/85">Last updated: <time dateTime={updated}>{formatUpdated(updated)}</time></p>}
         </div>
       </section>
       {coverImage && photoCredit && photoSource && (
