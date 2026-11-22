@@ -404,3 +404,39 @@ Amaç, yeni içeriğin aynı hataları tekrarlamaması.
 - 303 REWRITE önerisi kontrol edildi. İlk çalıştırmada 22 öneri kaldı (en 14, de 3, fr 5).
 - Kaynakta bulunmayan olgu metinden çıkarıldı ya da kaynaktaki yazımla değiştirildi. 22 öneri değişti; hiçbiri CLEAR'a dönmedi.
 - Son çalıştırma: 0 hata. `06-apply-rewrites.sql` yeniden üretildi ve yerel test tekrarlandı: aynı sayılar, 2. çalıştırma 0, geri alma birebir.
+
+---
+
+## 12. `06` parçalı sürüm — 40 KB altındaki dosyalar (2026-11-22)
+
+`06-apply-rewrites.sql` (~225 KB) tek çağrıda veritabanı aracına sığmıyor. Aynı mantık ve aynı güvenlik kontrolleriyle 11 dosyaya bölündü. Dosyalar `split_06.py` ile tek dosyadan **otomatik üretilir**: öneri satırları ve SQL komutları birebir oradan kopyalanır. En büyük dosya 35.540 bayt.
+
+**Çalıştırma sırası** (her dosya tek çağrı, ayrı transaction):
+
+| # | Dosya | Ne yapar | public tablolarını değiştirir mi? |
+|---|---|---|---|
+| 1 | `06-0-prepare.sql` | `audit_backup` şeması (yoksa) ve **boş** öneri tablosu `audit_backup.rewrites_20261122_proposals`; RLS açık, yetki yok | **Hayır** (güvenli) |
+| 2 | `06-1-load-001.sql` … `06-1-load-007.sql` | 320 öneriyi 7 parti hâlinde öneri tablosuna yükler. `on conflict do nothing`: tekrar çalıştırmak zararsız | **Hayır** (güvenli) |
+| 3 | `06-2-backup.sql` | Önce kontrol: öneri tablosunda tam 320 satır ve içerik sağlama toplamı (md5) incelenen önerilerle aynı mı? Sonra etkilenecek satırları bir kez `audit_backup.rewrites_20261122_destinations` ve `..._translations` tablolarına kopyalar; RLS açar, public/anon/authenticated yetkilerini kaldırır | **Hayır** (güvenli; public tabloları yalnızca okur) |
+| 4 | `06-3-apply.sql` | **Veriyi değiştiren tek dosya.** Tek transaction; mantık `06-apply-rewrites.sql` ile aynı | **Evet** |
+| — | `06-4-rollback.sql` | Gerekirse geri alma (aynı mantık) | Evet (yalnızca geri yükler) |
+
+**`06-3-apply.sql` şu durumlarda çalışmayı reddeder:**
+
+- `01-helper.sql` kurulu değilse,
+- öneri tablosu yoksa, 320 satır değilse ya da sağlama toplamı farklıysa (eksik bir `06-1-load` dosyası ya da elle değişiklik),
+- yedek tabloları yoksa, RLS kapalıysa ya da etkilenen bir satır yedekte yoksa.
+
+Kontroller aynı: alan yalnızca mevcut metin saklanan „old" metne eşitse değişir; `already-applied`, `row-missing`, `changed-since-review`, `fix_log`, yapı/kimlik/durum kontrolleri. Bir kontrol başarısız olursa hiçbir şey kaydedilmez.
+
+**Yerel test (geçici PostgreSQL 16, sample.json + sentetik satırlar; canlı veritabanına dokunulmadı):**
+
+- Sıra dışı çalıştırma reddedildi:
+  - yükleme öncesi `06-2` / `06-3`,
+  - yalnızca 1 parti yüklüyken (58/320),
+  - `06-2` öncesi `06-3`,
+  - bozulmuş öneri (sağlama toplamı),
+  - RLS kapalı yedek tablosu.
+- `06-3` 1. çalıştırma: en 131, de 70, fr 118 alan. Test için değiştirilmiş 1 fr alanı `changed-since-review` olarak atlandı. 2. çalıştırma: 0.
+- Geri alma: ilk hâle göre 0 fark.
+- Aynı başlangıç veritabanında eski tek `06-apply-rewrites.sql` ile karşılaştırıldı. public tabloları (`updated_at` hariç), üç yedek tablosu ve sonuç tabloları **bayt bayt aynı**: uygulamadan sonra, 2. çalıştırmadan sonra ve geri almadan sonra.
