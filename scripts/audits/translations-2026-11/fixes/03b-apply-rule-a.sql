@@ -1,5 +1,9 @@
--- 03b-apply-rule-a.sql — rule A only (placeholder sentences), version 2. ONE transaction.
--- NOT approved yet: run 01b-helper-rule-a-v2.sql, re-run 02-preview.sql and review A3/A4 first.
+-- 03b-apply-rule-a.sql — rule A only (placeholder sentences), version 2 + quality filter. ONE transaction.
+-- NOT approved yet: run 01b-helper-rule-a-v2.sql and 01c-helper-rule-a-quality.sql, then review
+-- 02b-preview-rule-a-quality.sql (write list + needs-human list) first.
+-- Rule A writes an output only when it passes the quality filter of 01c (≥ 6 words, no pronoun/ordinal
+-- start, not only a population/area/number fact, mentions the place or stop name, names no other park,
+-- slug not on the needs-human list). Everything else stays UNCHANGED ("needs-human").
 -- Independent of 03a-apply-bcd.sql (either order).
 --
 -- Prerequisites: 00-backup.sql and 01-helper.sql have been run, and 02-preview.sql was reviewed.
@@ -25,6 +29,10 @@ begin
      or to_regprocedure('translation_fix.clause_problems(text,boolean)') is null then
     raise exception 'Rule A v2 missing: run 01b-helper-rule-a-v2.sql first (v1 wrote sentence fragments)';
   end if;
+  if to_regprocedure('translation_fix.rule_a_filtered_jsonb(jsonb,text,text,text,text,text[])') is null
+     or to_regprocedure('translation_fix.rule_a_quality(text,text,text,text,text)') is null then
+    raise exception 'Rule A quality filter missing: run 01c-helper-rule-a-quality.sql first';
+  end if;
 end $$;
 
 create temp table fix_log (step int, rule text, target text, locale text, rows_changed int) on commit drop;
@@ -35,18 +43,18 @@ create temp table fix_log (step int, rule text, target text, locale text, rows_c
 -- string inside travel_plan except stop names/ids, links and labels). "Natura [token]" becomes
 -- "Natura 2000". If a field would become empty, its first clause before the token is kept;
 -- v2 never writes a fragment: invalid clauses are cut back to a complete clause or left unchanged
--- ("unresolved", listed by 02-preview.sql A4).
+-- ("unresolved"); outputs that fail the 01c quality filter are also left unchanged ("needs-human").
 -- ============================================================================================
 with cand as (
   select id,
-         (translation_fix.rule_a_text(tagline, 'tagline')).result         as tagline,
-         (translation_fix.rule_a_text(seo_title, 'seo_title')).result       as seo_title,
-         (translation_fix.rule_a_text(seo_description, 'seo_description')).result as seo_description,
-         (translation_fix.rule_a_text(best_season, 'best_season')).result     as best_season,
-         (translation_fix.rule_a_text(permit_headline, 'permit_headline')).result as permit_headline,
-         (translation_fix.rule_a_text(permit_note, 'permit_note')).result     as permit_note,
-         (translation_fix.rule_a_text(notes, 'notes')).result           as notes,
-         translation_fix.rule_a(travel_plan)                         as travel_plan
+         (translation_fix.rule_a_filtered_text(tagline, 'tagline', name, null, slug)).result         as tagline,
+         (translation_fix.rule_a_filtered_text(seo_title, 'seo_title', name, null, slug)).result       as seo_title,
+         (translation_fix.rule_a_filtered_text(seo_description, 'seo_description', name, null, slug)).result as seo_description,
+         (translation_fix.rule_a_filtered_text(best_season, 'best_season', name, null, slug)).result     as best_season,
+         (translation_fix.rule_a_filtered_text(permit_headline, 'permit_headline', name, null, slug)).result as permit_headline,
+         (translation_fix.rule_a_filtered_text(permit_note, 'permit_note', name, null, slug)).result     as permit_note,
+         (translation_fix.rule_a_filtered_text(notes, 'notes', name, null, slug)).result           as notes,
+         translation_fix.rule_a_filtered_jsonb(travel_plan, name, slug) as travel_plan
   from public.destinations
 ), upd as (
   update public.destinations d
@@ -66,12 +74,18 @@ insert into fix_log select 1, 'A', 'destinations', 'en', count(*) from upd;
 -- Rule A (translations): the same sentence removal in German and French content_translations,
 -- for [dated source], [source datée], [datierter Quelle] and [datiert Quelle].
 -- ============================================================================================
-with upd as (
-  update public.content_translations t
-     set fields = translation_fix.rule_a(t.fields), updated_at = now()
-   where t.entity_type = 'destination' and t.locale in ('de', 'fr')
-     and translation_fix.rule_a(t.fields) is distinct from t.fields
-  returning t.locale
+-- The place name passed to the filter is the English name plus the translated name (either may be
+-- mentioned); inside a stop, the stop's own name also counts.
+with cand as (
+  select t.id, t.locale, t.fields as old_fields,
+         translation_fix.rule_a_filtered_jsonb(t.fields, d.name || ' ' || coalesce(t.fields->>'name', ''), t.entity_id) as new_fields
+  from public.content_translations t
+  join public.destinations d on d.slug = t.entity_id
+  where t.entity_type = 'destination' and t.locale in ('de', 'fr')
+), upd as (
+  update public.content_translations t set fields = c.new_fields, updated_at = now()
+  from cand c where c.id = t.id and c.new_fields is distinct from c.old_fields
+  returning c.locale
 )
 insert into fix_log select 2, 'A', 'content_translations', locale, count(*) from upd group by locale;
 
@@ -144,19 +158,23 @@ union all
 select 'fr "Timing" title left', 'fr', count(*) from public.content_translations
 where entity_type = 'destination' and locale = 'fr' and jsonb_path_exists(fields, '$.intel[*] ? (@.title == "Timing")');
 
--- Rule A fields still left unchanged on purpose (mode 'unresolved'): a person must rewrite them.
-select 'rule A unresolved fields' as check, l.locale, count(*) as fields, count(distinct l.slug) as rows
+-- Rule A fields left unchanged on purpose: 'unresolved' (no valid sentence) and 'needs-human'
+-- (valid sentence, but failed the 01c quality filter). A person must rewrite them; see 02b for the list.
+select 'rule A left unchanged' as check, l.locale, l.decision, count(*) as fields, count(distinct l.slug) as rows
 from (
   select t.locale, t.entity_id as slug, x.*
-  from public.content_translations t, lateral translation_fix.placeholder_leaves(t.fields) x
+  from public.content_translations t
+  join public.destinations d on d.slug = t.entity_id,
+  lateral translation_fix.rule_a_filtered_leaves(t.fields, d.name || ' ' || coalesce(t.fields->>'name', ''), t.entity_id) x
   where t.entity_type = 'destination' and t.locale in ('de', 'fr')
   union all
   select 'en', d.slug, x.*
-  from public.destinations d, lateral translation_fix.placeholder_leaves(jsonb_build_object(
+  from public.destinations d, lateral translation_fix.rule_a_filtered_leaves(jsonb_build_object(
     'tagline', d.tagline, 'seo_title', d.seo_title, 'seo_description', d.seo_description, 'best_season', d.best_season,
-    'permit_headline', d.permit_headline, 'permit_note', d.permit_note, 'notes', d.notes, 'travel_plan', d.travel_plan)) x
+    'permit_headline', d.permit_headline, 'permit_note', d.permit_note, 'notes', d.notes, 'travel_plan', d.travel_plan),
+    d.name, d.slug) x
 ) l
-where l.mode = 'unresolved'
-group by l.locale order by l.locale;
+where l.decision in ('unresolved', 'needs-human')
+group by l.locale, l.decision order by l.locale, l.decision;
 
 commit;
