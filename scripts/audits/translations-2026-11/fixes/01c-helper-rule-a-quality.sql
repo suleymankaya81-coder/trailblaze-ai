@@ -27,7 +27,9 @@ create or replace function translation_fix.needs_human_slugs() returns text[]
 language sql immutable as $$
   select array['haagse-bos','midden-delfland','parco-naturale-regionale-bosco-incoronata',
                'parco-naturale-regionale-del-vulture','valaste-waterfall','leka','mors-and-hanklit',
-               'naturpark-nissum-fjord','breheimen-national-park','bulbjerg']
+               'naturpark-nissum-fjord','breheimen-national-park','bulbjerg',
+               'aspromonte-national-park','faerder','lycklamabos','waterloopbos','lake-peipus',
+               'lammijarv','jostedalsbreen-national-park','nigardsbreen','lierne-national-park']
 $$;
 
 -- lower case, accents removed (no extension needed)

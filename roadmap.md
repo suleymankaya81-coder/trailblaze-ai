@@ -406,3 +406,10 @@
 - [ ] Exercise country maps and park navigation; record evidence and external blockers in a dated report.
 
 - [ ] French (fr): /fr home, destinations, country/region/place pages + FR labels live; bulk place translation running (resumable: translate-content.py --locale fr --all). Next: French sitemap children, then road trips/guides in French.
+
+## November 22 approved Rule A cleanup
+- [x] Add the nine exclusions through a function-only migration; verify original backup counts.
+- [x] Apply 03b in one transaction with original safety checks; first successful run completed.
+- [x] Run 03b a second time: en/de/fr each changed zero rows; all original safety checks passed.
+- [x] Revoke direct private-schema grants; verify public-role denial, unchanged outside-table/status hashes, and save exact counts plus fifteen before/after examples.
+- [ ] Prove zero effective reader access: blocked by managed supabase_read_only_user membership in pg_read_all_data, which grants schema USAGE and backup reads independently of ACLs; no project-wide role change authorized.
