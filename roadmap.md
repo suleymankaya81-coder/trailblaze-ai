@@ -413,3 +413,7 @@
 - [x] Run 03b a second time: en/de/fr each changed zero rows; all original safety checks passed.
 - [x] Revoke direct private-schema grants; verify public-role denial, unchanged outside-table/status hashes, and save exact counts plus fifteen before/after examples.
 - [ ] Prove zero effective reader access: blocked by managed supabase_read_only_user membership in pg_read_all_data, which grants schema USAGE and backup reads independently of ACLs; no project-wide role change authorized.
+
+## November 22 approved reviewed rewrites
+- [x] Verify original backups and public-role denial; commit preflight report and current token baseline.
+- [ ] Execute only 06 twice and verify new backups, applied/skipped fields, examples, timestamps and unchanged outside tables/statuses; blocked by inability to submit the complete 225,519-byte script intact through this session's available execution path. No database write attempted.
