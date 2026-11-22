@@ -367,3 +367,40 @@ Amaç, yeni içeriğin aynı hataları tekrarlamaması.
 - Aynı 125 paket `main`'de de aynı.
 - `france/apply-ready.sql`, `south-europe/apply-gr-ready.sql` ve `apply-pt-ready.sql` dosyalarında belirteç **yok**. Bunlar da `main` ile aynı.
 - Yeni yayın kapısı bu 125 yeri olduğu gibi yayınlamaz. Önce paketlerin yeni `quoted_visit` / `drop_dated` ile yeniden üretilmesi gerekir (onayınızla).
+
+---
+
+## 11. `06-apply-rewrites.sql` — kural A'nın düzeltemediği alanlar (2026-11-22)
+
+- **Girdi:** `preview-2026-11-22-live/needs-human.json` (441 alan) + yeni onaylı slug'lardan 26 alan = **467 öneri**.
+- **Öneriler:** `../rewrites/proposals.json` (`locale, slug, field, old, new_or_CLEAR_or_WRONG_PLACE, reason`).
+- **Gözden geçirme:** `../rewrites/review.md` (dil başına sayılar ve 40 rastgele önce/sonra çifti).
+
+| Dil | Öneri | REWRITE | CLEAR | WRONG_PLACE |
+|---|---|---|---|---|
+| en | 184 | 124 | 7 | 53 |
+| de | 112 | 67 | 3 | 42 |
+| fr | 171 | 112 | 7 | 52 |
+| **Toplam** | **467** | **303** | **17** | **147** |
+
+**Dosya ne yapar?**
+
+- Tek transaction. Önkoşul yalnızca `01-helper.sql`.
+- Önce yedek alır: değişecek satırların tamamını `audit_backup.rewrites_20261122_destinations` ve `..._translations` tablolarına bir kez kopyalar. Öneriler de `audit_backup.rewrites_20261122_proposals` tablosunda saklanır. RLS açık, anon/authenticated/public yetkisi yok. Public şemada kopya yok.
+- Bir alanı **yalnızca** mevcut metni incelenen „old" metinle birebir aynıysa değiştirir. Sonradan değişmiş alan `changed-since-review` olarak atlanır ve listelenir.
+- CLEAR → alan boş metin (`''`) olur. WRONG_PLACE alanları dosyada yok; değişmez.
+- `fix_log`: her öneri için tek satır (`applied`, `already-applied`, `changed-since-review`, `row-missing`). Son kontroller: her öneri bir kez loglandı, yazılan değer = önerilen metin, JSON yapısı / durak adları / durum yedekle aynı, yeni metinde belirteç yok. Biri başarısız olursa hiçbir şey kaydedilmez.
+- İkinci çalıştırma 0 alan değiştirir.
+- **Geri alma:** dosyanın sonundaki yorum bloğu (`/* … */` işaretlerini kaldırıp ayrı çalıştırın). Yalnızca hâlâ bu dosyanın yazdığı metni taşıyan alanları yedekten geri yükler.
+
+**Yerel test (geçici PostgreSQL 16, sample.json + 467 önerinin „old" metniyle sentetik satırlar):**
+
+- 1. çalıştırma: en 131, de 70, fr 118 alan yazıldı. Test için önceden değiştirilen 1 fr alanı atlandı.
+- 2. çalıştırma: 0.
+- Geri alma: 319 alan, ilk hâle birebir dönüş (0 fark). İkinci geri alma: 0.
+
+**Olgu kontrolü (2026-11-22):** `../rewrites/fact-check.md`, betik `../rewrites/fact_check.py`.
+
+- 303 REWRITE önerisi kontrol edildi. İlk çalıştırmada 22 öneri kaldı (en 14, de 3, fr 5).
+- Kaynakta bulunmayan olgu metinden çıkarıldı ya da kaynaktaki yazımla değiştirildi. 22 öneri değişti; hiçbiri CLEAR'a dönmedi.
+- Son çalıştırma: 0 hata. `06-apply-rewrites.sql` yeniden üretildi ve yerel test tekrarlandı: aynı sayılar, 2. çalıştırma 0, geri alma birebir.
