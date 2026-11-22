@@ -398,3 +398,9 @@ Amaç, yeni içeriğin aynı hataları tekrarlamaması.
 - 1. çalıştırma: en 131, de 70, fr 118 alan yazıldı. Test için önceden değiştirilen 1 fr alanı atlandı.
 - 2. çalıştırma: 0.
 - Geri alma: 319 alan, ilk hâle birebir dönüş (0 fark). İkinci geri alma: 0.
+
+**Olgu kontrolü (2026-11-22):** `../rewrites/fact-check.md`, betik `../rewrites/fact_check.py`.
+
+- 303 REWRITE önerisi kontrol edildi. İlk çalıştırmada 22 öneri kaldı (en 14, de 3, fr 5).
+- Kaynakta bulunmayan olgu metinden çıkarıldı ya da kaynaktaki yazımla değiştirildi. 22 öneri değişti; hiçbiri CLEAR'a dönmedi.
+- Son çalıştırma: 0 hata. `06-apply-rewrites.sql` yeniden üretildi ve yerel test tekrarlandı: aynı sayılar, 2. çalıştırma 0, geri alma birebir.
