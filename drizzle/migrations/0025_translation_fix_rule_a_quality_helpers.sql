@@ -1,0 +1,1 @@
+-- 01c-helper-rule-a-quality.sql (begin/commit stripped; functions only)
