@@ -2,12 +2,14 @@ import { SITE_ORIGIN } from "@/config/site";
 import { breadcrumbJsonLd, destinationCrumbs } from "./breadcrumbs";
 import type { DestinationView } from "@/lib/data/destinations.functions";
 import { isNonRoadDestination } from "@/lib/data/destinationAccess";
-import { commonsFilePage, parsePhotoCredit, toAbsoluteImageUrl, type ImageCredit } from "./imageCredit";
+import { commonsFilePage, creditCreatorEntity, parsePhotoCredit, toAbsoluteImageUrl, type ImageCredit } from "./imageCredit";
 
-function imageObject(url: string, caption: string, credit: ImageCredit | null): Record<string, unknown> {
+function imageObject(url: string, caption: string, credit: ImageCredit | null, placeName?: string): Record<string, unknown> {
   const obj: Record<string, unknown> = { "@type": "ImageObject", contentUrl: url, url, caption, name: caption };
   if (credit) {
-    obj.creator = { "@type": "Person", name: credit.creator };
+    // Person only for an individual's name; organisations and non-names are never emitted as Person.
+    const creator = creditCreatorEntity(credit.creator, placeName);
+    if (creator) obj.creator = creator;
     obj.creditText = `${credit.creator} / ${credit.license} via ${credit.source ?? "Wikimedia Commons"}`;
     if (credit.licenseUrl) obj.license = credit.licenseUrl;
     const page = credit.sourceUrl ?? commonsFilePage(url);
@@ -25,7 +27,7 @@ export function buildDestinationImages(dest: Pick<DestinationView, "name" | "reg
     const url = toAbsoluteImageUrl(raw);
     if (!url || seen.has(url)) return;
     seen.add(url);
-    out.push(imageObject(url, caption, credit));
+    out.push(imageObject(url, caption, credit, dest.name));
   };
   add(dest.heroImage, `${place} — scenery`, credits.hero);
   (dest.gallery ?? []).forEach((g, i) => add(g, `${place} — photo ${i + 2}`, credits.gallery[i] ?? null));
