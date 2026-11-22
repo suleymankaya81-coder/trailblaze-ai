@@ -1,9 +1,10 @@
 import { describe, expect, it } from "vitest";
-import { buildContactEmail, contactSchema } from "./contact";
+import { CONTACT_EMAIL, buildContactEmail, contactSchema } from "./contact";
 
 describe("contact email", () => {
-  it("addresses enquiries to info@minialife.com", () => {
-    expect(buildContactEmail({ name: "Visitor", email: "visitor@example.org", message: "Route question" }).split("?")[0]).toBe("mailto:info@minialife.com");
+  it("addresses enquiries to the configured site address, never the legacy minialife.com one", () => {
+    expect(buildContactEmail({ name: "Visitor", email: "visitor@example.org", message: "Route question" }).split("?")[0]).toBe(`mailto:${CONTACT_EMAIL}`);
+    expect(CONTACT_EMAIL).not.toContain("minialife");
   });
   it("encodes subject and body without allowing extra mail headers", () => {
     const link = buildContactEmail({ name: "A & B", email: "visitor@example.org", message: "Hello &bcc=other@example.org\nA question?" });
