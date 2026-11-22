@@ -11,6 +11,7 @@ import requests
 from combined_content import module
 from visit_policy import required_offer_count, requires_activity_photos
 from placeholder_gate import publication_problems
+from indexnow import destination_url, notify
 
 validate_travel = module('publish_travel', 'generate-travel-content.py').validate
 
@@ -37,6 +38,7 @@ def get(path):
 
 
 held = []
+published_urls = []
 for slug in sys.argv[1:]:
     d = get(f"destinations?slug=eq.{slug}&select=id,hero_image,photo_credit,lat,lng,nearest_airport_code,drive_minutes,permit_headline,permit_note,permit_source_url,travel_plan,country_code,region_slug,access_type,tagline,seo_title,seo_description,best_season")[0]
     offers = get(f"offers?destination_id=eq.{d['id']}&select=id")
@@ -65,4 +67,8 @@ for slug in sys.argv[1:]:
     if saved != {'status': 'published', 'seo_eligible': True}:
         raise ValueError('Publication did not read back: ' + slug)
     print(slug, "published")
+    published_urls.append(destination_url(d["country_code"], d["region_slug"], slug))
+    published_urls += [destination_url(d["country_code"], d["region_slug"], slug, t["locale"]) for t in translations if t["locale"] in ("de", "fr")]
 print(f"held back: {len(held)}")
+# Tell IndexNow engines about the newly published pages (a failed ping never undoes the publish).
+notify(published_urls)
