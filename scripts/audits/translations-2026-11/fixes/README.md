@@ -8,6 +8,10 @@ SQL'i siz gözden geçirip başka bir araçla çalıştıracaksınız.
 > - `02-preview.sql` canlıda çalıştırıldı; sonuçları `../preview-2026-11-21/` altında.
 > - B1–B5, C ve D1–D3 kuralları örneklerde doğru çıktı → **`03a-apply-bcd.sql` çalıştırılmaya hazır.**
 > - Kural A'nın v1 sürümü 368 fallback çıktısının yaklaşık 100–150'sinde kırık parça üretiyordu ("…, der am 26. Juni.", "… parc national qui."). Bu yüzden A, **`01b-helper-rule-a-v2.sql`** ile yeniden yazıldı ve **`03b-apply-rule-a.sql`** olarak ayrıldı.
+> - **3. tur (2026-11-22):** Kural A'ya kalite filtresi eklendi: **`01c-helper-rule-a-quality.sql`**, önizlemesi **`02b-preview-rule-a-quality.sql`**.
+>   - Bir çıktı ancak şu durumda yazılır: en az 6 kelime, zamirle başlamıyor, yalnızca sayı bilgisi değil, yerin ya da durağın adını anıyor, başka park adı geçmiyor ve slug sabit listede değil.
+>   - Filtreden geçmeyenler değişmeden kalır ve `../preview-2026-11-22-quality/needs-human.md` listesine girer.
+>   - Sample veritabanında: 43 alan yazılır, 24 alan needs-human.
 > - **03b henüz onaylı değil.** Önce 01b kurulmalı, 02 yeniden çalıştırılmalı ve A3/A4 listeleri okunmalı (bkz. bölüm 2 ve `../preview-2026-11-21b/summary.md`).
 
 Test için yalnızca bu oturumun içinde geçici, yerel bir PostgreSQL 16 kuruldu. İçine sadece
@@ -34,8 +38,10 @@ Kaynaklar:
 | `01-helper.sql` | Özel `translation_fix` şemasında yardımcı fonksiyonları kurar. Asıl parça, JSONB'yi özyinelemeli gezip her metin değerine kural uygulayan `jsonb_walk` fonksiyonu. | Hayır (sadece fonksiyon) |
 | `02-preview.sql` | Sadece SELECT içerir. Her kural için dil başına etkilenen satır sayısını ve 10 önce/sonra örneğini (slug, alan, eski, yeni) verir. Ayrıca bir kişinin bakması gereken listeleri çıkarır. | Hayır |
 | `01b-helper-rule-a-v2.sql` | Kural A'nın 2. sürümü. A fonksiyonlarını yeniden yazar ve "sarkan parça" kontrolünü ekler (bkz. bölüm 3-A). `02-preview.sql` değişmeden v2 ile çalışır. | Hayır (sadece fonksiyon) |
+| `01c-helper-rule-a-quality.sql` | Kural A için kalite filtresi ve sabit needs-human slug listesi (`translation_fix.needs_human_slugs()`). Yalnızca fonksiyon kurar. | Hayır (sadece fonksiyon) |
+| `02b-preview-rule-a-quality.sql` | Yalnızca SELECT. Kural A + filtre için dil ve karar başına sayılar, gerekçeler, yazılacakların tam listesi ve needs-human listesi. | Hayır |
 | `03a-apply-bcd.sql` | **Hazır.** Yalnızca B1–B5, C, D1–D3. Tek transaction, yapı/kimlik kontrolleri ve `fix_log` var. Tek başına çalışır, idempotent. | Evet |
-| `03b-apply-rule-a.sql` | **Henüz onaylı değil.** Yalnızca kural A (v2). Tek transaction ve aynı kontroller. 01b kurulu değilse çalışmayı reddeder. Sonda "unresolved" sayılarını da verir. | Evet |
+| `03b-apply-rule-a.sql` | **Henüz onaylı değil.** Yalnızca kural A (v2 + 01c kalite filtresi). Tek transaction ve aynı kontroller. 01b veya 01c kurulu değilse çalışmayı reddeder. Sonda değiştirilmeyen alanların sayısını verir ("unresolved" ve "needs-human"). | Evet |
 | `04-rollback.sql` | `audit_backup` yedeğinden geri yükler: 03a, 03b ve 05'in yaptığı her şeyi. | Evet (geri alma) |
 | `05-optional-unpublish-overseas.sql` | **Sahip kararı.** 6 denizaşırı Fransız yeri taslağa (draft) çeker. | Evet (isteğe bağlı) |
 | `fix_repo_caches.py` | Repodaki çeviri önbelleklerine aynı kuralları uygular. Çalıştırıldı ve sonucu commit'lendi. 2. turda v1 ile temizlenmiş 8 Almanca yer önbelleği v2 ile yeniden üretildi. Veritabanına dokunmaz. | Sadece repo dosyaları |
@@ -59,14 +65,15 @@ Her dosyayı **tek parça** çalıştırın: `psql -v ON_ERROR_STOP=1 -f <dosya>
    - `public` kontrolü 0 satır dönmeli.
    - İkinci kez çalıştırılırsa ilk yedeğin üzerine yazmaz (`create table if not exists`).
 2. **`01-helper.sql`**: yalnızca fonksiyonları kurar. Tekrar çalıştırılabilir. *(Canlıda kurulu.)*
-3. **`01b-helper-rule-a-v2.sql`**: kural A v2'yi kurar. Tekrar çalıştırılabilir. *(Yeni; canlıda henüz yok.)*
+3. **`01b-helper-rule-a-v2.sql`**: kural A v2'yi kurar. Tekrar çalıştırılabilir. *(Canlıda kurulu: migration 0022.)*
+3b. **`01c-helper-rule-a-quality.sql`**: kalite filtresini kurar. Tekrar çalıştırılabilir. *(Yeni; canlıda henüz yok.)*
 4. **`02-preview.sql`**: 01b kurulduktan sonra **yeniden** çalıştırın ve okuyun (bkz. bölüm 3). Özellikle:
    - A3 fallback listesi (modlar artık: `fallback`, `fallback_cut`, `fallback_intro`, `fallback_next`)
    - A4 unresolved listesi
    - A4b zamirle başlayan metinler
    - D2 uyuşmazlık listesi
 5. **`03a-apply-bcd.sql`** (hazır): tek transaction. Sonunda kural başına `rows_changed` ve kalan sorunlar çıkar. Yapı veya kimlik kontrolü başarısız olursa hiçbir şey kaydedilmez. İkinci çalıştırmada tüm `rows_changed` 0 olmalı.
-6. **`03b-apply-rule-a.sql`**: yalnızca 4. adımdaki A3/A4 listesi onaylandıktan sonra çalıştırın.
+6. **`03b-apply-rule-a.sql`**: yalnızca **`02b-preview-rule-a-quality.sql`** sonuçları (Q3 yazılacaklar, Q4 needs-human) onaylandıktan sonra çalıştırın.
    - Tek transaction; aynı kontroller.
    - Sonda "rule A unresolved fields" tablosu çıkar: değiştirilmeden kalan alanlar. Bunları bir kişi yazmalı.
    - 03a ile sırası önemli değildir; ikisi birbirinden bağımsızdır.
