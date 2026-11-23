@@ -1,6 +1,8 @@
 import { z } from "zod";
 
-export const CONTACT_EMAIL = "info@minialife.com";
+// One address for the whole site (config/site.ts; placeholder until the owner confirms it).
+import { CONTACT_EMAIL } from "@/config/site";
+export { CONTACT_EMAIL };
 export const contactSchema = z.object({
   name: z.string().trim().min(1, "Enter your name.").max(100, "Use 100 characters or fewer.").refine((value) => !/[\r\n]/.test(value), "Use a single line for your name."),
   email: z.string().trim().email("Enter a valid email address.").max(255),

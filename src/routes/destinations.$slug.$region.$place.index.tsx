@@ -84,6 +84,7 @@ import { trackAndRedirect } from "@/lib/affiliates/track.functions";
 import { getOrCreateSessionId } from "@/lib/affiliates/session";
 import { outboundLinkTitle } from "@/lib/affiliates/compliance";
 import { buildDestinationJsonLd } from "@/lib/seo/destinationJsonLd";
+import { visibleAnswerFaqs } from "@/lib/seo/visibleAnswers";
 import { saveTripPlan } from "@/lib/plans/savePlan.functions";
 import { getCapturedEmail, setCapturedEmail } from "@/lib/plans/session";
 import { getLandingLinksForDestination, type LandingLink } from "@/lib/data/landingPages.functions";
@@ -117,7 +118,8 @@ export const Route = createFileRoute("/destinations/$slug/$region/$place/")({
     const title = destinationSearchTitle(d.name);
     const description = travelDescription(d, "destination", destinationSearchDescription(d.name, d.tagline, d.bestSeason));
     const pageUrl = `${SITE_ORIGIN}${destinationPath(d.slug)}`;
-    const jsonLd = buildDestinationJsonLd(d, pageUrl);
+    // FAQPage only for the reviewed answers rendered by <DestinationAnswers> on this page.
+    const jsonLd = buildDestinationJsonLd(d, pageUrl, visibleAnswerFaqs(d.slug));
     return {
       meta: [
         { title },

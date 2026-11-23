@@ -11,7 +11,8 @@ import { buildVrboSearchUrl } from "@/lib/affiliates/vrbo";
 import { isNonRoadDestination } from "@/lib/data/destinationAccess";
 
 /** Shared five-stage booking path. Cars and RVs are alternatives within one stage. */
-export function BookingStepsStrip({ slug, name, airportCode }: { slug: string; name: string; airportCode: string | null }) {
+/** compact: tighter spacing and smaller images, for the strip placed directly under a page's short answer. */
+export function BookingStepsStrip({ slug, name, airportCode, compact = false }: { slug: string; name: string; airportCode: string | null; compact?: boolean }) {
   const l = corridorPartnerLinks(slug);
   const nonRoad = isNonRoadDestination(slug);
   const steps = [
@@ -22,15 +23,15 @@ export function BookingStepsStrip({ slug, name, airportCode }: { slug: string; n
     { number: 5, label: "Choose trip essentials", brand: "Four route-matched picks", href: "#trip-gear", external: false },
   ];
   return (
-    <section aria-label="Book your trip in this order" className="border-y border-border py-5">
+    <section aria-label="Book your trip in this order" className={`border-y border-border ${compact ? "py-3" : "py-5"}`}>
       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground"><T>Book in this order</T></p>
-      <SwipeRow className="mt-3 md:grid-cols-2 lg:grid-cols-5">
+      <SwipeRow className={`${compact ? "mt-2" : "mt-3"} md:grid-cols-2 lg:grid-cols-5`}>
         {steps.map((s) => (
           <div key={s.label}>
             <a href={s.href} target={s.external ? "_blank" : undefined} rel={s.external ? "sponsored nofollow noopener noreferrer" : undefined}
               onClick={(e) => { if (s.external) { e.preventDefault(); window.open(s.href, "_blank", "noopener,noreferrer"); } }}
               className="flex min-h-12 items-start gap-2 rounded-lg border border-border bg-card p-3 text-sm font-semibold text-foreground transition hover:border-primary">
-              <Thumb src={[flightImg, carImg, stayImg, roadImg, gearImg][s.number - 1]} size={40} />
+              <Thumb src={[flightImg, carImg, stayImg, roadImg, gearImg][s.number - 1]} size={compact ? 28 : 40} />
               <span className="min-w-0 flex-1"><span className="block text-[10px] uppercase text-sage-deep"><T>Step</T> {s.number}</span><T>{s.label}</T><span className="block text-[11px] font-normal text-muted-foreground"><T>{s.brand}</T></span></span>
               <ArrowUpRight className="h-4 w-4 shrink-0 text-primary" />
             </a>

@@ -7,6 +7,7 @@ import loops from "@/data/loops.json";
 import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 import { SITE, formatDriveShort, type Faq } from "@/lib/seo/flyDrive";
 import { isNonRoadDestination } from "@/lib/data/destinationAccess";
+import { ORGANIZATION_REF } from "@/lib/seo/siteJsonLd";
 
 export type GuideDest = {
   slug: string;
@@ -149,7 +150,7 @@ export function destGuideJsonLd(opts: { name: string; slug: string; heroImage: s
   return {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "Article", headline: opts.title, url: opts.url, about: { "@type": "TouristDestination", name: opts.name, url: `${SITE}${destinationPath(opts.slug)}` }, ...(opts.heroImage.startsWith("https://") ? { image: opts.heroImage } : {}) },
+      { "@type": "Article", headline: opts.title, url: opts.url, publisher: ORGANIZATION_REF, author: ORGANIZATION_REF, about: { "@type": "TouristDestination", name: opts.name, url: `${SITE}${destinationPath(opts.slug)}` }, ...(opts.heroImage.startsWith("https://") ? { image: opts.heroImage } : {}) },
       breadcrumbJsonLd(placeGuideCrumbs(opts, opts.label, opts.url.replace(SITE, ""))),
       faqPage(opts.faqs),
     ],

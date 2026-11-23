@@ -1,4 +1,5 @@
 import { SITE_ORIGIN } from "@/config/site";
+import { formatUpdated, guideArticleJsonLd, guideDates } from "@/lib/seo/guideArticleJsonLd";
 import { Button } from "@/components/ui/button";
 import { SafeImage } from "@/components/shared/SafeImage";
 import { PhotoCredit } from "@/components/shared/PhotoCredit";
@@ -10,7 +11,7 @@ import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapsho
 import { TripEssentials } from "@/components/destination/TripEssentials";
 import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 import { Link } from "@/components/site/LocalLink";
-import { canonicalPath, guideByPageType, guidePath, legacyGuidePath } from "@/lib/routes/paths";
+import { canonicalPath, destinationPath, guideByPageType, guidePath, legacyGuidePath } from "@/lib/routes/paths";
 import { getDestinationGeo } from "@/lib/data/geo.functions";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
@@ -88,17 +89,11 @@ export const Route = createFileRoute("/destinations/$slug/$region/$place/$guide"
       : page.coverImage ?? destination.heroImage;
     // Passed as an object: "script:ld+json" serializes it once (a string would be double-encoded).
     const jsonLd = [
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        headline: h1,
-        description,
-        image: coverImage || undefined,
-        dateModified: page.updatedAt,
-        mainEntityOfPage: url,
-        publisher: { "@type": "Organization", name: "WildParkRoutes" },
-        articleSection: sections.map((s) => s.heading),
-      },
+      guideArticleJsonLd({
+        headline: h1, description, url, image: coverImage, sections,
+        publishedAt: page.publishedAt, createdAt: page.createdAt, updatedAt: page.updatedAt,
+        place: { name: destination.name, url: `${BASE}${destinationPath(destination.slug)}` },
+      }),
       { "@context": "https://schema.org", ...breadcrumbJsonLd(placeGuideCrumbs(destination, LANDING_TYPE_LABEL[page.pageType] ?? "Guide", page.path)) },
       ...(faqs.length
         ? [{
@@ -166,6 +161,8 @@ function LandingPage() {
   const rest = offers.slice(bundle.sections.length);
   const { page, h1, sections, destination, siblings } = bundle;
   const label = LANDING_TYPE_LABEL[page.pageType] ?? "Guide";
+  // Same real database date as Article.dateModified; no line when the date is unknown.
+  const updated = guideDates(page).dateModified;
   const coverImage = landingCoverAssets[page.path] ?? page.coverImage ?? destination.heroImage;
   const usesDestinationPhoto = !landingCoverAssets[page.path] && !page.coverImage;
   const destinationCredit = parsePhotoCredit(destination.photoCredit).hero;
@@ -186,18 +183,25 @@ function LandingPage() {
         <div className={`container-page relative ${coverImage ? "flex min-h-[340px] flex-col justify-end pb-8 md:min-h-[420px]" : ""}`}>
           <Breadcrumbs crumbs={placeGuideCrumbs(destination, label, page.path)} className="mb-3 text-off-white/80" />
           <h1 className="max-w-3xl font-display text-[34px] leading-tight text-off-white md:text-[56px]">{h1}</h1>
+          {updated && <p className="mt-3 text-sm text-off-white/85">Last updated: <time dateTime={updated}>{formatUpdated(updated)}</time></p>}
         </div>
       </section>
       {coverImage && photoCredit && photoSource && (
         <div className="container-page pt-2"><PhotoCredit photo={{ source: commonsFilePage(photoSource) ?? photoSource, credit: photoCredit, license: photoLicense ?? "See source" }} className="inline-block" /></div>
       )}
 
-      <TripSnapshot trip={{ airportCode: facts.airport, driveMinutes: facts.driveMinutes, tripDurationDays: facts.tripDays, bestSeason: facts.bestSeason, permitLevel: facts.permitLevel }} /><TripQuickNav />
-      <div id="trip-booking" className="container-page py-6"><BookingStepsStrip slug={destination.slug} name={destination.name} airportCode={facts.airport} /></div>
+      {/* Answer first, booking directly below: the stored 2–3 sentence intro answers the page's question. */}
+      <main>
+        {page.introContent && (
+          <section aria-label="Short answer" className="container-page pt-8">
+            <p id="answer" className="max-w-3xl text-lg leading-relaxed text-foreground">{page.introContent}</p>
+          </section>
+        )}
+        <div id="trip-booking" className="container-page pt-4"><BookingStepsStrip slug={destination.slug} name={destination.name} airportCode={facts.airport} compact /></div>
+        <TripSnapshot trip={{ airportCode: facts.airport, driveMinutes: facts.driveMinutes, tripDurationDays: facts.tripDays, bestSeason: facts.bestSeason, permitLevel: facts.permitLevel }} compact /><TripQuickNav />
 
-      <main className="container-page grid grid-cols-[minmax(0,1fr)] gap-10 py-10 lg:grid-cols-[minmax(0,1fr)_300px]">
+      <div className="container-page grid grid-cols-[minmax(0,1fr)] gap-10 py-10 lg:grid-cols-[minmax(0,1fr)_300px]">
         <article id="trip-plan" className="min-w-0 space-y-8 [overflow-wrap:anywhere]">
-          {page.introContent && <p className="text-lg leading-relaxed text-foreground">{page.introContent}</p>}
           {page.pageType === "best_time" && <SeasonPicker sections={sections} />}
           {sections.map((s, i) => {
             const o = offers[i];
@@ -277,9 +281,10 @@ function LandingPage() {
             </div>
           )}
         </aside>
-      </main>
+      </div>
       {dest && <div className="container-page pb-8"><PlanDeeper dest={dest} landingLinks={[]} current="landing" /></div>}
       <div className="container-page pb-14"><TripEssentials context={{ slug: destination.slug, name: destination.name, places: [destination], topic: `${h1} ${page.introContent ?? ""} ${sections.map(s => s.heading).join(" ")}` }} /></div>
+      </main>
       <Footer />
     </div>
   );

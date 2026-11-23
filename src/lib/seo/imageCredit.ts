@@ -42,6 +42,36 @@ export function parsePhotoCredit(text: string | null | undefined): { hero: Image
   return { hero, gallery };
 }
 
+// Words that mark an organisation, not a person (park services, agencies, tourism boards, companies).
+const ORG_WORDS = /\b(national|parks|nationalpark|naturpark|service|nps|usfws|usda|forest service|agency|department|dept|office|ministry|authority|commission|government|county|city of|state of|council|trust|foundation|society|association|institute|university|college|museum|library|archive|archives|survey|tourism|tourist|visit|board|bureau|inc|ltd|llc|gmbh|team|staff|wikimedia|commons)\b/i;
+// Credit text that is not a name at all ("own work" in several languages, unknown or anonymous authors).
+const NOT_A_NAME = /(unknown|anonymous|anonym|own work|eigenes werk|travail personnel|trabajo propio|trabalho meu|opera propria|arquivo pessoal|https?:)/i;
+
+/** The name inside common Commons/Flickr credit wrappers ("User:X", "The original uploader was X at …", "X from City"). */
+export function creditName(raw: string): string {
+  return raw
+    .replace(/^The original uploader was\s+/i, "")
+    .replace(/\s+at\s+[A-Za-z]+ Wikipedia\.?$/i, "")
+    .replace(/^User:/i, "")
+    .replace(/\s+from\s+[^,]+(,\s*[^,]+)*$/i, "")
+    .replace(/^\((.+)\)$/, "$1")
+    .trim();
+}
+
+/**
+ * schema.org entity for a photo creator. Organisations (e.g. a park's own photo account such as
+ * "Zion National Park") become Organization; text that is not a name returns null so no creator
+ * is emitted (creditText still carries the attribution). Only the remaining names become Person.
+ */
+export function creditCreatorEntity(raw: string, placeName?: string | null): Record<string, string> | null {
+  const name = creditName(raw);
+  // Must contain at least one letter in any script (Greek, Cyrillic, … count).
+  if (!name || NOT_A_NAME.test(name) || !/\p{L}/u.test(name)) return null;
+  const isPlace = !!placeName && name.toLowerCase() === placeName.trim().toLowerCase();
+  if (isPlace || ORG_WORDS.test(name)) return { "@type": "Organization", name };
+  return { "@type": "Person", name };
+}
+
 export function toAbsoluteImageUrl(url: string | null | undefined): string | null {
   if (!url) return null;
   const trimmed = url.trim();

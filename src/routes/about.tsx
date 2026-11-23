@@ -10,7 +10,7 @@ import mapImage from "@/assets/thumbs/map.jpg";
 import planImage from "@/assets/thumbs/plan.jpg";
 import carImage from "@/assets/thumbs/car.jpg";
 
-const description = "WildParkRoutes publishes free U.S. outdoor travel guides and self-drive itineraries. Plan a route, check arrival and entry notes, then book with travel partners.";
+const description = "WildParkRoutes publishes free outdoor travel guides and self-drive itineraries for 40+ countries. Plan a route, check arrival and entry notes, then book with travel partners.";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
@@ -32,7 +32,7 @@ const steps = [
   { image: carImage, title: "Book with the partner", text: "Compare your options, then confirm dates, meeting points, final prices and terms on the provider’s site." },
 ];
 export function AboutPage() {
-  return <StaticPageLayout eyebrow="About WildParkRoutes" title="Outdoor travel, one route at a time." lede="Free U.S. outdoor travel guides and self-drive itineraries — for people who would rather be outside.">
+  return <StaticPageLayout eyebrow="About WildParkRoutes" title="Outdoor travel, one route at a time." lede="Free outdoor travel guides and self-drive itineraries for 40+ countries — for people who would rather be outside.">
     <section>
       <h2><T>Your place, your pace</T></h2>
       <p><T>WildParkRoutes brings national parks, scenic towns and road-trip stops into one planning experience. Use our day-by-day suggestions, maps and arrival guidance to shape your own trip, whether you travel by car, campervan or RV.</T></p>
@@ -59,6 +59,7 @@ export function AboutPage() {
     </section>
     <section>
       <h2>Who publishes WildParkRoutes</h2>
+      <p><T>Guides are written and reviewed by the WildParkRoutes editorial team.</T></p>
       <p><T>WildParkRoutes is an independent outdoor-travel publisher. For editorial questions, corrections or partnership enquiries,</T> <Link to="/contact">contact us</Link>.</p>
     </section>
   </StaticPageLayout>;

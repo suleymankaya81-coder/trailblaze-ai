@@ -15,9 +15,30 @@ export const REDIRECT_HOSTS: string[] = [];
 export const LEGACY_HOSTS = MIGRATED ? ["minialife.com", "www.minialife.com", ...AUTHORITY_HOSTS] : [];
 export const SITE_DOMAIN = new URL(SITE_ORIGIN).host;
 export const BRAND_NAME = "WildParkRoutes";
-export const CONTACT_EMAIL = "info@minialife.com";
+/**
+ * Public contact address (Organization schema, contact and about pages).
+ * PLACEHOLDER until the owner confirms the final address.
+ */
+export const CONTACT_EMAIL = "info@wildparkroutes.com";
+/** Square brand logo (rendered from public/favicon.svg), at least 112×112 px as Google requires. */
+export const LOGO_PATH = "/logo-512.png";
+export const LOGO_SIZE = 512;
+/**
+ * Official profiles of WildParkRoutes for Organization.sameAs. List ONLY profiles that really exist.
+ * The site code verifies the Pinterest domain (p:domain_verify) but contains no profile URL yet, so
+ * this stays empty until the owner supplies the real profile address(es).
+ */
+export const ORGANIZATION_SAME_AS: readonly string[] = [];
 
 /** Absolute URL for a site path ("/destinations/zion" → "https://…/destinations/zion"). */
 export function absoluteUrl(path = "/"): string {
   return `${SITE_ORIGIN}${path.startsWith("/") ? path : `/${path}`}`;
 }
+
+/**
+ * Guide dates (seo_landing_pages.published_at/created_at/updated_at) are bulk timestamps today:
+ * hundreds of guides share the same day from batch scripts, so they are not real content dates.
+ * While false, guide pages show no "Last updated" line and their Article JSON-LD has no
+ * datePublished/dateModified. Set to true only once those columns record real editorial changes.
+ */
+export const GUIDE_DATES_TRUSTED = false;

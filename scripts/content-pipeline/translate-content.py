@@ -5,6 +5,7 @@ Run: python scripts/content-pipeline/translate-content.py --locale de --pilot [s
 import json, os, sys
 import requests
 from placeholder_gate import find_blocked_text
+from indexnow import destination_url, notify
 
 LOCALE_NAMES = {"de": "German", "fr": "French", "es": "Spanish", "nl": "Dutch", "it": "Italian"}
 PILOT = ["yellowstone", "yosemite", "grand-canyon", "zion", "arches-national-park", "glacier",
@@ -68,7 +69,8 @@ existing = {row["entity_id"] for row in requests.get(
 slug_filter = "" if run_all else f"&slug=in.({','.join(slugs)})"
 rows = requests.get(
     f"{REST}/destinations?status=eq.published{slug_filter}&order=slug"
-    "&select=slug,name,region,tagline,best_season,permit_headline,permit_note,travel_plan", headers=H).json()
+    "&select=slug,name,region,tagline,best_season,permit_headline,permit_note,travel_plan,country_code,region_slug", headers=H).json()
+changed_urls = []
 
 def work(d):
     if d["slug"] in existing and not force:
@@ -107,8 +109,12 @@ SOURCE JSON:
                         json={"entity_type": "destination", "entity_id": d["slug"], "locale": locale,
                               "fields": out, "status": "published", "updated_at": "now()"})
     print(d["slug"], "saved" if res.ok else f"ERROR {res.status_code} {res.text[:200]}", flush=True)
+    if res.ok and d.get("country_code") and d.get("region_slug"):
+        changed_urls.append(destination_url(d["country_code"], d["region_slug"], d["slug"], locale))
 
 
 from concurrent.futures import ThreadPoolExecutor
 with ThreadPoolExecutor(max_workers=4) as pool:
     list(pool.map(work, rows))
+# Published or changed translated pages → IndexNow (never undoes a saved translation).
+notify(changed_urls)
