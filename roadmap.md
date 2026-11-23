@@ -1,6 +1,8 @@
 ## November 23 sitemap publication and IndexNow
-- [ ] Audit sitemap lastmod sources, publish sitemap.xml and a public change-log.xml feed, and verify live XML.
-- [ ] Run the full live-sitemap IndexNow submission without creating a submit-token secret; submit the sitemap to Google Search Console when accessible.
+- [x] Audit sitemap lastmod sources; preserve stored page-row dates, remove inherited destination dates from derived guides, repair no-reservation/Norway name collision, and prepare public change-log.xml RSS. Preview RSS 200 with 1,000 items; 23 JS and 13 Python tests pass; publication requested for saved code.
+- [x] Submit 16,925 unique live-sitemap URLs to IndexNow: initial 403s, public key/homepage recheck 200, full retry accepted in 10,000 + 6,925 URL batches (HTTP 200). No submit-token secret created.
+- [x] Submit sitemap.xml to verified Google Search Console property: HTTP 204; readback confirms November 23 submission/download, zero errors and warnings. This is not proof of whole-site indexing.
+- [ ] Confirm new code propagation and change-log.xml live 200, then submit the RSS to Google: blocked by pending deployment; final live check still returned 404 and served the old derived-guide sitemap dates. Existing sitemap.xml remains live 200.
 
 ## November 21 international Viator repair
 - [x] Reverify published Alto Garda cards and 16 EN/DE preview pages across eight countries; restore country-aware tracked searches in empty/provider-unavailable guide frames, repair blank-height/state handshake, verify three guides and a real approved Viator click. Commission credit remains unverified; follow-up code awaits owner publication.
