@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 
 vi.mock("./lib/error-capture", () => ({ consumeLastCapturedError: () => null }));
-vi.mock("./lib/seo/sitemap.server", () => ({ buildChildSitemap: vi.fn(), buildSitemapResponse: vi.fn() }));
+vi.mock("./lib/seo/sitemap.server", () => ({ buildChangeLogResponse: vi.fn().mockResolvedValue(new Response('<rss/>', { headers: { 'content-type': 'application/rss+xml' } })), buildChildSitemap: vi.fn(), buildSitemapResponse: vi.fn() }));
 vi.mock("@tanstack/react-start/server-entry", () => ({
   default: {
     fetch: (request: Request) => new Response("page", {
@@ -13,6 +13,11 @@ vi.mock("@tanstack/react-start/server-entry", () => ({
 import server from "./server";
 
 describe("authority migration request flow", () => {
+  it("serves the public change log without rendering an HTML page", async () => {
+    const response = await server.fetch(new Request("https://wildparkroutes.com/change-log.xml"), {}, {});
+    expect(response.status).toBe(200);
+    expect(response.headers.get("content-type")).toBe("application/rss+xml");
+  });
   it("returns a direct root-to-root 301 before rendering", async () => {
     const response = await server.fetch(new Request("http://world-national-parks.net/"), {}, {});
     expect(response.status).toBe(301);

@@ -79,6 +79,22 @@ class IndexNowTest(unittest.TestCase):
             indexnow.requests.post = orig
         self.assertEqual(called, [])
 
+    def test_failed_sitemap_fetch_aborts(self):
+        with self.assertRaises(RuntimeError):
+            indexnow.sitemap_urls("https://wildparkroutes.com/sitemap.xml", get=lambda u, timeout: Resp(503, b"offline"))
+
+    def test_only_page_locations_are_submitted(self):
+        child = b'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"><url><loc>https://wildparkroutes.com/about</loc><image:image><image:loc>https://example.org/photo.jpg</image:loc></image:image></url></urlset>'
+        self.assertEqual(indexnow.sitemap_urls("https://wildparkroutes.com/sitemap.xml", get=lambda u, timeout: Resp(content=child)), ["https://wildparkroutes.com/about"])
+
+    def test_cli_reports_rejected_submission_as_failure(self):
+        orig = indexnow.requests.post
+        indexnow.requests.post = lambda *a, **k: Resp(422)
+        try:
+            self.assertEqual(indexnow.main(["--urls", "https://wildparkroutes.com/a", "--submit"]), 1)
+        finally:
+            indexnow.requests.post = orig
+
 
 if __name__ == "__main__":
     unittest.main()

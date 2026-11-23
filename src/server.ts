@@ -3,7 +3,7 @@ import "./lib/error-capture";
 import { consumeLastCapturedError } from "./lib/error-capture";
 import { renderErrorPage } from "./lib/error-page";
 import { isLegacyHost, legacyHostResponse, legacyResponse } from "./lib/seo/legacy";
-import { buildChildSitemap, buildSitemapResponse } from "./lib/seo/sitemap.server";
+import { buildChangeLogResponse, buildChildSitemap, buildSitemapResponse } from "./lib/seo/sitemap.server";
 
 type ServerEntry = {
   fetch: (request: Request, env: unknown, ctx: unknown) => Promise<Response> | Response;
@@ -46,7 +46,8 @@ export default {
       // Domain/legacy redirects first, so extra domains never serve their own sitemap or RSS.
       const legacy = legacyResponse(url);
       if (legacy) return legacy;
-      if (isLegacyHost(url.hostname) && /^\/(sitemap|sitemaps\/|rss)/.test(url.pathname)) return legacyHostResponse(url, 200);
+      if (isLegacyHost(url.hostname) && /^\/(sitemap|sitemaps\/|rss|change-log\.xml)/.test(url.pathname)) return legacyHostResponse(url, 200);
+      if (url.pathname === "/change-log.xml") return await buildChangeLogResponse();
       if (url.pathname === "/sitemap.xml") {
         return await buildSitemapResponse(url.origin);
       }

@@ -86,13 +86,18 @@ def destination_url(country, region, slug, locale="en"):
 
 def sitemap_urls(index_url, get=requests.get):
     """All <loc> URLs of a sitemap index and its child sitemaps (one level, as the site serves them)."""
-    root = ET.fromstring(get(index_url, timeout=60).content)
+    response = get(index_url, timeout=60)
+    if response.status_code != 200:
+        raise RuntimeError(f"Sitemap fetch failed: {index_url} → HTTP {response.status_code}; nothing submitted")
+    root = ET.fromstring(response.content)
     if root.tag == f"{SM}sitemapindex":
         out = []
         for loc in root.iter(f"{SM}loc"):
             out += sitemap_urls(loc.text.strip(), get)
         return out
-    return [loc.text.strip() for loc in root.iter(f"{SM}loc")]
+    if root.tag != f"{SM}urlset":
+        raise ValueError(f"Not a sitemap urlset: {index_url}")
+    return [loc.text.strip() for loc in root.findall(f"{SM}url/{SM}loc")]
 
 
 def main(argv=None):
@@ -103,6 +108,8 @@ def main(argv=None):
     ap.add_argument("--batch-size", type=int, default=MAX_BATCH, help="URLs per request (max 10000)")
     ap.add_argument("--submit", action="store_true", help="actually send; without it this is a dry run")
     a = ap.parse_args(argv)
+    if a.batch_size < 1:
+        ap.error("--batch-size must be positive")
     urls = site_urls(sitemap_urls(a.sitemap) if a.sitemap else a.urls)
     groups = batches(urls, a.batch_size)
     print(f"{len(urls)} URLs on {HOST} in {len(groups)} batch(es) of at most {min(a.batch_size, MAX_BATCH)}")
@@ -110,10 +117,12 @@ def main(argv=None):
         print("Dry run: nothing sent. Add --submit to notify IndexNow.")
         return 0
     key = find_key()
+    failed = False
     for i, g in enumerate(groups, 1):
         r = requests.post(ENDPOINT, json={"host": HOST, "key": key, "keyLocation": f"https://{HOST}/{key}.txt", "urlList": g}, timeout=60)
         print(f"batch {i}: {len(g)} URLs → HTTP {r.status_code}")
-    return 0
+        failed = failed or r.status_code not in (200, 202)
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":

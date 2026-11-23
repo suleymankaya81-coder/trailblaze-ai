@@ -105,6 +105,51 @@ function urlset(urls: Url[]): Response {
   return xml(urlsetXml(urls));
 }
 
+type ChangedPage = { loc: string; updatedAt: string };
+
+/** RSS is accepted by Google as a recent-URL feed; dates belong to the stored page, never the run. */
+export function changeLogXml(pages: ChangedPage[]): string {
+  const unique = new Map<string, ChangedPage>();
+  for (const page of pages) {
+    if (!Number.isFinite(Date.parse(page.updatedAt))) continue;
+    const loc = canonicalLoc(page.loc);
+    if (new URL(loc).origin !== BASE_URL) continue;
+    const previous = unique.get(loc);
+    if (!previous || Date.parse(page.updatedAt) > Date.parse(previous.updatedAt)) unique.set(loc, { ...page, loc });
+  }
+  const recent = [...unique.values()].sort((a, b) => Date.parse(b.updatedAt) - Date.parse(a.updatedAt)).slice(0, 1000);
+  return [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>',
+    '<title>WildParkRoutes — published page updates</title>',
+    `<link>${BASE_URL}/</link>`,
+    '<description>Recent updates to published destination and guide records.</description>',
+    `<atom:link href="${BASE_URL}/change-log.xml" rel="self" type="application/rss+xml"/>`,
+    ...recent.map(page => `<item><title>${xmlEscape(new URL(page.loc).pathname)}</title><link>${xmlEscape(page.loc)}</link><guid isPermaLink="true">${xmlEscape(page.loc)}</guid><pubDate>${new Date(page.updatedAt).toUTCString()}</pubDate></item>`),
+    '</channel></rss>',
+  ].join('\n');
+}
+
+export async function buildChangeLogResponse(): Promise<Response> {
+  try {
+    const [destinations, translations, guides] = await Promise.all([
+      fetchAll<{ slug: string; updated_at: string }>('destinations?select=slug,updated_at&status=eq.published&order=slug.asc'),
+      fetchAll<{ entity_id: string; locale: string; updated_at: string }>('content_translations?select=entity_id,locale,updated_at&entity_type=eq.destination&status=eq.published&locale=in.(de,fr)&order=entity_id.asc,locale.asc'),
+      fetchAll<{ path: string; updated_at: string }>('seo_landing_pages?select=path,updated_at&status=eq.published&indexable=eq.true&order=path.asc'),
+    ]);
+    const published = new Set(destinations.map(page => page.slug));
+    const pages: ChangedPage[] = [
+      ...destinations.filter(page => destinationGeo(page.slug)).map(page => ({ loc: BASE_URL + destinationPath(page.slug), updatedAt: page.updated_at })),
+      ...translations.filter(page => published.has(page.entity_id) && destinationGeo(page.entity_id) && (page.locale === 'de' || page.locale === 'fr')).map(page => ({ loc: BASE_URL + destinationPath(page.entity_id, page.locale === 'fr' ? 'fr' : 'de'), updatedAt: page.updated_at })),
+      ...guides.map(page => ({ loc: BASE_URL + page.path, updatedAt: page.updated_at })),
+    ];
+    return new Response(changeLogXml(pages), { headers: { 'content-type': 'application/rss+xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
+  } catch (error) {
+    console.error('[change-log]', error);
+    return new Response('Change log temporarily unavailable', { status: 503 });
+  }
+}
+
 // Destination and guide sitemaps are split per country (us-destinations, de-us-destinations, us-guides-glamping, ...).
 const PER_COUNTRY = ["destinations", "de-destinations", "fr-destinations", ...GUIDE_TYPES.map((t) => `guides-${t}`)];
 export const CHILDREN = ["pages", "fly-and-drive", "no-reservation", "rv-camping", "road-trips", ...Object.keys(COUNTRIES).flatMap((c) => PER_COUNTRY.map((n) => (/^(de|fr)-/.test(n) ? `${n.slice(0, 2)}-${c}-${n.slice(3)}` : `${c}-${n}`)))];
@@ -115,6 +160,7 @@ const ALIASES: Record<string, string> = { de: "de-destinations", destinations: "
 export function parseChild(name: string): { country: string | null; kind: string } | null {
   if (name in ALIASES) return { country: null, kind: ALIASES[name] };
   if (!CHILDREN.includes(name)) return null;
+  if (["pages", "fly-and-drive", "no-reservation", "rv-camping", "road-trips"].includes(name)) return { country: null, kind: name };
   const locale = /^(de|fr)-[a-z]{2}-/.test(name) ? name.slice(0, 2) : null;
   const rest = locale ? name.slice(3) : name;
   const country = rest.split("-")[0];
@@ -194,7 +240,7 @@ export async function buildChildSitemap(name: string): Promise<Response | null> 
       const urls: Url[] = [];
       for (const d of rows) {
         const slug = flyDriveSlug({ slug: d.slug, name: d.name, airportCode: d.nearest_airport_code, airportName: d.nearest_airport_name, driveMinutes: d.drive_minutes, driveMiles: d.drive_miles, accessType: d.access_type });
-        if (slug) urls.push({ loc: `${BASE_URL}/fly-and-drive/${slug}`, lastmod: new Date(d.updated_at).toISOString(), images: uniqueImages([d.hero_image]) });
+        if (slug) urls.push({ loc: `${BASE_URL}/fly-and-drive/${slug}`, images: uniqueImages([d.hero_image]) });
       }
       return urlset(urls);
     }
@@ -207,7 +253,7 @@ export async function buildChildSitemap(name: string): Promise<Response | null> 
       return urlset(
         rows
           .filter((d) => ok({ slug: d.slug, name: d.name, airportCode: d.nearest_airport_code, airportName: d.nearest_airport_name, driveMinutes: d.drive_minutes, permitLevel: d.permit_level, permitNote: d.permit_note, permitHeadline: d.permit_headline, campingScore: d.camping_score, bestSeason: d.best_season, accessType: d.access_type }))
-          .map((d) => ({ loc: `${BASE_URL}/${name}/${d.slug}`, lastmod: new Date(d.updated_at).toISOString(), images: uniqueImages([d.hero_image]) })),
+          .map((d) => ({ loc: `${BASE_URL}/${name}/${d.slug}`, images: uniqueImages([d.hero_image]) })),
       );
     }
     const suffix = name.slice("guides-".length);

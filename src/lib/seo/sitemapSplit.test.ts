@@ -12,6 +12,10 @@ describe("country-split sitemaps", () => {
   });
   it("keeps old names answerable", () => expect(parseChild("destinations")).toEqual({ country: null, kind: "destinations" }));
   it("rejects unknown names", () => expect(parseChild("jp-destinations")).toBeNull());
+  it("does not confuse the no-reservation feed with Norway's no country code", () => {
+    expect(parseChild("no-reservation")).toEqual({ country: null, kind: "no-reservation" });
+    expect(parseChild("no-destinations")).toEqual({ country: "no", kind: "destinations" });
+  });
   it("parses the new France/Portugal/Greece children", () => {
     expect(parseChild("fr-destinations")).toEqual({ country: "fr", kind: "destinations" });
     expect(parseChild("pt-guides-glamping")).toEqual({ country: "pt", kind: "guides-glamping" });

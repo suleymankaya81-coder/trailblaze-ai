@@ -1,3 +1,7 @@
+## November 23 sitemap publication and IndexNow
+- [ ] Audit sitemap lastmod sources, publish sitemap.xml and a public change-log.xml feed, and verify live XML.
+- [ ] Run the full live-sitemap IndexNow submission without creating a submit-token secret; submit the sitemap to Google Search Console when accessible.
+
 ## November 21 international Viator repair
 - [x] Reverify published Alto Garda cards and 16 EN/DE preview pages across eight countries; restore country-aware tracked searches in empty/provider-unavailable guide frames, repair blank-height/state handshake, verify three guides and a real approved Viator click. Commission credit remains unverified; follow-up code awaits owner publication.
 - [x] Repair shared international place identity, country queries and tracked search links; invalidate pre-fix caches without deleting unrelated data.
