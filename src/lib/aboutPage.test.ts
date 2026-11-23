@@ -30,7 +30,8 @@ describe("about page", () => {
 
 describe("no visible legacy email", () => {
   it("no route or component shows a minialife.com address", () => {
-    const hits = execSync("grep -rIl 'minialife\\.com' src/routes src/components public || true", { encoding: "utf8" }).trim();
+    // Text sources only: public/ also holds ~1 GB of images, which made a full grep slow enough to time out.
+    const hits = execSync("grep -rIl --include='*.ts' --include='*.tsx' --include='*.txt' --include='*.html' --include='*.json' --include='*.xml' 'minialife\\.com' src/routes src/components public || true", { encoding: "utf8" }).trim();
     expect(hits).toBe("");
   });
 });

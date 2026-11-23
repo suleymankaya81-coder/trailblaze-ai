@@ -1,3 +1,4 @@
+import { GUIDE_DATES_TRUSTED } from "@/config/site";
 import { ORGANIZATION_REF } from "./siteJsonLd";
 
 export type GuideArticleInput = {
@@ -21,8 +22,15 @@ export function realDate(value: string | null | undefined): string | null {
   return Number.isFinite(t) ? new Date(t).toISOString() : null;
 }
 
-/** Published = published_at, else the row's created_at; modified = updated_at, never earlier than published. */
-export function guideDates(g: Pick<GuideArticleInput, "publishedAt" | "createdAt" | "updatedAt">): { datePublished: string | null; dateModified: string | null } {
+/**
+ * Published = published_at, else the row's created_at; modified = updated_at, never earlier than published.
+ * Both are null while GUIDE_DATES_TRUSTED is false (bulk timestamps must not be shown or marked up as content dates).
+ */
+export function guideDates(
+  g: Pick<GuideArticleInput, "publishedAt" | "createdAt" | "updatedAt">,
+  trusted: boolean = GUIDE_DATES_TRUSTED,
+): { datePublished: string | null; dateModified: string | null } {
+  if (!trusted) return { datePublished: null, dateModified: null };
   const datePublished = realDate(g.publishedAt) ?? realDate(g.createdAt);
   let dateModified = realDate(g.updatedAt);
   if (dateModified && datePublished && dateModified < datePublished) dateModified = datePublished;
@@ -35,8 +43,8 @@ export function formatUpdated(iso: string): string {
 }
 
 /** Article JSON-LD for place guides (best time, itinerary, glamping, things to do). */
-export function guideArticleJsonLd(g: GuideArticleInput): Record<string, unknown> {
-  const { datePublished, dateModified } = guideDates(g);
+export function guideArticleJsonLd(g: GuideArticleInput, trustedDates: boolean = GUIDE_DATES_TRUSTED): Record<string, unknown> {
+  const { datePublished, dateModified } = guideDates(g, trustedDates);
   return {
     "@context": "https://schema.org",
     "@type": "Article",

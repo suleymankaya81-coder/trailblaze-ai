@@ -34,3 +34,11 @@ export const ORGANIZATION_SAME_AS: readonly string[] = [];
 export function absoluteUrl(path = "/"): string {
   return `${SITE_ORIGIN}${path.startsWith("/") ? path : `/${path}`}`;
 }
+
+/**
+ * Guide dates (seo_landing_pages.published_at/created_at/updated_at) are bulk timestamps today:
+ * hundreds of guides share the same day from batch scripts, so they are not real content dates.
+ * While false, guide pages show no "Last updated" line and their Article JSON-LD has no
+ * datePublished/dateModified. Set to true only once those columns record real editorial changes.
+ */
+export const GUIDE_DATES_TRUSTED = false;

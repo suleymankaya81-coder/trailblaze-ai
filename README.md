@@ -544,3 +544,27 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+
+---
+
+## Guide dates (`GUIDE_DATES_TRUSTED`)
+
+Place guides (best time, itinerary, glamping, things to do) can show a visible "Last updated: <date>" line and output `datePublished` / `dateModified` in their Article JSON-LD. Both come from `seo_landing_pages.published_at`, `created_at` and `updated_at`.
+
+Today those columns hold **bulk timestamps**: batch scripts touched hundreds of guides on the same day. So `GUIDE_DATES_TRUSTED` in `src/config/site.ts` is `false`. While it is false:
+
+- no "Last updated" line is shown on guide pages,
+- the guide Article has no `datePublished` and no `dateModified`.
+
+**Switching it on:**
+
+1. Make sure the columns record real editorial dates. `updated_at` must change only when a guide's text changes (not on bulk metadata or backfill updates), and `published_at` must be the first real publication.
+2. Check the data: no single `updated_at` day should be shared by more than 20 guides, unless that many really were edited that day.
+
+   ```sql
+   select updated_at::date as day, count(*) from seo_landing_pages
+   where status = 'published' group by 1 having count(*) > 20 order by 2 desc;
+   ```
+
+3. Set `GUIDE_DATES_TRUSTED = true` in `src/config/site.ts`.
+4. Run the tests (`npx vitest run src/lib/seo/guideArticleJsonLd.test.ts`). The test `is off until real modification dates exist` asserts `false`; update that one test together with the switch.
