@@ -11,7 +11,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Thumb } from "@/components/ui-kit";
 import planImage from "@/assets/thumbs/plan.jpg";
 import roadImage from "@/assets/thumbs/road.jpg";
-import { CONTACT_EMAIL, buildContactEmail, contactSchema } from "@/lib/contact";
+import { CONTACT_EMAIL, contactSchema } from "@/lib/contact";
+import { submitContactMessage } from "@/lib/contact.functions";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -37,7 +38,8 @@ function ContactPage() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
-  const [opened, setOpened] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
 
   return (
     <div className="bg-background">
@@ -83,22 +85,32 @@ function ContactPage() {
           </div>
 
           <form
-            onSubmit={(e) => {
+            onSubmit={async (e) => {
               e.preventDefault();
               const result = contactSchema.safeParse({ name, email, message });
               if (!result.success) {
                 setError(result.error.issues[0]?.message ?? "Check your details.");
-                setOpened(false);
+                setSent(false);
                 return;
               }
               setError("");
-              window.location.href = buildContactEmail(result.data);
-              setOpened(true);
+              setSending(true);
+              try {
+                await submitContactMessage({ data: result.data });
+                setSent(true);
+                setName("");
+                setEmail("");
+                setMessage("");
+              } catch {
+                setError("Could not send your message. Please try again or email us directly.");
+              } finally {
+                setSending(false);
+              }
             }}
             className="rounded-lg border border-border bg-card p-6 md:p-8"
           >
             <p className="text-sm text-muted-foreground">
-              Your message will open in your email app. Send it there to reach {CONTACT_EMAIL}.
+              Your message goes straight to our inbox at {CONTACT_EMAIL} — we read everything.
             </p>
             <div className="mt-6 space-y-4">
               <div className="space-y-1.5">
@@ -143,9 +155,9 @@ function ContactPage() {
               </div>
             </div>
             {error && <p role="alert" className="mt-4 text-sm text-destructive">{error}</p>}
-            {opened && <p role="status" className="mt-4 text-sm text-muted-foreground">Your message has not been sent yet. Send it in your email app. If nothing opened, email {CONTACT_EMAIL} directly; your message remains here.</p>}
-            <Button type="submit" className="mt-6 min-h-12 w-full">
-              Open email to send
+            {sent && <p role="status" className="mt-4 text-sm text-muted-foreground">Thanks — your message has been sent. We reply within a few business days.</p>}
+            <Button type="submit" disabled={sending} className="mt-6 min-h-12 w-full">
+              {sending ? "Sending…" : "Send message"}
             </Button>
           </form>
         </div>
