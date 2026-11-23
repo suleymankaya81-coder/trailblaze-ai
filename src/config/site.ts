@@ -24,11 +24,10 @@ export const CONTACT_EMAIL = "info@wildparkroutes.com";
 export const LOGO_PATH = "/logo-512.png";
 export const LOGO_SIZE = 512;
 /**
- * Official profiles of WildParkRoutes for Organization.sameAs. List ONLY profiles that really exist.
- * The site code verifies the Pinterest domain (p:domain_verify) but contains no profile URL yet, so
- * this stays empty until the owner supplies the real profile address(es).
+ * Official profiles of WildParkRoutes for Organization.sameAs. List ONLY profiles that really exist
+ * (confirmed by the owner); never add guessed profiles.
  */
-export const ORGANIZATION_SAME_AS: readonly string[] = [];
+export const ORGANIZATION_SAME_AS: readonly string[] = ["https://www.pinterest.com/minialife/"];
 
 /** Absolute URL for a site path ("/destinations/zion" → "https://…/destinations/zion"). */
 export function absoluteUrl(path = "/"): string {

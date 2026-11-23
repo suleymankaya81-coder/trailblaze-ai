@@ -21,7 +21,8 @@ describe("Organization schema", () => {
   });
   it("uses the configured contact email, never the legacy minialife.com address", () => {
     expect(organizationJsonLd().email).toBe(CONTACT_EMAIL);
-    expect(JSON.stringify(siteJsonLd())).not.toContain("minialife");
+    // "minialife" may appear as the Pinterest username in sameAs, never as an email domain.
+    expect(JSON.stringify(siteJsonLd())).not.toContain("@minialife.com");
   });
   it("lists sameAs only from configured real profiles", () => {
     const org = organizationJsonLd();
@@ -33,6 +34,23 @@ describe("Organization schema", () => {
     const orgs = (siteJsonLd()["@graph"] as { "@type": string; "@id"?: string }[]).filter((n) => n["@type"] === "Organization");
     expect(orgs).toHaveLength(1);
     expect(orgs[0]["@id"]).toBe(ORGANIZATION_ID);
+  });
+});
+
+describe("Organization identity (owner-confirmed values)", () => {
+  it("has exactly the Pinterest profile as sameAs and info@wildparkroutes.com as email", () => {
+    const org = (siteJsonLd()["@graph"] as Record<string, unknown>[]).find((n) => n["@type"] === "Organization")!;
+    expect(org.sameAs).toEqual(["https://www.pinterest.com/minialife/"]);
+    expect(org.email).toBe("info@wildparkroutes.com");
+    expect(CONTACT_EMAIL).toBe("info@wildparkroutes.com");
+  });
+  it("the contact and About pages use that single constant, with no hard-coded address", () => {
+    for (const file of ["src/routes/contact.tsx", "src/routes/about.tsx", "src/lib/contact.ts"]) {
+      // Form placeholders such as you@example.com are not contact addresses.
+      const addresses = readFileSync(file, "utf8").match(/[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+\.[A-Za-z]{2,}/g) ?? [];
+      expect(addresses.filter((a) => !a.endsWith("@example.com"))).toEqual([]);
+    }
+    expect(readFileSync("src/lib/contact.ts", "utf8")).toContain('import { CONTACT_EMAIL } from "@/config/site"');
   });
 });
 
