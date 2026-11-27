@@ -4,6 +4,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { validMapCoordinate, type CountryMapPlace } from "@/lib/routes/countryMap";
 import { toCurrentOrigin } from "@/lib/seo/originUrl";
 import { genuineSeason } from "@/lib/seo/season";
+import { computeHubStats, type HubStats } from "@/lib/seo/hubSummary";
 
 export type GeoPlace = { slug: string; name: string; heroImage: string; tagline: string | null; bestSeason: string | null };
 export type GeoRegion = { slug: string; name: string; count: number; heroImage: string };
@@ -61,4 +62,39 @@ export const getDestinationGeo = createServerFn({ method: "GET" })
   .handler(async ({ data }): Promise<{ country: string; region: string } | null> => {
     const { data: row } = await supabase.from("destinations").select("country_code, region_slug").eq("slug", data.slug).eq("status", "published").maybeSingle();
     return row?.region_slug ? { country: row.country_code, region: row.region_slug } : null;
+  });
+
+/** Stored facts for a country or region hub (counts, typical stay, airports, drive, access, notable places) and regions.intro. */
+export const getHubStats = createServerFn({ method: "GET" })
+  .inputValidator((input: unknown) => z.object({ country: code, region: code.optional(), locale: z.enum(["en", "de", "fr"]).default("en") }).parse(input))
+  .handler(async ({ data }): Promise<{ stats: HubStats; intro: string | null }> => {
+    // German/French hubs list only places with a published translation: count the same subset, with translated names.
+    let translated: Map<string, string> | null = null;
+    if (data.locale !== "en") {
+      translated = new Map();
+      for (let from = 0; ; from += 1000) {
+        const { data: tr, error: trErr } = await supabase.from("content_translations").select("entity_id, name:fields->>name")
+          .eq("entity_type", "destination").eq("locale", data.locale).eq("status", "published").range(from, from + 999);
+        if (trErr) throw trErr;
+        for (const t of tr ?? []) translated.set(t.entity_id, (t as { name?: string | null }).name || "");
+        if (!tr || tr.length < 1000) break;
+      }
+    }
+    let q = supabase.from("destinations")
+      .select("slug,name,destination_type,trip_duration_days,nearest_airport_code,nearest_airport_name,drive_minutes,access_type,scenic_score")
+      .eq("country_code", data.country).eq("status", "published");
+    if (data.region) q = q.eq("region_slug", data.region);
+    const [{ data: rows, error }, regionRow] = await Promise.all([
+      q,
+      data.region
+        ? supabase.from("regions").select("intro").eq("country_code", data.country).eq("slug", data.region).eq("status", "published").maybeSingle()
+        : Promise.resolve({ data: null }),
+    ]);
+    if (error) throw error;
+    const stats = computeHubStats((rows ?? []).filter((r) => !translated || translated.has(r.slug)).map((r) => ({
+      slug: r.slug, name: translated?.get(r.slug) || r.name, destinationType: r.destination_type, tripDurationDays: r.trip_duration_days,
+      airportCode: r.nearest_airport_code, airportName: r.nearest_airport_name, driveMinutes: r.drive_minutes, accessType: r.access_type, scenicScore: r.scenic_score,
+    })));
+    const intro = (regionRow.data as { intro: string | null } | null)?.intro?.trim() || null;
+    return { stats, intro };
   });

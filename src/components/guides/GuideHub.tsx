@@ -1,4 +1,6 @@
-import { T } from "@/lib/i18n";
+import { T, useLocale } from "@/lib/i18n";
+import { Link } from "@/components/site/LocalLink";
+import { familyLead } from "@/lib/seo/hubSummary";
 import { useMemo, useState } from "react";
 import { Search } from "lucide-react";
 import { PlaceCard } from "@/components/ui-kit";
@@ -32,6 +34,10 @@ export function GuideHub({ family, kicker, title, intro, entries }: { family: Hu
     return entries.filter((e) => (!country || e.countryCode === country) && (!state || e.state === state) && (!region || regionOf(e.state) === region) && (!s || e.name.toLowerCase().includes(s) || (e.airportCode ?? "").toLowerCase().includes(s)));
   }, [entries, q, state, region, country]);
   const heroImage = entries.find((e) => e.heroImage)?.heroImage;
+  const locale = useLocale();
+  // Answer-first summary from the stored entries (count, countries, arrival airports, median drive).
+  const lead = familyLead(family, entries, locale === "fr" ? "en" : locale);
+  const az = useMemo(() => [...entries].sort((a, b) => a.name.localeCompare(b.name)), [entries]);
   const reset = () => setShown(PAGE);
 
   return (
@@ -44,6 +50,8 @@ export function GuideHub({ family, kicker, title, intro, entries }: { family: Hu
         </label>
       </PageHero>
       <main className="container-page py-10 md:py-14">
+        {lead.length > 0 && <p id="answer" className="mb-8 max-w-3xl text-lg leading-relaxed text-foreground">{lead.join(" ")}</p>}
+        <h2 className="mb-5 font-display text-2xl text-foreground"><T>Find a guide</T></h2>
         {countries.length > 1 ? (
           <div className="mb-5 -mx-4 flex gap-2 overflow-x-auto px-4 pb-1 md:mx-0 md:flex-wrap md:px-0" role="group" aria-label="Country">
             <Button variant={!country ? "default" : "outline"} size="lg" className="shrink-0 rounded-full" type="button" onClick={() => { setCountry(""); setRegion(""); setState(""); reset(); }}><T>All countries</T> <span className="opacity-70">{entries.length}</span></Button>
@@ -79,6 +87,13 @@ export function GuideHub({ family, kicker, title, intro, entries }: { family: Hu
             <Button size="lg" type="button" onClick={() => setShown((n) => n + PAGE)}>Show more</Button>
           </div>
         )}
+        {/* Every guide, server-rendered, so crawlers reach all child pages (the cards above page in 24 at a time). */}
+        <section aria-labelledby="all-guides-title" className="mt-14 border-t border-border pt-8">
+          <h2 id="all-guides-title" className="mb-4 font-display text-2xl text-foreground"><T>{`All ${entries.length} guides A–Z`}</T></h2>
+          <ul className="columns-1 gap-6 text-sm sm:columns-2 lg:columns-3">
+            {az.map((e) => <li key={e.slug} className="mb-2 break-inside-avoid"><Link to={`/${family}/$slug`} params={{ slug: e.slug }} className="text-foreground underline-offset-4 hover:underline">{e.name}</Link></li>)}
+          </ul>
+        </section>
       </main>
       <Footer />
     </div>

@@ -4,18 +4,20 @@ import type { Locale } from "@/lib/i18n/locales";
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { SITE_ORIGIN } from "@/config/site";
 import { GeoDirectory } from "@/components/destination/GeoDirectory";
-import { getRegionPlaces, type GeoPlace } from "@/lib/data/geo.functions";
+import { hubFacts, hubLead, type HubStats } from "@/lib/seo/hubSummary";
+import { getRegionPlaces, type GeoPlace, getHubStats } from "@/lib/data/geo.functions";
 import { COUNTRIES, destinationPath, isCountry, regionPath } from "@/lib/routes/paths";
 import { breadcrumbScript, regionCrumbs } from "@/lib/seo/breadcrumbs";
 import { hreflangLinks } from "@/lib/seo/hreflang";
 
 // /destinations/{country}/{region}: all published destinations in one state/region.
 export const Route = createFileRoute("/destinations/$slug/$region/")({
-  loader: async ({ params }): Promise<{ country: string; region: string; name: string; places: GeoPlace[]; locales: Locale[] }> => {
+  loader: async ({ params }): Promise<{ country: string; region: string; name: string; places: GeoPlace[]; locales: Locale[]; hub: { stats: HubStats; intro: string | null } }> => {
     if (!isCountry(params.slug)) throw notFound();
     const data = await getRegionPlaces({ data: { country: params.slug, region: params.region } });
     if (!data) throw notFound();
-    return { country: params.slug, region: params.region, ...data, locales: await directoryLocales(data.places.map((p) => p.slug)) };
+    const hub = await getHubStats({ data: { country: params.slug, region: params.region, locale: "en" } });
+    return { country: params.slug, region: params.region, ...data, locales: await directoryLocales(data.places.map((p) => p.slug)), hub };
   },
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Region not found — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
@@ -45,9 +47,12 @@ export const Route = createFileRoute("/destinations/$slug/$region/")({
 });
 
 function RegionPage() {
-  const { country, region, name, places } = Route.useLoaderData();
+  const { country, region, name, places , hub } = Route.useLoaderData();
   return (
     <GeoDirectory
+      lead={hubLead(name, hub.stats, "en", hub.intro)}
+      facts={hubFacts(hub.stats, "en")}
+      factsHeading="At a glance"
       kicker={COUNTRIES[country].name}
       title={`${name} destinations`}
       intro={`National parks, outdoor regions and road trip bases in ${name}, each with airports, rentals and a day-by-day plan.`}

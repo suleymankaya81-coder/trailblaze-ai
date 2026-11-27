@@ -9,6 +9,7 @@ export const FR_PHRASES: Record<string, string> = {
 };
 
 export const FR_PATTERNS: [RegExp, string][] = [
+  [new RegExp("^All (\\d+) guides A–Z$", ""), "Les $1 guides de A à Z"],
   [new RegExp("^Places near (.+)$", ""), "Lieux à proximité : $1"],
   [new RegExp("^(\\d+) km away$", ""), "à $1 km"],
   [new RegExp("^All places in (.+)$", ""), "Toutes les destinations : $1"],

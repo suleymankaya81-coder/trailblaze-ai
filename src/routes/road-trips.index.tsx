@@ -1,6 +1,7 @@
 import { hreflangLinks } from "@/lib/seo/hreflang";
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@/components/site/LocalLink";
+import { T, useLocale } from "@/lib/i18n";
 import { getDestinationCovers } from "@/lib/data/destinations.functions";
 import { ArrowUpRight } from "lucide-react";
 import { PlaceCard, SectionHead } from "@/components/ui-kit";
@@ -11,6 +12,8 @@ import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { PageHero } from "@/components/site/PageHero";
 import { LOOPS } from "@/lib/seo/guides";
+import { CORRIDORS } from "@/lib/seo/corridors";
+import { routesLead } from "@/lib/seo/hubSummary";
 import { SITE } from "@/lib/seo/flyDrive";
 import { HUB_SEO } from "@/lib/seo/hubSeo";
 import { HOME, ROAD_TRIPS, breadcrumbScript } from "@/lib/seo/breadcrumbs";
@@ -39,6 +42,8 @@ export const Route = createFileRoute("/road-trips/")({
 
 function Page() {
   const covers = Route.useLoaderData();
+  const locale = useLocale();
+  const lang = locale === "de" ? "de" : "en";
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -49,6 +54,8 @@ function Page() {
         </nav>
       </PageHero>
       <main className="container-page py-10 md:py-14">
+        {/* Answer first: what this hub contains, from the reviewed loop and corridor data. */}
+        <p id="answer" className="mb-8 max-w-3xl text-lg leading-relaxed text-foreground">{[...routesLead("loops", LOOPS, lang), ...routesLead("corridors", CORRIDORS.filter((c) => !c.pilot), lang)].join(" ")}</p>
         <Link to="/corridors" className="group grid overflow-hidden rounded-xl border border-border bg-card transition hover:shadow-soft md:grid-cols-[2fr_3fr]">
           <img src={flightImg} alt="" loading="lazy" className="aspect-[16/10] h-full w-full object-cover md:aspect-auto" />
           <div className="p-6 md:p-10">

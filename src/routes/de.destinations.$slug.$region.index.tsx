@@ -4,7 +4,8 @@ import type { Locale } from "@/lib/i18n/locales";
 import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 import { SITE_ORIGIN } from "@/config/site";
 import { GeoDirectory } from "@/components/destination/GeoDirectory";
-import { getRegionPlaces, type GeoPlace } from "@/lib/data/geo.functions";
+import { hubFacts, hubLead, type HubStats } from "@/lib/seo/hubSummary";
+import { getRegionPlaces, type GeoPlace, getHubStats } from "@/lib/data/geo.functions";
 import { getTranslatedDestinationSlugs } from "@/lib/data/geo.de.functions";
 import { COUNTRIES, destinationPath, isCountry, regionPath } from "@/lib/routes/paths";
 import { breadcrumbScript } from "@/lib/seo/breadcrumbs";
@@ -13,7 +14,7 @@ import { hreflangLinks } from "@/lib/seo/hreflang";
 
 // /de/destinations/{country}/{region}: German state directory (only places with a published German page).
 export const Route = createFileRoute("/de/destinations/$slug/$region/")({
-  loader: async ({ params }): Promise<{ country: string; region: string; name: string; places: GeoPlace[]; locales: Locale[] }> => {
+  loader: async ({ params }): Promise<{ country: string; region: string; name: string; places: GeoPlace[]; locales: Locale[]; hub: { stats: HubStats; intro: string | null } }> => {
     if (!isCountry(params.slug)) throw notFound();
     const [data, translated] = await Promise.all([
       getRegionPlaces({ data: { country: params.slug, region: params.region } }),
@@ -22,7 +23,8 @@ export const Route = createFileRoute("/de/destinations/$slug/$region/")({
     if (!data) throw notFound();
     const places = data.places.filter((p) => translated.includes(p.slug));
     if (!places.length) throw redirect({ href: regionPath(params.slug, params.region), statusCode: 302 });
-    return { country: params.slug, region: params.region, name: data.name, places, locales: await directoryLocales(data.places.map((p) => p.slug)) };
+    const hub = await getHubStats({ data: { country: params.slug, region: params.region, locale: "de" } });
+    return { country: params.slug, region: params.region, name: data.name, places, locales: await directoryLocales(data.places.map((p) => p.slug)), hub };
   },
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Nicht verfügbar — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
@@ -42,9 +44,12 @@ export const Route = createFileRoute("/de/destinations/$slug/$region/")({
 });
 
 function Page() {
-  const { country, region, name, places } = Route.useLoaderData();
+  const { country, region, name, places , hub } = Route.useLoaderData();
   return (
     <GeoDirectory
+      lead={hubLead(name, hub.stats, "de", hub.intro)}
+      facts={hubFacts(hub.stats, "de")}
+      factsHeading="Auf einen Blick"
       kicker={COUNTRIES[country].nameDe}
       title={`Reiseziele in ${name}`}
       intro={`Nationalparks, Outdoor-Regionen und Roadtrip-Ausgangspunkte in ${name} – jeweils mit Flughafen, Mietwagen und Tagesplan.`}

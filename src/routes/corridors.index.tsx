@@ -9,6 +9,8 @@ import flightImg from "@/assets/thumbs/flight.jpg";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { PageHero } from "@/components/site/PageHero";
+import { T, useLocale } from "@/lib/i18n";
+import { routesLead } from "@/lib/seo/hubSummary";
 import { getDestinationCovers } from "@/lib/data/destinations.functions";
 import { CORRIDORS, CORRIDOR_AREAS, corridorArea } from "@/lib/seo/corridors";
 import { HUB_SEO } from "@/lib/seo/hubSeo";
@@ -41,6 +43,8 @@ export const Route = createFileRoute("/corridors/")({
 
 export function Page(): React.ReactElement {
   const list = CORRIDORS.filter((c) => !c.pilot);
+  const locale = useLocale();
+  const lang = locale === "de" ? "de" : "en";
   const covers = (useLoaderData({ strict: false }) as Awaited<ReturnType<typeof loadPage>>);
   const coverFor = (stops: string[]) => { const s = stops.slice(1).find((x) => covers[x]) ?? stops.find((x) => covers[x]); return s ? covers[s] : undefined; };
   return (
@@ -56,6 +60,7 @@ export function Page(): React.ReactElement {
         </div>
       </PageHero>
       <main className="container-page py-6 md:py-10">
+        <p id="answer" className="mt-4 max-w-3xl text-lg leading-relaxed text-foreground">{routesLead("corridors", list, lang).join(" ")}</p>
         {CORRIDOR_AREAS.map((area) => (
           <section key={area} id={area.toLowerCase().replace(/[^a-z]+/g, "-")} className="mt-12 scroll-mt-28">
             <h2 className="text-[26px] leading-tight text-foreground md:text-3xl">{area}</h2>
