@@ -57,14 +57,12 @@ import { VehicleChooser, VEHICLE_PILOT_SLUGS, type VehiclePick } from "@/compone
 import { ClientOnly } from "@tanstack/react-router";
 import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { JumpBar, TripRadar, formatDrive } from "@/components/destination/TripRadar";
-import routes from "@/data/routes.json";
 import { TravelFlow, LocalIntel } from "@/components/destination/TravelFlow";
 import { TopShowcase } from "@/components/destination/TopShowcase";
 import { DestinationAnswers } from "@/components/destination/DestinationAnswers";
 import { NearbyPlaces } from "@/components/destination/NearbyPlaces";
 
 const RoadTripMap = lazy(() => import("@/components/destination/RoadTripMap"));
-const ROUTES = routes as unknown as Record<string, [number, number][]>;
 
 import { Footer } from "@/components/site/Footer";
 import { Header } from "@/components/site/Header";
@@ -731,7 +729,7 @@ function ServiceRow({ service, destinationSlug }: { service: OfferView; destinat
 /* =========================================================
    7 — ROAD TRIP
    Free stack: OpenFreeMap tiles + routes precomputed once with OSRM
-   (src/data/routes.json). Visitors never trigger a paid map API.
+   (src/data/routes.json, served per page by the loader). Visitors never trigger a paid map API.
 ========================================================= */
 function RoadTrip({ dest }: { dest: DestinationView }) {
   const nonRoad = isNonRoadDestination(dest.slug, dest.accessType);
@@ -740,7 +738,8 @@ function RoadTrip({ dest }: { dest: DestinationView }) {
     dest.lat != null && dest.lng != null && dest.airportLat != null && dest.airportLng != null;
   const from: [number, number] | null = dest.airportLng != null && dest.airportLat != null ? [dest.airportLng, dest.airportLat] : null;
   const to: [number, number] | null = dest.lng != null && dest.lat != null ? [dest.lng, dest.lat] : null;
-  const route = nonRoad ? null : ROUTES[dest.slug] ?? null;
+  // Only this place's route arrives with the page data (getDestinationPageData), not the whole routes.json.
+  const route = nonRoad ? null : dest.route ?? null;
   const directions = hasGeo && !nonRoad
     ? `https://www.google.com/maps/dir/?api=1&origin=${dest.airportLat},${dest.airportLng}&destination=${dest.lat},${dest.lng}&travelmode=driving`
     : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(dest.name)}`;

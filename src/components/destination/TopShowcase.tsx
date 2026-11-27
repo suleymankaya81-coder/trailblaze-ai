@@ -103,7 +103,7 @@ function TourShowcase({ slug, name, country }: { slug: string; name: string; cou
           <Button asChild variant="outline" className="min-h-12"><a href={viatorPlaceSearchUrl(name, country)} target="_blank" rel="sponsored nofollow noopener noreferrer"><T>Search on Viator</T><ArrowUpRight /></a></Button>
         </div>
       ) : null}
-      <iframe ref={frame} src={`/experiences/place/${slug}?limit=1`} title={`Top Viator tour near ${name}`} style={{ height: height ?? 420 }} className={empty ? "hidden" : "mt-4 w-full border-0 bg-background"} onError={() => setStatus("error")} />
+      <iframe ref={frame} src={`/experiences/place/${slug}?limit=1`} title={`Top Viator tour near ${name}`} loading="lazy" style={{ height: height ?? 420 }} className={empty ? "hidden" : "mt-4 w-full border-0 bg-background"} onError={() => setStatus("error")} />
     </div>
   );
 }

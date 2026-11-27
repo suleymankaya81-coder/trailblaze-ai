@@ -18,6 +18,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { initAnalytics, trackPageView } from "../lib/analytics";
 import { getAnalyticsMeasurementId } from "../lib/analytics.functions";
 import { localeFromPath } from "../lib/i18n/locales";
+import { loadWhenNear, OUTBOUND_LINKS } from "@/lib/lazyScript";
 
 function NotFoundComponent() {
   return (
@@ -133,15 +134,17 @@ function RootComponent() {
   const router = useRouter();
 
   useEffect(() => {
-    // The affiliate script rewrites links; start it only after React hydrates.
-    if (!document.querySelector('script[data-minialife-travelpayouts]')) {
+    // The affiliate script rewrites links; start it only after React hydrates, and only once an outbound
+    // link comes near the viewport (or on the first scroll/tap), so it never delays the first render.
+    const stopTravelpayouts = loadWhenNear(OUTBOUND_LINKS, () => {
+      if (document.querySelector('script[data-minialife-travelpayouts]')) return;
       const script = document.createElement('script');
       script.src = 'https://tp-em.com/NTgyMTU3.js?t=582157';
       script.async = true;
       script.setAttribute('data-cmp-ab', '2');
       script.setAttribute('data-minialife-travelpayouts', 'true');
       document.body.appendChild(script);
-    }
+    });
     let active = true;
     void getAnalyticsMeasurementId().then((measurementId) => {
       if (active && measurementId) initAnalytics(measurementId);
@@ -154,6 +157,7 @@ function RootComponent() {
     return () => {
       active = false;
       unsubscribe();
+      stopTravelpayouts();
     };
   }, [router]);
 

@@ -13,6 +13,9 @@ import { toCurrentOrigin } from "@/lib/seo/originUrl";
 import { genuineSeason } from "@/lib/seo/season";
 import { cleanTravelPlan, knownFactsOnly, knownHeadline } from "@/lib/seo/unknownFacts";
 import { nearbyPlaces } from "./nearby";
+import routesData from "@/data/routes.json";
+
+const ROUTES = routesData as unknown as Record<string, [number, number][]>;
 
 export type OfferView = {
   id: string;
@@ -67,6 +70,9 @@ export type DestinationView = {
   permitNote: string | null;
   permitSourceUrl: string | null;
   travelPlan: TravelPlan | null;
+  /** This place's stored airport→place route line (src/data/routes.json), loaded server-side so the
+   *  browser never downloads every place's route. Null for boat/fly-in places. */
+  route: [number, number][] | null;
   airportCode: string | null;
   countryCode: string;
   accessType?: string;
@@ -212,6 +218,7 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       permitNote: knownFactsOnly(dest.permit_note),
       permitSourceUrl: dest.permit_source_url,
       travelPlan: cleanTravelPlan(parseTravelPlan(dest.travel_plan)),
+      route: nonRoad ? null : ROUTES[dest.slug] ?? null,
       airportCode: dest.nearest_airport_code,
       countryCode: dest.country_code ?? "us",
       accessType: dest.access_type ?? "road",

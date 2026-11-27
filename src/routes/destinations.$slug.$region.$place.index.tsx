@@ -64,12 +64,10 @@ import { VehicleChooser, VEHICLE_PILOT_SLUGS, type VehiclePick } from "@/compone
 import { ClientOnly } from "@tanstack/react-router";
 import { BookingStepsStrip } from "@/components/guides/BookingStepsStrip";
 import { JumpBar, TripRadar, formatDrive } from "@/components/destination/TripRadar";
-import routes from "@/data/routes.json";
 import { TravelFlow, LocalIntel } from "@/components/destination/TravelFlow";
 import { DestinationAnswers } from "@/components/destination/DestinationAnswers";
 
 const RoadTripMap = lazy(() => import("@/components/destination/RoadTripMap"));
-const ROUTES = routes as unknown as Record<string, [number, number][]>;
 
 import { Footer } from "@/components/site/Footer";
 import { Header } from "@/components/site/Header";

@@ -32,7 +32,8 @@
 
 - Partner-card photo credits use the shared PhotoCredit (©) component and button text comes from offerCtaLabel. Why: credits stay compact and CTAs consistent across card types.
 - Travel templates use TripSnapshot/TripQuickNav and shared section anchors; repeated card rows use travel-card-row on phones and grids on larger screens. Why: consistent navigation and card ergonomics without runtime content generation.
-- Load the Travelpayouts rewriting script only after hydration and place photo-credit links outside clickable card anchors. Why: prevent pre-hydration DOM mutations and invalid nested anchors.
+- Load the Travelpayouts rewriting script only after hydration and, via `src/lib/lazyScript.ts`, when an outbound link nears the viewport or on first interaction; third-party frames/widgets (Viator, GetYourGuide) load lazily; place photo-credit links outside clickable card anchors. Why: prevent pre-hydration DOM mutations, invalid nested anchors and third-party JS on first paint.
+- Large static tables (`src/data/routes.json`, `nearby.json`) are imported only by server functions; pages receive only their own route/nearby rows. Why: whole-catalog JSON in client bundles.
 - Shared card templates live in src/components/ui-kit (CategoryTile, PlaceCard, EditorialCard, SplitBand, SwipeRow, Thumb); new pages reuse them instead of adding new card styles. Why: one card system.
 - Guide heroes, reservation notes and FAQs share GuideSections; provider tour frames report their own height and verify message origin/source. Why: guide families stay consistent and mobile listings are not clipped.
 - Remote images in shared cards use SafeImage without substituting unrelated photographs; Viator display validation lives in viatorDisplay. Why: failed media and invalid provider values must not create misleading content.
