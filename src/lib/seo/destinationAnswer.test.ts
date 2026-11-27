@@ -57,7 +57,7 @@ const NO_SEASON = [
 
 describe("stored 'no verified season' text never becomes a season", () => {
   it("recognises real seasons and month ranges only", () => {
-    for (const s of ["Late June – September", "March – May, September – November", "summer", "Spring and Summer", "Year-round", "Spring through Fall", "June – early October", "Juni – September", "Printemps et automne"]) expect(isSeasonText(s)).toBe(true);
+    for (const s of ["Late June – September", "March – May, September – November", "summer", "Spring and Summer", "Year-round", "Spring through Fall", "June – early October", "Juni – September", "Printemps et automne", "Été et automne", "März – Oktober", "Août"]) expect(isSeasonText(s)).toBe(true);
     for (const s of NO_SEASON) expect(isSeasonText(s)).toBe(false);
   });
   it("Australia: Berowra Valley keeps the tagline, suggested days and airport, without the placeholder", () => {

@@ -77,7 +77,7 @@ export function Page(): React.ReactElement {
   const camps = dest.stays.filter((o) => o.partner && CAMP_PARTNERS.has(o.partner) && o.externalUrl).slice(0, 3);
   const rentals = dest.rentals.filter((o) => o.partner === "motorhome_republic" && o.externalUrl).slice(0, 3);
   const plan = dest.travelPlan;
-  const roadTips = plan?.intel.filter((t) => t.kind === "fuel" || t.kind === "signal" || t.kind === "parking") ?? [];
+  const roadTips = plan?.intel.filter((t) => t.text && (t.kind === "fuel" || t.kind === "signal" || t.kind === "parking")) ?? [];
   const note = reservationNote(dest);
   const reviewed = getDestinationAnswers(dest.slug)?.reservation;
   return (
@@ -98,13 +98,13 @@ export function Page(): React.ReactElement {
         <div id="trip-plan" />
         <section className="container-page py-6"><RouteCard dest={dest} /></section>
 
-        {plan && (
+        {plan && (plan.vehicle || roadTips.length > 0) && (
           <GuideSection title="Vehicle & road notes">
             <div className="grid gap-4 md:grid-cols-3">
-              <div className="border-l-2 border-primary bg-sand/40 p-6 md:col-span-3 md:p-8">
+              {plan.vehicle && <div className="border-l-2 border-primary bg-sand/40 p-6 md:col-span-3 md:p-8">
                 <p className="flex items-center gap-2 text-xs uppercase tracking-wider text-muted-foreground"><Thumb src={carImg} size={40} /> Which vehicle</p>
                 <p className="mt-2 text-sm leading-relaxed text-foreground/85"><T>{plan.vehicle}</T></p>
-              </div>
+              </div>}
               {roadTips.map((t) => (
                 <div key={t.kind} className="rounded-lg border border-border bg-card p-6">
                   <p className="text-xs uppercase tracking-wider text-muted-foreground"><T>{t.kind}</T></p>

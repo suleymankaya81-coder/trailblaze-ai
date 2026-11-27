@@ -70,7 +70,7 @@ export const Route = createFileRoute("/no-reservation/$slug")({
 export function Page(): React.ReactElement {
   const { dest, alts, faqs, landingLinks } = (useLoaderData({ strict: false }) as Awaited<ReturnType<typeof loadPage>>);
   const reviewed = getDestinationAnswers(dest.slug)?.reservation;
-  const tips = dest.travelPlan?.intel.filter((t) => t.kind === "timing" || t.kind === "access" || t.kind === "parking") ?? [];
+  const tips = dest.travelPlan?.intel.filter((t) => t.text && (t.kind === "timing" || t.kind === "access" || t.kind === "parking")) ?? [];
   return (
     <div className="min-h-screen bg-background">
       <Header />

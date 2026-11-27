@@ -5,6 +5,7 @@ import { supabase } from "@/integrations/supabase/client";
 import type { LoopStop } from "@/lib/seo/guides";
 import { toCurrentOrigin } from "@/lib/seo/originUrl";
 import { genuineSeason } from "@/lib/seo/season";
+import { knownHeadline } from "@/lib/seo/unknownFacts";
 
 const slugs = z.object({ slugs: z.array(z.string().regex(/^[a-z0-9-]+$/)).min(1).max(12) });
 
@@ -42,7 +43,7 @@ export const getLoopStops = createServerFn({ method: "GET" })
       if (!r || r.lat == null || r.lng == null) return [];
       return [{
         slug: r.slug, name: r.name, lat: r.lat, lng: r.lng, heroImage: toCurrentOrigin(r.hero_image) ?? "",
-        tripDurationDays: r.trip_duration_days, permitLevel: (r.permit_level as LoopStop["permitLevel"]) ?? null, permitHeadline: r.permit_headline,
+        tripDurationDays: r.trip_duration_days, permitLevel: (r.permit_level as LoopStop["permitLevel"]) ?? null, permitHeadline: knownHeadline(r.permit_headline),
         bestSeason: genuineSeason(r.best_season), region: r.region,
         airportCode: r.nearest_airport_code ?? null, airportName: r.nearest_airport_name ?? null,
       }];

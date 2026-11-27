@@ -1,13 +1,14 @@
 // One rule for every place a stored best season can surface (pages, titles, meta, JSON-LD, FAQs, pins).
 // Month and season words in the stored languages (English data; German and French translations).
+// \b is ASCII-only in JavaScript; \p{L} lookarounds also work for März, été, août, …
 const SEASON_WORD = new RegExp(
-  "\\b(" + [
+  "(?<!\\p{L})(" + [
     "january|february|march|april|may|june|july|august|september|october|november|december",
     "jan|feb|mar|apr|jun|jul|aug|sep|sept|oct|nov|dec",
     "spring|summer|autumn|fall|winter|year-round|year round|all year",
     "januar|februar|märz|mai|juni|juli|oktober|dezember|frühling|frühjahr|sommer|herbst|ganzjährig",
     "janvier|février|mars|avril|juin|juillet|août|septembre|octobre|novembre|décembre|printemps|été|automne|hiver|toute l'année",
-  ].join("|") + ")\\b",
+  ].join("|") + ")(?!\\p{L})",
   "iu",
 );
 // Stored "unknown" statements: "No verified visitor-season recommendation is available for X; consult…",

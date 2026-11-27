@@ -2,6 +2,7 @@ import type { DestinationView } from "@/lib/data/destinations.functions";
 import type { DestinationTranslation } from "@/lib/data/translations.functions";
 import type { TravelPlan } from "@/lib/data/travelPlan";
 import { genuineSeason } from "@/lib/seo/season";
+import { cleanTravelPlan, knownFactsOnly, knownHeadline } from "@/lib/seo/unknownFacts";
 
 /** Translations may replace prose, never navigation, coordinates or source identities. */
 export function translatePlan(plan: TravelPlan | null, tr: DestinationTranslation): TravelPlan | null {
@@ -23,7 +24,8 @@ export function translatePlan(plan: TravelPlan | null, tr: DestinationTranslatio
 
 /** Overlay stored translated text onto the full English page data; layout, photos and partners stay identical. */
 export function translateDest(dest: DestinationView, tr: DestinationTranslation): DestinationView {
-  const travelPlan = translatePlan(dest.travelPlan, tr);
+  // Translations of unknown-fact wording are cleaned the same way as the English text.
+  const travelPlan = cleanTravelPlan(translatePlan(dest.travelPlan, tr));
   return {
     ...dest,
     name: tr.name || dest.name,
@@ -31,8 +33,8 @@ export function translateDest(dest: DestinationView, tr: DestinationTranslation)
     tagline: tr.tagline ?? dest.tagline,
     // A stored translation of "no verified season" is not a season either: omit it.
     bestSeason: tr.bestSeason != null ? genuineSeason(tr.bestSeason) : genuineSeason(dest.bestSeason),
-    permitHeadline: tr.permitHeadline ?? dest.permitHeadline,
-    permitNote: tr.permitNote ?? dest.permitNote,
+    permitHeadline: tr.permitHeadline != null ? knownHeadline(tr.permitHeadline) : dest.permitHeadline,
+    permitNote: tr.permitNote != null ? knownFactsOnly(tr.permitNote) : dest.permitNote,
     travelPlan,
   } as DestinationView;
 }

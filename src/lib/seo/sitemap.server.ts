@@ -8,6 +8,7 @@ import { landingCoverAssets } from "@/lib/data/landingCoverAssets";
 import { toAbsoluteImageUrl } from "./imageCredit";
 import { flyDriveSlug } from "./flyDrive";
 import { LOOPS, isNoReservationEligible, isRvEligible } from "./guides";
+import { knownFactsOnly, knownHeadline } from "./unknownFacts";
 
 const STATIC_PATHS = ["/", "/destinations", "/about", "/contact", "/privacy", "/terms", "/affiliate-disclosure", "/road-trips", "/corridors", "/trip-guides", "/fly-and-drive", "/rv-camping", "/no-reservation", ...CORRIDORS.filter((c) => !c.pilot).map((c) => `/corridors/${c.slug}`), "/gear", "/gear/7-bikepacking-essentials", "/gear/best-cycling-accessories", "/gear/bike-repair-kit-essentials", ...["camping", "hiking", "cycling", "lights", "apparel", "eyewear", "bags"].map((k) => `/gear/category/${k}`)];
 const BASE_URL = SITE_ORIGIN;
@@ -252,7 +253,7 @@ export async function buildChildSitemap(name: string): Promise<Response | null> 
       const ok = name === "no-reservation" ? isNoReservationEligible : isRvEligible;
       return urlset(
         rows
-          .filter((d) => ok({ slug: d.slug, name: d.name, airportCode: d.nearest_airport_code, airportName: d.nearest_airport_name, driveMinutes: d.drive_minutes, permitLevel: d.permit_level, permitNote: d.permit_note, permitHeadline: d.permit_headline, campingScore: d.camping_score, bestSeason: d.best_season, accessType: d.access_type }))
+          .filter((d) => ok({ slug: d.slug, name: d.name, airportCode: d.nearest_airport_code, airportName: d.nearest_airport_name, driveMinutes: d.drive_minutes, permitLevel: d.permit_level, permitNote: knownFactsOnly(d.permit_note), permitHeadline: knownHeadline(d.permit_headline), campingScore: d.camping_score, bestSeason: d.best_season, accessType: d.access_type }))
           .map((d) => ({ loc: `${BASE_URL}/${name}/${d.slug}`, images: uniqueImages([d.hero_image]) })),
       );
     }

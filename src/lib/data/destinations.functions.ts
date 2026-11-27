@@ -11,6 +11,7 @@ import { isNonRoadDestination, isOfferEligibleForPlace } from "./destinationAcce
 import { cadToUsd } from "./canadaPricing";
 import { toCurrentOrigin } from "@/lib/seo/originUrl";
 import { genuineSeason } from "@/lib/seo/season";
+import { cleanTravelPlan, knownFactsOnly, knownHeadline } from "@/lib/seo/unknownFacts";
 
 export type OfferView = {
   id: string;
@@ -200,10 +201,11 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       tripDurationDays: dest.trip_duration_days,
       id: dest.id,
       permitLevel: dest.permit_level,
-      permitHeadline: dest.permit_headline,
-      permitNote: dest.permit_note,
+      // Unknown-fact wording ("Check visitor access before departure", "…do not establish…") is omitted.
+      permitHeadline: knownHeadline(dest.permit_headline),
+      permitNote: knownFactsOnly(dest.permit_note),
       permitSourceUrl: dest.permit_source_url,
-      travelPlan: parseTravelPlan(dest.travel_plan),
+      travelPlan: cleanTravelPlan(parseTravelPlan(dest.travel_plan)),
       airportCode: dest.nearest_airport_code,
       countryCode: dest.country_code ?? "us",
       accessType: dest.access_type ?? "road",
