@@ -3,6 +3,7 @@ import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
 import { collectPages } from "./pagination";
 import { toCurrentOrigin } from "@/lib/seo/originUrl";
+import { genuineSeason } from "@/lib/seo/season";
 
 export type DestinationTranslation = {
   name: string; region?: string | null; tagline?: string | null; bestSeason?: string | null;
@@ -61,7 +62,7 @@ export const listTranslatedDestinations = createServerFn({ method: "GET" })
       .filter((r) => hero[r.entity_id] !== undefined)
       .map((r) => {
         const f = r.fields as DestinationTranslation;
-        return { slug: r.entity_id, name: f.name, tagline: f.tagline ?? null, heroImage: hero[r.entity_id], bestSeason: f.bestSeason ?? null };
+        return { slug: r.entity_id, name: f.name, tagline: f.tagline ?? null, heroImage: hero[r.entity_id], bestSeason: genuineSeason(f.bestSeason) };
       })
       .sort((a, b) => a.name.localeCompare(b.name, data.locale));
   });

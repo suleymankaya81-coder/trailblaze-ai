@@ -21,6 +21,7 @@ import { HUB_SEO } from "@/lib/seo/hubSeo";
 import { Button } from "@/components/ui/button";
 import { COUNTRY_DIRECTORY, CONTINENTS, countryFlag, countryLabel } from "@/lib/data/countryDirectory";
 import { countryPath } from "@/lib/routes/paths";
+import { genuineSeason } from "@/lib/seo/season";
 
 const SearchSchema = z.object({
   country: z.string().regex(/^[a-z]{2}$/).optional(),
@@ -156,7 +157,7 @@ function DestinationsIndexPage() {
             <div className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {destinations.map((d) => (
                 <PlaceCard key={d.slug} to="/destinations/$slug" params={{ slug: d.slug }} image={d.heroImage} alt={d.name} title={d.name}
-                  badges={[d.bestSeason ? `Best: ${d.bestSeason}` : "", d.tripDurationDays ?? ""].filter(Boolean)} info={`${countryFlag(d.countryCode)} ${[d.region, countryLabel(d.countryCode)].filter(Boolean).join(", ")}`.trim()} />
+                  badges={[genuineSeason(d.bestSeason) ? `Best: ${genuineSeason(d.bestSeason)}` : "", d.tripDurationDays ?? ""].filter(Boolean)} info={`${countryFlag(d.countryCode)} ${[d.region, countryLabel(d.countryCode)].filter(Boolean).join(", ")}`.trim()} />
               ))}
             </div>
 

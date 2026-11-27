@@ -34,6 +34,7 @@ import {
   getHomepageDestinations,
   type HomepageDestination,
 } from "@/lib/data/destinations.functions";
+import { genuineSeason } from "@/lib/seo/season";
 
 export const Route = createFileRoute("/")({
   loader: async (): Promise<{ homeDestinations: HomepageDestination[] }> => ({
@@ -113,7 +114,7 @@ export function HomePageView({ homeDestinations, localSlugs }: { homeDestination
               {featured.map((d, i) => (
                 <div key={d.slug} className={i === 0 ? "md:col-span-2 md:row-span-2" : ""}>
                   <PlaceCard to={localSlugs?.has(d.slug) ? `/${locale}/destinations/$slug` as "/de/destinations/$slug" : "/destinations/$slug"} params={{ slug: d.slug }} image={d.heroImage} alt={d.name} large={i === 0}
-                    badges={[d.bestSeason ? tp(`Best: ${d.bestSeason}`) : null, d.tripDurationDays].filter((x): x is string => !!x)}
+                    badges={[genuineSeason(d.bestSeason) ? tp(`Best: ${genuineSeason(d.bestSeason)}`) : null, d.tripDurationDays].filter((x): x is string => !!x)}
                     title={d.name} info={`${countryFlag(d.countryCode)} ${[d.region, countryLabel(d.countryCode, locale)].filter(Boolean).join(", ")}`.trim()} action="See the plan" />
                 </div>
               ))}
@@ -216,7 +217,7 @@ export function DestinationCard({
   aspect: string;
   titleClass: string;
 }) {
-  const meta = [d.tripDurationDays, d.bestSeason]
+  const meta = [d.tripDurationDays, genuineSeason(d.bestSeason)]
     .filter((v): v is string => Boolean(v))
     .join(" · ");
 

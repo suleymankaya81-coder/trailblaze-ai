@@ -1,4 +1,5 @@
 import { directoryLocales } from "@/lib/i18n/geoLocales";
+import { genuineSeason } from "@/lib/seo/season";
 import type { Locale } from "@/lib/i18n/locales";
 import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 import { SITE_ORIGIN } from "@/config/site";
@@ -52,7 +53,7 @@ function Page() {
       heading="Destinations"
       action="Voir l'itinéraire"
       image={places.find((p) => p.heroImage)?.heroImage}
-      items={places.map((p) => ({ to: destinationPath(p.slug, "fr"), title: p.name, image: p.heroImage, summary: p.tagline, info: p.bestSeason }))}
+      items={places.map((p) => ({ to: destinationPath(p.slug, "fr"), title: p.name, image: p.heroImage, summary: p.tagline, info: genuineSeason(p.bestSeason) }))}
     />
   );
 }

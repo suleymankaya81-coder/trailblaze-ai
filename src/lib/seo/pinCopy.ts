@@ -1,5 +1,6 @@
 // Pure Pinterest pin copy: titles, descriptions and hashtags built from
 // reviewed page data. No AI, no photo credits (credit lives on the image).
+import { genuineSeason } from "./season";
 export type PinKind = "destination" | "best_time" | "things_to_do" | "glamping" | "trip_planner";
 
 export type PinInput = {
@@ -106,7 +107,8 @@ export function pinTags(p: PinInput): string[] {
 export function pinDescription(p: PinInput): string {
   const source = p.kind === "destination" ? [...sentences(p.tagline), ...sentences(p.seoDescription)] : [...sentences(p.seoDescription), ...sentences(p.tagline)];
   const facts: string[] = [];
-  if (p.bestSeason && p.kind !== "glamping") facts.push(`Best time: ${clean(p.bestSeason)}.`);
+  const season = genuineSeason(p.bestSeason);
+  if (season && p.kind !== "glamping") facts.push(`Best time: ${clean(season)}.`);
   if (p.duration && p.kind === "destination") facts.push(`Plan ${clean(p.duration)}.`);
   if (p.airport && p.kind !== "best_time") facts.push(`Nearest airport: ${p.airport}.`);
   const tags = pinTags(p).join(" ");

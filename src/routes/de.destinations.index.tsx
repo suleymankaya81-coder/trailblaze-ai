@@ -1,4 +1,5 @@
 import { SITE_ORIGIN } from "@/config/site";
+import { genuineSeason } from "@/lib/seo/season";
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@/components/site/LocalLink";
 import { Header } from "@/components/site/Header";
@@ -39,7 +40,7 @@ function Page() {
       <main className="container-page py-10 md:py-14">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {places.map((p) => (
-            <PlaceCard key={p.slug} to="/de/destinations/$slug" params={{ slug: p.slug }} image={p.heroImage} alt={p.name} title={p.name} summary={p.tagline} info={p.bestSeason} action={t("de", "dest.seePlan")} />
+            <PlaceCard key={p.slug} to="/de/destinations/$slug" params={{ slug: p.slug }} image={p.heroImage} alt={p.name} title={p.name} summary={p.tagline} info={genuineSeason(p.bestSeason) ?? undefined} action={t("de", "dest.seePlan")} />
           ))}
         </div>
         <p className="mt-10 text-sm">

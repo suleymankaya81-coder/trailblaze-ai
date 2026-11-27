@@ -1,5 +1,6 @@
 import { DESCRIPTION_MAX, TITLE_MAX, fitText } from "./routeSeo";
 import { tp } from "@/lib/i18n";
+import { genuineSeason } from "./season";
 
 export type TravelFacts = { name: string; region?: string | null; destinationType?: string | null; tripDurationDays?: string | null; bestSeason?: string | null; campingScore?: number | null; airportCode?: string | null };
 type Family = "destination" | "fly-and-drive" | "no-reservation" | "rv-camping" | "road-trips" | "corridors";
@@ -14,7 +15,8 @@ export function travelDescription(facts: TravelFacts, family: Family, fallback: 
   const type = facts.destinationType ? (de ? typeNamesDe : typeNames)[facts.destinationType] : null;
   const location = [facts.region && (de ? tp("de", facts.region) : facts.region), type].filter(Boolean).join(" · ");
   const days = facts.tripDurationDays ? (de ? tp("de", facts.tripDurationDays) : facts.tripDurationDays) : null;
-  const season = facts.bestSeason ? (de ? seasonDe(facts.bestSeason) : facts.bestSeason) : null;
+  const stored = genuineSeason(facts.bestSeason);
+  const season = stored ? (de ? seasonDe(stored) : stored) : null;
   const topic = de ? { destination: "Reiseplan, Karte & Camping", "fly-and-drive": "Flüge, Mietwagen & erste Nacht", "no-reservation": "Einlassregeln & Alternativen", "rv-camping": "Wohnmobil, Campingplätze & Route", "road-trips": "Roadtrip, Karte & Camping", corridors: "Flughafen-Roadtrip & Camping" }[family]
     : { destination: "Travel plan, map & camping", "fly-and-drive": "Flights, car & first night", "no-reservation": "Entry rules & backup plans", "rv-camping": "RV parks, campgrounds & route", "road-trips": "Road trip, map & camping", corridors: "Airport road trip & camping" }[family];
   const arrival = family === "fly-and-drive" && facts.airportCode ? `${facts.airportCode}: ${topic}` : topic;

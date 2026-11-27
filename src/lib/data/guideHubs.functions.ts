@@ -5,6 +5,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { flyDriveSlug } from "@/lib/seo/flyDrive";
 import { isNoReservationEligible, isRvEligible, type GuideDest } from "@/lib/seo/guides";
 import { toCurrentOrigin } from "@/lib/seo/originUrl";
+import { genuineSeason } from "@/lib/seo/season";
 
 export type HubFamily = "fly-and-drive" | "no-reservation" | "rv-camping";
 export type HubEntry = { slug: string; name: string; state: string; heroImage: string; airportCode: string | null; driveMinutes: number | null; countryCode: string };
@@ -27,7 +28,7 @@ export const getHubEntries = createServerFn({ method: "GET" })
     }
     const out: HubEntry[] = [];
     for (const d of rows) {
-      const g: GuideDest = { slug: d.slug, name: d.name, airportCode: d.nearest_airport_code, airportName: d.nearest_airport_name, driveMinutes: d.drive_minutes, permitLevel: d.permit_level, permitNote: d.permit_note, permitHeadline: d.permit_headline, campingScore: d.camping_score, bestSeason: d.best_season };
+      const g: GuideDest = { slug: d.slug, name: d.name, airportCode: d.nearest_airport_code, airportName: d.nearest_airport_name, driveMinutes: d.drive_minutes, permitLevel: d.permit_level, permitNote: d.permit_note, permitHeadline: d.permit_headline, campingScore: d.camping_score, bestSeason: genuineSeason(d.best_season) };
       let slug: string | null = d.slug;
       if (data.family === "fly-and-drive") slug = flyDriveSlug({ ...g, driveMiles: d.drive_miles });
       else if (data.family === "no-reservation" && !isNoReservationEligible(g)) slug = null;

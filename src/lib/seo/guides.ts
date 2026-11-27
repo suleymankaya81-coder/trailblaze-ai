@@ -8,6 +8,7 @@ import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 import { SITE, formatDriveShort, type Faq } from "@/lib/seo/flyDrive";
 import { isNonRoadDestination } from "@/lib/data/destinationAccess";
 import { ORGANIZATION_REF } from "@/lib/seo/siteJsonLd";
+import { genuineSeason } from "./season";
 
 export type GuideDest = {
   slug: string;
@@ -63,8 +64,9 @@ export function noReservationFaqs(d: GuideDest): Faq[] {
 export function destinationFaqs(d: GuideDest & { tagline?: string | null; tripDurationDays?: string | null; avgDailyBudget?: number | null }): Faq[] {
   const faqs: Faq[] = [];
   const reviewed = getDestinationAnswers(d.slug)?.answers ?? [];
-  if (d.bestSeason)
-    faqs.push({ q: `When is the best time to visit ${d.name}?`, a: `The best window is typically ${d.bestSeason}. Outside that window weather and seasonal closures can limit what is open, so check current conditions before booking.` });
+  const season = genuineSeason(d.bestSeason);
+  if (season)
+    faqs.push({ q: `When is the best time to visit ${d.name}?`, a: `The best window is typically ${season}. Outside that window weather and seasonal closures can limit what is open, so check current conditions before booking.` });
   if (d.airportCode && d.airportName)
     faqs.push({ q: `What is the closest airport to ${d.name}?`, a: `${d.airportName} (${d.airportCode}) is the closest airport${d.driveMinutes != null ? `, about ${formatDriveShort(d.driveMinutes)} away by car, without stops` : ""}.` });
   // Topics already covered by the reviewed "A few things worth knowing" panel stay there — no duplicate answers on the page.

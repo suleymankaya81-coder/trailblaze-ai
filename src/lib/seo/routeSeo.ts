@@ -1,3 +1,4 @@
+import { genuineSeason } from "./season";
 // Search-phrase titles/descriptions for road-trip loop and gateway corridor pages.
 // Keywords chosen from Semrush US data (Oct 2026); each page targets a distinct phrase to avoid overlap.
 
@@ -114,7 +115,8 @@ export function destinationSearchTitle(name: string): string {
 
 export function destinationSearchDescription(name: string, tagline: string | null, bestSeason: string | null): string {
   const base = (tagline ?? "").trim().replace(/[.!]?$/, ".");
-  const season = bestSeason ? ` When to go: ${bestSeason}.` : "";
+  const stored = genuineSeason(bestSeason);
+  const season = stored ? ` When to go: ${stored}.` : "";
   const plan = ` Plan a trip to ${name}: when to go, a day-by-day plan, stays, RV rentals and the road trip map.`;
   return fitText(
     [

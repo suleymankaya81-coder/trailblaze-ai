@@ -1,4 +1,5 @@
 import { directoryLocales } from "@/lib/i18n/geoLocales";
+import { genuineSeason } from "@/lib/seo/season";
 import type { Locale } from "@/lib/i18n/locales";
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { SITE_ORIGIN } from "@/config/site";
@@ -54,7 +55,7 @@ function RegionPage() {
       heading="Destinations"
       action="See the plan"
       image={places.find((p) => p.heroImage)?.heroImage}
-      items={places.map((p) => ({ to: destinationPath(p.slug), title: p.name, image: p.heroImage, summary: p.tagline, info: p.bestSeason }))}
+      items={places.map((p) => ({ to: destinationPath(p.slug), title: p.name, image: p.heroImage, summary: p.tagline, info: genuineSeason(p.bestSeason) }))}
     />
   );
 }

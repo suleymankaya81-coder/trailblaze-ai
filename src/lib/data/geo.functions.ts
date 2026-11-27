@@ -3,6 +3,7 @@ import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
 import { validMapCoordinate, type CountryMapPlace } from "@/lib/routes/countryMap";
 import { toCurrentOrigin } from "@/lib/seo/originUrl";
+import { genuineSeason } from "@/lib/seo/season";
 
 export type GeoPlace = { slug: string; name: string; heroImage: string; tagline: string | null; bestSeason: string | null };
 export type GeoRegion = { slug: string; name: string; count: number; heroImage: string };
@@ -50,7 +51,7 @@ export const getRegionPlaces = createServerFn({ method: "GET" })
     if (!region || !rows?.length) return null;
     return {
       name: region.name,
-      places: rows.map((d) => ({ slug: d.slug, name: d.name, heroImage: toCurrentOrigin(d.hero_image) ?? "", tagline: d.tagline, bestSeason: d.best_season })),
+      places: rows.map((d) => ({ slug: d.slug, name: d.name, heroImage: toCurrentOrigin(d.hero_image) ?? "", tagline: d.tagline, bestSeason: genuineSeason(d.best_season) })),
     };
   });
 

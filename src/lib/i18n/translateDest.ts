@@ -1,6 +1,7 @@
 import type { DestinationView } from "@/lib/data/destinations.functions";
 import type { DestinationTranslation } from "@/lib/data/translations.functions";
 import type { TravelPlan } from "@/lib/data/travelPlan";
+import { genuineSeason } from "@/lib/seo/season";
 
 /** Translations may replace prose, never navigation, coordinates or source identities. */
 export function translatePlan(plan: TravelPlan | null, tr: DestinationTranslation): TravelPlan | null {
@@ -28,7 +29,8 @@ export function translateDest(dest: DestinationView, tr: DestinationTranslation)
     name: tr.name || dest.name,
     region: tr.region ?? dest.region,
     tagline: tr.tagline ?? dest.tagline,
-    bestSeason: tr.bestSeason ?? dest.bestSeason,
+    // A stored translation of "no verified season" is not a season either: omit it.
+    bestSeason: tr.bestSeason != null ? genuineSeason(tr.bestSeason) : genuineSeason(dest.bestSeason),
     permitHeadline: tr.permitHeadline ?? dest.permitHeadline,
     permitNote: tr.permitNote ?? dest.permitNote,
     travelPlan,

@@ -1,4 +1,5 @@
 import { SITE_ORIGIN } from "@/config/site";
+import { genuineSeason } from "@/lib/seo/season";
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@/components/site/LocalLink";
 import { Header } from "@/components/site/Header";
@@ -72,7 +73,7 @@ function Page() {
         {!places.length && <p>Aucune destination trouvée.</p>}
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {places.map((p) => (
-            <PlaceCard key={p.slug} to="/fr/destinations/$slug" params={{ slug: p.slug }} image={p.heroImage} alt={p.name} title={p.name} summary={p.tagline} info={p.bestSeason} action={t("fr", "dest.seePlan")} />
+            <PlaceCard key={p.slug} to="/fr/destinations/$slug" params={{ slug: p.slug }} image={p.heroImage} alt={p.name} title={p.name} summary={p.tagline} info={genuineSeason(p.bestSeason) ?? undefined} action={t("fr", "dest.seePlan")} />
           ))}
         </div>
         {pages > 1 && <nav aria-label="Pages des destinations" className="mt-10 flex items-center justify-center gap-4 text-sm">

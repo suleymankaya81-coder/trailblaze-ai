@@ -10,6 +10,7 @@ import { withWebjetAffiliate } from "@/lib/affiliates/webjet";
 import { isNonRoadDestination, isOfferEligibleForPlace } from "./destinationAccess";
 import { cadToUsd } from "./canadaPricing";
 import { toCurrentOrigin } from "@/lib/seo/originUrl";
+import { genuineSeason } from "@/lib/seo/season";
 
 export type OfferView = {
   id: string;
@@ -192,7 +193,7 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       gallery: (dest.gallery ?? []).map((g) => toCurrentOrigin(g)),
       photoCredit: dest.photo_credit,
       aliases: dest.aliases,
-      bestSeason: dest.best_season,
+      bestSeason: genuineSeason(dest.best_season),
       scenicScore: dest.scenic_score,
       campingScore: dest.camping_score,
        avgDailyBudget: dest.avg_daily_budget == null ? null : dest.currency === "CAD" ? cadToUsd(dest.avg_daily_budget) : dest.avg_daily_budget,
@@ -349,7 +350,7 @@ export const getHomepageDestinations = createServerFn({ method: "GET" }).handler
       name: d.name,
       region: d.region ?? "",
       heroImage: toCurrentOrigin(d.hero_image) ?? "",
-      bestSeason: d.best_season,
+      bestSeason: genuineSeason(d.best_season),
       tripDurationDays: d.trip_duration_days,
       countryCode: d.country_code ?? "us",
     }));
@@ -448,7 +449,7 @@ export const getDestinationsList = createServerFn({ method: "GET" })
         name: d.name,
         region: d.region ?? "",
         heroImage: toCurrentOrigin(d.hero_image) ?? "",
-        bestSeason: d.best_season,
+        bestSeason: genuineSeason(d.best_season),
         tripDurationDays: d.trip_duration_days,
         countryCode: d.country_code ?? "us",
       })),

@@ -5,6 +5,7 @@ import { CalendarDays, Clock, Flower2, Leaf, MapPin, Mountain, Plane, Snowflake,
 import type { ReactNode } from "react";
 
 import type { LandingSection } from "@/lib/data/landingTypes";
+import { genuineSeason } from "@/lib/seo/season";
 
 export type LandingFacts = {
   bestSeason: string | null;
@@ -19,7 +20,8 @@ const PERMIT_TEXT = { high: "Reserve ahead", moderate: "Some permits", none: "No
 
 export function factItems(f: LandingFacts) {
   const items: { icon: ReactNode; label: string; value: string }[] = [];
-  if (f.bestSeason) items.push({ icon: <CalendarDays className="h-4 w-4" />, label: "Best time", value: f.bestSeason });
+  const season = genuineSeason(f.bestSeason);
+  if (season) items.push({ icon: <CalendarDays className="h-4 w-4" />, label: "Best time", value: season });
   if (f.tripDays) items.push({ icon: <Clock className="h-4 w-4" />, label: "Ideal stay", value: /day/i.test(f.tripDays) ? f.tripDays : `${f.tripDays} days` });
   if (f.airport)
     items.push({

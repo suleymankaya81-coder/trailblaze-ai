@@ -27,6 +27,7 @@ import { GuideFaq } from "@/components/guides/GuideSections";
 import roadImg from "@/assets/thumbs/road.jpg";
 import stayImg from "@/assets/thumbs/stay.jpg";
 import planImg from "@/assets/thumbs/plan.jpg";
+import { genuineSeason } from "@/lib/seo/season";
 
 const PERMIT_LABEL = { high: "Reservations: high demand", moderate: "Reservations: moderate", none: "No entry permit" } as const;
 
@@ -209,9 +210,10 @@ export function ArrivalPlan({ dest }: { dest: DestinationView }) {
 
 export function BeforeYouLand({ dest }: { dest: DestinationView }) {
   const reviewed = getDestinationAnswers(dest.slug)?.reservation;
-  const note = reviewed?.note ?? dest.permitNote ?? (dest.permitLevel ? permitFallback(dest.name, dest.permitLevel, dest.bestSeason) : null);
+  const season = genuineSeason(dest.bestSeason);
+  const note = reviewed?.note ?? dest.permitNote ?? (dest.permitLevel ? permitFallback(dest.name, dest.permitLevel, season) : null);
   const sourceUrl = reviewed?.sourceUrl ?? dest.permitSourceUrl;
-  if (!note && !dest.bestSeason) return null;
+  if (!note && !season) return null;
   return (
     <div className="grid gap-4 md:grid-cols-3">
       {note && (
@@ -226,10 +228,10 @@ export function BeforeYouLand({ dest }: { dest: DestinationView }) {
           )}
         </div>
       )}
-      {dest.bestSeason && (
+      {season && (
         <div className="rounded-lg border border-border bg-card p-6 md:p-8">
           <p className="text-xs uppercase tracking-wider text-muted-foreground">Best time to fly in</p>
-          <p className="mt-2 font-display text-xl font-semibold text-foreground"><T>{dest.bestSeason}</T></p>
+          <p className="mt-2 font-display text-xl font-semibold text-foreground"><T>{season}</T></p>
         </div>
       )}
     </div>

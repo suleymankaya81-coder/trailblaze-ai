@@ -5,6 +5,7 @@ import type { DestinationView } from "@/lib/data/destinations.functions";
 import { getFlightPrice } from "@/lib/affiliates/flights.functions";
 import { tpLink } from "@/lib/affiliates/travelpayouts";
 import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
+import { genuineSeason } from "@/lib/seo/season";
 
 const PERMIT_COPY = {
   high: { label: "High demand", tone: "border-copper/40 bg-copper/5", badge: "bg-copper/15 text-copper" },
@@ -19,7 +20,8 @@ export function formatDrive(mins: number) {
 }
 
 /** Fallback until a place has its own stored note: still names the place and season. */
-export function permitFallback(name: string, level: string, season: string | null) {
+export function permitFallback(name: string, level: string, storedSeason: string | null) {
+  const season = genuineSeason(storedSeason);
   const when = season ? ` during ${season.toLowerCase()}` : " in peak season";
   if (level === "high")
     return `Popular campsites, lodges and any entry reservations around ${name} can fill well ahead${when}. Check the official park site for current reservation windows before locking in flights.`;

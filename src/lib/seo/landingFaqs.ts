@@ -2,6 +2,7 @@
 // Each page type answers the questions people search alongside that page's keyword;
 // a question is skipped when its data is missing.
 import { formatDriveShort, type Faq } from "@/lib/seo/flyDrive";
+import { genuineSeason } from "./season";
 
 export type LandingFaqFacts = {
   bestSeason: string | null;
@@ -19,6 +20,8 @@ const airportLine = (f: LandingFaqFacts) =>
 
 export function landingFaqs(pageType: string, name: string, f: LandingFaqFacts, sections: Section[] = []): Faq[] {
   const faqs: Faq[] = [];
+  // Only a genuine stored season is quoted; "no verified …" text is never an answer.
+  const bestSeason = genuineSeason(f.bestSeason);
   const air = airportLine(f);
   const budget = f.dailyBudget != null ? `about $${f.dailyBudget} per person per day, excluding flights (a typical estimate; prices vary by season)` : null;
   const reservations =
@@ -30,14 +33,14 @@ export function landingFaqs(pageType: string, name: string, f: LandingFaqFacts, 
 
   switch (pageType) {
     case "best_time":
-      if (f.bestSeason) faqs.push({ q: `What month is best to visit ${name}?`, a: `Most visitors find ${f.bestSeason} the best window for ${name}, with the most reliable weather and access.` });
-      if (f.bestSeason) faqs.push({ q: `When should you avoid visiting ${name}?`, a: `Outside ${f.bestSeason}, weather and seasonal closures can limit roads, trails and services. Check current conditions before booking.` });
+      if (bestSeason) faqs.push({ q: `What month is best to visit ${name}?`, a: `Most visitors find ${bestSeason} the best window for ${name}, with the most reliable weather and access.` });
+      if (bestSeason) faqs.push({ q: `When should you avoid visiting ${name}?`, a: `Outside ${bestSeason}, weather and seasonal closures can limit roads, trails and services. Check current conditions before booking.` });
       if (reservations) faqs.push({ q: `Do you need to book ${name} in advance?`, a: reservations });
       break;
     case "things_to_do":
       if (headings.length >= 2) faqs.push({ q: `What are the top things to do in ${name}?`, a: `Highlights include ${headings.join(", ")}.` });
       if (f.tripDays) faqs.push({ q: `How much time do you need to see ${name}?`, a: `Plan ${f.tripDays} to cover the main sights at a comfortable pace.` });
-      if (f.bestSeason) faqs.push({ q: `When is the best time for activities in ${name}?`, a: `${f.bestSeason} usually offers the widest choice of open activities and tours.` });
+      if (bestSeason) faqs.push({ q: `When is the best time for activities in ${name}?`, a: `${bestSeason} usually offers the widest choice of open activities and tours.` });
       break;
     case "trip_planner":
       if (f.tripDays) faqs.push({ q: `How many days should a ${name} itinerary be?`, a: `A ${f.tripDays} itinerary covers the main sights without rushing.` });
@@ -45,7 +48,7 @@ export function landingFaqs(pageType: string, name: string, f: LandingFaqFacts, 
       if (budget) faqs.push({ q: `How much does a ${name} trip cost?`, a: `Budget ${budget}.` });
       break;
     case "glamping":
-      if (f.bestSeason) faqs.push({ q: `When is the best time to go glamping near ${name}?`, a: `${f.bestSeason} offers the most comfortable glamping weather near ${name}.` });
+      if (bestSeason) faqs.push({ q: `When is the best time to go glamping near ${name}?`, a: `${bestSeason} offers the most comfortable glamping weather near ${name}.` });
       if (air) faqs.push({ q: `How do you get to glamping near ${name}?`, a: `Fly into ${air}, then drive — most sites need a car.` });
       faqs.push({ q: `Do glamping sites near ${name} sell out?`, a: `Yes, popular sites often book out months ahead in peak season, so reserve early.` });
       break;

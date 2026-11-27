@@ -87,6 +87,7 @@ import { ROAD_PREPARATION_PARTNERS, preparationLink } from "@/lib/affiliates/tra
 import { commonsFilePage, parsePhotoCredit } from "@/lib/seo/imageCredit";
 import { isFerryDestination, isNonRoadDestination } from "@/lib/data/destinationAccess";
 import { CANADA_PRICE_BASIS } from "@/lib/data/canadaPricing";
+import { genuineSeason } from "@/lib/seo/season";
 
 
 /* =========================================================
@@ -161,7 +162,8 @@ function Hero({ dest, crumbs }: { dest: DestinationView; crumbs?: Crumb[] }) {
   const source = credit?.sourceUrl ?? commonsFilePage(dest.heroImage);
 
   const stats: { label: string; value: string }[] = [];
-  if (dest.bestSeason) stats.push({ label: "Best time", value: dest.bestSeason });
+  const season = genuineSeason(dest.bestSeason);
+  if (season) stats.push({ label: "Best time", value: season });
   if (dest.tripDurationDays) stats.push({ label: "Duration", value: dest.tripDurationDays });
   if (dest.avgDailyBudget != null)
     stats.push({ label: "Est. budget · USD", value: `US$${dest.avgDailyBudget} / day` });
