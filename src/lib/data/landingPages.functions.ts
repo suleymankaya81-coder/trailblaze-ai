@@ -3,6 +3,7 @@ import { z } from "zod";
 
 import { supabase } from "@/integrations/supabase/client";
 import type { Json, Tables } from "@/integrations/supabase/types";
+import { toCurrentOrigin } from "@/lib/seo/originUrl";
 
 // SEO landing pages (e.g. /yellowstone-camping) live in seo_landing_pages and
 // link to a destination by FK — destination core data is never copied here.
@@ -66,7 +67,7 @@ function toView(r: Tables<"seo_landing_pages">): LandingPageView {
     indexable: r.indexable,
     noindexReason: r.noindex_reason,
     canonicalUrl: r.canonical_url,
-    coverImage: r.cover_image,
+    coverImage: toCurrentOrigin(r.cover_image),
     coverPhotoCredit: r.cover_photo_credit,
     coverPhotoSource: r.cover_photo_source,
     coverPhotoLicense: r.cover_photo_license,
@@ -179,7 +180,7 @@ export const getLandingBundle = createServerFn({ method: "GET" })
       destination: {
         slug: dest.slug,
         name: dest.name,
-        heroImage: dest.hero_image ?? "",
+        heroImage: toCurrentOrigin(dest.hero_image) ?? "",
         photoCredit: dest.photo_credit,
       },
       siblings: (sib ?? []).map((s) => ({ path: s.path, pageType: s.page_type })),

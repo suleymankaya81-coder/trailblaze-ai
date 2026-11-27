@@ -1,4 +1,5 @@
 import { SITE_ORIGIN } from "@/config/site";
+import { toCurrentOrigin } from "./originUrl";
 // Pure helpers for image SEO: credit parsing and absolute URLs.
 const BASE_URL = SITE_ORIGIN;
 
@@ -74,7 +75,8 @@ export function creditCreatorEntity(raw: string, placeName?: string | null): Rec
 
 export function toAbsoluteImageUrl(url: string | null | undefined): string | null {
   if (!url) return null;
-  const trimmed = url.trim();
+  // Legacy-domain asset URLs (minialife.com/__l5e/…) are served on the current origin.
+  const trimmed = toCurrentOrigin(url.trim());
   if (trimmed.startsWith("/") && !trimmed.startsWith("//")) return `${BASE_URL}${trimmed}`;
   return trimmed.startsWith("https://") ? trimmed : null;
 }

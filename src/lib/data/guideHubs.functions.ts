@@ -4,6 +4,7 @@ import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
 import { flyDriveSlug } from "@/lib/seo/flyDrive";
 import { isNoReservationEligible, isRvEligible, type GuideDest } from "@/lib/seo/guides";
+import { toCurrentOrigin } from "@/lib/seo/originUrl";
 
 export type HubFamily = "fly-and-drive" | "no-reservation" | "rv-camping";
 export type HubEntry = { slug: string; name: string; state: string; heroImage: string; airportCode: string | null; driveMinutes: number | null; countryCode: string };
@@ -31,7 +32,7 @@ export const getHubEntries = createServerFn({ method: "GET" })
       if (data.family === "fly-and-drive") slug = flyDriveSlug({ ...g, driveMiles: d.drive_miles });
       else if (data.family === "no-reservation" && !isNoReservationEligible(g)) slug = null;
       else if (data.family === "rv-camping" && !isRvEligible(g)) slug = null;
-      if (slug) out.push({ slug, name: d.name, state: d.state ?? "", heroImage: d.hero_image ?? "", airportCode: d.nearest_airport_code, driveMinutes: d.drive_minutes, countryCode: d.country_code ?? "us" });
+      if (slug) out.push({ slug, name: d.name, state: d.state ?? "", heroImage: toCurrentOrigin(d.hero_image) ?? "", airportCode: d.nearest_airport_code, driveMinutes: d.drive_minutes, countryCode: d.country_code ?? "us" });
     }
     return out;
   });

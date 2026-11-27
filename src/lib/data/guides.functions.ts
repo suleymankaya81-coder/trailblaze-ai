@@ -3,6 +3,7 @@ import { z } from "zod";
 
 import { supabase } from "@/integrations/supabase/client";
 import type { LoopStop } from "@/lib/seo/guides";
+import { toCurrentOrigin } from "@/lib/seo/originUrl";
 
 const slugs = z.object({ slugs: z.array(z.string().regex(/^[a-z0-9-]+$/)).min(1).max(12) });
 
@@ -21,7 +22,7 @@ export const getGuideAlternatives = createServerFn({ method: "GET" })
       console.error("[getGuideAlternatives]", error);
       return [];
     }
-    return (rows ?? []).map((r) => ({ slug: r.slug, name: r.name, heroImage: r.hero_image ?? "", permitLevel: (r.permit_level as GuideAlt["permitLevel"]) ?? null }));
+    return (rows ?? []).map((r) => ({ slug: r.slug, name: r.name, heroImage: toCurrentOrigin(r.hero_image) ?? "", permitLevel: (r.permit_level as GuideAlt["permitLevel"]) ?? null }));
   });
 
 /** Loop stops in the order given; missing or unpublished stops are dropped. */
@@ -39,7 +40,7 @@ export const getLoopStops = createServerFn({ method: "GET" })
       const r = bySlug.get(s);
       if (!r || r.lat == null || r.lng == null) return [];
       return [{
-        slug: r.slug, name: r.name, lat: r.lat, lng: r.lng, heroImage: r.hero_image ?? "",
+        slug: r.slug, name: r.name, lat: r.lat, lng: r.lng, heroImage: toCurrentOrigin(r.hero_image) ?? "",
         tripDurationDays: r.trip_duration_days, permitLevel: (r.permit_level as LoopStop["permitLevel"]) ?? null, permitHeadline: r.permit_headline,
         bestSeason: r.best_season, region: r.region,
         airportCode: r.nearest_airport_code ?? null, airportName: r.nearest_airport_name ?? null,

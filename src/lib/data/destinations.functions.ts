@@ -9,6 +9,7 @@ import { isApprovedRental } from "@/lib/affiliates/rentalPolicy";
 import { withWebjetAffiliate } from "@/lib/affiliates/webjet";
 import { isNonRoadDestination, isOfferEligibleForPlace } from "./destinationAccess";
 import { cadToUsd } from "./canadaPricing";
+import { toCurrentOrigin } from "@/lib/seo/originUrl";
 
 export type OfferView = {
   id: string;
@@ -177,7 +178,7 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
         slug: s.slug,
         name: s.name,
         region: s.region ?? "",
-        heroImage: s.hero_image ?? "",
+        heroImage: toCurrentOrigin(s.hero_image) ?? "",
       }));
     }
 
@@ -187,8 +188,8 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       region: dest.region ?? "",
       tagline: dest.tagline ?? "",
       destinationType: dest.destination_type,
-      heroImage: dest.hero_image ?? "",
-      gallery: dest.gallery,
+      heroImage: toCurrentOrigin(dest.hero_image) ?? "",
+      gallery: (dest.gallery ?? []).map((g) => toCurrentOrigin(g)),
       photoCredit: dest.photo_credit,
       aliases: dest.aliases,
       bestSeason: dest.best_season,
@@ -347,7 +348,7 @@ export const getHomepageDestinations = createServerFn({ method: "GET" }).handler
       slug: d.slug,
       name: d.name,
       region: d.region ?? "",
-      heroImage: d.hero_image ?? "",
+      heroImage: toCurrentOrigin(d.hero_image) ?? "",
       bestSeason: d.best_season,
       tripDurationDays: d.trip_duration_days,
       countryCode: d.country_code ?? "us",
@@ -446,7 +447,7 @@ export const getDestinationsList = createServerFn({ method: "GET" })
         slug: d.slug,
         name: d.name,
         region: d.region ?? "",
-        heroImage: d.hero_image ?? "",
+        heroImage: toCurrentOrigin(d.hero_image) ?? "",
         bestSeason: d.best_season,
         tripDurationDays: d.trip_duration_days,
         countryCode: d.country_code ?? "us",
@@ -469,5 +470,5 @@ export const getDestinationCovers = createServerFn({ method: "GET" })
       console.error("[getDestinationCovers] query failed", error);
       return {};
     }
-    return Object.fromEntries((rows ?? []).filter((r) => r.hero_image).map((r) => [r.slug, r.hero_image as string]));
+    return Object.fromEntries((rows ?? []).filter((r) => r.hero_image).map((r) => [r.slug, toCurrentOrigin(r.hero_image) as string]));
   });

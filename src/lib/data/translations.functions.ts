@@ -2,6 +2,7 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
 import { collectPages } from "./pagination";
+import { toCurrentOrigin } from "@/lib/seo/originUrl";
 
 export type DestinationTranslation = {
   name: string; region?: string | null; tagline?: string | null; bestSeason?: string | null;
@@ -55,7 +56,7 @@ export const listTranslatedDestinations = createServerFn({ method: "GET" })
       if (error) throw error;
       return page ?? [];
     });
-    const hero = Object.fromEntries((dests ?? []).map((d) => [d.slug, d.hero_image ?? ""]));
+    const hero = Object.fromEntries((dests ?? []).map((d) => [d.slug, toCurrentOrigin(d.hero_image) ?? ""]));
     return rows
       .filter((r) => hero[r.entity_id] !== undefined)
       .map((r) => {

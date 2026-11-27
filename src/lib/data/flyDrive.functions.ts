@@ -2,6 +2,7 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 
 import { supabase } from "@/integrations/supabase/client";
+import { toCurrentOrigin } from "@/lib/seo/originUrl";
 
 export type FlyDriveSibling = { slug: string; name: string; driveMinutes: number | null; heroImage: string };
 
@@ -21,5 +22,5 @@ export const getAirportSiblings = createServerFn({ method: "GET" })
       console.error("[getAirportSiblings]", error);
       return [];
     }
-    return (rows ?? []).map((r) => ({ slug: r.slug, name: r.name, driveMinutes: r.drive_minutes, heroImage: r.hero_image ?? "" }));
+    return (rows ?? []).map((r) => ({ slug: r.slug, name: r.name, driveMinutes: r.drive_minutes, heroImage: toCurrentOrigin(r.hero_image) ?? "" }));
   });

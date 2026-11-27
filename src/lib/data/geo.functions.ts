@@ -2,6 +2,7 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
 import { validMapCoordinate, type CountryMapPlace } from "@/lib/routes/countryMap";
+import { toCurrentOrigin } from "@/lib/seo/originUrl";
 
 export type GeoPlace = { slug: string; name: string; heroImage: string; tagline: string | null; bestSeason: string | null };
 export type GeoRegion = { slug: string; name: string; count: number; heroImage: string };
@@ -32,7 +33,7 @@ export const getCountryRegions = createServerFn({ method: "GET" })
     return (regions ?? [])
       .map((r) => {
         const inRegion = (dests ?? []).filter((d) => d.region_slug === r.slug);
-        return { slug: r.slug, name: r.name, count: inRegion.length, heroImage: inRegion.find((d) => d.hero_image)?.hero_image ?? "" };
+        return { slug: r.slug, name: r.name, count: inRegion.length, heroImage: toCurrentOrigin(inRegion.find((d) => d.hero_image)?.hero_image) ?? "" };
       })
       .filter((r) => r.count > 0);
   });
@@ -49,7 +50,7 @@ export const getRegionPlaces = createServerFn({ method: "GET" })
     if (!region || !rows?.length) return null;
     return {
       name: region.name,
-      places: rows.map((d) => ({ slug: d.slug, name: d.name, heroImage: d.hero_image ?? "", tagline: d.tagline, bestSeason: d.best_season })),
+      places: rows.map((d) => ({ slug: d.slug, name: d.name, heroImage: toCurrentOrigin(d.hero_image) ?? "", tagline: d.tagline, bestSeason: d.best_season })),
     };
   });
 
