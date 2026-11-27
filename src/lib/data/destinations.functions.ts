@@ -68,6 +68,7 @@ export type DestinationView = {
   permitLevel: "high" | "moderate" | "none" | null;
   permitHeadline: string | null;
   permitNote: string | null;
+  hasStoredPermitNote: boolean;
   permitSourceUrl: string | null;
   travelPlan: TravelPlan | null;
   /** This place's stored airport→place route line (src/data/routes.json), loaded server-side so the
@@ -216,6 +217,7 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
       // Unknown-fact wording ("Check visitor access before departure", "…do not establish…") is omitted.
       permitHeadline: knownHeadline(dest.permit_headline),
       permitNote: knownFactsOnly(dest.permit_note),
+      hasStoredPermitNote: !!dest.permit_note?.trim(),
       permitSourceUrl: dest.permit_source_url,
       travelPlan: cleanTravelPlan(parseTravelPlan(dest.travel_plan)),
       route: nonRoad ? null : ROUTES[dest.slug] ?? null,

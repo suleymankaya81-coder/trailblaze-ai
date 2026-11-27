@@ -267,7 +267,7 @@ export async function buildChildSitemap(name: string): Promise<Response | null> 
       const ok = name === "no-reservation" ? isNoReservationEligible : isRvEligible;
       return urlset(
         rows
-          .filter((d) => ok({ slug: d.slug, name: d.name, airportCode: d.nearest_airport_code, airportName: d.nearest_airport_name, driveMinutes: d.drive_minutes, permitLevel: d.permit_level, permitNote: knownFactsOnly(d.permit_note), permitHeadline: knownHeadline(d.permit_headline), campingScore: d.camping_score, bestSeason: d.best_season, accessType: d.access_type }))
+          .filter((d) => ok({ slug: d.slug, name: d.name, airportCode: d.nearest_airport_code, airportName: d.nearest_airport_name, driveMinutes: d.drive_minutes, permitLevel: d.permit_level, permitNote: knownFactsOnly(d.permit_note), hasStoredPermitNote: !!d.permit_note?.trim(), permitHeadline: knownHeadline(d.permit_headline), campingScore: d.camping_score, bestSeason: d.best_season, accessType: d.access_type }))
           .map((d) => ({ loc: `${BASE_URL}/${name}/${d.slug}`, images: uniqueImages([d.hero_image]) })),
       );
     }

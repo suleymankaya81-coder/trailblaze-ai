@@ -29,7 +29,7 @@ export const getHubEntries = createServerFn({ method: "GET" })
     }
     const out: HubEntry[] = [];
     for (const d of rows) {
-      const g: GuideDest = { slug: d.slug, name: d.name, airportCode: d.nearest_airport_code, airportName: d.nearest_airport_name, driveMinutes: d.drive_minutes, permitLevel: d.permit_level, permitNote: knownFactsOnly(d.permit_note), permitHeadline: knownHeadline(d.permit_headline), campingScore: d.camping_score, bestSeason: genuineSeason(d.best_season) };
+      const g: GuideDest = { slug: d.slug, name: d.name, airportCode: d.nearest_airport_code, airportName: d.nearest_airport_name, driveMinutes: d.drive_minutes, permitLevel: d.permit_level, permitNote: knownFactsOnly(d.permit_note), hasStoredPermitNote: !!d.permit_note?.trim(), permitHeadline: knownHeadline(d.permit_headline), campingScore: d.camping_score, bestSeason: genuineSeason(d.best_season) };
       let slug: string | null = d.slug;
       if (data.family === "fly-and-drive") slug = flyDriveSlug({ ...g, driveMiles: d.drive_miles });
       else if (data.family === "no-reservation" && !isNoReservationEligible(g)) slug = null;

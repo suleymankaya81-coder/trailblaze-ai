@@ -58,3 +58,17 @@ describe("FAQPage only for visible answers", () => {
     expect(faq.mainEntity.map((q) => [q.name, q.acceptedAnswer.text])).toEqual(c.faqs.map((f) => [f.q, f.a]));
   });
 });
+
+describe("no-reservation eligibility rule is unchanged by the boilerplate filter", () => {
+  it("a stored note that only states unknown facts still qualifies, but is not shown", async () => {
+    const { isNoReservationEligible, reservationNote, noReservationFaqs } = await import("./guides");
+    const { knownFactsOnly } = await import("./unknownFacts");
+    const stored = "Check the official visitor information for Hoge Veluwe before departure. Entry, activity permits and overnight stays are separate checks; the source excerpts below do not establish availability for your dates.";
+    const d = { slug: "x-test", name: "Hoge Veluwe", airportCode: null, airportName: null, driveMinutes: null, permitLevel: "moderate" as const, permitNote: knownFactsOnly(stored), hasStoredPermitNote: true, permitHeadline: null, campingScore: null, bestSeason: null };
+    expect(d.permitNote).toBeNull();
+    expect(isNoReservationEligible(d)).toBe(true);
+    expect(reservationNote(d)).toBeNull();
+    expect(noReservationFaqs(d)).toEqual([]);
+    expect(isNoReservationEligible({ ...d, hasStoredPermitNote: false })).toBe(false);
+  });
+});

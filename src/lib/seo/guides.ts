@@ -18,6 +18,8 @@ export type GuideDest = {
   driveMinutes: number | null;
   permitLevel: "high" | "moderate" | "none" | null;
   permitNote: string | null;
+  /** A permit note is stored, even if it only says the facts are unknown (kept for the existing eligibility rule). */
+  hasStoredPermitNote?: boolean;
   permitHeadline: string | null;
   campingScore: number | null;
   bestSeason: string | null;
@@ -32,9 +34,13 @@ export function reservationNote(d: GuideDest): string | null {
   return getDestinationAnswers(d.slug)?.reservation.note ?? d.permitNote ?? null;
 }
 
-/** Only destinations whose stored permit level says booking matters, with a real note. */
+/**
+ * Destinations whose stored permit level says booking matters and that have a stored note.
+ * Unchanged rule: a stored note that only states unknown facts still qualifies (it is not shown);
+ * see scripts/audits/seo-structure-1/report.md for the count and the pending owner decision.
+ */
 export function isNoReservationEligible(d: GuideDest): boolean {
-  return (d.permitLevel === "high" || d.permitLevel === "moderate") && !!reservationNote(d);
+  return (d.permitLevel === "high" || d.permitLevel === "moderate") && (!!reservationNote(d) || !!d.hasStoredPermitNote);
 }
 
 export function isRvEligible(d: GuideDest): boolean {

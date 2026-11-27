@@ -127,7 +127,7 @@ export function Page(): React.ReactElement {
         <DailyRoutes dest={dest} />
         <section className="container-page pb-6"><ViatorPlaceBlock slug={dest.slug} name={dest.name} /></section>
         <section className="container-page py-10"><TripEssentials context={{ slug: dest.slug, name: dest.name, places: [dest] }} /></section>
-        <GuideSection title="Quick answers"><GuideFaq faqs={faqs} /></GuideSection>
+        {faqs.length > 0 && <GuideSection title="Quick answers"><GuideFaq faqs={faqs} /></GuideSection>}
         <section className="container-page pb-16"><FullGuideLink slug={dest.slug} name={dest.name} /><div className="mt-8"><PlanDeeper dest={dest} landingLinks={landingLinks} current="no-reservation" /></div></section>
       </main>
       <Footer />
