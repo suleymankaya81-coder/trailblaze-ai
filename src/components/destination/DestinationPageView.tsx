@@ -73,7 +73,6 @@ import {
   type DestinationView,
   type OfferView,
 } from "@/lib/data/destinations.functions";
-import { enrichDestination, type EnrichResult } from "@/lib/ai/enrich.functions";
 import { trackAndRedirect } from "@/lib/affiliates/track.functions";
 import { getOrCreateSessionId } from "@/lib/affiliates/session";
 import { outboundLinkTitle } from "@/lib/affiliates/compliance";
@@ -98,15 +97,6 @@ export function DestinationPageView({ dest, landingLinks, crumbs }: { dest: Dest
   const tp = useTp();
   const nonRoad = isNonRoadDestination(dest.slug, dest.accessType);
   const ferryAccess = isFerryDestination(dest.slug, dest.accessType);
-  const enrich = useServerFn(enrichDestination);
-
-  const { data: ai, isLoading: aiLoading } = useQuery({
-    queryKey: ["enrich", dest.slug],
-    queryFn: () => enrich({ data: { slug: dest.slug } }),
-    staleTime: Infinity,
-    retry: false,
-  });
-
   return (
     <div className="bg-beige/40">
       <Header />
@@ -132,7 +122,7 @@ export function DestinationPageView({ dest, landingLinks, crumbs }: { dest: Dest
         <div className="space-y-12 md:space-y-16">
           {dest.travelPlan ? <TravelFlow name={dest.name} plan={dest.travelPlan} airportCode={dest.airportCode} nudges region={dest.region} slug={dest.slug} /> : <TripFlow dest={dest} />}
           <TripRadar dest={dest} />
-          <RoadTrip dest={dest} ai={ai} />
+          <RoadTrip dest={dest} />
         </div>
 
         <TopStays dest={dest} />
@@ -145,7 +135,7 @@ export function DestinationPageView({ dest, landingLinks, crumbs }: { dest: Dest
         {/* Budget + preparation: equal panels, never sticky (prevents overlap) */}
         <div className={`grid gap-6 md:items-stretch ${(dest.countryCode ?? "us") === "us" ? "md:grid-cols-2" : ""}`}>
           {/* Budget estimates exist only for US places; elsewhere the panel would be empty. */}
-          {(dest.countryCode ?? "us") === "us" && <TripBudget ai={ai} loading={aiLoading} />}
+          {(dest.countryCode ?? "us") === "us" && <TripBudget />}
           <TravelServices dest={dest} />
         </div>
 
@@ -533,80 +523,14 @@ function EmptyState({ message }: { message: string }) {
 /* =========================================================
    3 — TRIP BUDGET
 ========================================================= */
-function TripBudget({ ai, loading }: { ai?: EnrichResult; loading: boolean }) {
-  const [showNote, setShowNote] = useState(false);
-
-  const items = ai
-    ? [
-        {
-          icon: <Hotel className="h-4 w-4" />,
-          label: "Accommodation",
-          value: ai.budget.accommodation,
-        },
-        { icon: <Truck className="h-4 w-4" />, label: "Rental", value: ai.budget.rental },
-        { icon: <UtensilsCrossed className="h-4 w-4" />, label: "Food", value: ai.budget.food },
-        { icon: <Fuel className="h-4 w-4" />, label: "Fuel", value: ai.budget.fuel },
-        {
-          icon: <Mountain className="h-4 w-4" />,
-          label: "Activities",
-          value: ai.budget.activities,
-        },
-        {
-          icon: <ShoppingBasket className="h-4 w-4" />,
-          label: "Gear & essentials",
-          value: ai.budget.equipment,
-        },
-      ]
-    : [];
-  const total = items.reduce((s, i) => s + i.value, 0);
-
+function TripBudget() {
   return (
     <aside className="h-full rounded-xl border border-border bg-card p-6 md:p-8">
       <h2 className="font-display text-2xl text-foreground"><T>Your trip budget</T></h2>
       <p className="mt-0.5 text-xs text-muted-foreground"><T>Estimated for 4 days · 2 travelers</T></p>
-
-      {loading ? (
-        <Skeleton className="mt-5 h-9 w-32" />
-      ) : !ai ? (
-        <p className="mt-5 text-xs text-muted-foreground">
-          <T>Budget estimate isn't available for this destination right now.</T>
-        </p>
-      ) : (
-        <>
-          <p className="mt-5 font-serif text-3xl font-semibold text-foreground">
-            US${total.toLocaleString()}
-          </p>
-          <p className="text-xs text-muted-foreground"><T>Estimated total</T></p>
-
-          <ul className="mt-5 space-y-3 text-sm">
-            {items.map((i) => (
-              <li key={i.label} className="flex items-center justify-between gap-3">
-                <span className="flex items-center gap-2 text-foreground/80">
-                  <Thumb src={i.label === "Accommodation" ? stayImage : i.label === "Rental" ? carImage : i.label === "Gear & essentials" ? gearImage : roadImage} size={32} />
-                  <span className="text-xs"><T>{i.label}</T></span>
-                </span>
-                <span className="text-xs font-semibold text-foreground">
-                  US${i.value.toLocaleString()}
-                </span>
-              </li>
-            ))}
-          </ul>
-
-          <Button
-            type="button"
-            onClick={() => setShowNote((v) => !v)}
-            className="mt-6 w-full rounded-full border border-border py-2.5 text-xs font-semibold text-foreground transition hover:bg-muted"
-          >
-            <T>See ways to save</T>
-          </Button>
-          {showNote && (
-            <p className="mt-3 rounded-xl bg-beige/70 p-3 text-[11px] leading-relaxed text-foreground/80">
-              {ai.budget.note}
-            </p>
-          )}
-        </>
-      )}
-
+      <p className="mt-5 text-xs text-muted-foreground">
+        <T>Budget estimate isn't available for this destination right now.</T>
+      </p>
       <p className="mt-4 text-[11px] leading-relaxed text-muted-foreground">
         <T>Prices are averages and may vary based on season and preferences.</T>
       </p>
@@ -813,7 +737,7 @@ function ServiceRow({ service, destinationSlug }: { service: OfferView; destinat
    Free stack: OpenFreeMap tiles + routes precomputed once with OSRM
    (src/data/routes.json). Visitors never trigger a paid map API.
 ========================================================= */
-function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
+function RoadTrip({ dest }: { dest: DestinationView }) {
   const nonRoad = isNonRoadDestination(dest.slug, dest.accessType);
   const ferry = isFerryDestination(dest.slug, dest.accessType);
   const hasGeo =
@@ -893,23 +817,21 @@ function RoadTrip({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
         </div>
       </div>
 
-      {!dest.travelPlan && <FieldIntel dest={dest} ai={ai} />}
+      {!dest.travelPlan && <FieldIntel dest={dest} />}
     </section>
   );
 }
 
 /* =========================================================
    FIELD INTEL — bite-size local know-how under the map.
-   Uses the AI insight snapshot when loaded; static tips
-   cover signal, fuel and timing either way.
+   Static fallback tips; stored travel plans remain the primary source.
 ========================================================= */
-function FieldIntel({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) {
+function FieldIntel({ dest }: { dest: DestinationView }) {
   const tips: { icon: ReactNode; label: string; text: string }[] = [
     {
       icon: <Wifi className="h-4 w-4" />,
       label: "Signal",
       text:
-        ai?.insights.cellCoverage ??
         "Cell signal drops inside and around the park — download offline maps before you leave the gateway town.",
     },
     {
@@ -923,14 +845,12 @@ function FieldIntel({ dest, ai }: { dest: DestinationView; ai?: EnrichResult }) 
       icon: <Sun className="h-4 w-4" />,
       label: "Beat the crowds",
       text:
-        ai?.insights.crowdLevels ??
         "Arrive at headline sights before 9 AM; parking lots at the popular trailheads fill first.",
     },
     {
       icon: <Mountain className="h-4 w-4" />,
       label: "Wildlife",
       text:
-        ai?.insights.wildlife ??
         "Dawn and dusk are prime wildlife hours — drive slowly and never approach animals for a photo.",
     },
   ];

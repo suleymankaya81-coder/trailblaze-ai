@@ -1,3 +1,6 @@
+## November 27 stop page-load AI spending
+- [x] Remove live destination enrichment from all shared destination pages and disable its endpoint; 11 tests pass, EN Yosemite/DE Missoula preview pages return 200 without enrichment queries or page errors. Stored content preserved; live rollout requires publication.
+
 ## November 23 sitemap publication and IndexNow
 - [x] Audit sitemap lastmod sources; preserve stored page-row dates, remove inherited destination dates from derived guides, repair no-reservation/Norway name collision, and prepare public change-log.xml RSS. Preview RSS 200 with 1,000 items; 23 JS and 13 Python tests pass; publication requested for saved code.
 - [x] Submit 16,925 unique live-sitemap URLs to IndexNow: initial 403s, public key/homepage recheck 200, full retry accepted in 10,000 + 6,925 URL batches (HTTP 200). No submit-token secret created.

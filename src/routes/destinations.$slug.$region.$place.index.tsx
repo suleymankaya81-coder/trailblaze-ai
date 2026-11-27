@@ -79,7 +79,6 @@ import {
   type DestinationView,
   type OfferView,
 } from "@/lib/data/destinations.functions";
-import { enrichDestination, type EnrichResult } from "@/lib/ai/enrich.functions";
 import { trackAndRedirect } from "@/lib/affiliates/track.functions";
 import { getOrCreateSessionId } from "@/lib/affiliates/session";
 import { outboundLinkTitle } from "@/lib/affiliates/compliance";
