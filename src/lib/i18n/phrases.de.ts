@@ -352,6 +352,9 @@ export const DE_PHRASES: Record<string, string> = {
 
 // Phrases with a variable part ($1, $2 are kept as-is).
 export const DE_PATTERNS: [RegExp, string][] = [
+  [/^Places near (.+)$/, "Orte in der Nähe: $1"],
+  [/^(\d+) km away$/, "$1 km entfernt"],
+  [/^All places in (.+)$/, "Alle Reiseziele in $1"],
   [/^(\d+) countries · (\d+)\+ wild places$/, "$1 Länder · über $2 Naturziele"],
   [/^These guides currently cover (.+)\. Other countries are listed under Destinations\.$/, "Diese Ratgeber decken derzeit $1 ab. Weitere Länder finden Sie unter Reiseziele."],
   [/^Tours & experiences near (.+)$/, "Touren & Erlebnisse bei $1"],

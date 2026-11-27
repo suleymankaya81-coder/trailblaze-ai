@@ -12,6 +12,7 @@ import { cadToUsd } from "./canadaPricing";
 import { toCurrentOrigin } from "@/lib/seo/originUrl";
 import { genuineSeason } from "@/lib/seo/season";
 import { cleanTravelPlan, knownFactsOnly, knownHeadline } from "@/lib/seo/unknownFacts";
+import { nearbyPlaces } from "./nearby";
 
 export type OfferView = {
   id: string;
@@ -36,6 +37,8 @@ export type SimilarDestination = {
   name: string;
   region: string;
   heroImage: string;
+  /** Great-circle distance from the current place (nearby list only). */
+  distanceKm?: number;
 };
 
 export type FeaturedGearOffer = OfferView & {
@@ -166,22 +169,25 @@ export const getDestinationPageData = createServerFn({ method: "GET" })
         )
         .map(toOfferView);
 
+    // Nearby places from stored coordinates (static table); the stored similar_slugs list is only a fallback.
+    const near = nearbyPlaces(dest.slug);
+    const wanted = near.length ? near.map((n) => n.slug) : dest.similar_slugs;
     let similar: SimilarDestination[] = [];
-    if (dest.similar_slugs.length > 0) {
+    if (wanted.length > 0) {
       const { data: similarRows, error: similarError } = await supabase
         .from("destinations")
         .select("slug, name, region, hero_image")
-        .in("slug", dest.similar_slugs)
+        .in("slug", wanted)
         .eq("status", "published");
 
       if (similarError) throw similarError;
 
-      similar = (similarRows ?? []).map((s) => ({
-        slug: s.slug,
-        name: s.name,
-        region: s.region ?? "",
-        heroImage: toCurrentOrigin(s.hero_image) ?? "",
-      }));
+      const km = new Map(near.map((n) => [n.slug, n.km]));
+      const rows = new Map((similarRows ?? []).map((s) => [s.slug, s]));
+      similar = wanted.flatMap((slug) => {
+        const s = rows.get(slug);
+        return s ? [{ slug: s.slug, name: s.name, region: s.region ?? "", heroImage: toCurrentOrigin(s.hero_image) ?? "", ...(km.has(slug) ? { distanceKm: km.get(slug) } : {}) }] : [];
+      });
     }
 
     return {

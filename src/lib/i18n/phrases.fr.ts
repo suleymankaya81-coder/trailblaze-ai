@@ -9,6 +9,9 @@ export const FR_PHRASES: Record<string, string> = {
 };
 
 export const FR_PATTERNS: [RegExp, string][] = [
+  [new RegExp("^Places near (.+)$", ""), "Lieux à proximité : $1"],
+  [new RegExp("^(\\d+) km away$", ""), "à $1 km"],
+  [new RegExp("^All places in (.+)$", ""), "Toutes les destinations : $1"],
   [new RegExp("^(\\d+) countries \\u00B7 (\\d+)\\+ wild places$", ""), "$1 pays · plus de $2 lieux sauvages"],
   [new RegExp("^These guides currently cover (.+)\\. Other countries are listed under Destinations\\.$", ""), "Ces guides couvrent actuellement $1. Les autres pays sont répertoriés sous Destinations."],
   [new RegExp("^Tours & experiences near (.+)$", ""), "Visites et expériences près de $1"],

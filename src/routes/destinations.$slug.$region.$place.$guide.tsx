@@ -31,6 +31,7 @@ import { DESCRIPTION_MAX, TITLE_MAX, fitText } from "@/lib/seo/routeSeo";
 import { landingFaqs } from "@/lib/seo/landingFaqs";
 import { GuideFaq } from "@/components/guides/GuideSections";
 import { PlanDeeper } from "@/components/guides/PlanDeeper";
+import { NearbyPlaces } from "@/components/destination/NearbyPlaces";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { breadcrumbJsonLd, placeGuideCrumbs } from "@/lib/seo/breadcrumbs";
 
@@ -282,7 +283,9 @@ function LandingPage() {
           )}
         </aside>
       </div>
-      {dest && <div className="container-page pb-8"><PlanDeeper dest={dest} landingLinks={[]} current="landing" /></div>}
+      {/* Links to the place, its region hub, the place's other guides and the nearest places. */}
+      {dest && <div className="container-page pb-8"><PlanDeeper dest={dest} landingLinks={siblings} current="landing" currentPath={page.path} /></div>}
+      {dest && dest.similar.length > 0 && <div className="container-page pb-10"><NearbyPlaces name={destination.name} places={dest.similar} /></div>}
       <div className="container-page pb-14"><TripEssentials context={{ slug: destination.slug, name: destination.name, places: [destination], topic: `${h1} ${page.introContent ?? ""} ${sections.map(s => s.heading).join(" ")}` }} /></div>
       </main>
       <Footer />

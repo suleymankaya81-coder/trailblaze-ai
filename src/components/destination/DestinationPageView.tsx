@@ -61,6 +61,7 @@ import routes from "@/data/routes.json";
 import { TravelFlow, LocalIntel } from "@/components/destination/TravelFlow";
 import { TopShowcase } from "@/components/destination/TopShowcase";
 import { DestinationAnswers } from "@/components/destination/DestinationAnswers";
+import { NearbyPlaces } from "@/components/destination/NearbyPlaces";
 
 const RoadTripMap = lazy(() => import("@/components/destination/RoadTripMap"));
 const ROUTES = routes as unknown as Record<string, [number, number][]>;
@@ -144,7 +145,7 @@ export function DestinationPageView({ dest, landingLinks, crumbs }: { dest: Dest
 
         <PlanDeeper dest={dest} landingLinks={landingLinks} current="destination" />
 
-        <SimilarDestinations dest={dest} />
+        <NearbyPlaces name={dest.name} places={dest.similar} />
         <FinalCta dest={dest} />
       </main>
 
@@ -514,13 +515,6 @@ function StayCard({
   );
 }
 
-function EmptyState({ message }: { message: string }) {
-  return (
-    <div className="mt-5 rounded-lg border border-dashed border-border bg-card p-8 text-center text-xs text-muted-foreground">
-      {message}
-    </div>
-  );
-}
 
 /* =========================================================
    3 — TRIP BUDGET
@@ -958,28 +952,6 @@ function TripFlow({ dest }: { dest: DestinationView }) {
           </li>
         ))}
       </ol>
-    </section>
-  );
-}
-
-/* =========================================================
-   11 — SIMILAR DESTINATIONS
-========================================================= */
-function SimilarDestinations({ dest }: { dest: DestinationView }) {
-  const similar = dest.similar.slice(0, 4);
-  return (
-    <section>
-      <SectionHeader
-        title="More destinations you'll love"
-        action={<Link to="/destinations" className="inline-flex min-h-12 items-center text-sm font-semibold text-primary"><T>All destinations</T> <ArrowRight className="ml-1 h-4 w-4" /></Link>}
-      />
-      {similar.length === 0 ? (
-        <EmptyState message="No related destinations yet." />
-      ) : (
-        <SwipeRow className="md:grid-cols-2 xl:grid-cols-4">
-          {similar.map((d) => <PlaceCard key={d.slug} to="/destinations/$slug" params={{ slug: d.slug }} image={d.heroImage} alt={d.name} title={d.name} info={d.region} />)}
-        </SwipeRow>
-      )}
     </section>
   );
 }

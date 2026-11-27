@@ -8,6 +8,8 @@ import { LANDING_TYPE_LABEL } from "@/lib/data/landingTypes";
 import { CORRIDORS } from "@/lib/seo/corridors";
 import { flyDriveSlug } from "@/lib/seo/flyDrive";
 import { isNoReservationEligible, isRvEligible, loopsForDestination } from "@/lib/seo/guides";
+import { canonicalPath, destinationGeo, guideByPageType, guidePath, regionPath } from "@/lib/routes/paths";
+import { regionName } from "@/lib/seo/breadcrumbs";
 
 export type GuideKind = "destination" | "fly-and-drive" | "no-reservation" | "rv-camping" | "landing";
 
@@ -35,7 +37,8 @@ export function PlanDeeper({
   const gatewayTrips = CORRIDORS.filter((c) => c.stops.includes(dest.slug));
   const landing = landingLinks.filter((p) => p.path !== currentPath);
   const showDest = current !== "destination";
-  if (!showDest && !arrivalSlug && !noRes && !rv && loops.length === 0 && gatewayTrips.length === 0 && landing.length === 0) return null;
+  // Every place, guide and family page links up to its region hub (stored geo, no lookup per visit).
+  const geo = destinationGeo(dest.slug);
   return (
     <section className="border-y border-border py-6" aria-labelledby="plan-deeper-title">
       <h2 id="plan-deeper-title" className="font-display text-2xl text-foreground">
@@ -45,6 +48,11 @@ export function PlanDeeper({
         {showDest && (
           <Link to="/destinations/$slug" params={{ slug: dest.slug }} className={pill}>
             <T>{`${dest.name}: full trip plan`}</T> <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
+        )}
+        {geo && (
+          <Link to={regionPath(geo.country, geo.region)} className={pill}>
+            <T>{`All places in ${regionName(geo.region)}`}</T> <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         )}
         {arrivalSlug && (
@@ -73,7 +81,7 @@ export function PlanDeeper({
           </Link>
         ))}
         {landing.map((p) => (
-          <Link key={p.path} to="/$landing" params={{ landing: p.path.slice(1) }} className={pill}>
+          <Link key={p.path} to={(() => { const g = guideByPageType(p.pageType); return g ? guidePath(dest.slug, g.segment) : canonicalPath(p.path); })()} className={pill}>
             {shortName}: <T>{LANDING_TYPE_LABEL[p.pageType] ?? p.pageType}</T> <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         ))}
