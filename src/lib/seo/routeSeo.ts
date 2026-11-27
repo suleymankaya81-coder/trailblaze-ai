@@ -113,6 +113,17 @@ export function destinationSearchTitle(name: string): string {
   return fitText([`${name} Travel Guide${BRAND}`, `${name} Guide${BRAND}`, `${name}${BRAND}`, name], TITLE_MAX);
 }
 
+/**
+ * Place main-page title in every language: the place is the hub (name + what the page offers).
+ * Never "road trip"/"itinerary" wording — that intent belongs to the place's /itinerary guide and the
+ * road-trip pages. Stored German/French metaTitles ("X – Reiseplan", "X : itinéraire …") are not used.
+ */
+export function placeTitle(name: string, locale: "en" | "de" | "fr" = "en"): string {
+  if (locale === "de") return fitText([`${name}: Reiseführer mit Karte & Anreise${BRAND}`, `${name}: Reiseführer${BRAND}`, `${name} Reiseführer`, name], TITLE_MAX);
+  if (locale === "fr") return fitText([`${name} : guide de voyage, carte et accès${BRAND}`, `${name} : guide de voyage${BRAND}`, `${name} : guide de voyage`, name], TITLE_MAX);
+  return destinationSearchTitle(name);
+}
+
 export function destinationSearchDescription(name: string, tagline: string | null, bestSeason: string | null): string {
   const base = (tagline ?? "").trim().replace(/[.!]?$/, ".");
   const stored = genuineSeason(bestSeason);

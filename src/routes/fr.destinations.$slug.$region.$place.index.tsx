@@ -14,6 +14,7 @@ import { visibleAnswerFaqs } from "@/lib/seo/visibleAnswers";
 import { hreflangLinks } from "@/lib/seo/hreflang";
 import { translateDest } from "@/lib/i18n/translateDest";
 import { isLocale } from "@/lib/i18n/locales";
+import { placeTitle } from "@/lib/seo/routeSeo";
 
 export const Route = createFileRoute("/fr/destinations/$slug/$region/$place/")({
   loader: async ({ params }): Promise<{ dest: DestinationView; tr: DestinationTranslation; landingLinks: LandingLink[]; locales: string[] }> => {
@@ -40,7 +41,7 @@ export const Route = createFileRoute("/fr/destinations/$slug/$region/$place/")({
     const crumbs = placeCrumbsFr(dest.slug, tr.name);
     return {
       meta: [
-        ...frMeta(tr.metaTitle, tr.metaDescription, url),
+        ...frMeta(placeTitle(tr.name || dest.name, "fr"), tr.metaDescription, url),
         { property: "og:type", content: "article" },
         { name: "twitter:card", content: "summary_large_image" },
         ...(dest.heroImage.startsWith("https://") ? [{ property: "og:image", content: dest.heroImage }, { name: "twitter:image", content: dest.heroImage }] : []),

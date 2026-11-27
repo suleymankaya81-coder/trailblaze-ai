@@ -86,7 +86,21 @@ export function destinationAlternates(slug: string, locales: ("de" | "fr")[] = [
   return [{ lang: "en", href: en }, ...locales.map(lang => ({ lang, href: SITE_ORIGIN + destinationPath(slug, lang) })), { lang: "x-default", href: en }];
 }
 
-export function urlsetXml(urls: Url[]): string {
+/** More URLs than this sharing one lastmod day in a sitemap file means a bulk write, not content changes. */
+export const BULK_LASTMOD_THRESHOLD = 20;
+
+/**
+ * lastmod only from real content dates: a day shared by more than BULK_LASTMOD_THRESHOLD URLs in one
+ * file is a bulk timestamp (batch scripts, migrations), so those URLs get no lastmod at all.
+ */
+export function realLastmods(urls: Url[]): Url[] {
+  const perDay = new Map<string, number>();
+  for (const u of urls) if (u.lastmod) perDay.set(u.lastmod.slice(0, 10), (perDay.get(u.lastmod.slice(0, 10)) ?? 0) + 1);
+  return urls.map((u) => (u.lastmod && (perDay.get(u.lastmod.slice(0, 10)) ?? 0) > BULK_LASTMOD_THRESHOLD ? { ...u, lastmod: undefined } : u));
+}
+
+export function urlsetXml(input: Url[]): string {
+  const urls = realLastmods(input);
   return (
     [
       '<?xml version="1.0" encoding="UTF-8"?>',
