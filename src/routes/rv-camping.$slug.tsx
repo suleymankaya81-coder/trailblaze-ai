@@ -1,4 +1,4 @@
-import { T } from "@/lib/i18n";
+import { T, useLocale } from "@/lib/i18n";
 import { DailyRoutes } from "@/components/guides/DailyRoutes";
 import { travelDescription } from "@/lib/seo/travelMetadata";
 import type * as React from "react";
@@ -34,6 +34,8 @@ import { partnerLabel } from "@/lib/affiliates/compliance";
 import { SITE, formatDriveShort } from "@/lib/seo/flyDrive";
 import { destGuideJsonLd, isRvEligible, jsonLdScript, reservationNote, rvFaqs } from "@/lib/seo/guides";
 import { rvCampingDescription, rvCampingTitle } from "@/lib/seo/guidesSeo";
+import { AnswerLead } from "@/components/guides/AnswerLead";
+import { rvAnswer } from "@/lib/seo/familyAnswers";
 
 const CAMP_PARTNERS = new Set(["campspot", "roverpass"]);
 
@@ -77,6 +79,7 @@ export function Page(): React.ReactElement {
   const camps = dest.stays.filter((o) => o.partner && CAMP_PARTNERS.has(o.partner) && o.externalUrl).slice(0, 3);
   const rentals = dest.rentals.filter((o) => o.partner === "motorhome_republic" && o.externalUrl).slice(0, 3);
   const plan = dest.travelPlan;
+  const lang = useLocale() === "de" ? "de" : "en";
   const roadTips = plan?.intel.filter((t) => t.text && (t.kind === "fuel" || t.kind === "signal" || t.kind === "parking")) ?? [];
   const note = reservationNote(dest);
   const reviewed = getDestinationAnswers(dest.slug)?.reservation;
@@ -93,6 +96,7 @@ export function Page(): React.ReactElement {
           <HeroChip image={roadImg}>{formatDriveShort(dest.driveMinutes ?? 0)} from {dest.airportCode}</HeroChip>
           <HeroChip image={roadImg}>Camping score {dest.campingScore}/10</HeroChip>
         </GuideHero>
+        <AnswerLead lines={rvAnswer(dest, lang)} />
         <TripSnapshot trip={dest} /><TripQuickNav />
         <div id="trip-booking" className="container-page py-6"><BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} /></div>
         <div id="trip-plan" />

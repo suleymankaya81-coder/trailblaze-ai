@@ -52,6 +52,10 @@ export function buildCorridorJsonLd(corridor: Corridor, stops: VisibleStop[], pa
         },
       },
       breadcrumbJsonLd(corridorCrumbs(corridor)),
+      // The same reviewed questions the page shows under "Quick answers" (corridor.faqs), nothing hidden.
+      ...(corridor.faqs.length
+        ? [{ "@type": "FAQPage", mainEntity: corridor.faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }]
+        : []),
     ],
   };
 }

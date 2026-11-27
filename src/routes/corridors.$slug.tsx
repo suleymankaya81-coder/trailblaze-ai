@@ -1,6 +1,6 @@
 import { DayRouteActions } from "@/components/ui-kit/DayRouteActions";
 import { travelDescription } from "@/lib/seo/travelMetadata";
-import { T } from "@/lib/i18n";
+import { T, useLocale } from "@/lib/i18n";
 import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { Thumb, SwipeRow } from "@/components/ui-kit";
@@ -29,6 +29,8 @@ import { getCorridor } from "@/lib/seo/corridors";
 import { buildCorridorJsonLd, corridorSearchDescription, corridorSearchTitle, corridorPageTitle } from "@/lib/seo/corridorSeo";
 import { CorridorBookings } from "@/components/guides/CorridorBookings";
 import { CorridorTourFrame } from "@/components/guides/CorridorTourFrame";
+import { AnswerLead } from "@/components/guides/AnswerLead";
+import { corridorAnswer } from "@/lib/seo/familyAnswers";
 
 const RoadTripMap = lazy(() => import("@/components/destination/RoadTripMap"));
 
@@ -75,6 +77,7 @@ export function Page(): React.ReactElement {
   const line = loop.map((s) => [s.lng, s.lat] as [number, number]);
   const markers = stops.slice(1).map((s) => ({ name: s.name, lng: s.lng, lat: s.lat, sourceUrl: `${SITE}/destinations/${s.slug}` }));
   const first = stops[0];
+  const lang = useLocale() === "de" ? "de" : "en";
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -84,6 +87,7 @@ export function Page(): React.ReactElement {
           <HeroChip image={roadImg}><T>{corridor.idealDays}</T></HeroChip>
           <HeroChip image={roadImg}>~{miles} mi loop (straight-line)</HeroChip>
         </GuideHero>
+        <AnswerLead lines={corridorAnswer(corridor, stops, lang)} />
         <TripSnapshot airport={corridor.gateway.code} days={corridor.idealDays} stops={stops.length} /><TripQuickNav />
         <div id="trip-plan" />
 

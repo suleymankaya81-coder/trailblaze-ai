@@ -11,11 +11,14 @@ export type GuideSeoInput = {
   name: string;
   airportCode: string | null;
   driveMinutes: number | null;
+  permitLevel?: string | null;
 };
 
 export function rvCampingTitle(d: GuideSeoInput): string {
   return fitText(
     [
+      // Stored fact first: the pickup airport and drive time.
+      ...(d.airportCode && d.driveMinutes != null ? [`${d.name} RV Camping: ${d.airportCode} Pickup, ${formatDriveShort(d.driveMinutes)} Drive${BRAND}`, `${d.name} RV Camping: Pick Up at ${d.airportCode}${BRAND}`] : []),
       `${d.name} RV Camping: RV Parks, Campgrounds & Route${BRAND}`,
       `${d.name} RV Camping: Parks & Campgrounds${BRAND}`,
       `${d.name} RV Camping Guide${BRAND}`,
@@ -45,6 +48,8 @@ export function rvCampingDescription(d: GuideSeoInput): string {
 export function noReservationTitle(d: GuideSeoInput): string {
   return fitText(
     [
+      // Stored permit level as the fact in the title.
+      ...(d.permitLevel === "high" ? [`${d.name} Reservations: High Demand, Entry Rules${BRAND}`] : d.permitLevel === "moderate" ? [`${d.name} Reservations: Entry Rules & Backup Plans${BRAND}`] : []),
       `${d.name} Reservations: Entry Rules & Backup Plans${BRAND}`,
       `${d.name} Reservations & Entry Rules${BRAND}`,
       `Visit ${d.name} Without a Reservation${BRAND}`,

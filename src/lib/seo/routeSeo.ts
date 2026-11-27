@@ -82,9 +82,9 @@ function listNames(names: string[], max: number): string {
 
 const shortDays = (d: string) => d.replace(/\s*days?$/i, "").replace(/–/g, "-");
 
-export function loopSearchTitle(slug: string, fallback: string, stopCount: number): string {
+export function loopSearchTitle(slug: string, fallback: string, stopCount: number, days?: number): string {
   const kw = LOOP_KEYWORDS[slug] ?? fallback;
-  return fitText([`${kw}: ${stopCount}-Stop Itinerary & Map${BRAND}`, `${kw}: ${stopCount}-Stop Itinerary${BRAND}`, `${kw} Itinerary${BRAND}`, `${kw}${BRAND}`, kw], TITLE_MAX);
+  return fitText([...(days ? [`${kw}: ${stopCount} Stops in ${days} Days${BRAND}`, `${kw}: ${stopCount} Stops, ${days} Days`] : []), `${kw}: ${stopCount}-Stop Itinerary & Map${BRAND}`, `${kw}: ${stopCount}-Stop Itinerary${BRAND}`, `${kw} Itinerary${BRAND}`, `${kw}${BRAND}`, kw], TITLE_MAX);
 }
 
 export function loopSearchDescription(slug: string, fallback: string, stopNames: string[]): string {

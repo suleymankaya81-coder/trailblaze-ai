@@ -1,4 +1,4 @@
-import { T } from "@/lib/i18n";
+import { T, useLocale } from "@/lib/i18n";
 import { DailyRoutes } from "@/components/guides/DailyRoutes";
 import { travelDescription } from "@/lib/seo/travelMetadata";
 import type * as React from "react";
@@ -29,6 +29,8 @@ import { getDestinationAnswers } from "@/lib/data/destinationAnswers";
 import { SITE, formatDriveShort } from "@/lib/seo/flyDrive";
 import { destGuideJsonLd, isNoReservationEligible, jsonLdScript, noReservationFaqs, reservationNote } from "@/lib/seo/guides";
 import { noReservationDescription, noReservationTitle } from "@/lib/seo/guidesSeo";
+import { AnswerLead } from "@/components/guides/AnswerLead";
+import { noReservationAnswer } from "@/lib/seo/familyAnswers";
 
 const loadPage = async ({ params }: { params: { slug: string } }) => {
   const dest = await getDestinationPageData({ data: { slug: params.slug } }).catch(() => null);
@@ -70,6 +72,7 @@ export const Route = createFileRoute("/no-reservation/$slug")({
 export function Page(): React.ReactElement {
   const { dest, alts, faqs, landingLinks } = (useLoaderData({ strict: false }) as Awaited<ReturnType<typeof loadPage>>);
   const reviewed = getDestinationAnswers(dest.slug)?.reservation;
+  const lang = useLocale() === "de" ? "de" : "en";
   const tips = dest.travelPlan?.intel.filter((t) => t.text && (t.kind === "timing" || t.kind === "access" || t.kind === "parking")) ?? [];
   return (
     <div className="min-h-screen bg-background">
@@ -84,6 +87,7 @@ export function Page(): React.ReactElement {
           <HeroChip image={roadImg}>{dest.permitLevel === "high" ? "Bookings: high demand" : "Bookings: moderate demand"}</HeroChip>
           {dest.driveMinutes != null && <HeroChip image={roadImg}>{formatDriveShort(dest.driveMinutes)} from {dest.airportCode}</HeroChip>}
         </GuideHero>
+        <AnswerLead lines={noReservationAnswer(dest, reservationNote(dest), lang)} />
         <TripSnapshot trip={dest} /><TripQuickNav />
         <div id="trip-booking" className="container-page py-6"><BookingStepsStrip slug={dest.slug} name={dest.name} airportCode={dest.airportCode} /></div>
         <div id="trip-plan" />

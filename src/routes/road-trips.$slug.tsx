@@ -1,6 +1,6 @@
 import { DayRouteActions } from "@/components/ui-kit/DayRouteActions";
 import { travelDescription } from "@/lib/seo/travelMetadata";
-import { T } from "@/lib/i18n";
+import { T, useLocale } from "@/lib/i18n";
 import type * as React from "react";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { Thumb, SwipeRow } from "@/components/ui-kit";
@@ -29,6 +29,8 @@ import { loopSearchDescription, loopSearchTitle } from "@/lib/seo/routeSeo";
 import { CorridorBookings } from "@/components/guides/CorridorBookings";
 import { ViatorPlaceBlock } from "@/components/destination/ViatorPlaceBlock";
 import { getLoop, loopGatewayAirport, haversineMiles, jsonLdScript, loopFaqs, loopJsonLd, suggestedDays, validateLoop } from "@/lib/seo/guides";
+import { AnswerLead } from "@/components/guides/AnswerLead";
+import { loopAnswer } from "@/lib/seo/familyAnswers";
 
 const RoadTripMap = lazy(() => import("@/components/destination/RoadTripMap"));
 
@@ -45,7 +47,7 @@ export const Route = createFileRoute("/road-trips/$slug")({
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Unavailable — WildParkRoutes" }, { name: "robots", content: "noindex" }] };
     const { loop, stops, faqs, url } = loaderData;
-    const title = loopSearchTitle(loop.slug, loop.title, stops.length);
+    const title = loopSearchTitle(loop.slug, loop.title, stops.length, stops.reduce((sum, s) => sum + suggestedDays(s.tripDurationDays), 0));
     const description = travelDescription({ name: loop.title, region: loop.region, tripDurationDays: `${stops.reduce((sum, s) => sum + suggestedDays(s.tripDurationDays), 0)} days`, bestSeason: stops[0]?.bestSeason }, "road-trips", loopSearchDescription(loop.slug, loop.title, stops.map((s) => s.name)));
     const img = stops[0]?.heroImage.startsWith("https://") ? stops[0].heroImage : null;
     return {
@@ -76,6 +78,7 @@ export function Page(): React.ReactElement {
   const first = stops[0];
   const last = stops[stops.length - 1];
   const gateway = loopGatewayAirport(stops);
+  const lang = useLocale() === "de" ? "de" : "en";
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -84,6 +87,7 @@ export function Page(): React.ReactElement {
           <HeroChip image={roadImg}>{`${stops.length} stops`}</HeroChip>
           <HeroChip image={roadImg}>{`About ${totalDays} days`}</HeroChip>
         </GuideHero>
+        <AnswerLead lines={loopAnswer(stops, totalDays, gateway ? `${gateway.name} (${gateway.code})` : null, lang)} />
         <TripSnapshot airport={gateway?.code} days={`About ${totalDays} days`} stops={stops.length} /><TripQuickNav booking={!!gateway} />
         <div id="trip-plan" />
 

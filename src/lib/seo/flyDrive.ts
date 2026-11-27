@@ -57,6 +57,7 @@ export function flyDriveTitle(d: FlyDriveInput): string {
   const kw = `Closest Airport to ${d.name}`;
   return fitText(
     [
+      ...(d.driveMinutes != null ? [`${kw}: ${d.airportCode}, ${formatDriveShort(d.driveMinutes)} Drive${BRAND}`, `${kw}: ${d.airportCode}, ${formatDriveShort(d.driveMinutes)} Drive`] : []),
       `${kw}: Fly into ${d.airportCode}${BRAND}`,
       `${kw} (${d.airportCode})${BRAND}`,
       `Fly into ${d.airportCode} for ${d.name}${BRAND}`,

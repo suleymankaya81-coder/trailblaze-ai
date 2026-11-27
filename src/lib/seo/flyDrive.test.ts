@@ -29,7 +29,7 @@ describe("fly & drive slugs", () => {
 describe("fly & drive search metadata", () => {
   it("leads with the 'closest airport' phrase and the airport code, within limits", () => {
     const title = flyDriveTitle(ys);
-    expect(title).toBe("Closest Airport to Yellowstone (BZN) — WildParkRoutes");
+    expect(title).toBe("Closest Airport to Yellowstone: BZN, 1 h 56 min Drive"); // stored airport + drive time
     expect(title.length).toBeLessThanOrEqual(60);
     const description = flyDriveDescription(ys);
     expect(description).toContain("closest airport to Yellowstone");

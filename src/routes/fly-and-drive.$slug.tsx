@@ -1,7 +1,7 @@
 import type * as React from "react";
 import { DailyRoutes } from "@/components/guides/DailyRoutes";
 import { travelDescription } from "@/lib/seo/travelMetadata";
-import { T } from "@/lib/i18n";
+import { T, useLocale } from "@/lib/i18n";
 import { deAlternates } from "@/lib/i18n/deTemplate";
 import { TripSnapshot, TripQuickNav } from "@/components/destination/TripSnapshot";
 import { TripEssentials } from "@/components/destination/TripEssentials";
@@ -17,6 +17,8 @@ import { getLandingLinksForDestination } from "@/lib/data/landingPages.functions
 import { PlanDeeper } from "@/components/guides/PlanDeeper";
 import { getAirportSiblings } from "@/lib/data/flyDrive.functions";
 import { SITE, flyDriveDescription, flyDriveFaqs, flyDriveJsonLd, flyDriveSlug, flyDriveTitle, parseFlyDriveSlug } from "@/lib/seo/flyDrive";
+import { AnswerLead } from "@/components/guides/AnswerLead";
+import { flyDriveAnswer } from "@/lib/seo/familyAnswers";
 
 const loadPage = async ({ params }: { params: { slug: string } }) => {
   const parsed = parseFlyDriveSlug(params.slug);
@@ -70,11 +72,13 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 export function FlyDrivePage(): React.ReactElement {
   const { dest, siblings, faqs, landingLinks } = (useLoaderData({ strict: false }) as Awaited<ReturnType<typeof loadPage>>);
+  const lang = useLocale() === "de" ? "de" : "en";
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <main>
         <FlyDriveHero dest={dest} />
+        <AnswerLead lines={flyDriveAnswer(dest, lang)} />
         <TripSnapshot trip={dest} /><TripQuickNav />
         <section id="trip-plan" className="container-page py-6">
           <RouteCard dest={dest} />
